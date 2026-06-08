@@ -1,0 +1,14 @@
+# Regenerable dependency and build tissue
+node_modules/
+.next/
+dist/
+build/
+.turbo/
+coverage/
+__pycache__/
+.pytest_cache/
+
+# Local/editor noise
+.DS_Store
+*.pyc
+
