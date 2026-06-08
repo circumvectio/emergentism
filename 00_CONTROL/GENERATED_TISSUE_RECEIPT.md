@@ -1,23 +1,20 @@
-# Emergentism Generated Tissue Receipt
+# Generated Tissue Receipt
 
 **Date:** 2026-06-08
-**Policy:** Regenerable build and dependency tissue may be deleted.
+**Action:** Deleted regenerable build/dependency output before GitHub publication
 
-## Pre-Cleanup Tissue
+## Deleted Tissue
 
-| Path | Size | Decision |
-|---|---:|---|
-| `12_PUBLIC_SITE/book-pwa/node_modules` | 890M | delete; regenerate with `npm install` / `npm ci` |
-| `12_PUBLIC_SITE/__pycache__` | 80K | delete; Python runtime cache |
+| Path | Type | Regeneration Command |
+|---|---|---|
+| `12_PUBLIC_SITE/book-pwa/node_modules/` | npm dependencies | `cd 12_PUBLIC_SITE/book-pwa && npm install` |
+| `12_PUBLIC_SITE/__pycache__/` | Python bytecode | Automatic on Python execution |
+| `**/.DS_Store` | macOS metadata | N/A (system-generated) |
 
-## Preserved Inputs
+## Verification
 
-- `12_PUBLIC_SITE/book-pwa/package.json`
-- `12_PUBLIC_SITE/book-pwa/package-lock.json`
-
-## Verification Target
-
-After cleanup, no `node_modules`, `.next`, `.pytest_cache`, `__pycache__`,
-`dist`, `build`, `.turbo`, or `coverage` directories should remain under this
-root.
-
+- [x] package.json exists at `12_PUBLIC_SITE/book-pwa/package.json`
+- [x] package-lock.json exists at `12_PUBLIC_SITE/book-pwa/package-lock.json`
+- [x] pyproject.toml exists at `09_TOOLS/06_PACKAGES/emergentism-core/pyproject.toml`
+- [x] No `node_modules`, `.next`, `.pytest_cache`, `__pycache__`, `dist`, `build`, `.turbo`, or `coverage` directories remain under root
+- [x] No nested `.git` directories exist under root

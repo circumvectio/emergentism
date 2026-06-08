@@ -1,27 +1,40 @@
-# Emergentism Source Manifest
+# Source Manifest
 
-**Date:** 2026-06-08
-**Local root:** `/Users/yves/Documents/01_EMERGENTISM`
+**Root:** 01_EMERGENTISM
+**Status:** Canonical source body
+**Local path:** `/Users/yves/Documents/01_EMERGENTISM`
 
 ## Pre-Cleanup Snapshot
 
-| Metric | Value |
+| Measure | Value |
 |---|---:|
-| Root size | 950M |
-| Non-generated source checksum list hash | `175e461731f57fe1c3052c6d27b2476fbb28e80ca469a144bf2c324c43373f6c` |
-| Large source files over 50M | 0 |
+| Root size before generated-tissue deletion | 950M |
+| Combined source checksum list hash | `175e461731f57fe1c3052c6d27b2476fbb28e80ca469a144bf2c324c43373f6c` |
+| Non-generated files over 50MB | 0 |
 
-## Source Manifests Preserved
+## Source Categories
 
-| Path | Type |
-|---|---|
-| `09_TOOLS/06_PACKAGES/emergentism-core/pyproject.toml` | Python package manifest |
-| `12_PUBLIC_SITE/book-pwa/package.json` | Node package manifest |
-| `12_PUBLIC_SITE/book-pwa/package-lock.json` | Node lockfile |
+| Category | Directories | Count |
+|---|---|---|
+| Doctrine | 00_META, 01-07 | 8 |
+| Support | 08_FRAMEWORK_SUPPORT, 09_TOOLS | 2 |
+| Seed | 10_SEED, 11_UPLINK | 2 |
+| Public | 12_PUBLIC_SITE | 1 |
+| Archive | 90_ARCHIVE, 91_COMPATIBILITY | 2 |
 
-## Canonical Source Rule
+## Regenerable Tissue Removed
 
-This repository preserves source-bearing material and excludes regenerable
-dependencies and build products. If a deleted directory can be recreated from a
-manifest or language runtime cache, it is tissue, not source.
+- `12_PUBLIC_SITE/book-pwa/node_modules/` — npm reinstallable from package.json
+- `12_PUBLIC_SITE/__pycache__/` — Python bytecode regenerable
+- `.DS_Store` files — macOS metadata
 
+## Lockfiles/Manifests Preserved
+
+- `12_PUBLIC_SITE/book-pwa/package.json`
+- `12_PUBLIC_SITE/book-pwa/package-lock.json`
+- `09_TOOLS/06_PACKAGES/emergentism-core/pyproject.toml`
+
+## Authority Rule
+
+`00_META/` and the seven doctrinal lanes remain authoritative unless a later
+dated control-plane receipt moves a specific artifact.

@@ -1,14 +1,45 @@
-# Regenerable dependency and build tissue
+# Dependencies
 node_modules/
+.pnpm-store/
+
+# Build output
 .next/
 dist/
 build/
-.turbo/
-coverage/
+out/
+
+# Python
 __pycache__/
+*.py[cod]
+*$py.class
 .pytest_cache/
+*.egg-info/
+.venv/
+venv/
 
-# Local/editor noise
+# Test coverage
+coverage/
+
+# Turbo
+.turbo/
+
+# macOS
 .DS_Store
-*.pyc
 
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+
+# Foundry
+cache/
+out/
