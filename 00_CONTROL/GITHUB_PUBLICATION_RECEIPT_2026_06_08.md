@@ -94,9 +94,27 @@ The 5-step spec sequence is preserved in the commit graph (control plane → tis
 
 - [x] **GitHub URL set** — https://github.com/circumvectio/emergentism · remote HEAD verified equal to local HEAD `3cf2f4b`
 - [ ] **Aureus doctrine ambient coupling** — this repo contains the Emergentism canon; live Aureus / OFN proof artifacts live in the Aureus entity lane and are not duplicated here. Cross-repo invariants (Five+One constitution, η=0 fence) are referenced via relative path from `00_CONTROL/` and `AGENTS.md`; reviewer should confirm those pointer paths resolve post-push.
-- [ ] **`book-pwa` post-install build** — `npm ci && npm run build` was not exercised in this publication pass; dependabot / CI should run the build on first push.
+- [x] **`book-pwa` post-install build** — follow-through verification on 2026-06-08 passed `npm ci`, `npm test` (`193 passed`), `npm run lint`, and `npm run build`; temporary `node_modules`, `.next`, `__pycache__`, and `.tsbuildinfo` tissue was deleted afterward.
 - [ ] **No CI workflows committed** — `book-pwa` does not yet have GitHub Actions. Add as a follow-up.
 - [ ] **AGENTS.md / README.md internal relative links** — review post-push and update any absolute URLs (none expected — current docs are path-relative).
+
+## Post-Baseline Verification Follow-Through
+
+**Date:** 2026-06-08
+
+- [x] Public PWA install/test/lint/build passed from
+  `12_PUBLIC_SITE/book-pwa`.
+- [x] Generated-tissue cleanup rechecked after build: no `node_modules`,
+  `.next`, `.pytest_cache`, `__pycache__`, `dist`, `build`, `.turbo`,
+  `coverage`, `.tsbuildinfo`, `.pyc`, `.pyo`, or `.DS_Store` residue remains.
+- [x] Manifest preservation rechecked:
+  `12_PUBLIC_SITE/book-pwa/package.json`,
+  `12_PUBLIC_SITE/book-pwa/package-lock.json`, and
+  `09_TOOLS/06_PACKAGES/emergentism-core/pyproject.toml` exist.
+
+**Advisory:** `npm ci` for `12_PUBLIC_SITE/book-pwa` reported deprecated
+transitive packages and 8 dependency audit findings (6 moderate, 1 high, 1
+critical). No dependency upgrade was performed in this canonicalization pass.
 
 ## Publication Rule (carried forward)
 
