@@ -5,19 +5,19 @@
 **URL:** https://github.com/circumvectio/emergentism
 **Visibility:** private
 **Local root:** `/Users/yves/Documents/01_EMERGENTISM`
-**Canonical source commit before receipt:** `1218026f15de14f264222f8383a53483152a56d6`
+**Canonical source commit:** `1218026f15de14f264222f8383a53483152a56d6`
+**Superseded draft receipt commit:** `3cf2f4b8705be67ce2cf38b27eb2c770c1f298c7`
+**Final receipt commit:** the GitHub `main` commit containing this corrected receipt
 **Prior remote backup branch:** `pre-canonicalization-2026-06-08`
 **Prior remote main backed up from:** `b8f2f6b28480101e57e7e163963963c379acabab`
 
 ## Cleanup Counts
 
-- Planned generated tissue removed or verified absent: 2 directories
-  - `12_PUBLIC_SITE/book-pwa/node_modules/`
-  - `12_PUBLIC_SITE/__pycache__/`
-- Nested embedded git repositories removed: 0
-- Source/manifest artifacts preserved: 3 package/runtime manifests
-- Oversized files over 95 MB: 0
-- `.DS_Store` files remaining: 0
+- Planned generated tissue removed or verified absent: 2 directories.
+- Nested embedded git repositories removed: 0.
+- Package/runtime manifests preserved: 3.
+- Files over 95 MB: 0.
+- `.DS_Store` files remaining: 0.
 
 ## Verification
 
@@ -25,9 +25,11 @@
 - [x] No nested `.git` directories remain under the root.
 - [x] `12_PUBLIC_SITE/book-pwa/package.json` and `package-lock.json` are preserved.
 - [x] `09_TOOLS/06_PACKAGES/emergentism-core/pyproject.toml` is preserved.
-- [x] Public site scripts were inspected with `npm --prefix 12_PUBLIC_SITE/book-pwa pkg get scripts`.
+- [x] Public-site scripts were inspected with `npm --prefix 12_PUBLIC_SITE/book-pwa pkg get scripts`.
+- [x] Repository is private on GitHub and `main` tracks `origin/main`.
 
 ## Verification Gaps
 
-- The public-site build was not run because `node_modules/` was intentionally removed and an in-place reinstall would recreate generated tissue before publication. Rebuild command: `cd 12_PUBLIC_SITE/book-pwa && npm install && npm run build`.
+- The public-site build was not run because `node_modules/` was intentionally removed and an in-place reinstall would recreate generated tissue before publication.
+- Local ignored runtime files remain on disk but are not tracked: `.env`, `.vercel/`, `dev.db`, generated Next/TypeScript files.
 
