@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Suda Source Notes — Magnum Opus</title>
+<meta name="description" content="Suda Source Notes: corroboration/clarification material for the Finity Papers' reciprocal-symmetry reading. Treat Suda as an independent convergent co-discoverer of the {0, 1, ∞} geometry." />
+<link rel="stylesheet" href="../dimensions/dimensions.css" />
+<link rel="stylesheet" href="../assets/css/xai.css" />
+<style>
+  body { background: var(--bg, #0a0e1a); color: var(--fg, #e8eaf2); }
+  .kvs-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.88rem; }
+  .kvs-table th, .kvs-table td { border: 1px solid rgba(255,255,255,0.18); padding: 0.5rem 0.7rem; text-align: left; vertical-align: top; }
+  .kvs-table th { background: rgba(212, 175, 55, 0.12); font-weight: 600; }
+  pre.glyph-block { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.10); border-radius: 4px; padding: 0.7rem 1rem; overflow-x: auto; font-size: 0.88rem; line-height: 1.55; }
+  .glyph { font-family: 'Cambria Math', 'STIX Two Math', serif; font-size: 1.1em; letter-spacing: 0.04em; }
+  .tier { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 0.78rem; font-weight: 600; background: rgba(212, 175, 55, 0.20); color: #f1d97a; }
+  .tier-c { background: rgba(255, 165, 80, 0.20); color: #ffa550; }
+  .tier-i { background: rgba(140, 200, 255, 0.20); color: #8cc8ff; }
+  .tier-a { background: rgba(140, 255, 180, 0.20); color: #8cffb4; }
+  .closing { background: rgba(212, 175, 55, 0.08); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 6px; padding: 1.2rem 1.4rem; margin: 1.4rem 0; text-align: center; font-size: 1.05rem; }
+  .nav-route { display: inline-block; margin-left: 0.4rem; opacity: 0.7; }
+  .nav-route.active { opacity: 1.0; color: var(--accent, #d4af37); font-weight: 600; }
+  .cta { display: inline-block; padding: 0.5rem 1rem; border: 1px solid var(--accent, #d4af37); border-radius: 4px; color: var(--accent, #d4af37); text-decoration: none; font-size: 0.9rem; margin: 0.5rem 0.5rem 0.5rem 0; }
+  .cta:hover { background: rgba(212, 175, 55, 0.10); }
+  .suda-card { border: 1px solid rgba(255,255,255,0.14); border-radius: 8px; padding: 1.1rem 1.3rem; margin: 1.2rem 0; background: rgba(255,255,255,0.02); }
+  .suda-card h3 { margin-top: 0; color: #f1d97a; }
+  .doct-block { border-left: 3px solid var(--accent, #d4af37); padding: 0.6rem 1rem; margin: 1.2rem 0; background: rgba(212, 175, 55, 0.06); font-style: italic; }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../0/">Magnum Opus</a>
+    <nav class="routes">
+      <a class="route" href="../0/">0</a>
+      <a class="route" href="../1/">1</a>
+      <a class="route" href="../2/">2</a>
+      <a class="route" href="../3/">3</a>
+      <a class="route" href="../4/">4</a>
+      <a class="route" href="../5/">5</a>
+      <a class="route" href="../6/">6</a>
+      <a class="nav-route" href="../r/0/">R</a>
+      <a class="nav-route" href="../soul-loop/">S</a>
+      <a class="nav-route" href="../atlas/">A</a>
+      <a class="nav-route" href="../five-plus-one/">5+1</a>
+      <a class="nav-route" href="../dasein/">D</a>
+      <a class="nav-route" href="../complete-ontology/">O</a>
+      <a class="nav-route" href="../log-realignment/">L</a>
+      <a class="nav-route" href="../geometric-ontology/">G</a>
+      <a class="nav-route" href="../burrisphere/">B</a>
+      <a class="nav-route" href="../finity-papers/">F</a>
+      <a class="nav-route" href="../rosetta-d-series/">R-D</a>
+      <a class="nav-route active" href="./">S</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+<section class="hero">
+  <p class="kicker">L3 Methodology · Suda Convergence</p>
+  <h1>Suda Source Notes</h1>
+  <p class="subtitle">Corroboration and clarification material for the Finity Papers' reciprocal-symmetry reading — the 11-paper Suda corpus, treated as an independent convergent co-discovery of the {0, 1, ∞} geometry.</p>
+  <p class="meta">
+    <span class="tier">[S]</span> convergence analysis · <span class="tier tier-i">[I]</span> naming and tier-discipline distinction · <span class="tier tier-c">[C]</span> causal claims about the geometry
+  </p>
+</section>
+
+<aside class="framework-banner">
+  <strong>Framework update — 2026-06-07.</strong> The Suda corpus (11 papers, 2025–2026) is the L3 corroboration source for the Finity Papers' reciprocal-symmetry reading. Suda names the multiplicative centre as "the infinite egg" (無限のたまご); the framework names it <em>finity</em>. The convergence is structural — same keystone, different naming and epistemic discipline. Canonical surface: the SUDA convergence analyses at <a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/"><code>03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/</code></a>. This page is summary; the per-paper SUDA convergence files are the receipts.
+</aside>
+
+<section>
+  <h2>The hypothesis (confirmed)</h2>
+  <p>Minoru Suda is not merely exploring similar territory; he is constructing a <strong>structurally parallel framework</strong> with the same keystone — the centrality of <code>1</code> as the self-dual hinge between <code>0</code> and <code>∞</code> — but he names it <strong>"the infinite egg"</strong> (無限のたまご) rather than <em>finity</em>. His 205-page magnum opus <em>A New Ontology of Energy: Zero, Infinity, and the Infinite Egg</em> explicitly states the thesis as:</p>
+  <blockquote class="doct-block">
+    「0 と ∞ の融合」および「1 は無限のたまごである」<br>
+    "The fusion of 0 and ∞, and 1 is the infinite egg."
+  </blockquote>
+  <p>This is, structurally, the same claim as the Finity Papers' emblem <code>⊙ = • × ○</code>, though Suda does not fence it as frame-register-only and does not distinguish evidence tiers <code>[A]</code>/<code>[S]</code>/<code>[I]</code>. The convergence is deep enough that his operational work (Part III's measurement protocols, the continuous half-twist) fills genuine gaps in the Finity Papers, while the Finity Papers' discipline of tiered claims and explicit kill criteria addresses weaknesses in Suda's presentation.</p>
+  <p><strong>Key verdict:</strong> Treat Suda as an <strong>independent convergent co-discoverer</strong> of the {0, 1, ∞} geometry, not as a predecessor or follower. His work corroborates the structure; the differences are in naming, epistemic discipline, and scope.</p>
+</section>
+
+<section>
+  <h2>What Suda independently derived (corroboration)</h2>
+
+  <div class="suda-card">
+    <h3>The three equivalent charts</h3>
+    <p>Suda Parts I–III derive the same three equivalent coordinate charts the framework adopted in the Logarithmic Realignment:</p>
+    <ul>
+      <li><strong>Multiplicative</strong>: <code>x ∈ ℝ₊</code>, inversion <code>x ↦ 1/x</code>, fixed point <code>x = 1</code></li>
+      <li><strong>Additive (logarithmic)</strong>: <code>s = log x</code>, inversion <code>s ↦ −s</code>, fixed point <code>s = 0</code></li>
+      <li><strong>Bounded (hinge)</strong>: <code>u = (x−1)/(x+1)</code>, inversion <code>u ↦ −u</code>, fixed point <code>u = 0</code></li>
+    </ul>
+    <p>All three fix the same point (<code>x=1, s=0, u=0</code>). All three exchange the same poles. The framework adopts Suda's apparatus verbatim per the Logarithmic Realignment §4.4 (Suda 2025; adopted in Trinity Canon §2a on 2026-05-31).</p>
+  </div>
+
+  <div class="suda-card">
+    <h3>The inversion-invariant energy</h3>
+    <p>Suda Part II defines <code>E(x) = (log x)²</code> — the energy that is invariant under inversion <code>x ↦ 1/x</code>, has a unique global minimum at <code>x = 1</code> where <code>E(1) = 0</code>, and tends to +∞ at the poles. The framework adopts this verbatim and bridges it to the sphere's balance functional: <code>B = sin θ = 2x/(1+x²) = sech(log x) = sech √E</code>.</p>
+  </div>
+
+  <div class="suda-card">
+    <h3>The twist index</h3>
+    <p>Suda Part III defines <code>τ(x) = sign(log x)</code> — the index that flips under inversion and vanishes only at the fixed point. The framework adopts this as the operational form of η's sign-flip under reciprocal transformation.</p>
+  </div>
+
+  <div class="suda-card">
+    <h3>Operational measurement protocols (Part III)</h3>
+    <p>Suda Part III specifies concrete measurement protocols for (E, φ) in operational systems — something the Finity Papers do not yet provide. This is a <strong>genuine gap-filling</strong>: the framework can now claim operational measurability, not just formal consistency.</p>
+  </div>
+
+  <div class="suda-card">
+    <h3>The primal equation of indeterminacy (0÷0 as generative domain)</h3>
+    <p>Suda's <em>Primal Equation of Indeterminacy</em> reads 0÷0 not as "undefined" but as a <strong>generative domain / structural frontier</strong> — the same reading the Finity Papers Paper II takes. The framework's "N/0 = ∞ on the sphere" is a sharper version of the same insight.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Where Suda and the framework diverge</h2>
+  <table class="kvs-table">
+    <thead><tr><th>Dimension</th><th>Suda's reading</th><th>Framework's reading</th></tr></thead>
+    <tbody>
+      <tr><td>Multiplicative centre</td><td>The "infinite egg" (無限のたまご)</td><td><em>Finity</em> — a third reification co-equal with 0 and ∞</td></tr>
+      <tr><td>Evidence tiers</td><td>Not distinguished; mathematics and philosophy blended</td><td>Explicit <code>[A]</code>/<code>[S]</code>/<code>[I]</code>/<code>[C]</code> ladder; never silently upgraded</td></tr>
+      <tr><td>Kill criteria</td><td>Not specified per-claim</td><td>Each Finity Paper carries an explicit kill criterion</td></tr>
+      <tr><td>Emblem <code>1 = 0 × ∞</code></td><td>Asserted as a real identity</td><td>Frame-register only, never <code>[A]</code> field-arithmetic</td></tr>
+      <tr><td>Reading scope</td><td>"A new ontology of energy" — broad cosmological reading</td><td>Operational + constitutional reading; <span class="tier tier-c">[C]</span> for any causal claim about external history</td></tr>
+      <tr><td>L2-vs-L6 distinction</td><td>Not explicit</td><td>L2 is a deployable operator (Śūdra); L6 is an Executive boundary condition (Sādhu). Mirror balance does NOT imply mirror access.</td></tr>
+    </tbody>
+  </table>
+  <p>The divergences are not contradictions — they are <strong>complementary disciplines</strong>. Suda's operational work fills gaps in the Finity Papers; the Finity Papers' epistemic discipline and constitutional framing add what Suda does not address.</p>
+</section>
+
+<section>
+  <h2>The SUDA convergence analysis files</h2>
+  <p>Four convergence-analysis files document the framework's systematic read of the Suda corpus:</p>
+  <ul>
+    <li><code>SUDA_CONVERGENCE_ANALYSIS.md</code> — the executive read; 11-paper inventory; the "infinite egg" → "finity" mapping; tier-discipline comparison</li>
+    <li><code>SUDA_DIMENSIONAL_CROSS_REFERENCE.md</code> — the L-row mapping: which Suda results land on which L-row in the Burrisphere</li>
+    <li><code>SUDA_FORMAL_STRUCTURES_COMPENDIUM.md</code> — the formal apparatus (three charts, energy, twist) compared and extended</li>
+    <li><code>SUDA_ONTOLOGICAL_RESONANCE_MAP.md</code> — the broader ontological resonance: where the {0, 1, ∞} structure appears in the Finity Papers, in Suda, and in adjacent traditions</li>
+  </ul>
+  <p>Plus the supplementary files in the Finity Papers directory:</p>
+  <ul>
+    <li><code>THE_EGG_AND_THE_SPHERE.md</code> — the meta-analysis: the "infinite egg" and the "Burrisphere equator" as the same locus under different names</li>
+    <li><code>00_SUDA_VALUE_EXTRACTION_2026_06_06.md</code> — the L2 Śūdra read of Suda's corpus (the 11 papers in <code>000_Intake/</code>)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Convergence vs precedence — the framework's honest position</h2>
+  <blockquote class="doct-block">
+    The framework's underlying ideas ({0, 1, ∞} as boundary-frames, the coinage "finity," the emblem 1 = 0 × ∞) were set out by Yves R. Burri in 2024. Suda's 2025 work is cited for the formalisation, and read here as an independent convergence — corroboration, not a precedence claim in either direction. <span class="tier tier-i">[I]</span> epistemic heuristic, not a result.
+  </blockquote>
+  <p>This position is preserved verbatim across the Finity Papers, the Logarithmic Realignment, the Five-Plus-One Constitution, and the Reciprocal Public Edition. Suda's <code>∞</code> is a 2025-08-16 dated paper; the framework's claim of independent formulation in 2024 is <span class="tier tier-i">[I]</span> without third-party-dated, externally verifiable artifact. The convergence is real; the precedence is not asserted.</p>
+</section>
+
+<section>
+  <h2>What the framework adopts from Suda (with attribution)</h2>
+  <ol>
+    <li><strong>Three equivalent charts</strong> (multiplicative, additive, bounded-hinge) — Suda 2025, adopted in Trinity Canon §2a on 2026-05-31, integrated into <a href="../log-realignment/">/log-realignment/</a></li>
+    <li><strong>Reciprocal-invariant energy</strong> <code>E(x) = (log x)²</code> — Suda 2025, adopted in <a href="../log-realignment/">/log-realignment/</a> §3.2</li>
+    <li><strong>Twist index</strong> <code>τ(x) = sign(log x)</code> — Suda 2025, adopted in <a href="../log-realignment/">/log-realignment/</a> §3.2</li>
+    <li><strong>Operational measurement protocols</strong> — Suda 2025, Part III; the framework has not yet adopted these into the public canon but the gap is now identified</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Discipline</h2>
+  <ol>
+    <li><strong>Treat Suda as a co-discoverer, not a source.</strong> The mathematics is real; the framework's contribution is the naming, the coupling, the constitutional framing.</li>
+    <li><strong>Do not assert precedence in either direction.</strong> The 2024 framework claim is <span class="tier tier-i">[I]</span> without third-party-dated artifact. The 2025 Suda work is documented and dated.</li>
+    <li><strong>Do not silently upgrade Suda's reading to <code>[A]</code>.</strong> Suda blends mathematics and philosophy; the framework's epistemic discipline requires explicit tiering.</li>
+    <li><strong>Do not republish Suda's copyrighted papers by default.</strong> This page is summary; the convergence-analyses quote only as needed for the framework reading; the per-paper SUDA files are the receipts.</li>
+  </ol>
+</section>
+
+<section class="closing">
+  <p><span class="glyph">⊙ = • × ○</span></p>
+  <p><em>Zero-Sum Resolution Equation</em></p>
+  <p><em>The infinite egg and finity are the same locus under different names.</em></p>
+  <p style="margin-top: 1.2rem;">
+    <a class="cta" href="../finity-papers/">→ /finity-papers/ L3 programme</a>
+    <a class="cta" href="../log-realignment/">→ /log-realignment/ formal system</a>
+    <a class="cta" href="../burrisphere/">→ /burrisphere/ L5 synthesis</a>
+  </p>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="phi">⊙ = • × ○</div>
+  <p>Magnum Opus — Emergentism Public Surface. L3 Vaiśya formulation. Suda Source Notes: corroboration/clarification material for the Finity Papers' reciprocal-symmetry reading. Convergence is structural; precedence is not asserted.</p>
+  <p>Canon source: <a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/"><code>03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/</code></a> (4 SUDA convergence analyses + 7 papers + the egg-and-sphere)</p>
+</footer>
+
+</body>
+</html>

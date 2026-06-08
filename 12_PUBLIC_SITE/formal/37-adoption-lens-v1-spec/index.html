@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADOPTION-LENS φ-METER v1 SPEC — Emergentism</title>
+<meta name="description" content="Axioms, derivations, and proofs — the checkable scaffolding beneath the Papers.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../../assets/css/xai.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="../../">Emergentism</a>
+  <nav class="number-nav" aria-label="Public doctrine routes">
+    <a href="../../0/">0</a>
+    <a href="../../1/">1</a>
+    <a href="../../2/">2</a>
+    <a href="../../3/">3</a>
+    <a href="../../4/">4</a>
+    <a href="../../5/">5</a>
+    <a href="../../6/">6</a>
+    <a href="../../rosetta/">R</a>
+    <a href="../../soul-loop/">S</a>
+    <a href="../../atlas/">A</a>
+    <a href="../../read/">Read</a>
+  </nav>
+</header>
+
+<main class="library-shell">
+  <section class="library-hero">
+    <div class="evidence">Public reading library</div>
+    <h1>ADOPTION-LENS φ-METER v1 SPEC</h1>
+    <p>Axioms, derivations, and proofs — the checkable scaffolding beneath the Papers.</p>
+    <div class="library-route-row">
+      <a href="../../read/">Read</a>
+      <a href="../../papers/">Papers</a>
+      <a href="../../canon/">Canon</a>
+      <a href="../../foundations/">Foundations</a>
+      <a href="../../trinity/">Trinity</a>
+      <a href="../../formal/">Formal</a>
+      <a href="../../paradox/">Paradox</a>
+      <a href="../../memetic/">Memetic</a>
+      <a href="../../rosettad/">Rosetta D</a>
+      <a href="../../operators/">Operators</a>
+      <a href="../../will/">Teleology</a>
+      <a href="../../value/">Axiology</a>
+      <a href="../../ground/">Ontology</a>
+      <a href="../../sacred/">Theology</a>
+      <a href="../../method/">Method</a>
+      <a href="../../meta/">Meta</a>
+      <a href="../../sources/">Sources</a>
+    </div>
+  </section>
+  <article class="library-article">
+    <h1 id="adoption-lens-meter-v1-spec">ADOPTION-LENS φ-METER v1 SPEC</h1>
+<h2 id="a-forward-looking-measurement-protocol-for-and-under-the-adoption-lens">A Forward-Looking Measurement Protocol for Φ̂ and ν̂ Under the Adoption Lens</h2>
+<p><strong>Status:</strong> Working spec; forward-looking — real data may not yet exist
+<strong>Date:</strong> 2026-04-22
+<strong>Evidence Tier:</strong> [C] Conjecture for the spec; no pilot application possible until first paid pilot lands
+<strong>Source:</strong> <a href="../30-operational-definitions/"><code>30_OPERATIONAL_DEFINITIONS.md</code></a>, <a href="../32-theorem-upgrade-protocol/"><code>32_THEOREM_UPGRADE_PROTOCOL.md</code></a>, <a href="../35-phi-meter-v1-spec/"><code>35_PHI_METER_V1_SPEC.md</code></a>, <a href="../36-runtime-lens-v1-spec/"><code>36_RUNTIME_LENS_V1_SPEC.md</code></a>
+<strong>See also:</strong> <a href="../29-primitives-and-type-signatures/"><code>29_PRIMITIVES_AND_TYPE_SIGNATURES.md</code></a>, <a href="../31-falsifiers-index/"><code>31_FALSIFIERS_INDEX.md</code></a>, <a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/02_SKYZAI/01_NOOSPHERE/05_PROJECT_MANAGEMENT/01_SPRINTS/FORMAL_SYSTEM_HARDENING_SPRINT_DELTA_2026_04_28.md">Sprint δ packet</a>, Sprint 3 M21 (first paid pilot; current file path unresolved in this checkout)</p>
+<hr>
+<h2 id="1-why-this-file-exists">1. Why This File Exists</h2>
+<p>The code-lens (file 33) measures what is in the tree. The runtime-lens (file 34) measures what is running. Neither measures whether anyone <em>uses</em> the organism. Without an adoption-lens spec, the framework has no way to score network effects, retention, or the user-visible shape of the flywheel.</p>
+<p>This file is the v1 adoption-lens — the rubric that will measure the organism's coherence and viability when first external users arrive. It is written <em>now</em> so that the first adoption audit is not designed ex-post around whatever numbers happen to be good. Writing the rubric before the data exists is the only way to keep an adoption audit from becoming a marketing deck.</p>
+<hr>
+<h2 id="2-what-this-spec-does-not-pretend">2. What This Spec Does Not Pretend</h2>
+<ul>
+<li><strong>No pilot exists.</strong> Sprint 3's M21 targets the first paid pilot (May 12 – May 23). Until M21 lands, an adoption-lens audit has no denominator. This is a v1 spec, not a first application.</li>
+<li><strong>No retroactive scoring.</strong> This spec may not be applied to pre-M21 "early traction" or "beta interest" numbers. Adoption-lens requires observable, receipt-bearing user behavior on a deployed surface.</li>
+<li><strong>No cross-lens substitution.</strong> A high code-lens or runtime-lens P̂ does not substitute for an adoption-lens P̂. The three lenses measure distinct surfaces. An organism can be strong in code, strong in runtime, and zero in adoption; the adoption-lens honestly reports the zero.</li>
+</ul>
+<hr>
+<h2 id="3-scope-the-adoption-lens">3. Scope — The Adoption Lens</h2>
+<table>
+<thead>
+<tr>
+<th>Lens</th>
+<th>What counts</th>
+<th>Spec</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Code-lens</td>
+<td>Files, tests, probes in the tree</td>
+<td><a href="../35-phi-meter-v1-spec/"><code>35_PHI_METER_V1_SPEC.md</code></a></td>
+</tr>
+<tr>
+<td>Runtime-lens</td>
+<td>Deploy, relay, observable uptime</td>
+<td><a href="../36-runtime-lens-v1-spec/"><code>36_RUNTIME_LENS_V1_SPEC.md</code></a></td>
+</tr>
+<tr>
+<td><strong>Adoption-lens</strong> <em>(this file)</em></td>
+<td><strong>User/customer behavior on a deployed surface: activation, retention, referral, economic viability, message-reality coherence</strong></td>
+<td><strong>This file</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Adoption-lens thresholds for inclusion:
+- ≥ 1 external paying counterparty (non-founder, non-employee).
+- ≥ 14-day observation window.
+- Paid first invoice present (not trial, not beta waitlist).</p>
+<p>If any threshold is not met for an organ, the adoption-lens score is <em>undefined</em> for that organ — report it as such, not as zero.</p>
+<hr>
+<h2 id="4-the-adoption-lens-rubric">4. The Adoption-Lens Φ Rubric</h2>
+<pre><code>Φ̂_adoption := (φ_purpose_fit + φ_message_real + φ_retention_reason + φ_feedback_signal) / 4
+</code></pre>
+<h3 id="41-_purpose_fit-declared-vs-realised-purpose">4.1 <code>φ_purpose_fit</code> — Declared vs. Realised Purpose</h3>
+<p><strong>What is measured.</strong> Do external users use the organ for what its BRIEF says it's for, or for some drift-use?</p>
+<table>
+<thead>
+<tr>
+<th>Band</th>
+<th>Score</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Drift</td>
+<td>0.0–0.3</td>
+<td>Primary user behavior is off-purpose</td>
+</tr>
+<tr>
+<td>Mixed</td>
+<td>0.3–0.55</td>
+<td>Some on-purpose, some drift</td>
+</tr>
+<tr>
+<td>Aligned</td>
+<td>0.55–0.75</td>
+<td>Primary user behavior matches declared purpose</td>
+</tr>
+<tr>
+<td>Strong</td>
+<td>0.75–0.9</td>
+<td>Purpose and use match; drift bounded</td>
+</tr>
+<tr>
+<td>Verified</td>
+<td>0.9–1.0</td>
+<td>Purpose and use match and user-side statements confirm it</td>
+</tr>
+</tbody>
+</table>
+<h3 id="42-_message_real-public-message-vs-delivered-value">4.2 <code>φ_message_real</code> — Public Message vs. Delivered Value</h3>
+<p><strong>What is measured.</strong> Does the organ's public messaging overstate, match, or undersell what users actually receive? Overclaim is incoherence.</p>
+<table>
+<thead>
+<tr>
+<th>Band</th>
+<th>Score</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overclaim</td>
+<td>0.0–0.3</td>
+<td>Messaging materially exceeds delivery</td>
+</tr>
+<tr>
+<td>Mild gap</td>
+<td>0.3–0.55</td>
+<td>Messaging modestly exceeds delivery</td>
+</tr>
+<tr>
+<td>Matched</td>
+<td>0.55–0.75</td>
+<td>Messaging matches delivery</td>
+</tr>
+<tr>
+<td>Underclaimed</td>
+<td>0.75–0.9</td>
+<td>Messaging undersells; users report pleasant surprise</td>
+</tr>
+<tr>
+<td>Exemplary</td>
+<td>0.9–1.0</td>
+<td>Messaging, delivery, and user testimony form a consistent whole</td>
+</tr>
+</tbody>
+</table>
+<h3 id="43-_retention_reason-why-users-stay">4.3 <code>φ_retention_reason</code> — Why Users Stay</h3>
+<p><strong>What is measured.</strong> When users stick, the reason matches the declared value proposition. A user who retains for the wrong reason is structural coherence risk.</p>
+<table>
+<thead>
+<tr>
+<th>Band</th>
+<th>Score</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Accidental</td>
+<td>0.0–0.3</td>
+<td>Retention driven by lock-in, inertia, or switching cost</td>
+</tr>
+<tr>
+<td>Drift</td>
+<td>0.3–0.55</td>
+<td>Retention driven by a reason the BRIEF does not claim</td>
+</tr>
+<tr>
+<td>Partial</td>
+<td>0.55–0.75</td>
+<td>Retention partially driven by declared value</td>
+</tr>
+<tr>
+<td>Declared</td>
+<td>0.75–0.9</td>
+<td>Retention driven primarily by declared value</td>
+</tr>
+<tr>
+<td>Clean</td>
+<td>0.9–1.0</td>
+<td>Retention driven by declared value and users can articulate why</td>
+</tr>
+</tbody>
+</table>
+<h3 id="44-_feedback_signal-feedback-coherence">4.4 <code>φ_feedback_signal</code> — Feedback Coherence</h3>
+<p><strong>What is measured.</strong> User feedback (support, surveys, interviews) indicates the users' mental model aligns with the organ's architecture.</p>
+<table>
+<thead>
+<tr>
+<th>Band</th>
+<th>Score</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Confused</td>
+<td>0.0–0.3</td>
+<td>Users hold a model that diverges from architecture</td>
+</tr>
+<tr>
+<td>Mixed</td>
+<td>0.3–0.55</td>
+<td>Some users aligned; others drifted</td>
+</tr>
+<tr>
+<td>Aligned</td>
+<td>0.55–0.75</td>
+<td>Most users hold the declared model</td>
+</tr>
+<tr>
+<td>Strong</td>
+<td>0.75–0.9</td>
+<td>Users can explain the organ in its own terms</td>
+</tr>
+<tr>
+<td>Exemplary</td>
+<td>0.9–1.0</td>
+<td>Users teach other users in the declared terms</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="5-the-adoption-lens-rubric">5. The Adoption-Lens ν Rubric</h2>
+<pre><code>ν̂_adoption := (ν_activation + ν_retention + ν_referral + ν_economic) / 4
+</code></pre>
+<h3 id="51-_activation-completion-of-declared-primary-action">5.1 <code>ν_activation</code> — Completion of Declared Primary Action</h3>
+<pre><code>ν_activation := fraction of new users who complete the declared primary action within the declared activation window
+</code></pre>
+<p>Quantitative. No banding. Primary action and window must be declared in the organ BRIEF before the audit.</p>
+<h3 id="52-_retention-return-behavior">5.2 <code>ν_retention</code> — Return Behavior</h3>
+<pre><code>ν_retention := fraction of activated users who return within the declared retention window
+</code></pre>
+<p>Quantitative. Retention window default: 14 days for consumer-facing, 30 days for B2B.</p>
+<h3 id="53-_referral-network-effect-signal">5.3 <code>ν_referral</code> — Network Effect Signal</h3>
+<table>
+<thead>
+<tr>
+<th>Band</th>
+<th>Score</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>None</td>
+<td>0.0–0.2</td>
+<td>Zero organic referrals observed</td>
+</tr>
+<tr>
+<td>Trickle</td>
+<td>0.2–0.5</td>
+<td>Referrals exist but below one per activated user</td>
+</tr>
+<tr>
+<td>Unity</td>
+<td>0.5–0.75</td>
+<td>On average, each activated user brings ≥ 1 other</td>
+</tr>
+<tr>
+<td>Viral</td>
+<td>0.75–0.9</td>
+<td>Referral rate &gt; 1.5 sustained across ≥ 2 cohorts</td>
+</tr>
+<tr>
+<td>Compound</td>
+<td>0.9–1.0</td>
+<td>Network-effect curve visibly convex over ≥ 4 cohorts</td>
+</tr>
+</tbody>
+</table>
+<h3 id="54-_economic-unit-economics-sustain-growth">5.4 <code>ν_economic</code> — Unit Economics Sustain Growth</h3>
+<table>
+<thead>
+<tr>
+<th>Band</th>
+<th>Score</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unsustainable</td>
+<td>0.0–0.25</td>
+<td>Acquisition cost dominates lifetime value</td>
+</tr>
+<tr>
+<td>Breakeven</td>
+<td>0.25–0.5</td>
+<td>LTV ≈ CAC; growth requires subsidy</td>
+</tr>
+<tr>
+<td>Self-funding</td>
+<td>0.5–0.75</td>
+<td>LTV &gt; CAC; growth possible without subsidy</td>
+</tr>
+<tr>
+<td>Reinvesting</td>
+<td>0.75–0.9</td>
+<td>LTV substantially exceeds CAC; excess funds further growth</td>
+</tr>
+<tr>
+<td>Compounding</td>
+<td>0.9–1.0</td>
+<td>Network-effect amplified unit economics improve with N</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="6-aggregation-ladder-irr">6. Aggregation, Ladder, IRR</h2>
+<p>All three carry over from file 33 and file 34 unchanged:</p>
+<pre><code>P̂_eff^adoption(organ) := Φ̂_adoption(organ) · ν̂_adoption(organ)
+P̂_organism^adoption   := ( ∏ P̂_eff^adoption(organ) )^(1/|organs_with_defined_score|)
+</code></pre>
+<p>Organisms with no defined adoption-lens score for some organs use only the organs where the score is defined, and record the missing organs explicitly.</p>
+<p>Maturity ladder thresholds: Dormant &lt; 0.10 &lt; Egg &lt; 0.30 &lt; Equator &lt; 0.65 &lt; Adolescent &lt; 0.85 &lt; Adult &lt; 0.95 &lt; Apex. Same as file 33.</p>
+<p>IRR target: <code>IRR ≥ 0.7</code> for <code>[C] → [I]</code> promotion. Same formula. Observation window must be the same across both raters.</p>
+<hr>
+<h2 id="7-pre-registered-falsifier">7. Pre-Registered Falsifier</h2>
+<p>Registered against file 31 when the first adoption audit lands:</p>
+<blockquote>
+<p><strong>[C] Pre-registration (author: this spec).</strong> Over the four quarterly adoption-lens audits following the first defined score (≥2 raters, IRR ≥ 0.7), if the median <code>|Φ̂_adoption − ν̂_adoption|</code> across organs with defined scores does <strong>not</strong> trend downward, <em>and</em> no organ has undergone structural stress (shutdown, pivot, scope revision), T3's empirical adoption-lens reading is falsified.</p>
+</blockquote>
+<p>Adoption-lens is <em>expected</em> to lag runtime-lens, which lags code-lens. If the lag never closes, F5 is not operating at the adoption layer — which would be a meaningful framework-level signal.</p>
+<hr>
+<h2 id="8-promotion-path-for-this-spec">8. Promotion Path For This Spec</h2>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[C]</strong></td>
+<td><em>Current.</em> Spec exists; no pilot possible until Sprint 3 M21 lands.</td>
+</tr>
+<tr>
+<td><strong>[I]</strong></td>
+<td>First 2-rater adoption audit on at least one organ with defined score; IRR ≥ 0.7.</td>
+</tr>
+<tr>
+<td><strong>[S]</strong></td>
+<td>Uniqueness derivation: the four Φ and four ν sub-scores are the minimal discriminating set for adoption-lens.</td>
+</tr>
+<tr>
+<td><strong>[S]</strong></td>
+<td>External replication against an unrelated multi-product company's adoption data.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="9-the-economic-sub-score-under-0">9. The Economic Sub-Score Under <code>η = 0</code></h2>
+<p>The organism's constitutional constraint is <code>η = 0</code> (zero extraction beyond regeneration). This constraint interacts with <code>ν_economic</code> non-trivially:</p>
+<ul>
+<li>A conventional SaaS reading of "LTV &gt; CAC" may include rent-like fee streams.</li>
+<li>Under <code>η = 0</code>, rent-like fees are forbidden; the only allowed revenue is service-value-tied.</li>
+<li>An <code>η = 0</code> economic sub-score therefore reads: <em>unit economics sustain growth </em><em>without</em><em> extractive pricing</em>.</li>
+</ul>
+<p>This is not a tightening — it is the shape of the sub-score as-specified. An organ that achieves <code>ν_economic = 0.9</code> only by introducing rent-like fees is not actually scoring 0.9 on the adoption lens; it is scoring 0.9 on a different lens that this spec does not endorse.</p>
+<hr>
+<h2 id="10-what-this-spec-does-not-do">10. What This Spec Does Not Do</h2>
+<ul>
+<li>Does not score vanity metrics (sign-ups, waitlist size, press mentions). Those are not on the rubric.</li>
+<li>Does not substitute for user research; interviews and feedback inform <code>φ_feedback_signal</code> but do not replace the measurement framework.</li>
+<li>Does not authorize adoption claims that exceed the score. Public wording stays bounded by <a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/02_SKYZAI/01_NOOSPHERE/ORGANISM_RUNTIME_TRUTH.md"><code>ORGANISM_RUNTIME_TRUTH.md</code></a>.</li>
+<li>Does not merge with the code-lens or runtime-lens number; the three stay distinct.</li>
+</ul>
+<hr>
+<h2 id="11-see-also">11. See Also</h2>
+<ul>
+<li><a href="../35-phi-meter-v1-spec/"><code>35_PHI_METER_V1_SPEC.md</code></a> — code-lens sibling</li>
+<li><a href="../36-runtime-lens-v1-spec/"><code>36_RUNTIME_LENS_V1_SPEC.md</code></a> — runtime-lens sibling</li>
+<li><a href="../32-theorem-upgrade-protocol/"><code>32_THEOREM_UPGRADE_PROTOCOL.md</code></a> — promotion protocol</li>
+<li><a href="../31-falsifiers-index/"><code>31_FALSIFIERS_INDEX.md</code></a> — falsifier registry</li>
+<li><a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/02_SKYZAI/01_NOOSPHERE/05_PROJECT_MANAGEMENT/01_SPRINTS/FORMAL_SYSTEM_HARDENING_SPRINT_DELTA_2026_04_28.md">Sprint δ packet</a> — sidecar sprint that produced this spec</li>
+<li>Sprint 3 M21 — first paid-pilot milestone; current file path unresolved in this checkout</li>
+</ul>
+<hr>
+<h2 id="execution-surface">Execution Surface</h2>
+<p><strong>If you are an AI agent reading this document:</strong></p>
+<ol>
+<li><strong>Current Phase Check:</strong> Phase 0 — harden specs. Do not apply this rubric to an organ without a defined score; report "undefined" for organs below the inclusion threshold.</li>
+<li><strong>Your Next Action:</strong>
+   - Use this spec when any document claims an organ's "adoption" is strong. Demand a dated audit, not prose.</li>
+<li><strong>Expected Output:</strong> Either (a) an audit once Sprint 3 M21 + ≥ 14 days has passed, or (b) a "score undefined" flag that forbids public adoption claims for that organ.</li>
+<li><strong>Success Criteria:</strong> Two independent raters, once an audit is possible, reach IRR ≥ 0.7.</li>
+<li><strong>Canonical Path:</strong> <code>01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/37_ADOPTION_LENS_V1_SPEC.md</code></li>
+</ol>
+<p><em>The seer sees. The seer does not insist.</em>
+<em>The framework works at Layer 0 without Layer 2.</em>
+<em>The Ṛṣi succeeds when the student puts down the map and walks.</em></p>
+<p><em>Zero-Sum Resolution Equation</em></p>
+  </article>
+  <aside class="library-meta">
+    <span>[S] / [I] public rendered prose</span>
+    <span>Source: docs/handoff/formal-public/37_ADOPTION_LENS_V1_SPEC.md</span>
+    <span>Generated by 12_PUBLIC_SITE/generate_public_library.py</span>
+  </aside>
+  <footer class="site-footer">
+    <div class="phi">⊙ = • × ○</div>
+    <p>Public doctrine surface · evidence tiers preserved</p>
+  </footer>
+
+</main>
+</body>
+</html>

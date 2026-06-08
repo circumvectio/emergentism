@@ -1,0 +1,11 @@
+{"action": "sign_checkpoint", "actor": "v3", "round": 1, "state_hash": "bfbec6aa72916abe", "target": {"cp_height": 0}}
+{"action": "sign_checkpoint", "actor": "v2", "round": 1, "state_hash": "7c2e6ed81c2c0d99", "target": {"cp_height": 0}}
+{"action": "sign_checkpoint", "actor": "v1", "round": 1, "state_hash": "4f6987673853f57e", "target": {"cp_height": 0}}
+{"action": "sign_checkpoint", "actor": "v3", "round": 10, "state_hash": "d6d4e4626de63251", "target": {"cp_height": 1}}
+{"action": "store_bundle", "actor": "a1", "round": 10, "state_hash": "88dfe882c0b25aba", "target": {"cp_height": 1}}
+{"action": "sign_checkpoint", "actor": "v1", "round": 10, "state_hash": "4bc77a308c65ddc8", "target": {"cp_height": 1}}
+{"action": "sign_checkpoint", "actor": "v2", "round": 10, "state_hash": "f01d74522325a6ca", "target": {"cp_height": 1}}
+{"action": "sign_checkpoint", "actor": "v1", "round": 20, "state_hash": "742a406a3f7594ed", "target": {"cp_height": 2}}
+{"action": "sign_checkpoint", "actor": "v2", "round": 20, "state_hash": "9248c07d4480ae91", "target": {"cp_height": 2}}
+{"action": "sign_checkpoint", "actor": "v3", "round": 20, "state_hash": "04b227d0f51c78fa", "target": {"cp_height": 2}}
+{"action": "store_bundle", "actor": "a1", "round": 20, "state_hash": "11ca34adbe659950", "target": {"cp_height": 2}}

@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riemann Sphere — Stereographic Projection</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Google+Sans+Mono:wght@400;500&family=Google+Sans+Text:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@300;400;500&display=swap');
+
+:root {
+  --bg: #0a0a0f;
+  --surface: rgba(15, 15, 22, 0.88);
+  --border: rgba(255, 255, 255, 0.07);
+  --yellow: #FFEB3B;
+  --yellow-light: #FFF176;
+  --yellow-dark: #FBC02D;
+  --yellow-dim: rgba(255, 235, 59, 0.35);
+  --yellow-glow: rgba(255, 235, 59, 0.12);
+  --gold: #FFD54F;
+  --red: #F44336;
+  --green: #4CAF50;
+  --blue: #2196F3;
+  --blue-light: #42A5F5;
+  --purple: #AB47BC;
+  --text: #FAFAFA;
+  --text-secondary: rgba(250, 250, 250, 0.6);
+  --text-disabled: rgba(250, 250, 250, 0.3);
+  --text-hint: rgba(250, 250, 250, 0.15);
+  --font-display: 'Google Sans', 'Inter', system-ui, sans-serif;
+  --font-body: 'Google Sans Text', 'Inter', system-ui, sans-serif;
+  --font-mono: 'Google Sans Mono', 'Roboto Mono', ui-monospace, monospace;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  cursor: grab;
+  -webkit-font-smoothing: antialiased;
+}
+body:active { cursor: grabbing; }
+canvas { display: block; }
+
+.masthead {
+  position: fixed;
+  top: 28px;
+  left: 32px;
+  z-index: 10;
+  pointer-events: none;
+}
+.masthead h1 {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--text);
+  opacity: 0.8;
+  line-height: 1;
+}
+.masthead .equation {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--yellow);
+  opacity: 0.5;
+  margin-top: 6px;
+  letter-spacing: 0.18em;
+}
+
+.instrument-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+  padding: 20px 32px 24px;
+  background: linear-gradient(to top, rgba(10,10,15,0.96) 0%, rgba(10,10,15,0.75) 50%, transparent 100%);
+  pointer-events: none;
+}
+.instrument-bar > * { pointer-events: auto; }
+
+.back-btn {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-secondary);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: all 0.15s;
+  flex-shrink: 0;
+  margin-bottom: 4px;
+}
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.beta-instrument {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.beta-track-container {
+  position: relative;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.beta-track-bg {
+  position: absolute;
+  left: 0; right: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.beta-track-fill {
+  position: absolute;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--yellow-dim) 0%, var(--yellow) 100%);
+  border-radius: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 14px var(--yellow-glow);
+  transition: width 0.04s linear;
+}
+.equator-mark {
+  position: absolute;
+  width: 2px;
+  height: 12px;
+  background: var(--yellow);
+  opacity: 0.3;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1px;
+  pointer-events: none;
+}
+.z-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  cursor: pointer;
+  z-index: 1;
+}
+.z-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background: var(--yellow);
+  border-radius: 50%;
+  cursor: grab;
+  box-shadow: 0 0 16px rgba(255, 235, 59, 0.45), 0 0 4px rgba(255, 235, 59, 0.7);
+}
+.z-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: var(--yellow);
+  border-radius: 50%;
+  cursor: grab;
+  border: none;
+  box-shadow: 0 0 16px rgba(255, 235, 59, 0.45), 0 0 4px rgba(255, 235, 59, 0.7);
+}
+
+.beta-readouts {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+.readout {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+.readout-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--text-disabled);
+}
+.readout-value {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--yellow);
+  opacity: 0.75;
+  font-variant-numeric: tabular-nums;
+  min-width: 40px;
+}
+
+#sphere-axis-labels {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+  overflow: hidden;
+}
+#sphere-axis-labels span {
+  position: absolute;
+  font-family: 'Google Sans', 'Inter', system-ui, sans-serif;
+  text-shadow: 0 0 6px rgba(0,0,0,0.9);
+  white-space: nowrap;
+}
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <h1>Riemann Sphere</h1>
+  <div class="equation">S&sup2; &rarr; &Copf; &cup; {&infin;}</div>
+</div>
+
+<div class="instrument-bar">
+  <button class="back-btn" onclick="alert('Return to torus (standalone mode)')">
+    &larr; Return to torus
+  </button>
+  <div class="beta-instrument">
+    <div class="beta-track-container">
+      <div class="beta-track-bg"></div>
+      <div class="beta-track-fill" id="trackFill"></div>
+      <div class="equator-mark" style="left:50%"></div>
+      <input type="range" class="z-slider" id="zSlider" min="0" max="1" step="0.002" value="0.5">
+    </div>
+    <div class="beta-readouts">
+      <div class="readout">
+        <span class="readout-label">|z|</span>
+        <span class="readout-value" id="zDisplay">2.00</span>
+      </div>
+      <div class="readout">
+        <span class="readout-label">&alpha;</span>
+        <span class="readout-value" id="alphaDisplay">45.0&deg;</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="sphere-axis-labels"></div>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+// ═══ Constants ═══
+const NUM_RAYS = 16;
+const PLANE_SIZE = 200;
+const PLANE_Y = 0;
+const R = 1;
+const CY = R;        // Sphere center at (0,1,0)
+const NY = 2 * R;    // North pole at (0,2,0)
+const S = 2;         // Scale factor: physical position = 2 * complex coordinate
+
+// ═══ State ═══
+let zMagnitude = 0.5;
+let defaultCamDir = null;
+
+// ═══ Parallels ═══
+const PARALLELS = [
+  { colatitude: Math.PI / 6,     color: 0xf44336, opacity: 0.25 },
+  { colatitude: Math.PI / 4,     color: 0xf44336, opacity: 0.3  },
+  { colatitude: Math.PI / 3,     color: 0xff9800, opacity: 0.25 },
+  { colatitude: Math.PI * 2 / 3, color: 0x4fc3f7, opacity: 0.25 },
+  { colatitude: Math.PI * 3 / 4, color: 0x2196f3, opacity: 0.3  },
+  { colatitude: Math.PI * 5 / 6, color: 0x2196f3, opacity: 0.25 },
+];
+
+// ═══ Axis Labels ═══
+const AXIS_LABELS = [
+  { text: 'Re', pos: [8, PLANE_Y, 0.3],       color: '#fafafa', size: 14, opacity: 0.5 },
+  { text: 'Im', pos: [0.3, PLANE_Y, 8],       color: '#fafafa', size: 14, opacity: 0.5 },
+  { text: '0',  pos: [0.15, PLANE_Y, 0.15],   color: '#42A5F5', size: 12, opacity: 0.7 },
+  // Tangent plane labels — physical position = |z| value directly
+  // EQUATOR landmarks in GOLD (|z|=2)
+  { text: '2',  pos: [2, PLANE_Y, 0.25],      color: '#FFEB3B', size: 14, opacity: 0.9 },
+  { text: '2i', pos: [0.25, PLANE_Y, 2],      color: '#FFEB3B', size: 14, opacity: 0.9 },
+  { text: '-2', pos: [-2, PLANE_Y, 0.25],     color: '#FFEB3B', size: 13, opacity: 0.8 },
+  { text: '-2i',pos: [0.25, PLANE_Y, -2],     color: '#FFEB3B', size: 13, opacity: 0.8 },
+  // Unit circle (|z|=1)
+  { text: '1',  pos: [1, PLANE_Y, 0.15],      color: '#fafafa', size: 10, opacity: 0.3 },
+  { text: 'i',  pos: [0.15, PLANE_Y, 1],      color: '#fafafa', size: 10, opacity: 0.3 },
+  // Further values
+  { text: '4',  pos: [4, PLANE_Y, 0.25],      color: '#fafafa', size: 11, opacity: 0.4 },
+  { text: '4i', pos: [0.25, PLANE_Y, 4],      color: '#fafafa', size: 11, opacity: 0.4 },
+  { text: '-4', pos: [-4, PLANE_Y, 0.25],     color: '#fafafa', size: 11, opacity: 0.35 },
+  { text: '-4i',pos: [0.25, PLANE_Y, -4],     color: '#fafafa', size: 11, opacity: 0.35 },
+  { text: '6',  pos: [6, PLANE_Y, 0.25],      color: '#fafafa', size: 10, opacity: 0.3 },
+  { text: '8',  pos: [8, PLANE_Y, 0.25],      color: '#fafafa', size: 10, opacity: 0.25 },
+  { text: '-6', pos: [-6, PLANE_Y, 0.25],     color: '#fafafa', size: 10, opacity: 0.25 },
+  { text: '\u221E',  pos: [0, NY + 0.15, 0],  color: '#EF5350', size: 15, opacity: 0.8 },
+  { text: 't = 0',  pos: [-S*3.5, PLANE_Y, -S*3.5], color: '#ab47bc', size: 12, opacity: 0.4 },
+  { text: '\u2102',  pos: [-S*3, PLANE_Y, -S*3],     color: '#ab47bc', size: 16, opacity: 0.35 },
+];
+
+// ═══ Renderer setup ═══
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setClearColor(0x050508);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.prepend(renderer.domElement);
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 2000);
+camera.position.set(3, 3, 5);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.dampingFactor = 0.08;
+controls.minDistance = 2;
+controls.maxDistance = 2000;
+
+// ═══ Lights ═══
+scene.add(new THREE.AmbientLight(0xffeec8, 0.3));
+const dirLight1 = new THREE.DirectionalLight(0xffeec8, 0.7);
+dirLight1.position.set(3, 5, 4);
+scene.add(dirLight1);
+const dirLight2 = new THREE.DirectionalLight(0x8090ff, 0.2);
+dirLight2.position.set(-3, 2, -2);
+scene.add(dirLight2);
+const ptLight = new THREE.PointLight(0xffd54f, 0.4, 20);
+ptLight.position.set(0, 3, 0);
+scene.add(ptLight);
+
+// ═══ Helper: create a line ═══
+function mkLine(points, color, opacity) {
+  const geo = new THREE.BufferGeometry().setFromPoints(points);
+  const mat = new THREE.LineBasicMaterial({ color, transparent: true, opacity, depthWrite: false });
+  return new THREE.Line(geo, mat);
+}
+
+// ═══ Sphere ═══
+const sphereGeo = new THREE.SphereGeometry(R, 64, 64);
+
+// Glass sphere
+const sphereMesh = new THREE.Mesh(sphereGeo, new THREE.MeshPhysicalMaterial({
+  color: 0xfafafa, transparent: true, opacity: 0.15,
+  roughness: 0.4, metalness: 0.1, side: THREE.DoubleSide, depthWrite: false
+}));
+sphereMesh.position.set(0, CY, 0);
+scene.add(sphereMesh);
+
+// Wireframe overlay
+const wireGeo = new THREE.SphereGeometry(R + 0.001, 32, 32);
+const wireMesh = new THREE.Mesh(wireGeo, new THREE.MeshBasicMaterial({
+  color: 0xfafafa, wireframe: true, transparent: true, opacity: 0.06, depthWrite: false
+}));
+wireMesh.position.set(0, CY, 0);
+scene.add(wireMesh);
+
+// ═══ Equator ring on sphere ═══
+{
+  const pts = [];
+  for (let i = 0; i <= 128; i++) {
+    const a = (i / 128) * Math.PI * 2;
+    pts.push(new THREE.Vector3(R * Math.cos(a), CY, R * Math.sin(a)));
+  }
+  scene.add(mkLine(pts, 0xffeb3b, 0.7));
+}
+
+// ═══ Equator circle on plane (|z|=2, physical radius = S*1 = 2) ═══
+{
+  const pts = [];
+  for (let i = 0; i <= 128; i++) {
+    const a = (i / 128) * Math.PI * 2;
+    pts.push(new THREE.Vector3(S * Math.cos(a), PLANE_Y, S * Math.sin(a)));
+  }
+  scene.add(mkLine(pts, 0xffeb3b, 0.9));
+}
+
+// ═══ Latitude parallels ═══
+PARALLELS.forEach(({ colatitude, color, opacity }) => {
+  const spherePts = [], planePts = [];
+  const y = CY + R * Math.cos(colatitude);
+  const r = R * Math.sin(colatitude);
+  const projR = S / Math.tan(colatitude / 2);
+  for (let i = 0; i <= 128; i++) {
+    const a = (i / 128) * Math.PI * 2;
+    spherePts.push(new THREE.Vector3(r * Math.cos(a), y, r * Math.sin(a)));
+    planePts.push(new THREE.Vector3(projR * Math.cos(a), PLANE_Y, projR * Math.sin(a)));
+  }
+  scene.add(mkLine(spherePts, color, opacity));
+  scene.add(mkLine(planePts, color, Math.max(0.08, opacity * 0.5)));
+});
+
+// ═══ Axes ═══
+scene.add(mkLine([
+  new THREE.Vector3(-PLANE_SIZE / 2, PLANE_Y, 0),
+  new THREE.Vector3(PLANE_SIZE / 2, PLANE_Y, 0)
+], 0xfafafa, 0.3));
+scene.add(mkLine([
+  new THREE.Vector3(0, PLANE_Y, -PLANE_SIZE / 2),
+  new THREE.Vector3(0, PLANE_Y, PLANE_SIZE / 2)
+], 0xfafafa, 0.3));
+
+// ═══ Grid lines ═══
+for (let n = -9; n <= 9; n++) {
+  if (n === 0) continue;
+  const x = S * n;
+  scene.add(mkLine([
+    new THREE.Vector3(x, PLANE_Y, -PLANE_SIZE / 2),
+    new THREE.Vector3(x, PLANE_Y, PLANE_SIZE / 2)
+  ], 0xfafafa, 0.05));
+  scene.add(mkLine([
+    new THREE.Vector3(-PLANE_SIZE / 2, PLANE_Y, x),
+    new THREE.Vector3(PLANE_SIZE / 2, PLANE_Y, x)
+  ], 0xfafafa, 0.05));
+}
+// Fine grid (half-integer near origin)
+for (const h of [-1.5, -0.5, 0.5, 1.5]) {
+  const x = S * h;
+  scene.add(mkLine([
+    new THREE.Vector3(x, PLANE_Y, -S * 4),
+    new THREE.Vector3(x, PLANE_Y, S * 4)
+  ], 0xfafafa, 0.05));
+  scene.add(mkLine([
+    new THREE.Vector3(-S * 4, PLANE_Y, x),
+    new THREE.Vector3(S * 4, PLANE_Y, x)
+  ], 0xfafafa, 0.05));
+}
+
+// ═══ Tick marks ═══
+const tl = 0.15;
+for (const v of [0.5, 1, 2, 3, 4, 5, 8]) {
+  const px = S * v;
+  for (const s of [1, -1]) {
+    scene.add(mkLine([
+      new THREE.Vector3(px * s, PLANE_Y, -tl),
+      new THREE.Vector3(px * s, PLANE_Y, tl)
+    ], 0xfafafa, 0.25));
+    scene.add(mkLine([
+      new THREE.Vector3(-tl, PLANE_Y, px * s),
+      new THREE.Vector3(tl, PLANE_Y, px * s)
+    ], 0xfafafa, 0.25));
+  }
+}
+
+// ═══ Static projection rays ═══
+{
+  const N = new THREE.Vector3(0, NY, 0);
+  for (let i = 0; i < NUM_RAYS; i++) {
+    const theta = (i / NUM_RAYS) * Math.PI * 2;
+    for (const phi of [-0.6, -0.2, 0.2, 0.6]) {
+      const P = new THREE.Vector3(
+        R * Math.cos(phi) * Math.cos(theta),
+        CY + R * Math.sin(phi),
+        R * Math.cos(phi) * Math.sin(theta)
+      );
+      const t = S * NY / (NY - P.y);
+      const pp = new THREE.Vector3(t * P.x, PLANE_Y, t * P.z);
+      if (Math.sqrt(pp.x * pp.x + pp.z * pp.z) > PLANE_SIZE / 2) continue;
+      scene.add(mkLine([N.clone(), P.clone(), pp], 0xffeb3b, 0.12));
+    }
+  }
+}
+
+// ═══ North pole (red dot + glow) ═══
+{
+  const dotGeo = new THREE.SphereGeometry(0.03, 16, 16);
+  const dot = new THREE.Mesh(dotGeo, new THREE.MeshBasicMaterial({ color: 0xf44336 }));
+  dot.position.set(0, NY, 0);
+  scene.add(dot);
+  const glowGeo = new THREE.SphereGeometry(0.07, 16, 16);
+  const glow = new THREE.Mesh(glowGeo, new THREE.MeshBasicMaterial({
+    color: 0xf44336, transparent: true, opacity: 0.2, depthWrite: false, blending: THREE.AdditiveBlending
+  }));
+  glow.position.set(0, NY, 0);
+  scene.add(glow);
+}
+
+// ═══ South pole (blue dot + glow) ═══
+{
+  const dotGeo = new THREE.SphereGeometry(0.03, 16, 16);
+  const dot = new THREE.Mesh(dotGeo, new THREE.MeshBasicMaterial({ color: 0x2196f3 }));
+  dot.position.set(0, PLANE_Y, 0);  // South pole at origin (CY - R = 0)
+  scene.add(dot);
+  const glowGeo = new THREE.SphereGeometry(0.07, 16, 16);
+  const glow = new THREE.Mesh(glowGeo, new THREE.MeshBasicMaterial({
+    color: 0x2196f3, transparent: true, opacity: 0.2, depthWrite: false, blending: THREE.AdditiveBlending
+  }));
+  glow.position.set(0, PLANE_Y, 0);  // South pole at origin
+  scene.add(glow);
+}
+
+// ═══ Complex plane with radial shader fade ═══
+{
+  const planeGeo = new THREE.PlaneGeometry(PLANE_SIZE, PLANE_SIZE);
+  const planeMat = new THREE.ShaderMaterial({
+    transparent: true,
+    side: THREE.DoubleSide,
+    depthWrite: false,
+    uniforms: {
+      uColor: { value: new THREE.Color(0x1a0d2e) },
+      uFadeStart: { value: 6.0 },
+      uFadeEnd: { value: PLANE_SIZE * 0.45 },
+    },
+    vertexShader: `
+      varying vec2 vUv;
+      varying float vDist;
+      void main() {
+        vUv = uv;
+        vec4 worldPos = modelMatrix * vec4(position, 1.0);
+        vDist = length(worldPos.xz);
+        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+      }
+    `,
+    fragmentShader: `
+      uniform vec3 uColor;
+      uniform float uFadeStart;
+      uniform float uFadeEnd;
+      varying float vDist;
+      void main() {
+        float fade = 1.0 - smoothstep(uFadeStart, uFadeEnd, vDist);
+        gl_FragColor = vec4(uColor, 0.55 * fade);
+      }
+    `,
+  });
+  const planeMesh = new THREE.Mesh(planeGeo, planeMat);
+  planeMesh.position.set(0, PLANE_Y, 0);
+  planeMesh.rotation.x = -Math.PI / 2;
+  scene.add(planeMesh);
+}
+
+// ═══ Past disk (|z|<2, blue tint) ═══
+{
+  const geo = new THREE.CircleGeometry(S * 1, 64);
+  const mat = new THREE.MeshBasicMaterial({
+    color: 0x2196f3, transparent: true, opacity: 0.08, side: THREE.DoubleSide, depthWrite: false
+  });
+  const mesh = new THREE.Mesh(geo, mat);
+  mesh.position.set(0, PLANE_Y + 0.001, 0);
+  mesh.rotation.x = -Math.PI / 2;
+  scene.add(mesh);
+}
+
+// ═══ Future region (|z|>2, faint red) ═══
+{
+  const geo = new THREE.RingGeometry(S * 1, PLANE_SIZE / 2, 64);
+  const mat = new THREE.MeshBasicMaterial({
+    color: 0xf44336, transparent: true, opacity: 0.04, side: THREE.DoubleSide, depthWrite: false
+  });
+  const mesh = new THREE.Mesh(geo, mat);
+  mesh.position.set(0, PLANE_Y + 0.002, 0);
+  mesh.rotation.x = -Math.PI / 2;
+  scene.add(mesh);
+}
+
+// ═══ Dynamic marker (green) ═══
+const markerSphereMesh = new THREE.Mesh(
+  new THREE.SphereGeometry(0.03, 12, 12),
+  new THREE.MeshBasicMaterial({ color: 0x76ff03 })
+);
+scene.add(markerSphereMesh);
+
+const markerSphereGlow = new THREE.Mesh(
+  new THREE.SphereGeometry(0.06, 12, 12),
+  new THREE.MeshBasicMaterial({ color: 0x76ff03, transparent: true, opacity: 0.2, depthWrite: false, blending: THREE.AdditiveBlending })
+);
+scene.add(markerSphereGlow);
+
+const markerPlaneMesh = new THREE.Mesh(
+  new THREE.CircleGeometry(0.03, 12),
+  new THREE.MeshBasicMaterial({ color: 0x76ff03, side: THREE.DoubleSide })
+);
+markerPlaneMesh.rotation.x = -Math.PI / 2;
+scene.add(markerPlaneMesh);
+
+const markerPlaneGlow = new THREE.Mesh(
+  new THREE.CircleGeometry(0.06, 12),
+  new THREE.MeshBasicMaterial({ color: 0x76ff03, transparent: true, opacity: 0.15, side: THREE.DoubleSide, depthWrite: false, blending: THREE.AdditiveBlending })
+);
+markerPlaneGlow.rotation.x = -Math.PI / 2;
+scene.add(markerPlaneGlow);
+
+// Dynamic ray line (N -> sphere point -> extended)
+const rayGeo = new THREE.BufferGeometry();
+rayGeo.setFromPoints([new THREE.Vector3(0, NY, 0), new THREE.Vector3(0, CY, 0), new THREE.Vector3(0, 0, 0)]);
+const markerRayLine = new THREE.Line(rayGeo, new THREE.LineBasicMaterial({ color: 0x76ff03, transparent: true, opacity: 0.7 }));
+scene.add(markerRayLine);
+
+// ═══ DOM Labels ═══
+const labelContainer = document.getElementById('sphere-axis-labels');
+const labelEls = new Map();
+
+AXIS_LABELS.forEach(label => {
+  const el = document.createElement('span');
+  el.textContent = label.text;
+  el.style.color = label.color;
+  el.style.fontSize = `${label.size}px`;
+  el.style.opacity = String(label.opacity);
+  labelContainer.appendChild(el);
+  labelEls.set(label.text, { el, pos: label.pos });
+});
+
+// ═══ Slider ═══
+const zSlider = document.getElementById('zSlider');
+const trackFill = document.getElementById('trackFill');
+const zDisplay = document.getElementById('zDisplay');
+const alphaDisplay = document.getElementById('alphaDisplay');
+
+zSlider.addEventListener('input', (e) => {
+  zMagnitude = parseFloat(e.target.value);
+});
+
+// ═══ Resize ═══
+window.addEventListener('resize', () => {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+});
+
+// ═══ Animation loop ═══
+function animate() {
+  requestAnimationFrame(animate);
+
+  const slider = zMagnitude;
+
+  // UI updates
+  trackFill.style.width = `${slider * 100}%`;
+  // Tangent plane convention: |z| = 2·tan(slider·π/2), equator at |z|=2
+  const zAbs = 2 * Math.tan(slider * Math.PI / 2);
+  const displayZ = slider > 0.98 ? '\u221E' : zAbs.toFixed(2);
+  const alphaRad = Math.atan(zAbs / 2);
+  const alphaDeg = (alphaRad * 180) / Math.PI;
+  const displayAngle = slider > 0.98 ? '90\u00B0' : alphaDeg.toFixed(1) + '\u00B0';
+  zDisplay.textContent = displayZ;
+  alphaDisplay.textContent = displayAngle;
+
+  // Camera distance
+  const dist = 4 + zAbs * 0.5 + Math.pow(zAbs, 2) * 0.03;
+
+  // Camera pivot — side view as slider > 0.5
+  const pivotBlend = slider <= 0.5 ? 0 : Math.pow((slider - 0.5) / 0.5, 1.5);
+  const currentDir = camera.position.clone().normalize();
+  if (pivotBlend > 0.01) {
+    if (!defaultCamDir) defaultCamDir = currentDir.clone();
+    const sideView = new THREE.Vector3(0, 0.15, 1).normalize();
+    const blended = currentDir.lerp(sideView, pivotBlend * 0.06).normalize();
+    camera.position.copy(blended.multiplyScalar(dist));
+    camera.lookAt(0, CY, 0);
+  } else if (defaultCamDir) {
+    const restored = currentDir.lerp(defaultCamDir, 0.04).normalize();
+    camera.position.copy(restored.multiplyScalar(dist));
+    camera.lookAt(0, CY, 0);
+    if (currentDir.angleTo(defaultCamDir) < 0.02) defaultCamDir = null;
+  }
+
+  camera.far = Math.max(200, dist * 5);
+  camera.updateProjectionMatrix();
+
+  // Dynamic marker
+  const thetaN = 2 * Math.atan(2 / Math.max(0.001, zAbs));
+  const sphereY = CY + R * Math.cos(thetaN);
+  const sphereRad = R * Math.sin(thetaN);
+  const sphereX = sphereRad, sphereZ = 0;
+
+  const projScale = S / (NY - sphereY);
+  const planeX = projScale * sphereX;
+  const planeZ = projScale * sphereZ;
+
+  // Sphere marker
+  markerSphereMesh.position.set(sphereX, sphereY, sphereZ);
+  markerSphereGlow.position.set(sphereX, sphereY, sphereZ);
+
+  // Ray extension
+  const rayDirX = sphereX, rayDirY = sphereY - NY, rayDirZ = sphereZ;
+  const visibleRadius = dist * 0.6;
+  const tFar = Math.max(3, visibleRadius / Math.max(0.001, Math.abs(rayDirY)));
+  const rayEndX = tFar * rayDirX, rayEndY = NY + tFar * rayDirY, rayEndZ = tFar * rayDirZ;
+
+  // Plane marker
+  const md = Math.sqrt(planeX * planeX + planeZ * planeZ);
+  const maxMD = Math.max(PLANE_SIZE, visibleRadius) * 0.85;
+  const cX = md > maxMD ? planeX * (maxMD / md) : planeX;
+  const cZ = md > maxMD ? planeZ * (maxMD / md) : planeZ;
+  const cd = Math.sqrt(cX * cX + cZ * cZ);
+
+  markerPlaneMesh.position.set(cX, PLANE_Y + 0.01, cZ);
+  markerPlaneMesh.scale.setScalar(Math.min(4, 1 + cd * 0.06));
+  markerPlaneGlow.position.set(cX, PLANE_Y + 0.01, cZ);
+  markerPlaneGlow.scale.setScalar(Math.min(4, 1 + cd * 0.04));
+
+  // Update ray geometry
+  const posAttr = markerRayLine.geometry.attributes.position;
+  if (posAttr && posAttr.count >= 3) {
+    posAttr.setXYZ(0, 0, NY, 0);
+    posAttr.setXYZ(1, sphereX, sphereY, sphereZ);
+    posAttr.setXYZ(2, rayEndX, rayEndY, rayEndZ);
+    posAttr.needsUpdate = true;
+  }
+
+  // DOM labels
+  const W = window.innerWidth, H = window.innerHeight;
+  labelEls.forEach(({ el, pos }) => {
+    const p = new THREE.Vector3(pos[0], pos[1], pos[2]).project(camera);
+    if (p.z > 1) {
+      el.style.display = 'none';
+    } else {
+      el.style.display = 'block';
+      el.style.left = `${((p.x + 1) / 2) * W}px`;
+      el.style.top = `${((-p.y + 1) / 2) * H}px`;
+    }
+  });
+
+  controls.update();
+  renderer.render(scene, camera);
+}
+
+animate();
+</script>
+</body>
+</html>

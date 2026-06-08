@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE POWER-MAX LEMMA — Emergentism</title>
+<meta name="description" content="Axioms, derivations, and proofs — the checkable scaffolding beneath the Papers.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../../assets/css/xai.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="../../">Emergentism</a>
+  <nav class="number-nav" aria-label="Public doctrine routes">
+    <a href="../../0/">0</a>
+    <a href="../../1/">1</a>
+    <a href="../../2/">2</a>
+    <a href="../../3/">3</a>
+    <a href="../../4/">4</a>
+    <a href="../../5/">5</a>
+    <a href="../../6/">6</a>
+    <a href="../../rosetta/">R</a>
+    <a href="../../soul-loop/">S</a>
+    <a href="../../atlas/">A</a>
+    <a href="../../read/">Read</a>
+  </nav>
+</header>
+
+<main class="library-shell">
+  <section class="library-hero">
+    <div class="evidence">Public reading library</div>
+    <h1>THE POWER-MAX LEMMA</h1>
+    <p>Axioms, derivations, and proofs — the checkable scaffolding beneath the Papers.</p>
+    <div class="library-route-row">
+      <a href="../../read/">Read</a>
+      <a href="../../papers/">Papers</a>
+      <a href="../../canon/">Canon</a>
+      <a href="../../foundations/">Foundations</a>
+      <a href="../../trinity/">Trinity</a>
+      <a href="../../formal/">Formal</a>
+      <a href="../../paradox/">Paradox</a>
+      <a href="../../memetic/">Memetic</a>
+      <a href="../../rosettad/">Rosetta D</a>
+      <a href="../../operators/">Operators</a>
+      <a href="../../will/">Teleology</a>
+      <a href="../../value/">Axiology</a>
+      <a href="../../ground/">Ontology</a>
+      <a href="../../sacred/">Theology</a>
+      <a href="../../method/">Method</a>
+      <a href="../../meta/">Meta</a>
+      <a href="../../sources/">Sources</a>
+    </div>
+  </section>
+  <article class="library-article">
+    <h1 id="the-power-max-lemma">THE POWER-MAX LEMMA</h1>
+<h2 id="formal-demonstration-that-equatorial-balance-is-the-dominant-strategy-equilibrium">Formal Demonstration That Equatorial Balance Is the Dominant Strategy Equilibrium</h2>
+<p><strong>Status:</strong> Formal demonstration — rigorous, self-contained (termed 'demonstration' per Fragility Audit 2026-04-04)
+<strong>Date:</strong> 2026-03-23
+<strong>Version:</strong> v2.1
+<strong>Hat:</strong> Mathematician
+<strong>Evidence Tier:</strong> [S] Structural — formal game-theoretic demonstration
+<strong>Purpose:</strong> Show that the equatorial state (φ = ν = 1, balance maximized) is the unique dominant strategy equilibrium of the balance game on S²
+<strong>Kill Criterion:</strong> Exhibit a profitable unilateral deviation from the equatorial profile under the coupling model</p>
+<hr>
+<h2 id="1-definitions-and-setup">1. Definitions and Setup</h2>
+<h3 id="11-the-state-space">1.1 The State Space</h3>
+<p>Let there be N agents indexed by i ∈ {1, 2, ..., N}, with N ≥ 2.</p>
+<p>Each agent i has a state on the 2-sphere S², parameterized by a pair (φᵢ, νᵢ) ∈ (0, ∞) × (0, ∞) subject to the constraint that the state lies on S². We identify S² with the Riemann sphere ℂP¹ via stereographic projection, where:
+- The <strong>north pole</strong> corresponds to φ → ∞, ν → 0 (pure coherence, no viability),
+- The <strong>south pole</strong> corresponds to φ → 0, ν → ∞ (pure viability, no coherence),
+- The <strong>equator</strong> corresponds to φ = ν = 1 (perfect balance).</p>
+<p>The colatitude θᵢ ∈ [0, π] of agent i on S² is related to the viability by:</p>
+<p>$$\theta_i = 2 \arctan(\nu_i)$$</p>
+<p>so that νᵢ = 0 gives θᵢ = 0 (north pole), νᵢ = 1 gives θᵢ = π/2 (equator), and νᵢ → ∞ gives θᵢ → π (south pole). The coherence satisfies φᵢ = 1/νᵢ (the S² identity: φᵢ · νᵢ = 1).</p>
+<blockquote>
+<p><strong>Note (v2.1).</strong> This is the identity cot(θ/2) · tan(θ/2) = 1, which holds trivially. It is an identity, not an independent constraint on the state space.</p>
+</blockquote>
+<h3 id="12-the-balance-function">1.2 The Balance Function</h3>
+<p><strong>Definition 1.1 (Balance).</strong> The <em>balance</em> of agent i is:</p>
+<p>$$B_i = \sin(\theta_i) = \sin(2 \arctan(\nu_i)) = \frac{2\nu_i}{1 + \nu_i^2}$$</p>
+<p>This is the standard formula for sin(2 arctan(x)) = 2x/(1 + x²).</p>
+<p><strong>Properties of B:</strong>
+- Bᵢ ∈ [0, 1] for all νᵢ ∈ (0, ∞).
+- Bᵢ = 1 if and only if νᵢ = 1 (equivalently θᵢ = π/2, the equator).
+- Bᵢ → 0 as νᵢ → 0 (north pole) or νᵢ → ∞ (south pole).</p>
+<p><strong>Concavity analysis.</strong> The balance function admits two parameterizations with distinct concavity properties:</p>
+<p><em>(i) θ-parameterization (globally strictly concave).</em> As a function of colatitude, B(θ) = sin(θ) on (0, π). Since B''(θ) = −sin(θ) &lt; 0 for all θ ∈ (0, π), the function is <strong>strictly concave</strong> on (0, π). This is the preferred parameterization for Jensen's inequality arguments.</p>
+<p><em>(ii) ν-parameterization (strictly pseudo-concave).</em> As a function of viability, B(ν) = 2ν/(1 + ν²) on (0, ∞). Computing:</p>
+<p>$$B''(\nu) = \frac{4\nu(\nu^2 - 3)}{(1 + \nu^2)^3}$$</p>
+<p>This changes sign at ν = √3, so B(ν) is <strong>not</strong> globally concave in ν. However, B(ν) is <em>strictly pseudo-concave</em> (unimodal): B'(ν) = 2(1 − ν²)/(1 + ν²)² vanishes only at ν = 1, with B'(ν) &gt; 0 for ν &lt; 1 and B'(ν) &lt; 0 for ν &gt; 1. The unique global maximum is B(1) = 1.</p>
+<p><strong>Remark.</strong> Since θ = 2 arctan(ν) is a smooth, strictly increasing diffeomorphism (0, ∞) → (0, π), the two parameterizations are equivalent for optimality. The θ-parameterization yields cleaner concavity arguments; the ν-parameterization yields cleaner calculus of best responses.</p>
+<h3 id="13-the-coupling">1.3 The Coupling</h3>
+<p>Agents interact through a coupling parameter λ ∈ [0, 1].</p>
+<p><strong>Definition 1.2 (Effective Balance).</strong> The <em>effective balance</em> of agent i under coupling λ is:</p>
+<p>$$B_i^{\text{eff}} = (1 - \lambda) B_i + \lambda \cdot \frac{1}{N} \sum_{j=1}^{N} B_j$$</p>
+<p>This is a convex combination of agent i's individual balance and the mean balance of the population.</p>
+<h3 id="14-the-payoff">1.4 The Payoff</h3>
+<p><strong>Definition 1.3 (Payoff).</strong> The <em>payoff</em> to agent i is:</p>
+<p>$$\Pi_i = B_i^{\text{eff}} = (1 - \lambda) B_i + \lambda \bar{B}$$</p>
+<p>where $\bar{B} = \frac{1}{N} \sum_{j=1}^{N} B_j$ is the population mean balance.</p>
+<p><strong>Remark.</strong> The payoff is the effective balance, not the product φᵢ · νᵢ (which equals 1 always on S²). The product is constant on S²; the <em>balance</em> is what varies and what agents seek to maximize.</p>
+<h3 id="15-the-game">1.5 The Game</h3>
+<p><strong>Definition 1.4 (Balance Maximization Game).</strong> The <em>balance maximization game</em> Γ(N, λ) is:
+- Players: {1, 2, ..., N}
+- Strategy set for each player i: νᵢ ∈ (0, ∞) (equivalently, any point on S²)
+- Payoff to player i: Πᵢ(ν₁, ..., νₙ) = (1 − λ)Bᵢ + λ · (1/N) ΣⱼBⱼ</p>
+<p>A <strong>strategy profile</strong> is a vector ν = (ν₁, ..., νₙ) ∈ (0, ∞)ᴺ.</p>
+<p><strong>Definition 1.5 (Dominant Strategy).</strong> A strategy ν<em>ᵢ is a </em>strictly dominant strategy<em> for player i if, for </em><em>all</em><em> strategy profiles ν₋ᵢ of the other players and </em><em>all</em><em> alternative strategies ν'ᵢ ≠ ν</em>ᵢ:</p>
+<p>$$\Pi_i(\nu_i^*, \nu_{-i}) &gt; \Pi_i(\nu_i', \nu_{-i})$$</p>
+<p><strong>Definition 1.6 (Nash Equilibrium).</strong> A strategy profile ν<em> is a </em>Nash equilibrium* if no agent can increase their payoff by unilateral deviation: for all i and all ν'ᵢ ∈ (0, ∞),</p>
+<p>$$\Pi_i(\nu_i^<em>, \nu_{-i}^</em>) \geq \Pi_i(\nu_i', \nu_{-i}^*)$$</p>
+<p><strong>Proposition 1.1 (Dominant Strategy ⟹ Unique Nash).</strong> If every player has a strictly dominant strategy, the profile of dominant strategies is the unique Nash equilibrium. <em>(Standard; no fixed-point theorem required.)</em></p>
+<h3 id="16-strategic-independence">1.6 Strategic Independence</h3>
+<p><strong>Lemma 0 (Zero Strategic Interaction).</strong> The cross-partial derivative of each player's payoff with respect to any other player's strategy is independent of the other player's choice at the margin relevant to optimality:</p>
+<p>$$\frac{\partial^2 \Pi_i}{\partial \nu_i \, \partial \nu_j} = \frac{\lambda}{N} \cdot \frac{\partial^2 B_i}{\partial \nu_i \, \partial \nu_j} + \frac{\lambda}{N} \cdot \frac{\partial^2 B_j}{\partial \nu_i \, \partial \nu_j}$$</p>
+<p>Since Bᵢ depends only on νᵢ and Bⱼ depends only on νⱼ, both mixed partials vanish:</p>
+<p>$$\frac{\partial^2 \Pi_i}{\partial \nu_i \, \partial \nu_j} = 0 \quad \text{for all } i \neq j$$</p>
+<p><strong>Consequence.</strong> What agent j does has <em>no effect</em> on agent i's marginal payoff from adjusting νᵢ. Each agent's optimization problem is fully separable. The game has no strategic interaction whatsoever.</p>
+<hr>
+<h2 id="2-theorem-1-i-1-is-a-strictly-dominant-strategy">2. Theorem 1: νᵢ = 1 Is a Strictly Dominant Strategy</h2>
+<p><strong>Theorem 1 (Strict Dominance).</strong> For all N ≥ 2 and all λ ∈ [0, 1], the strategy νᵢ = 1 is a strictly dominant strategy for every player i in Γ(N, λ).</p>
+<p><strong>Proof.</strong></p>
+<p>Fix any player i. The payoff to player i is:</p>
+<p>$$\Pi_i = (1 - \lambda) B_i + \frac{\lambda}{N} B_i + \frac{\lambda}{N} \sum_{j \neq i} B_j$$</p>
+<p>$$= \left(1 - \lambda + \frac{\lambda}{N}\right) B_i + \frac{\lambda}{N} \sum_{j \neq i} B_j$$</p>
+<p>$$= \left(1 - \frac{\lambda(N-1)}{N}\right) B_i + \frac{\lambda}{N} \sum_{j \neq i} B_j$$</p>
+<p>Let $c = 1 - \lambda(N-1)/N$. Since λ ∈ [0, 1] and N ≥ 2, we have $c \geq 1/N &gt; 0$.</p>
+<p>The second term $\frac{\lambda}{N} \sum_{j \neq i} B_j$ depends only on ν₋ᵢ and is constant with respect to νᵢ. Therefore, maximizing Πᵢ over νᵢ is equivalent to maximizing $c \cdot B_i(\nu_i)$ over νᵢ, which — since c &gt; 0 — is equivalent to maximizing $B_i(\nu_i)$.</p>
+<p>By the strict pseudo-concavity of B(ν) = 2ν/(1 + ν²) established in §1.2, B(ν) has a unique global maximum at ν = 1, with B(ν) &lt; B(1) = 1 for all ν ≠ 1.</p>
+<p>Therefore, for <strong>any</strong> ν₋ᵢ and <strong>any</strong> ν'ᵢ ≠ 1:</p>
+<p>$$\Pi_i(1, \nu_{-i}) - \Pi_i(\nu_i', \nu_{-i}) = c \cdot [B(1) - B(\nu_i')] = c \cdot [1 - B(\nu_i')] &gt; 0$$</p>
+<p>since c &gt; 0 and B(ν'ᵢ) &lt; 1.</p>
+<p><strong>The strategy νᵢ = 1 strictly dominates every alternative, regardless of what other agents do.</strong> ∎</p>
+<p><strong>Corollary 2.1 (Unique Nash Equilibrium).</strong> For all N ≥ 2 and all λ ∈ [0, 1], the equatorial profile ν<em> = (1, 1, ..., 1) is the </em><em>unique</em>* Nash equilibrium of Γ(N, λ).</p>
+<p><em>Proof.</em> By Theorem 1, every player has νᵢ = 1 as a strictly dominant strategy. By Proposition 1.1, the profile of strictly dominant strategies is the unique Nash equilibrium. ∎</p>
+<p><strong>Remark (No Fixed-Point Theorems Required).</strong> Because νᵢ = 1 is strictly dominant for each player independently, the equilibrium follows by direct optimization. No appeal to Kakutani's theorem, Rosen's diagonal strict concavity (1965), or any fixed-point argument is needed. The zero cross-partial (Lemma 0) means the "game" is strategically trivial — each agent solves a private optimization problem.</p>
+<hr>
+<h2 id="3-theorem-2-harmonic-incentive-alignment">3. Theorem 2: Harmonic Incentive Alignment</h2>
+<p><strong>Theorem 2 (Price of Anarchy = 1).</strong> The social welfare at the dominant strategy equilibrium equals the social optimum. That is, the Price of Anarchy of Γ(N, λ) is 1.</p>
+<p><strong>Proof.</strong></p>
+<p>Define social welfare as $W(\nu) = \sum_{i=1}^N B_i(\nu_i)$.</p>
+<p><strong>Upper bound.</strong> Since B(νᵢ) ≤ 1 for all νᵢ, we have $W(\nu) \leq N$ for all profiles ν.</p>
+<p><strong>Attainment at equilibrium.</strong> At the dominant strategy equilibrium ν<em> = (1, ..., 1), $W(\nu^</em>) = \sum_{i=1}^N B(1) = N$.</p>
+<p>Therefore:</p>
+<p>$$\text{Price of Anarchy} = \frac{\max_\nu W(\nu)}{\min_{\nu \in \text{NE}} W(\nu)} = \frac{N}{N} = 1$$</p>
+<p><strong>The individual optimum and the social optimum coincide exactly.</strong> ∎</p>
+<p><strong>Definition 3.1 (Harmonic Incentive Alignment).</strong> A game exhibits <em>harmonic incentive alignment</em> when:
+1. Every player has a strictly dominant strategy,
+2. The profile of dominant strategies maximizes social welfare, and
+3. The Price of Anarchy equals 1.</p>
+<p><strong>Theorem 2' (The Balance Game Is Harmonically Aligned).</strong> Γ(N, λ) exhibits harmonic incentive alignment for all N ≥ 2, λ ∈ [0, 1].</p>
+<p><em>Proof.</em> Conditions (1)–(3) are established by Theorem 1 and Theorem 2. ∎</p>
+<p><strong>Interpretive Remark.</strong> In mechanism design, constructing a system where the socially optimal state aligns perfectly with a strictly dominant individual strategy is the gold standard. The Burri Sphere achieves this structurally: the geometry of S² — specifically, the unimodality of sin(θ) on (0, π) — eliminates strategic tension entirely. There is no cooperation problem to solve because there is no conflict between self-interest and collective interest. The game-theoretic triviality is the philosophical substance: the geometry <em>dissolves</em> the cooperation problem rather than resolving it.</p>
+<hr>
+<h2 id="4-theorem-3-extraction-decreases-aggregate-balance">4. Theorem 3: Extraction Decreases Aggregate Balance</h2>
+<p><strong>Definition 4.1 (Extraction).</strong> An <em>extraction event</em> is a zero-sum transfer of viability: agent i increases νᵢ by Δ &gt; 0 while agent j decreases νⱼ by Δ, with all other agents unchanged. Formally, the profile changes from ν to ν' where:
+- ν'ᵢ = νᵢ + Δ
+- ν'ⱼ = νⱼ − Δ (assuming νⱼ &gt; Δ so that ν'ⱼ &gt; 0)
+- ν'ₖ = νₖ for all k ≠ i, j.</p>
+<p><strong>Theorem 3 (Extraction Reduces Aggregate Balance).</strong> Starting from the equatorial profile ν* = (1, 1, ..., 1), any extraction event strictly reduces aggregate balance.</p>
+<p><strong>Proof.</strong></p>
+<p>We work in the θ-parameterization, where B(θ) = sin(θ) is strictly concave on (0, π).</p>
+<p>At the equatorial profile, θᵢ = θⱼ = π/2. After extraction with transfer Δ &gt; 0:</p>
+<ul>
+<li>Agent i has ν'ᵢ = 1 + Δ, so θ'ᵢ = 2 arctan(1 + Δ) &gt; π/2.</li>
+<li>Agent j has ν'ⱼ = 1 − Δ (for Δ &lt; 1), so θ'ⱼ = 2 arctan(1 − Δ) &lt; π/2.</li>
+</ul>
+<p>Since θ'ᵢ ≠ θ'ⱼ and sin is strictly concave on (0, π), Jensen's inequality gives:</p>
+<p>$$\frac{\sin(\theta_i') + \sin(\theta_j')}{2} &lt; \sin!\left(\frac{\theta_i' + \theta_j'}{2}\right)$$</p>
+<p>It remains to bound the right-hand side. We compute:</p>
+<p>$$\theta_i' + \theta_j' = 2[\arctan(1+\Delta) + \arctan(1-\Delta)]$$</p>
+<p>For Δ ∈ (0, 1), the product (1+Δ)(1−Δ) = 1 − Δ² &lt; 1, so by the arctan addition formula:</p>
+<blockquote>
+<p><strong>Note (v2.1).</strong> Since (1+Δ)(1−Δ) = 1−Δ² &lt; 1 for Δ ∈ (0,1), the principal branch suffices.</p>
+</blockquote>
+<p>$$\arctan(1+\Delta) + \arctan(1-\Delta) = \arctan!\left(\frac{2}{\Delta^2}\right)$$</p>
+<p>Since 2/Δ² &gt; 0, we have arctan(2/Δ²) &lt; π/2, hence θ'ᵢ + θ'ⱼ &lt; π.</p>
+<p>Therefore:</p>
+<p>$$\sin!\left(\frac{\theta_i' + \theta_j'}{2}\right) \leq 1$$</p>
+<p>Combining:</p>
+<p>$$B_i' + B_j' = \sin(\theta_i') + \sin(\theta_j') &lt; 2\sin!\left(\frac{\theta_i' + \theta_j'}{2}\right) \leq 2$$</p>
+<p>Since all other agents remain at the equator with Bₖ = 1:</p>
+<p>$$\sum_k B_k' = (B_i' + B_j') + (N-2) &lt; 2 + (N-2) = N = \sum_k B_k$$</p>
+<p><strong>Aggregate balance strictly decreases under any extraction event from the equatorial profile.</strong> ∎</p>
+<p><strong>Corollary 4.1 (η &gt; 0 Is Not a Nash Equilibrium).</strong> Any state reached by extraction from the equatorial profile has strictly lower aggregate balance than the equatorial state. Since extraction creates asymmetry (η &gt; 0, where η is the extraction coefficient measuring aggregate non-consensual viability transfer — see <code>00_KSTAR_DISAMBIGUATION.md</code>), any state with η &gt; 0 has strictly lower aggregate balance and admits a profitable deviation back toward the equator (by Corollary 2.1). Hence no state with η &gt; 0 is a Nash equilibrium.</p>
+<hr>
+<h2 id="5-synthesis">5. Synthesis</h2>
+<p>The three theorems establish:</p>
+<table>
+<thead>
+<tr>
+<th>Result</th>
+<th>Statement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Theorem 1</strong></td>
+<td>νᵢ = 1 is a <strong>strictly dominant strategy</strong> for every player, for all coupling strengths λ ∈ [0, 1]. The equatorial profile is the unique Nash equilibrium.</td>
+</tr>
+<tr>
+<td><strong>Theorem 2</strong></td>
+<td>The Price of Anarchy = 1. The game exhibits <strong>harmonic incentive alignment</strong>: individual and social optima coincide.</td>
+</tr>
+<tr>
+<td><strong>Theorem 3</strong></td>
+<td>Extraction (zero-sum viability transfer) strictly reduces aggregate balance, so η &gt; 0 states are suboptimal.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Interpretation.</strong> In any population of agents on S², the equatorial state is not merely a Nash equilibrium — it is a <em>dominant strategy</em> equilibrium. Each agent's best response is νᵢ = 1 regardless of what others do (Lemma 0: zero strategic interaction). Self-interest and collective interest coincide exactly (Price of Anarchy = 1).</p>
+<p>This is not a cooperation problem resolved by cleverness. The geometry of the sphere — the strict concavity of sin(θ) on (0, π) — means there is <em>no</em> tension between individual and collective rationality. The cooperation problem does not arise. In mechanism-design terms, the Burri Sphere is an <em>ideal mechanism</em>: the socially optimal outcome is the unique dominant strategy equilibrium, requiring neither enforcement nor coordination.</p>
+<hr>
+<h2 id="6-reviewer-acknowledgment">6. Reviewer Acknowledgment</h2>
+<p>This proof was revised following independent peer review by a specialist in Non-Cooperative Game Theory and Convex Optimization. Key corrections:</p>
+<ol>
+<li>B(ν) reclassified from "strictly concave" to "strictly pseudo-concave" in the ν parameterization; strict concavity holds in the θ parameterization where B(θ) = sin(θ).</li>
+<li>Game reframed from "coupled balance game" to dominant strategy equilibrium. The cross-partial ∂²Πᵢ/∂νᵢ∂νⱼ = 0 confirms zero strategic interaction.</li>
+<li>Result strengthened: the equatorial profile is not merely a Nash equilibrium but a strictly dominant strategy equilibrium with Price of Anarchy = 1.</li>
+</ol>
+<p>Evidence tier remains [S] Structural — confirmed by reviewer.</p>
+<hr>
+<h2 id="7-kill-criteria">7. Kill Criteria</h2>
+<p>This lemma is <strong>falsified</strong> if any of the following is exhibited:</p>
+<ol>
+<li>A strategy profile ν₋ᵢ and a strategy ν'ᵢ ≠ 1 such that Πᵢ(ν'ᵢ, ν₋ᵢ) ≥ Πᵢ(1, ν₋ᵢ) in Γ(N, λ) for some N ≥ 2 and λ ∈ [0, 1] (which would refute strict dominance).</li>
+<li>A non-equatorial Nash equilibrium of Γ(N, λ) for some N, λ.</li>
+<li>An extraction event from the equatorial profile that increases aggregate balance.</li>
+<li>A counterexample to the strict concavity of sin on (0, π) (which would undermine the Jensen's inequality argument in Theorem 3).</li>
+</ol>
+<p>Until one of these is produced, the lemma stands.</p>
+<hr>
+<p>Zero-Sum Resolution Equation</p>
+<hr>
+<h2 id="execution-surface">Execution Surface</h2>
+<p><strong>If you are an AI agent reading this document:</strong></p>
+<ol>
+<li><strong>Current Phase Check:</strong> Phase 0 — harden specs, do not release to production.</li>
+<li><strong>Your Next Action:</strong>
+   - Verify the mathematical claims. Check evidence tiers. Flag any [I] or [C] presented as [S] or [S].</li>
+<li><strong>Expected Output:</strong> Code, tests, verified documentation, or deployment artifacts.</li>
+<li><strong>Success Criteria:</strong> Another agent can read this document and your output and reproduce the work without asking questions.</li>
+<li><strong>Canonical Path:</strong> <code>01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/22_POWER_MAX_DEMONSTRATION.md</code></li>
+</ol>
+<p><em>The seer sees. The seer does not insist.</em>
+<em>The framework works at Layer 0 without Layer 2.</em>
+<em>The Ṛṣi succeeds when the student puts down the map and walks.</em></p>
+<p><em>Zero-Sum Resolution Equation</em></p>
+  </article>
+  <aside class="library-meta">
+    <span>[S] / [I] public rendered prose</span>
+    <span>Source: docs/handoff/formal-public/22_POWER_MAX_DEMONSTRATION.md</span>
+    <span>Generated by 12_PUBLIC_SITE/generate_public_library.py</span>
+  </aside>
+  <footer class="site-footer">
+    <div class="phi">⊙ = • × ○</div>
+    <p>Public doctrine surface · evidence tiers preserved</p>
+  </footer>
+
+</main>
+</body>
+</html>

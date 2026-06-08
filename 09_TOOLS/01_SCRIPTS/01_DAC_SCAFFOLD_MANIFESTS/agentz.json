@@ -1,0 +1,61 @@
+{
+  "DAC_NAME": "Agentz",
+  "LP100_SYMBOL": "AGTZ",
+  "ARCHETYPE": "Tokenization Operating Company (asset-side)",
+  "NICHE": "Shariah-compliant real-asset tokenization — Saudi first chapter, chapter-scalable across the GCC",
+  "NICHE_SLUG": "tokenization-ksa",
+  "THESIS": "Agentic origination, structuring, servicing, and stewardship of real-world asset tokenization under Shariah-compliant structures. First binding substrate: Grade-A income-generating Saudi real estate.",
+  "VISION": "A sovereign tokenization centre that converts serious counterparties from uncertainty into governed tokenization programs, without extractive rent and without pretending regulatory or banking capability not yet earned.",
+  "MISSION": "Win mandates, structure programs, and operate the full lifecycle (issuance → servicing → stewardship) for tokenized real-world assets in the GCC, starting in the Kingdom of Saudi Arabia.",
+  "ONE_PARAGRAPH_DESCRIPTION": "Agentz is a portfolio-minority JV with Al Wasil Group that operates as the tokenization-operating-company lane of the broader ecosystem. The outward brand is Agentz (agentz.cloud); the public product-face is The Token Centre by AGENTZ. Internal entity, filesystem, contracts, and data room retain AATC. The first chapter is Saudi Arabia (Agentz-KSA). Three sellable motions (B2C retail trust distribution, B2B certification + infrastructure, B2G strategic partnership) are unified by a Halal Tokenization Standard and governed by an independent Sharia Supervisory Board once seated.",
+  "IDENTITY_SUMMARY": "Agentz is the outward tokenization-operating brand; AATC is the internal entity name and category acronym; Agentz-KSA is the Saudi first chapter.",
+  "SOVEREIGNTY_BOUNDARY_SUMMARY": "Portfolio-minority JV with Al Wasil Group, 45/45/10 cap table, authority under SHA reserved-matters regime. K2 applies at the DAC / framework IP layer; legal-entity layer is governed by the SHA, not unilateral founder signature.",
+  "CONSTITUTIONAL_NOTE": "η = 0 at the DAC layer — fees exist on catalytic work (origination, structuring, issuance, servicing, stewardship), not on access or extraction. All outward commercial language is bounded by stakeholders/EXTERNAL_WORDING_REGISTER_2026_04_20.md until counsel upgrades the tier. No claim of live licence, live SSB certification, or live platform operation until receipts exist.",
+  "SUCCESS_CONDITION": "First SSB-certified Agentz-KSA tokenization issuance closed on a real Saudi asset (SA_001 Riyadh Grade-A Office or equivalent), with recurring servicing fees flowing and documented rights-mapping + wrapper-viability workflow reproducible for asset #2.",
+  "FOUNDER_PUBKEY": "TBD — to be set when organism-side K2 signer for Agentz is formally designated (expected at or after SHA close)",
+
+  "SUBSTRATE_DEFINITION": "Real-world assets with durable economic rights currently trapped in opaque, illiquid, or jurisdiction-locked ownership structures. First binding substrate: Grade-A income-generating Saudi real estate (SA_001 hypothesis). Adjacent substrates in scope for later chapters: other income-generating real estate classes, commodities with title provenance, and reserve-collateral surfaces.",
+  "SUBSTRATE_SUMMARY": "Real-world assets with durable economic rights that need a Shariah-compliant, legally defensible, and operationally governed path to divisible digital ownership. First asset class: Saudi Grade-A income-generating real estate.",
+  "SUBSTRATE_UPLINK_SUMMARY": "Saudi income-generating real estate, scaling to GCC real-asset classes.",
+  "ENTROPY_SOURCES": "(1) Real-estate cap-rate indices + comparable-transaction data (Knight Frank, JLL, local broker feeds); (2) counterparty dialogue logs and commitment signals captured in stakeholders/; (3) Saudi regulatory updates (SAMA, CMA, REDF); (4) SSB rulings and comparable precedent; (5) independent valuer reports; (6) asset-level income feeds once a live mandate exists.",
+  "BASELINE_MODEL": "The counterparty default is selling, financing, or leasing the asset through conventional channels without tokenization. Baseline yield benchmarked against local private-placement / Murabaha-alternative yields. Agentz alpha is measured net of that default.",
+  "MISMATCH_1": "Shariah-compliance ambiguity — counterparties want tokenization without a defensible Shariah ruling, leaving them exposed.",
+  "MISMATCH_2": "Rights-mapping gap — Saudi title, beneficial-rights, and common-area governance logic is not yet encoded in tokenization wrappers.",
+  "MISMATCH_3": "Operational-discipline gap — most tokenization narratives end at issuance; Agentz operates lifecycle servicing, stewardship, and reporting.",
+  "MISMATCH_4": "Regulatory-pathway uncertainty — whether tokenized SPV beneficial interests escape full securities regulation under current Saudi law is unresolved; Agentz absorbs that legal work.",
+
+  "HAZARD_TEMPLATE": "Per-asset wrapper viability under Saudi securities law; counterparty commitment durability across SHA / mandate stages; SSB approval timing and scope; independent-valuer disagreement; regulatory-posture shift between signing and closing.",
+  "HAZARD_SUMMARY": "Wrapper / counterparty / SSB / valuer / regulator-timing hazards compound across the mandate lifecycle.",
+  "HAZARD_UPLINK_SUMMARY": "Wrapper + counterparty + SSB + valuer + regulator hazards.",
+  "HAZARD_1": "Wrapper-viability: can tokenized SPV beneficial interests avoid full securities regulation under current Saudi law? — first counsel question queued.",
+  "HAZARD_2": "Counterparty durability: named counterparties (Fawaz Bashraheel Holding, Retal, NHC, ROSHN, Red Sea Global) may drop between LOI and mandate close.",
+  "HAZARD_3": "SSB-seating delay: until the SSB is seated, Shariah-compliance claims are Interpretive-tier, not Empirical.",
+  "HAZARD_4": "Regulatory drift: SAMA / CMA / REDF posture on tokenization may shift mid-mandate; mandates must include regulator-change-of-law clauses.",
+
+  "ALPHA_MODEL": "Hybrid fee stack per mandate: (1) fixed discovery fee; (2) milestone structuring fee; (3) issuance fee; (4) recurring servicing and stewardship revenue (SaaS-like recurring stream). Not rent — each fee binds to an identifiable catalytic unit of work. η = 0 at the DAC layer.",
+  "ALPHA_DESCRIPTION": "Agentz catalyzes the conversion of illiquid, opaque, jurisdiction-locked assets into Shariah-compliant, legally defensible, operationally governed tokenized programs. Each fee maps to a measurable catalytic output: a diagnostic, a structured wrapper, a live issuance, or recurring servicing of a live token.",
+  "ALPHA_SUMMARY": "Discovery + structuring + issuance + recurring servicing & stewardship fees, bound to catalytic units of work.",
+  "ALPHA_UPLINK_SUMMARY": "Discovery → structuring → issuance → recurring servicing & stewardship.",
+
+  "MEMBRANE_RULE_1": "Outward brand = AGENTZ. Outward domain = agentz.cloud. Outward product-face = The Token Centre by AGENTZ. Internal entity, filesystem, contracts, and data room retain AATC.",
+  "MEMBRANE_RULE_2": "K2 signing required for framework-IP actions; SHA reserved-matters govern legal-entity actions; neither collapses into the other.",
+  "MEMBRANE_RULE_3": "All outward commercial wording is bounded by stakeholders/EXTERNAL_WORDING_REGISTER_2026_04_20.md until counsel upgrades the tier.",
+  "MEMBRANE_RULE_4": "Grace Exit (K4): any counterparty may exit their participation with their asset rights intact; Agentz retains no residual claim beyond documented fees already earned.",
+
+  "RECEIPT_SUMMARY": "Mandate signed, milestone hit, issuance settled, servicing period closed, dispute filed, dispute resolved.",
+  "RECEIPTS_UPLINK_SUMMARY": "Mandate / milestone / issuance / servicing / dispute events — each event a receipt.",
+
+  "OPERATIONS_UPLINK_SUMMARY": "Outbound wave 1 (5 Saudi targets) → mandate close → SSB engagement → wrapper ruling → first issuance → recurring servicing.",
+
+  "PATHOLOGY_UPLINK_SUMMARY": "Substrate hallucination (declaring asset rights not mapped); overbinding (mandate scope exceeding counterparty commitment); runaway catalysis (issuing without SSB / wrapper / regulator alignment); membrane leak (AATC internal names appearing in outward copy); parasitic extraction (fees decoupled from catalytic work).",
+
+  "METRIC_1": "Mandate close rate (mandate-signed / LOI-sent)",
+  "METRIC_2": "Time-to-first-issuance from SHA close (target: Phase 1 + 12 months)",
+  "METRIC_3": "Recurring servicing revenue / (cumulative discovery + structuring + issuance fees) — measures lifecycle-stickiness",
+  "METRIC_4": "P-score (Φ × ν) at the Agentz-KSA chapter level; current 0.16 (pre-close)",
+
+  "ECONOMIC_SURFACE_1": "Discovery fee — fixed, per-mandate, earned on diagnostic completion.",
+  "ECONOMIC_SURFACE_2": "Milestone structuring fee — milestone-gated, earned on documented structural deliverables (wrapper design, rights map, SSB submission).",
+  "ECONOMIC_SURFACE_3": "Issuance fee — earned on live SSB-certified issuance of the token.",
+  "ECONOMIC_SURFACE_4": "Recurring servicing & stewardship — SaaS-like monthly/quarterly stream, bound to live servicing workload."
+}

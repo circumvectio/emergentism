@@ -1,0 +1,61 @@
+{
+  "DAC_NAME": "TheCircle",
+  "LP100_SYMBOL": "CIRC",
+  "ARCHETYPE": "IS Organ — Observation Layer (L5; Induction; 'What patterns do I see?')",
+  "NICHE": "Sovereign multi-source observation: ingest Nostr, social, on-chain, DEX AXIOM, Helios sensors into tier-graded Observation records consumed by APU's F1 input",
+  "NICHE_SLUG": "is-organ",
+  "THESIS": "A planet-scale OSINT layer where every Nexus is a sensor and every observation is tier-graded, structured, and sovereign. TheCircle does NOT forecast, does NOT recommend — it observes, structures, and emits F1 signals with evidence tiers (E/S/I/C).",
+  "VISION": "Planet-scale observation network with eta=0 economics — a million sovereign eyes seeing what Bloomberg cannot, with structured observation records that any downstream organ (APU, RealityFutures) can consume.",
+  "MISSION": "Ship the IS state-machine: ingestion (Nostr/social/on-chain/DEX) → agents (pattern extraction, fact structuring) → API (F1 signal stream) → DB (observation ledger) → publishing (Kind 31339 to APU).",
+  "ONE_PARAGRAPH_DESCRIPTION": "TheCircle is the L5 observation organ of the Skyzai organism's Trivium loop. It ingests raw beauty-signals from multiple sources and emits structured, tier-graded Observation records (F1 signals) that feed APU's recommendation pipeline. It is constitutionally forbidden from forecasting or recommending — those belong to RealityFutures (COULD) and APU (SHOULD) respectively.",
+  "IDENTITY_SUMMARY": "IS-organ. Induction. Observation only. Feeds F1 to APU.",
+  "SOVEREIGNTY_BOUNDARY_SUMMARY": "Organism-native organ. K2 mandatory for observations bound to sovereign identities. Grace Exit at observation-ledger level — users export all their contributed observations and depart.",
+  "CONSTITUTIONAL_NOTE": "Constitutional boundary (State-Machine corruption guard): TheCircle must NOT generate scenarios (COULD) or recommend actions (SHOULD). Any code path that does is a pathology, not an optimization. η=0 on observation ingestion — contributors may earn on accepted observations that move downstream alpha, never on access.",
+  "SUCCESS_CONDITION": "Live F1 emission: real observations ingested from at least three independent source classes (Nostr, on-chain, DEX AXIOM), tier-graded, persisted to observation ledger, and consumed by a live APU pipeline run — reproducible and audit-traceable.",
+  "FOUNDER_PUBKEY": "TBD — organism-native K2 signer.",
+
+  "SUBSTRATE_DEFINITION": "Raw multi-source world signal (social, on-chain, DEX prices, sensors, reports) that is unstructured, unweighted, and not tier-graded. The mismatch: users, agents, and downstream organs need observation-as-structured-data, not observation-as-feed.",
+  "SUBSTRATE_SUMMARY": "Unstructured world signal that needs tier-graded, sovereign, auditable observation records.",
+  "SUBSTRATE_UPLINK_SUMMARY": "Multi-source signal → tier-graded Observation records for downstream F1.",
+  "ENTROPY_SOURCES": "(1) Nostr relays (Kind 1 social, Kind 30315 observation submissions); (2) on-chain state (EVM, Hedera, Bitcoin); (3) DEX AXIOM feeds (price, liquidity); (4) Helios sensor telemetry; (5) RSS / news feeds; (6) user-submitted observations via Nexus.",
+  "BASELINE_MODEL": "Null baseline: unstructured raw-feed consumption by the downstream organ — no tier, no evidence bundle, no provenance. Alpha = downstream F1-acceptance uplift vs null (how much better APU performs with structured Observation records).",
+  "MISMATCH_1": "Raw-signal overload — downstream agents can't process unstructured multi-source feeds in real time.",
+  "MISMATCH_2": "Tier ambiguity — most observations have no evidence grading, making them equally-weighted in downstream reasoning.",
+  "MISMATCH_3": "Source-provenance gap — accepting any claim without source-audit leads to false-observation contamination.",
+  "MISMATCH_4": "IS/COULD/SHOULD bleed — systems that collapse observation, prediction, and recommendation produce compound errors.",
+
+  "HAZARD_TEMPLATE": "False observation from adversarial source; tier-drift (I-tier claim marketed as E-tier); coverage gaps (unobserved substrate); latency (observation stale by emission time); source monoculture (single-source failure cascades).",
+  "HAZARD_SUMMARY": "False observations, tier drift, coverage gaps, latency, source monoculture.",
+  "HAZARD_UPLINK_SUMMARY": "Adversarial sources, tier drift, coverage, latency, monoculture.",
+  "HAZARD_1": "Adversarial-source injection — a malicious Nostr pubkey or on-chain oracle submits false observations; mitigation via k-of-n source corroboration.",
+  "HAZARD_2": "Tier-drift — marking an Interpretive claim as Empirical inflates downstream confidence; automated tier-check against evidence type required.",
+  "HAZARD_3": "Coverage gap — entity X unobserved by any source; downstream must know 'absence of observation' is itself data.",
+  "HAZARD_4": "IS/COULD/SHOULD bleed — any code path producing scenarios or recommendations from within TheCircle is a constitutional violation.",
+
+  "ALPHA_MODEL": "Catalytic transformation of raw beauty-signal → tier-graded, provenanced, multi-corroborated Observation record consumable by APU. Fee earned on observations accepted by downstream organs that move alpha vs null baseline.",
+  "ALPHA_DESCRIPTION": "TheCircle alpha is the measurable uplift APU achieves when fed structured Observation records vs raw feeds. Fees accrue only on observations that demonstrably contribute to accepted, outperforming APU recommendations.",
+  "ALPHA_SUMMARY": "Tier-graded Observation records that measurably uplift downstream APU alpha.",
+  "ALPHA_UPLINK_SUMMARY": "Raw signal → Observation record → downstream alpha uplift.",
+
+  "MEMBRANE_RULE_1": "Domain discipline — TheCircle observes only; generating scenarios or recommendations is a constitutional violation.",
+  "MEMBRANE_RULE_2": "Source provenance mandatory — every observation record carries source, method, evidence tier, timestamp; unprovenanced observations are rejected at ingestion.",
+  "MEMBRANE_RULE_3": "K2 signing for sovereign observations — user-submitted observations tied to a Nexus identity must be Schnorr-signed by that Nexus.",
+  "MEMBRANE_RULE_4": "Grace Exit (K4) — users can export their full observation history and remove their data from the ledger on request.",
+
+  "RECEIPT_SUMMARY": "Observation-submitted, observation-accepted, observation-rejected, tier-assigned, downstream-consumed, disputed, dispute-resolved.",
+  "RECEIPTS_UPLINK_SUMMARY": "Each observation + tier + downstream consumption is a receipt.",
+
+  "OPERATIONS_UPLINK_SUMMARY": "Ingestion agents → fact-extraction agents → tier-grading agents → API → DB ledger → Kind 31339 publish to APU.",
+
+  "PATHOLOGY_UPLINK_SUMMARY": "IS/COULD/SHOULD bleed; tier drift; adversarial source injection; coverage gap; latency-past-decision-window; source monoculture; unprovenanced observation acceptance.",
+
+  "METRIC_1": "Observation-acceptance rate (accepted downstream / emitted)",
+  "METRIC_2": "Tier-grading accuracy (retrospective evidence-tier audit vs emitted tier)",
+  "METRIC_3": "Source-diversity index (independent sources per high-value observation)",
+  "METRIC_4": "Latency budget (median ingest-to-emit, milliseconds)",
+
+  "ECONOMIC_SURFACE_1": "Observation fee — contributors earn on accepted, downstream-alpha-uplift observations.",
+  "ECONOMIC_SURFACE_2": "Tier-grading service — external consumers pay for tier-graded observation streams.",
+  "ECONOMIC_SURFACE_3": "Coverage bounty — contributors earn on filling observation gaps in high-value substrates.",
+  "ECONOMIC_SURFACE_4": "Dispute-bond refund — bounded bond for disputed observations, refunded on upheld dispute."
+}

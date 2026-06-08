@@ -1,0 +1,61 @@
+{
+  "DAC_NAME": "RealityFutures",
+  "LP100_SYMBOL": "REFU",
+  "ARCHETYPE": "COULD Organ — Prediction / Probability-Pricing Layer (L6; Deduction; 'What follows from these patterns?')",
+  "NICHE": "On-chain LMSR AMM prediction markets that price probability as temporal distance from the φ=ν True Vacuum — wisdom-of-the-crowd-with-skin-in-the-game for any resolvable future state",
+  "NICHE_SLUG": "could-organ",
+  "THESIS": "Probability is not opinion; it is the temporal calculation of distance from the φ=ν True Vacuum. Any projected reality with extraction (η>0) has a mathematically guaranteed probability of collapse (H→∞). LMSR markets don't forecast — they calculate Time-to-Energy-Wall. Price = probability.",
+  "VISION": "Planet-scale probability engine: sovereign, uncensorable, on-chain prediction markets for every resolvable question, with eta=0 so the price equals the probability without a house edge.",
+  "MISSION": "Ship the COULD state-machine: 18 Solidity contracts (AMMEngine, MarketFactory, RealityFuturesMarkets, PScoreOracle, MacroFundVault, GraceExit, LP100Token, …) + Next.js web + Forge test lane + bridge to APU F2 adapter, all live on a public testnet.",
+  "ONE_PARAGRAPH_DESCRIPTION": "RealityFutures is the L6 prediction organ of the Skyzai organism. It creates markets, prices forecasts via LMSR AMM, resolves outcomes, and emits F2 probability signals to APU. It is constitutionally forbidden from recommending or observing — those belong to APU (SHOULD) and TheCircle (IS) respectively. Today the scaffolding is coherent (18 contracts, Next.js web, Forge tests) but no contracts are deployed and no live market has run.",
+  "IDENTITY_SUMMARY": "COULD-organ. Deduction. Price probability only. Feeds F2 to APU. LMSR AMM as Time-to-Energy-Wall calculation.",
+  "SOVEREIGNTY_BOUNDARY_SUMMARY": "Organism-native organ. On-chain. K2 at market-creation and resolution-dispute layers; market participation is pseudonymous via wallet. Grace Exit at MacroFundVault / LP100Token layer.",
+  "CONSTITUTIONAL_NOTE": "η=0 at the market layer — the LMSR spread is calibration, not extraction. No house edge. No performance fee on individual traders. Fee schedule (if any) bound to catalytic market-creation and dispute-resolution services, not to every trade. RealityFutures must NOT recommend actions or observe raw facts — those are APU and TheCircle domains.",
+  "SUCCESS_CONDITION": "Live market on public testnet: market created via MarketFactory, priced by AMMEngine, traded by ≥3 independent wallets, resolved by PScoreOracle, paying out via GraceExit-compatible settlement — and APU's F2 adapter consuming the resulting probability curve end-to-end.",
+  "FOUNDER_PUBKEY": "TBD — organism-native K2 signer; market-creation authority delegated per contract.",
+
+  "SUBSTRATE_DEFINITION": "Future-state uncertainty that needs sovereign, on-chain, incentive-compatible pricing. The mismatch: centralized prediction venues take spreads (Polymarket), exclude categories, or require custody; the world needs η=0 permissionless probability pricing with constitutional finality (Grace Exit).",
+  "SUBSTRATE_SUMMARY": "Sovereign on-chain probability pricing for any resolvable future question, without house edge.",
+  "SUBSTRATE_UPLINK_SUMMARY": "Future-state uncertainty → LMSR-priced tradable probability curves → F2 signals.",
+  "ENTROPY_SOURCES": "(1) Trader capital commitments and LMSR price-impact curves; (2) TheCircle F1 observation streams feeding market-creation prompts; (3) oracle feeds (PScoreOracle and external oracles); (4) resolution-event data (on-chain and off-chain); (5) dispute submissions.",
+  "BASELINE_MODEL": "Null baseline: uniform prior (no market) or centralized forecaster (Polymarket / Metaculus) with extractive spread. Alpha measured as calibration accuracy vs baseline across resolved markets, and liquidity uplift without house edge.",
+  "MISMATCH_1": "House-edge distortion — centralized prediction markets take spreads that bias the price away from true probability.",
+  "MISMATCH_2": "Category exclusion — regulated venues exclude most meaningful questions (politics, finance-adjacent, geopolitical).",
+  "MISMATCH_3": "Custody requirement — participation requires trusting a custodian, violating K2/K4.",
+  "MISMATCH_4": "Resolution opacity — centralized resolution is gameable; on-chain oracles with dispute windows are more credibly neutral.",
+
+  "HAZARD_TEMPLATE": "Insufficient LMSR liquidity causing price-manipulation; oracle failure or delay; resolution-dispute deadlock; regulatory classification risk per market category; contract exploit pre-audit.",
+  "HAZARD_SUMMARY": "Thin liquidity, oracle failure, dispute deadlock, regulatory risk, contract exploit.",
+  "HAZARD_UPLINK_SUMMARY": "Liquidity, oracle, dispute, regulatory, exploit.",
+  "HAZARD_1": "Thin-liquidity manipulation — markets with low LMSR bookings can be moved by small capital; mitigation via minimum-liquidity thresholds.",
+  "HAZARD_2": "Oracle failure / delay — PScoreOracle or external feed late or adversarial; mitigation via redundant oracles + dispute window.",
+  "HAZARD_3": "Resolution dispute deadlock — a market with contested resolution needs bounded escalation + GraceExit fallback.",
+  "HAZARD_4": "Pre-audit contract exploit — 18 contracts not audited; live deployment before audit is a substrate-hallucination pathology.",
+
+  "ALPHA_MODEL": "Catalytic transformation of open uncertainty into tradable LMSR-priced probability curves with on-chain resolution. Fees (if any) bind to catalytic services: market creation, oracle integration, dispute resolution. η=0 on trading — no house edge on individual trades. LP100 (REFU) holders receive upside on aggregate protocol health, not on trader extraction.",
+  "ALPHA_DESCRIPTION": "RealityFutures alpha is the calibration-accuracy uplift + liquidity uplift markets achieve vs null baseline — measured per resolved market and aggregated across the portfolio. Fee earning is tied to catalytic services; trader P&L is preserved.",
+  "ALPHA_SUMMARY": "Well-calibrated, liquid, sovereign probability curves — fee on catalytic services, not on trading.",
+  "ALPHA_UPLINK_SUMMARY": "Uncertainty → LMSR-priced tradable curve → F2 signal, no house edge.",
+
+  "MEMBRANE_RULE_1": "Domain discipline — RealityFutures prices probability only; generating recommendations or raw observations is a constitutional violation.",
+  "MEMBRANE_RULE_2": "η=0 trading layer — no house edge on individual trades; fees (if any) bind to catalytic services.",
+  "MEMBRANE_RULE_3": "K2 at critical surfaces — market creation, resolution dispute, oracle override all require K2 signature.",
+  "MEMBRANE_RULE_4": "Grace Exit (K4) — MacroFundVault + LP100Token + GraceExit contracts together guarantee any participant can withdraw at NAV with full state export.",
+
+  "RECEIPT_SUMMARY": "Market-created, trade-settled, oracle-resolved, dispute-filed, dispute-resolved, fund-paid-out, grace-exit-executed.",
+  "RECEIPTS_UPLINK_SUMMARY": "Every on-chain market lifecycle event is a receipt.",
+
+  "OPERATIONS_UPLINK_SUMMARY": "Market-creation prompt (from F1 / user) → MarketFactory deploy → AMMEngine price → trader capital flow → oracle resolution → payout via GraceExit-compatible settlement → F2 curve to APU.",
+
+  "PATHOLOGY_UPLINK_SUMMARY": "Thin-liquidity manipulation; oracle failure / adversarial override; resolution-dispute deadlock; regulatory-classification drift; pre-audit contract exploit; house-edge creep; COULD/SHOULD bleed (market auto-recommending).",
+
+  "METRIC_1": "Calibration accuracy (Brier score vs resolved outcomes across market portfolio)",
+  "METRIC_2": "LMSR liquidity depth (median TVL per active market)",
+  "METRIC_3": "Resolution latency (median time from outcome to on-chain resolution)",
+  "METRIC_4": "Dispute rate (disputed / resolved markets) and dispute-resolution time",
+
+  "ECONOMIC_SURFACE_1": "Market-creation fee — fixed, one-time, paid to LP100 treasury on MarketFactory deploy.",
+  "ECONOMIC_SURFACE_2": "Oracle-integration fee — paid by markets requiring external oracle integration, not by traders.",
+  "ECONOMIC_SURFACE_3": "Dispute-resolution service — bounded fee paid by the losing dispute side; refunded to winning side.",
+  "ECONOMIC_SURFACE_4": "LP100 (REFU) upside — REFU holders earn on protocol-health metrics (TVL, market count, calibration accuracy), not on trader extraction."
+}

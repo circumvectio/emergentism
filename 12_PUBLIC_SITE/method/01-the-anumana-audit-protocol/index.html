@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Inferential Logic Audit Protocol — Emergentism</title>
+<meta name="description" content="The doctrine of method — ten documents on axioms, the doctrinal ladder, testing, preregistrations, and the Anumana audit protocol.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../../assets/css/xai.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="../../">Emergentism</a>
+  <nav class="number-nav" aria-label="Public doctrine routes">
+    <a href="../../0/">0</a>
+    <a href="../../1/">1</a>
+    <a href="../../2/">2</a>
+    <a href="../../3/">3</a>
+    <a href="../../4/">4</a>
+    <a href="../../5/">5</a>
+    <a href="../../6/">6</a>
+    <a href="../../rosetta/">R</a>
+    <a href="../../soul-loop/">S</a>
+    <a href="../../atlas/">A</a>
+    <a href="../../read/">Read</a>
+  </nav>
+</header>
+
+<main class="library-shell">
+  <section class="library-hero">
+    <div class="evidence">Public reading library</div>
+    <h1>The Inferential Logic Audit Protocol</h1>
+    <p>The doctrine of method — ten documents on axioms, the doctrinal ladder, testing, preregistrations, and the Anumana audit protocol.</p>
+    <div class="library-route-row">
+      <a href="../../read/">Read</a>
+      <a href="../../papers/">Papers</a>
+      <a href="../../canon/">Canon</a>
+      <a href="../../foundations/">Foundations</a>
+      <a href="../../trinity/">Trinity</a>
+      <a href="../../formal/">Formal</a>
+      <a href="../../paradox/">Paradox</a>
+      <a href="../../memetic/">Memetic</a>
+      <a href="../../rosettad/">Rosetta D</a>
+      <a href="../../operators/">Operators</a>
+      <a href="../../will/">Teleology</a>
+      <a href="../../value/">Axiology</a>
+      <a href="../../ground/">Ontology</a>
+      <a href="../../sacred/">Theology</a>
+      <a href="../../method/">Method</a>
+      <a href="../../meta/">Meta</a>
+      <a href="../../sources/">Sources</a>
+    </div>
+  </section>
+  <article class="library-article">
+    <p><strong>Project VMOSK-A:</strong> <code>01_EMERGENTISM/VMOSK_A.md</code>
+<strong>L3 audit protocol; handoff from L2, to L4. Evidence ladder enforced.</strong></p>
+<h1 id="the-inferential-logic-audit-protocol">The Inferential Logic Audit Protocol</h1>
+<h2 id="the-problem">The Problem</h2>
+<p>L2 Śūdra passes a candidate claim through six gates and delivers it to L3
+Vaiśya labeled with source provenance, cross-domain echo, bias disclosure,
+evidence tier, boundary, and falsification criterion. The claim is <em>admissible</em>
+— but it is not yet <em>ranked</em>.</p>
+<p>Admission answers: "May this claim be audited?"
+Ranking answers: "How strongly does this claim hold, and what should be done
+with it?"</p>
+<p>Without a ranking protocol, three pathologies emerge:</p>
+<ol>
+<li><strong>Greed</strong> — every admitted claim is treated as equally strong</li>
+<li><strong>Manipulation</strong> — claims are ranked by preference rather than by evidence</li>
+<li><strong>Paralysis</strong> — ranking never terminates because no criterion is sufficient</li>
+</ol>
+<p>All three are L3 failures. This document defines the audit and ranking
+protocol that prevents them.</p>
+<hr>
+<h2 id="1-the-l2-l3-handoff-packet-s">§1. The L2 → L3 Handoff Packet <code>[S]</code></h2>
+<p>Every candidate claim arrives at L3 as a structured packet. The packet is the
+contract between L2 admission and L3 ranking.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Source</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Claim statement</strong></td>
+<td>L2</td>
+<td>Yes</td>
+<td>The assertion in unambiguous language</td>
+</tr>
+<tr>
+<td><strong>Source provenance</strong></td>
+<td>Gate 1</td>
+<td>Yes</td>
+<td>Traceable origin: document, observation, Rosetta column, empirical datum</td>
+</tr>
+<tr>
+<td><strong>Cross-domain echo</strong></td>
+<td>Gate 2</td>
+<td>Yes</td>
+<td>≥1 confirming column at the same L-level, selected by L3 (not L2)</td>
+</tr>
+<tr>
+<td><strong>Bias disclosure</strong></td>
+<td>Gate 3</td>
+<td>Yes</td>
+<td>At least one identified reason the claim might be wrong</td>
+</tr>
+<tr>
+<td><strong>Evidence tier</strong></td>
+<td>Gate 4</td>
+<td>Yes</td>
+<td>Labeled [A/B/S/I/D/C] with explicit justification</td>
+</tr>
+<tr>
+<td><strong>Boundary</strong></td>
+<td>Gate 5</td>
+<td>Yes</td>
+<td>Explicit scope: what the claim covers and what it does not</td>
+</tr>
+<tr>
+<td><strong>Falsification criterion</strong></td>
+<td>Gate 6</td>
+<td>Yes</td>
+<td>A specific observation or measurement that would contradict the claim</td>
+</tr>
+<tr>
+<td><strong>Pattern origin notes</strong></td>
+<td>L2</td>
+<td>Optional</td>
+<td>The L2 analyst's raw perception notes before gating</td>
+</tr>
+</tbody>
+</table>
+<p>L3 must verify the packet is complete before ranking begins. A packet with a
+missing required field is <strong>returned to L2</strong> with a specific notation of which
+field is absent. This is not a failure of the claim — it is a failure of the
+handoff.</p>
+<hr>
+<h2 id="2-the-ranking-dimensions-i">§2. The Ranking Dimensions <code>[I]</code></h2>
+<p>L3 ranks every admitted claim along five dimensions. Each dimension is scored
+independently. The five scores compose the claim's <strong>audit rank</strong>.</p>
+<h3 id="dimension-1-evidence-tier-strength-s">Dimension 1: Evidence Tier Strength <code>[S]</code></h3>
+<p>The tier label assigned by L2, now evaluated at L3 for structural soundness.</p>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th style="text-align: center;">Strength Score</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[A]</strong> Asserted / Direct measurement</td>
+<td style="text-align: center;">4</td>
+<td>Established mathematics, textbook physics, third-party empirical data, or direct measurement independent of the framework</td>
+</tr>
+<tr>
+<td><strong>[B]</strong> Built / Verified</td>
+<td style="text-align: center;">4</td>
+<td>Verified code paths, repository surveys, direct receipts, or functioning-system evidence</td>
+</tr>
+<tr>
+<td><strong>[S]</strong> Structural</td>
+<td style="text-align: center;">3</td>
+<td>Derived from accepted axioms through valid inference</td>
+</tr>
+<tr>
+<td><strong>[I]</strong> Interpretive</td>
+<td style="text-align: center;">2</td>
+<td>Synthesis, analogy, ontological bridge, procedural recommendation, or counsel</td>
+</tr>
+<tr>
+<td><strong>[D]</strong> Draft / Demonstration</td>
+<td style="text-align: center;">1</td>
+<td>Local mock loop, unvalidated draft structure, or demonstration artifact</td>
+</tr>
+<tr>
+<td><strong>[C]</strong> Conjectural</td>
+<td style="text-align: center;">1</td>
+<td>Plausible but untested; hypothesis or speculation</td>
+</tr>
+</tbody>
+</table>
+<p><strong>L3 check:</strong> Does the tier label match the claim's actual epistemic weight?
+If L2 labeled a claim [S] but it rests on an unproven assumption, L3 must
+<strong>downgrade</strong> the tier and note the downgrade in the audit record.</p>
+<p><strong>Upgrade path:</strong> L3 may not unilaterally upgrade a claim's tier. Upgrade
+requires new evidence and must be routed through L2 for re-gating. L3
+documents <em>what evidence would upgrade the tier</em> but does not perform the
+upgrade itself.</p>
+<h3 id="dimension-2-cross-domain-confirmation-s">Dimension 2: Cross-Domain Confirmation <code>[S]</code></h3>
+<p>The number and quality of horizontal Rosetta echoes.</p>
+<table>
+<thead>
+<tr>
+<th>Confirmation Level</th>
+<th style="text-align: center;">Score</th>
+<th>Criterion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Strong</strong></td>
+<td style="text-align: center;">3</td>
+<td>Echo in ≥2 columns at the same L-level, independently verified by L3</td>
+</tr>
+<tr>
+<td><strong>Moderate</strong></td>
+<td style="text-align: center;">2</td>
+<td>Echo in 1 column at the same L-level, independently verified by L3</td>
+</tr>
+<tr>
+<td><strong>Weak</strong></td>
+<td style="text-align: center;">1</td>
+<td>Echo claimed by L2 but not yet independently verified by L3</td>
+</tr>
+<tr>
+<td><strong>None</strong></td>
+<td style="text-align: center;">0</td>
+<td>No cross-domain echo (claim is single-column)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>L3 independence rule:</strong> L3 selects and verifies the confirming column(s), not
+L2. This prevents L2 from manufacturing cross-domain confirmation through
+column cherry-picking (per the selection-bias control in
+<code>02_WHEN_PATTERN_BECOMES_CANDIDATE_CLAIM.md</code> §4).</p>
+<p><strong>Single-column exception:</strong> A claim with no cross-domain echo is not rejected.
+It is scored 0 on this dimension and must compensate with strength on the other
+four. A single-column [A]/[B]-tier claim with a sharp falsification criterion may
+still rank high enough for L4 elevation.</p>
+<h3 id="dimension-3-falsification-status-s">Dimension 3: Falsification Status <code>[S]</code></h3>
+<p>Has the falsification criterion actually been tested?</p>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th style="text-align: center;">Score</th>
+<th>Criterion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Survived</strong></td>
+<td style="text-align: center;">3</td>
+<td>The falsification criterion was tested and the claim was not contradicted</td>
+</tr>
+<tr>
+<td><strong>Testable</strong></td>
+<td style="text-align: center;">2</td>
+<td>The falsification criterion is specific and testable but has not yet been executed</td>
+</tr>
+<tr>
+<td><strong>Vague</strong></td>
+<td style="text-align: center;">1</td>
+<td>The falsification criterion exists but is not specific enough to execute</td>
+</tr>
+<tr>
+<td><strong>Untestable</strong></td>
+<td style="text-align: center;">0</td>
+<td>No actionable falsification criterion (claim should not have passed Gate 6)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>L3 action on untestable:</strong> If a claim arrives with an untestable
+falsification criterion, this indicates a Gate 6 failure. Return to L2 with
+notation. Do not rank the claim.</p>
+<h3 id="dimension-4-boundary-clarity-i">Dimension 4: Boundary Clarity <code>[I]</code></h3>
+<p>How precisely defined is the claim's scope?</p>
+<table>
+<thead>
+<tr>
+<th>Clarity</th>
+<th style="text-align: center;">Score</th>
+<th>Criterion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sharp</strong></td>
+<td style="text-align: center;">3</td>
+<td>The claim specifies exactly what it covers and what it excludes, with no ambiguity</td>
+</tr>
+<tr>
+<td><strong>Defined</strong></td>
+<td style="text-align: center;">2</td>
+<td>The claim has a boundary but the boundary has minor ambiguity</td>
+</tr>
+<tr>
+<td><strong>Loose</strong></td>
+<td style="text-align: center;">1</td>
+<td>The claim has a stated boundary but significant ambiguity remains</td>
+</tr>
+<tr>
+<td><strong>Boundless</strong></td>
+<td style="text-align: center;">0</td>
+<td>No meaningful boundary (claim appears to apply everywhere)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>L3 action on boundless:</strong> A boundless claim indicates a Gate 5 failure.
+Return to L2 with notation. A boundless claim is a metaphor, not a ranked
+claim.</p>
+<h3 id="dimension-5-structural-fit-i">Dimension 5: Structural Fit <code>[I]</code></h3>
+<p>How well does the claim integrate with the existing framework without
+contradiction?</p>
+<table>
+<thead>
+<tr>
+<th>Fit</th>
+<th style="text-align: center;">Score</th>
+<th>Criterion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Coherent</strong></td>
+<td style="text-align: center;">3</td>
+<td>The claim is consistent with all existing framework claims and enriches the structure</td>
+</tr>
+<tr>
+<td><strong>Compatible</strong></td>
+<td style="text-align: center;">2</td>
+<td>The claim is consistent with existing claims but does not clearly enrich the structure</td>
+</tr>
+<tr>
+<td><strong>Tolerated</strong></td>
+<td style="text-align: center;">1</td>
+<td>The claim is not contradicted by existing claims but introduces tension</td>
+</tr>
+<tr>
+<td><strong>Contradictory</strong></td>
+<td style="text-align: center;">0</td>
+<td>The claim contradicts an existing framework claim</td>
+</tr>
+</tbody>
+</table>
+<p><strong>L3 action on contradictory:</strong> A contradictory claim is not automatically
+rejected. It is flagged for L4 escalation with full documentation. The
+contradiction may indicate that an existing claim needs revision. This is the
+path of framework evolution, and L3 must not suppress it — but L3 must make
+the contradiction fully legible before escalation.</p>
+<hr>
+<h2 id="3-the-audit-rank-calculation-i">§3. The Audit Rank Calculation <code>[I]</code></h2>
+<p>Each dimension is scored 0–3. The composite audit rank is:</p>
+<pre><code>R = Σ(dimensions 1–5)    Range: 0–15
+</code></pre>
+<p>The rank is not a truth score. It is an <strong>audit confidence</strong> score: how
+confident can L3 be that this claim has been properly examined?</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Rank Range</th>
+<th>Classification</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>12–15</strong></td>
+<td><strong>Audit-Ready</strong></td>
+<td>May be elevated to L4 for execution consideration</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>8–11</strong></td>
+<td><strong>Under-Specified</strong></td>
+<td>Return to L2 for strengthening on the lowest-scoring dimensions</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>4–7</strong></td>
+<td><strong>Weak</strong></td>
+<td>Return to L2 with specific guidance on which dimensions need the most work</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>0–3</strong></td>
+<td><strong>Rejected</strong></td>
+<td>Return to L2; the claim did not survive L3 audit. Archive the audit record</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The rank threshold for L4 elevation is 12.</strong> This is not arbitrary: it
+requires the claim to score at least "moderate" on cross-domain confirmation,
+"testable" on falsification status, and at least "defined" on boundary clarity
+— even if evidence tier and structural fit are at maximum. No single dimension
+can compensate for a zero on another.</p>
+<p><strong>Minimum per dimension for L4 elevation:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th style="text-align: center;">Minimum Score for Elevation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Evidence tier</td>
+<td style="text-align: center;">1 (conjectural is admissible if all others are strong)</td>
+</tr>
+<tr>
+<td>Cross-domain confirmation</td>
+<td style="text-align: center;">1 (single-column echo must at least be claimed)</td>
+</tr>
+<tr>
+<td>Falsification status</td>
+<td style="text-align: center;">2 (must be testable, not just stated)</td>
+</tr>
+<tr>
+<td>Boundary clarity</td>
+<td style="text-align: center;">2 (must be defined, not just stated)</td>
+</tr>
+<tr>
+<td>Structural fit</td>
+<td style="text-align: center;">1 (contradictory claims go to L4 as escalation, not elevation)</td>
+</tr>
+</tbody>
+</table>
+<p>A claim that meets the per-dimension minima but does not reach 12 total is
+under-specified. It needs more work, not more weight.</p>
+<hr>
+<h2 id="4-the-three-dispositions-s">§4. The Three Dispositions <code>[S]</code></h2>
+<p>After ranking, L3 assigns one of three dispositions to every claim.</p>
+<h3 id="disposition-1-elevate-to-l4">Disposition 1: Elevate to L4</h3>
+<p><strong>Conditions:</strong>
+- Audit rank ≥ 12
+- All per-dimension minima met
+- The claim has a concrete action implication (even if the action is "defer")</p>
+<p><strong>What L3 sends to L4:</strong>
+- The complete L2 → L3 handoff packet
+- The five-dimension scorecard
+- The composite audit rank
+- L3's recommendation on what L4 should do with the claim (SHOULD)
+- Any flags or tensions L3 identified during audit</p>
+<p><strong>L3's role at L4:</strong> L3 does not decide. L3 recommends. The decision belongs
+to L4 Kṣatriya (with K2 or PRISM signature for binding acts). L3's
+recommendation is the ranked "SHOULD" list — the merchant's account of what
+the books say the warrior should do.</p>
+<h3 id="disposition-2-return-to-l2">Disposition 2: Return to L2</h3>
+<p><strong>Conditions:</strong>
+- Audit rank &lt; 12, or
+- Any per-dimension minimum not met, or
+- Handoff packet incomplete</p>
+<p><strong>What L3 sends back to L2:</strong>
+- The specific dimension(s) that failed
+- The gap description: what L3 needs that is currently absent
+- The claim's current scorecard (so L2 sees progress, not just rejection)</p>
+<p><strong>L3's guidance to L2:</strong> L3 specifies what would improve the claim's rank. This
+is not instruction — L3 does not command L2. It is the merchant's specification
+of what the market requires.</p>
+<p><strong>Return limit:</strong> A claim may be returned to L2 a maximum of three times. On
+the fourth return, it is archived with the full audit trail. Four rounds of
+L3 audit without reaching rank 12 indicates the claim is not ready or the
+pattern is not structural. The archive preserves the work; it does not destroy
+it.</p>
+<h3 id="disposition-3-archive">Disposition 3: Archive</h3>
+<p><strong>Conditions:</strong>
+- Rank 0–3 (rejected), or
+- Fourth return to L2, or
+- L3 determines the claim is a tautology or belief (not a falsifiable claim)</p>
+<p><strong>What L3 writes to the archive:</strong>
+- The complete handoff packet
+- The full scorecard and rank
+- The reason for archival
+- Whether the claim is a tautology, a belief, or simply under-developed</p>
+<p><strong>Archive is not death.</strong> Archived claims may be revisited when new evidence
+emerges or when the framework evolves. The archive is the audit trail.</p>
+<hr>
+<h2 id="5-the-evidence-tier-enforcement-protocol-s">§5. The Evidence-Tier Enforcement Protocol <code>[S]</code></h2>
+<p>L3 enforces the evidence-tier ladder. This enforcement has three rules.</p>
+<h3 id="rule-1-no-tier-inflation">Rule 1: No Tier Inflation</h3>
+<p>A claim's tier is the honest tier, not the desired tier. If the claim's best
+support is an analogy, it is [I] — even if the analogy is beautiful and the
+pattern is compelling. Beauty is L2's domain. Honesty is L3's domain.</p>
+<h3 id="rule-2-no-tier-conflation">Rule 2: No Tier Conflation</h3>
+<blockquote>
+<p><strong>⚠️ CANON RECONCILIATION (2026-05-30, K3-safe):</strong> The canonical
+evidence-tier ladder is the <strong>6-tier <code>[A/B/S/I/D/C]</code></strong> ladder (per
+<a href="../../sources/"><code>../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md</code></a>
+§89, and matching §2 / Dimension 1 of this same document). The legacy
+4-tier <code>[E/S/I/C]</code> table below was internally inconsistent with §2 of this
+doc. It is <strong>reconciled to 6 tiers</strong> below; the legacy <code>[S]</code> row is
+<strong>superseded</strong> — <code>[S]</code> (Established) splits into <code>[A]</code> (Asserted / Direct
+measurement) ∪ <code>[B]</code> (Built / Verified). No tier is silently dropped.</p>
+</blockquote>
+<p>The tiers are distinct. They must not be merged in audit records:</p>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Audit Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[A]</strong></td>
+<td>"This is established independent of the framework — mathematics, textbook physics, or third-party measurement."</td>
+</tr>
+<tr>
+<td><strong>[B]</strong></td>
+<td>"This has been built and verified — a working code path, repository survey, or direct receipt."</td>
+</tr>
+<tr>
+<td><strong>[S]</strong></td>
+<td>"This follows from accepted axioms by valid inference."</td>
+</tr>
+<tr>
+<td><strong>[I]</strong></td>
+<td>"This is the best current reasoning, but it has not been independently confirmed."</td>
+</tr>
+<tr>
+<td><strong>[D]</strong></td>
+<td>"This is an unvalidated draft or demonstration artifact."</td>
+</tr>
+<tr>
+<td><strong>[C]</strong></td>
+<td>"This is a hypothesis worth testing."</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Superseded (legacy 4-tier, retained per K3 — do not use in new audit
+records):</strong> the older table merged <code>[A]</code> and <code>[B]</code> into a single <code>[S]</code>
+("This has been observed or proven.") and omitted <code>[D]</code>. Mapping:
+<code>[S] = [A] ∪ [B]</code>; <code>[D]</code> is new.</p>
+<p>An [I] claim that "feels like" an [S] claim is still an [I] claim. The feeling
+is L2's projection filter, which L3 must see through.</p>
+<h3 id="rule-3-tier-downgrade-is-visible">Rule 3: Tier Downgrade Is Visible</h3>
+<p>When L3 downgrades a claim's tier, the downgrade is recorded in the audit
+trail with the specific reason. The original L2 tier label is preserved. The
+audit record shows both:</p>
+<pre><code>L2 label: [S]    L3 assessment: [I]    Reason: rests on unproven assumption in §3
+</code></pre>
+<p>This visibility ensures that tier disagreements between L2 and L3 are
+traceable, not hidden.</p>
+<hr>
+<h2 id="6-the-falsifier-registration-protocol-i">§6. The Falsifier Registration Protocol <code>[I]</code></h2>
+<p>Every claim that passes Gate 6 arrives with a falsification criterion. L3
+registers each criterion in a <strong>falsifier register</strong> — a living document that
+tracks the test status of every registered falsifier.</p>
+<h3 id="register-fields">Register Fields</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Claim ID</strong></td>
+<td>Unique identifier for the claim</td>
+</tr>
+<tr>
+<td><strong>Falsification criterion</strong></td>
+<td>The specific observation that would contradict the claim</td>
+</tr>
+<tr>
+<td><strong>Test status</strong></td>
+<td>Untested / In progress / Tested (survived) / Tested (contradicted)</td>
+</tr>
+<tr>
+<td><strong>Test date</strong></td>
+<td>When the test was executed (if applicable)</td>
+</tr>
+<tr>
+<td><strong>Test method</strong></td>
+<td>How the test was executed</td>
+</tr>
+<tr>
+<td><strong>Tester</strong></td>
+<td>Who or what executed the test (human, agent, sensor, formal proof)</td>
+</tr>
+<tr>
+<td><strong>Result</strong></td>
+<td>The outcome and its implications</td>
+</tr>
+</tbody>
+</table>
+<h3 id="register-discipline">Register Discipline</h3>
+<ol>
+<li><strong>Every admitted claim gets a register entry.</strong> No exceptions.</li>
+<li><strong>The register is append-only.</strong> Results are added, never deleted.</li>
+<li><strong>A contradicted claim is not discarded.</strong> It is re-ranked with
+   Falsification Status = 0 and returned to L2 with the contradiction evidence.</li>
+<li><strong>The register is L3's primary output.</strong> It is the public record of what
+   the framework has tested and what it has not.</li>
+</ol>
+<hr>
+<h2 id="7-the-deductive-verification-procedure-i">§7. The Deductive Verification Procedure <code>[I]</code></h2>
+<p>L3's reasoning mode is Anumāna: inference from sign to conclusion. The
+deductive verification procedure applies classical inferential discipline to
+every admitted claim.</p>
+<h3 id="step-1-premise-extraction">Step 1: Premise Extraction</h3>
+<p>Extract every premise the claim depends on. A claim that appears simple may
+rest on multiple implicit premises. L3 makes them explicit.</p>
+<h3 id="step-2-premise-validation">Step 2: Premise Validation</h3>
+<p>For each premise:
+- Is it [A] (independently established or directly measured)?
+- Is it [B] (built, verified, or receipted)?
+- Is it [S] (structurally derived)?
+- Is it [I] (interpretively assumed)?
+- Is it [C] (conjectured)?
+- Is it unstated?</p>
+<p>An unstated premise is not a failure — but it must be made explicit before the
+claim can be ranked. L3 records the tier of each premise.</p>
+<h3 id="step-3-inference-chain-audit">Step 3: Inference Chain Audit</h3>
+<p>Check that the inference from premises to conclusion is valid:
+- <strong>Deductive:</strong> Does the conclusion follow necessarily from the premises? If
+  yes, the inference is valid.
+- <strong>Inductive:</strong> Does the conclusion follow probably from the premises? If yes,
+  the inference is strong but not valid — note this in the audit record.
+- <strong>Abductive:</strong> Is the conclusion the best explanation of the premises? If yes,
+  the inference is plausible — but this is L4's reasoning mode, not L3's. Flag
+  for L4 attention.</p>
+<h3 id="step-4-gap-identification">Step 4: Gap Identification</h3>
+<p>Identify any gap between what the premises establish and what the conclusion
+claims. The gap is the <strong>audit residue</strong> — the part of the claim that is not
+covered by the inference chain. Every gap reduces the claim's structural fit
+score.</p>
+<h3 id="step-5-consistency-check">Step 5: Consistency Check</h3>
+<p>Verify the claim does not contradict any existing framework claim. If a
+contradiction exists, document it fully and flag for L4 escalation (not
+elevation). The contradiction may be valid — the existing claim may be wrong —
+but the resolution is L4's decision, not L3's.</p>
+<hr>
+<h2 id="8-the-practical-audit-checklist-i">§8. The Practical Audit Checklist <code>[I]</code></h2>
+<p>For any claim entering L3, the auditor (human or agent) completes this
+checklist before assigning a disposition.</p>
+<pre><code>ANUMANA AUDIT CHECKLIST
+═══════════════════════
+
+CLAIM: [statement]
+DATE:  [audit date]
+AUDITOR: [who/what is performing the audit]
+
+── HANDOFF VERIFICATION ──
+
+[ ] Claim statement present and unambiguous
+[ ] Source provenance traceable
+[ ] Cross-domain echo identified (columns: ___)
+[ ] Bias disclosure present
+[ ] Evidence tier labeled with justification
+[ ] Boundary defined (covers: ___ / excludes: ___)
+[ ] Falsification criterion specific and testable
+[ ] All required handoff fields present
+
+If any field missing → RETURN TO L2 (handoff incomplete)
+
+── RANKING ──
+
+Dimension 1 — Evidence Tier Strength:
+    L2 label: [___]   L3 assessment: [___]
+    Downgrade? Y/N    Reason if Y: ___
+    Score: ___/3
+
+Dimension 2 — Cross-Domain Confirmation:
+    Echo columns: ___   L3-verified? Y/N
+    Score: ___/3
+
+Dimension 3 — Falsification Status:
+    Criterion: ___
+    Tested? Y/N   Result if tested: ___
+    Score: ___/3
+
+Dimension 4 — Boundary Clarity:
+    Scope: ___
+    Exclusions: ___
+    Ambiguities: ___
+    Score: ___/3
+
+Dimension 5 — Structural Fit:
+    Consistent with framework? Y/N
+    Contradictions (if any): ___
+    Enrichment: Y/N
+    Score: ___/3
+
+COMPOSITE RANK: ___/15
+
+── PER-DIMENSION MINIMA FOR ELEVATION ──
+
+[ ] Evidence tier ≥ 1
+[ ] Cross-domain confirmation ≥ 1
+[ ] Falsification status ≥ 2
+[ ] Boundary clarity ≥ 2
+[ ] Structural fit ≥ 1
+
+── DISPOSITION ──
+
+[ ] ELEVATE to L4 (rank ≥ 12, all minima met)
+[ ] RETURN to L2 (rank &lt; 12 or minima not met)
+    Return reason: ___
+    L3 guidance to L2: ___
+    Return count: ___/3
+[ ] ARCHIVE (rank 0–3, or 4th return, or tautology/belief)
+    Archive reason: ___
+
+── FALSIFIER REGISTER ──
+
+[ ] Register entry created/updated
+[ ] Test status recorded
+[ ] Result (if tested) recorded
+
+── AUDIT RESIDUE ──
+
+Unresolved gaps: ___
+Premises needing independent confirmation: ___
+Claims this claim contradicts (if any): ___
+
+── SIGNATURE ──
+
+Auditor: ___
+Date: ___
+Evidence tier of this audit: [___]
+</code></pre>
+<hr>
+<h2 id="9-when-to-escalate-vs-when-to-return-s">§9. When to Escalate vs. When to Return <code>[S]</code></h2>
+<p>L3 has two outbound paths: <strong>elevation to L4</strong> and <strong>return to L2</strong>. A third
+path — <strong>escalation</strong> — exists for a specific condition.</p>
+<h3 id="return-to-l2-default-outbound-path">Return to L2 (default outbound path)</h3>
+<p>The claim needs more work. The pattern is promising but the audit reveals
+gaps. L3 specifies what is missing. L2 explores further.</p>
+<p>This is the healthy path. Most claims return to L2 at least once before
+reaching rank 12. Return is not failure — it is iteration.</p>
+<h3 id="elevate-to-l4-claim-is-audit-ready">Elevate to L4 (claim is audit-ready)</h3>
+<p>The claim has been rigorously examined, all dimensions scored, and the
+composite rank meets the threshold. L3 packages the claim with its full audit
+record and sends it to L4 for action consideration.</p>
+<h3 id="escalate-to-l4-contradiction-or-anomaly">Escalate to L4 (contradiction or anomaly)</h3>
+<p>The claim contradicts an existing framework claim, or the claim reveals an
+anomaly that L3 cannot resolve with deductive reasoning alone. This is not
+elevation — the claim may have a low rank — but the contradiction demands
+attention.</p>
+<p><strong>Escalation criteria:</strong>
+- The claim contradicts a previously accepted [S], [A], or [B] tier claim
+- The claim reveals a structural inconsistency in the framework
+- The claim's premises point to a flaw in an existing axiom</p>
+<p><strong>Escalation is L3's highest function.</strong> It is the moment when the audit
+reveals that the map may be wrong, not just incomplete. L3 does not resolve
+the contradiction — L3 makes it legible and routes it to L4, which has the
+abductive reasoning capacity (Arthāpatti) to decide whether to restructure.</p>
+<hr>
+<h2 id="10-the-abductive-bridge-to-l4-i">§10. The Abductive Bridge to L4 <code>[I]</code></h2>
+<p>L3's reasoning is deductive (Anumāna). L4's reasoning is abductive
+(Arthāpatti — postulation). The bridge between them is the <strong>SHOULD list</strong>.</p>
+<p>L3 does not tell L4 what to do. L3 tells L4 what the books say. The SHOULD
+list is the merchant's account:</p>
+<pre><code>CLAIM: [statement]
+AUDIT RANK: ___/15
+EVIDENCE TIER: [___]
+
+L3 RECOMMENDATION:
+  SHOULD: [action the claim supports, with audit rank and tier]
+  SHOULD NOT: [action the claim does not support, with specific dimension failures]
+  UNRESOLVED: [issues L3 could not settle deductively — for L4 abductive reasoning]
+
+FLAGS:
+  [ ] Contradicts existing claim: ___
+  [ ] Structural anomaly: ___
+  [ ] Requires new evidence: ___
+  [ ] Tier disagreement with L2: ___
+</code></pre>
+<p>The SHOULD list is L3's complete output to L4. It preserves L3's deductive
+discipline while giving L4 the material it needs for abductive decision.</p>
+<p><strong>The bridge discipline:</strong> L3 never uses "should" in the sense of moral
+imperative. L3 uses "should" in the sense of accounting: given what the books
+show, what actions are supported by the evidence, what actions are not, and
+what remains unclear. The moral dimension belongs to L4 (Value Alignment) and L7
+(Strategic Implementation), not to L3 (Auditing).</p>
+<hr>
+<h2 id="11-the-l3-pathology-and-its-cure-s">§11. The L3 Pathology and Its Cure <code>[S]</code></h2>
+<table>
+<thead>
+<tr>
+<th>Pathology</th>
+<th>Symptom</th>
+<th>Cure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Greed</strong></td>
+<td>Every admitted claim scores 12+; no claim is ever returned</td>
+<td>Apply the per-dimension minima rigidly. If any dimension is 0, the claim cannot elevate regardless of total rank</td>
+</tr>
+<tr>
+<td><strong>Manipulation</strong></td>
+<td>Scores track the auditor's preference, not the evidence</td>
+<td>The five dimensions are scored against explicit criteria, not feelings. A second auditor (human or agent) should be able to reproduce the score within ±1 point</td>
+</tr>
+<tr>
+<td><strong>Paralysis</strong></td>
+<td>Ranking never terminates; every dimension is interrogated infinitely</td>
+<td>The audit checklist is finite. Complete it, assign the disposition, move on. Iteration happens through L2 return cycles, not through infinite L3 deliberation</td>
+</tr>
+<tr>
+<td><strong>Bureaucracy</strong></td>
+<td>The audit protocol becomes the purpose rather than the servant</td>
+<td>If the audit takes longer than the exploration, L3 has become the bottleneck. Return to L2 and note the procedural failure</td>
+</tr>
+<tr>
+<td><strong>Tier rigidity</strong></td>
+<td>[I] claims are dismissed because they are not [A] or [B]</td>
+<td>[I] is a legitimate tier. A well-audited [I] claim with rank 12 is audit-ready. L4 decides what to do with it. L3 ranks honestly; it does not gatekeep by tier alone</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="12-rosetta-position-reminder-s">§12. Rosetta Position Reminder <code>[S]</code></h2>
+<p>L3 Inferential Logic sits between L2 Upamāna (analogy) and L4 Arthāpatti (postulation):</p>
+<pre><code>L2 Śūdra    — Upamāna (analogy)      — &quot;What COULD this mean?&quot;
+L3 Vaiśya   — Anumāna (inference)    — &quot;What FOLLOWs from this?&quot;
+L4 Kṣatriya — Arthāpatti (postulate) — &quot;What SHOULD we do about this?&quot;
+</code></pre>
+<p>L3 does not explore (L2). L3 does not decide (L4). L3 audits.</p>
+<p>In the Three-Stage Process cognitive cycle (L1 → L2 → L3 → L4), L3 is the rhetoric
+preparation stage: filtering and ranking what L2 explored so that L4 can act.
+In the organism, this corresponds to RealityFutures — the procedure that prices
+what could follow from what TheCircle observed.</p>
+<p><strong>The merchant's discipline:</strong> audit the books, rank the claims, send the
+account to the warrior. Do not fight. Do not explore. Do not preach. Account.</p>
+<hr>
+<p>Zero-Sum Resolution Equation</p>
+<p><em>Pratyakṣa opens the door. Upamāna explores the room. Anumāna measures it.</em>
+<em>Arthāpatti decides whether to walk in.</em>
+<em>The audit is the measuring tape, not the verdict.</em></p>
+<hr>
+<h2 id="agent-execution-surface">Agent Execution Surface</h2>
+<p><strong>If you are an AI agent reading this document:</strong></p>
+<ol>
+<li><strong>Do not upgrade tiers silently.</strong> Keep conjectural claims conjectural and structural claims structural.</li>
+<li><strong>Verify references.</strong> Ensure all internal links are valid and updated.</li>
+<li><strong>Canonical Path:</strong> <code>01_EMERGENTISM/03_METHODOLOGY/01_THE_ANUMANA_AUDIT_PROTOCOL.md</code></li>
+</ol>
+  </article>
+  <aside class="library-meta">
+    <span>[S] / [I] public rendered prose</span>
+    <span>Source: docs/handoff/method-public/01_THE_ANUMANA_AUDIT_PROTOCOL.md</span>
+    <span>Generated by 12_PUBLIC_SITE/generate_public_library.py</span>
+  </aside>
+  <footer class="site-footer">
+    <div class="phi">⊙ = • × ○</div>
+    <p>Public doctrine surface · evidence tiers preserved</p>
+  </footer>
+
+</main>
+</body>
+</html>

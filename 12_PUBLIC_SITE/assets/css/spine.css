@@ -1,0 +1,92 @@
+:root {
+  --bg: #0a0a0a;
+  --surface: #111111;
+  --border: #222222;
+  --text: #e8e4df;
+  --muted: #888888;
+  --gold: #c9a84c;
+  --gold-dim: #8a6e2f;
+  --teal: #3a7a6e;
+  --crimson: #8b2e2e;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Times New Roman', Georgia, serif;
+  line-height: 1.7;
+}
+
+/* Spine nav */
+.spine-nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(10,10,10,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 56px;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.spine-nav .logo {
+  color: var(--gold);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.spine-nav .route-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.spine-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.spine-nav a:hover { color: var(--text); }
+
+.spine-nav .current {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.spine-nav .exit {
+  font-size: 0.7rem;
+  border: 1px solid #222;
+  padding: 0.45rem 1rem;
+  border-radius: 2px;
+}
+
+.spine-nav .exit:hover {
+  border-color: var(--gold-dim);
+  color: var(--gold);
+}
+
+/* Section tags */
+.section-tag {
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+/* Mu-limit section */
+#mu-limit {
+  border-top: 1px solid var(--border);
+  padding: 3rem 2rem;
+  background: var(--surface);
+  margin-top: 4rem;
+}

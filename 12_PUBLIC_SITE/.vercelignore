@@ -1,0 +1,27 @@
+# Public deployment boundary for emergentism.org.
+#
+# Vercel deploys from this directory. Keep source/control/tooling files out of
+# the uploaded static site; the repository copy remains authoritative.
+
+# Frozen app source pending AIA migration; not a public production surface.
+book-pwa/
+
+# Source/control bundles and local/generated tooling.
+docs/
+__pycache__/
+*.pyc
+*.py
+*.sh
+*.md
+
+# Local runtime state if present in the deploy checkout.
+.env
+.env.*
+*.db
+*.sqlite
+*.sqlite3
+*.tsbuildinfo
+node_modules/
+.next/
+dist/
+build/

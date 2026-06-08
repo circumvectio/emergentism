@@ -1,0 +1,30 @@
+name: network_partition
+description: 4 validators split into two islands of 2 for 5 rounds. Checkpoint created after partition heals should reach green.
+seed: 42
+duration_rounds: 30
+actors:
+  - type: Validator
+    id: v1
+    is_honest: true
+  - type: Validator
+    id: v2
+    is_honest: true
+  - type: Validator
+    id: v3
+    is_honest: true
+  - type: Validator
+    id: v4
+    is_honest: true
+  - type: Archiver
+    id: a1
+    is_honest: true
+events:
+  - round: 1
+    count: 5
+    producer: v1
+  - round: 15
+    count: 5
+    producer: v3
+assertions:
+  - every_super_checkpoint_reaches_green
+  - no_event_pruned_before_bundle_verified

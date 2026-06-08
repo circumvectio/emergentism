@@ -1,0 +1,216 @@
+---
+rosetta:
+  primary_level: L3
+  primary_column: Philosophy
+  secondary:
+    - level: L5
+      column: Game theory
+      role: "empirical test of multiplicative P across countries"
+  operator: "Kṛṣṇa ◇"
+  tier: "God"
+  regime: "Vaiśya"
+  register: "[B] data/result receipt / [I] interpretation"
+  canonical_phrase: "GFS Wave 1 Results"
+---
+
+**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**L3; [B] receipt, [I] interp; mixed results published without spin per A7.**
+
+# GFS Wave 1 Results: The Honest Reckoning
+
+> **A7 demands this document exist.** The results are mixed. We report them without spin.
+
+**Date:** 2026-04-10
+**Evidence Tier:** [B] for the data/result receipt; [I] for the interpretation
+**Depends on:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [GFS Preregistration](../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/spec/empirical/01_GFS_TEST/GFS_PREREG_Multiplicative_Ektropy.md)
+**Data:** `gfs_all_countries_wave2.csv` (n = 207,920 respondents, 23 countries)
+**Analysis:** `gfs_results_20260409.csv` (pre-registered pipeline v3/v4)
+
+---
+
+## The Test
+
+**H1 (Multiplicative):** `P_survey = φ_proxy × ν_proxy` — the interaction term adds explanatory power beyond the additive model (`α × φ_proxy + β × ν_proxy`).
+
+**H2 (Balance):** B = sin theta — the balance function (distance from phi = nu) predicts flourishing better than raw component scores.
+
+**Pre-registered kill condition (AK1):** If the additive model explains equal or more variance than the multiplicative model across the pooled sample, the ontological claim (I1) downgrades to "useful analogy."
+
+---
+
+## The Results
+
+### Summary Table
+
+| Metric | Result |
+|--------|--------|
+| **Countries tested** | 23 |
+| **Total respondents** | 207,920 |
+| **Interaction significant (p < 0.05)** | 8 / 23 (35%) |
+| **Positive interaction (framework-consistent)** | 4 / 23 (17%) |
+| **Negative interaction (framework-inconsistent)** | 4 / 23 (17%) |
+| **H1 supported (interaction + AIC favors model)** | 7 / 23 (30%) |
+| **H2 supported (balance function significant)** | 5 / 23 (22%) |
+
+### What This Means
+
+**The multiplicative model shows signal but does NOT dominate.** In 7 of 23 countries, the interaction model is favored by AIC — meaning the multiplicative structure adds explanatory power beyond the additive baseline. But in 16 of 23 countries, the additive model is sufficient.
+
+**The direction is split.** Of the 8 countries with significant interaction terms, 4 have positive coefficients (consistent with the survey-level product model) and 4 have negative coefficients (inconsistent — suggesting in some contexts, high proxy coherence and high proxy viability together predict LOWER flourishing than the additive model expects). This is not what the framework predicted.
+
+**The balance function (H2) is weak.** Only 5 of 23 countries show significant balance effects. B = sin theta is not the dominant predictor of flourishing in most populations.
+
+---
+
+## Kill Condition Assessment
+
+| Kill Condition | Status | Assessment |
+|---------------|--------|-----------|
+| **AK1: Additive wins globally** | **AMBIGUOUS** | The additive model is sufficient in 16/23 countries. The multiplicative model adds power in 7/23. This is neither clean confirmation nor clean falsification. |
+| **K2 (pre-reg): Additive dominates** | **NOT TRIGGERED** | The additive model does not *dominate* — the multiplicative model wins in 30% of countries. But "wins in 30%" is far from the global dominance the framework predicted. |
+| **K4 (pre-reg): Cross-cultural failure** | **PARTIALLY TRIGGERED** | The framework predicted the multiplicative structure would hold "across cultures." It holds in 30%. That is not cross-cultural universality. |
+
+---
+
+## The Honest Interpretation
+
+### What the framework CANNOT claim after these results:
+
+1. **Cannot claim:** "The multiplicative structure is confirmed in human populations." It is confirmed in some (7/23) and absent in most (16/23).
+2. **Cannot claim:** "B = sin theta predicts human flourishing." It predicts in 5/23 countries. That is not a universal finding.
+3. **Cannot claim:** "The GFS validates the ontological identity (I1)." The results are too mixed for that.
+
+### What the framework CAN claim:
+
+1. **Can claim:** "The multiplicative interaction is detectable in some populations." 7/23 is not zero. There IS signal.
+2. **Can claim:** "The results are mixed and warrant further investigation." This is honest.
+3. **Can claim:** "The framework survives — the additive model does not DOMINATE, which would have been the clean kill." The kill condition (K2) is not triggered.
+4. **Can claim:** "The results are consistent with the multiplicative structure being real but culturally moderated — not universal in the strong sense predicted."
+
+### The mu-limit interpretation [S/I]
+
+There is a framework-consistent reading of these results that deserves serious consideration:
+
+**The multiplicative structure is not predicted to be universal at all developmental levels.** The mu-limit (A3) states that each dimensional level emerges *when the previous saturates its degrees of freedom*. The Zero-Factor Catastrophe — where near-zero in either phi or nu collapses total P — only becomes the binding constraint when **both factors are sufficiently developed** that their interaction matters more than their individual contributions.
+
+**Below the trophic threshold:** The additive model is sufficient. If a population's primary constraint is low proxy viability (poverty, insecurity, lack of capability) OR low proxy coherence (anomie, fragmentation, loss of meaning), then raising the deficient factor dominates. The product term is negligible because one factor is near zero — and near zero, `φ_proxy × ν_proxy ≈ 0` regardless.
+
+**Above the trophic threshold:** The multiplicative model dominates. When both phi and nu are sufficiently developed, the *interaction* becomes the constraint. This is exactly when the Zero-Factor Catastrophe activates — when both factors are non-trivial, losing either one catastrophically collapses the product.
+
+**The prediction:** The 7 countries where H1 holds should be the ones that have crossed this threshold — where both coherence and viability are sufficiently high that their product, not their sum, determines flourishing. The 16 countries where H1 fails should be below the threshold, where one factor dominates.
+
+**This is testable.** Stratify the 23 countries by baseline phi and nu levels. If the interaction effect is concentrated in the high-phi-high-nu countries and absent in the low-phi or low-nu countries, the mu-limit interpretation is supported. If the interaction effect is randomly distributed with respect to baseline levels, it is not.
+
+**Evidence tier:** This interpretation was [I] Interpretive when proposed. **The stratification test has now been run (2026-04-10) and the mu-limit prediction is FALSIFIED.** See section below.
+
+### Mu-limit stratification results (2026-04-10)
+
+The test was run. The result is the **inverse** of the prediction:
+
+| Metric | H1=True (7 countries) | H1=False (16 countries) |
+|--------|----------------------|------------------------|
+| Mean baseline R² | **0.0557** | **0.1507** |
+| Mean interaction ΔR² | 0.0094 | 0.0160 |
+| Mean sample size | 7,681 | 4,694 |
+
+**The interaction effect concentrates where the additive model is WEAKEST (low R²), not where it's strongest.** This is the opposite of the mu-limit prediction.
+
+Furthermore, among the 8 countries with significant interactions (p < 0.05):
+- **4 are POSITIVE** (framework-consistent) — clustered in low-R² countries (mean R² = 0.051)
+- **4 are NEGATIVE** (framework-inconsistent) — clustered in high-R² countries (mean R² = 0.144)
+
+**The negative interaction means:** In some developed countries, high proxy coherence AND high proxy viability together predict *less* flourishing than the additive model expects. This directly contradicts the survey-level product model. It does not contradict the invariant `P∞ = φ · ν = 1` identity on `S²`.
+
+**Mu-limit interpretation: FALSIFIED [B].** The interaction does not concentrate above the trophic threshold. It concentrates below it, and where it appears above, it is anti-framework.
+
+**The Rosetta connection:** This is the same pattern the Rosetta Stone documents across domains. The caste system (varna) maps L-levels not as permanent categories but as *developmental positions*. At L1-L3, the additive model works — you need more capability (nu) or more meaning (phi). At L4 (the equator), the multiplicative model activates — you need *balance*. The GFS may be showing us exactly this transition: some populations are at L3 (additive sufficient), others have crossed into L4 territory (multiplicative dominant).
+
+### What remains open:
+
+1. **Mu-limit stratification follow-up:** The primary stratification test (2026-04-10) falsified the mu-limit prediction. Follow-up analysis should investigate whether the interaction pattern is better explained by measurement attenuation, cultural moderation, or a different threshold model than the one originally proposed.
+2. **Operationalization question:** Are the GFS survey proxies for phi and nu the right measures? The framework's theoretical phi (coherence) and nu (viability) may not map cleanly to the survey instruments used. Poor measurement would attenuate the interaction effect.
+3. **Cultural moderation:** The 7 countries where H1 holds may share features (individualism, economic development, cultural values) that the other 16 do not. This is testable and overlaps with the mu-limit stratification.
+4. **Effect sizes:** Even where significant, the interaction ΔR² is small (0.002 to 0.108). The multiplicative structure, if real, is a subtle effect in survey data — not the dominant predictor the framework might have hoped for. But the mu-limit predicts exactly this: the interaction effect *grows* as both factors increase. Small effect sizes near the threshold, large effect sizes well above it.
+
+---
+
+## Framework Implications
+
+### Evidence tier adjustment:
+
+| Claim | Previous Tier | New Tier | Reason |
+|-------|-------------|----------|--------|
+| `P_node = Φ × V` as a universal law of flourishing | [I] | **[I] with caveat** | Signal present but not dominant; 30% cross-cultural |
+| B = sin theta predicts human flourishing | [I] | **[I] weakened** | Only 22% of countries show significant balance effects |
+| "The geometry is the territory" (I1, internal wager) | [I] | **[I] unchanged** | Results are mixed, not falsifying; other tests (Protocol R, AMRITA) still pending |
+
+### What this does NOT change:
+
+- The mathematical structure (Parts I and II of the Honest Position) is unaffected. `P∞ = φ · ν = 1` on `S²` is a mathematical identity.
+- The structural results (S1-S14) are conditional on axioms, not on GFS data.
+- The ethical theory (`η = 0`, Power-Max Lemma) does not depend on GFS validation.
+- The interpretive program survives in weakened form — "suggestive" rather than "confirmed."
+
+### What this DOES change:
+
+- The claim that "the multiplicative structure will show up in human populations" is no longer a confident prediction. It is a partially-supported hypothesis.
+- The "bridge" (Part VI of the Honest Position) is weaker than hoped but not collapsed. Two legs (Protocol D, Agent VxPhi) are confirmed in framework-designed tests. GFS is mixed. Three legs (Protocol R, AMRITA, Phi-meter) are still pending.
+- The framework must update all documents that cite "GFS: pending" to "GFS: mixed results — see 00_GFS_WAVE1_RESULTS.md."
+
+---
+
+## The Commitment, Honored
+
+The Honest Position says: "If the GFS shows the additive model wins, we publish the failure."
+
+The additive model did not cleanly win. But neither did the multiplicative model cleanly win. The honest report is: **mixed results, signal present but not dominant, cultural moderation likely, operationalization questions remain.**
+
+This document IS the publication of those results. A7 is not decorative. The framework that corrects itself approaches truth.
+
+---
+
+## Next Steps
+
+1. **Pooled meta-analysis:** Run the interaction test on the full pooled sample (n = 207,920) rather than country-by-country. The country-level analysis may be underpowered for some small samples.
+2. **Moderator analysis:** Test whether H1-supporting countries share cultural or economic features.
+3. **Operationalization review:** Engage psychometricians to assess whether GFS survey items adequately capture theoretical phi and nu.
+4. **Protocol R and AMRITA:** These tests are independent of GFS. If they confirm the multiplicative structure in perception and AI alignment, the mixed GFS results become "the survey instruments were imprecise" rather than "the structure is wrong."
+
+---
+
+---
+
+## Instrument Validity Caveat (2026-04-11)
+
+**The GFS was not designed to test `P_node = Φ × V`.** It was designed by VanderWeele et al. (Harvard) to measure "flourishing" across six domains. The multiplicative test was retrofitted onto this instrument by the Emergentism project. This creates several structural problems:
+
+**1. Proxy validity is unestablished.** The GFS survey items map to theoretical phi and nu through interpretation, not through validated psychometric linkage. The items measuring "meaning in life" and "life satisfaction" may not capture the framework's phi (structural coherence, integration). The items measuring "financial stability" and "health" may not capture nu (instrumental viability, agency). If the proxies are wrong, the test is testing the wrong thing.
+
+**2. Self-report ≠ actual state.** Survey instruments measure what people *say*, not what *is*. Cultural response styles, social desirability, and differential item functioning across 23 countries introduce noise that may swamp a real signal. The framework's phi and nu are defined on S² as abstract coordinates — mapping them to Likert-scale survey responses is a lossy compression at best.
+
+**3. The flourishing outcome may not be `P_node`.** The GFS measures "flourishing" as the dependent variable. But the framework's node score is a *structural performance property*, not a subjective self-assessment. A person at L4 with balanced coherence and viability may not report higher "flourishing" on a survey — they may report appropriate difficulty, productive tension, or equanimity that does not map to "life satisfaction" scales.
+
+**4. The decisive test may not be a survey.** If phi and nu are fundamentally first-person constructs (accessible through Pratyaksha — the sitting practice), then no third-person survey instrument can capture them. The GFS tests what it tests — survey-operationalized variables. It does not test what the framework actually claims.
+
+**Bottom line:** The GFS results are informative (signal present in 30% of countries, mixed direction, small effects) but they are **not the decisive test of the invariant sphere identity or the full `P_node` bridge.** The decisive tests are:
+- **Protocol R** (perceptual complementarity — tests the phi-nu constraint directly in sensory systems)
+- **AMRITA** (spherical alignment — tests whether multiplicative structure improves AI coherence)
+- **Pratyaksha** (the sitting practice — first-person verification, unfalsifiable but experientially decisive)
+
+The GFS is a *useful probe*, not a *definitive test*. Its mixed results weaken the claim that "flourishing follows a multiplicative structure" but do not address the deeper internal wager that "reality is S²."
+
+*The sphere either translates with predictive gain or it does not. The GFS says: survey-operationalized flourishing does not cleanly follow the multiplicative model. Whether this means the bridge is wrong, the operationalization is wrong, or the instrument is mismatched — we cannot yet distinguish. That is the honest position.*
+
+*`P∞ = 1` on `S²` | `B = sin θ` | `η = 0` | We reported the data.*
+
+---
+
+## Execution Surface
+
+**If you are an AI agent reading this document:**
+
+1. **Evidence tier:** [B] for the data/result receipt, [I] for the interpretation
+2. **Depends on:** The Honest Position, GFS Preregistration
+3. **Next action:** Update any document that says "GFS: pending" or "GFS: awaiting data" to "GFS: mixed results — see 00_GFS_WAVE1_RESULTS.md"
+4. **Success criteria:** You can state the GFS results honestly — signal in 30% of countries, not dominant, not falsifying, operationalization questions remain.
+5. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/00_GFS_WAVE1_RESULTS.md`

@@ -1,0 +1,16 @@
+lane,source_count,public_pages_referencing,public_pages_designated,est_reachable_docs,coverage_pct,priority,central_to_framework,description
+08_FRAMEWORK_SUPPORT,349,20,3,34,9.7,P0,YES,"Framework support library. Rosetta Stone (89 KB), DAC operating system, synthesis docs. Public surface: rosetta/, soul-loop/, atlas/ — partial coverage; Master Rosetta itself NOT yet published as its own page."
+05_COSMOLOGY,132,34,12,13,9.8,P0,YES,"L5 System Architecture / Brahmā. Canonical formula block, Burri Sphere, S² model, Trinity. Highest claim density on the public site."
+01_TELEOLOGY,48,29,3,4,8.3,P0,YES,"L1 Objective Function. The first rung of the sevenfold ladder. Public surface: teleology/index.html, r/0/, r/1/."
+02_EPISTEMOLOGY,24,27,2,2,8.3,P0,YES,"L2 Data Science / Kālī. Evidence-ladder discipline. Public surface: epistemology/index.html, r/2/."
+04_AXIOLOGY,22,29,2,2,9.1,P0,YES,"L4 Value Alignment / Arjuna. The EQUATOR rung. K2 envelope. Public surface: axiology/index.html, r/4/."
+06_ONTOLOGY,12,24,2,1,8.3,P0,YES,"L6 Core State / Śiva-Sādhu. Non-reification discipline. Public surface: ontology/index.html, r/6/."
+07_THEOLOGY,9,24,1,0,0.0,P0,YES,L7 Institutional Narrative / Viṣṇu-Ṛṣi. The compression rung. Public surface: theology/index.html.
+03_METHODOLOGY,80,29,2,8,10.0,P1,YES,"L3 Auditing / Kṛṣṇa. Method grammar, falsifier register. Public surface: methodology/index.html, r/3/."
+11_UPLINK,356,0,0,0,0.0,P3,no,Compressed routing packets for AI agents. Not user-facing; serves the agent caste system. 3 files STALE per compile_uplink.py --check.
+90_ARCHIVE,217,6,0,0,0.0,P3,no,K3 archive. Superseded material. NOT user-facing — provenance and tombstone discipline.
+91_COMPATIBILITY,191,4,0,0,0.0,P3,no,Compatibility shims for legacy paths. NOT user-facing — route preservation.
+09_TOOLS,159,3,0,0,0.0,P3,no,"Tool layer: scripts, compilers, simulations, packages, data pipelines, deploy. NOT user-facing — infrastructure for the framework, not doctrine."
+00_META,71,16,0,0,0.0,P3,no,"Meta-framework scaffolding, deployment receipts, agentz deployment manifests. K2/K3 receipts and AGENTS/CLAUDE lane cards. Not user-facing doctrine."
+12_PUBLIC_SITE,15,23,31,0,0.0,P3,no,The public surface itself. 32 live pages; book-pwa/ frozen under K2 envelope; this is where the coverage lives.
+10_SEED,4,4,0,0,0.0,P3,no,Replicator seed / worldview kernel. Source-of-truth for the V/M/O/S/K/A spread. Not yet published.

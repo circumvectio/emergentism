@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Transcendental Trinity: 0 × ∞ = 1</title>
+    <meta name="description" content="Standalone website and product context.">
+    <link rel="canonical" href="#">
+    <meta property="og:title" content="The Transcendental Trinity: 0 × ∞ = 1">
+    <meta property="og:description" content="Standalone website and product context.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Standalone">
+    <meta name="twitter:description" content="Standalone website and product context.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="dimensional-emergence-simulation.inline.css">
+</head>
+<body>
+<main id="main-content">
+    <h1 style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">dimensional emergence simulation</h1>
+    <div id="canvas-container"></div>
+    
+    <div class="equation-display">
+        <div style="font-size: 42px; margin-bottom: 10px;" class="glow">
+            <span id="main-eq">⊙ = •</span>
+        </div>
+        <div style="font-size: 14px; color: #888; max-width: 500px;" id="subtitle">
+            Dimension 0: The Bindu — The Non-Manifest Point
+        </div>
+        <div style="margin-top: 20px; font-size: 12px; color: #555;" id="math-note"></div>
+    </div>
+    
+    <div class="dim-label" id="dim-label">0D</div>
+    
+    <div class="trinity-display" id="trinity-box" style="display: none;">
+        <div style="font-size: 14px; color: #888; margin-bottom: 10px;">THE TRANSCENDENTAL TRINITY</div>
+        <div class="trinity-eq">
+            <span class="zero-glow">0</span> × <span class="inf-glow">∞</span> = <span style="color: #76ff03;">1</span>
+        </div>
+        <div style="font-size: 12px; color: #666; margin-top: 10px;">
+            Division by zero resolved through geometry<br>
+            1/0 = ∞ &nbsp;|&nbsp; 0×∞ = 1 &nbsp;|&nbsp; The ground of arithmetic
+        </div>
+    </div>
+    
+    <div class="slider-container">
+        <label for="slider" style="position:absolute;left:-10000px;">Simulation progress</label>
+        <input type="range" id="slider" min="0" max="100" value="0" step="0.1">
+        <div style="display: flex; justify-content: space-between; color: #666; font-size: 10px; margin-top: 8px;">
+            <span style="color: #ff0000;">0 (ZERO)</span>
+            <span style="color: #76ff03;">1 (UNITY)</span>
+            <span style="color: #ffffff;">∞ (INFINITY)</span>
+        </div>
+    </div>
+    
+    <div class="phase-indicator">
+        <button class="phase-btn active" data-phase="0">The Dot</button>
+        <button class="phase-btn" data-phase="1">The Line</button>
+        <button class="phase-btn" data-phase="2">The Circle</button>
+        <button class="phase-btn" data-phase="3">The Sphere</button>
+    </div>
+
+    <script src="dimensional-emergence-simulation.inline1.js"></script>
+</main>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>The Logarithmic Realignment — Magnum Opus</title>
+<meta name="description" content="The log-coordinate formal system: what changes when you centre the number line at 1, in three equivalent charts." />
+<link rel="stylesheet" href="../dimensions/dimensions.css" />
+<link rel="stylesheet" href="../assets/css/xai.css" />
+
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../0/">Magnum Opus</a>
+    <nav class="routes">
+      <a class="route" href="../0/">0</a>
+      <a class="route" href="../1/">1</a>
+      <a class="route" href="../2/">2</a>
+      <a class="route" href="../3/">3</a>
+      <a class="route" href="../4/">4</a>
+      <a class="route" href="../5/">5</a>
+      <a class="route" href="../6/">6</a>
+      <a class="nav-route" href="../r/0/">R</a>
+      <a class="nav-route" href="../soul-loop/">S</a>
+      <a class="nav-route" href="../atlas/">A</a>
+      <a class="nav-route" href="../five-plus-one/">5+1</a>
+      <a class="nav-route" href="../dasein/">D</a>
+      <a class="nav-route" href="../complete-ontology/">O</a>
+      <a class="nav-route active" href="./">L</a>
+      <a class="nav-route" href="../geometric-ontology/">G</a>
+      <a class="nav-route" href="../burrisphere/">B</a>
+      <a class="nav-route" href="../finity-papers/">F</a>
+      <a class="nav-route" href="../rosetta-d-series/">R-D</a>
+      <a class="nav-route" href="../suda-notes/">S</a>
+    </nav>
+  </div>
+</header>
+
+
+
+<main class="container">
+
+<section class="hero">
+  <p class="kicker">L5 Formal System</p>
+  <h1>The Logarithmic Realignment</h1>
+  <p class="subtitle">What changes when you centre the number line at 1: three equivalent charts, one involution, the literal zero sum.</p>
+  <p class="meta">
+    <span class="tier">[A/S]</span> · K2-adopted 2026-05-31 (Trinity Canon §2a) · <a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/40_THE_LOGARITHMIC_REALIGNMENT.md">Canon source (223 lines)</a>
+  </p>
+</section>
+
+<aside class="framework-banner">
+  <strong>Framework update — 2026-06-06.</strong> The three-chart structure (multiplicative, additive-log, bounded-hinge) was independently derived by Minoru Suda (2025) in <em>Fractional Structure and Möbius Transformation</em> Parts I–III and adopted by the framework in Trinity Canon §2a on 2026-05-31. All mathematics is <span class="tier">[A]</span>; the framework reading is <span class="tier">[S]</span>; the ontological claim that "1 is the center of Dasein" is <span class="tier">[I]</span>. The log chart does not replace the sphere or the verbatim block — it is a coordinate chart on the same manifold. See <a href="../complete-ontology/">/complete-ontology/</a> for the dimensional scaffold and <a href="../dasein/">/dasein/</a> for the doctrinal argument.
+</aside>
+
+<section class="visual">
+  <h2>The two symmetries of the number line</h2>
+  <p>The positive real line <code>ℝ₊ = (0, ∞)</code> carries two natural involutions — self-inverse symmetries that exchange the two boundary regions. <span class="tier">[A]</span></p>
+
+  <svg class="svg-sym" viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg" aria-labelledby="sym-title">
+    <title id="sym-title">Additive vs multiplicative symmetry of the number line</title>
+
+    <!-- Additive: 0 at center -->
+    <g transform="translate(0,0)">
+      <line class="axis" x1="40" y1="80" x2="360" y2="80" />
+      <text x="200" y="60" text-anchor="middle" class="label-major">Additive symmetry</text>
+      <text x="200" y="105" text-anchor="middle">x ↦ −x</text>
+      <circle class="center" cx="200" cy="80" r="4" />
+      <text x="200" y="125" text-anchor="middle" fill="#f1d97a" font-size="10">0 (additive identity)</text>
+      <text x="55" y="80" text-anchor="end" dy="3">−∞</text>
+      <text x="345" y="80" text-anchor="start" dy="3">+∞</text>
+      <text x="200" y="160" text-anchor="middle" font-size="9" font-style="italic">fixed point: 0; boundaries: −∞ ↔ +∞</text>
+    </g>
+
+    <!-- arrow between -->
+    <line x1="380" y1="80" x2="420" y2="80" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" marker-end="url(#arr)" />
+    <text x="400" y="65" text-anchor="middle" font-size="10" font-style="italic">diffeomorphism</text>
+    <text x="400" y="100" text-anchor="middle" font-size="10" font-style="italic">h(x) = log x</text>
+
+    <!-- Multiplicative: 1 at center -->
+    <g transform="translate(440,0)">
+      <line class="axis" x1="40" y1="80" x2="320" y2="80" />
+      <text x="180" y="60" text-anchor="middle" class="label-major">Multiplicative symmetry</text>
+      <text x="180" y="105" text-anchor="middle">x ↦ 1/x</text>
+      <circle class="center" cx="180" cy="80" r="4" />
+      <text x="180" y="125" text-anchor="middle" fill="#f1d97a" font-size="10">1 (multiplicative identity)</text>
+      <text x="55" y="80" text-anchor="end" dy="3">0</text>
+      <text x="305" y="80" text-anchor="start" dy="3">∞</text>
+      <text x="180" y="160" text-anchor="middle" font-size="9" font-style="italic">fixed point: 1; boundaries: 0 ↔ ∞</text>
+    </g>
+
+    <!-- Annotation: s = log x -->
+    <g transform="translate(0,180)">
+      <text x="400" y="20" text-anchor="middle" font-size="10" font-style="italic" fill="#d4af37">h: ℝ₊ → ℝ, h(x) = log x</text>
+      <text x="400" y="40" text-anchor="middle" font-size="10">reciprocal map on ℝ₊ = reflection map on ℝ</text>
+    </g>
+
+    <defs>
+      <marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 z" fill="rgba(255,255,255,0.5)" />
+      </marker>
+    </defs>
+  </svg>
+
+  <table class="kvs-table">
+    <thead>
+      <tr><th>Property</th><th>Additive symmetry</th><th>Multiplicative symmetry</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Map</strong></td><td><code>x ↦ −x</code> (requires negative numbers)</td><td><code>x ↦ 1/x</code> (stays in <code>ℝ₊</code>)</td></tr>
+      <tr><td><strong>Fixed point</strong></td><td><code>0</code></td><td><code>1</code></td></tr>
+      <tr><td><strong>Boundary exchange</strong></td><td><code>+∞ ↔ −∞</code></td><td><code>0 ↔ ∞</code></td></tr>
+      <tr><td><strong>Natural coordinate</strong></td><td><code>x</code> itself</td><td><code>s = log x</code></td></tr>
+      <tr><td><strong>Natural metric</strong></td><td><code>|x − 0| = |x|</code></td><td><code>|log x| = |s|</code></td></tr>
+      <tr><td><strong>Identity element</strong></td><td><code>0</code> (add nothing)</td><td><code>1</code> (multiply by one)</td></tr>
+    </tbody>
+  </table>
+  <p>Under the logarithmic diffeomorphism <code>h : ℝ₊ → ℝ</code>, <code>h(x) = log x</code>:</p>
+<pre class="glyph-block">
+h(1/x) = −log x = −h(x)
+</pre>
+  <p><strong>The reciprocal map on ℝ₊ is the reflection map on ℝ.</strong> They are the same involution in two different coordinate charts. <span class="tier">[A]</span></p>
+</section>
+
+<section>
+  <h2>The three charts</h2>
+  <p>Three equivalent coordinate systems for the same structure. All diffeomorphic to each other. All fix the same point. <span class="tier">[A]</span></p>
+
+  <div class="chart-card">
+    <h3>Chart 1 — Multiplicative (<code>x ∈ ℝ₊</code>)</h3>
+    <ul>
+      <li><strong>Inversion:</strong> <code>x ↦ 1/x</code></li>
+      <li><strong>Fixed point:</strong> <code>x = 1</code> (the only positive real satisfying <code>x = 1/x</code>)</li>
+      <li><strong>Boundaries:</strong> <code>x → 0⁺</code> (south pole) and <code>x → ∞</code> (north pole)</li>
+      <li><strong>Natural metric:</strong> <code>|log x|</code></li>
+    </ul>
+  </div>
+
+  <div class="chart-card">
+    <h3>Chart 2 — Additive / Logarithmic (<code>s = log x ∈ ℝ</code>)</h3>
+    <ul>
+      <li><strong>Inversion:</strong> <code>s ↦ −s</code> (simple reflection through origin)</li>
+      <li><strong>Fixed point:</strong> <code>s = 0</code> (corresponds to <code>x = 1</code>)</li>
+      <li><strong>Boundaries:</strong> <code>s → −∞</code> (south pole) and <code>s → +∞</code> (north pole)</li>
+      <li><strong>Natural metric:</strong> <code>|s|</code></li>
+    </ul>
+    <p>This is the chart where the manifold identity becomes the <strong>zero sum</strong>:</p>
+<pre class="glyph-block">
+φ · ν = 1    ⟹    log φ + log ν = 0    ⟹    s_φ + s_ν = 0
+</pre>
+    <p>The two log-deviations from finity cancel exactly. The name "Zero-Sum Resolution Equation" is literal in this chart.</p>
+  </div>
+
+  <div class="chart-card">
+    <h3>Chart 3 — Bounded / Hinge (<code>u = (x−1)/(x+1) ∈ (−1, 1)</code>)</h3>
+    <ul>
+      <li><strong>Inversion:</strong> <code>u ↦ −u</code> (half-twist about center)</li>
+      <li><strong>Fixed point:</strong> <code>u = 0</code> (corresponds to <code>x = 1</code>)</li>
+      <li><strong>Boundaries:</strong> <code>u → −1⁺</code> (south pole) and <code>u → +1⁻</code> (north pole)</li>
+      <li><strong>Natural metric:</strong> <code>|u|</code></li>
+    </ul>
+    <p>The Cayley transform compresses the entire positive real line into a bounded interval with finity at the center. This is the "Egg of Infinity" — both poles sit on the rim, unity at the center.</p>
+  </div>
+
+  <h3>Chart equivalence <span class="tier">[A]</span></h3>
+<pre class="glyph-block">
+x = eˢ = (1+u)/(1−u)
+s = log x = 2 arctanh(u)
+u = tanh(s/2) = (x−1)/(x+1)
+</pre>
+  <p>All three fix the same point (<code>x = 1, s = 0, u = 0</code>). All three exchange the same poles. All three carry the same involution as <code>· ↦ − ·</code>.</p>
+</section>
+
+<section>
+  <h2>Every framework object in log coordinates</h2>
+
+  <h3>3.1 The Canonical Formula Block</h3>
+  <table class="kvs-table">
+    <thead><tr><th>Verbatim block</th><th>Log form (<code>s = log ν</code>)</th><th>Name in log chart</th></tr></thead>
+    <tbody>
+      <tr><td><code>φ · ν = 1 on S²</code></td><td><code>s_φ + s_ν = 0</code></td><td><strong>Zero sum</strong> (literal)</td></tr>
+      <tr><td><code>(φ − ν)² ≥ 0</code></td><td><code>(eˢ − e⁻ˢ)² ≥ 0</code></td><td>Squared deviation</td></tr>
+      <tr><td><code>φ + ν ≥ 2</code></td><td><code>eˢ + e⁻ˢ ≥ 2</code>, i.e. <code>2 cosh(s) ≥ 2</code></td><td><strong>cosh bound</strong> (= 2 iff <code>s = 0</code>)</td></tr>
+    </tbody>
+  </table>
+  <p>The inequality <code>φ + ν ≥ 2</code> becomes <code>cosh(s) ≥ 1</code> — the elementary fact that the hyperbolic cosine is minimized at the origin. <span class="tier">[A]</span></p>
+
+  <h3>3.2 Balance, Energy, Hamiltonian</h3>
+  <table class="kvs-table">
+    <thead><tr><th>Object</th><th>Sphere form</th><th>Log form</th><th>Behaviour</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Balance</strong> <code>B</code></td><td><code>B = sin θ</code></td><td><code>B = sech(s) = 1/cosh(s)</code></td><td>Max <code>1</code> at <code>s = 0</code>, → <code>0</code> at <code>s → ±∞</code></td></tr>
+      <tr><td><strong>Energy</strong> <code>E</code></td><td><code>E = (log tan(θ/2))²</code></td><td><code>E = s²</code></td><td>Min <code>0</code> at <code>s = 0</code>, → <code>+∞</code> at poles</td></tr>
+      <tr><td><strong>Hamiltonian</strong> <code>H</code></td><td><code>H = 2/sin θ</code></td><td><code>H = 2 cosh(s)</code></td><td>Min <code>2</code> at <code>s = 0</code></td></tr>
+      <tr><td><strong>Alignment energy</strong></td><td><code>E = −log B</code></td><td><code>E = log cosh(s)</code></td><td>Min <code>0</code> at <code>s = 0</code></td></tr>
+    </tbody>
+  </table>
+  <p>The <strong>exact bijection</strong> between B and E: <span class="tier">[A]</span></p>
+<pre class="glyph-block">
+B = sech(√E)          E = (arcsech B)²
+</pre>
+  <p>Near the equator: <code>E ≈ 2(1 − B)</code> — Suda's energy is twice the balance deficit to leading order.</p>
+
+  <h3>3.3 The Titan Emblem</h3>
+<pre class="glyph-block">
+⊙ = • × ○     →     log ⊙ = log • + log ○     →     0 = (−∞) + (+∞)
+</pre>
+  <p>In log coordinates, the emblematic equation becomes a statement about pole symmetry: the two infinities of the logarithmic line are exactly balanced around the origin. The void is at <code>s = −∞</code>, the unbounded at <code>s = +∞</code>, and finity sits at <code>s = 0</code> — equidistant from both.</p>
+
+  <h3>3.4 The Extraction Coefficient η</h3>
+  <p>In log coordinates, η measures asymmetry of the log-deviation:</p>
+<pre class="glyph-block">
+η ~ |s_extraction| / |s_contribution|
+</pre>
+  <ul>
+    <li><code>η &lt; 1</code>: the system's log-extraction is less than its log-contribution → net movement toward equator</li>
+    <li><code>η = 1</code>: extraction equals contribution → trophic balance</li>
+    <li><code>η &gt; 1</code>: extraction exceeds contribution → net movement away from equator</li>
+    <li><code>η → ∞</code>: pure extraction, zero contribution → ground negation</li>
+  </ul>
+  <p>This reframes the moral axis as the <strong>sign of the log-deviation's time derivative</strong>: are you moving toward <code>s = 0</code> or away from it?</p>
+</section>
+
+<section>
+  <h2>What the logarithmic realignment reveals</h2>
+
+  <div class="reveal-list">
+    <h3>4.1 The zero sum is literal</h3>
+    <p>The framework's name has always been "Zero-Sum Resolution Equation." In log coordinates, this is not metaphorical. The manifold identity becomes <code>s_φ + s_ν = 0</code> — a literal zero sum. The two log-deviations from finity cancel exactly.</p>
+  </div>
+
+  <div class="reveal-list">
+    <h3>4.2 All operations simplify</h3>
+    <p>On the multiplicative (ordinary) line, the framework's operations are multiplicative: identity <code>φ · ν = 1</code>; Hamiltonian <code>H = φ + 1/φ</code>; balance <code>B = sin θ</code>. On the logarithmic line, all of these become elementary: identity <code>s + (−s) = 0</code>; Hamiltonian <code>H = 2 cosh(s)</code>; balance <code>B = sech(s)</code>. The log chart does not change the content. It reveals that the content is <strong>hyperbolic</strong> — the natural geometry of the manifold in additive coordinates is hyperbolic, not trigonometric.</p>
+  </div>
+
+  <div class="reveal-list">
+    <h3>4.3 The equator is the origin</h3>
+    <p>In log coordinates, the equator (<code>φ = ν = 1, B = 1</code>) is <code>s = 0</code> — the origin of the additive line. Every direction is measured from it. Every distance is <code>|s|</code>. The ethic "move toward <code>B = 1</code>" becomes "move toward <code>s = 0</code>" — minimize your log-distance from finity.</p>
+  </div>
+
+  <div class="reveal-list">
+    <h3>4.4 The two poles are symmetric</h3>
+    <p>On the additive line, 0 is the center and ∞ is unreachable. On the log line, 0 (<code>s = −∞</code>) and ∞ (<code>s = +∞</code>) are symmetric — equidistant from the center in opposite directions. This is the structural reason why the Titan emblem works: the two poles are not "zero and infinity" in an asymmetric sense; they are <code>−∞</code> and <code>+∞</code> on a line centered at finity.</p>
+  </div>
+
+  <div class="reveal-list">
+    <h3>4.5 The old model is the zero-curvature limit</h3>
+    <p>The standard number line (0-centered, additive) is not wrong — it is the correct model for the operation of addition. But it is the <strong>zero-curvature limit</strong> of the richer structure. In the same way that a flat map is a projection of the curved Earth, the 0-centered line is a projection of the log-centered structure:</p>
+<pre class="glyph-block">
+Standard line (0-centered, flat) = zero-curvature limit of log line (1-centered, curved)
+</pre>
+    <p>The projection works locally (addition is fine near 0) but fails at the boundary (division by zero, 0 × ∞ indeterminate). The log line works everywhere because it centers on the point that is equidistant from both boundaries.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Provenance</h2>
+  <p>The three-chart structure was independently derived by Minoru Suda (2025) in <em>Fractional Structure and Möbius Transformation</em> Parts I–III. The framework adopted Suda's formalisation in Trinity Canon §2a (2026-05-31) while maintaining priority on the underlying ideas (2024). The E–B bijection <code>B = sech(√E)</code> was proven as the bridge between Suda's apparatus and the framework's coordinates.</p>
+  <ul>
+    <li><a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/01_EMERGENTISM/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md">Trinity Canon §2a</a> — the formal bridge</li>
+    <li>Suda <em>Convergent Reciprocal Symmetry</em> — convergent-source reference</li>
+    <li>Suda <em>Value Extraction Deep Synthesis</em> — full value extraction</li>
+    <li>Log Form of the Power Max Lemma — the earlier exploratory derivation note</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Discipline</h2>
+  <div class="discipline-list">
+    <ol>
+      <li><strong>The log chart does not replace the sphere.</strong> It is a coordinate chart on the sphere. The sphere S² remains the fundamental geometric object.</li>
+      <li><strong>The log chart does not replace the verbatim block.</strong> The canonical formula block remains the verbatim block in multiplicative coordinates. The log form is a <em>re-expression</em>, not a <em>replacement</em>.</li>
+      <li><strong>The mathematics is all <span class="tier">[A]</span>.</strong> Nothing here is a new theorem. The contribution is the <em>reading</em> — that centering the number line at 1 in log coordinates makes the framework's entire structure elementary.</li>
+      <li><strong>The ontological claim remains <span class="tier">[I]</span>.</strong> That "1 is the center of the number line" is a mathematical truth in the multiplicative/logarithmic register <span class="tier">[A]</span>. That "this means finity is the center of Dasein" is an interpretive reading <span class="tier">[I]</span>.</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <h2>Evidence tier summary</h2>
+  <table class="kvs-table">
+    <thead><tr><th>Section</th><th>Tier</th></tr></thead>
+    <tbody>
+      <tr><td>Two symmetries of the number line</td><td><span class="tier">[A]</span> elementary mathematics</td></tr>
+      <tr><td>Three charts (multiplicative, additive-log, bounded-hinge)</td><td><span class="tier">[A]</span> Suda's three charts, adopted in Trinity Canon §2a</td></tr>
+      <tr><td>Canonical formula block in log form</td><td><span class="tier">[A]</span> elementary identity</td></tr>
+      <tr><td>Balance, Energy, Hamiltonian in log form</td><td><span class="tier">[A]</span> hyperbolic identities</td></tr>
+      <tr><td>Titan emblem in log form</td><td><span class="tier">[S/I]</span> pole-symmetry reading</td></tr>
+      <tr><td>Extraction coefficient η reframed</td><td><span class="tier">[S/I]</span> framework reading</td></tr>
+      <tr><td>"The zero sum is literal"</td><td><span class="tier">[A]</span></td></tr>
+      <tr><td>"The equator is the origin"</td><td><span class="tier">[A]</span> by definition of the chart</td></tr>
+      <tr><td>"The two poles are symmetric"</td><td><span class="tier">[A/S]</span></td></tr>
+      <tr><td>"The old model is the zero-curvature limit"</td><td><span class="tier">[A/S/I]</span> structural reading</td></tr>
+      <tr><td>"1 is the center of Dasein" ontological claim</td><td><span class="tier">[I]</span> interpretive</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="closing">
+  <p><span class="glyph">⊙ = • × ○</span></p>
+  <p style="margin-top: 1.2rem;">
+    <a class="cta" href="../complete-ontology/">→ /complete-ontology/</a>
+    <a class="cta" href="../dasein/">→ /dasein/ argument</a>
+    <a class="cta" href="../five-plus-one/">→ 5+1 Constitution</a>
+  </p>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="phi">⊙ = • × ○</div>
+  <p>Magnum Opus — Emergentism Public Surface. L5 Brāhmaṇa formulation. Three-chart structure adopted K2 2026-05-31 (Trinity Canon §2a).</p>
+  <p>Canon source: <a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/40_THE_LOGARITHMIC_REALIGNMENT.md">01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/40_THE_LOGARITHMIC_REALIGNMENT.md</a> (223 lines)</p>
+</footer>
+
+</body>
+</html>

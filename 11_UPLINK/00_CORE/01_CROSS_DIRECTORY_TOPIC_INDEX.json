@@ -1,0 +1,191 @@
+{
+  "version": "1.0.0",
+  "generated": "2026-06-04",
+  "description": "WARNING: STALE / HISTORICAL. This machine-readable index contains retired path aliases (e.g. SKYZAI_ORG, EMERGENTISM_ORG) and does not map to current canonical paths. For historical reference only.",
+  "topics": [
+    {
+      "id": "seed",
+      "name": "⊙ = • × ○ — The Seed / Finity Equation",
+      "foundation": [
+        "01_EMERGENTISM/00_CANONICAL_FORMULA_BLOCK.md",
+        "01_EMERGENTISM/00_THE_BINDU_WAS_ALWAYS_HERE.md"
+      ],
+      "trinity": [
+        "01_EMERGENTISM/00_THE_TRANSCENDENTAL_TRINITY/README.md"
+      ],
+      "uplink": [
+        "01_EMERGENTISM/11_UPLINK/01_SEED.md"
+      ],
+      "pwa": [
+        "02_SKYZAI/09_PWAs/skyzai_org/wiki/10-the-equation.md"
+      ],
+      "agent_routing": "Start at Formula Block for derivations. Trinity for narrative. Uplink for compressed ingestion."
+    },
+    {
+      "id": "burri_constraint",
+      "name": "φ · ν = 1 on S² — The Burri Constraint",
+      "foundation": [
+        "01_EMERGENTISM/00_CANONICAL_FORMULA_BLOCK.md",
+        "01_EMERGENTISM/01_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md"
+      ],
+      "papers": [
+        "01_EMERGENTISM/03_THE_PAPERS/PAPER_B_BLOCH_BURRI_IDENTITY.md"
+      ],
+      "uplink": [
+        "01_EMERGENTISM/11_UPLINK/02_FRAMEWORK.md"
+      ],
+      "pwa": [
+        "02_SKYZAI/09_PWAs/skyzai_org/wiki/13-the-axioms.md"
+      ],
+      "agent_routing": "Formula Block + Papers for math. Organ empirical program for implementation. PWA for public claims."
+    },
+    {
+      "id": "trivium",
+      "name": "The Trivium — F1/F2/F3/F4 Separation",
+      "foundation": [
+        "01_EMERGENTISM/00_EXECUTION_GUARDRAILS.md",
+        "01_EMERGENTISM/01_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md"
+      ],
+      "organism": [
+        "02_SKYZAI/02_ORGANS/README.md",
+        "02_SKYZAI/02_ORGANS/TheCircle/00_BRIEF.md",
+        "02_SKYZAI/02_ORGANS/RealityFutures/00_BRIEF.md",
+        "02_SKYZAI/02_ORGANS/Agentz/00_BRIEF.md",
+        "02_SKYZAI/02_ORGANS/Skyzai/00_BRIEF.md"
+      ],
+      "uplink": [
+        "01_EMERGENTISM/11_UPLINK/05_ARCHITECTURE.md"
+      ],
+      "pwa": [
+        "02_SKYZAI/09_PWAs/skyzai_org/wiki/30-trivium-overview.md"
+      ],
+      "agent_routing": "Guardrails for separation rules. Organ 00_BRIEF.md for organ-specific work. Never merge functions."
+    },
+    {
+      "id": "k_invariants",
+      "name": "K-Invariants — Constitutional Non-Negotiables",
+      "foundation": [
+        "01_EMERGENTISM/00_CONSTITUTIONAL_SCIENCE.md",
+        "01_EMERGENTISM/00_EXECUTION_GUARDRAILS.md"
+      ],
+      "organism": [
+        "02_SKYZAI/05_PROJECT_MANAGEMENT/00_CANON/K_INVARIANTS_COMPILE_FROM_FOUNDATION.md",
+        "02_SKYZAI/05_PROJECT_MANAGEMENT/00_CANON/SKYZAI_CONSTITUTION.md"
+      ],
+      "tools": [
+        "01_EMERGENTISM/09_TOOLS/07_AGENT_OPS/execution_surface_validator.py"
+      ],
+      "agent_routing": "K0/K2/K4 are non-negotiable. Validator enforces automatically. Any violation is unconstitutional."
+    },
+    {
+      "id": "operators",
+      "name": "Operators — Arjuna / Kṛṣṇa / Kālī / Kali",
+      "foundation": [
+        "01_EMERGENTISM/01_FORMAL_SYSTEM/20_EFR_OPERATORS_ON_COMPLEX_PLANE.md",
+        "01_EMERGENTISM/00_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md"
+      ],
+      "organism": [
+        "02_SKYZAI/02_ORGANS/Skyzai/memory/cortex-os/24_ROSETTA_MATRIX_AGENT_TEMPLATE.md"
+      ],
+      "uplink": [
+        "01_EMERGENTISM/11_UPLINK/06_AGENTS.md"
+      ],
+      "pwa": [
+        "02_SKYZAI/09_PWAs/skyzai_org/wiki/33-apu.md"
+      ],
+      "agent_routing": "Foundation formal system for math. Cortex OS template for dispatch. Uplink Agents for castes."
+    },
+    {
+      "id": "rosetta",
+      "name": "The Rosetta Stone — Cross-Domain Mapping",
+      "foundation": [
+        "01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md",
+        "01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/00_GENERATIVE_TABLE.md"
+      ],
+      "organism": [
+        "02_SKYZAI/02_ORGANS/Skyzai/memory/cortex-os/24_ROSETTA_MATRIX_AGENT_TEMPLATE.md"
+      ],
+      "uplink": [
+        "01_EMERGENTISM/11_UPLINK/00_CORE/00_ROSETTA_ROW_ROUTER.md"
+      ],
+      "pwa": [
+        "02_SKYZAI/09_PWAs/skyzai_org/wiki/15-rosetta-stone.md"
+      ],
+      "agent_routing": "Read horizontally across domains. Read vertically for Triadic Cascade. Three concurrent scales."
+    },
+    {
+      "id": "vmosk_a",
+      "name": "VMOSK-A — The Organizational Replicator Stack",
+      "foundation": [
+        "01_EMERGENTISM/00_KNOWN_UNKNOWNS_PROGRAM.md"
+      ],
+      "organism": [
+        "02_SKYZAI/VMOSK_A.md",
+        "02_SKYZAI/02_ORGANS/TheCircle/VMOSK_A.md",
+        "02_SKYZAI/02_ORGANS/RealityFutures/VMOSK_A.md",
+        "02_SKYZAI/02_ORGANS/Agentz/VMOSK_A.md",
+        "02_SKYZAI/02_ORGANS/Skyzai/VMOSK_A.md"
+      ],
+      "uplink": [
+        "01_EMERGENTISM/11_UPLINK/03_ORGANISM.md"
+      ],
+      "tools": [
+        "01_EMERGENTISM/09_TOOLS/sprint_receipts_gates.py",
+        "01_EMERGENTISM/09_TOOLS/sprint_lineage_gates.py",
+        "01_EMERGENTISM/09_TOOLS/sprint_politik_gates.py"
+      ],
+      "agent_routing": "V=genotype, M=epigenotype, O=phenotype, S=extended phenotype, K=memotype, A=agents, DAC=egregorotype."
+    },
+    {
+      "id": "proof_loop",
+      "name": "Receipt / Proof Loop — The Breathing Business",
+      "foundation": [
+        "01_EMERGENTISM/00_EMPIRICAL_PROGRAM_BOARD.md"
+      ],
+      "organism": [
+        "02_SKYZAI/05_PROJECT_MANAGEMENT/04_HISTORY/SKYZAI_GATE0_OPERATOR_PACK.md",
+        "02_SKYZAI/05_PROJECT_MANAGEMENT/07_OPERATIONS/LIVE_PROOF_RUNBOOK_V1.md",
+        "02_SKYZAI/05_PROJECT_MANAGEMENT/06_EXECUTIVE_PROGRAMS/PROOF_LOOP_TRACE_v0_1_SCHEMA_2026_04_20.md"
+      ],
+      "tools": [
+        "01_EMERGENTISM/09_TOOLS/sprint_receipts_gates.py"
+      ],
+      "pwa": [
+        "02_SKYZAI/09_PWAs/skyzai_org/wiki/46-proof-of-relay.md"
+      ],
+      "agent_routing": "First make the organism transact with itself, then sell the exact loop that already breathes."
+    },
+    {
+      "id": "nexus",
+      "name": "Nexus / Business Account — Commercial Infrastructure",
+      "organism": [
+        "02_SKYZAI/05_PROJECT_MANAGEMENT/00_CANON/NEXUS_BUSINESS_ACCOUNT_ARCHITECTURE.md",
+        "02_SKYZAI/02_ORGANS/Skyzai/spec/POS_VISION.md"
+      ],
+      "pwa": [
+        "02_SKYZAI/09_PWAs/pay_skyzai_com/PR_FAQ.md",
+        "02_SKYZAI/09_PWAs/pay_skyzai_com/GAP_ANALYSIS.md"
+      ],
+      "tools": [
+        "01_EMERGENTISM/09_TOOLS/05_DEPLOY/README-DEPLOYMENT.md"
+      ],
+      "agent_routing": "Nexus acquires. PBA converts. API PAY activates. Events prove. POS scales. Cortex+AIA compound."
+    },
+    {
+      "id": "ektropy",
+      "name": "Ektropy / η = 0 — The Non-Extraction Principle",
+      "foundation": [
+        "01_EMERGENTISM/01_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md",
+        "01_EMERGENTISM/00_CONSTITUTIONAL_SCIENCE.md"
+      ],
+      "organism": [
+        "02_SKYZAI/05_PROJECT_MANAGEMENT/03_MEMOS/ZERO_PERCENT_PLATFORM_FEE_JURISDICTION_MEMO.md"
+      ],
+      "pwa": [
+        "02_SKYZAI/09_PWAs/skyzai_org/wiki/20-coordination-thesis.md"
+      ],
+      "agent_routing": "Fees only on value created. No tolls on access. Any extraction mechanism is unconstitutional."
+    }
+  ],
+  "canonical_path": "01_EMERGENTISM/11_UPLINK/00_CORE/01_CROSS_DIRECTORY_TOPIC_INDEX.json"
+}

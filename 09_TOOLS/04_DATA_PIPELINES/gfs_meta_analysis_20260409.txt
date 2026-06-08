@@ -1,0 +1,8 @@
+GFS Meta-Analysis Results
+Date: 2026-04-09 17:43
+
+Interaction: β=-0.0533, p=6.02e-01, I²=75.8%
+Balance: β=-0.4656, p=2.23e-02
+
+H1: 7/23 countries
+H2: 5/23 countries

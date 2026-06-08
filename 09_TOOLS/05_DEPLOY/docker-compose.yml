@@ -1,0 +1,110 @@
+version: '3.8'
+
+services:
+  # =========================================================
+  # INFRASTRUCTURE
+  # =========================================================
+  circle-db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: circle
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-circle_local_dev}
+      POSTGRES_DB: thecircle
+    volumes:
+      - circle_pgdata:/var/lib/postgresql/data
+      - ../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/TheCircle/app/circle_platform_backend/03_BUILD/Source/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U circle -d thecircle"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  circle-redis:
+    image: redis:7-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
+
+  # =========================================================
+  # ORGANS (API BACKENDS)
+  # =========================================================
+  circle-api:
+    build:
+      context: ../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/TheCircle/app/circle_platform_backend/03_BUILD/Source
+    depends_on:
+      circle-db:
+        condition: service_healthy
+      circle-redis:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://circle:${POSTGRES_PASSWORD:-circle_local_dev}@circle-db:5432/thecircle
+      REDIS_URL: redis://circle-redis:6379
+      ADMIN_TOKEN: "${ADMIN_TOKEN:-}"
+    env_file:
+      - ../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/TheCircle/app/circle_platform_backend/03_BUILD/Source/.env
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import requests; r=requests.get('http://localhost:8000/health'); r.raise_for_status()\""]
+      interval: 30s
+      timeout: 10s
+      start_period: 10s
+      retries: 3
+    restart: unless-stopped
+
+  refu-api:
+    build:
+      context: ../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/RealityFutures/app/03_BACKEND
+    ports:
+      - "8001:8001"
+    env_file:
+      - ../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/RealityFutures/app/03_BACKEND/.env
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import httpx; r=httpx.get('http://localhost:8001/health'); r.raise_for_status()\""]
+      interval: 30s
+      timeout: 5s
+      start_period: 10s
+      retries: 3
+    restart: unless-stopped
+
+  apu-api:
+    build:
+      context: ../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Agentz/app/03_BACKEND
+    ports:
+      - "8002:8000"  # APU exposes 8000 internally
+    env_file:
+      - ../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Agentz/app/03_BACKEND/.env
+    restart: unless-stopped
+
+  # =========================================================
+  # ORCHESTRATION (THE ORGANISM'S PULSE)
+  # =========================================================
+  organism-heartbeat:
+    build:
+      context: .
+      dockerfile: Dockerfile.heartbeat
+    depends_on:
+      circle-api:
+        condition: service_healthy
+      refu-api:
+        condition: service_healthy
+      # APU doesn't have a reliable health check in its Dockerfile currently, relying on generic dependency
+      apu-api:
+        condition: service_started
+    environment:
+      OPENAI_API_KEY: "${OPENAI_API_KEY:-}"
+      ANTHROPIC_API_KEY: "${ANTHROPIC_API_KEY:-}"
+      CIRCLE_API_URL: "http://circle-api:8000"
+      REFU_API_URL: "http://refu-api:8001"
+      APU_API_URL: "http://apu-api:8000"
+    volumes:
+      - ../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/agents:/app/agents
+      - ../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/execution_log:/app/execution_log
+    command: ["python", "-m", "pipeline.organism_heartbeat", "--trivium", "--interval", "120", "--circle-url", "http://circle-api:8000", "--refu-url", "http://refu-api:8001"]
+
+volumes:
+  circle_pgdata:

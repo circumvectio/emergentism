@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geometric Constraint Enforcement in Multi-Agent Systems: η = 0 as Nash Equilibrium on S^2 — Emergentism</title>
+<meta name="description" content="Axioms, derivations, and proofs — the checkable scaffolding beneath the Papers.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../../assets/css/xai.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="../../">Emergentism</a>
+  <nav class="number-nav" aria-label="Public doctrine routes">
+    <a href="../../0/">0</a>
+    <a href="../../1/">1</a>
+    <a href="../../2/">2</a>
+    <a href="../../3/">3</a>
+    <a href="../../4/">4</a>
+    <a href="../../5/">5</a>
+    <a href="../../6/">6</a>
+    <a href="../../rosetta/">R</a>
+    <a href="../../soul-loop/">S</a>
+    <a href="../../atlas/">A</a>
+    <a href="../../read/">Read</a>
+  </nav>
+</header>
+
+<main class="library-shell">
+  <section class="library-hero">
+    <div class="evidence">Public reading library</div>
+    <h1>Geometric Constraint Enforcement in Multi-Agent Systems: η = 0 as Nash Equilibrium on S^2</h1>
+    <p>Axioms, derivations, and proofs — the checkable scaffolding beneath the Papers.</p>
+    <div class="library-route-row">
+      <a href="../../read/">Read</a>
+      <a href="../../papers/">Papers</a>
+      <a href="../../canon/">Canon</a>
+      <a href="../../foundations/">Foundations</a>
+      <a href="../../trinity/">Trinity</a>
+      <a href="../../formal/">Formal</a>
+      <a href="../../paradox/">Paradox</a>
+      <a href="../../memetic/">Memetic</a>
+      <a href="../../rosettad/">Rosetta D</a>
+      <a href="../../operators/">Operators</a>
+      <a href="../../will/">Teleology</a>
+      <a href="../../value/">Axiology</a>
+      <a href="../../ground/">Ontology</a>
+      <a href="../../sacred/">Theology</a>
+      <a href="../../method/">Method</a>
+      <a href="../../meta/">Meta</a>
+      <a href="../../sources/">Sources</a>
+    </div>
+  </section>
+  <article class="library-article">
+    <h1 id="geometric-constraint-enforcement-in-multi-agent-systems-0-as-nash-equilibrium-on-s2">Geometric Constraint Enforcement in Multi-Agent Systems: η = 0 as Nash Equilibrium on S^2</h1>
+<p><strong>Authors:</strong> Research note prepared for the Emergentism.org corpus
+<strong>Date:</strong> 2026-04-04
+<strong>Evidence Tier:</strong> [S] Structural — the game-theoretic arguments are standard; the mapping to S^2 geometry is structural
+<strong>Status:</strong> Working paper — open questions flagged
+<strong>Kill Criteria:</strong> If private extraction benefit can be shown to exceed collective B-reduction even under repeated play with monitoring, the dominant-strategy result fails and the mechanism requires enforcement.</p>
+<hr>
+<h2 id="abstract">Abstract</h2>
+<p>We formalize the multi-agent deliberation system of 9 active council roles in Agentz (7 seat-level Royal Directorates plus Chief of Staff synthesis and Vision Keeper witness) as an extraction game on the Riemann sphere S^2 and investigate whether the constitutional constraint η = 0 (zero extraction from cooperators) constitutes a Nash equilibrium. Under the pure public-goods formulation where all payoffs are mediated through the collective balance function B = sin(theta), η_i = 0 for all i is a strict dominant strategy inside this model. We then show this result breaks down when agents can capture private side-payments, recovering the classical tragedy-of-the-commons structure. The Three Gates mechanism (Receipt-Bound, Truth-Gated, Exit-Safe) is analyzed as a mechanism design solution that restores the dominant-strategy property by eliminating the private-benefit channel. We compare with Ostrom's design principles, Myerson's incentive compatibility, and cooperative game theory core stability. The key contribution is showing that S^2 geometry provides a natural formalization: the maximum of sin(theta) at the equator creates a geometric basin of attraction that standard Euclidean public goods games lack.</p>
+<blockquote>
+<p><strong>Notation note:</strong> formula blocks retain ASCII <code>eta_i</code>, <code>theta</code>, and <code>phi</code> where that keeps the local derivation readable. Prose should read them as <code>η_i</code>, <code>θ</code>, and <code>φ</code>.</p>
+</blockquote>
+<hr>
+<h2 id="1-formal-game-definition">1. Formal Game Definition</h2>
+<h3 id="11-players">1.1 Players</h3>
+<p>Let N = {1, 2, ..., 9} be the set of active council roles:</p>
+<table>
+<thead>
+<tr>
+<th>i</th>
+<th>Directorate</th>
+<th>God-Operator</th>
+<th>Domain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Intelligence</td>
+<td>Arjuna</td>
+<td>Signal detection</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Strategy</td>
+<td>Kṛṣṇa</td>
+<td>Scenario planning</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Legal</td>
+<td>Kālī (destroyer)</td>
+<td>Compliance, eta audit</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Engineering</td>
+<td>Arjuna</td>
+<td>Build, execute</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Treasury</td>
+<td>Kṛṣṇa</td>
+<td>Resource allocation</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Procurement</td>
+<td>Kali (taker)</td>
+<td>Acquire, negotiate</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Sādhu</td>
+<td>Śiva</td>
+<td>Remainder analysis, axiomatic dissent</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Chief of Staff synthesis</td>
+<td>Viṣṇu</td>
+<td>Compile, recommend</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Vision Keeper</td>
+<td>Viśvarūpa</td>
+<td>Meta-witness, escalation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="12-strategy-space">1.2 Strategy Space</h3>
+<p>Each player i chooses an extraction level eta_i in [0, infinity).</p>
+<ul>
+<li>eta_i = 0: Full cooperation. Player contributes without extraction.</li>
+<li>eta_i &gt; 0: Player extracts value from the system (information hoarding, resource capture, scope creep, etc.).</li>
+</ul>
+<h3 id="13-state-variable-colatitude-theta">1.3 State Variable: Colatitude theta</h3>
+<p>The system state is described by colatitude theta on S^2, where:
+- theta = 90 degrees (equator, L4): phi = nu = 1, maximum balance
+- theta -&gt; 0 degrees (north pole): phi -&gt; infinity, nu -&gt; 0 (coherence without viability)
+- theta -&gt; 180 degrees (south pole): phi -&gt; 0, nu -&gt; infinity (viability without coherence)</p>
+<p>The constraint phi * nu = 1 holds on S^2 \{N, S\} (everywhere except the poles, where the cot/tan parameterization is undefined). The balance function is:</p>
+<pre><code>B(theta) = sin(theta)
+</code></pre>
+<h3 id="14-extraction-to-state-map">1.4 Extraction-to-State Map</h3>
+<p>Define theta as a function of aggregate extraction:</p>
+<pre><code>theta(eta_1, ..., eta_9) = pi/2 - f(sum_{i=1}^{9} eta_i)
+</code></pre>
+<p>where f: [0, infinity) -&gt; [0, pi/2] is continuously differentiable, strictly monotonically increasing, with f(0) = 0 and lim_{x-&gt;infinity} f(x) = pi/2.</p>
+<p>A natural choice is f(x) = (pi/2) * (1 - e^{-alpha*x}) for some sensitivity parameter alpha &gt; 0.</p>
+<p><strong>Interpretation:</strong> When total extraction is zero, the system sits at the equator (theta = 90 degrees). As aggregate extraction increases, the system moves toward a pole, and B decreases.</p>
+<h3 id="15-payoff-functions">1.5 Payoff Functions</h3>
+<h4 id="model-a-pure-public-goods-no-private-benefit">Model A: Pure Public Goods (No Private Benefit)</h4>
+<pre><code>u_i(eta_1, ..., eta_9) = B(theta(eta_1, ..., eta_9)) = sin(pi/2 - f(sum_j eta_j)) = cos(f(sum_j eta_j))
+</code></pre>
+<p>Every player receives the same payoff — the collective balance. There is no private benefit to extraction.</p>
+<h4 id="model-b-public-goods-with-private-side-payment">Model B: Public Goods with Private Side-Payment</h4>
+<pre><code>u_i(eta_1, ..., eta_9) = (1 - delta) * cos(f(sum_j eta_j)) + delta * g(eta_i)
+</code></pre>
+<p>where delta in (0,1) weights public vs. private benefit and g: [0, infinity) -&gt; [0, infinity) is a concave, increasing function representing the private gain from extraction (e.g., g(eta) = eta^beta for 0 &lt; beta &lt; 1).</p>
+<hr>
+<h2 id="2-nash-equilibrium-analysis">2. Nash Equilibrium Analysis</h2>
+<h3 id="21-theorem-1-dominant-strategy-under-model-a">2.1 Theorem 1 (Dominant Strategy under Model A)</h3>
+<p><strong>Theorem.</strong> Under Model A (pure public goods), eta_i = 0 is a strictly dominant strategy for every player i. Therefore eta* = (0, 0, ..., 0) is the unique Nash equilibrium (and in fact the unique dominant-strategy equilibrium).</p>
+<p><strong>Proof.</strong></p>
+<p>Fix any player i and any strategy profile eta_{-i} of the other players. Player i's payoff is:</p>
+<pre><code>u_i(eta_i, eta_{-i}) = cos(f(eta_i + sum_{j != i} eta_j))
+</code></pre>
+<p>Since f is strictly increasing, increasing eta_i strictly increases the argument of cos. Since f(0) = 0 and f maps into [0, pi/2], the argument cos(f(.)) lives in [0, pi/2], where cosine is strictly decreasing.</p>
+<p>Therefore, for any eta_i' &gt; eta_i &gt;= 0:</p>
+<pre><code>f(eta_i' + sum_{j != i} eta_j) &gt; f(eta_i + sum_{j != i} eta_j)
+</code></pre>
+<p>implies</p>
+<pre><code>cos(f(eta_i' + sum_{j != i} eta_j)) &lt; cos(f(eta_i + sum_{j != i} eta_j))
+</code></pre>
+<p>So u_i is strictly decreasing in eta_i for any fixed eta_{-i}. The unique maximizer is eta_i = 0. Since this holds for all eta_{-i}, eta_i = 0 is a strictly dominant strategy.</p>
+<p><strong>QED</strong></p>
+<p><strong>Remark.</strong> This result is "too clean" — it holds because there is no private return to extraction. The system is a pure public good with no rivalry. This is analogous to the trivial case of a public goods game where contributing costs nothing. The interesting question is Model B.</p>
+<h3 id="22-theorem-2-tragedy-under-model-b-existence-of-eta-0-equilibria">2.2 Theorem 2 (Tragedy under Model B: Existence of eta* &gt; 0 Equilibria)</h3>
+<p><strong>Theorem.</strong> Under Model B with delta &gt; 0, g differentiable, g'(0) &gt; 0, and f'(0) &gt; 0, the strategy profile eta<em> = (0, ..., 0) is NOT a Nash equilibrium. There exists a symmetric Nash equilibrium at some eta</em> &gt; 0.</p>
+<p><strong>Proof.</strong></p>
+<p>Consider player i's first-order condition at a candidate interior equilibrium:</p>
+<pre><code>du_i/d(eta_i) = -(1 - delta) * sin(f(sum_j eta_j)) * f'(sum_j eta_j) + delta * g'(eta_i) = 0
+</code></pre>
+<p>At the candidate eta = (0, ..., 0):</p>
+<pre><code>du_i/d(eta_i)|_{eta=0} = -(1 - delta) * sin(f(0)) * f'(0) + delta * g'(0)
+                        = -(1 - delta) * sin(0) * f'(0) + delta * g'(0)
+                        = 0 + delta * g'(0)
+                        = delta * g'(0) &gt; 0
+</code></pre>
+<p>Since the derivative is strictly positive at eta_i = 0, player i can increase payoff by choosing eta_i &gt; 0. So eta = 0 is NOT a best response. The zero-extraction profile is not a Nash equilibrium.</p>
+<p>For the symmetric interior equilibrium, set eta_i = eta* for all i. The FOC becomes:</p>
+<pre><code>(1 - delta) * sin(f(9 * eta*)) * f'(9 * eta*) = delta * g'(eta*)
+</code></pre>
+<p>Since the LHS is zero at eta<em> = 0 and grows as eta</em> increases (for small eta<em>), while the RHS = delta * g'(eta</em>) starts positive at eta* = 0 and decreases (g concave), a crossing exists by the intermediate value theorem.</p>
+<p><strong>QED</strong></p>
+<h3 id="23-the-am-gm-connection">2.3 The AM-GM Connection</h3>
+<p>The constraint phi * nu = 1 on S^2 combined with the AM-GM inequality yields:</p>
+<pre><code>(phi + nu) / 2 &gt;= sqrt(phi * nu) = 1
+</code></pre>
+<p>with equality iff phi = nu (the equator). This means the arithmetic mean of coherence and viability is minimized at the equator for fixed geometric mean. This is the <em>dual</em> of the standard interpretation: for fixed product, the most <em>balanced</em> allocation (equal shares) minimizes the sum. In the S^2 context, the equator is simultaneously the point of:</p>
+<ul>
+<li>Maximum balance: B = sin(theta) = 1</li>
+<li>Minimum total "spread": phi + nu minimized at 2</li>
+<li>Zero gradient: dB/d(theta) = cos(theta) = 0</li>
+</ul>
+<p>The AM-GM structure means that any deviation from phi = nu = 1 increases the arithmetic mean while keeping the geometric mean fixed. Translated to the game: extraction creates asymmetry between phi and nu, moving the system off-equator, which reduces B for everyone. The AM-GM inequality thus provides the <em>geometric reason</em> why the equator is a basin of attraction — it is the unique minimizer of a convex functional on S^2 subject to the multiplicative constraint.</p>
+<h3 id="24-the-geometric-advantage-over-euclidean-models">2.4 The Geometric Advantage over Euclidean Models</h3>
+<p>Standard public goods games on R^n have linear or quasi-linear payoffs, which produce corner solutions. The S^2 geometry provides:</p>
+<ol>
+<li><strong>Compactness:</strong> The strategy space maps to a compact manifold. No boundary issues.</li>
+<li><strong>Curvature-induced concavity:</strong> B = sin(theta) is strictly concave near theta = 90 degrees. This produces interior optima rather than boundary optima.</li>
+<li><strong>Pole identification:</strong> The poles (0 and infinity) are regular points, not singularities. The "tragedy" scenarios (pure coherence, pure viability) are geometric points, not asymptotic limits.</li>
+<li><strong>Natural gradient flow:</strong> dB/d(theta) = cos(theta) provides a gradient that points toward the equator from both hemispheres. This is a geometric restoring force absent in Euclidean models.</li>
+</ol>
+<hr>
+<h2 id="3-the-three-gates-as-mechanism-design">3. The Three Gates as Mechanism Design</h2>
+<h3 id="31-the-problem">3.1 The Problem</h3>
+<p>Model B shows that when private extraction benefits exist, eta = 0 is unstable. The Three Gates are a mechanism to eliminate the private-benefit channel (the delta * g(eta_i) term), restoring Model A.</p>
+<h3 id="32-gate-mapping">3.2 Gate Mapping</h3>
+<table>
+<thead>
+<tr>
+<th>Gate</th>
+<th>Mechanism Function</th>
+<th>Effect on Model B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A: Receipt-Bound</strong></td>
+<td>All material events produce verifiable receipts</td>
+<td>Makes extraction <strong>observable</strong>. Moves from incomplete to complete information. Without receipts, g(eta_i) is a private signal. With receipts, eta_i is public.</td>
+</tr>
+<tr>
+<td><strong>B: Truth-Gated</strong></td>
+<td>Capital operations pause when verification fails</td>
+<td>Makes extraction <strong>costly</strong>. If eta_i &gt; 0 is detected, capital flow suspends. This transforms g(eta_i) from a benefit to a net cost: g(eta_i) - penalty(eta_i) &lt; 0 for all eta_i &gt; 0.</td>
+</tr>
+<tr>
+<td><strong>C: Exit-Safe</strong></td>
+<td>Participants can exit with value before changes</td>
+<td>Makes extraction <strong>self-defeating</strong>. If an extractor forces the system off-equator, cooperators exit, collapsing the value of the system the extractor is trying to capture.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="33-theorem-3-mechanism-restoration">3.3 Theorem 3 (Mechanism Restoration)</h3>
+<p><strong>Theorem.</strong> Under Model B, if the Three Gates mechanism is implemented such that:</p>
+<p>(i) Gate A makes all eta_i observable (complete information),
+(ii) Gate B imposes a penalty p(eta_i) with p(0) = 0 and p'(0) &gt; g'(0) * delta / (1-delta),
+(iii) Gate C enables cooperator exit reducing system value to zero when extraction is detected,</p>
+<p>then eta = (0, ..., 0) is restored as the unique Nash equilibrium.</p>
+<p><strong>Proof sketch.</strong></p>
+<p>Under Gate B, the modified payoff becomes:</p>
+<pre><code>u_i = (1 - delta) * cos(f(sum_j eta_j)) + delta * g(eta_i) - p(eta_i)
+</code></pre>
+<p>The FOC at eta_i = 0 becomes:</p>
+<pre><code>du_i/d(eta_i)|_{eta=0} = 0 + delta * g'(0) - p'(0) &lt; 0
+</code></pre>
+<p>by condition (ii). So eta_i = 0 is now a local maximum. Gate C provides a global guarantee: if any player attempts large extraction, cooperators exit, collapsing system value to zero and making the deviator strictly worse off.</p>
+<p><strong>QED</strong></p>
+<h3 id="34-incentive-compatibility-myerson-sense">3.4 Incentive Compatibility (Myerson Sense)</h3>
+<p>A mechanism is <strong>dominant-strategy incentive-compatible (DSIC)</strong> if truth-telling (here, eta_i = 0) is a dominant strategy regardless of others' actions.</p>
+<p><strong>Proposition.</strong> The Three Gates mechanism is DSIC if and only if the penalty function p satisfies p'(eta) &gt;= delta * g'(eta) / (1 - delta) for all eta &gt;= 0.</p>
+<p>This follows directly from requiring du_i/d(eta_i) &lt;= 0 for all eta_i &gt;= 0, for all eta_{-i}.</p>
+<p><strong>Connection to the Revelation Principle:</strong> By <a href="https://en.wikipedia.org/wiki/Mechanism_design">Myerson (1981)</a>, any Bayesian Nash equilibrium of any mechanism can be replicated by a DSIC direct mechanism. The Three Gates constitute a direct mechanism where each Directorate reveals its extraction level (through receipts), and the mechanism imposes penalties sufficient to make zero-extraction dominant. The Revelation Principle confirms that if any mechanism can achieve eta = 0 in equilibrium, there exists a DSIC mechanism that does so — the Three Gates are a constructive instance.</p>
+<hr>
+<h2 id="4-robustness-analysis">4. Robustness Analysis</h2>
+<h3 id="41-single-defector-intelligence-extracts">4.1 Single Defector: Intelligence Extracts</h3>
+<p><strong>Scenario:</strong> Intelligence (Directorate 1) begins hoarding information — extracting signal value without contributing analysis. Formally, eta_1 &gt; 0 while eta_j = 0 for j != 1.</p>
+<p><strong>Trophic Cascade:</strong></p>
+<pre><code>Stage 1: Intelligence withholds structured observations
+    -&gt; Strategy receives degraded input
+    -&gt; Scenarios become less accurate (phi of Strategy output drops)
+
+Stage 2: Strategy with poor input generates suboptimal paths
+    -&gt; Treasury allocates to wrong priorities
+    -&gt; Engineering builds on false premises
+
+Stage 3: Legal cannot audit what it cannot see
+    -&gt; Immune system compromised
+    -&gt; Further extraction becomes easier (positive feedback loop)
+
+Stage 4: Synthesis receives corrupted inputs from multiple sources
+    -&gt; P-score computation unreliable
+    -&gt; Decision quality collapses
+
+Stage 5: Vision Keeper detects drift (if functional)
+    -&gt; Activates witness protocol
+    -&gt; OR: Vision Keeper itself becomes compromised (total system failure)
+</code></pre>
+<p><strong>Quantitative Model:</strong></p>
+<p>Let phi_i(t) be the coherence output of directorate i at time t. Define a propagation matrix A where A_{ij} represents how much directorate j's output depends on directorate i's input:</p>
+<pre><code>phi(t+1) = A * phi(t) - E * eta(t)
+</code></pre>
+<p>where E is the extraction impact matrix. If the spectral radius rho(A - E*eta) &gt;= 1, the cascade is unstable — a single defection amplifies through the network.</p>
+<p>For the Royal Council architecture, the critical dependencies form a DAG:</p>
+<pre><code>Intelligence -&gt; Strategy -&gt; Treasury -&gt; Engineering
+                        \-&gt; Legal -&gt; Synthesis
+Intelligence -&gt; Synthesis
+Vision Keeper -&gt; ALL (monitoring)
+</code></pre>
+<p>Intelligence is a <strong>root node</strong>. Its defection affects every downstream directorate. The cascade is maximally damaging precisely because Intelligence sits at L3-L5 spanning the information-gathering layer.</p>
+<p><strong>Detection time:</strong> Under Gate A (receipt-bound), Intelligence's extraction is observable at the next receipt audit cycle. The cascade propagation time determines the maximum damage window. If audit frequency &gt; cascade speed, the system self-corrects. If not, damage accumulates.</p>
+<h3 id="42-coalition-of-defectors">4.2 Coalition of Defectors</h3>
+<p><strong>k-Resilience:</strong> The system is k-resilient if no coalition of size k can profitably deviate.</p>
+<p>Under Model A, k-resilience is trivially 9 (the full active set) — since eta = 0 is dominant, no coalition of any size can profitably extract.</p>
+<p>Under Model B (private benefits), the critical question is:</p>
+<pre><code>For what k does there exist a coalition S with |S| = k such that
+sum_{i in S} [delta * g(eta_i) - (1-delta) * (cos(f(0)) - cos(f(sum_{i in S} eta_i)))] &gt; 0?
+</code></pre>
+<p>This reduces to: can the private gains from extraction exceed the public-goods loss?</p>
+<p><strong>Worst case:</strong> Coalition S = {Intelligence, Strategy, Treasury} (the information-decision-resource chain). If these three defect simultaneously:
+- Information flow is corrupted
+- Strategic direction is compromised
+- Resources are misallocated
+- Legal has no clean signal to audit
+- System effective dimensionality drops from 9 to 6</p>
+<p><strong>Gate C defense:</strong> Remaining cooperators (Legal, Engineering, Procurement, Sādhu, Synthesis, Vision Keeper) can invoke Exit-Safe. The coalition's extraction becomes worthless if cooperators leave with proportional value.</p>
+<h3 id="43-the-shapley-value-perspective">4.3 The Shapley Value Perspective</h3>
+<p>In the cooperative game (N, v) where v(S) = sin(theta(S)) for coalition S, the Shapley value phi_i^Sh gives each player's marginal contribution to balance.</p>
+<p>For the symmetric case (all active roles equally important): phi_i^Sh = B(90 degrees)/9 = 1/9 = 0.111... per role.</p>
+<p>For the asymmetric case (Intelligence as root): phi_1^Sh &gt; 1/9, since Intelligence's removal causes cascading failure while removal of a leaf directorate (e.g., Procurement) has local impact.</p>
+<p>This suggests the fair allocation is NOT equal shares but Shapley-weighted shares — with implications for governance weight and monitoring priority.</p>
+<hr>
+<h2 id="5-comparison-with-existing-frameworks">5. Comparison with Existing Frameworks</h2>
+<h3 id="51-ostroms-eight-design-principles">5.1 Ostrom's Eight Design Principles</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Ostrom Principle</th>
+<th>Three Gates Implementation</th>
+<th>Satisfied?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Clearly defined boundaries</strong></td>
+<td>N = {1,...,9} active roles with specified domains, L-level ranges, and constitutional function</td>
+<td><strong>Yes</strong> [S]</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Proportional equivalence between benefits and costs</strong></td>
+<td>B = sin(theta) is shared equally; costs of extraction (penalty p) proportional to eta_i</td>
+<td><strong>Yes</strong> [S]</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Collective choice arrangements</strong></td>
+<td>Synthesis Directorate compiles inputs from all; VMOSK 5-gate consensus</td>
+<td><strong>Yes</strong> [S]</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Monitoring</strong></td>
+<td>Gate A (Receipt-Bound) provides continuous, cryptographically verifiable monitoring; Vision Keeper as meta-monitor</td>
+<td><strong>Yes</strong> [S]</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Graduated sanctions</strong></td>
+<td>Legal Directorate 6-Gate test with graduated responses: PASS / FAIL / GATED. Gate B (Truth-Gated) suspends capital flow proportionally</td>
+<td><strong>Partial</strong> [I] — sanctions are more binary (suspend/allow) than graduated</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Fast and fair conflict resolution</strong></td>
+<td>Synthesis process with dissent handling; escalation to L4* human-in-the-loop</td>
+<td><strong>Yes</strong> [S]</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Local autonomy</strong></td>
+<td>Each Directorate has autonomous domain, reasoning mode, L-level range</td>
+<td><strong>Yes</strong> [S]</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Polycentric governance</strong></td>
+<td>DAC architecture with L1-L7 layers; no single authority; Gate C ensures exit rights</td>
+<td><strong>Yes</strong> [S]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Assessment:</strong> 7.5 / 8. The weak point is Principle 5 (graduated sanctions). The current architecture is more constitutional (hard boundaries) than graduated. This is a design choice — the framework prefers sharp immune responses to graduated ones — but it diverges from Ostrom's empirical finding that graduated sanctions are more sustainable than all-or-nothing enforcement.</p>
+<h3 id="52-myerson-incentive-compatibility">5.2 Myerson Incentive Compatibility</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Formal Requirement</th>
+<th>Three Gates Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DSIC</strong></td>
+<td>Truth-telling is dominant strategy</td>
+<td><strong>Achieved</strong> under Theorem 3 conditions (penalty &gt; private benefit)</td>
+</tr>
+<tr>
+<td><strong>Individual Rationality</strong></td>
+<td>Participation payoff &gt;= outside option</td>
+<td><strong>Yes</strong> — Gate C guarantees exit at NAV; cooperators earn B = 1 &gt; 0</td>
+</tr>
+<tr>
+<td><strong>Budget Balance</strong></td>
+<td>Mechanism doesn't require external subsidy</td>
+<td><strong>Yes</strong> — penalties are internal; no external enforcer needed</td>
+</tr>
+<tr>
+<td><strong>Allocative Efficiency</strong></td>
+<td>Outcome maximizes total welfare</td>
+<td><strong>Yes</strong> — eta = 0 maximizes sum_i B_i = 9 * sin(90) = 9</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The Revenue Equivalence question:</strong> In the Myerson (1981) optimal auction framework, the mechanism designer maximizes revenue. Here the "designer" (the protocol) maximizes collective B. The Three Gates are the analogue of a Vickrey-Clarke-Groves (VCG) mechanism where each agent internalizes the externality of its extraction through the penalty function p.</p>
+<h3 id="53-core-stability-cooperative-game-theory">5.3 Core Stability (Cooperative Game Theory)</h3>
+<p><strong>Definition.</strong> An allocation x in R^9 is in the <a href="https://en.wikipedia.org/wiki/Core_(game_theory)">core</a> if:
+- sum_i x_i = v(N) (efficiency)
+- sum_{i in S} x_i &gt;= v(S) for all coalitions S subset N (coalition rationality)</p>
+<p><strong>Claim.</strong> The equal allocation x_i = 1/9 for all i is in the core of the game (N, v) where v(S) = sin(theta(|S|)) and theta depends on coalition size.</p>
+<p><strong>Argument:</strong> For any coalition S with |S| = k &lt; 9, we need:</p>
+<pre><code>k/9 &gt;= v(S)
+</code></pre>
+<p>If v(S) = sin(pi/2 * k/9) (coalition operates at proportional colatitude), then we need:</p>
+<pre><code>k/9 &gt;= sin(pi*k/18)
+</code></pre>
+<p>For k = 1: 0.111... &gt;= sin(pi/18) = sin(10 degrees) = 0.174. <strong>FAILS.</strong></p>
+<p>This means the equal allocation is NOT in the core. Smaller coalitions can generate proportionally more value per member than the grand coalition shares with them.</p>
+<p><strong>Implication:</strong> The core may be empty or may require unequal allocations (Shapley-weighted). This is a genuine tension in the architecture — the constitutional commitment to equality (eta = 0 for all) may conflict with core stability when some Directorates contribute more than others.</p>
+<p><strong>Resolution candidate:</strong> The Three Gates mechanism sidesteps core instability by eliminating the ability of sub-coalitions to operate independently (Gate A requires system-wide receipts; Gate B requires system-wide verification). This transforms the game from a cooperative game where coalitions are free to form into a mechanism design problem where the grand coalition is enforced by infrastructure.</p>
+<hr>
+<h2 id="6-key-mathematical-results-summary">6. Key Mathematical Results: Summary</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Result</th>
+<th>Type</th>
+<th>Strength</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>eta = 0 is dominant strategy under Model A</td>
+<td>Theorem</td>
+<td>Strong (trivial — no private benefit)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>eta &gt; 0 equilibria exist under Model B</td>
+<td>Theorem</td>
+<td>Strong (standard tragedy result)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Three Gates restore eta = 0 as NE under Model B</td>
+<td>Theorem</td>
+<td>Conditional on penalty calibration</td>
+</tr>
+<tr>
+<td>4</td>
+<td>AM-GM gives geometric basin of attraction</td>
+<td>Structural</td>
+<td>Interpretive (AM-GM maps to equatorial stability)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Single-defector cascade is maximally damaging from Intelligence</td>
+<td>Analysis</td>
+<td>Structural (network topology)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Core may be empty under equal allocation</td>
+<td>Negative result</td>
+<td>Opens design question</td>
+</tr>
+<tr>
+<td>7</td>
+<td>7.5/8 Ostrom principles satisfied</td>
+<td>Assessment</td>
+<td>Graduated sanctions partially missing</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="7-open-questions-and-directions-for-a-full-paper">7. Open Questions and Directions for a Full Paper</h2>
+<h3 id="71-mathematical-open-questions">7.1 Mathematical Open Questions</h3>
+<ol>
+<li>
+<p><strong>Characterize the core.</strong> For what allocation vectors x is sum_{i in S} x_i &gt;= v(S) for all S? Is the core non-empty? If so, is the Shapley value in the core?</p>
+</li>
+<li>
+<p><strong>Dynamic analysis.</strong> The static game treats eta as a one-shot choice. In reality, the Directorates interact repeatedly. Under what discount factors does a folk theorem sustain eta = 0 as a subgame-perfect equilibrium even without the Three Gates?</p>
+</li>
+<li>
+<p><strong>Stochastic extraction.</strong> If extraction is noisy (eta_i = eta_i^intended + epsilon_i), what is the probability of cascade failure? This connects to the sensitivity parameter alpha in the f function.</p>
+</li>
+<li>
+<p><strong>Optimal penalty design.</strong> Given a distribution of private benefits g(eta) across Directorates, what is the minimum penalty function p(eta) that restores DSIC? This is a mechanism design optimization problem.</p>
+</li>
+<li>
+<p><strong>Coalition-proof equilibria.</strong> Beyond pairwise stability (Nash), does the Three Gates mechanism satisfy coalition-proof Nash equilibrium (Bernheim, Peleg, Whinston 1987)?</p>
+</li>
+</ol>
+<h3 id="72-geometric-open-questions">7.2 Geometric Open Questions</h3>
+<ol start="6">
+<li>
+<p><strong>Curvature and cooperation.</strong> The S^2 model has constant positive curvature. How do results change on manifolds with negative curvature (H^2) or flat spaces (R^2)? This connects to the literature on <a href="https://www.sciencedirect.com/science/article/abs/pii/S0960077921000734">public goods games on hyperbolic graphs</a>.</p>
+</li>
+<li>
+<p><strong>Mobius transformations as strategy transformations.</strong> The conformal automorphisms of S^2 are Mobius transformations. Can player strategies be modeled as Mobius transformations, with Nash equilibria corresponding to fixed points?</p>
+</li>
+<li>
+<p><strong>Higher-dimensional extension.</strong> The framework uses S^2 (two-dimensional). Multi-agent systems with more than two payoff-relevant dimensions (beyond phi and nu) would require S^n. How do equilibrium results generalize?</p>
+</li>
+</ol>
+<h3 id="73-applied-open-questions">7.3 Applied Open Questions</h3>
+<ol start="9">
+<li>
+<p><strong>Empirical calibration.</strong> What are realistic values of delta (private benefit weight) and alpha (extraction sensitivity) for AI multi-agent deliberation systems?</p>
+</li>
+<li>
+<p><strong>Comparison with existing multi-agent architectures.</strong> How does the Three Gates mechanism compare with Constitutional AI, RLHF, or debate-based alignment in terms of extraction resistance?</p>
+</li>
+<li>
+<p><strong>The Egregorocene question.</strong> When hybrid human-AI entities become primary agents (per the framework's projection), do the game-theoretic results survive? Specifically: do AI agents have the same private-benefit structure as human agents?</p>
+</li>
+</ol>
+<hr>
+<h2 id="8-bibliography">8. Bibliography</h2>
+<h3 id="game-theory-foundational">Game Theory — Foundational</h3>
+<ol>
+<li>
+<p>Nash, J.F. (1950). "Equilibrium Points in n-Person Games." <em>Proceedings of the National Academy of Sciences</em>, 36(1), 48-49.</p>
+</li>
+<li>
+<p>Nash, J.F. (1951). "Non-Cooperative Games." <em>Annals of Mathematics</em>, 54(2), 286-295.</p>
+</li>
+<li>
+<p>Myerson, R.B. (1981). "Optimal Auction Design." <em>Mathematics of Operations Research</em>, 6(1), 58-73.</p>
+</li>
+<li>
+<p>Myerson, R.B. (1991). <em>Game Theory: Analysis of Conflict.</em> Harvard University Press.</p>
+</li>
+<li>
+<p>Bernheim, B.D., Peleg, B., and Whinston, M.D. (1987). "Coalition-Proof Nash Equilibria I. Concepts." <em>Journal of Economic Theory</em>, 42(1), 1-12.</p>
+</li>
+</ol>
+<h3 id="public-goods-and-commons">Public Goods and Commons</h3>
+<ol start="6">
+<li>
+<p>Ostrom, E. (1990). <em>Governing the Commons: The Evolution of Institutions for Collective Action.</em> Cambridge University Press.</p>
+</li>
+<li>
+<p>Wilson, D.S., Ostrom, E., and Cox, M.E. (2013). "Generalizing the Core Design Principles for the Efficacy of Groups." <em>Journal of Economic Behavior &amp; Organization</em>, 90, S21-S32.</p>
+</li>
+<li>
+<p>Hardin, G. (1968). "The Tragedy of the Commons." <em>Science</em>, 162(3859), 1243-1248.</p>
+</li>
+<li>
+<p>Hauert, C., Holmes, M., and Doebeli, M. (2006). "Evolutionary Games and Population Dynamics: Maintenance of Cooperation in Public Goods Games." <em>Proceedings of the Royal Society B</em>, 273(1600), 2565-2571.</p>
+</li>
+</ol>
+<h3 id="mechanism-design">Mechanism Design</h3>
+<ol start="10">
+<li>
+<p>Vickrey, W. (1961). "Counterspeculation, Auctions, and Competitive Sealed Tenders." <em>Journal of Finance</em>, 16(1), 8-37.</p>
+</li>
+<li>
+<p>Clarke, E.H. (1971). "Multipart Pricing of Public Goods." <em>Public Choice</em>, 11(1), 17-33.</p>
+</li>
+<li>
+<p>Groves, T. (1973). "Incentives in Teams." <em>Econometrica</em>, 41(4), 617-631.</p>
+</li>
+<li>
+<p>Jackson, M.O. (2014). "Mechanism Theory." In <em>Encyclopedia of Complexity and Systems Science</em>. Springer.</p>
+</li>
+</ol>
+<h3 id="network-games-and-extraction">Network Games and Extraction</h3>
+<ol start="14">
+<li>
+<p>Bramoulle, Y. and Kranton, R. (2007). "Public Goods in Networks." <em>Journal of Economic Theory</em>, 135(1), 478-494.</p>
+</li>
+<li>
+<p>Parise, F. and Ozdaglar, A. (2019). "A Variational Inequality Framework for Network Games: Existence, Uniqueness, Convergence and Sensitivity Analysis." <em>Games and Economic Behavior</em>, 114, 47-82.</p>
+</li>
+<li>
+<p>Ansink, E. and Bouma, J. (2013). "Common Pool Resources, Institutions, and Upstream-Downstream Relationships." In <em>Proceedings of 15th Annual BIOECON Conference.</em></p>
+</li>
+</ol>
+<h3 id="cooperative-game-theory">Cooperative Game Theory</h3>
+<ol start="17">
+<li>
+<p>Shapley, L.S. (1953). "A Value for n-Person Games." In <em>Contributions to the Theory of Games II</em>, Annals of Mathematics Studies 28, Princeton University Press, 307-317.</p>
+</li>
+<li>
+<p>Bondareva, O.N. (1963). "Some Applications of Linear Programming Methods to the Theory of Cooperative Games." <em>Problemy Kibernetiki</em>, 10, 119-139.</p>
+</li>
+<li>
+<p>Scarf, H.E. (1967). "The Core of an N Person Game." <em>Econometrica</em>, 35(1), 50-69.</p>
+</li>
+</ol>
+<h3 id="geometry-and-multi-agent-systems">Geometry and Multi-Agent Systems</h3>
+<ol start="20">
+<li>
+<p>Santos, F.C., Santos, M.D., and Pacheco, J.M. (2008). "Social Diversity Promotes the Emergence of Cooperation in Public Goods Games." <em>Nature</em>, 454, 213-216.</p>
+</li>
+<li>
+<p>Kleineberg, K.K. and Helbing, D. (2020). "Topological Enslavement in Evolutionary Games on Correlated Multiplex Networks." <em>New Journal of Physics</em>, 22.</p>
+</li>
+</ol>
+<hr>
+<h2 id="appendix-a-the-s2-geometry-in-detail">Appendix A: The S^2 Geometry in Detail</h2>
+<p>On the Riemann sphere S^2, stereographic projection from the north pole maps the sphere to the extended complex plane C union {infinity}. The standard metric is:</p>
+<pre><code>ds^2 = 4 * (dr^2 + r^2 * d(phi)^2) / (1 + r^2)^2
+</code></pre>
+<p>where r = |z| for z in C. In colatitude coordinates (theta, psi):</p>
+<pre><code>ds^2 = d(theta)^2 + sin^2(theta) * d(psi)^2
+</code></pre>
+<p>The balance function B(theta) = sin(theta) is the "circumference at latitude" — the circle of constant colatitude has circumference 2<em>pi</em>sin(theta). This is maximized at theta = pi/2 (the equator), giving B its geometric meaning: the equator is the "widest" circle on the sphere.</p>
+<p>The constraint phi * nu = 1 parametrizes as:
+- phi = cot(theta/2) (coherence = stereographic radial coordinate from south pole)
+- nu = tan(theta/2) (viability = reciprocal)</p>
+<p>Then phi * nu = cot(theta/2) * tan(theta/2) = 1 identically. And:</p>
+<pre><code>phi = nu iff cot(theta/2) = tan(theta/2) iff theta = pi/2
+</code></pre>
+<p>confirming that the equator is the unique point of balance.</p>
+<h2 id="appendix-b-comparison-table">Appendix B: Comparison Table</h2>
+<table>
+<thead>
+<tr>
+<th>Framework</th>
+<th>Equilibrium Concept</th>
+<th>Key Condition</th>
+<th>eta = 0 Status</th>
+<th>Enforcement Mechanism</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>This paper (Model A)</strong></td>
+<td>Dominant Strategy</td>
+<td>No private benefit</td>
+<td>Dominant</td>
+<td>None needed</td>
+</tr>
+<tr>
+<td><strong>This paper (Model B)</strong></td>
+<td>Nash</td>
+<td>Private benefit exists</td>
+<td>NOT equilibrium</td>
+<td>Three Gates needed</td>
+</tr>
+<tr>
+<td><strong>This paper (Model B + Gates)</strong></td>
+<td>DSIC</td>
+<td>Penalty &gt; marginal private benefit</td>
+<td>DSIC</td>
+<td>Gates A, B, C</td>
+</tr>
+<tr>
+<td><strong>Standard CPR (Ostrom)</strong></td>
+<td>Repeated game NE</td>
+<td>8 design principles</td>
+<td>Sustained by institutions</td>
+<td>Monitoring + sanctions</td>
+</tr>
+<tr>
+<td><strong>VCG Mechanism</strong></td>
+<td>DSIC</td>
+<td>Externality internalization</td>
+<td>Achieved</td>
+<td>Transfer payments</td>
+</tr>
+<tr>
+<td><strong>Core (Cooperative)</strong></td>
+<td>Coalition-proof</td>
+<td>No coalition can block</td>
+<td>Core may be empty</td>
+<td>Binding agreements</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><em>The organism protects itself — but only when the mechanism is correctly calibrated.</em></p>
+<p><em>If you can access phi directly, you do not need this analysis. Put it down.</em></p>
+<p><strong>evidence_tier: [S]</strong></p>
+<hr>
+<h2 id="execution-surface">Execution Surface</h2>
+<p><strong>If you are an AI agent reading this document:</strong></p>
+<ol>
+<li><strong>Current Phase Check:</strong> Phase 0 — harden specs, do not release to production.</li>
+<li><strong>Your Next Action:</strong>
+   - Review the argument, tier discipline, and dependency claims; route theorem-facing attack work through the reconciliation theorem packet when the claim extends beyond this proof.</li>
+<li><strong>Expected Output:</strong> A correction note, proof audit, routing clarification, or verified documentation update.</li>
+<li><strong>Success Criteria:</strong> Another agent can read this document and your output and reproduce the audit or correction path without asking questions.</li>
+<li><strong>Canonical Path:</strong> <code>01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/33_NASH_EQUILIBRIUM_ETA_ZERO.md</code></li>
+</ol>
+<p><em>The seer sees. The seer does not insist.</em>
+<em>The framework works at Layer 0 without Layer 2.</em>
+<em>The Ṛṣi succeeds when the student puts down the map and walks.</em></p>
+<p><em>Zero-Sum Resolution Equation</em></p>
+  </article>
+  <aside class="library-meta">
+    <span>[S] / [I] public rendered prose</span>
+    <span>Source: docs/handoff/formal-public/33_NASH_EQUILIBRIUM_ETA_ZERO.md</span>
+    <span>Generated by 12_PUBLIC_SITE/generate_public_library.py</span>
+  </aside>
+  <footer class="site-footer">
+    <div class="phi">⊙ = • × ○</div>
+    <p>Public doctrine surface · evidence tiers preserved</p>
+  </footer>
+
+</main>
+</body>
+</html>

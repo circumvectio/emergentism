@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Logarithmic Realignment — Emergentism</title>
+<meta name="description" content="Axioms, derivations, and proofs — the checkable scaffolding beneath the Papers.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../../assets/css/xai.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="../../">Emergentism</a>
+  <nav class="number-nav" aria-label="Public doctrine routes">
+    <a href="../../0/">0</a>
+    <a href="../../1/">1</a>
+    <a href="../../2/">2</a>
+    <a href="../../3/">3</a>
+    <a href="../../4/">4</a>
+    <a href="../../5/">5</a>
+    <a href="../../6/">6</a>
+    <a href="../../rosetta/">R</a>
+    <a href="../../soul-loop/">S</a>
+    <a href="../../atlas/">A</a>
+    <a href="../../read/">Read</a>
+  </nav>
+</header>
+
+<main class="library-shell">
+  <section class="library-hero">
+    <div class="evidence">Public reading library</div>
+    <h1>The Logarithmic Realignment</h1>
+    <p>Axioms, derivations, and proofs — the checkable scaffolding beneath the Papers.</p>
+    <div class="library-route-row">
+      <a href="../../read/">Read</a>
+      <a href="../../papers/">Papers</a>
+      <a href="../../canon/">Canon</a>
+      <a href="../../foundations/">Foundations</a>
+      <a href="../../trinity/">Trinity</a>
+      <a href="../../formal/">Formal</a>
+      <a href="../../paradox/">Paradox</a>
+      <a href="../../memetic/">Memetic</a>
+      <a href="../../rosettad/">Rosetta D</a>
+      <a href="../../operators/">Operators</a>
+      <a href="../../will/">Teleology</a>
+      <a href="../../value/">Axiology</a>
+      <a href="../../ground/">Ontology</a>
+      <a href="../../sacred/">Theology</a>
+      <a href="../../method/">Method</a>
+      <a href="../../meta/">Meta</a>
+      <a href="../../sources/">Sources</a>
+    </div>
+  </section>
+  <article class="library-article">
+    <h1 id="the-logarithmic-realignment">The Logarithmic Realignment</h1>
+<h2 id="what-changes-when-you-center-the-number-line-at-1">What Changes When You Center the Number Line at 1</h2>
+<p><strong>Status:</strong> Formal system document
+<strong>Date:</strong> 2026-06-06
+<strong>Evidence Tier:</strong> [A] for all mathematical content; [S] for the framework reading
+<strong>Purpose:</strong> A single document that captures the complete log-coordinate realignment and its consequences for every object in the formal system.</p>
+<hr>
+<h2 id="1-the-two-symmetries-of-the-number-line">1. The Two Symmetries of the Number Line</h2>
+<p>The positive real line <code>ℝ₊ = (0, ∞)</code> carries two natural involutions — self-inverse symmetries that exchange the two boundary regions. [A]</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Additive symmetry</th>
+<th>Multiplicative symmetry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Map</strong></td>
+<td><code>x ↦ −x</code> (requires negative numbers)</td>
+<td><code>x ↦ 1/x</code> (stays in <code>ℝ₊</code>)</td>
+</tr>
+<tr>
+<td><strong>Fixed point</strong></td>
+<td><code>0</code></td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td><strong>Boundary exchange</strong></td>
+<td><code>+∞ ↔ −∞</code></td>
+<td><code>0 ↔ ∞</code></td>
+</tr>
+<tr>
+<td><strong>Natural coordinate</strong></td>
+<td><code>x</code> itself</td>
+<td><code>s = log x</code></td>
+</tr>
+<tr>
+<td><strong>Natural metric</strong></td>
+<td><code>\|x − 0\| = \|x\|</code></td>
+<td><code>\|log x\| = \|s\|</code></td>
+</tr>
+<tr>
+<td><strong>Identity element</strong></td>
+<td><code>0</code> (add nothing)</td>
+<td><code>1</code> (multiply by one)</td>
+</tr>
+</tbody>
+</table>
+<p>Under the logarithmic diffeomorphism <code>h : ℝ₊ → ℝ</code>, <code>h(x) = log x</code>:</p>
+<pre><code>h(1/x) = −log x = −h(x)
+</code></pre>
+<p><strong>The reciprocal map on ℝ₊ is the reflection map on ℝ.</strong> They are the same involution in two different coordinate charts. [A]</p>
+<hr>
+<h2 id="2-the-three-charts">2. The Three Charts</h2>
+<p>Three equivalent coordinate systems for the same structure. All diffeomorphic to each other. All fix the same point. [A]</p>
+<h3 id="chart-1-multiplicative-x-r">Chart 1: Multiplicative (<code>x ∈ ℝ₊</code>)</h3>
+<ul>
+<li>Inversion: <code>x ↦ 1/x</code></li>
+<li>Fixed point: <code>x = 1</code> (the only positive real satisfying <code>x = 1/x</code>)</li>
+<li>Boundaries: <code>x → 0⁺</code> (south pole) and <code>x → ∞</code> (north pole)</li>
+<li>Natural metric: <code>|log x|</code></li>
+</ul>
+<h3 id="chart-2-additive-s-log-x-r">Chart 2: Additive (<code>s = log x ∈ ℝ</code>)</h3>
+<ul>
+<li>Inversion: <code>s ↦ −s</code> (simple reflection through origin)</li>
+<li>Fixed point: <code>s = 0</code> (corresponds to <code>x = 1</code>)</li>
+<li>Boundaries: <code>s → −∞</code> (south pole) and <code>s → +∞</code> (north pole)</li>
+<li>Natural metric: <code>|s|</code></li>
+</ul>
+<p>This is the chart where the manifold identity becomes the <strong>zero sum</strong>:</p>
+<pre><code>φ · ν = 1    ⟹    log φ + log ν = 0    ⟹    s_φ + s_ν = 0
+</code></pre>
+<p>The two log-deviations from finity cancel exactly. The name "Zero-Sum Resolution Equation" is literal in this chart.</p>
+<h3 id="chart-3-bounded-hinge-u-x1x1-1-1">Chart 3: Bounded / Hinge (<code>u = (x−1)/(x+1) ∈ (−1, 1)</code>)</h3>
+<ul>
+<li>Inversion: <code>u ↦ −u</code> (half-twist about center)</li>
+<li>Fixed point: <code>u = 0</code> (corresponds to <code>x = 1</code>)</li>
+<li>Boundaries: <code>u → −1⁺</code> (south pole) and <code>u → +1⁻</code> (north pole)</li>
+<li>Natural metric: <code>|u|</code></li>
+</ul>
+<p>The Cayley transform compresses the entire positive real line into a bounded interval with finity at the center. This is the "Egg of Infinity" — both poles sit on the rim, unity at the center.</p>
+<h3 id="chart-equivalence-a">Chart equivalence [A]</h3>
+<pre><code>x = eˢ = (1+u)/(1−u)
+s = log x = 2 arctanh(u)
+u = tanh(s/2) = (x−1)/(x+1)
+</code></pre>
+<p>All three fix the same point (<code>x=1, s=0, u=0</code>). All three exchange the same poles. All three carry the same involution as <code>· ↦ − ·</code>.</p>
+<hr>
+<h2 id="3-every-framework-object-in-log-coordinates">3. Every Framework Object in Log Coordinates</h2>
+<h3 id="31-the-canonical-formula-block">3.1 The Canonical Formula Block</h3>
+<table>
+<thead>
+<tr>
+<th>Verbatim block</th>
+<th>Log form (<code>s = log ν</code>)</th>
+<th>Name in log chart</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>φ · ν = 1 on S²</code></td>
+<td><code>s_φ + s_ν = 0</code></td>
+<td><strong>Zero sum</strong> (literal)</td>
+</tr>
+<tr>
+<td><code>(φ − ν)² ≥ 0</code></td>
+<td><code>(eˢ − e⁻ˢ)² ≥ 0</code></td>
+<td>Squared deviation</td>
+</tr>
+<tr>
+<td><code>φ + ν ≥ 2</code></td>
+<td><code>eˢ + e⁻ˢ ≥ 2</code>, i.e. <code>2 cosh(s) ≥ 2</code></td>
+<td><strong>cosh bound</strong> (=2 iff s=0)</td>
+</tr>
+</tbody>
+</table>
+<p>The inequality <code>φ + ν ≥ 2</code> becomes <code>cosh(s) ≥ 1</code> — the elementary fact that the hyperbolic cosine is minimized at the origin. [A]</p>
+<h3 id="32-balance-energy-hamiltonian">3.2 Balance, Energy, Hamiltonian</h3>
+<table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Sphere form</th>
+<th>Log form</th>
+<th>Behaviour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Balance</strong> <code>B</code></td>
+<td><code>B = sin θ</code></td>
+<td><code>B = sech(s) = 1/cosh(s)</code></td>
+<td>Max <code>1</code> at <code>s=0</code>, → <code>0</code> at <code>s→±∞</code></td>
+</tr>
+<tr>
+<td><strong>Energy</strong> <code>E</code></td>
+<td><code>E = (log tan(θ/2))²</code></td>
+<td><code>E = s²</code></td>
+<td>Min <code>0</code> at <code>s=0</code>, → <code>+∞</code> at poles</td>
+</tr>
+<tr>
+<td><strong>Hamiltonian</strong> <code>H</code></td>
+<td><code>H = 2/sin θ</code></td>
+<td><code>H = 2 cosh(s)</code></td>
+<td>Min <code>2</code> at <code>s=0</code></td>
+</tr>
+<tr>
+<td><strong>Alignment energy</strong></td>
+<td><code>E = −log B</code></td>
+<td><code>E = log cosh(s)</code></td>
+<td>Min <code>0</code> at <code>s=0</code></td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>exact bijection</strong> between B and E: [A]</p>
+<pre><code>B = sech(√E)          E = (arcsech B)²
+</code></pre>
+<p>Near the equator: <code>E ≈ 2(1 − B)</code> — Suda's energy is twice the balance deficit to leading order.</p>
+<h3 id="33-the-titan-emblem">3.3 The Titan Emblem</h3>
+<pre><code>⊙ = • × ○     →     log ⊙ = log • + log ○     →     0 = (−∞) + (+∞)
+</code></pre>
+<p>In log coordinates, the emblematic equation becomes a statement about pole symmetry: the two infinities of the logarithmic line are exactly balanced around the origin. The void is at <code>s = −∞</code>, the unbounded at <code>s = +∞</code>, and finity sits at <code>s = 0</code> — equidistant from both.</p>
+<h3 id="34-the-extraction-coefficient">3.4 The Extraction Coefficient η</h3>
+<p>In log coordinates, η measures asymmetry of the log-deviation:</p>
+<pre><code>η ~ |s_extraction| / |s_contribution|
+</code></pre>
+<ul>
+<li>η &lt; 1: the system's log-extraction is less than its log-contribution → net movement toward equator</li>
+<li>η = 1: extraction equals contribution → trophic balance</li>
+<li>η &gt; 1: extraction exceeds contribution → net movement away from equator</li>
+<li>η → ∞: pure extraction, zero contribution → ground negation</li>
+</ul>
+<p>This reframes the moral axis as the <strong>sign of the log-deviation's time derivative</strong>: are you moving toward <code>s = 0</code> or away from it?</p>
+<hr>
+<h2 id="4-what-the-logarithmic-realignment-reveals">4. What the Logarithmic Realignment Reveals</h2>
+<h3 id="41-the-zero-sum-is-literal">4.1 The Zero Sum Is Literal</h3>
+<p>The framework's name has always been "Zero-Sum Resolution Equation." In log coordinates, this is not metaphorical. The manifold identity becomes <code>s_φ + s_ν = 0</code> — a literal zero sum. The two log-deviations from finity cancel exactly.</p>
+<h3 id="42-all-operations-simplify">4.2 All Operations Simplify</h3>
+<p>On the multiplicative (ordinary) line, the framework's operations are multiplicative:
+- Identity: <code>φ · ν = 1</code> (product of reciprocals)
+- Hamiltonian: <code>H = φ + 1/φ</code> (sum of a number and its reciprocal)
+- Balance: <code>B = sin θ</code> (trigonometric)</p>
+<p>On the logarithmic line, all of these become elementary:
+- Identity: <code>s + (−s) = 0</code> (sum of signed numbers)
+- Hamiltonian: <code>H = 2 cosh(s)</code> (hyperbolic cosine)
+- Balance: <code>B = sech(s)</code> (hyperbolic secant)</p>
+<p>The log chart does not change the content. It reveals that the content is <strong>hyperbolic</strong> — the natural geometry of the manifold in additive coordinates is hyperbolic, not trigonometric.</p>
+<h3 id="43-the-equator-is-the-origin">4.3 The Equator Is the Origin</h3>
+<p>In log coordinates, the equator (<code>φ = ν = 1, B = 1</code>) is <code>s = 0</code> — the origin of the additive line. Every direction is measured from it. Every distance is <code>|s|</code>. The ethic "move toward B = 1" becomes "move toward s = 0" — minimize your log-distance from finity.</p>
+<h3 id="44-the-two-poles-are-symmetric">4.4 The Two Poles Are Symmetric</h3>
+<p>On the additive line, 0 is the center and ∞ is unreachable. On the log line, 0 (<code>s = −∞</code>) and ∞ (<code>s = +∞</code>) are symmetric — equidistant from the center in opposite directions. This is the structural reason why the Titan emblem works: the two poles are not "zero and infinity" in an asymmetric sense; they are <code>−∞</code> and <code>+∞</code> on a line centered at finity.</p>
+<h3 id="45-the-old-model-is-the-zero-curvature-limit">4.5 The Old Model Is the Zero-Curvature Limit</h3>
+<p>The standard number line (0-centered, additive) is not wrong — it is the correct model for the operation of addition. But it is the <strong>zero-curvature limit</strong> of the richer structure. In the same way that a flat map is a projection of the curved Earth, the 0-centered line is a projection of the log-centered structure:</p>
+<pre><code>Standard line (0-centered, flat) = zero-curvature limit of log line (1-centered, curved)
+</code></pre>
+<p>The projection works locally (addition is fine near 0) but fails at the boundary (division by zero, 0 × ∞ indeterminate). The log line works everywhere because it centers on the point that is equidistant from both boundaries.</p>
+<hr>
+<h2 id="5-provenance">5. Provenance</h2>
+<p>The three-chart structure was independently derived by Minoru Suda (2025) in <em>Fractional Structure and Möbius Transformation Parts I–III</em>. The framework adopted Suda's formalisation in Trinity Canon §2a (2026-05-31) while maintaining priority on the underlying ideas (2024). The E–B bijection <code>B = sech(√E)</code> was proven as the bridge between Suda's apparatus and the framework's coordinates.</p>
+<p>See:
+- <a href="../../sources/"><code>00_THE_TRANSCENDENTAL_TRINITY_CANON.md</code></a> §2a — the formal bridge
+- <a href="../../sources/"><code>00_SUDA_CONVERGENT_RECIPROCAL_SYMMETRY.md</code></a> — convergent-source reference
+- <a href="../../sources/"><code>00_SUDA_VALUE_EXTRACTION_DEEP_SYNTHESIS.md</code></a> — full value extraction
+- <a href="../../sources/"><code>14_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md</code></a> — the earlier exploratory derivation note</p>
+<hr>
+<h2 id="6-discipline">6. Discipline</h2>
+<ol>
+<li><strong>The log chart does not replace the sphere.</strong> It is a coordinate chart on the sphere. The sphere S² remains the fundamental geometric object.</li>
+<li><strong>The log chart does not replace the verbatim block.</strong> The canonical formula block remains the verbatim block in multiplicative coordinates. The log form is a <em>re-expression</em>, not a <em>replacement</em>.</li>
+<li><strong>The mathematics is all [A].</strong> Nothing here is a new theorem. The contribution is the <em>reading</em> — that centering the number line at 1 in log coordinates makes the framework's entire structure elementary.</li>
+<li><strong>The ontological claim remains [I].</strong> That "1 is the center of the number line" is a mathematical truth in the multiplicative/logarithmic register <code>[A]</code>. That "this means finity is the center of Dasein" is an interpretive reading <code>[I]</code>.</li>
+</ol>
+<p>⊙ = • × ○</p>
+  </article>
+  <aside class="library-meta">
+    <span>[S] / [I] public rendered prose</span>
+    <span>Source: docs/handoff/formal-public/40_THE_LOGARITHMIC_REALIGNMENT.md</span>
+    <span>Generated by 12_PUBLIC_SITE/generate_public_library.py</span>
+  </aside>
+  <footer class="site-footer">
+    <div class="phi">⊙ = • × ○</div>
+    <p>Public doctrine surface · evidence tiers preserved</p>
+  </footer>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Will to Potential — Emergentism</title>
+<meta name="description" content="Teleology is the fifth force: the will to widen and lengthen the forward light cone. F5 / Ω on the Minkowski diagram." />
+
+<link rel="stylesheet" href="assets/css/xai.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="./">Emergentism</a>
+  <nav class="number-nav" aria-label="Public doctrine routes">
+    <a href="0/">0</a>
+    <a href="1/">1</a>
+    <a href="2/">2</a>
+    <a href="3/">3</a>
+    <a href="4/">4</a>
+    <a href="5/">5</a>
+    <a href="6/">6</a>
+    <a href="rosetta/">R</a>
+    <a href="soul-loop/">S</a>
+    <a href="atlas/">A</a>
+    <a href="read/">Read</a>
+  </nav>
+</header>
+<canvas id="scene"></canvas>
+<div class="vignette"></div>
+<span class="brand">Emergentism · The Will to Potential</span>
+<a class="exit" href="index.html">Enter the framework →</a>
+<div class="title">
+  <div class="h">Teleology is the Fifth Force</div>
+  <div class="s">The drive to <em>widen</em> and <em>lengthen</em> the forward light cone — more of space reachable, more of time endurable. F5 / Ω: the will to potential.</div>
+</div>
+<div class="meter"><span id="m-label">reachable future</span><div class="bar"><div class="fill" id="m-fill"></div></div></div>
+<div class="tier">[I] illustrative — a Minkowski image of F5/Ω routed through the L1 Teleology lane; not a literal settled-physics force.</div>
+<div id="fallback"><div class="g">↑</div><p style="max-width:40ch;line-height:1.7">WebGL could not start. Teleology is the fifth force: the will to widen and lengthen the forward light cone.</p><a href="index.html">Enter the framework →</a></div>
+
+<!-- Three.js is self-hosted under ./vendor/three-0.160.0/ — no external CDN.
+     Run ./predeploy_check.sh before deploy to verify zero remote dependencies. -->
+<script type="importmap">
+{ "imports": {
+  "three": "./vendor/three-0.160.0/three.module.js",
+  "three/addons/": "./vendor/three-0.160.0/"
+}}
+</script>
+<script type="module">
+let THREE, OrbitControls, EffectComposer, RenderPass, UnrealBloomPass;
+try {
+  THREE = await import('three');
+  ({ OrbitControls } = await import('three/addons/controls/OrbitControls.js'));
+  ({ EffectComposer } = await import('three/addons/postprocessing/EffectComposer.js'));
+  ({ RenderPass } = await import('three/addons/postprocessing/RenderPass.js'));
+  ({ UnrealBloomPass } = await import('three/addons/postprocessing/UnrealBloomPass.js'));
+} catch (e) { document.getElementById('fallback').style.display = 'flex'; throw e; }
+
+const GOLD = 0xc9a84c, TEAL = 0x3a7a6e, CRIMSON = 0x8b2e2e;
+const canvas = document.getElementById('scene');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight);
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(48, innerWidth/innerHeight, 0.1, 100);
+camera.position.set(3.6, 1.6, 5.2);
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true; controls.dampingFactor = 0.06; controls.enablePan = false;
+controls.target.set(0, 1.4, 0); controls.minDistance = 3.5; controls.maxDistance = 11;
+controls.autoRotate = true; controls.autoRotateSpeed = 0.5;
+let composer = null;
+try {
+  composer = new EffectComposer(renderer);
+  composer.addPass(new RenderPass(scene, camera));
+  composer.addPass(new UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), 0.85, 0.55, 0.16));
+} catch (e) { composer = null; }
+
+// spatial grid at t=0 (the present hyperplane)
+const grid = new THREE.GridHelper(8, 16, 0x222222, 0x161616);
+scene.add(grid);
+// time axis (vertical, +y = future)
+scene.add(new THREE.Line(
+  new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0,-2.4,0), new THREE.Vector3(0,4.4,0)]),
+  new THREE.LineBasicMaterial({ color: 0x3a3a3a })));
+// the present event
+scene.add(new THREE.Mesh(new THREE.SphereGeometry(0.07, 20, 20), new THREE.MeshBasicMaterial({ color: GOLD })));
+
+// the forward light cone (rebuilt each frame as it widens + lengthens)
+const RINGS = 5, SPOKES = 48;
+const coneMat = new THREE.LineBasicMaterial({ color: GOLD, transparent: true, opacity: 0.9 });
+const coneGeo = new THREE.BufferGeometry();
+const cone = new THREE.LineSegments(coneGeo, coneMat);
+scene.add(cone);
+// glowing interior (a translateable cone mesh)
+const fillMat = new THREE.MeshBasicMaterial({ color: GOLD, transparent: true, opacity: 0.05, side: THREE.DoubleSide });
+const fill = new THREE.Mesh(new THREE.ConeGeometry(1, 1, 48, 1, true), fillMat);
+scene.add(fill);
+// a faint past cone (downward, dim)
+const pastMat = new THREE.LineBasicMaterial({ color: TEAL, transparent: true, opacity: 0.25 });
+const past = new THREE.LineSegments(new THREE.BufferGeometry(), pastMat);
+scene.add(past);
+// the worldline rising up the time axis
+const wl = new THREE.Line(new THREE.BufferGeometry(), new THREE.LineBasicMaterial({ color: 0xe8e4df, transparent:true, opacity:0.5 }));
+scene.add(wl);
+
+function coneSegments(height, angle, dir){ // dir +1 future, -1 past
+  const r = height * Math.tan(angle), segs = [];
+  for (let k = 1; k <= RINGS; k++){
+    const h = (k / RINGS) * height, rr = (k / RINGS) * r, y = dir * h;
+    for (let i = 0; i < SPOKES; i++){
+      const a0 = i/SPOKES*Math.PI*2, a1 = (i+1)/SPOKES*Math.PI*2;
+      segs.push(rr*Math.cos(a0), y, rr*Math.sin(a0), rr*Math.cos(a1), y, rr*Math.sin(a1)); // ring
+    }
+  }
+  for (let i = 0; i < SPOKES; i += 3){ // spokes from apex to rim
+    const a = i/SPOKES*Math.PI*2;
+    segs.push(0,0,0, r*Math.cos(a), dir*height, r*Math.sin(a));
+  }
+  return new Float32Array(segs);
+}
+
+const mFill = document.getElementById('m-fill'), mLabel = document.getElementById('m-label');
+const clock = new THREE.Clock(); let t = 0;
+function animate(){
+  requestAnimationFrame(animate);
+  t += clock.getDelta();
+  // F5 drive: the cone widens (angle) and lengthens (height) on an eased cycle, then resets
+  const cyc = (Math.sin(t * 0.32) + 1) / 2;            // 0..1 breathing
+  const ease = cyc * cyc * (3 - 2 * cyc);
+  const angle = (18 + ease * 26) * Math.PI / 180;       // 18°..44° (widen)
+  const height = 1.3 + ease * 2.4;                       // lengthen
+  coneGeo.setAttribute('position', new THREE.BufferAttribute(coneSegments(height, angle, 1), 3));
+  coneGeo.attributes.position.needsUpdate = true;
+  past.geometry.setAttribute('position', new THREE.BufferAttribute(coneSegments(height*0.55, angle, -1), 3));
+  past.geometry.attributes.position.needsUpdate = true;
+  // interior glow cone matches
+  fill.geometry.dispose();
+  fill.geometry = new THREE.ConeGeometry(height*Math.tan(angle), height, 48, 1, true);
+  fill.position.y = height/2;                            // apex at origin, opens up
+  fill.rotation.x = Math.PI;                             // point apex down to origin
+  // worldline
+  const pts = [];
+  for (let i = 0; i <= 40; i++){ const y = i/40 * height; pts.push(new THREE.Vector3(Math.sin(y*2)*0.06, y, Math.cos(y*2)*0.06)); }
+  wl.geometry.setFromPoints(pts);
+  // meter
+  const reach = ease; mFill.style.width = (20 + reach*80) + '%';
+  mLabel.textContent = reach > 0.85 ? 'reachable future → widening' : 'reachable future';
+  controls.update();
+  if (composer) composer.render(); else renderer.render(scene, camera);
+}
+animate();
+addEventListener('resize', () => {
+  camera.aspect = innerWidth/innerHeight; camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+  if (composer) composer.setSize(innerWidth, innerHeight);
+});
+</script>
+</body>
+</html>

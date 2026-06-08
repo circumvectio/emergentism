@@ -1,0 +1,50 @@
+---
+rosetta:
+  primary_level: L4
+  primary_column: Script Operations
+  secondary:
+    - level: L3
+      column: Script Audit
+      role: "require dated receipts for generated output, runtime changes, and deployment claims"
+    - level: L5
+      column: Tooling Architecture
+      role: "route large reusable logic to packages and simulations rather than one-file scripts"
+    - level: L6
+      column: Source Boundary
+      role: "keep script output subordinate to the owning source lane"
+  operator: "Arjuna ⚔"
+  tier: "God"
+  regime: "Kṣatriya"
+  register: "[B/I]"
+  canonical_phrase: "01_SCRIPTS — Agent Routing"
+title: "01_SCRIPTS — Agent Routing"
+status: "ACTIVE — script route card"
+evidence_tier: "[B] where scripts produce dated receipts; [I] for route-control synthesis."
+---
+
+# 01_SCRIPTS — Agent Routing
+
+**Lane scope:** General-purpose repository scripts.
+**Primary lead:** `L4 Kṣatriya`
+**Support:** L3 Vaiśya, L5 Brāhmaṇa, L6 Sādhu
+**Evidence tier:** `[B]` where a script produces dated output, tests, or git receipts; `[I]` for route-control synthesis; require explicit `[D]` / `[C]` labels for draft or conjectural tooling claims.
+
+## Read First
+
+- `README.md`
+- [`../AGENTS.md`](../AGENTS.md)
+
+## Routing Law
+
+- This lane inherits the Emergentism source stack; preserve its local folder authority and route claims back to the owning lane.
+- Inherit local lane authority from [`../AGENTS.md`](../AGENTS.md).
+- Route law inherits from root and owner-lane AGENTS; use [`00_INDEX.md`](../../11_UPLINK/00_CORE/00_INDEX.md) for compressed orientation, not upstream authority.
+- Use the current `[A/B/S/I/D/C]` evidence ladder; deployment or architecture claims need a `[B]` receipt or an explicit `[D]` / `[C]` label.
+
+## Constraints
+
+- Do not upgrade runtime claims without dated proof artifacts.
+- Do not treat draft specs as public-facing claims.
+- All irreversible actions require K2 envelope staging.
+
+Zero-Sum Resolution Equation

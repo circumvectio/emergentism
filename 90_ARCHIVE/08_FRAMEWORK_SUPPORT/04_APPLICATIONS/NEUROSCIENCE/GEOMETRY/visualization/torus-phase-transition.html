@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Torus to Sphere Light Cone — Phase Transition</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Google+Sans+Mono:wght@400;500&family=Google+Sans+Text:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@300;400;500&display=swap');
+
+:root {
+  --bg: #0a0a0f;
+  --surface: rgba(15, 15, 22, 0.88);
+  --border: rgba(255, 255, 255, 0.07);
+  --yellow: #FFEB3B;
+  --yellow-light: #FFF176;
+  --yellow-dark: #FBC02D;
+  --yellow-dim: rgba(255, 235, 59, 0.35);
+  --yellow-glow: rgba(255, 235, 59, 0.12);
+  --gold: #FFD54F;
+  --red: #F44336;
+  --red-light: #EF5350;
+  --green: #4CAF50;
+  --green-light: #66BB6A;
+  --blue: #2196F3;
+  --blue-light: #42A5F5;
+  --purple: #AB47BC;
+  --text: #FAFAFA;
+  --text-secondary: rgba(250, 250, 250, 0.6);
+  --text-disabled: rgba(250, 250, 250, 0.3);
+  --text-hint: rgba(250, 250, 250, 0.15);
+  --font-display: 'Google Sans', 'Inter', system-ui, sans-serif;
+  --font-body: 'Google Sans Text', 'Inter', system-ui, sans-serif;
+  --font-mono: 'Google Sans Mono', 'Roboto Mono', ui-monospace, monospace;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  cursor: grab;
+  -webkit-font-smoothing: antialiased;
+}
+body:active { cursor: grabbing; }
+canvas { display: block; }
+
+/* MASTHEAD */
+.masthead {
+  position: fixed;
+  top: 28px;
+  left: 32px;
+  z-index: 10;
+  pointer-events: none;
+}
+.masthead h1 {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--text);
+  opacity: 0.8;
+  line-height: 1;
+}
+.masthead .equation {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--yellow);
+  opacity: 0.5;
+  margin-top: 6px;
+  letter-spacing: 0.18em;
+}
+
+/* TOPOLOGY BADGE */
+.topology-badge {
+  position: fixed;
+  top: 32px;
+  right: 32px;
+  z-index: 10;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--yellow-light);
+  opacity: 0.6;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+}
+
+.phase-panel {
+  position: fixed;
+  top: 64px;
+  right: 32px;
+  z-index: 10;
+  width: 340px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(12, 12, 18, 0.82);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  pointer-events: none;
+}
+.phase-panel .phase-title {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--yellow-light);
+  letter-spacing: 0.02em;
+  opacity: 0.9;
+}
+.phase-panel .phase-copy {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+.phase-panel .phase-stack {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 5px 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-disabled);
+}
+.phase-panel .phase-stack strong {
+  color: var(--yellow);
+  font-weight: 500;
+}
+
+/* INSTRUMENT BAR */
+.instrument-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+  padding: 20px 32px 24px;
+  background: linear-gradient(to top, rgba(10,10,15,0.96) 0%, rgba(10,10,15,0.75) 50%, transparent 100%);
+  pointer-events: none;
+}
+.instrument-bar > * { pointer-events: auto; }
+
+.time-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  width: 140px;
+}
+.time-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-disabled);
+}
+.time-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 80px;
+  height: 2px;
+  background: var(--border);
+  border-radius: 1px;
+  outline: none;
+  cursor: pointer;
+}
+.time-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  background: var(--text-disabled);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.time-slider::-webkit-slider-thumb:hover {
+  background: var(--text-secondary);
+}
+.time-value {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-hint);
+  width: 30px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.beta-instrument {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.beta-track-container {
+  position: relative;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.beta-track-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.beta-track-fill {
+  position: absolute;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--yellow-dim) 0%, var(--yellow) 100%);
+  border-radius: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 14px var(--yellow-glow);
+  transition: width 0.04s linear;
+}
+.beta-thumb {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: var(--yellow);
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: grab;
+  box-shadow: 0 0 16px rgba(255, 235, 59, 0.45), 0 0 4px rgba(255, 235, 59, 0.7);
+  transition: box-shadow 0.15s;
+  z-index: 2;
+  pointer-events: none;
+}
+.beta-track-container:hover .beta-thumb {
+  box-shadow: 0 0 24px rgba(255, 235, 59, 0.65), 0 0 6px rgba(255, 235, 59, 0.9);
+}
+.beta-track-container:active .beta-thumb {
+  cursor: grabbing;
+  box-shadow: 0 0 36px rgba(255, 235, 59, 0.85), 0 0 10px rgba(255, 235, 59, 1);
+}
+
+.beta-readouts {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+.readout {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+.readout-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--text-disabled);
+}
+.readout-value {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--yellow);
+  opacity: 0.75;
+  font-variant-numeric: tabular-nums;
+  min-width: 40px;
+}
+
+.layers-btn {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-disabled);
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+  margin-bottom: 8px;
+}
+.layers-btn:hover {
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-secondary);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.layer-panel {
+  position: fixed;
+  bottom: 90px;
+  right: 32px;
+  z-index: 11;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 18px;
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.layer-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-secondary);
+  transition: color 0.12s;
+}
+.layer-toggle:hover { color: var(--text); }
+.layer-toggle input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.12s;
+}
+.layer-toggle input[type="checkbox"]:checked {
+  background: var(--yellow-glow);
+  border-color: var(--yellow-dim);
+}
+.layer-toggle input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 5px;
+  height: 9px;
+  border: solid var(--yellow);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* 3D label overlay */
+#torus-labels-3d {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+  overflow: hidden;
+}
+#torus-labels-3d span {
+  position: absolute;
+  font-family: 'Google Sans', 'Inter', system-ui, sans-serif;
+  text-shadow: 0 0 8px rgba(0,0,0,0.9);
+  white-space: nowrap;
+}
+
+/* Flash overlay */
+#mu-flash-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  background: white;
+  opacity: 0;
+}
+</style>
+</head>
+<body>
+
+<!-- Masthead -->
+<div class="masthead">
+  <h1>Torus to Sphere Light Cone</h1>
+  <div class="equation">ds&sup2; = 0</div>
+</div>
+
+<!-- Topology Badge -->
+<div class="topology-badge" id="badge"></div>
+<div class="phase-panel" id="phase-panel"></div>
+
+<!-- 3D Label overlay container -->
+<div id="torus-labels-3d"></div>
+
+<!-- Flash overlay -->
+<div id="mu-flash-overlay"></div>
+
+<!-- Instrument Bar -->
+<div class="instrument-bar" id="instrument-bar">
+  <!-- Time slider -->
+  <div class="time-control">
+    <label class="time-label">ct</label>
+    <input type="range" class="time-slider" id="time-slider" min="-1" max="1" step="0.01" value="0">
+    <span class="time-value" id="time-value">0.00</span>
+  </div>
+
+  <!-- Beta slider with relativistic friction -->
+  <div class="beta-instrument">
+    <div class="beta-track-container" id="beta-track" style="touch-action:none">
+      <div class="beta-track-bg"></div>
+      <div class="beta-track-fill" id="beta-fill"></div>
+      <div class="beta-thumb" id="beta-thumb"></div>
+    </div>
+    <div class="beta-readouts">
+      <div class="readout"><span class="readout-label">&beta;</span><span class="readout-value" id="rd-beta">0</span></div>
+      <div class="readout"><span class="readout-label">&gamma;</span><span class="readout-value" id="rd-gamma">1.00</span></div>
+      <div class="readout"><span class="readout-label">&phi;</span><span class="readout-value" id="rd-phi">0.00</span></div>
+      <div class="readout"><span class="readout-label">R/&gamma;</span><span class="readout-value" id="rd-reff">1.000</span></div>
+    </div>
+  </div>
+
+  <!-- Layers toggle -->
+  <button class="layers-btn" id="layers-btn" title="Toggle layers">&#9776;</button>
+</div>
+
+<!-- Layer Panel (hidden by default) -->
+<div class="layer-panel" id="layer-panel" style="display:none"></div>
+
+<!-- Three.js from CDN -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+// ═══════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════
+const state = {
+  beta: 0,
+  time: 0,
+  phase: 'torus', // 'torus' | 'flash' | 'sphere'
+  gamma: 1,
+  rEff: 1,
+  rapidity: 0,
+  muLimit: false,
+  renderRate: 1,
+  heat: 0,
+  torusOpacity: 0.22,
+
+  showTorus: true,
+  showGeodesics: true,
+  showSlice: true,
+  showAxes: true,
+  showVertex: true,
+  showWorldLines: true,
+  showHyperbolas: true,
+  showRegions: true,
+  wireframe: false,
+};
+
+function computePhysics(beta) {
+  const clamped = Math.min(beta, 1);
+  const atLimit = clamped >= 1;
+  const gamma = atLimit ? Infinity : 1 / Math.sqrt(1 - clamped * clamped);
+  const rEff = atLimit ? 0 : 1 / gamma;
+  const rapidity = atLimit ? Infinity : Math.atanh(clamped);
+  const muLimit = rEff < 0.01;
+  const renderRate = atLimit ? 0 : 1 + rapidity * 2;
+  const heat = Math.min(1, (gamma === Infinity ? 7 : gamma - 1) / 6);
+  return { gamma, rEff, rapidity, muLimit, renderRate, heat };
+}
+
+function setBeta(beta) {
+  const clamped = Math.max(0, Math.min(1, beta));
+  const physics = computePhysics(clamped);
+  Object.assign(state, { beta: clamped, ...physics });
+
+  if (physics.muLimit && state.phase === 'torus') {
+    state.phase = 'flash';
+    flashStartTime = clock.getElapsedTime();
+    setTimeout(() => { if (state.phase === 'flash') state.phase = 'sphere'; }, 1500);
+  } else if (!physics.muLimit && state.phase !== 'torus') {
+    state.phase = 'torus';
+  }
+
+  needsRebuild = true;
+}
+
+let needsRebuild = true;
+let flashStartTime = null;
+
+// ═══════════════════════════════════════
+// THREE.JS SETUP
+// ═══════════════════════════════════════
+const clock = new THREE.Clock();
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x050508);
+scene.fog = new THREE.FogExp2(0x050508, 0.06);
+
+const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 100);
+camera.position.set(4, 3.5, 4);
+camera.lookAt(0, 1, 0);
+
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.0;
+document.body.prepend(renderer.domElement);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.target.set(0, 1, 0);
+controls.enableDamping = true;
+controls.dampingFactor = 0.05;
+controls.minDistance = 2;
+controls.maxDistance = 20;
+controls.update();
+
+// Lighting
+const ambient = new THREE.AmbientLight(0xffffff, 0.4);
+scene.add(ambient);
+const dirLight = new THREE.DirectionalLight(0xffffff, 0.8);
+dirLight.position.set(5, 10, 5);
+scene.add(dirLight);
+const pointLight = new THREE.PointLight(0xffd54f, 0.5, 15);
+pointLight.position.set(0, 1, 0);
+scene.add(pointLight);
+
+window.addEventListener('resize', () => {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+});
+
+// ═══════════════════════════════════════
+// GEOMETRY HELPERS
+// ═══════════════════════════════════════
+function createTorusGeometry(rEff, segU = 80, segV = 48) {
+  const R = rEff, r = 1;
+  const positions = [], normals = [], indices = [];
+  for (let j = 0; j <= segV; j++) {
+    const v = (j / segV) * Math.PI * 2;
+    for (let i = 0; i <= segU; i++) {
+      const u = (i / segU) * Math.PI * 2;
+      positions.push((R + r * Math.cos(v)) * Math.cos(u), 1 + r * Math.sin(v), (R + r * Math.cos(v)) * Math.sin(u));
+      const nx = Math.cos(v) * Math.cos(u), ny = Math.sin(v), nz = Math.cos(v) * Math.sin(u);
+      const nl = Math.sqrt(nx*nx + ny*ny + nz*nz) || 1;
+      normals.push(nx/nl, ny/nl, nz/nl);
+    }
+  }
+  for (let j = 0; j < segV; j++) {
+    for (let i = 0; i < segU; i++) {
+      const a = j * (segU + 1) + i, b = a + 1, c = a + (segU + 1), d = c + 1;
+      indices.push(a, b, c, b, d, c);
+    }
+  }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+  geo.setAttribute('normal', new THREE.Float32BufferAttribute(normals, 3));
+  geo.setIndex(indices);
+  return geo;
+}
+
+function mkLine(from, to, color, opacity) {
+  const geo = new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(...from), new THREE.Vector3(...to)]);
+  return new THREE.Line(geo, new THREE.LineBasicMaterial({ color, transparent: true, opacity }));
+}
+
+// ═══════════════════════════════════════
+// SCENE GROUPS
+// ═══════════════════════════════════════
+const groups = {
+  torus: new THREE.Group(),
+  geodesics: new THREE.Group(),
+  particles: new THREE.Group(),
+  overlapGlow: new THREE.Group(),
+  slice: new THREE.Group(),
+  axes: new THREE.Group(),
+  worldLines: new THREE.Group(),
+  causal: new THREE.Group(),
+  hyperbolas: new THREE.Group(),
+  collapseRings: new THREE.Group(),
+  riemann: new THREE.Group(),
+  eventMarker: new THREE.Group(),
+};
+Object.values(groups).forEach(g => scene.add(g));
+
+// ── Torus Shell ──
+let torusSolidMesh = null, torusWireMesh = null;
+
+function rebuildTorus() {
+  groups.torus.clear();
+  const R = Math.max(0, state.rEff);
+  const geo = createTorusGeometry(R);
+  const col = new THREE.Color(0xffd54f).lerp(new THREE.Color(0xffffff), state.heat);
+  if (state.muLimit) col.set(0xffffff);
+
+  // Solid
+  if (!state.wireframe) {
+    torusSolidMesh = new THREE.Mesh(geo, new THREE.MeshPhysicalMaterial({
+      color: col,
+      transparent: true,
+      opacity: state.muLimit ? 0.6 : state.torusOpacity + state.heat * 0.1,
+      roughness: state.muLimit ? 0 : 0.3 - state.heat * 0.2,
+      metalness: state.muLimit ? 0.8 : 0.1 + state.heat * 0.4,
+      side: THREE.DoubleSide,
+      depthWrite: false,
+      emissive: state.muLimit ? new THREE.Color(0xffd54f) : new THREE.Color(0x000000),
+      emissiveIntensity: state.muLimit ? 0.3 : 0,
+    }));
+    groups.torus.add(torusSolidMesh);
+  }
+  // Wireframe overlay
+  torusWireMesh = new THREE.Mesh(geo, new THREE.MeshBasicMaterial({
+    color: col,
+    wireframe: true,
+    transparent: true,
+    opacity: state.wireframe ? 0.2 : state.muLimit ? 0.15 : 0.05 + state.heat * 0.08,
+    depthWrite: false,
+  }));
+  groups.torus.add(torusWireMesh);
+}
+
+// ── Geodesics ──
+const NUM_GEODESICS = 8, POINTS_PER = 400;
+let geodesicLines = [];
+
+function rebuildGeodesics() {
+  groups.geodesics.clear();
+  geodesicLines = [];
+  const R = Math.max(0.001, state.rEff), r = 1;
+  const windingRatio = 1 + R * 0.5;
+
+  for (let chirality = 0; chirality < 2; chirality++) {
+    const sign = chirality === 0 ? 1 : -1;
+    const isCW = chirality === 0;
+    for (let g = 0; g < NUM_GEODESICS; g++) {
+      const pts = [];
+      const ph = (g / NUM_GEODESICS) * Math.PI * 2;
+      for (let i = 0; i < POINTS_PER; i++) {
+        const tt = (i / POINTS_PER) * Math.PI * 4;
+        const u = ph + sign * tt, v = tt * windingRatio;
+        pts.push(new THREE.Vector3((R + r * Math.cos(v)) * Math.cos(u), 1 + r * Math.sin(v), (R + r * Math.cos(v)) * Math.sin(u)));
+      }
+      const geo = new THREE.BufferGeometry().setFromPoints(pts);
+      const mat = new THREE.LineBasicMaterial({ color: 0xffd54f, transparent: true, opacity: isCW ? 0.4 : 0.15, depthWrite: false });
+      const line = new THREE.Line(geo, mat);
+      groups.geodesics.add(line);
+      geodesicLines.push(line);
+    }
+  }
+}
+
+// ── Particles ──
+const PARTICLE_COUNT = 200;
+const particlePositions = new Float32Array(PARTICLE_COUNT * 3);
+const particlePhases = new Float32Array(PARTICLE_COUNT * 2);
+let pointsObj = null;
+
+function initParticles() {
+  for (let i = 0; i < PARTICLE_COUNT; i++) {
+    particlePhases[i * 2] = Math.random() * Math.PI * 2;
+    particlePhases[i * 2 + 1] = Math.random() * Math.PI * 2;
+    particlePositions[i * 3 + 1] = -999;
+  }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.Float32BufferAttribute(particlePositions, 3));
+  const mat = new THREE.PointsMaterial({
+    color: 0xffd54f, size: 0.025, transparent: true, opacity: 0,
+    depthWrite: false, blending: THREE.AdditiveBlending,
+  });
+  pointsObj = new THREE.Points(geo, mat);
+  groups.particles.add(pointsObj);
+}
+
+// ── Overlap Glow ──
+let coreGlow, flashSphere;
+
+function initOverlapGlow() {
+  coreGlow = new THREE.Mesh(
+    new THREE.SphereGeometry(0.3, 32, 32),
+    new THREE.MeshBasicMaterial({ color: 0xffd54f, transparent: true, opacity: 0, depthWrite: false, blending: THREE.AdditiveBlending })
+  );
+  coreGlow.visible = false;
+  groups.overlapGlow.add(coreGlow);
+
+  flashSphere = new THREE.Mesh(
+    new THREE.SphereGeometry(1, 32, 32),
+    new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0, depthWrite: false, side: THREE.BackSide })
+  );
+  flashSphere.visible = false;
+  groups.overlapGlow.add(flashSphere);
+}
+
+// ── Simultaneity Slice ──
+let slicePlane;
+
+function rebuildSlice() {
+  groups.slice.clear();
+  const ct = state.time;
+
+  // Plane
+  slicePlane = new THREE.Mesh(
+    new THREE.PlaneGeometry(6, 6),
+    new THREE.MeshBasicMaterial({ color: 0xab47bc, transparent: true, opacity: 0.05, side: THREE.DoubleSide, depthWrite: false })
+  );
+  slicePlane.position.set(0, 1 + ct, 0);
+  slicePlane.rotation.set(-Math.PI / 2, 0, 0);
+  groups.slice.add(slicePlane);
+
+  // Rings
+  if (Math.abs(ct) <= 0.999) {
+    const v1 = Math.asin(Math.max(-1, Math.min(1, ct)));
+    const v2 = Math.PI - v1;
+    const R = Math.max(0.001, state.rEff);
+    for (const v of [v1, v2]) {
+      const rr = R + Math.cos(v);
+      if (rr < 0.01) continue;
+      const pts = [];
+      for (let i = 0; i <= 128; i++) {
+        const u = (i / 128) * Math.PI * 2;
+        pts.push(new THREE.Vector3(rr * Math.cos(u), 1 + ct, rr * Math.sin(u)));
+      }
+      const geo = new THREE.BufferGeometry().setFromPoints(pts);
+      groups.slice.add(new THREE.Line(geo, new THREE.LineBasicMaterial({ color: 0xab47bc, transparent: true, opacity: 0.9 })));
+    }
+  }
+}
+
+// ── Axes ──
+function buildAxes() {
+  groups.axes.clear();
+  const Y = 0xffeb3b, B = 0x2196f3, G = 0x4caf50;
+  const lines = [
+    mkLine([0, -1.5, 0], [0, 3.5, 0], Y, 0.5),
+    mkLine([-0.08, 3.34, 0], [0, 3.5, 0], Y, 0.5),
+    mkLine([0.08, 3.34, 0], [0, 3.5, 0], Y, 0.5),
+    mkLine([-4, 1, 0], [4, 1, 0], B, 0.4),
+    mkLine([3.84, 1.08, 0], [4, 1, 0], B, 0.4),
+    mkLine([3.84, 0.92, 0], [4, 1, 0], B, 0.4),
+    mkLine([0, 1, -4], [0, 1, 4], G, 0.3),
+  ];
+  for (const t of [-2, -1, 1, 2]) lines.push(mkLine([-0.06, 1 + t, 0], [0.06, 1 + t, 0], Y, 0.3));
+  for (const x of [-3, -2, -1, 1, 2, 3]) lines.push(mkLine([x, 0.94, 0], [x, 1.06, 0], B, 0.25));
+  lines.forEach(l => groups.axes.add(l));
+}
+
+// ── World Lines ──
+const NUM_BRANCHES = 14;
+let worldLineObjs = [];
+
+function rebuildWorldLines() {
+  groups.worldLines.clear();
+  worldLineObjs = [];
+  const R = Math.max(0.001, state.rEff), r = 1;
+
+  for (let past = 0; past < 2; past++) {
+    for (let bi = 0; bi < NUM_BRANCHES; bi++) {
+      const pts = [];
+      const toroidalOff = (bi / NUM_BRANCHES) * Math.PI * 2;
+      const drift = 0.2 + (((bi * 7 + 3) % 11) / 11) * 0.6;
+      for (let i = 0; i <= 100; i++) {
+        const t = i / 100;
+        const phiRange = past ? -Math.PI * 0.9 : Math.PI * 0.9;
+        const phi = t * phiRange;
+        const theta = toroidalOff + drift * t * Math.PI * 0.5;
+        pts.push(new THREE.Vector3((R + r * Math.cos(phi)) * Math.cos(theta), 1 + r * Math.sin(phi), (R + r * Math.cos(phi)) * Math.sin(theta)));
+      }
+      const col = new THREE.Color();
+      if (past) col.setHSL(0.58 + bi * 0.005, 0.5, 0.55);
+      else col.setHSL(0.06 + bi * 0.006, 0.6, 0.6);
+      const geo = new THREE.BufferGeometry().setFromPoints(pts);
+      const mat = new THREE.LineBasicMaterial({ color: col, transparent: true, opacity: past ? 0.08 : 0.1, depthWrite: false });
+      const line = new THREE.Line(geo, mat);
+      groups.worldLines.add(line);
+      worldLineObjs.push(line);
+    }
+  }
+}
+
+// ── Causal Regions ──
+function buildCausalRegions() {
+  groups.causal.clear();
+  // Future cone
+  const futCone = new THREE.Mesh(
+    new THREE.CylinderGeometry(0.01, 1.8, 1.8, 64, 1, true),
+    new THREE.MeshBasicMaterial({ color: 0xf44336, transparent: true, opacity: 0.04, side: THREE.DoubleSide, depthWrite: false })
+  );
+  futCone.position.set(0, 0.9, 0);
+  groups.causal.add(futCone);
+  // Past cone
+  const pastCone = new THREE.Mesh(
+    new THREE.CylinderGeometry(1.8, 0.01, 1.8, 64, 1, true),
+    new THREE.MeshBasicMaterial({ color: 0x2196f3, transparent: true, opacity: 0.04, side: THREE.DoubleSide, depthWrite: false })
+  );
+  pastCone.position.set(0, -0.9, 0);
+  groups.causal.add(pastCone);
+}
+
+// ── Hyperbolas ──
+function buildHyperbolas() {
+  groups.hyperbolas.clear();
+  function mkH(pts, col, op) {
+    const geo = new THREE.BufferGeometry().setFromPoints(pts);
+    return new THREE.Line(geo, new THREE.LineBasicMaterial({ color: col, transparent: true, opacity: op, depthWrite: false }));
+  }
+  // Spacelike
+  for (const s of [0.5, 1, 1.5]) {
+    const pts = [], ptsN = [];
+    for (let i = 0; i <= 100; i++) {
+      const ct = -2 + (i / 100) * 4;
+      const x = Math.sqrt(s * s + ct * ct);
+      pts.push(new THREE.Vector3(x, 1 + ct, 0));
+      ptsN.push(new THREE.Vector3(-x, 1 + ct, 0));
+    }
+    groups.hyperbolas.add(mkH(pts, 0x2196f3, 0.15));
+    groups.hyperbolas.add(mkH(ptsN, 0x2196f3, 0.15));
+  }
+  // Timelike
+  for (const s of [0.5, 1, 1.5]) {
+    const pF = [], pP = [];
+    for (let i = 0; i <= 100; i++) {
+      const x = -2 + (i / 100) * 4;
+      const ct = Math.sqrt(s * s + x * x);
+      pF.push(new THREE.Vector3(x, 1 + ct, 0));
+      pP.push(new THREE.Vector3(x, 1 - ct, 0));
+    }
+    groups.hyperbolas.add(mkH(pF, 0xf44336, 0.12));
+    groups.hyperbolas.add(mkH(pP, 0x00bcd4, 0.12));
+  }
+}
+
+// ── Collapse Rings ──
+const NUM_RINGS = 3;
+let collapseRingMeshes = [];
+
+function initCollapseRings() {
+  collapseRingMeshes = [];
+  for (let i = 0; i < NUM_RINGS; i++) {
+    const ring = new THREE.Mesh(
+      new THREE.RingGeometry(0.01, 0.05, 64),
+      new THREE.MeshBasicMaterial({ color: 0xffd54f, transparent: true, opacity: 0, side: THREE.DoubleSide, depthWrite: false })
+    );
+    ring.rotation.set(-Math.PI / 2, 0, 0);
+    groups.collapseRings.add(ring);
+    collapseRingMeshes.push(ring);
+  }
+}
+
+// ── Riemann Sphere ──
+let riemannMesh;
+
+function buildRiemann() {
+  groups.riemann.clear();
+  riemannMesh = new THREE.Mesh(
+    new THREE.SphereGeometry(1, 48, 48),
+    new THREE.MeshPhysicalMaterial({ color: 0x42a5f5, transparent: true, opacity: 0.04, roughness: 0.6, side: THREE.DoubleSide, depthWrite: false })
+  );
+  riemannMesh.position.set(0, 1, 0);
+  groups.riemann.add(riemannMesh);
+}
+
+// ── Event Marker ──
+let innerGlow, outerHalo;
+
+function initEventMarker() {
+  innerGlow = new THREE.Mesh(
+    new THREE.SphereGeometry(1, 24, 24),
+    new THREE.MeshBasicMaterial({ color: 0xffeb3b, transparent: true, opacity: 0.15, depthWrite: false, blending: THREE.AdditiveBlending })
+  );
+  groups.eventMarker.add(innerGlow);
+  outerHalo = new THREE.Mesh(
+    new THREE.SphereGeometry(1, 24, 24),
+    new THREE.MeshBasicMaterial({ color: 0xffeb3b, transparent: true, opacity: 0.05, depthWrite: false, blending: THREE.AdditiveBlending })
+  );
+  groups.eventMarker.add(outerHalo);
+}
+
+// ═══════════════════════════════════════
+// BUILD ALL STATIC ELEMENTS
+// ═══════════════════════════════════════
+buildAxes();
+buildCausalRegions();
+buildHyperbolas();
+initParticles();
+initOverlapGlow();
+initCollapseRings();
+buildRiemann();
+initEventMarker();
+
+function rebuildAll() {
+  rebuildTorus();
+  rebuildGeodesics();
+  rebuildSlice();
+  rebuildWorldLines();
+  // Riemann sphere visibility
+  groups.riemann.visible = state.rEff > 0.3;
+}
+rebuildAll();
+
+// ═══════════════════════════════════════
+// 3D LABELS
+// ═══════════════════════════════════════
+const labelContainer = document.getElementById('torus-labels-3d');
+const labelDefs = [
+  { id: 'ct', text: 'ct', pos: [0.15, 3.65, 0], color: '#FFEB3B', size: 15 },
+  { id: 'x', text: 'x', pos: [4.2, 1.1, 0], color: '#42A5F5', size: 13 },
+  { id: 'y', text: 'y', pos: [0.1, 1, 4.2], color: '#66BB6A', size: 12 },
+  { id: 'event', text: '\u2299 Collapse', pos: [0.2, 1.15, 0], color: '#FFEB3B', size: 13 },
+  { id: 'future', text: '\u25CB |\u03C8\u27E9 futures', pos: [0.15, 2.7, 0], color: '#EF5350', size: 11 },
+  { id: 'past', text: '\u2022 |\u03C8\u27E9 pasts', pos: [0.15, -0.7, 0], color: '#42A5F5', size: 11 },
+  { id: 'spacelike', text: 'Spacelike', pos: [2.5, 1.1, 0], color: '#FAFAFA', size: 10 },
+  { id: 'null', text: 'ds\u00B2=0', pos: [1.5, 2, 0], color: '#FFF176', size: 10 },
+  { id: 'tf', text: 'Superposition', pos: [0.15, 2, 0], color: '#EF5350', size: 10 },
+  { id: 'tp', text: 'Superposition', pos: [0.15, 0, 0], color: '#42A5F5', size: 10 },
+];
+const dynamicLabels = ['ektropy', 'topo'];
+const labelEls = {};
+
+function projectLabel(pos3) {
+  const v = new THREE.Vector3(...pos3).project(camera);
+  return { x: ((v.x + 1) / 2) * window.innerWidth, y: ((-v.y + 1) / 2) * window.innerHeight, behind: v.z > 1 };
+}
+
+function getOrCreateLabel(id) {
+  if (!labelEls[id]) {
+    const el = document.createElement('span');
+    labelContainer.appendChild(el);
+    labelEls[id] = el;
+  }
+  return labelEls[id];
+}
+
+function updateLabels() {
+  if (state.phase !== 'torus') {
+    Object.values(labelEls).forEach(el => el.style.display = 'none');
+    return;
+  }
+
+  for (const def of labelDefs) {
+    const el = getOrCreateLabel(def.id);
+    let visible = true;
+    if (def.id === 'event') visible = state.beta > 0.05;
+    if (def.id === 'tf' || def.id === 'tp') visible = state.beta > 0.1;
+    if (def.id === 'null') visible = state.beta > 0.05;
+    if (def.id === 'future' || def.id === 'past') visible = state.beta > 0.02;
+
+    const fadeOpacity = (def.id === 'ct' || def.id === 'x' || def.id === 'y' || def.id === 'spacelike') ? 1 : Math.min(1, state.beta * 3);
+
+    el.textContent = def.text;
+    el.style.color = def.color;
+    el.style.fontSize = def.size + 'px';
+    el.style.opacity = fadeOpacity;
+
+    const p = projectLabel(def.pos);
+    if (p.behind || !visible) { el.style.display = 'none'; }
+    else { el.style.display = 'block'; el.style.left = p.x + 'px'; el.style.top = p.y + 'px'; }
+  }
+
+  // Ektropy label
+  const ekEl = getOrCreateLabel('ektropy');
+  if (state.beta > 0.01) {
+    ekEl.style.display = 'block';
+    ekEl.style.color = '#FFD54F';
+    ekEl.style.fontSize = '10px';
+    ekEl.textContent = state.muLimit ? '\u03C6=\u221E \u00B7 \u03BC-LIMIT' : `\u03C6=${state.rapidity.toFixed(2)} \u00B7 ektropy rate`;
+    const p = projectLabel([0.2, 0.6, 0]);
+    ekEl.style.left = p.x + 'px'; ekEl.style.top = p.y + 'px';
+  } else { ekEl.style.display = 'none'; }
+
+  // Topology label
+  const toEl = getOrCreateLabel('topo');
+  if (state.beta > 0.01) {
+    toEl.style.display = 'block';
+    toEl.style.fontSize = '11px';
+    toEl.style.color = state.muLimit ? '#FFFFFF' : '#FFD54F';
+    toEl.textContent = state.muLimit
+      ? '\u03BC-LIMIT \u00B7 R=0 \u00B7 Pure \u2299'
+      : `R/\u03B3=${state.rEff.toFixed(3)} \u00B7 ${state.rEff > 0.5 ? 'genus 1 \u00B7 torus' : state.rEff > 0.05 ? 'closing...' : 'genus 0 \u00B7 sphere'}`;
+    const p = projectLabel([1.5, 1.15, 0]);
+    toEl.style.left = p.x + 'px'; toEl.style.top = p.y + 'px';
+  } else { toEl.style.display = 'none'; }
+}
+
+// ═══════════════════════════════════════
+// ANIMATION LOOP
+// ═══════════════════════════════════════
+function animate() {
+  requestAnimationFrame(animate);
+  const t = clock.getElapsedTime();
+  const dt = clock.getDelta();
+  controls.update();
+
+  if (needsRebuild) { rebuildAll(); needsRebuild = false; }
+
+  // Visibility toggles
+  groups.torus.visible = state.showTorus;
+  groups.geodesics.visible = state.showGeodesics;
+  groups.slice.visible = state.showSlice;
+  groups.axes.visible = state.showAxes;
+  groups.worldLines.visible = state.showWorldLines;
+  groups.hyperbolas.visible = state.showHyperbolas;
+  groups.causal.visible = state.showRegions;
+  groups.eventMarker.visible = state.showVertex;
+
+  // ── Geodesic pulsing ──
+  geodesicLines.forEach((line, i) => {
+    const isCW = i < NUM_GEODESICS;
+    const baseOp = isCW ? 0.4 : 0.15;
+    line.material.opacity = baseOp * (0.6 + 0.4 * Math.sin(t * state.renderRate + (i % NUM_GEODESICS / NUM_GEODESICS) * Math.PI * 2));
+  });
+
+  // ── Particles ──
+  if (pointsObj) {
+    const visFrac = Math.min(1, state.beta * 2);
+    const activeCount = Math.floor(PARTICLE_COUNT * visFrac);
+    const flowSpeed = state.muLimit ? 0 : 0.4 * (1 + state.rapidity * 3);
+    pointsObj.material.size = 0.025 + state.beta * 0.05;
+    pointsObj.material.opacity = Math.min(0.9, state.beta * 1.8);
+    const R = Math.max(0.001, state.rEff), r = 1;
+    for (let i = 0; i < PARTICLE_COUNT; i++) {
+      if (i >= activeCount) { particlePositions[i * 3 + 1] = -999; continue; }
+      particlePhases[i * 2 + 1] += flowSpeed * 0.016 * (0.7 + 0.6 * Math.sin(i * 1.7));
+      particlePhases[i * 2] += 0.02 * 0.016 * Math.sin(i * 2.3 + performance.now() * 0.001);
+      if (particlePhases[i * 2 + 1] > Math.PI * 2) particlePhases[i * 2 + 1] -= Math.PI * 2;
+      const u = particlePhases[i * 2], v = particlePhases[i * 2 + 1];
+      particlePositions[i * 3] = (R + r * Math.cos(v)) * Math.cos(u);
+      particlePositions[i * 3 + 1] = 1 + r * Math.sin(v);
+      particlePositions[i * 3 + 2] = (R + r * Math.cos(v)) * Math.sin(u);
+    }
+    pointsObj.geometry.attributes.position.needsUpdate = true;
+  }
+
+  // ── Overlap Glow ──
+  const elapsed = flashStartTime !== null ? t - flashStartTime : 999;
+  if (coreGlow) {
+    if (state.phase !== 'torus' || state.beta < 0.05) { coreGlow.visible = false; }
+    else {
+      coreGlow.visible = true;
+      const t1 = Math.min(state.beta, 0.99) / 0.99;
+      const pulse = 1 + 0.15 * Math.sin(t * 4);
+      coreGlow.scale.setScalar((0.08 + t1 * 0.4) * pulse);
+      coreGlow.material.opacity = t1 * 0.3;
+      coreGlow.material.color.set(0xffd54f);
+    }
+  }
+  if (flashSphere) {
+    if (state.phase === 'flash') {
+      flashSphere.visible = true;
+      const expand = Math.min(1, elapsed / 0.6);
+      const eased = 1 - (1 - expand) * (1 - expand);
+      flashSphere.scale.setScalar(0.5 + eased * 50);
+      flashSphere.material.opacity = eased;
+    } else { flashSphere.visible = false; }
+  }
+
+  // ── DOM flash overlay ──
+  const overlay = document.getElementById('mu-flash-overlay');
+  if (overlay) {
+    if (state.phase === 'flash') {
+      const expand = Math.min(1, elapsed / 0.6);
+      const eased = 1 - (1 - expand) * (1 - expand);
+      const radius = Math.round(eased * 150);
+      overlay.style.background = `radial-gradient(circle at center, white 0%, white ${radius}%, transparent ${radius + 5}%)`;
+      overlay.style.opacity = '1';
+    } else if (state.phase === 'sphere') {
+      const fadeEl = elapsed - 1.5;
+      const fadeProg = Math.min(1, Math.max(0, fadeEl / 1.2));
+      overlay.style.background = 'white';
+      overlay.style.opacity = String(1 - fadeProg);
+    } else {
+      overlay.style.opacity = '0';
+    }
+  }
+
+  // ── World Lines pulsing ──
+  worldLineObjs.forEach((line, idx) => {
+    line.material.opacity = state.muLimit ? 0.06 : 0.05 + 0.05 * Math.sin(t * 1.2 + idx * 0.4);
+  });
+
+  // ── Collapse Rings ──
+  collapseRingMeshes.forEach((ring, i) => {
+    if (state.muLimit) {
+      ring.scale.set(0.3, 0.3, 0.3);
+      ring.material.opacity = 0.6;
+      return;
+    }
+    const phaseOffset = i * 2.1;
+    const phase = (t * state.renderRate + phaseOffset) % 4;
+    const sc = phase * 0.8;
+    ring.scale.set(sc, sc, sc);
+    ring.material.opacity = Math.max(0, 0.5 * (1 - phase / 4) * Math.min(state.renderRate * 0.5, 3));
+  });
+
+  // ── Event Marker ──
+  if (innerGlow && state.showVertex) {
+    if (state.muLimit) {
+      innerGlow.scale.setScalar(0.6);
+      innerGlow.material.opacity = 0.8;
+      innerGlow.material.color.set(0xffffff);
+    } else {
+      const breathe = 1 + 0.3 * Math.sin(t * 2.5 * state.renderRate);
+      const sz = (0.08 + (state.rapidity || 0) * 0.08) * breathe;
+      innerGlow.scale.setScalar(sz);
+      innerGlow.material.opacity = Math.min(0.6, 0.15 + (state.rapidity || 0) * 0.12);
+      innerGlow.material.color.set(0xffeb3b);
+    }
+  }
+  if (outerHalo && state.showVertex) {
+    if (state.muLimit) {
+      outerHalo.scale.setScalar(1.2);
+      outerHalo.material.opacity = 0.5;
+      outerHalo.material.color.set(0xffffff);
+    } else {
+      const breathe = 1 + 0.2 * Math.sin(t * 1.8 * state.renderRate + 0.5);
+      const sz = (0.15 + (state.rapidity || 0) * 0.2) * breathe;
+      outerHalo.scale.setScalar(sz);
+      outerHalo.material.opacity = Math.min(0.3, 0.05 + (state.rapidity || 0) * 0.08);
+      outerHalo.material.color.set(0xffeb3b);
+    }
+  }
+
+  // ── Riemann sphere ──
+  groups.riemann.visible = state.rEff > 0.3;
+
+  // ── Labels ──
+  updateLabels();
+
+  // ── Badge ──
+  updateBadge();
+  updatePhasePanel();
+
+  renderer.render(scene, camera);
+}
+
+// ═══════════════════════════════════════
+// BADGE
+// ═══════════════════════════════════════
+function updateBadge() {
+  const el = document.getElementById('badge');
+  let status = '';
+  if (state.phase === 'flash' || state.muLimit) status = '\u03BC-limit \u00B7 whiteout \u00B7 d\u03C4 = 0';
+  else if (state.phase === 'sphere' || state.rEff < 0.05) status = 'genus 0 \u00B7 sphere \u00B7 payoff field';
+  else if (state.rEff < 0.5) status = 'genus 1 \u2192 0 \u00B7 loophole closing';
+  else if (state.beta > 0.01) status = 'genus 1 \u00B7 torus \u00B7 loophole open';
+  el.textContent = status;
+}
+
+function updatePhasePanel() {
+  const el = document.getElementById('phase-panel');
+  if (!el) return;
+
+  let title = 'Stage: Torus';
+  let copy = 'Genus 1. The hole is still open, so the system can circle without fully committing to the equatorial constraint.';
+  let stack = [
+    ['D1-D2', 'Phi and V latent on S²'],
+    ['D3', 'ct / causal axis'],
+    ['D4', 'torus topology active'],
+    ['D5', 'payoff field not yet explicit'],
+  ];
+
+  if (state.phase === 'flash') {
+    title = 'Stage: \u03BC-limit';
+    copy = 'beta approaches 1, R/gamma collapses toward 0, and the torus pinches shut. The loophole closes in the white flash between topologies.';
+    stack = [
+      ['D1-D2', 'sphere coordinates reassert'],
+      ['D3', 'causal pressure saturates'],
+      ['D4', 'topology commits'],
+      ['D5', 'quadrants about to appear'],
+    ];
+  } else if (state.phase === 'sphere' || state.rEff < 0.05) {
+    title = 'Stage: Sphere';
+    copy = 'Genus 0. The torus has collapsed into S², and the strategic field is now legible: equator, bypass, graveyard, cargo cult.';
+    stack = [
+      ['QI', 'high Phi, high V — equator'],
+      ['QII', 'high Phi, low V — bypass'],
+      ['QIII', 'low Phi, low V — graveyard'],
+      ['QIV', 'low Phi, high V — cargo cult'],
+    ];
+  }
+
+  el.innerHTML = `
+    <div class="phase-title">${title}</div>
+    <div class="phase-copy">${copy}</div>
+    <div class="phase-stack">
+      ${stack.map(([k, v]) => `<strong>${k}</strong><span>${v}</span>`).join('')}
+    </div>
+  `;
+}
+
+// ═══════════════════════════════════════
+// CONTROLS — Beta slider with relativistic friction
+// ═══════════════════════════════════════
+const betaTrack = document.getElementById('beta-track');
+const betaFill = document.getElementById('beta-fill');
+const betaThumb = document.getElementById('beta-thumb');
+let draggingBeta = false;
+let dragBetaVal = 0;
+
+function updateBetaUI() {
+  const pct = state.beta * 100;
+  betaFill.style.width = pct + '%';
+  betaThumb.style.left = pct + '%';
+  document.getElementById('rd-beta').textContent = state.beta >= 1 ? '1.000' : state.beta < 0.001 ? '0' : state.beta.toFixed(3);
+  document.getElementById('rd-gamma').textContent = state.gamma === Infinity ? '\u221E' : state.gamma.toFixed(2);
+  document.getElementById('rd-phi').textContent = state.rapidity === Infinity ? '\u221E' : state.rapidity.toFixed(2);
+  document.getElementById('rd-reff').textContent = state.muLimit ? '0' : state.rEff.toFixed(3);
+}
+
+betaTrack.addEventListener('pointerdown', (e) => {
+  e.preventDefault();
+  draggingBeta = true;
+  betaTrack.setPointerCapture(e.pointerId);
+  const rect = betaTrack.getBoundingClientRect();
+  const frac = (e.clientX - rect.left) / rect.width;
+  setBeta(Math.max(0, Math.min(1, frac)));
+  dragBetaVal = state.beta;
+  updateBetaUI();
+});
+
+betaTrack.addEventListener('pointermove', (e) => {
+  if (!draggingBeta) return;
+  const rect = betaTrack.getBoundingClientRect();
+  const pxPerUnit = rect.width;
+  const dx = e.movementX;
+  const b = dragBetaVal;
+  const friction = Math.pow(1 - b * b, 1.5);
+  const deltaBeta = (dx / pxPerUnit) * friction * 3;
+  dragBetaVal = Math.max(0, Math.min(1, dragBetaVal + deltaBeta));
+  setBeta(dragBetaVal);
+  updateBetaUI();
+});
+
+betaTrack.addEventListener('pointerup', () => { draggingBeta = false; });
+betaTrack.addEventListener('pointercancel', () => { draggingBeta = false; });
+
+// Time slider
+const timeSlider = document.getElementById('time-slider');
+const timeValue = document.getElementById('time-value');
+timeSlider.addEventListener('input', (e) => {
+  const v = parseFloat(e.target.value);
+  state.time = v;
+  timeValue.textContent = v.toFixed(2);
+  rebuildSlice();
+});
+
+// ═══════════════════════════════════════
+// LAYER PANEL
+// ═══════════════════════════════════════
+const layerPanel = document.getElementById('layer-panel');
+const layersBtn = document.getElementById('layers-btn');
+let layersOpen = false;
+
+const layerDefs = [
+  ['showTorus', 'Null surface'],
+  ['showGeodesics', 'Geodesics'],
+  ['showSlice', 'Simultaneity'],
+  ['showAxes', 'Axes'],
+  ['showVertex', 'Overlap glow'],
+  ['showWorldLines', 'World lines'],
+  ['showHyperbolas', 'Hyperbolas'],
+  ['showRegions', 'Regions'],
+  ['wireframe', 'Wireframe'],
+];
+
+function buildLayerPanel() {
+  layerPanel.innerHTML = '';
+  layerDefs.forEach(([key, label]) => {
+    const lbl = document.createElement('label');
+    lbl.className = 'layer-toggle';
+    const cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.checked = state[key];
+    cb.addEventListener('change', () => {
+      state[key] = cb.checked;
+      if (key === 'wireframe') needsRebuild = true;
+    });
+    const sp = document.createElement('span');
+    sp.textContent = label;
+    lbl.appendChild(cb);
+    lbl.appendChild(sp);
+    layerPanel.appendChild(lbl);
+  });
+}
+buildLayerPanel();
+
+layersBtn.addEventListener('click', () => {
+  layersOpen = !layersOpen;
+  layerPanel.style.display = layersOpen ? 'flex' : 'none';
+  layersBtn.textContent = layersOpen ? '\u2715' : '\u2630';
+});
+
+// ═══════════════════════════════════════
+// START
+// ═══════════════════════════════════════
+updateBetaUI();
+animate();
+</script>
+</body>
+</html>

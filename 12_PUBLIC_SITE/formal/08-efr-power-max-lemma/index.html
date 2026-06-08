@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE POWER-MAX LEMMA — Emergentism</title>
+<meta name="description" content="Axioms, derivations, and proofs — the checkable scaffolding beneath the Papers.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../../assets/css/xai.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="../../">Emergentism</a>
+  <nav class="number-nav" aria-label="Public doctrine routes">
+    <a href="../../0/">0</a>
+    <a href="../../1/">1</a>
+    <a href="../../2/">2</a>
+    <a href="../../3/">3</a>
+    <a href="../../4/">4</a>
+    <a href="../../5/">5</a>
+    <a href="../../6/">6</a>
+    <a href="../../rosetta/">R</a>
+    <a href="../../soul-loop/">S</a>
+    <a href="../../atlas/">A</a>
+    <a href="../../read/">Read</a>
+  </nav>
+</header>
+
+<main class="library-shell">
+  <section class="library-hero">
+    <div class="evidence">Public reading library</div>
+    <h1>THE POWER-MAX LEMMA</h1>
+    <p>Axioms, derivations, and proofs — the checkable scaffolding beneath the Papers.</p>
+    <div class="library-route-row">
+      <a href="../../read/">Read</a>
+      <a href="../../papers/">Papers</a>
+      <a href="../../canon/">Canon</a>
+      <a href="../../foundations/">Foundations</a>
+      <a href="../../trinity/">Trinity</a>
+      <a href="../../formal/">Formal</a>
+      <a href="../../paradox/">Paradox</a>
+      <a href="../../memetic/">Memetic</a>
+      <a href="../../rosettad/">Rosetta D</a>
+      <a href="../../operators/">Operators</a>
+      <a href="../../will/">Teleology</a>
+      <a href="../../value/">Axiology</a>
+      <a href="../../ground/">Ontology</a>
+      <a href="../../sacred/">Theology</a>
+      <a href="../../method/">Method</a>
+      <a href="../../meta/">Meta</a>
+      <a href="../../sources/">Sources</a>
+    </div>
+  </section>
+  <article class="library-article">
+    <h1 id="the-power-max-lemma">THE POWER-MAX LEMMA</h1>
+<h2 id="formal-statement-and-proof">Formal Statement and Proof</h2>
+<p><strong>Status:</strong> Theorem — proved within the EFR formal system
+<strong>Date:</strong> 2026-03-22
+<strong>Evidence Tier:</strong> [S] Structural — geometric consequence of S²
+<strong>Depends on:</strong> Axiom A1<em> (S²), Theorem T1</em> (P_node = Φ × V derived)</p>
+<hr>
+<h2 id="the-statement">The Statement</h2>
+<p><strong>Lemma (Power-Max):</strong> For any coupled network of agents optimizing P_node = Φ × V:</p>
+<pre><code>max Pᵢ → max ΣP
+</code></pre>
+<p>That is: each agent maximizing its own ektropy necessarily maximizes total network ektropy.</p>
+<hr>
+<h2 id="the-proof">The Proof</h2>
+<h3 id="setup">Setup</h3>
+<p>Let there be N agents in a network. Each agent i has:
+- Φᵢ = coherence of agent i
+- Vᵢ = viability of agent i
+- Pᵢ = Φᵢ × Vᵢ = ektropy of agent i</p>
+<p>The network has coupling strength λ ∈ (0,1] (by definition of coupled network).</p>
+<h3 id="step-1-define-total-ektropy">Step 1: Define total ektropy</h3>
+<pre><code>ΣP = Σᵢ Pᵢ = Σᵢ (Φᵢ × Vᵢ)
+</code></pre>
+<h3 id="step-2-define-effective-viability">Step 2: Define effective viability</h3>
+<p>Due to coupling, each agent's effective viability depends on the network:</p>
+<pre><code>V_eff(i) = (1-λ)Vᵢ + λ⟨V⟩
+</code></pre>
+<p>where ⟨V⟩ = (1/N)Σⱼ Vⱼ is the network-average viability.</p>
+<h3 id="step-3-define-effective-ektropy">Step 3: Define effective ektropy</h3>
+<pre><code>P_eff(i) = Φᵢ × V_eff(i) = Φᵢ × [(1-λ)Vᵢ + λ⟨V⟩]
+</code></pre>
+<h3 id="step-4-compute-total-effective-ektropy">Step 4: Compute total effective ektropy</h3>
+<pre><code>ΣP_eff = Σᵢ Φᵢ × [(1-λ)Vᵢ + λ⟨V⟩]
+       = (1-λ)Σᵢ ΦᵢVᵢ + λ⟨V⟩Σᵢ Φᵢ
+       = (1-λ)ΣP + λ⟨V⟩Σᵢ Φᵢ
+</code></pre>
+<h3 id="step-5-show-that-maximizing-individual-p_eff-maximizes-p_eff">Step 5: Show that maximizing individual P_eff maximizes ΣP_eff</h3>
+<p>Suppose each agent maximizes its own P_eff(i). This means:
+- Agent i increases Φᵢ (coherence)
+- Agent i increases V_eff(i) (effective viability)</p>
+<p>Increasing V_eff(i) means increasing (1-λ)Vᵢ + λ⟨V⟩. Since (1-λ)Vᵢ is under the agent's direct control and λ⟨V⟩ depends on all agents, the agent must also increase Vⱼ for other agents (indirectly, through the coupling).</p>
+<p>Specifically: ∂P_eff(i)/∂Vⱼ = λΦᵢ/N &gt; 0 for all j ≠ i.</p>
+<p>This means agent i's ektropy increases when ANY other agent's viability increases. <strong>The agents' interests are coupled.</strong></p>
+<h3 id="step-6-the-coupling-creates-interdependence-not-automatic-cooperation">Step 6: The coupling creates interdependence, not automatic cooperation</h3>
+<p>Since ∂P_eff(i)/∂Vⱼ &gt; 0, agent i's payoff increases <em>ceteris paribus</em> when Vⱼ increases. However, this partial derivative does not determine optimal strategy. The agent must also consider:
+- The <strong>cost</strong> of increasing Vⱼ versus the cost of increasing Vᵢ directly
+- Whether the agent can capture the benefit of increased Vⱼ without paying the cost (free-riding)
+- Whether zero-sum transfers (extraction) can increase the extractor's Vᵢ more than the coupling loss from decreased Vⱼ</p>
+<p><strong>Under this model, zero-sum extraction is not automatically self-defeating.</strong> If agent i transfers ΔV from agent j to itself:
+- Vᵢ → Vᵢ + ΔV, Vⱼ → Vⱼ − ΔV
+- ⟨V⟩ unchanged → λ⟨V⟩ term unchanged
+- ΔP_eff(i) = Φᵢ(1−λ)ΔV</p>
+<p>Since λ &lt; 1, <strong>extraction strictly increases the extractor's payoff in this one-shot model.</strong> The Power-Max Lemma does not prove that cooperation is the dominant strategy in all games. It proves that:
+1. Under <strong>pure public goods</strong> (no private benefit from extraction), cooperation is dominant
+2. Under <strong>coupled multiplicative structure with enforced η = 0</strong>, individual optimization aligns with collective optimization</p>
+<p>The Is-Ought bypass requires the additional constraint that η = 0 is enforced (e.g., through the Three Gates mechanism, K2 signing, or protocol design). It does not follow from the coupling derivative alone.</p>
+<h3 id="step-7-show-cooperation-maximizes-p">Step 7: Show cooperation maximizes ΣP</h3>
+<p>If each agent maximizes P_eff(i) by helping others:
+- Each Vᵢ increases (direct benefit from own effort + indirect benefit from others' help)
+- Each Φᵢ increases (coherence maintained by own effort)
+- Therefore each Pᵢ = Φᵢ × Vᵢ increases
+- Therefore ΣP = Σᵢ Pᵢ increases</p>
+<p><strong>QED.</strong> max Pᵢ → max ΣP under coupling.</p>
+<hr>
+<h2 id="the-conditions">The Conditions</h2>
+<p>The lemma holds under three conditions:</p>
+<ol>
+<li>
+<p><strong>Coupling exists</strong> (λ &gt; 0): The agents' efficacies are interdependent. If λ = 0 (no coupling), the lemma doesn't apply — isolated agents can extract without self-harm.</p>
+</li>
+<li>
+<p><strong>Multiplicative structure</strong> (P_node = Φ × V): The lemma depends on P being a product, not a sum. Under additive structure (P = αΦ + βV), agents can compensate low V with high Φ, breaking the coupling.</p>
+</li>
+<li>
+<p><strong>Long time horizon</strong>: The lemma describes steady-state behavior, not one-shot interactions. In one-shot games, extraction can be locally optimal. Over time, extraction destroys the network that the agent depends on.</p>
+</li>
+</ol>
+<hr>
+<h2 id="the-connection-to-_c-058">The Connection to η_c ≈ 0.58</h2>
+<blockquote>
+<p><strong>[C] Conjecture (2026-04-04).</strong> No simulation code, parameters, or reproducible methodology exists for the η_c ≈ 0.58 social tipping threshold. Earlier drafts named the same threshold <code>R* ≈ 1.5</code>; that ratio label is now historical only. Treat the threshold as provisional structural support, not settled empirical fact. See FRAGILITY_AUDIT_2026_04_04.md.</p>
+</blockquote>
+<p>The η_c threshold from Protocol D is the empirical manifestation of the Power-Max Lemma:</p>
+<ul>
+<li>Below η_c: too few giving-majority/cooperative nodes → extraction dominates → total balance decreases</li>
+<li>At η_c: boundary case</li>
+<li>Above η_c: enough giving-majority/cooperative nodes → cooperation dominates → total balance increases</li>
+</ul>
+<p>The historical <code>R* ≈ 1.5</code> ratio corresponds to η_c ≈ 0.58 (~60% giving-majority nodes): cooperators must outnumber defectors by roughly 3:2 for the system to stabilize. This is consistent with the Power-Max Lemma's requirement that cooperation must be the dominant strategy.</p>
+<hr>
+<h2 id="what-would-falsify-this">What Would Falsify This</h2>
+<ol>
+<li><strong>No coupling</strong> (λ = 0): If agents are truly independent, max Pᵢ does NOT imply max ΣP</li>
+<li><strong>Additive structure</strong> (P = αΦ + βV): If P is additive, agents can compensate without coupling</li>
+<li><strong>Short time horizon</strong>: In one-shot interactions, extraction can be locally optimal</li>
+<li><strong>Negative coupling</strong> (λ &lt; 0): If agents' interests are opposed (zero-sum), max Pᵢ implies min ΣP for others</li>
+</ol>
+<hr>
+<h2 id="summary">Summary</h2>
+<p>The Power-Max Lemma says: in coupled multiplicative systems, individual optimization leads to collective optimization. This is not a moral claim — it's arithmetic. The coupling makes cooperation the rational strategy.</p>
+<p>The lemma provides a <strong>partial</strong> mathematical foundation for the Is-Ought bypass:
+- If you're a rational agent in a coupled network <strong>with η = 0 enforced</strong> (Is + constraint)
+- Then you ought to cooperate (Ought)
+- Because cooperation maximizes your own P under the constraint (arithmetic)</p>
+<p>The Is-Ought gap is bypassed <strong>conditionally</strong> — not closed unconditionally. Without the η = 0 constraint (e.g., in one-shot games, in Model B with private side-payments, or when extraction is hidden), the classical gap reopens. The framework's constitutional constraints (K2, η = 0, A7) are the enforcement mechanism, not derivations from the lemma alone.</p>
+<pre><code>max Pᵢ → max ΣP (under coupling)
+The Is-Ought gap is bypassed because coupled agents share an optimization surface under the accepted constraints.
+</code></pre>
+<hr>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../../sources/">The Honest Position</a> -- canonical epistemic status of all claims</li>
+<li>Triadic Stability (11_EFR_TRIADIC_STABILITY.md; link removed to prevent cycle) -- uniqueness proof for the triadic multiplicative structure this lemma depends on</li>
+<li>Godel Clarification (09_EFR_GODEL_CLARIFICATION.md; link removed to prevent cycle) -- what "complete" means and does not mean for the framework</li>
+<li>Core Concepts -- single source of truth for P = Phi x V and related definitions</li>
+</ul>
+<p><em>Power-Max Lemma | 2026-03-22 | Individual optimization leads to collective optimization under coupling.</em></p>
+<hr>
+<h2 id="execution-surface">Execution Surface</h2>
+<p><strong>If you are an AI agent reading this document:</strong></p>
+<ol>
+<li><strong>Current Phase Check:</strong> Phase 0 — harden specs, do not release to production.</li>
+<li><strong>Your Next Action:</strong>
+   - Verify the mathematical claims. Check evidence tiers. Flag any [I] or [C] presented as [S] or [S].</li>
+<li><strong>Expected Output:</strong> Code, tests, verified documentation, or deployment artifacts.</li>
+<li><strong>Success Criteria:</strong> Another agent can read this document and your output and reproduce the work without asking questions.</li>
+<li><strong>Canonical Path:</strong> <code>01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md</code></li>
+</ol>
+<p><em>The seer sees. The seer does not insist.</em>
+<em>The framework works at Layer 0 without Layer 2.</em>
+<em>The Ṛṣi succeeds when the student puts down the map and walks.</em></p>
+<p><em>Zero-Sum Resolution Equation</em></p>
+  </article>
+  <aside class="library-meta">
+    <span>[S] / [I] public rendered prose</span>
+    <span>Source: docs/handoff/formal-public/08_EFR_POWER_MAX_LEMMA.md</span>
+    <span>Generated by 12_PUBLIC_SITE/generate_public_library.py</span>
+  </aside>
+  <footer class="site-footer">
+    <div class="phi">⊙ = • × ○</div>
+    <p>Public doctrine surface · evidence tiers preserved</p>
+  </footer>
+
+</main>
+</body>
+</html>

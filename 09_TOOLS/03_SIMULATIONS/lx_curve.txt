@@ -1,0 +1,40 @@
+L(x) = x / (1-x)  —  The Rate Curve That Governs Everything
+
+  L(x)
+   |
+  20+                                              /
+   |                                             /
+  15+                                           /
+   |                                          /
+  10+                                        /
+   |                                       /
+   5+                                    /
+   |                                  /
+   3+                              /
+   |                           /
+   2+                       /
+   |                    /
+   1+- - - - - - - * - - - - - - -   <-- EQUATOR (x=0.5, L=1.0)
+   |            /
+ 0.5+        /
+   |      /
+ 0.2+  /
+   | /
+   0+---+---+---+---+---+---+---+---+---+---+-> x
+   0  0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0
+
+  STAGNATION    |  SAFE ZONE  |  DANGER  | CATASTROPHE
+    (0-0.2)     | (0.3-0.7)   | (0.8-0.9)| (>0.95)
+   L < 0.25     | L = 0.4-2.3 | L = 4-9  | L -> infinity
+
+Key points:
+  x=0.50  L=1.00  The equator. phi=nu. Maximum balance. Operating point.
+  x=0.618 L=1.62  The golden ratio. phi-split threshold.
+  x=0.80  L=4.00  Danger zone. 4x leverage. One shock kills you.
+  x=0.90  L=9.00  Critical. 9x leverage. Liquidation imminent.
+  x=0.95  L=19.0  Catastrophe. System cannot survive any perturbation.
+
+This is why the equator is the operating point.
+This is why idle ZAI decays (demurrage pushes x away from 0).
+This is why the Faucet closes at low transparency (truth prevents x -> 1).
+This is why Grace Exit exists (escape before x reaches catastrophe).

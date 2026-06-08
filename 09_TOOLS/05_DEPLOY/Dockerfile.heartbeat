@@ -1,0 +1,23 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install base dependencies
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends gcc && \
+    rm -rf /var/lib/apt/lists/*
+
+# The heartbeat requires pydantic, anthropic, openai for the Rosetta cognitive layer
+RUN pip install --no-cache-dir \
+    pydantic \
+    anthropic \
+    openai \
+    httpx \
+    feedparser
+
+# The agents volume will be mounted here at runtime by docker-compose
+# We set PYTHONPATH so python -m pipeline.* works correctly
+ENV PYTHONPATH=/app/agents
+
+# Default command (will be overridden by compose)
+CMD ["python", "-m", "pipeline.organism_heartbeat"]

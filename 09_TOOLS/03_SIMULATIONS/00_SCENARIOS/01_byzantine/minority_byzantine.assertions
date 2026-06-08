@@ -1,0 +1,20 @@
+{
+  "scenario": "minority_byzantine",
+  "seed": 42,
+  "passed": true,
+  "assertions": [
+    {
+      "name": "every_super_checkpoint_reaches_green",
+      "status": "\u2705"
+    },
+    {
+      "name": "no_event_pruned_before_bundle_verified",
+      "status": "\u2705"
+    },
+    {
+      "name": "byzantine_minority_cannot_finalize",
+      "status": "\u2705"
+    }
+  ],
+  "transcript_hash": "631ded513fce6f75"
+}

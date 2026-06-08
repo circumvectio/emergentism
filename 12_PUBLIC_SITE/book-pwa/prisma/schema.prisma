@@ -1,0 +1,192 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Book {
+  id               String   @id @default(uuid())
+  title            String
+  slug             String   @unique
+  canonicalVersion Int      @default(1)
+  visibility       String   @default("public")
+  nodes            Node[]
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model Node {
+  id               String        @id @default(uuid())
+  bookId           String
+  book             Book          @relation(fields: [bookId], references: [id])
+  parentId         String?
+  parent           Node?         @relation("NodeHierarchy", fields: [parentId], references: [id])
+  children         Node[]        @relation("NodeHierarchy")
+  path             String // Materialized path for fast descendant querying
+  depth            Int
+  orderIndex       Int
+  title            String?
+  currentVersionId String?
+  currentVersion   NodeVersion?  @relation("NodeCurrentVersion", fields: [currentVersionId], references: [id])
+  versions         NodeVersion[] @relation("NodeAllVersions")
+  summary          String?
+  slug             String        @unique
+  status           String        @default("canon") // draft | canon | archived
+  createdBy        String        @default("system")
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+
+  sourceLinks NodeLink[]  @relation("SourceNode")
+  targetLinks NodeLink[]  @relation("TargetNode")
+  branches    AIPBranch[]
+}
+
+model NodeVersion {
+  id            String   @id @default(uuid())
+  hash          String   @unique
+  nodeId        String
+  node          Node     @relation("NodeAllVersions", fields: [nodeId], references: [id], onDelete: Cascade)
+  contentMd     String
+  prevVersionId String?
+  authorId      String   @default("system")
+  createdAt     DateTime @default(now())
+
+  // Back-relation for current version pointer
+  currentFor     Node[]      @relation("NodeCurrentVersion")
+  sourceBranches AIPBranch[] @relation("BranchSourceVersion")
+  sourceLinks    NodeLink[]  @relation("NodeLinkSourceVersion")
+  targetLinks    NodeLink[]  @relation("NodeLinkTargetVersion")
+}
+
+model NodeLink {
+  id              String       @id @default(uuid())
+  sourceNodeId    String
+  sourceNode      Node         @relation("SourceNode", fields: [sourceNodeId], references: [id])
+  sourceVersionId String?
+  sourceVersion   NodeVersion? @relation("NodeLinkSourceVersion", fields: [sourceVersionId], references: [id])
+  targetNodeId    String
+  targetNode      Node         @relation("TargetNode", fields: [targetNodeId], references: [id])
+  targetVersionId String?
+  targetVersion   NodeVersion? @relation("NodeLinkTargetVersion", fields: [targetVersionId], references: [id])
+  relationType    String // mirror | citation | contradiction | prerequisite | expansion
+  status          String       @default("synced") // pending | synced | failed
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+}
+
+model AIPBranch {
+  id                      String             @id @default(uuid())
+  userId                  String // Clerk User ID
+  sourceNodeId            String
+  sourceNode              Node               @relation(fields: [sourceNodeId], references: [id])
+  sourceVersionHash       String
+  sourceVersionId         String?
+  sourceVersion           NodeVersion?       @relation("BranchSourceVersion", fields: [sourceVersionId], references: [id])
+  parentBranchId          String?
+  parentBranch            AIPBranch?         @relation("BranchHierarchy", fields: [parentBranchId], references: [id])
+  childBranches           AIPBranch[]        @relation("BranchHierarchy")
+  prompt                  String
+  outputMd                String
+  mode                    String
+  branchMode              String             @default("mainline") // mainline | antithesis | synthesis | sandbox
+  depth                   Int
+  model                   String
+  tokenCount              Int                @default(0)
+  costCents               Int                @default(0)
+  visibility              String             @default("private") // private | shared | proposed_canon
+  consistencyStatus       String             @default("unchecked") // unchecked | consistent | soft_tension | hard_contradiction | canon_conflict
+  consistencyReportSource String?
+  consistencySummary      String?
+  consistencyReportJson   String?
+  createdAt               DateTime           @default(now())
+  reviews                 CanonReview[]
+  contradictions          AIAContradiction[]
+}
+
+model GraphWriteLock {
+  scope     String   @id
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model BranchConstitution {
+  id                      String   @id @default(uuid())
+  userId                  String
+  branchKey               String
+  branchId                String
+  version                 Int      @default(1)
+  acceptedCommitmentsJson String   @default("[]")
+  openTensionsJson        String   @default("[]")
+  preferredStyle          String?
+  lastSynthesisBranchId   String?
+  createdAt               DateTime @default(now())
+  updatedAt               DateTime @updatedAt
+
+  @@unique([userId, branchKey])
+  @@unique([branchId])
+}
+
+model AIAContradiction {
+  id               String    @id @default(uuid())
+  userId           String
+  branchId         String
+  branch           AIPBranch @relation(fields: [branchId], references: [id], onDelete: Cascade)
+  branchKey        String
+  type             String // canon_conflict | ancestor_conflict | sibling_tension | mode_intentional
+  severity         String // low | medium | high
+  newClaimId       String
+  priorClaimId     String?
+  explanation      String
+  resolutionStatus String    @default("unresolved")
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+
+  @@index([userId, branchKey])
+  @@index([branchId])
+  @@index([type, resolutionStatus])
+}
+
+model User {
+  id               String   @id // Clerk ID
+  email            String   @unique
+  plan             String   @default("Free")
+  role             String   @default("reader") // reader | canon_reviewer | admin
+  creditsRemaining Int      @default(3)
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model Payment {
+  id        String   @id @default(uuid())
+  userId    String
+  provider  String   @default("stripe")
+  amount    Int // in cents
+  plan      String
+  status    String
+  createdAt DateTime @default(now())
+}
+
+model RoleAssignmentAudit {
+  id           String   @id @default(uuid())
+  targetUserId String
+  actorUserId  String
+  fromRole     String
+  toRole       String
+  createdAt    DateTime @default(now())
+
+  @@index([targetUserId, createdAt])
+  @@index([actorUserId, createdAt])
+}
+
+model CanonReview {
+  id         String    @id @default(uuid())
+  branchId   String
+  branch     AIPBranch @relation(fields: [branchId], references: [id])
+  reviewerId String
+  decision   String // accept | reject | revise
+  notes      String?
+  createdAt  DateTime  @default(now())
+}

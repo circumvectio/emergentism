@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>/r/1 — The Evidence Tier Ladder · Emergentism</title>
+<meta name="description" content="The six-tier evidence ladder [A/B/S/I/D/C], the split-[E] discipline, and the Honest Position rule. How the framework labels claim strength from axiom to conjecture.">
+<link rel="stylesheet" href="../../dimensions/dimensions.css">
+<style>
+  .tier-grid { display: grid; grid-template-columns: 70px 1fr 2fr 1fr; gap: 0; border: 1px solid var(--border); border-radius: 4px; overflow: hidden; margin: 1.5rem 0; font-size: 0.95rem; }
+  .tier-grid > div { padding: 0.9rem 1rem; border-bottom: 1px solid var(--border); }
+  .tier-grid > div:nth-last-child(-n+4) { border-bottom: none; }
+  .tier-grid .tier-cell { font-family: "Courier New", monospace; font-size: 1.1rem; font-weight: 700; }
+  .tier-A { background: rgba(201,168,76,0.18); color: var(--gold); }
+  .tier-B { background: rgba(201,168,76,0.10); color: var(--gold); }
+  .tier-S { background: rgba(201,168,76,0.05); color: var(--gold); }
+  .tier-I { background: rgba(136,136,136,0.10); color: var(--muted); }
+  .tier-D { background: rgba(58,122,110,0.10); color: var(--teal); }
+  .tier-C { background: rgba(139,46,46,0.10); color: var(--crimson); }
+  .tier-grid .tier-header { font-family: "Courier New", monospace; font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); background: rgba(0,0,0,0.4); }
+  .worked-example { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 1.2rem 1.4rem; margin: 1.5rem 0; }
+  .worked-example h4 { margin-top: 0; color: var(--gold); font-size: 0.95rem; }
+  .worked-example .tier-mark { font-family: "Courier New", monospace; font-weight: 700; margin-right: 0.6rem; }
+</style>
+</head>
+<body>
+<noscript>The evidence tier ladder is a static CSS-grid table; the doctrine text below remains fully readable without JavaScript.</noscript>
+
+<!-- Framework update banner (2026-06-06): the tier ladder is preserved as the framework's audit discipline. The unified 5+1 constitution (K2 2026-05-30) is the load-bearing reference; the A7 self-correction discipline binds the tier-ladder to the constitutional fences. See 01_EMERGENTISM/00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md. -->
+
+<div class="site-shell">
+  <header class="topbar">
+    <a class="brand" href="../../">Emergentism</a>
+    <nav class="number-nav">
+      <a href="../0/">r/0</a>
+      <span class="active">r/1</span>
+      <a href="../2/">r/2</a>
+      <a href="../3/">r/3</a>
+      <a href="../4/">r/4</a>
+      <a href="../5/">r/5</a>
+      <a href="../6/">r/6</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="kicker">Rosetta · Phase 2 · The Evidence Tier Ladder</div>
+      <h1>The <em>Six</em> Evidence Tiers</h1>
+      <p class="subtitle">
+        Every claim in the framework is labeled with one of six evidence
+        tiers &mdash; from <code>[A]</code> axiom (no further proof needed)
+        to <code>[C]</code> conjecture (unverified hypothesis). The tier is
+        not a quality judgment; it is a <em>receipt</em> about what kind of
+        evidence backs the claim.
+      </p>
+      <div class="equation-strip">
+        <span>[A] axiom</span>
+        <span>[B] receipt</span>
+        <span>[S] structural</span>
+        <span>[I] intake</span>
+        <span>[D] datum</span>
+        <span>[C] conjecture</span>
+      </div>
+      <div class="evidence">[S] the 6-tier ladder · [S] the split-[E] rule · [I] the "Honest Position wins" framing</div>
+    </div>
+    <div class="visual-panel">
+      <div class="tier-grid">
+        <div class="tier-header tier-cell">Tier</div>
+        <div class="tier-header">Label</div>
+        <div class="tier-header">What it means</div>
+        <div class="tier-header">Example</div>
+
+        <div class="tier-cell tier-A">[A]</div>
+        <div>Axiom</div>
+        <div>No further proof needed; the framework's load-bearing starting point. The φ·ν = 1 identity, the sevenfold ladder, the η = 0 fence.</div>
+        <div><code>φ · ν = 1 on S²</code></div>
+
+        <div class="tier-cell tier-B">[B]</div>
+        <div>Receipt</div>
+        <div>Dated proof artifact required. A measurement, a publication, a deployment, a verified external reference. <em>No claim above [I] without [B].</em></div>
+        <div>GFS Wave 1 results (2026-06-04)</div>
+
+        <div class="tier-cell tier-S">[S]</div>
+        <div>Structural</div>
+        <div>Source-anchored to the canonical Rosetta geometry. The tier the Master Rosetta itself carries on its own rows.</div>
+        <div>The sevenfold L1–L7 mapping</div>
+
+        <div class="tier-cell tier-I">[I]</div>
+        <div>Intake</div>
+        <div>Conjectural, not yet proven. The default tier for new framing or interpretation. The most common tier on the public site.</div>
+        <div>"operational order" framing</div>
+
+        <div class="tier-cell tier-D">[D]</div>
+        <div>Datum</div>
+        <div>Raw observational data point. Rare on the public site; more common in working notes and corpus sweeps.</div>
+        <div>A single dispatch timestamp</div>
+
+        <div class="tier-cell tier-C">[C]</div>
+        <div>Conjecture</div>
+        <div>Hypothesis only. Should not be cited above this tier without explicit upgrade path + dated receipt.</div>
+        <div>"multiverse-scale" framing</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapters">
+    <article class="chapter">
+      <div class="chapter-number">01</div>
+      <div class="chapter-body">
+        <div class="chapter-kicker">The Ladder</div>
+        <h2>The six tiers, in order</h2>
+        <p>
+          The evidence ladder is a <em>receipt ladder</em>, not a quality ladder. <code>[A]</code> is not "better than" <code>[C]</code>; it is "more foundational" or "more dated-receipted". A conjecture (<code>[C]</code>) can be load-bearing in a future cycle; an axiom (<code>[A]</code>) cannot be un-axiomized without rewriting the framework.
+        </p>
+        <p>
+          The <em>Honest Position rule</em> from the GFS Wave 1 results: report the actual tier, not the strongest tier the claim could justify. A claim that mixes <code>[A]</code> and <code>[C]</code> evidence should be split into two rows, not collapsed into a higher tier.
+        </p>
+      </div>
+    </article>
+
+    <article class="chapter">
+      <div class="chapter-number">02</div>
+      <div class="chapter-body">
+        <div class="chapter-kicker">The Split</div>
+        <h2>The split-[E] discipline</h2>
+        <p>
+          The legacy 6th tier <code>[E]</code> (a 1990s-style "empirical" tier) has been <em>split</em> into <code>[A]</code> and <code>[B]</code> per the <code>00_CANONICAL_CLAIM_MATRIX.md</code> rule. An <code>[E]</code> claim is re-tiered as either <code>[A]</code> (axiom-level) or <code>[B]</code> (receipt-level) on a row-by-row basis. New claims do not use <code>[E]</code>.
+        </p>
+        <p>
+          This split is the framework's <em>self-correction discipline</em> applied to the audit trail. Legacy claims that survive the split become either axioms (load-bearing starting points) or receipts (dated proof artifacts). Legacy claims that don't survive the split get re-tiered to <code>[C]</code> with the original <code>[E]</code> label preserved in the audit trail.
+        </p>
+      </div>
+    </article>
+
+    <article class="chapter">
+      <div class="chapter-number">03</div>
+      <div class="chapter-body">
+        <div class="chapter-kicker">The Rule</div>
+        <h2>"Honest Position wins"</h2>
+        <p>
+          The rule, in one sentence: <em>if you cannot state the claim's tier, its upgrade path, and what survives if it fails, you are not ready to publish it.</em> This is the L3 self-audit rule applied to the publication surface.
+        </p>
+        <div class="worked-example">
+          <h4>Worked example: the GFS Wave 1 verdict</h4>
+          <p style="margin-bottom:0.5rem">
+            <span class="tier-mark tier-mark" style="color:var(--gold)">[B]</span>
+            <em>Honest verdict</em>: signal in 7/23 cells, AK1 partially triggered, mu-limit interpretation falsified. The framework reported this <em>as such</em> — mixed, not "confirmed".
+          </p>
+          <p style="margin-bottom:0">
+            <span class="tier-mark" style="color:var(--crimson)">[C]</span>
+            <em>Marketed verdict</em> (the wrong way): "GFS: confirmed, 30% across the board." This is what <em>would</em> happen if the Honest Position rule were bypassed.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <article class="chapter">
+      <div class="chapter-number">04</div>
+      <div class="chapter-body">
+        <div class="chapter-kicker">The Discipline</div>
+        <h2>When to upgrade (or not)</h2>
+        <p>
+          Tier upgrades follow the A7 self-correction discipline: the upgrade path is documented, the original tier is preserved in the audit trail, and the upgrade is timestamped. <em>No silent upgrades.</em> The append-only Falsifier Register is the audit-trail surface.
+        </p>
+        <p>
+          <strong>Don't upgrade <code>[C]</code> to <code>[S]</code> on a single sample.</strong> A single sample is <em>operational evidence</em>, not a structural proof. The 0→1 jump from conjecture to structure requires either a dated <code>[B]</code> receipt or a structural argument that follows from the framework's axioms. The GFS Wave 1 result did <em>not</em> upgrade the framework's core claims; it surfaced honest verdicts at <code>[B]</code> and left the structural claims at <code>[S]</code>.
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <section class="mu-limit">
+    <div class="mu-inner">
+      <div class="mu-mark">μ</div>
+      <h2>The Mu-Limit of /r/1</h2>
+      <p>
+        /r/1 establishes the tier ladder and the Honest Position rule, but does not explain <em>who</em> moves the tier. A tier is not a static label; it is moved by the operator who audits it. The next move is the operator sequence &mdash; who does what.
+      </p>
+      <a href="../2/">Next: /r/2 &mdash; The Operator Sequence →</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="phi">⊙ = • × ○</div>
+    <p>Public doctrine surface · evidence tiers preserved</p>
+    <p><a href="../0/">Prev: /r/0 &mdash; Sevenfold Ladder</a> · <a href="../2/">Next: /r/2 &mdash; Operator Sequence</a></p>
+  </footer>
+</div>
+</body>
+</html>

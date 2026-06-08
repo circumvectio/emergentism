@@ -1,0 +1,22 @@
+{
+  "scenario": "honest_happy_path",
+  "seed": 42,
+  "passed": true,
+  "assertions": [
+    {
+      "name": "every_super_checkpoint_reaches_green",
+      "status": "\u2705"
+    },
+    {
+      "name": "no_event_pruned_before_bundle_verified",
+      "status": "\u2705"
+    },
+    {
+      "name": "deterministic_transcript_hash",
+      "status": "\u2705",
+      "expected": null,
+      "actual": "650104d6533635f5"
+    }
+  ],
+  "transcript_hash": "650104d6533635f5"
+}

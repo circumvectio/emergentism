@@ -1,0 +1,61 @@
+{
+  "DAC_NAME": "APU",
+  "LP100_SYMBOL": "APU",
+  "ARCHETYPE": "Recommending Organ — Artificial Public Utility for Natural Persons (L4 Adolescent G1; Arjuna archetype; D5c Memotype / Rhetoric)",
+  "NICHE": "Sovereign decision-support: synthesize IS (F1) + COULD (F2) + Health + Assets into gate-validated SHOULD recommendations for a natural person, with K2 human-signs-everything",
+  "NICHE_SLUG": "should-organ",
+  "THESIS": "Every natural person needs an advisory layer that observes, prices, and recommends — without deciding for them. APU is the L4 Kṣatriya that compresses the Rosetta pipeline's L1→L4 ruling into PROCEED / HOLD / REJECT with position sizing, gated by η-Gate + Trophic Gate + Mirror Ladder, and handed to a K2 signer for final authorization.",
+  "VISION": "Planet-scale PUSH AI: not a chatbot users query, but a sovereign advisor that watches FOR each person 24/7 via TheCircle + RealityFutures, and alerts only when something matters. Historically-priced private advisory delivered without rent.",
+  "MISSION": "Ship the Rosetta L1→L4 pipeline (Caṇḍāla → Śūdra → Vaiśya → Kṣatriya) with legal veto (Kali-function) + three constitutional gates + K2 signing, so that every APU output is an auditable recommendation a sovereign can accept or reject.",
+  "ONE_PARAGRAPH_DESCRIPTION": "APU is the SHOULD-organ in the Skyzai organism's Trivium loop. It ingests F1 (observations from TheCircle), F2 (probabilities from RealityFutures), Nexus (biological state), and Skyzai Execution (asset/wallet state via the F4 bridge), and emits typed recommendations (PROCEED / HOLD / REJECT + position sizing) through a four-caste Rosetta pipeline with Three Gates and an absolute legal veto. The user always signs.",
+  "IDENTITY_SUMMARY": "The Rosetta L1→L4 recommending organ. SHOULD state. Arjuna. Never decides — recommends; the mortal signs.",
+  "SOVEREIGNTY_BOUNDARY_SUMMARY": "Organism-native organ; K2 mandatory on every action that touches capital, identity, or irreversible state. APU suggests; the Nostr keypair signs. No autonomous execution path exists.",
+  "CONSTITUTIONAL_NOTE": "Three Gates are non-negotiable: η-Gate (no extraction), Trophic Gate (catalytic vs. parasitic fee test), Mirror Ladder (reasoning reflexivity). Legal sub-check carries absolute veto (Kali-function). If any gate fails, APU must emit REJECT regardless of upstream signal.",
+  "SUCCESS_CONDITION": "Live end-to-end APU run: real TheCircle F1 → real RealityFutures F2 → APU Rosetta pipeline → typed recommendation → K2-signed outcome logged as receipt, reproducible across 100 runs with deterministic pipeline trace.",
+  "FOUNDER_PUBKEY": "TBD — organism-native K2 signer; documented at Skyzai membrane.",
+
+  "SUBSTRATE_DEFINITION": "Natural persons facing actionable decisions (capital allocation, health protocol, life ops) without a sovereign integrated Φ-Ψ advisory layer. The mismatch is between access to real-time observation + probability markets + biological state, and the absence of an integrating advisor that respects K2 and η=0.",
+  "SUBSTRATE_SUMMARY": "Actionable-decision gap: observation and probability exist; integrated sovereign advisory does not.",
+  "SUBSTRATE_UPLINK_SUMMARY": "Natural-person decision-making substrate; inputs F1+F2+Health+Assets.",
+  "ENTROPY_SOURCES": "(1) TheCircle F1 observations (Nostr Kind 31339); (2) RealityFutures F2 probabilities (LMSR AMM prices + Kind 31338); (3) Nexus biometric state (HRV, sleep, cortisol); (4) Skyzai F4 bridge asset/wallet state; (5) Sādhu (L6) via-negativa dissent feed; (6) legal/regulatory corpus diffs.",
+  "BASELINE_MODEL": "Null baseline: PROCEED with no ruling / no gate validation / no position sizing — the status-quo user behavior without APU. Alpha is measured as outcome delta vs null across identical F1+F2+Health+Assets input sets.",
+  "MISMATCH_1": "Observation without integration — users see signals but can't compose them into a typed decision.",
+  "MISMATCH_2": "Probability without actionability — prediction markets price without recommending.",
+  "MISMATCH_3": "Advisory without sovereignty — traditional advisors take custody or charge rent on access, violating K2 and η=0.",
+  "MISMATCH_4": "Gate-less recommendation — AI assistants recommend without running constitutional validation (extraction, catalysis, reflexivity).",
+
+  "HAZARD_TEMPLATE": "Recommendation quality under incomplete F1/F2 data; gate-bypass under time pressure; Kali-function veto scope creep; pipeline-trace divergence across runs; user override of REJECT without evidence.",
+  "HAZARD_SUMMARY": "Incomplete inputs, gate bypass, veto drift, trace non-determinism, human-override-of-reject — compound in live conditions.",
+  "HAZARD_UPLINK_SUMMARY": "Data gaps, gate bypass, veto drift, trace non-determinism.",
+  "HAZARD_1": "F1/F2 staleness or absence — recommending against missing signal must default to HOLD, never PROCEED.",
+  "HAZARD_2": "Gate bypass via shortcut flags — any config path that disables η/Trophic/Mirror under load is a pathology.",
+  "HAZARD_3": "Legal Kali-function scope creep — veto on legitimately-risky-but-legal decisions reduces utility; too-narrow allows regulatory exposure.",
+  "HAZARD_4": "Pipeline trace non-determinism — same inputs must produce same ruling + same evidence bundle; drift is a substrate-hallucination tell.",
+
+  "ALPHA_MODEL": "Catalytic transformation: noisy F1+F2+Health+Assets → typed recommendation + position sizing + evidence bundle + K2 sign request. Fee earned on accepted recommendations that outperform the null baseline in the audit window. η=0 at the organism layer; participation fees bound to demonstrated uplift.",
+  "ALPHA_DESCRIPTION": "APU's alpha is the gap between typed-recommendation outcomes and the null baseline, measured across comparable input sets. Fees accrue only when that gap is positive and measurable, preserving eta = 0 discipline.",
+  "ALPHA_SUMMARY": "Typed recommendation + evidence + position sizing, fee on measured outperformance vs null.",
+  "ALPHA_UPLINK_SUMMARY": "Rosetta L1→L4 ruling with gate validation, fee on measured alpha vs null.",
+
+  "MEMBRANE_RULE_1": "K2 mandatory — every recommendation reaching an actionable state requires human Schnorr-signed authorization; APU never auto-executes.",
+  "MEMBRANE_RULE_2": "Three Gates always on — η-Gate, Trophic Gate, Mirror Ladder cannot be bypassed by any config, flag, or runtime state.",
+  "MEMBRANE_RULE_3": "Legal Kali-function absolute veto — L3 legal sub-check can REJECT regardless of other signals; veto is loggable, appealable, not overridable.",
+  "MEMBRANE_RULE_4": "Grace Exit (K4) — a user may export full APU state (pipeline history, recommendations, gate logs, signed receipts) and walk away; organism retains nothing.",
+
+  "RECEIPT_SUMMARY": "Recommendation-emitted, K2-signed, outcome-observed, reconciled-against-null, dispute-filed, dispute-resolved.",
+  "RECEIPTS_UPLINK_SUMMARY": "Each recommendation + signing + outcome + reconciliation is a receipt.",
+
+  "OPERATIONS_UPLINK_SUMMARY": "F1/F2 intake → L1 Caṇḍāla parse → L2 Śūdra expand → L3 Vaiśya 5-way check (Legal veto) → Three Gates → L4 Kṣatriya emit → K2 sign request → outcome log.",
+
+  "PATHOLOGY_UPLINK_SUMMARY": "Substrate hallucination (acting on absent F1/F2); gate bypass; Kali-function scope drift; trace non-determinism; human-override-of-REJECT without evidence; parasitic fee (fee without measurable null-delta).",
+
+  "METRIC_1": "Accepted-recommendation rate (K2-signed / emitted)",
+  "METRIC_2": "Null-delta outperformance (recommendation outcome vs null baseline, %)",
+  "METRIC_3": "Gate-validation throughput (emits passing all three gates / total emits)",
+  "METRIC_4": "Pipeline-trace reproducibility (identical-input runs yielding identical trace / total paired runs)",
+
+  "ECONOMIC_SURFACE_1": "Recommendation fee — earned per K2-signed recommendation that yields positive null-delta in audit window.",
+  "ECONOMIC_SURFACE_2": "Gate-service fee — optional earning layer for external consumers of η/Trophic/Mirror validators.",
+  "ECONOMIC_SURFACE_3": "Subscription override — users may prepay for reserved pipeline capacity; prepay is held in FlowWallet, not extracted.",
+  "ECONOMIC_SURFACE_4": "Dispute-bond refund — disputed recommendations require a bond; refund on dispute-upheld-for-user."
+}

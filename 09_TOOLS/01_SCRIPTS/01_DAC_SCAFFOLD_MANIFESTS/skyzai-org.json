@@ -1,0 +1,61 @@
+{
+  "DAC_NAME": "Skyzai",
+  "LP100_SYMBOL": "ZAI",
+  "ARCHETYPE": "ACT Organ — The Body / Execution Substrate (L4; Arjuna's chariot; the hands of the organism). Meta-DAC: hosts the other three Trivium organs' runtime and is itself the primary proof lane.",
+  "NICHE": "Sovereign execution substrate — membrane (K2 signing), memory (Cortex), execution (wallets, Carbon DeFi, OFN receipts), relay (Nostr broadcast), axiom (BEAM consensus), agents (AIA pipeline). ZAI is the only token that can mint new SKY.",
+  "NICHE_SLUG": "act-organ",
+  "THESIS": "Every decision needs hands. Skyzai is the body — the Nostr-keypair-anchored execution substrate that turns APU recommendations into on-chain outcomes, with K2 signing, SQLite memory, Hedera bridge, and a BEAM consensus engine. The keypair IS the identity. The mortal IS the signer.",
+  "VISION": "Wallet-native sovereign execution for every natural person: membrane/memory/execution/relay/axiom/agents unified under one Nostr keypair, with eta=0 and Grace Exit by construction.",
+  "MISSION": "Close the breathing loop: real on-chain settlement through the F4 bridge (K2 BIP340 + Hedera TransferTransaction construction) with live multi-model council path and real replay-contract validation against held-out telemetry.",
+  "ONE_PARAGRAPH_DESCRIPTION": "Skyzai is the ACT-organ and the meta-DAC of the organism: it hosts the other three Trivium organs' runtime (APU/Circle/RealityFutures) and provides the execution substrate (membrane / memory / execution / relay / axiom / agents) through which decisions become reality. Today the scaffolding is large and deep — Flutter web app builds clean, F4 bridge 21/21 tests pass, K2 BIP340+SIP009 real, SQLite persistence real, 9/9 sprint suites pass — but all settlement backends still fall back to mock, so the body is not live in the strong sense.",
+  "IDENTITY_SUMMARY": "ACT-organ + meta-DAC. Arjuna's chariot. Nostr-keypair identity. ZAI is the LP-100; SKY is the mint.",
+  "SOVEREIGNTY_BOUNDARY_SUMMARY": "Organism-native, private-DAC form (1 natural person per instance). K2 private key = the membrane; public key = the face. The mortal signs everything. Organizational-DAC form (multi-party treasury) uses FlowWallet + Lane A voting for revenue split.",
+  "CONSTITUTIONAL_NOTE": "K-invariants enforced at the substrate: K1 (LP-100 = 100 ZAI per DAC), K2 (human signs), K3 (no deletion, archive with tombstones), K4 (Grace Exit at NAV). Three Gates (Receipt-Bound, Truth-Gated, Exit-Safe) instantiated in the F4 bridge + Cortex + Axiom. η=0 at protocol; fees bind to catalytic execution work (settlement, bridge, storage), never to access.",
+  "SUCCESS_CONDITION": "Live end-to-end organism breathing loop: real F1 from TheCircle → real F2 from RealityFutures → real APU pipeline ruling → K2-signed settlement through the F4 bridge to a live counterparty → OFN receipt emitted → Cortex memory updated → Axiom BEAM consensus reached. Reproducible; all settlement backends real, no mock fallback.",
+  "FOUNDER_PUBKEY": "TBD — canonical organism-founder Nostr pubkey documented at membrane level.",
+
+  "SUBSTRATE_DEFINITION": "Execution gap — decisions need sovereign, K2-anchored, Grace-Exit-safe hands. Traditional wallets lack memory, axiom, relay; traditional apps lack K2 and eta=0. The mismatch is between typed decisions (from APU) and the absence of a unified substrate that executes, remembers, broadcasts, bridges, and reaches consensus under one keypair.",
+  "SUBSTRATE_SUMMARY": "The sovereign-execution gap — one keypair, six subsystems, K2 signing, eta=0, Grace Exit.",
+  "SUBSTRATE_UPLINK_SUMMARY": "Nostr-keypair-anchored substrate hosting six subsystems and the other Trivium organs.",
+  "ENTROPY_SOURCES": "(1) APU typed recommendations (upstream SHOULD); (2) on-chain state (EVM, Hedera, Bitcoin) via F4 bridge; (3) Nostr relay stream (identity, broadcast); (4) Cortex memory (wiki + SQLite); (5) Axiom BEAM consensus outputs; (6) AIA heartbeat and scheduled-task feeds.",
+  "BASELINE_MODEL": "Null baseline: traditional custodial wallet + separate notes app + separate social broadcast + separate consensus layer — no unified identity, no K2, no Grace Exit. Alpha = measured execution reliability, memory continuity, and exit-safety vs that null.",
+  "MISMATCH_1": "Custodial wallet dependency — most execution requires trusting a custodian, violating K2.",
+  "MISMATCH_2": "Memory fragmentation — state and reasoning live in disparate tools with no Grace Exit.",
+  "MISMATCH_3": "Identity fragmentation — every service demands its own account; the Nostr keypair unifies all.",
+  "MISMATCH_4": "Consensus outsourcing — most apps defer to blockchain consensus with no local Byzantine-fault-tolerant layer for inter-organ state.",
+
+  "HAZARD_TEMPLATE": "Settlement-backend mock-to-live cutover risk; K2 key loss / compromise (catastrophic); Hedera bridge failure or regulatory restriction; Cortex memory corruption; Axiom BEAM consensus divergence; mock fallback masking real failures.",
+  "HAZARD_SUMMARY": "Mock-to-live cutover, key loss, bridge failure, memory corruption, consensus divergence, mock masking.",
+  "HAZARD_UPLINK_SUMMARY": "Cutover, key, bridge, memory, consensus, mock-masking.",
+  "HAZARD_1": "Mock-to-live cutover — moving from SQLite+mock to real on-chain settlement under real adversarial conditions is the highest-risk transition.",
+  "HAZARD_2": "K2 key loss or compromise — sovereign by construction means no recovery; mitigation via user-side hardware isolation + Shamir-split not yet specified.",
+  "HAZARD_3": "Hedera bridge failure or jurisdictional restriction — F4 bridge depends on Hedera availability and cross-jurisdictional acceptance.",
+  "HAZARD_4": "Mock fallback masking real failure — any runtime path that silently falls back to mock in production is a substrate-hallucination pathology.",
+
+  "ALPHA_MODEL": "Catalytic execution fees on settlement, bridge traversal, and storage — each bound to a measurable execution unit of work. η=0 on access and identity. LP100 (ZAI) holders receive upside on organism-wide SKY minting proportional to realized execution alpha vs null.",
+  "ALPHA_DESCRIPTION": "Skyzai's alpha is the execution reliability, memory continuity, and exit-safety uplift vs a traditional fragmented stack. Fees accrue only on catalytic units — real settlements, real bridge crossings, real consensus rounds — never on access.",
+  "ALPHA_SUMMARY": "Unified sovereign-execution substrate; fee on catalytic execution units; ZAI LP upside on SKY mint.",
+  "ALPHA_UPLINK_SUMMARY": "Keypair-anchored execution; fee on catalysis; ZAI mints SKY.",
+
+  "MEMBRANE_RULE_1": "K2 mandatory — private key never leaves the mortal's device; every sovereign action Schnorr-signed.",
+  "MEMBRANE_RULE_2": "No silent mock fallback — any runtime that cannot perform real execution must refuse, not mock.",
+  "MEMBRANE_RULE_3": "η=0 at protocol — fees bind only to catalytic execution units; never on access, identity, memory reads, or relay reads.",
+  "MEMBRANE_RULE_4": "Grace Exit (K4) — any user can export full keypair state + Cortex memory + execution history + axiom consensus receipts and walk away; organism retains nothing.",
+
+  "RECEIPT_SUMMARY": "K2-signed, bridge-traversed, settlement-fired, memory-committed, axiom-consented, relay-broadcast, grace-exited.",
+  "RECEIPTS_UPLINK_SUMMARY": "Every execution unit (sign / bridge / settle / remember / consent / broadcast / exit) is a receipt.",
+
+  "OPERATIONS_UPLINK_SUMMARY": "APU recommendation → K2 sign request → F4 bridge → Hedera settlement → OFN receipt → Cortex memory update → Axiom BEAM consent → relay broadcast → next heartbeat.",
+
+  "PATHOLOGY_UPLINK_SUMMARY": "Mock fallback masking real failure; K2 key compromise; bridge outage without graceful degrade; Cortex memory drift; Axiom consensus divergence; ZAI-SKY minting without real alpha; relay monoculture; parasitic fee on access.",
+
+  "METRIC_1": "Real-settlement rate (real K2-signed settlements fired / total attempts) — organism's primary runtime-V metric",
+  "METRIC_2": "Bridge reliability (F4 bridge successful traversals / total attempts)",
+  "METRIC_3": "Cortex memory continuity (Soul Loop heartbeat success rate)",
+  "METRIC_4": "P-score (Φ × ν) at the organism level; code-only 0.55, runtime 0.16 as of 2026-04-23",
+
+  "ECONOMIC_SURFACE_1": "Settlement fee — per K2-signed settlement through F4 bridge, bound to gas / counterparty cost + thin catalytic margin.",
+  "ECONOMIC_SURFACE_2": "Bridge-traversal fee — cross-chain traversal bound to chain-fee + thin catalytic margin.",
+  "ECONOMIC_SURFACE_3": "Storage / memory fee — Cortex persistence beyond a free tier, bound to storage catalysis.",
+  "ECONOMIC_SURFACE_4": "ZAI LP-100 upside — ZAI holders receive SKY mint proportional to organism-wide execution alpha vs null baseline; no rent on access."
+}

@@ -1,0 +1,63 @@
+---
+rosetta:
+  primary_level: L2
+  primary_column: Philosophy
+  operator: "Kālī 💀"
+  tier: "God"
+  regime: "Śūdra"
+  register: "[I]"
+  canonical_phrase: "03_MEMETICS"
+---
+
+# 03_MEMETICS — Memetic Evolution and Attention Dynamics
+
+## What This Folder Is
+
+This is the Data Science sublane for memetic evolution, attention dynamics, and memetic defense architectures.
+
+The sublane owner is L2 / Kālī because it governs evidence reception,
+pattern admission, and false-meaning cuts. Individual memetic-pathology
+papers may still carry L1 / Kali frontmatter when they analyze capture,
+parasitism, or immune-response dynamics.
+
+## What It Owns
+
+- The hardware/software conflict in meme propagation.
+- Evolutionary dynamics of memes across mind and culture.
+- Anti-memetic defense and ancient egregore architectures.
+- Applied memetic defense strategies.
+
+## What It Must Not Own
+
+- Formal proofs themselves. Route those to `../../05_COSMOLOGY/03_FORMAL_SYSTEM/`.
+- Public release copy. The old dissemination lane is archived at `../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION`; new public copy needs an explicit active owner before publication.
+
+## Content Files
+
+| File | Topic |
+|------|-------|
+| [`01_MEMES_HARDWARE_SOFTWARE_CONFLICT.md`](01_MEMES_HARDWARE_SOFTWARE_CONFLICT.md) | Hardware/software conflict in meme propagation |
+| [`02_MEMES_HARDWARE_SOFTWARE_EVOLUTION.md`](02_MEMES_HARDWARE_SOFTWARE_EVOLUTION.md) | Evolutionary dynamics of memes as hardware/software |
+| [`03_MEMES_MIND_HARDWARE_CULTURE_SOFTWARE.md`](03_MEMES_MIND_HARDWARE_CULTURE_SOFTWARE.md) | Mind as hardware, culture as software |
+| [`04_ANTI_MEMETIC_DEFENSE_ARCHITECTURES.md`](04_ANTI_MEMETIC_DEFENSE_ARCHITECTURES.md) | Defensive architectures against harmful memes |
+| [`05_ANCIENT_EGREGORE_ARCHITECTURES.md`](05_ANCIENT_EGREGORE_ARCHITECTURES.md) | Historical egregore and collective-mind structures |
+| [`06_APPLIED_MEMETIC_DEFENSE_STRATEGIES.md`](06_APPLIED_MEMETIC_DEFENSE_STRATEGIES.md) | Practical memetic defense strategies |
+
+## Read First
+
+- `01_MEMES_HARDWARE_SOFTWARE_CONFLICT.md`
+- Parent route: `../README.md`
+
+## Status
+
+Active source-owner subfolder. Downstream public claims should route through this lane before they sound stronger than they have earned.
+
+---
+
+## Agent Execution Surface
+
+**If you are an AI agent reading this document:**
+
+1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
+2. **Verify references.** Ensure all internal links are valid and updated.
+3. **Canonical Path:** `01_EMERGENTISM/02_EPISTEMOLOGY/03_MEMETICS/README.md`

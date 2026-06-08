@@ -1,0 +1,61 @@
+{
+  "DAC_NAME": "DEX",
+  "LP100_SYMBOL": "DEX",
+  "ARCHETYPE": "Exchange Surface — MEV-immune limit-order DEX (Bancor Carbon family fork with Hedera adaptation)",
+  "NICHE": "Wallet-connected trading with Frequent Batch Auctions and Carbon DeFi limit-order mechanics; exchange substrate consumed by multiple DACs (Skyzai settlement, RealityFutures conceptual adjacency, Agentz tokenization lifecycle when live)",
+  "NICHE_SLUG": "exchange-surface",
+  "THESIS": "The organism needs a settlement-capable exchange surface that preserves K2 (user signs) and η=0 (no extractive spread on access). DEX inherits the Bancor Carbon limit-order model, adapts it to Hedera, and provides FBA-batched MEV immunity — serving as shared infrastructure that DACs settle through, not as a DAC itself.",
+  "VISION": "A planet-scale, low-fee, MEV-immune exchange that is consumable as infrastructure by any organism DAC, without custody and without opaque spread — where the price a trader sees is the price that clears.",
+  "MISSION": "Harmonize the three real subtrees (contracts, backend, frontend) into a publishable coherent stack, preserve upstream Bancor Carbon semantics, and make the `dex.skyzai.com` surface honest about what is deployed vs what is aspirational.",
+  "ONE_PARAGRAPH_DESCRIPTION": "DEX is the on-chain exchange surface for the Emergence stack. It is a forked implementation of Bancor Carbon — order-book-native with standing limit orders on both sides and Frequent Batch Auction fair ordering (no MEV, batch-cleared pricing). Three engineering layers coexist in this repo: Solidity contracts, a NestJS/Hedera backend, and a React/Vite frontend. DACs settle through it via the Skyzai F4 bridge; DEX is not itself a DAC, but Section 4 of `06b_PHYLOGENETIC_TREE.md` lists it as a niche-manifest entry so the ancestry audit can track it.",
+  "IDENTITY_SUMMARY": "Exchange surface. Not an organ. Not an entity. Bancor Carbon-family fork with Hedera adaptation.",
+  "SOVEREIGNTY_BOUNDARY_SUMMARY": "Wallet-connected; users retain custody; K2 signing at every trade. DEX itself is infrastructure, not a custodian. Grace Exit at protocol level via standard ERC-20 withdrawal semantics.",
+  "CONSTITUTIONAL_NOTE": "η=0 on access — no fee to connect, no fee to view order books, no fee to cancel. Trading fees (if any) bind to catalytic unit work (match execution, settlement, batch clearing). No house edge, no spread extraction beyond infrastructure cost. Bancor Carbon upstream license preserved; any Skyzai-specific adapter isolates into adapter layer, not upstream drift.",
+  "SUCCESS_CONDITION": "Three subtrees harmonized under coherent naming, licensing, and build; `dex.skyzai.com` live with audited contracts; ≥3 independent DACs (Skyzai, Agentz, plus one more) settling through DEX end-to-end with OFN receipts.",
+  "FOUNDER_PUBKEY": "TBD — DEX infrastructure is operated by a shared governance layer, not a single founder. K2 at the user level applies per wallet.",
+
+  "SUBSTRATE_DEFINITION": "Wallet-holders who need sovereign, MEV-immune, limit-order-capable execution for any ERC-20-or-Hedera-native asset pair without trusting a custodian. The mismatch: AMMs expose users to MEV and concentrated-liquidity complexity; CEXes require custody; neither offers FBA batch-cleared limit-order UX.",
+  "SUBSTRATE_SUMMARY": "Wallet-connected traders needing MEV-immune limit-order execution.",
+  "SUBSTRATE_UPLINK_SUMMARY": "Wallet-native trading substrate; Carbon limit orders + FBA batching.",
+  "ENTROPY_SOURCES": "(1) Trader limit-order submissions (on-chain); (2) batch-clearing windows (FBA timer); (3) Hedera network fees and congestion telemetry; (4) upstream Bancor protocol parameter updates; (5) DAC-side settlement intents via the Skyzai F4 bridge.",
+  "BASELINE_MODEL": "Null baseline: trade via Uniswap v3 (MEV-exposed AMM) or a custodial CEX (custody risk + spread). Alpha measured as (fill-price-quality vs AMM-slippage) + (MEV exposure reduction) + (custody-risk elimination).",
+  "MISMATCH_1": "MEV sandwich exposure — every AMM trade is a potential victim without batch clearing.",
+  "MISMATCH_2": "AMM concentrated-liquidity UX — complex to provide liquidity, opaque to price.",
+  "MISMATCH_3": "CEX custody — requires trusting a venue that can freeze, fail, or insider-trade.",
+  "MISMATCH_4": "Chain fees on small trades — Ethereum L1 is prohibitive; Hedera integration addresses this at the base layer.",
+
+  "HAZARD_TEMPLATE": "Smart-contract exploit in forked Carbon code pre-audit; upstream Bancor divergence breaking Skyzai adapter assumptions; liquidity bootstrap chicken-and-egg; Hedera network regulatory shift; three-subtree harmonization drift.",
+  "HAZARD_SUMMARY": "Contract exploit, upstream drift, liquidity bootstrap, Hedera regulatory risk, harmonization.",
+  "HAZARD_UPLINK_SUMMARY": "Contract, upstream, liquidity, Hedera, harmonization.",
+  "HAZARD_1": "Smart-contract exploit — pre-audit deployment of forked Carbon contracts is a substrate-hallucination pathology.",
+  "HAZARD_2": "Upstream Bancor drift — silent divergence from upstream breaks Skyzai F4 bridge assumptions. Mitigation: diff adapter layer against upstream tags on every merge.",
+  "HAZARD_3": "Liquidity bootstrap — LPs need traders, traders need LPs. Mitigation via seeded liquidity + fee rebate for early LPs.",
+  "HAZARD_4": "Hedera regulatory classification shift mid-operation — batch-clearing venues may be classified as regulated exchanges in some jurisdictions.",
+
+  "ALPHA_MODEL": "Catalytic per-trade fee, thin, bound to match + settle + batch-clear work. No spread on the trader. η=0 at the access layer — any wallet can view orderbooks, cancel, or post limit orders without paying to participate.",
+  "ALPHA_DESCRIPTION": "DEX catalyzes execution quality (price + MEV resistance) against the null baseline (AMM or CEX). Fee earning binds to measurable catalytic units: one cleared batch, one settled trade, one cross-chain bridge hop.",
+  "ALPHA_SUMMARY": "Thin per-trade catalytic fee; η=0 on access; FBA clears at batch price.",
+  "ALPHA_UPLINK_SUMMARY": "Per-trade catalytic fee; no access rent; FBA batch clearing.",
+
+  "MEMBRANE_RULE_1": "DEX is exchange surface, not custody — user wallets retain funds at all times; smart contracts enable execution but do not hold user assets outside of temporary escrow during batch clearing.",
+  "MEMBRANE_RULE_2": "K2 at every trade — wallet signature required for each limit-order submission and cancellation; no delegation without explicit wallet-level approval.",
+  "MEMBRANE_RULE_3": "η=0 on access — no fee to connect, view, cancel, or post orders. Trading fees (if any) bind to catalytic execution work.",
+  "MEMBRANE_RULE_4": "Upstream integrity — Bancor Carbon license and attribution preserved; Skyzai-specific adaptations live in an isolated adapter layer, never in upstream contracts or core logic.",
+
+  "RECEIPT_SUMMARY": "Limit-order posted, order cancelled, batch cleared, trade settled, bridge-traversed, dispute filed, dispute resolved.",
+  "RECEIPTS_UPLINK_SUMMARY": "Every lifecycle event (post / cancel / clear / settle / bridge / dispute) is a receipt.",
+
+  "OPERATIONS_UPLINK_SUMMARY": "Wallet connect → limit order post (K2 sign) → FBA batch window → batch clear at uniform price → Hedera settlement → OFN receipt → DAC-side acknowledgement via F4 bridge.",
+
+  "PATHOLOGY_UPLINK_SUMMARY": "Pre-audit deployment; silent upstream divergence; MEV re-introduction by well-meaning optimization; subtree naming drift presented as polished monorepo; custody creep (holding user funds beyond batch-clearing escrow); spread extraction masquerading as fee; claims of live volumes beyond on-chain reality.",
+
+  "METRIC_1": "Fill-price quality vs AMM-slippage baseline (basis points saved per trade)",
+  "METRIC_2": "MEV exposure reduction (sandwich attacks prevented / comparable AMM sample)",
+  "METRIC_3": "Batch-clear latency (median time from FBA window close to settlement)",
+  "METRIC_4": "Upstream Bancor compatibility (diff lines in adapter layer vs upstream core)",
+
+  "ECONOMIC_SURFACE_1": "Per-trade match fee — thin, bound to matching work.",
+  "ECONOMIC_SURFACE_2": "Per-trade settle fee — bound to on-chain settlement cost plus thin catalytic margin.",
+  "ECONOMIC_SURFACE_3": "Bridge-traversal fee — for cross-chain hops via Skyzai F4 bridge; bound to chain-fee pass-through.",
+  "ECONOMIC_SURFACE_4": "LP rebate — early LPs receive rebate tier on accumulated fees; sunset when organic liquidity depth stabilizes."
+}

@@ -1,0 +1,101 @@
+body { margin: 0; overflow: hidden; background: #000; font-family: 'Courier New', monospace; }
+        #canvas-container { width: 100vw; height: 100vh; }
+        .equation-display {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            color: #fff;
+            z-index: 10;
+        }
+        .trinity-display {
+            position: absolute;
+            bottom: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: #fff;
+            z-index: 10;
+            background: rgba(0,0,0,0.8);
+            padding: 20px 40px;
+            border: 1px solid #00e5ff;
+        }
+        .trinity-eq {
+            font-size: 36px;
+            color: #76ff03;
+            margin: 10px 0;
+        }
+        .slider-container {
+            position: absolute;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 500px;
+            z-index: 10;
+        }
+        input[type="range"] {
+            width: 100%;
+            -webkit-appearance: none;
+            height: 6px;
+            background: linear-gradient(90deg, #ff0000 0%, #76ff03 50%, #ffffff 100%);
+            outline: none;
+            border-radius: 3px;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 24px;
+            height: 24px;
+            background: #00e5ff;
+            cursor: pointer;
+            border-radius: 50%;
+            box-shadow: 0 0 20px #00e5ff;
+        }
+        .phase-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+            z-index: 10;
+        }
+        .phase-btn {
+            background: rgba(0,0,0,0.9);
+            border: 1px solid #333;
+            color: #666;
+            padding: 8px 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .phase-btn:hover, .phase-btn.active {
+            border-color: #00e5ff;
+            color: #00e5ff;
+            box-shadow: 0 0 10px rgba(0,229,255,0.3);
+        }
+        .dim-label {
+            position: absolute;
+            font-size: 200px;
+            font-weight: bold;
+            opacity: 0.05;
+            color: #fff;
+            right: 50px;
+            top: 50px;
+            pointer-events: none;
+        }
+        .glow { animation: glow 2s ease-in-out infinite alternate; }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #76ff03; }
+            to { text-shadow: 0 0 30px #00e5ff, 0 0 40px #76ff03; }
+        }
+        .zero-glow { color: #ff0000; animation: zeroGlow 3s ease-in-out infinite alternate; }
+        @keyframes zeroGlow {
+            from { text-shadow: 0 0 10px #ff0000; }
+            to { text-shadow: 0 0 30px #ff0000, 0 0 50px #ff0000; }
+        }
+        .inf-glow { color: #ffffff; animation: infGlow 3s ease-in-out infinite alternate; }
+        @keyframes infGlow {
+            from { text-shadow: 0 0 10px #ffffff; }
+            to { text-shadow: 0 0 30px #ffffff, 0 0 50px #00e5ff; }
+        }

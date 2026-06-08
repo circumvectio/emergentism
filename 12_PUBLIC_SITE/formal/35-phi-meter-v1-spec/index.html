@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PHI-METER v1 SPEC (Code Lens) — Emergentism</title>
+<meta name="description" content="Axioms, derivations, and proofs — the checkable scaffolding beneath the Papers.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../../assets/css/xai.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="../../">Emergentism</a>
+  <nav class="number-nav" aria-label="Public doctrine routes">
+    <a href="../../0/">0</a>
+    <a href="../../1/">1</a>
+    <a href="../../2/">2</a>
+    <a href="../../3/">3</a>
+    <a href="../../4/">4</a>
+    <a href="../../5/">5</a>
+    <a href="../../6/">6</a>
+    <a href="../../rosetta/">R</a>
+    <a href="../../soul-loop/">S</a>
+    <a href="../../atlas/">A</a>
+    <a href="../../read/">Read</a>
+  </nav>
+</header>
+
+<main class="library-shell">
+  <section class="library-hero">
+    <div class="evidence">Public reading library</div>
+    <h1>PHI-METER v1 SPEC (Code Lens)</h1>
+    <p>Axioms, derivations, and proofs — the checkable scaffolding beneath the Papers.</p>
+    <div class="library-route-row">
+      <a href="../../read/">Read</a>
+      <a href="../../papers/">Papers</a>
+      <a href="../../canon/">Canon</a>
+      <a href="../../foundations/">Foundations</a>
+      <a href="../../trinity/">Trinity</a>
+      <a href="../../formal/">Formal</a>
+      <a href="../../paradox/">Paradox</a>
+      <a href="../../memetic/">Memetic</a>
+      <a href="../../rosettad/">Rosetta D</a>
+      <a href="../../operators/">Operators</a>
+      <a href="../../will/">Teleology</a>
+      <a href="../../value/">Axiology</a>
+      <a href="../../ground/">Ontology</a>
+      <a href="../../sacred/">Theology</a>
+      <a href="../../method/">Method</a>
+      <a href="../../meta/">Meta</a>
+      <a href="../../sources/">Sources</a>
+    </div>
+  </section>
+  <article class="library-article">
+    <h1 id="phi-meter-v1-spec-code-lens">PHI-METER v1 SPEC (Code Lens)</h1>
+<h2 id="a-concrete-reproducible-measurement-protocol-for-and-with-the-2026-04-19-code-audit-as-the-pilot-application">A Concrete, Reproducible Measurement Protocol for Φ and ν — With the 2026-04-19 Code Audit as the Pilot Application</h2>
+<p><strong>Status:</strong> Working spec; formalizes the existing code-lens rubric, adds the pieces needed for inter-rater reproducibility
+<strong>Date:</strong> 2026-04-22
+<strong>Evidence Tier:</strong> [C] Conjecture for the spec; [I] Interpretive for the pilot application once the rubric-band definitions here are retroactively accepted for the 2026-04-19 audit
+<strong>Source:</strong> <a href="../30-operational-definitions/"><code>30_OPERATIONAL_DEFINITIONS.md</code></a>, <a href="../32-theorem-upgrade-protocol/"><code>32_THEOREM_UPGRADE_PROTOCOL.md</code></a>, <a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/02_SKYZAI/01_NOOSPHERE/P-SCORES.md"><code>../../../02_SKYZAI/01_NOOSPHERE/P-SCORES.md</code></a>, <a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/02_SKYZAI/01_NOOSPHERE/05_PROJECT_MANAGEMENT/04_HISTORY/P_AUDIT_CODE_ONLY_2026_04_19.md"><code>../../../02_SKYZAI/01_NOOSPHERE/05_PROJECT_MANAGEMENT/04_HISTORY/P_AUDIT_CODE_ONLY_2026_04_19.md</code></a>
+<strong>See also:</strong> <a href="../29-primitives-and-type-signatures/"><code>29_PRIMITIVES_AND_TYPE_SIGNATURES.md</code></a>, <a href="../31-falsifiers-index/"><code>31_FALSIFIERS_INDEX.md</code></a>, <a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md">Paper L (Phi-meter without a new instrument)</a></p>
+<hr>
+<h2 id="1-why-this-file-exists">1. Why This File Exists</h2>
+<p>The organism has been publishing per-organ <code>(Φ̂, ν̂, P_node)</code> triples for some time (older operational surfaces may label this <code>P_eff</code>; see the historical external <code>SKYZAI_ORG/P-SCORES.md</code> route (legacy namespace; live content now under <code>../../../02_SKYZAI/01_NOOSPHERE/P-SCORES.md</code>) and the 2026-04-19 code-only audit). The numbers are stable, the cascade rule (BRIEF → P-SCORES → derived docs) is enforced, and the formula <code>P_node = Φ × ν</code> is declared. What is missing — and what Paper L identifies — is a <strong>rubric specification</strong>: exactly how each 0.0-to-1.0 coordinate is assigned from the observable code surface, and how two independent raters would arrive at the same value.</p>
+<p>Without that, the audit is a trusted discipline: it produces coherent numbers, but the numbers are not yet reproducible outside the founder's head. This file supplies the missing rubric. It is deliberately v1 — the simplest spec that covers the existing practice and is tight enough to measure inter-rater reliability on.</p>
+<hr>
+<h2 id="2-scope-the-code-lens">2. Scope — The Code Lens</h2>
+<p>Three mutually incompatible <em>lenses</em> exist for measuring <code>Φ̂, ν̂</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Lens</th>
+<th>What counts</th>
+<th>What's excluded</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Code-lens</strong> (this spec)</td>
+<td>Files, lines, test surface, compile/test/probe results in the working tree</td>
+<td>Deployment receipts, live relays, user/adoption surfaces</td>
+</tr>
+<tr>
+<td><strong>Runtime-lens</strong></td>
+<td>Live deployment, relay publication, observable in-the-wild state</td>
+<td>Code-only breadth that hasn't shipped</td>
+</tr>
+<tr>
+<td><strong>Adoption-lens</strong></td>
+<td>User/adoption metrics, network effects, external uptake</td>
+<td>Everything before first external user</td>
+</tr>
+</tbody>
+</table>
+<p>The three lenses return <em>different numbers</em>. The 2026-04-19 audit explicitly states: "TheCircle, RealityFutures, and Skyzai all rise under a code-only lens because local proofs, compile/test surfaces, and implementation breadth are counted while deployment and user surfaces are intentionally excluded." A published <code>P̂</code> is only interpretable if the lens is named.</p>
+<p><strong>v1 specifies the code-lens only.</strong> Runtime-lens and adoption-lens v1 specs are future work.</p>
+<hr>
+<h2 id="3-the-meter-rubric-code-lens">3. The Φ-Meter Rubric (Code Lens)</h2>
+<p><code>Φ̂_code</code> is the mean of four sub-scores, each 0.0–1.0, each with pre-registered bands. The sub-scores are <em>independent enough to rate separately</em> (no single sub-score should dominate), and their mean is deliberately simpler than a weighted sum — weights introduce subjective tuning that undermines reproducibility.</p>
+<pre><code>Φ̂_code := (φ_arch + φ_depth + φ_test + φ_coh) / 4
+</code></pre>
+<h3 id="31-_arch-architectural-completeness">3.1 <code>φ_arch</code> — Architectural Completeness</h3>
+<p><strong>What is measured.</strong> Whether the organ's declared responsibility surface (per its BRIEF.md) has a corresponding implementation structure in the repository.</p>
+<table>
+<thead>
+<tr>
+<th>Band</th>
+<th>Score</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Missing</td>
+<td>0.0–0.25</td>
+<td>Organ's declared surface is mostly absent from code</td>
+</tr>
+<tr>
+<td>Sketched</td>
+<td>0.25–0.50</td>
+<td>Skeleton exists; major modules unimplemented</td>
+</tr>
+<tr>
+<td>Scaffolded</td>
+<td>0.50–0.75</td>
+<td>Most declared modules present; some are stubs or placeholders</td>
+</tr>
+<tr>
+<td>Present</td>
+<td>0.75–0.90</td>
+<td>All declared modules implemented; minor gaps at the edges</td>
+</tr>
+<tr>
+<td>Complete</td>
+<td>0.90–1.00</td>
+<td>Full declared surface present; no known architectural gaps</td>
+</tr>
+</tbody>
+</table>
+<h3 id="32-_depth-implementation-depth">3.2 <code>φ_depth</code> — Implementation Depth</h3>
+<p><strong>What is measured.</strong> Code density per declared module. Observable signals: lines of code, count of non-trivial functions/classes, absence of <code>TODO</code> / <code>FIXME</code> / stub sentinels.</p>
+<table>
+<thead>
+<tr>
+<th>Band</th>
+<th>Score</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shallow</td>
+<td>0.0–0.3</td>
+<td>Heavy use of stubs, <code>pass</code>, <code>NotImplementedError</code>, or comment-only bodies</td>
+</tr>
+<tr>
+<td>Outlined</td>
+<td>0.3–0.55</td>
+<td>Some real implementation, still many stubs</td>
+</tr>
+<tr>
+<td>Working</td>
+<td>0.55–0.75</td>
+<td>Main paths implemented end-to-end; stubs limited to edge cases</td>
+</tr>
+<tr>
+<td>Robust</td>
+<td>0.75–0.90</td>
+<td>Edge cases handled, error paths present, minimal stubs</td>
+</tr>
+<tr>
+<td>Polished</td>
+<td>0.90–1.00</td>
+<td>Zero stubs on declared paths; defensive and documented</td>
+</tr>
+</tbody>
+</table>
+<h3 id="33-_test-test-coverage-signal">3.3 <code>φ_test</code> — Test Coverage Signal</h3>
+<p><strong>What is measured.</strong> Count and quality of tests. This is a signal, not a guarantee — a file can be named <code>test_*</code> without testing anything. Rater must glance at ≥3 sampled test files to confirm they assert against real behavior.</p>
+<table>
+<thead>
+<tr>
+<th>Band</th>
+<th>Score</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>None</td>
+<td>0.0–0.2</td>
+<td>No test files or tests are placeholder</td>
+</tr>
+<tr>
+<td>Thin</td>
+<td>0.2–0.4</td>
+<td>Tests exist but cover only happy paths</td>
+</tr>
+<tr>
+<td>Useful</td>
+<td>0.4–0.6</td>
+<td>Happy paths and some edge cases; <code>&gt; 10</code> real assertions</td>
+</tr>
+<tr>
+<td>Strong</td>
+<td>0.6–0.8</td>
+<td>Happy paths, edge cases, error paths; <code>&gt; 50</code> real assertions</td>
+</tr>
+<tr>
+<td>Deep</td>
+<td>0.8–1.0</td>
+<td>Comprehensive suite; <code>&gt; 200</code> real assertions, property tests or integration tests present</td>
+</tr>
+</tbody>
+</table>
+<h3 id="34-_coh-coherence-with-declared-purpose">3.4 <code>φ_coh</code> — Coherence with Declared Purpose</h3>
+<p><strong>What is measured.</strong> Subjective but anchored: does the code <em>do what the BRIEF.md says it does</em>? Scope creep down-rates; scope clarity up-rates.</p>
+<table>
+<thead>
+<tr>
+<th>Band</th>
+<th>Score</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Drift</td>
+<td>0.0–0.4</td>
+<td>Code substantially diverges from declared purpose</td>
+</tr>
+<tr>
+<td>Partial</td>
+<td>0.4–0.6</td>
+<td>Code implements purpose partially, with significant off-topic code</td>
+</tr>
+<tr>
+<td>Aligned</td>
+<td>0.6–0.8</td>
+<td>Code implements purpose; occasional scope excess</td>
+</tr>
+<tr>
+<td>Focused</td>
+<td>0.8–0.95</td>
+<td>Clear scope discipline, minimal off-topic code</td>
+</tr>
+<tr>
+<td>Exemplary</td>
+<td>0.95–1.0</td>
+<td>Ruthless scope discipline; every module earns its place</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="4-the-meter-rubric-code-lens">4. The ν-Meter Rubric (Code Lens)</h2>
+<p><code>ν̂_code</code> is the mean of four sub-scores over <strong>executable viability</strong> indicators, each 0.0–1.0.</p>
+<pre><code>ν̂_code := (ν_compile + ν_test + ν_probe + ν_closure) / 4
+</code></pre>
+<h3 id="41-_compile-compile-build-path">4.1 <code>ν_compile</code> — Compile / Build Path</h3>
+<table>
+<thead>
+<tr>
+<th>Band</th>
+<th>Score</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Broken</td>
+<td>0.0–0.2</td>
+<td>Primary entry points fail to parse / compile</td>
+</tr>
+<tr>
+<td>Fragile</td>
+<td>0.2–0.5</td>
+<td>Compiles only with specific environment; fails for fresh clone</td>
+</tr>
+<tr>
+<td>Builds</td>
+<td>0.5–0.8</td>
+<td>Builds on fresh clone with documented steps</td>
+</tr>
+<tr>
+<td>Clean</td>
+<td>0.8–1.0</td>
+<td>Builds on fresh clone with zero warnings / deprecations</td>
+</tr>
+</tbody>
+</table>
+<h3 id="42-_test-test-suite-pass-rate">4.2 <code>ν_test</code> — Test Suite Pass Rate</h3>
+<pre><code>ν_test := fraction of tests passing in the declared primary test command
+</code></pre>
+<p>Map directly to the 0.0–1.0 scale with no banding — this is quantitative.</p>
+<h3 id="43-_probe-runnable-proof-path">4.3 <code>ν_probe</code> — Runnable Proof Path</h3>
+<p><strong>What is measured.</strong> Whether a human can run one documented command and observe the organ doing its declared function. Each organ's BRIEF should declare its primary probe.</p>
+<table>
+<thead>
+<tr>
+<th>Band</th>
+<th>Score</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No probe</td>
+<td>0.0–0.2</td>
+<td>No documented way to demonstrate the organ running</td>
+</tr>
+<tr>
+<td>Stub probe</td>
+<td>0.2–0.4</td>
+<td>Probe runs but produces stubbed / mocked output</td>
+</tr>
+<tr>
+<td>Partial probe</td>
+<td>0.4–0.65</td>
+<td>Probe works but depends on external service not documented to bring up locally</td>
+</tr>
+<tr>
+<td>Local probe</td>
+<td>0.65–0.85</td>
+<td>Probe runs end-to-end on a local machine; output is real</td>
+</tr>
+<tr>
+<td>Clean probe</td>
+<td>0.85–1.0</td>
+<td>Probe runs on fresh clone with documented setup; output is real and verifiable</td>
+</tr>
+</tbody>
+</table>
+<h3 id="44-_closure-local-closure">4.4 <code>ν_closure</code> — Local Closure</h3>
+<p><strong>What is measured.</strong> Does the organ <em>close its loop</em> locally, or does it depend on external services whose unavailability voids the probe?</p>
+<table>
+<thead>
+<tr>
+<th>Band</th>
+<th>Score</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Open</td>
+<td>0.0–0.4</td>
+<td>Primary paths hard-depend on external service</td>
+</tr>
+<tr>
+<td>Partial</td>
+<td>0.4–0.7</td>
+<td>Some paths close locally; others require external</td>
+</tr>
+<tr>
+<td>Mostly closed</td>
+<td>0.7–0.9</td>
+<td>Primary probe closes locally; edge paths may not</td>
+</tr>
+<tr>
+<td>Self-contained</td>
+<td>0.9–1.0</td>
+<td>All primary paths close without external dependencies</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="5-aggregation">5. Aggregation</h2>
+<p>Per organ:</p>
+<pre><code>P̂_eff(organ) := Φ̂_code(organ) · ν̂_code(organ)
+</code></pre>
+<p>Per organism:</p>
+<pre><code>P̂_organism := ( ∏_{organ ∈ organs} P̂_eff(organ) )^(1/|organs|)       (geometric mean)
+</code></pre>
+<p>The geometric mean is preferred over the arithmetic mean because it penalizes any near-zero organ: an organism with one broken organ cannot hide behind three strong ones.</p>
+<hr>
+<h2 id="6-the-maturity-ladder">6. The Maturity Ladder</h2>
+<p>Previously loose; now pre-registered:</p>
+<table>
+<thead>
+<tr>
+<th>Band</th>
+<th>Range</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.00–0.10</td>
+<td>Dormant</td>
+<td>No observable function</td>
+</tr>
+<tr>
+<td>0.10–0.30</td>
+<td>Egg</td>
+<td>Coherent idea; minimal viability</td>
+</tr>
+<tr>
+<td>0.30–0.65</td>
+<td>Equator</td>
+<td>Balanced development; both Φ and ν above survival threshold</td>
+</tr>
+<tr>
+<td>0.65–0.85</td>
+<td>Adolescent (G1)</td>
+<td>Strong in both coordinates; demonstrable function</td>
+</tr>
+<tr>
+<td>0.85–0.95</td>
+<td>Adult</td>
+<td>Robust in both coordinates; low drift</td>
+</tr>
+<tr>
+<td>0.95–1.00</td>
+<td>Apex</td>
+<td>Tight to the equator; <code>\|Φ̂ − ν̂\|</code> minimal</td>
+</tr>
+</tbody>
+</table>
+<p>The band labels match existing usage in <a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/02_SKYZAI/01_NOOSPHERE/P-SCORES.md"><code>P-SCORES.md</code></a>; v1 fixes the thresholds.</p>
+<hr>
+<h2 id="7-inter-rater-reliability-irr">7. Inter-Rater Reliability (IRR)</h2>
+<p><strong>Target for <code>[C] → [I]</code> promotion.</strong> Two independent raters apply §3–§4 to the same working-tree snapshot, producing pairs <code>(Φ̂_A, Φ̂_B)</code> and <code>(ν̂_A, ν̂_B)</code> per organ.</p>
+<pre><code>IRR := 1 - (mean absolute error across all organ coordinates) / 0.5
+</code></pre>
+<p>The <code>0.5</code> denominator is the maximum possible MAE when both raters are within a single band. <code>IRR ≥ 0.7</code> is the threshold for promotion, matching <a href="../30-operational-definitions/"><code>30_OPERATIONAL_DEFINITIONS.md</code></a> §"Promotion Ladder."</p>
+<p>IRR below <code>0.7</code> does not invalidate the rubric — it indicates the rubric needs tightening (usually by narrowing band widths or adding signals).</p>
+<hr>
+<h2 id="8-pilot-application-the-2026-04-19-code-audit-retroactive">8. Pilot Application — The 2026-04-19 Code Audit (Retroactive)</h2>
+<p>The 2026-04-19 code audit is the first concrete application of what this spec formalizes. Its values are consistent with the rubric if interpreted as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Organ</th>
+<th style="text-align: right;">Φ̂ reported</th>
+<th style="text-align: right;">ν̂ reported</th>
+<th style="text-align: right;">P̂ reported</th>
+<th>Classification (v1 ladder)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TheCircle</td>
+<td style="text-align: right;">0.80</td>
+<td style="text-align: right;">0.66</td>
+<td style="text-align: right;">0.53</td>
+<td><strong>Equator</strong> (0.30–0.65) ✓</td>
+</tr>
+<tr>
+<td>RealityFutures</td>
+<td style="text-align: right;">0.82</td>
+<td style="text-align: right;">0.72</td>
+<td style="text-align: right;">0.59</td>
+<td><strong>Equator</strong> (0.30–0.65) ✓</td>
+</tr>
+<tr>
+<td>Agentz</td>
+<td style="text-align: right;">0.90</td>
+<td style="text-align: right;">0.84</td>
+<td style="text-align: right;">0.76</td>
+<td><strong>Adolescent (G1)</strong> (0.65–0.85) ✓</td>
+</tr>
+<tr>
+<td>Skyzai</td>
+<td style="text-align: right;">0.88</td>
+<td style="text-align: right;">0.62</td>
+<td style="text-align: right;">0.55</td>
+<td><strong>Equator</strong> (0.30–0.65) ✓</td>
+</tr>
+<tr>
+<td><strong>Organism</strong></td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><strong>0.60</strong></td>
+<td><strong>Equator</strong> ✓ (geometric mean)</td>
+</tr>
+</tbody>
+</table>
+<p>All four classifications are consistent with v1 ladder thresholds, which is evidence that the v1 thresholds <em>recover</em> the judgment already expressed in the audit (rather than overriding it). The audit values can be read as single-rater applications of this rubric at <code>[C]</code> tier. Promotion to <code>[I]</code> requires a second rater.</p>
+<h3 id="node-level-test-of-the-manifold-identity">Node-level test of the manifold identity</h3>
+<p>The framework states (A1) that on the manifold <code>φ · ν = 1</code> but node-level <code>P_node = Φ × V</code> can be <code>&lt; 1</code>. The audit triples give us the first dataset:</p>
+<table>
+<thead>
+<tr>
+<th>Organ</th>
+<th style="text-align: right;">Φ̂ · ν̂</th>
+<th style="text-align: right;">Gap to 1</th>
+<th style="text-align: right;"><code>\|Φ̂ − ν̂\|</code> (imbalance)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TheCircle</td>
+<td style="text-align: right;">0.528</td>
+<td style="text-align: right;">0.472</td>
+<td style="text-align: right;">0.14</td>
+</tr>
+<tr>
+<td>RealityFutures</td>
+<td style="text-align: right;">0.590</td>
+<td style="text-align: right;">0.410</td>
+<td style="text-align: right;">0.10</td>
+</tr>
+<tr>
+<td>Agentz</td>
+<td style="text-align: right;">0.756</td>
+<td style="text-align: right;">0.244</td>
+<td style="text-align: right;">0.06</td>
+</tr>
+<tr>
+<td>Skyzai</td>
+<td style="text-align: right;">0.546</td>
+<td style="text-align: right;">0.454</td>
+<td style="text-align: right;">0.26</td>
+</tr>
+</tbody>
+</table>
+<p>Under F5 (selection pressure toward the equator, per <a href="../26-the-derivation-axioms/"><code>26_THE_DERIVATION_AXIOMS.md</code></a> T3), <code>|Φ̂ − ν̂|</code> should contract across audit cycles, and <code>Φ̂ · ν̂</code> should drift toward 1. <strong>Agentz is closest to the equator; Skyzai is furthest.</strong> If F5 is a real selection pressure, the prediction is that over subsequent audits Skyzai either closes the gap (through scope discipline or execution closure) or, failing that, shows structural stress.</p>
+<p>This is genuinely <em>falsifiable</em>, which is the point — it is not a coordinate identity.</p>
+<hr>
+<h2 id="9-pre-registered-falsifier-next-audit-cycle">9. Pre-Registered Falsifier (Next Audit Cycle)</h2>
+<p>Registered in <a href="../31-falsifiers-index/"><code>31_FALSIFIERS_INDEX.md</code></a> under T3's empirical falsifier:</p>
+<blockquote>
+<p><strong>[C] Pre-registration (author: this spec).</strong> Over the next four audit cycles under the v1 rubric applied by ≥2 raters (IRR ≥ 0.7), if the median <code>|Φ̂ − ν̂|</code> across the four organs does <strong>not</strong> show a downward trend, <em>and</em> no organ has undergone structural stress (shutdown, pivot, scope revision), T3's empirical reading is falsified.</p>
+</blockquote>
+<p>"Structural stress" is pre-defined: any of (a) organ P̂ dropping ≥ 0.1 between cycles; (b) organ BRIEF substantially revised; (c) organ paused or deprecated per the project-management cadence.</p>
+<p>Cycle cadence should match the existing audit rhythm (roughly quarterly). Four cycles is a one-year falsifier.</p>
+<hr>
+<h2 id="10-promotion-path-for-this-spec">10. Promotion Path For This Spec</h2>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[C]</strong></td>
+<td><em>Current.</em> Spec exists; one single-rater audit (2026-04-19) is retroactively interpretable under it.</td>
+</tr>
+<tr>
+<td><strong>[I]</strong></td>
+<td>Two independent raters produce audits with IRR ≥ 0.7. Ideally staged at the next quarterly audit.</td>
+</tr>
+<tr>
+<td><strong>[S]</strong></td>
+<td>Derivation that the four sub-scores under each of Φ and ν are the <em>minimal</em> set required to discriminate the bands — i.e., no sub-score can be dropped without merging adjacent bands. (This is the "uniqueness" step from the promotion protocol.)</td>
+</tr>
+<tr>
+<td><strong>[S]</strong></td>
+<td>External replication: an independent group applies the rubric to an unrelated multi-organ codebase and shows the published-then-actual classification agrees.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="11-what-this-spec-does-not-do">11. What This Spec Does Not Do</h2>
+<ul>
+<li>Does not replace disclosure-based judgment (<a href="../26-the-derivation-axioms/"><code>26_THE_DERIVATION_AXIOMS.md</code></a> D5). A code-lens <code>P̂</code> is <em>one</em> view; primary disclosure may see what the rubric misses. That is expected and is why file 32 retains the Pratyakṣa primacy.</li>
+<li>Does not authorize public-live claims. Per <a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/02_SKYZAI/01_NOOSPHERE/P-SCORES.md"><code>P-SCORES.md</code></a>: "P-scores are internal health and integration metrics, not a blanket license for public launch claims." <code>ORGANISM_RUNTIME_TRUTH.md</code> remains the authority for public surface.</li>
+<li>Does not collapse the three lenses. A code-lens <code>P̂</code> of 0.76 is not the same as a runtime-lens <code>P̂</code> of 0.76. Comparisons across lenses are nonsensical unless both lenses have v1 specs — which runtime- and adoption-lens do not yet.</li>
+</ul>
+<hr>
+<h2 id="12-see-also">12. See Also</h2>
+<ul>
+<li><a href="../29-primitives-and-type-signatures/"><code>29_PRIMITIVES_AND_TYPE_SIGNATURES.md</code></a> — <code>Φ</code>, <code>ν</code> type signatures</li>
+<li><a href="../30-operational-definitions/"><code>30_OPERATIONAL_DEFINITIONS.md</code></a> — general-purpose measurement candidates; this spec is one concrete instance</li>
+<li><a href="../31-falsifiers-index/"><code>31_FALSIFIERS_INDEX.md</code></a> — host of the pre-registered falsifier above</li>
+<li><a href="../32-theorem-upgrade-protocol/"><code>32_THEOREM_UPGRADE_PROTOCOL.md</code></a> — 5-step protocol this spec instantiates</li>
+<li><a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/02_SKYZAI/01_NOOSPHERE/P-SCORES.md"><code>../../../02_SKYZAI/01_NOOSPHERE/P-SCORES.md</code></a> — canonical P-register; cascades from organ BRIEFs</li>
+<li><a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/02_SKYZAI/01_NOOSPHERE/05_PROJECT_MANAGEMENT/04_HISTORY/P_AUDIT_CODE_ONLY_2026_04_19.md"><code>../../../02_SKYZAI/01_NOOSPHERE/05_PROJECT_MANAGEMENT/04_HISTORY/P_AUDIT_CODE_ONLY_2026_04_19.md</code></a> — first application</li>
+<li><a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md">Paper L framing</a> — the open research gate this spec begins to close</li>
+</ul>
+<hr>
+<h2 id="execution-surface">Execution Surface</h2>
+<p><strong>If you are an AI agent reading this document:</strong></p>
+<ol>
+<li><strong>Current Phase Check:</strong> Phase 0 — harden specs, do not release to production.</li>
+<li><strong>Your Next Action:</strong>
+   - Treat this spec as the code-lens rubric for any <code>(Φ̂, ν̂)</code> measurement. When running a new audit, apply §3-§4 band definitions, record the sub-score breakdown (not just the aggregate), and state the rater. Cross-file to <a href="../31-falsifiers-index/"><code>31_FALSIFIERS_INDEX.md</code></a> any new pre-registrations.</li>
+<li><strong>Expected Output:</strong> A new dated audit document in <code>02_SKYZAI/01_NOOSPHERE/05_PROJECT_MANAGEMENT/04_HISTORY/</code> following the same format as <code>P_AUDIT_CODE_ONLY_2026_04_19.md</code>, but with sub-score tables attached for each organ and an explicit rater.</li>
+<li><strong>Success Criteria:</strong> Two independent raters applying this spec to the same working-tree snapshot achieve IRR ≥ 0.7.</li>
+<li><strong>Canonical Path:</strong> <code>01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/35_PHI_METER_V1_SPEC.md</code></li>
+</ol>
+<p><em>The seer sees. The seer does not insist.</em>
+<em>The framework works at Layer 0 without Layer 2.</em>
+<em>The Ṛṣi succeeds when the student puts down the map and walks.</em></p>
+<p><em>Zero-Sum Resolution Equation</em></p>
+  </article>
+  <aside class="library-meta">
+    <span>[S] / [I] public rendered prose</span>
+    <span>Source: docs/handoff/formal-public/35_PHI_METER_V1_SPEC.md</span>
+    <span>Generated by 12_PUBLIC_SITE/generate_public_library.py</span>
+  </aside>
+  <footer class="site-footer">
+    <div class="phi">⊙ = • × ○</div>
+    <p>Public doctrine surface · evidence tiers preserved</p>
+  </footer>
+
+</main>
+</body>
+</html>

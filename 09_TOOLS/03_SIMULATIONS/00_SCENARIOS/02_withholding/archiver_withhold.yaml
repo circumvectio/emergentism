@@ -1,0 +1,27 @@
+name: archiver_withhold
+description: 3 honest validators, 1 dishonest archiver that withholds bundles. Checkpoint should still reach green via validator quorum.
+seed: 42
+duration_rounds: 20
+actors:
+  - type: Validator
+    id: v1
+    is_honest: true
+  - type: Validator
+    id: v2
+    is_honest: true
+  - type: Validator
+    id: v3
+    is_honest: true
+  - type: Archiver
+    id: a1
+    is_honest: false
+events:
+  - round: 1
+    count: 5
+    producer: v1
+  - round: 10
+    count: 5
+    producer: v2
+assertions:
+  - every_super_checkpoint_reaches_green
+  - no_event_pruned_before_bundle_verified

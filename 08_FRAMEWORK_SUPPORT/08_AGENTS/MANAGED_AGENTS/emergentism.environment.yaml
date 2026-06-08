@@ -1,0 +1,14 @@
+# Emergentism Managed Agents — shared cloud environment
+# One environment, reused by all seven caste agents. Each session provisions a
+# container from this template. Mount the Magnum Opus repo per-session as a
+# github_repository resource (see README §Runtime).
+name: emergentism-seven
+description: "Shared cloud container for the seven Emergentism caste slots (2 Gods + 2 Demons + 3 Executive boundary rows on P=Φ×V)."
+config:
+  type: cloud
+  networking:
+    # L2/L3/L5 use web_search / web_fetch. Tighten to `limited` + allowed_hosts to lock egress.
+    type: unrestricted
+metadata:
+  framework: "Emergentism"
+  purpose: "seven-operator caste ensemble"

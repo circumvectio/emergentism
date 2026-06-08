@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Burrisphere — Emergentism</title>
+<meta name="description" content="φ·ν = 1 on S². The seven positions on the Burrisphere — drag to rotate, click a position to read its operator, discipline, and action." />
+
+<link rel="stylesheet" href="assets/css/xai.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="./">Emergentism</a>
+  <nav class="number-nav" aria-label="Public doctrine routes">
+    <a href="0/">0</a>
+    <a href="1/">1</a>
+    <a href="2/">2</a>
+    <a href="3/">3</a>
+    <a href="4/">4</a>
+    <a href="5/">5</a>
+    <a href="6/">6</a>
+    <a href="rosetta/">R</a>
+    <a href="soul-loop/">S</a>
+    <a href="atlas/">A</a>
+    <a href="read/">Read</a>
+  </nav>
+</header>
+<canvas id="scene"></canvas>
+<div class="vignette"></div>
+
+<span class="brand">Emergentism · The Burrisphere</span>
+<a class="exit" href="index.html">Enter the framework →</a>
+<div class="title"><div class="eq">φ · ν = 1 on S²</div><div class="sub">Seven positions · the equator is the life</div></div>
+
+<div id="panel">
+  <div class="lvl" id="p-lvl">L4 · Kṣatriya</div>
+  <div class="op" id="p-op">Arjuna ⚔</div>
+  <div class="tier" id="p-tier" style="color:var(--gold)">God · the equator</div>
+  <div class="ology" id="p-ology">Axiology</div>
+  <div class="q" id="p-q">"What has value?"</div>
+  <div class="row"><span class="k">Balance B = sin θ</span><span class="v" id="p-b">1.000</span></div>
+  <div class="row"><span class="k">Action on P_node = Φ·V</span><span class="v" id="p-act">balance dΦ/Φ = dV/V</span></div>
+  <div class="row"><span class="k">P∞ = φ · ν</span><span class="v">1</span></div>
+</div>
+
+<div class="hint" id="hint">drag to rotate · click a position</div>
+<div class="legend">
+  <span><i style="background:#8b2e2e"></i>Demon</span>
+  <span><i style="background:#c9a84c"></i>God</span>
+  <span><i style="background:#7a6ea8"></i>Executive</span>
+  <span><i style="background:#e8e4df"></i>L4 equator</span>
+</div>
+
+<div id="fallback">
+  <div class="g">φ · ν = 1</div>
+  <p style="max-width:42ch;line-height:1.7">Your browser could not start WebGL. The Burrisphere holds seven positions on S²;
+  balance B = sin θ peaks at the L4 equator where φ = ν = 1.</p>
+  <a href="index.html">Enter the framework →</a>
+</div>
+
+<!-- Three.js is self-hosted under ./vendor/three-0.160.0/ — no external CDN.
+     Run ./predeploy_check.sh before deploy to verify zero remote dependencies. -->
+<script type="importmap">
+{ "imports": {
+  "three": "./vendor/three-0.160.0/three.module.js",
+  "three/addons/": "./vendor/three-0.160.0/"
+}}
+</script>
+<script type="module">
+let THREE, OrbitControls, EffectComposer, RenderPass, UnrealBloomPass;
+try {
+  THREE = await import('three');
+  ({ OrbitControls } = await import('three/addons/controls/OrbitControls.js'));
+  ({ EffectComposer } = await import('three/addons/postprocessing/EffectComposer.js'));
+  ({ RenderPass } = await import('three/addons/postprocessing/RenderPass.js'));
+  ({ UnrealBloomPass } = await import('three/addons/postprocessing/UnrealBloomPass.js'));
+} catch (e) { document.getElementById('fallback').style.display = 'flex'; throw e; }
+
+const GOLD = 0xc9a84c, TEAL = 0x3a7a6e, CRIMSON = 0x8b2e2e, VIOLET = 0x7a6ea8, WHITE = 0xe8e4df;
+// the seven positions (read off 00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md / the Master Rosetta)
+const POS = [
+  { L:'L1', op:'Kali 🎲',  tier:'Demon', tierNote:'Demon · η-boundary', caste:'Caṇḍāla', ology:'Teleology',    q:'What is the end?',        B:'→ 0',  act:'limit  Φ → 0',          phi:165, col:CRIMSON },
+  { L:'L2', op:'Kālī 💀',  tier:'God',   tierNote:'God · truth-cut',     caste:'Śūdra',   ology:'Epistemology', q:'How do we know?',         B:'0.500',act:'differential  dP = VdΦ+ΦdV', phi:138, col:TEAL },
+  { L:'L3', op:'Kṛṣṇa ◇',  tier:'God',   tierNote:'God · enable/audit',  caste:'Vaiśya',  ology:'Methodology',  q:'What follows?',           B:'0.866',act:'partial  ∂P/∂V = Φ',    phi:112, col:TEAL },
+  { L:'L4', op:'Arjuna ⚔', tier:'God',   tierNote:'God · the equator',   caste:'Kṣatriya',ology:'Axiology',     q:'What has value?',         B:'1.000',act:'balance  dΦ/Φ = dV/V',  phi:90,  col:GOLD },
+  { L:'L5', op:'Brahmā ○', tier:'Executive', tierNote:'Executive boundary · create both', caste:'Brāhmaṇa',ology:'Cosmology',    q:'How does reality work?',  B:'0.866',act:'log  P_node = logΦ + logV',  phi:68,  col:VIOLET },
+  { L:'L6', op:'Śiva •',   tier:'Executive', tierNote:'Executive boundary · dissolve both',caste:'Sādhu',  ology:'Ontology',     q:'What is Being?',          B:'0.500',act:'neg-log  E = −log P_node',   phi:42,  col:VIOLET },
+  { L:'L7', op:'Viṣṇu ⊙', tier:'Executive', tierNote:'Executive boundary · hold both',    caste:'Ṛṣi',    ology:'Theology',     q:'What is the Ultimate?',   B:'→ 0',  act:'ratio  z = Φ/V',        phi:15,  col:0x6a6a6a },
+];
+
+const canvas = document.getElementById('scene');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight);
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(46, innerWidth/innerHeight, 0.1, 100);
+camera.position.set(2.4, 0.9, 4.4);
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true; controls.dampingFactor = 0.06; controls.enablePan = false;
+controls.minDistance = 3; controls.maxDistance = 9; controls.autoRotate = true; controls.autoRotateSpeed = 0.5;
+
+let composer = null;
+try {
+  composer = new EffectComposer(renderer);
+  composer.addPass(new RenderPass(scene, camera));
+  composer.addPass(new UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), 0.75, 0.5, 0.2));
+} catch (e) { composer = null; }
+
+const R = 1.5;
+const root = new THREE.Group(); scene.add(root);
+
+// the sphere (faint wire)
+root.add(new THREE.Mesh(new THREE.SphereGeometry(R, 64, 40),
+  new THREE.MeshBasicMaterial({ color: GOLD, wireframe: true, transparent: true, opacity: 0.12 })));
+// the equator band (gold, φ=ν=1)
+const eq = new THREE.Mesh(new THREE.TorusGeometry(R, 0.02, 16, 200), new THREE.MeshBasicMaterial({ color: GOLD }));
+eq.rotation.x = Math.PI/2; root.add(eq);
+// the polar axis + pole caps (L0 = L∞, • × ○ = ⊙)
+root.add(new THREE.Mesh(new THREE.CylinderGeometry(0.006, 0.006, R*2.5, 8),
+  new THREE.MeshBasicMaterial({ color: 0x444444, transparent: true, opacity: 0.5 })));
+[1, -1].forEach(s => {
+  const cap = new THREE.Mesh(new THREE.SphereGeometry(0.055, 16, 16), new THREE.MeshBasicMaterial({ color: 0x555555 }));
+  cap.position.set(0, s*R, 0); root.add(cap);
+});
+
+// the hexagram at L4 (two triangles in the equatorial plane)
+function triangle(up, color){
+  const g = new THREE.BufferGeometry(); const pts = [];
+  for (let i = 0; i <= 3; i++){ const a = (up ? 1 : -1) * (i/3) * Math.PI*2 + Math.PI/2; pts.push(R*0.96*Math.cos(a), 0, R*0.96*Math.sin(a)); }
+  g.setAttribute('position', new THREE.Float32BufferAttribute(pts, 3));
+  return new THREE.Line(g, new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.4 }));
+}
+root.add(triangle(true, GOLD), triangle(false, TEAL));
+
+// the seven position markers (clickable)
+const markers = [];
+POS.forEach((p, i) => {
+  const ph = p.phi * Math.PI/180;
+  const m = new THREE.Mesh(new THREE.SphereGeometry(p.L === 'L4' ? 0.1 : 0.07, 24, 24),
+    new THREE.MeshBasicMaterial({ color: p.col }));
+  m.position.set(R*Math.sin(ph), R*Math.cos(ph), 0);
+  m.userData = { i }; markers.push(m); root.add(m);
+  // halo
+  const halo = new THREE.Mesh(new THREE.SphereGeometry((p.L==='L4'?0.16:0.12), 16, 16),
+    new THREE.MeshBasicMaterial({ color: p.col, transparent: true, opacity: 0.12 }));
+  halo.position.copy(m.position); root.add(halo);
+});
+
+// info panel
+const els = { lvl:'p-lvl', op:'p-op', tier:'p-tier', ology:'p-ology', q:'p-q', b:'p-b', act:'p-act' };
+function select(i){
+  const p = POS[i];
+  document.getElementById(els.lvl).textContent = `${p.L} · ${p.caste}`;
+  document.getElementById(els.op).textContent = p.op;
+  const t = document.getElementById(els.tier); t.textContent = p.tierNote;
+  t.style.color = '#' + p.col.toString(16).padStart(6,'0');
+  document.getElementById('panel').style.borderLeftColor = '#' + p.col.toString(16).padStart(6,'0');
+  document.getElementById(els.ology).textContent = p.ology;
+  document.getElementById(els.q).textContent = `"${p.q}"`;
+  document.getElementById(els.b).textContent = p.B;
+  document.getElementById(els.act).textContent = p.act;
+  markers.forEach((m, k) => m.scale.setScalar(k === i ? 1.5 : 1));
+}
+select(3); // L4 default
+
+// raycasting
+const ray = new THREE.Raycaster(); const ptr = new THREE.Vector2();
+let downXY = null;
+canvas.addEventListener('pointerdown', e => { downXY = [e.clientX, e.clientY]; });
+canvas.addEventListener('pointerup', e => {
+  if (!downXY) return;
+  const moved = Math.hypot(e.clientX - downXY[0], e.clientY - downXY[1]);
+  downXY = null;
+  if (moved > 6) return; // was a drag, not a click
+  ptr.x = (e.clientX/innerWidth)*2 - 1; ptr.y = -(e.clientY/innerHeight)*2 + 1;
+  ray.setFromCamera(ptr, camera);
+  const hit = ray.intersectObjects(markers)[0];
+  if (hit) { select(hit.object.userData.i); document.getElementById('hint').style.opacity = '0'; }
+});
+
+function animate(){
+  requestAnimationFrame(animate);
+  controls.update();
+  if (composer) composer.render(); else renderer.render(scene, camera);
+}
+animate();
+  addEventListener('resize', () => {
+    camera.aspect = innerWidth/innerHeight; camera.updateProjectionMatrix();
+    renderer.setSize(innerWidth, innerHeight);
+    if (composer) composer.setSize(innerWidth, innerHeight);
+  });
+</script>
+
+<footer class="site-footer">
+  <div class="phi">⊙ = • × ○</div>
+  <p>Emergentism · The Burrisphere (visual prototype)</p>
+</footer>
+
+</body>
+</html>

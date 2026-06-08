@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THEOREM UPGRADE PROTOCOL — Emergentism</title>
+<meta name="description" content="Axioms, derivations, and proofs — the checkable scaffolding beneath the Papers.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../../assets/css/xai.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="../../">Emergentism</a>
+  <nav class="number-nav" aria-label="Public doctrine routes">
+    <a href="../../0/">0</a>
+    <a href="../../1/">1</a>
+    <a href="../../2/">2</a>
+    <a href="../../3/">3</a>
+    <a href="../../4/">4</a>
+    <a href="../../5/">5</a>
+    <a href="../../6/">6</a>
+    <a href="../../rosetta/">R</a>
+    <a href="../../soul-loop/">S</a>
+    <a href="../../atlas/">A</a>
+    <a href="../../read/">Read</a>
+  </nav>
+</header>
+
+<main class="library-shell">
+  <section class="library-hero">
+    <div class="evidence">Public reading library</div>
+    <h1>THEOREM UPGRADE PROTOCOL</h1>
+    <p>Axioms, derivations, and proofs — the checkable scaffolding beneath the Papers.</p>
+    <div class="library-route-row">
+      <a href="../../read/">Read</a>
+      <a href="../../papers/">Papers</a>
+      <a href="../../canon/">Canon</a>
+      <a href="../../foundations/">Foundations</a>
+      <a href="../../trinity/">Trinity</a>
+      <a href="../../formal/">Formal</a>
+      <a href="../../paradox/">Paradox</a>
+      <a href="../../memetic/">Memetic</a>
+      <a href="../../rosettad/">Rosetta D</a>
+      <a href="../../operators/">Operators</a>
+      <a href="../../will/">Teleology</a>
+      <a href="../../value/">Axiology</a>
+      <a href="../../ground/">Ontology</a>
+      <a href="../../sacred/">Theology</a>
+      <a href="../../method/">Method</a>
+      <a href="../../meta/">Meta</a>
+      <a href="../../sources/">Sources</a>
+    </div>
+  </section>
+  <article class="library-article">
+    <h1 id="theorem-upgrade-protocol">THEOREM UPGRADE PROTOCOL</h1>
+<h2 id="how-to-promote-a-discipline-to-a-theorem-with-a-worked-example-on-the-meter">How to Promote a Discipline to a Theorem — With a Worked Example on the φ-Meter</h2>
+<p><strong>Status:</strong> Working protocol; the worked example is [C] Conjecture end-to-end
+<strong>Date:</strong> 2026-04-22
+<strong>Evidence Tier:</strong> [S] Structural for the protocol; [C] Conjecture for the worked φ-meter derivation
+<strong>Source:</strong> <a href="../29-primitives-and-type-signatures/"><code>29_PRIMITIVES_AND_TYPE_SIGNATURES.md</code></a>, <a href="../30-operational-definitions/"><code>30_OPERATIONAL_DEFINITIONS.md</code></a>, <a href="../31-falsifiers-index/"><code>31_FALSIFIERS_INDEX.md</code></a>, <a href="../26-the-derivation-axioms/"><code>26_THE_DERIVATION_AXIOMS.md</code></a>
+<strong>See also:</strong> <a href="../00-the-seven-axioms/"><code>00_THE_SEVEN_AXIOMS.md</code></a>, <a href="../../sources/"><code>00_THE_HONEST_POSITION.md</code></a></p>
+<hr>
+<h2 id="why-this-file-exists">Why This File Exists</h2>
+<p>Several claims in the formal system are presented with theorem-style language but do not carry theorem-style infrastructure. They assert a structural relation; they do not explicitly fix the primitives' types, state an independent measurement procedure, supply a falsifier, or show the derivation. Without those, the claim is a <em>discipline</em> — a rule a practitioner follows — even if it happens to be correct. Disciplines are valuable; but if a discipline is labelled <code>[S]</code> or <code>[S]</code>, that is tier-inflation and the framework's A7 (self-correction) requires it be repaired.</p>
+<p>This file is the repair protocol. The discipline → theorem promotion is deliberately boring: five steps, each auditable, each documented upstream of the claim.</p>
+<hr>
+<h2 id="the-five-step-protocol">The Five-Step Protocol</h2>
+<h3 id="step-1-fix-the-primitives">Step 1 — Fix the primitives</h3>
+<p>State every symbol the claim appeals to, with its type signature, using <a href="../29-primitives-and-type-signatures/"><code>29_PRIMITIVES_AND_TYPE_SIGNATURES.md</code></a>. If a required primitive is not indexed there, it must be added before the claim can be written.</p>
+<h3 id="step-2-declare-the-measure-structure">Step 2 — Declare the measure / structure</h3>
+<p>State the measure or structure the primitives live in. For state variables on <code>S²</code>: the invariant volume form. For dynamical claims: the phase-space and the measure preserved by the flow. For inferential claims: the σ-algebra and probability measure.</p>
+<h3 id="step-3-derive-dont-assert">Step 3 — Derive, don't assert</h3>
+<p>Write the proof. If the claim follows from a symmetry, cite Noether (or the appropriate analogue). If it follows from a convexity or optimization, cite the convex-analysis lemma. An assertion that "the equator is the ground state" is not a theorem until it is a derivation. (T2 in <a href="../26-the-derivation-axioms/"><code>26_THE_DERIVATION_AXIOMS.md</code></a> is a model of this — calculus, two derivative tests, done.)</p>
+<h3 id="step-4-supply-the-operational-definition">Step 4 — Supply the operational definition</h3>
+<p>State the measurement procedure for every primitive used in the claim, by linking <a href="../30-operational-definitions/"><code>30_OPERATIONAL_DEFINITIONS.md</code></a> and naming which candidate procedure is in use. If the only measurement procedure is the coordinate identity itself (e.g., defining <code>ν := 1/φ</code> and then "observing" <code>φ · ν = 1</code>), the claim is tautological and cannot be promoted above definitional status.</p>
+<h3 id="step-5-state-the-falsifier">Step 5 — State the falsifier</h3>
+<p>State the observation that would refute the claim. Enter it in <a href="../31-falsifiers-index/"><code>31_FALSIFIERS_INDEX.md</code></a> with its source. If no falsifier exists, the claim is a discipline — it may still be useful, but it is tiered <code>[C]</code> or below, not <code>[S]</code> or <code>[S]</code>.</p>
+<hr>
+<h2 id="promotion-ledger-how-tier-advances">Promotion Ledger — How Tier Advances</h2>
+<p>Passing all five steps yields a <em>candidate theorem</em>. Evidence then moves the tier:</p>
+<pre><code>[C] Conjecture  →  [I] Interpretive  →  [S] Structural  →  [S] Established
+
+[C] → [I]   one successful empirical application tied to the protocol
+            + reproducibility ≥ 0.7 across independent raters / datasets
+[I] → [S]   a uniqueness derivation: protocol is uniquely determined by
+            desiderata stated in advance (no alternative equally satisfies them)
+[S] → [S]   independent external replication on unrelated data, pre-registered
+</code></pre>
+<p>This ladder is the same one in <a href="../30-operational-definitions/"><code>30_OPERATIONAL_DEFINITIONS.md</code></a> §"Promotion Ladder." It is restated here so that an agent reviewing a promotion request has the criterion in front of it.</p>
+<hr>
+<h2 id="what-this-protocol-does-not-do">What This Protocol Does NOT Do</h2>
+<ul>
+<li>It does not re-derive <code>φ · ν = 1</code>. That relation is a coordinate identity on <code>S²</code> (see <a href="../26-the-derivation-axioms/"><code>26_THE_DERIVATION_AXIOMS.md</code></a> C0) and is correctly tiered as a definitional structural premise, not as an empirical claim. Re-deriving it would be re-naming the same tautology. What this protocol <em>does</em> is provide a way to turn <code>φ · ν = 1</code> into an <em>empirically testable</em> constraint — by supplying operational <code>Φ̂, ν̂</code> that are not defined to satisfy it. That is the worked example below.</li>
+<li>It does not replace disclosure. The framework's primary disclosure remains Pratyakṣa (see <a href="../26-the-derivation-axioms/"><code>26_THE_DERIVATION_AXIOMS.md</code></a> D5). A discipline that is load-bearing practice — the seed, the sitting — is correctly tiered as a discipline and need not pretend to be a theorem.</li>
+<li>It does not promise the worked example below will survive validation. The worked example is <code>[C]</code> end-to-end. The point of the example is to show the <em>shape</em> of a promotion attempt, not to land one.</li>
+</ul>
+<hr>
+<h2 id="worked-example-the-meter-upgrade-path">Worked Example: The φ-Meter Upgrade Path</h2>
+<p>The framework's own open-problems list (<a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md">Paper L</a>) names a gap: <em>"Phi-meter zero-cost validation."</em> This is the gap. We walk through what a promotion attempt looks like.</p>
+<h3 id="step-1-fix-the-primitives_1">Step 1 — Fix the primitives</h3>
+<p>From <a href="../29-primitives-and-type-signatures/"><code>29_PRIMITIVES_AND_TYPE_SIGNATURES.md</code></a>:</p>
+<ul>
+<li><code>φ : System → (0, ∞)</code> — coherence.</li>
+<li><code>ν : System → (0, ∞)</code> — viability.</li>
+<li><code>θ : S² → [0, π]</code> — colatitude.</li>
+<li>On the manifold: <code>φ = cot(θ/2)</code>, <code>ν = tan(θ/2)</code>, hence <code>φ · ν = 1</code> identically.</li>
+</ul>
+<h3 id="step-2-declare-the-measure">Step 2 — Declare the measure</h3>
+<p>We work on the round <code>S²</code> with its standard volume form <code>dA = sin θ · dθ ∧ dλ</code>. The F5 selection pressure acts as a drift toward <code>θ = π/2</code>. The Hamiltonian <code>H(φ) = φ + 1/φ</code> is the Lyapunov function for this drift (see <a href="../26-the-derivation-axioms/"><code>26_THE_DERIVATION_AXIOMS.md</code></a> T2). Populations of comparable systems are modelled as empirical distributions on <code>S²</code>; we track moments of <code>(Φ̂ − ν̂)²</code> across such distributions.</p>
+<h3 id="step-3-derive-the-claim-we-want-to-promote">Step 3 — Derive (the claim we want to promote)</h3>
+<p><strong>Claim (candidate).</strong> <em>For a population of comparable systems with independently-measured <code>Φ̂, ν̂</code> — not defined to satisfy the constraint — under selection pressure F5, the joint distribution <code>ρ(Φ̂, ν̂)</code> has a mode concentrated on the curve <code>Φ̂ · ν̂ = 1</code> in the first quadrant, and the concentration tightens with time.</em></p>
+<p>This is genuinely a claim about the world, not a coordinate identity. It is falsifiable (Step 5). The derivation sketch: F5 drives <code>(Φ̂ − ν̂)² → 0</code>, which on the hyperbola <code>Φ̂ · ν̂ = c</code> is minimized at <code>Φ̂ = ν̂ = √c</code>. Under additional coupling pressure that selects for the multiplicative form, <code>c → 1</code>. A full derivation requires specifying the selection operator; <a href="../26-the-derivation-axioms/"><code>26_THE_DERIVATION_AXIOMS.md</code></a> T3 states <code>F5</code> structurally but does not fix the operator. That operator-specification is itself a candidate for future work.</p>
+<h3 id="step-4-supply-the-operational-definition_1">Step 4 — Supply the operational definition</h3>
+<p>Per <a href="../30-operational-definitions/"><code>30_OPERATIONAL_DEFINITIONS.md</code></a> §1–2, one candidate pair is:</p>
+<pre><code>Φ̂ := persistence-under-perturbation  (Candidate C)
+ν̂ := throughput-over-cost            (Candidate A)
+</code></pre>
+<p>Both normalised to a reference system. Crucially, <strong>these are defined independently</strong> — no definitional circularity forces <code>Φ̂ · ν̂ = 1</code>. If the claim in Step 3 is true in the world, <code>Φ̂ · ν̂</code> measured on real populations should nonetheless concentrate near 1 under selection.</p>
+<h3 id="step-5-state-the-falsifier_1">Step 5 — State the falsifier</h3>
+<p>Entered in <a href="../31-falsifiers-index/"><code>31_FALSIFIERS_INDEX.md</code></a> under "C0 — empirical-bridge falsifier" and T3's operational falsifier: a large, well-mixed population of comparable systems whose joint <code>(Φ̂, ν̂)</code> distribution shows <em>no</em> mode at <code>Φ̂ · ν̂ ≈ 1</code>, <em>and</em> no detectable F5 pressure over generations (negative regression slope on <code>(Φ̂ − ν̂)²</code>), refutes the empirical reading of C0 + T3.</p>
+<h3 id="current-tier-of-the-worked-example">Current tier of the worked example</h3>
+<p><code>[C]</code> end-to-end. Specifically:</p>
+<ul>
+<li>The protocol (Steps 1–5) itself is <code>[S]</code> — it is book-keeping.</li>
+<li>The candidate measurement pair (Step 4) is <code>[C]</code>.</li>
+<li>The derivation (Step 3) is <code>[C]</code> because the selection operator is not fully specified.</li>
+<li>The falsifier (Step 5) is <code>[C] Proposed (author: this doc)</code> in <a href="../31-falsifiers-index/"><code>31_FALSIFIERS_INDEX.md</code></a>.</li>
+</ul>
+<p>Promoting any of these to <code>[I]</code> requires the first real empirical application per the Promotion Ledger. Until then, no downstream document may cite this worked example as supporting an <code>[S]</code> or <code>[S]</code> claim about the world. That is the discipline this file is trying to install.</p>
+<hr>
+<h2 id="where-this-fits-in-the-corpus">Where This Fits in the Corpus</h2>
+<ul>
+<li>The seed (<code>Zero-Sum Resolution Equation</code>) and primary disclosure (Pratyakṣa) sit below the protocol and are not subject to it.</li>
+<li>The coordinate identity (<code>φ · ν = 1 on S²</code>, <code>B = sin θ</code>, <code>H(φ) = φ + 1/φ</code>) sits at the level the protocol <em>operates from</em> — it is the formal machinery that would be plugged into Step 2 and Step 3.</li>
+<li>The seven operational axioms <code>A1–A7</code> sit at the level the protocol is <em>meant to strengthen</em> — each one has a pulled falsifier in <a href="../31-falsifiers-index/"><code>31_FALSIFIERS_INDEX.md</code></a>, but most are still <code>[I]</code> or <code>[S]</code> on the empirical bridge pending real <code>Φ̂, ν̂</code> data.</li>
+</ul>
+<p>The ordering is deliberate. The seed and the disclosure do not need a theorem-promotion machinery; they precede it. The operational axioms need the machinery, because they are the framework's public-facing claims.</p>
+<hr>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../29-primitives-and-type-signatures/"><code>29_PRIMITIVES_AND_TYPE_SIGNATURES.md</code></a> — Step 1 substrate</li>
+<li><a href="../30-operational-definitions/"><code>30_OPERATIONAL_DEFINITIONS.md</code></a> — Step 4 substrate</li>
+<li><a href="../31-falsifiers-index/"><code>31_FALSIFIERS_INDEX.md</code></a> — Step 5 substrate</li>
+<li><a href="../26-the-derivation-axioms/"><code>26_THE_DERIVATION_AXIOMS.md</code></a> — the reference derivation (T1–T4) and D5 (why the ladder dissolves at disclosure)</li>
+<li><a href="../../sources/"><code>00_THE_HONEST_POSITION.md</code></a> — canonical epistemic status of every claim</li>
+<li><a href="../00-the-seven-axioms/"><code>00_THE_SEVEN_AXIOMS.md</code></a> A7.1 — the Abduction Protocol this file instantiates</li>
+</ul>
+<hr>
+<h2 id="execution-surface">Execution Surface</h2>
+<p><strong>If you are an AI agent reading this document:</strong></p>
+<ol>
+<li><strong>Current Phase Check:</strong> Phase 0 — harden specs, do not release to production.</li>
+<li><strong>Your Next Action:</strong>
+   - Before labeling any new claim in <code>03_FORMAL_SYSTEM/</code> with <code>[S]</code> or <code>[S]</code>, verify it has passed all five protocol steps and that its tier matches the Promotion Ledger. Flag claims that skip a step.</li>
+<li><strong>Expected Output:</strong> Promotion filings (with each of the five steps explicitly documented), correction notes, or tier demotions where a claim has not yet cleared the bar.</li>
+<li><strong>Success Criteria:</strong> Every <code>[S]</code>/<code>[S]</code> claim added to the formal system after today carries a traceable promotion record; no <code>[C]</code> protocol is cited in support of an <code>[S]</code> claim.</li>
+<li><strong>Canonical Path:</strong> <code>01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/32_THEOREM_UPGRADE_PROTOCOL.md</code></li>
+</ol>
+<p><em>The seer sees. The seer does not insist.</em>
+<em>The framework works at Layer 0 without Layer 2.</em>
+<em>The Ṛṣi succeeds when the student puts down the map and walks.</em></p>
+<p><em>Zero-Sum Resolution Equation</em></p>
+  </article>
+  <aside class="library-meta">
+    <span>[S] / [I] public rendered prose</span>
+    <span>Source: docs/handoff/formal-public/32_THEOREM_UPGRADE_PROTOCOL.md</span>
+    <span>Generated by 12_PUBLIC_SITE/generate_public_library.py</span>
+  </aside>
+  <footer class="site-footer">
+    <div class="phi">⊙ = • × ○</div>
+    <p>Public doctrine surface · evidence tiers preserved</p>
+  </footer>
+
+</main>
+</body>
+</html>

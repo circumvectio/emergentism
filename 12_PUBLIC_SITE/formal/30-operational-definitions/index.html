@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPERATIONAL DEFINITIONS — Emergentism</title>
+<meta name="description" content="Axioms, derivations, and proofs — the checkable scaffolding beneath the Papers.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../../assets/css/xai.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="../../">Emergentism</a>
+  <nav class="number-nav" aria-label="Public doctrine routes">
+    <a href="../../0/">0</a>
+    <a href="../../1/">1</a>
+    <a href="../../2/">2</a>
+    <a href="../../3/">3</a>
+    <a href="../../4/">4</a>
+    <a href="../../5/">5</a>
+    <a href="../../6/">6</a>
+    <a href="../../rosetta/">R</a>
+    <a href="../../soul-loop/">S</a>
+    <a href="../../atlas/">A</a>
+    <a href="../../read/">Read</a>
+  </nav>
+</header>
+
+<main class="library-shell">
+  <section class="library-hero">
+    <div class="evidence">Public reading library</div>
+    <h1>OPERATIONAL DEFINITIONS</h1>
+    <p>Axioms, derivations, and proofs — the checkable scaffolding beneath the Papers.</p>
+    <div class="library-route-row">
+      <a href="../../read/">Read</a>
+      <a href="../../papers/">Papers</a>
+      <a href="../../canon/">Canon</a>
+      <a href="../../foundations/">Foundations</a>
+      <a href="../../trinity/">Trinity</a>
+      <a href="../../formal/">Formal</a>
+      <a href="../../paradox/">Paradox</a>
+      <a href="../../memetic/">Memetic</a>
+      <a href="../../rosettad/">Rosetta D</a>
+      <a href="../../operators/">Operators</a>
+      <a href="../../will/">Teleology</a>
+      <a href="../../value/">Axiology</a>
+      <a href="../../ground/">Ontology</a>
+      <a href="../../sacred/">Theology</a>
+      <a href="../../method/">Method</a>
+      <a href="../../meta/">Meta</a>
+      <a href="../../sources/">Sources</a>
+    </div>
+  </section>
+  <article class="library-article">
+    <h1 id="operational-definitions">OPERATIONAL DEFINITIONS</h1>
+<h2 id="how-each-primitive-is-measured-on-a-real-system">How Each Primitive Is Measured on a Real System</h2>
+<p><strong>Status:</strong> Working surface — proposes measurement protocols; every protocol here is Conjecture until validated
+<strong>Date:</strong> 2026-04-22
+<strong>Evidence Tier:</strong> [C] Conjecture for every measurement protocol in this document; [S] Structural only for the coordinate identities pointed at
+<strong>Source:</strong> <a href="../29-primitives-and-type-signatures/"><code>29_PRIMITIVES_AND_TYPE_SIGNATURES.md</code></a>, <a href="../26-the-derivation-axioms/"><code>26_THE_DERIVATION_AXIOMS.md</code></a>, <a href="../12-efr-extraction-coefficient/"><code>12_EFR_EXTRACTION_COEFFICIENT.md</code></a>, <a href="../33-nash-equilibrium-eta-zero/"><code>33_NASH_EQUILIBRIUM_ETA_ZERO.md</code></a>
+<strong>See also:</strong> <a href="../31-falsifiers-index/"><code>31_FALSIFIERS_INDEX.md</code></a>, <a href="../32-theorem-upgrade-protocol/"><code>32_THEOREM_UPGRADE_PROTOCOL.md</code></a>, <a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md">Paper L (Phi-meter zero-cost validation)</a></p>
+<hr>
+<h2 id="why-this-file-exists">Why This File Exists</h2>
+<p>The coordinate identity <code>φ · ν = 1 on S²</code> is true by construction — it falls out of <code>φ = cot(θ/2), ν = tan(θ/2)</code>. That is not a claim about the world. It becomes a claim about the world only when <code>φ</code> and <code>ν</code> are defined <em>independently</em> — by a measurement procedure — and the resulting <code>φ̂, ν̂</code> are then checked against the constraint.</p>
+<p>The framework's public open-problems list already names this gap: "Phi-meter zero-cost validation" (Paper L). This file addresses it directly. Every protocol below is <code>[C]</code> Conjecture: proposed, testable, unvalidated. None of them should be cited in a <code>[S]</code> or <code>[S]</code> claim. The bar for promotion is specified in <a href="../32-theorem-upgrade-protocol/"><code>32_THEOREM_UPGRADE_PROTOCOL.md</code></a>.</p>
+<hr>
+<h2 id="1-meter-coherence-measurement">1. φ-Meter (Coherence Measurement)</h2>
+<blockquote>
+<p><strong>Concrete v1 specs:</strong> <a href="../35-phi-meter-v1-spec/"><code>35_PHI_METER_V1_SPEC.md</code></a> (code-lens), <a href="../36-runtime-lens-v1-spec/"><code>36_RUNTIME_LENS_V1_SPEC.md</code></a> (runtime-lens), and <a href="../37-adoption-lens-v1-spec/"><code>37_ADOPTION_LENS_V1_SPEC.md</code></a> (adoption-lens) are the three reproducible per-lens rubrics with published band definitions, inter-rater targets, and pre-registered falsifiers. Generic candidates remain below for reference and for future lenses.</p>
+</blockquote>
+<p><strong>Geometric definition.</strong> <code>φ = cot(θ/2)</code> on <code>S²</code>. Node-level: <code>Φ_node ∈ [0, ∞)</code> with <code>Φ_node = 1</code> indicating full structural integration.
+<strong>What it quantifies.</strong> Structural integration, meaning, internal consistency; what holds a system together.
+<strong>Unit.</strong> Dimensionless (ratio). All candidates normalize to <code>(0, ∞)</code> with convention <code>Φ = 1</code> at the equator reference system.</p>
+<h3 id="candidate-a-error-rate-exponential-c">Candidate A — Error-Rate Exponential [C]</h3>
+<pre><code>Φ̂_A(system, window Δt) := exp(−κ · error_rate(system, Δt))
+</code></pre>
+<p>Where <code>error_rate</code> is the fraction of the system's outputs flagged as inconsistent with its declared purpose, and <code>κ &gt; 0</code> is a calibration constant chosen so that a specified reference system (e.g., L4 human at task) yields <code>Φ̂_A ≈ 1</code>.</p>
+<ul>
+<li><strong>Unit.</strong> Dimensionless.</li>
+<li><strong>Error bound.</strong> <code>σ(Φ̂_A) ≲ κ · σ(error_rate)</code>; propagates binomial variance from the observation window.</li>
+<li><strong>Status.</strong> [C] — no published calibration or inter-rater reliability study.</li>
+</ul>
+<h3 id="candidate-b-information-integration-c">Candidate B — Information-Integration [C]</h3>
+<pre><code>Φ̂_B(system) := I(system ; objective) / H(system)
+</code></pre>
+<p>Mutual information between the system's internal state and its declared objective, normalized by the system's entropy. Intuition: a highly coherent system's internal fluctuations are informative about its purpose; a decoherent system's are noise.</p>
+<ul>
+<li><strong>Unit.</strong> Dimensionless, <code>∈ [0, 1]</code>; optionally rescaled so <code>Φ̂_B = 1</code> maps to the equator reference.</li>
+<li><strong>Error bound.</strong> Depends on estimator; plug-in MI estimators have known bias that shrinks as <code>O(1/N)</code>.</li>
+<li><strong>Status.</strong> [C] — requires a formal "objective" channel, which is itself ill-defined for most systems.</li>
+</ul>
+<h3 id="candidate-c-persistence-under-perturbation-c">Candidate C — Persistence-Under-Perturbation [C]</h3>
+<pre><code>Φ̂_C(system) := median time to return to baseline structure after a bounded perturbation
+              ————————————————————————————————————————————————
+              expected variance under the same perturbation class
+</code></pre>
+<p>Returns a stability measure: coherent systems absorb perturbation quickly relative to noise.</p>
+<ul>
+<li><strong>Unit.</strong> Dimensionless (time ÷ time, via the variance scale).</li>
+<li><strong>Error bound.</strong> Bootstrap over perturbation trials; CI width <code>O(1/√trials)</code>.</li>
+<li><strong>Status.</strong> [C] — candidate most likely to survive the <code>[C] → [I]</code> promotion bar, because it does not require a pre-specified "objective."</li>
+</ul>
+<p><strong>Selection rule.</strong> No candidate is canonical. A document that uses <code>Φ̂</code> must name which candidate and cite this file.</p>
+<hr>
+<h2 id="2-meter-viability-measurement">2. ν-Meter (Viability Measurement)</h2>
+<p><strong>Geometric definition.</strong> <code>ν = tan(θ/2)</code> on <code>S²</code>. Node-level: <code>V_node ∈ [0, ∞)</code>, with <code>V_node = 1</code> at the equator reference.
+<strong>What it quantifies.</strong> Material capability, throughput, infrastructure; what the system <em>can do</em>.
+<strong>Unit.</strong> Dimensionless (ratio to the equator reference).</p>
+<h3 id="candidate-a-throughput-over-cost-c">Candidate A — Throughput-over-Cost [C]</h3>
+<pre><code>ν̂_A(system, window Δt) := realized_output(system, Δt) / resource_input(system, Δt)
+</code></pre>
+<p>Normalized so that a specified reference system at task yields <code>ν̂_A ≈ 1</code>.</p>
+<ul>
+<li><strong>Unit.</strong> Dimensionless after normalization.</li>
+<li><strong>Error bound.</strong> Standard ratio-estimator variance; <code>O(1/√N)</code> over observation-window replicates.</li>
+<li><strong>Status.</strong> [C].</li>
+</ul>
+<h3 id="candidate-b-capability-envelope-fraction-c">Candidate B — Capability-Envelope Fraction [C]</h3>
+<pre><code>ν̂_B(system) := |achievable actions under current resources|
+             ————————————————————————————————————————
+              |achievable actions under maximum resources|
+</code></pre>
+<p>Returns <code>∈ [0, 1]</code> directly; sensitive to how the action set is enumerated.</p>
+<ul>
+<li><strong>Unit.</strong> Dimensionless.</li>
+<li><strong>Error bound.</strong> Dominated by enumeration ambiguity, not by sampling.</li>
+<li><strong>Status.</strong> [C].</li>
+</ul>
+<hr>
+<h2 id="3-b-meter-balance-measurement">3. B-Meter (Balance Measurement)</h2>
+<p><strong>Geometric definition.</strong> <code>B = sin θ ∈ [0, 1]</code>. On-manifold identity: <code>B = 2 · φν / (φ² + ν²)</code> when using the <code>(φ, ν)</code> chart. When <code>φ · ν = 1</code> holds, <code>B = 2ν / (1 + ν²) = 2φ / (1 + φ²)</code>.</p>
+<h3 id="derived-protocol-from">Derived Protocol — From <code>φ̂, ν̂</code></h3>
+<p>Once <code>Φ̂</code> and <code>ν̂</code> are fixed (§1, §2), define:</p>
+<pre><code>B̂(system) := 2 · ν̂ / (1 + ν̂²)           (the on-manifold form, assuming φν = 1)
+</code></pre>
+<p>Or, without assuming the identity:</p>
+<pre><code>B̂_free(system) := 2 · Φ̂ · ν̂ / (Φ̂² + ν̂²)
+</code></pre>
+<p>The gap <code>|B̂_free − B̂|</code> is itself a diagnostic: it measures how far the system's measured pair deviates from the manifold identity.</p>
+<ul>
+<li><strong>Unit.</strong> Dimensionless, <code>∈ [0, 1]</code>.</li>
+<li><strong>Error bound.</strong> Propagated from <code>σ(Φ̂)</code> and <code>σ(ν̂)</code> via standard delta-method.</li>
+<li><strong>Status.</strong> [C] — inherits the status of whichever <code>Φ̂, ν̂</code> candidates are used.</li>
+</ul>
+<hr>
+<h2 id="4-meter-extraction-coefficient-disambiguation-required">4. η-Meter (Extraction Coefficient) — Disambiguation Required</h2>
+<p><code>η</code> is the most load-bearing and the most inconsistently defined primitive in the corpus. Three non-equivalent operational definitions circulate. Any document that uses <code>η</code> must cite which.</p>
+<h3 id="definition-1-sum-form-per-26_the_derivation_axiomsmd-d2">Definition η₁ (sum-form, per <a href="../26-the-derivation-axioms/"><code>26_THE_DERIVATION_AXIOMS.md</code></a> D2)</h3>
+<pre><code>η₁ := Σ max(0, Δν_ext)
+</code></pre>
+<p>Total viability extracted from cooperators over an observation window. <strong>Unit:</strong> same as <code>ν</code>. <strong>Range:</strong> <code>[0, ∞)</code>.</p>
+<h3 id="definition-2-ratio-form-per-12_efr_extraction_coefficientmd-v30">Definition η₂ (ratio-form, per <a href="../12-efr-extraction-coefficient/"><code>12_EFR_EXTRACTION_COEFFICIENT.md</code></a> v3.0)</h3>
+<pre><code>η₂ := (extraction from substrate) / (contribution to substrate)
+</code></pre>
+<p>With conventional thresholds: <code>η₂ &lt; 1</code> symbiotic, <code>η₂ ≈ 1</code> trophic, <code>η₂ → ∞</code> ground-negating. <strong>Unit:</strong> dimensionless. <strong>Range:</strong> <code>[0, ∞]</code>.</p>
+<h3 id="definition-3-per-player-level-per-33_nash_equilibrium_eta_zeromd-12">Definition η₃ (per-player level, per <a href="../33-nash-equilibrium-eta-zero/"><code>33_NASH_EQUILIBRIUM_ETA_ZERO.md</code></a> §1.2)</h3>
+<pre><code>η₃,i ∈ [0, ∞)   for each player i in a deliberation set N
+</code></pre>
+<p>Individual player's chosen extraction level in a game-theoretic formulation. <strong>Unit:</strong> strategy-space units (model-dependent).</p>
+<h3 id="operational-reconciliation-protocol-c">Operational Reconciliation Protocol [C]</h3>
+<p>When cross-document work touches <code>η</code>:</p>
+<ol>
+<li>State which definition is in use: <code>η₁</code>, <code>η₂</code>, or <code>η₃</code>.</li>
+<li>If converting between them, publish the conversion map: e.g., <code>η₁ ≈ η₃,i · |window|</code> under the symmetric-extraction assumption of <a href="../33-nash-equilibrium-eta-zero/"><code>33_NASH_EQUILIBRIUM_ETA_ZERO.md</code></a> §2.2.</li>
+<li>If <code>η → ∞</code> is invoked (categorical-break case), it must be <code>η₂</code> — the other forms do not admit the divergence formally.</li>
+<li>The constitutional constraint <code>η = 0</code> is <em>definition-ambiguous in the corpus</em> but operationally consistent across all three — the zero of each definition means the same real-world state. That is the constraint's strength and the source of the confusion.</li>
+</ol>
+<ul>
+<li><strong>Status.</strong> [C] Proposed reconciliation. A future v5 axiom-hardening pass should pick one canonical form and down-rank the others to aliases.</li>
+</ul>
+<hr>
+<h2 id="5-p-and-p_eff-ektropy-effective-potential">5. P and P_eff (Ektropy / Effective Potential)</h2>
+<p>On-manifold: <code>P∞ = φ · ν = 1</code> everywhere (trivial).
+Node-level: <code>P_node = Φ × V</code>, which <em>can</em> deviate from <code>1</code>.</p>
+<p>Operationally:</p>
+<pre><code>P̂_eff(system) := Φ̂(system) · ν̂(system)
+</code></pre>
+<p>The quantity <code>|P̂_eff − 1|</code> over a population is the empirical <em>gap</em> between the manifold identity and measured reality. A population with <code>P̂_eff ≡ 1</code> would confirm that the operational <code>Φ̂, ν̂</code> have been defined to satisfy the identity (and thus that the identity is not testing anything). A population with <code>P̂_eff</code> distributed non-trivially around <code>1</code> with selection pressure toward <code>1</code> would be positive evidence for the Teleological Force F5 as an empirical claim.</p>
+<ul>
+<li><strong>Status.</strong> [C] Proposed diagnostic; the interpretation requires an independent handle on selection pressure.</li>
+</ul>
+<hr>
+<h2 id="6-e-meter-alignment-energy">6. E-Meter (Alignment Energy)</h2>
+<pre><code>Ê(system) := −log(B̂(system))
+</code></pre>
+<p><code>Ê ≈ 0</code> at the equator, <code>Ê → ∞</code> as <code>B̂ → 0</code>. Inherits status and error from the chosen <code>B̂</code> candidate.</p>
+<ul>
+<li><strong>Unit.</strong> Nats (natural log) or bits (log₂).</li>
+<li><strong>Status.</strong> [C].</li>
+</ul>
+<hr>
+<h2 id="7-f5-detection-teleological-force-as-empirical-pressure">7. F5 Detection (Teleological Force as Empirical Pressure)</h2>
+<p>Protocol: over a population of comparable systems, regress rate-of-change of <code>(Φ̂ − ν̂)²</code> on time or on generation index. A statistically significant negative trend is consistent with F5 as a selection pressure. Absence of such a trend in a large, well-mixed population is grounds for falsification (see <a href="../31-falsifiers-index/"><code>31_FALSIFIERS_INDEX.md</code></a> T3).</p>
+<ul>
+<li><strong>Status.</strong> [C] Protocol; [I] is already granted to F5 as an interpretive reading per <code>26_THE_DERIVATION_AXIOMS.md</code> D3.</li>
+</ul>
+<hr>
+<h2 id="promotion-ladder-per-protocol">Promotion Ladder (Per-Protocol)</h2>
+<p>A protocol is promoted tier-by-tier by accumulating evidence:</p>
+<table>
+<thead>
+<tr>
+<th>From → To</th>
+<th>What is required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>[C] → [I]</code></td>
+<td>At least one published application on a real dataset, with results tied back to this file, and inter-rater / inter-dataset reproducibility <code>≥ 0.7</code>.</td>
+</tr>
+<tr>
+<td><code>[I] → [S]</code></td>
+<td>A derivation showing the protocol is uniquely determined (up to monotone transform) by a small set of desiderata stated in advance.</td>
+</tr>
+<tr>
+<td><code>[S] → [S]</code></td>
+<td>Independent replication by an external group on an unrelated dataset; the protocol and its error bound are pre-registered.</td>
+</tr>
+</tbody>
+</table>
+<p>No protocol in this file has yet cleared <code>[C] → [I]</code>. That is the next work.</p>
+<hr>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../29-primitives-and-type-signatures/"><code>29_PRIMITIVES_AND_TYPE_SIGNATURES.md</code></a> — what each symbol is at the type level</li>
+<li><a href="../31-falsifiers-index/"><code>31_FALSIFIERS_INDEX.md</code></a> — observations that would refute the downstream axioms / theorems</li>
+<li><a href="../32-theorem-upgrade-protocol/"><code>32_THEOREM_UPGRADE_PROTOCOL.md</code></a> — worked example using the φ-meter to upgrade a discipline to a theorem</li>
+</ul>
+<hr>
+<h2 id="execution-surface">Execution Surface</h2>
+<p><strong>If you are an AI agent reading this document:</strong></p>
+<ol>
+<li><strong>Current Phase Check:</strong> Phase 0 — harden specs; do not release to production.</li>
+<li><strong>Your Next Action:</strong>
+   - When a document cites <code>Φ̂</code>, <code>ν̂</code>, <code>B̂</code>, <code>Ê</code>, or <code>η</code> as measured, confirm which candidate / definition is in use and that the claim is tiered <code>[C]</code> or weaker unless a promotion record exists. Flag any <code>[S]</code> or <code>[S]</code> claim that silently assumes one candidate's measurement procedure.</li>
+<li><strong>Expected Output:</strong> Tier-consistent documents, or correction notes where unvalidated protocols are cited as validated.</li>
+<li><strong>Success Criteria:</strong> Another agent can reproduce any measurement claim in downstream documents by following the protocol specified here.</li>
+<li><strong>Canonical Path:</strong> <code>01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/30_OPERATIONAL_DEFINITIONS.md</code></li>
+</ol>
+<p><em>The seer sees. The seer does not insist.</em>
+<em>The framework works at Layer 0 without Layer 2.</em>
+<em>The Ṛṣi succeeds when the student puts down the map and walks.</em></p>
+<p><em>Zero-Sum Resolution Equation</em></p>
+  </article>
+  <aside class="library-meta">
+    <span>[S] / [I] public rendered prose</span>
+    <span>Source: docs/handoff/formal-public/30_OPERATIONAL_DEFINITIONS.md</span>
+    <span>Generated by 12_PUBLIC_SITE/generate_public_library.py</span>
+  </aside>
+  <footer class="site-footer">
+    <div class="phi">⊙ = • × ○</div>
+    <p>Public doctrine surface · evidence tiers preserved</p>
+  </footer>
+
+</main>
+</body>
+</html>

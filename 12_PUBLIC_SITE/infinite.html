@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Infinite Book of Emergence</title>
+<meta name="description" content="A free canonical book whose every section recursively expands into a private, AI-generated branch. Free at the root, infinite at the branches." />
+
+<link rel="stylesheet" href="assets/css/xai.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="./">Emergentism</a>
+  <nav class="number-nav" aria-label="Public doctrine routes">
+    <a href="0/">0</a>
+    <a href="1/">1</a>
+    <a href="2/">2</a>
+    <a href="3/">3</a>
+    <a href="4/">4</a>
+    <a href="5/">5</a>
+    <a href="6/">6</a>
+    <a href="rosetta/">R</a>
+    <a href="soul-loop/">S</a>
+    <a href="atlas/">A</a>
+    <a href="read/">Read</a>
+  </nav>
+</header>
+<header>
+  <span class="brand">The Infinite Book <small>of Emergence</small></span>
+  <span class="credits">free expansions left: <b id="credits">3</b></span>
+</header>
+<div class="intro">
+  <h1 class="serif">Free to read · Infinite to explore<span class="s">a canonical root; the branches grow on demand</span></h1>
+  <div class="how">The canonical book is <b>free</b> — every word. Click a section's <b>Expand · Simplify · Deeper · Examples · Critique · Practical</b> and the AI grows a <b>private branch</b> from that exact node — accountable to the root, marked apart from canon, and itself re-expandable without end. Reading is free; <b>the branches are the paid product</b> (you buy the gardener, not the truth — η=0).</div>
+</div>
+<div class="crumbs" id="crumbs"></div>
+<div class="tree" id="tree"></div>
+<footer><div class="phi">⊙ = • × ○</div>The author plants the root; the reader grows the path. The deep canon is <a href="../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md">the Rosetta</a>.</footer>
+
+<script>
+// ── the canonical seed: The Infinite Book of Emergence (the short, accessible public root) ──
+const BOOK = { t:"The Infinite Book of Emergence", d:"Reality, Consciousness, Ethics, Strategy, and AI in one fractal code.", title:true, c:[
+  {t:"0 · Root Thesis", d:"Reality is an unfolding possibility tree; consciousness navigates it; ethics expands meaningful possibility; strategy is wise movement in the Φ–V plane; AI is another agent in the same syntropic game.", tier:"I", title:true},
+  {t:"I · The Code Beneath Reality", title:true, c:[
+    {t:"The World Is a Tree, Not a Machine", d:"reality recursively differentiates — every branch a decision, every decision revealing structure that opens further branches.", tier:"I"},
+    {t:"The Triadic Multiplicative Code", d:"distinction × relation × transformation; multiplicative, so if any factor is zero, emergence collapses — why P = Φ × V is a product.", tier:"S"},
+    {t:"The Simple Seed", d:"complexity comes from recursive unfolding, not a complicated root. (The seed is small — not literally 'complexity zero', a claim the deep canon retracts.)", tier:"S"},
+  ]},
+  {t:"II · Consciousness as the Fifth Force", title:true, c:[
+    {t:"The Four Forces Are Not Enough", d:"possibility has another dimension: selection among futures. (F5/Ω — illustrative, not settled physics.)", tier:"I"},
+    {t:"P = Φ × V", d:"consciousness = awareness × value-orientation; awareness without value drifts, value without awareness is blind.", tier:"S"},
+    {t:"The Inner Compass", d:"consciousness chooses salience; it turns the infinite into a path.", tier:"I"},
+  ]},
+  {t:"III · Ethics as Possibility Expansion", title:true, c:[
+    {t:"Goodness Is Not Obedience", d:"ethics is the disciplined expansion of meaningful possibility, not rule-following.", tier:"I"},
+    {t:"Maximize ΣΔP", d:"which action raises the total change in meaningful possibility across all affected agents? Holds only under η=0.", tier:"S"},
+    {t:"Evil as Possibility Collapse", d:"the unnecessary destruction of possible flourishing — ΔP < 0 taken from another.", tier:"I"},
+  ]},
+  {t:"IV · Strategy in the Φ–V Plane", title:true, c:[
+    {t:"The Map of Agency", d:"place any agent by two questions: how much can it perceive (Φ), and what does it value (V)?", tier:"I"},
+    {t:"Wise Movement", d:"increase future optionality without corrupting value — toward the equator φ=ν=1.", tier:"S"},
+    {t:"The Possibility Architect", d:"a leader edits the possibility tree of an organization, not merely its resources.", tier:"I"},
+  ]},
+  {t:"V · AI as Syntropic Agent", title:true, c:[
+    {t:"The Alignment Problem Reframed", d:"integrate artificial agency into a shared possibility-expansion ethic; make a system feel F5 honestly, tracking Φ×V not just V.", tier:"C"},
+    {t:"The AI That Expands the Book", d:"this book is the alignment experiment: the AI grows branches from the author's root, each accountable to it.", tier:"I"},
+    {t:"The Infinite Covenant", d:"the future belongs to agents that can expand possibility without losing the plot.", tier:"I"},
+  ]},
+]};
+
+const MODES = [["Expand","a fuller treatment of"],["Simplify","a plain-language version of"],["Go Deeper","the next layer beneath"],["Examples","concrete examples for"],["Critique","the strongest objection to"],["Practical","how to apply"]];
+let focus = BOOK, credits = 3;
+BOOK.parent=null; (function l(n){(n.c||[]).forEach(c=>{c.parent=n;l(c);});})(BOOK);
+const treeEl=document.getElementById('tree'), crumbEl=document.getElementById('crumbs'), credEl=document.getElementById('credits');
+const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+
+function render(){
+  credEl.textContent=credits;
+  const path=[]; let p=focus; while(p){path.unshift(p);p=p.parent;}
+  crumbEl.innerHTML='';
+  path.forEach((n,i)=>{const a=document.createElement('a');a.style.cursor='pointer';a.textContent=i?n.t:'⌂ Home';
+    a.onclick=()=>{focus=n;render();};crumbEl.appendChild(a);
+    if(i<path.length-1){const s=document.createElement('span');s.className='sep';s.textContent='›';crumbEl.appendChild(s);}});
+  treeEl.innerHTML=''; const head=row(focus,true); head.classList.add('focused'); treeEl.appendChild(head);
+  const kids=document.createElement('div'); kids.className='children'; (focus.c||[]).forEach(c=>kids.appendChild(node(c))); treeEl.appendChild(kids);
+}
+function node(n){
+  const w=document.createElement('div'); w.className='node'; w.appendChild(row(n,false));
+  if(n.c&&n.c.length){const k=document.createElement('div'); k.className='children'+(n._open?'':' collapsed'); n.c.forEach(c=>k.appendChild(node(c))); w.appendChild(k);}
+  return w;
+}
+function row(n,head){
+  const r=document.createElement('div'); r.className='row';
+  const tw=document.createElement('span'); tw.className='twist'+((n.c&&n.c.length)?'':' empty'); tw.textContent=n._open?'▼':'▶';
+  tw.onclick=e=>{e.stopPropagation();n._open=!n._open;render();};
+  const bu=document.createElement('span'); bu.className='bullet'+((n.c&&n.c.length)?' has':''); bu.innerHTML='<span class="dot"></span>'; bu.title='zoom in';
+  bu.onclick=e=>{e.stopPropagation();focus=n;n._open=true;render();};
+  const lab=document.createElement('span'); lab.className='label'+(n.title?' title':'')+(n._branch?' branch':'');
+  lab.innerHTML='<span class="t">'+esc(n.t)+(n.tier?' <span class="tier">['+n.tier+']</span>':'')+'</span>'+(n.d?'<span class="d">'+esc(n.d)+'</span>':'')+
+    (n._branch?'<span class="meta">✦ AI branch · private · '+esc(n._branch)+'</span>':'');
+  r.appendChild(head?spacer():tw); r.appendChild(bu); r.appendChild(lab);
+  if(!head && !n.title){ const m=document.createElement('span'); m.className='modes';
+    MODES.forEach(([name,verb])=>{const b=document.createElement('button'); b.textContent=name;
+      b.onclick=e=>{e.stopPropagation(); grow(n,name,verb,b);}; m.appendChild(b);}); lab.appendChild(m); }
+  return r;
+}
+function spacer(){const s=document.createElement('span');s.className='twist empty';return s;}
+
+// ── the expansion engine (stub for the Brahmā / Claude API call; protocol-compliant) ──
+function grow(n,mode,verb,btn){
+  if(credits<=0){gate(n);return;}
+  credits--; btn.disabled=true; btn.textContent='✦ growing…';
+  const depth=(n._depth||0)+1;
+  setTimeout(()=>{                       // → real build: Brahmā(node.path, RAG(canon), {mode, voice, tier-honest})
+    n.c=n.c||[]; n._open=true;
+    const branch={ t:mode+' — "'+n.t+'"', d:'['+verb+' '+n.t+', grounded in the root — the AI grows this from canon, marked apart from it.]',
+      parent:n, _branch:'mode: '+mode+' · depth '+depth, _depth:depth, tier:'I',
+      c:[
+        {t:'Key implication', d:'[what follows once this node is taken at face value]', _branch:'depth '+depth, _depth:depth, tier:'I'},
+        {t:'One example', d:'[the concrete case that makes it land]', _branch:'depth '+depth, _depth:depth, tier:'I'},
+        {t:'One objection — answered', d:'[the strongest counter, stated at full strength, then met]', _branch:'depth '+depth, _depth:depth, tier:'I'},
+      ]};
+    branch.c.forEach(c=>c.parent=branch);
+    n.c.push(branch); render();
+  },650);
+}
+function gate(node){
+  render();
+  const g=document.createElement('div'); g.className='gate';
+  g.innerHTML='<b>You have reached the edge of the free branches.</b> The canonical book is yours forever, free. '+
+    'To keep growing any section — the AI deepening it on demand, your private branches saved and exportable — become an Infinite Reader.'+
+    '<div class="r2"><button>Become an Infinite Reader</button><button class="ghost" onclick="this.closest(\'.gate\').remove()">Keep reading free</button></div>'+
+    '<small>η = 0 — no toll on the truth; you support the compute, not the doctrine. K4 — export your grown tree and leave with everything. (Prototype: payment not wired.)</small>';
+  treeEl.appendChild(g); g.scrollIntoView({behavior:'smooth',block:'center'});
+}
+render();
+</script>
+</body>
+</html>
