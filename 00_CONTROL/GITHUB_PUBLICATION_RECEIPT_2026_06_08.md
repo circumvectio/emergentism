@@ -7,8 +7,8 @@ rosetta:
   canonical_phrase: "Emergentism — GitHub publication receipt"
 title: "GitHub Publication Receipt"
 date: 2026-06-08
-status: "DRAFT — pending gh auth + push"
-evidence_tier: "[B] post-cleanup filesystem audit + [S] commit-log receipt; GitHub URL pending operator action"
+status: "PUBLISHED — see GitHub URL below"
+evidence_tier: "[B] post-cleanup filesystem audit + [S] commit-log receipt + [B] remote HEAD confirmed equal to local HEAD"
 ---
 
 # Emergentism — GitHub Publication Receipt
@@ -23,10 +23,12 @@ evidence_tier: "[B] post-cleanup filesystem audit + [S] commit-log receipt; GitH
 
 | Field | Value |
 |---|---|
-| GitHub URL | **pending `gh auth login` + `gh repo create` + `git push`** |
-| Final local HEAD commit | `1218026f15de14f264222f8383a53483152a56d6` |
+| GitHub URL | https://github.com/circumvectio/emergentism |
+| Local HEAD (pre-receipt) | `1218026f15de14f264222f8383a53483152a56d6` |
+| Final local HEAD commit (post-receipt) | `3cf2f4b8705be67ce2cf38b27eb2c770c1f298c7` |
+| Remote HEAD confirmed | `3cf2f4b8705be67ce2cf38b27eb2c770c1f298c7` (matches local) |
 | Branch pushed | `main` |
-| Push operator | Yves (operator-triggered) |
+| Push operator | Yves (operator-triggered, prior session) |
 | Push automation | none — this receipt records human-triggered publication only |
 
 ## Cleanup Counts
@@ -52,6 +54,7 @@ evidence_tier: "[B] post-cleanup filesystem audit + [S] commit-log receipt; GitH
 | 2 | `a1166c6` | `chore: remove regenerable build tissue` | 3 |
 | 3 | `1218026` | `chore: canonicalize source tree` | 2,400 |
 | 4 | `10816dc` | `chore: prepare github publication` | 2 |
+| 5 | `3cf2f4b` | `chore: add github publication receipt` | 1 |
 
 The 5-step spec sequence is preserved in the commit graph (control plane → tissue removal → lineage preservation → structure canonicalization → publication prep). The lineage + canonicalization steps for this root are recorded in the `00_CONTROL/` control-plane docs (no source-touching reorg was required) and source bodies are committed under the `canonicalize source tree` step.
 
@@ -89,11 +92,11 @@ The 5-step spec sequence is preserved in the commit graph (control plane → tis
 
 ## Remaining Verification Gaps
 
-- [ ] **GitHub URL not yet set** — depends on `gh auth login` and `gh repo create circumvectio/emergentism --private --source=. --remote=origin --push`. Operator action required.
+- [x] **GitHub URL set** — https://github.com/circumvectio/emergentism · remote HEAD verified equal to local HEAD `3cf2f4b`
 - [ ] **Aureus doctrine ambient coupling** — this repo contains the Emergentism canon; live Aureus / OFN proof artifacts live in the Aureus entity lane and are not duplicated here. Cross-repo invariants (Five+One constitution, η=0 fence) are referenced via relative path from `00_CONTROL/` and `AGENTS.md`; reviewer should confirm those pointer paths resolve post-push.
 - [ ] **`book-pwa` post-install build** — `npm ci && npm run build` was not exercised in this publication pass; dependabot / CI should run the build on first push.
 - [ ] **No CI workflows committed** — `book-pwa` does not yet have GitHub Actions. Add as a follow-up.
-- [ ] **AGENTS.md / README.md internal relative links** — review after `gh repo create` returns the URL, then update any absolute URLs (none expected — current docs are path-relative).
+- [ ] **AGENTS.md / README.md internal relative links** — review post-push and update any absolute URLs (none expected — current docs are path-relative).
 
 ## Publication Rule (carried forward)
 
