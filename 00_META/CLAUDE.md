@@ -62,3 +62,8 @@ The constitution is **5 + 1** (K2-ruled 2026-05-30; canonical surface: [`00_THE_
 ## Constraint
 
 Do not treat a clean sevenfold mapping as proof. Rosetta signatures are structural unless independently evidenced.
+
+
+<claude-mem-context>
+
+</claude-mem-context>

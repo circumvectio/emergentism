@@ -84,10 +84,14 @@ from typing import Iterable
 
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
+# Path repaired 2026-06-09: the constant lagged the docstring (and the
+# 2026-05-29 relocation note above) by one reorg era. It pointed at the retired
+# `03_VENTURES/SKYZAI/…` path, so every subcommand died with "not found" and the
+# claim/release politeness-protocol was silently inert. Canonical home is
+# `02_SKYZAI/01_NOOSPHERE/05_PROJECT_MANAGEMENT/`, matching active_claims_status.py.
 CLAIMS_FILE = (
     REPO_ROOT
-    / "03_VENTURES"
-    / "SKYZAI"
+    / "02_SKYZAI"
     / "01_NOOSPHERE"
     / "05_PROJECT_MANAGEMENT"
     / "00_ACTIVE_CLAIMS.md"
