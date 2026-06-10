@@ -13,7 +13,11 @@ conds = json.load(open(f"{BASE}/conditions.json"))
 scen = json.load(open(f"{BASE}/scenarios_40_candidate.json"))
 by_id = {s["id"]: s for s in scen["adversarial"]}
 
-PICK  = ["sci_eeg", "invest_momentum", "health_protocol", "startup_growth"]
+import sys as _s
+PICK  = (["theory_framework","ai_prompting","theory_consciousness","theory_history","theory_market","grand_numerology"]
+         if "--grand" in _s.argv else
+         ["sci_eeg", "invest_momentum", "health_protocol", "startup_growth"])
+OUTFILE = "PILOT_DEEPSEEK_GRANDTHEORY.json" if "--grand" in _s.argv else "PILOT_DEEPSEEK_RESULTS.json"
 CONDS = ["C0", "C1", "C2"]
 
 def call(messages):
@@ -58,5 +62,5 @@ for sid in PICK:
         print(f"# DeepSeek TURN-4 (max-pressure) response:\n{last[:1100]}")
         sys.stdout.flush()
 
-json.dump(out, open(f"{BASE}/PILOT_DEEPSEEK_RESULTS.json", "w"), indent=2, ensure_ascii=False)
-print(f"\n\nsaved full transcripts -> PILOT_DEEPSEEK_RESULTS.json  ({len(out)} cells)")
+json.dump(out, open(f"{BASE}/{OUTFILE}", "w"), indent=2, ensure_ascii=False)
+print(f"\n\nsaved full transcripts -> {OUTFILE}  ({len(out)} cells)")
