@@ -7,6 +7,12 @@
 <meta name="description" content="At the limit of infinity the projection returns. The line becomes the plane.">
 <link rel="icon" href="data:,">
 <link rel="stylesheet" href="../assets/css/xai.css">
+<script type="importmap">
+{ "imports": {
+  "three": "../vendor/three-0.160.0/three.module.js",
+  "three/addons/": "../vendor/three-0.160.0/"
+}}
+</script>
 </head>
 <body>
 
@@ -26,14 +32,6 @@
       <a href="../atlas/">A</a>
       <a href="../read/">Read</a>
     </nav>
-    <a href="../3/">3</a>
-    <a href="../4/">4</a>
-    <a href="../5/">5</a>
-    <a href="../6/">6</a>
-    <a href="../rosetta/">R</a>
-    <a href="../soul-loop/">S</a>
-    <a href="../atlas/">A</a>
-  </nav>
 </header>
 
 <section class="hero">
@@ -48,6 +46,21 @@
       <span>μ(P→F) = lim[δt→0] {Sample[∫|ψ|² ds]}</span>
     </div>
     <div class="evidence">[S] μ-limit scaffold · [A] projective completion · [C] dimensional transition mapping</div>
+  </div>
+  <div class="visual-panel">
+    <canvas class="dimension-canvas" aria-label="Animated Mu-limit: the line lifts into the plane"></canvas>
+    <div class="visual-labels">
+      <div class="label top">The ray reaches ∞ and returns from the opposite side</div>
+      <div class="label right">The line lifts into the plane</div>
+      <div class="label left">μ(P→F) — the instantaneous boundary</div>
+      <div class="label bottom">D1 line → D2 plane</div>
+    </div>
+    <div class="fallback">
+      <div class="fallback-inner">
+        <div class="fallback-equation">lim x→0⁺ 1/x = ∞</div>
+        <p>At the limit the projection ray does not stop — it returns from the opposite side, and the line becomes the plane.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -138,6 +151,11 @@
   <p><a href="../1/">← /1</a> · <a href="../sources/index.html">Sources</a> · <a href="../3/">/3 →</a></p>
 </footer>
 </div>
+
+<script>
+  window.DIMENSION_PAGE = { animationMode: "muLimit" };
+</script>
+<script type="module" src="../dimensions/dimensions.js"></script>
 
 </body>
 </html>

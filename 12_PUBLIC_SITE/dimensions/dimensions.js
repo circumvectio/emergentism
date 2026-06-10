@@ -2,6 +2,8 @@ const page = window.DIMENSION_PAGE || {};
 const canvas = document.querySelector(".dimension-canvas");
 const visual = document.querySelector(".visual-panel");
 const rootElement = document.documentElement;
+const REDUCED_MOTION = !!(window.matchMedia
+  && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
 const dimensionCommands = [
   { key: "/0", aliases: ["/0", "0", "d0", "titans"], label: "/0 · Titans", detail: "Ground / finity", href: "../0/" },
   { key: "/1", aliases: ["/1", "1", "d1", "one", "finity"], label: "/1 · The Special One", detail: "Reciprocal mirror", href: "../1/" },
@@ -21,7 +23,10 @@ let THREE;
 let OrbitControls;
 
 function initThemeControls() {
-  const stored = window.localStorage.getItem("emergentism-theme");
+  let stored = null;
+  try {
+    stored = window.localStorage.getItem("emergentism-theme");
+  } catch (_) { /* storage blocked — default theme */ }
   const initial = stored || "dark";
   rootElement.dataset.theme = initial;
 
@@ -42,7 +47,9 @@ function initThemeControls() {
   syncButton();
   button.addEventListener("click", () => {
     rootElement.dataset.theme = rootElement.dataset.theme === "light" ? "dark" : "light";
-    window.localStorage.setItem("emergentism-theme", rootElement.dataset.theme);
+    try {
+      window.localStorage.setItem("emergentism-theme", rootElement.dataset.theme);
+    } catch (_) { /* storage blocked — theme stays per-page */ }
     syncButton();
   });
   topbar.append(button);
@@ -180,12 +187,16 @@ function setupCanvas2D() {
 function drawTitanCalculator(time = 0) {
   const { ctx, resize } = setupCanvas2D();
   const tickValues = [-6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6];
+  let bounds = resize();
+  window.addEventListener("resize", () => {
+    bounds = resize();
+    if (REDUCED_MOTION) draw(0);
+  });
 
   function draw(now) {
     const ink = "#fff";
     const muted = "#8f8f8f";
     const dim = "#5f5f5f";
-    const bounds = resize();
     const width = bounds.width;
     const height = bounds.height;
     const t = now * 0.001;
@@ -281,24 +292,29 @@ function drawTitanCalculator(time = 0) {
     marker(cx, axis, 13, "#fff", "⊙", "s = log(1) = 0");
     marker(rx, axis, 8, muted, "○", "s -> +∞");
 
+    // titles sit below the top HTML chip and above the bottom one — no overlap
     ctx.fillStyle = ink;
     ctx.font = "700 13px ui-monospace, SFMono-Regular, Menlo, monospace";
     ctx.textAlign = "left";
-    ctx.fillText("Emergentism logarithmic calculator scale", left, pad + 8);
+    ctx.fillText("Emergentism logarithmic calculator scale", left, pad + 44);
     ctx.fillStyle = muted;
     ctx.font = "12px ui-monospace, SFMono-Regular, Menlo, monospace";
-    ctx.fillText("x ↦ 1/x mirrors s ↦ -s around unity", left, pad + 30);
+    ctx.fillText("x ↦ 1/x mirrors s ↦ -s around unity", left, pad + 64);
 
     ctx.textAlign = "right";
     ctx.fillStyle = ink;
-    ctx.fillText("⊙ = • × ○", right, height - pad - 28);
+    ctx.fillText("⊙ = • × ○", right, height - pad - 48);
     ctx.fillStyle = muted;
-    ctx.fillText("frame/register doctrine, not field arithmetic", right, height - pad - 8);
+    ctx.fillText("frame/register doctrine, not field arithmetic", right, height - pad - 28);
 
-    requestAnimationFrame(draw);
+    if (!REDUCED_MOTION) requestAnimationFrame(draw);
   }
 
-  requestAnimationFrame(draw);
+  if (REDUCED_MOTION) {
+    draw(0);
+  } else {
+    requestAnimationFrame(draw);
+  }
 }
 
 function line(points, color = 0xffffff, opacity = 1) {
@@ -401,16 +417,20 @@ function buildScene(mode, scene) {
   }
 
   if (mode === "riemann") {
-    root.add(createSphere(1.35, 0.32));
-    root.add(ring(1.35, 0xffffff, 1));
-    root.add(makeMarker(new THREE.Vector3(0, -1.35, 0), 0x707070, 0.08));
-    root.add(makeMarker(new THREE.Vector3(1.35, 0, 0), 0xffffff, 0.1));
-    root.add(makeMarker(new THREE.Vector3(0, 1.35, 0), 0xb8b8b8, 0.08));
-    root.add(line([
-      new THREE.Vector3(0, 1.35, 0),
-      new THREE.Vector3(1.35, 0, 0),
-      new THREE.Vector3(2.7, -1.35, 0)
-    ], 0xffffff, 0.95));
+    // Stereographic projection from the north pole (∞): the 45° ray through
+    // the equator point lands exactly ON the plane at radius 1 — the unit
+    // made visible. The ray ends at the plane; it does not overshoot.
+    const r = 1.35;
+    const N = new THREE.Vector3(0, r, 0);
+    const S = new THREE.Vector3(0, -r, 0);
+    const E = new THREE.Vector3(r, 0, 0); // equator point = its own projection
+    root.add(createGridPlane(4.6, 15));
+    root.add(createSphere(r, 0.32));
+    root.add(ring(r, 0xffffff, 1));
+    root.add(makeMarker(S, 0x707070, 0.08));
+    root.add(makeMarker(E, 0xffffff, 0.11));
+    root.add(makeMarker(N, 0xb8b8b8, 0.08));
+    root.add(line([N, E], 0xffffff, 0.95));
   }
 
   if (mode === "muLimit") {
@@ -446,23 +466,30 @@ function buildScene(mode, scene) {
   }
 
   if (mode === "burrisphere") {
-    root.add(createSphere(1.38, 0.23));
-    root.add(ring(1.38, 0xffffff, 1));
-    root.add(line([
-      new THREE.Vector3(0, 1.38, 0),
-      new THREE.Vector3(1.38, 0, 0),
-      new THREE.Vector3(2.55, -1.04, 0)
-    ], 0xb8b8b8, 1));
-    root.add(line([
-      new THREE.Vector3(0, -1.38, 0),
-      new THREE.Vector3(-1.38, 0, 0),
-      new THREE.Vector3(-2.55, 1.04, 0)
-    ], 0x707070, 1));
-    root.add(makeMarker(new THREE.Vector3(1.38, 0, 0), 0xb8b8b8, 0.08));
-    root.add(makeMarker(new THREE.Vector3(-1.38, 0, 0), 0x707070, 0.08));
-    root.add(makeMarker(new THREE.Vector3(0, 0, 0), 0xffffff, 0.1));
-    [0.42, 0.8, 1.12].forEach((y, i) => {
-      const lat = ring(Math.sqrt(1.38 * 1.38 - y * y), i === 1 ? 0xffffff : 0x777777, 0.5);
+    // The dual stereographic projection: one sphere point P, two rays.
+    // phi-chart projects FROM the north pole (infinity), nu-chart FROM the
+    // south pole (zero); both rays pass through P (they meet ON the sphere)
+    // and cross the equatorial plane at reciprocal radii: phi · nu = 1.
+    const r = 1.38;
+    const theta = Math.PI / 3; // sample colatitude 60° — upper hemisphere
+    const N = new THREE.Vector3(0, r, 0);
+    const S = new THREE.Vector3(0, -r, 0);
+    const P = new THREE.Vector3(r * Math.sin(theta), r * Math.cos(theta), 0);
+    const Pphi = new THREE.Vector3(r / Math.tan(theta / 2), 0, 0); // cot(θ/2) · r
+    const Pnu = new THREE.Vector3(r * Math.tan(theta / 2), 0, 0);  // tan(θ/2) · r
+
+    root.add(createSphere(r, 0.23));
+    root.add(ring(r, 0xffffff, 1));
+    root.add(createGridPlane(5.4, 17));
+    root.add(line([N, P, Pphi], 0xffffff, 0.95)); // descending ray from ∞
+    root.add(line([S, P], 0xb8b8b8, 0.95));       // ascending ray from 0 (crosses plane at Pnu)
+    root.add(makeMarker(N, 0xb8b8b8, 0.07));
+    root.add(makeMarker(S, 0x707070, 0.07));
+    root.add(makeMarker(P, 0xffffff, 0.11));      // the meeting point on the sphere
+    root.add(makeMarker(Pphi, 0xb8b8b8, 0.075));
+    root.add(makeMarker(Pnu, 0xb8b8b8, 0.075));
+    [0.46, 0.92].forEach((y) => {
+      const lat = ring(Math.sqrt(r * r - y * y), 0x777777, 0.4);
       lat.position.y = y;
       root.add(lat);
       const mirror = lat.clone();
@@ -515,8 +542,9 @@ async function boot() {
     controls.enableDamping = true;
     controls.enablePan = false;
     controls.enableZoom = false;
-    controls.autoRotate = true;
-    controls.autoRotateSpeed = page.animationMode === "burrisphere" ? 0.55 : 0.35;
+    controls.autoRotate = !REDUCED_MOTION;
+    controls.autoRotateSpeed = page.autoRotateSpeed
+      || (page.animationMode === "burrisphere" ? 0.55 : 0.35);
 
     addStars(scene);
     const root = buildScene(page.animationMode, scene);
@@ -546,6 +574,18 @@ async function boot() {
       controls.update();
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
+    }
+
+    if (REDUCED_MOTION) {
+      // static render: one frame now, re-render only on interaction/resize
+      resize();
+      renderer.render(scene, camera);
+      controls.addEventListener("change", () => renderer.render(scene, camera));
+      window.addEventListener("resize", () => {
+        resize();
+        renderer.render(scene, camera);
+      });
+      return;
     }
 
     resize();

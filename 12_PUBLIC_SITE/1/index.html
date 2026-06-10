@@ -7,6 +7,12 @@
 <meta name="description" content="One is the true center of the multiplicative and logarithmic number line. Zero and infinity become symmetric poles.">
 <link rel="icon" href="data:,">
 <link rel="stylesheet" href="../assets/css/xai.css">
+<script type="importmap">
+{ "imports": {
+  "three": "../vendor/three-0.160.0/three.module.js",
+  "three/addons/": "../vendor/three-0.160.0/"
+}}
+</script>
 </head>
 <body>
 
@@ -26,15 +32,6 @@
       <a href="../atlas/">A</a>
       <a href="../read/">Read</a>
     </nav>
-    <a href="../2/">2</a>
-    <a href="../3/">3</a>
-    <a href="../4/">4</a>
-    <a href="../5/">5</a>
-    <a href="../6/">6</a>
-    <a href="../rosetta/">R</a>
-    <a href="../soul-loop/">S</a>
-    <a href="../atlas/">A</a>
-  </nav>
 </header>
 
 <section class="hero">
@@ -50,6 +47,21 @@
       <span>|log x|</span>
     </div>
     <div class="evidence">[A] reciprocal symmetry · [S] frame-register reading · [A] logarithmic diffeomorphism</div>
+  </div>
+  <div class="visual-panel">
+    <canvas class="dimension-canvas" aria-label="Animated Riemann projection: the point 1 on the sphere"></canvas>
+    <div class="visual-labels">
+      <div class="label top"><strong>○</strong> North pole — ∞</div>
+      <div class="label right"><strong>⊙</strong> Equator — 1, the fixed point of x ↦ 1/x</div>
+      <div class="label left">The projection ray lands on 1</div>
+      <div class="label bottom"><strong>•</strong> South pole — 0</div>
+    </div>
+    <div class="fallback">
+      <div class="fallback-inner">
+        <div class="fallback-equation">x = 1/x ⟹ x = 1</div>
+        <p>One is the only positive real fixed by inversion — the self-dual center of multiplicative relation.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -143,6 +155,11 @@
   <p><a href="../0/">/0</a> · <a href="../sources/index.html">Sources</a> · <a href="../2/">/2</a></p>
 </footer>
 </div>
+
+<script>
+  window.DIMENSION_PAGE = { animationMode: "riemann" };
+</script>
+<script type="module" src="../dimensions/dimensions.js"></script>
 
 </body>
 </html>
