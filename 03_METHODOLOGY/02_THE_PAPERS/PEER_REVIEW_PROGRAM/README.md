@@ -32,7 +32,7 @@ Drafts: `R{1..5}_*_DRAFT.md`. Experiment code: `R{3,6,7,8,9}_SUPPORT_*.py`. Prer
 
 ## The one-line verdict
 
-Emergentism is a well-assembled synthesis of real prior art, honestly self-tiered, whose contribution is the *coupling*; its failure mode was headlines outrunning components (now corrected); its math kernel is correct-but-elementary; and its truth against the world is **unrun** — the decisive next moves are the no-API-key tests (R5 read, R3 boundary control, R1 0/0 witness) and the R2 pilot.
+Emergentism is a well-assembled synthesis of real prior art, honestly self-tiered, whose contribution is the *coupling* — and whose **credential is the one place it changed its mind against interest: [R6](R6_CONJUGATE_RESULTS.md), the refutation of the conjugate-empowerment geometry** (lead with the refutation, not with the self-narrative that it self-corrects). Its failure mode was headlines outrunning components (now corrected — including a self-caught over-claim in the axiom papers); its math kernel is correct-but-elementary; and its truth against the world is **unrun** — the decisive next moves are the no-API-key tests (R5 read, R3 boundary control, R1 0/0 witness) and the R2 pilot. Per-axiom grounding: [AXIOM_PAPERS/](AXIOM_PAPERS/README.md).
 
 ## Known issue
 `R2_HARNESS/scenarios.json` (v0.1) was found truncated by an external edit; superseded by the frozen `scenarios_40_candidate.json` (point the harness at it via `--scenarios`). Not in this lane by design: the HOLD-list cosmology/force-ladder/theology.
