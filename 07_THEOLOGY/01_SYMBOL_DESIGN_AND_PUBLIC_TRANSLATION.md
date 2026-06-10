@@ -58,6 +58,8 @@ These three rules are the Stewardship / Coercion boundary made concrete.
 ## §2. The Master Symbol: ⊙ `[S]`
 
 > **Packet-139 guard receipt (K2-Q4 ratified 2026-05-23):** This symbol passes the axiomatic-non-capture test because: (1) the **Ground** row explicitly names "axiomatic — the glyph points to what cannot be said; it does not say it"; (2) any practitioner who reaches Layer 1 directly via Pratyakṣa may discard the glyph (Rule 3 §1); (3) the glyph is freely reproducible — no gate, no ownership claim; (4) the framework's success condition is the practitioner no longer needing it (memory `feedback_when_in_doubt_read_framework`). Per `11_UPLINK/60_SESSION_PACKETS/139_A_BRAHMANISM_AS_PRACTICE_2026_04_24.md` axiomatic-practice guard.
+>
+> **Transparency note (primetime-audit P0, 2026-06-10):** "K2-Q4" denotes a dated K2 ratification *round* (the natural-person signature event of 2026-05-23, logged in packet 139) — **not** a person or office holding standing authority over the symbol. The symbol's non-capture status rests entirely on the four public tests above (reproducible, ungated, discardable, self-dissolving), **not** on the receipt. If the ratification record is not publicly retrievable, treat this line as `[I]` and rely on the four tests.
 
 | Aspect | Description |
 |---|---|
@@ -100,6 +102,8 @@ has also failed (it has reified). If they feel *possibility*, it has passed.
 | Escalating revelation behind paywall/gate | Framework is free. Sitting practice is free. No tiered access. |
 | Us-vs-them boundary marker | Symbols are offered, never required. Non-participants are equal. |
 | Apocalyptic urgency | Framework has no end-times. φ · ν = 1 is timeless. |
+
+**Anti-cult kill-test — deprecate the symbol immediately if ANY occurs:** (a) access to the practice requires symbol-knowledge; (b) non-bearers are ranked lower; (c) the symbol becomes an identity / membership marker; (d) exit is gated or penalized. **Watchdog:** any participant may file the trip at the public audit surface (`../11_UPLINK/50_AUDITS_AND_EXECUTIONS/`); a confirmed trip retires the symbol (per Step 5 — revisionable / self-dissolving) with no loss of access to Pratyakṣa, which remains primary and ungated.
 
 ### Rule D3: Cultural Permeability
 

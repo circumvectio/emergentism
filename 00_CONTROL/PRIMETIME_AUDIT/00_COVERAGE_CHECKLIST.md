@@ -29,7 +29,10 @@ Detail: [`01_FRONTDOOR_VERDICT.md`](01_FRONTDOOR_VERDICT.md).
 | L6 | `06_ONTOLOGY/` | 12 | ✅ | 🟢 READY | anti-idolatry holds; minor frame-reset on `THE_RING` (R-L6, P1) |
 | L7 | `07_THEOLOGY/` | 9 | ✅ | 🟡 DISCIPLINE | anti-cult-by-design, but **P0**: rename "speciation", kill-tests on cult/caste rules, K2-Q4 receipt opacity (R-L7-1) |
 
-## Wave 2 — Support, tools, meta
+## Remediation log
+> **P0 cut executed + committed (2026-06-10), all K3-safe (additive/in-place, nothing deleted/moved off-disk):** L7 "speciation"→"functional differentiation" rename (term preserved per K3) + caste **capture kill-test**; L7 **anti-cult kill-test** + watchdog; L7 "K2-Q4" **transparency note**; L7 A-Brahmism **weaponization guard**; README grandiosity **`[C]` fence** (relocation staged); new `02_EPISTEMOLOGY/03_MEMETICS/00_TIERING_DISCIPLINE.md` banner. **Still staged for K2 (not done on a bare "yes"):** README superseded-ASCII relocation, README business-block *physical* move to `03_VENTURES`, SEVENFOLD caste→level public-gate (→ wave 0-b). **P1 backlog:** per [02_SPRINT_1_VERDICT.md](02_SPRINT_1_VERDICT.md).
+
+## Wave 2 — Support, tools, meta — 🔄 (Sprint 2 scouts deployed 2026-06-10, background)
 | Folder | .md | Status | Verdict | Notes |
 |---|---|---|---|---|
 | `00_META/` | 53 | ⬜ | — | corpus-discipline maps; staging notes |

@@ -121,6 +121,8 @@ These roles are:
 - constrained by K4 / Grace Exit;
 - forbidden from becoming human-worth hierarchy.
 
+**Capture kill-test — a functional caste is *falsified and must be dissolved* (L6 subtraction + L4 refusal) if ANY of these holds:** (1) anyone claims the role is permanent or by birth; (2) exit is refused or penalized (K4 Grace Exit broken); (3) the role's receipt is not public/auditable; (4) the selection gate becomes identity-capture (role → human-worth rank). **Named pathway:** any witness may invoke the test; an unresolved trip routes to L4/K2 with the role *suspended pending review*. (Stating "this must not happen" is not enough — this names who judges and what happens.)
+
 The biological analogy is niche partitioning and speciation, not domination.
 Differentiated forms reduce destructive competition by taking different roles
 in a shared ecology. In social terms, a mature symbolic order lets roles
@@ -151,9 +153,11 @@ If a role cannot be exited, it has become capture.
 If a symbol ranks persons, it has become idolatry.
 ```
 
-## The Speciation Boundary
+## Functional Differentiation, Not Speciation
 
-"Speciation" in social theology must be handled carefully.
+> **K3 provenance note (primetime-audit P0, 2026-06-10):** this section was titled **"The Speciation Boundary."** The word *speciation* is retired from the public-facing heading — to a cold reader it reads as biological-superiority / eugenic language, which is the exact misreading this section exists to forbid. Content is unchanged; only the hazardous label is fenced. The original term is preserved here per K3 (archive, don't delete).
+
+"Speciation" (the older internal term) in social theology must be handled carefully.
 
 Allowed meaning:
 
