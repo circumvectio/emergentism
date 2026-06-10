@@ -204,7 +204,7 @@ If even one of these conjectures survives empirical contact, the framework has m
 
 | Conjecture | Claim | Kill if |
 |---|---|---|
-| 1 | 3D from Hopf: S³ = S² × S¹ | Dimensions ≠ 3 fundamentally |
+| 1 | 3D from Hopf: S³ as the **Hopf bundle** over S² (fiber S¹) | Dimensions ≠ 3 fundamentally |
 | 2 | Gravity resists quantization because gravity IS • | Gravity IS quantized successfully |
 | 3 | Planck scale = equator of •-○ | Planck scale has no special physics |
 | 4 | Block universe = cosmic fixed point | Block universe is wrong interpretation |

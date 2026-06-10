@@ -64,7 +64,7 @@ These files give the **L5 cosmological lens** on an organism-runtime synthesis w
 - **K2:** every irreversible act requires natural-person signature.
 - **η = 0:** zero extraction; fees only on value created.
 - **K3:** no-deletion; archive-first.
-- **K4:** grace exit; leave with everything.
+- **K4:** grace exit; documented withdrawal path (redeemable assets, not "everything").
 - **A7:** self-correction with evidence tier on every claim.
 
 ## Constraint

@@ -17,6 +17,8 @@ rosetta:
 **Status:** Working paper — open questions flagged
 **Kill Criteria:** If private extraction benefit can be shown to exceed collective B-reduction even under repeated play with monitoring, the dominant-strategy result fails and the mechanism requires enforcement.
 
+> **[A7 audit note — 2026-06-10, headline-discipline pass]** The title "η = 0 as Nash Equilibrium" is **conditional** and must be read with the abstract, not as an unconditional claim. η=0 is a strict dominant strategy **only in the degenerate pure-public-goods model** (no private benefit); with private side-payments it is **not** a Nash equilibrium (this paper's own Model-B / tragedy-of-the-commons result). The honest statement: η=0 is sustainable only (a) as a **repeated-game folk-theorem** equilibrium under sufficient patience — *flagged here as an open question, not proven* — or (b) as a **VCG/mechanism-design** outcome under monitoring + penalties + exit, i.e. **enforced low-extraction, not self-enforcing**. **Missing adversarial citation to add:** *Green & Laffont (1977)* — strategyproof + efficient ⇒ **not budget-balanced**; exact zero-extraction-with-balance is provably impossible in the general quasi-linear setting, so the Three-Gates penalty is the unavoidable surplus-burn the impossibility theorem predicts. The S² geometry is **presentational** (a re-parameterization of the public-goods first-order condition), not an independent source of equilibrium. Full grounding: `../../../03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/00_COSMOLOGY_AND_CONSTITUTION_AUDIT.md` Part II.
+
 ---
 
 ## Abstract

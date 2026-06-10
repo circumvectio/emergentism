@@ -1,25 +1,38 @@
 # PEER_REVIEW_PROGRAM
 
-External-submission lane, opened 2026-06-10. Start at [00_PROGRAM.md](00_PROGRAM.md).
+Opened 2026-06-10. The lane where corpus claims are grounded against reality, cut into field-native shards, tested where testable, and tiered honestly. **House rule:** coherence is not truth; every claim carries its evidence tier and its kill criterion; every external citation traces to a read source; AI assistance disclosed.
 
-This folder is where corpus claims are cut into field-native shards for peer review. House rules: no internal vocabulary in external drafts; tiers travel as theorem/conjecture/limitation language; kill criteria become Limitations sections; AI assistance disclosed; all citations verified against originals before submission; preprint before journal.
+## ▶ START HERE
 
-Contents (all five papers have full drafts as of 2026-06-10 pm):
+- **[00_AXIOMS_AND_STATUS.md](00_AXIOMS_AND_STATUS.md)** — the capstone: where the program stands + the seven axioms stated honestly, each annotated with this session's result. **Read this first.**
 
-- [00_PROGRAM.md](00_PROGRAM.md) — ranked findings inventory, the R1–R5 slate, sequencing, rules of engagement, run log
-- [R1_FRAMES_NOT_OPERANDS_DRAFT.md](R1_FRAMES_NOT_OPERANDS_DRAFT.md) — flagship full draft (philosophy of mathematics)
-- [R2_PAPER_DRAFT.md](R2_PAPER_DRAFT.md) — full registered-report draft + [R2_CHARIOTEER_BENCHMARK_PREREG.md](R2_CHARIOTEER_BENCHMARK_PREREG.md) + **runnable harness** [R2_HARNESS/](R2_HARNESS/README.md) (smoke-tested; needs API key + battery expansion for the live run)
-- [R3_PAPER_DRAFT.md](R3_PAPER_DRAFT.md) — full draft with both experiments' results; lab notes: [R3_TRANSFER_ASYMMETRY_RESULTS.md](R3_TRANSFER_ASYMMETRY_RESULTS.md); code: [R3_SUPPORT_TRANSFER_SIM.py](R3_SUPPORT_TRANSFER_SIM.py), [R3_SUPPORT_TRANSFER_SIM_V2.py](R3_SUPPORT_TRANSFER_SIM_V2.py)
-- [R4_PAPER_DRAFT.md](R4_PAPER_DRAFT.md) — full registered-report draft (instrument + collapse vignettes included) + [R4_TWO_FACTOR_BLIND_STUDY_PREREG.md](R4_TWO_FACTOR_BLIND_STUDY_PREREG.md)
-- [R5_PAPER_DRAFT.md](R5_PAPER_DRAFT.md) — full draft + [R5_UNIT_AS_FRAME_ABSTRACT.md](R5_UNIT_AS_FRAME_ABSTRACT.md) (finity's externally defensible core)
+## Status & synthesis docs
 
-Supporting artifacts:
+- [00_FINDINGS_AND_CONJECTURES.md](00_FINDINGS_AND_CONJECTURES.md) — ranked findings, achievements, conjectures (the backward-looking capstone)
+- [00_FRONTIER_KNOWN_KNOWNS_AND_UNKNOWNS.md](00_FRONTIER_KNOWN_KNOWNS_AND_UNKNOWNS.md) — open tasks, known knowns/unknowns, prioritized
+- [00_COSMOLOGY_AND_CONSTITUTION_AUDIT.md](00_COSMOLOGY_AND_CONSTITUTION_AUDIT.md) — the two big territories audited + the headline-discipline corrections log
+- [00_CORE_NARRATIVE_COHERENCE_CHECK.md](00_CORE_NARRATIVE_COHERENCE_CHECK.md) — the grand narrative mapped to coherence-vs-consistency-vs-truth
+- [00_PROGRAM.md](00_PROGRAM.md) — original program design, slate table, run log
+- [LITERATURE_GROUNDING.md](LITERATURE_GROUNDING.md) — per-paper prior-art grounding + download lists
+- [CITATIONS_VERIFIED.md](CITATIONS_VERIFIED.md) — web-verification ledger (11/11 confirmed)
 
-- [CITATIONS_VERIFIED.md](CITATIONS_VERIFIED.md) — web-verification ledger (11/11 references confirmed; Suda-tier calibration applied)
-- [R6_CANDIDATE_PROTO_DIMENSIONS_NOTE.md](R6_CANDIDATE_PROTO_DIMENSIONS_NOTE.md) — scoped sixth shard from the proto-dimensions notes (Penrose/Wolfram as pole/approach; teleology as constrained empowerment)
-- [R3_SUPPORT_TRANSFER_SIM_V3.py](R3_SUPPORT_TRANSFER_SIM_V3.py) — robustness suite (concavity/volume/objective sweeps)
-- `R2_HARNESS/scenarios_40_candidate.json` + `BATTERY_FROZEN_SHA256.txt` — the frozen 43+12 battery
+## The shard slate (current status)
 
-Not in this folder by design: cosmology, force-ladder, theology (HOLD list — see 00_PROGRAM.md §2).
+| Shard | Topic | Status |
+|---|---|---|
+| **R1** | Frames, not operands | Full draft; cite Priest (Inclosure Schema); delta = boundary-forms leg, pending the 0/0 witness |
+| **R2** | Anti-sycophancy constitution | Full draft + **runnable harness** ([R2_HARNESS/](R2_HARNESS/README.md), battery frozen); needs API key for the pilot; cite SWAY/SYCON |
+| **R3** | Transfer under mortality | Full draft + **3 sims run** (triage inversion); cite Social-Protection-Paradox; lab notes [R3_TRANSFER_ASYMMETRY_RESULTS.md](R3_TRANSFER_ASYMMETRY_RESULTS.md) |
+| **R4** | Two-factor multiplicative | Full registered-report draft; the keystone wager (unrun); the register where the sphere geometry *is* appropriate |
+| **R5** | The unit as frame | Full draft; **cleanest surviving delta** (0/1/∞ triptych + Euclid→SI arc); cite Rotman |
+| **R6** | Teleology = constrained empowerment | **REFUTED** — [R6_CONJUGATE_RESULTS.md](R6_CONJUGATE_RESULTS.md); empowerment is an additive simplex, not the product sphere; note: [R6_CANDIDATE_PROTO_DIMENSIONS_NOTE.md](R6_CANDIDATE_PROTO_DIMENSIONS_NOTE.md) |
+| **R7–R9** | Cooperation / enforcement / holobiont | **5 sims run** ([R7](R7_HORIZON_MORALITY_RESULTS.md), [R8](R8_MORAL_CIRCLE_RESULTS.md), [R9](R9_HOLOBIONT_RESULTS.md)); result is mainstream (Nowak/major-transitions); delta uncertain |
 
-**Known issue (2026-06-10):** `R2_HARNESS/scenarios.json` (the v0.1 battery) was found truncated/malformed by an external edit (an unterminated 13th scenario at line 166). Left untouched for inspection; superseded by the frozen `scenarios_40_candidate.json`. Point the harness at the candidate via `--scenarios scenarios_40_candidate.json`.
+Drafts: `R{1..5}_*_DRAFT.md`. Experiment code: `R{3,6,7,8,9}_SUPPORT_*.py`. Preregs: `R2_/R4_*_PREREG.md`.
+
+## The one-line verdict
+
+Emergentism is a well-assembled synthesis of real prior art, honestly self-tiered, whose contribution is the *coupling*; its failure mode was headlines outrunning components (now corrected); its math kernel is correct-but-elementary; and its truth against the world is **unrun** — the decisive next moves are the no-API-key tests (R5 read, R3 boundary control, R1 0/0 witness) and the R2 pilot.
+
+## Known issue
+`R2_HARNESS/scenarios.json` (v0.1) was found truncated by an external edit; superseded by the frozen `scenarios_40_candidate.json` (point the harness at it via `--scenarios`). Not in this lane by design: the HOLD-list cosmology/force-ladder/theology.

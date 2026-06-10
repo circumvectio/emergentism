@@ -55,7 +55,7 @@ The constitution is **5 + 1** (K2-ruled 2026-05-30; canonical surface: [`00_THE_
 - **K2:** every irreversible act requires natural-person signature. *Via-negativa — refusal of model-only action.*
 - **η = 0:** zero extraction; fees only on value created. Reads from two centres — additive 0 (zero extraction) and multiplicative 1 (preservation of reciprocal relation). *Via-negativa — refusal of extraction.*
 - **K3:** no-deletion; archive-first. *Via-negativa — refusal of unrecorded overwrite.*
-- **K4:** grace exit; leave with everything. *Via-negativa — refusal of no-exit entrapment.*
+- **K4:** grace exit; documented withdrawal path (redeemable assets, not "everything"). *Via-negativa — refusal of no-exit entrapment.*
 - **A7:** self-correction with evidence tier on every claim. *Via-negativa — refusal of infallibility.*
 - **+1 Ω:** noospheric directionality. *Via-positiva telos — the syntopic attractor the five clear the space for. Not a sixth refusal; a categorically distinct directional element.*
 

@@ -123,6 +123,8 @@ The η=0 fence, when read in the log-coordinate chart established by `40_THE_LOG
 
 **Tier.** `[S]` architecture; the 5-level structure is `[B]` published at `00_CANONICAL_DEFINITION.md` §v1.2-B; the per-constituent envelopes are `[I]/[B]` depending on whether a dated receipt exists.
 
+> **[A7/K3 reconciliation — 2026-06-10]** The marketing slogan **"leave with everything"** is **retracted** (it was already retracted in the canonical scope doc `11_UPLINK/20_SCOPE/21_GRACE_EXIT_SCOPE.md`: Grace Exit guarantees *pro-rata redemption of the **redeemable** treasury*, not "everything" — it does not guarantee liquidity, an honest valuation, or instantaneity). On 2026-06-10 the headline-discipline pass propagated this retraction to **94 distributed `CLAUDE.md`/`AGENTS.md` boilerplate shims** that still carried the slogan, replacing the `K4` cross-cutting-law line with *"grace exit; documented withdrawal path (redeemable assets, not 'everything')."* ~16 remaining prose occurrences are flagged for manual contextual review (the slogan-as-prose is not safely bulk-replaceable). This closes a standing K3/A7 drift (canon corrected, shims hadn't followed). Source: `03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/00_COSMOLOGY_AND_CONSTITUTION_AUDIT.md` Part II.
+
 ---
 
 ## §6. A7 — Self-Correction with Tier

@@ -50,7 +50,7 @@ rosetta:
 
 | # | Conjecture | Tier | Status after grounding | Kill criterion |
 |---|---|---|---|---|
-| 1 | **Empowerment = Φ × V under a conserved conjugate product φ·ν=1** (R6) | `[I]` | **Cleanest surviving delta.** The other-regarding ethic (von Foerster, coupled empowerment) and option-maximization (FSX, Turner) are prior art; the *two-reciprocal-factor decomposition with a conservation law* has no match found. | No constant-product trade-off frontier in empowerment testbeds → collapses to "von Foerster + coupled empowerment." |
+| ~~1~~ | ~~Empowerment = Φ × V under a conserved conjugate product φ·ν=1 (R6)~~ | `[A]` refuted | **REFUTED 2026-06-10** ([R6_CONJUGATE_RESULTS.md](R6_CONJUGATE_RESULTS.md)). The decomposition is **additive (simplex), not multiplicative (sphere)**: E = H(S)−H(S\|A), so iso-empowerment sets are lines, "φ·ν" = 2^E (tautology), and φ·ν=1 is the *dead state*. Empowerment is **reach-dominated, never balanced** — and mortality does not rescue balance (3 cost models, falsified) because balance is structurally empowerment-dead. **Deep consequence:** the corpus's "one geometry at all scales" fails here — the sphere fits the *organizational* register (Kremer weakest-link, R4) but **not** the teleology register (additive simplex). The teleology thread now has *no surviving novel formal claim*. | Kill criterion fired (twice) and was honored. |
 | 2 | **The 0/1/∞ triptych + the Euclid→Stevin→Buckingham→2019-SI arc as one story** (R5) | `[A]` history, `[I]` thesis | Strong, narrowed delta. Rotman already framed the *unit* as a displaced frame — so the novelty is the **three-item** triptych + the single historical arc, not "the unit is a frame." | If Rotman/de Courtenay already triangulate all three items or the full arc → exposition, not a claim. |
 | 3 | **Two-factor multiplicative structure of evaluated productivity** (R4, the keystone) | `[I]` | The multiplicative *mechanism* is old (O-ring, elimination-by-aspects). Delta = the specific **coherence×viability** content + a **product-vs-sum outcome-prediction** test on recovered latent factors. | Additive ≥ multiplicative on cross-validated outcomes; or a single general factor predicts as well; or no floor non-compensation. |
 | 4 | **Frame/operand signature extends to arithmetic boundary forms (0/0, ∞) + metrology** (R1) | `[I]` | Priest's Inclosure Schema owns the set-theoretic+semantic unification. Delta survives only in the boundary-forms/metrology legs. | Can a real Lawvere/Inclosure **fixed-point witness** be built for 0/0? If not (predicted), it is family resemblance, not reduction. |
@@ -59,13 +59,15 @@ rosetta:
 | 7 | **R7–R9 as a theoretical contribution** | `[I]`→? | **Most at-risk.** "Cooperation needs enforcement above a threshold" is mainstream (Nowak's five rules *are* threshold inequalities; punishment is not a separate mechanism). Possible delta only in the specific mortality/conjugate-welfare currency, or as synthesis. | If the currency reduces to b/c (Nowak) or assortment (Fletcher-Doebeli 2009) → no theoretical novelty; publishable only as pedagogy. Plus: **"holobiont" is a contested term** — must be framed as tested, not assumed. |
 | 8 | **The proto-dimensional cosmology** (D0→D6, force-ladder, "syntropy as fifth force") | `[C]` | **HOLD list — not for submission.** Paper P's SU(3) obstruction stands; "fifth force" must never be said to a physicist. | Earns external life only via the grammar (R1) and the bench (R2/R4) first. |
 
-## 4. The honest scoreboard
+## 4. The honest scoreboard (revised 2026-06-10 after the R6 test)
 
-- **Cleanest shots:** R6 (conjugate geometry) and R5 (triptych + arc). Each has a located, plausibly-unclaimed delta and a kill criterion.
-- **Real but narrow:** R3 (sign-flip of the transfer axiom under mortality), R4 (the coherence×viability prediction test), R1 (the boundary-forms leg, pending the 0/0 witness).
-- **Most honest verdict owed:** R7–R9 may have *no* theoretical novelty — a clean re-demonstration of the major-transitions consensus. Publishable as synthesis/pedagogy if framed as such; not as discovery.
+- **Cleanest shot:** **R5** (the 0/1/∞ triptych + the Euclid→SI arc) — now the single strongest surviving delta, since R6 fell.
+- **Real but narrow:** **R4** (the coherence×viability prediction test — *and* the register where the corpus's multiplicative geometry is actually appropriate, per the R6 result); **R3** (sign-flip of the transfer axiom under mortality); **R1** (the boundary-forms leg, pending the 0/0 witness).
+- **Refuted:** **R6** — the teleology/conjugate-geometry thread has no surviving novel formal claim. Recorded plainly. The empowerment register is an additive reach/precision simplex, not the corpus's sphere.
+- **Most honest verdict owed:** R7–R9 may have *no* theoretical novelty — a clean re-demonstration of the major-transitions consensus.
 - **On hold by design:** the cosmology and theology.
-- **Two factual corrections banked:** Axelrod & Hamilton 1981 = *Science* **211** (not 314); Hardin 1968 ends p. **1248**. Suda evidential tier `[A]→[I]`.
+- **The biggest structural finding of the whole program:** the corpus's signature claim — *one geometry (φ·ν=1 sphere) at all scales* — is **register-dependent, not universal.** Multiplicative for organizations (weakest-link); additive for empowerment/teleology. This is the load-bearing correction the program produced.
+- **Corrections banked:** Axelrod & Hamilton 1981 = *Science* **211** (not 314); Hardin 1968 ends p. **1248**; Suda tier `[A]→[I]`.
 
 ## 5. Next moves (no API key required, except the R2 pilot)
 

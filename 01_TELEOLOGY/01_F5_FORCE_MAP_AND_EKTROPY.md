@@ -83,6 +83,8 @@ The organism's objective function is not maximum coherence. It is maximum balanc
 
 ### Why Ektropy Is Real `[S]`
 
+> **[A7 disambiguation — 2026-06-10, headline-discipline pass]** "Real" here means **structurally real within the model** — the upward gradient is a genuine feature of the constraint surface `φ·ν=1`. What is `[S]`-provable is *only* the trivial geometric fact below (`(φ−ν)²≥0` has a floor at 0; `B=sinθ` peaks at the equator). This is **not** a claim that "ektropy" is a physical force or a fifth fundamental interaction in nature — that reading would be `[C]` and collides with the physics-reserved term *fifth force* (a falsifiable Yukawa-type interaction with active experimental bounds; Fischbach et al. 1986). The word "force" throughout the F5 material is **model-internal structural language**, not an accepted `[A]` physical interaction. See `../03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/00_COSMOLOGY_AND_CONSTITUTION_AUDIT.md` Part I.
+
 The geometric proof is direct:
 
 ```
