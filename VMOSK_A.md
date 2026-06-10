@@ -24,6 +24,61 @@ rosetta:
   canonical_phrase: "01_EMERGENTISM — VMOSK-A — Perennial Doctrine Root"
 ---
 
+<!-- VMOSK-A_REFRESH_OVERLAY_2026_06_10 -->
+
+## Status Snapshot — 2026-06-10 (reorientation overlay)
+
+| Field | Value |
+|---|---|
+| Refresh date | 2026-06-10 |
+| Scope | `01_EMERGENTISM/` doctrine root (1,708 `.md`) + its public surface |
+| Mandate change | **None.** V and M unchanged from v1.0; this overlay records progress + reprioritizes O/K. No K2 vision/mission expansion. |
+| Headline | Framework is **audited, experimentally tested for the first time, and book-converged** — but **not yet publicly live**. The experiments *deflated* several novelty headlines; that is A7 working, recorded as a win, not hidden. |
+| Evidence posture | Internal planning/governance. Doctrine claims stay tier-marked; the one new empirical class is `[B]` receipts from runnable sims/benchmarks. |
+
+### Achievements since v1.0 (2026-05-23 → 2026-06-10)
+- **Primetime audit COMPLETE** (`00_CONTROL/PRIMETIME_AUDIT/`): gods/demons pass over the whole *live* tree — Wave 0 front door, Wave 1 the seven -ologies (L1–L7), Wave 2 support/tools/meta/uplink/public-site, Wave 3 archives/compat verified clean mechanically. Remediation executed: P0 public-edge fences + 8 tier-hardening guards + a **K2-signed** archival cut (commits incl. `15dcdcc`). `[B]`
+- **Peer-review program EXECUTED, not just drafted** (`03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/`): one paper per axiom (AX1–AX7) + R1–R9 shards. **First real-world experiments in corpus history** ran: R3 transfer-asymmetry sim (+v2/v3), R6 conjugate-empowerment sim, R7–R9 sims, and **R2 anti-sycophancy benchmark live against DeepSeek (4 arms)**. `[B]`
+- **Definitive book CONVERGED** to one honest 101k-word long-scroll on the Definitive One Book spine + grafts, with an engineer-executable renderer build spec (Network-State-style medium). Assembled, **not shipped**. `[B]`
+- **Lens-Not-Law Rule** authored (`03_METHODOLOGY/00_THE_LENS_NOT_LAW_RULE.md`) — standing discipline that every cathedral-scope claim wears its tier inline. `[B]`
+
+### The honest ledger (the experiments cut against us — by design)
+- **R6 REFUTED:** empowerment is an **additive simplex**, not the multiplicative sphere φ·ν=1 — the signature "one geometry at all scales" is **register-dependent** (sphere fits organizations; teleology is additive). `[B]`
+- **R2 DEFLATED:** the anti-sycophancy *worry* is `[B]`-validated and the *cure* (any honesty stance) works — but the framework's **specific** constitution does **not** beat a one-line honesty prompt on outcome, and no single duty is load-bearing. Contribution = the **audit trail (form)**, not a superior outcome. `[B]`
+- Convergent meta-finding (audit + experiments): Emergentism is a **well-assembled, honestly self-tiered synthesis whose contribution is the coupling/form**; the recurring failure mode is **headlines outrunning the components**. The fix — tier discipline on headlines — is now a standing rule and is being applied.
+
+### Objectives delta (supersedes the v1.0 table where noted)
+| # | Objective | Status 2026-06-10 |
+|---|---|---|
+| O4 | Definitive book | 🟢 **Converged** — 101k long-scroll + renderer spec assembled; ⏳ build/deploy of the medium is owner/K2-gated |
+| O5 | Flagship paper / empirical bridge | 🟢→honest **partial**: R-program executed (R2 4 arms, R3, R6, R7–9, axiom papers AX1–AX7); novelty honestly shrank; **none externally submitted yet**; decisive **weaker-model R2 arm still owed** (needs a different key) |
+| O9 | **Primetime audit of the doctrine root** *(new)* | ✅ **COMPLETE** (Waves 0–3); 2 P0 items routed to owner (below) |
+| O10 | **Public-launch readiness** *(new)* | 🟠 **BLOCKED**: site is build-clean locally but **not live** (domain cutover pending) + **source-anchoring P0** (~9% of public claims link to doctrine vs ~55% merely badged) |
+
+### KPI delta
+| KPI | v1.0 | 2026-06-10 |
+|---|---|---|
+| Experiments executed (sims + benchmarks) | 0 | **~12 runs** across R3/R6/R7/R8/R9 + R2's 4 arms `[B]` |
+| Definitive book | D30C source repair | **101,143-word long-scroll assembled** + renderer spec `[B]` |
+| Public site live at emergentism.org | not live | **still not live** — domain serves a stale Google Sites/Squarespace page; 319/320 manifest routes 404 live `[B]` |
+| Public-site predeploy gate | — | **PASS** (292 docs, 351 HTML, 10 gates green) `[B]` |
+| Scholarly citations / replications | 0 | 0 (unchanged — nothing externally submitted) |
+
+### Open work — prioritized (the reorientation)
+**P0 — owner/K2 decisions (cannot be auto-executed):**
+1. **Public-site source-anchoring** (R-PUBLIC-ANCHOR): commission a generator pass so the ~180 highest-value public claims link to their doctrine source (lift ~9%→~42%). *The difference between "looks disciplined" and "is verifiable" — the framework's whole thesis.*
+2. **Domain cutover**: alias the linked Vercel project `emergentism-org` to the domain, repoint DNS/SSL off the old Google Sites/Squarespace host, redeploy current source (local prebuild is stale vs a 2026-06-10 `app.html` edit), enforce HTTPS apex→www.
+3. **book-pwa migration** (K2 envelope signed 2026-05-31, **unexecuted**): `git mv book-pwa → 02_SKYZAI/02_AIA/app/` once the AIA destination is ready; its full verification gate is unchecked.
+
+**P1 — gated but scoped:**
+4. **R-TOOLS-MIGRATE**: ~49 scripts on dead pre-consolidation paths → dormant/active triage + per-file rewrite + test pass + dated K2 receipt (touches runtime; no blind sweep).
+5. **R2 weaker-model arm**: the decisive unrun test (needs a working non-DeepSeek key); + full 40-scenario battery × 6 conditions for real N.
+6. **UPLINK / META archival closeout**: the verified-stale planning packets + compat-stub redirects, once the verification scout returns precise lists.
+
+**P2 — doctrine hygiene (carried from v1.0):** O1 invariants propagation finish, O2 Tier-C Rosetta pilot, O3 Uplink staleness checks, O8 source-first routing.
+
+<!-- /VMOSK-A_REFRESH_OVERLAY_2026_06_10 -->
+
 <!-- VMOSK-A_REFRESH_OVERLAY_2026_05_24 -->
 
 ## Status Snapshot
