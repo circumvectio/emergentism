@@ -142,6 +142,8 @@ Not Will to Power. Not Will to Coherence. In the legacy poetic register: **Will 
 
 F5 = the tendency-to-balance reading = *h2rto-* = Rta = Asha = Ordo = Harmonia = the conjectured tendency of reality to fit itself together.
 
+> **[Tier discipline]** The "Will to Potential" framing is poetic [I/C] compression. The technical claim is "tendency toward maximal balance under reciprocal closure" [S]. The poetic register must not upgrade the tier.
+
 ---
 
 ## The Five Forces

@@ -39,6 +39,8 @@ rosetta:
 
 ## Why This Is Not Numerology
 
+> **All correspondences in this section are [C] conjectural, not derivational.** Structural parallelism is suggestive, not proof of a physics claim.
+
 Four forces and four lines — any four things can be mapped to any four things. That's pattern matching, not physics. The mapping earns its existence only if it is STRUCTURAL, not just numerical.
 
 The structural argument:

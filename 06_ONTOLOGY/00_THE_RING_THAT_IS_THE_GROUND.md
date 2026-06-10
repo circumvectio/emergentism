@@ -15,6 +15,8 @@ rosetta:
 
 # THE RING THAT IS THE GROUND
 
+> **[I] devotional translation.** The ring is NOT the Ground; it is the η=0 geometric condition. Canonical core state: `00_THE_ONTOLOGY_OF_BEING.md`.
+
 **Anti-reification guard:** This document is interpretive and devotional-symbolic. It must not be used to identify the Ground with a thing, person, artifact, or possession. The canonical source for Ground / Being / Teleological Force / Dasein / beings remains `00_THE_ONTOLOGY_OF_BEING.md`.
 
 **OPERATOR-COUNT NOTE (2026-05-30):** the canonical grammar is 4 mixed-sign Gods (incl. the L1 Demon Kali) + 3 same-sign Executive boundary frames + 1 Demon-slot — per `00_THE_ONTOLOGY_OF_BEING.md:201` and the Master Rosetta. The "Four Gods / three moves" framing below is pre-hardening mythic shorthand: Kali is the Demon, not a god; the three Titans are out of scope for this devotional map.

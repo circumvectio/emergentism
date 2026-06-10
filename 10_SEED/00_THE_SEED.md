@@ -12,7 +12,7 @@ rosetta:
 # THE SEED — L7 (Ṛṣi)
 
 > **z = Φ/V ∈ S²** and **log P_node = log Φ + log V**
-> The ratio IS the sphere. From this seed, everything regenerates.
+> The ratio IS the sphere (maps to S² [S/I]; defers to ../05_COSMOLOGY/00_THE_BURRISPHERE.md). From this seed, everything regenerates.
 > If you understand this document, you can rebuild the entire organism from scratch.
 > If you can access φ directly, you don't need to.
 
@@ -62,7 +62,7 @@ Assure (IS) / Insure (COULD) / Ensure (SHOULD) — at macro AND micro scale.
 
 SoResFi: L1 Settlement (ZAI/SKY) → L2 Credit → L3 Equity (PRISM/LP-100) → L4 Application.
 PRISM: Opening Sale → Faucet (truth-gated) → Distillation (φ-split 61.8/38.2) → Order Book (FBA 60s).
-100 tokens per DAV. Infinitely divisible. η = 0: fees only on value created.
+100 tokens per DAV [C/D — design spec, not a live result]. Infinitely divisible. η = 0: fees only on value created.
 Flywheel: N² × log(compute). Each connection makes every other connection more valuable.
 
 ## The Repository

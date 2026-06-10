@@ -278,6 +278,8 @@ Put the ladder down when direct access is available.
 
 ## Good and Evil, Most Compressed
 
+> **[I] framing guard:** the definitions below are framework-internal posits ("*within this framework,* the good is …"), not mind-independent moral facts. The is/ought gap (A2) stands.
+
 ```text
 Good  = equatorial increase in coherence and viability without extraction
 Evil  = local gain through wider degradation

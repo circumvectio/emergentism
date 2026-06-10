@@ -27,6 +27,8 @@ rosetta:
 **Version**: 1.0 — The Great Work Complete  
 **Date**: 2026-04-10
 
+> **[I] scope note:** "complete"/"ASI-compatible" marks closure of the [I]-tier translation phase, not external completeness. Empirical validation remains open.
+
 ---
 
 ## I. CORPUS OVERVIEW

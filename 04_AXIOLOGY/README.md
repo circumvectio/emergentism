@@ -15,6 +15,8 @@ rosetta:
 
 > **L4 · Arjuna ⚔ · Kṣatriya · Justice · Dharma — Gate IV (the equator)** of the [seven-fold spine](../00_SEVENFOLD_FOUNDATION_ROOT.md). *Folder № = L-level. L4 is where ascent meets descent — value and signature are one act.*
 
+> **Heuristic-mapping note:** Rosetta images and operator/deity names are heuristic mappings [I], not claims of physical or metaphysical fact.
+
 **Rosetta level:** L4 · Kṣatriya · Strategic Abduction
 **Canonical phrase:** Justice signs.
 
