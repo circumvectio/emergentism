@@ -18,16 +18,16 @@
 
 Detail: [`01_FRONTDOOR_VERDICT.md`](01_FRONTDOOR_VERDICT.md).
 
-## Wave 1 — The sevenfold spine (the -ologies, L1→L7)
-| # | Folder | .md | Status | Verdict | Notes |
+## Wave 1 — The sevenfold spine (the -ologies, L1→L7) — ✅ (Sprint 1; detail in [02_SPRINT_1_VERDICT.md](02_SPRINT_1_VERDICT.md))
+| # | Folder | .md | Status | Verdict | Top finding / remediation |
 |---|---|---|---|---|---|
-| L1 | `01_TELEOLOGY/` | 48 | ⬜ | — | F5/ektropy — watch "fifth force" over-claim (known demon) |
-| L2 | `02_EPISTEMOLOGY/` | 24 | ⬜ | — | evidence tiers live here; expect 🟢-heavy; check L2/L3 rigor (self-flagged weak) |
-| L3 | `03_METHODOLOGY/` | 113 | ⬜ | — | houses the peer-review program + axiom papers (already disciplined) |
-| L4 | `04_AXIOLOGY/` | 22 | ⬜ | — | value theory; theurgy — watch occult-causality framing |
-| L5 | `05_COSMOLOGY/` | 132 | ⬜ | — | the kernel + formal system; watch numerology-as-physics (AX3 HOLD applies) |
-| L6 | `06_ONTOLOGY/` | 12 | ⬜ | — | apophasis; small, likely 🟢/🟡 |
-| L7 | `07_THEOLOGY/` | 9 | ⬜ | — | public symbol — highest public-hazard surface; gate carefully |
+| L1 | `01_TELEOLOGY/` | 48 | ✅ | 🟢 READY | F5 disambiguation landed; tier-stamp poetic CORE_CONJECTURE + "Why Not Numerology" (R-L1-1, P1) |
+| L2 | `02_EPISTEMOLOGY/` | 24 | ✅ | 🟡 DISCIPLINE | tier docs exemplary; `03_MEMETICS/` 🟠 — inline `[I]`, split `[A]` history from `[I]` (R-L2-1, **P0**) |
+| L3 | `03_METHODOLOGY/` | 113 | ✅ | 🟢 READY | cleanest lane; 2 self-falsifications recorded; no demons |
+| L4 | `04_AXIOLOGY/` | 22 | ✅ | 🟡 DISCIPLINE | occult-causality fenced; inline `[I]` on "the good = X"; K2-receipt + heuristic disclaimer (R-L4, P1) |
+| L5 | `05_COSMOLOGY/` | 132 | ✅ | 🟢 READY\* | 3 demons caught + tiered + kill-criteria'd; **\*HOLD-for-physics-venue stands (AX3)** |
+| L6 | `06_ONTOLOGY/` | 12 | ✅ | 🟢 READY | anti-idolatry holds; minor frame-reset on `THE_RING` (R-L6, P1) |
+| L7 | `07_THEOLOGY/` | 9 | ✅ | 🟡 DISCIPLINE | anti-cult-by-design, but **P0**: rename "speciation", kill-tests on cult/caste rules, K2-Q4 receipt opacity (R-L7-1) |
 
 ## Wave 2 — Support, tools, meta
 | Folder | .md | Status | Verdict | Notes |
