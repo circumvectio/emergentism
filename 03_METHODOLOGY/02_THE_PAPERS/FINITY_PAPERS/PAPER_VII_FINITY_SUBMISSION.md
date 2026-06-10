@@ -251,7 +251,7 @@ The consequences:
 1. **Ontology:** Something exists because finity is the product of its own two boundaries. The question "why something rather than nothing?" is answered by $\odot = \bullet \times \circ$ — held as frame-register doctrine, not field arithmetic.
 2. **Ethics:** The centre is not nothingness. The centre is unity, identity, measure, and relation. The operational ethic is: minimise your log-distance from finity.
 3. **Geometry:** The flat line is the zero-curvature limit of the sphere. The sphere is the completed object. Infinity is not an unreachable horizon; it is a regular point.
-4. **Evidence:** Suda (2025) independently derives the same fixed-point structure from a different starting point, providing `[A]`-tier convergent corroboration.
+4. **Evidence:** Suda (2025) independently derives the same fixed-point structure from a different starting point. The individual reciprocal-map identities are checkable mathematics `[A]`; their role *as convergent corroboration of this framework's reading* is independent-rediscovery evidence `[I]` — strengthened by the independence, but not promoted to established-fact tier by it. Suda's works are self-archived preprints (PhilArchive, 2025), not peer-reviewed; cited at that status. (Verified to exist 2026-06-10; see `../../PEER_REVIEW_PROGRAM/CITATIONS_VERIFIED.md`.)
 
 The strongest sentence:
 
