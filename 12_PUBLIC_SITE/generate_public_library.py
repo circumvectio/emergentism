@@ -22,6 +22,28 @@ HTML routes:
 
 Run from the repository root or from 12_PUBLIC_SITE:
     python3 01_EMERGENTISM/12_PUBLIC_SITE/generate_public_library.py
+
+STATUS 2026-06-10 — THE SOURCE BUNDLE IS ABSENT. `docs/handoff/*-public/` does not
+exist in the tree, so this generator currently EXITS with "Missing public-library
+source(s)" and CANNOT regenerate. The 308 generated pages under the wing routes are
+therefore FROZEN ARTIFACTS, and a canon-fidelity pass has HAND-PATCHED three of them
+directly (the only available lever):
+
+  - papers/paper-h-dimensional-cosmological/  : "S³ = S² × S¹" -> Hopf bundle over S²
+        (fiber S¹), non-trivial. (The product form was pipeline-introduced; source is
+        already correct — `PAPER_H...md` says "S³ as the Hopf bundle over S²".)
+  - formal/17-efr-ontology-complete/          : added an R6 reconciliation note — the
+        "all domains unified under one geometry (S²) / Theory of Everything" claim is
+        register-dependent and partly refuted (R6, 2026-06-10); tier -> [C].
+  - formal/33-nash-equilibrium-eta-zero/      : added the Green-Laffont (1977)
+        impossibility caveat to the VCG trifecta; η=0 is a conditional/enforced
+        equilibrium (AX4), not unconditional Nash.
+
+BEFORE ANY FUTURE REGEN: restore the handoff bundle AND apply the same three
+corrections to the SOURCE markdown (formal-17 / formal-33 / paper-H public bundle
+files), or this generator will overwrite the hand-patches and reintroduce the
+over-claims. Also fix the title-doubling: when a source heading already ends in
+"— Emergentism", `page_shell(title=...)` appends a second one.
 """
 
 from __future__ import annotations
