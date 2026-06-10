@@ -105,7 +105,11 @@
       fill:none; stroke:var(--gold); stroke-width:2.4; opacity:0;
       filter:url(#glow); animation:ignite 1.3s ease 1.45s forwards, breathe 5.5s ease-in-out 2.8s infinite;
     }
-    .ray{stroke:var(--gold); stroke-width:1; stroke-dasharray:4 5; opacity:0; animation:fadein 1s ease 2.1s forwards}
+    .ray{fill:none; stroke:rgba(242,177,52,.52); stroke-width:1.2; stroke-dasharray:3 5; opacity:0; animation:fadein 1s ease 2.05s forwards}
+    .meet circle{}
+    .meet{opacity:0; animation:fadein .7s ease 2.5s forwards}
+    .proj{opacity:0; animation:fadein .8s ease 2.35s forwards}
+    .proj text{font-family:var(--mono); font-size:13px; fill:var(--gold)}
     .pole{font-family:var(--mono); fill:var(--bone-dim); font-size:12px}
     .pole .sym{font-family:var(--serif); font-size:19px}
     .pole.eq .sym{fill:var(--gold)} .pole.eq{fill:var(--gold)}
@@ -182,7 +186,7 @@
 
     @media(prefers-reduced-motion:reduce){
       *{animation:none!important; transition:none!important}
-      .lat{stroke-dashoffset:0} .equator,.ray,.dot{opacity:1}
+      .lat{stroke-dashoffset:0} .equator,.ray,.dot,.meet,.proj{opacity:1}
       .js .reveal{opacity:1; transform:none}
     }
   </style>
@@ -249,16 +253,35 @@
           <!-- the equator: the life -->
           <ellipse class="equator" cx="210" cy="200" rx="140" ry="24"/>
 
-          <!-- projection ray from ∞ through the equator to the plane point "1" -->
-          <line class="ray" x1="210" y1="60" x2="316" y2="372"/>
-          <line class="ray" x1="60" y1="372" x2="360" y2="372" style="opacity:.0; animation-delay:2.25s; stroke-dasharray:2 6"/>
-          <circle class="dot" cx="316" cy="372" r="3.2" fill="#f2b134"/>
+          <!-- DUAL stereographic projection — the two charts of S² ≅ CP¹.
+               φ = cot(θ/2) projects from ∞ (north pole), descending;
+               ν = tan(θ/2) projects from 0 (south pole), ascending;
+               the two rays meet at one point P on the sphere; φ·ν = 1. -->
+          <line class="ray" x1="210" y1="60" x2="440" y2="319"/>
+          <line class="ray" x1="210" y1="340" x2="320" y2="79"/>
+          <!-- the meeting point on the sphere -->
+          <g class="meet">
+            <circle cx="290" cy="150" r="8" fill="none" stroke="#ffd877" stroke-width="1" opacity=".5"/>
+            <circle cx="290" cy="150" r="3.6" fill="#ffd877"/>
+          </g>
 
-          <!-- pole labels -->
-          <g class="pole inf"><text class="sym" x="210" y="50" text-anchor="middle">○</text><text x="210" y="34" text-anchor="middle">∞ &nbsp;everything</text></g>
-          <g class="pole zero"><text class="sym" x="210" y="372" text-anchor="middle">•</text><text x="210" y="392" text-anchor="middle">0 &nbsp;nothing</text></g>
-          <g class="pole eq"><text class="sym" x="368" y="198" text-anchor="start">⊙</text><text x="368" y="216" text-anchor="start">1 · the life</text></g>
-          <text class="pole" x="322" y="388" text-anchor="start" style="font-size:10px; fill:var(--bone-faint)">projection → 1</text>
+          <!-- pole labels (the two projection centres) -->
+          <g class="pole inf"><text class="sym" x="210" y="52" text-anchor="middle">○</text><text x="210" y="34" text-anchor="middle">∞ &nbsp;everything</text></g>
+          <g class="pole zero"><text class="sym" x="210" y="350" text-anchor="middle">•</text><text x="210" y="368" text-anchor="middle">0 &nbsp;nothing</text></g>
+          <g class="pole eq"><text class="sym" x="372" y="198" text-anchor="start">⊙</text><text x="372" y="216" text-anchor="start">1 · the life</text></g>
+
+          <!-- dual coordinate endpoints -->
+          <g class="proj">
+            <circle cx="440" cy="319" r="3" fill="#f2b134"/>
+            <text x="434" y="316" text-anchor="end">φ = cot θ⁄2</text>
+            <text x="434" y="330" text-anchor="end" style="font-size:9.5px; fill:var(--bone-faint)">from ∞ ↓</text>
+          </g>
+          <g class="proj">
+            <circle cx="320" cy="79" r="3" fill="#f2b134"/>
+            <text x="330" y="76" text-anchor="start">ν = tan θ⁄2</text>
+            <text x="330" y="90" text-anchor="start" style="font-size:9.5px; fill:var(--bone-faint)">from 0 ↑</text>
+          </g>
+          <text class="pole" x="210" y="406" text-anchor="middle" style="font-size:10.5px; fill:var(--bone-dim)">two projections meet on the sphere · φ · ν = 1 &nbsp;[A]</text>
         </svg>
       </div>
     </section>
