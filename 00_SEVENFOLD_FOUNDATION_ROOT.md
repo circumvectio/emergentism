@@ -41,6 +41,8 @@ The root is valid only if it makes direct seeing, evidence-tier honesty, and K2-
 | `06_ONTOLOGY` | L6 | Śiva • | Sādhu | Core State — what is prior to structure | Freedom · Mokṣa | VI |
 | `07_THEOLOGY` | L7 | Viṣṇu ⊙ | Ṛṣi | Institutional Narrative — how it is taught and returned | Unity · Advaita | VII |
 
+> **Public-symbol guardrail (primetime-audit, 2026-06-10):** The seven -ologies and the L1–L7 / Varṇa names in the table above denote **institutional and cognitive *functions*, not human-worth tiers or social castes.** No person "is an L1" or "an L7"; the Varṇa vocabulary is a dispatch/translation grammar, **not** a hierarchy of human value and **not** a social prescription. Read as roles assigned to work, never as rank assigned to people.
+
 **L4 is the equator.** The ladder ascends L1→L4 (survival → gathering → inference → signed sacrifice), then descends L4→L7 (architecture → ground → return); the gates mirror about it: I↔VII, II↔VI, III↔V. Sections 1–2 below give the full Rosetta reading.
 
 *Tier: [S] for `folder № = L-level` (this repo's filing grammar); [I] for the value-gate gloss, per the canonical Rosetta.*

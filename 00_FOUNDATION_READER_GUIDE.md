@@ -35,6 +35,8 @@ For the actual folder-by-folder lens, read:
 
 The Foundation has a Rosetta-aligned routing skeleton, and Phase 2 has begun moving clear source-owner files into their Rosetta lanes. Compatibility stubs remain at old high-traffic paths so older links still resolve while new work routes to the owner folders below:
 
+> **Public-symbol guardrail (primetime-audit, 2026-06-10):** The seven -ologies and the L1–L7 / Varṇa names denote **institutional and cognitive *functions*, not human-worth tiers or social castes.** No person "is an L1" or "an L7"; the Varṇa vocabulary is a dispatch/translation grammar, **not** a hierarchy of human value and **not** a social prescription. Read as roles assigned to work, never as rank assigned to people.
+
 | Folder | Rosetta | Owns | Current rule |
 |---|---|---|---|
 | `01_TELEOLOGY/` | L1 / Empirical Observation | F5, ektropy, Power Max, directional gradient | route F5 claims here; most source files still live in old locations |
@@ -54,6 +56,8 @@ This folder contains three layers. Read it source-first. The hardening stack and
 ### Layer 0: The Transcendental Trinity (prior to all)
 
 `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/` — {0, 1, ∞}. The absolute ground. Zero-Sum Resolution Equation. Division by zero resolved. The perennially emergent doctrine.
+
+> **[Tiering]** φ·ν=1 on S² is the [S] formal axiom. The cross-tradition convergences (Egyptian, Vedic/AUM, Nietzsche, Bindu, etc.) are [I] interpretive bridges — resonances, not proof; do not read the list as [A] established fact.
 
 Plus the interpretive bridge documents that connect the Trinity to the traditions:
 

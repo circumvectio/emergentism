@@ -109,7 +109,7 @@ Keep Emergentism.org operable under its existing mandate, with explicit evidence
 
 ## V — VISION (Genotype | Decades | Immutable)
 
-**A complete philosophical framework built on one equation — φ · ν = 1 on S² — that succeeds when the practitioner puts it down.**
+**A complete philosophical framework built on one equation — φ · ν = 1 on S² — that succeeds when the practitioner puts it down.** [C] forward commitment — kill: if the framework is still needed after sustained practice, this promise has failed; see ../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md
 
 Emergentism (Syntropic Dyadism) states that coherence (φ) and viability (ν) multiply to unity on the Riemann sphere. The balance B = sin θ peaks at the equator where φ = ν = 1. The glyph Zero-Sum Resolution Equation names finity as the product of nothing and everything.
 
@@ -176,7 +176,7 @@ Sprint window: 2026-05-23 → 2026-09-30.
 | O3 | Uplink compilation health | `compile_uplink.py --check` passes; zero stale compiled files | L6 | 🟡 IN PROGRESS — script exists; periodic checks needed |
 | O4 | Definitive book D30+ cycle closed | Manuscript strong enough for private beta; print/export package rebuilt; D30E ready | Editorial | 🟡 IN PROGRESS — D30C source repair complete; next is D30E or reader pilot |
 | O5 | Flagship paper (Protocol R) preregistered | Preregistration skeleton published; ultimatum dataset mapped; variable map canonical | L3 + L5 | ⏳ NOT STARTED — specs exist; preregistration not yet published |
-| O6 | Corpus self-application audit current | `55_CORPUS_SELF_APPLICATION_AUDIT.md` reflects current executive phase, God-tier moves, L1-risk register, Witness findings | L6 | 🟢 AUDITED 2026-05-30 — 54/55 authored as real content (the lane had been a hollow self-referential alias loop, never content-bearing); phase Viṣṇu, registers populated |
+| O6 | Corpus self-application audit current | `55_CORPUS_SELF_APPLICATION_AUDIT.md` reflects current executive phase, God-tier moves, L1-risk register, Witness findings | L6 | 🟢 AUDITED 2026-05-30 (AUDITED = audit-complete, NOT all KPIs met; live KPIs remain TBD) — 54/55 authored as real content (the lane had been a hollow self-referential alias loop, never content-bearing); phase Viṣṇu, registers populated |
 | O7 | Sevenfold Foundation root reorg stabilized | Source-owner files in correct roots; compatibility stubs preserved; zero drift between root and lane-home files | L5 | ✅ COMPLETE — Phase 2c executed (packet 156); Tier A/B applied |
 | O8 | Source-first routing discipline enforced | Every agent reads AGENTS.md + route card before producing; edits lane-home files, not root stubs | L4 | 🟡 ONGOING — discipline established; enforcement per session |
 
@@ -217,6 +217,8 @@ Sprint window: 2026-05-23 → 2026-09-30.
 ---
 
 ## A — AGENTS (Rosetta Castes | Per Cycle)
+
+> **Public-symbol guardrail (primetime-audit, 2026-06-10):** The seven -ologies and the L1–L7 / Varṇa caste names in the table below denote **institutional and cognitive *functions*, not human-worth tiers or social castes.** No person "is an L1" or "an L7"; the Varṇa vocabulary is a dispatch/translation grammar, **not** a hierarchy of human value and **not** a social prescription. Read as roles assigned to work, never as rank assigned to people.
 
 | Caste | Role in Doctrine | Surface |
 |-------|----------------|---------|

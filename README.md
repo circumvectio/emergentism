@@ -53,6 +53,8 @@ The shortest bridge is: **Weltanschauung -> Rosetta calculus -> Ground / Being /
 > **L1** Teleology (Kali 🎲) → **L2** Epistemology (Kālī 💀) → **L3** Methodology (Kṛṣṇa ◇) → **L4** Axiology (Arjuna ⚔ — the equator / K2) → **L5** Cosmology (Brahmā ○) → **L6** Ontology (Śiva •) → **L7** Theology (Viṣṇu ⊙). L2–L4 are the operational engine (know → act → value); L1 is the firewall; L5–L7 are Executive boundary functions, read as non-deployable frames before L4/K2 execution.
 > The diagram below is a **superseded draft** — it placed Teleology at L7 and Theurgy at Viṣṇu/L7, which the canonical Rosetta retired; kept here tombstoned, not as live canon.
 
+> **Public-symbol guardrail (primetime-audit, 2026-06-10):** The seven -ologies and the L1–L7 / Varṇa names denote **institutional and cognitive *functions*, not human-worth tiers or social castes.** No person "is an L1" or "an L7"; the Varṇa vocabulary is a dispatch/translation grammar, **not** a hierarchy of human value and **not** a social prescription. Read as roles assigned to work, never as rank assigned to people.
+
 ```
    ⚠  K3 SUPERSEDED DRAFT — NOT LIVE CANON.  See the corrected L1→L7 spine above.
 ┌─────────────────┬────────────────────┬───────────────────────────────────┐
