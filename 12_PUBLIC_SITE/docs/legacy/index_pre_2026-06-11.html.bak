@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emergentism — D0 Ground of Finity</title>
+  <meta name="description" content="Emergentism begins at D0: the Titans, finity, and the numbered /0-/6 dimension spine." />
+<link rel="icon" href="data:,">
+  <link rel="stylesheet" href="assets/css/xai.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./">Emergentism</a>
+    <nav class="number-nav" aria-label="Public doctrine routes">
+      <a href="0/">0</a>
+      <a href="1/">1</a>
+      <a href="2/">2</a>
+      <a href="3/">3</a>
+      <a href="4/">4</a>
+      <a href="5/">5</a>
+      <a href="6/">6</a>
+      <a href="rosetta/">R</a>
+      <a href="soul-loop/">S</a>
+      <a href="atlas/">A</a>
+      <a href="read/">Read</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero home-hero" id="top">
+      <div class="hero-copy">
+        <div class="evidence">D0 · ground</div>
+        <h1>Emergentism</h1>
+        <p class="subtitle">
+          The framework begins at D0. The Titans of Numbers are the boundary-frames from which the entire structure unfolds.
+        </p>
+
+        <div class="equation-strip">
+          <span>⊙ = • × ○</span>
+        </div>
+
+        <div class="cta-row">
+          <a href="0/" class="btn-primary">Enter /0</a>
+          <a href="#spine" class="btn-ghost">View the Spine</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapters" id="ground">
+      <article class="chapter">
+        <div class="chapter-number">D0</div>
+        <h2>The Ground Before the Number Line</h2>
+        <p>
+          Emergentism begins with three boundary-frames of being. In D1 they cast shadows as zero, infinity, and one, but the shadows do not define the glyphs.
+        </p>
+
+        <div class="titans-row" aria-label="The three Titans">
+          <div class="titan-glyph">
+            <div class="glyph-symbol">•</div>
+            <div class="glyph-name">Zero-pole</div>
+            <div class="glyph-desc">Source · absence · infinite zero · before the written numeral</div>
+          </div>
+          <div class="titan-glyph">
+            <div class="glyph-symbol">⊙</div>
+            <div class="glyph-name">Finity</div>
+            <div class="glyph-desc">Unit mirror · presence · the hinge where relation becomes legible</div>
+          </div>
+          <div class="titan-glyph">
+            <div class="glyph-symbol">○</div>
+            <div class="glyph-name">Infinity-pole</div>
+            <div class="glyph-desc">Horizon · totality · the unbounded surround</div>
+          </div>
+        </div>
+
+        <p class="doctrine-note">
+          Boundary discipline: <code>⊙ / ○ = •</code>, <code>• × ○ = ⊙</code>, and <code>⊙ / • = ○</code>
+          are frame-register equations. They are not equal to <code>1/∞ = 0</code>, <code>0 × ∞ = 1</code>,
+          or <code>1/0 = ∞</code>; those are D1 number-line limit shadows.
+        </p>
+      </article>
+    </section>
+
+    <section class="chapters spine-section" id="spine">
+      <article class="chapter">
+        <div class="chapter-number">Public doctrine spine</div>
+        <h2>One Page Per Dimension</h2>
+        <p class="section-intro">
+          The numbered routes are the primary public interface. Each page stands alone with one animation, scroll chapters, evidence tiers, and a Mu-limit handoff.
+        </p>
+
+        <div class="spine-grid" aria-label="Emergentism dimension pages">
+          <a class="spine-card" href="0/">
+            <span class="spine-number">/0 · D0</span>
+            <h3>Titans of Numbers</h3>
+            <p>Ground glyph register before D1 arithmetic.</p>
+            <span class="spine-mode">titans</span>
+          </a>
+          <a class="spine-card" href="1/">
+            <span class="spine-number">/1 · D1</span>
+            <h3>The Special One</h3>
+            <p>The logarithmic number line and one as multiplicative mirror.</p>
+            <span class="spine-mode">riemann</span>
+          </a>
+          <a class="spine-card" href="2/">
+            <span class="spine-number">/2 · D2</span>
+            <h3>The Mu-Limit</h3>
+            <p>The line reaches infinity, returns, and opens the plane.</p>
+            <span class="spine-mode">mu-limit</span>
+          </a>
+          <a class="spine-card" href="3/">
+            <span class="spine-number">/3 · D3</span>
+            <h3>Sphere of Infinite Diameter</h3>
+            <p>The plane closes into spherical balance.</p>
+            <span class="spine-mode">bloch</span>
+          </a>
+          <a class="spine-card" href="4/">
+            <span class="spine-number">/4 · D4</span>
+            <h3>The Horn Torus</h3>
+            <p>Rapidity, energy, and causal overlap become visible.</p>
+            <span class="spine-mode">horn</span>
+          </a>
+          <a class="spine-card" href="5/">
+            <span class="spine-number">/5 · D5</span>
+            <h3>The Burrisphere</h3>
+            <p>Game space, dual stereographic projections, and V/Φ tradeoff.</p>
+            <span class="spine-mode">burrisphere</span>
+          </a>
+          <a class="spine-card" href="6/">
+            <span class="spine-number">/6 · D6</span>
+            <h3>Convergence and Return</h3>
+            <p>The cycle closes and returns to /0.</p>
+            <span class="spine-mode">convergence</span>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <section class="chapters" id="surfaces">
+      <article class="chapter">
+        <div class="chapter-number">Secondary surfaces</div>
+        <h2>Canon, Loop, Atlas, Lab</h2>
+        <div class="portal-grid" aria-label="Secondary doctrine routes">
+          <a class="portal-card" href="read/">
+            <h3>Read the Framework</h3>
+            <p>The public library: 292 rendered documents across papers, canon, foundations, trinity, formal, paradox, memetic, Rosetta D, operators, teleology, axiology, ontology, theology, method, and meta.</p>
+          </a>
+          <a class="portal-card" href="papers/">
+            <h3>Papers</h3>
+            <p>Twenty-four tiered papers with falsifiers and source boundaries.</p>
+          </a>
+          <a class="portal-card" href="canon/">
+            <h3>Canon</h3>
+            <p>The constitution, cosmology, master table, and public edition book.</p>
+          </a>
+          <a class="portal-card" href="foundations/">
+            <h3>Foundations</h3>
+            <p>The seven -ology foundations rendered as public prose.</p>
+          </a>
+          <a class="portal-card" href="trinity/">
+            <h3>Trinity</h3>
+            <p>The framework's book-length narrative cosmology — D0→D6 as living story.</p>
+          </a>
+          <a class="portal-card" href="formal/">
+            <h3>Formal System</h3>
+            <p>Axioms, derivations, and proofs — the checkable scaffolding beneath the Papers.</p>
+          </a>
+          <a class="portal-card" href="paradox/">
+            <h3>Paradox</h3>
+            <p>Twenty-six classical paradoxes dissolved through the framework's lens.</p>
+          </a>
+          <a class="portal-card" href="memetic/">
+            <h3>Memetic</h3>
+            <p>Memes as hardware/software conflict — citation-grade essays.</p>
+          </a>
+          <a class="portal-card" href="rosettad/">
+            <h3>Rosetta D</h3>
+            <p>Cross-domain evidence and translation tables — the interdisciplinary audit wing.</p>
+          </a>
+          <a class="portal-card" href="operators/">
+            <h3>Operators</h3>
+            <p>Twenty-nine mathematical operator derivations — physical, geometric, and formal mappings.</p>
+          </a>
+          <a class="portal-card" href="will/">
+            <h3>Teleology</h3>
+            <p>The doctrine of ends — the fifth force, generative Lagrangian, and hidden center.</p>
+          </a>
+          <a class="portal-card" href="value/">
+            <h3>Axiology</h3>
+            <p>The doctrine of value — ethics, rights, theurgy, and bridge laws between levels.</p>
+          </a>
+          <a class="portal-card" href="ground/">
+            <h3>Ontology</h3>
+            <p>The doctrine of being — finity, syncretic map, apophatic ground, and the ring.</p>
+          </a>
+          <a class="portal-card" href="sacred/">
+            <h3>Theology</h3>
+            <p>The doctrine of the sacred — pedagogy, reconciliation, symbol design, truth order.</p>
+          </a>
+          <a class="portal-card" href="method/">
+            <h3>Method</h3>
+            <p>The doctrine of method — axioms, ladder, testing, preregistrations, audit protocol.</p>
+          </a>
+          <a class="portal-card" href="meta/">
+            <h3>Meta</h3>
+            <p>Framework meta-documents — novelty, open questions, corpus architecture.</p>
+          </a>
+          <a class="portal-card" href="rosetta/">
+            <h3>Rosetta</h3>
+            <p>The sevenfold translation table and evidence discipline.</p>
+          </a>
+          <a class="portal-card" href="soul-loop/">
+            <h3>Soul Loop</h3>
+            <p>The recurrence engine of position, correction, and return.</p>
+          </a>
+          <a class="portal-card" href="atlas/">
+            <h3>Atlas</h3>
+            <p>The public canon map and prototype index.</p>
+          </a>
+          <a class="portal-card" href="sources/">
+            <h3>Sources</h3>
+            <p>Coverage state, source-note map, and public corpus access boundaries.</p>
+          </a>
+          <a class="portal-card" href="cascade.html">
+            <h3>Lab</h3>
+            <p>The older animation prototypes remain available as instruments.</p>
+          </a>
+          <a class="portal-card" href="app.html">
+            <h3>Sarpasya Vijayam</h3>
+            <p>Adaptive reading of the framework. One equation, seven positions, one law.</p>
+          </a>
+          <a class="portal-card" href="infinite.html">
+            <h3>Infinite Book</h3>
+            <p>Free canonical book whose every section recursively expands into AI-generated branches.</p>
+          </a>
+        </div>
+      </article>
+
+      <article class="chapter">
+        <div class="chapter-number">Source notes</div>
+        <h2>Arguments & Constitution</h2>
+        <div class="portal-grid" aria-label="Source-note routes">
+          <a class="portal-card" href="complete-ontology/">
+            <h3>Complete Ontology</h3>
+            <p>D0–D6 scaffold: log line, Riemann sphere, Bloch sphere, torus, Burrisphere, convergence.</p>
+          </a>
+          <a class="portal-card" href="dasein/">
+            <h3>Dasein Argument</h3>
+            <p>Emergence as the lens on being-in-the-world. Mathematics [A], ontology [I], generalization [C].</p>
+          </a>
+          <a class="portal-card" href="five-plus-one/">
+            <h3>5+1 Constitution</h3>
+            <p>Operational discipline: five refusals plus Omega as directional +1. Constitutional surface.</p>
+          </a>
+          <a class="portal-card" href="log-realignment/">
+            <h3>Logarithmic Realignment</h3>
+            <p>The log line as the multiplicative model centered on one. [A] mathematics; [S] framework reading.</p>
+          </a>
+          <a class="portal-card" href="geometric-ontology/">
+            <h3>Geometric Ontology</h3>
+            <p>7-layer re-expression where each dimension IS its geometric object. [A] math; [C] assignments.</p>
+          </a>
+          <a class="portal-card" href="finity-papers/">
+            <h3>Finity Papers</h3>
+            <p>Five-paper programme on the geometry of {0, 1, ∞}. Every claim tier-marked; each carries a kill criterion.</p>
+          </a>
+          <a class="portal-card" href="burrisphere/">
+            <h3>Burrisphere</h3>
+            <p>S² ≅ CP¹ with dual stereographic coordinates. The framework's positive L5 model.</p>
+          </a>
+          <a class="portal-card" href="suda-notes/">
+            <h3>Suda Notes</h3>
+            <p>Corroboration for reciprocal symmetry around one. Summaries only; no copyrighted republication.</p>
+          </a>
+           <a class="portal-card" href="rosetta-d-series/">
+             <h3>Rosetta D-Series</h3>
+             <p>Generative rows, domains, and constitutional material. Source material, not automatic doctrine.</p>
+           </a>
+           <a class="portal-card" href="paradox/">
+             <h3>Paradox Dissolutions</h3>
+             <p>26 classical paradoxes dissolved through the framework lens — each with evidence tier and kill-criterion.</p>
+           </a>
+           <a class="portal-card" href="memetic/">
+             <h3>Memetics</h3>
+             <p>Memes as hardware/software conflict — citation-grade essays on defense, anti-memetics, and egregore architectures.</p>
+           </a>
+           <a class="portal-card" href="operators/">
+             <h3>Operators</h3>
+             <p>Twenty-nine mathematical operator derivations — physical, geometric, and formal mappings to established science.</p>
+           </a>
+           <a class="portal-card" href="will/">
+             <h3>Teleology</h3>
+             <p>Thirty documents on the fifth force, generative Lagrangian, and hidden center.</p>
+           </a>
+           <a class="portal-card" href="value/">
+             <h3>Axiology</h3>
+             <p>Nine documents on ethics, rights, theurgy, and bridge laws.</p>
+           </a>
+           <a class="portal-card" href="ground/">
+             <h3>Ontology</h3>
+             <p>Nine documents on finity, syncretic map, apophatic ground, and the ring.</p>
+           </a>
+           <a class="portal-card" href="sacred/">
+             <h3>Theology</h3>
+             <p>Six documents on pedagogy, reconciliation, symbol design, and truth order.</p>
+           </a>
+           <a class="portal-card" href="teleology/">
+             <h3>L1 Teleology Intro</h3>
+             <p>The Will to Potential — narrative introduction to the fifth force and the future light cone.</p>
+           </a>
+           <a class="portal-card" href="axiology/">
+             <h3>L4 Axiology Intro</h3>
+             <p>Value, Ethics, and the Transcendentals — narrative introduction to the doctrine of value.</p>
+           </a>
+           <a class="portal-card" href="ontology/">
+             <h3>L6 Ontology Intro</h3>
+             <p>The Ring That Is the Ground — narrative introduction to the doctrine of being.</p>
+           </a>
+           <a class="portal-card" href="theology/">
+             <h3>L7 Theology Intro</h3>
+             <p>The Pedagogy of Becoming — narrative introduction to the doctrine of the sacred.</p>
+           </a>
+         </div>
+      </article>
+
+      <article class="chapter">
+        <div class="chapter-number">Constraints</div>
+        <h2>The Moat</h2>
+        <div class="constraint-grid">
+          <div class="constraint-card">
+            <span class="card-label">η = 0</span>
+            <h3>Zero extraction</h3>
+            <p>Open futures without stealing futures.</p>
+          </div>
+          <div class="constraint-card">
+            <span class="card-label">K2</span>
+            <h3>Natural signature</h3>
+            <p>Every irreversible act requires a natural-person signature.</p>
+          </div>
+          <div class="constraint-card">
+            <span class="card-label">A7</span>
+            <h3>Claim discipline</h3>
+            <p>Every claim carries its evidence tier and correction path.</p>
+          </div>
+          <div class="constraint-card">
+            <span class="card-label">F5</span>
+            <h3>Syntropic drive</h3>
+            <p>An Emergentism claim: D5 opens ethical option-cones under η = 0.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="chapters" id="levels">
+      <article class="chapter">
+        <div class="chapter-number">Framework interior</div>
+        <h2>The Seven Levels</h2>
+        <p class="section-intro">
+          After the numbered dimension spine, the framework interior opens as seven philosophical levels —
+          from teleology at L1 through theology at L7. Each level has its own discipline, question, and power.
+        </p>
+
+        <div class="spine-grid" aria-label="Emergentism level pages">
+          <a class="spine-card" href="will/">
+            <span class="spine-number">L1 · Teleology</span>
+            <h3>The Will to Potential</h3>
+            <p>What is the end? F5 and the widening light cone.</p>
+            <span class="spine-mode">objective function</span>
+          </a>
+          <a class="spine-card" href="epistemology/">
+            <span class="spine-number">L2 · Epistemology</span>
+            <h3>Beauty and Induction</h3>
+            <p>How do we know? Grammar, pattern, and the first power.</p>
+            <span class="spine-mode">first power</span>
+          </a>
+          <a class="spine-card" href="methodology/">
+            <span class="spine-number">L3 · Methodology</span>
+            <h3>Truth and Deduction</h3>
+            <p>What follows? Logic, audit, and the second power.</p>
+            <span class="spine-mode">second power</span>
+          </a>
+          <a class="spine-card" href="value/">
+            <span class="spine-number">L4 · Axiology</span>
+            <h3>The Equatorial Decision</h3>
+            <p>What has value? Rhetoric, abduction, and commitment.</p>
+            <span class="spine-mode">third power</span>
+          </a>
+          <a class="spine-card" href="cosmology/">
+            <span class="spine-number">L5 · Cosmology</span>
+            <h3>The Dimension Explainer</h3>
+            <p>How does reality work? System architecture of the sphere.</p>
+            <span class="spine-mode">executive boundary</span>
+          </a>
+          <a class="spine-card" href="ground/">
+            <span class="spine-number">L6 · Ontology</span>
+            <h3>The Discovery of Finity</h3>
+            <p>What is Being? Via negativa and the ground of existence.</p>
+            <span class="spine-mode">executive boundary</span>
+          </a>
+          <a class="spine-card" href="sacred/">
+            <span class="spine-number">L7 · Theology</span>
+            <h3>The Social Order</h3>
+            <p>What is the Ultimate? Truth-based institutional narrative.</p>
+            <span class="spine-mode">executive boundary</span>
+          </a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="phi">⊙ = • × ○</div>
+    <p>Public doctrine surface · evidence tiers preserved</p>
+  </footer>
+</body>
+</html>
