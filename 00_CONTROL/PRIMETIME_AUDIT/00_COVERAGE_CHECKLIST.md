@@ -32,15 +32,15 @@ Detail: [`01_FRONTDOOR_VERDICT.md`](01_FRONTDOOR_VERDICT.md).
 ## Remediation log
 > **P0 cut executed + committed (2026-06-10), all K3-safe (additive/in-place, nothing deleted/moved off-disk):** L7 "speciation"→"functional differentiation" rename (term preserved per K3) + caste **capture kill-test**; L7 **anti-cult kill-test** + watchdog; L7 "K2-Q4" **transparency note**; L7 A-Brahmism **weaponization guard**; README grandiosity **`[C]` fence** (relocation staged); new `02_EPISTEMOLOGY/03_MEMETICS/00_TIERING_DISCIPLINE.md` banner. **Still staged for K2 (not done on a bare "yes"):** README superseded-ASCII relocation, README business-block *physical* move to `03_VENTURES`, SEVENFOLD caste→level public-gate (→ wave 0-b). **P1 backlog:** per [02_SPRINT_1_VERDICT.md](02_SPRINT_1_VERDICT.md).
 
-## Wave 2 — Support, tools, meta — 🔄 (Sprint 2 scouts deployed 2026-06-10, background)
-| Folder | .md | Status | Verdict | Notes |
+## Wave 2 — Support, tools, meta — ✅ (Sprint 2; detail in [03_SPRINT_2_VERDICT.md](03_SPRINT_2_VERDICT.md))
+| Folder | .md | Status | Verdict | Top finding / remediation |
 |---|---|---|---|---|
-| `00_META/` | 53 | ⬜ | — | corpus-discipline maps; staging notes |
-| `08_FRAMEWORK_SUPPORT/` | 348 | ⬜ | — | largest; evidence/operators/governance — sample + scan |
-| `09_TOOLS/` | 150 | ⬜ | — | scripts/receipts; tier [B] receipts; check orphans |
-| `10_SEED/` | 4 | ⬜ | — | seed closure; small |
-| `11_UPLINK/` | 358 | ⬜ | — | packet stream; expect stale/dupe demons; heavy K3-archive candidates |
-| `12_PUBLIC_SITE/` | 10 | ⬜ | — | the actual public PWA source — primetime-critical, audit with care |
+| `00_META/` | 53 | ✅ | 🟡 DISCIPLINE | exemplary canon docs; archive 2 stale handoffs + orphan corpus map (R-META-1, P2); surfaced the public-site source-anchor flag |
+| `08_FRAMEWORK_SUPPORT/` | 348 | ✅ | 🟢 READY | most-disciplined lane; K7 falsified+downgraded live; only Rosetta-density read-as-proof risk (R-08-1, P2) |
+| `09_TOOLS/` | 150 | ✅ | 🟡 DISCIPLINE | tiers sound; ~49 stale-path scripts + stale inventory + empty scaffolds → K2-gated migration (R-TOOLS-1, P1) |
+| `10_SEED/` | 4 | ✅ | 🟢 READY | honors its own frailty; hedge opening identity + tier SoResFi (R-SEED-1, P2) |
+| `11_UPLINK/` | 358 | ✅ | 🟡 DISCIPLINE | ~42–55 archive candidates (planning scaffolds, 56KB briefing, dated bundle) → K2-gated sweep (R-UPLINK-1, P1) |
+| `12_PUBLIC_SITE/` | 10 | ✅ | 🟢 READY\* | boundary-clean + tier-badged + K2 envelope signed; **\*source-anchoring contested vs 00_META's 94%-unsourced audit → R-RECON (P0)** |
 
 ## Wave 3 — Archives & compatibility (verify tombstones, don't re-litigate)
 | Folder | .md | Status | Verdict | Notes |
