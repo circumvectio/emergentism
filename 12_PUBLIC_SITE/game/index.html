@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Game — Emergentism</title>
+<meta name="description" content="D5 translated outward: the seven moves of selection under constraint, read through game theory, mechanism design, and military doctrine. The mirror of the Soul Loop — the same grammar pointed at the world instead of the self.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.4' fill='%23FFEB3B'/%3E%3C/svg%3E">
+<style>
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Roboto-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../assets/fonts/RobotoMono-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+:root{
+  --void:#050505; --void-2:#0a0a0a; --panel:#101010; --panel-2:#161616;
+  --bone:#F3F4F6; --bone-dim:#9CA3AF; --bone-faint:#6b7280;
+  --gold:#FFEB3B; --gold-bright:#FFF176; --gold-deep:#CBB800;
+  --blue:#2196F3; --cold:#42A5F5; --demon:#d23b3b; --cream:#FFFDE7;
+  --line:rgba(243,244,246,.12); --line-soft:rgba(243,244,246,.07);
+  --tier-a:#7fb2e6; --tier-e:#6fc79a; --tier-s:#5fc6b0; --tier-i:#e8d24a; --tier-c:#b59ce0;
+  --sans:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --maxw:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--void);color:var(--bone);font-family:var(--sans);
+  font-size:18px;line-height:1.66;-webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(1100px 560px at 82% -6%,rgba(33,150,243,.07),transparent 60%),radial-gradient(800px 460px at 4% 2%,rgba(210,59,59,.05),transparent 55%)}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1.1rem,4vw,2rem)}
+header.top{position:sticky;top:0;z-index:40;display:flex;gap:1rem;align-items:center;
+  padding:.7rem clamp(1.1rem,4vw,2rem);background:color-mix(in srgb,var(--void) 84%,transparent);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft)}
+header .brand{font-weight:700;letter-spacing:.01em}
+header .brand b{color:var(--gold)}
+header nav{display:flex;gap:.35rem;margin-left:auto;font-family:var(--mono);font-size:.75rem;flex-wrap:wrap}
+header nav a{color:var(--bone-dim);text-decoration:none;padding:.35rem .55rem;border:1px solid transparent;border-radius:5px}
+header nav a:hover{color:var(--gold);border-color:var(--line)}
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-deep)}
+.hero{padding:clamp(2.6rem,7vw,5rem) 0 1.5rem}
+.hero h1{font-size:clamp(2.3rem,6vw,4rem);line-height:1.03;letter-spacing:-.02em;margin:.7rem 0 1rem;font-weight:800}
+.hero .lede{font-size:clamp(1.05rem,2.3vw,1.3rem);color:var(--bone-dim);max-width:56ch}
+.hero .pair{margin-top:1.2rem;font-family:var(--mono);font-size:.85rem;color:var(--bone-faint)}
+.hero .pair a{color:var(--gold);text-decoration:none}
+section{padding:clamp(2.2rem,5vw,3.4rem) 0;border-top:1px solid var(--line-soft)}
+h2{font-size:clamp(1.45rem,3.2vw,2.1rem);letter-spacing:-.01em;margin:.2rem 0 .5rem;font-weight:750}
+h2 .n{font-family:var(--mono);font-size:.78rem;color:var(--gold-deep);letter-spacing:.2em;display:block;margin-bottom:.4rem}
+.sec-lede{color:var(--bone-dim);max-width:62ch;margin:.4rem 0 1.4rem}
+.tier{display:inline-block;font-family:var(--mono);font-size:.62rem;font-weight:700;letter-spacing:.08em;padding:.1rem .4rem;border-radius:4px;vertical-align:middle;border:1px solid currentColor}
+.t-a{color:var(--tier-a)} .t-e{color:var(--tier-e)} .t-s{color:var(--tier-s)} .t-i{color:var(--tier-i)} .t-c{color:var(--tier-c)}
+.moves{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-top:.4rem}
+.move{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:.95rem 1.1rem;border-left:3px solid var(--line)}
+.move.god{border-left-color:var(--gold)} .move.demon{border-left-color:var(--demon)} .move.titan{border-left-color:var(--cold)}
+.move h4{margin:0 0 .15rem;font-size:1rem}
+.move h4 .op{font-family:var(--mono);font-size:.82rem;color:var(--bone-faint);font-weight:400}
+.move .sig{font-family:var(--mono);font-size:.74rem;color:var(--gold-deep);letter-spacing:.04em}
+.move p{margin:.3rem 0 0;color:var(--bone-dim);font-size:.9rem}
+.move .tag{font-family:var(--mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.1em}
+.god .tag{color:var(--gold)} .demon .tag{color:var(--demon)} .titan .tag{color:var(--cold)}
+table.tx{width:100%;border-collapse:collapse;margin:.2rem 0;font-size:.93rem}
+table.tx td,table.tx th{text-align:left;padding:.55rem .7rem;border-bottom:1px solid var(--line-soft);vertical-align:top}
+table.tx th{font-family:var(--mono);font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;color:var(--bone-faint)}
+table.tx td:first-child{color:var(--gold);font-weight:600;white-space:nowrap}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:1.1rem 1.3rem;margin-top:1rem}
+.card h4{margin:0 0 .35rem;font-size:1.02rem;color:var(--cold)}
+.card p{margin:.3rem 0 0;color:var(--bone-dim);font-size:.95rem}
+.cap{color:var(--bone-faint);font-size:.92rem;margin-top:.9rem}
+.walk{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.2rem}
+.walk a{font-family:var(--mono);font-size:.82rem;text-decoration:none;color:var(--cream);border:1px solid var(--line);border-radius:999px;padding:.5rem .95rem}
+.walk a:hover{border-color:var(--gold);color:var(--gold)}
+footer{padding:2.4rem 0 4rem;color:var(--bone-faint);font-family:var(--mono);font-size:.78rem;text-align:center}
+footer .phi{color:var(--gold);font-size:1.1rem;margin-bottom:.5rem}
+@media(max-width:680px){.moves{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../"><b>⊙</b> Emergentism</a>
+  <nav>
+    <a href="../0/">0</a><a href="../5/">5</a><a href="../synthesis/">Whole</a>
+    <a href="../soul-loop/">Soul Loop</a><a href="../game/">Game</a>
+    <a href="../axioms/">Axioms</a><a href="../atlas/">Atlas</a><a href="../book/">Book</a>
+  </nav>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="eyebrow">D5 · The Game</div>
+    <h1>The same grammar,<br>pointed at the world.</h1>
+    <p class="lede">The Soul Loop turns the seven moves <em>inward</em>, on the player. The Game
+      turns them <em>outward</em>, on the field — selection under constraint, read through the
+      established sciences of strategy. Two faces of one D5 geometry: the mirror, and the board.</p>
+    <p class="pair">↻ inward: <a href="../soul-loop/">the Soul Loop</a> &nbsp;·&nbsp; ↗ outward: the Game (you are here)</p>
+  </div>
+
+  <section>
+    <h2><span class="n">The board</span>Selection under constraint</h2>
+    <p class="sec-lede">D5 is the strategic-relational plane: agents do not merely process causes —
+      they <strong>select among live options</strong>, shaped by incentives, beliefs, time horizons,
+      and institutions. Every move spends or builds one of two things, and the moral geometry of
+      give-versus-take becomes behaviourally measurable. <span class="tier t-e">E</span> the public
+      sciences · <span class="tier t-s">S</span> the operator grammar · <span class="tier t-i">I</span> the synthesis.</p>
+    <div class="card">
+      <h4>The two stakes — what every move moves</h4>
+      <p><strong>Φ (coherence) = foresight</strong> — the capacity to predict a move's reflexive
+        effects on the cone of reachable futures (recursion depth, theory-of-mind, legibility, trust).
+        <strong>ν (viability) = power-to-act</strong> — execution capacity, payoff power, the option
+        set. A player needs both: foresight without power is the seer who does nothing; power without
+        foresight is the machine that sees nothing. The playable position is the equator, where there
+        is enough of each. <span class="tier t-i">I/S</span> · the option cone here is the D5 cone of
+        selectable futures, not the c-bounded physical light cone.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">The seven moves</span>2 Gods · 2 Demons · 3 Titans</h2>
+    <p class="sec-lede">The move sign-space is exhausted by seven generators — four transfers across
+      the self/other boundary, three same-sign phase frames. Morality is the <strong>direction</strong>
+      of the transfer (η), never the operator's name: a divine operator can make a taking move.
+      <span class="tier t-s">S</span></p>
+    <div class="moves">
+      <div class="move god"><div class="tag">God · give · −self/+other</div>
+        <h4>Kṛṣṇa <span class="op">L3 · the charioteer</span></h4>
+        <div class="sig">−Φ_self, +ν_other</div>
+        <p>Spend your own foresight to build another's power to act. Teaching, enabling, capability transfer.</p></div>
+      <div class="move god"><div class="tag">God · give · −self/+other</div>
+        <h4>Arjuna <span class="op">L4 · the equator, K2</span></h4>
+        <div class="sig">−ν_self, +Φ_other</div>
+        <p>Spend your own power to give another coherence or protection. The mortal, signed sacrifice.</p></div>
+      <div class="move demon"><div class="tag">Demon · take · +self/−other</div>
+        <h4>Kali <span class="op">L1 · the defector</span></h4>
+        <div class="sig">+Φ_self, −ν_other</div>
+        <p>Raise your own coherence by draining another's viability. Lawful <em>only</em> as immune
+          tit-for-tat against an explicit defector; parasitic the moment it is turned on a cooperator.</p></div>
+      <div class="move demon"><div class="tag">Demon · take · +self/−other</div>
+        <h4>Kālī <span class="op">L2 · the cut</span></h4>
+        <div class="sig">+ν_self, −Φ_false</div>
+        <p>Cut false coherence to recover viability — the immune / truth-cut. Divine by level, Asuric
+          by direction: lawful only against η&gt;0.</p></div>
+      <div class="move titan"><div class="tag">Titan · phase · ++</div>
+        <h4>Brahmā <span class="op">L5 · creation</span></h4>
+        <div class="sig">+Φ, +ν</div>
+        <p>New coherence and viability rise together — opening a venture, a structure, a frame.</p></div>
+      <div class="move titan"><div class="tag">Titan · phase · −−</div>
+        <h4>Śiva <span class="op">L6 · dissolution</span></h4>
+        <div class="sig">−Φ, −ν</div>
+        <p>Structure and fuel release together — sunsetting, archiving, the via negativa.</p></div>
+      <div class="move titan"><div class="tag">Titan · phase · ≈≈</div>
+        <h4>Viṣṇu <span class="op">L7 · preservation</span></h4>
+        <div class="sig">dΦ≈0, dν≈0</div>
+        <p>Both held to keep the pattern alive — stewardship, maintenance, the witness.</p></div>
+    </div>
+    <p class="cap">Why exactly seven: the (dΦ, dν) sign grid has 3×3 = 9 cells; the three same-sign
+      cells are the phase frames, the opposite-sign cells give the four transfers ({give,take} ×
+      {Φ,ν}), and the four single-axis-hold cells are boundary limits of the named operators, not new
+      moves. No eighth without a third axis. <span class="tier t-s">S</span></p>
+  </section>
+
+  <section>
+    <h2><span class="n">The outward translation</span>What the established sciences call this</h2>
+    <p class="sec-lede">D5 is not reduced to these disciplines — they are the strongest public language
+      for studying it. The translation is canonical (the D5 register).</p>
+    <table class="tx">
+      <thead><tr><th>Framework term</th><th>Public translation</th><th>Tier</th></tr></thead>
+      <tbody>
+        <tr><td>selection</td><td>choice under incentives, uncertainty, bounded rationality</td><td>game theory / behavioural econ</td></tr>
+        <tr><td>η (extraction)</td><td>rent asymmetry, parasitic transfer, exploitative spread</td><td><span class="tier t-i">I/S</span></td></tr>
+        <tr><td>Φ · ν</td><td>foresight (recursion depth, trust, legibility) · execution capacity</td><td><span class="tier t-i">I/S</span></td></tr>
+        <tr><td>η = 0</td><td>a <em>conditional</em> equilibrium — holds only under enforcement (Green–Laffont: no mechanism is strategyproof, efficient & budget-balanced at once)</td><td><span class="tier t-a">A</span> / <span class="tier t-s">S</span></td></tr>
+        <tr><td>K2</td><td>sovereignty at the signature point; the principal keeps the final act</td><td>principal–agent</td></tr>
+        <tr><td>Grace Exit (K4)</td><td>exit rights, contestability, reversible participation</td><td>mechanism design</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="n">The sharpest case</span>War, where nobody is sentimental</h2>
+    <p class="sec-lede">Military doctrine carries the D5 thesis in its least romantic form: <strong>institutions
+      choose which game is being played.</strong></p>
+    <div class="card">
+      <h4>Lanchester — the law is selected by the information regime</h4>
+      <p>Combat power is multiplicative, never additive — you cannot trade zero soldiers for any amount
+        of quality. But the exponents depend on what you can see. In <strong>aimed fire</strong> (you can
+        target individuals) strength is <code>q·N²</code> — the <strong>Square Law</strong>, asymmetric,
+        and its lesson is <em>concentrate force</em>. In <strong>sanctuary / area fire</strong> (you fire
+        blind into a zone) strength is <code>q·N</code> — the <strong>Linear Law</strong>, symmetric, the
+        one-for-one trade. <strong>Fourth-generation warfare is mechanism design at war</strong>: the
+        weaker player does not fight the stronger force — it redesigns the <em>information structure</em>
+        of the conflict to drag it from Square to Linear and erase the numerical advantage.
+        <span class="tier t-e">E</span> the attrition laws · <span class="tier t-i">I</span> the D5 reading.</p>
+      <p class="cap">Honest scope: this witnesses <em>multiplicative, not additive</em> robustly. It does
+        <em>not</em> make the symmetric balance-sphere universal — the Square Law is a different exponent
+        structure with a corner optimum (see the Dyadic Coupling Law §5c). That the governing law flips
+        with the information regime <em>is</em> the framework's register-dependence, observed in doctrine.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">The line we keep visible</span>Balance is the constraint, not the goal</h2>
+    <p class="sec-lede">Every agent on the board is playing the same game — but the game is not
+      "maximise balance." That reading failed its own test.</p>
+    <div class="card">
+      <h4>What you maximise, and what you stay inside</h4>
+      <p>The objective is <strong>Ω</strong> — widen the cone of futures you can reach. The constraint is
+        <strong>balance</strong> (η = 0 and the constitution's other refusals): push reach to a pole with
+        no coherence and the product φ·ν drives the other factor to infinity, and the system collapses into
+        its shadow. So you maximise potential <em>subject to</em> staying in balance — constrained
+        optimisation, the constitution as the Lagrangian. When the framework's own peer-review put
+        "maximise balance" to the test (R6), it failed for the potential register; we corrected it rather
+        than hide it. <span class="tier t-s">S</span> the structure · <span class="tier t-i">I</span> that
+        reality obeys it.</p>
+    </div>
+    <div class="walk">
+      <a href="../soul-loop/">↻ the inward mirror — the Soul Loop</a>
+      <a href="../5/">/5 the Burrisphere</a>
+      <a href="../synthesis/">the whole arc</a>
+      <a href="../axioms/">the axioms &amp; the open conjectures</a>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="phi">⊙ = • × ○</div>
+  Emergentism · the game · D5 translated outward · evidence tiers preserved<br>
+  Valence lives on the move's η, never the operator's name.
+</footer>
+
+<script defer src="/assets/js/atlas-drawer.js"></script>
+<script defer src="/assets/js/book-ai.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 {
  "generated": "build_atlas_index.py",
- "total": 239,
+ "total": 240,
  "tree": [
   {
    "key": "unfolding",
@@ -49,12 +49,16 @@
      "title": "The Seven Axioms"
     },
     {
-     "href": "/rosetta/",
-     "title": "The Master Rosetta Stone"
-    },
-    {
      "href": "/soul-loop/",
      "title": "The Soul Loop"
+    },
+    {
+     "href": "/game/",
+     "title": "The Game"
+    },
+    {
+     "href": "/rosetta/",
+     "title": "The Master Rosetta Stone"
     }
    ]
   },

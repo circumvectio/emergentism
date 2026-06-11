@@ -20,7 +20,7 @@ OUT = ROOT / "atlas" / "site_index.json"
 # (section key, label, list of page dirs) — overview surfaces, curated order.
 OVERVIEW = [
     ("unfolding", "The Unfolding · D0–D6", ["0", "1", "2", "3", "4", "5", "6"]),
-    ("doctrine", "Doctrine", ["synthesis", "axioms", "rosetta", "soul-loop", "moat"]),
+    ("doctrine", "Doctrine", ["synthesis", "axioms", "soul-loop", "game", "rosetta", "moat"]),
     ("reading", "Reading", ["read", "book", "routes"]),
 ]
 
