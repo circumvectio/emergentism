@@ -1346,6 +1346,19 @@ pre.glyph-block {
 
   .hero {
     padding: 110px 20px 64px;
+    flex-direction: column;
+  }
+
+  .visual-panel {
+    max-width: 100%;
+    margin-top: 32px;
+    min-height: min(64vh, 480px);
+  }
+
+  .model-readout {
+    max-width: calc(100% - 24px) !important;
+    font-size: 11px !important;
+    line-height: 1.5 !important;
   }
 
   .container {
