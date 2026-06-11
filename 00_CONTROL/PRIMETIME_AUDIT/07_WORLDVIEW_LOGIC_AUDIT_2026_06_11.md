@@ -109,3 +109,32 @@ The corpus now carries the sharper public-worldview line:
 - Targeted canonization scan found all expected velocity-space, Pythagorean-means, and Mercator-rapidity surfaces.
 - Targeted overclaim scan for Ground reification, K2/public-governance drift, proof-language, thick perennialism, and "from nothing everything" language found no unguarded live source or public-route defects; the remaining Dasein-table match is the explicit guardrail that exhausting Heidegger is conjectural and not asserted.
 - `python3 01_EMERGENTISM/12_PUBLIC_SITE/predeploy_check.py` — PASS.
+
+## AIA / GitBook Navigation and Public-Book Overclaim Pass
+
+**Trigger:** the AIA surface should behave like the GitBook-style documentation layer for `emergentism.org`, with persistent side navigation across the corpus rather than only a single-column outliner.
+
+**Repairs made:**
+
+- Added a persistent desktop side navigation rail to the AIA Workflowy prototype, using root-level author nodes as the navigable book sections.
+- Added side-navigation verification to the Workflowy interaction checker and updated stale seed-label assertions to the current neutral seed.
+- Added the same GitBook-like rail to the Emergentism `book-pwa` surface, headed by `emergentism.org` and `The Infinite Book of Emergence`, with 51 chapter links.
+- Updated `book-pwa/AGENTS.md` so the Emergentism instance is explicitly allowed to expose a persistent public-book/corpus side navigation while retaining outline-first interaction.
+- Tightened the generated-book source and public `/5` and `/6` pages where wording implied total geometric closure, universal domain coverage, or proof-level convergence. The replacement language keeps the coordinate scaffold but marks convergence and worldview extension as argued readings under the framework's constraints.
+- Narrowed the ontology operator sentence from "exhaustive set by which the whole of Being is navigated" to exhaustiveness inside the accepted two-axis grammar `[S]`, not proof that Being has no remainder.
+
+**Verification result:**
+
+- `02_SKYZAI/02_AIA/workflowy-clone`: `npm test`, `npm run lint`, `npm run build`, and `python3 scripts/verify_workflowy_interactions.py` — PASS.
+- Workflowy side-nav visual probe: desktop rail present at `272px`, main surface offset correctly, mobile verifier still green.
+- `01_EMERGENTISM/12_PUBLIC_SITE/book-pwa`: `npm test`, `npm run lint`, `npm run build` — PASS.
+- Emergentism book-pwa side-nav visual probe at `http://localhost:3061`: 51 chapter items, `280px` rail, item activation toggles correctly.
+- `python3 -B build_book.py` and `python3 -B build_rag_index.py` — PASS; public book regenerated at 31 chapters plus overture, 477 RAG passages.
+- `python3 01_EMERGENTISM/12_PUBLIC_SITE/predeploy_check.py` — PASS.
+- Targeted overclaim scans found no remaining live `/5`, `/6`, Dasein, or book-page instances of the removed totalizing phrases. Remaining hits in ontology are explicit "Do not say" / "Correct these on sight" guardrails or negated anti-overclaim statements.
+
+**Boundary retained:**
+
+- AIA is the public documentation/book interface for the corpus, not a conversion funnel and not an authority layer above the canon.
+- `η = 0` remains non-extraction and gift architecture; the rail is a signpost, not an altar or ask.
+- Dasein and perennial-question mappings remain `[I]` unless separately proven. The lens diagrams what shows; it does not possess the showing itself.
