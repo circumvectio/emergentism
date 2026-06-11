@@ -1,3 +1,10 @@
+/* Self-hosted Roboto (Apache-2.0) — accessible, gate-safe (no external fetch),
+   the open sibling of the Skyzai Google-Sans grammar. latin + greek subsets. */
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../fonts/Roboto-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../fonts/RobotoMono-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+
 :root {
   /* Skyzai brand — near-black, signature yellow #FFEB3B, blue #2196F3 */
   --bg: #050505;
@@ -9,9 +16,10 @@
   --gold: #FFEB3B;
   --teal: #2196F3;
 
-  /* Skyzai typography — geometric sans (Google Sans where installed) + system fallback; no external fetch (gate-safe) */
-  --font-heading: 'Google Sans Flex', 'Google Sans Text', 'Google Sans', 'Product Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI Variable Display', 'Segoe UI', system-ui, sans-serif;
-  --font-body: 'Google Sans Flex', 'Google Sans Text', 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  /* Skyzai grammar via self-hosted Roboto (accessible, consistent everywhere) + system fallback */
+  --font-heading: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'Roboto Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
 
   /* φ = 1.618 spacing scale, snapped to a 4px grid (Skyzai structural law) */
   --space-1: 4px;
@@ -68,7 +76,7 @@ code {
   border-radius: 6px;
   background: var(--surface);
   color: var(--text);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-family: 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.94em;
   overflow-wrap: anywhere;
   padding: 0.08rem 0.28rem;
@@ -242,7 +250,7 @@ noscript {
   background: transparent;
   color: var(--text-muted);
   cursor: pointer;
-  font: 700 11px/1 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font: 700 11px/1 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -288,7 +296,7 @@ noscript {
 .command-empty,
 .command-result small {
   color: var(--text-muted);
-  font: 700 0.66rem/1 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font: 700 0.66rem/1 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
@@ -300,7 +308,7 @@ noscript {
   border-radius: 0;
   background: transparent;
   color: var(--text);
-  font: 0.95rem/1.2 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font: 0.95rem/1.2 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   outline: 0;
   padding: 0;
 }
@@ -344,7 +352,7 @@ noscript {
 
 .command-result span {
   color: var(--gold);
-  font: 700 0.72rem/1 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font: 700 0.72rem/1 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
 .command-empty {
@@ -376,7 +384,7 @@ noscript {
 .evidence,
 .chapter-kicker {
   color: var(--text-muted);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-family: 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.16em;
@@ -702,7 +710,7 @@ body.webgl-failed .fallback {
 
 .mu-mark {
   color: var(--gold);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-family: 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: clamp(2.4rem, 6vw, 5.4rem);
   line-height: 1;
 }
@@ -1086,7 +1094,7 @@ body.webgl-failed .fallback {
 .rosetta-table th {
   background: var(--surface);
   color: var(--text-muted);
-  font: 700 0.7rem/1.2 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font: 700 0.7rem/1.2 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
@@ -1109,7 +1117,7 @@ body.webgl-failed .fallback {
 
 .rosetta-table .lvl {
   color: var(--gold);
-  font: 700 0.9rem/1.2 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font: 700 0.9rem/1.2 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
 .rosetta-table tr.boundary .lvl {
@@ -1143,7 +1151,7 @@ pre.glyph-block {
   background: rgba(201, 168, 76, 0.18);
   color: var(--gold);
   padding: 1px 6px;
-  font: 700 0.74rem/1.35 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font: 700 0.74rem/1.35 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   letter-spacing: 0.04em;
 }
 
@@ -1175,7 +1183,7 @@ pre.glyph-block {
 
 .constraint-block .eq {
   color: var(--gold);
-  font: 700 1.5rem/1.2 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font: 700 1.5rem/1.2 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   margin-bottom: 0.5rem;
 }
 
@@ -1282,7 +1290,7 @@ pre.glyph-block {
 .cross-domain .cd-cell h4 {
   margin: 0 0 0.45rem;
   color: var(--gold);
-  font: 700 0.9rem/1.2 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font: 700 0.9rem/1.2 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
 .cross-domain .cd-cell p {

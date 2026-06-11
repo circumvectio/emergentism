@@ -1,0 +1,4 @@
+Roboto and Roboto Mono — Copyright Google LLC — licensed under the Apache License, Version 2.0.
+https://www.apache.org/licenses/LICENSE-2.0
+Self-hosted (latin + greek subsets) from Google Fonts for offline, gate-safe, accessible rendering.
+These are the open siblings of the Skyzai "Google Sans" brand grammar.
