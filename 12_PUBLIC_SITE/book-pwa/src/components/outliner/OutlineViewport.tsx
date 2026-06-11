@@ -60,6 +60,15 @@ export function OutlineViewport({ rootNodeId, projectionLensOptions = [] }: Outl
   }, [focusStack, nodesById, rootNodeId]);
   const focusedNodeId = visibleFocusStack[visibleFocusStack.length - 1] ?? rootNodeId;
   const focusedNode = nodesById[focusedNodeId] ? focusedNodeId : rootNodeId;
+  const bookRootNode = nodesById[rootNodeId];
+  const sideNavItems = useMemo(
+    () =>
+      (nodesById[rootNodeId]?.childrenIds ?? [])
+        .map((id) => nodesById[id])
+        .filter(Boolean),
+    [nodesById, rootNodeId]
+  );
+  const focusedRootChildId = visibleFocusStack.length > 1 ? visibleFocusStack[1] : null;
   const canAssignRoles = currentUser?.canAssignRoles ?? false;
   const canReviewCanon = currentUser?.canReviewCanon ?? false;
   const canOpenReviewPanel = canAssignRoles || canReviewCanon;
@@ -677,6 +686,80 @@ export function OutlineViewport({ rootNodeId, projectionLensOptions = [] }: Outl
         ) : null}
       </header>
 
+      <aside
+        data-aia-side-nav
+        className="fixed bottom-0 left-0 top-11 z-10 hidden w-[280px] flex-col border-r border-[#e5e5e5] bg-[#fafafa] lg:flex"
+      >
+        <div className="border-b border-[#ededed] px-4 py-4">
+          <div className="mb-2 text-[11px] font-medium uppercase tracking-[0.12em] text-[#999]">
+            emergentism.org
+          </div>
+          <button
+            type="button"
+            data-aia-side-nav-root
+            className={`block w-full rounded-sm px-2 py-2 text-left transition-colors ${
+              focusedNode === rootNodeId
+                ? "bg-white text-[#171717] shadow-[0_1px_0_rgba(0,0,0,0.04)]"
+                : "text-[#555] hover:bg-white hover:text-[#171717]"
+            }`}
+            onClick={() => dispatch({ type: "SET_FOCUS_STACK", nodeIds: [rootNodeId] })}
+            title={bookRootNode?.canonicalTextMd ?? "The Infinite Book"}
+          >
+            <span className="block truncate text-[14px] font-medium">
+              {bookRootNode?.canonicalTextMd ?? "The Infinite Book"}
+            </span>
+            <span className="mt-0.5 block text-[12px] text-[#888]">
+              {sideNavItems.length} chapter{sideNavItems.length === 1 ? "" : "s"}
+            </span>
+          </button>
+        </div>
+
+        <nav aria-label="AIA book navigation" className="flex-1 overflow-y-auto px-2 py-3">
+          <div className="space-y-0.5">
+            {sideNavItems.map((node, index) => {
+              const isActive = focusedRootChildId === node.id;
+              const childCount = node.childrenIds?.length ?? 0;
+              return (
+                <button
+                  key={node.id}
+                  type="button"
+                  data-aia-side-nav-item={node.id}
+                  data-active={isActive ? "true" : "false"}
+                  className={`group flex w-full items-start gap-2 rounded-sm px-2 py-1.5 text-left transition-colors ${
+                    isActive
+                      ? "bg-white text-[#171717] shadow-[0_1px_0_rgba(0,0,0,0.04)]"
+                      : "text-[#555] hover:bg-white hover:text-[#171717]"
+                  }`}
+                  onClick={() =>
+                    dispatch({
+                      type: "SET_FOCUS_STACK",
+                      nodeIds: [rootNodeId, node.id],
+                    })
+                  }
+                  title={node.canonicalTextMd}
+                >
+                  <span
+                    className={`mt-[2px] flex h-5 min-w-5 items-center justify-center rounded-sm border text-[11px] ${
+                      isActive
+                        ? "border-[#ccc] bg-[#f5f5f5] text-[#444]"
+                        : "border-[#e1e1e1] bg-white text-[#999] group-hover:border-[#ccc]"
+                    }`}
+                  >
+                    {index + 1}
+                  </span>
+                  <span className="min-w-0 flex-1">
+                    <span className="block truncate text-[13px] leading-5">{node.canonicalTextMd}</span>
+                    <span className="block text-[11px] leading-4 text-[#999]">
+                      {childCount} section{childCount === 1 ? "" : "s"}
+                    </span>
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        </nav>
+      </aside>
+
       <div className="space-y-2 border-b border-[#efefef] px-4 py-2 lg:hidden">
         <label className="flex h-8 items-center gap-2 rounded-sm border border-[#ddd] bg-[#fafafa] px-2 text-[#777]">
           <Search className="h-3.5 w-3.5 shrink-0" />
@@ -709,7 +792,7 @@ export function OutlineViewport({ rootNodeId, projectionLensOptions = [] }: Outl
         ) : null}
       </div>
 
-      <div className="mx-auto max-w-[760px] px-4 pb-16 pt-8 md:px-8">
+      <div className="mx-auto max-w-[760px] px-4 pb-16 pt-8 md:px-8 lg:ml-[312px] lg:mr-auto">
         <OutlinerNode nodeId={focusedNode} isRoot searchQuery={searchQuery} />
       </div>
     </section>

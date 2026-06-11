@@ -53,8 +53,9 @@ evidence_tier: "[I]/[C] until build, runtime, payment, auth, live-model, and dep
 
 - [B/I] Use Workflowy as a public-doc UX reference for one continuous document, nested bullets, zoom
   focus, breadcrumbs/home, collapse/expand, live search, node types, and slash-command flow.
-- [I] Do not convert the PWA into a permanent sidebar-plus-main-section app; sidebar-like access is
-  optional navigation, while the primary interaction remains the outline itself.
+- [I] For the Emergentism instance, AIA is the GitBook-like documentation layer for
+  `emergentism.org`: expose a persistent side navigation for the public book/corpus while the
+  primary interaction remains the outline itself.
 - [I] Bullets with children need explicit expand/collapse affordances; leaf bullets, paragraphs,
   headings, quotes, todos, and code blocks need distinct node semantics.
 
