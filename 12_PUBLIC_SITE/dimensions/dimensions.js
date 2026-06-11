@@ -378,11 +378,67 @@ function createGridPlane(size = 3.8, lines = 13) {
   return group;
 }
 
-function createHornTorus() {
-  return new THREE.Mesh(
-    new THREE.TorusGeometry(0.9, 0.9, 42, 160),
-    makeMaterial(0xffffff, 0.35, true)
+// A live readout overlay inside the visual panel (mono, bottom-left).
+function makeReadout() {
+  if (!visual) return null;
+  if (getComputedStyle(visual).position === "static") visual.style.position = "relative";
+  let el = visual.querySelector(".model-readout");
+  if (!el) {
+    el = document.createElement("div");
+    el.className = "model-readout";
+    el.style.cssText =
+      "position:absolute;left:16px;top:16px;z-index:5;max-width:68%;" +
+      "font:500 12px/1.6 'Roboto Mono',ui-monospace,Menlo,monospace;" +
+      "color:var(--text,#F3F4F6);pointer-events:none;letter-spacing:.01em;white-space:pre-line;" +
+      "background:color-mix(in srgb, #050505 66%, transparent);padding:9px 12px;" +
+      "border:1px solid rgba(255,255,255,.09);border-radius:9px;backdrop-filter:blur(4px)";
+    visual.appendChild(el);
+  }
+  return el;
+}
+
+// Morphing horn torus driven by RAPIDITY. Outer radius is fixed; as rapidity w
+// grows, v/c = tanh(w) -> 1 and the central MOUTH (R - rt) contracts: an open
+// ring torus closes to a horn (R = rt, mouth = 0) and then a spindle (R < rt)
+// whose interior overlaps at the axis — the centre accumulating mass/momentum
+// while the throat pinches shut. A model of how reality folds at the limit.
+function makeMorphTorus(outer = 1.7, rings = 48, seg = 18, color = 0xffffff) {
+  const verts = [];
+  for (let i = 0; i < rings; i++) {            // meridian rings (around the tube)
+    const u = (i / rings) * Math.PI * 2;
+    for (let j = 0; j < seg; j++) {
+      verts.push({ u, v: (j / seg) * Math.PI * 2 }, { u, v: ((j + 1) / seg) * Math.PI * 2 });
+    }
+  }
+  for (let j = 0; j < seg; j++) {              // longitude rings (around the axis)
+    const v = (j / seg) * Math.PI * 2;
+    for (let i = 0; i < rings; i++) {
+      verts.push({ u: (i / rings) * Math.PI * 2, v }, { u: ((i + 1) / rings) * Math.PI * 2, v });
+    }
+  }
+  const arr = new Float32Array(verts.length * 3);
+  const geom = new THREE.BufferGeometry();
+  geom.setAttribute("position", new THREE.BufferAttribute(arr, 3));
+  const mesh = new THREE.LineSegments(
+    geom,
+    new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.34 })
   );
+  function setVC(vc) {
+    const f = 0.26 + 0.50 * vc;          // tube fraction: 0.26 ring -> 0.5 horn -> ~0.76 spindle
+    const rt = outer * f;                // tube (minor) radius — swells with rapidity
+    const R = outer * (1 - f);           // axis-to-tube radius — shrinks
+    for (let k = 0; k < verts.length; k++) {
+      const { u, v } = verts[k];
+      const rad = R + rt * Math.cos(v);
+      arr[k * 3] = rad * Math.cos(u);
+      arr[k * 3 + 1] = rt * Math.sin(v);
+      arr[k * 3 + 2] = rad * Math.sin(u);
+    }
+    geom.attributes.position.needsUpdate = true;
+    return { rt, R, mouth: R - rt };
+  }
+  setVC(0);
+  return { mesh, setVC };
 }
 
 function makeMarker(position, color = 0xffffff, size = 0.055) {
@@ -397,6 +453,7 @@ function makeMarker(position, color = 0xffffff, size = 0.055) {
 function buildScene(mode, scene) {
   const root = new THREE.Group();
   scene.add(root);
+  const dyn = []; // per-frame update fns (morphing / orbiting models)
 
   const axis = line([
     new THREE.Vector3(0, -1.8, 0),
@@ -455,46 +512,90 @@ function buildScene(mode, scene) {
   }
 
   if (mode === "horn") {
-    const torus = createHornTorus();
-    torus.rotation.x = Math.PI / 2;
-    root.add(torus);
-    root.add(ring(0.9, 0xb8b8b8, 0.75));
-    root.add(line([
-      new THREE.Vector3(-1.8, 0, 0),
-      new THREE.Vector3(1.8, 0, 0)
-    ], 0x707070, 0.85));
+    const torus = makeMorphTorus(1.7, 48, 18, 0xffffff);
+    root.add(torus.mesh);
+    // the central core: gains mass/momentum as the mouth pinches shut
+    const core = makeMarker(new THREE.Vector3(0, 0, 0), 0xffd24a, 0.06);
+    root.add(core);
+    const readout = makeReadout();
+    dyn.push(function (t) {
+      // rapidity sweeps up toward the light-speed limit, then resets (a loop)
+      const w = (t * 0.32) % 3.0;                 // rapidity 0..3
+      const vc = Math.tanh(w);                    // v/c = tanh(w) -> ~0.995
+      const gamma = Math.cosh(w);                 // time dilation factor
+      const g = torus.setVC(vc);
+      const mass = 1 + (gamma - 1) * 0.12;        // centre swells with γ
+      core.scale.setScalar(Math.min(mass, 3.4));
+      core.material.opacity = Math.min(0.35 + vc * 0.65, 1);
+      root.rotation.y += 0.004;
+      if (readout) readout.textContent =
+        "rapidity  w = " + w.toFixed(2) + "\n" +
+        "v / c     = " + vc.toFixed(3) + "   (β)\n" +
+        "γ = cosh w = " + gamma.toFixed(2) + "   time dilation\n" +
+        "mouth R−r = " + g.mouth.toFixed(2) +
+          (g.mouth > 0.02 ? "   ring" : g.mouth < -0.02 ? "   spindle · interior overlaps" : "   horn · throat closed");
+    });
   }
 
   if (mode === "burrisphere") {
-    // The dual stereographic projection: one sphere point P, two rays.
-    // phi-chart projects FROM the north pole (infinity), nu-chart FROM the
-    // south pole (zero); both rays pass through P (they meet ON the sphere)
-    // and cross the equatorial plane at reciprocal radii: phi · nu = 1.
+    // The dual stereographic projection, ORBITING. The meeting point P circles
+    // the sphere; its φ = cot(θ/2) projection sweeps the four quadrants of the
+    // equatorial plane. The unit circle (radius = the sphere radius) is the
+    // god/demon boundary: φ > 1 (projection OUTSIDE the unit circle, P above the
+    // equator) is a GOD-move; φ < 1 (INSIDE, P below) is a DEMON-move. φ·ν = 1
+    // throughout. Valence is on the move's position, not on a fixed operator (A4).
     const r = 1.38;
-    const theta = Math.PI / 3; // sample colatitude 60° — upper hemisphere
     const N = new THREE.Vector3(0, r, 0);
     const S = new THREE.Vector3(0, -r, 0);
-    const P = new THREE.Vector3(r * Math.sin(theta), r * Math.cos(theta), 0);
-    const Pphi = new THREE.Vector3(r / Math.tan(theta / 2), 0, 0); // cot(θ/2) · r
-    const Pnu = new THREE.Vector3(r * Math.tan(theta / 2), 0, 0);  // tan(θ/2) · r
+    const GOD = 0xffeb3b, DEMON = 0xd23b3b;
 
-    root.add(createSphere(r, 0.23));
-    root.add(ring(r, 0xffffff, 1));
-    root.add(createGridPlane(5.4, 17));
-    root.add(line([N, P, Pphi], 0xffffff, 0.95)); // descending ray from ∞
-    root.add(line([S, P], 0xb8b8b8, 0.95));       // ascending ray from 0 (crosses plane at Pnu)
+    root.add(createSphere(r, 0.2));
+    root.add(ring(r, 0xffffff, 0.45));                              // sphere equator
+    root.add(createGridPlane(5.6, 19));
+    root.add(ring(r, GOD, 0.85));                                   // the unit circle = god/demon boundary
+    root.add(line([new THREE.Vector3(-2.6, 0, 0), new THREE.Vector3(2.6, 0, 0)], 0x555555, 0.6));
+    root.add(line([new THREE.Vector3(0, 0, -2.6), new THREE.Vector3(0, 0, 2.6)], 0x555555, 0.6));
     root.add(makeMarker(N, 0xb8b8b8, 0.07));
     root.add(makeMarker(S, 0x707070, 0.07));
-    root.add(makeMarker(P, 0xffffff, 0.11));      // the meeting point on the sphere
-    root.add(makeMarker(Pphi, 0xb8b8b8, 0.075));
-    root.add(makeMarker(Pnu, 0xb8b8b8, 0.075));
-    [0.46, 0.92].forEach((y) => {
-      const lat = ring(Math.sqrt(r * r - y * y), 0x777777, 0.4);
-      lat.position.y = y;
-      root.add(lat);
-      const mirror = lat.clone();
-      mirror.position.y = -y;
-      root.add(mirror);
+    [0.5, 1.0].forEach((y) => {
+      const lat = ring(Math.sqrt(r * r - y * y), 0x666666, 0.32);
+      lat.position.y = y; root.add(lat);
+      const m = lat.clone(); m.position.y = -y; root.add(m);
+    });
+    const start = new THREE.Vector3(r, 0, 0);
+    const pMark = makeMarker(start.clone(), 0xffffff, 0.1);         // P on the sphere
+    const proj = makeMarker(start.clone(), GOD, 0.09);             // φ-projection on the plane
+    const rayPhi = line([N, start.clone()], GOD, 0.9);            // ∞ → P → plane
+    const rayNu = line([S, start.clone()], 0x8aa0c0, 0.6);        // 0 → P
+    root.add(pMark); root.add(proj); root.add(rayPhi); root.add(rayNu);
+    const readout = makeReadout();
+    const quad = ["I", "II", "III", "IV"];
+    dyn.push(function (t) {
+      const psi = t * 0.55;                                        // azimuth sweep → circles the quadrants
+      const theta = Math.PI / 2 + 0.62 * Math.sin(t * 0.62);       // colatitude crosses the equator
+      const phi = 1 / Math.tan(theta / 2);                          // cot(θ/2), in units of r
+      const nu = Math.tan(theta / 2);                              // reciprocal
+      const cps = Math.cos(psi), sps = Math.sin(psi);
+      const sT = Math.sin(theta);
+      const P = new THREE.Vector3(r * sT * cps, r * Math.cos(theta), r * sT * sps);
+      const Pp = new THREE.Vector3(r * phi * cps, 0, r * phi * sps);
+      pMark.position.copy(P);
+      proj.position.copy(Pp);
+      rayPhi.geometry.setFromPoints([N, P, Pp]);
+      rayNu.geometry.setFromPoints([S, P]);
+      const isGod = phi > 1;
+      const col = isGod ? GOD : DEMON;
+      proj.material.color.setHex(col);
+      rayPhi.material.color.setHex(col);
+      pMark.material.color.setHex(col);
+      root.rotation.y += 0.0026;
+      const q = quad[Math.floor((psi % (Math.PI * 2)) / (Math.PI / 2)) % 4];
+      if (readout) readout.textContent =
+        "quadrant  " + q + "\n" +
+        "φ = cot θ⁄2 = " + phi.toFixed(2) + "   ν = " + nu.toFixed(2) + "   (φ·ν = 1)\n" +
+        (isGod ? "φ > 1  →  GOD-move · outside the unit circle"
+               : "φ < 1  →  DEMON-move · inside the unit circle") + "\n" +
+        "valence is on the move, not the operator (A4)";
     });
   }
 
@@ -510,7 +611,7 @@ function buildScene(mode, scene) {
     ], 0xffffff, 0.9));
   }
 
-  return root;
+  return { root, update: (t) => dyn.forEach((f) => f(t)) };
 }
 
 async function boot() {
@@ -542,12 +643,13 @@ async function boot() {
     controls.enableDamping = true;
     controls.enablePan = false;
     controls.enableZoom = false;
-    controls.autoRotate = !REDUCED_MOTION;
-    controls.autoRotateSpeed = page.autoRotateSpeed
-      || (page.animationMode === "burrisphere" ? 0.55 : 0.35);
+    // models that spin their own root don't also get camera auto-rotate
+    const selfRotating = page.animationMode === "burrisphere" || page.animationMode === "horn";
+    controls.autoRotate = !REDUCED_MOTION && !selfRotating;
+    controls.autoRotateSpeed = page.autoRotateSpeed || 0.35;
 
     addStars(scene);
-    const root = buildScene(page.animationMode, scene);
+    const { root, update } = buildScene(page.animationMode, scene);
 
     function resize() {
       const bounds = visual.getBoundingClientRect();
@@ -564,12 +666,11 @@ async function boot() {
         root.rotation.x = Math.sin(t * 0.42) * 0.18;
       } else if (page.animationMode === "bloch") {
         root.scale.setScalar(1 + Math.sin(t * 0.6) * 0.025);
-      } else if (page.animationMode === "horn") {
-        root.rotation.y += 0.004;
       } else if (page.animationMode === "convergence") {
         root.rotation.z = t * 0.08;
         root.scale.setScalar(1 + Math.sin(t * 0.7) * 0.04);
       }
+      update(t); // morphing / orbiting models (horn, burrisphere)
 
       controls.update();
       renderer.render(scene, camera);
@@ -578,6 +679,7 @@ async function boot() {
 
     if (REDUCED_MOTION) {
       // static render: one frame now, re-render only on interaction/resize
+      update(1.2); // pose the morphing/orbiting models at a representative frame
       resize();
       renderer.render(scene, camera);
       controls.addEventListener("change", () => renderer.render(scene, camera));
