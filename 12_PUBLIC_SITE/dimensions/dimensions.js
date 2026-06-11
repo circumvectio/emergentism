@@ -506,20 +506,24 @@ function buildScene(mode, scene) {
   }
 
   if (mode === "bloch") {
-    // The Bloch / Riemann sphere stands on the complex plane and projects
-    // DOWNWARD: from ∞ (north pole) through the surface onto the plane below —
-    // the dual of the Burrisphere, which projects upward. Equator → unit circle.
-    const r = 1.35;
+    // The Bloch / Riemann sphere STANDS ON the complex plane (tangent at 0,
+    // the south pole) and projects DOWNWARD: a straight ray from ∞ (north
+    // pole) through the surface point P lands on the floor at 2r·cot(θ/2) —
+    // the same tangent-plane stereographic projection the Burrisphere dualises.
+    // The equator's shadow on the floor is the unit circle (φ = 1).
+    const r = 1.0;
     const N = new THREE.Vector3(0, r, 0), Sp = new THREE.Vector3(0, -r, 0);
-    root.add(createGridPlane(4.8, 17));
+    const floor = createGridPlane(8.0, 23); floor.position.y = -r; root.add(floor);
     root.add(createSphere(r, 0.26));
-    root.add(ring(r, 0xffffff, 0.85));                          // equator = unit circle |z|=1
-    root.add(ring(1.0, 0xffeb3b, 0.55));                        // the unit point x=1 on the plane
+    root.add(ring(r, 0xffffff, 0.85));                          // the equator (φ = 1 up here)
+    const unitC = ring(2 * r, 0xffeb3b, 0.55);                  // its shadow: the unit circle on ℂ
+    unitC.position.y = -r; root.add(unitC);
     root.add(makeMarker(N, 0xb8b8b8, 0.07));                    // ∞
-    root.add(makeMarker(Sp, 0x707070, 0.07));                   // 0
-    const P0 = new THREE.Vector3(r * Math.sin(Math.PI / 3), r * Math.cos(Math.PI / 3), 0);
-    const land = new THREE.Vector3(r / Math.tan(Math.PI / 6), 0, 0);  // cot(θ/2)·r, on the plane
-    root.add(line([N, P0, land], 0xffeb3b, 0.9));               // the downward projection ray
+    root.add(makeMarker(Sp, 0x707070, 0.07));                   // 0 — where the sphere touches ℂ
+    const th = Math.PI * 80 / 180;                              // P just above the equator → φ just over 1
+    const P0 = new THREE.Vector3(r * Math.sin(th), r * Math.cos(th), 0);
+    const land = new THREE.Vector3(2 * r / Math.tan(th / 2), -r, 0); // 2r·cot(θ/2), on the floor
+    root.add(line([N, land], 0xffeb3b, 0.9));                   // straight ray ∞ → P → ℂ
     root.add(makeMarker(P0, 0xffffff, 0.08));
     root.add(makeMarker(land, 0xffeb3b, 0.07));
   }
@@ -607,97 +611,104 @@ function buildScene(mode, scene) {
   }
 
   if (mode === "burrisphere") {
-    // The dual stereographic projection, ORBITING. The meeting point P circles
-    // the sphere; its φ = cot(θ/2) projection sweeps the four quadrants of the
-    // equatorial plane. The unit circle (radius = the sphere radius) is the
-    // god/demon boundary: φ > 1 (projection OUTSIDE the unit circle, P above the
-    // equator) is a GOD-move; φ < 1 (INSIDE, P below) is a DEMON-move. φ·ν = 1
-    // throughout. Valence is on the move's position, not on a fixed operator (A4).
-    const r = 1.38;
-    const N = new THREE.Vector3(0, r, 0);
-    const S = new THREE.Vector3(0, -r, 0);
-    const GOD = 0xffeb3b, DEMON = 0xd23b3b;
+    // THE DUAL TANGENT-PLANE STEREOGRAPHIC PROJECTION — the real geometry.
+    // The sphere is sandwiched between two copies of the SAME complex plane:
+    // the floor touches it at 0 (south pole), the top plane touches it at ∞
+    // (north pole). From ∞ a straight ray through P lands DOWN on the floor at
+    // radius 2r·cot(θ/2) = 2r·φ; from 0 a straight ray through P lands UP on
+    // the top plane at 2r·tan(θ/2) = 2r·ν. Both rays pass through P — the two
+    // projections meet ON the sphere. φ·ν = 1 throughout. The unit circles
+    // (radius 2r on each plane) are the equator's two shadows: the god/demon
+    // boundary. As ψ rotates while θ sweeps, both landings SPIRAL through the
+    // quadrants — reciprocal radii, crossing their unit circles together.
+    const r = 1.0;
+    const N = new THREE.Vector3(0, r, 0);                            // ∞ — the top plane touches here
+    const S = new THREE.Vector3(0, -r, 0);                           // 0 — the floor touches here
+    const GOD = 0xffeb3b, DEMON = 0xd23b3b, TITAN = 0x6f9bcc;
+    const U = 2 * r;                                                 // unit-circle radius on a tangent plane
 
-    root.add(createSphere(r, 0.2));
-    root.add(ring(r, 0xffffff, 0.45));                              // sphere equator
-    const cplane = createGridPlane(6.0, 21); cplane.position.y = -r; root.add(cplane); // the complex plane = the FLOOR the sphere rests on
-    root.add(ring(r, GOD, 0.85));                                   // sphere equator = the god/demon boundary (φ = ν = 1)
-    root.add(line([new THREE.Vector3(-2.9, -r, 0), new THREE.Vector3(2.9, -r, 0)], 0x555555, 0.6)); // real axis, on the plane
-    root.add(line([new THREE.Vector3(0, -r, -2.9), new THREE.Vector3(0, -r, 2.9)], 0x555555, 0.6)); // imaginary axis
-    root.add(makeMarker(N, 0xc8c8c8, 0.07));                        // north pole → up toward ∞
-    root.add(makeMarker(S, 0x808080, 0.085));                       // south pole = 0, resting on the complex plane
-    [0.5, 1.0].forEach((y) => {
-      const lat = ring(Math.sqrt(r * r - y * y), 0x666666, 0.32);
+    root.add(createSphere(r, 0.22));
+    root.add(ring(r, GOD, 0.8));                                     // the equator — god/demon boundary on the sphere
+    [0.45, 0.8].forEach((y) => {
+      const lat = ring(Math.sqrt(r * r - y * y), 0x666666, 0.3);
       lat.position.y = y; root.add(lat);
       const m = lat.clone(); m.position.y = -y; root.add(m);
     });
-    const TITAN = 0x6f9bcc;
-    const CY = 2.2;                                  // the projection plane, above the sphere
-    const UNIT = 0.5;                                // chart radius where cot(θ/2)=1 (the god/demon boundary)
-    // the projection plane: frame + the four quadrants + the unit circle
-    root.add(line([
-      new THREE.Vector3(-1.3, CY, -1.3), new THREE.Vector3(1.3, CY, -1.3),
-      new THREE.Vector3(1.3, CY, 1.3), new THREE.Vector3(-1.3, CY, 1.3),
-      new THREE.Vector3(-1.3, CY, -1.3)], 0x3a3a3a, 0.8));
-    root.add(line([new THREE.Vector3(-1.3, CY, 0), new THREE.Vector3(1.3, CY, 0)], 0x5a5a5a, 0.8));
-    root.add(line([new THREE.Vector3(0, CY, -1.3), new THREE.Vector3(0, CY, 1.3)], 0x5a5a5a, 0.8));
-    const unitChart = ring(UNIT, GOD, 0.7); unitChart.position.y = CY; root.add(unitChart);
-    // the four operators: 2 Gods (give) OUTSIDE the unit circle, 2 Demons (take) INSIDE
-    [[0.62, 0.62, GOD], [-0.62, 0.62, GOD], [0.22, -0.22, DEMON], [-0.22, -0.22, DEMON]]
-      .forEach((o) => root.add(makeMarker(new THREE.Vector3(o[0], CY, o[1]), o[2], 0.055)));
 
-    const start = new THREE.Vector3(r, 0, 0);
-    const pMark = makeMarker(start.clone(), 0xffffff, 0.1);          // P on the sphere
-    const rayUp = line([S, start.clone()], GOD, 0.9);               // 0 → P → up to the projection
-    const projPt = makeMarker(new THREE.Vector3(UNIT, CY, 0), GOD, 0.08);  // the live projection
-    root.add(pMark); root.add(rayUp); root.add(projPt);
-    // the SPIRAL trail traced by the projected point
-    const TRAIL = 320, trailPts = [];
-    const trail = line([new THREE.Vector3(UNIT, CY, 0)], 0xffeb3b, 0.5);
-    root.add(trail);
+    // the two tangent copies of the same complex plane (floor at 0, top at ∞)
+    [-r, r].forEach((y) => {
+      const g = createGridPlane(9.0, 25); g.position.y = y; root.add(g);
+      const u = ring(U, GOD, 0.6); u.position.y = y; root.add(u);    // unit circle = the equator's shadow
+      root.add(line([new THREE.Vector3(-4.5, y, 0), new THREE.Vector3(4.5, y, 0)], 0x555555, 0.5));
+      root.add(line([new THREE.Vector3(0, y, -4.5), new THREE.Vector3(0, y, 4.5)], 0x555555, 0.5));
+    });
+    root.add(makeMarker(N, 0xc8c8c8, 0.07));
+    root.add(makeMarker(S, 0x8a8a8a, 0.07));
 
-    // the 3 Titans on the lower hemisphere + the centre (L4 Arjuna, the equator)
+    // the four operators, resident on the ∞-plane (the ν-chart): gods have
+    // ν < 1 → INSIDE the unit circle, clustered near ∞; demons have ν > 1 →
+    // OUTSIDE. One quadrant each, per the complex-plane game.
+    [[0.9, 0.9, GOD], [-0.9, 0.9, GOD], [-2.2, -2.2, DEMON], [2.2, -2.2, DEMON]]
+      .forEach((o) => root.add(makeMarker(new THREE.Vector3(o[0], r, o[1]), o[2], 0.06)));
+
+    // the 3 Titans on the lower hemisphere + the centre (L4, the equator)
     [[2.30, 0.0], [2.55, 2.1], [2.85, 4.2]].forEach((T) => {
       root.add(makeMarker(new THREE.Vector3(
         r * Math.sin(T[0]) * Math.cos(T[1]), r * Math.cos(T[0]), r * Math.sin(T[0]) * Math.sin(T[1])
-      ), TITAN, 0.07));
+      ), TITAN, 0.06));
     });
-    root.add(makeMarker(new THREE.Vector3(0, 0, 0), 0xffffff, 0.05)); // the centre
+    root.add(makeMarker(new THREE.Vector3(0, 0, 0), 0xffffff, 0.045)); // the centre
+
+    const pMark = makeMarker(new THREE.Vector3(r, 0, 0), 0xffffff, 0.085); // P — where the two rays meet
+    const rayDown = line([N, new THREE.Vector3(U, -r, 0)], GOD, 0.8);  // ∞ → P → floor: lands at 2r·φ
+    const rayUp = line([S, new THREE.Vector3(U, r, 0)], GOD, 0.8);     // 0 → P → top: lands at 2r·ν
+    const phiPt = makeMarker(new THREE.Vector3(U, -r, 0), GOD, 0.07);  // the φ landing (floor)
+    const nuPt = makeMarker(new THREE.Vector3(U, r, 0), GOD, 0.07);    // the ν landing (top)
+    root.add(pMark); root.add(rayDown); root.add(rayUp); root.add(phiPt); root.add(nuPt);
+
+    // the two spiral trails traced by the landings — reciprocal radii
+    const TRAIL = 360, phiTrail = [], nuTrail = [];
+    const phiLine = line([new THREE.Vector3(U, -r, 0)], 0xffeb3b, 0.38);
+    const nuLine = line([new THREE.Vector3(U, r, 0)], 0xffeb3b, 0.38);
+    root.add(phiLine); root.add(nuLine);
 
     const readout = makeReadout();
     if (readout) { readout.style.whiteSpace = "pre-line"; readout.style.top = "auto"; readout.style.bottom = "14px"; }
     const quadName = ["I", "II", "III", "IV"];
     dyn.push(function (t) {
-      const psi = t * 2.3;                                          // azimuth rotates fast
-      const theta = Math.PI / 2 + 1.3 * Math.sin(t * 0.2);          // the ANGLE sweeps, near pole to near pole
-      const phi = 1 / Math.tan(theta / 2);                          // cot(θ/2) — the SAME stereographic radius as the Riemann sphere
-      const nu = Math.tan(theta / 2);
-      const cps = Math.cos(psi), sps = Math.sin(psi);
-      const sT = Math.sin(theta);
+      const psi = t * 1.6;                                           // azimuth rotates
+      const theta = Math.PI / 2 + 0.70 * Math.sin(t * 0.23);         // the angle sweeps across the equator
+      const phi = 1 / Math.tan(theta / 2);                           // cot(θ/2)
+      const nu = Math.tan(theta / 2);                                // 1/φ
+      const cps = Math.cos(psi), sps = Math.sin(psi), sT = Math.sin(theta);
       const P = new THREE.Vector3(r * sT * cps, r * Math.cos(theta), r * sT * sps);
       pMark.position.copy(P);
-      const rad = Math.min(phi * UNIT, 1.3);                        // radius grows/shrinks with the angle → it SPIRALS
-      const Lp = new THREE.Vector3(rad * cps, CY, rad * sps);
-      projPt.position.copy(Lp);
-      const isGod = phi > 1;                                         // outside the unit circle = GOD
+      // the TRUE landings: collinear with (∞,P) and (0,P) by the half-angle identities
+      const Lphi = new THREE.Vector3(U * phi * cps, -r, U * phi * sps);
+      const Lnu = new THREE.Vector3(U * nu * cps, r, U * nu * sps);
+      phiPt.position.copy(Lphi);
+      nuPt.position.copy(Lnu);
+      rayDown.geometry.setFromPoints([N, Lphi]);                     // straight through P
+      rayUp.geometry.setFromPoints([S, Lnu]);                        // straight through P
+      const isGod = phi > 1;                                         // P above the equator
       const col = isGod ? GOD : DEMON;
-      projPt.material.color.setHex(col);
-      pMark.material.color.setHex(col);
-      rayUp.geometry.setFromPoints([S, P, Lp]);                      // 0 → P → up to the projection
+      [pMark, phiPt, nuPt].forEach((m) => m.material.color.setHex(col));
+      rayDown.material.color.setHex(col);
       rayUp.material.color.setHex(col);
-      trailPts.push(Lp.clone());
-      if (trailPts.length > TRAIL) trailPts.shift();
-      trail.geometry.setFromPoints(trailPts);
-      root.rotation.y += 0.0022;
+      phiTrail.push(Lphi.clone()); if (phiTrail.length > TRAIL) phiTrail.shift();
+      nuTrail.push(Lnu.clone()); if (nuTrail.length > TRAIL) nuTrail.shift();
+      phiLine.geometry.setFromPoints(phiTrail);
+      nuLine.geometry.setFromPoints(nuTrail);
+      root.rotation.y += 0.0016;
       const q = quadName[Math.floor((((psi % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI)) / (Math.PI / 2)) % 4];
       const opName = isGod
         ? (cps < 0 ? "Kṛṣṇa L3 · give" : "Arjuna L4 · give")
         : (cps < 0 ? "Kali L1 · take" : "Kālī L2 · take");
       if (readout) readout.textContent =
-        "stereographic projection · SPIRALING (up from 0)\n" +
-        "angle θ = " + (theta * 180 / Math.PI).toFixed(0) + "°   φ = cot θ⁄2 = " + phi.toFixed(2) + "   ν = " + nu.toFixed(2) + "\n" +
-        "quadrant " + q + " · " + opName + " · " + (isGod ? "GOD (outside unit circle)" : "DEMON (inside)") + "\n" +
-        "below: Titans Brahmā ++ · Śiva −− · Viṣṇu ≈≈ · centre L4";
+        "DUAL STEREOGRAPHIC PROJECTION · the two rays meet at P\n" +
+        "θ = " + (theta * 180 / Math.PI).toFixed(0) + "°   φ = cot θ⁄2 = " + phi.toFixed(2) + "   ν = tan θ⁄2 = " + nu.toFixed(2) + "   φ·ν = 1\n" +
+        "quadrant " + q + " · " + opName + " · " + (isGod ? "GOD-move (φ > 1)" : "DEMON-move (φ < 1)") + "\n" +
+        "∞-plane above (gods near ∞) · 0-plane below (demons near 0) · unit circles = the equator";
     });
   }
 
@@ -750,10 +761,15 @@ async function boot() {
     controls.autoRotate = !REDUCED_MOTION && !selfRotating;
     controls.autoRotateSpeed = page.autoRotateSpeed || 0.35;
     if (page.animationMode === "burrisphere") {
-      // the complex plane is the floor (0 at the south pole), ∞ is up top —
-      // stand near the plane and look UP toward infinity / the operator chart
-      camera.position.set(0, -0.8, 7.7);
-      controls.target.set(0, 1.35, 0);
+      // the sphere sits sandwiched between the two tangent planes (floor = 0,
+      // top = ∞) — stand near the floor and look UP toward infinity
+      camera.position.set(0, -0.7, 9.6);
+      controls.target.set(0, 0.7, 0);
+      controls.update();
+    }
+    if (page.animationMode === "bloch") {
+      // resting sphere + tangent floor at -r; landing reaches 2r·cot(θ/2)
+      camera.position.set(0, 0.4, 5.8);
       controls.update();
     }
 
