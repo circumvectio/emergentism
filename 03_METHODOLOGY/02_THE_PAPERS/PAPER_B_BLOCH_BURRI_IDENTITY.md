@@ -21,7 +21,7 @@ Menexus GmbH, 2026
 
 ## Abstract
 
-We demonstrate that the Bloch sphere representation of the qubit, standard in quantum mechanics since Dirac (1927) and Bloch (1946), and the Burri sphere use the same underlying mathematical manifold: `S² ≅ ℂP¹`. The established part is the manifold identity. The framework-specific part is the reading of Bloch features through dual stereographic coordinates `φ` (coherence) and `ν` (viability) satisfying `φ · ν = 1`. Under that reading, `|0⟩` and `|1⟩` can be mapped to the frame poles, the equatorial superposition can be mapped to `⊙`, and measurement can be interpreted as a `×`-like transition from possibility to actuality. These mappings are structural and interpretive, not new quantum-mechanical facts. We develop the consequences of the bounded ontological reading: the equator of the Bloch sphere corresponds to maximum balance `B = sin(θ) = 1`; decoherence can be read as loss of equatorial coherence; and the measurement problem is rephrased inside the frame-product grammar rather than solved as established physics. We distinguish the Burri reading (sphere as experienced from inside by a self-modeling system) from the Bloch reading (bare quantum structure without a self-model), and connect this distinction interpretively to the four states of the Mandukya Upanishad.
+We demonstrate that the Bloch sphere representation of the qubit, standard in quantum mechanics since Dirac (1927) and Bloch (1946), and the Burri sphere use the same underlying mathematical manifold: `S² ≅ ℂP¹`. The established part is the manifold identity. The framework-specific part is the reading of Bloch features through dual stereographic coordinates `φ` (coherence) and `ν` (viability) satisfying `φ · ν = 1`. Under that reading, `|0⟩` and `|1⟩` can be mapped to the frame poles, the equatorial superposition can be mapped to `⊙`, and measurement can be interpreted as a `×`-like transition from possibility to actuality. These mappings are structural and interpretive, not new quantum-mechanical facts. We develop the consequences of the bounded ontological reading: the equator of the Bloch sphere corresponds to maximum balance `B = sin(θ) = 1`; decoherence can be read as loss of equatorial coherence; and the measurement problem is rephrased inside the frame-product grammar rather than solved as established physics. We distinguish the Burri reading (sphere as experienced from inside by a self-modeling system) from the Bloch reading (bare quantum structure without a self-model), and connect this distinction interpretively to the four states of the Mandukya Upanishad. A second established carrier is then exhibited (§8): under φ = e^w (rapidity w), the dual coordinates are the null components of the relativistic four-momentum in rest-mass units, and the kernel's three lines are — term for term — the mass-shell `E² − (pc)² = (mc²)²`, the reality of momentum, and the rest-energy floor `E ≥ mc²`, with the balance function equal to the proper-time rate `1/γ = dτ/dt` `[A]`.
 
 **Keywords:** Bloch sphere, qubit, Riemann sphere, measurement problem, Born rule, wave-particle duality, core state of quantum mechanics, systemic awareness, decoherence
 
@@ -265,9 +265,52 @@ Wheeler's "It from Bit" becomes "It → Bit → Qubit → It." The qubit is the 
 
 ---
 
-## 8. Predictions and Kill Criteria
+## 8. The Minkowski Reading: The Same Kernel as the Mass-Shell
 
-### 8.1 Predictions
+*(Added 2026-06-11; numerically verified the same day — see the findings ledger, `PEER_REVIEW_PROGRAM/00_FINDINGS_AND_CONJECTURES.md` §2b.)*
+
+### 8.1 A Second Established Carrier
+
+The Bloch reading shows the kernel on a compact carrier (the qubit's S²). There is a second, *non-compact*, equally established object that carries the same kernel exactly: the energy–momentum hyperbola of special relativity.
+
+**Proposition 8.1 (Mass-shell identity) [A].** Let a particle of rest mass m move with rapidity w, and let k = e^w be its relativistic Doppler factor. Set φ = k and ν = 1/k (equivalently, place the particle at colatitude θ with cot(θ/2) = e^w). Then, in units of mc²:
+
+1. φ = (E + pc)/mc² and ν = (E − pc)/mc² — the **null (light-cone) coordinates** of the four-momentum;
+2. φ · ν = 1 ⟺ E² − (pc)² = (mc²)² — **the mass-shell**;
+3. (φ + ν)/2 = cosh w = γ = E/mc² and (φ − ν)/2 = sinh w = pc/mc² — energy is the *arithmetic mean* of the dual pair, momentum the half-difference, and the invariant mass their *geometric mean*;
+4. φ + ν ≥ 2 ⟺ **E ≥ mc²**, with equality iff w = 0 — the equator theorem *is* "rest energy is the energy floor, attained exactly at rest" (AM–GM);
+5. B = sin θ = 2/(φ + ν) = 1/γ = **dτ/dt** — the balance function is the **proper-time rate**.
+
+*Proof.* E = γmc² = mc² cosh w and pc = mc² sinh w are standard **[A]** (Taylor & Wheeler 1992). Then E ± pc = mc²(cosh w ± sinh w) = mc² e^{±w}, giving (1). (2) is (E+pc)(E−pc) = (mc²)² e^{w}e^{−w}, i.e. cosh² − sinh² = 1. (3) is the definition of cosh and sinh. (4) is AM–GM on the pair (φ, ν) with fixed product 1. For (5): φ + ν = cot(θ/2) + tan(θ/2) = 2/sin θ, so sin θ = 2/(φ+ν) = 1/cosh w = 1/γ, and 1/γ = dτ/dt is time dilation **[A]**. ∎
+
+### 8.2 What Each Line of the Kernel Says Here
+
+| Kernel line | Minkowski content | Status |
+|---|---|---|
+| φ · ν = 1 | E² − (pc)² = (mc²)² — the mass-shell hyperbola | **Same** [A] |
+| (φ − ν)² ≥ 0 | (pc)² ≥ 0 — momentum is real | **Same** [A] |
+| φ + ν ≥ 2 | E ≥ mc² — the rest-energy floor | **Same** [A] |
+| The equator (φ = ν = 1) | The rest frame: E = mc², p = 0 | **Same** [A] |
+| The poles | The two null directions — the asymptotes of the hyperbola; light | **Same** [A] |
+| B = sin θ | 1/γ = dτ/dt — the rate of lived (proper) time | **Same** [A] |
+
+Two corollaries the framework already asserted in its own vocabulary, now grounded: "the equator is the only place that costs nothing to hold" is the rest frame as the energy minimum; "the poles cannot act" is **B → 0** as **the photon's clock does not tick** — at the null boundary no proper time passes, so nothing is lived there.
+
+The boundary itself is the degenerate case: a photon (m = 0) sits on no hyperbola of the family but on the null cone where the family collapses — where φ · ν = 1 becomes the indeterminate **0 · ∞**, the frame-register emblem. The massive interior never reaches it at finite rapidity; energy diverges instead (the /4 horn-torus model now runs this exact law: mouth ratio R/r_t = 1/γ).
+
+### 8.3 The Boundary of the Claim
+
+What is **[A]**: the coordinate identities above — the kernel's three lines *are* the three relations of relativistic kinematics in light-cone coordinates. What is **not** claimed: that the kernel *explains* relativity, that coherence and viability *are* E ± pc, or that the identification licenses any physical prediction beyond what special relativity already makes. The generalization of the multiplicative geometry beyond kinematics remains **[S/I]** — and the program's own R6 test records a register (empowerment) where it *fails*. The µ-limit/consciousness conjecture stays fenced at **[C]** (ledger row C-µ).
+
+### 8.4 Why Two Carriers Matter
+
+The kernel now has two independent established carriers: the **compact** qubit (additive unit: |α|² + |β|² = 1, Born) and the **non-compact** mass-shell (multiplicative unit: φ·ν = 1, Minkowski), with the Suda charts supplying the third face (x = k², s = 2w, u = β — the bounded chart *is* the velocity chart). Three independent formalisms landing on one reciprocal-closure grammar is convergence evidence for the *structure*; it is not proof of the *ontology*. **[S]**
+
+---
+
+## 9. Predictions and Kill Criteria
+
+### 9.1 Predictions
 
 | # | Prediction | Test | Tier |
 |---|---|---|---|
@@ -277,8 +320,9 @@ Wheeler's "It from Bit" becomes "It → Bit → Qubit → It." The qubit is the 
 | 4 | NDE phenomenology follows dimensional shutdown sequence D5→D1 | Retrospective NDE data analysis with stage coding | [C] |
 | 5 | Anesthesia emergence follows startup sequence D1→D5 | Prospective measurement of recovery stages | [C] |
 | 6 | The Born rule admits a frame-product-like reading of the inner product with its conjugate | Mathematical/structural check (Proposition 5.2) | [S/I] |
+| 7 | The kernel's three lines are the mass-shell relations in light-cone coordinates (Proposition 8.1) | Direct verification — done 2026-06-11, numeric to 1e-12 | [A] |
 
-### 8.2 Kill Criteria
+### 9.2 Kill Criteria
 
 This paper is falsified if:
 
@@ -290,15 +334,17 @@ This paper is falsified if:
 
 4. The Burri-Bloch distinction (systemic awareness vs. being as two readings of one sphere) is shown to be logically incoherent (the same structure cannot support two readings, or the distinction between "reading" and "structure" is vacuous).
 
+5. A formal error is exhibited in Proposition 8.1 (the mass-shell identification), or the light-cone coordinate reading is shown to require assumptions beyond standard special relativity.
+
 ---
 
-## 9. Conclusion
+## 10. Conclusion
 
 The Bloch sphere has been in every quantum mechanics textbook for almost a century. The poles are labeled |0⟩ and |1⟩. The sphere represents every possible superposition. The Born rule conserves the unit. Measurement collapses the sphere to a pole.
 
 The Burri sphere identifies these as: nothing and something at the poles; the space of possibility on the sphere; φ·ν = 1 as the conservation of the unit; and Zero-Sum Resolution Equation as the operation that produces the definite from the indefinite.
 
-These are the same sphere. The identification requires no new mathematics. It requires a new reading — an ontological reading of a formalism that has been read computationally since 1927.
+These are the same sphere. The identification requires no new mathematics. It requires a new reading — an ontological reading of a formalism that has been read computationally since 1927. And the sphere is not the kernel's only carrier: read in light-cone coordinates of the four-momentum, the same three lines are the mass-shell, the reality of momentum, and the rest-energy floor of special relativity (§8) — the bounded and the unbounded carrier of one reciprocal closure.
 
 If the reading is correct, the measurement problem and wave-particle duality gain a disciplined translation: particle = •, wave = ○, quantum entity = ⊙. The relationship between systemic awareness and physics is then approached through two readings of one sphere (Burri = systemic awareness, Bloch = being), not by claiming that standard physics has already proven the systemic awareness bridge.
 
@@ -322,6 +368,7 @@ Zero-Sum Resolution Equation
 8. Mandukya Upanishad (c. 500 BCE). Trans. Swami Nikhilananda (1949). Ramakrishna-Vivekananda Center.
 9. Penrose, R. (2004). *The Road to Reality*. Jonathan Cape.
 10. Ahlfors, L. V. (1979). *Complex Analysis* (3rd ed.). McGraw-Hill.
+11. Taylor, E. F., & Wheeler, J. A. (1992). *Spacetime Physics* (2nd ed.). W. H. Freeman. (Rapidity, Doppler factor k = e^w, and light-cone coordinates E ± pc.)
 
 ---
 
