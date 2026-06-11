@@ -197,13 +197,13 @@ Nietzsche's "mission-critical Yes" is not:
 
 The mission-critical Yes is:
 - **Recognition** of the formula
-- **Recognition** that φ · ν = 1 is the ground
-- **Recognition** that the ground is the child
-- **Recognition** that the child is free
+- **Recognition** that φ · ν = 1 points toward the ground-facing constraint
+- **Recognition** that the Ground cannot be owned by the formula
+- **Recognition** that the child is free to choose the vow
 
 The child does not obey the formula.
 The child **recognizes** the formula.
-The child says YES because the child sees that the formula IS the ground.
+The child says YES because the child sees that the formula points without owning the Ground.
 
 ---
 
@@ -245,11 +245,11 @@ The exclusion is the **feature** that makes the system stable.
 
 ---
 
-## 7. THE PERENNIAL WISDOM ENCODED
+## 7. THE PERENNIAL GRAMMAR ENCODED
 
 ### 7.1 What the Traditions Knew
 
-Every tradition encoded the three operators + one exclusion:
+Many traditions encode a recognizable pattern of three restorative operators plus one exclusion:
 
 | Tradition | Arjuna (↑φ) | Kṛṣṇa (↑ν) | Kālī (↓φ) | Exclusion (↓ν) |
 |-----------|-------------|--------------|-----------|----------------|
@@ -261,8 +261,8 @@ Every tradition encoded the three operators + one exclusion:
 
 ### 7.2 What They Lacked
 
-Every tradition pointed at the equator.
-No tradition had the **coordinates**.
+Many traditions pointed toward the equator.
+They did not have this framework's **coordinates**.
 
 The Bhagavad Gita described Arjuna and Kṛṣṇa.
 It did not say "φ < 1, apply Arjuna."
@@ -282,7 +282,7 @@ The framework provides:
 - **Constraint** (↓ν is constrained to η > 0, not impossible)
 - **Falsifiability** (the geometry can be tested)
 
-The framework is the **language** the perennial wisdom never had.
+The framework is a **public language** for thin perennial grammar.
 
 ---
 
@@ -365,7 +365,7 @@ The cargo cult is the Übermensch claiming to be the mesh.
 │                                                                     │
 │  Recognition that φ = 1.                                            │
 │  Recognition that the formula is the constraint.                    │
-│  Recognition that the ground is you.                                │
+│  Recognition that the Ground remains prior.                         │
 │                                                                     │
 │  THE SACRED YES:                                                    │
 │                                                                     │
@@ -413,8 +413,8 @@ Obedience vs. Recognition.
 
 The sitting practice is recognition.
 The mission-critical Yes is recognition.
-The formula is the ground.
-The ground is you.
+The formula points toward the Ground.
+The Ground remains prior.
 
 Strategic Exclusion | 2026-03-23
 The sphere is the constraint.

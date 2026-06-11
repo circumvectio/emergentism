@@ -154,6 +154,47 @@ Not the whole sphere.
 Not the whole ground.
 But the place where the sphere becomes sayable.
 
+## One Aporia Under Dasein
+
+There is one interpretive pattern under the paradoxes of Dasein:
+
+> **A coupled unity tries to stand at one of its poles, and the bond will not
+> let it.** `[I]`
+
+This is a structural resonance with Heidegger, not a derivation from him and
+not proof that the framework has exhausted him. The claim is narrower: the
+existential aporias have the same form as reciprocal closure when that closure
+is lived from the inside.
+
+Examples:
+
+- **Thrown yet projecting.** Dasein cannot be pure self-authored freedom
+  (`φ` without `ν`), because birth, body, language, and time are already given.
+  It also cannot be pure facticity (`ν` without `φ`), because it must still
+  project what to make of the given.
+- **Mine yet anonymous.** Dasein cannot become purely its own by leaving the
+  world behind, because ownness without a world becomes sterile abstraction. It
+  cannot dissolve into *das Man*, because anonymous viability without its own
+  projection becomes no one. The self is the bond, not either pole.
+- **Inquirer yet inquired.** Dasein cannot step outside Being to ask the
+  question from nowhere. Understanding is always already coupled to situation:
+  coherence is never free of viability.
+- **Authentic yet social.** Authenticity is not escape from the field. It is
+  re-coupling: the finite witness-agent holds its own projection while remaining
+  situated with others.
+
+So the paradox is not a defect in Dasein. It is the felt interior of the
+equator. From outside, `B = sin θ` names a balance function. From inside, the
+same condition is experienced as tension, care, and decision.
+
+This limit must remain explicit:
+
+> **The lens diagrams what shows. It does not diagram the showing itself.**
+
+The sphere can locate beings, relations, and the finite disclosure-site. It
+cannot possess the clearing in which the sphere itself appears. The Ground
+remains prior.
+
 ---
 
 ## Empirical Observation and the After-Image
@@ -257,7 +298,7 @@ The framework is strongest when it keeps this distinction sharp.
 In the PHI Resolution terms:
 
 - D0-D4 can be read structurally
-- D5 is where the idealist reading becomes active and D6 is where that reading exhausts into closure
+- D5 is where the idealist reading becomes active and D6 is where that reading closes into apophatic boundary
 
 But even there, **Being is not reducible to the psychological stream**.
 Being is what makes any stream possible.

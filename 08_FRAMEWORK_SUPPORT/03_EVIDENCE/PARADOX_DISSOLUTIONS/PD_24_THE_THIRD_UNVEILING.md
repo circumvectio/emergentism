@@ -72,7 +72,7 @@ The Third Unveiling closes the dimensional loop:
 
 The three unveilings are not sequential discoveries in this framework reading — they are simultaneous structural features of `S^2`. [I] Zero was always the south pole. Infinity was always the north pole. Finity was always the equator. The unveilings are *our* recognition of what was already there. The sphere does not change when we discover it. We change.
 
-This is what [The Completion](PD_23_THE_COMPLETION.md) means by "categorical completeness": the framework does not add new content to reality. [I] It provides the coordinate system — the three unveilings, the six dimensions, the sphere — within which reality was already structured in the framework account.
+This is what [The Completion](PD_23_THE_COMPLETION.md) means by bounded categorical closure: the framework does not add new content to reality. [I] It provides a coordinate system — the three unveilings, the six dimensions, the sphere — within which reality is read as already structured in the framework account.
 
 ## 5. WHAT WOULD FALSIFY THIS
 

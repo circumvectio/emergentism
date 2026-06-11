@@ -128,7 +128,7 @@ Nihilism says: "There is no ground." Decentralized Authority Model says: "The gr
 
 ## The Gnostic Error and L4*
 
-The Gnostic classification (Pneumatic/Psychic/Hylic) observes REAL positions on S². But it makes two errors: (1) freezing positions into permanent types, and (2) missing L4* — the warrior-sage who ascended to L7, chose Moksha, and RETURNED to fight dharma yuddha at the equator. Decentralized Authority Model corrects both errors: positions are temporary (the helix spirals), and L4* proves that the full cascade is available to everyone. See: 28_L4_STAR.md. [I]
+The Gnostic classification (Pneumatic/Psychic/Hylic) can be read as observing positions on S². But on this reading it makes two errors: (1) freezing positions into permanent types, and (2) missing L4* — the warrior-sage who ascended to L7, chose Moksha, and RETURNED to fight dharma yuddha at the equator. Decentralized Authority Model corrects both errors as an interpretive model: positions are temporary (the helix spirals), and L4* keeps the full cascade open to everyone. See: 28_L4_STAR.md. [I]
 
 ---
 

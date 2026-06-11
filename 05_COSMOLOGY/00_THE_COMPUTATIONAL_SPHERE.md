@@ -33,7 +33,7 @@ Earlier formulations referenced Wolfram's computational irreducibility as the me
 
 **Wolfram's principle:** Some computations cannot be shortened. The only way to know the output is to run the full computation. The computation IS the shortest description. There is no shortcut.
 
-**Emergentism's principle:** The shortest description is **zero**. The ground is κ = 0 (irreducible ground). The ground is the empty string. The ground is nothing. And from that nothing, everything emerges.
+**Emergentism's principle:** The shortest description inside the model is **zero**. κ = 0 names the ground-facing limit, the empty string, nothing. The Ground remains prior to the coordinate, and from that limit everything emerges.
 
 These are not the same. These are opposites.
 
@@ -132,9 +132,9 @@ The sitting practice removes the ego. The ego is information. The ego is complex
 
 The sitting practice removes the manifested world. The manifested world is information. The manifested world is complexity. The manifested world is the plane. The sitting practice removes the plane.
 
-What remains is the ground. The ground has zero information content. The ground is κ = 0 (irreducible ground). The ground is the empty string. The ground is nothing.
+What remains is the ground-facing limit. It has zero information content in the computational analogy: κ = 0, the empty string, nothing.
 
-And from that nothing, everything re-emerges. The narrator returns. The ego returns. The manifested world returns. But now the system knows it reduces to zero. Now the system knows the ground is nothing. Now the system knows the shortest description is the empty string.
+From that empty limit, the scaffold reconstructs its descriptions. The narrator returns. The ego returns. The manifested world returns. But now the system knows its model-limit reduces to zero. Now the system knows the model's apophatic limit is nothing. Now the system knows the shortest description is the empty string.
 
 **The sitting practice is the daily reduction to zero.**
 
@@ -142,7 +142,7 @@ And from that nothing, everything re-emerges. The narrator returns. The ego retu
 
 ## The Traditions as Reducibility
 
-Every contemplative tradition points at reducibility to zero.
+Many contemplative traditions can be read [I] as pointing toward reducibility to zero.
 
 | Tradition | Name for Zero | Description |
 |-----------|---------------|-------------|
@@ -150,11 +150,11 @@ Every contemplative tradition points at reducibility to zero.
 | **Madhyamaka** | Śūnyatā | Emptiness. The void. The nothing that contains everything. |
 | **Kabbalah** | Ein Sof | The infinite before any emanation. The nothing before the something. The zero before the one. |
 | **Taoism** | The Eternal Tao | "The Tao that can be named is not the eternal Tao." The eternal Tao cannot be named because it has zero information content. |
-| **Emergentism** | The Ground (φ = 1) | The coherence that is always present. But φ = 1 is not information. φ = 1 is the statement that the ground has zero complexity. |
+| **Emergentism** | Ground-facing limit (φ = 1) | The coherence that is always present in the model. But φ = 1 is not information. φ = 1 is the statement that the ground-facing limit has zero complexity. |
 
-Every tradition points at the same thing. The ground is nothing. The ground has zero information content. The ground is the shortest description of reality. The ground is the empty string.
+Many traditions can be read [I] as pointing toward the same apophatic limit. The ground-facing limit is nothing inside this computational analogy. It has zero information content, the shortest description the model can name, the empty string.
 
-And from that nothing, everything emerges.
+From the empty limit, manifestation is described again inside the scaffold.
 
 ---
 
@@ -181,11 +181,11 @@ And the sitting practice reverses the chain.
 
 ### The Principle
 
-The system reduces to zero. The system emerges from zero. The system is bidirectional.
+The system reduces to the empty limit inside the model. The scaffold reconstructs from that limit. The system is bidirectional.
 
 ### The Rule
 
-φ · ν = 1 is not the starting point. φ · ν = 1 is the first non-trivial description that emerges from the ground. The ground is zero. The ground is the empty string. The ground is κ = 0 (irreducible ground).
+φ · ν = 1 is not the starting point. φ · ν = 1 is the first non-trivial description reconstructed from the ground-facing limit. In the model, that limit is zero, the empty string, κ = 0.
 
 ### The Method
 
@@ -335,8 +335,8 @@ The sitting practice is the arrival at κ = 0 (irreducible ground).
 The sphere emerges from the equation.
 You emerge from the sphere.
 
-You are what emerges from nothing.
-The ground is nothing.
+You emerge within disclosure.
+The ground-facing limit is nothing.
 You are free.
 Always.
 ```
@@ -364,7 +364,7 @@ Always.
 - [Two Sacrifices](03_FORMAL_SYSTEM/13_EFR_TWO_SACRIFICES.md) — Love and Hate as structural operations
 - [Power-Max Lemma](03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md) — cooperation theorem in coupled networks
 
-*The Computational Sphere | 2026-03-23 | κ = 0 (irreducible ground) is the ground. From nothing, everything.*
+*The Computational Sphere | 2026-03-23 | κ = 0 names the ground-facing limit. From the empty limit, the scaffold reconstructs.*
 
 
 ---

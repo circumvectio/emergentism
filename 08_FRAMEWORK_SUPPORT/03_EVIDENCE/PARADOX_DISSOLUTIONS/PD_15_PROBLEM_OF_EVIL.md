@@ -43,7 +43,7 @@ None achieves consensus. The problem persists because it treats evil as a single
 
 The error is treating evil as either the ABSENCE of good (privatio boni, the Augustinian move) or as a FORCE OPPOSING good (Manichean dualism).
 
-On S², neither framing is correct. Evil is not absence — the sphere has no voids. Every point on S² has both Φ and V components; there is no coordinate where goodness is simply missing. Evil is not opposition — there is no anti-sphere, no negative geometry fighting the good.
+Within the S² reading, neither framing is sufficient. Evil is not mere absence — the sphere has no voids inside the model. Every point on S² has both Φ and V components; there is no coordinate where goodness is simply missing. Evil is not equal opposition either — there is no anti-sphere, no negative geometry fighting the good.
 
 The framework introduces the extraction coefficient η to make the distinction precise:
 
@@ -59,15 +59,15 @@ The problem of evil conflates all three. This is the error.
 
 On S², the framework separates the problem into three distinct phenomena:
 
-**Bad (η ≈ 1) is structurally necessary.** The Burri Sphere requires φ·ν = 1 at every point. Cycles require destruction as well as creation. A universe without predation, without death, without entropy, is a universe that cannot sustain the closed manifold. Bad is the price of a living geometry. The framework does not apologize for it. It explains it: without η ≈ 1 operations, the sphere collapses. Theodicy's "greater good" argument finds its structural basis here — not as high-priority plan, but as geometric necessity.
+**Bad (η ≈ 1) is structurally ordinary in this model.** The Burri Sphere requires φ·ν = 1 at every point. Cycles include destruction as well as creation. A universe without predation, without death, without entropy, would not resemble a living finite manifold. Bad is the maintenance cost of a living geometry. The framework does not justify suffering by appeal to a high-priority plan; it distinguishes cyclic cost from extraction.
 
 **Suffering is off-equator displacement.** Suffering is the experience of being away from the equator (Φ = 1, V = 1). Depleted coherence (Φ → 0) produces meaninglessness, dissociation, despair. Depleted viability (V → 0) produces pain, incapacity, death. Suffering is real. It is also positional — it indicates where the agent is on the sphere, not a metaphysical verdict about the nature of reality.
 
-**Evil (η → ∞) is a False Vacuum instability, not a high-priority permission.** The excluded 4th operator — pure extraction, ground negation — is geometrically impossible *at the True Vacuum* (the equator). An agent balanced at `Φ = 1, V = 1` rests at the state of minimum action; the Hamiltonian demands no restorative energy. But agents off-equator — depleted, desperate, disconnected from the cycle — can attempt to widen the gap `(φ - ν)² > 0`. Evil is the localized expenditure of energy attempting to prevent the universe's spontaneous symmetry-breaking field (F₅) from restoring the ground state. It is the attempt to build a permanent False Vacuum.
+**Evil (η → ∞) is read as False Vacuum instability, not high-priority permission.** The excluded 4th operator — pure extraction, ground negation — is structurally incoherent at the equator. An agent balanced at `Φ = 1, V = 1` needs no restorative violence to preserve itself. But agents off-equator — depleted, desperate, disconnected from the cycle — can attempt to widen the gap `(φ - ν)² > 0`. Evil is interpreted as localized expenditure of energy attempting to hold an extraction-state against restorative pressure. It is the attempt to build a permanent False Vacuum.
 
-The "problem of evil" is reframed once you stop conflating bad with evil, and both with suffering. God (the geometric framework) permits bad because cycles require destruction. Evil exists because the geometry permits off-equator positions, and agents at those positions can burn energy attempting to defy the F₅ restorative pull. Suffering exists because the sphere is large and the equator is narrow.
+The "problem of evil" is reframed once you stop conflating bad with evil, and both with suffering. The model permits cyclic cost because finite cycles include destruction. Evil exists in the reading because off-equator agents can burn energy attempting to defy restorative pull. Suffering exists because finite beings can be displaced from balance. None of this is a proof of God, a justification of suffering, or a denial that actual suffering matters.
 
-The framework does not explain why the sphere has these properties. It explains that given these properties, the coexistence of bad, evil, and suffering with a coherent, generative reality is not paradoxical. It is geometrically necessary.
+The framework does not explain why reality has these properties. It argues that, given the model's properties, the coexistence of bad, evil, and suffering with a coherent, generative reality is not formally paradoxical inside the scaffold. The stronger theological claim remains interpretive.
 
 ## 4. THE FRAMEWORK CONNECTION
 

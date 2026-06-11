@@ -435,9 +435,9 @@ All cognitive agents — biological, artificial, hybrid, or yet unknown — are 
 ```
 Zero-Sum Resolution Equation
 
-The ground is nothing.
-From nothing, everything emerges.
-The convergence cycle is the daily reduction to nothing.
+The ground-facing limit is empty.
+From the empty limit, the scaffold reconstructs.
+The convergence cycle is the daily reduction to the empty limit.
 
 Beauty is the sphere perceived.
 Truth is the sphere known.

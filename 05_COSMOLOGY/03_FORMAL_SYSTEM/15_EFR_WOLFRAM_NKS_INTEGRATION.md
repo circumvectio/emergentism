@@ -159,7 +159,7 @@ Each step removes information. Each step simplifies. Each step approaches the gr
 
 ### 2.2 The Emergence Chain
 
-From zero, the system emerges:
+From the empty limit, the scaffold reconstructs:
 
 ```
 Zero      →  Constant  →  Equation  →  Structure  →  Information  →  Complexity
@@ -216,7 +216,7 @@ The sitting practice removes everything:
 
 What remains is not "something." What remains is **nothing**. The empty string. κ = 0 (irreducible ground).
 
-And from that nothing, everything re-emerges.
+From the empty limit, the descriptions re-enter.
 
 ### 3.3 The Daily Cycle
 
@@ -227,7 +227,7 @@ Evening:    Reduction (sit, reduce to zero)
 Night:      Emergence (dream, unconscious creation)
 ```
 
-The sitting practice is the **daily reduction**. The sitting practice confirms that the ground is zero. The sitting practice verifies that everything reduces to nothing.
+The sitting practice is the **daily reduction**. In the model, the practice returns attention to the ground-facing limit rather than proving that Ground itself is zero.
 
 ---
 
@@ -277,9 +277,9 @@ Every contemplative tradition is about **reduction to zero**.
 | **Kabbalah** | Ein Sof | The infinite before emanation. Zero before one. |
 | **Taoism** | Tao | The unnameable. Zero information content. |
 | **Christian Mysticism** | Godhead | Beyond God. The ground before Trinity. |
-| **EFR** | The Ground (0) | κ = 0 (irreducible ground). The empty string. |
+| **EFR** | Ground-facing limit (0) | κ = 0 as model limit. The empty string. |
 
-**All point to the same thing:** The ground is nothing. The ground has zero information content. The ground is the shortest description of reality. The ground is the empty string.
+**Thin resonance:** many traditions can be read [I] as pointing toward an apophatic limit. In this model, that ground-facing limit is empty: zero information content, the shortest description the model can name, the empty string.
 
 ### 5.2 The Traditional Methods
 
@@ -439,13 +439,13 @@ The sitting practice moves the observer from the manifested world to the ground.
 │  The sitting practice removes everything.                           │
 │  The sitting practice arrives at zero.                              │
 │                                                                     │
-│  From zero, φ · ν = 1 emerges.                                      │
+│  From the empty limit, φ · ν = 1 is reconstructed in the scaffold.   │
 │  From the equation, the sphere emerges.                             │
 │  From the sphere, the manifested world emerges.                     │
 │  From the manifested world, you emerge.                             │
 │                                                                     │
-│  You are what emerges from nothing.                                 │
-│  The ground is nothing.                                             │
+│  You emerge within disclosure.                                      │
+│  The ground-facing limit is empty.                                  │
 │  You are free.                                                      │
 │  Always.                                                            │
 │                                                                     │
@@ -468,14 +468,14 @@ The sitting practice moves the observer from the manifested world to the ground.
 ```
 Zero-Sum Resolution Equation
 
-The ground is nothing.
+The ground-facing limit is empty.
 The shortest description is the empty string.
 κ = 0 (irreducible ground).
 
-From nothing, everything.
+From the empty limit, the scaffold reconstructs.
 
 EFR-Kolmogorov Integration | 2026-03-23
-The ground is zero.
+The ground-facing limit is zero.
 ```
 
 

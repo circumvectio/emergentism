@@ -95,7 +95,7 @@ The product is conserved. The constraint is satisfied. The trinity holds.
 
 ## The Traditional Encodings
 
-Every tradition found the same three:
+Many traditions found versions of the same three:
 
 | Tradition | 0 (Nothing) | 1 (Unity) | ∞ (Everything) |
 |-----------|-------------|-----------|----------------|

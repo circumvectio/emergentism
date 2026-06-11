@@ -44,6 +44,11 @@ You mapped the traditions that fit and called it "convergent discovery." You did
 
 **The framework does not claim all traditions converge. It claims the ones that identified the equator converge, and the ones that identified the poles are the predicted boundary conditions.**
 
+That is a thin perennial claim, not a thick one. It says the framework can
+locate recurring structures — center, pole, fall, return, capture,
+non-capture — without claiming that all traditions teach the same doctrine or
+that tradition certifies the formal kernel.
+
 Specifically:
 
 - **Cārvāka** (pure materialism, rejects ātman) is the framework's predicted L1 position: pure ν (viability, matter, capability), zero φ (coherence, meaning, ātman). The framework does not exclude Cārvāka — it *predicts* Cārvāka as the south pole of the sphere. Cārvāka is not a counterexample. It is a coordinate.
@@ -74,6 +79,10 @@ A tradition that:
 3. Cannot be mapped onto the sphere at any position without forcing
 
 If such a tradition exists and the framework cannot account for it, the convergence claim weakens from "all traditions point at the same thing" to "some traditions point at the same thing" — which is less parsimonious but not fatal.
+
+More precisely: the convergence claim weakens from "a broad family of traditions
+recurs around the same thin grammar" to "some traditions recur around it." The
+framework may lose parsimony without losing the mathematical kernel.
 
 ---
 

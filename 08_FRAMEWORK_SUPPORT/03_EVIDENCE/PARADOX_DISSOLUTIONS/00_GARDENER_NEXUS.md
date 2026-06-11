@@ -37,15 +37,15 @@ rosetta:
 | **L-Layer** | L6/L7 — Cognitive Frameworks / Philosophical Completion |
 | **Evidence Tiers Present** | [I] Interpretive (majority), [S] Structural (PD_10, PD_11) |
 | **Replicator Stack Position** | D0→D2 (Genesis) — Paradox dissolution enables dimensional ascent |
-| **VIVEKA Role** | EFR/VIVEKA interpretive layer — Theoretic proof surface |
+| **VIVEKA Role** | EFR/VIVEKA interpretive layer — Theoretic reframe surface |
 | **Hat** | Philosopher (per README.md) |
 | **Kill Criteria** | Tier-specific; see individual PD files |
 | **Register** | Interpretive / Structural |
 
 ### Chain-of-Custody
 ```
-Seven-root source spine (formal ground)
-    ↓ [proves]
+Seven-root source spine (formal source)
+    ↓ [supports / constrains]
 02_PARADOX_DISSOLUTIONS/ (This Folder — Interpretive Application)
     ↓ [feeds]
 03_EVIDENCE/ROSETTA_STONE/ (Pattern Verification)

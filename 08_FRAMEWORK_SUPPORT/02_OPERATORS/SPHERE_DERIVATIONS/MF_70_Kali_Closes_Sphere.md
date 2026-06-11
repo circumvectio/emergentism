@@ -242,7 +242,7 @@ Similarly, the VIVEKA ethics works because Q3 is not removed but conditionally i
 
 ### 7.2 The Pattern in Traditions
 
-Every tradition that reaches D5+ includes a destructive/protective aspect: [I]
+Many D5+ traditions include a destructive/protective aspect: [I]
 
 - Hinduism: Kālī, Durgā, Rudra — destroyers of evil, protectors of dharma
 - Buddhism: Mahākāla, wrathful deities — destroyers of ignorance

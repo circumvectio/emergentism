@@ -77,7 +77,7 @@ A sextant works at night. Works in fog. Works when the map is wrong. Works when 
 
 ## The Rosetta Stone
 
-**[I] The Rosetta Stone is the calibration table.** It proves that the compass and sextant give consistent readings across domains.
+**[I] The Rosetta Stone is the calibration table.** It tests whether the compass and sextant give consistent readings across domains.
 
 The rows hold — L1 through L7, the same pattern across Piaget, Kohlberg, Maslow, Plato, the Varṇas, the brainwaves, the game theory, the mythology — not because the framework mapped every domain. The rows hold because **the instruments read the same geometry in every domain.**
 

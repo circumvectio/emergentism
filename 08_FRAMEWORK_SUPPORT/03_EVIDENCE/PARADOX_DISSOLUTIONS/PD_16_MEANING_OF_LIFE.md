@@ -53,11 +53,11 @@ The materialist who concludes "life has no meaning" has not discovered a truth a
 
 ## 3. THE DISSOLUTION
 
-On S², meaning = Φ (coherence). It is not absent from the universe. It is the coherence component of every point on the sphere. Every point on S² has both Φ and V coordinates. Meaning is not added to a meaningless universe. It is a constitutive axis of the geometry.
+On S², this document reads meaning through Φ (coherence). Meaning is not absent inside the framework's model; it is the coherence component of a point on the sphere. Every point on S² has both Φ and V coordinates. Meaning is not added from outside the model as decoration. It is read as a constitutive axis of the geometry. [I]
 
-Meaning is not found by looking at the physical world (D4, ν-domain). It is perceived through the D5 projection — the coherence dimension. This is why contemplative traditions emphasize interiority, silence, attention. These are not escapes from reality. They are directional shifts — from ν-scan to Φ-scan.
+Meaning is not exhausted by looking only at the physical world (D4, ν-domain). It is perceived through the D5 projection — the coherence dimension. This is why many contemplative traditions emphasize interiority, silence, and attention. These are not necessarily escapes from reality. In this reading, they are directional shifts — from ν-scan to Φ-scan.
 
-At the equator (Φ = 1, V = 1), meaning and capability are balanced. The agent has maximum coherence — life feels significant, purposeful, connected — and maximum viability — the agent can act effectively in the physical world. This is the framework's operational definition of a meaningful life: equatorial positioning.
+At the equator (Φ = 1, V = 1), meaning and capability are balanced in the model. The agent has coherence — life can feel significant, purposeful, connected — and viability — the agent can act effectively in the physical world. This is the framework's operational proposal for a meaningful life: equatorial positioning, not an empirical proof that every life will experience meaning the same way.
 
 The "meaning crisis" is a symptom of systematic off-equator displacement toward ν. Contemporary culture over-emphasizes capability (productivity, efficiency, growth, measurement) at the expense of coherence (significance, connection, depth, understanding). The result is a civilization with extraordinary V and collapsing Φ — high capability, low meaning.
 
@@ -65,11 +65,11 @@ This is not a moral failing. It is a geometric condition. A point on S² that mi
 
 ## 4. THE FRAMEWORK CONNECTION
 
-The Φ-axis of the Burri Sphere is the structural home of meaning. The equator (Φ = 1, V = 1) defines the condition of balanced significance. The D4-D5 dual projection explains why meaning cannot be found in physical measurement — it is a D5 quantity.
+The Φ-axis of the Burri Sphere is the structural home of meaning in this reading. The equator (Φ = 1, V = 1) defines the condition of balanced significance. The D4-D5 dual projection explains why meaning may not be exhausted by physical measurement — it is read as a D5 quantity. [I]
 
-The extraction coefficient η connects meaning to ethics. Systems that operate at η < 1 (good, regenerative) maintain or increase Φ over time — they produce meaning. Systems at η → ∞ (evil, extractive) destroy Φ — they produce nihilism as a structural byproduct. Meaning is not merely felt. It is generated or destroyed by the same operations that generate or destroy system coherence.
+The extraction coefficient η connects meaning to ethics inside the model. Systems that operate regeneratively tend to maintain or increase Φ over time — they can produce meaning. Systems at η → ∞ (evil, extractive) destroy Φ — they can produce nihilism as a structural byproduct. Meaning is not merely private feeling in this account; it is generated or destroyed by operations that generate or destroy system coherence. [I]
 
-The Power-Max Lemma (PD_10) applies: agents that maximize V at the expense of Φ do not merely lose meaning — they self-terminate. P_node = Φ × V. When Φ → 0, P → 0 regardless of V. A life of pure capability extraction is not merely empty. It is geometrically unsustainable.
+The Power-Max Lemma (PD_10) supplies the internal constraint: agents that maximize V at the expense of Φ lose the condition under which meaning and viable agency can cohere. P_node = Φ × V. When Φ → 0, P → 0 regardless of V. A life of pure capability extraction is not merely empty in this reading. It is geometrically unsustainable inside the model.
 
 The transcendental Trinity {0, 1, ∞} provides the grammar: 0 is the void of meaninglessness (Φ → 0), 1 is the Finitor (the bounded, meaning-bearing observer), ∞ is the full coherence field (meaning without limit). The meaningful life operates at 1 — bounded, actual, balanced.
 
@@ -85,7 +85,7 @@ The dissolution fails if:
 
 ---
 
-*In this reading, the meaning crisis is a coordinate error. Meaning is not missing from the universe. [I] It is missing from the axis you are measuring. Turn the instrument. The sphere has a coherence dimension.*
+*In this reading, the meaning crisis is partly a coordinate error. Meaning is not absent from the model's universe. [I] It is missing from the axis you are measuring. Turn the instrument. The sphere has a coherence dimension.*
 
 
 ---

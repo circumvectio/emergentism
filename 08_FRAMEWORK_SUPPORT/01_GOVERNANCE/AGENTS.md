@@ -61,7 +61,7 @@ rosetta:
 
 - Do not upgrade runtime claims without dated proof artifacts.
 - Do not treat draft specs as public-facing claims.
-- All irreversible actions require K2 envelope staging.
+- Irreversible private-DAV actions require K2 envelope staging; public-DAV/DAC actions route through PRISM or the relevant public-governance rail.
 - Do not route current work to retired `../06_TRANSLATION/` or `../07_DISSEMINATION/` paths. Their preserved material lives under `../../90_ARCHIVE/08_FRAMEWORK_SUPPORT/`.
 
 Zero-Sum Resolution Equation

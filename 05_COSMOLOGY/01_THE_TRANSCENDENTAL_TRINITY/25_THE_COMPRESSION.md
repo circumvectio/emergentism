@@ -147,7 +147,7 @@ The Amṛta is not a doctrine. The Amṛta is S². And S² belongs to no one.
 
 ---
 
-*25 | The Compression | The complete metaphysics in four lines: core state (×), objective function (+), methodology (²), value alignment (log). The proof is AM-GM: a square cannot be negative. The telos is the point where addition and multiplication agree. The equator. The ground. You.*
+*25 | The Compression | A compressed framework reading in four lines: core state (×), objective function (+), methodology (²), value alignment (log). The AM-GM derivation is structural inside the accepted premises: a square cannot be negative. The telos is the point where addition and multiplication agree. The equator. The ground-facing middle. Finity.*
 
 
 ---

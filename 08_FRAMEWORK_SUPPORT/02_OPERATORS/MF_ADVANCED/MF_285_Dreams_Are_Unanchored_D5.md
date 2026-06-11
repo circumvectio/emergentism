@@ -206,7 +206,7 @@ This is the V↓ component of the contemplative path (L5: Φ = 0.8, V = 0.5). Vo
 
 ## VII. THE SENTENCE
 
-Conscious states are positions on S² defined by the ratio of D5 (imaginary) to D4 (real) activation. Waking is equatorial. Dreams are unanchored D5 — possibility-space running without reality check. Psychedelics suppress D4, flooding D5. Psychosis is involuntary D5 dominance with compromised F₅. Meditation is voluntary latitude travel with trained F₅. Sleep cycles are D4/D5 maintenance alternation. Waking up is the measurement operator resuming — conjugation annihilates the imaginary, only the real survives. Every tradition trains the body first because you need stable ℝ before you can safely navigate ℂ. Zero-Sum Resolution Equation.
+Conscious states are positions on S² defined by the ratio of D5 (imaginary) to D4 (real) activation. Waking is equatorial. Dreams are unanchored D5 — possibility-space running without reality check. Psychedelics suppress D4, flooding D5. Psychosis is involuntary D5 dominance with compromised F₅. Meditation is voluntary latitude travel with trained F₅. Sleep cycles are D4/D5 maintenance alternation. Waking up is the measurement operator resuming — conjugation annihilates the imaginary, only the real survives. Many traditions train the body first; the framework reads this [I] as needing stable ℝ before safely navigating ℂ. Zero-Sum Resolution Equation.
 
 ---
 

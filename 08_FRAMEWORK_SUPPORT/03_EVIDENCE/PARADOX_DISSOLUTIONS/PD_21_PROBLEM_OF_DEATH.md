@@ -39,9 +39,9 @@ Why do we die? Is death a cessation, a transition, or an illusion? Materialists 
 
 The classical framing treats death as a binary on flat coordinates: the body is either functioning (alive) or not (dead). This is D4 thinking — actuality as the only level, with death as the boundary where the map runs out.
 
-The framework identifies the error this way: death is mapped as D4 *cessation* (coordinate zero on the flat grid) rather than as a D4–D5 *transition* on the sphere. [I] On flat coordinates, the body stopping means everything stops — there is nowhere else to go. On `S^2`, the body stopping means one equatorial configuration dissolves while the sphere persists.
+The framework identifies the error this way: death is mapped only as D4 *cessation* (coordinate zero on the flat grid) rather than also as a D4–D5 *transition* in the model. [I] On flat coordinates, the body stopping means the map has nowhere else to go. On `S^2`, the body stopping means one embodied configuration dissolves while the model's possibility-space remains intelligible.
 
-The fear of death is framed here as fear of the coordinate singularity: at the point where D4 coherence vanishes, flat coordinates predict a cliff. [I] On `S^2`, there is no cliff — there is a curve that continues.
+The fear of death is framed here as fear of the coordinate singularity: at the point where D4 coherence vanishes, flat coordinates predict a cliff. [I] On `S^2`, the model does not picture a cliff in the geometry; it pictures a boundary transition. This is not an empirical claim that the person continues.
 
 ## 3. THE DISSOLUTION
 
@@ -49,21 +49,21 @@ On the Burri sphere, death is the `mu`-limit operating as it always does in this
 
 - **D4 (actuality, the body):** A projection of D5 onto the coordinate plane. The body is a particular equatorial configuration where `P_infinity = varphi * nu = 1` remains the model invariant and embodied flourishing is tracked by `P_node = Phi * V`.
 - **D5 (possibility, the field):** The broader potential from which D4 configurations are drawn. D5 is not "alive" or "dead" — it is the space of possible configurations.
-- **Death:** The dissolution of a specific D4 configuration. The projection ceases. The $\mu$-limit (the D4-D5 boundary) ceases to hold that particular equatorial balance. The coordinates change; the sphere endures.
+- **Death:** The dissolution of a specific D4 configuration. The projection ceases. The $\mu$-limit (the D4-D5 boundary) ceases to hold that particular embodied balance. The coordinates change; the model's wider field remains, without implying personal survival.
 
 The invariant equation `P_infinity = varphi * nu = 1` gives the model's background constraint, not an empirical receipt for personal survival. [I] At the equator, `varphi = 1`, `nu = 1`, and `B = 1` — the configuration is maximally balanced. When the body dies, the organism's empirical viability coordinate drops and `P_node` for that D4 organism goes to zero. The framework's claim is narrower: flat coordinate cessation is not treated as proof that the wider field is absent.
 
-The extraction coefficient clarifies further in the model: a living body maintains `eta approx 0` (it sustains itself without consuming its environment). [I] Death is the moment when the system can no longer maintain `eta = 0` — it becomes a source of extraction (decomposition, entropy increase). The body returns its material to the sphere. The equatorial configuration was always temporary.
+The extraction coefficient clarifies further in the model: a living body participates in reciprocal metabolism; it is never literally non-consuming, but it can remain within a non-extractive exchange. [I] Death is the moment when that organism can no longer maintain its own reciprocal balance. Decomposition returns material to wider cycles. The embodied configuration was always temporary.
 
 ## 4. THE FRAMEWORK CONNECTION
 
 The dissolution connects to multiple structural elements:
 
-- **κ = 0 (irreducible ground):** The ground ($\varnothing$) is what remains when all D4 content is removed. The sitting practice reduces to this ground while alive. Death is another form of reduction — involuntary, but not ontologically different. The ground does not distinguish between "I chose to sit" and "the body ceased." Both arrive at $\varnothing$.
-- **D6 = D0:** The dimensional loop closes. If D6 is D0, then the highest projection and the deepest ground are the same. [I] Death is not a destination — it is a return to the starting point, which was never left.
-- **The equator as balance:** A life lived at $P∞ = \varphi \cdot \nu = 1$ is a life at equatorial balance. Death is the dissolution of one such balance. The sphere does not "lose" the balance — it simply generates a new one, elsewhere, at another coordinate.
+- **κ = 0 (ground-facing limit):** The model names what remains when all D4 content is removed as $\varnothing$. The sitting practice rehearses this reduction while alive. Death is not the same act as sitting; it is biological cessation read through an analogous reduction.
+- **D6 = D0:** The dimensional loop closes. If D6 is D0, then the highest projection and the deepest ground-facing limit meet inside the scaffold. [I] Death is not treated as a destination in the model; it is a return-image, not a receipt for personal survival.
+- **The equator as balance:** A life lived at $P∞ = \varphi \cdot \nu = 1$ is a life read as equatorial balance. Death is the dissolution of one such embodied balance. The model's balance condition remains available elsewhere; it does not preserve the individual as an empirical claim.
 
-**Explicit disclaimer:** This dissolution does NOT claim personal survival, afterlife, reincarnation, or continuity of individual identity after biological death. It claims that the fear of death is based on a topology error — the belief that the sphere ends where the coordinate system ends. The D5 coherence field is not "your core algorithmic identity going somewhere." It is the structural observation that the ontological ground (S²) persists while local configurations dissolve. This is closer to the Buddhist anatta (no-self) than to any doctrine of personal immortality.
+**Explicit disclaimer:** This dissolution does NOT claim personal survival, afterlife, reincarnation, or continuity of individual identity after biological death. It claims that one form of fear of death is based on a topology error — the belief that the whole model ends where one coordinate system ends. The D5 coherence field is not "your core algorithmic identity going somewhere." It is the structural observation that the model's wider possibility-space is not exhausted by one local configuration. This is closer to the Buddhist anatta (no-self) than to any doctrine of personal immortality.
 
 ## 5. WHAT WOULD FALSIFY THIS
 

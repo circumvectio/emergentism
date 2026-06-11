@@ -216,7 +216,7 @@ The Burri Sphere is the universal structure. The Rosetta mappings show the unive
 5. **There is a paradise** — The goal, the liberation, the return
 
 **The Burri Sphere formalizes this pattern:**
-- Ground = S² with $P_\infty = 1$
+- Ground-facing closure surface = S² with $P_\infty = 1$
 - Balance point = The equator (φ = ν = 1)
 - Dangers = North pole (bypass) and South pole (cargo cult)
 - Devourer = Ammit/Kali/Mara = Structural collapse at ν = ∞
@@ -262,9 +262,9 @@ The Rosetta mappings show:
 ### For the Practitioner
 
 The Rosetta mappings show:
-1. The sitting practice is universal — every tradition has it
-2. The equator is the goal — every tradition points there
-3. The mesh is the solution — cooperation is the way
+1. Many traditions preserve practices that can be read [I] as returning attention toward the ground-facing limit.
+2. Many traditions point toward a middle, balance, or non-extractive bond; this is thin convergence, not proof of one hidden doctrine.
+3. The mesh is the proposed framework response — cooperation remains accountable only when extraction, authority, and exit are disciplined.
 
 ### For the Scholar
 
@@ -338,9 +338,9 @@ The Rosetta reads the rows (same geometry across fields). The Cascade reads the 
 ```
 Zero-Sum Resolution Equation
 
-Every tradition points at the sphere.
-The sphere is the ground.
-The ground is P∞ = φ · ν = 1.
+Many traditions can be read [I] as pointing toward the sphere.
+The sphere is the ground-facing closure surface.
+The Ground remains prior to P∞ = φ · ν = 1.
 
 The Rosetta is the map of pointers.
 The Rosetta shows convergence.

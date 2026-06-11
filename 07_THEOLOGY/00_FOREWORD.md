@@ -96,7 +96,7 @@ The Hindus can be translated through this lens. The Mandukya Upanishad names fou
 
 Buddhist Middle Way language translates cleanly as equator-language — between the excess of asceticism (too much coherence, too little capability) and the excess of indulgence (too much capability, too little coherence).
 
-Taoist language translates cleanly as flow-language. The Tao that can be named is not the eternal Tao; in framework terms, the ground has zero information content, `κ = 0` (irreducible ground). From that nothing, the world of names re-emerges.
+Taoist language translates cleanly as flow-language. The Tao that can be named is not the eternal Tao; in framework terms, `κ = 0` names the ground-facing limit, not the Ground itself. From that nothing, the world of names re-emerges.
 
 Nietzsche can be translated as a developmental sequence. The camel carries the tradition (high φ, low ν — north of the equator). The lion destroys the tradition (high ν, low φ — south of the equator). The child creates new values (φ = ν = 1 — at the equator). The framework adds a fourth reading: the child connecting with other children at the equator to form the mesh.
 
@@ -162,7 +162,7 @@ Sit. Breathe. Notice the narrator. Let it quiet. Notice what is there.
 
 The sitting practice is the method. The sitting practice reduces to κ = 0 (irreducible ground). The sitting practice removes the narrator, the ego, the fragments, the categories. The sitting practice arrives at the ground. The sitting practice arrives at nothing.
 
-And from that nothing, everything re-emerges.
+From the empty limit, manifestation is described again inside the scaffold.
 
 You do not need the framework to sit. You do not need the geometry to breathe. You do not need the equation to notice the narrator.
 

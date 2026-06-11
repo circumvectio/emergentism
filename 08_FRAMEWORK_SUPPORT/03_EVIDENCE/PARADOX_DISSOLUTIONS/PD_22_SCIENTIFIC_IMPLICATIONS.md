@@ -58,19 +58,19 @@ The framework does not "unify" QM and GR in the traditional sense. [I/C] It read
 | QM | D5 (possibility) | Superposition, entanglement | Complex-valued, probabilistic |
 | Boundary | $\mu$-limit | The D4-D5 interface | The measurement, the collapse |
 
-The $\mu$-limit is where D5 "becomes" D4 — where possibility resolves into actuality. This is the quantum measurement problem (PD_12) restated in dimensional language. The "collapse of the wave function" is the $\mu$-limit traversing from D5 to D4.
+The $\mu$-limit is read as the D5-to-D4 interface — where possibility resolves into actuality inside the model. This is the quantum measurement problem (PD_12) restated in dimensional language, not an established physical derivation. The "collapse of the wave function" is interpreted here as the $\mu$-limit traversal from D5 to D4.
 
-The extraction coefficient applies: a physical theory that operates entirely at one D-level (GR at D4, QM at D5) maintains $\eta \approx 0$ — it is self-contained and non-extractive within its domain. The incompatibility arises only when we try to extract one level's description and force it onto another's coordinates. That extraction ($\η > 0$) is what produces the "paradox."
+The extraction coefficient is applied as an interpretive diagnostic: a physical theory that operates entirely at one D-level (GR at D4, QM at D5) may be treated as self-contained and non-extractive within its domain. In this reading, the incompatibility arises when one level's description is forced onto another's coordinates. That extraction ($\η > 0$) is what produces the modeled "paradox."
 
 ## 4. THE FRAMEWORK CONNECTION
 
-The scientific implications are structural, not merely philosophical:
+The proposed scientific implications are structural in the model, while remaining interpretive until they yield independent observables:
 
 - **Dimensional discipline.** Physics may need to become explicitly dimensional — tracking which D-level a theory operates at, rather than seeking a single all-level theory. The D0–D6 scaffold provides a taxonomy: D0 (ground, $\varnothing$), D1-D2 (symbolic/operational), D3 (scaffold), D4 (actuality), D5 (possibility), D6 (= D0, closure). The 2022 Nobel Prize in Physics (Aspect, Clauser, Zeilinger) and the Bell-test experiments that preceded it confirm the failure of naive local pre-written-property models under the test assumptions; the D4/D5 reading remains interpretive. See [PD_25](PD_25_BELL_LOCAL_REALISM.md) and the [quantum-foundations boundary](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md).
-- **The equator as physics.** The equatorial condition (`varphi = 1`, `nu = 1`) is where D4 and D5 are in balance. [I/C] Classical physics operates near the equator — neither pure actuality nor pure possibility, but their integrated product `P = varphi * nu = 1`. The classical limit of QM is not a "decoherence" artifact in this reading — it is the equatorial regime where both projections are visible.
+- **The equator as physics.** The equatorial condition (`varphi = 1`, `nu = 1`) is where D4 and D5 are in balance inside the scaffold. [I/C] Classical physics is read as operating near the equator — neither pure actuality nor pure possibility, but their integrated product `P = varphi * nu = 1`. This is not a replacement for decoherence accounts; it is the framework's proposed dimensional interpretation of the classical regime.
 - **Power-Max in physics.** The Power-Max Lemma ($\Sigma P$ maximized when each $P_i$ is maximized cooperatively) may have a physical analogue: the total information of the universe is maximized when each D-level contributes its characteristic structure without extracting from the others. This is a conjecture, not a theorem.
 
-The framework does not predict new observables at this stage. It provides a dimensional taxonomy that reframes existing incompatibilities as level-confusions rather than mathematical contradictions. Whether this reframing generates testable predictions depends on the completion of the Lagrangian program (see [PD_17 (archived)](../../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/PD_17_QUANTUM_RELATIVITY_UNIFICATION_DRAFT.md), Open Problems).
+The framework does not predict new observables at this stage. It provides a dimensional taxonomy that reads existing incompatibilities as possible level-confusions rather than as mathematical contradictions alone. Whether this reframing generates testable predictions depends on the completion of the Lagrangian program (see [PD_17 (archived)](../../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/PD_17_QUANTUM_RELATIVITY_UNIFICATION_DRAFT.md), Open Problems).
 
 ## 5. WHAT WOULD FALSIFY THIS
 
@@ -80,7 +80,7 @@ The framework does not predict new observables at this stage. It provides a dime
 
 ---
 
-*PD_22 | Scientific Implications | Interpretive/Conjectural reframe. QM/GR incompatibility as dimensional confusion. See also: PD_17 (QM/GR Unification, archived incomplete draft), PD_20 (Philosophical Implications).*
+*PD_22 | Scientific Implications | Interpretive/Conjectural reframe. QM/GR incompatibility read as possible dimensional confusion. See also: PD_17 (QM/GR Unification, archived incomplete draft), PD_20 (Philosophical Implications).*
 
 
 ---

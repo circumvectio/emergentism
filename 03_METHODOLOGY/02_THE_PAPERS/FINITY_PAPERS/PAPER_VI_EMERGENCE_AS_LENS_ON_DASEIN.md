@@ -49,9 +49,34 @@ This is not a claim that emergence is "explained away" by the loop. It is a clai
 
 ### 1.2 Dasein as emergent being
 
-Heidegger's *Dasein* — being-there, being-in-the-world — is standardly read as existential phenomenology. The framework reads it as **emergent ontology**: Dasein is not a substance that happens to be in a world; it is the **loop itself** localized — the phase-dynamic structure `E→M→L→I→Q→E` instantiated at the scale of a finite cognizer `[I]`.
+Heidegger's *Dasein* — being-there, being-in-the-world — is standardly read as existential phenomenology. The framework reads it as **emergent ontology**: Dasein is not a substance that happens to be in a world, and it is not the loop as an object. It is the finite disclosure-site where the phase-dynamic structure `E→M→L→I→Q→E` is lived at the scale of a finite cognizer `[I]`.
 
 On this reading, the "there" of Dasein is not a spatial location but a **phase-position**: the place in the loop where the upward and downward traversals intersect, where the world enters cognition and cognition re-enters the world. The equator `⊙` (`x = 1`, `s = 0`) is the structural image of this intersection: the locus where the small-large exchange leaves the loop fixed, where being and knowing are in maximal equilibrium `[I]`.
+
+### 1.3 The one aporia under Dasein `[I]`
+
+The sharper claim is not that Dasein simply "is the loop itself." That phrasing
+risks making Dasein too diagrammatic. The cleaner formulation is:
+
+> **Dasein is the lived interior of coupled tension.** `[I]`
+
+Every major aporia repeats one form: a coupled unity tries to stand at one of
+its poles, and the law of the bond will not let it. Thrownness without
+projection becomes alibi; projection without thrownness becomes sterile
+self-authorship. Ownness without the world becomes abstraction; absorption in
+*das Man* becomes nobody. Inquiry tries to stand outside Being, but the
+inquirer is already inside the question being asked.
+
+Thus `φ · ν = 1` is not proposed here as a derivation of Heidegger. It is an
+interpretive lens for the form of the aporias: coherence and viability cannot
+be separated without killing the very phenomenon to be understood. From the
+outside, `B = sin θ` names a balance maximum. From inside Dasein, that same
+condition appears as care, anxiety, being-toward-death, and the need for
+resolute action.
+
+The limit is essential. The lens locates the clearing; it does not exhaust it.
+The seer is not placed on the sphere by being named in the framework. The
+sphere is one of the disclosed, and the Ground remains prior.
 
 ---
 

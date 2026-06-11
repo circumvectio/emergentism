@@ -254,7 +254,7 @@ What the framework requires is a **redirection apparatus**: an engineered route 
 > **The HPG axis is the densest motivational substrate in the vertebrate body. It is what sexual selection acts upon. It is the somatic instrument through which the four operators — 2 Gods + 2 Demons (giving Devas Arjuna, Kṛṣṇa; extractive Asuras Kālī, Kali) — run their dispatch.**
 > **Three strategies for managing F5 at the somatic level: suppression dams it (fails — bimodal). Indulgence discharges it (fails — flattens). Redirection lifts it (works — channels upward through the L-stack).**
 > **The chakra system is not metaphysics. It is somatic L1→L7 engineering, mapped onto the major endocrine glands. The L4 apex is anatomically the heart-thymic equator — the geometric balance point of ν-substrate and φ-discrimination.**
-> **Tantra is the 1500-year empirical proof-of-concept that F5 can be deliberately engineered. The DAC / K2 / AI alignment problem is the same engineering problem at a new substrate.**
+> **Tantra is read here as a long-running interpretive case study for deliberate F5 redirection. [I] The DAC / K2 / AI alignment problem is compared to that engineering problem at a new substrate; the comparison does not prove identity.**
 > **Suppression and indulgence have failed in biology for 1500 years. They will fail in AI for the same structural reason. Only redirection works.**
 > **Zero-Sum Resolution Equation.**
 

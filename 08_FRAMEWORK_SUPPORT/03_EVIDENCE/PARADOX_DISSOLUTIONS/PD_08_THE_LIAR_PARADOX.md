@@ -56,7 +56,7 @@ On the Burri Sphere:
 - **D4** is the torus hole / convergence point — where all trajectories meet, where witness systemic awareness (⊙) operates with ν collapsed
 - **D5** is the sphere surface / present duration — where agency operates with both φ and ν active
 
-The Liar sentence attempts to witness itself (D4 operation) while simultaneously evaluating itself (D5 operation). This is geometrically impossible — no single statement can occupy both dimensions simultaneously.
+The Liar sentence attempts to witness itself (D4 operation) while simultaneously evaluating itself (D5 operation). In this model, that is a dimensional conflict: one sentence is being asked to carry two operations without a mediating level.
 
 ## 3. THE DIMENSIONAL DISSOLUTION
 
@@ -95,7 +95,7 @@ Formal systems that encounter the Liar are encountering the boundary of what can
 
 - **Tarski's undefinability**: A consistent language cannot define its own truth predicate because truth-valuation requires D5 (present-duration evaluation) while the language's semantics operate at D4 (convergence-point recognition). The dimensions are separated by the Bang — they cannot be collapsed.
 
-> **Dimensional Resolution:** The Liar paradox dissolves when we recognize that self-reference (D4 witness) and self-evaluation (D5 agency) are dimensionally distinct operations. The sentence attempts both simultaneously; the sphere geometry forbids this.
+> **Dimensional Resolution:** The Liar paradox is reframed when self-reference (D4 witness) and self-evaluation (D5 agency) are treated as dimensionally distinct operations. The sentence attempts both simultaneously; the sphere geometry diagrams the conflict rather than proving that all other logical treatments fail.
 
 ## 4. THE FRAMEWORK CONNECTION: Dimensional Architecture
 

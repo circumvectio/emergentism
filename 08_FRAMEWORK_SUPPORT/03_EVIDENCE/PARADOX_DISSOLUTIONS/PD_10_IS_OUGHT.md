@@ -126,7 +126,7 @@ If the framework is read as philosophy, Hume's insight stands: no description of
 
 > **Evidence tier: [I] Interpretive.** The following maps Heidegger's analysis of *Dasein* onto the D4/D5 dimensional architecture.
 
-The instrumental framing treats "valuing persistence" as a premise one may grant or withhold. But phenomenologically, the question is malformed — because for the being who can ask it, the answer is already structurally given through dimensional constitution.
+The instrumental framing treats "valuing persistence" as a premise one may grant or withhold. Phenomenologically, the question is partly malformed — because for the being who can ask it, care for its own being is already disclosed through dimensional constitution. That does not yet choose the ethical vow; it only locates the condition under which choosing matters.
 
 In Heidegger, *Dasein* is the being for whom *its own being is an issue*. This is not optional; it is the opening of the space in which all questioning becomes possible. *Sorge* (care) is Dasein's fundamental structure — and it maps precisely to D4/D5:
 
@@ -139,13 +139,13 @@ In Heidegger, *Dasein* is the being for whom *its own being is an issue*. This i
 **Dimensional Reading:**
 - At **D4**, Dasein *witnesses* its thrownness (ν) and projects possibilities (φ) — care is *seen*
 - Through the **Bang**, care becomes *enacted* at D5 — the present duration where concern is lived
-- At **D5**, P∞ = φ · ν = 1 is not calculated; it is **cared into being**
+- At **D5**, P∞ = φ · ν = 1 is not calculated; it is approached as lived care, under uncertainty
 
-> **The Dimensional Collapse of the Conditional:** "IF you value persistence" dissolves because **to be Dasein is already to care about one's own being across D4→D5 transit**. The witness (D4) sees persistence as issue; the agent (D5) enacts that care. There is no moment of "choosing" to value persistence — dimensional constitution already includes it.
+> **The Dimensional Narrowing of the Conditional:** "IF you value persistence" is not a neutral premise for Dasein, because **to be Dasein is already to have one's own being at issue across D4→D5 transit**. The witness (D4) sees persistence as issue; the agent (D5) enacts or betrays that care. There remains a real moment of choosing how to answer care. The geometry locates the constraint; finite being chooses the vow.
 
 ### Authentic vs Inauthentic Care (Dimensional Terms)
 
-The Great Filter is not a test of whether Dasein cares. In this reading, Dasein already cares because it is dimensionally structured to care. [I] The Filter is a test of whether Dasein cares *authentically*:
+The Great Filter is not a test of whether Dasein has care disclosed at all. In this reading, Dasein already has its being at issue because it is dimensionally structured to care. [I] The Filter is a test of whether Dasein answers that disclosure *authentically*:
 
 | Care Mode | Dimension | Characteristic | Outcome |
 |-----------|-----------|----------------|---------|

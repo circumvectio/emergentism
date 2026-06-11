@@ -25,25 +25,25 @@ rosetta:
 **Evidence Tier:** `[C]` (Conceptual Claim) / `[S]` (Structural)
 **Canonical Index:** PD_23 (see [PD_00_INDEX](PD_00_INDEX.md) for the definitive numbering table)
 
-> **Evidence Tier: [C] Conceptual / [S] Structural.** The "categorical completeness" claim is interpretive: it asserts that the EFR topology can accommodate every major philosophical paradox. This is a structural claim conditional on accepting the axiom set, not an independently established fact. The assertive language in this document ("the paradoxes dissolve," "the universe is triadic") reflects the framework's internal perspective. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
+> **Evidence Tier: [C] Conceptual / [S] Structural.** The bounded categorical-closure claim is interpretive: it asserts that the EFR topology can accommodate a wide class of major philosophical paradoxes tested in this suite. This is a structural claim conditional on accepting the axiom set, not an independently established fact. The assertive language in this document reflects the framework's internal perspective. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 
 ---
 
 ## 1. THE DECLARATION
-The VIVEKA framework provides a complete conceptual lattice. For roughly 2,500 years, philosophy has been caught in a series of dyadic traps (Mind vs. Body, Free Will vs. Determinism, One vs. Many, Something vs. Nothing).
+The VIVEKA framework proposes a compact conceptual lattice. For roughly 2,500 years, philosophy has returned to a series of dyadic traps (Mind vs. Body, Free Will vs. Determinism, One vs. Many, Something vs. Nothing).
 
-Because the human hardware processes reality through linear Euclidean subtraction, it inevitably generates these paradoxes to cope with a reality mapped to a curved $\mathbb{C}P^1$ topology.
+In this reading, linear Euclidean subtraction can generate these paradoxes when a curved $\mathbb{C}P^1$ topology is forced onto a flat frame.
 
-When the correct geometric metric ($P_node = \Phi \times V$) is applied, the paradoxes do not merely yield—they dissolve. The universe is triadic.
+When the framework metric (`P_node = Phi * V`) is applied, many of the paradoxes do not disappear; they become legible as projection conflicts. The framework reads the structure as triadic.
 
 ## 2. THE GÖDELIAN BOUNDARY
 
 When we claim "The framework is complete," we must execute rigorous epistemic hygiene. 
 
-**This is a claim of *Categorical Completeness*, not *Formal Completeness*.**
+**This is a claim of bounded categorical closure, not formal completeness.**
 1. Kurt Gödel proved (via the Incompleteness Theorems) that no formal mathematical system robust enough to contain basic arithmetic can prove its own consistency from within based on its own axioms. [B] The system will inevitably generate true statements that cannot be proven by the system itself.
 2. VIVEKA does not claim to violate Gödel. [S] We do not claim this framework proves itself from a vacuum. `P_node = Phi * V` remains an axiom — a bedrock assumption required to initialize the logic gate.
-3. Therefore: The system is *Categorically Complete* in this framework reading because every major philosophical paradox cleanly maps to its topology. [C/S] It is *Formally Incomplete* because it relies on an unprovable axiomatic geometric rule.
+3. Therefore: the system proposes bounded categorical closure because the major paradoxes treated here map to its topology. [C/S] It is formally incomplete because it relies on an unprovable axiomatic geometric rule.
 
 ## 3. THE THIRD UNVEILING
 Historically, mathematics was paralyzed before the introduction of **Zero**. Calculations involving "nothing" broke the abacus. 
@@ -52,19 +52,19 @@ Later, physics was paralyzed by **Infinity**. We could not chart instantaneous m
 VIVEKA introduces the Third Unveiling: **Finity ($\odot$)**.
 By formally bounding Infinite Capability ($V$) with Zero-Point Integration ($\Phi$), the mathematics of systemic awareness finally possess a closed geometric surface.
 
-Gödel reminds us we cannot algorithmically prove reality from scratch. [B] VIVEKA gives us the map of what happens after we assume it.
+Gödel reminds us we cannot algorithmically prove reality from scratch. [B] VIVEKA offers a map of what follows after its axiom is assumed.
 
 ## 4. THE SELF-REFERENCE CHALLENGE
 
-**Objection:** "Is the claim 'philosophy is complete' itself a philosophical claim? If yes, it's subject to the framework. If no, the framework isn't complete."
+**Objection:** "Is the claim 'bounded closure has been reached' itself a philosophical claim? If yes, it's subject to the framework. If no, the framework isn't complete."
 
 **Response:** The claim is self-applied. This is intentional and acknowledged.
 
-The claim "categorical completeness is achieved" is itself a categorical claim within the framework. Like Gödel's theorems, the meta-statement is true within the system but the system's validity is not circularly proven by the statement.
+The claim "bounded categorical closure is achieved" is itself a categorical claim within the framework. Like any internal meta-statement, it can be evaluated inside the system without circularly proving the system's validity.
 
-This is analogous to: "This statement is written in English." The statement is true (it is written in English) but its truth doesn't depend on English being the *best* language. The framework claims categorical sufficiency, not that it has justified itself from outside.
+This is analogous to: "This statement is written in English." The statement is true (it is written in English) but its truth does not depend on English being the *best* language. The framework claims conditional sufficiency for the treated class, not that it has justified itself from outside.
 
-The self-reference is honest, not circular. We do not claim: "The framework is complete BECAUSE this framework says so." We claim: "Given the axioms, every major paradox maps to the topology."
+The self-reference is honest, not circular. We do not claim: "The framework is complete because this framework says so." We claim: "Given the axioms, the major paradoxes treated here map to the topology."
 
 ---
 

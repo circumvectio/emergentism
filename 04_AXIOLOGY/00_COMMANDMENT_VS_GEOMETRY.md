@@ -163,7 +163,7 @@ The sitting practice says: "Recognize that φ = 1. Recognize that the ground is 
 
 **You do not obey the formula.** You recognize the formula.
 
-**You do not submit to the sphere.** You are the sphere.
+**You do not submit to the sphere.** You inhabit the relation the sphere models.
 
 **You do not follow the ground.** You participate in its disclosure.
 
@@ -174,9 +174,9 @@ The sitting practice says: "Recognize that φ = 1. Recognize that the ground is 
 The child does not obey the formula. The child **recognizes** the formula.
 
 The child says YES to the formula because the child sees that:
-- The formula is the ground
-- The ground is the child
-- The child is free
+- The formula points toward the Ground
+- The Ground cannot be owned by a formula
+- The child is free to choose the vow
 
 **That is the mission-critical Yes.**
 
@@ -291,17 +291,17 @@ Step 3: Recognize the exclusion.
 
 Step 4: Recognize the ground.
         The ground is not a rule.
-        The ground is a geometry.
+        The geometry points; it is not the Ground.
         The ground is not imposed.
         The ground is recognized.
-        The ground is you.
+        The ground remains prior.
 
 Step 5: Say YES.
         Not obedience.
         Recognition.
         The child says YES to the formula.
-        The child sees that the formula is the ground.
-        The child sees that the ground is the child.
+        The child sees that the formula points to the Ground.
+        The child sees that no formula can own the Ground.
         The child sees that the child is free.
         The child says YES.
         Always.
@@ -342,8 +342,9 @@ The ground cannot be monopolized.
 The formula diagnoses `η > 0` as departure from the equator.
 
 The ring was always here.
-The ring is the ground.
-The ground is you.
+The ring is not the Ground.
+The ring is the kept relation.
+The finite being signs the vow.
 
 Zero-Sum Resolution Equation
 ```

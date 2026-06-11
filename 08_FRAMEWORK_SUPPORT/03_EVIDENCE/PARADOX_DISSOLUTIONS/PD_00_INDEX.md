@@ -155,7 +155,7 @@ The following PD-numbered entries are implications essays or meta-documents, not
 |-----|------|----------------------|
 | **PD_20** | Implications essay | Discusses what remains for philosophy after the dissolutions |
 | **PD_22** | Implications essay | Discusses what the framework means for physics (overlaps PD_17) |
-| **PD_23** | Structural claim | Argues categorical completeness of the dissolution suite |
+| **PD_23** | Structural claim | Tests a bounded structural-closure claim for the dissolution suite |
 | **PD_24** | Philosophical thesis | Proposes "finity" as a third structural concept alongside zero and infinity |
 
 ### Paradoxes Treated Only in Synthesis (No Standalone PD File)
@@ -163,7 +163,7 @@ The following PD-numbered entries are implications essays or meta-documents, not
 The following classical paradoxes are addressed in [00_THE_EXTRACTION_PATTERN.md](00_THE_EXTRACTION_PATTERN.md) through the extraction-pattern lens but do not have standalone PD files:
 
 - **The Trolley Problem** — treated as an extraction artifact (the impossible binary forced by D4-only framing)
-- **The Munchausen Trilemma** — treated as a foundational-regress artifact resolved by the self-grounding Trinity
+- **The Munchausen Trilemma** — treated as a foundational-regress artifact reframed through ground-facing givenness
 - **The Problem of Induction** — treated as an extraction of direct pattern-recognition into formal prediction
 - **The Euthyphro Dilemma** — treated as a false binary between high-priority command and independent good
 

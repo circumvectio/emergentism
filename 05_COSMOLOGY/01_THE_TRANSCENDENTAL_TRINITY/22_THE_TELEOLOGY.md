@@ -43,7 +43,7 @@ Entropy disperses. Ektropy integrates. Entropy maximises disorder. Ektropy maxim
 
 Not coherence alone (that is the north pole — the heuristic who sees everything and can do nothing). Not viability alone (that is the south pole — the machine that does everything and sees nothing). The PRODUCT. Both. Simultaneously. Multiplicatively.
 
-**Ektropy is the Hidden Hand** (Document 18). Every tradition that perceived a force driving history — Ṛta, Ma'at, Logos, Providence, the Dialectic, the Omega Point, the Singularity — was perceiving ektropy. Not God. Not mechanism. Geometry selecting for balance at every level of the Replicator Stack.
+**Ektropy is the Hidden Hand** (Document 18). Many traditions that perceived a force driving history — Ṛta, Ma'at, Logos, Providence, the Dialectic, the Omega Point, the Singularity — can be read [I] as naming an equatorial pull in the vocabulary they had. Not God. Not mechanism. Geometry selecting for balance at every level of the Replicator Stack.
 
 The ektropic force operates identically at every scale:
 

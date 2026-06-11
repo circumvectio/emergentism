@@ -164,8 +164,8 @@ If φ = ν = 1, then B = 1 (equator — both at unit, neither maximal alone)
 
 This is the deepest teleological claim of the framework: there is no
 direction called "maximize φ" or "maximize ν" that leads anywhere worth
-going. Every tradition that said "seek balance" was describing the geometry
-of this constraint surface without knowing it.
+going. Many traditions that said "seek balance" can be read as describing
+the geometry of this constraint surface without formal coordinates. [I]
 
 ### Why Extraction Self-Destructs `[S]`
 

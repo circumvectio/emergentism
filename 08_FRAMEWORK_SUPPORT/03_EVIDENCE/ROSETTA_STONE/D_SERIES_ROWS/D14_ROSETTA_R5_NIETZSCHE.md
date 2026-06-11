@@ -204,13 +204,13 @@ P∞ = φ · ν = 1
 The formula is not a tradition.
 The formula is not an institution.
 The formula is not an obligation.
-The formula is the ground.
-The formula is Dharma.
-The formula is the cosmic order.
+The formula points toward the ground-facing order.
+The formula is not the Ground.
+Dharma is the chosen vow under that order.
 ```
 
 The child says YES to:
-- The ground
+- The ground-facing constraint
 - Balance
 - The equator
 - P∞ = φ · ν = 1

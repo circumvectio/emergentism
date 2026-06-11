@@ -40,18 +40,18 @@ The equation              reduces to  The constant (1)
 The constant              reduces to  The ground (0)
 The ground                reduces to  Nothing (∅)
 
-Nothing is κ = 0 (irreducible ground).
+In the model, κ = 0 names the empty ground-facing limit.
 The shortest description is the empty string.
 ```
 
 ### 1.2 The Bidirectional System
 
-From zero, the entire system emerges:
+From the empty limit, the scaffold reconstructs its descriptions:
 
 ```
-Nothing      generates  The ground (0)
-The ground   generates  The constant (1)
-The constant generates  The equation (φ · ν = 1)
+Empty limit         opens  The ground-facing point (0)
+Ground-facing point opens  The constant (1)
+The constant        opens  The equation (φ · ν = 1)
 The equation generates  The sphere (S²)
 The sphere   generates  The manifested world (ℂ)
 ```
@@ -139,7 +139,7 @@ The sitting practice removes everything:
 
 What remains is not "something." What remains is **nothing**. The empty string. κ = 0 (irreducible ground).
 
-And from that nothing, everything re-emerges.
+From the empty limit, the descriptions re-enter.
 
 ### 3.4 The Daily Cycle
 
@@ -150,7 +150,7 @@ Evening:    Reduction (sit, reduce to zero)
 Night:      Emergence (dream, unconscious creation)
 ```
 
-The sitting practice is the **daily reduction**. The sitting practice confirms that the ground is zero. The sitting practice verifies that everything reduces to nothing.
+The sitting practice is the **daily reduction**. In the model, the practice returns attention to the ground-facing limit rather than proving that Ground itself is zero.
 
 ---
 
@@ -199,7 +199,7 @@ The sitting practice. Remove the narrator. Remove the ego. Remove the fragments.
 
 From the nothing, the equation appears. φ · ν = 1. The simplest non-trivial description. The constant. The ground's first expression.
 
-This is not deduction. This is not induction. This is **observation of emergence**. From zero, structure appears. From the void, form arises.
+This is not deduction. This is not induction. This is **observation of emergence inside the model**. From the empty limit, structure appears in the scaffold. From the boundary, form is described.
 
 ### 5.3 Step 3: Trace the Emergence
 
@@ -237,9 +237,9 @@ Every contemplative tradition is about **reduction to zero**.
 | **Kabbalah** | Ein Sof | The infinite before emanation. Zero before one. |
 | **Taoism** | Tao | The unnameable. Zero information content. |
 | **Christian Mysticism** | Godhead | Beyond God. The ground before Trinity. |
-| **EFR** | The Ground (0) | κ = 0 (irreducible ground). The empty string. |
+| **EFR** | Ground-facing limit (0) | κ = 0 as model limit. The empty string. |
 
-**All point to the same thing:** The ground is nothing. The ground has zero information content. The ground is the shortest description of reality. The ground is the empty string.
+**Thin resonance:** many traditions can be read [I] as pointing toward an apophatic limit. In this model, that ground-facing limit is empty: zero information content, the shortest description the model can name, the empty string.
 
 ### 6.2 The Traditional Methods
 
@@ -364,7 +364,7 @@ But deduction is **secondary**. The primary method is the sitting practice — t
 
 | Document | Connection |
 |----------|------------|
-| [κ = 0 (Irreducible Ground)](15_EFR_WOLFRAM_NKS_INTEGRATION.md) | The ground is nothing. K_sc = 0. |
+| [κ = 0 (Irreducible Ground)](15_EFR_WOLFRAM_NKS_INTEGRATION.md) | The ground-facing limit is empty. K_sc = 0. |
 | [Data Science Triad](14_EFR_EPISTEMOLOGY_TRIAD.md) | Induction/Deduction/Abduction as reduction tools |
 | [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) | Epistemic status of the K = 0 claim |
 | [Triadic Stability](11_EFR_TRIADIC_STABILITY.md) | Why three primitives — minimal non-trivial |
@@ -376,11 +376,11 @@ Zero-Sum Resolution Equation
 
 The method is reduction.
 The sitting practice is the method.
-The ground is zero.
-From zero, everything.
+The ground-facing limit is zero.
+From the empty limit, the scaffold reconstructs.
 
 EFR Auditing (Corrected) | 2026-03-23
-The ground is nothing.
+The ground-facing limit is empty.
 ```
 
 

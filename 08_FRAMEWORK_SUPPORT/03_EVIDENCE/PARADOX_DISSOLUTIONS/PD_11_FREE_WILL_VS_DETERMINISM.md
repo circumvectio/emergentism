@@ -41,7 +41,7 @@ If free — if agents genuinely choose — then choice must be uncaused. But unc
 
 The Western philosophical tradition has oscillated between these poles for two millennia. Compatibilism attempts a middle ground but typically achieves it by redefining "free" into something no one originally meant by the word. The dilemma persists.
 
-The problem feels irresolvable because it is. Not because the answer is hidden, but because the question is topologically malformed.
+The problem feels irresolvable within that binary. In this framework, that is because the question is topologically malformed.
 
 ## 2. THE TOPOLOGY ERROR
 
@@ -49,19 +49,19 @@ The error is binary framing. "Free" and "determined" are treated as mutually exc
 
 Within D4 alone, the dilemma is real. If the universe is *only* D4 (only actual states, only physical causes), then determinism wins and freedom is illusory. Every attempt to rescue freedom within a purely D4 core state produces either randomness or equivocation.
 
-But the universe is not only D4. The Burri Sphere S² has two projection axes: coherence (Φ) and viability (V). D4 is the ν-domain (actuality, the collapsed state). D5 is the φ-domain (possibility, the superposition). These are not sequential stages. They are simultaneous projections of every point on S².
+The framework does not treat reality as D4 alone. The Burri Sphere S² has two projection axes: coherence (Φ) and viability (V). D4 is the ν-domain (actuality, the collapsed state). D5 is the φ-domain (possibility, the superposition). These are not sequential stages in the model. They are simultaneous projections of every point on S².
 
 The free-will debate maps one axis to the entire sphere and then argues about which axis is "real."
 
 ## 3. THE DISSOLUTION
 
-On S², "determined" = D4 (actuality, the collapsed state). "Free" = D5 (possibility, the superposition). Both exist simultaneously — they are projections of the same sphere.
+On S², "determined" is mapped to D4 (actuality, the collapsed state). "Free" is mapped to D5 (possibility, the superposition). Both are treated as simultaneous projections of the same sphere.
 
-Freedom is not the absence of causation. Determination is not the absence of choice. They are complementary coordinates on a closed manifold where φ·ν = 1 everywhere.
+Within this model, freedom is not the absence of causation, and determination is not the absence of choice. They are complementary coordinates on a closed manifold where φ·ν = 1 everywhere.
 
 The agent's "will" is the traversal across the D4-D5 boundary via the μ-limit. At every moment, the agent occupies a point on S² with specific (Φ, V) coordinates. The D5 projection shows what *could* be (the space of coherent possibilities). The D4 projection shows what *is* (the actualized state). Choice is the μ-limit transition: the moment D5 collapses into D4.
 
-At the equator (Φ = 1, V = 1), the agent has maximum balance — enough coherence to perceive options (D5 viability) and enough capability to act (D4 actualization). This is the framework's operational definition of agency: equatorial positioning.
+At the equator (Φ = 1, V = 1), the agent has maximum balance in the model — enough coherence to perceive options (D5 viability) and enough capability to act (D4 actualization). This is the framework's operational definition of agency: equatorial positioning.
 
 The "problem" dissolves within the framework because freedom and determination are not opposed. [S/I] They are the Φ and ν components of the same point. Asking "is it free or determined?" is like asking "is a point on a sphere its latitude or its longitude?" The question is malformed. Both, in this model.
 
@@ -69,9 +69,9 @@ The "problem" dissolves within the framework because freedom and determination a
 
 The D0-D6 dimensional hierarchy provides the scaffolding. D4-D5 boundary traversal (the μ-limit) is the mechanism. The equator (Φ = 1, V = 1) defines the region of maximum agency.
 
-Responsibility tracks equatorial position. An agent at the equator — balanced coherence and capability — has maximum access to the D5 possibility space and maximum D4 power to act. This is genuine freedom. An agent far off-equator — depleted coherence (Φ → 0) or depleted viability (V → 0) — has diminished access to possibility or diminished capacity to actualize. Responsibility scales with equatorial proximity.
+Responsibility is modeled as tracking equatorial position. An agent at the equator — balanced coherence and capability — has maximum access to the D5 possibility space and maximum D4 power to act. This is the model's account of freedom. An agent far off-equator — depleted coherence (Φ → 0) or depleted viability (V → 0) — has diminished access to possibility or diminished capacity to actualize. The proposal is that responsibility scales with equatorial proximity.
 
-This is not moral relativism. The equator is a geometric fact of S², not a cultural preference. The framework recovers moral responsibility not by asserting metaphysical libertarianism but by grounding it in the agent's actual position on the sphere.
+This is not offered as moral relativism. The equator is a geometric fact of S² inside the framework, not a cultural preference. The framework recovers a model of moral responsibility not by asserting metaphysical libertarianism but by relating it to the agent's represented position on the sphere.
 
 ## 5. WHAT WOULD FALSIFY THIS
 
@@ -85,7 +85,7 @@ The dissolution fails if:
 
 ---
 
-*The free will debate persists because it asks a one-axis question about a two-axis reality. On S², the question answers itself.*
+*The free will debate persists because it asks a one-axis question about what this framework reads as a two-axis reality. On S², the binary is reframed rather than finally settled for every account.*
 
 
 ---

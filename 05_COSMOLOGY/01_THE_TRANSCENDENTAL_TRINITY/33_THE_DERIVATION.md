@@ -155,9 +155,9 @@ The entire framework is the elaboration of the sequence. Line 2 is the first tel
 
 ## 9. What the Framework Adds
 
-Every tradition saw the equator. The Vedic Ṛṣis called it Ṛta. The Greeks called it Logos. The Taoists called it the Way. The Buddhists called it the Middle Path. The Egyptians weighed the heart against the feather.
+Many traditions can be read [I] as circling the equator. The Vedic Ṛṣis called it Ṛta. The Greeks called it Logos. The Taoists called it the Way. The Buddhists called it the Middle Path. The Egyptians weighed the heart against the feather.
 
-What Emergentism adds is not the insight — the insight is 5,000 years old. What it adds is the **proof**. The formalization. The demonstration that the equator is not a preference but a theorem. Not a commandment but a geometric fact. Not a religion but a derivation from reciprocal closure.
+What Emergentism adds is not the insight — versions of the insight are ancient. What it adds is the **formalization inside its own model**. The demonstration that, given reciprocal closure, the equator is not a preference but a theorem. Not a commandment but a geometric fact within the scaffold. Not a religion but a derivation from reciprocal closure.
 
 (φ − ν)² ≥ 0 is the first arithmetic consequence.
 

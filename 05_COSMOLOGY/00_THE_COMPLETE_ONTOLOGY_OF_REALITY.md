@@ -90,7 +90,7 @@ Neither pole is distinguished. The sphere has not yet inflated. `B = 0` — not 
 
 ### Ontological reading `[I]`
 
-D0 is the Ground of the ontology document — the irreducible prior that `κ = 0` names. It is the Bindu of the Vedic tradition: the point that contains all possibilities compressed. It is the south pole (Kāla) and the north pole (Trimūrti) before they separate.
+D0 is the ground-facing point inside the ontology document — the model boundary that `κ = 0` names. It is read [I] through the Bindu of the Vedic tradition: the point that contains all possibilities compressed. It is the south pole (Kāla) and the north pole (Trimūrti) before they separate inside the scaffold.
 
 ### The μ₀ crossing: D0 → D1
 

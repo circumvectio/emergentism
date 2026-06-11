@@ -308,6 +308,31 @@ This avoids two errors:
 
 Dasein is not the whole sphere. Dasein is the finite `⊙` at which the sphere becomes sayable, testable, and actionable.
 
+Read through the existential threshold:
+
+```text
+D4: witness      — Being becomes noticeable.
+D5: agent        — Being becomes navigable, signed, and lived.
+D6: release      — Dasein's claim to final capture is subtracted.
+```
+
+In Heidegger-facing language, **resoluteness** (*Entschlossenheit*) and the
+**moment of vision** (*Augenblick*) are the K2-shaped instant at this threshold:
+the mortal commitment under uncertainty that no proof can sign in advance.
+This is `[I]` as a resonance between existential phenomenology and the
+framework's constitutional grammar, not an upgrade of either into public proof.
+
+Authenticity is therefore not pole-seeking ownness. It is constrained
+optimization in a life:
+
+```text
+maximize Ω, subject to thrownness, η = 0, and evidence-tier discipline
+```
+
+Inauthenticity is the inward form of extraction: the field consumes Dasein's
+projection and lets *das Man* decide on its behalf. Authenticity is re-coupling,
+not withdrawal from the world.
+
 ---
 
 ## Emergence Across the Stack

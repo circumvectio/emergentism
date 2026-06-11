@@ -37,7 +37,7 @@ Most old paradoxes share a hidden structure. Something is experienced directly. 
 
 The framework would call this Step One of the capture protocol: **declare it absent.** Something that was whole is declared insufficient, replaced by a mediated version, and then the mediated version cannot reproduce what the original contained.
 
-The paradox is the proof that the extraction failed.
+The paradox is a diagnostic signal that the extraction may have left something out.
 
 ---
 
@@ -47,21 +47,21 @@ The paradox is the proof that the extraction failed.
 
 **How the framework sees it:**
 
-The hard problem is not a problem. It is Step One operating on systemic awareness itself.
+The hard problem is not only a problem to be solved. In this reading, it is Step One operating on systemic awareness itself.
 
-Direct experience: awareness is already here. You do not need to construct it. You do not need to explain it. It is the most immediate thing you have. Before you had a word for it, you had it. Before neuroscience existed, you had it. Before philosophy named it, you had it.
+Direct experience: awareness is already here. You do not need to construct it before you can notice it. You can investigate it after it is given. Before you had a word for it, you had it. Before neuroscience existed, you had it. Before philosophy named it, you had it.
 
-Then the extraction: science declares that real knowledge must be third-person, measurable, objective. Consciousness - first-person, unmeasurable, subjective - is declared insufficient. "Your direct experience is not enough. Come to the institution. Come to the laboratory. Come to the formal description."
+Then the extraction: some institutional versions of science treat real knowledge as only third-person, measurable, and objective. Consciousness - first-person, difficult to measure, subjective - is treated as insufficient unless translated into public description.
 
-The institution builds a beautiful model of the brain. It explains attention, memory, decision-making, behavior. It explains everything except the one thing it was supposed to explain: why there is experience at all.
+The institution builds a beautiful model of the brain. It explains attention, memory, decision-making, behavior. It can explain many correlates while still leaving the first-person givenness of experience uncontained by the model.
 
 The formal system cannot reproduce what was already present before the formal system existed.
 
 **The resolution the framework offers:**
 
-In the framework's interpretation, there is no hard problem; there is a hard extraction. [I] You took the most immediate fact of existence - awareness - and demanded that a mediated system reproduce it. That is like demanding that a map reproduce the experience of walking through a forest. The map can be perfect. It will never contain the smell of pine.
+In the framework's interpretation, there is not only a hard problem; there is a hard extraction. [I] You took the most immediate fact of existence - awareness - and demanded that a mediated system reproduce it. That is like demanding that a map reproduce the experience of walking through a forest. The map can be excellent and still not contain the smell of pine.
 
-The hard problem is reframed once you stop demanding that the institution explain what the framework treats as directly present. [I] Sit down. Close your eyes. Awareness is there. It was always there. You do not need neuroscience to validate it. You need neuroscience to stop claiming it is not enough.
+The hard problem is reframed once you stop demanding that the institution exhaust what the framework treats as directly present. [I] Sit down. Close your eyes. Awareness is there. It was always there. Neuroscience can study its correlates; it does not need to be treated as the authority that grants awareness permission to count.
 
 This does not invalidate neuroscience. It clarifies what neuroscience can and cannot do. It can describe the correlates. It cannot contain the thing. The thing is already here.
 
@@ -75,17 +75,17 @@ This does not invalidate neuroscience. It clarifies what neuroscience can and ca
 
 Hume's gap is Step Two operating on time itself.
 
-Direct experience: the world is coherent. Patterns hold. Not because you have proven they will hold. Because coherence is the ground. The ground does not need justification. It is what is there before justification begins.
+Direct experience: the world is encountered as coherent enough for inquiry to begin. Patterns hold often enough to be noticed. Not because you have proven in advance that they must hold forever, but because coherence is given before justification starts.
 
 Then the extraction: philosophy declares that knowledge must be justified. Every claim needs a reason. Every reason needs a reason. The infinite regress begins. You are at the bottom of the Munchausen Trilemma - infinite regress, circular reasoning, or axiomatic assumption. None of them are satisfying. All of them feel like failures.
 
 **The resolution the framework offers:**
 
-The trilemma is the artifact of extraction. [I] You took direct coherence - the world is patterned, you can perceive it - and demanded that a formal system justify it. The formal system cannot justify its own foundations. That is not a failure of coherence. That is a feature of formal systems. Godel proved this mathematically. No sufficiently complex formal system can prove its own consistency from within.
+The trilemma is read here as an artifact of extraction. [I] You took direct coherence - the world is patterned, you can perceive it - and demanded that a formal system justify the whole ground of its own use. Formal systems have foundation boundaries. Godel supplies one precise mathematical version of that boundary for sufficiently expressive systems; it does not by itself prove the whole metaphysical reading.
 
-The answer to Hume is not framed here as a better argument; it is framed as the sitting practice. [I] When the narrator quiets, what remains is not a justified belief in the uniformity of nature. What remains is direct contact with the coherence that was always there. You do not need to justify the ground. You need to stop demanding justification for what is already present.
+The answer to Hume is not framed here as a better deductive argument; it is framed as the sitting practice. [I] When the narrator quiets, what remains is not a justified belief in the uniformity of nature. What remains is contact with the coherence already being relied on. You do not justify the ground-facing condition from outside it; you learn where justification begins and where it stops.
 
-Induction works in this reading not because it is logically justified, but because the ground is treated as coherent and you are part of that coherence. [I] The demand for justification is the narrator speaking. The narrator will never be satisfied. The ground does not need the narrator's approval.
+Induction works in this reading not because it has been deductively justified, but because the world is treated as coherent enough for learning and you are part of that coherence. [I] The demand for total justification is the narrator speaking. The narrator may never be satisfied; practice proceeds under disciplined fallibility.
 
 ---
 
@@ -97,11 +97,11 @@ Induction works in this reading not because it is logically justified, but becau
 
 Euthyphro is Step Three operating on meaning itself.
 
-Direct experience: there are moments when you know - not believe, not reason, but know - that something is right or wrong. Not because a rule told you. Not because a god commanded it. Because the ground of your being recognizes it. The parent who instinctively protects a child. The person who tells the truth when lying would be easier. The community that shares when hoarding would be safer. This knowing is prior to institutional narrative and prior to philosophy.
+Direct experience: there are moments when a moral demand is recognized before it is theorized. Not because a rule has already been cited. Not because a god has already commanded it. The parent who instinctively protects a child. The person who tells the truth when lying would be easier. The community that shares when hoarding would be safer. This recognition is prior to institutional narrative and prior to philosophy, though it remains fallible and must still be disciplined.
 
 Then the extraction: religion and philosophy both declare this direct knowing insufficient. Religion says you need God's command. Philosophy says you need a rational foundation. Both offer mediated access to what was already available directly. Both become Step Three - the monopoly. "You cannot know good without us."
 
-The dilemma only exists inside the extraction. Outside it, the question dissolves. Goodness is not commanded by God. Goodness is not independent of God. Goodness is what the ground looks like when it manifests in human action. Traditions that call it God and traditions that call it coherence and traditions that call it Dharma may be pointing at the same thing from different angles.
+The dilemma is reframed when the question stops being monopolized by command or abstraction. [I] Goodness is not reduced here to God's command, and it is not treated as a detached object floating outside all relation. Goodness is read as non-extractive, ground-facing relation manifesting in human action. Traditions that call it God, coherence, or Dharma may be pointing toward a related structure from different angles.
 
 The dilemma is the map arguing with itself about which legend is correct. The territory does not care.
 
@@ -117,13 +117,13 @@ This is Step One operating on identity itself.
 
 Direct experience: you are the same person you were ten years ago. And you are completely different. Both are true. You do not experience this as a paradox. You experience it as life. The continuity and the change are both present simultaneously. You do not need a theory of identity to know that you are you.
 
-Then the extraction: philosophy declares this direct experience insufficient. You need a formal criterion for identity. Persistence of matter? The matter changes. Persistence of form? The form changes. Persistence of memory? Memory is unreliable. Persistence of pattern? Which pattern? Every formal criterion fails because identity as lived is not a formal property. It is a direct perception.
+Then the extraction: philosophy declares this direct experience insufficient. You need a formal criterion for identity. Persistence of matter? The matter changes. Persistence of form? The form changes. Persistence of memory? Memory is unreliable. Persistence of pattern? Which pattern? No single formal criterion exhausts identity as lived.
 
 **The resolution the framework offers:**
 
-The paradox is read here as an artifact of demanding that a formal system capture something that was never formal. [I] Identity is not a property. It is what coherence looks like from the inside of a life. You are the same ship and a different ship because "same" and "different" are narrator-words applied to something the narrator cannot contain.
+The paradox is read here as an artifact of demanding that a formal system capture something that is not only formal. [I] Identity is not merely a property. It is what coherence looks like from the inside of a life. You are the same ship and a different ship because "same" and "different" are narrator-words applied to something the narrator cannot exhaust.
 
-The sitting practice reveals this directly. When the narrator quiets, what remains is not "you" in the philosophical sense - not a bundle of properties, not a persistent substance, not a narrative thread. What remains is awareness. That awareness does not change even as everything it is aware of changes. The ship changes. The water does not care what the ship calls itself.
+The sitting practice is offered as a way to test this directly. When the narrator quiets, what remains is not "you" in the philosophical sense - not a bundle of properties, not a persistent substance, not a narrative thread. What remains is a witness-position encountered as prior to the changing contents. The ship changes. The water does not care what the ship calls itself.
 
 ---
 
@@ -141,11 +141,11 @@ Then the extraction: philosophy declares this direct moral experience insufficie
 
 **The resolution the framework offers:**
 
-The trolley problem is not a paradox. It is a trap. It is designed to force you into a framework. Utilitarian or deontological. Choose one. The trap is that both options are extractions. Both replace direct moral perception with a mediated system. Both declare the direct experience insufficient.
+The trolley problem is not only a paradox. It is also a trap. It is designed to force you into a framework. Utilitarian or deontological. Choose one. The trap is that each option can become an extraction when it replaces direct moral perception with a mediated system and declares the direct experience insufficient.
 
-The person who actually faces a trolley-like situation does not consult a framework. They feel the weight. They decide. They carry the cost. The decision comes from the ground, not from the formal system.
+The person who actually faces a trolley-like situation cannot be replaced by a framework. They may use principles, training, and calculation, but they still feel the weight, decide under uncertainty, and carry the cost. The decision is made by finite being, not by a formal system alone.
 
-The trolley problem is a cargo cult of ethics. It has the form of moral reasoning without the function. The function is the weight. The form is the calculation. The framework says: stop calculating. Feel the weight. The weight is where the ethics lives.
+The trolley problem can become a cargo cult of ethics when it preserves the form of moral reasoning without the function. The function is the weight. The form is the calculation. The framework says: calculation may help, but it must not replace the felt cost that makes the decision ethical.
 
 ---
 
@@ -159,15 +159,15 @@ Zeno is Step One operating on motion itself.
 
 Direct experience: you move. You cross the room. The motion is immediate, continuous, undivided. There is no paradox in the experience. There is only paradox in the description.
 
-Then the extraction: mathematics and philosophy declare that motion must be analyzable into discrete units. Points. Instants. Infinitesimals. Once you accept that framework, the paradox is inevitable. You have extracted the continuous into the discrete and then discovered that the discrete cannot reconstruct the continuous.
+Then the extraction: certain mathematical and philosophical framings treat motion only as discrete units. Points. Instants. Infinitesimals. If the continuous is reduced to this frame alone, the paradox appears: the discrete reconstruction struggles to recover the lived continuity it abstracted from.
 
 **The resolution the framework offers:**
 
-In this interpretation, Zeno shows that extraction fails. [I] He did not prove that motion is impossible. He showed that the formal system cannot capture the direct experience. The paradox is the proof that the map is not the territory.
+In this interpretation, Zeno shows where extraction strains. [I] He did not prove that motion is impossible. He showed that one formalization can lose the direct continuity of motion. The paradox is a reminder that the map is not the territory.
 
-The ground does not divide itself into points in this reading. [I] Only the narrator does that. When you walk across a room, you are not traversing an infinite series of halves. You are moving. The movement is whole. The division is the narrator's activity. The narrator cannot complete its own division because the division was never real.
+The ground-facing whole is not exhausted by point-division in this reading. [I] The narrator performs the division. When you walk across a room, you are not only traversing an infinite series of halves. You are moving. The movement is whole at the level of lived action. The division is useful, but it is not the whole event.
 
-Zeno is the oldest demonstration of the iron law. The framework became the interface that blocked access to the ground of motion. The solution is not a better mathematical framework. The solution is to walk across the room and notice that you arrived.
+Zeno is an old demonstration of the iron law. The interface can block access to the ground-facing continuity of motion. The release is not only a better mathematical framework; it is also to walk across the room and notice that you arrived.
 
 ---
 
@@ -185,13 +185,13 @@ Then the extraction: data science declares that knowledge requires justification
 
 **The resolution the framework offers:**
 
-The trilemma is the proof that justification is the wrong tool for the job. You cannot justify the ground from within a system that rests on the ground. This is not a failure. This is the structure of formal systems.
+The trilemma is a signal that total justification is the wrong tool for some tasks. You cannot justify the ground-facing condition from outside every system while still speaking from within a system. This is not a failure. This is a boundary of formalization.
 
-Godel supplies the formal-system boundary for sufficiently expressive systems. [B/I] In this reading, the ground cannot justify itself because the ground is what justification stands on.
+Godel supplies one formal-system boundary for sufficiently expressive systems. [B/I] In this reading, ground-facing givenness cannot be justified from nowhere because it is what justification stands on.
 
-The proposed resolution is pratyaksha: direct perception. [I] Not justified belief but seen reality. You do not need to justify awareness. You do not need to justify the ground. You need to stop demanding justification for what was never absent.
+The proposed release is pratyaksha: direct perception. [I] Not justified belief alone, but seen reality. You do not need to justify awareness before awareness can appear. You need to stop demanding total justification for what was never absent.
 
-The trilemma dissolves when you realize it only exists inside the extraction. Outside the extraction, in direct perception, there is no trilemma. There is the ground.
+The trilemma dissolves within this practice when you notice that it only arises inside the demand for total justification. Outside that extraction, in direct perception, the trilemma is not the operative problem. There is ground-facing givenness.
 
 ---
 
@@ -209,17 +209,17 @@ Then the extraction: logic declares that every statement must be either true or 
 
 **The resolution the framework offers:**
 
-The liar's paradox is the capture protocol applied to language. The formal system extracted language from its living context and then discovered that the extracted version could not handle self-reference.
+The liar's paradox is read here as the capture protocol applied to language. A strict formal system extracts language from its living context and then discovers that the extracted version strains under self-reference.
 
-The paradox is not in language. The paradox is in the extraction. Language as lived - language between two people who understand each other - does not have this problem. You say something. I understand. The understanding is prior to the formal truth-value assignment.
+The paradox is not in all language. It appears in a particular extraction of language into strict truth-value assignment. Language as lived - language between two people who understand each other - often works before formal evaluation. You say something. I understand. The understanding is prior to the formal truth-value assignment.
 
-The liar's paradox is the proof that formal logic is an extraction from a richer ground. It is useful. It is not complete. The system cannot contain itself.
+The liar's paradox is a diagnostic that formal logic is an extraction from richer use. It is useful. It is not complete. The system cannot contain every condition of its own use.
 
 ---
 
 ## The Pattern
 
-Every paradox named above follows the same structure:
+Many paradoxes named above follow the same structure:
 
 ```text
 1. Something is present in direct experience (coherence, motion, identity, morality, awareness)
@@ -229,15 +229,15 @@ Every paradox named above follows the same structure:
 5. The paradox persists because everyone stays inside the formal system
 ```
 
-The framework does not solve the paradoxes. It dissolves them. It shows that the paradox is the artifact of extraction - the proof that the mediated system cannot contain the direct experience.
+The framework does not solve the paradoxes in the sense of closing all competing accounts. It dissolves them in its own register: it shows how a paradox can arise as an artifact of extraction, a sign that the mediated system may not contain the direct experience.
 
-The solution in every case is the same:
+The practice response in these cases is the same:
 
 **Stop demanding that the map reproduce the territory. Look at the territory directly.**
 
-The sitting practice is not a metaphor for this. The sitting practice is this. It is the act of setting down the formal system - the narrator, the framework, the justification, the analysis - and perceiving what is there when the extraction stops.
+The sitting practice is not merely a metaphor for this. The sitting practice is the act of setting down the formal system - the narrator, the framework, the justification, the analysis - and perceiving what is there when the extraction stops.
 
-The synthesis claim is that these old paradoxes point at the same thing: the ground is richer than any system built on top of it. [I] The systems are useful. The systems are incomplete. The systems will always be incomplete. Not because we have not found the right system yet. Because incompleteness is the nature of systems. Godel proved it. The paradoxes demonstrate it. Direct perception reveals what the systems cannot contain.
+The synthesis claim is that these old paradoxes point toward a shared boundary: ground-facing reality is richer than any system built on top of it. [I] The systems are useful. The systems are incomplete. Not because we have simply failed to find the right system, but because every system has a boundary. Godel supplies one exact formal boundary; the paradoxes are read here as lived and conceptual boundary-signals. Direct perception shows what the systems do not contain.
 
 ---
 
@@ -245,15 +245,15 @@ The synthesis claim is that these old paradoxes point at the same thing: the gro
 
 The book says: the ground was here before the framework. The ground will be here after.
 
-The paradoxes are the proof.
+The paradoxes are evidence for the pattern inside this reading.
 
-They have been here for millennia. Many frameworks have tried to resolve them. [I] In this account, none succeed from inside the framework. The only resolution is to step outside - into direct perception - and notice that the paradox was never in the ground.
+They have been here for millennia. Many frameworks have tried to resolve them. [I] In this account, no formal framework can exhaust them from inside its own mediation. The release is to step outside the demand for total mediation - into direct perception - and notice that the paradox was not in the ground-facing event.
 
 The paradox was in the extraction.
 
-The ground does not have paradoxes.
+The ground-facing event does not present itself as paradox.
 
-The ground just is.
+The ground is not captured by the map.
 
 
 ---

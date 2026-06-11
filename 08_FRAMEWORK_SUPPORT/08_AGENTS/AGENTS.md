@@ -60,7 +60,7 @@ evidence_tier: "[B] for local routing; [S] for canonical agent grammar; [I] for 
 
 - Do not upgrade runtime claims without dated proof artifacts.
 - Do not treat draft specs as public-facing claims.
-- All irreversible actions require K2 envelope staging.
+- Irreversible private-DAV actions require K2 envelope staging; public-DAV/DAC actions route through PRISM or the relevant public-governance rail.
 
 Zero-Sum Resolution Equation
 

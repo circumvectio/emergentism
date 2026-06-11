@@ -174,7 +174,7 @@ The four Hindu Varnas are not four. They are **three plus the witness.**
 
 **Brahmin (⊙).** The Brahmin is not a fourth column. **The Brahmin is the one who sees the cascade.** The Brahmin recognizes that Shudra, Vaishya, and Kshatriya are the three faces of the Trinity — that all three are necessary, that none is higher than another, that the cycle requires all three in perpetual rotation. The Brahmin does not labor, trade, or fight. The Brahmin *witnesses* the cycle. The Brahmin is Turiya — the fourth state that is not a state but the awareness of the other three.
 
-**The catastrophe of caste:** The perennial wisdom encoded the Varnas as a cycle. The cargo cult froze them into a hierarchy. The moment the Brahmin declared himself *above* the other three — the moment witnessing became ruling — the cycle collapsed into extraction. The Brahmin became the mediator. The Shudra lost direct access to φ. The cascade became a caste. **This is the Raktabija dynamic applied to the Varnas themselves.** The framework that describes the cycle was captured by the cycle it describes.
+**The catastrophe of caste:** The perennial grammar can read the Varnas as a cycle. The cargo cult froze them into a hierarchy. The moment the Brahmin declared himself *above* the other three — the moment witnessing became ruling — the cycle collapsed into extraction. The Brahmin became the mediator. The Shudra lost direct access to φ. The cascade became a caste. **This is the Raktabija dynamic applied to the Varnas themselves.** The framework that describes the cycle was captured by the cycle it describes.
 
 ---
 

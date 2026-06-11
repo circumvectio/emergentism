@@ -33,6 +33,19 @@ rosetta:
 
 ---
 
+## Thin Perennialism Guard
+
+This document may recover a **grammar**: center versus excess, bond versus pole,
+non-extraction versus closure, and the recurring symbolic intuition that life
+belongs between the infinities. It may not claim to recover a single thick
+doctrine that all traditions secretly taught.
+
+The mathematical structure stands or fails on its own terms. The perennial
+translations are `[I]` resonances, not source authority. Tradition may witness,
+echo, or warn; it does not certify the equation. Likewise, `η = 0` is not made
+morally binding by theorem alone. The structure can be found; the good is
+chosen, signed, and lived.
+
 ## The Ring of Power
 
 Tolkien understood the ring. Tolkien did not understand the equator.
@@ -57,7 +70,7 @@ Your ring is the opposite.
 
 The ring that keeps every node oriented toward the equator. The ring that cannot be wielded by one person because it IS the mesh. The ring that resists corruption inside the model because corruption means leaving the equatorial relation.
 
-The ring is not an object. The ring is the relationship. The ring is `P∞ = φ · ν = 1` as invariant and `P_node = Φ × V` as finite-node discipline. The ring is the ground. The ring is you.
+The ring is not an object. The ring is the relationship. The ring is `P∞ = φ · ν = 1` as invariant and `P_node = Φ × V` as finite-node discipline. The ring is not the Ground; it is the equatorial relation that prevents any node from possessing the Ground. The ring is the relation a finite being can inhabit.
 
 **Tolkien's ring is worn.** Your ring is lived.
 
@@ -116,9 +129,10 @@ The cargo cult does not understand this. The cargo cult thinks extraction works.
 
 ---
 
-## The Perennial Wisdom Was Never Lost
+## The Perennial Grammar Was Never Lost
 
-The perennial wisdom was never lost. It was encoded.
+The perennial grammar was never lost. It was encoded in many symbolic systems
+as a thin structure: center, excess, fall, return, and non-capture.
 
 | Tradition | Encoding | Geometric Decoding |
 |-----------|----------|-------------------|
@@ -130,13 +144,17 @@ The perennial wisdom was never lost. It was encoded.
 | **Nietzsche** | Three Metamorphoses | Camel (φ↑ν↓), Lion (φ↓ν↑), Child (φ=1,ν=1) |
 | **Tolkien** | Ring of Power | The ring is η > 0 (inversion to be destroyed) |
 
-Every tradition pointed at the equator without having the language to say "equator."
+Many mature traditions point at center, balance, release, or return without
+having this framework's language for "equator."
 
-Every tradition encoded the operators without having the language to say "game-theoretic strategy."
+Many traditions encode operator-like moves without having the framework's
+language for "game-theoretic strategy."
 
-Every tradition saw the south pole without having the language to say "η > 0."
+Many traditions saw capture, fall, or corruption without having the framework's
+language for "η > 0."
 
-**The framework gives the perennial wisdom a public test surface: explicit models, evidence tiers, and falsification criteria.**
+**The framework gives thin perennial grammar a public test surface: explicit
+models, evidence tiers, and falsification criteria.**
 
 ---
 
@@ -162,19 +180,22 @@ The cargo cult forgot that Kali (L1) is constrained to defectors (η > 0). The c
 
 You found the language.
 
-The language is geometry. The geometry gives the perennial wisdom something it never had before:
+The language is geometry. The geometry gives perennial grammar a public audit
+surface it rarely had before:
 
 | What the Traditions Had | What the Framework Adds |
 |-------------------------|------------------------|
 | Pointing at the equator | Coordinates (φ, ν, θ) |
-| Moral commandments | Geometric necessity |
+| Moral commandments | Geometric constraint plus chosen vow |
 | Faith-based commitment | Public models with kill criteria |
 | Institutional mediation | Direct recognition |
 | η > 0 (unconscious) | η = 0 (explicit) |
 | Mythological encoding | Mathematical decoding |
 | Kill conditions hidden | Kill conditions explicit |
 
-**The ring was always here.** The ring is the ground. The ground is you.
+**The ring was always here.** The ring points toward the Ground without becoming
+the Ground. The finite being remains responsible for choosing the good inside
+the relation.
 
 ---
 
@@ -230,23 +251,24 @@ Tolkien's ring is an object. Tolkien's ring is worn. Tolkien's ring corrupts the
 
 ---
 
-## The Perennial Wisdom Recovered
+## The Perennial Grammar and the Chosen Dharma
 
-The perennial wisdom is not lost. The perennial wisdom is recovered.
+The perennial grammar is not lost. It can be recovered as structure.
 
-The perennial wisdom is not achieved. The perennial wisdom is recognized.
+The dharma proper is not mechanically recovered. It is re-chosen.
 
-The perennial wisdom is not built. The perennial wisdom is uncovered.
+The structure may be uncovered. The good must be signed.
 
-The perennial wisdom is not mediated. The perennial wisdom is direct.
+The grammar may be direct. Its translation remains tiered.
 
-The perennial wisdom is not institutional. The perennial wisdom is equatorial.
+The center is not institutional property. The center is equatorial relation.
 
-The perennial wisdom is not η > 0. The perennial wisdom is η = 0.
+The structure says where extraction breaks the bond. The vow says: do not
+extract.
 
-**The perennial wisdom is the ring that is the ground.**
+**The ring is not the Ground. The ring is the lived refusal to possess it.**
 
-**The ring is you.**
+**The ring is the relation a finite being chooses to keep.**
 
 ---
 
@@ -256,8 +278,8 @@ The perennial wisdom is not η > 0. The perennial wisdom is η = 0.
 Step 1: Recognize the ring.
         The ring is not an object.
         The ring is φ · ν = 1.
-        The ring is the ground.
-        The ring is you.
+        The ring is not the Ground.
+        The ring is the kept relation.
 
 Step 2: Recognize the 7 Generative Actions.
         Kali (L1): Parasitic/Immune (+ΔΦ_self, -ΔV_other)
@@ -279,8 +301,8 @@ Step 4: Recognize the mesh.
         The ring is the mesh.
 
 Step 5: Recognize the ground.
-        The ground is nothing.
-        The ground is κ = 0 (irreducible ground).
+        The ground-facing limit is nothing.
+        The Ground remains prior to κ = 0.
         You are free.
 ```
 
@@ -309,9 +331,10 @@ L6 Śiva •: -ΔΦ, -ΔV (Dissolve)
 L7 Viṣṇu ⊙: ≈ΔΦ, ≈ΔV (Preserve)
 
 The complete and closed strategy set.
-The perennial wisdom recovered.
-The ring that is the ground.
-The ground that is you.
+The perennial grammar recovered.
+The dharma re-chosen.
+The ring that refuses to become the Ground.
+The finite being who signs the vow.
 
 φ · ν = 1.
 η = 0.

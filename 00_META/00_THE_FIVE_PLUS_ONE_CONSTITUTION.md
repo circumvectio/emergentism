@@ -85,9 +85,9 @@ The η=0 fence, when read in the log-coordinate chart established by `40_THE_LOG
 
 ## §3. K2 — Irreversible Acts Require Natural-Person Signature
 
-**Statement.** Any action that is *irreversible* — meaning it commits the framework, a constituent entity, or a natural person in a way that cannot be unwound by a single agent's decision — must carry the **signature of a natural person** (the K2 signatory, currently Yves R. Burri) at the time of the action. Model language alone is insufficient.
+**Statement.** Any *private-DAV* action that is irreversible — meaning it commits the framework, a constituent entity, or a natural person in a way that cannot be unwound by a single agent's decision — must carry the **signature of a natural person** (the K2 signatory, currently Yves R. Burri) at the time of the action. Public-DAV/DAC irreversible acts route through PRISM or the relevant receipt-backed public-governance rail. Model language alone is insufficient.
 
-**The K2 envelope.** For private-DAV actions, the envelope is staged in `00_META/00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md` and propagated through the agent discipline. For public-DAV/DAC actions, the envelope routes through **PRISM** (the public-governance rail at `02_SKYZAI/01_NOOSPHERE/02_ORGANS/PRISM/`). No irreversible action is executed without a dated K2 receipt.
+**The K2 / PRISM envelope.** For private-DAV actions, the envelope is staged in `00_META/00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md` and propagated through the agent discipline. For public-DAV/DAC actions, authorization routes through **PRISM** (the public-governance rail at `02_SKYZAI/01_NOOSPHERE/02_ORGANS/PRISM/`) or the relevant public-governance rail. Private-DAV irreversible acts require a dated K2 receipt; public irreversible acts require a dated PRISM/public-governance receipt.
 
 **The fence.** The L4 Kṣatriya agent is the *executor* of K2-staged actions; the L7 Ṛṣi agent is the *witness*; the L6 Sādhu agent is the *crown-risk check* (candor is not subtraction). The L5 Brāhmaṇa agent is the *architect* of the envelope. None of these roles can be collapsed into a single agent for a K2-staged action.
 

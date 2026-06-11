@@ -157,9 +157,9 @@ No one occupies L0. No one occupies L∞. You can only approach them. The helix 
 
 ---
 
-## The Gītā Proof
+## The Gītā Reading
 
-Chapter 11 of the Bhagavad Gītā is the geometric proof.
+Chapter 11 of the Bhagavad Gītā is read here as an interpretive geometric resonance. [I]
 
 Arjuna (L4, the equator, the warrior) asks to see Viṣṇu's true form. Viṣṇu grants high-priority sight. Arjuna sees **Viśvarūpa** — the cosmic form — and is terrified. He sees creation and destruction happening simultaneously. He sees all beings entering Viṣṇu's mouths and being consumed. He sees time devouring worlds.
 

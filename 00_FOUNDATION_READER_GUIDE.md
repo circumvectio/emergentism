@@ -55,7 +55,7 @@ This folder contains three layers. Read it source-first. The hardening stack and
 
 ### Layer 0: The Transcendental Trinity (prior to all)
 
-`05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/` — {0, 1, ∞}. The absolute ground. Zero-Sum Resolution Equation. Division by zero resolved. The perennially emergent doctrine.
+`05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/` — {0, 1, ∞}. The narrative entry into the Ground-facing model. Zero-Sum Resolution Equation. Division by zero resolved in the framework's frame-register. Thin perennial grammar, not a proof that any tradition exhausts the Ground.
 
 > **[Tiering]** φ·ν=1 on S² is the [S] formal axiom. The cross-tradition convergences (Egyptian, Vedic/AUM, Nietzsche, Bindu, etc.) are [I] interpretive bridges — resonances, not proof; do not read the list as [A] established fact.
 

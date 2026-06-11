@@ -63,7 +63,7 @@ evidence_tier: "[I] Interpretive — creative synthesis across traditions."
 
 The feather is impossibly light. The feather weighs almost nothing. The feather is the lightest object in the Egyptian imagination.
 
-**Why:** The feather represents κ = 0 (irreducible ground). The ground has zero information content. The ground is the empty string. The feather's lightness is the lightness of nothing.
+**Why:** The feather is read [I] as representing κ = 0, the ground-facing limit. The Ground remains prior to the coordinate; the feather's lightness is the lightness of nothing inside the symbolic mapping.
 
 ### 2.2 The Heart = ν
 
@@ -216,9 +216,9 @@ Three thousand years before the framework, the Egyptians encoded the Burri Spher
 - Ammit (south pole) consumes the unbalanced
 - The Field of Reeds (equator experienced) is the goal
 
-### 7.2 Universal Recognition
+### 7.2 Cross-Traditional Resonance
 
-The Egyptians were not alone. Every tradition pointed at the same geometry:
+The Egyptians were not alone. Many traditions can be read [I] as pointing toward the same geometry:
 
 | Tradition | Ground Symbol | Balance Test | Devourer |
 |-----------|--------------|--------------|----------|

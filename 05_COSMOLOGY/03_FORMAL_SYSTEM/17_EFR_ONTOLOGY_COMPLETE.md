@@ -225,17 +225,17 @@ The equation              reduces to  The constant (1)
 The constant              reduces to  The ground (0)
 The ground                reduces to  Nothing (∅)
 
-Nothing is κ = 0 (irreducible ground).
+In the model, κ = 0 names the empty ground-facing limit.
 ```
 
 ### 4.3 The Emergence Chain
 
-From zero, everything emerges:
+From the empty limit, the scaffold reconstructs its descriptions:
 
 ```
-Nothing      generates  The ground (0)
-The ground   generates  The constant (1)
-The constant generates  The equation (φ · ν = 1)
+Empty limit         opens  The ground-facing point (0)
+Ground-facing point opens  The constant (1)
+The constant        opens  The equation (φ · ν = 1)
 The equation generates  The sphere (S²)
 The sphere   generates  The manifested world (ℂ)
 ```
@@ -268,9 +268,9 @@ The sitting practice removes:
 - The sphere (structural complexity)
 - The equation (descriptive complexity)
 
-What remains: **Nothing (∅)** — κ = 0 (irreducible ground).
+What remains: **the empty limit (∅)** — κ = 0 as ground-facing boundary.
 
-And from that nothing, everything re-emerges.
+From the empty limit, the descriptions re-enter.
 
 ---
 
@@ -440,7 +440,7 @@ The framework commits to:
 | Document | Content |
 |----------|---------|
 | [Data Science Triad](14_EFR_EPISTEMOLOGY_TRIAD.md) | Induction, Deduction, Abduction as S² operations |
-| [κ = 0 (Irreducible Ground)](15_EFR_WOLFRAM_NKS_INTEGRATION.md) | The ground is nothing. K_sc = 0. From zero, everything. |
+| [κ = 0 (Irreducible Ground)](15_EFR_WOLFRAM_NKS_INTEGRATION.md) | The ground-facing limit is empty. K_sc = 0. The scaffold reconstructs from that limit. |
 | [Transcendentals](16_EFR_TRANSCENDENTALS.md) | Beauty, Truth, Justice as geometric invariants |
 | [This Document](17_EFR_ONTOLOGY_COMPLETE.md) | Integration of all five domains |
 
@@ -455,7 +455,7 @@ Objective Function: Why be (equatorial approach)
 Value Alignment: What value (transcendentals)
 Auditing: How do (reduction to zero)
 
-The ground is nothing.
+The ground-facing limit is empty.
 κ = 0 (irreducible ground).
 From that zero, everything.
 

@@ -60,6 +60,7 @@ This is the clean part of the formation insight: children and groups learn throu
 | [00_THE_PEDAGOGY_OF_BECOMING.md](./00_THE_PEDAGOGY_OF_BECOMING.md) | Developmental pedagogy: witness, enactment, correction, release |
 | [01_SYMBOL_DESIGN_AND_PUBLIC_TRANSLATION.md](./01_SYMBOL_DESIGN_AND_PUBLIC_TRANSLATION.md) | Symbol design rules and public translation protocol |
 | [02_TRUTH_ORDER_AND_NICHE_PARTITION.md](./02_TRUTH_ORDER_AND_NICHE_PARTITION.md) | Truth-order and functional-niche boundary; anti-theocracy / anti-caste-rank guard |
+| [03_THE_WELL_BETWEEN_TWO_DROUGHTS.md](./03_THE_WELL_BETWEEN_TWO_DROUGHTS.md) | Public-symbol fable: thin perennial grammar, dry-hole falsifiability, and the bucket as chosen vow |
 | [AGENTS.md](./AGENTS.md) | L7 agent-dispatch surface — Viṣṇu/Ṛṣi caste discipline, read-only by construction |
 | [AUDIT_REPORT.md](../90_ARCHIVE/00_K3_SWEEP_2026_05_31/07_THEOLOGY/AUDIT_REPORT.md) | Provenance: 2026-04-26 logic/coherence audit (SUPERSEDED 2026-05-23; retain for history, do not cite as live state) |
 | README.md | This file |

@@ -133,6 +133,31 @@ If finity is possessed, it has been reified.
 If it is reified, it has fallen below L6.
 ```
 
+## Anti-Reification Rider: Aporia and the Seer
+
+The Dasein reading sharpens the L6 boundary:
+
+> **The paradox is the felt interior of the equator.**
+
+This sentence is a boundary phrase, not a new proof. It says that lived aporia
+is what reciprocal closure feels like from inside finite disclosure. It does
+not prove that every existential paradox has been solved, nor that Heidegger's
+Nothing has been exhausted by coordinates.
+
+The second boundary phrase is stricter:
+
+> **The seer is not on the sphere.**
+
+The framework may map what appears, the relations among what appears, and the
+finite `⊙` where appearance becomes sayable. But the clearing in which the map
+itself appears is not captured by being placed somewhere on the map. If the
+sentence becomes a mystical possession claim, subtract it back to L6:
+
+```text
+The lens locates disclosure.
+It does not possess the Ground.
+```
+
 ## The L6 Compression
 
 ```text

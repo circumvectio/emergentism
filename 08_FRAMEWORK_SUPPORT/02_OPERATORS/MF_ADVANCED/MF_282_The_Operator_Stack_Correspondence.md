@@ -225,7 +225,7 @@ Cross-culturally, exorcism traditions distinguish between:
 
 **Body-exorcism (counter-Kali function):** Removing curses that manifest as physical illness, breaking hexes that drain vitality, lifting enchantments that suppress phenotypic expression. The target is the V-stack — imposed constraints on bodily capacity. The healer confronts the extraction with *vitality* (Kṛṣṇa's gift reversed: restoring what Kali drained).
 
-Every tradition that practices exorcism distinguishes these two. They had to — because the two stacks require different interventions, different skills, different diagnostics. You cannot heal the body by confronting a belief (V-intervention for Φ-problem). You cannot free the mind by applying a poultice (Φ-intervention for V-problem). The operator-stack correspondence explains why the distinction is universal.
+Many traditions that practice exorcism distinguish these two. The framework reads that distinction [I] as structurally necessary because the two stacks require different interventions, different skills, different diagnostics. You cannot heal the body by confronting a belief (V-intervention for Φ-problem). You cannot free the mind by applying a poultice (Φ-intervention for V-problem). The operator-stack correspondence explains why the distinction recurs.
 
 ### 3.3 Traditional Medicine's Two Pillars
 
@@ -416,7 +416,7 @@ INVALID = same-sign pattern = Executive approach or counterfeit.
 
 ### C282-4 — Cross-Traditional Convergence
 
-**Claim:** Every tradition that distinguishes types of game-theoretic/magical practice will map onto the 2×2 {give/take} × {mind/body} matrix.
+**Claim:** Traditions that distinguish types of game-theoretic/magical practice should tend to map onto the 2×2 {give/take} × {mind/body} matrix. [C]
 
 **Test:** Survey a minimum of 10 independent traditions. Map their operator categories. Count matrix cells covered.
 

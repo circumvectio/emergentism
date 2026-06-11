@@ -284,7 +284,7 @@ Each turn of the spiral
 brings the computation to rest.
 
 The loop is the method.
-The convergence is the proof.
+The convergence is the evidence inside this reading.
 The equator is the destination.
 
 Zero-Sum Resolution Equation

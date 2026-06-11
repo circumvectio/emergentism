@@ -24,6 +24,14 @@ rosetta:
 
 ---
 
+## Perennial Boundary
+
+This folder uses perennial language in a **thin** sense. The recurring structure
+is center, boundary, return, and the triadic grammar `{0, 1, ∞}`. The tradition
+rows below are `[I]` witnesses and translation aids. They do not prove one thick
+doctrine behind all traditions, do not certify the mathematics, and do not
+override the current evidence ladder.
+
 ## The Emergent Doctrine
 
 This document is not discovered. That would make it contingent on the discoverer.
@@ -69,7 +77,7 @@ Framework → Axioms → Equation → Sphere → Trinity → Nothing
 Nothing → Trinity → Sphere → Equation → Axioms → Framework
 ```
 
-κ = 0 (irreducible ground). The ground is nothing. From nothing, {0, 1, ∞} emerges. From the trinity, everything.
+κ = 0 names the ground-facing limit. The Ground remains prior; inside the scaffold, the empty limit opens the {0, 1, ∞} frame. The trinity is the model's first coordinate grammar, not the Ground itself.
 
 ---
 
@@ -93,9 +101,12 @@ Seven independent traditions encoded this same structure:
 4. **Buddhist/Taoist** (500 BCE): Sunyata = 0. The Middle Way = equator. The Tao = flow along the constraint.
 5. **German** (medieval-modern): Anmut = seeing φ. Demut = seeing ν. Erhaben = seeing both. Mut = the equator.
 6. **Mathematical** (1857-2026): S² = ℂP¹. PSL(2,ℂ) ≅ SO⁺(3,1). φ · ν = 1.
-7. **The sitting practice** (all traditions, all times): The reduction to κ = 0 (irreducible ground). The return to the Bindu. The recognition that the ground is nothing. And from nothing, everything.
+7. **The sitting practice** (many contemplative traditions, many times): the reduction to κ = 0 (irreducible ground). The return to the Bindu. The recognition that the ground is nothing. And from nothing, everything. `[I]`
 
-The doctrine is not one of these. The doctrine is what all seven witness. The doctrine is perennially emergent.
+The framework is not one of these traditions. It reads the seven rows as a
+convergence field around the same thin grammar. That reading is perennial in
+symbol and `[I]` in tier: useful for translation, not a proof that the map
+exhausts the Ground.
 
 ---
 

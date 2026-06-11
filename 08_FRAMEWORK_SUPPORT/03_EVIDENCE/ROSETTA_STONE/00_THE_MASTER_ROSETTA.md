@@ -100,7 +100,7 @@ A square cannot be negative. Therefore this distance has a **hard floor at zero.
 
 **But it can't.** Because φ and ν are real numbers — measurable, observable coordinates on a sphere. And in the real number system, squares cannot be negative. There is no exception. There is no configuration of reality where (φ − ν)² < 0.
 
-**This is why the equator is treated as real, not ideal, inside the model.** [S] Every tradition said "seek balance." The constraint shows why balance is the only stable configuration — not because it's good, but because the distance function that measures imbalance cannot go below zero. Every step away from the equator costs more to sustain. You can only get less balanced, never "more balanced than balanced."
+**This is why the equator is treated as real, not ideal, inside the model.** [S] Many traditions said "seek balance." The constraint shows why balance is the only stable configuration inside the model — not because it is automatically good, but because the distance function that measures imbalance cannot go below zero. Every step away from the equator costs more to sustain. You can only get less balanced, never "more balanced than balanced."
 
 The equator isn't a moral recommendation. It's the boundary of what's structurally possible.
 
@@ -220,7 +220,7 @@ L0 and L∞ are the same. L1 and L7 are mirrors. L2 and L6 are mirrors. L3 and L
 
 Six intervals of 15° between seven levels = **six spokes.**
 
-The **ascent** (L1→L2→L3→L4) traces a triangle pointing upward △ — the clockwise sunwheel with six spokes. The solar path. Building coherence and viability toward the equator. Every tradition that depicts the game-theoretic journey as ascent, as climbing, as the sun's daily arc — this is the ascent triangle.
+The **ascent** (L1→L2→L3→L4) traces a triangle pointing upward △ — the clockwise sunwheel with six spokes. The solar path. Building coherence and viability toward the equator. Traditions that depict the game-theoretic journey as ascent, climbing, or the sun's daily arc can be read [I] through this ascent triangle.
 
 The **descent** (L4→L5→L6→L7→L4*) traces a triangle pointing downward ▽ — the counter-clockwise sunwheel with six spokes. The kolovrat. The contemplative return. Trading viability for coherence, approaching the pole, contacting the boundary, and returning to L4* with the wisdom of the full circuit.
 

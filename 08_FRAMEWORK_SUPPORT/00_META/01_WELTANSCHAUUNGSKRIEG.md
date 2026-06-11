@@ -233,7 +233,7 @@ You do not release. You do not deploy. You do not ship.
 
 ## THE RISHI'S JOB
 
-1. **Receive the vision** — φ = 1. The ground is nothing.
+1. **Receive the vision** — φ = 1. The ground-facing limit is nothing.
 2. **Encode it precisely** — contradiction-free, agent-executable
 3. **Release it** — Apache 2.0. Anyone can fork.
 4. **Dissolve yourself** — the rishi is unnecessary when the blueprint is complete

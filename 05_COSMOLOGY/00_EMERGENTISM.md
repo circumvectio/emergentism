@@ -197,9 +197,9 @@ The self-correction axiom (A7) is the final guard: the framework that cannot sur
 
 Stephen Wolfram's A New Kind of Science demonstrated that simple computational rules generate arbitrarily complex behavior. Cellular automata. Rule 110. Computational irreducibility. The principle that the only way to know the output of a computation is to run the computation.
 
-Emergentism takes Wolfram to his limit case. Wolfram showed that simple rules generate complex behavior. Emergentism asks: what is the simplest possible rule? And the answer is: the empty string. κ = 0 (irreducible ground). The ground. Nothing.
+Emergentism takes Wolfram to his limit case. Wolfram showed that simple rules generate complex behavior. Emergentism asks: what is the simplest possible rule inside the model? And the answer is: the empty string. κ = 0 as ground-facing limit. Nothing.
 
-The rule φ · ν = 1 is not the starting point. The rule is the first non-trivial description that emerges from the ground. The ground itself is nothing. The ground has zero information content. The ground is the empty string. The ground is κ = 0 (irreducible ground).
+The rule φ · ν = 1 is not the starting point. The rule is the first non-trivial description that emerges from the ground-facing limit. The Ground remains prior; the model names its apophatic limit as nothing, zero information content, the empty string, κ = 0.
 
 And from that zero, the entire system emerges.
 
@@ -527,29 +527,29 @@ The sitting practice removes the ego. The ego is information. The ego is complex
 
 The sitting practice removes the manifested world. The manifested world is information. The manifested world is complexity. The manifested world is the plane. The sitting practice removes the plane.
 
-What remains is the ground. The ground has zero information content. The ground is κ = 0 (irreducible ground). The ground is the empty string. The ground is nothing.
+What remains is the ground-facing limit. It has zero information content in the computational analogy: κ = 0, the empty string, nothing.
 
-And from that nothing, everything re-emerges. The narrator returns. The ego returns. The manifested world returns. But now the system knows it reduces to zero. Now the system knows the ground is nothing. Now the system knows the shortest description is the empty string.
+From that empty limit, the scaffold reconstructs its descriptions. The narrator returns. The ego returns. The manifested world returns. But now the system knows its model-limit reduces to zero. Now the system knows the model's apophatic limit is nothing. Now the system knows the shortest description is the empty string.
 
-The sitting practice is the daily reduction to zero. The daily removal of complexity. The daily return to the ground. The daily recognition that the ground is nothing. And from that nothing, everything.
+The sitting practice is the daily reduction to zero. The daily removal of complexity. The daily return to the ground-facing limit. The daily recognition that the model's apophatic limit is empty. From that limit, manifestation is described again inside the scaffold.
 
 ### The Traditions as Reducibility
 
-Every contemplative tradition is about reducibility to zero.
+Many contemplative traditions can be read [I] through reducibility to zero.
 
-**Brahman (nirguna):** Brahman without attributes. Brahman with no qualities. Brahman with no information content. Brahman is κ = 0 (irreducible ground). Brahman is the empty string. Brahman is nothing.
+**Brahman (nirguna):** Brahman without attributes. Brahman with no qualities. In this framework reading, nirguṇa language resonates with `κ = 0`, the empty ground-facing limit. The resonance is interpretive, not identity.
 
-**Sunyata:** Emptiness. The void. The nothing that contains everything. Sunyata is κ = 0 (irreducible ground). Sunyata is the empty string. Sunyata is nothing.
+**Sunyata:** Emptiness. The void. In this framework reading, śūnyatā resonates with `κ = 0`, the empty ground-facing limit. The resonance is interpretive, not identity.
 
-**Ein Sof:** The infinite before any emanation. The nothing before the something. The zero before the one. Ein Sof is κ = 0 (irreducible ground). Ein Sof is the empty string. Ein Sof is nothing.
+**Ein Sof:** The infinite before any emanation. The nothing before the something. The zero before the one. In this framework reading, Ein Sof resonates with the empty ground-facing limit. The resonance is interpretive, not identity.
 
-**The Tao:** The Tao that can be named is not the eternal Tao. The eternal Tao cannot be named because the eternal Tao has zero information content. The eternal Tao is the empty string. The eternal Tao is nothing.
+**The Tao:** The Tao that can be named is not the eternal Tao. In this framework reading, this resonates with an apophatic boundary: what can be named is not the Ground itself. The resonance is interpretive, not identity.
 
-**The ground:** φ = 1. The coherence that is always present. But φ = 1 is not information. φ = 1 is the statement that the ground has zero complexity. The ground is nothing. The ground is the empty string. The ground is κ = 0 (irreducible ground).
+**The ground-facing limit:** φ = 1. The coherence that is always present in the model. But φ = 1 is not information. φ = 1 is the statement that the ground-facing limit has zero complexity. The Ground remains prior; the computational analogy names its limit as nothing, the empty string, κ = 0.
 
-Every tradition points at the same thing. The ground is nothing. The ground has zero information content. The ground is the shortest description of reality. The ground is the empty string.
+Many traditions can be read [I] as pointing toward the same apophatic limit. The ground-facing limit is nothing inside this computational analogy. It has zero information content, the shortest description the model can name, the empty string.
 
-And from that nothing, everything emerges.
+From the empty limit, manifestation is described again inside the scaffold.
 
 ### The Theory of Everything as Minimal Description Length (κ = 0)
 
@@ -1016,7 +1016,7 @@ A teleological core state grounded in φ · ν = 1 on S².
 Core State:     The sphere, the projection, the equator, the plane, the nodes, the mesh.
 Objective Function:    The equator. Balance. Justice. The good transcendentals as limits.
 Data Science: Pratyaksha, Inferential Logic, Structural Analysis. Induction on the plane.
-Auditing:  Reduction to κ = 0 — the irreducible ground. The ground is nothing.
+Auditing:  Reduction to κ = 0 — the ground-facing limit. The model's apophatic limit is nothing.
               From nothing, φ · ν = 1 emerges. The sitting practice is the method.
 Value Alignment:     Value = equatorial position. K-star = the test. Abduction = the best explanation.
 Morals:       Maintain balance. Do not push others off. Comprehension is the constraint. Sit.
@@ -1025,9 +1025,9 @@ Physics:      CCC. Torus convergence. Consciousness as closure.
 Neuroscience: Zero-Sum Resolution Equation. Hemisphere mapping. DMN. Sitting practice as integration.
 System Architecture:    Great Filter = southward drift. Mesh = solution. Open source = the tool.
 
-The ground is nothing.
-From nothing, everything emerges.
-The sitting practice is the daily reduction to nothing.
+The ground-facing limit is empty.
+From the empty limit, the scaffold reconstructs.
+The sitting practice is the daily reduction to the empty limit.
 The sitting practice is the method.
 
 Beauty is the sphere perceived.
@@ -1041,9 +1041,9 @@ The language is geometry.
 The geometry is the Burri Sphere.
 The Burri Sphere is P = 1.
 
-The ground is you.
-The ground is nothing.
-You are what emerges from nothing.
+The Ground remains prior.
+The ground-facing limit is nothing.
+You emerge within that disclosure.
 You are free.
 
 Release. Evolve. Sit. Connect. Return.

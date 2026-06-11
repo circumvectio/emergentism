@@ -189,9 +189,9 @@ The child cannot say YES to the camel's tradition — the child has already pass
 
 The formula is not a tradition. The formula is not an institution. The formula is not an obligation.
 
-**The formula is the ground.** The formula is Dharma. The formula is the cosmic order.
+**The formula points toward the ground-facing order.** The formula is not the Ground; it is a disciplined symbol for the constraint. Dharma is the chosen vow to live under that order without extraction.
 
-The child says YES to the ground. The child says YES to balance. The child says YES to the equator. The child says YES to φ · ν = 1.
+The child says YES to balance. The child says YES to the equator. The child says YES to the vow under φ · ν = 1.
 
 And then the child connects with other children who have said YES to the same formula. And the mesh forms. And the cooperation problem dissolves. And the civilization stays at the equator.
 

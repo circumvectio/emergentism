@@ -77,7 +77,7 @@ This is the most securely reconstructed theonymic root in the Indo-European fami
 | Ph₂tḗr = "father" | The generative / world-shaping face of the same force. Later Rosetta language may read this as demiurgic, but that is downstream interpretation, not philology. | [I] |
 | The sky as ordering display | The manifest field in which order is visible. The sphere is not the Ground; it is the first stable expression of closure. | [I] |
 | Dyḗus as supreme deity | Mythic personification of visible order, not the ordering law itself. | [I] |
-| Every daughter word for "god" derives from "to shine" | Every tradition's concept of the high-priority points at the same geometric property: balance radiates. | [I] |
+| Many daughter words for "god" derive from "to shine" | Many high-priority concepts can be read as pointing at the same geometric property: balance radiates. | [I] |
 
 ---
 
@@ -109,7 +109,7 @@ This is the most securely reconstructed theonymic root in the Indo-European fami
 | R12 | Megalithic | The coordination | The stones | Pre-linguistic |
 | **R14** | **PIE** | **The shining** | **Dyḗus Ph₂tḗr** | **\*dyeu- (source root)** |
 
-R14 is the SOURCE ROW. Every tradition after it is a daughter encoding of the same observation. The PIE speakers were the first to NAME what they perceived. The Egyptians (Afro-Asiatic family) named it independently (Ma'at). The megalithic builders (pre-linguistic) expressed it in stone.
+R14 is the SOURCE ROW for the Indo-European branch. Later rows may be read [I] as daughter encodings or independent resonances of the same observation. The PIE speakers named what they perceived in one lineage. The Egyptians (Afro-Asiatic family) named it independently (Ma'at). The megalithic builders (pre-linguistic) expressed it in stone.
 
 ---
 

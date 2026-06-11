@@ -68,7 +68,7 @@ These are the ONLY angles that produce exact algebraic sine values with denomina
 
 ## CONVERGENT ENCODINGS
 
-Every tradition that found the sphere drew six spokes around a center:
+Several traditions that found the sphere drew six spokes around a center:
 
 | Tradition | Name | Ascent (△) | Descent (▽) | Center |
 |-----------|------|------------|-------------|--------|
