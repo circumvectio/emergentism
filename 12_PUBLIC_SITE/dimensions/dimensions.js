@@ -354,9 +354,9 @@ function addStars(scene) {
   ));
 }
 
-function createSphere(radius = 1.4, opacity = 0.22) {
+function createSphere(radius = 1.4, opacity = 0.22, wseg = 120, hseg = 64) {
   return new THREE.Mesh(
-    new THREE.SphereGeometry(radius, 64, 36),
+    new THREE.SphereGeometry(radius, wseg, hseg),
     makeMaterial(0xffffff, opacity, true)
   );
 }
@@ -512,28 +512,56 @@ function buildScene(mode, scene) {
   }
 
   if (mode === "horn") {
-    const torus = makeMorphTorus(1.7, 48, 18, 0xffffff);
+    const torus = makeMorphTorus(1.7, 104, 30, 0xffffff);   // high-resolution mesh
     root.add(torus.mesh);
-    // the central core: gains mass/momentum as the mouth pinches shut
-    const core = makeMarker(new THREE.Vector3(0, 0, 0), 0xffd24a, 0.06);
+    // the central core: as the throat closes, the energy you pour in can no
+    // longer add velocity (β saturates at 1) — it is converted to MASS (E=γmc²).
+    const coreGlow = new THREE.Mesh(
+      new THREE.SphereGeometry(0.16, 48, 48),
+      new THREE.MeshBasicMaterial({ color: 0xffeb3b, transparent: true, opacity: 0.18 })
+    );
+    root.add(coreGlow);
+    const core = makeMarker(new THREE.Vector3(0, 0, 0), 0xffd24a, 0.07);
     root.add(core);
     const readout = makeReadout();
+    if (readout) readout.style.whiteSpace = "normal";
+    const W_MAX = 3.7;                              // limit: v/c -> 0.9988, γ -> ~20.3
+    const G_MAX = Math.cosh(W_MAX);
+    const PERIOD = 12.5;                            // seconds per convergence cycle
+    function bar(frac, color) {
+      const w = Math.max(0, Math.min(1, frac)) * 100;
+      return "<span style='display:inline-block;width:78px;height:7px;border:1px solid #3a3a3a;border-radius:4px;vertical-align:-1px;overflow:hidden'>" +
+        "<span style='display:block;height:100%;width:" + w.toFixed(0) + "%;background:" + color + "'></span></span>";
+    }
     dyn.push(function (t) {
-      // rapidity sweeps up toward the light-speed limit, then resets (a loop)
-      const w = (t * 0.32) % 3.0;                 // rapidity 0..3
-      const vc = Math.tanh(w);                    // v/c = tanh(w) -> ~0.995
-      const gamma = Math.cosh(w);                 // time dilation factor
+      // a single long convergence TO the limit: eased climb, hold at v→c, quick reset
+      const ph = (t % PERIOD) / PERIOD;
+      let conv;
+      if (ph < 0.78) { const x = ph / 0.78; conv = x * x * (3 - 2 * x); }   // smoothstep up
+      else if (ph < 0.95) { conv = 1; }                                       // hold at the limit
+      else { conv = 1 - (ph - 0.95) / 0.05; }                                 // quick rewind
+      const w = W_MAX * conv;
+      const vc = Math.tanh(w);                      // β = v/c — saturates at 1
+      const gamma = Math.cosh(w);                   // γ = mass factor = energy/(m₀c²)
       const g = torus.setVC(vc);
-      const mass = 1 + (gamma - 1) * 0.12;        // centre swells with γ
-      core.scale.setScalar(Math.min(mass, 3.4));
-      core.material.opacity = Math.min(0.35 + vc * 0.65, 1);
-      root.rotation.y += 0.004;
-      if (readout) readout.textContent =
-        "rapidity  w = " + w.toFixed(2) + "\n" +
-        "v / c     = " + vc.toFixed(3) + "   (β)\n" +
-        "γ = cosh w = " + gamma.toFixed(2) + "   time dilation\n" +
-        "mouth R−r = " + g.mouth.toFixed(2) +
-          (g.mouth > 0.02 ? "   ring" : g.mouth < -0.02 ? "   spindle · interior overlaps" : "   horn · throat closed");
+      const massScale = 0.5 + (gamma - 1) * 0.16;
+      core.scale.setScalar(Math.min(massScale, 3.6));
+      coreGlow.scale.setScalar(Math.min(0.6 + (gamma - 1) * 0.22, 5.2));
+      coreGlow.material.opacity = 0.1 + 0.28 * conv;
+      core.material.opacity = Math.min(0.4 + vc * 0.6, 1);
+      torus.mesh.material.opacity = 0.34 * (1 - 0.55 * conv);   // structure dissolves into mass
+      root.rotation.y += 0.0035;
+      const atLimit = conv > 0.9;
+      if (readout) readout.innerHTML =
+        "<div style='color:#FFEB3B;font-weight:700;letter-spacing:.08em;margin-bottom:6px'>RELATIVISTIC LIMIT  v → c</div>" +
+        "rapidity w = " + w.toFixed(2) + "<br>" +
+        "β = v/c &nbsp;" + bar(vc, "#42A5F5") + " " + vc.toFixed(4) + (atLimit ? " &nbsp;<span style='color:#42A5F5'>↑ saturated</span>" : "") + "<br>" +
+        "γ = cosh w = " + gamma.toFixed(1) + " &nbsp;<span style='color:#9CA3AF'>time ×" + gamma.toFixed(1) + "</span><br>" +
+        "m / m₀ = γ &nbsp;" + bar(gamma / G_MAX, "#FFEB3B") + " " + gamma.toFixed(1) + "<br>" +
+        "<span style='color:#F3F4F6'>E = γ m c²</span> &nbsp;<span style='color:#9CA3AF'>(c² = velocity²)</span><br>" +
+        "<span style='color:#9CA3AF'>β can't exceed 1 → added energy becomes <b style='color:#FFEB3B'>mass</b></span>" +
+        (atLimit ? "<br><span style='color:#FFEB3B'>throat closed · all energy → mass</span>"
+                 : "<br><span style='color:#6b7280'>mouth R−r = " + g.mouth.toFixed(2) + (g.mouth > 0.02 ? " · ring" : " · spindle") + "</span>");
     });
   }
 
