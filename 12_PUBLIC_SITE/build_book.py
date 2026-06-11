@@ -45,34 +45,46 @@ def build():
     heads = re.findall(r'<h1 id="([^"]+)">(.*?)</h1>', body, flags=re.S)
     parts = re.split(r'(<h1 id="[^"]+">.*?</h1>)', body, flags=re.S)
 
-    sections, toc = [], []
+    # pass 1: collect chapters
+    chapters = []
     pre = parts[0]  # anything before the first h1 (normally empty)
     i = 1
-    idx = 0
     while i < len(parts):
         h1 = parts[i]
         content = parts[i + 1] if i + 1 < len(parts) else ""
         m = re.match(r'<h1 id="([^"]+)">(.*?)</h1>', h1, flags=re.S)
-        hid, htitle = m.group(1), strip_tags(m.group(2))
+        chapters.append((m.group(1), strip_tags(m.group(2)), content))
+        i += 2
+
+    # pass 2: build sections with prev/next chapter nav
+    sections, toc = [], []
+    for idx, (hid, htitle, content) in enumerate(chapters):
         first = (idx == 0)
         cls = "chapter overture" if first else "chapter"
         # The chapter number badge (skip the front-matter overture).
         badge = "" if first else f'<span class="ch-num">{idx:02d}</span>'
+        nav_bits = []
+        if idx > 0:
+            phid, ptitle, _ = chapters[idx - 1]
+            plabel = "Overture" if idx == 1 else ptitle
+            nav_bits.append(f'<a class="ch-prev" href="#{phid}">← {plabel}</a>')
+        if idx < len(chapters) - 1:
+            nhid, ntitle, _ = chapters[idx + 1]
+            nav_bits.append(f'<a class="ch-next" href="#{nhid}">{ntitle} →</a>')
+        nav = f'<nav class="ch-nav" aria-label="Chapter navigation">{"".join(nav_bits)}</nav>' if nav_bits else ""
         sections.append(
             f'<section class="{cls}" id="{hid}">'
             f'<header class="ch-head">{badge}<h1 id="{hid}-h">{htitle}</h1></header>'
-            f'<div class="ch-body">{content}</div></section>')
+            f'<div class="ch-body">{content}</div>{nav}</section>')
         label = "Overture" if first else htitle
         toc.append(
             f'<a class="toc-link{" is-overture" if first else ""}" href="#{hid}" data-target="{hid}">'
             f'<span class="toc-n">{"·" if first else f"{idx:02d}"}</span>'
             f'<span class="toc-t">{label}</span></a>')
-        idx += 1
-        i += 2
 
     body_html = pre + "\n".join(sections)
     toc_html = "\n".join(toc)
-    n_ch = idx - 1
+    n_ch = len(chapters) - 1
     words = len(re.findall(r"\w+", strip_tags(body)))
 
     page = TEMPLATE
@@ -212,6 +224,14 @@ th{background:var(--bg2);font-family:var(--mono);font-weight:600;font-size:.8rem
 
 /* heading anchor on hover */
 h1[id],h2[id]{scroll-margin-top:70px;position:relative}
+
+/* chapter prev/next nav */
+.ch-nav{display:flex;justify-content:space-between;gap:1rem;margin:2.4rem 0 .2rem;padding-top:1.1rem;
+  border-top:1px solid var(--rule-soft);font-family:var(--sans);font-size:.85rem}
+.ch-nav a{color:var(--ink-soft);text-decoration:none;max-width:46%;overflow:hidden;
+  text-overflow:ellipsis;white-space:nowrap;transition:color .15s}
+.ch-nav a:hover{color:var(--gold)}
+.ch-nav .ch-next{margin-left:auto;text-align:right}
 
 /* footer */
 .book-foot{border-top:1px solid var(--rule);margin-top:3rem;padding:3rem clamp(1rem,5vw,2rem);text-align:center}

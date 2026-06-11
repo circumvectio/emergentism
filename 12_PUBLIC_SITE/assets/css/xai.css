@@ -409,12 +409,15 @@ noscript {
 
 .hero h1 {
   font-family: var(--font-heading);
-  font-size: 92px;
-  font-weight: 700;
-  line-height: 0.96;
+  font-size: clamp(44px, 6.5vw, 84px);
+  font-weight: 800;
+  line-height: 1.02;
   margin: 24px 0 32px;
-  letter-spacing: 0;
-  overflow-wrap: anywhere;
+  letter-spacing: -0.02em;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+  text-wrap: balance;
 }
 
 .hero .subtitle {
@@ -426,10 +429,22 @@ noscript {
 
 .equation-strip {
   margin-top: 48px;
-  font-family: var(--font-heading);
-  font-size: 28px;
+  font-family: var(--font-mono);
+  font-size: 20px;
   color: var(--gold);
-  letter-spacing: 0;
+  letter-spacing: 0.01em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 14px;
+}
+.equation-strip span {
+  white-space: nowrap;
+}
+.equation-strip span + span::before {
+  content: "·";
+  color: var(--text-muted);
+  margin-right: 14px;
 }
 
 .home-hero .equation-strip {
@@ -1385,3 +1400,70 @@ pre.glyph-block {
   margin-bottom: 4px;
   color: var(--text);
 }
+
+/* ============================================================
+   Lab instrument shell — sphere.html / cascade.html / lightcone.html
+   (their HUD selectors were orphaned by the 2026-06-07 rewrite;
+   restored here: full-bleed canvas + fixed overlay HUD)
+   ============================================================ */
+#scene { position: fixed; inset: 0; z-index: 0; }
+#scene canvas { display: block; width: 100%; height: 100%; }
+.vignette {
+  position: fixed; inset: 0; z-index: 1; pointer-events: none;
+  background: radial-gradient(120% 90% at 50% 42%, transparent 55%, rgba(0,0,0,.55) 100%);
+}
+/* hidden until the page's own catch sets display:flex */
+#fallback {
+  display: none;
+  position: fixed; inset: 0; z-index: 6;
+  flex-direction: column; align-items: center; justify-content: center;
+  gap: 12px; text-align: center; padding: 24px;
+  background: var(--bg); color: var(--text-muted);
+  font-family: var(--font-mono); font-size: 14px;
+}
+#fallback .g { font-size: 40px; color: var(--gold); }
+#panel {
+  position: fixed; right: 20px; top: 84px; z-index: 4;
+  width: min(320px, 86vw); padding: 14px 16px;
+  background: color-mix(in srgb, var(--bg) 84%, transparent);
+  border: 1px solid var(--border); border-radius: 10px;
+  backdrop-filter: blur(8px);
+  font-family: var(--font-mono); font-size: 13px;
+}
+#panel .lvl { color: var(--gold); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; }
+#panel .op { font-size: 20px; margin: 4px 0 2px; font-family: var(--font-heading); font-weight: 700; }
+#panel .tier { font-size: 12px; margin-bottom: 6px; }
+#panel .ology { color: var(--text-muted); }
+#panel .q { font-style: italic; color: var(--text-muted); margin: 4px 0 10px; }
+#panel .row { display: flex; justify-content: space-between; gap: 10px; padding: 5px 0; border-top: 1px solid var(--border); }
+#panel .k { color: var(--text-muted); }
+#panel .v { color: var(--gold); }
+.hint {
+  position: fixed; left: 50%; transform: translateX(-50%); bottom: 108px; z-index: 4;
+  font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); letter-spacing: .06em;
+  white-space: nowrap;
+}
+.legend {
+  position: fixed; left: 50%; transform: translateX(-50%); bottom: 76px; z-index: 4;
+  display: flex; gap: 14px; white-space: nowrap;
+  font-family: var(--font-mono); font-size: 12px; color: var(--text-muted);
+}
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; }
+.legend-note {
+  position: fixed; left: 50%; transform: translateX(-50%); bottom: 10px; z-index: 4;
+  max-width: 76ch !important; margin: 0 !important;
+  font-family: var(--font-mono); color: var(--text-muted);
+  background: color-mix(in srgb, var(--bg) 80%, transparent);
+  padding: 5px 12px; border-radius: 8px; backdrop-filter: blur(6px);
+}
+
+/* ============================================================
+   Polish: focus + scrollbar + selection (Skyzai instrument feel)
+   ============================================================ */
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; border-radius: 2px; }
+::selection { background: rgba(255, 235, 59, .3); color: #050505; }
+* { scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold); }
+::-webkit-scrollbar-track { background: transparent; }
