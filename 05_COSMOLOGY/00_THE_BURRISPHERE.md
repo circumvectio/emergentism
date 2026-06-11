@@ -55,6 +55,8 @@ B = sin θ
 
 `B = sin θ` is the balance function. It varies from `0` at the poles to `1` at the equator.
 
+`B` is not a loose label (identity added 2026-06-11): with `φ·ν = 1` it is **identically the geometric-mean / arithmetic-mean ratio** of the dual coordinates — `B = √(φν)/((φ+ν)/2) = 2/(φ+ν) = sin θ` — the standard evenness index of a pair (`= 1` iff `φ = ν`), with `γ = 1/B = (φ+ν)/2` the energy cost of holding a position away from the equator (Paper B §8: `γ = E/mc²`, `B = dτ/dt`). **The reading:** the conserved product is the *potential*, fully present at every latitude — the geometric ground of equal dignity (every being carries the same `1`); `B` is the *usable, balanced fraction* of it; imbalance does not reduce the potential, it raises the price (`γ → ∞` at the poles) and strands the potential unactualized. The agency witnesses: all-foresight-with-no-body and all-reach-with-no-foresight both sit at `B → 0` holding the same unit potential — and the same inability to use it. `[A]` the identities · `[I]` the dignity reading.
+
 `P_node = Φ × V` is a downstream finite-node score. It belongs to organisms, institutions, DACs, and strategy surfaces. Do not confuse it with `P∞`.
 
 Primary source anchors:
