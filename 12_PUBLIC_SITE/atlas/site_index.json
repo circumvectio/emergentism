@@ -1,0 +1,1048 @@
+{
+ "generated": "build_atlas_index.py",
+ "total": 238,
+ "tree": [
+  {
+   "key": "unfolding",
+   "label": "The Unfolding · D0–D6",
+   "pages": [
+    {
+     "href": "/0/",
+     "title": "Titans of Numbers"
+    },
+    {
+     "href": "/1/",
+     "title": "The Special One"
+    },
+    {
+     "href": "/2/",
+     "title": "The Mu-Limit"
+    },
+    {
+     "href": "/3/",
+     "title": "Sphere of Infinite Diameter"
+    },
+    {
+     "href": "/4/",
+     "title": "The Horn Torus"
+    },
+    {
+     "href": "/5/",
+     "title": "The Burrisphere"
+    },
+    {
+     "href": "/6/",
+     "title": "Convergence and Return"
+    }
+   ]
+  },
+  {
+   "key": "doctrine",
+   "label": "Doctrine",
+   "pages": [
+    {
+     "href": "/axioms/",
+     "title": "The Seven Axioms"
+    },
+    {
+     "href": "/rosetta/",
+     "title": "The Master Rosetta Stone"
+    },
+    {
+     "href": "/soul-loop/",
+     "title": "The Soul Loop"
+    }
+   ]
+  },
+  {
+   "key": "reading",
+   "label": "Reading",
+   "pages": [
+    {
+     "href": "/read/",
+     "title": "Read the Framework — The Complete Public Reading Path"
+    },
+    {
+     "href": "/book/",
+     "title": "The Book"
+    }
+   ]
+  },
+  {
+   "key": "canon",
+   "label": "Canon (9)",
+   "pages": [
+    {
+     "href": "/canon/",
+     "title": "Framework Canon — Public Surface"
+    },
+    {
+     "href": "/canon/the-burrisphere/",
+     "title": "The Burrisphere"
+    },
+    {
+     "href": "/canon/the-complete-ontology-of-reality/",
+     "title": "The Complete Ontology of Reality"
+    },
+    {
+     "href": "/canon/the-five-plus-one-constitution/",
+     "title": "The 5+1 Constitution"
+    },
+    {
+     "href": "/canon/the-generative-table/",
+     "title": "THE GENERATIVE TABLE"
+    },
+    {
+     "href": "/canon/the-geometric-ontology-of-reality/",
+     "title": "The Geometric Ontology of Reality"
+    },
+    {
+     "href": "/canon/the-logarithmic-realignment/",
+     "title": "The Logarithmic Realignment"
+    },
+    {
+     "href": "/canon/the-ontology-index/",
+     "title": "The Ontology Index"
+    },
+    {
+     "href": "/canon/the-reciprocal-public-edition/",
+     "title": "The Reciprocal"
+    }
+   ]
+  },
+  {
+   "key": "formal",
+   "label": "Formal System (38)",
+   "pages": [
+    {
+     "href": "/formal/",
+     "title": "The Formal System"
+    },
+    {
+     "href": "/formal/00-correction-wolfram-nks/",
+     "title": "CORRECTION: Wolfram NKS Integration"
+    },
+    {
+     "href": "/formal/00-kstar-disambiguation/",
+     "title": "η Disambiguation"
+    },
+    {
+     "href": "/formal/00-the-seven-axioms/",
+     "title": "THE SEVEN AXIOMS"
+    },
+    {
+     "href": "/formal/08-efr-power-max-lemma/",
+     "title": "THE POWER-MAX LEMMA"
+    },
+    {
+     "href": "/formal/09-efr-godel-clarification/",
+     "title": "GÖDEL CLARIFICATION"
+    },
+    {
+     "href": "/formal/10-efr-mu-limit-formula/",
+     "title": "THE μ-LIMIT FORMULA"
+    },
+    {
+     "href": "/formal/11-efr-triadic-stability/",
+     "title": "TRIADIC STABILITY: WHY THREE IS UNIQUE"
+    },
+    {
+     "href": "/formal/12-efr-extraction-coefficient/",
+     "title": "THE EXTRACTION COEFFICIENT (η)"
+    },
+    {
+     "href": "/formal/13-efr-two-sacrifices/",
+     "title": "THE TWO SACRIFICES"
+    },
+    {
+     "href": "/formal/14-efr-epistemology-triad/",
+     "title": "EFR EPISTEMOLOGY: THE TRIAD OF KNOWING"
+    },
+    {
+     "href": "/formal/15-efr-wolfram-nks-integration/",
+     "title": "EFR &amp; MAXIMUM REDUCIBILITY"
+    },
+    {
+     "href": "/formal/16-efr-transcendentals/",
+     "title": "THE THREE TRANSCENDENTALS ON THE BURRI SPHERE"
+    },
+    {
+     "href": "/formal/17-efr-ontology-complete/",
+     "title": "EFR ONTOLOGY: THE COMPLETE SYSTEM"
+    },
+    {
+     "href": "/formal/18-efr-methodology-complete/",
+     "title": "PART IV: METHODOLOGY"
+    },
+    {
+     "href": "/formal/19-efr-geometric-exclusion/",
+     "title": "THE STRATEGIC EXCLUSION"
+    },
+    {
+     "href": "/formal/20-efr-operators-on-complex-plane/",
+     "title": "THE FOUR OPERATORS ON THE COMPLEX PLANE"
+    },
+    {
+     "href": "/formal/21-triadic-stability-correspondence/",
+     "title": "THE TRIADIC STABILITY THEOREM (Revised)"
+    },
+    {
+     "href": "/formal/22-power-max-demonstration/",
+     "title": "THE POWER-MAX LEMMA"
+    },
+    {
+     "href": "/formal/23-dimensional-closure-proof/",
+     "title": "DIMENSIONAL CLOSURE: THE SELF-GENERATING LOOP"
+    },
+    {
+     "href": "/formal/24-geometric-exclusion-convergence/",
+     "title": "THE STRATEGIC EXCLUSION: FORMAL CONVERGENCE THAT EXTRACTION IS IRRATIONAL AT THE EQUATOR"
+    },
+    {
+     "href": "/formal/25-steel-thread/",
+     "title": "25. The Steel Thread — What Is Actually Proven"
+    },
+    {
+     "href": "/formal/26-the-derivation-axioms/",
+     "title": "THE DERIVATION AXIOMS"
+    },
+    {
+     "href": "/formal/27-dimensional-architecture-clarification/",
+     "title": "Dimensional Architecture Clarification"
+    },
+    {
+     "href": "/formal/28-efr-hygiene-boundary-theorem/",
+     "title": "The Hygiene Boundary Theorem"
+    },
+    {
+     "href": "/formal/29-primitives-and-type-signatures/",
+     "title": "PRIMITIVES AND TYPE SIGNATURES"
+    },
+    {
+     "href": "/formal/30-operational-definitions/",
+     "title": "OPERATIONAL DEFINITIONS"
+    },
+    {
+     "href": "/formal/31-falsifiers-index/",
+     "title": "FALSIFIERS INDEX"
+    },
+    {
+     "href": "/formal/32-theorem-upgrade-protocol/",
+     "title": "THEOREM UPGRADE PROTOCOL"
+    },
+    {
+     "href": "/formal/33-nash-equilibrium-eta-zero/",
+     "title": "Geometric Constraint Enforcement in Multi-Agent Systems: η = 0 as Nash Equilibrium on S^2"
+    },
+    {
+     "href": "/formal/34-d4-d5-canonical-reference/",
+     "title": "D4/D5 Canonical Reference Index"
+    },
+    {
+     "href": "/formal/35-phi-meter-v1-spec/",
+     "title": "PHI-METER v1 SPEC (Code Lens)"
+    },
+    {
+     "href": "/formal/36-runtime-lens-v1-spec/",
+     "title": "RUNTIME-LENS φ-METER v1 SPEC"
+    },
+    {
+     "href": "/formal/37-adoption-lens-v1-spec/",
+     "title": "ADOPTION-LENS φ-METER v1 SPEC"
+    },
+    {
+     "href": "/formal/38-quantum-foundations-confirmation-boundary/",
+     "title": "Quantum Foundations Confirmation Boundary"
+    },
+    {
+     "href": "/formal/39-suda-cross-validation-protocols/",
+     "title": "Suda Cross-Validation Protocols"
+    },
+    {
+     "href": "/formal/40-the-logarithmic-realignment/",
+     "title": "The Logarithmic Realignment"
+    },
+    {
+     "href": "/formal/41-unified-dimensional-derivation/",
+     "title": "The Unified Dimensional Derivation"
+    }
+   ]
+  },
+  {
+   "key": "paradox",
+   "label": "Paradox Dissolutions (27)",
+   "pages": [
+    {
+     "href": "/paradox/",
+     "title": "Paradox Dissolutions"
+    },
+    {
+     "href": "/paradox/00-corpus/",
+     "title": "THE WHOLE — seen from `02_PARADOX_DISSOLUTIONS/`"
+    },
+    {
+     "href": "/paradox/00-gardener-nexus/",
+     "title": "00_GARDENER_NEXUS — PARADOX DISSOLUTIONS (L6/L7 Cognitive Layer)"
+    },
+    {
+     "href": "/paradox/00-paradox-suite-audit/",
+     "title": "PARADOX SUITE AUDIT"
+    },
+    {
+     "href": "/paradox/00-the-extraction-pattern/",
+     "title": "00: THE EXTRACTION PATTERN"
+    },
+    {
+     "href": "/paradox/pd-00-index/",
+     "title": "PD_00: MASTER PARADOX INDEX"
+    },
+    {
+     "href": "/paradox/pd-04-zeno/",
+     "title": "PD_04: ZENO&#x27;S PARADOXES (ACHILLES &amp; THE ARROW)"
+    },
+    {
+     "href": "/paradox/pd-05-the-one-and-the-many/",
+     "title": "PD_05: THE ONE AND THE MANY"
+    },
+    {
+     "href": "/paradox/pd-06-the-ship-of-theseus/",
+     "title": "PD_06: THE SHIP OF THESEUS"
+    },
+    {
+     "href": "/paradox/pd-07-fermi-paradox/",
+     "title": "PD_07: THE FERMI PARADOX (THE BIFURCATION FILTER)"
+    },
+    {
+     "href": "/paradox/pd-08-the-liar-paradox/",
+     "title": "PD_08: THE LIAR PARADOX"
+    },
+    {
+     "href": "/paradox/pd-09-leibniz-necessary-being/",
+     "title": "PD_09: LEIBNIZ&#x27;S NECESSARY BEING"
+    },
+    {
+     "href": "/paradox/pd-10-is-ought/",
+     "title": "PD_10: THE IS-OUGHT GAP BYPASSED"
+    },
+    {
+     "href": "/paradox/pd-11-free-will-vs-determinism/",
+     "title": "PD_11: FREE WILL VS DETERMINISM"
+    },
+    {
+     "href": "/paradox/pd-12-measurement-problem/",
+     "title": "PD_12: THE MEASUREMENT PROBLEM"
+    },
+    {
+     "href": "/paradox/pd-13-hard-problem/",
+     "title": "PD_13: THE HARD PROBLEM OF CONSCIOUSNESS"
+    },
+    {
+     "href": "/paradox/pd-14-mind-body/",
+     "title": "PD_14: THE MIND-BODY PROBLEM"
+    },
+    {
+     "href": "/paradox/pd-15-problem-of-evil/",
+     "title": "PD_15: THE PROBLEM OF EVIL"
+    },
+    {
+     "href": "/paradox/pd-16-meaning-of-life/",
+     "title": "PD_16: THE MEANING OF LIFE"
+    },
+    {
+     "href": "/paradox/pd-18-the-extraction-paradox/",
+     "title": "PD-18: The Extraction Paradox"
+    },
+    {
+     "href": "/paradox/pd-19-the-hard-problem-of-consciousness/",
+     "title": "PD-19: The Hard Problem of Consciousness"
+    },
+    {
+     "href": "/paradox/pd-20-philosophical-implications/",
+     "title": "PD_20: PHILOSOPHICAL IMPLICATIONS"
+    },
+    {
+     "href": "/paradox/pd-21-problem-of-death/",
+     "title": "PD_21: THE PROBLEM OF DEATH"
+    },
+    {
+     "href": "/paradox/pd-22-scientific-implications/",
+     "title": "PD_22: SCIENTIFIC IMPLICATIONS"
+    },
+    {
+     "href": "/paradox/pd-23-the-completion/",
+     "title": "00: THE COMPLETION OF THE CATEGORICAL SCAFFOLD"
+    },
+    {
+     "href": "/paradox/pd-24-the-third-unveiling/",
+     "title": "PD_24: THE THIRD UNVEILING — FINITY"
+    },
+    {
+     "href": "/paradox/pd-25-bell-local-realism/",
+     "title": "PD_25: Bell Inequalities, Locality, Realism, And The 2022 Nobel Prize"
+    }
+   ]
+  },
+  {
+   "key": "memetic",
+   "label": "Memetics (7)",
+   "pages": [
+    {
+     "href": "/memetic/",
+     "title": "Memetics"
+    },
+    {
+     "href": "/memetic/01-memes-hardware-software-conflict/",
+     "title": "**The Genetic vs. Memetic Tug-of-War: Evolutionary Conflict and Central Nervous System Hijacking**"
+    },
+    {
+     "href": "/memetic/02-memes-hardware-software-evolution/",
+     "title": "**The Human Architecture and Memetic Software: An Interdisciplinary Analysis of Cultural Parasitism, Algorithmic Epidemiology, and Evolutionary Conflict**"
+    },
+    {
+     "href": "/memetic/03-memes-mind-hardware-culture-software/",
+     "title": "**The Architecture of Mind and Culture: A Comprehensive Analysis of Memetic Theory**"
+    },
+    {
+     "href": "/memetic/04-anti-memetic-defense-architectures/",
+     "title": "**Biological Prerequisites for Cybernetic Integration: Hardening the Human Hardware Against Memetic Capture**"
+    },
+    {
+     "href": "/memetic/05-ancient-egregore-architectures/",
+     "title": "**The Architecture of Capture and Syntropy: Reverse-Engineering Ancient Egregoric Systems as Societal Operating Systems**"
+    },
+    {
+     "href": "/memetic/06-applied-memetic-defense-strategies/",
+     "title": "**Engineering the Anti-Capture Architecture: Syntropic Network Primitives and the Memetic Firewall**"
+    }
+   ]
+  },
+  {
+   "key": "rosettad",
+   "label": "Rosetta Domains (39)",
+   "pages": [
+    {
+     "href": "/rosettad/",
+     "title": "Rosetta D-Series"
+    },
+    {
+     "href": "/rosettad/00-corpus/",
+     "title": "THE WHOLE — seen from `03_EVIDENCE/ROSETTA_STONE/`"
+    },
+    {
+     "href": "/rosettad/00-selection-methodology/",
+     "title": "Rosetta Stone: Selection Auditing and Exclusions"
+    },
+    {
+     "href": "/rosettad/00-suda-convergent-reciprocal-symmetry/",
+     "title": "Suda Reciprocal-Symmetry Convergence"
+    },
+    {
+     "href": "/rosettad/00-suda-value-extraction-deep-synthesis/",
+     "title": "Value Extraction from Suda&#x27;s Corpus — Deep Synthesis"
+    },
+    {
+     "href": "/rosettad/00-the-seven-ologies-per-the-rosetta/",
+     "title": "The Seven -ologies per the Master Rosetta"
+    },
+    {
+     "href": "/rosettad/00-the-seven-philosophical-disciplines/",
+     "title": "The Seven Philosophical Disciplines per the Canonical Rosetta"
+    },
+    {
+     "href": "/rosettad/00-three-non-western-traditions-and-the-l-levels/",
+     "title": "Three Non-Western Traditions and the Emergentism L-Level Structure"
+    },
+    {
+     "href": "/rosettad/01-alternative-geometries-and-contradicting-traditions/",
+     "title": "Alternative Geometries and Contradicting Traditions"
+    },
+    {
+     "href": "/rosettad/02-rows-columns-deepening-2026-04-25/",
+     "title": "Rosetta Rows and Columns: Deepening Note"
+    },
+    {
+     "href": "/rosettad/03-rosetta-dac-operating-system/",
+     "title": "THE ROSETTA DAC OPERATING SYSTEM"
+    },
+    {
+     "href": "/rosettad/04-deep-rumination-2026-04-25/",
+     "title": "Deep Rumination — The Rosetta Stone"
+    },
+    {
+     "href": "/rosettad/05-non-weird-sweep-2026-04-25/",
+     "title": "Non-WEIRD Sweep — Daoist 內丹 / Buddhist 10 Bhūmis / Sub-Saharan / Polynesian"
+    },
+    {
+     "href": "/rosettad/06-structural-pressure-points-2026-04-25/",
+     "title": "The Rosetta Stone: Structural Pressure Points"
+    },
+    {
+     "href": "/rosettad/07-mirror-symmetry-falsification-test-2026-04-25/",
+     "title": "Mirror Symmetry as a Falsification Engine — Per-Column Test"
+    },
+    {
+     "href": "/rosettad/08-mirror-test-extension-and-failed-mappings-2026-04-25/",
+     "title": "Mirror Test Extension, Full Scoreboard, Mirror-Completion Experiment, Failed Mappings"
+    },
+    {
+     "href": "/rosettad/09-failed-mappings-2026-04-25/",
+     "title": "Failed Mappings — Domains That Do Not Fit the 7-Stage Structure"
+    },
+    {
+     "href": "/rosettad/10-cell-audit-schema-2026-04-25/",
+     "title": "Rosetta Cell Audit Schema"
+    },
+    {
+     "href": "/rosettad/10-indigenous-american-and-tahitian-2026-04-25/",
+     "title": "Indigenous American Sweep + Tahitian Arioi Verification"
+    },
+    {
+     "href": "/rosettad/11-cell-audit-seed-l4-center-2026-04-25/",
+     "title": "L4 Center Cell Audit Seed"
+    },
+    {
+     "href": "/rosettad/12-mirror-pair-audits-2026-04-25/",
+     "title": "Mirror Pair Audits: L3/L5, L2/L6, L1/L7"
+    },
+    {
+     "href": "/rosettad/13-column-cell-audit-economics-2026-04-25/",
+     "title": "Economics Column Cell Audit"
+    },
+    {
+     "href": "/rosettad/14-column-cell-audit-music-2026-04-25/",
+     "title": "Music Column Cell Audit"
+    },
+    {
+     "href": "/rosettad/15-column-cell-audit-neuroscience-2026-04-25/",
+     "title": "Neuroscience Column Cell Audit"
+    },
+    {
+     "href": "/rosettad/16-plato-lakota-neuroscience-2026-04-25/",
+     "title": "Plato Mirror-Completion · Lakota Seven Sacred Rites · Neuroscience Path A/B"
+    },
+    {
+     "href": "/rosettad/17-cell-audit-psychology-2026-04-25/",
+     "title": "Cell Audit: Psychology &amp; Development"
+    },
+    {
+     "href": "/rosettad/animation-spec/",
+     "title": "THE Three-Stage Process ANIMATION"
+    },
+    {
+     "href": "/rosettad/failed-mappings-and-testing-queue/",
+     "title": "FAILED MAPPINGS &amp; TESTING QUEUE"
+    },
+    {
+     "href": "/rosettad/naming-doctrine/",
+     "title": "Rosetta Stone Naming Doctrine"
+    },
+    {
+     "href": "/rosettad/rosetta-civilisational/",
+     "title": "rosetta stone: CIVILISATIONAL DYNAMICS"
+    },
+    {
+     "href": "/rosettad/rosetta-computation/",
+     "title": "rosetta stone: COMPUTATION &amp; AI"
+    },
+    {
+     "href": "/rosettad/rosetta-economics/",
+     "title": "Rosetta Economics — Market Structures as L-Level Projections"
+    },
+    {
+     "href": "/rosettad/rosetta-indigenous-american/",
+     "title": "Rosetta Indigenous American — Lakota, Mesoamerican, Andean"
+    },
+    {
+     "href": "/rosettad/rosetta-music/",
+     "title": "Rosetta Music — The Diatonic Scale as L-Level Projection"
+    },
+    {
+     "href": "/rosettad/rosetta-mythology/",
+     "title": "rosetta stone: MYTHOLOGY &amp; ARCHETYPE"
+    },
+    {
+     "href": "/rosettad/rosetta-neuroscience/",
+     "title": "rosetta stone: NEUROSCIENCE &amp; COGNITION"
+    },
+    {
+     "href": "/rosettad/rosetta-operator-pathology/",
+     "title": "rosetta stone: OPERATOR PATHOLOGY &amp; SHADOW"
+    },
+    {
+     "href": "/rosettad/rosetta-psychology/",
+     "title": "rosetta stone: PSYCHOLOGY &amp; DEVELOPMENT"
+    },
+    {
+     "href": "/rosettad/rosetta-psychology-research-brief/",
+     "title": "RESEARCH BRIEF: The Three-Stage Process Psychology Convergence Claim"
+    }
+   ]
+  },
+  {
+   "key": "operators",
+   "label": "Operators (30)",
+   "pages": [
+    {
+     "href": "/operators/",
+     "title": "Operators"
+    },
+    {
+     "href": "/operators/mf-281-the-replicator-decomposition/",
+     "title": "MF-281: THE REPLICATOR DECOMPOSITION"
+    },
+    {
+     "href": "/operators/mf-282-the-operator-stack-correspondence/",
+     "title": "MF-282: THE OPERATOR-STACK CORRESPONDENCE"
+    },
+    {
+     "href": "/operators/mf-283-the-orthogonality-theorem-v2/",
+     "title": "MF-283: THE ORTHOGONALITY THEOREM"
+    },
+    {
+     "href": "/operators/mf-284-the-gods-are-f5/",
+     "title": "MF-284: THE GODS ARE F₅"
+    },
+    {
+     "href": "/operators/mf-285-dreams-are-unanchored-d5/",
+     "title": "MF-285: DREAMS ARE UNANCHORED D5"
+    },
+    {
+     "href": "/operators/mf-286-the-mu-limit-crossing/",
+     "title": "MF-286: THE μ-LIMIT CROSSING"
+    },
+    {
+     "href": "/operators/mf-287-wigners-puzzle-dissolved/",
+     "title": "MF-287: WIGNER&#x27;S PUZZLE DISSOLVED"
+    },
+    {
+     "href": "/operators/mf-288-money-is-the-born-rule/",
+     "title": "MF-288: MONEY IS THE BORN RULE"
+    },
+    {
+     "href": "/operators/mf-289-the-hard-problem-is-i/",
+     "title": "MF-289: THE HARD PROBLEM IS i ∉ ℝ"
+    },
+    {
+     "href": "/operators/mf-290-the-ektropic-radius-v2/",
+     "title": "MF-290: THE EKTROPIC RADIUS"
+    },
+    {
+     "href": "/operators/mf-291-the-landauer-horn/",
+     "title": "MF-291: THE LANDAUER HORN"
+    },
+    {
+     "href": "/operators/mf-292-the-bekenstein-ceiling/",
+     "title": "MF-292: THE BEKENSTEIN CEILING"
+    },
+    {
+     "href": "/operators/mf-293-language-is-bandwidth/",
+     "title": "MF-293: LANGUAGE IS BANDWIDTH"
+    },
+    {
+     "href": "/operators/mf-294-egregores-are-horn-networks/",
+     "title": "MF-294: EGREGORES ARE HORN NETWORKS"
+    },
+    {
+     "href": "/operators/mf-295-c-bounds-the-moral-circle/",
+     "title": "MF-295: c BOUNDS THE MORAL CIRCLE"
+    },
+    {
+     "href": "/operators/mf-296-gravity-is-time/",
+     "title": "MF-296: GRAVITY IS TIME"
+    },
+    {
+     "href": "/operators/mf-297-alpha-is-the-coupling/",
+     "title": "MF-297: α IS THE COUPLING"
+    },
+    {
+     "href": "/operators/mf-298-dark-matter-is-mutual-information/",
+     "title": "MF-298: DARK MATTER AS MUTUAL INFORMATION"
+    },
+    {
+     "href": "/operators/mf-299-hawking-radiation-is-a7/",
+     "title": "MF-299: HAWKING RADIATION IS A7"
+    },
+    {
+     "href": "/operators/mf-300-cancer-is-cellular-raktabija/",
+     "title": "MF-300: CANCER IS CELLULAR RAKTABĪJA"
+    },
+    {
+     "href": "/operators/mf-301-photosynthesis-is-the-original-f5/",
+     "title": "MF-301: PHOTOSYNTHESIS IS THE ORIGINAL F₅"
+    },
+    {
+     "href": "/operators/mf-63-mobius-operators/",
+     "title": "MF-63: The Möbius Classification of Operators"
+    },
+    {
+     "href": "/operators/mf-64-berry-phase/",
+     "title": "MF-64: The Berry Phase Principle"
+    },
+    {
+     "href": "/operators/mf-65-curvature-transition/",
+     "title": "MF-65: The Curvature Unification"
+    },
+    {
+     "href": "/operators/mf-66-mandelbrot-consciousness/",
+     "title": "MF-66: The Mandelbrot Set IS the Formula Being Iterated"
+    },
+    {
+     "href": "/operators/mf-67-double-cover-privacy/",
+     "title": "MF-67: The Double Cover and the Private Dimension"
+    },
+    {
+     "href": "/operators/mf-68-area-measure/",
+     "title": "MF-68: The Prior Probability of Ektropy"
+    },
+    {
+     "href": "/operators/mf-69-horned-torus-relativity/",
+     "title": "MF-69: The Horned Torus IS the Light Cone"
+    },
+    {
+     "href": "/operators/mf-70-kali-closes-sphere/",
+     "title": "MF-70: Kālī Closes the Sphere"
+    }
+   ]
+  },
+  {
+   "key": "will",
+   "label": "Will / Teleology (31)",
+   "pages": [
+    {
+     "href": "/will/",
+     "title": "Teleology"
+    },
+    {
+     "href": "/will/00-a-square-cannot-be-negative/",
+     "title": "30. The Derivation"
+    },
+    {
+     "href": "/will/00-from-lagrangian-to-dac/",
+     "title": "From Lagrangian to DAC"
+    },
+    {
+     "href": "/will/00-neoteny-the-hardware-upgrade/",
+     "title": "Neoteny as Delayed Closure and Extended Plasticity"
+    },
+    {
+     "href": "/will/00-saturation-and-return/",
+     "title": "SATURATION AND RETURN"
+    },
+    {
+     "href": "/will/00-the-core-conjecture/",
+     "title": "The Core Conjecture — F5 And The Tendency To Balance"
+    },
+    {
+     "href": "/will/00-the-framework-on-its-own-teleology-spectrum/",
+     "title": "THE FRAMEWORK ON ITS OWN TELEOLOGY SPECTRUM"
+    },
+    {
+     "href": "/will/00-the-generative-lagrangian/",
+     "title": "The Generative Lagrangian"
+    },
+    {
+     "href": "/will/00-the-hidden-center-of-the-framework/",
+     "title": "THE HIDDEN CENTER OF THE FRAMEWORK"
+    },
+    {
+     "href": "/will/00-the-tantric-vajrayana-transmutation/",
+     "title": "The Tantric and Vajrayana Transmutation of Trophic Friction"
+    },
+    {
+     "href": "/will/01-f5-force-map-and-ektropy/",
+     "title": "The 7 Generative Actions and Ektropy"
+    },
+    {
+     "href": "/will/01-the-rosetta-question/",
+     "title": "The Three-Stage Process Question — Discovery or Mirror?"
+    },
+    {
+     "href": "/will/02-the-serpent-is-f5/",
+     "title": "The Serpent Is F₅ — The Helix, The Ordering Force, *h₂r̥tó-*"
+    },
+    {
+     "href": "/will/03-f5-as-gradient-selection-with-staging/",
+     "title": "F₅ as Gradient-Selection-with-Staging"
+    },
+    {
+     "href": "/will/03-why-the-constraint-matters/",
+     "title": "Why The Constraint Matters — Ethics as Arithmetic"
+    },
+    {
+     "href": "/will/04-what-the-corpus-reveals/",
+     "title": "What The Corpus Reveals — 8 Key Patterns"
+    },
+    {
+     "href": "/will/05-exhaustive-observations/",
+     "title": "Exhaustive Observations — 28 Observations from 8.6M Words"
+    },
+    {
+     "href": "/will/06-the-unsaid/",
+     "title": "What Remains Unseen — 39 Observations Beyond the Corpus"
+    },
+    {
+     "href": "/will/06a-what-remains-unseen/",
+     "title": "What Remains Unseen"
+    },
+    {
+     "href": "/will/07-the-four-forces-are-the-four-lines/",
+     "title": "The Four Forces Are the Four Lines"
+    },
+    {
+     "href": "/will/08-what-we-havent-said/",
+     "title": "What We Haven&#x27;t Said Yet — The Unarticulated Core"
+    },
+    {
+     "href": "/will/09-path-d-the-amgm-geometry/",
+     "title": "Path D: The AM-GM Geometry"
+    },
+    {
+     "href": "/will/09a-the-lagrangian-question/",
+     "title": "The Lagrangian Question"
+    },
+    {
+     "href": "/will/10a-path-d-computation/",
+     "title": "Path D Computation: The AM-GM Cone and the Four Forces"
+    },
+    {
+     "href": "/will/11-phase-zero-complete/",
+     "title": "11 Phase Zero Complete"
+    },
+    {
+     "href": "/will/12-the-spectrum-results/",
+     "title": "The Spectrum Results"
+    },
+    {
+     "href": "/will/13-paths-abc-analysis/",
+     "title": "Paths A, B, C — Systematic Analysis"
+    },
+    {
+     "href": "/will/14-log-form-of-the-power-max-lemma/",
+     "title": "Log Form of the Power-Max Lemma"
+    },
+    {
+     "href": "/will/15-log-form-of-the-power-max-lemma/",
+     "title": "Log Form of the Power-Max Lemma — Correction"
+    },
+    {
+     "href": "/will/16-operator-consistency-audit/",
+     "title": "16_OPERATOR_CONSISTENCY_AUDIT"
+    },
+    {
+     "href": "/will/l1-l7-refinement-audit/",
+     "title": "L1–L7 Refinement Audit"
+    }
+   ]
+  },
+  {
+   "key": "value",
+   "label": "Value / Axiology (10)",
+   "pages": [
+    {
+     "href": "/value/",
+     "title": "Axiology"
+    },
+    {
+     "href": "/value/00-anmut-and-demut/",
+     "title": "ANMUT AND DEMUT"
+    },
+    {
+     "href": "/value/00-bridge-laws-between-levels/",
+     "title": "BRIDGE LAWS BETWEEN LEVELS"
+    },
+    {
+     "href": "/value/00-commandment-vs-geometry/",
+     "title": "COMMANDMENT VS. GEOMETRY"
+    },
+    {
+     "href": "/value/00-constitutional-economics/",
+     "title": "150a — Constitutional Economics Sheet (CANON-faithful)"
+    },
+    {
+     "href": "/value/00-objective-morals-and-ethics/",
+     "title": "OBJECTIVE MORALS AND ETHICS"
+    },
+    {
+     "href": "/value/00-the-good-the-evil-and-the-transcendentals/",
+     "title": "THE GOOD, THE EVIL, AND THE TRANSCENDENTALS"
+    },
+    {
+     "href": "/value/00-theurgy-and-f5-force-map/",
+     "title": "THEURGY AND THE F5 FORCE MAP"
+    },
+    {
+     "href": "/value/01-k2-decision-protocol/",
+     "title": "K2 Decision Protocol — Strategic Implementation Applied"
+    },
+    {
+     "href": "/value/01-rights-duties-and-due-process/",
+     "title": "RIGHTS, DUTIES, AND DUE PROCESS"
+    }
+   ]
+  },
+  {
+   "key": "ground",
+   "label": "Ground / Ontology (10)",
+   "pages": [
+    {
+     "href": "/ground/",
+     "title": "Ontology"
+    },
+    {
+     "href": "/ground/00-d5-d6-corpus-stabilization/",
+     "title": "D5/D6 CORPUS STABILIZATION"
+    },
+    {
+     "href": "/ground/00-d6-as-apophatic-closure/",
+     "title": "D6 AS APOPHATIC CLOSURE"
+    },
+    {
+     "href": "/ground/00-finity-as-ontological-boundary/",
+     "title": "FINITY AS ONTOLOGICAL BOUNDARY"
+    },
+    {
+     "href": "/ground/00-ontology-across-dimensions/",
+     "title": "ONTOLOGY ACROSS DIMENSIONS"
+    },
+    {
+     "href": "/ground/00-syncretic-map-audit/",
+     "title": "K3 Tombstone — Superseded Audit"
+    },
+    {
+     "href": "/ground/00-the-ontology-of-being/",
+     "title": "THE ONTOLOGY OF BEING"
+    },
+    {
+     "href": "/ground/00-the-ring-that-is-the-ground/",
+     "title": "THE RING THAT IS THE GROUND"
+    },
+    {
+     "href": "/ground/00-the-syncretic-map/",
+     "title": "The Syncretic Map — Superseded"
+    },
+    {
+     "href": "/ground/01-apophatic-ground-and-field-structure/",
+     "title": "APOPHATIC GROUND AND FIELD STRUCTURE"
+    }
+   ]
+  },
+  {
+   "key": "sacred",
+   "label": "Sacred / Theology (7)",
+   "pages": [
+    {
+     "href": "/sacred/",
+     "title": "Theology"
+    },
+    {
+     "href": "/sacred/00-foreword/",
+     "title": "FOREWORD"
+    },
+    {
+     "href": "/sacred/00-glossary/",
+     "title": "FRAMEWORK GLOSSARY"
+    },
+    {
+     "href": "/sacred/00-reconciliation-theorem-packet/",
+     "title": "RECONCILIATION THEOREM PACKET"
+    },
+    {
+     "href": "/sacred/00-the-pedagogy-of-becoming/",
+     "title": "THE PEDAGOGY OF BECOMING"
+    },
+    {
+     "href": "/sacred/01-symbol-design-and-public-translation/",
+     "title": "Symbol Design and Public Translation"
+    },
+    {
+     "href": "/sacred/02-truth-order-and-niche-partition/",
+     "title": "TRUTH ORDER AND NICHE PARTITION"
+    }
+   ]
+  },
+  {
+   "key": "method",
+   "label": "Method (11)",
+   "pages": [
+    {
+     "href": "/method/",
+     "title": "Method"
+    },
+    {
+     "href": "/method/00-constitutional-science/",
+     "title": "CONSTITUTIONAL SCIENCE"
+    },
+    {
+     "href": "/method/00-d5-as-the-research-engine/",
+     "title": "D5 AS THE RESEARCH ENGINE"
+    },
+    {
+     "href": "/method/00-equatorial-balance-maximum-prereg/",
+     "title": "Pre-Registration — The Equatorial Balance-Maximum Prediction"
+    },
+    {
+     "href": "/method/00-syntropic-known-unknowns-protocol/",
+     "title": "THE SYNTROPIC KNOWN UNKNOWNS PROTOCOL"
+    },
+    {
+     "href": "/method/00-the-derivation/",
+     "title": "THE DERIVATION"
+    },
+    {
+     "href": "/method/00-the-doctrinal-ladder/",
+     "title": "The Doctrinal Ladder"
+    },
+    {
+     "href": "/method/00-what-actually-tests-the-theory/",
+     "title": "What Actually Tests the Theory"
+    },
+    {
+     "href": "/method/00-why-these-axioms/",
+     "title": "Why These Axioms (O1-O5)"
+    },
+    {
+     "href": "/method/01-equatorial-balance-maximum-results-pilot/",
+     "title": "Paper V — RESULTS (Companion to Pre-Registration) — Tier [I] Pilot"
+    },
+    {
+     "href": "/method/01-the-anumana-audit-protocol/",
+     "title": "The Inferential Logic Audit Protocol"
+    }
+   ]
+  },
+  {
+   "key": "meta",
+   "label": "Meta (7)",
+   "pages": [
+    {
+     "href": "/meta/",
+     "title": "Meta"
+    },
+    {
+     "href": "/meta/00-constitutional-invariants-o1-staging-2026-05-30/",
+     "title": "Constitutional Invariants (O1) — Unification Staging Envelope"
+    },
+    {
+     "href": "/meta/00-corpus/",
+     "title": "THE WHOLE — historical generated topology memory"
+    },
+    {
+     "href": "/meta/00-d-level-studies/",
+     "title": "D-LEVEL STUDIES"
+    },
+    {
+     "href": "/meta/00-known-unknowns-program/",
+     "title": "THE KNOWN UNKNOWNS PROGRAM"
+    },
+    {
+     "href": "/meta/00-the-remaining-questions/",
+     "title": "THE REMAINING QUESTIONS"
+    },
+    {
+     "href": "/meta/00-what-is-actually-novel-here/",
+     "title": "WHAT IS ACTUALLY NOVEL HERE"
+    }
+   ]
+  }
+ ]
+}

@@ -354,7 +354,61 @@
       <a href="../0/index.html">Restart at /0 &rarr;</a>
     </div>
   </section>
+
+  <section style="padding:48px 0 16px">
+    <h2 style="letter-spacing:.04em">The Complete Tree</h2>
+    <p style="opacity:.8;max-width:60ch">
+      Every public page, in the order of the unfolding — overviews first
+      (the D0–D6 stations, doctrine, reading), then the twelve deep-library
+      wings. The same tree rides on every page as the
+      <strong>☰ ATLAS</strong> drawer (bottom-right), with full-corpus search.
+    </p>
+    <input id="atlas-full-q" type="search" placeholder="search all pages…" autocomplete="off"
+      style="width:min(420px,100%);padding:10px 14px;background:#111;border:1px solid #333;border-radius:8px;color:#FFFDE7;font:400 14px/1.2 'Roboto Mono',monospace;outline:none;margin:6px 0 18px">
+    <div id="atlas-full-tree" style="columns:2;column-gap:48px"></div>
+  </section>
 </div>
+
+<script>
+(function () {
+  "use strict";
+  var box = document.getElementById("atlas-full-tree");
+  var q = document.getElementById("atlas-full-q");
+  var data = null;
+  function render(filter) {
+    if (!data) return;
+    var needle = (filter || "").trim().toLowerCase();
+    box.textContent = "";
+    data.tree.forEach(function (sec) {
+      var det = document.createElement("details");
+      det.style.breakInside = "avoid";
+      det.style.marginBottom = "10px";
+      det.open = true;
+      var sum = document.createElement("summary");
+      sum.textContent = sec.label;
+      sum.style.cssText = "cursor:pointer;color:#FFEB3B;font-weight:600;letter-spacing:.05em;padding:4px 0";
+      det.appendChild(sum);
+      var any = false;
+      sec.pages.forEach(function (p) {
+        if (needle && p.title.toLowerCase().indexOf(needle) === -1 && p.href.toLowerCase().indexOf(needle) === -1) return;
+        var a = document.createElement("a");
+        a.href = p.href;
+        a.textContent = p.title;
+        a.style.cssText = "display:block;padding:3px 0 3px 16px;color:#FFFDE7;text-decoration:none;border-left:1px solid #2a2a2a;opacity:.85;font-size:14px";
+        a.onmouseenter = function () { a.style.color = "#FFEB3B"; };
+        a.onmouseleave = function () { a.style.color = "#FFFDE7"; };
+        det.appendChild(a);
+        any = true;
+      });
+      if (any) box.appendChild(det);
+    });
+  }
+  fetch("/atlas/site_index.json").then(function (r) { return r.json(); }).then(function (j) {
+    data = j; render("");
+  });
+  q.addEventListener("input", function () { render(q.value); });
+})();
+</script>
 
 <footer>
   <div class="phi">⊙ = • × ○</div>
@@ -364,5 +418,6 @@
   </p>
 </footer>
 
+<script defer src="/assets/js/atlas-drawer.js"></script>
 </body>
 </html>
