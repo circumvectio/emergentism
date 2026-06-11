@@ -631,68 +631,73 @@ function buildScene(mode, scene) {
       lat.position.y = y; root.add(lat);
       const m = lat.clone(); m.position.y = -y; root.add(m);
     });
-    const start = new THREE.Vector3(r, 0, 0);
-    const pMark = makeMarker(start.clone(), 0xffffff, 0.1);         // P on the sphere
-    // the Burrisphere projects UPWARD: from the south pole (0) through P, up to
-    // the operator chart above — the dual of the Bloch sphere, which projects down.
-    const rayUp = line([S, start.clone()], GOD, 0.95);
-    root.add(pMark); root.add(rayUp);
+    const TITAN = 0x6f9bcc;
+    const CY = 2.2;                                  // the projection plane, above the sphere
+    const UNIT = 0.5;                                // chart radius where cot(θ/2)=1 (the god/demon boundary)
+    // the projection plane: frame + the four quadrants + the unit circle
+    root.add(line([
+      new THREE.Vector3(-1.3, CY, -1.3), new THREE.Vector3(1.3, CY, -1.3),
+      new THREE.Vector3(1.3, CY, 1.3), new THREE.Vector3(-1.3, CY, 1.3),
+      new THREE.Vector3(-1.3, CY, -1.3)], 0x3a3a3a, 0.8));
+    root.add(line([new THREE.Vector3(-1.3, CY, 0), new THREE.Vector3(1.3, CY, 0)], 0x5a5a5a, 0.8));
+    root.add(line([new THREE.Vector3(0, CY, -1.3), new THREE.Vector3(0, CY, 1.3)], 0x5a5a5a, 0.8));
+    const unitChart = ring(UNIT, GOD, 0.7); unitChart.position.y = CY; root.add(unitChart);
+    // the four operators: 2 Gods (give) OUTSIDE the unit circle, 2 Demons (take) INSIDE
+    [[0.62, 0.62, GOD], [-0.62, 0.62, GOD], [0.22, -0.22, DEMON], [-0.22, -0.22, DEMON]]
+      .forEach((o) => root.add(makeMarker(new THREE.Vector3(o[0], CY, o[1]), o[2], 0.055)));
 
-    // --- the four mixed-sign operators: 2 Gods (give) + 2 Demons (take) ---
-    // An upper scatter-chart sits ABOVE the sphere; the lower hemisphere carries
-    // the 3 same-sign Titans, with L4 Arjuna at the centre (the equator).
-    const TITAN = 0x6f9bccff & 0xffffff;            // Titan blue
-    const CY = 2.25;                                // chart height above the sphere
-    root.add(line([                                 // chart frame
-      new THREE.Vector3(-1.25, CY, -1.25), new THREE.Vector3(1.25, CY, -1.25),
-      new THREE.Vector3(1.25, CY, 1.25), new THREE.Vector3(-1.25, CY, 1.25),
-      new THREE.Vector3(-1.25, CY, -1.25)], 0x3c3c3c, 0.8));
-    root.add(line([new THREE.Vector3(-1.25, CY, 0), new THREE.Vector3(1.25, CY, 0)], 0x666666, 0.85)); // other axis →
-    root.add(line([new THREE.Vector3(0, CY, -1.25), new THREE.Vector3(0, CY, 1.25)], 0x666666, 0.85)); // self axis ↑
-    // the four operators in the chart's quadrants (gods on the +z row, demons on −z;
-    // the camera looks up at the chart, so +z reads as the upper, GIVE row)
-    [[0.62, 0.62, GOD], [-0.62, 0.62, GOD], [0.62, -0.62, DEMON], [-0.62, -0.62, DEMON]]
-      .forEach((o) => root.add(makeMarker(new THREE.Vector3(o[0], CY, o[1]), o[2], 0.06)));
-    const movePt = makeMarker(new THREE.Vector3(0, CY, 0), GOD, 0.1);  // the live move
-    root.add(movePt);
+    const start = new THREE.Vector3(r, 0, 0);
+    const pMark = makeMarker(start.clone(), 0xffffff, 0.1);          // P on the sphere
+    const rayUp = line([S, start.clone()], GOD, 0.9);               // 0 → P → up to the projection
+    const projPt = makeMarker(new THREE.Vector3(UNIT, CY, 0), GOD, 0.08);  // the live projection
+    root.add(pMark); root.add(rayUp); root.add(projPt);
+    // the SPIRAL trail traced by the projected point
+    const TRAIL = 320, trailPts = [];
+    const trail = line([new THREE.Vector3(UNIT, CY, 0)], 0xffeb3b, 0.5);
+    root.add(trail);
+
     // the 3 Titans on the lower hemisphere + the centre (L4 Arjuna, the equator)
     [[2.30, 0.0], [2.55, 2.1], [2.85, 4.2]].forEach((T) => {
       root.add(makeMarker(new THREE.Vector3(
         r * Math.sin(T[0]) * Math.cos(T[1]), r * Math.cos(T[0]), r * Math.sin(T[0]) * Math.sin(T[1])
       ), TITAN, 0.07));
     });
-    root.add(makeMarker(new THREE.Vector3(0, 0, 0), 0xffffff, 0.055)); // the centre
+    root.add(makeMarker(new THREE.Vector3(0, 0, 0), 0xffffff, 0.05)); // the centre
 
     const readout = makeReadout();
     if (readout) { readout.style.whiteSpace = "pre-line"; readout.style.top = "auto"; readout.style.bottom = "14px"; }
+    const quadName = ["I", "II", "III", "IV"];
     dyn.push(function (t) {
-      const psi = t * 0.55;                                        // azimuth sweep → circles the quadrants
-      const theta = Math.PI / 2 + 0.62 * Math.sin(t * 0.62);       // colatitude crosses the equator
-      const phi = 1 / Math.tan(theta / 2);                          // cot(θ/2), in units of r
-      const nu = Math.tan(theta / 2);                              // reciprocal
+      const psi = t * 2.3;                                          // azimuth rotates fast
+      const theta = Math.PI / 2 + 1.3 * Math.sin(t * 0.2);          // the ANGLE sweeps, near pole to near pole
+      const phi = 1 / Math.tan(theta / 2);                          // cot(θ/2) — the SAME stereographic radius as the Riemann sphere
+      const nu = Math.tan(theta / 2);
       const cps = Math.cos(psi), sps = Math.sin(psi);
       const sT = Math.sin(theta);
       const P = new THREE.Vector3(r * sT * cps, r * Math.cos(theta), r * sT * sps);
       pMark.position.copy(P);
-      const isGod = phi > 1;
+      const rad = Math.min(phi * UNIT, 1.3);                        // radius grows/shrinks with the angle → it SPIRALS
+      const Lp = new THREE.Vector3(rad * cps, CY, rad * sps);
+      projPt.position.copy(Lp);
+      const isGod = phi > 1;                                         // outside the unit circle = GOD
       const col = isGod ? GOD : DEMON;
+      projPt.material.color.setHex(col);
       pMark.material.color.setHex(col);
-      root.rotation.y += 0.0026;
-      // the live move = one of the four mixed-sign operators on the chart above
-      const onLeft = Math.cos(psi) < 0;
-      const opName = isGod
-        ? (onLeft ? "Kṛṣṇa L3 · give" : "Arjuna L4 · give")
-        : (onLeft ? "Kali L1 · take" : "Kālī L2 · take");
-      movePt.position.set(onLeft ? -0.62 : 0.62, CY, isGod ? 0.62 : -0.62);
-      movePt.material.color.setHex(col);
-      rayUp.geometry.setFromPoints([S, P, movePt.position]);     // 0 → P → UP to the operator
+      rayUp.geometry.setFromPoints([S, P, Lp]);                      // 0 → P → up to the projection
       rayUp.material.color.setHex(col);
+      trailPts.push(Lp.clone());
+      if (trailPts.length > TRAIL) trailPts.shift();
+      trail.geometry.setFromPoints(trailPts);
+      root.rotation.y += 0.0022;
+      const q = quadName[Math.floor((((psi % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI)) / (Math.PI / 2)) % 4];
+      const opName = isGod
+        ? (cps < 0 ? "Kṛṣṇa L3 · give" : "Arjuna L4 · give")
+        : (cps < 0 ? "Kali L1 · take" : "Kālī L2 · take");
       if (readout) readout.textContent =
-        "OPERATOR  " + opName + "   (projects UP from 0)\n" +
-        "φ = cot θ⁄2 = " + phi.toFixed(2) + "   ν = " + nu.toFixed(2) + "   (φ·ν = 1)\n" +
-        (isGod ? "φ > 1 → GOD-move · give (−self/+other)"
-               : "φ < 1 → DEMON-move · take (+self/−other)") + "\n" +
-        "above: 2 gods + 2 demons   ·   below: Titans Brahmā ++ · Śiva −− · Viṣṇu ≈≈   ·   centre L4";
+        "stereographic projection · SPIRALING (up from 0)\n" +
+        "angle θ = " + (theta * 180 / Math.PI).toFixed(0) + "°   φ = cot θ⁄2 = " + phi.toFixed(2) + "   ν = " + nu.toFixed(2) + "\n" +
+        "quadrant " + q + " · " + opName + " · " + (isGod ? "GOD (outside unit circle)" : "DEMON (inside)") + "\n" +
+        "below: Titans Brahmā ++ · Śiva −− · Viṣṇu ≈≈ · centre L4";
     });
   }
 
