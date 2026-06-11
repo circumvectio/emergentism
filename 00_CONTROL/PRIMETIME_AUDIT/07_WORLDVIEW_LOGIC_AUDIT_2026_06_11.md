@@ -313,3 +313,30 @@ The corpus now carries the sharper public-worldview line:
 - Direct perception may be existentially decisive for a practitioner, but it is not public proof that neuroscience, analytic philosophy, or AI has been refuted or completed.
 - The hard problem is reframed as a boundary between third-person description and first-person disclosure, not solved for every school.
 - Mind-body complementarity is an `[I]` dimensional reading inside the framework, not proof that competing accounts have failed.
+
+## Is-Ought / Evil / Meaning Boundary Pass
+
+**Trigger:** PD_10, PD_15, and PD_16 still had public/source drift around the value-side paradoxes. The risk was upgrading conditional moral orientation into an unconditional proof, turning evil into a theodicy or permission structure, and presenting meaning as an empirically proven universal property rather than an `[I]` coherence reading.
+
+**Repairs made:**
+
+- Added a local `[S/I]` claim boundary to PD_10 source and public page: the Is-Ought move is a conditional operational bypass inside accepted dimensional axioms and ethical definitions, not a derivation of an unconditional ought from bare facts.
+- Reframed PD_10 body prose from impossible/physics/proof language into model/constraint language: the classical gap remains live if the dimensional axiom set or ethical definition is rejected.
+- Reframed the strong Lagrangian/Good line as a conditional field-theory interpretation of value-orientation, not a public proof that physics and ethics are identical.
+- Added a local `[I]` claim boundary to PD_15 source and public page: the page is not a theodicy, does not justify suffering, and does not prove God.
+- Reframed evil language from "bad is necessary" and "geometric necessity" toward cyclic cost, suffering as real displacement, and extraction as modeled self-terminating instability.
+- Added a local `[I]` claim boundary to PD_16 source and public page: meaning is a framework reading of coherence orientation, not proof that every life is meaningful, refutation of all materialism, or a universal metric.
+- Reframed meaning language away from materialist dismissal and toward the narrower claim that a D4-only instrument may not read the coherence axis the model proposes.
+
+**Verification result:**
+
+- Targeted dangerous-phrase scan no longer returns the unbounded versions: `traditional resolution is impossible`, `geometry rewards`, `punishes polar drift`, `dimensional physics`, `enforced by physics`, `Bad is necessary`, `dimensional illiteracy`, or `Meaning is not missing from the universe`.
+- Follow-up residual scan removed the remaining hard phrasings: `geometry of the Good`, `same field experienced`, `structural home of meaning`, and `D5 quantity`.
+- `git -C 01_EMERGENTISM diff --check` — PASS.
+- `python3 01_EMERGENTISM/12_PUBLIC_SITE/predeploy_check.py` — PASS.
+
+**Boundary retained:**
+
+- Emergentism gives a value-orientation scaffold, not a final public proof of morality.
+- Evil remains a model distinction between cyclic cost, suffering, and extraction; it does not excuse harm or solve theology by fiat.
+- Meaning remains an `[I]` coherence-orientation claim with falsifiers, not an empirical proof that meaning is guaranteed for every person.

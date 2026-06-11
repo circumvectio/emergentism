@@ -67,7 +67,7 @@ This is not a moral failing. It is a geometric condition. A point on S² that mi
 
 ## 4. THE FRAMEWORK CONNECTION
 
-The Φ-axis of the Burri Sphere is the structural home of meaning in this reading. The equator (Φ = 1, V = 1) defines the condition of balanced significance. The D4-D5 dual projection explains why meaning may not be exhausted by physical measurement — it is read as a D5 quantity. [I]
+The Φ-axis of the Burri Sphere is the framework's preferred coordinate for reading meaning. The equator (Φ = 1, V = 1) defines the condition of balanced significance. The D4-D5 dual projection explains why meaning may not be exhausted by physical measurement — it is read through D5 coherence. [I]
 
 The extraction coefficient η connects meaning to ethics inside the model. Systems that operate regeneratively tend to maintain or increase Φ over time — they can support meaning. Systems at η → ∞ (evil, extractive) destroy Φ — they can produce nihilism as a structural byproduct. Meaning is not reduced to private feeling in this account; it is affected by operations that generate or destroy system coherence. [I]
 
