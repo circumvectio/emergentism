@@ -42,7 +42,7 @@ def get_public_html_files():
     files = []
     for root, dirs, filenames in os.walk(BASE_DIR):
         dirs[:] = [
-            d for d in dirs if d not in {"node_modules", "vendor", ".git", ".vercel"}
+            d for d in dirs if d not in {"node_modules", "vendor", ".git", ".vercel", ".next"}
         ]
         for f in filenames:
             if f.endswith(".html"):
