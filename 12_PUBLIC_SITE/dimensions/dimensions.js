@@ -620,12 +620,12 @@ function buildScene(mode, scene) {
 
     root.add(createSphere(r, 0.2));
     root.add(ring(r, 0xffffff, 0.45));                              // sphere equator
-    root.add(createGridPlane(5.6, 19));
-    root.add(ring(r, GOD, 0.85));                                   // the unit circle = god/demon boundary
-    root.add(line([new THREE.Vector3(-2.6, 0, 0), new THREE.Vector3(2.6, 0, 0)], 0x555555, 0.6));
-    root.add(line([new THREE.Vector3(0, 0, -2.6), new THREE.Vector3(0, 0, 2.6)], 0x555555, 0.6));
-    root.add(makeMarker(N, 0xb8b8b8, 0.07));
-    root.add(makeMarker(S, 0x707070, 0.07));
+    const cplane = createGridPlane(6.0, 21); cplane.position.y = -r; root.add(cplane); // the complex plane = the FLOOR the sphere rests on
+    root.add(ring(r, GOD, 0.85));                                   // sphere equator = the god/demon boundary (φ = ν = 1)
+    root.add(line([new THREE.Vector3(-2.9, -r, 0), new THREE.Vector3(2.9, -r, 0)], 0x555555, 0.6)); // real axis, on the plane
+    root.add(line([new THREE.Vector3(0, -r, -2.9), new THREE.Vector3(0, -r, 2.9)], 0x555555, 0.6)); // imaginary axis
+    root.add(makeMarker(N, 0xc8c8c8, 0.07));                        // north pole → up toward ∞
+    root.add(makeMarker(S, 0x808080, 0.085));                       // south pole = 0, resting on the complex plane
     [0.5, 1.0].forEach((y) => {
       const lat = ring(Math.sqrt(r * r - y * y), 0x666666, 0.32);
       lat.position.y = y; root.add(lat);
@@ -750,9 +750,10 @@ async function boot() {
     controls.autoRotate = !REDUCED_MOTION && !selfRotating;
     controls.autoRotateSpeed = page.autoRotateSpeed || 0.35;
     if (page.animationMode === "burrisphere") {
-      // taller scene: god/demon chart above, Titans below — pull back & raise the frame
-      camera.position.set(0, 1.0, 7.4);
-      controls.target.set(0, 0.55, 0);
+      // the complex plane is the floor (0 at the south pole), ∞ is up top —
+      // stand near the plane and look UP toward infinity / the operator chart
+      camera.position.set(0, -0.8, 7.7);
+      controls.target.set(0, 1.35, 0);
       controls.update();
     }
 
