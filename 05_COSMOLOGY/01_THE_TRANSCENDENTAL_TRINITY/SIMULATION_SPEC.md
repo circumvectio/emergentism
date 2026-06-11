@@ -43,7 +43,7 @@ ANIM-6:  D5  The Burri Sphere  — Consciousness. Selection. φ · ν = 1. [EXIS
 ## ANIM-1: D0 — THE POINT
 
 ### What It Shows
-Pure void. Black. Absolute nothing. Sunyata. κ = 0 (irreducible ground).
+Pure void. Black. Absolute nothing. Sunyata. `κ = 0` as boundary symbol.
 
 Then: a single gold dot appears. The Bindu. ⊙. The first distinction. The bit. 0 or 1. Not yet both. Not yet a qubit. Just a point.
 

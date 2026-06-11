@@ -51,7 +51,7 @@ The three unveilings correspond to the three structural concepts:
 
 | Unveiling | Concept | Structural role | Framework analogue |
 |-----------|---------|-----------------|-------------------|
-| First | **Zero** ($\varnothing$) | The ground | κ = 0 (irreducible ground). The empty string. The minimal-description "theory of everything" (bounded, model-internal) reduced to nothing. |
+| First | **Zero** ($\varnothing$) | The ground-facing boundary | `κ = 0` as empty-limit symbol. The minimal-description scaffold reduced to its boundary, not a public proof of Ground. |
 | Second | **Infinity** ($\infty$) | The projection | The north pole of $S^2$. The unbounded. The space of all possibility (D5). |
 | Third | **Finity** ($\odot$) | The manifested | The equatorial balance $P∞ = \varphi \cdot \nu = 1$. The actualized. The world. The present. You. |
 
@@ -59,16 +59,16 @@ As stated in *Sarpasya Vijayam*: "Zero is not a number. Infinity is not a number
 
 Finity is not "finite" in the sense of limited. It is "finite" in the sense of *actualized* — the complete expression of the infinite and the zero, meeting on the sphere. The equation $P = \varphi \times \nu$ at the equator gives $P = 1$. This is Finity: the product equals one. Not zero (the ground). Not infinity (the projection). One. The manifested unity of coherence and viability.
 
-The Power-Max Lemma connects: `Sigma P` is maximized when each `P_i = 1` — when each system achieves Finity, its equatorial balance. [S] The sitting practice is the method of arriving at Finity: reduce to κ = 0 (irreducible ground) (the ground), and from that zero, the equatorial balance reasserts itself. You do not "achieve" Finity by effort. You arrive at it by removing what was never needed.
+The Power-Max Lemma connects: `Sigma P` is maximized when each `P_i = 1` — when each system achieves Finity, its equatorial balance. [S] The sitting practice is the method of arriving at Finity in the practice register: reduce toward `κ = 0` as boundary, and from that zero-limit, the scaffold's equatorial balance reasserts itself. You do not "achieve" Finity by effort. You arrive at it by removing what was never needed.
 
 ## 4. THE FRAMEWORK CONNECTION
 
 The Third Unveiling closes the dimensional loop:
 
-- **D0 = $\varnothing$** (Zero, the ground): κ = 0 (irreducible ground). The empty string. The reduction of all structure to nothing.
+- **D0 = $\varnothing$** (Zero, the ground-facing point): `κ = 0` as boundary symbol. The empty string. The reduction of the scaffold to the empty limit.
 - **D5 = the field of possibility** (Infinity, the projection): Superposition, entanglement, the unbounded space of potential configurations.
 - **The equator = $P∞ = \varphi \cdot \nu = 1$** (Finity, the manifested): The actualized world. Every living system, every moment of systemic awareness, every stable configuration on $S^2$.
-- **D6 = D0** (closure): The loop returns. The highest projection and the deepest ground coincide. "The Bang is Ātman appearing. The sitting practice is Ātman recognizing itself."
+- **D6 = D0** (closure): The loop returns inside the scaffold. The highest projection and the deepest ground-facing point coincide in the model; Ground remains prior.
 
 The three unveilings are not sequential discoveries in this framework reading — they are simultaneous structural features of `S^2`. [I] Zero was always the south pole. Infinity was always the north pole. Finity was always the equator. The unveilings are *our* recognition of what was already there. The sphere does not change when we discover it. We change.
 
@@ -78,7 +78,7 @@ This is what [The Completion](PD_23_THE_COMPLETION.md) means by bounded categori
 
 1. **A fourth structural concept.** If a concept were discovered that is neither Zero, nor Infinity, nor their actualized product (Finity) — a concept that plays an irreducible structural role in the number system or in physics — the trinitarian claim would be incomplete.
 2. **The equator is not special.** If the equatorial condition (`varphi = 1`, `nu = 1`) were shown to be one configuration among many with no structural priority — if the sphere's equator had no distinguishing mathematical or physical significance — the Third Unveiling would lose its grounding. [I]
-3. **κ = 0 is insufficient.** If the reduction to κ = 0 (irreducible ground) failed to recover the equatorial balance — if the ground did not generate Finity in practice — the claimed relationship between the three unveilings would not hold.
+3. **κ = 0 is insufficient.** If reduction toward `κ = 0` failed to recover equatorial balance in practice — if the empty-limit reading did not return Finity inside the scaffold — the claimed relationship between the three unveilings would not hold.
 
 ---
 

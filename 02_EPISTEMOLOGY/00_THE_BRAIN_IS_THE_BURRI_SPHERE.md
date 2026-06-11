@@ -424,7 +424,7 @@ This connection is [I] Interpretive but substantially stronger than the hemisphe
 ## See Also
 
 - [The Burrisphere](../05_COSMOLOGY/00_THE_BURRISPHERE.md) — canonical source-owner for the sphere S² (`φ·ν = 1`), the L-row table, the equator L4, and the real-positive coordinate caveat this neural mapping reads through. The four neural-direction analogues here are the `(ν, φ)`-plane quadrant moves under that caveat (2 Gods + 2 Demons; Kali fires only at η > 0), not "four god-moves."
-- The Computational Sphere (00_THE_COMPUTATIONAL_SPHERE.md; link removed to prevent cycle) — foundational methodology: reduction to κ = 0 (irreducible ground), **Burri Sphere coordinates (φ, ν) explained**
+- The Computational Sphere (00_THE_COMPUTATIONAL_SPHERE.md; link removed to prevent cycle) — foundational methodology: reduction toward `κ = 0` as boundary, **Burri Sphere coordinates (φ, ν) explained**
 - [Commandment vs. Geometry](../04_AXIOLOGY/00_COMMANDMENT_VS_GEOMETRY.md) — religion vs. Dharma, obedience vs. recognition, geometric impossibility
 - [The Ring That Is the Ground](../06_ONTOLOGY/00_THE_RING_THAT_IS_THE_GROUND.md) — Tolkien's inversion, four gods as operators
 - [The Four Metamorphoses](../05_COSMOLOGY/00_THE_FOUR_METAMORPHOSES.md) — Nietzsche mapped to S², mesh as fourth transformation

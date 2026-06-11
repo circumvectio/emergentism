@@ -146,7 +146,7 @@ Nothing → Trinity → Sphere → Equation → Axioms → Framework → Deploym
 | [README.md](README.md) | **This folder's own guide** |
 | [00_DATA_ROOM.md](../../01_GOVERNANCE/00_DATA_ROOM.md) | Master navigation by cosmological tier |
 | [00_SYSTEM_MAP.md](../../01_GOVERNANCE/00_SYSTEM_MAP.md) | Complete architecture (960+ files) |
-| [00_EMERGENTISM.md](../../../05_COSMOLOGY/00_EMERGENTISM.md) | The complete Weltanschauung |
+| [00_EMERGENTISM.md](../../../05_COSMOLOGY/00_EMERGENTISM.md) | The compact Weltanschauung |
 | [00_THE_HONEST_POSITION.md](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) | Canonical epistemic status of every claim |
 | [00_GLOSSARY.md](../../../07_THEOLOGY/00_GLOSSARY.md) | Every term defined |
 | [00_FOREWORD.md](../../../07_THEOLOGY/00_FOREWORD.md) | Entry point: three numbers, one equation |

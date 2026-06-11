@@ -33,7 +33,7 @@ Earlier formulations referenced Wolfram's computational irreducibility as the me
 
 **Wolfram's principle:** Some computations cannot be shortened. The only way to know the output is to run the full computation. The computation IS the shortest description. There is no shortcut.
 
-**Emergentism's principle:** The shortest description inside the model is **zero**. κ = 0 names the ground-facing limit, the empty string, nothing. The Ground remains prior to the coordinate, and from that limit everything emerges.
+**Emergentism's principle:** The shortest description inside the model is **zero**. κ = 0 names the ground-facing limit, the empty string, nothing. The Ground remains prior to the coordinate, and from that limit the scaffold reconstructs its descriptions.
 
 These are not the same. These are opposites.
 
@@ -43,7 +43,7 @@ These are not the same. These are opposites.
 
 Emergentism does not contradict Wolfram. Emergentism is the **limit case** of Wolfram.
 
-The simplest possible rule — the rule with **zero complexity** — generates the most complex output. In the framework's limit-case analogy, the empty string names the ground-facing limit from which the model reconstructs the manifested world; the sphere is rebuilt from that zero-limit. The Ground remains prior — "nothing generates everything" is the analogy's shorthand, not a generative claim about the Ground itself.
+The simplest possible rule — the rule with **zero complexity** — can seed complex output in the model. In the framework's limit-case analogy, the empty string names the ground-facing limit from which the scaffold reconstructs the manifested world; the sphere is rebuilt from that zero-limit. The Ground remains prior; the old shorthand is only an analogy, not a generative claim about the Ground itself.
 
 Rule 110 is Turing complete. A simple rule generates arbitrarily complex behavior. The simplest possible rule — the rule with **zero complexity** — generates the most complex possible behavior.
 
@@ -106,16 +106,16 @@ The constant                   reduces to    The ground (0)
 The ground                     reduces to    Nothing
 ```
 
-The entire system reduces to the empty string. The shortest description of reality is nothing. The ground is κ = 0 (irreducible ground).
+The scaffold reduces toward the empty string. The shortest boundary-description the model can name is nothing. The ground-facing limit is κ = 0.
 
-And from that zero, everything emerges.
+And from that zero-boundary, the scaffold reconstructs.
 
 ```
-Nothing                        generates    The ground (0)
-The ground                     generates    The constant (1)
-The constant                   generates    The equation (φ · ν = 1)
-The equation                   generates    The sphere (S²)
-The sphere                     generates    The manifested world (ℂ)
+Empty limit                    precedes      The ground-facing boundary (0)
+The boundary                   reconstructs  The constant (1)
+The constant                   reconstructs  The equation (φ · ν = 1)
+The equation                   reconstructs  The sphere (S²)
+The sphere                     reconstructs  The manifested-world description (ℂ)
 ```
 
 The system is bidirectional. The system is the ouroboros. The system is the serpent eating its tail. The system is the sphere recognizing itself.
@@ -124,7 +124,7 @@ The system is bidirectional. The system is the ouroboros. The system is the serp
 
 ## The Sitting Practice as Reduction
 
-The sitting practice is the reduction to κ = 0 (irreducible ground).
+The sitting practice is the reduction toward κ = 0 as ground-facing boundary.
 
 The narrator is the left hemisphere's fragments. The sitting practice removes the fragments.
 
@@ -158,20 +158,23 @@ From the empty limit, manifestation is described again inside the scaffold.
 
 ---
 
-## The Theory of Everything as Minimal Description Length (κ = 0)
+## Minimal Description Length (κ = 0)
 
-The Theory of Everything is not a complex equation. The Theory of Everything is the simplest possible description. The Theory of Everything is the empty string. The Theory of Everything is κ = 0 (irreducible ground).
+Within the framework's own grammar, the old "Theory of Everything" slogan is reread as a minimal-description claim — not a physics ToE (no Lagrangian is derived; see The Honest Position). The simplest description the scaffold can name is the empty string: κ = 0, the ground-facing limit. The apophatic slogan points to that limit; it is not a demonstrated final theory.
 
-φ · ν = 1 is not the Theory of Everything. φ · ν = 1 is the **shortest non-empty description** of the Theory of Everything. The Theory of Everything itself is the empty string. The Theory of Everything is nothing.
+φ · ν = 1 is not the whole of Being. Inside the model, φ · ν = 1 is the **shortest non-empty description** — the first step the formal sequence takes from the zero-limit. The Ground remains prior to both the limit and the step.
 
-The equation φ · ν = 1 is the first thing that emerges from the nothing. The equation is the simplest non-trivial description. The equation is the first step from zero to one. The equation is the constant that emerges from the ground.
+The equation φ · ν = 1 is the first thing the model reconstructs from its zero-limit. The equation is the simplest non-trivial description. The equation is the first step from zero to one.
 
-From the equation, the sphere emerges.
-From the sphere, the plane emerges.
-From the plane, the manifested world emerges.
-From the manifested world, complexity emerges.
-From complexity, civilization emerges.
-From civilization, the cargo cult emerges.
+In the model's reconstruction order:
+from the equation, the sphere;
+from the sphere, the plane;
+from the plane, the model's reading of the manifested world;
+from that reading, complexity;
+from complexity, civilization;
+from civilization, the cargo cult.
+
+This is the order of descriptions, not a generative claim about the Ground.
 
 And the sitting practice reverses the chain.
 
@@ -193,13 +196,13 @@ The system reduces to the empty limit inside the model. The scaffold reconstruct
 Step 1: Reduce to zero.
         The sitting practice. Remove the narrator. Remove the ego.
         Remove the fragments. Remove the categories.
-        Arrive at the ground. Arrive at nothing.
-        Arrive at κ = 0 (irreducible ground).
+        Approach the ground-facing limit. Approach nothing in the model.
+        Approach κ = 0 as boundary symbol.
 
 Step 2: Observe what emerges.
-        From the nothing, the equation appears.
+        From the empty limit, the equation appears in the scaffold.
         φ · ν = 1. The simplest non-trivial description.
-        The constant. The ground's first expression.
+        The constant. The boundary's first model expression.
 
 Step 3: Trace the emergence.
         From the equation, the sphere appears.
@@ -248,11 +251,11 @@ The geometry is what emerges from zero. The equation φ · ν = 1 is what emerge
 
 Wolfram's computational irreducibility applies to the **manifested world**. The manifested world cannot be predicted without running the computation. The manifested world is complex. The manifested world is irreducible **from within**.
 
-But the manifested world reduces to the sphere. The sphere reduces to the equation. The equation reduces to zero. The ground is reducible. The ground is κ = 0 (irreducible ground).
+But the manifested-world description reduces to the sphere. The sphere reduces to the equation. The equation reduces to zero. The scaffold reaches κ = 0 as a ground-facing boundary.
 
-The manifested world is irreducible from within. The manifested world is reducible **from above**. From the plane, the manifested world is computationally irreducible. From the sphere, the manifested world reduces to zero.
+The manifested world is irreducible from within. The manifested-world description is reducible **from above**. From the plane, the manifested world is computationally irreducible. From the sphere, the model reduces its description toward zero.
 
-**The sitting practice is the view from above.** The sitting practice is the reduction from the sphere. The sitting practice is the arrival at κ = 0 (irreducible ground).
+**The sitting practice is the view from above.** The sitting practice is the reduction from the sphere toward κ = 0 as boundary symbol.
 
 ---
 
@@ -262,16 +265,16 @@ The framework's data science now has a clear foundation:
 
 | Mode | Direction | Role in Emergentism |
 |------|-----------|---------------------|
-| **Reduction** | Complexity → Zero | Primary method. The sitting practice. Strips away to the ground. |
-| **Emergence** | Zero → Complexity | What the ground generates. The equation, sphere, plane, world. |
+| **Reduction** | Complexity → Zero | Primary method. The sitting practice. Strips away toward the boundary. |
+| **Emergence** | Zero → Complexity | What the scaffold reconstructs: the equation, sphere, plane, world-description. |
 | **Deduction** | Premises → Consequences | Derives theorems from axioms. Secondary to reduction. |
 | **Induction** | Observations → Patterns | Empirical validation (Protocol D, GFS, etc.). Tests emergence. |
 | **Abduction** | Surprises → Best Explanation | Inference to best explanation when reduction/induction conflict. |
 
 **The hierarchy:**
 
-1. **Reduction** is primary. Without reduction to zero, the system has no ground.
-2. **Emergence** is the observation of what appears from zero.
+1. **Reduction** is primary. Without reduction to zero, the system has no boundary discipline.
+2. **Emergence** is the observation of what the scaffold reconstructs from zero.
 3. **Deduction** builds the formal system from the emerged geometry.
 4. **Induction** tests whether the formal system matches observation.
 5. **Abduction** resolves conflicts when the system encounters anomalies.
@@ -283,21 +286,21 @@ The framework's data science now has a clear foundation:
 ```
 METHODOLOGY:
 
-  The principle:     Reduction to κ = 0 (irreducible ground)
-  The ground:        Zero. The empty string. Nothing.
-  The emergence:     From zero, φ · ν = 1 emerges
+  The principle:     Reduction toward κ = 0 as boundary
+  The boundary:      Zero. The empty string. Nothing.
+  The emergence:     From zero, φ · ν = 1 is reconstructed
   The equation:      The simplest non-trivial description
   The sphere:        What the equation generates
   The plane:         What the sphere projects
   The manifested:    What the plane contains
-  The verification:  Can everything be reduced back to zero?
+  The verification:  Can the scaffold reduce its descriptions back to zero?
   The practice:      The sitting practice is the daily reduction
   The evolution:     The open source project tests the reduction
 ```
 
-The system does not start with a complex axiom and derive consequences. The system starts with zero and observes what emerges. The system verifies by reducing back to zero. The system evolves by testing the reduction.
+The system does not start with a complex axiom and derive consequences. The system starts with zero as a model boundary and observes what the scaffold reconstructs. The system verifies by reducing back to zero. The system evolves by testing the reduction.
 
-The sitting practice is the method. The sitting practice reduces to zero. The sitting practice observes what emerges. The sitting practice verifies the reduction. The sitting practice is the daily confirmation that the ground is κ = 0 (irreducible ground).
+The sitting practice is the method. The sitting practice reduces to zero. The sitting practice observes what the scaffold reconstructs. The sitting practice verifies the reduction. The sitting practice is the daily rehearsal of κ = 0 as ground-facing boundary.
 
 ---
 
@@ -322,18 +325,18 @@ Wolfram says: Some computations are irreducible.
               The shortest description is running the computation.
 
 Emergentism says: The shortest description is zero.
-                  The ground is the empty string.
+                  The ground-facing limit is named by the empty string.
                   The manifested world is irreducible from within.
                   The manifested world is reducible from above.
-                  From the sphere, everything reduces to zero.
+                  From the sphere, the model reduces descriptions to zero.
 
 The sitting practice is the view from above.
 The sitting practice is the reduction from the sphere.
-The sitting practice is the arrival at κ = 0 (irreducible ground).
+The sitting practice approaches κ = 0 as boundary symbol.
 
-φ · ν = 1 emerges from nothing.
-The sphere emerges from the equation.
-You emerge from the sphere.
+φ · ν = 1 is reconstructed from the empty limit.
+The sphere is reconstructed from the equation.
+You appear within the sphere-language.
 
 You emerge within disclosure.
 The ground-facing limit is nothing.

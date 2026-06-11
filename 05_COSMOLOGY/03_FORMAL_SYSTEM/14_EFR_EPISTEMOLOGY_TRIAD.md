@@ -306,9 +306,9 @@ Epistemic Operations:   May be irreducible
 - But to know WHERE a specific trajectory lands, you must traverse the geodesic
 - The trajectory computation may be irreducible (Wolfram-style)
 
-**Implication:** The framework achieves κ = 0 (irreducible ground) for the ontological substrate, but specific knowledge-acquisition (inductive generalization, deductive prediction) may require irreducible computation.
+**Implication:** The framework reduces its scaffold toward `κ = 0` as a ground-facing boundary, but specific knowledge-acquisition (inductive generalization, deductive prediction) may require irreducible computation.
 
-This preserves the insight of Wolfram's NKS (irreducibility of specific computations) while claiming something stronger (reducibility of the ground).
+This preserves the insight of Wolfram's NKS (irreducibility of specific computations) while making a narrower claim: reducibility of the scaffold, not possession of Ground.
 
 ---
 

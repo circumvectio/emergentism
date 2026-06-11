@@ -353,7 +353,7 @@ Zero-Sum Resolution Equation
 
 ## See Also
 
-- [The Computational Sphere](../05_COSMOLOGY/00_THE_COMPUTATIONAL_SPHERE.md) — foundational methodology: reduction to κ = 0 (irreducible ground)
+- [The Computational Sphere](../05_COSMOLOGY/00_THE_COMPUTATIONAL_SPHERE.md) — foundational methodology: reduction toward `κ = 0` as boundary
 - [The Ring That Is the Ground](../06_ONTOLOGY/00_THE_RING_THAT_IS_THE_GROUND.md) — Tolkien's inversion, four gods as operators
 - [Objective Morals and Ethics](02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) — morality and ethics as directional `ΔP` transfer
 - [Rights, Duties, and Due Process](02_VALUE_THEORY/01_RIGHTS_DUTIES_AND_DUE_PROCESS.md) — law-facing translation of the directional dyad

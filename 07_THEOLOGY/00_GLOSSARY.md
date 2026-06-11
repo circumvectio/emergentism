@@ -302,7 +302,7 @@ The framework identifies three operator types in the relationship between teache
 | **Anmut** | German: grace. The framework associates it phenomenologically with seeing φ: the mind's eye flooded with coherence. Do not use morpheme play as proof. |
 | **Demut** | German: humility. *Demut* derives from OHG *diomuoti* (servant-minded), not De+Mut. The framework associates it phenomenologically with seeing ν: the mind's eye recognizing capability's scale. |
 | **Mut** | German: courage. In this framework, the experiential hinge between grace and humility: the courage to hold both. |
-| **Bindu** | Sanskrit: point, dot, drop. The mission-critical non-manifested point. Zero-Sum Resolution Equation. The center of the mandala. The third eye. κ = 0 (irreducible ground). |
+| **Bindu** | Sanskrit: point, dot, drop. The mission-critical non-manifested point. Zero-Sum Resolution Equation. The center of the mandala. The third eye. `κ = 0` as ground-facing boundary. |
 | **Burri Torus** | The horn torus (R = r) in the framework's physics-facing model. It is used to translate D4 spacetime, light-cone, and Lorentz-symmetry language; treat many-worlds and collapse readings as interpretive until separately established. |
 | **Continuous Operation** | Exploratory derivation-register language for irrational quantities as non-halting computations. Use as a model interpretation of π, e, and √2, not as a replacement for standard mathematical definitions. |
 | **Aletheia** | Greek: a-letheia = un-forgetting. Truth is the REMOVAL of the narrator (Lethe). Truth is Kālī (↓φ) applied to false φ. |
@@ -334,7 +334,7 @@ The glossary is the map's legend.
 - [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) -- canonical epistemic status of every claim
 - [The Burrisphere](../05_COSMOLOGY/00_THE_BURRISPHERE.md) -- the canonical source-owner for the sphere as worldview lens: S² (φ·ν=1), the nine latitudes L0..L∞, the equator L4, the agent foundation
 - [The Dyadic Coupling Law](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) -- goodness is the bond `φ × ν`; the moral axis is `η` (closed vs syntropic), never a pole, gender, caste, or person
-- [The Computational Sphere](../05_COSMOLOGY/00_THE_COMPUTATIONAL_SPHERE.md) -- foundational methodology: reduction to κ = 0 (irreducible ground), **Burri Sphere coordinates (φ, ν) explained**
+- [The Computational Sphere](../05_COSMOLOGY/00_THE_COMPUTATIONAL_SPHERE.md) -- foundational methodology: reduction toward `κ = 0` as boundary, **Burri Sphere coordinates (φ, ν) explained**
 - [The Weighing of the Heart](../90_ARCHIVE/00_THE_WEIGHING_OF_THE_HEART.md) -- convergent symbolic translation: Egyptian weighing imagery read through the Burri Sphere
 - [The Four Metamorphoses](../05_COSMOLOGY/00_THE_FOUR_METAMORPHOSES.md) -- Nietzsche translated through S², mesh as fourth transformation
 - [The Ring That Is the Ground](../06_ONTOLOGY/00_THE_RING_THAT_IS_THE_GROUND.md) -- Tolkien's inversion, the four mixed-sign operators (2 Gods + 2 Demons; per the 2026-05-30 hardening, Kali L1 is the Demon, not a god)

@@ -478,7 +478,7 @@ Zero-Sum Resolution Equation
 ## See Also
 
 - The Transcendental Trinity — {0, 1, ∞} as the ground of arithmetic and physics-facing translation
-- The Computational Sphere — methodology: reduction to κ = 0 (irreducible ground) (the ground state)
+- The Computational Sphere — methodology: reduction toward `κ = 0` as boundary (the model ground-state image)
 - The Megalithic Translation — archaeological material read as L = 0 coordination
 - Core Concepts — single source of truth for P_node = Φ × V and evidence tiers
 - The Weighing of the Heart — Egyptian encoding of the Lagrangian balance

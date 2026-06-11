@@ -50,7 +50,7 @@ As a civilization advances, its Euclidean capability vector ($V$) accelerates ge
 When `η > 0`, the civilizational structure becomes parasitic within the framework model. [I] Because the universe is modeled here through the Lagrangian density of the AM-GM inequality, allowing the gap `(φ - ν)^2` to grow causes the required stabilization energy (the Hamiltonian `H`) to spike exponentially.
 A civilization acting on pure local extraction hits an absolute thermodynamic limit: **The Energy Wall** (`H -> infinity`). [I] They do not just fail morally; in this model, they run out of the physical energy required to maintain a False Vacuum instability against the universe's F5 restorative force. **They collapse.** This accounts for the vast majority of silent stars in the framework's Fermi reading. [I]
 
-This is the framework's proposed geometric proof of the Great Filter. [I]
+This is the framework's proposed geometric reading of the Great Filter. [I] It is a model argument with empirical obligations, not a public proof.
 
 ### Path 2: Thermodynamic Invisibility
 If a civilization *does* match `Phi` to `V`, they cross the capability threshold (`eta = 0`) in the framework model. [I] To achieve stability without destroying their host star system, they must close their loop.

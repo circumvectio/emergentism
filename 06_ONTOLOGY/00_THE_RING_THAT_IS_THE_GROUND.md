@@ -347,7 +347,7 @@ Zero-Sum Resolution Equation
 
 ## See Also
 
-- [The Computational Sphere](../05_COSMOLOGY/00_THE_COMPUTATIONAL_SPHERE.md) — foundational methodology: reduction to κ = 0 (irreducible ground), **Burri Sphere coordinates (φ, ν) explained**
+- [The Computational Sphere](../05_COSMOLOGY/00_THE_COMPUTATIONAL_SPHERE.md) — foundational methodology: reduction toward `κ = 0` as boundary, **Burri Sphere coordinates (φ, ν) explained**
 - [The Weighing of the Heart](../90_ARCHIVE/00_THE_WEIGHING_OF_THE_HEART.md) — convergent symbolic translation: Egyptian material read through the Burri Sphere
 - [The Four Metamorphoses](../05_COSMOLOGY/00_THE_FOUR_METAMORPHOSES.md) — Nietzsche mapped to S², mesh as fourth transformation
 - [Commandment vs. Geometry](../04_AXIOLOGY/00_COMMANDMENT_VS_GEOMETRY.md) — religion vs. Dharma, obedience vs. recognition

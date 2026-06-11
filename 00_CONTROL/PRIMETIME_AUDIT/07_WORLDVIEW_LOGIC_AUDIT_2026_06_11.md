@@ -138,3 +138,28 @@ The corpus now carries the sharper public-worldview line:
 - AIA is the public documentation/book interface for the corpus, not a conversion funnel and not an authority layer above the canon.
 - `η = 0` remains non-extraction and gift architecture; the rail is a signpost, not an altar or ask.
 - Dasein and perennial-question mappings remain `[I]` unless separately proven. The lens diagrams what shows; it does not possess the showing itself.
+
+## Minimal-Description / Ground-Boundary Overclaim Pass
+
+**Trigger:** the formal-system and computational-sphere pages still carried legacy language that made `κ=0`, the empty string, or "Theory of Everything" sound like possession of Ground or a proof that reality literally emerges from nothing.
+
+**Repairs made:**
+
+- Reframed `κ=0` as a ground-facing boundary symbol inside the scaffold, not "irreducible Ground" itself.
+- Replaced "nothing/everything" generation language with "the scaffold reconstructs its descriptions from the empty limit."
+- Reframed Wolfram/NKS pages so computational irreducibility remains valid for manifested-world trajectories while the framework's reducibility claim is internal to its own grammar.
+- Narrowed "Theory of Everything" language to a guarded historical slogan or explicit negation, not a demonstrated physics or metaphysics result.
+- Mirrored the source corrections into frozen public formal-library pages because regeneration from the missing source bundle is not currently reliable.
+- Confirmed the Dasein aporia plan is present in source/public surfaces as `[I]` structural resonance, with "seer is not on the sphere" and "does not exhaust Heidegger" limits intact.
+
+**Verification result:**
+
+- `python3 01_EMERGENTISM/12_PUBLIC_SITE/predeploy_check.py` — PASS.
+- Targeted old-overclaim scan now returns only the Wolfram v2.0 correction paragraph that explicitly rejects the empty-string program claim.
+- Dasein-specific scan returns only guardrails: negated "proof/exhausts" language, anti-drift correction for `Ground = D0`, and D6's reminder that no named register exhausts the Real.
+
+**Boundary retained:**
+
+- The empty limit is a model boundary and practice-register image, not a public proof of Ground.
+- The scaffold can reconstruct descriptions; it does not generate Being.
+- AIA remains the GitBook-like book/navigation layer for the Emergentism corpus, not an extraction funnel or authority layer above the canon.

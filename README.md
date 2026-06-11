@@ -35,7 +35,7 @@ The former `01_FRAMEWORK/01_FOUNDATIONS/` content now lives here directly. The f
 
 ## Worldview / Lens Spine
 
-When this root is used as a complete Weltanschauung, read the actual source folders in this order:
+When this root is used as a compact Weltanschauung, read the actual source folders in this order:
 
 1. `05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md` — the compact statement that Emergentism is a lens, worldview, and toolchain.
 2. `08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md` and `D_SERIES_DOMAINS/D32_MATHEMATICS.md` — the seven Rosetta rows as mathematical action signatures on `P_node = Φ × V`.

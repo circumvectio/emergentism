@@ -224,7 +224,7 @@ Corrections are more important than claims
 - The Honest Position -- canonical epistemic status of every claim
 - [The Canonical Formula Block](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) -- the exact four-line load-bearing sequence
 - [The Core State of Being](../../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md) -- Ground, Being, Dasein, beings
-- [The Computational Sphere](../../05_COSMOLOGY/00_THE_COMPUTATIONAL_SPHERE.md) -- foundational methodology: reduction to κ = 0 (irreducible ground)
+- [The Computational Sphere](../../05_COSMOLOGY/00_THE_COMPUTATIONAL_SPHERE.md) -- foundational methodology: reduction toward `κ = 0` as boundary
 - Glossary -- quick-reference terminology for all audiences
 - Formal System: Power-Max Lemma -- formal proof of cooperation under coupling
 - Formal System: Triadic Stability -- uniqueness proof for the triadic structure

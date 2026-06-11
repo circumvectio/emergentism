@@ -98,7 +98,7 @@ Mut is not merely bravery. Mut is not merely the absence of fear.
 
 **Demut is not weakness.** Demut is the geometric recognition that ν > 1 leads to the south pole. Demut is M3 — the comprehension constraint — recognized from within as courage.
 
-**Demut is read as κ = 0 (irreducible ground) chosen voluntarily.**
+**Demut is read as voluntary reduction toward `κ = 0` as boundary.**
 
 | Demut | Geometric Reading |
 |-------|-------------------|
@@ -359,7 +359,7 @@ Zero-Sum Resolution Equation
 
 ## See Also
 
-- [The Computational Sphere](../05_COSMOLOGY/00_THE_COMPUTATIONAL_SPHERE.md) — foundational methodology: reduction to κ = 0 (irreducible ground), **Burri Sphere coordinates (φ, ν) explained**
+- [The Computational Sphere](../05_COSMOLOGY/00_THE_COMPUTATIONAL_SPHERE.md) — foundational methodology: reduction toward `κ = 0` as boundary, **Burri Sphere coordinates (φ, ν) explained**
 - [The Brain Is the Burri Sphere](../02_EPISTEMOLOGY/00_THE_BRAIN_IS_THE_BURRI_SPHERE.md) — neuroscience-adjacent analogy and disclosure surface
 - [The Weighing of the Heart](../90_ARCHIVE/00_THE_WEIGHING_OF_THE_HEART.md) — convergent symbolic translation of the Burri Sphere
 - [AUM on the Burri Sphere](../90_ARCHIVE/00_AUM_ON_THE_BURRI_SPHERE.md) — Vedantic convergence: Mandukya's four states as geometric positions

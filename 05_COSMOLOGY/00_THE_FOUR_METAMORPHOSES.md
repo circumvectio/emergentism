@@ -316,7 +316,7 @@ Nietzsche could not see the mesh because Nietzsche did not have:
 
 3. **The η = 0 enforcement:** Nietzsche did not have a mechanism to prevent extraction. The Übermensch extracts — the Übermensch commands beyond comprehension.
 
-4. **The sitting practice:** Nietzsche did not have the daily reduction to κ = 0 (irreducible ground). Nietzsche did not have the method to arrive at the equator.
+4. **The sitting practice:** Nietzsche did not have the daily reduction toward `κ = 0` as boundary. Nietzsche did not have the method to arrive at the equator.
 
 **Nietzsche saw the transformations.** Nietzsche saw the camel, the lion, the child.
 
@@ -393,7 +393,7 @@ Zero-Sum Resolution Equation
 
 ## See Also
 
-- The Computational Sphere — foundational methodology: reduction to κ = 0 (irreducible ground)
+- The Computational Sphere — foundational methodology: reduction toward `κ = 0` as boundary
 - [The Weighing of the Heart](../90_ARCHIVE/00_THE_WEIGHING_OF_THE_HEART.md) — convergent symbolic translation: Egyptian material read through the Burri Sphere
 - Core Concepts — single source of truth for P_node = Φ × V and evidence tiers
 - Power-Max Lemma — cooperation theorem: individual optimization → collective optimization

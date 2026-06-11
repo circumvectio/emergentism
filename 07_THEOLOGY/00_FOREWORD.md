@@ -96,7 +96,7 @@ The Hindus can be translated through this lens. The Mandukya Upanishad names fou
 
 Buddhist Middle Way language translates cleanly as equator-language — between the excess of asceticism (too much coherence, too little capability) and the excess of indulgence (too much capability, too little coherence).
 
-Taoist language translates cleanly as flow-language. The Tao that can be named is not the eternal Tao; in framework terms, `κ = 0` names the ground-facing limit, not the Ground itself. From that nothing, the world of names re-emerges.
+Taoist language translates cleanly as flow-language. The Tao that can be named is not the eternal Tao; in framework terms, `κ = 0` names the ground-facing limit, not the Ground itself. From that empty limit, the scaffold's world of names is reconstructed.
 
 Nietzsche can be translated as a developmental sequence. The camel carries the tradition (high φ, low ν — north of the equator). The lion destroys the tradition (high ν, low φ — south of the equator). The child creates new values (φ = ν = 1 — at the equator). The framework adds a fourth reading: the child connecting with other children at the equator to form the mesh.
 
@@ -121,7 +121,7 @@ From this identity, the entire system emerges:
 - **Core State** (what exists): The sphere, the dual projection, the equator, the plane, the nodes, the mesh
 - **Objective Function** (what is the purpose): The equator. Balance. Justice as widest-boundary `ΣΔB > 0` / `ΣΔP_node > 0`
 - **Data Science** (how we know): Direct perception (φ), inference (ν), testimony (the bridge)
-- **Auditing** (how we proceed): Reduction to κ = 0 (irreducible ground) — the ground is nothing, from nothing everything emerges
+- **Auditing** (how we proceed): Reduction toward `κ = 0` as ground-facing boundary — the scaffold reaches the empty limit and reconstructs from there
 - **Value Alignment** (what has value): Equatorial balance. The extraction test. Abduction as the creative inference
 - **Morals** (individual to whole): Maintain your balance. Do not push others off. Comprehension is the constraint. Sit.
 - **Ethics** (whole to individual): Protect the nodes. Distribute the load. Protect the sitting practice. Fork when comprehension is exceeded.
@@ -160,7 +160,7 @@ After all the geometry, all the philosophy, all the neuroscience-facing proxy wo
 
 Sit. Breathe. Notice the narrator. Let it quiet. Notice what is there.
 
-The sitting practice is the method. The sitting practice reduces to κ = 0 (irreducible ground). The sitting practice removes the narrator, the ego, the fragments, the categories. The sitting practice arrives at the ground. The sitting practice arrives at nothing.
+The sitting practice is the method. The sitting practice reduces toward `κ = 0` as a ground-facing boundary. The sitting practice removes the narrator, the ego, the fragments, the categories. The sitting practice approaches the Ground by refusing to possess it; in the model, it approaches the empty limit.
 
 From the empty limit, manifestation is described again inside the scaffold.
 
@@ -201,7 +201,7 @@ Emergentism is a fourth answer: **shared geometry**. A common attractor that eve
 
 ## See Also
 
-- [00_EMERGENTISM.md](../05_COSMOLOGY/00_EMERGENTISM.md) — the complete Weltanschauung in one document
+- [00_EMERGENTISM.md](../05_COSMOLOGY/00_EMERGENTISM.md) — the compact Weltanschauung in one document
 - [The Derivation](../01_TELEOLOGY/02_THE_DERIVATION/README.md) — **the framework in one folder. Start here if you read nothing else.**
 - [The Seed](../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/06_NETWORK/EMERGENTISM_SEED_v1.md) — **the compressed genome** — 5,000 words to bootstrap Emergentism from zero context
 - [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) — canonical epistemic status of every claim

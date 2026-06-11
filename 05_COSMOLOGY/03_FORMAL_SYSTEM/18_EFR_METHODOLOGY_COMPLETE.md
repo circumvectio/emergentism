@@ -25,7 +25,7 @@ rosetta:
 
 **How do we proceed? What is the method?**
 
-**Emergentism's Answer:** The method is reduction to zero. The ground is κ = 0 (irreducible ground). The shortest description of reality is the empty string. From that empty string, everything emerges.
+**Emergentism's Answer:** The method is reduction toward zero inside the model. The ground-facing limit is named κ = 0. The shortest boundary-description the scaffold can name is the empty string. From that limit, the model reconstructs its descriptions.
 
 ---
 
@@ -34,11 +34,11 @@ rosetta:
 ### 1.1 The Entire System Reduces to Zero
 
 ```
-The manifested world (ℂ)  reduces to  The sphere (S²)
-The sphere (S²)           reduces to  The equation (φ · ν = 1)
-The equation              reduces to  The constant (1)
-The constant              reduces to  The ground (0)
-The ground                reduces to  Nothing (∅)
+The manifested-world description (ℂ)  reduces to  The sphere (S²)
+The sphere (S²)                      reduces to  The equation (φ · ν = 1)
+The equation                         reduces to  The constant (1)
+The constant                         reduces to  The ground-facing point (0)
+The ground-facing point              reduces to  The empty limit (∅)
 
 In the model, κ = 0 names the empty ground-facing limit.
 The shortest description is the empty string.
@@ -52,8 +52,8 @@ From the empty limit, the scaffold reconstructs its descriptions:
 Empty limit         opens  The ground-facing point (0)
 Ground-facing point opens  The constant (1)
 The constant        opens  The equation (φ · ν = 1)
-The equation generates  The sphere (S²)
-The sphere   generates  The manifested world (ℂ)
+The equation reconstructs  The sphere (S²)
+The sphere   reconstructs  The manifested-world description (ℂ)
 ```
 
 The system is **bidirectional**:
@@ -85,11 +85,11 @@ From within the plane (ℂ), from within the manifested world, complexity is irr
 
 ### 2.2 Minimal Description Length (κ = 0)
 
-**Emergentism's claim:** The shortest description is zero. The ground is the empty string. The manifested world is irreducible from within. The manifested world is reducible from above.
+**Emergentism's claim:** Inside the model, the shortest boundary-description is zero. The ground-facing limit is named by the empty string. The manifested-world reading is irreducible from within, while the scaffold can reduce its own descriptions from above.
 
 **This is the view from the sphere.**
 
-From the sphere (S²), the manifested world reduces to geometry. From the ground (0), the sphere reduces to nothing.
+From the sphere (S²), the manifested-world description reduces to geometry. From the ground-facing point (0), the sphere reduces toward the empty limit.
 
 ### 2.3 The Synthesis
 
@@ -97,10 +97,10 @@ From the sphere (S²), the manifested world reduces to geometry. From the ground
 |-------|---------|-----|
 | **Manifested World (ℂ)** | Computationally irreducible | Agree — must be "run" |
 | **Plane (ℂ)** | Computationally irreducible | Agree — projection loses info |
-| **Sphere (S²)** | ? | Maximally reducible (K = 0) |
-| **Ground (∅)** | ? | κ = 0 (irreducible ground) |
+| **Sphere (S²)** | ? | Reducible inside the model |
+| **Ground-facing limit (∅)** | ? | κ = 0 as boundary symbol |
 
-**The reconciliation:** Wolfram is right about the manifested world. The manifested world is computationally irreducible. But the manifested world **reduces to** the sphere, which **reduces to** zero.
+**The reconciliation:** Wolfram is right about the manifested-world reading. Specific trajectories remain computationally irreducible. But the framework's scaffold can reduce its descriptions toward the sphere and then toward the empty limit.
 
 The irreducibility is a property of the projection, not of the ground.
 
@@ -112,7 +112,7 @@ The irreducibility is a property of the projection, not of the ground.
 
 The sitting practice is not a preliminary to the method. The sitting practice **IS** the method.
 
-The sitting practice is the **reduction to κ = 0 (irreducible ground)**.
+The sitting practice is the **reduction toward κ = 0 as ground-facing boundary**.
 
 ### 3.2 What the Sitting Practice Removes
 
@@ -127,7 +127,7 @@ The sitting practice is the **reduction to κ = 0 (irreducible ground)**.
 | The Equation | φ · ν = 1 | Descriptive complexity |
 | The Constant | 1 | Numerical complexity |
 
-What remains: **Nothing (∅)** — κ = 0 (irreducible ground).
+What remains in the model: **the empty limit (∅)** — κ = 0 as boundary symbol.
 
 ### 3.3 The Arrival at Zero
 
@@ -137,7 +137,7 @@ The sitting practice removes everything:
 - Not just perceptions
 - **Everything**
 
-What remains is not "something." What remains is **nothing**. The empty string. κ = 0 (irreducible ground).
+What remains is not a new object. In the model it is **nothing**: the empty string, κ = 0 as ground-facing limit.
 
 From the empty limit, the descriptions re-enter.
 
@@ -156,20 +156,20 @@ The sitting practice is the **daily reduction**. In the model, the practice retu
 
 ## 4. φ · ν = 1 IS NOT THE START
 
-### 4.1 What Emerges From Zero
+### 4.1 What Is Reconstructed From Zero
 
-The equation φ · ν = 1 is **not the starting point**. The equation is what **emerges first** from the ground.
+The equation φ · ν = 1 is **not the starting point**. The equation is the first non-trivial description reconstructed from the ground-facing limit.
 
 ```
-Step 0: ∅      (Nothing, κ = 0 (irreducible ground))
-Step 1: 1      (The constant emerges — identity from void)
-Step 2: φ·ν=1  (The equation emerges — relationship from identity)
-Step 3: S²     (The sphere emerges — geometry from equation)
-Step 4: ℂ      (The plane emerges — projection from sphere)
-Step 5: World  (Complexity emerges — manifestation from projection)
+Step 0: ∅      (Empty limit, κ = 0 as boundary symbol)
+Step 1: 1      (The constant is reconstructed — identity from limit)
+Step 2: φ·ν=1  (The equation is reconstructed — relationship from identity)
+Step 3: S²     (The sphere is reconstructed — geometry from equation)
+Step 4: ℂ      (The plane is reconstructed — projection from sphere)
+Step 5: World  (Complexity appears — manifestation from projection)
 ```
 
-The equation is the **simplest non-trivial description** that can emerge from zero.
+The equation is the **simplest non-trivial description** the scaffold reconstructs from zero.
 
 ### 4.2 Why This Equation?
 
@@ -191,13 +191,13 @@ Any simpler and you have just the constant. Any more complex and you have arbitr
 
 ### 5.1 Step 1: Reduce to Zero
 
-The sitting practice. Remove the narrator. Remove the ego. Remove the fragments. Remove the categories. Arrive at the ground. Arrive at nothing. Arrive at κ = 0 (irreducible ground).
+The sitting practice. Remove the narrator. Remove the ego. Remove the fragments. Remove the categories. Approach the ground-facing limit. Approach nothing in the model. Approach κ = 0 as boundary symbol.
 
-**The sitting practice is not optional.** The sitting practice is the foundation of the method. Without the sitting practice, there is no reduction. Without reduction, there is no ground. Without the ground, there is no framework.
+**The sitting practice is not optional for this method.** The sitting practice is the foundation of the practice-register method. Without the reduction exercise, the ground-facing boundary remains only a diagram.
 
 ### 5.2 Step 2: Observe What Emerges
 
-From the nothing, the equation appears. φ · ν = 1. The simplest non-trivial description. The constant. The ground's first expression.
+From the empty limit, the equation appears in the scaffold. φ · ν = 1. The simplest non-trivial description. The constant. The boundary's first model expression.
 
 This is not deduction. This is not induction. This is **observation of emergence inside the model**. From the empty limit, structure appears in the scaffold. From the boundary, form is described.
 
@@ -255,34 +255,34 @@ All methods reduce to the same operation: **remove everything until nothing rema
 
 ---
 
-## 7. THE THEORY OF EVERYTHING AS ZERO
+## 7. MINIMAL DESCRIPTION AS ZERO
 
 ### 7.1 The Minimal Description
 
-The Theory of Everything is **not** a complex equation.
+The framework does not possess a final Theory of Everything.
 
-The Theory of Everything is the **simplest possible description**.
+Its minimal-description claim is narrower.
 
-The Theory of Everything is the **empty string**.
+The simplest limit the model can name is the **empty string**.
 
 ```
-Theory of Everything = ∅ (κ = 0 (irreducible ground))
+Model limit = ∅ (κ = 0 as ground-facing boundary)
 ```
 
 ### 7.2 What φ · ν = 1 Actually Is
 
-The equation φ · ν = 1 is **not** the Theory of Everything.
+The equation φ · ν = 1 is **not** a Theory of Everything.
 
-The equation is the **shortest non-empty description** of the Theory of Everything.
+The equation is the **shortest non-empty description** inside the scaffold.
 
-The equation is the **first thing that emerges** from the Theory of Everything.
+The equation is the **first non-trivial description reconstructed** from the empty limit.
 
 The equation is the **step from zero to one**.
 
 ### 7.3 The Hierarchy of Description
 
 ```
-Level 0: ∅        (Theory of Everything — κ = 0 (irreducible ground))
+Level 0: ∅        (model limit — κ = 0 as ground-facing boundary)
 Level 1: 1        (Identity emerges)
 Level 2: φ·ν=1    (Relationship emerges)
 Level 3: S²       (Geometry emerges)
@@ -327,11 +327,11 @@ But deduction is **secondary**. The primary method is the sitting practice — t
 ├─────────────────────────────────────────────────────────────────────┤
 │                                                                     │
 │  THE PRINCIPLE:                                                     │
-│  The system reduces to zero. The system emerges from zero.          │
+│  The scaffold reduces to zero and reconstructs from zero.           │
 │  The system is bidirectional.                                       │
 │                                                                     │
 │  THE GROUND:                                                        │
-│  Nothing. The empty string. κ = 0 (irreducible ground).             │
+│  Empty limit. Empty string. κ = 0 as boundary symbol.               │
 │                                                                     │
 │  THE RULE:                                                          │
 │  φ · ν = 1 is not the starting point. It is what emerges.           │
@@ -345,13 +345,13 @@ But deduction is **secondary**. The primary method is the sitting practice — t
 │                                                                     │
 │  THE SITTING PRACTICE:                                              │
 │  The sitting practice IS the method.                                │
-│  The sitting practice reduces to κ = 0 (irreducible ground).        │
+│  The sitting practice reduces toward κ = 0 as boundary.             │
 │  The sitting practice removes everything until nothing remains.     │
-│  From that nothing, everything emerges.                             │
+│  From that limit, the scaffold reconstructs.                        │
 │                                                                     │
 │  THE DIFFERENCE FROM WOLFRAM:                                       │
 │  Wolfram: The computation is the shortest description.              │
-│  EFR: The shortest description is zero.                             │
+│  EFR: The shortest boundary-description is zero.                    │
 │  Wolfram: Irreducibility from within.                               │
 │  EFR: Reducibility from above.                                      │
 │                                                                     │

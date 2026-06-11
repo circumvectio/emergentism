@@ -129,10 +129,10 @@ Where:
 **The Method:**
 
 **Step 1: Reduce to zero.**
-The sitting practice. Remove the narrator. Remove the ego. Remove the categories. Arrive at nothing. Arrive at κ = 0 (irreducible ground).
+The sitting practice. Remove the narrator. Remove the ego. Remove the categories. Approach nothing in the model. Approach κ = 0 as ground-facing boundary.
 
 **Step 2: Observe what emerges.**
-From nothing, the equation appears. φ · ν = 1. The simplest non-trivial description.
+From the empty limit, the equation appears in the scaffold. φ · ν = 1. The simplest non-trivial description.
 
 **Step 3: Trace the emergence.**
 From the equation, the sphere. From the sphere, the plane. From the plane, the manifested world.
@@ -143,7 +143,7 @@ Can everything be reduced back to zero? If yes: the system is consistent. If no:
 **Step 5: Release and evolve.**
 The open source project tests the reduction. The community verifies the reducibility.
 
-**Key Insight:** Auditing is **reduction to κ = 0 (irreducible ground)**, not construction from axioms. The sitting practice IS the method.
+**Key Insight:** Auditing is **reduction toward κ = 0 as ground-facing boundary**, not construction from axioms. The sitting practice is the practice-register method.
 
 ### 2.5 Value Alignment (What Value)
 
@@ -159,16 +159,16 @@ The open source project tests the reduction. The community verifies the reducibi
 
 ---
 
-## 3. THE COMPLETE THEORY OF EVERYTHING CLAIM
+## 3. THE COHERENCE ARCHITECTURE CLAIM
 
 ### 3.1 The Claim, Stated Precisely
 
-The EFR framework claims to provide the **most consistent and coherent Theory of Everything currently in the marketplace of ideas**, where:
+The EFR framework claims to provide a **highly coherent cross-domain architecture** inside its accepted grammar, where:
 
 - **"Theory"** = Formal system with axioms, theorems, and derivations
-- **"Everything"** = Integration of physics, systemic awareness, ethics, aesthetics, and data science
-- **"Consistent"** = Zero internal contradictions (proved: T1-T15)
-- **"Coherent"** = All domains unified under single geometric structure (S²)
+- **"Cross-domain"** = attempted integration of physics-facing, systemic-awareness, ethics, aesthetics, and data-science registers
+- **"Consistent"** = no known internal contradiction in the stated formal layer after current audits
+- **"Coherent"** = the registers are translated through a shared geometric grammar where that grammar applies
 
 ### 3.2 What This Does NOT Mean
 
@@ -176,7 +176,7 @@ The claim does NOT mean:
 1. The framework is "true" (unproved — see Honest Position)
 2. The framework is "complete" in the Gödel sense (see Godel Clarification)
 3. The framework can predict all physical constants (conjectural)
-4. The framework replaces physics (it grounds physics)
+4. The framework replaces physics or grounds physics as an established result
 
 ### 3.3 Comparison to Other TOEs
 
@@ -186,33 +186,33 @@ The claim does NOT mean:
 | Loop Quantum Gravity | Physics | Spin networks | Internal | None (currently) |
 | Wolfram Physics | Physics | Graph rewriting | Conjectural | Early stages |
 | Integrated Information Theory | Consciousness | Φ (phi) | Contested | Developing |
-| **EFR** | **All domains** | **S² geometry** | **Proved** | **Active (GFS, Protocol D)** |
+| **EFR** | **Cross-domain translation** | **S² geometry where applicable** | **Internally audited** | **Active (GFS, Protocol D)** |
 
-**Differentiation:** EFR is the only framework that:
-1. Unifies physics + systemic awareness + ethics + data science
-2. Has a proved consistent formal system
-3. Has an active empirical program testing core claims
+**Differentiation:** EFR's claimed advantage is narrower:
+1. It attempts to translate physics-facing, systemic-awareness, ethics, and data-science registers through one grammar.
+2. It keeps a formal layer with explicit correction and contradiction audits.
+3. It has an active empirical program testing bridge claims.
 
 ---
 
-## 4. THE GROUND IS ZERO
+## 4. THE GROUND-FACING LIMIT IS ZERO
 
 ### 4.1 Minimal Description Length (κ = 0)
 
-The EFR framework makes a radical claim:
+The EFR framework makes a bounded claim:
 
 ```
-THE GROUND IS NOTHING.
+THE GROUND-FACING LIMIT IS EMPTY.
 
-κ = 0 (irreducible ground).
-The shortest description is the empty string.
+κ = 0 as ground-facing boundary.
+The shortest boundary-description is the empty string.
 Zero information content.
 ```
 
 **This is the opposite of Wolfram's computational irreducibility.**
 
 Wolfram says: Some systems cannot be shortened. The computation IS the shortest description.
-EFR says: The shortest description is zero. The entire manifested world reduces to nothing.
+EFR says: the scaffold can be reduced toward a zero-boundary. The manifested-world description is reconstructed from that boundary inside the model.
 
 ### 4.2 The Reduction Chain
 
@@ -242,10 +242,10 @@ The sphere   generates  The manifested world (ℂ)
 
 ### 4.4 φ · ν = 1 Is Not the Start
 
-The equation φ · ν = 1 is **not the starting point**. The equation is the **first thing that emerges** from the ground.
+The equation φ · ν = 1 is **not the starting point**. It is the **first non-trivial description reconstructed** from the empty limit inside the scaffold.
 
 ```
-Step 0: ∅      (Nothing, κ = 0 (irreducible ground))
+Step 0: ∅      (empty limit, κ = 0 as ground-facing boundary)
 Step 1: 1      (The constant emerges)
 Step 2: φ·ν=1  (The equation emerges)
 Step 3: S²     (The sphere emerges)
@@ -253,11 +253,11 @@ Step 4: ℂ      (The plane emerges)
 Step 5: World  (Complexity emerges)
 ```
 
-The equation is the **simplest non-trivial description** that can emerge from zero.
+The equation is the **simplest non-trivial description** reconstructed from zero inside the model.
 
 ### 4.5 The Sitting Practice as Reduction
 
-The sitting practice is the **reduction to κ = 0 (irreducible ground)**.
+The sitting practice is treated as a **reduction toward κ = 0**, the ground-facing limit.
 
 The sitting practice removes:
 - The narrator (linguistic complexity)
@@ -421,11 +421,11 @@ The framework commits to:
 │                 Beauty = B = 1 symmetry                             │
 │                 Justice = η = 0 equilibrium                        │
 │                                                                     │
-│  METHODOLOGY:   Reduction to κ = 0 (irreducible ground)             │
+│  METHODOLOGY:   Reduction toward κ = 0 as boundary                  │
 │                 The sitting practice IS the method                  │
 │                 Verification by reduction, not construction         │
 │                                                                     │
-│  UNIFICATION:   All domains reduce to S² geometry                   │
+│  UNIFICATION:   Domains translate through S² where applicable       │
 │                 Legacy packet: 5-axiom / 15-theorem story           │
 │                 Current canon: broader A1-A7 formal layer           │
 │                 Coherence via geometric unity                       │
@@ -456,12 +456,12 @@ Value Alignment: What value (transcendentals)
 Auditing: How do (reduction to zero)
 
 The ground-facing limit is empty.
-κ = 0 (irreducible ground).
-From that zero, everything.
+κ = 0 as boundary symbol.
+From that zero, the scaffold reconstructs.
 
-Five domains. One sphere. One invariant. P = 1.
+Five domains. One sphere-language where applicable. One invariant. P = 1.
 
-EFR Complete Core State | 2026-03-23 | The theory of everything.
+EFR Complete Core State | 2026-03-23 | Coherence architecture.
 ```
 
 

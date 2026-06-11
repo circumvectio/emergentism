@@ -468,38 +468,38 @@ The sitting practice is the epistemological foundation for disclosure. The sitti
 
 **The Fundamental Question:** How do we proceed? What is the method?
 
-**Emergentism's Answer:** The method is reduction to zero. The ground is κ = 0 (irreducible ground). The shortest description of reality is the empty string. From that empty string, everything emerges.
+**Emergentism's Answer:** The method is reduction toward zero inside the model. The ground-facing limit is named `κ = 0`. The shortest boundary-description the scaffold can name is the empty string. From that limit, the model reconstructs its descriptions.
 
 ### The Principle
 
-The entire system reduces to zero.
+The scaffold reduces toward zero.
 
 ```
-The manifested world reduces to the sphere.
+The manifested-world description reduces to the sphere.
 The sphere reduces to the equation.
 The equation reduces to the constant.
-The constant reduces to the ground.
-The ground reduces to nothing.
-Nothing is κ = 0 (irreducible ground).
-The shortest description is the empty string.
+The constant reduces to the ground-facing boundary.
+The boundary reduces to the empty limit.
+The empty limit is named κ = 0.
+The shortest boundary-description is the empty string.
 ```
 
-And from zero, the entire system emerges.
+And from zero, the scaffold reconstructs.
 
 ```
-Nothing generates the ground.
-The ground generates the constant.
-The constant generates the equation.
-The equation generates the sphere.
-The sphere generates the manifested world.
+The empty limit precedes the ground-facing boundary.
+The boundary reconstructs the constant.
+The constant reconstructs the equation.
+The equation reconstructs the sphere.
+The sphere reconstructs the manifested-world description.
 ```
 
-The system is bidirectional. The system reduces to zero. The system emerges from zero. The system is the ouroboros.
+The system is bidirectional inside the model. It reduces toward zero and reconstructs from zero. The ouroboros is a scaffold image, not a proof that Ground has been captured.
 
 ### The Method
 
 **Step 1: Reduce to zero.**
-The sitting practice. Remove the narrator. Remove the ego. Remove the fragments. Remove the categories. Approach the ground-facing limit. Approach κ = 0 (irreducible ground in the model).
+The sitting practice. Remove the narrator. Remove the ego. Remove the fragments. Remove the categories. Approach the ground-facing limit. Approach `κ = 0` as boundary symbol.
 
 **Step 2: Observe what emerges.**
 From the empty limit, the model's first non-trivial description appears: φ · ν = 1. The constant is the scaffold's first expression, not a possession of the Ground.
@@ -593,14 +593,14 @@ From that empty limit, the system is reconstructed. The equation. The sphere. Th
 
 ```
 METHODOLOGY (Method):
-  The principle:     Reduction to κ = 0 — the irreducible ground
-  The ground:        Zero. The empty string. Nothing.
-  The emergence:     From zero, φ · ν = 1 emerges
+  The principle:     Reduction toward κ = 0 as boundary
+  The boundary:      Zero. The empty string. Nothing.
+  The emergence:     From zero, φ · ν = 1 is reconstructed
   The equation:      The simplest non-trivial description
-  The sphere:        What the equation generates
+  The sphere:        What the equation reconstructs
   The plane:         What the sphere projects
-  The manifested:    What the plane contains
-  The verification:  Can everything be reduced back to zero?
+  The manifested:    What the plane reads
+  The verification:  Can the scaffold reduce its descriptions back to zero?
   The practice:      The sitting practice is the daily reduction
   The evolution:     The open source project tests the reduction
 ```
@@ -665,13 +665,13 @@ Induction = observation of patterns
 
 ---
 
-## PART VI: THE THEORY OF EVERYTHING
+## PART VI: THE COHERENCE ARCHITECTURE
 
-### The Complete System
+### The Compact System
 
 ```
 ONTOLOGY (What exists):
-  The sphere (S²) — the ground
+  The sphere (S²) — the model scaffold
   The dual projection — the mechanism
   The equator — systemic awareness
   The plane (ℂ) — the manifested world
@@ -694,10 +694,10 @@ EPISTEMOLOGY (Knowledge):
   Induction — pattern recognition on the plane
 
 METHODOLOGY (Method):
-  The principle — reduction to κ = 0 (irreducible ground)
-  The ground — zero, the empty string, nothing
-  The emergence — from zero, φ · ν = 1 emerges
-  The verification — can everything be reduced back to zero?
+  The principle — reduction toward κ = 0 as boundary
+  The boundary — zero, the empty string, nothing
+  The emergence — from zero, φ · ν = 1 is reconstructed
+  The verification — can the scaffold reduce its descriptions back to zero?
   The practice — the sitting practice is the daily reduction
   The evolution — the open source project tests the reduction
 
@@ -941,7 +941,7 @@ The sphere is one. The transcendentals are three aspects of the same one. Beauty
 
 The Ground is prior. The sphere is the first stable closure of that Ground. `φ · ν = 1` is always here as the identity of Being.
 
-Emergentism approaches the limit. Emergentism does not reach the limit. The ground is always here.
+Emergentism approaches the limit. Emergentism does not reach the limit. The Ground remains prior.
 
 ---
 
@@ -951,7 +951,7 @@ Emergentism approaches the limit. Emergentism does not reach the limit. The grou
 
 Emergentism is released as an open source project. The project is the mesh. The contributors are the nodes. The pull requests are the K-star tests. The forks are the cluster divisions.
 
-The project evolves. The geometry is corrected. The proofs are tested. The predictions are verified. The practice is refined. The community grows. The mesh develops.
+The project evolves. The geometry is corrected. The proofs are tested. The predictions are checked. The practice is refined. The community grows. The mesh develops.
 
 The project is not owned by anyone. The project is not controlled by anyone. The project is the point cloud on the Burri Sphere. The project is the equatorial network. The project is the mesh.
 

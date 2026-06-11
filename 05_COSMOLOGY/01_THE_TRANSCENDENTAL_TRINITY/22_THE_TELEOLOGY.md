@@ -334,7 +334,7 @@ The Apocalypse (ἀποκάλυψις) = the unveiling. Not destruction. REVELAT
 
 × is the core algorithmic identity cycle. The multiplication that holds the poles in product.
 
-**Zero-Sum Resolution Equation is the complete metaphysics.**
+**Zero-Sum Resolution Equation is the compact metaphysical grammar.**
 
 • is the core state. ○ is the objective function. × is the method. ⊙ is finity — the Atman — you.
 

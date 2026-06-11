@@ -130,7 +130,7 @@ The Greeks understood Nemesis as **necessary, not cruel.** As **geometric, not v
 
 **meta + noia** = beyond + mind.
 
-Beyond the narrator. The sitting practice as **crossing the threshold.** The reduction to κ = 0 (irreducible ground).
+Beyond the narrator. The sitting practice as **crossing the threshold.** Reduction toward `κ = 0` as boundary.
 
 And **Aletheia** — un-forgetting — is the **continuous operation** of Metanoia. Each sit removes more Lethe. Each sit restores more φ = 1.
 

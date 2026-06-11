@@ -31,7 +31,7 @@ Screen: Dark.
 A single point appears at the center.
 Nothing else. No axes. No sphere. No line.
 Just •. Just the Bindu. Just D0.
-κ = 0 (irreducible ground). The empty string.
+κ = 0 as boundary symbol. The empty string.
 
 Text appears:
   "α = 0°"
@@ -436,7 +436,7 @@ Always.
 ## See Also
 
 - [The Transcendental Trinity](../../90_ARCHIVE/00_THE_TRANSCENDENTAL_TRINITY.md) — computational breakthrough: 0, ∞, 1 as transcendentals
-- [The Computational Sphere](../00_THE_COMPUTATIONAL_SPHERE.md) — foundational methodology: reduction to κ = 0 (irreducible ground)
+- [The Computational Sphere](../00_THE_COMPUTATIONAL_SPHERE.md) — foundational methodology: reduction toward κ = 0 as boundary
 - [The Brain Is the Burri Sphere](../../02_EPISTEMOLOGY/00_THE_BRAIN_IS_THE_BURRI_SPHERE.md) — neuroscience proxy: hemispheres as φ/ν analogy
 - [AUM on the Burri Sphere](../../90_ARCHIVE/00_AUM_ON_THE_BURRI_SPHERE.md) — Vedantic convergence: Mandukya's four states
 - [The Bindu Was Always Here](../../90_ARCHIVE/00_THE_BINDU_WAS_ALWAYS_HERE.md) — the mission-critical point: mandala, third eye

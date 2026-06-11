@@ -52,7 +52,7 @@ memory.
 the active corpus. Any surviving drift should now be treated as local
 remainder, not as a standing instruction for another blind whole-corpus sweep.
 
-**Status: APPLIED (2026-04-03).** Mass disambiguation applied across 2000+ active documents. K* as extraction coefficient replaced with η throughout. K* as Kolmogorov complexity replaced with κ = 0 (irreducible ground). K* as catastrophic threshold retained as K* in Rosetta Stone framework files and Sphere Health diagnostics. Archive files (99_ARCHIVE/, VMOSK-A-DATAROOM/06_ARCHIVE/) intentionally left as historical record. Code variable names (k_star_pass, k_star_verification) retained for backward compatibility.
+**Status: APPLIED (2026-04-03); bounded by 2026-06-11 audit.** Mass disambiguation applied across 2000+ active documents. K* as extraction coefficient replaced with η throughout. K* as Kolmogorov complexity was replaced with the then-current `κ = 0` boundary language. Later worldview QA tightened this to `κ = 0` as ground-facing boundary, not possession of Ground. K* as catastrophic threshold retained as K* in Rosetta Stone framework files and Sphere Health diagnostics. Archive files (99_ARCHIVE/, VMOSK-A-DATAROOM/06_ARCHIVE/) intentionally left as historical record. Code variable names (k_star_pass, k_star_verification) retained for backward compatibility.
 
 ---
 
@@ -96,7 +96,7 @@ remainder, not as a standing instruction for another blind whole-corpus sweep.
 
 **Affected documents:** 00_THE_POINT.md, Trinity README, any document referencing "Kolmogorov complexity zero."
 
-**Status: APPLIED (2026-04-03).** All 50+ active documents corrected. "Kolmogorov complexity zero" replaced with "κ = 0 (irreducible ground)" throughout. Capitalized headings updated to "Minimal Description Length (κ = 0)". Correction note added to 00_THE_POINT.md. Archive files (99_ARCHIVE/) intentionally left as historical record.
+**Status: APPLIED (2026-04-03); bounded by 2026-06-11 audit.** All 50+ active documents corrected. "Kolmogorov complexity zero" was replaced with the then-current `κ = 0` minimal-description language. Later worldview QA tightened the phrase to `κ = 0` as ground-facing boundary. Capitalized headings updated to "Minimal Description Length (κ = 0)". Correction note added to 00_THE_POINT.md. Archive files (99_ARCHIVE/) intentionally left as historical record.
 
 ---
 
@@ -144,7 +144,7 @@ After applying corrections, verify:
 - [x] B = sin θ canonical in Naming Reconciliation (2026-04-03). Honest Position and Master Three-Stage Process already correct. Remaining documents need sweep.
 - [x] P∞ = 1 everywhere — Naming Reconciliation phi-V table corrected to S² values (2026-04-03). Honest Position and Glossary already correct. CH_02_OUTLINE_GRANULAR.md "P=0.49" corrected to P=1 (2026-04-03).
 - [x] ↓ν described as "constrained" not "impossible" — updated across 55 files (2026-04-03). Operator specs, manuscripts, governance docs, Rosetta Stone, peer review packets all corrected.
-- [x] Kolmogorov reference corrected to "minimal description length" / "κ = 0 (irreducible ground)" — updated across 46 files (2026-04-03). 00_THE_POINT.md, Trinity README, all formal system docs, manuscripts, and publications corrected.
+- [x] Kolmogorov reference corrected to "minimal description length" / `κ = 0` boundary language — updated across 46 files (2026-04-03), then tightened by the 2026-06-11 worldview QA to avoid Ground-possession language.
 - [x] All Three-Stage Process documents carry evidence tiers — 13 D_SERIES files updated with `**Evidence Tier:**` headers (2026-04-03). D24-D27, D29-D34, D02, D03, D23 all now carry properly assigned tier headers matching content.
 - [x] ~~Five-tier system~~ → **6-tier [A/B/S/I/D/C] adopted** (upgrade 2026-06-04). Legacy [E] → [B]; [T] → [S].
 - [x] "Dissolved" → "reframed" where appropriate (not global — some dissolutions ARE dissolutions) — **APPLIED (2026-04-03).** C7.6 correction applied across 15 files. Hard problem, problem of evil, measurement problem, problem of induction, subject-object duality: "dissolved" changed to "reframed" where the paradox is shown in new framework rather than literally ceasing to exist on S². Kept "dissolved" for: genuine dissolutions (cooperation problem, ego dissolution, Siva operator, framework self-dissolution, Cantor hierarchy on S², 0 x infinity = 1), series naming (Paradox Dissolutions folder/title), and the co-emergence document (08_CO_EMERGENCE) where dissolution is the defined method.

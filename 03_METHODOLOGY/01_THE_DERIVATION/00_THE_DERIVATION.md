@@ -301,7 +301,7 @@ Step 7). Line 4 is the equilibrium energy restated as the ground state
 (trivially zero on S² since `log(φ·ν) = log 1 = 0`).
 
 This tetrad is **how each kernel piece reads under one of the four
-classical categories** of a complete Weltanschauung. It is not the
+classical categories** of a compact Weltanschauung. It is not the
 derivation's four primitive lines — those are in the Canonical Formula
 Block and they include the seed `Zero-Sum Resolution Equation` as the first line.
 

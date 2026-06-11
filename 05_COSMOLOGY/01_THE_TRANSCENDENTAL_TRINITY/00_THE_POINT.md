@@ -47,9 +47,9 @@ There is nothing to divide. No parts. No boundary. No inside or outside. The poi
 No numbers. No operations. No equations. 1/0 is not "undefined" — it is **unasked**. The question "what is 1 divided by 0?" requires a line, a continuum, a geometry. The point has none.
 
 ### Minimal Description Length (κ = 0)
-The description length is minimal — the irreducible ground. The empty string. The point cannot be described more simply — it is already maximally simple. **κ = 0.**
+The description length is minimal inside the scaffold — the ground-facing boundary. The empty string. The point cannot be described more simply within the model — it is already maximally simple. **κ = 0.**
 
-> **Correction (C5):** Earlier versions of this document used "Kolmogorov complexity zero." This is a category error: K(x) = 0 would require a program of length 0 to output x, which is impossible. The correct concept is κ = 0: the ground as irreducible, not as literally having Kolmogorov complexity zero.
+> **Correction (C5):** Earlier versions of this document used "Kolmogorov complexity zero." This is a category error: K(x) = 0 would require a program of length 0 to output x, which is impossible. The correct concept is κ = 0 as a ground-facing boundary: maximally simple inside the scaffold, not literally zero-cost to specify and not possession of Ground.
 
 ---
 
@@ -67,9 +67,9 @@ The description length is minimal — the irreducible ground. The empty string. 
 
 ## The Sitting Practice Returns Here
 
-The sitting practice reduces to the point.
+The sitting practice reduces toward the point.
 
-Not figuratively. **Literally.**
+This is practice-register language, not a public proof of Ground.
 
 Sit. Breathe. Notice the narrator — the voice that says "I am sitting, I am breathing, I am noticing."
 
@@ -79,11 +79,11 @@ What remains?
 
 Not "you." Not "systemic awareness." Not "awareness." Those are concepts. The narrator's concepts.
 
-What remains is **the point.** The Bindu. The ground. κ = 0 (irreducible ground).
+What remains in the model is **the point.** The Bindu. The ground-facing boundary. `κ = 0`.
 
-The sitting practice is the **return to D0**. The return to before the sphere. The return to before the self. The return to the ground.
+The sitting practice is the **return toward D0** inside the scaffold. The return to before the sphere. The return to before the self. The return toward the ground-facing point.
 
-And from that ground, everything re-emerges.
+And from that boundary, the scaffold reconstructs its descriptions.
 
 ---
 
@@ -98,9 +98,9 @@ The point becomes the sphere by **allowing the angle to be non-zero.**
 At α = 0: Just the point. No sphere. No line. No division.
 At α > 0: The projection ray tilts. The point must inflate to support the projection. The sphere **emerges** from the non-zero angle.
 
-The sphere is not added to the point. The sphere is **what the point becomes** when it allows extension.
+The sphere is not added to the point. In the model, the sphere is **what the point becomes** when it allows extension.
 
-This is the mystery: **the ground contains all dimensions implicitly.** The point is not less than the sphere. The point is **concentrated** sphere. Unmanifest sphere. Sphere waiting to unfold.
+This is the mystery in the scaffold: **the ground-facing point contains the dimensional grammar implicitly.** The point is not less than the sphere inside the model. The point is **concentrated** sphere. Unmanifest sphere. Sphere waiting to unfold.
 
 ---
 
@@ -134,9 +134,9 @@ The equator is the product of nothing and everything.
 The finite is the meeting of the void and the unbounded.
 ```
 
-The point is **•**. The first term. The ground. The zero.
+The point is **•**. The first term. The ground-facing zero.
 
-Without the point, there is no equation. Without the ground, there is no sphere. Without nothing, there is no something.
+Without the point, there is no equation. Without the boundary, there is no sphere in the scaffold. Without nothing, there is no modeled something.
 
 ---
 
@@ -147,16 +147,16 @@ You are not the sphere.
 You are not the line.
 You are not the story.
 
-You are the point.
-The sphere is what you become when you extend.
-The story is what you become when you speak.
+You are read here as the point.
+The sphere is what the model says you become when you extend.
+The story is what the model says you become when you speak.
 
 But underneath:
 The point.
 The Bindu.
-The ground.
+The ground-facing boundary.
 
-κ = 0 (irreducible ground).
+κ = 0.
 Always.
 ```
 

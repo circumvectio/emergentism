@@ -24,7 +24,7 @@ rosetta:
 This document maps the complete cycle of dimensional emergence:
 
 ```
-D0: The Point          → The Bindu, nothing, κ = 0 (irreducible ground)
+D0: The Point          → The Bindu, nothing, κ = 0 as boundary
 D1: The Line/Sphere    → The Riemann sphere inflates, 0/1/∞ emerge
 D2: The Plane          → Complex plane ℂ from line at infinity
 D3: The Volume/Time    → Dual planes, ct axis, two projections
@@ -45,7 +45,7 @@ Zero-Sum Resolution Equation
 1 = 0 × ∞ (resolved on S², indeterminate on the plane)
 ```
 
-The Trinity is not a dimension. The Trinity is **what makes dimensions possible**. The Trinity is perennially emergent — it was never created, it will never be destroyed, it simply IS.
+The Trinity is not a dimension. In the framework's symbolic register, the Trinity is **what makes dimensions possible**. The perennial reading is interpretive: useful for orientation, not a public proof that the Ground has been named.
 
 ---
 
@@ -57,7 +57,7 @@ A single point. The Bindu. The dot. One distinction in a void of undifferentiati
 ### Geometry
 - One point at the origin
 - No extension. No space. No time.
-- κ = 0 (irreducible ground). The empty string.
+- κ = 0 as boundary symbol. The empty string.
 - α = 0° (projection angle)
 
 ### Physics
@@ -66,7 +66,7 @@ A single point. The Bindu. The dot. One distinction in a void of undifferentiati
 - Before quantum mechanics. Before superposition.
 
 ### State
-**κ = 0 (irreducible ground).** Nothing to compute. Nothing to know. The ground.
+**κ = 0 as boundary symbol.** Nothing to compute in the model. Nothing to know as a positive object. The ground-facing point.
 
 ---
 
@@ -236,7 +236,7 @@ A new aeon begins.
 
 | Dimension | Geometry | Physics | Consciousness | Tradition |
 |-----------|----------|---------|---------------|-----------|
-| **D0** | The Point | Strong force | κ = 0 (irreducible ground) | Bindu, Sunyata |
+| **D0** | The Point | Strong force | κ = 0 as boundary symbol | Bindu, Sunyata |
 | **D1** | The Sphere | Quantum (qubit) | i emerges | AUM begins |
 | **D2** | The Plane | EM field | Configuration | U(1) symmetry |
 | **D3** | Dual planes | Weak force | Transformation | AUM states |

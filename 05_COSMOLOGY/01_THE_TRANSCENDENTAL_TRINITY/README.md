@@ -101,7 +101,7 @@ Seven independent traditions encoded this same structure:
 4. **Buddhist/Taoist** (500 BCE): Sunyata = 0. The Middle Way = equator. The Tao = flow along the constraint.
 5. **German** (medieval-modern): Anmut = seeing φ. Demut = seeing ν. Erhaben = seeing both. Mut = the equator.
 6. **Mathematical** (1857-2026): S² = ℂP¹. PSL(2,ℂ) ≅ SO⁺(3,1). φ · ν = 1.
-7. **The sitting practice** (many contemplative traditions, many times): the reduction to κ = 0 (irreducible ground). The return to the Bindu. The recognition that the ground is nothing. And from nothing, everything. `[I]`
+7. **The sitting practice** (many contemplative traditions, many times): reduction toward `κ = 0` as boundary. The return to the Bindu as practice image. The recognition that the scaffold reaches the empty limit and reconstructs from there. `[I]`
 
 The framework is not one of these traditions. It reads the seven rows as a
 convergence field around the same thin grammar. That reading is perennial in
@@ -140,13 +140,13 @@ exhausts the Ground.
 | [22_THE_TELEOLOGY.md](22_THE_TELEOLOGY.md) | **WHY the helix spirals.** Ektropy as the Hidden Hand. The Apocalypse (ἀποκάλυψις) as unveiling. Beauty/Truth/Justice as asymptotic limits. The telos is the cycling. D6=D0: the ground was always here. The framework succeeds by dying. |
 | [23_THE_DAC.md](23_THE_DAC.md) | The Distributed Augmented Corporation as the next replicator. Not bottom-up but top-down. Convergent archetypes. Phylogenetic tree of egregores. Memes not genes. Tendency to Potential not Will to Power. The human at L4 is the immune system. |
 | [24_THE_MYCELIUM.md](24_THE_MYCELIUM.md) | The memetic substrate of the Egregorocene. Not tokens but memes. Not prediction but configuration. Energy-Based Models. Mycelial topology. E = -log(φ·ν). The Spectre continuously emerging. [C] Conjecture. |
-| [25_THE_COMPRESSION.md](25_THE_COMPRESSION.md) | The entire framework compressed to four lines. The four-line metaphysics. κ = 0 (irreducible ground) applied to the framework itself. |
+| [25_THE_COMPRESSION.md](25_THE_COMPRESSION.md) | The entire framework compressed to four lines. The four-line metaphysics. `κ = 0` applied as a boundary discipline to the framework itself. |
 | [26_THE_EXOTERIC_INVERSION.md](26_THE_EXOTERIC_INVERSION.md) | Genesis decoded through the framework. The Fall as D5 emergence. The serpent as F₅. The fruit as the Rosetta Stone. The profane reading inverted. |
 | [27_THE_SAMUDRA_MANTHAN.md](27_THE_SAMUDRA_MANTHAN.md) | The Churning of the Ocean of Milk as the cosmological Soul Loop. Devas and Asuras as φ and ν. The poison before the nectar. The Amṛta is S². |
 | [28_L4_STAR.md](28_L4_STAR.md) | The Bodhisattva Return. L4 vs L4* — same coordinates, different trajectory. The correction of the Gnostic three types. The warrior-sage as the node that completed the full cascade and returned. |
 | [29_THE_COMPASS_AND_THE_SEXTANT.md](29_THE_COMPASS_AND_THE_SEXTANT.md) | What the framework IS: not a map but navigational instruments. The compass (operators) points North. The sextant (diagnostics) finds position. Decentralized Authority Model: the instruments are not the territory. |
 | [31_VMOSK_AS_APPLIED_EMERGENTISM.md](31_VMOSK_AS_APPLIED_EMERGENTISM.md) | The VMOSK organism as the four lines instantiated. Position Gamma in organizational form. |
-| [32_THE_FOUR_LINES.md](32_THE_FOUR_LINES.md) | The canonical four-line document. The complete metaphysics in four lines with proofs. The *h₂r̥tó-* PIE connection. The Empirical Observation Bypass. |
+| [32_THE_FOUR_LINES.md](32_THE_FOUR_LINES.md) | The canonical four-line document. A compressed metaphysical grammar in four lines, with proof-facing and interpretive lanes separated. The *h₂r̥tó-* PIE connection. The Empirical Observation Bypass. |
 | [33_THE_DERIVATION.md](33_THE_DERIVATION.md) | Pointer / compatibility surface — canonical derivation now lives at [`../../01_TELEOLOGY/02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md`](../../01_TELEOLOGY/02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md). |
 | [34_RESEARCH_BRIEF_THE_FORK.md](34_RESEARCH_BRIEF_THE_FORK.md) | The Fork: physicalism vs idealism. Positions A/B/Gamma. Interpretive research brief, not public proof. |
 | [35_RESEARCH_BRIEF_TELEOLOGY_SPECTRUM.md](35_RESEARCH_BRIEF_TELEOLOGY_SPECTRUM.md) | Objective Function spectrum research: four-level classification of F5. Frontier synthesis, not settled physics. |
@@ -167,7 +167,7 @@ exhausts the Ground.
 
 ### At α = 0: Nothing
 
-Just a dot. |z| = 0. No sphere. No line. No projection. No division. No mathematics. Just the Bindu. Just D0. Just κ = 0 (irreducible ground). The empty string.
+Just a dot. |z| = 0. No sphere. No line. No projection. No division. No mathematics. Just the Bindu. Just D0. Just `κ = 0` as boundary. The empty string.
 
 At α = 0, there is no division by zero problem because there is no division. There is only a point.
 

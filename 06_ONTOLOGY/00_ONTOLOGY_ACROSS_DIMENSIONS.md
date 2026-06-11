@@ -453,7 +453,7 @@ Then mark any stronger unification claim by tier.
 Do not say:
 
 ```text
-D5 proves morality.
+D5 is a proof of morality.
 D6 is a higher science.
 The framework has possessed the Ground.
 ```
