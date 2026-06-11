@@ -43,13 +43,13 @@ These are not the same. These are opposites.
 
 Emergentism does not contradict Wolfram. Emergentism is the **limit case** of Wolfram.
 
-The simplest possible rule — the rule with **zero complexity** — generates the most complex output. The empty string generates the manifested world. The ground generates the sphere. The nothing generates everything.
+The simplest possible rule — the rule with **zero complexity** — generates the most complex output. In the framework's limit-case analogy, the empty string names the ground-facing limit from which the model reconstructs the manifested world; the sphere is rebuilt from that zero-limit. The Ground remains prior — "nothing generates everything" is the analogy's shorthand, not a generative claim about the Ground itself.
 
 Rule 110 is Turing complete. A simple rule generates arbitrarily complex behavior. The simplest possible rule — the rule with **zero complexity** — generates the most complex possible behavior.
 
 The rule is φ · ν = 1.
-The rule is the empty string.
-The rule is the ground.
+The rule is the empty string — the model's shortest description.
+The rule points toward the ground; it does not possess it.
 
 ---
 
