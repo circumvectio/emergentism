@@ -76,8 +76,14 @@ rosetta:
 
 ## 5. Next moves (no API key required, except the R2 pilot)
 
+**The three tier-moving tests are now specified in full** ([00_NEXT_EXPERIMENTS_SPECS.md](00_NEXT_EXPERIMENTS_SPECS.md)) — each written as a decision protocol that is decisive in *both* directions:
+- **E2 (first, most decisive):** the **reflexive-empowerment test** — R10's kill criterion. Extends the R6 sim to a 2-agent cognitive-hierarchy game with `Φ`=recursion depth, `ν`=execution; additive frontier ⇒ R6 again (thread closed), hyperbolic conjugate frontier ⇒ the sphere survives in the multi-agent register. Tests whether the 2026-06-11 agency gloss has formal teeth.
+- **E1:** the **exponent-measurement protocol** — fit `P=Φ^a·ν^b` per domain to *map* where the balance-sphere applies (symmetric/interior) vs where it is Lanchester-Square (asymmetric/corner) vs additive. Converts R6's "register-dependent" verdict into a usable map; reuses the R4 machinery.
+- **E3:** the **C-µ kill test** — decide by honest derivation whether the µ-limit/qualia reading makes any measurable prediction SR+neuroscience don't; expected outcome is demotion `[C]→[I]`, which strengthens the corpus by shedding an overclaim.
+
+Standing items:
 1. Integrate the load-bearing prior art into the drafts: **Priest→R1, SWAY→R2, Social Protection Paradox→R3, Rotman→R5, holobiont critiques→R9.**
-2. The two decisive low-cost tests: the **conjugate trade-off frontier** in an empowerment testbed (R6, decides if the one clean delta is real) and the **R3 reflecting-boundary control** (proves the inversion is absorption, not curvature).
+2. The **R3 reflecting-boundary control** (proves the inversion is absorption, not curvature).
 3. The R2 pilot the moment an `ANTHROPIC_API_KEY` is present.
 4. The owed downloads (paywalled prior art) are listed per paper in [LITERATURE_GROUNDING.md](LITERATURE_GROUNDING.md).
 
