@@ -52,6 +52,14 @@ Each is designed to be *decisive in both directions* — a clean refutation is a
 
 ## E2 — The Reflexive-Empowerment Test (R10's kill criterion)
 
+> **Status: EXECUTED 2026-06-12.** Two games (V1) + one documented instrument
+> refinement (V2, depth-graded opponents). **Verdict: SPLIT — R10a (reflexive
+> interaction) supported `[A]` within models; R10b (conserved conjugate
+> product) not recovered, stays `[C]` weakened.** Full report:
+> [E2_REFLEXIVE_RESULTS.md](E2_REFLEXIVE_RESULTS.md). The protocol below is
+> preserved exactly as registered; two of five registered predictions were
+> wrong and are scored as wrong in the report.
+
 **The question.** R6 refuted the sphere for *single-agent* empowerment — but standard empowerment is **definitionally solipsistic** (finding 2c). The 2026-06-11 agency gloss reads `Φ` as **foresight = recursion depth** (modeling other agents modeling you; k-level / cognitive hierarchy) and `ν` as **execution capacity**. That is a *different object*, and R6 never tested it. E2 is the decisive test of conjecture **R10**.
 
 **Street-register statement of the hypothesis `[I]` (2026-06-12).** *"Everybody has a plan until they get punched in the mouth"* (Tyson): adversarial contact **is** the arrival of the second agent — **R6's solipsistic setting contains no punches.** The punch tests whether foresight was *compiled into* execution (`Φ` coupled to `ν`) or merely adjacent to it; *"one kick practiced 10,000 times"* (Lee) is that compilation — depth over breadth at fixed capacity, the conjugate trade this experiment looks for. If E2 finds hyperbolic iso-value sets, these aphorisms were the law speaking in the street register; if it finds lines, they were survivorship poetry. Either way decisive.
