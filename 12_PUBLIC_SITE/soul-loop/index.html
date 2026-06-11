@@ -97,6 +97,7 @@
           re-see, re-serve, re-check, re-gather.
         </p>
         <div class="method-strip" aria-label="Soul Loop order">
+          <span>L1 intake</span>
           <span>L2 gather</span>
           <span>L3 check</span>
           <span>L4 serve</span>
@@ -106,6 +107,7 @@
           <span>L4 re-serve</span>
           <span>L3 re-check</span>
           <span>L2 re-gather</span>
+          <span>L7 preserve</span>
         </div>
       </div>
     </article>
@@ -113,12 +115,47 @@
     <article class="chapter">
       <div class="chapter-number">03</div>
       <div class="chapter-body">
+        <div class="chapter-kicker">The Closure</div>
+        <h2>The Loop, Not the Ladder</h2>
+        <p>
+          The editing cycle above is the <em>inner</em> loop. The full circle adds the two
+          stations the canon already requires. A cycle does not start by choice — it starts
+          because <strong>pressure arrives at L1</strong>: the new material, the bug report, the
+          contradiction, the complaint. Intake is a discipline of its own — naming the pressure
+          and passing it up is lawful; being eaten by it is not. And a cycle does not end when
+          the fixes stop — it ends when the converged state is <strong>preserved at L7</strong>:
+          committed, receipted, archived, released as public symbol. The preserve step is what
+          makes convergence durable instead of mood.
+        </p>
+        <p>
+          Then the circle closes: <strong>the preserved symbol shapes what arrives at L1
+          next.</strong> Publication invites the next correction; the committed receipt attracts
+          the next contradiction. That is why the loop is <em>continuous</em> — per-document it
+          terminates at equatorial rest, corpus-wide it never terminates, because L7's output
+          regenerates L1's input. A homeostat, not a project.
+        </p>
+        <p>
+          And it is <em>recursive</em> in the strict sense: the loop edits the corpus
+          <strong>and the editor</strong>. Each cycle re-balances the practitioner's own
+          operator weights toward the equator — the over-cutter's L2 softens, the hoarder's
+          L6 strengthens. The editor who finishes a cycle is not the editor who started it.
+          In the framework's agency terms: the Soul Loop is the one move in the game that
+          widens the player's own option cone by editing the player.
+          <span class="evidence">[S]</span> the closure and recursion structure ·
+          <span class="evidence">[I]</span> the self-transformation reading.
+        </p>
+      </div>
+    </article>
+
+    <article class="chapter">
+      <div class="chapter-number">04</div>
+      <div class="chapter-body">
         <div class="chapter-kicker">The Convergence Test</div>
         <h2>The Loop Must Be Allowed to Fail</h2>
         <p>
           The Soul Loop converges only if each cycle reduces the error count or
           compression burden. If a fourth irreducible pass is required, or if
-          successive cycles do not reduce contradicciones, the three-lens method is
+          successive cycles do not reduce contradictions, the three-lens method is
           incomplete. That is the kill criterion, not a footnote.
         </p>
         <p>
@@ -134,7 +171,7 @@
     </article>
 
     <article class="chapter">
-      <div class="chapter-number">04</div>
+      <div class="chapter-number">05</div>
       <div class="chapter-body">
         <div class="chapter-kicker">What This Is Not</div>
         <h2>Not Therapy, Not Authority, Not Proof</h2>
@@ -175,6 +212,7 @@
   const canvas = document.getElementById('soul-loop-canvas');
   const ctx = canvas.getContext('2d');
   const nodes = [
+    { label: 'L1', title: 'intake', color: '#8a8a8a' },
     { label: 'L2', title: 'gather', color: '#3c8b7d' },
     { label: 'L3', title: 'check', color: '#c9a84c' },
     { label: 'L4', title: 'serve', color: '#d8c28b' },
@@ -183,7 +221,8 @@
     { label: 'L5', title: 're-see', color: '#7d6fb0' },
     { label: 'L4', title: 're-serve', color: '#d8c28b' },
     { label: 'L3', title: 're-check', color: '#c9a84c' },
-    { label: 'L2', title: 're-gather', color: '#3c8b7d' }
+    { label: 'L2', title: 're-gather', color: '#3c8b7d' },
+    { label: 'L7', title: 'preserve', color: '#42A5F5' }
   ];
 
   function resize() {
