@@ -54,6 +54,8 @@ Each is designed to be *decisive in both directions* — a clean refutation is a
 
 **The question.** R6 refuted the sphere for *single-agent* empowerment — but standard empowerment is **definitionally solipsistic** (finding 2c). The 2026-06-11 agency gloss reads `Φ` as **foresight = recursion depth** (modeling other agents modeling you; k-level / cognitive hierarchy) and `ν` as **execution capacity**. That is a *different object*, and R6 never tested it. E2 is the decisive test of conjecture **R10**.
 
+**Street-register statement of the hypothesis `[I]` (2026-06-12).** *"Everybody has a plan until they get punched in the mouth"* (Tyson): adversarial contact **is** the arrival of the second agent — **R6's solipsistic setting contains no punches.** The punch tests whether foresight was *compiled into* execution (`Φ` coupled to `ν`) or merely adjacent to it; *"one kick practiced 10,000 times"* (Lee) is that compilation — depth over breadth at fixed capacity, the conjugate trade this experiment looks for. If E2 finds hyperbolic iso-value sets, these aphorisms were the law speaking in the street register; if it finds lines, they were survivorship poetry. Either way decisive.
+
 **The hypothesis under test.** In a multi-agent game, define `Φ = k` (the depth of recursive belief an agent models) and `ν = c` (execution capacity — action-channel width / reaction speed / payoff bandwidth). Conjecture: there is a **conserved conjugate trade-off** — deeper recursion costs execution bandwidth at fixed achieved value — so iso-value sets are **hyperbolic** (`Φ·ν = const`), the structure R6 found *additive* for the single-agent case.
 
 **Method (extends `R6_SUPPORT_CONJUGATE_EMPOWERMENT_SIM.py`).**
