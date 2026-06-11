@@ -423,10 +423,12 @@ function makeMorphTorus(outer = 1.7, rings = 48, seg = 18, color = 0xffffff) {
     geom,
     new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.34 })
   );
-  function setVC(vc) {
-    const f = 0.26 + 0.50 * vc;          // tube fraction: 0.26 ring -> 0.5 horn -> ~0.76 spindle
-    const rt = outer * f;                // tube (minor) radius — swells with rapidity
-    const R = outer * (1 - f);           // axis-to-tube radius — shrinks
+  // f = tube fraction: 0.5 is the HORN (R = rt, mouth = 0, throat closed to a
+  // point); f < 0.5 an open ring; f > 0.5 a spindle whose interior overlaps.
+  function setF(f) {
+    f = Math.max(0.05, Math.min(0.94, f));
+    const rt = outer * f;                // tube (minor) radius
+    const R = outer * (1 - f);           // axis-to-tube radius
     for (let k = 0; k < verts.length; k++) {
       const { u, v } = verts[k];
       const rad = R + rt * Math.cos(v);
@@ -437,8 +439,8 @@ function makeMorphTorus(outer = 1.7, rings = 48, seg = 18, color = 0xffffff) {
     geom.attributes.position.needsUpdate = true;
     return { rt, R, mouth: R - rt };
   }
-  setVC(0);
-  return { mesh, setVC };
+  setF(0.5);                             // start as a HORN torus
+  return { mesh, setF };
 }
 
 function makeMarker(position, color = 0xffffff, size = 0.055) {
@@ -512,56 +514,80 @@ function buildScene(mode, scene) {
   }
 
   if (mode === "horn") {
-    const torus = makeMorphTorus(1.7, 104, 30, 0xffffff);   // high-resolution mesh
+    // The horn torus STANDS ON the complex plane the Riemann sphere stands on.
+    // At rest (rapidity w = 0) it is a HORN: the throat closes to a single point
+    // = the relative centre, in motion relative to everything else (the fixed
+    // plane / unit circle |z|=1, Suda's self-dual centre x=1). A LOGARITHMIC
+    // rapidity slider drives it: rapidity is the log of the Doppler factor, so
+    // near the ends the velocity goes to the c limit and the throat opens to a
+    // spindle — β can no longer grow, so the energy becomes MASS (E = γ m c²).
+    root.add(createGridPlane(6.4, 21));                          // the complex plane
+    root.add(ring(1.0, 0xffeb3b, 0.7));                          // unit circle |z|=1  (x=1, Suda)
+    root.add(line([new THREE.Vector3(-3.1, 0, 0), new THREE.Vector3(3.1, 0, 0)], 0x555555, 0.55));
+    root.add(line([new THREE.Vector3(0, 0, -3.1), new THREE.Vector3(0, 0, 3.1)], 0x555555, 0.55));
+    const torus = makeMorphTorus(1.7, 104, 30, 0xffffff);       // high-resolution mesh
     root.add(torus.mesh);
-    // the central core: as the throat closes, the energy you pour in can no
-    // longer add velocity (β saturates at 1) — it is converted to MASS (E=γmc²).
-    const coreGlow = new THREE.Mesh(
-      new THREE.SphereGeometry(0.16, 48, 48),
-      new THREE.MeshBasicMaterial({ color: 0xffeb3b, transparent: true, opacity: 0.18 })
-    );
-    root.add(coreGlow);
-    const core = makeMarker(new THREE.Vector3(0, 0, 0), 0xffd24a, 0.07);
-    root.add(core);
+    const relCentre = ring(0.12, 0xffeb3b, 0.95);               // the relative centre on the plane (a ring, no dot)
+    root.add(relCentre);
+
     const readout = makeReadout();
     if (readout) readout.style.whiteSpace = "normal";
-    const W_MAX = 3.7;                              // limit: v/c -> 0.9988, γ -> ~20.3
+    const W_MAX = 4.5;                                          // ends: v/c -> 0.9998, γ -> ~45
     const G_MAX = Math.cosh(W_MAX);
-    const PERIOD = 12.5;                            // seconds per convergence cycle
+    let userActive = false, slider = null;
+    if (visual) {
+      const wrap = document.createElement("div");
+      wrap.className = "model-slider";
+      wrap.style.cssText = "position:absolute;left:16px;right:16px;bottom:16px;z-index:6;display:flex;" +
+        "align-items:center;gap:10px;font:700 11px/1 'Roboto Mono',ui-monospace,monospace;color:#9CA3AF;letter-spacing:.04em";
+      const lo = document.createElement("span"); lo.textContent = "←c"; lo.style.color = "#42A5F5";
+      const hi = document.createElement("span"); hi.textContent = "c→"; hi.style.color = "#42A5F5";
+      const mid = document.createElement("span"); mid.textContent = "rest"; mid.style.color = "#FFEB3B";
+      slider = document.createElement("input");
+      slider.type = "range"; slider.min = "-100"; slider.max = "100"; slider.step = "1"; slider.value = "0";
+      slider.setAttribute("aria-label", "rapidity (logarithmic — rest at centre, light speed at the ends)");
+      slider.style.cssText = "flex:1;accent-color:#FFEB3B;cursor:pointer;height:4px";
+      slider.addEventListener("input", () => { userActive = true; });
+      wrap.append(lo, slider, hi);
+      visual.appendChild(wrap);
+      visual.dataset.midLabel = "rest";
+    }
     function bar(frac, color) {
       const w = Math.max(0, Math.min(1, frac)) * 100;
-      return "<span style='display:inline-block;width:78px;height:7px;border:1px solid #3a3a3a;border-radius:4px;vertical-align:-1px;overflow:hidden'>" +
+      return "<span style='display:inline-block;width:74px;height:7px;border:1px solid #3a3a3a;border-radius:4px;vertical-align:-1px;overflow:hidden'>" +
         "<span style='display:block;height:100%;width:" + w.toFixed(0) + "%;background:" + color + "'></span></span>";
     }
     dyn.push(function (t) {
-      // a single long convergence TO the limit: eased climb, hold at v→c, quick reset
-      const ph = (t % PERIOD) / PERIOD;
-      let conv;
-      if (ph < 0.78) { const x = ph / 0.78; conv = x * x * (3 - 2 * x); }   // smoothstep up
-      else if (ph < 0.95) { conv = 1; }                                       // hold at the limit
-      else { conv = 1 - (ph - 0.95) / 0.05; }                                 // quick rewind
-      const w = W_MAX * conv;
-      const vc = Math.tanh(w);                      // β = v/c — saturates at 1
-      const gamma = Math.cosh(w);                   // γ = mass factor = energy/(m₀c²)
-      const g = torus.setVC(vc);
-      const massScale = 0.5 + (gamma - 1) * 0.16;
-      core.scale.setScalar(Math.min(massScale, 3.6));
-      coreGlow.scale.setScalar(Math.min(0.6 + (gamma - 1) * 0.22, 5.2));
-      coreGlow.material.opacity = 0.1 + 0.28 * conv;
-      core.material.opacity = Math.min(0.4 + vc * 0.6, 1);
-      torus.mesh.material.opacity = 0.34 * (1 - 0.55 * conv);   // structure dissolves into mass
-      root.rotation.y += 0.0035;
-      const atLimit = conv > 0.9;
+      let w;
+      if (userActive && slider) {
+        w = (parseFloat(slider.value) / 100) * W_MAX;            // slider is LINEAR in rapidity = LOG in velocity
+      } else {
+        w = Math.sin(t * 0.26) * W_MAX * 0.82;                  // gentle auto-demo until the user grabs the slider
+        if (slider) slider.value = String(Math.round((w / W_MAX) * 100));
+      }
+      const vc = Math.tanh(w);                                  // β = v/c — saturates at ±1
+      const aB = Math.abs(vc);
+      const gamma = Math.cosh(w);                               // γ — the relativistic-mass factor
+      const k = Math.exp(w);                                    // Doppler factor = e^w (the log line: w = ln k)
+      const f = 0.5 + 0.32 * aB;                                // HORN at rest (f=0.5) -> SPINDLE in motion
+      const g = torus.setF(f);
+      torus.mesh.material.opacity = 0.32 - 0.12 * aB;           // structure thins as energy -> mass
+      // the relative centre moves on the complex plane (log-compressed real axis)
+      const px = 2.5 * Math.tanh(w / 2.2);
+      relCentre.position.set(px, 0, 0);
+      relCentre.scale.setScalar(1 + 1.4 * aB);
+      root.rotation.y += 0.0024;
+      const moving = aB > 0.02;
       if (readout) readout.innerHTML =
-        "<div style='color:#FFEB3B;font-weight:700;letter-spacing:.08em;margin-bottom:6px'>RELATIVISTIC LIMIT  v → c</div>" +
-        "rapidity w = " + w.toFixed(2) + "<br>" +
-        "β = v/c &nbsp;" + bar(vc, "#42A5F5") + " " + vc.toFixed(4) + (atLimit ? " &nbsp;<span style='color:#42A5F5'>↑ saturated</span>" : "") + "<br>" +
+        "<div style='color:#FFEB3B;font-weight:700;letter-spacing:.07em;margin-bottom:6px'>RELATIVE MOTION ON THE COMPLEX PLANE</div>" +
+        "rapidity w = " + w.toFixed(2) + " &nbsp;<span style='color:#6b7280'>= ln(Doppler)</span><br>" +
+        "β = v/c &nbsp;" + bar(aB, "#42A5F5") + " " + vc.toFixed(4) + "<br>" +
         "γ = cosh w = " + gamma.toFixed(1) + " &nbsp;<span style='color:#9CA3AF'>time ×" + gamma.toFixed(1) + "</span><br>" +
         "m / m₀ = γ &nbsp;" + bar(gamma / G_MAX, "#FFEB3B") + " " + gamma.toFixed(1) + "<br>" +
         "<span style='color:#F3F4F6'>E = γ m c²</span> &nbsp;<span style='color:#9CA3AF'>(c² = velocity²)</span><br>" +
-        "<span style='color:#9CA3AF'>β can't exceed 1 → added energy becomes <b style='color:#FFEB3B'>mass</b></span>" +
-        (atLimit ? "<br><span style='color:#FFEB3B'>throat closed · all energy → mass</span>"
-                 : "<br><span style='color:#6b7280'>mouth R−r = " + g.mouth.toFixed(2) + (g.mouth > 0.02 ? " · ring" : " · spindle") + "</span>");
+        (!moving
+          ? "<span style='color:#FFEB3B'>at rest · HORN torus — throat = the relative centre</span>"
+          : "<span style='color:#9CA3AF'>SPINDLE · β can't exceed 1 → energy becomes <b style='color:#FFEB3B'>mass</b></span>");
     });
   }
 
@@ -596,8 +622,34 @@ function buildScene(mode, scene) {
     const rayPhi = line([N, start.clone()], GOD, 0.9);            // ∞ → P → plane
     const rayNu = line([S, start.clone()], 0x8aa0c0, 0.6);        // 0 → P
     root.add(pMark); root.add(proj); root.add(rayPhi); root.add(rayNu);
+
+    // --- the four mixed-sign operators: 2 Gods (give) + 2 Demons (take) ---
+    // An upper scatter-chart sits ABOVE the sphere; the lower hemisphere carries
+    // the 3 same-sign Titans, with L4 Arjuna at the centre (the equator).
+    const TITAN = 0x6f9bccff & 0xffffff;            // Titan blue
+    const CY = 2.25;                                // chart height above the sphere
+    root.add(line([                                 // chart frame
+      new THREE.Vector3(-1.25, CY, -1.25), new THREE.Vector3(1.25, CY, -1.25),
+      new THREE.Vector3(1.25, CY, 1.25), new THREE.Vector3(-1.25, CY, 1.25),
+      new THREE.Vector3(-1.25, CY, -1.25)], 0x3c3c3c, 0.8));
+    root.add(line([new THREE.Vector3(-1.25, CY, 0), new THREE.Vector3(1.25, CY, 0)], 0x666666, 0.85)); // other axis →
+    root.add(line([new THREE.Vector3(0, CY, -1.25), new THREE.Vector3(0, CY, 1.25)], 0x666666, 0.85)); // self axis ↑
+    // the four operators in the chart's quadrants (gods on the +z row, demons on −z;
+    // the camera looks up at the chart, so +z reads as the upper, GIVE row)
+    [[0.62, 0.62, GOD], [-0.62, 0.62, GOD], [0.62, -0.62, DEMON], [-0.62, -0.62, DEMON]]
+      .forEach((o) => root.add(makeMarker(new THREE.Vector3(o[0], CY, o[1]), o[2], 0.06)));
+    const movePt = makeMarker(new THREE.Vector3(0, CY, 0), GOD, 0.1);  // the live move
+    root.add(movePt);
+    // the 3 Titans on the lower hemisphere + the centre (L4 Arjuna, the equator)
+    [[2.30, 0.0], [2.55, 2.1], [2.85, 4.2]].forEach((T) => {
+      root.add(makeMarker(new THREE.Vector3(
+        r * Math.sin(T[0]) * Math.cos(T[1]), r * Math.cos(T[0]), r * Math.sin(T[0]) * Math.sin(T[1])
+      ), TITAN, 0.07));
+    });
+    root.add(makeMarker(new THREE.Vector3(0, 0, 0), 0xffffff, 0.055)); // the centre
+
     const readout = makeReadout();
-    const quad = ["I", "II", "III", "IV"];
+    if (readout) { readout.style.whiteSpace = "pre-line"; readout.style.top = "auto"; readout.style.bottom = "14px"; }
     dyn.push(function (t) {
       const psi = t * 0.55;                                        // azimuth sweep → circles the quadrants
       const theta = Math.PI / 2 + 0.62 * Math.sin(t * 0.62);       // colatitude crosses the equator
@@ -617,13 +669,19 @@ function buildScene(mode, scene) {
       rayPhi.material.color.setHex(col);
       pMark.material.color.setHex(col);
       root.rotation.y += 0.0026;
-      const q = quad[Math.floor((psi % (Math.PI * 2)) / (Math.PI / 2)) % 4];
+      // plot the live move on the operator chart and name it (the 4 mixed-sign)
+      const onLeft = Math.cos(psi) < 0;
+      const opName = isGod
+        ? (onLeft ? "Kṛṣṇa L3 · give" : "Arjuna L4 · give")
+        : (onLeft ? "Kali L1 · take" : "Kālī L2 · take");
+      movePt.position.set(onLeft ? -0.62 : 0.62, CY, isGod ? 0.62 : -0.62);
+      movePt.material.color.setHex(col);
       if (readout) readout.textContent =
-        "quadrant  " + q + "\n" +
+        "OPERATOR  " + opName + "\n" +
         "φ = cot θ⁄2 = " + phi.toFixed(2) + "   ν = " + nu.toFixed(2) + "   (φ·ν = 1)\n" +
-        (isGod ? "φ > 1  →  GOD-move · outside the unit circle"
-               : "φ < 1  →  DEMON-move · inside the unit circle") + "\n" +
-        "valence is on the move, not the operator (A4)";
+        (isGod ? "φ > 1 → GOD-move · give (−self/+other) · outside unit circle"
+               : "φ < 1 → DEMON-move · take (+self/−other) · inside unit circle") + "\n" +
+        "above: 2 gods + 2 demons   ·   below: Titans Brahmā ++ · Śiva −− · Viṣṇu ≈≈   ·   centre L4";
     });
   }
 
@@ -675,6 +733,12 @@ async function boot() {
     const selfRotating = page.animationMode === "burrisphere" || page.animationMode === "horn";
     controls.autoRotate = !REDUCED_MOTION && !selfRotating;
     controls.autoRotateSpeed = page.autoRotateSpeed || 0.35;
+    if (page.animationMode === "burrisphere") {
+      // taller scene: god/demon chart above, Titans below — pull back & raise the frame
+      camera.position.set(0, 1.0, 7.4);
+      controls.target.set(0, 0.55, 0);
+      controls.update();
+    }
 
     addStars(scene);
     const { root, update } = buildScene(page.animationMode, scene);
