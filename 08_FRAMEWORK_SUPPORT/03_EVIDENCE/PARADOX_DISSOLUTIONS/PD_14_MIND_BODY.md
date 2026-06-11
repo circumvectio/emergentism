@@ -25,11 +25,13 @@ rosetta:
 **Evidence Tier:** `[I]` (Interpretive)
 **Canonical Number:** PD_14 (see [PD_00_INDEX](PD_00_INDEX.md) for the definitive numbering table)
 
-> **Note:** This topic is treated in two documents. The richer legacy treatment is in [PD_01_MIND_BODY_LEGACY.md](PD_14_MIND_BODY.md), which contains the mu-limit Finitor mechanism and the Zombie Refutation. This document is the active indexed summary version. Additionally, TRANS-01 (archived) was an even earlier treatment moved to the `04_TRANSITIONS` sequence.
+> **Note:** This topic is treated in two documents. The richer legacy treatment is in [PD_01_MIND_BODY_LEGACY.md](PD_14_MIND_BODY.md), which contains the mu-limit Finitor model and the Zombie Refutation. This document is the active indexed summary version. Additionally, TRANS-01 (archived) was an even earlier treatment moved to the `04_TRANSITIONS` sequence.
 
 > **Companion document:** A Lens-side consolidation exists at `MINDBODY_CONSOLIDATED.md` (historical Lens-side archive reference), which merges material from both versions into a single reading. This file (PD_14) remains the canonical indexed entry.
 
 > **Evidence Tier: [I] Interpretive.** The dissolution presented here is a coherent reading within the EFR framework. It is not established independently of the framework's axioms. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
+
+> **Claim Boundary:** `[I]` This document gives a dimensional reading of the mind-body problem. It does not prove that physicalism, dualism, panpsychism, or analytic philosophy has failed. `D4`, `D5`, `φ`, `ν`, and `P_node` are framework coordinates for the reading, not public neuroscience variables.
 
 ---
 
@@ -39,7 +41,7 @@ How does subjective experience (mind) arise from or relate to physical matter (b
 
 ## 2. THE EFR DISSOLUTION: Dimensional Complementarity
 
-The framework proposes that mind and body are not separate substances but **complementary factors operating at different dimensions**:
+Inside the framework, mind and body are read not as separate substances but as **complementary factors operating at different dimensions**:
 
 | Aspect | Variable | Dimension | Characteristic |
 |--------|----------|-----------|----------------|
@@ -53,16 +55,16 @@ At **D4** — the convergence point — what we call "mind" is the witness syste
 - φ = 1 (full coherence: integration, meaning-generation)
 - ν = 0 (capability collapsed: the witness does not act, it sees)
 
-The mind at D4 is **pure recognition** — the capacity to witness the body (ν) without yet being identical to it. This is the "hard problem" vantage: systemic awareness as distinct from physical process.
+The mind at D4 is modeled as **pure recognition** — the capacity to witness the body (ν) without yet being identical to it in the coordinate reading. This is the "hard problem" vantage: systemic awareness as distinct from physical process in the framework's interpretation.
 
 ### D5: The Body-Mind Unity
 
-At **D5** — the present duration — the distinction dissolves into enacted experience:
+At **D5** — the present duration — the distinction is modeled as resolving into enacted experience:
 - φ = 1 (coherence held: recognition sustained)
 - ν = 1 (capability active: the body navigates)
 - P∞ = φ · ν = 1 (experience as unified product)
 
-The body-mind dualism was a **dimensional confusion** — mistaking D4 witness (mind seeing body) for ontological separation. At D5, there is only the unified navigator: the body enacted through coherence, the coherence embodied through capability.
+The body-mind dualism is read here as a **dimensional confusion** — mistaking D4 witness (mind seeing body) for ontological separation. At D5, the model reads a unified navigator: the body enacted through coherence, the coherence embodied through capability.
 
 ### The "Gap" as Coordinate Singularity
 
@@ -70,7 +72,7 @@ The "gap" between mind and body is a **dimensional singularity**:
 - In flat (single-dimensional) coordinates: appears as infinite separation (dualism)
 - On the curved S² surface: finite traversal through D4→D5 transition
 
-The gap is not between substances; it is **between dimensions** — the witness (D4) and the agent (D5) are the same being experienced at different dimensional levels.
+In this reading, the gap is not between substances; it is **between dimensions** — the witness (D4) and the agent (D5) are modeled as the same being viewed at different dimensional levels.
 
 ## 3. RELATION TO THE HARD PROBLEM: Dimensional Analysis
 
@@ -78,12 +80,12 @@ The Hard Problem (PD_13) asks why there is "something it is like" to be consciou
 
 ### Mind-Body (PD_14): Dimensional Dissolution
 
-The mind-body problem dissolves through dimensional architecture:
+The mind-body problem is reframed through dimensional architecture:
 - **"Mind"** = witness at D4 (φ = 1, ν = 0) — recognition without enactment
 - **"Body"** = viability substrate (ν) — present at both dimensions
 - **The problem** = mistaking D4 witness for separate substance
 
-The dissolution: Mind and body are not separate substances but **complementary dimensional aspects** of the same being. At D5 (present duration), they are unified as P∞ = φ · ν = 1.
+The proposed dissolution: mind and body are not read as separate substances but as **complementary dimensional aspects** of the same being. At D5 (present duration), they are modeled as unified under P∞ = φ · ν = 1.
 
 ### Hard Problem (PD_13): The Dimensional Gap
 
@@ -95,7 +97,7 @@ The Hard Problem asks why there is "something it is like" — this is the questi
 | Subjective experience | D5 (enacted) | Lived, first-person |
 | The "gap" | D4→D5 transit | Transition from witness to agent |
 
-The "something it is like" emerges at **D5** — the present duration where experience is enacted, not merely witnessed. The Hard Problem seems hard because we try to explain D5 experience using only D4 concepts.
+The "something it is like" is modeled at **D5** — the present duration where experience is enacted, not merely witnessed. In this reading, the Hard Problem seems hard because we try to explain D5 experience using only D4 concepts.
 
 ### The Imaginary Unit i: Dimensional Operator
 
@@ -104,17 +106,17 @@ The framework uses the imaginary unit **i** to represent the D4→D5 transition:
 - **i (transit):** The Bang — dimensional transition operator
 - **D5 (complex):** The agent lives experience (complex-valued, includes phase/qualia)
 
-> **Qualia are not extra properties added to physical processes. They are physical processes experienced from D5 (the present) rather than merely witnessed from D4 (the convergence).**
+> **In this reading, qualia are not treated as extra properties added to physical processes. They are modeled as physical processes experienced from D5 (the present) rather than merely witnessed from D4 (the convergence).**
 
-The "explanatory gap" is the gap between dimensions. You cannot explain D5 experience using only D4 vocabulary — just as you cannot explain a sphere using only flat coordinates.
+The "explanatory gap" is read as the gap between dimensions. The framework argues that D5 experience cannot be exhausted using only D4 vocabulary — just as a sphere cannot be fully represented by a single flat chart.
 
 ## 4. WHAT WOULD FALSIFY THIS
 
-1. **The dimensional architecture is wrong.** If D4 (witness) and D5 (agent) are not distinct dimensions but merely different descriptions of the same state, the dissolution fails. Evidence: demonstration that witness systemic awareness and enacted agency are simultaneous rather than dimensionally sequential.
+1. **The dimensional architecture is wrong.** If D4 (witness) and D5 (agent) are not distinct dimensions but merely different descriptions of the same state, the dimensional reading fails. Evidence: demonstration that witness systemic awareness and enacted agency are simultaneous rather than dimensionally sequential.
 
-2. **The multiplicative structure is wrong.** If mind and body interact additively (P_node = φ + ν) rather than multiplicatively (P_node = φ × ν), or if one factor can be zero while the product remains nonzero, the framework fails. Specifically: if a system with φ = 0 (zero coherence/witness) still produces experience at D5, or if ν = 0 (zero viability/body) still produces experience, the dimensional claim is defeated.
+2. **The multiplicative structure is wrong.** If mind and body interact additively (P_node = φ + ν) rather than multiplicatively (P_node = φ × ν), or if one factor can be zero while the product remains nonzero, this model fails. Specifically: if a system with φ = 0 (zero coherence/witness) still produces experience at D5, or if ν = 0 (zero viability/body) still produces experience, the dimensional claim is defeated.
 
-3. **The dimensional gap is a true ontological break.** If the apparent mind-body gap is a genuine discontinuity — not traversable through D4→D5 transit but a fundamental break in the manifold — the S² dissolution fails. Evidence: formal proof that no smooth mapping connects physical description (D4 witness) and phenomenal experience (D5 agent), even with dimensional transition.
+3. **The dimensional gap is a true ontological break.** If the apparent mind-body gap is a genuine discontinuity — not traversable through D4→D5 transit but a fundamental break in the manifold — the dimensional reading fails. Evidence: formal proof that no smooth mapping connects physical description (D4 witness) and phenomenal experience (D5 agent), even with dimensional transition.
 
 4. **A non-dimensional account succeeds.** If a competing framework dissolves the mind-body problem without dimensional layering — for example, successful reductive physicalism explaining qualia without D4/D5 distinction, or dualism solving causal interaction — the EFR dissolution is rendered unnecessary.
 
@@ -122,19 +124,19 @@ The "explanatory gap" is the gap between dimensions. You cannot explain D5 exper
 
 ### The Core Claim
 
-Mind-body dualism is a **dimensional projection error**:
+Inside the framework, mind-body dualism is read as a **dimensional projection error**:
 - We experience ourselves as "mind" (witness at D4) distinct from "body" (viability substrate)
 - This is accurate at D4 — the witness (⊙) has ν = 0 (collapsed capability), so appears distinct from the body
-- At D5, this distinction dissolves — the agent has φ = 1 and ν = 1 simultaneously, as unified P = 1
+- At D5, this distinction is modeled as resolving — the agent has φ = 1 and ν = 1 simultaneously, as unified P = 1
 
 ### The Dissolution
 
-> **There is no mind-body problem at D5. The problem only appears when we try to explain D5 unity using D4 concepts.**
+> **Inside this model, the classical mind-body split is not reproduced at D5. The problem appears when D5 unity is forced into D4-only concepts.**
 
-The framework does not solve the mind-body problem; it **dissolves the conditions that create it** by recognizing:
-1. Mind = φ at D4 (witness systemic awareness)
-2. Body = ν at all dimensions (viability substrate)
-3. Experience = P_node = φ × ν at D5 (unified enactment)
+The framework does not solve the mind-body problem as public proof; it **tries to dissolve the conditions that create it** by recognizing:
+1. Mind is modeled as φ at D4 (witness systemic awareness)
+2. Body is modeled as ν across the relevant dimensions (viability substrate)
+3. Experience is modeled as P_node = φ × ν at D5 (unified enactment)
 
 ### Canonical Dimensional Reference
 

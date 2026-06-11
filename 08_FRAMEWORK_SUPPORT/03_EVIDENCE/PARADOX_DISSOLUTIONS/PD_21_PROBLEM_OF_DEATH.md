@@ -25,7 +25,9 @@ rosetta:
 **Evidence Tier:** `[I]` (Interpretive)
 **Canonical Number:** PD_21 (see [PD_00_INDEX](PD_00_INDEX.md) for the definitive numbering table)
 
-> **Evidence Tier: [I] Interpretive.** The dissolution presented here is a coherent reading within the EFR framework. It is not established independently of the framework's axioms. The claim that D5 coherence is "conserved" at death is an ontological interpretation of the framework's dimensional structure, not an empirical observation. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
+> **Evidence Tier: [I] Interpretive.** The dissolution presented here is a coherent reading within the EFR framework. It is not established independently of the framework's axioms. The claim that D5 remains an intelligible interpretive register around death is an ontological interpretation of the framework's dimensional structure, not an empirical observation. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
+
+> **Claim Boundary:** `[I]` This document models death as a topology boundary. It does not claim personal survival, afterlife, reincarnation, continuity of individual identity, or near-death-experience proof. "Field" means the framework's possibility-space, not a soul-substance or an empirically detected survival medium.
 
 > **Companion note.** Death intersects the Hard Problem (PD_13) and the Mind-Body Problem (PD_14). See also the mu-limit analysis in [PD_01_MIND_BODY_LEGACY.md](PD_14_MIND_BODY.md) and the D4-D5 boundary discussion in [PD_17 (archived)](../../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/PD_17_QUANTUM_RELATIVITY_UNIFICATION_DRAFT.md).
 
@@ -45,11 +47,11 @@ The fear of death is framed here as fear of the coordinate singularity: at the p
 
 ## 3. THE DISSOLUTION
 
-On the Burri sphere, death is the `mu`-limit operating as it always does in this model. [I] The dimensional account:
+On the Burri sphere, death is read as a `mu`-limit boundary operation inside this model. [I] The dimensional account:
 
 - **D4 (actuality, the body):** A projection of D5 onto the coordinate plane. The body is a particular equatorial configuration where `P_infinity = varphi * nu = 1` remains the model invariant and embodied flourishing is tracked by `P_node = Phi * V`.
 - **D5 (possibility, the field):** The broader potential from which D4 configurations are drawn. D5 is not "alive" or "dead" — it is the space of possible configurations.
-- **Death:** The dissolution of a specific D4 configuration. The projection ceases. The $\mu$-limit (the D4-D5 boundary) ceases to hold that particular embodied balance. The coordinates change; the model's wider field remains, without implying personal survival.
+- **Death:** The dissolution of a specific D4 configuration. The projection ceases. The $\mu$-limit (the D4-D5 boundary) ceases to hold that particular embodied balance. The coordinates change; the model's wider possibility-space remains intelligible, without implying personal survival.
 
 The invariant equation `P_infinity = varphi * nu = 1` gives the model's background constraint, not an empirical receipt for personal survival. [I] At the equator, `varphi = 1`, `nu = 1`, and `B = 1` — the configuration is maximally balanced. When the body dies, the organism's empirical viability coordinate drops and `P_node` for that D4 organism goes to zero. The framework's claim is narrower: flat coordinate cessation is not treated as proof that the wider field is absent.
 
@@ -67,13 +69,13 @@ The dissolution connects to multiple structural elements:
 
 ## 5. WHAT WOULD FALSIFY THIS
 
-1. **D5 is not conserved.** If a rigorous physical theory demonstrated that coherence ($\varphi$) is entirely a D4-level phenomenon — that it is fully reducible to neural activity with no D5-level residue — the dimensional dissolution would collapse.
+1. **The D5 register is unnecessary or incoherent.** If a rigorous account showed that the fear of death, death-adjacent reports, and the meaning of biological cessation are fully captured at D4 with no explanatory remainder, the dimensional reading would lose force.
 2. **Death is uniquely singular.** If evidence showed that death is categorically different from any other state transition (not merely a $\mu$-limit traversal but something that breaks the framework's dimensional rules), the reading would fail.
 3. **No structural pattern in transition reports.** If near-death experiences, contemplative reports, and cross-cultural accounts of death-adjacent states all turned out to be purely neurological artifacts with no structural pattern consistent with the D4→D5 transition model, the interpretive connection to the S² geometry would weaken — though the framework's formal structure would remain. **Note:** The dissolution does not depend on NDE evidence. It stands on structural grounds (the topology error diagnosis). NDE evidence would be corroborating but is not load-bearing.
 
 ---
 
-*PD_21 | Problem of Death | Interpretive dissolution. Death as D4-D5 transition on the Burri sphere. See also: PD_13 (Hard Problem), PD_14 (Mind-Body), PD_17 (QM/GR, archived).*
+*PD_21 | Problem of Death | Interpretive dissolution. Death read as D4-D5 boundary transition on the Burri sphere. See also: PD_13 (Hard Problem), PD_14 (Mind-Body), PD_17 (QM/GR, archived).*
 
 
 ---

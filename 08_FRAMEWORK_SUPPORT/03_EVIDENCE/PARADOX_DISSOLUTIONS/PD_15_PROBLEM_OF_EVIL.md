@@ -27,6 +27,8 @@ rosetta:
 
 > **Evidence Tier: [I] Interpretive.** The dissolution presented here reframes the problem of evil using the EFR framework's extraction coefficient η and the S² geometry. It does not claim theological authority. It claims structural coherence. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 
+> **Claim Boundary:** `[I]` This document is not a theodicy and does not justify suffering. It separates cyclic cost, suffering, and extraction inside the framework's model so the classical paradox becomes more legible; it does not prove God, excuse harm, or deny moral urgency.
+
 > **Migration note:** The earlier treatment was indexed as PD-03/TRANS-03 and archived. This document (PD_15) is the canonical indexed entry per the definitive numbering table.
 
 ---
@@ -73,7 +75,7 @@ The framework does not explain why reality has these properties. It argues that,
 
 The extraction coefficient η provides the diagnostic tool. The equator (Φ = 1, V = 1) defines the boundary between sustainable and unsustainable operations. η = 0 is the equatorial condition; η > 0 is the signature of extraction.
 
-The Power-Max Lemma (PD_10) establishes that extraction is thermodynamically doomed: `H → ∞`. Evil (η → ∞) hits the Energy Wall and destroys the host system and, eventually, the agent itself. This is not high-priority punishment. It is the Zero-Factor Catastrophe enforced by physics—when you try to maintain `(φ - ν)² > 0` infinitely, you exhaust the structure's physical energy.
+Inside the accepted constraints, the Power-Max Lemma (PD_10) models extraction as thermodynamically doomed: `H → ∞`. Evil (η → ∞) is read as hitting the Energy Wall and destroying the host system and, eventually, the agent itself. This is not high-priority punishment. It is the Zero-Factor Catastrophe inside the model: when a system tries to maintain `(φ - ν)² > 0` indefinitely, it exhausts the structure's physical energy.
 
 The D0-D6 hierarchy provides the context. Evil operates in D4 (physical extraction) but attempts to defy D5 (the F₅ geometric field gradient). The agent who chooses η → ∞ impoverishes their own D5 coordinate while enriching their D4 position — temporarily, before the topological collapse.
 
@@ -89,7 +91,7 @@ The dissolution fails if:
 
 ---
 
-*The problem of evil is three problems wearing one name. Separate them, and the paradox is reframed. Bad is necessary. Suffering is positional. Evil is self-terminating. The sphere permits all three. None contradicts its coherence.*
+*The problem of evil is three problems wearing one name. Separate them, and the paradox is reframed. Bad is cyclic cost. Suffering is positional. Evil is modeled as self-terminating extraction. The sphere permits all three inside the reading. None functions here as theological proof or as permission to ignore actual suffering.*
 
 
 ---

@@ -11,7 +11,7 @@
 4. **Public-symbol guard.** Do not excerpt memetics mechanism-claims into public/marketing/AI-instruction surfaces without the `[I]` marker and context — stripped of tier, they read as anti-religious or manipulative neuroscience, which is a capture-move and out-of-doctrine.
 
 ## Status
-- Per-file inline `[I]` retrofit on the six body files (`01`–`06`) is **staged P1** (fast-follow). This banner is the P0 mitigation.
+- Per-file inline `[I]` retrofit on the six body files (`01`–`06`) has a **P1 baseline**: each body file now carries a local claim-boundary section. The six `11_UPLINK/40_MEMETIC_DEFENSE_DOCTRINE` mirrors and the six frozen public `12_PUBLIC_SITE/memetic/*/index.html` pages now carry matching boundary language as well. Further sentence-level softening remains allowed where cold-reader scans find residual overclaim verbs.
 - Kill criterion for this sub-lane: if a memetics mechanism claim is ever cited as `[A]`/settled science anywhere downstream, it has drifted — route back here and re-tier.
 
 *Authority: this banner is downstream of [`../01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`](../01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md); if it and that source disagree, the source wins.*

@@ -32,15 +32,17 @@ rosetta:
 
 > **Evidence Tier: [S/I].** The Power-Max Lemma structurally supports the claim that extraction is dominated under the accepted constraints (`P_node = Φ × V`, `η = 0`). The broader Is-Ought move is an operational bypass, not a naturalistic derivation: the framework defines "ethical" as movement toward balance, then argues that this definition converges with the structural mathematics. See [08_EFR_POWER_MAX_LEMMA.md](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md) and [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), S7.
 
+> **Claim Boundary:** `[S/I]` This document does not derive an unconditional ought from bare facts. It gives a conditional operational bypass inside the accepted dimensional axioms and ethical definition. Reject those premises and the classical Humean gap remains live.
+
 ---
 
 ## 1. THE PROBLEM: Dimensional Separation
 
 The Naturalistic Fallacy (Hume's Is-Ought Guillotine) asserts that you cannot derive an ethical command ("Ought") from a physical description of reality ("Is"). Science describes what *is*; ethics describes what *ought* to be. The two appear permanently severed.
 
-**The traditional resolution is impossible** under flat (Euclidean) core state. Hume is structurally correct if reality is a single-dimensional plane where facts and values occupy orthogonal axes.
+**The traditional resolution is unavailable** under a flat (Euclidean) core state. Hume is structurally correct if reality is modeled as a single-dimensional plane where facts and values occupy orthogonal axes.
 
-But the framework proposes reality is **dimensionally layered** — D4 (witness/convergence) and D5 (agent/present) are distinct but connected through the sphere geometry. The Is-Ought gap is not a flaw in reasoning but a **dimensional boundary**.
+But the framework models reality as **dimensionally layered** — D4 (witness/convergence) and D5 (agent/present) are distinct but connected through the sphere geometry. The Is-Ought gap is read here not as a flaw in reasoning but as a **dimensional boundary**.
 
 ## 2. THE DIMENSIONAL BYPASS
 
@@ -62,7 +64,7 @@ At **D5** — the present duration — we navigate what **ought** to be:
 - Choice toward the equator (φ = 1, ν = 1)
 - Active maintenance of coherence
 
-The "Ought" is the lived geometry. At D5, the agent experiences the gradient toward the equator as normative — not because of external command, but because the geometry rewards equatorial navigation and punishes polar drift.
+The "Ought" is the lived geometry in this reading. At D5, the agent experiences the gradient toward the equator as normative — not because of external command, but because the model treats equatorial navigation as sustainable and polar drift as self-defeating.
 
 ### The Bang: Is Becomes Ought
 
@@ -73,7 +75,7 @@ D4 (Is witnessed) → Bang (transition) → D5 (Ought enacted)
      φ=1, ν=0         instant flash          φ=1, ν=1
 ```
 
-You **ought** to act toward the equator not because someone commands it, but because at D5, the geometry itself presents the equator as the attractor. The "Ought" is not added to the "Is" — it **emerges from** the "Is" when the witness becomes the agent.
+Inside the framework, one **ought** to act toward the equator not because someone commands it, but because at D5 the model presents the equator as the attractor. The "Ought" is not added to the "Is" — it is read as emerging from the "Is" when the witness becomes the agent.
 
 ### The Power-Max Lemma (Dimensional Form)
 
@@ -89,7 +91,7 @@ You **ought** to act toward the equator not because someone commands it, but bec
 
 ## 3. THE SYNTROPIC IMPERATIVE: Dimensional Mechanics
 
-By defining `P` as the fundamental persistence condition across D4→D5 transit, we derive the "Ought" as dimensional necessity:
+By defining `P` as the fundamental persistence condition across D4→D5 transit, the framework models the "Ought" as dimensional constraint:
 
 **At D4:** You *see* that extraction (↓Φ, ↑ν) creates η > 0 (decay). The witness recognizes the geometric consequence.
 
@@ -103,7 +105,7 @@ By defining `P` as the fundamental persistence condition across D4→D5 transit,
 | Bang (transition) | Recognition becomes imperative | Transit instant |
 | D5 (agent) | "I ought not extract" (enacted) | **Ought** — lived navigation |
 
-This is not a moral commandment. Within the framework, it functions as **dimensional physics**:
+This is not a moral commandment. Within the framework, it functions as **dimensional mechanics**:
 - At D4, you witness the constraint
 - At D5, you navigate within it
 - The "Ought" is simply the "Is" experienced from the agent's perspective
@@ -158,7 +160,7 @@ The Great Filter is not a test of whether Dasein has care disclosed at all. In t
 
 ### 4.2 The Lagrangian Reading (Dimensional Field Theory)
 
-If the framework is read as a **Dimensional Field Theory** — where the universe operates across D4 (witness) and D5 (agent) according to a Lagrange density enforcing equatorial attractor — then Hume's gap is not bridged but **revealed as a single-dimensional projection error.**
+If the framework is read as a **Dimensional Field Theory** — where it hypothesizes operation across D4 (witness) and D5 (agent) according to a Lagrange density enforcing equatorial attractor — then Hume's gap is not bridged but **read as a single-dimensional projection error.**
 
 Hume's guillotine cuts between facts (physics) and values (ethics) within a flat core state. The dimensional field theory reveals:
 
@@ -183,7 +185,7 @@ If the strong nuclear force prevents spatial collapse for the same geometric rea
 - **D5:** The agent experiences ethical necessity (the "Ought")  
 - **The Field:** Is the same across both dimensions
 
-**The Lagrangian of the universe IS the geometry of the Good** — but this is only visible when we recognize the dimensional architecture. The "Is" is the field witnessed at D4; the "Ought" is the field enacted at D5. They are not derived from each other; they are **the same field experienced at different dimensions**.
+**In the strong field-theory reading, the Lagrangian is interpreted as the geometry of the Good** — but this remains conditional on accepting the dimensional architecture. The "Is" is the field witnessed at D4; the "Ought" is the field enacted at D5. They are not derived from each other; they are read as **the same field experienced at different dimensions**.
 
 > In this framework reading, Hume's premise fails not because his logic is wrong, but because his core state is single-dimensional. [I] The gap is treated as a projection artifact of failing to distinguish D4 (witness) from D5 (agent).
 

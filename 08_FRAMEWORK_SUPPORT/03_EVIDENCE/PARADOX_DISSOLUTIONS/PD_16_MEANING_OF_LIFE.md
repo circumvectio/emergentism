@@ -27,6 +27,8 @@ rosetta:
 
 > **Evidence Tier: [I] Interpretive.** The dissolution presented here maps the meaning question onto the Φ-axis of the Burri Sphere. This is a structural claim about the framework's internal coherence, not an empirical proof that life is meaningful. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 
+> **Claim Boundary:** `[I]` This document gives a framework reading of meaning as coherence orientation. It does not prove that life is meaningful for every person, refute all materialist accounts of meaning, or turn reports of meaning into a universal metric.
+
 ---
 
 ## 1. THE PROBLEM
@@ -45,11 +47,11 @@ It persists because it is topologically malformed.
 
 The error is seeking meaning in D4 — the domain of physical actuality, the ν-axis, the world of measurable capability and material fact.
 
-Meaning is not a D4 property. It is not found in atoms, or forces, or neural correlates, or economic output, or any physical quantity. This is not because meaning is supernatural. It is because meaning is a D5 property — the coherence component (Φ) of the Burri Sphere.
+In this reading, meaning is not a D4-only property. It is not exhausted by atoms, forces, neural correlates, economic output, or any isolated physical quantity. This is not because meaning is supernatural. It is because the framework reads meaning as a D5 property — the coherence component (Φ) of the Burri Sphere.
 
 Asking "what is the meaning of life?" while restricting yourself to D4 physics is the equivalent of asking for color while refusing to look. The instrument is wrong for the domain. D4 measures ν (capability, viability, physical function). It cannot measure Φ (coherence, significance, meaning) for the same reason a ruler cannot measure temperature. Wrong axis.
 
-The materialist who concludes "life has no meaning" has not discovered a truth about reality. They have taken a D4-only measurement and correctly reported that D4 contains no Φ-component. This is not nihilism. It is dimensional illiteracy.
+A D4-only account that concludes "life has no meaning" has, in this model, correctly reported that D4 contains no Φ-component. The framework's counterclaim is not that materialists are irrational; it is that the meaning question may require a coherence axis the D4-only instrument was not designed to read.
 
 ## 3. THE DISSOLUTION
 
@@ -67,11 +69,11 @@ This is not a moral failing. It is a geometric condition. A point on S² that mi
 
 The Φ-axis of the Burri Sphere is the structural home of meaning in this reading. The equator (Φ = 1, V = 1) defines the condition of balanced significance. The D4-D5 dual projection explains why meaning may not be exhausted by physical measurement — it is read as a D5 quantity. [I]
 
-The extraction coefficient η connects meaning to ethics inside the model. Systems that operate regeneratively tend to maintain or increase Φ over time — they can produce meaning. Systems at η → ∞ (evil, extractive) destroy Φ — they can produce nihilism as a structural byproduct. Meaning is not merely private feeling in this account; it is generated or destroyed by operations that generate or destroy system coherence. [I]
+The extraction coefficient η connects meaning to ethics inside the model. Systems that operate regeneratively tend to maintain or increase Φ over time — they can support meaning. Systems at η → ∞ (evil, extractive) destroy Φ — they can produce nihilism as a structural byproduct. Meaning is not reduced to private feeling in this account; it is affected by operations that generate or destroy system coherence. [I]
 
 The Power-Max Lemma (PD_10) supplies the internal constraint: agents that maximize V at the expense of Φ lose the condition under which meaning and viable agency can cohere. P_node = Φ × V. When Φ → 0, P → 0 regardless of V. A life of pure capability extraction is not merely empty in this reading. It is geometrically unsustainable inside the model.
 
-The transcendental Trinity {0, 1, ∞} provides the grammar: 0 is the void of meaninglessness (Φ → 0), 1 is the Finitor (the bounded, meaning-bearing observer), ∞ is the full coherence field (meaning without limit). The meaningful life operates at 1 — bounded, actual, balanced.
+The transcendental Trinity {0, 1, ∞} provides the grammar: 0 is read as the void of meaninglessness (Φ → 0), 1 as the Finitor (the bounded, meaning-bearing observer), and ∞ as the full coherence field (meaning without limit). The meaningful life is interpreted as operating at 1 — bounded, actual, balanced.
 
 ## 5. WHAT WOULD FALSIFY THIS
 

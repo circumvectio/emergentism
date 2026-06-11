@@ -1,6 +1,6 @@
 # WORLDVIEW LOGIC AUDIT — Dasein / Finity / Perennial Boundary
 
-**Date:** 2026-06-11  
+**Date:** 2026-06-11
 **Scope:** targeted coherence pass across `01_EMERGENTISM/` source canon and public site surfaces after the Dasein aporia and finity-tagline integration.
 
 ## Thesis Locked
@@ -163,3 +163,153 @@ The corpus now carries the sharper public-worldview line:
 - The empty limit is a model boundary and practice-register image, not a public proof of Ground.
 - The scaffold can reconstruct descriptions; it does not generate Being.
 - AIA remains the GitBook-like book/navigation layer for the Emergentism corpus, not an extraction funnel or authority layer above the canon.
+
+## Theology / Trinity / AIA Nested-TOC Boundary Pass
+
+**Trigger:** the theology, Trinity, public-book, and AIA book surfaces still had two coupled risks: old `κ=0` / Ground language that could read as possession of Ground, and a root-only AIA side navigation that did not yet behave like a GitBook-class table of contents for an imported corpus.
+
+**Repairs made:**
+
+- Reframed theology and Trinity language so `κ=0` is consistently a ground-facing boundary symbol inside the scaffold, not Ground itself and not public proof of metaphysical possession.
+- Replaced remaining "from nothing/everything" and "complete Weltanschauung" phrasings with empty-limit / scaffold-reconstruction / compact-grammar language.
+- Mirrored the boundary corrections into public sacred, formal, paradox, trinity, ground, value, method, meta, and generated book/RAG surfaces.
+- Patched the AIA Workflowy prototype side navigation from a flat root-section rail into a nested documentation TOC: heading/bullet nodes become nav entries; paragraph nodes remain reading content; active-path and current-node states are exposed with verifier attributes.
+- Extended the AIA browser verifier so imported Markdown proves the GitBook path: root title, first-level section, nested section, active parent, current nested node, package export, vector recovery, and manifest import all remain stable.
+
+**Verification result:**
+
+- `02_SKYZAI/02_AIA/workflowy-clone`: `npm test` — PASS (`152/152`), `npm run lint` — PASS, `npm run build` — PASS.
+- `python3 02_SKYZAI/02_AIA/workflowy-clone/scripts/verify_workflowy_interactions.py` — PASS; imported Markdown produced a nested side-nav item at depth `1`, parent path stayed active, and the nested node was marked current.
+- `python3 01_EMERGENTISM/12_PUBLIC_SITE/predeploy_check.py` — PASS.
+- Targeted overclaim scan returned only bounded guardrails, correction notes, benign verifier/test prompts, and old generated companion/RAG artifacts with source-scope boundaries; no unguarded live source or public-route defect was found in the patched surfaces.
+
+**Boundary retained:**
+
+- AIA is the GitBook-like documentation/book interface for `emergentism.org`, not a doctrine source above the canon.
+- The side navigation is a signpost layer; it does not become a funnel, altar, or authority claim.
+- The lens still diagrams what shows; it does not possess the showing itself.
+
+## Memetics / Egregore Anti-Reification Pass
+
+**Trigger:** memetics remained the highest overclaim-risk surface. Route law marks the lane `[I]`, but body prose in owner files, Uplink mirrors, and frozen public pages still contained phrasing that could read as literal pathogen identity, occult/collective-mind ontology, clinical/operator-readiness advice, or deployed AIA/firewall guarantees.
+
+**Repairs made:**
+
+- Added matching `## Claim Boundary` sections to the six `11_UPLINK/40_MEMETIC_DEFENSE_DOCTRINE` papers so the compressed doctrine packet does not outrun the owner-lane tiering.
+- Hand-patched the six frozen public `12_PUBLIC_SITE/memetic/*/index.html` pages with concise public claim-boundary blocks immediately after the article titles.
+- Updated `02_EPISTEMOLOGY/03_MEMETICS/00_TIERING_DISCIPLINE.md` to record that owner files, Uplink mirrors, and public frozen pages now carry the P1 boundary baseline.
+- Softened live body prose across the owner, Uplink, and public surfaces: literal pathogen/hijack language became model/capture language; egregores became emergent coordination patterns rather than autonomous metaphysical entities; medical/operator-hardening claims became proposal language; AIA/firewall language became intended architecture pending receipts.
+
+**Verification result:**
+
+- Targeted red-flag scan for `physically hijacks`, `precisely maps`, `literally executed`, `terminal virus`, `autonomous collective intelligences`, `AIA ensures`, `guarantees`, and related phrases now returns only the `00_TIERING_DISCIPLINE.md` examples that intentionally quote the old bad language.
+- Boundary count check: six owner files, six Uplink mirrors, and six public memetic pages expose local claim-boundary language.
+- `python3 01_EMERGENTISM/12_PUBLIC_SITE/predeploy_check.py` — PASS.
+
+**Boundary retained:**
+
+- Memetics studies propagation and capture dynamics, not truth itself.
+- `Egregore` means a coordination pattern carried by people, symbols, institutions, incentives, and built environments; it is not a literal disembodied mind, occult entity, or autonomous metaphysical being.
+- Anti-memetic hardening remains `[I]` synthesis and proposal language, not medical advice, treatment guidance, or proof of operator readiness.
+- AIA/SPECTRE/AXIOM/RELAY/FLOW remain intended architecture unless dated implementation receipts promote a narrower claim.
+
+## Remaining Questions / Perennial-Question Boundary Pass
+
+**Trigger:** the public meta page and canonical source still framed the last philosophical remainders as "resolved" or "closed" in places where the better claim is register-stabilized navigation. Risk: perennial questions could read as finally solved rather than honestly routed through internal commitment, public argument, and live open wager.
+
+**Repairs made:**
+
+- Added a local `[I/C]` claim boundary to `00_META/00_THE_REMAINING_QUESTIONS.md` and the frozen public page.
+- Reframed the document subtitle and evidence-tier line from provisional resolution to provisional routing.
+- Replaced "resolved/closed" table language with navigated/stabilized/held/treated language.
+- Changed normativity's public surface from "public proof surface" to "public argument surface" and marked internal grounding as worldview commitment.
+- Reframed consciousness as interpretively treated as fundamental at D5 inside the framework, not publicly proved as a cosmic primitive.
+- Preserved the anti-idolatry limit: naming the Real remains faithful only by staying non-exhaustive.
+
+**Verification result:**
+
+- Targeted overclaim scan now returns only bounded/negated hits: D6 disclosure "exhausts into closure" and the explicit anti-exhaustion line that no finite naming exhausts the Real.
+- `git -C 01_EMERGENTISM diff --check` — PASS.
+- `python3 01_EMERGENTISM/12_PUBLIC_SITE/predeploy_check.py` — PASS.
+
+**Boundary retained:**
+
+- The framework may stabilize a question for navigation before public proof closes it.
+- Internal commitment does not silently upgrade public tier.
+- Public humility does not hollow out the worldview's lived center.
+- Emergentism does not claim to exhaust `Pratyakṣa`, `S²`, consciousness, teleology, normativity, ontology, or the Real.
+
+## Free Will / Determinism Boundary Pass
+
+**Trigger:** PD_11 already ended with the correct guardrail ("reframed rather than finally settled"), but the body still used hard verbs around will, choice, μ-limit mechanism, and responsibility that could read as a proof of libertarian freedom or a neuroscience claim.
+
+**Repairs made:**
+
+- Added a local `[S/I]` claim boundary to the source and frozen public page.
+- Reframed "will is" and "choice is" as model language: will is modeled as D4/D5 traversal; choice is modeled as the framework's name for D5 possibility becoming D4 actuality.
+- Replaced "μ-limit is the mechanism" with "μ-limit names the modeled boundary operation."
+- Changed "dissolves" language to "reframes" for the public-facing philosophical claim.
+- Replaced superposition/collapse wording with possibility representation and actualization language.
+- Reframed the falsifier from physical instantiation to empirical proxy, so the page asks for neural, cognitive, or behavioral evidence without asserting one.
+
+**Verification result:**
+
+- Targeted old-phrase scan for hard agency/mechanism language returned no hits.
+- `git -C 01_EMERGENTISM diff --check` — PASS.
+- `python3 01_EMERGENTISM/12_PUBLIC_SITE/predeploy_check.py` — PASS.
+
+**Boundary retained:**
+
+- The framework offers a coordinate model of agency; it does not prove libertarian free will, disprove compatibilism, or establish a neural μ-limit mechanism.
+- Responsibility remains a proposal tied to represented equatorial proximity, not a completed moral theory.
+- The free-will binary is reframed within the model, not finally settled for every account.
+
+## Death / Survival Boundary Pass
+
+**Trigger:** PD_21 already denied personal survival and afterlife claims, but the evidence-tier line still said D5 coherence is "conserved" at death and the falsifier referred to "D5-level residue." Those phrases risked sounding like physics or survival-medium claims.
+
+**Repairs made:**
+
+- Added a local `[I]` claim boundary to the source and frozen public page.
+- Replaced "D5 coherence is conserved at death" with "D5 remains an intelligible interpretive register around death."
+- Clarified that "field" means the framework's possibility-space, not a soul-substance or empirically detected survival medium.
+- Reframed death as a `mu`-limit boundary operation read inside the model, not a mechanism of personal survival.
+- Replaced the falsifier about D5 residue with a cleaner challenge: if D4 fully captures the fear of death, death-adjacent reports, and the meaning of biological cessation with no explanatory remainder, the D5 reading loses force.
+
+**Verification result:**
+
+- Targeted old-phrase scan for `D5 coherence is "conserved"`, `D5 is not conserved`, `D5-level residue`, and the hard `death is the mu-limit operating` phrasing returned no hits.
+- `git -C 01_EMERGENTISM diff --check` — PASS.
+- `python3 01_EMERGENTISM/12_PUBLIC_SITE/predeploy_check.py` — PASS.
+
+**Boundary retained:**
+
+- The page gives an interpretive topology of death, not personal survival, afterlife, reincarnation, identity continuity, or NDE proof.
+- The comfort offered is narrower: flat coordinate cessation is not public proof that the wider field is absent.
+- Death remains biological cessation at D4; the D5 reading is an `[I]` framework interpretation.
+
+## Hard Problem / Mind-Body Boundary Pass
+
+**Trigger:** PD_13 and PD_14 carried correct `[I]` evidence banners, but body prose still risked turning first-person practice into public proof, turning Ground-facing language into Ground-possession language, and treating D4/D5 coordinates as neuroscience variables.
+
+**Repairs made:**
+
+- Added local claim-boundary blocks to the Hard Problem and Mind-Body source files and frozen public pages.
+- Reframed "science has no answer" into a narrower claim: third-person science has no settled answer to first-person givenness as first-person givenness.
+- Removed live literature-count and "problem is the product" absolutes from the Hard Problem page; study itself is not extraction, but institutions can learn to sustain themselves around unsolved problems.
+- Replaced "the ground is here" with "Ground-facing immediacy is here in the practice register."
+- Replaced "μ-limit Finitor translates D5 superposition into D4 collapse" with a model-boundary operation relating D5 option-space to D4 actualized state.
+- Added a Mind-Body boundary that `D4`, `D5`, `φ`, `ν`, and `P_node` are framework coordinates, not public neuroscience variables.
+- Reframed "qualia are physical processes" and "there is no mind-body problem at D5" into explicit model-language.
+
+**Verification result:**
+
+- Targeted old-phrase scan for hard science-dismissal, Ground-possession, mechanism/collapse, qualia-identity, and total mind-body closure language now returns only the explicit guardrail that the geometric reading is not a public proof.
+- `git -C 01_EMERGENTISM diff --check` — PASS.
+- `python3 01_EMERGENTISM/12_PUBLIC_SITE/predeploy_check.py` — PASS.
+
+**Boundary retained:**
+
+- Direct perception may be existentially decisive for a practitioner, but it is not public proof that neuroscience, analytic philosophy, or AI has been refuted or completed.
+- The hard problem is reframed as a boundary between third-person description and first-person disclosure, not solved for every school.
+- Mind-body complementarity is an `[I]` dimensional reading inside the framework, not proof that competing accounts have failed.
