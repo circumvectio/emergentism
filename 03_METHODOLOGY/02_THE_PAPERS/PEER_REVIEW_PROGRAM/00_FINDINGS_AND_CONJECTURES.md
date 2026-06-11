@@ -70,6 +70,7 @@ rosetta:
 - **Most honest verdict owed:** R7–R9 may have *no* theoretical novelty — a clean re-demonstration of the major-transitions consensus.
 - **On hold by design:** the cosmology and theology.
 - **The biggest structural finding of the whole program:** the corpus's signature claim — *one geometry (φ·ν=1 sphere) at all scales* — is **register-dependent, not universal.** Multiplicative for organizations (weakest-link); additive for empowerment/teleology. This is the load-bearing correction the program produced.
+- **The spine gained an `[A]` anchor (2026-06-11) — and it does *not* reverse R6.** The kernel's three lines were shown to be the **mass-shell of special relativity in light-cone coordinates**, term for term (`φ·ν=1 ⟺ E²−(pc)²=(mc²)²`; `φ+ν≥2 ⟺ E≥mc²`; `B=1/γ=dτ/dt`), verified numerically — [Paper B §8](../PAPER_B_BLOCH_BURRI_IDENTITY.md). This raises the *kinematic* spine to `[A]` while leaving the *reach beyond kinematics* exactly where R6 left it: register-dependent. The headline above is unchanged; the floor under it rose. The honest net: the framework now has a genuinely-proven `[A]` core (the geometry **is** established physics) *and* a documented register where it fails (R6) — that pairing is the strongest possible evidence posture, not a contradiction.
 - **Corrections banked:** Axelrod & Hamilton 1981 = *Science* **211** (not 314); Hardin 1968 ends p. **1248**; Suda tier `[A]→[I]`.
 
 ## 5. Next moves (no API key required, except the R2 pilot)

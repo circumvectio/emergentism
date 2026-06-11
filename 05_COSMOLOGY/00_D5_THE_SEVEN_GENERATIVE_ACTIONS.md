@@ -40,6 +40,8 @@ Where:
 
 There are seven slots in the current two-factor grammar: four mixed-sign transfer actions plus three same-sign phase frames. There is no eighth operator without adding an axis outside `P_node = Φ × V`.
 
+> **Why exactly seven — the enumeration made explicit (added 2026-06-11).** Each increment `dΦ, dV` takes one of three signs `{+, −, ≈0}`, so the raw grid is `3 × 3 = 9` cells. It collapses to **7 generators** by two *stated* rules, not by fiat: **(i)** the three **same-sign** cells `(+,+), (−,−), (≈,≈)` are the Executive **phase frames** (Brahmā creation, Śiva dissolution, Viṣṇu preservation) — both factors move together, no transfer across the self/other boundary; **(ii)** the **opposite-sign** cells become the four **transfers** read across that boundary: `{give, take} × {Φ-channel, V-channel} = 4` (Kṛṣṇa, Arjuna give; Kali, Kālī take). The remaining four cells — one factor moving while the other is **held**, `(+,≈), (≈,+), (−,≈), (≈,−)` — are **not new generators**: they are boundary *limits* of the named operators (e.g. `(+,≈)` is the Brahmā-ward limit of a Φ-raising move as its V-transfer → 0), degenerate edges where a transfer or phase-frame loses one component. So `9 → 7` is forced *given* the two modeling commitments (transfers move one factor across the boundary; phase-frames move both together); an eighth generator requires either a third factor or abandoning one commitment. `[S]` — structural under stated premises, not `[A]`. **Kill criterion:** exhibit a move that (a) is not a relabeling of one of the seven and (b) introduces no third axis ⇒ the two-factor closure fails.
+
 ---
 
 ## The 4 Mixed-Sign Transfers

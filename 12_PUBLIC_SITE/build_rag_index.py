@@ -21,6 +21,13 @@ OUT = ROOT / "book" / "rag_index.json"
 LIBRARY = ["canon", "formal", "paradox", "memetic", "rosettad", "operators",
            "will", "value", "ground", "sacred", "method", "meta"]
 
+# Overview/doctrine pages chunked at their own headings (h2/h3 chapters) so the
+# RAG corpus stays current with the front-of-house surfaces — these carry the
+# 2026-06 findings (mass-shell, agency gloss, the unfolding) that the frozen
+# book prose does not yet hold.
+OVERVIEW_PAGES = ["synthesis", "axioms", "0", "1", "2", "3", "4", "5", "6",
+                  "soul-loop", "game"]
+
 MAX_PASSAGE = 700          # chars of text per passage
 HEAD_RE = re.compile(r'<h([12]) id="([^"]+)"[^>]*>(.*?)</h\1>', re.S)
 TAG_RE = re.compile(r"<[^>]+>")
@@ -75,8 +82,40 @@ def library_passages():
     return out
 
 
+SEC_RE = re.compile(r"<h([23])[^>]*>(.*?)</h\1>(.*?)(?=<h[23]\b|</section>|</article>|<footer)", re.S)
+
+
+def overview_passages():
+    """Chunk the doctrine/overview pages at their h2/h3 chapters."""
+    out = []
+    for page in OVERVIEW_PAGES:
+        idx = ROOT / page / "index.html"
+        if not idx.exists():
+            continue
+        html = idx.read_text(encoding="utf-8", errors="replace")
+        pm = re.search(r"<h1[^>]*>(.*?)</h1>", html, re.S)
+        page_title = clean(pm.group(1)) if pm else page
+        chunks = SEC_RE.findall(html)
+        if not chunks:
+            body = clean(html.split("</h1>")[-1])[:MAX_PASSAGE]
+            if len(body) >= 80:
+                out.append({"id": f"page:{page}", "title": page_title,
+                            "href": f"/{page}/", "text": body})
+            continue
+        for i, (_lvl, htitle, htext) in enumerate(chunks):
+            title = clean(htitle)
+            text = clean(htext)[:MAX_PASSAGE]
+            # strip the expand-pill artifact if present
+            title = re.sub(r"\s*✦\s*expand.*$", "", title)
+            if len(text) < 60 or not title:
+                continue
+            out.append({"id": f"page:{page}:{i}", "title": f"{title} — {page_title}",
+                        "href": f"/{page}/", "text": text})
+    return out
+
+
 def main() -> int:
-    passages = book_passages() + library_passages()
+    passages = book_passages() + library_passages() + overview_passages()
     OUT.write_text(json.dumps({"generated": "build_rag_index.py",
                                "count": len(passages), "passages": passages},
                               ensure_ascii=False), encoding="utf-8")
