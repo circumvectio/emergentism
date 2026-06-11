@@ -51,7 +51,7 @@ The three unveilings correspond to the three structural concepts:
 
 | Unveiling | Concept | Structural role | Framework analogue |
 |-----------|---------|-----------------|-------------------|
-| First | **Zero** ($\varnothing$) | The ground | κ = 0 (irreducible ground). The empty string. The Theory of Everything reduced to nothing. |
+| First | **Zero** ($\varnothing$) | The ground | κ = 0 (irreducible ground). The empty string. The minimal-description "theory of everything" (bounded, model-internal) reduced to nothing. |
 | Second | **Infinity** ($\infty$) | The projection | The north pole of $S^2$. The unbounded. The space of all possibility (D5). |
 | Third | **Finity** ($\odot$) | The manifested | The equatorial balance $P∞ = \varphi \cdot \nu = 1$. The actualized. The world. The present. You. |
 
