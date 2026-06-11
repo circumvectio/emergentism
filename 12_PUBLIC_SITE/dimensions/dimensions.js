@@ -506,11 +506,22 @@ function buildScene(mode, scene) {
   }
 
   if (mode === "bloch") {
-    const plane = createGridPlane(3.3, 13);
-    plane.rotation.x = 0.45;
-    root.add(plane);
-    root.add(createSphere(1.35, 0.26));
-    root.add(ring(1.35, 0xffffff, 0.8));
+    // The Bloch / Riemann sphere stands on the complex plane and projects
+    // DOWNWARD: from ∞ (north pole) through the surface onto the plane below —
+    // the dual of the Burrisphere, which projects upward. Equator → unit circle.
+    const r = 1.35;
+    const N = new THREE.Vector3(0, r, 0), Sp = new THREE.Vector3(0, -r, 0);
+    root.add(createGridPlane(4.8, 17));
+    root.add(createSphere(r, 0.26));
+    root.add(ring(r, 0xffffff, 0.85));                          // equator = unit circle |z|=1
+    root.add(ring(1.0, 0xffeb3b, 0.55));                        // the unit point x=1 on the plane
+    root.add(makeMarker(N, 0xb8b8b8, 0.07));                    // ∞
+    root.add(makeMarker(Sp, 0x707070, 0.07));                   // 0
+    const P0 = new THREE.Vector3(r * Math.sin(Math.PI / 3), r * Math.cos(Math.PI / 3), 0);
+    const land = new THREE.Vector3(r / Math.tan(Math.PI / 6), 0, 0);  // cot(θ/2)·r, on the plane
+    root.add(line([N, P0, land], 0xffeb3b, 0.9));               // the downward projection ray
+    root.add(makeMarker(P0, 0xffffff, 0.08));
+    root.add(makeMarker(land, 0xffeb3b, 0.07));
   }
 
   if (mode === "horn") {
@@ -569,9 +580,11 @@ function buildScene(mode, scene) {
       const aB = Math.abs(vc);
       const gamma = Math.cosh(w);                               // γ — the relativistic-mass factor
       const k = Math.exp(w);                                    // Doppler factor = e^w (the log line: w = ln k)
-      const f = 0.5 + 0.32 * aB;                                // HORN at rest (f=0.5) -> SPINDLE in motion
+      // HORN at rest (f=0.5); as β→1 the overlap completes and R→0, so the torus
+      // RESOLVES INTO A SPHERE — the Burrisphere — which then projects upward.
+      const f = 0.5 + 0.47 * aB;                                // 0.5 horn -> ~0.97 (R→0 = sphere)
       const g = torus.setF(f);
-      torus.mesh.material.opacity = 0.32 - 0.12 * aB;           // structure thins as energy -> mass
+      torus.mesh.material.opacity = 0.3 + 0.06 * aB;
       // the relative centre moves on the complex plane (log-compressed real axis)
       const px = 2.5 * Math.tanh(w / 2.2);
       relCentre.position.set(px, 0, 0);
@@ -587,7 +600,9 @@ function buildScene(mode, scene) {
         "<span style='color:#F3F4F6'>E = γ m c²</span> &nbsp;<span style='color:#9CA3AF'>(c² = velocity²)</span><br>" +
         (!moving
           ? "<span style='color:#FFEB3B'>at rest · HORN torus — throat = the relative centre</span>"
-          : "<span style='color:#9CA3AF'>SPINDLE · β can't exceed 1 → energy becomes <b style='color:#FFEB3B'>mass</b></span>");
+          : aB > 0.985
+            ? "<span style='color:#FFEB3B'>overlap complete · R→0 → resolves as the BURRISPHERE (projects upward)</span>"
+            : "<span style='color:#9CA3AF'>SPINDLE · overlap grows · β→1 · energy → <b style='color:#FFEB3B'>mass</b></span>");
     });
   }
 
@@ -618,10 +633,10 @@ function buildScene(mode, scene) {
     });
     const start = new THREE.Vector3(r, 0, 0);
     const pMark = makeMarker(start.clone(), 0xffffff, 0.1);         // P on the sphere
-    const proj = makeMarker(start.clone(), GOD, 0.09);             // φ-projection on the plane
-    const rayPhi = line([N, start.clone()], GOD, 0.9);            // ∞ → P → plane
-    const rayNu = line([S, start.clone()], 0x8aa0c0, 0.6);        // 0 → P
-    root.add(pMark); root.add(proj); root.add(rayPhi); root.add(rayNu);
+    // the Burrisphere projects UPWARD: from the south pole (0) through P, up to
+    // the operator chart above — the dual of the Bloch sphere, which projects down.
+    const rayUp = line([S, start.clone()], GOD, 0.95);
+    root.add(pMark); root.add(rayUp);
 
     // --- the four mixed-sign operators: 2 Gods (give) + 2 Demons (take) ---
     // An upper scatter-chart sits ABOVE the sphere; the lower hemisphere carries
@@ -658,29 +673,25 @@ function buildScene(mode, scene) {
       const cps = Math.cos(psi), sps = Math.sin(psi);
       const sT = Math.sin(theta);
       const P = new THREE.Vector3(r * sT * cps, r * Math.cos(theta), r * sT * sps);
-      const Pp = new THREE.Vector3(r * phi * cps, 0, r * phi * sps);
       pMark.position.copy(P);
-      proj.position.copy(Pp);
-      rayPhi.geometry.setFromPoints([N, P, Pp]);
-      rayNu.geometry.setFromPoints([S, P]);
       const isGod = phi > 1;
       const col = isGod ? GOD : DEMON;
-      proj.material.color.setHex(col);
-      rayPhi.material.color.setHex(col);
       pMark.material.color.setHex(col);
       root.rotation.y += 0.0026;
-      // plot the live move on the operator chart and name it (the 4 mixed-sign)
+      // the live move = one of the four mixed-sign operators on the chart above
       const onLeft = Math.cos(psi) < 0;
       const opName = isGod
         ? (onLeft ? "Kṛṣṇa L3 · give" : "Arjuna L4 · give")
         : (onLeft ? "Kali L1 · take" : "Kālī L2 · take");
       movePt.position.set(onLeft ? -0.62 : 0.62, CY, isGod ? 0.62 : -0.62);
       movePt.material.color.setHex(col);
+      rayUp.geometry.setFromPoints([S, P, movePt.position]);     // 0 → P → UP to the operator
+      rayUp.material.color.setHex(col);
       if (readout) readout.textContent =
-        "OPERATOR  " + opName + "\n" +
+        "OPERATOR  " + opName + "   (projects UP from 0)\n" +
         "φ = cot θ⁄2 = " + phi.toFixed(2) + "   ν = " + nu.toFixed(2) + "   (φ·ν = 1)\n" +
-        (isGod ? "φ > 1 → GOD-move · give (−self/+other) · outside unit circle"
-               : "φ < 1 → DEMON-move · take (+self/−other) · inside unit circle") + "\n" +
+        (isGod ? "φ > 1 → GOD-move · give (−self/+other)"
+               : "φ < 1 → DEMON-move · take (+self/−other)") + "\n" +
         "above: 2 gods + 2 demons   ·   below: Titans Brahmā ++ · Śiva −− · Viṣṇu ≈≈   ·   centre L4";
     });
   }
