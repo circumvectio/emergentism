@@ -10,25 +10,26 @@
 <style>
 :root{
   --serif:"Hoefler Text","Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
-  --mono:ui-monospace,"SF Mono",Menlo,"Cascadia Code",Consolas,monospace;
+  --sans:"Google Sans Flex","Google Sans Text","Google Sans","Product Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --mono:"Google Sans Code","Google Sans Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
   --measure:40rem;
 }
 /* ---- light (parchment) reading theme : default ---- */
 html[data-reading-theme="light"]{
-  --bg:#f4eee1; --bg2:#ece4d2; --panel:#f7f2e8;
-  --ink:#211c15; --ink-soft:#5e564a; --ink-faint:#8a8170;
-  --rule:rgba(33,28,21,.14); --rule-soft:rgba(33,28,21,.08);
-  --gold:#9a6a16; --gold-bright:#b8862c;
-  --t-a:#2f5d99; --t-e:#2c7350; --t-s:#1d7e70; --t-i:#9a6a16; --t-c:#6f4fa0; --t-b:#9a6a16;
+  --bg:#FDFAF4; --bg2:#FAF7F0; --panel:#F2EDE3;
+  --ink:#18160E; --ink-soft:#4A4438; --ink-faint:#7A7062;
+  --rule:rgba(24,22,14,.14); --rule-soft:rgba(24,22,14,.08);
+  --gold:#92650A; --gold-bright:#7a5408;
+  --t-a:#1565C0; --t-e:#2c7350; --t-s:#1d7e70; --t-i:#92650A; --t-c:#6f4fa0; --t-b:#92650A;
   --shadow:0 1px 0 rgba(255,255,255,.5);
 }
 /* ---- dark (void) reading theme ---- */
 html[data-reading-theme="dark"]{
-  --bg:#0f0d0a; --bg2:#15110c; --panel:#13100b;
-  --ink:#ece5d4; --ink-soft:#9a8f7d; --ink-faint:#6c6453;
-  --rule:rgba(236,229,212,.13); --rule-soft:rgba(236,229,212,.07);
-  --gold:#f2b134; --gold-bright:#ffd877;
-  --t-a:#7fb2e6; --t-e:#6fc79a; --t-s:#5fc6b0; --t-i:#e8b15a; --t-c:#b59ce0; --t-b:#f2b134;
+  --bg:#050505; --bg2:#0e0e0e; --panel:#101010;
+  --ink:#F3F4F6; --ink-soft:#9CA3AF; --ink-faint:#6b7280;
+  --rule:rgba(243,244,246,.13); --rule-soft:rgba(243,244,246,.07);
+  --gold:#FFEB3B; --gold-bright:#FFF176;
+  --t-a:#7fb2e6; --t-e:#6fc79a; --t-s:#5fc6b0; --t-i:#e8d24a; --t-c:#b59ce0; --t-b:#FFEB3B;
   --shadow:none;
 }
 *{box-sizing:border-box}
@@ -49,7 +50,7 @@ a{color:inherit}
   gap:1rem;padding:.7rem clamp(1rem,3vw,1.6rem);
   background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(10px);
   border-bottom:1px solid var(--rule-soft)}
-.bookbar .brand{font-family:var(--serif);font-weight:600;font-size:1.05rem;letter-spacing:.01em}
+.bookbar .brand{font-family:var(--sans);font-weight:600;font-size:1.05rem;letter-spacing:.01em}
 .bookbar .brand b{color:var(--gold)}
 .bookbar nav{display:flex;align-items:center;gap:.4rem;font-family:var(--mono);font-size:.76rem}
 .bookbar nav a,.bookbar nav button{color:var(--ink-soft);background:none;border:1px solid transparent;
@@ -69,7 +70,7 @@ a{color:inherit}
 .toc-link{display:flex;gap:.7rem;align-items:baseline;padding:.32rem .4rem;border-radius:5px;
   text-decoration:none;color:var(--ink-soft);line-height:1.3;transition:.16s}
 .toc-link .toc-n{font-family:var(--mono);font-size:.66rem;color:var(--ink-faint);min-width:1.4em;text-align:right;flex:none}
-.toc-link .toc-t{font-size:.92rem}
+.toc-link .toc-t{font-size:.9rem;font-family:var(--sans)}
 .toc-link:hover{color:var(--ink);background:var(--bg2)}
 .toc-link.is-active{color:var(--gold);background:var(--bg2)}
 .toc-link.is-active .toc-n{color:var(--gold)}

@@ -6,18 +6,20 @@
   <title>Emergentism — between nothing and everything, the life</title>
   <meta name="description" content="One equation: coherence × viability = 1, on a sphere whose poles are 0 and ∞ and whose equator is the inhabitable 1. A finite philosophy that marks its own evidence — and names what failed." />
   <meta name="color-scheme" content="dark" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23f2b134' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.4' fill='%23f2b134'/%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%23FFEB3B' stroke-width='1' opacity='.5'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E" />
   <style>
     :root{
-      --void:#070a10; --void-2:#0b0f17; --panel:#0e131d; --panel-2:#111724;
-      --bone:#ece6d6; --bone-dim:#9aa1ad; --bone-faint:#6c727e;
-      --gold:#f2b134; --gold-bright:#ffd877; --gold-deep:#b9831f;
-      --cold:#bcd4f2; --violet:#7c70ad;
-      --line:rgba(236,230,214,.12); --line-soft:rgba(236,230,214,.07);
-      --tier-a:#7fb2e6; --tier-s:#5fc6b0; --tier-i:#e8b15a; --tier-c:#b59ce0; --tier-b:#f2b134;
-      --serif:"Hoefler Text","Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
-      --mono:ui-monospace,"SF Mono",Menlo,"Cascadia Code",Consolas,monospace;
-      --maxw:1140px;
+      /* Skyzai brand — near-black, signature yellow #FFEB3B, blue #2196F3, cream #FFFDE7 */
+      --void:#050505; --void-2:#0a0a0a; --panel:#101010; --panel-2:#161616;
+      --bone:#F3F4F6; --bone-dim:#9CA3AF; --bone-faint:#6b7280;
+      --gold:#FFEB3B; --gold-bright:#FFF176; --gold-deep:#CBB800;
+      --cold:#42A5F5; --blue:#2196F3; --violet:#6e6a86; --cream:#FFFDE7;
+      --line:rgba(243,244,246,.12); --line-soft:rgba(243,244,246,.07);
+      --tier-a:#7fb2e6; --tier-s:#5fc6b0; --tier-i:#e8d24a; --tier-c:#b59ce0; --tier-b:#FFEB3B;
+      /* Skyzai typography — geometric sans (Google Sans where installed) + system fallback; gate-safe, no CDN */
+      --serif:"Google Sans Flex","Google Sans Text","Google Sans","Product Sans",-apple-system,BlinkMacSystemFont,"Segoe UI Variable Display","Segoe UI",system-ui,sans-serif;
+      --mono:"Google Sans Code","Google Sans Mono",ui-monospace,"SF Mono",Menlo,"Cascadia Code",Consolas,monospace;
+      --phi:1.618; --maxw:1140px;
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
@@ -32,9 +34,9 @@
     body::before{
       content:""; position:fixed; inset:0; z-index:-2; pointer-events:none;
       background:
-        radial-gradient(120% 90% at 78% 8%, rgba(188,212,242,.10), transparent 46%),
-        radial-gradient(80% 70% at 72% 30%, rgba(242,177,52,.08), transparent 55%),
-        radial-gradient(140% 120% at 50% 120%, rgba(124,112,173,.10), transparent 60%),
+        radial-gradient(120% 90% at 78% 8%, rgba(33,150,243,.12), transparent 46%),
+        radial-gradient(80% 70% at 72% 30%, rgba(255,235,59,.08), transparent 55%),
+        radial-gradient(140% 120% at 50% 120%, rgba(110,106,134,.08), transparent 60%),
         var(--void);
     }
     body::after{
@@ -42,7 +44,7 @@
       background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.035'/%3E%3C/svg%3E");
       mix-blend-mode:overlay;
     }
-    ::selection{background:rgba(242,177,52,.28); color:#fff}
+    ::selection{background:rgba(255,235,59,.30); color:#050505}
     a{color:var(--bone); text-decoration:none}
 
     /* ---------- topbar ---------- */
@@ -92,7 +94,7 @@
       padding:.85rem 1.4rem; border-radius:4px; border:1px solid var(--line); transition:.22s; display:inline-flex; align-items:center; gap:.5rem;
     }
     .btn.primary{background:var(--gold); color:#1a1206; border-color:var(--gold); font-weight:600}
-    .btn.primary:hover{background:var(--gold-bright); box-shadow:0 0 0 1px var(--gold-bright),0 8px 30px -8px rgba(242,177,52,.5); transform:translateY(-1px)}
+    .btn.primary:hover{background:var(--gold-bright); box-shadow:0 0 0 1px var(--gold-bright),0 8px 30px -8px rgba(255,235,59,.5); transform:translateY(-1px)}
     .btn.ghost{color:var(--bone)}
     .btn.ghost:hover{border-color:var(--gold); color:var(--gold)}
 
@@ -105,7 +107,7 @@
       fill:none; stroke:var(--gold); stroke-width:2.4; opacity:0;
       filter:url(#glow); animation:ignite 1.3s ease 1.45s forwards, breathe 5.5s ease-in-out 2.8s infinite;
     }
-    .ray{fill:none; stroke:rgba(242,177,52,.52); stroke-width:1.2; stroke-dasharray:3 5; opacity:0; animation:fadein 1s ease 2.05s forwards}
+    .ray{fill:none; stroke:rgba(255,235,59,.52); stroke-width:1.2; stroke-dasharray:3 5; opacity:0; animation:fadein 1s ease 2.05s forwards}
     .meet circle{}
     .meet{opacity:0; animation:fadein .7s ease 2.5s forwards}
     .proj{opacity:0; animation:fadein .8s ease 2.35s forwards}
@@ -131,7 +133,7 @@
     .band p.intro{color:var(--bone-dim); max-width:60ch; font-size:1.05rem; margin:0 0 2.2rem}
 
     /* honesty band */
-    .honesty{background:linear-gradient(180deg,rgba(242,177,52,.05),transparent 70%)}
+    .honesty{background:linear-gradient(180deg,rgba(255,235,59,.05),transparent 70%)}
     .honesty h2{max-width:18ch}
     .honesty .intro{max-width:64ch}
     .tier-legend{display:flex; flex-wrap:wrap; gap:.6rem; margin:1.6rem 0 1.8rem}
@@ -152,7 +154,9 @@
     .tri.product .gly{font-style:italic}
 
     /* spine + levels grid */
-    .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:1px; background:var(--line-soft); border:1px solid var(--line-soft); border-radius:8px; overflow:hidden}
+    /* triaxial: 3 columns as the structural unit (Skyzai) */
+    .grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line-soft); border:1px solid var(--line-soft); border-radius:8px; overflow:hidden}
+    @media(max-width:680px){ .grid{grid-template-columns:1fr} }
     .cell{background:var(--panel); padding:1.3rem 1.25rem; transition:.22s; position:relative}
     .cell:hover{background:var(--panel-2)}
     .cell .num{font-family:var(--mono); font-size:.74rem; color:var(--gold); letter-spacing:.06em}
@@ -227,7 +231,7 @@
             </radialGradient>
             <linearGradient id="poles" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stop-color="rgba(188,212,242,.35)"/>
-              <stop offset="48%" stop-color="rgba(242,177,52,.10)"/>
+              <stop offset="48%" stop-color="rgba(255,235,59,.10)"/>
               <stop offset="100%" stop-color="rgba(124,112,173,.30)"/>
             </linearGradient>
             <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
@@ -261,8 +265,8 @@
           <line class="ray" x1="210" y1="340" x2="320" y2="79"/>
           <!-- the meeting point on the sphere -->
           <g class="meet">
-            <circle cx="290" cy="150" r="8" fill="none" stroke="#ffd877" stroke-width="1" opacity=".5"/>
-            <circle cx="290" cy="150" r="3.6" fill="#ffd877"/>
+            <circle cx="290" cy="150" r="8" fill="none" stroke="#FFF176" stroke-width="1" opacity=".5"/>
+            <circle cx="290" cy="150" r="3.6" fill="#FFF176"/>
           </g>
 
           <!-- pole labels (the two projection centres) -->
@@ -272,12 +276,12 @@
 
           <!-- dual coordinate endpoints -->
           <g class="proj">
-            <circle cx="440" cy="319" r="3" fill="#f2b134"/>
+            <circle cx="440" cy="319" r="3" fill="#FFEB3B"/>
             <text x="434" y="316" text-anchor="end">φ = cot θ⁄2</text>
             <text x="434" y="330" text-anchor="end" style="font-size:9.5px; fill:var(--bone-faint)">from ∞ ↓</text>
           </g>
           <g class="proj">
-            <circle cx="320" cy="79" r="3" fill="#f2b134"/>
+            <circle cx="320" cy="79" r="3" fill="#FFEB3B"/>
             <text x="330" y="76" text-anchor="start">ν = tan θ⁄2</text>
             <text x="330" y="90" text-anchor="start" style="font-size:9.5px; fill:var(--bone-faint)">from 0 ↑</text>
           </g>

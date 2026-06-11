@@ -1,34 +1,39 @@
 :root {
-  --bg: #000000;
+  /* Skyzai brand — near-black, signature yellow #FFEB3B, blue #2196F3 */
+  --bg: #050505;
   --surface: #0A0A0A;
-  --border: #1F1F1F;
-  --text: #FFFFFF;
-  --text-muted: #A1A1A1;
-  --accent: #E5E5E5;
-  --gold: #C9A84C;
-  --teal: #3A7A6E;
+  --border: #2A2A2A;
+  --text: #F3F4F6;
+  --text-muted: #9CA3AF;
+  --accent: #F3F4F6;
+  --gold: #FFEB3B;
+  --teal: #2196F3;
 
-  --font-heading: 'Playfair Display', Georgia, serif;
-  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  /* Skyzai typography — geometric sans (Google Sans where installed) + system fallback; no external fetch (gate-safe) */
+  --font-heading: 'Google Sans Flex', 'Google Sans Text', 'Google Sans', 'Product Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI Variable Display', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Google Sans Flex', 'Google Sans Text', 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
 
+  /* φ = 1.618 spacing scale, snapped to a 4px grid (Skyzai structural law) */
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 16px;
-  --space-4: 32px;
-  --space-5: 64px;
-  --space-6: 96px;
+  --space-4: 24px;
+  --space-5: 48px;
+  --space-6: 80px;
   --space-7: 128px;
+  --phi: 1.618;
 }
 
 :root[data-theme="light"] {
-  --bg: #FFFFFF;
-  --surface: #F6F6F6;
-  --border: #E5E5E5;
-  --text: #050505;
-  --text-muted: #666666;
-  --accent: #050505;
-  --gold: #6E4F06;
-  --teal: #1F6F63;
+  /* Skyzai light theme — warm cream */
+  --bg: #FDFAF4;
+  --surface: #FAF7F0;
+  --border: #D6CFBF;
+  --text: #18160E;
+  --text-muted: #4A4438;
+  --accent: #18160E;
+  --gold: #92650A;
+  --teal: #1565C0;
 }
 
 /* Base */
