@@ -300,7 +300,7 @@ The boundary itself is the degenerate case: a photon (m = 0) sits on no hyperbol
 
 ### 8.3 The Boundary of the Claim
 
-What is **[A]**: the coordinate identities above — the kernel's three lines *are* the three relations of relativistic kinematics in light-cone coordinates. What is **not** claimed: that the kernel *explains* relativity, that coherence and viability *are* E ± pc, or that the identification licenses any physical prediction beyond what special relativity already makes. The generalization of the multiplicative geometry beyond kinematics remains **[S/I]** — and the program's own R6 test records a register (empowerment) where it *fails*. The µ-limit/consciousness conjecture stays fenced at **[C]** (ledger row C-µ).
+What is **[A]**: the coordinate identities above — the kernel's three lines *are* the three relations of relativistic kinematics in light-cone coordinates. What is **not** claimed: that the kernel *explains* relativity, that coherence and viability *are* E ± pc, or that the identification licenses any physical prediction beyond what special relativity already makes. One register-fusion is forbidden outright: under the identification, `φ ≷ 1` distinguishes **approaching from receding motion** — a kinematic fact with no moral content — so the framework's God/Demon move-quadrants (the game register) must **never** be read through it as a moral classification of motion. The generalization of the multiplicative geometry beyond kinematics remains **[S/I]** — and the program's own R6 test records a register (empowerment) where it *fails*. The µ-limit/consciousness conjecture stays fenced at **[C]** (ledger row C-µ).
 
 ### 8.4 Why Two Carriers Matter
 

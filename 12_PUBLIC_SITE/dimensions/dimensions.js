@@ -668,8 +668,8 @@ function buildScene(mode, scene) {
     // boundary. As ψ rotates while θ sweeps, both landings SPIRAL through the
     // quadrants — reciprocal radii, crossing their unit circles together.
     const r = 1.0;
-    const N = new THREE.Vector3(0, r, 0);                            // ○ ∞ — Brahmā's station: the top plane touches here
-    const S = new THREE.Vector3(0, -r, 0);                           // • 0 — Śiva's station: the floor touches here
+    const N = new THREE.Vector3(0, r, 0);                            // ○ ∞ — the top plane touches here (Brahmā's sign)
+    const S = new THREE.Vector3(0, -r, 0);                           // • 0 — the floor touches here (Śiva's sign)
     const GOD = 0xffeb3b, DEMON = 0xd23b3b;
     const U = 2 * r;                                                 // unit-circle radius on a tangent plane
 
@@ -697,11 +697,13 @@ function buildScene(mode, scene) {
     [[0.9, 0.9, GOD], [-0.9, 0.9, GOD], [-2.2, -2.2, DEMON], [2.2, -2.2, DEMON]]
       .forEach((o) => root.add(makeMarker(new THREE.Vector3(o[0], r, o[1]), o[2], 0.06)));
 
-    // THE TITANS ARE THE STATIONS OF THE GEOMETRY ITSELF — proto-reality,
-    // the {0, 1, ∞} scaffold the game is played on: Śiva • = 0 (the floor
-    // touch, S above), Brahmā ○ = ∞ (the top touch, N above), and Viṣṇu ⊙ = 1
-    // — the centre, with the gold equator as the circle of his own glyph.
-    root.add(makeMarker(new THREE.Vector3(0, 0, 0), 0xffeb3b, 0.055)); // ⊙ Viṣṇu — the One at the centre
+    // THE TRANSCENDENTALS ARE THE STATIONS OF THE GEOMETRY ITSELF — the
+    // {0, 1, ∞} scaffold the game is played on: • 0 at the floor touch,
+    // ○ ∞ at the top touch, ⊙ 1 at the centre (the gold equator is the
+    // circle of the ⊙ glyph). The Titans READ these signs from latitudes —
+    // Śiva reads •, Brahmā reads ○, Viṣṇu reads ⊙ — they are not seated at
+    // the poles (the pole ROWS are L0 Kāla / L∞ Trimūrti per the nine-row).
+    root.add(makeMarker(new THREE.Vector3(0, 0, 0), 0xffeb3b, 0.055)); // ⊙ — the One at the centre (Viṣṇu's sign)
 
     const pMark = makeMarker(new THREE.Vector3(r, 0, 0), 0xffffff, 0.085); // P — where the two rays meet
     const rayDown = line([N, new THREE.Vector3(U, -r, 0)], GOD, 0.8);  // ∞ → P → floor: lands at 2r·φ
@@ -752,7 +754,7 @@ function buildScene(mode, scene) {
         "DUAL STEREOGRAPHIC PROJECTION · the two rays meet at P\n" +
         "θ = " + (theta * 180 / Math.PI).toFixed(0) + "°   φ = " + phi.toFixed(2) + "   ν = " + nu.toFixed(2) + "   φ·ν = 1 (mass-shell)   E/mc² = (φ+ν)/2 = " + ((phi + nu) / 2).toFixed(2) + "\n" +
         "quadrant " + q + " · " + opName + " · " + (isGod ? "GOD-move (φ > 1)" : "DEMON-move (φ < 1)") + "\n" +
-        "Titans {0, 1, ∞} — Śiva • the 0-touch · Viṣṇu ⊙ the centre · Brahmā ○ the ∞-touch";
+        "the stage {0, 1, ∞} — • 0 floor-touch (Śiva's sign) · ⊙ 1 centre (Viṣṇu's) · ○ ∞ top-touch (Brahmā's)";
     });
   }
 
