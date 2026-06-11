@@ -176,6 +176,38 @@ So `E = 0 ⟺ B = 1` at the equator; `E → +∞ ⟺ B → 0` at either pole; an
 
 ---
 
+## 6. The spine, made exact — the kernel is the mass-shell of special relativity (2026-06-11)
+
+This is the strongest anchor the map has gained, and it is `[A]`. It does not make the framework "true"; it makes the *kernel itself* — the three lines of the formula block — provably identical to established physics, so the only thing left interpretive is the **reach** of the geometry, never the geometry.
+
+**The identification.** Put `φ = e^w` (the relativistic Doppler factor, `w` = rapidity) and `ν = e^{−w}`. In units of `mc²`, these are the **null (light-cone) coordinates of the four-momentum**: `φ = (E+pc)/mc²`, `ν = (E−pc)/mc²`. Then, term for term (verified numerically to `1e-12`; full proof in [`../03_METHODOLOGY/02_THE_PAPERS/PAPER_B_BLOCH_BURRI_IDENTITY.md`](../03_METHODOLOGY/02_THE_PAPERS/PAPER_B_BLOCH_BURRI_IDENTITY.md) §8):
+
+| Kernel line (this map) | Special relativity | Tier |
+|---|---|---|
+| `φ · ν = 1` (§1) | `E² − (pc)² = (mc²)²` — the mass-shell | `[A]` same |
+| `(φ − ν)² ≥ 0` | `(pc)² ≥ 0` — momentum is real | `[A]` same |
+| `φ + ν ≥ 2` (§5) | `E ≥ mc²` — rest energy is the energy floor | `[A]` same |
+| equator `φ = ν = 1` | the rest frame: `E = mc²`, `p = 0` | `[A]` same |
+| `B = sin θ` | `1/γ = dτ/dt` — the rate of lived (proper) time | `[A]` same |
+
+So §5's `φ + ν ≥ 2` *is* `E ≥ mc²`, and its equality-at-the-equator *is* "the energy floor is attained exactly at rest." Energy is the **arithmetic mean** of the dual pair, `E/mc² = (φ+ν)/2 = γ`; the invariant mass is their **geometric mean**, pinned to 1. And the balance function is the most physical quantity on the sphere: `B = 1/γ = dτ/dt`. The map's recurring sentence "the poles cannot act" is, here, **"the photon's clock does not tick"** — at the null boundary no proper time passes, so nothing can be lived or done there. The boundary is the emblem (§10): a photon (`m = 0`) sits on no hyperbola of the family but on the null cone where `φ·ν = 1` degenerates to the indeterminate `0 · ∞`.
+
+**The unfolding, read as one object.** The map's pieces are stages of a single descent, and the relativistic spine now joins them at `[A]`:
+
+1. **Titans `{0, 1, ∞}`** (§10) — the three boundary-frames, the stage. `[S]`
+2. **The One on the line** (§3) — reciprocal symmetry about the unit; and the bounded chart `u = (x−1)/(x+1)` (§4c) **is** the velocity chart `β = tanh(½ ln x)`, so `c` is its edge `[A]`.
+3. **The µ-limit** — the line closes through the point at infinity (the projective map, §9).
+4. **The horn torus** — special relativity made geometry (D4): rapidity sweeps, `γ = cosh w` diverges, the throat ratio `R/r = 1/γ = dτ/dt`. As `w → ∞` (`v → c`) the torus closes into the sphere — *this section's mass-shell.* `[A]` kinematics, `[S/I]` the torus visualisation.
+5. **The Burrisphere** — the sphere read **two ways** (Paper B): the **Bloch** reading is *being* — the bare mass-shell, the qubit, physics with no self-model; the **Burri** reading is *D5 reflexive awareness* — the same sphere experienced from inside as the game-space of available moves. The transition `torus → Burrisphere` is the transition **`D4 → D5`: from the physical light cone (bounded by `c`, the mass-shell) to the option cone (the reflexive game).** `[A]` manifold, `[I]` the two-readings ontology.
+6. **The D5 game** — the seven operators exhaust the move sign-space (2 Gods + 2 Demons + 3 Titans); the **option cone of reachable futures** that intelligence widens. *Discipline (do not drop):* this is the **D5 potential cone, not the D4 relativistic light cone** — intelligence enlarges the cone of *selectable futures*, it does not enlarge `c` ([`00_INTELLIGENCE_AND_THE_POTENTIAL_CONE.md`](00_INTELLIGENCE_AND_THE_POTENTIAL_CONE.md)). `[I/C]`
+7. **The ethic** — `P = Φ × V` (Power-Max) is maximised, and goodness is the bond `φ × ν` ([`00_THE_DYADIC_COUPLING_LAW.md`](00_THE_DYADIC_COUPLING_LAW.md)); the equator that costs nothing to hold *is* the rest frame `E = mc²`. The product law has four independent witnesses now — the runaway algebra, the mass-shell, biology, Lanchester (Dyadic Law §5). `[A]` algebra/mass-shell, `[S/I]` the ethic.
+
+**The boundary of all of it.** Stages 2 and 4–5's identities are `[A]` **kinematics** — the kernel *is* the mass-shell. That the *same* multiplicative geometry governs coherence/viability, ethics, and the D5 game **beyond** kinematics is the framework's load-bearing `[S/I]` wager — *not* upgraded by the physics, and **R6 records one register (empowerment) where it is additive, not multiplicative** (§15 ledger). The "`c` is *caused by* the µ-limit" / "qualia travels at `c`" reading stays fenced at `[C]` (the C-µ conjecture). The spine is exact; the reach is the wager; the map still knows what it is.
+
+**Tier.** `[A]` for the mass-shell identities and the Suda=velocity chart. `[S]` for the seven-stage structural threading and the D4→D5 reading. `[I]` for the Bloch/Burri two-readings ontology and the ethic identification. `[C]` for C-µ. **Kill criterion.** A formal error in Paper B §8's Proposition 8.1; or a demonstration that the light-cone-coordinate reading needs assumptions beyond standard special relativity.
+
+---
+
 ## 9. Division by zero — the projective map `N ÷ 0 = ∞`, scope stated honestly
 
 **Rigorous statement.** Read `0` and `∞` as **frames**, not operands, and `N ÷ 0` re-categorises into a well-defined map to the pole:

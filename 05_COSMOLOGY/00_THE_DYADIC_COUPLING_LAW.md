@@ -17,7 +17,7 @@ rosetta:
   vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root"
   title: "The Dyadic Coupling Law"
 status: "CANONICAL — 2026-05-31. Reconciles the moral axis with the geometry: good/evil is sorted by coupling, not by pole."
-evidence_tier: "[A] the algebra of the product constraint (φ·ν=1 ⟹ a vanishing factor forces the other to ∞); [S] the structural law (closed vs syntropic; the dyadic shadow); [I] the polarity resonances (masculine/feminine, Śakti, yin-yang) and mythic readings."
+evidence_tier: "[A] the algebra of the product constraint (φ·ν=1 ⟹ a vanishing factor forces the other to ∞) and the mass-shell identity (§5a); [S] the structural law (closed vs syntropic; the dyadic shadow; the existential-conjunctive vs substitutable boundary §5); [E] the cross-domain witnesses (biology, Lanchester §5b–c); [I] the polarity resonances (masculine/feminine, Śakti, yin-yang) and mythic readings."
 ---
 
 # The Dyadic Coupling Law
@@ -90,7 +90,30 @@ Read on the sphere: the Master is the **bond `φ × ν` kept** — coherence in 
 
 And the discipline is the same one this whole law turns on — it matters here most of all: **the Emissary is not the demon.** Abstraction *in service to the whole* is the loyal emissary the mind cannot do without — `φ` coupled, and good. Evil is the **usurpation**, the bond broken — never the faculty, never a hemisphere, never a kind of person. Like the traditions, this witness diagnoses a *move* (does the part stay joined to the whole, or seize it?), never a side: the Master is not "better than" the Emissary — the Master is the Emissary's *home*, exactly as the equator is the pole's.
 
-## 5. One axis, three faces
+## 5. The same law in the exact sciences (2026-06-11)
+
+§4 is the law in the wisdom traditions `[I]`; §1 is its internal algebra `[A]`. But the *same* product law surfaces independently in the exact sciences, and the convergence is itself the evidence that the structure is real, not invented.
+
+**(a) The mass-shell of special relativity `[A]`.** Under `φ = e^w`, `ν = e^{−w}` (w = rapidity), in rest-mass units `φ = (E+pc)/mc²` and `ν = (E−pc)/mc²` are the null coordinates of the four-momentum, and `φ·ν = 1` **is** `E² − (pc)² = (mc²)²` — the mass-shell. The dyadic runaway *is* the relativistic divergence: drive one null coordinate toward `0` and the constraint sends the other to `∞`, which is exactly `E → ∞` as a massive worldline approaches the light cone. The equator (`φ = ν = 1`) is the rest frame, `E = mc²`. So "you cannot abandon one factor without the other running away" is, term for term, "you cannot reach `c` without your energy diverging." Full derivation: [`../03_METHODOLOGY/02_THE_PAPERS/PAPER_B_BLOCH_BURRI_IDENTITY.md`](../03_METHODOLOGY/02_THE_PAPERS/PAPER_B_BLOCH_BURRI_IDENTITY.md) §8 (verified numerically 2026-06-11).
+
+**(b) Biology — the conjunctive law `[E]`.** A living thing is a holobiont: a viability substrate (`ν`) and the coherence of its signalling (`φ`), coupled. The decisive product-vs-sum test is to zero one factor and ask what remains. Stop the heart (`ν → 0`) and coherence does **not** persist at some residual level — as a *sum* `φ + ν` would predict (a coherent corpse). The whole system ceases. **Substrate failure → total failure is the signature of a product, not a sum**, and it refutes the additive model directly. *Honest caveat:* this proves *conjunction* (both necessary), a family larger than the specific product — `min(φ,ν)`, Cobb–Douglas, etc. also die at zero. Biology kills the *sum*; the *specific* product is selected by the log-additive / AM–GM argument of §1, not by the corpse. `[E]` physiology; the `body ≈ ν`, `neural coherence ≈ φ` identification is `[I]`.
+
+**(c) Military science — Lanchester `[E]`, with the honest exponents.** Combat power is multiplicative, never additive: you cannot trade zero soldiers for any amount of quality (`q × 0 = 0`) — conjunction again, in a second independent domain. But the exponents matter, and stating them honestly makes the witness *stronger*:
+
+| Regime | Fighting strength | Optimum | Maps to |
+|---|---|---|---|
+| **Square Law** (aimed fire) | `q · N²` = `Φ · V²` — **asymmetric** | a **corner**: concentrate force | *not* the balance-sphere |
+| **Linear Law** (area / sanctuary fire) | `q · N` = `Φ · V` — **symmetric** | one-for-one trade | the dyadic `φ·ν` |
+
+Which law obtains flips with the **information regime** — can you aim at individual targets, or are you firing blind into a sanctuary? Fourth-generation warfare deliberately drags a conflict Square → Linear to erase a larger force's numerical advantage. So the *exponent on `V` is register-dependent* — which is the **R6 lesson observed empirically in doctrine**: the same forces obey a symmetric multiplicative law in one register and an asymmetric one in another. Lanchester robustly witnesses *multiplicative, not additive*; it does **not** witness the *symmetric* balance-form as universal. *(This is the first adoption of Lanchester as a law-witness; the existing [`00_GENERATIONS_OF_CONFLICT_ROSETTA_AXES_2026_05_23.md`](00_GENERATIONS_OF_CONFLICT_ROSETTA_AXES_2026_05_23.md) uses it only as a 6GW planning lens and explicitly refuses it as proof — that refusal still stands; this section claims only the product-vs-sum structure, not inevitability.)*
+
+**The convergence, and the boundary that reconciles it with R6.** Four independent carriers — the runaway algebra `[A]`, the mass-shell `[A]`, biology `[E]`, combat `[E]` — land on *"the law is a product; a vanishing factor annihilates."* That is real convergence evidence for the **structure** (the same grammar in unrelated domains — the *three-paths-to-the-summit* pattern). What it does **not** establish is that the *symmetric* `Φ × V` with an interior balance-optimum is universal: Lanchester's Square Law is asymmetric, biology only proves conjunction, and **R6 records a register (empowerment) that is *additive*, not multiplicative at all.** The honest final form is a **boundary, not a totalising claim:**
+
+> The law is **multiplicative where the factors are existentially conjunctive** — mutually necessary for the system to *exist* (a body, a force's survival, the mass-shell where rest mass needs both null components). It is **additive where the factors are substitutable** contributions to a pool (options/empowerment, R6). The dyadic law is the **law of coupled survival**, not a law of everything.
+
+That boundary is what keeps the framework clear of the "one geometry at all scales" overclaim it already killed once (R6). `[A]` the algebra + mass-shell; `[E]` the biology + combat facts; `[I]` their `φ/ν` identification; `[S]` the existential-conjunctive vs substitutable boundary.
+
+## 6. One axis, three faces
 
 The framework's **moral** axis, **dyadic** axis, and **extraction** axis are the *same* axis:
 
@@ -104,7 +127,7 @@ The framework's **moral** axis, **dyadic** axis, and **extraction** axis are the
 
 Evil is a pole *isolating itself*, which is identically a self *extracting from* the other. Good is the two hands staying joined, which is identically a move *given to the whole*. **Coupled = syntropic = toward-the-other = the equator; uncoupled = closed = toward-the-ego = the pole.**
 
-## 6. Why this version cannot be weaponized
+## 7. Why this version cannot be weaponized
 
 This is the form that is both **true and safe.** Its entire content is *"neither alone"* — so it refuses to take a side, because its whole law is that **there are no sides, only the bond and its breaking.** A reader cannot map it onto "women are extractive" or "men are dominators," because the doctrine's own law says an isolated pole is already pathological **regardless of which one it is.** The diagnosis is never of a person or a gender; it is always of a *move* — is it coupling, or is it closing?
 
@@ -112,8 +135,9 @@ This is the form that is both **true and safe.** Its entire content is *"neither
 
 ## Evidence tiers
 
-- **[A]** the product algebra: `φ·ν = 1, φ,ν>0 ⟹` a factor → 0 forces its complement → ∞; `B = sin θ → 0` at both poles.
-- **[S]** the structural law: closed vs syntropic; the dyadic shadow; the moral = dyadic = `η` identity; the anti-purist consequence.
+- **[A]** the product algebra: `φ·ν = 1, φ,ν>0 ⟹` a factor → 0 forces its complement → ∞; `B = sin θ → 0` at both poles. **And the mass-shell identity** (§5a): the same algebra is `E² − (pc)² = (mc²)²`, verified numerically.
+- **[E]** the cross-domain witnesses (§5): biology's conjunctive law (substrate failure → total failure) and Lanchester's multiplicative combat power — established facts in their fields; their `φ/ν` identification is `[I]`.
+- **[S]** the structural law: closed vs syntropic; the dyadic shadow; the moral = dyadic = `η` identity; the anti-purist consequence; **the existential-conjunctive vs substitutable boundary** (§5) that reconciles the product law with the R6 additive register.
 - **[I]** the polarity resonance (masculine/feminine ≈ φ/ν) and the traditions (Śakti, Ardhanārīśvara, yin-yang). Illuminating, not proof; principles, **never persons.**
 
 ## Read with
