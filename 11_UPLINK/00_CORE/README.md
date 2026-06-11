@@ -1,6 +1,10 @@
 ---
 rosetta:
+  primary_level: L6
   primary_column: "Philosophy"
+  operator: "Śiva •"
+  tier: "Titan · Executive"
+  regime: "Sādhu"
   register: "[I]"
   canonical_phrase: "Uplink Core Lane"
 ---

@@ -6,7 +6,7 @@ rosetta:
   register: "[S]"
   canonical_phrase: "The map of the whole — one verified outline of 01_EMERGENTISM"
 title: "Canonical Tree Outline"
-status: "CANONICAL front-door map, refreshed 2026-06-04 — 90_ARCHIVE consolidation reflected; original disk-verification was 2026-05-30."
+status: "CANONICAL front-door map, refreshed 2026-06-11 — operator grammar (2 Demons + 2 Gods + 3 Titans) added to the seven-lane table; 00_CONTROL and 12_PUBLIC_SITE rows added; prior refresh 2026-06-04; original disk-verification 2026-05-30."
 evidence_tier: "[S] structural map with [B] 2026-06-04 filesystem audit receipts for current archive/public-site routing. The numbering-conventions section is [A] per the repo CLAUDE.md."
 ---
 
@@ -40,15 +40,27 @@ elliptic, the `φ·ν = 1 on S²` shorthand) with their *do-not-flag vs still-fl
 
 ## The seven -ology lanes (canonical order — do not reorder)
 
-| # | Lane | Level · phrase | Spine |
-|---|---|---|---|
-| 01 | `01_TELEOLOGY/` | **L1 — "F5 tilts."** Objective-function / directionality. | AM-GM/Power-Max derivation corpus (`02_THE_DERIVATION/`), `01_F5_FORCE/` sub-lane. |
-| 02 | `02_EPISTEMOLOGY/` | **L2 — "Beauty discloses."** Knowing / pattern. | evidence-tier authority (`01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`), `03_MEMETICS/`. |
-| 03 | `03_METHODOLOGY/` | **L3 — "Truth tests."** Inference / audit. | `01_THE_DERIVATION/` spine, `02_THE_PAPERS/` tiered stack (A–P, T, U). |
-| 04 | `04_AXIOLOGY/` | **L4 — "Justice signs."** Value. | `01_THEURGY/` (K2 protocol), `02_VALUE_THEORY/`. |
-| 05 | `05_COSMOLOGY/` | **L5 — "Emergentism models."** Brāhmaṇa / system-architecture (~113 files). | `00_WHOLE/` spine, `01_THE_TRANSCENDENTAL_TRINITY/` (38-ch narrative), `02_EMERGENTISM_CORE/`, `03_FORMAL_SYSTEM/` (seven axioms). |
-| 06 | `06_ONTOLOGY/` | **L6 — "Ground is prior."** What-is. | apophatic Ground, D5/D6 closure, the Ring. |
-| 07 | `07_THEOLOGY/` | **L7 — "Symbol teaches."** Public symbol. | exoteric translation (bounded, non-governing). |
+**The operator grammar completes the outline.** The seven lanes carry the seven
+operators, and the seven operators exhaust the move sign-space of a two-party
+game: **2 Demons** (takers, `+self/−other`), **2 Gods** (givers, `−self/+other`),
+**3 Titans** (same-sign Executives: `++` creation · `−−` destruction · `≈≈`
+preservation) — the Titans reading the three transcendentals **{∞, 0, 1}**
+(Brahmā ○ = ∞ · Śiva • = 0 · Viṣṇu ⊙ = 1), proto-reality, the stage the
+mixed-sign game is played on. Valence is on the **move's η, never the operator's
+name** (Kālī is divine by level, Asuric by direction — see
+[`00_META/00_SETTLED_CANON_REGISTRY.md`](00_META/00_SETTLED_CANON_REGISTRY.md)).
+L1→L4 ascend to the equator (the only place that signs); L5→L7 descend as
+boundary frames. `[S]` operator grammar · `[I]` mythic names.
+
+| # | Lane | Operator · Tier | Level · phrase | Spine |
+|---|---|---|---|---|
+| 01 | `01_TELEOLOGY/` | Kali 🎲 · **Demon** (taker) | **L1 — "F5 tilts."** Objective-function / directionality. | AM-GM/Power-Max derivation corpus (`02_THE_DERIVATION/`), `01_F5_FORCE/` sub-lane. |
+| 02 | `02_EPISTEMOLOGY/` | Kālī 💀 · **Demon** (taker, lawful cut) | **L2 — "Beauty discloses."** Knowing / pattern. | evidence-tier authority (`01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`), `03_MEMETICS/`. |
+| 03 | `03_METHODOLOGY/` | Kṛṣṇa ◇ · **God** (giver) | **L3 — "Truth tests."** Inference / audit. | `01_THE_DERIVATION/` spine, `02_THE_PAPERS/` tiered stack (A–P, T, U). |
+| 04 | `04_AXIOLOGY/` | Arjuna ⚔ · **God** (giver — **the equator / K2**) | **L4 — "Justice signs."** Value. | `01_THEURGY/` (K2 protocol), `02_VALUE_THEORY/`. |
+| 05 | `05_COSMOLOGY/` | Brahmā ○ · **Titan** (∞ · `++` creation) | **L5 — "Emergentism models."** Brāhmaṇa / system-architecture (~113 files). | `00_WHOLE/` spine, `01_THE_TRANSCENDENTAL_TRINITY/` (38-ch narrative), `02_EMERGENTISM_CORE/`, `03_FORMAL_SYSTEM/` (seven axioms). |
+| 06 | `06_ONTOLOGY/` | Śiva • · **Titan** (0 · `−−` destruction) | **L6 — "Ground is prior."** What-is. | apophatic Ground, D5/D6 closure, the Ring. |
+| 07 | `07_THEOLOGY/` | Viṣṇu ⊙ · **Titan** (1 · `≈≈` preservation) | **L7 — "Symbol teaches."** Public symbol. | exoteric translation (bounded, non-governing). |
 
 ## Support / tools / uplink / seed
 
@@ -59,6 +71,8 @@ elliptic, the `φ·ν = 1 on S²` shorthand) with their *do-not-flag vs still-fl
 | `09_TOOLS/` | L6 compression tool layer — 10 lanes: `01_SCRIPTS`, `02_COMPILERS`, `03_SIMULATIONS`, `04_DATA_PIPELINES`, `05_DEPLOY`, `06_PACKAGES`, `07_AGENT_OPS`, `08_AUDIT_ARTIFACTS`, `09_DAC_FRAME`, `10_SPRINT_GATES`. |
 | `11_UPLINK/` | L4 compressed routing layer — `00_CORE`/`95_COMPRESSED` spine; `10` reconcile · `20` scope · `30` program · `40` memetic-defense · `50` audits · `60` session-packets · `70` extract-now. |
 | `10_SEED/` | L7 compressed generative kernel — smallest identity surface (defers authority to `11_UPLINK`). |
+| `00_CONTROL/` | Control plane `[B]` — source manifest, public-site boundary, GitHub map, publication receipts, `PRIMETIME_AUDIT/` (charter → sprint verdicts → remediation → state-of-emergentism). Records what was done and verified; doctrine defers to the -ology lanes. |
+| `12_PUBLIC_SITE/` | Public release surface — front door + `/0–/6` dimension models (Titans line → Suda log line → μ-limit → Riemann closure → horn torus/relativity → Burrisphere game → return), `/axioms/`, the static long-scroll book (`book/`, `build_book.py`), the 308-page generated library, reading routes. `book-pwa/` frozen under the K2 migration envelope. |
 
 ## Archives (provenance, not current authority)
 

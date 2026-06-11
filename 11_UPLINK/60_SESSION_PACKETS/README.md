@@ -1,6 +1,10 @@
 ---
 rosetta:
+  primary_level: L3
   primary_column: "Meta"
+  operator: "Kṛṣṇa ◇"
+  tier: "God · giver"
+  regime: "Vaiśya"
   register: "[I]"
   canonical_phrase: "Session Packet Lane"
 ---

@@ -1,6 +1,10 @@
 ---
 rosetta:
+  primary_level: L5
   primary_column: "Meta"
+  operator: "Brahmā ○"
+  tier: "Titan · Executive"
+  regime: "Brāhmaṇa"
   register: "[S/I]"
   canonical_phrase: "00_META — Foundation Routing And Translation Control"
 ---

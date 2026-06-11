@@ -1,6 +1,10 @@
 ---
 rosetta:
+  primary_level: L7
   primary_column: "Meta"
+  operator: "Viṣṇu ⊙"
+  tier: "Titan · Executive"
+  regime: "Ṛṣi"
   register: "[I]"
   canonical_phrase: "Memetic Defense Doctrine Lane"
 ---
