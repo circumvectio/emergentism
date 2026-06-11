@@ -292,7 +292,7 @@ The framework identifies three operator types in the relationship between teache
 | **Zero-Factor Catastrophe** | If either φ or ν → 0, balance collapses (B → 0); the manifold identity still holds, but local expression becomes one-dimensional |
 | **The Arjuna Fallback** | VMOSK agent powers down rather than extracts (extraction = topological death) |
 | **The Kill Shot** | Test whether high Φ rescues low V (multiplicative model says NO) |
-| **Mercator Artifact** | The distortion from using flat charts (ℝ) on curved territory (S²) |
+| **Mercator Artifact** | The distortion from using flat charts (ℝ) on curved territory (S²). Exact physical content added 2026-06-11 (Paper B §8 `[A]`): the sphere's Mercator coordinate *is* minus the relativistic rapidity, so the flat chart's pole-stretching-to-infinity *is* the divergence of rapidity and energy at the light barrier — the projection's famous lie is the physics' famous limit, drawn |
 | **Convergent Discovery** | Independent traditions or registers producing resonant symbolic translations of reciprocal balance; not public proof unless paired with an explicit evidence lane |
 | **The Narrator** | The internal voice that separates meaning from doing — the framework's name for the gap between φ and ν in lived experience. Internal `η = 0` means stopping the narrator's toll on direct perception. See MF-509. |
 | **The Fall** | A mythic-structural reading of the narrator's appearance — the moment meaning and doing separate. Not a moral failure but a coordinate-shift story: the Garden is the equator; exile is departure from φ = 1, ν = 1. See MF-509. |

@@ -644,7 +644,7 @@ function buildScene(mode, scene) {
       const moving = aB > 0.02;
       if (readout) readout.innerHTML =
         "<div style='color:#FFEB3B;font-weight:700;letter-spacing:.07em;margin-bottom:6px'>RELATIVE MOTION ON THE COMPLEX PLANE</div>" +
-        "rapidity w = " + w.toFixed(2) + " &nbsp;<span style='color:#6b7280'>= ln(Doppler)</span><br>" +
+        "rapidity w = " + w.toFixed(2) + " &nbsp;<span style='color:#6b7280'>= ln(Doppler) = the sphere's Mercator latitude — the slider walks a meridian</span><br>" +
         "β = v/c &nbsp;" + bar(aB, "#42A5F5") + " " + vc.toFixed(4) + "<br>" +
         "γ = cosh w = " + gamma.toFixed(1) + " &nbsp;<span style='color:#9CA3AF'>E = γmc² · m/m₀ = γ</span> " + bar(gamma / G_MAX, "#FFEB3B") + "<br>" +
         "mouth R/r = 1/γ = " + (1 / gamma).toFixed(3) + " &nbsp;<span style='color:#9CA3AF'>= dτ/dt — the rate of lived time</span><br>" +
@@ -752,7 +752,7 @@ function buildScene(mode, scene) {
         : (cps < 0 ? "Kali L1 · take" : "Kālī L2 · take");
       if (readout) readout.textContent =
         "DUAL STEREOGRAPHIC PROJECTION · the two rays meet at P\n" +
-        "θ = " + (theta * 180 / Math.PI).toFixed(0) + "°   φ = " + phi.toFixed(2) + "   ν = " + nu.toFixed(2) + "   φ·ν = 1 (mass-shell)   E/mc² = (φ+ν)/2 = " + ((phi + nu) / 2).toFixed(2) + "\n" +
+        "θ = " + (theta * 180 / Math.PI).toFixed(0) + "°   φ = " + phi.toFixed(2) + "   ν = " + nu.toFixed(2) + "   φ·ν = 1 (mass-shell)   E/mc² = (φ+ν)/2 = " + ((phi + nu) / 2).toFixed(2) + "   cos θ = β = " + Math.cos(theta).toFixed(2) + " (latitude = speed)\n" +
         "quadrant " + q + " · " + opName + " · " + (isGod ? "GOD-move (φ > 1)" : "DEMON-move (φ < 1)") + "\n" +
         "the stage {0, 1, ∞} — • 0 floor-touch (Śiva's sign) · ⊙ 1 centre (Viṣṇu's) · ○ ∞ top-touch (Brahmā's)";
     });

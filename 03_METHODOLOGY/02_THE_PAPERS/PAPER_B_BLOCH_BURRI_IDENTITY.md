@@ -293,6 +293,11 @@ The Bloch reading shows the kernel on a compact carrier (the qubit's S²). There
 | The equator (φ = ν = 1) | The rest frame: E = mc², p = 0 | **Same** [A] |
 | The poles | The two null directions — the asymptotes of the hyperbola; light | **Same** [A] |
 | B = sin θ | 1/γ = dτ/dt — the rate of lived (proper) time | **Same** [A] |
+| cos θ | β = v/c — the height of the sphere-point **is** its speed | **Same** [A] |
+| cot θ | γβ = p/mc — momentum per rest-mass | **Same** [A] |
+| ln tan(θ/2) | −w — the Mercator coordinate **is** minus the rapidity | **Same** [A] |
+
+**The pointwise dictionary (added 2026-06-11, verified numerically).** These added rows sharpen Proposition 8.1: the sphere is, *point by point*, the **compactified velocity space** of special relativity — colatitude encodes speed (`cos θ = β`; equator = rest, poles = ±c), axial distance encodes the proper-time rate (`sin θ = 1/γ`), and the classic map projections are the classic velocity charts (stereographic ↔ Doppler factor; **Mercator ↔ rapidity**, where Einstein velocity-addition is equal Mercator steps; orthographic ↔ β). Two corollaries: (i) the framework's *Mercator Artifact* (the flat-chart distortion) acquires exact physical content — the pole-stretching of the flat map *is* the divergence of rapidity and energy at `c`; (ii) the **three Pythagorean means** of the dual pair are the three physical quantities — `HM(φ,ν) = B = dτ/dt`, `GM = 1` (the conserved unit), `AM = γ = E/mc²` — so the classical chain `HM ≤ GM ≤ AM` *is* `B ≤ 1 ≤ γ`, with equality iff at the equator. Combined with the group-level fact `PSL(2,ℂ) ≅ SO⁺(3,1)` (Penrose; already cited in the corpus), the identification is now closed at both levels: the sphere is velocity space pointwise, and its Möbius symmetries are the Lorentz boosts map-wise. [A] throughout; the kinematic/moral register fence of §8.3 applies unchanged.
 
 Two corollaries the framework already asserted in its own vocabulary, now grounded: "the equator is the only place that costs nothing to hold" is the rest frame as the energy minimum; "the poles cannot act" is **B → 0** as **the photon's clock does not tick** — at the null boundary no proper time passes, so nothing is lived there.
 

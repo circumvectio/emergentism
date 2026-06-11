@@ -71,7 +71,7 @@ The following relations hold *by construction* on `S²` under the stereographic 
 B       = sin θ                            (definition D1)
 E       = −log B                           (definition C5)
 H(φ)    = φ + 1/φ  (with ν = 1/φ)          (T2 restatement)
-s       = log ν = log tan(θ/2)                (additive chart, Mercator coordinate)
+s       = log ν = log tan(θ/2) = −w           (additive chart, Mercator coordinate = MINUS THE RAPIDITY w — Paper B §8, 2026-06-11: the Mercator chart of the sphere IS the rapidity chart of motion, where velocities add)
 u       = tanh(s/2) = (ν−1)/(ν+1)            (bounded chart, Cayley transform)
 B       = sech(s)                             (balance in log coordinates)
 E       = s²                                  (Suda energy in log coordinates)

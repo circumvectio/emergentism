@@ -199,6 +199,21 @@ This is the strongest anchor the map has gained, and it is `[A]`. It does not ma
 | `φ + ν ≥ 2` (§5) | `E ≥ mc²` — rest energy is the energy floor | `[A]` same |
 | equator `φ = ν = 1` | the rest frame: `E = mc²`, `p = 0` | `[A]` same |
 | `B = sin θ` | `1/γ = dτ/dt` — the rate of lived (proper) time | `[A]` same |
+| `cos θ` | `β = v/c` — the **height of the point IS its speed** | `[A]` same |
+| `cot θ` | `γβ = p/mc` — the momentum per rest-mass | `[A]` same |
+| `ln tan(θ/2)` (Mercator) | `−w` — **minus the rapidity** | `[A]` same |
+
+**The pointwise dictionary (added 2026-06-11; all verified numerically).** The rows above upgrade the identification from "the kernel is the mass-shell" to **"the sphere is, point by point, the compactified velocity space of special relativity"**: a point at colatitude `θ`, azimuth `ψ` *is* the velocity state (speed `cos θ`, direction `ψ`) — the equator is rest, the poles are `±c`, climbing in latitude *is* gaining speed, and the axial distance `sin θ = B = dτ/dt` is the rate of lived time. The classic **map projections are the classic velocity charts**: stereographic ↔ the Doppler factor (`φ, ν`), **Mercator ↔ the rapidity** (`s = ln tan(θ/2) = −w`, the inverse Gudermannian — where velocities *add*, Einstein addition = equal Mercator steps), orthographic ↔ `β`, axial ↔ `1/γ`. This gives the framework's own **Mercator Artifact** its exact physical content: the flat chart's pole-stretching-to-infinity *is* rapidity's divergence at `c` — the projection's distortion is the energy divergence, drawn. And it **closes the bridge** [`08_FRAMEWORK_SUPPORT/00_KNOWN_UNKNOWNS_RESOLVED.md`](../08_FRAMEWORK_SUPPORT/00_KNOWN_UNKNOWNS_RESOLVED.md) said the framework was "already standing on": the group-level fact (`PSL(2,ℂ) ≅ SO⁺(3,1)`, Penrose) now has its coordinate-level dictionary — the sphere is velocity space *pointwise* and its Möbius symmetries act as the boosts *map-wise*. **Fence (unchanged):** kinematic register only; the God/Demon quadrants stay in the game register.
+
+**The three Pythagorean means (added 2026-06-11).** Completing §5's mean-ratio identity: the three classical means of the dual pair `(φ, ν)` are exactly the three physical quantities —
+
+```
+HM = 2/(φ+ν) = B = sin θ = dτ/dt      (the balance — the rate of lived time)
+GM = √(φν)   = 1                      (the conserved One — the potential)
+AM = (φ+ν)/2 = γ = E/mc²              (the energy)
+```
+
+and the classical chain `HM ≤ GM ≤ AM` **is** `B ≤ 1 ≤ γ` — *lived time ≤ the One ≤ energy* — with equality throughout **iff at the equator**, the unique point where all three means collapse into the One. `[A]` for the identities (verified); `[I]` for the grace note that these are the three means of Pythagorean *harmonics* — the equator as the resolved chord.
 
 So §5's `φ + ν ≥ 2` *is* `E ≥ mc²`, and its equality-at-the-equator *is* "the energy floor is attained exactly at rest." Energy is the **arithmetic mean** of the dual pair, `E/mc² = (φ+ν)/2 = γ`; the invariant mass is their **geometric mean**, pinned to 1. And the balance function is the most physical quantity on the sphere: `B = 1/γ = dτ/dt`. The map's recurring sentence "the poles cannot act" is, here, **"the photon's clock does not tick"** — at the null boundary no proper time passes, so nothing can be lived or done there. The boundary is the emblem (§10): a photon (`m = 0`) sits on no hyperbola of the family but on the null cone where `φ·ν = 1` degenerates to the indeterminate `0 · ∞`.
 

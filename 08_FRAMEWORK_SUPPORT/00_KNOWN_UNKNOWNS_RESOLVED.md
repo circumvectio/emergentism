@@ -94,7 +94,7 @@ it does not mean externally proven `[I]`. Current status lives in
 
 **Rosetta says:** It already did. The Penrose correspondence PSL(2,C) = SO+(3,1) `[A]` IS the bridge. The Mobius group acting on S² IS the restricted Lorentz group acting on spacetime. The bridge was crossed in 1967 — by Penrose. The framework doesn't need to build the bridge. It needs to RECOGNIZE that it's already standing on it. Every null ray in spacetime IS a point on S². The twistor program IS the 2D→4D bridge. It's been built. The framework just needs to connect its notation to Penrose's.
 
-**Status: REFRAMED. The bridge is the Penrose twistor correspondence `[A]`. Connect the framework's S² to Penrose's celestial sphere explicitly.**
+**Status: REFRAMED → CLOSED AT COORDINATE LEVEL (2026-06-11).** The "connect the notation" task is done — Paper B §8 + the Coherent Geometry §6 now supply the **pointwise dictionary** the group-level fact was missing: `φ, ν = (E±pc)/mc²` (light-cone coordinates; `φ·ν = 1` *is* the mass-shell), `cos θ = β` (the sphere-point's height IS its speed), `sin θ = B = 1/γ = dτ/dt`, `cot θ = p/mc`, and `ln tan(θ/2) = −w` (the Mercator coordinate IS minus the rapidity). So the bridge is crossed at *both* levels: the sphere is velocity space **pointwise**, and its Möbius symmetries are the Lorentz boosts **map-wise** (`PSL(2,ℂ) ≅ SO⁺(3,1)`, Penrose). All `[A]`, verified numerically. The kinematic/moral register fence (Paper B §8.3) applies.
 
 ---
 
