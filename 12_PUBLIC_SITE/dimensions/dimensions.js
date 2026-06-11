@@ -475,21 +475,65 @@ function buildScene(mode, scene) {
     ], 0xffffff, 0.8));
   }
 
-  if (mode === "riemann") {
-    // Stereographic projection from the north pole (∞): the 45° ray through
-    // the equator point lands exactly ON the plane at radius 1 — the unit
-    // made visible. The ray ends at the plane; it does not overshoot.
-    const r = 1.35;
-    const N = new THREE.Vector3(0, r, 0);
-    const S = new THREE.Vector3(0, -r, 0);
-    const E = new THREE.Vector3(r, 0, 0); // equator point = its own projection
-    root.add(createGridPlane(4.6, 15));
-    root.add(createSphere(r, 0.32));
-    root.add(ring(r, 0xffffff, 1));
-    root.add(makeMarker(S, 0x707070, 0.08));
-    root.add(makeMarker(E, 0xffffff, 0.11));
-    root.add(makeMarker(N, 0xb8b8b8, 0.08));
-    root.add(line([N, E], 0xffffff, 0.95));
+  if (mode === "logline") {
+    // SUDA'S NUMBER LINE, READ IN LOG COORDINATES. s = log x maps the positive
+    // ray onto the whole line: 0 recedes to −∞ on the left, ∞ to +∞ on the
+    // right, and the ONE sits at the exact centre — the unique fixed point of
+    // inversion I(x) = 1/x, which in log coordinates is the mirror s ↦ −s.
+    // A live reciprocal pair (x, 1/x) folds through the One — their product is
+    // pinned to 1. The energy E = (ln x)² is the well whose unique minimum is
+    // the One. Three charts, one centre: x · s = log x · u = (x−1)/(x+1).
+    const SC = 0.62;                                  // scene units per log₂ step
+    const EXT = 3.4 * SC;
+    root.add(line([new THREE.Vector3(-EXT - 0.5, 0, 0), new THREE.Vector3(EXT + 0.5, 0, 0)], 0xffffff, 0.85));
+    for (let k = -3; k <= 3; k += 1) {                // ticks at x = 2^k — log-evenly spaced
+      root.add(line([new THREE.Vector3(k * SC, -0.07, 0), new THREE.Vector3(k * SC, 0.07, 0)],
+        k === 0 ? 0xffeb3b : 0x777777, k === 0 ? 0.95 : 0.7));
+    }
+    // the Titans frame the line: • 0 and ○ ∞ are the two limits (at infinite
+    // log distance), ⊙ 1 is the centre — gold, the mirror axis itself
+    root.add(makeMarker(new THREE.Vector3(-EXT - 0.5, 0, 0), 0x606060, 0.055)); // • toward 0
+    root.add(makeMarker(new THREE.Vector3(EXT + 0.5, 0, 0), 0xc8c8c8, 0.055)); // ○ toward ∞
+    const one = ring(0.1, 0xffeb3b, 0.95);
+    one.rotation.x = 0; root.add(one);                // ⊙ — the One, facing the viewer
+    root.add(line([new THREE.Vector3(0, -0.55, 0), new THREE.Vector3(0, 1.95, 0)], 0xffeb3b, 0.28)); // the mirror axis
+    // the energy well E = (ln x)² — drawn over the line, minimum exactly at 1
+    const well = [];
+    for (let s = -3.3; s <= 3.301; s += 0.1) well.push(new THREE.Vector3(s * SC, 0.17 * s * s, 0));
+    root.add(line(well, 0x9a9a9a, 0.5));
+    const xPt = makeMarker(new THREE.Vector3(SC, 0, 0), 0xffeb3b, 0.075);     // x
+    const invPt = makeMarker(new THREE.Vector3(-SC, 0, 0), 0xffffff, 0.075);  // 1/x — the mirror
+    const ePt = makeMarker(new THREE.Vector3(SC, 0.17, 0), 0xb8b8b8, 0.05);   // E(x) on the well
+    const arc = line([new THREE.Vector3(0, 0, 0)], 0xffeb3b, 0.55);           // the inversion fold
+    root.add(xPt); root.add(invPt); root.add(ePt); root.add(arc);
+
+    const readout = makeReadout();
+    if (readout) readout.style.whiteSpace = "pre-line";
+    dyn.push(function (t) {
+      const s = 2.9 * Math.sin(t * 0.45);             // sweep in log coordinates
+      const x = Math.pow(2, s);
+      xPt.position.set(s * SC, 0, 0);
+      invPt.position.set(-s * SC, 0, 0);
+      ePt.position.set(s * SC, 0.17 * s * s, 0);
+      const R = Math.abs(s) * SC;                     // the fold x → 1/x, under the line
+      if (R > 0.02) {
+        const pts = [];
+        for (let i = 0; i <= 40; i += 1) {
+          const a = Math.PI * i / 40;
+          pts.push(new THREE.Vector3(R * Math.cos(a), -0.5 * R * Math.sin(a), 0));
+        }
+        arc.geometry.setFromPoints(pts);
+      } else {
+        arc.geometry.setFromPoints([new THREE.Vector3(0, 0, 0), new THREE.Vector3(0, 0, 0)]);
+      }
+      const u = (x - 1) / (x + 1);
+      const E = Math.pow(Math.log(x), 2);
+      if (readout) readout.textContent =
+        "SUDA'S LINE · in log coordinates the ONE is the centre\n" +
+        "x = " + x.toFixed(2) + "   1/x = " + (1 / x).toFixed(2) + "   x · 1/x = 1\n" +
+        "s = log₂ x = " + s.toFixed(2) + "   mirror s ↦ −s   E = (ln x)² = " + E.toFixed(2) + " (min at 1)\n" +
+        "three charts · one centre:  x   ·   s = log x   ·   u = (x−1)/(x+1) = " + u.toFixed(2);
+    });
   }
 
   if (mode === "muLimit") {
@@ -622,9 +666,9 @@ function buildScene(mode, scene) {
     // boundary. As ψ rotates while θ sweeps, both landings SPIRAL through the
     // quadrants — reciprocal radii, crossing their unit circles together.
     const r = 1.0;
-    const N = new THREE.Vector3(0, r, 0);                            // ∞ — the top plane touches here
-    const S = new THREE.Vector3(0, -r, 0);                           // 0 — the floor touches here
-    const GOD = 0xffeb3b, DEMON = 0xd23b3b, TITAN = 0x6f9bcc;
+    const N = new THREE.Vector3(0, r, 0);                            // ○ ∞ — Brahmā's station: the top plane touches here
+    const S = new THREE.Vector3(0, -r, 0);                           // • 0 — Śiva's station: the floor touches here
+    const GOD = 0xffeb3b, DEMON = 0xd23b3b;
     const U = 2 * r;                                                 // unit-circle radius on a tangent plane
 
     root.add(createSphere(r, 0.22));
@@ -651,13 +695,11 @@ function buildScene(mode, scene) {
     [[0.9, 0.9, GOD], [-0.9, 0.9, GOD], [-2.2, -2.2, DEMON], [2.2, -2.2, DEMON]]
       .forEach((o) => root.add(makeMarker(new THREE.Vector3(o[0], r, o[1]), o[2], 0.06)));
 
-    // the 3 Titans on the lower hemisphere + the centre (L4, the equator)
-    [[2.30, 0.0], [2.55, 2.1], [2.85, 4.2]].forEach((T) => {
-      root.add(makeMarker(new THREE.Vector3(
-        r * Math.sin(T[0]) * Math.cos(T[1]), r * Math.cos(T[0]), r * Math.sin(T[0]) * Math.sin(T[1])
-      ), TITAN, 0.06));
-    });
-    root.add(makeMarker(new THREE.Vector3(0, 0, 0), 0xffffff, 0.045)); // the centre
+    // THE TITANS ARE THE STATIONS OF THE GEOMETRY ITSELF — proto-reality,
+    // the {0, 1, ∞} scaffold the game is played on: Śiva • = 0 (the floor
+    // touch, S above), Brahmā ○ = ∞ (the top touch, N above), and Viṣṇu ⊙ = 1
+    // — the centre, with the gold equator as the circle of his own glyph.
+    root.add(makeMarker(new THREE.Vector3(0, 0, 0), 0xffeb3b, 0.055)); // ⊙ Viṣṇu — the One at the centre
 
     const pMark = makeMarker(new THREE.Vector3(r, 0, 0), 0xffffff, 0.085); // P — where the two rays meet
     const rayDown = line([N, new THREE.Vector3(U, -r, 0)], GOD, 0.8);  // ∞ → P → floor: lands at 2r·φ
@@ -708,7 +750,7 @@ function buildScene(mode, scene) {
         "DUAL STEREOGRAPHIC PROJECTION · the two rays meet at P\n" +
         "θ = " + (theta * 180 / Math.PI).toFixed(0) + "°   φ = cot θ⁄2 = " + phi.toFixed(2) + "   ν = tan θ⁄2 = " + nu.toFixed(2) + "   φ·ν = 1\n" +
         "quadrant " + q + " · " + opName + " · " + (isGod ? "GOD-move (φ > 1)" : "DEMON-move (φ < 1)") + "\n" +
-        "∞-plane above (gods near ∞) · 0-plane below (demons near 0) · unit circles = the equator";
+        "Titans {0, 1, ∞} — Śiva • the 0-touch · Viṣṇu ⊙ the centre · Brahmā ○ the ∞-touch";
     });
   }
 
@@ -770,6 +812,12 @@ async function boot() {
     if (page.animationMode === "bloch") {
       // resting sphere + tangent floor at -r; landing reaches 2r·cot(θ/2)
       camera.position.set(0, 0.4, 5.8);
+      controls.update();
+    }
+    if (page.animationMode === "logline") {
+      // the line spans ±2.6 with the energy well above — front view, framed wide
+      camera.position.set(0, 0.55, 5.9);
+      controls.target.set(0, 0.45, 0);
       controls.update();
     }
 
