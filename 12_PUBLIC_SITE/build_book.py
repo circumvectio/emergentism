@@ -330,6 +330,8 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
   }
 })();
 </script>
+<script defer src="/assets/js/atlas-drawer.js"></script>
+<script defer src="/assets/js/book-ai.js"></script>
 </body>
 </html>
 """
