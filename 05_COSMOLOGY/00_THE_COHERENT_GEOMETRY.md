@@ -168,11 +168,11 @@ So `E = 0 ⟺ B = 1` at the equator; `E → +∞ ⟺ B → 0` at either pole; an
 
 **Rigorous statement.** Because `φ·ν = 1` with `φ, ν > 0`, AM-GM gives `φ + ν ≥ 2√(φν) = 2`, with **equality iff `φ = ν = 1`** (the equator). The static inequality `(φ − ν)² ≥ 0` is `[A]`; the **dynamic** reading `(φ − ν)² → 0` (an ektropic trajectory toward balance) is a *different claim at a different tier*, `[S]`, and the two must never be conflated.
 
-**Tier.** `[A]` for `φ + ν ≥ 2` and `(φ − ν)² ≥ 0`. `[S]` for the ektropic/teleological reading `(φ − ν)² → 0`. The proposal that `B = sin θ` (or `−E`) *is the system's objective function* — what real organisms/institutions actually maximise — is `[C]` conjecture: the **`B`-as-objective-function** conjecture, and §4b/§4d's "energy = imbalance" reading rides on it.
+**Tier.** `[A]` for `φ + ν ≥ 2` and `(φ − ν)² ≥ 0`. `[S]` for the ektropic/teleological reading `(φ − ν)² → 0`. The proposal that `B = sin θ` (or `−E`) *is the system's objective function* — what real organisms/institutions maximise — is **withdrawn in its strong form** (R6 refuted it for the potential register: empowerment is reach-dominated, not balanced). It is **replaced by the constrained-optimization reading**: the objective is **Ω** (the option cone / potential), the **constraint** is balance (`B`, `η=0`) — the feasibility manifold, *not* the thing maximized. `[S]` for that structure; `[I]` that reality obeys it; `[C]` any literal-force reading. §4b/§4d's "energy = imbalance" now reads as "distance off the feasibility manifold." Full reconciliation: [`../01_TELEOLOGY/02_THE_DERIVATION/00_THE_CORE_CONJECTURE.md`](../01_TELEOLOGY/02_THE_DERIVATION/00_THE_CORE_CONJECTURE.md) §Reconciliation; the 5+1 as the Lagrangian of this structure: [`00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`](../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md).
 
 **Proved vs asserted.** *Proved:* `φ + ν ≥ 2`, equality at the equator (verified: 2.0000 at θ=90°, 7.2559 at θ=16°/164°). *Asserted/conjectured:* that systems trend `(φ−ν)² → 0`, and that `B`/`−E` is the objective they optimise.
 
-**Kill criterion.** A counterexample to AM-GM (impossible). The dynamic/objective readings die if a class of systems where the geometry is claimed to apply is shown to *not* trend toward balance, or to optimise something the geometry cannot express.
+**Kill criterion.** A counterexample to AM-GM (impossible). The constrained-optimization reading dies if a class of systems the geometry claims applies pursues **neither** cone-widening (Ω) **nor** keeps to a balance-like feasibility surface — i.e. if both the objective and the constraint fail together where the geometry is asserted. (The strong "systems maximise `B`" reading already died at R6; only the constrained form is live.)
 
 ---
 
@@ -311,7 +311,7 @@ These remain genuinely indeterminate. This is **the apophatic edge, the L6 Groun
 | 4d | `E` ↔ balance reading | `[S/I]`, rides on `[C]` | `[A]` |
 | 5 | `φ+ν ≥ 2`, equality at equator; `(φ−ν)²≥0` | `[A]` | — |
 | 5 | `(φ−ν)² → 0` ektropic trend | `[S]` | conflate with the static `[A]` |
-| 5 | `B` / `−E` *is* the objective function | `[C]` | `[A]`, `[S]`, or a promise |
+| 5 | `B` / `−E` *is* the objective function | ~~`[C]`~~ **withdrawn (R6)** → reframed: **Ω is the objective, `B` is the constraint** | `[S]` constrained-optimization structure; `[I]` that reality obeys it |
 | 9 | `N÷0 = ∞` (`N≠0`), projective/wheel | `[A]` | `0/0`, `∞/∞`, or "all" resolved |
 | 9 | ÷0 as category-correction | `[S]` | `[A]` |
 | 10 | `1 = 0 × ∞` / `⊙ = • × ○` | `[S]` emblem, `[I]` weight | `[A]`, field theorem, bare arithmetic |

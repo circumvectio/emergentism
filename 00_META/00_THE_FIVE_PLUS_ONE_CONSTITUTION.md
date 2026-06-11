@@ -154,7 +154,13 @@ The η=0 fence, when read in the log-coordinate chart established by `40_THE_LOG
 
 **The fence.** The five refusals are *fences* (refusals to act). Ω is a *direction* (commitment to act toward). Both are required: a fence without a direction is paranoia; a direction without a fence is recklessness. **5 + 1**, not 6, because they are on *different axes* and the +1 is the directional anchor that the five clear the space for.
 
-**Tier.** `[S]` orientation; the noospheric lineage is `[I]/[S]`; the PRISM ownership of the Ω substrate is `[S]` framework structure per the SKYZAI CLAUDE.md.
+**The formal structure — the 5+1 is constrained optimization (added 2026-06-11).** The "fences + direction" picture has an exact mathematical name, and naming it resolves a standing tension in the corpus. The framework carried two candidate objective functions — *seek balance* (maximize `B = sin θ`) and *widen the option cone* (maximize Ω/potential) — and the peer-review **R6** test proved they **diverge**: the option cone is reach-dominated, so maximizing potential drives *away* from the equator, not toward it ([`../03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/00_FINDINGS_AND_CONJECTURES.md`](../03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/00_FINDINGS_AND_CONJECTURES.md)). The 5+1 dissolves the tension by assigning the two their proper roles:
+
+> **maximize Ω  (the option cone / potential)  subject to  the five refusals  (the feasible set).**
+
+The five refusals are the **constraint set** — the manifold of sustainable action (η=0 the chief constraint: a vanishing factor in `φ·ν=1` is a runaway, so balance is the condition that keeps the pursuit of reach from collapsing into a pole). Ω is the **objective** on that set. So **balance is not maximized — it is maximized *subject to*.** This makes the constitution the framework's **Lagrangian**, not a list of prohibitions: the five are `∇g = 0` constraints, Ω is the objective gradient, and the lawful path is the projection of `∇Ω` onto the feasible manifold. "A perimeter with no interior" (§7 statement) is precisely "constraints with no objective"; the +1 is the objective the constraints were always *for*. The strong "reality maximizes `B`" reading is therefore **withdrawn** (R6); the live reading is this constrained one. `[S]` the constrained-optimization structure; `[I]` that reality in general obeys it; the per-fence tiers are unchanged.
+
+**Tier.** `[S]` orientation; the noospheric lineage is `[I]/[S]`; the PRISM ownership of the Ω substrate is `[S]` framework structure per the SKYZAI CLAUDE.md. The constrained-optimization framing is `[S]`.
 
 ---
 

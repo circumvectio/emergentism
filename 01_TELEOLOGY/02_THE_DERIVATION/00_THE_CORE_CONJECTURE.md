@@ -121,6 +121,27 @@ Not an `[A]` Standard Model fifth interaction beside the four accepted physical 
 
 ---
 
+## The Reconciliation — Objective vs Constraint (added 2026-06-11, after R6)
+
+The peer-review program's **R6** test put this conjecture under load and found a real fault in its *wording*, not its spirit. R6 measured **empowerment** — the reachable-option cone, the closest established formalization of "potential" — and showed it is **reach-dominated, never balanced**: maximizing potential drives toward a *pole* (maximal reach), not toward the equator. So *"reality tends toward maximal balance `B`"* cannot be the whole objective — because the very thing this document calls the telos (the opening of the option cone, F5 / Ω) trends *away* from `B`. The two halves of "the tendency to maximal balance under reciprocal closure" pull apart under measurement.
+
+The fix is not to drop either. It is to see they were two **roles**, not one, and that the constitution already encodes the split:
+
+- **The objective is Ω — the widening of the option cone** (potential; reachable, selectable futures). This is the directional telos, the "Will to Potential." It is what gets *maximized*.
+- **Balance (`B`, `η = 0`) is the CONSTRAINT** — the feasible manifold on which Ω may be pursued *sustainably*. It is **not** maximized; it is the surface the pursuit must stay on.
+
+This is **constrained optimization**, and it is exactly the shape of the **5 + 1 constitution**: the five refusals (`η=0, K2, K3, K4, A7`) are the *constraint set*; Ω is the *objective*; **the constitution is the framework's Lagrangian, not a list of rules** (canonical statement: [`../../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`](../../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md)).
+
+Why balance is the right *constraint* and not the *objective*: the product law `φ·ν = 1` makes a vanishing factor a **runaway** — drive reach (`ν`) to the pole with no coherence (`φ`) and the system diverges into its shadow (formless appetite; the Ghost Trap). Balance is the condition that keeps the pursuit of potential from collapsing into a pole. The system does not *seek* the equator; it **stays near enough to the equator that its reach does not destroy it.** "Tendency to balance" is real — it is the tendency to remain *feasible* — but it is the guardrail, not the goal.
+
+**What this costs the conjecture, honestly.** The strong form — *"reality maximizes `B`"* — is **withdrawn** (R6 refuted it for the potential register; see the findings ledger conjecture-row 5). The surviving form — *"reality widens its option cone subject to the balance constraint"* — is `[S/I]`: weaker, but coherent with R6 and with the constitution. F5 is then read as **the gradient of Ω on the `η = 0` manifold**, not as a gradient toward `B`.
+
+**The unexpected gift.** Under the mass-shell identity ([`../../05_COSMOLOGY/00_THE_COHERENT_GEOMETRY.md`](../../05_COSMOLOGY/00_THE_COHERENT_GEOMETRY.md) §6), `B = dτ/dt` — the proper-time rate. So "stay near the equator" has a physics cousin in **maximal aging**: natural (free) motion maximizes proper time. The balance-constraint is not arbitrary; the most physical reading of "stay feasible" is "do not waste your lived time fighting the geometry." `[I]` resonance, not proof.
+
+`[S]` the constrained-optimization structure (objective Ω, constraint `B`/`η=0`); `[I]` that reality in general obeys it; `[C]` any literal-force reading. **Kill criterion (updated):** the constrained form dies if a class of systems the geometry claims pursues neither cone-widening *nor* keeps to a balance-like feasibility surface — i.e. if both the objective and the constraint readings fail together in a register where the geometry is asserted to apply.
+
+---
+
 ## The Legacy Phrase: Will to Potential
 
 Nietzsche saw the Will. He called it **Macht** — power. ν -> infinity. The south pole.
