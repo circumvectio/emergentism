@@ -628,9 +628,12 @@ function buildScene(mode, scene) {
       const aB = Math.abs(vc);
       const gamma = Math.cosh(w);                               // γ — the relativistic-mass factor
       const k = Math.exp(w);                                    // Doppler factor = e^w (the log line: w = ln k)
-      // HORN at rest (f=0.5); as β→1 the overlap completes and R→0, so the torus
-      // RESOLVES INTO A SPHERE — the Burrisphere — which then projects upward.
-      const f = 0.5 + 0.47 * aB;                                // 0.5 horn -> ~0.97 (R→0 = sphere)
+      // EXACT morph law: f = γ/(γ+1), so the mouth ratio R/rt = (1−f)/f = 1/γ
+      // = B = dτ/dt — the throat IS the rate of lived (proper) time. At rest
+      // γ=1 → R=rt (HORN); as β→1, γ→∞ and R→0 asymptotically — the overlap
+      // completes only in the limit, and the torus RESOLVES INTO A SPHERE —
+      // the Burrisphere — which then projects upward.
+      const f = gamma / (gamma + 1);
       const g = torus.setF(f);
       torus.mesh.material.opacity = 0.3 + 0.06 * aB;
       // the relative centre moves on the complex plane (log-compressed real axis)
@@ -643,14 +646,13 @@ function buildScene(mode, scene) {
         "<div style='color:#FFEB3B;font-weight:700;letter-spacing:.07em;margin-bottom:6px'>RELATIVE MOTION ON THE COMPLEX PLANE</div>" +
         "rapidity w = " + w.toFixed(2) + " &nbsp;<span style='color:#6b7280'>= ln(Doppler)</span><br>" +
         "β = v/c &nbsp;" + bar(aB, "#42A5F5") + " " + vc.toFixed(4) + "<br>" +
-        "γ = cosh w = " + gamma.toFixed(1) + " &nbsp;<span style='color:#9CA3AF'>time ×" + gamma.toFixed(1) + "</span><br>" +
-        "m / m₀ = γ &nbsp;" + bar(gamma / G_MAX, "#FFEB3B") + " " + gamma.toFixed(1) + "<br>" +
-        "<span style='color:#F3F4F6'>E = γ m c²</span> &nbsp;<span style='color:#9CA3AF'>(c² = velocity²)</span><br>" +
+        "γ = cosh w = " + gamma.toFixed(1) + " &nbsp;<span style='color:#9CA3AF'>E = γmc² · m/m₀ = γ</span> " + bar(gamma / G_MAX, "#FFEB3B") + "<br>" +
+        "mouth R/r = 1/γ = " + (1 / gamma).toFixed(3) + " &nbsp;<span style='color:#9CA3AF'>= dτ/dt — the rate of lived time</span><br>" +
         (!moving
-          ? "<span style='color:#FFEB3B'>at rest · HORN torus — throat = the relative centre</span>"
-          : aB > 0.985
-            ? "<span style='color:#FFEB3B'>overlap complete · R→0 → resolves as the BURRISPHERE (projects upward)</span>"
-            : "<span style='color:#9CA3AF'>SPINDLE · overlap grows · β→1 · energy → <b style='color:#FFEB3B'>mass</b></span>");
+          ? "<span style='color:#FFEB3B'>at rest · HORN torus (γ=1, R=r) — E = mc², all energy is rest mass</span>"
+          : gamma > 20
+            ? "<span style='color:#FFEB3B'>R→0 · proper time freezes → resolves as the BURRISPHERE (projects upward)</span>"
+            : "<span style='color:#9CA3AF'>SPINDLE · β saturates at c · the work of acceleration becomes <b style='color:#FFEB3B'>mass-energy</b></span>");
     });
   }
 
@@ -748,7 +750,7 @@ function buildScene(mode, scene) {
         : (cps < 0 ? "Kali L1 · take" : "Kālī L2 · take");
       if (readout) readout.textContent =
         "DUAL STEREOGRAPHIC PROJECTION · the two rays meet at P\n" +
-        "θ = " + (theta * 180 / Math.PI).toFixed(0) + "°   φ = cot θ⁄2 = " + phi.toFixed(2) + "   ν = tan θ⁄2 = " + nu.toFixed(2) + "   φ·ν = 1\n" +
+        "θ = " + (theta * 180 / Math.PI).toFixed(0) + "°   φ = " + phi.toFixed(2) + "   ν = " + nu.toFixed(2) + "   φ·ν = 1 (mass-shell)   E/mc² = (φ+ν)/2 = " + ((phi + nu) / 2).toFixed(2) + "\n" +
         "quadrant " + q + " · " + opName + " · " + (isGod ? "GOD-move (φ > 1)" : "DEMON-move (φ < 1)") + "\n" +
         "Titans {0, 1, ∞} — Śiva • the 0-touch · Viṣṇu ⊙ the centre · Brahmā ○ the ∞-touch";
     });
