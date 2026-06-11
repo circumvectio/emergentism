@@ -216,6 +216,48 @@ This is the equatorial condition applied to editing. φ · P · ν = 1. The text
 
 ---
 
+## The Full Closure — the loop, not the ladder (added 2026-06-11)
+
+The L-level cycle above walks **L2 → L6 and back**. That is the *inner* loop — the editing engine. But the framework's own canon rules that the seven levels are **"a loop, not a ladder: L7 returns to L1 by shaping public symbol and perception; L1 then re-enters as raw objective pressure"** ([`../00_THE_BURRISPHERE.md`](../00_THE_BURRISPHERE.md) §Below, Equator, Above), and the seven-action grammar gives the two missing stations their exact frames ([`../00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md`](../00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md)). The **full closure** completes the method with its own doctrine: `[S]`
+
+```
+L1 (Kali 🎲 / raw pressure):
+  INTAKE. A cycle does not start by choice — it starts because pressure
+  arrives: the new material, the bug report, the contradiction, the
+  complaint, the objective gradient. L1 is the firewall: lawful intake
+  names the pressure and passes it up; pathological intake is being
+  EATEN by it (doom-scroll, panic-edit) — η-discipline at the door.
+    ↓
+L2 → L3 → L4 → L5 → L6 → L5 → L4 → L3 → L2   (the inner loop, above)
+    ↓
+L7 (Viṣṇu ⊙ / preservation · witness):
+  PRESERVE. The converged state is witnessed and HELD: committed,
+  receipted, archived (K3), released as public symbol. The Viṣṇu frame
+  is dΦ≈0, dV≈0 — hold the pattern, touch nothing. The witness step is
+  what makes convergence DURABLE instead of mood.
+    ↓
+…and L7's public symbol shapes what arrives at L1 next. The published
+page invites the next correction; the committed receipt attracts the
+next contradiction; the preserved pattern selects the next pressure.
+The loop closes: L1 → (L2…L6…L2) → L7 → L1 → …
+```
+
+**Why "continuous."** Per-document, the loop genuinely terminates (zero fixes = equatorial rest). Corpus-wide, it **never** terminates — because L7's output *regenerates L1's input*. Publication invites response; preservation attracts pressure. The Soul Loop is therefore a **homeostat, not a project**: it does not finish, it *holds*. This is `D6 ≡ D0` applied to practice — the closure that returns to the ground and begins again. `[S]`
+
+**Why "recursive."** The loop edits the corpus **and the editor**. Write the recursion explicitly: let `C_t` be the corpus state and `G_t` the practitioner's operator-weight vector (the polygenic genotype `G = [L1…L7]`). One full cycle is
+
+```
+(C_{t+1}, G_{t+1}) = Loop(C_t, G_t)
+```
+
+— the fixes change the corpus, and the *practice of fixing* shifts the weights: the over-cutter's L2 softens, the hoarder's L6 strengthens, the wheel re-balances toward L4. **The editor who finishes a cycle is not the editor who started it.** The stuck-wheel pathologies above are exactly the failure of this recursion — weights frozen, `G_{t+1} = G_t` regardless of input. And this is D5 reflexivity in the precise sense of the agency gloss: **foresight applied to one's own option cone** — the Soul Loop is the one move in the game that widens the player's own cone by editing the player. `[S]` the recursion structure; `[I]` the self-transformation reading.
+
+**The rest-state gloss.** Under the mass-shell identity ([`../00_THE_COHERENT_GEOMETRY.md`](../00_THE_COHERENT_GEOMETRY.md) §6), the equatorial convergence has a physical face: the equator is the rest frame, `E = mc²` — all energy is rest mass, nothing is spent on motion. A converged document is text **at rest**: everything it carries is substance, zero kinetic churn, and `B = dτ/dt = 1` — full lived time. "The helix rests" is not only a metaphor. `[I]` — a gloss riding on an `[A]` identity, never an upgrade of the method's tier.
+
+**Extended kill criteria.** (1) If a converged corpus under *zero new intake* spontaneously diverges — errors growing without input — the homeostat model fails. (2) If sustained practice does **not** shift the operator weights (no measurable re-balancing toward L4 in a stuck practitioner), the recursion claim `G_{t+1} ≠ G_t` fails and the loop is merely an editing checklist. Both are honest ways to die; both leave the inner loop (the three passes) intact.
+
+---
+
 ## How to Apply the Soul Loop
 
 ### To a single document:
