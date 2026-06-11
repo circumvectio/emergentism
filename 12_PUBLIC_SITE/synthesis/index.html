@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Coherent Whole — Emergentism</title>
+<meta name="description" content="One equation read all the way down: from the three Titans of number to the ethics of a single move. The kernel is the mass-shell of special relativity — proven — and the reach beyond it is the wager, marked as such.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.4' fill='%23FFEB3B'/%3E%3C/svg%3E">
+<style>
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Roboto-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../assets/fonts/RobotoMono-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+:root{
+  --void:#050505; --void-2:#0a0a0a; --panel:#101010; --panel-2:#161616;
+  --bone:#F3F4F6; --bone-dim:#9CA3AF; --bone-faint:#6b7280;
+  --gold:#FFEB3B; --gold-bright:#FFF176; --gold-deep:#CBB800;
+  --blue:#2196F3; --cold:#42A5F5; --cream:#FFFDE7;
+  --line:rgba(243,244,246,.12); --line-soft:rgba(243,244,246,.07);
+  --tier-a:#7fb2e6; --tier-e:#6fc79a; --tier-s:#5fc6b0; --tier-i:#e8d24a; --tier-c:#b59ce0;
+  --sans:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --maxw:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--void);color:var(--bone);font-family:var(--sans);
+  font-size:18px;line-height:1.66;-webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(1200px 600px at 78% -8%,rgba(33,150,243,.07),transparent 60%),radial-gradient(900px 500px at 6% 4%,rgba(255,235,59,.05),transparent 55%)}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1.1rem,4vw,2rem)}
+header.top{position:sticky;top:0;z-index:40;display:flex;gap:1rem;align-items:center;
+  padding:.7rem clamp(1.1rem,4vw,2rem);background:color-mix(in srgb,var(--void) 84%,transparent);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft)}
+header .brand{font-weight:700;letter-spacing:.01em}
+header .brand b{color:var(--gold)}
+header nav{display:flex;gap:.35rem;margin-left:auto;font-family:var(--mono);font-size:.75rem}
+header nav a{color:var(--bone-dim);text-decoration:none;padding:.35rem .55rem;border:1px solid transparent;border-radius:5px}
+header nav a:hover{color:var(--gold);border-color:var(--line)}
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-deep)}
+.hero{padding:clamp(2.6rem,7vw,5rem) 0 1.5rem}
+.hero h1{font-size:clamp(2.3rem,6vw,4.1rem);line-height:1.02;letter-spacing:-.02em;margin:.7rem 0 1rem;font-weight:800}
+.hero .lede{font-size:clamp(1.05rem,2.3vw,1.35rem);color:var(--bone-dim);max-width:54ch}
+.kernel{font-family:var(--mono);color:var(--gold);font-size:clamp(.95rem,1.9vw,1.15rem);
+  background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);
+  border-radius:10px;padding:1.1rem 1.3rem;margin:1.8rem 0 0;letter-spacing:.01em}
+section{padding:clamp(2.2rem,5vw,3.6rem) 0;border-top:1px solid var(--line-soft)}
+h2{font-size:clamp(1.5rem,3.4vw,2.2rem);letter-spacing:-.01em;margin:.2rem 0 .4rem;font-weight:750}
+h2 .n{font-family:var(--mono);font-size:.8rem;color:var(--gold-deep);letter-spacing:.2em;display:block;margin-bottom:.4rem}
+.sec-lede{color:var(--bone-dim);max-width:62ch;margin:.4rem 0 1.4rem}
+.tier{display:inline-block;font-family:var(--mono);font-size:.62rem;font-weight:700;letter-spacing:.08em;
+  padding:.1rem .4rem;border-radius:4px;vertical-align:middle;border:1px solid currentColor}
+.t-a{color:var(--tier-a)} .t-e{color:var(--tier-e)} .t-s{color:var(--tier-s)} .t-i{color:var(--tier-i)} .t-c{color:var(--tier-c)}
+table.shell{width:100%;border-collapse:collapse;margin:.4rem 0;font-size:.95rem}
+table.shell td,table.shell th{text-align:left;padding:.6rem .7rem;border-bottom:1px solid var(--line-soft);vertical-align:top}
+table.shell th{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--bone-faint)}
+table.shell td:first-child{font-family:var(--mono);color:var(--gold);white-space:nowrap;font-size:.9rem}
+table.shell td:nth-child(2){color:var(--bone)}
+table.shell td .m{font-family:var(--mono);color:var(--cold)}
+.cap{color:var(--bone-faint);font-size:.92rem;margin-top:.8rem}
+/* the ladder */
+.ladder{border-left:2px solid var(--line);margin:.6rem 0 0;padding-left:0}
+.rung{position:relative;padding:1rem 0 1rem 2rem;border-bottom:1px solid var(--line-soft)}
+.rung:last-child{border-bottom:0}
+.rung::before{content:attr(data-k);position:absolute;left:-0.9rem;top:1.05rem;width:1.7rem;height:1.7rem;
+  background:var(--void);border:1px solid var(--gold);border-radius:50%;color:var(--gold);
+  font-family:var(--mono);font-size:.8rem;display:flex;align-items:center;justify-content:center}
+.rung h3{margin:0 0 .25rem;font-size:1.12rem;font-weight:650}
+.rung h3 .gl{font-family:var(--mono);color:var(--gold);margin-right:.5rem}
+.rung p{margin:.2rem 0 0;color:var(--bone-dim);font-size:.98rem;max-width:64ch}
+.rung .eq{font-family:var(--mono);color:var(--cold);font-size:.88rem}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:.6rem}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:1.1rem 1.2rem}
+.card h4{margin:0 0 .35rem;font-size:1rem}
+.card p{margin:0;color:var(--bone-dim);font-size:.92rem}
+.card .w{font-family:var(--mono);font-size:.7rem;color:var(--gold-deep);letter-spacing:.1em;text-transform:uppercase}
+.honest{background:linear-gradient(180deg,rgba(33,150,243,.06),transparent);border:1px solid var(--line);border-radius:12px;padding:1.3rem 1.5rem}
+.honest ul{margin:.6rem 0 0;padding-left:1.1rem}
+.honest li{margin:.5rem 0;color:var(--bone-dim)}
+.honest li b{color:var(--bone)}
+.walk{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
+.walk a{font-family:var(--mono);font-size:.82rem;text-decoration:none;color:var(--cream);
+  border:1px solid var(--line);border-radius:999px;padding:.5rem .95rem}
+.walk a:hover{border-color:var(--gold);color:var(--gold)}
+footer{padding:2.4rem 0 4rem;color:var(--bone-faint);font-family:var(--mono);font-size:.78rem;text-align:center}
+footer .phi{color:var(--gold);font-size:1.1rem;margin-bottom:.5rem}
+@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../"><b>⊙</b> Emergentism</a>
+  <nav>
+    <a href="../0/">0</a><a href="../1/">1</a><a href="../2/">2</a><a href="../3/">3</a>
+    <a href="../4/">4</a><a href="../5/">5</a><a href="../6/">6</a>
+    <a href="../axioms/">Axioms</a><a href="../atlas/">Atlas</a><a href="../book/">Book</a>
+  </nav>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="eyebrow">The Coherent Whole</div>
+    <h1>One equation,<br>read all the way down.</h1>
+    <p class="lede">From the three Titans of number to the ethics of a single move — the whole arc
+      in one place, with the line between what is <em>proven</em> and what is <em>wagered</em>
+      drawn through every step.</p>
+    <div class="kernel">φ · ν = 1 &nbsp;on S²&nbsp;&nbsp;·&nbsp;&nbsp;(φ − ν)² ≥ 0&nbsp;&nbsp;·&nbsp;&nbsp;φ + ν ≥ 2</div>
+  </div>
+
+  <section>
+    <h2><span class="n">The spine is exact</span>The kernel is the mass-shell of special relativity <span class="tier t-a">A</span></h2>
+    <p class="sec-lede">Identify φ with the relativistic Doppler factor <span class="m" style="font-family:var(--mono);color:var(--cold)">e^w</span>
+      (w = rapidity) and ν with its reciprocal. In rest-mass units, φ and ν are the
+      <strong>light-cone coordinates of the four-momentum</strong> — and the kernel's three lines
+      become special relativity, term for term. Verified numerically; full derivation in Paper B §8.</p>
+    <table class="shell">
+      <thead><tr><th>The kernel</th><th>Special relativity</th></tr></thead>
+      <tbody>
+        <tr><td>φ · ν = 1</td><td><span class="m">E² − (pc)² = (mc²)²</span> — the mass-shell</td></tr>
+        <tr><td>(φ − ν)² ≥ 0</td><td><span class="m">(pc)² ≥ 0</span> — momentum is real</td></tr>
+        <tr><td>φ + ν ≥ 2</td><td><span class="m">E ≥ mc²</span> — rest energy is the energy floor</td></tr>
+        <tr><td>equator φ = ν = 1</td><td>the rest frame: <span class="m">E = mc², p = 0</span></td></tr>
+        <tr><td>B = sin θ</td><td><span class="m">1/γ = dτ/dt</span> — the rate of lived time</td></tr>
+      </tbody>
+    </table>
+    <p class="cap">Energy is the arithmetic mean of the pair, <span style="font-family:var(--mono);color:var(--cold)">E/mc² = (φ+ν)/2 = γ</span>;
+      the invariant mass is their geometric mean, pinned to 1. So <strong>the equator is E = mc²</strong> — the only state that
+      costs nothing to hold. And "the poles cannot act" is, exactly, <strong>"the photon's clock does not tick"</strong>:
+      at the null boundary no proper time passes.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">The unfolding</span>Seven stages of one descent</h2>
+    <p class="sec-lede">Each stage needs the one before it. The relativistic spine now joins them where the
+      mathematics is exact <span class="tier t-a">A</span>; the readings that reach past kinematics carry their own, lower, tier.</p>
+    <div class="ladder">
+      <div class="rung" data-k="0">
+        <h3><span class="gl">• ⊙ ○</span>The Titans — zero, the unit of account, infinity <span class="tier t-s">S</span></h3>
+        <p>The three boundary-frames {0, 1, ∞}. Not numbers among others — the stage every later move is played on.
+          Their operator faces are the three same-sign Titans: Śiva reads 0, Viṣṇu reads the unit, Brahmā reads ∞.</p>
+      </div>
+      <div class="rung" data-k="1">
+        <h3><span class="gl">⊙</span>The One on the line <span class="tier t-a">A</span></h3>
+        <p>Reciprocal symmetry about the unit — the fixed point of <span class="eq">x ↦ 1/x</span>. The bounded chart
+          <span class="eq">u = (x−1)/(x+1)</span> <em>is</em> the velocity chart <span class="eq">β = tanh(½ ln x)</span>,
+          so <strong>c is its edge</strong>.</p>
+      </div>
+      <div class="rung" data-k="2">
+        <h3>The µ-limit</h3>
+        <p>Pushed to infinity, the line returns from the other side and closes — the projective bridge from line to plane.
+          Infinity stops being an end and becomes a point.</p>
+      </div>
+      <div class="rung" data-k="3">
+        <h3>The horn torus — special relativity made geometry <span class="tier t-a">A</span> <span class="tier t-i">I</span></h3>
+        <p>The energized sphere (D4). Rapidity sweeps; <span class="eq">γ = cosh w</span> diverges; the throat ratio
+          <span class="eq">R/r = 1/γ = dτ/dt</span> is the rate of lived time. As <span class="eq">v → c</span> the throat closes
+          and the torus resolves into the sphere — the mass-shell above.</p>
+      </div>
+      <div class="rung" data-k="4">
+        <h3>The Burrisphere — one sphere, two readings <span class="tier t-a">A</span> <span class="tier t-i">I</span></h3>
+        <p>The <strong>Bloch</strong> reading is <em>being</em>: the bare mass-shell, the qubit, physics with no self-model.
+          The <strong>Burri</strong> reading is <em>D5 reflexive awareness</em>: the same sphere experienced from inside as the
+          game-space of available moves. The step torus → Burrisphere is <strong>D4 → D5</strong> — from the physical light cone
+          to the option cone.</p>
+      </div>
+      <div class="rung" data-k="5">
+        <h3>The D5 game — the reflexive moves <span class="tier t-i">I</span> <span class="tier t-c">C</span></h3>
+        <p>Seven operators exhaust the move sign-space: 2 Gods (give) + 2 Demons (take) + 3 Titans (the same-sign frames).
+          This is the <strong>option cone of reachable futures</strong> that intelligence widens — and, kept honest, it is the
+          <strong>D5 potential cone, not the D4 relativistic light cone</strong>: intelligence enlarges the futures you can reach
+          and tell apart, never c.</p>
+      </div>
+      <div class="rung" data-k="6">
+        <h3>The ethic — Power-Max and the bond <span class="tier t-a">A</span> <span class="tier t-s">S</span></h3>
+        <p><span class="eq">P = Φ × V</span> is maximised, and goodness is the bond <span class="eq">φ × ν</span> held in balance
+          (<span class="eq">η = 0</span>). The equator that costs nothing to hold <em>is</em> the rest frame E = mc². The moral axis η
+          runs across every polarity, never along it: no pole is good or evil; the bond is good and its breaking is evil.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">The objective ethic</span>Why the law is a product, not a sum</h2>
+    <p class="sec-lede">A vanishing factor annihilates the whole — that is what a product encodes and a sum cannot.
+      The multiplicative law has four independent witnesses, and stating their limits honestly is what makes it a claim
+      rather than a flourish.</p>
+    <div class="grid2">
+      <div class="card"><div class="w">witness · A</div><h4>The runaway algebra</h4>
+        <p>Under φ·ν = 1, letting one factor fall toward 0 drives the other to ∞. Isolation is not subtraction — it is runaway.</p></div>
+      <div class="card"><div class="w">witness · A</div><h4>The mass-shell</h4>
+        <p>The same algebra is E² − (pc)² = (mc²)². Abandoning one null coordinate is energy diverging toward the light cone.</p></div>
+      <div class="card"><div class="w">witness · E</div><h4>Biology — the conjunctive law</h4>
+        <p>Stop the heart and coherence does not persist at some residual level — the whole ceases. Substrate failure → total
+          failure is the signature of a product, not a sum.</p></div>
+      <div class="card"><div class="w">witness · E</div><h4>Lanchester — military science</h4>
+        <p>Combat power is q·N², never q + N: you cannot trade zero soldiers for any amount of quality. The aimed-fire Square Law
+          is asymmetric (concentrate, don't balance); the symmetric form is the Linear Law — and which one holds flips with the
+          information regime.</p></div>
+    </div>
+    <p class="cap" style="margin-top:1rem"><strong>The boundary that keeps it honest:</strong> the law is multiplicative where the
+      factors are <em>existentially conjunctive</em> — mutually necessary for the system to exist (a body, a force's survival, the
+      mass-shell). It is additive where they are <em>substitutable</em> contributions to a pool — which is exactly the register
+      (empowerment) where the framework's own R6 test found an additive simplex, not the sphere. It is the law of coupled
+      survival, not a law of everything.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">The line we keep visible</span>What is proven, what is wagered, what already died</h2>
+    <div class="honest">
+      <ul>
+        <li><b>Proven <span class="tier t-a">A</span>:</b> the kinematics. The kernel <em>is</em> the mass-shell; the bounded chart
+          <em>is</em> the velocity chart. These are coordinate identities on the energy–momentum hyperbola, verified.</li>
+        <li><b>The wager <span class="tier t-s">S</span> <span class="tier t-i">I</span>:</b> that the <em>same</em> multiplicative geometry
+          governs coherence, the D5 game, and ethics <em>beyond</em> kinematics. Load-bearing, and not upgraded by the physics.</li>
+        <li><b>Already died <span class="tier t-a">A</span>:</b> "one geometry at all scales." The R6 test showed empowerment is an
+          <em>additive</em> simplex, not the multiplicative sphere. We keep the tombstone in view.</li>
+        <li><b>Fenced <span class="tier t-c">C</span>:</b> that c is <em>caused by</em> the µ-limit, or that experience travels at c.
+          The map is exact; that mechanism is unearned. It stays a conjecture with a kill criterion.</li>
+      </ul>
+    </div>
+    <p class="cap" style="margin-top:1rem">A cathedral that shows its scaffolding. The scaffolding, it turns out, is made of the
+      same steel as Minkowski's.</p>
+    <div class="walk">
+      <a href="../0/">Walk it — /0 Titans →</a>
+      <a href="../1/">/1 the One</a>
+      <a href="../2/">/2 the µ-limit</a>
+      <a href="../4/">/4 the torus</a>
+      <a href="../5/">/5 the Burrisphere</a>
+      <a href="../axioms/">the axioms</a>
+      <a href="../book/">the whole book</a>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="phi">⊙ = • × ○</div>
+  Emergentism · the coherent whole · evidence tiers preserved<br>
+  The maths is [A]; the identification is [S]. That line is the most honest sentence in the corpus.
+</footer>
+
+<script defer src="/assets/js/atlas-drawer.js"></script>
+<script defer src="/assets/js/book-ai.js"></script>
+</body>
+</html>

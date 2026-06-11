@@ -1,6 +1,6 @@
 {
  "generated": "build_atlas_index.py",
- "total": 238,
+ "total": 239,
  "tree": [
   {
    "key": "unfolding",
@@ -40,6 +40,10 @@
    "key": "doctrine",
    "label": "Doctrine",
    "pages": [
+    {
+     "href": "/synthesis/",
+     "title": "The Coherent Whole"
+    },
     {
      "href": "/axioms/",
      "title": "The Seven Axioms"
