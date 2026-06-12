@@ -66,7 +66,7 @@ Sphere grammar**.
 Each transcendental corresponds to a distinct geometric feature of S²:
 
 ```
-Truth   = The invariance of P = 1 (conservation law)
+Truth   = The invariance of P∞ = φ · ν = 1 (manifold identity)
 Beauty  = The harmony of balance B = sin θ (equatorial symmetry)
 Justice = The non-extraction condition η = 0 (stable equilibrium)
 ```
@@ -91,26 +91,26 @@ Justice = The non-extraction condition η = 0 (stable equilibrium)
 
 ```
 A proposition is truth-tracking, in this framework, to the degree that:
-1. It preserves P = 1 (conservation of ektropy)
+1. It preserves P∞ = φ · ν = 1 (the manifold invariant)
 2. It is coordinate-invariant (true from any perspective on S²)
 3. It survives the D4-D5 transformation (corresponds across domains)
 ```
 
 ### 2.3 Truth as the Conservation Law
 
-On the Burri Sphere, P = 1 is conserved everywhere. This conservation supplies
-the framework's **formal analogue of truth**: what remains faithful across
-projection, correction, and change of coordinate.
+On the Burri Sphere, `P∞ = φ · ν = 1` is conserved everywhere. This
+conservation supplies the framework's **formal analogue of truth**: what
+remains faithful across projection, correction, and change of coordinate.
 
 | Aspect | Geometric Interpretation |
 |--------|-------------------------|
-| Correspondence Truth | D4 projection matches the territory (P = 1 verified) |
+| Correspondence Truth | D4 projection matches the territory (`P∞` invariant preserved) |
 | Coherence Truth | Internal consistency (no contradictions in φ-structure) |
 | Pragmatic Truth | Viability in practice (ν-component functional) |
 
-**The Unity:** These three aspects are interpreted through P = 1. A "true"
-proposition, in this grammar, maintains the invariant across the relevant
-projections while remaining corrigible by evidence outside the model.
+**The Unity:** These three aspects are interpreted through `P∞ = 1`. A "true"
+proposition, in this grammar, maintains the manifold invariant across the
+relevant projections while remaining corrigible by evidence outside the model.
 
 ### 2.4 The Truth Gradient
 
@@ -277,7 +277,7 @@ Therefore: once "ethical" is defined as movement toward balance, Is (geometric s
 ### 5.1 The Three as One
 
 ```
-Truth   = P = 1 (conservation of ektropy)
+Truth   = P∞ = φ · ν = 1 (manifold invariance)
 Beauty  = B = 1 (equatorial balance)
 Justice = η = 0 (non-extraction)
 
@@ -288,7 +288,7 @@ Unity: All three are maximally approached at the equator
 ### 5.2 The Transcendentals as Coordinate System
 
 Imagine a 3D space with axes:
-- x = Truth (P = 1 surface)
+- x = Truth (`P∞ = φ · ν = 1` invariant surface)
 - y = Beauty (B gradient)
 - z = Justice (η = 0 constraint surface)
 
@@ -346,7 +346,7 @@ Just methodology:
 ### 7.1 The Ethical Test
 
 For any action, ask:
-1. **Is it True?** Does it preserve P = 1? (no zero-factor catastrophe)
+1. **Is it True?** Does it preserve `P∞ = φ · ν = 1` in the manifold register while keeping finite-node `P_node` claims testable?
 2. **Is it Beautiful?** Does it move toward B = 1? (balanced)
 3. **Is it Just?** Does it maintain η = 0? (non-extractive)
 
@@ -358,7 +358,7 @@ Build systems that:
 3. Resist extraction (Justice)
 
 **Example: The Mesh**
-- Truth: Information flows without distortion (P = 1)
+- Truth: Information flows without distortion (`P∞` invariant preserved)
 - Beauty: Network structure follows geodesics (B = 1)
 - Justice: No node extracts from others (η = 0)
 
@@ -372,7 +372,7 @@ Build systems that:
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
 │   TRUTH                                                     │
-│   ├── Model shorthand: Invariance of P = 1                  │
+│   ├── Model shorthand: Invariance of P∞ = φ·ν = 1           │
 │   ├── Geometric: Conservation law across all coordinates    │
 │   ├── Epistemic: Correspondence + Coherence + Pragmatic     │
 │   └── Maximum: At equator (φ = ν = 1)                       │

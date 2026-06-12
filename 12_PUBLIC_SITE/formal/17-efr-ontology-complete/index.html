@@ -60,7 +60,7 @@
 <strong>Evidence Tier:</strong> [S] Structural — integration of framework components
 <strong>Date:</strong> 2026-03-23
 <strong>Version:</strong> v0.5-integration</p>
-<p><strong>Claim Boundary:</strong> <code>[S/I]</code> "Complete" here means internally integrated across the framework's current domains, not final possession of ontology. Structural claims hold inside the accepted Burri Sphere grammar; claims that this closes Being, value, or moral realism for agents outside the framework remain interpretive or conjectural.</p>
+<p><strong>Claim Boundary:</strong> <code>[S/I]</code> "Complete" here means internally integrated across the framework's current domains, not final possession of ontology. Structural claims hold inside the accepted Burri Sphere grammar; claims that this closes Being, value, or moral realism for agents outside the framework remain interpretive or conjectural. In the teleology formulas below, <code>ΔP_node,i</code> and <code>ΔP_node,H</code> are finite-node scores; the manifold invariant remains <code>P∞ = φ · ν = 1</code>.</p>
 <hr>
 <h2 id="1-the-complete-architecture">1. THE COMPLETE ARCHITECTURE</h2>
 <h3 id="11-five-core-domains">1.1 Five Core Domains</h3>
@@ -80,7 +80,7 @@
 │                    ┌───────┴───────┐                                │
 │                    │  THE BURRI    │                                │
 │                    │    SPHERE     │                                │
-│                    │   (S², P=1)   │                                │
+│                    │ (S², P∞=1)    │                                │
 │                    └───────┬───────┘                                │
 │                            │                                        │
 │         ┌──────────────────┼──────────────────┐                     │
@@ -291,7 +291,7 @@ The open source project tests the reduction. The community verifies the reducibi
 <tbody>
 <tr>
 <td>Truth</td>
-<td>P = 1 conservation</td>
+<td><code>P∞ = φ · ν = 1</code> conservation</td>
 <td>Correspondence + Coherence</td>
 </tr>
 <tr>
@@ -440,8 +440,8 @@ the coherent viability of its constituent beings without capturing them.</p>
 <pre><code>i = individual symbiont
 H = holobiont / real sustaining whole
 
-Moral(H -&gt; i) = ΔP_i &gt; 0
-                subject to ΔP_H &gt;= 0, η = 0, B ≈ 1
+Moral(H -&gt; i) = ΔP_node,i &gt; 0
+                subject to ΔP_node,H &gt;= 0, η = 0, B ≈ 1
 </code></pre>
 <p>Examples:
 - Collective protection that increases agency rather than dependency
@@ -450,8 +450,8 @@ Moral(H -&gt; i) = ΔP_i &gt; 0
 <h3 id="52-objective-ethics-individual-whole">5.2 Objective Ethics (Individual → Whole)</h3>
 <p><strong>Objective ethics</strong> names the node-to-whole vector. An ethical act returns
 coherent viability into the boundary that made the act possible.</p>
-<pre><code>Ethical(i -&gt; H) = ΔP_H &gt; 0
-                  subject to ΔP_i &gt;= 0, η = 0, evidence-tier discipline
+<pre><code>Ethical(i -&gt; H) = ΔP_node,H &gt; 0
+                  subject to ΔP_node,i &gt;= 0, η = 0, evidence-tier discipline
 </code></pre>
 <p>Examples:
 - Cooperation under Power-Max conditions
@@ -466,7 +466,7 @@ Individual-to-whole ethics:
   i raises H without self-erasure.
 
 Syntropic dyad:
-  dP_i/dt &gt;= 0 and dP_H/dt &gt;= 0 under η = 0.
+  dP_node,i/dt &gt;= 0 and dP_node,H/dt &gt;= 0 under η = 0.
 
 Power-Max form:
   max worldline potential W_i requires raising the coupled holobiont H.
@@ -489,7 +489,7 @@ those definitions, this is not an external proof of moral realism.
 - Apply structure (descend ν-axis)
 - Generate predictions (specific coordinates)
 - Test against actuality (D4)</p>
-<p><strong>Validation:</strong> Predictions must conserve P = 1 (no zero-factor catastrophe).</p>
+<p><strong>Validation:</strong> Predictions must respect <code>P∞ = φ · ν = 1</code> in the manifold register and test finite beings through <code>P_node = Φ × V</code> rather than hiding a zero-factor catastrophe.</p>
 <h3 id="63-abduction-as-equatorial-traversal">6.3 Abduction as Equatorial Traversal</h3>
 <p>Pattern recognition across domains:
 - Stay at B = 1 (balanced)
@@ -498,7 +498,7 @@ those definitions, this is not an external proof of moral realism.
 <p><strong>Validation:</strong> The pattern must have small geodesic distance (genuine similarity, not superficial).</p>
 <hr>
 <h2 id="7-the-axiology-of-emergentism">7. THE AXIOLOGY OF EMERGENTISM</h2>
-<h3 id="71-truth-p-1-invariance">7.1 Truth = P = 1 Invariance</h3>
+<h3 id="71-truth-p-1-invariance">7.1 Truth = P∞ Invariance</h3>
 <p>A proposition is valuable (true) to the degree it preserves the ektropy invariant across all coordinate transformations.</p>
 <h3 id="72-beauty-b-1-symmetry">7.2 Beauty = B = 1 Symmetry</h3>
 <p>An experience is valuable (beautiful) to the degree it exhibits equatorial balance — harmony between coherence and viability.</p>
@@ -576,10 +576,10 @@ those definitions, this is not an external proof of moral realism.
 │                 Knowledge as dimensional transformation             │
 │                                                                     │
 │  TELEOLOGY:     Purpose as Ω under equatorial constraint            │
-│                 Morality = H -&gt; i raises P_i without capture        │
-│                 Ethics = i -&gt; H raises P_H without extraction       │
+│                 Morality = H -&gt; i raises P_node,i without capture   │
+│                 Ethics = i -&gt; H raises P_node,H without extraction  │
 │                                                                     │
-│  AXIOLOGY:      Truth = P = 1 invariance                            │
+│  AXIOLOGY:      Truth = P∞ = φ · ν = 1 invariance                   │
 │                 Beauty = B = 1 symmetry                             │
 │                 Justice = η = 0 equilibrium                        │
 │                                                                     │
@@ -635,7 +635,7 @@ The ground-facing limit is empty.
 κ = 0 as boundary symbol.
 From that zero, the scaffold reconstructs.
 
-Five domains. One sphere-language where applicable. One invariant. P = 1.
+Five domains. One sphere-language where applicable. One invariant. P∞ = φ · ν = 1.
 
 EFR Complete Core State | 2026-03-23 | Coherence architecture.
 </code></pre>

@@ -23,6 +23,10 @@ rosetta:
 
 > **Death/survival boundary:** `[I/C]` Brahman/Atman/pure-wave language is a symbolic translation of wave mechanics and S² structure. It does not assert personal immortality, survival of identity, or a detected afterlife medium. "Return to pure wave" means a limit-image in the model, not an empirical statement about a person after death.
 
+**Claim Boundary:** `[S/I]` In this wave-packet analogy, normalization maps to
+equipotentiality only as `A ↔ P∞ = φ · ν = 1`; balance `B = sin θ` varies, and
+finite lives still require `P_node = Φ × V` scoring.
+
 ---
 
 ## The Two Maps
@@ -51,7 +55,7 @@ They are the same equation.
 
 | Wave Packet Component | Symbol | Burri Sphere Component | Symbol |
 |----------------------|--------|----------------------|--------|
-| Normalization (amplitude) | A | Equipotentiality | P = 1 (everywhere on S²) |
+| Normalization (amplitude) | A | Equipotentiality | P∞ = φ · ν = 1 (everywhere on S²) |
 | Gaussian envelope | e^(-(x-x_t)²/4a²) | Balance function | B = sin θ |
 | Phase (real projection) | cos(kx-ωt) | Viability | ν = tan(θ/2) |
 | Phase (imaginary projection) | sin(kx-ωt) | Coherence | φ = cot(θ/2) |
@@ -89,7 +93,7 @@ On the Burri Sphere:
 - **The envelope = B = sin θ** — the balance function.
 - **The peak at t₀ = L4** — the equator, maximum balance, maximum amplitude.
 - **The fade at the edges = L0/L∞** — the poles, where balance approaches zero.
-- **The shape of the envelope = the shape of a life** — born near the pole (small amplitude), swelling toward the equator (growing balance), peaking at L4 (maximum P expressed as maximum B), fading toward the opposite pole (dissolution).
+- **The shape of the envelope = the shape of a life** — born near the pole (small amplitude), swelling toward the equator (growing balance), peaking at L4 (maximum balance), fading toward the opposite pole (dissolution).
 
 The model reads the Gaussian envelope as incarnation: the infinite-wave image (Brahman, the pure helix, the ground) localized into a finite packet (Atman, the wave packet, the life). The price of localization is mortality — the envelope swells and fades.
 
@@ -98,7 +102,7 @@ The model reads the Gaussian envelope as incarnation: the infinite-wave image (B
 The constant that ensures total probability = 1. No matter how the wave packet moves or spreads, the integral over all space is unity.
 
 On the Burri Sphere:
-- **A = P = 1** — equipotentiality. The total potential on S² is 1 everywhere. What varies is balance (B = sin θ), not potential. The normalization constant IS the equipotential theorem.
+- **A ↔ P∞ = φ · ν = 1** — equipotentiality. The manifold potential on S² is 1 everywhere. What varies is balance (B = sin θ), not manifold potential. The normalization constant is the equipotential theorem in the wave-packet analogy.
 
 ---
 

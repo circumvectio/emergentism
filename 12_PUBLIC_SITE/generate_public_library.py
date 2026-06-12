@@ -40,17 +40,22 @@ directly (the only available lever):
         equilibrium (AX4), not unconditional Nash.
   - formal/16-efr-transcendentals/            : added the 2026-06-12 model-shorthand
         boundary for Beauty, Truth, and Justice; the formulas are coordinate handles
-        for asymptotic teleology, not metaphysical proofs.
+        for asymptotic teleology, not metaphysical proofs; later tightened bare
+        `P = 1` language to `P∞ = φ·ν = 1`.
   - value/01-transcendentals/                 : added 2026-06-12 as a hand-patched
         public bridge for objective teleology as asymptotic approach toward Beauty,
         Truth, and Justice.
+  - formal/17-efr-ontology-complete/          : tightened moral/ethical formulas to
+        `P_node,i` / `P_node,H` and changed bare `P = 1` value-language to `P∞`.
+  - trinity/13-the-wave-packet/               : tightened equipotentiality to
+        `P∞ = φ·ν = 1` and removed ambiguous "maximum P" language.
 
 BEFORE ANY FUTURE REGEN: restore the handoff bundle AND apply these same
-corrections to the SOURCE markdown (formal-16 / formal-17 / formal-33 / paper-H
-public bundle
-files), or this generator will overwrite the hand-patches and reintroduce the
-over-claims. Also fix the title-doubling: when a source heading already ends in
-"— Emergentism", `page_shell(title=...)` appends a second one.
+corrections to the SOURCE markdown (formal-16 / formal-17 / formal-33 /
+trinity-13 / paper-H public bundle files), or this generator will overwrite the
+hand-patches and reintroduce the over-claims. Also fix the title-doubling: when
+a source heading already ends in "— Emergentism", `page_shell(title=...)`
+appends a second one.
 """
 
 from __future__ import annotations

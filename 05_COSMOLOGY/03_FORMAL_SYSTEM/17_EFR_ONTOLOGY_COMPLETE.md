@@ -23,7 +23,9 @@ rosetta:
 the framework's current domains, not final possession of ontology. Structural
 claims hold inside the accepted Burri Sphere grammar; claims that this closes
 Being, value, or moral realism for agents outside the framework remain
-interpretive or conjectural.
+interpretive or conjectural. In the teleology formulas below, `ΔP_node,i` and
+`ΔP_node,H` are finite-node scores; the manifold invariant remains
+`P∞ = φ · ν = 1`.
 
 ---
 
@@ -49,7 +51,7 @@ The EFR framework now comprises five integrated domains:
 │                    ┌───────┴───────┐                                │
 │                    │  THE BURRI    │                                │
 │                    │    SPHERE     │                                │
-│                    │   (S², P=1)   │                                │
+│                    │ (S², P∞=1)    │                                │
 │                    └───────┬───────┘                                │
 │                            │                                        │
 │         ┌──────────────────┼──────────────────┐                     │
@@ -162,7 +164,7 @@ The open source project tests the reduction. The community verifies the reducibi
 
 | Transcendental | Geometric Invariant | Expression |
 |----------------|--------------------|------------|
-| Truth | P = 1 conservation | Correspondence + Coherence |
+| Truth | `P∞ = φ · ν = 1` conservation | Correspondence + Coherence |
 | Beauty | B = 1 symmetry | Harmonic balance |
 | Justice | η = 0 equilibrium | Non-extractive ordering |
 
@@ -296,8 +298,8 @@ the coherent viability of its constituent beings without capturing them.
 i = individual symbiont
 H = holobiont / real sustaining whole
 
-Moral(H -> i) = ΔP_i > 0
-                subject to ΔP_H >= 0, η = 0, B ≈ 1
+Moral(H -> i) = ΔP_node,i > 0
+                subject to ΔP_node,H >= 0, η = 0, B ≈ 1
 ```
 
 Examples:
@@ -311,8 +313,8 @@ Examples:
 coherent viability into the boundary that made the act possible.
 
 ```
-Ethical(i -> H) = ΔP_H > 0
-                  subject to ΔP_i >= 0, η = 0, evidence-tier discipline
+Ethical(i -> H) = ΔP_node,H > 0
+                  subject to ΔP_node,i >= 0, η = 0, evidence-tier discipline
 ```
 
 Examples:
@@ -332,7 +334,7 @@ Individual-to-whole ethics:
   i raises H without self-erasure.
 
 Syntropic dyad:
-  dP_i/dt >= 0 and dP_H/dt >= 0 under η = 0.
+  dP_node,i/dt >= 0 and dP_node,H/dt >= 0 under η = 0.
 
 Power-Max form:
   max worldline potential W_i requires raising the coupled holobiont H.
@@ -363,7 +365,9 @@ From general (D5) to specific (D4):
 - Generate predictions (specific coordinates)
 - Test against actuality (D4)
 
-**Validation:** Predictions must conserve P = 1 (no zero-factor catastrophe).
+**Validation:** Predictions must respect `P∞ = φ · ν = 1` in the manifold
+register and test finite beings through `P_node = Φ × V` rather than hiding a
+zero-factor catastrophe.
 
 ### 6.3 Abduction as Equatorial Traversal
 
@@ -378,7 +382,7 @@ Pattern recognition across domains:
 
 ## 7. THE AXIOLOGY OF EMERGENTISM
 
-### 7.1 Truth = P = 1 Invariance
+### 7.1 Truth = P∞ Invariance
 
 A proposition is valuable (true) to the degree it preserves the ektropy invariant across all coordinate transformations.
 
@@ -440,10 +444,10 @@ The framework commits to:
 │                 Knowledge as dimensional transformation             │
 │                                                                     │
 │  TELEOLOGY:     Purpose as Ω under equatorial constraint            │
-│                 Morality = H -> i raises P_i without capture        │
-│                 Ethics = i -> H raises P_H without extraction       │
+│                 Morality = H -> i raises P_node,i without capture   │
+│                 Ethics = i -> H raises P_node,H without extraction  │
 │                                                                     │
-│  AXIOLOGY:      Truth = P = 1 invariance                            │
+│  AXIOLOGY:      Truth = P∞ = φ · ν = 1 invariance                   │
 │                 Beauty = B = 1 symmetry                             │
 │                 Justice = η = 0 equilibrium                        │
 │                                                                     │
@@ -485,7 +489,7 @@ The ground-facing limit is empty.
 κ = 0 as boundary symbol.
 From that zero, the scaffold reconstructs.
 
-Five domains. One sphere-language where applicable. One invariant. P = 1.
+Five domains. One sphere-language where applicable. One invariant. `P∞ = φ · ν = 1`.
 
 EFR Complete Core State | 2026-03-23 | Coherence architecture.
 ```
