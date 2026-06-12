@@ -469,7 +469,7 @@ B = sin θ        →   B = sech(s)
 E = (log ν)²     →   E = s²
 ```
 
-So the ethic `ΣΔB > 0` becomes, in this chart: move toward `s = 0`. Equivalently, reduce squared log-distance from unity. Suda's energy `E = s²` is the distance penalty; the framework's balance `B = sech(s)` is its bounded complement. At `s = 0`, `E = 0` and `B = 1`. At either pole, `E → ∞` and `B → 0`.
+So the balance side of A2 becomes, in this chart: move toward `s = 0`. Equivalently, reduce squared log-distance from unity. The current ethic is wider than this balance-only statement: it requires dyadic `P_node` rise for the finite node and its sustaining boundary under `η = 0`, with `ΣΔB / ΣΔP_node > 0` as the widest-boundary audit. Suda's energy `E = s²` is the distance penalty; the framework's balance `B = sech(s)` is its bounded complement. At `s = 0`, `E = 0` and `B = 1`. At either pole, `E → ∞` and `B → 0`.
 
 The change is therefore not a new doctrine. It is a coordinate correction. The additive line remains the right chart for sequence, order, and ordinary addition. The logarithmic line is the right chart for reciprocal ontology because the Titans are multiplicative boundary-frames, and in log coordinates multiplicative structure speaks in the simplest possible language: a zero sum around `1`.
 
@@ -588,7 +588,7 @@ Within the S² model:
 
 **Finity is where emergence balances.** Strong emergence from below and weak emergence from above meet at the equator. The upward novelty and the downward constraint are exactly matched at `φ = ν = 1`.
 
-This is why the framework's ethic is `ΣΔB > 0` — movement toward the equator. Not because the equator is "good" in a moral-realist sense, but because the equator is the model's balance locus, where the two directions of emergence are read as being in equilibrium. Move away from the equator and one direction dominates — either the bottom-up novelty overwhelms the top-down constraint (collapse into chaos) or the top-down constraint crushes the bottom-up novelty (collapse into rigidity).
+This is why the framework keeps `ΣΔB > 0` visible as the balance audit — movement toward the equator. Not because the equator alone is "good" in a moral-realist sense, but because the equator is the model's balance locus, where the two directions of emergence are read as being in equilibrium. The ethical move adds the contact-register condition: `ΔP_node,i > 0` and `ΔP_node,H > 0` under `η = 0`. Move away from the equator and one direction dominates — either the bottom-up novelty overwhelms the top-down constraint (collapse into chaos) or the top-down constraint crushes the bottom-up novelty (collapse into rigidity).
 
 ---
 
@@ -613,7 +613,7 @@ This is why the framework's ethic is `ΣΔB > 0` — movement toward the equator
 13. The D0→D6 scaffold is the dimensional unfolding of this pattern.
 14. Strong emergence going up (genesis), weak emergence going down (governance).
 15. Both meet at finity — the equator — where emergence balances.
-16. The ethic follows: ΣΔB > 0. Direction toward the equator is the operational definition of good.
+16. The ethic follows as dyadic A2: raise P_node,i and P_node,H together under η = 0; direction toward the equator remains the ΣΔB / ΣΔP_node balance audit.
 ```
 
 ---

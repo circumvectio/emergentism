@@ -224,7 +224,7 @@ The fifth dimension. The φ-ν plane is open. The four operators are active. The
 
 ### Log coordinate
 
-`s` is free to vary on the open line. The system can move toward `s = 0` (balance) or away from it (imbalance). The ethic `ΣΔB > 0` is the claim that movement toward `s = 0` is the operational definition of good. The extraction coefficient η measures whether the system is moving toward or away from the equator.
+`s` is free to vary on the open line. The system can move toward `s = 0` (balance) or away from it (imbalance). In the current A2, this is the balance/log audit, not the whole ethic: `ΣΔB / ΣΔP_node > 0` asks whether movement toward `s = 0` also accompanies dyadic finite-node rise. The extraction coefficient η measures whether the system is moving toward or away from the equator by raising both the node and its sustaining boundary, or by hiding one side's loss.
 
 ### Sphere position
 
@@ -245,7 +245,7 @@ Within D5, pattern flows through a replicator stack exactly as energy flows thro
 
 ### Ontological reading `[I]`
 
-D5 is agency / selection; consciousness is the lived-interior reading of that agency `[I]`. The φ-ν plane is the space of choice. The ethic is the direction. The balance function is the compass.
+D5 is agency / selection; consciousness is the lived-interior reading of that agency `[I]`. The φ-ν plane is the space of choice. Dyadic A2 gives the move direction; the balance function is the compass.
 
 ### Action-register reading
 

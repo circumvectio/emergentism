@@ -183,7 +183,7 @@ The log chart does not change the content. It reveals that the content is **hype
 
 ### 4.3 The Equator Is the Origin
 
-In log coordinates, the equator (`φ = ν = 1, B = 1`) is `s = 0` — the origin of the additive line. Every direction is measured from it. Every distance is `|s|`. The ethic "move toward B = 1" becomes "move toward s = 0" — minimize your log-distance from finity.
+In log coordinates, the equator (`φ = ν = 1, B = 1`) is `s = 0` — the origin of the additive line. Every direction is measured from it. Every distance is `|s|`. The balance-register audit "move toward B = 1" becomes "move toward s = 0" — minimize your log-distance from finity. The current A2 ethic adds the contact-register condition: the finite node and its sustaining boundary must rise together under `η = 0`.
 
 ### 4.4 The Two Poles Are Symmetric
 

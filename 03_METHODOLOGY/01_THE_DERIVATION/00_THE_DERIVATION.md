@@ -354,15 +354,16 @@ conjectural systemic awareness claim, not an established neuroscientific identit
 
 ---
 
-### Step 15: Ethics Is Physics
+### Step 15: Ethics Is Constrained Physics
 
-**Claim:** The ethic `ΣΔB > 0` / `ΣΔP_node > 0` is not a moral commandment. It is the statement that, under the model, systems preserve value by moving toward balance and realized node performance. "Ought" is the gradient of "is" only after W1 and W2 below are accepted.
+**Claim:** The current ethic is dyadic A2: `ΔP_node,i > 0` and `ΔP_node,H > 0` under `η = 0`, with `ΣΔB / ΣΔP_node > 0` as the widest-boundary balance audit. It is not a moral commandment. It is the statement that, under the model and the declared wager, systems preserve value by raising finite node and sustaining boundary together while remaining auditable in balance space. "Ought" is the gradient of "is" only after W1, W2, and the dyadic no-extraction condition below are accepted.
 
-**Support:** Steps 3-8 derive that the equator is the ground state and that extraction is negative-sum. The ethic follows IF you accept two axioms: (a) persistence is valued (not derived — a philosophical wager), and (b) the widest perceivable system boundary is the relevant scope (also not derived).
+**Support:** Steps 3-8 derive that the equator is the ground state inside the balance model and that extraction is self-undermining under the stated coupling conditions. The ethic follows IF you accept three wagers: (a) persistence is valued (not derived — a philosophical wager), (b) the widest perceivable system boundary is the relevant scope (also not derived), and (c) one-sided gain bought by degrading the real sustaining boundary is refused as extraction.
 
 **The axioms the ethic requires:**
 - Axiom W1: Persistence has value. (The framework cannot derive this from within itself.)
 - Axiom W2: The scope of ethical evaluation is the widest perceivable boundary. (Operational choice.)
+- Axiom W3: Dyadic rise under `η = 0` is the chosen action rule; balance is the audit, not the whole ethic.
 
 **Tier: [I] Interpretive.** The mathematics (Steps 3-8) is [A]/[S]. The ethic requires W1 and W2, which are wagers.
 

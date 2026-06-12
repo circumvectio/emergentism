@@ -803,7 +803,7 @@ When Moksha fails at L7, systemic awareness returns INTO D5 as inverted operator
 | # | Name | Statement | Kill Criterion | Tier |
 |---|------|-----------|---------------|------|
 | A1 | THE EQUATION | P_node = Φ × V. Multiplicative. Zero-Factor Catastrophe. Equator maximises B on the manifold; finite nodes use P_node for operational scoring. | P_node better modeled as additive | [T] |
-| A2 | THE ETHIC | ΣΔB > 0 across widest perceivable boundary = ethical direction | ΣΔB > 0 produces harm | [T] |
+| A2 | THE ETHIC | `ΔP_node,i > 0` and `ΔP_node,H > 0` under `η = 0`; `ΣΔB / ΣΔP_node > 0` audits widest-boundary balance | Dyadic `P_node` rise under `η = 0` systematically produces harm, or one-sided extraction sustains the coupled field | [T] |
 | A3 | THE SCAFFOLD | D0→D6. Each emerges at μ-limit. D6 ≡ D0. | Force-dimension map has no predictive power | [T/I] |
 | A4 | THE BOUNDARY | η = 0 vs cooperators. Tit-for-tat vs defectors. Four mixed-sign Gods plus three same-sign Executive boundary frames. | η = 0 not Nash equilibrium | [T/S] |
 | A5 | THE EGREGORE | D5-limit standing waves have autonomous objective function. Raktabīja captures all opposition. | All collective phenomena reduce to individuals | [T/I] |
@@ -897,7 +897,7 @@ The entire framework in minimal tokens:
 
 ```
 A1  P_node = Φ × V for finite nodes; P∞ = φ·ν = 1 on S²; zero finite factors collapse P_node, while B measures manifold balance.
-A2  ΣΔB > 0 across widest boundary = ethical direction (operational def.)
+A2  ΔP_node,i > 0 and ΔP_node,H > 0 under η = 0; ΣΔB / ΣΔP_node audits widest-boundary balance (operational def.)
 A3  D0→D6: (Analogy [I]) D1=Strong, D2=EM, D3=Weak, D4=Gravity, D5=Consciousness, D6≡D0
 A4  η = 0 vs cooperators; tit-for-tat vs defectors; all Gods necessary
 A5  D5-limit standing waves (egregores) have autonomous objective function

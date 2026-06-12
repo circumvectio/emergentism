@@ -125,7 +125,7 @@ The two poles (0 and ∞) are symmetric about the centre. The reciprocal map `x 
 
 The world of arithmetic and relation. Numbers exist, but they exist on a line where **1 is the centre** and **0 and ∞ are symmetric poles.** Every operation simplifies: multiplication becomes addition, division becomes subtraction, reciprocation becomes negation.
 
-The energy `E = s²` measures distance from the centre. The balance `B = sech(s)` measures proximity to finity. The ethic "move toward s = 0" is the first ethical direction — minimize your log-distance from unity.
+The energy `E = s²` measures distance from the centre. The balance `B = sech(s)` measures proximity to finity. In the balance register, "move toward `s = 0`" is the first audit direction — minimize log-distance from unity. It becomes ethical action only when paired with dyadic `P_node` rise under `η = 0`.
 
 ### The key insight `[A]`
 
@@ -133,7 +133,7 @@ This is elementary mathematics. Suda's three-chart apparatus expresses it rigoro
 
 ### Ontological reading `[I]`
 
-D1 is the dimension of **relation** — the first relational structure. Numbers relate to each other through reciprocal symmetry. The centre is not nothingness (0) but unity (1). The ethic emerges: **move toward unity, minimize distance from finity.**
+D1 is the dimension of **relation** — the first relational structure. Numbers relate to each other through reciprocal symmetry. The centre is not nothingness (0) but unity (1). The balance compass emerges: **move toward unity, minimize distance from finity.**
 
 ---
 
@@ -247,7 +247,7 @@ This is EXACTLY the same structure as the logarithmic realignment:
 
 D4 is the dimension of **energy and dynamics** — where the sphere stops being a static surface and becomes a dynamical system. The past cone (accumulated coherence, `φ`-dominant) and the future cone (available viability, `ν`-dominant) overlap at the causal vertex. The overlap is what the torus geometry captures.
 
-The ethic "minimize H" is the physical expression of "move toward s = 0": the Hamiltonian `H = 2 cosh(s)` is minimized at `s = 0` (the equator), where `H = 2`. Moving away from the equator increases H — imbalance is energetically expensive.
+The balance audit "minimize H" is the physical expression of "move toward s = 0": the Hamiltonian `H = 2 cosh(s)` is minimized at `s = 0` (the equator), where `H = 2`. Moving away from the equator increases H — imbalance is energetically expensive.
 
 ### Ontological reading `[I]`
 

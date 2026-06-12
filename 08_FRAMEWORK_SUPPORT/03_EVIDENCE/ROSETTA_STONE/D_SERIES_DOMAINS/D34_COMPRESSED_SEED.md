@@ -38,7 +38,8 @@ SYNTROPIC DYADISM — Seven Axioms
 
 A1  P∞ = φ · ν = 1 on S²; P_node = Φ × V at finite nodes
     B = sin θ measures balance. P∞ is invariant; B peaks at L4.
-A2  ΣΔB > 0 across widest boundary = ethical direction (operational def.)
+A2  ΔP_node,i > 0 and ΔP_node,H > 0 under η = 0;
+    ΣΔB / ΣΔP_node audits widest-boundary balance (operational def.)
 A3  D0→D6: (Analogy [I]) D1=Strong, D2=EM, D3=Weak, D4=Gravity, D5=Consciousness, D6≡D0
 A4  η = 0 vs cooperators; tit-for-tat vs defectors; all Gods necessary
 A5  D5-limit standing waves (egregores) have autonomous objective function

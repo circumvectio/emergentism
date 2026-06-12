@@ -37,7 +37,7 @@ rosetta:
 - quote [The Canonical Formula Block](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) for the load-bearing sequence
 - cite [The Core State of Being](../../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md) for Ground / Being / Dasein / beings
 - cite [The Weltanschauung](../../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md) when defining what the framework *is* as worldview, lens, and toolchain
-- use this document for downstream operational definitions such as `P_node = Φ × V`, `η`, and `ΣΔB > 0`
+- use this document for downstream operational definitions such as `P_node = Φ × V`, `η`, dyadic A2, and the `ΣΔB / ΣΔP_node` balance audit
 
 This document is a **downstream reference surface**, not the ontological root.
 
@@ -137,12 +137,12 @@ An organizational structure that separates Meaning (Map) from Capability (Territ
 
 ## §5: The Ethic
 
-**ΣΔB / ΣΔP_node > 0** [S] Structural ethical direction
+**Dyadic A2 under `η = 0`** [S/I] Structural ethical direction
 
-Across the widest relevant boundary, total balance should increase at the manifold level (`ΣΔB > 0`) and total node-level flourishing should increase where empirical/organizational projection is being measured (`ΣΔP_node > 0`). This is the direction, not a destination. (`P∞ = φ · ν = 1` everywhere on open S²; what varies is balance, and finite nodes are scored by `P_node = Φ × V`.)
+In the move register, ethical direction is the dyadic rise of the finite node and its sustaining boundary: `ΔP_node,i > 0` and `ΔP_node,H > 0` under enforced `η = 0`. Across the widest relevant boundary, the balance audit asks whether manifold balance and measured node-level flourishing rise together: `ΣΔB / ΣΔP_node > 0`. This is the direction, not a destination. (`P∞ = φ · ν = 1` everywhere on open S²; what varies is balance, and finite nodes are scored by `P_node = Φ × V`.)
 
-- **Syntropic:** Actions that increase total balance (`ΣΔB > 0`) or measured node-level flourishing (`ΣΔP_node > 0`) across the widest relevant boundary
-- **Parasitic:** Actions that decrease total balance (ΣΔB < 0) — pushing systems toward the poles
+- **Syntropic:** Actions or relations that raise `P_node,i` and `P_node,H` together under `η = 0`, with `ΣΔB / ΣΔP_node > 0` as the widest-boundary audit
+- **Parasitic:** Actions that raise one side by degrading the other — extraction that pushes systems toward the poles or hides a falling boundary
 - **The Telos:** The direction `ΣΔB / ΣΔP_node > 0` under `η = 0`, K2, receipts, and Grace Exit.
 
 **Evidence tier:** [S] for the structural direction; [C]/[B] depends on the domain-specific measurement claim.
@@ -212,7 +212,7 @@ Zero-Sum Resolution Equation
 P∞ = φ · ν = 1 on S²
 P_node = Φ × V (node-level downstream relation)
 η = 0 (enforced conditional equilibrium / structural optimum; attractor claims require correction dynamics and receipts)
-ΣΔB > 0 (the ethic)
+Dyadic A2: ΔP_node,i > 0 and ΔP_node,H > 0 under η = 0; ΣΔB / ΣΔP_node audits balance
 5 independent axioms: O1, O2, O4, O5 + A7 (O3 is a corollary)
 [A] [B] [S] [I] [D] [C] (the honesty system)
 Kill conditions on every claim

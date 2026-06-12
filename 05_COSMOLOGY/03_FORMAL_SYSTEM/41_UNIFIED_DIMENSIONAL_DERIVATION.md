@@ -126,7 +126,7 @@ The equator (φ = ν = 1, equivalently θ = π/2) is the **unique global maximum
 2. Socially optimal (no tension between self-interest and collective interest)
 3. Stable against extraction (any zero-sum transfer away from the equator reduces total balance)
 
-**Output of Stage 2:** The equator is the unique equilibrium of the balance-only game. The ethic "move toward balance" (ΣΔB > 0) is not a moral assertion but a structural consequence of the stated payoff: any displacement from the maximum is self-punishing inside that model.
+**Output of Stage 2:** The equator is the unique equilibrium of the balance-only game. The local audit "move toward balance" (`ΣΔB > 0`) is not a moral assertion but a structural consequence of the stated payoff: any displacement from the maximum is self-punishing inside that model. Current A2 becomes ethical only at the next register, where dyadic `P_node` rise under `η = 0` is also required.
 
 ---
 

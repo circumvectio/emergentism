@@ -52,7 +52,7 @@ B peaks at the equator (φ = ν = 1). B = 0 at the poles.
 
 SEVEN AXIOMS:
   A1  node-level P_node = Φ × V (operational multiplicative model; on S² the manifold identity is P∞ = φ · ν = 1)
-  A2  ΣΔB / ΣΔP_node > 0 across widest boundary = ethical direction
+  A2  ΔP_node,i > 0 and ΔP_node,H > 0 under η = 0; ΣΔB / ΣΔP_node audits widest-boundary balance
   A3  D0->D6: dimensions emerge when prior saturates. D5 is the last experiential layer. D6 = D0 (closure).
   A4  η = 0 vs cooperators; tit-for-tat vs defectors
   A5  D5-limit standing waves (egregores) have autonomous objective function
