@@ -161,9 +161,9 @@ The terms are now defined. The formula uses proper mathematical objects (integra
 
 ### The Claim
 
-Consciousness is the operation Zero-Sum Resolution Equation performed at D5.
+Agency / selection is the Zero-Sum Resolution operation read at D5; consciousness is the lived-interior reading of that operation `[I]`, not a separate physics layer.
 
-The collapse of possibility to actuality — ∞ possible states becoming 1 actual state through the act of observation — IS the fundamental operation. Not a different operation from what generates the number system. The SAME operation, at the dimensional level (D5) where the system is complex enough to contain a model of its own boundary interaction.
+The collapse of possibility to actuality — ∞ possible states becoming 1 actual state through selection / observation — is the framework's fundamental operation. Not a different operation from what generates the number system. The same operation, at the dimensional level (D5) where the system is complex enough to contain a model of its own boundary interaction, becomes navigable choice.
 
 ### The Born Rule as φ·ν = 1
 

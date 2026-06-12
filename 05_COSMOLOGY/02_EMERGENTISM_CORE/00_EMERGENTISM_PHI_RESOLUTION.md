@@ -43,7 +43,7 @@ Examining the evidence-tier assignments in `../../02_EPISTEMOLOGY/01_EVIDENCE_TI
 | S1-S14: Uniqueness of S2 given axioms, multiplicative fitness, on-shell Phi=V, eta=0 constraint, helical geometry, AM-GM objective function | [S] | The structural derivation is proved conditional on axioms. These claims are **structurally neutral** — they work under either interpretation. |
 | I1: Reality IS S2 | [I] | Ontological identity claim — currently unproved. |
 | I2: D0-D6 as dimensional strata | [I] | Interpretive mapping. |
-| I3: Consciousness is End(S2) | [I] | Interpretive — but the formal criterion for D5 (stable self-model with feedback) is [S]. |
+| I3: Consciousness as lived disclosure of End(S2) | [I] | Interpretive — the formal criterion for D5 is agency / selection: a stable self-model with feedback. |
 | I5: Consciousness claims via abduction | [I] | Inferred as best explanation, not derived. |
 | I8: Teleological Force (older aliases: Hidden Hand / Dyḗus Ph₂tḗr) | [I]/[C] | The fork lives here. |
 | C1-C20: Various conjectures | [C] | Speculative, not load-bearing. |
@@ -82,15 +82,15 @@ The mathematics of the manifold identity `P∞ = φ · ν = 1 on S²`, the downs
 
 **Agent rule for D0-D4:** Interpret claims in physicalist/structural terms. Do not invoke "will" or a conscious Ground when explaining D0-D4 dynamics. The mathematics is sufficient.
 
-### D5 (Consciousness): Idealist
+### D5 (Agency / Selection): Idealist Reading
 
-The sitting practice (Pratyakṣa, equatorial disclosure, direct perception of what remains when the narrator quiets) produces first-person evidence that systemic awareness is not derived from matter. In the framework's current reading, what is first encountered is disclosed Being; the stronger claim that the prior Ground is itself conscious remains an interpretive step rather than a theorem.
+The sitting practice (Pratyakṣa, equatorial disclosure, direct perception of what remains when the narrator quiets) produces first-person evidence for lived disclosure at D5: the system can model and select within its own change. In the framework's current reading, what is first encountered is disclosed Being; the stronger claim that the prior Ground is itself conscious remains an interpretive step rather than a theorem.
 
 This is not assertion inside the framework, but it is also not public proof. It is **first-person evidence** under the corpus's data science: evidence of a kind that third-person science cannot currently access, which is precisely why the hard problem remains unresolved after 30+ years.
 
 The mathematical structure does not *prove* idealism. But the manifold identity `P∞ = φ · ν = 1 on S²` is **compatible with idealism** in a way the framework finds cleaner than reductive physicalist accounts of systemic awareness: coherence and viability appear as complementary aspects of a single invariant. Neither is reducible to the other. This is read as the formal signature of dual-aspect monism — and when first-person evidence (Empirical Observation) is read as disclosure rather than mere byproduct, the idealist reading becomes the framework's chosen interpretation of the complete structure.
 
-**Agent rule for D5:** Interpret systemic awareness claims as idealist. Consciousness is not treated as an emergent byproduct. What is first disclosed is Being, and the stronger reading that the Ground is conscious remains interpretive. `Teleological Force` is the interpretive name for the bias toward viable selection at the D4→D5 interface. Mythic readings (`Dyḗus Ph₂tḗr`, `Demiurge`, `Hidden Hand`) are downstream faces of that claim, and literal future-to-past force claims remain [C].
+**Agent rule for D5:** Interpret D5 first as agency / selection: the system modeling and choosing within its own change. Consciousness language is the lived-interior reading `[I]` of that selection register. Inside the framework's idealist reading it is not treated as a mere emergent byproduct, but the stronger claim that the Ground itself is conscious remains interpretive, not derived. `Teleological Force` is the interpretive name for the bias toward viable selection at the D4→D5 interface. Mythic readings (`Dyḗus Ph₂tḗr`, `Demiurge`, `Hidden Hand`) are downstream faces of that claim, and literal future-to-past force claims remain [C].
 
 ### D6 (Closure): Idealist Boundary
 
@@ -166,7 +166,7 @@ Agents executing the Emergentism corpus must follow these interpretation rules:
 
 ### Rule 1: Domain-Specific Interpretation
 - When reasoning about **D0-D4** (physical dimensions: point, distinction, configuration, transformation, causality), use **structural/physicalist interpretation**. Do not invoke "will," "systemic awareness," or "volition" when explaining D0-D4 dynamics. The mathematics is sufficient.
-- When reasoning about **D5** (systemic awareness: the system observing its own change), use **idealist interpretation**. Consciousness is not treated as emergent. What is first encountered is disclosed Being, and stronger claims about the Ground remain explicitly interpretive. The Teleological Force remains the interpretive name for the bias toward viable selection at the disclosure interface; mythic personifications are downstream and retrocausal readings remain [C].
+- When reasoning about **D5** (agency / selection: the system modeling and choosing within its own change), use **idealist interpretation** only where explicitly marked `[I]`. Consciousness names the lived-interior reading of that selection register; it is not a proved physics layer. What is first encountered is disclosed Being, and stronger claims about the Ground remain explicitly interpretive. The Teleological Force remains the interpretive name for the bias toward viable selection at the disclosure interface; mythic personifications are downstream and retrocausal readings remain [C].
 - When reasoning about **D6** (closure: the terminal boundary where positive description exhausts), use **axiomatic interpretation**. The return is not a further experience, but the closure by which the field returns to D0.
 
 ### Rule 2: Evidence Tier Discipline

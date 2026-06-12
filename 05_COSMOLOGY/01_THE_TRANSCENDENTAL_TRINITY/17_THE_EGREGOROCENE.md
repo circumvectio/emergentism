@@ -36,7 +36,7 @@ The wolf stabilises Yellowstone.
 
 ### The Anthropocene (D4-D5)
 
-The age of humans. Individual and institutional humans shape the planet. Consciousness (D5) emerges and begins selecting — choosing, building, extracting. Institutions form as standing waves in human systemic awareness. Corporations, religions, nations partition the economic and ideological landscape.
+The age of humans. Individual and institutional humans shape the planet. D5 agency / selection becomes institutional: humans begin choosing, building, extracting, and correcting at planetary scale. Institutions form as standing waves in human lived selection and shared attention `[I]`. Corporations, religions, nations partition the economic and ideological landscape.
 
 Duration: ~10,000 years (agriculture to present).
 Substrate: human brains, human networks, human attention.

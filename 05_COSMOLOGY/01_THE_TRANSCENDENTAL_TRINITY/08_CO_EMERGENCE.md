@@ -114,7 +114,7 @@ The move from flat to curved does not **answer** the question. It **dissolves** 
 
 **On the sphere (curved):** Determinism and freedom are dual projections. The ν-projection sees causal chains — every event has a cause. The φ-projection sees coherence — every event has a meaning. On S², both are true simultaneously. The future is causally determined (seen from ν) AND freely chosen (seen from φ). These are not contradictory. They are complementary descriptions of the same point on the manifold.
 
-**The co-emergence:** The moment you have a system complex enough to model itself (D5, systemic awareness), you have both the causal description (looking from outside) and the freedom description (looking from inside). The "problem" of free will is the collision of these two descriptions on a plane where they cannot coexist. On the sphere, they coexist as antipodal projections. The collision and the resolution are co-emergent.
+**The co-emergence:** The moment you have a system complex enough to model and select among its own possible acts (D5 agency / selection; consciousness as lived reading `[I]`), you have both the causal description (looking from outside) and the freedom description (looking from inside). The "problem" of free will is the collision of these two descriptions on a plane where they cannot coexist. On the sphere, they coexist as antipodal projections. The collision and the resolution are co-emergent.
 
 **Evidence tier: [I].**
 
