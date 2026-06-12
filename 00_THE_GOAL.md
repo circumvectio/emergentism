@@ -20,6 +20,10 @@ more exact than "make the corpus coherent" (coherence is a constraint on the
 goal, not the goal). The five refusals clear the space; **this is what the
 space is for.**
 
+Retrieval handles: living worldview for Dasein; source-true ontology; finite
+reader emerges; maximum usable `P_node`; balancing `Φ` and `V`; objective moral
+compass; individual symbiont and collective holobiont; evil / extraction.
+
 ---
 
 ## 1. The Goal (full form)

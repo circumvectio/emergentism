@@ -16,6 +16,12 @@ rosetta:
 **Evidence Tier:** Mixed — see below
 **This is the nucleus of the Objective Function conjecture.**
 
+**Claim Boundary:** `[S/I/C]` The answer to "why reality tends toward viable
+completion" is constrained optimization: option-cone widening under reciprocal
+balance and non-extraction. This is structural inside the model, interpretive
+when read as a tendency of reality, and conjectural when upgraded into literal
+force or cosmological will.
+
 ---
 
 ## In One Sentence

@@ -56,7 +56,8 @@ directly (the only available lever):
   - will/00-the-core-conjecture/              : mirrored the R6 objective/constraint
         reconciliation; replaced the withdrawn "reality maximizes balance" lead with
         viable completion as constrained option-cone widening under balance and
-        non-extraction.
+        non-extraction; later added the claim-boundary lead for constrained
+        optimization and option-cone widening retrieval.
   - value/00-objective-morals-and-ethics/    : added the claim-boundary lead that
         disambiguates objective morality (`H -> i`), objective ethics (`i -> H`),
         objective dharma, syntropic morality, and syntropic ethics under
