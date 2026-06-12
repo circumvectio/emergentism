@@ -198,7 +198,7 @@ teleological assertions:
 | Gate | Question | Application to F5 |
 |------|----------|-------------------|
 | **1. Source Provenance** | Where did this come from? | Derived from φ·ν=1 on S² and the inequality (φ−ν)²≥0. Traceable to `00_THE_MASTER_ROSETTA.md` and `02_THE_DERIVATION/`. |
-| **2. Cross-Domain** | Does it appear in ≥1 other Rosetta column? | The equatorial attractor appears in Psychology (L4 integrated), Neuroscience (L4 balanced cortex), Plato (Timocracy), Yoga (Karma/Anāhata), Initiatory (L4 heart-equator across 5+ traditions). |
+| **2. Cross-Domain** | Does it appear in ≥1 other Rosetta column? | The equatorial balance motif appears in Psychology (L4 integrated), Neuroscience (L4 balanced cortex), Plato (Timocracy), Yoga (Karma/Anāhata), Initiatory (L4 heart-equator across 5+ traditions). Read "attractor" only conditionally: L4 is a return target where practice, governance, and feedback create correction dynamics. |
 | **3. Projection Filter** | Could I be seeing this because I want it to? | Yes — the equator is aesthetically satisfying. Disconfirmation check: if organisms or systems exist that thrive at extreme φ or extreme ν without balance, the equatorial telos is wrong. |
 | **4. Tier Honesty** | Can this be honestly tiered? | [S] for formal derivations. [I] for organism applications. Honest. |
 | **5. Boundary** | Where does this stop? | F5 describes directional gradients on S². It does not describe moral goodness, social policy, or personal virtue directly. Those are downstream translations, not the geometry itself. |

@@ -124,12 +124,14 @@ An organizational structure that separates Meaning (Map) from Capability (Territ
 
 **Evidence tier:** [S] — structural diagnostic.
 
-> **Caveat:** The η = 0 theorem assumes iterated games without forgiveness mechanisms. Tit-for-tat
-> with occasional forgiveness (Axelrod 1984) can sustain cooperation even with small η > 0
-> events. The theorem should be read as: η = 0 is the OPTIMAL configuration, not the only
-> viable one. Systems with η slightly above 0 may be sustainable if forgiveness mechanisms
-> are robust. The claim is that η = 0 is the unique ATTRACTOR, not that any deviation
-> immediately causes collapse.
+> **Caveat:** The η = 0 theorem assumes a deliberately narrowed, enforced game.
+> Tit-for-tat with occasional forgiveness (Axelrod 1984) can sustain cooperation
+> even with small η > 0 events, and one-shot or hidden extraction can pay locally.
+> The theorem should be read as: η = 0 is the structural optimum / target profile
+> under coupling, horizon, measurement, and enforcement, not the only viable local
+> state. The stronger attractor claim is conditional: η = 0 functions as an attractor
+> only where feedback, correction, receipts, exit rights, and enforcement return
+> deviations toward non-extraction.
 
 ---
 
@@ -209,7 +211,7 @@ The framework is designed to die if wrong. Every prediction has a specific condi
 Zero-Sum Resolution Equation
 P∞ = φ · ν = 1 on S²
 P_node = Φ × V (node-level downstream relation)
-η = 0 (structural optimum / attractor claim; empirical use needs receipts)
+η = 0 (enforced conditional equilibrium / structural optimum; attractor claims require correction dynamics and receipts)
 ΣΔB > 0 (the ethic)
 5 independent axioms: O1, O2, O4, O5 + A7 (O3 is a corollary)
 [A] [B] [S] [I] [D] [C] (the honesty system)
