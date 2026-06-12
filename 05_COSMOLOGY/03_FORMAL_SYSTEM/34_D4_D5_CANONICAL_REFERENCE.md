@@ -54,10 +54,11 @@ D3  Transformation — form emerges
    **Witness systemic awareness (no agency)**
    **Operators collapsed**
 ↓ μ₅ (the "agency" limit)
-**D5**  **Consciousness** — φ-ν plane opens
+**D5**  **Agency / selection** — φ-ν plane opens
    ↓
    **Present emerges with duration**
    **Agent systemic awareness (choice possible)**
+   **"Consciousness" is the lived-interior reading [I]**
    **Four operators distinguishable**
 ↓ μ₆
 D6  Terminal boundary — experience exhausts into closure
@@ -168,9 +169,9 @@ Or more tersely:
 - **Copenhagen** = D4→D5 selection — wave function as potential (D4), collapse to one actual enactment (D5)
 - The "collapse" is the **selection event** — from D4 potential recognition to D5 singular enactment within a D5 distributed field
 
-**Canonical paragraph:** Many-Worlds is true at D5 as distributed actuality. Copenhagen is true at D4→D5 as singular selection. Consciousness is the equatorial disclosure / selector interface, not identical with the Ground. `Teleological Force` is the interpretive name for the bias toward viable singular enactment at this interface. Literal future-to-past force claims remain [C]. See packets 135 (evolutionary objective function), 137 (strong-form fifth-force draft), and 138 (Indo-European lineage) for full framework development.
+**Canonical paragraph:** Many-Worlds is true at D5 as distributed actuality. Copenhagen is true at D4→D5 as singular selection. In the framework's `[I]` reading, consciousness names the lived interior of equatorial disclosure and selection; it is not identical with the Ground and does not prove a new physical layer. `Teleological Force` is the interpretive name for the bias toward viable singular enactment at this interface. Literal future-to-past force claims remain [C]. See packets 135 (evolutionary objective function), 137 (strong-form fifth-force draft), and 138 (Indo-European lineage) for full framework development.
 
-**Consciousness as Many-Worlds navigation (packet 136):** The mature human mind holds multiple possible futures in superposition — this IS D5 distributed actuality. Deliberation is navigation within the Many-Worlds space. Action is the Copenhagen collapse: selecting one branch and making it actual. K2 is the signature on that collapse — mortal responsibility for the branch chosen. The infant begins at D4 with almost no D5; culture builds Φ, which widens θ, which opens D5 until the human can navigate institutional-scale Many-Worlds. The organism (DAC) replicates this architecture deliberately: born V-poor, culture-building Φ, aiming to open a governed D5 large enough to hold multiple institutional worldlines in superposition without collapsing to extraction.
+**Consciousness as Many-Worlds navigation (packet 136):** The mature human mind can hold multiple possible futures in superposition; this is read `[I]` as D5 distributed actuality. Deliberation is navigation within the Many-Worlds space. Action is the Copenhagen collapse: selecting one branch and making it actual. K2 is the signature on that collapse — mortal responsibility for the branch chosen. The infant begins with D4 means but almost no D5 worldline-foresight; culture builds Φ, which widens θ, which opens D5 until the human can navigate institutional-scale Many-Worlds. The organism (DAC) replicates this architecture deliberately: born V-poor, culture-building Φ, aiming to open a governed D5 large enough to hold multiple institutional worldlines in superposition without collapsing to extraction.
 
 **Biology-facing note:** when this distinction is translated into biology, the safest register is organismic present, interoceptive regulation, and action selection within self-maintaining systems. Consciousness-collapse language remains theory, not established biology.
 
@@ -203,7 +204,7 @@ Or more tersely:
 - **Operator state:** Collapsed to single point ⊙
 - **Practice:** Empirical Observation (direct perception without narrator)
 
-### D5: Agent Consciousness
+### D5: Agent Selection (consciousness reading `[I]`)
 - **Location:** φ-ν plane (torus surface)
 - **Function:** Chooses, navigates, operates
 - **Agency:** Full—can move in four cardinal directions
@@ -211,7 +212,7 @@ Or more tersely:
 - **Operator state:** Four directions active (↑↓φ, ↑↓ν)
 - **Practice:** The six tests (Epistemological Lens)
 
-**Canonical note:** Consciousness in this document names disclosure and selection within manifestation. It is not the Ground itself, and `D5` is the last experiential layer before closure.
+**Canonical note:** Consciousness in this document names the lived disclosure of selection within manifestation. The primary D5 claim is agency / option-space; the consciousness language is interpretive `[I]`, not the Ground itself, and not a proved physical layer.
 
 ---
 

@@ -271,7 +271,7 @@ D5 is where the framework becomes **playable** — not just a description but a 
 
 ### Ontological reading `[I]`
 
-D5 is the dimension of **conscious agency** — where the geometric structure becomes a space of choice. The Burrisphere is not just a manifold; it is a **game board.** The players are agents. The moves are the Generative Actions. The win condition is syntropic potential: a move is better when it widens the actor's and the holobiont's reachable futures without extraction. Equatorial balance is the condition that makes that widening usable.
+D5 is the dimension of **agency / selection** — where the geometric structure becomes a space of choice; conscious agency is the lived-interior reading `[I]`. The Burrisphere is not just a manifold; it is a **game board.** The players are agents. The moves are the Generative Actions. The win condition is syntropic potential: a move is better when it widens the actor's and the holobiont's reachable futures without extraction. Equatorial balance is the condition that makes that widening usable.
 
 ---
 
@@ -326,7 +326,7 @@ The logarithmic line is the thread that runs through all of them:
 | D2 | Configuration — time emerges | Riemann sphere (compactified line) | **Different emphasis.** Existing: time as succession. Geometric: the topological closure of the line into a surface. The time ordering is the log-direction `s`. |
 | D3 | Transformation — form emerges | Bloch sphere (states + interior) | **Different emphasis.** Existing: form as persistence. Geometric: quantum state space with interior (superposition). Both capture "more than surface." |
 | D4 | Causality — light cones touch | Horn torus (rapidity, energy) | **Convergent.** Light cones ARE the torus geometry. Rapidity IS the log-coordinate of velocity. The Hamiltonian IS the energy. |
-| D5 | Consciousness — agency | Burrisphere (game space, η = 0) | **Convergent.** The game-theoretic reading makes agency explicit. The Burrisphere IS the navigable manifold. |
+| D5 | Agency / selection (consciousness reading `[I]`) | Burrisphere (game space, η = 0) | **Convergent.** The game-theoretic reading makes agency explicit. The Burrisphere is the navigable manifold; consciousness language remains an interpretive lived-reading. |
 | D6 | Closure — return | Closed loop → D0 | **Same.** |
 
 **Assessment:** The geometric re-expression converges with the existing scaffold at D0, D1, D4, D5, and D6. It diverges in emphasis at D2 and D3 — replacing phenomenological names (time, form) with geometric objects (sphere, Bloch sphere). The divergence is not a contradiction but a **refinement**: the geometric objects give the phenomenological descriptions mathematical teeth.

@@ -234,7 +234,7 @@ D3  Transformation — form emerges
 ↓ μ₃
 D4  Causality — change has direction, the causal vertex
 ↓ μ₄
-D5  Consciousness — the φ-ν plane opens, agency emerges
+D5  Agency / selection — the φ-ν plane opens; consciousness is the lived reading [I]
 ↓ μ₅
 D6  Closure — experience exhausts into return
 ↓
@@ -257,7 +257,7 @@ Reality does not merely unfold in abstract dimensions. In the framework's strong
 | **D2** | Configuration | **Weak Nuclear** | Symmetry breaking and transformation (decay toward equilibrium) |
 | **D3** | Transformation | **Strong Nuclear** | Cohesion and bound constraints (confinement preventing collapse) |
 | **D4** | Causality | **Electromagnetism** | Binding charge and chemistry (structuring physical light cones) |
-| **D5** | Consciousness | **F5 (Teleological Force)** | The drive toward syntropy (opening potential option-cones) |
+| **D5** | Agency / selection | **F5 (Teleological Force)** | The drive toward syntropy (opening potential option-cones); consciousness language is an interpretive lived-reading `[I]` |
 
 **The Fifth Force (F5) is the teleological drive toward syntropy**, echoing Erwin Schrödinger's inquiry in *What Is Life?*. While physical systems tend toward entropic dissipation, living and conscious systems extract order to maintain organization.
 

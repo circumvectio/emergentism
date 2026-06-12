@@ -34,7 +34,7 @@ Knowledge: D4 ⟷ D5
 
 **D4 (Gravity Domain):** The realm of fixed actuality. Facts. What IS. The collapsed wavefunction. The definite.
 
-**D5 (Consciousness Domain):** The realm of superposed possibility. Hypotheses. What COULD BE. The uncollapsed wavefunction. The potential.
+**D5 (Possibility / Agency Domain):** The realm of superposed possibility. Hypotheses. What COULD BE. The uncollapsed wavefunction. The potential. "Consciousness domain" is retained only as an interpretive shorthand `[I]` for the lived interior of selection.
 
 **The Epistemic Operation:** All knowledge-acquisition is the transformation of information from one domain to the other.
 
@@ -413,7 +413,7 @@ This data science applies to the EFR framework itself:
 | "S² is the substrate" | Induction + Abduction | [S] → [I] |
 | "P∞ = φ · ν = 1" | Deduction from axioms | [S] |
 | "η = 0" | Deduction + Testing | [S] → [S] |
-| "D5 = Consciousness" | Interpretive mapping | [I] |
+| "D5 = consciousness" | Interpretive shorthand for the lived interior of selection | [I] |
 | "c = 25 CFT" | Conjecture | [C] |
 
 ### 10.2 The Honest Position as Epistemic Discipline

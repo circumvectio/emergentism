@@ -54,7 +54,7 @@ depends_on:
 | **D2** | Configuration | Time — the first "before vs after" | Directed succession; D2 shadow: `1/0 → ∞` (the distinction sequence opens) | `s` acquires direction (±) | → small | L2 Kālī 💀 |
 | **D3** | Transformation | Form — change has shape, pattern exists | Pattern stabilises; D3 shadow: reciprocal symmetry `φ·ν = 1` (void × totality yields finity) | `s` acquires curvature | → measurable | L3 Kṛṣṇa ◇ |
 | **D4** | Causality | Direction — change has cause, cones touch | Causal vertex; D4 reading: `⊙ · ⊙` — the equator reflecting on itself as the Now | `s = 0` approached (equator) | → 1⁻ | L4 Arjuna ⚔ |
-| **D5** | Consciousness | Agency — the φ-ν plane opens, choice exists | Equator unfolds into `(•, ○)` — the two reciprocal axes become navigable | `s` free to vary on open line | varies | L5 Brahmā ○ |
+| **D5** | Agency / selection | The φ-ν plane opens; choice exists; consciousness is the lived reading `[I]` | Equator unfolds into `(•, ○)` — the two reciprocal axes become navigable | `s` free to vary on open line | varies | L5 Brahmā ○ |
 | **D6** | Closure | Return — experience exhausts into ground | Apophatic return; D6 reading: `⊙ / ⊙ = 1` — finity witnesses itself and releases | `s → undefined` (return to D0) | → 0 | L6 Śiva • |
 | **D6≡D0** | Ouroboros | The end is the beginning | — | — | 0 | L7 Viṣṇu ⊙ (witness) |
 
@@ -206,17 +206,17 @@ D4 is causality — the structure that gives change its direction. It is where t
 
 **What happens:** The equator opens into a plane. The collapsed point ⊙ unfolds into two axes (φ and ν). The "Now" becomes a "Present" with duration. Agency is born — room to choose, to act, to navigate. The four operators become distinguishable as cardinal directions.
 
-This is the crossing where **strong emergence is most dramatic.** A causal point (D4) is not the same as an agent that can choose (D5). The emergence of free will, consciousness, agency — however named — is the μ₄ crossing.
+This is the crossing where **strong emergence is most dramatic.** A causal point (D4) is not the same as an agent that can choose (D5). The emergence of agency and option-space is the μ₄ crossing; "consciousness" names the lived-interior reading `[I]`, not a proved physical layer.
 
 **Weak emergence going down.** Once D5 stabilises, it becomes a compact constraint on D4. The agent's choices reshape the causal vertex. The present reaches back and reshapes the Now.
 
 ---
 
-## D5 — Consciousness (Agency)
+## D5 — Agency / Selection (consciousness reading `[I]`)
 
 ### What it is
 
-The fifth dimension. The φ-ν plane is open. The four operators are active. The system can choose, navigate, form intentions, and act on them. The Trika (⊙ = • × ○) fully articulates. This is where consciousness, agency, and the moral axis live.
+The fifth dimension. The φ-ν plane is open. The four operators are active. The system can choose, navigate, form intentions, and act on them. The Trika (⊙ = • × ○) fully articulates. This is where agency and the moral axis live; consciousness language is the lived-experience gloss `[I]`.
 
 ### Log coordinate
 
@@ -241,7 +241,7 @@ Within D5, pattern flows through a replicator stack exactly as energy flows thro
 
 ### Ontological reading `[I]`
 
-D5 is consciousness — not as a mysterious epiphenomenon, but as the dimensional level where the system acquires agency. The φ-ν plane is the space of choice. The ethic is the direction. The balance function is the compass.
+D5 is agency / selection; consciousness is the lived-interior reading of that agency `[I]`. The φ-ν plane is the space of choice. The ethic is the direction. The balance function is the compass.
 
 ---
 
@@ -344,15 +344,15 @@ D3  Form           Transformation. Shape. Persistence across change.
 │   Log:           s ≈ 0 approached, the zero sum becomes exact
 │
 D4  Causality      Direction. The Now-point. Light cones touch. Witness without agency.
-│   μ₄             The critical crossing: consciousness appears.
+│   μ₄             The critical crossing: agency / option-space appears.
 │   Generator:     ⊙ → (•, ○)  (finity unfolds into two axes)
 │   Strong:        Agency is not implicit in causality.
 │   Log:           s = 0 exactly at vertex; s free to vary on the plane
 │
-D5  Consciousness  Agency. The φ-ν plane. Choice, ethics, navigation.
+D5  Agency         Selection. The φ-ν plane. Choice, ethics, navigation.
 │   μ₅             Terminal crossing: return.
 │   Generator:     ⊙ / ⊙ = 1   (finity divided by itself = return to unit)
-│   Strong:        Closure is not implicit in consciousness.
+│   Strong:        Closure is not implicit in agency.
 │   Log:           s → undefined (apophasis)
 │
 D6  Closure        Return. Experience exhausts into ground. The ladder dissolves.

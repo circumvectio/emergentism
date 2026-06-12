@@ -92,7 +92,7 @@ Where:
 | D2 | EM | Field configuration | Field strength |
 | D3 | Weak | Transformation rules | Transformation energy |
 | D4 | Gravity | Causal structure | Causal power |
-| D5 | Consciousness | Self-model coherence | Selection capability |
+| D5 | Agency / selection | Self-model coherence (consciousness reading `[I]`) | Selection capability |
 | D6 | Closure / Return | Boundary identity | Return to origin |
 
 **Key Insight:** Each dimensional level is a different "latitude" on S² where φ and ν manifest differently.

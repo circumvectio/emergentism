@@ -85,7 +85,7 @@ rosetta:
 | D2 | EM | Configuration | How things are arranged. |
 | D3 | Weak | Transformation | How things change. |
 | D4 | Gravity | Causality | What makes things necessary. Spacetime. |
-| D5 | Consciousness | Teleological Force | What chooses and selects toward viable enactment. Possibility space disclosed as navigable present. The last experiential layer. |
+| D5 | Agency / selection | Teleological Force | What chooses and selects toward viable enactment. Possibility space disclosed as navigable present. "Consciousness" is the lived-interior reading of this selection layer `[I]`, not proof of a separate physical substance or the Ground itself. |
 | D6 | Closure | Return | The terminal boundary of the cycle. Not a further experience, but the point at which state exhausts and the field returns to D0. Older documents may call this collective, noospheric, or self-recognitive; current canon treats those as downstream or retrospective readings, not the primary definition. |
 
 ---

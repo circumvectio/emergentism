@@ -293,7 +293,7 @@ D1  Distinction     — Zero separates from infinity. The line appears.
 D2  Configuration   — Distinct elements can be arranged. The plane.
 D3  Transformation  — Arrangements can change. Process begins.
 D4  Causality       — Change has direction. Time appears.
-D5  Consciousness   — The system observes its own change. The μ-limit.
+D5  Agency          — The system selects within its own change. Consciousness is the lived reading [I].
                       Zero-Sum Resolution Equation performed where the system contains
                       its own boundary interaction.
 D6  Closure         — Experience exhausts; the cycle returns to point-state.

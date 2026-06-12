@@ -149,6 +149,15 @@ directly (the only available lever):
 	        D4 means-to-act) and bounded old "extraction is negative-sum" slogans
 	        to the equatorial balance/displacement model, not unconditional
 	        one-shot payoff claims.
+	  - sacred/00-glossary/, formal/14-efr-epistemology-triad/,
+	        formal/17-efr-ontology-complete/,
+	        formal/34-d4-d5-canonical-reference/, dasein/,
+	        complete-ontology/, canon/the-complete-ontology-of-reality/,
+	        geometric-ontology/, canon/the-geometric-ontology-of-reality/
+	                                              : fenced stale "D5 = Consciousness"
+	        phrasing so D5 is agency / selection / worldline-foresight first, and
+	        consciousness is only the `[I]` lived-interior reading of selection, not
+	        proof of a separate physical layer or the Ground itself.
   - memetic/                                    : normalized the Dasein game
         reading action test from stale `P_i` / `P_H` to `P_node,i` /
         `P_node,H`.
