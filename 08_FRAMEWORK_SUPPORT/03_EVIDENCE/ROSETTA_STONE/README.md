@@ -85,8 +85,8 @@ the wheel. The game is to keep the wheel turning until the next lawful action
 raises the finite node and its sustaining whole without extraction:
 
 ```text
-P_i = Φ_i × V_i
-P_H = Φ_H × V_H
+P_node,i = Φ_i × V_i
+P_node,H = Φ_H × V_H
 η = 0
 ```
 

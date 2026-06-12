@@ -107,6 +107,15 @@ directly (the only available lever):
         Dasein action test from stale `P_i` / `P_H` to `P_node,i` /
         `P_node,H` so the remaining-questions public echo matches the
         Goal/Soul Loop/syntropic-dyad spine.
+  - memetic/                                    : normalized the Dasein game
+        reading action test from stale `P_i` / `P_H` to `P_node,i` /
+        `P_node,H`.
+  - operators/mf-294-egregores-are-horn-networks/
+                                              : normalized carrier/network
+        product notation from generic `P_i` / `P_individual` to finite-node
+        `P_node,i` / `P_node,individual`.
+  - operators/mf-292-the-bekenstein-ceiling/  : normalized remaining finite-node
+        product prose from bare "total/local/minimum P" to `P_node`.
 
 BEFORE ANY FUTURE REGEN: restore the handoff bundle AND apply these same
 corrections to the SOURCE markdown (formal-16 / formal-17 / formal-33 /
@@ -116,7 +125,7 @@ files, plus axiology-public objective-morals-and-ethics and good/evil public
 bundle files, plus trinity-public dharma-yuddha, plus the ring/commandment and
 formal-09/10/11 Power-Max label public bundles, plus theurgy-public and
 glossary-public will/become-as-gods bundles, plus meta-public
-remaining-questions), or this generator will overwrite
+remaining-questions, plus memetic-public and operators-public MF-292/MF-294), or this generator will overwrite
 the hand-patches and reintroduce the over-claims. Also fix the title-doubling: when a source heading already ends in
 "— Emergentism", `page_shell(title=...)` appends a second one.
 """

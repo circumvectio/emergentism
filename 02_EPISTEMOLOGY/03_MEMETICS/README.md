@@ -31,8 +31,8 @@ the symbiont as fuel for a pattern that no longer serves life.
 So the lane's practical test is the same syntropic dyad used in value theory:
 
 ```text
-P_i = Φ_i × V_i
-P_H = Φ_H × V_H
+P_node,i = Φ_i × V_i
+P_node,H = Φ_H × V_H
 η = 0
 ```
 
@@ -90,5 +90,5 @@ Active source-owner subfolder. Downstream public claims should route through thi
 
 1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
 2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Apply the Soul Loop before amplifying a memetic claim.** Ask whether the pattern raises both `P_i` and `P_H` under `η=0`; if not, route it as capture, not dharma.
+3. **Apply the Soul Loop before amplifying a memetic claim.** Ask whether the pattern raises both `P_node,i` and `P_node,H` under `η=0`; if not, route it as capture, not dharma.
 4. **Canonical Path:** `01_EMERGENTISM/02_EPISTEMOLOGY/03_MEMETICS/README.md`

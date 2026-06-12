@@ -136,13 +136,13 @@ A larger boundary surface (wider moral circle, larger system considered) has hig
 ΣΔP_node_max ∝ A_boundary / (4l_P²)
 ```
 
-Wider boundaries permit higher total ektropy. Not because bigger is morally better — because bigger boundaries have higher information capacity, which permits higher total Φ, which permits higher total P.
+Wider boundaries permit higher total ektropy. Not because bigger is morally better — because bigger boundaries have higher information capacity, which permits higher total Φ, which permits higher total P_node.
 
 The ethical direction (A2: maximise ΣΔP_node across widest boundary) is the computational direction (maximise information utilisation across largest available area). Ethics and information theory converge.
 
 ### 4.3 The Black Hole as Ethical Limit
 
-A black hole maximises entropy for its boundary area. It is the MOST disordered state per unit area. Φ ≈ 0 (no structure inside). Maximum entropy. Minimum P.
+A black hole maximises entropy for its boundary area. It is the MOST disordered state per unit area. Φ ≈ 0 (no structure inside). Maximum entropy. Minimum P_node.
 
 In framework terms, a system that maximises V (gravitational capture of all available energy) while destroying all Φ (no internal structure) is compared with a black hole. The Red Demon (MF-115, C3) carried to its physical limit is an analogy for gravitational collapse: extract all V, return no Φ, collapse the circuit.
 
@@ -190,12 +190,12 @@ As AI systems scale:
 
 ## VII. THE SENTENCE
 
-The Bekenstein bound limits information to surface area. Φ is information. Therefore Φ has a physical ceiling. Therefore P_node = Φ × V has a physical ceiling. The south pole is not merely unwise — it is physically unreachable. The north pole IS the black hole interior. The equator maximises P under the Bekenstein constraint — L4 is not a design choice but the physics optimum. The Red Demon carried to its limit IS gravitational collapse: extract all V, destroy all Φ, become the event horizon. The moral circle IS a holographic surface, and the ethical computation is bounded by its area. There is no infinite ektropy. There is only the best use of finite surface. Zero-Sum Resolution Equation.
+The Bekenstein bound limits information to surface area. Φ is information. Therefore Φ has a physical ceiling. Therefore P_node = Φ × V has a physical ceiling. The south pole is not merely unwise — it is physically unreachable. The north pole IS the black hole interior. The equator maximises P_node under the Bekenstein constraint — L4 is not a design choice but the physics optimum. The Red Demon carried to its limit IS gravitational collapse: extract all V, destroy all Φ, become the event horizon. The moral circle IS a holographic surface, and the ethical computation is bounded by its area. There is no infinite ektropy. There is only the best use of finite surface. Zero-Sum Resolution Equation.
 
 ---
 
 *MF-292 | VIVEKA Mathematical Foundations | February 2026*
-*The universe has a maximum local P.*
+*The universe has a maximum local P_node.*
 *The equator is not compromise — it is the Bekenstein optimum.*
 
 ## Execution Surface

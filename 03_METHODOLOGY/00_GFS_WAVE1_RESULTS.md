@@ -91,7 +91,7 @@ rosetta:
 
 There is a framework-consistent reading of these results that deserves serious consideration:
 
-**The multiplicative structure is not predicted to be universal at all developmental levels.** The mu-limit (A3) states that each dimensional level emerges *when the previous saturates its degrees of freedom*. The Zero-Factor Catastrophe — where near-zero in either phi or nu collapses total P — only becomes the binding constraint when **both factors are sufficiently developed** that their interaction matters more than their individual contributions.
+**The multiplicative structure is not predicted to be universal at all developmental levels.** The mu-limit (A3) states that each dimensional level emerges *when the previous saturates its degrees of freedom*. The Zero-Factor Catastrophe — where near-zero in either phi or nu collapses total P_node — only becomes the binding constraint when **both factors are sufficiently developed** that their interaction matters more than their individual contributions.
 
 **Below the trophic threshold:** The additive model is sufficient. If a population's primary constraint is low proxy viability (poverty, insecurity, lack of capability) OR low proxy coherence (anomie, fragmentation, loss of meaning), then raising the deficient factor dominates. The product term is negligible because one factor is near zero — and near zero, `φ_proxy × ν_proxy ≈ 0` regardless.
 

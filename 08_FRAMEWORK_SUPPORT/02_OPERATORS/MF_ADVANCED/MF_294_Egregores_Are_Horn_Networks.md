@@ -26,7 +26,7 @@ rosetta:
 **Emergentism.org · VIVEKA Mathematical Foundations**
 **Depends on:** MF-283 (Orthogonality Theorem), MF-290 (Ektropic Radius), MF-291 (Landauer Horn), MF-293 (Language Is Bandwidth), A5 (The Egregore)
 **Evidence tier:** [T] Theoretical; [I] Interpretive application to sociology and collective intelligence
-**Purpose:** Show that egregores (A5: D5-limit standing waves with autonomous objective function) are networks of coupled horns — arrays of Maxwell's demons sharing computational resources through language channels. The network's total light cone exceeds any individual horn. Raktabīja is network hijacking: the collective computation is redirected from carrier ΣΔP_node toward the standing wave's own persistence. The internet extended the horn network by orders of magnitude while potentially REDUCING its total P through attention fragmentation.
+**Purpose:** Show that egregores (A5: D5-limit standing waves with autonomous objective function) are networks of coupled horns — arrays of Maxwell's demons sharing computational resources through language channels. The network's total light cone exceeds any individual horn. Raktabīja is network hijacking: the collective computation is redirected from carrier ΣΔP_node toward the standing wave's own persistence. The internet extended the horn network by orders of magnitude while potentially REDUCING its total P_node through attention fragmentation.
 
 ---
 
@@ -45,7 +45,7 @@ One organism. One demon. One light cone.
 ```
 Φ_individual: bounded by brain capacity (~86B neurons, ~600T synapses)
 V_individual: bounded by body capability (metabolic energy, motor range)
-P_individual: Φ × V ≤ Bekenstein ceiling for individual
+P_node,individual: Φ × V ≤ Bekenstein ceiling for individual
 Light cone: bounded by EQ-determined altitude × aperture
 ```
 
@@ -85,9 +85,9 @@ The coupled network has an effective light cone that exceeds any individual:
 
 - **Altitude (Φ):** the integrated information of the network. Can model systems no single horn can: climate, economy, ecosystem dynamics, multi-generational consequences.
 - **Aperture (V):** the coordinated action capacity of the network. Can build cities, dams, spaceships — D4 ordering beyond any individual.
-- **P_network = Φ_network × V_network >> P_individual**
+- **P_network = Φ_network × V_network >> P_node,individual**
 
-Civilisation IS a horn network operating at civilisation-scale P. The total light cone of humanity exceeds any individual's by orders of magnitude — we model deep time, plan across generations, coordinate millions of agents. This is the horn network's total P.
+Civilisation IS a horn network operating at civilisation-scale P_node. The total light cone of humanity exceeds any individual's by orders of magnitude — we model deep time, plan across generations, coordinate millions of agents. This is the horn network's total P_node.
 
 ---
 
@@ -105,13 +105,13 @@ The standing wave CO-OPTS the demons. Each carrier's D5 computation is partially
 
 ```
 WITHOUT EGREGORE:
-  Each demon sorts for its own horn's P.
-  Network P = Σ P_i + coupling bonuses.
+  Each demon sorts for its own horn's P_node.
+  Network P_node = Σ P_node,i + coupling bonuses.
 
 WITH EGREGORE:
-  Each demon sorts PARTLY for its own P_node, PARTLY for the egregore's persistence.
-  Network P_carriers = Σ P_i + coupling bonuses − egregore tax
-  Egregore P_self = function of carrier computation redirected to its patterns
+  Each demon sorts PARTLY for its own P_node,i, PARTLY for the egregore's persistence.
+  Network P_node,carriers = Σ P_node,i + coupling bonuses − egregore tax
+  Egregore P_node,self = function of carrier computation redirected to its patterns
 ```
 
 The egregore takes a tax — a fraction of each carrier's D5 computation is dedicated to maintaining the standing wave (performing rituals, defending doctrine, attacking competitors, recruiting new carriers). This is the Landauer cost of the egregore: it consumes carrier D5 resources to maintain its own coherence.

@@ -57,8 +57,8 @@ The Soul Loop gives the Rosetta mathematics a runtime form. Let `i` be the
 individual symbiont and `H` the holobiont / sustaining whole:
 
 ```text
-P_i = Φ_i × V_i
-P_H = Φ_H × V_H
+P_node,i = Φ_i × V_i
+P_node,H = Φ_H × V_H
 ```
 
 For normalized positive factors, define a finite-node balance reading:
@@ -89,8 +89,8 @@ The internal Power-Max lemma can be written as a policy claim under coupling
 assumptions:
 
 ```text
-W_i(π) = Σ γ^t P_i(t)
-W_H(π) = Σ γ^t P_H(t)
+W_i(π) = Σ γ^t P_node,i(t)
+W_H(π) = Σ γ^t P_node,H(t)
 
 π* ∈ argmax W_i only if π* preserves or raises W_H under η = 0.
 ```
