@@ -52,7 +52,7 @@ The model's ground-facing limit has been named: κ = 0, the empty string $\varno
 
 What remains is the *practice*: how to maintain $P∞ = \varphi \cdot \nu = 1$ under perturbation. The D0–D6 scaffold does not eliminate the need for judgment, ethics, or contemplation. It provides the coordinate system within which those activities operate. The sitting practice (K=0 reduction) is not a replacement for thought — it is the method of returning to the ground-facing limit from which thought reappears.
 
-The Power-Max Lemma ($\Sigma P_{node}$ is maximized when each $P_{node,i}$ is maximized cooperatively under coupling, long horizon, and enforced $\eta = 0$) does not tell you *how* to cooperate in a specific situation. The extraction coefficient $\eta$ classifies systems as Good ($\eta < 1$), Bad ($\eta \approx 1$), or Evil ($\eta \to \infty$) — but navigating the boundary between them, in lived practice, remains philosophy's work.
+The Power-Max Lemma does not tell you *how* to cooperate in a specific situation. In the finite-node register it says only this: under real coupling, long horizon, multiplicative $P_{node} = \Phi \times V$, and enforced $\eta = 0$, durable action is searched on trajectories that preserve or raise $P_{node,i}$ while preserving or raising $P_{node,H}$. The extraction coefficient $\eta$ is therefore a diagnostic, not a moral oracle: $\eta = 0$ names reciprocal, non-extractive exchange; $\eta < 0$ names net giving or regenerative contribution; and $\eta > 0$ names extraction whose severity depends on boundary, consent, receipts, horizon, and downstream $P_{node}$ effects. Navigating those boundaries, in lived practice, remains philosophy's work.
 
 ## 4. THE FRAMEWORK CONNECTION
 

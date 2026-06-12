@@ -47,13 +47,13 @@ The error is treating evil as either the ABSENCE of good (privatio boni, the Aug
 
 Within the S² reading, neither framing is sufficient. Evil is not mere absence — the sphere has no voids inside the model. Every point on S² has both Φ and V components; there is no coordinate where goodness is simply missing. Evil is not equal opposition either — there is no anti-sphere, no negative geometry fighting the good.
 
-The framework introduces the extraction coefficient η to make the distinction precise:
+The framework introduces the extraction coefficient η to make the distinction precise. This document uses the live **move-register** normalization: η is a property of an action or trajectory, not a static point on the sphere. The older EFR ratio-register is still useful for substrate accounting, but the moral compass here is the game register used by the Power-Max Lemma:
 
-- **Good (η < 1):** Operations that regenerate more than they consume. The system gains coherence and capability over cycles. This is the regime of constructive recursion — P_{t+1} > P_t.
+- **Good (η = 0, or η < 0 without capture):** Operations that preserve or raise the actor and field together. η = 0 is reciprocal, non-extractive exchange; η < 0 is net giving or regenerative contribution, provided the gift does not become debt, control, or hidden capture. This is the regime of constructive recursion — P_{t+1} > P_t without degrading the coupled field.
 
-- **Bad (η ≈ 1):** Operations that consume roughly what they regenerate. Natural destruction within the cycle — predation, death, decay. This is trophic balance. The lion kills the gazelle. The forest fire clears deadwood. The system neither grows nor collapses. This is not evil. It is the maintenance cost of a living geometry.
+- **Cyclic cost / bad (bounded η > 0 inside a repaired cycle):** Operations that consume, damage, or impose cost while remaining coupled to regeneration and repair. Natural destruction within the cycle — predation, death, decay — belongs here when the wider field remains regenerative. This is not evil. It is the maintenance cost of a living geometry.
 
-- **Evil (η → ∞):** Operations that extract without regeneration. The system loses coherence permanently. The agent takes and does not return. This is not destruction within the cycle — it is the elimination of the cycle itself.
+- **Evil (runaway η > 0, tending toward η → ∞):** Operations that extract without regeneration. The system loses coherence permanently. The agent takes and does not return. This is not destruction within the cycle — it is the elimination of the cycle itself.
 
 The problem of evil conflates all three. This is the error.
 
@@ -61,11 +61,11 @@ The problem of evil conflates all three. This is the error.
 
 On S², the framework separates the problem into three distinct phenomena:
 
-**Bad (η ≈ 1) is structurally ordinary in this model.** The Burri Sphere requires φ·ν = 1 at every point. Cycles include destruction as well as creation. A universe without predation, without death, without entropy, would not resemble a living finite manifold. Bad is the maintenance cost of a living geometry. The framework does not justify suffering by appeal to a high-priority plan; it distinguishes cyclic cost from extraction.
+**Cyclic cost is structurally ordinary in this model.** The Burri Sphere requires φ·ν = 1 at every point. Cycles include destruction as well as creation. A universe without predation, without death, without entropy, would not resemble a living finite manifold. Bounded, repaired cost is the maintenance cost of a living geometry. The framework does not justify suffering by appeal to a high-priority plan; it distinguishes cyclic cost from runaway extraction.
 
 **Suffering is off-equator displacement.** Suffering is the experience of being away from the equator (Φ = 1, V = 1). Depleted coherence (Φ → 0) produces meaninglessness, dissociation, despair. Depleted viability (V → 0) produces pain, incapacity, death. Suffering is real. It is also positional — it indicates where the agent is on the sphere, not a metaphysical verdict about the nature of reality.
 
-**Evil (η → ∞) is read as False Vacuum instability, not high-priority permission.** The excluded 4th operator — pure extraction, ground negation — is structurally incoherent at the equator. An agent balanced at `Φ = 1, V = 1` needs no restorative violence to preserve itself. But agents off-equator — depleted, desperate, disconnected from the cycle — can attempt to widen the gap `(φ - ν)² > 0`. Evil is interpreted as localized expenditure of energy attempting to hold an extraction-state against restorative pressure. It is the attempt to build a permanent False Vacuum.
+**Evil (runaway η > 0, tending toward η → ∞) is read as False Vacuum instability, not high-priority permission.** The excluded 4th operator — pure extraction, ground negation — is structurally incoherent at the equator. An agent balanced at `Φ = 1, V = 1` needs no restorative violence to preserve itself. But agents off-equator — depleted, desperate, disconnected from the cycle — can attempt to widen the gap `(φ - ν)² > 0`. Evil is interpreted as localized expenditure of energy attempting to hold an extraction-state against restorative pressure. It is the attempt to build a permanent False Vacuum.
 
 The "problem of evil" is reframed once you stop conflating bad with evil, and both with suffering. The model permits cyclic cost because finite cycles include destruction. Evil exists in the reading because off-equator agents can burn energy attempting to defy restorative pull. Suffering exists because finite beings can be displaced from balance. None of this is a proof of God, a justification of suffering, or a denial that actual suffering matters.
 
@@ -83,7 +83,7 @@ The D0-D6 hierarchy provides the context. Evil operates in D4 (physical extracti
 
 The dissolution fails if:
 
-1. **The η classification is arbitrary.** If the distinction between η < 1, η ≈ 1, and η → ∞ cannot be operationalized — if there is no way to measure or detect the difference between natural destruction and structural extraction — the framework offers only vocabulary, not explanation.
+1. **The η classification is arbitrary.** If the distinction between reciprocal / regenerative moves (`η = 0` or `η < 0`), bounded repaired cost (`η > 0` but cycle-preserving), and runaway extraction (`η > 0` tending toward `η → ∞`) cannot be operationalized — if there is no way to measure or detect the difference between natural destruction and structural extraction — the framework offers only vocabulary, not explanation.
 
 2. **Evil is not self-terminating.** If extractive systems (η → ∞) can sustain themselves indefinitely without collapse, the Power-Max Lemma fails and the framework loses its mechanical basis for distinguishing evil from a viable strategy.
 

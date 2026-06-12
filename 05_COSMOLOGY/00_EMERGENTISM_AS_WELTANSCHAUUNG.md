@@ -229,13 +229,15 @@ At the directional level, ethics is compressed as:
 
 That is the ethical direction: movement that increases balanced flourishing across the widest real field one can responsibly perceive. `[S/I]`
 
-At the dynamical level, the extraction coefficient `η` formalizes three moral regimes:
+At the dynamical level, the extraction coefficient `η` must be read in its register. The older EFR formalism uses a ratio-register (`extraction / contribution`) for substrate accounting. The lived game, objective dharma, and Power-Max Lemma use a move-register: `η` names the extraction direction of an action, not a static coordinate.
 
-- `η < 1` — Good: mutualistic, symbiotic, net-contributive `[S/I]`
-- `η ≈ 1` — Bad: trophic, cyclical, bounded extraction `[S/I]`
-- `η -> ∞` — Evil: uncoupled, exponential, substrate-destroying extraction `[S/I]`
+In the move-register:
 
-The most important claim is that the break between Bad and Evil is topological, not merely scalar. Predator-prey systems and cancers are not degrees of the same thing. One remains coupled to the wider field; the other severs the coupling and consumes the host that makes its own existence possible. `[S]` for the dynamical distinction, `[I]` for the full moral mapping.
+- `η = 0` — reciprocal / non-extractive: symbiont and holobiont rise together; no hidden cost is externalized `[S/I]`
+- `η < 0` — regenerative / net-giving: the move gives more to the coupled field than it takes, without turning the gift into debt, capture, or control `[S/I]`
+- `η > 0` — extraction: one node rises by degrading another or the field; severity depends on boundary, consent, receipts, horizon, repair, and measured `P_node` effects `[S/I]`
+
+The most important claim is that the break between bounded cyclic cost and evil is topological, not merely scalar. Predator-prey systems and cancers are not degrees of the same thing. One remains coupled to the wider field and its regenerative capacity; the other severs the coupling and consumes the host that makes its own existence possible. `[S]` for the dynamical distinction, `[I]` for the full moral mapping.
 
 This is why the framework's ethics are structural rather than command-based. “Do not extract” is not first a prohibition. It is a reading of what kinds of systems endure and what kinds of systems convert local gain into terminal field damage. `[I/S]`
 
