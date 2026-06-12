@@ -48,7 +48,7 @@ evidence_tier: "[S] for L3 structural mapping; [I] for cross-domain projections.
 | φ · ν | 1 |
 | B = sin θ | 0.866 |
 | Native coordinate | (1/√3, √3) |
-| Transfer signature | (−Δφ_self, +Δν_other) |
+| Transfer signature | (−ΔΦ_self, +ΔV_other) |
 
 **Equation:** ∂P/∂V = Φ
 

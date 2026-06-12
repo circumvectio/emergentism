@@ -48,7 +48,7 @@ evidence_tier: "[S] for L2 structural mapping; [I] for cross-domain projections.
 | φ · ν | 1 |
 | B = sin θ | 0.500 |
 | Native coordinate | (2−√3, 2+√3) |
-| Transfer signature | (+Δν_self, −Δφ_false) |
+| Transfer signature | (+ΔV_self, −ΔΦ_false) |
 
 **Equation:** dP = V·dΦ + Φ·dV
 

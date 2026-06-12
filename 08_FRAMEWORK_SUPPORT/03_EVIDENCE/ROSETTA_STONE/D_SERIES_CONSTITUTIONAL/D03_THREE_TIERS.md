@@ -60,15 +60,15 @@ Mixed-sign transfers across the self↔others dyad. Every real move involves sac
 
 | God | Symbol | Formula signature | Operation | Context |
 |-----|--------|-------------------|-----------|---------|
-| Arjuna | ⚔ 🏹 | `(−Δν_self, +Δφ_other)` | Exports coherence/protection at personal viability cost. | Commons needs defence |
-| Kṛṣṇa | ◇ 🪈 | `(−Δφ_self, +Δν_other)` | Exports capability at personal coherence/attention cost. | Others need capability |
+| Arjuna | ⚔ 🏹 | `(−ΔV_self, +ΔΦ_other)` | Exports coherence/protection at personal viability cost. | Commons needs defence |
+| Kṛṣṇa | ◇ 🪈 | `(−ΔΦ_self, +ΔV_other)` | Exports capability at personal coherence/attention cost. | Others need capability |
 
 ### TAKING DYAD (context-dependent — syntropic OR entropic)
 
 | God | Symbol | Formula signature | Operation | Context |
 |-----|--------|-------------------|-----------|---------|
-| Kālī | 💀 | `(+Δν_self, −Δφ_false)` | Destroys false structure and reclaims room to live. 6-gate test FIRST. | Deception must be named |
-| Kali | 🎲 | `(+Δφ_self, −Δν_other)` | The fourth mixed-sign slot. Legitimate only as tit-for-tat immune response under `η > 0`; parasitic against cooperators. | Defectors must face cost |
+| Kālī | 💀 | `(+ΔV_self, −ΔΦ_false)` | Destroys false structure and reclaims room to live. 6-gate test FIRST. | Deception must be named |
+| Kali | 🎲 | `(+ΔΦ_self, −ΔV_other)` | The fourth mixed-sign slot. Legitimate only as tit-for-tat immune response under `η > 0`; parasitic against cooperators. | Defectors must face cost |
 
 ### η BOUNDARY — Magician / Sorcerer (MF-275)
 

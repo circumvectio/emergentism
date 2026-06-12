@@ -499,19 +499,19 @@ This is the canonical grammar:
 
 | Archetype | Family | Native coordinate | Transfer signature | Meaning |
 |-----------|--------|-------------------|--------------------|---------|
-| **Brahmā ○** | Executive | `(φ, ν) = (√3, 1/√3)` | `(+Δφ, +Δν)` | Creation boundary. New coherence and viability rise together. |
-| **Viṣṇu ⊙** | Executive | `φ ≫ 1, ν ≪ 1` tending to `(∞, 0)` at the boundary | `(Δφ ≈ 0, Δν ≈ 0)` | Preservation boundary. Isomeric hold. Keep the pattern alive. |
-| **Śiva •** | Executive | `(φ, ν) = (2+√3, 2−√3)` | `(−Δφ, −Δν)` | Dissolution boundary. Structure and fuel release together. |
-| **Arjuna ⚔** | God | `(φ, ν) = (1, 1)` | `(−Δν_self, +Δφ_other)` | Spend viability to give coherence, protection, and right boundary. |
-| **Kṛṣṇa ◇** | God | `(φ, ν) = (1/√3, √3)` | `(−Δφ_self, +Δν_other)` | Spend coherence/attention to build capability in the other. |
-| **Kālī 💀** | God | `(φ, ν) = (2−√3, 2+√3)` | `(+Δν_self, −Δφ_false)` | Recover viability by cutting false coherence. Immune truth-function. |
-| **Kali 🎲** | Demon / constrained immune slot | `φ ≪ 1, ν ≫ 1` tending to `(0, ∞)` at the boundary | `(+Δφ_self, −Δν_other)` | The fourth mixed-sign slot. Immune against defectors at `η > 0`; demonic when turned against cooperators. |
+| **Brahmā ○** | Executive | `(φ, ν) = (√3, 1/√3)` | `(+ΔΦ, +ΔV)` | Creation boundary. New coherence and viability rise together. |
+| **Viṣṇu ⊙** | Executive | `φ ≫ 1, ν ≪ 1` tending to `(∞, 0)` at the boundary | `(ΔΦ ≈ 0, ΔV ≈ 0)` | Preservation boundary. Isomeric hold. Keep the pattern alive. |
+| **Śiva •** | Executive | `(φ, ν) = (2+√3, 2−√3)` | `(−ΔΦ, −ΔV)` | Dissolution boundary. Structure and fuel release together. |
+| **Arjuna ⚔** | God | `(φ, ν) = (1, 1)` | `(−ΔV_self, +ΔΦ_other)` | Spend viability to give coherence, protection, and right boundary. |
+| **Kṛṣṇa ◇** | God | `(φ, ν) = (1/√3, √3)` | `(−ΔΦ_self, +ΔV_other)` | Spend coherence/attention to build capability in the other. |
+| **Kālī 💀** | God | `(φ, ν) = (2−√3, 2+√3)` | `(+ΔV_self, −ΔΦ_false)` | Recover viability by cutting false coherence. Immune truth-function. |
+| **Kali 🎲** | Demon / constrained immune slot | `φ ≪ 1, ν ≫ 1` tending to `(0, ∞)` at the boundary | `(+ΔΦ_self, −ΔV_other)` | The fourth mixed-sign slot. Immune against defectors at `η > 0`; demonic when turned against cooperators. |
 
 **What this means structurally:**
 
 - **Titans** are the three same-sign boundary formulas: `(++), (≈≈), (--)`.
-- **Gods** are the mixed-sign syntropic or corrective transfers: `(-ν_self,+φ_other)`, `(-φ_self,+ν_other)`, `(+ν_self,-φ_false)`.
-- **The Demon** is the unguarded parasitic occupation of the fourth mixed-sign slot: `(+φ_self,-ν_other)`.
+- **Gods** are the mixed-sign syntropic or corrective transfers: `(-V_self,+Φ_other)`, `(-Φ_self,+V_other)`, `(+V_self,-Φ_false)`.
+- **The Demon** is the unguarded parasitic occupation of the fourth mixed-sign slot: `(+Φ_self,-V_other)`.
 
 There is no fifth mixed-sign archetype and no fourth Executive. The grammar is exhaustive.
 

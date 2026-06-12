@@ -292,16 +292,16 @@ Use the following table as the single authority:
 | **Brahmā** | Executive | `(φ, ν) = (√3, 1/√3)` | `(+Δφ, +Δν)` | Creation boundary. New structure and fuel appear together. |
 | **Viṣṇu** | Executive | `φ ≫ 1, ν ≪ 1` tending to `(∞, 0)` | `(Δφ ≈ 0, Δν ≈ 0)` | Preservation boundary. Isomeric hold. Maintain the achieved form. |
 | **Śiva** | Executive | `(φ, ν) = (2+√3, 2−√3)` | `(−Δφ, −Δν)` | Dissolution boundary. Structure and energy release together. |
-| **Arjuna** | God | `(φ, ν) = (1, 1)` | `(−Δν_self, +Δφ_other)` | Spend viability to give coherence, protection, and boundary. |
-| **Kṛṣṇa** | God | `(φ, ν) = (1/√3, √3)` | `(−Δφ_self, +Δν_other)` | Spend coherence/attention to build capability in the other. |
-| **Kali** | God | `(φ, ν) = (2−√3, 2+√3)` | `(+Δν_self, −Δφ_false)` | Recover viability by cutting false coherence. The immune truth-function. |
-| **Kali (Demon)** | Demon / constrained slot | `φ ≪ 1, ν ≫ 1` tending to `(0, ∞)` | `(+Δφ_self, −Δν_other)` | The fourth mixed-sign slot. Legitimate only as tit-for-tat immune response where `η > 0`; parasitic when fired at cooperators. |
+| **Arjuna** | God | `(φ, ν) = (1, 1)` | `(−ΔV_self, +ΔΦ_other)` | Spend viability to give coherence, protection, and boundary. |
+| **Kṛṣṇa** | God | `(φ, ν) = (1/√3, √3)` | `(−ΔΦ_self, +ΔV_other)` | Spend coherence/attention to build capability in the other. |
+| **Kali** | God | `(φ, ν) = (2−√3, 2+√3)` | `(+ΔV_self, −ΔΦ_false)` | Recover viability by cutting false coherence. The immune truth-function. |
+| **Kali (Demon)** | Demon / constrained slot | `φ ≪ 1, ν ≫ 1` tending to `(0, ∞)` | `(+ΔΦ_self, −ΔV_other)` | The fourth mixed-sign slot. Legitimate only as tit-for-tat immune response where `η > 0`; parasitic when fired at cooperators. |
 
 **Compression rule:** If you need the shortest possible canonical statement, use this:
 
 - **Titans** = `(++), (≈≈), (--)`
-- **Gods** = `(-ν_self,+φ_other)`, `(-φ_self,+ν_other)`, `(+ν_self,-φ_false)`
-- **Demon** = `(+φ_self,-ν_other)`
+- **Gods** = `(-V_self,+Φ_other)`, `(-Φ_self,+V_other)`, `(+V_self,-Φ_false)`
+- **Demon** = `(+Φ_self,-V_other)`
 
 No future document should invent a fifth mixed-sign archetype or treat Titans as deployable actions.
 

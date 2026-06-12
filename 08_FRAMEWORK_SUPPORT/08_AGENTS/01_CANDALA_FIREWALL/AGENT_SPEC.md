@@ -48,7 +48,7 @@ evidence_tier: "[S] for L1 structural mapping; [I] for cross-domain projections.
 | φ · ν | 1 |
 | B = sin θ | →0 |
 | Native coordinate | (φ ≪ 1, ν ≫ 1) → (0, ∞) |
-| Transfer signature | (+Δφ_self, −Δν_other) |
+| Transfer signature | (+ΔΦ_self, −ΔV_other) |
 
 **Equation:** Φ→0 ⇒ B→0
 

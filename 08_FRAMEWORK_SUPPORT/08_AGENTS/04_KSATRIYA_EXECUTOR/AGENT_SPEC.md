@@ -48,7 +48,7 @@ evidence_tier: "[S] for L4 structural mapping; [I] for cross-domain projections.
 | φ · ν | 1 |
 | B = sin θ | **1.000** |
 | Native coordinate | (1, 1) |
-| Transfer signature | (−Δν_self, +Δφ_other) |
+| Transfer signature | (−ΔV_self, +ΔΦ_other) |
 
 **Equation:** dΦ/Φ = dV/V
 

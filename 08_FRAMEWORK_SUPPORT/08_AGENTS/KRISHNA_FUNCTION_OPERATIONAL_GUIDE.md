@@ -85,9 +85,9 @@ Identify active operators:
 
 | L | Operator | Class | Sign | Move | Active When |
 |---|---|---|---|---|---|
-| L1 | Kali (Demon) | Demon | 🎲 | constrained extraction (+Δφ_self, −Δν_other) | Boundary breach, immune response, adversarial pressure |
+| L1 | Kali (Demon) | Demon | 🎲 | constrained extraction (+ΔΦ_self, −ΔV_other) | Boundary breach, immune response, adversarial pressure |
 | L2 | Kālī (God) | God | 🔱 | truth-cut (+ΔV_self, −ΔΦ_false) | New genesis, dissolution of falsehood, the cleansing cut |
-| L3 | Kṛṣṇa (God) | God | — | enable / ↑V export (+Δν_other) | Stewardship, capacity-building, value handed outward |
+| L3 | Kṛṣṇa (God) | God | — | enable / ↑V export (+ΔV_other) | Stewardship, capacity-building, value handed outward |
 | L4 | Arjuna (God) | God | ⚔ | execute / decide | Commitment moment, sacrifice required, binding |
 | L5 | Brahmā (Executive boundary) | Boundary | ○ | systematise | Redesign, architectural change, rule-making |
 | L6 | Śiva (Executive boundary) | Boundary | • | compress / negate | Pruning, archiving, axiomatic clarification |

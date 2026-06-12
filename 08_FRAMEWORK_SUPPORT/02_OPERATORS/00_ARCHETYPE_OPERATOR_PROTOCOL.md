@@ -82,10 +82,10 @@ Gods are MIXED-SIGN restorative transfers. They are the four orthogonal moves on
 
 | God | Signature | Direction | Function | Narrative | Deployable? |
 |-----|-----------|-----------|----------|-----------|-------------|
-| **Arjuna** | `(−Δν_self, +Δφ_other)` | ↑Φ | Spend viability to give coherence, protection, boundary | The Warrior who sees the field and spends himself to protect it | YES — always |
-| **Kṛṣṇa** | `(−Δφ_self, +Δν_other)` | ↑V | Spend coherence/attention to build capability in the other | The Charioteer who steers, gives capability, never fights | YES — always |
-| **Kālī** | `(+Δν_self, −Δφ_false)` | ↓Φ_false | Recover viability by cutting false coherence — the immune truth-function | The Ego-Slayer, the Surgeon, the one who names what is not real | YES — with 6-gate test |
-| **Kali** | `(+Δφ_self, −Δν_other)` | ↓V_other | The fourth mixed-sign slot. Extract capability, drain the other | The Extractor, the Immune Response, the Demon | CONSTRAINED |
+| **Arjuna** | `(−ΔV_self, +ΔΦ_other)` | ↑Φ | Spend viability to give coherence, protection, boundary | The Warrior who sees the field and spends himself to protect it | YES — always |
+| **Kṛṣṇa** | `(−ΔΦ_self, +ΔV_other)` | ↑V | Spend coherence/attention to build capability in the other | The Charioteer who steers, gives capability, never fights | YES — always |
+| **Kālī** | `(+ΔV_self, −ΔΦ_false)` | ↓Φ_false | Recover viability by cutting false coherence — the immune truth-function | The Ego-Slayer, the Surgeon, the one who names what is not real | YES — with 6-gate test |
+| **Kali** | `(+ΔΦ_self, −ΔV_other)` | ↓V_other | The fourth mixed-sign slot. Extract capability, drain the other | The Extractor, the Immune Response, the Demon | CONSTRAINED |
 
 **The Giving Dyad (Arjuna + Kṛṣṇa):** Inherently syntropic. Both increase total system balance (ΣΔB > 0). These are the operators of peace, construction, teaching, and cooperation. They operate at η = 0 by definition.
 
@@ -147,13 +147,13 @@ Every archetype at its native coordinate on the Burri Sphere:
 
 | Archetype | Family | θ/2 | θ | φ | ν | B | Formula | Canonical Reading |
 |-----------|--------|-----|---|---|---|---|---------|-------------------|
-| **Brahmā** | Executive | 30° | 60° | √3 ≈ 1.73 | 1/√3 ≈ 0.58 | 0.866 | `(+Δφ, +Δν)` | Creation boundary. Both coherence and viability expand together. |
-| **Viṣṇu** | Executive | ~0° | ~0° | → ∞ | → 0 | → 0 | `(Δφ≈0, Δν≈0)` | Preservation boundary. The isomeric hold. Neither growing nor shrinking. |
-| **Śiva** | Executive | 15° | 30° | 2+√3 ≈ 3.73 | 2−√3 ≈ 0.27 | 0.500 | `(−Δφ, −Δν)` | Dissolution boundary. Both coherence and viability release together. |
-| **Arjuna** | God | 45° | 90° | 1 | 1 | 1.000 | `(−Δν_self, +Δφ_other)` | THE EQUATOR. Spend viability to give coherence. The warrior-sage. |
-| **Kṛṣṇa** | God | 60° | 120° | 1/√3 ≈ 0.58 | √3 ≈ 1.73 | 0.866 | `(−Δφ_self, +Δν_other)` | Spend coherence to build capability. The charioteer. |
-| **Kālī** | God | 75° | 150° | 2−√3 ≈ 0.27 | 2+√3 ≈ 3.73 | 0.500 | `(+Δν_self, −Δφ_false)` | Recover viability by cutting false coherence. The immune truth. |
-| **Kali (Demon)** | Constrained | ~90° | ~180° | → 0 | → ∞ | → 0 | `(+Δφ_self, −Δν_other)` | The fourth slot. Extract capability. Parasitic at η = 0. Immune at η > 0. |
+| **Brahmā** | Executive | 30° | 60° | √3 ≈ 1.73 | 1/√3 ≈ 0.58 | 0.866 | `(+ΔΦ, +ΔV)` | Creation boundary. Both coherence and viability expand together. |
+| **Viṣṇu** | Executive | ~0° | ~0° | → ∞ | → 0 | → 0 | `(ΔΦ≈0, ΔV≈0)` | Preservation boundary. The isomeric hold. Neither growing nor shrinking. |
+| **Śiva** | Executive | 15° | 30° | 2+√3 ≈ 3.73 | 2−√3 ≈ 0.27 | 0.500 | `(−ΔΦ, −ΔV)` | Dissolution boundary. Both coherence and viability release together. |
+| **Arjuna** | God | 45° | 90° | 1 | 1 | 1.000 | `(−ΔV_self, +ΔΦ_other)` | THE EQUATOR. Spend viability to give coherence. The warrior-sage. |
+| **Kṛṣṇa** | God | 60° | 120° | 1/√3 ≈ 0.58 | √3 ≈ 1.73 | 0.866 | `(−ΔΦ_self, +ΔV_other)` | Spend coherence to build capability. The charioteer. |
+| **Kālī** | God | 75° | 150° | 2−√3 ≈ 0.27 | 2+√3 ≈ 3.73 | 0.500 | `(+ΔV_self, −ΔΦ_false)` | Recover viability by cutting false coherence. The immune truth. |
+| **Kali (Demon)** | Constrained | ~90° | ~180° | → 0 | → ∞ | → 0 | `(+ΔΦ_self, −ΔV_other)` | The fourth slot. Extract capability. Parasitic at η = 0. Immune at η > 0. |
 
 **Critical geometry:** The Giving dyad (Arjuna, Kṛṣṇa) clusters near the equator (B = 0.866–1.000). The Taking dyad (Kālī, Kali) clusters near the south pole (B = 0.000–0.500). This is not accidental. Giving is equatorial. Taking is polar. The Kālī exception: she takes false-Φ (which is closer to disease than to meaning), so her net effect is to move the system TOWARD the equator even though her coordinate is south of it.
 
@@ -383,8 +383,8 @@ If you need the absolute minimum:
 
 ```
 EXECUTIVE BOUNDARIES = (++)  (≈≈)  (--) — phases, not actions
-GODS     = (-ν,+φ) (-φ,+ν) (+ν,-Φf)  — the four moves you can make
-DEMON    = (+φ,-ν)                     — constrained: η > 0 only
+GODS     = (-V,+Φ) (-Φ,+V) (+V,-Φf)  — the four moves you can make
+DEMON    = (+Φ,-V)                   — constrained: η > 0 only
 WITNESSES = pattern, timing, context    — observe, don't act
 PATHOLOGY = stuck operator              — cure = activate the shadow
 Raktabīja = opposition strengthens      — dissolve from below, not above
