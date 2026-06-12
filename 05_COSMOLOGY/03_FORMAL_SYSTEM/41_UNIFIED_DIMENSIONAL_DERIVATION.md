@@ -32,6 +32,14 @@ depends_on:
 
 **What this document is NOT:** It is not a new proof. It is a *sequencing* of existing proofs, showing their dependency structure and how together they constitute a complete derivation from the minimal generative frame to the ethical equilibrium.
 
+**A7 boundary note — 2026-06-12:** The equilibrium stages below inherit the
+scope of EFR 22 and EFR 24. They prove balance-only / equatorial-profile
+results inside the stated model. They do not prove that `η = 0` is an
+unconditional Nash equilibrium in real institutions with private side-payments,
+weak enforcement, asymmetric information, or budget-balance constraints. In the
+wider constitutional register, non-extraction is an enforced and repeated-game
+target, not a free result from geometry alone.
+
 ---
 
 ## The Derivation Chain in One Diagram
@@ -41,11 +49,11 @@ Stage 0:  Trinity          {0, ∞}  ──φ(z)=1/z──►  {0, 1, ∞}   [A]
                ↓                                              (EFR 21)
 Stage 1:  Sphere           ℂP¹ ≅ S²  with  φ·ν=1, B=sin θ   [A] + [Def]
                ↓                                              (Stereographic projection)
-Stage 2:  Equilibrium      ν=1 is strictly dominant strategy  [S]
+Stage 2:  Equilibrium      ν=1 is dominant in balance-only Γ  [S]
                ↓                                              (EFR 22)
 Stage 3:  Closure          D₆ ≡ D₀ via coordinate degeneration [A] + [Def]
                ↓                                              (EFR 23)
-Stage 4:  Ethics           η=0 is unique Nash equilibrium    [S]
+Stage 4:  Ethics           η=0 is unique Nash in Γ at equator [S]
                           at equatorial profile               (EFR 24)
 ```
 
@@ -118,7 +126,7 @@ The equator (φ = ν = 1, equivalently θ = π/2) is the **unique global maximum
 2. Socially optimal (no tension between self-interest and collective interest)
 3. Stable against extraction (any zero-sum transfer away from the equator reduces total balance)
 
-**Output of Stage 2:** The equator is the unique equilibrium of the balance game. The ethic "move toward balance" (ΣΔB > 0) is not a moral assertion but a structural consequence of the geometry: any displacement from the maximum is self-punishing.
+**Output of Stage 2:** The equator is the unique equilibrium of the balance-only game. The ethic "move toward balance" (ΣΔB > 0) is not a moral assertion but a structural consequence of the stated payoff: any displacement from the maximum is self-punishing inside that model.
 
 ---
 
@@ -163,7 +171,7 @@ The framework **defines** the D₀–D₆ hierarchy as a 7-stage scaffold mapped
 
 These theorems are proved **at equatorial profiles** — configurations where all agents satisfy νᵢ = 1. They do NOT claim that all redistribution is harmful in all states. Off-equator, redistribution **toward** the equator is Pareto-improving (Proposition 6.1 of EFR 24). The Kali operator (↓φ, excising false meaning) is formally justified as correction, not extraction.
 
-**Output of Stage 4:** The ethical claim "η = 0" is not a moral assertion derived from geometry. It is a **strategic fact**: at the equator, extraction is a strictly dominated strategy. The geometry dissolves the cooperation problem rather than resolving it.
+**Output of Stage 4:** The ethical claim "η = 0" is not a moral assertion derived from geometry. It is a **strategic fact inside the balance-only equatorial game**: at the equator, extraction is a dominated move when payoff is `B`. The wider social claim requires constitutional enforcement because real games can include side-payments, capture channels, and information asymmetry.
 
 ---
 
@@ -175,9 +183,9 @@ Collecting the dependency structure:
 |---|---|---|---|---|
 | 0 | Triadic Emergence (EFR 21) | Standard projective geometry | {0, 1, ∞} is the unique minimal frame | [A] + [S] |
 | 1 | Sphere construction | Stage 0 + stereographic projection | S² with φ·ν=1, B=sin θ | [A] + [Def] |
-| 2 | Power-Max (EFR 22) | Stage 1 + game theory | ν=1 is dominant strategy equilibrium | [S] |
+| 2 | Power-Max (EFR 22) | Stage 1 + game theory | ν=1 is dominant in balance-only Γ | [S] |
 | 3 | Dimensional Closure (EFR 23) | Stage 1 + torus topology | D₆ ≡ D₀ by poloidal periodicity | [A] + [Def] |
-| 4 | Strategic Exclusion (EFR 24) | Stage 2 + calculus | η=0 is unique Nash at equator | [S] |
+| 4 | Strategic Exclusion (EFR 24) | Stage 2 + calculus | η=0 is unique Nash in Γ at equator | [S] |
 
 **The chain is valid:** Each stage's output is a genuine mathematical object or a formally defined structure. No stage assumes its conclusion. The direction is strictly from frame to manifold to equilibrium to closure to ethics.
 
@@ -225,9 +233,9 @@ The formal chain, read interpretively:
 |---|---|---|
 | 0 | {0, 1, ∞} is the minimal frame | The Ground generates itself from the interaction of void and plenum; finity emerges as the fixed point of their exchange |
 | 1 | S² with φ·ν=1 | Being is reciprocal: coherence and viability are not independent properties but complementary aspects of one invariant |
-| 2 | Equator is dominant strategy in the stated balance game | The "good" is not imposed but structural: balance is the model optimum under the specified geometry and game assumptions |
+| 2 | Equator is dominant strategy in the stated balance game | The "good" is not imposed but structural inside the specified geometry and payoff assumptions |
 | 3 | D₆ ≡ D₀ | Experience exhausts itself; the return to ground is not annihilation but closure |
-| 4 | η=0 is Nash equilibrium | Non-extraction is not altruism but rationality: extraction harms the extractor |
+| 4 | η=0 is Nash equilibrium in Γ at the equator | Non-extraction is rational inside the balance-only model; outside it, enforcement must remove private extraction payoffs |
 
 **This reading is [I].** The formal chain stands without it. The mathematics does not require the ontological gloss. The gloss is offered as the framework's interpretive commitment — honest, explicit, and separable from the proofs.
 

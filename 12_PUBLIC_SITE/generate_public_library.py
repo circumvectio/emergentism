@@ -68,10 +68,16 @@ directly (the only available lever):
   - trinity/15-dharma-yuddha/                : added the claim-boundary lead for
         Krishna, Gita, flow state, objective dharma, and Krishna's army test so
         the public RAG lede exposes the already-source-backed L4 flow reading.
+  - formal/22-power-max-demonstration/, formal/24-geometric-exclusion-convergence/,
+        formal/41-unified-dimensional-derivation/ : added the 2026-06-12 A7
+        boundary that the Nash/dominant-strategy results are balance-only or
+        equatorial-profile model results, not unconditional social theorems;
+        real institutions require enforcement, monitoring, due process, and exit.
 
 BEFORE ANY FUTURE REGEN: restore the handoff bundle AND apply these same
 corrections to the SOURCE markdown (formal-16 / formal-17 / formal-33 /
-formal-08 / trinity-13 / paper-H / teleology core-conjecture public bundle
+formal-08 / formal-22 / formal-24 / formal-41 / trinity-13 / paper-H /
+teleology core-conjecture public bundle
 files, plus axiology-public objective-morals-and-ethics and good/evil public
 bundle files, plus trinity-public dharma-yuddha), or this generator will overwrite
 the hand-patches and reintroduce the over-claims. Also fix the title-doubling: when a source heading already ends in

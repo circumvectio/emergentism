@@ -11,15 +11,17 @@ rosetta:
 
 # THE POWER-MAX LEMMA
 
-## Formal Demonstration That Equatorial Balance Is the Dominant Strategy Equilibrium
+## Formal Demonstration That Equatorial Balance Is the Dominant Strategy Equilibrium Inside the Balance-Only Game
 
 **Status:** Formal demonstration — rigorous, self-contained (termed 'demonstration' per Fragility Audit 2026-04-04)
 **Date:** 2026-03-23
 **Version:** v2.1
 **Hat:** Mathematician
 **Evidence Tier:** [S] Structural — formal game-theoretic demonstration
-**Purpose:** Show that the equatorial state (φ = ν = 1, balance maximized) is the unique dominant strategy equilibrium of the balance game on S²
-**Kill Criterion:** Exhibit a profitable unilateral deviation from the equatorial profile under the coupling model
+**Purpose:** Show that the equatorial state (φ = ν = 1, balance maximized) is the unique dominant strategy equilibrium of the idealized balance-only game on S²
+**Kill Criterion:** Exhibit a profitable unilateral deviation from the equatorial profile under the stated balance-only payoff model
+
+> **A7 boundary note — 2026-06-12.** This demonstration proves a result inside a deliberately narrow payoff model: every player is paid only by `B` or a convex average of `B`. It does **not** prove that `η = 0` is an unconditional Nash equilibrium in games with private side-payments, capture channels, asymmetric information, budget-balance constraints, or weak enforcement. In the wider constitutional/game-theory register, `η = 0` is an enforced or repeated-game target under monitoring, penalties, exit, and real coupling. This file is therefore `[S]` for the internal balance-game result and `[I/C]` if quoted as a general social theorem.
 
 ---
 
@@ -183,7 +185,7 @@ $$\text{Price of Anarchy} = \frac{\max_\nu W(\nu)}{\min_{\nu \in \text{NE}} W(\n
 
 *Proof.* Conditions (1)–(3) are established by Theorem 1 and Theorem 2. ∎
 
-**Interpretive Remark.** In mechanism design, constructing a system where the socially optimal state aligns perfectly with a strictly dominant individual strategy is the gold standard. The Burri Sphere achieves this structurally: the geometry of S² — specifically, the unimodality of sin(θ) on (0, π) — eliminates strategic tension entirely. There is no cooperation problem to solve because there is no conflict between self-interest and collective interest. The game-theoretic triviality is the philosophical substance: the geometry *dissolves* the cooperation problem rather than resolving it.
+**Interpretive Remark.** Inside this balance-only toy game, constructing a system where the socially optimal state aligns perfectly with a strictly dominant individual strategy is the gold standard. The Burri Sphere achieves this structurally because the payoff has been restricted to the unimodality of sin(θ) on (0, π). That restriction is the whole honesty boundary: the model removes private side-benefits and capture channels, so it cannot by itself solve the general cooperation problem. The game-theoretic triviality is useful precisely as an ideal target for constitutional design, not as a proof that enforcement is unnecessary in real institutions.
 
 ---
 
@@ -245,13 +247,13 @@ The three theorems establish:
 
 | Result | Statement |
 |--------|-----------|
-| **Theorem 1** | νᵢ = 1 is a **strictly dominant strategy** for every player, for all coupling strengths λ ∈ [0, 1]. The equatorial profile is the unique Nash equilibrium. |
+| **Theorem 1** | νᵢ = 1 is a **strictly dominant strategy** for every player inside the balance-only payoff, for all coupling strengths λ ∈ [0, 1]. The equatorial profile is the unique Nash equilibrium of that model. |
 | **Theorem 2** | The Price of Anarchy = 1. The game exhibits **harmonic incentive alignment**: individual and social optima coincide. |
 | **Theorem 3** | Extraction (zero-sum viability transfer) strictly reduces aggregate balance, so η > 0 states are suboptimal. |
 
-**Interpretation.** In any population of agents on S², the equatorial state is not merely a Nash equilibrium — it is a *dominant strategy* equilibrium. Each agent's best response is νᵢ = 1 regardless of what others do (Lemma 0: zero strategic interaction). Self-interest and collective interest coincide exactly (Price of Anarchy = 1).
+**Interpretation.** In the stated balance game, the equatorial state is not merely a Nash equilibrium — it is a *dominant strategy* equilibrium. Each agent's best response is νᵢ = 1 regardless of what others do (Lemma 0: zero strategic interaction). Self-interest and collective interest coincide exactly only because the payoff is restricted to balance.
 
-This is not a cooperation problem resolved by cleverness. The geometry of the sphere — the strict concavity of sin(θ) on (0, π) — means there is *no* tension between individual and collective rationality. The cooperation problem does not arise. In mechanism-design terms, the Burri Sphere is an *ideal mechanism*: the socially optimal outcome is the unique dominant strategy equilibrium, requiring neither enforcement nor coordination.
+This is not a cooperation problem resolved by cleverness; it is a cooperation problem removed by model design. The geometry of the sphere — the strict concavity of sin(θ) on (0, π) — means there is *no* tension between individual and collective rationality after private extraction payoffs have been excluded. In mechanism-design terms, the Burri Sphere is an *ideal reference mechanism*: the socially optimal outcome is the unique dominant strategy equilibrium in the balance-only register. Real institutions still require enforcement, monitoring, due process, and exit because the real game reintroduces side-payments and asymmetric information.
 
 ---
 
@@ -261,9 +263,9 @@ This proof was revised following independent peer review by a specialist in Non-
 
 1. B(ν) reclassified from "strictly concave" to "strictly pseudo-concave" in the ν parameterization; strict concavity holds in the θ parameterization where B(θ) = sin(θ).
 2. Game reframed from "coupled balance game" to dominant strategy equilibrium. The cross-partial ∂²Πᵢ/∂νᵢ∂νⱼ = 0 confirms zero strategic interaction.
-3. Result strengthened: the equatorial profile is not merely a Nash equilibrium but a strictly dominant strategy equilibrium with Price of Anarchy = 1.
+3. Result strengthened inside the balance-only model: the equatorial profile is not merely a Nash equilibrium but a strictly dominant strategy equilibrium with Price of Anarchy = 1.
 
-Evidence tier remains [S] Structural — confirmed by reviewer.
+Evidence tier remains [S] Structural for the stated model. Generalizing it beyond that model is not established by this proof.
 
 ---
 

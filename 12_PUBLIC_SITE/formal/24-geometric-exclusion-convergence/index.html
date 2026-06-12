@@ -54,13 +54,16 @@
   </section>
   <article class="library-article">
     <h1 id="the-strategic-exclusion-formal-convergence-that-extraction-is-irrational-at-the-equator">THE STRATEGIC EXCLUSION: FORMAL CONVERGENCE THAT EXTRACTION IS IRRATIONAL AT THE EQUATOR</h1>
-<h2 id="a-rigorous-convergence-argument-that-0-is-self-defeating-on-the-burri-sphere">A Rigorous Convergence Argument That η &gt; 0 Is Self-Defeating on the Burri Sphere</h2>
+<h2 id="a-rigorous-convergence-argument-that-0-is-self-defeating-on-the-burri-sphere">A Rigorous Convergence Argument That η &gt; 0 Lowers Balance at the Equator</h2>
 <p><strong>Status:</strong> Active (termed 'convergence' per Fragility Audit 2026-04-04)
 <strong>Hat:</strong> Mathematician
 <strong>Evidence Tier:</strong> [S] Structural — formal convergence argument
 <strong>Date:</strong> 2026-03-23
 <strong>Version:</strong> v2.1
 <strong>Depends on:</strong> Burri Sphere formalism, Balance function, Game theory, Nash equilibrium</p>
+<blockquote>
+<p><strong>A7 boundary note — 2026-06-12.</strong> This document proves a balance-payoff result at equatorial profiles. "Extraction is irrational" means "extraction lowers the extractor's <code>B</code> score in the stated balance game." It does <strong>not</strong> prove that extraction is irrational in every real game, that <code>η = 0</code> is an unconditional Nash equilibrium, or that private side-payments cannot dominate without enforcement. The wider doctrine reads this as a constitutional target: restore real coupling, monitoring, penalties, due process, and exit so the social game approximates the balance-only result.</p>
+</blockquote>
 <hr>
 <h2 id="1-definitions-and-notation">1. DEFINITIONS AND NOTATION</h2>
 <p><strong>Definition 1.1 (The Burri Sphere).</strong> The <em>Burri Sphere</em> is S² = CP¹ with colatitude θ ∈ [0, π] and azimuthal longitude ψ ∈ [0, 2π).</p>
@@ -178,13 +181,13 @@ As ν → ∞ (south pole): B → 0. ✓ ∎</p>
 <p><strong>Step 5.</strong> To confirm this is the <em>global</em> maximum: B(ν) &gt; 0 for all ν &gt; 0, B(ν) → 0 as ν → 0⁺ and as ν → ∞, and there is exactly one critical point in (0, ∞). By the first derivative test, B is increasing on (0, 1) and decreasing on (1, ∞). Therefore ν = 1 is the unique global maximum. ∎</p>
 <hr>
 <h2 id="3-the-strategic-exclusion-theorem">3. THE STRATEGIC EXCLUSION THEOREM</h2>
-<p><strong>Remark 3.0 (Why "strategic," not "geometric").</strong> The post-extraction state (1+Δν, 1−Δν) <em>exists</em> on S² — the geometry does not forbid the move. What makes extraction irrational is the <em>payoff structure</em>: the balance function B(ν) = 2ν/(1+ν²) peaks at ν = 1 and curves downward in every direction. Extraction is excluded not because the destination is geometrically impossible, but because it is a <em>strictly dominated strategy</em>. The exclusion is game-theoretic, operating through the shape of the payoff manifold.</p>
+<p><strong>Remark 3.0 (Why "strategic," not "geometric").</strong> The post-extraction state (1+Δν, 1−Δν) <em>exists</em> on S² — the geometry does not forbid the move. What makes extraction irrational in this file is the <em>stated payoff structure</em>: the balance function B(ν) = 2ν/(1+ν²) peaks at ν = 1 and curves downward in every direction. Extraction is excluded not because the destination is geometrically impossible, but because it is a dominated move when the only payoff is balance. Add private side-payments or weak enforcement and this proof no longer settles the game.</p>
 <h3 id="3a-primary-proof-the-purely-selfish-case-0">3A. Primary Proof: The Purely Selfish Case (λ = 0)</h3>
 <p><strong>Theorem 3.1 (Strategic Exclusion — Selfish Case).</strong> Consider an agent i at the equator (φᵢ = νᵢ = 1) in a multi-agent system. Suppose agent i extracts viability Δν &gt; 0 from agent j, so that:</p>
 <p>$$\nu_i \to 1 + \Delta\nu, \qquad \nu_j \to 1 - \Delta\nu$$</p>
 <p>Then the extractor's balance <em>strictly decreases</em>:</p>
 <p>$$B_i(1 + \Delta\nu) &lt; B_i(1) = 1 \qquad \text{for all } \Delta\nu &gt; 0$$</p>
-<p>This holds even if agent i assigns zero weight to agent j's welfare (λ = 0). No coupling, empathy, or social preference is required.</p>
+<p>This holds even if agent i assigns zero weight to agent j's welfare (λ = 0), because the only modeled payoff is the extractor's own balance. No empathy or social preference is required inside the model; no claim is made here about games where extraction also pays private benefits outside <code>B</code>.</p>
 <p><em>Proof.</em></p>
 <p><strong>Step 1.</strong> After extraction, agent i has viability νᵢ = 1 + Δν with Δν &gt; 0. By Lemma 2.1:</p>
 <p>$$B_i = \frac{2(1 + \Delta\nu)}{1 + (1 + \Delta\nu)^2}$$</p>
@@ -202,7 +205,7 @@ As ν → ∞ (south pole): B → 0. ✓ ∎</p>
 <p>The total loss is:</p>
 <p>$$\Delta U_i = [B(1+\Delta\nu) - 1] + \lambda[B(1-\Delta\nu) - 1] &lt; 0$$</p>
 <p>Coupling adds a secondary penalty term λ[B(1−Δν) − 1] &lt; 0, but the primary result (Theorem 3.1) already establishes irrationality without it. ∎</p>
-<p><strong>Corollary 3.2 (Extraction is universally self-defeating at the equator).</strong> For ANY Δν &gt; 0, no matter how small, the extractor's balance decreases. There is no threshold below which extraction is beneficial. The strategic exclusion is total.</p>
+<p><strong>Corollary 3.2 (Extraction lowers balance at the equator).</strong> For ANY Δν &gt; 0, no matter how small, the extractor's balance decreases. There is no threshold below which extraction is beneficial in the balance-only payoff. The strategic exclusion is total only within that payoff model.</p>
 <p><em>Proof.</em> Theorem 3.1 holds for all Δν &gt; 0 without restriction on magnitude. ∎</p>
 <p><strong>Corollary 3.3 (The victim also loses balance).</strong> The victim j, with νⱼ = 1 − Δν for Δν &gt; 0, also loses balance:</p>
 <p>$$B_j = B(1 - \Delta\nu) &lt; B(1) = 1$$</p>
@@ -238,12 +241,12 @@ As ν → ∞ (south pole): B → 0. ✓ ∎</p>
 <p><strong>Step 3.</strong> Since no agent can profitably deviate from "do nothing," the strategy profile (do nothing, do nothing, ..., do nothing) is a Nash equilibrium.</p>
 <p><strong>Step 4 (Uniqueness).</strong> Suppose there exists another Nash equilibrium σ<em> in which some agent i plays "extract from j." Then Bᵢ &lt; 1 by Theorem 3.1. Agent i could deviate to "do nothing" at the equator and achieve Bᵢ = 1 &gt; Bᵢ(σ</em>). This is a profitable deviation, contradicting the assumption that σ* is a Nash equilibrium. The same argument applies to any self-move away from the equator. Therefore η = 0 is the unique Nash equilibrium. ∎</p>
 <hr>
-<h2 id="5-the-strategic-impossibility">5. THE STRATEGIC IMPOSSIBILITY</h2>
-<p><strong>Theorem 5.1 (The Strategic Impossibility — Master Statement).</strong> The exclusion of extraction at the equator is not a prohibition but a strategic fact, formalized as follows:</p>
+<h2 id="5-the-strategic-impossibility">5. THE STRATEGIC EXCLUSION</h2>
+<p><strong>Theorem 5.1 (The Strategic Exclusion — Master Statement).</strong> The exclusion of extraction at the equator is not a prohibition but a strategic fact inside the balance-only payoff, formalized as follows:</p>
 <p><strong>(i) Maximum principle.</strong> The equator is the unique global maximum of the balance function B(ν) = 2ν/(1 + ν²). Any displacement from ν = 1 decreases B.</p>
 <p><strong>(ii) Extraction is a displacement.</strong> Extraction maps νᵢ = 1 to νᵢ = 1 + Δν ≠ 1. It is a displacement from the maximum.</p>
 <p><strong>(iii) Displacements from a strict maximum are strictly suboptimal.</strong> B(1 + Δν) &lt; B(1) for all Δν ≠ 0.</p>
-<p><strong>(iv) Therefore:</strong> Extraction at the equator is self-defeating. The state (1+Δν, 1−Δν) <em>exists</em> on S² — the geometry does not forbid it. But the payoff structure makes it a strictly dominated strategy. The fourth operator (extraction) is excluded not by geometric impossibility but by the concavity of the payoff manifold at its peak.</p>
+<p><strong>(iv) Therefore:</strong> Extraction at the equator is balance-defeating in this model. The state (1+Δν, 1−Δν) <em>exists</em> on S² — the geometry does not forbid it. But the stated payoff structure makes it a dominated strategy. The fourth operator (extraction) is excluded not by geometric impossibility but by the concavity of the payoff manifold at its peak.</p>
 <p><em>Proof.</em> This is a direct synthesis of Theorem 2.2 (maximum), Theorem 3.1 (extraction decreases balance), and Theorem 4.2 (Nash equilibrium). The concavity follows from B''(1) = −1 &lt; 0 (Theorem 2.2, Step 3). ∎</p>
 <p><strong>Remark 5.2 (Saddle-free maximum).</strong> The equator is not a saddle point. In the (θ, ψ) coordinates, B = sin θ depends only on θ. In the θ-direction, B''(π/2) = −sin(π/2) = −1 &lt; 0. In the ψ-direction, ∂B/∂ψ = 0 and ∂²B/∂ψ² = 0 (B is ψ-independent). The Hessian at the equator is:</p>
 <p>$$H = \begin{pmatrix} -1 &amp; 0 \ 0 &amp; 0 \end{pmatrix}$$</p>
@@ -406,11 +409,11 @@ canon or the substrate-selection axioms, it does so explicitly.</p>
 <ol>
 <li>Directional definitions fixed: the extractor moves south (↑ν), the victim moves north (↓ν).</li>
 <li>Renamed from "Geometric Exclusion" to "Strategic Exclusion" — the state exists on S², but the payoff structure makes it a dominated strategy.</li>
-<li>Proof simplified: extraction is self-defeating even for λ=0 (purely selfish agents). Coupling adds secondary penalty but is not required.</li>
+<li>Proof simplified: extraction lowers the extractor's <code>B</code> score even for λ=0 inside the balance-only payoff. Coupling adds secondary penalty but is not required for that internal result.</li>
 <li>Domain explicitly bounded: theorem holds at equatorial profiles. Off-equator, redistribution toward the equator is a Pareto improvement.</li>
 <li>Resource Curse connection added per reviewer commendation.</li>
 </ol>
-<p>Evidence tier remains [S] Structural — confirmed by reviewer.</p>
+<p>Evidence tier remains [S] Structural for the stated equatorial balance game. Generalizing it beyond that model requires the wider constitutional enforcement argument.</p>
 <hr>
 <p>Zero-Sum Resolution Equation</p>
 <hr>
