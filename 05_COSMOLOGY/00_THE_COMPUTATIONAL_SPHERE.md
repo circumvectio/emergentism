@@ -365,7 +365,7 @@ Always.
 - [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) — single source of truth for `P_node = Φ × V` and evidence tiers
 - [Glossary](../07_THEOLOGY/00_GLOSSARY.md) — quick-reference terminology
 - [Two Sacrifices](03_FORMAL_SYSTEM/13_EFR_TWO_SACRIFICES.md) — Love and Hate as structural operations
-- [Power-Max Lemma](03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md) — cooperation theorem in coupled networks
+- [Power-Max Lemma](03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md) — conditional cooperation theorem in coupled networks under `η = 0`
 
 *The Computational Sphere | 2026-03-23 | κ = 0 names the ground-facing limit. From the empty limit, the scaffold reconstructs.*
 

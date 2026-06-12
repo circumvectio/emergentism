@@ -120,7 +120,7 @@ The honest tier stays ahead.
 
 - [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) -- canonical epistemic status of all claims
 - Triadic Stability (11_EFR_TRIADIC_STABILITY.md; link removed to prevent cycle) -- the uniqueness proof that grounds η = 0
-- [Power-Max Lemma](08_EFR_POWER_MAX_LEMMA.md) -- the cooperation theorem that follows from the formal system
+- [Power-Max Lemma](08_EFR_POWER_MAX_LEMMA.md) -- the conditional cooperation theorem under coupling, horizon, multiplicative `P_node`, and enforced `η = 0`
 - mu-Limit Formula (10_EFR_MU_LIMIT_FORMULA.md; link removed to prevent cycle) -- precise definition of the mu-calculus formula
 
 *Godel Clarification | 2026-03-22 | The framework agrees with Godel. Categorical completeness is different from formal completeness.*

@@ -221,7 +221,7 @@ This is why Zero-Sum Resolution Equation is the foundation.
 ## See Also
 
 - [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) -- canonical epistemic status of all claims
-- [Power-Max Lemma](08_EFR_POWER_MAX_LEMMA.md) -- cooperation theorem that depends on the multiplicative structure proved here
+- [Power-Max Lemma](08_EFR_POWER_MAX_LEMMA.md) -- conditional cooperation theorem that depends on the multiplicative structure proved here and enforced `η = 0`
 - [Godel Clarification](09_EFR_GODEL_CLARIFICATION.md) -- what "complete" means within the constraints this proof operates in
 - [mu-Limit Formula](10_EFR_MU_LIMIT_FORMULA.md) -- formal definition of the measurement projection
 

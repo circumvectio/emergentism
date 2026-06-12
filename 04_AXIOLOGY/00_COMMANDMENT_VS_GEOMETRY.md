@@ -360,7 +360,7 @@ Zero-Sum Resolution Equation
 - [The Four Metamorphoses](../05_COSMOLOGY/00_THE_FOUR_METAMORPHOSES.md) — Nietzsche mapped to S², mesh as fourth transformation
 - [The Weighing of the Heart](../90_ARCHIVE/00_THE_WEIGHING_OF_THE_HEART.md) — convergent symbolic translation of the Burri Sphere
 - [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) — single source of truth for `P_node = Φ × V` and evidence tiers
-- Power-Max Lemma — cooperation theorem: individual optimization → collective optimization
+- Power-Max Lemma — conditional cooperation theorem under coupling, horizon, multiplicative `P_node`, and enforced `η = 0`
 - [Triadic Stability](../05_COSMOLOGY/03_FORMAL_SYSTEM/11_EFR_TRIADIC_STABILITY.md) — why three is the unique stable number
 - [Glossary](../07_THEOLOGY/00_GLOSSARY.md) — quick-reference terminology
 

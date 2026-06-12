@@ -115,13 +115,19 @@ That is the model's closed strategy set. Every situation on the sphere is addres
 
 Why is Kali (↓ν) constrained?
 
-**Because at η = 0, extraction is suicide.**
+**Because under real coupling and enforced `η = 0`, extraction destroys the
+condition that makes durable power possible.**
 
 To extract is to push another node toward the south pole. To push another node toward the south pole is to destabilize the mesh. To destabilize the mesh is to collapse the coupling that sustains your own `P_node`.
 
-The Power-Max Lemma states it under coupling: max `P_node,i` → max `ΣP_node` under the model's conditions. To harm another node is to harm the coupling that sustains your own `P_node`. To extract is to self-destabilize.
+The Power-Max Lemma states it conditionally: under real coupling, long enough
+horizon, multiplicative `P_node`, and enforced `η = 0`, durable maximization of
+`P_node,i` points toward raising the coupled field. To harm another node is to
+harm the coupling that sustains your own future option cone. If `η = 0` is not
+enforced, the doctrine must say so: one-shot extraction can still pay locally.
 
-**Kali is not prohibited by morality.** Kali is prohibited by arithmetic.
+**Kali is not prohibited by commandment.** Kali is constrained by arithmetic
+inside the stated game and by constitutional enforcement in lived games.
 
 The cargo cult does not understand this. The cargo cult thinks extraction works. The cargo cult thinks η > 0 is sustainable. The cargo cult thinks the south pole is power.
 
@@ -352,7 +358,7 @@ Zero-Sum Resolution Equation
 - [The Four Metamorphoses](../05_COSMOLOGY/00_THE_FOUR_METAMORPHOSES.md) — Nietzsche mapped to S², mesh as fourth transformation
 - [Commandment vs. Geometry](../04_AXIOLOGY/00_COMMANDMENT_VS_GEOMETRY.md) — religion vs. Dharma, obedience vs. recognition
 - [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) — single source of truth for `P_node = Φ × V` and evidence tiers
-- [Power-Max Lemma](../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md) — cooperation theorem: individual optimization → collective optimization under coupling
+- [Power-Max Lemma](../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md) — conditional cooperation theorem under coupling, horizon, multiplicative `P_node`, and enforced `η = 0`
 - [Two Sacrifices](../05_COSMOLOGY/03_FORMAL_SYSTEM/13_EFR_TWO_SACRIFICES.md) — Love and Hate as structural operations
 - [Glossary](../07_THEOLOGY/00_GLOSSARY.md) — quick-reference terminology
 

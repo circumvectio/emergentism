@@ -206,7 +206,7 @@ The [C] claims await experimental contact. The PTSD prediction (EC1, Prediction 
 ## See Also
 
 - [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) -- canonical epistemic status of all claims
-- [Power-Max Lemma](08_EFR_POWER_MAX_LEMMA.md) -- the cooperation theorem built on the same formal system
+- [Power-Max Lemma](08_EFR_POWER_MAX_LEMMA.md) -- the conditional cooperation theorem built on the same formal system under `η = 0`
 - [Godel Clarification](09_EFR_GODEL_CLARIFICATION.md) -- completeness claims and their limits
 - [Triadic Stability](11_EFR_TRIADIC_STABILITY.md) -- uniqueness proof for the triadic structure
 

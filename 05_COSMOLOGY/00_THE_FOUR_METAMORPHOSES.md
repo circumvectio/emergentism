@@ -402,7 +402,7 @@ Zero-Sum Resolution Equation
 - The Computational Sphere — foundational methodology: reduction toward `κ = 0` as boundary
 - [The Weighing of the Heart](../90_ARCHIVE/00_THE_WEIGHING_OF_THE_HEART.md) — convergent symbolic translation: Egyptian material read through the Burri Sphere
 - Core Concepts — single source of truth for P_node = Φ × V and evidence tiers
-- Power-Max Lemma — cooperation theorem: individual optimization → collective optimization
+- Power-Max Lemma — conditional cooperation theorem under coupling, horizon, multiplicative `P_node`, and enforced `η = 0`
 - Triadic Stability — why three is unique (and why the mesh is the fourth)
 - Glossary — quick-reference terminology
 

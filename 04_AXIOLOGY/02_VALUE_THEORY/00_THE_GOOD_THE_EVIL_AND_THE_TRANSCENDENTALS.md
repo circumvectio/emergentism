@@ -185,31 +185,46 @@ Justice asks: Is the relation rightly arranged?
 
 ## Ethics and Morals
 
-### Ethics
+This compression uses the same two-layer grammar as the value-theory owner.
 
-**Ethics names the directional structure of better and worse.**
+### Layer 1: Directional Value Transfer
 
-Ethics is not arbitrary preference.
-In this framework it means movement toward viable, non-extractive balance.
-
-In compressed form:
+At the canonical layer, morality and ethics name the two directions of
+Syntropic Dyadism:
 
 ```text
-ethical direction = ΣΔB > 0 / ΣΔP_node > 0 across the widest real boundary
+Morality = H -> i
+  The holobiont raises the individual symbiont's Φ, V, sovereignty,
+  and reachable option cone.
+
+Ethics = i -> H
+  The individual symbiont raises the holobiont's Φ, V, truthfulness,
+  resilience, and reachable option cone.
+
+Good = both directions raise coupled worldline potential under η = 0
+Evil = local gain by degrading the field that carries future potential
 ```
 
-### Morals
+So ethics is not arbitrary preference, and morality is not mere social custom.
+Both are directional value transfers under `P_node = Φ × V`, real coupling, and
+`η = 0`.
 
-**Morals name the local enactments of ethical direction under actual conditions.**
+### Layer 2: Local Codes
 
-Morals are the customs, judgments, rules, and disciplines by which finite beings attempt to realize ethical direction in real life.
+Moral codes and ethical codes are finite implementation attempts under actual
+conditions. They are the customs, judgments, duties, disciplines, professions,
+rituals, and laws by which beings try to preserve the two directions in time.
 
 So:
 
-- ethics = the geometry of the good
-- morals = finite implementation of the good
+- objective morality = whole-to-node raising, `H -> i`
+- objective ethics = node-to-whole raising, `i -> H`
+- moral/ethical codes = local attempts to implement those directions without
+  extraction
 
-Different moral systems may vary in form while still being better or worse by the same directional standard.
+Different moral systems may vary in form while still being better or worse by
+the same directional standard: whether they raise both the node and the real
+boundary that carries it.
 
 ---
 

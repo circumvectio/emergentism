@@ -64,7 +64,10 @@ directly (the only available lever):
         `P_node,i` / `P_node,H`.
   - value/00-the-good-the-evil-and-the-transcendentals/ : added the claim-boundary
         lead for knowledge of good and evil: good = both `P_node,i` and `P_node,H`
-        rise under `η = 0`; evil = one side's apparent gain degrades the other.
+        rise under `η = 0`; evil = one side's apparent gain degrades the other;
+        later replaced the older ethics-vs-morals compression with the two-layer
+        grammar: objective morality is `H -> i`, objective ethics is `i -> H`,
+        and local codes are implementation attempts.
   - trinity/15-dharma-yuddha/                : added the claim-boundary lead for
         Krishna, Gita, flow state, objective dharma, and Krishna's army test so
         the public RAG lede exposes the already-source-backed L4 flow reading.
@@ -73,13 +76,22 @@ directly (the only available lever):
         boundary that the Nash/dominant-strategy results are balance-only or
         equatorial-profile model results, not unconditional social theorems;
         real institutions require enforcement, monitoring, due process, and exit.
+  - ground/00-the-ring-that-is-the-ground/, foundations/the-ring-that-is-the-ground/,
+        value/00-commandment-vs-geometry/, foundations/commandment-vs-geometry/,
+        formal/09-efr-godel-clarification/, formal/10-efr-mu-limit-formula/,
+        formal/11-efr-triadic-stability/ : tightened Power-Max link labels and
+        Tolkien/ring extraction language so "cooperation theorem" means the
+        conditional theorem under coupling, horizon, multiplicative `P_node`,
+        and enforced `η = 0`, not an unconditional proof that extraction can
+        never pay locally.
 
 BEFORE ANY FUTURE REGEN: restore the handoff bundle AND apply these same
 corrections to the SOURCE markdown (formal-16 / formal-17 / formal-33 /
 formal-08 / formal-22 / formal-24 / formal-41 / trinity-13 / paper-H /
 teleology core-conjecture public bundle
 files, plus axiology-public objective-morals-and-ethics and good/evil public
-bundle files, plus trinity-public dharma-yuddha), or this generator will overwrite
+bundle files, plus trinity-public dharma-yuddha, plus the ring/commandment and
+formal-09/10/11 Power-Max label public bundles), or this generator will overwrite
 the hand-patches and reintroduce the over-claims. Also fix the title-doubling: when a source heading already ends in
 "— Emergentism", `page_shell(title=...)` appends a second one.
 """
