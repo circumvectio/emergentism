@@ -607,6 +607,7 @@ noscript {
 .visual-labels .right { right: 18px; top: 50%; transform: translateY(-50%); }
 .visual-labels .bottom { bottom: 18px; left: 50%; transform: translateX(-50%); }
 .horn-visual .visual-labels .bottom { bottom: 3.6rem; }
+.burrisphere-visual .visual-labels .bottom { display: none; }
 
 .dimension-canvas {
   position: absolute;
@@ -1371,6 +1372,17 @@ pre.glyph-block {
     right: 7.25rem;
     transform: none;
     text-align: center;
+  }
+
+  .horn-visual .visual-labels .left,
+  .horn-visual .visual-labels .right {
+    display: none;
+  }
+
+  .burrisphere-visual .visual-labels .left,
+  .burrisphere-visual .visual-labels .right,
+  .burrisphere-visual .visual-labels .bottom {
+    display: none;
   }
 
   .container {

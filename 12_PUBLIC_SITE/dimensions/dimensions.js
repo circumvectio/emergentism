@@ -590,6 +590,7 @@ function buildScene(mode, scene) {
     if (readout) {
       readout.style.whiteSpace = "normal";
       readout.style.maxWidth = "min(680px, calc(100% - 32px))";
+      readout.style.top = "64px";
     }
     const W_MAX = 4.5;                                          // ends: v/c -> 0.9998, γ -> ~45
     const G_MAX = Math.cosh(W_MAX);
@@ -656,6 +657,7 @@ function buildScene(mode, scene) {
   }
 
   if (mode === "burrisphere") {
+    if (visual) visual.classList.add("burrisphere-visual");
     // THE DUAL TANGENT-PLANE STEREOGRAPHIC PROJECTION — the real geometry.
     // The sphere is sandwiched between two copies of the SAME complex plane:
     // the floor touches it at 0 (south pole), the top plane touches it at ∞
@@ -718,11 +720,44 @@ function buildScene(mode, scene) {
     root.add(phiLine); root.add(nuLine);
 
     const readout = makeReadout();
-    if (readout) { readout.style.whiteSpace = "pre-line"; readout.style.top = "auto"; readout.style.bottom = "14px"; }
+    if (readout) {
+      readout.style.whiteSpace = "pre-line";
+      readout.style.top = "auto";
+      readout.style.bottom = "58px";
+      readout.style.maxWidth = "min(760px, calc(100% - 32px))";
+    }
+    const THETA_MIN = 0.12;
+    const THETA_MAX = Math.PI - 0.12;
+    let thetaUserActive = false;
+    let thetaSlider = null;
+    if (visual) {
+      const wrap = document.createElement("div");
+      wrap.className = "model-slider theta-slider";
+      wrap.style.cssText = "position:absolute;left:16px;right:16px;bottom:16px;z-index:6;display:flex;" +
+        "align-items:center;gap:10px;font:700 11px/1 'Roboto Mono',ui-monospace,monospace;color:#9CA3AF;letter-spacing:.04em";
+      const lo = document.createElement("span"); lo.textContent = "0 · φ pole"; lo.style.color = "#FFEB3B";
+      const hi = document.createElement("span"); hi.textContent = "π · ν pole"; hi.style.color = "#D23B3B";
+      thetaSlider = document.createElement("input");
+      thetaSlider.type = "range"; thetaSlider.min = "0"; thetaSlider.max = "100"; thetaSlider.step = "1"; thetaSlider.value = "50";
+      thetaSlider.setAttribute("aria-label", "theta latitude from coherence pole through equator to viability pole");
+      thetaSlider.style.cssText = "flex:1;accent-color:#FFEB3B;cursor:pointer;height:4px";
+      thetaSlider.addEventListener("input", () => { thetaUserActive = true; });
+      wrap.append(lo, thetaSlider, hi);
+      visual.appendChild(wrap);
+    }
+    const thetaFromSlider = () => {
+      const p = thetaSlider ? parseFloat(thetaSlider.value) / 100 : 0.5;
+      return THETA_MIN + Math.max(0, Math.min(1, p)) * (THETA_MAX - THETA_MIN);
+    };
+    const sliderFromTheta = (theta) =>
+      Math.round(((theta - THETA_MIN) / (THETA_MAX - THETA_MIN)) * 100);
     const quadName = ["I", "II", "III", "IV"];
     dyn.push(function (t) {
       const psi = t * 1.6;                                           // azimuth rotates
-      const theta = Math.PI / 2 + 0.70 * Math.sin(t * 0.23);         // the angle sweeps across the equator
+      const theta = thetaUserActive
+        ? thetaFromSlider()
+        : Math.PI / 2 + 0.70 * Math.sin(t * 0.23);                  // auto-demo until the reader grabs θ
+      if (!thetaUserActive && thetaSlider) thetaSlider.value = String(sliderFromTheta(theta));
       const phi = 1 / Math.tan(theta / 2);                           // cot(θ/2)
       const nu = Math.tan(theta / 2);                                // 1/φ
       const cps = Math.cos(psi), sps = Math.sin(psi), sT = Math.sin(theta);
@@ -751,7 +786,7 @@ function buildScene(mode, scene) {
         : (cps < 0 ? "Kali L1 · take" : "Kālī L2 · take");
       if (readout) readout.textContent =
         "DUAL STEREOGRAPHIC PROJECTION · the two rays meet at P\n" +
-        "θ = " + (theta * 180 / Math.PI).toFixed(0) + "°   φ = " + phi.toFixed(2) + "   ν = " + nu.toFixed(2) + "   φ·ν = 1 (mass-shell)   E/mc² = (φ+ν)/2 = " + ((phi + nu) / 2).toFixed(2) + "   cos θ = β = " + Math.cos(theta).toFixed(2) + " (latitude = speed)\n" +
+        "θ = " + (theta * 180 / Math.PI).toFixed(0) + "°" + (thetaUserActive ? " (held by slider)" : " (auto-sweep)") + "   φ = " + phi.toFixed(2) + "   ν = " + nu.toFixed(2) + "   φ·ν = 1 (mass-shell)   E/mc² = (φ+ν)/2 = " + ((phi + nu) / 2).toFixed(2) + "   cos θ = β = " + Math.cos(theta).toFixed(2) + " (latitude = speed)\n" +
         "quadrant " + q + " · " + opName + " · " + (isGod ? "GOD-move (φ > 1)" : "DEMON-move (φ < 1)") + "\n" +
         "the stage {0, 1, ∞} — • 0 floor-touch (Śiva's sign) · ⊙ 1 centre (Viṣṇu's) · ○ ∞ top-touch (Brahmā's)";
     });

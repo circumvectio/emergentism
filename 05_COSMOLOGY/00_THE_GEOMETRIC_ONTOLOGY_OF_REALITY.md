@@ -69,7 +69,7 @@ Each geometric object is **not merely a model** for that dimension — it IS the
 | **D2** | Topology / Compactification | How does the line become a surface? | Riemann sphere `S² ≅ ℂP¹` | μ-limit: line → sphere | — |
 | **D3** | Quantum State / Closure | How does the surface acquire depth? | Bloch sphere (states + interior) | `B = sech(s)` | Maximize B |
 | **D4** | Energy / Rapidity | How does the interior become dynamic? | Horn torus (past-future overlap) | `H = 2 cosh(s)`, rapidity `w` | Minimize H |
-| **D5** | Game Space / Play | What is the playable mirror? | Burrisphere (dual stereographic) | `φ · ν = 1`, `η = 0` | Play at the equator |
+| **D5** | Game Space / Play | What is the playable mirror? | Burrisphere (dual stereographic) | `φ · ν = 1`, `P_node = Φ × V`, `η = 0` | Widen reachable futures under balance |
 | **D6** | Convergence / Return | What closes the cycle? | Closed loop returning to D0 | `D6 ≡ D0` | Return with cleaner constraints |
 
 ---
@@ -257,21 +257,21 @@ The full framework geometry comes alive. The Burrisphere is `S² ≅ ℂP¹` wit
 
 ### What it is
 
-D5 is the **playable mirror** — the space where agents navigate, choose, and play the game of emergence. The four operators (↑φ, ↓φ, ↑ν, ↓ν) are the cardinal directions. The ethic `η = 0` is the enforced conditional cooperation constraint. The balance `B = sin θ` is the score.
+D5 is the **playable mirror** — the space where agents navigate, choose, and play the game of emergence. The four operators (↑φ, ↓φ, ↑ν, ↓ν) are the cardinal directions. The ethic `η = 0` is the enforced conditional cooperation constraint. Balance `B = sin θ` is the admissibility / alignment condition; finite-node action is scored in the contact register as `P_node = Φ × V`.
 
 **Game-theoretic structure:**
 - The equator is the non-extraction profile: `η = 0`, neither extracting nor being extracted, stable only under the stated coupling / horizon / enforcement conditions
 - The poles are the extraction regimes: pure coherence (north) or pure viability (south)
-- The game is played by moving on the sphere: choosing whether to invest in φ or ν
-- The winning strategy (tit-for-tat at η = 0) is the geometric expression of staying near the equator
+- The game is played by moving on the sphere: coupling D5 worldline-foresight (`Φ`) with D4 means-to-act (`V`)
+- The winning strategy is to widen reachable futures while staying near the equator under `η = 0`, not to worship balance as an end in itself
 
 ### Why "game space"
 
-D5 is where the framework becomes **playable** — not just a description but a space of strategic action. Every agent on the Burrisphere is playing the same game: maximize B, maintain η = 0, navigate toward the equator. The seven Generative Actions (L1–L7) are the seven moves available in this game.
+D5 is where the framework becomes **playable** — not just a description but a space of strategic action. Every agent on the Burrisphere is playing the same game: maximize reachable worldline potential, maintain `η = 0`, and hold the equatorial balance that lets `Φ` and `V` multiply instead of cancelling each other. The seven Generative Actions (L1–L7) are the seven moves available in this game.
 
 ### Ontological reading `[I]`
 
-D5 is the dimension of **conscious agency** — where the geometric structure becomes a space of choice. The Burrisphere is not just a manifold; it is a **game board.** The players are agents. The moves are the Generative Actions. The winning condition is equatorial balance. And the game is non-zero-sum: every player who reaches the equator makes it easier for others to reach it too.
+D5 is the dimension of **conscious agency** — where the geometric structure becomes a space of choice. The Burrisphere is not just a manifold; it is a **game board.** The players are agents. The moves are the Generative Actions. The win condition is syntropic potential: a move is better when it widens the actor's and the holobiont's reachable futures without extraction. Equatorial balance is the condition that makes that widening usable.
 
 ---
 

@@ -460,6 +460,7 @@ h3 {
 .label.left { left: 1rem; bottom: 32%; }
 .label.bottom { left: 1rem; right: 1rem; bottom: 1rem; max-width: none; text-align: center; }
 .horn-visual .label.bottom { bottom: 3.6rem; }
+.burrisphere-visual .label.bottom { display: none; }
 .label.center { left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center; }
 
 .fallback {
@@ -669,6 +670,17 @@ noscript {
   .horn-visual .label.bottom {
     right: 7.25rem;
     text-align: center;
+  }
+
+  .horn-visual .label.left,
+  .horn-visual .label.right {
+    display: none;
+  }
+
+  .burrisphere-visual .label.left,
+  .burrisphere-visual .label.right,
+  .burrisphere-visual .label.bottom {
+    display: none;
   }
 
   .model-slider {
