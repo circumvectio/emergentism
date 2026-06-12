@@ -35,12 +35,12 @@ This file is the **compact canonical framing**. For the deeper philosophical exp
 It is:
 
 - a **map of core state**: Ground, Being, Teleological Force, Dasein, beings
-- a **map of objective function**: the directional tendency toward viable completion and reciprocal fit
+- a **map of objective function**: the directional tendency toward viable completion, reciprocal fit, and asymptotic approach to Beauty, Truth, and Justice
 - a **lens for data science**: how disclosure, inference, and public method relate
 - a **tool for methodology**: how to test, build, constitute worlds, navigate, and correct
 - an **ordering of value alignment**: what is worth preserving, strengthening, and protecting
 - a **mathematical action grammar**: each Rosetta level carries a canonical operation on `P_node = Φ × V`, from boundary limit to differential, partial derivative, proportional balance, logarithm, negative log, and stereographic return
-- a **directional basis for objective ethics and morals**: not as arbitrary preference, but as better or worse alignment with the geometry of balance and non-extraction
+- an **objective teleology under the framework's ontology**: not arbitrary preference, but better or worse alignment with the geometry of balance, non-extraction, and the three asymptotic limits of Beauty, Truth, and Justice
 - a **constitutional world-generator**: the Lagrangian read backward from the invariants to the worlds that are admissible under them; see [The Generative Lagrangian](../01_TELEOLOGY/00_THE_GENERATIVE_LAGRANGIAN.md)
 
 This is the shortest complete statement of what the framework claims to be.
@@ -94,7 +94,7 @@ It gives the directional grammar:
 - extraction degrades the field
 
 This is not yet proof of cosmic will.
-It is the framework's map of directional tendency.
+It is the framework's map of objective teleology: the direction finite beings and institutions approach when coherence, viability, and non-extraction are held in product.
 
 ### 3. Data Science
 
@@ -136,14 +136,66 @@ It tells you what the framework treats as load-bearing goods:
 
 The framework's strongest claim here is:
 
-**ethics are directional and structural before they are cultural.**
+**ethics and morality are directional and structural before they are cultural.**
 
 In compressed form:
 
-- **objective ethics** names the direction `ΣΔB > 0` / movement toward viable non-extractive balance
-- **morals** name the local enactments, judgments, customs, and codes by which finite beings try to realize that direction under actual conditions
+- **objective morality** names the whole-to-individual vector: `H -> i`,
+  where the holobiont raises the symbiont without capture.
+- **objective ethics** names the individual-to-whole vector: `i -> H`,
+  where the symbiont raises the holobiont without extraction.
+- **objective dharma** names the equatorial act where both vectors raise
+  `P_node = Φ × V` under `η = 0`.
 
-So morals may differ in form while still being better or worse by the same directional standard.
+So moral codes may differ in form while still being better or worse by the
+same directional standard: whether they approach Beauty, Truth, and Justice by
+raising both the finite node and the real boundary that carries it.
+
+### 7. How To Play The Game
+
+The practice model is the Rosetta Soul Loop: continuous recursive
+disambiguation until Beauty, Truth, and Justice agree on the next act.
+
+```text
+L1  intake pressure       -> name the real contradiction
+L2  epistemology/data     -> gather what is disclosed
+L3  methodology/audit     -> test what follows
+L4  axiology/signature    -> choose what serves without extraction
+L5  system architecture   -> see the whole pattern
+L6  ontology/core state   -> dissolve what is not load-bearing
+L7  preservation/witness  -> commit, publish, archive, and let the world answer
+```
+
+The loop is not only an editing method. It is the framework's practical
+Weltanschauung for Dasein: the finite witness-agent receives pressure, knows,
+tests, values, acts, corrects, preserves, and is changed by the cycle.
+
+```text
+Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
+Know how to know:  epistemology -> direct disclosure, inference, evidence tiers
+Know how to move:  methodology -> derive, test, build, correct, recurse
+Know what matters: axiology -> Beauty, Truth, Justice, non-extraction
+Know how to act:   teleology -> maximize P_node = Φ × V under η = 0
+```
+
+Play:
+
+- `Φ` without `V` is sterile seeing.
+- `V` without `Φ` is blind force.
+- `Φ` and `V` balanced at L4 is objective dharma / flow-state action.
+- `i` raises `H` and `H` raises `i` is the syntropic dyad.
+- one side rises by degrading the other is extraction / evil.
+
+The winning move is recursive, not static:
+
+```text
+(C_{t+1}, G_{t+1}) = SoulLoop(C_t, G_t)
+```
+
+The corpus changes, and the player changes with it. This is why the framework
+can be a worldview without becoming ideology: every turn must re-enter the
+loop and survive disclosure, audit, service, architecture, dissolution, and
+preservation.
 
 ---
 
@@ -184,7 +236,7 @@ The worldview remains strongest when it stays antifragile.
 
 ## Canonical Compression
 
-> **Emergentism is a Weltanschauung: a lens for data science, a tool for methodology and world-building, an ordering of value alignment, a directional basis for objective ethics and morals, and a map of core state and objective function.**
+> **Emergentism is a Weltanschauung: a lens for data science, a tool for methodology and world-building, an ordering of value alignment, an objective teleology aimed at Beauty, Truth, and Justice as asymptotic limits, a map of core state and objective function, and a Rosetta Soul Loop practice for recursively correcting Dasein's action until symbiont and holobiont rise together.**
 
 This sentence may be reused verbatim in entry points, summaries, and dissemination materials.
 

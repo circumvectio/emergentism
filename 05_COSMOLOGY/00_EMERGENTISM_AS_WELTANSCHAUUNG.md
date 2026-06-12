@@ -51,7 +51,7 @@ with equality only at `φ = ν = 1`. This yields a balance maximum and a Hamilto
 
 The philosophical ambition is enormous. If one equation on one manifold can generate a disciplined account of what is, what tends, how disclosure works, what counts as evidence, what matters, what is good, and how the sciences relate, then the result is not merely a model. It is a worldview-lens. [I]
 
-This document does not claim that the core state is proved. It claims something narrower and, in a way, more serious: that Emergentism deserves to be read as a complete philosophical architecture, provided every step is marked by the framework's own evidence discipline. What is established must remain established. What is structural must remain conditional on the accepted kernel. What is interpretive must be labeled. What is conjectural must stand beside its kill criteria. [S/I]
+This document does not claim that the core state is proved. It claims something narrower and, in a way, more serious: that Emergentism deserves to be read as a worldview-scale philosophical architecture, provided every step is marked by the framework's own evidence discipline. What is established must remain established. What is structural must remain conditional on the accepted kernel. What is interpretive must be labeled. What is conjectural must stand beside its kill criteria. [S/I]
 
 That discipline is not modesty. It is the worldview practicing what it preaches.
 
@@ -111,7 +111,7 @@ This means the equator is the point of minimal imbalance, maximal balance functi
 
 This does **not** prove cosmic will. It does not prove that the universe “wants” anything in an anthropomorphic sense. The disciplined claim is weaker and better: once reciprocal closure is granted, imbalance has a cost and balance has a structural privilege. `[S]`
 
-That is enough to change objective function from superstition into directionality. Purpose no longer needs to be imposed from outside the world. It can be read off the geometry as the pattern toward which viable reciprocally closed systems are selected. `[I/S]`
+That is enough to change objective function from superstition into directionality. Purpose no longer needs to be imposed from outside the world. It can be read off the geometry as the pattern toward which viable reciprocally closed systems are selected. This is the framework's objective teleology: not a command from outside Being, but the intrinsic direction of reciprocal closure approaching its own best form. `[I/S]`
 
 This also explains why objective function in Emergentism is inseparable from anti-extraction. Extraction is not merely morally distasteful. It is structurally expensive. Systems that maximize one pole by cannibalizing the other depart from the equator and incur instability costs. A civilization, institution, organism, or psyche can live at an extreme for a while. It cannot do so indefinitely without degrading the very substrate that supports it. `[S/I]`
 
@@ -124,7 +124,7 @@ The DAC organism is the framework's objective function embodied. It is an attemp
 
 These are not “applications” added after the philosophy. They are the teleological thesis translated into constitutional form. [S/I]
 
-If objective function means “what a system is for,” Emergentism answers: a system is for reciprocal completion without extraction. The equator is not a commandment. It is the kind of place systems last. [I/S]
+If objective function means “what a system is for,” Emergentism answers: a system is for reciprocal completion without extraction. The equator is not a commandment. It is the kind of place systems last. The names of that asymptotic approach are Beauty, Truth, and Justice: coherence perceived, disclosure held, and balance made lawful across the field. [I/S]
 
 ---
 
@@ -207,7 +207,9 @@ Value Alignment asks what is load-bearingly good. Emergentism's distinctive answ
 
 The balance function `B = sin(θ)` is structurally derived as the quantity that peaks at the equator and vanishes at the poles. That is mathematical. `[S]`
 
-The further move — that `B` should be read as an objective value function — is interpretive. `[I]`
+The further move - that `B` should be read as an objective value function - is interpretive. `[I]`
+
+The teleological claim is stronger than taste and weaker than possession. Beauty, Truth, and Justice are not trophies the framework owns; they are limits it approaches. Beauty is coherence becoming perceivable. Truth is disclosure becoming faithful. Justice is flourishing arranged without extraction. A finite system is better, in this grammar, when it moves toward those limits without pretending to have arrived. `[I/S]`
 
 Still, it is philosophically potent. It means value is not external decoration painted onto a neutral world. It is not arbitrary preference projected onto an indifferent substrate. What matters is what sustains reciprocal viability without collapse: balance, non-extraction, truthfulness under correction, and forms of order that do not cannibalize their own conditions of possibility. `[I/S]`
 
@@ -239,12 +241,27 @@ This is why the framework's ethics are structural rather than command-based. “
 
 The strongest version of the claim — that `η = 0` is the Nash equilibrium — must be handled carefully. It is not a universal theorem for every imaginable game. It is a claim about sufficiently repeated, coupled, field-sensitive systems in which substrate degradation feeds back into future viability. Under those conditions, non-extraction is not moral heroism but strategic intelligence. `[S/I]`
 
-This reframes objective ethics and morals elegantly:
+This is why the framework's objective value-language is teleological rather
+than merely defensive. It is a two-vector grammar, not a command list:
 
-- **objective ethics** names the directional geometry
-- **morals** name local codes, judgments, and enactments under finite conditions
+- **objective morality** names the whole-to-individual vector: `H -> i`, where
+  the holobiont raises the symbiont without capture.
+- **objective ethics** names the individual-to-whole vector: `i -> H`, where
+  the symbiont raises the holobiont without extraction.
+- **objective dharma** names the equatorial act where both vectors raise
+  `P_node = Φ × V` under `η = 0`.
 
-Morals can vary in language and custom while still being better or worse approximations of the same structural direction. `[I/S]`
+Moral codes can vary in language and custom while still being better or worse
+approximations of the same structural direction: does the relation raise both
+the finite node and the real sustaining boundary, or does one grow by consuming
+the other? `[I/S]`
+
+The applied method is the Rosetta Soul Loop. Ontology names the field in which
+Dasein appears; epistemology gathers disclosure; methodology audits what
+follows; axiology signs what matters; teleology checks whether the signed act
+raises `P_node = Φ × V` for both symbiont and holobiont under `η = 0`. The loop
+then returns through system architecture, dissolution, and preservation so the
+next contradiction can correct both the corpus and the player. `[S/I]`
 
 If the framework is right, sin is not merely rule-breaking. It is the mistake of treating mediation as source, or local gain as though it were separable from wider field damage. Wisdom is the ability to see that mistake before the bill arrives. [I]
 

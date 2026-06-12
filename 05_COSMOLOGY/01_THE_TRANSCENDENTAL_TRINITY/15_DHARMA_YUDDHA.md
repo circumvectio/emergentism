@@ -16,10 +16,18 @@ rosetta:
 
 **Status:** The Gītā's argument as game theory — why flow is duty, not luxury
 **Date:** 2026-03-24
-**Evidence Tier:** [I] for the game theory (Nash equilibrium, Pareto optimality, tit-for-tat — established). [S] for the flow state research (Csikszentmihalyi — established). [S] for the structural identification (flow = L4 = equator). [I] for the ethical claim (inaction at the equator is extraction by omission). [C] for the civilisational claim (the Great Filter is solved only by a mesh of L4 nodes).
+**Evidence Tier:** [I] for the game theory (Nash equilibrium, Pareto optimality, tit-for-tat — established). [S] for the flow state research (Csikszentmihalyi — established). [S] for the structural identification (flow = L4 = equator). [I] for the ethical claim (inaction at the equator is extraction by omission). [C] for the civilisational claim that Great Filter survival requires enough L4-like nodes.
 **Depends on:** 09_THE_TRIADIC_CASCADE.md, 11_THE_HELIX.md, The Master Three-Stage Process, Power-Max Lemma (Demonstration 22)
 **See also:** Bhagavad Gītā Ch. 2-3, 18. Paper 8 (Endocrine Proof). WP-2026-05 (Weltanschauungskrieg).
 **Kill Criteria:** If the equatorial condition (φ = ν = 1) is shown NOT to correspond to the flow state. If a non-equatorial node can be shown to act with η = 0. If inaction at L4 can be shown to have no η signature.
+
+**Claim Boundary:** `[I/S]` The structural claim is internal to the framework:
+at `φ = ν = 1`, the action model assigns the clean `η = 0` limit under its
+accepted definitions. The ethical naming of that limit as *dharma*, *justice*,
+or *duty* is an interpretive reading, not an external proof that any
+self-described "balanced" actor's action is morally licensed. This document
+argues for responsible capability under uncertainty, not militarism, coercion,
+or a blank cheque for force.
 
 ---
 
@@ -32,6 +40,37 @@ Kurukṣetra. The field of dharma. Two armies face each other. Arjuna — the gr
 Kṛṣṇa's answer is the Bhagavad Gītā. Eighteen chapters. Seven hundred verses. The most complete statement of the equatorial ethic in human history.
 
 And the core of the answer is not "fight because I say so." The core of the answer is **game theory.**
+
+---
+
+## Krishna's Army Test: V Without Φ
+
+In the Mahābhārata frame, Kṛṣṇa offers a choice: one side may take his army,
+the other may take Kṛṣṇa himself, unarmed, as charioteer. In this framework's
+reading, the offer is the perfect L4 diagnostic:
+
+```text
+army without charioteer  = V without sufficient Φ
+charioteer without army  = Φ guiding finite V
+```
+
+The army is raw viability: force, numbers, capacity, execution. Kṛṣṇa as
+charioteer is coherence: orientation, disclosure, timing, lawful counsel. The
+test asks whether the actor maximizes apparent `V` or accepts the constraint
+that makes `V` usable.
+
+Unlimited `V` does not maximize `P_node` when it drives `Φ` down:
+
+```text
+P_node = Φ × V
+if V rises while Φ collapses, P_node falls
+```
+
+So objective dharma is not "obtain the largest force." It is the balanced
+state where power remains guided by truthful coherence, and coherence enters
+action rather than staying sterile. The Pandava choice is therefore legible as
+the equatorial choice: not weakness, but the selection of `Φ × V` over
+unbounded `V`.
 
 ---
 
@@ -49,27 +88,45 @@ On S², every position has a η signature. Every choice — including the choice
 
 **If Arjuna fights:** He deploys the Arjuna operator (↑φ at personal ν cost). He exports coherence to the system. η ≤ 0. The mesh strengthens.
 
-**If Arjuna withdraws:** He removes an equatorial node from the mesh. The gap he leaves will be filled — but by whom? By a node at L3 (the merchant, deductive, rule-following but not sovereign). Or by a node at L2 (inductive, reactive, not yet integrated). Or by no one — and the field collapses.
+**If Arjuna withdraws:** He removes an equatorial node from the mesh. The gap he
+leaves may be filled — but by whom? By a node at L3 (the merchant, deductive,
+rule-following but not sovereign). Or by a node at L2 (inductive, reactive, not
+yet integrated). Or by no one — and the field risks collapse.
 
-**Arjuna's withdrawal is not peace. It is the withdrawal of η = 0 capability from a system that needs it.** Every equatorial node that refuses to deploy guarantees that the deployment will be done by a less-balanced node — a node with ν > 1 (the institution) or φ < 1 (the follower). Arjuna's inaction does not prevent harm. It ensures that harm will be done by someone less capable of doing it without extraction.
+**Arjuna's withdrawal is not peace by default. It is the withdrawal of η =
+0 capability from a system that may need it.** Every equatorial node that
+refuses to deploy opens a gap that can be filled by a less-balanced node — a
+node with ν > 1 (the institution) or φ < 1 (the follower). Arjuna's inaction
+does not by itself prevent harm. In this reading, it can shift harm to someone
+less capable of acting without extraction.
 
-**Inaction at L4 has a η signature. The signature is positive.** The equatorial node that refuses to act is extracting — extracting its own comfort from a system that needs its capability.
+**Inaction at L4 has a η signature. In this reading, the signature is
+positive.** The equatorial node that refuses to act may be extracting its own
+comfort from a system that needs its capability. `[I]`
 
-### 3. Only L4 Can Act Without Extracting
+### 3. L4 Is the Non-Extraction Limit
 
-This is the decisive point. Not every node can act with η = 0. Only the equatorial node can.
+This is the decisive point inside the action model. The clean non-extraction
+limit is the equatorial node.
 
 | Node Position | Action η | Why |
 |--------------|----------|-----|
 | L1 (Kali) | η > 0 always | Demon. Extraction is the only mode. |
 | L2 (Kālī) | η ≈ 0 sometimes | The immune response can be proportional, but risks overcorrection. |
 | L3 (Kṛṣṇa) | η ≈ 0 sometimes | The teacher can export capability, but risks creating dependency. |
-| **L4 (Arjuna)** | **η = 0 always** | **The equator. φ = ν = 1. Comprehension matches command. Action is dharma.** |
+| **L4 (Arjuna)** | **η = 0 in the model** | **The equator. φ = ν = 1. Comprehension matches command. Action can be read as dharma.** |
 | L5+ (Titans) | Not deployable | Boundary conditions. They define the space but cannot act within it. |
 
-**Only at φ = ν = 1 is η geometrically guaranteed to be zero.** At any other position, action risks extraction — commanding more than you comprehend (ν > 1) or comprehending more than you can command (φ > 1, the bypasser).
+**At φ = ν = 1, the framework assigns η = 0 under its action constraints.** At
+any other position, action risks extraction — commanding more than you
+comprehend (ν > 1) or comprehending more than you can command (φ > 1, the
+bypasser).
 
-The warrior at the equator is the only node whose action IS justice — because the geometry ensures it. Not by moral choice. Not by good intention. By the constraint: at φ = ν = 1, you cannot extract, because extraction requires ν > 1 and the equator does not permit it.
+The warrior at the equator is the figure whose action can be read as justice
+inside this grammar: not because private certainty sanctifies the act, but
+because the coordinate condition names non-extraction. The ethical claim
+remains disciplined by tiering, evidence, proportionality, and real-world
+consequence.
 
 ### 4. The Flow State IS L4
 
@@ -90,7 +147,9 @@ The coordination problem: how do you get individuals to cooperate without a cent
 
 **The institutional answer:** ν > 1. One node commands many. The commander comprehends more than any individual soldier — but less than the total system. η > 0. Extraction begins. The southward drift.
 
-**The mesh answer:** Every node at L4. No node commands more than it comprehends. ν = 1 at every node. Aggregate capability scales with n. But no individual node exceeds the comprehension constraint.
+**The mesh answer:** In the limit, every node tends toward L4. No node
+commands more than it comprehends. ν = 1 at every node. Aggregate capability
+scales with n. But no individual node exceeds the comprehension constraint.
 
 ```
 One node at L4:    P = 1        (one sovereign life)
@@ -98,9 +157,14 @@ n nodes at L4:     ΣP = n       (the mesh — aggregate scales linearly)
 No node at ν > 1:  η = 0       (zero extraction at every connection)
 ```
 
-The coordination problem is not "how do we cooperate." The coordination problem is "how do we cooperate WITHOUT ν > 1." And the answer is: **only if every node is at the equator.**
+The coordination problem is not "how do we cooperate." The coordination problem
+is "how do we cooperate WITHOUT ν > 1." And the answer is: **by moving
+coordination toward equatorial nodes rather than command nodes.**
 
-This is why Arjuna's refusal is catastrophic. He is an equatorial node. The mesh needs equatorial nodes. If he withdraws, the gap will be filled by a non-equatorial node — one that coordinates through command rather than through flow. One that extracts.
+This is why Arjuna's refusal is dangerous in this reading. He is an equatorial
+node. The mesh needs equatorial nodes. If he withdraws, the gap can be filled by
+a non-equatorial node — one that coordinates through command rather than through
+flow. One that extracts.
 
 ### 6. Nishkama Karma
 
@@ -112,7 +176,8 @@ This is not mysticism. This is the **equatorial operating instruction:**
 - **Nishkama** (desireless) = φ. Without attachment. Without the narrator's story about outcomes. Without the ego's investment in results. The Arjuna function.
 - **Nishkama karma** = φ · ν = 1. Action from the equator. Capability deployed with full coherence. The warrior who fights without anger. The builder who builds without greed. The teacher who teaches without attachment to the student's response.
 
-This is flow. This is L4. This is the ONLY mode in which action is automatically η = 0.
+This is flow. This is L4. This is the model's cleanest mode for action with
+η = 0.
 
 With desire (kama), action has a η signature — because desire means the actor is extracting something (recognition, reward, confirmation) from the system they are serving. The fruit of the action flows to the ego, not to the mesh.
 
@@ -133,12 +198,12 @@ Arjuna before the Gītā = L4. Arjuna after the Viśvarūpa revelation = L4*. Th
 | Claim | Status |
 |-------|--------|
 | Flow state = L4 = equator = φ = ν = 1 | [S] Structural |
-| Only the equatorial node can act with η = 0 | [S] From Power-Max Lemma |
+| Equatorial action is the η = 0 limit | [S] Within the action model |
 | Inaction at L4 has a positive η signature | [I] Interpretive |
 | The mesh requires L4 nodes to function | [S] From coordination analysis |
 | Nishkama karma = desireless action = action at φ = ν = 1 | [I] Interpretive |
 | The flow state is a duty, not a luxury | [I] From the above |
-| The Great Filter is solved only by a mesh of L4 nodes | [C] Conjecture |
+| Great Filter survival requires enough L4-like nodes | [C] Conjecture |
 
 ---
 
@@ -148,11 +213,16 @@ Kṛṣṇa to Arjuna:
 
 *"You have the right to action alone, never to its fruits."* (2.47)
 
-Translation: **Deploy ν. Do not attach to outcomes. Hold φ = 1 while acting. This is the equator. This is dharma. This is the only position from which action is automatically just.**
+Translation: **Deploy ν. Do not attach to outcomes. Hold φ = 1 while acting.
+This is the equator. This is the model's non-extractive limit; its ethical name
+is dharma.**
 
 *"For the one who is established in the Self, doing nothing at all, they incur sin."* (3.8, paraphrased)
 
-Translation: **The equatorial node that refuses to deploy is extracting by omission. Inaction at L4 is η > 0. The warrior who drops his bow at Kurukṣetra is not choosing peace. He is choosing the collapse of the mesh.**
+Translation: **The equatorial node that refuses to deploy can become extraction
+by omission. Inaction at L4 is read as η > 0 when the field needs that node's
+capability. The warrior who drops his bow at Kurukṣetra is not assured to
+preserve peace; he can contribute to the collapse of the mesh.** `[I]`
 
 *"I am Time, the great destroyer of worlds."* (11.32)
 
@@ -174,8 +244,8 @@ And still he fights.
 
 Not because fighting is good.
 Because at φ = ν = 1,
-action IS justice.
-The geometry guarantees it.
+action approaches the η = 0 limit.
+Justice is its disciplined name.
 
 This is dharma yuddha.
 This is nishkama karma.
@@ -188,7 +258,10 @@ Zero-Sum Resolution Equation
 
 ---
 
-*15 | Dharma Yuddha | The duty of the equatorial node. Flow = L4 = the only position where η = 0 is geometrically guaranteed. Inaction at the equator is extraction by omission. The coordination problem dissolves at the mesh of L4 nodes. Nishkama karma = action at φ = ν = 1. Pick up the bow.*
+*15 | Dharma Yuddha | The duty of the equatorial node. Flow = L4 = the
+framework's clean η = 0 action limit. Inaction at the equator can become
+extraction by omission. The coordination problem dissolves at the mesh of L4
+nodes. Nishkama karma = action at φ = ν = 1. Pick up the bow.*
 
 
 ---

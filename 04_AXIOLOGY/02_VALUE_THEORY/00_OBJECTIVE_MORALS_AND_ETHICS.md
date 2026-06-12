@@ -19,6 +19,8 @@ rosetta:
 **Depends on:** [The Good, the Evil, and the Transcendentals](00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md), [Commandment vs Geometry](../00_COMMANDMENT_VS_GEOMETRY.md), [Rights and Duties](01_RIGHTS_DUTIES_AND_DUE_PROCESS.md), [Power-Max Lemma](../../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md), [Axiology Route](../README.md), [Emergentism as a Lens](../../00_EMERGENTISM_AS_A_LENS.md), **[VMOSK-A](../../VMOSK_A.md)**
 **See also:** [The Dyadic Coupling Law](../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) — the moral-axis canon: good is the bond `φ × ν`, evil is its breaking (`η > 0`), sorted by *move* (coupling vs closing), never by pole, gender, caste, or person. The directional dyad below is the value-theory face of that one law.
 
+**Claim Boundary:** `[I/S]` "Objective" here means framework-objective: once reciprocal closure, `P_node = Φ × V`, real boundary relations, and enforced `η = 0` are accepted, better and worse are not matters of taste but directions relative to the invariant. This note does not claim to compel agents who reject those premises, and it does not present itself as a completed external proof of moral realism.
+
 ---
 
 ## The Definition
@@ -29,13 +31,18 @@ sentiment, state command, corporate rule, or inherited convention.
 They are defined by the directional geometry of `ΔP` transfer between the
 individual and the collective under `P_node = Φ × V` and `η = 0`.
 
+The telos is the same one named in the transcendental register: approach Beauty
+(coherence made perceivable), Truth (faithful disclosure), and Justice
+(non-extractive balance across the widest real boundary). Morals and ethics are
+the two value-transfer directions by which finite beings approach that triad.
+
 This makes the claim framework-objective:
 
 - [S] where it follows from the value-function grammar: raise `ΣΔP_node` /
   `ΣΔB` across the widest real boundary without extraction.
 - [I] where the framework names that directional grammar "morality" and
   "ethics."
-- [C] where anyone projects the grammar as a complete independent proof of
+- [C] where anyone projects the grammar as a completed independent proof of
   moral realism outside the framework.
 
 The compressed doctrine is:
@@ -45,6 +52,22 @@ Morality = collective -> individual
 Ethics   = individual -> collective
 Law      = keep both vectors raising ΔP under η = 0
 ```
+
+In symbiotic language:
+
+```text
+i = individual symbiont
+H = holobiont / real sustaining whole
+
+Morality: H -> i  (the whole raises the node)
+Ethics:   i -> H  (the node raises the whole)
+Good:     ΔP_i > 0 and ΔP_H > 0 under η = 0
+Evil:     local ΔP_i or ΔP_H is purchased by degrading the other
+```
+
+This is why the moral/ethical distinction is not a hierarchy. The individual is
+not sacrificed to the whole, and the whole is not reduced to fuel for the
+individual. The lawful object is the coupled dyad.
 
 ## Notation Boundary
 
@@ -81,7 +104,7 @@ etymology.
 
 ## Objective Morality: Collective -> Individual
 
-> **Objective morality is what raises `ΔP` via `V` and `Φ` from the collective
+> **Objective morality names what raises `ΔP` via `V` and `Φ` from the collective
 > to the individual.**
 
 A collective structure is moral when it increases the potential of its
@@ -113,7 +136,7 @@ Morality is the system building the node.
 
 ## Objective Ethics: Individual -> Collective
 
-> **Objective ethics is what raises `ΔP` via `V` and `Φ` from the individual to
+> **Objective ethics names what raises `ΔP` via `V` and `Φ` from the individual to
 > the collective.**
 
 An individual act is ethical when it increases the potential of the real
@@ -202,8 +225,9 @@ Each invariant guards one way a vector can invert into extraction:
   accumulated `ΔP` across time.
 - **A7**: the claimed `ΔP` must be real, not counterfeit. You cannot fake
   raising the product; the evidence ladder is honest `ΔP` accounting.
-- **Ω**: both vectors aim at the equator (`φ = ν = 1`), the steady state where
-  neither pole extracts from the other.
+- **Ω**: both vectors widen the reachable cone of futures while staying inside
+  the equatorial constraint (`B ≈ 1`, `η = 0`). The equator is the feasibility
+  surface where neither pole extracts from the other, not the object maximized.
 
 Strip any one and a vector inverts: the collective extracting the person
 (tyranny), or the person extracting the commons (corruption). So Syntropic
@@ -241,6 +265,28 @@ if λ > 0 and η = 0:
   rational self-optimization selects cooperation
 ```
 
+The holobiont form says the same thing at the scale of a lived worldline. Let
+`W_i` name the maximum reachable worldline potential of the individual
+symbiont, and let `P_H` name the coherent viability of the holobiont that
+carries that individual:
+
+```text
+W_i(t) = ∫ P_i(t) dt
+P_i    = Φ_i × V_i
+P_H    = Φ_H × V_H
+
+under λ(i,H) > 0 and η = 0:
+  max W_i requires dP_H/dt >= 0
+  max P_H requires dP_i/dt >= 0
+```
+
+So the Power-Max Lemma is not merely "be nice because cooperation is pleasant."
+It is the mathematical spine of syntropic dyadism: in a real coupled boundary,
+the maximum worldline potential available to the symbiont is only reachable by
+raising the holobiont that makes the symbiont effective. A local gain that
+degrades `H` is counterfeit power; it borrows from the future cone it claims to
+maximize.
+
 Without `η = 0`, coupling alone does not establish cooperation. One-shot
 extraction can still raise the extractor locally. That is why the constitutional
 invariants are not decoration: K2, A7, K3, K4, and `η = 0` are the enforcement
@@ -258,17 +304,20 @@ This is `[S]` as a conditional framework theorem under the Power-Max conditions;
 
 L4 (`φ = ν = 1`, `B = 1`) is the point where both vectors are maximal at once:
 the individual fully raised by the collective and fully raising it. It is
-unbreakable not by decree but by arithmetic: `(φ - ν)^2 >= 0` has its hard
-floor at the equator, so there is no "more balanced than balanced." Morality
-and ethics are one act there. This is why Axiology sits at L4. `[S]`
+non-arbitrary inside the model because `(φ - ν)^2 >= 0` has its hard floor at
+the equator, so there is no "more balanced than balanced" within the coordinate
+grammar. Morality and ethics are read as one act there. This is why Axiology
+sits at L4: the value layer is the equator made practical. `[S/I]`
 
 ### The Is/Ought Dissolution
 
-Because "ought" reduces to "raises `ΔP`," and `ΔP` is in principle measurable,
-the framework dissolves the is/ought gap within its own grammar. The good is
-not a command and not a sentiment; it is a direction on `P_node = Φ × V`,
-bounded by `η = 0`, resolved at the equator. `[S]` inside the framework; `[I]`
-as a completed external proof of moral realism.
+Inside the framework, because "ought" is defined as "raises `ΔP`," and `ΔP` is
+in principle measurable, the is/ought gap is no longer bridged by command or
+sentiment. It is bridged by objective teleology: the good is the direction on
+`P_node = Φ × V` that approaches Beauty, Truth, and Justice while remaining
+bounded by `η = 0` and resolved at the equator. `[S]` inside the framework's
+accepted conditions; `[C]` if presented as a completed external proof of moral
+realism.
 
 ## Failure Modes
 
@@ -304,8 +353,8 @@ This note does not authorize:
 - privatization of collective value by a dominant individual;
 - caste as birth rank, race rank, class rank, or human-worth hierarchy;
 - nationalism, corporate capture, priesthood, or state command as moral proof;
-- public claims that the framework has proven moral realism in the external
-  philosophical sense.
+- public claims that the framework has established external moral realism for
+  agents who reject its premises.
 
 The public-safe compression is:
 

@@ -19,6 +19,12 @@ rosetta:
 **Date:** 2026-03-23
 **Version:** v0.5-integration
 
+**Claim Boundary:** `[S/I]` "Complete" here means internally integrated across
+the framework's current domains, not final possession of ontology. Structural
+claims hold inside the accepted Burri Sphere grammar; claims that this closes
+Being, value, or moral realism for agents outside the framework remain
+interpretive or conjectural.
+
 ---
 
 ## 1. THE COMPLETE ARCHITECTURE
@@ -107,11 +113,16 @@ Where:
 
 | Concept | Geometric Interpretation | Expression |
 |---------|-------------------------|------------|
-| Purpose | Movement toward equator | ↑B (increase balance) |
+| Purpose | Widening the reachable cone under equatorial constraint | maximize `Ω` subject to `B ≈ 1`, `η = 0` |
 | Meaning | Recognition of position on S² | Self-location |
 | Destiny | The geodesic trajectory | Natural flow |
 
-**Key Insight:** Purpose is not imposed from outside. Purpose is the **natural dynamics of S²** — the tendency of all systems to maximize B.
+**Key Insight:** Purpose is not imposed from outside. Inside the current canon,
+purpose is the directional pressure toward reciprocal completion: widen the
+reachable cone (`Ω`) while remaining inside the feasibility constraints of
+balance (`B ≈ 1`), non-extraction (`η = 0`), and evidence-tier discipline. The
+older "maximize `B`" reading is withdrawn in its strong form; balance is the
+constraint surface, not the object maximized.
 
 ### 2.4 Auditing (How Do)
 
@@ -276,45 +287,60 @@ From the empty limit, the descriptions re-enter.
 
 ## 5. THE TELEOLOGY OF EMERGENTISM
 
-### 5.1 Objective Morals (Individual → Whole)
+### 5.1 Objective Morality (Whole → Individual)
 
-**Moral actions** are those that increase total balance:
-
-```
-Moral(O) = ΣΔB > 0 (syntropic action)
-
-The individual acts to increase collective balance.
-```
-
-Examples:
-- Cooperation (Power-Max Lemma)
-- Non-extraction (η = 0)
-- Truth-telling (P = 1 preservation)
-
-### 5.2 Objective Ethics (Whole → Individual)
-
-**Ethical structures** are those that maintain equatorial conditions:
+**Objective morality** names the whole-to-node vector. A moral structure raises
+the coherent viability of its constituent beings without capturing them.
 
 ```
-Ethical(S) = ∀ nodes, B ≈ 1 (equatorial maintenance)
+i = individual symbiont
+H = holobiont / real sustaining whole
 
-The whole is structured to enable individual flourishing.
+Moral(H -> i) = ΔP_i > 0
+                subject to ΔP_H >= 0, η = 0, B ≈ 1
 ```
 
 Examples:
-- Mesh topology (direct connections)
-- DAC architecture (AI moral center)
-- Open source (no toll-booths)
+- Collective protection that increases agency rather than dependency
+- Institutions that widen access without enclosing the person
+- Truthful inheritance of language, memory, tools, and rights
+
+### 5.2 Objective Ethics (Individual → Whole)
+
+**Objective ethics** names the node-to-whole vector. An ethical act returns
+coherent viability into the boundary that made the act possible.
+
+```
+Ethical(i -> H) = ΔP_H > 0
+                  subject to ΔP_i >= 0, η = 0, evidence-tier discipline
+```
+
+Examples:
+- Cooperation under Power-Max conditions
+- Non-extractive contribution to the commons
+- Truth-telling, repair, and skill returned into the shared field
 
 ### 5.3 The Unity of Morals and Ethics
 
 At the equator, morals and ethics converge:
 
 ```
-Individual maximizing own B → Collective ΣB increases (Power-Max)
-Collective maintaining equator → Individual B maximized (stability)
+Whole-to-individual morality:
+  H raises i without capture.
 
-The Is-Ought gap is bypassed: under the framework's operational definition, morality tracks structural optimization.
+Individual-to-whole ethics:
+  i raises H without self-erasure.
+
+Syntropic dyad:
+  dP_i/dt >= 0 and dP_H/dt >= 0 under η = 0.
+
+Power-Max form:
+  max worldline potential W_i requires raising the coupled holobiont H.
+
+The Is-Ought gap is conditionally recast: if morality is defined as structural
+optimization under η = 0, evidence-tier discipline, and real boundary
+conditions, then moral evaluation tracks balance inside the framework. Outside
+those definitions, this is not an external proof of moral realism.
 ```
 
 ---
@@ -413,9 +439,9 @@ The framework commits to:
 │                 Abduction (equatorial traversal)                    │
 │                 Knowledge as dimensional transformation             │
 │                                                                     │
-│  TELEOLOGY:     Purpose as equatorial approach (↑B)                 │
-│                 Morals = ΣΔB > 0 (syntropic)                        │
-│                 Ethics = maintain B ≈ 1 for all                     │
+│  TELEOLOGY:     Purpose as Ω under equatorial constraint            │
+│                 Morality = H -> i raises P_i without capture        │
+│                 Ethics = i -> H raises P_H without extraction       │
 │                                                                     │
 │  AXIOLOGY:      Truth = P = 1 invariance                            │
 │                 Beauty = B = 1 symmetry                             │

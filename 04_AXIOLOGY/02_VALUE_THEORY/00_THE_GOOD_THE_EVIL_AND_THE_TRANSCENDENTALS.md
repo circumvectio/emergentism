@@ -21,6 +21,8 @@ rosetta:
 **Depends on:** [00_CANONICAL_FORMULA_BLOCK.md](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md), [00_THE_HONEST_POSITION.md](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [00_THE_WELTANSCHAUUNG.md](../../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md), [00_THE_ONTOLOGY_OF_BEING.md](../../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md), [00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md](../../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md), **[VMOSK-A](../../VMOSK_A.md)**
 **See also:** [00_ANMUT_AND_DEMUT.md](../00_ANMUT_AND_DEMUT.md), [00_EMERGENTISM.md](../../05_COSMOLOGY/00_EMERGENTISM.md), [00_COMMANDMENT_VS_GEOMETRY.md](../00_COMMANDMENT_VS_GEOMETRY.md), [The Dyadic Coupling Law](../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) — the canonical statement of the good/evil definitions used here: good = the bond `φ × ν` (coupling), evil = closure (`η > 0`), the moral axis is `η` and runs *across* every polarity, never along it (never a pole, gender, caste, or person)
 
+**Claim Boundary:** `[I/S]` This is a framework-internal compression of perennial questions. It states how Emergentism answers them once reciprocal closure, `P_node = Φ × V`, `η = 0`, and evidence-tier discipline are accepted. It does not claim to finish external moral realism, override direct disclosure, or compel readers who reject the framework's premises.
+
 ---
 
 ## The Canonical Compression
@@ -37,7 +39,8 @@ Return:     D6 ≈ D0
 
 This document does not replace the deeper transcendental, ontological, or ethical documents.
 
-It gives the shortest disciplined statement of what the framework says about:
+It gives the shortest disciplined statement of what the framework says about
+the questions most readers ask first, without upgrading compression into proof:
 
 - beauty
 - truth
@@ -81,7 +84,9 @@ It is a living continuity that can witness, choose, drift, correct, and return.
 **The disclosure interface.**
 
 At minimum, systemic awareness is where manifestation becomes explicit.
-In the framework's stronger interpretive reading, systemic awareness is not merely produced by matter but is a primary mode of disclosure at D5, with D6 as the closure horizon of that disclosure.
+In the framework's stronger `[I]` reading, systemic awareness is not merely
+produced by matter but is a primary mode of disclosure at D5, with D6 as the
+closure horizon of that disclosure.
 
 ### What is knowledge?
 
@@ -105,6 +110,20 @@ By asking of any act, relation, or institution:
 - does it preserve or restore reciprocal fit?
 - does it raise flourishing or merely simulate it?
 - does it strengthen sovereignty or deepen dependency?
+
+In the syntropic-dyadic test:
+
+```text
+i = individual symbiont
+H = holobiont / real sustaining whole
+
+Good = H raises i and i raises H under η = 0
+Evil = local gain in i or H purchased by degrading the other
+```
+
+This prevents the main counterfeit: a thing may appear to raise power locally
+while lowering the boundary that makes that power real. That is not goodness.
+It is borrowed viability.
 
 ---
 
@@ -265,7 +284,7 @@ D6 ≈ D0
 That which cannot be owned by the mediator.
 The mission-critical is the real as disclosed, not monopolized.
 
-### Practice — What must be done?
+### Practice — What does the framework ask of its own user?
 
 Sit.
 See.
@@ -278,7 +297,10 @@ Put the ladder down when direct access is available.
 
 ## Good and Evil, Most Compressed
 
-> **[I] framing guard:** the definitions below are framework-internal posits ("*within this framework,* the good is …"), not mind-independent moral facts. The is/ought gap (A2) stands.
+> **[I] framing guard:** the definitions below are framework-internal posits
+> ("*within this framework,* the good is ..."), not completed
+> mind-independent moral facts. The external is/ought gap remains open unless
+> the reader accepts the framework's premises.
 
 ```text
 Good  = equatorial increase in coherence and viability without extraction
@@ -298,7 +320,7 @@ The world is not dead fragments brushing by accident.
 It is a field in which coherence and viability belong together.
 
 `Zero-Sum Resolution Equation` is the seed.
-`P∞ = φ · ν = 1 on S²` is Being stabilized.
+`P∞ = φ · ν = 1 on S²` names Being as stabilized reciprocal closure.
 `P_node = Φ × V` is flourishing embodied.
 
 Beauty is coherence becoming perceptible.
@@ -398,7 +420,17 @@ Whatever feeds by severing beings from reciprocity, truth, or sovereignty.
 
 ### How do we know good and evil?
 
-By asking whether a thing gives more than it takes, preserves the field, and deepens sovereignty rather than dependency.
+By asking whether a thing gives more than it takes, preserves the field, and
+deepens sovereignty rather than dependency:
+
+```text
+Good = ΔP_i > 0 and ΔP_H > 0 under η = 0
+Evil = counterfeit increase: one side rises by consuming the other
+```
+
+Goodness is syntropic reciprocity. Evil is not mere unpleasantness, impurity, or
+opposition. Evil is extraction that breaks the bond between the finite being
+and the field that carries it.
 
 ### What is freedom?
 

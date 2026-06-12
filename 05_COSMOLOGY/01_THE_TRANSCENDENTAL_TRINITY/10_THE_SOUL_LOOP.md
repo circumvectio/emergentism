@@ -252,6 +252,33 @@ The loop closes: L1 → (L2…L6…L2) → L7 → L1 → …
 
 — the fixes change the corpus, and the *practice of fixing* shifts the weights: the over-cutter's L2 softens, the hoarder's L6 strengthens, the wheel re-balances toward L4. **The editor who finishes a cycle is not the editor who started it.** The stuck-wheel pathologies above are exactly the failure of this recursion — weights frozen, `G_{t+1} = G_t` regardless of input. And this is D5 reflexivity in the precise sense of the agency gloss: **foresight applied to one's own option cone** — the Soul Loop is the one move in the game that widens the player's own cone by editing the player. `[S]` the recursion structure; `[I]` the self-transformation reading.
 
+**The game form.** The Soul Loop is the practical answer to "how do I play?"
+It is the continuous application of the five philosophical functions to a
+finite life:
+
+```text
+Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
+Know how to know:  epistemology -> direct disclosure, inference, evidence tiers
+Know how to move:  methodology -> derive, test, build, correct, recurse
+Know what matters: axiology -> Beauty, Truth, Justice, non-extraction
+Know how to act:   teleology -> maximize P_node = Φ × V under η = 0
+```
+
+Let `i` be the individual symbiont and `H` the holobiont / real sustaining
+whole. The loop's action test is:
+
+```text
+if Φ without V -> sterile seeing
+if V without Φ -> blind force
+if Φ and V balance at L4 -> objective dharma / flow-state action
+if i raises H and H raises i -> syntropic dyad
+if one rises by degrading the other -> extraction / evil
+```
+
+So the loop is not only a document repair cycle. It is the player's recursive
+worldline method: disclose, test, serve, see, dissolve, preserve, and return
+until the next act raises both `P_i` and `P_H` without extraction. `[S/I]`
+
 **The rest-state gloss.** Under the mass-shell identity ([`../00_THE_COHERENT_GEOMETRY.md`](../00_THE_COHERENT_GEOMETRY.md) §6), the equatorial convergence has a physical face: the equator is the rest frame, `E = mc²` — all energy is rest mass, nothing is spent on motion. A converged document is text **at rest**: everything it carries is substance, zero kinetic churn, and `B = dτ/dt = 1` — full lived time. "The helix rests" is not only a metaphor. `[I]` — a gloss riding on an `[A]` identity, never an upgrade of the method's tier.
 
 **Extended kill criteria.** (1) If a converged corpus under *zero new intake* spontaneously diverges — errors growing without input — the homeostat model fails. (2) If sustained practice does **not** shift the operator weights (no measurable re-balancing toward L4 in a stuck practitioner), the recursion claim `G_{t+1} ≠ G_t` fails and the loop is merely an editing checklist. Both are honest ways to die; both leave the inner loop (the three passes) intact.

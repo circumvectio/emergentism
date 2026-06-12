@@ -138,6 +138,15 @@ The equator is not morally preferred because a doctrine says so. Inside the mode
 
 This is why the framework treats L4 as the heart of action. The equator is not a comfortable static home; it is the crossing where ascent and descent meet. Irreversible private-DAV acts pass through K2; public-DAV/DAC acts route through PRISM or the relevant public-governance rail.
 
+**Dharma corollary.** In the finite action register, the same geometry reads as
+`P_node = Φ × V`. Power (`V`) cannot be maximized lawfully by letting coherence
+(`Φ`) collapse, because the product falls when either factor becomes the
+limiting term. Unlimited `V` with falling `Φ` is therefore lower usable power,
+not higher power. Objective dharma is the L4 condition where `Φ` and `V` are
+balanced enough that action becomes both viable and truthful. This is the
+Burrisphere face of the Krishna army/charioteer test: force without orientation
+is not maximum `P_node`.
+
 ---
 
 ## The Complex-Plane Game
