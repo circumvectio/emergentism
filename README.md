@@ -45,7 +45,39 @@ When this root is used as a compact Weltanschauung, read the actual source folde
 6. `04_AXIOLOGY/README.md` and `04_AXIOLOGY/01_THEURGY/README.md` — value becomes signed action without turning action into occult causality.
 7. `07_THEOLOGY/README.md` and `10_SEED/README.md` — public symbol and seed compression teach; they do not override source truth.
 
-The shortest bridge is: **Weltanschauung -> Rosetta calculus -> Ground / Being / F5 / Dasein -> generative grammar -> non-capture -> public symbol -> release.**
+The shortest bridge is: **Weltanschauung -> Rosetta calculus -> Ground / Being / F5 / Dasein -> Soul Loop -> syntropic dyad -> public symbol -> release.**
+
+## Dasein Game Spine
+
+The reader is not outside the framework looking in. In the core-state register,
+the reader is **Dasein**: the finite witness-agent in whom Being becomes
+explicit enough to ask what is, what is good, and what to do next.
+
+The practical answer is the Rosetta Soul Loop. It applies the sevenfold root as
+a recursive game:
+
+```text
+Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
+Know how to know:  epistemology -> direct disclosure, inference, evidence tiers
+Know how to move:  methodology -> derive, test, build, correct, recurse
+Know what matters: axiology -> Beauty, Truth, Justice, non-extraction
+Know how to act:   teleology -> maximize P_node = Φ × V under η = 0
+```
+
+Play:
+
+- `Φ` without `V` is sterile seeing.
+- `V` without `Φ` is blind force.
+- `Φ` and `V` balanced at L4 is objective dharma / flow-state action.
+- `i` raises `H` and `H` raises `i` is the syntropic dyad.
+- one side rises by degrading the other is extraction / evil.
+
+Canonical sources:
+
+- [`05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md`](05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md) — compact worldview and game rule.
+- [`05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md`](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md) — recursive method that edits the corpus and the player.
+- [`06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md`](06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md) — how the reader appears as Dasein.
+- [`04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md`](04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) — syntropic morality/ethics and Power-Max holobiont form.
 
 ## Sevenfold Foundation — The L1→L7 Spine
 

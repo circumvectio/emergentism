@@ -216,6 +216,39 @@ Objective Function / F5 direction
 
 Core State sits at the origin as silent ground. System Architecture is the affirmative structural model around it. Objective Function is the future-vector grounded in and from core state. Institutional Narrative folds the esoteric back into public symbol, where Beauty becomes visible again. L7 returns to L1.
 
+### 6.1 Dasein Game Reading
+
+The loop is not only a filing grammar. It is how a finite reader learns to act.
+In the ontology register, that reader is **Dasein**: the finite witness-agent
+for whom Being becomes explicit and who must still choose under uncertainty.
+
+The seven roots therefore compress into the practical game:
+
+```text
+L6 / ontology      -> know what is: Ground, Being, Teleological Force, Dasein, beings
+L2 / epistemology  -> know how to know: direct disclosure, inference, evidence tiers
+L3 / methodology   -> know how to move: derive, test, build, correct, recurse
+L4 / axiology      -> know what matters: Beauty, Truth, Justice, non-extraction
+L1 / teleology     -> know how to act: maximize P_node = Φ × V under η = 0
+L5 / cosmology     -> see the system architecture that constrains the move
+L7 / theology      -> preserve and teach the result without turning it into capture
+```
+
+This is the Rosetta Soul Loop applied to life rather than only to text:
+
+```text
+if Φ without V -> sterile seeing
+if V without Φ -> blind force
+if Φ and V balance at L4 -> objective dharma / flow-state action
+if i raises H and H raises i -> syntropic dyad
+if one rises by degrading the other -> extraction / evil
+```
+
+The loop edits the map and the player. Every public symbol released at L7
+returns as new objective pressure at L1; every pressure must then re-enter
+disclosure, audit, value, structure, dissolution, and preservation. This is why
+the sevenfold root is recursive rather than ideological.
+
 ---
 
 ## 7. Physical Reorganization Rule

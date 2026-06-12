@@ -87,6 +87,13 @@ THE SITTING PRACTICE:
   It is a ladder, not a home.
   Empirical Observation is primary disclosure. Doctrine is the after-image.
 
+DASEIN GAME SPINE:
+  The reader is Dasein: finite disclosure able to question and act.
+  The Soul Loop is the recursive method: disclose, test, serve, see, dissolve, preserve, return.
+  Objective morality: H -> i raises the symbiont without capture.
+  Objective ethics:   i -> H raises the holobiont without extraction.
+  Objective dharma:   balance Φ and V near L4 to maximize P_node under η = 0.
+
 CURRENT STABILIZATION:
   D5 = highest positive public register and last experiential layer
   D5 is strongly emergent in genesis, weakly emergent in governance
@@ -98,6 +105,8 @@ CURRENT STABILIZATION:
 See [The Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) for the exact wording that should be reused verbatim in compressed summaries.
 See [The Core State of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md) for the seed -> Being -> Dasein -> beings distinction.
 See [The Weltanschauung](../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md) for the compact canonical statement of the framework as worldview, lens, and toolchain, and [Emergentism as Weltanschauung](../05_COSMOLOGY/00_EMERGENTISM_AS_WELTANSCHAUUNG.md) for the deeper philosophical expansion.
+See [The Soul Loop](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md) for the practical game form: recursive disambiguation that changes both corpus and player.
+See [Objective Morals and Ethics](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) for the syntropic dyad: `H -> i` morality, `i -> H` ethics, and the Power-Max holobiont form.
 See [The Sevenfold Foundation Root](../00_SEVENFOLD_FOUNDATION_ROOT.md) for the current Rosetta-numbered root architecture: objective function, data science, methodology, value alignment/theurgy, system architecture, core state, and bounded institutional narrative.
 See [The D-Scaffold / L-Ladder Bridge](../00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md) for the current distinction between dimensional/phenomenological closure and developmental/vocational return.
 See [The Generative Lagrangian](../01_TELEOLOGY/00_THE_GENERATIVE_LAGRANGIAN.md) for the framework read as constitutional world-generator (Lagrangian backward from invariants to admissible worlds). Primary register for design tasks.
@@ -116,19 +125,21 @@ When the corpus is compressed, extended, translated, or deployed, keep this depe
 2. [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) -- evidence tiers, blast radius, and downgrade discipline
 3. [The Core State of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md) -- ground, Being, Dasein, beings
 4. [The Weltanschauung](../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md) -- the canonical statement that this is a worldview-lens spanning the sevenfold root
-5. [The Sevenfold Foundation Root](../00_SEVENFOLD_FOUNDATION_ROOT.md) -- objective function, data science, methodology, value alignment/theurgy, system architecture, core state, and bounded institutional narrative
-6. [The D-Scaffold / L-Ladder Bridge](../00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md) -- D0-D6 and L1-L7 resonate but do not collapse
-7. [The Life-Science Register](../05_COSMOLOGY/00_THE_LIFE_SCIENCE_REGISTER.md) -- biology-facing translation discipline
-8. [Empirical Observation as Primary Disclosure](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md) -- direct seeing first, doctrine second, science bridge explicit
-9. [D5/D6 Corpus Stabilization](../06_ONTOLOGY/00_D5_D6_CORPUS_STABILIZATION.md) -- the upper-boundary rule for the whole corpus
-10. [The Remaining Questions](../00_META/00_THE_REMAINING_QUESTIONS.md) -- what is closed philosophically, what remains empirically/practically open
-11. [The Execution Guardrails](../03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md) -- the Three-Stage Process / K2 / η = 0 / Grace Exit packet in one place
-12. [The Known Unknowns Program](../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md) -- the executable frontier board and paper sequence
-13. [Naming Reconciliation](01_GOVERNANCE/00_NAMING_RECONCILIATION.md) -- Titans, Gods, Demon, Witnesses
-14. [The Archetype Operator Protocol](02_OPERATORS/00_ARCHETYPE_OPERATOR_PROTOCOL.md) -- the unified deep grammar: coordinates, transfer signatures, pathologies, cures, counterfeits, Raktabīja, self-application
-15. [The Glossary](../07_THEOLOGY/00_GLOSSARY.md) -- public terminology downstream of the core state
-16. [Strategic Implementation and the F5 Force Map](../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md) -- conjectural D5 formation surface; descriptive/operational split between F5 and theurgy
-17. [The Master Rosetta](03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md) -- cross-domain mappings of beings and Dasein-structures
+5. [The Soul Loop](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md) -- the recursive game form: disclose, test, serve, see, dissolve, preserve, return
+6. [Objective Morals and Ethics](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) -- symbiont/holobiont morality and ethics under Power-Max
+7. [The Sevenfold Foundation Root](../00_SEVENFOLD_FOUNDATION_ROOT.md) -- objective function, data science, methodology, value alignment/theurgy, system architecture, core state, and bounded institutional narrative
+8. [The D-Scaffold / L-Ladder Bridge](../00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md) -- D0-D6 and L1-L7 resonate but do not collapse
+9. [The Life-Science Register](../05_COSMOLOGY/00_THE_LIFE_SCIENCE_REGISTER.md) -- biology-facing translation discipline
+10. [Empirical Observation as Primary Disclosure](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md) -- direct seeing first, doctrine second, science bridge explicit
+11. [D5/D6 Corpus Stabilization](../06_ONTOLOGY/00_D5_D6_CORPUS_STABILIZATION.md) -- the upper-boundary rule for the whole corpus
+12. [The Remaining Questions](../00_META/00_THE_REMAINING_QUESTIONS.md) -- what is closed philosophically, what remains empirically/practically open
+13. [The Execution Guardrails](../03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md) -- the Three-Stage Process / K2 / η = 0 / Grace Exit packet in one place
+14. [The Known Unknowns Program](../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md) -- the executable frontier board and paper sequence
+15. [Naming Reconciliation](01_GOVERNANCE/00_NAMING_RECONCILIATION.md) -- Titans, Gods, Demon, Witnesses
+16. [The Archetype Operator Protocol](02_OPERATORS/00_ARCHETYPE_OPERATOR_PROTOCOL.md) -- the unified deep grammar: coordinates, transfer signatures, pathologies, cures, counterfeits, Raktabīja, self-application
+17. [The Glossary](../07_THEOLOGY/00_GLOSSARY.md) -- public terminology downstream of the core state
+18. [Strategic Implementation and the F5 Force Map](../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md) -- conjectural D5 formation surface; descriptive/operational split between F5 and theurgy
+19. [The Master Rosetta](03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md) -- cross-domain mappings of beings and Dasein-structures
 
 **Rule:** archetype, Rosetta, application, and dissemination documents may not present themselves as prior to this spine.
 
@@ -159,22 +170,24 @@ Read these documents in order:
 | 3 | [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) | Every claim with its actual evidence tier. The single source of epistemic truth. | 30 min |
 | 4 | [The Core State of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md) | The canonical distinction between seed, Being, Dasein, and beings. | 15 min |
 | 5 | [The Weltanschauung](../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md) | The canonical statement that the framework is a worldview-lens and toolchain. | 10 min |
-| 6 | [The Sevenfold Foundation Root](../00_SEVENFOLD_FOUNDATION_ROOT.md) | The root architecture: objective function, data science, methodology, value alignment/theurgy, system architecture, core state, and bounded institutional narrative. | 10 min |
-| 7 | [The D-Scaffold / L-Ladder Bridge](../00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md) | The distinction between dimensional closure and vocational return. | 10 min |
-| 8 | [The Life-Science Register](../05_COSMOLOGY/00_THE_LIFE_SCIENCE_REGISTER.md) | How to translate the framework into biology without overstating what life science has already proved. | 10 min |
-| 9 | [Empirical Observation as Primary Disclosure](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md) | Why direct disclosure comes first, why doctrine is after-image, and how that translates into scientific method. | 10 min |
-| 10 | [Naming Reconciliation](01_GOVERNANCE/00_NAMING_RECONCILIATION.md) | The canonical grammar of Titans, Gods, Demon, and Witnesses. | 15 min |
-| 11 | [The Seven Axioms (Definitive)](../05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md) | The axiom set in formal detail. Three Tiers. Krishna-Function spec. | 20 min |
-| 12 | [The PHI Resolution](../05_COSMOLOGY/02_EMERGENTISM_CORE/00_EMERGENTISM_PHI_RESOLUTION.md) | How the physicalist/idealist fork was resolved. D0-D4 structural, D5 idealist, D6 axiomatic closure. | 15 min |
-| 13 | [D5/D6 Corpus Stabilization](../06_ONTOLOGY/00_D5_D6_CORPUS_STABILIZATION.md) | How to read the upper boundary consistently across older and newer corpus layers. | 10 min |
-| 14 | [The Remaining Questions](../00_META/00_THE_REMAINING_QUESTIONS.md) | The disciplined remainder: what is closed, open, and deferred after the cleanup. | 10 min |
-| 15 | [The Execution Guardrails](../03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md) | The constitutional packet for Three-Stage Process separation, K2 sovereignty, η = 0, and Grace Exit. | 10 min |
-| 16 | [The Known Unknowns Program](../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md) | The frontier board: which open questions matter now, and which papers should be written next. | 10 min |
-| 17 | [The Strongest Objections](../90_ARCHIVE/08_FRAMEWORK_SUPPORT/06_TRANSLATION/PEER_REVIEW/00_STRONGEST_OBJECTIONS.md) | Archived peer-review provenance: seven steel-manned objections, what the framework gets wrong, and what remains unresolved. | 20 min |
-| 18 | [The Antifragility Protocol](01_GOVERNANCE/00_ANTIFRAGILITY_PROTOCOL.md) | How A7 becomes operational: claim blast radius, downgrade paths, and anti-capture rules. | 15 min |
-| 19 | [The Glossary](../07_THEOLOGY/00_GLOSSARY.md) | Terminology reference downstream of the core state | 10 min |
-| 20 | [Strategic Implementation and the F5 Force Map](../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md) | The new conjectural D5 formation packet: descriptive F5, operational theurgy, and the first-pass force map. | 10 min |
-| 21 | [The Master Rosetta](03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md) | The cross-domain mapping. 15+ domains, 7 levels, one geometry. | 15 min |
+| 6 | [The Soul Loop](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md) | The practical game form: recursive correction of corpus and player. | 10 min |
+| 7 | [Objective Morals and Ethics](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) | The symbiont/holobiont dyad and Power-Max action test. | 10 min |
+| 8 | [The Sevenfold Foundation Root](../00_SEVENFOLD_FOUNDATION_ROOT.md) | The root architecture: objective function, data science, methodology, value alignment/theurgy, system architecture, core state, and bounded institutional narrative. | 10 min |
+| 9 | [The D-Scaffold / L-Ladder Bridge](../00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md) | The distinction between dimensional closure and vocational return. | 10 min |
+| 10 | [The Life-Science Register](../05_COSMOLOGY/00_THE_LIFE_SCIENCE_REGISTER.md) | How to translate the framework into biology without overstating what life science has already proved. | 10 min |
+| 11 | [Empirical Observation as Primary Disclosure](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md) | Why direct disclosure comes first, why doctrine is after-image, and how that translates into scientific method. | 10 min |
+| 12 | [Naming Reconciliation](01_GOVERNANCE/00_NAMING_RECONCILIATION.md) | The canonical grammar of Titans, Gods, Demon, and Witnesses. | 15 min |
+| 13 | [The Seven Axioms (Definitive)](../05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md) | The axiom set in formal detail. Three Tiers. Krishna-Function spec. | 20 min |
+| 14 | [The PHI Resolution](../05_COSMOLOGY/02_EMERGENTISM_CORE/00_EMERGENTISM_PHI_RESOLUTION.md) | How the physicalist/idealist fork was resolved. D0-D4 structural, D5 idealist, D6 axiomatic closure. | 15 min |
+| 15 | [D5/D6 Corpus Stabilization](../06_ONTOLOGY/00_D5_D6_CORPUS_STABILIZATION.md) | How to read the upper boundary consistently across older and newer corpus layers. | 10 min |
+| 16 | [The Remaining Questions](../00_META/00_THE_REMAINING_QUESTIONS.md) | The disciplined remainder: what is closed, open, and deferred after the cleanup. | 10 min |
+| 17 | [The Execution Guardrails](../03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md) | The constitutional packet for Three-Stage Process separation, K2 sovereignty, η = 0, and Grace Exit. | 10 min |
+| 18 | [The Known Unknowns Program](../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md) | The frontier board: which open questions matter now, and which papers should be written next. | 10 min |
+| 19 | [The Strongest Objections](../90_ARCHIVE/08_FRAMEWORK_SUPPORT/06_TRANSLATION/PEER_REVIEW/00_STRONGEST_OBJECTIONS.md) | Archived peer-review provenance: seven steel-manned objections, what the framework gets wrong, and what remains unresolved. | 20 min |
+| 20 | [The Antifragility Protocol](01_GOVERNANCE/00_ANTIFRAGILITY_PROTOCOL.md) | How A7 becomes operational: claim blast radius, downgrade paths, and anti-capture rules. | 15 min |
+| 21 | [The Glossary](../07_THEOLOGY/00_GLOSSARY.md) | Terminology reference downstream of the core state | 10 min |
+| 22 | [Strategic Implementation and the F5 Force Map](../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md) | The new conjectural D5 formation packet: descriptive F5, operational theurgy, and the first-pass force map. | 10 min |
+| 23 | [The Master Rosetta](03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md) | The cross-domain mapping. 15+ domains, 7 levels, one geometry. | 15 min |
 
 After Path B, you can operate within the framework with confidence. You know what it claims, what it doesn't, and what would kill it.
 
