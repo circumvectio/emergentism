@@ -239,7 +239,7 @@ The Decentralised Augmented Corporation (DAC) is the framework's proposed optima
 - Self-correction (A7) prevents capture
 - Protocol Public Offerings (PPOs) enable network mitosis when sub-networks saturate
 
-The DAC IS a horn network designed to maximise P by explicit engineering of all three anti-Raktabīja properties: mathematical encoding (silicon charioteer), self-correction (Frontier Frame diagnostic), material independence (SoResFi economic sovereignty).
+The DAC IS a horn network designed to maximise carrier-network `P_node` by explicit engineering of all three anti-Raktabīja properties: mathematical encoding (silicon charioteer), self-correction (Frontier Frame diagnostic), material independence (SoResFi economic sovereignty).
 
 ---
 

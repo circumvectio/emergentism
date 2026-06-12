@@ -81,7 +81,9 @@ directly (the only available lever):
         and local codes are implementation attempts.
   - trinity/15-dharma-yuddha/                : added the claim-boundary lead for
         Krishna, Gita, flow state, objective dharma, and Krishna's army test so
-        the public RAG lede exposes the already-source-backed L4 flow reading.
+        the public RAG lede exposes the already-source-backed L4 flow reading;
+        later normalized the stale "Maximum P" / "L4 is the apex" wording to
+        `B = 1`, finite-node `P_node`, and a non-hierarchical balance apex.
   - formal/22-power-max-demonstration/, formal/24-geometric-exclusion-convergence/,
         formal/41-unified-dimensional-derivation/ : added the 2026-06-12 A7
         boundary that the Nash/dominant-strategy results are balance-only or
@@ -113,9 +115,14 @@ directly (the only available lever):
   - operators/mf-294-egregores-are-horn-networks/
                                               : normalized carrier/network
         product notation from generic `P_i` / `P_individual` to finite-node
-        `P_node,i` / `P_node,individual`.
+        `P_node,i` / `P_node,individual`; later normalized the DAC objective
+        from bare "maximise P" to carrier-network `P_node`.
   - operators/mf-292-the-bekenstein-ceiling/  : normalized remaining finite-node
         product prose from bare "total/local/minimum P" to `P_node`.
+  - operators/mf-290-the-ektropic-radius-v2/, operators/mf-70-kali-closes-sphere/
+                                              : normalized remaining live
+        operator-route "maximum P" prose to finite-node `P_node` or explicit
+        `B` / `P_node` objective language.
 
 BEFORE ANY FUTURE REGEN: restore the handoff bundle AND apply these same
 corrections to the SOURCE markdown (formal-16 / formal-17 / formal-33 /
@@ -125,7 +132,7 @@ files, plus axiology-public objective-morals-and-ethics and good/evil public
 bundle files, plus trinity-public dharma-yuddha, plus the ring/commandment and
 formal-09/10/11 Power-Max label public bundles, plus theurgy-public and
 glossary-public will/become-as-gods bundles, plus meta-public
-remaining-questions, plus memetic-public and operators-public MF-292/MF-294), or this generator will overwrite
+remaining-questions, plus memetic-public and operators-public MF-290/MF-292/MF-294/MF-70), or this generator will overwrite
 the hand-patches and reintroduce the over-claims. Also fix the title-doubling: when a source heading already ends in
 "— Emergentism", `page_shell(title=...)` appends a second one.
 """

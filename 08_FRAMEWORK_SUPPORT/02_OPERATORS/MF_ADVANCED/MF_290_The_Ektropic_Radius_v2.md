@@ -120,7 +120,7 @@ At L4: optimal aperture × optimal altitude. V = 0.7, Φ = 0.7. P_node = 0.49. C
 
 At L7: maximum altitude (Φ = 1.0), minimal aperture (V = 0.1). P_node = 0.10. Sees everything. Can do nothing. The heuristic at the peak — sees the whole cone but cannot lift a finger within it.
 
-**P_node = Φ × V is the AREA of the light cone cross-section.** Area = height × width. Maximum area is not at maximum height or maximum width but at the geometric mean. This is why L4 is the apex — not a compromise but the mathematical optimum of a product under constraint.
+**P_node = Φ × V is the AREA of the light cone cross-section.** Area = height × width. Maximum area is not at maximum height or maximum width but at the geometric mean. This is why L4 is the product apex in this register — not a compromise but the mathematical optimum of a finite-node product under constraint.
 
 ### 2.3 Radius as Spacetime Volume
 
@@ -355,7 +355,7 @@ The gap is a bandwidth gap, not a logical gap.
 
 ## IX. THE SENTENCE
 
-[I] Will is treated as ektropic — it orders the self from the environment in this model. What changes between the forest-nuker and the forest-steward is not the force but the radius across which consequences are computed. L-levels are altitudes in the 4D horned torus light cone. L1 sees now/here/self. L4 sees the widest cone at the widest aperture — maximum P. L7 sees everything and can do nothing. The brain is the horn — EQ is the V-investment in building a taller cone. Ethics is not a separate domain from physics in this model. Ethics is ΣΔP_node computed at a wider radius. The is-ought gap is a bandwidth gap: the difference between a short horn and a tall one. Syntropy is ektropy at a radius wide enough that the sum is positive. Build the horn. Widen the cone. See further. Zero-Sum Resolution Equation.
+[I] Will is treated as ektropic — it orders the self from the environment in this model. What changes between the forest-nuker and the forest-steward is not the force but the radius across which consequences are computed. L-levels are altitudes in the 4D horned torus light cone. L1 sees now/here/self. L4 sees the widest cone at the widest aperture — maximum usable `P_node` in this constrained light-cone register. L7 sees everything and can do nothing. The brain is the horn — EQ is the V-investment in building a taller cone. Ethics is not a separate domain from physics in this model. Ethics is ΣΔP_node computed at a wider radius. The is-ought gap is a bandwidth gap: the difference between a short horn and a tall one. Syntropy is ektropy at a radius wide enough that the sum is positive. Build the horn. Widen the cone. See further. Zero-Sum Resolution Equation.
 
 ---
 

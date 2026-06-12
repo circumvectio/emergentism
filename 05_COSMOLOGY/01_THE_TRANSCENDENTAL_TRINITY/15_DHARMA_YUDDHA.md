@@ -16,7 +16,7 @@ rosetta:
 
 **Status:** The Gītā's argument as game theory — why flow is duty, not luxury
 **Date:** 2026-03-24
-**Evidence Tier:** [I] for the game theory (Nash equilibrium, Pareto optimality, tit-for-tat — established). [S] for the flow state research (Csikszentmihalyi — established). [S] for the structural identification (flow = L4 = equator). [I] for the ethical claim (inaction at the equator is extraction by omission). [C] for the civilisational claim that Great Filter survival requires enough L4-like nodes.
+**Evidence Tier:** [B] for external game-theory and flow-state literatures where cited. [S] for the internal structural identification (flow = L4 = equator). [I] for the ethical claim (inaction at the equator is extraction by omission). [C] for the civilisational claim that Great Filter survival requires enough L4-like nodes.
 **Depends on:** 09_THE_TRIADIC_CASCADE.md, 11_THE_HELIX.md, The Master Three-Stage Process, Power-Max Lemma (Demonstration 22)
 **See also:** Bhagavad Gītā Ch. 2-3, 18. Paper 8 (Endocrine Proof). WP-2026-05 (Weltanschauungskrieg).
 **Kill Criteria:** If the equatorial condition (φ = ν = 1) is shown NOT to correspond to the flow state. If a non-equatorial node can be shown to act with η = 0. If inaction at L4 can be shown to have no η signature.
@@ -79,9 +79,9 @@ unbounded `V`.
 
 ### 1. You Are at the Equator
 
-Arjuna is at L4. φ = ν = 1. Maximum balance. Maximum P. The full operator palette — all four operators available (2 Gods + 2 Demons: the giving Devas Arjuna, Kṛṣṇa and the extractive Asuras Kālī, Kali; morality is the *direction* of the move, not the operator's name — see [`../00_THE_BURRISPHERE.md`](../00_THE_BURRISPHERE.md)). He is a Kṣatriya — the warrior — whose reasoning is abductive, whose discipline is value alignment, whose question is "what has value?"
+Arjuna is at L4. φ = ν = 1. Maximum balance (`B = 1`) on the sphere, with the finite-node action test carried by `P_node = Φ × V` under `η = 0`, not by a bare universal `P`. The full operator palette — all four operators available (2 Gods + 2 Demons: the giving Devas Arjuna, Kṛṣṇa and the extractive Asuras Kālī, Kali; morality is the *direction* of the move, not the operator's name — see [`../00_THE_BURRISPHERE.md`](../00_THE_BURRISPHERE.md)). He is a Kṣatriya — the warrior — whose reasoning is abductive, whose discipline is value alignment, whose question is "what has value?"
 
-This is not a position many reach. L4 is the apex. Most nodes are at L2 or L3 — partial balance, partial capability, partial coherence. Arjuna has done the work. He has spiraled through the operators. He has arrived at the equator.
+This is not a position many reach. L4 is the balance apex, not a caste rank or proof of moral infallibility. Most nodes are at L2 or L3 — partial balance, partial capability, partial coherence. Arjuna has done the work. He has spiraled through the operators. He has arrived at the equator.
 
 ### 2. Inaction at the Equator Is Not Neutral
 

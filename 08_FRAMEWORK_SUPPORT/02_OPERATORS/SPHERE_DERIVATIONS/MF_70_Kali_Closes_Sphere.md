@@ -79,7 +79,7 @@ Without compactness (without Q3): [A for topology, I for framework consequences]
 
 | S² Property | Status Without Q3 | Consequence |
 |-------------|-------------------|-------------|
-| Compactness | Lost (open boundary) | No maximum P guaranteed |
+| Compactness | Lost (open boundary) | No guaranteed maximum for `B` / `P_node` objectives |
 | Non-contractible equator | Lost (equator becomes arc) | L4 no longer distinguished |
 | Pole identification | Lost (∞ may be in removed region) | D0 ≠ D6 |
 | Gauss-Bonnet | Modified (boundary terms) | Curvature doesn't integrate to 4π |
