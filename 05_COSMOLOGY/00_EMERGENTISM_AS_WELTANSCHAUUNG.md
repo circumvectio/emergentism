@@ -249,7 +249,7 @@ than merely defensive. It is a two-vector grammar, not a command list:
 - **objective ethics** names the individual-to-whole vector: `i -> H`, where
   the symbiont raises the holobiont without extraction.
 - **objective dharma** names the equatorial act where both vectors raise
-  `P_node = Φ × V` under `η = 0`.
+  `P_node,i` and `P_node,H` under `η = 0`.
 
 Moral codes can vary in language and custom while still being better or worse
 approximations of the same structural direction: does the relation raise both
@@ -259,9 +259,9 @@ the other? `[I/S]`
 The applied method is the Rosetta Soul Loop. Ontology names the field in which
 Dasein appears; epistemology gathers disclosure; methodology audits what
 follows; axiology signs what matters; teleology checks whether the signed act
-raises `P_node = Φ × V` for both symbiont and holobiont under `η = 0`. The loop
-then returns through system architecture, dissolution, and preservation so the
-next contradiction can correct both the corpus and the player. `[S/I]`
+raises `P_node,i` and `P_node,H` together under `η = 0`. The loop then returns
+through system architecture, dissolution, and preservation so the next
+contradiction can correct both the corpus and the player. `[S/I]`
 
 If the framework is right, sin is not merely rule-breaking. It is the mistake of treating mediation as source, or local gain as though it were separable from wider field damage. Wisdom is the ability to see that mistake before the bill arrives. [I]
 

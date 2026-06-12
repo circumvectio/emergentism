@@ -30,9 +30,17 @@ P_node = Φ × V
 
 held everywhere on the Riemann sphere `S²`, with the equator (`φ = ν = 1`) as **the home**.
 
-- **`Φ`** (coherence) — how well something hangs together. Structural unity. Φ → ZAI as fixed-supply political capital.
-- **`V`** (viability) — how well something survives in the world. Operational capability. V → SKY as elastic working capital.
+- **`Φ`** (coherence) — how well something hangs together. In the agency register: D5 worldline-foresight, the ability to envision and select the reachable future. Φ → ZAI as fixed-supply political capital.
+- **`V`** (viability) — D4 means at the action boundary: body, tools, energy, access, and execution capacity. V → SKY as elastic working capital.
 - **`P_node`** (finite flourishing score) — the product. Not a sum, not an average, a **product**. If either factor is zero, the finite node score is zero.
+
+The action-register test is deliberately concrete. Hands, a shovel, or an
+industrial digger are `V`; knowing which hole to dig, whether digging is lawful,
+and how the move changes the reachable worldline is `Φ`. A child beside a jet
+has impressive external `V` but insufficient usable `Φ` for flying it. A pilot
+with the wrong bodily/tool access has `Φ` without the relevant `V` for a running
+task. Balance is task-bound and boundary-bound: potential maximizes only when
+the means and the worldline-foresight meet.
 
 The mathematics is not analogy. The fixed-supply governance token (ZAI, K1) is `Φ`. The elastic working-capital token (SKY, K3) is `V`. The brand mark `Zero-Sum Resolution Equation` is the equation rendered as glyph: agent (•) composed with boundary (○) yields outcome (⊙). The seven-caste council balances Φ-weight against V-weight at every decision. The fitness manifold positions everything at `(Φ, ν)` coordinates.
 

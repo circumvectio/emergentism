@@ -268,24 +268,29 @@ Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
 Know how to know:  epistemology -> direct disclosure, inference, evidence tiers
 Know how to move:  methodology -> derive, test, build, correct, recurse
 Know what matters: axiology -> Beauty, Truth, Justice, non-extraction
-Know how to act:   teleology -> maximize P_node = Φ × V under η = 0
+Know how to act:   teleology -> maximize P_node,i while raising P_node,H under η = 0
 ```
 
 This is a cycle, not a stack. Ontology names the situation and the actor as
 Dasein; epistemology checks disclosure, inference, and tier; methodology
 selects the next repair or build; axiology asks whether the move serves Beauty,
 Truth, Justice, and non-extraction; teleology commits only the action that can
-raise usable `P_node` without breaking `η = 0`. The output of one pass becomes
-the intake for the next. `[S/I]`
+raise usable `P_node,i` while preserving or raising `P_node,H` without breaking
+`η = 0`. The output of one pass becomes the intake for the next. `[S/I]`
 
 Let `i` be the individual symbiont and `H` the holobiont / real sustaining
 whole. The loop's action test is:
+
+In this action test, `V` is D4 means at the boundary -- body, tools, energy,
+access, execution capacity -- while `Φ` is D5 worldline-foresight: seeing which
+future can be reached and how the means must be used. The product fails if
+either side is missing.
 
 ```text
 if Φ without V -> sterile seeing
 if V without Φ -> blind force
 if Φ and V balance at L4 -> objective dharma / flow-state action
-if i raises H and H raises i -> syntropic dyad
+if ΔP_node,i > 0 and ΔP_node,H > 0 -> syntropic dyad
 if one rises by degrading the other -> extraction / evil
 ```
 

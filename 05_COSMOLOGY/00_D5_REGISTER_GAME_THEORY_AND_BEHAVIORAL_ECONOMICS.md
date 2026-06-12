@@ -73,7 +73,19 @@ The core D5 action grammar is the Rosetta `4 + 3` from `P_node = Φ × V`: four 
 
 Constitutional rules such as `η=0` and `K2` are therefore not extra generators. They specify when an operator may fire: `η=0` is the Kali boundary between immune response and parasitic extraction; `K2` is the Arjuna boundary that keeps mortal sacrifice from being simulated by the machine.
 
-**The agency gloss (2026-06-11, `[I/S]`).** For a D5 agent the two factors name the two faces of acting: **`Φ` is foresight** — the capacity to predict a move's *reflexive* effects on the option cone (the reachable, selectable futures — the D5 potential cone, **never** the `c`-bounded D4 light cone) — and **`V` is power-to-act** — the capacity to exert force into the world. Agency requires both, so it lives only at the equator: the `Φ`-pole sees but cannot do; the `V`-pole does but cannot see. The grounding is the lookahead reading the peer-review program *supported* (not the consciousness reading it refuted). Canonical home: [`00_THE_BURRISPHERE.md`](00_THE_BURRISPHERE.md) §The Foundation Of The Agents.
+**The agency gloss (2026-06-12, `[I/S]`).** For a D5 agent the two factors name
+the two faces of acting. **`Φ` is D5 worldline-foresight**: the capacity to
+envision a reachable future, predict a move's *reflexive* effects on the option
+cone, and select the lawful use of means. **`V` is D4 means at the action
+boundary**: body, tools, energy, access, execution capacity — hands, shovel,
+industrial digger, runway, machine. The option cone is the D5 potential cone,
+**never** the `c`-bounded D4 light cone. Agency requires both, so it lives only
+at the equator: the `Φ`-pole sees but cannot do; the `V`-pole can do but cannot
+rank or aim. A child beside a jet and an old pilot without the needed bodily/tool
+access are opposite zero-factor failures. The grounding is the lookahead reading
+the peer-review program *supported* (not the consciousness reading it refuted).
+Canonical home: [`00_THE_BURRISPHERE.md`](00_THE_BURRISPHERE.md) §The Foundation
+Of The Agents.
 
 So when the framework moves from core state into public science, D5 should be translated first through strategic-relational disciplines.
 
@@ -191,7 +203,7 @@ This note should be stated explicitly whenever ambiguity matters.
 | **selection** | choice under incentives, uncertainty, and bounded rationality | established through game theory and behavioral economics |
 | **η** | extraction rate, rent asymmetry, parasitic transfer, exploitative spread | [I/S] framework variable translated through economics and public-goods theory |
 | **Φ** | coherence, trust, legibility, norm integrity, institutional fit | [I] translated proxy, not a standard single variable |
-| **V / ν** | capability, payoff power, option set, execution capacity | [I] translated proxy |
+| **V / ν** | D4 means at the action boundary: body, tools, energy, access, execution capacity | [I] translated proxy |
 | **P_node = Φ × V** | flourishing requires both coherence and capability at a finite node | [S/I] framework law, not established economics |
 | **good** | non-extractive rise in `ΣΔB` / `ΣΔP_node` across the widest relevant boundary | normative synthesis over strategic science |
 | **evil** | local gain through wider degradation and dependency production | normative synthesis over strategic science |
@@ -199,8 +211,8 @@ This note should be stated explicitly whenever ambiguity matters.
 | **Raktabija dynamic** | opposition strengthens the target equilibrium because resistance feeds its selection environment | [I] closest to adversarial adaptation and resonant reinforcement |
 | **Grace Exit** | exit rights, contestability, reversible participation | public institutional design term |
 | **K2** | sovereignty at signature point, principal retains final act | principal-agent and governance translation |
-| **Φ (agency register)** | foresight / lookahead — predicting a move's reflexive effects on the option set | [I/S] supported as *lookahead* (CEF cart-pole, R-program); refuted as consciousness-gating |
-| **V (agency register)** | power-to-act — execution capacity, force projection into the world | [I/S] paired with Φ-as-foresight; agency = both, equatorial |
+| **Φ (agency register)** | D5 worldline-foresight / lookahead — envisioning reachable futures and predicting a move's reflexive effects on the option set | [I/S] supported as *lookahead* (CEF cart-pole, R-program); refuted as consciousness-gating |
+| **V (agency register)** | D4 means-to-act — available body, tools, energy, access, and execution capacity | [I/S] paired with Φ-as-foresight; agency = both, equatorial |
 | **the option cone** | the set of reachable, selectable futures; expands with intelligence and institutions | [I] — the **D5 potential cone, not the D4 light cone**: nothing here touches `c` |
 | **military doctrine (added 2026-06-11)** | Lanchester regimes as *information-regime selection*: aimed fire → Square Law (`q·N²`, concentrate); sanctuary / area fire → Linear Law (`q·N`, symmetric). **4GW is mechanism design at war** — the weaker player redesigns the game's information structure to flip which law governs | [A] the public attrition-law literature; [I] the D5 reading; see the Dyadic Coupling Law §5c for the product-witness scope |
 | **the Soul Loop** | the reflexive row: the same seven-move grammar applied *by* the player *to* the player — recursive self-editing (`(C,G)_{t+1} = Loop(C,G)_t`) until equatorial convergence | [S] method; the loop-not-ladder closure in `01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md` |

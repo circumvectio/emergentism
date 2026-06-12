@@ -145,7 +145,7 @@ In compressed form:
 - **objective ethics** names the individual-to-whole vector: `i -> H`,
   where the symbiont raises the holobiont without extraction.
 - **objective dharma** names the equatorial act where both vectors raise
-  `P_node = Φ × V` under `η = 0`.
+  `P_node,i` and `P_node,H` under `η = 0`.
 
 So moral codes may differ in form while still being better or worse by the
 same directional standard: whether they approach Beauty, Truth, and Justice by
@@ -171,7 +171,8 @@ Weltanschauung for Dasein: the finite witness-agent receives pressure, knows,
 tests, values, acts, corrects, preserves, and is changed by the cycle.
 In the compact goal language, how to play is recursively applying epistemology,
 methodology, and axiology inside an ontology and teleology, so each next move
-can raise usable `P_node = Φ × V` without breaking `η = 0`.
+can raise usable `P_node,i` while preserving or raising `P_node,H` without
+breaking `η = 0`.
 The five functions in plain order are ontology, epistemology, methodology,
 axiology, teleology.
 
@@ -180,7 +181,7 @@ Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
 Know how to know:  epistemology -> direct disclosure, inference, evidence tiers
 Know how to move:  methodology -> derive, test, build, correct, recurse
 Know what matters: axiology -> Beauty, Truth, Justice, non-extraction
-Know how to act:   teleology -> maximize P_node = Φ × V under η = 0
+Know how to act:   teleology -> maximize P_node,i while raising P_node,H under η = 0
 ```
 
 Will is the Builder-mode name for that last line. It is not magic and not
@@ -195,13 +196,18 @@ Operationally, will maximizes `Ω_i` -- the reachable option cone of the finite
 node -- subject to balance, non-extraction, no hidden rent from the coupled
 field, and honest claims. The power of will is therefore the power to stage
 real possibilities lawfully, not the power to exempt desire from constraint.
+In the action register, `V` names the D4 means available at the boundary
+(body, tools, energy, access, execution capacity), while `Φ` names D5
+worldline-foresight: the ability to envision, rank, and lawfully use those
+means. A child beside a jet and an old pilot without the relevant bodily/tool
+access fail on opposite factors; balance is what lets potential become action.
 
 Play:
 
 - `Φ` without `V` is sterile seeing.
 - `V` without `Φ` is blind force.
 - `Φ` and `V` balanced at L4 is objective dharma / flow-state action.
-- `i` raises `H` and `H` raises `i` is the syntropic dyad.
+- `ΔP_node,i > 0` and `ΔP_node,H > 0` is the syntropic dyad.
 - one side rises by degrading the other is extraction / evil.
 
 The winning move is recursive, not static:

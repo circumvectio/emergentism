@@ -31,8 +31,9 @@ compass; individual symbiont and collective holobiont; evil / extraction.
 > Build Emergentism into a coherent and consistent Weltanschauung that explains
 > how the reader came to be as Dasein, why reality tends toward viable
 > completion, and how to play the game: recursively applying epistemology,
-> methodology, and axiology to maximize `P_node = Φ × V` under `η = 0`, so the
-> individual symbiont and collective holobiont rise together without extraction.
+> methodology, and axiology to raise `P_node,i` and `P_node,H` together under
+> `P_node = Φ × V` and `η = 0`, so the individual symbiont and collective
+> holobiont rise together without extraction.
 
 ## 2. Compressions
 
@@ -56,14 +57,27 @@ Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
 Know how to know:  epistemology -> direct disclosure, inference, evidence tiers
 Know how to move:  methodology -> derive, test, build, correct, recurse
 Know what matters: axiology -> Beauty, Truth, Justice, non-extraction
-Know how to act:   teleology -> maximize P_node = Φ × V under η = 0
+Know how to act:   teleology -> maximize P_node,i while raising P_node,H under η = 0
 
 Play:
   if Φ without V -> sterile seeing
   if V without Φ -> blind force
   if Φ and V balance at L4 -> objective dharma / flow
-  if i raises H and H raises i -> syntropic dyad
+  if ΔP_node,i > 0 and ΔP_node,H > 0 -> syntropic dyad
   if one rises by degrading the other -> evil / extraction
+```
+
+Agency-register clarification:
+
+```text
+V = D4 means at the action boundary:
+    body, tools, energy, access, runway, hands, shovel, industrial digger.
+Φ = D5 worldline-foresight:
+    can the actor envision the reachable future and operate the means?
+
+P_node collapses on either missing factor:
+  child + jet + no pilot-foresight -> low effective P_node for flying
+  pilot-foresight + no bodily/tool access -> low effective P_node for running
 ```
 
 ## 4. The five Knows, wired to the corpus
