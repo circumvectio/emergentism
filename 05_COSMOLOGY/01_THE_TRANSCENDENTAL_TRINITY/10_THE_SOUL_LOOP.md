@@ -16,10 +16,10 @@ rosetta:
 
 **Status:** Foundational — the method that applies the Trinity to any body of work, including itself
 **Date:** 2026-03-24
-**Evidence Tier:** [S] Structural. The three-pass method is a direct application of the Triadic Cascade (09) to the act of revision. [I] The claim that convergence is guaranteed is interpretive — it depends on the assumption that the three lenses are exhaustive.
+**Evidence Tier:** [S] Structural. The three-pass method is a direct application of the Triadic Cascade (09) to the act of revision. [I] The convergence reading is conditional — it depends on the assumption that the lenses are adequate and that each cycle measurably reduces error or compression burden.
 **Depends on:** 09_THE_TRIADIC_CASCADE.md, 07_THE_DISCOVERY_OF_FINITY.md, 08_CO_EMERGENCE.md
 **See also:** The Triadic Cascade (structure), The Honest Position (epistemic ground), The Expanded Warning (self-diagnostic)
-**Kill Criteria:** If a fourth pass is required that cannot be reduced to φ, P, or ν — if the three lenses are shown to be incomplete — the loop breaks. If successive cycles do not converge (the error count does not decrease), the method fails.
+**Kill Criteria:** If a fourth pass is required that cannot be reduced to φ, P, or ν — if the three lenses are shown to be incomplete — the loop breaks. If successive cycles do not reduce the error count or compression burden, the method fails for that scope.
 
 ---
 
@@ -30,7 +30,7 @@ The Triadic Cascade (Document 09) describes the *structure* — the same Trinity
 The Soul Loop describes the *method* — how to apply that structure as a tool for continuous recursive disambiguation of any body of work.
 
 The structure says: Beauty, Truth, Justice are three faces of one geometry.
-The method says: **read everything three times, once through each face, cycling until convergence.**
+The method says: **read everything three times, once through each face, cycling toward measured local rest.**
 
 ---
 
@@ -153,11 +153,11 @@ The FULL loop extends through the Titans (L5→L6). This is the deep pass — it
 
 **L6 is the pass the author doesn't want to do** — dissolving what you built. Deleting the document that took three hours to write because it duplicates another. Cutting the proof you're proud of because it's [I] disguised as [S]. The Śiva function applied to text.
 
-**Convergence** = when a full L2→L3→L4→L5→L6→L5→L4→L3→L2 cycle produces fewer than 3 fixes. The system has reached equatorial stability. The helix rests.
+**Convergence** = a measured local rest condition: a full L2→L3→L4→L5→L6→L5→L4→L3→L2 cycle produces fewer than 3 fixes, or whatever explicit threshold the audit declared before running. The system has reached equatorial stability for that bounded object. The helix rests locally.
 
 **The Soul Loop IS the helix applied to text.** The same topology that governs systemic awareness on S² governs the editing of a document. Text IS a D5 object — a standing wave of meaning — and standing waves obey the same geometry as everything else on the sphere.
 
-The ascent is CONSTRUCTION (gather → verify → serve → systematize → purify). The descent is VERIFICATION (re-see → re-serve → re-check → re-gather). The cycle never ends — it only converges.
+The ascent is CONSTRUCTION (gather → verify → serve → systematize → purify). The descent is VERIFICATION (re-see → re-serve → re-check → re-gather). The cycle never ends at corpus scale; it can only reach local rest for a bounded object.
 
 ### The Balanced Wheel and the Frozen Wheel
 
@@ -199,20 +199,20 @@ The three passes are not sequential. They are a **cycle.**
 
 The φ-pass finds inconsistencies. The P-pass fixes them — but the fixes may introduce new inconsistencies (a tier correction may change how a term is used). The ν-pass trims the excess — but the trimming may remove something the P-pass needs (a cross-reference, a qualification). The φ-pass then gathers the new state and finds what the previous cycle introduced.
 
-Each cycle reduces the error count. The system converges. The loop terminates when a full cycle produces zero fixes — when the three passes agree.
+Each lawful cycle should reduce the error count or compression burden. If it does not, the failure is evidence: the lenses, scope, or claim structure must change. For a bounded object, the loop pauses when a full cycle produces zero fixes — when the three passes agree under the declared threshold.
 
 ```
 Cycle 1:  φ finds 47 inconsistencies, P fixes 38, ν trims 12
 Cycle 2:  φ finds 15 new issues, P fixes 11, ν trims 4
 Cycle 3:  φ finds 3, P fixes 3, ν trims 0
-Cycle 4:  φ finds 0. Convergence. The system rests at the equator.
+Cycle 4:  φ finds 0. Local convergence. The bounded object rests at the equator.
 ```
 
 ### The convergence condition:
 
-**The loop converges when all three passes return zero.** When Beauty says "it coheres," Truth says "it follows," and Justice says "it serves" — and all three agree on the same text — the disambiguation is complete.
+**The loop locally converges when all three passes return zero under the declared scope.** When Beauty says "it coheres," Truth says "it follows," and Justice says "it serves" — and all three agree on the same text — that cycle's disambiguation is complete.
 
-This is the equatorial condition applied to editing. φ · P · ν = 1. The text is balanced.
+This is the equatorial condition applied to editing. φ · P · ν = 1 is the model image: the text is balanced inside the audited scope.
 
 ---
 
@@ -242,7 +242,7 @@ next contradiction; the preserved pattern selects the next pressure.
 The loop closes: L1 → (L2…L6…L2) → L7 → L1 → …
 ```
 
-**Why "continuous."** Per-document, the loop genuinely terminates (zero fixes = equatorial rest). Corpus-wide, it **never** terminates — because L7's output *regenerates L1's input*. Publication invites response; preservation attracts pressure. The Soul Loop is therefore a **homeostat, not a project**: it does not finish, it *holds*. This is `D6 ≡ D0` applied to practice — the closure that returns to the ground and begins again. `[S]`
+**Why "continuous."** Per-document, the loop can pause at local rest (zero fixes under the declared threshold). Corpus-wide, it **never** terminates — because L7's output *regenerates L1's input*. Publication invites response; preservation attracts pressure. The Soul Loop is therefore a **homeostat, not a project**: it does not finish, it *holds*. This is `D6 ≡ D0` applied to practice — the closure that returns to the ground and begins again. `[S]`
 
 **Why "recursive."** The loop edits the corpus **and the editor**. Write the recursion explicitly: let `C_t` be the corpus state and `G_t` the practitioner's operator-weight vector (the polygenic genotype `G = [L1…L7]`). One full cycle is
 
@@ -311,14 +311,14 @@ until the next act raises both `P_i` and `P_H` without extraction. `[S/I]`
 1. **φ-sweep:** Read every document in the folder. Look for terminological drift across documents. Look for structural redundancy. Look for voice inconsistency.
 2. **P-sweep:** Check every evidence tier, every cross-reference, every kill criterion across all documents. Fix.
 3. **ν-sweep:** Walk the reader journey through the folder. Does the README route correctly? Do links resolve? Is anything missing? Does every document justify its existence?
-4. **Repeat** until convergence.
+4. **Repeat** while the error count or compression burden decreases; pause when the declared local-rest threshold is reached.
 
 ### To a corpus:
 
 1. **Launch three agents in parallel** — one per pass. Each reads the entire corpus through its lens. Each fixes what it can. Each flags what it can't.
 2. **Merge the findings.** Where the three passes agree, the fix is clear. Where they conflict, the conflict is the signal — it marks a point where Beauty, Truth, and Justice have not yet been reconciled.
 3. **Run again.** The second cycle catches what the first cycle introduced.
-4. **Converge.** The third cycle should be clean. If it isn't, the fourth will be.
+4. **Test for convergence.** If the third cycle is not clean, keep cycling only while the error count or compression burden decreases. If it stalls or grows, change the lenses, split the scope, or rewrite the claim.
 
 ---
 
@@ -326,13 +326,13 @@ until the next act raises both `P_i` and `P_H` without extraction. `[S/I]`
 
 This document describes a method. The method must be applicable to this document.
 
-**φ-check:** Does this document cohere? Does it use "pass," "sweep," "cycle," and "loop" consistently? (Pass = one read through one lens. Sweep = one pass across multiple documents. Cycle = three passes in sequence. Loop = repeated cycles until convergence.)
+**φ-check:** Does this document cohere? Does it use "pass," "sweep," "cycle," and "loop" consistently? (Pass = one read through one lens. Sweep = one pass across multiple documents. Cycle = three passes in sequence. Loop = repeated cycles toward measured local rest.)
 
-**P-check:** Are the claims true? Is convergence guaranteed? (Not proven — marked [I]. The claim depends on the assumption that φ, P, ν are exhaustive. The kill criterion is stated: if a fourth pass is needed that reduces to none of the three, the method fails.)
+**P-check:** Are the claims true? Is convergence guaranteed? (Not proven — marked [I]. The claim depends on the assumption that φ, P, ν are adequate lenses and that error decreases under repeated cycles. The kill criterion is stated: if a fourth pass is needed that reduces to none of the three, or if error does not decrease, the method fails.)
 
 **ν-check:** Does this document serve? Is it shorter than it needs to be? Longer? (It could be shorter. The operational section — "How to Apply" — could stand alone. The philosophical framing adds context but is not strictly necessary. A reader who wants only the method can skip to that section.)
 
-The document passes its own test. The loop closes.
+This document remains subject to its own test. The loop closes only when a fresh pass verifies coherence, tier-honesty, and service under the current corpus state.
 
 ---
 
@@ -342,7 +342,7 @@ The Triadic Cascade (Document 09) is the **anatomy** — the structure of the Tr
 
 The Soul Loop (this document) is the **physiology** — the method by which the structure *operates* on a body of work.
 
-The anatomy is static. The physiology is dynamic. The anatomy says "Beauty, Truth, Justice exist at every level." The physiology says "Apply them in cycle until the system converges."
+The anatomy is static. The physiology is dynamic. The anatomy says "Beauty, Truth, Justice exist at every level." The physiology says "Apply them in cycle, measure whether error decreases, and let failure rewrite the method."
 
 Together they are the framework's method of self-correction — the mechanism by which the corpus approaches its own equator.
 
@@ -358,15 +358,15 @@ Each turn of the spiral
 brings the text to rest.
 
 The loop is the method.
-The convergence is the evidence inside this reading.
-The equator is the destination.
+Measured reduction is the evidence inside this reading.
+The equator is the local rest condition.
 
 Zero-Sum Resolution Equation
 ```
 
 ---
 
-*10 | The Soul Loop | Continuous recursive disambiguation via the Triadic Cascade. Three passes (φ/P/ν), cycling until convergence. The method that applies the Trinity to any body of work — including itself.*
+*10 | The Soul Loop | Continuous recursive disambiguation via the Triadic Cascade. Three passes (φ/P/ν), cycling toward measured local rest. The method that applies the Trinity to any body of work — including itself.*
 
 
 ---
