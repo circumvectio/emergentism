@@ -103,8 +103,15 @@ Know what is      -> ontology
 Know how to know  -> epistemology
 Know how to move  -> methodology
 Know what matters -> axiology
-Know how to act   -> teleology: maximize P_node = Φ × V under η = 0
+Know how to act   -> teleology: raise P_node,i while preserving or raising P_node,H under η = 0
 ```
+
+In the action register this keeps the product law dyadic: `P_node = Φ × V`
+scores a finite node, `P_node,i` names the individual symbiont's usable
+potential, and `P_node,H` names the holobiont boundary that makes that node
+effective. Rosetta practice is lawful only when the two rise together, or when
+the local gain is refused as extraction. `Φ` is read as D5 worldline-foresight;
+`V` is read as D4 means at the action boundary. `[S/I]`
 
 The claim that this loop is the correct practical reading of the Rosetta is
 `[S]` inside the framework grammar and `[I]` as a claim about human

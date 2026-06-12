@@ -77,7 +77,10 @@ The canonical framework notation is:
 P_node = Φ × V
 ΔP     = change in reachable future / effective potential
 Φ      = coherence, fit, directness, integrity of relation
-V      = viability, capacity, embodied ability to continue and act
+       = in the action register, D5 worldline-foresight
+V      = viability, continuation, means-to-act
+       = in the action register, D4 means at the boundary:
+         body, tools, energy, access, execution capacity
 η = 0  = no hidden rent, no extraction disguised as service
 ```
 
@@ -112,9 +115,10 @@ constituent individuals without capturing them.
 
 It does this by raising:
 
-- `V`: health, capability, safety, access, agency, operational continuity.
+- `V`: health, safety, access, continuity, and the D4 means needed to act.
 - `Φ`: truthful relation, dignity, coherence, belonging without erasure,
-  direct access rather than mediated dependency.
+  direct access rather than mediated dependency, and the D5 worldline-foresight
+  to use those means without capture.
 
 The downward vector is moral when the boundary feeds the node.
 
@@ -144,9 +148,10 @@ boundary it inhabits without dissolving the actor.
 
 It does this by raising:
 
-- `V`: useful work, skill, repair, protection, production, execution.
+- `V`: useful work, skill, repair, protection, production, execution, and shared
+  D4 means.
 - `Φ`: truthful speech, non-deception, coherent coordination, beauty of fit,
-  trustworthiness under pressure.
+  trustworthiness under pressure, and shared D5 worldline-foresight.
 
 The upward vector is ethical when the node feeds the boundary.
 
@@ -170,12 +175,12 @@ Ethics is the node upgrading the system.
 
 The dyad is a continuous feedback loop:
 
-1. Morality raises the baseline power of the individual by transmitting the
-   collective's accumulated structure, protection, language, memory, and
-   access.
-2. Ethics raises the adaptive power of the collective by returning individual
-   action, skill, truth, repair, and invention into the boundary that made the
-   node possible.
+1. Morality raises the baseline usable potential of the individual by
+   transmitting the collective's accumulated structure, protection, language,
+   memory, access, and means.
+2. Ethics raises the adaptive usable potential of the collective by returning
+   individual action, skill, truth, repair, invention, and foresight into the
+   boundary that made the node possible.
 
 When both directions work, the relation is not merely stable. It compounds.
 The collective creates stronger individuals; stronger individuals upgrade the
@@ -336,8 +341,10 @@ For any rule, institution, relationship, product, ritual, law, or strategy, ask:
 1. What is the real boundary being tested?
 2. Who is the individual node at this scale?
 3. Who or what is the collective boundary at this scale?
-4. Does the collective raise the individual's `ΔP` through `V` and `Φ`?
-5. Does the individual raise the collective's `ΔP` through `V` and `Φ`?
+4. Does the collective raise the individual's `ΔP` through D4 means and D5
+   worldline-foresight?
+5. Does the individual raise the collective's `ΔP` through D4 means and D5
+   worldline-foresight?
 6. Is there hidden rent, capture, coercion, or dependency manufacture?
 7. Can the relation survive Grace Exit without collapsing into punishment?
 8. Who signs the branch under uncertainty?
