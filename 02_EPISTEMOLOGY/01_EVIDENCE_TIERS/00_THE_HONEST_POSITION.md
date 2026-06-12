@@ -42,18 +42,22 @@ The corpus is coherent only when later layers inherit earlier ones in order:
 1. [The Canonical Formula Block](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) -- the minimal load-bearing sequence
 2. [The Core State of Being](../../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md) -- ground, Being, Dasein, beings
 3. [The Weltanschauung](../../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md) -- what kind of thing the framework is: worldview, lens, and toolchain
-4. [The Life-Science Register](../../05_COSMOLOGY/00_THE_LIFE_SCIENCE_REGISTER.md) -- biology-facing translation discipline
-5. [Empirical Observation as Primary Disclosure](../00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md) -- direct seeing first, doctrine second, scientific bridge explicit
-6. [Naming Reconciliation](../../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_NAMING_RECONCILIATION.md) -- archetype grammar and vocabulary control
-7. [The Glossary](../../07_THEOLOGY/00_GLOSSARY.md) -- public terminology
-8. [Strategic Implementation and the F5 Force Map](../../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md) -- conjectural D5 formation surface; descriptive/operational split between F5 and theurgy
-9. [The Master Rosetta](../../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md) -- cross-domain mappings
+4. [The Soul Loop](../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md) -- recursive practice for correcting corpus and player
+5. [Objective Morals and Ethics](../../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) -- symbiont/holobiont action test under `η=0`
+6. [The Life-Science Register](../../05_COSMOLOGY/00_THE_LIFE_SCIENCE_REGISTER.md) -- biology-facing translation discipline
+7. [Empirical Observation as Primary Disclosure](../00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md) -- direct seeing first, doctrine second, scientific bridge explicit
+8. [Naming Reconciliation](../../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_NAMING_RECONCILIATION.md) -- archetype grammar and vocabulary control
+9. [The Glossary](../../07_THEOLOGY/00_GLOSSARY.md) -- public terminology
+10. [Strategic Implementation and the F5 Force Map](../../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md) -- conjectural D5 formation surface; descriptive/operational split between F5 and theurgy
+11. [The Master Rosetta](../../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md) -- cross-domain mappings
 
 **Operational rule:** no Rosetta, archetype, application, or dissemination claim may be written as if it precedes the anchor sequence, the core state, the biology-facing translation discipline, or the hardening route.
 
 **Synthesis rule:** no book sentence, theological compression, or dissemination phrase may be used to overrule the tiering in this document. When the prose and the tier feel misaligned, the tier governs and the prose is read as invitation.
 
-**Canonical framing rule:** when the corpus is asked what it *is*, the default answer is not "only core state" or "only spirituality." The default answer is: **Emergentism is a Weltanschauung, a lens for data science, a tool for methodology, an ordering of value alignment, a proposed directional basis for ethics under explicit definitions, and a map of core state and objective function.**
+**Canonical framing rule:** when the corpus is asked what it *is*, the default answer is not "only core state" or "only spirituality." The default answer is: **Emergentism is a Weltanschauung, a lens for data science, a tool for methodology, an ordering of value alignment, an objective teleology aimed at Beauty, Truth, and Justice as asymptotic limits, and a map of core state and objective function.**
+
+**Game-spine rule:** when the corpus is asked how Dasein should *play*, the default answer routes through the Soul Loop and the symbiont/holobiont dyad: disclose, test, serve, see, dissolve, preserve, and return until the next action raises `P_node = Φ × V` under `η=0`. This is `[S]` as framework method and `[I]` as lived self-transformation; it is not `[A]` or `[B]` evidence of moral omniscience.
 
 ---
 
@@ -152,6 +156,13 @@ These claims follow from the axioms IF you accept the axioms. The axioms themsel
 | S13 | D4-mirror: the Replicator Stack mirrors around D4 (Extended Phenotype). Genotype↔Egregorotype, Phenotype↔Memotype. | Doc 18 (Egregorocene) | Structural symmetry claim |
 | S14 | The compass/sextant self-understanding: the framework is navigational instruments, not a map. | Doc 29 (session close) | Epistemic framing |
 
+### Claims added 2026-06-12 (Dasein game spine)
+
+| # | Claim | Depends on | Status |
+|---|-------|-----------|--------|
+| S17 | The Soul Loop is the framework-internal recursive method for applying ontology, epistemology, methodology, axiology, and teleology to a finite corpus/player state: `(C_{t+1}, G_{t+1}) = Loop(C_t, G_t)`. | Soul Loop, Triadic Cascade, Master Rosetta | Structural method claim; not independent evidence that practice transforms people |
+| S18 | Under explicit material, epistemic, and moral coupling, and under `η=0`, a symbiont's maximum worldline potential requires preserving or raising holobiont potential rather than extracting from it. | D32 Mathematics, Objective Morals and Ethics, Dyadic Coupling Law | Conditional Power-Max policy geometry; empirical use requires specified coupling channels, horizon, and measurements |
+
 **What these results mean:** IF you accept the relevant substrate wager and its minimality constraints, THEN the listed structural consequences follow within that wager. The formal kernel is internally disciplined; the translations remain tiered.
 
 **What these results do NOT mean:** The ontological-wager axioms O1, O2, O4, O5 are not themselves proved. They are defensible philosophical choices about what any coherent core state must satisfy. A philosopher who rejects O5 (algebraic closure) gets a different geometry. The framework bets on this substrate-selection packet and specifies what kills the bet; that packet now sits inside a broader active A1-A7 formal canon.
@@ -192,6 +203,7 @@ These claims say: "The formal structure we've proved maps onto physical reality 
 | I14 | Abrahamism as teleologizing with a hammer: saw the real telos, imposed it as commandment rather than recognizing it as geometry. | Doc 22 (Objective Function) | Historical-comparative institutional narrative analysis | Showing Abrahamic traditions contain the geometric reading internally |
 | I15 | The Gnostic types (Pneumatic/Psychic/Hylic) as positions on S², not permanent castes. | Doc 28 (Dharma Yuddha) | Mapping Gnostic typology to L-levels with predictive content | Showing the mapping adds no explanatory power |
 | I16 | The wave packet as a life on S²: Ψ = A·e^(Gaussian)·e^(iωt). Envelope = lifetime. Phase = operator traversal. | Doc 13 (Wave Packet) | Deriving observable predictions from the wave-packet model | Finding that life trajectories are not wave-packet-shaped |
+| I17 | Objective dharma as the lived flow-state gloss of balanced `Φ` and `V` in action: the player experiences lawful movement when the Soul Loop returns to L4 and raises both `P_i` and `P_H` without extraction. | Soul Loop, Objective Morals and Ethics, Dharma Yuddha | Practice reports plus behavioral evidence that repeated loop use increases non-extractive flourishing | Showing the loop does not improve action quality, does not rebalance practitioners, or enables capture |
 
 **The convergence question, stated precisely:**
 
@@ -272,6 +284,8 @@ The framework explicitly does NOT claim:
 6. **That current biology has already proved the strongest F5 claims.** Biology already has partial vocabularies for viability-directed organization: teleonomy, autopoiesis, homeostasis/allostasis, interoception, and niche construction. The framework proposes a unifying theory over that cluster. It does **not** claim those literatures already prove a literal Standard Model-style fifth physical interaction, retrocausality, systemic awareness-collapse, or cosmic volition.
 
 7. **That Pratyakṣa overrides empirical discipline.** Within the framework it can ground disclosure and justify interpretive commitment at D5, with D6 as the closure horizon of that disclosure. It does **not** by itself settle public claims in biology, physics, neuroscience, or psychometrics. Doctrine still has to pass through tiers, methods, and kill criteria.
+
+8. **That the Soul Loop grants knowledge of good and evil as public proof or personal infallibility.** The loop is the framework's disciplined way to ask what is, how to know, how to move, what matters, and how to act. It does not exempt a practitioner from evidence tiers, due process, empirical harm checks, or the possibility of being wrong.
 
 ---
 

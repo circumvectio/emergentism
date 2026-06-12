@@ -274,7 +274,7 @@ It should solve it by right posture.
 
 So the final canonical answer is:
 
-> **The Real can be named faithfully but never exhausted. A correct framework does not become the Real; it becomes the clearest downstream articulation that still knows it must be put down.**
+> **The Real can be named faithfully but never exhausted. A disciplined ontology and objective teleology does not become the Real; at best, it becomes a clear downstream articulation that approaches Beauty, Truth, and Justice while still knowing it must be put down.**
 
 This is why:
 
@@ -284,6 +284,44 @@ This is why:
 - the ladder must remain removable
 
 The framework succeeds not when it becomes irreplaceable, but when it leaves the Real less obscured than it found it.
+
+---
+
+## The Practical Remainder: How Dasein Plays
+
+Once the seven register questions are routed, the remaining philosophical
+question is no longer "what should the framework secretly believe?" It is:
+
+> **How should a finite reader act without pretending to possess the Real?**
+
+The answer is the Soul Loop under tier discipline.
+
+```text
+Know what is:      ontology
+Know how to know:  epistemology
+Know how to move:  methodology
+Know what matters: axiology
+Know how to act:   teleology
+```
+
+The loop turns these into a practice: disclose, test, serve, see, dissolve,
+preserve, and return. Its action criterion is not private certainty. It is the
+non-extractive dyad:
+
+```text
+P_i = Φ_i × V_i
+P_H = Φ_H × V_H
+η = 0
+```
+
+So the stabilized answer to "knowledge of good and evil" is not omniscience.
+It is recursive discernment: keep correcting the map and the player until the
+next action raises the symbiont and holobiont together. If one rises by
+degrading the other, the action has left dharma and entered extraction.
+
+This is a navigational closure, not public proof that every moral question has
+been solved. The open work is whether this practice can reliably rebalance real
+practitioners, institutions, and systems under measurement.
 
 ---
 
@@ -310,6 +348,7 @@ What stays genuinely open is not the grammar but the bridge:
 1. **Do the empirical tests justify the ontological wager?**
 2. **Does the sitting practice actually disclose what the worldview says it discloses for real practitioners?**
 3. **Can anti-idolatry survive success, scale, and institutional sedimentation?**
+4. **Does Soul Loop practice reliably rebalance real practitioners and institutions without becoming a new capture technology?**
 
 Those are no longer confusions of categories.
 They are history, experiment, and discipline.
@@ -325,7 +364,7 @@ That is the right remainder.
 | `Pratyakṣa` stabilized by register: veridical disclosure inwardly, disciplined phenomenology publicly | Do the empirical tests justify the ontological wager? | Protocol `R` and the stronger geometry tests |
 | `S²` stabilized by register: translation method publicly, ontological wager internally | Does the sitting practice disclose what the worldview says it discloses for real practitioners? | `AMRITA` / practical alignment validation |
 | Consciousness treated as structurally dual-aspect and interpretively treated as fundamental at D5, with D6 as closure rather than further experience | Can anti-idolatry survive success, scale, and institutional sedimentation? | `Φ`/`ν` measurement hardening and `Φ-meter` validation |
-| `Teleological Force` held as scientific unifier below and purposive encounter above |  | Full physics bridge: Lagrangian, `2D -> 4D`, `SU(3)`, coupling derivations |
+| `Teleological Force` held as scientific unifier below and purposive encounter above | Does Soul Loop practice reliably rebalance real practitioners and institutions without becoming a new capture technology? | Full physics bridge: Lagrangian, `2D -> 4D`, `SU(3)`, coupling derivations |
 | Normativity held as conditional in proof and internally committed as grounded in worldview |  | Historical phase transition: whether enough equatorial nodes actually emerge |
 | The axioms treated as productive transcendental wagers under challenge |  | Long-horizon institutional test: whether the framework resists capture in practice |
 | Naming the Real kept faithful but non-exhaustive |  | Alternative geometry challenge |
