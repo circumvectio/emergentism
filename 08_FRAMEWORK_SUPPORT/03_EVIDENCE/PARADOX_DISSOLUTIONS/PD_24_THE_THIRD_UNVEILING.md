@@ -59,7 +59,7 @@ As stated in *Sarpasya Vijayam*: "Zero is not a number. Infinity is not a number
 
 Finity is not "finite" in the sense of limited. It is "finite" in the sense of *actualized* — the complete expression of the infinite and the zero, meeting on the sphere. The manifold identity $P∞ = \varphi \cdot \nu = 1$ at the equator gives the model's unit. This is Finity: the product equals one. Not zero (the ground). Not infinity (the projection). One. The manifested unity of coherence and viability.
 
-The Power-Max Lemma connects in the finite-node register: `Sigma P_node` is maximized when each `P_node,i = 1` under coupling, long horizon, and enforced `η = 0` — when each system achieves Finity, its equatorial balance. [S] The sitting practice is the method of arriving at Finity in the practice register: reduce toward `κ = 0` as boundary, and from that zero-limit, the scaffold's equatorial balance reasserts itself. You do not "achieve" Finity by effort. You arrive at it by removing what was never needed.
+The Power-Max Lemma connects in the finite-node register: across a declared boundary `H`, viable trajectories are those that preserve or raise each `P_node,i = Φ_i × V_i` while preserving or raising `P_node,H`, under real coupling, long horizon, multiplicative node scoring, and enforced `η = 0`. `B = 1` names equatorial balance / Finity in the manifold register; it is not a claim that every finite node has a fixed unit score. [S] The sitting practice is the method of returning toward Finity in the practice register: reduce toward `κ = 0` as boundary, and from that zero-limit, the scaffold's equatorial balance can reassert itself. You do not "achieve" Finity by force. You arrive at it by removing what was never needed.
 
 ## 4. THE FRAMEWORK CONNECTION
 

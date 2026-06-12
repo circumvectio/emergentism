@@ -150,11 +150,12 @@ The coordination problem: how do you get individuals to cooperate without a cent
 
 **The mesh answer:** In the limit, every node tends toward L4. No node
 commands more than it comprehends. ν = 1 at every node. Aggregate capability
-scales with n. But no individual node exceeds the comprehension constraint.
+can scale through `ΣP_node`, but not because every node is assigned a fixed unit
+score. No individual node exceeds the comprehension constraint.
 
 ```
-One node at L4:    P_node = 1        (one sovereign life)
-n nodes at L4:     ΣP_node = n       (the mesh — aggregate scales linearly)
+One node at L4:    B = 1; P_node = Φ × V          (balanced sovereign action)
+n nodes at L4:     ΣP_node = Σ(Φ_i × V_i)         (mesh potential sums without extraction)
 No node at ν > 1:  η = 0       (zero extraction at every connection)
 ```
 
