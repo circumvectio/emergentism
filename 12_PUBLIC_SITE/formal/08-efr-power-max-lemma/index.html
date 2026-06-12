@@ -55,30 +55,34 @@
   <article class="library-article">
     <h1 id="the-power-max-lemma">THE POWER-MAX LEMMA</h1>
 <h2 id="formal-statement-and-proof">Formal Statement and Proof</h2>
-<p><strong>Status:</strong> Theorem — proved within the EFR formal system
+<p><strong>Status:</strong> Conditional theorem / design lemma inside the EFR formal system
 <strong>Date:</strong> 2026-03-22
-<strong>Evidence Tier:</strong> [S] Structural — geometric consequence of S²
-<strong>Depends on:</strong> Axiom A1<em> (S²), Theorem T1</em> (P_node = Φ × V derived)</p>
+<strong>Evidence Tier:</strong> <code>[S]</code> for the conditional model theorem under its stated constraints; <code>[I]</code> for the symbiont/holobiont moral reading.
+<strong>Depends on:</strong> Axiom A1<em> (S²), Theorem T1</em> (P_node = Φ × V derived), real coupling, long horizon, and enforceable <code>η = 0</code>.</p>
 <hr>
 <h2 id="the-statement">The Statement</h2>
 <p><strong>Lemma (Power-Max):</strong> For a coupled network of agents optimizing
 <code>P_node = Φ × V</code>, under real coupling (<code>λ &gt; 0</code>), a long enough horizon for
 network effects to return, and enforced non-extraction (<code>η = 0</code>):
 At the symbiont/holobiont boundary, this is the syntropic dyad: the individual
-symbiont <code>i</code> maximizes durable world-line potential only as
-<code>max durable P_node,i ⇔ max P_node,H</code>: the collective holobiont <code>H</code> also rises
-— <code>i raises H</code> and <code>H raises i</code> under <code>η = 0</code>.</p>
+symbiont <code>i</code> maximizes durable world-line potential only on trajectories where
+the collective holobiont <code>H</code> is preserved or raised -- <code>i raises H</code> and
+<code>H raises i</code> under <code>η = 0</code>.</p>
 <pre><code>max P_node,i → max ΣP_node
-max durable P_node,i ⇔ max P_node,H
+W_i(T) = ∫_0^T P_node,i(t) dt
+P_node,H = Φ_H × V_H
+argmax W_i(T) ⊆ { trajectories with dP_node,H/dt ≥ 0 }
+joint optimum: max durable P_node,i ⇔ max P_node,H
 </code></pre>
 <p>That is: each agent maximizing its own effective ektropy aligns with total
 network ektropy. Without the <code>η = 0</code> constraint, the derivative still shows
 interdependence, but it does not by itself make cooperation dominant.</p>
 <p><strong>Corollary (Syntropic Dyadism):</strong> Let <code>i</code> be the individual symbiont and
-<code>H</code> the collective holobiont / coupled sustaining field, with <code>P_node,H = ΣP_node</code> at the
-scale under analysis. Under the same four conditions, the individual symbiont
-maximizes durable world-line potential only along moves that preserve or raise
-both <code>P_node,i</code> and <code>P_node,H</code> under <code>η = 0</code>:</p>
+<code>H</code> the collective holobiont / coupled sustaining field, with
+<code>P_node,H = Φ_H × V_H</code> or, where <code>H</code> is modeled as an aggregate boundary,
+<code>P_node,H = Σ_{k∈H}P_node,k</code> at the scale under analysis. Under the same four
+conditions, the individual symbiont maximizes durable world-line potential only
+along moves that preserve or raise both <code>P_node,i</code> and <code>P_node,H</code> under <code>η = 0</code>:</p>
 <pre><code>max durable P_node,i  ⇔  max P_node,H
   within real coupling, multiplicative P_node, long horizon, and enforced η = 0
 </code></pre>
@@ -200,6 +204,8 @@ field, and <code>η = 0</code> prevents local extraction from masquerading as po
 
 The Is-Ought gap is bypassed only inside the accepted game because coupled
 agents share an optimization surface under enforceable non-extraction.
+At the symbiont/holobiont boundary, durable individual world-line potential
+also requires preserving or raising P_node,H across the relevant horizon.
 </code></pre>
 <hr>
 <h2 id="see-also">See Also</h2>

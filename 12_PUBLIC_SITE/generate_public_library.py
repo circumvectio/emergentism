@@ -125,6 +125,10 @@ directly (the only available lever):
   - formal/34-d4-d5-canonical-reference/        : added the register bridge that
         keeps dimensional D4 witness distinct from action-register D4 means-to-act
         and pairs D5 worldline-foresight with D4 means in `P_node = Φ × V`.
+  - formal/08-efr-power-max-lemma/              : tightened the status from
+        pure geometric theorem to conditional model theorem / design lemma,
+        and added the `W_i(T)` / `P_node,H` worldline notation for the
+        symbiont-holobiont corollary.
   - memetic/                                    : normalized the Dasein game
         reading action test from stale `P_i` / `P_H` to `P_node,i` /
         `P_node,H`.
