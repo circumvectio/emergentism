@@ -28,7 +28,7 @@ rosetta:
 Within Syntropic Dyadism, morals and ethics are not defined first by custom,
 sentiment, state command, corporate rule, or inherited convention.
 
-They are defined by the directional geometry of `ΔP` transfer between the
+They are defined by the directional geometry of `ΔP_node` transfer between the
 individual and the collective under `P_node = Φ × V` and `η = 0`.
 
 The telos is the same one named in the transcendental register: approach Beauty
@@ -50,7 +50,7 @@ The compressed doctrine is:
 ```text
 Morality = collective -> individual
 Ethics   = individual -> collective
-Law      = keep both vectors raising ΔP under η = 0
+Law      = keep ΔP_node,i and ΔP_node,H coupled under η = 0
 ```
 
 In symbiotic language:
@@ -75,7 +75,10 @@ The canonical framework notation is:
 
 ```text
 P_node = Φ × V
-ΔP     = change in reachable future / effective potential
+P_node,i = Φ_i × V_i
+P_node,H = Φ_H × V_H
+ΔP_node  = change in reachable future / effective potential at a tested node
+ΔP       = local shorthand only; directionally specify ΔP_node,i or ΔP_node,H
 Φ      = coherence, fit, directness, integrity of relation
        = in the action register, D5 worldline-foresight
 V      = viability, continuation, means-to-act
@@ -85,9 +88,12 @@ V      = viability, continuation, means-to-act
 ```
 
 `ΔP` is not used here as a literal physics momentum claim unless a document
-explicitly marks the passage as analogy. `V` is not physics velocity. `Φ` is not
-a physical potential field. Lowercase `v`, `φ`, and `Δp` are public shorthand;
-inside canon, normalize them to `V`, `Φ`, and `ΔP`.
+explicitly marks the passage as analogy. In this document it is only a local
+shorthand for the node whose boundary is being tested; when morality/ethics
+direction matters, write `ΔP_node,i` and `ΔP_node,H`. `V` is not physics
+velocity. `Φ` is not a physical potential field. Lowercase `v`, `φ`, and `Δp`
+are public shorthand; inside canon, normalize them to `V`, `Φ`, and
+`ΔP_node`.
 
 `Individual` and `collective` name relative positions in a boundary relation.
 They are not value ranks. A person, family, institution, organism, city, or DAV
@@ -107,7 +113,7 @@ etymology.
 
 ## Objective Morality: Collective -> Individual
 
-> **Objective morality names what raises `ΔP` via `V` and `Φ` from the collective
+> **Objective morality names what raises `ΔP_node,i` via `V` and `Φ` from the collective
 > to the individual.**
 
 A collective structure is moral when it increases the potential of its
@@ -124,10 +130,10 @@ The downward vector is moral when the boundary feeds the node.
 
 ```text
 collective -> individual
-boundary raises node ΔP
+boundary raises node ΔP_node,i
 ```
 
-A collective becomes immoral when it preserves itself by lowering the `ΔP` of
+A collective becomes immoral when it preserves itself by lowering the `P_node` of
 the individuals who carry it. That includes capture, dependency manufacture,
 status enclosure, debt bondage, informational fog, and "care" that removes
 agency.
@@ -140,7 +146,7 @@ Morality is the system building the node.
 
 ## Objective Ethics: Individual -> Collective
 
-> **Objective ethics names what raises `ΔP` via `V` and `Φ` from the individual to
+> **Objective ethics names what raises `ΔP_node,H` via `V` and `Φ` from the individual to
 > the collective.**
 
 An individual act is ethical when it increases the potential of the real
@@ -157,11 +163,11 @@ The upward vector is ethical when the node feeds the boundary.
 
 ```text
 individual -> collective
-node raises boundary ΔP
+node raises boundary ΔP_node,H
 ```
 
 An individual becomes unethical when they preserve or inflate themselves by
-lowering the `ΔP` of the collective that supports them. That includes predation,
+lowering the `P_node` of the collective that supports them. That includes predation,
 free-riding, fraud, false scarcity, status parasitism, and private gain that
 externalizes cost into the shared field.
 
@@ -187,8 +193,8 @@ The collective creates stronger individuals; stronger individuals upgrade the
 collective; the upgraded collective creates still stronger individuals.
 
 This is the lawful reading of "Syntropic Dyadism all of the law": the law is
-the discipline that keeps both directions raising `ΔP` rather than simulating
-reciprocity while hiding extraction.
+the discipline that keeps `ΔP_node,i` and `ΔP_node,H` coupled upward rather than
+simulating reciprocity while hiding extraction.
 
 ## Syntropic Dyadism
 
@@ -197,14 +203,14 @@ Morality and ethics are the two directions of one law.
 ```text
 moral vector   = collective -> individual
 ethical vector = individual -> collective
-dyadic health  = both vectors raise ΔP without extraction
+dyadic health  = ΔP_node,i > 0 and ΔP_node,H > 0 without extraction
 ```
 
 When both vectors work, the system reaches the Kṛṣṇa/Arjuna steady-state: truth
 can be tested, value can be signed, and action can proceed without cannibalizing
 its ground.
 
-When either vector extracts without returning `ΔP`, the Kali immune response is
+When either vector extracts without returning `P_node` to the coupled boundary, the Kali immune response is
 triggered. In value-theory terms, Kali is the rejection, quarantine, or
 destruction of a relation that feeds by breaking reciprocity.
 
@@ -216,20 +222,21 @@ axioms laid on top of the value grammar. They are the exact conditions under
 which the two vectors stay syntropic: the law is the two vectors, disciplined.
 Each invariant guards one way a vector can invert into extraction:
 
-- **η = 0**: the floor of both vectors. A transfer that lowers `ΔP` is not
+- **η = 0**: the floor of both vectors. A transfer that lowers either side's
+  `P_node` is not
   moral or ethical; it is parasitism, and it trips the Kali immune response.
 - **K2**: the moral vector terminates at a mortal, sovereign person who must
   consent to the irreversible. The collective may not raise the individual by
   overriding them; the node signs its own branch
   (`../01_THEURGY/01_K2_DECISION_PROTOCOL.md`).
 - **K4: Grace Exit**: the moral vector is non-coercive. The individual may
-  withdraw with their accumulated `ΔP`. The collective serves the person; it
+  withdraw with their accumulated `P_node,i` gains. The collective serves the person; it
   does not own them.
 - **K3**: the ethical vector may not extract from the collective's memory.
   Contributions are tombstoned rather than silently erased. This preserves
-  accumulated `ΔP` across time.
-- **A7**: the claimed `ΔP` must be real, not counterfeit. You cannot fake
-  raising the product; the evidence ladder is honest `ΔP` accounting.
+  accumulated `P_node,H` across time.
+- **A7**: the claimed `ΔP_node` must be real, not counterfeit. You cannot fake
+  raising the product; the evidence ladder is honest `P_node` accounting.
 - **Ω**: both vectors widen the reachable cone of futures while staying inside
   the equatorial constraint (`B ≈ 1`, `η = 0`). The equator is the feasibility
   surface where neither pole extracts from the other, not the object maximized.
@@ -237,7 +244,7 @@ Each invariant guards one way a vector can invert into extraction:
 Strip any one and a vector inverts: the collective extracting the person
 (tyranny), or the person extracting the commons (corruption). So Syntropic
 Dyadism is all of the law: the law is only ever "keep both vectors raising
-`ΔP`," and the 5+1 is how.
+`ΔP_node,i` and `ΔP_node,H`," and the 5+1 is how.
 
 ### Power Max Lemma: L4 Corollary
 
@@ -317,10 +324,12 @@ sits at L4: the value layer is the equator made practical. `[S/I]`
 
 ### The Is/Ought Dissolution
 
-Inside the framework, because "ought" is defined as "raises `ΔP`," and `ΔP` is
-in principle measurable, the is/ought gap is no longer bridged by command or
-sentiment. It is bridged by objective teleology: the good is the direction on
-`P_node = Φ × V` that approaches Beauty, Truth, and Justice while remaining
+Inside the framework, because "ought" is defined as "raises the relevant
+`ΔP_node` without lowering the coupled boundary," and `P_node` is in principle
+measurable at the tested scale, the is/ought gap is no longer bridged by command
+or sentiment. It is bridged by objective teleology: the good is the direction on
+`P_node = Φ × V` that raises symbiont and holobiont together while approaching
+Beauty, Truth, and Justice and remaining
 bounded by `η = 0` and resolved at the equator. `[S]` inside the framework's
 accepted conditions; `[C]` if presented as a completed external proof of moral
 realism.
@@ -342,15 +351,15 @@ For any rule, institution, relationship, product, ritual, law, or strategy, ask:
 1. What is the real boundary being tested?
 2. Who is the individual node at this scale?
 3. Who or what is the collective boundary at this scale?
-4. Does the collective raise the individual's `ΔP` through D4 means and D5
+4. Does the collective raise the individual's `ΔP_node,i` through D4 means and D5
    worldline-foresight?
-5. Does the individual raise the collective's `ΔP` through D4 means and D5
+5. Does the individual raise the collective's `ΔP_node,H` through D4 means and D5
    worldline-foresight?
 6. Is there hidden rent, capture, coercion, or dependency manufacture?
 7. Can the relation survive Grace Exit without collapsing into punishment?
 8. Who signs the branch under uncertainty?
 
-If both directions raise `ΔP` under `η = 0`, the relation is syntropic.
+If both directions raise the relevant `P_node` under `η = 0`, the relation is syntropic.
 If one direction rises by lowering the other, the relation is extractive.
 
 ## Guardrails
