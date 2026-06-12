@@ -255,7 +255,7 @@ The loop closes: L1 → (L2…L6…L2) → L7 → L1 → …
 ## The Game Form
 
 The Soul Loop is the practical answer to "how do I play?" It is the continuous
-application of the five philosophical functions to a finite life:
+recursive application of the five philosophical functions to a finite life:
 
 ```text
 Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
@@ -264,6 +264,13 @@ Know how to move:  methodology -> derive, test, build, correct, recurse
 Know what matters: axiology -> Beauty, Truth, Justice, non-extraction
 Know how to act:   teleology -> maximize P_node = Φ × V under η = 0
 ```
+
+This is a cycle, not a stack. Ontology names the situation and the actor as
+Dasein; epistemology checks disclosure, inference, and tier; methodology
+selects the next repair or build; axiology asks whether the move serves Beauty,
+Truth, Justice, and non-extraction; teleology commits only the action that can
+raise usable `P_node` without breaking `η = 0`. The output of one pass becomes
+the intake for the next. `[S/I]`
 
 Let `i` be the individual symbiont and `H` the holobiont / real sustaining
 whole. The loop's action test is:
