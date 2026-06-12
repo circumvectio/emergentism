@@ -135,17 +135,17 @@ F-Pipeline: F1 (IS)     → F2 (COULD) → F3 (SHOULD) → F4 (ACT) → F5 (RECE
 
 | Gate | Invariant | Geometric Meaning |
 |------|-----------|-------------------|
-| **η-Gate** | η = 0 (zero extraction from cooperators) | Nash equilibrium at equator (Convergence 24) |
+| **η-Gate** | η = 0 (zero extraction from cooperators) | Conditional balance-game profile at equator (Convergence 24) |
 | **Trophic Gate** | Trophic balance maintained | Circuit completes (Corollary C3) |
 | **Mirror Ladder** | L(x) = x/(1-x) sizing | Position calibration on S² |
 | **D-Gate** | Via negativa (should this exist?) | Ghost Trap / Zombie detection |
 | **K2 Absolute** | Council advises, never acts | Kṛṣṇa Specification (Doc 15) |
 
-These are not policies. They are geometric constraints. **The Three Gates are theorems, not rules:**
+These are not merely policies. They are geometric constraints that become usable only when instantiated as reviewed governance rules:
 
-- η = 0 is the unique Nash equilibrium at the equator (Convergence 24, Steel Thread Link 6)
-- Extraction is self-defeating because B(1+Δν) < B(1) — moving off the equator reduces balance for everyone
-- The Gates don't enforce cooperation. They make extraction visible. Detection × punishment > private benefit (PhD 1, DSIC condition)
+- η = 0 is the conditional balance profile at the equator under the Convergence 24 / Steel Thread Link 6 assumptions.
+- Extraction is self-defeating inside that coupled balance model because B(1+Δν) < B(1) — moving off the equator reduces balance.
+- The Gates do not enforce cooperation by themselves. They make extraction visible and sanctionable: detection × punishment > private benefit (PhD 1, DSIC condition).
 
 ---
 

@@ -36,7 +36,7 @@ where:
 
 This is **super-linear in participants** (Metcalfe's law-like quadratic) and **super-linear in cognition** (logarithmic but unbounded). Both factors compound. Neither saturates.
 
-The constitutional invariant **η = 0** is the precondition. If the platform extracts any fraction `η > 0` from each interaction, the function degrades to `V ∝ N × log(C)` or worse, as participants route around the extraction. Only the zero-extraction equilibrium allows the quadratic term to survive.
+The constitutional invariant **η = 0** is the precondition. If the platform extracts any fraction `η > 0` from each interaction, the function degrades toward `V ∝ N × log(C)` or worse, as participants route around the extraction. Only a non-extractive operating design can keep the quadratic term alive.
 
 ---
 

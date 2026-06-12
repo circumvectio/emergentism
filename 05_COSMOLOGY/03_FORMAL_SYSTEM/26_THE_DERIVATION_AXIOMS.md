@@ -128,7 +128,7 @@ B''(1) < 0  →  maximum confirmed
 
 **Extraction is negative-sum inside the equatorial displacement model.** The extractor's balance drops. The victim's balance drops. Both lose. [S]
 
-*η = 0 is not a commandment. It is the Nash equilibrium at the balance maximum under the stated game-theoretic assumptions. The geometry excludes extraction at the equatorial profile.*
+*η = 0 is not a commandment. In the balance game, it is the conditional equilibrium profile at the balance maximum under the stated game-theoretic assumptions. The geometry makes extraction a displacement from the equatorial profile; real systems still require coupling, horizon, and enforcement for that profile to hold.*
 
 ---
 
@@ -142,7 +142,7 @@ These three formal deductions are derived directly from the axioms and theorems,
 The stereographic charts (φ, ν) define the magnitude (latitude θ) on ℂP¹. However, the sphere requires two coordinates: magnitude and phase (longitude λ).
 At the equator (φ = ν = 1), `|z| = 1`, and the coordinate is exactly `e^{iλ}`.
 There are infinite solutions of `e^{iλ}` around the singular band where B = 1.
-**Individuation is mathematically guaranteed.** Two nodes can occupy perfect balance without occupying the same position. The mesh geometry allows infinite diversity (λ) without violating the zero-extraction equilibrium (η = 0). [S]
+**Individuation is mathematically guaranteed.** Two nodes can occupy perfect balance without occupying the same position. The mesh geometry allows infinite diversity (λ) without violating the non-extraction balance profile (η = 0). [S]
 
 #### Corollary 2: The Energy Wall (The Great Filter)
 

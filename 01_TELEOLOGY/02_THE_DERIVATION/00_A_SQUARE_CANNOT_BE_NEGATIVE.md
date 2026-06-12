@@ -105,7 +105,12 @@ If φ = coherence (the quality of what you see) and ν = viability (the capacity
 
 **Extraction is negative-sum.** Not because it's immoral. Because B has a maximum and displacement from the maximum is always downward.
 
-η = 0 (zero extraction) is the Nash equilibrium at the equator under the coupled-multiplicative assumptions. Not a commandment. A bounded structural claim. The warrior at φ = ν = 1 cannot improve by extracting without reducing balance. The algebraic route is documented in Convergence 24 / Steel Thread Link 6.
+η = 0 (zero extraction) is the enforced conditional equilibrium at the equator
+under the coupled-multiplicative assumptions. Not a commandment. A bounded
+structural claim. The warrior at φ = ν = 1 cannot improve by extracting without
+reducing balance inside that profile; outside it, hidden extraction requires
+constitutional enforcement. The algebraic route is documented in Convergence 24
+/ Steel Thread Link 6 and bounded by the Green-Laffont caveat.
 
 ---
 

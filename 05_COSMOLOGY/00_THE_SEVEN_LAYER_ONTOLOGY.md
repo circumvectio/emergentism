@@ -235,13 +235,13 @@ The **Burrisphere** — S² with dual stereographic coordinates `φ = cot(θ/2)`
 η = 0              (extraction coefficient — equilibrium)
 ```
 
-At the equator: `φ = ν = 1`, `B = 1`, `η = 0`. This is the unique Nash equilibrium of the balance game.
+At the equator: `φ = ν = 1`, `B = 1`, `η = 0`. This is the enforced conditional equilibrium of the balance game under the stated coupling, horizon, and non-extraction assumptions.
 
 ### Ethical Direction
 **Play at the equator.** The equator is the only position where:
 - The manifold identity holds (`φ · ν = 1`)
 - Balance is maximal (`B = 1`)
-- Extraction is self-defeating (`η = 0` is Nash equilibrium)
+- Extraction is self-defeating inside the enforced equatorial profile (`η = 0`)
 - The Price of Anarchy = 1 (individual and collective interest coincide)
 
 ### The Five Domains at D5
@@ -253,10 +253,10 @@ The φ-ν plane opens five navigable domains:
 5. **Body** (the sphere itself): the grounded manifold
 
 ### Evidence Tier
-`[A]` for the sphere geometry; `[S]` for the Nash equilibrium; `[I]` for the "playable mirror" reading.
+`[A]` for the sphere geometry; `[S]` for the conditional equilibrium under its assumptions; `[I]` for the "playable mirror" reading.
 
 ### Formal Anchor
-**EFR 24 (Strategic Exclusion):** Extraction at the equator is strictly self-defeating even for purely selfish agents. `η = 0` is the unique Nash equilibrium at equatorial profiles. `[S]`
+**EFR 24 / EFR 33 boundary:** Extraction at the equator is self-defeating in the pure balance game, while private side-payments reopen extraction unless enforcement is present. `η = 0` is therefore an enforced conditional equilibrium at equatorial profiles. `[S]`
 
 ---
 

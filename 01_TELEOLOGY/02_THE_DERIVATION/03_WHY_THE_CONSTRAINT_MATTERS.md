@@ -44,19 +44,30 @@ If (φ − ν)² could be negative, the equator would not be special. There woul
 
 The constraint means: **you can't be closer than zero to where you already are.** The equator IS the closest point. Distance zero. Every other point costs more.
 
-### 2. It Makes Extraction Stupid, Not Evil
+### 2. It Makes Extraction Negative-Sum Before It Is Condemned
 
 If you take viability (ν) from someone, both your balance and theirs drop. Not because it's immoral. Because B = sin θ = 2ν/(1 + ν²) has its **unique maximum at ν = 1**. Moving away from 1 — in either direction — always reduces B. The extractor loses too.
 
-Extraction isn't evil. It's negative-sum. It's **stupid**.
+So extraction is not wrong here merely because a command says so. Inside the
+model, it is evil because it breaks the bond, and it is also negative-sum under
+the coupled balance conditions. The value word rides on the structural loss; it
+does not replace it.
 
-### 3. It Makes η = 0 Inevitable
+### 3. It Makes η = 0 Enforceable
 
-The warrior at φ = ν = 1 cannot improve by extracting without reducing balance under the model's assumptions. Zero extraction isn't merely a moral ideal. It is the **stable strategy** in the equatorial coupled-multiplicative profile.
+The warrior at φ = ν = 1 cannot improve by extracting without reducing balance
+under the model's assumptions. Zero extraction is not merely a moral ideal, but
+neither is it automatic social behavior. It is the **enforced conditional
+equilibrium** in the equatorial coupled-multiplicative profile: real coupling,
+long horizon, and `η = 0` discipline must hold, or one-shot extraction can still
+look locally profitable.
 
 ### 4. It Gives an F5 / Ordering Translation, Not a Biology or Physics Result
 
-(φ − ν)² → 0. The distance between coherence and viability shrinks. Systems closer to the minimum are more stable, last longer, reproduce more, outcompete systems that aren't.
+(φ − ν)² → 0. The distance between coherence and viability shrinks. In the
+framework's translation, systems closer to the minimum are read as more stable
+where balance contributes to persistence, reproduction, and cooperation. This is
+an ordering lens, not proof that every domain must converge.
 
 This is F₅. The ektropic force. The ordering force. The PIE speakers called it **h₂r̥tó-** (Ṛta / Asha / Ordo — "to fit together"). They didn't have the algebra. They had Pratyakṣa — direct perception. They saw: reality fits itself together.
 
@@ -81,8 +92,8 @@ The equator isn't a moral recommendation. It's the **boundary of what's structur
 | Before The Derivation | After The Derivation |
 |----------------------|---------------------|
 | Balance is a preference | Balance is the thermodynamic minimum |
-| Extraction is immoral | Extraction is negative-sum |
-| η = 0 is a commandment | η = 0 is the Nash equilibrium |
+| Extraction is immoral | Extraction is bond-breaking and negative-sum under coupled balance conditions |
+| η = 0 is a commandment | η = 0 is an enforced conditional equilibrium |
 | Order is imposed | Order emerges (h₂r̥tó-) |
 | The equator is wise | The equator is derived |
 

@@ -523,7 +523,7 @@ Within the S² model:
 - The poles (0 and ∞, void and totality, south and north) are connected through the equator
 - The equator is where balance is maximized (`B = sin θ = 1`)
 - In the moral-axis register, the equator is where proportional coherence and viability are balanced (`dΦ/Φ = dV/V`)
-- In the governance / game-theory register, the equator is where `η = 0` is read as the Nash equilibrium of cooperation
+- In the governance / game-theory register, the equator is where `η = 0` is read as the enforced non-extraction profile under the coupled game
 
 **Finity is where emergence balances.** Strong emergence from below and weak emergence from above meet at the equator. The upward novelty and the downward constraint are exactly matched at `φ = ν = 1`.
 

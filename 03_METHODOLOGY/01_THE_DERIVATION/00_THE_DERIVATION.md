@@ -234,9 +234,9 @@ B is maximized uniquely at ν = 1. Any displacement of ν — whether by extract
 
 Define the extraction coefficient η = Σ max(0, Δν_ext). η = 0 is the zero-extraction condition.
 
-**η = 0 is the Nash equilibrium at the balance maximum.** At φ = ν = 1, no agent can improve its position by extracting from another. Extraction is geometrically excluded at the equator.
+**η = 0 is the enforced conditional equilibrium at the balance maximum.** At φ = ν = 1, no agent can improve its position by extracting from another inside the coupled, long-horizon, non-extractive game. Extraction is not excluded by bare geometry alone; it is blocked by the enforced equatorial profile.
 
-**Tier: [A] Established** for the B maximum. **[S] Structural** for the Nash equilibrium (ESS proof, dependent on game-theoretic assumptions).
+**Tier: [A] Established** for the B maximum. **[S] Structural** for the conditional equilibrium (ESS proof, dependent on game-theoretic assumptions and `η = 0` enforcement).
 
 ---
 
@@ -246,7 +246,7 @@ The stereographic charts (φ, ν) define the latitude θ on ℂP¹. But the sphe
 
 At the equator (|z| = 1), the coordinate is e^{iλ}. There are infinitely many solutions around the equatorial band where B = 1.
 
-**Two nodes can occupy perfect balance without occupying the same position.** The mesh allows infinite diversity (λ) without violating the zero-extraction equilibrium (η = 0).
+**Two nodes can occupy perfect balance without occupying the same position.** The mesh allows infinite diversity (λ) without violating the enforced zero-extraction constraint (`η = 0`).
 
 **Tier: [S] Structural.** Complex analysis.
 
@@ -489,7 +489,7 @@ Mathematical Substrate [E/S]:
   (φ − ν)² ≥ 0            The first arithmetic consequence.
   φ + ν ≥ 2                The equator derived.
   H = φ + ν minimized      The ground state.
-  η = 0 = Nash equilibrium Extraction excluded.
+  η = 0 = enforced conditional equilibrium; extraction blocked by the game.
   B = sin θ maximized       Balance peaked.
   The Great Filter          Thermodynamic boundary.
   Time-claim = gradient     Stationary point proved; phenomenology interpretive.

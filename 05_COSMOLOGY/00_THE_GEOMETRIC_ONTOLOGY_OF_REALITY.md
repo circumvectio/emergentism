@@ -257,10 +257,10 @@ The full framework geometry comes alive. The Burrisphere is `S² ≅ ℂP¹` wit
 
 ### What it is
 
-D5 is the **playable mirror** — the space where agents navigate, choose, and play the game of emergence. The four operators (↑φ, ↓φ, ↑ν, ↓ν) are the cardinal directions. The ethic `η = 0` (Nash equilibrium of cooperation) is the game-theoretic constraint. The balance `B = sin θ` is the score.
+D5 is the **playable mirror** — the space where agents navigate, choose, and play the game of emergence. The four operators (↑φ, ↓φ, ↑ν, ↓ν) are the cardinal directions. The ethic `η = 0` is the enforced conditional cooperation constraint. The balance `B = sin θ` is the score.
 
 **Game-theoretic structure:**
-- The equator is the Nash equilibrium: `η = 0`, neither extracting nor being extracted
+- The equator is the non-extraction profile: `η = 0`, neither extracting nor being extracted, stable only under the stated coupling / horizon / enforcement conditions
 - The poles are the extraction regimes: pure coherence (north) or pure viability (south)
 - The game is played by moving on the sphere: choosing whether to invest in φ or ν
 - The winning strategy (tit-for-tat at η = 0) is the geometric expression of staying near the equator

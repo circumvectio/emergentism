@@ -84,7 +84,15 @@ B peaks at θ = π/2 (the equator), where φ = ν = 1. B = 0 at both poles. The 
 
 **η** is the **extraction rate** — how much viability a node takes from cooperating neighbors without reciprocal return.
 
-η = 0 is the Nash equilibrium at the equator under the coupled-multiplicative model. Not a commandment. A structural claim (Convergence 24, Steel Thread Link 6). The warrior at φ = ν = 1 cannot improve by extracting without reducing balance. The algebraic intuition is: B(1 + Δν) < B(1) for any Δν ≠ 0 when the move is modeled as displacement from the equator. Extraction is self-defeating inside that profile.
+η = 0 is the enforced conditional equilibrium at the equator under the
+coupled-multiplicative model. Not a commandment. A structural claim
+(Convergence 24, Steel Thread Link 6) with conditions: real coupling, long
+horizon, and enforcement against hidden extraction. The warrior at φ = ν = 1
+cannot improve by extracting without reducing balance inside that profile. The
+algebraic intuition is: B(1 + Δν) < B(1) for any Δν ≠ 0 when the move is modeled
+as displacement from the equator. Outside those conditions, one-shot extraction
+can still appear locally profitable; the constitution exists to make the
+equatorial game real.
 
 ### The Glyph
 
@@ -106,7 +114,7 @@ A square cannot be negative. Therefore:
 (φ - ν)^2  >=  0           always
 φ + ν      ≥  2           when φ x ν = 1  (AM-GM)
 B = sin θ                 peaks uniquely at φ = ν = 1
-η = 0                       is the Nash equilibrium at the equator under stated assumptions
+η = 0                       enforced conditional equilibrium under stated assumptions
 ```
 
 The equator exists. It is the unique balance maximum and the theorem-facing minimum of the chosen potential. The `η = 0` and extraction claims are structural/game-theoretic translations under stated assumptions, not free-floating proof under every possible parameterization. [A/S]

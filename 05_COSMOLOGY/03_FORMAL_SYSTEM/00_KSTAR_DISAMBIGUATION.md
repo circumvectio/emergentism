@@ -41,7 +41,7 @@ $$K^* = \sum_{i=1}^{N} \max(0, \Delta\nu_i^{\text{ext}})$$
 **Status:** [S] Structural — well-defined within the game-theoretic framework.
 
 **Key results:**
-- η = 0 is the unique Nash equilibrium at the equator (Convergence 24, Theorem 4.2)
+- η = 0 is the enforced conditional equilibrium at the equator (Convergence 24, Theorem 4.2; bounded by the EFR 33 / Green-Laffont caveat)
 - η > 0 is self-defeating — extraction strategies are strictly dominated (Convergence 24, Theorem 3.1)
 - η = 0 is structural, not moral — it's what the geometry requires, not what a commandment demands
 

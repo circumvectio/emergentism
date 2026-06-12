@@ -93,7 +93,8 @@ Equivalently, B(ν) = 2ν/(1 + ν²). This achieves its unique maximum at ν = 1
 - Extraction is negative-sum: ΣB decreases (victim also loses)
 - Total balance loss is quadratic: ΔB ≈ −(Δν)²/2
 
-**The unique Nash equilibrium at the equator is η = 0** (no extraction).
+**At the equator, η = 0 is the enforced conditional equilibrium** (no extraction
+inside the coupled, long-horizon game).
 
 **Status:** [S] Structural. Passed game-theory specialist review.
 

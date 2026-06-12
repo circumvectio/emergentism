@@ -80,7 +80,7 @@ Read the entire corpus (8.6M words, 14,000+ files). Look through the derivation 
 
 **#21. Extraction is negative-sum.** Not because it's immoral. Because B = sin θ has its unique maximum at ν = 1. The extractor loses too.
 
-**#22. η = 0 is the Nash equilibrium under the equatorial multiplicative model.** The warrior at φ = ν = 1 cannot improve by extracting without reducing balance. The algebra supports this within the stated assumptions.
+**#22. η = 0 is the enforced conditional equilibrium under the equatorial multiplicative model.** The warrior at φ = ν = 1 cannot improve by extracting without reducing balance inside the stated profile. The algebra supports this only with the stated assumptions: real coupling, long horizon, and enforcement against hidden extraction.
 
 **#23. Balance is not wisdom. It's arithmetic.** The equator is the Hamiltonian minimum. The cheapest way to exist.
 

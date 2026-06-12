@@ -396,11 +396,11 @@ Let H = φ + ν be the Hamiltonian. H ≥ 2, with equality at φ = ν = 1. The g
 
 ### Read it as ethics
 
-B = sin θ = 2ν/(1 + ν²) has its **unique maximum at ν = 1**. Moving ν away from 1 — in either direction — reduces B. Extraction (shifting ν away from 1 for any party) is negative-sum. η = 0 is the Nash equilibrium. Not a commandment. A geometric fact.
+B = sin θ = 2ν/(1 + ν²) has its **unique maximum at ν = 1**. Moving ν away from 1 — in either direction — reduces B. Extraction (shifting ν away from 1 for any party) is negative-sum inside the equatorial profile. `η = 0` is the enforced conditional equilibrium there, not a commandment and not a bare-geometric guarantee.
 
 ### Read it as system architecture
 
-(φ − ν)² → 0. The distance between coherence and viability shrinks because the Hamiltonian minimum is at φ = ν = 1. Systems closer to the minimum are more stable, last longer, reproduce more, and outcompete systems that aren't. This is F₅ — the ektropic force. The tendency of reality toward balance is mathematically necessary. A square cannot be negative.
+(φ − ν)² → 0. The distance between coherence and viability shrinks because the Hamiltonian minimum is at φ = ν = 1. In this framework reading, systems closer to the minimum are favored where balance contributes to persistence, reproduction, and cooperation. This is F₅ — the ektropic / ordering lens. The model has a mathematical minimum; the world-level convergence claim remains tiered and conditional.
 
 ### The philological confirmation
 
