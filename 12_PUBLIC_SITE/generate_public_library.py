@@ -26,7 +26,7 @@ Run from the repository root or from 12_PUBLIC_SITE:
 STATUS 2026-06-10 — THE SOURCE BUNDLE IS ABSENT. `docs/handoff/*-public/` does not
 exist in the tree, so this generator currently EXITS with "Missing public-library
 source(s)" and CANNOT regenerate. The 308 generated pages under the wing routes are
-therefore FROZEN ARTIFACTS, and canon-fidelity passes have HAND-PATCHED five surfaces
+therefore FROZEN ARTIFACTS, and canon-fidelity passes have HAND-PATCHED public surfaces
 directly (the only available lever):
 
   - papers/paper-h-dimensional-cosmological/  : "S³ = S² × S¹" -> Hopf bundle over S²
@@ -49,13 +49,17 @@ directly (the only available lever):
         `P_node,i` / `P_node,H` and changed bare `P = 1` value-language to `P∞`.
   - trinity/13-the-wave-packet/               : tightened equipotentiality to
         `P∞ = φ·ν = 1` and removed ambiguous "maximum P" language.
+  - will/00-the-core-conjecture/              : mirrored the R6 objective/constraint
+        reconciliation; replaced the withdrawn "reality maximizes balance" lead with
+        viable completion as constrained option-cone widening under balance and
+        non-extraction.
 
 BEFORE ANY FUTURE REGEN: restore the handoff bundle AND apply these same
 corrections to the SOURCE markdown (formal-16 / formal-17 / formal-33 /
-trinity-13 / paper-H public bundle files), or this generator will overwrite the
-hand-patches and reintroduce the over-claims. Also fix the title-doubling: when
-a source heading already ends in "— Emergentism", `page_shell(title=...)`
-appends a second one.
+trinity-13 / paper-H / teleology core-conjecture public bundle files), or this
+generator will overwrite the hand-patches and reintroduce the over-claims. Also
+fix the title-doubling: when a source heading already ends in "— Emergentism",
+`page_shell(title=...)` appends a second one.
 """
 
 from __future__ import annotations

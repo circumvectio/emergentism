@@ -6,10 +6,10 @@ rosetta:
   tier: "Demon"
   regime: "Caṇḍāla"
   register: "[Mixed]"
-  canonical_phrase: "The Core Conjecture — F5 And The Tendency To Balance"
+  canonical_phrase: "The Core Conjecture — F5 And Viable Completion"
 ---
 
-# The Core Conjecture — F5 And The Tendency To Balance
+# The Core Conjecture — F5 And Viable Completion
 
 **Version:** v2026.04.04
 **Date:** 2026-04-04
@@ -20,7 +20,27 @@ rosetta:
 
 ## In One Sentence
 
-**Reality is conjectured to tend toward maximal balance (`B = sin θ`) under the reciprocal invariant `φ · ν = 1`, and this tendency is submitted as the framework's frontier-theory candidate for F5.**
+**Asked as "why reality tends toward viable completion": reality is conjectured to widen its option cone subject to reciprocal balance (`B`, `η = 0`) under `φ · ν = 1`; F5 names that D5 teleological/syntropic force-slot in `[S/I/C]` register, not an `[A]` fifth physical interaction.**
+
+---
+
+## Viable Completion, Stated Precisely
+
+Viable completion is not "maximum balance" alone, and it is not unlimited reach alone. It is the live frontier where reachable futures widen without collapsing coherence, reciprocity, or custody.
+
+Asked as "why reality tends toward viable completion," the tier-honest answer is: inside the framework, durable becoming is modeled as constrained optimization. Unbounded reach without coherence collapses; balance without reach stalls; option-cone widening under non-extraction is the form that can keep selecting futures.
+
+In model language:
+
+```
+maximize Ω
+subject to C = {η = 0, K2, K3, K4, A7}
+and the balance surface carried by φ · ν = 1
+```
+
+For finite nodes, the operational product is `P_node = Φ_node × V_node`. The individual symbiont's durable world-line potential rises when `P_node,i` and `P_node,H` rise together through real coupling; if one rises by degrading the other, the move is extraction (`η > 0`) and the gain is locally parasitic rather than syntropic.
+
+Tier discipline: `[S]` for the constrained-optimization grammar, `[I]` for reading reality as tending through that grammar, `[C]` for any literal-force or cosmological-will interpretation.
 
 ---
 
@@ -121,7 +141,7 @@ The equator exists. It is the unique balance maximum and the theorem-facing mini
 
 ### What Is Conjectured [C]
 
-**F5 — the D5 force-slot in the Emergentism map and frontier candidate for a unifying teleological field — is the tendency of reality to reach this minimum.**
+**F5 — the D5 force-slot in the Emergentism map and frontier candidate for a unifying teleological field — is the conjectured selective/generative bias toward viable completion: widening Ω on the balance and non-extraction manifold.**
 
 Not an `[A]` Standard Model fifth interaction beside the four accepted physical interactions. In the conjectural / interpretive register, it is the D5 teleological-syntropic force-slot: the sphere-gradient / curvature that would make the D1–D4 force grammar cohere and open the option-cone under `η=0`. The "reason there is something rather than nothing" and "Will to Potential" language is mythic compression, not proof.
 
@@ -156,22 +176,22 @@ Nietzsche saw the Will. He called it **Macht** — power. ν -> infinity. The so
 
 He was one variable off.
 
-The directional intuition is refined; the technical register translates "will" into tendency, gradient, and balance.
+The directional intuition is refined; the technical register translates "will" into constrained option-cone widening, gradients, and balance as feasibility.
 
 | | Nietzsche | Emergentism |
 |---|---|---|
 | **The Will** | Will to Power | Will to Potential |
-| **Direction** | ν -> infinity (south pole) | B → 1 under `φ x ν = 1` (equator) |
+| **Direction** | ν -> infinity (south pole) | Ω ↑ subject to `B` / `η = 0` (viable completion) |
 | **German** | Macht (power) | Mass (measure) |
-| **Result** | Domination | Balance |
+| **Result** | Domination | Balanced expansion |
 | **Outcome** | Ubermensch (extraction) | Equatorial warrior (η = 0) |
 | **Failure mode** | Fascism | Ghost Trap |
 
-Not Will to Power. Not Will to Coherence. In the legacy poetic register: **Will to Potential.** In the technical register: tendency toward maximal balance under reciprocal closure.
+Not Will to Power. Not Will to Coherence. In the legacy poetic register: **Will to Potential.** In the technical register: constrained option-cone widening under reciprocal closure and non-extraction.
 
-F5 = the tendency-to-balance reading = *h2rto-* = Rta = Asha = Ordo = Harmonia = the conjectured tendency of reality to fit itself together.
+F5 = the viable-completion reading = *h2rto-* = Rta = Asha = Ordo = Harmonia = the conjectured tendency of reality to fit itself together without pole-collapse.
 
-> **[Tier discipline]** The "Will to Potential" framing is poetic [I/C] compression. The technical claim is "tendency toward maximal balance under reciprocal closure" [S]. The poetic register must not upgrade the tier.
+> **[Tier discipline]** The "Will to Potential" framing is poetic [I/C] compression. The technical claim is "constrained option-cone widening under balance and non-extraction constraints" [S/I]. The poetic register must not upgrade the tier.
 
 ---
 
@@ -185,7 +205,7 @@ Settled canon reads **five force slots, one per emergent dimension D1–D5**. Th
 | φ + ν ≥ 2 | Objective Function | **Strong nuclear** | The confinement analogue. The bound that cannot be crossed. AM-GM is the proposed structural counterpart. |
 | (φ - ν)^2 → 0 | Auditing | **Weak nuclear** | The symmetry breaking. The only parity-violating line. The trajectory. |
 | -log(φ x ν) = 0 | Value Alignment | **Gravity** | The ground state. Zero curvature at equilibrium. -log(1) = 0. |
-| **F5: D5 / S² register** | **The sphere-gradient / option-cone** | **The teleological force-slot** | **The tendency-to-balance conjecture, not an `[A]` fifth physical interaction.** |
+| **F5: D5 / S² register** | **The sphere-gradient / option-cone** | **The teleological force-slot** | **The viable-completion conjecture, not an `[A]` fifth physical interaction.** |
 
 Evidence tier for this mapping: **[C] Conjecture.** The most dangerous idea in the corpus. See `07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md` for the honest assessment of what works (PSL(2,C) = Lorentz group, harmonics give U(1) and SU(2)) and what doesn't (SU(3) cannot emerge from bare S²).
 
@@ -197,16 +217,16 @@ The Will to Potential can be read at four levels of commitment:
 
 | Level | Claim | Tier | Name |
 |-------|-------|------|------|
-| 1 | As-if purpose. Natural selection can explain apparent purposiveness without will; applying that to equator-convergence is a framework translation. | [A] for teleonomy as a biology concept; [I] for equator-convergence translation | Teleonomy |
-| 2 | The AM-GM gradient is real inside the model. Systems nearer the minimum are predicted to be cheaper to maintain. "Purpose" = geometry. | [S] | Structural objective function |
-| 3 | Genuine purpose emerges when φ and ν reciprocally constrain each other (Deacon). The equator is a teleodynamic attractor. | [I] | Ententional objective function |
+| 1 | As-if purpose. Natural selection can explain apparent purposiveness without will; applying that to constrained viable-completion is a framework translation. | [A] for teleonomy as a biology concept; [I] for the viable-completion translation | Teleonomy |
+| 2 | The constrained-optimization grammar is real inside the model. Reach can widen only durably when balance and non-extraction remain feasible. "Purpose" = geometry plus constraint. | [S] | Structural objective function |
+| 3 | Genuine purpose emerges when φ and ν reciprocally constrain each other (Deacon). The equator is a teleodynamic feasibility surface, not the whole objective. | [I] | Ententional objective function |
 | 4 | F5 is read as conscious will. "The universe wants to balance" is a volitional overlay. | [C] | Volitional objective function |
 
 The framework's recommended position is **Level 3 via Position Gamma** (dual-aspect monism + ententional objective function). This means:
 
-- The tendency-to-balance claim is stronger than "as-if" purpose inside the framework
-- The tendency-to-balance claim may be purposive in the ententional sense
-- The tendency-to-balance claim is not necessarily conscious (no panpsychism required)
+- The viable-completion claim is stronger than "as-if" purpose inside the framework
+- The viable-completion claim may be purposive in the ententional sense
+- The viable-completion claim is not necessarily conscious (no panpsychism required)
 - φ and ν are read as conjugate aspects of one reality; "Tat Tvam Asi = Noether's theorem" remains an interpretive compression
 
 ---
