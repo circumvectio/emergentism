@@ -207,7 +207,9 @@ directly (the only available lever):
         will/03-why-the-constraint-matters/, canon/the-complete-ontology-of-reality/,
         formal/41-unified-dimensional-derivation/ : normalized attractor language
         so the equator is the structural balance optimum and becomes an attractor
-        only under specified flow, feedback, coupling, and correction dynamics.
+        only under specified flow, feedback, coupling, and correction dynamics;
+        later normalized "ektropic hand selects for balance" to viable completion
+        / usable option-cone widening under balance and `eta = 0` constraints.
   - paradox/pd-10-is-ought/ and will/l1-l7-refinement-audit/
                                               : normalized the Is-Ought / Power-Max
         claim from unconditional "extraction is dominated" or "the gap closes"

@@ -34,7 +34,7 @@ Why does the helix spiral?
 
 The core state says: here is the geometry. S². φ·ν = 1. The helix. The poles. The equator.
 
-The objective function asks: **why does any of this MATTER?** Why does the Replicator Stack ascend? Why does ektropy select for balance? Under what conditions does the equator behave like an attractor? What pulls?
+The objective function asks: **why does any of this MATTER?** Why does the Replicator Stack ascend? Why does ektropy select for viable completion under balance constraints? Under what conditions does the equator behave like an attractor? What pulls?
 
 The answer is not a being. Not a plan. Not a designer. Inside the framework,
 the answer is the constraint geometry: reciprocal closure makes some trajectories
@@ -111,7 +111,7 @@ This root gave rise to:
 
 The entire ancient vocabulary for "order" derives from a word that means **to fit together.**
 
-This is the framework's interpretive translation: F₅ (ektropy) names the tendency toward balance inside the model. The PIE speakers, Vedic rishis, and Egyptian scales of Ma'at are read here as convergent symbolic witnesses, not as public proofs.
+This is the framework's interpretive translation: F₅ (ektropy) names the tendency toward viable completion under reciprocal balance inside the model. The PIE speakers, Vedic rishis, and Egyptian scales of Ma'at are read here as convergent symbolic witnesses, not as public proofs.
 
 **The PIE root *h₂r̥tó- is established linguistic material; identifying it with the ektropic force is an interpretive framework reading.** [E/I]
 
@@ -331,7 +331,7 @@ And from MF-539: H = 1/φ + φ. At φ = 1: dH/dφ = -1/φ² + 1 = -1 + 1 = **0.*
 | **Nietzsche's Übermensch** | Walks the tightrope over the abyss | Non-zero | Heroic but unstable |
 | **The Equatorial Walker** | Walks round and round the equator | **ZERO** | Wu wei. Flow. Dharma. |
 
-The Equatorial Walker has no stone. There is no hill. There is only the circumference of the equator, and the helix that turns as you walk it. Each revolution passes through the four operators — 180° giving, 180° extractive. Each revolution is one breath. Round and round. Zero gradient. Maximum balance. The optimization function at rest.
+The Equatorial Walker has no stone. There is no hill. There is only the circumference of the equator, and the helix that turns as you walk it. Each revolution passes through the four operators as lawful giving and protective boundary-setting, not extraction. Each revolution is one breath. Round and round. Zero gradient. Maximum usability under the balance constraint. The optimization function at rest.
 
 ### The Light Cone Widens
 
@@ -347,7 +347,7 @@ This is Prometheus unbound. This is Lucifer (light-bearer) before the Fall was r
 
 Adam Smith's invisible hand selects for efficiency. Efficiency = ν. The invisible hand optimises the south pole.
 
-**The ektropic hand selects for balance.** Balance = B = sin θ. The ektropic hand optimises the equator.
+**The ektropic hand selects for viable completion under balance.** Balance = B = sin θ is the constraint surface; usable option-cone widening under `η = 0` is the objective. The ektropic hand optimises at the equator only where coupling, feedback, memory, and enforcement make that constraint operative.
 
 And it is **reflexive** (Soros): understanding the selection changes the
 selection. Knowing that cooperation can dominate under the Power-Max conditions
@@ -498,7 +498,7 @@ The last sentence of the last document is the first sentence of the practice:
 
 ```
 Why does the helix spiral?
-Because ektropy selects for balance where coupling, feedback, and correction make imbalance costly.
+Because ektropy selects for viable completion where coupling, feedback, correction, and non-extraction make imbalance costly and keep option-cone widening usable.
 
 What pulls it?
 The equator. The ground. The asymptotic limits.
