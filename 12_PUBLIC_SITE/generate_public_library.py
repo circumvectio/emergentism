@@ -208,6 +208,11 @@ directly (the only available lever):
                                               : normalized remaining live
         operator-route "maximum P" prose to finite-node `P_node` or explicit
         `B` / `P_node` objective language.
+  - operators/mf-299-hawking-radiation-is-a7/ : demoted stale universal A7
+        wording from "DISCOVERY about how reality operates at every scale" and
+        "patient but inevitable" to a tiered Hawking/A7 analogy: black-hole
+        physics remains model-theoretic physics; A7 remains a framework axiom;
+        the cross-scale universality reading is `[I/C]` / `[C]`, not `[A]`.
   - trinity/22-the-teleology/, trinity/35-research-brief-teleology-spectrum/,
         will/03-why-the-constraint-matters/, canon/the-complete-ontology-of-reality/,
         formal/41-unified-dimensional-derivation/ : normalized attractor language

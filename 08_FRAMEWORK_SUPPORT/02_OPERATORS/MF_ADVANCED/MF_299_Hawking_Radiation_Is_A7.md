@@ -25,7 +25,10 @@ rosetta:
 
 **Emergentism.org · VIVEKA Mathematical Foundations**
 **Depends on:** MF-283 (Orthogonality Theorem), MF-292 (Bekenstein Ceiling), MF-296 (Gravity Is Time), A7 (The Correction)
-**Evidence tier:** [I] for Hawking radiation theory and black hole thermodynamics; [I]/[C] for A7 identification and cosmological self-correction language
+**Evidence tier:** [A/S] for equations inside accepted black-hole thermodynamics
+and QFT-in-curved-spacetime models; [C] for direct astrophysical observation of
+Hawking radiation; [I]/[C] for A7 identification and cosmological
+self-correction language
 **Purpose:** Translate Hawking radiation as an analogy for A7 (self-correction) at extreme capture boundaries.
 
 > **Discipline note (2026-04-26):** Hawking radiation is established theoretical physics; A7 is the framework's self-correction axiom. Their identification is interpretive, not proof that physics enforces the framework.
@@ -70,7 +73,12 @@ The black hole's "institutional infrastructure" is spacetime itself. Any opposit
 
 ### 2.1 Hawking's Discovery (1974)
 
-Quantum field theory near the event horizon predicts particle-antiparticle pair production. One particle falls in, one escapes. The escaping particle carries energy away from the black hole. The black hole loses mass. Over cosmologically long timescales, the black hole evaporates completely. [S]
+Quantum field theory near the event horizon predicts particle-antiparticle
+pair production. One particle falls in, one escapes. The escaping particle
+carries energy away from the black hole. The black hole loses mass. Within the
+standard model calculation, over cosmologically long timescales, the black hole
+evaporates completely. `[A/S]` inside the accepted theoretical model; direct
+astrophysical observation remains `[C]`.
 
 The temperature of Hawking radiation:
 
@@ -88,27 +96,37 @@ The information paradox: is the information captured by a black hole permanently
 
 If yes: unitarity (the fundamental principle that information is conserved in quantum mechanics) is violated. Physics breaks at a fundamental level.
 
-If no: the information MUST be encoded in the Hawking radiation. The emitted photons carry the captured information back to the universe.
+If no: the information must be encoded in correlations of the outgoing
+radiation or in a broader unitary description. In that model family, the
+emitted quanta participate in returning the captured information to the
+universe.
 
-Current consensus (following Page curve calculations, island formula, ER=EPR): information IS returned. Unitarity is preserved. The black hole is a temporary information vault, not a permanent one. [E for Page curve; T for island formula interpretation]
+Many current Page-curve, island-formula, and related quantum-gravity model
+calculations preserve unitarity by making the radiation carry the relevant
+correlations. In this document, that is enough to support the analogy of return;
+it is not a settled public proof that every physical capture process is
+framework-A7. `[A/S]` for the model calculations; `[I/C]` for the framework
+translation.
 
 ### 2.3 A7 Identification
 
-A7 states: any encoding without self-correction will degrade through institutional capture. The axiom requires self-correction at every scale.
+A7 states: any encoding without self-correction will degrade through capture in
+the register where that encoding depends on a carrier. In the framework, the
+axiom requires correction wherever capture would otherwise make the carrier
+non-viable. It does **not** prove, by itself, that every physical scale obeys
+one identical A7 law.
 
-Hawking radiation IS A7 at the gravitational scale:
+Hawking radiation is read here as an A7 analogy at the gravitational scale:
 
 ```
-A7 at D5 (social):      Parasitic egregores eventually collapse
+A7 reading at D5:       Parasitic egregores tend toward collapse
                          (unsustainable extraction, carrier depletion)
-A7 at D4 (physical):    Black holes eventually evaporate
+A7 reading at D4:       Black holes evaporate in the accepted Hawking model
                          (Hawking radiation, information return)
-A7 at D3 (biological):  Cancer eventually kills host
-                         (which IS the self-correction — death of captured system
-                          prevents permanent propagation)
-A7 is universal:        No capture is permanent.
-                         The circuit MUST complete.
-                         Information MUST return.
+A7 reading at D3:       Cancer can kill the host, or be checked by apoptosis,
+                         immunity, treatment, or ecological limits
+Candidate universality:  No capture remains viable forever without correction.
+                         This is an [I/C] wager, not an established law.
 ```
 
 ### 2.4 The Timescale
@@ -142,19 +160,25 @@ This patience is a property, not a bug. A7 does not require fast correction. In 
 | D5 (Social) | Parasitic egregore | Carrier depletion, revolution, collapse | Decades to centuries |
 | D6 (Civilisational) | Civilisational capture | Civilisational collapse and renewal | Centuries to millennia |
 
-At every scale: capture occurs. Self-correction follows. The timescale varies enormously. The pattern is invariant.
+Across these examples: capture occurs, and some correction or terminal limit can
+follow. The timescale varies enormously. The pattern is a framework reading
+`[I/C]`, not an invariant law already established at every scale.
 
-### 3.2 The Universality Claim
+### 3.2 The Universality Wager
 
-A7 is not a framework CHOICE. It is a DISCOVERY about how reality operates at every scale:
+A7 is a framework axiom that becomes a universality wager when read across
+physical, biological, social, and civilisational scales:
 
 - Radioactive decay: the nucleus cannot permanently hold excess energy. It radiates.
 - Spontaneous emission: the atom cannot permanently hold an excited state. It emits.
-- Apoptosis: the cell cannot permanently avoid its programmed death. It dies.
-- Hawking radiation: the black hole cannot permanently hold captured information. It evaporates.
-- Civilisational collapse: the empire cannot permanently extract without return. It falls.
+- Apoptosis and immunity: biological capture can be corrected, contained, or can kill the carrier.
+- Hawking radiation: the accepted model says the black hole evaporates over extreme timescales.
+- Civilisational collapse: extractive regimes can fall when carrier depletion outruns correction.
 
-The same pattern. At every scale. A7 is as fundamental as the second law — and may be derivable FROM the second law (information return is thermodynamically required for global entropy maximisation, since information trapped in a black hole represents inaccessible entropy that retards global equilibration).
+The same pattern may recur across scales, but that recurrence is not upgraded
+to `[A]`. The stronger thesis — that A7 is as fundamental as the second law or
+derivable from thermodynamic/information principles — remains `[C]` until a
+formal derivation and empirical discriminators exist.
 
 ---
 
@@ -170,17 +194,21 @@ The black hole captures the projection. It does not capture the source. The meas
 
 [I] Hawking radiation is read here as re-projecting this imaginary content onto the real axis over time. The information returns because it was not truly captured in the D5 sense — only its real-axis shadow was. The shadow dissolves (evaporation), and the information re-emerges.
 
-This is [T/S]. But it aligns with the ER=EPR conjecture (Maldacena-Susskind): entanglement (D5 coupling) connects the black hole interior to the radiation. The coupling IS the imaginary-axis connection that the real-axis horizon cannot sever.
+This is `[I/C]`. It resonates with the ER=EPR conjecture
+(Maldacena-Susskind): entanglement can relate the black hole interior to the
+radiation. In the framework analogy, that coupling is read as the imaginary-axis
+connection that the real-axis horizon cannot sever; the analogy does not settle
+the physics.
 
 ---
 
 ## V. FALSIFICATION
 
-**F299-1:** If black holes are shown to NOT evaporate (Hawking radiation is experimentally or theoretically disproven), the physical A7 identification fails. Note: Hawking radiation has not been directly observed due to the extraordinarily low temperatures involved, so this remains theoretically predicted [E for the theory, not yet [S] for direct observation].
+**F299-1:** If black holes are shown to NOT evaporate (Hawking radiation is experimentally or theoretically disproven), the physical A7 identification fails. Note: Hawking radiation has not been directly observed due to the extraordinarily low temperatures involved, so this remains `[A/S]` inside the accepted theoretical model and `[C]` as direct astrophysical observation.
 
 **F299-2:** If information IS permanently destroyed in black holes (unitarity is violated), the information-return claim fails and A7 at D4 is not enforced.
 
-**F299-3:** If a physical system is demonstrated to permanently capture information without any return mechanism at any timescale, A7 universality fails.
+**F299-3:** If a physical system is demonstrated to permanently capture information without any return mechanism at any timescale, the strong universality reading of A7 fails.
 
 **F299-4:** If Hawking radiation is shown to carry NO information (purely thermal, no correlations encoding the infallen content), the self-correction interpretation fails.
 
@@ -188,13 +216,25 @@ This is [T/S]. But it aligns with the ER=EPR conjecture (Maldacena-Susskind): en
 
 ## VI. THE SENTENCE
 
-[I] A black hole is read here as the ultimate Red Demon — maximum extraction, zero return, complete circuit break. Hawking radiation is A7 at the gravitational scale in this analogy: the universe's built-in self-correction that suggests no capture is permanent, no information is permanently lost, no circuit remains forever broken. The evaporation timescale is cosmological — 10⁶⁷ years for a stellar black hole — but the eventuality is framed as absolute. A7 is patient but inevitable in this reading. At every D-level, the same pattern: capture, then correction. Radioactive decay, spontaneous emission, apoptosis, Hawking radiation, civilisational collapse — A7 operating at D1 through D6. The universe is read as disallowing permanent extraction without return. Even the event horizon is temporary. Even the darkest capture must eventually radiate. Zero-Sum Resolution Equation.
+[I/C] A black hole is read here as the ultimate Red Demon — maximum extraction,
+zero return, complete circuit break. Hawking radiation is an A7 analogy at the
+gravitational scale: in the accepted model, even extreme capture is not simply
+permanent, and information-return programs suggest that the circuit may be
+recoverable. The evaporation timescale is cosmological — about 10⁶⁷ years for a
+stellar black hole — so the analogy is patient, not operationally immediate.
+Across D-level examples the framework reads a recurring grammar: capture
+creates correction pressure or carrier failure. Radioactive decay, spontaneous
+emission, apoptosis/immunity, Hawking radiation, and civilisational collapse are
+not one proved mechanism; they are a disciplined analogy family for A7. The
+universe is read as resisting permanent extraction without return, but that
+reading remains tiered, falsifiable, and smaller than the physics it borrows.
+Zero-Sum Resolution Equation.
 
 ---
 
 *MF-299 | VIVEKA Mathematical Foundations | February 2026*
 *Even black holes must give back.*
-*A7 is patient but inevitable.*
+*A7 is patient in this analogy.*
 
 ## Execution Surface
 
