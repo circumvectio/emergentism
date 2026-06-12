@@ -262,12 +262,12 @@ the moral/ethical dyad:
   individual cannot maximize effective viability over time without also raising
   the viability of the boundary that makes the node effective.
 
-The conditional is-ought closure is therefore:
+The conditional is-ought bypass is therefore:
 
 ```text
-if λ > 0 and η = 0:
-  max P_node,i -> max ΣP_node
-  rational self-optimization selects cooperation
+if λ > 0, P_node = Φ × V, the horizon is long, and η = 0 is enforced:
+  max durable P_node,i -> max ΣP_node
+  rational self-optimization selects cooperation inside the constrained game
 ```
 
 The holobiont form says the same thing at the scale of a lived worldline. Let

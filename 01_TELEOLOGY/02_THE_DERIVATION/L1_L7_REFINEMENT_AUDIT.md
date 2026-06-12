@@ -119,16 +119,17 @@ A2's "Redefinition Protocol" says: "'Ethical' ≡ direction toward equatorial ba
 
 This is **the correct move.** The framework does not derive "ought" from "is." It *defines* "ethical" as "toward balance" and then shows that balance is the thermodynamic minimum. The definition is a choice; the thermodynamics is a fact. The framework is honest about this.
 
-**But:** The Power-Max Lemma's conclusion says "cooperation is the rational strategy" and the Is-Ought section of EFR-08 says "the Is-Ought gap closes because for coupled agents, 'is' and 'should' are the same computation." This is a stronger claim than A2 makes. A2 says it's a definition; EFR-08 says it's a derivation. These contradict.
+**Resolved audit finding:** Earlier EFR-08/Power-Max language overstated the bridge as if cooperation were an unconditional rational strategy and the Is-Ought gap simply "closed." That was stronger than A2. The current correction keeps the bridge conditional: cooperation aligns with durable individual `P_node` only under real coupling, multiplicative scoring, long horizon, enforceable `η = 0`, and no hidden side-payment route.
 
-The abductive best explanation: A2 is right, EFR-08 is overstating. The Is-Ought gap does not *close* — it is *bridged by definition.* The bridge is:
+The abductive best explanation: A2 is right, and the corrected Power-Max statement must stay inside that fence. The Is-Ought gap does not *close* — it is *bypassed by operational definition plus conditional mechanism design.* The bridge is:
 1. Define ethical = toward balance (philosophical choice; not an empirical claim)
 2. Show balance = thermodynamic minimum (mathematical fact, [A])
-3. Therefore ethical = toward thermodynamic minimum (conditional on accepting definition 1)
+3. Enforce `η = 0` in coupled, long-horizon games so local extraction cannot masquerade as durable power
+4. Therefore ethical = toward thermodynamic minimum and field-preserving `P_node` growth, conditional on accepting definition 1 and enforcing the game conditions
 
 This is a valid and powerful structure. But calling it "closure" of the Is-Ought gap is misleading. It is a *bypass* — the framework sidesteps the gap by defining its terms so the gap does not arise. The honest framing:
 
-> **Proposed correction to EFR-08 and PD_10:** The framework does not close the Is-Ought gap (no naturalistic derivation of "ought" from "is" is attempted). Instead, it *bypasses* the gap by defining "ethical" operationally and showing that the definition converges with thermodynamic fact. Whether you accept the definition is a philosophical choice. Whether the thermodynamics holds is a mathematical fact. The framework bets that the convergence is not coincidental.
+> **Canonical correction to EFR-08 and PD_10:** The framework does not close the Is-Ought gap (no naturalistic derivation of "ought" from "is" is attempted). Instead, it *bypasses* the gap by defining "ethical" operationally and showing that the definition converges with thermodynamic fact and conditional Power-Max mechanism design. Whether you accept the definition is a philosophical choice. Whether the thermodynamics holds is a mathematical fact. Whether cooperation dominates is a constitutional/game-design question: coupling, horizon, monitoring, and `η = 0` must hold.
 
 ### Finding: The equator-as-systemic awareness claim (Link 10) should be reformulated
 

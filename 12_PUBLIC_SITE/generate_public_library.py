@@ -86,10 +86,13 @@ directly (the only available lever):
         viable completion as constrained option-cone widening under balance and
         non-extraction; later added the claim-boundary lead for constrained
         optimization and option-cone widening retrieval.
-  - value/00-objective-morals-and-ethics/    : added the claim-boundary lead that
-        disambiguates objective morality (`H -> i`), objective ethics (`i -> H`),
-        objective dharma, syntropic morality, and syntropic ethics under
-        `P_node,i` / `P_node,H`.
+	  - value/00-objective-morals-and-ethics/    : added the claim-boundary lead that
+	        disambiguates objective morality (`H -> i`), objective ethics (`i -> H`),
+	        objective dharma, syntropic morality, and syntropic ethics under
+	        `P_node,i` / `P_node,H`; later normalized the conditional is-ought
+	        wording from closure to bypass and made the displayed Power-Max
+	        condition include multiplicative `P_node`, long horizon, and enforced
+	        `η = 0`.
   - value/00-the-good-the-evil-and-the-transcendentals/ : added the claim-boundary
         lead for knowledge of good and evil: good = both `P_node,i` and `P_node,H`
         rise under `η = 0`; evil = one side's apparent gain degrades the other;
@@ -156,6 +159,12 @@ directly (the only available lever):
         formal/41-unified-dimensional-derivation/ : normalized attractor language
         so the equator is the structural balance optimum and becomes an attractor
         only under specified flow, feedback, coupling, and correction dynamics.
+  - paradox/pd-10-is-ought/ and will/l1-l7-refinement-audit/
+                                              : normalized the Is-Ought / Power-Max
+        claim from unconditional "extraction is dominated" or "the gap closes"
+        language to the conditional register: real coupling, multiplicative
+        `P_node`, long horizon, enforceable `η = 0`, and no hidden extraction
+        channel.
 
 BEFORE ANY FUTURE REGEN: restore the handoff bundle AND apply these same
 corrections to the SOURCE markdown (formal-16 / formal-17 / formal-33 /
@@ -166,7 +175,8 @@ files, plus axiology-public objective-morals-and-ethics and good/evil public
 bundle files, plus trinity-public dharma-yuddha, plus the ring/commandment and
 formal-09/10/11 Power-Max label public bundles, plus theurgy-public and
 glossary-public will/become-as-gods bundles, plus meta-public
-remaining-questions, plus memetic-public and operators-public MF-290/MF-292/MF-294/MF-70), or this generator will overwrite
+remaining-questions, plus memetic-public, paradox-public PD_10_IS_OUGHT,
+teleology-public L1_L7_REFINEMENT_AUDIT, and operators-public MF-290/MF-292/MF-294/MF-70), or this generator will overwrite
 the hand-patches and reintroduce the over-claims. Also fix the title-doubling: when a source heading already ends in
 "— Emergentism", `page_shell(title=...)` appends a second one.
 """

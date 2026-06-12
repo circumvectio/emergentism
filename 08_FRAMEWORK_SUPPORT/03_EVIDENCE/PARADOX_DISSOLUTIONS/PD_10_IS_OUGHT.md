@@ -22,7 +22,7 @@ rosetta:
 # PD_10: THE IS-OUGHT GAP BYPASSED
 
 **Directory:** `02_PARADOX_DISSOLUTIONS/`
-**Evidence Tier:** `[I]` (Interpretive) for the is-ought bypass claim; `[S]` (Structural) for the mathematical content (extraction is dominated under the accepted constraints)
+**Evidence Tier:** `[I]` (Interpretive) for the is-ought bypass claim; `[S]` (Structural) for the conditional Power-Max content under real coupling, long horizon, enforced `η = 0`, and no hidden side-payments
 **Core Proof:** The Power-Max Lemma
 **Canonical Number:** PD_10 (see [PD_00_INDEX](PD_00_INDEX.md) for the definitive numbering table)
 
@@ -30,7 +30,7 @@ rosetta:
 
 > **Companion document:** A Lens-side consolidation exists at `ISOUGHT_CONSOLIDATED.md` (historical Lens-side archive reference), which merges the self-referential closure argument with the Power-Max Lemma approach. This file (PD_10) remains the canonical indexed entry.
 
-> **Evidence Tier: [S/I].** The Power-Max Lemma structurally supports the claim that extraction is dominated under the accepted constraints (`P_node = Φ × V`, `η = 0`). The broader Is-Ought move is an operational bypass, not a naturalistic derivation: the framework defines "ethical" as movement toward balance, then argues that this definition converges with the structural mathematics. See [08_EFR_POWER_MAX_LEMMA.md](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md) and [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), S7.
+> **Evidence Tier: [S/I].** The Power-Max Lemma structurally supports the claim that durable individual optimization aligns with collective optimization only under its accepted constraints (`P_node = Φ × V`, real coupling, long horizon, enforceable `η = 0`, and no hidden extraction channel). The broader Is-Ought move is an operational bypass, not a naturalistic derivation: the framework defines "ethical" as movement toward balance, then argues that this definition converges with the structural mathematics. See [08_EFR_POWER_MAX_LEMMA.md](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md) and [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), S7.
 
 > **Claim Boundary:** `[S/I]` This document does not derive an unconditional ought from bare facts. It gives a conditional operational bypass inside the accepted dimensional axioms and ethical definition. Reject those premises and the classical Humean gap remains live.
 
@@ -79,15 +79,15 @@ Inside the framework, one **ought** to act toward the equator not because someon
 
 ### The Power-Max Lemma (Dimensional Form)
 
-**Claim:** Extraction (↓Φ, ↑ν) is a dominated strategy because it violates dimensional sustainability.
+**Claim:** Extraction (↓Φ, apparent ↑V for the extractor) is not categorically dominated in every possible game. It is ruled out inside the Power-Max game because durable `P_node,i` is evaluated under real coupling, a long horizon, and enforced `η = 0`; hidden or one-shot extraction can raise a local payoff, but it degrades the field that carries future viability.
 
 **Dimensional Proof:**
-1. At D4, the witness sees that extraction reduces global Φ while increasing local ν
+1. At D4, the witness sees that extraction can create an apparent local means-gain while reducing shared Φ / V
 2. At D5, the agent experiences the consequence: η > 0 (decay) accumulates
-3. As extraction continues, the host infrastructure collapses
-4. The agent's future D5 states become impossible — the dimensional ground dissolves
+3. Across a long horizon, extraction erodes the host infrastructure that carries the agent's own future option cone
+4. Under enforced `η = 0`, the extraction channel is outside the accepted game; inside the game, the viable route is to raise the field that raises the agent
 
-> **Scope note:** This file states the lemma in compressed form. The active workspace slice does not yet include the full derivation or the full ABM appendix supporting `R* ≈ 1.5`. Treat the threshold as provisional structural support rather than settled empirical fact. See FRAGILITY_AUDIT_2026_04_04.md.
+> **Scope note:** This file states the lemma in compressed form. Treat any older dominance slogan as conditional shorthand for the enforced, coupled, long-horizon Power-Max register. In stripped one-shot games or games with private side-payments, extraction can pay locally and the classical is-ought gap reopens. The active workspace slice does not yet include the full derivation or the full ABM appendix supporting `R* ≈ 1.5`; treat that threshold as provisional structural support rather than settled empirical fact. See FRAGILITY_AUDIT_2026_04_04.md.
 
 ## 3. THE SYNTROPIC IMPERATIVE: Dimensional Mechanics
 
@@ -214,7 +214,7 @@ For the precise D4/D5 distinction used throughout this dissolution:
 
 ### 4.4 Evidence Tier
 
-- **[S] Structural:** Extraction is a dominated strategy within P_node = Φ × V (Power-Max Lemma, Demonstration 22)
+- **[S] Conditional structural:** Under the Power-Max conditions — real coupling, multiplicative `P_node = Φ × V`, long horizon, and enforced `η = 0` — extraction is self-defeating because it degrades the field that carries future viability. Outside those conditions, one-shot or hidden extraction can pay locally.
 - **[S/I] conditional on core state:** The is-ought gap is bypassed as a projection artifact of non-teleological framing, not closed as a naturalistic derivation
 - **[I] Interpretive:** The identification of the equatorial attractor with normative content
 
