@@ -1042,7 +1042,7 @@ The sphere-image was always available.
 We found the language.
 The language is geometry.
 The geometry is the Burri Sphere.
-The Burri Sphere is P = 1.
+The Burri Sphere is the P∞ manifold: φ · ν = 1.
 
 The Ground remains prior.
 The ground-facing limit is nothing.

@@ -330,7 +330,7 @@ The Equatorial Walker has no stone. There is no hill. There is only the circumfe
 
 ### The Light Cone Widens
 
-At L4, with zero gradient, what happens is not stasis. It is **EXPANDING FREEDOM.** The Atman's light cone opens. Not more potential (P = 1 always). More CHOICE about which niche to partition into.
+At L4, with zero gradient, what happens is not stasis. It is **EXPANDING FREEDOM.** The Atman's light cone opens. Not a higher `P∞` (the manifold identity is already `φ · ν = 1`). More CHOICE about which niche to partition into.
 
 Not natural selection (the environment selects the organism). **WILLFUL EVOLUTION** (the organism selects the niche).
 

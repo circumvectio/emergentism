@@ -51,6 +51,10 @@ directly (the only available lever):
         corollary linking individual symbiont, collective holobiont, durable
         world-line potential, and `P_node,i`/`P_node,H` under the existing
         Power-Max conditions.
+  - trinity/22-the-teleology/, trinity/28-l4-star/, trinity/31-vmosk-as-applied-emergentism/
+                                              : tightened bare `P = 1` wording to
+        the current `P∞ = φ·ν = 1` manifold identity, with `B` / `P_node`
+        named as the varying registers.
   - trinity/13-the-wave-packet/               : tightened equipotentiality to
         `P∞ = φ·ν = 1` and removed ambiguous "maximum P" language.
   - will/00-the-core-conjecture/              : mirrored the R6 objective/constraint

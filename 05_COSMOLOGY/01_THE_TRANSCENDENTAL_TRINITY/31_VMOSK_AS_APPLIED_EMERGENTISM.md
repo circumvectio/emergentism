@@ -41,7 +41,7 @@ P∞ = φ · ν = 1
 Where:
 φ = coherence (quality of what you see)
 ν = viability (capacity to act on what you see)
-P = potential (always 1 on S² — what varies is B = sin θ)
+P∞ = φ · ν = 1 (manifold identity; what varies is B = sin θ)
 ```
 
 **The organism's equation:**
@@ -49,17 +49,18 @@ P = potential (always 1 on S² — what varies is B = sin θ)
 Organism Health = Specification Quality × Execution Capacity
 
 Where:
-Specification (φ) = depth of architecture, correctness of geometry, honesty of tiers
-Execution (ν)     = code shipped, users served, revenue generated, gates fired
-P∞ = φ · ν = 1    = the organism exists iff both are nonzero
+Specification (Φ) = depth of architecture, correctness of geometry, honesty of tiers
+Execution (V)     = code shipped, users served, revenue generated, gates fired
+P_node = Φ × V    = expressed organism health; collapses if either factor is zero
+P∞ = φ · ν = 1    = manifold identity / calibration surface
 B = sin θ         = how BALANCED the organism is (not how big)
 ```
 
-**The Ghost Trap** (φ → ∞, ν → 0): Beautiful specifications, zero shipping. Aureus, Helios, Foundation, QNTM (the institutional MPC/ZK-Identity rail). P = 1 everywhere, but B → 0. The organism is alive but paralyzed at the north pole.
+**The Ghost Trap** (φ → ∞, ν → 0): Beautiful specifications, zero shipping. Aureus, Helios, Foundation, QNTM (the institutional MPC/ZK-Identity rail). `P∞ = φ · ν = 1` names the surface, but `B → 0`. The organism is alive but paralyzed at the north pole.
 
 **The Zombie** (φ → 0, ν → ∞): Shipping without coherence. Code without architecture. Executing obsolete instructions. B → 0 from the south pole.
 
-**The Equator** (φ = ν = 1, B = 1): Agentz (F3 SHOULD organ, with APU as the SHOULD-NOT surface) at P = 0.55. The only organ approaching balanced viability. Gate G1 fires here.
+**The Equator** (φ = ν = 1, B = 1): Agentz (F3 SHOULD organ, with APU as the SHOULD-NOT surface) at `P_node ≈ 0.55`. The only organ approaching balanced viability. Gate G1 fires here.
 
 ---
 
@@ -216,7 +217,7 @@ When (φ − ν)² = 0, the organism is at the equator. The framework dissolves.
 The VMOSK is dual-aspect monism (Position Γ, Document 30) in organizational form:
 
 - The **specification** (φ) and the **execution** (ν) are not separate things that need to be "aligned"
-- They are two aspects of ONE invariant (the organism, P = 1)
+- They are two aspects of one coupled organism; the invariant is the `P∞ = φ · ν = 1` surface, while the organism's expressed health is `P_node = Φ × V`
 - Neither is primary. A spec without code is a Ghost Trap. Code without spec is a Zombie.
 - The VMOSK doesn't "translate" specs into code. It spirals through both aspects simultaneously.
 
