@@ -121,13 +121,16 @@ has its own regime. When compressing, name the regime explicitly:
 |---|---|---|---|
 | `P∞ = φ · ν = 1` | The manifold identity on S² | Conserved everywhere on the sphere (except at the two poles where φ or ν is undefined) | `[S]` / definition |
 | `B = sin θ` | Balance / equatorial alignment | Varies from 0 at the poles to 1 at the equator | `[S]` |
-| `P_node = Φ × V` | Effective potential at a finite node (organism, institution, DAC) | Can be less than 1 when coherence and viability are not reciprocally calibrated | `[S/I]` |
+| `P_node = Φ × V` | Effective potential at a finite node (organism, institution, DAC) | Can be less than 1 when D5 coherence/worldline-foresight (`Φ`) and D4 means-to-act (`V`) are not reciprocally calibrated | `[S/I]` |
 | `ΣΔB`, `ΣΔP_node` | Directional change across the widest relevant boundary | Evaluates outcome deltas, not operator prestige | `[I]` |
 
 **Disambiguation convention:** do not use `P` bare in source-truth
 documents unless the regime is named in the same sentence. Write the
 manifold identity as `P∞` or `φ · ν = 1`; write the operational node
 measure as `P_node`; write directional deltas as `ΣΔB` or `ΣΔP_node`.
+Likewise, do not write finite-node viability as lowercase `ν` when the action
+register is meant: `ν` is the sphere coordinate, while uppercase `V` is the
+node's usable D4 means at the boundary.
 
 ## Paired Canonical Documents
 
