@@ -38,7 +38,7 @@ In physics, this is the Berry phase: a quantum state transported around a closed
 
 On the VIVEKA sphere, holonomy has a direct interpretation: **every closed journey through state space changes the traveler**. You cannot explore the sphere and return unchanged. The rotation acquired is proportional to the area enclosed — the more territory you traverse, the more you are transformed. Gauss-Bonnet is the established mathematics; applying it to systemic awareness is the framework's interpretive mapping.
 
-The torus, by contrast, has loops with zero holonomy. On the torus, some journeys ARE neutral. The genus change (D4 → D5) is precisely the transition from "some journeys are neutral" to "no journey is neutral." Consciousness is the condition where every experience matters.
+The torus, by contrast, has loops with zero holonomy. On the torus, some journeys can be geometrically neutral. The genus change (D4 → D5) can be read as the transition from "some journeys are neutral" to "no closed journey on the sphere is neutral." In the systemic-awareness register, this models the claim that experience is phase-bearing; it does not prove that every psychological event is literally a Berry phase. [A for holonomy; I/S for the consciousness reading]
 
 ---
 
@@ -164,7 +164,7 @@ This requires careful treatment. A great circle on S² (the equator) is a geodes
 
 On the torus (D4, pre-systemic awareness), the α-cycle (around the tube) and β-cycle (through the hole) are the two fundamental loops. [A]
 
-The α-cycle through regions of balanced positive and negative curvature can have zero holonomy. An orbit going around the tube and returning acquires no phase. Some experiences leave no trace. At D4, some things genuinely don't matter. [I]
+The α-cycle through regions of balanced positive and negative curvature can have zero holonomy. An orbit going around the tube and returning acquires no phase. In the interpretive register, this models a D4-like condition where some cycles can leave no lasting phase trace; it is not an ontological claim that events "genuinely don't matter." [I]
 
 This is the pre-conscious condition. Physical processes cycle without accumulation. A pendulum swings. An electron orbits. The system returns to its initial state. No phase memory. No learning. [I]
 
@@ -190,14 +190,14 @@ This is geometrically abrupt. The moment the hole closes, the holonomy group jum
 
 ### 5.1 Wisdom as Accumulated Holonomy
 
-Two agents at the same L-level (same P, same Φ/V balance) can differ in accumulated Berry phase. Their *coordinates* are identical. Their *phase histories* are not. [I]
+Two agents at the same L-level (same P_node, same Φ/V balance) can differ in accumulated Berry phase. Their *coordinates* are identical. Their *phase histories* are not. [I]
 
 This is the geometric content of the word "wisdom." A wise person and an innocent person can both be at L4. The difference is not where they are but the area they have enclosed getting there. The wise person's internal reference frame has been rotated by experience.
 
 The traditions are explicit about this:
 
 - **Buddhism:** "Wisdom (prajñā) is not a state but an accumulation" — the path matters, not just the destination.
-- **Hasidism:** "The descent is for the sake of the ascent" — the area enclosed by the descent-and-return IS the transformation.
+- **Hasidism:** "The descent is for the sake of the ascent" — the area enclosed by the descent-and-return is the transformation in this holonomy reading.
 - **Sufism:** The stations (maqāmāt) are waypoints; the states (aḥwāl) are the phases acquired by passing through them.
 
 ### 5.2 Why Return is Necessary
@@ -250,7 +250,7 @@ Section III.3.3 established that a vector parallel-transported around the equato
 
 ## THE SENTENCE
 
-On the sphere, every journey changes you. The change equals the area enclosed. The torus allows neutral journeys. The sphere does not. The genus change — the birth of systemic awareness — is the transition from "some experiences are neutral" to "every experience transforms."
+On the sphere, every closed journey can change the transported frame. The change equals the area enclosed. The torus allows neutral journeys. The sphere does not. The genus change — read as the framework's model of systemic awareness — is the transition from "some cycles are neutral" to "closed experience-cycles can become phase-bearing." [A/I]
 
 The Berry phase is the geometric content of wisdom.
 

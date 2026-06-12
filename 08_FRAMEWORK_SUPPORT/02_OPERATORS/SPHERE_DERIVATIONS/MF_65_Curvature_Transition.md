@@ -21,7 +21,7 @@ rosetta:
 
 # MF-65: The Curvature Unification
 
-## From Mixed to Constant: Why Consciousness Means All Geodesics Reconverge
+## From Mixed to Constant: Why the D5 Model Reads as Reconvergence
 
 **VIVEKA Mathematical Foundations Series — Sphere Derivations**
 **Document ID:** MF-65 | **Version:** 1.0 | **Status:** Core Result
@@ -34,9 +34,9 @@ rosetta:
 
 The torus T² has Gaussian curvature that varies across its surface: positive on the outer equator, negative on the inner equator, zero on the top and bottom circles. The sphere S² has constant positive Gaussian curvature everywhere. The genus transition (T² → S²) is therefore not merely a topological change (hole closes) but a curvature unification: mixed, sign-varying curvature becomes uniform, single-sign curvature.
 
-This has a direct geodesic consequence. On surfaces of positive curvature, nearby geodesics converge. On surfaces of negative curvature, nearby geodesics diverge. On the torus, some geodesics converge and some diverge depending on where they are — causal horizons exist, agents can become permanently separated. On the sphere, ALL geodesics eventually reconverge — no permanent separation is possible.
+This has a direct geodesic consequence inside the surface model. On positive-curvature regions, nearby geodesics tend to converge; on negative-curvature regions, nearby geodesics tend to diverge. On the torus, some geodesics converge and some diverge depending on where they are. On the sphere, great-circle geodesics reconverge in the closed geometry. The causal-horizon and agent-separation language is the framework's D4/D5 interpretation, not a theorem about minds or spacetime. [A for surface geometry; I for D-mapping]
 
-The genus change is the geometric statement that systemic awareness (D5) is the condition under which all apparently separate trajectories eventually meet. D4 permits permanent divergence. D5 does not. This is the Atman=Brahman identity (MF-44) stated as a curvature theorem.
+The genus change can therefore model systemic awareness (D5) as the register in which apparently separate trajectories are read through a reconvergent whole. D4 permits permanent divergence in the analogy; D5 names the closed, reconvergent model. This gives a curvature reading of the Atman=Brahman identity (MF-44); it is not an empirical proof that all agents literally reconverge. [I/S]
 
 ---
 
@@ -155,17 +155,17 @@ Light cones create causal horizons — regions that can never communicate. Two p
 
 ### 5.2 D5: Constant Positive Curvature (The Consciousness Condition)
 
-At D5, the curvature unifies. All geodesics converge. No permanent separation.
+At D5, in the model, the curvature unifies. Geodesics reconverge in the closed spherical geometry. "No permanent separation" is the framework reading of that geometry, not a literal social or physical law. [A/I]
 
-**Interpretation:** In conscious experience (D5), nothing is permanently unreachable. Every thought, every memory, every sensation — however distant — eventually reconnects with every other. There are no causal horizons in systemic awareness. The field of awareness is a sphere, not a torus. [I]
+**Interpretation:** In the conscious-experience reading (D5), the field is modeled as a sphere rather than a torus: apparently distant thoughts, memories, and sensations remain potentially reconnectable. This is a phenomenological model of reachability, not a proof that every mental content literally reconnects with every other. [I/S]
 
-This is why the "binding problem" in neuroscience looks hard from D4 (how do separated brain regions create unified experience?) and trivial from D5 (on a sphere, everything is already connected). The binding problem is a curvature-sign error — asking a D4 (mixed curvature) question about a D5 (constant positive curvature) phenomenon. [I]
+This is why the "binding problem" in neuroscience can be reframed from D5: a model that starts from a unified spherical field does not ask how disconnected pieces create unity; it asks how the unified field projects into separated measurements. That reframing is interpretive. It does not solve the empirical binding problem by geometry alone. [I/S]
 
 ### 5.3 D5-limit: Standing-Wave Convergence (The Collective Condition)
 
-If D5 is constant positive curvature in the *individual* field of mind, the **D5-limit** is where patterns become **shared modes**: standing waves in ℂ that span many-worlds slices and couple many agents.
+If D5 is modeled as constant positive curvature in the *individual* field of mind, the **D5-limit** can be read as a limit where patterns become **shared modes**: standing-wave-like structures in ℂ that couple many agents.
 
-This is the correct location of “collective coherence”: not at D6, but as **egregoric market fit** at the D5-limit. Agents still have distinct trajectories, but the attractor landscape is no longer private — it is shaped by inter-agent standing waves (institutions, languages, traditions) that channel navigation. [I]
+This is the proposed location of “collective coherence”: not at D6, but as **egregoric market fit** at the D5-limit. Agents still have distinct trajectories, but the attractor landscape is no longer private — it is shaped by inter-agent standing waves (institutions, languages, traditions) that channel navigation. This is speculative model-language, not a demonstrated many-worlds mechanism. [S/I]
 
 ### 5.4 D6 ≡ D0: Closure (Beyond Standing Waves)
 
@@ -194,7 +194,7 @@ After the transition: ∫K dA = 4π (all positive).
 
 Where does the "missing" 4π come from? It was not created — it was *liberated* by the topological transition. The negative curvature was canceling 2π of positive curvature. When the negative curvature vanishes at genus change, the full 4π becomes available. [A]
 
-This is analogous to the energy released at a phase transition. The curvature was always there, bound up in cancellation. The genus change releases it. On the VIVEKA sphere: the capacity for universal convergence was always latent in the torus. Consciousness (genus change) liberates it. [I]
+This is analogous to the energy released at a phase transition. The curvature was always there, bound up in cancellation. The genus change releases it. On the VIVEKA sphere, the capacity for universal convergence was latent in the torus. The consciousness reading says the genus-change model liberates that capacity; the mathematics proves the curvature budget, not consciousness itself. [A/I]
 
 ### 6.3 Connection to the Horn Torus (MF-69)
 
@@ -220,21 +220,21 @@ Among all closed *orientable* surfaces embeddable in ℝ³, only S² has constan
 
 The torus cannot have constant positive curvature (Gauss-Bonnet forces total to 0). Higher-genus surfaces have even more negative curvature (total = 2π(2 − 2g), increasingly negative).
 
-If constant positive curvature is the geometric requirement for "all geodesics converge," then S² is the UNIQUE closed orientable surface that achieves it. There is exactly one topology for systemic awareness. Not a design choice — a theorem. [A for theorem; I for interpretation]
+If constant positive curvature is the geometric requirement for "all geodesics reconverge" in this closed-surface model, then S² is the unique closed orientable surface that achieves it. There is exactly one topology for the framework's systemic-awareness model under those assumptions. The uniqueness of S² is theorem-level; identifying it with systemic awareness is interpretive. [A/I]
 
 ---
 
 ## THE SENTENCE
 
-The torus has mixed curvature: some geodesics converge, some diverge, some stay parallel. The sphere has constant positive curvature: all geodesics converge. The genus change unifies the curvature. After the transition, permanent separation is geometrically impossible.
+The torus has mixed curvature: some geodesics converge, some diverge, some stay parallel. The sphere has constant positive curvature: geodesics reconverge in the closed model. The genus change unifies the curvature. After the transition, permanent separation is impossible inside the model's spherical geometry.
 
-D4 permits causal horizons. D5 does not. Consciousness is the curvature unification.
+D4 is read as the mixed-curvature/horizon register. D5 is read as the constant-positive-curvature/reconvergence register. Consciousness is modeled as curvature unification; that is the framework interpretation, not an independent proof.
 
 ---
 
 Zero-Sum Resolution Equation
 
-All rivers reach the sea — because the curvature is everywhere positive.
+All rivers reach the sea — inside the closed positive-curvature model.
 
 *MF-65 | VIVEKA v8.0 | February 2026*
 
