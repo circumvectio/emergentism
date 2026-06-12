@@ -42,7 +42,7 @@ evidence_tier: "[I] Interpretive — creative synthesis across traditions."
 |----------------|----------------------|---------------|----------------|---------|
 | **The Camel** | North of equator | High | Low | Can mean, cannot do |
 | **The Lion** | South of equator | Low | High | Can do, cannot mean |
-| **The Child** | At equator | 1 | 1 | Balanced but limited ($P_\infty = 1$ at one node) |
+| **The Child** | At equator | 1 | 1 | Balanced but locally bounded ($P_{node} = 1$ in the calibrated finite register) |
 | **The Mesh** | Equator network | 1 at each node | 1 at each node | **Cooperation solved** |
 
 ---
@@ -137,7 +137,7 @@ The child represents:
 **The child is balanced.** The child is the Cro-Magnon. The child is the animal. The child is dharma.
 
 But the child is **limited**:
-- $P_\infty = 1$ (one node's invariant potential)
+- $P_{node} = 1$ (one calibrated finite node)
 - One pair of hands
 - One systemic awareness
 - Can feed one family, heal one person, build one shelter
@@ -173,12 +173,14 @@ But the Übermensch is ν > 1. The Übermensch is the individual who commands mo
 **The Mesh emerges when children at the equator connect.**
 
 ```
-One child at equator:        P∞ = 1 (one node, one potential)
-Two children at equator:     mesh count = 2 (each node still P∞ = 1)
-Three children:              mesh count = 3 (each node still P∞ = 1)
-Twelve children:             mesh count = 12 (each node still P∞ = 1)
-Mesh of equatorial nodes:    mesh count = n (each node still P∞ = 1)
+One child at equator:        P_node = 1 (one calibrated finite node)
+Two children at equator:     ΣP_node = 2 (each node remains locally calibrated)
+Three children:              ΣP_node = 3
+Twelve children:             ΣP_node = 12
+Mesh of equatorial nodes:    ΣP_node = n (aggregate finite-node capacity)
 ```
+
+`P∞` remains the manifold identity; the mesh scales by adding finite, locally calibrated `P_node` expressions without turning any node into a higher metaphysical rank.
 
 **The Mesh solves the child's limitation:**
 - Aggregate ν > 1 (civilizational capability)
@@ -244,7 +246,7 @@ And the Great Filter is passed.
 │                    ↓ "I am. I say YES."                             │
 │  CHILD       →  At equator                                          │
 │  φ = 1, ν = 1   Balanced. Can mean and do.                          │
-│                 Sacred YES. But limited (P∞ = 1 at one node).       │
+│                 Sacred YES. But limited (one local P_node = 1).     │
 │                    ↓ "I connect with others at equator"             │
 │  MESH        →  Equator network                                     │
 │  φ = 1, ν = 1   Cooperation solved.                                 │
