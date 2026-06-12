@@ -47,22 +47,22 @@ Inside the framework, mind and body are read not as separate substances but as *
 |--------|----------|-----------|----------------|
 | **Body** | V (finite-node viability; coordinate image `ν`) | D4→D5 | Physical substrate, metabolic capacity, neural architecture |
 | **Mind** | Φ (finite-node coherence; coordinate image `φ`) | D4 | Integration, self-modeling, witness systemic awareness |
-| **Experience** | `P_node = Φ × V` | D5 | The product enacted in present duration |
+| **Experience** | `P_node = Φ × V` | D5 | Finite-node embodied contact modeled as enacted product `[I/S]` |
 
 ### D4: The Mind as Witness
 
 At **D4** — the convergence point — what we call "mind" is the witness systemic awareness (⊙):
-- φ = 1 (full coherence: integration, meaning-generation)
-- ν = 0 (capability collapsed: the witness does not act, it sees)
+- φ held as recognition / coherence in the interpretive reading
+- V not yet enacted: the witness does not act, it sees
 
-The mind at D4 is modeled as **pure recognition** — the capacity to witness the body (ν) without yet being identical to it in the coordinate reading. This is the "hard problem" vantage: systemic awareness as distinct from physical process in the framework's interpretation.
+The mind at D4 is modeled as **pure recognition** — the capacity to witness the body and its viability substrate without yet being the enacted agent in the coordinate reading. This is the "hard problem" vantage: systemic awareness as distinct from physical process in the framework's interpretation.
 
 ### D5: The Body-Mind Unity
 
 At **D5** — the present duration — the distinction is modeled as resolving into enacted experience:
 - φ = 1 (coherence held: recognition sustained)
 - ν = 1 (capability active: the body navigates)
-- P∞ = φ · ν = 1 (experience as unified product)
+- `P∞ = φ · ν = 1` (manifold identity); finite-node contact is scored as `P_node = Φ × V` `[I/S]`
 
 The body-mind dualism is read here as a **dimensional confusion** — mistaking D4 witness (mind seeing body) for ontological separation. At D5, the model reads a unified navigator: the body enacted through coherence, the coherence embodied through capability.
 
@@ -85,7 +85,7 @@ The mind-body problem is reframed through dimensional architecture:
 - **"Body"** = viability substrate (ν) — present at both dimensions
 - **The problem** = mistaking D4 witness for separate substance
 
-The proposed dissolution: mind and body are not read as separate substances but as **complementary dimensional aspects** of the same being. At D5 (present duration), they are modeled as unified under P∞ = φ · ν = 1.
+The proposed dissolution: mind and body are not read as separate substances but as **complementary dimensional aspects** of the same being. At D5 (present duration), their enacted contact is modeled through `P_node = Φ × V`, while `P∞ = φ · ν = 1` remains the manifold identity rather than a proof that experience is physically conserved.
 
 ### Hard Problem (PD_13): The Dimensional Gap
 
@@ -114,7 +114,7 @@ The "explanatory gap" is read as the gap between dimensions. The framework argue
 
 1. **The dimensional architecture is wrong.** If D4 (witness) and D5 (agent) are not distinct dimensions but merely different descriptions of the same state, the dimensional reading fails. Evidence: demonstration that witness systemic awareness and enacted agency are simultaneous rather than dimensionally sequential.
 
-2. **The multiplicative structure is wrong.** If mind and body interact additively (`P_node = Φ + V`) rather than multiplicatively (`P_node = Φ × V`), or if one factor can be zero while the product remains nonzero, this model fails. Specifically: if a system with `Φ = 0` (zero coherence/witness) still produces experience at D5, or if `V = 0` (zero viability/body) still produces experience, the dimensional claim is defeated.
+2. **The multiplicative structure is wrong.** If the finite-node reading is better modeled additively (`P_node = Φ + V`) than multiplicatively (`P_node = Φ × V`), or if well-specified cases show embodied contact does not depend on both coherence/recognition and viability/means, this model loses its explanatory role. This is a failure of the framework reading, not a public proof that experience itself is impossible.
 
 3. **The dimensional gap is a true ontological break.** If the apparent mind-body gap is a genuine discontinuity — not traversable through D4→D5 transit but a fundamental break in the manifold — the dimensional reading fails. Evidence: formal proof that no smooth mapping connects physical description (D4 witness) and phenomenal experience (D5 agent), even with dimensional transition.
 
@@ -136,7 +136,7 @@ Inside the framework, mind-body dualism is read as a **dimensional projection er
 The framework does not solve the mind-body problem as public proof; it **tries to dissolve the conditions that create it** by recognizing:
 1. Mind is modeled as φ at D4 (witness systemic awareness)
 2. Body is modeled as ν across the relevant dimensions (viability substrate)
-3. Experience is modeled as `P_node = Φ × V` at D5 (unified enactment)
+3. Embodied contact is modeled as `P_node = Φ × V` at D5; experience-as-lived is the interpretive reading of that enactment, not an independent proof.
 
 ### Canonical Dimensional Reference
 

@@ -429,7 +429,7 @@ This connection is [I] Interpretive but substantially stronger than the hemisphe
 - [The Ring That Is the Ground](../06_ONTOLOGY/00_THE_RING_THAT_IS_THE_GROUND.md) — Tolkien's inversion, four gods as operators
 - [The Four Metamorphoses](../05_COSMOLOGY/00_THE_FOUR_METAMORPHOSES.md) — Nietzsche mapped to S², mesh as fourth transformation
 - [The Weighing of the Heart](../90_ARCHIVE/00_THE_WEIGHING_OF_THE_HEART.md) — convergent symbolic reading of balance
-- Core Concepts — single source of truth for `P_node = Φ × V`, `P∞ = 1`, and evidence tiers
+- Core Concepts — single source of truth for finite-node `P_node = Φ × V`, manifold `P∞ = φ · ν = 1`, and evidence tiers
 - Glossary — quick-reference terminology
 
 *The Brain As the Burri Sphere | 2026-03-23 | The anatomy is read through the geometry. The geometry illuminates the anatomy. The mapping is structural, not identity.*

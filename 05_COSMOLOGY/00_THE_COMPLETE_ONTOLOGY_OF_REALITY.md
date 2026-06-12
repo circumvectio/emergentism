@@ -182,11 +182,13 @@ D3 is form — the first stable pattern. In physics, D3 corresponds to the three
 
 ---
 
-## D4 — Causality (Direction)
+## D4 — Causality / Viability Boundary
 
 ### What it is
 
 The fourth dimension. Change has direction. Causes produce effects. The causal vertex exists — the point where past and future light cones touch. The Now-point, with no duration.
+
+In the action-register bridge, this same boundary is read as **D4 viability / means-to-act**: the body, tool, energy, access, timing, and control actually available at contact. Hands, a shovel, and an industrial digger are all D4 means at different scales; none of them is agency by itself.
 
 ### Log coordinate
 
@@ -198,7 +200,7 @@ The equator is approached. `B → 1⁻` — balance is nearly maximal. The verte
 
 ### Key property: D4 has a "Now" but no "Present"
 
-D4 is a point, not a plane. There is no room to act, to choose, to move. The four operators (↑φ, ↓φ, ↑ν, ↓ν) are collapsed into the single equatorial point. This is "witness consciousness" — awareness without agency.
+D4 is a point, not a plane. There is no room yet to choose a worldline. The four operators (↑φ, ↓φ, ↑ν, ↓ν) are collapsed into the single equatorial point. This is "witness consciousness" in the interpretive reading — awareness without agency. In the finite-node play rule, the same level supplies `V`: the usable means-to-act that D5 must aim.
 
 ### Ontological reading `[I]`
 
@@ -349,7 +351,7 @@ D3  Form           Transformation. Shape. Persistence across change.
 │   Strong:        Cause is not implicit in form.
 │   Log:           s ≈ 0 approached, the zero sum becomes exact
 │
-D4  Causality      Direction. The Now-point. Light cones touch. Witness without agency.
+D4  Causality / viability boundary  Direction. The Now-point. Light cones touch. Action-register means-to-act (`V`).
 │   μ₄             The critical crossing: agency / option-space appears.
 │   Generator:     ⊙ → (•, ○)  (finity unfolds into two axes)
 │   Strong:        Agency is not implicit in causality.

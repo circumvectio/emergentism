@@ -116,7 +116,7 @@ is the downward half. The equator is where they meet.
 
 On S² with P∞ = φ · ν = 1:
 
-- **Potential** P∞ = 1 everywhere. It does not vary. Every point on the
+- **Potential** `P∞ = φ · ν = 1` everywhere. It does not vary. Every point on the
   sphere has the same potential.
 - **Balance** B = sin θ varies. It peaks at θ = π/2 (the equator) where
   B = 1 and falls to B = 0 at both poles.
@@ -142,7 +142,7 @@ For a DAC (Distributed Augmented Corporation), Power Max translates:
 | B = sin θ = 1 | Every organ at operational equilibrium |
 | φ = 1 | Full coherence — the organ's design is internally consistent |
 | ν = 1 | Full viability — the organ can sustain itself metabolically |
-| P∞ = 1 | The potential is realized — not wasted at a pole |
+| `P∞ = φ · ν = 1` | The potential is realized evenly — not wasted at a pole |
 | P_max | The organism has maximum reach for minimum cost |
 
 An organism that operates near the equator does the most work per unit of

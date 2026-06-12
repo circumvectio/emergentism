@@ -108,7 +108,7 @@ remains faithful across projection, correction, and change of coordinate.
 | Coherence Truth | Internal consistency (no contradictions in φ-structure) |
 | Pragmatic Truth | Viability in practice (ν-component functional) |
 
-**The Unity:** These three aspects are interpreted through `P∞ = 1`. A "true"
+**The Unity:** These three aspects are interpreted through `P∞ = φ · ν = 1`. A "true"
 proposition, in this grammar, maintains the manifold invariant across the
 relevant projections while remaining corrigible by evidence outside the model.
 

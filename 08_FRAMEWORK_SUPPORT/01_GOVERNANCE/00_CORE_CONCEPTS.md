@@ -81,7 +81,7 @@ This relation is presented as the framework's structural model, not as a complet
 
 The Riemann sphere is the unique compact simply-connected complex manifold of dimension one. The framework uses S² as a shared coordinate language for systemic awareness, physics, ethics, and mathematics; that reading is structural/interpretive unless separately tested in a domain.
 
-- **The Equator** (φ = ν = 1): Where B = 1. Maximum balance. P∞ = 1 everywhere on S². (Under standard stereographic projection, this maps to |z| = 1 on the complex plane, but the Burri Sphere equator is defined by the lived coordinates φ = ν = 1, not by |z| = 1.)
+- **The Equator** (φ = ν = 1): Where B = 1. Maximum balance. `P∞ = φ · ν = 1` everywhere on the open sphere. (Under standard stereographic projection, this maps to |z| = 1 on the complex plane, but the Burri Sphere equator is defined by the lived coordinates φ = ν = 1, not by |z| = 1.)
 - **The North Pole** (○ = ∞): φ = ∞, ν = 0. Pure coherence, zero viability. The void. The horizon.
 - **The South Pole** (• = 0): φ = 0, ν → ∞. Zero coherence, unbounded capability. The cargo cult limit. The structural destination of extraction.
 - **D6 ≡ D0**: The poles are identified. The ouroboros closes.
@@ -137,7 +137,7 @@ An organizational structure that separates Meaning (Map) from Capability (Territ
 
 **ΣΔB / ΣΔP_node > 0** [S] Structural ethical direction
 
-Across the widest relevant boundary, total balance should increase at the manifold level (`ΣΔB > 0`) and total node-level flourishing should increase where empirical/organizational projection is being measured (`ΣΔP_node > 0`). This is the direction, not a destination. (`P∞ = 1` everywhere on S²; what varies is balance.)
+Across the widest relevant boundary, total balance should increase at the manifold level (`ΣΔB > 0`) and total node-level flourishing should increase where empirical/organizational projection is being measured (`ΣΔP_node > 0`). This is the direction, not a destination. (`P∞ = φ · ν = 1` everywhere on open S²; what varies is balance, and finite nodes are scored by `P_node = Φ × V`.)
 
 - **Syntropic:** Actions that increase total balance (`ΣΔB > 0`) or measured node-level flourishing (`ΣΔP_node > 0`) across the widest relevant boundary
 - **Parasitic:** Actions that decrease total balance (ΣΔB < 0) — pushing systems toward the poles

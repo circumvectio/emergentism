@@ -91,7 +91,7 @@ The P-constant vs. P-variable paragraph in 00_EMERGENTISM.md (lines 79) is the f
 
 > "Line 1 (φ · ν = 1) is the manifold identity... When the system prompt and operational framework refer to `P_node = Φ × V` as something to maximize (`ΣΔP_node > 0`), they are describing *nodes* — finite beings whose integration (Φ) and viability (V) can vary independently."
 
-**The logical bug:** This distinction is stated but not formally axiomatized. Legacy A1 used bare `P` for `Φ × V` and did not say explicitly: `P∞ = 1` on S² for the manifold, while `P_node < 1` for nodes not at the equator. The formal system switches between these two meanings of `P` without marking the transition.
+**The logical bug:** This distinction is stated but not formally axiomatized. Legacy A1 used bare `P` for `Φ × V` and did not say explicitly: `P∞ = φ · ν = 1` on open S² for the manifold, while `P_node < 1` for nodes not at the equator. The formal system switches between these two meanings of `P` without marking the transition.
 
 The Steel Thread (Link 3) says `P∞ = φ · ν = 1` identically for all θ — which means manifold potential is always 1, even at the poles. But legacy A2 used an unqualified syntropic criterion for ethical direction, which requires the scored quantity to change. These are formally inconsistent if `P` means the same thing.
 
@@ -239,7 +239,7 @@ This is not a logical error — it is a *bootstrapping* structure. The Trinity g
 
 ### Finding: The Good Transcendentals (Beauty, Truth, Justice) are mapped but not derived
 
-EFR-16 maps Beauty = B = sin θ, Truth = `P∞ = 1` (conservation), Justice = η = 0. These are elegant mappings. But they are *mappings* — the framework does not derive that these three and not others are the transcendentals. Why not add Power, Freedom, or Love?
+EFR-16 maps Beauty = B = sin θ, Truth = `P∞ = φ · ν = 1` (conservation), Justice = η = 0. These are elegant mappings. But they are *mappings* — the framework does not derive that these three and not others are the transcendentals. Why not add Power, Freedom, or Love?
 
 The framework could argue: these three map to the three geometric invariants (conservation, symmetry, equilibrium). But this is selection, not derivation. It is abductive (L4) — the best explanation given the available geometric features.
 

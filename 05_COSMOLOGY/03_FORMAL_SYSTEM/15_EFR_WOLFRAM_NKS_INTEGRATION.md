@@ -410,7 +410,7 @@ If the system cannot be reduced to zero — if some element resists reduction �
 The sitting practice is the **view from above**.
 
 - **From within the manifested world:** Everything is irreducible. You must live it to know it.
-- **From the sphere:** the model reduces its descriptions to geometry. `P∞ = 1` captures the manifold identity, not every fact.
+- **From the sphere:** the model reduces its descriptions to geometry. `P∞ = φ · ν = 1` captures the manifold identity, not every fact.
 - **From the ground-facing limit:** the scaffold reduces to zero, the empty string as boundary symbol.
 
 The sitting practice moves the observer, in the practice register, from manifested narration toward the ground-facing limit. It is reduction, not a public proof that everything has been exhausted by zero.

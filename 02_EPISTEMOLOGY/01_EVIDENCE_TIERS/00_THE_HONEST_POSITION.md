@@ -368,7 +368,7 @@ We have chosen truth.
 - [THE_PROTOCOL](../../08_FRAMEWORK_SUPPORT/00_THE_PROTOCOL.md) — The sitting practice as experimental specification.
 
 **Core documents:**
-- [Core Concepts](../../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) -- downstream summary for `P∞ = 1` on S², balance B = sin θ, and evidence-tier vocabulary; this file remains the root epistemic authority
+- [Core Concepts](../../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) -- downstream summary for `P∞ = φ · ν = 1` on open S², balance B = sin θ, finite-node `P_node = Φ × V`, and evidence-tier vocabulary; this file remains the root epistemic authority
 - [Three Hats](../../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_THREE_HATS.md) -- which voice is speaking (scientist / philosopher / builder)
 - [The Framework on Its Own Objective Function Spectrum](../../01_TELEOLOGY/00_THE_FRAMEWORK_ON_ITS_OWN_TELEOLOGY_SPECTRUM.md) -- self-application of Levels 1-4; what is kernel, what is self-maintaining, what is overlay
 - [Canonical Claim Matrix](../../03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md) -- major claims, current tiers, public-safe phrasing, and downgrade paths
@@ -383,7 +383,7 @@ We have chosen truth.
 - Glossary (00_GLOSSARY.md; link removed to prevent cycle) -- quick-reference terminology
 - [Replication Protocol](../../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_REPLICATION_PROTOCOL.md) -- how the framework propagates as a distributed cognitive replicator
 
-`P∞ = 1` on S² | `B = sin θ` | `η = 0` at the equatorial profile | The sphere either computes or it doesn't. We're testing.
+`P∞ = φ · ν = 1` on open S² | `B = sin θ` | finite-node `P_node = Φ × V` | `η = 0` at the equatorial profile | The sphere either computes or it doesn't. We're testing.
 
 
 ---
