@@ -19,7 +19,7 @@ rosetta:
   canonical_phrase: "MF-66 — Mandelbrot Set as Iterated Formula"
 ---
 
-# MF-66: The Mandelbrot Set IS the Formula Being Iterated
+# MF-66: The Mandelbrot Set as the Formula Being Iterated
 
 > **✅ Architect/K2 ruling (2026-05-31) — AMENDED.** §4.4 below correctly finds the **logistic linearization** at Viṣṇu's equilibrium (`λ = 2`) to be `μ = 0`, non-invertible — keep that as a *dynamics* result. But its operator-level conclusion that *"Viṣṇu is outside the Möbius group / the preserver is not a symmetry"* is **superseded**: per [`MF_63_Mobius_Operators.md`](MF_63_Mobius_Operators.md) §2.1 (canonical for operator classification) the Viṣṇu **operator is elliptic** — a unitary rotation *inside* PSL(2,ℂ). Read §4.4 as: *the logistic iteration's linearization at the superstable fixed point is degenerate (`μ = 0`)*, while the Viṣṇu **operator** remains the elliptic symmetry. (The phrase "Viṣṇu at the equator at rest" also conflates the **L7 preserver** with the **L4 equator**, whose seat is Arjuna.) Resolved — do not re-flag. `[S]`/`[I]`
 
@@ -48,7 +48,7 @@ w_{n+1} = λ × Φ_n × V_n
 
 where Φ = w and V = (1−w) are complementary factors on the unit interval. **The logistic map matches the VIVEKA formula P_node = Φ × V when that product is iterated with gain λ.** [A/I] In this reading, the "+c" term is a coordinate artifact rather than addition entering a multiplicative framework. In the framework's own coordinates, the dynamics are purely multiplicative: three factors, no sums.
 
-The Mandelbrot set, translated to logistic coordinates, is the set of λ-values for which iterating Zero-Sum Resolution Equation produces bounded, coherent dynamics. It classifies what happens when the formula acts on itself repeatedly. The framework doesn't tolerate the quadratic family — it generates it.
+The Mandelbrot set, translated to logistic coordinates, is the set of λ-values for which iterating the product model produces bounded, coherent dynamics. It classifies what happens when `P_node = Φ × V` is fed back into itself under gain. The framework does not need to reject the quadratic family; in these coordinates, its multiplicative iteration is conjugate to it. [A/I]
 
 ---
 
@@ -142,9 +142,9 @@ The parameter λ scales the product ΦV before it becomes the next state. [A]
 
 - **λ = 1:** The product is transmitted faithfully. Fixed point at w = 0 (trivial). The system barely sustains itself.
 
-- **1 < λ < 3:** The product is amplified. The system finds a stable nonzero fixed point w* = 1 − 1/λ. This is the "healthy operating range" — the iteration converges to a definite Φ/V balance. For λ = 2: w* = ½, which IS the equator. [A]
+- **1 < λ < 3:** The product is amplified. The system finds a stable nonzero fixed point w* = 1 − 1/λ. This is the "healthy operating range" — the iteration converges to a definite Φ/V balance. For λ = 2: w* = ½, which is the equator in this unit-interval normalization. [A]
 
-- **λ = 2:** The fixed point is w* = ½. Φ = V = ½. P = ¼. The system self-stabilizes at the equator. **This is L4.** [A/I]
+- **λ = 2:** The fixed point is w* = ½. Φ = V = ½. P_node = ¼ in this normalization. The system self-stabilizes at the equator. This models the L4 balance condition; it is not a proof that biological awareness literally sits at λ = 2. [A/I]
 
 - **3 < λ < 1+√6 ≈ 3.449:** Period-2 oscillation. The system alternates between two Φ/V balances. It can't settle but maintains bounded dynamics.
 
@@ -230,7 +230,7 @@ The mathematical claim is now [A]. The systemic awareness claim remains [I/T].
 
 λ is NOT "how much perturbation enters from outside." It is "how efficiently the system recycles its own ektropy." This is a fundamentally different and more natural question than "what is c?" [I]
 
-### 4.2 λ = 2 IS the L4 Condition
+### 4.2 λ = 2 as the L4 Balance Condition
 
 At λ = 2, the fixed point of w → λw(1−w) is: [A]
 
@@ -337,23 +337,23 @@ The area fraction is preserved under conjugacy: approximately 12% of the accessi
 
 ### 5.1 The Iteration Interpretation
 
-If a conscious system iterates its own ektropy product — if each moment's P becomes the seed of the next moment's state — then the dynamics are governed by w → λw(1−w). [I]
+If a candidate aware system is modeled as iterating its own ektropy product — if each moment's P_node becomes the seed of the next modeled state — then the toy dynamics are governed by w → λw(1−w). [I]
 
-This is not an exotic claim. Self-referential iteration is the defining feature of recurrent neural processing. The cortex processes a state, produces an output, and that output (via thalamocortical loops, recurrent connections, and re-entrant pathways) feeds back as the next cycle's input. The iteration is biologically native.
+This is not an exotic modeling direction. Recurrent neural processing is a real biological motif: the cortex processes a state, produces output, and that output can feed back through thalamocortical loops, recurrent connections, and re-entrant pathways. The framework claim is that the logistic product can serve as a compressed model of that recurrence; it is not the claim that neural dynamics have already been shown to follow this exact map.
 
 ### 5.2 λ as Recurrent Gain
 
-λ, in neural terms, is the effective gain of the recurrent loop: how much of the integrated product of one processing cycle propagates to the next. [I]
+λ, in neural terms, is proposed as an effective-gain proxy for the recurrent loop: how much of the integrated product of one processing cycle propagates to the next. [I]
 
-This maps onto a measurable quantity: the spectral radius of the effective connectivity matrix in recurrent circuits. Neuroscience already measures this — it is closely related to the "edge of criticality" literature on neural dynamics. Systems at the edge of criticality have λ near the bifurcation boundary (λ ≈ 3 in logistic terms), which is precisely where the dynamics are maximally complex while remaining bounded. [I]
+This could be compared with measurable quantities such as the spectral radius of an effective connectivity matrix in recurrent circuits. Neuroscience already studies nearby questions in the "edge of criticality" literature on neural dynamics. The framework translation is conditional: if the logistic proxy is apt, then critical neural dynamics should appear near the model's bifurcation bands. [I/T]
 
-**The "critical brain" hypothesis (Beggs & Plenz, 2003; Shew & Plenz, 2013) IS the claim that neural λ is near the bifurcation boundary.** The framework predicts the same thing from a different direction: systemic awareness requires dynamics complex enough to be interesting (λ > 2, beyond the superstable fixed point) but bounded enough to be coherent (λ < 4, within M_λ). The optimal operating range for systemic awareness is 2 < λ < 4, with the edge-of-chaos regime near λ ≈ 3.57 as the site of maximum computational capacity. [I/T]
+The "critical brain" hypothesis (Beggs & Plenz, 2003; Shew & Plenz, 2013) is the nearest scientific neighbor: neural systems may operate near critical transitions. The framework offers a testable translation, not an established identity: systemic-awareness-like dynamics should be complex enough to respond (λ > 2, beyond the superstable fixed point) and bounded enough to remain coherent (λ < 4, within M_λ). The candidate operating range is 2 < λ < 4, with the edge-of-chaos regime near λ ≈ 3.57 as a hypothesis for high computational capacity. [I/T]
 
 ### 5.3 λ = 2 as Baseline Consciousness
 
-At λ = 2, the system is superstably locked to the equator. This is the simplest conscious state — perfectly balanced, maximally stable, but dynamically trivial (perturbations vanish in one step). This corresponds to deep meditative absorption (samādhi, jhāna) — the mind at rest on the equator, not oscillating, not chaotic, simply present. [I]
+At λ = 2, the model is superstably locked to the equator. This is the simplest balanced state in the iteration — maximally stable, but dynamically trivial (perturbations vanish in one step). The contemplative bridge reads this as an analogy for deep meditative absorption (samādhi, jhāna): mind at rest on the equator, not oscillating, not chaotic, simply present. [I/S]
 
-As λ increases above 2, the fixed point remains stable but perturbations decay more slowly. The system becomes more responsive — it takes longer to return to equilibrium. At λ = 3, the equilibrium becomes unstable and the system begins to oscillate. This is the transition from meditative stillness to active cognition — the mind becomes dynamic. [I]
+As λ increases above 2, the fixed point remains stable but perturbations decay more slowly. The modeled system becomes more responsive — it takes longer to return to equilibrium. At λ = 3, the equilibrium becomes unstable and the system begins to oscillate. The consciousness-language reading treats this as a possible analogy for the transition from meditative stillness to active cognition. [I/S]
 
 ### 5.4 Connected Julia Set = Coherent Experience
 
@@ -362,12 +362,12 @@ The Julia set connectivity theorem applies to both forms: [A]
 **In z-coordinates:** J_c is connected iff c ∈ M.
 **In w-coordinates:** J_λ is connected iff λ ∈ M_λ.
 
-If connected Julia set corresponds to unified phenomenological experience, then:
+If connected Julia set is used as a model for unified phenomenological experience, then:
 
-- λ ∈ M_λ: coherent systemic awareness. The dynamical boundary is one piece.
-- λ ∉ M_λ: fragmented dynamics. Cantor dust. No unified boundary.
+- λ ∈ M_λ: coherent modeled dynamics. The dynamical boundary is one piece.
+- λ ∉ M_λ: fragmented modeled dynamics. Cantor dust. No unified boundary.
 
-The 12% figure carries over: approximately 12% of the λ-parameter space produces connected Julia sets. Coherent systemic awareness is geometrically rare. [A for math; I for interpretation]
+The 12% figure carries over: approximately 12% of the λ-parameter space produces connected Julia sets. Coherent bounded dynamics are geometrically rare in this model; the systemic-awareness reading is interpretive. [A for math; I for interpretation]
 
 ---
 
@@ -375,35 +375,35 @@ The 12% figure carries over: approximately 12% of the λ-parameter space produce
 
 ### 6.1 Feigenbaum Scaling (unchanged from v2.0)
 
-**Prediction:** Period-doubling cascades in neural oscillation frequencies should show δ ≈ 4.669 under increasing stimulation intensity. [T]
+**Test prompt:** If neural recurrence is well approximated by a quadratic/logistic nonlinearity in a given regime, period-doubling cascades in neural oscillation frequencies should show δ ≈ 4.669 under increasing stimulation intensity. [T]
 
-**What this tests:** Whether neural dynamics have a quadratic (logistic) nonlinearity. This is the same test as v2.0 but now with stronger motivation: the logistic map is the iterated VIVEKA formula, so Feigenbaum scaling in neural data would confirm that the brain iterates something structurally equivalent to P_node = ΦV.
+**What this tests:** Whether neural dynamics in the tested regime have a quadratic (logistic) nonlinearity. This is the same test as v2.0 but now with stronger motivation: the logistic map is the iterated product model, so Feigenbaum scaling in neural data would support, not prove, the claim that the brain iterates something structurally comparable to P_node = ΦV.
 
 **Status:** Partially observed (Freyer et al., 2011). Not yet tested for Feigenbaum constants specifically.
 
 ### 6.2 The λ = 2 Meditation Prediction (new)
 
-**Prediction:** During deep meditative absorption (samādhi), the effective recurrent gain λ of the thalamocortical system should approach 2 — the superstable fixed point of the logistic map. [T]
+**Test prompt:** During deep meditative absorption (samādhi), an effective recurrent-gain proxy may approach the model's λ = 2 superstable fixed point. [T]
 
 **Test:** Measure the spectral radius of the effective connectivity matrix in experienced meditators during jhāna states vs. normal cognition. λ ≈ 2 in jhāna; λ ≈ 2.5–3.5 in normal cognition; λ > 4 in seizure.
 
-**What this tests:** Whether meditative "equanimity" corresponds to the mathematically unique superstable state of the iterated formula.
+**What this tests:** Whether meditative "equanimity" can be quantitatively modeled by the superstable state of the iterated formula.
 
 ### 6.3 The λ > 4 Fragmentation Prediction (new)
 
-**Prediction:** States of systemic awareness fragmentation (psychosis, dissociation, seizure) correspond to λ > 4 — the regime where the logistic map escapes [0,1] and the Julia set disconnects. [T]
+**Test prompt:** States of systemic-awareness fragmentation (psychosis, dissociation, seizure) may correspond to an effective-gain proxy beyond the model's containment boundary, λ > 4 — the regime where the logistic map escapes [0,1] and the Julia set disconnects. [T]
 
 **Test:** Measure effective recurrent gain during psychotic episodes, dissociative states, and seizures. Predict λ > 4 (supercritical gain, positive feedback loop exceeding containment).
 
-**What this tests:** Whether loss of systemic awareness coherence corresponds to the mathematically defined fragmentation boundary of the logistic map.
+**What this tests:** Whether loss of systemic-awareness coherence can be usefully modeled by the fragmentation boundary of the logistic map.
 
 ### 6.4 The Critical Gain Hypothesis (new)
 
-**Prediction:** Waking systemic awareness operates in the range 2 < λ < 4, with optimal cognitive performance near λ ≈ 3.57 (edge of chaos). [T]
+**Test prompt:** Waking systemic awareness may operate in a bounded-complexity band analogous to 2 < λ < 4, with some cognitive performance metrics peaking near an edge-of-chaos regime. [T]
 
 **Test:** Correlate measured recurrent gain with cognitive performance metrics across conditions (sleep, anesthesia, normal, stimulated, seizure). Predict inverted-U relationship peaking near λ ≈ 3.5.
 
-**What this tests:** Whether the "critical brain" hypothesis is quantitatively described by the logistic map's bifurcation structure.
+**What this tests:** Whether the "critical brain" hypothesis can be usefully parameterized by the logistic map's bifurcation structure.
 
 ---
 
@@ -422,9 +422,9 @@ The 12% figure carries over: approximately 12% of the λ-parameter space produce
 ### 7.2 Claims Interpreted [I]
 
 8. Iterating P_node = ΦV is the natural dynamical extension of the framework: "what happens when the formula acts on itself in time?"
-9. λ corresponds to recurrent gain in neural processing.
-10. Connected Julia set = coherent phenomenological experience.
-11. λ = 2 = deep meditative absorption. λ ≈ 3–3.57 = normal cognition. λ > 4 = fragmentation.
+9. λ is a candidate recurrent-gain proxy in neural processing.
+10. Connected Julia set can model coherent phenomenological experience.
+11. λ = 2 can model deep meditative absorption; λ ≈ 3–3.57 can model active cognition; λ > 4 can model fragmentation.
 
 ### 7.3 Claims Testable [T]
 
@@ -446,9 +446,9 @@ The 12% figure carries over: approximately 12% of the λ-parameter space produce
 
 | Version | Title | Central Claim | +c Status | Parameter |
 |---------|-------|---------------|-----------|-----------|
-| v1.0 | The Periodic Table of Minds | M IS the catalog of systemic awareness | Not addressed | c (thalamocortical) |
+| v1.0 | The Periodic Table of Minds | Retired claim: M as catalog of systemic awareness | Not addressed | c (thalamocortical) |
 | v2.0 | The Classification Problem for Dynamics on S² | M classifies dynamics; systemic awareness conditional | Open problem, 3 resolutions | c (open) |
-| **v3.0** | **The Mandelbrot Set IS the Formula Being Iterated** | **M classifies dynamics of iterated Zero-Sum Resolution Equation** | **Dissolved** | **λ (recurrent gain)** |
+| **v3.0** | **The Mandelbrot Set as the Formula Being Iterated** | **M classifies dynamics of the iterated product model** | **Dissolved** | **λ (recurrent-gain proxy)** |
 
 The mathematical content strengthens with each version. v1.0 asserted without justification. v2.0 identified the gap honestly. v3.0 closes the gap by finding the right coordinates.
 
@@ -458,15 +458,15 @@ The mathematical content strengthens with each version. v1.0 asserted without ju
 
 The quadratic family z → z² + c is conjugate to the logistic map w → λw(1−w). In framework-native coordinates, the logistic map matches the VIVEKA formula P_node = Φ × V iterated with gain λ. [A/I] The "+c" term is treated here as the framework's formula seen in non-native coordinates.
 
-The Mandelbrot set classifies what happens when Zero-Sum Resolution Equation acts on itself. λ = 2 gives the superstable equator. λ > 4 gives fragmentation. Between them: the full taxonomy of possible dynamics.
+The Mandelbrot set classifies what happens when the product model acts on itself. λ = 2 gives the superstable equator. λ > 4 gives fragmentation in the model. Between them: the taxonomy of this iteration's possible bounded dynamics.
 
-The formula iterates itself in this coordinate system. The Mandelbrot set classifies those iterations. We just needed the right coordinates to see it. [I]
+The formula iterates itself in this coordinate system. The Mandelbrot set classifies those iterations. The consciousness and neural readings begin only after that mathematical result, as explicit `[I/T]` bridges. [A/I]
 
 ---
 
 Zero-Sum Resolution Equation
 
-The formula iterates. The Mandelbrot set classifies the iterations. λ is the gain.
+The product model iterates. The Mandelbrot set classifies the iterations. λ is the gain parameter; neural or phenomenological λ is a testable proxy, not a settled identity.
 
 *MF-66 v3.0 | VIVEKA v8.0 | February 2026*
 
