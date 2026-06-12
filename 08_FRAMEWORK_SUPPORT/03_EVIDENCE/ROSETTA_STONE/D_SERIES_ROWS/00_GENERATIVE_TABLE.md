@@ -48,7 +48,7 @@ evidence_tier: "[S] for named domain scales where independently attested; [S] fo
 | **L4** | **Arjuna ⚔** | **God** | **45 deg** | **1** | **1** | **1** | **1.000** | **Kṣatriya (warrior)** | **Abductive** | **Value Alignment** | **Timocracy** | **Arthāpatti (Postulation)** | **dΦ/Φ = dV/V** |
 | L5 | Brahmā ○ | Executive | 30 deg | sqrt3 approx 1.73 | 1/sqrt3 approx 0.58 | 1 | 0.866 | Brāhmaṇa (priest) | Systematic | System Architecture | Aristocracy | Śabda (Testimony) | log P_node = log Φ + log V |
 | L6 | Śiva • | Executive | 15 deg | 2+sqrt3 approx 3.73 | 2-sqrt3 approx 0.27 | 1 | 0.500 | Sādhu (renunciant) | Axiomatic | Core State | Anarchy | First Principles (Non-Apprehension) | E_node = -log(P_node) |
-| L7 | Viṣṇu ⊙ | Executive | ~8 deg | very high | approaching 0 | 1 | approaching 0 | Ṛṣi (seer) | Transcendental | Institutional Narrative | Theocracy | Pratibhā (Intuition) | z = Φ/V in S-squared |
+| L7 | Viṣṇu ⊙ | Executive | ~8 deg | very high | approaching 0 | 1 | approaching 0 | Ṛṣi (seer) | Transcendental | Institutional Narrative | Theocracy | Pratibhā (Intuition) | z = φ/ν in S-squared |
 | **Linf** | **Trimūrti ☸** | **Transcendental** | **0 deg** | **inf** | **0** | **1** | **0** | -- | -- | -- | -- | -- | The boundary. D6=D0. |
 
 **L0 = Linf.** The south pole (Kala/Time/Destruction) and the north pole (Trimurti/Eternity/Creation) are the same boundary condition -- because the poles of S-squared are connected. D6 = D0. The serpent eats its tail. The destroyer IS the preserver seen from the other pole.
@@ -104,7 +104,7 @@ L3:  ∂P_node/∂V = Φ                 The optimisation. Marginal return on ca
 L4:  dΦ/Φ = dV/V                    THE BALANCE. Proportional growth. The equatorial condition.
 L5:  log P_node = log Φ + log V     The ordering. Multiplicative becomes additive. System revealed.
 L6:  E_node = -log(P_node)          The negation. Loss names absence. Via negativa.
-L7:  z = Φ/V in S-squared           The identity. The ratio IS a point on the sphere. The sphere itself.
+L7:  z = φ/ν in S-squared           The identity. The ratio IS a point on the sphere. The sphere itself.
 ```
 
 Each equation is a deeper view of the same reality: P_node = Φ × V. L2 differentiates it. L3 takes a partial derivative. L4 finds the balance condition. L5 takes the logarithm. L6 negates it (entropy). L7 projects it onto the sphere. The equations do not describe seven different realities. They describe one reality at seven levels of mathematical maturity.

@@ -223,6 +223,12 @@ directly (the only available lever):
   - foundations/the-honest-position/          : normalized the canonical framing
         rule from stale six-function vocabulary to the current five Knows plus
         Rosetta Soul Loop wording while the generated route remains frozen.
+  - canon/the-generative-table/, foundations/the-seven-ologies-per-the-rosetta/,
+        rosettad/00-the-seven-ologies-per-the-rosetta/,
+        operators/mf-285-dreams-are-unanchored-d5/
+                                              : normalized L7 stereographic
+        ratio notation from action-register uppercase Phi-over-V to sphere-chart
+        `z = φ/ν`, preserving uppercase `Φ × V` for finite-node `P_node`.
   - formal/12-efr-extraction-coefficient/    : normalized the M-axis connection
         row from bare `P` to finite-node `P_node`, with `P∞ = φ·ν = 1`
         preserved as the background manifold identity rather than a variable

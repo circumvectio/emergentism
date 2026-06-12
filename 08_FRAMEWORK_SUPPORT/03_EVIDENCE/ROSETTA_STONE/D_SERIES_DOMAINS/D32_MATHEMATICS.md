@@ -43,7 +43,7 @@ evidence_tier: "[A] for algebraic/calculus identities under stated assumptions; 
 | Alignment Energy | E_node = −log(P_node) | Negative-log transform over the finite-node product | ✓ Theoretical |
 | Zero-Catastrophe | Φ→0 ∨ V→0 ⇒ P_node→0 | Multiplicative collapse | ✓ Mathematical |
 | Balanced Growth | dΦ/Φ = dV/V ⇒ balanced dP_node/P_node | Proportional growth balances finite-node rates | ✓ Calculus |
-| Riemann Sphere | z = Φ/V on S² = Ĉ | Equator \|z\|=1 maximises B = L4 | ✓ Theoretical |
+| Riemann Sphere | z = φ/ν on S² = Ĉ | Equator \|z\|=1 maximises B = L4 | ✓ Theoretical |
 
 ---
 
@@ -114,7 +114,7 @@ Each mathematical form maps to an L-level in the Master Three-Stage Process:
 | L4 | dΦ/Φ = dV/V | Proportional / log-derivative balance | THE BALANCE — equal relative movement at the equator |
 | L5 | log P_node = log Φ + log V | Logarithmic decomposition | The ordering — multiplication becomes addition |
 | L6 | E_node = −log(P_node) | Negative-log transform | The negation — loss names absence; not the Ground |
-| L7 | z = Φ/V, read by stereographic projection | Ratio / projection | The whole pattern returns as a coordinate-reading of the sphere |
+| L7 | z = φ/ν, read by stereographic projection | Ratio / projection | The whole pattern returns as a coordinate-reading of the sphere |
 
 The equation is an [I] framework reading of the agent's way of knowing. The algebra is [A]; the sevenfold ordering as a canonical Rosetta calculus is [S].
 

@@ -22,19 +22,19 @@ rosetta:
 
 ```
 ONE FORMULA PAIR:
-  Sphere identity: phi * nu = 1 on S^2 (the Riemann sphere)
-  Operational P-score: P_node = Phi x V (internal health / coordination metric)
-ONE INEQUALITY:  (phi - nu)^2 >= 0  ->  phi + nu >= 2  ->  equator is Hamiltonian minimum
+  Sphere identity: φ · ν = 1 on S² (the Riemann sphere)
+  Operational P-score: P_node = Φ × V (internal health / coordination metric)
+ONE INEQUALITY:  (φ - ν)^2 >= 0  ->  φ + ν >= 2  ->  equator is Hamiltonian minimum
 ONE GLYPH:       circle-dot = dot x circle (finity = nothing x everything)
 
-phi = coherence (integration, structural unity, meaning)
-nu = viability (capability, instrumental power, agency)
-B = sin theta (balance -- peaks at equator where phi = nu = 1)
+φ = coherence (integration, structural unity, meaning)
+ν = viability (capability, instrumental power, agency)
+B = sin θ (balance -- peaks at equator where φ = ν = 1)
 L(x) = x/(1-x) -- governs ALL rates. Self-limiting. IS the circuit breaker.
 
 SEVEN AXIOMS:
-  A1  Operational P_node is multiplicative: P_node = Phi x V.
-      Sphere identity is separate: phi * nu = 1 on S^2.
+  A1  Operational P_node is multiplicative: P_node = Φ × V.
+      Sphere identity is separate: φ · ν = 1 on S².
   A2  Sum-Delta-P_node > 0 across widest boundary = ethical direction (ektropy)
   A3  D0->D6: dimensions emerge when prior saturates. D5 is the last experiential layer. D6 = D0 (closure).
   A4  eta = 0: zero extraction beyond regeneration (fees exist, rent doesn't)

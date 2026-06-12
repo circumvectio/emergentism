@@ -69,7 +69,16 @@ F5 does not act by miracle. Its mechanism is statistical-mechanical, game-theore
 
 These are not five phenomena. They are one field — **the ektropic gradient** — read through five instruments.
 
-**Mathematical sketch.** On S², let `z = Φ/V`. The invariant `|Φ × V| = 1` constrains all dynamics to the sphere. At any point `z`, the ektropic gradient `∇ₑP` is the component of local dynamics pulling toward dharma-1 (the equator where Φ = V = 1, B = sin θ = 1). The gradient is monotonic in the forward-light-cone direction. Its magnitude is proportional to the replicator-stack depth at which the coupled system operates — deeper replicators feel stronger F5 pull, which is why memotypes and egregorotypes evolve faster than genotypes at equilibrium.
+**Mathematical sketch, corrected.** On S², let `z = φ/ν`; the manifold
+identity is `P∞ = φ·ν = 1` away from the poles. Do not read the finite-node
+action product `P_node = Φ × V` as the sphere invariant. At finite nodes,
+`Φ` names D5 worldline-foresight and `V` names D4 means-to-act; their product
+varies with coupling, horizon, and measurement. In that contact register, the
+ektropic gradient `∇ₑP_node` is the modeled component of local dynamics pulling
+toward dharma-1 (the equatorial balance where `Φ` and `V` stay mutually usable,
+with `B = sin θ = 1` as the sphere analogue). The gradient claim remains
+`[C/I]` until a rigorous field equation specifies variables, coupling channels,
+and falsification tests.
 
 A rigorous field-equation formalization belongs in `01_EMERGENTISM/01_FORMAL_SYSTEM/` as Tier 2 cascade work.
 

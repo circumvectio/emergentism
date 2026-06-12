@@ -222,7 +222,7 @@ also requires preserving or raising P_node,H across the relevant horizon.
 - [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) -- canonical epistemic status of all claims
 - Triadic Stability (11_EFR_TRIADIC_STABILITY.md; link removed to prevent cycle) -- uniqueness proof for the triadic multiplicative structure this lemma depends on
 - Godel Clarification (09_EFR_GODEL_CLARIFICATION.md; link removed to prevent cycle) -- what "complete" means and does not mean for the framework
-- Core Concepts -- single source of truth for `P∞ = phi x nu = 1`, `P_node = Phi x V`, and related definitions
+- Core Concepts -- single source of truth for `P∞ = φ · ν = 1`, `P_node = Φ × V`, and related definitions
 
 *Power-Max Lemma | 2026-03-22 | Individual optimization aligns with collective optimization under coupled multiplicative scoring, long horizon, and enforced η = 0.*
 

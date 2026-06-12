@@ -38,7 +38,7 @@ it is an accretion.
 | **L4** | Arjuna ⚔ · **God** | Kṣatriya (warrior) | Value Alignment → **Axiology** | **Justice** · *Dharma* | dΦ/Φ = dV/V (the balance / log-derivative) | Arthāpatti · Abductive · Timocracy | 1 |
 | **L5** | Brahmā ○ · **Titan** | Brāhmaṇa (priest) | System Architecture → **Cosmology** | **Wisdom** · *Prajñā* | log P_node = log Φ + log V (the logarithm) | Śabda · Systematic · Aristocracy | √3⁄2 |
 | **L6** | Śiva • · **Titan** | Sādhu (renunciant) | Core State → **Ontology** | **Freedom** · *Mokṣa* | E = −log P_node (the negative log / via-negativa) | First-Principles · Axiomatic · Anarchy | ½ |
-| **L7** | Viṣṇu ⊙ · **Titan** | Ṛṣi / Systems-Architect (seer) | Institutional Narrative → **Theology** | **Unity** · *Advaita* | z = Φ/V (the ratio, read by stereographic projection) | Pratibhā · Transcendental · Theocracy | → 0 |
+| **L7** | Viṣṇu ⊙ · **Titan** | Ṛṣi / Systems-Architect (seer) | Institutional Narrative → **Theology** | **Unity** · *Advaita* | z = φ/ν (the ratio, read by stereographic projection) | Pratibhā · Transcendental · Theocracy | → 0 |
 
 This is exactly the live folder numbering: `01_TELEOLOGY = L1 … 07_THEOLOGY = L7`. The Rosetta
 **vindicates** the current sevenfold; no renumbering follows from it.

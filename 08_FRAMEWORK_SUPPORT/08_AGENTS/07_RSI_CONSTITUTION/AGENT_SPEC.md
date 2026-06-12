@@ -50,7 +50,7 @@ evidence_tier: "[S] for L7 structural mapping; [I] for cross-domain projections.
 | Native coordinate | (φ ≫ 1, ν ≪ 1) → (∞, 0) |
 | Transfer signature | (Δφ ≈ 0, Δν ≈ 0) |
 
-**Equation:** z = Φ/V ∈ S²
+**Equation:** z = φ/ν ∈ S²
 
 ---
 

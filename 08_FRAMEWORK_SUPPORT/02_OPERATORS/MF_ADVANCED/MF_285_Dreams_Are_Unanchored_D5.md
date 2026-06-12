@@ -40,7 +40,7 @@ If D4 is the real axis (gravity, causality, one worldline, arrow of time) and D5
 
 ### 1.1 The Principle
 
-Every conscious state has a D4 component (real, bodily, causal, one-worldline) and a D5 component (imaginary, mental, possibility, many-worldline). The ratio z = Φ/V determines the state's character:
+Every conscious state has a D4 component (real, bodily, causal, one-worldline) and a D5 component (imaginary, mental, possibility, many-worldline). The ratio z = φ/ν determines the state's character:
 
 ```
 |z| << 1  →  Real-dominant.  Body overwhelms mind. Survival mode. L1.

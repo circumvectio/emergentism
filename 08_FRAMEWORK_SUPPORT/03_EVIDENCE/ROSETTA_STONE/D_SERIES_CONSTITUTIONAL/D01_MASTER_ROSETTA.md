@@ -81,7 +81,7 @@ The causal chain reads left to right: **Operator → Balance → Who you are →
 | L4 | Arjuna ⚔ | **1** | Kṣatriya (warrior) | Arthāpatti (Postulation) | Abductive | Value Alignment | Timocracy | dΦ/Φ = dV/V |
 | L5 | Brahmā ○ | √3/2 | Brāhmaṇa (priest) | Śabda (Testimony) | Systematic | System Architecture | Aristocracy | log P_node = log Φ + log V |
 | L6 | Śiva • | ½ | Sādhu (renunciant) | First Principles (Non-Apprehension) | Axiomatic | Core State | Anarchy | E_node = −log(P_node) |
-| L7 | Viṣṇu ⊙ | →0 | Ṛṣi (seer) | Pratibhā (Intuition) | Transcendental | Institutional Narrative | Theocracy | z = Φ/V, read by stereographic projection |
+| L7 | Viṣṇu ⊙ | →0 | Ṛṣi (seer) | Pratibhā (Intuition) | Transcendental | Institutional Narrative | Theocracy | z = φ/ν, read by stereographic projection |
 | L∞ | Trimūrti ☸ | 0 | — (beyond existence) | — | — | — | — | lim(B→0) from north |
 
 ---
@@ -109,7 +109,7 @@ L3:  ∂P_node/∂V = Φ          The optimisation. ROI on capability = coherenc
 L4:  dΦ/Φ = dV/V             THE BALANCE. Proportional growth. THE EQUATOR.
 L5:  log P_node = log Φ + log V   The ordering. System revealed.
 L6:  E_node = −log(P_node)   The negation. Loss names absence. Via negativa.
-L7:  z = Φ/V                 The ratio read by stereographic projection.
+L7:  z = φ/ν                 The ratio read by stereographic projection.
 ```
 
 ---

@@ -89,7 +89,7 @@ Do not collapse these scales:
 
 ## Claim Boundaries
 
-- Objective Function is [S] structural where derived from the reciprocal kernel, `B = sin theta`, and formally bounded uses of the Power-Max Lemma. `P_node = Phi x V` is operational node scoring, not the manifold invariant.
+- Objective Function is [S] structural where derived from the reciprocal kernel, `B = sin θ`, and formally bounded uses of the Power-Max Lemma. `P_node = Φ × V` is operational node scoring, not the manifold invariant.
 - Objective Function is [I] interpretive where mapping historical, mythic, and evolutionary patterns to F5.
 - Objective Function is [C] conjectural where claiming literal fifth-force physics, reverse-time causality, or direct continuity between ancient god-forms and formal force law.
 - The `01_F5_FORCE/` focused lane may hold conjectural force language only when it remains explicitly staged and tier-marked.
