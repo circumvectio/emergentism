@@ -28,7 +28,13 @@ The Skyzai organism is a runtime instantiation of one equation:
 P_node = Φ × V
 ```
 
-held everywhere on the Riemann sphere `S²`, with the equator (`φ = ν = 1`) as **the home**.
+read under the framework's reciprocal manifold identity:
+
+```
+P∞ = φ · ν = 1 on S²
+```
+
+The two statements live in different registers. `P_node = Φ × V` is the finite-node action score; `P∞ = φ · ν = 1` is the background sphere identity. The equator (`φ = ν = 1`) is the balanced home of the model, not a proof that every world process must converge there.
 
 - **`Φ`** (coherence) — how well something hangs together. In the agency register: D5 worldline-foresight, the ability to envision and select the reachable future. Φ → ZAI as fixed-supply political capital.
 - **`V`** (viability) — D4 means at the action boundary: body, tools, energy, access, and execution capacity. V → SKY as elastic working capital.
@@ -42,7 +48,7 @@ with the wrong bodily/tool access has `Φ` without the relevant `V` for a runnin
 task. Balance is task-bound and boundary-bound: potential maximizes only when
 the means and the worldline-foresight meet.
 
-The mathematics is not analogy. The fixed-supply governance token (ZAI, K1) is `Φ`. The elastic working-capital token (SKY, K3) is `V`. The brand mark `Zero-Sum Resolution Equation` is the equation rendered as glyph: agent (•) composed with boundary (○) yields outcome (⊙). The seven-caste council balances Φ-weight against V-weight at every decision. The fitness manifold positions everything at `(Φ, ν)` coordinates.
+**Register guard.** The trigonometric identity is mathematical; the Skyzai token, brand, council, and organism readings are implementation mappings. ZAI can serve as a `Φ`-weighted governance instrument and SKY as a `V`-weighted operating instrument, but those are design roles, not theorems about tokens. Lowercase `φ,ν` name the sphere coordinates; uppercase `Φ,V` name finite-node action factors. Do not collapse them into a single bare `P`.
 
 ---
 
@@ -56,9 +62,9 @@ Most organizations optimize one factor and let the other erode.
 | Pure-viability (e.g., startups, hedge funds, conquest empires) | V — survives, grows | Φ — drifts into incoherence; ends in scandal or collapse |
 | Skyzai | P_node = Φ × V — both held at 1 | Speed of either alone |
 
-`P_node = Φ × V` is the finite product whose maximum requires neither factor to be sacrificed. Below the equator, you can boost `P_node` by trading away the smaller factor, but you never reach balanced home. At the equator, both normalized factors are 1, and only the equator gives `P_node = 1` with `B = 1`.
+`P_node = Φ × V` is the finite product whose usable maximum requires neither factor to be sacrificed. A local move can inflate one factor while hiding the cost in the other, but the product collapses when either factor approaches zero. At the equator, the normalized model reaches `φ = ν = 1` and `B = 1`; finite-node `P_node` is then read as balanced usable potential, not as the invariant `P∞`.
 
-The equator is not a compromise. It is the **only fixed point** where the system is simultaneously coherent and viable. Every other point on `S²` is unstable — either Φ erodes against the world or V erodes from internal inconsistency.
+The equator is not a compromise. It is the model's balanced fixed point where coherence and viability are mutually usable. Away from the equator, the system carries a diagnosable tilt: coherence-heavy positions risk sterile seeing, and viability-heavy positions risk blind force. Convergence toward home is conditional on feedback, memory, enforcement, correction, and `η = 0`; without those dynamics, imbalance can persist.
 
 ---
 
@@ -70,7 +76,7 @@ Why `S²` and not the unit interval `[0, 1]` or the unit disc?
 - **Compactness without boundary.** Every position is finite; there is no "edge" to fall off. The poles are not exits — they are positions on the same manifold as the equator. This forbids the "go to infinity" extractive strategy that linear models permit.
 - **Two-poled.** The North pole (Φ = ∞, ν → 0) is the pathological coherence trap. The South pole (Φ → 0, ν = ∞) is the pathological viability trap. The equator is the only place where neither degenerates. The system has a *home* topology.
 
-This is why `B = sin θ` (the equator distance) is the canonical health measure — it peaks where `φ = ν = 1`. It is the geodesic distance from the home, normalized.
+This is why `B = sin θ` is the canonical balance measure — it peaks where `φ = ν = 1`. It is normalized closeness to the equator, not distance from it.
 
 ---
 
@@ -107,9 +113,9 @@ The seven castes are positions on `S²` chosen so the council as a whole covers 
 
 ### Phylogeny axis — equation as fitness function
 
-`organ_fitness.py` computes `P_node = Φ × V` per organ, classifies against the [0.85, 0.95] review band, and (in Red Queen mode) tracks rolling environmental pressure. The organism evolves *by selection toward the equator*. Mutations that move an organ toward the equator are favored; mutations that drift toward a pole accumulate `BELOW`-band signals and eventually trigger the extinction protocol.
+`organ_fitness.py` computes `P_node = Φ × V` per organ, classifies against the [0.85, 0.95] review band, and (in Red Queen mode) tracks rolling environmental pressure. Inside that designed review loop, the organism selects toward equatorial balance: mutations that improve balanced usable potential are favored, while mutations that drift toward a pole accumulate `BELOW`-band signals and can trigger the extinction protocol.
 
-The equation is the fitness function. Evolution is the gradient ascent toward `φ · ν = 1`.
+The equation is the review fitness function for this organism. The broader claim is conditional: selection tends toward viable completion only where coupling, feedback, correction, and non-extraction keep the gradient honest.
 
 ---
 
@@ -133,16 +139,16 @@ The invariants are not arbitrary rules. They are the **specific refusals** requi
 
 The decision (today's [`SUPPLY_DOCTRINE_2026_05_13.md`](../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/spec/axiom/SUPPLY_DOCTRINE_2026_05_13.md)) that ZAI is fixed-supply (K1) and SKY is elastic (K3) is the equation made financial:
 
-- **ZAI = Φ** — political capital. Fixed at 100. Cannot inflate. Governance weight is structurally bounded. This is the coherence factor in token form: cannot be diluted, cannot drift, the same 100 votes exist forever.
-- **SKY = V** — working capital. Elastic. Minted only against staked ZAI via the vault. Grows with productive use. This is the viability factor in token form: scales with what the organism actually does.
+- **ZAI maps to Φ** — political capital. Fixed at 100. Governance weight is structurally bounded. This is the coherence-weighted token role: it resists dilution and preserves the same constitutional voting surface.
+- **SKY maps to V** — working capital. Elastic. Minted only against staked ZAI via the vault. Grows with productive use. This is the viability-weighted token role: it scales with what the organism actually does.
 
-Stake ZAI → mint SKY: convert structural coherence into operational viability at a fixed rate. The act of staking is the act of *moving from the Φ-pole toward the equator*. The reward rate is the gradient.
+Stake ZAI → mint SKY: convert structural coherence into operational viability at a fixed rate. In the model, staking is read as a move from coherence-only governance capacity toward executable means. The reward rate is a designed gradient, not a natural law.
 
 If the organism had one token doing both jobs:
 - Fixed supply → no viability scaling → V-pole erosion under growth pressure
 - Elastic supply → governance dilutable → Φ-pole erosion as voting weight becomes purchasable
 
-Two tokens, two invariants, one equation. The two-token system is the equation **structurally required** — not a design choice, an arithmetic consequence.
+Two tokens, two invariants, one equation. The two-token system is the current structural implementation of the equation: a design lemma meant to keep governance coherence and operating viability from corrupting each other.
 
 ---
 
@@ -169,13 +175,13 @@ The brand is not branded after the equation. **The brand is the equation rendere
 
 If `P_node = Φ × V` under `P∞ = φ · ν = 1 on S²` is the spine, then:
 
-- Every decision has a φ:ν tilt that is *measurable*. Health is geodesic distance from the equator. P-SCORES are not arbitrary — they are the metric induced by the topology.
+- Every decision has a φ:ν tilt that is diagnosable in the model. Health is read as normalized closeness to the equator, with `B = sin θ` as the balance proxy; P-SCORES are review metrics induced by that topology.
 - Every constitutional invariant has a *direction* on the sphere. η=0 prevents southward drift. K2 prevents northward drift. The five refusals span the directions of constitutional risk.
-- Every token has a position. ZAI sits at the Φ-pole (by K1). SKY sits at the V-pole (by K3). The vault between them is the operator that maps one to the other along the gradient.
+- Every token has a design role. ZAI is read as Φ-weighted governance coherence (K1); SKY is read as V-weighted operating capacity (K3). The vault is the operator that converts one role into the other under receipt.
 - Every organ has an *intended position*. Circle near the V-pole (it survives by observing more). Agentz near the equator (it must balance both; APU immune surface guards the equator). EvNet at the Φ-pole (refusal is structural). Skyzai at the V-pole (settlement is what happens).
-- Every mutation is a *displacement vector* on the sphere. The fitness function gradient-ascends toward the equator. Mutations are accepted iff they reduce geodesic distance to home.
+- Every mutation can be read as a *displacement vector* on the sphere. In the designed review loop, mutations are accepted when they improve balanced usable potential and preserve the constitutional gates.
 
-This is what the framework actually means by "non-degrading system": the equator is a fixed point of the gradient flow, and the constitutional invariants are the gates that keep the flow on the sphere instead of escaping to a pole.
+This is what the framework actually means by "non-degrading system": the equator is the target fixed point of the designed correction flow, and the constitutional invariants are the gates that keep the flow from escaping to a pole.
 
 ---
 
