@@ -52,7 +52,7 @@ The model's ground-facing limit has been named: κ = 0, the empty string $\varno
 
 What remains is the *practice*: how to maintain $P∞ = \varphi \cdot \nu = 1$ under perturbation. The D0–D6 scaffold does not eliminate the need for judgment, ethics, or contemplation. It provides the coordinate system within which those activities operate. The sitting practice (K=0 reduction) is not a replacement for thought — it is the method of returning to the ground-facing limit from which thought reappears.
 
-The Power-Max Lemma ($\Sigma P$ is maximized when each $P_i$ is maximized cooperatively) does not tell you *how* to cooperate in a specific situation. The extraction coefficient $\eta$ classifies systems as Good ($\eta < 1$), Bad ($\eta \approx 1$), or Evil ($\eta \to \infty$) — but navigating the boundary between them, in lived practice, remains philosophy's work.
+The Power-Max Lemma ($\Sigma P_{node}$ is maximized when each $P_{node,i}$ is maximized cooperatively under coupling, long horizon, and enforced $\eta = 0$) does not tell you *how* to cooperate in a specific situation. The extraction coefficient $\eta$ classifies systems as Good ($\eta < 1$), Bad ($\eta \approx 1$), or Evil ($\eta \to \infty$) — but navigating the boundary between them, in lived practice, remains philosophy's work.
 
 ## 4. THE FRAMEWORK CONNECTION
 

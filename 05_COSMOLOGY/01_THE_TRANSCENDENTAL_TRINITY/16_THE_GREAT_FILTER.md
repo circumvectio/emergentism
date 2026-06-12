@@ -170,7 +170,7 @@ From the Is-Ought dissolution (PD_10): the self-termination of parasitism requir
 
 In population terms: **~60% of nodes must spend >50% of their revolution in the giving hemisphere** for the civilisation to hold above the Great Filter threshold.
 
-This is the GFS test's civilisational prediction. If the multiplicative model (P = φ × ν) holds across ~208,000 individuals in 23 countries, the η_c threshold becomes measurable: what fraction of the population shows balanced dwell times? And is that fraction above or below ~60%?
+This is the GFS test's civilisational prediction. If the finite-node product model (`P_node = Φ × V`) holds across ~208,000 individuals in 23 countries, the η_c threshold becomes measurable: what fraction of the population shows balanced dwell times? And is that fraction above or below ~60%?
 
 ---
 

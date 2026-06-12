@@ -109,7 +109,7 @@ WITHOUT EGREGORE:
   Network P = Σ P_i + coupling bonuses.
 
 WITH EGREGORE:
-  Each demon sorts PARTLY for its own P, PARTLY for the egregore's persistence.
+  Each demon sorts PARTLY for its own P_node, PARTLY for the egregore's persistence.
   Network P_carriers = Σ P_i + coupling bonuses − egregore tax
   Egregore P_self = function of carrier computation redirected to its patterns
 ```

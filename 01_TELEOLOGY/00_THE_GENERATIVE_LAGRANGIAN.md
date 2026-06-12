@@ -259,7 +259,7 @@ admissible manifold.
 
 **Canonical statement:**
 
-> **P_node = Φ × V at the equator under the power-max lemma, with η = 0
+> **P_node = Φ × V constrained toward equatorial balance under the power-max lemma, with η = 0
 > enforced, is the framework's substrate-neutral fitness-function
 > specification.**
 

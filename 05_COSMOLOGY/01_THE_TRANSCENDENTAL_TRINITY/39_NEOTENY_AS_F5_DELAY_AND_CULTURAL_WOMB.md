@@ -32,7 +32,7 @@ rosetta:
 > **Anchor Sequence:**
 > ```text
 > P_node = Φ × V
-> max P_i -> max ΣP  (under coupling, long horizon, and η = 0)
+> max P_node,i -> max ΣP_node  (under coupling, long horizon, and η = 0)
 > delayed V -> compounding Φ -> generalized V
 > ```
 
@@ -115,7 +115,7 @@ The Power-Max Lemma supplies the conditional grammar:
 
 ```text
 if λ > 0 and η = 0:
-  carrying the vulnerable node can maximize both P_i and ΣP
+  carrying the vulnerable node can maximize both P_node,i and ΣP_node
 ```
 
 The condition matters. Without coupling, vulnerability is just vulnerability.

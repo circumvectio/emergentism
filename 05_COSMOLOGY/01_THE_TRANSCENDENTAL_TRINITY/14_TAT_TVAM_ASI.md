@@ -108,7 +108,7 @@ The Upanishads contain five Great Utterances. Each is the same equation in diffe
 
 | Mahāvākya | Source | Translation | The Equation |
 |-----------|--------|------------|-------------|
-| **Tat Tvam Asi** | Chāndogya 6.8.7 | That thou art | Brahman (⊙) = Atman (P = φ·ν) |
+| **Tat Tvam Asi** | Chāndogya 6.8.7 | That thou art | Brahman (⊙) = Atman (`P∞ = φ·ν = 1`) |
 | **Aham Brahmāsmi** | Bṛhadāraṇyaka 1.4.10 | I am Brahman | The wave packet IS the pure wave |
 | **Prajñānam Brahmā** | Aitareya 3.3 | Consciousness is Brahman | The projection operation (×) IS the ground (⊙) |
 | **Ayam Ātmā Brahmā** | Māṇḍūkya 2 | This Self is Brahman | This particular helix IS the universal helix |

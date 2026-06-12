@@ -35,7 +35,7 @@ From the brand canon at [`../06_SPANNING_COMMONS/branding/brand-guide/`](../../.
 
 ### 2.1 The Seal `Zero-Sum Resolution Equation` (identity 01-logo-seal.md)
 
-Three glyphs render the equation `P = Φ × V`:
+Three glyphs render the finite-node equation `P_node = Φ × V`:
 
 ```
 Zero-Sum Resolution Equation

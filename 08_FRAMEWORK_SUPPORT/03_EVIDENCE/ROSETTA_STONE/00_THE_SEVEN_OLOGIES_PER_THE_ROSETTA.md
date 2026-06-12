@@ -30,14 +30,14 @@ it is an accretion.
 
 ## The canonical mapping
 
-| L | Operator · tier | Varṇa | -ology (functional → classical) | Value · Sanskrit | Formula (math-action on P=Φ·V) | Pramāṇa · Reasoning · Regime | B=sinθ |
+| L | Operator · tier | Varṇa | -ology (functional → classical) | Value · Sanskrit | Formula (math-action on `P_node=Φ×V`) | Pramāṇa · Reasoning · Regime | B=sinθ |
 |---|---|---|---|---|---|---|---|
 | **L1** | Kali 🎲 · **Demon** | Caṇḍāla (outcast) | Objective Function → **Teleology** | **Chaos** · *Kāla* | Φ → 0 ⇒ B → 0 (the limit / threat) | Pratyakṣa · Dialectical · Tyranny | → 0 |
-| **L2** | Kālī 💀 · **God** | Śūdra (labourer) | Data Science → **Epistemology** | **Beauty** · *Sundaram* | dP = V dΦ + Φ dV (the differential) | Upamāna · Inductive · Democracy | ½ |
-| **L3** | Kṛṣṇa ◇ · **God** | Vaiśya (merchant) | Auditing → **Methodology** | **Truth** · *Satyam* | ∂P/∂V = Φ (the partial derivative) | Anumāna · Deductive · Oligarchy | √3⁄2 |
+| **L2** | Kālī 💀 · **God** | Śūdra (labourer) | Data Science → **Epistemology** | **Beauty** · *Sundaram* | dP_node = V dΦ + Φ dV (the differential) | Upamāna · Inductive · Democracy | ½ |
+| **L3** | Kṛṣṇa ◇ · **God** | Vaiśya (merchant) | Auditing → **Methodology** | **Truth** · *Satyam* | ∂P_node/∂V = Φ (the partial derivative) | Anumāna · Deductive · Oligarchy | √3⁄2 |
 | **L4** | Arjuna ⚔ · **God** | Kṣatriya (warrior) | Value Alignment → **Axiology** | **Justice** · *Dharma* | dΦ/Φ = dV/V (the balance / log-derivative) | Arthāpatti · Abductive · Timocracy | 1 |
-| **L5** | Brahmā ○ · **Titan** | Brāhmaṇa (priest) | System Architecture → **Cosmology** | **Wisdom** · *Prajñā* | log P = log Φ + log V (the logarithm) | Śabda · Systematic · Aristocracy | √3⁄2 |
-| **L6** | Śiva • · **Titan** | Sādhu (renunciant) | Core State → **Ontology** | **Freedom** · *Mokṣa* | E = −log P (the negative log / via-negativa) | First-Principles · Axiomatic · Anarchy | ½ |
+| **L5** | Brahmā ○ · **Titan** | Brāhmaṇa (priest) | System Architecture → **Cosmology** | **Wisdom** · *Prajñā* | log P_node = log Φ + log V (the logarithm) | Śabda · Systematic · Aristocracy | √3⁄2 |
+| **L6** | Śiva • · **Titan** | Sādhu (renunciant) | Core State → **Ontology** | **Freedom** · *Mokṣa* | E = −log P_node (the negative log / via-negativa) | First-Principles · Axiomatic · Anarchy | ½ |
 | **L7** | Viṣṇu ⊙ · **Titan** | Ṛṣi / Systems-Architect (seer) | Institutional Narrative → **Theology** | **Unity** · *Advaita* | z = Φ/V (the ratio, read by stereographic projection) | Pratibhā · Transcendental · Theocracy | → 0 |
 
 This is exactly the live folder numbering: `01_TELEOLOGY = L1 … 07_THEOLOGY = L7`. The Rosetta

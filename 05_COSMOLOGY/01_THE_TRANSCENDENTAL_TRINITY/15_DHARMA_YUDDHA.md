@@ -152,8 +152,8 @@ commands more than it comprehends. ν = 1 at every node. Aggregate capability
 scales with n. But no individual node exceeds the comprehension constraint.
 
 ```
-One node at L4:    P = 1        (one sovereign life)
-n nodes at L4:     ΣP = n       (the mesh — aggregate scales linearly)
+One node at L4:    P_node = 1        (one sovereign life)
+n nodes at L4:     ΣP_node = n       (the mesh — aggregate scales linearly)
 No node at ν > 1:  η = 0       (zero extraction at every connection)
 ```
 

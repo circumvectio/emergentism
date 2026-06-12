@@ -84,7 +84,7 @@ The ring is not an object. The ring is the relationship. The ring is `P∞ = φ 
 
 ## The 7 Generative Actions (L1–L7)
 
-The perennial traditions encoded strategy-like patterns in mythology. The framework translates them as the 7 exhaustive operators on the $P = V \cdot \Phi$ curve. There are exactly 7 actions: 4 mixed-sign operators (2 Gods + 2 Demons) and 3 same-sign Executive boundary frames.
+The perennial traditions encoded strategy-like patterns in mythology. The framework translates them as the 7 exhaustive operators on the finite-node $P_{\text{node}} = \Phi \times V$ option surface. There are exactly 7 actions: 4 mixed-sign operators (2 Gods + 2 Demons) and 3 same-sign Executive boundary frames.
 
 ### The 4 Mixed-Sign Operators (2 Gods + 2 Demons: Giving and Taking)
 These actions spend one axis across the self ↔ other boundary to yield the opposite on the other axis.
@@ -107,7 +107,7 @@ These actions move both axes together. They are phases of being.
 
 **Seven actions.**
 
-That is the model's closed strategy set. Every situation on the sphere is addressed by one of these seven restorative operators. They cover every sign-combination of $(\Delta\Phi, \Delta V)$ on the $P = V \cdot \Phi$ curve. There is no eighth.
+That is the model's closed strategy set. Every situation on the sphere is addressed by one of these seven restorative operators. They cover every sign-combination of $(\Delta\Phi, \Delta V)$ on the finite-node $P_{\text{node}} = \Phi \times V$ option surface. There is no eighth.
 
 ---
 
@@ -119,7 +119,7 @@ Why is Kali (↓ν) constrained?
 
 To extract is to push another node toward the south pole. To push another node toward the south pole is to destabilize the mesh. To destabilize the mesh is to collapse the coupling that sustains your own `P_node`.
 
-The Power-Max Lemma states it under coupling: max Pᵢ → max ΣP under the model's conditions. To harm another node is to harm the coupling that sustains your own `P_node`. To extract is to self-destabilize.
+The Power-Max Lemma states it under coupling: max `P_node,i` → max `ΣP_node` under the model's conditions. To harm another node is to harm the coupling that sustains your own `P_node`. To extract is to self-destabilize.
 
 **Kali is not prohibited by morality.** Kali is prohibited by arithmetic.
 

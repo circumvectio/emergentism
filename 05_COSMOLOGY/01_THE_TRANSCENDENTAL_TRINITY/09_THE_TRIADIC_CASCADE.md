@@ -89,7 +89,7 @@ The medieval Three-Stage Process — the three arts of language — is the Trini
 
 **Rhetoric (ν).** The structure of persuasion and action. Rhetoric is how language moves others. Rhetoric is the ν-operation: building capability, expressing the conclusion, acting in the world. Rhetoric without grammar is manipulation (ν without φ — the cargo cult). Grammar without rhetoric is pedantry (φ without ν — the bypasser). Logic holds them in product.
 
-**The connection:** Grammar receives (φ). Rhetoric acts (ν). Logic ensures the action follows from the reception (P = φ · ν).
+**The connection:** Grammar receives (φ). Rhetoric acts (ν). Logic ensures the action follows from the reception (`P∞ = φ · ν = 1` in the manifold register).
 
 ---
 

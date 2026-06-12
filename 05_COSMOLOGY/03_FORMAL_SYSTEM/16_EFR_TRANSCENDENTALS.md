@@ -23,7 +23,7 @@ rosetta:
 framework's objective teleology. Beauty, Truth, and Justice are treated as
 asymptotic limits approached by finite systems under the accepted Burri Sphere
 grammar, not as metaphysical objects proved or exhausted by the coordinate
-chart. The structural claims are internal to `P = φ · ν`, `B = sin θ`, and
+chart. The structural claims are internal to `P∞ = φ · ν = 1`, `B = sin θ`, and
 `η = 0`; the naming of those structures as transcendentals remains
 interpretive.
 
@@ -241,8 +241,8 @@ any other node.
 ```
 
 **The Justice Condition:**
-- Each node maintains P = 1 without diminishing others' P
-- The network ΣP is maximized when all individual P are maximized (Power-Max Lemma)
+- Each node maintains `P_node = 1` without diminishing others' `P_node`
+- The network `ΣP_node` is maximized when all individual `P_node` scores are maximized under the Power-Max Lemma's conditions
 - No toll-booths between nodes (direct great-circle connections)
 
 ### 4.4 Justice in the Five Domains

@@ -40,7 +40,7 @@ Useful for builders. But each folder shows you **a part in isolation**. The orga
 | Doc | What it carries |
 |---|---|
 | [`00_THE_WHOLE.md`](00_THE_WHOLE.md) (this file) | Entry point, framing, pointer tree |
-| [`01_THE_EQUATION.md`](01_THE_EQUATION.md) | `P = Φ × V` on the Riemann sphere — the organism's arithmetic spine |
+| [`01_THE_EQUATION.md`](01_THE_EQUATION.md) | `P_node = Φ × V` under `P∞ = φ · ν = 1 on S²` — the organism's arithmetic spine |
 | [`02_THE_FLYWHEEL.md`](02_THE_FLYWHEEL.md) | `N² × log(compute)` — why network value is super-linear and why η=0 is the precondition |
 | [`03_THE_CONSTITUTIONAL_TOPOLOGY.md`](03_THE_CONSTITUTIONAL_TOPOLOGY.md) | η=0 · K2 · K3 · K4 · A7 read as the *topology* the organism is grown to live on |
 | [`04_THE_BRAND_AS_PROJECTION.md`](04_THE_BRAND_AS_PROJECTION.md) | The brand canon IS the constitution projected into pixels and language |
@@ -85,7 +85,7 @@ You may also read non-linearly:
 
 ## The one-paragraph version
 
-The organism is built on a single equation: `P = Φ × V` — coherence times viability — held everywhere on the Riemann sphere with the equator (φ = ν = 1) as the home. That equation, run on a network, produces a flywheel with `N² × log(compute)` value — super-linear in participants, super-linear in cognition. Five constitutional refusals (η=0, K2, K3, K4, A7) are the topology that keeps the flywheel from collapsing into extraction; they are not rules added to the system but the *space* the system is grown to live on. The brand is that topology projected into pixels and language — every visual rule is a constitutional rule in CSS, every voice rule is η=0 in copy. What emerges when these pieces compose is not a product; it is a working coupling of human sovereignty (K2), mathematical truth (φ), and economic non-extraction (η=0) into a thing that can do useful work in the world without taking anything from the people it works for. That coupling is what the parts cannot show. The whole is what this folder is for.
+The organism is built on a finite-node equation: `P_node = Φ × V` — coherence times viability — under the Riemann-sphere identity `P∞ = φ · ν = 1` with the equator (φ = ν = 1) as the home. That equation, run on a network, produces a flywheel with `N² × log(compute)` value — super-linear in participants, super-linear in cognition. Five constitutional refusals (η=0, K2, K3, K4, A7) are the topology that keeps the flywheel from collapsing into extraction; they are not rules added to the system but the *space* the system is grown to live on. The brand is that topology projected into pixels and language — every visual rule is a constitutional rule in CSS, every voice rule is η=0 in copy. What emerges when these pieces compose is not a product; it is a working coupling of human sovereignty (K2), mathematical truth (φ), and economic non-extraction (η=0) into a thing that can do useful work in the world without taking anything from the people it works for. That coupling is what the parts cannot show. The whole is what this folder is for.
 
 ---
 

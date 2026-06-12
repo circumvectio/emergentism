@@ -27,7 +27,7 @@ rosetta:
 network effects to return, and enforced non-extraction (`η = 0`):
 
 ```
-max Pᵢ → max ΣP
+max P_node,i → max ΣP_node
 ```
 
 That is: each agent maximizing its own effective ektropy aligns with total
@@ -115,7 +115,7 @@ If each agent maximizes P_eff(i) by helping others:
 - Therefore each Pᵢ = Φᵢ × Vᵢ increases
 - Therefore ΣP = Σᵢ Pᵢ increases
 
-**QED, conditionally.** `max Pᵢ → max ΣP` holds under real coupling, a long
+**QED, conditionally.** `max P_node,i → max ΣP_node` holds under real coupling, a long
 horizon, multiplicative scoring, and enforced `η = 0`. Coupling supplies the
 shared gradient; the constitutional constraint blocks the private extraction
 route that would otherwise dominate a one-shot game.
@@ -155,12 +155,12 @@ The historical `R* ≈ 1.5` ratio corresponds to η_c ≈ 0.58 (~60% giving-majo
 
 ## What Would Falsify This
 
-1. **No coupling** (λ = 0): If agents are truly independent, max Pᵢ does NOT imply max ΣP
+1. **No coupling** (λ = 0): If agents are truly independent, max P_node,i does NOT imply max ΣP_node
 2. **Additive structure** (P = αΦ + βV): If P is additive, agents can compensate without coupling
 3. **Short time horizon**: In one-shot interactions, extraction can be locally optimal
 4. **No enforceable η discipline**: If extraction is hidden or privately
    profitable, the one-shot extraction route can beat cooperation locally.
-5. **Negative coupling** (λ < 0): If agents' interests are opposed (zero-sum), max Pᵢ implies min ΣP for others
+5. **Negative coupling** (λ < 0): If agents' interests are opposed (zero-sum), max P_node,i implies min ΣP_node for others
 
 ---
 
@@ -175,12 +175,12 @@ field, and `η = 0` prevents local extraction from masquerading as power.
 The lemma provides a **partial** mathematical foundation for the Is-Ought bypass:
 - If you're a rational agent in a coupled network **with η = 0 enforced** (Is + constraint)
 - Then you ought to cooperate (Ought)
-- Because cooperation maximizes your own P under the constraint (arithmetic)
+- Because cooperation maximizes your own `P_node` under the constraint (arithmetic)
 
 The Is-Ought gap is bypassed **conditionally** — not closed unconditionally. Without the η = 0 constraint (e.g., in one-shot games, in Model B with private side-payments, or when extraction is hidden), the classical gap reopens. The framework's constitutional constraints (K2, η = 0, A7) are the enforcement mechanism, not derivations from the lemma alone.
 
 ```
-max Pᵢ → max ΣP
+max P_node,i → max ΣP_node
   under λ > 0, multiplicative P_node, long horizon, and η = 0
 
 The Is-Ought gap is bypassed only inside the accepted game because coupled

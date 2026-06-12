@@ -239,7 +239,7 @@ Dyadism is all of the law: the law is only ever "keep both vectors raising
 The formal Power-Max Lemma says:
 
 ```text
-max P_i -> max ΣP
+max P_node,i -> max ΣP_node
 ```
 
 It holds under the canonical conditions: coupling exists (`λ > 0`),
@@ -261,7 +261,7 @@ The conditional is-ought closure is therefore:
 
 ```text
 if λ > 0 and η = 0:
-  max P_i -> max ΣP
+  max P_node,i -> max ΣP_node
   rational self-optimization selects cooperation
 ```
 
@@ -271,13 +271,13 @@ symbiont, and let `P_H` name the coherent viability of the holobiont that
 carries that individual:
 
 ```text
-W_i(t) = ∫ P_i(t) dt
-P_i    = Φ_i × V_i
+W_i(t) = ∫ P_node,i(t) dt
+P_node,i = Φ_i × V_i
 P_H    = Φ_H × V_H
 
 under λ(i,H) > 0 and η = 0:
   max W_i requires dP_H/dt >= 0
-  max P_H requires dP_i/dt >= 0
+  max P_H requires dP_node,i/dt >= 0
 ```
 
 So the Power-Max Lemma is not merely "be nice because cooperation is pleasant."

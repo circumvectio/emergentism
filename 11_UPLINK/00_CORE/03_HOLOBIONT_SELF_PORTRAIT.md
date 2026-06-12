@@ -213,7 +213,7 @@ The biosphere-scale generalization carries four costs that **cannot be argued aw
 
 3. **Recursive strong-emergence.** The V/M/O/S/K/A replicator stack is itself strongly emergent — there is no compressed predictor of what configuration it will produce at scale N+1 given configuration at scale N (Gödel-floor; Ashby's law of requisite variety). An apparatus that seeds a biosphere therefore cannot fully predict what it seeds. This is not solvable by better modeling. **The K2-signer at this scale signs without full information by structural necessity, not by negligence.**
 
-4. **Fitness-function leverage.** Whoever specifies the fitness function (the criterion under which substrates are selected) controls the trajectory. *P_node = Φ × V at equator under the power-max lemma* is the framework's candidate substrate-neutral fitness function. It is candidate, not settled. Adopting any fitness function is a load-bearing K2 decision; refusing to adopt one is also a fitness-function specification (a default selection for whatever the apparatus does without correction).
+4. **Fitness-function leverage.** Whoever specifies the fitness function (the criterion under which substrates are selected) controls the trajectory. *P_node = Φ × V constrained toward equatorial balance under the power-max lemma* is the framework's candidate substrate-neutral fitness function. It is candidate, not settled. Adopting any fitness function is a load-bearing K2 decision; refusing to adopt one is also a fitness-function specification (a default selection for whatever the apparatus does without correction).
 
 These four are **not solvable**. They are accountable. The discipline is to hold them honestly in K2 deliberation, not to engineer around them.
 

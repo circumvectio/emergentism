@@ -132,7 +132,7 @@ w_{n+1} = λ × Φ_n × V_n
 
 **This is P_node = Φ × V with a gain parameter λ, iterated.**
 
-The next state equals the current ektropy product, scaled by λ. The system takes its own P-value and feeds it back as the next state. The logistic map is the VIVEKA formula acting on itself in discrete time. [A for the math; I for the identification]
+The next state equals the current ektropy product, scaled by λ. The system takes its own `P_node` value and feeds it back as the next state. The logistic map is the VIVEKA formula acting on itself in discrete time. [A for the math; I for the identification]
 
 ### 2.3 What λ Controls
 

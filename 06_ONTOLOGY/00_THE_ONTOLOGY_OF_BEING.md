@@ -273,7 +273,7 @@ This is where the corpus most easily drifts if it gets poetic too fast.
 - **Ground** is prior to all archetypes. It is not an action or an operator.
 - **Being** is `φ · ν = 1 on S²`. It is the closure that makes any archetypal grammar possible.
 - **Teleological Force** is the first selective/generative bias in manifestation. It is not itself an operator.
-- **The 7 Generative Actions (L1-L7)** are the complete operator set inside the accepted two-axis grammar. They are the expressions of $P = V \cdot \Phi$: Kali (L1), Kālī (L2), Kṛṣṇa (L3), Arjuna (L4), Brahmā (L5), Śiva (L6), and Viṣṇu (L7). Their exhaustiveness is structural to that grammar `[S]`, not proof that Being has no remainder.
+- **The 7 Generative Actions (L1-L7)** are the complete operator set inside the accepted two-axis grammar. They are the expressions of the finite-node grammar $P_{\text{node}} = \Phi \times V$: Kali (L1), Kālī (L2), Kṛṣṇa (L3), Arjuna (L4), Brahmā (L5), Śiva (L6), and Viṣṇu (L7). Their exhaustiveness is structural to that grammar `[S]`, not proof that Being has no remainder.
 - **Demiurgic and dyēic language** names world-shaping or luminous faces of the teleological field. These are downstream personifications, not prior core state.
 - **Witnesses** are meta-positions of disclosure. They name how finite awareness can observe field, time, and limit. They do not replace Ground or Being.
 

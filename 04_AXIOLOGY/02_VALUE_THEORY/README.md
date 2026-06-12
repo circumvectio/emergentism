@@ -24,7 +24,7 @@ ask only "what do I want?" or "what does the group demand?" It asks which act
 raises the individual symbiont and the sustaining holobiont together:
 
 ```text
-P_i = Φ_i × V_i
+P_node,i = Φ_i × V_i
 P_H = Φ_H × V_H
 η = 0
 ```
@@ -72,5 +72,5 @@ Active source-owner subfolder.
 
 1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
 2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Apply the Dasein game test.** A value claim is not stable until it can state how it raises both `P_i` and `P_H` under `η=0`.
+3. **Apply the Dasein game test.** A value claim is not stable until it can state how it raises both `P_node,i` and `P_H` under `η=0`.
 4. **Canonical Path:** `01_EMERGENTISM/04_AXIOLOGY/02_VALUE_THEORY/README.md`

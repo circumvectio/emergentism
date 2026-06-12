@@ -27,7 +27,7 @@ The Skyzai organism has properties that **no individual part has** and that **no
 
 This is what "emergence" means in the strict sense: not "complex" or "hard to predict," but **irreducible to the parts**. The properties exist at the level of the composition and disappear when the composition is dissolved.
 
-This document names six of those emergent properties. None is mysterious; each is downstream of `P = Φ × V` × the constitutional topology × the network flywheel. But none can be read off any part in isolation. They are what the whole **is** in a way that the parts cannot be.
+This document names six of those emergent properties. None is mysterious; each is downstream of `P_node = Φ × V` × the constitutional topology × the network flywheel. But none can be read off any part in isolation. They are what the whole **is** in a way that the parts cannot be.
 
 ---
 
@@ -165,7 +165,7 @@ This is the deepest meaning of K2 sovereignty. The user is the sovereign; the sy
 
 Most software systems today reverse this: the user becomes a managed asset of the platform (their attention, their data, their behavior). Skyzai inverts it: **the platform becomes a managed instrument of the user.**
 
-This is what `P = Φ × V` × `η = 0` × K2 produces when all three are simultaneously held: not a product, not a platform, not a service — but an *instrument*. Something the user picks up and uses, something they put down, something that does not own them.
+This is what `P_node = Φ × V` × `η = 0` × K2 produces when all three are simultaneously held: not a product, not a platform, not a service — but an *instrument*. Something the user picks up and uses, something they put down, something that does not own them.
 
 You cannot read this off any part. TheCircle is not an instrument (it's a sensor). Agentz is not an instrument (it's a recommender). Skyzai is not an instrument (it's a settler). The whole, in synergy, is an instrument.
 

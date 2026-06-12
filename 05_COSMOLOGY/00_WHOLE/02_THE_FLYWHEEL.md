@@ -174,9 +174,9 @@ Every constitutional refusal corresponds to a structural failure mode of the fly
 
 ## 10. Why this matters more than the equation alone
 
-`P = Φ × V` (see [`01_THE_EQUATION.md`](01_THE_EQUATION.md)) is the *static* foundation. `N² × log(C)` is the *dynamic* consequence: what happens when you run that equation on a population over time.
+`P_node = Φ × V` (see [`01_THE_EQUATION.md`](01_THE_EQUATION.md)) is the finite-node foundation. `N² × log(C)` is the dynamic consequence: what happens when you run that equation on a population over time.
 
-A single coherent-and-viable agent is interesting but bounded. A *network* of them where every connection makes everything better is unbounded. The flywheel is what `P = Φ × V` does when N gets large.
+A single coherent-and-viable agent is interesting but bounded. A *network* of them where every connection makes everything better is unbounded. The flywheel is what `P_node = Φ × V` does when N gets large.
 
 The static equation says *what is right.* The flywheel says *why it grows.*
 
