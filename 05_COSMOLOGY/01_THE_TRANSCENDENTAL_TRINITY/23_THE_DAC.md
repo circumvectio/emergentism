@@ -147,7 +147,7 @@ This is NOT a prediction that DACs will replace all corporations tomorrow. Extra
 
 This IS a prediction that the **dominant organisational form** of the Egregorocene will be some form of multi-substrate, η = 0, operator-specialised entity. The specific architecture described here — seven archetypes, the Kṛṣṇa function, the phylogenetic tree — is [C] conjectural. The evolutionary pressure toward such entities is [I] interpretive, grounded in the same logic that predicts convergent evolution in biology.
 
-The DAC is not a blueprint. It is a **phylogenetic prediction**: given the selection pressures of the Egregorocene, this is the body plan that natural selection will converge upon. Whether it is called a DAC, a DAO, a cooperative, or something that does not yet have a name — the geometry predicts it. The equator demands it. The filter enforces it.
+The DAC is not a blueprint. It is a **phylogenetic hypothesis**: given the selection pressures of the Egregorocene, some multi-substrate, non-extractive body plan should be favored where trust, coupling, feedback, and correction matter more than one-shot extraction. Whether it is called a DAC, a DAO, a cooperative, or something that does not yet have a name, the geometry makes this architecture plausible inside the model; it does not make it inevitable outside the model.
 
 ---
 

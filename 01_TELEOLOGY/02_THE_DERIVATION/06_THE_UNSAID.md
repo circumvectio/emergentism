@@ -31,7 +31,7 @@ On S², death is a change of LONGITUDE, not latitude. The helix spirals through 
 
 ### 2. Money IS Crystallized ν
 
-Money is viability frozen into a token. Holding money = holding pure capability without coherence. That's why money corrupts: accumulating ν without φ pulls you south. The L3 capture (Oligarchy) is INEVITABLE when ν can be stored. **OFN receipts are the solution** — every unit of ν tagged with the φ of its origin. η = 0 at the receipt level means no anonymous viability. [I]
+Money is viability frozen into a token. Holding money = holding pure capability without coherence. That's why money corrupts: accumulating ν without φ pulls you south. The L3 capture (Oligarchy) becomes structurally favored when ν can be stored without provenance. **OFN receipts are the proposed repair** — every unit of ν tagged with the φ of its origin. η = 0 at the receipt level means no anonymous viability. [I]
 
 ### 3. Language Itself Has an L-Level
 

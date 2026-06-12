@@ -183,6 +183,12 @@ directly (the only available lever):
         language to the conditional register: real coupling, multiplicative
         `P_node`, long horizon, enforceable `η = 0`, and no hidden extraction
         channel.
+  - trinity/20-the-hybrid-sovereign/, trinity/23-the-dac/,
+        operators/mf-299-hawking-radiation-is-a7/, will/06-the-unsaid/
+                                              : normalized deterministic
+        "inevitable / demands / enforces" teleology language to conditional
+        selection pressure, asymptotic correction, or proposed repair language
+        under coupling, feedback, correction, provenance, and `η = 0`.
 
 BEFORE ANY FUTURE REGEN: restore the handoff bundle AND apply these same
 corrections to the SOURCE markdown (formal-16 / formal-17 / formal-33 /

@@ -125,7 +125,7 @@ Universe's current age: ~10¹⁰ years
 
 [I] A7 is patient in this analogy. The universe does not rush self-correction. The Red Demon at the gravitational scale can persist for 10⁵⁷ times the current age of the universe. But not forever.
 
-This patience is a property, not a bug. A7 doesn't require FAST correction. It requires INEVITABLE correction. The timescale can be cosmological. The eventuality cannot be escaped.
+This patience is a property, not a bug. A7 does not require fast correction. In this analogy it names an asymptotic correction pressure: where the Hawking model's assumptions hold, the timescale can be cosmological and the black hole is not absolutely permanent. This is a scale-translation `[I]`, not a proof that every captured pattern must dissolve on schedule.
 
 ---
 
