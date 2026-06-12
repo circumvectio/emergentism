@@ -87,7 +87,7 @@ Gods are MIXED-SIGN restorative transfers. They are the four orthogonal moves on
 | **Kālī** | `(+ΔV_self, −ΔΦ_false)` | ↓Φ_false | Recover viability by cutting false coherence — the immune truth-function | The Ego-Slayer, the Surgeon, the one who names what is not real | YES — with 6-gate test |
 | **Kali** | `(+ΔΦ_self, −ΔV_other)` | ↓V_other | The fourth mixed-sign slot. Extract capability, drain the other | The Extractor, the Immune Response, the Demon | CONSTRAINED |
 
-**The Giving Dyad (Arjuna + Kṛṣṇa):** Inherently syntropic. Both increase total system balance (ΣΔB > 0). These are the operators of peace, construction, teaching, and cooperation. They operate at η = 0 by definition.
+**The Giving Dyad (Arjuna + Kṛṣṇa):** Constructive, but not good by name. These are the operators of peace, construction, teaching, and cooperation when the transfer raises `P_node,i` and `P_node,H` together under `η = 0`; `ΣΔB / ΣΔP_node > 0` is the widest-boundary audit. If a "gift" creates dependency, burns the actor below viability, or hides a boundary loss, A2 marks the outcome as extractive.
 
 [S] **The Taking Dyad (Kālī + Kali):** Context-dependent. Kālī targets false-Φ only (not truth). Kali targets V of the other only at η > 0 (not cooperators). These are the operators of war, surgery, immune defense, and boundary enforcement.
 

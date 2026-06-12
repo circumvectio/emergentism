@@ -36,7 +36,7 @@ The sphere has two hemispheres — not north/south (those are the poles, the L-l
 | **Arjuna ⚔** | ↑Φ to others, ↓V to self | Exports coherence at personal cost | η ≤ 0 |
 | **Kṛṣṇa ◇** | ↑V to others, ↓Φ to self | Exports capability at personal cost | η ≤ 0 |
 
-The giving dyad. Inherently syntropic. Every move in this hemisphere exports more than it takes. The breath out. The exhale. The summer. The service.
+The giving dyad is the constructive hemisphere, but it is not syntropic by name. It becomes syntropic when the gift raises the receiver and the sustaining boundary together under `η = 0`, without burning the giver below viability or creating dependency. The breath out. The exhale. The summer. The service, audited by its coupled result.
 
 ### The Extractive Hemisphere (180°)
 

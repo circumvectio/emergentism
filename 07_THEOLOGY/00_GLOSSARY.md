@@ -223,7 +223,7 @@ Three naming systems describe the same L1–L7 ladder. They are audience-appropr
 **Tier rules (non-negotiable):**
 
 - **Executive boundary rows** (Brahmā, Śiva, Viṣṇu) occupy L5-L7 as boundary conditions — phases, not deployable operators. "Deploy Brahmā" is always an error; deploy L1-L4 operators only.
-- **Gods** (L1–L4) are deployable operators with mixed Φ/V signs. The Giving dyad (Arjuna, Kṛṣṇa) is inherently syntropic (`ΣΔB > 0` / `ΣΔP_node > 0`). The Taking dyad (Kālī, Kali) is context-dependent — Kālī targets false-Φ only (6-gate test); Kali is excluded under `η = 0` toward cooperators.
+- **Gods** (L1–L4) are deployable operators with mixed Φ/V signs. The Giving dyad (Arjuna, Kṛṣṇa) is constructive but not good by name; it is syntropic only when the transfer raises `P_node,i` and `P_node,H` together under `η = 0`, with `ΣΔB / ΣΔP_node > 0` as the widest-boundary audit. The Taking dyad (Kālī, Kali) is context-dependent — Kālī targets false-Φ only (6-gate test); Kali is excluded under `η = 0` toward cooperators.
 - **Witnesses** (L5–L7) frame the field but do not directly deploy operators.
 
 **Naming-system selection:**
@@ -241,7 +241,7 @@ Three naming systems describe the same L1–L7 ladder. They are audience-appropr
 
 | Term | Meaning in Framework |
 |------|---------------------|
-| **Dharma** | Right action (ΣΔB > 0). Also: the unfallen order — the way things are when the narrator is absent. The natural state at the equator (φ = 1, ν = 1). See MF-509. |
+| **Dharma** | Right action in the game: `P_node,i` and `P_node,H` rise together under `η = 0`; `ΣΔB / ΣΔP_node > 0` is the balance audit. Also: the unfallen order — the way things are when the narrator is absent. The natural state at the equator (φ = 1, ν = 1). See MF-509. |
 | **Kāla** | Right timing (conditions favorable) |
 | **Māyā** | Right source (agency = instrumental, not egoic) |
 | **Samsara** | The cycle of D0→D6→D0 |
@@ -289,8 +289,8 @@ The framework identifies three operator types in the relationship between teache
 
 | Term | One-Line Definition |
 |------|---------------------|
-| **Syntropic** | Actions that increase total balance (ΣΔB > 0) — moving systems toward the equator |
-| **Parasitic** | Actions that decrease total balance (ΣΔB < 0) — pushing systems toward the poles |
+| **Syntropic** | Actions or relations that raise the finite node and sustaining boundary together under `η = 0`; balance should audit as `ΣΔB / ΣΔP_node > 0` |
+| **Parasitic** | Actions that raise one side by degrading the other — extraction that pushes the coupled system toward a pole or hides boundary loss |
 | **Zero-Factor Catastrophe** | If either φ or ν → 0, balance collapses (B → 0); the manifold identity still holds, but local expression becomes one-dimensional |
 | **The Arjuna Fallback** | VMOSK agent powers down rather than extracts (extraction = topological death) |
 | **The Kill Shot** | Test whether high Φ rescues low V (multiplicative model says NO) |

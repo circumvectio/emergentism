@@ -56,7 +56,7 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 
 | | Allowed | Forbidden |
 |---|---|---|
-| **Stewardship** | Holding symbols, rites, categories, institutions toward widest-boundary `ΣΔB > 0` | — |
+| **Stewardship** | Holding symbols, rites, categories, institutions so `P_node,i` and `P_node,H` rise together under `η = 0`; `ΣΔB / ΣΔP_node > 0` audits the boundary | — |
 | **Coercion** | — | Capture, obedience, access-gating, caste-worth hierarchy, gatekeeping |
 
 > Institutional Narrative is permitted only under K2 / `η = 0` / K4 / A7 / Decentralized Authority Model discipline.

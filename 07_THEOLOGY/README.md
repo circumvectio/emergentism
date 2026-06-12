@@ -43,7 +43,7 @@ This is the clean part of the formation insight: children and groups learn throu
 
 ## Stewardship / Coercion Boundary
 
-- **Stewardship** = holding symbols, rites, categories, and institutions toward widest-boundary `ΣΔB > 0` / `ΣΔP_node > 0`. Allowed.
+- **Stewardship** = holding symbols, rites, categories, and institutions so they raise the people inside them and the sustaining boundary together under `η = 0`; `ΣΔB / ΣΔP_node > 0` is the widest-boundary audit. Allowed.
 - **Coercion** = capture, obedience, access-gating, caste-worth hierarchy, or gatekeeping. Forbidden.
 - Institutional Narrative is permitted only under K2 / `η = 0` / K4 / A7 / Decentralized Authority Model discipline.
 - Institutional Narrative uses `P∞ = φ · ν = 1` for the invariant sphere-product, `B = sin θ` for balance, and `P_node = Φ × V` for empirical/organizational flourishing. Do not use bare `P` where the regime matters.

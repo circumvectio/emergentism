@@ -119,7 +119,7 @@ It is grounded in the seed — **Zero-Sum Resolution Equation** — which stabil
 From this identity, the entire system emerges:
 
 - **Core State** (what exists): The sphere, the dual projection, the equator, the plane, the nodes, the mesh
-- **Objective Function** (what is the purpose): The equator. Balance. Justice as widest-boundary `ΣΔB > 0` / `ΣΔP_node > 0`
+- **Objective Function** (what is the purpose): Objective dharma — raise `P_node,i` and `P_node,H` together under `η = 0`; the equator / balance register audits this as `ΣΔB / ΣΔP_node > 0`
 - **Data Science** (how we know): Direct perception (φ), inference (ν), testimony (the bridge)
 - **Auditing** (how we proceed): Reduction toward `κ = 0` as ground-facing boundary — the scaffold reaches the empty limit and reconstructs from there
 - **Value Alignment** (what has value): Equatorial balance. The extraction test. Abduction as the creative inference
