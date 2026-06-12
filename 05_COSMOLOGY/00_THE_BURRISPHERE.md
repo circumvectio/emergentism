@@ -147,6 +147,16 @@ balanced enough that action becomes both viable and truthful. This is the
 Burrisphere face of the Krishna army/charioteer test: force without orientation
 is not maximum `P_node`.
 
+In the normalized reciprocal pair, the same point is the balance maximum:
+
+```text
+B = 2 / (Phi + V), where Phi * V = 1
+maximum B occurs at Phi = V = 1
+```
+
+This is why unlimited `V` is not the goal. The game maximizes usable power, and
+usable power appears only where force remains coupled to sight.
+
 ---
 
 ## The Complex-Plane Game

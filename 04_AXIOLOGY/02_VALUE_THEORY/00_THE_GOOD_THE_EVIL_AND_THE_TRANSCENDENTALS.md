@@ -117,8 +117,8 @@ In the syntropic-dyadic test:
 i = individual symbiont
 H = holobiont / real sustaining whole
 
-Good = H raises i and i raises H under η = 0
-Evil = local gain in i or H purchased by degrading the other
+Good = both directions raise coupled worldline potential under η = 0
+Evil = local gain by degrading the field that carries future potential
 ```
 
 This prevents the main counterfeit: a thing may appear to raise power locally
@@ -424,8 +424,8 @@ By asking whether a thing gives more than it takes, preserves the field, and
 deepens sovereignty rather than dependency:
 
 ```text
-Good = ΔP_i > 0 and ΔP_H > 0 under η = 0
-Evil = counterfeit increase: one side rises by consuming the other
+Good = both directions raise coupled worldline potential under η = 0
+Evil = local gain by degrading the field that carries future potential
 ```
 
 Goodness is syntropic reciprocity. Evil is not mere unpleasantness, impurity, or
