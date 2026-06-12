@@ -31,8 +31,14 @@ the value-language face of the same reciprocal grammar:
 | Limit | Register | Value-theory reading |
 |---|---|---|
 | **Beauty** | `φ` / coherence | Coherence becoming perceivable without collapsing into inert purity. |
-| **Truth** | `P` / equatorial product | Disclosure becoming faithful: map and territory held in accountable relation. |
+| **Truth** | disclosure / accountable fit | Map and territory held in faithful, corrigible relation. |
 | **Justice** | `ν` lawfully coupled to `φ` | Capability arranged without extraction, so no node is pushed off the equator for another's gain. |
+
+**Notation boundary.** The older triadic shorthand sometimes used `P` for the
+Truth/product face. This note does not use bare `P` as a doctrine quantity:
+`P_node = Φ × V` is finite-node action potential, while
+`P∞ = φ · ν = 1` is the sphere/manifold identity. Truth here is the disclosure
+function: whether the map remains accountable to what is.
 
 The telos is not possession of these limits.
 The telos is asymptotic approach.
@@ -59,7 +65,9 @@ A relation is better when it raises coherent viability without extraction.
 A relation is worse when it gains locally by lowering the field that carries it.
 
 That makes value framework-objective: once the ontology of reciprocal closure is
-accepted, the direction of improvement is constrained by the invariant.
+accepted, the direction of improvement is constrained by the accepted grammar:
+finite-node action is scored as `P_node = Φ × V`, the balance surface is
+tracked by `B`, and extraction is forbidden by `η = 0`.
 
 ## Syntropic Dyadism
 
