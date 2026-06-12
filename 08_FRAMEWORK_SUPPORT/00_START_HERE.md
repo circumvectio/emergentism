@@ -43,8 +43,9 @@ CANONICAL FORMULA BLOCK:
 
 ONE GLYPH:       circle-dot = dot x circle  (finity = nothing x everything)
 
-φ = coherence (integration, structural unity, meaning)
-ν = viability (usable D4 means-to-act: body, tools, energy, access, execution capacity)
+φ = coherence coordinate (integration, structural unity, meaning)
+ν = viability coordinate on S²; V = finite-node viability (usable D4 means-to-act:
+    body, tools, energy, access, execution capacity)
 On S²: P∞ = φ · ν = 1 (reciprocal closure; load-bearing manifold identity)
 Node-level: P_node = Φ × V (operational flourishing model); what varies on S² is balance: B = sin θ
 B peaks at the equator (φ = ν = 1). B = 0 at the poles.
@@ -60,10 +61,10 @@ SEVEN AXIOMS:
 
 ARCHETYPE GRAMMAR (load-bearing; do NOT conflate core state, actions, and witnesses):
   EXECUTIVE BOUNDARIES (same-sign boundary formulas; NOT deployable): Brahmā(++), Viṣṇu(≈≈), Śiva(--)
-  GODS     (mixed-sign restorative transfers):            Arjuna(-nu_self,+phi_other)
-                                                          Kṛṣṇa(-phi_self,+nu_other)
-                                                          Kālī(+nu_self,-phi_false)
-  DEMON    (fourth mixed-sign slot; constrained):         Kali-demon(+phi_self,-nu_other) only at η > 0
+  GODS     (mixed-sign restorative transfers):            Arjuna(-V_self,+Φ_other)
+                                                          Kṛṣṇa(-Φ_self,+V_other)
+                                                          Kālī(+V_self,-Φ_false)
+  DEMON    (fourth mixed-sign slot; constrained):         Kali-demon(+Φ_self,-V_other) only at η > 0
   WITNESSES (meta-positions of disclosure, NOT Being):    Viśvarūpa(pattern-whole)  Kāla(time)  Ananta(context)
 
 EVIDENCE TIERS — Every claim is marked:

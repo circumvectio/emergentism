@@ -40,7 +40,7 @@ P∞ = φ · ν = 1
 
 Where:
 φ = coherence (quality of what you see)
-ν = viability (usable D4 means to act on what you see)
+ν = sphere-coordinate viability; V = finite-node execution capacity / usable D4 means
 P∞ = φ · ν = 1 (manifold identity; what varies is B = sin θ)
 ```
 
