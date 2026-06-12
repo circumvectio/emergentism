@@ -20,7 +20,7 @@ SRC = os.path.normpath(os.path.join(
 OUT_DIR = os.path.join(HERE, "book")
 OUT = os.path.join(OUT_DIR, "index.html")
 
-TIER_RE = re.compile(r'\[(A|E|S|I|C|B)((?:/[A-Z]+)*)\]')
+TIER_RE = re.compile(r'\[(A|B|S|I|D|C)((?:/[A-Z]+)*)\]')
 
 def strip_tags(s):
     return re.sub(r'<[^>]+>', '', s).strip()
@@ -126,7 +126,7 @@ html[data-reading-theme="light"]{
   --ink:#18160E; --ink-soft:#4A4438; --ink-faint:#7A7062;
   --rule:rgba(24,22,14,.14); --rule-soft:rgba(24,22,14,.08);
   --gold:#92650A; --gold-bright:#7a5408;
-  --t-a:#1565C0; --t-e:#2c7350; --t-s:#1d7e70; --t-i:#92650A; --t-c:#6f4fa0; --t-b:#92650A;
+  --t-a:#1565C0; --t-b:#92650A; --t-s:#1d7e70; --t-i:#92650A; --t-d:#6d6d6d; --t-c:#6f4fa0;
   --shadow:0 1px 0 rgba(255,255,255,.5);
 }
 /* ---- dark (void) reading theme ---- */
@@ -135,7 +135,7 @@ html[data-reading-theme="dark"]{
   --ink:#F3F4F6; --ink-soft:#9CA3AF; --ink-faint:#6b7280;
   --rule:rgba(243,244,246,.13); --rule-soft:rgba(243,244,246,.07);
   --gold:#FFEB3B; --gold-bright:#FFF176;
-  --t-a:#7fb2e6; --t-e:#6fc79a; --t-s:#5fc6b0; --t-i:#e8d24a; --t-c:#b59ce0; --t-b:#FFEB3B;
+  --t-a:#7fb2e6; --t-b:#FFEB3B; --t-s:#5fc6b0; --t-i:#e8d24a; --t-d:#a3a3a3; --t-c:#b59ce0;
   --shadow:none;
 }
 *{box-sizing:border-box}
@@ -220,8 +220,8 @@ th{background:var(--bg2);font-family:var(--mono);font-weight:600;font-size:.8rem
 /* tier chips */
 .tier{font-family:var(--mono);font-size:.72em;font-weight:600;padding:.04em .34em;border-radius:3px;
   white-space:nowrap;border:1px solid currentColor;line-height:1.4;vertical-align:baseline}
-.tier.t-a{color:var(--t-a)} .tier.t-e{color:var(--t-e)} .tier.t-s{color:var(--t-s)}
-.tier.t-i{color:var(--t-i)} .tier.t-c{color:var(--t-c)} .tier.t-b{color:var(--t-b)}
+.tier.t-a{color:var(--t-a)} .tier.t-b{color:var(--t-b)} .tier.t-s{color:var(--t-s)}
+.tier.t-i{color:var(--t-i)} .tier.t-d{color:var(--t-d)} .tier.t-c{color:var(--t-c)}
 
 /* heading anchor on hover */
 h1[id],h2[id]{scroll-margin-top:70px;position:relative}
