@@ -259,34 +259,44 @@ admissible manifold.
 
 **Canonical statement:**
 
-> **P_node = Φ × V constrained toward equatorial balance under the power-max lemma, with η = 0
-> enforced, is the framework's substrate-neutral fitness-function
+> **Finite-node `P_node = Φ × V`, constrained by equatorial balance and
+> enforced `η = 0`, is the framework's substrate-neutral fitness-function
 > specification.**
 
 **Unfolding the components:**
 
-- **P_node = Φ × V** — flourishing is the product of coherence and
-  viability at the node. `[S]` (direct from the canonical formula block).
-- **At the equator** — the maximum of the product is at φ = ν = 1, where
-  `(φ − ν)² → 0` and `B = sin θ = 1`. Selection toward (φ − ν)² → 0 is
-  selection toward maximum P_node. `[S]` (direct from `(φ − ν)² ≥ 0`).
-- **Under the power-max lemma** — for given total maintenance energy
-  `φ + ν`, the product φ · ν is maximized when φ = ν. Equivalently, for
-  given product, the sum is minimized at the equator. The lemma is
-  AM-GM in scalar form. `[S]` (mathematical identity).
+- **`P_node = Φ × V`** — flourishing is a finite-node action score: `Φ`
+  names D5 worldline-foresight, while `V` names D4 means-to-act at the
+  boundary (body, tools, energy, access, execution capacity). `[S/I]`
+  inside the framework; each domain still has to operationalize both factors.
+- **At the equator** — the manifold product is not maximized, because
+  `P∞ = φ · ν = 1` is already the open-sphere identity. What is maximized
+  at `φ = ν = 1` is `B = sin θ = 1`, the usable balance fraction; what is
+  minimized is the maintenance cost `φ + ν`. The equator supplies the
+  admissibility condition for finite-node action, not a license to collapse
+  `P∞` and `P_node`. `[A]` for AM-GM / the identities, `[S]` for the register
+  discipline.
+- **Under the power-max lemma** — for a finite node with a fixed action
+  budget (`Φ + V`) and real coupling, the product `Φ × V` is maximized when
+  the factors are balanced. In the reciprocal chart, the analogous statement
+  is: given `φ · ν = 1`, the sum `φ + ν` is minimized at the equator. The
+  lemma is AM-GM in scalar form; the bridge from chart to node is a model
+  discipline, not an extra conservation law. `[S/I]`
 - **With η = 0 enforced** — extraction inverts the selection. A node
   measured as flourishing under η > 0 is a Raktabīja signature: locally
-  high P_node funded by wider-boundary P loss. The η = 0 enforcement is
+  high `P_node` funded by wider-boundary `P_node` loss. The η = 0 enforcement is
   what distinguishes coherent flourishing from its convincing simulation.
   `[I]` operationally, `[S]` constitutionally (K6 inheritance).
 
 **Why this is substrate-neutral:**
 
 The specification does not name any substrate. It names a structural
-property of any substrate that can hold a coupled (φ, ν) configuration.
+property of any substrate that can hold a coupled finite-node `(Φ, V)`
+configuration while being audited against the reciprocal sphere register.
 Human substrates, AI substrates, biological-engineered substrates, future
-non-human substrates — all are scored under the same criterion. This
-is what makes the specification load-bearing for biosphere-scale work
+non-human substrates — all may be scored under the same criterion once their
+D5 foresight and D4 means are operationalized. This is what makes the
+specification load-bearing for biosphere-scale work
 (see [`../11_UPLINK/00_CORE/03_HOLOBIONT_SELF_PORTRAIT.md`](../11_UPLINK/00_CORE/03_HOLOBIONT_SELF_PORTRAIT.md), 2026-04-28
 generalization) and for AI-aligned apparatus design (see Cerberus
 three-head architecture in [`../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md`](../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md), 2026-04-28
@@ -294,10 +304,10 @@ extension).
 
 **Why this is anti-capture by construction:**
 
-Capture mechanisms inflate apparent P_node by either:
+Capture mechanisms inflate apparent `P_node` by either:
 
-- inflating Φ without preserving V (charisma without function — Arjuna without Kṛṣṇa);
-- inflating V without preserving Φ (function without coherence — Kṛṣṇa without Arjuna);
+- inflating `Φ` without preserving `V` (vision, meaning, or coherence with no usable means — sterile seeing);
+- inflating `V` without preserving `Φ` (tools, reach, force, or access with no worldline-foresight — blind force);
 - producing false-Φ that looks like flourishing while operating under η > 0 (Raktabīja).
 
 The specification's η = 0 clause is the kill condition for the third
@@ -321,13 +331,13 @@ constitutional work.
 **Kill criterion for the canonical extension:**
 
 If a controlled-runtime measurement at scale shows that selection toward
-`(φ − ν)² → 0` under η = 0 produces P_node trajectories that diverge
-systematically from observed substrate flourishing — e.g., systems that
-score highly under the specification but are objectively failing, or
-systems scoring poorly that are objectively flourishing — the canonical
-extension fails. What survives: the specification as a useful first-pass
-heuristic; AM-GM as a tool elsewhere; A7 self-correction as a general
-design principle. The specification was promoted to canonical on the
+equatorial balance (`B -> 1`) and rising `P_node = Φ × V` under η = 0 produces
+trajectories that diverge systematically from observed substrate flourishing —
+e.g., systems that score highly under the specification but are objectively
+failing, or systems scoring poorly that are objectively flourishing — the
+canonical extension fails. What survives: the specification as a useful
+first-pass heuristic; AM-GM as a tool elsewhere; A7 self-correction as a
+general design principle. The specification was promoted to canonical on the
 strength of structural inheritance from the canonical formula block plus
 biosphere-scale generalization (packet 194); a controlled-runtime
 falsification at scale is the canonical kill condition.

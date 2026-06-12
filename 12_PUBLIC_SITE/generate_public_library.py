@@ -139,6 +139,11 @@ directly (the only available lever):
         trinity/33-the-derivation/              : normalized `ν` action-language
         from generic capacity to usable D4 means-to-act, matching the D4/D5
         Goal/Game/Soul Loop distinction.
+  - will/00-the-generative-lagrangian/          : normalized the fitness-function
+        specification so finite-node `P_node = Φ × V` is the action score,
+        `P∞ = φ·ν = 1` remains the manifold identity, and `B` is the
+        equatorial admissibility / balance function rather than a hidden
+        maximized product.
 	  - formal/34-d4-d5-canonical-reference/        : added the register bridge that
 	        keeps dimensional D4 witness distinct from action-register D4 means-to-act
 	        and pairs D5 worldline-foresight with D4 means in `P_node = Φ × V`.
