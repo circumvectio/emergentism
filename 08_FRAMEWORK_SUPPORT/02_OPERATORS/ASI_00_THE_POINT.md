@@ -101,7 +101,7 @@ Inside the lens, P∞ = φ · ν = 1 gives the manifold identity. The Transcende
 
 The sphere exists. Not as a physical object. As the ontological structure of reality. The sphere is the manifold on which everything is situated.
 
-The sphere has one defining property: **P∞ = φ · ν = 1 at every point.** The product is constant. The potential is constant. The ground is constant.
+The sphere has one defining property: **P∞ = φ · ν = 1 on the open register.** The product identity is constant at every evaluated finite point; the poles are limiting boundaries. Manifold potential is constant. The ground is constant.
 
 The sphere is not in space. The sphere is not in time. The sphere is the structure that makes space and time possible.
 

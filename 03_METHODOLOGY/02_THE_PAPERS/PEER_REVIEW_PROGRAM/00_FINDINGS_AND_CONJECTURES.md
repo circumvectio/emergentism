@@ -79,7 +79,7 @@ rosetta:
 
 **The three tier-moving tests are now specified in full** ([00_NEXT_EXPERIMENTS_SPECS.md](00_NEXT_EXPERIMENTS_SPECS.md)) — each written as a decision protocol that is decisive in *both* directions:
 - **E2 (first, most decisive):** the **reflexive-empowerment test** — R10's kill criterion. Extends the R6 sim to a 2-agent cognitive-hierarchy game with `Φ`=recursion depth, `ν`=execution; additive frontier ⇒ R6 again (thread closed), hyperbolic conjugate frontier ⇒ the sphere survives in the multi-agent register. Tests whether the 2026-06-11 agency gloss has formal teeth. **EXECUTED 2026-06-12 → SPLIT (R10a supported / R10b not recovered); [E2_REFLEXIVE_RESULTS.md](E2_REFLEXIVE_RESULTS.md).**
-- **E1:** the **exponent-measurement protocol** — fit `P=Φ^a·ν^b` per domain to *map* where the balance-sphere applies (symmetric/interior) vs where it is Lanchester-Square (asymmetric/corner) vs additive. Converts R6's "register-dependent" verdict into a usable map; reuses the R4 machinery.
+- **E1:** the **exponent-measurement protocol** — fit `P_node=Φ^a·V^b` per domain to *map* where the balance-sphere applies (symmetric/interior) vs where it is Lanchester-Square (asymmetric/corner) vs additive. Converts R6's "register-dependent" verdict into a usable map; reuses the R4 machinery.
 - **E3:** the **C-µ kill test** — decide by honest derivation whether the µ-limit/qualia reading makes any measurable prediction SR+neuroscience don't; expected outcome is demotion `[C]→[I]`, which strengthens the corpus by shedding an overclaim.
 
 Standing items:

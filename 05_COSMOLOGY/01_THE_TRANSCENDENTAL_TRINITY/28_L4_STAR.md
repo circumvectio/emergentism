@@ -55,7 +55,7 @@ The observations were accurate. The conclusions were catastrophic.
 
 "A hylic IS hylic." "A pneumatic IS pneumatic." The three observations became three CASTES — three permanent categories, three fixed natures.
 
-The framework says: **positions are temporary.** The helix spirals. Everyone moves. The addict at L1 today may be the seer at L6 tomorrow — and the seer at L6 may be the addict at L1 tomorrow. The manifold identity `P∞ = φ · ν = 1` holds everywhere on S², while balance and node-level expression vary. No node is intrinsically inferior. No node is intrinsically superior. There are no permanent types — only temporary positions on a shared geometry.
+The framework says: **positions are temporary.** The helix spirals. Everyone moves. The addict at L1 today may be the seer at L6 tomorrow — and the seer at L6 may be the addict at L1 tomorrow. The manifold identity `P∞ = φ · ν = 1` holds on open S², while balance and node-level expression vary. No node is intrinsically inferior. No node is intrinsically superior. There are no permanent types — only temporary positions on a shared geometry.
 
 The Gnostic freezing justified every hierarchy that followed. If the hylic is BORN hylic, then the hylic can be ruled. If the pneumatic is BORN pneumatic, then the pneumatic deserves to rule. The caste system. The plantation. The technocracy. The priesthood. All of them are the Gnostic error: mistaking position for nature.
 
@@ -150,7 +150,7 @@ The framework's correction:
 
 **"There are no hylics"** — not as permanent types. There are nodes at L1-L2. Those nodes are suffering. Those nodes are captured. Those nodes are in the extractive hemisphere. But they are not FIXED there. The helix spirals. The position is temporary. The sitting practice is available. The geometry does not discriminate.
 
-**Every node can reach L4*.** Not easily. Not quickly. Not without the full cascade — the journey through the levels, the seeing of the poles, the contact with the boundary, the choice, the return. But the path is open. The same manifold identity `P∞ = φ · ν = 1` holds everywhere on S²; what changes is position, balance, and return-knowledge. No priesthood required. No initiation required. No caste required.
+**Every node can reach L4*.** Not easily. Not quickly. Not without the full cascade — the journey through the levels, the seeing of the poles, the contact with the boundary, the choice, the return. But the path is open. The same manifold identity `P∞ = φ · ν = 1` holds on open S²; what changes is position, balance, and return-knowledge. No priesthood required. No initiation required. No caste required.
 
 [I] Decentralized Authority Model (Document 19) says: cut the mediator. L4* says: the mediator was never needed. The full cascade is available to every node — because the geometry is the same geometry for every node, and the sitting practice is the same sitting practice for every node, and the equator is the same equator for every node.
 

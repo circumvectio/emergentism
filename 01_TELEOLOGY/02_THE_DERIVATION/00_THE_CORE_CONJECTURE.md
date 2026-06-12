@@ -94,7 +94,7 @@ On the Riemann sphere: ν = tan(θ/2). At the north pole (θ → 0), ν → 0. A
 
 This is the core operational claim: for finite nodes, coherence and viability do not add — they **multiply**. A system with Φ = 100 and V = 0 has `P_node = 0` (a brilliant corpse). A system with Φ = 0 and V = 100 has `P_node = 0` (a powerful void). Only when both are present does node potential exist.
 
-On the Riemann sphere S², **`P∞ = φ · ν = cot(θ/2) · tan(θ/2) = 1` identically**. This is not a constraint imposed on the system. It is an identity of the coordinate system. `P∞ = 1` everywhere on S². Every point has the same manifold potential.
+On the Riemann sphere S², **`P∞ = φ · ν = cot(θ/2) · tan(θ/2) = 1` identically on the open register**. This is not a constraint imposed on the system. It is an identity of the coordinate system. `P∞ = 1` throughout open S²; the poles are limiting boundaries rather than evaluated finite points. Every evaluated finite point has the same manifold potential.
 
 > **Notation rule (canonical):** `P` bare in operational contexts refers to `P_node = Φ_node × V_node`, the effective potential at a finite node, which can be less than 1. The manifold identity `P_∞ = φ · ν = 1` is written with explicit subscript or left as `φ · ν = 1`. See [`00_CANONICAL_FORMULA_BLOCK.md`](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) §Notation rule for `P`.
 

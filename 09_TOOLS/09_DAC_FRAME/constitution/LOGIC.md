@@ -36,7 +36,7 @@ change receipts.
 
 1.  [I] **Contracts Beat Convenience**: If the Code works but violates the `CONTRACT.md`, the Code is wrong.
 2.  [I] **Reality Beats Blueprint**: If the docs say X and the server says Y, trust the server. Log the drift immediately.
-3.  [I] **The Epistemic Lock (I-302)**: Never act on an Oracle with Confidence ($V$) < 0.7 without Double Confirmation. All external assertions must be graded ($P = \Phi \times V$).
+3.  [I] **The Epistemic Lock (I-302)**: Never act on an Oracle with Confidence ($V$) < 0.7 without Double Confirmation. All external assertions must be graded ($P_{node} = \Phi \times V$).
 4.  [I] **The Court of Owls (I-301)**: Any decision marked IMPACT: HIGH is forbidden until a "Triad" (Proposer, Owl, Judge) produces a `RULING.md`. Consensus is not a valid proof; survival requires dissent.
 5.  [I] **The Evolution Mandate (I-303)**: A failure mode occurring 3 times is no longer an "Incident"; it is a "Structural Deficit." It MUST be patched with a new Invariant or Automaton.
 6.  [I] **Explicit Intent**: Behavior changes require an `INTENT.md` update OR an "Intent Unchanged" justification in the PR.

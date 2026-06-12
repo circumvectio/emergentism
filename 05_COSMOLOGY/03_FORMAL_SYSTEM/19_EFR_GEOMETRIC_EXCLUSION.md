@@ -160,7 +160,7 @@ and ν = 1 CANNOT extract.
 - φ · ν = 1
 - No commandment
 - No prohibition
-- Simply: the product is constant
+- Simply: the open-sphere product identity is constant
 
 **Why it works:**
 - Recognition, not obedience

@@ -32,7 +32,7 @@ evidence_tier: "[I] for court procedure; [B] only for current proposal, dissent,
 
 ## 1. The Purpose
 To eliminate "Hallucinated Safety" and "Groupthink" by mandating structural dissent.
-Principle: Truth is not found in the Proposal; it is found in the collision between the Proposal and its Refutation ($P = \Phi \times V$).
+Principle: Truth is not found in the Proposal; it is found in the collision between the Proposal and its Refutation ($P_{node} = \Phi \times V$).
 
 **Rosetta boundary:** [I] This paper defines adversarial governance procedure.
 It does not prove that a Court was convened or that a binding ruling exists; [B]

@@ -96,7 +96,7 @@ L7      | Ananta Śeṣa      | Ṛṣi Constitution      | Yogaja              
 | L6 | 15° | 2+√3 ≈ 3.73 | 2−√3 ≈ 0.27 | 1 | 0.500 | Temporal discipline. Renunciation. |
 | L7 | ~8° | 7.12 | 0.14 | 1 | 0.28 | High coherence, low capability. The formless witness. Low balance. |
 
-> **Note on P vs. B:** P = P∞ = φ · ν = 1 everywhere on the Burri Sphere (D35 correction C3). What varies is **Balance** B = sin(θ), not potential P. L4 is the apex because balance is maximum, not because potential is higher. The old table used cos/sin approximations from the flat plane; this table uses the corrected S² stereographic values φ = cot(θ/2), ν = tan(θ/2) per the Honest Position (S10) and the Master Three-Stage Process.
+> **Note on P∞ vs. P_node vs. B:** `P∞ = φ · ν = 1` on the open Burri Sphere; the poles are limiting boundaries, not evaluated finite points. This is the manifold identity, not the finite-node score `P_node = Φ × V`. What varies in this table is **Balance** `B = sin(θ)`, not `P∞`. L4 is the apex because balance is maximum, not because manifold potential is higher. The old table used cos/sin approximations from the flat plane; this table uses the corrected S² stereographic values φ = cot(θ/2), ν = tan(θ/2) per the Honest Position (S10) and the Master Three-Stage Process.
 
 **Critical note on directionality:** L1 has LOW Phi and HIGH V (material survival). L7 has HIGH Phi and LOW V (pure coherence/formlessness). L4 is the apex where both are balanced. The developmental path is NOT a linear ascent from L1 to L7. It is an expansion of bandwidth -- an L4 operator can access any level as needed. Previous "Yoga-name" labels (Transcendent at L1, Survival at L7) were INVERTED and are hereby retired. Use the functional descriptions above.
 

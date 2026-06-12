@@ -71,7 +71,7 @@ In classical flow theory, flow occurs at the intersection of **Challenge** and *
    - *Lived experience:* Over-thinking, self-interruption, broken gestalt.
    - *On S²:* Not on the manifold. This is pathology, not mere suboptimality.
 
-> **The Flow State** is the perfect inverse relationship where the complexity of the Whole (φ) is exactly matched by the capability of the Parts (ν). Not because the numbers are equal, but because their product is constant and each equals 1.
+> **The Flow State** is the perfect inverse relationship where the complexity of the Whole (φ) is exactly matched by the capability of the Parts (ν). Not because every point has equal factors, but because the open-sphere product remains closed as one while the equator is the point where φ = ν = 1.
 
 ---
 

@@ -272,7 +272,7 @@ F₅ is the force that:
    - The measurement problem requires D5 input (which is why it remains unsolved)
    - Quantum gravity requires D5 input (which is why it remains unsolved)
 
-4. **Is testable.** The GFS regression tests the downstream prediction. If P_node = Φ × V (multiplicative, interaction, coupled orthogonal axes), the force signature is present. If P = αΦ + βV (additive, independent, no coupling), the force signature is absent.
+4. **Is testable.** The GFS regression tests the downstream prediction. If P_node = Φ × V (multiplicative, interaction, coupled orthogonal axes), the force signature is present. If P_add = αΦ + βV (additive, independent, no coupling), the force signature is absent.
 
 ### 4.3 The Multiplication as Force Signature
 
@@ -286,7 +286,7 @@ Forces create interactions. Interaction terms are multiplicative. This is not an
 Every force in physics manifests as a **product** of the interacting quantities, not a sum. Addition describes independent, non-interacting components. Multiplication describes coupled, interacting components.
 
 If P_node = Φ × V (multiplicative), then Φ and V are coupled by a force. That force is F₅.
-If P = αΦ + βV (additive), then Φ and V are independent. No force. No D5.
+If P_add = αΦ + βV (additive), then Φ and V are independent. No force. No D5.
 
 **The multiplication symbol × in the central equation IS the force.**
 
@@ -370,7 +370,7 @@ Any program that adds only real-valued structure (extra dimensions, discretised 
 **P2: Unification requires incorporating the observer.**
 Programs that take the measurement problem seriously and incorporate conscious observation (D5) will make more progress than programs that treat it as interpretive. Penrose's OR (objective reduction) is the closest existing program. [S]
 
-**P3: P_node = Φ × V, not P = αΦ + βV.**
+**P3: P_node = Φ × V, not P_add = αΦ + βV.**
 The multiplication (interaction term) reflects the coupling of orthogonal axes by F₅. If the GFS regression shows multiplicative > additive, this supports the force claim. If additive wins, the force claim is weakened (Φ and V are independent, no coupling, no F₅). [T → testable with [B] data]
 
 **P4: The Zero-Factor Catastrophe is the orthogonality constraint.**

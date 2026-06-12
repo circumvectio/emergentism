@@ -79,7 +79,7 @@ Moses came down the mountain with rules:
 P∞ = φ · ν = 1
 ```
 
-The product is constant inside the model. You cannot make the product exceed one. You cannot make ν go to infinity without φ going to zero. You cannot extract without drifting toward the cargo cult. You cannot wield the ring for domination because domination destroys the condition the ring names.
+The manifold product is constant inside the open model. You cannot make `P∞` exceed one by sliding along S²; as ν tends to infinity, φ tends to zero and the pole is approached as a limit. That is distinct from finite `P_node`, which can rise or collapse in practice. You cannot extract without drifting toward the cargo cult. You cannot wield the ring for domination because domination destroys the condition the ring names.
 
 **The formula is not imposed.** The formula is recognized.
 

@@ -97,11 +97,11 @@ The Steel Thread (Link 3) says `P∞ = φ · ν = 1` identically for all θ — 
 
 **The resolution the framework already half-has:** The P-constant paragraph resolves this by distinguishing manifold P (always 1) from node P (varies). But this distinction needs to be **in A1 itself**, not in a prose paragraph. Proposed correction:
 
-> **A1 (corrected):** The manifold identity φ · ν = 1 holds everywhere on S². Balance B = sin θ is the operational variable that varies. For finite nodes (organisms, institutions, systems), effective potential `P_node = Φ_node × V_node` can be less than 1 when the node's coherence and viability are not reciprocally calibrated. The syntropic criterion `ΣΔP_node > 0` applies to nodes, not to the manifold identity.
+> **A1 (corrected):** The manifold identity φ · ν = 1 holds on open S²; the poles are limiting boundaries. Balance B = sin θ is the operational variable that varies. For finite nodes (organisms, institutions, systems), effective potential `P_node = Φ_node × V_node` can be less than 1 when the node's coherence and viability are not reciprocally calibrated. The syntropic criterion `ΣΔP_node > 0` applies to nodes, not to the manifold identity.
 
 ### Finding: C5 (alignment equation) is dimensionally inconsistent
 
-C5: "E = −log(Φ × V)." On S², Φ × V = 1 everywhere. Therefore E = −log(1) = 0 everywhere. If E = 0 everywhere, it cannot serve as an alignment loss function — there is no gradient to descend.
+C5: "E = −log(Φ × V)." In the corresponding manifold register, φ · ν = 1 on open S². Therefore reading C5 as the manifold identity would make E = −log(1) = 0 throughout that open register. If E = 0 throughout the register, it cannot serve as an alignment loss function — there is no gradient to descend.
 
 The AMRITA architecture uses E = −log(B) = −log(sin θ), which DOES vary. The glossary correctly defines AMRITA this way. But C5 says −log(Φ × V), not −log(B). These are different expressions.
 

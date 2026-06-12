@@ -64,7 +64,7 @@ evidence_tier: "[A] the elementary mathematics (trig identities on S², the inve
 φ · ν = cot(θ/2) · tan(θ/2) = 1     identically for all θ ∈ (0, π).
 ```
 
-This is the verbatim seed of the Canonical Formula Block. `P∞ := φ · ν = 1` is the **manifold identity**, conserved everywhere on the sphere except at the two poles, where one of `φ, ν` is undefined.
+This is the verbatim seed of the Canonical Formula Block. `P∞ := φ · ν = 1` is the **manifold identity** on the open sphere; at the two poles one of `φ, ν` is undefined and the identity is read only as a limit.
 
 **Tier.** `[A]` for the identity (a one-line trig fact). `[S]` for the *reading* of `φ` as coherence and `ν` as viability, and for naming `P∞` the framework invariant.
 

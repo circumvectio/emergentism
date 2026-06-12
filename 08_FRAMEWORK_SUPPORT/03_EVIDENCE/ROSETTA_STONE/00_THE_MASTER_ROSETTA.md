@@ -230,7 +230,7 @@ Full methodology, per-column pair scoring, and failed mapping documentation: [`0
 
 The operator column defines the row. Everything else is projection.
 
-**Critical correction (2026-03-24):** The earlier table used approximate values (Φ=0.7, V=0.7, P=0.49) from additive thinking on the plane. [S] The corrected table uses the active Burri Sphere geometry: `phi = cot(theta/2)`, `nu = tan(theta/2)`, and `P_infinity = phi * nu = 1` as model invariant. What varies is **Balance B = sin θ**, not Potential P (which is 1 everywhere on S² in this model). Seven levels = six intervals of 15° across the 90° quadrant.
+**Critical correction (2026-03-24):** The earlier table used approximate values (Φ=0.7, V=0.7, P=0.49) from additive thinking on the plane. [S] The corrected table uses the active Burri Sphere geometry: `phi = cot(theta/2)`, `nu = tan(theta/2)`, and `P_infinity = phi * nu = 1` as open-register model invariant. What varies is **Balance B = sin θ**, not Potential P∞ (which is 1 on open S² in this model). Seven levels = six intervals of 15° across the 90° quadrant.
 
 ### The Core: Operators × Geometry
 
@@ -345,7 +345,7 @@ The column order is not arbitrary. It is causal. The Varṇa (social function) d
 ### Reading the Columns
 
 - **Column 1 (Operator) — [A]:** THE column. It defines the row. The operator IS the position on S². Geometric, derived from φ·ν=1 on the Riemann sphere. Immutable.
-- **Column 2 (B) — [A]:** Balance = sin θ. The ONLY thing that varies on S². P∞ = φ · ν = 1 everywhere on the open sphere (undefined at the poles). B peaks at L4. Geometric.
+- **Column 2 (B) — [A]:** Balance = sin θ. The ONLY thing that varies on S². P∞ = φ · ν = 1 on the open sphere; the poles are undefined limit boundaries. B peaks at L4. Geometric.
 - **Column 3 (Varṇa) — [S]:** Who you are. The social function from the Manusmṛti, extended below (Caṇḍāla) and above (Sādhu, Ṛṣi). Sanskrit-traditional, structural. **Cause.**
 - **Column 4 (Pramāṇa) — [S]:** How you know. The Vedāntic inference type. Structural; self-confirming (each school is stuck at its highest accepted pramāṇa).
 - **Column 5 (Reasoning) — [I]:** How you think. The inference mode determined by the social function. Interpretive — the framework's claim that Varṇa *causes* reasoning mode. **First effect.**

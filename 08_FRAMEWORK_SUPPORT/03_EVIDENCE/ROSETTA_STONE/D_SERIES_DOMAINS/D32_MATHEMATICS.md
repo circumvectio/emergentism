@@ -179,7 +179,7 @@ At equator (θ = π/2):  φ = 1, ν = 1, B = 1
 At poles (θ → 0, π):   B → 0
 ```
 
-**P∞ = φ · ν = 1 everywhere on the manifold.** What varies there is B (balance), not `P∞`. The old table's P-values (0.09, 0.21, 0.35, 0.49...) were computed on the plane. On the sphere, potential is constant. Balance peaks at L4.
+**P∞ = φ · ν = 1 on the open manifold.** The poles are limiting boundaries, not evaluated finite points. What varies there is B (balance), not `P∞`. The old table's P-values (0.09, 0.21, 0.35, 0.49...) were computed on the plane. On the open sphere, manifold potential is constant. Balance peaks at L4.
 
 ### L-Level Geometry (corrected)
 

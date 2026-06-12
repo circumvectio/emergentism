@@ -51,7 +51,7 @@ The definitive Rosetta Stone documents live in the main Emergentism corpus. This
 | **The Compression** | `../../../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/25_THE_COMPRESSION.md` | The four-line metaphysics + AM-GM proof |
 | **The Four Lines** | `../../../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/32_THE_FOUR_LINES.md` | Canonical four-line document with *h₂r̥tó-* PIE connection (Doc 32) |
 
-**Corrected geometry (2026-03-24):** φ = cot(θ/2), ν = tan(θ/2), B = sin θ. At L4: φ = ν = 1 (not 0.7/0.7). P∞ = 1 everywhere on S² (what varies is B, not P).
+**Corrected geometry (2026-03-24):** φ = cot(θ/2), ν = tan(θ/2), B = sin θ. At L4: φ = ν = 1 (not 0.7/0.7). P∞ = 1 on open S² (what varies is B, not P).
 
 ---
 

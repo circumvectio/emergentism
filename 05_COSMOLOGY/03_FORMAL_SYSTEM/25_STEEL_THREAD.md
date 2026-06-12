@@ -49,7 +49,7 @@ On S², parameterize by colatitude θ ∈ (0, π) — the open interval; θ = 0 
 
 Then φ · ν = cot(θ/2) · tan(θ/2) = 1 **identically** for all θ ∈ (0, π).
 
-This is not a constraint imposed on the system. It is a tautological identity of the coordinate system. P∞ = φ · ν = 1 everywhere on the **open** sphere — away from the two pole singularities (θ = 0, π), where cot/tan, and hence the product, are undefined (limit → 1, value undefined *at* the pole).
+This is not a constraint imposed on the system. It is a tautological identity of the coordinate system. P∞ = φ · ν = 1 on the **open** sphere — away from the two pole singularities (θ = 0, π), where cot/tan, and hence the product, are undefined (limit → 1, value undefined *at* the pole).
 
 **Status:** [A] Established. Trigonometric identity.
 

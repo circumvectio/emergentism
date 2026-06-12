@@ -41,7 +41,7 @@ The Riemann sphere S² ≅ ℂP¹ is parameterized by colatitude θ ∈ [0, π]:
 - **South pole** (θ = π): φ → 0, ν → ∞. Pure viability, zero coherence.
 - **Equator** (θ = π/2): φ = ν = 1. Balance.
 
-The identity φ · ν = 1 holds everywhere on S² (Steel Thread, Link 3). The product is constant. What varies is the *balance*:
+The identity φ · ν = 1 holds on the open S² register (Steel Thread, Link 3); the poles are limiting boundaries. The product identity is constant there. What varies is the *balance*:
 
 $$B(\theta) = \sin\theta$$
 
@@ -251,7 +251,7 @@ The K2 boundary is constitutional, not positional. Human signing is not a point 
 
 | Symbol | Meaning | Regime | Tier |
 |--------|---------|--------|------|
-| `P∞ = φ · ν = 1` | Manifold identity on S² | Conserved everywhere on the sphere | [S] |
+| `P∞ = φ · ν = 1` | Manifold identity on open S² | Conserved on the open sphere; pole values are limits | [S] |
 | `B = sin θ` | Balance / equatorial alignment | Varies 0 (poles) to 1 (equator) | [S] |
 | `P_node = Φ̂ × ν̂` | Effective potential at a finite node | Can be < 1 | [S/I] |
 | `ΣΔB`, `ΣΔP_node` | Directional change across the widest boundary | Evaluates outcome deltas | [I] |

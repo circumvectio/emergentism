@@ -33,7 +33,7 @@ rosetta:
 −log(• × ○) = 0      AXIOLOGY       The ground state has zero energy.
 ```
 
-Line 1 is what IS. The multiplication. The constraint. φ · ν = 1 on S². The product is constant at every point on the sphere. This is the core state — the identity that holds regardless of position, time, or observer.
+Line 1 is what IS. The multiplication. The constraint. φ · ν = 1 on the open S² register. The product is constant at every evaluated finite point; the poles are limiting boundaries, not finite values. This is the core state — the identity that holds across the register rather than a node-level score.
 
 Line 2 is what BECOMES. The addition. The force. φ + ν ≥ 2. The sum of the two projections is always at least twice the equatorial value. The system TENDS toward the minimum. This tendency IS ektropy. This IS F₅. This IS the hidden hand.
 

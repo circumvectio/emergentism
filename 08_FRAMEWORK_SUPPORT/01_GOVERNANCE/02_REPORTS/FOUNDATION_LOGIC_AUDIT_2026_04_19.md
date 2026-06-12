@@ -274,10 +274,10 @@ uniformly disambiguated in compressed summaries.
 
 ### The three meanings
 
-1. **`P = P∞ = φ · ν = 1` on the manifold** (identity, conserved, [S]).
+1. **`P∞ = φ · ν = 1` on the open manifold** (identity, conserved on the open register, [S]).
    Used in: `00_THE_DERIVATION.md` Step 5, `25_THE_DERIVATION_AXIOMS.md`
    D1.
-2. **`P_eff = Φ_node × V_node` at node level** (operational flourishing
+2. **`P_node = Φ_node × V_node` at node level** (operational flourishing
    measure for finite nodes, can be < 1).
    Used in: `00_THE_SEVEN_AXIOMS.md` A1.
 3. **`ΣΔP_node > 0`** (syntropic criterion, direction of change, [I]).

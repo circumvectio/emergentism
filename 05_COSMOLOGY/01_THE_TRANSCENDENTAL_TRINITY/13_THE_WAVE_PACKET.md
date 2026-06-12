@@ -55,7 +55,7 @@ They are the same equation.
 
 | Wave Packet Component | Symbol | Burri Sphere Component | Symbol |
 |----------------------|--------|----------------------|--------|
-| Normalization (amplitude) | A | Equipotentiality | P∞ = φ · ν = 1 (everywhere on S²) |
+| Normalization (amplitude) | A | Equipotentiality | P∞ = φ · ν = 1 (open S²; poles as limits) |
 | Gaussian envelope | e^(-(x-x_t)²/4a²) | Balance function | B = sin θ |
 | Phase (real projection) | cos(kx-ωt) | Viability | ν = tan(θ/2) |
 | Phase (imaginary projection) | sin(kx-ωt) | Coherence | φ = cot(θ/2) |

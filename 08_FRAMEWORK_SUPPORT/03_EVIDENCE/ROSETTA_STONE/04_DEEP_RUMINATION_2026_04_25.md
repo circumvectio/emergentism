@@ -48,7 +48,7 @@ The Three-Stage Process came first. The math came from the Three-Stage Process. 
 
 ## The Geometry: What Varies, What Doesn't
 
-On S², P∞ = φ · ν = 1 everywhere. Potential is constant. What varies is Balance B = sin θ:
+On open S², `P∞ = φ · ν = 1`. The poles are limiting boundaries, not evaluated finite points. Manifold potential is constant; what varies is Balance B = sin θ:
 
 ```
 L0   B = 0       South pole. THE BOUNDARY. Kāla. Time.

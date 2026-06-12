@@ -54,7 +54,7 @@ The compass does not know the territory. The compass does not know what is in th
 
 [I] North = ↑φ. Always. In physics (↑coherence), in psychology (↑integration), in economics (↑trust), in mythology (↑meaning), in neuroscience (↑right-hemisphere gestalt). The compass does not describe these domains. The compass POINTS in them.
 
-A compass works everywhere because North is North everywhere. The operators work everywhere because φ · ν = 1 is true everywhere on S².
+A compass works everywhere because North is North everywhere. The operators work everywhere because φ · ν = 1 is true throughout the open S² register, with the poles handled as limits.
 
 ---
 

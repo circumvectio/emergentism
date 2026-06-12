@@ -38,7 +38,7 @@ evidence_tier: "[A] for stated mathematical identities under assumptions; [S] fo
 
 The old table said L4 = Φ 0.7, V 0.7, P = 0.49. That was additive thinking on the plane. On the actual sphere:
 
-- **P∞ = φ · ν = 1 everywhere on the manifold.** The manifold product is constant. It does not vary.
+- **P∞ = φ · ν = 1 on the open manifold.** The poles are limiting boundaries, not evaluated finite points. The manifold product is constant there. It does not vary.
 - **B = sin θ is what varies.** Balance. And it peaks at L4 where B = 1.
 - **At L4: φ = 1 and ν = 1.** Not 70%. ONE HUNDRED PERCENT. Full coherence AND full viability. The warrior-sage doesn't compromise — he holds both at their natural unit.
 

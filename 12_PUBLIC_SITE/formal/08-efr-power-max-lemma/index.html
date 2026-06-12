@@ -172,7 +172,7 @@ searched on the frontier where the holobiont is preserved or raised.</p>
 <p><strong>Coupling exists</strong> (λ &gt; 0): The agents' efficacies are interdependent. If λ = 0 (no coupling), the lemma doesn't apply — isolated agents can extract without self-harm.</p>
 </li>
 <li>
-<p><strong>Multiplicative structure</strong> (P_node = Φ × V): The lemma depends on P being a product, not a sum. Under additive structure (P = αΦ + βV), agents can compensate low V with high Φ, breaking the coupling.</p>
+<p><strong>Multiplicative structure</strong> (P_node = Φ × V): The lemma depends on node score being a product, not a sum. Under additive structure (<code>P_add = αΦ + βV</code>), agents can compensate low V with high Φ, breaking the coupling.</p>
 </li>
 <li>
 <p><strong>Long time horizon</strong>: The lemma describes steady-state behavior, not one-shot interactions. In one-shot games, extraction can be locally optimal. Over time, extraction destroys the network that the agent depends on.</p>
@@ -201,7 +201,7 @@ expression of the Power-Max Lemma:</p>
 <h2 id="what-would-falsify-this">What Would Falsify This</h2>
 <ol>
 <li><strong>No coupling</strong> (λ = 0): If agents are truly independent, max <code>W_i</code> need not preserve or raise <code>P_node,H</code></li>
-<li><strong>Additive structure</strong> (P = αΦ + βV): If P is additive, agents can compensate without coupling</li>
+<li><strong>Additive structure</strong> (<code>P_add = αΦ + βV</code>): If node scoring is additive, agents can compensate without coupling</li>
 <li><strong>Short time horizon</strong>: In one-shot interactions, extraction can be locally optimal</li>
 <li><strong>No enforceable η discipline</strong>: If extraction is hidden or privately
 profitable, the one-shot extraction route can beat cooperation locally.</li>

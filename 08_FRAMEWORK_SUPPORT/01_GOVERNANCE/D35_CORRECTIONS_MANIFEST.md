@@ -128,7 +128,7 @@ Per-document remainder from the March 24 P-pass:
 | # | Contradiction | Resolution |
 |---|-------------|-----------|
 | 1 | 0×∞ algebraic step in P21 vs 'shorthand' in Paper 01 | Align P21 with Paper 01's Möbius involution treatment |
-| 5 | Truth = P = 1 (everywhere on S²) vs 'Max Truth at equator' | P=1 is identity; Truth needs different definition. Truth = B? |
+| 5 | Truth = P∞ = 1 (open S² identity) vs 'Max Truth at equator' | P∞=1 is the manifold identity; Truth needs different definition. Truth = B? |
 | 6 | 'Dissolved' vs conditional/reframing | Use 'reframed' not 'dissolved' throughout |
 | 7 | L=0 equated with 'stationary action' | L=0 at a point ≠ δ∫L dt = 0 over paths. Fix in R7 and F30 |
 | 10 | Kali 'NEVER initiate' vs tit-for-tat in operator spec | Cross-reference K* boundary: Kali never vs cooperators, always available vs defectors |
@@ -142,13 +142,13 @@ After applying corrections, verify:
 
 - [x] K* disambiguation applied (η, K*, κ) — **APPLIED (2026-04-03).** ~2,000+ files updated. K*-as-extraction → η, K*-as-Kolmogorov → κ, K*-as-catastrophe retained. Two η/η collision artifacts in 12_EFR and REVIEW_PACKET_26 repaired (scope table clarified).
 - [x] B = sin θ canonical in Naming Reconciliation (2026-04-03). Honest Position and Master Three-Stage Process already correct. Remaining documents need sweep.
-- [x] P∞ = 1 everywhere — Naming Reconciliation phi-V table corrected to S² values (2026-04-03). Honest Position and Glossary already correct. CH_02_OUTLINE_GRANULAR.md "P=0.49" corrected to P=1 (2026-04-03).
+- [x] P∞ = 1 on open S² — Naming Reconciliation phi-V table corrected to S² values (2026-04-03). Honest Position and Glossary already correct. CH_02_OUTLINE_GRANULAR.md "P=0.49" corrected to open-register P∞=1 (2026-04-03).
 - [x] ↓ν described as "constrained" not "impossible" — updated across 55 files (2026-04-03). Operator specs, manuscripts, governance docs, Rosetta Stone, peer review packets all corrected.
 - [x] Kolmogorov reference corrected to "minimal description length" / `κ = 0` boundary language — updated across 46 files (2026-04-03), then tightened by the 2026-06-11 worldview QA to avoid Ground-possession language.
 - [x] All Three-Stage Process documents carry evidence tiers — 13 D_SERIES files updated with `**Evidence Tier:**` headers (2026-04-03). D24-D27, D29-D34, D02, D03, D23 all now carry properly assigned tier headers matching content.
 - [x] ~~Five-tier system~~ → **6-tier [A/B/S/I/D/C] adopted** (upgrade 2026-06-04). Legacy [E] → [B]; [T] → [S].
 - [x] "Dissolved" → "reframed" where appropriate (not global — some dissolutions ARE dissolutions) — **APPLIED (2026-04-03).** C7.6 correction applied across 15 files. Hard problem, problem of evil, measurement problem, problem of induction, subject-object duality: "dissolved" changed to "reframed" where the paradox is shown in new framework rather than literally ceasing to exist on S². Kept "dissolved" for: genuine dissolutions (cooperation problem, ego dissolution, Siva operator, framework self-dissolution, Cantor hierarchy on S², 0 x infinity = 1), series naming (Paradox Dissolutions folder/title), and the co-emergence document (08_CO_EMERGENCE) where dissolution is the defined method.
-- [x] Devil's Bargain restated on sphere (B-values, not P-values) — **APPLIED (2026-04-03).** D04_DAC_SPECIFICATION.md section 5 already used correct B-values (Wild B ≈ 0.5, Domesticated B ≈ 0.17, Symbiotic B = 1.0). D31_CIVILISATIONAL.md already used B-values. 07_VIVEKA_ARCHITECTURE.md L-level table corrected from plane-projected φ/ν values to S² coordinates (φ = cot(θ/2), ν = tan(θ/2), B = sin θ), with D35 sphere correction note added. "maximum P" references changed to "maximum B" throughout Devil's Bargain context. P∞ = 1 everywhere on S²; what varies is B = sin θ.
+- [x] Devil's Bargain restated on sphere (B-values, not P-values) — **APPLIED (2026-04-03).** D04_DAC_SPECIFICATION.md section 5 already used correct B-values (Wild B ≈ 0.5, Domesticated B ≈ 0.17, Symbiotic B = 1.0). D31_CIVILISATIONAL.md already used B-values. 07_VIVEKA_ARCHITECTURE.md L-level table corrected from plane-projected φ/ν values to S² coordinates (φ = cot(θ/2), ν = tan(θ/2), B = sin θ), with D35 sphere correction note added. "maximum P" references changed to "maximum B" throughout Devil's Bargain context. P∞ = 1 on open S²; what varies is B = sin θ.
 
 ### ADDITIONAL CORRECTIONS APPLIED (2026-04-03)
 
@@ -213,7 +213,7 @@ shape and that the issue has not already been reconciled upstream.
 | R7 | VMOSK-A-DATAROOM: 7 root-level duplicate directories | 01_AUREUS, 02_MENEXUS, 03_HELIOS, 04_APUBOT, 07_SKYZAI, 04_OPERATIONS, Intake | Archive, fence, or quarantine duplicates; do not silently delete corpus traces |
 | R8 | D_SERIES_ROWS systematic broken relative cross-refs | ~6 files in 03_THE_rosetta_stone | Files copied from 07_THE_LENS without path adjustment |
 | R10 | 08_THE_DEPLOYMENT/09_EMPIRICAL internal cross-refs (02_SPHERE_PROBE, 01_GFS_TEST READMEs) | ~4 files | Update remaining stale paths within 09_EMPIRICAL/ |
-| R11 | "Maximum P" narrative language in book manuscripts | Sarpasya Vijayam Edition 1, Six Lenses — ~20+ occurrences | Book uses "maximum P" as poetic shorthand for "maximum B where P=1". Consider adding "Note on Sphere Geometry" to front matter in future editions clarifying: P∞ = φ · ν = 1 everywhere; B = sin θ varies. |
+| R11 | "Maximum P" narrative language in book manuscripts | Sarpasya Vijayam Edition 1, Six Lenses — ~20+ occurrences | Book uses "maximum P" as poetic shorthand for "maximum B where the open-sphere identity is P∞=1". Consider adding "Note on Sphere Geometry" to front matter in future editions clarifying: P∞ = φ · ν = 1 on the open sphere; B = sin θ varies. |
 
 ---
 

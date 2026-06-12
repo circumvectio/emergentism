@@ -29,9 +29,9 @@ rosetta:
 
 ## The Core Claim
 
-**`P∞ = φ · ν = 1` on `S²`.**
+**`P∞ = φ · ν = 1` on the open `S²` register.**
 
-This is a claim about the *geometry* of reality — not about survey responses, not about self-reported flourishing, not about any particular operationalization. The claim is that the underlying substrate is the Riemann sphere, that coherence and viability are its two complementary projections, and that their product is constant.
+This is a claim about the *geometry* of reality — not about survey responses, not about self-reported flourishing, not about any particular operationalization. The claim is that the underlying substrate is the Riemann sphere, that coherence and viability are its two complementary projections, and that their product is constant on the open sphere, with the poles handled as limiting boundaries rather than evaluated finite points.
 
 **Numbering note:** when this document discusses the uniqueness of S² under O1-O5, it is referring to the older public ontological wager used for substrate selection. The active formal-system canon is broader (A1-A7).
 
