@@ -223,11 +223,15 @@ In this sense, the framework's value alignment is not anti-power. It is anti-dis
 
 The ethical machinery of the framework is among its most distinctive contributions.
 
-At the directional level, ethics is compressed as:
+At the directional level, the current objective-dharma compression is:
 
-`ΣΔB > 0 across the widest boundary`
+`ΔP_node,i > 0 and ΔP_node,H > 0 under η = 0`
 
-That is the ethical direction: movement that increases balanced flourishing across the widest real field one can responsibly perceive. `[S/I]`
+That is the lived action direction: the individual symbiont and collective
+holobiont rise together, without either side buying local gain by degrading the
+other. The older balance-register audit remains useful as `ΣΔB / ΣΔP_node > 0`
+across the widest real boundary, but it is an audit/constraint register, not a
+replacement for the dyadic move test. `[S/I]`
 
 At the dynamical level, the extraction coefficient `η` must be read in its register. The older EFR formalism uses a ratio-register (`extraction / contribution`) for substrate accounting. The lived game, objective dharma, and Power-Max Lemma use a move-register: `η` names the extraction direction of an action, not a static coordinate.
 

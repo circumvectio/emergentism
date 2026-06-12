@@ -55,7 +55,7 @@ Zero-Sum Resolution Equation
 | **L1** | `01_TELEOLOGY` | Objective Function | `Φ → 0` — boundary limit | `(φ−ν)²≥0` makes the equator the unique, cheapest-to-hold balance-maximum; **F5 / ektropy** is the gradient that selects systems equator-ward; extraction (η>0) is *geometrically* self-defeating. |
 | **L2** | `02_EPISTEMOLOGY` | Data Science | `dP_node = V·dΦ + Φ·dV` — product-rule differential | Direct perception (*Pratyakṣa*) is primary; **beauty** = coherent-fit (φ-recognition) discloses before proof but never upgrades a tier by itself; every claim carries a tier. |
 | **L3** | `03_METHODOLOGY` | Auditing / Inferential Logic | `∂P_node/∂V = Φ` — partial derivative / margin | A claim earns its place only if you can state its tier, its kill/upgrade path, and what survives if it fails; pre-registered falsifiable tests; the framework publishes its failures. |
-| **L4** | `04_AXIOLOGY` | Value Alignment | `dΦ/Φ = dV/V` — proportional balance / equator | Good = increases coherent flourishing **without extraction** across the widest real boundary (ΣΔB > 0 under η=0); value becomes *real* only when a mortal **K2-signs** one branch of possibility into act, at the L4 equator. |
+| **L4** | `04_AXIOLOGY` | Value Alignment | `dΦ/Φ = dV/V` — proportional balance / equator | Good = raises the finite node and the real sustaining boundary together: `ΔP_node,i > 0` and `ΔP_node,H > 0` under `η=0`; the older balance audit reads this as `ΣΔB / ΣΔP_node > 0` across the widest real boundary. Value becomes *real* only when a mortal **K2-signs** one branch of possibility into act, at the L4 equator. |
 | **L5** | `05_COSMOLOGY` | System Architecture | `log P_node = log Φ + log V` — multiplicative order becomes additive | Reality is structured by `φ·ν=1` on S², emerging from the transcendental trinity `{0,1,∞}` (1 = 0×∞), unfolding into the Seven Axioms and the constitutional topology. |
 | **L6** | `06_ONTOLOGY` | Core State | `E_node = −log(P_node)` — negative log / via negativa | Being is reciprocal closure stabilized as a manifold — but the **Ground** that makes closure possible is prior to Being and reached only by subtraction (*neti neti*). No map, not even this equation, is the Ground. |
 | **L7** | `07_THEOLOGY` | Institutional Narrative | `z = φ/ν` — ratio read by stereographic projection | The bounded exoteric return: it translates the spine into image and rite, yet its defining move is **L7 → L1** — the highest symbolic act points *away* from the symbol, back to ungated direct perception. |
@@ -84,8 +84,9 @@ The current root telos is stated in `00_THE_GOAL.md`, not invented here:
 > Build Emergentism into a coherent and consistent Weltanschauung that explains
 > how the reader came to be as Dasein, why reality tends toward viable
 > completion, and how to play the game: recursively applying epistemology,
-> methodology, and axiology to maximize `P_node = Φ × V` under `η = 0`, so the
-> individual symbiont and collective holobiont rise together without extraction.
+> methodology, and axiology to raise `P_node,i` and `P_node,H` together under
+> `P_node = Φ × V` and `η = 0`, so the individual symbiont and collective
+> holobiont rise together without extraction.
 
 The operating method is the Soul Loop (`05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md`): continuous recursive disambiguation that edits the corpus and the editor. The loop keeps the five philosophical functions recursive instead of ideological:
 
@@ -94,10 +95,10 @@ Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
 Know how to know:  epistemology -> direct disclosure, inference, evidence tiers
 Know how to move:  methodology -> derive, test, build, correct, recurse
 Know what matters: axiology -> Beauty, Truth, Justice, non-extraction
-Know how to act:   teleology -> maximize P_node = Φ × V under η = 0
+Know how to act:   teleology -> maximize P_node,i while raising P_node,H under η = 0
 ```
 
-The action test is the syntropic dyad from `04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md`: `i` raises `H`, `H` raises `i`, and neither side buys local gain by degrading the other. `Φ` without `V` is sterile seeing; `V` without `Φ` is blind force; `Φ` and `V` balanced at L4 is objective dharma / flow-state action. This is `[S]` as framework method and `[I]` as lived self-transformation, not a proof of moral omniscience.
+The action test is the syntropic dyad from `04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md`: `i` raises `H`, `H` raises `i`, and neither side buys local gain by degrading the other. In finite-node language the two tests are `P_node,i = Φ_i × V_i` and `P_node,H = Φ_H × V_H`; objective dharma is the act that preserves or raises both under `η = 0`. `Φ` without `V` is sterile seeing; `V` without `Φ` is blind force; `Φ` and `V` balanced at L4 is objective dharma / flow-state action. This is `[S]` as framework method and `[I]` as lived self-transformation, not a proof of moral omniscience.
 
 ## 6. The practice clause (release, not override)
 

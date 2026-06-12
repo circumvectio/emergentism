@@ -63,7 +63,7 @@ Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
 Know how to know:  epistemology -> direct disclosure, inference, evidence tiers
 Know how to move:  methodology -> derive, test, build, correct, recurse
 Know what matters: axiology -> Beauty, Truth, Justice, non-extraction
-Know how to act:   teleology -> maximize P_node = Φ × V under η = 0
+Know how to act:   teleology -> maximize P_node,i while raising P_node,H under η = 0
 ```
 
 Play:
