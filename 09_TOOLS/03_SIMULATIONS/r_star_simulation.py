@@ -8,7 +8,7 @@ lattice (p_c ~ 0.5927).
 
 Framework basis:
   B(nu) = 2*nu / (1 + nu^2)   -- balance function on S^2
-  P = phi * nu = 1             -- the constraint
+  P_inf = phi * nu = 1         -- the S2 manifold constraint
   At the equator phi = nu = 1, B = 1 (maximum balance)
   Defection = extraction of Delta_nu from neighbors, shifting away from equator
 

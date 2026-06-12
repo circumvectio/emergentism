@@ -17,7 +17,7 @@ rosetta:
 
 ## §1. Scope
 
-**Is:** A consolidation packet naming the isomorphism between the canonical AGI definition (A × G × I — autonomy × generality × intelligence) and the framework's P = Φ × V on S². It exists because the Venn-diagram vocabulary is legible to readers who are not yet ready for the equation, and because several load-bearing corollaries fall out of the mapping that deserve explicit written form.
+**Is:** A consolidation packet naming the isomorphism between the canonical AGI definition (A × G × I — autonomy × generality × intelligence) and the framework's finite-node `P_node = Φ × V` score. It exists because the Venn-diagram vocabulary is legible to readers who are not yet ready for the equation, and because several load-bearing corollaries fall out of the mapping that deserve explicit written form.
 
 **Is not:** A proposal for public publication. A manifesto. A K2 action. An envelope in the sense of packet 103. This is Brāhmaṇa-layer architecture — background coherence, available as seed for downstream surfaces (PR/FAQs, explanatory writing, external communications) but not itself one.
 
@@ -33,7 +33,7 @@ The public vocabulary of AGI defines it multiplicatively:
 - **G** — generality (breadth of scope across domains)
 - **I** — intelligence (competence; coherent capability)
 
-And treats AGI as the product: **AGI = A × G × I**. Near-zero in any factor collapses the total. This is the same multiplicative structure as **P = Φ × V**, with the same Zero-Factor Catastrophe.
+And treats AGI as the product: **AGI = A × G × I**. Near-zero in any factor collapses the total. This is the same multiplicative structure as **P_node = Φ × V**, with the same Zero-Factor Catastrophe.
 
 ### The correct triangle (not a bare isomorphism)
 

@@ -335,8 +335,9 @@ evidence tiers, and mortal responsibility for irreversible action.
 
 Trophic position must not be read as dharma rank. Each fitted being can be
 "at 1" in its own worldline: grass, gazelle, wolf, fungus, human. They are all
-at P_node = Φ × V = 1 on their own S². The cascade orders energy strategies, not
-moral superiority.
+read as centered at `B = 1` on their own S²; their finite-node
+`P_node = Φ × V` remains a separate measured or modeled score. The cascade
+orders energy strategies, not moral superiority.
 
 **The replicator hierarchy drives the energy-density gradient:**
 - **Grass** (genotype only): r-strategy, broad solar energy, minimal Φ investment

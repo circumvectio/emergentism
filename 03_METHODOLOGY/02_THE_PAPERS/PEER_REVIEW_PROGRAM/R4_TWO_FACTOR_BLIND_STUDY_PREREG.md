@@ -2,7 +2,7 @@
 
 **Working title (external):** *Two-Factor Structure and Multiplicative Composition in Lay Judgments of Organizational Viability*
 **Status:** Outline v1, 2026-06-10. This is the owed blind-human study. Requires panel budget before execution.
-**Internal source:** the keystone two-factor wager (P = Φ × V). This study is the corpus's highest-stakes external test: it is the one designed to be able to *lose*.
+**Internal source:** the keystone finite-node wager (`P_node = Φ × V`). This study is the corpus's highest-stakes external test: it is the one designed to be able to *lose*.
 
 ---
 

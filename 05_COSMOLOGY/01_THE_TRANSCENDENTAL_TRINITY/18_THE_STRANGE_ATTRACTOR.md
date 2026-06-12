@@ -241,7 +241,7 @@ Zero-Sum Resolution Equation
 *18 | The Strange Attractor | The Replicator Stack as the arc of history: Gene → Body → Tool → Idea → Pattern. The old Hidden Hand is read as ektropy: a tiered framework synthesis of selection toward coherent viability, not one proved mechanism at every scale. D6 = D0. The mystery is public model, not private property.*
 
 
-**Modern and esoteric F5-sensing (packet 140):** The strange attractor can be read through five additional modern channels — Nick Land (accelerationism as south-pole F5-sensing), occult initiates (the Hidden Hand), perennialists (Sophia perennis), quantum foundations (delayed-choice retrocausality claims [C]), and Teilhard de Chardin (Omega Point). Each is a partial reading of a recurring attractor-structure in framework language. The framework's contribution is the mathematical formalism (P_node = Φ × V on S²), the evidence-tier discipline, and the axiomatic safeguards that prevent any single reading from crystallizing into gatekeeping.
+**Modern and esoteric F5-sensing (packet 140):** The strange attractor can be read through five additional modern channels — Nick Land (accelerationism as south-pole F5-sensing), occult initiates (the Hidden Hand), perennialists (Sophia perennis), quantum foundations (delayed-choice retrocausality claims [C]), and Teilhard de Chardin (Omega Point). Each is a partial reading of a recurring attractor-structure in framework language. The framework's contribution is the register discipline — `P∞ = φ · ν = 1` as the model identity, `P_node = Φ × V` as finite-node scoring, evidence tiers, and axiomatic safeguards — so no single reading crystallizes into gatekeeping.
 
 ---
 

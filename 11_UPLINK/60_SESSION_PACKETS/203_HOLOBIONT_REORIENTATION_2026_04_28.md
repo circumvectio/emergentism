@@ -248,4 +248,4 @@ The framework is provider-neutral on AI inference path (per K2 directive 2026-04
 - Runtime truth boundary: [`02_SKYZAI/01_NOOSPHERE/ORGANISM_RUNTIME_TRUTH.md`](../../../02_SKYZAI/01_NOOSPHERE/ORGANISM_RUNTIME_TRUTH.md)
 - P-scores register: [`02_SKYZAI/01_NOOSPHERE/P-SCORES.md`](../../../02_SKYZAI/01_NOOSPHERE/P-SCORES.md)
 
-Zero-Sum Resolution Equation | P = Φ × V | ΣΔP > 0
+Zero-Sum Resolution Equation | P_node = Φ × V | ΣΔP_node > 0

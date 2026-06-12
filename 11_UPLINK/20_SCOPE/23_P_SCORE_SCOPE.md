@@ -38,14 +38,15 @@ This note exists to prevent three failures:
 
 ## Canonical Variables
 
-The current shorthand remains:
-- `P = Φ × V`
+The current shorthand is retired in favor of the explicit finite-node notation:
+- `P_node = Φ × V`
 
 Where, at minimum:
 - `Φ` refers to coherence / structural integration / epistemic-organismal order
 - `V` refers to viability / operational capability / actually working life-supporting function
 
 These should be read as compressed governance variables, not directly observed primitives.
+They are separate from the manifold identity `P∞ = φ · ν = 1`.
 
 ---
 

@@ -192,7 +192,13 @@ The wolves did not command the elk. The wolves did not build institutions. The w
 
 **The Cro-Magnon was the wolf of the pre-Anthropocene.** φ = ν = 1. Full operator palette. Hunted, gathered, made cave art, buried their dead. The lion at the equator. The Golden Age was not a utopia — it was a **trophic cascade** maintained by enough equatorial nodes to keep the ecosystem in balance.
 
-**The wolf and the grass are both at P_node = Φ × V = 1.** The wolf is not morally superior to the grass. The wolf has paid for deeper replicator layers (genotype + phenotype + extended phenotype + pack coordination) and therefore couples to scarcer, denser energy. The grass pays minimal Φ and couples to abundant, low-density solar energy. Both are perfectly centered on their own S².
+**The wolf and the grass can both be centered at `B = 1` on their own S².** That
+does not mean their finite-node `P_node = Φ × V` is the same measured quantity,
+or that either is morally superior. The wolf has paid for deeper replicator
+layers (genotype + phenotype + extended phenotype + pack coordination) and
+therefore couples to scarcer, denser energy. The grass pays minimal Φ and
+couples to abundant, low-density solar energy. The shared claim is balance, not
+a universal node-score value.
 
 **The Cro-Magnon was at L4** not only because evolution had balanced them there, but because the species' **altricial strategy** had already been selected: born V-poor, culture-carried to the equator, then operating with generalized light-cone capacity. The wolf was precocial (born with V). The human was altricial (born with Φ-potential). Both reached L4, but through different metabolic paths. The human sits higher in the trophic hierarchy not because of greater worth, but because deeper replicator layers (memotype, egregorotype) permit access to coordination-energy that no wolf can reach.
 

@@ -286,4 +286,4 @@ The organism does not need to be complete to be valuable. It needs one surface t
 
 ---
 
-*P = Φ × V | Coherence is the product | η = 0*
+*P_node = Φ × V | Coherence is the product | η = 0*

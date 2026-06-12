@@ -359,7 +359,7 @@ At 100 subscribers (Phase 2 gate): $9,900 gross → ~$5,000 provider spend → ~
 
 ### 5.6 No retail tier (explicit)
 
-No $9 or $19 tier. Brand guide's terminal aesthetic + P = Φ × V cover positioning + analyst ICP all reject the retail layer. Free is the retail layer. Anyone who wants less than Premium gets the full Free experience; anyone who wants more pays $99 or leaves.
+No $9 or $19 tier. Brand guide's terminal aesthetic + `P_node = Φ × V` cover positioning + analyst ICP all reject the retail layer. Free is the retail layer. Anyone who wants less than Premium gets the full Free experience; anyone who wants more pays $99 or leaves.
 
 ---
 
@@ -528,7 +528,7 @@ Explicit rejections for v1.0 (these preserve the category claim):
 
 ### 8.4 The retention geometry
 
-Circle retains Premium users because they watch their **own scoring loop converge**. Week 1: noise. Week 4: provider routing has reweighted; hit_rate visible climb. Month 3: their objectives produce citeable signals faster than their peer research channels. That's the compound interest the brand-guide §01 promises: P = Φ × V, compounding.
+Circle retains Premium users because they watch their **own scoring loop converge**. Week 1: noise. Week 4: provider routing has reweighted; hit_rate visible climb. Month 3: their objectives produce citeable signals faster than their peer research channels. That's the compound interest the brand-guide §01 promises: `P_node = Φ × V`, compounding.
 
 Lose that loop → lose Premium retention. Every product decision must preserve the visibility of the scoring loop to the user.
 

@@ -34,9 +34,9 @@ Standard behavioral-economics anomalies may not be anomalies at all.
 
 They may instead show that:
 - material payoff is not sufficient,
-- and that choice is often governed by a multiplicative structure:
+- and that choice is often governed by a finite-node multiplicative structure:
 
-P = Φ × V
+P_node = Φ × V
 
 Where:
 - V = payoff viability / instrumental value

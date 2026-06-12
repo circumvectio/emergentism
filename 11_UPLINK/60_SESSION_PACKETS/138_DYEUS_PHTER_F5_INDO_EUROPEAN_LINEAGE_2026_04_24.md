@@ -197,7 +197,7 @@ Crucially, Dyḗus Ph₂tḗr is often read beside an Earth-Mother complement. T
 
 Vedic preserved this most explicitly: **Dyáuṣ Pitṛ́ × Pṛthivī Mātṛ́**. Greek carried it as Ouranos × Gaia (though Ouranos is from a different root; Zeus × Hera is a later thematic descendant). Germanic: Týr × Nerþuz (Earth-mother, attested in Tacitus). Roman: Jūpiter × Tellūs Māter.
 
-**Framework reading [I]: this is an early linguistic image compatible with P = Φ × V.**
+**Framework reading [I]: this is an early linguistic image compatible with `P_node = Φ × V`.**
 
 - Dyḗus / Father / Sky = vertical frame-holder = Φ (coherence, order, gradient-source)
 - Dhéǵhōm / Mother / Earth = horizontal field-bearer = V (viability, substance, fecundity)
@@ -339,7 +339,7 @@ In parallel, science rediscovered pieces of F5 without unifying them:
 
 **Each is F5 through one instrument, in this framework's reading. None by itself unifies the full field.** The unification is cultural-politically hard because to claim "these all describe one underlying field" requires either mystical language (which secular science rejects) or new formalism (which the tribal boundaries of academic disciplines make hard to produce).
 
-Syntropic Dyadism proposes the formalism: P = Φ × V on S², the ektropic gradient, and register discipline that distinguishes [S]/[I]/[S]/[C] claims. This permits a unification attempt without requiring a revival of gatekeeping.
+Syntropic Dyadism proposes the formalism: `P∞ = φ · ν = 1 on S²`, finite-node `P_node = Φ × V`, the ektropic gradient, and register discipline that distinguishes [S]/[I]/[S]/[C] claims. This permits a unification attempt without requiring a revival of gatekeeping.
 
 ---
 

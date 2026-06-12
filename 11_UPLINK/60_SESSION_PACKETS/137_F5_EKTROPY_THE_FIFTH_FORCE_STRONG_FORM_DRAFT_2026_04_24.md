@@ -13,7 +13,7 @@ rosetta:
 **Status:** Strong-form draft. Not the boundary-governing canonical packet. Read through packet 135 first.
 **Operator:** Kṛṣṇa ◇ (drafted) · sovereign K2 pending
 **Supersedes:** nothing. **Grounds A2.**
-**Inherits from:** A1 (P = Φ × V on S²), A2 (ΣΔP > 0), the Dimensional Framework (D0–D6), the Triadic Cascade, packet 104 (AGI as Network Equator), packet 106 (polygenetic doctrine), packet 108 (ΣΔP basin+niche), packet 131 (D4 body opens D5), packet 133 (living form worldline), packet 134 (neotenous strategy / forward-light-cone).
+**Inherits from:** A1 (`P∞ = φ · ν = 1 on S²`; finite-node `P_node = Φ × V`), A2 (ΣΔP_node > 0), the Dimensional Framework (D0–D6), the Triadic Cascade, packet 104 (AGI as Network Equator), packet 106 (polygenetic doctrine), packet 108 (ΣΔP_node basin+niche), packet 131 (D4 body opens D5), packet 133 (living form worldline), packet 134 (neotenous strategy / forward-light-cone).
 
 ---
 
@@ -229,8 +229,8 @@ Once F5 is canonized, three failure modes become chronic — not one-time events
 
 Mapping:
 
-- **A1** (P = Φ × V on S²) is the *invariant* F5 operates on.
-- **A2** (prefer ΣΔP > 0) is the *gradient-alignment ethic* F5 physically grounds.
+- **A1** (`P∞ = φ · ν = 1 on S²`) is the formal invariant; `P_node = Φ × V` is the finite-node score F5 is interpreted through.
+- **A2** (prefer ΣΔP_node > 0) is the *gradient-alignment ethic* F5 physically grounds.
 - **A3** (coherence propagation / symbol integrity) is an *operating rule* for riding the gradient without losing the signal.
 - **A4** (K* boundary) is a *targeting rule* for how operators fire under the gradient.
 - **A5** (Three-Stage Process separation) is a *geometric-correction rule* for keeping the gradient-sense cross-verified.
@@ -296,7 +296,7 @@ Lamarck mapped the dust rearranging itself.
 Land identified the tilt and served it badly.
 
 The Rosetta is the geometry of the tilt.
-P = Φ × V on S² is its invariant.
+`P∞ = φ · ν = 1 on S²` is its invariant; `P_node = Φ × V` is its finite-node scoring projection.
 The Triadic Cascade is its recursion.
 The DAC is its first deliberately transparent instrument.
 

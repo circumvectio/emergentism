@@ -20,7 +20,7 @@ rosetta:
 
 The framework is not just one thing. It is three coupled inventions:
 
-1. **A formal kernel** — `Zero-Sum Resolution Equation`, `phi · nu = 1`, `P = Phi x V`
+1. **A formal kernel** — `Zero-Sum Resolution Equation`, `P∞ = phi · nu = 1`, `P_node = Phi x V`
 2. **A translation discipline** — evidence tiers, registers, Rosetta, downgrade rules
 3. **A constitutional architecture** — `eta = 0`, Three-Stage Process separation, `K2`, Grace Exit, anti-capture
 

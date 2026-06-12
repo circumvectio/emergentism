@@ -164,7 +164,7 @@ Key claims:
 ### 4.4 What Perennialists Got Wrong
 
 1. **Exclusivity through orthodoxy.** Perennialists typically claimed that only *orthodox* traditions contain the perennial wisdom — exoticizing "the East" while rejecting modern thought, folk practices, and innovative synthesis. The framework rejects orthodoxy-gatekeeping: F5 is sensible by any coherent sensor, including the secular scientist and the machine-learning model.
-2. **No formalism.** Perennialists offered no mathematical framework. Their "transcendent unity" remained intuitive. The framework provides P = Φ × V on S² as the formal grammar.
+2. **No formalism.** Perennialists offered no mathematical framework. Their "transcendent unity" remained intuitive. The framework provides `P∞ = φ · ν = 1 on S²` as the manifold grammar and `P_node = Φ × V` as the finite-node scoring rule.
 3. **Reactionary politics.** Guénon's later work and his followers often aligned with anti-modern political movements. The framework's η = 0 discipline rejects all extraction, including reactionary extraction from modern institutions.
 4. **The "degeneracy" framing is south-pole.** Calling modernity "degenerate" is a ν-critique without corresponding Φ-construction. The framework's response to modernity is not to reject it but to **rebalance it at the equator** — the second Übermensch (packet 21).
 
@@ -270,7 +270,7 @@ Despite five different vocabularies, five different traditions, and five differe
 
 What these five traditions lacked, the framework provides:
 
-1. **Mathematical formalism.** P = Φ × V on S². The ektropic gradient. ΣΔP > 0. These make F5 calculable, not merely intuited.
+1. **Mathematical formalism.** `P∞ = φ · ν = 1 on S²`; `P_node = Φ × V`; the ektropic gradient `ΣΔP_node > 0`. These make F5 calculable, not merely intuited.
 2. **Register discipline.** [S]/[I]/[S]/[C] separation prevents the strongest claims from contaminating the weakest evidence.
 3. **Falsification criteria.** Packet 137 §3 names four conditions under which F5 is falsified.
 4. **Axiomatic structure.** Packet 139 installs the self-cancelling mechanism. The framework succeeds by dying.

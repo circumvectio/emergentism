@@ -3,7 +3,7 @@
 # container from this template. Mount the Magnum Opus repo per-session as a
 # github_repository resource (see README §Runtime).
 name: emergentism-seven
-description: "Shared cloud container for the seven Emergentism caste slots (2 Gods + 2 Demons + 3 Executive boundary rows on P=Φ×V)."
+description: "Shared cloud container for the seven Emergentism caste slots (2 Gods + 2 Demons + 3 Executive boundary rows on P_node=Φ×V)."
 config:
   type: cloud
   networking:

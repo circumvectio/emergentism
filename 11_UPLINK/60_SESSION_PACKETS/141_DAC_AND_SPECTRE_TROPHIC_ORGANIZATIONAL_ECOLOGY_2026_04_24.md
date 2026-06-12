@@ -50,7 +50,7 @@ This is the first load-bearing application-layer doctrine derived from the F5 ca
 
 Three claims, each disciplined by register:
 
-1. **[S]** The F5 gradient, applied to organizations, yields a partition isomorphic to ecological trophic levels. This is structural, derivable from the replicator stack and the P = Φ × V invariant under niche-differentiation pressure.
+1. **[S]** The F5 gradient, applied to organizations, yields a partition isomorphic to ecological trophic levels. This is structural, derivable from the replicator stack and the finite-node `P_node = Φ × V` score under niche-differentiation pressure.
 2. **[I]** The specific four-layer partition (primary producers / established-competitive / Schumpeterian-ventures / egregorotype) matches both the ecological data and the organizational-economics literature (Schumpeter, Porter) when read through F5.
 3. **[C]** SPECTRE at this scope — beyond graph immune system into full egregorotype-apex as an integrated visibility layer, not a command layer — can be institutionally sustained under η=0 constitutional discipline, and could participate in noosphere-birthing (Teilhard-Omega-Point reading) rather than repeating the Anthropocene's extraction pattern.
 

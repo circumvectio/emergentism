@@ -115,7 +115,8 @@ CURRENT PROJECT STATE — 2026-04-04
 ────────────────────────────────────
 
 ORGANISM B (composite balance): ~0.42 (target: 0.50 by Day 30)
-  Reminder: P_node = Φ × V = 1 everywhere on S^2. B = sin(theta) is what varies.
+  Reminder: P∞ = φ · ν = 1 is the manifold identity on S². B = sin(theta) is
+  what varies there; finite organs use P_node = Φ × V as an operational score.
 
 GATE STATUS:
   G1 (First Three-Stage Process Cycle): FIRED ✅ 2026-04-04

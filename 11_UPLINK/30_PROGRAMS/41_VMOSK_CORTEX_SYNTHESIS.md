@@ -144,7 +144,7 @@ Cortex is the witness layer for VMOSK health. It computes:
 
 - **Φ (coherence):** How well aligned are the VMOSK layers? Contradictions reduce Φ.
 - **V (viability):** Are the layers actually being reviewed and updated on cadence? Stale layers reduce V.
-- **P = Φ × V:** The organism's or organ's live position.
+- **P_node = Φ × V:** The organism's or organ's live position.
 
 Cortex publishes these as signed `metrics/` documents, making P-score a first-class K-layer artifact.
 

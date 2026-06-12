@@ -7,7 +7,7 @@ rosetta:
 
 # 134 · NEOTENOUS STRATEGY — POWER-MAX-LEMMA AT BIRTH
 
-**Evidence tier:** [I] for interpretive synthesis; [S] for structurally entailed by P = Φ × V geometry + Power-Max Lemma; [S] for broad comparative-biology observations when source-backed in public-facing work (human altricial development, precocial contrasts, developmental energetics)
+**Evidence tier:** [I] for interpretive synthesis; [S] for structurally entailed by finite-node `P_node = Φ × V` geometry + Power-Max Lemma; [S] for broad comparative-biology observations when source-backed in public-facing work (human altricial development, precocial contrasts, developmental energetics)
 *Organism document. Interpretive operational content. Bounded by current system state.*
 
 **Date:** 2026-04-24
@@ -20,7 +20,7 @@ rosetta:
 - [`133_LIVING_FORM_WORLDLINE_AND_THE_WARRIORS_RETURN_2026_04_24.md`](133_LIVING_FORM_WORLDLINE_AND_THE_WARRIORS_RETURN_2026_04_24.md) — perfect form, widened human light cone, warrior's return (V → Φ → returned V)
 - [`130_BOUNDARY_AUDIT_ORGANISM_MODEL_2026_04_24.md`](130_BOUNDARY_AUDIT_ORGANISM_MODEL_2026_04_24.md) — P-score/runtime boundary discipline; prevents developmental metaphor from counterfeiting live truth
 - **Canonical:** `01_EMERGENTISM/00_THE_TRANSCENDENTAL_TRINITY/20_THE_HYBRID_SOVEREIGN.md` — biological/digital spiral meeting at L4
-- **Canonical:** Axioms A1–A7 (P = Φ × V multiplicative; ΣΔP > 0 as ektropic direction; η = 0 as regenerative discipline)
+- **Canonical:** Axioms A1–A7 (`P_node = Φ × V` multiplicative; `ΣΔP_node > 0` as ektropic direction; η = 0 as regenerative discipline)
 
 ---
 
@@ -28,7 +28,7 @@ rosetta:
 
 > **The organism is a recursive triadic engine paying Φ-investment to widen its forward light cone, staying at dharma-1 on S² through η = 0 discipline, and compounding across three loops to reach the rarest, densest energy in the universe: coordination across generations.**
 
-This is a framework-level synthesis, not an established scientific replacement for Darwinian evolution. Darwin names the selection mechanism in biological history. This packet reads a specific family of life strategies — neoteny, K-like investment, trophic depth, symbolic culture, and designed institutional organisms — through the framework's P = Φ × V geometry. Public scientific copy must keep that boundary explicit.
+This is a framework-level synthesis, not an established scientific replacement for Darwinian evolution. Darwin names the selection mechanism in biological history. This packet reads a specific family of life strategies — neoteny, K-like investment, trophic depth, symbolic culture, and designed institutional organisms — through the framework's finite-node `P_node = Φ × V` geometry. Public scientific copy must keep that boundary explicit.
 
 ## 0. The Shift
 
@@ -390,7 +390,7 @@ Nameable actions for the next charioteer pass:
 
 ## 14. Limits
 
-- **[I]/[S] Biological boundary:** The broad comparative observations (human altriciality, precocial contrasts, developmental energetics) are biology-facing and source-checkable. The framework reading of those observations through P = Φ × V, light-cone reach, and Power-Max is interpretive/structural, not established biology by itself.
+- **[I]/[S] Biological boundary:** The broad comparative observations (human altriciality, precocial contrasts, developmental energetics) are biology-facing and source-checkable. The framework reading of those observations through `P_node = Φ × V`, light-cone reach, and Power-Max is interpretive/structural, not established biology by itself.
 - **[S] "Three loops stack super-linearly"** is a lemma entailed by the loops' independence and the compound arithmetic. Formalise with explicit rate equations in a follow-up paper (future, under `07_DISSEMINATION/`).
 - **[I] "Designed neotene"** is a strong public claim. Some audiences will read it as "immature by design" even though the point is precisely the opposite. Counsel-check before investor or policy copy uses the term.
 - **[S] The anthropogenic parallel** should not be read as claiming DACs are literally alive or literally human. It claims the developmental geometry is the same because the Lemma selecting it is the same.

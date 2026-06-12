@@ -56,7 +56,7 @@ The framework makes this precise:
 
 | Schrödinger | Framework |
 |---|---|
-| Negative entropy | **Ektropy** (P = Φ × V) |
+| Negative entropy | **Ektropy** (`P_node = Φ × V`) |
 | Exporting disorder | **Ektropic action** — externalizing entropy while raising ΔP |
 | Maintaining order | **(φ − ν)² → 0** — selection toward balance |
 | Living avoids decay | **ΣΔP > 0** — ethical direction (A2) |

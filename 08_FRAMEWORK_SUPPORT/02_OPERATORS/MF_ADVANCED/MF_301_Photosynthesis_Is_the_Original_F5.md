@@ -99,7 +99,12 @@ The evolutionary chain from the first photosynthetic organism (~3.5 billion year
 
 [I] At every stage in this biological analogy: the operator × is ELECTROMAGNETIC. The force doing the work is read here as F₂ — the electromagnetic interaction. Photons in the chloroplast. Electrons in the mitochondrion. Ions in the neuron. Electrochemistry in the synapse.
 
-Zero-Sum Resolution Equation is not a metaphor applied to biology. It is the LITERAL PHYSICS of how life operates at every scale: electromagnetic interactions creating order from disorder.
+Zero-Sum Resolution Equation is not used here as a proof that biology already
+obeys the whole framework. The `[A]` physics is narrower: photosynthesis,
+respiration, neural signaling, and synaptic transmission all rely on
+electromagnetic interactions. The framework's F5 reading is `[I]`: those
+established interactions can be read as life routing energy into maintained
+order, not as an established literal law of life at every scale.
 
 ### 2.2 The Mitochondrial Reversal
 

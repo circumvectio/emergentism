@@ -38,7 +38,7 @@ The charioteer maps the battlefield. The warrior chooses the ground.
 W-new (single-signer availability risk) was added to the SWOT at post-
 Sprint-A update. Before Sprint-A it was theoretical; now that the K2 path
 runs end-to-end against real decisions, **signer availability becomes the
-next binding constraint on organism viability** (V in P = Φ × V).
+next binding constraint on organism viability** (V in `P_node = Φ × V`).
 
 The remediation surface touches the **constitutional layer** (K2, K4),
 which means engineering discretion is explicitly out of scope. This packet

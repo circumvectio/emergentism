@@ -216,7 +216,7 @@ Without further K2, charioteer will:
 - `.../V3_CANONICAL/12_SKYZAI_DIGITAL_CAPITAL_OF_THE_ENERGY_AGE.md` — Foundational paper; exoskeleton frame
 - `.../V3_CANONICAL/14_WHY_SKYZAI_MONEY_FOR_THE_ENERGY_AGE.md` — Light + white paper; donation loop
 - `.../V3_CANONICAL/SKYZAI_Primitives/01_SPECTRE.md` — N:N routing primitive
-- `.../V3_CANONICAL/SKYZAI_Foundation_Pages/02_VISION.md` — P = Φ × V; BDI; Porter Ungovernable; Tri-Cameral Veto
+- `.../V3_CANONICAL/SKYZAI_Foundation_Pages/02_VISION.md` — `P_node = Φ × V`; BDI; Porter Ungovernable; Tri-Cameral Veto
 - `.../V3_CANONICAL/01_SKYZAI_MASTER_INDEX.md` — Three surfaces; brand ladder
 - `.../SKYZAI_Biomimetic/01_OVERVIEW.md` — Living layer on top of skeleton
 - `.../LP100_STANDARD/03_LP100_STANDARD.md` — φ-split at LP-cohort layer

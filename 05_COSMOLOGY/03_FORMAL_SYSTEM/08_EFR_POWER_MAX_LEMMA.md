@@ -65,14 +65,14 @@ game rather than a permitted maximizer.
 Let there be N agents in a network. Each agent i has:
 - Φᵢ = coherence of agent i
 - Vᵢ = viability of agent i
-- Pᵢ = Φᵢ × Vᵢ = ektropy of agent i
+- P_node,i = Φᵢ × Vᵢ = finite-node ektropy of agent i
 
 The network has coupling strength λ ∈ (0,1] (by definition of coupled network).
 
 ### Step 1: Define total ektropy
 
 ```
-ΣP = Σᵢ Pᵢ = Σᵢ (Φᵢ × Vᵢ)
+ΣP_node = Σᵢ P_node,i = Σᵢ (Φᵢ × Vᵢ)
 ```
 
 ### Step 2: Define effective viability
@@ -94,12 +94,12 @@ P_eff(i) = Φᵢ × V_eff(i) = Φᵢ × [(1-λ)Vᵢ + λ⟨V⟩]
 ### Step 4: Compute total effective ektropy
 
 ```
-ΣP_eff = Σᵢ Φᵢ × [(1-λ)Vᵢ + λ⟨V⟩]
-       = (1-λ)Σᵢ ΦᵢVᵢ + λ⟨V⟩Σᵢ Φᵢ
-       = (1-λ)ΣP + λ⟨V⟩Σᵢ Φᵢ
+ΣP_node,eff = Σᵢ Φᵢ × [(1-λ)Vᵢ + λ⟨V⟩]
+             = (1-λ)Σᵢ ΦᵢVᵢ + λ⟨V⟩Σᵢ Φᵢ
+             = (1-λ)ΣP_node + λ⟨V⟩Σᵢ Φᵢ
 ```
 
-### Step 5: Show that maximizing individual P_eff maximizes ΣP_eff
+### Step 5: Show that maximizing individual P_eff maximizes ΣP_node,eff
 
 Suppose each agent maximizes its own P_eff(i). This means:
 - Agent i increases Φᵢ (coherence)
@@ -129,13 +129,13 @@ Since λ < 1, **extraction strictly increases the extractor's payoff in this one
 
 The Is-Ought bypass requires the additional constraint that η = 0 is enforced (e.g., through the Three Gates mechanism, K2 signing, or protocol design). It does not follow from the coupling derivative alone.
 
-### Step 7: Show cooperation maximizes ΣP
+### Step 7: Show cooperation maximizes ΣP_node
 
 If each agent maximizes P_eff(i) by helping others:
 - Each Vᵢ increases (direct benefit from own effort + indirect benefit from others' help)
 - Each Φᵢ increases (coherence maintained by own effort)
-- Therefore each Pᵢ = Φᵢ × Vᵢ increases
-- Therefore ΣP = Σᵢ Pᵢ increases
+- Therefore each P_node,i = Φᵢ × Vᵢ increases
+- Therefore ΣP_node = Σᵢ P_node,i increases
 
 **QED, conditionally.** `max P_node,i → max ΣP_node` holds under real coupling, a long
 horizon, multiplicative scoring, and enforced `η = 0`. Coupling supplies the
@@ -150,7 +150,7 @@ The lemma holds under four conditions:
 
 1. **Coupling exists** (λ > 0): The agents' efficacies are interdependent. If λ = 0 (no coupling), the lemma doesn't apply — isolated agents can extract without self-harm.
 
-2. **Multiplicative structure** (P_node = Φ × V): The lemma depends on P being a product, not a sum. Under additive structure (P = αΦ + βV), agents can compensate low V with high Φ, breaking the coupling.
+2. **Multiplicative structure** (P_node = Φ × V): The lemma depends on node score being a product, not a sum. Under additive structure (`P_add = αΦ + βV`), agents can compensate low V with high Φ, breaking the coupling.
 
 3. **Long time horizon**: The lemma describes steady-state behavior, not one-shot interactions. In one-shot games, extraction can be locally optimal. Over time, extraction destroys the network that the agent depends on.
 
@@ -178,7 +178,7 @@ The historical `R* ≈ 1.5` ratio corresponds to η_c ≈ 0.58 (~60% giving-majo
 ## What Would Falsify This
 
 1. **No coupling** (λ = 0): If agents are truly independent, max P_node,i does NOT imply max ΣP_node
-2. **Additive structure** (P = αΦ + βV): If P is additive, agents can compensate without coupling
+2. **Additive structure** (`P_add = αΦ + βV`): If node scoring is additive, agents can compensate without coupling
 3. **Short time horizon**: In one-shot interactions, extraction can be locally optimal
 4. **No enforceable η discipline**: If extraction is hidden or privately
    profitable, the one-shot extraction route can beat cooperation locally.
@@ -216,7 +216,7 @@ agents share an optimization surface under enforceable non-extraction.
 - [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) -- canonical epistemic status of all claims
 - Triadic Stability (11_EFR_TRIADIC_STABILITY.md; link removed to prevent cycle) -- uniqueness proof for the triadic multiplicative structure this lemma depends on
 - Godel Clarification (09_EFR_GODEL_CLARIFICATION.md; link removed to prevent cycle) -- what "complete" means and does not mean for the framework
-- Core Concepts -- single source of truth for P = Phi x V and related definitions
+- Core Concepts -- single source of truth for `P∞ = phi x nu = 1`, `P_node = Phi x V`, and related definitions
 
 *Power-Max Lemma | 2026-03-22 | Individual optimization aligns with collective optimization under coupled multiplicative scoring, long horizon, and enforced η = 0.*
 

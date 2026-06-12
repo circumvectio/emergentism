@@ -346,4 +346,4 @@ That is the moat in practice: not just what APU builds, but what it refuses to b
 
 ---
 
-*P = Φ × V | Coherence is the product | η = 0*
+*P_node = Φ × V | Coherence is the product | η = 0*

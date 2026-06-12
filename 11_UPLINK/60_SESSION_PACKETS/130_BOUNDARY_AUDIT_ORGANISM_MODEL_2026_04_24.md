@@ -50,10 +50,10 @@ Use two related but distinct formula registers.
 
 | Register | Formula | Meaning | Claim discipline |
 |---|---|---|---|
-| Manifold identity | `phi * nu = 1 on S2` | Reciprocal closure inside the framework's formal geometry | Source doctrine / Foundation register |
-| Operational health | `P = Phi * V` | Node, organ, or organism health score from coherence and viability inputs | Internal governance / integration signal |
+| Manifold identity | `P∞ = phi * nu = 1 on S2` | Reciprocal closure inside the framework's formal geometry | Source doctrine / Foundation register |
+| Operational health | `P_node = Phi * V` | Node, organ, or organism health score from coherence and viability inputs | Internal governance / integration signal |
 
-Do not write `P = phi * nu = 1 on S2` as a single undifferentiated claim.
+Do not collapse the manifold identity and operational health rows into a single undifferentiated formula.
 
 In current organism operations, `P` usually means `Phi * V` on a bounded
 0-to-1 health scale. In the Foundation geometry, the manifold identity is

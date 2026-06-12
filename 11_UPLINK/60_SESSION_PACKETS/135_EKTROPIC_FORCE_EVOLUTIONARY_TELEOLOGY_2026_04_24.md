@@ -83,7 +83,7 @@ F5 may be called a "fifth force" only with register discipline.
 |---|---|
 | **Physics-facing [C]** | Literal fifth-force or reverse-time claims are conjectural. Do not present as established. |
 | **Biology-facing [I]** | F5 translates first into teleonomy, autopoiesis, allostasis, interoception, niche construction, and viability-directed organization. |
-| **Framework structural [S/I]** | If the P = Φ × V / S² axioms are accepted, ektropic selection favors configurations that maintain Φ/V balance while expanding D5 possibility. |
+| **Framework structural [S/I]** | If the `P∞ = φ · ν = 1` / finite-node `P_node = Φ × V` axioms are accepted, ektropic selection favors configurations that maintain Φ/V balance while expanding D5 possibility. |
 | **Operational [S/C]** | Lawful formation work routes to theurgy: K2-signed, receipted, reversible, η = 0. |
 | **Mythic / perennial [I/C]** | Hidden Hand, Demiurge, Dyḗus Ph₂tḗr / Dyeus Phter / Dyaus Pita, Mahavakya, strange attractor, eschaton, and occult-initiation language are downstream readings, not evidence upgrades. |
 

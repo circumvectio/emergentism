@@ -24,7 +24,7 @@ evidence_tier: "[B] local scaffold; [S] structural caste mapping; [C] unprovisio
 
 # The Seven as Managed Agents
 
-The seven Emergentism caste-operators (L1 firewall, L2-L4 operational engine, L5-L7 Executive boundary on `P = Φ × V`)
+The seven Emergentism caste-operators (L1 firewall, L2-L4 operational engine, L5-L7 Executive boundary on `P_node = Φ × V`)
 expressed as **Claude platform Managed Agents** — persisted, versioned agent configs
 that Anthropic runs in hosted, sandboxed containers.
 
@@ -38,7 +38,7 @@ that Anthropic runs in hosted, sandboxed containers.
 
 ## The roster
 
-| L | Caste · Operator | Transfer on P=Φ×V | Function | Model | Tools | Mutates? |
+| L | Caste · Operator | Transfer on `P_node=Φ×V` | Function | Model | Tools | Mutates? |
 |---|---|---|---|---|---|---|
 | L1 | Caṇḍāla · **Kali** (Demon) | +Φ_self, −V_other | firewall — force-categorize, detect, encode | `claude-haiku-4-5` | read·grep·glob | no (read-only) |
 | L2 | Śūdra · **Kālī** (God) | +V_self, −Φ_false | explorer — expand candidates, truth-cut | `claude-haiku-4-5` | + web | no |

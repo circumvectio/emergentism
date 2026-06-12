@@ -112,7 +112,7 @@ The choice is not arbitrary. It follows from the mathematical structure:
 
 ### 4.1 The Node-Level Multiplicative Model and the Manifold Identity
 
-The multiplicative form is the key. In an additive framework (`P = Phi + V`), systemic awareness could be a separate term added to physical capability. In the downstream node-level multiplicative model (`P = Phi x V`), coherence and capability are **co-constitutive**: if either is zero, expressed flourishing at that node collapses. This is not yet the ontological claim. The ontological geometric claim is the manifold identity `φ · ν = 1 on S²`, which says the sphere holds reciprocal closure even while local expressions vary.
+The multiplicative form is the key. In an additive score (`P_add = Phi + V`), systemic awareness could be a separate term added to physical capability. In the downstream node-level multiplicative model (`P_node = Phi x V`), coherence and capability are **co-constitutive**: if either is zero, expressed flourishing at that node collapses. This is not yet the ontological claim. The ontological geometric claim is the manifold identity `P∞ = φ · ν = 1 on S²`, which says the sphere holds reciprocal closure even while local expressions vary.
 
 The equatorial minimum (`φ = ν = 1`) derived from the arithmetic consequence `(φ - ν)^2 >= 0` gives the apex of balance. This is not a contingent fact — it is a structural consequence of the closure. It is compatible with physicalism (both aspects emerge from the same substrate) but **most naturally read** as dual-aspect monism with an idealist tilt: the two aspects are equally fundamental, and first-person experience identifies the coherence-facing aspect as closest to systemic awareness.
 
