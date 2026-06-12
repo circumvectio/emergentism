@@ -54,7 +54,7 @@ which a system maintains or increases coherent viability rather than dissolving.
 In the finite-node register this is scored as `P_node = Φ × V`; in the sphere
 register it is constrained by the reciprocal balance grammar.
 
-Not coherence alone (that is the north pole — the heuristic who sees everything and can do nothing). Not viability alone (that is the south pole — the machine that does everything and sees nothing). The PRODUCT. Both. Simultaneously. Multiplicatively.
+Not coherence alone (that is the north pole — D5 worldline-foresight without the means to act). Not viability alone (that is the south pole — D4 means without the worldline-foresight to rank or aim them). The PRODUCT. Both. Simultaneously. Multiplicatively.
 
 **Ektropy is the disciplined successor to the older "Hidden Hand" language**
 (Document 18). Many traditions that perceived a force driving history — Ṛta,

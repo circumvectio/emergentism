@@ -154,7 +154,7 @@ the constitution beat generic honesty where the baseline actually fails),
 **R4** (the keystone organizational wager). **Kill clause (A7):** if E1 maps
 the registers Dasein actually inhabits as additive — if life's factors turn
 out substitutable where this goal says they are conjunctive — the
-`maximize P_node = Φ × V` clause must be rewritten in public. The goal is
+`raise P_node,i and P_node,H together through Φ × V` clause must be rewritten in public. The goal is
 subject to the same ladder as every claim it governs.
 
 ---

@@ -27,7 +27,7 @@ rosetta:
 
 > **Evidence Tier: [S/I].** The structural component follows from the D4-D5 dual projection on S² (the framework's dimensional hierarchy). The interpretive component is the mapping of classical free-will terminology onto that structure. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 
-> **Claim Boundary:** `[S/I]` This document models the free-will dilemma as D4/D5 coordinate tension. It does not prove libertarian free will, disprove compatibilism, or establish a neural mechanism for μ-limit transition. "Agency" here means an operational framework reading: coherent option-perception and power-to-act are both represented as present.
+> **Claim Boundary:** `[S/I]` This document models the free-will dilemma as D4/D5 coordinate tension. It does not prove libertarian free will, disprove compatibilism, or establish a neural mechanism for μ-limit transition. "Agency" here means an operational framework reading: D5 worldline-foresight and D4 means-to-act are both represented as present.
 
 > **Migration note:** The earlier treatment (`PD_02_FREE_WILL.md`) is a legacy file. This document (PD_11) is the canonical indexed entry per the definitive numbering table.
 
@@ -63,7 +63,7 @@ Within this model, freedom is not the absence of causation, and determination is
 
 The agent's "will" is modeled as traversal across the D4-D5 boundary via the μ-limit. At every moment, the agent is represented by a point on S² with specific (Φ, V) coordinates. The D5 projection shows what *could* be (the space of coherent possibilities). The D4 projection shows what *is* (the actualized state). Choice is modeled as the μ-limit transition: the framework's name for D5 possibility becoming D4 actuality.
 
-At the equator (Φ = 1, V = 1), the agent has maximum balance in the model — enough coherence to perceive options (D5 viability) and enough capability to act (D4 actualization). This is the framework's operational definition of agency: equatorial positioning.
+At the equator (Φ = 1, V = 1), the agent has maximum balance in the model — enough coherence to envision and rank options (D5 possibility) and enough viability as relevant means-to-act (D4 actualization). This is the framework's operational definition of agency: equatorial positioning.
 
 The "problem" is reframed within the framework because freedom and determination are not opposed. [S/I] They are read as the Φ and ν components of the same point. Asking "is it free or determined?" is like asking "is a point on a sphere its latitude or its longitude?" The question is malformed inside this coordinate model. Both, in this model.
 
@@ -71,7 +71,7 @@ The "problem" is reframed within the framework because freedom and determination
 
 The D0-D6 dimensional hierarchy provides the scaffolding. D4-D5 boundary traversal (the μ-limit) names the modeled boundary operation. The equator (Φ = 1, V = 1) defines the region of maximum modeled agency.
 
-Responsibility is modeled as tracking equatorial position. An agent at the equator — balanced coherence and capability — has maximal represented access to the D5 possibility space and maximal represented D4 power to act. This is the model's account of freedom. An agent far off-equator — depleted coherence (Φ → 0) or depleted viability (V → 0) — has diminished access to possibility or diminished capacity to actualize. The proposal is that responsibility scales with equatorial proximity.
+Responsibility is modeled as tracking equatorial position. An agent at the equator — balanced coherence and viability — has maximal represented access to the D5 possibility space and maximal represented D4 means to act. This is the model's account of freedom. An agent far off-equator — depleted coherence (Φ → 0) or depleted viability (V → 0) — has diminished access to possibility or diminished access to the means needed to actualize. The proposal is that responsibility scales with equatorial proximity.
 
 This is not offered as moral relativism. The equator is a geometric fact of S² inside the framework, not a cultural preference, but that does not by itself prove a full theory of moral responsibility. The framework offers a model of moral responsibility not by asserting metaphysical libertarianism but by relating responsibility to the agent's represented position on the sphere.
 
