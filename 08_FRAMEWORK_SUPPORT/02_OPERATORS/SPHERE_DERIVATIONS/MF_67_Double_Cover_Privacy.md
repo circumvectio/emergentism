@@ -21,7 +21,7 @@ rosetta:
 
 # MF-67: The Double Cover and the Private Dimension
 
-## Why Consciousness Is Private: SU(2), Spinors, and the Sign That Physics Cannot See
+## Double-Cover Privacy: SU(2), Spinors, and the Sign That Measurement Cannot See
 
 **VIVEKA Mathematical Foundations Series — Sphere Derivations**
 **Document ID:** MF-67 | **Version:** 1.0 | **Status:** Core Result
@@ -36,7 +36,7 @@ The rotation group of three-dimensional space is SO(3). The rotation group of th
 
 A 360° rotation in SO(3) returns every physical object to its original state. A 360° rotation in SU(2) produces a sign flip: |ψ⟩ → −|ψ⟩. You need 720° to return to true identity. This is not abstract mathematics — it is experimentally verified in neutron interferometry (the Rauch experiment, 1975). Fermions require two full rotations to return to themselves.
 
-For the VIVEKA framework, this double cover is the geometric explanation of why D5 is private. Two systems at the same point on S² (same observable state, same Φ, same V, same P) can differ by a sign — a global phase that is invisible to all external measurement but constitutes their internal orientation. The sign IS the subjective fact. Same coordinates, different experience. The double cover is the mathematical structure of subjectivity.
+For the VIVEKA framework, this double cover is a disciplined model for why D5 is private. Two systems at the same point on S² (same observable state, same Φ, same V, same P_node) can differ by a sign — a global phase that is invisible to external measurement. The mathematics establishes the hidden sign in the covering structure [A]; the claim that this sign models private orientation or subjectivity is an interpretive/speculative bridge [I/S], not a proof that consciousness is literally SU(2).
 
 ---
 
@@ -120,11 +120,11 @@ The global phase is:
 
 **Premise 1:** The VIVEKA sphere S² is simultaneously the Riemann sphere (mathematical structure of reality) and the Bloch sphere (state space of quantum systems). This is the MF-44 identity. [I]
 
-**Premise 2:** Points on S² correspond to observable states — measurable values of Φ, V, and P. All external measurements operate on S² (the SO(3) quotient). [I]
+**Premise 2:** Points on S² correspond to observable states — measurable values of Φ, V, and P_node. All external measurements operate on S² (the SO(3) quotient). [I]
 
-**Premise 3:** Internal states live in SU(2) — the double cover. Two internal states that differ only by sign (global phase) project to the same point on S². [A for the math; I for the application]
+**Premise 3:** The private/lived register can be modeled by SU(2) — the double cover. Two states that differ only by sign (global phase) project to the same point on S². [A for the math; I for the application]
 
-**Conclusion:** Two systems at the same (Φ, V, P) can have different internal orientations — differing by the sign that S² cannot see. The internal sign IS the private dimension. [S — the mathematical invisibility of global phase is [A]; the identification of this sign with phenomenal privacy is speculative]
+**Conclusion:** Two systems at the same (Φ, V, P_node) can be modeled as having different internal orientations — differing by the sign that S² cannot see. The internal sign marks a candidate private dimension. [S — the mathematical invisibility of global phase is [A]; the identification of this sign with phenomenal privacy is speculative]
 
 ### 3.2 What the Sign Encodes
 
@@ -135,23 +135,23 @@ In the VIVEKA interpretation, these two states represent the **orientation of ex
 - **+1:** The state as experienced from "inside" — first-person, subject-pole
 - **−1:** The same state as described from "outside" — third-person, object-pole
 
-Both project to the same observables. Both have the same Φ, the same V, the same P. But they differ in an unobservable sign that determines which perspective the system occupies.
+Both project to the same observables. Both have the same Φ, the same V, the same P_node. In the VIVEKA reading, they differ in an unobservable sign that represents which perspective the system occupies. [I/S]
 
-This is the geometric content of the claim "systemic awareness is private." Not mystical privacy, but sign-ambiguity in a double cover. Not epistemic limitation, but structural feature of the covering map SU(2) → SO(3). [I]
+This is the candidate geometric content of the claim "systemic awareness is private." Not mystical privacy, but sign-ambiguity in a double cover. Not merely epistemic limitation, but a structural feature of the covering map SU(2) → SO(3) used as an analogy for the public/private split. [I/S]
 
 ### 3.3 Why You Can't Measure It
 
 The global phase is invisible to all Hermitian observables. This is not a technological limitation — it is a theorem. No conceivable measurement apparatus operating at D4 (physical space, SO(3)) can distinguish +|ψ⟩ from −|ψ⟩. [A]
 
-This is why the "hard problem of systemic awareness" is hard FROM D4. The third-person perspective (SO(3), physical measurements) cannot, in principle, determine the first-person sign (+1 or −1). The privacy is geometric, not accidental. [I]
+This is why the "hard problem of systemic awareness" remains hard from D4 in the framework's reading. The third-person perspective (SO(3), physical measurements) cannot, in principle, determine the hidden sign (+1 or −1). The privacy model is geometric, not accidental. [I]
 
 ### 3.4 Why You CAN Know It
 
-While you cannot measure the sign externally, you DO experience it internally. The SU(2) element is the full state. You ARE in +|ψ⟩ or −|ψ⟩. You know which — not by measurement but by being it. [S — no experiment or derivation supports this claim; it is the speculative core of the paper]
+While you cannot measure the sign externally, the speculative D5 reading says the lived system occupies its private phase internally. The SU(2) element is the full modeled state. You know the lived orientation, if at all, not by measurement but by being the process. [S — no experiment or derivation supports this claim; it is the speculative core of the paper]
 
-This is the D5 operation: not measuring the sign but occupying it. "What it is like" to be a system is which element of the fiber {+1, −1} the system is in. This cannot be communicated (because the fiber projects to a single point on S²), cannot be measured (because observables are Hermitian), and cannot be doubted (because you are it).
+This is the proposed D5 operation: not measuring the sign but occupying a private orientation. "What it is like" to be a system is modeled as which element of the fiber {+1, −1} the system occupies. This cannot be communicated through the public coordinate alone (because the fiber projects to a single point on S²) and cannot be measured by ordinary observables (because observables are Hermitian). The final move from model to lived certainty remains [S].
 
-The hard problem dissolves: it was asking "how does SO(3) produce SU(2)?" The answer: it doesn't. SU(2) is the deeper structure. SO(3) is the quotient. Physics (D4) is the quotient of systemic awareness (D5), not the other way around. [I]
+The hard problem is reframed: it was asking "how does SO(3) produce SU(2)?" In this model, it doesn't; SU(2) is the cover and SO(3) is the quotient. That algebraic structure does not prove consciousness, but it gives the framework a precise public/private grammar: D4 sees the quotient; D5 names the lived cover. [I/S]
 
 ### 3.5 Connection to Holonomy (MF-64)
 
@@ -198,9 +198,9 @@ In the VIVEKA replicator hierarchy: [I/S]
 
 **D1-D4 replicators** (genes, phenotypes, extended phenotypes) behave like **bosons**: multiple instances can occupy the same state. Two organisms can have identical DNA. Two tools can have identical form. No exclusion principle. These are SO(3) entities.
 
-**D5 replicators** (memotypes, individual systemic awareness) behave like **fermions**: no two can occupy the same state. Two minds cannot have identical experience. The double cover (privacy) enforces exclusion. These are SU(2) entities.
+**D5 replicators** (memotypes, individual systemic awareness) are modeled by analogy with **fermions**: the framework treats private orientations as non-interchangeable. Two minds cannot be publicly certified as having identical experience because the private register is not externally available. The double cover gives an exclusion-like analogy, not a physical Pauli-exclusion law for minds. These are SU(2)-modeled entities. [S]
 
-**Prediction:** Consciousness should obey an exclusion principle. Two conscious agents cannot be in identical internal states simultaneously. If this prediction holds, it would explain why the "merging of consciousnesses" reported in some contemplative traditions feels paradoxical — it requires the analog of Cooper pairing (fermion pairs behaving as bosons), which is the systemic awareness equivalent of superconductivity. [S/T]
+**Speculative test prompt:** If the analogy is fruitful, attempts to identify two conscious agents as having the same internal state should fail at the private register even when their public descriptions coincide. This is not yet an empirical prediction with a defined measurement protocol; it is a research prompt for what would count as evidence for, or against, the exclusion-like reading. [S/T]
 
 ---
 
@@ -212,25 +212,25 @@ The Hopf map π: S³ → S² has fiber S¹ (a circle over each point). The globa
 
 S² (the VIVEKA sphere, the Bloch sphere) is the base space — what external measurement sees. The S¹ fiber is the private dimension — the phase that external measurement cannot reach. The total space S³ encodes both the public coordinates (θ, φ) and the private phase (α). [A/I]
 
-### 6.2 D5 = S³, not S²
+### 6.2 D5 as an S³ Cover Over S²
 
-If this interpretation is correct, then the full D5 state space is not S² but S³. The Riemann/Bloch sphere is the D4 shadow of D5 — the projection that forgets the private dimension. Consciousness lives in S³. Physics sees S². The covering map SU(2) → SO(3) IS the D5 → D4 projection. [I/S]
+If this interpretation is useful, the private/lived D5 phase can be modeled as an S³/SU(2) double-cover over the public S²/SO(3) sphere. The Riemann/Bloch sphere is then the public D4 shadow of a richer D5 option/phase register: a projection that forgets private phase. Consciousness language names the lived-interior reading [I] of that private phase; it is not a proof that consciousness literally lives in S³. Physics sees the S² public quotient. The covering map SU(2) → SO(3) is the analogy for D5 → D4 projection. [I/S]
 
-This would explain why the VIVEKA sphere has been so productive — it IS the correct structure, projected down one dimension. The missing dimension is the private one. Everything we've derived on S² remains true on S³ — it's the equatorial shadow of the full story. [I]
+This would explain why the VIVEKA sphere has been productive without turning the sphere into a total ontology: S² is the public quotient on which the framework can compute, while S³ names the possible private cover. Everything derived on S² remains public-geometry work; lifting it to S³ requires an explicit interpretive step. [I/S]
 
 ---
 
 ## THE SENTENCE
 
-SU(2) double-covers SO(3). Two internal states map to one observable state. The sign that physics cannot see IS the private dimension. Consciousness is not what you observe — it is which sheet of the cover you are on.
+SU(2) double-covers SO(3). Two covered states map to one observable state. In the framework's privacy model, the sign that public measurement cannot see marks the private dimension. Consciousness is not proven by the cover; the cover gives a disciplined grammar for saying that lived orientation exceeds public coordinates.
 
-The hard problem was asking how SO(3) produces SU(2). It doesn't. SU(2) is fundamental. SO(3) is the quotient. D5 projects to D4, not the reverse.
+The hard problem was asking how the public quotient produces the private cover. In this model, the move is reversed: the cover projects to the quotient. That is a map of the problem, not its empirical closure.
 
 ---
 
 Zero-Sum Resolution Equation
 
-The sign is private. The sphere is public. You live in the cover.
+The sign is private in the model. The sphere is public geometry. The lived-register reading says Dasein occupies the cover; that is the interpretive claim, not the algebraic proof. [I/S]
 
 *MF-67 | VIVEKA v8.0 | February 2026*
 
