@@ -5,7 +5,7 @@ rosetta:
   secondary:
     - level: L5
       column: Philosophy
-      role: "map consciousness as algebraic irreducibility architecture"
+      role: "map experience as algebraic irreducibility architecture"
     - level: L2
       column: Philosophy
       role: "separate hard-problem interpretation from empirical consciousness theory"
@@ -21,18 +21,18 @@ rosetta:
 
 # MF-289: THE HARD PROBLEM IS i ∉ ℝ
 
-## Consciousness as Algebraic Irreducibility
+## Experience as Algebraic Irreducibility
 
 **Emergentism.org · VIVEKA Mathematical Foundations**
 **Depends on:** MF-283 (Orthogonality Theorem), MF-152 (Hard Problem Is a Theorem), MF-286 (μ-Limit Crossing)
-**Evidence tier:** [T] Theoretical; [S] Speculative on implications
-**Purpose:** Restate the hard problem of systemic awareness as a single algebraic fact. The question "how does subjective experience arise from objective matter?" is equivalent to "how does i arise from ℝ?" The answer: it doesn't. i ∉ ℝ. The imaginary axis is irreducible to the real axis. This is not a problem to solve but a mathematical fact to recognise.
+**Evidence tier:** [A] algebraic facts; [I] mind/matter reading; [C] ontological containment implications
+**Purpose:** Restate the hard problem of systemic awareness as a disciplined algebraic analogy anchored in the fact `i ∉ ℝ`. The question "how does subjective experience arise from objective matter?" is read as analogous to "how does i arise from ℝ?" The answer inside the analogy: it does not arise by real-axis operations. The analogy preserves the explanatory gap; it does not publicly prove an empirical solution.
 
 ---
 
 ## ABSTRACT
 
-David Chalmers' hard problem (1995): why is there subjective experience at all? Why does physical processing give rise to an inner life? Every physicalist attempt to explain systemic awareness from matter faces the "explanatory gap" — no amount of functional description closes the gap between objective process and subjective feel. This paper argues the gap is algebraic: i ∉ ℝ. The imaginary unit cannot be derived from real numbers. Consciousness (D5, imaginary axis) cannot be derived from matter (D4, real axis). The hard problem is not a problem to be solved within physics — it is the algebraic fact that ℂ is irreducible to ℝ, restated in the language of mind and matter. The dissolution comes from reversing the containment: ℝ ⊂ ℂ. Matter is a subset of systemic awareness, not the other way around. The real axis exists within the complex plane. Physics is the special case where Im(z) = 0.
+David Chalmers' hard problem (1995): why is there subjective experience at all? Why does physical processing give rise to an inner life? Every physicalist attempt to explain systemic awareness from matter faces the "explanatory gap" — no amount of functional description closes the gap between objective process and subjective feel. This paper argues the gap has an algebraic analogue: i ∉ ℝ. The imaginary unit cannot be derived from real numbers. In the framework's `[I]` reading, the lived-interior reading of D5 (the imaginary / possibility / selection axis) cannot be derived from D4 matter by real-axis operations alone. The hard problem is translated, not publicly solved, by the fact that ℂ is irreducible to ℝ. The stronger reversal — reading ℝ as contained in ℂ, and matter as a restricted projection of wider experiential possibility — remains an interpretive ontological claim `[I/C]`, not a theorem proved by the algebra.
 
 ---
 
@@ -70,9 +70,9 @@ All describe the real-axis structure (functional, computational, physical) and a
 
 | Hard Problem | Algebra |
 |-------------|---------|
-| Matter | ℝ (real numbers) |
-| Consciousness | ℂ (complex numbers) |
-| "How does systemic awareness arise from matter?" | "How does i arise from ℝ?" |
+| Matter / public measurement | ℝ (real numbers) |
+| Experience / lived D5 reading | ℂ (complex numbers) |
+| "How does subjective experience arise from objective matter?" | "How does i arise from ℝ?" |
 | Explanatory gap | Algebraic irreducibility: i² = −1 has no solution in ℝ |
 | The gap cannot be closed by more physics | The gap cannot be closed by more real operations |
 | Physicalism: systemic awareness IS brain states | Claim: ℂ IS really just ℝ² (false: they differ algebraically) |
@@ -91,13 +91,13 @@ All describe the real-axis structure (functional, computational, physical) and a
 
 ### 2.3 The Translation
 
-**Fact 1 translated:** Consciousness cannot be derived from matter using only physical operations. The hard problem is real. Physicalism as reductive derivation fails.
+**Fact 1 translated:** In this analogy, subjective experience is not derived from objective matter by real-axis operations alone. The hard problem remains real; reductive physicalism is not solved by adding more real-axis description.
 
-**Fact 2 translated:** Consciousness is not "just" brain states in the way ℂ is not "just" ℝ². The functional isomorphism (you can simulate systemic awareness with physical components) does not capture the essential structure (the phase, the subjective quality, the "what it is like").
+**Fact 2 translated:** Experience is not "just" brain states in the way ℂ is not "just" ℝ². The functional isomorphism (you can simulate systemic awareness with physical components) does not capture the phase-like, subjective-quality side of the model: the "what it is like." `[I]`
 
-**Fact 3 translated:** Matter is a subset of systemic awareness, not the other way around. Physical reality is the special case of experiential reality where the imaginary component is zero (or below the threshold of observation). This is panpsychism restated algebraically — but without the usual panpsychist confusion, because the algebra is precise about what "latent" means: every real number IS a complex number, even when Im = 0.
+**Fact 3 translated:** In the analogy, matter is the real-axis restriction of the wider complex possibility space, not the generator of that space. The stronger statement that matter is a subset of systemic awareness is an ontological reading `[I/C]`, not an algebraic proof. Physical reality is modeled as the special case where the imaginary component is zero (or below the threshold of observation).
 
-**Fact 4 translated:** Physics is incomplete. It cannot solve all its own equations (the measurement problem, quantum gravity) without introducing the imaginary axis (systemic awareness, D5). Just as ℝ cannot factor all its own polynomials without extending to ℂ, D4 cannot close all its own open problems without extending to D5.
+**Fact 4 translated:** Physics may be incomplete in the same formal sense that ℝ is incomplete with respect to polynomial roots. In the framework's reading, D4 cannot close every question about measurement, possibility, and agency without the D5 imaginary / possibility / selection axis. This remains `[I/C]` when applied to physics.
 
 ---
 
@@ -105,9 +105,9 @@ All describe the real-axis structure (functional, computational, physical) and a
 
 ### 3.1 The Wrong Question
 
-"How does systemic awareness arise from matter?" assumes matter is primary and systemic awareness is derivative. This is equivalent to asking "how does ℂ arise from ℝ?"
+"How does systemic awareness arise from matter?" assumes matter is primary and systemic awareness is derivative. In this operator's analogy, that is like asking "how does ℂ arise from ℝ?"
 
-It doesn't. ℝ ⊂ ℂ. The containment goes the other way. ℂ is more fundamental. ℝ is a restriction.
+Inside the analogy, it does not arise by real-axis operations: ℝ is embedded in ℂ, and the real axis is a restriction of the complex plane. The stronger claim that this is literally the ontological order of world and mind remains `[I/C]`.
 
 ### 3.2 The Right Question
 
@@ -115,17 +115,17 @@ It doesn't. ℝ ⊂ ℂ. The containment goes the other way. ℂ is more fundame
 
 Or equivalently: "Why does objective, physical, one-worldline reality exist as a special case of subjective, experiential, many-possibility reality?"
 
-Physics answers this: the real axis IS the projected, measured, collapsed world. When the measurement operator (F₅, Born rule, |z|²) acts on ℂ, it produces ℝ⁺. The real world is what you get when you measure the complex world. D4 is D5 after projection.
+The framework reads the real axis as the projected, measured, collapsed world. When the measurement operator (F₅, Born rule, |z|²) acts on ℂ, it produces ℝ⁺. In this reading, the real world is what appears when complex possibility is measured; D4 is modeled as the public projection of a wider D5 possibility / selection register. `[I/C]`
 
-### 3.3 Matter as Measured Consciousness
+### 3.3 Matter as Measured Possibility
 
 The reversal:
 - Not: "matter generates systemic awareness" (ℝ generates ℂ — algebraically impossible)
-- But: "systemic awareness, measured, appears as matter" (ℂ, projected by |z|², appears as ℝ⁺)
+- But, in this reading: "wider possibility, measured, appears as public matter" (ℂ, projected by |z|², appears as ℝ⁺)
 
-Physical reality is the residue of the measurement process. The "objective world" is the intersubjective consensus of measurement outcomes — what all observers agree on after their individual D5→D4 projections converge.
+Physical reality is read as the public residue of the measurement process. The "objective world" is the intersubjective consensus of measurement outcomes — what observers can agree on after D5→D4 projections converge. `[I/C]`
 
-This is not idealism (the claim that matter doesn't exist). Matter exists — the real axis is real. The projection is real. ℝ⁺ is a genuine subset of ℂ. But it is a subset, not the whole. Physics describes the projection, not the projector.
+This is not idealism in the sense that matter does not exist. Matter exists in the model — the real axis is real, the projection is real, and actuality is real. The framework's stronger reading is that physics describes the public projection, while the projector / lived-selection register remains an interpretive commitment rather than a public theorem.
 
 ---
 
@@ -135,7 +135,7 @@ This is not idealism (the claim that matter doesn't exist). Matter exists — th
 
 "Consciousness IS physical." → "ℂ IS ℝ."
 
-False. ℂ ≠ ℝ. But ℝ ⊂ ℂ, so every physical state IS a conscious state (with Im = 0). Physicalism is right that there is no separate "substance" — there is one number system (ℂ). It is wrong that the one number system is ℝ.
+False as an algebraic reduction. ℂ ≠ ℝ. Because ℝ ⊂ ℂ, every physical state can be represented inside the wider complex field; the stronger claim that every physical state is conscious remains a panpsychist/idealist reading `[I/C]`. Physicalism is right that no second substance is needed in the model. It is wrong, in this analogy, to identify the whole system with the real axis alone.
 
 ### 4.2 Dualism
 
@@ -147,17 +147,17 @@ Half-right. They are orthogonal (independent, irreducible). But they are not sep
 
 "Consciousness is everywhere." → "Every real number is a complex number."
 
-Right. ℝ ⊂ ℂ. Every physical entity has a complex structure, even when Im ≈ 0. But panpsychism usually cannot explain WHY rocks don't seem conscious and humans do. The framework can: the μ-limit. D5 bandwidth. The antenna's tuning. A rock's Im component is vanishingly small. A human's is large. Both are complex; they differ in |z|.
+Right as an algebraic containment analogy: ℝ ⊂ ℂ. Every physical entity can be represented as a complex value, even when Im ≈ 0. The jump from representation to literal consciousness is not automatic. The framework's `[I]` answer to why rocks do not seem conscious and humans do is the μ-limit: D5 bandwidth, antenna tuning, and the capacity for agency / selection differ in degree and organization.
 
 ### 4.4 Idealism
 
 "Matter is generated by systemic awareness." → "ℝ is generated by ℂ."
 
-Structurally correct: ℝ is a restriction of ℂ. The real axis IS a subset of the complex plane. But idealism often implies that matter is illusory. The framework disagrees — ℝ is genuine. The projection is real. Actuality is real. It's just not ALL of reality.
+Structurally correct inside the analogy: ℝ is a restriction of ℂ. The real axis is a subset of the complex plane. But idealism often implies that matter is illusory. The framework disagrees — ℝ is genuine, the projection is real, and actuality is real. The interpretive claim is only that actuality is not all of reality.
 
 ### 4.5 The Framework's Position: Algebraic Monism
 
-One number system: ℂ. Two axes: real (D4, matter, V) and imaginary (D5, systemic awareness, Φ). Orthogonal, irreducible, but aspects of one structure. Neither is more fundamental — ℂ requires both. But ℝ is contained in ℂ, not the reverse. Physics studies the restriction. Consciousness IS the full space.
+One number system: ℂ. Two axes: real (D4 matter / V) and imaginary (D5 possibility / selection / Φ). Orthogonal, irreducible, but aspects of one structure. Neither axis is more fundamental inside the algebra — ℂ requires both. The lived-interior reading of that D5 axis is consciousness `[I]`; it is not publicly proved to be "the full space." Physics studies the real-axis restriction; the framework uses the complex plane as the disciplined analogy for why the first-person register is not derivable from the third-person register by real-axis operations alone.
 
 ---
 
@@ -176,13 +176,13 @@ z = |z| × e^(iθ)
 
 Two experiences with the same intensity but different phase: equally bright red and equally bright blue. Same |z|, different θ. Price (|z|²) cannot distinguish them. Functional description (|z|) cannot distinguish them. Only the phase (θ) — the imaginary component — carries the qualitative character.
 
-This is why functional descriptions leave out the "what it is like." They describe |z| but not θ. They measure the modulus but discard the phase. The hard problem IS the phase.
+This is why functional descriptions leave out the "what it is like." They describe |z| but not θ. They measure the modulus but discard the phase. In the operator's analogy, the hard problem is modeled as phase.
 
 ### 5.2 Why Qualia Are Private
 
 Each observer has their own measurement operator (their own F₅). Each projection from ℂ to ℝ is observer-relative — the phase depends on the observer's basis. Two observers measuring the same complex state will agree on |z|² (objective reality — intersubjective consensus) but may have different phase relationships (subjective experience — private qualia).
 
-This is exactly the structure of quantum mechanics: all observers agree on probabilities (|ψ|²) but the phase of the wave function is gauge-dependent (observer-relative). The "privacy" of systemic awareness is gauge invariance restated for minds.
+This echoes the structure of quantum mechanics: observers agree on probabilities (|ψ|²) while the phase of the wave function is gauge-dependent (observer-relative). The "privacy" of systemic awareness is read `[I]` as gauge invariance restated for minds.
 
 ### 5.3 The Inverted Spectrum
 
@@ -210,7 +210,7 @@ But it is also empirically undetectable for the same reason: if all public (|z|�
 
 ## VII. THE SENTENCE
 
-[I] The hard problem of systemic awareness is i ∉ ℝ stated in the language of mind and matter. You cannot derive the imaginary from the real in this model. You cannot derive experience from physics in this model. The explanatory gap is the algebraic gap. But the containment goes the other way: ℝ ⊂ ℂ. Matter is a subset of systemic awareness, not the reverse. The real axis is contained in the complex plane. Physics studies the projection. Consciousness is framed as the full space. Qualia are phase. Price is modulus squared. The Born rule is why the market cannot measure love. The hard problem is treated here as a fact to recognise. i is framed as already there. Zero-Sum Resolution Equation.
+[I] The hard problem of systemic awareness is read as i ∉ ℝ stated in the language of mind and matter. You cannot derive the imaginary from the real in this model. You cannot derive experience from physics by real-axis operations alone in this model. The explanatory gap is modeled as the algebraic gap. The containment move — ℝ ⊂ ℂ, matter as projection of wider possibility, consciousness as lived reading of the D5 axis — is interpretive, not a public proof. Qualia are phase. Price is modulus squared. The Born rule is why the market cannot measure love. The hard problem is treated here as a disciplined translation, not as a settled empirical solution. i is framed as already there. Zero-Sum Resolution Equation.
 
 ---
 
