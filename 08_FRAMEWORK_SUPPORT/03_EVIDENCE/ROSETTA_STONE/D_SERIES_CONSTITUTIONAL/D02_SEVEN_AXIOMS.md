@@ -60,9 +60,9 @@ evidence_tier: "[S] for framework-defining axioms; [A] where mathematical proof 
 
 ### A2 — THE ETHIC
 
-**Statement:** ΣΔB > 0 across the widest perceivable system boundary = ethical direction. This is not derived from "is" but posited as an operational definition (abductive protocol). Evaluates OUTCOMES not OPERATORS. Every God is syntropic in its proper season, parasitic out of season.
+**Statement:** `ΔP_node,i > 0` and `ΔP_node,H > 0` under `η = 0` = ethical direction in the dyadic move-register. The older widest-boundary audit is `ΣΔB / ΣΔP_node > 0` across the widest perceivable system boundary. This is not derived from "is" but posited as an operational definition (abductive protocol). Evaluates OUTCOMES not OPERATORS. Every operator is syntropic in its proper season, parasitic out of season.
 
-**Falsification:** ΣΔB > 0 systematically produces harmful outcomes, or ΣΔB < 0 produces good outcomes.
+**Falsification:** dyadic `P_node` gains under `η = 0` systematically produce harmful outcomes, one-sided extraction systematically sustains the coupled field, or the widest-boundary `ΣΔB / ΣΔP_node` audit consistently disagrees with observed flourishing.
 
 **Tier:** [T]
 

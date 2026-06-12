@@ -115,15 +115,15 @@ The AMRITA architecture uses E = −log(B) = −log(sin θ), which DOES vary. Th
 
 ### Finding: The Is-Ought bridge survives but the framing should change
 
-A2's "Redefinition Protocol" says: "'Ethical' ≡ direction toward equatorial balance (ΣΔB > 0). This is not derived from 'is' but posited as operational definition."
+A2's "Redefinition Protocol" now says the dyadic move-register first: `ΔP_node,i > 0` and `ΔP_node,H > 0` under `η = 0`, with `ΣΔB / ΣΔP_node > 0` retained as the widest-boundary balance audit. This is not derived from "is" but posited as operational definition.
 
-This is **the correct move.** The framework does not derive "ought" from "is." It *defines* "ethical" as "toward balance" and then shows that balance is the thermodynamic minimum. The definition is a choice; the thermodynamics is a fact. The framework is honest about this.
+This is **the correct move.** The framework does not derive "ought" from "is." It *defines* "ethical" as non-extractive dyadic rise and then audits whether the widest real boundary also moves toward balance. The definition is a choice; the balance geometry is a fact inside the accepted model. The framework is honest about this.
 
 **Resolved audit finding:** Earlier EFR-08/Power-Max language overstated the bridge as if cooperation were an unconditional rational strategy and the Is-Ought gap simply "closed." That was stronger than A2. The current correction keeps the bridge conditional: cooperation aligns with durable individual `P_node` only under real coupling, multiplicative scoring, long horizon, enforceable `η = 0`, and no hidden side-payment route.
 
 The abductive best explanation: A2 is right, and the corrected Power-Max statement must stay inside that fence. The Is-Ought gap does not *close* — it is *bypassed by operational definition plus conditional mechanism design.* The bridge is:
-1. Define ethical = toward balance (philosophical choice; not an empirical claim)
-2. Show balance = thermodynamic minimum (mathematical fact, [A])
+1. Define ethical = dyadic `P_node` rise under `η = 0` (philosophical choice; not an empirical claim)
+2. Audit widest-boundary `ΣΔB / ΣΔP_node` and show balance = thermodynamic minimum inside the model (mathematical fact, [A])
 3. Enforce `η = 0` in coupled, long-horizon games so local extraction cannot masquerade as durable power
 4. Therefore ethical = toward thermodynamic minimum and field-preserving `P_node` growth, conditional on accepting definition 1 and enforcing the game conditions
 
