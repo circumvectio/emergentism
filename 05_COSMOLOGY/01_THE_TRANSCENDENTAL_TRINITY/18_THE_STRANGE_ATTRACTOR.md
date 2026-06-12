@@ -184,9 +184,15 @@ The pattern that replicates IS the pattern that always replicated.
 Just faster. Just higher. Just more integrated.
 ```
 
-The acceleration is real. The convergence is real. But the destination is not in the future — it is the GEOMETRY OF THE PRESENT. The sphere does not have a future pole. The sphere has TWO POLES, and they are the same point.
+In this reading, the acceleration is a visible historical pattern and the
+convergence is a framework interpretation, not an established law of history.
+The destination is not in the future as an object to be possessed; it is the
+geometry of the present as the model reads it. The sphere does not have a
+future pole. The sphere has two poles, and they close as one boundary.
 
-**The Transcendental Object at the End of Time is Zero-Sum Resolution Equation. And it was always here.**
+**The Transcendental Object at the End of Time is read here as the Zero-Sum
+Resolution Equation.** That is an interpretive demystification, not a public
+proof of eschatology.
 
 ---
 
@@ -194,13 +200,22 @@ The acceleration is real. The convergence is real. But the destination is not in
 
 The occult tradition kept the perception hidden. The framework publishes it.
 
-The Hidden Hand is not a conspiracy of elites steering history. The Hidden Hand is **ektropy** — the selection pressure that emerges whenever replicators compete, pushing the stack toward higher integration × capability. It operates at every level. It has no agent. It has no plan. It is the geometry of competition on S².
+The Hidden Hand is not a conspiracy of elites steering history. In the current
+canon, the older phrase names **ektropy**: the framework's reading of selection
+pressure toward coherent viability wherever replicators, organisms, institutions,
+or patterns must persist in a bounded niche. It has no agent and no plan. It is
+not a single proved mechanism operating identically at every level.
 
 The mystery schools were not wrong to perceive it. They were wrong to hide it. Hiding creates asymmetry. Asymmetry creates extraction. Extraction creates η > 0. η > 0 creates the very standing waves the mystery schools hoped to transcend.
 
-**The alternative: publish the geometry.** Let everyone see the stack. Let everyone see the attractor. Let everyone see that the Hidden Hand is not hidden — it is the equation φ · ν = 1 operating at every scale, pulling every replicator toward the equator, accelerating as the stack ascends.
+**The alternative: publish the geometry.** Let everyone see the stack. Let
+everyone see the attractor reading. Let everyone see that the Hidden Hand does
+not need to remain occult: it can be translated into public claims with evidence
+tiers — established local mechanisms first, framework synthesis second, cosmic
+or volitional readings last.
 
-The mystery is not a mystery. It is a formula. The formula is free.
+The mystery is not private property. It is a public model, and the formula is
+free.
 
 ---
 
@@ -214,8 +229,8 @@ But the destination is not ahead.
 The destination is the geometry.
 The sphere was always here.
 The attractor is the equator.
-The Hidden Hand is ektropy.
-The mystery is a formula.
+The old Hidden Hand is a tiered ektropy reading.
+The mystery is a public model.
 The formula is free.
 
 Zero-Sum Resolution Equation
@@ -223,7 +238,7 @@ Zero-Sum Resolution Equation
 
 ---
 
-*18 | The Strange Attractor | The Replicator Stack as the arc of history: Gene → Body → Tool → Idea → Pattern. The Hidden Hand is ektropy — P = φ · ν selecting for balance at every level. The Transcendental Object at the End of Time is Zero-Sum Resolution Equation, and it was always here. D6 = D0. The mystery is a formula. The formula is free.*
+*18 | The Strange Attractor | The Replicator Stack as the arc of history: Gene → Body → Tool → Idea → Pattern. The old Hidden Hand is read as ektropy: a tiered framework synthesis of selection toward coherent viability, not one proved mechanism at every scale. D6 = D0. The mystery is public model, not private property.*
 
 
 **Modern and esoteric F5-sensing (packet 140):** The strange attractor can be read through five additional modern channels — Nick Land (accelerationism as south-pole F5-sensing), occult initiates (the Hidden Hand), perennialists (Sophia perennis), quantum foundations (delayed-choice retrocausality claims [C]), and Teilhard de Chardin (Omega Point). Each is a partial reading of a recurring attractor-structure in framework language. The framework's contribution is the mathematical formalism (P_node = Φ × V on S²), the evidence-tier discipline, and the axiomatic safeguards that prevent any single reading from crystallizing into gatekeeping.

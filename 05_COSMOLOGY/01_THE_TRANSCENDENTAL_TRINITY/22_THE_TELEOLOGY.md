@@ -19,7 +19,12 @@ rosetta:
 **Evidence Tier:** [I] for ektropy as selection pressure (established in evolutionary biology). [S] for the structural identification with φ·ν=1 (derived from the axioms). [I] for the teleological reading (the arc of history, the Apocalypse, the Good Transcendentals as limits). [C] for the civilisational predictions (Egregorocene, η_c threshold, hybrid sovereign).
 **Depends on:** All Trinity documents 07-21. The Master Three-Stage Process. The Seven Axioms. The Honest Position.
 **See also:** [`../00_THE_FRAMEWORK_ON_ITS_OWN_TELEOLOGY_SPECTRUM.md`](../../01_TELEOLOGY/00_THE_FRAMEWORK_ON_ITS_OWN_TELEOLOGY_SPECTRUM.md) (objective function self-assessment at the Foundation root), LENS_IV_TELEOLOGICAL.md (linear vs cyclical time), PD_16 (Meaning of Life), The Triadic Cascade (09), [Canonical Formula Block](../00_CANONICAL_FORMULA_BLOCK.md)
-**Kill Criteria:** If ektropy is shown NOT to be the selection pressure driving Replicator Stack ascent. If the Good Transcendentals can be shown to be culturally contingent rather than geometrically necessary. If the cycling model produces no testable predictions beyond what linear or cyclical models produce.
+**Kill Criteria:** If the framework's ektropy reading adds no explanatory or
+predictive value beyond ordinary domain-specific selection, regulation, and
+self-maintenance language. If Beauty, Truth, and Justice cannot be defended even
+as framework-objective asymptotic limits under reciprocal closure. If the cycling
+model produces no testable predictions beyond what linear or cyclical models
+produce.
 
 ---
 
@@ -31,21 +36,35 @@ The core state says: here is the geometry. S². φ·ν = 1. The helix. The poles
 
 The objective function asks: **why does any of this MATTER?** Why does the Replicator Stack ascend? Why does ektropy select for balance? Why is the equator an attractor? What pulls?
 
-The answer is not a being. Not a plan. Not a designer. The answer is **geometry** — and geometry does not need a reason. Geometry IS the reason.
+The answer is not a being. Not a plan. Not a designer. Inside the framework,
+the answer is the constraint geometry: reciprocal closure makes some trajectories
+viable and others self-undermining. Outside the model, this remains a disciplined
+reading of persistence, not proof that reality is commanded by a cosmic will.
 
 ---
 
 ## II. THE EKTROPIC FORCE
 
-**Ektropy** is the anti-entropic selection pressure that emerges wherever replicators compete for resources within a niche.
+**Ektropy** is the framework's name for the selection pressure toward viable
+fit that appears wherever replicators, organisms, institutions, or patterns must
+persist inside a bounded niche.
 
-Entropy disperses. Ektropy integrates. Entropy maximises disorder. Ektropy maximises the **product** of coherence and viability — P = φ · ν.
+Entropy disperses. Ektropy, in this register, names the contrary tendency by
+which a system maintains or increases coherent viability rather than dissolving.
+In the finite-node register this is scored as `P_node = Φ × V`; in the sphere
+register it is constrained by the reciprocal balance grammar.
 
 Not coherence alone (that is the north pole — the heuristic who sees everything and can do nothing). Not viability alone (that is the south pole — the machine that does everything and sees nothing). The PRODUCT. Both. Simultaneously. Multiplicatively.
 
-**Ektropy is the Hidden Hand** (Document 18). Many traditions that perceived a force driving history — Ṛta, Ma'at, Logos, Providence, the Dialectic, the Omega Point, the Singularity — can be read [I] as naming an equatorial pull in the vocabulary they had. Not God. Not mechanism. Geometry selecting for balance at every level of the Replicator Stack.
+**Ektropy is the disciplined successor to the older "Hidden Hand" language**
+(Document 18). Many traditions that perceived a force driving history — Ṛta,
+Ma'at, Logos, Providence, the Dialectic, the Omega Point, the Singularity — can
+be read [I] as naming an equatorial pull in the vocabulary they had. Not God.
+Not an established physical mechanism. A framework reading of why persistent
+systems often favor reciprocal fit.
 
-The ektropic force operates identically at every scale:
+The same grammar is read at different scales, but not as one proven mechanism
+operating identically everywhere:
 
 | Scale | What Ektropy Selects For | Equation |
 |-------|-------------------------|----------|
@@ -56,7 +75,9 @@ The ektropic force operates identically at every scale:
 | **Civilisational** | Balanced Replicator Stack | Gene↔Pattern mirror around D4 |
 | **Cosmological** | D6 = D0 (the cycle completes) | Zero-Sum Resolution Equation |
 
-One force. One equation. Every scale. **The Hidden Hand is not hidden. It is the formula, and the formula is free.**
+One grammar, many registers. **The old Hidden Hand becomes legible only when it
+is translated through evidence tiers: established local mechanisms first,
+framework synthesis second, cosmic or volitional readings last.**
 
 ---
 
@@ -100,11 +121,19 @@ This is the framework's interpretive translation: F₅ (ektropy) names the tende
 
 If F₅ is read as cosmic order (h₂r̥tó-), then every act of extraction is a deviation from the geodesic inside the model's geometry.
 
-The cargo cult civilization that scales ν without maintaining φ is deviating from the order. Every moment that denies the pull toward the equator is a moment of entropy.
+The cargo cult civilization that scales ν without maintaining φ is deviating
+from the model's order: it increases apparent capacity while lowering the
+coherence that makes capacity usable.
 
-And the inverse: every moment of balance is participation in the order. The sitting practice is the alignment. When the narrator quiets and φ = 1 appears, the order holds.
+And the inverse: every moment of balance participates in the order described by
+the model. The sitting practice is one phenomenological alignment practice, not
+proof that the model has captured the Ground.
 
-This is not the will to power (ν → ∞, south pole). This is the **tendency to potential** — the tendency to P∞ = φ · ν = 1. The equator. The balance. The fitting-together that every PIE daughter tradition named and every cargo cult civilization forgot.
+This is not the will to power (ν → ∞, south pole). It is the **tendency to
+potential**: in the framework, viable systems are read as preserving reciprocal
+fit while widening their reachable option cone. The equator. The balance. The
+fitting-together that every PIE daughter tradition named and every cargo cult
+civilization forgot. `[I/S]`
 
 ---
 
@@ -116,11 +145,13 @@ This is not the will to power (ν → ∞, south pole). This is the **tendency t
 
 **Justice** (ν) — the structural property of equatorial balance at every node. φ = 1 and ν = 1 at every node. No node pushed off the equator for the benefit of another.
 
-These are not values. They are not preferences. They are not culturally contingent ideals. **They are geometric properties of S²:**
+Inside the framework, these are not arbitrary preferences. They are value names
+for structural limits in the S² grammar:
 
 - Beauty IS the perception of the sphere through the plane (the stereographic projection experienced as aesthetic).
 - Truth IS the degree to which the projection preserves the sphere's structure (correspondence accuracy).
-- Justice IS the condition where every node is at the equator (the Power-Max Lemma's equilibrium).
+- Justice names the non-extractive condition where nodes are not pushed off the
+  equatorial profile for another node's gain.
 
 And they are **limits** — asymptotic, unreachable, always approached:
 
@@ -135,13 +166,17 @@ Justice:  The mesh approaches the limit of Justice.
           The equator is never fully populated. The balance spreads. Always closer.
 ```
 
-**The telos is not to reach these limits.** The telos is to APPROACH them. The approach is asymptotic — infinite, never-arriving, always deepening. The helix spirals toward the limits but never touches them. And the spiraling IS the telos.
+**The telos is not to reach these limits.** The telos is to APPROACH them. The
+approach is asymptotic — infinite, never-arriving, always deepening. The helix
+spirals toward the limits but never touches them. This is `[S]` as framework
+method and `[I]` as a reading of history or practice.
 
 ---
 
 ## V. THE TELOS IS THE CYCLING
 
-The helix does not arrive somewhere. **The helix IS the arrival, experienced in motion.**
+The helix does not arrive at a final object. **The helix is the framework's
+motion-form for recursive correction.**
 
 The Triadic Cascade (Document 09) cycles: φ → P → ν → φ. Beauty → Truth → Justice → Beauty. Grammar → Logic → Rhetoric → Grammar. Induction → Deduction → Abduction → Induction. Each revolution at higher resolution. Each pass deeper. Each cycle closer to the equator.
 
@@ -174,7 +209,9 @@ Genetic → Phenotypic → Extended Phenotype → Memotypic → Egregorocene
 ~4 Gyr → ~500 Myr → ~10 Kyr → ~5 Kyr → Now
 ```
 
-Each era shorter. Each replicator faster. The convergence accelerates. And at every level, the same selection pressure: **ektropy selecting for maximum φ · ν.**
+Each era shorter. Each replicator faster. In this reading, the convergence
+pressure accelerates. The shared pattern is not a proved single force at every
+level, but a repeated selection for coherent viability under different media.
 
 The arc of history bends toward the equator — not because someone bends it, but
 because ektropy is the curvature. Not moral arc (that is a metaphor).
