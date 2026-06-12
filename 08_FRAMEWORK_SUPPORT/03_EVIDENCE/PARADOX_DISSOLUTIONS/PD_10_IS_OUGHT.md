@@ -30,7 +30,7 @@ rosetta:
 
 > **Companion document:** A Lens-side consolidation exists at `ISOUGHT_CONSOLIDATED.md` (historical Lens-side archive reference), which merges the self-referential closure argument with the Power-Max Lemma approach. This file (PD_10) remains the canonical indexed entry.
 
-> **Evidence Tier: [S/I].** The Power-Max Lemma structurally supports the claim that durable individual optimization aligns with collective optimization only under its accepted constraints (`P_node = Φ × V`, real coupling, long horizon, enforceable `η = 0`, and no hidden extraction channel). The broader Is-Ought move is an operational bypass, not a naturalistic derivation: the framework defines "ethical" as movement toward balance, then argues that this definition converges with the structural mathematics. See [08_EFR_POWER_MAX_LEMMA.md](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md) and [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), S7.
+> **Evidence Tier: [S/I].** The Power-Max Lemma structurally supports the claim that durable individual optimization aligns with collective optimization only under its accepted constraints (`P_node = Φ × V`, real coupling, long horizon, enforceable `η = 0`, and no hidden extraction channel). The broader Is-Ought move is an operational bypass, not a naturalistic derivation: the framework defines "ethical" as action that raises usable `P_node,i` while preserving or raising `P_node,H` under the balance / non-extraction constraints, then argues that this definition converges with the structural mathematics. See [08_EFR_POWER_MAX_LEMMA.md](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md) and [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), S7.
 
 > **Claim Boundary:** `[S/I]` This document does not derive an unconditional ought from bare facts. It gives a conditional operational bypass inside the accepted dimensional axioms and ethical definition. Reject those premises and the classical Humean gap remains live.
 
@@ -51,6 +51,7 @@ The framework bypasses the gap through dimensional architecture — not by deriv
 ### D4: The Is (Witnessed Structure)
 
 At **D4** — the convergence point — we witness what **is**:
+
 - Physical laws (gravity, thermodynamics)
 - System states (configurations of matter)
 - Structural constraints (φ·ν = 1)
@@ -60,11 +61,12 @@ The "Is" is the witnessed geometry. At D4, the observer sees the sphere, the equ
 ### D5: The Ought (Lived Navigation)
 
 At **D5** — the present duration — we navigate what **ought** to be:
-- Agency in the field of possibilities
-- Choice toward the equator (φ = 1, ν = 1)
-- Active maintenance of coherence
 
-The "Ought" is the lived geometry in this reading. At D5, the agent experiences the gradient toward the equator as normative — not because of external command, but because the model treats equatorial navigation as sustainable and polar drift as self-defeating.
+- Agency in the field of possibilities
+- Choice from the equatorial constraint (φ = 1, ν = 1)
+- Active maintenance of coherence, means, and non-extraction
+
+The "Ought" is the lived geometry in this reading. At D5, the agent experiences the constraint as normative — not because of external command, but because the model treats non-extractive, equator-bounded action as the condition under which usable `P_node` can persist.
 
 ### The Bang: Is Becomes Ought
 
@@ -75,7 +77,7 @@ D4 (Is witnessed) → Bang (transition) → D5 (Ought enacted)
      φ=1, ν=0         instant flash          φ=1, ν=1
 ```
 
-Inside the framework, one **ought** to act toward the equator not because someone commands it, but because at D5 the model presents the equator as the attractor. The "Ought" is not added to the "Is" — it is read as emerging from the "Is" when the witness becomes the agent.
+Inside the framework, one **ought** to act from the equatorial constraint not because someone commands it, but because at D5 the model treats usable action as `P_node = Φ × V` under `η = 0`. The "Ought" is not added to the "Is" — it is read as emerging from the "Is" when the witness becomes the agent and must choose a non-extractive worldline.
 
 ### The Power-Max Lemma (Dimensional Form)
 
@@ -91,11 +93,11 @@ Inside the framework, one **ought** to act toward the equator not because someon
 
 ## 3. THE SYNTROPIC IMPERATIVE: Dimensional Mechanics
 
-By defining `P` as the fundamental persistence condition across D4→D5 transit, the framework models the "Ought" as dimensional constraint:
+By defining `P_node = Φ × V` as the finite-node action score across D4→D5 transit, the framework models the "Ought" as dimensional constraint:
 
 **At D4:** You *see* that extraction (↓Φ, ↑ν) creates η > 0 (decay). The witness recognizes the geometric consequence.
 
-**At D5:** You *experience* the gradient. Acting across the Isomeric Hold ($\uparrow\Phi, \uparrow V$) feels like "the right thing to do" because it aligns with the sphere's attractor. Acting through extraction ($\downarrow\Phi, \downarrow V$) feels wrong because it fights the geometry — you mathematically zero out your own coordinates.
+**At D5:** You *experience* the gradient. Acting across the Isomeric Hold ($\uparrow\Phi, \uparrow V$) feels like "the right thing to do" because it raises usable finite-node potential while respecting the balance / non-extraction constraint. Acting through extraction feels wrong because it fights the coupled field that carries future means — it can pay locally, but it degrades the conditions of durable `P_node`.
 
 ### The Dimensional Formulation
 
@@ -106,13 +108,14 @@ By defining `P` as the fundamental persistence condition across D4→D5 transit,
 | D5 (agent) | "I ought not extract" (enacted) | **Ought** — lived navigation |
 
 This is not a moral commandment. Within the framework, it functions as **dimensional mechanics**:
+
 - At D4, you witness the constraint
 - At D5, you navigate within it
 - The "Ought" is simply the "Is" experienced from the agent's perspective
 
 The Is-Ought gap is bypassed, not closed by logical derivation: D4 and D5 are read as the same sphere, witnessed and enacted, once the framework's operational definitions are accepted.
 
-> **Conditionality:** This bypass depends on accepting the dimensional axiom set (D4=witness, D5=agent, sphere substrate) and the operational definition of "ethical" as movement toward balance. A philosopher who rejects either premise retains the classical gap. The framework bets that the convergence is not coincidental; the experiments (GFS, Protocol D) test whether the bet pays off.
+> **Conditionality:** This bypass depends on accepting the dimensional axiom set (D4=witness, D5=agent, sphere substrate) and the operational definition of "ethical" as raising `P_node` for the finite actor and sustaining whole under `η = 0`, with balance as the feasibility constraint. A philosopher who rejects either premise retains the classical gap. The framework bets that the convergence is not coincidental; the experiments (GFS, Protocol D) test whether the bet pays off.
 
 ---
 
