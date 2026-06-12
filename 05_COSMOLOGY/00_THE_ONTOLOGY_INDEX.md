@@ -87,9 +87,11 @@ These five lines are the **kernel**. Everything else is elaboration, proof, inte
 | D₁ | Distinction (Space) | First "here vs there" | s becomes finite | [Complete Ontology](00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md) §D1 |
 | D₂ | Configuration (Time) | First "before vs after" | s acquires direction | [Complete Ontology](00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md) §D2 |
 | D₃ | Transformation (Form) | Pattern persists across change | s acquires curvature | [Complete Ontology](00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md) §D3 |
-| D₄ | Causality (Direction) | Change has cause | s ≈ 0 approached | [Complete Ontology](00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md) §D4 |
-| D₅ | Consciousness (Agency) | Choice exists | s free to vary | [Complete Ontology](00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md) §D5 |
+| D₄ | Causality / bounded witness | Change has cause; the Now-point appears | s ≈ 0 approached | [Complete Ontology](00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md) §D4 |
+| D₅ | Agency / selection (consciousness reading `[I]`) | Choice, present duration, and option-space open | s free to vary | [Complete Ontology](00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md) §D5 |
 | D₆ | Closure (Return) | Experience exhausts | s → undefined | [Complete Ontology](00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md) §D6 |
+
+**Action-register bridge.** Dimensional D4 remains the causal now-point / bounded witness; it is not merely "tools." But in the play rule `P_node = Φ × V`, `V` names the D4 means-to-act at the action boundary: body, tools, energy, access, hands, shovel, industrial digger. Dimensional D5 remains agency / option-space; in the same play rule, `Φ` names D5 worldline-foresight: the ability to envision, rank, and use reachable futures. The child with a jet and no pilot-foresight, and the pilot with no bodily/tool access, both show the zero-factor collapse.
 
 ---
 
@@ -163,7 +165,7 @@ Key corrections already propagated:
 | L2 | Kālī 💀 | Concrete | Inductive | EM | Kālī (destruction) |
 | L3 | Kṛṣṇa ◇ | Formal | Deductive | Weak force | Kṛṣṇa (preservation) |
 | L4 | Arjuna ⚔ | Post-conventional | Abductive | Gravity | Arjuna (action) |
-| L5 | Brahmā ○ | Integrative | Systematic | Consciousness | Brahmā (creation) |
+| L5 | Brahmā ○ | Integrative | Systematic | Ektropy / selection `[I/C]` | Brahmā (creation) |
 | L6 | Śiva • | Transpersonal | Apophatic | Closure | Śiva (dissolution) |
 | L7 | Viṣṇu ⊙ | — | Transcendental | Witness | Viṣṇu (maintenance) |
 

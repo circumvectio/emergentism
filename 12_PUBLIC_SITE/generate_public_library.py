@@ -157,7 +157,11 @@ directly (the only available lever):
 	                                              : fenced stale "D5 = Consciousness"
 	        phrasing so D5 is agency / selection / worldline-foresight first, and
 	        consciousness is only the `[I]` lived-interior reading of selection, not
-	        proof of a separate physical layer or the Ground itself.
+	        proof of a separate physical layer or the Ground itself; later mirrored
+	        the action-register bridge into canon/the-ontology-index,
+	        canon/the-complete-ontology-of-reality, and complete-ontology so D4
+	        means-to-act and D5 worldline-foresight are practical `P_node = Φ × V`
+	        factors, not replacements for the dimensional scaffold.
   - memetic/                                    : normalized the Dasein game
         reading action test from stale `P_i` / `P_H` to `P_node,i` /
         `P_node,H`; later added the public memetics operational-language guard

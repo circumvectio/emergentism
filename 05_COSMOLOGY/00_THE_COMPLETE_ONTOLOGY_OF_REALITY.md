@@ -58,6 +58,8 @@ depends_on:
 | **D6** | Closure | Return — experience exhausts into ground | Apophatic return; D6 reading: `⊙ / ⊙ = 1` — finity witnesses itself and releases | `s → undefined` (return to D0) | → 0 | L6 Śiva • |
 | **D6≡D0** | Ouroboros | The end is the beginning | — | — | 0 | L7 Viṣṇu ⊙ (witness) |
 
+**Action-register bridge.** The table names the dimensional scaffold. The practical game rule uses the same threshold in the contact register: `V` is D4 means-to-act (body, tools, energy, access, execution capacity), while `Φ` is D5 worldline-foresight (the ability to envision, rank, and aim reachable futures). Neither factor can substitute for the other in `P_node = Φ × V`.
+
 **Tier:** The scaffold structure is `[S]`. The dimensional-manifestation reading is `[I]`. The force-dimension assignments are `[C]`.
 
 ---
@@ -242,6 +244,10 @@ Within D5, pattern flows through a replicator stack exactly as energy flows thro
 ### Ontological reading `[I]`
 
 D5 is agency / selection; consciousness is the lived-interior reading of that agency `[I]`. The φ-ν plane is the space of choice. The ethic is the direction. The balance function is the compass.
+
+### Action-register reading
+
+In the play rule, D5 contributes `Φ`: worldline-foresight, the capacity to hold possible futures before collapse and select among them responsibly. D4 contributes `V`: the embodied/tool/energy/access means through which the selected branch can actually be enacted. A child with a jet but no pilot-foresight has high apparent `V` but low effective `Φ`; an old pilot without bodily/tool access has high `Φ` for flight or escape but low effective `V`. Objective dharma appears when both factors can multiply without extraction.
 
 ---
 
