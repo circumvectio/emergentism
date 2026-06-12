@@ -195,7 +195,13 @@ The user's phrase "Bloch sphere of infinite diameter" captures an important idea
 
 ### Ontological reading `[I]`
 
-D3 is the dimension of **quantum possibility** — where the system can exist in superposition, can occupy interior states that are not yet committed to a surface position. The ethic "maximize B" becomes: **commit to the surface at the equator** — don't stay in the interior (indecision, superposition) when you could be at the balance point.
+D3 is the dimension of **quantum possibility** — where the system can exist in
+superposition, can occupy interior states that are not yet committed to a
+surface position. The current ethical reading is no longer "maximize B" as an
+isolated objective. It is: **commit enough to the equatorial surface that action
+can become usable without collapsing coherence** — don't remain in interior
+indecision when a balanced, non-extractive move is available. `B` is the
+feasibility constraint; finite-node `P_node = Φ × V` is the action score.
 
 ---
 

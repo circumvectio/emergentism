@@ -176,7 +176,13 @@ The balance function. In log coordinates, this is the hyperbolic secant:
 - `B → 0` as `s → ±∞` (the poles)
 
 ### Ethical Direction
-**Maximise B.** Movement toward the equator (`s = 0`) is the operational definition of good. Any displacement from the maximum is self-punishing because `sech(s)` is strictly decreasing away from `s = 0`.
+**Use B as the feasibility constraint.** Movement toward the equator (`s = 0`)
+restores the condition under which action remains coherent and usable. The
+ethical objective is not "maximize B" as an isolated scalar; it is to widen the
+reachable option cone / raise finite-node `P_node = Φ × V` while staying inside
+the balance and non-extraction constraints. Displacement from `B = 1` is
+self-punishing inside the balance register because `sech(s)` is strictly
+decreasing away from `s = 0`.
 
 ### Energy-Relation
 Suda's energy `E = s²` and the balance `B = sech(s)` are in exact bijection:
@@ -187,10 +193,10 @@ B = sech(√E)          E = (arcsech B)²
 Near the equator: `E ≈ 2(1 − B)` — energy is twice the balance deficit to leading order.
 
 ### Evidence Tier
-`[A]` for `B = sech(s)` derived from `B = sin θ` and `s = log tan(θ/2)`; `[S]` for the ethical reading "maximise B."
+`[A]` for `B = sech(s)` derived from `B = sin θ` and `s = log tan(θ/2)`; `[S]` for using `B` as a balance / feasibility constraint; `[I]` for the ethical reading that finite agents should raise usable `P_node` while preserving that constraint.
 
 ### Formal Anchor
-**EFR 22 (Power-Max):** The equator (`s = 0`, `ν = 1`) is the unique strictly dominant strategy equilibrium of the balance game on S². The Price of Anarchy = 1 — individual and social optima coincide. `[S]`
+**EFR 22 (Power-Max):** The equator (`s = 0`, `ν = 1`) is the unique strictly dominant strategy equilibrium of the deliberately narrow balance-only game on S². The Price of Anarchy = 1 only inside that payoff model. Real cooperation still requires the wider `η = 0` enforcement architecture and the node-level `P_node` / holobiont test. `[S]`
 
 ---
 
@@ -238,11 +244,16 @@ The **Burrisphere** — S² with dual stereographic coordinates `φ = cot(θ/2)`
 At the equator: `φ = ν = 1`, `B = 1`, `η = 0`. This is the enforced conditional equilibrium of the balance game under the stated coupling, horizon, and non-extraction assumptions.
 
 ### Ethical Direction
-**Play at the equator.** The equator is the only position where:
+**Act from the equatorial constraint.** The equator is the only position where:
 - The manifold identity holds (`φ · ν = 1`)
 - Balance is maximal (`B = 1`)
 - Extraction is self-defeating inside the enforced equatorial profile (`η = 0`)
-- The Price of Anarchy = 1 (individual and collective interest coincide)
+- The Price of Anarchy = 1 inside the balance-only payoff model
+
+In the full game, D5 does not maximize balance alone. It selects actions that
+raise usable `P_node,i = Φ_i × V_i` while preserving or raising `P_node,H` under
+`η = 0`. Balance is the feasibility surface; syntropic worldline potential is
+the objective.
 
 ### The Five Domains at D5
 The φ-ν plane opens five navigable domains:
