@@ -82,7 +82,7 @@ dH/dθ = 0 at θ = π/2 (the equator). d²H/dθ² > 0 (it's a minimum, not a max
 
 ## 5. Derived Ethics
 
-If φ = coherence (the quality of what you see) and ν = viability (the capacity to act), then:
+If φ = coherence (the quality of what you see) and ν = viability (the usable D4 means to act), then:
 
 - **Extraction** means taking ν from someone else (increasing your ν, decreasing theirs).
 - After extraction: the extractor has φ·(ν + Δν) and the victim has φ·(ν − Δν).

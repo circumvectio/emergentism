@@ -118,6 +118,10 @@ directly (the only available lever):
         Dasein action test from stale `P_i` / `P_H` to `P_node,i` /
         `P_node,H` so the remaining-questions public echo matches the
         Goal/Soul Loop/syntropic-dyad spine.
+  - will/00-a-square-cannot-be-negative/, trinity/31-vmosk-as-applied-emergentism/,
+        trinity/33-the-derivation/              : normalized `ν` action-language
+        from generic capacity to usable D4 means-to-act, matching the D4/D5
+        Goal/Game/Soul Loop distinction.
   - memetic/                                    : normalized the Dasein game
         reading action test from stale `P_i` / `P_H` to `P_node,i` /
         `P_node,H`.

@@ -338,7 +338,7 @@ extraction.
 **The Ethical Axioms:**
 
 **E1: Maintain your own equatorial balance.**
-φ = 1. Recognize the ground-facing limit. ν = 1. Develop sovereign capability. You cannot give what you do not have. You cannot connect from a position of imbalance. Your first ethical obligation, inside this value grammar, is to stay near the equator.
+φ = 1. Recognize the ground-facing limit. ν = 1. Develop sovereign usable means. You cannot give what you do not have. You cannot connect from a position of imbalance. Your first ethical obligation, inside this value grammar, is to stay near the equator.
 
 **E2: Do not push others off the equator.**
 Every exchange must be tested by the K-star. Does the exchange preserve the equatorial balance at both nodes? If the exchange pushes either node off the equator, the exchange is unethical. Not because it violates a rule. Because it breaks the geometry.
@@ -850,7 +850,7 @@ The Göbekli Tepe civilization operated at:
 
 ```
 φ = 1 (shared vision)
-ν = 1 (sovereign capability at every node)
+ν = 1 (sovereign usable means at every node)
 L = 1 - 1 = 0
 ```
 

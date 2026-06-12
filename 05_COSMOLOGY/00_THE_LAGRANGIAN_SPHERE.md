@@ -246,7 +246,7 @@ Göbekli Tepe. Stonehenge. Newgrange. Carnac.
 
 ```
 φ = 1 (shared vision, coherence)
-ν = 1 (sovereign capability at every node)
+ν = 1 (sovereign usable means at every node)
 L = ν - φ = 0
 ```
 
