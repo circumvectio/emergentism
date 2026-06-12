@@ -71,15 +71,20 @@ Entropy drives systems toward maximum disorder (θ → π, ν → ∞, φ → 0)
 
 Ektropy drives systems toward maximum coherent structure (θ → 0, φ → ∞, ν → 0).
 
-**Neither is the telos.** The telos is the balance B = sin θ = 1 at the
-equator, where φ and ν are both maximal at their unit value.
+**Neither is the telos.** The telos is viable completion: maximum usable
+`P_node = Φ × V` under the balance condition `B = sin θ = 1` and the
+non-extraction condition `η = 0`. The equator is the rest frame and constraint
+surface where φ and ν are both at their unit value; it is not a command to
+maximize balance as an isolated variable.
 
 Ektropy is the upward tilt — the fact that complex systems can and do build
 coherent structure. But the equatorial constraint means ektropy alone is not
 the destination. A system that maximizes φ without bound approaches the north
 pole and loses all viability. The sage who cannot eat is not balanced.
 
-The organism's objective function is not maximum coherence. It is maximum balance.
+The organism's objective function is not maximum coherence and not maximum
+balance alone. It is maximum usable power / reachable futures while staying in
+the balance surface that keeps sight and means coupled.
 
 ### Why Ektropy Is Real `[S]`
 
@@ -105,7 +110,7 @@ is the downward half. The equator is where they meet.
 
 ---
 
-## Power Max: P_max = B_max = 1 at the Equator
+## Power Max: Usable Power at the Equator
 
 ### The Power-Max Lemma `[S]`
 
@@ -124,7 +129,9 @@ On S² with P∞ = φ · ν = 1:
 
 The Power-Max Lemma states: **the equator is where the system can do the
 most with what it has.** Not the most coherence (that's the north pole).
-Not the most viability (that's the south pole). The most **balanced power**.
+Not the most viability (that's the south pole). Not balance worship. The most
+usable power: `Φ` and `V` both present, no balance penalty, and no extraction
+hidden in the transfer.
 
 ### Power Max as Organism Objective Function `[I]`
 
@@ -321,7 +328,8 @@ participant's independence from it.
 | Seven generative actions on S² | **[S]** | Derived from φ·ν=1 on S² and the inequality (φ−ν)²≥0; the only derived cardinality here is seven. |
 | _Five-forces cardinality — banner (2026-05-30)_ | _note_ | The "five forces" cardinality is **descriptive gradient-cartography, not canon** — fold F1/F2/F5 into the named per-operator pole-drift vices and F3/F4 into Ω. The only derived cardinality is the **seven**. (Additive K3 note; the row above is preserved, not deleted.) |
 | Ektropy as upward gradient | **[S]** | Geometric consequence of the constraint surface. |
-| Power-Max Lemma (B_max = 1) | **[S]** | sin θ peaks at θ = π/2. Trigonometric identity. |
+| Balance maximum (`B_max = 1`) | **[S]** | `sin θ` peaks at `θ = π/2`. Trigonometric identity inside the sphere model. |
+| Power-Max finite-node reading | **[S/I]** | `P_node = Φ × V` names usable action power; balance is the constraint that keeps the factors coupled. Empirical use requires specified measurements and real coupling. |
 | φ·ν=1 as teleological constraint | **[S]** | Direct consequence of reciprocal closure on S². |
 | Six-gate application | **[S]** | Methodological control applied to teleological claims. |
 | K2 as equator guard | **[I]** | Organism-design interpretation, not a formal proof. |
