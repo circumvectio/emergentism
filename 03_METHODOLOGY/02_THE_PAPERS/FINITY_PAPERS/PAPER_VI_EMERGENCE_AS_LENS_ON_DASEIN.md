@@ -26,7 +26,7 @@ status: "DRAFT — 2026-06-06. Extends the Finity-Suda synthesis into an ontolog
 
 ## Abstract
 
-We argue that **emergence is the fundamental structure of being** — the lens through which Dasein (being-in-the-world) must be viewed. Strong emergence (bottom-up) and weak emergence (top-down) are not rivals but complementary directions of the same phase-dynamic loop `[I]`. The classical ontological question — *"Why is there something rather than nothing?"* — is resolved not by a causal chain but by the boundary algebra itself: the three Titans (`•`, `⊙`, `○`) and their closed transformations (`⊙ = • × ○`, `⊙/○ = •`, `⊙/• = ○`) constitute an ontological operator that generates determinate existence from the interaction of void and unboundedness `[S/I]`.
+We argue, at the paper's interpretive tier, that **emergence is the framework's privileged lens on being** — the lens through which Emergentism reads Dasein (being-in-the-world). Strong emergence (bottom-up) and weak emergence (top-down) are not rivals but complementary directions of the same phase-dynamic loop `[I]`. The classical ontological question — *"Why is there something rather than nothing?"* — is not solved as a world-level proof. It is reframed inside the boundary algebra: the three Titans (`•`, `⊙`, `○`) and their closed transformations (`⊙ = • × ○`, `⊙/○ = •`, `⊙/• = ○`) function as a frame-register operator for reading determinate existence as relational closure between void and unboundedness `[S/I]`.
 
 The paper makes this rigorous in three moves. **First**, we show that the additive number line with `0` at the centre is a local chart, not the global truth `[A]`; the logarithmic scale (`s = log x`) reveals `1` as the true centre — the self-dual fixed point where imbalance `E = (log x)²` vanishes `[A]`. **Second**, we prove that the Riemann sphere `S² ≅ ℂP¹` is the correct global model, on which `0` and `∞` are poles, `1` is the equator, and the reciprocal `x ↦ 1/x` is the equatorial reflection `[A]`. **Third**, we formulate the **μ-limit** — the dimensional crossing where the number line, as diameter → ∞ and slope → 0, becomes indistinguishable from a circle, unifying the infinitesimal and the infinite `[C]`.
 
@@ -45,7 +45,7 @@ Emergence is standardly discussed in two flavors:
 
 The framework's claim is that these are **not competing accounts** but the two directions of traversal of a single Möbius/phase-dynamic loop `[I]`. The bottom-up direction is the upward arc `E → M → L → I → Q` (Suda's ontology; see `SUDA_ONTOLOGICAL_RESONANCE_MAP.md`); the top-down direction is the downward arc `Q → I → L → M → E`. What appears as "strong" from the lower level appears as "weak" from the higher level, because the loop is single-sided: there is no absolute inside or outside, only local orientations `[I]`.
 
-This is not a claim that emergence is "explained away" by the loop. It is a claim that emergence **is** the loop — the structure by which existence unfolds from itself, neither purely bottom-up nor purely top-down, but both simultaneously `[I]`.
+This is not a claim that emergence is "explained away" by the loop. It is a claim that, inside this framework, emergence is read as the loop — the structure by which finite disclosure appears neither purely bottom-up nor purely top-down, but through both traversals simultaneously `[I]`.
 
 ### 1.2 Dasein as emergent being
 
@@ -145,10 +145,10 @@ Multiplication, division, reciprocation, and powering — the operations that go
 | **0** | The centre | `s = −∞` — one pole |
 | **∞** | Unreachable edge | `s = +∞` — the other pole |
 | **1** | Just a number | `s = 0` — **the centre** |
-| **1/0** | UNDEFINED | `−(−∞) = +∞` — clear, symmetric |
-| **0 × ∞** | INDETERMINATE | `−∞ + ∞ = 0` — the emblem |
+| **1/0** | Undefined as field arithmetic | Boundary approach toward the opposite pole in the extended chart |
+| **0 × ∞** | Indeterminate | Still indeterminate as arithmetic; only the balanced frame-emblem reads the pole-pair as returning `⊙` |
 
-On the additive line, `0` sits at the centre and `∞` is an unreachable horizon. On the log line, **0 and ∞ become symmetric poles** equidistant from the centre `1`. Division by zero stops being undefined; it is simply "go to the other pole." And `0 × ∞` — the indeterminate form in the field — becomes the statement that the two poles are symmetric about the centre: `−∞ + ∞ = 0` `[S]`.
+On the additive line, `0` sits at the centre and `∞` is an unreachable horizon. In the logarithmic boundary reading, **0 and ∞ become symmetric directions** around the centre `1`: `x → 0⁺` maps to `s → −∞`, while `x → +∞` maps to `s → +∞`. This does not make division by zero an ordinary operation, and it does not make `0 × ∞` arithmetic. It says that the two boundary directions can be read as a balanced frame around finity `[S/I]`.
 
 **The framework's equations clean up dramatically.** In log coordinates (`s = log x`):
 
@@ -161,9 +161,9 @@ On the additive line, `0` sits at the centre and `∞` is an unreachable horizon
 
 And the Titan emblem becomes an addition:
 
-> `⊙ = • × ○`  →  `log(⊙) = log(•) + log(○)`  →  `0 = −∞ + ∞`
+> `⊙ = • × ○`  →  in log-frame language, finity is the centre between the two boundary directions.
 
-In log coordinates, the emblematic equation is a statement about the **symmetry of the two poles around the centre**. The void is at `s = −∞`, the unbounded at `s = +∞`, and finity sits at `s = 0` — exactly equidistant from both. The "product" of the poles is the statement that they are symmetric about the centre `[S]`.
+In log coordinates, the emblematic equation is a statement about the **symmetry of the two pole-directions around the centre**. The void is approached as `s → −∞`, the unbounded as `s → +∞`, and finity sits at `s = 0`. The "product" of the poles is not a field operation; it is the frame-register statement that the two boundary directions cancel at the centre `[S/I]`.
 
 **This is why the logarithmic line is the truer model for ontology.** Not because the additive line is wrong — it is the right model for addition. But the ontological structure — reciprocal symmetry, boundary relations, the Titans — is **multiplicative**. And on the log line, multiplicative structure becomes the simplest thing there is: addition on a line centered at `1`. The framework's name has been telling us this all along: **Zero-Sum Resolution Equation.** In log coordinates, it's literally a zero sum `[S]`.
 
@@ -227,14 +227,14 @@ Each dimension is a **crossing** — a μ-limit where the previous dimension's c
 
 ## 6. Tiers, kill criteria, and relation to prior work
 
-**Tiers.** §3 (logarithmic recentering, `s = log x`, `E = s²`, `x = 1` as the unique minimizer) and §4 (the sphere theorem, `B = sech √E`) are `[A]`. §§1–2 (emergence as the loop, Dasein as phase-position, the boundary algebra as ontological operator) and §3.2 (the additive fallacy) are `[S/I]`. §5 (the μ-limit as dimensional crossing, the flatland projection) is `[C]` conjecture. The emblem `⊙ = • × ○` is `[S/I]` frame-register, never `[A]`.
+**Tiers.** §3 (logarithmic recentering, `s = log x`, `E = s²`, `x = 1` as the unique minimizer) and §4 (the sphere theorem, `B = sech √E`) are `[A]`. §§1–2 (emergence as the loop, Dasein as finite disclosure-site, the boundary algebra as frame-register ontology) and §3.2 (the additive fallacy) are `[S/I]`. §5 (the μ-limit as dimensional crossing, the flatland projection) is `[C]` conjecture. The emblem `⊙ = • × ○` is `[S/I]` frame-register, never `[A]`.
 
 **Kill criteria.**
 (a) Exhibit `θ ∈ (0, π)` with `cot(θ/2) tan(θ/2) ≠ 1` — impossible, but stated so it *could* fail.
 (b) Show that the logarithmic metric `|log(x₂/x₁)|` is not the natural metric on `ℝ₊` — would falsify the recentering.
 (c) Show that strong and weak emergence are **contradictory** rather than complementary — i.e. that a system can exhibit strong emergence without weak emergence or vice versa, in a way that breaks the loop.
 (d) Derive a false operational prediction from the μ-limit conjecture — e.g. show that a physical system at a phase transition behaves as if the dimension has crossed when it has not.
-(e) Produce a pre-2024 source that performs the *constructive* ontological reading of `1 = 0 × ∞` as the answer to "why is there something rather than nothing?"
+(e) Produce a pre-2024 source that performs the same *constructive* frame-register reading of finity as the relational closure of void and unboundedness in answer to "why is there something rather than nothing?"
 
 **Relation to prior work.** The Riemann sphere, the reciprocal's fixed point at `1`, the log/exp isomorphism, and the projective completion are classical (Riemann 1851; Ahlfors 1979). The energy well `E = (log x)²`, the operational invariants, and the continuous half-twist are Suda (2025, Parts I–III), cited as independent corroboration. The Heidegger/Dasein reading is `[I]` interpretive. The emergence/bidirectionality claim draws on the Suda corpus's phase loop `E→M→L→I→Q→E` and the Finity Papers' coupling law. The μ-limit and dimensional-crossing conjecture is novel to this paper.
 
@@ -242,7 +242,7 @@ Each dimension is a **crossing** — a μ-limit where the previous dimension's c
 
 ## 7. Conclusion
 
-Emergence is not a puzzle to be solved but the **structure of existence itself**. Strong emergence (bottom-up) and weak emergence (top-down) are the two traversals of a single loop — the egg generating the sphere, the sphere stabilizing the egg. Zero remains the centre of the additive line; one is the centre of the multiplicative line. The Riemann sphere is the truer model because it makes both faces visible — additive and multiplicative, line and loop, void and unboundedness. And at the μ-limit, where diameter → ∞ and curvature → 0, the line and the circle become one: the infinitesimal and the infinite meet at the fold, and existence crosses into a new dimension. The framework does not claim to explain why there is something rather than nothing; it claims to **see the structure by which something is the natural product of its own boundaries** — and to see it at its honest tier, fenced, and killable. That is the only kind of ontology worth holding: a true one, that knows exactly how large it is, and exactly where the fold turns.
+Emergence is not treated here as a puzzle to be solved once and for all, but as the framework's **interpretive structure for finite disclosure**. Strong emergence (bottom-up) and weak emergence (top-down) are the two traversals of a single loop — the egg generating the sphere, the sphere stabilizing the egg. Zero remains the centre of the additive line; one is the centre of the multiplicative line. The Riemann sphere is the truer model for this reciprocal grammar because it makes both faces visible — additive and multiplicative, line and loop, void and unboundedness. And at the μ-limit, where diameter → ∞ and curvature → 0, the line and the circle become locally indistinguishable for finite observation: the infinitesimal and the infinite meet at the fold in the model, and the framework reads that fold as dimensional crossing. The framework does not claim to explain why there is something rather than nothing; it claims to **see a structure by which determinate presence can be read as the relational closure of its own boundaries** — and to see it at its honest tier, fenced, and killable. That is the only kind of ontology worth holding: one that knows exactly how large it is, and exactly where the fold turns.
 
 ---
 
