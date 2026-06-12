@@ -78,6 +78,40 @@ The limit is essential. The lens locates the clearing; it does not exhaust it.
 The seer is not placed on the sphere by being named in the framework. The
 sphere is one of the disclosed, and the Ground remains prior.
 
+### 1.4 How Dasein learns to play `[S/I]`
+
+The paper's original loop language is not yet the full practice model. The
+current canon names that practice the **Soul Loop**: continuous recursive
+disambiguation in which the corpus edits the editor and the editor edits the
+corpus. Dasein is not merely "in" the loop as a diagram. Dasein learns by
+cycling five functions:
+
+```text
+ontology      -> what is disclosed?
+epistemology  -> how is it known, and at what tier?
+methodology   -> how is the next move derived, tested, built, corrected?
+axiology      -> what matters enough to preserve?
+teleology     -> what act raises P_node without extraction?
+```
+
+This is where the D4/D5 bridge becomes practical. Dimensional `D4` remains the
+bounded witness / causal vertex, and dimensional `D5` remains agency /
+selection. In the finite-node play register, **`V` names D4 means-to-act**:
+body, tools, energy, access, and execution capacity at the action boundary.
+**`Φ` names D5 worldline-foresight**: the capacity to envision, rank, and
+predict the reflexive effects of a move on reachable futures. The child beside
+a jet and the old pilot without the relevant bodily/tool access mark opposite
+zero-factor failures. One has means without usable foresight; the other has
+foresight without the means needed for that move.
+
+So the paper's Dasein claim becomes operational only at the contact register:
+`P_node = Φ × V`, with the action morally admissible when `P_node,i` and
+`P_node,H` rise together under `η = 0`. The manifold identity remains
+`P∞ = φ · ν = 1`; it is not the finite score. The framework does not derive a
+universal moral theorem from the sphere. It proposes a disciplined play rule:
+see clearly, act lawfully, correct recursively, and reject any move where one
+side rises by degrading the other.
+
 ---
 
 ## 2. The ontological operator: how something arises from nothing-and-everything `[S/I]`

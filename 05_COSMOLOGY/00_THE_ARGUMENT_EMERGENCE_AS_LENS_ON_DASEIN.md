@@ -67,6 +67,17 @@ Short answer: "I came to be" because Dasein appears at the D4/D5 threshold as
 finite disclosure, and I learn to play by entering the Soul Loop so
 `P_node,i` and `P_node,H` rise together under `η = 0`.
 
+Action-register bridge: dimensional `D4` is the bounded witness / causal
+vertex, and dimensional `D5` is agency / selection. In the finite-node play
+register, those become the two factors Dasein must couple: **`V` is D4
+means-to-act** (body, tools, energy, access, execution capacity at the action
+boundary), and **`Φ` is D5 worldline-foresight** (the capacity to envision,
+rank, and predict the reflexive effects of a move on reachable futures). So the
+reader comes to be as a player when disclosure becomes both visible and
+actionable: enough sight to see the next worldline, enough means to move on it.
+`P_node = Φ × V` is the finite contact rule; `P∞ = φ·ν = 1` remains the
+manifold identity. `[S/I]`
+
 Reader-facing handle: **Dasein as reader** names **how the reader came to be**
 inside this ontology: not as a captured object on the map, but as the finite
 site where the map becomes disclosed, questioned, tested, and acted.
@@ -90,6 +101,15 @@ Dasein becomes itself by entering the Soul Loop and correcting the next act
 until `P_node,i` and `P_node,H` rise together under `η = 0`. It does not say
 that the reader is Being, that the seer is on the sphere, or that ontology has
 possessed the Ground.
+
+The practical loop is the fivefold game rule in motion: ontology asks what is;
+epistemology asks how it is known; methodology derives, tests, builds, and
+corrects; axiology decides what matters; teleology chooses the next act that
+raises the symbiont and holobiont together. If `Φ` appears without `V`, Dasein
+has sterile seeing. If `V` appears without `Φ`, Dasein has blind force. If the
+two balance at L4 under `η = 0`, the action is objective dharma in the
+framework's proper register: flow as lawful, non-extractive play rather than a
+private mood. `[S/I]`
 
 ### 2. The Ontological Archetype
 

@@ -162,6 +162,12 @@ directly (the only available lever):
 	        canon/the-complete-ontology-of-reality, and complete-ontology so D4
 	        means-to-act and D5 worldline-foresight are practical `P_node = Φ × V`
 	        factors, not replacements for the dimensional scaffold.
+	  - dasein/, papers/paper-vi-emergence-as-lens-on-dasein/
+	                                              : added the Soul Loop practice
+	        bridge for Dasein-as-reader: ontology, epistemology, methodology,
+	        axiology, and teleology cycle until finite-node action couples `Φ`
+	        as D5 worldline-foresight with `V` as D4 means-to-act, raising
+	        `P_node,i` and `P_node,H` together under `η = 0`.
   - memetic/                                    : normalized the Dasein game
         reading action test from stale `P_i` / `P_H` to `P_node,i` /
         `P_node,H`; later added the public memetics operational-language guard
