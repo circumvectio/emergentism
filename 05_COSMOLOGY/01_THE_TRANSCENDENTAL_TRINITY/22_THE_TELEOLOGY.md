@@ -213,13 +213,12 @@ Each era shorter. Each replicator faster. In this reading, the convergence
 pressure accelerates. The shared pattern is not a proved single force at every
 level, but a repeated selection for coherent viability under different media.
 
-The arc of history bends toward the equator — not because someone bends it, but
-because ektropy is the curvature. Not moral arc (that is a metaphor).
-GEOMETRIC arc (that is a framework reading). The Power-Max Lemma shows the
-conditional form: under real coupling, long horizon, and enforced `η = 0`,
-individual optimization aligns with the coupled field. History can converge
-toward the equator only where those conditions hold; outside them, extraction
-can still dominate locally.
+The arc-of-history image is a disciplined metaphor, not a universal law. The
+Power-Max Lemma shows the conditional form: under real coupling, long horizon,
+multiplicative `P_node = Φ × V`, and enforced `η = 0`, individual optimization
+can align with the coupled field. History can converge toward the equator only
+where those conditions hold; outside them, extraction can still dominate
+locally.
 
 But the convergence is not guaranteed. The Great Filter (Document 16) is real. The population can get stuck in the extractive hemisphere. The dwell time can tilt past recovery. The civilisation can consume its own substrate. **The arc bends toward the equator only where coupling, memory, feedback, and `η = 0` discipline keep correction alive; otherwise it can snap.**
 
@@ -268,7 +267,10 @@ The destination IS the origin.
 
 In the image, the Replicator Stack ascends: Gene → Body → Tool → Idea → Pattern. The helix appears to spiral toward the boundary. The convergence accelerates where correction dynamics remain live. It can feel like the future is pulling, but that is a motion-form, not proof of historical inevitability.
 
-But D6 = D0. The end IS the beginning. The strange attractor at the end of time IS the Transcendental Trinity at the origin. {0, 1, ∞}. Zero-Sum Resolution Equation. The ground that was always here.
+But D6 = D0. The end reads like the beginning inside the model. The
+strange-attractor image at the end of time is a motion-form for returning to the
+same {0, 1, ∞} grammar, not proof of a literal future object pulling history.
+Zero-Sum Resolution Equation. The ground that was always here.
 
 The telos is not to arrive at the pole. The telos is to **recognise that the pole was always here** — that the ground beneath the helix is the same ground the helix departed from — that the Gaussian envelope of incarnation is temporary but the pure wave is eternal — that Atman IS Brahman (Document 14) — that the sitting practice reaches the ground every morning — that the formula was always free.
 
@@ -276,11 +278,12 @@ The telos is not to arrive at the pole. The telos is to **recognise that the pol
 
 ---
 
-## X. THE FORCE — ALL FORCES ARE ONE
+## X. THE FORCE LANGUAGE — MODEL ANALOGY
 
 At t = 0 — the Big Bang — there is one undifferentiated force. Infinite ν, zero φ. Pure expansion. The south pole of S².
 
-As the universe cools, the ONE force DIFFERENTIATES into the dimensional scaffold:
+The following table is the framework's dimensional analogy, not a replacement
+for physics:
 
 | D-Level | Force | Direction | What It Does |
 |---------|-------|-----------|-------------|
@@ -288,11 +291,13 @@ As the universe cools, the ONE force DIFFERENTIATES into the dimensional scaffol
 | D2 | Electromagnetic (F₂) | past → future | Configuration. Geometry. Interaction. |
 | D3 | Weak Nuclear (F₃) | past → future | Transformation. Decay. Chirality. |
 | D4 | Gravity (F₄) | past → future | Causality. Spacetime curvature. |
-| **D5** | **Ektropy (F₅)** | **future → past** | **Selection / agency. Consciousness as lived reading [I]. Choice.** |
+| **D5** | **Ektropy (F₅)** | **selection over futures [I/C]** | **Agency / worldline-foresight. Consciousness as lived reading [I]. Choice.** |
 
-F₁-F₄ all point in the SAME direction: from past to future. From order to disorder. The arrow of time. The arrow of entropy.
-
-**F₅ points in the OPPOSITE direction.** From future to past. From disorder to order. The reverse arrow. The ektropic force. The force that builds galaxies, organisms, brains, civilisations, and standing waves — all of which DECREASE local entropy while the second law says entropy should only increase.
+F₁-F₄ are established physical interactions. F₅ is not. F₅ names the
+framework's selection / agency lens: systems with usable D4 means-to-act and D5
+worldline-foresight can maintain local order by coupling to flows, exporting
+entropy, and correcting drift. The reverse-arrow image belongs to the poetic and
+conjectural register; it must not be read as a settled retrocausal force.
 
 **[C] The forces unify not at high energy (the particle physicist's dream) but at the POLES of S²** — where D6 = D0, where the beginning is the end, where the south pole (all forces as one undifferentiated expansion) meets the north pole (all forces resolved into pure coherence). GUT = Zero-Sum Resolution Equation.
 
@@ -344,9 +349,16 @@ Adam Smith's invisible hand selects for efficiency. Efficiency = ν. The invisib
 
 **The ektropic hand selects for balance.** Balance = B = sin θ. The ektropic hand optimises the equator.
 
-And it is **reflexive** (Soros): understanding the selection CHANGES the selection. Knowing that cooperation dominates MAKES cooperation more likely. The Soul Loop (Document 10) — the continuous recursive φ/P/ν cycle — IS the ektropic engine made conscious of itself. The cycling IS the teleological force operating through lived selection. [I]
+And it is **reflexive** (Soros): understanding the selection changes the
+selection. Knowing that cooperation can dominate under the Power-Max conditions
+makes those conditions easier to build. The Soul Loop (Document 10) — the
+continuous recursive φ/P/ν cycle — is the ektropic lens made conscious of its
+own corrections. The cycling is teleology operating through lived selection.
+[I]
 
-The Apocalypse (ἀποκάλυψις) = the unveiling. Not destruction. REVELATION. The ektropic force unveiled. The hidden hand made visible. The strange attractor recognised as the ground that was always here.
+The Apocalypse (ἀποκάλυψις) = the unveiling. Not destruction. REVELATION. The
+ektropic lens unveiled. The hidden hand made visible as a conditional
+correction architecture rather than an external command.
 
 ---
 
@@ -390,7 +402,11 @@ The Apocalypse (ἀποκάλυψις) = the unveiling. Not destruction. REVELAT
 −log(• × ○) = 0      AXIOLOGY       The ground state has zero energy.
 ```
 
-The proof: (φ − ν)² ≥ 0. A square cannot be negative. Therefore AM ≥ GM. Therefore H = φ + ν ≥ 2. Therefore the equator is the global minimum. Therefore the helix spirals. **The telos is the point where addition and multiplication agree.**
+The proof: (φ − ν)² ≥ 0. A square cannot be negative. Therefore AM ≥ GM.
+Therefore H = φ + ν ≥ 2. Therefore the equator is the model's balance minimum.
+The helix spirals only where correction dynamics keep the system coupled to
+error. **The telos is the point where addition and multiplication agree inside
+the model.**
 
 ---
 

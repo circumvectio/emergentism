@@ -22,6 +22,23 @@ rosetta:
 
 **Must not do:** Call every future-motion good. Confuse local acceleration with alignment. Turn F5 into destiny, gatekeeping, or a literal settled physics claim.
 
+**Action-register bridge:** In the play rule `P_node = Φ × V`, `V` means D4
+means-to-act at the boundary: body, tools, energy, access, timing, control,
+hands, shovel, industrial digger. `Φ` means D5 worldline-foresight: the capacity
+to envision, rank, and operate reachable futures with those means. A child with
+a jet but no pilot-foresight and a pilot without bodily/tool access both show
+the zero-factor collapse. Viable completion is therefore not "more means" and
+not "more vision"; it is the balanced, non-extractive increase of usable
+finite-node potential.
+
+**Viable-completion boundary:** F5 names a framework-internal directional
+reading of selection toward viable completion where coupling, feedback, memory,
+and correction exist. It is not the Ground, not a fifth physical interaction,
+not a guarantee that every system converges, and not a license to extract in the
+name of a future good. World-level F5 claims remain `[C]`; operational
+teleology is the conditional rule: raise `P_node,i` while preserving or raising
+`P_node,H` under enforced `η = 0`.
+
 ---
 
 ## Rosetta Position

@@ -77,7 +77,13 @@ directly (the only available lever):
         inevitability.
   - trinity/22-the-teleology/                 : conditioned remaining arc/future-pull
         rhetoric on coupling, memory, feedback, and `η = 0` correction dynamics;
-        mirrored D4 usable-means / D5 worldline-foresight viability gloss.
+        mirrored D4 usable-means / D5 worldline-foresight viability gloss; later
+        downgraded literal force / reverse-arrow / "therefore helix spirals"
+        language to model analogy and conditional correction dynamics.
+  - teleology/                                : normalized the L1 public route so
+        F5 is conditional selection toward viable completion under coupling,
+        feedback, correction, and `η = 0`; disambiguated finite-node `V`
+        from sphere-coordinate `ν`.
   - trinity/10-the-soul-loop/                 : restored the public Goal / Ω framing
         in the Game Form and mirrored the D4 means / D5 worldline-foresight
         zero-factor examples while the source bundle is absent.
