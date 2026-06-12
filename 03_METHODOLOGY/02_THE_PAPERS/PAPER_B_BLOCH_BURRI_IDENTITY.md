@@ -128,13 +128,19 @@ $$|\psi_{\text{eq}}\rangle = \frac{1}{\sqrt{2}}(|0\rangle + e^{i\phi}|1\rangle)$
 
 These are the states of **maximum superposition**: equal probability of |0⟩ and |1⟩. |α|² = |β|² = 1/2. **[A]**
 
-The equatorial states are the most "quantum" states — they have maximum quantum coherence, maximum uncertainty about the measurement outcome, and maximum entanglement capacity. They are the resource that makes quantum computing powerful. A qubit stuck at a pole is a classical bit; a qubit at the equator is the quantum advantage. **[A]**
+Relative to the computational basis, equatorial pure states have maximum
+superposition balance and maximum measurement uncertainty: `|α|² = |β|² =
+1/2`. They are phase-sensitive resources in many quantum-information
+protocols. A pole state behaves as a classical bit in that basis; an equatorial
+state is a coherence resource, not by itself a proof of "quantum advantage" in
+every algorithm. **[A]** for the basis-relative coherence and uncertainty;
+**[I]** for the Burri reading of why that locus matters.
 
 ### 3.2 The Equator of the Burri Sphere
 
 On the Burri sphere, the equator is the locus φ = ν = 1, where the balance function B = sin(θ) achieves its maximum B = 1. **[A]**
 
-The equatorial state is the state of maximum balance between coherence and viability. It is the unique dominant strategy equilibrium of the balance game (Power-Max Lemma [Burri 2026, Demonstration 22]). It is the attractor toward which systems return when displacement forces are removed. **[S]**
+The equatorial state is the state of maximum balance between coherence and viability. Inside the deliberately narrow balance-only game of EFR 22, where payoff is restricted to `B` or a convex average of `B`, the equatorial profile is the unique strictly dominant strategy equilibrium. That result does **not** prove a general attractor theorem for real systems: outside the balance-only register, extraction, side-payments, weak enforcement, and asymmetric information can dominate unless constitutional constraints restore coupling. **[S]** for the internal balance-game result; **[I/C]** for any wider return-attractor reading.
 
 ### 3.3 The Identity
 
@@ -142,9 +148,9 @@ The equatorial state is the state of maximum balance between coherence and viabi
 
 *Proof.* Both are the set {p ∈ S² : θ(p) = π/2}. ∎
 
-**Corollary 3.2 (Quantum coherence and balance share a locus) [S].** Maximum equatorial superposition in the qubit representation and maximum balance in the Emergentist reading occupy the same geometric condition: `θ = π/2` on `S²`.
+**Corollary 3.2 (Quantum coherence and balance share a locus) [S/I].** Maximum equatorial superposition in the qubit representation and maximum balance in the Emergentist reading occupy the same geometric condition: `θ = π/2` on `S²`. The shared locus is established; the coherence/viability interpretation remains the framework's reading.
 
-**Interpretation 3.3 [I].** The quantum computing community has independently discovered that the equator is where the power is. The framework identifies WHY: the equator maximizes B = sin(θ), which is the payoff function whose dominant strategy equilibrium is at θ = π/2. Quantum supremacy is equatorial operation. The quantum advantage is the balance advantage.
+**Interpretation 3.3 [I].** The quantum-information register gives the framework a disciplined analogy: the same equatorial locus that maximizes basis-relative superposition on the Bloch sphere also maximizes `B = sin(θ)` in the Burri reading. The framework may read this as a "balance advantage" only as interpretation. It must not be cited as a proof that quantum supremacy, social cooperation, or general agency are all explained by the balance-game payoff.
 
 ---
 
