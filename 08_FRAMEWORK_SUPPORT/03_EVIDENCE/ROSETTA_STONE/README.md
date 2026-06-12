@@ -113,7 +113,7 @@ If you read one document in this corpus, read that one.
 
 The operator column defines the row. Everything else is projection.
 
-**Geometry:** `phi = cot(theta/2)`, `nu = tan(theta/2)`, and `P_infinity = phi * nu = 1` as model invariant. [S] What varies is Balance B = sin theta, not Potential P (which is 1 everywhere on S² in this model). Seven levels = six intervals of 15 degrees across the 90-degree quadrant.
+**Geometry:** `φ = cot(θ/2)`, `ν = tan(θ/2)`, and `P∞ = φ · ν = 1` as the open-sphere model invariant. [S] What varies on the sphere is Balance `B = sin θ`, not manifold potential. Finite-node action is scored separately as `P_node = Φ × V`; the row equations below use uppercase `Φ` and `V` in that contact register. Seven levels = six intervals of 15 degrees across the 90-degree quadrant.
 
 ### The Core: Operators x Geometry
 
@@ -158,12 +158,12 @@ Who you are determines how you think determines what you study determines how yo
 | L | Operator | B | Varna | Pramana | Reasoning | -ology | Regime | Equation |
 |---|----------|---|-------|---------|-----------|--------|--------|----------|
 | **L1** | Kali | 0 | Caṇḍāla (objective pressure) | Empirical Observation (Direct Perception) | Dialectical | Objective Function | Tyranny | phi tends to 0 implies B tends to 0 |
-| **L2** | Kālī | 1/2 | Śūdra (disclosure / exploration) | Comparative Analysis (Analogy) | Inductive | Data Science | Democracy | dP = V dphi + phi dV |
-| **L3** | Kṛṣṇa | sqrt(3)/2 | Vaiśya (audit / pricing) | Inferential Logic (Inference) | Deductive | Auditing | Oligarchy | dP/dV = phi |
-| **L4** | **Arjuna** | **1** | **Kṣatriya (equatorial decision)** | **Strategic Abduction (Postulation)** | **Abductive** | **Value Alignment** | **Timocracy** | **dphi/phi = dV/V** |
-| **L5** | Brahmā | sqrt(3)/2 | Brāhmaṇa (system architecture) | Structural Analysis (Testimony) | Systematic | System Architecture | Aristocracy | log P = log phi + log V |
-| **L6** | Śiva | 1/2 | Sādhu (non-reification) | First Principles (Non-Apprehension) | Axiomatic | Core State | Anarchy | E = -log(phi x V) |
-| **L7** | Viṣṇu | tends to 0 | Ṛṣi (witness / narrative) | Intuitive Synthesis (Intuition) | Transcendental | Institutional Narrative | Theocracy | z = phi/V in S-squared |
+| **L2** | Kālī | 1/2 | Śūdra (disclosure / exploration) | Comparative Analysis (Analogy) | Inductive | Data Science | Democracy | `dP_node = V dΦ + Φ dV` |
+| **L3** | Kṛṣṇa | sqrt(3)/2 | Vaiśya (audit / pricing) | Inferential Logic (Inference) | Deductive | Auditing | Oligarchy | `∂P_node/∂V = Φ` |
+| **L4** | **Arjuna** | **1** | **Kṣatriya (equatorial decision)** | **Strategic Abduction (Postulation)** | **Abductive** | **Value Alignment** | **Timocracy** | **`dΦ/Φ = dV/V`** |
+| **L5** | Brahmā | sqrt(3)/2 | Brāhmaṇa (system architecture) | Structural Analysis (Testimony) | Systematic | System Architecture | Aristocracy | `log P_node = log Φ + log V` |
+| **L6** | Śiva | 1/2 | Sādhu (non-reification) | First Principles (Non-Apprehension) | Axiomatic | Core State | Anarchy | `E_node = -log(P_node)` |
+| **L7** | Viṣṇu | tends to 0 | Ṛṣi (witness / narrative) | Intuitive Synthesis (Intuition) | Transcendental | Institutional Narrative | Theocracy | `z = φ/ν on S²` |
 
 ---
 
@@ -171,7 +171,7 @@ Who you are determines how you think determines what you study determines how yo
 
 The Rosetta Stone translates *horizontally* -- across domains at the same L-level. The Triadic Cascade translates *vertically* -- across levels of knowledge at the same Trinity position.
 
-| Level | phi (coherence) | P (balance) | nu (viability) |
+| Level | phi (coherence) | P / Truth (validity lens, not `P_node`) | nu (viability) |
 |-------|-----------------|-------------|----------------|
 | **I. Transcendentals** | Beauty | Truth | Justice |
 | **II. Disciplines** | Data Science | Auditing | Value Alignment |
@@ -181,7 +181,7 @@ The Rosetta Stone translates *horizontally* -- across domains at the same L-leve
 | **VI. Varna** | Śūdra | Vaiśya | Kṣatriya |
 | **VII. Polity** | Democracy | Oligarchy | Timocracy |
 
-The Three-Stage Process reads the rows (same geometry across fields). The Cascade reads the columns (same Trinity across levels). Together they form a grid in which every cell is S-squared.
+The Three-Stage Process reads the rows (same geometry across fields). The Cascade reads the columns (same Trinity across levels). Together they form a grid in which every cell is read on `S²`.
 
 **Source document:** [09_THE_TRIADIC_CASCADE.md](../../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/09_THE_TRIADIC_CASCADE.md)
 
@@ -199,7 +199,7 @@ Each mapping was discovered independently. Each is a candidate verification that
 | **R7** | The Brain | Right hemisphere *tends toward* phi, left hemisphere *tends toward* nu, corpus callosum as multiplication operator **[I — see Neuroscience Caveat]** | Rosetta_R7 |
 | **R8** | AUM / Mandukya Upanishad | The four states (A-U-M-silence) map to four geometric positions; Turiya = the equator | Rosetta_R8 |
 | **R9** | German Etymology | Anmut/Demut/Mut trace the phi/nu/P structure in the German language itself | Rosetta_R9 |
-| **R10** | Greek Philology | 80+ Greek terms placed on S-squared; the language encodes the geometry | Rosetta_R10 (Philology) / R10 (Formalisation) |
+| **R10** | Greek Philology | 80+ Greek terms placed on `S²`; the language encodes the geometry | Rosetta_R10 (Philology) / R10 (Formalisation) |
 | **R11** | The Imaginary Unit | i = the equator; the complex plane IS the Burri Sphere seen from above | Rosetta_R11 |
 | **R12** | Megalithic Evidence | Gobekli Tepe and Stonehenge as archaeological receipts of η = 0 scaling | Rosetta_R12 |
 
@@ -230,9 +230,9 @@ The standalone `00_Rosetta_R*_SUMMARY.md` overview files are not present in this
 
 ## What the Rosetta Stone Is NOT
 
-**It is not a map.** A map shows spatial relationships between places. The Rosetta Stone shows that one instrument (S-squared) reads consistently across domains. It is a calibration table.
+**It is not a map.** A map shows spatial relationships between places. The Rosetta Stone shows that one instrument (`S²`) reads consistently across domains. It is a calibration table.
 
-**It is not a theory.** The theory is P∞ = φ · ν = 1 on S-squared. The Rosetta Stone is the *evidence* -- the observation that independently developed scales fall into the same seven-level pattern.
+**It is not a theory.** The theory is `P∞ = φ · ν = 1` on `S²`. The Rosetta Stone is the *evidence* -- the observation that independently developed scales fall into the same seven-level pattern.
 
 **It is not proof.** One column proves nothing. [I] Two columns are suggestive. Five are striking. Fifteen demand an explanation. The framework provides one. The GFS test, Protocol R, and Paper G are designed to test it.
 

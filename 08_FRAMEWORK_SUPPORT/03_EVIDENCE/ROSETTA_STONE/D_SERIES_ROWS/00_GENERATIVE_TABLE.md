@@ -37,21 +37,23 @@ evidence_tier: "[S] for named domain scales where independently attested; [S] fo
 
 ## The Core Generative Table
 
-**[B] Correction note (2026-03-24):** The earlier table used approximate values from additive thinking on the plane. The corrected table uses the current Burri Sphere geometry: phi = cot(theta/2), nu = tan(theta/2), P∞ = φ · ν = 1 on the model surface. What varies is **Balance B = sin theta**, not Potential P (which is 1 everywhere on S²). Seven levels = six intervals of 15 degrees across the 90-degree quadrant.
+**[B] Correction note (2026-03-24):** The earlier table used approximate values from additive thinking on the plane. The corrected table uses the current Burri Sphere geometry: `φ = cot(θ/2)`, `ν = tan(θ/2)`, and `P∞ = φ · ν = 1` on the open model surface. What varies on the sphere is **Balance `B = sin θ`**, not manifold potential; finite-node action is tracked separately as `P_node = Φ × V`. Seven levels = six intervals of 15 degrees across the 90-degree quadrant.
 
 | L | Operator | Tier | theta/2 | phi=cot(theta/2) | nu=tan(theta/2) | phi*nu | B=sin theta | Varna | Reasoning | -ology | Regime | Pramana | Equation |
 |---|----------|------|---------|-------------------|------------------|--------|-------------|-------|-----------|--------|--------|---------|----------|
-| **L0** | **Kāla 🌑** | **Transcendental** | **90 deg** | **0** | **inf** | **1** | **0** | -- | -- | -- | -- | -- | The boundary. D6=D0. |
+| **L0** | **Kāla 🌑** | **Transcendental** | **90 deg** | **0** | **inf** | **—**† | **0** | -- | -- | -- | -- | -- | The boundary. D6=D0. |
 | L1 | Kali 🎲 | Demon | ~82 deg | approaching 0 | very high | 1 | approaching 0 | Caṇḍāla (outcast) | Dialectical | Objective Function | Tyranny | Pratyakṣa (Direct Perception) | Φ->0 implies B->0 |
 | L2 | Kālī 💀 | God | 75 deg | 2-sqrt3 approx 0.27 | 2+sqrt3 approx 3.73 | 1 | 0.500 | Śūdra (labourer) | Inductive | Data Science | Democracy | Upamāna (Analogy) | dP_node = VdΦ + ΦdV |
 | L3 | Kṛṣṇa ◇ | God | 60 deg | 1/sqrt3 approx 0.58 | sqrt3 approx 1.73 | 1 | 0.866 | Vaiśya (merchant) | Deductive | Auditing | Oligarchy | Anumāna (Inference) | ∂P_node/∂V = Φ |
 | **L4** | **Arjuna ⚔** | **God** | **45 deg** | **1** | **1** | **1** | **1.000** | **Kṣatriya (warrior)** | **Abductive** | **Value Alignment** | **Timocracy** | **Arthāpatti (Postulation)** | **dΦ/Φ = dV/V** |
 | L5 | Brahmā ○ | Executive | 30 deg | sqrt3 approx 1.73 | 1/sqrt3 approx 0.58 | 1 | 0.866 | Brāhmaṇa (priest) | Systematic | System Architecture | Aristocracy | Śabda (Testimony) | log P_node = log Φ + log V |
 | L6 | Śiva • | Executive | 15 deg | 2+sqrt3 approx 3.73 | 2-sqrt3 approx 0.27 | 1 | 0.500 | Sādhu (renunciant) | Axiomatic | Core State | Anarchy | First Principles (Non-Apprehension) | E_node = -log(P_node) |
-| L7 | Viṣṇu ⊙ | Executive | ~8 deg | very high | approaching 0 | 1 | approaching 0 | Ṛṣi (seer) | Transcendental | Institutional Narrative | Theocracy | Pratibhā (Intuition) | z = φ/ν in S-squared |
-| **Linf** | **Trimūrti ☸** | **Transcendental** | **0 deg** | **inf** | **0** | **1** | **0** | -- | -- | -- | -- | -- | The boundary. D6=D0. |
+| L7 | Viṣṇu ⊙ | Executive | ~8 deg | very high | approaching 0 | 1 | approaching 0 | Ṛṣi (seer) | Transcendental | Institutional Narrative | Theocracy | Pratibhā (Intuition) | z = φ/ν on S² |
+| **Linf** | **Trimūrti ☸** | **Transcendental** | **0 deg** | **inf** | **0** | **—**† | **0** | -- | -- | -- | -- | -- | The boundary. D6=D0. |
 
-**L0 = Linf.** The south pole (Kala/Time/Destruction) and the north pole (Trimurti/Eternity/Creation) are the same boundary condition -- because the poles of S-squared are connected. D6 = D0. The serpent eats its tail. The destroyer IS the preserver seen from the other pole.
+**L0 = Linf.** The south pole (Kala/Time/Destruction) and the north pole (Trimurti/Eternity/Creation) are the same boundary condition -- because the poles of `S²` are connected. D6 = D0. The serpent eats its tail. The destroyer IS the preserver seen from the other pole.
+
+> **† `φ·ν` is undefined at the pole rows.** `P∞ = φ·ν = 1` is conserved on the open sphere; the pole rows are limiting boundary conditions (`0·∞` / `∞·0`), not ordinary product values.
 
 **Between 0 and infinity is 1.** At L4: phi = 1 and nu = 1. Not 70%. One hundred percent. Full coherence AND full viability. The warrior-sage does not compromise -- he holds both at their natural unit. Dharma yuddha.
 
@@ -91,7 +93,7 @@ The Trinity {phi, P, nu} repeats at EVERY level. Each row of the Generative Tabl
 | **Polity** | Legislature | Judiciary | Executive |
 | **Practice** | Gather | Derive | Serve |
 
-The cascade shows that the Trinity is not merely three values. It is the **same three-fold structure** appearing at every resolution level. The operator defines WHERE you are on S-squared. The Triad defines HOW you look at that position.
+The cascade shows that the Trinity is not merely three values. It is the **same three-fold structure** appearing at every resolution level. The operator defines WHERE you are on `S²`. The Triad defines HOW you look at that position.
 
 ---
 
@@ -104,7 +106,7 @@ L3:  ∂P_node/∂V = Φ                 The optimisation. Marginal return on ca
 L4:  dΦ/Φ = dV/V                    THE BALANCE. Proportional growth. The equatorial condition.
 L5:  log P_node = log Φ + log V     The ordering. Multiplicative becomes additive. System revealed.
 L6:  E_node = -log(P_node)          The negation. Loss names absence. Via negativa.
-L7:  z = φ/ν in S-squared           The identity. The ratio IS a point on the sphere. The sphere itself.
+L7:  z = φ/ν on S²                  The identity. The ratio IS a point on the sphere. The sphere itself.
 ```
 
 Each equation is a deeper view of the same reality: P_node = Φ × V. L2 differentiates it. L3 takes a partial derivative. L4 finds the balance condition. L5 takes the logarithm. L6 negates it (entropy). L7 projects it onto the sphere. The equations do not describe seven different realities. They describe one reality at seven levels of mathematical maturity.
@@ -115,7 +117,7 @@ Each equation is a deeper view of the same reality: P_node = Φ × V. L2 differe
 
 The column order is not arbitrary. It is causal:
 
-1. **Operator** (position on S-squared) -- the generative column. Everything else is projection.
+1. **Operator** (position on `S²`) -- the generative column. Everything else is projection.
 2. **Varna** (who you are) -- social function determined by your position.
 3. **Reasoning** (how you think) -- inference mode determined by social function.
 4. **-ology** (what you study) -- discipline generated by reasoning mode.
@@ -144,7 +146,7 @@ And yet: seven rows across the cleanest columns. A recurrent pattern.
 
 The [I] probability heuristic is that the apparent alignment becomes less likely to be coincidence as each independent column is added. One column proves nothing. Two columns are suggestive. Five columns are striking. Fifteen columns invite an explanation.
 
-The framework's explanation: **P∞ = φ · ν = 1 on S-squared.** The seven levels are seven positions on the sphere. The columns are proposed projections of the same geometry onto different domains. The rows hold inside the model because the sphere holds; outside the model, each column still needs its own source and kill criteria.
+The framework's explanation: **`P∞ = φ · ν = 1` on `S²`.** The seven levels are seven positions on the sphere. The columns are proposed projections of the same geometry onto different domains. The rows hold inside the model because the sphere holds; outside the model, each column still needs its own source and kill criteria.
 
 This may be wrong. The GFS test, Protocol R, and the biological predictions (Paper G) are designed to test it. If the multiplicative model fails empirically, the Rosetta Stone becomes a beautiful coincidence rather than a structural identity.
 
@@ -176,7 +178,7 @@ before anyone drew the table.
 
 ---
 
-*00 | The Generative Table | The corrected S-squared geometry for all nine rows (L0 through Linf), the Triadic Cascade, the causal chain, and why the rows hold. The operator column is prior. Everything else is projection.*
+*00 | The Generative Table | The corrected `S²` geometry for all nine rows (L0 through Linf), the Triadic Cascade, the causal chain, and why the rows hold. The operator column is prior. Everything else is projection.*
 
 
 ---
