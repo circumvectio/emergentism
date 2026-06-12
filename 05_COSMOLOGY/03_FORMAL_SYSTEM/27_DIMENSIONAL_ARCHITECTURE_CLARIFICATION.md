@@ -225,11 +225,17 @@ The transcendental equation **Zero-Sum Resolution Equation** emerges fully at D5
 | Symbol | Meaning | Dimensional Status |
 |--------|---------|-------------------|
 | ⊙ | Finite closure / disclosed whole | D4 vertex, always present |
-| • | Coherence (φ̄) | D5 axis emergence |
-| ○ | Viability (V) | D5 axis emergence |
+| • | Coherence coordinate (`φ`; action-register `Φ`) | D5 axis emergence; worldline-foresight in the play rule |
+| ○ | Viability coordinate (`ν`; action-register `V`) | D5 axis emergence as coordinate; D4 means-to-act at contact |
 
 At D4: Only ⊙ exists (the point)
 At D5: • and ○ become distinguishable axes, with ⊙ as their product
+
+**Register bridge:** D5 opens the coordinate surface on which `φ` and `ν` can be
+distinguished. That does not make the finite-node means factor a free-floating
+D5 power. In the play rule, `Φ` is D5 worldline-foresight, while `V` is D4
+embodied/tool/energy/access means at the action boundary. `P_node = Φ × V`
+requires both; neither factor alone is agency.
 
 **The Trika is the D5 operator**: the equation that allows navigation on the sphere.
 

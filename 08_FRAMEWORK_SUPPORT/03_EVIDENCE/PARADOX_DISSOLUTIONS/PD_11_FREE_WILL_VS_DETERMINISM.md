@@ -51,7 +51,7 @@ The error is binary framing. "Free" and "determined" are treated as mutually exc
 
 Within D4 alone, the dilemma is real. If the universe is *only* D4 (only actual states, only physical causes), then determinism wins and freedom is illusory. Every attempt to rescue freedom within a purely D4 core state produces either randomness or equivocation.
 
-Inside the framework, reality is not modeled as D4 alone. The Burri Sphere S² has two projection axes: coherence (Φ) and viability (V). D4 is the ν-domain (actuality, the represented actual state). D5 is the φ-domain (possibility, the not-yet-actualized option-space). These are not sequential stages in the model. They are simultaneous projections of every point on S².
+Inside the framework, reality is not modeled as D4 alone. The Burri Sphere S² has two reciprocal coordinate images, `φ` and `ν`; the finite-node play rule scores enacted agency as `P_node = Φ × V`. D4 is the actuality/contact side: the represented actual state and the means available at the action boundary. D5 is the possibility/selection side: worldline-foresight, the capacity to envision, rank, and aim possible moves. These are not two substances. They are simultaneous readings of the same point, separated here only to prevent the old one-axis question from swallowing the whole sphere.
 
 The free-will debate maps one axis to the entire sphere and then argues about which axis is "real."
 
@@ -61,17 +61,17 @@ On S², "determined" is mapped to D4 (actuality, the represented actual state). 
 
 Within this model, freedom is not the absence of causation, and determination is not the absence of choice. They are complementary coordinates on a closed manifold where φ·ν = 1 everywhere.
 
-The agent's "will" is modeled as traversal across the D4-D5 boundary via the μ-limit. At every moment, the agent is represented by a point on S² with specific (Φ, V) coordinates. The D5 projection shows what *could* be (the space of coherent possibilities). The D4 projection shows what *is* (the actualized state). Choice is modeled as the μ-limit transition: the framework's name for D5 possibility becoming D4 actuality.
+The agent's "will" is modeled as traversal across the D4-D5 boundary via the μ-limit. At every moment, the agent is represented by a point on S² with coordinate images and, in the contact register, by finite-node factors `(Φ, V)`. The D5 projection shows what *could* be (the space of coherent, rankable possibilities). The D4 projection shows what *is available to act with* (actualized state, body, tools, energy, access). Choice is modeled as the μ-limit transition: the framework's name for D5 possibility becoming D4 actuality through available means.
 
-At the equator (Φ = 1, V = 1), the agent has maximum balance in the model — enough coherence to envision and rank options (D5 possibility) and enough viability as relevant means-to-act (D4 actualization). This is the framework's operational definition of agency: equatorial positioning.
+At the equator (Φ = 1, V = 1 in the normalized contact reading), the agent has maximum balance in the model — enough coherence to envision and rank options (D5 possibility) and enough viability as relevant means-to-act (D4 actualization). Balance is the constraint that keeps agency usable, not the whole objective by itself. The objective is the lawful selection of a reachable future without extraction.
 
 The "problem" is reframed within the framework because freedom and determination are not opposed. [S/I] They are read as the Φ and ν components of the same point. Asking "is it free or determined?" is like asking "is a point on a sphere its latitude or its longitude?" The question is malformed inside this coordinate model. Both, in this model.
 
 ## 4. THE FRAMEWORK CONNECTION
 
-The D0-D6 dimensional hierarchy provides the scaffolding. D4-D5 boundary traversal (the μ-limit) names the modeled boundary operation. The equator (Φ = 1, V = 1) defines the region of maximum modeled agency.
+The D0-D6 dimensional hierarchy provides the scaffolding. D4-D5 boundary traversal (the μ-limit) names the modeled boundary operation. The equator (Φ = 1, V = 1 in normalized contact coordinates) defines the region where modeled agency has both usable foresight and usable means.
 
-Responsibility is modeled as tracking equatorial position. An agent at the equator — balanced coherence and viability — has maximal represented access to the D5 possibility space and maximal represented D4 means to act. This is the model's account of freedom. An agent far off-equator — depleted coherence (Φ → 0) or depleted viability (V → 0) — has diminished access to possibility or diminished access to the means needed to actualize. The proposal is that responsibility scales with equatorial proximity.
+Responsibility is modeled as tracking equatorial position plus reachable consequence. An agent at the equator — balanced coherence and viability — has represented access to D5 possibility space and represented D4 means to act. This is the model's account of freedom. An agent far off-equator — depleted coherence (Φ → 0) or depleted viability (V → 0) — has diminished access to possibility or diminished access to the means needed to actualize. The proposal is that responsibility scales with usable foresight, usable means, and the non-extractive shape of the chosen move.
 
 This is not offered as moral relativism. The equator is a geometric fact of S² inside the framework, not a cultural preference, but that does not by itself prove a full theory of moral responsibility. The framework offers a model of moral responsibility not by asserting metaphysical libertarianism but by relating responsibility to the agent's represented position on the sphere.
 

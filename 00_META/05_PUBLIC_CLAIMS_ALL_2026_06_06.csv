@@ -653,8 +653,9 @@ atlas/index.html,27704,atlas/index.html#12,"Emergentism · Canon Atlas
 5/index.html,10836,5/index.html#16,The Nash Equilibrium at the Equator,UNSOURCED,UNSOURCED,NO,,YES,NO,no-tier-no-anchor
 5/index.html,10836,5/index.html#17,"In game-space language, the Burrisphere is not just a manifold — it is a game
           board. The two stereographic projections trade viability (ν) and coherence (φ).
-          Every agent on the sphere is playing the same game: maximise balance, maintain
-          equilibrium, navigate toward the equator.",UNSOURCED,UNSOURCED,NO,,YES,YES,no-tier-no-anchor
+          Every agent on the sphere is playing the same constrained game: widen reachable
+          potential while maintaining η = 0 and staying close enough to the equator for
+          foresight and means to remain mutually usable.",UNSOURCED,UNSOURCED,NO,,YES,YES,no-tier-no-anchor
 5/index.html,10836,5/index.html#18,The extraction coefficient η measures whether a system is extracting from the other or being extracted from.,UNSOURCED,UNSOURCED,NO,,YES,YES,no-tier-no-anchor
 5/index.html,10836,5/index.html#19,"At the equator, η = 0: neither side gains at the other's expense.",UNSOURCED,UNSOURCED,NO,,YES,YES,no-tier-no-anchor
 5/index.html,10836,5/index.html#20,This is the game-theoretic Nash equilibrium of iterated cooperation — the condition where no player can improve their position by unilaterally changing strategy.,UNSOURCED,UNSOURCED,NO,,YES,NO,no-tier-no-anchor
