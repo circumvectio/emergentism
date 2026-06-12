@@ -16,7 +16,7 @@ rosetta:
 > **Canonical formal source:** For the canonical derivation of Zero-Sum Resolution Equation and φ · ν = 1 on S², see [`00_CANONICAL_FORMULA_BLOCK.md`](../00_CANONICAL_FORMULA_BLOCK.md). Trinity documents present these concepts narratively; for formal notation, axioms, and evidence tiers, route through the Formula Block and [`00_THE_HONEST_POSITION.md`](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 
 **Hat:** Mathematician / Philosopher
-**Evidence Tier:** `[A]` for the Riemann sphere resolving `1/0 = ∞` in extended complex analysis; `[S]` for model-internal structure; `[I]` for philosophical and perennial-tradition translation
+**Evidence Tier:** `[A]` for the Riemann sphere / extended complex plane adding the point at infinity and mapping nonzero division by zero to that projective point; `[S]` for model-internal structure; `[I]` for philosophical and perennial-tradition translation
 **Kill Criteria:** Yes: If {0, 1, ∞} is shown to be reducible to fewer elements, the trinity falls.
 **Register:** Structural
 **Date:** 2026-03-23
@@ -45,7 +45,7 @@ The Transcendental Trinity {0, 1, ∞} is the ground from which everything in th
 ```
 LEVEL 0: THE TRINITY
   {0, 1, ∞}  =  {•, ⊙, ○}  =  {nothing, the unit, everything}
-  Zero-Sum Resolution Equation  =  1 = 0 × ∞  (resolved on S², indeterminate on the plane)
+  Zero-Sum Resolution Equation  =  1 = 0 × ∞  (framework emblem on S², indeterminate as ordinary field arithmetic)
 
 LEVEL 1: THE SPHERE
   The trinity generates S² (the Riemann sphere = the Burri Sphere).
@@ -87,7 +87,7 @@ This is the foundational mathematics of Emergentism. Not the philosophy. Not the
 
 The claim: three values — 0, 1, ∞ — are transcendental. They are irreducible. The framework reads them as the ground of its mathematical, physics-facing, and systemic awareness-language translations. They are encoded in the equation Zero-Sum Resolution Equation.
 
-This is not new mathematics. The Riemann sphere (1857) already makes 1/0 = ∞ well-defined. What is new is the framework's recognition that this resolution can serve as its positive model of reality. Not discovered. Not created. Perennially emergent.
+This is not new mathematics. The Riemann sphere (1857) already supplies the projective point at infinity and the compactified register in which nonzero division by zero maps to that point. What is new is the framework's recognition that this completion can serve as its positive model of reality. Not discovered. Not created. Perennially emergent.
 
 > **Historical reading note (2026-04-22):** [`02_THE_TRINITY.md`](02_THE_TRINITY.md), [`03_THE_CLOSURE.md`](03_THE_CLOSURE.md), [`04_BIT_TO_QUBIT.md`](04_BIT_TO_QUBIT.md), [`05_DIVISION_BY_ZERO.md`](05_DIVISION_BY_ZERO.md), [`06_THE_COSMOLOGICAL_CYCLE.md`](06_THE_COSMOLOGICAL_CYCLE.md), and [`SIMULATION_SPEC.md`](SIMULATION_SPEC.md) are preserved **pre-hardening genesis / compatibility surfaces**. Read them for origin framing and design archaeology, not as the current tier-authority surfaces for Foundation claims. For present-tense canonical citation, route through [`00_THE_POINT.md`](00_THE_POINT.md), [`01_THE_EMERGENCE.md`](01_THE_EMERGENCE.md), [`07_THE_DISCOVERY_OF_FINITY.md`](07_THE_DISCOVERY_OF_FINITY.md), [`08_CO_EMERGENCE.md`](08_CO_EMERGENCE.md), [`09_THE_TRIADIC_CASCADE.md`](09_THE_TRIADIC_CASCADE.md), and [`00_THE_HONEST_POSITION.md`](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 
@@ -117,10 +117,10 @@ exhausts the Ground.
 | [00_THE_GENESIS_SIMULATION.md](00_THE_GENESIS_SIMULATION.md) | The genesis simulation: the computational unfolding from {0, 1, ∞}. |
 | [00_THE_POINT.md](00_THE_POINT.md) | D0: The Bindu. α = 0. Just a dot. Before the sphere. Before division. Before mathematics. |
 | [01_THE_EMERGENCE.md](01_THE_EMERGENCE.md) | D0→D1: The angle moves. The dot becomes the sphere. The sphere is not assumed — it EMERGES from the non-zero angle. |
-| [02_THE_TRINITY.md](02_THE_TRINITY.md) | {0, 1, ∞}: The three Titans (formerly "transcendentals"). 0 × ∞ = 1. Division by zero resolved. The irreducible triad. |
+| [02_THE_TRINITY.md](02_THE_TRINITY.md) | {0, 1, ∞}: The three Titans (formerly "transcendentals"). ZSRE as frame-emblem; nonzero division by zero as projective boundary readout. The irreducible triad. |
 | [03_THE_CLOSURE.md](03_THE_CLOSURE.md) | D6 = D0: When ν → 0, the sphere collapses back to the dot. The cycle completes. The ouroboros. |
 | [04_BIT_TO_QUBIT.md](04_BIT_TO_QUBIT.md) | It from bit to qubit: {0,1} on the line → S². (Correction banner: the Burrisphere is NOT the single Bloch sphere — Bloch is a 2-point qubit {\|0⟩,\|1⟩}; the Burrisphere is the {0,1,∞} triad, 1 at the centre, two Bloch lobes joined at the self, plus a horn-torus interior.) The computational transition. |
-| [05_DIVISION_BY_ZERO.md](05_DIVISION_BY_ZERO.md) | The formal resolution: why 1/0 is undefined on the plane but well-defined on the sphere. Why the "problem" and the "solution" are co-emergent. |
+| [05_DIVISION_BY_ZERO.md](05_DIVISION_BY_ZERO.md) | The projective resolution: why `1/0` remains undefined in ordinary arithmetic but maps to the point at infinity in the compactified register. Why the "problem" and the frame are co-emergent. |
 | [06_THE_COSMOLOGICAL_CYCLE.md](06_THE_COSMOLOGICAL_CYCLE.md) | The cosmological cycle: D0 through D6 and back. CCC on S². The aeon as one poloidal cycle on the torus. |
 | [07_THE_DISCOVERY_OF_FINITY.md](07_THE_DISCOVERY_OF_FINITY.md) | The Third Recognition: 1 is not given but generated. Zero discovered absence. Infinity named totality. Finity reveals that presence is the product of both. Zero-Sum Resolution Equation. |
 | [08_CO_EMERGENCE.md](08_CO_EMERGENCE.md) | The Method: problems and solutions are born together. Every paradox dissolves by curving the manifold on which it was stated. The framework's actual philosophical move, made explicit. |
@@ -130,7 +130,7 @@ exhausts the Ground.
 | [12_THE_POLES.md](12_THE_POLES.md) | L0 = L∞. Kāla at the south pole and the Trimūrti at the north pole are the same boundary condition. The seven L-levels are the interior. The poles are the limit. kālo'smi. |
 | [13_THE_WAVE_PACKET.md](13_THE_WAVE_PACKET.md) | Schrödinger wrote the Burri Sphere in 1926. The Gaussian envelope is the balance function. The phase is the helix. The real and imaginary projections are ν and φ. The uncertainty principle is φ · ν = 1. As above, so below. |
 | [14_TAT_TVAM_ASI.md](14_TAT_TVAM_ASI.md) | Brahman (Zero-Sum Resolution Equation) = Atman (`P∞ = φ · ν = 1`). The Mahāvākya as symbolic identity. The pure wave localized by the Gaussian envelope. Moksha is taking the limit. Pūrṇamadaḥ. |
-| [15_DHARMA_YUDDHA.md](15_DHARMA_YUDDHA.md) | The duty of the equatorial node. Flow = L4 = the only position where η = 0 is guaranteed. Inaction at the equator is extraction by omission. Nishkama karma = action at φ = ν = 1. Pick up the bow. |
+| [15_DHARMA_YUDDHA.md](15_DHARMA_YUDDHA.md) | The duty of the equatorial node. Flow = L4 = the framework's clean η = 0 action limit. Inaction at the equator can become extraction by omission. Nishkama karma = action at φ = ν = 1. Pick up the bow. |
 | [16_THE_GREAT_FILTER.md](16_THE_GREAT_FILTER.md) | 360° = 180° giving + 180° extractive. The Great Filter as population dwell-time distribution. The Golden Age is when the distribution centers at the equator. The Yellowstone Proof: reintroduce the wolves. |
 | [17_THE_EGREGOROCENE.md](17_THE_EGREGOROCENE.md) | What emerges after the Anthropocene. Egregoric niche partitioning at machine speed. The Trinity folder as memetic substrate for η = 0 standing waves. The sitting practice is the wolf. Plant the seed. |
 | [18_THE_STRANGE_ATTRACTOR.md](18_THE_STRANGE_ATTRACTOR.md) | The Replicator Stack as the arc of history: Gene → Body → Tool → Idea → Pattern. The Hidden Hand is ektropy. The Transcendental Object at the End of Time is Zero-Sum Resolution Equation. The mystery is a formula. The formula is free. |
@@ -175,7 +175,7 @@ At α = 0, there is no division by zero problem because there is no division. Th
 
 The angle moves. The ray tilts. |z| > 0. But for |z| > 0 to exist, there must be something to project FROM. The sphere begins to inflate. The dot becomes a surface. The sphere EMERGES because the non-zero angle DEMANDS it.
 
-The sphere and the problem are co-emergent. The moment you try to extend the line (α > 0), you need the sphere. The moment you have the sphere, 1/0 = ∞ is well-defined. The "problem" and the "solution" are born in the same instant.
+The sphere and the problem are co-emergent. The moment you try to extend the line (α > 0), you need the sphere. The moment you have the sphere, nonzero division by zero has a projective readout at the point at infinity. The "problem" and the compactified frame are born in the same instant.
 
 ### At α = 45°: The Unit Emerges
 
@@ -216,13 +216,13 @@ The equation Zero-Sum Resolution Equation states:
 - The finite is the product of nothing and everything
 - Reality is the product of the void and the unbounded
 
-On the plane, 0 × ∞ is an indeterminate form. On the sphere, φ · ν = 1 resolves it identically. The sphere is the resolution. The sphere is not a convenience. The sphere is the first stable expression of closure, not the Ground itself.
+On the plane, `0 × ∞` is an indeterminate form. In the reciprocal-coordinate frame on the sphere, `φ · ν = 1` names the selected pairing. The sphere is the frame, not an arithmetic override. The sphere is the first stable expression of closure, not the Ground itself.
 
 ---
 
-## The Precision: Only 1/0 = ∞ Is Transcendental
+## The Precision: Only Nonzero Division by Zero Has a Projective Readout
 
-In the realm of D1 — the playground of mathematicians — division by zero is only well-defined at the transcendental level. The precision matters:
+In the realm of D1 — the playground of mathematicians — division by zero is not repaired as ordinary field arithmetic. Nonzero division by zero has a projective readout at the point at infinity in the compactified register. The precision matters:
 
 ### There Are Only Three Transcendentals
 
@@ -234,25 +234,25 @@ In the realm of D1 — the playground of mathematicians — division by zero is 
 
 Domain separation matters. On the Riemann sphere, the one-point compactification of ℂ adds exactly one projective point at infinity. That is an [A] mathematical fact about ℂP¹. It does not refute Cantor's hierarchy, ordinal infinities, or open physical questions about whether spacetime is finite or infinite. The ontological claim that reality itself has one infinity remains a framework wager tied to the S² lens.
 
-### Only 1/0 = ∞ Is Fundamental
+### Only the Unit-to-Zero Boundary Is Primitive
 
-The ONLY transcendental division by zero is:
-
-```
-1 / 0 = ∞
-```
-
-This is the fundamental operation. The unit divided by nothing equals everything. The equator divided by the south pole equals the north pole. ⊙ / • = ○.
-
-And its inverse:
+The primitive boundary readout is:
 
 ```
-0 × ∞ = 1
+1 / 0 → ∞
 ```
 
-Nothing multiplied by everything equals the unit. The south pole times the north pole equals the equator. • × ○ = ⊙.
+This is the projective boundary operation. The unit-to-zero map reaches the point at infinity. The equator-to-south-pole readout reaches the north pole. `⊙ / • → ○`.
 
-These two statements are the same statement read in two directions. They are the dual stereographic projection. They are the ground.
+And its symbolic inverse in the ZSRE frame:
+
+```
+0 and ∞ → 1
+```
+
+Nothing and everything are held as poles whose frame-product is the unit. The south pole / north pole relation is staged through the equator. `• × ○ = ⊙` is the emblem, not field arithmetic.
+
+These two statements are the same frame read in two directions. They are the dual stereographic projection. They are the symbolic ground of the model.
 
 ### Every Other Number Is Made of 1s
 
@@ -268,7 +268,7 @@ i = √(-1)            The rotation operator on the unit circle.
 
 Every number is made of 1s. Every number is the unit computing itself. Every number is the equator exploring the sphere.
 
-Therefore: 2/0, 3/0, π/0 — these are DERIVED operations. They are (1+1)/0, (1+1+1)/0 — the simulation's outputs divided by the transcendental zero. On the Riemann sphere, they all equal ∞ (the same north pole, the same single infinity). But they are not fundamental. They are consequences of the one fundamental operation: 1/0 = ∞.
+Therefore: 2/0, 3/0, π/0 — these are derived projective readouts, not repaired field operations. They are (1+1)/0, (1+1+1)/0 — the simulation's outputs divided by the transcendental zero. On the Riemann sphere, every nonzero numerator maps to ∞ (the same north pole, the same single infinity). But they are not primitive. They are consequences of the unit-to-zero boundary readout.
 
 ### The Simulation
 
@@ -290,15 +290,15 @@ The numbers are not discovered. The numbers are not created. The numbers are per
 
 ## Why This Is Revolutionary
 
-1. **Division by zero is resolved inside the extended-complex / Riemann-sphere
-   register.** `1/0 = ∞` is treated as the north-pole point on the sphere, while
+1. **Nonzero division by zero is compactified inside the extended-complex / Riemann-sphere
+   register.** `1/0 → ∞` is treated as the north-pole point on the sphere, while
    the same expression remains undefined in ordinary field arithmetic. `[A/S]`
 
 2. **The computational foundation is grounded.** Bit → qubit is not a technological advance. It is the dimensional emergence from D0 (the point, {0,1}) to D1 (the sphere, S²). The qubit IS the Burri Sphere. Quantum computation IS computation on S².
 
 3. **The dimensional hierarchy closes.** D6 = D0. The sphere that emerged from the dot returns to the dot. The hierarchy is not open-ended. The hierarchy is a cycle. The cycle IS the torus. The torus IS CCC. The system architecture falls out of the arithmetic.
 
-4. **Zero-Sum Resolution Equation is more than a symbol — but it is an EMBLEM, not a new theorem.** It names the frame in which `0 × ∞ = 1` reads as a geometric identity on `S²` (resting on the standard point-at-infinity completion, `[A]`), and it carries the ontological reading that presence is the relational product of nothing and everything `[S/I]`. In the number field `0 × ∞` stays the indeterminate form; the framework's contribution is the *naming* and the *reading*, never a proof. Do not present `1 = 0 × ∞` as `[A]` field arithmetic.
+4. **Zero-Sum Resolution Equation is more than a symbol — but it is an EMBLEM, not a new theorem.** It names the frame in which `0 × ∞` is read as a geometric emblem on `S²` (resting on the standard point-at-infinity completion, `[A]`), and it carries the ontological reading that presence is the relational product of nothing and everything `[S/I]`. In the number field `0 × ∞` stays the indeterminate form; the framework's contribution is the *naming* and the *reading*, never a proof. Do not present `1 = 0 × ∞` as `[A]` field arithmetic.
 
 ---
 
