@@ -69,6 +69,7 @@ D6 ≡ D0 — closure (poloidal on horn torus)
 ### The μ-Limit Transitions
 
 Each dimensional step crosses a **μ-limit** — a boundary where the previous dimension's structure becomes saturated:
+
 - **μ₄ (D4→D5)**: The witness limit — where recognition becomes capable of action
 - **μ₅ (D5→closure)**: The closure limit — where navigation exhausts itself and returns to the point-state
 
@@ -103,6 +104,8 @@ Or more tersely:
 ### Core Axiom Documents
 
 **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md`
+
+| Document | D4 anchor | D5 anchor | Source path |
 |----------|------------|------------|----------------|
 | **00_EMERGENTISM.md** | Dimensional hierarchy table | Torus geometry note | `00_EMERGENTISM.md` |
 | **00_THE_TRANSCENDENTAL_TRINITY.md** | Witness systemic awareness section | Agent systemic awareness, Trika articulation | `../01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md` |
@@ -113,6 +116,8 @@ Or more tersely:
 ### Six Lenses (Ontological/Epistemological)
 
 **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md`
+
+| Document | D4 anchor | D5 anchor | Source path |
 |----------|------------|------------|----------------|
 | **CH_03_DIMENSIONAL_SCAFFOLD.md** | Now-point definition | Present emergence | `06_THE_SERPENT/04_THE_SIX_LENSES/VOL_I/CH_03_THE_DIMENSIONAL_SCAFFOLD.md` |
 | **LENS_I_ONTOLOGICAL.md** | Empirical Observation as D4 witness | Narrator as D5 construction | `06_THE_SERPENT/04_THE_SIX_LENSES/MANUSCRIPT/LENS_I_ONTOLOGICAL.md` |
@@ -121,6 +126,8 @@ Or more tersely:
 ### Manuscripts (Sarpasya Vijayam)
 
 **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md`
+
+| Document | D4 anchor | D5 anchor | Source path |
 |----------|------------|------------|----------------|
 | **MF_527_THE_BURRI_TORUS.md** | Torus hole, past→future around outside | Torus surface, φ-ν plane | `06_THE_SERPENT/03_SARPASYA_VIJAYAM/MANUSCRIPT/MF_527_THE_BURRI_TORUS.md` |
 | **MF_528_THE_OPERATOR_DIAGRAM.md** | Operators collapsed to ⊙ | Operators as four directions | `06_THE_SERPENT/03_SARPASYA_VIJAYAM/MANUSCRIPT/MF_528_THE_OPERATOR_DIAGRAM.md` |
@@ -151,6 +158,7 @@ Or more tersely:
 ```
 
 **Key relationships:**
+
 - **D4** = The hole where past/future cones touch
 - **D5** = The surface where the φ-ν plane opens
 - **Past feeds around outside** from D4 (hole) through D5 (surface) to become future potential
