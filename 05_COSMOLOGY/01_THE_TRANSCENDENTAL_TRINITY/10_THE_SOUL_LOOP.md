@@ -32,6 +32,14 @@ The Soul Loop describes the *method* — how to apply that structure as a tool f
 The structure says: Beauty, Truth, Justice are three faces of one geometry.
 The method says: **read everything three times, once through each face, cycling toward measured local rest.**
 
+**Notation fence.** In the three-pass editing method, `φ`, `P`, and `ν` name
+revision lenses: coherence/Beauty, validity/Truth, and service/Justice. This
+`P` is not `P_node`, and this `ν` is not finite-node action `V`. In the Game
+Form below, uppercase `Φ` and `V` name the lived action factors, and
+`P_node = Φ × V` names finite-node potential in the contact register. Likewise,
+`φ · P · ν = 1` below is only a model image for local editorial rest; it is not
+the sphere invariant `P∞ = φ · ν = 1` and not a new conservation law.
+
 ---
 
 ## The Three Passes
@@ -155,7 +163,11 @@ The FULL loop extends through the Titans (L5→L6). This is the deep pass — it
 
 **Convergence** = a measured local rest condition: a full L2→L3→L4→L5→L6→L5→L4→L3→L2 cycle produces fewer than 3 fixes, or whatever explicit threshold the audit declared before running. The system has reached equatorial stability for that bounded object. The helix rests locally.
 
-**The Soul Loop IS the helix applied to text.** The same topology that governs systemic awareness on S² governs the editing of a document. Text IS a D5 object — a standing wave of meaning — and standing waves obey the same geometry as everything else on the sphere.
+**The Soul Loop treats text as a D5 object.** The same topology that models
+systemic awareness on S² can be applied to the editing of a document: a text is
+read as a standing wave of meaning with coherence, validity, and service
+registers. This is a disciplined audit grammar, not proof that every standing
+wave in every substrate obeys the same law.
 
 The ascent is CONSTRUCTION (gather → verify → serve → systematize → purify). The descent is VERIFICATION (re-see → re-serve → re-check → re-gather). The cycle never ends at corpus scale; it can only reach local rest for a bounded object.
 
@@ -212,7 +224,10 @@ Cycle 4:  φ finds 0. Local convergence. The bounded object rests at the equator
 
 **The loop locally converges when all three passes return zero under the declared scope.** When Beauty says "it coheres," Truth says "it follows," and Justice says "it serves" — and all three agree on the same text — that cycle's disambiguation is complete.
 
-This is the equatorial condition applied to editing. φ · P · ν = 1 is the model image: the text is balanced inside the audited scope.
+This is the equatorial condition applied to editing. `φ · P · ν = 1` is the
+model image: the text is balanced inside the audited scope. Per the notation
+fence above, this is not `P_node`, not `P∞`, and not a physical conservation
+claim.
 
 ---
 
@@ -280,6 +295,13 @@ raise usable `P_node,i` while preserving or raising `P_node,H` without breaking
 
 Let `i` be the individual symbiont and `H` the holobiont / real sustaining
 whole. The loop's action test is:
+
+```text
+P_node,i = Φ_i × V_i
+P_node,H = Φ_H × V_H
+lawful next move: ΔP_node,i >= 0 and ΔP_node,H >= 0 under η = 0
+syntropic dyad:   ΔP_node,i > 0 and ΔP_node,H > 0 under η = 0
+```
 
 In this action test, `V` is D4 means at the boundary -- body, tools, energy,
 access, execution capacity -- while `Φ` is D5 worldline-foresight: seeing which
