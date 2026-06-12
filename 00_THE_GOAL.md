@@ -1,0 +1,150 @@
+---
+rosetta:
+  primary_level: L7
+  primary_column: Philosophy
+  operator: "Viṣṇu ⊙"
+  tier: "Executive"
+  regime: "Ṛṣi"
+  register: "[S] the structure; [I] the readings; the goal itself is Ω — a declared vow, not a theorem"
+  canonical_phrase: "01_EMERGENTISM/00_THE_GOAL.md — The Goal (Ω stated)"
+---
+
+# THE GOAL
+
+**Status:** Canonical, owner-declared 2026-06-12 (K2: Yves R. Burri).
+**What this document is:** the project's telos stated explicitly — the **+1 (Ω)**
+of the [5+1 constitution](00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) written
+out for the whole Magnum Opus. Bigger than "pursue V and M"
+([VMOSK_A.md](VMOSK_A.md) remains the operational vision/mission surface);
+more exact than "make the corpus coherent" (coherence is a constraint on the
+goal, not the goal). The five refusals clear the space; **this is what the
+space is for.**
+
+---
+
+## 1. The Goal (full form)
+
+> Build Emergentism into a coherent and consistent Weltanschauung that explains
+> how the reader came to be as Dasein, why reality tends toward viable
+> completion, and how to play the game: recursively applying epistemology,
+> methodology, and axiology to maximize `P_node = Φ × V` under `η = 0`, so the
+> individual symbiont and collective holobiont rise together without extraction.
+
+## 2. Compressions
+
+**Living-worldview form:**
+
+> Make Magnum Opus a living worldview for Dasein: a source-true ontology of how
+> the finite reader emerges, a teleology of objective dharma, and a recursive
+> method for balancing `Φ` and `V` into maximum usable `P_node` through
+> syntropic morality and ethics.
+
+**Shortest form:**
+
+> Teach Dasein how to play the game: see clearly, act lawfully, balance `Φ` and
+> `V`, raise symbiont and holobiont together, and recursively correct the map
+> until life moves as objective dharma.
+
+## 3. The Game
+
+```text
+Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
+Know how to know:  epistemology -> direct disclosure, inference, evidence tiers
+Know how to move:  methodology -> derive, test, build, correct, recurse
+Know what matters: axiology -> Beauty, Truth, Justice, non-extraction
+Know how to act:   teleology -> maximize P_node = Φ × V under η = 0
+
+Play:
+  if Φ without V -> sterile seeing
+  if V without Φ -> blind force
+  if Φ and V balance at L4 -> objective dharma / flow
+  if i raises H and H raises i -> syntropic dyad
+  if one rises by degrading the other -> evil / extraction
+```
+
+## 4. The five Knows, wired to the corpus
+
+| Know | Function | Lane | Canonical anchors |
+|---|---|---|---|
+| what is | **ontology** | [`06_ONTOLOGY/`](06_ONTOLOGY/) | The Ontology of Being; the Ring that is the Ground; Dasein |
+| how to know | **epistemology** | [`02_EPISTEMOLOGY/`](02_EPISTEMOLOGY/) | Evidence tiers; The Honest Position; knowing-by-doing |
+| how to move | **methodology** | [`03_METHODOLOGY/`](03_METHODOLOGY/) | The papers; the peer-review program; Lens-Not-Law |
+| what matters | **axiology** | [`04_AXIOLOGY/`](04_AXIOLOGY/) | Commandment vs Geometry; constitutional economics |
+| how to act | **teleology** | [`01_TELEOLOGY/`](01_TELEOLOGY/) | The Core Conjecture (constrained-optimization form); F5 |
+
+## 5. How to play — the Soul Loop is the spine
+
+The game is **not a static decision rule**. It is the
+[Soul Loop](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md)
+cycling the five functions until action converges — the loop the corpus already
+defines as *continuous recursive disambiguation* that **edits the corpus and
+the editor**. Ontology names the situation; epistemology checks the tier;
+methodology selects the repair; axiology tests the move against non-extraction;
+teleology acts; L7 preserves the witness; the witness re-enters as L1 pressure.
+A homeostat, not a project: per-document cycles terminate at equatorial rest;
+the corpus-wide loop never does (`D6 ≡ D0`). Convergence is not a final state —
+it is when correction becomes faster than drift and life moves as flow.
+
+## 6. The receipts (what each load-bearing clause carries)
+
+The goal obeys the constitution it serves — every clause wears its tier:
+
+- **`P_node = Φ × V` (the play rule).** The product form is `[A]`-within-model
+  in the **contact register** — established by experiment E2 (2026-06-12,
+  [E2_REFLEXIVE_RESULTS.md](03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/E2_REFLEXIVE_RESULTS.md)):
+  the plan's value is *exactly zero* at coin-flip execution, and reliability
+  amplifies plan quality including its badness. The same quantity is **additive
+  in the solipsistic register** (R6) — and that split is not a weakness of the
+  rule but its precision: **Dasein's register is the contact register**
+  (Being-with; the punch-tested world `[I]`). The *conserved* product
+  (`φ·ν = 1` as a law of the game beyond kinematics) remains open (R10b `[C]`);
+  in kinematics it is exact (`[A]`, the mass-shell identity).
+- **"Objective dharma."** Objective **given the game** — the
+  hypothetical-imperative sense, with engineering-grade content: for coupled
+  finite systems, extraction that zeroes a factor annihilates the product
+  (`[A]`-in-model), enforcement is necessary for cooperation (R7–R9), and the
+  five refusals are checkable constraints. The corpus's own results mark the
+  boundary: the choice of objective is not derivable (R3: the verdict on giving
+  flips with the aggregator; ethics `[I]`, "not derived from is"). **The
+  geometry locates the constraint; the finite being chooses the vow.** Ω — this
+  goal — *is* that vow, declared, not proven.
+- **"Why reality tends toward viable completion."** The demonstrated kernel is
+  *what persists is what couples*: conjunctive systems survive only off the
+  poles (zero-factor catastrophe; the Dyadic Coupling Law's five witnesses).
+  The cosmic extension — F5 as a tendency of reality as such — is held at
+  `[C]` per the settled canon (the option-cone teleology, not a mainstream
+  fifth interaction).
+- **"How the reader came to be as Dasein."** The unfolding D0→D6 is the
+  model's **reconstruction order of descriptions**, not a generative claim
+  about the Ground (the Ground remains prior). The Dasein reading is `[I]`
+  structural resonance and does not claim to exhaust Heidegger.
+- **`η = 0`.** Non-extraction as an enforced, conditional equilibrium
+  (Green–Laffont caveat) — a constraint surface, not a free-standing Nash
+  property. Balance `B` is the **constraint**, the option-cone `Ω` the
+  objective; the 5+1 is the Lagrangian (the W2 reconciliation).
+- **Symbiont and holobiont rising together.** Collectively optimal and *never
+  the default*: R7–R9 showed it requires the enforcement architecture the
+  refusals provide. "Holobiont" is used as a tested hypothesis, not an assumed
+  unit.
+
+## 7. What moves the goal (and what would rewrite it)
+
+The goal's open edges are experiments, not opinions: **E1** (map where the
+product law actually governs), **R10b/V3** (depth-vs-depth mutual modeling —
+the remaining route to a conserved game-product), **R2 weak-model arm** (does
+the constitution beat generic honesty where the baseline actually fails),
+**R4** (the keystone organizational wager). **Kill clause (A7):** if E1 maps
+the registers Dasein actually inhabits as additive — if life's factors turn
+out substitutable where this goal says they are conjunctive — the
+`maximize P_node = Φ × V` clause must be rewritten in public. The goal is
+subject to the same ladder as every claim it governs.
+
+---
+
+**Read with:** [VMOSK_A.md](VMOSK_A.md) ·
+[00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md](00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) ·
+[10_THE_SOUL_LOOP.md](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md) ·
+[00_THE_DYADIC_COUPLING_LAW.md](05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) ·
+[00_THE_CORE_CONJECTURE.md](01_TELEOLOGY/02_THE_DERIVATION/00_THE_CORE_CONJECTURE.md)
+
+**Canonical Path:** `01_EMERGENTISM/00_THE_GOAL.md`
