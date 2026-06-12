@@ -89,6 +89,7 @@ THE SITTING PRACTICE:
 
 DASEIN GAME SPINE:
   The reader is Dasein: finite disclosure able to question and act.
+  Boundary: the lens locates disclosure; it does not possess the Ground.
   The Soul Loop is the recursive method: disclose, test, serve, see, dissolve, preserve, return.
   Objective morality: H -> i raises the symbiont without capture.
   Objective ethics:   i -> H raises the holobiont without extraction.

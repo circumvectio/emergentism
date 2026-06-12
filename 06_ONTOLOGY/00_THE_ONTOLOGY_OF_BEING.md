@@ -30,7 +30,9 @@ rosetta:
 structural inside the formalism. Calling that closure "Being" is the
 framework's ontological interpretation, not an external proof that the equation
 exhausts Being or captures the Ground. The shorthand "Being = reciprocal
-closure" is permitted only with this boundary in force.
+closure" is permitted only with this boundary in force. The Dasein reading
+locates finite disclosure; it does not place the seer or the Ground on the
+sphere.
 
 ---
 

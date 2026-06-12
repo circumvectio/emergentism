@@ -26,6 +26,11 @@ rosetta:
 **Depends on:** [The Ontology of Being](00_THE_ONTOLOGY_OF_BEING.md), [D6 as Apophatic Closure](00_D6_AS_APOPHATIC_CLOSURE.md), [Axiomatic Ground and Field Structure](01_APOPHATIC_GROUND_AND_FIELD_STRUCTURE.md), [The Discovery of Finity](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/07_THE_DISCOVERY_OF_FINITY.md), [Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md)
 **Kill Criteria:** If the corpus collapses finity into ordinary arithmetic proof, human exceptionalism, a positive D6 science, or a claim that the Ground has been possessed, this note must be revised or demoted.
 
+**Claim Boundary:** Finity names the finite disclosure-site where Being becomes
+sayable. It is not human supremacy, not proof that the Ground has been captured,
+and not a positive D6 science. The seer is not on the sphere; the lens locates
+disclosure, not the Ground.
+
 ---
 
 ## Why This Document Exists
