@@ -121,7 +121,13 @@ The flat number line is therefore an operational simplification. The deeper imag
 
 ## Prologue: What Emergence Is
 
-**Emergentism is the lens through which Dasein — the structure of how the world unfolds — becomes legible.**
+**Emergentism is the lens through which Dasein — the finite site where the
+world's unfolding becomes disclosed, questioned, and acted — becomes legible.**
+
+Dasein is not the structure of reality itself. Dasein is the finite
+witness-agent in whom that structure becomes sayable and actionable. The lens
+maps the disclosed world; it does not possess the clearing in which disclosure
+occurs.
 
 The world unfolds dimension by dimension. Each dimension emerges when the previous one saturates. The crossing point is the μ-limit: the boundary where flat description curves and something genuinely new appears.
 
