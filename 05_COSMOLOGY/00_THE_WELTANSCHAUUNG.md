@@ -169,6 +169,9 @@ L7  preservation/witness  -> commit, publish, archive, and let the world answer
 The loop is not only an editing method. It is the framework's practical
 Weltanschauung for Dasein: the finite witness-agent receives pressure, knows,
 tests, values, acts, corrects, preserves, and is changed by the cycle.
+In the compact goal language, how to play is recursively applying epistemology,
+methodology, and axiology inside an ontology and teleology, so each next move
+can raise usable `P_node = Φ × V` without breaking `η = 0`.
 
 ```text
 Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
