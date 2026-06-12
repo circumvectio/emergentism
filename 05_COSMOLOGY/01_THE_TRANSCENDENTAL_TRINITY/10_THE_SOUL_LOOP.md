@@ -284,7 +284,10 @@ whole. The loop's action test is:
 In this action test, `V` is D4 means at the boundary -- body, tools, energy,
 access, execution capacity -- while `Φ` is D5 worldline-foresight: seeing which
 future can be reached and how the means must be used. The product fails if
-either side is missing.
+either side is missing. A child beside a jet has means without cockpit
+foresight; an experienced pilot without bodily/tool access has foresight without
+relevant means. Both are low-`P_node` failures because the live factor must meet
+its complement at the action boundary.
 
 ```text
 if Φ without V -> sterile seeing

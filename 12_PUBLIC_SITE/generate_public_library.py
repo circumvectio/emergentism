@@ -78,6 +78,9 @@ directly (the only available lever):
   - trinity/22-the-teleology/                 : conditioned remaining arc/future-pull
         rhetoric on coupling, memory, feedback, and `η = 0` correction dynamics;
         mirrored D4 usable-means / D5 worldline-foresight viability gloss.
+  - trinity/10-the-soul-loop/                 : restored the public Goal / Ω framing
+        in the Game Form and mirrored the D4 means / D5 worldline-foresight
+        zero-factor examples while the source bundle is absent.
   - will/00-the-core-conjecture/              : mirrored the R6 objective/constraint
         reconciliation; replaced the withdrawn "reality maximizes balance" lead with
         viable completion as constrained option-cone widening under balance and
