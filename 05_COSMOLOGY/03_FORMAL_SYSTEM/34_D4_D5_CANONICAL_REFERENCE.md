@@ -27,7 +27,7 @@ rosetta:
 | **Name** | The Causal Vertex | The Present |
 | **Structure** | Point where cones touch | φ-ν plane opens |
 | **Time** | "Now" (instant, no duration) | "Present" (lived duration) |
-| **Consciousness** | **Witness** (observes) | **Agent** (chooses, acts) |
+| **Disclosure / consciousness reading `[I]`** | **Witness** (observes) | **Agent selection** (chooses, acts) |
 | **Operators** | Collapsed to ⊙ | Four cardinal directions (↑↓φ, ↑↓ν) |
 | **Trika** | Unity only (⊙) | Full equation (Zero-Sum Resolution Equation) |
 | **Torus** | The hole | The surface |
@@ -159,7 +159,7 @@ Or more tersely:
 
 ## V. QUANTUM INTERPRETATION RESOLUTION (Corrected)
 
-| Interpretation | Domain | Geometric Locus | Consciousness Mode |
+| Interpretation | Domain | Geometric Locus | Selection mode (consciousness reading `[I]`) |
 |----------------|--------|-----------------|-------------------|
 | **Many-Worlds** | D5 distributed | Entire sphere (all branches) | Multi-agent (all enacted) |
 | **Copenhagen** | D4→D5 transition | Equator (selection point) | Witness→Agent (selection) |
@@ -424,8 +424,8 @@ When reviewing framework documents, verify:
 
 - [ ] D4 is described as "now-point" not "present"
 - [ ] D5 is described as where "present" emerges
-- [ ] Consciousness at D4 is "witness" not "agent"
-- [ ] Consciousness at D5 is "agent" not "witness"
+- [ ] If consciousness language appears, D4 is "witness" not "agent"
+- [ ] If consciousness language appears, D5 is "agent selection" not "witness"
 - [ ] Many-Worlds is not reduced to D4
 - [ ] Copenhagen is not reduced to "only D4"
 - [ ] Consciousness is not identified with the Ground
