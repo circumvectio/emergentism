@@ -9,9 +9,11 @@
    - **`[I]` — the memetic interpretation.** That those cases are driven by *memetic R₀ / CNS-hijacking / parasitic-replicator* mechanisms is framework interpretation, not proven causation.
 3. **Soften the verbs when reused.** "physically hijacks" → "on this model, functions to capture `[I]`"; "precisely maps onto" → "is structurally analogous to `[I]`"; "reveals/demonstrates" → "suggests `[I]`."
 4. **Public-symbol guard.** Do not excerpt memetics mechanism-claims into public/marketing/AI-instruction surfaces without the `[I]` marker and context — stripped of tier, they read as anti-religious or manipulative neuroscience, which is a capture-move and out-of-doctrine.
+5. **Operational-language guard.** "Defense," "firewall," "hardening," "inoculation," "egregore," "AIA," and "immune system" are model and design-language unless a dated receipt proves a deployed implementation. They do not establish medical advice, coercive authority, censorship authority, or a guarantee that harmful information cannot spread.
 
 ## Status
 - Per-file inline `[I]` retrofit on the six body files (`01`–`06`) has a **P1 baseline**: each body file now carries a local claim-boundary section. The six `11_UPLINK/40_MEMETIC_DEFENSE_DOCTRINE` mirrors and the six frozen public `12_PUBLIC_SITE/memetic/*/index.html` pages now carry matching boundary language as well. Further sentence-level softening remains allowed where cold-reader scans find residual overclaim verbs.
+- 2026-06-12 continuation: operational nouns in files `04`–`06` are explicitly bounded as proposal or metaphor language. Future public excerpts must preserve the consent, due-process, and evidence-tier fences around anti-capture systems.
 - Kill criterion for this sub-lane: if a memetics mechanism claim is ever cited as `[A]`/settled science anywhere downstream, it has drifted — route back here and re-tier.
 
 *Authority: this banner is downstream of [`../01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`](../01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md); if it and that source disagree, the source wins.*

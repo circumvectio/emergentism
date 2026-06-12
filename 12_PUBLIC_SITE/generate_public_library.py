@@ -160,7 +160,11 @@ directly (the only available lever):
 	        proof of a separate physical layer or the Ground itself.
   - memetic/                                    : normalized the Dasein game
         reading action test from stale `P_i` / `P_H` to `P_node,i` /
-        `P_node,H`.
+        `P_node,H`; later added the public memetics operational-language guard
+        and hand-patched files 04-06 so "defense," "firewall," "hardening,"
+        "egregore," and "AIA" remain proposal/model language rather than
+        medical advice, coercive authority, censorship authority, or deployed
+        runtime protection.
   - operators/mf-294-egregores-are-horn-networks/
                                               : normalized carrier/network
         product notation from generic `P_i` / `P_individual` to finite-node

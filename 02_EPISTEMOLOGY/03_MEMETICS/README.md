@@ -52,8 +52,8 @@ real memetic defense.
 
 - The hardware/software conflict in meme propagation.
 - Evolutionary dynamics of memes across mind and culture.
-- Anti-memetic defense and ancient egregore architectures.
-- Applied memetic defense strategies.
+- Anti-capture hygiene, defense-architecture models, and ancient egregore readings.
+- Applied memetic defense strategies, bounded as proposals unless implementation receipts exist.
 - The collective side of the Dasein game: how information structures raise or
   capture the individual symbiont and collective holobiont.
 
