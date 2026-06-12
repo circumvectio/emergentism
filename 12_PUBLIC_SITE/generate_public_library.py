@@ -84,6 +84,12 @@ directly (the only available lever):
         conditional theorem under coupling, horizon, multiplicative `P_node`,
         and enforced `η = 0`, not an unconditional proof that extraction can
         never pay locally.
+  - value/00-theurgy-and-f5-force-map/          : added the will boundary:
+        will is disciplined selection/construction of reachable futures under
+        reciprocal closure, `η = 0`, and evidence tiers; it is not magic,
+        coercive authority, external-being invocation, or proof of cosmic will.
+  - sacred/00-glossary/                         : added the disciplined public
+        translation of "become as gods" and the will glossary row.
 
 BEFORE ANY FUTURE REGEN: restore the handoff bundle AND apply these same
 corrections to the SOURCE markdown (formal-16 / formal-17 / formal-33 /
@@ -91,7 +97,8 @@ formal-08 / formal-22 / formal-24 / formal-41 / trinity-13 / paper-H /
 teleology core-conjecture public bundle
 files, plus axiology-public objective-morals-and-ethics and good/evil public
 bundle files, plus trinity-public dharma-yuddha, plus the ring/commandment and
-formal-09/10/11 Power-Max label public bundles), or this generator will overwrite
+formal-09/10/11 Power-Max label public bundles, plus theurgy-public and
+glossary-public will/become-as-gods bundles), or this generator will overwrite
 the hand-patches and reintroduce the over-claims. Also fix the title-doubling: when a source heading already ends in
 "— Emergentism", `page_shell(title=...)` appends a second one.
 """

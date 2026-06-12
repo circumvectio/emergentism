@@ -183,6 +183,19 @@ Know what matters: axiology -> Beauty, Truth, Justice, non-extraction
 Know how to act:   teleology -> maximize P_node = Φ × V under η = 0
 ```
 
+Will is the Builder-mode name for that last line. It is not magic and not
+command over the field. In this framework:
+
+```text
+Will = disciplined selection and construction of reachable futures
+       under reciprocal closure, η = 0, and evidence-tier discipline
+```
+
+Operationally, will maximizes `Ω_i` -- the reachable option cone of the finite
+node -- subject to balance, non-extraction, no hidden rent from the coupled
+field, and honest claims. The power of will is therefore the power to stage
+real possibilities lawfully, not the power to exempt desire from constraint.
+
 Play:
 
 - `Φ` without `V` is sterile seeing.

@@ -58,6 +58,32 @@ If those two registers are collapsed, drift begins immediately.
 
 **Strategic Implementation** is the disciplined practice of consciously forming, tending, and releasing D5 standing waves under K2 sovereignty, `η = 0` extraction, and Grace Exit — every act receipted, every formation reversible, every success measured by whether the practitioner and the wave both remain free.
 
+### Will Boundary `[S/I]`
+
+The "power of will" is Builder-mode discipline, not magic.
+
+```text
+Will = disciplined selection and construction of reachable futures
+       under reciprocal closure, η = 0, and evidence-tier discipline
+```
+
+In optimization language:
+
+```text
+maximize Ω_i
+subject to:
+  B_i near 1
+  η_i = 0
+  no hidden extraction from the coupled field
+  claims remain tiered
+```
+
+This means: form staging zones, hold toxic intermediates lawfully, widen the
+option cone, and preserve the coupling conditions that make the option cone
+real. It does not mean supernatural control, coercive authority over other
+persons, invocation of external beings as operative mechanism, or proof of
+cosmic will.
+
 ### The Four Fences `[S]`
 
 > **Tier (2026-04-20):** Each fence either inherits directly from an
