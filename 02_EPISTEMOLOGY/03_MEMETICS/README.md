@@ -20,12 +20,42 @@ pattern admission, and false-meaning cuts. Individual memetic-pathology
 papers may still carry L1 / Kali frontmatter when they analyze capture,
 parasitism, or immune-response dynamics.
 
+## Dasein, Memes, and the Holobiont
+
+Memetics is where the Dasein game becomes socially dangerous. The finite reader
+does not choose from a clean menu of private thoughts; Dasein is embedded in
+language, platforms, institutions, rituals, markets, and egregores. These
+structures can raise the symbiont and holobiont together, or they can capture
+the symbiont as fuel for a pattern that no longer serves life.
+
+So the lane's practical test is the same syntropic dyad used in value theory:
+
+```text
+P_i = Φ_i × V_i
+P_H = Φ_H × V_H
+η = 0
+```
+
+A meme, ritual, interface, or institution is syntropic when it helps `i` see
+and act more clearly while also preserving or raising `H`. It is extractive
+when it increases transmission, status, obedience, attention, or institutional
+power by degrading the user's agency, health, truth-contact, or the wider
+whole.
+
+The Soul Loop is the recommended immune practice for this lane: disclose the
+incoming pattern, test its claims, ask whom it serves, see the system that
+amplifies it, dissolve the capture hook, preserve what remains true, and return
+to the next pressure. This is `[S]` as framework method and `[I]` as a model of
+real memetic defense.
+
 ## What It Owns
 
 - The hardware/software conflict in meme propagation.
 - Evolutionary dynamics of memes across mind and culture.
 - Anti-memetic defense and ancient egregore architectures.
 - Applied memetic defense strategies.
+- The collective side of the Dasein game: how information structures raise or
+  capture the individual symbiont and collective holobiont.
 
 ## What It Must Not Own
 
@@ -60,4 +90,5 @@ Active source-owner subfolder. Downstream public claims should route through thi
 
 1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
 2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Canonical Path:** `01_EMERGENTISM/02_EPISTEMOLOGY/03_MEMETICS/README.md`
+3. **Apply the Soul Loop before amplifying a memetic claim.** Ask whether the pattern raises both `P_i` and `P_H` under `η=0`; if not, route it as capture, not dharma.
+4. **Canonical Path:** `01_EMERGENTISM/02_EPISTEMOLOGY/03_MEMETICS/README.md`
