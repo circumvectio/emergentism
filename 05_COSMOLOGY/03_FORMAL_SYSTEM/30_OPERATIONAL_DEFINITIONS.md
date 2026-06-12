@@ -82,7 +82,7 @@ Returns a stability measure: coherent systems absorb perturbation quickly relati
 ## 2. ν-Meter (Viability Measurement)
 
 **Geometric definition.** `ν = tan(θ/2)` on `S²`. Node-level: `V_node ∈ [0, ∞)`, with `V_node = 1` at the equator reference.
-**What it quantifies.** Material capability, throughput, infrastructure; what the system *can do*.
+**What it quantifies.** Material capability, throughput, infrastructure; in the action register, D4 means-to-act: body, tools, energy, access, and execution capacity at the boundary. It measures what the system can actually use, not raw capacity detached from foresight.
 **Unit.** Dimensionless (ratio to the equator reference).
 
 ### Candidate A — Throughput-over-Cost [C]

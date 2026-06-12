@@ -46,7 +46,7 @@ The constraint means: **you can't be closer than zero to where you already are.*
 
 ### 2. It Makes Extraction Negative-Sum Before It Is Condemned
 
-If you take viability (ν) from someone, both your balance and theirs drop. Not because it's immoral. Because B = sin θ = 2ν/(1 + ν²) has its **unique maximum at ν = 1**. Moving away from 1 — in either direction — always reduces B. The extractor loses too.
+At the equatorial profile, taking viability (`ν`) from someone displaces both parties from the balance maximum. Not because it is first labeled immoral, but because `B = sin θ = 2ν/(1 + ν²)` has its **unique maximum at ν = 1**. Displacement from that profile lowers balance. This is a balance-model claim, not a denial that one-shot hidden extraction can appear locally profitable.
 
 So extraction is not wrong here merely because a command says so. Inside the
 model, it is evil because it breaks the bond, and it is also negative-sum under

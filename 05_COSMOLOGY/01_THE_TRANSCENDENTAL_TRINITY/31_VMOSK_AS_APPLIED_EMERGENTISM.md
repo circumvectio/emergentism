@@ -39,7 +39,7 @@ Zero-Sum Resolution Equation
 P∞ = φ · ν = 1
 
 Where:
-φ = coherence (quality of what you see)
+φ = coherence (D5 worldline-foresight: what you can envision, rank, and aim)
 ν = sphere-coordinate viability; V = finite-node execution capacity / usable D4 means
 P∞ = φ · ν = 1 (manifold identity; what varies is B = sin θ)
 ```

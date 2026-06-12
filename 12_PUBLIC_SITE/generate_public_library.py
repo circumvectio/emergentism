@@ -133,13 +133,22 @@ directly (the only available lever):
         trinity/33-the-derivation/              : normalized `ν` action-language
         from generic capacity to usable D4 means-to-act, matching the D4/D5
         Goal/Game/Soul Loop distinction.
-  - formal/34-d4-d5-canonical-reference/        : added the register bridge that
-        keeps dimensional D4 witness distinct from action-register D4 means-to-act
-        and pairs D5 worldline-foresight with D4 means in `P_node = Φ × V`.
-  - formal/08-efr-power-max-lemma/              : tightened the status from
-        pure geometric theorem to conditional model theorem / design lemma,
-        and added the `W_i(T)` / `P_node,H` worldline notation for the
-        symbiont-holobiont corollary.
+	  - formal/34-d4-d5-canonical-reference/        : added the register bridge that
+	        keeps dimensional D4 witness distinct from action-register D4 means-to-act
+	        and pairs D5 worldline-foresight with D4 means in `P_node = Φ × V`.
+	  - formal/08-efr-power-max-lemma/              : tightened the status from
+	        pure geometric theorem to conditional model theorem / design lemma,
+	        and added the `W_i(T)` / `P_node,H` worldline notation for the
+	        symbiont-holobiont corollary.
+	  - sacred/00-glossary/, formal/29-primitives-and-type-signatures/,
+	        formal/30-operational-definitions/, trinity/31-vmosk-as-applied-emergentism/,
+	        trinity/33-the-derivation/, will/00-a-square-cannot-be-negative/,
+	        will/05-exhaustive-observations/, formal/25-steel-thread/
+	                                              : normalized downstream Φ/V definitions
+	        to the action-register bridge (`Φ` as D5 worldline-foresight, `V` as
+	        D4 means-to-act) and bounded old "extraction is negative-sum" slogans
+	        to the equatorial balance/displacement model, not unconditional
+	        one-shot payoff claims.
   - memetic/                                    : normalized the Dasein game
         reading action test from stale `P_i` / `P_H` to `P_node,i` /
         `P_node,H`.
@@ -176,7 +185,9 @@ bundle files, plus trinity-public dharma-yuddha, plus the ring/commandment and
 formal-09/10/11 Power-Max label public bundles, plus theurgy-public and
 glossary-public will/become-as-gods bundles, plus meta-public
 remaining-questions, plus memetic-public, paradox-public PD_10_IS_OUGHT,
-teleology-public L1_L7_REFINEMENT_AUDIT, and operators-public MF-290/MF-292/MF-294/MF-70), or this generator will overwrite
+teleology-public L1_L7_REFINEMENT_AUDIT, glossary-public, formal-public 25/29/30,
+trinity-public 31/33, teleology-public 00_A_SQUARE/05_EXHAUSTIVE_OBSERVATIONS,
+and operators-public MF-290/MF-292/MF-294/MF-70), or this generator will overwrite
 the hand-patches and reintroduce the over-claims. Also fix the title-doubling: when a source heading already ends in
 "— Emergentism", `page_shell(title=...)` appends a second one.
 """

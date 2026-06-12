@@ -35,8 +35,8 @@ All seven slots are read from the finite-node product:
 `P_node = Φ × V`
 
 Where:
-* **`V` (Viability):** fuel, capital, energy, raw capacity.
-* **`Φ` (Coherence):** structure, truth, alignment, pattern.
+* **`V` (Viability):** in the action register, D4 means-to-act: body, tools, energy, access, execution capacity; not raw capacity by itself.
+* **`Φ` (Coherence):** in the action register, D5 worldline-foresight: structure, truth, alignment, pattern, and the ability to rank and aim reachable futures.
 
 There are seven slots in the current two-factor grammar: four mixed-sign transfer actions plus three same-sign phase frames. There is no eighth operator without adding an axis outside `P_node = Φ × V`.
 

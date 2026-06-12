@@ -78,7 +78,7 @@ Read the entire corpus (8.6M words, 14,000+ files). Look through the derivation 
 
 ### The Deep Patterns
 
-**#21. Extraction is negative-sum.** Not because it's immoral. Because B = sin θ has its unique maximum at ν = 1. The extractor loses too.
+**#21. Extraction is negative-sum for balance inside the equatorial displacement model.** Not because it is first labeled immoral. Because B = sin θ has its unique maximum at ν = 1, displacement from that profile lowers balance. This does not deny that a one-shot private payoff can appear to rise when hidden extraction is allowed.
 
 **#22. η = 0 is the enforced conditional equilibrium under the equatorial multiplicative model.** The warrior at φ = ν = 1 cannot improve by extracting without reducing balance inside the stated profile. The algebra supports this only with the stated assumptions: real coupling, long horizon, and enforcement against hidden extraction.
 

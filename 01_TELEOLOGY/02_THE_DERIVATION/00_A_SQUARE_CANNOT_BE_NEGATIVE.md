@@ -95,15 +95,15 @@ dH/dθ = 0 at θ = π/2 (the equator). d²H/dθ² > 0 (it's a minimum, not a max
 
 ## 5. Derived Ethics
 
-If φ = coherence (the quality of what you see) and ν = viability (the usable D4 means to act), then:
+If φ = coherence (D5 worldline-foresight: what you can envision, rank, and aim) and ν = viability (the usable D4 means to act), then:
 
 - **Extraction** means taking ν from someone else (increasing your ν, decreasing theirs).
 - After extraction: the extractor has φ·(ν + Δν) and the victim has φ·(ν − Δν).
 - But B = sin θ = 2ν/(1 + ν²) has its **unique maximum at ν = 1**.
-- Moving ν away from 1 — in either direction — reduces B.
-- The extractor's balance DROPS. The victim's balance DROPS. Both lose.
+- Moving a node's profile away from ν = 1 reduces that node's balance.
+- At the equatorial profile, extraction displaces both parties from the balance maximum; both lose balance even if a one-shot private payoff can appear to rise.
 
-**Extraction is negative-sum.** Not because it's immoral. Because B has a maximum and displacement from the maximum is always downward.
+**Extraction is negative-sum for balance inside the equatorial displacement model.** Not because it is first labeled immoral, but because `B` has a maximum and displacement from that maximum is downward. It is not an unconditional claim that every one-shot extractor loses local payoff.
 
 η = 0 (zero extraction) is the enforced conditional equilibrium at the equator
 under the coupled-multiplicative assumptions. Not a commandment. A bounded

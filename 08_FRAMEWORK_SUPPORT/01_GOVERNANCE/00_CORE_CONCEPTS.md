@@ -63,8 +63,8 @@ Read and cite this document in the following dependency order:
 
 `P_node` is the product of Coherence (Φ) and Viability (V) for finite systems, organizations, and empirical projections. On S², the invariant product is `P∞ = φ · ν = 1` everywhere. What varies on the sphere is **balance** (`B = sin θ`), not `P∞`. Near-zero in either factor collapses balance (expression becomes one-dimensional), not the invariant product.
 
-- **Φ** (Coherence): Structural integration, meaning, purpose, internal consistency
-- **V** (Viability): Material capability, resources, health, skills, infrastructure
+- **Φ** (Coherence): Structural integration, meaning, purpose, internal consistency; in the action register, D5 worldline-foresight — the ability to envision, rank, and aim reachable futures
+- **V** (Viability): Material capability, resources, health, skills, infrastructure; in the action register, D4 means-to-act — body, tools, energy, access, and execution capacity at the boundary
 - **P_node** (Ektropy / node-level flourishing): The capacity to radiate — the outward turning (ἐκτροπία). The potential to extend, to reach, to export structure into the world
 
 At the manifold level, reciprocal closure is `P∞ = φ · ν = 1 on S²`. At the node level, `P_node = Φ × V` names how finite systems express coherence and viability in practice.

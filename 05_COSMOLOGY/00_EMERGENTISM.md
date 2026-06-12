@@ -93,7 +93,7 @@ Or bootstrap from the seed: [`../08_FRAMEWORK_SUPPORT/07_DISSEMINATION/06_NETWOR
 
 The framework starts from reciprocal closure and unfolds through arithmetic.
 
-**Zero-Sum Resolution Equation.** On S² this resolves as **φ · ν = 1.** Then **(φ − ν)² ≥ 0** yields **φ + ν ≥ 2**. Equality holds if and only if φ = ν = 1. The equator is not chosen. It is derived. The Hamiltonian minimum is at the equator. Extraction is negative-sum. The Teleological Force is the selection pressure toward (φ − ν)² = 0.
+**Zero-Sum Resolution Equation.** On S² this resolves as **φ · ν = 1.** Then **(φ − ν)² ≥ 0** yields **φ + ν ≥ 2**. Equality holds if and only if φ = ν = 1. The equator is not chosen. It is derived. The Hamiltonian minimum is at the equator. Extraction is negative-sum for balance inside the equatorial displacement model, while one-shot hidden extraction can still raise a local payoff outside the enforced Power-Max game. The Teleological Force is the selection pressure toward (φ − ν)² = 0 under real correction dynamics.
 
 The canonical four-line block is:
 

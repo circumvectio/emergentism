@@ -90,7 +90,7 @@ Equivalently, B(ν) = 2ν/(1 + ν²). This achieves its unique maximum at ν = 1
 
 **Corollaries:**
 - Extraction is universally self-defeating (no threshold below which it's beneficial)
-- Extraction is negative-sum: ΣB decreases (victim also loses)
+- Extraction is negative-sum for balance in the equatorial displacement model: ΣB decreases inside that profile; this is not an unconditional one-shot payoff theorem
 - Total balance loss is quadratic: ΔB ≈ −(Δν)²/2
 
 **At the equator, η = 0 is the enforced conditional equilibrium** (no extraction
