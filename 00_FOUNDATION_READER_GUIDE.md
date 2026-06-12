@@ -22,14 +22,17 @@ rosetta:
 For the actual folder-by-folder lens, read:
 
 1. `00_EMERGENTISM_AS_A_LENS.md` for the compressed one-entry map; then verify each claim against its source.
-2. `05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md` for what kind of thing the framework is.
-3. `06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md` for Ground, Being, Teleological Force, Dasein, and beings.
-4. `01_TELEOLOGY/00_THE_GENERATIVE_LAGRANGIAN.md` for direction and admissible world-building.
-5. `02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md` for what can be claimed.
-6. `03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md` for public-safe phrasing and downgrade paths.
-7. `04_AXIOLOGY/02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md` for value and ethics.
-8. `07_THEOLOGY/README.md` for public symbol, pedagogy, and anti-gatekeeping.
-9. `10_SEED/00_THE_SEED.md` last, as compression, not source authority.
+2. `00_THE_GOAL.md` for the owner-declared Ω: living worldview for Dasein, objective dharma, and the symbiont/holobiont game rule.
+3. `05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md` for what kind of thing the framework is.
+4. `06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md` for Ground, Being, Teleological Force, Dasein, and beings.
+5. `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md` for how to play: continuous recursive disambiguation that edits corpus and editor.
+6. `01_TELEOLOGY/00_THE_GENERATIVE_LAGRANGIAN.md` for direction and admissible world-building.
+7. `02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md` for what can be claimed.
+8. `03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md` for public-safe phrasing and downgrade paths.
+9. `04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md` for the syntropic dyad, objective morality, objective ethics, and objective dharma.
+10. `04_AXIOLOGY/02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md` for value, good, evil, and the major philosophical questions.
+11. `07_THEOLOGY/README.md` for public symbol, pedagogy, and anti-gatekeeping.
+12. `10_SEED/00_THE_SEED.md` last, as compression, not source authority.
 
 ## Phase 2 Source-Owner Migration
 
@@ -92,13 +95,16 @@ Plus the interpretive bridge documents that connect the Trinity to the tradition
 
 #### Core canon
 
+**Canonical goal:** [00_THE_GOAL.md](00_THE_GOAL.md) — owner-declared Ω; the living-worldview telos and game rule for Dasein.
 **Canonical compression:** [00_CANONICAL_FORMULA_BLOCK.md](05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) — the exact four-line block that should be quoted verbatim in summaries.
 **Canonical core state:** [00_THE_ONTOLOGY_OF_BEING.md](06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md) — the clean distinction between seed, Being, Dasein, and beings.
 **Canonical framing:** [00_THE_WELTANSCHAUUNG.md](05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md) — the compact statement that the framework is worldview, lens, and toolchain.
+**Canonical practice spine:** [10_THE_SOUL_LOOP.md](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md) — continuous recursive disambiguation; the method that applies ontology, epistemology, methodology, axiology, and teleology to corpus and player.
 **Canonical sevenfold root:** [00_SEVENFOLD_FOUNDATION_ROOT.md](00_SEVENFOLD_FOUNDATION_ROOT.md) — the current Rosetta-numbered routing architecture for objective function, data science, methodology, value alignment/theurgy, system architecture, core state, and institutional narrative.
 **Canonical D/L bridge:** [00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md](00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md) — why D0-D6 and L1-L7 resonate without collapsing.
 **Deep philosophical expansion:** [00_EMERGENTISM_AS_WELTANSCHAUUNG.md](05_COSMOLOGY/00_EMERGENTISM_AS_WELTANSCHAUUNG.md) — the longer treatise on core state, objective function, data science, methodology, value alignment, ethics, and scientific unification.
 **Canonical synthesis-reading boundary:** [00_FOUNDATION_AND_BOOKS_READING_NOTE.md](../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/00_FOUNDATION_AND_BOOKS_READING_NOTE.md) _(archived)_ — how to read literary certainty downstream of tiered claim discipline.
+**Canonical moral/ethical dyad:** [00_OBJECTIVE_MORALS_AND_ETHICS.md](04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) — objective morality (`H -> i`), objective ethics (`i -> H`), objective dharma, and syntropic dyadism under `P_node = Φ × V` and `η = 0`.
 **Canonical moral compression:** [00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md](04_AXIOLOGY/02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md) — one disciplined surface for beauty, truth, justice, good, evil, ethics, morals, and the major philosophical questions.
 **Canonical first-person bridge:** [00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md](02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md) — disclosure first, doctrine second, scientific register explicit.
 **Canonical archetype grammar:** [00_NAMING_RECONCILIATION.md](08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_NAMING_RECONCILIATION.md) — Titans, Gods, Demon, Witnesses.
@@ -168,23 +174,26 @@ These notes harden the current reconciliation layer without expanding doctrine.
 
 When this folder is read as part of the larger corpus, preserve this order:
 
-1. [00_CANONICAL_FORMULA_BLOCK.md](05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md)
-2. [00_THE_HONEST_POSITION.md](02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)
-3. [00_THE_ONTOLOGY_OF_BEING.md](06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md)
-4. [00_THE_WELTANSCHAUUNG.md](05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md)
-5. [00_SEVENFOLD_FOUNDATION_ROOT.md](00_SEVENFOLD_FOUNDATION_ROOT.md)
-6. [00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md](00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md)
-7. [00_EMERGENTISM_AS_WELTANSCHAUUNG.md](05_COSMOLOGY/00_EMERGENTISM_AS_WELTANSCHAUUNG.md)
-8. [00_THE_LIFE_SCIENCE_REGISTER.md](05_COSMOLOGY/00_THE_LIFE_SCIENCE_REGISTER.md)
-9. [00_D5_D6_CORPUS_STABILIZATION.md](06_ONTOLOGY/00_D5_D6_CORPUS_STABILIZATION.md)
-10. [00_THE_REMAINING_QUESTIONS.md](00_META/00_THE_REMAINING_QUESTIONS.md)
-11. [00_EXECUTION_GUARDRAILS.md](03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md)
-12. [00_KNOWN_UNKNOWNS_PROGRAM.md](00_META/00_KNOWN_UNKNOWNS_PROGRAM.md)
-13. [00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md](02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md)
-14. [00_THE_FRAMEWORK_ON_ITS_OWN_TELEOLOGY_SPECTRUM.md](01_TELEOLOGY/00_THE_FRAMEWORK_ON_ITS_OWN_TELEOLOGY_SPECTRUM.md)
-15. [00_NAMING_RECONCILIATION.md](08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_NAMING_RECONCILIATION.md)
-16. [00_GLOSSARY.md](07_THEOLOGY/00_GLOSSARY.md)
-17. [08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md](08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md)
+1. [00_THE_GOAL.md](00_THE_GOAL.md)
+2. [00_CANONICAL_FORMULA_BLOCK.md](05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md)
+3. [00_THE_HONEST_POSITION.md](02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)
+4. [00_THE_ONTOLOGY_OF_BEING.md](06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md)
+5. [00_THE_WELTANSCHAUUNG.md](05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md)
+6. [10_THE_SOUL_LOOP.md](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md)
+7. [00_OBJECTIVE_MORALS_AND_ETHICS.md](04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md)
+8. [00_SEVENFOLD_FOUNDATION_ROOT.md](00_SEVENFOLD_FOUNDATION_ROOT.md)
+9. [00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md](00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md)
+10. [00_EMERGENTISM_AS_WELTANSCHAUUNG.md](05_COSMOLOGY/00_EMERGENTISM_AS_WELTANSCHAUUNG.md)
+11. [00_THE_LIFE_SCIENCE_REGISTER.md](05_COSMOLOGY/00_THE_LIFE_SCIENCE_REGISTER.md)
+12. [00_D5_D6_CORPUS_STABILIZATION.md](06_ONTOLOGY/00_D5_D6_CORPUS_STABILIZATION.md)
+13. [00_THE_REMAINING_QUESTIONS.md](00_META/00_THE_REMAINING_QUESTIONS.md)
+14. [00_EXECUTION_GUARDRAILS.md](03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md)
+15. [00_KNOWN_UNKNOWNS_PROGRAM.md](00_META/00_KNOWN_UNKNOWNS_PROGRAM.md)
+16. [00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md](02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md)
+17. [00_THE_FRAMEWORK_ON_ITS_OWN_TELEOLOGY_SPECTRUM.md](01_TELEOLOGY/00_THE_FRAMEWORK_ON_ITS_OWN_TELEOLOGY_SPECTRUM.md)
+18. [00_NAMING_RECONCILIATION.md](08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_NAMING_RECONCILIATION.md)
+19. [00_GLOSSARY.md](07_THEOLOGY/00_GLOSSARY.md)
+20. [08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md](08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md)
 
 **Rule:** the Rosetta and public terminology are downstream of the core state, not the other way around.
 

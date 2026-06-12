@@ -8,7 +8,7 @@ rosetta:
   register: "[S/I]"
   canonical_phrase: "Emergentism as a Lens — the worldview in one entry"
 title: "Emergentism as a Lens"
-status: "ACTIVE — front-door orientation (assembly of existing canon), 2026-05-30"
+status: "ACTIVE — front-door orientation (assembly of existing canon), updated 2026-06-12"
 evidence_tier: "[S] structural assembly; [A] for cited standard mathematical identities; [I] for cross-domain mappings unless their source gives a stronger tier. This document upgrades no tier by assertion and invents no doctrine."
 ---
 
@@ -23,7 +23,7 @@ evidence_tier: "[S] structural assembly; [A] for cited standard mathematical ide
 > **Emergentism is a Weltanschauung: a lens, a tool, and a disciplined worldview.**
 > — `05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md` (canonical framing statement, verbatim)
 
-It is a single way of reading **what exists · what tends · how we know · how we act · what matters · what is better and worse** — generated from one equation, refracted into seven facets, bounded by a constitution, and governed by one practice clause.
+It is a single way of reading **what exists · what tends · how we know · how we act · what matters · what is better and worse** — generated from one equation, refracted into seven facets, bounded by a constitution, directed by the owner-declared Goal, operated through the Soul Loop, and released by the practice clause.
 
 ## 2. The kernel (verbatim canon)
 
@@ -77,27 +77,53 @@ The lens is fenced and directed by the constitution (`05_COSMOLOGY/00_WHOLE/03A_
 
 > **Geometric re-grounding (2026-05-31 canon).** The "fence the equator on both sides" reading is canonized in [`05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md`](05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md) — the constitution as the *immune system of the Burrisphere*, each refusal a kept coupling, Ω the gradient to the centre. It rests on [`05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`](05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md): **goodness is the bond `φ × ν`, not either pole**; evil is the bond breaking (closure, `η > 0`); the moral axis is `η` and runs *across* every polarity, **never** along gender, caste, pole, or person. Both defer to `03A` for the count.
 
-## 5. The practice clause (the deepest claim)
+## 5. The Goal and the game spine
+
+The current root telos is stated in `00_THE_GOAL.md`, not invented here:
+
+> Build Emergentism into a coherent and consistent Weltanschauung that explains
+> how the reader came to be as Dasein, why reality tends toward viable
+> completion, and how to play the game: recursively applying epistemology,
+> methodology, and axiology to maximize `P_node = Φ × V` under `η = 0`, so the
+> individual symbiont and collective holobiont rise together without extraction.
+
+The operating method is the Soul Loop (`05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md`): continuous recursive disambiguation that edits the corpus and the editor. The loop keeps the five philosophical functions recursive instead of ideological:
+
+```text
+Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
+Know how to know:  epistemology -> direct disclosure, inference, evidence tiers
+Know how to move:  methodology -> derive, test, build, correct, recurse
+Know what matters: axiology -> Beauty, Truth, Justice, non-extraction
+Know how to act:   teleology -> maximize P_node = Φ × V under η = 0
+```
+
+The action test is the syntropic dyad from `04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md`: `i` raises `H`, `H` raises `i`, and neither side buys local gain by degrading the other. `Φ` without `V` is sterile seeing; `V` without `Φ` is blind force; `Φ` and `V` balanced at L4 is objective dharma / flow-state action. This is `[S]` as framework method and `[I]` as lived self-transformation, not a proof of moral omniscience.
+
+## 6. The practice clause (release, not override)
 
 > **If you can access φ directly — through quiet sitting, through the practice, through whatever means — you do not need this framework. Put it down. The ground was here before the equation.**
 > — `00_FOUNDATION_READER_GUIDE.md` / `06_ONTOLOGY` (Decentralized Authority Model)
 
 The lens is built to make itself unnecessary. The best outcome is that none of it is needed.
 
-## 6. The clearest reading path
+The release clause does not override `00_THE_GOAL.md`; it protects the Goal from becoming an idol. The framework is for teaching Dasein how to play. If direct disclosure and lawful action no longer need the map, the map has served.
+
+## 7. The clearest reading path
 
 The single end-to-end order to *understand* the worldview (the canonical 17-step Coherence Spine lives in `00_FOUNDATION_READER_GUIDE.md`; this is its compressed front):
 
-1. **What it is** → `05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md`
-2. **The kernel** → `05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md`
-3. **What-is (the floor)** → `06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md`
-4. **Why it unfolds** → `01_TELEOLOGY/02_THE_DERIVATION/` (the framework in one folder)
-5. **How we know** → `02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`
-6. **How we test** → `03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md`
-7. **What matters** → `04_AXIOLOGY/00_COMMANDMENT_VS_GEOMETRY.md`
-8. **The public symbol** → `07_THEOLOGY/`
-9. **The constitution** → `05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`
-10. **The whole composition** → `00_FOUNDATION_READER_GUIDE.md` (full Coherence Spine)
+1. **What the project is for** -> `00_THE_GOAL.md`
+2. **What kind of thing it is** -> `05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md`
+3. **The kernel** -> `05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md`
+4. **What-is (the floor)** -> `06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md`
+5. **How to play** -> `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md`
+6. **Why it unfolds** -> `01_TELEOLOGY/02_THE_DERIVATION/` (the framework in one folder)
+7. **How we know** -> `02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`
+8. **How we test** -> `03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md`
+9. **What matters and how to act** -> `04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md`
+10. **The public symbol** -> `07_THEOLOGY/`
+11. **The constitution** -> `05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`
+12. **The whole composition** -> `00_FOUNDATION_READER_GUIDE.md` (full Coherence Spine)
 
 ---
 
@@ -113,7 +139,7 @@ Per *discovered-not-conceived*, these require a sovereign ruling, not an agent's
 
 Zero-Sum Resolution Equation
 
-*One equation, seven stages, five refusals and one direction — and a door left open so the map can be put down.*
+*One equation, seven stages, five refusals and one direction, one Soul Loop for play — and a door left open so the map can be put down.*
 
 ---
 
