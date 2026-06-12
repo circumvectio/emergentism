@@ -1367,11 +1367,19 @@ pre.glyph-block {
     right: 7.25rem !important;
   }
 
+  body.dimension-page .model-slider {
+    right: 16px !important;
+  }
+
   .horn-visual .visual-labels .bottom {
     left: 18px;
     right: 7.25rem;
     transform: none;
     text-align: center;
+  }
+
+  body.dimension-page .horn-visual .visual-labels .bottom {
+    right: 18px;
   }
 
   .horn-visual .visual-labels .left,

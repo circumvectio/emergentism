@@ -35,7 +35,8 @@
     "border-left:1px solid #2a2a2a;margin-left:12px;opacity:.85}",
     "#atlas-tree a:hover{color:" + GOLD + ";opacity:1}",
     "#atlas-tree a.atlas-here{color:" + GOLD + ";border-left-color:" + GOLD + ";opacity:1}",
-    "#atlas-count{padding:4px 22px 10px;font:400 11px/1 'Roboto Mono',monospace;color:#8a8568}"
+    "#atlas-count{padding:4px 22px 10px;font:400 11px/1 'Roboto Mono',monospace;color:#8a8568}",
+    "@media(max-width:680px){body.dimension-page #atlas-fab{display:none}}"
   ].join("");
 
   var style = document.createElement("style");

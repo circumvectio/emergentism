@@ -2,6 +2,7 @@ const page = window.DIMENSION_PAGE || {};
 const canvas = document.querySelector(".dimension-canvas");
 const visual = document.querySelector(".visual-panel");
 const rootElement = document.documentElement;
+if (canvas && visual) document.body.classList.add("dimension-page");
 const REDUCED_MOTION = !!(window.matchMedia
   && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
 const dimensionCommands = [
