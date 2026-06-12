@@ -47,6 +47,10 @@ directly (the only available lever):
         Truth, and Justice.
   - formal/17-efr-ontology-complete/          : tightened moral/ethical formulas to
         `P_node,i` / `P_node,H` and changed bare `P = 1` value-language to `P∞`.
+  - formal/08-efr-power-max-lemma/            : added the Syntropic Dyadism
+        corollary linking individual symbiont, collective holobiont, durable
+        world-line potential, and `P_node,i`/`P_node,H` under the existing
+        Power-Max conditions.
   - trinity/13-the-wave-packet/               : tightened equipotentiality to
         `P∞ = φ·ν = 1` and removed ambiguous "maximum P" language.
   - will/00-the-core-conjecture/              : mirrored the R6 objective/constraint
@@ -56,10 +60,10 @@ directly (the only available lever):
 
 BEFORE ANY FUTURE REGEN: restore the handoff bundle AND apply these same
 corrections to the SOURCE markdown (formal-16 / formal-17 / formal-33 /
-trinity-13 / paper-H / teleology core-conjecture public bundle files), or this
-generator will overwrite the hand-patches and reintroduce the over-claims. Also
-fix the title-doubling: when a source heading already ends in "— Emergentism",
-`page_shell(title=...)` appends a second one.
+formal-08 / trinity-13 / paper-H / teleology core-conjecture public bundle
+files), or this generator will overwrite the hand-patches and reintroduce the
+over-claims. Also fix the title-doubling: when a source heading already ends in
+"— Emergentism", `page_shell(title=...)` appends a second one.
 """
 
 from __future__ import annotations

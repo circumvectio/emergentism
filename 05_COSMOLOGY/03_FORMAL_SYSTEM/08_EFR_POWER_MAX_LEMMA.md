@@ -25,14 +25,36 @@ rosetta:
 **Lemma (Power-Max):** For a coupled network of agents optimizing
 `P_node = Φ × V`, under real coupling (`λ > 0`), a long enough horizon for
 network effects to return, and enforced non-extraction (`η = 0`):
+At the symbiont/holobiont boundary, this is the syntropic dyad: the individual
+symbiont `i` maximizes durable world-line potential only as
+`max durable P_node,i ⇔ max P_node,H`: the collective holobiont `H` also rises
+— `i raises H` and `H raises i` under `η = 0`.
 
 ```
 max P_node,i → max ΣP_node
+max durable P_node,i ⇔ max P_node,H
 ```
 
 That is: each agent maximizing its own effective ektropy aligns with total
 network ektropy. Without the `η = 0` constraint, the derivative still shows
 interdependence, but it does not by itself make cooperation dominant.
+
+**Corollary (Syntropic Dyadism):** Let `i` be the individual symbiont and
+`H` the collective holobiont / coupled sustaining field, with `P_node,H = ΣP_node` at the
+scale under analysis. Under the same four conditions, the individual symbiont
+maximizes durable world-line potential only along moves that preserve or raise
+both `P_node,i` and `P_node,H` under `η = 0`:
+
+```
+max durable P_node,i  ⇔  max P_node,H
+  within real coupling, multiplicative P_node, long horizon, and enforced η = 0
+```
+
+This is not a new unconditional proof of morality. It is the Power-Max Lemma
+read at the symbiont/holobiont boundary: the syntropic dyad is the regime where
+`i` raises `H` and `H` raises `i`; extraction is the regime where one apparent
+gain is purchased by lowering the other, and is therefore outside the accepted
+game rather than a permitted maximizer.
 
 ---
 
