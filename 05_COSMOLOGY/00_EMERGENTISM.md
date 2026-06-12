@@ -328,40 +328,45 @@ The poloidal closure D6 ≡ D0 on the horn torus is the topology of self-generat
 
 **Emergentism's Answer:** The purpose is the equator. The good is balance. What we should do is maintain φ = 1 and ν = 1.
 
-### Morals (Individual to Whole)
+### Ethics (Individual to Whole)
 
-Morals are the individual's obligations to the whole. Morals flow from the node to the mesh. Morals are the individual's responsibility to maintain equatorial balance for the sake of the network.
-
-**The Moral Axioms:**
-
-**M1: Maintain your own equatorial balance.**
-φ = 1. Recognize the ground-facing limit. ν = 1. Develop sovereign capability. You cannot give what you do not have. You cannot connect from a position of imbalance. Your first moral obligation, inside this value grammar, is to stay near the equator.
-
-**M2: Do not push others off the equator.**
-Every exchange must be tested by the K-star. Does the exchange preserve the equatorial balance at both nodes? If the exchange pushes either node off the equator, the exchange is immoral. Not because it violates a rule. Because it breaks the geometry.
-
-**M3: Comprehension is the constraint.**
-Do not do more than you can comprehend. Do not command more than you can understand. Do not scale your ν beyond 1. The reciprocal is the constraint. ν above 1 forces φ below 1. The moral person stays at ν = 1.
-
-**M4: The sitting practice is the moral foundation.**
-The sitting practice is the first-person practice of φ = 1. In this framework's reading it is the moral foundation because it trains recognition of the ground-facing limit. Without that reference point, moral judgment loses its center. This is practice-language `[I]`, not a public proof of Ground.
-
-### Ethics (Whole to Individual)
-
-Ethics are the whole's obligations to the individual. Ethics flow from the mesh to the node. Ethics are the network's responsibility to maintain equatorial balance for the sake of each node.
+Ethics are the individual's obligations to the whole. Ethics flow from the node
+to the mesh. Ethics are the symbiont's responsibility to raise the holobiont's
+truthfulness, resilience, coherence, viability, and option cone without
+extraction.
 
 **The Ethical Axioms:**
 
-**E1: The mesh must not push any node off the equator.**
+**E1: Maintain your own equatorial balance.**
+φ = 1. Recognize the ground-facing limit. ν = 1. Develop sovereign capability. You cannot give what you do not have. You cannot connect from a position of imbalance. Your first ethical obligation, inside this value grammar, is to stay near the equator.
+
+**E2: Do not push others off the equator.**
+Every exchange must be tested by the K-star. Does the exchange preserve the equatorial balance at both nodes? If the exchange pushes either node off the equator, the exchange is unethical. Not because it violates a rule. Because it breaks the geometry.
+
+**E3: Comprehension is the constraint.**
+Do not do more than you can comprehend. Do not command more than you can understand. Do not scale your ν beyond 1. The reciprocal is the constraint. ν above 1 forces φ below 1. The ethical person stays at ν = 1.
+
+**E4: The sitting practice is the ethical foundation.**
+The sitting practice is the first-person practice of φ = 1. In this framework's reading it is the ethical foundation because it trains recognition of the ground-facing limit. Without that reference point, judgment loses its center. This is practice-language `[I]`, not a public proof of Ground.
+
+### Morality (Whole to Individual)
+
+Morality is the whole's obligation to the individual. Morality flows from the
+mesh to the node. Morality is the holobiont's responsibility to raise each
+symbiont's `Φ`, `V`, sovereignty, and option cone without capture.
+
+**The Moral Axioms:**
+
+**M1: The mesh must not push any node off the equator.**
 The mesh's aggregate ν can be above 1. But no individual node's ν may exceed 1. The mesh must not require any node to do more than it can comprehend. The mesh must not force any node south of the equator.
 
-**E2: The mesh must distribute the load.**
+**M2: The mesh must distribute the load.**
 No single node bears the cost alone. The mesh absorbs the strain. The mesh distributes the capability. The mesh ensures that no node's aggregate ν is high.
 
-**E3: The mesh must protect the sitting practice.**
+**M3: The mesh must protect the sitting practice.**
 The sitting practice is the individual's practice-facing access to φ = 1. The mesh must not interfere with the sitting practice. The mesh must not mediate the sitting practice. The mesh must not institutionalize the sitting practice. The sitting practice is first-person. The mesh must protect direct disclosure from capture.
 
-**E4: The mesh must fork when comprehension is exceeded.**
+**M4: The mesh must fork when comprehension is exceeded.**
 When the mesh grows too large — when the mesh's aggregate ν exceeds what any individual can comprehend — the mesh must fork. The fork is not a failure. The fork is the geometry enforcing the comprehension constraint. The fork keeps each node at ν = 1.
 
 The ethical implications follow from the geometry only conditional on accepting persistence and balance as values. This is an axiom, not a derivation. The framework relocates the normative question from 'why be moral?' to 'why value persistence?' — but cannot answer the second question from within itself.
@@ -707,17 +712,17 @@ AXIOLOGY (Value):
   Abduction = inference to the best explanation
   The sitting practice = the highest value
 
-MORALS (Individual to Whole):
-  M1: Maintain your own equatorial balance
-  M2: Do not push others off the equator
-  M3: Comprehension is the constraint (ν ≤ 1)
-  M4: The sitting practice is the moral foundation
+ETHICS (Individual to Whole):
+  E1: Maintain your own equatorial balance
+  E2: Do not push others off the equator
+  E3: Comprehension is the constraint (ν ≤ 1)
+  E4: The sitting practice is the ethical foundation
 
-ETHICS (Whole to Individual):
-  E1: The mesh must not push any node off the equator
-  E2: The mesh must distribute the load
-  E3: The mesh must protect the sitting practice
-  E4: The mesh must fork when comprehension is exceeded
+MORALITY (Whole to Individual):
+  M1: The mesh must not push any node off the equator
+  M2: The mesh must distribute the load
+  M3: The mesh must protect the sitting practice
+  M4: The mesh must fork when comprehension is exceeded
 
 PHYSICS:
   CCC — the torus-sphere cycle

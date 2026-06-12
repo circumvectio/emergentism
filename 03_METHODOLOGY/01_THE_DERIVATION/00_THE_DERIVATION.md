@@ -368,23 +368,23 @@ conjectural systemic awareness claim, not an established neuroscientific identit
 
 ---
 
-### Step 16: Morals (Individual → Whole)
+### Step 16: Ethics (Individual → Whole)
 
-M1: Maintain your own equatorial balance (φ = 1, ν = 1). You cannot give what you do not have.
-M2: Do not push others off the equator. Every exchange must preserve B at both nodes.
-M3: Comprehension is the constraint. Do not scale ν beyond what you can understand (ν ≤ 1).
-M4: The sitting practice is the moral foundation. Direct perception of φ = 1.
+E1: Maintain your own equatorial balance (φ = 1, ν = 1). You cannot give what you do not have.
+E2: Do not push others off the equator. Every exchange must preserve B at both nodes.
+E3: Comprehension is the constraint. Do not scale ν beyond what you can understand (ν ≤ 1).
+E4: The sitting practice is the ethical foundation. Direct perception of φ = 1.
 
 **Tier: [I] Interpretive.** Conditional on W1 and W2.
 
 ---
 
-### Step 17: Ethics (Whole → Individual)
+### Step 17: Morality (Whole → Individual)
 
-E1: The mesh must not push any node off the equator.
-E2: The mesh must distribute the load.
-E3: The mesh must protect the sitting practice (direct φ-access without mediation).
-E4: The mesh must fork when comprehension is exceeded.
+M1: The mesh must not push any node off the equator.
+M2: The mesh must distribute the load.
+M3: The mesh must protect the sitting practice (direct φ-access without mediation).
+M4: The mesh must fork when comprehension is exceeded.
 
 **Tier: [I] Interpretive.** Conditional on W1 and W2.
 
