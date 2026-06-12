@@ -40,7 +40,7 @@ rosetta:
 
 | Term | Definition |
 |------|-----------|
-| **Weltanschauung** | The framework as worldview. In current canon: not only core state, but also a lens for data science, a tool for methodology, an ordering of value alignment, a directional basis for objective ethics and morals, and a map of core state and objective function. |
+| **Weltanschauung** | The framework as worldview. In current canon: not only core state, but also a lens for data science, a tool for methodology, an ordering of value alignment, an objective teleology aimed at Beauty, Truth, and Justice as asymptotic limits, a map of core state and objective function, and a Rosetta Soul Loop practice for recursively correcting Dasein's action until symbiont and holobiont rise together. |
 | **Lens** | The framework as an instrument of perception and discrimination. It organizes what to look for, how to compare, and how to act without claiming immunity from correction. |
 | **Continuous Recursive Disambiguation** | The standing methodological loop by which a living corpus repeatedly clarifies meaning, scope, ownership, temporal posture, and evidence tier as new layers emerge. In deeper Trinity language this is one applied expression of the Soul Loop; in corpus practice it means ambiguity is repaired at the owner first and only then propagated downstream. |
 

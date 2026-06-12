@@ -93,7 +93,15 @@ The sphere is the ontological substrate because:
 
 > **Note (two senses of the poles):** the poles are both the imbalance extremes for any BEING on the manifold (pure φ = the monk; pure ν = the cargo cult) AND the boundary-limit (B = 0) that points at the Ground (L0 = L∞, Kāla/Trimūrti) — these are distinct senses. "South pole = cargo cult" is the imbalance sense, not the Ground sense.
 
-The sphere is not the ground. The sphere is the first stable closure of the ground. Being is `φ · ν = 1 on S²`. The ground is what makes closure possible in the first place.
+The sphere is not the ground. The sphere is the first stable closure of the
+ground. Being is read, inside the framework, as `φ · ν = 1 on S²`. The ground
+is what makes closure possible in the first place.
+
+Dasein enters only downstream of this closure. The reader is not the Ground
+and not Being itself; the reader is the finite disclosure-site in which Being
+becomes question, care, and action. This keeps the practical game inside
+finitude: Dasein may enter the Soul Loop, but Dasein may not possess the
+Ground it points toward.
 
 **Tier: [S]** — the sphere-product structure is internally derivable. **[I]** — the claim that Being is this closure is ontological interpretation.
 
