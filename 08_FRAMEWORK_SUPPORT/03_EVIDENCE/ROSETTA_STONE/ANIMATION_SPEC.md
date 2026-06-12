@@ -27,6 +27,14 @@ evidence_tier: "[I] implementation/specification layer derived from structural s
 **Evidence tier:** [I]  
 *Operational specification. Interpretive mapping of structural sources into implementable contracts.*
 
+> **Death/survival boundary:** `[I/C]` Scene 2 uses Brahman/Atman/Moksha as animation labels for a mathematical limit-image. It does not visualize or prove personal survival, afterlife, reincarnation, or continuity of individual identity.
+
+> **Model boundary:** `[S/I]` The visualization is a didactic interface, not
+> the whole model. The operative Rosetta model is the Soul Loop recurrence:
+> Dasein reads the table, chooses a lawful action, and updates `P_i` and `P_H`
+> under `η = 0`. The sphere/table must not be implemented as a rank ladder,
+> identity badge, or static taxonomy.
+
 
 ## Specification: The Burri Sphere × The Master Table — Unified Interactive Visualization
 
@@ -224,7 +232,7 @@ Updates in real-time as the point moves.
 **Phase 1: The Pure Wave (Brahman)**
 - The helix extends infinitely in both directions. No Gaussian envelope. Constant amplitude. The back wall shows a perfect cos wave. The side wall shows a perfect sin wave. Both are 90 degrees out of phase — when one peaks, the other crosses zero.
 - Label: "Ψ = Ae^(iωt) — The pure wave. Brahman. L0 = L∞."
-- The helix glows white. Immortal. Unlocalized.
+- The helix glows white. Boundary-register. Unlocalized.
 
 **Phase 2: The Envelope Appears (Incarnation)**
 - A Gaussian bell curve fades in — modulating the helix amplitude. The helix swells from near-zero at the edges to full amplitude at the centre. The back wall cos projection gains the envelope. The side wall sin projection gains the envelope. The floor shows the Gaussian bell curve itself — the balance function B = sin theta.
@@ -252,8 +260,8 @@ Updates in real-time as the point moves.
 - Label: "One helix. Two maps. The micro (Ψ) and the macro (P∞ = φ · ν). Connected by systemic awareness — the stereographic projection."
 
 **Phase 6: Moksha (Envelope Dissolution)**
-- The Gaussian envelope slowly fades to zero. The wave packet returns to the pure wave. The helix extends to infinity. The projections return to their pure, unmodulated form. The sphere view shows the point reaching the pole — L∞ — and the operator territories dissolving into white.
-- Label: "lim(envelope → 0)[wave packet] = pure wave. Atman returns to Brahman. Moksha."
+- The Gaussian envelope slowly fades to zero. The wave-packet image is read at its pure-wave limit. The helix extends to infinity. The projections return to their pure, unmodulated form. The sphere view shows the point reaching the pole — L∞ — and the operator territories dissolving into white.
+- Label: "lim(envelope → 0)[wave packet] = pure wave. Limit-image, not survival proof. Moksha [C]."
 
 ### Technical Notes (Scene 2)
 
