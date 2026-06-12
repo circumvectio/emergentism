@@ -58,7 +58,7 @@ The method says: **read everything three times, once through each face, cycling 
 
 **Question:** Does it follow?
 
-**Method:** Read deductively, *above time*. Check validity. Trace each claim back to its axioms. Apply the evidence tiers [E/S/I/C] with precision. This pass does not care how beautiful the prose is or how well it serves the reader. It cares only whether the claims are true and correctly labeled.
+**Method:** Read deductively, *above time*. Check validity. Trace each claim back to its axioms. Apply the evidence tiers [A/B/S/I/D/C] with precision. This pass does not care how beautiful the prose is or how well it serves the reader. It cares only whether the claims are true and correctly labeled.
 
 **What this pass sees:**
 - **Tier inflation.** Is any claim wearing a stronger tier than it earns? Does "the brain IS the Burri Sphere" carry [I] in its header but [S] in its voice?
@@ -252,9 +252,10 @@ The loop closes: L1 → (L2…L6…L2) → L7 → L1 → …
 
 — the fixes change the corpus, and the *practice of fixing* shifts the weights: the over-cutter's L2 softens, the hoarder's L6 strengthens, the wheel re-balances toward L4. **The editor who finishes a cycle is not the editor who started it.** The stuck-wheel pathologies above are exactly the failure of this recursion — weights frozen, `G_{t+1} = G_t` regardless of input. And this is D5 reflexivity in the precise sense of the agency gloss: **foresight applied to one's own option cone** — the Soul Loop is the one move in the game that widens the player's own cone by editing the player. `[S]` the recursion structure; `[I]` the self-transformation reading.
 
-**The game form.** The Soul Loop is the practical answer to "how do I play?"
-It is the continuous application of the five philosophical functions to a
-finite life:
+## The Game Form
+
+The Soul Loop is the practical answer to "how do I play?" It is the continuous
+application of the five philosophical functions to a finite life:
 
 ```text
 Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
@@ -365,7 +366,7 @@ Zero-Sum Resolution Equation
 
 1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
 2. **Your Next Action:**
-   - Verify the mathematical claims. Check evidence tiers. Flag any [I] or [C] presented as [S] or [S].
+   - Verify the mathematical claims. Check evidence tiers. Flag any [I], [D], or [C] presented as [S], [B], or [A].
 3. **Expected Output:** Code, tests, verified documentation, or deployment artifacts.
 4. **Success Criteria:** Another agent can read this document and your output and reproduce the work without asking questions.
 5. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md`
