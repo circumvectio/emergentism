@@ -144,20 +144,20 @@ Near the equator: `E ≈ 2(1 − B)` — Suda's energy is twice the balance defi
 
 In log coordinates, the emblematic equation becomes a statement about pole symmetry: the two infinities of the logarithmic line are exactly balanced around the origin. The void is at `s = −∞`, the unbounded at `s = +∞`, and finity sits at `s = 0` — equidistant from both.
 
-### 3.4 The Extraction Coefficient η
+### 3.4 The Extraction Ratio Diagnostic
 
-In log coordinates, η measures asymmetry of the log-deviation:
+In log coordinates, `η_ratio` measures asymmetry of the log-deviation:
 
 ```
-η ~ |s_extraction| / |s_contribution|
+η_ratio ~ |s_extraction| / |s_contribution|
 ```
 
-- η < 1: the system's log-extraction is less than its log-contribution → net movement toward equator
-- η = 1: extraction equals contribution → trophic balance
-- η > 1: extraction exceeds contribution → net movement away from equator
-- η → ∞: pure extraction, zero contribution → ground negation
+- `η_ratio < 1`: the system's log-extraction is less than its log-contribution → log-accounting movement toward equator
+- `η_ratio = 1`: extraction equals contribution → trophic balance in the ratio register
+- `η_ratio > 1`: extraction exceeds contribution → log-accounting movement away from equator
+- `η_ratio → ∞`: pure extraction, zero contribution → ground negation
 
-This reframes the moral axis as the **sign of the log-deviation's time derivative**: are you moving toward `s = 0` or away from it?
+This reframes the substrate-accounting diagnostic as the **sign of the log-deviation's time derivative**: is the account moving toward `s = 0` or away from it? The live game / constitutional register is `η_move`: `η_move = 0` names reciprocal non-extraction, while `η_move > 0` names extraction or closure. Do not compare the two thresholds as if they were the same number.
 
 ---
 

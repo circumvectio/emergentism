@@ -34,7 +34,7 @@ rosetta:
 
 ## The Question
 
-The triad provides structure. η provides direction. But what DETERMINES direction? Why does one agent choose η < 1 and another choose η → ∞?
+The triad provides structure. η provides direction. But what DETERMINES direction? Why does one agent choose regenerative coupling (`η_move = 0`, or net-giving `η_move < 0` without capture) and another choose runaway extraction (`η_move > 0`, tending toward `η → ∞`)?
 
 The answer is the target of sacrifice.
 
@@ -68,9 +68,9 @@ This is not metaphor. It is the structural determinant of η.
 
 | Operation | η | D-Level | Operator | Result |
 |-----------|---|---------|----------|--------|
-| Love (Φ) | η < 1 | D5 / closure horizon | Arjuna ⚔ / Kṛṣṇa ◇ | Syntropic |
-| Balance (V) | η = 1 | D3-D4 | Viṣṇu | Trophic |
-| Hate (∅) | η → ∞ | D1-D2 | Kali 🎲 | Parasitic |
+| Love (Φ) | `η_move = 0` / `η_move < 0` without capture | D5 / closure horizon | Arjuna ⚔ / Kṛṣṇa ◇ | Syntropic |
+| Balance (V) | `η_move = 0` | D3-D4 | Viṣṇu | Reciprocal |
+| Hate (∅) | `η_move > 0` tending toward `η → ∞` | D1-D2 | Kali 🎲 | Parasitic |
 
 The three Gods (Arjuna, Kṛṣṇa, Kālī) all sacrifice. They differ in what they sacrifice TO:
 
@@ -85,8 +85,8 @@ The three Gods (Arjuna, Kṛṣṇa, Kālī) all sacrifice. They differ in what 
 
 The Two Sacrifices determine η:
 
-- **Love → η < 1:** The agent sacrifices to the Ground. The Ground receives. The system regenerates.
-- **Hate → η → ∞:** The agent sacrifices to the Void. The Void consumes. The system dies.
+- **Love → η_move = 0 / η_move < 0 without capture:** The agent sacrifices to the Ground. The Ground receives. The system regenerates.
+- **Hate → η_move > 0, tending toward η → ∞:** The agent sacrifices to the Void. The Void consumes. The system dies.
 
 The difference is not in the SACRIFICE (both sacrifice) but in the TARGET (Φ vs ∅).
 

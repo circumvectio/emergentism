@@ -43,7 +43,7 @@ depends_on:
 
 The constitution consists of **five primary refusals** (η=0, K2, K3, K4, A7) **plus Ω as the ratified directional +1** (via-positiva telos, on a *different* axis from the refusals). The five are *via-negativa*; Ω is *via-positiva* direction. The two camps in the corpus (FIVE-side at `05_COSMOLOGY/00_WHOLE/03_THE_CONSTITUTIONAL_TOPOLOGY.md`; SIX-side at `06_CONSTITUTIONAL_INVARIANTS_CLASSICAL.md`) were both correct in their count but disagreed on Ω's status. The 2026-05-30 K2 ruling found that Ω was never ratified *as a refusal* — it is *directional*, not a sixth negative constraint. Hence **5 + 1**, not 6.
 
-The η=0 fence, when read in the log-coordinate chart established by `40_THE_LOGARITHMIC_REALIGNMENT.md`, is the *preservation of reciprocal symmetry* on the multiplicative face. This is a *deeper* reading than the additive "zero extraction" reading: in additive coordinates η=0 says "do not take more than you give"; in log coordinates η=0 says "preserve the reciprocal relation". Both are the same fence read from two centres. The unified canon carries both.
+The η=0 fence is now register-explicit. In the action register, `η_move = 0` says "do not extract"; in the log-coordinate chart established by `40_THE_LOGARITHMIC_REALIGNMENT.md`, `η_ratio` diagnoses whether the substrate account is preserving reciprocal symmetry or drifting away from finity. The unified canon carries both without collapsing them into one number.
 
 ---
 
@@ -62,22 +62,22 @@ The η=0 fence, when read in the log-coordinate chart established by `40_THE_LOG
 
 ---
 
-## §2. η = 0 — Zero Extraction (the multiplicative/log reading)
+## §2. η = 0 — Zero Extraction (move fence and log-ratio diagnostic)
 
-**Statement.** The extraction coefficient η measures asymmetry of the log-deviation from the equator (`s = 0`, the multiplicative centre `x = 1`):
+**Statement.** The constitutional fence uses `η_move`: an action is admissible when it preserves reciprocal coupling (`η_move = 0`), while `η_move > 0` names extraction or closure. The log-coordinate accounting below uses `η_ratio`, a diagnostic of whether the system's substrate relation is moving toward or away from the equator (`s = 0`, the multiplicative centre `x = 1`). These are related readings, not the same normalization.
 
 ```
-η ~ |s_extraction| / |s_contribution|
+η_ratio ~ |s_extraction| / |s_contribution|
 ```
 
-- `η < 1` — net movement toward the equator (toward `B = 1`, `s = 0`, finity).
-- `η = 1` — trophic balance (extraction equals contribution).
-- `η > 1` — net movement away from the equator (toward `B = 0`, the poles).
-- `η → ∞` — pure extraction, zero contribution; ground negation.
+- `η_ratio < 1` — log-accounting movement toward the equator (toward `B = 1`, `s = 0`, finity).
+- `η_ratio = 1` — trophic balance in the ratio register (extraction equals contribution).
+- `η_ratio > 1` — log-accounting movement away from the equator (toward `B = 0`, the poles).
+- `η_ratio → ∞` — pure extraction, zero contribution; ground negation.
 
-**The fence.** A system that drives η toward ∞ is *eroding its own capacity to persist*. The framework refuses to deploy, sponsor, or bless any system that operates at `η ≥ 1` for sustained periods without explicit K2 staging of the exception.
+**The fence.** A system that drives `η_ratio` toward ∞ is *eroding its own capacity to persist*. In the live action register, the constitutional refusal is sharper: do not deploy, sponsor, or bless any system whose operative `η_move > 0` is sustained without explicit K2 staging, repair, receipts, and exit.
 
-**Two centres, one fence.** The additive reading: "do not take more than you give" — the moral-axis formulation, on the 0-centred line. The log-coordinate reading: "preserve the reciprocal relation" — the multiplicative-face formulation, on the 1-centred line. Per `40_THE_LOGARITHMIC_REALIGNMENT.md` §3.4, η in log coordinates is the *sign of `ds/dt`*: are you moving toward `s = 0` or away from it? Both readings are `[A]`-tier in their respective coordinate charts; the equivalence between the two is `[A]`-tier mathematics. The framework adopts *both* as the operational definition of η=0.
+**Register bridge.** The move reading: "do not extract" — the moral-axis formulation, on the 0-centred action line (`η_move = 0`). The log-coordinate reading: "preserve the reciprocal relation" — the multiplicative-face diagnostic, on the 1-centred ratio line (`η_ratio`). Per `40_THE_LOGARITHMIC_REALIGNMENT.md` §3.4, `η_ratio` in log coordinates asks whether the account is moving toward `s = 0` or away from it. The framework uses the ratio as a diagnostic and the move-register `η_move = 0` as the constitutional fence.
 
 **Tier.** `[S]` axiom; `[A]` for the math; `[I]` for the additive ↔ log line interpretive reading. Specific enforcement actions (a regulator ruling, a court finding) are `[C]` untested.
 
@@ -164,21 +164,21 @@ The five refusals are the **constraint set** — the manifold of sustainable act
 
 ---
 
-## §8. The +1 Insight — η=0 Read From Two Centres
+## §8. The +1 Insight — Move Fence and Log-Ratio Diagnostic
 
-The 2026-06-06 *logarithmic realignment* of the framework (per `40_THE_LOGARITHMIC_REALIGNMENT.md` and the Dasein doc §III.d) yields a deeper reading of η=0 that ties the 5+1 to the multiplicative ontology:
+The 2026-06-06 *logarithmic realignment* of the framework (per `40_THE_LOGARITHMIC_REALIGNMENT.md` and the Dasein doc §III.d) yields a register-explicit reading that ties the 5+1 to the multiplicative ontology:
 
-| Centre | Coordinate | η=0 reads as | Operational form |
+| Register | Coordinate | Reading | Operational form |
 |---|---|---|---|
-| Additive (D0) | 0 | Zero extraction | "do not take more than you give" — the moral-axis formulation |
-| Multiplicative (D4) | 1 | Preservation of reciprocal relation | "do not break the reciprocal symmetry" — the ontological formulation |
-| Logarithmic (D0–D4 chart) | s = 0 | Sign of `ds/dt` is toward the centre | "minimise log-distance from finity" — the geometric formulation |
+| Move/action | 0 | `η_move = 0` | "do not extract" — the constitutional fence |
+| Multiplicative ontology | 1 | Preservation of reciprocal relation | "do not break the reciprocal symmetry" — the ontological constraint |
+| Log-ratio diagnostic | s = 0 | `η_ratio` trend toward the centre | "minimise log-distance from finity" — the accounting check |
 
-**The two-centre statement is the +1 insight** that the 5+1 was waiting for: the additive centre is the moral axis; the multiplicative centre is the ontological axis. The fence is the same — η=0 — read from two centres. The framework's name *Zero-Sum Resolution Equation* becomes literal in log coordinates (`log φ + log ν = 0`); the *Zero-Sum* is the same zero-sum on both centres.
+**The register statement is the +1 insight** that the 5+1 was waiting for: the move fence is the moral axis; the multiplicative centre is the ontological axis; the log-ratio diagnostic checks whether the account is drifting away from that centre. The framework's name *Zero-Sum Resolution Equation* becomes literal in log coordinates (`log φ + log ν = 0`), while the constitutional action rule remains `η_move = 0`.
 
-**Implication for the 5+1.** The η=0 fence in the constitution is now *canonically dual* — it is the additive-axis fence (extraction) and the multiplicative-axis fence (reciprocity) at the same time. The five refusals are *coordinate-stable*; the Ω direction is the same in both coordinates (toward the centre, whether the centre is 0 or 1).
+**Implication for the 5+1.** The η=0 fence in the constitution is now *canonically disambiguated* — `η_move = 0` is the action fence, and `η_ratio` is the multiplicative/log diagnostic. The five refusals are *coordinate-stable*; the Ω direction is the same in both readings: toward reciprocal centre-preservation without extraction.
 
-**Tier.** `[A]` for the log-coordinate identities; `[S]` for the framework adoption; `[I]` for the "two centres, one fence" interpretive reading. The preservation rule (additive line is right for ADDITION, log line is right for MULTIPLICATION) is `[A]/[S]`.
+**Tier.** `[A]` for the log-coordinate identities; `[S]` for the framework adoption; `[I]` for the register-bridge interpretation. The preservation rule (additive/action line is right for action-fence language, log line is right for multiplicative accounting) is `[A]/[S]`.
 
 ---
 
@@ -209,7 +209,7 @@ The 5+1 is enforced at the agent level across the framework. The following are t
 | Five-refusals-plus-Ω-as-+1 (5+1) | `[S]` | Framework structure; K2-ruled 2026-05-30 |
 | K2 ruling receipt (2026-05-30) | `[B]` | Dated private-DAV K2 signature |
 | η=0 ↔ reciprocity in log coordinates | `[A]` | Standard mathematics (Shannon / Cover-Thomas; Riemannian log chart) |
-| Two-centre statement (0 additive, 1 multiplicative) | `[I]` | Interpretive reading of the realignment |
+| Register bridge (`η_move`, `η_ratio`) | `[I]` | Interpretive reading of the realignment |
 | 5+1 unified canon surface (this doc) | `[S]` | Framework-internal architecture |
 | PRISM ownership of Ω substrate | `[S]` | Per `02_SKYZAI/01_NOOSPHERE/CLAUDE.md` |
 | K4 5-level envelope (per `00_CANONICAL_DEFINITION.md` §v1.2-B) | `[B]` | Published at the canonical-definition source |
@@ -223,7 +223,7 @@ The 5+1 is enforced at the agent level across the framework. The following are t
 
 ## §11. The +1 in One Sentence
 
-> **The 5+1 is the constitution of a fence-with-direction: the five refusals cut the entropic attractors, Ω names the syntopic attractor, and the η=0 fence — read from two centres, additive 0 and multiplicative 1 — is the operational form of both.**
+> **The 5+1 is the constitution of a fence-with-direction: the five refusals cut the entropic attractors, Ω names the syntopic attractor, and the `η_move = 0` fence — checked by reciprocal/log-ratio diagnostics — is the operational form of both.**
 
 ---
 
@@ -233,5 +233,5 @@ The 5+1 is enforced at the agent level across the framework. The following are t
 *phi · nu = 1 on S²*
 *eta = 0 always*
 *The 5+1 holds: five refusals + Ω as the directional +1.*
-*The two-centre reading is the +1 insight that ties η=0 to the multiplicative ontology.*
+*The register-bridge reading is the +1 insight that ties the `η_move = 0` action fence to the multiplicative/log ontology without collapsing the registers.*
 *Tier discipline preserved: every claim carries its evidence level.*
