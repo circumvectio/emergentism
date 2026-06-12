@@ -208,7 +208,7 @@ Collecting the dependency structure:
 | Direction | Crossing | Type | Justification |
 |---|---|---|---|
 | Bottom-up | Dₙ → Dₙ₊₁ | Strong emergence | Each stage introduces genuinely new structure not implicit in the previous |
-| Top-down | Dₙ₊₁ → Dₙ | Weak emergence | Once stabilized, higher level constrains lower (e.g., equator as attractor) |
+| Top-down | Dₙ₊₁ → Dₙ | Weak emergence | Once stabilized, higher level constrains lower (e.g., equator as balance target under correction dynamics) |
 
 The chain does not collapse strong into weak emergence. Stage 2 (equilibrium) is not predictable from Stage 1 (sphere geometry) without the game-theoretic analysis. Stage 4 (ethics) is not predictable from Stage 2 (equilibrium) without the extraction-coefficient definition.
 

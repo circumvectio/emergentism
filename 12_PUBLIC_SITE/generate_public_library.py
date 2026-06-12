@@ -132,6 +132,11 @@ directly (the only available lever):
                                               : normalized remaining live
         operator-route "maximum P" prose to finite-node `P_node` or explicit
         `B` / `P_node` objective language.
+  - trinity/22-the-teleology/, trinity/35-research-brief-teleology-spectrum/,
+        will/03-why-the-constraint-matters/, canon/the-complete-ontology-of-reality/,
+        formal/41-unified-dimensional-derivation/ : normalized attractor language
+        so the equator is the structural balance optimum and becomes an attractor
+        only under specified flow, feedback, coupling, and correction dynamics.
 
 BEFORE ANY FUTURE REGEN: restore the handoff bundle AND apply these same
 corrections to the SOURCE markdown (formal-16 / formal-17 / formal-33 /

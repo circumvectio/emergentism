@@ -151,7 +151,7 @@ A square cannot be negative. Therefore this distance has a **hard floor at zero.
 
 The equator isn't a moral recommendation. It's the boundary of what's structurally possible.
 
-**That's why "a square cannot be negative" matters. It's not a math fact applied to philosophy. It's the reason the equator exists as a physical attractor.**
+**That's why "a square cannot be negative" matters. It's not a math fact applied to philosophy. It's the reason the equator exists as the structural balance minimum, and as an attractor only where a physical, biological, or social dynamics supplies correction.**
 
 ---
 

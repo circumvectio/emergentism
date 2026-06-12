@@ -28,7 +28,7 @@ The previous research brief (34_RESEARCH_BRIEF_THE_FORK.md) framed The Fork as a
 
 **When a system has an attractor, does the attractor "want" anything?**
 
-The Lorenz attractor shapes every trajectory in its basin. The AM-GM inequality forces phi + nu >= 2. Within the framework's coordinate grammar, the Hamiltonian minimum at phi = nu = 1 marks the equatorial attractor for systems validly modeled by the coupled variables. None of these mathematical facts are conscious. But can a self-maintaining system organized around such constraints be purposive?
+The Lorenz attractor shapes every trajectory in its basin because a specific dynamical system supplies the flow. The AM-GM inequality forces phi + nu >= 2. Within the framework's coordinate grammar, the Hamiltonian minimum at phi = nu = 1 marks the equatorial balance optimum; it becomes an attractor only for a specified flow, or for systems whose feedback, coupling, and correction dynamics turn imbalance into repair. None of these mathematical facts are conscious. But can a self-maintaining system organized around such constraints be purposive?
 
 The existing brief treated objective function as binary: structural (no will) vs. volitional (will). The literature reveals at least four distinct levels. The framework needs this finer taxonomy.
 
@@ -46,7 +46,7 @@ The existing brief treated objective function as binary: structural (no will) vs
 
 **Status in contemporary philosophy:** Well-established. The distinction between objective function and teleonomy is recognized by virtually all philosophers of biology (SEP, "Teleological Notions in Biology"). A 2024 paper in Biology and Philosophy confirmed that "natural selection requires no objective function in addition to heritable variation in fitness."
 
-**What it can explain for Emergentism:** The observation that biological systems converge on phi * nu = 1 configurations (flow states, fitness peaks). Natural selection is the efficient cause. No F5 required.
+**What it can explain for Emergentism:** The observation that some biological systems can converge toward phi * nu = 1-like configurations where selection, regulation, or learning makes balance contribute to persistence (flow states, fitness peaks). Natural selection is the efficient cause. No F5 required.
 
 **What it cannot explain:** Why the same attractor shape recurs at non-biological scales (quantum, social, cosmological). Selection explains biological convergence but not mathematical necessity.
 
@@ -59,11 +59,11 @@ The existing brief treated objective function as binary: structural (no will) vs
 - The variational principle / principle of least action: Light "chooses" the shortest path. Lagrangian mechanics describes systems as if they survey all possible paths and select the one minimizing action. Hamilton and later physicists debunked the teleological reading: the Euler-Lagrange equations are equivalent to Newton's laws and operate locally, without foreknowledge of endpoints. The teleological appearance is an artifact of the mathematical formulation, not a feature of reality. (Terekhovich, "Metaphysics of the Principle of Least Action," 2015; Stoltzner, "Action Principles and Objective Function," Springer.)
 - Jeremy England, dissipation-driven adaptation (2013): Groups of atoms self-organize to better dissipate energy. This is statistical, not teleological. Matter "adapts" to environmental forcing through thermodynamic necessity, not through purpose.
 
-**What it can explain for Emergentism:** The AM-GM proof. The Hamiltonian minimum. The equator as attractor. These are structural constraints on S2 geometry. The "pull" toward phi = nu = 1 is real -- systems genuinely evolve toward this state -- but the pull is geometric, like water flowing downhill. No will is needed because the topology does the work.
+**What it can explain for Emergentism:** The AM-GM proof. The Hamiltonian minimum. The equator as the structural balance optimum, and as an attractor only inside specified dynamics. These are structural constraints on S2 geometry. The "pull" toward phi = nu = 1 is model-internal: real systems move that way only where their dynamics convert imbalance into correction, as in a flow that routes water downhill. No will is needed because the topology and dynamics do the work.
 
 **What it cannot explain:** Why this particular topology exists. Why the universe has the structure that produces these attractors. The fine-tuning problem remains open.
 
-**Evidence tier in Emergentism:** [S] Structural. The AM-GM proof is a theorem. The attractor exists.
+**Evidence tier in Emergentism:** [S] Structural for the AM-GM theorem and balance optimum. Attractor language is [S] only for a specified model flow; cross-scale recurrence remains [I/C].
 
 ### Level 3: Ententional Objective Function (Emergent Purpose)
 
@@ -104,7 +104,7 @@ The existing brief treated objective function as binary: structural (no will) vs
 
 ### Position Alpha (Gradient, No Will) = Levels 1-2
 
-Alpha says F5 is a structural attractor (Level 2) with biological manifestations that look purposive (Level 1). The AM-GM inequality forces the equator. Natural selection explains the convergence of biological systems on flow states. The personification as Dyeus Phter is useful metaphor. Nothing "wants" anything. The rock rolls downhill; the system settles at its energy minimum; the equator attracts.
+Alpha says F5 is a structural minimum, or an attractor only under specified dynamics (Level 2), with biological manifestations that look purposive (Level 1). The AM-GM inequality forces the equatorial balance optimum. Natural selection explains any convergence of biological systems on flow states. The personification as Dyeus Phter is useful metaphor. Nothing "wants" anything. The rock rolls downhill only because gravity supplies the flow; the system settles only where a dynamics dissipates error; the equator functions as an attractor only where correction is actually implemented.
 
 **Strongest version:** Jeremy England's dissipation-driven adaptation combined with variational principles. Systems self-organize because thermodynamics drives them to. No residual objective function to explain.
 

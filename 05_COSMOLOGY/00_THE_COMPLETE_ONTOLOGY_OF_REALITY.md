@@ -224,7 +224,7 @@ The fifth dimension. The φ-ν plane is open. The four operators are active. The
 
 ### Sphere position
 
-The full sphere S² is active. `B` varies from 0 to 1 as the system navigates. The equator (`B = 1`, `φ = ν = 1`) is the attractor — the point of maximum balance. The poles (`B = 0`) are the extremes of pure coherence (north, φ → ∞, ν → 0) and pure viability (south, φ → 0, ν → ∞).
+The full sphere S² is active. `B` varies from 0 to 1 as the system navigates. The equator (`B = 1`, `φ = ν = 1`) is the point of maximum balance; it is an attractor only where agency, feedback, and correction convert imbalance into return. The poles (`B = 0`) are the extremes of pure coherence (north, φ → ∞, ν → 0) and pure viability (south, φ → 0, ν → ∞).
 
 ### The Five Domains at D5
 

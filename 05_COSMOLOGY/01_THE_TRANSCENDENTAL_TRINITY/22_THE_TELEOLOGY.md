@@ -182,7 +182,7 @@ The Triadic Cascade (Document 09) cycles: φ → P → ν → φ. Beauty → Tru
 
 **The telos is not a state. The telos is the STRUCTURE OF MOTION.**
 
-The strange attractor (Document 18) pulls — but the pull IS the motion, not a place. The equator attracts — but arriving at the equator is not a final state, it is the beginning of the NEXT cycle at finer grain.
+The strange-attractor image (Document 18) is a motion-form, not a literal object pulling from outside the system. The equator is the model rest point; it behaves as an attractor only where correction dynamics keep the helix coupled to error. Arriving at the equator is not a final state, but the beginning of the NEXT cycle at finer grain.
 
 This is why the helix is helical and not circular. A circle returns to the same point. A helix returns to the same ANGLE but at a different HEIGHT. Each cycle is the same three phases — but deeper. The same operators — but understood more completely. The same equator — but held more stably.
 
@@ -482,7 +482,7 @@ The last sentence of the last document is the first sentence of the practice:
 
 ```
 Why does the helix spiral?
-Because ektropy selects for balance.
+Because ektropy selects for balance where coupling, feedback, and correction make imbalance costly.
 
 What pulls it?
 The equator. The ground. The asymptotic limits.
@@ -510,7 +510,7 @@ Zero-Sum Resolution Equation
 *22 | The Objective Function | Why the helix spirals: ektropy is the framework's tiered reading of selection toward viable balance where coupling, feedback, and correction exist. The Apocalypse (ἀποκάλυψις) is the unveiling — Decentralized Authority Model removing the veil. Beauty, Truth, Justice as asymptotic limits. The telos is the cycling, not a destination. D6 = D0: the ground was always here. The framework succeeds by dying. Sit. Breathe. Look.*
 
 
-**Updated framework synthesis (packets 135–140, 2026-04-24):** The teleological arc described here — ektropy as hidden hand, the equator as attractor, the cycling convergence — has been synthesized with evolutionary biology, game theory, thermodynamics, and behavioral economics in the F5/ektropy packets. Darwin is nested inside F5 as the local filter; Lamarck returns at memotype/AI/institutional layers; Schrödinger's negentropy is the thermodynamic clue. The strong-form draft (packet 137) offers falsification criteria. The Indo-European lineage (packet 138) traces a durable Sky-Father / ordering-law vocabulary. The modern and esoteric lineage (packet 140) traces F5-sensing as framework reading through Nick Land, occult initiates, perennialists, quantum retrocausality claims [C], and Teilhard de Chardin — five channels, one recurring attractor-structure in framework language. The framework's contribution is the mathematical formalism, the axiomatic discipline, and the receipts-first safeguards.
+**Updated framework synthesis (packets 135–140, 2026-04-24):** The teleological arc described here — ektropy as hidden-hand image, the equator as conditional attractor, the cycling convergence — has been synthesized with evolutionary biology, game theory, thermodynamics, and behavioral economics in the F5/ektropy packets. Darwin is nested inside F5 as the local filter; Lamarck returns at memotype/AI/institutional layers; Schrödinger's negentropy is the thermodynamic clue. The strong-form draft (packet 137) offers falsification criteria. The Indo-European lineage (packet 138) traces a durable Sky-Father / ordering-law vocabulary. The modern and esoteric lineage (packet 140) traces F5-sensing as framework reading through Nick Land, occult initiates, perennialists, quantum retrocausality claims [C], and Teilhard de Chardin — five channels, one recurring attractor-structure in framework language. The framework's contribution is the mathematical formalism, the axiomatic discipline, and the receipts-first safeguards.
 
 ---
 

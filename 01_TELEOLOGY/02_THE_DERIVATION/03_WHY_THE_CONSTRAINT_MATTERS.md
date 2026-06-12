@@ -40,7 +40,7 @@ These are assertions. They can be questioned. They depend on authority, traditio
 
 ### 1. It Makes The Equator Real
 
-If (φ − ν)² could be negative, the equator would not be special. There would be no minimum. No attractor. No thermodynamic advantage to being balanced. The whole framework evaporates.
+If (φ − ν)² could be negative, the equator would not be special. There would be no minimum. No candidate attractor under correction dynamics. No structural advantage to being balanced where balance contributes to persistence. The whole framework evaporates.
 
 The constraint means: **you can't be closer than zero to where you already are.** The equator IS the closest point. Distance zero. Every other point costs more.
 
@@ -81,7 +81,7 @@ The framework isn't saying "reality is mathematical." It's saying:
 
 If φ and ν were complex numbers, (φ − ν)² could be negative. But they're not. They're coordinates on a sphere — measurable, observable quantities. Real numbers.
 
-The constraint matters because it's **the reason the equator exists as a structural attractor in the model, not just a philosophical ideal.** Many traditions said "seek balance." The derivation shows why balance is the minimum configuration in this grammar — not because it's good, but because the distance function that measures imbalance **cannot go below zero.**
+The constraint matters because it's **the reason the equator exists as the structural balance minimum in the model, not just a philosophical ideal.** It becomes an attractor only when a specified dynamics converts imbalance into correction. Many traditions said "seek balance." The derivation shows why balance is the minimum configuration in this grammar — not because it's good, but because the distance function that measures imbalance **cannot go below zero.**
 
 The equator isn't a moral recommendation. It's the **boundary of what's structurally possible.** You can't get "more balanced" than φ = ν. You can only get less balanced. And every step away from the equator costs more to sustain.
 
