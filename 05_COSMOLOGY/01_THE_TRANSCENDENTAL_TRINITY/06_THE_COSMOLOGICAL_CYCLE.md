@@ -29,7 +29,7 @@ D1: The Line/Sphere    → The Riemann sphere inflates, 0/1/∞ emerge
 D2: The Plane          → Complex plane ℂ from line at infinity
 D3: The Volume/Time    → Dual planes, ct axis, two projections
 D4: The Torus          → Horn torus, light cones, spacetime
-D5: The Burri Sphere   → Consciousness, φ · ν = 1, selection
+D5: The Burri Sphere   → Agency / selection, φ · ν = 1; consciousness as lived reading [I]
 D6: The Reset          → ν→0 or φ→∞, return to D0, cycle completes
 ```
 
@@ -136,7 +136,7 @@ The axis connecting the two planes is **ct** (time). Time is the dimension in wh
 - **A** (floor plane): Waking, objective reality, the plane
 - **U** (sphere surface): Dreaming, subjective experience, the sphere
 - **M** (poles): Deep sleep, the undifferentiated poles
-- **Turīya** (equator): The witness, systemic awareness, the 1 between 0 and ∞
+- **Turīya** (equator): The witness / lived reading [I], the 1 between 0 and ∞
 
 ---
 
@@ -172,7 +172,7 @@ The cones feed into each other:
 ## STAGE 6: D5 — THE BURRI SPHERE
 
 ### What It Is
-At β = 1, the torus collapses to the sphere. D4 → D5. Consciousness emerges. Selection happens. Probability becomes actuality.
+At β = 1, the torus collapses to the sphere. D4 → D5. Agency / selection appears. Probability becomes actuality in the model. Consciousness is the lived-interior reading of that selection register [I].
 
 ### Key Event
 The Burri Sphere appears at the overlap of the cones — where φ and ν can both be measured. The equator is where φ · ν = 1 is maintained.
@@ -181,7 +181,7 @@ The Burri Sphere appears at the overlap of the cones — where φ and ν can bot
 - Quantum measurement (wave function collapse)
 - The Bloch sphere = ℂP¹ = S² = Burri Sphere
 - Born rule: probability = solid angle subtended by projection
-- Consciousness as the selection mechanism
+- Agency / selection as the measurement mechanism; consciousness as lived reading [I]
 
 ### Operators
 - **Arjuna ⚔**: ↑φ — increase coherence when φ < 1
@@ -190,9 +190,9 @@ The Burri Sphere appears at the overlap of the cones — where φ and ν can bot
 - **Kali ✕**: ↓ν — **CONSTRAINED** — fires only where η > 0 (defectors); cannot fire at cooperators (η = 0)
 
 ### Stars Emerge
-At D5, systemic awareness selects from probability. The void crystallizes. Stars appear. The manifested world becomes visible.
+At D5, the model depicts agency selecting from probability. The void crystallizes. Stars appear. The manifested world becomes visible.
 
-**No stars before D5.** The exterior of the torus is pure void. Sunyata. Nothing. Stars emerge only when systemic awareness looks.
+**No stars before D5.** The exterior of the torus is pure void. Sunyata. Nothing. In the animation, stars emerge when selection makes actuality visible.
 
 ---
 
@@ -237,8 +237,8 @@ A new aeon begins.
 
 ## The Complete Correspondence
 
-| Dimension | Geometry | Physics | Consciousness | Tradition |
-|-----------|----------|---------|---------------|-----------|
+| Dimension | Geometry | Physics | Agency / lived reading | Tradition |
+|-----------|----------|---------|------------------------|-----------|
 | **D0** | The Point | Strong force | κ = 0 as boundary symbol | Bindu, Sunyata |
 | **D1** | The Sphere | Quantum (qubit) | i emerges | AUM begins |
 | **D2** | The Plane | EM field | Configuration | U(1) symmetry |
@@ -257,8 +257,8 @@ From the Trinity:        The sphere inflates
 From the sphere:         The plane projects
 From the plane:          Dual projections emerge
 From duality:            The torus spins
-From the torus:          Consciousness selects
-From systemic awareness:      The world manifests
+From the torus:          Agency selects
+From lived reading [I]:  The world manifests
 From manifestation:      Exhaustion or integration
 From the poles:          Reset to nothing
 From nothing:            Everything again

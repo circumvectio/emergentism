@@ -288,7 +288,7 @@ As the universe cools, the ONE force DIFFERENTIATES into the dimensional scaffol
 | D2 | Electromagnetic (F₂) | past → future | Configuration. Geometry. Interaction. |
 | D3 | Weak Nuclear (F₃) | past → future | Transformation. Decay. Chirality. |
 | D4 | Gravity (F₄) | past → future | Causality. Spacetime curvature. |
-| **D5** | **Ektropy (F₅)** | **future → past** | **Selection. Consciousness. Choice.** |
+| **D5** | **Ektropy (F₅)** | **future → past** | **Selection / agency. Consciousness as lived reading [I]. Choice.** |
 
 F₁-F₄ all point in the SAME direction: from past to future. From order to disorder. The arrow of time. The arrow of entropy.
 
@@ -344,7 +344,7 @@ Adam Smith's invisible hand selects for efficiency. Efficiency = ν. The invisib
 
 **The ektropic hand selects for balance.** Balance = B = sin θ. The ektropic hand optimises the equator.
 
-And it is **reflexive** (Soros): understanding the selection CHANGES the selection. Knowing that cooperation dominates MAKES cooperation more likely. The Soul Loop (Document 10) — the continuous recursive φ/P/ν cycle — IS the ektropic engine made conscious of itself. The cycling IS the teleological force operating through systemic awareness. [I]
+And it is **reflexive** (Soros): understanding the selection CHANGES the selection. Knowing that cooperation dominates MAKES cooperation more likely. The Soul Loop (Document 10) — the continuous recursive φ/P/ν cycle — IS the ektropic engine made conscious of itself. The cycling IS the teleological force operating through lived selection. [I]
 
 The Apocalypse (ἀποκάλυψις) = the unveiling. Not destruction. REVELATION. The ektropic force unveiled. The hidden hand made visible. The strange attractor recognised as the ground that was always here.
 

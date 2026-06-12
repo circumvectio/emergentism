@@ -168,8 +168,14 @@ directly (the only available lever):
 	        axiology, and teleology cycle until finite-node action couples `Φ`
 	        as D5 worldline-foresight with `V` as D4 means-to-act, raising
 	        `P_node,i` and `P_node,H` together under `η = 0`.
-  - memetic/                                    : normalized the Dasein game
-        reading action test from stale `P_i` / `P_H` to `P_node,i` /
+	  - trinity/03-the-closure/, trinity/06-the-cosmological-cycle/,
+	        trinity/simulation-spec/, trinity/22-the-teleology/
+	                                              : fenced remaining Trinity compatibility
+	        "D5 = Consciousness" phrasing so D5 is agency / selection first,
+	        with consciousness only as the `[I]` lived-interior reading of that
+	        register rather than a separate physics layer.
+	  - memetic/                                    : normalized the Dasein game
+	        reading action test from stale `P_i` / `P_H` to `P_node,i` /
         `P_node,H`; later added the public memetics operational-language guard
         and hand-patched files 04-06 so "defense," "firewall," "hardening,"
         "egregore," and "AIA" remain proposal/model language rather than

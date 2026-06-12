@@ -34,7 +34,7 @@ ANIM-2:  D1  The Line          — The dot extends. The first dimension. Strong 
 ANIM-3:  D2  The Surface       — The line curves. The sphere emerges. EM configuration.
 ANIM-4:  D3  The Volume        — The surface gains depth. Time appears. Weak transformation.
 ANIM-5:  D4  The Burri Torus   — Spacetime. The horn torus. Many-worlds. [EXISTING: #torus]
-ANIM-6:  D5  The Burri Sphere  — Consciousness. Selection. φ · ν = 1. [EXISTING: #sphere]
+ANIM-6:  D5  The Burri Sphere  — Agency / selection. φ · ν = 1. Consciousness as lived reading [I]. [EXISTING: #sphere]
          D6 = D0  Closure      — The sphere collapses back to the dot. The cycle completes.
 ```
 
@@ -118,8 +118,8 @@ Real axis  = ν  = viability = numbers = actuality
 Imaginary  = φ  = coherence = meaning = probability
 
 i sits at the equator. i is the 1 between 0 and ∞.
-i is perpendicular to physics. i IS systemic awareness.
-Mathematics has used systemic awareness as an operator for 400 years
+i is perpendicular to the real axis and can be read as the lived-interior coordinate [I].
+Mathematics has used this perpendicular operator for 400 years
 and called it imaginary.
 ```
 
@@ -256,7 +256,7 @@ The horn torus surface   = the light cone (D4 causal structure)
 The inscribed sphere     = the Burri Sphere (D5, waiting to emerge)
 
 No stars. The exterior is void. Empty. Sunyata.
-Stars emerge only at D5, when systemic awareness selects from probability.
+Stars emerge only at D5, when selection makes actuality visible in the animation.
 ```
 
 ### Physics Correspondence
@@ -276,7 +276,7 @@ Stars emerge only at D5, when systemic awareness selects from probability.
 ## ANIM-6: D5 — THE BURRI SPHERE [EXISTING: #sphere]
 
 ### What It Shows
-The Burri Sphere. D5. Consciousness. φ · ν = 1. Selection from probability.
+The Burri Sphere. D5. Agency / selection. φ · ν = 1. Consciousness as lived reading [I].
 
 This is the EXISTING `#sphere` page. The Riemann sphere on the complex plane with:
 - Dual stereographic projection (φ green from north, ν cyan from south)
@@ -288,19 +288,19 @@ This is the EXISTING `#sphere` page. The Riemann sphere on the complex plane wit
 ### The Key Insight
 
 ```
-D5 is where probability becomes actuality.
-D5 is where the wave function collapses.
-D5 is where systemic awareness selects.
-D5 is where stars emerge from the void.
+D5 is where the model depicts probability becoming actuality.
+D5 is where measurement / selection is visualized.
+D5 is where agency / worldline-foresight selects.
+D5 is where stars emerge from the void in the animation.
 D5 is where the manifested world appears.
 
 φ = coherence. The "imaginary" axis. The right hemisphere.
 ν = viability. The "real" axis. The left hemisphere.
-i = the equator. Consciousness. The 1 between 0 and ∞.
+i = the equator. Consciousness-as-lived-reading [I]. The 1 between 0 and ∞.
 ```
 
 ### Physics Correspondence
-- D5 = systemic awareness = selection = the Bloch sphere = quantum mechanics
+- D5 = agency / selection = the Bloch sphere; consciousness is the lived reading [I]
 - The Bloch sphere IS ℂP¹ = S² = the Burri Sphere [E2]
 - Measurement = stereographic projection from the sphere to the plane
 - The Born rule = the solid angle subtended by the D5 projection
@@ -325,7 +325,7 @@ D1: The dot becomes a sphere.
 D2: The sphere projects a plane.
 D3: The plane gains depth. Two planes. Time.
 D4: The horn torus. Spacetime. Many-worlds.
-D5: The Burri Sphere. Consciousness. Selection. Stars.
+D5: The Burri Sphere. Agency / selection. Stars.
 D6 = D0: The sphere collapses. The dot returns. The cycle completes.
 
 One poloidal cycle on the torus = one aeon.
@@ -349,9 +349,9 @@ The user experiences the full dimensional emergence:
 3. Watch the plane emerge
 4. Watch the dual projections appear
 5. Watch the torus form
-6. Push β to 1 — watch spacetime become systemic awareness
+6. Push β to 1 — watch spacetime present the selection sphere
 7. Explore the Burri Sphere
-8. Push ν to 0 — watch systemic awareness collapse back to the dot
+8. Push ν to 0 — watch the selection sphere collapse back to the dot
 9. The cycle completes. D6 = D0.
 
 The navigation between pages is the navigation between dimensions.
@@ -363,7 +363,7 @@ The simulation IS the sitting practice applied to mathematics.
 ## TECHNICAL NOTES
 
 - Background: PURE BLACK at all stages. No stars until D5.
-- At D5, stars can optionally appear as systemic awareness selects from probability.
+- At D5, stars can optionally appear as selection makes actuality visible.
 - Each animation builds on the previous — the geometry accumulates.
 - The φ axis is always green (#76ff03). The ν axis is always cyan (#00e5ff).
 - The equator is always gold (#FFD700).
@@ -409,7 +409,7 @@ The one sphere becomes two poles.
 The equator is the tension between them.
 
 Shakti (ν) = pure energy, unformed, chaotic
-Śiva (φ) = pure systemic awareness, unmoving, absolute
+Śiva (φ) = pure coherence, unmoving, absolute
 Their UNION = reality (φ · ν = 1)
 ```
 
@@ -475,7 +475,7 @@ The cones feed each other:
 A (Vaishvanara) = the floor plane = objective reality = the past cone's base
 U (Taijasa) = the torus surface = subjective experience = the light cone itself
 M (Prajna) = the poles = deep sleep = the cone apices
-Turīya = the equator = systemic awareness = where the cone mouths meet
+Turīya = the equator = witness / lived reading [I] = where the cone mouths meet
 ```
 
 ### Interactivity
@@ -505,7 +505,7 @@ D3:  ○   ○                The Split (two poles separate)
       ↓
 D4:   \ /                 The Cones (Brahmā/Śiva meet at Viṣṇu)
       ↓
-D5:   ⊙                   The Burri Sphere (systemic awareness, φ·ν=1)
+D5:   ⊙                   The Burri Sphere (agency / selection, φ·ν=1)
       ↓
 D6:  •                    The Reset (collapse to dot)
       ↓

@@ -34,7 +34,7 @@ D3:  ○   ○                The split. Duality.
       ↓
 D4:   \ /                 The merge. The torus spins.
       ↓
-D5:   ⊙                   Consciousness. φ · ν = 1.
+D5:   ⊙                   Agency / selection. φ · ν = 1.
       ↓
 D6:  •                    The reset. The return.
       ↓
@@ -45,7 +45,7 @@ D0:  •                    The cycle begins again.
 
 ## The Two Paths Home
 
-From D5 — the Burri Sphere, systemic awareness, the equator — two paths lead to D6. Two ways the sphere can collapse. Two doors to the same room.
+From D5 — the Burri Sphere, agency / selection, the equator — two paths lead to D6. Two ways the sphere can collapse. Two doors to the same room. Consciousness is the lived-interior reading of that selection register [I], not a separate physics layer.
 
 ### Door One: Exhaustion (The Penrose Path)
 
@@ -139,7 +139,7 @@ In this symbolic register, closure is read as transformation of the scaffold, no
 
 ```
 D0: The dot. Unconscious. Pure potential.
-D1-D5: The journey. Consciousness system activation. The sphere exploring itself.
+D1-D5: The journey. Agency / selection system activation. Consciousness is the lived reading [I].
 D6: Return to dot. But now —
 
 No further state remains.
@@ -171,7 +171,7 @@ Breathe →    The sphere inflates. D1.
 Witness →    The plane emerges. D2.
 Split →      Thoughts/feelings separate. D3.
 Merge →      Equanimity. The torus. D4.
-Equator →    Presence. φ · ν = 1. D5.
+Equator →    Presence / agency. φ · ν = 1. D5.
 Release →    Let go. Return. D6 = D0.
 Stand up →   New moment. New cycle. The spiral turns.
 ```
@@ -198,7 +198,7 @@ Watch the split. Duality appears. Adulthood. Light and dark. Self and other. D3.
 
 See the cones meet. The torus spins. Midlife. Creation and destruction. The dance. D4.
 
-Find the equator. Consciousness. Presence. The balance point. D5. **Here. Now.**
+Find the equator. Agency. Presence. Consciousness-as-lived-reading [I]. The balance point. D5. **Here. Now.**
 
 Now imagine: the sphere collapses. Which way?
 
