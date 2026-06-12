@@ -11,7 +11,7 @@ rosetta:
   canonical_phrase: "00_META/CLAUDE.md — Agent First-Touch"
 ---
 
-> **[K3 banner — 2026-06-06]** This file carries 5+1 constitutional references. Canonical surface: [`00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`](00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) (K2-ruled 2026-05-30; five refusals η=0, K2, K3, K4, A7 + Ω as the directional +1). The η=0 fence reads from two centres: additive 0 (zero extraction) and multiplicative 1 (preservation of reciprocal relation). Local meta-routing role preserved per K3 archive-first rule.
+> **[K3 banner — 2026-06-06; eta-register bridge updated 2026-06-13]** This file carries 5+1 constitutional references. Canonical surface: [`00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`](00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) (K2-ruled 2026-05-30; five refusals η=0, K2, K3, K4, A7 + Ω as the directional +1). The eta fence is register-explicit: `η_move = 0` is the action / zero-extraction fence, while `η_ratio` is the log-coordinate diagnostic for reciprocal drift toward or away from finity. Local meta-routing role preserved per K3 archive-first rule.
 
 # 00_META — Agent First-Touch
 
@@ -53,7 +53,7 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 The constitution is **5 + 1** (K2-ruled 2026-05-30; canonical surface: [`00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`](00_THE_FIVE_PLUS_ONE_CONSTITUTION.md)). The five refusals + Ω as the directional +1:
 
 - **K2:** every irreversible act requires natural-person signature. *Via-negativa — refusal of model-only action.*
-- **η = 0:** zero extraction; fees only on value created. Reads from two centres — additive 0 (zero extraction) and multiplicative 1 (preservation of reciprocal relation). *Via-negativa — refusal of extraction.*
+- **η = 0:** zero extraction in the live move register; fees only on value created. Register bridge: `η_move = 0` is the action fence, while `η_ratio` checks reciprocal/log drift toward or away from finity. *Via-negativa — refusal of extraction.*
 - **K3:** no-deletion; archive-first. *Via-negativa — refusal of unrecorded overwrite.*
 - **K4:** grace exit; documented withdrawal path (redeemable assets, not "everything"). *Via-negativa — refusal of no-exit entrapment.*
 - **A7:** self-correction with evidence tier on every claim. *Via-negativa — refusal of infallibility.*

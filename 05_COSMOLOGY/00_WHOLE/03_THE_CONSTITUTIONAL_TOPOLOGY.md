@@ -10,7 +10,7 @@ rosetta:
   vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root"
 ---
 
-> **[K3 banner — 2026-06-06]** This file (FIVE-side: Five Refusals as Space) carries 5+1 constitutional references. Canonical surface: [`../../../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`](../../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) (K2-ruled 2026-05-30; five refusals η=0, K2, K3, K4, A7 + Ω as the directional +1). The η=0 fence reads from two centres: additive 0 (zero extraction) and multiplicative 1 (preservation of reciprocal relation). Local philosophical treatment preserved per K3 archive-first rule. The reconciliation: this file's five-refusal body is correct; Ω is the +1 not a sixth refusal (per 5+1 §1 + §9).
+> **[K3 banner — 2026-06-06; eta-register bridge updated 2026-06-13]** This file (FIVE-side: Five Refusals as Space) carries 5+1 constitutional references. Canonical surface: [`../../../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`](../../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) (K2-ruled 2026-05-30; five refusals η=0, K2, K3, K4, A7 + Ω as the directional +1). The eta fence is register-explicit: `η_move = 0` is the action / zero-extraction fence, while `η_ratio` is the log-coordinate diagnostic for reciprocal drift toward or away from finity. Local philosophical treatment preserved per K3 archive-first rule. The reconciliation: this file's five-refusal body is correct; Ω is the +1 not a sixth refusal (per 5+1 §1 + §9).
 
 # The Constitutional Topology — Five Refusals as Space
 

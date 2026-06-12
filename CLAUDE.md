@@ -9,7 +9,7 @@ rosetta:
   canonical_phrase: "01_EMERGENTISM/CLAUDE.md — Agent Routing"
 ---
 
-> **[K3 banner — 2026-06-06]** This root carries 5+1 constitutional references. Canonical surface: [`00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`](00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) (K2-ruled 2026-05-30; five refusals η=0, K2, K3, K4, A7 + Ω as the directional +1). The η=0 fence reads from two centres: additive 0 (zero extraction) and multiplicative 1 (preservation of reciprocal relation). Local text preserved per K3 archive-first rule.
+> **[K3 banner — 2026-06-06; eta-register bridge updated 2026-06-13]** This root carries 5+1 constitutional references. Canonical surface: [`00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`](00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) (K2-ruled 2026-05-30; five refusals η=0, K2, K3, K4, A7 + Ω as the directional +1). The eta fence is register-explicit: `η_move = 0` is the action / zero-extraction fence, while `η_ratio` is the log-coordinate diagnostic for reciprocal drift toward or away from finity. Local text preserved per K3 archive-first rule.
 
 # 01_EMERGENTISM/CLAUDE.md — Agent Routing
 
