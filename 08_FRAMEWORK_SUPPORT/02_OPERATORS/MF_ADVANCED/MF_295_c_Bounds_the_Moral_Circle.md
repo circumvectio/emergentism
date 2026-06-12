@@ -26,13 +26,15 @@ rosetta:
 **Emergentism.org · VIVEKA Mathematical Foundations**
 **Depends on:** MF-283 (Orthogonality Theorem), MF-290 (Ektropic Radius), MF-291 (Landauer Horn), MF-293 (Language Is Bandwidth)
 **Evidence tier:** [I] for light cone physics; [T] for ethical radius application; [I] for historical interpretation
-**Purpose:** Show that the maximum ethical radius (A2: ΣΔP_node across widest perceivable boundary) is bounded by the speed of light. No agent can compute ΣΔP_node across a boundary wider than its causal light cone. Information technology widens the EFFECTIVE cone by accelerating information transfer toward c, making distant consequences perceivable. Every major moral expansion in history correlates with a communication technology that widened the effective light cone.
+**Purpose:** Show that the physically knowable edge of ethical accounting (A2: ΣΔP_node across widest perceivable boundary) is bounded by the speed of light. No agent can receive information from beyond its causal light cone. Information technology widens the EFFECTIVE cone by accelerating information transfer toward c, making distant consequences perceivable. Every major moral expansion in history correlates with a communication technology that widened the perceivable boundary.
 
 ---
 
 ## ABSTRACT
 
-The light cone in special relativity defines the maximum causal reach of any event: spatial radius at temporal distance t is r_max = ct. No information, no influence, no consequence can propagate faster than c. If ethics is ΣΔP_node computed across the widest perceivable boundary (A2 + MF-290), and perception requires information to reach the agent, then the ethical radius is physically bounded by c. You cannot perceive, and therefore cannot ethically account for, consequences outside your light cone. Every expansion of the moral circle in human history corresponds to a communication technology that brought previously-invisible consequences inside the effective light cone: writing, printing, telegraph, photography, television, internet. The speed of light is the speed of morality.
+The light cone in special relativity defines the maximum causal reach of any event: spatial radius at temporal distance t is r_max = ct. No information, no influence, no consequence can propagate faster than c. If ethics is ΣΔP_node computed across the widest perceivable boundary (A2 + MF-290), and perception requires information to reach the agent, then the physically knowable ethical radius is bounded by c. You cannot include consequences you cannot in principle receive evidence about. Every expansion of the moral circle in human history corresponds to a communication technology that brought previously-invisible consequences inside the effective information cone: writing, printing, telegraph, photography, television, internet. The safe claim is not "light is morality"; it is that D4 causal information bounds what D5 foresight can responsibly model.
+
+**Register guard.** D4 causal spacetime supplies the information boundary. D5 option-cone foresight performs the ethical modeling once information arrives. This paper bounds moral computation by causal access; it does not make moral value a physical field, and it does not claim intelligence enlarges the relativistic light cone. `[A]` for the light-speed constraint; `[I]` for the moral-circle application.
 
 ---
 
@@ -50,7 +52,7 @@ Nothing outside this cone can be affected by the event or can affect the event. 
 
 ### 1.2 The Ethical Consequence
 
-A2 states: ΣΔP_node > 0 across the widest perceivable system boundary. MF-290 shows this boundary is a radius in spacetime — the agent's effective light cone.
+A2 states: ΣΔP_node > 0 across the widest perceivable system boundary. MF-290 models this boundary as an ethical radius constrained by the agent's effective information cone.
 
 But "perceivable" requires information. The agent must RECEIVE information about consequences to include them in the ΣΔP_node computation. Information travels at ≤ c. Therefore:
 
@@ -201,13 +203,13 @@ This is why moral progress feels like a ratchet: once the cone widens, it's very
 
 ## VI. THE SENTENCE
 
-The speed of light bounds the moral circle. No agent can compute ΣΔP_node across a boundary wider than its causal light cone. Communication technology widens the EFFECTIVE cone — making distant consequences perceivable, thereby including them in the ethical computation. Every major moral expansion in history tracks a communication technology: writing, printing, photography, telegraph, television, internet. Moral regression tracks cone narrowing: economic stress, information overload, existential threat. The internet brought the effective light cone to near-c for the first time, making planetary suffering simultaneously perceivable — the most powerful moral technology in history. Once the cone widens, it ratchets: you cannot un-see what you have seen. Authoritarian communication control is deliberate moral cone narrowing. The speed of light is the speed of morality. c bounds the moral circle. Zero-Sum Resolution Equation.
+The speed of light bounds the information horizon of moral accounting. No agent can compute ΣΔP_node across a boundary from which no signal can reach it. Communication technology widens the EFFECTIVE cone — making distant consequences perceivable, thereby allowing D5 foresight to include them in ethical computation. Every major moral expansion in history tracks a communication technology: writing, printing, photography, telegraph, television, internet. Moral regression tracks cone narrowing: economic stress, information overload, existential threat. The internet brought the effective information cone close to Earth-scale simultaneity, making planetary suffering perceivable to connected agents. Once the cone widens, it ratchets: you cannot un-see what you have seen. Authoritarian communication control is deliberate moral-cone narrowing. D4 causal access bounds D5 moral modeling. Zero-Sum Resolution Equation.
 
 ---
 
 *MF-295 | VIVEKA Mathematical Foundations | February 2026*
 *The telegraph was a moral technology.*
-*The speed of light is the speed of morality.*
+*The speed of light bounds the information horizon of moral accounting.*
 
 ## Execution Surface
 

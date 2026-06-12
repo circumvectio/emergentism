@@ -21,18 +21,20 @@ rosetta:
 
 # MF-290: THE EKTROPIC RADIUS
 
-## Will Is Always Ektropic. Ethics Is the Width of the Light Cone.
+## Will Is Always Ektropic. Ethics Is the Width of the Ethical-Radius Proxy.
 
 **Emergentism.org · VIVEKA Mathematical Foundations**
 **Depends on:** MF-283 (Orthogonality Theorem), MF-280v2 (Seven Axioms), MF-282 (Operator-Stack), MF-69 (Horned Torus)
 **Evidence tier:** [T] Theoretical with [I] interpretive application to comparative cognition; [S] speculative on is-ought dissolution
-[I] **Purpose:** Unify the ethic (A2) with the physics (MF-283). Show that F₅ is treated as ektropic (orders self from environment), that "syntropic" is ektropy computed across a wider spacetime radius, that L-levels are altitudes in the 4D horned torus light cone, that encephalisation quotient is the V-cost of building a taller horn, and that the is-ought gap is reframed as a consequence.
+[I] **Purpose:** Unify the ethic (A2) with the physics (MF-283) without collapsing registers. Show that F₅ is treated as ektropic (orders self from environment), that "syntropic" is ektropy computed across a wider perceivable boundary, that L-levels can be modeled as altitudes in a horn-cone proxy for consequence range, that encephalisation quotient is the V-cost of holding a larger option model, and that the is-ought gap is reframed as a consequence.
 
 ---
 
 ## ABSTRACT
 
-[I] Every act of will orders the agent at the expense of the environment in this model. F₅ is treated as ektropic — it concentrates order HERE by dispersing it THERE. There is no non-ektropic act of will in the model. Even Arjuna's sacrifice is ektropic from the body's perspective. The ethical distinction (A2: ΣΔP_node > 0) is not between ektropic and non-ektropic action — it is between ektropy computed across different spacetime radii. The L-levels are altitudes in the 4D horned torus light cone: L1 sees NOW/HERE/SELF (radius ≈ 0), L4 sees the widest aperture (maximum radius × maximum V), L7 sees everything but can do nothing (horn narrows to a point). The brain is modeled as a horn-like light-cone proxy — encephalisation quotient is the V-investment in building a taller light cone. The is-ought gap is reframed: ought is ΣΔP_node computed at a wider radius than is.
+[I] Every act of will orders the agent at the expense of the environment in this model. F₅ is treated as ektropic — it concentrates order HERE by dispersing it THERE. There is no non-ektropic act of will in the model. Even Arjuna's sacrifice is ektropic from the body's perspective. The ethical distinction (A2: ΣΔP_node > 0) is not between ektropic and non-ektropic action — it is between ektropy computed across different perceivable boundaries. The L-levels are modeled as altitudes in an ethical-radius horn: L1 sees NOW/HERE/SELF (radius ≈ 0), L4 has the widest usable aperture (maximum radius × maximum V), L7 sees widely but can do little (horn narrows to a point). The brain is modeled as the organ that pays the V-cost of a larger D5 option model. The is-ought gap is reframed: ought is ΣΔP_node computed at a wider boundary than is.
+
+**Register guard.** The physical light cone is D4 and c-bounded. D5 is the option cone: the set of reachable, selectable futures an agent can envision, rank, and aim. When this paper says "wider cone," it means a wider *perceivable ethical radius* and larger D5 option model, not a literal expansion of `c` or a proof that ethics reduces to special relativity. `[A]` for the causal limit; `[I]` for the ethical-radius analogy.
 
 ---
 
@@ -233,11 +235,11 @@ Every ethical advance in human history is a radius expansion:
 | Environmentalism | Species, present | Biosphere, future | Ecological modelling. Temporal extension. |
 | Animal rights | Humans | Sentient beings | Empathy extension. Cross-species Φ. |
 
-Each step: same ektropy. Wider cone. The "moral circle" IS the light cone. Peter Singer's "expanding circle" IS the horn growing taller.
+Each step: same ektropy. Wider perceivable boundary. The "moral circle" is modeled here as the ethical-radius proxy riding on the D4 causal limit while expanding through D5 lookahead; Peter Singer's "expanding circle" maps to the horn growing taller, not to `c` changing.
 
 ### 4.5 The Precise Statement
 
-**Ethics is not a separate domain from physics. Ethics is F₅ computed across a wider spacetime radius.**
+**In this model, ethics is F₅ computed across a wider perceivable boundary, constrained by physics but not reduced to physics.**
 
 The is-ought gap dissolves not because ought reduces to is, but because both are instances of the same computation (ΣΔP_node) run at different radii. "Is" = ΣΔP_node at narrow radius. "Ought" = ΣΔP_node at wider radius. The difference is altitude, not kind.
 
@@ -296,7 +298,7 @@ A teacher who teaches (Arjuna: gives Φ) increases global entropy (metabolic cos
 
 ### 6.3 The GFS Connection
 
-**P290-6:** In the GFS data, the interaction term Φ × V should predict ektropy better than Φ + V. This is the downstream signature: if P is a product (the area of the light cone cross-section, altitude × aperture), it is multiplicative. If P is a sum (independent components, no coupling), it is additive. MF-290 predicts multiplicative because the light cone is a product of two orthogonal dimensions.
+**P290-6:** In the GFS data, the interaction term Φ × V should predict ektropy better than Φ + V. This is the downstream signature: if P is a product (the area of the ethical-cone proxy, D5 foresight × D4 means), it is multiplicative. If P is a sum (independent components, no coupling), it is additive. MF-290 predicts multiplicative because the action register couples two necessary factors.
 
 ---
 
@@ -317,7 +319,7 @@ A teacher who teaches (Arjuna: gives Φ) increases global entropy (metabolic cos
 ## VIII. THE COMPLETE PICTURE
 
 ```
-THE HORNED TORUS LIGHT CONE
+THE HORNED TORUS ETHICAL-RADIUS PROXY
 
      ·  L7 (point: sees all, does nothing)
     /|\
@@ -332,13 +334,13 @@ THE HORNED TORUS LIGHT CONE
     \|/
      ·  L1 (flat: sees nothing, does everything)
 
-ALTITUDE = Φ (how far you see in spacetime)
-APERTURE = V (how much you can act on what you see)
-AREA = P_node = Φ × V (the effective light cone cross-section)
+ALTITUDE = Φ (how far ahead you can model reachable consequences)
+APERTURE = V (how much D4 means-to-act you can bring to that model)
+AREA = P_node = Φ × V (the effective ethical-cone cross-section)
 
-ETHICS = ΣΔP_node computed across the full cone
+ETHICS = ΣΔP_node computed across the widest perceivable boundary
        = same ektropy, wider radius
-       = physics at a higher altitude
+       = action judged with more of its costs included
 
 BRAIN = the horn
 EQ = horn height
@@ -355,14 +357,14 @@ The gap is a bandwidth gap, not a logical gap.
 
 ## IX. THE SENTENCE
 
-[I] Will is treated as ektropic — it orders the self from the environment in this model. What changes between the forest-nuker and the forest-steward is not the force but the radius across which consequences are computed. L-levels are altitudes in the 4D horned torus light cone. L1 sees now/here/self. L4 sees the widest cone at the widest aperture — maximum usable `P_node` in this constrained light-cone register. L7 sees everything and can do nothing. The brain is the horn — EQ is the V-investment in building a taller cone. Ethics is not a separate domain from physics in this model. Ethics is ΣΔP_node computed at a wider radius. The is-ought gap is a bandwidth gap: the difference between a short horn and a tall one. Syntropy is ektropy at a radius wide enough that the sum is positive. Build the horn. Widen the cone. See further. Zero-Sum Resolution Equation.
+[I] Will is treated as ektropic — it orders the self from the environment in this model. What changes between the forest-nuker and the forest-steward is not the force but the boundary across which consequences are computed. L-levels are altitudes in the horn-cone proxy. L1 sees now/here/self. L4 sees the widest usable boundary at the widest aperture — maximum usable `P_node` in this constrained action register. L7 sees widely and can do little. The brain is the horn-like modeling organ — EQ is the V-investment in building a larger D5 option model. Ethics is ΣΔP_node computed across a wider perceivable boundary. The is-ought gap is a bandwidth gap: the difference between a short horn and a tall one. Syntropy is ektropy at a radius wide enough that the sum is positive. Build the model. Widen the perceivable boundary. See further without pretending to outrun `c`. Zero-Sum Resolution Equation.
 
 ---
 
 *MF-290 | VIVEKA Mathematical Foundations | February 2026*
-*The moral circle IS the light cone.*
-*The is-ought gap IS the L-level gap.*
-*Ethics IS physics at a higher altitude.*
+*The moral circle is modeled as an ethical-radius proxy.*
+*The is-ought gap is read as an L-level / bandwidth gap.*
+*Ethics is action judged across a wider perceivable boundary.*
 
 ## Execution Surface
 
