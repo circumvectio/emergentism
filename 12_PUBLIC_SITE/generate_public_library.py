@@ -64,6 +64,11 @@ directly (the only available lever):
         node or mesh capacity.
   - trinity/13-the-wave-packet/               : tightened equipotentiality to
         `P∞ = φ·ν = 1` and removed ambiguous "maximum P" language.
+  - trinity/03-the-closure/, trinity/06-the-cosmological-cycle/,
+        trinity/18-the-strange-attractor/     : normalized pole/equator
+        register language so pole reset is a singular ZSRE boundary, not
+        ordinary `φ·ν != 1`, and `P∞ = 1` is the background manifold identity
+        rather than the equator's distinguishing objective.
   - will/00-the-core-conjecture/              : mirrored the R6 objective/constraint
         reconciliation; replaced the withdrawn "reality maximizes balance" lead with
         viable completion as constrained option-cone widening under balance and
@@ -126,7 +131,8 @@ directly (the only available lever):
 
 BEFORE ANY FUTURE REGEN: restore the handoff bundle AND apply these same
 corrections to the SOURCE markdown (formal-16 / formal-17 / formal-33 /
-formal-08 / formal-22 / formal-24 / formal-41 / trinity-13 / paper-H /
+formal-08 / formal-22 / formal-24 / formal-41 / trinity-03 / trinity-06 /
+trinity-13 / trinity-18 / paper-H /
 teleology core-conjecture public bundle
 files, plus axiology-public objective-morals-and-ethics and good/evil public
 bundle files, plus trinity-public dharma-yuddha, plus the ring/commandment and

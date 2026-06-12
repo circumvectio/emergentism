@@ -216,7 +216,10 @@ The sphere collapses. The cycle completes. The dot returns.
 - The yogic state of complete unity.
 
 ### The Same North Pole
-Both paths arrive at the **same point**: The north pole where φ · ν ≠ 1. The constraint fails. The system cannot exist here. **Reset is mandatory.**
+Both paths arrive at the **same point**: the north pole, where ordinary
+reciprocal coordinates become singular (`φ -> ∞`, `ν -> 0`) and the analytic
+product is no longer a defined value. This is the ZSRE boundary register, not
+a third finite state inside the manifold. **Reset is mandatory.**
 
 The "antonym" of CCC is **not** a different reset. The antonym is the **same reset approached from the opposite pole** (MF-534).
 

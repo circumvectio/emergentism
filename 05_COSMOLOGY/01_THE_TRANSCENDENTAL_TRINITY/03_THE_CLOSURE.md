@@ -98,9 +98,9 @@ The sphere cannot hold this. The constraint is violated. The system **must reset
                           \ /
                            ▼
                     THE NORTH POLE
-                    φ = ∞, ν = 0
-                    φ · ν ≠ 1
-                    SYSTEM RESET
+                    φ -> ∞, ν -> 0
+                    ordinary φ · ν undefined
+                    ZSRE BOUNDARY RESET
                            |
                            |
                            ▼

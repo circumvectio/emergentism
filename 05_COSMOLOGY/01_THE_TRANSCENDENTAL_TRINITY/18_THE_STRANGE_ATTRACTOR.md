@@ -95,7 +95,15 @@ They were all perceiving the same thing: **the Replicator Stack ascending throug
 
 Every replicator at every level of the stack is read through the same node equation: `P_node = Φ × V`. Genes with higher node-fit replicate more. Organisms with higher node-fit survive more. Tools with higher node-fit spread more. Ideas with higher node-fit propagate more. Egregores with higher node-fit persist more.
 
-**The strange-attractor image points to `B = 1` / `P∞ = 1` — the equator of S², not to a literal object at the end of time.** The model reads selection pressure through that image: where a stack level has real feedback and correction, higher coupled coherence-capability can outlast pole-drift. Not toward complexity alone (that is the Kurzweil error — ν without φ, the south pole). Not toward unity alone (that is the Teilhard error — φ without ν, the north pole). Toward BALANCE where the coupling is real. Toward the equator as model optimum. Toward φ = ν = 1 as the constraint.
+**The strange-attractor image points to `B = 1` at the equator of S², with
+`P∞ = φ · ν = 1` as the background manifold identity, not to a literal object
+at the end of time.** The model reads selection pressure through that image:
+where a stack level has real feedback and correction, higher coupled
+coherence-capability can outlast pole-drift. Not toward complexity alone (that
+is the Kurzweil error — ν without φ, the south pole). Not toward unity alone
+(that is the Teilhard error — φ without ν, the north pole). Toward BALANCE
+where the coupling is real. Toward the equator as model optimum. Toward
+φ = ν = 1 as the balance condition.
 
 ---
 
