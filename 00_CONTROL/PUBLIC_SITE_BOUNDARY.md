@@ -11,10 +11,22 @@ production merge + DNS are owner-gated.
 > PWA plan and is **retired**: the public surface is now the static site at
 > `12_PUBLIC_SITE/` (front door, /0–/6 dimension models, /axioms, /synthesis,
 > /soul-loop, /game, the static long-scroll /book with client-side RAG, the
-> generated library, /atlas). `book-pwa/` is **frozen source** pending the
-> K2-signed AIA migration (`12_PUBLIC_SITE/00_K2_ENVELOPE_APP_MIGRATION_2026_05_31.md`)
-> and is **excluded from the deployed output** by `.vercelignore`. The prior
+> generated library, /atlas). `book-pwa/` is **frozen, migrated source** and is
+> **excluded from the deployed output** by `.vercelignore`. The prior
 > text is superseded, not erased — it remains in git history.
+
+> **Migration-executed note (2026-06-12, [S]):** the K2-signed AIA app migration
+> (`12_PUBLIC_SITE/00_K2_ENVELOPE_APP_MIGRATION_2026_05_31.md`) **executed** —
+> the canonical AIA app now lives at `02_SKYZAI/02_AIA/app/` (signoff
+> `02_SKYZAI/02_AIA/AUDITS/K2_AIA_APP_MIGRATION_SIGNOFF.md`; receipt: 193/193
+> tests, clean lint+build, 50 book pages SSG-prerendered, HTTP 200 route smoke).
+> This `book-pwa/` tree is **frozen-preserved** with a `MOVED_TO_CANONICAL.md`
+> tombstone, not archived, until the AIA app has a verified live-deploy receipt
+> (K3 archive-first). **Do not develop here.** The two surfaces are distinct:
+> the static long-scroll `/book` is the **v1** public surface served from this
+> repo; the AIA "Infinite Book" (`02_AIA/app/`) is the **v2** dynamic medium,
+> deploy/cutover owner-gated and routed via its own repo. `.vercelignore` keeps
+> `book-pwa/` out of *this* deploy regardless.
 
 ## What is Public
 
