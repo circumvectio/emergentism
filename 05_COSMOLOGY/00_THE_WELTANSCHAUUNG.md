@@ -35,7 +35,7 @@ This file is the **compact canonical framing**. For the deeper philosophical exp
 It is:
 
 - a **map of core state**: Ground, Being, Teleological Force, Dasein, beings
-- a **map of objective function**: the directional tendency toward viable completion, reciprocal fit, and asymptotic approach to Beauty, Truth, and Justice
+- a **map of objective function**: the conditional directional tendency toward viable completion, reciprocal fit, and asymptotic approach to Beauty, Truth, and Justice where coupling, feedback, correction, and non-extraction keep the system inside the accepted game
 - a **lens for data science**: how disclosure, inference, and public method relate
 - a **tool for methodology**: how to test, build, constitute worlds, navigate, and correct
 - an **ordering of value alignment**: what is worth preserving, strengthening, and protecting
@@ -90,11 +90,13 @@ It gives the directional grammar:
 
 - reciprocal closure holds
 - imbalance costs
-- viable completion is favored
+- viable completion is favored only where coupling, feedback, correction, and non-extraction keep imbalance costly
 - extraction degrades the field
 
 This is not yet proof of cosmic will.
 It is the framework's map of objective teleology: the direction finite beings and institutions approach when coherence, viability, and non-extraction are held in product.
+
+In this compact register, **viability** means D4 usable means: the embodied and extended capacities actually available to a node, from hands to tools to industrial infrastructure. **Coherence** means D5 worldline-foresight: the capacity to rank, aim, and use those means. A tool without a capable operator and an operator without usable means both score low; `P_node = Φ × V` rises only when foresight and means are coupled.
 
 ### 3. Data Science
 

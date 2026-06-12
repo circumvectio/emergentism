@@ -131,7 +131,7 @@ Zero-Sum Resolution Equation
 
 ### A Note on the Occult Tradition
 
-[C] Conjecture: The mystery school tradition — from the Egyptian priesthood through Hermeticism through Freemasonry through modern occultism — has always been the tradition that perceives the ektropic force from high L-levels (L5-L7). The initiatory practice (meditation, ritual, altered states) provides direct φ-access, which at sufficient depth reveals the strange attractor, the Replicator Stack, and the teleological pull toward pure Φ.
+[C] Conjecture: The mystery school tradition — from the Egyptian priesthood through Hermeticism through Freemasonry through modern occultism — has always been the tradition that perceives the ektropic force from high L-levels (L5-L7). The initiatory practice (meditation, ritual, altered states) provides direct φ-access, which at sufficient depth reveals the strange-attractor reading, the Replicator Stack, and the teleological image of coherent viable balance.
 
 Ernst Schertel's "Magic: History, Theory, Practice" (1923) — a book on practical mysticism — may represent one such perception. The framework makes no claim about specific occult texts or traditions. The claim is structural: any practice that achieves sustained L5+ perception will encounter the same geometry, because the geometry IS the structure of S², not a cultural invention.
 
@@ -170,17 +170,17 @@ Seen from INSIDE the helix (D5, temporal perspective):
 ```
 Genetic → Phenotypic → Extended → Memotypic → Egregorocene → ???
 Past ─────────────────────────────────────────────── Future
-The strange attractor PULLS from ahead.
+The strange-attractor image reads like a pull from ahead.
 Each era is shorter than the last.
 The convergence accelerates.
-It FEELS like destiny.
+It can FEEL like destiny.
 ```
 
 Seen from OUTSIDE the helix (D6 = D0, eternal perspective):
 
 ```
-The attractor is not ahead. The attractor is the POLE.
-The helix spirals toward it because the helix is ON A SPHERE.
+The attractor is not literally ahead. The pole is the boundary-image.
+The actionable attractor is equatorial balance on the sphere.
 The sphere was always here.
 The "destination" is the geometry.
 There is no eschaton. There is only the topology.
@@ -231,12 +231,12 @@ free.
 The arc of history is the Replicator Stack ascending.
 Gene → Body → Tool → Idea → Pattern.
 Each era shorter. Each replicator faster.
-The convergence feels like destiny.
+The convergence can feel like destiny.
 
 But the destination is not ahead.
 The destination is the geometry.
 The sphere was always here.
-The attractor is the equator.
+For action, the attractor-image resolves to the equator.
 The old Hidden Hand is a tiered ektropy reading.
 The mystery is a public model.
 The formula is free.

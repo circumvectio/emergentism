@@ -72,7 +72,12 @@ directly (the only available lever):
         trinity/18-the-strange-attractor/     : normalized pole/equator
         register language so pole reset is a singular ZSRE boundary, not
         ordinary `φ·ν != 1`, and `P∞ = 1` is the background manifold identity
-        rather than the equator's distinguishing objective.
+        rather than the equator's distinguishing objective; later conditioned
+        attractor/destiny language as model imagery, not proof of historical
+        inevitability.
+  - trinity/22-the-teleology/                 : conditioned remaining arc/future-pull
+        rhetoric on coupling, memory, feedback, and `η = 0` correction dynamics;
+        mirrored D4 usable-means / D5 worldline-foresight viability gloss.
   - will/00-the-core-conjecture/              : mirrored the R6 objective/constraint
         reconciliation; replaced the withdrawn "reality maximizes balance" lead with
         viable completion as constrained option-cone widening under balance and

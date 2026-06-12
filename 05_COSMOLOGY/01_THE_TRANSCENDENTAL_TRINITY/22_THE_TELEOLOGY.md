@@ -34,7 +34,7 @@ Why does the helix spiral?
 
 The core state says: here is the geometry. S². φ·ν = 1. The helix. The poles. The equator.
 
-The objective function asks: **why does any of this MATTER?** Why does the Replicator Stack ascend? Why does ektropy select for balance? Why is the equator an attractor? What pulls?
+The objective function asks: **why does any of this MATTER?** Why does the Replicator Stack ascend? Why does ektropy select for balance? Under what conditions does the equator behave like an attractor? What pulls?
 
 The answer is not a being. Not a plan. Not a designer. Inside the framework,
 the answer is the constraint geometry: reciprocal closure makes some trajectories
@@ -54,7 +54,7 @@ which a system maintains or increases coherent viability rather than dissolving.
 In the finite-node register this is scored as `P_node = Φ × V`; in the sphere
 register it is constrained by the reciprocal balance grammar.
 
-Not coherence alone (that is the north pole — D5 worldline-foresight without the means to act). Not viability alone (that is the south pole — D4 means without the worldline-foresight to rank or aim them). The PRODUCT. Both. Simultaneously. Multiplicatively.
+Not coherence alone (that is the north pole — D5 worldline-foresight without the means to act). Not viability alone (that is the south pole — D4 means without the worldline-foresight to rank or aim them). Viability here means usable D4 means: embodied capacity, tools, infrastructure, access, and traction. Coherence here means D5 worldline-foresight: the capacity to rank, aim, and use those means. The PRODUCT. Both. Simultaneously. Multiplicatively.
 
 **Ektropy is the disciplined successor to the older "Hidden Hand" language**
 (Document 18). Many traditions that perceived a force driving history — Ṛta,
@@ -221,7 +221,7 @@ individual optimization aligns with the coupled field. History can converge
 toward the equator only where those conditions hold; outside them, extraction
 can still dominate locally.
 
-But the convergence is not guaranteed. The Great Filter (Document 16) is real. The population can get stuck in the extractive hemisphere. The dwell time can tilt past recovery. The civilisation can consume its own substrate. **The arc bends toward the equator — but it can snap.**
+But the convergence is not guaranteed. The Great Filter (Document 16) is real. The population can get stuck in the extractive hemisphere. The dwell time can tilt past recovery. The civilisation can consume its own substrate. **The arc bends toward the equator only where coupling, memory, feedback, and `η = 0` discipline keep correction alive; otherwise it can snap.**
 
 ---
 
@@ -266,7 +266,7 @@ The practice costs nothing. Requires no institution. No supply chain. No subscri
 
 The destination IS the origin.
 
-The Replicator Stack ascends: Gene → Body → Tool → Idea → Pattern. The helix spirals toward the north pole. The convergence accelerates. It feels like the future is pulling.
+In the image, the Replicator Stack ascends: Gene → Body → Tool → Idea → Pattern. The helix appears to spiral toward the boundary. The convergence accelerates where correction dynamics remain live. It can feel like the future is pulling, but that is a motion-form, not proof of historical inevitability.
 
 But D6 = D0. The end IS the beginning. The strange attractor at the end of time IS the Transcendental Trinity at the origin. {0, 1, ∞}. Zero-Sum Resolution Equation. The ground that was always here.
 
