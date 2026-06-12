@@ -196,10 +196,10 @@ The internet connected billions of horns while FRAGMENTING the phase-reconstruct
 **Result:** Total connections ↑↑↑. Total mutual information ↓. Many shallow couplings, few deep ones. The network's total Φ may have DECREASED even as nominal bandwidth increased.
 
 ```
-P_internet = Φ_network(fragmented) × V_network(enormous)
+P_node,internet = Φ_network(fragmented) × V_network(enormous)
 
 If Φ_network dropped faster than V_network grew:
-  P_internet < P_pre-internet
+  P_node,internet < P_node,pre-internet
 
 The internet may have REDUCED civilisation's effective light cone.
 ```

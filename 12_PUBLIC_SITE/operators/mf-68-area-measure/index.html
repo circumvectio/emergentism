@@ -54,38 +54,38 @@
   </section>
   <article class="library-article">
     <h1 id="mf-68-the-prior-probability-of-ektropy">MF-68: The Prior Probability of Ektropy</h1>
-<h2 id="the-geometric-measure-of-high-p-states-on-s2">The Geometric Measure of High-P States on S²</h2>
+<h2 id="the-geometric-measure-of-high-p-states-on-s2">The Geometric Measure of High Projected-Ektropy States on S²</h2>
 <p><strong>VIVEKA Mathematical Foundations Series — Sphere Derivations</strong>
 <strong>Document ID:</strong> MF-68 | <strong>Version:</strong> 1.0 | <strong>Status:</strong> Core Result
 <strong>Evidence Tier:</strong> [A/I] Elementary calculus on S² + Interpretive ektropy mapping
 <strong>Dependencies:</strong> S0, MF-36 (Equator Principle), MF-51 (Sphere Coordinates), MF-66 (Periodic Table of Minds)</p>
 <hr>
 <h2 id="abstract">ABSTRACT</h2>
-<p>The Riemann sphere S² has total surface area 4π. The value function P(θ) = ½sin(2θ) achieves its maximum P_max = ½ at the equator (θ = π/4 colatitude in the standard parametrization where θ measures from the V-pole). For any threshold k, the region {P ≥ k} is a band of latitudes symmetric about the equator.</p>
-<p>This paper computes the exact fraction of S² where P exceeds any given threshold. The result: the region P ≥ 0.4 occupies only 44.7% of the sphere. The region P ≥ 0.45 occupies only 30.7%. The region P ≥ 0.49 occupies only 11.9%.</p>
-<p>Under random uniform distribution on S², the probability of landing in a high-P state is small. Ektropy is geometrically rare. This is not a flaw in the design — it is a feature of the architecture. The equatorial band is narrow. Reaching it requires intention. Staying on it requires maintenance. The geometry explains why most systems most of the time operate below their potential: the target is small, and random dynamics don't favor it.</p>
+<p>The Riemann sphere S² has total surface area 4π. The projected value function P_band(θ) = ½sin(2θ) achieves its maximum P_band,max = ½ at the equator (θ = π/4 colatitude in the standard parametrization where θ measures from the V-pole). For any threshold k, the region {P_band ≥ k} is a band of latitudes symmetric about the equator.</p>
+<p>This paper computes the exact fraction of S² where P_band exceeds any given threshold. The result: the region P_band ≥ 0.4 occupies only 44.7% of the sphere. The region P_band ≥ 0.45 occupies only 30.7%. The region P_band ≥ 0.49 occupies only 11.9%.</p>
+<p>Under random uniform distribution on S², the probability of landing in a high projected-ektropy state is small. Ektropy is geometrically rare. This is not a flaw in the design — it is a feature of the architecture. The equatorial band is narrow. Reaching it requires intention. Staying on it requires maintenance. The geometry explains why most systems most of the time operate below their potential: the target is small, and random dynamics don't favor it.</p>
 <hr>
 <h2 id="i-the-value-function-on-s2">I. THE VALUE FUNCTION ON S²</h2>
 <h3 id="11-setup">1.1 Setup</h3>
 <p>Using the sphere coordinate system from MF-51, with colatitude θ measured from the "south" pole (• = 0, the V-pole) to the "north" pole (○ = ∞, the Φ-pole): [A]</p>
 <pre><code>Φ(θ) = sin(θ)
 V(θ) = cos(θ)
-P(θ) = Φ(θ) × V(θ) = sin(θ)cos(θ) = ½sin(2θ)
+P_band(θ) = Φ(θ) × V(θ) = sin(θ)cos(θ) = ½sin(2θ)
 </code></pre>
 <p>where θ ∈ [0, π/2] covers the relevant quarter (from pure V at θ = 0 to pure Φ at θ = π/2).</p>
 <ul>
-<li>P(0) = 0 (pure V, no Φ)</li>
-<li>P(π/4) = ½ (L4 apex, equator)</li>
-<li>P(π/2) = 0 (pure Φ, no V)</li>
+<li>P_band(0) = 0 (pure V, no Φ)</li>
+<li>P_band(π/4) = ½ (L4 apex, equator)</li>
+<li>P_band(π/2) = 0 (pure Φ, no V)</li>
 </ul>
-<h3 id="12-the-p-level-curves">1.2 The P-Level Curves</h3>
-<p>For a given threshold k ∈ (0, ½], the equation P(θ) = k gives: [A]</p>
+<h3 id="12-the-p-level-curves">1.2 The P_band Level Curves</h3>
+<p>For a given threshold k ∈ (0, ½], the equation P_band(θ) = k gives: [A]</p>
 <pre><code>½sin(2θ) = k
 2θ = arcsin(2k)
 θ = ½ arcsin(2k)
 </code></pre>
-<p>By symmetry, P(θ) = k also at θ = π/2 − ½ arcsin(2k).</p>
-<p>The region {P ≥ k} is the band:</p>
+<p>By symmetry, P_band(θ) = k also at θ = π/2 − ½ arcsin(2k).</p>
+<p>The region {P_band ≥ k} is the band:</p>
 <pre><code>½ arcsin(2k) ≤ θ ≤ π/2 − ½ arcsin(2k)
 </code></pre>
 <hr>
@@ -99,13 +99,13 @@ P(θ) = Φ(θ) × V(θ) = sin(θ)cos(θ) = ½sin(2θ)
 </code></pre>
 <p>Total sphere area: A = 4π (θ₁ = 0, θ₂ = π). [A]</p>
 <h3 id="22-note-on-the-viveka-parametrization">2.2 Note on the VIVEKA Parametrization</h3>
-<p>The VIVEKA sphere uses only the first quadrant of S² for the Φ-V-P dynamics (θ ∈ [0, π/2]), representing one hemisphere. The other hemisphere is related by the involution z → 1/z (MF-44). For the area fraction calculation, we work with the full sphere and recognize that P(θ) = P(π − θ) by the pole identification D0 = D6. The high-P band appears in both hemispheres symmetrically. [I]</p>
-<h3 id="23-area-of-the-high-p-band">2.3 Area of the High-P Band</h3>
+<p>The VIVEKA sphere uses only the first quadrant of S² for the Φ-V-P_band projected dynamics (θ ∈ [0, π/2]), representing one hemisphere. The other hemisphere is related by the involution z → 1/z (MF-44). For the area fraction calculation, we work with the full sphere and recognize that P_band(θ) = P_band(π − θ) by the pole identification D0 = D6. The high projected-ektropy band appears in both hemispheres symmetrically. [I]</p>
+<h3 id="23-area-of-the-high-p-band">2.3 Area of the High Projected-Ektropy Band</h3>
 <p>For threshold k, with θ₁ = ½ arcsin(2k) and θ₂ = π/2 − ½ arcsin(2k), and including both hemispheres: [A]</p>
-<pre><code>A(P ≥ k) = 2 × 2π[cos(θ₁) − cos(θ₂)]
+<pre><code>A(P_band ≥ k) = 2 × 2π[cos(θ₁) − cos(θ₂)]
 </code></pre>
 <p>The fraction of total sphere area:</p>
-<pre><code>f(k) = A(P ≥ k) / 4π = [cos(θ₁) − cos(θ₂)]
+<pre><code>f(k) = A(P_band ≥ k) / 4π = [cos(θ₁) − cos(θ₂)]
 </code></pre>
 <h3 id="24-computed-values">2.4 Computed Values</h3>
 <table>
@@ -186,11 +186,11 @@ P(θ) = Φ(θ) × V(θ) = sin(θ)cos(θ) = ½sin(2θ)
 </table>
 <p>[A — all values computed from the formula]</p>
 <h3 id="25-the-key-insight">2.5 The Key Insight</h3>
-<p><strong>P_max itself (= ½) occupies measure zero on S².</strong> The maximum is achieved on a single latitude — a circle of zero width. You can approach it but you cannot sit on it. [A]</p>
-<p><strong>P ≥ 0.45 occupies about 31% of the sphere.</strong> Getting into the "high performance" band requires being within ±13° of the equator. [A]</p>
-<p><strong>P ≥ 0.49 occupies about 12% of the sphere.</strong> Excellent ektropy requires being within ±5° of the equator. Very narrow. [A]</p>
+<p><strong>P_band,max itself (= ½) occupies measure zero on S².</strong> The maximum is achieved on a single latitude — a circle of zero width. You can approach it but you cannot sit on it. [A]</p>
+<p><strong>P_band ≥ 0.45 occupies about 31% of the sphere.</strong> Getting into the "high performance" band requires being within ±13° of the equator. [A]</p>
+<p><strong>P_band ≥ 0.49 occupies about 12% of the sphere.</strong> Excellent ektropy requires being within ±5° of the equator. Very narrow. [A]</p>
 <h3 id="26-the-12-coincidence-cf-mf-66-oq-2-resolved">2.6 The 12% Coincidence (cf. MF-66) — OQ-2 RESOLVED</h3>
-<p>The region P ≥ 0.49 occupies approximately 12% of S². MF-66 independently reports that the Mandelbrot set M occupies approximately 12% of the disk |c| ≤ 2 in parameter space (area(M) ≈ 1.5065, area of disk ≈ 4π ≈ 12.57, ratio ≈ 12.0%). Both arrive at "roughly 12%."</p>
+<p>The region P_band ≥ 0.49 occupies approximately 12% of S². MF-66 independently reports that the Mandelbrot set M occupies approximately 12% of the disk |c| ≤ 2 in parameter space (area(M) ≈ 1.5065, area of disk ≈ 4π ≈ 12.57, ratio ≈ 12.0%). Both arrive at "roughly 12%."</p>
 <p><strong>Resolution:</strong> The coincidence is <strong>numerical, not structural.</strong> [A]</p>
 <p>The natural map between the two spaces is stereographic projection, which maps ℂ (the c-plane) to S². Under stereographic projection, the area element transforms as:</p>
 <pre><code>dA_S² = 4/(1 + |c|²)² dA_ℂ
@@ -201,41 +201,41 @@ fraction of S² ≈ 3.6 / 4π ≈ 28%
 </code></pre>
 <p>So M occupies roughly <strong>28%</strong> of S² under stereographic projection — not 12%. The natural map between the two spaces does NOT preserve the 12% figure. [A]</p>
 <p>The coincidence depends on two independent choices:
-1. The threshold k = 0.49 in the P-band calculation (k = 0.48 gives ~20%; k = 0.499 gives ~3%)
+1. The threshold k = 0.49 in the P_band calculation (k = 0.48 gives ~20%; k = 0.499 gives ~3%)
 2. The reference disk |c| ≤ 2 in the Mandelbrot ratio (|c| ≤ 1.5 or |c| ≤ 3 gives different fractions)</p>
 <p>The numbers match at this one specific pair of choices. This is a numerical coincidence, not a theorem. The poetic observation — "ektropy is rare in both state space and parameter space" — remains valid as a qualitative insight, but the quantitative agreement at 12% is not structurally forced. [I]</p>
 <p><strong>OQ-2 status: RESOLVED — numerical coincidence, not structural.</strong></p>
 <hr>
 <h2 id="iii-the-random-dynamics-argument">III. THE RANDOM DYNAMICS ARGUMENT</h2>
 <h3 id="31-uniform-distribution-baseline">3.1 Uniform Distribution Baseline</h3>
-<p>If a system's state were uniformly distributed on S² (maximum entropy, no structural preference), the probability of being in the high-P band would equal the fractional area. [A]</p>
+<p>If a system's state were uniformly distributed on S² (maximum entropy, no structural preference), the probability of being in the high projected-ektropy band would equal the fractional area. [A]</p>
 <ul>
-<li>P(P ≥ 0.40) ≈ 45%</li>
-<li>P(P ≥ 0.45) ≈ 31%</li>
-<li>P(P ≥ 0.49) ≈ 12%</li>
-<li>P(P ≥ 0.499) ≈ 3%</li>
+<li>Pr(P_band ≥ 0.40) ≈ 45%</li>
+<li>Pr(P_band ≥ 0.45) ≈ 31%</li>
+<li>Pr(P_band ≥ 0.49) ≈ 12%</li>
+<li>Pr(P_band ≥ 0.499) ≈ 3%</li>
 </ul>
 <p>Random dynamics, even constrained to S², would rarely produce excellent ektropy. The geometry itself makes mediocrity the default. [I]</p>
 <h3 id="32-why-this-matters">3.2 Why This Matters</h3>
 <p>The area calculation answers a foundational question: <strong>is ektropy improbable by design or by accident?</strong></p>
-<p>Answer: by geometry. The equator is one-dimensional on a two-dimensional surface. High P requires being near a measure-zero set. Random walks on S² spend most of their time at moderate latitudes where P is moderate — not at the equator where P is maximal.</p>
+<p>Answer: by geometry. The equator is one-dimensional on a two-dimensional surface. High projected ektropy requires being near a measure-zero set. Random walks on S² spend most of their time at moderate latitudes where P_band is moderate — not at the equator where P_band is maximal.</p>
 <p>This has three implications: [I]</p>
-<p><strong>Implication 1: Intentionality is necessary.</strong> Random dynamics don't favor the equator. Reaching and staying near L4 requires directed effort — what the traditions call tapas (heat, discipline, practice). Without intentional navigation, the system drifts to the area-weighted average, which is P ≈ 0.35 (the area-averaged P over the whole sphere).</p>
-<p><strong>Implication 2: Maintenance is continuous.</strong> Even after reaching the equatorial band, any random perturbation is more likely to push the system away from the equator (toward the larger-area low-P regions) than toward it. Staying requires ongoing correction. This is Viṣṇu — the stabilizer.</p>
-<p><strong>Implication 3: The area-weighted average IS the default.</strong> The expected P under uniform distribution:</p>
-<pre><code>E[P] = (1/4π) ∫∫ P(θ) dA = (1/4π) ∫₀²π ∫₀π ½sin(2θ)·sin(θ) dθ dφ
+<p><strong>Implication 1: Intentionality is necessary.</strong> Random dynamics don't favor the equator. Reaching and staying near L4 requires directed effort — what the traditions call tapas (heat, discipline, practice). Without intentional navigation, the system drifts to the area-weighted average, which is P_band ≈ 0.35 (the area-averaged P_band over the whole sphere).</p>
+<p><strong>Implication 2: Maintenance is continuous.</strong> Even after reaching the equatorial band, any random perturbation is more likely to push the system away from the equator (toward the larger-area low projected-ektropy regions) than toward it. Staying requires ongoing correction. This is Viṣṇu — the stabilizer.</p>
+<p><strong>Implication 3: The area-weighted average IS the default.</strong> The expected P_band under uniform distribution:</p>
+<pre><code>E[P_band] = (1/4π) ∫∫ P_band(θ) dA = (1/4π) ∫₀²π ∫₀π ½sin(2θ)·sin(θ) dθ dφ
 </code></pre>
 <p>Computing: [A]</p>
-<pre><code>E[P] = (1/2) ∫₀^{π/2} sin(2θ)sin(θ) dθ = (1/2) ∫₀^{π/2} 2sin(θ)cos(θ)sin(θ) dθ
+<pre><code>E[P_band] = (1/2) ∫₀^{π/2} sin(2θ)sin(θ) dθ = (1/2) ∫₀^{π/2} 2sin(θ)cos(θ)sin(θ) dθ
      = ∫₀^{π/2} sin²(θ)cos(θ) dθ = [sin³(θ)/3]₀^{π/2} = 1/3
 </code></pre>
-<p><strong>The expected P under random dynamics is 1/3.</strong> [A]</p>
-<p>Compare: P_max = 1/2. The gap between random (1/3) and optimal (1/2) is the measure of what intentionality can achieve. The ratio is 2/3 — random dynamics capture about two-thirds of the maximum. The remaining third requires effort. [I]</p>
+<p><strong>The expected P_band under random dynamics is 1/3.</strong> [A]</p>
+<p>Compare: P_band,max = 1/2. The gap between random (1/3) and optimal (1/2) is the measure of what intentionality can achieve. The ratio is 2/3 — random dynamics capture about two-thirds of the maximum. The remaining third requires effort. [I]</p>
 <hr>
 <h2 id="iv-the-ecological-interpretation">IV. THE ECOLOGICAL INTERPRETATION</h2>
 <h3 id="41-why-most-systems-are-mediocre">4.1 Why Most Systems Are Mediocre</h3>
 <p>The area calculation explains a universal observation: most organisms, most organizations, most civilizations operate well below their theoretical maximum. [I]</p>
-<p>This is not because of some deficiency. It is because the equator is narrow and random perturbations are omnidirectional. The <em>default</em> state of any system on S² is moderate P — not terrible (the poles are also measure-zero), but not excellent (the equator is also measure-zero).</p>
+<p>This is not because of some deficiency. It is because the equator is narrow and random perturbations are omnidirectional. The <em>default</em> state of any system on S² is moderate P_band — not terrible (the poles are also measure-zero), but not excellent (the equator is also measure-zero).</p>
 <p>The distribution is peaked in the mid-latitudes. Most systems, most of the time, live in the broad band of "okay but not great." This is the geometric content of the observation that mediocrity is the norm and excellence is rare.</p>
 <h3 id="42-the-narrowness-of-l4">4.2 The Narrowness of L4</h3>
 <p>L4 (the integrated apex) occupies the narrowest band of any named level. L1 (survival) occupies a broad band near the V-pole. L7 (boundary/transcendent) occupies a broad band near the Φ-pole. L4, at the equator, is squeezed between them.</p>
@@ -244,11 +244,11 @@ fraction of S² ≈ 3.6 / 4π ≈ 28%
 <p>Is the equator an attractor of the dynamics, or merely a fixed point that the dynamics pass through?</p>
 <p>For z → z² at |z| = 1: the equator IS the Julia set — the boundary between convergence (toward 0) and escape (toward ∞). Points on the equator stay on the equator but are chaotically unstable. This is MF-36's result: the equator is the edge of chaos, not a rest state.</p>
 <p>For z → z² + c with c ≠ 0: the Julia set deforms away from the equator. The equator is no longer invariant. The system must actively correct to stay near it.</p>
-<p><strong>Conclusion:</strong> The equator is not an attractor. It is a ridge — the highest point of the P-landscape, from which every direction leads down. Staying on the ridge requires continuous adjustment. The area measure quantifies why: the summit is measure-zero in a space that pulls you downward in every direction. [A/I]</p>
+<p><strong>Conclusion:</strong> The equator is not an attractor. It is a ridge — the highest point of the projected-ektropy landscape, from which every direction leads down. Staying on the ridge requires continuous adjustment. The area measure quantifies why: the summit is measure-zero in a space that pulls you downward in every direction. [A/I]</p>
 <hr>
 <h2 id="v-the-information-theoretic-view">V. THE INFORMATION-THEORETIC VIEW</h2>
-<h3 id="51-surprise-and-p">5.1 Surprise and P</h3>
-<p>The probability of a state with P ≥ k under uniform distribution is f(k). The self-information (surprise) of finding such a state is: [A]</p>
+<h3 id="51-surprise-and-p">5.1 Surprise and P_band</h3>
+<p>The probability of a state with P_band ≥ k under uniform distribution is f(k). The self-information (surprise) of finding such a state is: [A]</p>
 <pre><code>I(k) = −log₂(f(k)) bits
 </code></pre>
 <table>
@@ -287,24 +287,24 @@ fraction of S² ≈ 3.6 / 4π ≈ 28%
 </tr>
 </tbody>
 </table>
-<p><strong>A system at P ≥ 0.49 carries about 3 bits of surprise.</strong> Encountering it is like seeing 3 coin flips all come up heads — unlikely but not astonishing. [A]</p>
-<p><strong>A system at P ≥ 0.499 carries about 5 bits.</strong> Now it's like seeing 5 heads in a row — this requires explanation. [A]</p>
+<p><strong>A system at P_band ≥ 0.49 carries about 3 bits of surprise.</strong> Encountering it is like seeing 3 coin flips all come up heads — unlikely but not astonishing. [A]</p>
+<p><strong>A system at P_band ≥ 0.499 carries about 5 bits.</strong> Now it's like seeing 5 heads in a row — this requires explanation. [A]</p>
 <h3 id="52-the-channel-capacity-interpretation">5.2 The Channel Capacity Interpretation</h3>
-<p>If the VIVEKA sphere is a communication channel between agents, then the maximum mutual information is bounded by the area fraction. Only ~12% of the sphere carries P ≥ 0.49. A channel restricted to high-P states has lower capacity but higher fidelity. [I]</p>
+<p>If the VIVEKA sphere is a communication channel between agents, then the maximum mutual information is bounded by the area fraction. Only ~12% of the sphere carries P_band ≥ 0.49. A channel restricted to high projected-ektropy states has lower capacity but higher fidelity. [I]</p>
 <p>Quality constrains quantity. This is the geometric reason why deep communication is rare and bandwidth-limited. [I]</p>
 <hr>
 <h2 id="vi-implications-for-intervention-design">VI. IMPLICATIONS FOR INTERVENTION DESIGN</h2>
 <h3 id="61-the-leverage-principle">6.1 The Leverage Principle</h3>
 <p>The area calculation shows where interventions have the highest return. [I]</p>
-<p><strong>Near the equator (P ~ 0.45):</strong> A small improvement in θ (moving 5° closer to equator) increases P from 0.45 to 0.49 — a 9% gain. High leverage.</p>
-<p><strong>Far from the equator (P ~ 0.20):</strong> A 5° improvement increases P from 0.20 to 0.24 — a 20% gain in percentage terms, but a small absolute gain of 0.04. Lower absolute leverage.</p>
-<p><strong>Near the poles (P ~ 0.05):</strong> Any movement away from the pole helps, but the system is so far from the equator that reaching high P requires massive θ-change. Low leverage.</p>
+<p><strong>Near the equator (P_band ~ 0.45):</strong> A small improvement in θ (moving 5° closer to equator) increases P_band from 0.45 to 0.49 — a 9% gain. High leverage.</p>
+<p><strong>Far from the equator (P_band ~ 0.20):</strong> A 5° improvement increases P_band from 0.20 to 0.24 — a 20% gain in percentage terms, but a small absolute gain of 0.04. Lower absolute leverage.</p>
+<p><strong>Near the poles (P_band ~ 0.05):</strong> Any movement away from the pole helps, but the system is so far from the equator that reaching high P_band requires massive θ-change. Low leverage.</p>
 <h3 id="62-the-triage-implication">6.2 The Triage Implication</h3>
 <p>Systems near the equator benefit most from precision (small adjustments, Viṣṇu preservation-boundary phase). Systems near the poles need gross movement (large θ-change, Brahmā creation-boundary phase). Systems in the mid-latitudes need direction (Kṛṣṇa deployable move — spiral toward equator).</p>
 <p>The optimal intervention depends on current latitude. The area measure quantifies this: the closer to the equator, the smaller the adjustment needed, but the narrower the band you're aiming for. [I]</p>
 <hr>
 <h2 id="the-sentence">THE SENTENCE</h2>
-<p>The equator is a circle on a sphere. Circles have zero area. Maximum ektropy is measure-zero. Under random dynamics, the expected P is 1/3 — two-thirds of maximum. The remaining third requires intentionality.</p>
+<p>The equator is a circle on a sphere. Circles have zero area. Maximum ektropy is measure-zero. Under random dynamics, the expected P_band is 1/3 — two-thirds of maximum. The remaining third requires intentionality.</p>
 <p>Ektropy is not default. It is geometric achievement — reaching and maintaining a narrow band on a surface that pulls you everywhere else.</p>
 <hr>
 <p>Zero-Sum Resolution Equation</p>

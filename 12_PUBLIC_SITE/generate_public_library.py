@@ -169,7 +169,9 @@ directly (the only available lever):
                                               : normalized carrier/network
         product notation from generic `P_i` / `P_individual` to finite-node
         `P_node,i` / `P_node,individual`; later normalized the DAC objective
-        from bare "maximise P" to carrier-network `P_node`.
+        from bare "maximise P" to carrier-network `P_node`, and renamed the
+        internet/pre-internet network variables to `P_node,internet` /
+        `P_node,pre-internet`.
   - operators/mf-292-the-bekenstein-ceiling/  : normalized remaining finite-node
         product prose from bare "total/local/minimum P" to `P_node`.
   - operators/mf-290-the-ektropic-radius-v2/, operators/mf-70-kali-closes-sphere/
@@ -193,6 +195,13 @@ directly (the only available lever):
         "inevitable / demands / enforces" teleology language to conditional
         selection pressure, asymptotic correction, or proposed repair language
         under coupling, feedback, correction, provenance, and `η = 0`.
+  - formal/12-efr-extraction-coefficient/    : normalized the M-axis connection
+        row from bare `P` to finite-node `P_node`, with `P∞ = φ·ν = 1`
+        preserved as the background manifold identity rather than a variable
+        harm target.
+  - operators/mf-68-area-measure/             : renamed the legacy local value
+        function from bare `P(θ)` to projected `P_band(θ)` so the area-measure
+        derivation does not compete with `P∞` or finite-node `P_node`.
 
 BEFORE ANY FUTURE REGEN: restore the handoff bundle AND apply these same
 corrections to the SOURCE markdown (formal-16 / formal-17 / formal-33 /
@@ -205,8 +214,9 @@ formal-09/10/11 Power-Max label public bundles, plus theurgy-public and
 glossary-public will/become-as-gods bundles, plus meta-public
 remaining-questions, plus memetic-public, paradox-public PD_10_IS_OUGHT,
 teleology-public L1_L7_REFINEMENT_AUDIT, glossary-public, formal-public 25/29/30,
-trinity-public 31/33, teleology-public 00_A_SQUARE/05_EXHAUSTIVE_OBSERVATIONS,
-and operators-public MF-290/MF-292/MF-294/MF-70), or this generator will overwrite
+formal-public 12, trinity-public 31/33,
+teleology-public 00_A_SQUARE/05_EXHAUSTIVE_OBSERVATIONS, and operators-public
+MF-68/MF-290/MF-292/MF-294/MF-70), or this generator will overwrite
 the hand-patches and reintroduce the over-claims. Also fix the title-doubling: when a source heading already ends in
 "— Emergentism", `page_shell(title=...)` appends a second one.
 """

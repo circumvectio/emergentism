@@ -207,7 +207,7 @@ The M-Axis connects to every other axis:
 | D (Dimensions) | Evil operates at D4 (physical extraction) and D5 (informational extraction) |
 | L (Levels) | Evil is L1-L2 operating at scale (survival-level extraction applied systemically) |
 | E (Scales) | Evil is E5-E6 (civilizational extraction through institutional capture) |
-| P (Ektropy) | Evil reduces P by destroying Φ while maintaining V (zero-factor catastrophe applied) |
+| P_node (finite-node ektropy) | Evil reduces usable `P_node` by destroying Φ while inflating or maintaining V; `P∞ = φ·ν = 1` remains the background manifold invariant, so the collapse is a finite-node/contact-register loss rather than a change to the sphere identity. |
 
 ---
 

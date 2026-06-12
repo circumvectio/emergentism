@@ -75,7 +75,7 @@ Under this reading:
 This does not replace the earlier definitions.
 It sharpens them.
 
-Good increases `P` without trapping the being inside the channel that delivered the increase.
+Good increases finite-node `P_node` without trapping the being inside the channel that delivered the increase.
 
 Evil increases local control by forcing the being to remain dependent on the channel.
 
