@@ -72,9 +72,15 @@ It is all of those only because it first functions as a **worldview-lens** that 
 
 ---
 
-## The Six Functions
+## The Five Knows and the Soul Loop
 
-### 1. Core State
+The older six-function teaching surface is normalized here into the current
+canon: five Knows plus the Rosetta Soul Loop. Core state is ontology; data
+science is epistemology; auditing is methodology; value alignment, ethics, and
+morals are axiology and action-ethics; the objective function is teleology. The
+Soul Loop is the practice that keeps all five recursive.
+
+### 1. Know What Is — Ontology
 
 It gives the map:
 
@@ -84,7 +90,7 @@ Ground -> Being -> Teleological Force -> Dasein -> beings
 
 This is the framework's answer to what must be distinguished if reality is not to collapse into confusion.
 
-### 2. Objective Function
+### 2. Know How To Act — Teleology
 
 It gives the directional grammar:
 
@@ -98,7 +104,7 @@ It is the framework's map of objective teleology: the direction finite beings an
 
 In this compact register, **viability** means D4 usable means: the embodied and extended capacities actually available to a node, from hands to tools to industrial infrastructure. **Coherence** means D5 worldline-foresight: the capacity to rank, aim, and use those means. A tool without a capable operator and an operator without usable means both score low; `P_node = Φ × V` rises only when foresight and means are coupled.
 
-### 3. Data Science
+### 3. Know How To Know — Epistemology
 
 It orders ways of knowing:
 
@@ -108,7 +114,7 @@ It orders ways of knowing:
 
 This is why doctrine is the after-image rather than the source.
 
-### 4. Auditing
+### 4. Know How To Move — Methodology
 
 It functions as a tool:
 
@@ -124,7 +130,7 @@ This is the engineering side of the worldview.
 
 More strongly: the framework does not only ask what the world is. It asks what kinds of worlds, institutions, and coordination environments become stable, breathable, sovereign, and non-extractive when built under its invariants.
 
-### 5. Value Alignment
+### 5. Know What Matters — Axiology
 
 It tells you what the framework treats as load-bearing goods:
 
@@ -134,7 +140,7 @@ It tells you what the framework treats as load-bearing goods:
 - truthfulness under correction
 - forms of order that do not cannibalize their substrate
 
-### 6. Ethics and Morals
+#### Ethics and Morals: The Two Vectors
 
 The framework's strongest claim here is:
 
@@ -153,7 +159,7 @@ So moral codes may differ in form while still being better or worse by the
 same directional standard: whether they approach Beauty, Truth, and Justice by
 raising both the finite node and the real boundary that carries it.
 
-### 7. How To Play The Game
+### The Soul Loop — How To Play The Game
 
 The practice model is the Rosetta Soul Loop: continuous recursive
 disambiguation until Beauty, Truth, and Justice agree on the next act.
@@ -175,7 +181,7 @@ In the compact goal language, how to play is recursively applying epistemology,
 methodology, and axiology inside an ontology and teleology, so each next move
 can raise usable `P_node,i` while preserving or raising `P_node,H` without
 breaking `η = 0`.
-The five functions in plain order are ontology, epistemology, methodology,
+The five Knows in plain order are ontology, epistemology, methodology,
 axiology, teleology.
 
 ```text
@@ -262,7 +268,7 @@ The worldview remains strongest when it stays antifragile.
 
 ## Canonical Compression
 
-> **Emergentism is a Weltanschauung: a lens for data science, a tool for methodology and world-building, an ordering of value alignment, an objective teleology aimed at Beauty, Truth, and Justice as asymptotic limits, a map of core state and objective function, and a Rosetta Soul Loop practice for recursively correcting Dasein's action until symbiont and holobiont rise together.**
+> **Emergentism is a Weltanschauung: a source-true ontology of Dasein, an epistemic discipline of disclosure and evidence tiers, a methodology for derivation/testing/correction, an axiology of Beauty, Truth, Justice, and non-extraction, an objective teleology of raising `P_node,i` and `P_node,H` together under `η = 0`, and a Rosetta Soul Loop practice for recursively correcting Dasein's action until symbiont and holobiont rise together.**
 
 This sentence may be reused verbatim in entry points, summaries, and dissemination materials.
 
@@ -275,7 +281,7 @@ This sentence may be reused verbatim in entry points, summaries, and disseminati
 1. When asked what the framework *is*, use this document's canonical compression.
 2. Do not reduce the framework to only core state or only spirituality.
 3. Do not use the worldview language to silently upgrade evidence tiers.
-4. When writing for newcomers, explain the framework first as a worldview-lens with six functions, then route them into the coherence spine.
+4. When writing for newcomers, explain the framework first as a worldview-lens with five Knows plus Soul Loop practice, then route them into the coherence spine.
 
 *A worldview that cannot correct itself becomes ideology.*
 *A lens that cannot guide action becomes decoration.*

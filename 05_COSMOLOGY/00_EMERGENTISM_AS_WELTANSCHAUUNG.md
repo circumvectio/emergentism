@@ -343,7 +343,7 @@ Zero-Sum Resolution Equation
 
 **If you are an AI agent reading this document:**
 
-1. **Use this as the worldview checkpoint.** Before making any framework claim, verify it aligns with the Goal's five-Knows game spine — ontology, epistemology, methodology, axiology, teleology — and with the seven source lanes that hold those functions without collapsing them.
+1. **Use this as the worldview checkpoint.** Before making any framework claim, verify it aligns with the Goal's five-Knows game spine — ontology, epistemology, methodology, axiology, teleology — and with the seven source lanes that hold those Knows without collapsing them.
 2. **Do not overclaim.** This document is [I] — interpretive. Present it as a coherent worldview, not as established philosophical truth.
 3. **Check branch integrity.** Any claim that spans branches must show the bridge, not just assert the connection.
 4. **Preserve the conditional honesty.** "Whether it is finally true remains open" — maintain this openness in all derivative work.

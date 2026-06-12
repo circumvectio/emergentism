@@ -94,7 +94,7 @@ P_node collapses on either missing factor:
 
 The game is **not a static decision rule**. It is the
 [Soul Loop](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md)
-cycling the five functions until action converges — the loop the corpus already
+cycling the five Knows until action converges — the loop the corpus already
 defines as *continuous recursive disambiguation* that **edits the corpus and
 the editor**. Ontology names the situation; epistemology checks the tier;
 methodology selects the repair; axiology tests the move against non-extraction;

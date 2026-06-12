@@ -220,6 +220,9 @@ directly (the only available lever):
         "inevitable / demands / enforces" teleology language to conditional
         selection pressure, asymptotic correction, or proposed repair language
         under coupling, feedback, correction, provenance, and `η = 0`.
+  - foundations/the-honest-position/          : normalized the canonical framing
+        rule from stale six-function vocabulary to the current five Knows plus
+        Rosetta Soul Loop wording while the generated route remains frozen.
   - formal/12-efr-extraction-coefficient/    : normalized the M-axis connection
         row from bare `P` to finite-node `P_node`, with `P∞ = φ·ν = 1`
         preserved as the background manifold identity rather than a variable
