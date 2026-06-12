@@ -77,13 +77,13 @@ The five refusals are *directional* — each prevents drift toward a specific fa
 
 | Refusal | Direction it forbids | Pathology at that pole |
 |---|---|---|
-| η = 0 | Toward the V-pole via extraction | Pure-V organism: hedge fund, conquest empire, ad-funded platform. Survives. Has no coherence. |
+| η = 0 | Toward the V-pole by allowing `η_move > 0` extraction | Pure-V organism: hedge fund, conquest empire, ad-funded platform. Survives by taking. Has no coherence. |
 | K2 | Toward the Φ-pole via internal-only signoff | Pure-Φ organism: regulatory council, philosophy department, blockchain with no users. Coherent. Has no viability. |
 | K3 | Toward the V-pole via amnesia | Edited-history regime. Survives by forgetting inconvenient losses. Coherence destroyed retroactively. |
 | K4 | Toward the Φ-pole via lock-in | Cult / closed society. Internally coherent. Externally a captivity arrangement. |
 | A7 | Toward the V-pole via inflated claims | Pump-and-dump / hype-driven enterprise. Survives short-term on overstatement. Coherence destroyed on the first audit. |
 
-Three refusals prevent V-pole drift (η=0, K3, A7). Two prevent Φ-pole drift (K2, K4). The asymmetry is real: there are more ways to maximize V at the cost of Φ than the reverse, because V failures look like "growth" until they hit the wall.
+Three refusals prevent V-pole drift (the `η = 0` refusal, K3, A7). Two prevent Φ-pole drift (K2, K4). The asymmetry is real: there are more ways to maximize V at the cost of Φ than the reverse, because V failures look like "growth" until they hit the wall. The register must stay explicit: `η = 0` is the action fence; extraction is the drift it forbids.
 
 **Together, the five refusals fence the equator on both sides.** The equator is not a single point but a one-dimensional manifold (the great circle); the refusals are the gates that keep the system on it.
 
