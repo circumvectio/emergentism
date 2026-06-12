@@ -254,8 +254,12 @@ The loop closes: L1 → (L2…L6…L2) → L7 → L1 → …
 
 ## The Game Form
 
-The Soul Loop is the practical answer to "how do I play?" It is the continuous
-recursive application of the five philosophical functions to a finite life:
+The Soul Loop is the practical answer to "how do I play?" The goal the game
+serves is declared at the root — [`00_THE_GOAL.md`](../../00_THE_GOAL.md), the
+project's Ω stated and tier-fenced: a living worldview for Dasein, symbiont and
+holobiont rising together under `η = 0`. This section is that goal's **how**:
+the continuous recursive application of the five philosophical functions to a
+finite life:
 
 ```text
 Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
