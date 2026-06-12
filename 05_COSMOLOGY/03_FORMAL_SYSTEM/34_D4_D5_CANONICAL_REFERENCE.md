@@ -33,6 +33,8 @@ rosetta:
 | **Torus** | The hole | The surface |
 | **Quantum** | Potential (Copenhagen pre-collapse) | Actuality — Many-Worlds (distributed D5) or Copenhagen selected (singular D5) |
 
+**Action-register bridge.** The table above names the dimensional scaffold. In the practical play rule, `V` is D4 means-to-act: body, tools, energy, access, timing, and execution capacity at the action boundary. `Φ` is D5 worldline-foresight: the ability to envision, rank, and aim reachable futures with those means. A child beside a jet and a trained pilot without the relevant bodily/tool access fail on opposite sides of the same product. In contact language, `P_node = Φ × V` only survives when both factors are usable and non-extractive under `η = 0`.
+
 ---
 
 ## II. DIMENSIONAL EMERGENCE SEQUENCE

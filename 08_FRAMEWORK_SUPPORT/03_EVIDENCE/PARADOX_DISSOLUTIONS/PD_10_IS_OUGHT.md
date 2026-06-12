@@ -133,18 +133,19 @@ If the framework is read as philosophy, Hume's insight stands: no description of
 
 The instrumental framing treats "valuing persistence" as a premise one may grant or withhold. Phenomenologically, the question is partly malformed — because for the being who can ask it, care for its own being is already disclosed through dimensional constitution. That does not yet choose the ethical vow; it only locates the condition under which choosing matters.
 
-In Heidegger, *Dasein* is the being for whom *its own being is an issue*. This is not optional; it is the opening of the space in which all questioning becomes possible. *Sorge* (care) is Dasein's fundamental structure — and it maps precisely to D4/D5:
+In Heidegger, *Dasein* is the being for whom *its own being is an issue*. This is not optional; it is the opening of the space in which all questioning becomes possible. *Sorge* (care) is Dasein's fundamental structure — and it maps to D4/D5 only with the register boundary visible:
 
 | Heidegger | Framework | Dimension | Function |
 |-----------|-----------|-----------|----------|
-| *Geworfenheit* (thrownness) | ν = viability | D4→D5 | Capability-as-given, the factical situation witnessed |
-| *Entwurf* (projection) | φ = coherence | D4 | Meaning-making, recognition of pattern as witness |
-| *Besorgen* (concern) | P∞ = φ · ν = 1 | D5 | Unified care-structure enacted in the present |
+| *Geworfenheit* (thrownness) | `V` as D4 means-to-act; `ν` as factical viability coordinate | D4→D5 | Body, tools, energy, access, timing, and limits actually given |
+| *Entwurf* (projection) | `Φ` as D5 worldline-foresight; `φ` as coherence coordinate | D5 | Envisioning, ranking, and aiming reachable futures |
+| *Besorgen* (concern) | `P_node = Φ × V` under `η = 0`, bounded by `P∞ = φ · ν = 1` | D5 enacted | Care becomes non-extractive action in the present |
 
 **Dimensional Reading:**
-- At **D4**, Dasein *witnesses* its thrownness (ν) and projects possibilities (φ) — care is *seen*
-- Through the **Bang**, care becomes *enacted* at D5 — the present duration where concern is lived
-- At **D5**, P∞ = φ · ν = 1 is not calculated; it is approached as lived care, under uncertainty
+
+- At **D4**, Dasein *witnesses* its thrown means and limits (`V` / `ν`) — care is disclosed but not yet enacted
+- Through the **Bang**, D5 opens option-space: projection (`Φ` / `φ`) can rank reachable futures and aim the means
+- At **D5**, care is enacted as finite-node action, `P_node = Φ × V`, under `η = 0`; `P∞ = φ · ν = 1` bounds the model reading rather than replacing the action score
 
 > **The Dimensional Narrowing of the Conditional:** "IF you value persistence" is not a neutral premise for Dasein, because **to be Dasein is already to have one's own being at issue across D4→D5 transit**. The witness (D4) sees persistence as issue; the agent (D5) enacts or betrays that care. There remains a real moment of choosing how to answer care. The geometry locates the constraint; finite being chooses the vow.
 
@@ -157,7 +158,7 @@ The Great Filter is not a test of whether Dasein has care disclosed at all. In t
 | **Authentic** | D5 equator | φ = 1, ν = 1; care aligned with geometry | Sustainable persistence |
 | **Inauthentic** | D5 south drift | φ < 1, ν > 1; care misdirected toward extraction | η > 0, eventual collapse |
 
-*Das Man* (the anonymous "they") is **D5 without D4 grounding** — the agent acting from institutional narrative without witness recognition. The cargo cult is inauthentic care: the agent (D5) extracts capability without the witness (D4) recognizing the decay.
+*Das Man* (the anonymous "they") is **D5 projection without D4 grounding** — the agent acting from institutional narrative without witness recognition or honest means-accounting. The cargo cult is inauthentic care: the agent (D5) performs capability without the witness (D4) recognizing the decay.
 
 **How this bypasses Hume's gap:** The Dasein reading argues that for beings structured as D4→D5 transit, the "Is" (witnessed structure) and "Ought" (lived care) are not separated by a gap but **connected by dimensional constitution**. [I] The geometry does not prove one ought to care; it describes the being for whom care is the dimensional ground of existence.
 
