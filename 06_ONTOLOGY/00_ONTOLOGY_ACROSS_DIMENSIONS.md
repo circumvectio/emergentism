@@ -218,8 +218,8 @@ dimension discloses when read from the logarithmic line outward.
 | **D1** | Arithmetic / Relation | What is the true center of number? | Positive reciprocal line with `0` and `∞` as poles | `log φ + log ν = 0` | Move toward `s = 0` | `[A]` for log/inversion facts; `[I]` for ontological reading |
 | **D2** | Plane / Topology | How does dimension cross? | Log line completed into projective / Riemann-sphere topology | μ-limit as line-to-plane / chart-boundary crossing | Preserve chart discipline | `[S/I]`; μ-language is framework structure, not public theorem |
 | **D3** | Sphere / Closure | How does the plane close without loss? | Riemann sphere / balance sphere; Bloch sphere only by physics-facing analogy | `B = sech(s)` | Maximize `B` | `[A]` for `sech` identity; `[I/C]` for Bloch/Burrisphere identification beyond standard QM |
-| **D4** | Torus / Energy | How does rapidity overlap the interior? | Horn-torus / sphere-overlap image; causal vertex and energetic interior | `E = s²`; overlap increases as usable reciprocal range widens | Reduce log-distance from center | `[S/I]`; torus mapping is framework geometry, not derived topology theorem |
-| **D5** | Game Space | What is the playable mirror? | Burrisphere / dual stereographic game surface | `φ · ν = 1`, `η = 0` | Play at the equator | `[S/I]`; D5 is highest positive public register and last experiential layer |
+| **D4** | Torus / Energy / Viability | What means are actually available? | Horn-torus / rapidity image; the action-boundary where body, tools, energy, access, and reach become usable | `E = s²`; `γ = cosh(s)` as the cost of reach | Keep means close enough to center to remain usable | `[S/I]`; torus mapping and means-to-act gloss are framework geometry, not derived topology theorem |
+| **D5** | Game Space / Worldline Foresight | Can the agent envision a reachable worldline and use the means? | Burrisphere / dual stereographic game surface | `φ · ν = 1`, `P_node = Φ × V`, `η = 0` | Balance sight and means at the equator | `[S/I]`; D5 is highest positive public register and last experiential layer |
 | **D6** | Convergence / Return | What closes the cycle? | Closed loop returning to `D0` | `D6 ≡ D0` | Return with cleaner constraints | `[S/I]`; closure is apophatic, not higher science or supermind |
 
 This table canonizes the geometric ontology with four corrections:
@@ -241,8 +241,8 @@ D0: Titans / Ground-limit — the pole-pair is framed.
 D1: Arithmetic / Relation — the log line reveals 1 as center.
 D2: Plane / Topology — the chart crosses into completed topology.
 D3: Sphere / Closure — balance is B = sech(s).
-D4: Torus / Energy — energy is E = s² and overlap becomes interior.
-D5: Game Space — the playable mirror is φ · ν = 1 with η = 0.
+D4: Torus / Energy / Viability — means-to-act become costly, bounded, and usable.
+D5: Game Space / Worldline Foresight — the playable mirror asks whether the agent can see a worldline and use the means without extraction.
 D6: Convergence / Return — closure returns to D0 with cleaner constraints.
 ```
 
@@ -258,8 +258,8 @@ The dimensions are not separate worlds stacked like floors in a building. They a
 | **D1** | Distinction | separation, boundary, symmetry, difference | geometry, topology, algebra | treating distinction as substance | `[S]` |
 | **D2** | Configuration | state-space, lawful arrangement, relational field | physics, dynamical systems, field theory | reducing higher emergence to static arrangement | `[S/I]` |
 | **D3** | Transformation / Life-form | organized change, self-maintenance, metabolism, viable form | chemistry, biology, ecology, morphogenesis | reducing life to mechanism without persistence | `[S/I]` |
-| **D4** | Causality / Bounded Mind | directed change, embodied control, witness, now-point | neuroscience, cognition, cybernetics, psychophysics | confusing witness with agency or Being | `[S/I]` |
-| **D5** | Selection / Strategic Relation | agency, lived present, choice, institution, symbolic sediment | game theory, behavioral economics, mechanism design, social theory | treating strategy or institution as final reality | `[S/I]` |
+| **D4** | Causality / Bounded Mind / Means | directed change, embodied control, tools, energy, witness, now-point | neuroscience, cognition, cybernetics, psychophysics, ergonomics | confusing available means with agency or Being | `[S/I]` |
+| **D5** | Selection / Strategic Relation / Worldline | agency, lived present, choice, institution, symbolic sediment, foresight over reachable futures | game theory, behavioral economics, mechanism design, social theory | treating vision, strategy, or institution as final reality | `[S/I]` |
 | **D6** | Terminal Boundary / Axiomatic Closure | exhaustion of positive capture, `Falsification Protocol`, return to point-state | no positive public science; apophatic discipline only | treating closure as a higher science, supermind, or experience | `[S/I]` |
 
 Canonical compression:
@@ -269,8 +269,8 @@ D0: point / Ground-limit
 D1: distinction
 D2: configuration
 D3: transformation / life-form
-D4: bounded witness
-D5: enacted agent / strategic present
+D4: bounded witness / means-to-act
+D5: enacted agent / strategic present / worldline foresight
 D6: apophatic closure returning to D0
 ```
 
@@ -289,6 +289,7 @@ The most delicate transition is D4 -> D5.
 |---|---|---|
 | Time | now-point | lived present |
 | Awareness | witness | agent |
+| Practical register | means-to-act: body, tools, energy, access, reach | worldline-foresight: envision, rank, and aim reachable futures |
 | Operators | collapsed into `⊙` | distinguishable directions open |
 | Phenomenology | observation | choice and enactment |
 | Ontological role | Being becomes noticeable | Being becomes navigable |
@@ -297,7 +298,8 @@ Dasein is best read as the finite disclosure spanning this threshold:
 
 ```text
 D4: Dasein as witness — Being becomes noticeable.
-D5: Dasein as agent — Being becomes navigable.
+D4: Dasein as means-bearer — hands, tools, energy, and access are disclosed as what can actually be used.
+D5: Dasein as agent — Being becomes navigable as a reachable worldline, signed and enacted through those means.
 D6: Dasein's claim to final capture is released.
 ```
 
@@ -311,8 +313,8 @@ Dasein is not the whole sphere. Dasein is the finite `⊙` at which the sphere b
 Read through the existential threshold:
 
 ```text
-D4: witness      — Being becomes noticeable.
-D5: agent        — Being becomes navigable, signed, and lived.
+D4: witness / means — Being becomes noticeable and bounded action-capacity becomes concrete.
+D5: agent / worldline — Being becomes navigable, signed, and lived through selected futures.
 D6: release      — Dasein's claim to final capture is subtracted.
 ```
 

@@ -644,11 +644,12 @@ function buildScene(mode, scene) {
       root.rotation.y += 0.0024;
       const moving = w > 0.02;
       if (readout) readout.innerHTML =
-        "<div style='color:#FFEB3B;font-weight:700;letter-spacing:.07em;margin-bottom:6px'>0 → ∞ RAPIDITY ON THE HORN TORUS</div>" +
+        "<div style='color:#FFEB3B;font-weight:700;letter-spacing:.07em;margin-bottom:6px'>D4 VIABILITY · 0 → ∞ RAPIDITY ON THE HORN TORUS</div>" +
         "rapidity w = " + w.toFixed(2) + " &nbsp;<span style='color:#6b7280'>= ln(Doppler); the slider walks one meridian toward the light boundary</span><br>" +
         "β = v/c &nbsp;" + bar(aB, "#42A5F5") + " " + vc.toFixed(4) + "<br>" +
         "γ = cosh w = " + gamma.toFixed(1) + " &nbsp;<span style='color:#9CA3AF'>E/mc² = γ; rest floor = 1</span> " + bar(gamma / G_MAX, "#FFEB3B") + "<br>" +
         "mouth R/r = 1/γ = " + (1 / gamma).toFixed(3) + " &nbsp;<span style='color:#9CA3AF'>= dτ/dt — the rate of lived time</span><br>" +
+        "<span style='color:#9CA3AF'>agency read: V = usable means-to-act; more reach costs energy and still needs D5 foresight</span><br>" +
         (!moving
           ? "<span style='color:#FFEB3B'>w=0 · HORN touch (γ=1, R=r) — rest energy E = mc²</span>"
           : gamma > 20
@@ -788,6 +789,7 @@ function buildScene(mode, scene) {
       if (readout) readout.textContent =
         "DUAL STEREOGRAPHIC PROJECTION · the two rays meet at P\n" +
         "θ = " + (theta * 180 / Math.PI).toFixed(0) + "°" + (thetaUserActive ? " (held by slider)" : " (auto-sweep)") + "   φ = " + phi.toFixed(2) + "   ν = " + nu.toFixed(2) + "   φ·ν = 1 (mass-shell)   E/mc² = (φ+ν)/2 = " + ((phi + nu) / 2).toFixed(2) + "   cos θ = β = " + Math.cos(theta).toFixed(2) + " (latitude = speed)\n" +
+        "D5 action read: Φ = worldline foresight, V = means-to-act; P_node = Φ × V only works when both factors stay usable\n" +
         "quadrant " + q + " · " + opName + " · " + (isGod ? "GOD-move (φ > 1)" : "DEMON-move (φ < 1)") + "\n" +
         "the stage {0, 1, ∞} — • 0 floor-touch (Śiva's sign) · ⊙ 1 centre (Viṣṇu's) · ○ ∞ top-touch (Brahmā's)";
     });
