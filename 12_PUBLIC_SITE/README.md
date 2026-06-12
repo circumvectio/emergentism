@@ -190,9 +190,21 @@ public corpus documents:
 | `meta/` (framework meta wing) | 6 |
 
 The repository site is wired locally and `sitemap.xml` currently lists `349`
-URLs. The Vercel alias still needs a deployment refresh for the new Method/Meta
-routes, and the live `emergentism.org` domain is not yet serving this repository
-site.
+URLs.
+
+**2026-06-12 deployment truth:** production deploy
+`dpl_ELnhnyH9EF8qRXSDV3HQWJtczXWg` refreshed the linked Vercel project
+`emergentism-org`. The repository site is reachable at
+`https://emergentism-org.vercel.app/`, and the updated `/game/`,
+`/soul-loop/`, and `/trinity/10-the-soul-loop/` routes were verified there.
+A clean public preview was also deployed as
+`https://emergentism-public.vercel.app/` from a staged static payload excluding
+`.vercel/`, `book-pwa/`, source files, and local runtime state.
+
+The branded `emergentism.org` / `www.emergentism.org` DNS and hosting layer is
+still separate: current probes show apex traffic redirecting through
+Squarespace and `www` served by Google Sites, so the branded domain does not yet
+show this repository site even though Vercel lists the aliases.
 
 **2026-06-07 deploy-gate hardening:** The GitHub Actions deployment workflow now
 sets the Vercel org/project environment for pull/build/deploy, runs

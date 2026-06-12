@@ -53,7 +53,7 @@ build, deployment, payment, auth, model, or runtime receipts.
   into `read/`, `papers/`, `canon/`, `foundations/`, `trinity`, `formal/`,
   `paradox/`, `memetic/`, `rosettad/`, `operators/`, `will/`, `value/`,
   `ground/`, `sacred/`, `method/`, and `meta/`.
-- `reading-manifest.json` currently wires `292` rendered public corpus
+- `reading-manifest.json` currently wires `293` rendered public corpus
   documents.
 - `sitemap.xml` currently exposes `349` URLs.
 - `predeploy_check.py` is the deploy gate for public-site link, tier, route,
@@ -66,9 +66,12 @@ build, deployment, payment, auth, model, or runtime receipts.
   Vercel deployment URL before the custom-domain probe. The custom-domain
   strict gate remains manual/dispatch-only until DNS and hosting cutover are
   expected to serve this repository site.
-- The Vercel alias still needs a deployment refresh for the new Method/Meta
-  routes, and live `emergentism.org` still requires domain/host cutover before
-  the public sees this repository site.
+- The linked Vercel project was refreshed on 2026-06-12
+  (`dpl_ELnhnyH9EF8qRXSDV3HQWJtczXWg`), and
+  `https://emergentism-org.vercel.app/` serves the repository site. A clean
+  staged public preview also exists at `https://emergentism-public.vercel.app/`.
+  Live `emergentism.org` / `www.emergentism.org` still requires DNS/host cutover:
+  current probes route apex through Squarespace and `www` through Google Sites.
 
 ## Routing Law
 
