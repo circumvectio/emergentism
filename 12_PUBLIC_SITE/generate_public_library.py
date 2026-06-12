@@ -167,7 +167,10 @@ directly (the only available lever):
 	        bridge for Dasein-as-reader: ontology, epistemology, methodology,
 	        axiology, and teleology cycle until finite-node action couples `Φ`
 	        as D5 worldline-foresight with `V` as D4 means-to-act, raising
-	        `P_node,i` and `P_node,H` together under `η = 0`.
+	        `P_node,i` and `P_node,H` together under `η = 0`; later normalized
+	        the Dasein non-reduction clause so the D5 μ-limit is agency /
+	        selection first, with consciousness as the `[I]` lived reading and
+	        quantum-collapse resonance left `[C]`.
 	  - trinity/03-the-closure/, trinity/06-the-cosmological-cycle/,
 	        trinity/simulation-spec/, trinity/22-the-teleology/
 	                                              : fenced remaining Trinity compatibility

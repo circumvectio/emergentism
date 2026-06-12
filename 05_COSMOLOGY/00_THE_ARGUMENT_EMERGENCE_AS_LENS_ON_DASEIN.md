@@ -637,7 +637,7 @@ This is why the framework's ethic is `ΣΔB > 0` — movement toward the equator
 
 - **Not a new mathematical theorem.** Every mathematical claim is `[A]` — established and old. The contribution is the *naming* (finity), the *reading* (1 as equator of Dasein), and the *synthesis* (Titan transformations as dimensional generators).
 - **Not a proof of God.** The Titans are boundary-frames, not deities. L6 holds: the model is not the Ground.
-- **Not a reduction of consciousness to arithmetic.** The argument shows that the *structure* of dimensional emergence mirrors the *structure* of reciprocal symmetry. The identification of consciousness with the μ-limit at D5 remains `[C]`.
+- **Not a reduction of consciousness to arithmetic.** The argument shows that the *structure* of dimensional emergence mirrors the *structure* of reciprocal symmetry. The D5 μ-limit is modeled as agency / selection; consciousness is the lived-interior reading of that selection `[I]`, and quantum-collapse resonance remains `[C]`.
 - **Not a replacement for science.** The argument is a lens (Weltanschauung), not a physical theory. Empirical predictions must be tested independently.
 - **Not geometry-purism.** The additive line remains valid for order, sequence, and analysis. The multiplicative / spherical model is the right lens for reciprocal boundary structure, not the only valid mathematical chart.
 
