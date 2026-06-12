@@ -90,7 +90,7 @@ Read the entire corpus (8.6M words, 14,000+ files). Look through the derivation 
 
 **#26. Organizations die when the CEO leaves. Organisms die when metabolism stops.** Emergentism's metabolism is φ-access — local alignment with the whole.
 
-**#27. Coordination without tyranny is possible.** Not through markets, hierarchies, or protocols. Through shared geometry — a common attractor every node accesses locally.
+**#27. Coordination without tyranny is possible.** Not through markets, hierarchies, or protocols. Through shared geometry — a common orientation that nodes can access locally when they share the specification and correction rules.
 
 **#28. Emergentism is not a philosophy about the world. It is a philosophy for building worlds.** And the world it builds is one where intelligence can coordinate at scale without tyranny.
 

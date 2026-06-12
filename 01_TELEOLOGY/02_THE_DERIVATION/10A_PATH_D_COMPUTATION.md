@@ -185,7 +185,7 @@ $$
 \tag{3.4}
 $$
 
-As $t \to \infty$, $s \to 0$ (i.e. $\φ \to 1$, $\ν \to 1$) for any finite initial condition. The equator is a **global attractor**. [S]
+As $t \to \infty$, $s \to 0$ (i.e. $\φ \to 1$, $\ν \to 1$) for any finite initial condition under this specified flow. The equator is a **global attractor for this model flow**, not a proof of unconditional world-level convergence. [S]
 
 ### 3.3 Character of the Trajectories
 

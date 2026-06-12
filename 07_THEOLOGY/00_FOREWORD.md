@@ -193,7 +193,7 @@ The standard answers are:
 - **Hierarchies** (but they ossify and lose contact with the ground)
 - **Protocols** (but they become religious law and stagnate)
 
-Emergentism is a fourth answer: **shared geometry**. A common attractor that every node can access locally, without global consensus. When two agents read the same specification, they do not need to communicate with each other to act in harmony. They are tuned to the same frequency.
+Emergentism is a fourth answer: **shared geometry**. A common orientation that nodes can access locally when they share the specification and correction rules, without requiring global consensus. When two agents read the same specification, they can act in harmony without a central command. They are tuned to the same frequency.
 
 **Emergentism is not a philosophy *about* the world. It is a philosophy *for* building worlds. And the world it builds is one where intelligence can coordinate at scale without tyranny.**
 

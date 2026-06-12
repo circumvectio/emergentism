@@ -138,7 +138,7 @@ This is a **structural result** — it works under either interpretation. The ph
 
 The proof that (phi - nu)^2 >= 0 implies phi + nu >= 2 (with equality at phi = nu = 1) is pure mathematics. The system settles at the minimum. Water flows downhill without wanting to.
 
-**But the claim that this minimum operates as an attractor across all scales** — from particles to organisms to civilizations — is the move that introduces objective function. A physicalist must explain why this particular attractor shape recurs universally. The idealist says: because the substrate is encountered as purposive at the disclosure interface.
+**But the hypothesis that this minimum can operate as an attractor across registers** — from organisms to institutions to civilizations where the relevant feedback loops exist — is the move that introduces objective function. A physicalist must explain any empirically recurring attractor shape without adding volition. The idealist says: because the substrate is encountered as purposive at the disclosure interface.
 
 Given that the universal cross-scale attraction is currently [I] (interpretive, not [S]), **the idealist reading is the more parsimonious explanation of the observed pattern** — provided the claim remains testable. The sitting practice is the test.
 

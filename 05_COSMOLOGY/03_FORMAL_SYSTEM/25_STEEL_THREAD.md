@@ -189,8 +189,8 @@ The framework's recommended position (Doc 30) is Level 3 interpreted through Pos
 | 2 | {0,1,∞} is unique | [S] | Correspondence 21 (4-round review) |
 | 3 | φ·ν = 1 | [A] | Trigonometric identity |
 | 4 | B = sin θ peaks at equator | [A] | Calculus |
-| 5 | Equator is dominant strategy | [S] | Demonstration 22 (game theory review) |
-| 6 | Extraction is self-defeating | [S] | Convergence 24 (game theory review) |
+| 5 | Equator is dominant strategy in the stated balance game | [S] | Demonstration 22 (game theory review) |
+| 6 | Extraction is self-defeating under coupled, long-horizon assumptions | [S] | Convergence 24 (game theory review) |
 | 7 | Equator is Hamiltonian minimum | [A] | AM-GM |
 | 8 | Coupling forces cooperation | [S] | EFR-08 |
 | **BREAK** | | | |
@@ -205,9 +205,9 @@ The framework's recommended position (Doc 30) is Level 3 interpreted through Pos
 
 ## The One Sentence
 
-A square cannot be negative. Therefore φ + ν ≥ 2. Therefore the equator is the unique global minimum. Therefore extraction is self-defeating. Therefore cooperation is the dominant strategy.
+A square cannot be negative. Therefore φ + ν ≥ 2. Therefore the equator is the unique global minimum. Therefore extraction is self-defeating under the stated balance-game assumptions. Therefore cooperation is the dominant strategy in that model.
 
-Everything after "therefore cooperation is the dominant strategy" is interpretation.
+Everything after "therefore cooperation is the dominant strategy in that model" is interpretation.
 
 Everything before it is mathematics.
 

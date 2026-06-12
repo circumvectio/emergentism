@@ -40,7 +40,7 @@ Zero-Sum Resolution Equation    →    The Trinity {0, 1, ∞} is the minimal ge
           ↓
     φ + ν ≥ 2                   →    The Hamiltonian floor: minimum energy at the equator
           ↓
-    B = sin θ  is max at θ=π/2  →    Balance is the attractor; extraction is self-defeating
+    B = sin θ  is max at θ=π/2  →    Balance is the model optimum; attractor claims require correction dynamics
 ```
 
 These five lines are the **kernel**. Everything else is elaboration, proof, interpretation, or application.
@@ -209,7 +209,7 @@ Key corrections already propagated:
 
 ## The Ontology in One Sentence
 
-> Reality, read through the lens of reciprocal closure on the Riemann sphere, unfolds through seven dimensions from undifferentiated ground to apophatic return — with balance as the attractor, ethics as the structure of the attractor, and honesty as the only valid epistemic posture.
+> Reality, read through the lens of reciprocal closure on the Riemann sphere, is organized as a seven-layer interpretive lens from undifferentiated ground to apophatic return: balance is the model's optimum and constraint, ethics is the practice of preserving non-extractive coupling under those conditions, and honesty is the only valid epistemic posture.
 
 **Tier of that sentence:** `[I]` — every word in it is interpretive. The mathematics that supports it is `[A]` and `[S]`. The experiments that test it are `[B]` and `[C]`.
 

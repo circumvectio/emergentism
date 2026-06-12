@@ -225,7 +225,7 @@ The formal chain, read interpretively:
 |---|---|---|
 | 0 | {0, 1, ∞} is the minimal frame | The Ground generates itself from the interaction of void and plenum; finity emerges as the fixed point of their exchange |
 | 1 | S² with φ·ν=1 | Being is reciprocal: coherence and viability are not independent properties but complementary aspects of one invariant |
-| 2 | Equator is dominant strategy | The "good" is not imposed but structural: balance is the natural attractor of the geometry |
+| 2 | Equator is dominant strategy in the stated balance game | The "good" is not imposed but structural: balance is the model optimum under the specified geometry and game assumptions |
 | 3 | D₆ ≡ D₀ | Experience exhausts itself; the return to ground is not annihilation but closure |
 | 4 | η=0 is Nash equilibrium | Non-extraction is not altruism but rationality: extraction harms the extractor |
 

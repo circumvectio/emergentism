@@ -109,7 +109,7 @@ The distinction maps exactly onto The Fork:
 
 The framework's own teleological derivation creates a problem for Option A. The proof that (phi - nu)^2 >= 0 implies phi + nu >= 2 (with equality at phi = nu = 1) is pure mathematics. But calling this the "Hamiltonian minimum" and saying the system "wants" balance is a semantic move from mathematics to volition. A physicalist can explain this as: the system settles at the minimum because that is what minima do — no wanting required. Water flows downhill without wanting to.
 
-However, the Emergentism version goes further. The claim is not just that the equator is a minimum, but that the equator is an *attractor across all scales* — from particles to organisms to civilizations. If this is true empirically, the physicalist must explain why this particular attractor shape recurs universally. The idealist says: because the substrate wants balance.
+However, the Emergentism version goes further. The hypothesis is not just that the equator is a minimum, but that the equator can function as an attractor across registers where the relevant feedback loops exist — from organisms to institutions to civilizations. If this is supported empirically, the physicalist must explain why this particular attractor shape recurs without adding volition. The idealist says: because the substrate is encountered as purposive at the disclosure interface.
 
 ### C. Ektropy and Reverse Entropy
 

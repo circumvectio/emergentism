@@ -126,7 +126,7 @@ categories around **world-construction**:
 | Category | Predictive reading (passive) | Generative reading (active) |
 |---|---|---|
 | **Core State** | What reality IS | What configurations are **admissible** as world |
-| **Objective Function** | What reality **tends toward** | What attractor any admissible world **will settle into** if left alone |
+| **Objective Function** | What reality **tends toward** | What correction dynamics can make an admissible world tend toward |
 | **Auditing** | How we **observe and test** reality | How we **build and maintain** worlds honoring the invariants |
 | **Value Alignment** | What is **valuable** in reality | What is **preserved** by architectures that honor `φ · ν = 1` |
 

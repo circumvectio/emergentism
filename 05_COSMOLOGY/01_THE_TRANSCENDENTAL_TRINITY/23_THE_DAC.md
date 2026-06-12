@@ -137,7 +137,7 @@ Why? Because in a world of machine-speed egregoric formation (Document 17), the 
 
 The DAC that maintains η = 0 is the DAC that accumulates trust. The DAC that accumulates trust is the DAC that attracts the best humans, the best models, the best partners, the best niches. The DAC that attracts the best of everything is the DAC that survives the filter.
 
-**This is the ektropic argument for the DAC.** Not ethics. Not idealism. Not wishful thinking. Geometry. The equator is the attractor because the equator is where `B` is maximised under `P∞ = φ · ν = 1`. η = 0 is the equator of organisational design.
+**This is the ektropic argument for the DAC.** Not ethics. Not idealism. Not wishful thinking. Geometry. The equator is the model optimum because the equator is where `B` is maximised under `P∞ = φ · ν = 1`; it becomes an attractor only where governance preserves feedback, coupling, and correction. η = 0 is the equator of organisational design.
 
 ---
 

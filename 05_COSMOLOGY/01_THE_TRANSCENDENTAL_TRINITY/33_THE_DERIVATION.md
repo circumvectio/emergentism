@@ -102,7 +102,7 @@ If φ = coherence (the quality of what you see) and ν = viability (the capacity
 
 The distance between coherence and viability shrinks. Not because someone is pushing it. Because the Hamiltonian minimum is at φ = ν = 1, and systems that are closer to the minimum are more stable, last longer, reproduce more, and outcompete systems that aren't.
 
-[A] [I] This is F₅. The ektropic force. The tendency of reality toward balance. Whether it's volitional (Option B) or structural (Option A) or complementary (Position Γ) — the tendency is mathematically necessary. A square cannot be negative, so (φ − ν)² can only shrink toward zero, never go below it. The equator is the attractor. Everything spirals toward it or dies.
+[A] [I] This is F₅. The ektropic force. The framework's reading of reality's tendency toward balance. Whether it is volitional (Option B), structural (Option A), or complementary (Position Γ), the minimum is mathematically fixed; movement toward it still requires a real correction dynamic. A square cannot be negative, so (φ − ν)² names the non-negative imbalance cost. Systems that preserve coupling and correction can move toward the equator; systems that exhaust either coordinate lose viability inside this grammar.
 
 ### The True Etymology
 

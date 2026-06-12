@@ -79,7 +79,7 @@ The ground state IS the Euler-Lagrange solution. This is established. [S]
 F = −∂H/∂φ = 1/φ² − 1
 ```
 
-At φ < 1: F > 0 (pushes toward equator). At φ > 1: F < 0 (pushes toward equator). The equator is a stable attractor. The restoring force scales as 1/φ². [S]
+At φ < 1: F > 0 (pushes toward equator). At φ > 1: F < 0 (pushes toward equator). The equator is stable inside this one-dimensional Hamiltonian reading. The restoring force scales as 1/φ². [S]
 
 ---
 

@@ -107,11 +107,11 @@ The derivation is simple:
 - `(φ - ν)² ≥ 0` `[A]`
 - therefore `φ + ν ≥ 2`, with equality only when `φ = ν = 1` `[S]`
 
-This means the equator is the point of minimal imbalance, maximal balance function, and least energetic asymmetry. The framework interprets this as a teleological attractor: systems tend toward balanced reciprocal realization because balance is the low-cost configuration of the geometry. `[S/I]`
+This means the equator is the point of minimal imbalance, maximal balance function, and least energetic asymmetry. The framework interprets this as a conditional teleological orientation: systems with real feedback, coupling, and correction capacity can be selected toward balanced reciprocal realization because balance is the low-cost configuration of the geometry. `[S/I]`
 
 This does **not** prove cosmic will. It does not prove that the universe “wants” anything in an anthropomorphic sense. The disciplined claim is weaker and better: once reciprocal closure is granted, imbalance has a cost and balance has a structural privilege. `[S]`
 
-That is enough to change objective function from superstition into directionality. Purpose no longer needs to be imposed from outside the world. It can be read off the geometry as the pattern toward which viable reciprocally closed systems are selected. This is the framework's objective teleology: not a command from outside Being, but the intrinsic direction of reciprocal closure approaching its own best form. `[I/S]`
+That is enough to change objective function from superstition into directionality. Purpose no longer needs to be imposed from outside the world. It can be read off the geometry as the pattern toward which viable reciprocally closed systems are selected when their feedback loops preserve the cost of imbalance. This is the framework's objective teleology: not a command from outside Being, but the conditional direction of reciprocal closure approaching its own best form. `[I/S]`
 
 This also explains why objective function in Emergentism is inseparable from anti-extraction. Extraction is not merely morally distasteful. It is structurally expensive. Systems that maximize one pole by cannibalizing the other depart from the equator and incur instability costs. A civilization, institution, organism, or psyche can live at an extreme for a while. It cannot do so indefinitely without degrading the very substrate that supports it. `[S/I]`
 
