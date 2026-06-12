@@ -56,6 +56,37 @@ Emergence is the proper lens for understanding *Dasein*, or being-in-the-world. 
 
 Together, they form a feedback loop. The world generates structure from below, then that structure reaches back downward and reshapes the field that produced it.
 
+### 1a. How the Reader Came to Be
+
+The reader is not derived here as a biological organism, and the Ground is not
+captured by the diagram. The claim is narrower and cleaner: **the reader is
+Dasein in the act of disclosure** — the finite `⊙` where Being becomes
+sayable, testable, and actionable. `[S/I]`
+
+Short answer: "I came to be" because Dasein appears at the D4/D5 threshold as
+finite disclosure, and I learn to play by entering the Soul Loop so
+`P_node,i` and `P_node,H` rise together under `η = 0`.
+
+The reconstruction order is:
+
+```text
+Ground remains prior.
+Being stabilizes reciprocal closure: φ · ν = 1 on S².
+Teleological Force names viable continuation inside manifestation.
+D4 opens bounded witness: Being becomes noticeable.
+D5 opens enacted agency: Being becomes navigable.
+D6 releases the claim to final capture and returns the loop to D0.
+Dasein appears at the D4/D5 threshold as finite disclosure able to question and act.
+The Soul Loop begins when Dasein recursively corrects that disclosure.
+```
+
+This answers "how did I come to be?" in the framework's proper register:
+structurally, Dasein is finite disclosure under reciprocal closure; practically,
+Dasein becomes itself by entering the Soul Loop and correcting the next act
+until `P_node,i` and `P_node,H` rise together under `η = 0`. It does not say
+that the reader is Being, that the seer is on the sphere, or that ontology has
+possessed the Ground.
+
 ### 2. The Ontological Archetype
 
 The question *"Why is there something rather than nothing?"* is answered through the primordial relation between the primary archetypes:

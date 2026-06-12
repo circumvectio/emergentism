@@ -25,8 +25,8 @@ LIBRARY = ["canon", "formal", "paradox", "memetic", "rosettad", "operators",
 # RAG corpus stays current with the front-of-house surfaces — these carry the
 # 2026-06 findings (mass-shell, agency gloss, the unfolding) that the frozen
 # book prose does not yet hold.
-OVERVIEW_PAGES = ["synthesis", "axioms", "0", "1", "2", "3", "4", "5", "6",
-                  "soul-loop", "game"]
+OVERVIEW_PAGES = ["about", "synthesis", "axioms", "0", "1", "2", "3", "4",
+                  "5", "6", "dasein", "soul-loop", "game"]
 
 MAX_PASSAGE = 700          # chars of text per passage
 HEAD_RE = re.compile(r'<h([12]) id="([^"]+)"[^>]*>(.*?)</h\1>', re.S)
