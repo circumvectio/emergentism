@@ -93,10 +93,10 @@ game rather than a permitted maximizer.</p>
 <p>Let there be N agents in a network. Each agent i has:
 - Φᵢ = coherence of agent i
 - Vᵢ = viability of agent i
-- Pᵢ = Φᵢ × Vᵢ = ektropy of agent i</p>
+- P_node,i = Φᵢ × Vᵢ = finite-node ektropy of agent i</p>
 <p>The network has coupling strength λ ∈ (0,1] (by definition of coupled network).</p>
 <h3 id="step-1-define-total-ektropy">Step 1: Define total ektropy</h3>
-<pre><code>ΣP = Σᵢ Pᵢ = Σᵢ (Φᵢ × Vᵢ)
+<pre><code>ΣP_node = Σᵢ P_node,i = Σᵢ (Φᵢ × Vᵢ)
 </code></pre>
 <h3 id="step-2-define-effective-viability">Step 2: Define effective viability</h3>
 <p>Due to coupling, each agent's effective viability depends on the network:</p>
@@ -107,11 +107,11 @@ game rather than a permitted maximizer.</p>
 <pre><code>P_eff(i) = Φᵢ × V_eff(i) = Φᵢ × [(1-λ)Vᵢ + λ⟨V⟩]
 </code></pre>
 <h3 id="step-4-compute-total-effective-ektropy">Step 4: Compute total effective ektropy</h3>
-<pre><code>ΣP_eff = Σᵢ Φᵢ × [(1-λ)Vᵢ + λ⟨V⟩]
+<pre><code>ΣP_node,eff = Σᵢ Φᵢ × [(1-λ)Vᵢ + λ⟨V⟩]
        = (1-λ)Σᵢ ΦᵢVᵢ + λ⟨V⟩Σᵢ Φᵢ
-       = (1-λ)ΣP + λ⟨V⟩Σᵢ Φᵢ
+       = (1-λ)ΣP_node + λ⟨V⟩Σᵢ Φᵢ
 </code></pre>
-<h3 id="step-5-show-that-maximizing-individual-p_eff-maximizes-p_eff">Step 5: Show that maximizing individual P_eff maximizes ΣP_eff</h3>
+<h3 id="step-5-show-that-maximizing-individual-p_eff-maximizes-p_nodeeff">Step 5: Show that maximizing individual P_eff maximizes ΣP_node,eff</h3>
 <p>Suppose each agent maximizes its own P_eff(i). This means:
 - Agent i increases Φᵢ (coherence)
 - Agent i increases V_eff(i) (effective viability)</p>
@@ -131,12 +131,12 @@ game rather than a permitted maximizer.</p>
 1. Under <strong>pure public goods</strong> (no private benefit from extraction), cooperation is dominant
 2. Under <strong>coupled multiplicative structure with enforced η = 0</strong>, individual optimization aligns with collective optimization</p>
 <p>The Is-Ought bypass requires the additional constraint that η = 0 is enforced (e.g., through the Three Gates mechanism, K2 signing, or protocol design). It does not follow from the coupling derivative alone.</p>
-<h3 id="step-7-show-cooperation-maximizes-p">Step 7: Show cooperation maximizes ΣP</h3>
+<h3 id="step-7-show-cooperation-maximizes-p_node">Step 7: Show cooperation maximizes ΣP_node</h3>
 <p>If each agent maximizes P_eff(i) by helping others:
 - Each Vᵢ increases (direct benefit from own effort + indirect benefit from others' help)
 - Each Φᵢ increases (coherence maintained by own effort)
-- Therefore each Pᵢ = Φᵢ × Vᵢ increases
-- Therefore ΣP = Σᵢ Pᵢ increases</p>
+- Therefore each P_node,i = Φᵢ × Vᵢ increases
+- Therefore ΣP_node = Σᵢ P_node,i increases</p>
 <p><strong>QED, conditionally.</strong> <code>max P_node,i → max ΣP_node</code> holds under real coupling, a long
 horizon, multiplicative scoring, and enforced <code>η = 0</code>. Coupling supplies the
 shared gradient; the constitutional constraint blocks the private extraction

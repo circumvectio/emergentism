@@ -50,11 +50,18 @@ directly (the only available lever):
   - formal/08-efr-power-max-lemma/            : added the Syntropic Dyadism
         corollary linking individual symbiont, collective holobiont, durable
         world-line potential, and `P_node,i`/`P_node,H` under the existing
-        Power-Max conditions.
+        Power-Max conditions; later mirrored stale generated proof notation
+        from `Pᵢ` / `ΣP` to `P_node,i` / `ΣP_node`.
   - trinity/22-the-teleology/, trinity/28-l4-star/, trinity/31-vmosk-as-applied-emergentism/
                                               : tightened bare `P = 1` wording to
         the current `P∞ = φ·ν = 1` manifold identity, with `B` / `P_node`
         named as the varying registers.
+  - trinity/14-tat-tvam-asi/, trinity/21-the-tightrope/,
+        trinity/33-the-derivation/, trinity/34-research-brief-the-fork/,
+        formal/14-efr-epistemology-triad/, formal/19-efr-geometric-exclusion/
+                                              : tightened remaining bare `P = 1`
+        wording into `P∞` for the manifold and `P_node` / `ΣP_node` for finite
+        node or mesh capacity.
   - trinity/13-the-wave-packet/               : tightened equipotentiality to
         `P∞ = φ·ν = 1` and removed ambiguous "maximum P" language.
   - will/00-the-core-conjecture/              : mirrored the R6 objective/constraint
@@ -79,7 +86,9 @@ directly (the only available lever):
         formal/41-unified-dimensional-derivation/ : added the 2026-06-12 A7
         boundary that the Nash/dominant-strategy results are balance-only or
         equatorial-profile model results, not unconditional social theorems;
-        real institutions require enforcement, monitoring, due process, and exit.
+        real institutions require enforcement, monitoring, due process, and exit;
+        later clarified that `B` is maximized by the payoff model, not the global
+        objective outside that narrow game.
   - ground/00-the-ring-that-is-the-ground/, foundations/the-ring-that-is-the-ground/,
         value/00-commandment-vs-geometry/, foundations/commandment-vs-geometry/,
         formal/09-efr-godel-clarification/, formal/10-efr-mu-limit-formula/,

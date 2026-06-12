@@ -123,7 +123,7 @@ No mainstream physics currently recognizes a fifth force corresponding to ektrop
 
 The framework's natural home is **Russellian Monism / Dual-Aspect Monism**, with a cosmopsychist tilt. Here is why:
 
-1. **phi * nu = 1 on S^2** is a dual-aspect equation. phi (coherence) and nu (viability) are two aspects of a single invariant (P = 1). Neither is reducible to the other. This is structurally identical to Pauli-Jung dual-aspect monism.
+1. **phi * nu = 1 on S^2** is a dual-aspect equation. phi (coherence) and nu (viability) are two aspects of a single invariant (`P∞ = φ · ν = 1`). Neither is reducible to the other. This is structurally identical to Pauli-Jung dual-aspect monism.
 
 2. **The sphere is primary.** Individual latitudes (L-levels, organisms, agents) are derived from the global geometry. This is priority monism, which is the metaphysical foundation of cosmopsychism.
 

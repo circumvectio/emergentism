@@ -302,7 +302,7 @@ Epistemic Operations:   May be irreducible
 ```
 
 **Example:**
-- The rule "P = 1 on S²" is maximally reducible (minimal description)
+- The rule "P∞ = φ · ν = 1 on S²" is maximally reducible (minimal description)
 - But to know WHERE a specific trajectory lands, you must traverse the geodesic
 - The trajectory computation may be irreducible (Wolfram-style)
 

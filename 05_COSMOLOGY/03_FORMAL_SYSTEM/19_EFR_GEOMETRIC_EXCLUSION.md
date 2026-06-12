@@ -112,7 +112,7 @@ Try to use the Burri Sphere for extraction:
 
 ```
 Attempt: Increase ν by extracting from others
-Result:  φ must decrease to maintain P = 1
+Result:  φ must decrease to maintain P∞ = φ · ν = 1
 Result:  You lose the ground
 Result:  You slide south
 Result:  You become the cargo cult

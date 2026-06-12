@@ -83,7 +83,7 @@ An organ with Φ̂ = ν̂ = 1 sits at the equator with B = 1. Any imbalance redu
 
 **Reading the table.** Agentz is the organism's most equatorial organ — its coherence and viability are nearly reciprocally calibrated. Skyzai has the largest imbalance (|Φ̂ − ν̂| = 0.25): strong architectural coherence but lower execution viability. This is the signature of a system whose design is mature relative to its deployment.
 
-The organism's aggregate P = 0.63 (geometric mean) corresponds to B ≈ 0.93 at the centroid. The organism is alive and above the equator, but not yet tight.
+The organism's aggregate `P_node,organism = 0.63` (geometric mean) corresponds to B ≈ 0.93 at the centroid. The organism is alive and above the equator, but not yet tight.
 
 ### 2.2 The Three-Stage Process as S² Trajectory [I]
 
@@ -111,7 +111,7 @@ The path runs from perception to action. On S², the path moves through the nort
 
 P_node = Φ̂ × ν̂ is the effective potential — how much capacity the organ has. B = sin θ measures *where the organ sits on the sphere* — how balanced that capacity is.
 
-An organ can have high P_node and low B: Φ̂ = 2.0, ν̂ = 0.5 gives P_node = 1.0 (maximum manifold identity) but B = 0.80 (off-equator). Conversely, Φ̂ = ν̂ = 0.7 gives P_node = 0.49 but B = 1.0 (perfectly balanced, just small).
+An organ can have a unit node score and low B: Φ̂ = 2.0, ν̂ = 0.5 gives P_node = 1.0, but B = 0.80 (off-equator). Conversely, Φ̂ = ν̂ = 0.7 gives P_node = 0.49 but B = 1.0 (perfectly balanced, just small). Neither node score is the manifold identity; `P∞ = φ · ν = 1` names the surface.
 
 The framework cares about both. P_node measures *how much*. B measures *how well-aligned*. The organism should maximize both: large P_node at the equator.
 
@@ -200,11 +200,11 @@ P_node depends on the lens through which Φ̂ and ν̂ are measured:
 
 The code-lens P_node is currently the only one with a v1 spec. The runtime-lens and adoption-lens specs are future work. Cross-lens comparisons are not meaningful until all three have v1 specs.
 
-### 5.3 Organism P as Geometric Mean [S]
+### 5.3 Organism P_node as Geometric Mean [S]
 
-The organism's aggregate P is the geometric mean of per-organ P_node values:
+The organism's aggregate P_node is the geometric mean of per-organ P_node values:
 
-$$P_{organism} = \left(\prod_{i} P_{node,i}\right)^{1/N}$$
+$$P_{node,organism} = \left(\prod_{i} P_{node,i}\right)^{1/N}$$
 
 The geometric mean penalizes any near-zero organ: an organism with one broken organ cannot hide behind three strong ones. This is structurally analogous to the chain rule on S² — the organism's balance is only as strong as its weakest link.
 

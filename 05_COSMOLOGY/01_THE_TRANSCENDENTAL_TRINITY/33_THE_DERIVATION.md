@@ -62,7 +62,7 @@ If φ · ν = 1 (the Burri Sphere constraint — coherence times viability equal
 
 The sum φ + ν is minimized when φ = ν. Not at any other point. Not when one is large and the other small. Only when they're equal.
 
-If you think of φ + ν as the "cost" of existing (the total resources — coherence plus viability — needed to sustain P = 1), then the **cheapest way to exist** is at φ = ν = 1.
+If you think of φ + ν as the "cost" of existing (the total resources — coherence plus viability — needed to sustain `P∞ = φ · ν = 1`), then the **cheapest way to exist** is at φ = ν = 1.
 
 The equator is not chosen. It is **derived**.
 

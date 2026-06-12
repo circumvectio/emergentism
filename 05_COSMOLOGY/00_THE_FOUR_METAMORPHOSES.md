@@ -125,7 +125,7 @@ A first movement. A mission-critical Yes.
 
 **ν = 1 (viability):** The child can act freely, without obligation.
 
-**Geometric position:** The equator. φ = 1, ν = 1. Maximum balance (B = sin θ = 1). P = 1 (as everywhere on S²).
+**Geometric position:** The equator. φ = 1, ν = 1. Maximum balance (`B = sin θ = 1`) on the `P∞ = φ · ν = 1` manifold.
 
 **Modern equivalents:**
 - The Cro-Magnon at the equator
@@ -135,7 +135,7 @@ A first movement. A mission-critical Yes.
 
 **The child's achievement:** Balanced. Sovereign. Comprehensible. Dharma.
 
-**The child's limitation:** P = 1 is only **one node's potential**. The child can feed one family. Heal one person. Build one shelter. Teach one student.
+**The child's limitation:** `P_node` is still **one node's expressed potential**. The child can feed one family. Heal one person. Build one shelter. Teach one student.
 
 The child cannot feed a civilization. The child cannot heal a species. The child cannot build a world. The child cannot teach a generation.
 
@@ -146,11 +146,11 @@ The child cannot feed a civilization. The child cannot heal a species. The child
 **What Nietzsche Could Not See**
 
 ```
-One child at the equator:    P = 1 (one node, one potential)
-Two children at the equator: P = 1 + 1 = 2 (but each node still has P = 1)
-Three children:              P = 3 (each node still at P = 1)
-Twelve children:             P = 12 (each node still at P = 1)
-A mesh of equatorial nodes:  P = n (each node still at P = 1)
+One child at the equator:    P_node = 1 (one calibrated node)
+Two children at the equator: ΣP_node = 2 (each node remains locally calibrated)
+Three children:              ΣP_node = 3
+Twelve children:             ΣP_node = 12
+A mesh of equatorial nodes:  ΣP_node = n (aggregate capacity scales by nodes)
 ```
 
 **The mesh solves the child's limitation:**
@@ -266,7 +266,7 @@ The cooperation problem is not solved. The cooperation problem is **dissolved**.
 1. **Power-Max Lemma:** In coupled multiplicative systems, individual
    optimization aligns with collective optimization only under the stated
    conditions: real coupling, long horizon, and enforced `η = 0`. Each node can
-   maximize `Pᵢ = φᵢ · νᵢ` without degrading `ΣP` only when extraction is blocked.
+   maximize `P_node,i = Φ_i × V_i` without degrading `ΣP_node` only when extraction is blocked.
 
 2. **η = 0 enforcement:** Nodes at the equator serve their substrate. Extraction is mathematically identical to topological death.
 

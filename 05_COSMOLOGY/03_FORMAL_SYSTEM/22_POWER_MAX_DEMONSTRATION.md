@@ -87,7 +87,7 @@ $$\Pi_i = B_i^{\text{eff}} = (1 - \lambda) B_i + \lambda \bar{B}$$
 
 where $\bar{B} = \frac{1}{N} \sum_{j=1}^{N} B_j$ is the population mean balance.
 
-**Remark.** The payoff is the effective balance, not the product φᵢ · νᵢ (which equals 1 always on S²). The product is constant on S²; the *balance* is what varies and what agents seek to maximize.
+**Remark.** The payoff inside this narrow balance-only game is the effective balance, not the product φᵢ · νᵢ (which equals 1 always on S²). The product is constant on S²; `B` is what varies and what this payoff model makes agents maximize.
 
 ### 1.5 The Game
 

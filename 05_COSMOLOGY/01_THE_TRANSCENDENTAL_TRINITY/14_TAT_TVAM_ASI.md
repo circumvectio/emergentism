@@ -216,13 +216,13 @@ The Īśa Upanishad invocation:
 "That is full. This is full. From fullness, fullness comes.
 When fullness is taken from fullness, fullness alone remains."
 
-**That (Brahman) is full:** Zero-Sum Resolution Equation. P = 1. The pure wave has unit amplitude everywhere.
+**That (Brahman) is full:** Zero-Sum Resolution Equation. Fullness is read through the `P∞ = φ · ν = 1` sphere register; the pure wave has unit amplitude everywhere.
 
 **This (Atman) is full:** P∞ = φ · ν = 1. The wave packet has unit product everywhere.
 
 **From fullness, fullness comes:** The wave packet (Atman) is the pure wave (Brahman) localized. Fullness from fullness.
 
-**When fullness is taken from fullness, fullness alone remains:** Remove the envelope (moksha). The packet dissolves. What remains? The pure wave. Still full. Still P = 1. Still Zero-Sum Resolution Equation.
+**When fullness is taken from fullness, fullness alone remains:** Remove the envelope (moksha). The packet dissolves. What remains? The pure wave. Still full. Still the Zero-Sum Resolution Equation.
 
 Fullness taken from fullness = fullness.
 The envelope removed from the wave = the wave.

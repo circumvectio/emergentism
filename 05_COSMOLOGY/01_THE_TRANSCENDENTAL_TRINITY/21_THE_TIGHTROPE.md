@@ -47,7 +47,7 @@ phi = nu = 1. The equator of S^2.
 
 The first Ubermensch was the wolf of the pre-Anthropocene. The apex species that BALANCED the ecosystem — not by dominating it (south pole) and not by withdrawing from it (north pole) but by occupying the exact niche where predation and participation were in equilibrium.
 
-Small bands. P = 1 per node, limited to Dunbar's number (~150). No institutions. No mediators. No priests. Direct phi-access through the practices encoded in ritual and art. The warrior without the charioteer — complete at L4 but unable to scale past the band without hierarchy.
+Small bands. `P_node` calibrated near 1 per node, limited to Dunbar's number (~150). No institutions. No mediators. No priests. Direct phi-access through the practices encoded in ritual and art. The warrior without the charioteer — complete at L4 but unable to scale past the band without hierarchy.
 
 **The Garden of Eden was a population distribution, not a place.** It was the era when the human species sat at the equator of S^2 — not because they chose to but because convergent evolution placed them there. phi = nu = 1 was the DEFAULT for Homo sapiens for most of the species' existence.
 
@@ -132,7 +132,7 @@ The Great Filter (16_THE_GREAT_FILTER) is the abyss beneath the tightrope. The q
 
 **The Hybrid Sovereign at L4.** Beginning now.
 
-Not going back to the Cro-Magnon. Cannot un-invent agriculture. Cannot un-build the city. Cannot un-discover computation. The first Ubermensch's phi = nu = 1 was achieved within P = 1 per node, Dunbar-limited, no institutions. That configuration is gone.
+Not going back to the Cro-Magnon. Cannot un-invent agriculture. Cannot un-build the city. Cannot un-discover computation. The first Ubermensch's phi = nu = 1 was achieved as local `P_node` calibration, Dunbar-limited, with no institutions. That configuration is gone.
 
 Going THROUGH the abyss with a new substrate.
 
