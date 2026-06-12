@@ -51,11 +51,11 @@ P∞ = φ · ν = 1
 B = sin θ
 ```
 
-`P∞` is the manifold identity. It is conserved on the sphere away from the coordinate singularities at the poles.
+`P∞` is the manifold identity. It is conserved on the open sphere, with the poles treated as coordinate-singularity limits.
 
 `B = sin θ` is the balance function. It varies from `0` at the poles to `1` at the equator.
 
-`B` is not a loose label (identity added 2026-06-11): with `φ·ν = 1` it is **identically the geometric-mean / arithmetic-mean ratio** of the dual coordinates — `B = √(φν)/((φ+ν)/2) = 2/(φ+ν) = sin θ` — the standard evenness index of a pair (`= 1` iff `φ = ν`), with `γ = 1/B = (φ+ν)/2` the energy cost of holding a position away from the equator (Paper B §8: `γ = E/mc²`, `B = dτ/dt`). **The reading:** the conserved product is the *potential*, fully present at every latitude — the geometric ground of equal dignity (every being carries the same `1`); `B` is the *usable, balanced fraction* of it; imbalance does not reduce the potential, it raises the price (`γ → ∞` at the poles) and strands the potential unactualized. The agency witnesses: all-foresight-with-no-relevant-means and all-means-with-no-foresight both sit at `B → 0` holding the same unit potential — and the same inability to use it. `[A]` the identities · `[I]` the dignity reading.
+`B` is not a loose label (identity added 2026-06-11): with `φ·ν = 1` it is **identically the geometric-mean / arithmetic-mean ratio** of the dual coordinates — `B = √(φν)/((φ+ν)/2) = 2/(φ+ν) = sin θ` — the standard evenness index of a pair (`= 1` iff `φ = ν`), with `γ = 1/B = (φ+ν)/2` the energy cost of holding a position away from the equator (Paper B §8: `γ = E/mc²`, `B = dτ/dt`). **The reading:** the conserved product is the *potential* on the open sphere, fully present at every evaluated finite latitude — the geometric ground of equal dignity; `B` is the *usable, balanced fraction* of it; imbalance does not reduce the potential, it raises the price (`γ → ∞` toward the poles) and strands the potential unactualized. The agency witnesses are limit tests: all-foresight-with-no-relevant-means and all-means-with-no-foresight approach `B → 0`, the same unit-potential limit, and the same inability to use it. `[A]` the identities · `[I]` the dignity reading.
 
 `P_node = Φ × V` is a downstream finite-node score. It belongs to organisms, institutions, DACs, and strategy surfaces. Do not confuse it with `P∞`.
 
@@ -139,13 +139,13 @@ The equator is not morally preferred because a doctrine says so. Inside the mode
 This is why the framework treats L4 as the heart of action. The equator is not a comfortable static home; it is the crossing where ascent and descent meet. Irreversible private-DAV acts pass through K2; public-DAV/DAC acts route through PRISM or the relevant public-governance rail.
 
 **Dharma corollary.** In the finite action register, the same geometry reads as
-`P_node = Φ × V`. Power (`V`) cannot be maximized lawfully by letting coherence
-(`Φ`) collapse, because the product falls when either factor becomes the
-limiting term. Unlimited `V` with falling `Φ` is therefore lower usable power,
-not higher power. Objective dharma is the L4 condition where `Φ` and `V` are
-balanced enough that action becomes both viable and truthful. This is the
-Burrisphere face of the Krishna army/charioteer test: force without orientation
-is not maximum `P_node`.
+`P_node = Φ × V`. Power (`V` as D4 means-to-act) cannot be maximized lawfully by
+letting coherence (`Φ` as D5 worldline-foresight) collapse, because the product
+falls when either factor becomes the limiting term. Unlimited means with falling
+foresight is therefore lower usable power, not higher power. Objective dharma is
+the L4 condition where `Φ` and `V` are balanced enough that action becomes both
+viable and truthful. This is the Burrisphere face of the Krishna
+army/charioteer test: force without orientation is not maximum `P_node`.
 
 In the normalized reciprocal pair, the same point is the balance maximum:
 
