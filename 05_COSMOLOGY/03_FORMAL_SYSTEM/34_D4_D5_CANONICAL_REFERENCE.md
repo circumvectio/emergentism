@@ -28,12 +28,23 @@ rosetta:
 | **Structure** | Point where cones touch | φ-ν plane opens |
 | **Time** | "Now" (instant, no duration) | "Present" (lived duration) |
 | **Disclosure / consciousness reading `[I]`** | **Witness** (observes) | **Agent selection** (chooses, acts) |
+| **Action register / play rule** | `V`: usable means-to-act at contact — body, tools, energy, access, timing, control | `Φ`: worldline-foresight — envisioning, ranking, aiming, and lawfully using reachable futures |
 | **Operators** | Collapsed to ⊙ | Four cardinal directions (↑↓φ, ↑↓ν) |
 | **Trika** | Unity only (⊙) | Full equation (Zero-Sum Resolution Equation) |
 | **Torus** | The hole | The surface |
 | **Quantum** | Potential (Copenhagen pre-collapse) | Actuality — Many-Worlds (distributed D5) or Copenhagen selected (singular D5) |
 
-**Action-register bridge.** The table above names the dimensional scaffold. In the practical play rule, `V` is D4 means-to-act: body, tools, energy, access, timing, and execution capacity at the action boundary. `Φ` is D5 worldline-foresight: the ability to envision, rank, and aim reachable futures with those means. A child beside a jet and a trained pilot without the relevant bodily/tool access fail on opposite sides of the same product. In contact language, `P_node = Φ × V` only survives when both factors are usable and non-extractive under `η = 0`.
+**Action-register bridge.** The table above names the dimensional scaffold; the
+new row names the contact-register play rule. Dimensional D4 remains the
+causal now-point / witness threshold, not "mere tools." In action, however,
+`V` is the D4 side of agency: body, tools, energy, access, timing, control, and
+execution capacity at the boundary. Dimensional D5 remains present duration /
+agent selection, not disembodied fantasy. In action, `Φ` is the D5 side of
+agency: the worldline-foresight to envision, rank, aim, and lawfully use the
+means available. A child beside a jet and a trained pilot without relevant
+bodily/tool access fail on opposite sides of the same product. In contact
+language, `P_node = Φ × V` survives only when both factors are usable and
+non-extractive under `η = 0`.
 
 ---
 
@@ -269,10 +280,10 @@ Or more tersely:
 
 ### 6. Dimensional Register vs Action Register
 - **Dimensional D4**: witness/now-point, causal contact, recognition without lived duration
-- **Action-register D4 means**: the embodied/tool/energy/access side through which an agent can actualize a selected worldline
+- **Action-register D4 means**: the embodied/tool/energy/access/timing/control side through which an agent can actualize a selected worldline
 - **Dimensional D5**: present duration, agency, option-space, active operators
-- **Action-register D5 worldline-foresight**: the ability to envision, rank, and aim reachable futures before acting
-- **Common error:** Treating "D4 means-to-act" as if it erased D4 witness, or treating D5 foresight as free-floating vision without D4 means. In the game register, `P_node = Φ × V` requires both: D5 worldline-foresight and D4 means-to-act.
+- **Action-register D5 worldline-foresight**: the ability to envision, rank, aim, and lawfully use reachable futures before acting
+- **Common error:** Treating "D4 means-to-act" as if it erased D4 witness, or treating D5 foresight as free-floating vision without D4 means. In the game register, `P_node = Φ × V` requires both: D5 worldline-foresight and D4 means-to-act. Hands, a shovel, and an industrial digger are all only potential `V` until `Φ` can select and use the worldline they open.
 
 ---
 
