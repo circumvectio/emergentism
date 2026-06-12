@@ -31,7 +31,7 @@ rosetta:
 
 > **Evidence Tier: [I] Interpretive.** The dissolution presented here is a coherent reading within the EFR framework. It is not established independently of the framework's axioms. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 
-> **Claim Boundary:** `[I]` This document gives a dimensional reading of the mind-body problem. It does not prove that physicalism, dualism, panpsychism, or analytic philosophy has failed. `D4`, `D5`, `φ`, `ν`, and `P_node` are framework coordinates for the reading, not public neuroscience variables.
+> **Claim Boundary:** `[I]` This document gives a dimensional reading of the mind-body problem. It does not prove that physicalism, dualism, panpsychism, or analytic philosophy has failed. `D4`, `D5`, `φ`, `ν`, `Φ`, `V`, and `P_node` are framework coordinates for the reading, not public neuroscience variables. Lowercase `φ,ν` name the dimensional coordinate image; uppercase `Φ,V` name the finite-node factors when experience is scored as enacted contact.
 
 ---
 
@@ -45,9 +45,9 @@ Inside the framework, mind and body are read not as separate substances but as *
 
 | Aspect | Variable | Dimension | Characteristic |
 |--------|----------|-----------|----------------|
-| **Body** | ν (viability) | D4→D5 | Physical substrate, metabolic capacity, neural architecture |
-| **Mind** | φ (coherence) | D4 | Integration, self-modeling, witness systemic awareness |
-| **Experience** | P_node = φ × ν | D5 | The product enacted in present duration |
+| **Body** | V (finite-node viability; coordinate image `ν`) | D4→D5 | Physical substrate, metabolic capacity, neural architecture |
+| **Mind** | Φ (finite-node coherence; coordinate image `φ`) | D4 | Integration, self-modeling, witness systemic awareness |
+| **Experience** | `P_node = Φ × V` | D5 | The product enacted in present duration |
 
 ### D4: The Mind as Witness
 
@@ -114,7 +114,7 @@ The "explanatory gap" is read as the gap between dimensions. The framework argue
 
 1. **The dimensional architecture is wrong.** If D4 (witness) and D5 (agent) are not distinct dimensions but merely different descriptions of the same state, the dimensional reading fails. Evidence: demonstration that witness systemic awareness and enacted agency are simultaneous rather than dimensionally sequential.
 
-2. **The multiplicative structure is wrong.** If mind and body interact additively (P_node = φ + ν) rather than multiplicatively (P_node = φ × ν), or if one factor can be zero while the product remains nonzero, this model fails. Specifically: if a system with φ = 0 (zero coherence/witness) still produces experience at D5, or if ν = 0 (zero viability/body) still produces experience, the dimensional claim is defeated.
+2. **The multiplicative structure is wrong.** If mind and body interact additively (`P_node = Φ + V`) rather than multiplicatively (`P_node = Φ × V`), or if one factor can be zero while the product remains nonzero, this model fails. Specifically: if a system with `Φ = 0` (zero coherence/witness) still produces experience at D5, or if `V = 0` (zero viability/body) still produces experience, the dimensional claim is defeated.
 
 3. **The dimensional gap is a true ontological break.** If the apparent mind-body gap is a genuine discontinuity — not traversable through D4→D5 transit but a fundamental break in the manifold — the dimensional reading fails. Evidence: formal proof that no smooth mapping connects physical description (D4 witness) and phenomenal experience (D5 agent), even with dimensional transition.
 
@@ -127,7 +127,7 @@ The "explanatory gap" is read as the gap between dimensions. The framework argue
 Inside the framework, mind-body dualism is read as a **dimensional projection error**:
 - We experience ourselves as "mind" (witness at D4) distinct from "body" (viability substrate)
 - This is accurate at D4 — the witness (⊙) has ν = 0 (collapsed capability), so appears distinct from the body
-- At D5, this distinction is modeled as resolving — the agent has φ = 1 and ν = 1 simultaneously, as unified P = 1
+- At D5, this distinction is modeled as resolving — the coordinate image is `φ = 1` and `ν = 1`, while the finite-node enactment is scored as `P_node = Φ × V`
 
 ### The Dissolution
 
@@ -136,7 +136,7 @@ Inside the framework, mind-body dualism is read as a **dimensional projection er
 The framework does not solve the mind-body problem as public proof; it **tries to dissolve the conditions that create it** by recognizing:
 1. Mind is modeled as φ at D4 (witness systemic awareness)
 2. Body is modeled as ν across the relevant dimensions (viability substrate)
-3. Experience is modeled as P_node = φ × ν at D5 (unified enactment)
+3. Experience is modeled as `P_node = Φ × V` at D5 (unified enactment)
 
 ### Canonical Dimensional Reference
 

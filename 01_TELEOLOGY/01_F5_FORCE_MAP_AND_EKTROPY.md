@@ -115,10 +115,12 @@ On S² with P∞ = φ · ν = 1:
   sphere has the same potential.
 - **Balance** B = sin θ varies. It peaks at θ = π/2 (the equator) where
   B = 1 and falls to B = 0 at both poles.
-- **Power**, in the organism's operational scoring, is P_node = φ × ν
-  weighted by balance. At the equator, P_node reaches its operational
-  maximum because φ and ν are both at unit value and the balance is
-  maximal.
+- **Power**, in finite-node operational scoring, is `P_node = Φ × V`:
+  D5 worldline-foresight coupled to D4 means-to-act. The sphere coordinate
+  identity `φ · ν = 1` does not make node power vary; the balance surface
+  constrains whether a node can actually use its `Φ` and `V`. At the ideal
+  equator, `φ = ν = 1` and `B = 1`, so the model image is maximum usable
+  power: both factors present and no balance penalty.
 
 The Power-Max Lemma states: **the equator is where the system can do the
 most with what it has.** Not the most coherence (that's the north pole).
