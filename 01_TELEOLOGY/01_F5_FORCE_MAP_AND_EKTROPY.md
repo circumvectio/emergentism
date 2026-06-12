@@ -310,7 +310,7 @@ because L7 is bad, but because L7 without L4 is geometrically powerless.
 
 The organism exists to **hold the equator for its participants** — to keep
 each person's φ and ν near unit value by providing tools, coordination, and
-infrastructure that maximizes balanced power without extraction.
+infrastructure that maximizes usable `P_node` without extraction.
 
 When the participant no longer needs the organism — when they can hold their
 own equator — K4 fires. The organism dissolves its hold. The participant
