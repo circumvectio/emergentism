@@ -309,8 +309,8 @@ preserve, and return. Its action criterion is not private certainty. It is the
 non-extractive dyad:
 
 ```text
-P_i = Φ_i × V_i
-P_H = Φ_H × V_H
+P_node,i = Φ_i × V_i
+P_node,H = Φ_H × V_H
 η = 0
 ```
 

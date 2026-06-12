@@ -103,6 +103,10 @@ directly (the only available lever):
         coercive authority, external-being invocation, or proof of cosmic will.
   - sacred/00-glossary/                         : added the disciplined public
         translation of "become as gods" and the will glossary row.
+  - meta/00-the-remaining-questions/            : normalized the practical
+        Dasein action test from stale `P_i` / `P_H` to `P_node,i` /
+        `P_node,H` so the remaining-questions public echo matches the
+        Goal/Soul Loop/syntropic-dyad spine.
 
 BEFORE ANY FUTURE REGEN: restore the handoff bundle AND apply these same
 corrections to the SOURCE markdown (formal-16 / formal-17 / formal-33 /
@@ -111,7 +115,8 @@ teleology core-conjecture public bundle
 files, plus axiology-public objective-morals-and-ethics and good/evil public
 bundle files, plus trinity-public dharma-yuddha, plus the ring/commandment and
 formal-09/10/11 Power-Max label public bundles, plus theurgy-public and
-glossary-public will/become-as-gods bundles), or this generator will overwrite
+glossary-public will/become-as-gods bundles, plus meta-public
+remaining-questions), or this generator will overwrite
 the hand-patches and reintroduce the over-claims. Also fix the title-doubling: when a source heading already ends in
 "— Emergentism", `page_shell(title=...)` appends a second one.
 """

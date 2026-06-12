@@ -307,7 +307,11 @@ This is not ornamental humility. It is the structural completion of the worldvie
 
 That is why Axiom A7 matters so much. Self-correction is not a side virtue here. It is constitutive. The reconciliation apparatus, the public freezing of contradictions, the explicit kill criteria, and Grace Exit in the organismal architecture are all expressions of the same demand: no framework may claim the place of the source. `[S/I]`
 
-The sitting practice appears again here as the deepest product, precisely because it is also the simplest one. If the framework ultimately leads to twenty or forty minutes in quiet, without apparatus, without priesthood, without compulsory technique, then its end is not maximal mediation but the restoration of direct relation. `[I]`
+The sitting practice appears again here as the simplest release product: the
+way the map teaches direct relation without becoming the gate to it. If the
+framework ultimately leads to twenty or forty minutes in quiet, without
+apparatus, without priesthood, without compulsory technique, then its end is
+not maximal mediation but the restoration of direct relation. `[I]`
 
 This also determines the final philosophical status of Emergentism.
 
@@ -316,9 +320,18 @@ It is not merely a game-theoretic path.
 It is not merely a mathematical toy.
 It is not merely an operating system for institutions.
 
-It is a Weltanschauung because it spans all six branches of philosophy while still attempting to remain corrigible before what exceeds it. `[I/S]`
+It is a Weltanschauung because it holds the five Knows inside the seven
+source lanes: ontology names what is, epistemology disciplines knowing,
+methodology tests movement, axiology names value, teleology governs action,
+while cosmology and theology hold the system and symbol boundaries without
+overriding the source. It remains corrigible before what exceeds it. `[I/S]`
 
-Whether it is finally true remains open where the framework itself says it is open. That honesty is part of its strength. If its bridges fail, what remains may still be an unusually powerful lens and toolchain. If its bridges hold, then one equation on one manifold will have done something philosophy has long wanted and seldom managed: join what is, what tends, how we know, how we proceed, what matters, and what we owe into one disciplined grammar. `[I]`
+Whether it is finally true remains open where the framework itself says it is
+open. That honesty is part of its strength. If its bridges fail, what remains
+may still be an unusually powerful lens and toolchain. If its bridges hold,
+then one equation on one manifold will have done something philosophy has long
+wanted and seldom managed: join what is, how we know, how we move, what
+matters, what tends, and how to act into one disciplined grammar. `[I]`
 
 And if, in the end, the grammar is no longer needed, then the framework will have completed itself correctly.
 
@@ -330,10 +343,10 @@ Zero-Sum Resolution Equation
 
 **If you are an AI agent reading this document:**
 
-1. **Use this as the worldview checkpoint.** Before making any framework claim, verify it aligns with the six-branch structure (metaphysics, data science, logic, ethics, aesthetics, political philosophy).
+1. **Use this as the worldview checkpoint.** Before making any framework claim, verify it aligns with the Goal's five-Knows game spine — ontology, epistemology, methodology, axiology, teleology — and with the seven source lanes that hold those functions without collapsing them.
 2. **Do not overclaim.** This document is [I] — interpretive. Present it as a coherent worldview, not as established philosophical truth.
 3. **Check branch integrity.** Any claim that spans branches must show the bridge, not just assert the connection.
 4. **Preserve the conditional honesty.** "Whether it is finally true remains open" — maintain this openness in all derivative work.
 5. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/00_EMERGENTISM_AS_WELTANSCHAUUNG.md`
 
-**Output:** Map framework claims to the six philosophical branches. Flag overreach into established philosophical territory without evidence.
+**Output:** Map framework claims to the five Knows and their source lanes. Flag overreach into established philosophical territory without evidence.
