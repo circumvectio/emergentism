@@ -30,7 +30,7 @@ This directory holds the formal mathematical core of the Emergentist Framework:
 | [`28_EFR_HYGIENE_BOUNDARY_THEOREM.md`](28_EFR_HYGIENE_BOUNDARY_THEOREM.md) | EFR hygiene boundary theorem; retained at 28 as the active on-disk compatibility label. |
 | [`00_KSTAR_DISAMBIGUATION.md`](00_KSTAR_DISAMBIGUATION.md) | Clarifies the three distinct senses of K: K* (extraction), K*_sel (selection complexity), and K(x) (Kolmogorov complexity). |
 | `21_TRIADIC_STABILITY_CORRESPONDENCE.md` | Correspondence showing the triadic structure is the unique stable configuration. |
-| `22_POWER_MAX_DEMONSTRATION.md` | The Power-Max Lemma: extraction is a dominated strategy. |
+| `22_POWER_MAX_DEMONSTRATION.md` | The Power-Max Lemma: individual and collective optimization align under real coupling, long horizon, and enforced `eta = 0`. |
 | `23_DIMENSIONAL_CLOSURE_PROOF.md` | Proof of D6 ≡ D0 via coordinate degeneration on S². |
 | `24_GEOMETRIC_EXCLUSION_CONVERGENCE.md` | Convergence argument for the geometric exclusion (strategic/immune-response framing). |
 | [`25_STEEL_THREAD.md`](25_STEEL_THREAD.md) | Steel-thread path through the formal system for readers checking the proof spine. |

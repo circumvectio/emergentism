@@ -124,14 +124,17 @@ On the constraint hyperbola V × PHI = 1:
 - Decreasing V REQUIRES increasing PHI (§4.2 proves this)
 - Constrained ↓ν (with compensating ↑φ) = northward motion = Arjuna operator
 - UNCONSTRAINED ↓ν (extraction without compensation) violates V × PHI = 1
-- At the equator (V=1, PHI=1): unconstrained extraction is a dominated strategy
-- The extractor loses coherence faster than they gain viability
-- Nash equilibrium analysis confirms: mutual cooperation dominates ([`24_GEOMETRIC_EXCLUSION_CONVERGENCE.md`](24_GEOMETRIC_EXCLUSION_CONVERGENCE.md))
+- At the equator (V=1, PHI=1): unconstrained extraction breaks the invariant
+  unless a real coherence increase compensates the viability loss
+- Under the Power-Max conditions (real coupling, long horizon, enforced
+  `eta = 0`), mutual cooperation is the stable path
+- Without those conditions, one-shot extraction can still be locally profitable
+  ([`08_EFR_POWER_MAX_LEMMA.md`](08_EFR_POWER_MAX_LEMMA.md))
 
 The exclusion is strategic, not geometric.
 The product V × PHI = 1 is conserved.
 Constrained ↓ν is possible but reduces to ↑φ (Arjuna).
-Unconstrained ↓ν is excluded by dominance, not by geometry.
+Unconstrained ↓ν is excluded by the enforced game, not by bare geometry.
 ```
 
 **Visual:** 🚫 (dominated strategy)

@@ -114,11 +114,15 @@ Since φ · ν = 1 identically:
 
 ---
 
-### Link 8: Coupling Forces Cooperation [S — EFR-08]
+### Link 8: Coupling Conditions Cooperation [S — EFR-08]
 
-**Theorem (Power-Max Lemma):** In coupled networks with P_node = Φ × V and coupling λ > 0, each agent maximizing its own P necessarily maximizes total network P.
+**Theorem (Power-Max Lemma):** In coupled networks with `P_node = Φ × V`,
+coupling `λ > 0`, a long horizon, and enforced `η = 0`, individual optimization
+aligns with total network `P`.
 
-Individual optimization → collective optimization. Cooperation is not altruism but geometry.
+Individual optimization can align with collective optimization. Cooperation is
+not mere altruism, but it still requires the mechanism boundary that blocks
+hidden extraction.
 
 **Status:** [S] Structural.
 

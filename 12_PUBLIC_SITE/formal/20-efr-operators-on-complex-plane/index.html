@@ -133,19 +133,22 @@
 <strong>Function:</strong> Decrease viability (extraction / immune response)
 <strong>Status:</strong> <strong>CONSTRAINED</strong> — fires only where η &gt; 0 (defectors). Geometrically excluded at η = 0 (cooperators). Not impossible — the immune response. See §4.2 and <a href="../24-geometric-exclusion-convergence/"><code>24_GEOMETRIC_EXCLUSION_CONVERGENCE.md</code></a>.</p>
 <p><strong>Why it's excluded:</strong></p>
-<p>The four operator labels (Arjuna, Kṛṣṇa, Kālī, Kali) reduce to two geometric directions on the constraint hyperbola phi * nu = 1: northward (up-phi, down-nu) and southward (down-phi, up-nu). The Kali operator (pure down-nu without compensating up-phi) would violate the identity phi * nu = 1. Constrained down-nu (with compensating up-phi) is geometrically identical to the Arjuna operator. The fourth operator is excluded not because down-nu is impossible, but because UNCONSTRAINED down-nu -- extraction that decreases another node's viability without increasing their coherence -- is a dominated strategy (see <a href="../24-geometric-exclusion-convergence/"><code>24_GEOMETRIC_EXCLUSION_CONVERGENCE.md</code></a>, Strategic Exclusion).</p>
+<p>The four operator labels (Arjuna, Kṛṣṇa, Kālī, Kali) reduce to two geometric directions on the constraint hyperbola phi * nu = 1: northward (up-phi, down-nu) and southward (down-phi, up-nu). The Kali operator (pure down-nu without compensating up-phi) would violate the identity phi * nu = 1. Constrained down-nu (with compensating up-phi) is geometrically identical to the Arjuna operator. The fourth operator is excluded not because down-nu is impossible, but because UNCONSTRAINED down-nu -- extraction that decreases another node's viability without increasing their coherence -- is excluded by the enforced game (see <a href="../08-efr-power-max-lemma/"><code>08_EFR_POWER_MAX_LEMMA.md</code></a> and <a href="../24-geometric-exclusion-convergence/"><code>24_GEOMETRIC_EXCLUSION_CONVERGENCE.md</code></a>).</p>
 <pre><code>On the constraint hyperbola V × PHI = 1:
 - Decreasing V REQUIRES increasing PHI (§4.2 proves this)
 - Constrained ↓ν (with compensating ↑φ) = northward motion = Arjuna operator
 - UNCONSTRAINED ↓ν (extraction without compensation) violates V × PHI = 1
-- At the equator (V=1, PHI=1): unconstrained extraction is a dominated strategy
-- The extractor loses coherence faster than they gain viability
-- Nash equilibrium analysis confirms: mutual cooperation dominates ([`24_GEOMETRIC_EXCLUSION_CONVERGENCE.md`](../24-geometric-exclusion-convergence/))
+- At the equator (V=1, PHI=1): unconstrained extraction breaks the invariant
+  unless a real coherence increase compensates the viability loss
+- Under the Power-Max conditions (real coupling, long horizon, enforced
+  `eta = 0`), mutual cooperation is the stable path
+- Without those conditions, one-shot extraction can still be locally profitable
+  ([`08_EFR_POWER_MAX_LEMMA.md`](../08-efr-power-max-lemma/))
 
 The exclusion is strategic, not geometric.
 The product V × PHI = 1 is conserved.
 Constrained ↓ν is possible but reduces to ↑φ (Arjuna).
-Unconstrained ↓ν is excluded by dominance, not by geometry.
+Unconstrained ↓ν is excluded by the enforced game, not by bare geometry.
 </code></pre>
 <p><strong>Visual:</strong> 🚫 (dominated strategy)</p>
 <hr>

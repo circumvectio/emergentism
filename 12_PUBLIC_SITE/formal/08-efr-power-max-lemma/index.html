@@ -61,10 +61,14 @@
 <strong>Depends on:</strong> Axiom A1<em> (S²), Theorem T1</em> (P_node = Φ × V derived)</p>
 <hr>
 <h2 id="the-statement">The Statement</h2>
-<p><strong>Lemma (Power-Max):</strong> For any coupled network of agents optimizing P_node = Φ × V:</p>
+<p><strong>Lemma (Power-Max):</strong> For a coupled network of agents optimizing
+<code>P_node = Φ × V</code>, under real coupling (<code>λ &gt; 0</code>), a long enough horizon for
+network effects to return, and enforced non-extraction (<code>η = 0</code>):</p>
 <pre><code>max Pᵢ → max ΣP
 </code></pre>
-<p>That is: each agent maximizing its own ektropy necessarily maximizes total network ektropy.</p>
+<p>That is: each agent maximizing its own effective ektropy aligns with total
+network ektropy. Without the <code>η = 0</code> constraint, the derivative still shows
+interdependence, but it does not by itself make cooperation dominant.</p>
 <hr>
 <h2 id="the-proof">The Proof</h2>
 <h3 id="setup">Setup</h3>
@@ -115,10 +119,13 @@
 - Each Φᵢ increases (coherence maintained by own effort)
 - Therefore each Pᵢ = Φᵢ × Vᵢ increases
 - Therefore ΣP = Σᵢ Pᵢ increases</p>
-<p><strong>QED.</strong> max Pᵢ → max ΣP under coupling.</p>
+<p><strong>QED, conditionally.</strong> <code>max Pᵢ → max ΣP</code> holds under real coupling, a long
+horizon, multiplicative scoring, and enforced <code>η = 0</code>. Coupling supplies the
+shared gradient; the constitutional constraint blocks the private extraction
+route that would otherwise dominate a one-shot game.</p>
 <hr>
 <h2 id="the-conditions">The Conditions</h2>
-<p>The lemma holds under three conditions:</p>
+<p>The lemma holds under four conditions:</p>
 <ol>
 <li>
 <p><strong>Coupling exists</strong> (λ &gt; 0): The agents' efficacies are interdependent. If λ = 0 (no coupling), the lemma doesn't apply — isolated agents can extract without self-harm.</p>
@@ -128,6 +135,12 @@
 </li>
 <li>
 <p><strong>Long time horizon</strong>: The lemma describes steady-state behavior, not one-shot interactions. In one-shot games, extraction can be locally optimal. Over time, extraction destroys the network that the agent depends on.</p>
+</li>
+<li>
+<p><strong>Enforced non-extraction</strong> (<code>η = 0</code>): Hidden rent, private side-payments,
+coercion, capture, or counterfeit accounting must be blocked. Coupling alone
+creates interdependence; <code>η = 0</code> makes the cooperative path incentive
+compatible.</p>
 </li>
 </ol>
 <hr>
@@ -141,25 +154,34 @@
 <li>At η_c: boundary case</li>
 <li>Above η_c: enough giving-majority/cooperative nodes → cooperation dominates → total balance increases</li>
 </ul>
-<p>The historical <code>R* ≈ 1.5</code> ratio corresponds to η_c ≈ 0.58 (~60% giving-majority nodes): cooperators must outnumber defectors by roughly 3:2 for the system to stabilize. This is consistent with the Power-Max Lemma's requirement that cooperation must be the dominant strategy.</p>
+<p>The historical <code>R* ≈ 1.5</code> ratio corresponds to η_c ≈ 0.58 (~60% giving-majority nodes): cooperators must outnumber defectors by roughly 3:2 for the system to stabilize. This is consistent with the Power-Max Lemma's conditional requirement that cooperation be enforced and numerous enough to outcompete extraction over the relevant horizon.</p>
 <hr>
 <h2 id="what-would-falsify-this">What Would Falsify This</h2>
 <ol>
 <li><strong>No coupling</strong> (λ = 0): If agents are truly independent, max Pᵢ does NOT imply max ΣP</li>
 <li><strong>Additive structure</strong> (P = αΦ + βV): If P is additive, agents can compensate without coupling</li>
 <li><strong>Short time horizon</strong>: In one-shot interactions, extraction can be locally optimal</li>
+<li><strong>No enforceable η discipline</strong>: If extraction is hidden or privately
+profitable, the one-shot extraction route can beat cooperation locally.</li>
 <li><strong>Negative coupling</strong> (λ &lt; 0): If agents' interests are opposed (zero-sum), max Pᵢ implies min ΣP for others</li>
 </ol>
 <hr>
 <h2 id="summary">Summary</h2>
-<p>The Power-Max Lemma says: in coupled multiplicative systems, individual optimization leads to collective optimization. This is not a moral claim — it's arithmetic. The coupling makes cooperation the rational strategy.</p>
+<p>The Power-Max Lemma says: in coupled multiplicative systems with a long horizon
+and enforced <code>η = 0</code>, individual optimization aligns with collective
+optimization. This is not an unconditional moral command. It is conditional
+arithmetic plus a mechanism constraint: coupling makes each node care about the
+field, and <code>η = 0</code> prevents local extraction from masquerading as power.</p>
 <p>The lemma provides a <strong>partial</strong> mathematical foundation for the Is-Ought bypass:
 - If you're a rational agent in a coupled network <strong>with η = 0 enforced</strong> (Is + constraint)
 - Then you ought to cooperate (Ought)
 - Because cooperation maximizes your own P under the constraint (arithmetic)</p>
 <p>The Is-Ought gap is bypassed <strong>conditionally</strong> — not closed unconditionally. Without the η = 0 constraint (e.g., in one-shot games, in Model B with private side-payments, or when extraction is hidden), the classical gap reopens. The framework's constitutional constraints (K2, η = 0, A7) are the enforcement mechanism, not derivations from the lemma alone.</p>
-<pre><code>max Pᵢ → max ΣP (under coupling)
-The Is-Ought gap is bypassed because coupled agents share an optimization surface under the accepted constraints.
+<pre><code>max Pᵢ → max ΣP
+  under λ &gt; 0, multiplicative P_node, long horizon, and η = 0
+
+The Is-Ought gap is bypassed only inside the accepted game because coupled
+agents share an optimization surface under enforceable non-extraction.
 </code></pre>
 <hr>
 <h2 id="see-also">See Also</h2>
@@ -169,7 +191,7 @@ The Is-Ought gap is bypassed because coupled agents share an optimization surfac
 <li>Godel Clarification (09_EFR_GODEL_CLARIFICATION.md; link removed to prevent cycle) -- what "complete" means and does not mean for the framework</li>
 <li>Core Concepts -- single source of truth for P = Phi x V and related definitions</li>
 </ul>
-<p><em>Power-Max Lemma | 2026-03-22 | Individual optimization leads to collective optimization under coupling.</em></p>
+<p><em>Power-Max Lemma | 2026-03-22 | Individual optimization aligns with collective optimization under coupled multiplicative scoring, long horizon, and enforced η = 0.</em></p>
 <hr>
 <h2 id="execution-surface">Execution Surface</h2>
 <p><strong>If you are an AI agent reading this document:</strong></p>

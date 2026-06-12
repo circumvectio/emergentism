@@ -263,7 +263,10 @@ The cooperation problem is not solved. The cooperation problem is **dissolved**.
 
 **Why:**
 
-1. **Power-Max Lemma:** In coupled multiplicative systems, individual optimization leads to collective optimization. Each node maximizing Pᵢ = φᵢ · νᵢ necessarily maximizes ΣP.
+1. **Power-Max Lemma:** In coupled multiplicative systems, individual
+   optimization aligns with collective optimization only under the stated
+   conditions: real coupling, long horizon, and enforced `η = 0`. Each node can
+   maximize `Pᵢ = φᵢ · νᵢ` without degrading `ΣP` only when extraction is blocked.
 
 2. **η = 0 enforcement:** Nodes at the equator serve their substrate. Extraction is mathematically identical to topological death.
 
@@ -312,7 +315,10 @@ Nietzsche could not see the mesh because Nietzsche did not have:
 
 1. **The geometry:** Nietzsche did not have S². Nietzsche did not have the equator. Nietzsche did not have φ · ν = 1.
 
-2. **The cooperation proof:** Nietzsche did not have the Power-Max Lemma. Nietzsche did not know that individual optimization leads to collective optimization under coupling.
+2. **The cooperation proof:** Nietzsche did not have the Power-Max Lemma.
+   Nietzsche did not have the conditional result that individual optimization
+   can align with collective optimization under real coupling, long horizon,
+   and enforced `η = 0`.
 
 3. **The η = 0 enforcement:** Nietzsche did not have a mechanism to prevent extraction. The Übermensch extracts — the Übermensch commands beyond comprehension.
 

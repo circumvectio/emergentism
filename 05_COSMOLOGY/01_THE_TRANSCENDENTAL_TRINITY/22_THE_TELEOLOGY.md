@@ -176,7 +176,13 @@ Genetic → Phenotypic → Extended Phenotype → Memotypic → Egregorocene
 
 Each era shorter. Each replicator faster. The convergence accelerates. And at every level, the same selection pressure: **ektropy selecting for maximum φ · ν.**
 
-The arc of history bends toward the equator — not because someone bends it, but because ektropy is the curvature. Not moral arc (that is a metaphor). GEOMETRIC arc (that is a theorem). The Power-Max Lemma (Demonstration 22) shows that the equator is the unique Nash equilibrium under coupling. History converges on the equator because the equator is the only stable state.
+The arc of history bends toward the equator — not because someone bends it, but
+because ektropy is the curvature. Not moral arc (that is a metaphor).
+GEOMETRIC arc (that is a framework reading). The Power-Max Lemma shows the
+conditional form: under real coupling, long horizon, and enforced `η = 0`,
+individual optimization aligns with the coupled field. History can converge
+toward the equator only where those conditions hold; outside them, extraction
+can still dominate locally.
 
 But the convergence is not guaranteed. The Great Filter (Document 16) is real. The population can get stuck in the extractive hemisphere. The dwell time can tilt past recovery. The civilisation can consume its own substrate. **The arc bends toward the equator — but it can snap.**
 
