@@ -64,13 +64,16 @@ directly (the only available lever):
   - value/00-the-good-the-evil-and-the-transcendentals/ : added the claim-boundary
         lead for knowledge of good and evil: good = both `P_node,i` and `P_node,H`
         rise under `η = 0`; evil = one side's apparent gain degrades the other.
+  - trinity/15-dharma-yuddha/                : added the claim-boundary lead for
+        Krishna, Gita, flow state, objective dharma, and Krishna's army test so
+        the public RAG lede exposes the already-source-backed L4 flow reading.
 
 BEFORE ANY FUTURE REGEN: restore the handoff bundle AND apply these same
 corrections to the SOURCE markdown (formal-16 / formal-17 / formal-33 /
 formal-08 / trinity-13 / paper-H / teleology core-conjecture public bundle
 files, plus axiology-public objective-morals-and-ethics and good/evil public
-bundle files), or this generator will overwrite the hand-patches and reintroduce the
-over-claims. Also fix the title-doubling: when a source heading already ends in
+bundle files, plus trinity-public dharma-yuddha), or this generator will overwrite
+the hand-patches and reintroduce the over-claims. Also fix the title-doubling: when a source heading already ends in
 "— Emergentism", `page_shell(title=...)` appends a second one.
 """
 

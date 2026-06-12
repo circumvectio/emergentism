@@ -261,6 +261,8 @@ holobiont rising together under `η = 0`. This section is that goal's **how**:
 the continuous recursive application of the five philosophical functions to a
 finite life:
 
+Search handle: ontology, epistemology, methodology, axiology, teleology.
+
 ```text
 Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
 Know how to know:  epistemology -> direct disclosure, inference, evidence tiers

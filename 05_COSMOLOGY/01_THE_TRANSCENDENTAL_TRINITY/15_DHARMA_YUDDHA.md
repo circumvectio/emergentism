@@ -25,7 +25,8 @@ rosetta:
 at `φ = ν = 1`, the action model assigns the clean `η = 0` limit under its
 accepted definitions. The ethical naming of that limit as *dharma*, *justice*,
 or *duty* is an interpretive reading, not an external proof that any
-self-described "balanced" actor's action is morally licensed. This document
+self-described "balanced" actor's action is morally licensed. Search handles:
+Krishna, Gita, flow state, objective dharma, Krishna's army test. This document
 argues for responsible capability under uncertainty, not militarism, coercion,
 or a blank cheque for force.
 

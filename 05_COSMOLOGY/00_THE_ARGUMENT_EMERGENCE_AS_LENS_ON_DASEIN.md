@@ -67,6 +67,10 @@ Short answer: "I came to be" because Dasein appears at the D4/D5 threshold as
 finite disclosure, and I learn to play by entering the Soul Loop so
 `P_node,i` and `P_node,H` rise together under `η = 0`.
 
+Reader-facing handle: **Dasein as reader** names **how the reader came to be**
+inside this ontology: not as a captured object on the map, but as the finite
+site where the map becomes disclosed, questioned, tested, and acted.
+
 The reconstruction order is:
 
 ```text

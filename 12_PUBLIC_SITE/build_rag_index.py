@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parent
 BOOK = ROOT / "book" / "index.html"
 OUT = ROOT / "book" / "rag_index.json"
 
-LIBRARY = ["canon", "formal", "paradox", "memetic", "rosettad", "operators",
+LIBRARY = ["canon", "trinity", "formal", "paradox", "memetic", "rosettad", "operators",
            "will", "value", "ground", "sacred", "method", "meta"]
 
 # Overview/doctrine pages chunked at their own headings (h2/h3 chapters) so the
