@@ -57,11 +57,19 @@ directly (the only available lever):
         reconciliation; replaced the withdrawn "reality maximizes balance" lead with
         viable completion as constrained option-cone widening under balance and
         non-extraction.
+  - value/00-objective-morals-and-ethics/    : added the claim-boundary lead that
+        disambiguates objective morality (`H -> i`), objective ethics (`i -> H`),
+        objective dharma, syntropic morality, and syntropic ethics under
+        `P_node,i` / `P_node,H`.
+  - value/00-the-good-the-evil-and-the-transcendentals/ : added the claim-boundary
+        lead for knowledge of good and evil: good = both `P_node,i` and `P_node,H`
+        rise under `η = 0`; evil = one side's apparent gain degrades the other.
 
 BEFORE ANY FUTURE REGEN: restore the handoff bundle AND apply these same
 corrections to the SOURCE markdown (formal-16 / formal-17 / formal-33 /
 formal-08 / trinity-13 / paper-H / teleology core-conjecture public bundle
-files), or this generator will overwrite the hand-patches and reintroduce the
+files, plus axiology-public objective-morals-and-ethics and good/evil public
+bundle files), or this generator will overwrite the hand-patches and reintroduce the
 over-claims. Also fix the title-doubling: when a source heading already ends in
 "— Emergentism", `page_shell(title=...)` appends a second one.
 """
