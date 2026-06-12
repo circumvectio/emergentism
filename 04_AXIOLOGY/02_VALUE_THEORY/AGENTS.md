@@ -35,6 +35,7 @@ rosetta:
 - `README.md`
 - [`../AGENTS.md`](../AGENTS.md)
 - `00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md`
+- `01_TRANSCENDENTALS.md`
 
 ## Routing Law
 

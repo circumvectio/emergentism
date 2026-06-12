@@ -17,9 +17,28 @@ rosetta:
 
 This is the Value Alignment sublane for value theory.
 
+## Dasein Game Reading
+
+Value theory is where the Soul Loop becomes a moral compass. Dasein does not
+ask only "what do I want?" or "what does the group demand?" It asks which act
+raises the individual symbiont and the sustaining holobiont together:
+
+```text
+P_i = Φ_i × V_i
+P_H = Φ_H × V_H
+η = 0
+```
+
+Rights protect the individual from extractive collective force. Duties protect
+the shared field from extractive individual action. Due process keeps either
+side from calling its own appetite "justice." The practical axiology test is
+therefore: disclose the value claim, test it, ask whom it serves, preserve
+Beauty/Truth/Justice, dissolve hidden rent, leave receipts, and return.
+
 ## What It Owns
 
 - Good / evil / transcendental value framing.
+- Beauty, Truth, and Justice as asymptotic teleological limits.
 - Objective morals and ethics as the directional dyad between individual and collective.
 - Rights, duties, and due process as the law-facing translation of that dyad.
 - Justice as widest-boundary positive `ΣΔB` / `ΣΔP_node` under `η = 0`.
@@ -34,6 +53,7 @@ This is the Value Alignment sublane for value theory.
 ## Read First
 
 - `00_OBJECTIVE_MORALS_AND_ETHICS.md`
+- `01_TRANSCENDENTALS.md`
 - `01_RIGHTS_DUTIES_AND_DUE_PROCESS.md`
 - `00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md`
 - Parent route: `../README.md`
@@ -52,4 +72,5 @@ Active source-owner subfolder.
 
 1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
 2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Canonical Path:** `01_EMERGENTISM/04_AXIOLOGY/02_VALUE_THEORY/README.md`
+3. **Apply the Dasein game test.** A value claim is not stable until it can state how it raises both `P_i` and `P_H` under `η=0`.
+4. **Canonical Path:** `01_EMERGENTISM/04_AXIOLOGY/02_VALUE_THEORY/README.md`

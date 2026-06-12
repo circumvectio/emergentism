@@ -41,13 +41,16 @@ law   = the process that keeps both vectors reciprocal under η = 0
 This is not a claim about enacted state law.
 It is the framework's internal grammar for reading law, institutions, rights,
 duties, and enforcement without collapsing them into commandment or preference.
+Law is objective teleology under procedure: a finite process for keeping Beauty,
+Truth, and Justice from becoming slogans while real boundaries decide.
 
 ## Rights: Moral Claims Against the Collective
 
 > **A right is the moral claim an individual has against a collective when the
 > collective must preserve or raise that individual's `ΔP` through `V` and `Φ`.**
 
-Rights are downstream of objective morality:
+Because rights are the legal face of the moral vector, they are downstream of
+the objective-morality definition:
 
 ```text
 collective -> individual
@@ -70,7 +73,8 @@ of the individual who carries it.
 > **A duty is the ethical claim a collective has upon an individual when the
 > individual must preserve or raise the collective's `ΔP` through `V` and `Φ`.**
 
-Duties are downstream of objective ethics:
+Because duties are the legal face of the ethical vector, they are downstream of
+the objective-ethics definition:
 
 ```text
 individual -> collective
@@ -108,6 +112,29 @@ externalizing cost into the shared field.
 A lawful order is not one with many rules.
 A lawful order is one whose rules keep `collective -> individual` and
 `individual -> collective` mutually raising `ΔP` under `η = 0`.
+
+## Due Process as the Soul Loop of Law
+
+Due process is the Soul Loop translated into institutional action:
+
+```text
+disclose -> test -> serve -> see -> dissolve -> preserve -> return
+notice   -> evidence -> hearing -> system view -> remedy -> receipt -> appeal/exit
+```
+
+This matters because law is where the good/evil distinction becomes dangerous.
+An institution can say "justice" while protecting its own capture. An
+individual can say "rights" while extracting from the common field. The loop
+forces each side back through evidence, proportionality, receipt, and repair.
+
+So the legal game is:
+
+```text
+if rights erase duties -> individual capture
+if duties erase rights -> collective capture
+if process preserves both -> lawful dyad
+if process raises P_i and P_H under η = 0 -> objective dharma in law
+```
 
 ## Due Process: Kali Must Not Fire Blind
 

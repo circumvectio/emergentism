@@ -20,7 +20,8 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 3. [`../AGENTS.md`](../AGENTS.md) — parent lane authority
 4. [`00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md`](00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md) — foundational value framing
 5. [`00_OBJECTIVE_MORALS_AND_ETHICS.md`](00_OBJECTIVE_MORALS_AND_ETHICS.md) — morals and ethics as directional dyad
-6. [`01_RIGHTS_DUTIES_AND_DUE_PROCESS.md`](01_RIGHTS_DUTIES_AND_DUE_PROCESS.md) — law-facing translation of the dyad
+6. [`01_TRANSCENDENTALS.md`](01_TRANSCENDENTALS.md) — Beauty, Truth, and Justice as asymptotic teleological limits
+7. [`01_RIGHTS_DUTIES_AND_DUE_PROCESS.md`](01_RIGHTS_DUTIES_AND_DUE_PROCESS.md) — law-facing translation of the dyad
 
 ## Scope
 
@@ -32,6 +33,7 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 ## What This Lane Owns
 
 - **Good / evil / transcendental value framing.**
+- **Beauty, Truth, and Justice** as asymptotic teleological limits.
 - **Objective morals and ethics** as the directional dyad between individual and collective.
 - **Rights, duties, and due process** as the law-facing translation of that dyad.
 - **Justice** as widest-boundary positive `ΣΔB` / `ΣΔP_node` under `η = 0`.
