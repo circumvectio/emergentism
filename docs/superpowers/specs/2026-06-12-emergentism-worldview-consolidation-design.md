@@ -265,15 +265,87 @@ The implementation plan should inspect and patch these surfaces first:
 3. `04_AXIOLOGY/02_VALUE_THEORY/01_TRANSCENDENTALS.md`
 4. `05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md`
 5. `05_COSMOLOGY/00_EMERGENTISM_AS_WELTANSCHAUUNG.md`
-6. `06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md`
-7. public echoes under `12_PUBLIC_SITE/value/`, `12_PUBLIC_SITE/ground/`,
+6. `05_COSMOLOGY/03_FORMAL_SYSTEM/17_EFR_ONTOLOGY_COMPLETE.md`
+7. `06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md`
+8. public echoes under `12_PUBLIC_SITE/value/`, `12_PUBLIC_SITE/ground/`,
    `12_PUBLIC_SITE/foundations/`, and `12_PUBLIC_SITE/book/`
 
 Implementation should keep the current draft's good direction but strengthen
 the mathematical Syntropic Dyadism section and remove any phrasing that lets
 objective teleology read as possession or command.
 
-## 6. Verification
+## 6. Dialectical QA Addendum
+
+### 6.1 Thesis
+
+The design's strongest form is coherent if the value-theory owner is treated as
+canonical:
+
+```text
+Morality = H -> i
+Ethics   = i -> H
+Good     = both arrows raise coupled worldline potential under eta = 0
+Evil     = local gain by degrading the field that carries future potential
+```
+
+This matches the Syntropic Dyadism request: the individual symbiont reaches its
+maximum viable worldline only by raising the holobiont that carries its future
+option cone, while the holobiont remains moral only by raising the symbiont
+without capture.
+
+### 6.2 Antithesis
+
+The live corpus does not yet speak with one mouth:
+
+- `04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md` uses the
+  target arrows: morality is `collective -> individual`, ethics is
+  `individual -> collective`.
+- `05_COSMOLOGY/03_FORMAL_SYSTEM/17_EFR_ONTOLOGY_COMPLETE.md` currently reverses
+  the labels: objective morals are `Individual -> Whole`, objective ethics are
+  `Whole -> Individual`.
+- `05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md` and
+  `05_COSMOLOGY/00_EMERGENTISM_AS_WELTANSCHAUUNG.md` use an older compression:
+  ethics is the general directional geometry, while morals are local enactments
+  or codes.
+
+That contradiction must be resolved before implementation can claim objective
+ethics and morals are disambiguated.
+
+### 6.3 Synthesis
+
+Implementation should adopt the value-theory owner as canonical and patch the
+older summaries into a two-layer grammar:
+
+```text
+Layer 1: directional value transfer
+  morality = holobiont -> symbiont
+  ethics   = symbiont -> holobiont
+
+Layer 2: local expression
+  moral code / ethical code = finite implementation attempt under conditions
+```
+
+This preserves ordinary-language flexibility while preventing the canonical
+math from drifting.
+
+### 6.4 Worldline Formalism Status
+
+The stronger worldline / holobiont / symbiont notation in this design is a
+required implementation target, not yet fully promoted into the value-theory
+source. The implementation is not complete until
+`00_OBJECTIVE_MORALS_AND_ETHICS.md` or a directly owned companion file carries
+the formalism and the public echoes inherit it.
+
+### 6.5 Phrase Boundary
+
+The phrase "become as gods" should remain absent from public/source doctrine
+unless it appears only as:
+
+- the disciplined translation in section 4; or
+- an explicit rejection of literal divinization, hierarchy, coercion, or
+  exemption from due process.
+
+## 7. Verification
 
 Mechanical checks:
 
@@ -295,11 +367,15 @@ Expected verification result:
 - Syntropic Dyadism is tied to Power-Max conditions;
 - good/evil are defined as coupled-worldline potential and extraction, not
   inherited commandment;
+- morality and ethics use the same arrows everywhere:
+  `morality = H -> i`, `ethics = i -> H`;
+- "become as gods" appears only in the disciplined translation or as an explicit
+  rejection of literal divinization;
 - Dasein remains disclosure, not Being;
 - will remains constrained construction, not magic;
 - public generated pages carry the same boundaries as source files.
 
-## 7. Out of Scope
+## 8. Out of Scope
 
 - rewriting the whole corpus;
 - making a new master doctrine that outranks owner lanes;
@@ -307,7 +383,7 @@ Expected verification result:
 - claiming completion of all perennial questions as public proof;
 - committing unrelated dirty doctrine/public-site changes with this design spec.
 
-## 8. Success Criteria
+## 9. Success Criteria
 
 The implementation is ready only when a reader can answer these questions from
 the canon without relying on scattered summaries:
