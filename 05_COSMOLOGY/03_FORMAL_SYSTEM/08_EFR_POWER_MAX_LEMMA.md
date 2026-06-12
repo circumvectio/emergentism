@@ -22,36 +22,45 @@ rosetta:
 
 ## The Statement
 
-**Lemma (Power-Max):** For a coupled network of agents optimizing
-`P_node = Φ × V`, under real coupling (`λ > 0`), a long enough horizon for
-network effects to return, and enforced non-extraction (`η = 0`):
+**Lemma (Power-Max, constrained form):** For a coupled network of agents
+optimizing `P_node = Φ × V`, under real coupling (`λ > 0`), a long enough
+horizon for network effects to return, and enforced non-extraction (`η = 0`):
 At the symbiont/holobiont boundary, this is the syntropic dyad: the individual
 symbiont `i` maximizes durable world-line potential only on trajectories where
 the collective holobiont `H` is preserved or raised -- `i raises H` and
 `H raises i` under `η = 0`.
 
 ```
-max P_node,i → max ΣP_node
 W_i(T) = ∫_0^T P_node,i(t) dt
 P_node,H = Φ_H × V_H
-argmax W_i(T) ⊆ { trajectories with dP_node,H/dt ≥ 0 }
-joint optimum: max durable P_node,i ⇔ max P_node,H
+A_η = admissible trajectories under λ > 0, multiplicative P_node,
+      long horizon, and enforced η = 0
+
+argmax_{τ ∈ A_η} W_i(T, τ)
+  ⊆ { τ : ΔP_node,H(T, τ) ≥ 0 }
+
+syntropic dyad:
+  ΔP_node,i > 0 and ΔP_node,H > 0 under η = 0
 ```
 
-That is: each agent maximizing its own effective ektropy aligns with total
-network ektropy. Without the `η = 0` constraint, the derivative still shows
-interdependence, but it does not by itself make cooperation dominant.
+That is: durable individual maximization is a constrained-frontier statement,
+not an unconditional biconditional. The individual optimum is searched only
+inside the admissible `η = 0` game; on that frontier, degrading the holobiont
+degrades the field that returns as the individual's future viability. Without
+the `η = 0` constraint, the derivative still shows interdependence, but it does
+not by itself make cooperation dominant.
 
 **Corollary (Syntropic Dyadism):** Let `i` be the individual symbiont and
 `H` the collective holobiont / coupled sustaining field, with
 `P_node,H = Φ_H × V_H` or, where `H` is modeled as an aggregate boundary,
 `P_node,H = Σ_{k∈H}P_node,k` at the scale under analysis. Under the same four
 conditions, the individual symbiont maximizes durable world-line potential only
-along moves that preserve or raise both `P_node,i` and `P_node,H` under `η = 0`:
+along moves that preserve or raise `P_node,H` while preserving or raising
+`P_node,i` under `η = 0`:
 
 ```
-max durable P_node,i  ⇔  max P_node,H
-  within real coupling, multiplicative P_node, long horizon, and enforced η = 0
+max durable W_i only on the syntropic frontier:
+  ΔP_node,i ≥ 0 and ΔP_node,H ≥ 0 under η = 0
 ```
 
 This is not a new unconditional proof of morality. It is the Power-Max Lemma
@@ -103,17 +112,17 @@ P_eff(i) = Φᵢ × V_eff(i) = Φᵢ × [(1-λ)Vᵢ + λ⟨V⟩]
              = (1-λ)ΣP_node + λ⟨V⟩Σᵢ Φᵢ
 ```
 
-### Step 5: Show that maximizing individual P_eff maximizes ΣP_node,eff
+### Step 5: Coupling creates a positive cross-derivative
 
-Suppose each agent maximizes its own P_eff(i). This means:
-- Agent i increases Φᵢ (coherence)
-- Agent i increases V_eff(i) (effective viability)
-
-Increasing V_eff(i) means increasing (1-λ)Vᵢ + λ⟨V⟩. Since (1-λ)Vᵢ is under the agent's direct control and λ⟨V⟩ depends on all agents, the agent must also increase Vⱼ for other agents (indirectly, through the coupling).
+Suppose agent i evaluates its own durable payoff through P_eff(i). Increasing
+V_eff(i) means increasing (1-λ)Vᵢ + λ⟨V⟩. Since λ⟨V⟩ depends on all agents,
+other agents' viability enters i's payoff even before moral language is added.
 
 Specifically: ∂P_eff(i)/∂Vⱼ = λΦᵢ/N > 0 for all j ≠ i.
 
-This means agent i's ektropy increases when ANY other agent's viability increases. **The agents' interests are coupled.**
+This means agent i's ektropy increases *ceteris paribus* when any other agent's
+viability increases. **The agents' interests are coupled.** This proves
+monotone interdependence, not automatic cooperation.
 
 ### Step 6: The coupling creates interdependence, not automatic cooperation
 
@@ -133,18 +142,31 @@ Since λ < 1, **extraction strictly increases the extractor's payoff in this one
 
 The Is-Ought bypass requires the additional constraint that η = 0 is enforced (e.g., through the Three Gates mechanism, K2 signing, or protocol design). It does not follow from the coupling derivative alone.
 
-### Step 7: Show cooperation maximizes ΣP_node
+### Step 7: State the constrained frontier
 
-If each agent maximizes P_eff(i) by helping others:
-- Each Vᵢ increases (direct benefit from own effort + indirect benefit from others' help)
-- Each Φᵢ increases (coherence maintained by own effort)
-- Therefore each P_node,i = Φᵢ × Vᵢ increases
-- Therefore ΣP_node = Σᵢ P_node,i increases
+Let `A_η` be the admissible trajectory set: real coupling, multiplicative
+`P_node`, long horizon, and enforced `η = 0` (no hidden rent, capture,
+coercion, or counterfeit accounting). Within `A_η`, a move that raises i by
+degrading H is not a lawful maximizer; it is outside the accepted game or it
+reappears as a future cost to i through the coupling term.
 
-**QED, conditionally.** `max P_node,i → max ΣP_node` holds under real coupling, a long
-horizon, multiplicative scoring, and enforced `η = 0`. Coupling supplies the
-shared gradient; the constitutional constraint blocks the private extraction
-route that would otherwise dominate a one-shot game.
+So the correct theorem is:
+
+```
+argmax_{τ ∈ A_η} W_i(T, τ)
+  ⊆ { τ : ΔP_node,H(T, τ) ≥ 0 }
+```
+
+If each agent maximizes through the same admissible syntropic frontier:
+- no agent is permitted to raise itself by lowering the coupled boundary;
+- each viable cooperative improvement raises local `Φ` or `V` without hidden
+  extraction;
+- the aggregate `ΣP_node` rises when the individual improvements are real.
+
+**QED, conditionally.** Coupling supplies the shared gradient; the
+constitutional constraint blocks the private extraction route that would
+otherwise dominate a one-shot game; the durable individual optimum is therefore
+searched on the frontier where the holobiont is preserved or raised.
 
 ---
 
@@ -169,34 +191,36 @@ The lemma holds under four conditions:
 
 > **[C] Conjecture (2026-04-04).** No simulation code, parameters, or reproducible methodology exists for the η_c ≈ 0.58 social tipping threshold. Earlier drafts named the same threshold `R* ≈ 1.5`; that ratio label is now historical only. Treat the threshold as provisional structural support, not settled empirical fact. See FRAGILITY_AUDIT_2026_04_04.md.
 
-The η_c threshold from Protocol D is the empirical manifestation of the Power-Max Lemma:
+If later validated, the η_c threshold from Protocol D would be a social
+expression of the Power-Max Lemma:
 
 - Below η_c: too few giving-majority/cooperative nodes → extraction dominates → total balance decreases
 - At η_c: boundary case
 - Above η_c: enough giving-majority/cooperative nodes → cooperation dominates → total balance increases
 
-The historical `R* ≈ 1.5` ratio corresponds to η_c ≈ 0.58 (~60% giving-majority nodes): cooperators must outnumber defectors by roughly 3:2 for the system to stabilize. This is consistent with the Power-Max Lemma's conditional requirement that cooperation be enforced and numerous enough to outcompete extraction over the relevant horizon.
+The historical `R* ≈ 1.5` ratio corresponds to η_c ≈ 0.58 (~60% giving-majority nodes): cooperators would need to outnumber defectors by roughly 3:2 for the system to stabilize under that conjectural model. This is consistent with the Power-Max Lemma's conditional requirement that cooperation be enforced and numerous enough to outcompete extraction over the relevant horizon, but it is not current empirical evidence for the lemma.
 
 ---
 
 ## What Would Falsify This
 
-1. **No coupling** (λ = 0): If agents are truly independent, max P_node,i does NOT imply max ΣP_node
+1. **No coupling** (λ = 0): If agents are truly independent, max `W_i` need not preserve or raise `P_node,H`
 2. **Additive structure** (`P_add = αΦ + βV`): If node scoring is additive, agents can compensate without coupling
 3. **Short time horizon**: In one-shot interactions, extraction can be locally optimal
 4. **No enforceable η discipline**: If extraction is hidden or privately
    profitable, the one-shot extraction route can beat cooperation locally.
-5. **Negative coupling** (λ < 0): If agents' interests are opposed (zero-sum), max P_node,i implies min ΣP_node for others
+5. **Negative coupling** (λ < 0): If agents' interests are opposed (zero-sum), max `W_i` can imply loss for the coupled field
 
 ---
 
 ## Summary
 
 The Power-Max Lemma says: in coupled multiplicative systems with a long horizon
-and enforced `η = 0`, individual optimization aligns with collective
-optimization. This is not an unconditional moral command. It is conditional
-arithmetic plus a mechanism constraint: coupling makes each node care about the
-field, and `η = 0` prevents local extraction from masquerading as power.
+and enforced `η = 0`, durable individual optimization is searched on the
+syntropic frontier where the coupled field is preserved or raised. This is not
+an unconditional moral command. It is conditional arithmetic plus a mechanism
+constraint: coupling makes each node care about the field, and `η = 0` prevents
+local extraction from masquerading as power.
 
 The lemma provides a **partial** mathematical foundation for the Is-Ought bypass:
 - If you're a rational agent in a coupled network **with η = 0 enforced** (Is + constraint)
@@ -206,13 +230,13 @@ The lemma provides a **partial** mathematical foundation for the Is-Ought bypass
 The Is-Ought gap is bypassed **conditionally** — not closed unconditionally. Without the η = 0 constraint (e.g., in one-shot games, in Model B with private side-payments, or when extraction is hidden), the classical gap reopens. The framework's constitutional constraints (K2, η = 0, A7) are the enforcement mechanism, not derivations from the lemma alone.
 
 ```
-max P_node,i → max ΣP_node
-  under λ > 0, multiplicative P_node, long horizon, and η = 0
+argmax_{τ ∈ A_η} W_i(T, τ)
+  ⊆ { τ : ΔP_node,H(T, τ) ≥ 0 }
 
 The Is-Ought gap is bypassed only inside the accepted game because coupled
 agents share an optimization surface under enforceable non-extraction.
 At the symbiont/holobiont boundary, durable individual world-line potential
-also requires preserving or raising P_node,H across the relevant horizon.
+requires preserving or raising P_node,H across the relevant horizon.
 ```
 
 ---

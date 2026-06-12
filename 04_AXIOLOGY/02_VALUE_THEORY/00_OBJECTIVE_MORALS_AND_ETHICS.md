@@ -244,7 +244,8 @@ Dyadism is all of the law: the law is only ever "keep both vectors raising
 The formal Power-Max Lemma says:
 
 ```text
-max P_node,i -> max ΣP_node
+argmax_{τ ∈ A_η} W_i(T, τ)
+  ⊆ { τ : ΔP_node,H(T, τ) ≥ 0 }
 ```
 
 It holds under the canonical conditions: coupling exists (`λ > 0`),
@@ -266,8 +267,8 @@ The conditional is-ought bypass is therefore:
 
 ```text
 if λ > 0, P_node = Φ × V, the horizon is long, and η = 0 is enforced:
-  max durable P_node,i -> max ΣP_node
-  rational self-optimization selects cooperation inside the constrained game
+  max durable W_i is searched on trajectories where ΔP_node,H >= 0
+  rational self-optimization selects the syntropic frontier inside the constrained game
 ```
 
 The holobiont form says the same thing at the scale of a lived worldline. Let

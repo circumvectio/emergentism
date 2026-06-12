@@ -234,7 +234,8 @@ Dyadism is all of the law: the law is only ever "keep both vectors raising
 <code>ΔP</code>," and the 5+1 is how.</p>
 <h3 id="power-max-lemma-l4-corollary">Power Max Lemma: L4 Corollary</h3>
 <p>The formal Power-Max Lemma says:</p>
-<pre><code class="language-text">max P_node,i -&gt; max ΣP_node
+<pre><code class="language-text">argmax_{τ ∈ A_η} W_i(T, τ)
+  ⊆ { τ : ΔP_node,H(T, τ) ≥ 0 }
 </code></pre>
 <p>It holds under the canonical conditions: coupling exists (<code>λ &gt; 0</code>),
 <code>P_node = Φ × V</code> is multiplicative, the time horizon is long enough for network
@@ -252,8 +253,8 @@ the moral/ethical dyad:</p>
 </ul>
 <p>The conditional is-ought bypass is therefore:</p>
 <pre><code class="language-text">if λ &gt; 0, P_node = Φ × V, the horizon is long, and η = 0 is enforced:
-  max durable P_node,i -&gt; max ΣP_node
-  rational self-optimization selects cooperation inside the constrained game
+  max durable W_i is searched on trajectories where ΔP_node,H &gt;= 0
+  rational self-optimization selects the syntropic frontier inside the constrained game
 </code></pre>
 <p>The holobiont form says the same thing at the scale of a lived worldline. Let
 <code>W_i</code> name the maximum reachable worldline potential of the individual
