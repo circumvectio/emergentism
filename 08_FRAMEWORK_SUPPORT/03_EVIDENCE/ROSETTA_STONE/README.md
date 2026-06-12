@@ -63,6 +63,38 @@ The Rosetta Stone is the observation that this happens. The framework's explanat
 
 > See [00_CORPUS.md](00_CORPUS.md) for the whole corpus map seen from this folder.
 
+## From Rosetta Table to Soul Loop
+
+The Rosetta is static only when read as a table. In use, it is the calibration
+surface for the [Soul Loop](../../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md):
+the repeated cycle by which Dasein discloses, tests, serves, sees, dissolves,
+preserves, and returns.
+
+Read this folder as the evidence layer behind that practice:
+
+```text
+Rosetta rows      -> available operator moves
+Rosetta columns   -> domains where the move must still be audited
+S² geometry       -> balance surface for Φ and V
+Soul Loop         -> recursive method for correcting map and player
+L4 / equator      -> objective dharma when Φ and V balance in action
+```
+
+The game form is therefore not "pick a row and identify with it." That freezes
+the wheel. The game is to keep the wheel turning until the next lawful action
+raises the finite node and its sustaining whole without extraction:
+
+```text
+P_i = Φ_i × V_i
+P_H = Φ_H × V_H
+η = 0
+```
+
+`i` is the individual symbiont; `H` is the holobiont. A Rosetta reading becomes
+ethical only when `i` raises `H` and `H` raises `i`. If one rises by degrading
+the other, the same row has become capture, regardless of its mythic name.
+`[S/I]`
+
 ---
 
 ## The Master Three-Stage Process

@@ -51,6 +51,57 @@ evidence_tier: "[A] for algebraic/calculus identities under stated assumptions; 
 
 Use regime-specific notation. `P_node := Φ × V` is the finite-node operational product. `P∞ = φ · ν = 1` is the S² manifold identity. Do not collapse them.
 
+### Soul Loop Recurrence and Power-Max Form
+
+The Soul Loop gives the Rosetta mathematics a runtime form. Let `i` be the
+individual symbiont and `H` the holobiont / sustaining whole:
+
+```text
+P_i = Φ_i × V_i
+P_H = Φ_H × V_H
+```
+
+For normalized positive factors, define a finite-node balance reading:
+
+```text
+r_i = Φ_i / V_i
+B_i = 2 / (r_i + 1/r_i)
+```
+
+and analogously for `H`. `B = 1` when the factors are balanced and falls toward
+0 as one factor dominates. This is a node-level analogue of the sphere balance
+reading; it is not the same claim as `P∞ = φ · ν = 1`.
+
+A Soul Loop step is a constrained recurrence:
+
+```text
+x_t = (Φ_i, V_i, Φ_H, V_H, C_t, G_t)
+a_t ∈ A(x_t) where η(a_t) = 0
+x_{t+1} = Loop(x_t, a_t)
+```
+
+`C_t` is the corpus/world-model state and `G_t` is the player's operator-weight
+vector. The admissible action set `A(x_t)` excludes extraction: an action that
+raises one side by degrading the other is not a lawful maximizer, even if it
+temporarily increases a local product.
+
+The internal Power-Max lemma can be written as a policy claim under coupling
+assumptions:
+
+```text
+W_i(π) = Σ γ^t P_i(t)
+W_H(π) = Σ γ^t P_H(t)
+
+π* ∈ argmax W_i only if π* preserves or raises W_H under η = 0.
+```
+
+Reason: when `i` is materially, epistemically, and morally coupled to `H`, a
+policy that degrades `H` shrinks the future feasible set of `i`. The maximum
+worldline potential of the symbiont is therefore achieved through the
+holobiont, not against it. This is `[S]` as internal decision geometry and
+`[I]` as a general model of life; it is not an empirical theorem without
+specified coupling channels, horizon, and measurements.
+
 ### The Equations as L-Levels
 
 Each mathematical form maps to an L-level in the Master Three-Stage Process:

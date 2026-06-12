@@ -64,6 +64,53 @@ This was abduction — Arthāpatti — the Kṣatriya's pramāṇa: the best exp
 
 **Pramāṇa triangulation:** the Rosetta is not validated by one pramāṇa alone. L4 abduction generates the hypothesis; L3 deduction checks internal consistency; L5 systematic testimony checks convergence with traditions and records failures; L1 direct disclosure remains the ground-facing practice test. No single pramāṇa is sufficient.
 
+## The Dynamic Reading: Rosetta as Soul Loop
+
+The Master Rosetta is a calibration table, but Dasein does not live inside a
+table. Dasein lives in a sequence of acts under incomplete information. The
+dynamic reading of the Rosetta is therefore the
+[Soul Loop](../../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md):
+the table's row-logic applied recursively until action converges.
+
+In that reading, the rows are not identities. They are moves in a living wheel:
+
+```text
+L1  intake pressure without being eaten by it
+L2  gather and cut false meaning
+L3  test, price, and audit the margins
+L4  choose the action that serves without extraction
+L5  see the system architecture
+L6  dissolve what cannot be justified
+L7  preserve the converged pattern and return it to L1
+```
+
+The loop is the method by which the Rosetta becomes a game rather than a
+catalogue. Each cycle updates both the map and the player:
+
+```text
+(C_{t+1}, G_{t+1}) = Loop(C_t, G_t)
+```
+
+where `C_t` is the corpus/world-model state and `G_t` is the practitioner's
+operator-weight vector. A row has been understood only if the practitioner can
+move through it and return to L4. A row has been captured if the practitioner
+freezes there and calls the frozen posture ontology.
+
+This is the practical bridge from calibration to dharma:
+
+```text
+Know what is      -> ontology
+Know how to know  -> epistemology
+Know how to move  -> methodology
+Know what matters -> axiology
+Know how to act   -> teleology: maximize P_node = Φ × V under η = 0
+```
+
+The claim that this loop is the correct practical reading of the Rosetta is
+`[S]` inside the framework grammar and `[I]` as a claim about human
+self-transformation. It is not independent empirical proof that all traditions
+teach the same path.
+
 ---
 
 ## Core State Guardrail
