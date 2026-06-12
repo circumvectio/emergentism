@@ -127,7 +127,7 @@ The K-star boundary is empirically encoded in morphology and behaviour: duck clo
 
 A breeding system running pure Arjuna without Kālī produces **runaway ornament inflation** (Fisherian collapse — bowers absurd, tails flightless). Pure Kali without Kṛṣṇa produces brute combat with no paternal substrate — mating happens but offspring don't survive. **All four together — display, choice, combat, provision — maximise φ × ν product in F+1.** This is not institutional narrative. It is the dyadic structure of generation itself.
 
-> **The Giving Dyad (Arjuna + Kṛṣṇa) makes the next generation possible. The Taking Dyad (Kālī + Kali) selects who gets to make it. Sexual selection is a visible biological instantiation of Syntropic Dyadism only when all four moves remain bounded by K-star, non-coercion, and offspring/substrate viability; otherwise the same operators become extraction.**
+> **The Giving Dyad (Arjuna + Kṛṣṇa) makes the next generation possible. The Taking Dyad (Kālī + Kali) selects who gets to make it. Sexual selection is a visible biological instantiation of Syntropic Dyadism only when all four moves remain bounded by K-star, non-coercion, `η = 0`, and rising `P_node` for offspring/substrate; otherwise the same operators become extraction.**
 
 ---
 
