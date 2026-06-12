@@ -397,11 +397,9 @@ function makeReadout() {
   return el;
 }
 
-// Morphing horn torus driven by RAPIDITY. Outer radius is fixed; as rapidity w
-// grows, v/c = tanh(w) -> 1 and the central MOUTH (R - rt) contracts: an open
-// ring torus closes to a horn (R = rt, mouth = 0) and then a spindle (R < rt)
-// whose interior overlaps at the axis — the centre accumulating mass/momentum
-// while the throat pinches shut. A model of how reality folds at the limit.
+// Morphing horn torus driven by one-sided RAPIDITY. At w = 0 it is the horn
+// touch (R = rt). As w grows, v/c = tanh(w) -> 1 and the major radius R tends
+// to 0: the torus converges asymptotically toward the sphere/light boundary.
 function makeMorphTorus(outer = 1.7, rings = 48, seg = 18, color = 0xffffff) {
   const verts = [];
   for (let i = 0; i < rings; i++) {            // meridian rings (around the tube)
@@ -426,7 +424,7 @@ function makeMorphTorus(outer = 1.7, rings = 48, seg = 18, color = 0xffffff) {
   // f = tube fraction: 0.5 is the HORN (R = rt, mouth = 0, throat closed to a
   // point); f < 0.5 an open ring; f > 0.5 a spindle whose interior overlaps.
   function setF(f) {
-    f = Math.max(0.05, Math.min(0.94, f));
+    f = Math.max(0.05, Math.min(0.985, f));
     const rt = outer * f;                // tube (minor) radius
     const R = outer * (1 - f);           // axis-to-tube radius
     for (let k = 0; k < verts.length; k++) {
@@ -573,13 +571,12 @@ function buildScene(mode, scene) {
   }
 
   if (mode === "horn") {
+    if (visual) visual.classList.add("horn-visual");
     // The horn torus STANDS ON the complex plane the Riemann sphere stands on.
-    // At rest (rapidity w = 0) it is a HORN: the throat closes to a single point
-    // = the relative centre, in motion relative to everything else (the fixed
-    // plane / unit circle |z|=1, Suda's self-dual centre x=1). A LOGARITHMIC
-    // rapidity slider drives it: rapidity is the log of the Doppler factor, so
-    // near the ends the velocity goes to the c limit and the throat opens to a
-    // spindle — β can no longer grow, so the energy becomes MASS (E = γ m c²).
+    // At rest (rapidity w = 0) it is a HORN: the throat touches at a single
+    // relative centre on the fixed plane / unit circle |z|=1. A one-way rapidity
+    // slider sends w toward infinity: β tends to c, R/r tends to 0, and the
+    // finite drawing approaches the sphere limit without pretending to reach it.
     root.add(createGridPlane(6.4, 21));                          // the complex plane
     root.add(ring(1.0, 0xffeb3b, 0.7));                          // unit circle |z|=1  (x=1, Suda)
     root.add(line([new THREE.Vector3(-3.1, 0, 0), new THREE.Vector3(3.1, 0, 0)], 0x555555, 0.55));
@@ -590,7 +587,10 @@ function buildScene(mode, scene) {
     root.add(relCentre);
 
     const readout = makeReadout();
-    if (readout) readout.style.whiteSpace = "normal";
+    if (readout) {
+      readout.style.whiteSpace = "normal";
+      readout.style.maxWidth = "min(680px, calc(100% - 32px))";
+    }
     const W_MAX = 4.5;                                          // ends: v/c -> 0.9998, γ -> ~45
     const G_MAX = Math.cosh(W_MAX);
     let userActive = false, slider = null;
@@ -599,12 +599,11 @@ function buildScene(mode, scene) {
       wrap.className = "model-slider";
       wrap.style.cssText = "position:absolute;left:16px;right:16px;bottom:16px;z-index:6;display:flex;" +
         "align-items:center;gap:10px;font:700 11px/1 'Roboto Mono',ui-monospace,monospace;color:#9CA3AF;letter-spacing:.04em";
-      const lo = document.createElement("span"); lo.textContent = "←c"; lo.style.color = "#42A5F5";
-      const hi = document.createElement("span"); hi.textContent = "c→"; hi.style.color = "#42A5F5";
-      const mid = document.createElement("span"); mid.textContent = "rest"; mid.style.color = "#FFEB3B";
+      const lo = document.createElement("span"); lo.textContent = "0 · horn"; lo.style.color = "#FFEB3B";
+      const hi = document.createElement("span"); hi.textContent = "∞ · sphere"; hi.style.color = "#42A5F5";
       slider = document.createElement("input");
-      slider.type = "range"; slider.min = "-100"; slider.max = "100"; slider.step = "1"; slider.value = "0";
-      slider.setAttribute("aria-label", "rapidity (logarithmic — rest at centre, light speed at the ends)");
+      slider.type = "range"; slider.min = "0"; slider.max = "100"; slider.step = "1"; slider.value = "0";
+      slider.setAttribute("aria-label", "rapidity from horn touch toward the infinite light-speed sphere limit");
       slider.style.cssText = "flex:1;accent-color:#FFEB3B;cursor:pointer;height:4px";
       slider.addEventListener("input", () => { userActive = true; });
       wrap.append(lo, slider, hi);
@@ -621,10 +620,10 @@ function buildScene(mode, scene) {
       if (userActive && slider) {
         w = (parseFloat(slider.value) / 100) * W_MAX;            // slider is LINEAR in rapidity = LOG in velocity
       } else {
-        w = Math.sin(t * 0.26) * W_MAX * 0.82;                  // gentle auto-demo until the user grabs the slider
+        w = (0.5 + 0.5 * Math.sin(t * 0.22)) * W_MAX * 0.92;    // gentle 0→∞ demo until the user grabs the slider
         if (slider) slider.value = String(Math.round((w / W_MAX) * 100));
       }
-      const vc = Math.tanh(w);                                  // β = v/c — saturates at ±1
+      const vc = Math.tanh(w);                                  // β = v/c — tends to 1
       const aB = Math.abs(vc);
       const gamma = Math.cosh(w);                               // γ — the relativistic-mass factor
       const k = Math.exp(w);                                    // Doppler factor = e^w (the log line: w = ln k)
@@ -641,18 +640,18 @@ function buildScene(mode, scene) {
       relCentre.position.set(px, 0, 0);
       relCentre.scale.setScalar(1 + 1.4 * aB);
       root.rotation.y += 0.0024;
-      const moving = aB > 0.02;
+      const moving = w > 0.02;
       if (readout) readout.innerHTML =
-        "<div style='color:#FFEB3B;font-weight:700;letter-spacing:.07em;margin-bottom:6px'>RELATIVE MOTION ON THE COMPLEX PLANE</div>" +
-        "rapidity w = " + w.toFixed(2) + " &nbsp;<span style='color:#6b7280'>= ln(Doppler) = the sphere's Mercator latitude — the slider walks a meridian</span><br>" +
+        "<div style='color:#FFEB3B;font-weight:700;letter-spacing:.07em;margin-bottom:6px'>0 → ∞ RAPIDITY ON THE HORN TORUS</div>" +
+        "rapidity w = " + w.toFixed(2) + " &nbsp;<span style='color:#6b7280'>= ln(Doppler); the slider walks one meridian toward the light boundary</span><br>" +
         "β = v/c &nbsp;" + bar(aB, "#42A5F5") + " " + vc.toFixed(4) + "<br>" +
-        "γ = cosh w = " + gamma.toFixed(1) + " &nbsp;<span style='color:#9CA3AF'>E = γmc² · m/m₀ = γ</span> " + bar(gamma / G_MAX, "#FFEB3B") + "<br>" +
+        "γ = cosh w = " + gamma.toFixed(1) + " &nbsp;<span style='color:#9CA3AF'>E/mc² = γ; rest floor = 1</span> " + bar(gamma / G_MAX, "#FFEB3B") + "<br>" +
         "mouth R/r = 1/γ = " + (1 / gamma).toFixed(3) + " &nbsp;<span style='color:#9CA3AF'>= dτ/dt — the rate of lived time</span><br>" +
         (!moving
-          ? "<span style='color:#FFEB3B'>at rest · HORN torus (γ=1, R=r) — E = mc², all energy is rest mass</span>"
+          ? "<span style='color:#FFEB3B'>w=0 · HORN touch (γ=1, R=r) — rest energy E = mc²</span>"
           : gamma > 20
-            ? "<span style='color:#FFEB3B'>R→0 · proper time freezes → resolves as the BURRISPHERE (projects upward)</span>"
-            : "<span style='color:#9CA3AF'>SPINDLE · β saturates at c · the work of acceleration becomes <b style='color:#FFEB3B'>mass-energy</b></span>");
+            ? "<span style='color:#FFEB3B'>w→∞ · R/r→0 · sphere/light limit approached only as γmc² diverges</span>"
+            : "<span style='color:#9CA3AF'>approach · β tends to c · acceleration work appears as <b style='color:#FFEB3B'>mass-energy</b></span>");
     });
   }
 
