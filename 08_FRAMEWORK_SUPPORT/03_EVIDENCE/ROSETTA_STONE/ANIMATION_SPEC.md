@@ -31,7 +31,7 @@ evidence_tier: "[I] implementation/specification layer derived from structural s
 
 > **Model boundary:** `[S/I]` The visualization is a didactic interface, not
 > the whole model. The operative Rosetta model is the Soul Loop recurrence:
-> Dasein reads the table, chooses a lawful action, and updates `P_i` and `P_H`
+> Dasein reads the table, chooses a lawful action, and updates `P_node,i` and `P_node,H`
 > under `η = 0`. The sphere/table must not be implemented as a rank ladder,
 > identity badge, or static taxonomy.
 

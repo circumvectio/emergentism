@@ -86,7 +86,7 @@ holobiont that destroys its symbionts destroys its own future cone.
 So the objective moral compass is:
 
 ```text
-raise P_i and P_H together
+raise P_node,i and P_node,H together
 subject to η = 0
 with Φ and V balanced near L4
 ```

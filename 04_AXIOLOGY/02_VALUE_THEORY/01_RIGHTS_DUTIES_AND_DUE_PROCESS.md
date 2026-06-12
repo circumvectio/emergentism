@@ -133,7 +133,7 @@ So the legal game is:
 if rights erase duties -> individual capture
 if duties erase rights -> collective capture
 if process preserves both -> lawful dyad
-if process raises P_i and P_H under η = 0 -> objective dharma in law
+if process raises P_node,i and P_node,H under η = 0 -> objective dharma in law
 ```
 
 ## Due Process: Kali Must Not Fire Blind

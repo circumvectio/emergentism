@@ -289,7 +289,7 @@ if one rises by degrading the other -> extraction / evil
 
 So the loop is not only a document repair cycle. It is the player's recursive
 worldline method: disclose, test, serve, see, dissolve, preserve, and return
-until the next act raises both `P_i` and `P_H` without extraction. `[S/I]`
+until the next act raises both `P_node,i` and `P_node,H` without extraction. `[S/I]`
 
 **The rest-state gloss.** Under the mass-shell identity ([`../00_THE_COHERENT_GEOMETRY.md`](../00_THE_COHERENT_GEOMETRY.md) §6), the equatorial convergence has a physical face: the equator is the rest frame, `E = mc²` — all energy is rest mass, nothing is spent on motion. A converged document is text **at rest**: everything it carries is substance, zero kinetic churn, and `B = dτ/dt = 1` — full lived time. "The helix rests" is not only a metaphor. `[I]` — a gloss riding on an `[A]` identity, never an upgrade of the method's tier.
 

@@ -201,7 +201,7 @@ Methodologically, that matters more than it first appears. A worldview that cann
 
 Value Alignment asks what is load-bearingly good. Emergentism's distinctive answer is that the classical transcendentals can be reread as geometric registrations rather than disconnected ideals. `[I]`
 
-- **Truth** = invariance of `P = 1`, the conservation relation `[I/S]`
+- **Truth** = invariance of `P∞ = φ · ν = 1`, the manifold conservation relation `[I/S]`
 - **Beauty** = the perceptible harmony of `B = sin(θ)` `[I/S]`
 - **Justice** = `η = 0`, the non-extraction condition `[I/S]`
 

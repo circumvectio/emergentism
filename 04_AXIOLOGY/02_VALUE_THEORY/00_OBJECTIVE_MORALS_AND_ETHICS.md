@@ -61,8 +61,8 @@ H = holobiont / real sustaining whole
 
 Morality: H -> i  (the whole raises the node)
 Ethics:   i -> H  (the node raises the whole)
-Good:     ΔP_i > 0 and ΔP_H > 0 under η = 0
-Evil:     local ΔP_i or ΔP_H is purchased by degrading the other
+Good:     ΔP_node,i > 0 and ΔP_node,H > 0 under η = 0
+Evil:     local ΔP_node,i or ΔP_node,H is purchased by degrading the other
 ```
 
 This is why the moral/ethical distinction is not a hierarchy. The individual is
@@ -267,17 +267,17 @@ if λ > 0 and η = 0:
 
 The holobiont form says the same thing at the scale of a lived worldline. Let
 `W_i` name the maximum reachable worldline potential of the individual
-symbiont, and let `P_H` name the coherent viability of the holobiont that
+symbiont, and let `P_node,H` name the coherent viability of the holobiont that
 carries that individual:
 
 ```text
 W_i(t) = ∫ P_node,i(t) dt
 P_node,i = Φ_i × V_i
-P_H    = Φ_H × V_H
+P_node,H = Φ_H × V_H
 
 under λ(i,H) > 0 and η = 0:
-  max W_i requires dP_H/dt >= 0
-  max P_H requires dP_node,i/dt >= 0
+  max W_i requires dP_node,H/dt >= 0
+  max P_node,H requires dP_node,i/dt >= 0
 ```
 
 So the Power-Max Lemma is not merely "be nice because cooperation is pleasant."
