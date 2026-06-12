@@ -55,13 +55,17 @@ directly (the only available lever):
   - trinity/22-the-teleology/, trinity/28-l4-star/, trinity/31-vmosk-as-applied-emergentism/
                                               : tightened bare `P = 1` wording to
         the current `P∞ = φ·ν = 1` manifold identity, with `B` / `P_node`
-        named as the varying registers.
+        named as the varying registers; later clarified "Tendency to Potential"
+        as usable finite-node `P_node` under invariant `P∞`, not `P∞` growth.
   - trinity/14-tat-tvam-asi/, trinity/21-the-tightrope/,
         trinity/33-the-derivation/, trinity/34-research-brief-the-fork/,
         formal/14-efr-epistemology-triad/, formal/19-efr-geometric-exclusion/
                                               : tightened remaining bare `P = 1`
         wording into `P∞` for the manifold and `P_node` / `ΣP_node` for finite
         node or mesh capacity.
+  - will/06-the-unsaid/, will/06a-what-remains-unseen/ : normalized the Nietzsche /
+        Tendency-to-Potential public wording from bare `P` or `P∞`-as-potential
+        into usable finite-node `P_node` under the invariant manifold identity.
   - trinity/13-the-wave-packet/               : tightened equipotentiality to
         `P∞ = φ·ν = 1` and removed ambiguous "maximum P" language.
   - trinity/03-the-closure/, trinity/06-the-cosmological-cycle/,

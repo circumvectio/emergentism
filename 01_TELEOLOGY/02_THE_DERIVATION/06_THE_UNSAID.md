@@ -117,7 +117,7 @@ Tat Tvam Asi ("You are That") can be read as an interpretive compression of conj
 
 ### 36. "Tendency to Potential" Resolves Nietzsche Precisely
 
-Nietzsche's "Will to Power" = ν → ∞ (the south pole). The framework's correction: not Macht (power, ν alone) but **Maß** (measure, `P∞ = φν = 1` with maximal `B` at the equator). The tendency is toward balance, not toward power alone.
+Nietzsche's "Will to Power" = ν → ∞ (the south pole). The framework's correction: not Macht (power, ν alone) but **Maß** (measure): `P∞ = φν = 1` names the invariant manifold, `B` is maximal at the equator, and finite life improves by raising usable `P_node = Φ × V` under that balance. The tendency is toward constrained finite-node potential, not toward power alone.
 
 Nietzsche saw the tendency. He misidentified its direction by one variable. [I]
 

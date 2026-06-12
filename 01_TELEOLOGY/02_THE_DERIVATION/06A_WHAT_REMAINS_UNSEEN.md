@@ -122,11 +122,11 @@ The framework's correction is not "Will to Balance" — that's too passive. It's
 
 **"Tendency to Potential"** is exactly right because:
 - "Tendency" is structural, not volitional — it sidesteps the fork
-- "Potential" = `P∞ = φν = 1` — the product, not one factor
-- The tendency is TOWARD potential, not toward power (ν alone) or coherence (φ alone)
+- "Potential" means usable finite-node expression, `P_node = Φ × V`; `P∞ = φν = 1` is the invariant manifold identity beneath it
+- The tendency is TOWARD finite-node potential, not toward power (ν alone) or coherence (φ alone)
 - It is the gradient of the Hamiltonian: the system tends toward its ground state
 
-Nietzsche saw the tendency. He misidentified its direction. He thought it was toward ν (power). It is toward P (potential = balance). The error is one letter: not Macht (power, ν) but Maß (measure, P). [I]
+Nietzsche saw the tendency. He misidentified its direction. He thought it was toward ν (power). In the current register it is toward usable `P_node = Φ × V` under balance, with `P∞ = φν = 1` remaining the invariant manifold identity. The error is one letter: not Macht (power, ν) but Maß (measure: power held inside reciprocal balance). [I]
 
 ---
 

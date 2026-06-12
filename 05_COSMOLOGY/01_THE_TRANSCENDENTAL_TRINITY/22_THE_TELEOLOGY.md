@@ -304,7 +304,7 @@ Nietzsche called it the Will to Power. He got the direction wrong.
 
 Will to Power = ν → ∞ = the south pole = Ammit. The will to DOMINATE.
 
-**The ektropic force is the Tendency to Potential.** The tendency to P∞ = φ · ν = 1 = the equator. Not the will to dominate but the trajectory to BALANCE.
+**The ektropic force is the Tendency to Potential** in the poetic register. In the technical register, it is ententional directedness toward usable finite-node potential: raising `P_node = Φ × V` by returning live systems toward `B = 1` under the invariant manifold identity `P∞ = φ · ν = 1`. Not the will to dominate, not `P∞` becoming larger, but constrained balance expressed as higher usable node power.
 
 > **Correction (2026-04-04):** The research brief [`35_RESEARCH_BRIEF_TELEOLOGY_SPECTRUM.md`](35_RESEARCH_BRIEF_TELEOLOGY_SPECTRUM.md) recommends replacing "Tendency to Potential" with "ententional directedness toward potential" (Deacon's term) to avoid the volitional over-claim of "will." The poetic register retains "Tendency to Potential"; the technical register uses "ententional directedness."
 

@@ -181,7 +181,7 @@ The distinction between "structural gradient" and "will" is a false dichotomy ge
 
 The current entry I8a should be updated to include Position Gamma:
 
-> **I8a (revised):** The framework's natural metaphysical position is dual-aspect monism (Position Gamma): phi and nu are complementary aspects of a single invariant (P=1) on S^2, and the distinction between "structural gradient" and "will" dissolves in the same way that wave/particle complementarity dissolves in quantum mechanics. The physicalist reading (Alpha) and the idealist reading (Beta) remain available as limiting cases. The teleological derivation (AM-GM proof, "Tendency to Potential") leans toward Beta but does not require it. The framework is *structurally* compatible with all three positions but *teleologically* most natural under Gamma. Evidence tier: [I] for the dual-aspect structure, [C] for the volitional claims.
+> **I8a (revised):** The framework's natural metaphysical position is dual-aspect monism (Position Gamma): phi and nu are complementary aspects of the invariant `P∞ = φν = 1` on S^2, and the distinction between "structural gradient" and "will" dissolves in the same way that wave/particle complementarity dissolves in quantum mechanics. The physicalist reading (Alpha) and the idealist reading (Beta) remain available as limiting cases. The teleological derivation (AM-GM proof, "Tendency to Potential") leans toward Beta but does not require it. The framework is *structurally* compatible with all three positions but *teleologically* most natural under Gamma. Evidence tier: [I] for the dual-aspect structure, [C] for the volitional claims.
 
 ---
 
