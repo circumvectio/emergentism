@@ -16,7 +16,7 @@ rosetta:
 
 **Status:** Foundational — the framework's actual philosophical move, stated explicitly
 **Date:** 2026-03-24
-**Evidence Tier:** [I] The mathematical resolution of 1/0 on S² is established. [S] The generalization to a method of paradox dissolution is structural. [I] The application to specific philosophical problems is interpretive.
+**Evidence Tier:** [A] Projective / Riemann-sphere compactification maps nonzero division by zero to the point at infinity in the completed register. [S/I] The generalization to a method of paradox dissolution is structural and interpretive. [I] The application to specific philosophical problems is interpretive.
 **Depends on:** 05_DIVISION_BY_ZERO.md, 07_THE_DISCOVERY_OF_FINITY.md
 **See also:** All paradox dissolutions (02_PARADOX_DISSOLUTIONS/), The Honest Position, [Canonical Formula Block](../00_CANONICAL_FORMULA_BLOCK.md)
 **Kill Criteria:** If a paradox is found that cannot be dissolved by the move from flat to curved — one that persists on S² in the same form it has on the line — the method's universality claim falls. The method itself (co-emergence) survives as long as a single paradox dissolves.
@@ -31,11 +31,11 @@ This is the framework's actual method. Not the sphere. Not the equation. Not the
 
 At α = 0: no line, no sphere, no division, no problem.
 
-At α > 0: the line extends, division becomes possible, and the sphere **immediately** provides the resolution.
+At α > 0: the line extends, division becomes possible, and the sphere **immediately** provides the compactified frame.
 
-The sphere does not solve a pre-existing problem. The sphere creates the context in which the problem can be posed and solved **simultaneously.** The problem and the solution appear together, as dual aspects of the same event — the emergence from the point.
+The sphere does not solve a pre-existing field-arithmetic problem. The sphere creates the context in which the problem can be posed and compactified **simultaneously.** The problem and the projective relocation appear together, as dual aspects of the same event — the emergence from the point.
 
-This is what 05_DIVISION_BY_ZERO.md demonstrates for one case. This document demonstrates that it is the **universal method.**
+This is what 05_DIVISION_BY_ZERO.md demonstrates for one case. This document tests whether the same architecture can function as a **general method.**
 
 ---
 
@@ -48,9 +48,9 @@ Every paradox in the history of philosophy has the same architecture:
 3. The problem is declared insoluble
 4. Centuries of failed attempts to solve it
 
-The framework identifies why: **the problem is stated on the wrong manifold.** The two things cannot relate because the manifold is flat. On a flat manifold, opposites are infinitely far apart. They cannot meet. They cannot interact. Their relationship is "undefined" or "indeterminate" — exactly the way 0 × ∞ is indeterminate on the number line.
+The framework identifies why: **the problem is stated on the wrong manifold.** The two things cannot relate because the manifold is flat. On a flat manifold, opposites are infinitely far apart. They cannot meet. Their relationship is "undefined" or "indeterminate" — exactly the way `0 × ∞` remains indeterminate in ordinary field arithmetic.
 
-The dissolution is always the same move: **curve the manifold.** On a curved manifold, opposites are antipodes — 180° apart, finitely separated, connected by the curvature. Their product is well-defined. Their relationship is the equator.
+The dissolution is always the same move: **curve the manifold.** On a curved manifold, opposites are antipodes — 180° apart, finitely separated, connected by the curvature. Their relation can be drawn through the equator; the ZSRE frame-product is symbolic / structural, not field arithmetic.
 
 The move from flat to curved does not **answer** the question. It **dissolves** the question by revealing that the question's architecture was an artifact of flatness.
 
@@ -62,9 +62,9 @@ The move from flat to curved does not **answer** the question. It **dissolves** 
 
 **On the line (flat):** 1/0 = undefined. Zero and infinity cannot interact. The line breaks.
 
-**On the sphere (curved):** 1/0 = ∞. Zero and infinity are antipodal points. Their relationship is geometric identity. 0 × ∞ = 1.
+**On the sphere (curved):** `1/0` maps to `∞` for nonzero numerator in the projective register. Zero and infinity are antipodal points. Their relationship is geometric; the ZSRE frame-product stages their relation as the equator, not as field arithmetic.
 
-**The co-emergence:** The moment the line extends (α > 0), division by zero becomes a problem. The same moment, the sphere inflates and provides the resolution. The problem and the solution are born together. Neither exists at α = 0. Both exist at α > 0. They are the same event.
+**The co-emergence:** The moment the line extends (α > 0), division by zero becomes a problem. The same moment, the sphere inflates and provides the compactified register. The problem and the projective relocation are born together. Neither exists at α = 0. Both exist at α > 0. They are the same event.
 
 ---
 

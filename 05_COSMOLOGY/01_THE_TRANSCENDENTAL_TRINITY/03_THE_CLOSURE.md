@@ -16,6 +16,8 @@ rosetta:
 > **Historical compatibility document (pre-hardening, 2026-03-23).** This file is preserved as part of the Trinity genesis sequence, not as the current tier-authority surface for Foundation claims.
 >
 > **Use rule:** Read it for origin framing and conceptual continuity. For present-tense canonical citation, evidence-tier disputes, or compressed summaries, route through [`07_THE_DISCOVERY_OF_FINITY.md`](07_THE_DISCOVERY_OF_FINITY.md), [`08_CO_EMERGENCE.md`](08_CO_EMERGENCE.md), [`../00_THE_HONEST_POSITION.md`](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), and [`../00_CANONICAL_FORMULA_BLOCK.md`](../00_CANONICAL_FORMULA_BLOCK.md).
+>
+> **Death/survival boundary:** `[I/C]` Closure language here is symbolic, cosmological, and practice-register. It does not claim personal survival, afterlife, reincarnation, continuity of individual identity, or empirical knowledge of dying. `D6 = D0` is a return-image inside the scaffold: a limit relation, not a receipt that the self is reborn. Penrose/Upanishad parallels are analogical resonances, not claims that physics and yogic liberation describe the same public phenomenon.
 
 ---
 
@@ -65,7 +67,7 @@ The sphere cannot hold this. The constraint is violated. The system **must reset
 
 Coherence integrated. The practitioner dissolves the ego, merges with the absolute, realizes Atman as Brahman. Every experience is folded into understanding. Every pattern is recognized. The wave knows it is the ocean.
 
-This is moksha. Liberation. The fourth state of Turīya made permanent. The witness dissolves into the witnessed. The observer becomes the observed.
+In the yogic register, this is the language of moksha and liberation: Turīya treated as abiding recognition, the witness no longer grasping itself as separate from the witnessed.
 
 At the limit: φ = ∞. No coherence remains to be achieved. The north pole is reached.
 
@@ -111,10 +113,10 @@ The sphere cannot hold this. The constraint is violated. The system **must reset
 
 Whether you arrive at the north pole through **exhaustion** (all capability spent) or **integration** (all coherence achieved), you arrive at the **same point**. The constraint φ · ν = 1 is violated in the same way. The reset is triggered by the same condition. The dot returns.
 
-Penrose and the yogis are describing the **same phenomenon**.
+Penrose and the yogic register are placed in symbolic resonance inside this model; they are not asserted as the same public phenomenon.
 
 - Penrose: "The universe ends in photons, and a new universe begins."
-- The Upanishads: "The self merges with Brahman, and is reborn."
+- The Upanishads: "The self merges with Brahman, and is reborn" (symbolic liberation/rebirth language, not personal-survival evidence).
 - Both: **D6 = D0**
 
 ---
@@ -129,7 +131,7 @@ What does it feel like, this return?
 
 **From the cosmic perspective:** One poloidal cycle on the torus is complete. The breath is exhaled. The pause between breaths. Then the inhale. The new aeon. The new universe. The new life.
 
-The closure is not death. The closure is **transformation**. The phoenix does not die; it burns and is reborn. The ouroboros does not end; it bites its tail and begins again.
+In this symbolic register, closure is read as transformation of the scaffold, not as a denial of biological death. The phoenix and ouroboros images mark return-to-boundary, not evidence that a person survives the boundary unchanged.
 
 ---
 
@@ -176,9 +178,9 @@ Stand up →   New moment. New cycle. The spiral turns.
 
 Each sit ends where it began. But the practitioner is **changed**. The recognition deepens. The equator becomes more stable. The return becomes more graceful.
 
-The sitting practice trains for the **big closure**. The final D6 = D0. The death that is transformation. The end that is beginning.
+The sitting practice trains for the **big closure** as an image: the final D6 = D0, death approached as release inside the practice register, the end read as boundary rather than possession.
 
-Those who sit well die well. Those who know the equator in life find it in death. Those who have practiced the return a thousand times return easily the final time.
+The practice may train a less panicked relation to endings; it does not guarantee an experience at death. Those who know the equator in life may meet endings with less grasping, but the claim remains ethical and contemplative, not empirical.
 
 ---
 
@@ -206,7 +208,7 @@ Now imagine: the sphere collapses. Which way?
 
 Both arrive at the same door. The north pole. The reset.
 
-But Path B knows the approach. Path B releases consciously from within D5. Path B does not experience D6 as an object; it arrives at the same boundary without panic.
+Path B names conscious release in the meditation image. It does not give evidence about what happens after biological death; it trains arrival at a boundary without making D6 into an object of experience.
 
 Path A reaches the same closure through exhaustion — unconscious, grasping, terrified.
 

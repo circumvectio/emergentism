@@ -81,12 +81,12 @@ The angle α moves from 0. The point extends. The sphere inflates to support the
 - At α = 45°: |z| = 1. **The UNIT emerges.** The equator. φ = ν = 1.
 - At α = 90°: |z| = ∞. The line extends to infinity. The sphere is complete.
 
-### Key Event: The Resolution of Division by Zero
+### Key Event: The Projective Boundary
 
-On the plane: 1/0 = undefined. Mathematics breaks.
-On the sphere: 1/0 = ∞. Just a point. The north pole.
+On the plane: `1/0` is undefined in field arithmetic.
+On the sphere: `1/0` maps to `∞` in the projective register. Just a point. The north pole.
 
-**The sphere and the "problem" are co-emergent.** At α = 0, there is no sphere and no problem. At α > 0, both appear together. The sphere doesn't solve a pre-existing problem — the sphere and the solution are born in the same instant.
+**The sphere and the "problem" are co-emergent.** At α = 0, there is no sphere and no problem. At α > 0, both appear together. The sphere does not solve a pre-existing field-arithmetic problem — the sphere and the compactified register are born in the same instant.
 
 ### Physics
 - Quantum mechanics emerges (the qubit = the sphere)

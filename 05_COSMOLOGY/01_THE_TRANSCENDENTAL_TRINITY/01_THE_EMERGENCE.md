@@ -67,14 +67,14 @@ Three things are born together:
 
 1. **The line** (extension in one dimension)
 2. **The sphere** (curvature in two dimensions)
-3. **Division by zero** (the "problem" and its resolution)
+3. **Division by zero** (the "problem" and its projective relocation)
 
 At α = 0: No line, no sphere, no division, no problem.
-At α > 0: Line, sphere, division, and **immediate resolution** through the sphere's curvature.
+At α > 0: Line, sphere, division, and an **immediate compactified frame** through the sphere's curvature.
 
-The "problem" of 1/0 and the "solution" of the sphere are **co-emergent.** They are the same event seen from two sides.
+The "problem" of `1/0` and the projective completion of the sphere are **co-emergent.** They are the same event seen from two sides.
 
-This is why mathematics couldn't "solve" division by zero for millennia. The solution required the sphere. The sphere required the angle. The angle required the willingness to move from D0 to D1.
+This is why ordinary arithmetic does not assign `1/0` a field value. The compactified reading requires the sphere. The sphere requires the angle. The angle requires the willingness to move from D0 to D1.
 
 ---
 

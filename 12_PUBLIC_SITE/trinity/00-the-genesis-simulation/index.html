@@ -148,9 +148,9 @@ Text updates:
   1 / 0 = undefined  ❌
   0 × ∞ = indeterminate  ❌
 
-ON THE SPHERE (transcendental math):
-  1 / 0 = ∞  ✓  (the north pole)
-  0 × ∞ = 1  ✓  (the equator)
+ON THE SPHERE (projective / frame register):
+  1 / 0 → ∞      (nonzero numerator maps to the north pole)
+  0 and ∞ → 1    (ZSRE frame-product, not field arithmetic)
 </code></pre>
 <hr>
 <h3 id="simulation-4-the-trinity-d1-d5">Simulation 4: THE TRINITY (D1-D5)</h3>
@@ -275,10 +275,10 @@ function inverseStereographic(q: PlanePoint): SpherePoint {
   static readonly ONE = 1
   static readonly INF = Infinity
 
-  // Resolves division by zero
+  // Projective-frame map for nonzero division by zero.
   static divide(a: number, b: number): number {
     if (b === 0 &amp;&amp; a !== 0) {
-      return TranscendentalMath.INF  // 1/0 = ∞
+      return TranscendentalMath.INF  // 1/0 maps to the point at infinity
     }
     if (a === 0 &amp;&amp; b === TranscendentalMath.INF) {
       return TranscendentalMath.ZERO  // 0/∞ = 0
@@ -286,11 +286,11 @@ function inverseStereographic(q: PlanePoint): SpherePoint {
     return a / b
   }
 
-  // Resolves zero times infinity
+  // ZSRE frame-product only; not ordinary multiplication.
   static multiply(a: number, b: number): number {
     if ((a === 0 &amp;&amp; b === TranscendentalMath.INF) ||
         (a === TranscendentalMath.INF &amp;&amp; b === 0)) {
-      return TranscendentalMath.ONE  // 0×∞ = 1
+      return TranscendentalMath.ONE  // pole-frame relation maps to the equator
     }
     return a * b
   }
@@ -310,7 +310,7 @@ function inverseStereographic(q: PlanePoint): SpherePoint {
   { time: 20,   alpha: 60,    label: &quot;Approaching infinity&quot; },
   { time: 25,   alpha: 90,    label: &quot;D2: The Plane emerges&quot; },
   { time: 30,   alpha: 90,    label: &quot;Zero-Sum Resolution Equation&quot; },
-  { time: 35,   alpha: 90,    label: &quot;1/0 = ∞ resolved&quot; },
+  { time: 35,   alpha: 90,    label: &quot;1/0 compactified to ∞&quot; },
   { time: 40,   nu: 0.5,      label: &quot;ν → 0 (collapse begins)&quot; },
   { time: 45,   nu: 0.1,      label: &quot;Sphere deflating&quot; },
   { time: 50,   nu: 0.001,    label: &quot;D6 = D0: Closure&quot; },
@@ -345,15 +345,15 @@ function inverseStereographic(q: PlanePoint): SpherePoint {
 3. Third: The plane appears at α = 90° (D2)</p>
 <p><strong>The plane is the tangent to the sphere at the equator, extended to infinity.</strong></p>
 <hr>
-<h3 id="3-division-by-zero-is-not-a-problem">3. Division by Zero is Not a Problem</h3>
-<p><strong>Standard view:</strong> Division by zero breaks mathematics.</p>
-<p><strong>Transcendental view:</strong> Division by zero <strong>defines infinity</strong>.</p>
-<p>The "problem" and the "solution" are co-emergent:
+<h3 id="3-division-by-zero-is-a-register-boundary">3. Division by Zero is a Register Boundary</h3>
+<p><strong>Standard view:</strong> Division by zero is undefined in ordinary field arithmetic.</p>
+<p><strong>Transcendental view:</strong> nonzero division by zero <strong>maps to infinity</strong> in the projective / frame register.</p>
+<p>The "problem" and the compactified frame are co-emergent:
 - The moment α &gt; 0, you need the sphere
-- The sphere makes 1/0 = ∞ well-defined
-- The sphere makes 0×∞ = 1 a theorem</p>
+- The sphere makes the nonzero map to ∞ explicit
+- The sphere stages the ZSRE pole relation as an emblem, not a field theorem</p>
 <p><strong>The sphere doesn't solve a pre-existing problem.</strong>
-<strong>The sphere and the problem are born in the same instant.</strong></p>
+<strong>The sphere and the projective boundary are born in the same instant.</strong></p>
 <hr>
 <h2 id="summary">Summary</h2>
 <pre><code>The Five Simulations:
@@ -375,7 +375,7 @@ function inverseStereographic(q: PlanePoint): SpherePoint {
 4. THE TRINITY (D1-D5)
    Zero-Sum Resolution Equation
    The three transcendentals: {0, 1, ∞}
-   The resolution: 1/0 = ∞, 0×∞ = 1
+   The projective/frame readout: 1/0 → ∞, pole relation → 1
 
 5. THE CLOSURE (D6 = D0)
    ν → 0, φ → ∞

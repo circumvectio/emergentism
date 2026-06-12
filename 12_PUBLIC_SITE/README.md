@@ -168,7 +168,7 @@ historical signature provenance.
 
 `generate_public_library.py` currently renders the [B] audited handoff bundle into
 served static routes and writes `reading-manifest.json`, `robots.txt`, and
-`sitemap.xml`. Fresh local predeploy verification passes with `292` wired
+`sitemap.xml`. Fresh local predeploy verification passes with `293` wired
 public corpus documents:
 
 | Wing | Count |
@@ -183,7 +183,7 @@ public corpus documents:
 | `rosettad/` | 38 |
 | `operators/` | 29 |
 | `will/` (Teleology corpus wing) | 30 |
-| `value/` (Axiology corpus wing) | 9 |
+| `value/` (Axiology corpus wing) | 10 |
 | `ground/` (Ontology corpus wing) | 9 |
 | `sacred/` (Theology corpus wing) | 6 |
 | `method/` (Methodology corpus wing) | 10 |

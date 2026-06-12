@@ -73,8 +73,23 @@ def library_passages():
             html = idx.read_text(encoding="utf-8", errors="replace")
             m = re.search(r"<h1[^>]*>(.*?)</h1>", html, re.S)
             title = clean(m.group(1)) if m else sub.name.replace("-", " ")
-            m2 = re.search(r"<main[^>]*>(.*)", html, re.S)
-            text = clean((m2.group(1) if m2 else html.split("</h1>")[-1]))[:MAX_PASSAGE]
+            article = re.search(
+                r'<article[^>]*class="[^"]*\blibrary-article\b[^"]*"[^>]*>(.*?)</article>',
+                html,
+                re.S,
+            )
+            body_html = article.group(1) if article else html.split("</h1>")[-1]
+            text = clean(body_html)
+            boundary = re.search(
+                r"<p><strong>Claim Boundary:</strong>.*?</p>",
+                body_html,
+                re.S,
+            )
+            if boundary:
+                boundary_text = clean(boundary.group(0))
+                if boundary_text not in text[:MAX_PASSAGE]:
+                    text = f"{boundary_text} {text}"
+            text = text[:MAX_PASSAGE]
             if len(text) < 80:
                 continue
             out.append({"id": f"{section}:{sub.name}", "title": title,

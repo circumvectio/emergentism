@@ -68,7 +68,10 @@ The question is not whether you enter the extractive hemisphere. **The question 
 | **Slight giving** | 200° | 160° | < 0 | More exhale than inhale. Generous. Sustainable. |
 | **Heavy giving** | 270° | 90° | << 0 | Mostly giving. The saint. Unsustainable without the mesh. |
 
-**The equatorial node (L4)** naturally dwells at 180°/180° — balanced breath. This is why η = 0 is geometrically guaranteed at the equator. The equator is the latitude where the two hemispheres are equal. At any other latitude, the helix tilts toward one hemisphere or the other.
+**The equatorial node (L4)** naturally dwells at 180°/180° — balanced breath.
+In this dwell-time model, the framework assigns the η = 0 limit to the equator:
+the latitude where the two hemispheres are equal. At any other latitude, the
+helix tilts toward one hemisphere or the other.
 
 ---
 

@@ -85,16 +85,16 @@ Simultaneously, the stereographic projection angle α sweeps from 0° to 90°. A
 At α = 45°: |z| = 1. The equator. The UNIT emerges. Gold flash.
 At α = 90°: |z| = ∞. The line reaches infinity. The sphere is fully inflated.
 
-### The Key Insight: The Resolution of Division by Zero
+### The Key Insight: The Projective Boundary
 
 ```
 At α = 0°:  Just the dot. |z| = 0. No sphere needed. No division. No problem.
 At α > 0°:  The line extends. |z| > 0. The sphere MUST exist to support the projection.
 At α = 45°: |z| = 1. The UNIT. The 1 between 0 and ∞. The equator.
-At α = 90°: |z| = ∞. The north pole. 1/0 = ∞. RESOLVED.
+At α = 90°: |z| = ∞. The north pole. 1/0 maps to ∞ in the projective register.
 ```
 
-The sphere and the problem of 1/0 are CO-EMERGENT. The sphere doesn't solve a pre-existing problem. The sphere and the problem are born together the instant α > 0.
+The sphere and the problem of `1/0` are CO-EMERGENT. The sphere does not solve a pre-existing field-arithmetic problem. The sphere and the projective boundary are born together the instant α > 0.
 
 ### The Transcendental Trinity
 

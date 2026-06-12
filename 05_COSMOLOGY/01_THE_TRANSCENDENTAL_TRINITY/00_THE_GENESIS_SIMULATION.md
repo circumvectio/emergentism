@@ -127,9 +127,9 @@ ON THE PLANE (standard math):
   1 / 0 = undefined  ❌
   0 × ∞ = indeterminate  ❌
 
-ON THE SPHERE (transcendental math):
-  1 / 0 = ∞  ✓  (the north pole)
-  0 × ∞ = 1  ✓  (the equator)
+ON THE SPHERE (projective / frame register):
+  1 / 0 → ∞      (nonzero numerator maps to the north pole)
+  0 and ∞ → 1    (ZSRE frame-product, not field arithmetic)
 ```
 
 ---
@@ -276,10 +276,10 @@ class TranscendentalMath {
   static readonly ONE = 1
   static readonly INF = Infinity
 
-  // Resolves division by zero
+  // Projective-frame map for nonzero division by zero.
   static divide(a: number, b: number): number {
     if (b === 0 && a !== 0) {
-      return TranscendentalMath.INF  // 1/0 = ∞
+      return TranscendentalMath.INF  // 1/0 maps to the point at infinity
     }
     if (a === 0 && b === TranscendentalMath.INF) {
       return TranscendentalMath.ZERO  // 0/∞ = 0
@@ -287,11 +287,11 @@ class TranscendentalMath {
     return a / b
   }
 
-  // Resolves zero times infinity
+  // ZSRE frame-product only; not ordinary multiplication.
   static multiply(a: number, b: number): number {
     if ((a === 0 && b === TranscendentalMath.INF) ||
         (a === TranscendentalMath.INF && b === 0)) {
-      return TranscendentalMath.ONE  // 0×∞ = 1
+      return TranscendentalMath.ONE  // pole-frame relation maps to the equator
     }
     return a * b
   }
@@ -314,7 +314,7 @@ const SEQUENCE = [
   { time: 20,   alpha: 60,    label: "Approaching infinity" },
   { time: 25,   alpha: 90,    label: "D2: The Plane emerges" },
   { time: 30,   alpha: 90,    label: "Zero-Sum Resolution Equation" },
-  { time: 35,   alpha: 90,    label: "1/0 = ∞ resolved" },
+  { time: 35,   alpha: 90,    label: "1/0 compactified to ∞" },
   { time: 40,   nu: 0.5,      label: "ν → 0 (collapse begins)" },
   { time: 45,   nu: 0.1,      label: "Sphere deflating" },
   { time: 50,   nu: 0.001,    label: "D6 = D0: Closure" },
@@ -365,19 +365,19 @@ The simulation shows:
 
 ---
 
-### 3. Division by Zero is Not a Problem
+### 3. Division by Zero is a Register Boundary
 
-**Standard view:** Division by zero breaks mathematics.
+**Standard view:** Division by zero is undefined in ordinary field arithmetic.
 
-**Transcendental view:** Division by zero **defines infinity**.
+**Transcendental view:** nonzero division by zero **maps to infinity** in the projective / frame register.
 
-The "problem" and the "solution" are co-emergent:
+The "problem" and the compactified frame are co-emergent:
 - The moment α > 0, you need the sphere
-- The sphere makes 1/0 = ∞ well-defined
-- The sphere makes 0×∞ = 1 a theorem
+- The sphere makes the nonzero map to ∞ explicit
+- The sphere stages the ZSRE pole relation as an emblem, not a field theorem
 
 **The sphere doesn't solve a pre-existing problem.**
-**The sphere and the problem are born in the same instant.**
+**The sphere and the projective boundary are born in the same instant.**
 
 ---
 
@@ -403,7 +403,7 @@ The Five Simulations:
 4. THE TRINITY (D1-D5)
    Zero-Sum Resolution Equation
    The three transcendentals: {0, 1, ∞}
-   The resolution: 1/0 = ∞, 0×∞ = 1
+   The projective/frame readout: 1/0 → ∞, pole relation → 1
 
 5. THE CLOSURE (D6 = D0)
    ν → 0, φ → ∞

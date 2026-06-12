@@ -11,13 +11,31 @@ rosetta:
 
 # THE THREE TRANSCENDENTALS ON THE BURRI SPHERE
 
-## Beauty, Truth, and Justice as Geometric Invariants
+## Beauty, Truth, and Justice as Geometric Limits
 
 **Status:** Active Development
 **Hat:** Philosopher
 **Evidence Tier:** [I] Interpretive — creative synthesis within the framework
 **Date:** 2026-03-23
 **Depends on:** Burri Sphere formalism, Dimensional Core State, Classical Philosophy
+
+**Claim Boundary:** `[I/S]` This document gives the transcendental reading of the
+framework's objective teleology. Beauty, Truth, and Justice are treated as
+asymptotic limits approached by finite systems under the accepted Burri Sphere
+grammar, not as metaphysical objects proved or exhausted by the coordinate
+chart. The structural claims are internal to `P = φ · ν`, `B = sin θ`, and
+`η = 0`; the naming of those structures as transcendentals remains
+interpretive.
+
+## 0. READING RULE
+
+Read every formula below as a **model shorthand** unless the local sentence
+explicitly marks it `[A]` or `[S]`. The current value-theory bridge is
+`04_AXIOLOGY/02_VALUE_THEORY/01_TRANSCENDENTALS.md`: objective teleology is the
+asymptotic approach toward Beauty, Truth, and Justice, not possession of them.
+This file supplies the formal analogy. Invariance, balance, and non-extraction
+are the coordinate handles; naming them Truth, Beauty, and Justice remains
+`[I]`.
 
 ---
 
@@ -41,7 +59,9 @@ The Three Transcendentals:
 
 ### 1.2 The Geometric Thesis
 
-**Thesis:** Beauty, Truth, and Justice are not abstract concepts. They are **coordinate-invariant properties of the Burri Sphere**.
+**Thesis:** Beauty, Truth, and Justice are not merely private concepts inside
+the framework. They are read as **coordinate-stable value-limits of the Burri
+Sphere grammar**.
 
 Each transcendental corresponds to a distinct geometric feature of S²:
 
@@ -66,10 +86,11 @@ Justice = The non-extraction condition η = 0 (stable equilibrium)
 
 ### 2.2 EFR Geometric Definition
 
-**Truth = The invariance of ektropy (P∞ = φ · ν = 1) under all coordinate transformations.**
+**Truth, in this model, is read through the invariance of ektropy
+(`P∞ = φ · ν = 1`) under permitted coordinate transformations.**
 
 ```
-A proposition is TRUE to the degree that:
+A proposition is truth-tracking, in this framework, to the degree that:
 1. It preserves P = 1 (conservation of ektropy)
 2. It is coordinate-invariant (true from any perspective on S²)
 3. It survives the D4-D5 transformation (corresponds across domains)
@@ -77,7 +98,9 @@ A proposition is TRUE to the degree that:
 
 ### 2.3 Truth as the Conservation Law
 
-On the Burri Sphere, P = 1 is conserved everywhere. This conservation is **the foundation of truth**:
+On the Burri Sphere, P = 1 is conserved everywhere. This conservation supplies
+the framework's **formal analogue of truth**: what remains faithful across
+projection, correction, and change of coordinate.
 
 | Aspect | Geometric Interpretation |
 |--------|-------------------------|
@@ -85,7 +108,9 @@ On the Burri Sphere, P = 1 is conserved everywhere. This conservation is **the f
 | Coherence Truth | Internal consistency (no contradictions in φ-structure) |
 | Pragmatic Truth | Viability in practice (ν-component functional) |
 
-**The Unity:** These three aspects are unified in P = 1. A "true" proposition maintains the invariant across all projections.
+**The Unity:** These three aspects are interpreted through P = 1. A "true"
+proposition, in this grammar, maintains the invariant across the relevant
+projections while remaining corrigible by evidence outside the model.
 
 ### 2.4 The Truth Gradient
 
@@ -105,7 +130,9 @@ South Pole (•): φ → 0, ν → ∞
    "Useful but false" — pragmatic without grounding
 ```
 
-**Maximum Truth** is at the equator — where coherence and viability are balanced.
+The equator is the model's truth-limit: the place where coherence and viability
+are maximally balanced. Public truth still requires the evidence-tier discipline
+defined outside this coordinate picture.
 
 ---
 
@@ -122,10 +149,11 @@ South Pole (•): φ → 0, ν → ∞
 
 ### 3.2 EFR Geometric Definition
 
-**Beauty = The harmony of the balance function B = sin θ across the sphere.**
+**Beauty, in this model, is read through the harmony of the balance function
+`B = sin θ` across the sphere.**
 
 ```
-An object/experience is BEAUTIFUL to the degree that:
+An object/experience is beauty-tracking, in this framework, to the degree that:
 1. It exhibits balance B ≈ 1 (equatorial proximity)
 2. Its φ and ν are well-proportioned
 3. It manifests the symmetry of S²
@@ -133,10 +161,11 @@ An object/experience is BEAUTIFUL to the degree that:
 
 ### 3.3 Beauty as Equatorial Symmetry
 
-The Burri Sphere has maximal symmetry at the equator. This symmetry is **beauty**:
+The Burri Sphere has maximal symmetry at the equator. This symmetry supplies the
+framework's formal analogue of beauty:
 
 ```
-Beauty = -∇B (the gradient of balance toward the equator)
+Beauty-track = movement along the balance gradient toward the equator
 
 Maximum beauty: B = 1 (equator)
 Minimum beauty: B → 0 (poles)
@@ -154,21 +183,26 @@ The golden ratio φ ≈ 1.618 appears throughout nature and art.
 
 On the Burri Sphere, φ = 1 is the equator. But the **ratio** of φ/ν = 1 everywhere.
 
-The golden ratio emerges when considering **successive approximations** to the equator:
+The golden-ratio echo is suggestive, not a formal proof of beauty. It appears
+when considering **successive approximations** to the equator:
 
 ```
 Fibonacci sequence → successive ratios → φ
 Iterative approach to equator → successive corrections → φ
 
-Beauty = the convergence to B = 1 via golden-ratio steps
+Interpretive reading: some beautiful forms can be modeled as convergences
+toward B = 1 through proportion-preserving correction.
 ```
 
 ### 3.5 Beauty vs. Attractiveness
 
-**Beauty (B = 1):** Objective harmonic balance on S²
+**Beauty (B = 1):** Framework-objective harmonic balance on S²
 **Attractiveness:** Subjective response based on observer position
 
-An observer at latitude θ will find objects at similar latitude "attractive" (relatable), but only objects at B = 1 are "beautiful" (objectively balanced).
+An observer at latitude θ will find objects at similar latitude "attractive"
+(relatable). Objects at B = 1 instantiate the framework's beauty-limit:
+objective balance inside the model, not a forced verdict that all observers must
+experience identically.
 
 ---
 
@@ -185,24 +219,25 @@ An observer at latitude θ will find objects at similar latitude "attractive" (r
 
 ### 4.2 EFR Geometric Definition
 
-**Justice = The stable equilibrium condition where extraction coefficient η = 0.**
+**Justice, in this model, is read through the non-extraction constraint
+`η = 0`.**
 
 ```
-A system is JUST to the degree that:
+A system is justice-tracking, in this framework, to the degree that:
 1. η = 0 (no extraction from substrate)
 2. ΣΔB > 0 (syntropic, moving toward equator)
-3. The Power-Max Lemma holds (cooperation dominates)
+3. The Power-Max Lemma applies under its coupling, horizon, and η = 0 conditions
 ```
 
 ### 4.3 Justice as the Equilibrium Condition
 
-On the Burri Sphere, η = 0 defines the **equilibrium manifold**:
+In the framework state space, η = 0 defines the **non-extraction constraint**:
 
 ```
-η = 0 surface: The set of all points where extraction is zero
+η = 0 constraint surface: the set of states where extraction is zero
 
-This surface is the "just" configuration —
-where no node extracts from any other node.
+This constraint marks justice-tracking configurations: no node extracts from
+any other node.
 ```
 
 **The Justice Condition:**
@@ -222,16 +257,17 @@ where no node extracts from any other node.
 
 ### 4.5 Justice and the Is-Ought Gap
 
-The Is-Ought gap is bypassed by Justice, under the framework's operational definition:
+The Is-Ought gap is not externally solved by geometry. It is internally recast
+by Justice under the framework's operational definition:
 
 ```
-Is: η = 0 is the stable equilibrium (geometric fact)
+Is: extraction destabilizes modeled coupling under the framework's assumptions
 Ought: You ought to act justly (ethical command)
 
-The bypass works because:
+The conditional bridge is:
 If you extract (η > 0), you destabilize the system
-The destabilization eventually harms you (Power-Max Lemma)
-Therefore: once "ethical" is defined as movement toward balance, Is (geometric stability) converges with Ought (justice)
+Under the Power-Max Lemma's conditions, destabilization eventually harms the whole, including you
+Therefore: once "ethical" is defined as movement toward balance, Is (geometric stability) and Ought (justice) converge inside the framework's accepted grammar
 ```
 
 ---
@@ -245,7 +281,7 @@ Truth   = P = 1 (conservation of ektropy)
 Beauty  = B = 1 (equatorial balance)
 Justice = η = 0 (non-extraction)
 
-Unity: All three are achieved at the equator
+Unity: All three are maximally approached at the equator
        φ = 1, ν = 1, B = 1, η = 0
 ```
 
@@ -254,7 +290,7 @@ Unity: All three are achieved at the equator
 Imagine a 3D space with axes:
 - x = Truth (P = 1 surface)
 - y = Beauty (B gradient)
-- z = Justice (η = 0 surface)
+- z = Justice (η = 0 constraint surface)
 
 The **ideal** is the origin (0,0,0) — but this is unphysical.
 
@@ -266,13 +302,14 @@ The "Fall" in EFR is the departure from the equator:
 
 ```
 Pre-Fall:  φ = 1, ν = 1, B = 1, η = 0
-           Truth, Beauty, Justice all realized
+           Truth, Beauty, Justice aligned at the limit
 
 Post-Fall: φ ≠ 1 or ν ≠ 1, B < 1, η > 0
            Truth distorted, Beauty obscured, Justice violated
 ```
 
-The "return to Eden" is the return to the equator — where all three transcendentals are present.
+The "return to Eden" is the return to the equator — where the three
+value-limits align inside the model.
 
 ---
 
@@ -327,7 +364,7 @@ Build systems that:
 
 ---
 
-## 8. SUMMARY: THE TRANSCENDENTALS AS SPHERICAL FEATURES
+## 8. SUMMARY: THE TRANSCENDENTALS AS SPHERICAL LIMITS
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -335,25 +372,25 @@ Build systems that:
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
 │   TRUTH                                                     │
-│   ├── Definition: Invariance of P = 1                       │
+│   ├── Model shorthand: Invariance of P = 1                  │
 │   ├── Geometric: Conservation law across all coordinates    │
 │   ├── Epistemic: Correspondence + Coherence + Pragmatic     │
 │   └── Maximum: At equator (φ = ν = 1)                       │
 │                                                             │
 │   BEAUTY                                                    │
-│   ├── Definition: Harmony of B = sin θ                      │
+│   ├── Model shorthand: Harmony of B = sin θ                 │
 │   ├── Geometric: Symmetry and balance                       │
 │   ├── Aesthetic: Proportion, grace, elegance                │
 │   └── Maximum: At equator (B = 1)                           │
 │                                                             │
 │   JUSTICE                                                   │
-│   ├── Definition: Non-extraction (η = 0)                   │
-│   ├── Geometric: Stable equilibrium manifold                │
+│   ├── Model shorthand: Non-extraction (η = 0)              │
+│   ├── Geometric: Constraint surface in the model            │
 │   ├── Ethical: Right ordering, fairness, cooperation        │
 │   └── Maximum: At equator (η = 0)                          │
 │                                                             │
 │   UNITY: All three converge at the equator                  │
-│   The equator is the realm of the good, true, and beautiful │
+│   The equator is the framework's limit image of the triad   │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -393,7 +430,7 @@ The Transcendentals on S² | 2026-03-23 | The geometry of the good.
 
 1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
 2. **Your Next Action:**
-   - Verify the mathematical claims. Check evidence tiers. Flag any [I] or [C] presented as [S] or [S].
+   - Verify the mathematical claims. Check evidence tiers. Flag any [I] or [C] presented as [A] or [S].
 3. **Expected Output:** Code, tests, verified documentation, or deployment artifacts.
 4. **Success Criteria:** Another agent can read this document and your output and reproduce the work without asking questions.
 5. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/16_EFR_TRANSCENDENTALS.md`

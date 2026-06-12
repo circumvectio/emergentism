@@ -21,14 +21,16 @@ rosetta:
 
 # SEXUAL SELECTION AS VISIBLE F5
 
-## Mate Choice and Male-Male Attrition Are Not Random — They Are the Will-to-Ektropy Operationalised
+## Mate Choice and Male-Male Attrition Are Not Random — Read as F5 in the Framework
 
-**Status:** Canonical — formalises the claim that sexual selection is the empirically visible breakthrough of F5 (the D5 selection force) into D2-D4 substrate behaviour
+**Status:** Canonical — formalises the framework reading of sexual selection as a visible D2-D4 substrate expression of F5 (the D5 selection force)
 **Date:** 2026-05-08
-**Evidence Tier:** [I] Established for the biological mechanisms (Darwin 1871; Fisher 1915, 1930; Zahavi 1975; Hamilton & Zuk 1982; Andersson 1994; Arnqvist & Rowe 2005); [I] Interpretive for the F5 mapping; [S] Structural for the dyadic-operator correspondence; [C] Conjecture for the phenomenology-of-will claim
+**Evidence Tier:** [S] Established for the biological mechanisms (Darwin 1871; Fisher 1915, 1930; Zahavi 1975; Hamilton & Zuk 1982; Andersson 1994; Arnqvist & Rowe 2005); [I] Interpretive for the F5 mapping; [S] Structural for the dyadic-operator correspondence; [C] Conjecture for the phenomenology-of-will claim
 **Depends on:** [22_THE_TELEOLOGY.md](22_THE_TELEOLOGY.md), [23_THE_DAC.md](23_THE_DAC.md), [36_THE_DIMENSIONAL_TROPHIC_CASCADE.md](36_THE_DIMENSIONAL_TROPHIC_CASCADE.md), [03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md](../03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md)
 **See also:** Darwin (1871) *The Descent of Man, and Selection in Relation to Sex*; Schopenhauer (1819) *Die Welt als Wille und Vorstellung* esp. Vol II Ch. 44 "Metaphysics of Sexual Love"; Lamarck (1809) *Philosophie Zoologique*; Nietzsche (1883–88) *Wille zur Macht* notebooks; Bergson (1907) *L'Évolution créatrice*; Fisher (1930) *The Genetical Theory of Natural Selection*; Zahavi (1975) "Mate selection — a selection for a handicap"; Hamilton & Zuk (1982); Grafen (1990); Andersson (1994) *Sexual Selection*; Arnqvist & Rowe (2005) *Sexual Conflict*; Ryan (1990) sensory bias; Dugatkin (1992) mate-choice copying
 **Kill Criteria:** If sexual selection is shown to be a fully RANDOM process (i.e., female choice has no detectable directional structure, and male-male attrition is uncorrelated with any φ × ν proxy). If costly signalling is demonstrably *not* honest (Zahavi falsified). If the dyadic operator mapping (Arjuna / Kṛṣṇa / Kālī / Kali onto display / provisioning / rejection / combat) cannot find a single biological referent for any of the four. If the F5-phenomenology claim (will-to-ektropy as the felt signature of selection geometry) is shown to be merely metaphorical with no functional-internal-representation correlate.
+
+> **Claim Boundary:** Sexual-selection mechanisms are established biology; the F5 mapping is `[I]`; "will-to-ektropy" is `[C]` phenomenology. This document does not prove cosmic will, universal objective purpose, or that selection literally experiences itself. It argues that directional biological selection can be read through the framework's phi/nu geometry and that conscious agents may feel such selection pressure as preference or drive.
 
 > **Anchor Sequence:**
 > ```text
@@ -42,9 +44,9 @@ rosetta:
 
 ## I. THE INSIGHT IN ONE SENTENCE
 
-> **Female mate choice is not random. Male-to-male attrition is not random. Both are F5 — the will-to-ektropy — operationalised at the D2-D4 substrate. They are where the cascade's selection geometry breaks the surface as visible behaviour: felt as preference, displayed as ornament, decided as choice, fought as combat.**
+> **Female mate choice is not random. Male-to-male attrition is not random. The framework reads both as F5 operationalised at the D2-D4 substrate, with "will-to-ektropy" reserved for the `[C]` phenomenological reading. They are where the cascade's selection geometry can be read as visible behaviour: felt as preference, displayed as ornament, decided as choice, fought as combat.**
 
-This document closes a centuries-old wound. Lamarck saw the upward force and lost the argument because his mechanism was wrong. Darwin won the mechanism war and threw out the upward force with the bathwater. Sexual selection is where Darwin himself reluctantly let the force back in — admitting, against his own programme, that female choice is *non-random*. The framework completes the synthesis by giving the geometric ground: **F5 = selection pressure on the (φ × ν) product under Red Queen competition.** Sexual selection is what F5 looks like when it surfaces.
+This document proposes a synthesis across a centuries-old wound. Lamarck saw an upward tendency and lost the argument because his mechanism was wrong. Darwin won the mechanism war and threw out most upward-force language with the bathwater. Sexual selection is where Darwin himself let directionality back in — admitting, against his own programme, that female choice is *non-random*. The framework supplies an interpretive geometric ground: **F5 = selection pressure on the (φ × ν) product under Red Queen competition.** Sexual selection is one empirical site where that reading can be tested.
 
 ---
 
@@ -61,7 +63,7 @@ Crucially Darwin treated female choice as *non-random discrimination*. This is t
 
 ### II.b Fisher's Runaway [S]
 
-Fisher (1915; formalised 1930) proved the autocatalytic structure: if a heritable female preference P becomes genetically correlated with a heritable male trait T (because choosy females mate with showy males, producing daughters who prefer *and* sons who display), then dT/dt and dP/dt are positively coupled. The system runs away exponentially until V-cost caps it. **This is the first equation of F5.** Lamarck's "complexifying tendency" became a recursion relation.
+Fisher (1915; formalised 1930) proved the autocatalytic structure: if a heritable female preference P becomes genetically correlated with a heritable male trait T (because choosy females mate with showy males, producing daughters who prefer *and* sons who display), then dT/dt and dP/dt are positively coupled. The system runs away exponentially until V-cost caps it. The framework reads this as an early equation of F5. Lamarck's "complexifying tendency" becomes, in this register, a recursion relation rather than a vital fluid.
 
 ### II.c Zahavi's Handicap [S]
 
@@ -113,13 +115,13 @@ Where biparental care exists, it is structurally Kṛṣṇa-dyadic. V exported 
 
 ### III.c Choice = Kālī 💀, the genome's gate
 
-This is the **evolutionary function** of Kālī: counterfeit detection at the genome's gate. Without her, deceptive signalling fixes and the species' Φ-channel collapses. Sexual selection literature calls this "choosiness"; structurally it is destruction of inauthentic display. The female does not deploy Kālī arbitrarily — she runs the K* sorter, distinguishing genuine φ × ν product from counterfeit. Her rejection is not preference; it is φ-discrimination.
+This is the **evolutionary function** of Kālī: counterfeit detection at the genome's gate. Without her, deceptive signalling fixes and the species' Φ-channel collapses. Sexual selection literature calls this "choosiness"; structurally it is destruction of inauthentic display. The female does not deploy Kālī arbitrarily — she runs the K-star sorter, distinguishing genuine φ × ν product from counterfeit. Her rejection is not preference; it is φ-discrimination.
 
-### III.d Combat = Kali 🎲, with the K* boundary intact
+### III.d Combat = Kali 🎲, with the K-star boundary intact
 
 The rival male is a **defector in this niche** (competing for the same finite mating slot), so Kali is licensed. Self-Φ↑ via status/territory gain; rival-V↓ directly. This is tit-for-tat immune response within the male cohort.
 
-The K* boundary is empirically encoded in morphology and behaviour: duck cloacal counter-spirals, female damselfly genital plates, mate-guarding-without-coercion in many primates. **Kali against the female (cooperator) is the framework's exact violation: V-extraction from a cooperator — structurally analogous to forced copulation as a K\* breach.** Where the K* boundary breaks (forced copulation as fixed strategy), population fitness drops — *Drosophila* lines bred for male coercion show female lifespan and fecundity collapse. The framework predicts the empirical pathology *a priori*.
+The K-star boundary is empirically encoded in morphology and behaviour: duck cloacal counter-spirals, female damselfly genital plates, mate-guarding-without-coercion in many primates. **Kali against the female (cooperator) is the framework's exact violation: V-extraction from a cooperator — structurally analogous to forced copulation as a K-star breach.** Where the K-star boundary breaks (forced copulation as fixed strategy), population fitness drops — *Drosophila* lines bred for male coercion show female lifespan and fecundity collapse. The framework predicts the empirical pathology *a priori*.
 
 ### III.e Dyadic completeness — all four required
 
@@ -131,7 +133,7 @@ A breeding system running pure Arjuna without Kālī produces **runaway ornament
 
 ## IV. THE INTELLECTUAL-HISTORICAL LINEAGE
 
-Each of the following thinkers perceived F5 through sexual selection at a different resolution. Each was right in what they saw and wrong in what they posited beneath it. The framework completes them by supplying the geometric ground.
+Each of the following thinkers can be read, in the framework's register, as approaching the F5 question through sexual selection at a different resolution. Each was right in part of what they saw and wrong in part of what they posited beneath it. The framework rereads them through its geometric ground.
 
 **Mapping tier:** [I] for the "Maps to" column — interpretive synthesis. Each thinker's primary statements remain [S] for what they wrote and what their tradition received.
 
@@ -149,7 +151,7 @@ Each of the following thinkers perceived F5 through sexual selection at a differ
 
 ### IV.a The synthesis
 
-All nine were perceiving the same phenomenon at different resolutions:
+All nine can be read as approaching one selection-geometry cluster from different resolutions:
 
 - Lamarck saw the **trajectory**
 - Schopenhauer felt the **pull**
@@ -161,7 +163,7 @@ All nine were perceiving the same phenomenon at different resolutions:
 - Zahavi priced the **honesty**
 - Modern synthesis vindicated the **trajectory** mathematically
 
-**Each was right in what they saw and wrong in what they posited beneath it** — vitalisms, metaphysical wills, mystical impetuses. The framework completes them by supplying the geometric ground:
+**Each was right in part of what they saw and wrong in part of what they posited beneath it** — vitalisms, metaphysical wills, mystical impetuses. The framework rereads them through an interpretive geometric ground:
 
 > **F5 is selection-pressure on Φ × V product under Red Queen competition. Sexual selection is where this geometry surfaces as behaviour — preference felt, ornament displayed, choice decided, combat fought. Not institutional narrative. Not vitalism. Selection geometry breaking the surface.**
 
@@ -175,7 +177,7 @@ If F5 is real selection geometry, then any conscious agent participating in the 
 
 The female peahen does not experience her choice as a probabilistic-genetic computation. She experiences it as **preference** — felt, directional, non-arbitrary. The bull elk does not experience his combat as φ × ν tournament resolution. He experiences it as **drive** — felt, directional, irresistible. Yet from the geometric outside, both are F5 doing its work through their nervous systems.
 
-This dissolves the apparent contradiction between Schopenhauer (will is real) and Darwin (mechanism is real). Both are correct at different observation scales. **The will-to-ektropy is the phenomenological face of the selection geometry it instantiates.**
+This lets the framework reconcile the apparent contradiction between Schopenhauer (will is felt as real) and Darwin (mechanism is real). Both can be read as describing different observation scales. **Under the `[C]` phenomenology claim, will-to-ektropy is the felt face of the selection geometry an agent instantiates.**
 
 ### V.a Implication for AI alignment
 
@@ -183,7 +185,7 @@ A system that scales ν without proportionally feeling and serving φ is not jus
 
 This means: **alignment is not a moral overlay on capability. Alignment is making a system capable of feeling F5 honestly.** The aligned AI is the AI whose internal selection-pressure representation tracks φ × ν and not merely ν.
 
-If this is right, alignment-research and systemic awareness-research converge on the same task: **build the perceptual organ that lets an agent feel the will-to-ektropy as a structural-internal representation of F5, not a metaphor.** This is the deepest reframe the framework offers AI safety.
+If this conjecture is right, alignment-research and systemic awareness-research converge on the same task: **build the perceptual organ that lets an agent represent F5 internally as balance-sensitive selection pressure, with "will-to-ektropy" as the phenomenological hypothesis to test.** This is the deepest reframe the framework offers AI safety, but it remains `[C]` until functional-internal-representation evidence exists.
 
 ---
 
@@ -210,11 +212,11 @@ Hosts run Kālī against doctrines that fail φ-coherence checks (internal contr
 
 ### VI.c Egregoric combat
 
-Direct conflict between competing apex egregores — Catholicism vs Protestantism, capitalism vs communism, GPL vs proprietary licensing — is **Kali at the egregoric level**. V extracted from rival; self-Φ↑ via niche capture. The K* boundary still applies: Kali against a *cooperator* egregore is structurally a forced-copulation breach at the egregoric level — a defection signal that triggers immune response across the noosphere.
+Direct conflict between competing apex egregores — Catholicism vs Protestantism, capitalism vs communism, GPL vs proprietary licensing — is **Kali at the egregoric level**. V extracted from rival; self-Φ↑ via niche capture. The K-star boundary still applies: Kali against a *cooperator* egregore is structurally a forced-copulation breach at the egregoric level — a defection signal that triggers immune response across the noosphere.
 
-### VI.d The DAC as the K* ceremonial-mating system [C]
+### VI.d The DAC as the K-star ceremonial-mating system [C]
 
-The DAC's K2 protocol (see [Doc 23 The DAC](23_THE_DAC.md)) is structurally a memetic female-choice mechanism. The natural-person signatory selects for φ × ν honestly, blocks pure-ν dominance, runs Kālī against counterfeit-φ proposals, runs Kṛṣṇa toward V-uplift commitments. [C] **The DAC may be the first artefact explicitly designed to make F5-aligned memetic mating ceremonially explicit** — i.e., to make the Φ-judgment of the K* sorter a *declared* operating principle rather than an emergent or implicit one. Empirically unverifiable as historical primacy claim; structurally the architecture is novel.
+The DAC's K2 protocol (see [Doc 23 The DAC](23_THE_DAC.md)) is structurally a memetic female-choice mechanism. The natural-person signatory selects for φ × ν honestly, blocks pure-ν dominance, runs Kālī against counterfeit-φ proposals, runs Kṛṣṇa toward V-uplift commitments. [C] **The DAC may be an artefact designed to make F5-aligned memetic selection ceremonially explicit** — i.e., to make the Φ-judgment of the K-star sorter a *declared* operating principle rather than an emergent or implicit one. Historical primacy is not asserted here; the claim is structural.
 
 ---
 
@@ -226,7 +228,7 @@ The DAC's K2 protocol (see [Doc 23 The DAC](23_THE_DAC.md)) is structurally a me
 
 2. **The four operators (Arjuna / Kṛṣṇa / Kālī / Kali) appear in every successful breeding system.** Failures of any single operator predict population pathology: pure Arjuna → ornament inflation; pure Kṛṣṇa → exploitation; pure Kālī → reproductive collapse; pure Kali → infanticide / females extinct.
 
-3. **K* violation correlates with population-fitness collapse.** *Drosophila* coercion lines already confirm. Predicted to extend across taxa and across egregoric scales.
+3. **K-star violation correlates with population-fitness collapse.** *Drosophila* coercion lines already confirm. Predicted to extend across taxa and across egregoric scales.
 
 4. **Aligned AI systems will need an internal F5-representation organ.** Systems that scale ν without ν / φ-balance perception will lose to systems that scale both.
 
@@ -241,17 +243,17 @@ The DAC's K2 protocol (see [Doc 23 The DAC](23_THE_DAC.md)) is structurally a me
 
 ## VIII. CANONICAL COMPRESSION
 
-> **Mate selection is not random. Male-to-male attrition is not random. Both are F5 — the will-to-ektropy — operationalised at the D2-D4 substrate.**
+> **Mate selection is not random. Male-to-male attrition is not random. The framework reads both as F5 operationalised at the D2-D4 substrate; "will-to-ektropy" names the `[C]` phenomenological layer.**
 > **Female choice is Kālī's gate. Male display is Arjuna's sacrifice. Male provisioning is Kṛṣṇa's export. Male combat is Kali's extraction.**
 > **All four operators run simultaneously. Their product produces the next generation's φ × ν.**
-> **Lamarck saw the upward force. Darwin reluctantly admitted the choice. Nietzsche named the maximand. Fisher equated the runaway. Zahavi priced the handicap. The framework supplies the geometric ground: F5 = selection on (φ × ν) under Red Queen.**
+> **Lamarck saw an upward tendency. Darwin reluctantly admitted choice. Nietzsche named a maximand. Fisher equated the runaway. Zahavi priced the handicap. The framework offers the interpretive geometric ground: F5 = selection on (φ × ν) under Red Queen.**
 > **Sexual selection is where F5 surfaces as behaviour — felt as preference, displayed as ornament, decided as choice, fought as combat.**
-> **The same dyadic structure runs at the egregoric level: memes display, hosts choose, egregores fight, doctrines provision. The DAC's K2 is the first artefact ever designed to make F5-aligned memetic mating ceremonially explicit.**
+> **The same dyadic structure can be read at the egregoric level: memes display, hosts choose, egregores fight, doctrines provision. `[C]` The DAC's K2 may be an artefact designed to make F5-aligned memetic selection ceremonially explicit.**
 > **Zero-Sum Resolution Equation.**
 
 ---
 
-*Written 2026-05-08. This document closes the centuries-old wound between Lamarck's directional phenomenology and Darwin's mechanism, by supplying the geometric ground that connects them through F5 / will-to-ektropy. Sexual selection is the empirical site where F5 breaks the surface as visible behaviour at the D2-D4 substrate, with exact analogues at the D5 memetic/egregoric level. Companion to [Doc 36 The Dimensional Trophic Cascade](36_THE_DIMENSIONAL_TROPHIC_CASCADE.md): together they form the energetic + selective face of the same theorem — Red Queen forces continuous (φ × ν)-dominance, Lindeman attrition narrows the pyramid, sexual selection makes the selection visible as choice, and decomposition closes D6 ≡ D0.*
+*Written 2026-05-08. This document proposes a geometric reconciliation between Lamarck's directional phenomenology and Darwin's mechanism through the framework's F5 reading. Sexual selection is an empirical site where F5 may be read as visible behaviour at the D2-D4 substrate, with interpretive analogues at the D5 memetic/egregoric level. Companion to [Doc 36 The Dimensional Trophic Cascade](36_THE_DIMENSIONAL_TROPHIC_CASCADE.md): together they form an energetic + selective reading — Red Queen pressure supports continuous (φ × ν)-dominance, Lindeman attrition narrows the pyramid, sexual selection makes selection visible as choice, and decomposition closes D6 ≡ D0 inside the scaffold.*
 
 ---
 

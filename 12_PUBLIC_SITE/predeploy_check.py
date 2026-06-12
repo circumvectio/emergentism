@@ -308,7 +308,7 @@ def check_public_reading_bundle():
         "rosettad": 38,
         "operators": 29,
         "will": 30,
-        "value": 9,
+        "value": 10,
         "ground": 9,
         "sacred": 6,
         "method": 10,

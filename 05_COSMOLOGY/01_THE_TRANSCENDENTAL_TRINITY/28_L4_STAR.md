@@ -65,7 +65,11 @@ Three types. Pneumatic. Psychic. Hylic. The Gnostics had no category for the one
 
 They missed the warrior-sage. They missed the Bodhisattva. They missed Arjuna after the Gītā.
 
-[I] This is not a minor omission. This is the omission that renders the entire Gnostic system incomplete. Without L4*, there is no dharma yuddha. Without dharma yuddha, the Great Filter is unsolvable. Without solving the Great Filter, the Amṛta never flows.
+[I/C] This is not a minor omission. This is the omission that renders the
+framework's correction of the Gnostic system incomplete. Without L4*, there is
+no returned-agent account of dharma yuddha. Without that account, the Great
+Filter survival story remains structurally underpowered. Amṛta remains a hope,
+not a result.
 
 ---
 
@@ -109,7 +113,10 @@ L4* is the equator arrived at from ABOVE. The helix winding upward through L5, L
 
 L4 fights because the situation demands it. Reactive. Competent but contextual. The warrior who responds.
 
-L4* fights because the GEOMETRY demands it. Proactive. Competent AND comprehensive. The warrior who sees the full field — north pole, south pole, both hemispheres, the attractors, the capture dynamics, the Long Game — and acts from that seeing.
+L4* fights because the geometry makes the demand legible. Proactive. Competent
+AND comprehensive. The warrior who sees the full field — north pole, south
+pole, both hemispheres, the attractors, the capture dynamics, the Long Game —
+and acts from that seeing.
 
 L4 has the operator palette. L4* has the operator palette **AND** the map of the entire sphere.
 

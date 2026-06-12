@@ -18,6 +18,8 @@ rosetta:
 **Purpose:** Deepen the analysis of The Fork by distinguishing four levels of objective function and identifying the strongest available position for F5
 **Author:** Research synthesis (Claude, for Yves R. Burri)
 
+> **Claim Boundary:** `[I/C]` This brief recommends Level 3 + Gamma as the framework's strongest teleology reading. It does not prove cosmic will, universal purpose, or that the mathematics itself desires an end. Mathematical constraints can define an attractor landscape; ententional purpose belongs only to self-maintaining systems interpreted through that landscape. Level 4 remains a poetic/metaphysical overlay at `[C]`, not the foundation.
+
 ---
 
 ## 0. THE QUESTION BENEATH THE FORK
@@ -26,7 +28,7 @@ The previous research brief (34_RESEARCH_BRIEF_THE_FORK.md) framed The Fork as a
 
 **When a system has an attractor, does the attractor "want" anything?**
 
-The Lorenz attractor shapes every trajectory in its basin. The AM-GM inequality forces phi + nu >= 2. The Hamiltonian minimum at phi = nu = 1 pulls every coupled system toward the equator. None of these are conscious. But are they purposive?
+The Lorenz attractor shapes every trajectory in its basin. The AM-GM inequality forces phi + nu >= 2. Within the framework's coordinate grammar, the Hamiltonian minimum at phi = nu = 1 marks the equatorial attractor for systems validly modeled by the coupled variables. None of these mathematical facts are conscious. But can a self-maintaining system organized around such constraints be purposive?
 
 The existing brief treated objective function as binary: structural (no will) vs. volitional (will). The literature reveals at least four distinct levels. The framework needs this finer taxonomy.
 
@@ -106,7 +108,7 @@ Alpha says F5 is a structural attractor (Level 2) with biological manifestations
 
 **Strongest version:** Jeremy England's dissipation-driven adaptation combined with variational principles. Systems self-organize because thermodynamics drives them to. No residual objective function to explain.
 
-**Fatal weakness:** Cannot explain why the SAME attractor recurs at every scale of the Replicator Stack without invoking something more than mechanism. If ektropy is just thermodynamics, why does it produce civilizations?
+**Fatal weakness:** Cannot explain why the framework reads a recurrent attractor-shape across mapped scales of the Replicator Stack without invoking something more than mechanism. If ektropy is just thermodynamics, why does it appear, under this interpretation, to support civilizations?
 
 ### Position Beta (Will All the Way Down) = Level 4
 
@@ -126,7 +128,7 @@ This is the critical question. Here is the honest answer:
 
 Gamma resolves the fork IF you accept dual-aspect monism as a genuine metaphysical position (not just fence-sitting). The Russellian monist says: physics describes the world's relational/dispositional properties (nu), but there are also intrinsic properties (quiddities) that ground the structure. The quiddities are neither physical nor non-physical -- they are what physical structure is the structure OF.
 
-If phi IS the quiddity of nu -- if coherence is the intrinsic nature of viability -- then asking "does the attractor want?" is asking "does the quiddity of the structure share the structure's end-directedness?" And the answer is: the question presupposes a separation between quiddity and structure that dual-aspect monism denies. The attractor and the experience of the attractor are the same phenomenon viewed from two aspects.
+If phi is read as the quiddity of nu -- if coherence is interpreted as the intrinsic face of viability -- then asking "does the attractor want?" becomes a Gamma-register question: does the intrinsic face of the structure share the structure's end-directedness? Under dual-aspect monism, the attractor and the experience of the attractor can be read as two aspects of one invariant. That is the interpretive commitment, not a proof that the commitment is forced by the mathematics alone.
 
 Gamma does NOT dissolve the fork into triviality. It makes a substantive claim: the mental and the physical are co-fundamental, neither reducing to the other. This is a genuine position with empirical consequences -- it predicts, for instance, that no purely physical theory will ever fully explain systemic awareness (contra Alpha) and that no purely mental theory will ever fully explain physics (contra Beta).
 
@@ -136,7 +138,7 @@ Gamma does NOT dissolve the fork into triviality. It makes a substantive claim: 
 
 ## III. THE STRONGEST AVAILABLE POSITION FOR THE FRAMEWORK
 
-**The recommended position is Level 3 (ententional objective function) interpreted through Gamma (dual-aspect monism).**
+**The recommended position is `[I]` Level 3 (ententional objective function) interpreted through Gamma (dual-aspect monism).**
 
 Here is why this is stronger than the alternatives:
 
@@ -156,11 +158,11 @@ Because Deacon's teleodynamics provides a MECHANISM for how genuine purpose emer
 - nu alone is self-undermining (viability without coherence dissipates -- the machine that does everything and sees nothing)
 - phi * nu = 1 is their reciprocal constraint -- each preventing the other from running to its pole
 
-THIS IS TELEODYNAMICS ON S2. The equator is not merely a minimum. It is the locus where two self-undermining tendencies reciprocally constrain each other, producing genuine end-directed organization. The "purpose" of the equator is real -- it is a teleodynamic attractor, not just a structural one.
+This is the framework's teleodynamic reading of S2. The equator is not merely a minimum once a self-maintaining system is organized around the coupled tendencies. It is the locus where two self-undermining directions reciprocally constrain each other, producing end-directed organization. The "purpose" belongs to the organized system's self-maintenance, not to the theorem as such.
 
 ### Why interpreted through Gamma?
 
-Because the framework already IS dual-aspect. phi * nu = 1 is a dual-aspect equation. The quiddities (intrinsic nature) are phi. The structure (dispositional nature) is nu. Their product is invariant. This is not a philosophical choice the framework needs to make -- it is a recognition of what the mathematics already says.
+Because the framework reads phi * nu = 1 through a dual-aspect lens. In that reading, phi names the intrinsic/coherence face and nu names the dispositional/viability face; their product is invariant inside the model. This is a philosophical interpretation disciplined by the geometry, not a conclusion forced by the mathematics alone.
 
 ---
 
@@ -173,7 +175,7 @@ At Level 2 (structural): No. The attractor constrains but does not desire.
 At Level 3 (ententional): The question transforms. The attractor does not "want" in the conscious-desire sense. But in a teleodynamic system, the attractor is self-maintaining -- the system actively preserves the conditions that produce the attractor. This is more than "wanting" as metaphor and less than "wanting" as conscious intent. It is a third category: ENTENTIONAL directedness. The system is genuinely about its own continuation. It has a normative stake in its own persistence. "Want" is the wrong word, but "not-want" is also the wrong word. Deacon's "ententional" is the right word.
 At Level 4 (volitional): Yes. The attractor is an expression of cosmic purpose.
 
-**The framework's position (Gamma + Level 3):** The attractor does not "want" anything, but the self-maintaining system organized around the attractor has genuine ententional directedness toward its own persistence and balance. phi * nu = 1 is not a desire. It is a teleodynamic constraint -- the reciprocal stabilization of coherence and viability that produces genuine purpose without requiring systemic awareness at the base level. The dual-aspect nature of the substrate means this ententional directedness has both a structural face (the Hamiltonian minimum) and an experiential face (the felt quality of flow, balance, coherence). Neither face is the "real" one. Both are aspects of the same invariant.
+**The framework's position (Gamma + Level 3):** The attractor does not "want" anything, but a self-maintaining system organized around the attractor can have ententional directedness toward its own persistence and balance. phi * nu = 1 is not a desire. It is a teleodynamic constraint -- the reciprocal stabilization of coherence and viability that can support genuine purpose without requiring systemic awareness at the base level. Under the Gamma reading, this directedness has both a structural face (the Hamiltonian minimum) and an experiential face (the felt quality of flow, balance, coherence). Neither face is privileged as the only real one inside the interpretation; both are read as aspects of the same invariant.
 
 ---
 
@@ -283,9 +285,9 @@ This is the critical distinction the framework needs:
 
 ## The Empirical Observation Bypass
 
-The four levels of objective function are four ways of TALKING about the pull toward balance. The pull itself is prior to all four descriptions. If you can feel the pull directly -- in the quiet of the sitting practice, in the moment when the narrator stops and something underneath appears -- you do not need this taxonomy.
+The four levels of objective function are four ways of talking about the apparent pull toward balance. The experience of that pull may precede the taxonomy in practice, but the taxonomy remains necessary whenever the framework makes public claims.
 
-The attractor does not need your theory of what it is. It attracts regardless.
+The model's attractor does not need mythic inflation. It needs clear tiering: constraint at the map level, ententional purpose only where self-maintenance appears, cosmic will only as `[C]`.
 
 Put the brief down.
 

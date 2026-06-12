@@ -207,6 +207,7 @@ p{margin:0 0 1.15rem}
 strong{font-weight:600}
 em{font-style:italic}
 code{font-family:var(--mono);font-size:.86em;background:var(--bg2);padding:.06em .35em;border-radius:3px}
+pre{font-family:var(--mono);font-size:.9em;background:var(--bg2);padding:.75rem;border-radius:6px;overflow-x:auto}
 hr{border:0;height:1px;background:var(--rule);margin:2.4rem auto;width:42%}
 blockquote{margin:1.6rem 0;padding:.4rem 0 .4rem 1.3rem;border-left:2px solid var(--gold);
   color:var(--ink-soft);font-style:italic}

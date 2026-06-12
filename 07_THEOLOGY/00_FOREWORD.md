@@ -40,7 +40,7 @@ Zero-Sum Resolution Equation
 1 = 0 × ∞
 ```
 
-On the number line, 0 × ∞ is undefined. Mathematics calls it an "indeterminate form." The product of nothing and everything — undefined. The most fundamental operation in arithmetic — broken.
+On the number line, `0 × ∞` is undefined. Mathematics calls it an "indeterminate form." The product of nothing and everything is not an ordinary field operation; it needs a register, not a forced answer.
 
 In the framework's spherical register, the glyph is resolved as `P∞ = φ · ν = 1`. The product of the reciprocal charts is one. The public claim is not that ordinary arithmetic has been overwritten, but that the Burri Sphere provides the framework's disciplined translation of the finite unit between nothing and everything.
 

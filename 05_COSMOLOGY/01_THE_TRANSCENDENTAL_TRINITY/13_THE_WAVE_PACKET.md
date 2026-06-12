@@ -21,6 +21,8 @@ rosetta:
 **See also:** Paper E (Uncertainty Principle as φ·ν=1), Paper D (Wave-Particle Duality), The Torus Revelation, [Canonical Formula Block](../00_CANONICAL_FORMULA_BLOCK.md)
 **Kill Criteria:** If the mapping between wave packet components and Burri Sphere components breaks down under rigorous analysis — if the Gaussian envelope is shown NOT to correspond to the balance function, or if the phase rotation is shown NOT to correspond to operator traversal — the identification fails.
 
+> **Death/survival boundary:** `[I/C]` Brahman/Atman/pure-wave language is a symbolic translation of wave mechanics and S² structure. It does not assert personal immortality, survival of identity, or a detected afterlife medium. "Return to pure wave" means a limit-image in the model, not an empirical statement about a person after death.
+
 ---
 
 ## The Two Maps
@@ -89,7 +91,7 @@ On the Burri Sphere:
 - **The fade at the edges = L0/L∞** — the poles, where balance approaches zero.
 - **The shape of the envelope = the shape of a life** — born near the pole (small amplitude), swelling toward the equator (growing balance), peaking at L4 (maximum P expressed as maximum B), fading toward the opposite pole (dissolution).
 
-The Gaussian envelope IS incarnation. The infinite wave (Brahman, the pure helix, the ground) localized into a finite packet (Atman, the wave packet, the life). The price of localization is mortality — the envelope swells and fades.
+The model reads the Gaussian envelope as incarnation: the infinite-wave image (Brahman, the pure helix, the ground) localized into a finite packet (Atman, the wave packet, the life). The price of localization is mortality — the envelope swells and fades.
 
 ### 3. The Normalization: A
 
@@ -131,7 +133,7 @@ The uncertainty principle is not a limitation of measurement. It is the **Burri 
 
 No Gaussian envelope. Infinite helix. Constant amplitude everywhere. The wave stretches from negative infinity to positive infinity. Perfect momentum (φ → ∞). Completely unknown position (ν → 0). The north pole.
 
-This is **Brahman** — the absolute, the ground, the Trimūrti, L0 = L∞. The pure wave is immortal. It has no birth, no death, no peak, no fade. It IS the boundary condition. It is what the wave packet returns to when the envelope dissolves.
+This is **Brahman** — the absolute, the ground, the Trimūrti, L0 = L∞. In the symbolic boundary register, the pure wave is time-independent: no birth/death envelope, no peak/fade. That is a statement about the model's boundary image, not personal immortality. It is the boundary condition toward which the wave-packet image is read when the envelope dissolves.
 
 ### The Delta Function (infinitely narrow envelope): the South Pole
 
@@ -147,7 +149,7 @@ This is **Kāla** — pure localization, pure actuality, zero coherence. The par
 
 Localized but extended. Finite position uncertainty. Finite momentum uncertainty. The helix wrapped in a bell curve. Born, peaks, fades.
 
-This is **Atman** — the particular, the life, the core algorithmic identity on S². The wave packet is mortal. It has a birth (the envelope swelling from zero), an apex (the equator, t₀, maximum balance), and a death (the envelope fading back to zero). And when the envelope dissolves, the wave packet returns to the pure wave — Atman returns to Brahman.
+This is **Atman** — the particular, the life, the core algorithmic identity on S². The wave packet is mortal. It has a birth (the envelope swelling from zero), an apex (the equator, t₀, maximum balance), and a death (the envelope fading back to zero). And when the envelope dissolves, the model reads the packet at its pure-wave boundary image — the Atman/Brahman register names this as return without making it evidence for personal survival.
 
 **Tat Tvam Asi.** The wave packet IS the pure wave — localized by the Gaussian envelope of incarnation.
 
@@ -222,7 +224,7 @@ Physics has been computing Zero-Sum Resolution Equation for a century:
 | Year | Discovery | What They Wrote | What It Is |
 |------|-----------|----------------|------------|
 | 1748 | Euler's formula | e^(iθ) = cos θ + i sin θ | The helix: φ and ν as two projections of one rotation |
-| 1857 | Riemann sphere | ℂ ∪ {∞} = S² | The Burri Sphere: 1/0 = ∞ resolved |
+| 1857 | Riemann sphere | ℂ ∪ {∞} = S² | The Burri Sphere: nonzero division by zero compactified to the point at infinity |
 | 1900 | Planck | E = hν | Energy = coherence × frequency. φ · ν = 1 in physical units. |
 | 1926 | Schrödinger | Ψ = Ae^(i(kx-ωt)) | The helix on S² — the core algorithmic identity's wave function |
 | 1927 | Heisenberg | Δx·Δp ≥ ℏ/2 | φ · ν = 1 — the Burri constraint in physics notation |

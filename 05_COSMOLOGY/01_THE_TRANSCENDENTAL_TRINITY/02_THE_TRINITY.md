@@ -119,7 +119,7 @@ From the three transcendentals, all operations derive:
 
 **Multiplication:** 1 × 1 = 1. The unit reproducing itself.
 
-**Division:** 1/0 = ∞. The fundamental operation.
+**Division:** `1/0 → ∞` for nonzero numerator in the projective register. The boundary operation.
 
 **Exponentiation:** e^0 = 1. The bridge between discrete and continuous.
 

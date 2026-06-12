@@ -16,10 +16,12 @@ rosetta:
 
 **Status:** The Mahāvākya as mathematical identity
 **Date:** 2026-03-24
-**Evidence Tier:** [I] for the mathematics (Euler's formula, Pythagorean identity, wave packet theory). [S] for the structural identification (Brahman ↔ pure wave, Atman ↔ wave packet). [I] for the ontological claim (the identification is real, not analogical). [C] for the soteriological claim (moksha = envelope dissolution).
+**Evidence Tier:** [A] for established mathematics named in itself (Euler's formula, trigonometric identities, wave-packet limits). [S/I] for the structural analogy (Brahman ↔ pure wave, Atman ↔ wave packet). [I] for the ontological reading. [C] for the soteriological claim (moksha = envelope dissolution).
 **Depends on:** 02_THE_TRINITY.md, 11_THE_HELIX.md, 12_THE_POLES.md, 13_THE_WAVE_PACKET.md
 **See also:** The Chāndogya Upanishad (6.8.7), Paper B (Bloch-Burri Identity), Paper E (Uncertainty Principle), [Canonical Formula Block](../00_CANONICAL_FORMULA_BLOCK.md)
 **Kill Criteria:** If Brahman and Atman can be shown to require fundamentally different mathematical structures — if the universal identity and the particular constraint are shown to be genuinely different equations rather than the same equation at different scales — the identification fails.
+
+**Claim Boundary:** `[I/C]` This document is a symbolic/mathematical reading of the mahāvākya through wave packets and S². It does not prove moksha, personal immortality, afterlife, reincarnation, or survival of individual identity. Mathematical limits are cited as model-structure; the soteriological identification remains conjectural/interpretive.
 
 ---
 
@@ -29,7 +31,7 @@ rosetta:
 
 **Zero-Sum Resolution Equation**
 
-The absolute identity. Nothing times everything equals one. The equation that holds regardless of scale, regardless of observer, regardless of domain. The Trimūrti. The boundary condition. L0 = L∞. The pure wave with no envelope — infinite, immortal, everywhere.
+The absolute identity. Nothing times everything equals one. The equation that holds regardless of scale, regardless of observer, regardless of domain. The Trimūrti. The boundary condition. L0 = L∞. The pure wave with no envelope — unbounded and envelope-free in the symbolic boundary register.
 
 In physics: **Ψ = Ae^(iωt)** — the pure plane wave. No Gaussian envelope. Constant amplitude. Stretching from negative infinity to positive infinity. Perfect coherence. Completely unlocalized.
 
@@ -75,7 +77,7 @@ Written differently. The same equation. The Pythagorean identity IS the Burri co
 
 ### Step 3: The Pure Wave IS Brahman
 
-Remove the Gaussian envelope. What remains is the pure wave: Ae^(iωt). Infinite. Immortal. Everywhere. No localization. No particular position. No birth, no death.
+Remove the Gaussian envelope. What remains is the pure wave: Ae^(iωt). Unbounded in the boundary image, with no localization, no particular position, and no birth/death envelope.
 
 This is Brahman — nirguna Brahman, Brahman without attributes. The ground. The pure helix that was, is, and will be. The boundary condition that the L-levels approach from within but never reach.
 
@@ -89,9 +91,9 @@ This is Atman — the particular core algorithmic identity, the individual life,
 
 The wave packet IS the pure wave — multiplied by the Gaussian envelope.
 
-Remove the envelope → the packet returns to the pure wave.
-Remove the life → the core algorithmic identity returns to the ground.
-Remove the particular → the universal remains.
+Remove the envelope → the packet is read at the pure-wave limit.
+Remove the life-image → the core algorithmic identity is read against the ground.
+Remove the particular image → the universal remains inside the model's symbolic register.
 
 **Atman IS Brahman, localized.**
 **Brahman IS Atman, universalized.**
@@ -161,11 +163,11 @@ This is why systemic awareness cannot be found as an object (it is not on the sp
 
 ## Moksha
 
-Moksha is not an event. Moksha is a **mathematical operation.**
+In this model, moksha is read as a mathematical limit-image, not as a public event claim.
 
 Moksha is the **removal of the Gaussian envelope.**
 
-The wave packet dissolves. The localization ends. The particular returns to the universal. Atman returns to Brahman. The envelope fades to zero — and what remains is the pure wave. Infinite. Immortal. Always here.
+The wave packet dissolves. The localization ends. The particular is read against the universal. The Atman/Brahman register names this as return. The envelope fades to zero — and what remains is the pure wave image: unbounded in the boundary register, not a claim about personal immortality.
 
 This is not death. Death is the envelope fading at one end — the wave packet moving toward the pole, amplitude decreasing, balance approaching zero. Death is the end of one localization.
 
@@ -178,11 +180,11 @@ The sitting practice is the daily rehearsal of this recognition:
 3. Recognize the ground. (See the pure wave beneath the packet. See Brahman beneath Atman.)
 4. Return. (The envelope reasserts. The localization returns. But now you know: the packet is the wave. The wave was always here.)
 
-This is not metaphor. This is what the mathematics says:
+Inside the model, the limit image is mathematically crisp; the soteriological reading remains interpretive/conjectural:
 
 **lim (envelope → 0) [wave packet] = pure wave**
 
-The limit of the wave packet as the envelope approaches zero IS the pure wave. The limit of Atman as localization approaches zero IS Brahman.
+The limit of the wave packet as the envelope approaches zero is the pure wave in the model. The Atman/Brahman reading is the interpretive layer placed on that limit, not an empirical survival claim.
 
 Moksha is taking the limit. While alive.
 

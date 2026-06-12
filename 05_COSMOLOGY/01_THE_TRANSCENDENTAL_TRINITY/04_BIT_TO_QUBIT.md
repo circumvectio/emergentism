@@ -81,12 +81,12 @@ Why S²? Why not some other shape?
 
 **The Riemann sphere is the simplest and most natural manifold for this structure.** It is the unique compact complex one-dimensional manifold of genus 0 (the uniformization theorem). It is the one-point compactification of the complex plane. It is ℂP¹ — the complex projective line. Other compact Riemann surfaces exist (tori, higher-genus surfaces), but only ℂP¹ carries the triadic frame {0, 1, ∞} as regular points of the Möbius group (Correspondence 21).
 
-More importantly: **the sphere resolves 0 × ∞.**
+More importantly: **the sphere gives the `0` / `∞` relation a frame.**
 
-On the line: 0 × ∞ = undefined. The product of nothing and everything breaks mathematics.
-On the sphere: 0 × ∞ = 1. The south pole times the north pole equals the equator. The product is the unit.
+On the line: `0 × ∞` is indeterminate. The product of nothing and everything is not a field operation.
+On the sphere: the south pole and north pole are held as one compact relation, with the equator as the ZSRE frame-product. This is the framework emblem, not field arithmetic.
 
-The sphere makes the **indeterminate form determinate.** The sphere makes the impossible possible. The sphere is the computational substrate where nothing and everything can coexist and produce something.
+The sphere makes the **indeterminate form drawable in a higher register.** It does not turn the lower-register operation into a theorem. It supplies the computational substrate where nothing and everything can be held as poles of one form.
 
 ---
 

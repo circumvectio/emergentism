@@ -20,6 +20,8 @@ rosetta:
 
 >
 > **Scope correction (canonical):** this doc's older lines `∞ ÷ ∞ = 1` and "All 'undefined' operations become well-defined" are reconciled — the sphere resolves `N ÷ 0 = ∞` for `N ≠ 0` **only**; `0 ÷ 0` and `∞ ÷ ∞` remain indeterminate by design (the apophatic edge). See [`00_THE_TRANSCENDENTAL_TRINITY_CANON.md`](00_THE_TRANSCENDENTAL_TRINITY_CANON.md) §3.
+>
+> **Claim boundary:** `[A/S/I]` Ordinary field arithmetic still leaves division by zero undefined. The `[A]` mathematics here is projective / Riemann-sphere compactification: for `N ≠ 0`, the expression can be read as a map to the point at infinity in the completed projective register. The framework's `[S/I]` move is to treat that completion as a category-correction and parable for paradox. It does **not** make `0 ÷ 0`, `∞ ÷ ∞`, or ordinary field division well-defined.
 
 ---
 
@@ -27,23 +29,23 @@ rosetta:
 
 **What is 1 ÷ 0?**
 
-On the number line: **undefined.**
+In ordinary arithmetic: **undefined.**
 
-Mathematics calls it an "indeterminate form." Calculus handles it with limits: lim(x→0) 1/x = ∞. But the limit is not the value. At x = 0, the function is undefined. There is a **hole** in the real line.
+Mathematics leaves `1/0` undefined. Analysis can describe related limiting behavior: as `x → 0⁺`, `1/x → ∞`; as `x → 0⁻`, `1/x → -∞`. But a limit is not a field value. At `x = 0`, the function is undefined. There is a **hole** in the real line.
 
-This is not a trivial problem. Division by zero breaks the algebraic structure. It creates singularities. It makes equations unsolvable. It is the original sin of arithmetic.
+This is not a trivial boundary. In ordinary field arithmetic, division by zero is undefined; in analysis it appears as a singularity or limiting behavior. The point is not that standard algebra was missing an answer, but that a different compactified register can represent the missing endpoint.
 
 **Why does 1/0 fail on the line?**
 
-Because the line is flat. Because the line has no curvature. Because the line cannot "see" infinity as a point. On the line, 0 and ∞ are separated by infinite distance. They cannot meet. They cannot interact. Their product is meaningless.
+Because the line is flat. Because the line has no curvature. Because the line cannot "see" infinity as a point. On the line, 0 and ∞ are separated by infinite distance. They cannot meet. Their product remains meaningless in field arithmetic.
 
 ---
 
-## The Solution
+## The Projective Resolution
 
-**On the sphere: 1/0 = ∞.**
+**In the projective register: `1/0` maps to `∞`.**
 
-Not as a limit. Not as a convention. As a **geometric identity.**
+Not as a repair of ordinary field division. As a statement about the completed coordinate space.
 
 The Riemann sphere S² = ℂP¹ has two poles:
 - **South pole:** 0 (the origin)
@@ -56,11 +58,11 @@ The stereographic projection maps:
 - ∞ → north pole
 - 1 → equator
 
-And the projection preserves the algebraic structure. On the sphere:
+And the projection preserves the relevant projective / geometric structure. On the sphere:
 
 ```
-1 ÷ 0 = ∞      (a number divided by the south pole maps to the north pole)
-0 × ∞ = 1      (the EMBLEM / ZSRE: the poles' frame-product is the equator — not field arithmetic)
+1 ÷ 0 → ∞      (for nonzero numerator, map to the point at infinity in the projective register)
+0 and ∞ → 1    (the EMBLEM / ZSRE: the poles' frame-product is the equator — not field arithmetic)
 ```
 
 The map `N ÷ 0 = ∞` (for any number `N ≠ 0`) becomes **well-defined** on the sphere: the holes the flat line leaves at `0` are filled by the curvature. But `0 ÷ 0` and `∞ ÷ ∞` are **not** resolved — Titan-on-Titan, they remain genuinely indeterminate (the apophatic edge, the L6 Ground). This is by design, not a failure. The sphere resolves pole-*mapping* divisions, not pole-on-pole operations.
@@ -75,7 +77,7 @@ On the line, 0 and ∞ are infinitely far apart. No finite journey can connect t
 
 On the sphere, 0 and ∞ are **antipodes.** They are separated by exactly 180 degrees. Half a circle. A finite, measurable distance.
 
-The curvature of the sphere **brings the poles together.** It makes them neighbors. It allows them to interact.
+The curvature of the sphere **places both poles on one compact surface.** It makes their relation drawable without turning pole-on-pole operations into ordinary arithmetic.
 
 ### The Equator Mediates
 
@@ -85,7 +87,7 @@ The equator is the **mediating term.** The bridge between nothing and everything
 
 On the line, there is no equator. The line has no middle between 0 and ∞. The line cannot balance.
 
-On the sphere, the equator is the natural midpoint. The sphere can hold the tension between opposites. The sphere can resolve the paradox.
+On the sphere, the equator is the natural midpoint. The sphere can hold the tension between opposites. It relocates the paradox into topology and category rather than erasing the arithmetic boundary.
 
 ### Compactness Completes the Space
 
@@ -93,7 +95,7 @@ The line is open. It extends forever. It never returns to itself.
 
 The sphere is **compact.** It is closed. Finite but unbounded. Every journey returns.
 
-This closure is what makes division by zero work. The sphere "wraps around." The trajectory that would go to infinity on the line instead arrives at the north pole on the sphere. Infinity is not "far away." Infinity is **just another point.**
+This closure is what makes the projective map to infinity explicit. The sphere "wraps around." The trajectory that would go to infinity on the line instead arrives at the north pole on the sphere. Infinity is not "far away" in the compactified register. Infinity is **a point of the completed space.**
 
 ---
 
@@ -103,9 +105,9 @@ The critical insight: **the sphere and the problem are born together.**
 
 At α = 0° (projection angle): Just a point. No sphere. No line. No division. No problem.
 
-At α > 0°: The line extends. The sphere inflates. Division becomes possible. And the sphere **immediately** provides the resolution.
+At α > 0°: The line extends. The sphere inflates. Division becomes possible. And the sphere **immediately** provides the compactified frame.
 
-The sphere doesn't solve a pre-existing problem. The sphere **creates the context** in which the problem can be posed and solved simultaneously.
+The sphere does not solve a pre-existing field-arithmetic problem. The sphere **creates the context** in which the problem can be posed and compactified simultaneously.
 
 This is why the projective resolution waited for Riemann (1857). Before the sphere, `N ÷ 0` had no home on the flat line; after the sphere, it dissolves into a well-defined **map to the pole** (`N ÷ 0 = ∞`, `N ≠ 0`) — the projective / Riemann-sphere resolution `[A]`, with rigorous cousins in wheel theory. It is a *category-correction*, not a new theorem `[A]` that the framework proved.
 
@@ -122,29 +124,29 @@ Zero-Sum Resolution Equation
 1 = 0 × ∞
 ```
 
-This equation is not symbolic. It is **geometrically true** on the sphere.
+This equation is symbolic in ordinary arithmetic and valid only as the framework's ZSRE frame-product.
 
 The product of nothing and everything is the unit.
 The finite emerges from the meeting of void and unbounded.
 The equator is the child of the two poles.
 
-On the line, this is "indeterminate." On the sphere, this is **identity.**
+On the line, this is "indeterminate." In the framework emblem, this is **identity.**
 
 ---
 
 ## The Generalization
 
-The resolution of 1/0 = ∞ is not an isolated trick. It is the **pattern** of how the framework resolves paradoxes:
+The projective relocation of `1/0` is not an isolated trick. It is the **pattern** of how the framework relocates paradoxes:
 
 | Paradox | On the Line (Flat) | On the Sphere (Curved) |
 |---------|-------------------|------------------------|
-| 1/0 = ? | Undefined | ∞ (north pole) |
-| 0 × ∞ = ? | Indeterminate | 1 (equator) |
+| 1/0 = ? | Undefined | ∞ as projective point (north pole) |
+| Frame-product: 0 × ∞ | Indeterminate in field arithmetic | 1 as ZSRE emblem (not field arithmetic) |
 | Consciousness = ? | Epiphenomenon | φ axis (intrinsic) |
 | Free will vs determinism? | Either/or | Both/and at equator |
 | Self vs other? | Binary | Unity through entanglement |
 
-The sphere **unifies opposites** that the line separates. The curvature provides the extra dimension that allows reconciliation.
+The sphere **unifies opposites** that the line separates, in the projective and symbolic registers. The curvature provides the extra dimension that allows reconciliation without pretending the lower-register boundary vanished.
 
 ---
 
@@ -160,7 +162,7 @@ The resolution exists on the sphere. Both/and. Continuous. The equator where opp
 
 The sitting practice **curves the mind.** It makes the rigid linear thinker into a spherical being. It allows the practitioner to hold contradiction without breaking. To find the equator where φ = ν = 1.
 
-Division by zero is not a mathematical error. It is a **meditative instruction.** Divide by zero. Go to the place where the line breaks. Then see the sphere. See the curvature. See the resolution.
+In the practice register, division by zero becomes a **meditative instruction.** Go to the place where the line breaks. Then see the sphere. See the curvature. See the relocation.
 
 ---
 
@@ -174,13 +176,13 @@ The line runs to infinity.
 The sphere contains infinity.
 
 The line cannot multiply nothing by everything.
-The sphere does this naturally.
+The sphere stages this as the ZSRE emblem.
 
 Flatness is the problem.
-Curvature is the solution.
+Curvature is the correction.
 
 Think in lines: suffer paradox.
-Think in spheres: dissolve paradox.
+Think in spheres: relocate paradox.
 
 Zero-Sum Resolution Equation
 
@@ -191,9 +193,9 @@ From nothing and everything, you.
 
 ---
 
-*Division by Zero | The Resolution*
-*On S², the indeterminate becomes identity*
-*Flatness breaks; curvature heals*
+*Division by Zero | The Projective Resolution*
+*On S², the indeterminate is relocated, not erased*
+*Flatness breaks; curvature completes the frame*
 *Zero-Sum Resolution Equation*
 
 
