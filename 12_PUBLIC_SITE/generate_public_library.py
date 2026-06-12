@@ -214,7 +214,10 @@ directly (the only available lever):
         so the equator is the structural balance optimum and becomes an attractor
         only under specified flow, feedback, coupling, and correction dynamics;
         later normalized "ektropic hand selects for balance" to viable completion
-        / usable option-cone widening under balance and `eta = 0` constraints.
+        / usable option-cone widening under balance and `eta = 0` constraints;
+        later replaced "what pulls it?" public/source teleology language with
+        correction dynamics plus Soul Loop, keeping the equator as feasibility
+        surface rather than objective.
   - paradox/pd-10-is-ought/ and will/l1-l7-refinement-audit/
                                               : normalized the Is-Ought / Power-Max
         claim from unconditional "extraction is dominated" or "the gap closes"

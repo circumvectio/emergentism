@@ -34,7 +34,7 @@ Why does the helix spiral?
 
 The core state says: here is the geometry. S². φ·ν = 1. The helix. The poles. The equator.
 
-The objective function asks: **why does any of this MATTER?** Why does the Replicator Stack ascend? Why does ektropy select for viable completion under balance constraints? Under what conditions does the equator behave like an attractor? What pulls?
+The objective function asks: **why does any of this MATTER?** Why does the Replicator Stack ascend? Why does ektropy select for viable completion under balance constraints? Under what conditions does the equator behave like a correction surface? What keeps drift from becoming collapse?
 
 The answer is not a being. Not a plan. Not a designer. Inside the framework,
 the answer is the constraint geometry: reciprocal closure makes some trajectories
@@ -309,7 +309,7 @@ Nietzsche called it the Will to Power. He got the direction wrong.
 
 Will to Power = ν → ∞ = the south pole = Ammit. The will to DOMINATE.
 
-**The ektropic force is the Tendency to Potential** in the poetic register. In the technical register, it is ententional directedness toward usable finite-node potential: raising `P_node = Φ × V` by returning live systems toward `B = 1` under the invariant manifold identity `P∞ = φ · ν = 1`. Not the will to dominate, not `P∞` becoming larger, but constrained balance expressed as higher usable node power.
+**The ektropic force is the Tendency to Potential** in the poetic register. In the technical register, it is ententional directedness toward usable finite-node potential: widening the reachable option cone by raising `P_node = Φ × V` while keeping live systems close enough to `B = 1` that both factors remain usable under the invariant manifold identity `P∞ = φ · ν = 1`. Not the will to dominate, not `P∞` becoming larger, and not balance as the final goal; balance is the feasibility condition that keeps higher usable node power from collapsing into a pole.
 
 > **Correction (2026-04-04):** The research brief [`35_RESEARCH_BRIEF_TELEOLOGY_SPECTRUM.md`](35_RESEARCH_BRIEF_TELEOLOGY_SPECTRUM.md) recommends replacing "Tendency to Potential" with "ententional directedness toward potential" (Deacon's term) to avoid the volitional over-claim of "will." The poetic register retains "Tendency to Potential"; the technical register uses "ententional directedness."
 
@@ -347,7 +347,7 @@ This is Prometheus unbound. This is Lucifer (light-bearer) before the Fall was r
 
 Adam Smith's invisible hand selects for efficiency. Efficiency = ν. The invisible hand optimises the south pole.
 
-**The ektropic hand selects for viable completion under balance.** Balance = B = sin θ is the constraint surface; usable option-cone widening under `η = 0` is the objective. The ektropic hand optimises at the equator only where coupling, feedback, memory, and enforcement make that constraint operative.
+**The ektropic hand selects for usable option-cone widening under balance.** Balance = B = sin θ is the constraint surface; usable option-cone widening under `η = 0` is the objective. The ektropic hand stabilizes near the equator only where coupling, feedback, memory, and enforcement make that constraint operative.
 
 And it is **reflexive** (Soros): understanding the selection changes the
 selection. Knowing that cooperation can dominate under the Power-Max conditions
@@ -500,8 +500,9 @@ The last sentence of the last document is the first sentence of the practice:
 Why does the helix spiral?
 Because ektropy selects for viable completion where coupling, feedback, correction, and non-extraction make imbalance costly and keep option-cone widening usable.
 
-What pulls it?
-The equator. The ground. The asymptotic limits.
+What corrects it?
+Coupling, feedback, memory, evidence, and the Soul Loop.
+The equator is the feasibility surface; the ground and asymptotic limits orient the practice.
 Beauty, Truth, Justice — always closer, never arriving.
 
 Where does it arrive?
