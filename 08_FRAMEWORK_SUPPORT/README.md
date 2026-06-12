@@ -91,6 +91,8 @@ The full framework runs across `D0-D6`, but the live hinge for reading and use i
 
 **D5** is the layer of enactment: the present duration in which navigation, institutions, morality, governance, and science become public.
 
+**Action-register bridge:** when the Goal, Soul Loop, and Game pages say `V` is D4 means-to-act, they are not replacing dimensional D4 witness. They are naming the actualization side of agency: body, tools, energy, access, and execution capacity. In the same register, `Φ` is D5 worldline-foresight: the ability to envision, rank, and aim reachable futures. Agency needs both; D5 foresight without D4 means cannot act, and D4 means without D5 foresight cannot rank or aim.
+
 **D6** is not a higher experience or another science. It is the terminal closure of the cycle, reached apophatically. `Falsification Protocol` does not produce one more mastery-state; it subtracts the field back toward `D0`.
 
 **Closure rule:** `D6 ≡ D0` structurally, and `D6 ≈ D0` phenomenologically from within the cycle.

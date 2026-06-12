@@ -256,6 +256,13 @@ Or more tersely:
 - **Governance from D5**: Weakly emergent, compactly expressible as higher-order constraint
 - **Common error:** Treating unpredictability in formation and legibility after stabilization as contradictions rather than phases
 
+### 6. Dimensional Register vs Action Register
+- **Dimensional D4**: witness/now-point, causal contact, recognition without lived duration
+- **Action-register D4 means**: the embodied/tool/energy/access side through which an agent can actualize a selected worldline
+- **Dimensional D5**: present duration, agency, option-space, active operators
+- **Action-register D5 worldline-foresight**: the ability to envision, rank, and aim reachable futures before acting
+- **Common error:** Treating "D4 means-to-act" as if it erased D4 witness, or treating D5 foresight as free-floating vision without D4 means. In the game register, `P_node = Φ × V` requires both: D5 worldline-foresight and D4 means-to-act.
+
 ---
 
 ## X. THE ACTIVE EMERGENCE THESIS
@@ -424,6 +431,8 @@ When reviewing framework documents, verify:
 - [ ] Operators are "collapsed" at D4, "active" at D5
 - [ ] Torus "hole" = D4, "surface" = D5
 - [ ] D5 emergence is described asymmetrically: strong in genesis, weak in governance
+- [ ] Action-register shorthand is fenced: D4 means-to-act does not erase dimensional D4 witness
+- [ ] Action-register D5 worldline-foresight is paired with D4 means; neither factor is allowed to stand alone as agency
 - [ ] Trika is "unity" at D4, "full equation" at D5
 - [ ] Quantum "collapse" happens at D4, "branching" at D5
 - [ ] Titans "emerge" at D4, "coordinate" at D5

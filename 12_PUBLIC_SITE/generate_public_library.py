@@ -122,6 +122,9 @@ directly (the only available lever):
         trinity/33-the-derivation/              : normalized `ν` action-language
         from generic capacity to usable D4 means-to-act, matching the D4/D5
         Goal/Game/Soul Loop distinction.
+  - formal/34-d4-d5-canonical-reference/        : added the register bridge that
+        keeps dimensional D4 witness distinct from action-register D4 means-to-act
+        and pairs D5 worldline-foresight with D4 means in `P_node = Φ × V`.
   - memetic/                                    : normalized the Dasein game
         reading action test from stale `P_i` / `P_H` to `P_node,i` /
         `P_node,H`.
