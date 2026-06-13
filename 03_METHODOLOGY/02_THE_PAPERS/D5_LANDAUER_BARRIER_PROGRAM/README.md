@@ -12,7 +12,7 @@ rosetta:
   register: "[A/S/I]"
   canonical_phrase: "The D5 Landauer Barrier Program"
 title: "The D5 Landauer Barrier Program"
-status: "ACTIVE - 2026-06-13. Paper-program scaffold for CM8e. Paper 1 is the central scaffold; Papers 2-5 are linked stubs. All Maxwell-demon language is fenced as analogy unless a paper explicitly proves more."
+status: "ACTIVE - 2026-06-13. Paper-program scaffold for CM8e. Paper 1 is the central scaffold; Papers 2-6 are linked stubs. All Maxwell-demon and omega-holobiont language is fenced as analogy unless a paper explicitly proves more."
 ---
 
 **Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
@@ -20,7 +20,7 @@ status: "ACTIVE - 2026-06-13. Paper-program scaffold for CM8e. Paper 1 is the ce
 
 # The D5 Landauer Barrier Program
 
-This is not one paper. It is a five-paper program around the same constraint:
+This is not one paper. It is a six-paper program around the same constraint:
 
 > **Perfect worldline foresight is an asymptote, not a free power.**
 
@@ -57,6 +57,7 @@ These sources are not ornamental. Every paper in this program must route the phy
 | 3 | [`The Reflexive Demon`](PAPER_3_THE_REFLEXIVE_DEMON.md) | A selector that observes and then acts changes the branches it is predicting. | Stub |
 | 4 | [`Path Entropy Is Not Thermodynamic Entropy`](PAPER_4_PATH_ENTROPY_IS_NOT_THERMODYNAMIC_ENTROPY.md) | Reachable-future diversity must not be confused with thermodynamic entropy. | Stub |
 | 5 | [`Entropy Export and Objective Ethics`](PAPER_5_ENTROPY_EXPORT_AND_OBJECTIVE_ETHICS.md) | Extraction is local order purchased by exporting cost into the carrier field; syntropy raises node and field together under `η = 0`. | Stub |
+| 6 | [`The Omega Holobiont Cannot Close`](PAPER_6_THE_OMEGA_HOLOBIONT_CANNOT_CLOSE.md) | The universal-holobiont image is still D5 because it uses physical memory, computation, and correction; D6 releases its finality claim. | Stub |
 
 ## Program Invariants
 
@@ -65,7 +66,8 @@ These sources are not ornamental. Every paper in this program must route the phy
 3. **No erasure overreach.** Landauer's principle applies cleanly to logically irreversible erasure; reversible computation must be handled honestly.
 4. **No entropy sign error.** Path entropy / reachable-future diversity is not thermodynamic entropy.
 5. **No reflexivity dodge.** Once the selector acts, the branch set changes.
-6. **No moral smuggling.** The ethics bridge is conditional under coupling, horizon, multiplicative scoring, and `η = 0`; it is not an external proof that every agent must accept the framework.
+6. **No omega-holobiont inflation.** A universal holobiont running the Soul Loop on matter-energy is a D5-limit image, not D6.
+7. **No moral smuggling.** The ethics bridge is conditional under coupling, horizon, multiplicative scoring, and `η = 0`; it is not an external proof that every agent must accept the framework.
 
 ## Common Formal Spine
 
@@ -87,7 +89,8 @@ This is a lower-bound sketch, not yet a completed theorem. It becomes paper-grad
 2. Quantify the branch-discrimination cost model in Paper 2.
 3. Formalize the reflexivity problem in Paper 3 using control/game-theoretic language.
 4. Separate path entropy from thermodynamic entropy in Paper 4 before any public slogan uses the word "entropy."
-5. Only then connect the result to objective ethics in Paper 5.
+5. Connect the result to objective ethics in Paper 5.
+6. Test the cosmic-scale limit image in Paper 6: the omega holobiont cannot close because complete recursive self-correction still needs physical memory and entropy accounting.
 
 ## Kill Conditions For The Program
 

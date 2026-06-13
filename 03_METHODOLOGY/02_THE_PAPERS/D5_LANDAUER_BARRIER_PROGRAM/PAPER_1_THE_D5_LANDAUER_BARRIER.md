@@ -179,6 +179,7 @@ This paper must be rewritten or killed if:
 - [`Paper 3: The Reflexive Demon`](PAPER_3_THE_REFLEXIVE_DEMON.md) formalizes the branch-changing effect of prediction and action.
 - [`Paper 4: Path Entropy Is Not Thermodynamic Entropy`](PAPER_4_PATH_ENTROPY_IS_NOT_THERMODYNAMIC_ENTROPY.md) prevents the entropy sign error.
 - [`Paper 5: Entropy Export and Objective Ethics`](PAPER_5_ENTROPY_EXPORT_AND_OBJECTIVE_ETHICS.md) connects the barrier to `η = 0` and syntropic dyadism.
+- [`Paper 6: The Omega Holobiont Cannot Close`](PAPER_6_THE_OMEGA_HOLOBIONT_CANNOT_CLOSE.md) tests the cosmic-scale D5-limit image against physical memory, recursion, entropy export, and D6 apophatic release.
 
 ---
 

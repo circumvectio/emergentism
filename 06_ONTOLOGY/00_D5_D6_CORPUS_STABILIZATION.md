@@ -21,7 +21,7 @@ rosetta:
 **Date:** 2026-04-14
 **Evidence Tier:** [I/S] Canon-interpretive stabilization constrained by current core state
 **Depends on:** [00_D_LEVEL_STUDIES.md](../00_META/00_D_LEVEL_STUDIES.md), [00_D6_AS_APOPHATIC_CLOSURE.md](00_D6_AS_APOPHATIC_CLOSURE.md), [00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md](../05_COSMOLOGY/00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md), [00_THE_REMAINING_QUESTIONS.md](../00_META/00_THE_REMAINING_QUESTIONS.md), [34_D4_D5_CANONICAL_REFERENCE.md](../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md)
-**See also:** [00_GLOSSARY.md](../07_THEOLOGY/00_GLOSSARY.md), [00_EMERGENTISM_PHI_RESOLUTION.md](../05_COSMOLOGY/02_EMERGENTISM_CORE/00_EMERGENTISM_PHI_RESOLUTION.md), [00_CORPUS.md](../00_META/00_CORPUS.md)
+**See also:** [00_GLOSSARY.md](../07_THEOLOGY/00_GLOSSARY.md), [00_EMERGENTISM_PHI_RESOLUTION.md](../05_COSMOLOGY/02_EMERGENTISM_CORE/00_EMERGENTISM_PHI_RESOLUTION.md), [00_META README](../00_META/README.md)
 
 > **Anchor Sequence:**
 > ```text
@@ -66,6 +66,45 @@ This is now the default reading unless a document explicitly and carefully overr
 
 ---
 
+## D5-Limit Holobiont / Soul Loop Reading
+
+If the question is:
+
+- **"At `D6`, has all matter become a holobiont that performs the Soul Loop?"**
+
+the tier-honest answer is:
+
+- **That is not `D6`.** It is the `D5`-limit image seen from inside the
+  system. It still has matter, memory, computation, recursive self-modeling,
+  correction, an organism/field distinction, and a process running in time.
+- **The positive image is upper `D5`.** A universal holobiont may be imagined as
+  organizing D4 matter-energy into memory and control substrate to run the Soul
+  Loop on itself.
+- **The D5 Landauer Barrier still binds the image.** Because memory and control
+  are physical, the loop cannot totalize itself into cost-free complete
+  self-knowledge. Recursion, error correction, reset, and entropy export remain
+  inside the accounting.
+- **`D6` releases the image.** `D6` is not the completed organism; it is the
+  boundary where even the completed-organism image is subtracted as final
+  possession and returned to `D0`.
+
+So the lawful compression is:
+
+```text
+D4: matter / body / tools / energy / means-to-act
+D5-limit: universal holobiont attempting complete recursive self-correction
+D5 Landauer Barrier: the attempt cannot become cost-free total knowledge
+D6: apophatic boundary where the attempt releases final possession
+```
+
+This prevents both errors: naive material omega ("the universe literally
+becomes one final machine") and vague mysticism ("D6 is magic beyond matter").
+The harder claim is that the strongest positive completion image remains a
+physical `D5` process, while `D6` is the release of that image's finality claim.
+`[S/I]`
+
+---
+
 ## How to Read Older D6 Language
 
 When older corpus documents say:
@@ -103,6 +142,7 @@ Do **not** describe `D6` as:
 - a higher experiential layer
 - a science of optimal coherence
 - a stable collective supermind
+- a final holobiont that possesses all matter
 
 If a document does so, it should be interpreted through the newer canon rather than taken literally.
 
@@ -127,6 +167,7 @@ This sentence may be reused verbatim.
 3. Treat collective patterning, noosphere language, and institutional sediment as upper `D5`, not literal `D6`.
 4. Preserve the asymmetry at `D5`: strong in genesis, weak in governance.
 5. Preserve `D6` as closure, not an additional possession.
+6. Treat universal holobiont / Soul Loop integration as the `D5`-limit image seen from inside the system; `D6` releases that image's claim to final possession.
 
 *Stabilization is not censorship. It is the corpus learning how to read itself more precisely.*
 

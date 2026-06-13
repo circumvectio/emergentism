@@ -53,6 +53,14 @@ and the Goal: Dasein recursively corrects ontology, epistemology, methodology,
 axiology, and teleology until the next act can raise `P_node,i` and
 `P_node,H` together under `η = 0`.
 
+At the holobiont scale, the strongest positive image is still `D5`: a universal
+holobiont using matter-energy as memory and control substrate to run the Soul
+Loop on itself. That remains a process in time with matter, memory, computation,
+recursive self-modeling, correction, and entropy accounting. `D6` is not the
+final holobiont; it is the apophatic boundary where even the completed-organism
+image is released as final possession and returned to `D0`. Matter becomes
+means; the holobiont becomes Soul-Loop-capable; the Ground remains prior.
+
 **Tier fence:** `[S]` for the internal ordering and register distinctions;
 `[I]` for the Dasein reading; `[C]` if this is presented as a completed
 external proof that the seer, Ground, or consciousness has been captured by the
