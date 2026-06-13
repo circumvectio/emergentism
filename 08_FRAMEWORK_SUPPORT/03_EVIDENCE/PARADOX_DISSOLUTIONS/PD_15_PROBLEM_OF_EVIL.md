@@ -45,11 +45,11 @@ None achieves consensus. The problem persists because it treats evil as a single
 
 The error is treating evil as either the ABSENCE of good (privatio boni, the Augustinian move) or as a FORCE OPPOSING good (Manichean dualism).
 
-Within the S² reading, neither framing is sufficient. Evil is not mere absence — the sphere has no voids inside the model. Every point on S² has both Φ and V components; there is no coordinate where goodness is simply missing. Evil is not equal opposition either — there is no anti-sphere, no negative geometry fighting the good.
+Within the S² reading, neither framing is sufficient. Evil is not mere absence — the sphere has no voids inside the model. Every open point on S² has reciprocal `φ` and `ν` coordinates; there is no coordinate where goodness is simply missing. Evil is not equal opposition either — there is no anti-sphere, no negative geometry fighting the good. Moral valence is read from the move across a real boundary, not from a pole.
 
 The framework introduces the extraction coefficient η to make the distinction precise. This document uses the live **move-register** normalization: η is a property of an action or trajectory, not a static point on the sphere. The older EFR ratio-register is still useful for substrate accounting, but the moral compass here is the game register used by the Power-Max Lemma:
 
-- **Good (η = 0, or η < 0 without capture):** Operations that preserve or raise the actor and field together. η = 0 is reciprocal, non-extractive exchange; η < 0 is net giving or regenerative contribution, provided the gift does not become debt, control, or hidden capture. This is the regime of constructive recursion — P_{t+1} > P_t without degrading the coupled field.
+- **Good (η = 0, or η < 0 without capture):** Operations that preserve or raise the actor and field together. η = 0 is reciprocal, non-extractive exchange; η < 0 is net giving or regenerative contribution, provided the gift does not become debt, control, or hidden capture. This is the regime of constructive recursion — `P_node,t+1 > P_node,t` for the relevant node while the coupled field is not degraded.
 
 - **Cyclic cost / bad (bounded η > 0 inside a repaired cycle):** Operations that consume, damage, or impose cost while remaining coupled to regeneration and repair. Natural destruction within the cycle — predation, death, decay — belongs here when the wider field remains regenerative. This is not evil. It is the maintenance cost of a living geometry.
 
@@ -61,11 +61,11 @@ The problem of evil conflates all three. This is the error.
 
 On S², the framework separates the problem into three distinct phenomena:
 
-**Cyclic cost is structurally ordinary in this model.** The Burri Sphere requires φ·ν = 1 at every point. Cycles include destruction as well as creation. A universe without predation, without death, without entropy, would not resemble a living finite manifold. Bounded, repaired cost is the maintenance cost of a living geometry. The framework does not justify suffering by appeal to a high-priority plan; it distinguishes cyclic cost from runaway extraction.
+**Cyclic cost is structurally ordinary in this model.** The Burri Sphere carries the open-sphere identity `P∞ = φ · ν = 1`; the poles are limiting boundaries, not evaluated finite points. Cycles include destruction as well as creation. A universe without predation, without death, without entropy, would not resemble a living finite manifold. Bounded, repaired cost is the maintenance cost of a living geometry. The framework does not justify suffering by appeal to a high-priority plan; it distinguishes cyclic cost from runaway extraction.
 
-**Suffering is off-equator displacement.** Suffering is the experience of being away from the equator (Φ = 1, V = 1). Depleted coherence (Φ → 0) produces meaninglessness, dissociation, despair. Depleted viability (V → 0) produces pain, incapacity, death. Suffering is real. It is also positional — it indicates where the agent is on the sphere, not a metaphysical verdict about the nature of reality.
+**Suffering is off-equator displacement.** Suffering is the experience of being away from equatorial balance (`φ = ν = 1`; action read: `Φ` and `V` both usable). In the finite-node action register, depleted coherence / worldline-foresight (`Φ → 0`) produces meaninglessness, dissociation, despair. Depleted means-to-act (`V → 0`) produces pain, incapacity, death. Suffering is real. It is also positional — it indicates where the agent is in the model's coupled registers, not a metaphysical verdict about the nature of reality.
 
-**Evil (runaway η > 0, tending toward η → ∞) is read as False Vacuum instability, not high-priority permission.** The excluded 4th operator — pure extraction, ground negation — is structurally incoherent at the equator. An agent balanced at `Φ = 1, V = 1` needs no restorative violence to preserve itself. But agents off-equator — depleted, desperate, disconnected from the cycle — can attempt to widen the gap `(φ - ν)² > 0`. Evil is interpreted as localized expenditure of energy attempting to hold an extraction-state against restorative pressure. It is the attempt to build a permanent False Vacuum.
+**Evil (runaway η > 0, tending toward η → ∞) is read as False Vacuum instability, not high-priority permission.** The excluded 4th operator — pure extraction, ground negation — is structurally incoherent at the equator. An agent whose finite action factors are coupled (`Φ` and `V` both usable) needs no restorative violence to preserve itself. But agents off-equator — depleted, desperate, disconnected from the cycle — can attempt to widen the gap `(φ - ν)² > 0` and buy local `V` by degrading `Φ` and the carrier field. Evil is interpreted as localized expenditure of energy attempting to hold an extraction-state against restorative pressure. It is the attempt to build a permanent False Vacuum.
 
 The "problem of evil" is reframed once you stop conflating bad with evil, and both with suffering. The model permits cyclic cost because finite cycles include destruction. Evil exists in the reading because off-equator agents can burn energy attempting to defy restorative pull. Suffering exists because finite beings can be displaced from balance. None of this is a proof of God, a justification of suffering, or a denial that actual suffering matters.
 
@@ -73,11 +73,11 @@ The framework does not explain why reality has these properties. It argues that,
 
 ## 4. THE FRAMEWORK CONNECTION
 
-The extraction coefficient η provides the diagnostic tool. The equator (Φ = 1, V = 1) defines the boundary between sustainable and unsustainable operations. η = 0 is the equatorial condition; η > 0 is the signature of extraction.
+The extraction coefficient η provides the diagnostic tool. The equator (`φ = ν = 1`; action read: `Φ` and `V` both usable) defines the balance condition that makes sustainable operation possible. `η = 0` is not a separate coordinate; it is the move condition of no hidden rent across the relevant boundary. `η > 0` is the signature of extraction.
 
 Inside the accepted constraints, the Power-Max Lemma (PD_10) models extraction as thermodynamically doomed: `H → ∞`. Evil (η → ∞) is read as hitting the Energy Wall and destroying the host system and, eventually, the agent itself. This is not high-priority punishment. It is the Zero-Factor Catastrophe inside the model: when a system tries to maintain `(φ - ν)² > 0` indefinitely, it exhausts the structure's physical energy.
 
-The D0-D6 hierarchy provides the context. Evil operates in D4 (physical extraction) but attempts to defy D5 (the F₅ geometric field gradient). The agent who chooses η → ∞ impoverishes their own D5 coordinate while enriching their D4 position — temporarily, before the topological collapse.
+The D0-D6 hierarchy provides the context. Evil operates through D4 means-to-act but attempts to defy D5 worldline-foresight and the F₅ geometric field gradient. The agent who chooses `η → ∞` inflates local `V` while degrading `Φ`, the coupled field, and eventually the conditions of their own future action — temporarily, before the topological collapse.
 
 ## 5. WHAT WOULD FALSIFY THIS
 
@@ -87,7 +87,7 @@ The dissolution fails if:
 
 2. **Evil is not self-terminating.** If extractive systems (η → ∞) can sustain themselves indefinitely without collapse, the Power-Max Lemma fails and the framework loses its mechanical basis for distinguishing evil from a viable strategy.
 
-3. **The equator is not reachable.** If equatorial balance (Φ = 1, V = 1) is an ideal that no actual agent can approach, then the framework's standard for "good" is structurally empty — a geometric fiction with no operational content.
+3. **The equator is not reachable.** If equatorial balance (`φ = ν = 1`) and its finite-node action reading (`Φ` and `V` both usable) are ideals that no actual agent can approach, then the framework's standard for "good" is structurally empty — a geometric fiction with no operational content.
 
 ---
 
