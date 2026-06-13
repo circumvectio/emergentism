@@ -61,6 +61,7 @@
         <div class="instrument-telemetry">
           <span data-field="mode">Soul Loop assay</span>
           <span data-field="fps">-- fps</span>
+          <span data-field="sample">sample --</span>
           <span data-field="time">t+0.00s</span>
           <span data-field="phase">phase --</span>
           <span data-field="metric">cycle --</span>
@@ -299,6 +300,9 @@
   const visual = canvas.closest('.visual-panel');
   const REDUCED_MOTION = !!(window.matchMedia
     && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  const SAMPLE_HZ = 30;
+  const SAMPLE_MS = 1000 / SAMPLE_HZ;
+  const MAX_FRAME_MS = 120;
   const nodes = [
     { label: 'L1', title: 'intake', color: '#f3f4f6' },
     { label: 'L2', title: 'gather', color: '#2196f3' },
@@ -318,6 +322,8 @@
   let paused = false;
   let simTime = 0;
   let stepMs = 0;
+  let sampleAccumulatorMs = 0;
+  let sampleIndex = 0;
 
   const playback = (() => {
     if (!visual) return null;
@@ -359,6 +365,21 @@
       syncPlayback();
     });
     syncPlayback();
+  }
+
+  function advanceSamples(frameMs, rate = 1, forcedMs = 0, pausedState = false) {
+    if (!pausedState) sampleAccumulatorMs += Math.min(Math.max(frameMs, 0), MAX_FRAME_MS) * rate;
+    if (forcedMs > 0) sampleAccumulatorMs += forcedMs;
+    const steps = Math.min(12, Math.floor(sampleAccumulatorMs / SAMPLE_MS));
+    if (steps > 0) {
+      sampleAccumulatorMs -= steps * SAMPLE_MS;
+      sampleIndex += steps;
+    }
+    return steps * SAMPLE_MS;
+  }
+
+  function sampleLabel() {
+    return SAMPLE_HZ + ' Hz · n ' + String(sampleIndex).padStart(5, '0');
   }
 
   const readout = (() => {
@@ -435,11 +456,9 @@
     fps = fps ? fps * 0.9 + (1000 / dt) * 0.1 : 1000 / dt;
     lastFrame = frameTime;
     const rate = playback && playback.rate ? parseFloat(playback.rate.value) / 100 : 1;
-    if (!REDUCED_MOTION && !paused) simTime += dt * rate;
-    if (stepMs > 0) {
-      simTime += stepMs;
-      stepMs = 0;
-    }
+    const sampleAdvance = REDUCED_MOTION ? 0 : advanceSamples(dt, rate, stepMs, paused);
+    stepMs = 0;
+    simTime += sampleAdvance;
     const t = REDUCED_MOTION ? STEP_MS * 3 : simTime;
     const rect = canvas.getBoundingClientRect();
     const w = rect.width;
@@ -463,6 +482,7 @@
     if (overlay) {
       const fields = {
         fps: REDUCED_MOTION ? 'static' : fps.toFixed(0) + ' fps',
+        sample: REDUCED_MOTION ? 'sample static' : sampleLabel(),
         time: 't+' + (t / 1000).toFixed(2) + 's',
         phase: 'phase ' + phase.toFixed(2),
         metric: 'residual ' + residualProxy.toFixed(3),
@@ -522,12 +542,12 @@
     });
 
     ctx.fillStyle = '#ffeb3b';
-    ctx.font = '42px Georgia, serif';
+    ctx.font = '800 32px ui-monospace, SFMono-Regular, Menlo, monospace';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.fillText('L4', cx, cy - 10);
     ctx.fillStyle = '#9b9488';
-    ctx.font = '12px Courier New, monospace';
+    ctx.font = '700 11px ui-monospace, SFMono-Regular, Menlo, monospace';
     ctx.fillText('equatorial return', cx, cy + 24);
 
     const stripX = hasTelemetryRail ? w * 0.64 : cx - r * 0.58;
@@ -567,6 +587,7 @@
         'seg ' + active + '/' + (nodes.length - 1) + ' · ' + activeNode.label + ':' + activeNode.title + ' → ' + nextNode.label + ':' + nextNode.title + '\n' +
         'phase ' + phase.toFixed(2) + ' · target L4 · B = 1 · L4 distance ' + l4Distance + '\n' +
         'residual proxy ' + residualProxy.toFixed(3) + ' · kill criterion: non-decreasing residual forces method revision\n' +
+        'sample clock ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · fixed Δt ' + (SAMPLE_MS / 1000).toFixed(3) + 's\n' +
         (paused ? 'held sample' : 'run') + ' · gather/check/serve/see/dissolve/preserve';
     }
 

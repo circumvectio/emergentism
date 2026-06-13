@@ -1762,7 +1762,8 @@ pre.glyph-block {
     flex-direction: column;
   }
 
-  body.dimension-page .hero {
+  body.dimension-page .hero,
+  body.soul-loop-instrument .hero {
     padding-top: 88px;
   }
 
@@ -1771,7 +1772,8 @@ pre.glyph-block {
     max-width: 100%;
   }
 
-  body.dimension-page .hero-copy {
+  body.dimension-page .hero-copy,
+  body.soul-loop-instrument .hero-copy {
     order: 1;
     margin-top: 32px;
   }
@@ -1802,7 +1804,8 @@ pre.glyph-block {
     min-height: min(58vh, 480px);
   }
 
-  body.dimension-page .visual-panel {
+  body.dimension-page .visual-panel,
+  body.soul-loop-instrument .visual-panel {
     order: -1;
     margin-top: 0;
     min-height: min(62svh, 520px);
@@ -1875,7 +1878,8 @@ pre.glyph-block {
     bottom: 2.7rem !important;
   }
 
-  body.dimension-page .model-readout {
+  body.dimension-page .model-readout,
+  body.soul-loop-instrument .model-readout {
     bottom: 5.65rem !important;
   }
 
