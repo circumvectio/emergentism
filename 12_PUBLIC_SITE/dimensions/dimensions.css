@@ -442,12 +442,12 @@ h3 {
 .instrument-graticule {
   position: absolute;
   inset: 24px;
-  opacity: 0.32;
+  opacity: 0.24;
   background:
-    repeating-linear-gradient(90deg, rgba(255,255,255,0.16) 0 1px, transparent 1px 32px),
-    repeating-linear-gradient(0deg, rgba(255,255,255,0.16) 0 1px, transparent 1px 32px),
-    repeating-linear-gradient(90deg, rgba(255,235,59,0.16) 0 1px, transparent 1px 128px),
-    repeating-linear-gradient(0deg, rgba(33,150,243,0.14) 0 1px, transparent 1px 128px);
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.13) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.13) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(90deg, rgba(255,235,59,0.13) 0 1px, transparent 1px 128px),
+    repeating-linear-gradient(0deg, rgba(33,150,243,0.11) 0 1px, transparent 1px 128px);
 }
 
 .instrument-corners {
@@ -485,9 +485,9 @@ h3 {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,235,59,0.2) calc(50% - 0.5px), rgba(255,235,59,0.2) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
-    linear-gradient(0deg, transparent calc(50% - 0.5px), rgba(66,165,245,0.2) calc(50% - 0.5px), rgba(66,165,245,0.2) calc(50% + 0.5px), transparent calc(50% + 0.5px));
-  opacity: 0.58;
+    linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,235,59,0.16) calc(50% - 0.5px), rgba(255,235,59,0.16) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    linear-gradient(0deg, transparent calc(50% - 0.5px), rgba(66,165,245,0.16) calc(50% - 0.5px), rgba(66,165,245,0.16) calc(50% + 0.5px), transparent calc(50% + 0.5px));
+  opacity: 0.44;
 }
 
 .instrument-scale {
@@ -535,7 +535,7 @@ h3 {
   min-width: max-content;
   border: 1px solid rgba(243, 244, 246, 0.16);
   border-radius: 4px;
-  background: rgba(5, 5, 5, 0.76);
+  background: rgba(5, 5, 5, 0.82);
   padding: 4px 6px;
   backdrop-filter: blur(4px);
 }
@@ -573,7 +573,7 @@ h3 {
   min-height: 25px;
   border: 1px solid rgba(243, 244, 246, 0.16);
   border-radius: 4px;
-  background: rgba(5, 5, 5, 0.78);
+  background: rgba(5, 5, 5, 0.84);
   color: inherit;
   backdrop-filter: blur(4px);
 }

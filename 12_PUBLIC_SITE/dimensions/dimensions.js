@@ -26,8 +26,12 @@ const modeLabels = {
   bloch: "D3 Riemann/Bloch",
   horn: "D4 rapidity torus",
   burrisphere: "D5 dual projection",
+  ccc: "/6 CCC return",
   convergence: "/6 CCC return"
 };
+const animationMode = page.animationMode === "convergence"
+  ? "ccc"
+  : (page.animationMode || "model");
 
 function smooth01(x) {
   return x * x * (3 - 2 * x);
@@ -205,7 +209,7 @@ function makeMaterial(color, opacity = 1, wireframe = false) {
   });
 }
 
-function ensureInstrumentOverlay(mode = page.animationMode || "model") {
+function ensureInstrumentOverlay(mode = animationMode) {
   if (!visual || visual.querySelector(".instrument-overlay")) return null;
 
   const overlay = document.createElement("div");
@@ -222,6 +226,7 @@ function ensureInstrumentOverlay(mode = page.animationMode || "model") {
     <div class="instrument-telemetry">
       <span data-field="mode">${modeLabels[mode] || mode}</span>
       <span data-field="fps">-- fps</span>
+      <span data-field="sample">sample --</span>
       <span data-field="time">t+0.00s</span>
       <span data-field="phase">phase --</span>
       <span data-field="metric">sample --</span>
@@ -243,11 +248,13 @@ function updateInstrumentOverlay(overlay, t, fps) {
   if (!overlay) return;
   const timeField = overlay.querySelector('[data-field="time"]');
   const fpsField = overlay.querySelector('[data-field="fps"]');
+  const sampleField = overlay.querySelector('[data-field="sample"]');
   const phaseField = overlay.querySelector('[data-field="phase"]');
   const metricField = overlay.querySelector('[data-field="metric"]');
   const stateField = overlay.querySelector('[data-field="state"]');
   if (timeField) timeField.textContent = "t+" + t.toFixed(2) + "s";
   if (fpsField) fpsField.textContent = REDUCED_MOTION ? "static" : fps.toFixed(0) + " fps";
+  if (sampleField) sampleField.textContent = visual.dataset.instrumentSample || "sample --";
   if (phaseField) phaseField.textContent = visual.dataset.instrumentPhase || "phase --";
   if (metricField) metricField.textContent = visual.dataset.instrumentMetric || "sample --";
   if (stateField) stateField.textContent = visual.dataset.instrumentState || "locked frame";
@@ -350,6 +357,7 @@ function drawTitanCalculator(time = 0) {
     const dt = lastFrame ? Math.max(1, now - lastFrame) : 16.7;
     fps = fps ? fps * 0.9 + (1000 / dt) * 0.1 : 1000 / dt;
     lastFrame = now;
+    visual.dataset.instrumentSample = REDUCED_MOTION ? "sample static" : "Δt " + (dt / 1000).toFixed(3) + "s";
     const rate = playback && playback.rate ? parseFloat(playback.rate.value) / 100 : 1;
     if (!paused) simTime += dt * 0.001 * rate;
     if (stepSeconds > 0) {
@@ -1158,7 +1166,7 @@ function buildScene(mode, scene) {
     });
   }
 
-  if (mode === "convergence") {
+  if (mode === "ccc") {
     if (visual) visual.classList.add("ccc-visual");
     const readout = makeReadout();
     if (readout) {
@@ -1280,7 +1288,7 @@ async function boot() {
       throw new Error("Forced WebGL fallback");
     }
 
-    if (page.animationMode === "titans") {
+    if (animationMode === "titans") {
       drawTitanCalculator();
       return;
     }
@@ -1306,32 +1314,32 @@ async function boot() {
     controls.enableZoom = false;
     controls.autoRotate = false;
     controls.autoRotateSpeed = 0;
-    if (page.animationMode === "burrisphere") {
+    if (animationMode === "burrisphere") {
       // the sphere sits sandwiched between the two tangent planes (floor = 0,
       // top = ∞) — stand near the floor and look UP toward infinity
       camera.position.set(0, -0.7, 9.6);
       controls.target.set(0, 0.7, 0);
       controls.update();
     }
-    if (page.animationMode === "bloch") {
+    if (animationMode === "bloch") {
       // resting sphere + tangent floor at -r; landing reaches 2r·cot(θ/2)
       camera.position.set(0, 0.4, 5.8);
       controls.update();
     }
-    if (page.animationMode === "logline") {
+    if (animationMode === "logline") {
       // the line spans ±2.6 with the energy well above — front view, framed wide
       camera.position.set(0, 0.55, 5.9);
       controls.target.set(0, 0.45, 0);
       controls.update();
     }
-    if (page.animationMode === "horn") {
+    if (animationMode === "horn") {
       // keep the full torus readable beneath the compact HUD and slider
       camera.position.set(0, 0.32, 6.15);
       controls.target.set(0, 0.05, 0);
       controls.update();
     }
 
-    const overlay = ensureInstrumentOverlay(page.animationMode);
+    const overlay = ensureInstrumentOverlay(animationMode);
     const playback = ensureInstrumentControls();
     let paused = false;
     let simTime = 0;
@@ -1352,7 +1360,7 @@ async function boot() {
       syncInstrumentControls(playback, paused);
     }
     addReferenceFrame(scene);
-    const { root, update } = buildScene(page.animationMode, scene);
+    const { root, update } = buildScene(animationMode, scene);
 
     function resize() {
       const bounds = visual.getBoundingClientRect();
@@ -1367,6 +1375,7 @@ async function boot() {
       const dt = lastFrame ? Math.max(1, time - lastFrame) : 16.7;
       fps = fps ? fps * 0.9 + (1000 / dt) * 0.1 : 1000 / dt;
       lastFrame = time;
+      visual.dataset.instrumentSample = REDUCED_MOTION ? "sample static" : "Δt " + (dt / 1000).toFixed(3) + "s";
       const rate = playback && playback.rate ? parseFloat(playback.rate.value) / 100 : 1;
       if (!paused) simTime += dt * 0.001 * rate;
       if (stepSeconds > 0) {
@@ -1374,13 +1383,13 @@ async function boot() {
         stepSeconds = 0;
       }
       const t = simTime;
-      if (page.animationMode === "titans") {
+      if (animationMode === "titans") {
         root.rotation.z = 0;
-      } else if (page.animationMode === "muLimit") {
+      } else if (animationMode === "muLimit") {
         root.rotation.x = 0;
-      } else if (page.animationMode === "bloch") {
+      } else if (animationMode === "bloch") {
         root.scale.setScalar(1);
-      } else if (page.animationMode === "convergence") {
+      } else if (animationMode === "ccc") {
         root.rotation.z = 0;
       }
       update(t); // morphing / orbiting models (horn, burrisphere)
@@ -1397,6 +1406,7 @@ async function boot() {
     if (REDUCED_MOTION) {
       // static render: one frame now, re-render only on interaction/resize
       update(1.2); // pose the morphing/orbiting models at a representative frame
+      visual.dataset.instrumentSample = "sample static";
       resize();
       renderer.render(scene, camera);
       updateInstrumentOverlay(overlay, 1.2, 0);
