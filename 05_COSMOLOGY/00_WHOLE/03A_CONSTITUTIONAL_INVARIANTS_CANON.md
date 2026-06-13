@@ -30,7 +30,7 @@ Negative, code-enforceable invariants. The Greek `ou` (οὐ, "not") names the d
 | 4 | **K4** | *ou aichmalōsia* (no captivity) | Lock-in; exit costs above NAV (Grace Exit) | Voluntary participation; leave with everything |
 | 5 | **A7** | *ou pseudos* (no false-witness) | Unmarked claims above evidence | `[A][B][S][I][C]` evidence tiers on every claim |
 
-These five "fence the equator on both sides" of `P_node = Φ × V` under `P∞ = φ · ν = 1 on S²`: three guard against V-pole drift (η=0, K3, A7), two against Φ-pole drift (K2, K4). Removing any one produces a different organism, not a flawed one — they are *constitutive*, not regulatory (full argument in `03`).
+These five "fence the equator on both sides" of `P_node = Φ × V` under `P∞ = φ · ν = 1 on S²`: three guard against `ν` / viability-pole drift (legacy "V-pole": η=0, K3, A7), two against `φ` / coherence-pole drift (K2, K4). The register matters: lowercase `ν` names the sphere coordinate; uppercase `V` names finite-node D4 means-to-act inside `P_node = Φ × V`. Removing any one produces a different organism, not a flawed one — they are *constitutive*, not regulatory (full argument in `03`).
 
 ---
 
@@ -62,7 +62,7 @@ Three distinct registers share the letters **K** and **A**. Do not conflate them
 ## 4. Authority & propagation
 
 - **This doc is the canonical enumeration anchor for objective O1.** Companion philosophical treatment: [`03_THE_CONSTITUTIONAL_TOPOLOGY.md`](03_THE_CONSTITUTIONAL_TOPOLOGY.md).
-- **Geometric re-grounding (2026-05-31):** the "fence the equator on both sides" reading is canonized in [`../00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md`](../00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md) — the constitution as the *immune system of the Burrisphere*: the five refusals fence the two pole-runaways (η=0/K3/A7 → ν-pole, K2/K4 → Φ-pole), Ω is the gradient to the centre, each refusal is a *kept coupling*, and the K-numbering is a legacy artifact under the one law *"refuse closure, keep the coupling."* It rests on [`../00_THE_DYADIC_COUPLING_LAW.md`](../00_THE_DYADIC_COUPLING_LAW.md) (good = the bond `φ×ν`; evil = closure `η>0`). Both **defer to this doc for the count** — they are the geometric reading, not a re-rule.
+- **Geometric re-grounding (2026-05-31):** the "fence the equator on both sides" reading is canonized in [`../00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md`](../00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md) — the constitution as the *immune system of the Burrisphere*: the five refusals fence the two pole-runaways (η=0/K3/A7 -> `ν` / viability pole, K2/K4 -> `φ` / coherence pole), Ω is the gradient to the centre, each refusal is a *kept coupling*, and the K-numbering is a legacy artifact under the one law *"refuse closure, keep the coupling."* It rests on [`../00_THE_DYADIC_COUPLING_LAW.md`](../00_THE_DYADIC_COUPLING_LAW.md) (good = the bond `φ×ν`; evil = closure `η>0`). Both **defer to this doc for the count** — they are the geometric reading, not a re-rule.
 - The full census of the ~29 surfaces that enumerate the invariants, and the K3 banner-propagation plan (framework-root done first; cross-root runtime reconciliation as a flagged follow-up), is in [`../../00_META/00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md`](../../00_META/00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md).
 - Per K3, no five-side enumeration is silently rewritten and no six-side enumeration is silently overwritten — both are reconciled by dated banner to this anchor.
 

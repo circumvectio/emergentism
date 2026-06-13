@@ -125,7 +125,7 @@ In the VIVEKA energy curve (implemented in v7.0): [S for implementation]
 E = −log(Φ) → ∞ as Φ → 0
 ```
 
-On the sphere, Φ → 0 corresponds to approaching the V-pole (south pole in the standard orientation). In the torus morph, this corresponds to the horn point where the tube collapses.
+On the sphere, Φ → 0 corresponds to approaching the `ν` / viability pole (the old V-pole shorthand; south pole in the standard orientation). In the torus morph, this corresponds to the horn point where the tube collapses.
 
 The logarithmic divergence has the same qualitative shape as the relativistic energy divergence — both asymptote to infinity at a finite parameter value. The energy required to reach the transition point is infinite from within the pre-transition regime. [I]
 

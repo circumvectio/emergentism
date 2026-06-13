@@ -41,7 +41,7 @@ The dyadic law gives the whole moral field its shape: `φ · ν = 1` is a **prod
 
 ## 2. The five refusals fence the equator (the `03A` reading, made geometric)
 
-`03A` states it directly: the five "fence the equator on both sides — three guard against ν-pole drift (η=0, K3, A7), two against Φ-pole drift (K2, K4)." Read as the immune system of the sphere:
+`03A` states it directly: the five "fence the equator on both sides — three guard against `ν` / viability-pole drift (η=0, K3, A7), two against `φ` / coherence-pole drift (K2, K4)." Read as the immune system of the sphere:
 
 ### Fencing the south pole — against the ν-runaway (appetite / consumption / hoarding)
 

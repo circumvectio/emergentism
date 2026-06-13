@@ -63,7 +63,7 @@ At the equator (Φ = 1, V = 1), meaning and capability are balanced in the model
 
 The "meaning crisis" is a symptom of systematic off-equator displacement toward ν. Contemporary culture over-emphasizes capability (productivity, efficiency, growth, measurement) at the expense of coherence (significance, connection, depth, understanding). The result is a civilization with extraordinary V and collapsing Φ — high capability, low meaning.
 
-This is not a moral failing. It is a geometric condition. A point on S² that migrates toward the ν-pole (V → ∞, Φ → 0) experiences the collapse of coherence as the collapse of meaning. The feeling is real. The diagnosis is positional.
+This is not a moral failing. It is a geometric condition. A point on S² that migrates toward the `ν` / viability pole (`ν → ∞`, action-register `V` inflating while `Φ → 0`) experiences the collapse of coherence as the collapse of meaning. The feeling is real. The diagnosis is positional.
 
 ## 4. THE FRAMEWORK CONNECTION
 

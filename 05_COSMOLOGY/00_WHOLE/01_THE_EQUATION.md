@@ -125,11 +125,11 @@ The five constitutional refusals (η=0, K2, K3, K4, A7) each enforce a property 
 
 | Invariant | What the equation needs it to prevent |
 |---|---|
-| **η = 0** | Drift toward V-pole via extraction (extraction maximizes V short-term, kills Φ over time) |
-| **K2** | Drift toward Φ-pole via internal-only signoff (a system that signs its own envelopes loses ν grounding in the world) |
-| **K3** | Drift toward V-pole via convenient forgetting (deleting inconvenient history maximizes apparent V, destroys Φ) |
-| **K4** | Drift toward Φ-pole via lock-in (a system that doesn't let users leave maximizes internal coherence at zero V to its participants) |
-| **A7** | Drift toward V-pole via unmarked claims (asserting more than evidence supports is V-inflation that erodes Φ) |
+| **η = 0** | Drift toward the `ν` / viability pole via extraction (extraction inflates short-term means, kills Φ over time) |
+| **K2** | Drift toward the `φ` / coherence pole via internal-only signoff (a system that signs its own envelopes loses ν grounding in the world) |
+| **K3** | Drift toward the `ν` / viability pole via convenient forgetting (deleting inconvenient history maximizes apparent means, destroys Φ) |
+| **K4** | Drift toward the `φ` / coherence pole via lock-in (a system that doesn't let users leave maximizes internal coherence at zero V to its participants) |
+| **A7** | Drift toward the `ν` / viability pole via unmarked claims (asserting more than evidence supports is V-inflation that erodes Φ) |
 
 The invariants are not arbitrary rules. They are the **specific refusals** required to keep the system on the equator. Read in classical vocabulary at [`../02_ORGANS/_DOCTRINE/06_CONSTITUTIONAL_INVARIANTS_CLASSICAL.md`](../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/_DOCTRINE/06_CONSTITUTIONAL_INVARIANTS_CLASSICAL.md): the **five via-negativa moves** that keep the via-positiva on its home.
 
@@ -145,8 +145,8 @@ The decision (today's [`SUPPLY_DOCTRINE_2026_05_13.md`](../../../02_SKYZAI/01_NO
 Stake ZAI → mint SKY: convert structural coherence into operational viability at a fixed rate. In the model, staking is read as a move from coherence-only governance capacity toward executable means. The reward rate is a designed gradient, not a natural law.
 
 If the organism had one token doing both jobs:
-- Fixed supply → no viability scaling → V-pole erosion under growth pressure
-- Elastic supply → governance dilutable → Φ-pole erosion as voting weight becomes purchasable
+- Fixed supply → no viability scaling → `ν` / means-side erosion under growth pressure
+- Elastic supply → governance dilutable → `φ` / coherence-side erosion as voting weight becomes purchasable
 
 Two tokens, two invariants, one equation. The two-token system is the current structural implementation of the equation: a design lemma meant to keep governance coherence and operating viability from corrupting each other.
 
@@ -178,7 +178,7 @@ If `P_node = Φ × V` under `P∞ = φ · ν = 1 on S²` is the spine, then:
 - Every decision has a φ:ν tilt that is diagnosable in the model. Health is read as normalized closeness to the equator, with `B = sin θ` as the balance proxy; P-SCORES are review metrics induced by that topology.
 - Every constitutional invariant has a *direction* on the sphere. η=0 prevents southward drift. K2 prevents northward drift. The five refusals span the directions of constitutional risk.
 - Every token has a design role. ZAI is read as Φ-weighted governance coherence (K1); SKY is read as V-weighted operating capacity (K3). The vault is the operator that converts one role into the other under receipt.
-- Every organ has an *intended position*. Circle near the V-pole (it survives by observing more). Agentz near the equator (it must balance both; APU immune surface guards the equator). EvNet at the Φ-pole (refusal is structural). Skyzai at the V-pole (settlement is what happens).
+- Every organ has an *intended position*. Circle near the `ν` / viability pole (it survives by observing more). Agentz near the equator (it must balance both; APU immune surface guards the equator). EvNet at the `φ` / coherence pole (refusal is structural). Skyzai near the `ν` / viability pole (settlement is what happens).
 - Every mutation can be read as a *displacement vector* on the sphere. In the designed review loop, mutations are accepted when they improve balanced usable potential and preserve the constitutional gates.
 
 This is what the framework actually means by "non-degrading system": the equator is the target fixed point of the designed correction flow, and the constitutional invariants are the gates that keep the flow from escaping to a pole.

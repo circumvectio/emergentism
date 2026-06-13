@@ -77,13 +77,13 @@ The five refusals are *directional* — each prevents drift toward a specific fa
 
 | Refusal | Direction it forbids | Pathology at that pole |
 |---|---|---|
-| η = 0 | Toward the V-pole by allowing `η_move > 0` extraction | Pure-V organism: hedge fund, conquest empire, ad-funded platform. Survives by taking. Has no coherence. |
-| K2 | Toward the Φ-pole via internal-only signoff | Pure-Φ organism: regulatory council, philosophy department, blockchain with no users. Coherent. Has no viability. |
-| K3 | Toward the V-pole via amnesia | Edited-history regime. Survives by forgetting inconvenient losses. Coherence destroyed retroactively. |
-| K4 | Toward the Φ-pole via lock-in | Cult / closed society. Internally coherent. Externally a captivity arrangement. |
-| A7 | Toward the V-pole via inflated claims | Pump-and-dump / hype-driven enterprise. Survives short-term on overstatement. Coherence destroyed on the first audit. |
+| η = 0 | Toward the `ν` / viability pole by allowing `η_move > 0` extraction | Pure-means organism: hedge fund, conquest empire, ad-funded platform. Survives by taking. Has no coherence. |
+| K2 | Toward the `φ` / coherence pole via internal-only signoff | Pure-coherence organism: regulatory council, philosophy department, blockchain with no users. Coherent. Has no viability. |
+| K3 | Toward the `ν` / viability pole via amnesia | Edited-history regime. Survives by forgetting inconvenient losses. Coherence destroyed retroactively. |
+| K4 | Toward the `φ` / coherence pole via lock-in | Cult / closed society. Internally coherent. Externally a captivity arrangement. |
+| A7 | Toward the `ν` / viability pole via inflated claims | Pump-and-dump / hype-driven enterprise. Survives short-term on overstatement. Coherence destroyed on the first audit. |
 
-Three refusals prevent V-pole drift (the `η = 0` refusal, K3, A7). Two prevent Φ-pole drift (K2, K4). The asymmetry is real: there are more ways to maximize V at the cost of Φ than the reverse, because V failures look like "growth" until they hit the wall. The register must stay explicit: `η = 0` is the action fence; extraction is the drift it forbids.
+Three refusals prevent `ν`-pole drift (the old shorthand was "V-pole": the `η = 0` refusal, K3, A7). Two prevent `φ`-pole drift (K2, K4). The asymmetry is real: there are more ways to inflate apparent means at the cost of coherence than the reverse, because means-runaway failures look like "growth" until they hit the wall. The register must stay explicit: lowercase `ν` is the sphere coordinate, uppercase `V` is finite-node D4 means-to-act in `P_node = Φ × V`, and `η = 0` is the action fence; extraction is the drift it forbids.
 
 **Together, the five refusals fence the equator on both sides.** The equator is not a single point but a one-dimensional manifold (the great circle); the refusals are the gates that keep the system on it.
 
@@ -105,7 +105,7 @@ The seven castes (L1–L7) each have a default Φ:ν position. The topology cons
 
 The topology forbids inversions. **L1 cannot decide** (it lacks Φ; would commit prematurely). **L7 cannot execute** (it lacks ν; would freeze in deliberation). **L4 cannot redesign** (would write into the same pathology it's trying to escape). The caste topology *is* the Φ-ν topology projected onto cognitive function.
 
-This is why "calling the wrong caste" is a constitutional violation, not just an inefficiency. Using L1 for an L4 decision means deciding without Φ — collapsing toward the V-pole. Using L7 for an L1 categorization means freezing on every input — collapsing toward the Φ-pole.
+This is why "calling the wrong caste" is a constitutional violation, not just an inefficiency. Using L1 for an L4 decision means deciding without Φ — collapsing toward the `ν` / means pole. Using L7 for an L1 categorization means freezing on every input — collapsing toward the `φ` / coherence pole.
 
 The Rosetta dispatch table is the topology made operational.
 

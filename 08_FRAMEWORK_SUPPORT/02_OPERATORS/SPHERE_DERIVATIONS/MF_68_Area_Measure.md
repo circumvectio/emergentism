@@ -32,7 +32,7 @@ rosetta:
 
 ## ABSTRACT
 
-The Riemann sphere S² has total surface area 4π. The projected value function P_band(θ) = ½sin(2θ) achieves its maximum P_band,max = ½ at the equator (θ = π/4 colatitude in the standard parametrization where θ measures from the V-pole). For any threshold k, the region {P_band ≥ k} is a band of latitudes symmetric about the equator.
+The Riemann sphere S² has total surface area 4π. The projected value function P_band(θ) = ½sin(2θ) achieves its maximum P_band,max = ½ at the equator (θ = π/4 colatitude in the standard parametrization where θ measures from the `ν` / viability pole; older notes called this the V-pole). For any threshold k, the region {P_band ≥ k} is a band of latitudes symmetric about the equator.
 
 This paper computes the exact fraction of S² where P_band exceeds any given threshold. The result: the region P_band ≥ 0.4 occupies only 44.7% of the sphere. The region P_band ≥ 0.45 occupies only 30.7%. The region P_band ≥ 0.49 occupies only 11.9%.
 
@@ -44,7 +44,7 @@ Under random uniform distribution on S², the probability of landing in a high p
 
 ### 1.1 Setup
 
-Using the sphere coordinate system from MF-51, with colatitude θ measured from the "south" pole (• = 0, the V-pole) to the "north" pole (○ = ∞, the Φ-pole): [A]
+Using the sphere coordinate system from MF-51, with colatitude θ measured from the "south" pole (• = 0, the `ν` / viability pole; legacy V-pole) to the "north" pole (○ = ∞, the `φ` / coherence pole): [A]
 
 ```
 Φ(θ) = sin(θ)
@@ -225,7 +225,7 @@ The distribution is peaked in the mid-latitudes. Most systems, most of the time,
 
 ### 4.2 The Narrowness of L4
 
-L4 (the integrated apex) occupies the narrowest band of any named level. L1 (survival) occupies a broad band near the V-pole. L7 (boundary/transcendent) occupies a broad band near the Φ-pole. L4, at the equator, is squeezed between them.
+L4 (the integrated apex) occupies the narrowest band of any named level. L1 (survival) occupies a broad band near the `ν` / viability pole. L7 (boundary/transcendent) occupies a broad band near the `φ` / coherence pole. L4, at the equator, is squeezed between them.
 
 This is why L4 is the hardest level to maintain. Not because balance is difficult in principle, but because the band is narrow in practice. Any direction of deviation leads to a wider, more accommodating region. The path of least resistance is always away from the equator. [I]
 
