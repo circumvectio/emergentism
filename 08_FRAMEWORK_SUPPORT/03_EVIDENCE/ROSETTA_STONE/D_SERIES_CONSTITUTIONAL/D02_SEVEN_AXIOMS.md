@@ -121,7 +121,7 @@ evidence_tier: "[S] for framework-defining axioms; [A] where mathematical proof 
 | 2 | Phenotype | Organism | D3 |
 | 3 | Extended Phenotype | Niche | D4 |
 | 4 | Memotype | Mind | D5 |
-| 5 | Egregorotype | Civilisation | D6 |
+| 5 | Egregorotype | Civilisation | D5-limit |
 
 **Falsification:** All collective phenomena reduce entirely to individual decisions with no emergent properties.
 

@@ -283,9 +283,11 @@ The cosmological cycle is not only spatial (D0→D6→D0). It is TEMPORAL — ea
 | Phenotypic | Phenotype | D3-D4 | Complex organism | ~500 Myr |
 | Anthropocene | Extended Phenotype | D4 | Tools, cities | ~10 Kyr |
 | Memotypic | Memotype | D5 | Mind, empire, internet | ~5 Kyr |
-| **Egregorocene** | **Egregorotype** | **D6** | **DAC, hybrid sovereign** | **Beginning now** |
+| **Egregorocene** | **Egregorotype** | **D5-limit** | **DAC, hybrid sovereign** | **Beginning now** |
 
 Each era doesn't REPLACE the previous — it DOMINATES it. The primary selection pressure shifts upward through the stack. The stack IS history read vertically.
+
+Boundary note (2026-06-14): the Egregorocene is now read as upper-D5 / D5-limit, not D6. D6 remains the return/closure boundary where the completed image is released back to D0.
 
 See: 17_THE_EGREGOROCENE.md, 22_THE_TELEOLOGY.md, 23_THE_DAC.md.
 

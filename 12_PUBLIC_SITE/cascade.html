@@ -84,7 +84,7 @@ try {
 const REDUCED_MOTION = !!(window.matchMedia
   && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
 const canvas = document.getElementById('scene');
-const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true });
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 renderer.setSize(innerWidth, innerHeight);
 
@@ -305,6 +305,7 @@ function syncInstrument(){
     'CASCADE INSTRUMENT\n' +
     'stage ' + cur + '/' + (STAGES.length - 1) + ' · ' + stageName(cur) + ' · ' + (playing ? 'RUN' : 'HOLD') + '\n' +
     'phase = ' + phase.toFixed(2) + ' · morph target = ' + morphTarget.toFixed(2) + ' · morph actual = ' + morphCur.toFixed(2) + '\n' +
+    'morph lag |target-actual| = ' + Math.abs(morphTarget - morphCur).toFixed(3) + ' · clocked stage dwell = ' + STAGE_SECS.toFixed(1) + 's\n' +
     'frame = ' + (REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps')) + '\n' +
     projectionState + '\n' +
     'sequence: line → plane → sphere → horn → Burrisphere';

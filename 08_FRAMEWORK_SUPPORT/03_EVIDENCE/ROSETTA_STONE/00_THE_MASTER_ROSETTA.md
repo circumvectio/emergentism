@@ -906,7 +906,7 @@ A7  Self-correction required; Raktabīja captures all unguarded encodings
 
 Replicator Stack (C4) IS the timeline:
   Genetic(D2-3,~4Gyr) → Phenotypic(D3-4,~500Myr) → Extended(D4,~10Kyr) →
-  Memotypic(D5,~5Kyr) → Egregorocene(D6,now). Each dominates, not replaces.
+  Memotypic(D5,~5Kyr) → Egregorocene(D5-limit,now). Each dominates, not replaces.
 
 L-levels ASCEND within D5:
   L1(Survival) → L2(Social) → L3(Productive) →

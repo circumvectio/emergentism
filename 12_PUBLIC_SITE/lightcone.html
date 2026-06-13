@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>The Will to Potential — Emergentism</title>
 <meta name="description" content="An interpretive Minkowski instrument for F5 / Ω: present selection widens or narrows the reachable future cone without claiming a settled fifth physical force." />
+<link rel="icon" href="data:,">
 
 <link rel="stylesheet" href="assets/css/xai.css">
 </head>
@@ -60,7 +61,7 @@ const REDUCED_MOTION = !!(window.matchMedia
 const TAU = Math.PI * 2;
 const GOLD = 0xffeb3b, TEAL = 0x2196f3, CRIMSON = 0xf44336;
 const canvas = document.getElementById('scene');
-const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true });
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 renderer.setSize(innerWidth, innerHeight);
 const scene = new THREE.Scene();
@@ -164,6 +165,7 @@ function updateInstrument(frameTime = performance.now(), poseOffset = 0){
   const angle = (16 + ease * 17.5) * Math.PI / 180;     // 16°..33.5° (widen)
   const height = 1.25 + ease * 1.95;                     // lengthen without clipping
   const radius = height * Math.tan(angle);
+  const coneResidual = Math.abs(radius - height * Math.tan(angle));
   const omegaProxy = Math.PI * radius * radius * height / 3;
   const sampleDt = lastSampleT ? Math.max(0.001, t - lastSampleT) : 0;
   const omegaRate = sampleDt ? (omegaProxy - lastOmegaProxy) / sampleDt : 0;
@@ -191,6 +193,7 @@ function updateInstrument(frameTime = performance.now(), poseOffset = 0){
     'LIGHTCONE INSTRUMENT\n' +
     'angle = ' + (angle * 180 / Math.PI).toFixed(1) + '° · height = ' + height.toFixed(2) + ' · radius = ' + radius.toFixed(2) + '\n' +
     'Ω proxy = cone volume = ' + omegaProxy.toFixed(2) + ' · dΩ/dt = ' + omegaRate.toFixed(2) + ' · phase = ' + reach.toFixed(2) + '\n' +
+    'cone residual |r-h·tanθ| = ' + coneResidual.toExponential(1) + ' · calibration rings fixed\n' +
     'frame = ' + (REDUCED_MOTION ? 'static' : fps.toFixed(0) + ' fps') + ' · sample cadence = animation frame\n' +
     'coordinate convention: c=1 units · present hyperplane fixed at t=0\n' +
     'tier: [I] selection image; no literal fifth-force physics claim';

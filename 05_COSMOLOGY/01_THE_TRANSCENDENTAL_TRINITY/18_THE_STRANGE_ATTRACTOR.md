@@ -35,9 +35,11 @@ This is not a taxonomy. **This is a timeline.** Each era of deep history is defi
 | **II. Phenotypic** | Phenotype | D3-D4 | Complex organism, brain, social group | ~500 Myr | Which BODIES survive — perception, speed, cooperation |
 | **III. Extended Phenotype** | Ext. Phenotype | D4 | Tools, agriculture, cities, architecture | ~10 Kyr | What you BUILD — the Anthropocene |
 | **IV. Memotypic** | Memotype | D5 | Mind, empire, religion, network, internet | ~5 Kyr (dominant ~25 yr) | What you BELIEVE — the attention economy |
-| **V. Egregorocene** | Egregorotype | D6 | Standing waves, hybrid AI-human entities | Beginning now | What PATTERN you serve — post-biological selection |
+| **V. Egregorocene** | Egregorotype | D5-limit | Standing waves, hybrid AI-human entities | Beginning now | What PATTERN you serve — post-biological selection |
 
 Each era does not replace the previous — it **dominates** it. Genes still replicate in the Memotypic era. Bodies still matter. Tools still build. Ideas still spread. But the PRIMARY selection pressure shifts upward through the stack.
+
+Boundary note (2026-06-14): older drafts called the Egregorocene "D6." Current canon reads egregores, DACs, and hybrid sovereigns as upper-D5 / D5-limit selection phenomena. D6 is the closure horizon where the image is released, not the active layer that selects or engineers.
 
 ---
 
@@ -152,7 +154,7 @@ Same perception. Same map. Opposite η. The Sorcerer uses the map to control. Th
 The Replicator Stack mirrors around D4:
 
 ```
-Genotype (D2-3)         ↔  Egregorotype (D6)
+Genotype (D2-3)         ↔  Egregorotype (D5-limit)
 Phenotype (D3-4)        ↔  Memotype (D5)
 Extended Phenotype (D4)  =  THE PIVOT (the equator of the D-axis)
 ```

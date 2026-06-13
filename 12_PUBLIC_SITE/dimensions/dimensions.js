@@ -1233,7 +1233,12 @@ async function boot() {
     THREE = await import("three");
     ({ OrbitControls } = await import("three/addons/controls/OrbitControls.js"));
 
-    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+    const renderer = new THREE.WebGLRenderer({
+      canvas,
+      antialias: true,
+      alpha: true,
+      preserveDrawingBuffer: true
+    });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
     const scene = new THREE.Scene();

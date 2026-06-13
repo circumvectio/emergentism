@@ -400,13 +400,20 @@
     const phase = REDUCED_MOTION ? 0 : (t % STEP_MS) / STEP_MS;
     const activeNode = nodes[active];
     const nextNode = nodes[(active + 1) % nodes.length];
+    const residualProxy = Math.max(0.04, 0.78 - active * 0.052 - phase * 0.028);
+    const l4Distance = Math.min(
+      Math.abs(active - 3),
+      Math.abs(active - 7),
+      Math.abs(active - 3 + nodes.length),
+      Math.abs(active - 7 + nodes.length)
+    );
     const overlay = visual ? visual.querySelector('.soul-loop-overlay') : null;
     if (overlay) {
       const fields = {
         fps: REDUCED_MOTION ? 'static' : fps.toFixed(0) + ' fps',
         time: 't+' + (t / 1000).toFixed(2) + 's',
         phase: 'phase ' + phase.toFixed(2),
-        metric: 'seg ' + active + '/' + (nodes.length - 1),
+        metric: 'residual ' + residualProxy.toFixed(3),
         state: 'L4 return gate'
       };
       Object.entries(fields).forEach(([key, value]) => {
@@ -486,7 +493,7 @@
       ctx.lineTo(x, stripY + stripH);
       ctx.stroke();
     }
-    const errorFloor = Math.max(0.12, 0.82 - active * 0.055);
+    const errorFloor = residualProxy;
     ctx.strokeStyle = '#42A5F5';
     ctx.beginPath();
     for (let i = 0; i <= 72; i += 1) {
@@ -506,7 +513,8 @@
       readout.textContent =
         'SOUL LOOP · correction assay\n' +
         'seg ' + active + '/' + (nodes.length - 1) + ' · ' + activeNode.label + ':' + activeNode.title + ' → ' + nextNode.label + ':' + nextNode.title + '\n' +
-        'phase ' + phase.toFixed(2) + ' · target L4 · B = 1\n' +
+        'phase ' + phase.toFixed(2) + ' · target L4 · B = 1 · L4 distance ' + l4Distance + '\n' +
+        'residual proxy ' + residualProxy.toFixed(3) + ' · kill criterion: non-decreasing residual forces method revision\n' +
         'run gather/check/serve/see/dissolve/preserve';
     }
 

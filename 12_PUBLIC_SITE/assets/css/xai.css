@@ -673,6 +673,14 @@ body.soul-loop-instrument .visual-labels .bottom {
   color: var(--gold);
 }
 
+body.soul-loop-instrument .visual-labels .top {
+  top: 64px;
+}
+
+body.soul-loop-instrument .visual-labels .bottom {
+  bottom: 28px;
+}
+
 .instrument-overlay {
   position: absolute;
   inset: 0;
@@ -1737,6 +1745,10 @@ pre.glyph-block {
     font-size: 8px;
   }
 
+  body.soul-loop-instrument .visual-labels .label {
+    display: none;
+  }
+
   body.dimension-page .model-slider {
     left: 0.75rem !important;
     right: 0.75rem !important;
@@ -1836,7 +1848,7 @@ pre.glyph-block {
     repeating-linear-gradient(90deg, rgba(255,235,59,.13) 0 1px, transparent 1px 128px),
     repeating-linear-gradient(0deg, rgba(33,150,243,.12) 0 1px, transparent 1px 128px);
   box-shadow: inset 0 0 0 1px rgba(255,255,255,.035);
-  opacity: .66;
+  opacity: .58;
 }
 .lab-frame::before,
 .lab-frame::after {
@@ -1865,8 +1877,8 @@ pre.glyph-block {
 .vignette {
   position: fixed; inset: 0; z-index: 1; pointer-events: none;
   background:
-    linear-gradient(180deg, transparent 58%, rgba(0,0,0,.28) 100%),
-    linear-gradient(90deg, rgba(0,0,0,.18), transparent 16%, transparent 84%, rgba(0,0,0,.18));
+    linear-gradient(180deg, transparent 66%, rgba(0,0,0,.18) 100%),
+    linear-gradient(90deg, rgba(0,0,0,.1), transparent 18%, transparent 82%, rgba(0,0,0,.1));
 }
 body > span.brand {
   position: fixed;
@@ -1970,11 +1982,11 @@ body > a.exit:hover {
   border: 1px solid var(--border);
   border-left: 2px solid var(--gold);
   border-radius: var(--shape-md);
-  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
   color: var(--text-muted);
   padding: 10px 12px;
   white-space: pre-line;
-  font: 700 11px/1.55 var(--font-mono);
+  font: 700 10.5px/1.5 var(--font-mono);
   font-variant-numeric: tabular-nums;
   backdrop-filter: blur(6px);
   pointer-events: none;

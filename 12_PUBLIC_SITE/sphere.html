@@ -44,6 +44,7 @@
   <div class="row"><span class="k">Balance B = sin θ</span><span class="v" id="p-b">1.000</span></div>
   <div class="row"><span class="k">θ / chart</span><span class="v" id="p-theta">90.0°</span></div>
   <div class="row"><span class="k">φ · ν</span><span class="v" id="p-chart">1.00 · 1.00</span></div>
+  <div class="row"><span class="k">residual</span><span class="v" id="p-residual">0.0e+0</span></div>
   <div class="row"><span class="k">Action / chart</span><span class="v" id="p-act">balance dΦ/Φ = dV/V</span></div>
   <div class="row"><span class="k">P∞ = φ · ν</span><span class="v">1</span></div>
   <label class="position-scrub" for="position-scrub">
@@ -100,7 +101,7 @@ const POS = [
 ];
 
 const canvas = document.getElementById('scene');
-const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true });
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 renderer.setSize(innerWidth, innerHeight);
 const scene = new THREE.Scene();
@@ -181,7 +182,7 @@ POS.forEach((p, i) => {
 });
 
 // info panel
-const els = { lvl:'p-lvl', op:'p-op', tier:'p-tier', ology:'p-ology', q:'p-q', b:'p-b', theta:'p-theta', chart:'p-chart', act:'p-act' };
+const els = { lvl:'p-lvl', op:'p-op', tier:'p-tier', ology:'p-ology', q:'p-q', b:'p-b', theta:'p-theta', chart:'p-chart', residual:'p-residual', act:'p-act' };
 const positionScrub = document.getElementById('position-scrub');
 const stageReadout = document.getElementById('stage-readout');
 const scanToggle = document.getElementById('scan-toggle');
@@ -205,6 +206,8 @@ function select(i, manual = false){
   const phi = 1 / Math.tan(theta / 2);
   const nu = Math.tan(theta / 2);
   const balance = Math.sin(theta);
+  const reciprocalResidual = Math.abs(phi * nu - 1);
+  const balanceError = Math.abs(1 - balance);
   document.getElementById(els.lvl).textContent = `${p.L} · ${p.caste}`;
   document.getElementById(els.op).textContent = p.op;
   const t = document.getElementById(els.tier); t.textContent = p.tierNote;
@@ -215,12 +218,14 @@ function select(i, manual = false){
   document.getElementById(els.b).textContent = p.B;
   document.getElementById(els.theta).textContent = p.phi.toFixed(1) + '°';
   document.getElementById(els.chart).textContent = phi.toFixed(2) + ' · ' + nu.toFixed(2);
+  document.getElementById(els.residual).textContent = '|φν−1| ' + reciprocalResidual.toExponential(1) + ' · |1−B| ' + balanceError.toFixed(3);
   document.getElementById(els.act).textContent = p.act;
   if (stageReadout) stageReadout.textContent =
     'BURRISPHERE INSTRUMENT\n' +
     p.L + ' · ' + p.op + ' · ' + p.ology + '\n' +
     'θ = ' + p.phi.toFixed(1) + '° · φ = ' + phi.toFixed(2) + ' · ν = ' + nu.toFixed(2) + ' · φν = ' + (phi * nu).toFixed(3) + '\n' +
-    'B = sinθ = ' + balance.toFixed(3) + ' · selected row = ' + i + '/6 · ' + (scanRunning ? 'SCAN' : 'HOLD') + '\n' +
+    'B = sinθ = ' + balance.toFixed(3) + ' · |φν−1| = ' + reciprocalResidual.toExponential(1) + ' · |1−B| = ' + balanceError.toFixed(3) + '\n' +
+    'selected row = ' + i + '/6 · ' + (scanRunning ? 'SCAN' : 'HOLD') + '\n' +
     'frame = ' + (REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps')) + ' · calibrated latitude rings visible\n' +
     'tier: [S] sphere chart; [I] operator reading';
   markers.forEach((m, k) => m.scale.setScalar(k === i ? 1.5 : 1));
