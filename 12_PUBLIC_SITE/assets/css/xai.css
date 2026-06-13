@@ -2096,6 +2096,55 @@ body.sphere-instrument #stage-readout {
   left: 32px;
   right: auto;
 }
+body.lightcone-instrument .meter {
+  position: fixed;
+  left: 32px;
+  top: 136px;
+  z-index: 4;
+  width: min(320px, calc(100vw - 64px));
+  border: 1px solid var(--border);
+  border-radius: var(--shape-md);
+  background: color-mix(in srgb, var(--bg) 84%, transparent);
+  color: var(--text-muted);
+  padding: 10px 12px;
+  font: 700 11px/1 var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  backdrop-filter: blur(6px);
+}
+
+body.lightcone-instrument .meter .bar {
+  height: 6px;
+  margin-top: 8px;
+  border: 1px solid rgba(243,244,246,.18);
+  border-radius: var(--shape-full);
+  background:
+    repeating-linear-gradient(90deg, rgba(243,244,246,.22) 0 1px, transparent 1px 8px),
+    rgba(243,244,246,.05);
+  overflow: hidden;
+}
+
+body.lightcone-instrument .meter .fill {
+  height: 100%;
+  width: 20%;
+  background: linear-gradient(90deg, rgba(33,150,243,.5), rgba(255,235,59,.82));
+}
+
+body.lightcone-instrument .tier {
+  position: fixed;
+  left: 32px;
+  top: 204px;
+  z-index: 4;
+  width: min(520px, calc(100vw - 64px));
+  margin: 0;
+  border: 1px solid var(--border);
+  border-left: 2px solid rgba(66, 165, 245, 0.8);
+  border-radius: var(--shape-md);
+  background: color-mix(in srgb, var(--bg) 84%, transparent);
+  color: var(--text-muted);
+  padding: 9px 12px;
+  font: 700 10.5px/1.45 var(--font-mono);
+  backdrop-filter: blur(6px);
+}
 #enter {
   position: fixed;
   left: 32px;
@@ -2168,6 +2217,21 @@ button.nav:hover {
   color: var(--gold);
   border-color: var(--gold);
 }
+.standalone-controls {
+  position: fixed;
+  top: auto;
+  right: 32px;
+  bottom: 32px;
+  left: auto;
+  z-index: 4;
+  grid-template-columns: auto auto minmax(104px, 140px);
+}
+
+.standalone-controls button,
+.standalone-controls label {
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+}
+
 #timeline-shell {
   position: fixed;
   left: 50%;
@@ -2287,6 +2351,14 @@ button.nav:hover {
     right: 18px;
     bottom: 18px;
   }
+  .standalone-controls {
+    position: fixed;
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+    width: auto;
+    grid-template-columns: auto auto minmax(0, 1fr);
+  }
   body.sphere-instrument #scan-toggle {
     top: 206px;
     bottom: auto;
@@ -2316,6 +2388,25 @@ button.nav:hover {
     right: 18px;
     bottom: 18px;
     max-width: none;
+  }
+  body.lightcone-instrument .meter {
+    left: 18px;
+    right: 18px;
+    top: 216px;
+    width: auto;
+  }
+  body.lightcone-instrument .tier {
+    left: 18px;
+    right: 18px;
+    top: 270px;
+    width: auto;
+    max-height: 58px;
+    overflow: hidden;
+  }
+  body.lightcone-instrument .title {
+    bottom: 58px;
+    max-height: 130px;
+    overflow: hidden;
   }
 }
 /* hidden until the page's own catch sets display:flex */

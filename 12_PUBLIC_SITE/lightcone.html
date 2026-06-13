@@ -39,6 +39,14 @@
 <div class="meter"><span id="m-label">reachable future</span><div class="bar"><div class="fill" id="m-fill"></div></div></div>
 <div class="tier">[I] illustrative — a Minkowski image of F5/Ω routed through the L1 Teleology lane; not a literal settled-physics force.</div>
 <div id="stage-readout" aria-live="polite">LIGHTCONE INSTRUMENT</div>
+<div class="instrument-controls standalone-controls" id="lightcone-controls">
+  <button type="button" id="lc-hold" aria-pressed="false">HOLD</button>
+  <button type="button" id="lc-step">STEP</button>
+  <label>
+    <span>rate</span>
+    <input id="lc-rate" type="range" min="25" max="150" step="5" value="100" aria-label="lightcone simulation rate" />
+  </label>
+</div>
 <div id="fallback"><div class="g">↑</div><p style="max-width:40ch;line-height:1.7">WebGL could not start. F5/Ω is shown here as an interpretive selection register: present action widens or narrows the reachable future cone.</p><a href="index.html">Enter the framework →</a></div>
 
 <!-- Three.js is self-hosted under ./vendor/three-0.160.0/ — no external CDN.
@@ -145,19 +153,51 @@ function coneSegments(height, angle, dir){ // dir +1 future, -1 past
 
 const mFill = document.getElementById('m-fill'), mLabel = document.getElementById('m-label');
 const readout = document.getElementById('stage-readout');
-const clock = new THREE.Clock();
-let t = 0;
+const holdButton = document.getElementById('lc-hold');
+const stepButton = document.getElementById('lc-step');
+const rateInput = document.getElementById('lc-rate');
+let simTime = 0;
+let paused = false;
+let stepSeconds = 0;
 let lastOmegaProxy = 0;
 let lastSampleT = 0;
 let lastFrame = 0;
 let fps = 0;
-function updateInstrument(frameTime = performance.now(), poseOffset = 0){
+
+function syncPlayback() {
+  if (!holdButton) return;
+  holdButton.textContent = paused ? 'RUN' : 'HOLD';
+  holdButton.setAttribute('aria-pressed', paused ? 'true' : 'false');
+}
+
+if (holdButton) {
+  holdButton.addEventListener('click', () => {
+    paused = !paused;
+    syncPlayback();
+  });
+}
+if (stepButton) {
+  stepButton.addEventListener('click', () => {
+    paused = true;
+    stepSeconds += 1 / 12;
+    syncPlayback();
+  });
+}
+syncPlayback();
+
+function updateInstrument(frameTime = performance.now(), poseOffset = null){
   const now = typeof frameTime === 'number' ? frameTime : performance.now();
   const frameDt = lastFrame ? Math.max(1, now - lastFrame) : 16.7;
   fps = fps ? fps * 0.9 + (1000 / frameDt) * 0.1 : 1000 / frameDt;
   lastFrame = now;
-  const delta = poseOffset || clock.getDelta();
-  t += delta;
+  const rate = rateInput ? parseFloat(rateInput.value) / 100 : 1;
+  if (poseOffset !== null) simTime += poseOffset;
+  else if (!REDUCED_MOTION && !paused) simTime += frameDt * 0.001 * rate;
+  if (stepSeconds > 0) {
+    simTime += stepSeconds;
+    stepSeconds = 0;
+  }
+  const t = REDUCED_MOTION ? simTime || 1.2 : simTime;
   // F5/Ω drive in the interpretive register: the cone widens and lengthens on
   // a measured cycle, without claiming a new settled physical force.
   const cyc = (Math.sin(t * 0.32) + 1) / 2;            // 0..1 calibrated sweep
@@ -194,7 +234,7 @@ function updateInstrument(frameTime = performance.now(), poseOffset = 0){
     'angle = ' + (angle * 180 / Math.PI).toFixed(1) + '° · height = ' + height.toFixed(2) + ' · radius = ' + radius.toFixed(2) + '\n' +
     'Ω proxy = cone volume = ' + omegaProxy.toFixed(2) + ' · dΩ/dt = ' + omegaRate.toFixed(2) + ' · phase = ' + reach.toFixed(2) + '\n' +
     'cone residual |r-h·tanθ| = ' + coneResidual.toExponential(1) + ' · calibration rings fixed\n' +
-    'frame = ' + (REDUCED_MOTION ? 'static' : fps.toFixed(0) + ' fps') + ' · sample cadence = animation frame\n' +
+    'frame = ' + (REDUCED_MOTION ? 'static' : fps.toFixed(0) + ' fps') + ' · ' + (paused ? 'held sample' : 'run') + ' · rate = ' + rate.toFixed(2) + 'x\n' +
     'coordinate convention: c=1 units · present hyperplane fixed at t=0\n' +
     'tier: [I] selection image; no literal fifth-force physics claim';
   controls.update();
