@@ -632,7 +632,7 @@ function makeReadout() {
       "color:var(--text,#F3F4F6);pointer-events:none;letter-spacing:0;white-space:pre-line;text-align:left;" +
       "background:rgba(5,5,5,.78);padding:9px 12px;" +
       "border:1px solid rgba(255,255,255,.14);border-left:2px solid var(--accent,#FFEB3B);border-radius:6px;backdrop-filter:blur(4px);" +
-      "box-shadow:0 10px 28px rgba(0,0,0,.28)";
+      "box-shadow:0 6px 18px rgba(0,0,0,.16)";
     visual.appendChild(el);
   }
   return el;
