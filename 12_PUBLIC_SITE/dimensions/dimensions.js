@@ -712,7 +712,7 @@ function buildScene(mode, scene) {
     const quadTint = (sx, sz, color) => {
       const m = new THREE.Mesh(
         new THREE.PlaneGeometry(U, U),
-        new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 0.06, side: THREE.DoubleSide, depthWrite: false }));
+        new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 0.14, side: THREE.DoubleSide, depthWrite: false }));
       m.rotation.x = -Math.PI / 2;
       m.position.set(sx * U / 2, r + 0.004, sz * U / 2);
       root.add(m);
@@ -721,7 +721,7 @@ function buildScene(mode, scene) {
     quadTint(-1, -1, DEMON); quadTint(1, -1, DEMON);      // Im<0 — the two demons
     const overlap = new THREE.Mesh(
       new THREE.CircleGeometry(U, 48),
-      new THREE.MeshBasicMaterial({ color: GOD, transparent: true, opacity: 0.10, side: THREE.DoubleSide, depthWrite: false }));
+      new THREE.MeshBasicMaterial({ color: GOD, transparent: true, opacity: 0.16, side: THREE.DoubleSide, depthWrite: false }));
     overlap.rotation.x = -Math.PI / 2; overlap.position.y = r + 0.006; root.add(overlap); // the balance overlap (⊙1 / L4)
 
     // THE TRANSCENDENTALS ARE THE STATIONS OF THE GEOMETRY ITSELF — the
