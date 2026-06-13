@@ -225,12 +225,13 @@ Ground-facing immediacy is here in the practice register.
 
 The extraction-pattern narrative above is the dissolution's experiential leg. For completeness, here is how the hard problem maps onto the S² geometry that structures the rest of the paradox suite.
 
-On the Burri Sphere, systemic awareness is modeled as the **equatorial operator** — the μ-limit boundary operation that relates D5 (possibility, option-space, φ) to D4 (actuality, actualized state, ν). The hard problem asks: "why does this transition *feel* like something?" The framework's answer is interpretive: feeling is what the transition looks like from inside the model. The sphere has an outside reading (physics, being, the Bloch sphere) and an inside reading (phenomenology, systemic awareness, the Burri sphere). This is a disciplined model of the gap, not a public proof that the gap is closed.
+On the Burri Sphere, systemic awareness is modeled as the **equatorial operator** — the μ-limit boundary operation that relates the D5/coherence reading (possibility, option-space, `φ`) to the D4/actuality reading (actualized state, `ν`). The hard problem asks: "why does this transition *feel* like something?" The framework's answer is interpretive: feeling is what the transition looks like from inside the model. The sphere has an outside reading (physics, being, the Bloch sphere) and an inside reading (phenomenology, systemic awareness, the Burri sphere). This is a disciplined model of the gap, not a public proof that the gap is closed.
 
 - **φ** (coherence) = the integration axis. What holds the field together. The phenomenological correlate is *meaning*, *gestalt*, *recognition*.
-- **ν** (viability) = the capability axis. What the system can do. The phenomenological correlate is *agency*, *sensation*, *motor readiness*.
+- **ν** (viability) = the actuality / capability coordinate. What the system can bear or enact as substrate. The phenomenological correlate is *embodiment*, *sensation*, *motor affordance*.
 - **P∞ = φ · ν = 1** = the invariant sphere product in the model. Experience is interpreted as redistributed across the two axes, not empirically conserved by this equation.
-- **The equator** (φ = ν = 1) = maximum balance. Full coherence AND full viability. The phenomenological correlate is *flow*, *presence*, *the sublime* (Erhaben).
+- **P_node = Φ × V** = the finite-node action read. `Φ` is D5 worldline-foresight; `V` is D4 means-to-act. Agency appears when both are usable.
+- **The equator** (`φ = ν = 1`; action read: `Φ` and `V` both usable) = maximum balance, not infinite quantity on either pole. The phenomenological correlate is *flow*, *presence*, *the sublime* (Erhaben).
 
 The hard problem persists, in this reading, because it was formulated on flat coordinates (D4 only), where the φ-axis is invisible. The extraction pattern (above) is the historical mechanism by which the φ-axis was made invisible. The geometric reading offers a structural reframe: on S², the physical and the phenomenal are treated as two projections of the same point.
 
