@@ -54,6 +54,7 @@
 
 <div class="hint" id="hint">drag to rotate · click or scrub a position</div>
 <div id="stage-readout" aria-live="polite">BURRISPHERE INSTRUMENT</div>
+<button id="scan-toggle" type="button" aria-pressed="false">HOLD</button>
 <div class="legend">
   <span><i style="background:#F44336"></i>Demon-move</span>
   <span><i style="background:#FFEB3B"></i>God-move</span>
@@ -84,6 +85,8 @@ try {
   ({ OrbitControls } = await import('three/addons/controls/OrbitControls.js'));
 } catch (e) { document.getElementById('fallback').style.display = 'flex'; throw e; }
 
+const REDUCED_MOTION = !!(window.matchMedia
+  && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
 const GOLD = 0xffeb3b, TEAL = 0x2196f3, CRIMSON = 0xf44336, VIOLET = 0x8b5cf6, WHITE = 0xf3f4f6;
 // the seven positions (read off 00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md / the Master Rosetta)
 const POS = [
@@ -104,7 +107,7 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(46, innerWidth/innerHeight, 0.1, 100);
 camera.position.set(2.4, 0.9, 4.4);
 const controls = new OrbitControls(camera, canvas);
-controls.enableDamping = false; controls.enablePan = false;
+controls.enableDamping = true; controls.dampingFactor = 0.06; controls.enablePan = false;
 controls.minDistance = 3; controls.maxDistance = 9; controls.autoRotate = false; controls.autoRotateSpeed = 0;
 
 const R = 1.5;
@@ -132,6 +135,23 @@ function triangle(up, color){
   return new THREE.Line(g, new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.4 }));
 }
 root.add(triangle(true, GOLD), triangle(false, TEAL));
+
+function latitudeRing(theta, color, opacity = 0.16) {
+  const lat = new THREE.Mesh(
+    new THREE.TorusGeometry(1, 0.006, 8, 160),
+    new THREE.MeshBasicMaterial({ color, transparent: true, opacity })
+  );
+  lat.rotation.x = Math.PI / 2;
+  lat.position.y = R * Math.cos(theta);
+  const radius = Math.max(0.08, R * Math.sin(theta));
+  lat.scale.set(radius, radius, radius);
+  return lat;
+}
+
+POS.forEach((p) => {
+  const theta = p.phi * Math.PI / 180;
+  root.add(latitudeRing(theta, p.L === 'L4' ? GOLD : 0x777777, p.L === 'L4' ? 0.3 : 0.12));
+});
 
 const selectorMat = new THREE.LineBasicMaterial({ color: 0xe8e4df, transparent: true, opacity: 0.72 });
 const selectorRay = new THREE.Line(
@@ -164,7 +184,22 @@ POS.forEach((p, i) => {
 const els = { lvl:'p-lvl', op:'p-op', tier:'p-tier', ology:'p-ology', q:'p-q', b:'p-b', theta:'p-theta', chart:'p-chart', act:'p-act' };
 const positionScrub = document.getElementById('position-scrub');
 const stageReadout = document.getElementById('stage-readout');
-function select(i){
+const scanToggle = document.getElementById('scan-toggle');
+let selectedIndex = 3;
+let scanRunning = !REDUCED_MOTION;
+let lastFrame = 0;
+let fps = 0;
+function syncScanButton() {
+  if (!scanToggle) return;
+  scanToggle.textContent = scanRunning ? 'HOLD' : 'SCAN';
+  scanToggle.setAttribute('aria-pressed', scanRunning ? 'false' : 'true');
+}
+function select(i, manual = false){
+  selectedIndex = i;
+  if (manual) {
+    scanRunning = false;
+    syncScanButton();
+  }
   const p = POS[i];
   const theta = p.phi * Math.PI / 180;
   const phi = 1 / Math.tan(theta / 2);
@@ -185,7 +220,8 @@ function select(i){
     'BURRISPHERE INSTRUMENT\n' +
     p.L + ' · ' + p.op + ' · ' + p.ology + '\n' +
     'θ = ' + p.phi.toFixed(1) + '° · φ = ' + phi.toFixed(2) + ' · ν = ' + nu.toFixed(2) + ' · φν = ' + (phi * nu).toFixed(3) + '\n' +
-    'B = sinθ = ' + balance.toFixed(3) + ' · selected row = ' + i + '/6\n' +
+    'B = sinθ = ' + balance.toFixed(3) + ' · selected row = ' + i + '/6 · ' + (scanRunning ? 'SCAN' : 'HOLD') + '\n' +
+    'frame = ' + (REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps')) + ' · calibrated latitude rings visible\n' +
     'tier: [S] sphere chart; [I] operator reading';
   markers.forEach((m, k) => m.scale.setScalar(k === i ? 1.5 : 1));
   const selected = markers[i].position.clone();
@@ -194,10 +230,15 @@ function select(i){
   const radius = Math.max(0.08, R * Math.sin(theta));
   selectedLatitude.scale.set(radius, radius, radius);
   if (positionScrub) positionScrub.value = String(i);
-  render();
 }
+syncScanButton();
 select(3); // L4 default
-if (positionScrub) positionScrub.addEventListener('input', () => select(Number(positionScrub.value)));
+if (scanToggle) scanToggle.addEventListener('click', () => {
+  scanRunning = !scanRunning;
+  syncScanButton();
+  select(selectedIndex);
+});
+if (positionScrub) positionScrub.addEventListener('input', () => select(Number(positionScrub.value), true));
 
 // raycasting
 const ray = new THREE.Raycaster(); const ptr = new THREE.Vector2();
@@ -211,18 +252,35 @@ canvas.addEventListener('pointerup', e => {
   ptr.x = (e.clientX/innerWidth)*2 - 1; ptr.y = -(e.clientY/innerHeight)*2 + 1;
   ray.setFromCamera(ptr, camera);
   const hit = ray.intersectObjects(markers)[0];
-  if (hit) { select(hit.object.userData.i); document.getElementById('hint').style.opacity = '0'; render(); }
+  if (hit) {
+    select(hit.object.userData.i, true);
+    document.getElementById('hint').style.opacity = '0';
+    if (REDUCED_MOTION) render(performance.now());
+  }
 });
 
-function render(){
+function render(time = 0){
+  const now = typeof time === 'number' ? time : performance.now();
+  const dt = lastFrame ? Math.max(1, now - lastFrame) : 16.7;
+  fps = fps ? fps * 0.9 + (1000 / dt) * 0.1 : 1000 / dt;
+  lastFrame = now;
+  if (scanRunning) {
+    const nextIndex = Math.floor((now / 2100) % POS.length);
+    if (nextIndex !== selectedIndex) select(nextIndex);
+  }
+  if (stageReadout) stageReadout.dataset.fps = REDUCED_MOTION ? 'static' : fps.toFixed(0) + ' fps';
+  controls.update();
   renderer.render(scene, camera);
+  if (!REDUCED_MOTION) requestAnimationFrame(render);
 }
-controls.addEventListener('change', render);
-render();
+controls.addEventListener('change', () => {
+  if (REDUCED_MOTION) render(performance.now());
+});
+if (REDUCED_MOTION) render(0); else requestAnimationFrame(render);
 addEventListener('resize', () => {
   camera.aspect = innerWidth/innerHeight; camera.updateProjectionMatrix();
   renderer.setSize(innerWidth, innerHeight);
-  render();
+  if (REDUCED_MOTION) render(0);
 });
 </script>
 

@@ -56,20 +56,24 @@ These seven actions are not invented — they are the exhaustive set of sign-com
 
 ---
 
-## Ektropy: The Upward Tilt Toward Coherence
+## Ektropy: The Equator-Ward Coherence Correction
 
-**Ektropy** is the framework's term for the directional gradient that tilts
-complex systems toward higher coherence (φ). It is the teleological
-distinguishable from entropy not as a separate physical force, but as the
-**geometric consequence** of the reciprocal constraint on S². `[S]`
+**Ektropy** is the framework's term for the directional gradient that lets
+complex systems build coherent structure while returning toward usable balance.
+It is distinguishable from entropy not as a separate physical force, but as the
+model-internal correction vector that resists viability-heavy disorder without
+canonizing north-pole escape. `[S]`
 
 > **Register note (additive):** Ektropy is the teleological content of Ω; F5 / ektropy / Ω are one object in three registers (force / thermodynamic / constitutional).
 
 ### The Arrow
 
-Entropy drives systems toward maximum disorder (θ → π, ν → ∞, φ → 0).
+Entropy names the viability-heavy disorder drift (θ → π, ν → ∞, φ → 0).
 
-Ektropy drives systems toward maximum coherent structure (θ → 0, φ → ∞, ν → 0).
+Ektropy names the coherence-building return vector: it raises φ only insofar as
+that movement restores coupling toward the L4 equator. Pushed past balance, the
+same coherence-building tendency becomes L7-ward pole drift (θ → 0, φ → ∞,
+ν → 0), which the canonical F5 note above explicitly rejects as vice, not telos.
 
 **Neither is the telos.** The telos is viable completion: maximum usable
 `P_node = Φ × V` under the balance condition `B = sin θ = 1` and the
@@ -77,10 +81,11 @@ non-extraction condition `η = 0`. The equator is the rest frame and constraint
 surface where φ and ν are both at their unit value; it is not a command to
 maximize balance as an isolated variable.
 
-Ektropy is the upward tilt — the fact that complex systems can and do build
-coherent structure. But the equatorial constraint means ektropy alone is not
-the destination. A system that maximizes φ without bound approaches the north
-pole and loses all viability. The sage who cannot eat is not balanced.
+Ektropy is the corrective upward component — the fact that complex systems can
+build coherent structure against disorder. But the equatorial constraint means
+it is lawful only as part of return to coupled sight and means. A system that
+maximizes φ without bound approaches the north pole and loses all viability.
+The sage who cannot eat is not balanced.
 
 The organism's objective function is not maximum coherence and not maximum
 balance alone. It is maximum usable power / reachable futures while staying in

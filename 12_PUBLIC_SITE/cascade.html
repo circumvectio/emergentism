@@ -9,7 +9,7 @@
 
 <link rel="stylesheet" href="assets/css/xai.css">
 </head>
-<body>
+<body class="cascade-instrument">
 <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0">The Emergence</h1>
 <header class="topbar">
   <a class="brand" href="./">Emergentism</a>
@@ -83,7 +83,6 @@ try {
 
 const REDUCED_MOTION = !!(window.matchMedia
   && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
-
 const canvas = document.getElementById('scene');
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
@@ -99,6 +98,23 @@ controls.enablePan = false; controls.minDistance = 3.2; controls.maxDistance = 9
 controls.autoRotate = false; controls.autoRotateSpeed = 0;
 
 const GOLD = 0xffeb3b, TEAL = 0x2196f3, CRIMSON = 0xf44336, WHITE = 0xf3f4f6;
+
+function markerObject(radius, color, opacity = 1) {
+  return new THREE.Mesh(
+    new THREE.SphereGeometry(radius, 20, 20),
+    new THREE.MeshBasicMaterial({ color, transparent: opacity < 1, opacity })
+  );
+}
+
+function tangentRing(radius, y, color, opacity = 0.28) {
+  const ring = new THREE.Mesh(
+    new THREE.TorusGeometry(radius, 0.01, 10, 160),
+    new THREE.MeshBasicMaterial({ color, transparent: true, opacity })
+  );
+  ring.rotation.x = Math.PI / 2;
+  ring.position.y = y;
+  return ring;
+}
 
 // ── reference lattice: fixed measurement frame, not atmosphere ──
 (() => {
@@ -203,15 +219,22 @@ const burri = new THREE.Group();
 burri.visible = false; burri.traverse(o => { if (o.material) { o.material.transparent = true; o.material.opacity = 0; } });
 scene.add(burri);
 
-// ── Dual stereographic projection rays (V ↔ Φ trade) ──
+// ── Final-stage dual stereographic projection assay (same geometry as /5) ──
 const projGroup = new THREE.Group();
-const projMatV = new THREE.LineBasicMaterial({ color: 0x3a7a6e, transparent: true, opacity: 0 });
-const projMatPhi = new THREE.LineBasicMaterial({ color: 0xc9a84c, transparent: true, opacity: 0 });
-const projGeoV = new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0, R, 0), new THREE.Vector3(0, 0, 0)]);
-const projGeoPhi = new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0, -R, 0), new THREE.Vector3(0, 0, 0)]);
-const projLineV = new THREE.Line(projGeoV, projMatV);
-const projLinePhi = new THREE.Line(projGeoPhi, projMatPhi);
-projGroup.add(projLineV, projLinePhi);
+const N = new THREE.Vector3(0, R, 0);
+const S = new THREE.Vector3(0, -R, 0);
+const U = 2 * R;
+const projGeoPhi = new THREE.BufferGeometry().setFromPoints([N, new THREE.Vector3(U, -R, 0)]);
+const projGeoNu = new THREE.BufferGeometry().setFromPoints([S, new THREE.Vector3(U, R, 0)]);
+const projLinePhi = new THREE.Line(projGeoPhi, new THREE.LineBasicMaterial({ color: GOLD, transparent: true, opacity: 0 }));
+const projLineNu = new THREE.Line(projGeoNu, new THREE.LineBasicMaterial({ color: TEAL, transparent: true, opacity: 0 }));
+const projPoint = markerObject(0.07, WHITE, 0);
+const phiLanding = markerObject(0.06, GOLD, 0);
+const nuLanding = markerObject(0.06, TEAL, 0);
+const topUnit = tangentRing(U, R, GOLD, 0);
+const bottomUnit = tangentRing(U, -R, GOLD, 0);
+projGroup.add(topUnit, bottomUnit, projLinePhi, projLineNu, projPoint, phiLanding, nuLanding);
+projGroup.visible = false;
 scene.add(projGroup);
 
 // ── stages ──
@@ -254,6 +277,9 @@ const stageReadoutEl = document.getElementById('stage-readout');
 const timelineEl = document.getElementById('timeline');
 const timelineValueEl = document.getElementById('timeline-value');
 let textTimer = null;
+let projectionState = 'projection assay idle';
+let fps = 0;
+let lastFrame = 0;
 
 // safe line renderer ('|' = line break) — no innerHTML, content is static authored text
 function setLines(el, str){
@@ -279,6 +305,8 @@ function syncInstrument(){
     'CASCADE INSTRUMENT\n' +
     'stage ' + cur + '/' + (STAGES.length - 1) + ' · ' + stageName(cur) + ' · ' + (playing ? 'RUN' : 'HOLD') + '\n' +
     'phase = ' + phase.toFixed(2) + ' · morph target = ' + morphTarget.toFixed(2) + ' · morph actual = ' + morphCur.toFixed(2) + '\n' +
+    'frame = ' + (REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps')) + '\n' +
+    projectionState + '\n' +
     'sequence: line → plane → sphere → horn → Burrisphere';
 }
 
@@ -302,11 +330,10 @@ function show(i){
   morphTarget = s.mt;
   if (previous === STAGES.length - 1 && cur === 0) morphCur = morphTarget;
   setFade(burri, s.burri ? 0.95 : 0);
-  // dual projection rays only on final Burrisphere stage
+  // dual projection assay only on final Burrisphere stage
   const showProj = !!s.burri;
-  projMatV.opacity = showProj ? 0.85 : 0;
-  projMatPhi.opacity = showProj ? 0.85 : 0;
-  projGroup.visible = showProj;
+  setFade(projGroup, showProj ? 0.9 : 0);
+  projGroup.visible = showProj || projGroup.visible;
   // dots
   [...dots.children].forEach((d, k) => d.classList.toggle('on', k === cur));
   tAccum = 0;
@@ -344,8 +371,11 @@ function fmtProj(){
 }
 
 const clock = new THREE.Clock();
-function animate(){
+function animate(frameTime = performance.now()){
   requestAnimationFrame(animate);
+  const frameDt = lastFrame ? Math.max(1, frameTime - lastFrame) : 16.7;
+  fps = fps ? fps * 0.9 + (1000 / frameDt) * 0.1 : 1000 / frameDt;
+  lastFrame = frameTime;
   const dt = Math.min(clock.getDelta(), 0.05);
 
   // auto-advance
@@ -355,15 +385,30 @@ function animate(){
   morphCur += (morphTarget - morphCur) * Math.min(1, dt * 0.9);
   if (Math.abs(morphCur - morphTarget) > 0.001 || cur >= 2) rebuild(morphCur);
 
-  // dual projection rays trade V ↔ Φ on final stage
+  // dual projection rays read reciprocal coordinates on final stage.
   if (STAGES[cur].burri) {
-    const t = Math.min(1, Math.max(0, morphCur - 3.8) / 0.6);
-    const yV = R * (1 - t * 0.5);
-    const yPhi = -R * (1 - t * 0.5);
-    projGeoV.setFromPoints([new THREE.Vector3(0, R, 0), new THREE.Vector3(0, yV, 0)]);
-    projGeoPhi.setFromPoints([new THREE.Vector3(0, -R, 0), new THREE.Vector3(0, yPhi, 0)]);
-    projGeoV.attributes.position.needsUpdate = true;
+    const psi = tAccum * 0.42;
+    const theta = Math.PI / 2 + Math.sin(tAccum * 0.48) * 0.5;
+    const phi = 1 / Math.tan(theta / 2);
+    const nu = Math.tan(theta / 2);
+    const balance = Math.sin(theta);
+    const cps = Math.cos(psi), sps = Math.sin(psi), st = Math.sin(theta);
+    const P = new THREE.Vector3(R * st * cps, R * Math.cos(theta), R * st * sps);
+    const Lphi = new THREE.Vector3(U * phi * cps, -R, U * phi * sps);
+    const Lnu = new THREE.Vector3(U * nu * cps, R, U * nu * sps);
+    projPoint.position.copy(P);
+    phiLanding.position.copy(Lphi);
+    nuLanding.position.copy(Lnu);
+    projGeoPhi.setFromPoints([N, Lphi]);
+    projGeoNu.setFromPoints([S, Lnu]);
     projGeoPhi.attributes.position.needsUpdate = true;
+    projGeoNu.attributes.position.needsUpdate = true;
+    projectionState =
+      'θ=' + (theta * 180 / Math.PI).toFixed(1) + '° · φ=' + phi.toFixed(2) +
+      ' · ν=' + nu.toFixed(2) + ' · B=' + balance.toFixed(3) +
+      ' · |φν−1|=' + Math.abs(phi * nu - 1).toExponential(1);
+  } else {
+    projectionState = 'projection assay idle';
   }
 
   // opacity tweens

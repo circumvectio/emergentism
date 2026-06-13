@@ -58,6 +58,14 @@
         <div class="instrument-corners"><span></span><span></span><span></span><span></span></div>
         <div class="instrument-scale x"></div>
         <div class="instrument-scale y"></div>
+        <div class="instrument-telemetry">
+          <span data-field="mode">Soul Loop assay</span>
+          <span data-field="fps">-- fps</span>
+          <span data-field="time">t+0.00s</span>
+          <span data-field="phase">phase --</span>
+          <span data-field="metric">cycle --</span>
+          <span data-field="state">recursive correction</span>
+        </div>
       </div>
       <div class="visual-labels">
         <div class="label top">φ-pass · gather/cohere</div>
@@ -305,6 +313,8 @@
     { label: 'L7', title: 'preserve', color: '#42A5F5' }
   ];
   const STEP_MS = 1100;
+  let lastFrame = 0;
+  let fps = 0;
 
   const readout = (() => {
     if (!visual) return null;
@@ -376,6 +386,9 @@
   }
 
   function draw(t = 0) {
+    const dt = lastFrame ? Math.max(1, t - lastFrame) : 16.7;
+    fps = fps ? fps * 0.9 + (1000 / dt) * 0.1 : 1000 / dt;
+    lastFrame = t;
     const rect = canvas.getBoundingClientRect();
     const w = rect.width;
     const h = rect.height;
@@ -387,6 +400,20 @@
     const phase = REDUCED_MOTION ? 0 : (t % STEP_MS) / STEP_MS;
     const activeNode = nodes[active];
     const nextNode = nodes[(active + 1) % nodes.length];
+    const overlay = visual ? visual.querySelector('.soul-loop-overlay') : null;
+    if (overlay) {
+      const fields = {
+        fps: REDUCED_MOTION ? 'static' : fps.toFixed(0) + ' fps',
+        time: 't+' + (t / 1000).toFixed(2) + 's',
+        phase: 'phase ' + phase.toFixed(2),
+        metric: 'seg ' + active + '/' + (nodes.length - 1),
+        state: 'L4 return gate'
+      };
+      Object.entries(fields).forEach(([key, value]) => {
+        const el = overlay.querySelector('[data-field="' + key + '"]');
+        if (el) el.textContent = value;
+      });
+    }
 
     ctx.clearRect(0, 0, w, h);
     ctx.fillStyle = '#050505';
@@ -443,6 +470,37 @@
     ctx.fillStyle = '#9b9488';
     ctx.font = '12px Courier New, monospace';
     ctx.fillText('equatorial return', cx, cy + 24);
+
+    const stripX = hasTelemetryRail ? w * 0.64 : cx - r * 0.58;
+    const stripW = hasTelemetryRail ? Math.min(210, w * 0.25) : r * 1.16;
+    const stripH = 46;
+    const stripY = Math.min(h - stripH - 14, hasTelemetryRail ? cy + r * 0.72 : cy + r * 1.18);
+    ctx.strokeStyle = 'rgba(255,255,255,0.16)';
+    ctx.lineWidth = 1;
+    ctx.strokeRect(stripX, stripY, stripW, stripH);
+    ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+    for (let i = 1; i < 6; i += 1) {
+      const x = stripX + (stripW * i) / 6;
+      ctx.beginPath();
+      ctx.moveTo(x, stripY);
+      ctx.lineTo(x, stripY + stripH);
+      ctx.stroke();
+    }
+    const errorFloor = Math.max(0.12, 0.82 - active * 0.055);
+    ctx.strokeStyle = '#42A5F5';
+    ctx.beginPath();
+    for (let i = 0; i <= 72; i += 1) {
+      const q = i / 72;
+      const y = stripY + stripH * (0.82 - (errorFloor + 0.045 * Math.sin((q * 2 + phase) * Math.PI * 2)));
+      const x = stripX + q * stripW;
+      if (i === 0) ctx.moveTo(x, y);
+      else ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+    ctx.fillStyle = '#9b9488';
+    ctx.font = '10px Courier New, monospace';
+    ctx.textAlign = 'left';
+    ctx.fillText('contradiction residual', stripX + 8, stripY + stripH - 8);
 
     if (readout) {
       readout.textContent =

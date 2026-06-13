@@ -8,7 +8,7 @@
 
 <link rel="stylesheet" href="assets/css/xai.css">
 </head>
-<body>
+<body class="lightcone-instrument">
 <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0">The Will to Potential</h1>
 <header class="topbar">
   <a class="brand" href="./">Emergentism</a>
@@ -148,10 +148,15 @@ const clock = new THREE.Clock();
 let t = 0;
 let lastOmegaProxy = 0;
 let lastSampleT = 0;
-function updateInstrument(dt = 0){
-  const delta = clock.getDelta();
+let lastFrame = 0;
+let fps = 0;
+function updateInstrument(frameTime = performance.now(), poseOffset = 0){
+  const now = typeof frameTime === 'number' ? frameTime : performance.now();
+  const frameDt = lastFrame ? Math.max(1, now - lastFrame) : 16.7;
+  fps = fps ? fps * 0.9 + (1000 / frameDt) * 0.1 : 1000 / frameDt;
+  lastFrame = now;
+  const delta = poseOffset || clock.getDelta();
   t += delta;
-  if (dt) t += dt;
   // F5/Ω drive in the interpretive register: the cone widens and lengthens on
   // a measured cycle, without claiming a new settled physical force.
   const cyc = (Math.sin(t * 0.32) + 1) / 2;            // 0..1 calibrated sweep
@@ -186,6 +191,7 @@ function updateInstrument(dt = 0){
     'LIGHTCONE INSTRUMENT\n' +
     'angle = ' + (angle * 180 / Math.PI).toFixed(1) + '° · height = ' + height.toFixed(2) + ' · radius = ' + radius.toFixed(2) + '\n' +
     'Ω proxy = cone volume = ' + omegaProxy.toFixed(2) + ' · dΩ/dt = ' + omegaRate.toFixed(2) + ' · phase = ' + reach.toFixed(2) + '\n' +
+    'frame = ' + (REDUCED_MOTION ? 'static' : fps.toFixed(0) + ' fps') + ' · sample cadence = animation frame\n' +
     'coordinate convention: c=1 units · present hyperplane fixed at t=0\n' +
     'tier: [I] selection image; no literal fifth-force physics claim';
   controls.update();
@@ -195,7 +201,7 @@ function animate(){
   requestAnimationFrame(animate);
   updateInstrument();
 }
-if (REDUCED_MOTION) updateInstrument(1.2); else animate();
+if (REDUCED_MOTION) updateInstrument(performance.now(), 1.2); else animate();
 addEventListener('resize', () => {
   camera.aspect = innerWidth/innerHeight; camera.updateProjectionMatrix();
   renderer.setSize(innerWidth, innerHeight);
