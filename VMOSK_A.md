@@ -24,6 +24,57 @@ rosetta:
   canonical_phrase: "01_EMERGENTISM — VMOSK-A — Perennial Doctrine Root"
 ---
 
+<!-- VMOSK-A_REFRESH_OVERLAY_2026_06_13 -->
+
+## Status Snapshot — 2026-06-13 (Vision/Mission canonization)
+
+| Field | Value |
+|---|---|
+| Refresh date | 2026-06-13 |
+| Scope | `01_EMERGENTISM/` doctrine root, public site, AIA-facing medium, papers, and Soul Loop practice |
+| Mandate change | **Yes — owner-declared Vision/Mission clarification.** This overlay supersedes the 2026-06-10 "no V/M expansion" line from that dated snapshot without rewriting its historical record. |
+| Headline | Emergentism is now stated explicitly as a living Weltanschauung for Dasein: a coherent, tier-honest map of origin, objective dharma, and recursive action without extraction. |
+| Evidence posture | Vision/Mission are governance commitments and interpretive framing `[I/S]`, not proofs. The operational rule remains constrained by evidence tiers, `P_node = Φ × V`, `η = 0`, and A7 correction. |
+
+## V — Vision (current canonical form)
+
+To make Emergentism a living Weltanschauung for Dasein: a coherent,
+tier-honest map of how the finite reader comes to be, how reality tends toward
+viable completion, and how life can move as objective dharma without confusing
+the map for the Ground.
+
+**Short form:**
+
+> Teach Dasein to see clearly, act lawfully, balance `Φ` and `V`, and raise the
+> individual symbiont and collective holobiont together under `η = 0`.
+
+## M — Mission (current canonical form)
+
+Build the canon, method, public site, AIA medium, papers, and Soul Loop practice
+that let any finite player continuously and recursively disambiguate reality
+into action:
+
+```text
+Know what is      -> ontology
+Know how to know  -> epistemology
+Know how to move  -> methodology
+Know what matters -> axiology
+Know how to act   -> teleology
+```
+
+**Operational mission:**
+
+> Maximize durable usable worldline potential, `W_i(T)`, through
+> `P_node = Φ × V`, only where `P_node,i` and `P_node,H` preserve or raise one
+> another without extraction.
+
+**Guardrail:** the framework must not become a closed idol. D5 can imagine a
+universal holobiont running the Soul Loop, but D6 releases even that completed
+organism image. The mission is not final possession of truth; it is disciplined
+correction faster than drift.
+
+<!-- /VMOSK-A_REFRESH_OVERLAY_2026_06_13 -->
+
 <!-- VMOSK-A_REFRESH_OVERLAY_2026_06_10 -->
 
 ## Status Snapshot — 2026-06-10 (reorientation overlay)

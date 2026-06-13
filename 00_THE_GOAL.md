@@ -26,6 +26,43 @@ compass; individual symbiont and collective holobiont; evil / extraction.
 
 ---
 
+## 0. Vision and Mission
+
+**Vision.** To make Emergentism a living Weltanschauung for Dasein: a coherent,
+tier-honest map of how the finite reader comes to be, how reality tends toward
+viable completion, and how life can move as objective dharma without confusing
+the map for the Ground.
+
+**Short form.**
+
+> Teach Dasein to see clearly, act lawfully, balance `Φ` and `V`, and raise the
+> individual symbiont and collective holobiont together under `η = 0`.
+
+**Mission.** Build the canon, method, public site, AIA medium, papers, and Soul
+Loop practice that let any finite player continuously and recursively
+disambiguate reality into action:
+
+```text
+Know what is      -> ontology
+Know how to know  -> epistemology
+Know how to move  -> methodology
+Know what matters -> axiology
+Know how to act   -> teleology
+```
+
+**Operational mission.**
+
+> Maximize durable usable worldline potential, `W_i(T)`, through
+> `P_node = Φ × V`, only where `P_node,i` and `P_node,H` preserve or raise one
+> another without extraction.
+
+**Guardrail.** This framework must not become a closed idol. D5 can imagine the
+universal holobiont running the Soul Loop, but D6 releases even that
+completed-organism image. The mission is not final possession of truth; it is
+disciplined correction faster than drift.
+
+---
+
 ## 1. The Goal (full form)
 
 > Build Emergentism into a coherent and consistent Weltanschauung that explains

@@ -13,6 +13,8 @@ rosetta:
 
 > **The Goal (Ω stated):** [`00_THE_GOAL.md`](00_THE_GOAL.md) — the project's telos, owner-declared 2026-06-12 and tier-fenced: a living worldview for Dasein (ontology of the finite reader, teleology of dharma-in-the-game, recursive method), played as the Soul Loop cycling the five Knows until durable `W_i(T)` is maximized only on the boundary-preserving frontier of `P_node = Φ × V` under `η = 0`, with symbiont and holobiont rising together. The five refusals clear the space; the Goal is what the space is for.
 
+> **Current Vision/Mission (2026-06-13):** [`VMOSK_A.md`](VMOSK_A.md) now states the operational V/M explicitly: make Emergentism a living Weltanschauung for Dasein, and build the canon, method, public site, AIA medium, papers, and Soul Loop practice that let finite players continuously and recursively disambiguate reality into action without extraction.
+
 > **Canonical enumeration:** For the crisp authoritative list of the constitutional invariants, the K*/A* namespace disambiguation, and the Ω ratification status, see the canonical anchor `01_EMERGENTISM/05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md` (or equivalent relative path). Current K2 ruling (2026-05-30): **5 + 1** — five refusals plus Ω as the directional +1. Ω is not a sixth refusal.
 
 **Status:** Active  

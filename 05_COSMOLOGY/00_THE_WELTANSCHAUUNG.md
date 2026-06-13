@@ -47,6 +47,37 @@ This is the shortest complete statement of what the framework claims to be.
 
 ---
 
+## Vision and Mission
+
+**Vision:** make Emergentism a living Weltanschauung for Dasein: a coherent,
+tier-honest map of how the finite reader comes to be, how reality tends toward
+viable completion, and how life can move as objective dharma without confusing
+the map for the Ground.
+
+**Mission:** build the canon, method, public site, AIA medium, papers, and Soul
+Loop practice that let any finite player continuously and recursively
+disambiguate reality into action.
+
+In the framework's own grammar, that mission is the five Knows applied
+recursively:
+
+```text
+Know what is      -> ontology
+Know how to know  -> epistemology
+Know how to move  -> methodology
+Know what matters -> axiology
+Know how to act   -> teleology
+```
+
+The operational mission is to maximize durable usable worldline potential,
+`W_i(T)`, through `P_node = Φ × V`, only where `P_node,i` and `P_node,H`
+preserve or raise one another without extraction. Its apophatic guardrail is
+equally load-bearing: D5 can imagine the universal holobiont running the Soul
+Loop, but D6 releases even that completed-organism image. The mission is
+disciplined correction faster than drift, not final possession of truth.
+
+---
+
 ## What This Means
 
 Emergentism is not only a theory about what reality is.
