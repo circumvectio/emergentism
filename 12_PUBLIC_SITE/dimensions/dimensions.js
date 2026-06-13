@@ -737,11 +737,11 @@ function buildScene(mode, scene) {
       wrap.className = "model-slider theta-slider";
       wrap.style.cssText = "position:absolute;left:16px;right:16px;bottom:16px;z-index:6;display:flex;" +
         "align-items:center;gap:10px;font:700 11px/1 'Roboto Mono',ui-monospace,monospace;color:#9CA3AF;letter-spacing:.04em";
-      const lo = document.createElement("span"); lo.textContent = "0 · φ pole"; lo.style.color = "#FFEB3B";
-      const hi = document.createElement("span"); hi.textContent = "π · ν pole"; hi.style.color = "#D23B3B";
+      const lo = document.createElement("span"); lo.textContent = "D5 Φ foresight"; lo.style.color = "#FFEB3B";
+      const hi = document.createElement("span"); hi.textContent = "D4 V means"; hi.style.color = "#D23B3B";
       thetaSlider = document.createElement("input");
       thetaSlider.type = "range"; thetaSlider.min = "0"; thetaSlider.max = "100"; thetaSlider.step = "1"; thetaSlider.value = "50";
-      thetaSlider.setAttribute("aria-label", "theta latitude from coherence pole through equator to viability pole");
+      thetaSlider.setAttribute("aria-label", "theta latitude from D5 worldline foresight through balance to D4 means-to-act");
       thetaSlider.style.cssText = "flex:1;accent-color:#FFEB3B;cursor:pointer;height:4px";
       thetaSlider.addEventListener("input", () => { thetaUserActive = true; });
       wrap.append(lo, thetaSlider, hi);
@@ -772,8 +772,10 @@ function buildScene(mode, scene) {
       nuPt.position.copy(Lnu);
       rayDown.geometry.setFromPoints([N, Lphi]);                     // straight through P
       rayUp.geometry.setFromPoints([S, Lnu]);                        // straight through P
-      const isGod = phi > 1;                                         // P above the equator
-      const col = isGod ? GOD : DEMON;
+      const BALANCE_EPSILON = 0.015;
+      const isBalance = Math.abs(phi - 1) <= BALANCE_EPSILON;        // the equator: Φ = V = 1
+      const isGod = phi > 1 + BALANCE_EPSILON;                       // P above the equator
+      const col = isBalance || isGod ? GOD : DEMON;
       [pMark, phiPt, nuPt].forEach((m) => m.material.color.setHex(col));
       rayDown.material.color.setHex(col);
       rayUp.material.color.setHex(col);
@@ -783,14 +785,21 @@ function buildScene(mode, scene) {
       nuLine.geometry.setFromPoints(nuTrail);
       root.rotation.y += 0.0016;
       const q = quadName[Math.floor((((psi % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI)) / (Math.PI / 2)) % 4];
-      const opName = isGod
+      const opName = isBalance
+        ? "Viṣṇu L5 · balance"
+        : isGod
         ? (cps < 0 ? "Kṛṣṇa L3 · give" : "Arjuna L4 · give")
         : (cps < 0 ? "Kali L1 · take" : "Kālī L2 · take");
+      const moveName = isBalance
+        ? "BALANCE (Φ=V=1)"
+        : isGod
+          ? "GOD-move (Φ > V)"
+          : "DEMON-move (V > Φ)";
       if (readout) readout.textContent =
         "DUAL STEREOGRAPHIC PROJECTION · the two rays meet at P\n" +
         "θ = " + (theta * 180 / Math.PI).toFixed(0) + "°" + (thetaUserActive ? " (held by slider)" : " (auto-sweep)") + "   φ = " + phi.toFixed(2) + "   ν = " + nu.toFixed(2) + "   φ·ν = 1 (mass-shell)   E/mc² = (φ+ν)/2 = " + ((phi + nu) / 2).toFixed(2) + "   cos θ = β = " + Math.cos(theta).toFixed(2) + " (latitude = speed)\n" +
-        "D5 action read: Φ = worldline foresight, V = means-to-act; P_node = Φ × V only works when both factors stay usable\n" +
-        "quadrant " + q + " · " + opName + " · " + (isGod ? "GOD-move (φ > 1)" : "DEMON-move (φ < 1)") + "\n" +
+        "D5 Φ = worldline foresight, D4 V = means-to-act; P_node = Φ × V fails when either factor collapses\n" +
+        "quadrant " + q + " · " + opName + " · " + moveName + "\n" +
         "the stage {0, 1, ∞} — • 0 floor-touch (Śiva's sign) · ⊙ 1 centre (Viṣṇu's) · ○ ∞ top-touch (Brahmā's)";
     });
   }
