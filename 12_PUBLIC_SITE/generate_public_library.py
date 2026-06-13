@@ -415,7 +415,7 @@ WINGS = {
     "method": {
         "source_dir": HANDOFF / "method-public",
         "title": "Method",
-        "description": "The doctrine of method — ten documents on axioms, the doctrinal ladder, testing, preregistrations, and the Anumana audit protocol.",
+        "description": "The doctrine of method — how the Soul Loop derives, tests, builds, corrects, and recurses from tiered disclosure toward lawful action.",
         "active": "method",
     },
     "meta": {

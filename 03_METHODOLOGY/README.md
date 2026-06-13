@@ -33,6 +33,19 @@ L3 is Inferential Logic: inference from sign to conclusion. It is the merchant/a
 
 In Skyzai, this corresponds to RealityFutures: the procedure that prices what could follow from what TheCircle observed.
 
+## Game-Spine Function
+
+In the Soul Loop's game form, methodology owns **Know how to move**. It receives
+L2's tiered candidate and asks what follows, what would falsify it, what can be
+built, what must be corrected, and what must be run through the loop again.
+
+Methodology is therefore not abstract procedure. It is the conversion layer
+between knowing and acting: derive, test, build, correct, recurse. In
+`P_node = Φ × V` language, it must specify how `Φ` and `V` are represented at
+the action boundary, which assumptions keep them multiplicative rather than
+additive, and how `η = 0` is enforced before the move is allowed to claim
+Power-Max or syntropic-dyad status. `[S/I]`
+
 ---
 
 ## Current Source Files / Owner Routes

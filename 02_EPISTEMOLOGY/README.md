@@ -30,6 +30,20 @@ L2 is Comparative Analysis: knowing by comparison, analogy, resemblance, and pat
 
 In Skyzai, this corresponds to TheCircle and the state-sensor layer: the polygenetic observation mesh and the per-sovereign readings that sense the organism's L1 material condition. Sensors are data science, not objective function. They read the substrate; they are not the substrate.
 
+## Game-Spine Function
+
+In the Soul Loop's game form, epistemology owns **Know how to know**. It is the
+first check after ontology names the field and the reader as Dasein. L2 asks:
+what has actually been disclosed, what is only projection, and what evidence
+tier can the claim honestly wear?
+
+The output of L2 is never a command to act. It is a tiered candidate: direct
+disclosure, pattern, analogy, or observation made explicit enough for L3
+methodology to test. In `P_node = Φ × V` language, epistemology protects `Φ`
+from hallucinated foresight and protects `V` from imaginary means. A move that
+cannot say how it knows what it claims to know cannot lawfully enter the
+Power-Max / syntropic-dyad test. `[S/I]`
+
 ---
 
 ## Current Source Files / Owner Routes
