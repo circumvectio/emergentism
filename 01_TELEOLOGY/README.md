@@ -39,6 +39,36 @@ name of a future good. World-level F5 claims remain `[C]`; operational
 teleology is the conditional rule: raise `P_node,i` while preserving or raising
 `P_node,H` under enforced `η = 0`.
 
+## Dasein Game Reading
+
+Teleology owns the last question in the Soul Loop: **how should Dasein act?**
+It answers only after ontology has named the situation, epistemology has checked
+the tier, methodology has selected the repair/build path, and axiology has
+tested the move against Beauty, Truth, Justice, and non-extraction.
+
+The disciplined answer is not "maximize balance" and not "maximize means."
+Balance is the feasibility surface; means without foresight is blind force.
+Teleology searches durable worldline potential on the constrained frontier:
+
+```text
+objective: widen Ω / usable option-cone
+finite-node score: P_node = Φ × V
+symbiont horizon: W_i(T) = ∫ P_node,i(t) dt
+constraint: preserve or raise P_node,H under η = 0
+strict syntropic case: ΔP_node,i > 0 and ΔP_node,H > 0
+```
+
+This is the teleological face of the Power-Max Lemma. In a real coupled
+boundary, the individual symbiont cannot honestly maximize durable
+worldline-potential by degrading the holobiont that makes the individual
+effective. Local reach that destroys its sustaining boundary is not viable
+completion; it is borrowed future.
+
+Tier fence: `[S]` for the internal constrained-optimization grammar and
+Power-Max conditions; `[I]` for reading that grammar as objective dharma or
+flow-state action; `[C]` for any claim that reality as such is proven to will
+this outcome.
+
 ---
 
 ## Rosetta Position

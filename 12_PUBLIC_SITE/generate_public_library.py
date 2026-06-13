@@ -192,6 +192,11 @@ directly (the only available lever):
         directions rising together, and the Power-Max claim is conditional on
         real coupling, multiplicative `P_node`, long horizon, and enforced
         `η = 0`, not external moral realism.
+  - will/                                       : mirrored the Dasein teleology
+        route summary from the source teleology route: the objective is
+        usable option-cone widening / durable `W_i(T)`, finite nodes are scored
+        by `P_node = Φ × V`, balance is the feasibility surface, and
+        `P_node,H` must be preserved or raised under `η = 0`.
 	  - sacred/00-glossary/, formal/14-efr-epistemology-triad/,
 	        formal/17-efr-ontology-complete/,
 	        formal/34-d4-d5-canonical-reference/, dasein/,
