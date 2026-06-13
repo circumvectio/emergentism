@@ -26,6 +26,35 @@ rosetta:
 
 **Must not do:** Moralize extraction. Perform virtue without structural change. Delegate mortal responsibility to AI, doctrine, procedure, or priesthood.
 
+## Dasein Game Reading
+
+Axiology is where the Soul Loop becomes a moral compass for a finite player.
+The question is not "what does the collective demand?" or "what does the
+individual want?" in isolation. The question is which signed move raises the
+individual symbiont and the sustaining holobiont together:
+
+```text
+P_node,i = Φ_i × V_i
+P_node,H = Φ_H × V_H
+η = 0
+
+objective morality = H -> i  (the whole raises the node)
+objective ethics   = i -> H  (the node raises the whole)
+objective dharma   = both directions rising together at the action boundary
+```
+
+In the action register, `V` means usable D4 means-to-act: body, tools, energy,
+access, execution capacity. `Φ` means D5 worldline-foresight: the ability to
+envision the reachable future and use those means coherently. A value claim is
+not stable until it can state how it raises both `P_node,i` and `P_node,H`
+without hidden rent, coercion, or dependency manufacture.
+
+This is framework-objective, not an external proof of moral realism. Once
+reciprocal closure, multiplicative `P_node`, real coupling, long horizon, and
+enforced `η = 0` are accepted, the Power-Max Lemma gives the conditional
+frontier: durable individual worldline potential is searched on trajectories
+that preserve or raise the boundary that makes the individual effective.
+
 ---
 
 ## Rosetta Position
@@ -76,9 +105,14 @@ That subfolder exists to prevent a separate "theurgy root" from drifting away fr
 - `P∞ = φ · ν = 1` names the invariant sphere-product.
 - `B = sin θ` names balance on the sphere.
 - `P_node = Φ × V` names empirical or organizational flourishing.
-- Value Alignment is [S] structural where derived from `ΣΔB > 0` / `ΣΔP_node > 0`, `η = 0`, and the `P∞` invariant.
-- Value Alignment is [I] interpretive where naming specific moral, strategic, or institutional applications.
-- Value Alignment is [C] where projecting civilisational outcomes or claiming strong moral realism beyond the framework.
+- Value Alignment is `[S]` structural inside the accepted framework where it
+  applies the Power-Max frontier, `ΣΔB > 0` / `ΣΔP_node > 0`, `η = 0`, and the
+  `P∞` invariant to real coupled boundaries.
+- Value Alignment is `[I]` interpretive where it names those structural
+  directions morality, ethics, dharma, justice, or specific institutional
+  applications.
+- Value Alignment is `[C]` where it projects civilisational outcomes or claims
+  strong moral realism beyond the framework's accepted premises.
 - K2 is non-negotiable: no automation of mortal responsibility.
 
 ## Public-Translation Risks

@@ -35,6 +35,19 @@ side from calling its own appetite "justice." The practical axiology test is
 therefore: disclose the value claim, test it, ask whom it serves, preserve
 Beauty/Truth/Justice, dissolve hidden rent, leave receipts, and return.
 
+In the action register, `V` means usable D4 means-to-act: body, tools, energy,
+access, execution capacity. `Φ` means D5 worldline-foresight: the ability to
+envision the reachable future and use the means coherently. Objective morality
+is the `H -> i` vector that raises the node; objective ethics is the `i -> H`
+vector that raises the whole; objective dharma is both directions rising
+together without extraction.
+
+This is framework-objective, not an external proof of moral realism. Under real
+coupling, multiplicative `P_node`, long horizon, and enforced `η = 0`, the
+Power-Max Lemma names the conditional frontier: the individual symbiont's
+durable worldline potential is only searched honestly on trajectories that
+preserve or raise the holobiont that makes the individual effective.
+
 ## What It Owns
 
 - Good / evil / transcendental value framing.

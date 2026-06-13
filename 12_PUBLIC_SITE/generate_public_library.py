@@ -181,6 +181,12 @@ directly (the only available lever):
 	        D4 means-to-act) and bounded old "extraction is negative-sum" slogans
 	        to the equatorial balance/displacement model, not unconditional
 	        one-shot payoff claims.
+  - value/                                      : mirrored the Dasein moral-compass
+        route summary from the source axiology route: objective morality is
+        `H -> i`, objective ethics is `i -> H`, objective dharma is both
+        directions rising together, and the Power-Max claim is conditional on
+        real coupling, multiplicative `P_node`, long horizon, and enforced
+        `η = 0`, not external moral realism.
 	  - sacred/00-glossary/, formal/14-efr-epistemology-triad/,
 	        formal/17-efr-ontology-complete/,
 	        formal/34-d4-d5-canonical-reference/, dasein/,
