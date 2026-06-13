@@ -198,7 +198,7 @@ draft_action:
 | D1 accuracy | Surface signal correctly extracted |
 | D2 relevance | Analogues are genuinely analogous, not superficially similar |
 | D3 depth | System dynamics identified, not just first-order effects |
-| D4 viability | Smallest defensible commit is actually viable |
+| D4 means-to-act | Smallest defensible commit is actually viable |
 | D5 ethics | Sacrifice structure is explicit and consensual |
 | D6 shadow | Shadow is named, not projected onto others |
 | D7 boundary | Framework limits respected, not rationalised away |

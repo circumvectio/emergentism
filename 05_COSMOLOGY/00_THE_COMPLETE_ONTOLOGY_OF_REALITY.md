@@ -188,7 +188,7 @@ D3 is form — the first stable pattern. In physics, D3 corresponds to the three
 
 The fourth dimension. Change has direction. Causes produce effects. The causal vertex exists — the point where past and future light cones touch. The Now-point, with no duration.
 
-In the action-register bridge, this same boundary is read as **D4 viability / means-to-act**: the body, tool, energy, access, timing, and control actually available at contact. Hands, a shovel, and an industrial digger are all D4 means at different scales; none of them is agency by itself.
+In the action-register bridge, this same boundary is read as **D4 means-to-act / viability substrate**: the body, tool, energy, access, timing, and control actually available at contact. Hands, a shovel, and an industrial digger are all D4 means at different scales; none of them is agency by itself.
 
 ### Log coordinate
 

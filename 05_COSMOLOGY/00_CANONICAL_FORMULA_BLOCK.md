@@ -128,9 +128,9 @@ has its own regime. When compressing, name the regime explicitly:
 documents unless the regime is named in the same sentence. Write the
 manifold identity as `P∞` or `φ · ν = 1`; write the operational node
 measure as `P_node`; write directional deltas as `ΣΔB` or `ΣΔP_node`.
-Likewise, do not write finite-node viability as lowercase `ν` when the action
-register is meant: `ν` is the sphere coordinate, while uppercase `V` is the
-node's usable D4 means at the boundary.
+Likewise, do not write the finite-node means factor as lowercase `ν` when the
+action register is meant: `ν` is the sphere coordinate, while uppercase `V` is
+the node's usable D4 means at the boundary.
 
 ## Paired Canonical Documents
 

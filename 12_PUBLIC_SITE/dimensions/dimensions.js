@@ -6,6 +6,19 @@ if (canvas && visual) document.body.classList.add("dimension-page");
 const REDUCED_MOTION = !!(window.matchMedia
   && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
 const TAU = Math.PI * 2;
+const COLORS = {
+  bg: "#050505",
+  surface: "#0A0A0A",
+  text: "#F3F4F6",
+  muted: "#9CA3AF",
+  dim: "#555555",
+  gold: "#FFEB3B",
+  goldSoft: "#FFF176",
+  blue: "#2196F3",
+  blueSoft: "#42A5F5",
+  red: "#F44336",
+  green: "#4CAF50"
+};
 const modeLabels = {
   titans: "D0 frame",
   logline: "D1 reciprocal line",
@@ -23,6 +36,14 @@ function smooth01(x) {
 function sweep01(t, cyclesPerSecond = 0.045) {
   const p = ((t * cyclesPerSecond) % 1 + 1) % 1;
   return p < 0.5 ? p * 2 : (1 - p) * 2;
+}
+
+function phase01(t, cyclesPerSecond = 0.045, offset = 0) {
+  return ((t * cyclesPerSecond + offset) % 1 + 1) % 1;
+}
+
+function clamp01(x) {
+  return Math.max(0, Math.min(1, x));
 }
 const dimensionCommands = [
   { key: "/0", aliases: ["/0", "0", "d0", "titans"], label: "/0 · Titans", detail: "Ground / finity", href: "../0/" },
@@ -191,6 +212,7 @@ function ensureInstrumentOverlay(mode = page.animationMode || "model") {
   overlay.className = "instrument-overlay";
   overlay.setAttribute("aria-hidden", "true");
   overlay.innerHTML = `
+    <div class="instrument-graticule"></div>
     <div class="instrument-corners">
       <span></span><span></span><span></span><span></span>
     </div>
@@ -201,6 +223,7 @@ function ensureInstrumentOverlay(mode = page.animationMode || "model") {
       <span data-field="mode">${modeLabels[mode] || mode}</span>
       <span data-field="fps">-- fps</span>
       <span data-field="time">t+0.00s</span>
+      <span data-field="phase">phase --</span>
       <span data-field="metric">sample --</span>
       <span data-field="state">locked frame</span>
     </div>
@@ -209,20 +232,23 @@ function ensureInstrumentOverlay(mode = page.animationMode || "model") {
   return overlay;
 }
 
-function setInstrumentMetric(metric = "", state = "") {
+function setInstrumentMetric(metric = "", state = "", phase = "") {
   if (!visual) return;
   if (metric) visual.dataset.instrumentMetric = metric;
   if (state) visual.dataset.instrumentState = state;
+  if (phase) visual.dataset.instrumentPhase = phase;
 }
 
 function updateInstrumentOverlay(overlay, t, fps) {
   if (!overlay) return;
   const timeField = overlay.querySelector('[data-field="time"]');
   const fpsField = overlay.querySelector('[data-field="fps"]');
+  const phaseField = overlay.querySelector('[data-field="phase"]');
   const metricField = overlay.querySelector('[data-field="metric"]');
   const stateField = overlay.querySelector('[data-field="state"]');
   if (timeField) timeField.textContent = "t+" + t.toFixed(2) + "s";
   if (fpsField) fpsField.textContent = REDUCED_MOTION ? "static" : fps.toFixed(0) + " fps";
+  if (phaseField) phaseField.textContent = visual.dataset.instrumentPhase || "phase --";
   if (metricField) metricField.textContent = visual.dataset.instrumentMetric || "sample --";
   if (stateField) stateField.textContent = visual.dataset.instrumentState || "locked frame";
 }
@@ -330,10 +356,11 @@ function drawTitanCalculator(time = 0) {
       }
     });
 
+    const reciprocalPhase = phase01(t, 0.035);
     const reciprocalS = 1.85 + smooth01(sweep01(t, 0.035)) * 2.5;
     const lx = cx - reciprocalS * unit;
     const rx = cx + reciprocalS * unit;
-    setInstrumentMetric("s ±" + reciprocalS.toFixed(2), "unity fixed");
+    setInstrumentMetric("s ±" + reciprocalS.toFixed(2), "unity fixed", "phase " + reciprocalPhase.toFixed(2));
 
     ctx.setLineDash([8, 8]);
     ctx.strokeStyle = "rgba(245,245,245,0.48)";
@@ -504,7 +531,7 @@ function addReferenceFrame(scene) {
   scene.add(frame);
 }
 
-function createSphere(radius = 1.4, opacity = 0.22, wseg = 120, hseg = 64) {
+function createSphere(radius = 1.4, opacity = 0.22, wseg = 88, hseg = 44) {
   return new THREE.Mesh(
     new THREE.SphereGeometry(radius, wseg, hseg),
     makeMaterial(0xffffff, opacity, true)
@@ -659,6 +686,7 @@ function buildScene(mode, scene) {
     const readout = makeReadout();
     if (readout) readout.style.whiteSpace = "pre-line";
     dyn.push(function (t) {
+      const logPhase = phase01(t, 0.035);
       const s = -2.9 + smooth01(sweep01(t, 0.035)) * 5.8; // sweep in log coordinates
       const x = Math.pow(2, s);
       xPt.position.set(s * SC, 0, 0);
@@ -677,7 +705,7 @@ function buildScene(mode, scene) {
       }
       const u = (x - 1) / (x + 1);
       const E = Math.pow(Math.log(x), 2);
-      setInstrumentMetric("s " + s.toFixed(2) + " · x " + x.toFixed(2), "x·1/x=1");
+      setInstrumentMetric("s " + s.toFixed(2) + " · x " + x.toFixed(2), "x·1/x=1", "phase " + logPhase.toFixed(2));
       if (readout) readout.textContent =
         "SUDA'S LINE · in log coordinates the ONE is the centre\n" +
         "x = " + x.toFixed(2) + "   1/x = " + (1 / x).toFixed(2) + "   x · 1/x = 1\n" +
@@ -717,6 +745,7 @@ function buildScene(mode, scene) {
       readout.classList.add("instrument-readout");
     }
     dyn.push((t) => {
+      const muPhase = phase01(t, 0.032);
       const p = smooth01(sweep01(t, 0.032));
       const x = -1.8 + 3.6 * p;
       const lift = 1.6 * Math.max(0, 1 - Math.abs(2 * p - 1));
@@ -729,7 +758,7 @@ function buildScene(mode, scene) {
       appendTrace(projectionSamples, onLine, 160);
       setLinePoints(liftTrace, liftSamples);
       setLinePoints(projectionTrace, projectionSamples);
-      setInstrumentMetric("λ " + p.toFixed(2) + " · μ " + lift.toFixed(2), "orthogonal lift");
+      setInstrumentMetric("λ " + p.toFixed(2) + " · μ " + lift.toFixed(2), "orthogonal lift", "phase " + muPhase.toFixed(2));
       if (readout) readout.textContent =
         "D2 μ-LIMIT · line-to-plane assay\n" +
         "sample λ = " + p.toFixed(2) + " · lift μ = " + lift.toFixed(2) + "\n" +
@@ -746,7 +775,7 @@ function buildScene(mode, scene) {
     // The equator's shadow on the floor is the unit circle (φ = 1).
     const r = 1.0;
     const N = new THREE.Vector3(0, r, 0), Sp = new THREE.Vector3(0, -r, 0);
-    const floor = createGridPlane(8.0, 23); floor.position.y = -r; root.add(floor);
+    const floor = createGridPlane(8.0, 21); floor.position.y = -r; root.add(floor);
     root.add(createSphere(r, 0.26));
     root.add(ring(r, 0xffffff, 0.85));                          // the equator (φ = 1 up here)
     const unitC = createTickedRing(2 * r, 0xffeb3b, 0.48, 48);   // its shadow: the unit circle on ℂ
@@ -769,6 +798,7 @@ function buildScene(mode, scene) {
       readout.classList.add("instrument-readout");
     }
     dyn.push((t) => {
+      const projectionPhase = phase01(t, 0.03);
       const p = smooth01(sweep01(t, 0.03));
       const th = (55 + 70 * p) * Math.PI / 180;
       const P = new THREE.Vector3(r * Math.sin(th), r * Math.cos(th), 0);
@@ -782,7 +812,7 @@ function buildScene(mode, scene) {
       setLinePoints(landingTrace, landingSamples);
       const phi = 1 / Math.tan(th / 2);
       const nu = Math.tan(th / 2);
-      setInstrumentMetric("θ " + (th * 180 / Math.PI).toFixed(1) + "° · φν " + (phi * nu).toFixed(3), "tangent projection");
+      setInstrumentMetric("θ " + (th * 180 / Math.PI).toFixed(1) + "° · φν " + (phi * nu).toFixed(3), "tangent projection", "phase " + projectionPhase.toFixed(2));
       if (readout) readout.textContent =
         "D3 RIEMANN/BLOCH · tangent projection\n" +
         "θ = " + (th * 180 / Math.PI).toFixed(1) + "° · φ = cot(θ/2) = " + phi.toFixed(2) + "\n" +
@@ -802,7 +832,7 @@ function buildScene(mode, scene) {
     root.add(createTickedRing(1.0, 0xffeb3b, 0.52, 40));          // unit circle |z|=1  (x=1, Suda)
     root.add(line([new THREE.Vector3(-3.1, 0, 0), new THREE.Vector3(3.1, 0, 0)], 0x555555, 0.55));
     root.add(line([new THREE.Vector3(0, 0, -3.1), new THREE.Vector3(0, 0, 3.1)], 0x555555, 0.55));
-    const torus = makeMorphTorus(1.7, 104, 30, 0xffffff);       // high-resolution mesh
+    const torus = makeMorphTorus(1.7, 84, 24, 0xffffff);        // calibrated wire density; high enough to read, light enough to run
     root.add(torus.mesh);
     const relCentre = ring(0.12, 0xffeb3b, 0.95);               // the relative centre on the plane (a ring, no dot)
     const properTimeGauge = createTickedRing(1.0, 0x42a5f5, 0.36, 40);
@@ -872,7 +902,7 @@ function buildScene(mode, scene) {
       ]);
       root.rotation.y = 0;
       const moving = w > 0.02;
-      setInstrumentMetric("w " + w.toFixed(2) + " · γ " + gamma.toFixed(1), "dτ/dt " + (1 / gamma).toFixed(3));
+      setInstrumentMetric("w " + w.toFixed(2) + " · γ " + gamma.toFixed(1), "dτ/dt " + (1 / gamma).toFixed(3), "phase " + clamp01(w / W_MAX).toFixed(2));
       if (readout) readout.innerHTML =
         "<div style='color:#FFEB3B;font-weight:800;letter-spacing:0;margin-bottom:6px'>D4 HORN · RAPIDITY 0 → ∞</div>" +
         "w = " + w.toFixed(2) + " · β = " + vc.toFixed(4) + " " + bar(aB, "#42A5F5") + "<br>" +
@@ -915,7 +945,7 @@ function buildScene(mode, scene) {
 
     // the two tangent copies of the same complex plane (floor at 0, top at ∞)
     [-r, r].forEach((y) => {
-      const g = createGridPlane(9.0, 25); g.position.y = y; root.add(g);
+      const g = createGridPlane(9.0, 21); g.position.y = y; root.add(g);
       const u = createTickedRing(U, GOD, 0.46, 56); u.position.y = y; root.add(u); // unit circle = the equator's shadow
       root.add(line([new THREE.Vector3(-4.5, y, 0), new THREE.Vector3(4.5, y, 0)], 0x555555, 0.5));
       root.add(line([new THREE.Vector3(0, y, -4.5), new THREE.Vector3(0, y, 4.5)], 0x555555, 0.5));
@@ -968,7 +998,7 @@ function buildScene(mode, scene) {
     root.add(pMark); root.add(rayDown); root.add(rayUp); root.add(phiPt); root.add(nuPt);
 
     // the two spiral trails traced by the landings — reciprocal radii
-    const TRAIL = 180, phiTrail = [], nuTrail = [], pointTrail = [];
+    const TRAIL = 150, phiTrail = [], nuTrail = [], pointTrail = [];
     const phiLine = line([new THREE.Vector3(U, -r, 0)], 0xffeb3b, 0.24);
     const nuLine = line([new THREE.Vector3(U, r, 0)], 0x42a5f5, 0.24);
     const pointLine = line([new THREE.Vector3(r, 0, 0)], 0xffffff, 0.18);
@@ -1062,7 +1092,8 @@ function buildScene(mode, scene) {
       const balance = Math.sin(theta);
       setInstrumentMetric(
         "B " + balance.toFixed(3) + " · |φν-1| " + Math.abs(phi * nu - 1).toExponential(1),
-        thetaUserActive ? "manual latitude" : "reciprocal sweep"
+        thetaUserActive ? "manual latitude" : "reciprocal sweep",
+        "phase " + (((psi % TAU) + TAU) % TAU / TAU).toFixed(2)
       );
       if (readout) readout.textContent =
         "D5 BURRISPHERE · dual rays meet at P\n" +
@@ -1084,68 +1115,99 @@ function buildScene(mode, scene) {
       new THREE.TorusGeometry(1, tube, 12, 192),
       makeMaterial(color, opacity)
     );
-    const aeons = [
-      { phase: 0.00, color: 0xffffff },
-      { phase: 0.33, color: 0x9ca3af },
-      { phase: 0.66, color: 0x42a5f5 }
-    ].map(({ phase, color }) => {
-      const loop = cccRing(color, 0.8, 0.01);
-      loop.userData.phase = phase;
-      root.add(loop);
-      return loop;
-    });
+    const boundaryRadius = 1.82;
     const boundary = cccRing(0xffffff, 0.24, 0.009);
-    boundary.scale.setScalar(1.82);
+    boundary.scale.setScalar(boundaryRadius);
     root.add(boundary);
-    const boundaryGauge = createXYTickedRing(1.82, 0xffffff, 0.22, 72, 0.035);
+    const boundaryGauge = createXYTickedRing(boundaryRadius, 0xffffff, 0.22, 72, 0.035);
     root.add(boundaryGauge);
-    const startDot = new THREE.Mesh(
+
+    const aeonShell = cccRing(0xffffff, 0.74, 0.011);
+    const conformalShell = cccRing(0x42a5f5, 0.42, 0.009);
+    root.add(aeonShell, conformalShell);
+
+    const originDot = new THREE.Mesh(
       new THREE.SphereGeometry(0.065, 32, 16),
       makeMaterial(0xffffff, 0.96)
     );
-    const restartPulse = new THREE.Mesh(
-      new THREE.SphereGeometry(0.1, 32, 16),
-      makeMaterial(0xffeb3b, 0.32)
+    const boundaryDot = new THREE.Mesh(
+      new THREE.SphereGeometry(0.045, 24, 12),
+      makeMaterial(0xffeb3b, 0.9)
     );
-    root.add(startDot);
-    root.add(restartPulse);
+    root.add(originDot, boundaryDot);
+
+    const graphY = -1.45;
     root.add(line([
-      new THREE.Vector3(-1.82, 0, -0.01),
-      new THREE.Vector3(-0.12, 0, -0.01),
-      new THREE.Vector3(0, 0, -0.01),
-      new THREE.Vector3(0.12, 0, -0.01),
-      new THREE.Vector3(1.82, 0, -0.01)
-    ], 0xffffff, 0.18));
+      new THREE.Vector3(-1.65, graphY, 0.02),
+      new THREE.Vector3(1.65, graphY, 0.02)
+    ], 0xffffff, 0.2));
+    root.add(line([
+      new THREE.Vector3(-1.65, graphY, 0.02),
+      new THREE.Vector3(-1.65, graphY + 0.54, 0.02)
+    ], 0xffffff, 0.16));
+    const expansionCurve = [];
+    const inverseCurve = [];
+    for (let i = 0; i <= 96; i += 1) {
+      const q = i / 96;
+      const x = -1.65 + q * 3.3;
+      expansionCurve.push(new THREE.Vector3(x, graphY + 0.08 + 0.42 * smooth01(q), 0.02));
+      inverseCurve.push(new THREE.Vector3(x, graphY + 0.08 + 0.42 * (1 - smooth01(q)), 0.02));
+    }
+    root.add(line(expansionCurve, 0xffeb3b, 0.48));
+    root.add(line(inverseCurve, 0x42a5f5, 0.48));
+    const graphCursor = line([
+      new THREE.Vector3(-1.65, graphY + 0.02, 0.03),
+      new THREE.Vector3(-1.65, graphY + 0.56, 0.03)
+    ], 0xffffff, 0.3);
+    const expansionDot = makeMarker(new THREE.Vector3(-1.65, graphY + 0.08, 0.04), 0xffeb3b, 0.035);
+    const inverseDot = makeMarker(new THREE.Vector3(-1.65, graphY + 0.5, 0.04), 0x42a5f5, 0.035);
+    root.add(graphCursor, expansionDot, inverseDot);
+
     const phaseNeedle = line([
       new THREE.Vector3(0, 0, 0.02),
-      new THREE.Vector3(1.82, 0, 0.02)
+      new THREE.Vector3(boundaryRadius, 0, 0.02)
     ], 0xffeb3b, 0.45);
     root.add(phaseNeedle);
+
     dyn.push((t) => {
-      let leadPhase = 0;
-      aeons.forEach((loop) => {
-        const p = (t * 0.07 + loop.userData.phase) % 1;
-        if (loop.userData.phase === 0) leadPhase = p;
-        const scale = 0.12 + p * 1.7;
-        loop.scale.setScalar(scale);
-        loop.rotation.z = p * 0.18;
-        loop.material.opacity = Math.max(0.05, 0.72 * (1 - p));
-      });
+      const leadPhase = phase01(t, 0.045);
+      const q = smooth01(leadPhase);
+      const aeonRadius = 0.12 + q * (boundaryRadius - 0.12);
+      const conformalRadius = 0.12 + (1 - q) * (boundaryRadius - 0.12);
+      aeonShell.scale.setScalar(aeonRadius);
+      conformalShell.scale.setScalar(conformalRadius);
+      aeonShell.material.opacity = 0.18 + 0.58 * (1 - 0.35 * q);
+      conformalShell.material.opacity = 0.18 + 0.34 * q;
       const a = leadPhase * TAU;
       phaseNeedle.geometry.setFromPoints([
         new THREE.Vector3(0, 0, 0.02),
-        new THREE.Vector3(1.82 * Math.cos(a), 1.82 * Math.sin(a), 0.02)
+        new THREE.Vector3(boundaryRadius * Math.cos(a), boundaryRadius * Math.sin(a), 0.02)
       ]);
-      restartPulse.scale.setScalar(1);
-      restartPulse.material.opacity = 0.26;
+      boundaryDot.position.set(boundaryRadius * Math.cos(a), boundaryRadius * Math.sin(a), 0.03);
+      originDot.material.color.setHex(q > 0.92 ? 0xffeb3b : 0xffffff);
+      originDot.scale.setScalar(1 + 0.35 * q);
+      const graphX = -1.65 + q * 3.3;
+      const expansionY = graphY + 0.08 + 0.42 * q;
+      const inverseY = graphY + 0.08 + 0.42 * (1 - q);
+      graphCursor.geometry.setFromPoints([
+        new THREE.Vector3(graphX, graphY + 0.02, 0.03),
+        new THREE.Vector3(graphX, graphY + 0.56, 0.03)
+      ]);
+      expansionDot.position.set(graphX, expansionY, 0.04);
+      inverseDot.position.set(graphX, inverseY, 0.04);
       boundary.rotation.z = 0;
       boundaryGauge.rotation.z = 0;
       boundary.material.opacity = 0.22;
-      setInstrumentMetric("aeon phase " + leadPhase.toFixed(2), "boundary rescale");
+      setInstrumentMetric(
+        "a " + (aeonRadius / boundaryRadius).toFixed(2) + " · Ω " + (conformalRadius / boundaryRadius).toFixed(2),
+        "CCC rescale analogy",
+        "phase " + leadPhase.toFixed(2)
+      );
       if (readout) readout.textContent =
-        "CCC RETURN · ENDSTATE = START\n" +
+        "CCC RETURN · CONFORMAL RESCALE\n" +
         "/6 ≡ /0 is route closure, not a new object\n" +
-        "aeon expands → boundary thins → origin reappears\n" +
+        "aeon radius a=" + (aeonRadius / boundaryRadius).toFixed(2) + " · rescaled radius Ω=" + (conformalRadius / boundaryRadius).toFixed(2) + "\n" +
+        "end boundary maps to origin; the start marker is the only survivor\n" +
         "Penrose CCC is analogy here, not asserted identity";
     });
   }

@@ -609,9 +609,10 @@ noscript {
   margin-top: 64px;
   min-height: min(70vh, 720px);
   border: 1px solid var(--border);
-  border-radius: var(--shape-lg);
-  background: var(--elevated);
+  border-radius: var(--shape-md);
+  background: #050505;
   overflow: hidden;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.025), 0 18px 60px rgba(0,0,0,0.28);
 }
 
 .visual-panel::after {
@@ -644,6 +645,17 @@ body.dimension-page .visual-labels {
   overflow: hidden;
 }
 
+.instrument-graticule {
+  position: absolute;
+  inset: 24px;
+  opacity: 0.32;
+  background:
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.16) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.16) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(90deg, rgba(255,235,59,0.16) 0 1px, transparent 1px 128px),
+    repeating-linear-gradient(0deg, rgba(33,150,243,0.14) 0 1px, transparent 1px 128px);
+}
+
 .instrument-corners {
   position: absolute;
   inset: 12px;
@@ -651,9 +663,9 @@ body.dimension-page .visual-labels {
 
 .instrument-corners span {
   position: absolute;
-  width: 22px;
-  height: 22px;
-  border-color: rgba(255, 255, 255, 0.2);
+  width: 24px;
+  height: 24px;
+  border-color: rgba(255, 235, 59, 0.34);
   border-style: solid;
 }
 
@@ -686,21 +698,21 @@ body.dimension-page .visual-labels {
   content: "";
   position: absolute;
   inset: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(243, 244, 246, 0.12);
 }
 
 .instrument-overlay::after {
   inset: 24px;
-  border-color: rgba(255, 255, 255, 0.055);
+  border-color: rgba(243, 244, 246, 0.055);
 }
 
 .instrument-reticle {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,255,255,0.18) calc(50% - 0.5px), rgba(255,255,255,0.18) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
-    linear-gradient(0deg, transparent calc(50% - 0.5px), rgba(255,255,255,0.18) calc(50% - 0.5px), rgba(255,255,255,0.18) calc(50% + 0.5px), transparent calc(50% + 0.5px));
-  opacity: 0.52;
+    linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,235,59,0.2) calc(50% - 0.5px), rgba(255,235,59,0.2) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    linear-gradient(0deg, transparent calc(50% - 0.5px), rgba(66,165,245,0.2) calc(50% - 0.5px), rgba(66,165,245,0.2) calc(50% + 0.5px), transparent calc(50% + 0.5px));
+  opacity: 0.58;
 }
 
 .instrument-scale {
@@ -734,10 +746,10 @@ body.dimension-page .visual-labels {
   left: 13px;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
   align-items: center;
   max-width: calc(100% - 26px);
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(243, 244, 246, 0.76);
   font: 700 10px/1 "Roboto Mono", ui-monospace, Menlo, monospace;
   font-variant-numeric: tabular-nums;
   letter-spacing: 0;
@@ -746,13 +758,19 @@ body.dimension-page .visual-labels {
 
 .instrument-telemetry span {
   min-width: max-content;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  background: rgba(0, 0, 0, 0.62);
+  border: 1px solid rgba(243, 244, 246, 0.16);
+  border-radius: 4px;
+  background: rgba(5, 5, 5, 0.76);
   padding: 4px 6px;
+  backdrop-filter: blur(4px);
 }
 
 .instrument-telemetry span[data-field="metric"] {
   color: var(--gold);
+}
+
+.instrument-telemetry span[data-field="phase"] {
+  color: var(--sector-insurance);
 }
 
 .instrument-telemetry span[data-field="state"] {

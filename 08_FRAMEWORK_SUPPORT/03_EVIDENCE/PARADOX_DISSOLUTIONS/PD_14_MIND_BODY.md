@@ -45,7 +45,7 @@ Inside the framework, mind and body are read not as separate substances but as *
 
 | Aspect | Variable | Dimension | Characteristic |
 |--------|----------|-----------|----------------|
-| **Body / means** | `V` (finite-node viability; coordinate image `ν`) | D4 at contact, carried into D5 action | Physical substrate, metabolic capacity, neural architecture, tool/access means |
+| **Body / means** | `V` (finite-node means-to-act; `ν` as coordinate image) | D4 at contact, carried into D5 action | Physical substrate, metabolic capacity, neural architecture, tool/access means |
 | **Witness-mind** | `φ` as coordinate image | D4 | Recognition, integration, self-modeling, witness systemic awareness |
 | **Agent-mind / foresight** | `Φ` as finite-node coherence | D5 | Worldline-foresight: envisioning, ranking, and aiming possible moves |
 | **Experience** | `P_node = Φ × V` | D5 contact register | Finite-node embodied contact modeled as enacted product `[I/S]` |
@@ -84,7 +84,7 @@ The Hard Problem (PD_13) asks why there is "something it is like" to be consciou
 The mind-body problem is reframed through dimensional architecture:
 - **"Mind" as witness** = D4 recognition (φ held, ν not yet enacted) — recognition without agency
 - **"Mind" as agent** = D5 `Φ` — worldline-foresight able to rank and aim possible moves
-- **"Body"** = D4 viability substrate / means (`V`, coordinate image `ν`) — carried into action
+- **"Body"** = D4 means-to-act / viability substrate (`V`, with `ν` only as the coordinate image) — carried into action
 - **The problem** = mistaking D4 witness for a separate substance, then missing the D5 contact register where foresight and means couple
 
 The proposed dissolution: mind and body are not read as separate substances but as **complementary dimensional aspects** of the same being. At D5 (present duration), their enacted contact is modeled through `P_node = Φ × V`, while `P∞ = φ · ν = 1` remains the manifold identity rather than a proof that experience is physically conserved.

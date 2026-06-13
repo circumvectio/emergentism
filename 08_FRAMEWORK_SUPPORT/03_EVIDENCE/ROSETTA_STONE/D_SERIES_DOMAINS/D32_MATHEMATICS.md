@@ -77,7 +77,7 @@ coordinates: lowercase `φ` and `ν` name the reciprocal chart on `S²`; upperca
 catastrophe applies. Means without foresight are not usable potential: a child
 beside a jet cannot fly it. Foresight without access is not usable potential:
 an old pilot without the relevant bodily/tool means cannot enact the run. A
-hand, a shovel, and an industrial digger are all D4 viability at different
+hand, a shovel, and an industrial digger are all D4 means-to-act at different
 scales; D5 asks whether the actor can see and use the worldline they open.
 `[A]` for the product algebra, `[S]` for the internal bridge, `[I]` for the
 general agency reading.

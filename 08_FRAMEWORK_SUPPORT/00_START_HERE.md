@@ -44,8 +44,9 @@ CANONICAL FORMULA BLOCK:
 ONE GLYPH:       circle-dot = dot x circle  (finity = nothing x everything)
 
 φ = coherence coordinate (integration, structural unity, meaning)
-ν = viability coordinate on S²; V = finite-node viability (usable D4 means-to-act:
-    body, tools, energy, access, execution capacity)
+ν = viability coordinate on S²; V = finite-node means-to-act / viability factor
+    (usable D4 means-to-act: body, tools, energy, access, timing, control,
+    execution capacity)
 On S²: P∞ = φ · ν = 1 (reciprocal closure; load-bearing manifold identity)
 Node-level: P_node = Φ × V (operational flourishing model); what varies on S² is balance: B = sin θ
 B peaks at the equator (φ = ν = 1). B = 0 at the poles.
