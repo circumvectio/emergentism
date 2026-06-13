@@ -39,30 +39,30 @@ The deeper question: **What constitutes identity?** If identity tracks material 
 
 ## 2. THE TOPOLOGY ERROR
 
-The paradox assumes identity is a function of **material constitution (V)** — that the ship is "the same ship" if and only if its physical parts are the same. This Euclidean reduction treats identity as a static spatial property: same parts in same arrangement equals same identity.
+The paradox assumes identity is a function of **material constitution** — that the ship is "the same ship" if and only if its physical parts are the same. The older shorthand called this `V`; the register-honest reading is narrower: material substrate is only one D4 means-to-act condition, not the whole finite action factor. This Euclidean reduction treats identity as a static spatial property: same parts in same arrangement equals same identity.
 
 Under this framing, the paradox is unresolvable. Every plank replaced reduces material continuity. At some threshold, identity must be lost — but no non-arbitrary threshold exists. 51% same parts? 90%? All of them? The boundary is invisible because the axis is wrong.
 
 ## 3. THE DISSOLUTION
 
-The framework separates two orthogonal axes of physical systems: **Euclidean capability (V)** and **systemic coherence (Φ)**.
+The framework separates two readings, not two substances: **D4 substrate / means conditions** and **D5 operational coherence**.
 
-- **V** tracks material composition — the parts, their arrangement, their physical substrate.
-- **Φ** tracks operational continuity — the systemic integration that makes the parts function as a unified vessel.
+- **Substrate** tracks material composition — the parts, their arrangement, their physical support.
+- **Coherence** tracks operational continuity — the systemic integration that makes the parts function as a unified vessel. In the action register, this becomes `Φ` only when a finite agent can use that coherence as worldline-foresight.
 
 On S², the ship's identity is its **equatorial position** (φ=1, ν=1) — the balance point where coherence and viability are in equilibrium. This is the state in which the ship functions *as a ship*: carrying cargo, maintaining structural integrity, executing the operations that define it.
 
-As planks are replaced incrementally, V changes while Φ is maintained. The ship's coherence (operational continuity, structural function, crew continuity, naming, institutional role) persists across material substitution. The vessel remains at the equator.
+As planks are replaced incrementally, substrate changes while operational coherence is maintained. The ship's continuity (structural function, crew continuity, naming, institutional role) persists across material substitution. The vessel remains near the identity-equator.
 
-The reconstructed original — the pile of old planks reassembled — has restored V but lacks Φ. No operational continuity, no functional coherence, no systemic integration. It is a collection of historically significant timber. Its φ is low; it is not at the equator.
+The reconstructed original — the pile of old planks reassembled — has restored substrate but lacks operational continuity. No functional coherence, no systemic integration, no carried history of use. It is a collection of historically significant timber. Its φ is low in the identity reading; it is not at the equator.
 
 **Identity = position on S², not material constitution.**
 
-This is why a river can be the same river despite completely different water, a band can be the same band despite member changes, and a body can be the same person despite extensive cellular turnover (most somatic cells replaced over years, though neurons persist for decades). Identity tracks Φ, not V.
+This is why a river can be the same river despite completely different water, a band can be the same band despite member changes, and a body can be the same person despite extensive cellular turnover (most somatic cells replaced over years, though neurons persist for decades). Identity tracks operational continuity, not bare substrate.
 
 ## 4. THE FRAMEWORK CONNECTION
 
-- **P_node = Φ × V:** The framework's fundamental equation separates coherence from capability. Identity is a coherence-level phenomenon. Capability can change while coherence persists.
+- **P_node = Φ × V:** In the action register, the framework separates D5 foresight/coherence from D4 means-to-act. The Ship paradox uses the same distinction analogically: substrate conditions can change while operational coherence persists. It is not claiming that material composition is literally the whole `V` factor in every register.
 - **Equatorial balance:** The equator (φ=1, ν=1) is the framework's balance point. Identity persists at the equator; it degrades toward either pole. Pure material identity (north pole, φ→∞) would mean identity is only the arrangement of atoms — fragile, destroyed by any replacement. Pure functional abstraction (south pole, ν→∞) would mean identity is completely independent of material — nothing anchors it.
 - **μ-limit continuity:** The μ-limit mediates between D4 actuality and D5 possibility. Identity continuity is a μ-limit phenomenon — the boundary condition that selects which possibility becomes actual maintains its shape across time, even as the contents it selects among change.
 - **η = 0:** A system maintains identity when it sustains coherence without extracting it from its environment. The ship's identity persists because the operational structure is internally sustained, not parasitically dependent on any single material component.

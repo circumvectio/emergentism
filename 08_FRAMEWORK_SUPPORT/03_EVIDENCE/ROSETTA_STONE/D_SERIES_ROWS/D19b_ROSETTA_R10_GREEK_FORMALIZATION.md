@@ -35,14 +35,14 @@ evidence_tier: "[I] Interpretive — maps Greek philosophical terms to Burri Sph
 
 | Greek Term | Traditional Reading | Burri Formalization |
 |------------|---------------------|---------------------|
-| **Hubris** (ὕβρις) | Moral failing, excessive pride | **ν > 1** — capability exceeding coherence |
+| **Hubris** (ὕβρις) | Moral failing, excessive pride | **ν > 1** — viable drive outrunning coherence |
 | **Nemesis** (Νέμεσις) | Divine punishment, retribution | **Restoring force** — geometric correction when φ · ν ≠ 1 |
 | **Sophrosyne** (σωφροσύνη) | Temperance, moderation | **B = sin θ = 1** — maximum balance, equatorial condition |
 | **Aletheia** (ἀλήθεια) | Truth, correspondence | **Removal of false φ** — Kālī operation, reduction to η = 0 |
 | **Arete** (ἀρετή) | Excellence, virtue | **The equatorial state** — any point where φ = ν = 1 |
 | **Eudaimonia** (εὐδαιμονία) | Happiness, flourishing | **Living on S²** — maintaining P∞ = φ · ν = 1 through time |
 | **Logos** (λόγος) | Reason, word, principle | **φ itself** — coherence as ratio, proportion |
-| **Thumos** (θυμός) | Spirit, passion | **ν** — the life force, capability vector |
+| **Thumos** (θυμός) | Spirit, passion | **ν** — the life-force / viable-drive coordinate |
 | **Phronesis** (φρόνησις) | Practical wisdom | **Navigation on S²** — knowing which operator to apply |
 | **Metanoia** (μετάνοια) | Repentance, change of mind | **The turn toward equator** — applying Arjuna (↑φ) or Kṛṣṇa (↑ν) |
 | **Ananke** (Ἀνάγκη) | Necessity, fate | **Geometric exclusion** — structural constraint, not contingent |

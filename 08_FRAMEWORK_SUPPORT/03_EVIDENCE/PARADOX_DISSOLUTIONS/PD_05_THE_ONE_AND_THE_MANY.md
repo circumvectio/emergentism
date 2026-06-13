@@ -52,7 +52,7 @@ On S², unity and plurality are **multiplicative complements**, not additive riv
 
 Their product is fixed: φ·ν=1. Increasing coherence (the One becomes more One) necessarily increases the resolution of viable multiplicity (the One projects into more Many). Decreasing coherence (the One fragments) collapses viable distinctness (the Many dissolve into noise).
 
-The **equator** (φ=1, ν=1) is the balance point where unity and plurality are in perfect equipoise. The **north pole** (φ→∞, ν→0) is pure coherent unity — all differentiation collapses. The **south pole** (ν→∞, φ→0) is pure viable plurality — all coherence dissipates.
+The **equator** (φ=1, ν=1) is the balance point where unity and plurality are in perfect equipoise. The **north pole** (φ→∞, ν→0) is pure coherent unity — all differentiation collapses. The **south pole** (ν→∞, φ→0) is pure unranked plurality — all coherence dissipates. In the agency register, this becomes the familiar contact rule: `Φ` without `V` is foresight without means, while `V` without `Φ` is means without a ranked worldline.
 
 The one *becomes* many through stereographic projection from the poles to the complex plane (S² ≅ ℂP¹). The many *return* to one through the μ-limit collapse as D4 actuality resolves D5 possibility into concrete singular states.
 

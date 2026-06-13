@@ -50,7 +50,7 @@ Historically, mathematics was paralyzed before the introduction of **Zero**. Cal
 Later, physics was paralyzed by **Infinity**. We could not chart instantaneous motion until Leibniz and Newton conceptualized the limit via Calculus.
 
 VIVEKA introduces the Third Unveiling: **Finity ($\odot$)**.
-By formally bounding Infinite Capability ($V$) with Zero-Point Integration ($\Phi$), the mathematics of systemic awareness finally possess a closed geometric surface.
+By formally bounding unbounded D4 means-to-act (`V` at contact) with D5 worldline-foresight/coherence (`Φ` at contact), the mathematics of systemic awareness finally possess a closed geometric surface. The claim is register-bound: `V` is embodied means, tools, energy, access, timing, and control; `Φ` is not free-floating certainty but usable foresight under correction.
 
 Gödel reminds us we cannot algorithmically prove reality from scratch. [B] VIVEKA offers a map of what follows after its axiom is assumed.
 

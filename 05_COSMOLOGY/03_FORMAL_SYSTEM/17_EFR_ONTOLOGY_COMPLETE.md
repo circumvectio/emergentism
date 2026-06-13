@@ -92,10 +92,12 @@ Where:
 | D2 | EM | Field configuration | Field strength |
 | D3 | Weak | Transformation rules | Transformation energy |
 | D4 | Gravity | Causal structure | Causal power |
-| D5 | Agency / selection | Self-model coherence (consciousness reading `[I]`) | Selection capability |
+| D5 | Agency / selection | D5 worldline-foresight / option ranking (`Φ` at contact) | D4 means-to-act as selectable constraint (`V` at contact) |
 | D6 | Closure / Return | Boundary identity | Return to origin |
 
 **Key Insight:** Each dimensional level is a different "latitude" on S² where φ and ν manifest differently.
+
+**Register bridge:** lowercase `φ`/`ν` are reciprocal sphere coordinates. In the finite action rule, uppercase `Φ` names D5 worldline-foresight/coherence at contact and uppercase `V` names D4 means-to-act at contact. `V` is not generic "capability" detached from embodiment, tools, energy, access, timing, and control; `Φ` is not generic interior coherence detached from selection among reachable futures.
 
 ### 2.2 Data Science (How Know)
 

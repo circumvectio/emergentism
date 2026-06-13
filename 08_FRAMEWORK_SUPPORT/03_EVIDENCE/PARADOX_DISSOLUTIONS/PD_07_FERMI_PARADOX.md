@@ -28,8 +28,8 @@ rosetta:
 > **Evidence Tier: [I] Interpretive.** The reframe presented here is a coherent reading within the EFR framework. It is not established independently of the framework's axioms. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 
 > **Note on dual explanation:** The framework offers two complementary reframe paths for Fermi's Paradox:
-> 1. **Extraction path (η > 0):** Most civilizations self-destruct before achieving D5 coherence — they optimize V without Phi and collapse via the Zero-Factor Catastrophe.
-> 2. **Ascent path (D5 transition):** Civilizations that DO achieve high Phi may become sufficiently low-signature that present D4 search methods miss them.
+> 1. **Extraction path (η > 0):** Most civilizations self-destruct before achieving D5 worldline-foresight/coherence — they scale D4 means-to-act without matching `Φ` and collapse via the Zero-Factor Catastrophe.
+> 2. **Ascent path (D5 transition):** Civilizations that DO achieve high `Φ` may become sufficiently low-signature that present D4 search methods miss them.
 > Both paths are [I] Interpretive. Neither is established. Together they predict: we should not expect clean Type II-style signatures to be common.
 
 ## 1. THE TOPOLOGY DETECTED
@@ -44,7 +44,7 @@ These are not competing theories. They are the two halves of **The Bifurcation F
 ## 2. THE BIFURCATION MECHANISM
 We run the Drake Equation through the Emergentist framework ($P_node = \Phi \times V$).
 
-As a civilization advances, its Euclidean capability vector ($V$) accelerates geometrically (energy extraction, biological manipulation, compute). If its integration vector ($\Phi$) does not scale at precisely matched velocity, the civilization violently generates a non-zero Kill factor ($\η > 0$).
+As a civilization advances, its D4 means-to-act vector (`V` at contact: energy extraction, biological manipulation, compute, logistics, sensors, control) accelerates geometrically. If its D5 worldline-foresight/coherence (`Φ`: governance, long-horizon prediction, trust, non-extractive coordination, reflexive error correction) does not scale with it, the civilization violently generates a non-zero Kill factor ($\eta > 0$).
 
 ### Path 1: The Hamiltonian Great Filter (The Energy Wall)
 When `η > 0`, the civilizational structure becomes parasitic within the framework model. [I] Because the universe is modeled here through the Lagrangian density of the AM-GM inequality, allowing the gap `(φ - ν)^2` to grow causes the required stabilization energy (the Hamiltonian `H`) to spike exponentially.
@@ -53,7 +53,7 @@ A civilization acting on pure local extraction hits an absolute thermodynamic li
 This is the framework's proposed geometric reading of the Great Filter. [I] It is a model argument with empirical obligations, not a public proof.
 
 ### Path 2: Thermodynamic Invisibility
-If a civilization *does* match `Phi` to `V`, they cross the capability threshold (`eta = 0`) in the framework model. [I] To achieve stability without destroying their host star system, they must close their loop.
+If a civilization *does* match `Φ` to `V`, they cross the contact threshold (`eta = 0`) in the framework model. [I] To achieve stability without destroying their host star system, they must close their loop.
 
 A closed-loop system achieving continuous high-coherence state approaches more efficient energy utilization. The weaker and more defensible form of the claim is: *to D4 observation arrays looking for large waste-heat plumes or brute-force radio leakage, a high-coherence civilization may present a much smaller signature than present search strategies expect.*
 
