@@ -191,6 +191,9 @@ function ensureInstrumentOverlay(mode = page.animationMode || "model") {
   overlay.className = "instrument-overlay";
   overlay.setAttribute("aria-hidden", "true");
   overlay.innerHTML = `
+    <div class="instrument-corners">
+      <span></span><span></span><span></span><span></span>
+    </div>
     <div class="instrument-reticle"></div>
     <div class="instrument-scale x"></div>
     <div class="instrument-scale y"></div>
@@ -198,18 +201,30 @@ function ensureInstrumentOverlay(mode = page.animationMode || "model") {
       <span data-field="mode">${modeLabels[mode] || mode}</span>
       <span data-field="fps">-- fps</span>
       <span data-field="time">t+0.00s</span>
+      <span data-field="metric">sample --</span>
+      <span data-field="state">locked frame</span>
     </div>
   `;
   visual.appendChild(overlay);
   return overlay;
 }
 
+function setInstrumentMetric(metric = "", state = "") {
+  if (!visual) return;
+  if (metric) visual.dataset.instrumentMetric = metric;
+  if (state) visual.dataset.instrumentState = state;
+}
+
 function updateInstrumentOverlay(overlay, t, fps) {
   if (!overlay) return;
   const timeField = overlay.querySelector('[data-field="time"]');
   const fpsField = overlay.querySelector('[data-field="fps"]');
+  const metricField = overlay.querySelector('[data-field="metric"]');
+  const stateField = overlay.querySelector('[data-field="state"]');
   if (timeField) timeField.textContent = "t+" + t.toFixed(2) + "s";
   if (fpsField) fpsField.textContent = REDUCED_MOTION ? "static" : fps.toFixed(0) + " fps";
+  if (metricField) metricField.textContent = visual.dataset.instrumentMetric || "sample --";
+  if (stateField) stateField.textContent = visual.dataset.instrumentState || "locked frame";
 }
 
 function setupCanvas2D() {
@@ -318,6 +333,7 @@ function drawTitanCalculator(time = 0) {
     const reciprocalS = 1.85 + smooth01(sweep01(t, 0.035)) * 2.5;
     const lx = cx - reciprocalS * unit;
     const rx = cx + reciprocalS * unit;
+    setInstrumentMetric("s ±" + reciprocalS.toFixed(2), "unity fixed");
 
     ctx.setLineDash([8, 8]);
     ctx.strokeStyle = "rgba(245,245,245,0.48)";
@@ -401,6 +417,55 @@ function ring(radius, color, opacity = 1) {
   );
   mesh.rotation.x = Math.PI / 2;
   return mesh;
+}
+
+function setLinePoints(lineObject, points) {
+  const safePoints = points.length > 1
+    ? points
+    : [points[0] || new THREE.Vector3(), points[0] || new THREE.Vector3()];
+  lineObject.geometry.setFromPoints(safePoints);
+}
+
+function appendTrace(points, point, max = 120) {
+  points.push(point.clone());
+  if (points.length > max) points.shift();
+}
+
+function createTickedRing(radius, color = 0xffffff, opacity = 0.38, tickCount = 40, tickLength = 0.045) {
+  const group = new THREE.Group();
+  group.add(ring(radius, color, opacity));
+  for (let i = 0; i < tickCount; i += 1) {
+    const a = (i / tickCount) * TAU;
+    const major = i % 4 === 0;
+    const len = tickLength * (major ? 1.8 : 1);
+    const inner = radius - len;
+    const outer = radius + len;
+    group.add(line([
+      new THREE.Vector3(inner * Math.cos(a), 0, inner * Math.sin(a)),
+      new THREE.Vector3(outer * Math.cos(a), 0, outer * Math.sin(a))
+    ], color, opacity * (major ? 0.72 : 0.45)));
+  }
+  return group;
+}
+
+function createXYTickedRing(radius, color = 0xffffff, opacity = 0.32, tickCount = 48, tickLength = 0.04) {
+  const group = new THREE.Group();
+  group.add(new THREE.Mesh(
+    new THREE.TorusGeometry(radius, 0.009, 10, 192),
+    makeMaterial(color, opacity)
+  ));
+  for (let i = 0; i < tickCount; i += 1) {
+    const a = (i / tickCount) * TAU;
+    const major = i % 6 === 0;
+    const len = tickLength * (major ? 1.9 : 1);
+    const inner = radius - len;
+    const outer = radius + len;
+    group.add(line([
+      new THREE.Vector3(inner * Math.cos(a), inner * Math.sin(a), 0),
+      new THREE.Vector3(outer * Math.cos(a), outer * Math.sin(a), 0)
+    ], color, opacity * (major ? 0.78 : 0.44)));
+  }
+  return group;
 }
 
 function addReferenceFrame(scene) {
@@ -612,6 +677,7 @@ function buildScene(mode, scene) {
       }
       const u = (x - 1) / (x + 1);
       const E = Math.pow(Math.log(x), 2);
+      setInstrumentMetric("s " + s.toFixed(2) + " · x " + x.toFixed(2), "x·1/x=1");
       if (readout) readout.textContent =
         "SUDA'S LINE · in log coordinates the ONE is the centre\n" +
         "x = " + x.toFixed(2) + "   1/x = " + (1 / x).toFixed(2) + "   x · 1/x = 1\n" +
@@ -625,7 +691,12 @@ function buildScene(mode, scene) {
       new THREE.Vector3(-2.4, 0, 0),
       new THREE.Vector3(2.4, 0, 0)
     ], 0xffffff, 0.9));
-    root.add(createGridPlane(3.2, 11));
+    const grid = createGridPlane(3.2, 11);
+    root.add(grid);
+    const liftTrace = line([new THREE.Vector3(-1.8, 0, 0)], 0xffeb3b, 0.34);
+    const projectionTrace = line([new THREE.Vector3(-1.8, 0, 0)], 0x42a5f5, 0.22);
+    const liftSamples = [];
+    const projectionSamples = [];
     root.add(line([
       new THREE.Vector3(-1.8, 0, 0),
       new THREE.Vector3(0, 1.6, 0),
@@ -637,7 +708,7 @@ function buildScene(mode, scene) {
       new THREE.Vector3(-1.8, 0, 0),
       new THREE.Vector3(-1.8, 0, 0)
     ], 0xffeb3b, 0.65);
-    root.add(sample, projection, liftLine);
+    root.add(liftTrace, projectionTrace, sample, projection, liftLine);
     const readout = makeReadout();
     if (readout) {
       readout.style.left = "auto";
@@ -646,7 +717,7 @@ function buildScene(mode, scene) {
       readout.classList.add("instrument-readout");
     }
     dyn.push((t) => {
-      const p = smooth01(sweep01(t, 0.04));
+      const p = smooth01(sweep01(t, 0.032));
       const x = -1.8 + 3.6 * p;
       const lift = 1.6 * Math.max(0, 1 - Math.abs(2 * p - 1));
       const onLine = new THREE.Vector3(x, 0, 0);
@@ -654,6 +725,11 @@ function buildScene(mode, scene) {
       sample.position.copy(onPlane);
       projection.position.copy(onLine);
       liftLine.geometry.setFromPoints([onLine, onPlane]);
+      appendTrace(liftSamples, onPlane, 160);
+      appendTrace(projectionSamples, onLine, 160);
+      setLinePoints(liftTrace, liftSamples);
+      setLinePoints(projectionTrace, projectionSamples);
+      setInstrumentMetric("λ " + p.toFixed(2) + " · μ " + lift.toFixed(2), "orthogonal lift");
       if (readout) readout.textContent =
         "D2 μ-LIMIT · line-to-plane assay\n" +
         "sample λ = " + p.toFixed(2) + " · lift μ = " + lift.toFixed(2) + "\n" +
@@ -673,14 +749,18 @@ function buildScene(mode, scene) {
     const floor = createGridPlane(8.0, 23); floor.position.y = -r; root.add(floor);
     root.add(createSphere(r, 0.26));
     root.add(ring(r, 0xffffff, 0.85));                          // the equator (φ = 1 up here)
-    const unitC = ring(2 * r, 0xffeb3b, 0.55);                  // its shadow: the unit circle on ℂ
+    const unitC = createTickedRing(2 * r, 0xffeb3b, 0.48, 48);   // its shadow: the unit circle on ℂ
     unitC.position.y = -r; root.add(unitC);
     root.add(makeMarker(N, 0xb8b8b8, 0.07));                    // ∞
     root.add(makeMarker(Sp, 0x707070, 0.07));                   // 0 — where the sphere touches ℂ
     const projectionRay = line([N, new THREE.Vector3(2 * r, -r, 0)], 0xffeb3b, 0.9);
     const pMarker = makeMarker(new THREE.Vector3(r, 0, 0), 0xffffff, 0.08);
     const landMarker = makeMarker(new THREE.Vector3(2 * r, -r, 0), 0xffeb3b, 0.07);
-    root.add(projectionRay, pMarker, landMarker);
+    const surfaceTrace = line([new THREE.Vector3(r, 0, 0)], 0xffffff, 0.28);
+    const landingTrace = line([new THREE.Vector3(2 * r, -r, 0)], 0x42a5f5, 0.28);
+    const surfaceSamples = [];
+    const landingSamples = [];
+    root.add(surfaceTrace, landingTrace, projectionRay, pMarker, landMarker);
     const readout = makeReadout();
     if (readout) {
       readout.style.left = "auto";
@@ -689,15 +769,20 @@ function buildScene(mode, scene) {
       readout.classList.add("instrument-readout");
     }
     dyn.push((t) => {
-      const p = smooth01(sweep01(t, 0.035));
+      const p = smooth01(sweep01(t, 0.03));
       const th = (55 + 70 * p) * Math.PI / 180;
       const P = new THREE.Vector3(r * Math.sin(th), r * Math.cos(th), 0);
       const land = new THREE.Vector3(2 * r / Math.tan(th / 2), -r, 0);
       pMarker.position.copy(P);
       landMarker.position.copy(land);
       projectionRay.geometry.setFromPoints([N, land]);
+      appendTrace(surfaceSamples, P, 150);
+      appendTrace(landingSamples, land, 150);
+      setLinePoints(surfaceTrace, surfaceSamples);
+      setLinePoints(landingTrace, landingSamples);
       const phi = 1 / Math.tan(th / 2);
       const nu = Math.tan(th / 2);
+      setInstrumentMetric("θ " + (th * 180 / Math.PI).toFixed(1) + "° · φν " + (phi * nu).toFixed(3), "tangent projection");
       if (readout) readout.textContent =
         "D3 RIEMANN/BLOCH · tangent projection\n" +
         "θ = " + (th * 180 / Math.PI).toFixed(1) + "° · φ = cot(θ/2) = " + phi.toFixed(2) + "\n" +
@@ -714,13 +799,16 @@ function buildScene(mode, scene) {
     // slider sends w toward infinity: β tends to c, R/r tends to 0, and the
     // finite drawing approaches the sphere limit without pretending to reach it.
     root.add(createGridPlane(6.4, 21));                          // the complex plane
-    root.add(ring(1.0, 0xffeb3b, 0.7));                          // unit circle |z|=1  (x=1, Suda)
+    root.add(createTickedRing(1.0, 0xffeb3b, 0.52, 40));          // unit circle |z|=1  (x=1, Suda)
     root.add(line([new THREE.Vector3(-3.1, 0, 0), new THREE.Vector3(3.1, 0, 0)], 0x555555, 0.55));
     root.add(line([new THREE.Vector3(0, 0, -3.1), new THREE.Vector3(0, 0, 3.1)], 0x555555, 0.55));
     const torus = makeMorphTorus(1.7, 104, 30, 0xffffff);       // high-resolution mesh
     root.add(torus.mesh);
     const relCentre = ring(0.12, 0xffeb3b, 0.95);               // the relative centre on the plane (a ring, no dot)
-    root.add(relCentre);
+    const properTimeGauge = createTickedRing(1.0, 0x42a5f5, 0.36, 40);
+    properTimeGauge.position.y = 0.014;
+    const rapidityTrace = line([new THREE.Vector3(0, 0.018, 0), new THREE.Vector3(0, 0.018, 0)], 0x42a5f5, 0.58);
+    root.add(properTimeGauge, rapidityTrace, relCentre);
 
     const readout = makeReadout();
     if (readout) {
@@ -758,7 +846,7 @@ function buildScene(mode, scene) {
       if (userActive && slider) {
         w = (parseFloat(slider.value) / 100) * W_MAX;            // slider is LINEAR in rapidity = LOG in velocity
       } else {
-        w = smooth01(sweep01(t, 0.035)) * W_MAX * 0.92;          // measured rapidity sweep until the user grabs the slider
+        w = smooth01(sweep01(t, 0.028)) * W_MAX * 0.92;          // measured rapidity sweep until the user grabs the slider
         if (slider) slider.value = String(Math.round((w / W_MAX) * 100));
       }
       const vc = Math.tanh(w);                                  // β = v/c — tends to 1
@@ -777,8 +865,14 @@ function buildScene(mode, scene) {
       const px = 2.5 * Math.tanh(w / 2.2);
       relCentre.position.set(px, 0, 0);
       relCentre.scale.setScalar(1 + 0.45 * aB);
+      properTimeGauge.scale.setScalar(Math.max(0.04, 1 / gamma));
+      rapidityTrace.geometry.setFromPoints([
+        new THREE.Vector3(0, 0.018, 0),
+        new THREE.Vector3(px, 0.018, 0)
+      ]);
       root.rotation.y = 0;
       const moving = w > 0.02;
+      setInstrumentMetric("w " + w.toFixed(2) + " · γ " + gamma.toFixed(1), "dτ/dt " + (1 / gamma).toFixed(3));
       if (readout) readout.innerHTML =
         "<div style='color:#FFEB3B;font-weight:800;letter-spacing:0;margin-bottom:6px'>D4 HORN · RAPIDITY 0 → ∞</div>" +
         "w = " + w.toFixed(2) + " · β = " + vc.toFixed(4) + " " + bar(aB, "#42A5F5") + "<br>" +
@@ -822,7 +916,7 @@ function buildScene(mode, scene) {
     // the two tangent copies of the same complex plane (floor at 0, top at ∞)
     [-r, r].forEach((y) => {
       const g = createGridPlane(9.0, 25); g.position.y = y; root.add(g);
-      const u = ring(U, GOD, 0.6); u.position.y = y; root.add(u);    // unit circle = the equator's shadow
+      const u = createTickedRing(U, GOD, 0.46, 56); u.position.y = y; root.add(u); // unit circle = the equator's shadow
       root.add(line([new THREE.Vector3(-4.5, y, 0), new THREE.Vector3(4.5, y, 0)], 0x555555, 0.5));
       root.add(line([new THREE.Vector3(0, y, -4.5), new THREE.Vector3(0, y, 4.5)], 0x555555, 0.5));
     });
@@ -874,10 +968,15 @@ function buildScene(mode, scene) {
     root.add(pMark); root.add(rayDown); root.add(rayUp); root.add(phiPt); root.add(nuPt);
 
     // the two spiral trails traced by the landings — reciprocal radii
-    const TRAIL = 180, phiTrail = [], nuTrail = [];
+    const TRAIL = 180, phiTrail = [], nuTrail = [], pointTrail = [];
     const phiLine = line([new THREE.Vector3(U, -r, 0)], 0xffeb3b, 0.24);
-    const nuLine = line([new THREE.Vector3(U, r, 0)], 0xffeb3b, 0.24);
-    root.add(phiLine); root.add(nuLine);
+    const nuLine = line([new THREE.Vector3(U, r, 0)], 0x42a5f5, 0.24);
+    const pointLine = line([new THREE.Vector3(r, 0, 0)], 0xffffff, 0.18);
+    const phiRange = createTickedRing(U, GOD, 0.2, 56);
+    const nuRange = createTickedRing(U, 0x42a5f5, 0.2, 56);
+    phiRange.position.y = -r + 0.01;
+    nuRange.position.y = r + 0.01;
+    root.add(phiRange, nuRange, phiLine, nuLine, pointLine);
 
     const readout = makeReadout();
     if (readout) {
@@ -914,10 +1013,10 @@ function buildScene(mode, scene) {
       Math.round(((theta - THETA_MIN) / (THETA_MAX - THETA_MIN)) * 100);
     const quadName = ["I", "II", "III", "IV"];
     dyn.push(function (t) {
-      const psi = t * 0.42;                                          // measured azimuth trace
+      const psi = t * 0.34;                                          // measured azimuth trace
       const theta = thetaUserActive
         ? thetaFromSlider()
-        : THETA_MIN + smooth01(sweep01(t, 0.038)) * (THETA_MAX - THETA_MIN); // auto-demo until the reader grabs θ
+        : THETA_MIN + smooth01(sweep01(t, 0.03)) * (THETA_MAX - THETA_MIN); // auto-demo until the reader grabs θ
       if (!thetaUserActive && thetaSlider) thetaSlider.value = String(sliderFromTheta(theta));
       const phi = 1 / Math.tan(theta / 2);                           // cot(θ/2)
       const nu = Math.tan(theta / 2);                                // 1/φ
@@ -931,6 +1030,10 @@ function buildScene(mode, scene) {
       nuPt.position.copy(Lnu);
       rayDown.geometry.setFromPoints([N, Lphi]);                     // straight through P
       rayUp.geometry.setFromPoints([S, Lnu]);                        // straight through P
+      phiRange.scale.setScalar(Math.min(phi, 4.5 / U));
+      nuRange.scale.setScalar(Math.min(nu, 4.5 / U));
+      phiRange.visible = Number.isFinite(phi);
+      nuRange.visible = Number.isFinite(nu);
       const BALANCE_EPSILON = 0.015;
       const isBalance = Math.abs(phi - 1) <= BALANCE_EPSILON;        // the equator: Φ = V = 1
       const isGod = phi > 1 + BALANCE_EPSILON;                       // P above the equator
@@ -940,8 +1043,10 @@ function buildScene(mode, scene) {
       rayUp.material.color.setHex(col);
       phiTrail.push(Lphi.clone()); if (phiTrail.length > TRAIL) phiTrail.shift();
       nuTrail.push(Lnu.clone()); if (nuTrail.length > TRAIL) nuTrail.shift();
-      phiLine.geometry.setFromPoints(phiTrail);
-      nuLine.geometry.setFromPoints(nuTrail);
+      appendTrace(pointTrail, P, TRAIL);
+      setLinePoints(phiLine, phiTrail);
+      setLinePoints(nuLine, nuTrail);
+      setLinePoints(pointLine, pointTrail);
       root.rotation.y = 0;
       const q = quadName[Math.floor((((psi % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI)) / (Math.PI / 2)) % 4];
       const opName = isBalance
@@ -954,6 +1059,10 @@ function buildScene(mode, scene) {
         : isGod
           ? "GOD-move (Φ > V)"
           : "DEMON-move (V > Φ)";
+      setInstrumentMetric(
+        "θ " + (theta * 180 / Math.PI).toFixed(0) + "° · |φν-1| " + Math.abs(phi * nu - 1).toExponential(1),
+        thetaUserActive ? "manual latitude" : "reciprocal sweep"
+      );
       if (readout) readout.textContent =
         "D5 BURRISPHERE · dual rays meet at P\n" +
         "θ " + (theta * 180 / Math.PI).toFixed(0) + "°" + (thetaUserActive ? " held" : " sweep") + " · φ " + phi.toFixed(2) + " · ν " + nu.toFixed(2) + " · φ·ν=1 · E/mc² " + ((phi + nu) / 2).toFixed(2) + "\n" +
@@ -987,6 +1096,8 @@ function buildScene(mode, scene) {
     const boundary = cccRing(0xffffff, 0.24, 0.009);
     boundary.scale.setScalar(1.82);
     root.add(boundary);
+    const boundaryGauge = createXYTickedRing(1.82, 0xffffff, 0.22, 72, 0.035);
+    root.add(boundaryGauge);
     const startDot = new THREE.Mesh(
       new THREE.SphereGeometry(0.065, 32, 16),
       makeMaterial(0xffffff, 0.96)
@@ -1004,18 +1115,32 @@ function buildScene(mode, scene) {
       new THREE.Vector3(0.12, 0, -0.01),
       new THREE.Vector3(1.82, 0, -0.01)
     ], 0xffffff, 0.18));
+    const phaseNeedle = line([
+      new THREE.Vector3(0, 0, 0.02),
+      new THREE.Vector3(1.82, 0, 0.02)
+    ], 0xffeb3b, 0.45);
+    root.add(phaseNeedle);
     dyn.push((t) => {
+      let leadPhase = 0;
       aeons.forEach((loop) => {
         const p = (t * 0.07 + loop.userData.phase) % 1;
+        if (loop.userData.phase === 0) leadPhase = p;
         const scale = 0.12 + p * 1.7;
         loop.scale.setScalar(scale);
         loop.rotation.z = p * 0.18;
         loop.material.opacity = Math.max(0.05, 0.72 * (1 - p));
       });
+      const a = leadPhase * TAU;
+      phaseNeedle.geometry.setFromPoints([
+        new THREE.Vector3(0, 0, 0.02),
+        new THREE.Vector3(1.82 * Math.cos(a), 1.82 * Math.sin(a), 0.02)
+      ]);
       restartPulse.scale.setScalar(1);
       restartPulse.material.opacity = 0.26;
       boundary.rotation.z = 0;
+      boundaryGauge.rotation.z = 0;
       boundary.material.opacity = 0.22;
+      setInstrumentMetric("aeon phase " + leadPhase.toFixed(2), "boundary rescale");
       if (readout) readout.textContent =
         "CCC RETURN · ENDSTATE = START\n" +
         "/6 ≡ /0 is route closure, not a new object\n" +

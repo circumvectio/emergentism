@@ -644,6 +644,43 @@ body.dimension-page .visual-labels {
   overflow: hidden;
 }
 
+.instrument-corners {
+  position: absolute;
+  inset: 12px;
+}
+
+.instrument-corners span {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+}
+
+.instrument-corners span:nth-child(1) {
+  top: 0;
+  left: 0;
+  border-width: 1px 0 0 1px;
+}
+
+.instrument-corners span:nth-child(2) {
+  top: 0;
+  right: 0;
+  border-width: 1px 1px 0 0;
+}
+
+.instrument-corners span:nth-child(3) {
+  right: 0;
+  bottom: 0;
+  border-width: 0 1px 1px 0;
+}
+
+.instrument-corners span:nth-child(4) {
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 1px 1px;
+}
+
 .instrument-overlay::before,
 .instrument-overlay::after {
   content: "";
@@ -676,7 +713,9 @@ body.dimension-page .visual-labels {
   right: 12px;
   bottom: 12px;
   height: 12px;
-  background: repeating-linear-gradient(90deg, rgba(255,255,255,0.22) 0 1px, transparent 1px 32px);
+  background:
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.28) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.11) 0 1px, transparent 1px 8px);
 }
 
 .instrument-scale.y {
@@ -684,7 +723,9 @@ body.dimension-page .visual-labels {
   bottom: 12px;
   left: 12px;
   width: 12px;
-  background: repeating-linear-gradient(0deg, rgba(255,255,255,0.22) 0 1px, transparent 1px 32px);
+  background:
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.28) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.11) 0 1px, transparent 1px 8px);
 }
 
 .instrument-telemetry {
@@ -692,6 +733,7 @@ body.dimension-page .visual-labels {
   top: 13px;
   left: 13px;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   align-items: center;
   max-width: calc(100% - 26px);
@@ -707,6 +749,14 @@ body.dimension-page .visual-labels {
   border: 1px solid rgba(255, 255, 255, 0.16);
   background: rgba(0, 0, 0, 0.62);
   padding: 4px 6px;
+}
+
+.instrument-telemetry span[data-field="metric"] {
+  color: var(--gold);
+}
+
+.instrument-telemetry span[data-field="state"] {
+  color: rgba(66, 165, 245, 0.92);
 }
 
 .visual-labels .label {
@@ -758,6 +808,39 @@ body.dimension-page .visual-labels {
 .model-readout.instrument-readout {
   text-wrap: auto;
   font-variant-numeric: tabular-nums;
+}
+
+.model-readout,
+.model-slider {
+  font-variant-numeric: tabular-nums;
+}
+
+.model-slider input[type="range"] {
+  appearance: none;
+  height: 4px !important;
+  border-radius: 999px;
+  background:
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.22) 0 1px, transparent 1px 8px),
+    linear-gradient(90deg, rgba(255,235,59,0.45), rgba(66,165,245,0.34));
+}
+
+.model-slider input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #050505;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.46);
+}
+
+.model-slider input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #050505;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.46);
 }
 
 .dimension-canvas {
