@@ -9,7 +9,7 @@
 
 <link rel="stylesheet" href="assets/css/xai.css">
 </head>
-<body>
+<body class="sphere-instrument">
 <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0">The Burrisphere</h1>
 <header class="topbar">
   <a class="brand" href="./">Emergentism</a>
@@ -29,6 +29,7 @@
 </header>
 <canvas id="scene" aria-label="Animated Burrisphere — the seven positions on the sphere, the equator is the life"></canvas>
 <div class="vignette"></div>
+<div class="lab-frame" aria-hidden="true"><span class="corner"></span><span class="corner"></span><span class="corner"></span><span class="corner"></span></div>
 
 <span class="brand">Emergentism · The Burrisphere</span>
 <a class="exit" href="index.html">Enter the framework →</a>
@@ -52,11 +53,12 @@
 </div>
 
 <div class="hint" id="hint">drag to rotate · click or scrub a position</div>
+<div id="stage-readout" aria-live="polite">BURRISPHERE INSTRUMENT</div>
 <div class="legend">
-  <span><i style="background:#8b2e2e"></i>Demon-move</span>
-  <span><i style="background:#c9a84c"></i>God-move</span>
+  <span><i style="background:#F44336"></i>Demon-move</span>
+  <span><i style="background:#FFEB3B"></i>God-move</span>
   <span><i style="background:#7a6ea8"></i>Executive</span>
-  <span><i style="background:#e8e4df"></i>L4 equator</span>
+  <span><i style="background:#F3F4F6"></i>L4 equator</span>
 </div>
 <div class="legend-note" style="font-size:.78rem;opacity:.8;text-align:center">Valence is on the <em>move</em> (its η-direction), not the operator — labels mark a position's <em>characteristic</em> move, not a fixed moral type. [S]</div>
 
@@ -82,7 +84,7 @@ try {
   ({ OrbitControls } = await import('three/addons/controls/OrbitControls.js'));
 } catch (e) { document.getElementById('fallback').style.display = 'flex'; throw e; }
 
-const GOLD = 0xc9a84c, TEAL = 0x3a7a6e, CRIMSON = 0x8b2e2e, VIOLET = 0x7a6ea8, WHITE = 0xe8e4df;
+const GOLD = 0xffeb3b, TEAL = 0x2196f3, CRIMSON = 0xf44336, VIOLET = 0x8b5cf6, WHITE = 0xf3f4f6;
 // the seven positions (read off 00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md / the Master Rosetta)
 const POS = [
   { L:'L1', op:'Kali',  tier:'Demon', tierNote:'Demon · η-boundary', caste:'Caṇḍāla', ology:'Teleology',    q:'What is the end?',        B:'→ 0',  act:'limit  Φ → 0',          phi:165, col:CRIMSON },
@@ -161,11 +163,13 @@ POS.forEach((p, i) => {
 // info panel
 const els = { lvl:'p-lvl', op:'p-op', tier:'p-tier', ology:'p-ology', q:'p-q', b:'p-b', theta:'p-theta', chart:'p-chart', act:'p-act' };
 const positionScrub = document.getElementById('position-scrub');
+const stageReadout = document.getElementById('stage-readout');
 function select(i){
   const p = POS[i];
   const theta = p.phi * Math.PI / 180;
   const phi = 1 / Math.tan(theta / 2);
   const nu = Math.tan(theta / 2);
+  const balance = Math.sin(theta);
   document.getElementById(els.lvl).textContent = `${p.L} · ${p.caste}`;
   document.getElementById(els.op).textContent = p.op;
   const t = document.getElementById(els.tier); t.textContent = p.tierNote;
@@ -177,6 +181,12 @@ function select(i){
   document.getElementById(els.theta).textContent = p.phi.toFixed(1) + '°';
   document.getElementById(els.chart).textContent = phi.toFixed(2) + ' · ' + nu.toFixed(2);
   document.getElementById(els.act).textContent = p.act;
+  if (stageReadout) stageReadout.textContent =
+    'BURRISPHERE INSTRUMENT\n' +
+    p.L + ' · ' + p.op + ' · ' + p.ology + '\n' +
+    'θ = ' + p.phi.toFixed(1) + '° · φ = ' + phi.toFixed(2) + ' · ν = ' + nu.toFixed(2) + ' · φν = ' + (phi * nu).toFixed(3) + '\n' +
+    'B = sinθ = ' + balance.toFixed(3) + ' · selected row = ' + i + '/6\n' +
+    'tier: [S] sphere chart; [I] operator reading';
   markers.forEach((m, k) => m.scale.setScalar(k === i ? 1.5 : 1));
   const selected = markers[i].position.clone();
   selectorRay.geometry.setFromPoints([new THREE.Vector3(0, 0, 0), selected]);
@@ -218,7 +228,7 @@ addEventListener('resize', () => {
 
 <footer class="site-footer">
   <div class="phi">⊙ = • × ○</div>
-  <p>Emergentism · The Burrisphere (visual prototype)</p>
+  <p>Emergentism · The Burrisphere instrument</p>
 </footer>
 
 </body>

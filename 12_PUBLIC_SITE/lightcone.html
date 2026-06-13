@@ -28,6 +28,7 @@
 </header>
 <canvas id="scene" aria-label="Animated Minkowski light cone of reachable futures — the Will to Potential"></canvas>
 <div class="vignette"></div>
+<div class="lab-frame" aria-hidden="true"><span class="corner"></span><span class="corner"></span><span class="corner"></span><span class="corner"></span></div>
 <span class="brand">Emergentism · The Will to Potential</span>
 <a class="exit" href="index.html">Enter the framework →</a>
 <div class="title">
@@ -57,7 +58,7 @@ try {
 const REDUCED_MOTION = !!(window.matchMedia
   && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
 const TAU = Math.PI * 2;
-const GOLD = 0xc9a84c, TEAL = 0x3a7a6e, CRIMSON = 0x8b2e2e;
+const GOLD = 0xffeb3b, TEAL = 0x2196f3, CRIMSON = 0xf44336;
 const canvas = document.getElementById('scene');
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));

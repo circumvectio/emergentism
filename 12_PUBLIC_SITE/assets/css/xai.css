@@ -1788,6 +1788,44 @@ pre.glyph-block {
    ============================================================ */
 #scene { position: fixed; inset: 0; z-index: 0; }
 #scene canvas { display: block; width: 100%; height: 100%; }
+.lab-frame {
+  position: fixed;
+  inset: 84px 24px 24px;
+  z-index: 2;
+  pointer-events: none;
+  border: 1px solid rgba(243, 244, 246, 0.12);
+  background:
+    repeating-linear-gradient(90deg, rgba(243,244,246,.08) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(0deg, rgba(243,244,246,.08) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(90deg, rgba(255,235,59,.13) 0 1px, transparent 1px 128px),
+    repeating-linear-gradient(0deg, rgba(33,150,243,.12) 0 1px, transparent 1px 128px);
+  box-shadow: inset 0 0 0 12px rgba(5,5,5,.14);
+  opacity: .74;
+}
+.lab-frame::before,
+.lab-frame::after {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(243,244,246,.07);
+}
+.lab-frame::after {
+  inset: 0;
+  background:
+    linear-gradient(90deg, transparent calc(50% - .5px), rgba(255,235,59,.2) calc(50% - .5px), rgba(255,235,59,.2) calc(50% + .5px), transparent calc(50% + .5px)),
+    linear-gradient(0deg, transparent calc(50% - .5px), rgba(66,165,245,.18) calc(50% - .5px), rgba(66,165,245,.18) calc(50% + .5px), transparent calc(50% + .5px));
+}
+.lab-frame .corner {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-color: rgba(255,235,59,.38);
+  border-style: solid;
+}
+.lab-frame .corner:nth-child(1) { top: 0; left: 0; border-width: 1px 0 0 1px; }
+.lab-frame .corner:nth-child(2) { top: 0; right: 0; border-width: 1px 1px 0 0; }
+.lab-frame .corner:nth-child(3) { right: 0; bottom: 0; border-width: 0 1px 1px 0; }
+.lab-frame .corner:nth-child(4) { bottom: 0; left: 0; border-width: 0 0 1px 1px; }
 .vignette {
   position: fixed; inset: 0; z-index: 1; pointer-events: none;
   background:
@@ -1904,6 +1942,10 @@ body > a.exit:hover {
   font-variant-numeric: tabular-nums;
   backdrop-filter: blur(8px);
   pointer-events: none;
+}
+body.sphere-instrument #stage-readout {
+  left: 32px;
+  right: auto;
 }
 #enter {
   position: fixed;
@@ -2036,6 +2078,10 @@ button.nav:hover {
     overflow: hidden;
     font-size: 9.5px;
   }
+  body.sphere-instrument #stage-readout {
+    left: 18px;
+    right: 18px;
+  }
   button.nav {
     display: none;
   }
@@ -2137,6 +2183,54 @@ button.nav:hover {
   .legend-note {
     background: var(--bg);
     backdrop-filter: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .lab-frame {
+    inset: 76px 18px 18px;
+  }
+  body.sphere-instrument #panel {
+    left: 18px;
+    right: 18px;
+    top: auto;
+    bottom: 92px;
+    width: auto;
+    max-height: min(310px, calc(100vh - 292px));
+    overflow: auto;
+    padding: 10px 12px;
+    font-size: 11px;
+  }
+  body.sphere-instrument #panel .op {
+    font-size: 16px;
+  }
+  body.sphere-instrument #panel .q {
+    display: none;
+  }
+  body.sphere-instrument #panel .row {
+    padding: 4px 0;
+  }
+  body.sphere-instrument .title,
+  body.sphere-instrument .legend-note {
+    display: none;
+  }
+  body.sphere-instrument .hint {
+    bottom: 64px;
+    max-width: calc(100vw - 36px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 10px;
+  }
+  body.sphere-instrument .legend {
+    left: 18px;
+    right: 18px;
+    bottom: 34px;
+    transform: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 10px;
+    white-space: normal;
+    font-size: 10px;
   }
 }
 
