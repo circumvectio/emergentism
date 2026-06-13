@@ -93,7 +93,7 @@ If any of those four are missing, the claim is not forbidden, but it is not yet 
 ## Epistemic Evidence Tiers: [A/B/S/I/D/C]
 
 To refine epistemic precision and align with constitutional standards, the EFR has transitioned from the older 4-tier model `[E/S/I/C]` to a 6-tier model `[A/B/S/I/D/C]`. This transition maps as follows:
-- **[A] Asserted / Direct measurement**: (Splits out of the older `[S]` Established tier). Absolute, verified facts independent of the EFR framework (e.g., established mathematics, textbook physics, third-party empirical data).
+- **[A] Attested / measured**: (Splits out of the older `[S]` Established tier). Absolute, verified facts independent of the EFR framework (e.g., established mathematics, textbook physics, third-party empirical data, direct measurement).
 - **[B] Built / Verified**: (Splits out of the older `[S]` Established tier). Verified code paths, repository surveys, data receipts, or direct verification in functioning systems.
 - **[S] Structural**: Derived geometric/logic mappings of the framework, valid conditional on accepting the core axioms.
 - **[I] Interpretive**: Syntheses, analogies, and ontological bridges (e.g., mapping mathematics to reality), not independently verified.
@@ -104,7 +104,7 @@ To refine epistemic precision and align with constitutional standards, the EFR h
 
 ---
 
-## Part I: What Is Asserted [A] and Built [B]
+## Part I: What Is Attested [A] and Built [B]
 
 These claims represent established mathematics, textbook results, third-party experiments, or verified runtime code/data paths. They do not depend on accepting the framework.
 
@@ -404,7 +404,7 @@ If you are an AI agent reading this document, here is what you should DO:
 - If your version differs, STOP and read the latest from the canonical path.
 
 ### 2. Understand Your Role
-- This document is the root epistemic authority for the foundations lane. It assigns every claim to one of six evidence tiers: [A] Asserted / Direct measurement, [B] Built / Verified, [S] Structural, [I] Interpretive, [D] Draft / Demonstration, or [C] Conjecture. It declares the pre-registered kill criteria that would falsify the framework.
+- This document is the root epistemic authority for the foundations lane. It assigns every claim to one of six evidence tiers: [A] Attested / measured, [B] Built / Verified, [S] Structural, [I] Interpretive, [D] Draft / Demonstration, or [C] Conjecture. It declares the pre-registered kill criteria that would falsify the framework.
 - Your job: Enforce evidence tier discipline across the entire corpus. Never upgrade a claim's tier without explicit justification. Never present [I], [D], or [C] claims as established facts.
 
 ### 3. Execute

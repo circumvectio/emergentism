@@ -173,7 +173,7 @@ Derived from axioms — not independent.
 
 | Tier | Name | Definition |
 |------|------|-----------|
-| [A] | Asserted / Direct measurement | Independent mathematics, textbook science, third-party empirical facts, or direct measurement |
+| [A] | Attested / measured | Independent mathematics, textbook science, third-party empirical facts, or direct measurement |
 | [B] | Built / Verified | Repository receipts, functioning-system results, or verified code paths |
 | [S] | Structural | Derived from accepted framework premises through valid inference |
 | [I] | Interpretive | Framework-consistent reading of established data |

@@ -194,4 +194,4 @@ P-EQ joins that register: it is **designed to die cheaply if wrong**, and its de
 η = 0. The framework that tests itself approaches truth. The framework that excuses its test failures approaches ideology.
 
 ---
-¹ *Legacy evidence tier note: References to the "[S]" study or tier in this document are historical. Under the current six-tier system ([A/B/S/I/D/C]), the legacy "[S]" (Established) tier has been split into "[A]" (Asserted / direct measurement) and "[B]" (Built / verified repository receipt). A planned empirical study remains conjecture [C] or draft [D] until executed and verified.*
+¹ *Legacy evidence tier note: References to the "[S]" study or tier in this document are historical. Under the current six-tier system ([A/B/S/I/D/C]), the legacy "[S]" (Established) tier has been split into "[A]" (Attested / measured independent fact) and "[B]" (Built / verified repository receipt). A planned empirical study remains conjecture [C] or draft [D] until executed and verified.*

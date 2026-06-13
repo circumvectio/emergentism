@@ -69,7 +69,7 @@ ARCHETYPE GRAMMAR (load-bearing; do NOT conflate core state, actions, and witnes
   WITNESSES (meta-positions of disclosure, NOT Being):    Viśvarūpa(pattern-whole)  Kāla(time)  Ananta(context)
 
 EVIDENCE TIERS — Every claim is marked:
-  [A] Asserted / direct measurement / established external fact
+  [A] Attested / measured / established external fact
   [B] Built / verified repo or runtime receipt
   [S] Structural  (follows from axioms IF you accept them)
   [I] Interpretive (framework-consistent, not framework-independent)

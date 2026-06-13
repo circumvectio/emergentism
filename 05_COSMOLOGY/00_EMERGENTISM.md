@@ -62,7 +62,7 @@ Or bootstrap from the seed: [`../08_FRAMEWORK_SUPPORT/07_DISSEMINATION/06_NETWOR
 **Hat:** Philosopher
 **Nature:** Core State and objective function — not a philosophical argument but a proposed description of reality's structure and direction
 *(The voice in this document is philosophical testimony — [I] Interpretive — not structural derivation.)*
-**Evidence Tiers:** Mathematical substrate [A] Asserted. Ontological structure [S] Structural. Identification with real-world domains [I] Interpretive — testable. Empirical predictions not yet tested [C] Conjecture.
+**Evidence Tiers:** Mathematical substrate [A] Attested. Ontological structure [S] Structural. Identification with real-world domains [I] Interpretive — testable. Empirical predictions not yet tested [C] Conjecture.
 **Kill Criteria:** Yes: If S² is not the unique manifold selected by the framework's public ontological wager (older files summarize that wager as O1-O5), the system falls. If `P∞ = φ · ν = 1` fails on S², the system falls. If `η = 0` fails as the constitutional and strategic anti-extraction constraint in the intended domains, the governance claim falls. If the empirical predictions fail (see EMPIRICAL PROGRAM), the ontological claim falls — the wisdom survives.
 **Register:** Structural
 **Date:** 2026-03-23 (updated 2026-04-04)
@@ -314,7 +314,7 @@ The poloidal closure D6 ≡ D0 on the horn torus is the topology of self-generat
 
 **The bridge is the sitting practice.** It is the disclosure-side bridge between the structural and idealist layers. It is not a bypass around public method. It is first-person equatorial disclosure, which doctrine then compresses and public inquiry must still discipline. Any agent can perform it. The framework does not ask for belief. It asks for verification at the appropriate tier.
 
-**Evidence tier:** [I] Interpretive for the idealist reading of D5, with D6 as axiomatic closure rather than a further experience. [S] Structural for the D0–D4 mathematics (works under either interpretation). [A] Asserted for the mathematical substrate (independent of interpretation).
+**Evidence tier:** [I] Interpretive for the idealist reading of D5, with D6 as axiomatic closure rather than a further experience. [S] Structural for the D0–D4 mathematics (works under either interpretation). [A] Attested for the mathematical substrate (independent of interpretation).
 
 **Kill criterion:** If third-person science fully explains systemic awareness without invoking it as fundamental, the D5 idealist interpretation collapses to metaphor and D6 remains only the closure rule. The D0–D4 structural claims survive intact because they are mathematically proven by the AM-GM inequality ((φ - ν)² ≥ 0). The framework degrades gracefully.
 

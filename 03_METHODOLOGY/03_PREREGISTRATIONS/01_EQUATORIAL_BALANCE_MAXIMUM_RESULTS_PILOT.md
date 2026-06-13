@@ -91,4 +91,4 @@ recorded as a preliminary falsification and is carried forward to constrain the
 taken at face value it weighs **against** the middle-tertile prediction.
 
 ---
-¹ *Legacy evidence tier note: References to the "[S]" study or tier in this document are historical. Under the current six-tier system ([A/B/S/I/D/C]), the legacy "[S]" (Established) tier has been split into "[A]" (Asserted / direct measurement) and "[B]" (Built / verified repository receipt). A planned empirical study remains conjecture [C] or draft [D] until executed and verified.*
+¹ *Legacy evidence tier note: References to the "[S]" study or tier in this document are historical. Under the current six-tier system ([A/B/S/I/D/C]), the legacy "[S]" (Established) tier has been split into "[A]" (Attested / measured independent fact) and "[B]" (Built / verified repository receipt). A planned empirical study remains conjecture [C] or draft [D] until executed and verified.*

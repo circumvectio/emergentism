@@ -80,7 +80,7 @@ The tier label assigned by L2, now evaluated at L3 for structural soundness.
 
 | Tier | Strength Score | Meaning |
 |------|:--------------:|---------|
-| **[A]** Asserted / Direct measurement | 4 | Established mathematics, textbook physics, third-party empirical data, or direct measurement independent of the framework |
+| **[A]** Attested / measured | 4 | Established mathematics, textbook physics, third-party empirical data, or direct measurement independent of the framework |
 | **[B]** Built / Verified | 4 | Verified code paths, repository surveys, direct receipts, or functioning-system evidence |
 | **[S]** Structural | 3 | Derived from accepted axioms through valid inference |
 | **[I]** Interpretive | 2 | Synthesis, analogy, ontological bridge, procedural recommendation, or counsel |
@@ -287,8 +287,8 @@ pattern is compelling. Beauty is L2's domain. Honesty is L3's domain.
 > §89, and matching §2 / Dimension 1 of this same document). The legacy
 > 4-tier `[E/S/I/C]` table below was internally inconsistent with §2 of this
 > doc. It is **reconciled to 6 tiers** below; the legacy `[S]` row is
-> **superseded** — `[S]` (Established) splits into `[A]` (Asserted / Direct
-> measurement) ∪ `[B]` (Built / Verified). No tier is silently dropped.
+> **superseded** — `[S]` (Established) splits into `[A]` (Attested / measured)
+> ∪ `[B]` (Built / Verified). No tier is silently dropped.
 
 The tiers are distinct. They must not be merged in audit records:
 

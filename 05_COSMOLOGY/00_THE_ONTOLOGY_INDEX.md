@@ -128,7 +128,7 @@ These five lines are the **kernel**. Everything else is elaboration, proof, inte
 
 | Tier | Meaning | Examples in the framework |
 |---|---|---|
-| [A] | Asserted / Direct measurement | ℂP¹ uniqueness, Bloch sphere = ℂP¹, QM requires complex numbers |
+| [A] | Attested / measured | ℂP¹ uniqueness, Bloch sphere = ℂP¹, QM requires complex numbers |
 | [B] | Built / Verified | Protocol D (pending independent replication), code paths, receipts |
 | [S] | Structural | The formal proofs (EFR 21–24), the derivation chain, the L-level geometry |
 | [I] | Interpretive | Reality IS S², D₀–D₆ are dimensional strata, consciousness as activity |
