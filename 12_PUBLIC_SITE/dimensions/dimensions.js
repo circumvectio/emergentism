@@ -1059,13 +1059,14 @@ function buildScene(mode, scene) {
         : isGod
           ? "GOD-move (Φ > V)"
           : "DEMON-move (V > Φ)";
+      const balance = Math.sin(theta);
       setInstrumentMetric(
-        "θ " + (theta * 180 / Math.PI).toFixed(0) + "° · |φν-1| " + Math.abs(phi * nu - 1).toExponential(1),
+        "B " + balance.toFixed(3) + " · |φν-1| " + Math.abs(phi * nu - 1).toExponential(1),
         thetaUserActive ? "manual latitude" : "reciprocal sweep"
       );
       if (readout) readout.textContent =
         "D5 BURRISPHERE · dual rays meet at P\n" +
-        "θ " + (theta * 180 / Math.PI).toFixed(0) + "°" + (thetaUserActive ? " held" : " sweep") + " · φ " + phi.toFixed(2) + " · ν " + nu.toFixed(2) + " · φ·ν=1 · E/mc² " + ((phi + nu) / 2).toFixed(2) + "\n" +
+        "θ " + (theta * 180 / Math.PI).toFixed(0) + "°" + (thetaUserActive ? " held" : " sweep") + " · φ " + phi.toFixed(2) + " · ν " + nu.toFixed(2) + " · φ·ν=1 · B=sinθ " + balance.toFixed(3) + "\n" +
         "P_node = Φ × V; either missing factor collapses the move\n" +
         "quadrant " + q + " · " + opName + " · " + moveName;
     });

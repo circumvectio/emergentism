@@ -281,6 +281,9 @@
 (function () {
   const canvas = document.getElementById('soul-loop-canvas');
   const ctx = canvas.getContext('2d');
+  const visual = canvas.closest('.visual-panel');
+  const REDUCED_MOTION = !!(window.matchMedia
+    && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
   const nodes = [
     { label: 'L1', title: 'intake', color: '#8a8a8a' },
     { label: 'L2', title: 'gather', color: '#3c8b7d' },
@@ -294,6 +297,25 @@
     { label: 'L2', title: 're-gather', color: '#3c8b7d' },
     { label: 'L7', title: 'preserve', color: '#42A5F5' }
   ];
+  const STEP_MS = 1100;
+
+  const readout = (() => {
+    if (!visual) return null;
+    let el = visual.querySelector('.soul-loop-readout');
+    if (!el) {
+      el = document.createElement('div');
+      el.className = 'model-readout instrument-readout soul-loop-readout';
+      el.style.cssText =
+        "position:absolute;right:16px;top:46px;z-index:5;max-width:min(330px,38%);" +
+        "font:700 10.5px/1.48 'Roboto Mono',ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums;" +
+        "color:#f3f4f6;pointer-events:none;letter-spacing:0;white-space:pre-line;text-align:left;" +
+        "background:rgba(5,5,5,.78);padding:9px 12px;" +
+        "border:1px solid rgba(255,255,255,.14);border-left:2px solid #c9a84c;border-radius:6px;backdrop-filter:blur(4px);" +
+        "box-shadow:0 10px 28px rgba(0,0,0,.28)";
+      visual.appendChild(el);
+    }
+    return el;
+  })();
 
   function resize() {
     const rect = canvas.getBoundingClientRect();
@@ -303,44 +325,94 @@
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   }
 
-  function draw(t) {
+  function pointOnLoop(cx, cy, r, index) {
+    const angle = -Math.PI / 2 + (index / nodes.length) * Math.PI * 2;
+    return {
+      x: cx + Math.cos(angle) * r,
+      y: cy + Math.sin(angle) * r,
+      angle
+    };
+  }
+
+  function drawCalibration(cx, cy, r) {
+    ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+    ctx.lineWidth = 1;
+    [0.55, 1, 1.18].forEach((scale) => {
+      ctx.beginPath();
+      ctx.arc(cx, cy, r * scale, 0, Math.PI * 2);
+      ctx.stroke();
+    });
+    for (let i = 0; i < nodes.length; i += 1) {
+      const p = pointOnLoop(cx, cy, r * 1.18, i);
+      const q = pointOnLoop(cx, cy, r * 1.06, i);
+      ctx.strokeStyle = i === 3 || i === 7 ? 'rgba(201,168,76,0.5)' : 'rgba(255,255,255,0.16)';
+      ctx.beginPath();
+      ctx.moveTo(q.x, q.y);
+      ctx.lineTo(p.x, p.y);
+      ctx.stroke();
+    }
+    ctx.strokeStyle = 'rgba(255,255,255,0.14)';
+    ctx.beginPath();
+    ctx.moveTo(cx - r * 1.22, cy);
+    ctx.lineTo(cx + r * 1.22, cy);
+    ctx.moveTo(cx, cy - r * 1.22);
+    ctx.lineTo(cx, cy + r * 1.22);
+    ctx.stroke();
+  }
+
+  function quadraticPoint(a, b, c, p) {
+    const q = 1 - p;
+    return {
+      x: q * q * a.x + 2 * q * p * b.x + p * p * c.x,
+      y: q * q * a.y + 2 * q * p * b.y + p * p * c.y
+    };
+  }
+
+  function draw(t = 0) {
     const rect = canvas.getBoundingClientRect();
     const w = rect.width;
     const h = rect.height;
-    const cx = w / 2;
+    const hasTelemetryRail = readout && w >= 720;
+    const cx = hasTelemetryRail ? w * 0.34 : w / 2;
     const cy = h / 2;
-    const r = Math.min(w, h) * 0.32;
-    const active = Math.floor(t / 900) % nodes.length;
+    const r = hasTelemetryRail ? Math.min(h * 0.32, w * 0.22) : Math.min(w, h) * 0.32;
+    const active = REDUCED_MOTION ? 3 : Math.floor(t / STEP_MS) % nodes.length;
+    const phase = REDUCED_MOTION ? 0 : (t % STEP_MS) / STEP_MS;
+    const activeNode = nodes[active];
+    const nextNode = nodes[(active + 1) % nodes.length];
 
     ctx.clearRect(0, 0, w, h);
-    ctx.strokeStyle = 'rgba(201,168,76,0.18)';
-    ctx.lineWidth = 1;
-    ctx.beginPath();
-    ctx.arc(cx, cy, r, 0, Math.PI * 2);
-    ctx.stroke();
+    ctx.fillStyle = '#050505';
+    ctx.fillRect(0, 0, w, h);
+    drawCalibration(cx, cy, r);
 
     for (let i = 0; i < nodes.length; i++) {
-      const a1 = -Math.PI / 2 + (i / nodes.length) * Math.PI * 2;
-      const a2 = -Math.PI / 2 + (((i + 1) % nodes.length) / nodes.length) * Math.PI * 2;
-      const x1 = cx + Math.cos(a1) * r;
-      const y1 = cy + Math.sin(a1) * r;
-      const x2 = cx + Math.cos(a2) * r;
-      const y2 = cy + Math.sin(a2) * r;
+      const start = pointOnLoop(cx, cy, r, i);
+      const end = pointOnLoop(cx, cy, r, (i + 1) % nodes.length);
       ctx.strokeStyle = i === active ? 'rgba(201,168,76,0.95)' : 'rgba(255,255,255,0.12)';
       ctx.lineWidth = i === active ? 2 : 1;
       ctx.beginPath();
-      ctx.moveTo(x1, y1);
-      ctx.quadraticCurveTo(cx, cy, x2, y2);
+      ctx.moveTo(start.x, start.y);
+      ctx.quadraticCurveTo(cx, cy, end.x, end.y);
       ctx.stroke();
     }
 
+    const start = pointOnLoop(cx, cy, r, active);
+    const end = pointOnLoop(cx, cy, r, (active + 1) % nodes.length);
+    const phasePoint = quadraticPoint(start, { x: cx, y: cy }, end, phase);
+    ctx.fillStyle = '#c9a84c';
+    ctx.strokeStyle = '#050505';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.arc(phasePoint.x, phasePoint.y, 7, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+
     nodes.forEach((node, i) => {
-      const angle = -Math.PI / 2 + (i / nodes.length) * Math.PI * 2;
-      const x = cx + Math.cos(angle) * r;
-      const y = cy + Math.sin(angle) * r;
-      const pulse = i === active ? 1 + Math.sin(t * 0.008) * 0.12 : 1;
+      const p = pointOnLoop(cx, cy, r, i);
+      const radius = i === active ? 25 : 21;
       ctx.beginPath();
-      ctx.arc(x, y, 24 * pulse, 0, Math.PI * 2);
+      ctx.arc(p.x, p.y, radius, 0, Math.PI * 2);
       ctx.fillStyle = i === active ? node.color : '#10100f';
       ctx.strokeStyle = node.color;
       ctx.lineWidth = i === active ? 2 : 1;
@@ -350,10 +422,10 @@
       ctx.font = '700 14px Courier New, monospace';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
-      ctx.fillText(node.label, x, y - 2);
+      ctx.fillText(node.label, p.x, p.y - 2);
       ctx.fillStyle = '#9b9488';
       ctx.font = '11px Courier New, monospace';
-      ctx.fillText(node.title, x, y + 34);
+      ctx.fillText(node.title, p.x, p.y + 34);
     });
 
     ctx.fillStyle = '#c9a84c';
@@ -365,12 +437,24 @@
     ctx.font = '12px Courier New, monospace';
     ctx.fillText('equatorial return', cx, cy + 24);
 
-    requestAnimationFrame(draw);
+    if (readout) {
+      readout.textContent =
+        'SOUL LOOP · correction assay\n' +
+        'seg ' + active + '/' + (nodes.length - 1) + ' · ' + activeNode.label + ':' + activeNode.title + ' → ' + nextNode.label + ':' + nextNode.title + '\n' +
+        'phase ' + phase.toFixed(2) + ' · target L4 · B=1\n' +
+        'run gather/check/serve/see/dissolve/preserve';
+    }
+
+    if (!REDUCED_MOTION) requestAnimationFrame(draw);
   }
 
   resize();
-  window.addEventListener('resize', resize);
-  requestAnimationFrame(draw);
+  window.addEventListener('resize', () => {
+    resize();
+    if (REDUCED_MOTION) draw(0);
+  });
+  if (REDUCED_MOTION) draw(0);
+  else requestAnimationFrame(draw);
 })();
 </script>
 <script defer src="/assets/js/atlas-drawer.js"></script>
