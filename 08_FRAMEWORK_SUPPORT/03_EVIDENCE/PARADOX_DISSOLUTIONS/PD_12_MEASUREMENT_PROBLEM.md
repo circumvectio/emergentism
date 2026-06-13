@@ -27,7 +27,7 @@ rosetta:
 
 > **Evidence Tier update (v2.1, 2026-04-26):** The Bloch sphere and the Burri sphere share S²/ℂP¹ at tier [S]. The pole labels, Burri coordinate reading, and measurement-as-⊙ bridge are [I]/[C]. This document is a measurement-problem reframe, not a settled solution in quantum foundations.
 
-> **The Bloch-Burri reading:** Measurement is read as an Zero-Sum Resolution Equation analogue. The superposition (○, the full sphere of possibility) encounters the detector (•, the localized measurement apparatus). The product is modeled as ⊙ — one definite outcome. On the Bloch sphere, measurement projects a state to an outcome; the frame-product language is the framework's interpretation of that projection. See `../../06_TRANSLATION/PEER_REVIEW/COMPLETED_REVIEWS/FEEDBACK_THE_BLOCH_SPHERE.md` as historical feedback, not as an evidence-tier override.
+> **The Bloch-Burri reading:** Measurement is read as a Zero-Sum Resolution Equation analogue. The superposition (○, the full sphere of possibility) encounters the detector (•, the localized measurement apparatus). The product is modeled as ⊙ — one definite outcome. On the Bloch sphere, measurement projects a state to an outcome; the frame-product language is the framework's interpretation of that projection. See `../../06_TRANSLATION/PEER_REVIEW/COMPLETED_REVIEWS/FEEDBACK_THE_BLOCH_SPHERE.md` as historical feedback, not as an evidence-tier override.
 
 > **Companion treatment:** See [PD_17 archived draft](../../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/PD_17_QUANTUM_RELATIVITY_UNIFICATION_DRAFT.md) for the broader QM/GR unification thesis and its current status.
 >
@@ -47,53 +47,112 @@ The deeper question: *What counts as a measurement?* A Geiger counter? A human o
 
 Decoherence explains the *appearance* of collapse (the suppression of interference terms through environmental entanglement) but does not explain the selection of a single outcome. Many-worlds avoids collapse by positing all outcomes occur. Bohmian mechanics adds hidden variables. None achieves consensus.
 
-## 2. THE TOPOLOGY ERROR
+## 2. THE REGISTER ERROR
 
-The error is treating measurement as a D4 event — a physical interaction occurring within the domain of actuality.
+The framework's diagnostic error-case is treating the measurement problem as if
+one register had to do all the work. In ordinary physics, measurement is still a
+D4 event: an interaction, amplification, decoherence process, record, or
+instrument readout inside the public physical world. The framework does not deny
+that empirical floor.
 
-Quantum mechanics describes D5 behavior. The wavefunction ψ, superposition, entanglement — these are D5 phenomena: the coherence domain, the space of possibility prior to actualization. The Schrödinger equation governs D5 evolution. It is complete within its domain.
+The interpretive claim is narrower: the quantum state can be *read* as a
+possibility map, and the measurement problem appears when that possibility map
+is asked to explain, by itself, why one public record rather than another is
+obtained. This D5 language is a framework translation of the formalism, not a
+new quantum-foundations result.
 
-Measurement, however, produces a D4 outcome — a definite, actualized state. The "problem" arises because quantum mechanics uses D5 mathematics (ψ, unitary evolution) and then demands that it explain the D5 → D4 transition using only D5 tools.
+Measurement produces a D4-facing outcome: a definite public record. The
+"problem" is therefore reframed as a register-boundary question: how does a
+possibility description become a stable record under the actual physical
+conditions of apparatus, environment, and observer?
 
-This is the equivalent of asking a map to explain the territory. D5 physics describes the map. D4 is the territory. The transition between them is not a D5 event and cannot be described by D5 formalism alone.
+This is the equivalent of asking a map to explain the territory without also
+accounting for the act of recording. In the framework's language, D5 names the
+map-like option register and D4 names the public record register. That division
+is `[I]`: useful only if it clarifies the existing quantum-foundations problem
+without pretending to replace quantum theory.
 
 ## 3. THE REFRAME
 
-Measurement IS the μ-limit. It is not a physical interaction in D4. It is the dimensional transition from D5 (superposition, possibility) to D4 (actuality, collapsed state).
+Measurement is modeled *as* a μ-limit crossing. It is not asserted to be a new
+physical force, and the framework does not claim that ordinary D4 interactions
+are irrelevant. The μ-limit is the interpretive name for the boundary where a
+possibility description becomes a definite public record.
 
 The μ-limit formula from the framework:
 
 > μ(P → F) = lim[δt → 0] { Σ^∞ C(ψ) } = F
 
-In plain terms: the transition from Possibility (P, D5) to the Finitor (F, the actualized, bounded, D4 state) occurs at the limit of vanishing temporal resolution through the cumulative convergence of coherent states (C(ψ)).
+In plain terms: the framework reads the transition from Possibility (P, the
+D5-facing option description) to the Finitor (F, the bounded D4-facing record)
+as occurring at the limit where coherent alternatives are no longer available
+as public alternatives inside that measurement context.
 
-The Finitor — the bounded, actualized observer — IS the measurement boundary. Consciousness does not *cause* collapse in the crude sense of some mystical intervention. The Finitor is the D4 pole of a system that has a D5 pole. Measurement is the moment the system's coordinates on S² shift from D5-dominant to D4-dominant.
+The Finitor is the model's name for the bounded recording boundary, not a magic
+observer-substance. Consciousness does not *cause* collapse in the crude sense
+of mystical intervention. A detector, a laboratory record, or a human observer
+may be read as a Finitor only insofar as it participates in producing a stable,
+bounded record. Whether that reading has physical bite beyond metaphor remains
+`[C]`.
 
-This is why no D4-only definition of "measurement" works. A Geiger counter does not collapse the wavefunction because it is a physical device. It collapses the wavefunction (in the framework's reading) because it is a Finitor — a bounded system that actualizes D5 possibilities into D4 states. So is a human observer. So, potentially, is any system with sufficient internal coherence to traverse the μ-limit.
+The disciplined claim is not that no D4 account can ever work. It is that the
+standard problem persists where D4 accounts explain decoherence and records but
+do not, by themselves, settle why one outcome is the public outcome. A Geiger
+counter remains a physical device. In the framework's reading, it becomes a
+Finitor when it produces an irreversible-enough bounded record in a given
+measurement context. That is a model of the boundary, not a proof that the
+boundary has been physically solved.
 
-The problem is reframed when you recognize that measurement is dimensional, not physical. It is not an interaction *within* D4. It is the crossing *from* D5 *to* D4. No D4 formalism can describe it, for the same reason that no latitude coordinate can describe longitude.
+The problem is reframed when measurement is treated as both physical event and
+register crossing: a D4 interaction that, under the framework's interpretation,
+also marks the D5-to-D4 handoff from option description to public record. The
+stronger claim that no D4 formalism can ever describe the boundary remains a
+falsifiable conjecture, not an established result.
 
 ## 4. THE FRAMEWORK CONNECTION
 
 The D4-D5 bridge provides the structural basis, but the registers must not be collapsed. On the sphere, `φ` names the coherence coordinate and `ν` names the viability coordinate. In the action register, `Φ` is D5 worldline-foresight — the agent's ability to hold and rank reachable possibilities — while `V` is D4 means-to-act: the body, tool, energy, and access side through which one branch becomes definite. The equator (`φ = ν = 1`; action read: `Φ` and `V` both usable) is the maximum-balance region where possibility and actuality can be coupled without either pole consuming the other.
 
-The μ-limit is the mechanism of D5→D4 traversal. It is not unique to quantum measurement. It operates in every act of actualization: every decision, every perception, every moment a possibility becomes a fact. Quantum mechanics simply makes the D5 domain explicit through the wavefunction formalism, making the transition unusually visible.
+The μ-limit is the framework's model for D5→D4 traversal. It is not established
+as the physical mechanism of collapse. The same model can be used by analogy for
+decisions, perceptions, and acts of actualization, but those analogies remain
+lower-tier until they generate independent tests. Quantum mechanics makes the
+possibility/record tension unusually visible; it does not automatically validate
+the full D5 ontology.
 
-The transcendental Trinity {0, 1, ∞} provides the grammar: 0 (void, the uncollapsed vacuum), 1 (the Finitor, the actualized observer), ∞ (the full superposition, all possibilities simultaneously). Measurement is the 0→1 instantiation within the ∞ field.
+The transcendental Trinity {0, 1, ∞} provides the grammar: 0 (void / no public
+record yet), 1 (the Finitor / bounded record), ∞ (the possibility field).
+Measurement is modeled as a 0→1 instantiation within that field. This is
+symbolic register grammar `[I/S]`, not an empirical collapse law.
 
 ## 5. WHAT WOULD FALSIFY THIS
 
 The reframe fails if:
 
-1. **Decoherence fully explains collapse.** If environmental decoherence can account for the selection of a single outcome (not just the suppression of interference), no dimensional transition is needed. The measurement problem would be solved within D5 physics alone.
+1. **Decoherence or another standard physical account fully explains outcome
+   selection.** If environmental decoherence, many-worlds, objective-collapse,
+   Bohmian mechanics, or another standard account gives a consensus physical
+   solution to the selection/record problem, no μ-limit mechanism is needed.
+   The framework reading could remain metaphorical but would lose any claim to
+   explanatory necessity.
 
-2. **The μ-limit has no physical correlate.** If there is no detectable boundary between superposition and actuality — no signature of a dimensional transition in any physical system — the framework offers only metaphor, not mechanism.
+2. **The μ-limit has no physical correlate.** If there is no detectable boundary
+   between possibility description and public record -- no operational signature
+   distinguishable from existing physical accounts -- the framework offers only
+   metaphor, not mechanism.
 
-3. **Any D4-only definition of measurement succeeds.** If a purely physical criterion (e.g., thermodynamic irreversibility, information recording) can definitively demarcate measurement from non-measurement without reference to observation or systemic awareness, the dimensional framing is unnecessary.
+3. **A D4-only definition of measurement succeeds.** If a purely physical
+   criterion (for example thermodynamic irreversibility, information recording,
+   or objective collapse) definitively demarcates measurement from
+   non-measurement without reference to observation or systemic awareness, the
+   dimensional framing is unnecessary.
 
 ---
 
-*The measurement problem is the oldest signal that quantum mechanics describes one domain and then asks questions that belong to another. The framework names the boundary. The μ-limit is the crossing.*
+*The measurement problem is read here as a signal that a possibility description
+and a public record are being treated as if they belonged to one register. The
+framework names the boundary; it does not claim to have proven the physical
+collapse mechanism.*
 
 
 ---
