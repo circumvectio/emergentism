@@ -1,20 +1,40 @@
 /* Self-hosted Roboto (Apache-2.0) — accessible, gate-safe (no external fetch),
    the open sibling of the Skyzai Google-Sans grammar. latin + greek subsets. */
-@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../fonts/Roboto-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
-@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../fonts/RobotoMono-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:optional;src:url('../fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:optional;src:url('../fonts/Roboto-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:optional;src:url('../fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:optional;src:url('../fonts/RobotoMono-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
 
 :root {
-  /* Skyzai brand — near-black, signature yellow #FFEB3B, blue #2196F3 */
+  /* Skyzai web brand — dark .org, yellow primary, blue secondary, FIRE sectors */
   --bg: #050505;
   --surface: #0A0A0A;
+  --elevated: #111111;
+  --surface-highest: #161616;
   --border: #2A2A2A;
   --text: #F3F4F6;
+  --cream: #FFFDE7;
   --text-muted: #9CA3AF;
-  --accent: #F3F4F6;
+  --text-dim: #555555;
+  --accent: #FFEB3B;
+  --accent-contrast: #050505;
   --gold: #FFEB3B;
+  --gold-bright: #FFF176;
   --teal: #2196F3;
+  --blue: #2196F3;
+  --blue-soft: #42A5F5;
+  --sector-finance: #F44336;
+  --sector-insurance: #4CAF50;
+  --sector-real-infra: #2196F3;
+  --sector-electronic-lab: #FFEB3B;
+  --line: rgba(243, 244, 246, 0.12);
+  --line-soft: rgba(243, 244, 246, 0.07);
+  --shape-sm: 4px;
+  --shape-md: 8px;
+  --shape-lg: 16px;
+  --shape-full: 999px;
+  --target-min: 48px;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
 
   /* Skyzai grammar via self-hosted Roboto (accessible, consistent everywhere) + system fallback */
   --font-heading: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
@@ -33,15 +53,24 @@
 }
 
 :root[data-theme="light"] {
-  /* Skyzai light theme — warm cream */
+  /* Skyzai true-tone reading theme */
   --bg: #FDFAF4;
   --surface: #FAF7F0;
+  --elevated: #F2EDE3;
+  --surface-highest: #EAE3D5;
   --border: #D6CFBF;
   --text: #18160E;
   --text-muted: #4A4438;
-  --accent: #18160E;
+  --text-dim: #7A7062;
+  --accent: #2E7D32;
+  --accent-contrast: #FFFFFF;
   --gold: #92650A;
+  --gold-bright: #7A5408;
   --teal: #1565C0;
+  --blue: #1565C0;
+  --blue-soft: #1E88E5;
+  --line: rgba(24, 22, 14, 0.14);
+  --line-soft: rgba(24, 22, 14, 0.08);
 }
 
 /* Base */
@@ -56,7 +85,10 @@ html {
 }
 
 body {
-  background: var(--bg);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--sector-electronic-lab) 5%, transparent), transparent 30rem),
+    linear-gradient(90deg, color-mix(in srgb, var(--sector-real-infra) 6%, transparent), transparent 34%, transparent 66%, color-mix(in srgb, var(--sector-insurance) 4%, transparent)),
+    var(--bg);
   color: var(--text);
   font-family: var(--font-body);
   line-height: 1.65;
@@ -101,13 +133,14 @@ noscript {
   top: 0;
   left: 0;
   right: 0;
-  height: 64px;
+  min-height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 32px;
   z-index: 100;
-  background: var(--bg);
+  background: color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter: blur(12px) saturate(1.08);
   border-bottom: 1px solid var(--border);
   gap: var(--space-3);
   overflow: hidden;
@@ -120,7 +153,7 @@ noscript {
   font-weight: 700;
   color: var(--gold);
   text-decoration: none;
-  letter-spacing: 0;
+  letter-spacing:0;
 }
 
 .topbar .number-nav {
@@ -144,8 +177,8 @@ noscript {
 .topbar .number-nav span {
   display: inline-grid;
   flex: 0 0 auto;
-  min-width: 2rem;
-  height: 2rem;
+  min-width: var(--target-min);
+  min-height: var(--target-min);
   align-items: center;
   justify-content: center;
   color: var(--text-muted);
@@ -191,8 +224,8 @@ noscript {
 .topbar .nav-route {
   display: inline-grid;
   flex: 0 0 auto;
-  min-width: 2rem;
-  height: 2rem;
+  min-width: var(--target-min);
+  min-height: var(--target-min);
   align-items: center;
   justify-content: center;
   color: var(--text-muted);
@@ -212,7 +245,7 @@ noscript {
 
 .topbar .nav-route {
   font-size: 12px;
-  letter-spacing: 0.02em;
+  letter-spacing:0;
   opacity: 0.85;
 }
 
@@ -222,15 +255,15 @@ noscript {
 
 .theme-toggle {
   flex: 0 0 auto;
-  width: 34px;
-  height: 34px;
+  width: var(--target-min);
+  height: var(--target-min);
   border: 1px solid var(--border);
   border-radius: 999px;
   background: transparent;
   color: var(--text-muted);
   cursor: pointer;
   font: 700 12px/1 var(--font-body);
-  letter-spacing: 0.08em;
+  letter-spacing:0;
   text-transform: uppercase;
 }
 
@@ -242,7 +275,7 @@ noscript {
 .command-open {
   display: inline-flex;
   min-width: 5.2rem;
-  height: 34px;
+  min-height: var(--target-min);
   align-items: center;
   justify-content: center;
   border: 1px solid var(--border);
@@ -251,7 +284,7 @@ noscript {
   color: var(--text-muted);
   cursor: pointer;
   font: 700 11px/1 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  letter-spacing: 0.08em;
+  letter-spacing:0;
   text-transform: uppercase;
 }
 
@@ -278,7 +311,7 @@ noscript {
 .command-panel {
   width: min(620px, 100%);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: var(--shape-lg);
   background: var(--bg);
   overflow: hidden;
 }
@@ -297,7 +330,7 @@ noscript {
 .command-result small {
   color: var(--text-muted);
   font: 700 0.66rem/1 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  letter-spacing: 0.14em;
+  letter-spacing:0;
   text-transform: uppercase;
 }
 
@@ -389,7 +422,7 @@ noscript {
   font-family: 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.68rem;
   font-weight: 700;
-  letter-spacing: 0.16em;
+  letter-spacing:0;
   text-transform: uppercase;
 }
 
@@ -415,7 +448,7 @@ noscript {
   font-weight: 800;
   line-height: 1.02;
   margin: 24px 0 32px;
-  letter-spacing: -0.02em;
+  letter-spacing:0;
   overflow-wrap: normal;
   word-break: normal;
   hyphens: none;
@@ -434,7 +467,7 @@ noscript {
   font-family: var(--font-mono);
   font-size: 20px;
   color: var(--gold);
-  letter-spacing: 0.01em;
+  letter-spacing:0;
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
@@ -459,7 +492,7 @@ noscript {
 
 .home-hero .equation-strip span {
   display: inline-flex;
-  min-height: 44px;
+  min-height: var(--target-min);
   align-items: center;
   border: 1px solid var(--border);
   border-radius: 999px;
@@ -471,7 +504,7 @@ noscript {
   margin-top: 24px;
   font-size: 12px;
   color: var(--text-muted);
-  letter-spacing: 0.04em;
+  letter-spacing:0;
 }
 
 .home-hero .evidence {
@@ -490,6 +523,7 @@ noscript {
 .command-input {
   width: 100%;
   min-width: 0;
+  min-height: var(--target-min);
   border: 1px solid var(--border);
   border-radius: 999px;
   background: var(--surface);
@@ -505,12 +539,13 @@ noscript {
 
 .command-run {
   border: 1px solid var(--border);
+  min-height: var(--target-min);
   border-radius: 999px;
   background: transparent;
   color: var(--text);
   cursor: pointer;
   font: 700 12px/1 var(--font-body);
-  letter-spacing: 0.08em;
+  letter-spacing:0;
   padding: 0 18px;
   text-transform: uppercase;
 }
@@ -541,7 +576,7 @@ noscript {
 .btn-primary,
 .btn-ghost {
   display: inline-flex;
-  min-height: 42px;
+  min-height: var(--target-min);
   align-items: center;
   border: 1px solid var(--border);
   border-radius: 999px;
@@ -553,12 +588,15 @@ noscript {
 }
 
 .btn-primary {
-  border-color: var(--accent);
+  border-color: var(--gold);
+  background: var(--gold);
+  color: var(--accent-contrast);
 }
 
 .btn-primary:hover,
 .btn-ghost:hover {
   border-color: var(--gold);
+  transform: translateY(-1px);
   text-decoration: none;
 }
 
@@ -571,8 +609,8 @@ noscript {
   margin-top: 64px;
   min-height: min(70vh, 720px);
   border: 1px solid var(--border);
-  border-radius: 8px;
-  background: var(--surface);
+  border-radius: var(--shape-lg);
+  background: var(--elevated);
   overflow: hidden;
 }
 
@@ -701,14 +739,14 @@ body.webgl-failed .fallback {
   margin-bottom: 8px;
   color: var(--text-muted);
   font-size: 12px;
-  letter-spacing: 0.08em;
+  letter-spacing:0;
   text-transform: uppercase;
 }
 
 .chapter-number {
   font-size: 12px;
   color: var(--text-muted);
-  letter-spacing: 0.08em;
+  letter-spacing:0;
   margin-bottom: 12px;
 }
 
@@ -772,7 +810,7 @@ body.webgl-failed .fallback {
 .mu-limit a,
 .route-footer a {
   display: inline-flex;
-  min-height: 2.75rem;
+  min-height: var(--target-min);
   align-items: center;
   justify-content: center;
   border: 1px solid var(--border);
@@ -815,7 +853,7 @@ body.webgl-failed .fallback {
   gap: 1px;
   margin: 48px 0;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: var(--shape-lg);
   overflow: hidden;
   background: var(--border);
 }
@@ -841,7 +879,7 @@ body.webgl-failed .fallback {
   gap: 16px;
   min-height: 224px;
   padding: 20px;
-  background: var(--bg);
+  background: var(--surface);
   color: var(--text);
   text-decoration: none;
 }
@@ -858,7 +896,7 @@ body.webgl-failed .fallback {
   color: var(--text-muted);
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing:0;
   text-transform: uppercase;
 }
 
@@ -885,7 +923,7 @@ body.webgl-failed .fallback {
   color: var(--gold);
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing:0;
   text-transform: uppercase;
 }
 
@@ -928,7 +966,7 @@ body.webgl-failed .fallback {
   font-size: clamp(48px, 9vw, 96px);
   font-weight: 600;
   line-height: 0.95;
-  letter-spacing: 0;
+  letter-spacing:0;
   overflow-wrap: anywhere;
 }
 
@@ -955,7 +993,7 @@ body.webgl-failed .fallback {
 
 .library-route-row a {
   display: inline-flex;
-  min-height: 38px;
+  min-height: var(--target-min);
   align-items: center;
   border: 1px solid var(--border);
   border-radius: 999px;
@@ -1115,7 +1153,7 @@ body.webgl-failed .fallback {
 .container h2,
 .container h3 {
   font-family: var(--font-heading);
-  letter-spacing: 0;
+  letter-spacing:0;
 }
 
 .container h1 {
@@ -1162,7 +1200,7 @@ body.webgl-failed .fallback {
   background: var(--surface);
   color: var(--text-muted);
   font: 700 0.7rem/1.2 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  letter-spacing: 0.14em;
+  letter-spacing:0;
   text-transform: uppercase;
 }
 
@@ -1209,7 +1247,7 @@ pre.glyph-block {
 .glyph {
   font-family: "Cambria Math", "STIX Two Math", Georgia, serif;
   font-size: 1.1em;
-  letter-spacing: 0.04em;
+  letter-spacing:0;
 }
 
 .tier {
@@ -1219,7 +1257,7 @@ pre.glyph-block {
   color: var(--gold);
   padding: 1px 6px;
   font: 700 0.74rem/1.35 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  letter-spacing: 0.04em;
+  letter-spacing:0;
 }
 
 .tier-a {
@@ -1241,7 +1279,7 @@ pre.glyph-block {
 .closing,
 .constraint-block {
   border: 1px solid rgba(201, 168, 76, 0.34);
-  border-radius: 8px;
+  border-radius: var(--shape-lg);
   background: rgba(201, 168, 76, 0.07);
   margin: 1.5rem 0;
   padding: 1.25rem 1.4rem;
@@ -1263,7 +1301,7 @@ pre.glyph-block {
 
 .cta {
   display: inline-flex;
-  min-height: 38px;
+  min-height: var(--target-min);
   align-items: center;
   border: 1px solid var(--border);
   border-radius: 999px;
@@ -1282,7 +1320,7 @@ pre.glyph-block {
 .paper-card,
 .nine-row-card {
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: var(--shape-lg);
   background: var(--surface);
   margin: 1.2rem 0;
   padding: 1.1rem 1.3rem;
@@ -1349,7 +1387,7 @@ pre.glyph-block {
 
 .cross-domain .cd-cell {
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: var(--shape-lg);
   background: var(--surface);
   padding: 0.85rem 1rem;
 }
@@ -1393,7 +1431,7 @@ pre.glyph-block {
 
   .topbar .number-nav a,
   .topbar .number-nav span {
-    min-width: 1.65rem;
+    min-width: var(--target-min);
   }
 
   .hero {
@@ -1486,7 +1524,7 @@ pre.glyph-block {
   .hero h1 {
     max-width: 100%;
     font-size: clamp(44px, 14vw, 56px);
-    letter-spacing: 0;
+    letter-spacing:0;
   }
 
   .library-hero h1 {
@@ -1540,7 +1578,9 @@ pre.glyph-block {
 #scene canvas { display: block; width: 100%; height: 100%; }
 .vignette {
   position: fixed; inset: 0; z-index: 1; pointer-events: none;
-  background: radial-gradient(120% 90% at 50% 42%, transparent 55%, rgba(0,0,0,.55) 100%);
+  background:
+    linear-gradient(180deg, transparent 44%, rgba(0,0,0,.52) 100%),
+    linear-gradient(90deg, rgba(0,0,0,.32), transparent 18%, transparent 82%, rgba(0,0,0,.32));
 }
 /* hidden until the page's own catch sets display:flex */
 #fallback {
@@ -1556,11 +1596,11 @@ pre.glyph-block {
   position: fixed; right: 20px; top: 84px; z-index: 4;
   width: min(320px, 86vw); padding: 14px 16px;
   background: color-mix(in srgb, var(--bg) 84%, transparent);
-  border: 1px solid var(--border); border-radius: 10px;
+  border: 1px solid var(--border); border-radius: var(--shape-lg);
   backdrop-filter: blur(8px);
   font-family: var(--font-mono); font-size: 13px;
 }
-#panel .lvl { color: var(--gold); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; }
+#panel .lvl { color: var(--gold); font-size: 11px; letter-spacing:0; text-transform: uppercase; }
 #panel .op { font-size: 20px; margin: 4px 0 2px; font-family: var(--font-heading); font-weight: 700; }
 #panel .tier { font-size: 12px; margin-bottom: 6px; }
 #panel .ology { color: var(--text-muted); }
@@ -1570,7 +1610,7 @@ pre.glyph-block {
 #panel .v { color: var(--gold); }
 .hint {
   position: fixed; left: 50%; transform: translateX(-50%); bottom: 108px; z-index: 4;
-  font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); letter-spacing: .06em;
+  font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); letter-spacing:0;
   white-space: nowrap;
 }
 .legend {
@@ -1584,7 +1624,16 @@ pre.glyph-block {
   max-width: 76ch !important; margin: 0 !important;
   font-family: var(--font-mono); color: var(--text-muted);
   background: color-mix(in srgb, var(--bg) 80%, transparent);
-  padding: 5px 12px; border-radius: 8px; backdrop-filter: blur(6px);
+  padding: 5px 12px; border-radius: var(--shape-lg); backdrop-filter: blur(6px);
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .topbar,
+  #panel,
+  .legend-note {
+    background: var(--bg);
+    backdrop-filter: none;
+  }
 }
 
 /* ============================================================

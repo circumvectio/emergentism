@@ -111,15 +111,15 @@ TEMPLATE = r"""<!DOCTYPE html>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23b8862c' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.4' fill='%23b8862c'/%3E%3C/svg%3E" />
 <style>
 /* Self-hosted Roboto (Apache-2.0) — accessible, gate-safe; the Skyzai grammar in the chrome */
-@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Roboto-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
-@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../assets/fonts/RobotoMono-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:optional;src:url('../assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:optional;src:url('../assets/fonts/Roboto-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:optional;src:url('../assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:optional;src:url('../assets/fonts/RobotoMono-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
 :root{
   --serif:"Hoefler Text","Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
   --sans:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
   --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
-  --measure:40rem;
+  --measure:40rem; --shape-lg:16px; --shape-full:999px; --target-min:48px;
 }
 /* ---- light (parchment) reading theme : default ---- */
 html[data-reading-theme="light"]{
@@ -154,14 +154,14 @@ a{color:inherit}
 
 /* topbar */
 .bookbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;
-  gap:1rem;padding:.7rem clamp(1rem,3vw,1.6rem);
+  gap:1rem;min-height:64px;padding:.7rem clamp(1rem,3vw,1.6rem);
   background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(10px);
   border-bottom:1px solid var(--rule-soft)}
-.bookbar .brand{font-family:var(--sans);font-weight:600;font-size:1.05rem;letter-spacing:.01em}
+.bookbar .brand{font-family:var(--sans);font-weight:600;font-size:1.05rem;letter-spacing:0}
 .bookbar .brand b{color:var(--gold)}
 .bookbar nav{display:flex;align-items:center;gap:.4rem;font-family:var(--mono);font-size:.76rem}
 .bookbar nav a,.bookbar nav button{color:var(--ink-soft);background:none;border:1px solid transparent;
-  border-radius:4px;padding:.4rem .6rem;cursor:pointer;font:inherit;letter-spacing:.02em}
+  min-height:var(--target-min);display:inline-flex;align-items:center;border-radius:var(--shape-full);padding:0 .75rem;cursor:pointer;font:inherit;letter-spacing:0}
 .bookbar nav a:hover,.bookbar nav button:hover{color:var(--gold);border-color:var(--rule)}
 #toc-toggle{display:none}
 
@@ -172,7 +172,7 @@ a{color:inherit}
 .toc{position:sticky;top:52px;align-self:start;height:calc(100vh - 52px);overflow-y:auto;
   padding:2rem 1rem 4rem 1.4rem;border-right:1px solid var(--rule-soft);
   scrollbar-width:thin}
-.toc-head{font-family:var(--mono);font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;
+.toc-head{font-family:var(--mono);font-size:.68rem;letter-spacing:0;text-transform:uppercase;
   color:var(--ink-faint);margin:0 0 1rem .2rem}
 .toc-link{display:flex;gap:.7rem;align-items:baseline;padding:.32rem .4rem;border-radius:5px;
   text-decoration:none;color:var(--ink-soft);line-height:1.3;transition:.16s}
@@ -190,14 +190,14 @@ a{color:inherit}
 .chapter.overture{border-top:0;padding-top:.5rem}
 .chapter:first-of-type{border-top:0}
 .ch-head{margin:0 0 1.4rem}
-.ch-num{display:block;font-family:var(--mono);font-size:.72rem;letter-spacing:.22em;color:var(--gold);margin-bottom:.7rem}
+.ch-num{display:block;font-family:var(--mono);font-size:.72rem;letter-spacing:0;color:var(--gold);margin-bottom:.7rem}
 .ch-body>h1:first-child,.chapter>header h1{margin-top:0}
 h1{font-family:var(--serif);font-weight:600;font-size:clamp(1.9rem,4.2vw,2.9rem);line-height:1.08;
-  letter-spacing:-.012em;margin:.2rem 0 1rem;text-wrap:balance}
+  letter-spacing:0;margin:.2rem 0 1rem;text-wrap:balance}
 .overture .ch-head h1{font-size:clamp(2.6rem,6vw,4rem)}
 h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.25rem,2.4vw,1.6rem);line-height:1.2;
-  margin:2.4rem 0 .8rem;letter-spacing:-.005em}
-h3{font-family:var(--mono);font-weight:600;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;
+  margin:2.4rem 0 .8rem;letter-spacing:0}
+h3{font-family:var(--mono);font-weight:600;font-size:.82rem;letter-spacing:0;text-transform:uppercase;
   color:var(--ink-faint);margin:2rem 0 .6rem}
 p{margin:0 0 1.15rem}
 .reading-inner>.chapter .ch-body>p:first-of-type{margin-top:.2rem}
@@ -262,6 +262,9 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .progress,.toc{transition:none}
+}
+@media(prefers-reduced-transparency:reduce){
+  .bookbar{background:var(--bg);backdrop-filter:none}
 }
 </style>
 </head>

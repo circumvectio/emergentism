@@ -19,7 +19,7 @@
   var css = [
     "#ask-fab{position:fixed;left:18px;bottom:18px;z-index:9000;background:" + INK + ";color:" + CREAM + ";",
     "border:1px solid rgba(255,235,59,.55);border-radius:999px;padding:10px 16px;font:600 13px/1 'Roboto','Noto Sans',sans-serif;",
-    "letter-spacing:.08em;cursor:pointer;opacity:.92}",
+    "letter-spacing:0;cursor:pointer;opacity:.92}",
     "#ask-fab:hover{background:" + GOLD + ";color:" + INK + "}",
     "#ask-panel{position:fixed;top:0;left:0;bottom:0;width:min(440px,94vw);z-index:9001;background:rgba(5,5,5,.97);",
     "border-right:1px solid rgba(255,235,59,.35);clip-path:inset(0 100% 0 0);opacity:0;visibility:hidden;pointer-events:none;",
@@ -27,7 +27,7 @@
     "display:flex;flex-direction:column;font-family:'Roboto','Noto Sans',sans-serif;color:" + CREAM + ";backdrop-filter:blur(6px)}",
     "#ask-panel.open{clip-path:inset(0);opacity:1;visibility:visible;pointer-events:auto;transition:clip-path .22s ease,opacity .22s ease}",
     "#ask-head{display:flex;gap:8px;align-items:center;padding:14px 14px 8px}",
-    "#ask-head b{color:" + GOLD + ";font-size:13px;letter-spacing:.14em}",
+    "#ask-head b{color:" + GOLD + ";font-size:13px;letter-spacing:0}",
     "#ask-head button{background:none;border:0;color:" + CREAM + ";font-size:16px;cursor:pointer;opacity:.7}",
     "#ask-head button:hover{opacity:1;color:" + GOLD + "}",
     "#ask-mode{padding:0 16px 8px;font:400 11px/1.4 'Roboto Mono',monospace;color:#8a8568}",
@@ -47,16 +47,22 @@
     "#ask-go{background:" + GOLD + ";color:" + INK + ";border:0;border-radius:8px;padding:0 16px;font-weight:700;cursor:pointer}",
     "#ask-settings{display:none;padding:10px 16px;border-top:1px solid #222;font-size:12.5px}",
     "#ask-settings.open{display:block}",
-    "#ask-settings label{display:block;margin:8px 0 3px;color:#cfcab0;letter-spacing:.04em}",
+    "#ask-settings label{display:block;margin:8px 0 3px;color:#cfcab0;letter-spacing:0}",
     "#ask-settings input,#ask-settings select{width:100%;padding:7px 10px;background:#111;border:1px solid #333;",
     "border-radius:6px;color:" + CREAM + ";font:400 12.5px/1.2 'Roboto Mono',monospace;outline:none}",
     "#ask-settings .note{margin-top:8px;color:#8a8568;font-size:11px;line-height:1.5}",
     ".expand-btn{display:inline-block;margin:6px 0 0 8px;padding:3px 10px;border:1px solid rgba(255,235,59,.4);",
     "border-radius:999px;background:none;color:" + GOLD + ";font:600 11px/1.4 'Roboto','Noto Sans',sans-serif;",
-    "letter-spacing:.06em;cursor:pointer;vertical-align:middle;opacity:.75}",
+    "letter-spacing:0;cursor:pointer;vertical-align:middle;opacity:.75}",
     ".expand-btn:hover{opacity:1;background:rgba(255,235,59,.12)}",
     ".expand-out{margin:10px 0 4px;padding:12px 16px;border-left:2px solid " + GOLD + ";background:rgba(255,235,59,.04);font-size:14.5px}",
-    ".expand-out h4{margin:0 0 6px;color:" + GOLD + ";font-size:12px;letter-spacing:.12em}"
+    ".expand-out h4{margin:0 0 6px;color:" + GOLD + ";font-size:12px;letter-spacing:0}",
+    ".bookbar #ask-fab{position:static;left:auto;bottom:auto;z-index:auto;flex:0 0 auto;width:48px;height:48px;",
+    "padding:0;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font-size:0;line-height:1;opacity:1}",
+    ".bookbar #ask-fab::before{content:'✦';font-size:17px;line-height:1;color:inherit}",
+    "@media(max-width:680px){#ask-fab{left:12px;bottom:calc(env(safe-area-inset-bottom,0px) + 12px);",
+    "width:48px;height:48px;padding:0;border-radius:50%;display:flex;align-items:center;justify-content:center;",
+    "font-size:0;line-height:1}#ask-fab::before{content:'✦';font-size:19px;line-height:1;color:inherit}}"
   ].join("");
   var style = document.createElement("style");
   style.textContent = css;
@@ -165,8 +171,15 @@
   fab.id = "ask-fab";
   fab.type = "button";
   fab.setAttribute("aria-label", "Ask the book");
+  fab.setAttribute("title", "Ask the book");
   fab.textContent = "✦ ASK THE BOOK";
-  document.body.appendChild(fab);
+  var bookbarNav = document.querySelector(".bookbar nav");
+  var atlasFab = document.getElementById("atlas-fab");
+  if (bookbarNav && atlasFab && atlasFab.parentNode === bookbarNav) {
+    bookbarNav.insertBefore(fab, atlasFab);
+  } else {
+    (bookbarNav || document.body).appendChild(fab);
+  }
 
   var panel = document.createElement("aside");
   panel.id = "ask-panel";
