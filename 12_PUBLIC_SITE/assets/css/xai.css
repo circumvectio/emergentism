@@ -637,6 +637,42 @@ body.dimension-page .visual-labels {
   display: none;
 }
 
+body.soul-loop-instrument .visual-panel::after {
+  opacity: 0.38;
+}
+
+body.soul-loop-instrument .instrument-overlay {
+  opacity: 0.84;
+}
+
+body.soul-loop-instrument .instrument-graticule {
+  inset: 20px;
+  opacity: 0.24;
+}
+
+body.soul-loop-instrument .instrument-reticle {
+  opacity: 0.42;
+}
+
+body.soul-loop-instrument .visual-labels {
+  z-index: 4;
+}
+
+body.soul-loop-instrument .visual-labels .label {
+  border-radius: var(--shape-sm);
+  background: rgba(5, 5, 5, 0.74);
+  color: rgba(243, 244, 246, 0.78);
+  font: 700 10px/1 "Roboto Mono", ui-monospace, Menlo, monospace;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  backdrop-filter: blur(4px);
+}
+
+body.soul-loop-instrument .visual-labels .top,
+body.soul-loop-instrument .visual-labels .bottom {
+  color: var(--gold);
+}
+
 .instrument-overlay {
   position: absolute;
   inset: 0;
