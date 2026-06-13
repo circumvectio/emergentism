@@ -12,7 +12,7 @@ const dimensionCommands = [
   { key: "/3", aliases: ["/3", "3", "d3", "sphere", "bloch"], label: "/3 · Sphere", detail: "Closure surface", href: "../3/" },
   { key: "/4", aliases: ["/4", "4", "d4", "torus", "horn"], label: "/4 · Horn Torus", detail: "Energy overlap", href: "../4/" },
   { key: "/5", aliases: ["/5", "5", "d5", "burrisphere", "game"], label: "/5 · Burrisphere", detail: "Dual projection", href: "../5/" },
-  { key: "/6", aliases: ["/6", "6", "d6", "convergence", "ccc"], label: "/6 · Convergence", detail: "Return to /0", href: "../6/" },
+  { key: "/6", aliases: ["/6", "6", "d6", "convergence", "ccc"], label: "/6 · CCC Return", detail: "Endstate = start", href: "../6/" },
   { key: "R", aliases: ["rosetta", "r"], label: "Rosetta", detail: "Sevenfold map", href: "../rosetta/" },
   { key: "S", aliases: ["soul", "soul-loop"], label: "Soul Loop", detail: "Loop doctrine", href: "../soul-loop/" },
   { key: "A", aliases: ["atlas", "a"], label: "Atlas", detail: "Public atlas", href: "../atlas/" },
@@ -389,10 +389,11 @@ function makeReadout() {
     el.className = "model-readout";
     el.style.cssText =
       "position:absolute;left:16px;top:16px;z-index:5;max-width:68%;" +
-      "font:500 12px/1.6 'Roboto Mono',ui-monospace,Menlo,monospace;" +
-      "color:var(--text,#F3F4F6);pointer-events:none;letter-spacing:.01em;white-space:pre-line;" +
+      "font:600 11px/1.55 'Roboto Mono',ui-monospace,Menlo,monospace;" +
+      "color:var(--text,#F3F4F6);pointer-events:none;letter-spacing:.01em;white-space:pre-line;text-align:left;" +
       "background:color-mix(in srgb, #050505 66%, transparent);padding:9px 12px;" +
-      "border:1px solid rgba(255,255,255,.09);border-radius:9px;backdrop-filter:blur(4px)";
+      "border:1px solid rgba(255,255,255,.09);border-radius:9px;backdrop-filter:blur(4px);" +
+      "box-shadow:0 12px 34px rgba(0,0,0,.32)";
     visual.appendChild(el);
   }
   return el;
@@ -590,8 +591,9 @@ function buildScene(mode, scene) {
     const readout = makeReadout();
     if (readout) {
       readout.style.whiteSpace = "normal";
-      readout.style.maxWidth = "min(680px, calc(100% - 32px))";
-      readout.style.top = "64px";
+      readout.style.maxWidth = "min(440px, 46%)";
+      readout.style.top = "16px";
+      readout.classList.add("horn-readout");
     }
     const W_MAX = 4.5;                                          // ends: v/c -> 0.9998, γ -> ~45
     const G_MAX = Math.cosh(W_MAX);
@@ -644,12 +646,11 @@ function buildScene(mode, scene) {
       root.rotation.y += 0.0024;
       const moving = w > 0.02;
       if (readout) readout.innerHTML =
-        "<div style='color:#FFEB3B;font-weight:700;letter-spacing:.07em;margin-bottom:6px'>D4 VIABILITY · 0 → ∞ RAPIDITY ON THE HORN TORUS</div>" +
-        "rapidity w = " + w.toFixed(2) + " &nbsp;<span style='color:#6b7280'>= ln(Doppler); the slider walks one meridian toward the light boundary</span><br>" +
-        "β = v/c &nbsp;" + bar(aB, "#42A5F5") + " " + vc.toFixed(4) + "<br>" +
-        "γ = cosh w = " + gamma.toFixed(1) + " &nbsp;<span style='color:#9CA3AF'>E/mc² = γ; rest floor = 1</span> " + bar(gamma / G_MAX, "#FFEB3B") + "<br>" +
-        "mouth R/r = 1/γ = " + (1 / gamma).toFixed(3) + " &nbsp;<span style='color:#9CA3AF'>= dτ/dt — the rate of lived time</span><br>" +
-        "<span style='color:#9CA3AF'>agency read: V = usable means-to-act; more reach costs energy and still needs D5 foresight</span><br>" +
+        "<div style='color:#FFEB3B;font-weight:800;letter-spacing:.08em;margin-bottom:6px'>D4 HORN · RAPIDITY 0 → ∞</div>" +
+        "w = " + w.toFixed(2) + " · β = " + vc.toFixed(4) + " " + bar(aB, "#42A5F5") + "<br>" +
+        "γ = cosh(w) = " + gamma.toFixed(1) + " · E/mc² = γ " + bar(gamma / G_MAX, "#FFEB3B") + "<br>" +
+        "R/r = 1/γ = " + (1 / gamma).toFixed(3) + " · dτ/dt<br>" +
+        "<span style='color:#9CA3AF'>V = means-to-act; D5 foresight still selects the worldline.</span><br>" +
         (!moving
           ? "<span style='color:#FFEB3B'>w=0 · HORN touch (γ=1, R=r) — rest energy E = mc²</span>"
           : gamma > 20
@@ -725,8 +726,9 @@ function buildScene(mode, scene) {
     if (readout) {
       readout.style.whiteSpace = "pre-line";
       readout.style.top = "auto";
-      readout.style.bottom = "58px";
-      readout.style.maxWidth = "min(760px, calc(100% - 32px))";
+      readout.style.bottom = "70px";
+      readout.style.maxWidth = "min(520px, 52%)";
+      readout.classList.add("burrisphere-readout");
     }
     const THETA_MIN = 0.12;
     const THETA_MAX = Math.PI - 0.12;
@@ -796,24 +798,74 @@ function buildScene(mode, scene) {
           ? "GOD-move (Φ > V)"
           : "DEMON-move (V > Φ)";
       if (readout) readout.textContent =
-        "DUAL STEREOGRAPHIC PROJECTION · the two rays meet at P\n" +
-        "θ = " + (theta * 180 / Math.PI).toFixed(0) + "°" + (thetaUserActive ? " (held by slider)" : " (auto-sweep)") + "   φ = " + phi.toFixed(2) + "   ν = " + nu.toFixed(2) + "   φ·ν = 1 (mass-shell)   E/mc² = (φ+ν)/2 = " + ((phi + nu) / 2).toFixed(2) + "   cos θ = β = " + Math.cos(theta).toFixed(2) + " (latitude = speed)\n" +
-        "D5 Φ = worldline foresight, D4 V = means-to-act; P_node = Φ × V fails when either factor collapses\n" +
-        "quadrant " + q + " · " + opName + " · " + moveName + "\n" +
-        "the stage {0, 1, ∞} — • 0 floor-touch (Śiva's sign) · ⊙ 1 centre (Viṣṇu's) · ○ ∞ top-touch (Brahmā's)";
+        "D5 BURRISPHERE · dual rays meet at P\n" +
+        "θ " + (theta * 180 / Math.PI).toFixed(0) + "°" + (thetaUserActive ? " held" : " sweep") + " · φ " + phi.toFixed(2) + " · ν " + nu.toFixed(2) + " · φ·ν=1 · E/mc² " + ((phi + nu) / 2).toFixed(2) + "\n" +
+        "P_node = Φ × V; either missing factor collapses the move\n" +
+        "quadrant " + q + " · " + opName + " · " + moveName;
     });
   }
 
   if (mode === "convergence") {
-    root.add(createSphere(1.25, 0.18));
-    root.add(ring(1.25, 0xffffff, 0.9));
-    root.add(ring(0.86, 0xb8b8b8, 0.7));
-    root.add(ring(0.48, 0x707070, 0.65));
+    if (visual) visual.classList.add("ccc-visual");
+    const readout = makeReadout();
+    if (readout) {
+      readout.style.maxWidth = "min(430px, 46%)";
+      readout.style.whiteSpace = "pre-line";
+      readout.classList.add("ccc-readout");
+    }
+    const cccRing = (color, opacity = 1, tube = 0.012) => new THREE.Mesh(
+      new THREE.TorusGeometry(1, tube, 12, 192),
+      makeMaterial(color, opacity)
+    );
+    const aeons = [
+      { phase: 0.00, color: 0xffffff },
+      { phase: 0.33, color: 0x9ca3af },
+      { phase: 0.66, color: 0x42a5f5 }
+    ].map(({ phase, color }) => {
+      const loop = cccRing(color, 0.8, 0.01);
+      loop.userData.phase = phase;
+      root.add(loop);
+      return loop;
+    });
+    const boundary = cccRing(0xffffff, 0.24, 0.009);
+    boundary.scale.setScalar(1.82);
+    root.add(boundary);
+    const startDot = new THREE.Mesh(
+      new THREE.SphereGeometry(0.065, 32, 16),
+      makeMaterial(0xffffff, 0.96)
+    );
+    const restartPulse = new THREE.Mesh(
+      new THREE.SphereGeometry(0.12, 32, 16),
+      makeMaterial(0xffeb3b, 0.48)
+    );
+    root.add(startDot);
+    root.add(restartPulse);
     root.add(line([
-      new THREE.Vector3(-1.7, -0.8, 0),
-      new THREE.Vector3(0, 0, 0),
-      new THREE.Vector3(1.7, 0.8, 0)
-    ], 0xffffff, 0.9));
+      new THREE.Vector3(-1.82, 0, -0.01),
+      new THREE.Vector3(-0.12, 0, -0.01),
+      new THREE.Vector3(0, 0, -0.01),
+      new THREE.Vector3(0.12, 0, -0.01),
+      new THREE.Vector3(1.82, 0, -0.01)
+    ], 0xffffff, 0.18));
+    dyn.push((t) => {
+      aeons.forEach((loop) => {
+        const p = (t * 0.14 + loop.userData.phase) % 1;
+        const scale = 0.12 + p * 1.7;
+        loop.scale.setScalar(scale);
+        loop.rotation.z = t * 0.025 + p * 0.22;
+        loop.material.opacity = Math.max(0.06, 0.88 * (1 - p));
+      });
+      const pulse = (t * 0.42) % 1;
+      restartPulse.scale.setScalar(0.55 + pulse * 1.8);
+      restartPulse.material.opacity = 0.42 * (1 - pulse);
+      boundary.rotation.z = -t * 0.018;
+      boundary.material.opacity = 0.18 + 0.08 * Math.sin(t * 0.7);
+      if (readout) readout.textContent =
+        "CCC RETURN · ENDSTATE = START\n" +
+        "/6 ≡ /0 is route closure, not a new object\n" +
+        "aeon expands → boundary thins → origin reappears\n" +
+        "Penrose CCC is analogy here, not asserted identity";
+    });
   }
 
   return { root, update: (t) => dyn.forEach((f) => f(t)) };
@@ -870,6 +922,12 @@ async function boot() {
       controls.target.set(0, 0.45, 0);
       controls.update();
     }
+    if (page.animationMode === "horn") {
+      // keep the full torus readable beneath the compact HUD and slider
+      camera.position.set(0, 0.32, 6.15);
+      controls.target.set(0, 0.05, 0);
+      controls.update();
+    }
 
     addStars(scene);
     const { root, update } = buildScene(page.animationMode, scene);
@@ -890,8 +948,7 @@ async function boot() {
       } else if (page.animationMode === "bloch") {
         root.scale.setScalar(1 + Math.sin(t * 0.6) * 0.025);
       } else if (page.animationMode === "convergence") {
-        root.rotation.z = t * 0.08;
-        root.scale.setScalar(1 + Math.sin(t * 0.7) * 0.04);
+        root.rotation.z = t * 0.018;
       }
       update(t); // morphing / orbiting models (horn, burrisphere)
 

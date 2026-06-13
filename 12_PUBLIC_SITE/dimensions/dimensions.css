@@ -460,8 +460,44 @@ h3 {
 .label.left { left: 1rem; bottom: 32%; }
 .label.bottom { left: 1rem; right: 1rem; bottom: 1rem; max-width: none; text-align: center; }
 .horn-visual .label.bottom { bottom: 3.6rem; }
+.horn-visual .label.left {
+  left: 1rem;
+  bottom: 36%;
+  max-width: 13.5rem;
+}
+.horn-visual .label.right {
+  top: auto;
+  right: 1rem;
+  bottom: 34%;
+  max-width: 12rem;
+}
+.burrisphere-visual .label.top {
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: min(26rem, calc(100% - 2rem));
+  text-align: center;
+}
+.burrisphere-visual .label.left { display: none; }
 .burrisphere-visual .label.bottom { display: none; }
+.ccc-visual .label.top {
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: min(22rem, calc(100% - 2rem));
+  text-align: center;
+}
+.ccc-visual .label.left,
+.ccc-visual .label.right {
+  display: none;
+}
+.ccc-visual .label.bottom {
+  bottom: 1rem;
+}
 .label.center { left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center; }
+
+.model-readout {
+  overflow: hidden;
+  text-wrap: balance;
+}
 
 .fallback {
   position: absolute;
@@ -650,7 +686,7 @@ noscript {
   }
 
   .visual-panel {
-    min-height: 62vh;
+    min-height: 58vh;
   }
 
   .route-footer {
@@ -659,6 +695,14 @@ noscript {
 
   .label {
     max-width: min(13rem, calc(100vw - 2rem));
+  }
+
+  .label.top,
+  .burrisphere-visual .label.top {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    max-width: calc(100% - 2rem);
   }
 
   .label.right {
@@ -683,7 +727,27 @@ noscript {
     display: none;
   }
 
+  .ccc-visual .label.bottom {
+    display: none;
+  }
+
   .model-slider {
-    right: 7.25rem !important;
+    left: 0.75rem !important;
+    right: 0.75rem !important;
+    bottom: 0.75rem !important;
+    gap: 0.45rem !important;
+    font-size: 9px !important;
+  }
+
+  .model-readout {
+    left: 0.75rem !important;
+    right: 0.75rem !important;
+    top: auto !important;
+    bottom: 3.8rem !important;
+    max-width: none !important;
+    max-height: 32vh;
+    overflow: hidden;
+    font-size: 9.5px !important;
+    line-height: 1.45 !important;
   }
 }

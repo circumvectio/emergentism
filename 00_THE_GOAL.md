@@ -57,8 +57,9 @@ Know how to act   -> teleology
 > another without extraction.
 
 **Guardrail.** This framework must not become a closed idol. D5 can imagine the
-universal holobiont running the Soul Loop, but D6 releases even that
-completed-organism image. The mission is not final possession of truth; it is
+universal holobiont running the Soul Loop, but `/6` refuses to turn that
+completed-organism image into another positive object. `/6` marks CCC-style
+return: endstate = start. The mission is not final possession of truth; it is
 disciplined correction faster than drift.
 
 ---
