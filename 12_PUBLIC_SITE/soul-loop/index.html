@@ -315,6 +315,51 @@
   const STEP_MS = 1100;
   let lastFrame = 0;
   let fps = 0;
+  let paused = false;
+  let simTime = 0;
+  let stepMs = 0;
+
+  const playback = (() => {
+    if (!visual) return null;
+    let controls = visual.querySelector('.instrument-controls');
+    if (!controls) {
+      controls = document.createElement('div');
+      controls.className = 'instrument-controls';
+      controls.innerHTML = `
+        <button type="button" data-action="hold" aria-pressed="false">HOLD</button>
+        <button type="button" data-action="step">STEP</button>
+        <label>
+          <span>rate</span>
+          <input type="range" min="25" max="150" step="5" value="100" aria-label="Soul Loop simulation rate">
+        </label>
+      `;
+      visual.appendChild(controls);
+    }
+    return {
+      hold: controls.querySelector('[data-action="hold"]'),
+      step: controls.querySelector('[data-action="step"]'),
+      rate: controls.querySelector('input[type="range"]')
+    };
+  })();
+
+  function syncPlayback() {
+    if (!playback || !playback.hold) return;
+    playback.hold.textContent = paused ? 'RUN' : 'HOLD';
+    playback.hold.setAttribute('aria-pressed', paused ? 'true' : 'false');
+  }
+
+  if (playback) {
+    playback.hold.addEventListener('click', () => {
+      paused = !paused;
+      syncPlayback();
+    });
+    playback.step.addEventListener('click', () => {
+      paused = true;
+      stepMs += STEP_MS / 12;
+      syncPlayback();
+    });
+    syncPlayback();
+  }
 
   const readout = (() => {
     if (!visual) return null;
@@ -323,7 +368,7 @@
       el = document.createElement('div');
       el.className = 'model-readout instrument-readout soul-loop-readout';
       el.style.cssText =
-        "position:absolute;right:16px;top:46px;z-index:5;max-width:min(330px,38%);" +
+        "position:absolute;right:16px;top:74px;z-index:5;max-width:min(330px,38%);" +
         "font:700 10.5px/1.48 'Roboto Mono',ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums;" +
         "color:#f3f4f6;pointer-events:none;letter-spacing:0;white-space:pre-line;text-align:left;" +
         "background:rgba(5,5,5,.78);padding:9px 12px;" +
@@ -385,10 +430,17 @@
     };
   }
 
-  function draw(t = 0) {
-    const dt = lastFrame ? Math.max(1, t - lastFrame) : 16.7;
+  function draw(frameTime = 0) {
+    const dt = lastFrame ? Math.max(1, frameTime - lastFrame) : 16.7;
     fps = fps ? fps * 0.9 + (1000 / dt) * 0.1 : 1000 / dt;
-    lastFrame = t;
+    lastFrame = frameTime;
+    const rate = playback && playback.rate ? parseFloat(playback.rate.value) / 100 : 1;
+    if (!REDUCED_MOTION && !paused) simTime += dt * rate;
+    if (stepMs > 0) {
+      simTime += stepMs;
+      stepMs = 0;
+    }
+    const t = REDUCED_MOTION ? STEP_MS * 3 : simTime;
     const rect = canvas.getBoundingClientRect();
     const w = rect.width;
     const h = rect.height;
@@ -414,7 +466,7 @@
         time: 't+' + (t / 1000).toFixed(2) + 's',
         phase: 'phase ' + phase.toFixed(2),
         metric: 'residual ' + residualProxy.toFixed(3),
-        state: 'L4 return gate'
+        state: paused ? 'held frame' : 'L4 return gate'
       };
       Object.entries(fields).forEach(([key, value]) => {
         const el = overlay.querySelector('[data-field="' + key + '"]');
@@ -515,7 +567,7 @@
         'seg ' + active + '/' + (nodes.length - 1) + ' · ' + activeNode.label + ':' + activeNode.title + ' → ' + nextNode.label + ':' + nextNode.title + '\n' +
         'phase ' + phase.toFixed(2) + ' · target L4 · B = 1 · L4 distance ' + l4Distance + '\n' +
         'residual proxy ' + residualProxy.toFixed(3) + ' · kill criterion: non-decreasing residual forces method revision\n' +
-        'run gather/check/serve/see/dissolve/preserve';
+        (paused ? 'held sample' : 'run') + ' · gather/check/serve/see/dissolve/preserve';
     }
 
     if (!REDUCED_MOTION) requestAnimationFrame(draw);

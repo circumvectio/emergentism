@@ -523,7 +523,7 @@ h3 {
   flex-wrap: wrap;
   gap: 6px;
   align-items: center;
-  max-width: calc(100% - 26px);
+  max-width: calc(100% - 310px);
   color: rgba(243, 244, 246, 0.76);
   font: 700 10px/1 "Roboto Mono", ui-monospace, Menlo, monospace;
   font-variant-numeric: tabular-nums;
@@ -550,6 +550,84 @@ h3 {
 
 .instrument-telemetry span[data-field="state"] {
   color: rgba(66, 165, 245, 0.92);
+}
+
+.instrument-controls {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  z-index: 6;
+  display: grid;
+  grid-template-columns: auto auto minmax(104px, 140px);
+  gap: 6px;
+  align-items: center;
+  color: rgba(243, 244, 246, 0.78);
+  font: 700 10px/1 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.instrument-controls button,
+.instrument-controls label {
+  min-height: 25px;
+  border: 1px solid rgba(243, 244, 246, 0.16);
+  border-radius: 4px;
+  background: rgba(5, 5, 5, 0.78);
+  color: inherit;
+  backdrop-filter: blur(4px);
+}
+
+.instrument-controls button {
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.instrument-controls button:hover {
+  border-color: rgba(255, 235, 59, 0.58);
+  color: #FFEB3B;
+}
+
+.instrument-controls button[aria-pressed="true"] {
+  border-color: rgba(66, 165, 245, 0.54);
+  color: rgba(66, 165, 245, 0.96);
+}
+
+.instrument-controls label {
+  display: grid;
+  grid-template-columns: auto minmax(56px, 1fr);
+  gap: 6px;
+  align-items: center;
+  padding: 0 7px;
+}
+
+.instrument-controls input[type="range"] {
+  width: 100%;
+  appearance: none;
+  height: 3px;
+  border-radius: 999px;
+  background:
+    repeating-linear-gradient(90deg, rgba(243,244,246,.22) 0 1px, transparent 1px 8px),
+    linear-gradient(90deg, rgba(66,165,245,.34), rgba(255,235,59,.55));
+}
+
+.instrument-controls input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #050505;
+  border-radius: 50%;
+  background: #FFEB3B;
+  box-shadow: 0 0 0 1px rgba(243,244,246,.42);
+}
+
+.instrument-controls input[type="range"]::-moz-range-thumb {
+  width: 11px;
+  height: 11px;
+  border: 2px solid #050505;
+  border-radius: 50%;
+  background: #FFEB3B;
+  box-shadow: 0 0 0 1px rgba(243,244,246,.42);
 }
 
 .visual-labels {
@@ -896,6 +974,32 @@ noscript {
     bottom: 0.75rem !important;
     gap: 0.45rem !important;
     font-size: 9px !important;
+  }
+
+  .instrument-controls {
+    top: auto;
+    right: 0.75rem;
+    left: 0.75rem;
+    bottom: 0.75rem;
+    grid-template-columns: auto auto minmax(0, 1fr);
+    font-size: 8px;
+  }
+
+  .instrument-controls button,
+  .instrument-controls label {
+    min-height: 24px;
+  }
+
+  .instrument-telemetry {
+    max-width: calc(100% - 1.5rem);
+  }
+
+  body.dimension-page .model-slider {
+    bottom: 2.7rem !important;
+  }
+
+  body.dimension-page .model-readout {
+    bottom: 5.65rem !important;
   }
 
   .model-readout {

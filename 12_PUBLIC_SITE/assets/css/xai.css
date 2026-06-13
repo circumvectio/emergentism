@@ -792,7 +792,7 @@ body.soul-loop-instrument .visual-labels .bottom {
   flex-wrap: wrap;
   gap: 6px;
   align-items: center;
-  max-width: calc(100% - 26px);
+  max-width: calc(100% - 310px);
   color: rgba(243, 244, 246, 0.76);
   font: 700 10px/1 "Roboto Mono", ui-monospace, Menlo, monospace;
   font-variant-numeric: tabular-nums;
@@ -819,6 +819,84 @@ body.soul-loop-instrument .visual-labels .bottom {
 
 .instrument-telemetry span[data-field="state"] {
   color: rgba(66, 165, 245, 0.92);
+}
+
+.instrument-controls {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  z-index: 6;
+  display: grid;
+  grid-template-columns: auto auto minmax(104px, 140px);
+  gap: 6px;
+  align-items: center;
+  color: rgba(243, 244, 246, 0.78);
+  font: 700 10px/1 var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.instrument-controls button,
+.instrument-controls label {
+  min-height: 25px;
+  border: 1px solid rgba(243, 244, 246, 0.16);
+  border-radius: 4px;
+  background: rgba(5, 5, 5, 0.78);
+  color: inherit;
+  backdrop-filter: blur(4px);
+}
+
+.instrument-controls button {
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.instrument-controls button:hover {
+  border-color: rgba(255, 235, 59, 0.58);
+  color: var(--gold);
+}
+
+.instrument-controls button[aria-pressed="true"] {
+  border-color: rgba(66, 165, 245, 0.54);
+  color: rgba(66, 165, 245, 0.96);
+}
+
+.instrument-controls label {
+  display: grid;
+  grid-template-columns: auto minmax(56px, 1fr);
+  gap: 6px;
+  align-items: center;
+  padding: 0 7px;
+}
+
+.instrument-controls input[type="range"] {
+  width: 100%;
+  appearance: none;
+  height: 3px;
+  border-radius: 999px;
+  background:
+    repeating-linear-gradient(90deg, rgba(243,244,246,.22) 0 1px, transparent 1px 8px),
+    linear-gradient(90deg, rgba(66,165,245,.34), rgba(255,235,59,.55));
+}
+
+.instrument-controls input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #050505;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 1px rgba(243,244,246,.42);
+}
+
+.instrument-controls input[type="range"]::-moz-range-thumb {
+  width: 11px;
+  height: 11px;
+  border: 2px solid #050505;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 1px rgba(243,244,246,.42);
 }
 
 .visual-labels .label {
@@ -1740,9 +1818,32 @@ pre.glyph-block {
     top: 9px;
     left: 9px;
     right: 9px;
+    max-width: calc(100% - 18px);
     flex-wrap: wrap;
     gap: 4px;
     font-size: 8px;
+  }
+
+  .instrument-controls {
+    top: auto;
+    right: 9px;
+    left: 9px;
+    bottom: 9px;
+    grid-template-columns: auto auto minmax(0, 1fr);
+    font-size: 8px;
+  }
+
+  .instrument-controls button,
+  .instrument-controls label {
+    min-height: 24px;
+  }
+
+  body.dimension-page .model-slider {
+    bottom: 2.7rem !important;
+  }
+
+  body.dimension-page .model-readout {
+    bottom: 5.65rem !important;
   }
 
   body.soul-loop-instrument .visual-labels .label {

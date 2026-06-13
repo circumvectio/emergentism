@@ -253,6 +253,36 @@ function updateInstrumentOverlay(overlay, t, fps) {
   if (stateField) stateField.textContent = visual.dataset.instrumentState || "locked frame";
 }
 
+function ensureInstrumentControls() {
+  if (!visual) return null;
+  let controls = visual.querySelector(".instrument-controls");
+  if (!controls) {
+    controls = document.createElement("div");
+    controls.className = "instrument-controls";
+    controls.innerHTML = `
+      <button type="button" data-action="hold" aria-pressed="false">HOLD</button>
+      <button type="button" data-action="step">STEP</button>
+      <label>
+        <span>rate</span>
+        <input type="range" min="25" max="150" step="5" value="100" aria-label="simulation rate" />
+      </label>
+    `;
+    visual.appendChild(controls);
+  }
+  return {
+    root: controls,
+    hold: controls.querySelector('[data-action="hold"]'),
+    step: controls.querySelector('[data-action="step"]'),
+    rate: controls.querySelector('input[type="range"]')
+  };
+}
+
+function syncInstrumentControls(playback, paused) {
+  if (!playback || !playback.hold) return;
+  playback.hold.textContent = paused ? "RUN" : "HOLD";
+  playback.hold.setAttribute("aria-pressed", paused ? "true" : "false");
+}
+
 function setupCanvas2D() {
   const ctx = canvas.getContext("2d");
   if (!ctx) {
@@ -289,8 +319,27 @@ function drawTitanCalculator(time = 0) {
     bounds = resize();
     if (REDUCED_MOTION) draw(0);
   });
+  const playback = ensureInstrumentControls();
+  let paused = false;
+  let simTime = 0;
+  let stepSeconds = 0;
   let lastFrame = time;
   let fps = 0;
+  if (playback) {
+    playback.hold.addEventListener("click", () => {
+      paused = !paused;
+      syncInstrumentControls(playback, paused);
+    });
+    playback.step.addEventListener("click", () => {
+      paused = true;
+      stepSeconds += 1 / 12;
+      syncInstrumentControls(playback, paused);
+    });
+    playback.rate.addEventListener("input", () => {
+      setInstrumentMetric(visual.dataset.instrumentMetric || "", "rate " + (parseFloat(playback.rate.value) / 100).toFixed(2) + "x", visual.dataset.instrumentPhase || "");
+    });
+    syncInstrumentControls(playback, paused);
+  }
 
   function draw(now) {
     const ink = "#fff";
@@ -298,10 +347,16 @@ function drawTitanCalculator(time = 0) {
     const dim = "#5f5f5f";
     const width = bounds.width;
     const height = bounds.height;
-    const t = now * 0.001;
     const dt = lastFrame ? Math.max(1, now - lastFrame) : 16.7;
     fps = fps ? fps * 0.9 + (1000 / dt) * 0.1 : 1000 / dt;
     lastFrame = now;
+    const rate = playback && playback.rate ? parseFloat(playback.rate.value) / 100 : 1;
+    if (!paused) simTime += dt * 0.001 * rate;
+    if (stepSeconds > 0) {
+      simTime += stepSeconds;
+      stepSeconds = 0;
+    }
+    const t = simTime;
     updateInstrumentOverlay(overlay, t, fps);
     const cx = width / 2;
     const cy = height / 2;
@@ -360,7 +415,7 @@ function drawTitanCalculator(time = 0) {
     const reciprocalS = 1.85 + smooth01(sweep01(t, 0.035)) * 2.5;
     const lx = cx - reciprocalS * unit;
     const rx = cx + reciprocalS * unit;
-    setInstrumentMetric("s ±" + reciprocalS.toFixed(2), "unity fixed", "phase " + reciprocalPhase.toFixed(2));
+    setInstrumentMetric("s ±" + reciprocalS.toFixed(2), (paused ? "held frame" : "unity fixed"), "phase " + reciprocalPhase.toFixed(2));
 
     ctx.setLineDash([8, 8]);
     ctx.strokeStyle = "rgba(245,245,245,0.48)";
@@ -564,7 +619,7 @@ function makeReadout() {
     el = document.createElement("div");
     el.className = "model-readout";
     el.style.cssText =
-      "position:absolute;left:16px;top:46px;z-index:5;max-width:68%;" +
+      "position:absolute;left:16px;top:74px;z-index:5;max-width:68%;" +
       "font:600 11px/1.55 'Roboto Mono',ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums;" +
       "color:var(--text,#F3F4F6);pointer-events:none;letter-spacing:0;white-space:pre-line;text-align:left;" +
       "background:rgba(5,5,5,.78);padding:9px 12px;" +
@@ -844,7 +899,7 @@ function buildScene(mode, scene) {
     if (readout) {
       readout.style.whiteSpace = "normal";
       readout.style.maxWidth = "min(440px, 46%)";
-      readout.style.top = "46px";
+      readout.style.top = "74px";
       readout.classList.add("horn-readout");
     }
     const W_MAX = 4.5;                                          // ends: v/c -> 0.9998, γ -> ~45
@@ -1277,6 +1332,25 @@ async function boot() {
     }
 
     const overlay = ensureInstrumentOverlay(page.animationMode);
+    const playback = ensureInstrumentControls();
+    let paused = false;
+    let simTime = 0;
+    let stepSeconds = 0;
+    if (playback) {
+      playback.hold.addEventListener("click", () => {
+        paused = !paused;
+        syncInstrumentControls(playback, paused);
+      });
+      playback.step.addEventListener("click", () => {
+        paused = true;
+        stepSeconds += 1 / 12;
+        syncInstrumentControls(playback, paused);
+      });
+      playback.rate.addEventListener("input", () => {
+        setInstrumentMetric(visual.dataset.instrumentMetric || "", "rate " + (parseFloat(playback.rate.value) / 100).toFixed(2) + "x", visual.dataset.instrumentPhase || "");
+      });
+      syncInstrumentControls(playback, paused);
+    }
     addReferenceFrame(scene);
     const { root, update } = buildScene(page.animationMode, scene);
 
@@ -1290,10 +1364,16 @@ async function boot() {
     let lastFrame = 0;
     let fps = 0;
     function animate(time) {
-      const t = time * 0.001;
       const dt = lastFrame ? Math.max(1, time - lastFrame) : 16.7;
       fps = fps ? fps * 0.9 + (1000 / dt) * 0.1 : 1000 / dt;
       lastFrame = time;
+      const rate = playback && playback.rate ? parseFloat(playback.rate.value) / 100 : 1;
+      if (!paused) simTime += dt * 0.001 * rate;
+      if (stepSeconds > 0) {
+        simTime += stepSeconds;
+        stepSeconds = 0;
+      }
+      const t = simTime;
       if (page.animationMode === "titans") {
         root.rotation.z = 0;
       } else if (page.animationMode === "muLimit") {
@@ -1304,6 +1384,9 @@ async function boot() {
         root.rotation.z = 0;
       }
       update(t); // morphing / orbiting models (horn, burrisphere)
+      if (paused) {
+        setInstrumentMetric(visual.dataset.instrumentMetric || "", "held frame", visual.dataset.instrumentPhase || "");
+      }
       updateInstrumentOverlay(overlay, t, fps);
 
       controls.update();
