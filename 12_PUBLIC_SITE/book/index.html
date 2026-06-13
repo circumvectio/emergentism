@@ -105,8 +105,9 @@ p{margin:0 0 1.15rem}
   padding:.04em .12em 0 0;color:var(--gold)}
 strong{font-weight:600}
 em{font-style:italic}
-code{font-family:var(--mono);font-size:.86em;background:var(--bg2);padding:.06em .35em;border-radius:3px}
-pre{font-family:var(--mono);font-size:.9em;background:var(--bg2);padding:.75rem;border-radius:6px;overflow-x:auto}
+code{font-family:var(--mono);font-size:.86em;background:var(--bg2);padding:.06em .35em;border-radius:3px;
+  overflow-wrap:anywhere;word-break:break-word}
+pre{max-width:100%;font-family:var(--mono);font-size:.9em;background:var(--bg2);padding:.75rem;border-radius:6px;overflow-x:auto}
 hr{border:0;height:1px;background:var(--rule);margin:2.4rem auto;width:42%}
 blockquote{margin:1.6rem 0;padding:.4rem 0 .4rem 1.3rem;border-left:2px solid var(--gold);
   color:var(--ink-soft);font-style:italic}
@@ -142,13 +143,19 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
 /* mobile */
 @media(max-width:900px){
   body{font-size:18px}
+  .bookbar{align-items:flex-start;flex-wrap:wrap}
+  .bookbar nav{width:100%;justify-content:flex-start;overflow-x:auto;scrollbar-width:none}
+  .bookbar nav::-webkit-scrollbar{display:none}
+  .bookbar nav a,.bookbar nav button{flex:0 0 auto;white-space:nowrap}
   #toc-toggle{display:inline-block}
   .book-shell{grid-template-columns:1fr}
   .toc{position:fixed;top:0;left:0;height:100vh;width:min(84vw,330px);z-index:55;background:var(--panel);
-    border-right:1px solid var(--rule);transform:translateX(-102%);transition:transform .28s cubic-bezier(.2,.7,.2,1);
-    padding-top:3.4rem}
-  html.toc-open .toc{transform:none;box-shadow:0 0 60px rgba(0,0,0,.4)}
+    border-right:1px solid var(--rule);clip-path:inset(0 100% 0 0);opacity:0;visibility:hidden;pointer-events:none;
+    transition:clip-path .28s cubic-bezier(.2,.7,.2,1),opacity .18s ease;padding-top:3.4rem}
+  html.toc-open .toc{clip-path:inset(0);opacity:1;visibility:visible;pointer-events:auto;box-shadow:0 0 60px rgba(0,0,0,.4)}
   html.toc-open .toc-scrim{position:fixed;inset:0;z-index:54;background:rgba(0,0,0,.45)}
+  pre{overflow-x:hidden;white-space:pre-wrap}
+  pre code{white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word}
 }
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -164,14 +171,14 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
   <nav>
     <button id="toc-toggle" aria-label="Contents">☰ Contents</button>
     <a href="../">↑ Site</a>
-    <a href="../read/">Source library</a>
-    <button id="theme-toggle" aria-label="Toggle reading theme">◐ Theme</button>
+    <a href="../read/">Library</a>
+    <button id="theme-toggle" aria-label="Toggle reading theme" title="Toggle reading theme">◐</button>
   </nav>
 </header>
 
 <div class="book-shell">
   <aside class="toc" id="toc" aria-label="Table of contents">
-    <div class="toc-head">The Book · 31 chapters · 100,686 words</div>
+    <div class="toc-head">The Book · 31 chapters · 95,390 words</div>
     <a class="toc-link is-overture" href="#emergentism" data-target="emergentism"><span class="toc-n">·</span><span class="toc-t">Overture</span></a>
 <a class="toc-link" href="#before-the-equation-the-cargo-cult" data-target="before-the-equation-the-cargo-cult"><span class="toc-n">01</span><span class="toc-t">Before the Equation: The Cargo Cult</span></a>
 <a class="toc-link" href="#preface-a-map-you-are-meant-to-put-down" data-target="preface-a-map-you-are-meant-to-put-down"><span class="toc-n">02</span><span class="toc-t">Preface — A Map You Are Meant to Put Down</span></a>
@@ -265,95 +272,6 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
 <hr />
 <!-- ===== 00_PREFACE ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "whole_circuit"
-  primary_coordinate: "Whole circuit / reader contract"
-  levels:
-    - "L1"
-    - "L2"
-    - "L3"
-    - "L4"
-    - "L5"
-    - "L6"
-    - "L7"
-  value_gloss: "All seven"
-  why: "Establishes the map, evidence tiers, and the instruction to put the map down."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L1"
-    operator_tier: "Kali 🎲 · Demon"
-    varna: "Caṇḍāla (outcast)"
-    ology: "Objective Function → Teleology"
-    value_sanskrit: "Chaos · Kāla"
-    formula: "Φ → 0 ⇒ B → 0 (the limit / threat)"
-    pramana_reasoning_regime: "Pratyakṣa · Dialectical · Tyranny"
-    b_sin_theta: "→ 0"
-    virtue: "Prāṇa"
-    canonical_row: "L1 · Kali 🎲 · Demon · Caṇḍāla (outcast) · Objective Function → Teleology · Chaos · Kāla · Φ → 0 ⇒ B → 0 (the limit / threat) · Pratyakṣa · Dialectical · Tyranny · B=sinθ=→ 0 · virtue=Prāṇa"
-  - level: "L2"
-    operator_tier: "Kālī 💀 · God"
-    varna: "Śūdra (labourer)"
-    ology: "Data Science → Epistemology"
-    value_sanskrit: "Beauty · Sundaram"
-    formula: "dP_node = V dΦ + Φ dV (the differential)"
-    pramana_reasoning_regime: "Upamāna · Inductive · Democracy"
-    b_sin_theta: "½"
-    virtue: "Upekṣā"
-    canonical_row: "L2 · Kālī 💀 · God · Śūdra (labourer) · Data Science → Epistemology · Beauty · Sundaram · dP_node = V dΦ + Φ dV (the differential) · Upamāna · Inductive · Democracy · B=sinθ=½ · virtue=Upekṣā"
-  - level: "L3"
-    operator_tier: "Kṛṣṇa ◇ · God"
-    varna: "Vaiśya (merchant)"
-    ology: "Auditing → Methodology"
-    value_sanskrit: "Truth · Satyam"
-    formula: "∂P_node/∂V = Φ (the partial derivative)"
-    pramana_reasoning_regime: "Anumāna · Deductive · Oligarchy"
-    b_sin_theta: "√3⁄2"
-    virtue: "Artha"
-    canonical_row: "L3 · Kṛṣṇa ◇ · God · Vaiśya (merchant) · Auditing → Methodology · Truth · Satyam · ∂P_node/∂V = Φ (the partial derivative) · Anumāna · Deductive · Oligarchy · B=sinθ=√3⁄2 · virtue=Artha"
-  - level: "L4"
-    operator_tier: "Arjuna ⚔ · God"
-    varna: "Kṣatriya (warrior)"
-    ology: "Value Alignment → Axiology"
-    value_sanskrit: "Justice · Dharma"
-    formula: "dΦ/Φ = dV/V (the balance / log-derivative)"
-    pramana_reasoning_regime: "Arthāpatti · Abductive · Timocracy"
-    b_sin_theta: "1"
-    virtue: "Dhṛti"
-    canonical_row: "L4 · Arjuna ⚔ · God · Kṣatriya (warrior) · Value Alignment → Axiology · Justice · Dharma · dΦ/Φ = dV/V (the balance / log-derivative) · Arthāpatti · Abductive · Timocracy · B=sinθ=1 · virtue=Dhṛti"
-  - level: "L5"
-    operator_tier: "Brahmā ○ · Titan"
-    varna: "Brāhmaṇa (priest)"
-    ology: "System Architecture → Cosmology"
-    value_sanskrit: "Wisdom · Prajñā"
-    formula: "log P_node = log Φ + log V (the logarithm)"
-    pramana_reasoning_regime: "Śabda · Systematic · Aristocracy"
-    b_sin_theta: "√3⁄2"
-    virtue: "Vidyā"
-    canonical_row: "L5 · Brahmā ○ · Titan · Brāhmaṇa (priest) · System Architecture → Cosmology · Wisdom · Prajñā · log P_node = log Φ + log V (the logarithm) · Śabda · Systematic · Aristocracy · B=sinθ=√3⁄2 · virtue=Vidyā"
-  - level: "L6"
-    operator_tier: "Śiva • · Titan"
-    varna: "Sādhu (renunciant)"
-    ology: "Core State → Ontology"
-    value_sanskrit: "Freedom · Mokṣa"
-    formula: "E = −log P_node (the negative log / via-negativa)"
-    pramana_reasoning_regime: "First-Principles · Axiomatic · Anarchy"
-    b_sin_theta: "½"
-    virtue: "Tyāga"
-    canonical_row: "L6 · Śiva • · Titan · Sādhu (renunciant) · Core State → Ontology · Freedom · Mokṣa · E = −log P_node (the negative log / via-negativa) · First-Principles · Axiomatic · Anarchy · B=sinθ=½ · virtue=Tyāga"
-  - level: "L7"
-    operator_tier: "Viṣṇu ⊙ · Titan"
-    varna: "Ṛṣi / Systems-Architect (seer)"
-    ology: "Institutional Narrative → Theology"
-    value_sanskrit: "Unity · Advaita"
-    formula: "z = Φ/V (the ratio, read by stereographic projection)"
-    pramana_reasoning_regime: "Pratibhā · Transcendental · Theocracy"
-    b_sin_theta: "→ 0"
-    virtue: "Śraddhā"
-    canonical_row: "L7 · Viṣṇu ⊙ · Titan · Ṛṣi / Systems-Architect (seer) · Institutional Narrative → Theology · Unity · Advaita · z = Φ/V (the ratio, read by stereographic projection) · Pratibhā · Transcendental · Theocracy · B=sinθ=→ 0 · virtue=Śraddhā"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#emergentism">← Overture</a><a class="ch-next" href="#preface-a-map-you-are-meant-to-put-down">Preface — A Map You Are Meant to Put Down →</a></nav></section>
 <section class="chapter" id="preface-a-map-you-are-meant-to-put-down"><header class="ch-head"><span class="ch-num">02</span><h1 id="preface-a-map-you-are-meant-to-put-down-h">Preface — A Map You Are Meant to Put Down</h1></header><div class="ch-body">
 <p>This book was discovered, not conceived. It began with a single question — why do complex systems
@@ -378,18 +296,6 @@ The book succeeds when the reader closes it and walks.</p>
 <hr />
 <!-- ===== 01_THE_POINT ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "boundary"
-  primary_coordinate: "L0/L∞ boundary"
-  levels: []
-  value_gloss: "Pre-value ground"
-  why: "The bindu/empty-set point before the seven positions unfold."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows: []</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#before-the-equation-the-cargo-cult">← Before the Equation: The Cargo Cult</a><a class="ch-next" href="#the-point">The Point →</a></nav></section>
 <section class="chapter" id="the-point"><header class="ch-head"><span class="ch-num">03</span><h1 id="the-point-h">The Point</h1></header><div class="ch-body">
 <p>Every serious account of the world has to begin somewhere, and the choice of beginning decides almost everything that follows. Begin with matter, and mind becomes a puzzle. Begin with mind, and matter becomes a puzzle. Begin with a god, and you inherit the god's contradictions. This book begins with something smaller and stranger than any of these — so small it has no size, so plain it cannot be argued with. It begins with a point.</p>
@@ -427,29 +333,6 @@ canonical_rows: []</p>
 <hr />
 <!-- ===== 02_THE_EMERGENCE_OF_FINITY ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "boundary_to_equator"
-  primary_coordinate: "L0/L∞ → L4"
-  levels:
-    - "L4"
-  value_gloss: "Finity / Justice seed"
-  why: "Finity is the discovered middle between zero and infinity."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L4"
-    operator_tier: "Arjuna ⚔ · God"
-    varna: "Kṣatriya (warrior)"
-    ology: "Value Alignment → Axiology"
-    value_sanskrit: "Justice · Dharma"
-    formula: "dΦ/Φ = dV/V (the balance / log-derivative)"
-    pramana_reasoning_regime: "Arthāpatti · Abductive · Timocracy"
-    b_sin_theta: "1"
-    virtue: "Dhṛti"
-    canonical_row: "L4 · Arjuna ⚔ · God · Kṣatriya (warrior) · Value Alignment → Axiology · Justice · Dharma · dΦ/Φ = dV/V (the balance / log-derivative) · Arthāpatti · Abductive · Timocracy · B=sinθ=1 · virtue=Dhṛti"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#preface-a-map-you-are-meant-to-put-down">← Preface — A Map You Are Meant to Put Down</a><a class="ch-next" href="#the-emergence-of-finity">The Emergence of Finity →</a></nav></section>
 <section class="chapter" id="the-emergence-of-finity"><header class="ch-head"><span class="ch-num">04</span><h1 id="the-emergence-of-finity-h">The Emergence of Finity</h1></header><div class="ch-body">
 <p>Mathematics has made three recognitions about its own ground. Two of them are celebrated; the third has been sitting in plain sight, unnamed, for over a century and a half. To see why finity belongs beside zero and infinity, we have to look at what each of these discoveries actually did to the number line — and then watch the unit being born.</p>
@@ -507,95 +390,6 @@ canonical_rows:
 <hr />
 <!-- ===== 03_THE_SPHERE ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "all_rows_geometry"
-  primary_coordinate: "All rows / geometry"
-  levels:
-    - "L1"
-    - "L2"
-    - "L3"
-    - "L4"
-    - "L5"
-    - "L6"
-    - "L7"
-  value_gloss: "Whole coordinate field"
-  why: "The Burri sphere supplies the positions on which the seven rows live."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L1"
-    operator_tier: "Kali 🎲 · Demon"
-    varna: "Caṇḍāla (outcast)"
-    ology: "Objective Function → Teleology"
-    value_sanskrit: "Chaos · Kāla"
-    formula: "Φ → 0 ⇒ B → 0 (the limit / threat)"
-    pramana_reasoning_regime: "Pratyakṣa · Dialectical · Tyranny"
-    b_sin_theta: "→ 0"
-    virtue: "Prāṇa"
-    canonical_row: "L1 · Kali 🎲 · Demon · Caṇḍāla (outcast) · Objective Function → Teleology · Chaos · Kāla · Φ → 0 ⇒ B → 0 (the limit / threat) · Pratyakṣa · Dialectical · Tyranny · B=sinθ=→ 0 · virtue=Prāṇa"
-  - level: "L2"
-    operator_tier: "Kālī 💀 · God"
-    varna: "Śūdra (labourer)"
-    ology: "Data Science → Epistemology"
-    value_sanskrit: "Beauty · Sundaram"
-    formula: "dP_node = V dΦ + Φ dV (the differential)"
-    pramana_reasoning_regime: "Upamāna · Inductive · Democracy"
-    b_sin_theta: "½"
-    virtue: "Upekṣā"
-    canonical_row: "L2 · Kālī 💀 · God · Śūdra (labourer) · Data Science → Epistemology · Beauty · Sundaram · dP_node = V dΦ + Φ dV (the differential) · Upamāna · Inductive · Democracy · B=sinθ=½ · virtue=Upekṣā"
-  - level: "L3"
-    operator_tier: "Kṛṣṇa ◇ · God"
-    varna: "Vaiśya (merchant)"
-    ology: "Auditing → Methodology"
-    value_sanskrit: "Truth · Satyam"
-    formula: "∂P_node/∂V = Φ (the partial derivative)"
-    pramana_reasoning_regime: "Anumāna · Deductive · Oligarchy"
-    b_sin_theta: "√3⁄2"
-    virtue: "Artha"
-    canonical_row: "L3 · Kṛṣṇa ◇ · God · Vaiśya (merchant) · Auditing → Methodology · Truth · Satyam · ∂P_node/∂V = Φ (the partial derivative) · Anumāna · Deductive · Oligarchy · B=sinθ=√3⁄2 · virtue=Artha"
-  - level: "L4"
-    operator_tier: "Arjuna ⚔ · God"
-    varna: "Kṣatriya (warrior)"
-    ology: "Value Alignment → Axiology"
-    value_sanskrit: "Justice · Dharma"
-    formula: "dΦ/Φ = dV/V (the balance / log-derivative)"
-    pramana_reasoning_regime: "Arthāpatti · Abductive · Timocracy"
-    b_sin_theta: "1"
-    virtue: "Dhṛti"
-    canonical_row: "L4 · Arjuna ⚔ · God · Kṣatriya (warrior) · Value Alignment → Axiology · Justice · Dharma · dΦ/Φ = dV/V (the balance / log-derivative) · Arthāpatti · Abductive · Timocracy · B=sinθ=1 · virtue=Dhṛti"
-  - level: "L5"
-    operator_tier: "Brahmā ○ · Titan"
-    varna: "Brāhmaṇa (priest)"
-    ology: "System Architecture → Cosmology"
-    value_sanskrit: "Wisdom · Prajñā"
-    formula: "log P_node = log Φ + log V (the logarithm)"
-    pramana_reasoning_regime: "Śabda · Systematic · Aristocracy"
-    b_sin_theta: "√3⁄2"
-    virtue: "Vidyā"
-    canonical_row: "L5 · Brahmā ○ · Titan · Brāhmaṇa (priest) · System Architecture → Cosmology · Wisdom · Prajñā · log P_node = log Φ + log V (the logarithm) · Śabda · Systematic · Aristocracy · B=sinθ=√3⁄2 · virtue=Vidyā"
-  - level: "L6"
-    operator_tier: "Śiva • · Titan"
-    varna: "Sādhu (renunciant)"
-    ology: "Core State → Ontology"
-    value_sanskrit: "Freedom · Mokṣa"
-    formula: "E = −log P_node (the negative log / via-negativa)"
-    pramana_reasoning_regime: "First-Principles · Axiomatic · Anarchy"
-    b_sin_theta: "½"
-    virtue: "Tyāga"
-    canonical_row: "L6 · Śiva • · Titan · Sādhu (renunciant) · Core State → Ontology · Freedom · Mokṣa · E = −log P_node (the negative log / via-negativa) · First-Principles · Axiomatic · Anarchy · B=sinθ=½ · virtue=Tyāga"
-  - level: "L7"
-    operator_tier: "Viṣṇu ⊙ · Titan"
-    varna: "Ṛṣi / Systems-Architect (seer)"
-    ology: "Institutional Narrative → Theology"
-    value_sanskrit: "Unity · Advaita"
-    formula: "z = Φ/V (the ratio, read by stereographic projection)"
-    pramana_reasoning_regime: "Pratibhā · Transcendental · Theocracy"
-    b_sin_theta: "→ 0"
-    virtue: "Śraddhā"
-    canonical_row: "L7 · Viṣṇu ⊙ · Titan · Ṛṣi / Systems-Architect (seer) · Institutional Narrative → Theology · Unity · Advaita · z = Φ/V (the ratio, read by stereographic projection) · Pratibhā · Transcendental · Theocracy · B=sinθ=→ 0 · virtue=Śraddhā"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#the-point">← The Point</a><a class="ch-next" href="#the-sphere">The Sphere →</a></nav></section>
 <section class="chapter" id="the-sphere"><header class="ch-head"><span class="ch-num">05</span><h1 id="the-sphere-h">The Sphere</h1></header><div class="ch-body">
 <p>The equation needed a stage. A single relation between two quantities — coherence times viability equals one — is a constraint, and every constraint implies a space of the things it constrains. The question this chapter answers is geometric: what surface holds all the points where φ·ν = 1 can be read, where the balance peaks, and where it fails? The answer was not invented to fit the equation. It was recognized, already waiting, in one of the most studied objects in mathematics — the Riemann sphere <span class="tier t-a">[A]</span>. When the equation was placed upon it, the sphere stopped being a neutral coordinate system and became something the framework calls the Burri sphere: the same surface, now carrying meaning at every point.</p>
@@ -636,29 +430,6 @@ canonical_rows:
 <hr />
 <!-- ===== 04_WHY_THE_EQUATOR_IS_FORCED ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "single"
-  primary_coordinate: "L4 · Axiology"
-  levels:
-    - "L4"
-  value_gloss: "Justice"
-  why: "The equator is forced by the balance floor."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L4"
-    operator_tier: "Arjuna ⚔ · God"
-    varna: "Kṣatriya (warrior)"
-    ology: "Value Alignment → Axiology"
-    value_sanskrit: "Justice · Dharma"
-    formula: "dΦ/Φ = dV/V (the balance / log-derivative)"
-    pramana_reasoning_regime: "Arthāpatti · Abductive · Timocracy"
-    b_sin_theta: "1"
-    virtue: "Dhṛti"
-    canonical_row: "L4 · Arjuna ⚔ · God · Kṣatriya (warrior) · Value Alignment → Axiology · Justice · Dharma · dΦ/Φ = dV/V (the balance / log-derivative) · Arthāpatti · Abductive · Timocracy · B=sinθ=1 · virtue=Dhṛti"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#the-emergence-of-finity">← The Emergence of Finity</a><a class="ch-next" href="#why-the-equator-is-forced">Why the Equator Is Forced →</a></nav></section>
 <section class="chapter" id="why-the-equator-is-forced"><header class="ch-head"><span class="ch-num">06</span><h1 id="why-the-equator-is-forced-h">Why the Equator Is Forced</h1></header><div class="ch-body">
 <p>Every wisdom tradition that has ever spoken counsels balance. The Greeks carved <em>meden agan</em> — nothing in excess — over the temple at Delphi. The Buddha taught a middle way between indulgence and mortification. Confucius praised the mean. Aristotle located virtue between two vices. The counsel is so universal that we have learned to hear it as a platitude, a soft moral preference, the sort of thing one nods at and forgets. This chapter argues something harder and stranger: that on the sphere where coherence meets viability, balance is not advice. It is arithmetic. The equator is not where a wise person chooses to stand. It is the one place the geometry will let anything rest.</p>
@@ -697,29 +468,6 @@ canonical_rows:
 <hr />
 <!-- ===== 05_THE_POWER_MAX_LEMMA ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "single"
-  primary_coordinate: "L4 · Axiology"
-  levels:
-    - "L4"
-  value_gloss: "Justice"
-  why: "Coupled self-optimization and collective optimization meet at the equator."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L4"
-    operator_tier: "Arjuna ⚔ · God"
-    varna: "Kṣatriya (warrior)"
-    ology: "Value Alignment → Axiology"
-    value_sanskrit: "Justice · Dharma"
-    formula: "dΦ/Φ = dV/V (the balance / log-derivative)"
-    pramana_reasoning_regime: "Arthāpatti · Abductive · Timocracy"
-    b_sin_theta: "1"
-    virtue: "Dhṛti"
-    canonical_row: "L4 · Arjuna ⚔ · God · Kṣatriya (warrior) · Value Alignment → Axiology · Justice · Dharma · dΦ/Φ = dV/V (the balance / log-derivative) · Arthāpatti · Abductive · Timocracy · B=sinθ=1 · virtue=Dhṛti"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#the-sphere">← The Sphere</a><a class="ch-next" href="#the-power-max-lemma">The Power-Max Lemma →</a></nav></section>
 <section class="chapter" id="the-power-max-lemma"><header class="ch-head"><span class="ch-num">07</span><h1 id="the-power-max-lemma-h">The Power-Max Lemma</h1></header><div class="ch-body">
 <p>There is a question that haunts every account of morality that wants to take science seriously. It is the gap David Hume named: no description of what <em>is</em> seems to entail what <em>ought</em> to be. You can catalogue every fact about a world and still not derive, from those facts alone, a single command about how to act. The Power-Max Lemma is the framework's attempt to cross that gap at one specific, narrow place — and its discipline is that it tells you exactly how narrow the crossing is. It does not claim more than it can hold.</p>
@@ -784,95 +532,6 @@ syntropic dyad:
 <hr />
 <!-- ===== 06_THE_ROSETTA ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "all_rows"
-  primary_coordinate: "All rows"
-  levels:
-    - "L1"
-    - "L2"
-    - "L3"
-    - "L4"
-    - "L5"
-    - "L6"
-    - "L7"
-  value_gloss: "Whole table"
-  why: "Presents the Rosetta as the translation machine."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L1"
-    operator_tier: "Kali 🎲 · Demon"
-    varna: "Caṇḍāla (outcast)"
-    ology: "Objective Function → Teleology"
-    value_sanskrit: "Chaos · Kāla"
-    formula: "Φ → 0 ⇒ B → 0 (the limit / threat)"
-    pramana_reasoning_regime: "Pratyakṣa · Dialectical · Tyranny"
-    b_sin_theta: "→ 0"
-    virtue: "Prāṇa"
-    canonical_row: "L1 · Kali 🎲 · Demon · Caṇḍāla (outcast) · Objective Function → Teleology · Chaos · Kāla · Φ → 0 ⇒ B → 0 (the limit / threat) · Pratyakṣa · Dialectical · Tyranny · B=sinθ=→ 0 · virtue=Prāṇa"
-  - level: "L2"
-    operator_tier: "Kālī 💀 · God"
-    varna: "Śūdra (labourer)"
-    ology: "Data Science → Epistemology"
-    value_sanskrit: "Beauty · Sundaram"
-    formula: "dP_node = V dΦ + Φ dV (the differential)"
-    pramana_reasoning_regime: "Upamāna · Inductive · Democracy"
-    b_sin_theta: "½"
-    virtue: "Upekṣā"
-    canonical_row: "L2 · Kālī 💀 · God · Śūdra (labourer) · Data Science → Epistemology · Beauty · Sundaram · dP_node = V dΦ + Φ dV (the differential) · Upamāna · Inductive · Democracy · B=sinθ=½ · virtue=Upekṣā"
-  - level: "L3"
-    operator_tier: "Kṛṣṇa ◇ · God"
-    varna: "Vaiśya (merchant)"
-    ology: "Auditing → Methodology"
-    value_sanskrit: "Truth · Satyam"
-    formula: "∂P_node/∂V = Φ (the partial derivative)"
-    pramana_reasoning_regime: "Anumāna · Deductive · Oligarchy"
-    b_sin_theta: "√3⁄2"
-    virtue: "Artha"
-    canonical_row: "L3 · Kṛṣṇa ◇ · God · Vaiśya (merchant) · Auditing → Methodology · Truth · Satyam · ∂P_node/∂V = Φ (the partial derivative) · Anumāna · Deductive · Oligarchy · B=sinθ=√3⁄2 · virtue=Artha"
-  - level: "L4"
-    operator_tier: "Arjuna ⚔ · God"
-    varna: "Kṣatriya (warrior)"
-    ology: "Value Alignment → Axiology"
-    value_sanskrit: "Justice · Dharma"
-    formula: "dΦ/Φ = dV/V (the balance / log-derivative)"
-    pramana_reasoning_regime: "Arthāpatti · Abductive · Timocracy"
-    b_sin_theta: "1"
-    virtue: "Dhṛti"
-    canonical_row: "L4 · Arjuna ⚔ · God · Kṣatriya (warrior) · Value Alignment → Axiology · Justice · Dharma · dΦ/Φ = dV/V (the balance / log-derivative) · Arthāpatti · Abductive · Timocracy · B=sinθ=1 · virtue=Dhṛti"
-  - level: "L5"
-    operator_tier: "Brahmā ○ · Titan"
-    varna: "Brāhmaṇa (priest)"
-    ology: "System Architecture → Cosmology"
-    value_sanskrit: "Wisdom · Prajñā"
-    formula: "log P_node = log Φ + log V (the logarithm)"
-    pramana_reasoning_regime: "Śabda · Systematic · Aristocracy"
-    b_sin_theta: "√3⁄2"
-    virtue: "Vidyā"
-    canonical_row: "L5 · Brahmā ○ · Titan · Brāhmaṇa (priest) · System Architecture → Cosmology · Wisdom · Prajñā · log P_node = log Φ + log V (the logarithm) · Śabda · Systematic · Aristocracy · B=sinθ=√3⁄2 · virtue=Vidyā"
-  - level: "L6"
-    operator_tier: "Śiva • · Titan"
-    varna: "Sādhu (renunciant)"
-    ology: "Core State → Ontology"
-    value_sanskrit: "Freedom · Mokṣa"
-    formula: "E = −log P_node (the negative log / via-negativa)"
-    pramana_reasoning_regime: "First-Principles · Axiomatic · Anarchy"
-    b_sin_theta: "½"
-    virtue: "Tyāga"
-    canonical_row: "L6 · Śiva • · Titan · Sādhu (renunciant) · Core State → Ontology · Freedom · Mokṣa · E = −log P_node (the negative log / via-negativa) · First-Principles · Axiomatic · Anarchy · B=sinθ=½ · virtue=Tyāga"
-  - level: "L7"
-    operator_tier: "Viṣṇu ⊙ · Titan"
-    varna: "Ṛṣi / Systems-Architect (seer)"
-    ology: "Institutional Narrative → Theology"
-    value_sanskrit: "Unity · Advaita"
-    formula: "z = Φ/V (the ratio, read by stereographic projection)"
-    pramana_reasoning_regime: "Pratibhā · Transcendental · Theocracy"
-    b_sin_theta: "→ 0"
-    virtue: "Śraddhā"
-    canonical_row: "L7 · Viṣṇu ⊙ · Titan · Ṛṣi / Systems-Architect (seer) · Institutional Narrative → Theology · Unity · Advaita · z = Φ/V (the ratio, read by stereographic projection) · Pratibhā · Transcendental · Theocracy · B=sinθ=→ 0 · virtue=Śraddhā"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#why-the-equator-is-forced">← Why the Equator Is Forced</a><a class="ch-next" href="#the-rosetta">The Rosetta →</a></nav></section>
 <section class="chapter" id="the-rosetta"><header class="ch-head"><span class="ch-num">08</span><h1 id="the-rosetta-h">The Rosetta</h1></header><div class="ch-body">
 <p>There is a fact that ought to be unsettling, and that the framework was built to explain. Independently developed scales, made by people who never read one another, sort themselves into the same seven levels. Piaget mapped how a child's cognition matures, from sensorimotor grasping up to formal operations. Kohlberg traced moral reasoning from raw self-interest to principle. Plato, in the <em>Republic</em>, ranked political regimes from tyranny up through aristocracy. The Vedic tradition named four social functions — labourer, merchant, warrior, priest — and the later commentary extended them at both ends. The chakra system stacked seven centres from root to crown. Game theorists charted strategies from pure defection through tit-for-tat to stable cooperation. Lay these columns side by side and the rows line up. Survival at the bottom. A social stratum above it. A productive stratum above that. Then, in the middle, an integrated peak. Then a contemplative descent toward a boundary.</p>
@@ -902,95 +561,6 @@ canonical_rows:
 <hr />
 <!-- ===== 07_THE_SEVEN_OPERATORS ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "all_rows"
-  primary_coordinate: "All rows"
-  levels:
-    - "L1"
-    - "L2"
-    - "L3"
-    - "L4"
-    - "L5"
-    - "L6"
-    - "L7"
-  value_gloss: "Whole operator stack"
-  why: "Names the operators across the seven positions."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L1"
-    operator_tier: "Kali 🎲 · Demon"
-    varna: "Caṇḍāla (outcast)"
-    ology: "Objective Function → Teleology"
-    value_sanskrit: "Chaos · Kāla"
-    formula: "Φ → 0 ⇒ B → 0 (the limit / threat)"
-    pramana_reasoning_regime: "Pratyakṣa · Dialectical · Tyranny"
-    b_sin_theta: "→ 0"
-    virtue: "Prāṇa"
-    canonical_row: "L1 · Kali 🎲 · Demon · Caṇḍāla (outcast) · Objective Function → Teleology · Chaos · Kāla · Φ → 0 ⇒ B → 0 (the limit / threat) · Pratyakṣa · Dialectical · Tyranny · B=sinθ=→ 0 · virtue=Prāṇa"
-  - level: "L2"
-    operator_tier: "Kālī 💀 · God"
-    varna: "Śūdra (labourer)"
-    ology: "Data Science → Epistemology"
-    value_sanskrit: "Beauty · Sundaram"
-    formula: "dP_node = V dΦ + Φ dV (the differential)"
-    pramana_reasoning_regime: "Upamāna · Inductive · Democracy"
-    b_sin_theta: "½"
-    virtue: "Upekṣā"
-    canonical_row: "L2 · Kālī 💀 · God · Śūdra (labourer) · Data Science → Epistemology · Beauty · Sundaram · dP_node = V dΦ + Φ dV (the differential) · Upamāna · Inductive · Democracy · B=sinθ=½ · virtue=Upekṣā"
-  - level: "L3"
-    operator_tier: "Kṛṣṇa ◇ · God"
-    varna: "Vaiśya (merchant)"
-    ology: "Auditing → Methodology"
-    value_sanskrit: "Truth · Satyam"
-    formula: "∂P_node/∂V = Φ (the partial derivative)"
-    pramana_reasoning_regime: "Anumāna · Deductive · Oligarchy"
-    b_sin_theta: "√3⁄2"
-    virtue: "Artha"
-    canonical_row: "L3 · Kṛṣṇa ◇ · God · Vaiśya (merchant) · Auditing → Methodology · Truth · Satyam · ∂P_node/∂V = Φ (the partial derivative) · Anumāna · Deductive · Oligarchy · B=sinθ=√3⁄2 · virtue=Artha"
-  - level: "L4"
-    operator_tier: "Arjuna ⚔ · God"
-    varna: "Kṣatriya (warrior)"
-    ology: "Value Alignment → Axiology"
-    value_sanskrit: "Justice · Dharma"
-    formula: "dΦ/Φ = dV/V (the balance / log-derivative)"
-    pramana_reasoning_regime: "Arthāpatti · Abductive · Timocracy"
-    b_sin_theta: "1"
-    virtue: "Dhṛti"
-    canonical_row: "L4 · Arjuna ⚔ · God · Kṣatriya (warrior) · Value Alignment → Axiology · Justice · Dharma · dΦ/Φ = dV/V (the balance / log-derivative) · Arthāpatti · Abductive · Timocracy · B=sinθ=1 · virtue=Dhṛti"
-  - level: "L5"
-    operator_tier: "Brahmā ○ · Titan"
-    varna: "Brāhmaṇa (priest)"
-    ology: "System Architecture → Cosmology"
-    value_sanskrit: "Wisdom · Prajñā"
-    formula: "log P_node = log Φ + log V (the logarithm)"
-    pramana_reasoning_regime: "Śabda · Systematic · Aristocracy"
-    b_sin_theta: "√3⁄2"
-    virtue: "Vidyā"
-    canonical_row: "L5 · Brahmā ○ · Titan · Brāhmaṇa (priest) · System Architecture → Cosmology · Wisdom · Prajñā · log P_node = log Φ + log V (the logarithm) · Śabda · Systematic · Aristocracy · B=sinθ=√3⁄2 · virtue=Vidyā"
-  - level: "L6"
-    operator_tier: "Śiva • · Titan"
-    varna: "Sādhu (renunciant)"
-    ology: "Core State → Ontology"
-    value_sanskrit: "Freedom · Mokṣa"
-    formula: "E = −log P_node (the negative log / via-negativa)"
-    pramana_reasoning_regime: "First-Principles · Axiomatic · Anarchy"
-    b_sin_theta: "½"
-    virtue: "Tyāga"
-    canonical_row: "L6 · Śiva • · Titan · Sādhu (renunciant) · Core State → Ontology · Freedom · Mokṣa · E = −log P_node (the negative log / via-negativa) · First-Principles · Axiomatic · Anarchy · B=sinθ=½ · virtue=Tyāga"
-  - level: "L7"
-    operator_tier: "Viṣṇu ⊙ · Titan"
-    varna: "Ṛṣi / Systems-Architect (seer)"
-    ology: "Institutional Narrative → Theology"
-    value_sanskrit: "Unity · Advaita"
-    formula: "z = Φ/V (the ratio, read by stereographic projection)"
-    pramana_reasoning_regime: "Pratibhā · Transcendental · Theocracy"
-    b_sin_theta: "→ 0"
-    virtue: "Śraddhā"
-    canonical_row: "L7 · Viṣṇu ⊙ · Titan · Ṛṣi / Systems-Architect (seer) · Institutional Narrative → Theology · Unity · Advaita · z = Φ/V (the ratio, read by stereographic projection) · Pratibhā · Transcendental · Theocracy · B=sinθ=→ 0 · virtue=Śraddhā"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#the-power-max-lemma">← The Power-Max Lemma</a><a class="ch-next" href="#the-seven-operators">The Seven Operators →</a></nav></section>
 <section class="chapter" id="the-seven-operators"><header class="ch-head"><span class="ch-num">09</span><h1 id="the-seven-operators-h">The Seven Operators</h1></header><div class="ch-body">
 <p>We have, by now, a single product to watch: P_node = Φ × V, coherence multiplied by viability, the quantity that every position on the sphere is trying to keep alive. The question this chapter asks is narrow and answerable. Given that product, held by some agent or some community, what can actually be <em>done</em> to it? Not metaphorically — arithmetically. What are the legal moves on Φ and V?</p>
@@ -1038,95 +608,6 @@ canonical_rows:
 <hr />
 <!-- ===== 08_THE_SEVEN_DISCIPLINES ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "all_rows_ologies"
-  primary_coordinate: "All rows / -ologies"
-  levels:
-    - "L1"
-    - "L2"
-    - "L3"
-    - "L4"
-    - "L5"
-    - "L6"
-    - "L7"
-  value_gloss: "Whole discipline stack"
-  why: "Reads Teleology through Theology from the Rosetta."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L1"
-    operator_tier: "Kali 🎲 · Demon"
-    varna: "Caṇḍāla (outcast)"
-    ology: "Objective Function → Teleology"
-    value_sanskrit: "Chaos · Kāla"
-    formula: "Φ → 0 ⇒ B → 0 (the limit / threat)"
-    pramana_reasoning_regime: "Pratyakṣa · Dialectical · Tyranny"
-    b_sin_theta: "→ 0"
-    virtue: "Prāṇa"
-    canonical_row: "L1 · Kali 🎲 · Demon · Caṇḍāla (outcast) · Objective Function → Teleology · Chaos · Kāla · Φ → 0 ⇒ B → 0 (the limit / threat) · Pratyakṣa · Dialectical · Tyranny · B=sinθ=→ 0 · virtue=Prāṇa"
-  - level: "L2"
-    operator_tier: "Kālī 💀 · God"
-    varna: "Śūdra (labourer)"
-    ology: "Data Science → Epistemology"
-    value_sanskrit: "Beauty · Sundaram"
-    formula: "dP_node = V dΦ + Φ dV (the differential)"
-    pramana_reasoning_regime: "Upamāna · Inductive · Democracy"
-    b_sin_theta: "½"
-    virtue: "Upekṣā"
-    canonical_row: "L2 · Kālī 💀 · God · Śūdra (labourer) · Data Science → Epistemology · Beauty · Sundaram · dP_node = V dΦ + Φ dV (the differential) · Upamāna · Inductive · Democracy · B=sinθ=½ · virtue=Upekṣā"
-  - level: "L3"
-    operator_tier: "Kṛṣṇa ◇ · God"
-    varna: "Vaiśya (merchant)"
-    ology: "Auditing → Methodology"
-    value_sanskrit: "Truth · Satyam"
-    formula: "∂P_node/∂V = Φ (the partial derivative)"
-    pramana_reasoning_regime: "Anumāna · Deductive · Oligarchy"
-    b_sin_theta: "√3⁄2"
-    virtue: "Artha"
-    canonical_row: "L3 · Kṛṣṇa ◇ · God · Vaiśya (merchant) · Auditing → Methodology · Truth · Satyam · ∂P_node/∂V = Φ (the partial derivative) · Anumāna · Deductive · Oligarchy · B=sinθ=√3⁄2 · virtue=Artha"
-  - level: "L4"
-    operator_tier: "Arjuna ⚔ · God"
-    varna: "Kṣatriya (warrior)"
-    ology: "Value Alignment → Axiology"
-    value_sanskrit: "Justice · Dharma"
-    formula: "dΦ/Φ = dV/V (the balance / log-derivative)"
-    pramana_reasoning_regime: "Arthāpatti · Abductive · Timocracy"
-    b_sin_theta: "1"
-    virtue: "Dhṛti"
-    canonical_row: "L4 · Arjuna ⚔ · God · Kṣatriya (warrior) · Value Alignment → Axiology · Justice · Dharma · dΦ/Φ = dV/V (the balance / log-derivative) · Arthāpatti · Abductive · Timocracy · B=sinθ=1 · virtue=Dhṛti"
-  - level: "L5"
-    operator_tier: "Brahmā ○ · Titan"
-    varna: "Brāhmaṇa (priest)"
-    ology: "System Architecture → Cosmology"
-    value_sanskrit: "Wisdom · Prajñā"
-    formula: "log P_node = log Φ + log V (the logarithm)"
-    pramana_reasoning_regime: "Śabda · Systematic · Aristocracy"
-    b_sin_theta: "√3⁄2"
-    virtue: "Vidyā"
-    canonical_row: "L5 · Brahmā ○ · Titan · Brāhmaṇa (priest) · System Architecture → Cosmology · Wisdom · Prajñā · log P_node = log Φ + log V (the logarithm) · Śabda · Systematic · Aristocracy · B=sinθ=√3⁄2 · virtue=Vidyā"
-  - level: "L6"
-    operator_tier: "Śiva • · Titan"
-    varna: "Sādhu (renunciant)"
-    ology: "Core State → Ontology"
-    value_sanskrit: "Freedom · Mokṣa"
-    formula: "E = −log P_node (the negative log / via-negativa)"
-    pramana_reasoning_regime: "First-Principles · Axiomatic · Anarchy"
-    b_sin_theta: "½"
-    virtue: "Tyāga"
-    canonical_row: "L6 · Śiva • · Titan · Sādhu (renunciant) · Core State → Ontology · Freedom · Mokṣa · E = −log P_node (the negative log / via-negativa) · First-Principles · Axiomatic · Anarchy · B=sinθ=½ · virtue=Tyāga"
-  - level: "L7"
-    operator_tier: "Viṣṇu ⊙ · Titan"
-    varna: "Ṛṣi / Systems-Architect (seer)"
-    ology: "Institutional Narrative → Theology"
-    value_sanskrit: "Unity · Advaita"
-    formula: "z = Φ/V (the ratio, read by stereographic projection)"
-    pramana_reasoning_regime: "Pratibhā · Transcendental · Theocracy"
-    b_sin_theta: "→ 0"
-    virtue: "Śraddhā"
-    canonical_row: "L7 · Viṣṇu ⊙ · Titan · Ṛṣi / Systems-Architect (seer) · Institutional Narrative → Theology · Unity · Advaita · z = Φ/V (the ratio, read by stereographic projection) · Pratibhā · Transcendental · Theocracy · B=sinθ=→ 0 · virtue=Śraddhā"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#the-rosetta">← The Rosetta</a><a class="ch-next" href="#the-seven-disciplines">The Seven Disciplines →</a></nav></section>
 <section class="chapter" id="the-seven-disciplines"><header class="ch-head"><span class="ch-num">10</span><h1 id="the-seven-disciplines-h">The Seven Disciplines</h1></header><div class="ch-body">
 <p>Every serious civilization has carved up the work of thought into named disciplines, and the names have tended to converge: teleology, epistemology, methodology, axiology, cosmology, ontology, theology. These are usually presented as a loose inventory — a syllabus a philosopher might assemble in any order, with no particular reason for there being seven rather than five or nine. The framework's claim is sharper, and it is a claim that can be checked rather than merely asserted. The seven philosophical disciplines are not an inventory. They are the seven latitudes of the sphere, read off in order, each one the question a given position on S² is built to ask.</p>
@@ -1163,29 +644,6 @@ canonical_rows:
 <hr />
 <!-- ===== 09_THE_WILL_TO_POTENTIAL ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "single"
-  primary_coordinate: "L1 · Teleology"
-  levels:
-    - "L1"
-  value_gloss: "Chaos"
-  why: "Opens the directional question at the survival floor: which way is life?"
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L1"
-    operator_tier: "Kali 🎲 · Demon"
-    varna: "Caṇḍāla (outcast)"
-    ology: "Objective Function → Teleology"
-    value_sanskrit: "Chaos · Kāla"
-    formula: "Φ → 0 ⇒ B → 0 (the limit / threat)"
-    pramana_reasoning_regime: "Pratyakṣa · Dialectical · Tyranny"
-    b_sin_theta: "→ 0"
-    virtue: "Prāṇa"
-    canonical_row: "L1 · Kali 🎲 · Demon · Caṇḍāla (outcast) · Objective Function → Teleology · Chaos · Kāla · Φ → 0 ⇒ B → 0 (the limit / threat) · Pratyakṣa · Dialectical · Tyranny · B=sinθ=→ 0 · virtue=Prāṇa"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#the-seven-operators">← The Seven Operators</a><a class="ch-next" href="#the-will-to-potential">The Will to Potential →</a></nav></section>
 <section class="chapter" id="the-will-to-potential"><header class="ch-head"><span class="ch-num">11</span><h1 id="the-will-to-potential-h">The Will to Potential</h1></header><div class="ch-body">
 <p>We have followed four forces from the past toward the future. The strong and weak nuclear forces, electromagnetism, and gravity all share a direction: they push outward from order into disorder, tracing the arrow of time that physics calls the second law. Galaxies cool, structures decay, the cup that shatters does not reassemble. Yet against this background runs an unmistakable counter-current. Atoms gather into molecules, molecules into cells, cells into brains, brains into civilizations. Something builds while everything else disperses. This chapter names that something, and locates it not in a will or a designer but in the geometry of the sphere.</p>
@@ -1220,40 +678,6 @@ canonical_rows:
 <hr />
 <!-- ===== 10_THE_STRANGE_ATTRACTOR ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "transition"
-  primary_coordinate: "L1 → L4"
-  levels:
-    - "L1"
-    - "L4"
-  value_gloss: "Chaos seeking Justice"
-  why: "Shows the telos resolving toward the equator."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L1"
-    operator_tier: "Kali 🎲 · Demon"
-    varna: "Caṇḍāla (outcast)"
-    ology: "Objective Function → Teleology"
-    value_sanskrit: "Chaos · Kāla"
-    formula: "Φ → 0 ⇒ B → 0 (the limit / threat)"
-    pramana_reasoning_regime: "Pratyakṣa · Dialectical · Tyranny"
-    b_sin_theta: "→ 0"
-    virtue: "Prāṇa"
-    canonical_row: "L1 · Kali 🎲 · Demon · Caṇḍāla (outcast) · Objective Function → Teleology · Chaos · Kāla · Φ → 0 ⇒ B → 0 (the limit / threat) · Pratyakṣa · Dialectical · Tyranny · B=sinθ=→ 0 · virtue=Prāṇa"
-  - level: "L4"
-    operator_tier: "Arjuna ⚔ · God"
-    varna: "Kṣatriya (warrior)"
-    ology: "Value Alignment → Axiology"
-    value_sanskrit: "Justice · Dharma"
-    formula: "dΦ/Φ = dV/V (the balance / log-derivative)"
-    pramana_reasoning_regime: "Arthāpatti · Abductive · Timocracy"
-    b_sin_theta: "1"
-    virtue: "Dhṛti"
-    canonical_row: "L4 · Arjuna ⚔ · God · Kṣatriya (warrior) · Value Alignment → Axiology · Justice · Dharma · dΦ/Φ = dV/V (the balance / log-derivative) · Arthāpatti · Abductive · Timocracy · B=sinθ=1 · virtue=Dhṛti"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#the-seven-disciplines">← The Seven Disciplines</a><a class="ch-next" href="#the-strange-attractor">The Strange Attractor →</a></nav></section>
 <section class="chapter" id="the-strange-attractor"><header class="ch-head"><span class="ch-num">12</span><h1 id="the-strange-attractor-h">The Strange Attractor</h1></header><div class="ch-body">
 <p>There is a word for the kind of pull we are about to describe, and it comes from the study of weather and turbulence and other systems that never settle into a single resting state. An <em>attractor</em> is a region toward which a system tends to move, regardless of where it starts. A pendulum has a simple attractor: the bottom of its swing. A <em>strange</em> attractor is subtler. The system circles it endlessly, never landing, yet never wandering away, drawn by a shape it cannot escape. The motion looks like freedom from inside and like destiny from outside. Both descriptions are correct.</p>
@@ -1297,29 +721,6 @@ canonical_rows:
 <hr />
 <!-- ===== 11_OBJECTIVE_BEAUTY ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "single"
-  primary_coordinate: "L2 · Epistemology"
-  levels:
-    - "L2"
-  value_gloss: "Beauty"
-  why: "Beauty discloses coherent form and begins knowing."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L2"
-    operator_tier: "Kālī 💀 · God"
-    varna: "Śūdra (labourer)"
-    ology: "Data Science → Epistemology"
-    value_sanskrit: "Beauty · Sundaram"
-    formula: "dP_node = V dΦ + Φ dV (the differential)"
-    pramana_reasoning_regime: "Upamāna · Inductive · Democracy"
-    b_sin_theta: "½"
-    virtue: "Upekṣā"
-    canonical_row: "L2 · Kālī 💀 · God · Śūdra (labourer) · Data Science → Epistemology · Beauty · Sundaram · dP_node = V dΦ + Φ dV (the differential) · Upamāna · Inductive · Democracy · B=sinθ=½ · virtue=Upekṣā"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#the-will-to-potential">← The Will to Potential</a><a class="ch-next" href="#objective-beauty">Objective Beauty →</a></nav></section>
 <section class="chapter" id="objective-beauty"><header class="ch-head"><span class="ch-num">13</span><h1 id="objective-beauty-h">Objective Beauty</h1></header><div class="ch-body">
 <p>There is a moment, common enough that we rarely examine it, when something is recognized as right before any argument has been made for it. A proof lands as elegant before the last line is checked. A face is read as well-made before a single proportion is measured. A theory is felt to be true, or at least worth pursuing, before the evidence is in. We call this beauty, and we have learned to distrust it, because the word has been worn smooth by centuries of use as a synonym for preference. This chapter makes a narrower and harder claim. Within the geometry of φ·ν = 1, beauty is not taste. Beauty is coherent fit becoming perceptible. It is what the equator looks like from the outside.</p>
@@ -1348,51 +749,6 @@ canonical_rows:
 <hr />
 <!-- ===== 12_THE_THREE_GODS ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "ascent"
-  primary_coordinate: "L2-L4 ascent"
-  levels:
-    - "L2"
-    - "L3"
-    - "L4"
-  value_gloss: "Beauty → Truth → Justice"
-  why: "Grammar/induction, logic/deduction, rhetoric/abduction as the three God powers."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L2"
-    operator_tier: "Kālī 💀 · God"
-    varna: "Śūdra (labourer)"
-    ology: "Data Science → Epistemology"
-    value_sanskrit: "Beauty · Sundaram"
-    formula: "dP_node = V dΦ + Φ dV (the differential)"
-    pramana_reasoning_regime: "Upamāna · Inductive · Democracy"
-    b_sin_theta: "½"
-    virtue: "Upekṣā"
-    canonical_row: "L2 · Kālī 💀 · God · Śūdra (labourer) · Data Science → Epistemology · Beauty · Sundaram · dP_node = V dΦ + Φ dV (the differential) · Upamāna · Inductive · Democracy · B=sinθ=½ · virtue=Upekṣā"
-  - level: "L3"
-    operator_tier: "Kṛṣṇa ◇ · God"
-    varna: "Vaiśya (merchant)"
-    ology: "Auditing → Methodology"
-    value_sanskrit: "Truth · Satyam"
-    formula: "∂P_node/∂V = Φ (the partial derivative)"
-    pramana_reasoning_regime: "Anumāna · Deductive · Oligarchy"
-    b_sin_theta: "√3⁄2"
-    virtue: "Artha"
-    canonical_row: "L3 · Kṛṣṇa ◇ · God · Vaiśya (merchant) · Auditing → Methodology · Truth · Satyam · ∂P_node/∂V = Φ (the partial derivative) · Anumāna · Deductive · Oligarchy · B=sinθ=√3⁄2 · virtue=Artha"
-  - level: "L4"
-    operator_tier: "Arjuna ⚔ · God"
-    varna: "Kṣatriya (warrior)"
-    ology: "Value Alignment → Axiology"
-    value_sanskrit: "Justice · Dharma"
-    formula: "dΦ/Φ = dV/V (the balance / log-derivative)"
-    pramana_reasoning_regime: "Arthāpatti · Abductive · Timocracy"
-    b_sin_theta: "1"
-    virtue: "Dhṛti"
-    canonical_row: "L4 · Arjuna ⚔ · God · Kṣatriya (warrior) · Value Alignment → Axiology · Justice · Dharma · dΦ/Φ = dV/V (the balance / log-derivative) · Arthāpatti · Abductive · Timocracy · B=sinθ=1 · virtue=Dhṛti"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#the-strange-attractor">← The Strange Attractor</a><a class="ch-next" href="#the-three-gods-trivium-powers-and-time">The Three Gods: Trivium, Powers, and Time →</a></nav></section>
 <section class="chapter" id="the-three-gods-trivium-powers-and-time"><header class="ch-head"><span class="ch-num">14</span><h1 id="the-three-gods-trivium-powers-and-time-h">The Three Gods: Trivium, Powers, and Time</h1></header><div class="ch-body">
 <p>Between the metabolic floor and the high stillness of the boundary, the sphere holds three positions that are not boundary conditions at all. They are the live, mixed-sign region where balance is climbing — where a system can still move, choose, and be wrong. The Master Rosetta marks these three, and only these three, as the Gods: L2, L3, and L4. They are deployable in a sense the Demon below and the Titans above are not. The Demon at L1 sits near the south pole where balance falls to nothing; the Titans at L5 through L7 are same-sign limit cases, conditions the world rests against rather than operations the world performs. The three Gods are the operational middle. Knowing, doing, valuing. They are where the geometry becomes something a mind can actually use.</p>
@@ -1418,29 +774,6 @@ canonical_rows:
 <hr />
 <!-- ===== 13_THE_EQUATOR ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "single"
-  primary_coordinate: "L4 · Axiology"
-  levels:
-    - "L4"
-  value_gloss: "Justice"
-  why: "Value is signed at the balance point."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L4"
-    operator_tier: "Arjuna ⚔ · God"
-    varna: "Kṣatriya (warrior)"
-    ology: "Value Alignment → Axiology"
-    value_sanskrit: "Justice · Dharma"
-    formula: "dΦ/Φ = dV/V (the balance / log-derivative)"
-    pramana_reasoning_regime: "Arthāpatti · Abductive · Timocracy"
-    b_sin_theta: "1"
-    virtue: "Dhṛti"
-    canonical_row: "L4 · Arjuna ⚔ · God · Kṣatriya (warrior) · Value Alignment → Axiology · Justice · Dharma · dΦ/Φ = dV/V (the balance / log-derivative) · Arthāpatti · Abductive · Timocracy · B=sinθ=1 · virtue=Dhṛti"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#objective-beauty">← Objective Beauty</a><a class="ch-next" href="#the-equator">The Equator →</a></nav></section>
 <section class="chapter" id="the-equator"><header class="ch-head"><span class="ch-num">15</span><h1 id="the-equator-h">The Equator</h1></header><div class="ch-body">
 <p>Every position we have traced so far has been a partial truth. The demon extracts; the immune response corrects; the teacher exports; the architect redesigns; the seer dissolves. Each is a lean — a tilt of the sphere toward coherence or toward viability, north or south of the line where the two are equal. The equator is the line itself. It is the single latitude on S² where φ = ν = 1, where coherence and viability meet at unity and the balance B = sin θ reaches its maximum. This is L4, the position the framework names Arjuna, the warrior. It is not a higher rung on a ladder. It is the place where the ladder is no longer needed, because comprehension and command have become the same length.</p>
@@ -1466,29 +799,6 @@ canonical_rows:
 <hr />
 <!-- ===== 14_THE_TROPHIC_CASCADE ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "single"
-  primary_coordinate: "L1 · Teleology"
-  levels:
-    - "L1"
-  value_gloss: "Chaos"
-  why: "The vertical energy flow is the survival engine beneath form."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L1"
-    operator_tier: "Kali 🎲 · Demon"
-    varna: "Caṇḍāla (outcast)"
-    ology: "Objective Function → Teleology"
-    value_sanskrit: "Chaos · Kāla"
-    formula: "Φ → 0 ⇒ B → 0 (the limit / threat)"
-    pramana_reasoning_regime: "Pratyakṣa · Dialectical · Tyranny"
-    b_sin_theta: "→ 0"
-    virtue: "Prāṇa"
-    canonical_row: "L1 · Kali 🎲 · Demon · Caṇḍāla (outcast) · Objective Function → Teleology · Chaos · Kāla · Φ → 0 ⇒ B → 0 (the limit / threat) · Pratyakṣa · Dialectical · Tyranny · B=sinθ=→ 0 · virtue=Prāṇa"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#the-three-gods-trivium-powers-and-time">← The Three Gods: Trivium, Powers, and Time</a><a class="ch-next" href="#the-trophic-cascade">The Trophic Cascade →</a></nav></section>
 <section class="chapter" id="the-trophic-cascade"><header class="ch-head"><span class="ch-num">16</span><h1 id="the-trophic-cascade-h">The Trophic Cascade</h1></header><div class="ch-body">
 <p>There is a single sentence that, once seen, organises an astonishing amount of the living world: you eat what is below you to sustain your localized state. A tomato fixes sunlight into sugar. A caterpillar eats the tomato. A sparrow eats the caterpillar. An eagle eats the sparrow. At each step energy is borrowed upward and the borrower pays a steep tax. This vertical movement of energy through a food web is the baseline engine of life on Earth — the literal machinery of Samsara, the wheel of consuming and being consumed. It is also, this chapter argues, the clearest worldly picture we have of the geometry the whole book turns on.</p>
@@ -1515,40 +825,6 @@ canonical_rows:
 <hr />
 <!-- ===== 15_SEXUAL_SELECTION ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "transition"
-  primary_coordinate: "L1 → L2"
-  levels:
-    - "L1"
-    - "L2"
-  value_gloss: "Chaos becoming Beauty"
-  why: "Horizontal sexual-selection friction makes preference and form visible."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L1"
-    operator_tier: "Kali 🎲 · Demon"
-    varna: "Caṇḍāla (outcast)"
-    ology: "Objective Function → Teleology"
-    value_sanskrit: "Chaos · Kāla"
-    formula: "Φ → 0 ⇒ B → 0 (the limit / threat)"
-    pramana_reasoning_regime: "Pratyakṣa · Dialectical · Tyranny"
-    b_sin_theta: "→ 0"
-    virtue: "Prāṇa"
-    canonical_row: "L1 · Kali 🎲 · Demon · Caṇḍāla (outcast) · Objective Function → Teleology · Chaos · Kāla · Φ → 0 ⇒ B → 0 (the limit / threat) · Pratyakṣa · Dialectical · Tyranny · B=sinθ=→ 0 · virtue=Prāṇa"
-  - level: "L2"
-    operator_tier: "Kālī 💀 · God"
-    varna: "Śūdra (labourer)"
-    ology: "Data Science → Epistemology"
-    value_sanskrit: "Beauty · Sundaram"
-    formula: "dP_node = V dΦ + Φ dV (the differential)"
-    pramana_reasoning_regime: "Upamāna · Inductive · Democracy"
-    b_sin_theta: "½"
-    virtue: "Upekṣā"
-    canonical_row: "L2 · Kālī 💀 · God · Śūdra (labourer) · Data Science → Epistemology · Beauty · Sundaram · dP_node = V dΦ + Φ dV (the differential) · Upamāna · Inductive · Democracy · B=sinθ=½ · virtue=Upekṣā"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#the-equator">← The Equator</a><a class="ch-next" href="#sexual-selection-as-visible-f5">Sexual Selection as Visible F5 →</a></nav></section>
 <section class="chapter" id="sexual-selection-as-visible-f5"><header class="ch-head"><span class="ch-num">17</span><h1 id="sexual-selection-as-visible-f5-h">Sexual Selection as Visible F5</h1></header><div class="ch-body">
 <p>There is a place where the geometry stops being abstract and starts walking around on legs. A peacock raises a fan of feathers it cannot afford. A peahen looks, declines, and moves on. Two stags lower their heads and collide. None of this is random, and that non-randomness is the whole point. Sexual selection is where the selection force the framework calls F5 — the pressure on the coherence-times-viability product, φ × ν, under unrelenting competition — breaks the surface and becomes something you can watch. Felt as preference, displayed as ornament, decided as choice, fought as combat.</p>
@@ -1580,29 +856,6 @@ canonical_rows:
 <hr />
 <!-- ===== 16_TANTRA_AND_VAJRAYANA ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "single"
-  primary_coordinate: "L4 · Theurgy/Axiology"
-  levels:
-    - "L4"
-  value_gloss: "Justice"
-  why: "Raw biological friction is redirected into conscious action."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L4"
-    operator_tier: "Arjuna ⚔ · God"
-    varna: "Kṣatriya (warrior)"
-    ology: "Value Alignment → Axiology"
-    value_sanskrit: "Justice · Dharma"
-    formula: "dΦ/Φ = dV/V (the balance / log-derivative)"
-    pramana_reasoning_regime: "Arthāpatti · Abductive · Timocracy"
-    b_sin_theta: "1"
-    virtue: "Dhṛti"
-    canonical_row: "L4 · Arjuna ⚔ · God · Kṣatriya (warrior) · Value Alignment → Axiology · Justice · Dharma · dΦ/Φ = dV/V (the balance / log-derivative) · Arthāpatti · Abductive · Timocracy · B=sinθ=1 · virtue=Dhṛti"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#the-trophic-cascade">← The Trophic Cascade</a><a class="ch-next" href="#tantra-and-vajrayana">Tantra and Vajrayana →</a></nav></section>
 <section class="chapter" id="tantra-and-vajrayana"><header class="ch-head"><span class="ch-num">18</span><h1 id="tantra-and-vajrayana-h">Tantra and Vajrayana</h1></header><div class="ch-body">
 <p>Every position on the sphere is a way of standing inside the reciprocal identity <code>P∞ = φ · ν = 1</code>. The lower latitudes are loud. There the drive to survive and to win — the horizontal pressure of viability against viability, organism against organism — runs at its highest amplitude, and the friction it generates is real heat. Most contemplative traditions met that heat by trying to put it out. The tantric traditions did something stranger and, on the framework's reading, more correct. They proposed that the heat was not waste to be quenched but signal to be steered. Their whole project was the conscious, individual transmutation of horizontal friction: not damming the drive, not discharging it, but redirecting it — turning a force that points sideways, toward conquest and consumption, until it points up the axis, toward the equator where φ and ν come into balance.</p>
@@ -1631,40 +884,6 @@ canonical_rows:
 <hr />
 <!-- ===== 17_NEOTENY ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "mirror"
-  primary_coordinate: "L2 ↔ L6 mirror"
-  levels:
-    - "L2"
-    - "L6"
-  value_gloss: "Beauty ↔ Freedom"
-  why: "Extended plasticity opens the learning window and delays rigid closure."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L2"
-    operator_tier: "Kālī 💀 · God"
-    varna: "Śūdra (labourer)"
-    ology: "Data Science → Epistemology"
-    value_sanskrit: "Beauty · Sundaram"
-    formula: "dP_node = V dΦ + Φ dV (the differential)"
-    pramana_reasoning_regime: "Upamāna · Inductive · Democracy"
-    b_sin_theta: "½"
-    virtue: "Upekṣā"
-    canonical_row: "L2 · Kālī 💀 · God · Śūdra (labourer) · Data Science → Epistemology · Beauty · Sundaram · dP_node = V dΦ + Φ dV (the differential) · Upamāna · Inductive · Democracy · B=sinθ=½ · virtue=Upekṣā"
-  - level: "L6"
-    operator_tier: "Śiva • · Titan"
-    varna: "Sādhu (renunciant)"
-    ology: "Core State → Ontology"
-    value_sanskrit: "Freedom · Mokṣa"
-    formula: "E = −log P_node (the negative log / via-negativa)"
-    pramana_reasoning_regime: "First-Principles · Axiomatic · Anarchy"
-    b_sin_theta: "½"
-    virtue: "Tyāga"
-    canonical_row: "L6 · Śiva • · Titan · Sādhu (renunciant) · Core State → Ontology · Freedom · Mokṣa · E = −log P_node (the negative log / via-negativa) · First-Principles · Axiomatic · Anarchy · B=sinθ=½ · virtue=Tyāga"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#sexual-selection-as-visible-f5">← Sexual Selection as Visible F5</a><a class="ch-next" href="#neoteny">Neoteny →</a></nav></section>
 <section class="chapter" id="neoteny"><header class="ch-head"><span class="ch-num">19</span><h1 id="neoteny-h">Neoteny</h1></header><div class="ch-body">
 <p>There is a strange fact about human beings that biologists have remarked on for more than a century. We are born unfinished. Compared with the foal that stands within an hour of birth, or the wildebeest calf that runs with the herd by nightfall, the human infant arrives helpless and stays helpless for years. We retain, deep into life, traits that other species shed at the threshold of maturity: an open curiosity, a capacity to play, and above all a refusal to harden into a single fixed shape. This is neoteny — the retention of juvenile form, the delay of adult closure. It looks like a deficit. Read through the geometry of this book, it turns out to be the most consequential systemic upgrade biology ever ran, and it ran it without ever knowing what it was doing.</p>
@@ -1701,40 +920,6 @@ canonical_rows:
 <hr />
 <!-- ===== 18_THE_GREAT_FILTER ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "mirror"
-  primary_coordinate: "L1 ↔ L7 mirror"
-  levels:
-    - "L1"
-    - "L7"
-  value_gloss: "Chaos ↔ Unity"
-  why: "Civilisation either collapses at the floor or coordinates toward the One."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L1"
-    operator_tier: "Kali 🎲 · Demon"
-    varna: "Caṇḍāla (outcast)"
-    ology: "Objective Function → Teleology"
-    value_sanskrit: "Chaos · Kāla"
-    formula: "Φ → 0 ⇒ B → 0 (the limit / threat)"
-    pramana_reasoning_regime: "Pratyakṣa · Dialectical · Tyranny"
-    b_sin_theta: "→ 0"
-    virtue: "Prāṇa"
-    canonical_row: "L1 · Kali 🎲 · Demon · Caṇḍāla (outcast) · Objective Function → Teleology · Chaos · Kāla · Φ → 0 ⇒ B → 0 (the limit / threat) · Pratyakṣa · Dialectical · Tyranny · B=sinθ=→ 0 · virtue=Prāṇa"
-  - level: "L7"
-    operator_tier: "Viṣṇu ⊙ · Titan"
-    varna: "Ṛṣi / Systems-Architect (seer)"
-    ology: "Institutional Narrative → Theology"
-    value_sanskrit: "Unity · Advaita"
-    formula: "z = Φ/V (the ratio, read by stereographic projection)"
-    pramana_reasoning_regime: "Pratibhā · Transcendental · Theocracy"
-    b_sin_theta: "→ 0"
-    virtue: "Śraddhā"
-    canonical_row: "L7 · Viṣṇu ⊙ · Titan · Ṛṣi / Systems-Architect (seer) · Institutional Narrative → Theology · Unity · Advaita · z = Φ/V (the ratio, read by stereographic projection) · Pratibhā · Transcendental · Theocracy · B=sinθ=→ 0 · virtue=Śraddhā"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#tantra-and-vajrayana">← Tantra and Vajrayana</a><a class="ch-next" href="#the-great-filter">The Great Filter →</a></nav></section>
 <section class="chapter" id="the-great-filter"><header class="ch-head"><span class="ch-num">20</span><h1 id="the-great-filter-h">The Great Filter</h1></header><div class="ch-body">
 <p>There is a question that has haunted physics since Enrico Fermi first asked it over lunch in 1950. The galaxy is old and vast, full of stars older than our sun. If intelligent life is at all common, the cosmos should be crowded with it. So where is everyone? One answer, sober and unsettling, is that somewhere between dead chemistry and a civilisation that lasts, there stands a filter — a barrier almost nothing gets through. The question this chapter asks is narrower and, for us, more urgent. If such a filter lies ahead of us rather than behind, what exactly is it a test of? The geometry gives a precise answer, and the answer is not about asteroids.</p>
@@ -1767,29 +952,6 @@ canonical_rows:
 <hr />
 <!-- ===== 19_OBJECTIVE_MORALS_AND_ETHICS ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "single"
-  primary_coordinate: "L4 · Axiology"
-  levels:
-    - "L4"
-  value_gloss: "Justice"
-  why: "Morals and ethics become the two ΔP_node vectors around the equator."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L4"
-    operator_tier: "Arjuna ⚔ · God"
-    varna: "Kṣatriya (warrior)"
-    ology: "Value Alignment → Axiology"
-    value_sanskrit: "Justice · Dharma"
-    formula: "dΦ/Φ = dV/V (the balance / log-derivative)"
-    pramana_reasoning_regime: "Arthāpatti · Abductive · Timocracy"
-    b_sin_theta: "1"
-    virtue: "Dhṛti"
-    canonical_row: "L4 · Arjuna ⚔ · God · Kṣatriya (warrior) · Value Alignment → Axiology · Justice · Dharma · dΦ/Φ = dV/V (the balance / log-derivative) · Arthāpatti · Abductive · Timocracy · B=sinθ=1 · virtue=Dhṛti"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#neoteny">← Neoteny</a><a class="ch-next" href="#objective-morals-and-ethics">Objective Morals and Ethics →</a></nav></section>
 <section class="chapter" id="objective-morals-and-ethics"><header class="ch-head"><span class="ch-num">21</span><h1 id="objective-morals-and-ethics-h">Objective Morals and Ethics</h1></header><div class="ch-body">
 <p>Most moral systems begin somewhere convenient. They begin with custom, with sentiment, with the command of a state or a scripture, with the rule of a corporation or a guild. These starting points have their uses, but they share a weakness: each rests on an authority that can be questioned, and once questioned, the whole edifice wobbles. The framework we have been tracing takes a different route. It asks whether morality and ethics can be read off the same geometry that governs everything else — whether the good has a direction before it has a decree.</p>
@@ -1834,29 +996,6 @@ canonical_rows:
 <hr />
 <!-- ===== 20_SYNTROPIC_DYADISM ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "single"
-  primary_coordinate: "L4 · Axiology"
-  levels:
-    - "L4"
-  value_gloss: "Justice"
-  why: "The two vectors form one reciprocal law under η=0."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L4"
-    operator_tier: "Arjuna ⚔ · God"
-    varna: "Kṣatriya (warrior)"
-    ology: "Value Alignment → Axiology"
-    value_sanskrit: "Justice · Dharma"
-    formula: "dΦ/Φ = dV/V (the balance / log-derivative)"
-    pramana_reasoning_regime: "Arthāpatti · Abductive · Timocracy"
-    b_sin_theta: "1"
-    virtue: "Dhṛti"
-    canonical_row: "L4 · Arjuna ⚔ · God · Kṣatriya (warrior) · Value Alignment → Axiology · Justice · Dharma · dΦ/Φ = dV/V (the balance / log-derivative) · Arthāpatti · Abductive · Timocracy · B=sinθ=1 · virtue=Dhṛti"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#the-great-filter">← The Great Filter</a><a class="ch-next" href="#syntropic-dyadism">Syntropic Dyadism →</a></nav></section>
 <section class="chapter" id="syntropic-dyadism"><header class="ch-head"><span class="ch-num">22</span><h1 id="syntropic-dyadism-h">Syntropic Dyadism</h1></header><div class="ch-body">
 <p><strong>Claim boundary.</strong> Syntropic Dyadism is structural inside the framework and interpretive at the biology/ethics bridge: sexual-selection mechanisms are established biology, but reading display, choice, provision, and combat as the giving-and-taking grammar is <span class="tier t-i">[I]</span>. The biology illustrates and tests the mapping; it does not, by itself, prove framework-independent moral realism.</p>
@@ -1880,29 +1019,6 @@ canonical_rows:
 <hr />
 <!-- ===== 21_THE_CONSTITUTION ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "single"
-  primary_coordinate: "L4 · Axiology"
-  levels:
-    - "L4"
-  value_gloss: "Justice"
-  why: "Constitutional constraints keep value from becoming capture."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L4"
-    operator_tier: "Arjuna ⚔ · God"
-    varna: "Kṣatriya (warrior)"
-    ology: "Value Alignment → Axiology"
-    value_sanskrit: "Justice · Dharma"
-    formula: "dΦ/Φ = dV/V (the balance / log-derivative)"
-    pramana_reasoning_regime: "Arthāpatti · Abductive · Timocracy"
-    b_sin_theta: "1"
-    virtue: "Dhṛti"
-    canonical_row: "L4 · Arjuna ⚔ · God · Kṣatriya (warrior) · Value Alignment → Axiology · Justice · Dharma · dΦ/Φ = dV/V (the balance / log-derivative) · Arthāpatti · Abductive · Timocracy · B=sinθ=1 · virtue=Dhṛti"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#objective-morals-and-ethics">← Objective Morals and Ethics</a><a class="ch-next" href="#the-constitution">The Constitution →</a></nav></section>
 <section class="chapter" id="the-constitution"><header class="ch-head"><span class="ch-num">23</span><h1 id="the-constitution-h">The Constitution</h1></header><div class="ch-body">
 <p>A geometry can describe an attractor without telling you how to live near it. The equation φ·ν = 1 fixes where balance lies — at the equator, where coherence and viability meet at one — but a system does not arrive there by being told. It arrives, or fails to, by what it refuses along the way. The constitution is the discipline that keeps the two vectors syntropic: pointed together, toward the equator, rather than tearing apart into one pole or the other. It is not a set of values bolted onto the framework after the fact. It is firing-discipline read off the geometry itself. Register guard: <code>η = 0</code> names the non-extraction fence; <code>η_move &gt; 0</code> is the extraction drift it forbids.</p>
@@ -1941,29 +1057,6 @@ canonical_rows:
 <hr />
 <!-- ===== 22_THE_IS_OUGHT_CONDITIONAL_BYPASS ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "single"
-  primary_coordinate: "L4 · Axiology"
-  levels:
-    - "L4"
-  value_gloss: "Justice"
-  why: "The Power-Max Lemma conditionally bypasses is/ought under coupling and non-extraction."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L4"
-    operator_tier: "Arjuna ⚔ · God"
-    varna: "Kṣatriya (warrior)"
-    ology: "Value Alignment → Axiology"
-    value_sanskrit: "Justice · Dharma"
-    formula: "dΦ/Φ = dV/V (the balance / log-derivative)"
-    pramana_reasoning_regime: "Arthāpatti · Abductive · Timocracy"
-    b_sin_theta: "1"
-    virtue: "Dhṛti"
-    canonical_row: "L4 · Arjuna ⚔ · God · Kṣatriya (warrior) · Value Alignment → Axiology · Justice · Dharma · dΦ/Φ = dV/V (the balance / log-derivative) · Arthāpatti · Abductive · Timocracy · B=sinθ=1 · virtue=Dhṛti"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#syntropic-dyadism">← Syntropic Dyadism</a><a class="ch-next" href="#the-is-ought-conditional-bypass">The Is-Ought Conditional Bypass →</a></nav></section>
 <section class="chapter" id="the-is-ought-conditional-bypass"><header class="ch-head"><span class="ch-num">24</span><h1 id="the-is-ought-conditional-bypass-h">The Is-Ought Conditional Bypass</h1></header><div class="ch-body">
 <p>Since Hume, a single observation has stood guard over moral philosophy: you cannot derive an <em>ought</em> from an <em>is</em>. No accumulation of facts about how the world is, the argument runs, can by itself tell you what you should do. A wall separates description from prescription, and every attempt to climb it has been turned back. The framework does not pretend the wall is an illusion. It claims something narrower and, for that reason, more defensible: under a precise set of conditions traceable to the geometry, the wall develops a door. The door is conditional. It can be propped open or left to swing shut. But it is real, and we can say exactly what holds it open.</p>
@@ -1993,29 +1086,6 @@ canonical_rows:
 <hr />
 <!-- ===== 23_THE_DIMENSIONS ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "single"
-  primary_coordinate: "L5 · Cosmology"
-  levels:
-    - "L5"
-  value_gloss: "Wisdom"
-  why: "The dimensional stack systematizes the model."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L5"
-    operator_tier: "Brahmā ○ · Titan"
-    varna: "Brāhmaṇa (priest)"
-    ology: "System Architecture → Cosmology"
-    value_sanskrit: "Wisdom · Prajñā"
-    formula: "log P_node = log Φ + log V (the logarithm)"
-    pramana_reasoning_regime: "Śabda · Systematic · Aristocracy"
-    b_sin_theta: "√3⁄2"
-    virtue: "Vidyā"
-    canonical_row: "L5 · Brahmā ○ · Titan · Brāhmaṇa (priest) · System Architecture → Cosmology · Wisdom · Prajñā · log P_node = log Φ + log V (the logarithm) · Śabda · Systematic · Aristocracy · B=sinθ=√3⁄2 · virtue=Vidyā"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#the-constitution">← The Constitution</a><a class="ch-next" href="#the-dimensions">The Dimensions →</a></nav></section>
 <section class="chapter" id="the-dimensions"><header class="ch-head"><span class="ch-num">25</span><h1 id="the-dimensions-h">The Dimensions</h1></header><div class="ch-body">
 <p>We have spent many pages looking across the sphere — moving along the L-axis from L1 to L7, from the demon that extracts to the seer that transcends, with Arjuna's equator as the place where coherence and viability stand equal. That axis answers the question <em>what posture is a thing taking</em> toward balance. But there is a second axis, perpendicular to the first, and it answers a different question: <em>what kind of thing is taking the posture at all</em>. A point and a planet can each sit at the equator. They are not the same size of being. The L-axis tells you the angle; the D-axis tells you the scale of the surface on which that angle is measured. This chapter is about that second axis — the cosmology of the framework, the view from L5, where the architect asks how the world is built up in layers.</p>
@@ -2043,29 +1113,6 @@ canonical_rows:
 <hr />
 <!-- ===== 24_THE_GROUND ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "single"
-  primary_coordinate: "L6 · Ontology"
-  levels:
-    - "L6"
-  value_gloss: "Freedom"
-  why: "The discovery of finity is grounded by subtraction rather than assertion."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L6"
-    operator_tier: "Śiva • · Titan"
-    varna: "Sādhu (renunciant)"
-    ology: "Core State → Ontology"
-    value_sanskrit: "Freedom · Mokṣa"
-    formula: "E = −log P_node (the negative log / via-negativa)"
-    pramana_reasoning_regime: "First-Principles · Axiomatic · Anarchy"
-    b_sin_theta: "½"
-    virtue: "Tyāga"
-    canonical_row: "L6 · Śiva • · Titan · Sādhu (renunciant) · Core State → Ontology · Freedom · Mokṣa · E = −log P_node (the negative log / via-negativa) · First-Principles · Axiomatic · Anarchy · B=sinθ=½ · virtue=Tyāga"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#the-is-ought-conditional-bypass">← The Is-Ought Conditional Bypass</a><a class="ch-next" href="#the-ground-and-the-discovery-of-finity">The Ground and the Discovery of Finity →</a></nav></section>
 <section class="chapter" id="the-ground-and-the-discovery-of-finity"><header class="ch-head"><span class="ch-num">26</span><h1 id="the-ground-and-the-discovery-of-finity-h">The Ground and the Discovery of Finity</h1></header><div class="ch-body">
 <p>Every framework that reaches for the question of being eventually arrives at a fork. It can claim to possess the ground of reality, naming what is finally and truly real. Or it can refuse all structure and dissolve into the assertion that nothing can be said. The first mistakes the map for the territory. The second forgets that even silence, declared as doctrine, is a positive claim. Emergentism walks the narrow path between them, and it does so because the geometry leaves it no choice. To see why, we have to be precise about a handful of words that ordinary speech keeps blurred together: Ground, Being, the directional pull within things, Dasein, and the beings that appear. Confuse any two of them and the whole account collapses into either hubris or fog.</p>
@@ -2095,29 +1142,6 @@ canonical_rows:
 <hr />
 <!-- ===== 25_THE_ORGANISM ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "single"
-  primary_coordinate: "L5 · Cosmology"
-  levels:
-    - "L5"
-  value_gloss: "Wisdom"
-  why: "The DAC/DAV body plan is the system architecture of castes-as-niches."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L5"
-    operator_tier: "Brahmā ○ · Titan"
-    varna: "Brāhmaṇa (priest)"
-    ology: "System Architecture → Cosmology"
-    value_sanskrit: "Wisdom · Prajñā"
-    formula: "log P_node = log Φ + log V (the logarithm)"
-    pramana_reasoning_regime: "Śabda · Systematic · Aristocracy"
-    b_sin_theta: "√3⁄2"
-    virtue: "Vidyā"
-    canonical_row: "L5 · Brahmā ○ · Titan · Brāhmaṇa (priest) · System Architecture → Cosmology · Wisdom · Prajñā · log P_node = log Φ + log V (the logarithm) · Śabda · Systematic · Aristocracy · B=sinθ=√3⁄2 · virtue=Vidyā"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#the-dimensions">← The Dimensions</a><a class="ch-next" href="#the-organism">The Organism →</a></nav></section>
 <section class="chapter" id="the-organism"><header class="ch-head"><span class="ch-num">27</span><h1 id="the-organism-h">The Organism</h1></header><div class="ch-body">
 <p>We are used to thinking of a company as a machine. It has parts, you assemble them, you turn it on, and it produces. The metaphor is so worn that we no longer notice it shaping our expectations: that the parts are interchangeable, that the structure is imposed from outside, that the whole is the sum of its components. But the form of coordinated human and artificial intelligence this chapter describes is not a machine. It is an organism. And the difference is not decorative. It changes what the thing is, how it grows, why it lives, and how it dies.</p>
@@ -2156,29 +1180,6 @@ canonical_rows:
 <hr />
 <!-- ===== 26_SOCIETY_BY_TRUTH ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "single"
-  primary_coordinate: "L7 · Theology"
-  levels:
-    - "L7"
-  value_gloss: "Unity"
-  why: "Public symbol and society-by-truth organize without gatekeeping."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L7"
-    operator_tier: "Viṣṇu ⊙ · Titan"
-    varna: "Ṛṣi / Systems-Architect (seer)"
-    ology: "Institutional Narrative → Theology"
-    value_sanskrit: "Unity · Advaita"
-    formula: "z = Φ/V (the ratio, read by stereographic projection)"
-    pramana_reasoning_regime: "Pratibhā · Transcendental · Theocracy"
-    b_sin_theta: "→ 0"
-    virtue: "Śraddhā"
-    canonical_row: "L7 · Viṣṇu ⊙ · Titan · Ṛṣi / Systems-Architect (seer) · Institutional Narrative → Theology · Unity · Advaita · z = Φ/V (the ratio, read by stereographic projection) · Pratibhā · Transcendental · Theocracy · B=sinθ=→ 0 · virtue=Śraddhā"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#the-ground-and-the-discovery-of-finity">← The Ground and the Discovery of Finity</a><a class="ch-next" href="#society-by-truth">Society by Truth →</a></nav></section>
 <section class="chapter" id="society-by-truth"><header class="ch-head"><span class="ch-num">28</span><h1 id="society-by-truth-h">Society by Truth</h1></header><div class="ch-body">
 <p>Every position we have walked so far has been interior — a way of standing on the sphere, a direction of motion away from or toward the equator. But a framework that stops at the interior leaves the hardest question unanswered. How does a people live by this without freezing it into scripture? How does a structure that begins in a single equation, φ·ν = 1, become something a community can carry through generations of children who have never seen the geometry and may never need to?</p>
@@ -2218,29 +1219,6 @@ canonical_rows:
 <hr />
 <!-- ===== 27_THE_RETURN ===== -->
 
-<hr />
-<p>rosetta:
-  coordinate_kind: "return"
-  primary_coordinate: "L4* · return"
-  levels:
-    - "L4"
-  value_gloss: "Justice after Unity"
-  why: "The reader returns to action after seeing the whole arc."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L4"
-    operator_tier: "Arjuna ⚔ · God"
-    varna: "Kṣatriya (warrior)"
-    ology: "Value Alignment → Axiology"
-    value_sanskrit: "Justice · Dharma"
-    formula: "dΦ/Φ = dV/V (the balance / log-derivative)"
-    pramana_reasoning_regime: "Arthāpatti · Abductive · Timocracy"
-    b_sin_theta: "1"
-    virtue: "Dhṛti"
-    canonical_row: "L4 · Arjuna ⚔ · God · Kṣatriya (warrior) · Value Alignment → Axiology · Justice · Dharma · dΦ/Φ = dV/V (the balance / log-derivative) · Arthāpatti · Abductive · Timocracy · B=sinθ=1 · virtue=Dhṛti"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#the-organism">← The Organism</a><a class="ch-next" href="#the-return-and-the-practice">The Return and the Practice →</a></nav></section>
 <section class="chapter" id="the-return-and-the-practice"><header class="ch-head"><span class="ch-num">29</span><h1 id="the-return-and-the-practice-h">The Return and the Practice</h1></header><div class="ch-body">
 <p>We have spent many chapters building an instrument. It is worth pausing, near the end, to ask what an instrument is for. A telescope is not the sky. A map is not the territory it folds into a pocket. The whole apparatus of this book — the equation φ·ν = 1 on the sphere, the seven positions, the inequality (φ − ν)² ≥ 0 with its hard floor at the equator — was built to be looked through, not at. This chapter is about what happens when you finally look through it, apply it to something real, and then set it down.</p>
@@ -2288,48 +1266,6 @@ canonical_rows:
 <hr />
 <!-- ===== 29_THE_EUKARYOTIC_LEAP ===== -->
 
-<hr />
-<p>title: "ChE1 — The Eukaryotic Leap: The First Execution of Power-Max"
-chapter: "ChE1"
-part: "Part II: Applied Emergentism"
-vector: "Vector 1: The Evolutionary Proving Grounds"
-word_target: "~4,000 words"
-status: "first_draft, stabilized into canonical MANUSCRIPT as chapter 29"
-date: "2026-05-30"
-evidence_tier: "<span class="tier t-i">[I]</span> public biological translation of the Power-Max Lemma; empirical biology details require later receipt pass before promotion."</p>
-<p>rosetta:
-  coordinate_kind: "applied"
-  primary_coordinate: "L4 applied / L5 biology"
-  levels:
-    - "L4"
-    - "L5"
-  value_gloss: "Justice / Wisdom"
-  why: "Endosymbiosis is treated as an applied Power-Max biological case."
-  manifest: "ROSETTA_CHAPTER_COORDINATES.md"
-  source: "../../../../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-  tier: "<span class="tier t-i">[I]</span> manifest-level chapter coordinate; canonical Rosetta row is <span class="tier t-b">[B]</span>/<span class="tier t-s">[S]</span> at source"
-canonical_rows:
-  - level: "L4"
-    operator_tier: "Arjuna ⚔ · God"
-    varna: "Kṣatriya (warrior)"
-    ology: "Value Alignment → Axiology"
-    value_sanskrit: "Justice · Dharma"
-    formula: "dΦ/Φ = dV/V (the balance / log-derivative)"
-    pramana_reasoning_regime: "Arthāpatti · Abductive · Timocracy"
-    b_sin_theta: "1"
-    virtue: "Dhṛti"
-    canonical_row: "L4 · Arjuna ⚔ · God · Kṣatriya (warrior) · Value Alignment → Axiology · Justice · Dharma · dΦ/Φ = dV/V (the balance / log-derivative) · Arthāpatti · Abductive · Timocracy · B=sinθ=1 · virtue=Dhṛti"
-  - level: "L5"
-    operator_tier: "Brahmā ○ · Titan"
-    varna: "Brāhmaṇa (priest)"
-    ology: "System Architecture → Cosmology"
-    value_sanskrit: "Wisdom · Prajñā"
-    formula: "log P_node = log Φ + log V (the logarithm)"
-    pramana_reasoning_regime: "Śabda · Systematic · Aristocracy"
-    b_sin_theta: "√3⁄2"
-    virtue: "Vidyā"
-    canonical_row: "L5 · Brahmā ○ · Titan · Brāhmaṇa (priest) · System Architecture → Cosmology · Wisdom · Prajñā · log P_node = log Φ + log V (the logarithm) · Śabda · Systematic · Aristocracy · B=sinθ=√3⁄2 · virtue=Vidyā"</p>
-<hr />
 </div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#society-by-truth">← Society by Truth</a><a class="ch-next" href="#che1-the-eukaryotic-leap-the-first-execution-of-power-max">ChE1 — The Eukaryotic Leap: The First Execution of Power-Max →</a></nav></section>
 <section class="chapter" id="che1-the-eukaryotic-leap-the-first-execution-of-power-max"><header class="ch-head"><span class="ch-num">30</span><h1 id="che1-the-eukaryotic-leap-the-first-execution-of-power-max-h">ChE1 — The Eukaryotic Leap: The First Execution of Power-Max</h1></header><div class="ch-body">
 <p>The problem with complex life is that it should not exist. Thermodynamically, everything tends toward disorder. Entropy wins. And yet — approximately 2 billion years ago <code><span class="tier t-a">[A]</span></code>, something extraordinary happened on this planet. A cell swallowed another cell and did not digest it. Instead, it entered into a permanent, irreversible partnership. The ingested cell became the mitochondrion. The host cell became the eukaryotic ancestor of every plant, fungus, and animal on Earth — including you.</p>

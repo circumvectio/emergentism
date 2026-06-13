@@ -1,6 +1,6 @@
 {
  "generated": "build_atlas_index.py",
- "total": 240,
+ "total": 267,
  "tree": [
   {
    "key": "unfolding",
@@ -32,7 +32,7 @@
     },
     {
      "href": "/6/",
-     "title": "Convergence and Return"
+     "title": "Endstate is the Same as the Start"
     }
    ]
   },
@@ -73,6 +73,116 @@
     {
      "href": "/book/",
      "title": "The Book"
+    }
+   ]
+  },
+  {
+   "key": "papers",
+   "label": "Papers (26)",
+   "pages": [
+    {
+     "href": "/papers/",
+     "title": "The Papers"
+    },
+    {
+     "href": "/papers/paper-a-frame-algebra/",
+     "title": "THE FRAME PRODUCT ON ℂP¹"
+    },
+    {
+     "href": "/papers/paper-b-bloch-burri-identity/",
+     "title": "THE BLOCH-BURRI IDENTITY"
+    },
+    {
+     "href": "/papers/paper-c-photon-unit-of-account/",
+     "title": "THE PHOTON AS UNIT OF ACCOUNT"
+    },
+    {
+     "href": "/papers/paper-d-wave-particle-duality/",
+     "title": "WAVE-PARTICLE DUALITY AS Zero-Sum Resolution Equation"
+    },
+    {
+     "href": "/papers/paper-e-uncertainty-principle/",
+     "title": "THE UNCERTAINTY PRINCIPLE AS φ·ν = 1"
+    },
+    {
+     "href": "/papers/paper-f-k-minimal/",
+     "title": "K-MINIMAL SELF-CONTAINED DESCRIPTION"
+    },
+    {
+     "href": "/papers/paper-g-biological-predictions/",
+     "title": "THE BIOLOGICAL PREDICTIONS"
+    },
+    {
+     "href": "/papers/paper-h-dimensional-cosmological/",
+     "title": "DIMENSIONAL AND COSMOLOGICAL CONSEQUENCES"
+    },
+    {
+     "href": "/papers/paper-i-known-unknowns-program/",
+     "title": "PAPER I: THE KNOWN UNKNOWNS PROGRAM"
+    },
+    {
+     "href": "/papers/paper-i-the-two-faces-of-number/",
+     "title": "The Two Faces of Number"
+    },
+    {
+     "href": "/papers/paper-ii-division-by-zero-as-category-correction/",
+     "title": "Division by Zero as Category-Correction"
+    },
+    {
+     "href": "/papers/paper-iii-a-product-constraint-as-a-structural-ethic/",
+     "title": "A Product Constraint as a Structural Ethic"
+    },
+    {
+     "href": "/papers/paper-j-protocol-r-without-lab/",
+     "title": "PAPER J: PROTOCOL R REFRAMED"
+    },
+    {
+     "href": "/papers/paper-k-amrita-at-zero-cost/",
+     "title": "PAPER K: AMRITA REFRAMED"
+    },
+    {
+     "href": "/papers/paper-l-phi-meter-correlation/",
+     "title": "PAPER L: THE PHI-METER"
+    },
+    {
+     "href": "/papers/paper-m-the-sphere-as-translation-layer/",
+     "title": "The Sphere as Translation Layer"
+    },
+    {
+     "href": "/papers/paper-n-productive-transcendental-wagers/",
+     "title": "PAPER N: PRODUCTIVE TRANSCENDENTAL WAGERS"
+    },
+    {
+     "href": "/papers/paper-o-strong-weak-emergence-d5/",
+     "title": "PAPER O: THE ASYMMETRY THEOREM"
+    },
+    {
+     "href": "/papers/paper-p-su3-obstruction-bare-s2/",
+     "title": "PAPER P: THE SU(3) OBSTRUCTION ON BARE S²"
+    },
+    {
+     "href": "/papers/paper-t-anti-idolatry-at-scale/",
+     "title": "PAPER T: ANTI-IDOLATRY AT SCALE"
+    },
+    {
+     "href": "/papers/paper-u-the-practice-bridge/",
+     "title": "PAPER U: THE PRACTICE BRIDGE"
+    },
+    {
+     "href": "/papers/paper-v-steelman/",
+     "title": "PAPER V: Steelmanning Emergentism"
+    },
+    {
+     "href": "/papers/paper-vi-emergence-as-lens-on-dasein/",
+     "title": "Emergence as the Lens on Dasein"
+    },
+    {
+     "href": "/papers/paper-vii-finity-submission/",
+     "title": "Finity: Why One Is the Center of the Number Line and What That Means for Ontology"
+    },
+    {
+     "href": "/papers/paper-w-present-awareness-as-fulcrum/",
+     "title": "PAPER W: Present Awareness As Fulcrum"
     }
    ]
   },
@@ -692,7 +802,7 @@
     },
     {
      "href": "/operators/mf-66-mandelbrot-consciousness/",
-     "title": "MF-66: The Mandelbrot Set IS the Formula Being Iterated"
+     "title": "MF-66: The Mandelbrot Set as the Formula Being Iterated"
     },
     {
      "href": "/operators/mf-67-double-cover-privacy/",
@@ -844,7 +954,7 @@
   },
   {
    "key": "value",
-   "label": "Value / Axiology (10)",
+   "label": "Value / Axiology (11)",
    "pages": [
     {
      "href": "/value/",
@@ -885,6 +995,10 @@
     {
      "href": "/value/01-rights-duties-and-due-process/",
      "title": "RIGHTS, DUTIES, AND DUE PROCESS"
+    },
+    {
+     "href": "/value/01-transcendentals/",
+     "title": "BEAUTY, TRUTH, AND JUSTICE AS TELEOLOGICAL LIMITS"
     }
    ]
   },

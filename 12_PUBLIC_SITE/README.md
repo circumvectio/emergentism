@@ -168,7 +168,7 @@ historical signature provenance.
 
 `generate_public_library.py` currently renders the [B] audited handoff bundle into
 served static routes and writes `reading-manifest.json`, `robots.txt`, and
-`sitemap.xml`. Fresh local predeploy verification passes with `293` wired
+`sitemap.xml`. Fresh local predeploy verification passes with `294` wired
 public corpus documents:
 
 | Wing | Count |
@@ -189,7 +189,7 @@ public corpus documents:
 | `method/` (Methodology corpus wing) | 10 |
 | `meta/` (framework meta wing) | 6 |
 
-The repository site is wired locally and `sitemap.xml` currently lists `349`
+The repository site is wired locally and `sitemap.xml` currently lists `351`
 URLs.
 
 **2026-06-12 deployment truth:** production deploy

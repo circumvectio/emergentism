@@ -35,9 +35,10 @@
     "#wf-tab:hover{background:var(--gold,#FFEB3B);color:var(--bg,#050505)}",
     "#wf-rail{position:fixed;right:0;top:0;bottom:0;width:min(330px,90vw);z-index:8801;",
     "background:color-mix(in srgb,var(--bg,#050505) 96%,transparent);backdrop-filter:blur(9px);",
-    "border-left:1px solid rgba(255,235,59,.28);transform:translateX(103%);transition:transform .2s ease;",
-    "display:flex;flex-direction:column;font-family:'Roboto','Noto Sans',sans-serif;color:var(--ink,#FFFDE7)}",
-    "#wf-rail.open{transform:translateX(0)}",
+    "border-left:1px solid rgba(255,235,59,.28);clip-path:inset(0 0 0 100%);opacity:0;visibility:hidden;",
+    "pointer-events:none;transition:clip-path .2s ease,opacity .2s ease;",
+    "display:flex;flex-direction:column;font-family:'Roboto','Noto Sans',sans-serif;color:var(--ink,#FFFDE7);overflow:hidden}",
+    "#wf-rail.open{clip-path:inset(0);opacity:1;visibility:visible;pointer-events:auto}",
     "#wf-head{display:flex;align-items:center;gap:8px;padding:14px 14px 8px}",
     "#wf-head b{color:var(--gold,#FFEB3B);font-size:11px;letter-spacing:.2em;text-transform:uppercase}",   /* Overline */
     "#wf-head .wf-x{margin-left:auto;background:none;border:0;color:var(--ink,#FFFDE7);font-size:17px;cursor:pointer;opacity:.6;line-height:1}",
@@ -46,7 +47,7 @@
     "#wf-crumb.show{display:block}",
     "#wf-crumb a{color:var(--ink-faint,#8a8568);text-decoration:none;cursor:pointer}",
     "#wf-crumb a:hover{color:var(--gold,#FFEB3B)}",
-    "#wf-tree{flex:1;overflow-y:auto;padding:2px 8px 28px;scrollbar-width:thin}",
+    "#wf-tree{flex:1;overflow-y:auto;overflow-x:hidden;padding:2px 8px 28px;scrollbar-width:thin}",
     ".wf-row{display:flex;align-items:flex-start;gap:5px;border-radius:5px;padding:2px 4px}",
     ".wf-row:hover{background:var(--bg2,rgba(255,235,59,.06))}",
     ".wf-caret{flex:none;width:14px;text-align:center;cursor:pointer;color:var(--ink-faint,#8a8568);font-size:10px;",
@@ -56,7 +57,7 @@
     ".wf-dot{flex:none;width:14px;text-align:center;cursor:pointer;color:var(--ink-faint,#8a8568);line-height:1.5;font-size:13px}",
     ".wf-dot:hover{color:var(--gold,#FFEB3B)}",
     ".wf-dot.has-kids{color:var(--ink-soft,#cfcab0)}",
-    ".wf-label{flex:1;cursor:pointer;text-decoration:none;color:var(--ink-soft,#cfcab0);padding:1px 2px;min-width:0}",
+    ".wf-label{flex:1;cursor:pointer;text-decoration:none;color:var(--ink-soft,#cfcab0);padding:1px 2px;min-width:0;overflow-wrap:anywhere;word-break:break-word}",
     ".wf-label:hover{color:var(--ink,#FFFDE7)}",
     ".wf-node.active>.wf-row>.wf-label{color:var(--gold,#FFEB3B)}",
     ".wf-node.active>.wf-row{background:var(--bg2,rgba(255,235,59,.08))}",
@@ -222,7 +223,7 @@
   paint();
   var savedOpen = null;
   try { savedOpen = localStorage.getItem(LS_OPEN); } catch (e) {}
-  setOpen(savedOpen === null ? (window.innerWidth >= 1200) : savedOpen === "1");
+  setOpen(savedOpen === "1");
 
   /* ---------- scroll-spy: highlight + reveal the current heading ---------- */
   var visible = {};

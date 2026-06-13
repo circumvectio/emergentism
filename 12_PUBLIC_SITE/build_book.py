@@ -36,6 +36,7 @@ def build():
         sys.exit(f"book source not found: {SRC}")
     raw = open(SRC, encoding="utf-8").read()
     raw = re.sub(r'^<!--.*?-->\s*', '', raw, flags=re.S)  # drop build-artifact banner
+    raw = re.sub(r'\n---\s*\n(?:rosetta:|title:).*?\n---\s*\n', '\n\n', raw, flags=re.S)  # strip chapter metadata
 
     md = markdown.Markdown(extensions=["extra", "toc", "sane_lists"])
     body = md.convert(raw)
@@ -206,8 +207,9 @@ p{margin:0 0 1.15rem}
   padding:.04em .12em 0 0;color:var(--gold)}
 strong{font-weight:600}
 em{font-style:italic}
-code{font-family:var(--mono);font-size:.86em;background:var(--bg2);padding:.06em .35em;border-radius:3px}
-pre{font-family:var(--mono);font-size:.9em;background:var(--bg2);padding:.75rem;border-radius:6px;overflow-x:auto}
+code{font-family:var(--mono);font-size:.86em;background:var(--bg2);padding:.06em .35em;border-radius:3px;
+  overflow-wrap:anywhere;word-break:break-word}
+pre{max-width:100%;font-family:var(--mono);font-size:.9em;background:var(--bg2);padding:.75rem;border-radius:6px;overflow-x:auto}
 hr{border:0;height:1px;background:var(--rule);margin:2.4rem auto;width:42%}
 blockquote{margin:1.6rem 0;padding:.4rem 0 .4rem 1.3rem;border-left:2px solid var(--gold);
   color:var(--ink-soft);font-style:italic}
@@ -243,13 +245,19 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
 /* mobile */
 @media(max-width:900px){
   body{font-size:18px}
+  .bookbar{align-items:flex-start;flex-wrap:wrap}
+  .bookbar nav{width:100%;justify-content:flex-start;overflow-x:auto;scrollbar-width:none}
+  .bookbar nav::-webkit-scrollbar{display:none}
+  .bookbar nav a,.bookbar nav button{flex:0 0 auto;white-space:nowrap}
   #toc-toggle{display:inline-block}
   .book-shell{grid-template-columns:1fr}
   .toc{position:fixed;top:0;left:0;height:100vh;width:min(84vw,330px);z-index:55;background:var(--panel);
-    border-right:1px solid var(--rule);transform:translateX(-102%);transition:transform .28s cubic-bezier(.2,.7,.2,1);
-    padding-top:3.4rem}
-  html.toc-open .toc{transform:none;box-shadow:0 0 60px rgba(0,0,0,.4)}
+    border-right:1px solid var(--rule);clip-path:inset(0 100% 0 0);opacity:0;visibility:hidden;pointer-events:none;
+    transition:clip-path .28s cubic-bezier(.2,.7,.2,1),opacity .18s ease;padding-top:3.4rem}
+  html.toc-open .toc{clip-path:inset(0);opacity:1;visibility:visible;pointer-events:auto;box-shadow:0 0 60px rgba(0,0,0,.4)}
   html.toc-open .toc-scrim{position:fixed;inset:0;z-index:54;background:rgba(0,0,0,.45)}
+  pre{overflow-x:hidden;white-space:pre-wrap}
+  pre code{white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word}
 }
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -265,8 +273,8 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
   <nav>
     <button id="toc-toggle" aria-label="Contents">☰ Contents</button>
     <a href="../">↑ Site</a>
-    <a href="../read/">Source library</a>
-    <button id="theme-toggle" aria-label="Toggle reading theme">◐ Theme</button>
+    <a href="../read/">Library</a>
+    <button id="theme-toggle" aria-label="Toggle reading theme" title="Toggle reading theme">◐</button>
   </nav>
 </header>
 

@@ -377,6 +377,8 @@ noscript {
 }
 
 .hero-copy {
+  min-width: 0;
+  width: min(100%, 720px);
   max-width: 720px;
 }
 
@@ -1077,10 +1079,29 @@ body.webgl-failed .fallback {
 .library-meta {
   display: grid;
   gap: 8px;
+  min-width: 0;
   border-top: 1px solid var(--border);
   color: var(--text-muted);
   font-size: 12px;
   padding-top: 22px;
+}
+
+.library-meta span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+  .library-article pre {
+    overflow-x: hidden;
+    white-space: pre-wrap;
+  }
+
+  .library-article pre code {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
 }
 
 /* Public doctrine support pages */
@@ -1378,6 +1399,31 @@ pre.glyph-block {
   .hero {
     padding: 110px 20px 64px;
     flex-direction: column;
+  }
+
+  .hero-copy {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .equation-strip {
+    width: 100%;
+    min-width: 0;
+    justify-content: center;
+    font-size: clamp(14px, 4vw, 18px);
+  }
+
+  .equation-strip span {
+    max-width: 100%;
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .equation-strip span + span::before {
+    content: none;
+    margin-right: 0;
   }
 
   .visual-panel {

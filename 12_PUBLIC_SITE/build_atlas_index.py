@@ -26,6 +26,7 @@ OVERVIEW = [
 
 # Deep-library sections (generated pages, frozen): label per directory.
 LIBRARY = [
+    ("papers", "Papers"),
     ("canon", "Canon"),
     ("formal", "Formal System"),
     ("paradox", "Paradox Dissolutions"),

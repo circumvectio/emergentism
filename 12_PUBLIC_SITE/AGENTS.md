@@ -53,9 +53,9 @@ build, deployment, payment, auth, model, or runtime receipts.
   into `read/`, `papers/`, `canon/`, `foundations/`, `trinity`, `formal/`,
   `paradox/`, `memetic/`, `rosettad/`, `operators/`, `will/`, `value/`,
   `ground/`, `sacred/`, `method/`, and `meta/`.
-- `reading-manifest.json` currently wires `293` rendered public corpus
+- `reading-manifest.json` currently wires `294` rendered public corpus
   documents.
-- `sitemap.xml` currently exposes `349` URLs.
+- `sitemap.xml` currently exposes `351` URLs.
 - `predeploy_check.py` is the deploy gate for public-site link, tier, route,
   reading-bundle, publication-boundary, and generated-library chrome coverage.
 - `audit_live_domain_against_manifest.py` is the post-deploy/live-domain audit
