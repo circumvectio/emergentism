@@ -94,7 +94,7 @@ The η polysemy across the framework was always measuring the same thing: **the 
 | Axiom set (F8) | No external definitions needed | The description |
 | Ground (this document) | No external cause needed | The structure |
 
-η = 0 is the self-containment condition at every scale.
+η = 0 is the self-containment condition wherever the framework instantiates this grammar: no external mediator for exchange, no hidden definition for the axiom set, no external cause in the ground-facing model. This is a cross-register analogy, not a proof that every empirical scale automatically satisfies η = 0. Real systems still require the relevant coupling, horizon, and enforcement conditions.
 
 ### 1.4 Formal Definition of K_sc (v4.0)
 

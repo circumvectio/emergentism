@@ -198,9 +198,9 @@ it does not mean externally proven `[I]`. Current status lives in
 
 ## UU-9: Scale Dependence
 
-**Rosetta says:** The framework claims scale-invariance. Critics say scale-dependence might be the deeper truth. But P∞ = φ · ν = 1 IS scale-invariant by construction — it is a RATIO (z = phi/nu on S²), and ratios are dimensionless. The balance B = sin(theta) is a function of the ratio, not of absolute magnitude. A cell with phi = 0.01 and nu = 0.01 has the same B as a civilization with phi = 1000 and nu = 1000. The BALANCE is scale-invariant even if the absolute values are not. Scale dependence applies to the MAGNITUDES of phi and nu, not to their RATIO. The framework operates on ratios. Scale dependence is irrelevant.
+**Rosetta says:** The framework has a scale-invariant coordinate layer, not a blanket proof that all empirical scales behave the same. On the model surface, P∞ = φ · ν = 1 and B = sin(theta) depend on reciprocal coordinates / ratios, so the formal balance calculation is scale-free. But the measured primitives that feed a finite node — Φ, V, coupling λ, horizon, enforcement, substrate, and noise — can be scale-dependent. A cell and a civilization may occupy analogous positions in the chart while requiring different instruments and different causal explanations.
 
-**Status: RESOLVED. The framework operates on ratios (z = phi/nu), which are dimensionless and scale-invariant by construction.**
+**Status: PARTIALLY RESOLVED.** The coordinate grammar is scale-invariant by construction; the empirical claim that real systems preserve that grammar across scales remains `[I/C]` until separately measured. Scale dependence is not irrelevant; it belongs to the measurement and mechanism layer rather than the bare S² identity.
 
 ---
 

@@ -190,7 +190,7 @@ Standard public goods games on R^n have linear or quasi-linear payoffs, which pr
 
 1. **Compactness:** The strategy space maps to a compact manifold. No boundary issues.
 2. **Curvature-induced concavity:** B = sin(theta) is strictly concave near theta = 90 degrees. This produces interior optima rather than boundary optima.
-3. **Pole identification:** The poles (0 and infinity) are regular points, not singularities. The "tragedy" scenarios (pure coherence, pure viability) are geometric points, not asymptotic limits.
+3. **Pole compactification:** The compactified sphere contains the 0 and infinity boundary points, but the φ/ν chart itself treats them as coordinate singularities. The "tragedy" scenarios (coherence without usable viability, viability without usable coherence) are therefore limiting regimes in the action reading, not ordinary interior equilibria.
 4. **Natural gradient flow:** dB/d(theta) = cos(theta) provides a gradient that points toward the equator from both hemispheres. This is a geometric restoring force absent in Euclidean models.
 
 ---

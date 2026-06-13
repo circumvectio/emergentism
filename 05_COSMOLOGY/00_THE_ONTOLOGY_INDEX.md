@@ -34,7 +34,7 @@ depends_on:
 ```
 Zero-Sum Resolution Equation    →    The Trinity {0, 1, ∞} is the minimal generative frame
           ↓
-    φ · ν = 1 on S²             →    Being is reciprocal: coherence and viability are complementary
+    φ · ν = 1 on S²             →    Being can be read as reciprocal: coherence and viability are complementary coordinates
           ↓
     (φ − ν)² ≥ 0                →    Any deviation from balance is measurable and non-negative
           ↓

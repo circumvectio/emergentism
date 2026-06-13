@@ -59,8 +59,8 @@ This is not a constraint imposed on the system. It is a tautological identity of
 
 Define the balance function B(θ) = sin θ. This measures how far a point is from either pole.
 
-- B(0) = 0 (north pole — pure coherence, no viability)
-- B(π) = 0 (south pole — pure viability, no coherence)
+- B(0) = 0 (north pole — the coordinate limit φ → ∞, ν → 0, read as coherence without usable viability)
+- B(π) = 0 (south pole — the coordinate limit φ → 0, ν → ∞, read as viability without usable coherence)
 - B(π/2) = 1 (equator — maximum balance)
 
 B is strictly concave on (0, π). The equator θ = π/2 is the **unique global maximum**.
@@ -172,7 +172,7 @@ The AM-GM proof shows the equator is the Hamiltonian minimum. Calling this "will
 The four-level objective function spectrum (Doc 30, Research Brief) distinguishes:
 - **Level 1 (Teleonomy):** "As-if" purpose. Natural selection explains convergence. No F₅ needed. [A]
 - **Level 2 (Structural):** The AM-GM gradient is real. Systems evolve toward the minimum. "Purpose" is geometric, like water flowing downhill. [S]
-- **Level 3 (Ententional):** Genuine purpose emerges when two self-undermining processes reciprocally constrain each other (Deacon 2011). φ alone collapses (coherence without viability). ν alone dissipates (viability without coherence). φ · ν = 1 IS their reciprocal constraint. The equator is a teleodynamic attractor — genuinely end-directed without requiring systemic awareness at the base. [I]
+- **Level 3 (Ententional):** Genuine purpose emerges when two self-undermining processes reciprocally constrain each other (Deacon 2011). φ alone collapses in the action reading (coherence without usable viability). ν alone dissipates (viability without usable coherence). On the model surface, φ · ν = 1 is the reciprocal coordinate constraint; in real systems, it becomes an interpretive hypothesis only when independently measured Φ and V are coupled by survival, feedback, and correction. The equator is therefore a teleodynamic attractor only under those selection and correction conditions — genuinely end-directed in the `[I]` register, not a proof that every process returns to balance. [I]
 - **Level 4 (Volitional):** Consciousness is fundamental. F₅ is will all the way down. [C]
 
 The framework's recommended position (Doc 30) is Level 3 interpreted through Position Γ. This means F₅ is ententionally directed — genuinely purposive but not necessarily conscious. "Tendency to Potential" is retained as poetic/mythological register (Layer 2), while "ententional directedness toward potential" is the technical register (Layer 1). See also Document 32 (The Four Lines), Line 3.

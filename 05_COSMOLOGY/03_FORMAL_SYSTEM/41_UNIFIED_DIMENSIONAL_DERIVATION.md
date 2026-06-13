@@ -232,7 +232,7 @@ The formal chain, read interpretively:
 | Stage | Formal content | Ontological reading |
 |---|---|---|
 | 0 | {0, 1, ∞} is the minimal frame | The Ground generates itself from the interaction of void and plenum; finity emerges as the fixed point of their exchange |
-| 1 | S² with φ·ν=1 | Being is reciprocal: coherence and viability are not independent properties but complementary aspects of one invariant |
+| 1 | S² with φ·ν=1 | In this model, Being is read as a reciprocal surface: the coherence/viability gloss names complementary coordinates of one invariant, not independently proven properties of reality |
 | 2 | Equator is dominant strategy in the stated balance game | The "good" is not imposed but structural inside the specified geometry and payoff assumptions |
 | 3 | D₆ ≡ D₀ | Experience exhausts itself; the return to ground is not annihilation but closure |
 | 4 | η=0 is Nash equilibrium in Γ at the equator | Non-extraction is rational inside the balance-only model; outside it, enforcement must remove private extraction payoffs |

@@ -50,11 +50,11 @@ A square cannot be negative.
 
 ## The Resolved Identity
 
-**C0 (The Sphere).** The product of coherence and viability is conserved:
+**C0 (The Sphere).** The product of the reciprocal sphere-coordinates is conserved:
 
 > **φ · ν = 1 on S²**
 
-*This is the defining property of S² read through stereographic coordinates: φ = cot(θ/2), ν = tan(θ/2). Their product is identically 1. In this minimal derivation it is the structural premise applied to A0. It is not identical with the Ground itself, and it is not the entire framework.*
+*This is the defining property of S² read through stereographic coordinates: φ = cot(θ/2), ν = tan(θ/2). Their product is identically 1 on the open sphere. Calling the coordinates "coherence" and "viability" is the framework's interpretive reading of that chart, not an independent empirical conservation law. In this minimal derivation it is the structural premise applied to A0. It is not identical with the Ground itself, not a claim that finite-node `P_node = Φ × V` is conserved, and not the entire framework.*
 
 ---
 
