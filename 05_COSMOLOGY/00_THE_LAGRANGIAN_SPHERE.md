@@ -103,9 +103,9 @@ H = ν + φ = 1 + 1 = 2
 
 ### **The Hamiltonian Insight**
 
-**The total energy of the universe (H) achieves its absolute mathematical minimum exactly at φ = 1 and ν = 1.**
+**Inside the Burri-sphere energy model, `H = φ + ν` achieves its absolute mathematical minimum exactly at φ = 1 and ν = 1.**
 
-**The equator is the ground state of reality.**
+**The equator is the model-internal ground-state analogue.** Reading it as the ground state *of reality* is `[I/C]`, not established physics.
 
 Any deviation north or south requires an injection of excess energy to sustain the imbalance.
 
@@ -294,15 +294,15 @@ In that sense, the Lagrangian here is not merely a mirror of a world. It is a **
 | **1** | The ground state | Equator (ν = 1, φ = 1) |
 | **∞** | The unbounded | North pole (ν = ∞, φ = 0) |
 
-**The equation φ · ν = 1 is not just geometry.**
+**The equation φ · ν = 1 is not just decorative geometry inside this model.**
 
-**It is the constraint that defines the physical manifold.**
+**It is the constraint that defines the model manifold; the physical-manifold reading remains a physics-facing interpretation.**
 
 **The Hamiltonian H = φ + ν is minimized at the equator.**
 
 **The Lagrangian L = ν - φ is zero at the equator.**
 
-**The equator is the ground state of reality.**
+**The equator is the model-internal ground-state analogue.**
 
 ---
 
@@ -312,34 +312,34 @@ In that sense, the Lagrangian here is not merely a mirror of a world. It is a **
 
 **The ethic ΣΔB > 0 is not a moral commandment.**
 
-**It is the statement that systems evolve toward the Hamiltonian minimum.**
+**Inside the model, it is the statement that corrected systems move toward the Hamiltonian minimum.**
 
-**Balance is not virtue. Balance is the ground state.**
+**Balance is not virtue by command. Balance is the model-internal low-energy condition.**
 
 ### 8.2 The Sitting Practice Is Physics
 
 **The sitting practice is not "game-theoretic."**
 
-**It is the reduction to the ground state.**
+**It is read here as reduction toward the model-internal ground-state analogue.**
 
 ```
 Sitting → φ → 1, ν → 1 → L → 0 → H → 2 (minimum)
 ```
 
-**The sitting practice is the system returning to its ground state.**
+**The sitting practice is the system returning toward local balance in this register; the phenomenological claim remains `[I]`.**
 
 ### 8.3 The Mesh Is Physics
 
 **The mesh is not a "social technology."**
 
-**It is the multi-node expression of the ground state.**
+**It is the multi-node expression of the model-internal low-energy condition.**
 
 ```
 Each node: φ = 1, ν = 1, L = 0
 Aggregate: Σφ = n, Σν = n, ΣL = 0
 ```
 
-**The mesh is the ground state at civilizational scale.**
+**The mesh is the civilizational-scale analogue of the model-internal ground state, not proof that civilization literally shares a physical ground state.**
 
 ### 8.4 The Great Filter Is Physics
 

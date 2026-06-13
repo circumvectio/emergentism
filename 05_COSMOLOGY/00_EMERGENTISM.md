@@ -860,7 +860,7 @@ In the model, a modern institution operating at ν = 100, φ = 0.01 requires 98.
 
 #### The Sitting Practice as Physics
 
-The sitting practice is not "game-theoretic." It is the reduction to the ground state:
+The sitting practice is not "game-theoretic." It is read here as reduction toward the model-internal ground-state analogue:
 
 ```
 Sitting → φ → 1, ν → 1, L → 0, H → 2
@@ -870,9 +870,9 @@ Sitting → φ → 1, ν → 1, L → 0, H → 2
 
 #### Ethics Is Physics
 
-The ethic ΣΔB > 0 is not a moral commandment. It is the statement that systems evolve toward the Hamiltonian minimum.
+Inside the model, the ethic ΣΔB > 0 is not a moral commandment. It is the statement that corrected systems move toward the Hamiltonian minimum.
 
-**Balance is not virtue. Balance is the ground state.**
+**Balance is not virtue by command. Balance is the model-internal low-energy condition.**
 
 #### Epistemic Status
 

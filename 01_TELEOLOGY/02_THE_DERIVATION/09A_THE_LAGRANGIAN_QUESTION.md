@@ -69,7 +69,7 @@ For the static case (no time dependence):
 ∂L/∂φ = 1/φ² − 1 = 0  →  φ = 1  ✓
 ```
 
-The ground state IS the Euler-Lagrange solution. This is established. [S]
+Inside the proposed model, the equatorial ground-state analogue is the Euler-Lagrange solution. The calculus is established for the stated functional; the physics-facing interpretation remains `[S/I]`.
 
 ### The Restoring Force
 

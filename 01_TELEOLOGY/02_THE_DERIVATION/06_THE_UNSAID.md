@@ -87,7 +87,7 @@ The Ṛṣis called this Sat-Chit-Ānanda: Being (φν = 1) — Consciousness (t
 | **Trophic gate** | Line 3: (φ − ν)² → 0 | Is the system trending toward balance? |
 | **Mirror gate** | Line 1: φ · ν = 1 | Is the product conserved? |
 
-Line 4 (−log(φν) = 0) is the ABSENCE of a gate — the state where no gate is needed. When all three gates pass, you are at Line 4. The ground state IS where nothing needs checking. [S]
+Line 4 (−log(φν) = 0) is the ABSENCE of a gate inside the model — the state where no extra gate is needed because the constraint is already satisfied. When all three gates pass, you are at Line 4. The ground-state language names the local audit-rest condition, not a license to stop checking real systems. [S/I]
 
 ### 32. The Sitting Practice IS Line 3 Experienced First-Person
 
