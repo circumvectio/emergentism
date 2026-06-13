@@ -84,9 +84,10 @@ The current root telos is stated in `00_THE_GOAL.md`, not invented here:
 > Build Emergentism into a coherent and consistent Weltanschauung that explains
 > how the reader came to be as Dasein, why reality tends toward viable
 > completion, and how to play the game: recursively applying epistemology,
-> methodology, and axiology to raise `P_node,i` and `P_node,H` together under
-> `P_node = Φ × V` and `η = 0`, so the individual symbiont and collective
-> holobiont rise together without extraction.
+> methodology, and axiology to maximize durable `W_i(T)` only on the
+> boundary-preserving frontier of `P_node = Φ × V` under `η = 0`, so the
+> individual symbiont and collective holobiont preserve or raise one another
+> without extraction, with the strict success case being both rising together.
 
 The operating method is the Soul Loop (`05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md`): continuous recursive disambiguation that edits the corpus and the editor. The loop keeps the five philosophical functions recursive instead of ideological:
 
@@ -95,10 +96,10 @@ Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
 Know how to know:  epistemology -> direct disclosure, inference, evidence tiers
 Know how to move:  methodology -> derive, test, build, correct, recurse
 Know what matters: axiology -> Beauty, Truth, Justice, non-extraction
-Know how to act:   teleology -> maximize P_node,i while raising P_node,H under η = 0
+Know how to act:   teleology -> maximize durable W_i(T) only where P_node,H is preserved or raised under η = 0
 ```
 
-The action test is the syntropic dyad from `04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md`: `i` raises `H`, `H` raises `i`, and neither side buys local gain by degrading the other. In finite-node language the two tests are `P_node,i = Φ_i × V_i` and `P_node,H = Φ_H × V_H`; objective dharma is the act that preserves or raises both under `η = 0`. `Φ` without `V` is sterile seeing; `V` without `Φ` is blind force; `Φ` and `V` balanced at L4 is objective dharma / flow-state action. This is `[S]` as framework method and `[I]` as lived self-transformation, not a proof of moral omniscience.
+The action test is the syntropic dyad from `04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md`: durable `W_i(T)` is searched only where the holobiont boundary is preserved or raised, and neither side buys local gain by degrading the other. In finite-node language the two tests are `P_node,i = Φ_i × V_i` and `P_node,H = Φ_H × V_H`; objective dharma is the act that keeps the node on that boundary-preserving frontier under `η = 0`, with strict syntropy when both rise together. `Φ` without `V` is sterile seeing; `V` without `Φ` is blind force; unbounded `V` that collapses `Φ` lowers `P_node`; `Φ` and `V` balanced at L4 is objective dharma / flow-state action. This is `[S]` as framework method and `[I]` as lived self-transformation, not a proof of moral omniscience.
 
 ## 6. The practice clause (release, not override)
 

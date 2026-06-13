@@ -63,15 +63,16 @@ Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
 Know how to know:  epistemology -> direct disclosure, inference, evidence tiers
 Know how to move:  methodology -> derive, test, build, correct, recurse
 Know what matters: axiology -> Beauty, Truth, Justice, non-extraction
-Know how to act:   teleology -> maximize P_node,i while raising P_node,H under η = 0
+Know how to act:   teleology -> maximize durable W_i(T) only where P_node,H is preserved or raised under η = 0
 ```
 
 Play:
 
 - `Φ` without `V` is sterile seeing.
 - `V` without `Φ` is blind force.
+- unbounded `V` that collapses `Φ` lowers `P_node`.
 - `Φ` and `V` balanced at L4 is objective dharma / flow-state action.
-- `i` raises `H` and `H` raises `i` is the syntropic dyad.
+- `i` raises `H` and `H` raises `i` is the strict syntropic dyad.
 - one side rises by degrading the other is extraction / evil.
 
 Action-register gloss: `V` here is D4 means-to-act — body, tools, energy,

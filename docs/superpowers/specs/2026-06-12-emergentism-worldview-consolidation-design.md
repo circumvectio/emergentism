@@ -157,8 +157,9 @@ H = holobiont / coupled field
 i = individual symbiont within H
 
 Power-Max:
-  max P_node_i -> max Sum(P_node_j)  for j in H
-  under coupling lambda > 0, long horizon, and eta = 0
+  max durable W_i(T) only where Delta P_node_H >= 0
+  strict syntropic dyad: Delta P_node_i > 0 and Delta P_node_H > 0
+  under coupling lambda > 0, multiplicative P_node, long horizon, and eta = 0
 ```
 
 The requested stronger formulation:

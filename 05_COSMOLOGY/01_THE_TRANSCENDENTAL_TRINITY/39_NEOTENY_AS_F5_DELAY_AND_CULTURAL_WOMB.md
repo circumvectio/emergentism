@@ -32,7 +32,8 @@ rosetta:
 > **Anchor Sequence:**
 > ```text
 > P_node = Φ × V
-> max P_node,i -> max ΣP_node  (under coupling, long horizon, and η = 0)
+> max durable W_i(T) only where ΔP_node,H >= 0
+> strict syntropic dyad: ΔP_node,i > 0 and ΔP_node,H > 0 under η = 0
 > delayed V -> compounding Φ -> generalized V
 > ```
 

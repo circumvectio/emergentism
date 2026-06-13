@@ -242,6 +242,12 @@ directly (the only available lever):
   - foundations/the-honest-position/          : normalized the canonical framing
         rule from stale six-function vocabulary to the current five Knows plus
         Rosetta Soul Loop wording while the generated route remains frozen.
+  - about/, trinity/10-the-soul-loop/, trinity/39-neoteny-as-f5-delay-and-cultural-womb/
+                                              : mirrored the constrained
+        Power-Max frontier wording from the Goal/Soul Loop source:
+        durable `W_i(T)` is searched only where `P_node,H` is preserved or
+        raised under `eta = 0`; strict syntropy is both `P_node,i` and
+        `P_node,H` rising together.
   - canon/the-generative-table/, foundations/the-seven-ologies-per-the-rosetta/,
         rosettad/00-the-seven-ologies-per-the-rosetta/,
         operators/mf-285-dreams-are-unanchored-d5/

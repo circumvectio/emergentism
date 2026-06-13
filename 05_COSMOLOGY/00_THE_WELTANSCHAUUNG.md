@@ -179,8 +179,9 @@ Weltanschauung for Dasein: the finite witness-agent receives pressure, knows,
 tests, values, acts, corrects, preserves, and is changed by the cycle.
 In the compact goal language, how to play is recursively applying epistemology,
 methodology, and axiology inside an ontology and teleology, so each next move
-can raise usable `P_node,i` while preserving or raising `P_node,H` without
-breaking `η = 0`.
+keeps durable `W_i(T)` on the boundary-preserving frontier: `P_node,H`
+preserved or raised without breaking `η = 0`, with strict syntropy when
+`P_node,i` and `P_node,H` rise together.
 The five Knows in plain order are ontology, epistemology, methodology,
 axiology, teleology.
 
@@ -189,7 +190,7 @@ Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
 Know how to know:  epistemology -> direct disclosure, inference, evidence tiers
 Know how to move:  methodology -> derive, test, build, correct, recurse
 Know what matters: axiology -> Beauty, Truth, Justice, non-extraction
-Know how to act:   teleology -> maximize P_node,i while raising P_node,H under η = 0
+Know how to act:   teleology -> maximize durable W_i(T) only where P_node,H is preserved or raised under η = 0
 ```
 
 Will is the Builder-mode name for that last line. It is not magic and not

@@ -49,8 +49,9 @@ H = holobiont / coupled field
 i = individual symbiont within H
 
 Power-Max:
-  max P_node_i -> max Sum(P_node_j) for j in H
-  under coupling lambda > 0, long horizon, and eta = 0
+  max durable W_i(T) only where Delta P_node_H >= 0
+  strict syntropic dyad: Delta P_node_i > 0 and Delta P_node_H > 0
+  under coupling lambda > 0, multiplicative P_node, long horizon, and eta = 0
 
 morality = H -> i
   The holobiont raises the symbiont's Phi, V, sovereignty, and option cone.
@@ -283,9 +284,10 @@ Holobiont raising symbiont under eta = 0
 Symbiont raising holobiont under eta = 0
   -> Collective viable potential can widen (ethical vector)
 
-Under Power-Max conditions, max P_node_i -> max ΣP_node.
-Under the worldline reading, max W_i is attainable only through max W_H
-when coupling is real, lambda > 0, the horizon is long, and eta = 0.
+Under Power-Max conditions, durable W_i(T) is searched only on the
+boundary-preserving frontier: P_node,H must be preserved or raised.
+The strict syntropic dyad is ΔP_node,i > 0 and ΔP_node,H > 0 under eta = 0,
+when coupling is real, lambda > 0, and the horizon is long.
 ```
 
 - [ ] **Step 5: Update the ASCII summary**
