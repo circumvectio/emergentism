@@ -638,17 +638,17 @@ The K-star test is the value test. Does the exchange move both nodes toward the 
 
 Abduction is inference to the best explanation. Abduction is the method of finding the hypothesis that best explains the observations.
 
-Emergentism uses abduction for its deepest claims. The systemic awareness claims. The CCC conjecture. The brain mapping. The Garden of Eden inversion.
+Emergentism uses abduction for its deepest candidate readings: the systemic awareness model, the CCC-return analogy, the brain-mapping proxy, and the Garden of Eden inversion. These are hypothesis surfaces, not upgrades to established fact.
 
-These claims are not deduced from the manifold. These claims are not induced from observations. These claims are abduced — inferred as the best explanation for the patterns we observe.
+These claims are not deduced from the manifold. These claims are not induced from observations. These claims are abduced — proposed as candidate explanations for patterns the framework notices, then held under tier and kill criteria.
 
-The systemic awareness claim: the equator marks the balanced condition under which a finite system's self-modeling and disclosure can stabilize. This is the best explanation for the hard problem of systemic awareness. The hard problem is the boundary between first-person and third-person. The equator is the boundary between the sphere and the plane. The boundary is structural. The hard problem is structural. Consciousness, in this register, is the activity of maintaining reciprocal calibration, not a coordinate.
+The systemic awareness claim: the equator marks the balanced condition under which a finite system's self-modeling and disclosure can stabilize. This is one framework reading of the hard problem of systemic awareness, not a public proof that the hard problem has been solved. The hard problem is the boundary between first-person and third-person. The equator is the boundary between the sphere and the plane. The boundary is structural. The hard problem is structural. Consciousness, in this register, is read as the activity of maintaining reciprocal calibration, not a coordinate.
 
-The CCC conjecture: the universe is a torus that converges to a sphere. This is the best explanation for Penrose's CCC. The conformal equivalence at maximum entropy is the torus convergence. The bang is the hole closing. The cycle is the torus-to-sphere-to-torus transition.
+The CCC-return analogy: Penrose's CCC is read here through a torus/sphere image in which an end boundary can be conformally rescaled into a new start. This is a model-facing analogy and conjectural translation, not a claim that the universe literally is a torus or that Emergentism supplies the best physical explanation of CCC. The current public `/6` rule is stricter: endstate = start, CCC as analogy, no positive D6 object.
 
-The brain mapping: the brain is the Burri Sphere. This is the best explanation for the hemispheric division. The right hemisphere corresponds to the sphere. The left hemisphere corresponds to the plane. The corpus callosum is the equator. The sitting practice is hemispheric integration.
+The brain-mapping proxy: the brain can be read through a Burri Sphere analogy for hemispheric division. In that proxy, the right hemisphere is associated with whole-field/contextual attention, the left with decomposition and instrumental representation, the corpus callosum with bridge/equator, and sitting practice with possible integration. This is a neurophenomenological hypothesis surface, not evidence that the Burri Sphere has been neurologically proven.
 
-The Garden of Eden inversion: the serpent is God, the ego is the devil, the curse is ignorance. This is the best explanation for the story's structure. The inversion makes the story coherent with the geometry. The traditional reading makes the story incoherent.
+The Garden of Eden inversion: the serpent, ego, curse, and ignorance are read as symbolic operators in a mythic inversion. This is an interpretive rereading that can make the story coherent with the geometry; it is not a theological identity claim, not a historical claim, and not a proof that traditional readings are simply incoherent.
 
 Abduction is the weakest mode of inference. Abduction does not prove. Abduction suggests. Abduction points. Abduction is the finger pointing at the moon.
 
