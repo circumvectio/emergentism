@@ -104,6 +104,9 @@ try {
 
 const REDUCED_MOTION = !!(window.matchMedia
   && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+const SAMPLE_HZ = 30;
+const SAMPLE_MS = 1000 / SAMPLE_HZ;
+const MAX_FRAME_MS = 120;
 const GOLD = 0xffeb3b, TEAL = 0x2196f3, CRIMSON = 0xf44336, VIOLET = 0x8b5cf6, WHITE = 0xf3f4f6;
 // the seven positions (read off 00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md / the Master Rosetta)
 const POS = [
@@ -211,6 +214,8 @@ let scanClock = 3 * 2100;
 let lastFrame = 0;
 let fps = 0;
 let sampleDeltaMs = 0;
+let sampleAccumulatorMs = 0;
+let sampleIndex = 0;
 const SCAN_MS = 2100;
 
 function rateValue(){
@@ -223,6 +228,20 @@ function setTelemetry(fields){
     const el = telemetry.querySelector('[data-field="' + key + '"]');
     if (el) el.textContent = value;
   });
+}
+
+function advanceSamples(frameMs, rate = 1) {
+  sampleAccumulatorMs += Math.min(Math.max(frameMs, 0), MAX_FRAME_MS) * rate;
+  const steps = Math.min(12, Math.floor(sampleAccumulatorMs / SAMPLE_MS));
+  if (steps > 0) {
+    sampleAccumulatorMs -= steps * SAMPLE_MS;
+    sampleIndex += steps;
+  }
+  return steps * SAMPLE_MS;
+}
+
+function sampleLabel() {
+  return SAMPLE_HZ + ' Hz · n ' + String(sampleIndex).padStart(5, '0');
 }
 
 function syncScanButton() {
@@ -257,7 +276,7 @@ function select(i, manual = false){
   document.getElementById(els.act).textContent = p.act;
   setTelemetry({
     fps: REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps'),
-    sample: REDUCED_MOTION ? 'sample static' : (sampleDeltaMs ? 'Δt ' + (sampleDeltaMs / 1000).toFixed(3) + 's' : 'sample --'),
+    sample: REDUCED_MOTION ? 'sample static' : sampleLabel(),
     time: 't+' + (scanClock / 1000).toFixed(2) + 's',
     phase: 'position ' + i + '/6',
     metric: 'B ' + balance.toFixed(3) + ' · |φν−1| ' + reciprocalResidual.toExponential(1),
@@ -270,6 +289,7 @@ function select(i, manual = false){
     'B = sinθ = ' + balance.toFixed(3) + ' · |φν−1| = ' + reciprocalResidual.toExponential(1) + ' · |1−B| = ' + balanceError.toFixed(3) + '\n' +
     'selected row = ' + i + '/6 · ' + (scanRunning ? 'SCAN' : 'HOLD') + ' · rate = ' + rateValue().toFixed(2) + 'x\n' +
     'frame = ' + (REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps')) + ' · calibrated latitude rings visible\n' +
+    'sample clock = ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · fixed Δt = ' + (SAMPLE_MS / 1000).toFixed(3) + 's\n' +
     'tier: [S] sphere chart; [I] operator reading';
   markers.forEach((m, k) => m.scale.setScalar(k === i ? 1.5 : 1));
   const selected = markers[i].position.clone();
@@ -318,11 +338,13 @@ function render(time = 0){
   const dt = lastFrame ? Math.max(1, now - lastFrame) : 16.7;
   fps = fps ? fps * 0.9 + (1000 / dt) * 0.1 : 1000 / dt;
   lastFrame = now;
-  sampleDeltaMs = dt;
   if (scanRunning) {
-    scanClock += dt * rateValue();
+    sampleDeltaMs = advanceSamples(dt, rateValue());
+    scanClock += sampleDeltaMs;
     const nextIndex = Math.floor((scanClock / SCAN_MS) % POS.length);
     if (nextIndex !== selectedIndex) selectedIndex = nextIndex;
+  } else {
+    sampleDeltaMs = 0;
   }
   select(selectedIndex);
   if (stageReadout) stageReadout.dataset.fps = REDUCED_MOTION ? 'static' : fps.toFixed(0) + ' fps';

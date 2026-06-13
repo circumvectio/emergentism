@@ -692,12 +692,12 @@ body.soul-loop-instrument .visual-labels .bottom {
 .instrument-graticule {
   position: absolute;
   inset: 24px;
-  opacity: 0.24;
+  opacity: 0.2;
   background:
-    repeating-linear-gradient(90deg, rgba(255,255,255,0.13) 0 1px, transparent 1px 32px),
-    repeating-linear-gradient(0deg, rgba(255,255,255,0.13) 0 1px, transparent 1px 32px),
-    repeating-linear-gradient(90deg, rgba(255,235,59,0.13) 0 1px, transparent 1px 128px),
-    repeating-linear-gradient(0deg, rgba(33,150,243,0.11) 0 1px, transparent 1px 128px);
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.11) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.11) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(90deg, rgba(255,235,59,0.12) 0 1px, transparent 1px 128px),
+    repeating-linear-gradient(0deg, rgba(33,150,243,0.1) 0 1px, transparent 1px 128px);
 }
 
 .instrument-corners {
@@ -756,12 +756,16 @@ body.soul-loop-instrument .visual-labels .bottom {
   background:
     linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,235,59,0.16) calc(50% - 0.5px), rgba(255,235,59,0.16) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
     linear-gradient(0deg, transparent calc(50% - 0.5px), rgba(66,165,245,0.16) calc(50% - 0.5px), rgba(66,165,245,0.16) calc(50% + 0.5px), transparent calc(50% + 0.5px));
-  opacity: 0.44;
+  opacity: 0.34;
 }
 
 .instrument-scale {
   position: absolute;
-  opacity: 0.46;
+  opacity: 0.5;
+  color: rgba(243, 244, 246, 0.48);
+  font: 700 9px/1 var(--font-mono);
+  letter-spacing: 0;
+  text-transform: uppercase;
 }
 
 .instrument-scale.x {
@@ -774,6 +778,13 @@ body.soul-loop-instrument .visual-labels .bottom {
     repeating-linear-gradient(90deg, rgba(255,255,255,0.11) 0 1px, transparent 1px 8px);
 }
 
+.instrument-scale.x::after {
+  content: "x axis · 32 px minor · 128 px major";
+  position: absolute;
+  right: 0;
+  top: -15px;
+}
+
 .instrument-scale.y {
   top: 12px;
   bottom: 12px;
@@ -782,6 +793,13 @@ body.soul-loop-instrument .visual-labels .bottom {
   background:
     repeating-linear-gradient(0deg, rgba(255,255,255,0.28) 0 1px, transparent 1px 32px),
     repeating-linear-gradient(0deg, rgba(255,255,255,0.11) 0 1px, transparent 1px 8px);
+}
+
+.instrument-scale.y::after {
+  content: "y";
+  position: absolute;
+  left: 16px;
+  top: 0;
 }
 
 .instrument-telemetry {
@@ -1964,7 +1982,7 @@ pre.glyph-block {
     repeating-linear-gradient(90deg, rgba(255,235,59,.1) 0 1px, transparent 1px 128px),
     repeating-linear-gradient(0deg, rgba(33,150,243,.09) 0 1px, transparent 1px 128px);
   box-shadow: inset 0 0 0 1px rgba(255,255,255,.035);
-  opacity: .48;
+  opacity: .42;
 }
 .lab-frame::before,
 .lab-frame::after {
@@ -1986,10 +2004,20 @@ pre.glyph-block {
   border-color: rgba(255,235,59,.38);
   border-style: solid;
 }
+.lab-frame .corner::after {
+  position: absolute;
+  color: rgba(243, 244, 246, 0.52);
+  font: 700 9px/1 var(--font-mono);
+  letter-spacing: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
 .lab-frame .corner:nth-child(1) { top: 0; left: 0; border-width: 1px 0 0 1px; }
 .lab-frame .corner:nth-child(2) { top: 0; right: 0; border-width: 1px 1px 0 0; }
 .lab-frame .corner:nth-child(3) { right: 0; bottom: 0; border-width: 0 1px 1px 0; }
 .lab-frame .corner:nth-child(4) { bottom: 0; left: 0; border-width: 0 0 1px 1px; }
+.lab-frame .corner:nth-child(1)::after { content: "30 Hz sample"; left: 8px; top: 8px; }
+.lab-frame .corner:nth-child(4)::after { content: "calibrated grid"; left: 8px; bottom: 8px; }
 .vignette {
   position: fixed; inset: 0; z-index: 1; pointer-events: none;
   background:
@@ -2037,6 +2065,9 @@ body.sphere-instrument > a.exit {
   max-width: min(520px, calc(100vw - 64px));
   font-family: var(--font-mono);
 }
+.lightcone-instrument .title {
+  display: none;
+}
 .title .eq {
   color: var(--gold);
   font-size: clamp(18px, 3vw, 34px);
@@ -2053,36 +2084,37 @@ body.sphere-instrument > a.exit {
   left: 32px;
   top: 136px;
   z-index: 4;
-  width: min(360px, calc(100vw - 64px));
+  width: min(340px, calc(100vw - 64px));
   border: 1px solid var(--border);
-  border-radius: var(--shape-lg);
-  background: color-mix(in srgb, var(--bg) 76%, transparent);
-  padding: 14px 16px;
-  backdrop-filter: blur(8px);
+  border-left: 2px solid var(--gold);
+  border-radius: var(--shape-md);
+  background: color-mix(in srgb, var(--bg) 91%, transparent);
+  padding: 10px 12px;
+  backdrop-filter: blur(6px);
   pointer-events: none;
   color: var(--text);
 }
 #glyph {
   color: var(--gold);
-  font: 800 21px/1.05 var(--font-mono);
+  font: 800 14px/1.05 var(--font-mono);
   transition: opacity .18s linear;
 }
 #caption {
-  margin-top: 10px;
+  margin-top: 8px;
   transition: opacity .18s linear;
 }
 #caption .lead {
   display: block;
-  max-width: 30ch;
+  max-width: 34ch;
   color: var(--text);
-  font: 700 18px/1.22 var(--font-heading);
+  font: 800 13px/1.32 var(--font-mono);
 }
 #caption .sub {
   display: block;
   max-width: 42ch;
-  margin-top: 10px;
+  margin-top: 8px;
   color: var(--text-muted);
-  font: 500 12px/1.55 var(--font-body);
+  font: 700 10.5px/1.5 var(--font-mono);
 }
 #counter {
   position: fixed;
@@ -2392,16 +2424,18 @@ button.nav:hover {
     left: 18px;
     right: 18px;
     top: auto;
-    bottom: 86px;
+    bottom: 132px;
     width: auto;
-    padding: 12px 14px;
+    max-height: 208px;
+    overflow: hidden;
+    padding: 10px 12px;
   }
-  #glyph { font-size: 18px; }
+  #glyph { font-size: 12px; }
   #caption .lead {
-    font-size: clamp(17px, 6vw, 24px);
+    font-size: 13px;
   }
   #caption .sub {
-    font-size: 13px;
+    font-size: 10px;
   }
   #counter {
     left: 18px;

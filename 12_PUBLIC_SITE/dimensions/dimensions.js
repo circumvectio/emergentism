@@ -6,6 +6,9 @@ if (canvas && visual) document.body.classList.add("dimension-page");
 const REDUCED_MOTION = !!(window.matchMedia
   && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
 const TAU = Math.PI * 2;
+const SAMPLE_HZ = 30;
+const SAMPLE_DT = 1 / SAMPLE_HZ;
+const MAX_FRAME_DT = 0.12;
 const COLORS = {
   bg: "#050505",
   surface: "#0A0A0A",
@@ -49,6 +52,28 @@ function phase01(t, cyclesPerSecond = 0.045, offset = 0) {
 function clamp01(x) {
   return Math.max(0, Math.min(1, x));
 }
+
+function createSampleClock() {
+  return {
+    accumulator: 0,
+    index: 0,
+    lastStepCount: 0,
+    advance(frameSeconds, rate = 1, forcedSeconds = 0, paused = false) {
+      if (!paused) this.accumulator += Math.min(Math.max(frameSeconds, 0), MAX_FRAME_DT) * rate;
+      if (forcedSeconds > 0) this.accumulator += forcedSeconds;
+      const steps = Math.min(12, Math.floor(this.accumulator / SAMPLE_DT));
+      if (steps > 0) {
+        this.accumulator -= steps * SAMPLE_DT;
+        this.index += steps;
+      }
+      this.lastStepCount = steps;
+      return steps * SAMPLE_DT;
+    },
+    label() {
+      return SAMPLE_HZ + " Hz · n " + String(this.index).padStart(5, "0");
+    }
+  };
+}
 const dimensionCommands = [
   { key: "/0", aliases: ["/0", "0", "d0", "titans"], label: "/0 · Titans", detail: "Ground / finity", href: "../0/" },
   { key: "/1", aliases: ["/1", "1", "d1", "one", "finity"], label: "/1 · The Special One", detail: "Reciprocal mirror", href: "../1/" },
@@ -61,7 +86,7 @@ const dimensionCommands = [
   { key: "S", aliases: ["soul", "soul-loop"], label: "Soul Loop", detail: "Loop doctrine", href: "../soul-loop/" },
   { key: "A", aliases: ["atlas", "a"], label: "Atlas", detail: "Public atlas", href: "../atlas/" },
   { key: "EM", aliases: ["cascade", "emergence"], label: "Emergence", detail: "Animation", href: "../cascade.html" },
-  { key: "SP", aliases: ["sphere-demo", "burri", "burri-sphere"], label: "Burri Sphere", detail: "Prototype", href: "../sphere.html" }
+  { key: "SP", aliases: ["sphere-instrument", "burri", "burri-sphere"], label: "Burri Sphere", detail: "Instrument", href: "../sphere.html" }
 ];
 
 let THREE;
@@ -330,6 +355,7 @@ function drawTitanCalculator(time = 0) {
   let paused = false;
   let simTime = 0;
   let stepSeconds = 0;
+  const sampleClock = createSampleClock();
   let lastFrame = time;
   let fps = 0;
   if (playback) {
@@ -357,13 +383,11 @@ function drawTitanCalculator(time = 0) {
     const dt = lastFrame ? Math.max(1, now - lastFrame) : 16.7;
     fps = fps ? fps * 0.9 + (1000 / dt) * 0.1 : 1000 / dt;
     lastFrame = now;
-    visual.dataset.instrumentSample = REDUCED_MOTION ? "sample static" : "Δt " + (dt / 1000).toFixed(3) + "s";
     const rate = playback && playback.rate ? parseFloat(playback.rate.value) / 100 : 1;
-    if (!paused) simTime += dt * 0.001 * rate;
-    if (stepSeconds > 0) {
-      simTime += stepSeconds;
-      stepSeconds = 0;
-    }
+    const sampleAdvance = sampleClock.advance(dt * 0.001, rate, stepSeconds, paused);
+    stepSeconds = 0;
+    simTime += sampleAdvance;
+    visual.dataset.instrumentSample = REDUCED_MOTION ? "sample static" : sampleClock.label();
     const t = simTime;
     updateInstrumentOverlay(overlay, t, fps);
     const cx = width / 2;
@@ -1109,7 +1133,7 @@ function buildScene(mode, scene) {
       const psi = t * 0.34;                                          // measured azimuth trace
       const theta = thetaUserActive
         ? thetaFromSlider()
-        : THETA_MIN + smooth01(sweep01(t, 0.03)) * (THETA_MAX - THETA_MIN); // auto-demo until the reader grabs θ
+        : THETA_MIN + smooth01(sweep01(t, 0.03)) * (THETA_MAX - THETA_MIN); // auto-sweep until the reader grabs θ
       if (!thetaUserActive && thetaSlider) thetaSlider.value = String(sliderFromTheta(theta));
       const phi = 1 / Math.tan(theta / 2);                           // cot(θ/2)
       const nu = Math.tan(theta / 2);                                // 1/φ
@@ -1344,6 +1368,7 @@ async function boot() {
     let paused = false;
     let simTime = 0;
     let stepSeconds = 0;
+    const sampleClock = createSampleClock();
     if (playback) {
       playback.hold.addEventListener("click", () => {
         paused = !paused;
@@ -1375,13 +1400,11 @@ async function boot() {
       const dt = lastFrame ? Math.max(1, time - lastFrame) : 16.7;
       fps = fps ? fps * 0.9 + (1000 / dt) * 0.1 : 1000 / dt;
       lastFrame = time;
-      visual.dataset.instrumentSample = REDUCED_MOTION ? "sample static" : "Δt " + (dt / 1000).toFixed(3) + "s";
       const rate = playback && playback.rate ? parseFloat(playback.rate.value) / 100 : 1;
-      if (!paused) simTime += dt * 0.001 * rate;
-      if (stepSeconds > 0) {
-        simTime += stepSeconds;
-        stepSeconds = 0;
-      }
+      const sampleAdvance = sampleClock.advance(dt * 0.001, rate, stepSeconds, paused);
+      stepSeconds = 0;
+      simTime += sampleAdvance;
+      visual.dataset.instrumentSample = REDUCED_MOTION ? "sample static" : sampleClock.label();
       const t = simTime;
       if (animationMode === "titans") {
         root.rotation.z = 0;

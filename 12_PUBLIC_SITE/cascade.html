@@ -38,8 +38,8 @@
 <div id="overlay">
   <div class="glyph" id="glyph">⊙ = • × ○</div>
   <div class="caption" id="caption">
-    <span class="lead" id="lead">Between infinite nothing and infinity,<br>finity emerges as the middle point.</span>
-    <span class="sub" id="sub">⊙ = • × ○ — a frame-register emblem, not field arithmetic. The discovery as deep as zero, as deep as the infinite.</span>
+    <span class="lead" id="lead">D0/D1 assay: finity fixed at x = 1.</span>
+    <span class="sub" id="sub">Register: ⊙ = • × ○. Frame emblem only; not field arithmetic.</span>
   </div>
 </div>
 
@@ -99,6 +99,9 @@ try {
 
 const REDUCED_MOTION = !!(window.matchMedia
   && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+const SAMPLE_HZ = 30;
+const SAMPLE_DT = 1 / SAMPLE_HZ;
+const MAX_FRAME_DT = 0.12;
 const canvas = document.getElementById('scene');
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true });
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
@@ -112,6 +115,17 @@ const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = true; controls.dampingFactor = 0.06;
 controls.enablePan = false; controls.minDistance = 3.2; controls.maxDistance = 9;
 controls.autoRotate = false; controls.autoRotateSpeed = 0;
+
+function frameCascadeCamera() {
+  const portrait = innerWidth < 680 || innerHeight > innerWidth * 1.35;
+  camera.position.set(0, portrait ? 0.52 : 0.7, portrait ? 6.85 : 5.4);
+  camera.fov = portrait ? 43 : 48;
+  camera.aspect = innerWidth / innerHeight;
+  camera.updateProjectionMatrix();
+  controls.target.set(0, portrait ? 0.05 : 0, 0);
+  controls.update();
+}
+frameCascadeCamera();
 
 const GOLD = 0xffeb3b, TEAL = 0x2196f3, CRIMSON = 0xf44336, WHITE = 0xf3f4f6;
 
@@ -256,29 +270,29 @@ scene.add(projGroup);
 // ── stages ──
 const STAGES = [
   { intro: introFinity, mt: 0, glyph: '⊙ = • × ○', counter: false,
-    lead: 'Between infinite nothing and infinity,|finity emerges as the middle point.',
-    sub: '⊙ = • × ○ — frame register, not field arithmetic. Suda (2025) corroborated: 1 is the self-dual mirror between zero and infinity.' },
+    lead: 'D0/D1 assay: finity fixed at x = 1.',
+    sub: 'Register: ⊙ = • × ○. Frame emblem only; not field arithmetic.' },
   { intro: introRiemann, mt: 0, glyph: 'ℂP¹', counter: false,
-    lead: 'The Riemann sphere —|zero at the south pole, infinity at the north.',
-    sub: 'The projection ray from the north pole meets 1 at a 45° angle — landing on the equator, halfway between zero and infinity.' },
+    lead: 'ℂP¹ calibration: 0 and ∞ as poles.',
+    sub: 'The unit point is the equatorial reference; projection remains chart-dependent.' },
   { intro: null, mt: 0, glyph: '', counter: true,
-    lead: 'The projection ray sweeps through the equator.',
-    sub: 'The ray reaches Finity (⊙, 1) at the equator — colatitude 90°. Beyond, it races toward the horizon…' },
+    lead: 'Projection sweep: sample crosses θ = 90°.',
+    sub: 'Equator marks the unit reference; horizon growth is asymptotic.' },
   { intro: null, mt: 1, glyph: '', counter: true,
-    lead: '…the line becomes the plane — the Mu-limit.',
-    sub: 'At the limit of infinity, the ray returns from the opposite side. The 1D line folds into the 2D plane.' },
+    lead: 'Mu-limit: line assay lifts to plane.',
+    sub: 'The added coordinate is measured as an off-axis degree of freedom.' },
   { intro: null, mt: 2, glyph: '', counter: true,
-    lead: '…the plane becomes the Bloch sphere.',
-    sub: 'The infinite plane curls into a sphere of infinite diameter. Two dimensions close into a surface that returns to itself.' },
+    lead: 'Bloch/Riemann closure: plane to sphere.',
+    sub: 'Closed surface shown as chart closure, not extra physical proof.' },
   { intro: null, mt: 3, glyph: '', counter: true,
-    lead: '…the sphere becomes the horned torus.',
-    sub: 'The surface curls until its hole closes to a single point. As relative rapidity increases, the mouth begins to overlap.' },
+    lead: 'Horn torus calibration: throat closes.',
+    sub: 'Rapidity is read one-sided; overlap is an asymptotic limit marker.' },
   { intro: null, mt: 4, glyph: '', counter: true,
-    lead: 'At the rapidity limit, the surface approaches closure —',
-    sub: '— the light/sphere boundary is approached asymptotically. The model marks the limit; it does not claim finite arrival.' },
+    lead: 'Limit sample: sphere boundary approached.',
+    sub: 'Finite animation marks the limit; it does not claim finite arrival.' },
   { intro: null, mt: 4, glyph: 'φ · ν = 1', counter: false, burri: true, enter: true,
-    lead: 'φ · ν = 1 on S². The Burrisphere.',
-    sub: 'The scaffold returns to the reciprocal sphere. Seven positions. Balance peaks where φ = ν = 1.' },
+    lead: 'Burrisphere assay: φ · ν = 1 on S².',
+    sub: 'Seven sampled positions; balance peaks at φ = ν = 1.' },
 ];
 
 let cur = 0, playing = true, tAccum = 0;
@@ -301,6 +315,8 @@ let fps = 0;
 let lastFrame = 0;
 let sampleDeltaMs = 0;
 let stepSeconds = 0;
+let sampleAccumulator = 0;
+let sampleIndex = 0;
 
 function rateValue(){
   return cascadeRateEl ? parseFloat(cascadeRateEl.value) / 100 : 1;
@@ -312,6 +328,21 @@ function setTelemetry(fields){
     const el = telemetryEl.querySelector('[data-field="' + key + '"]');
     if (el) el.textContent = value;
   });
+}
+
+function advanceSamples(frameSeconds, rate = 1, forcedSeconds = 0, pausedState = false) {
+  if (!pausedState) sampleAccumulator += Math.min(Math.max(frameSeconds, 0), MAX_FRAME_DT) * rate;
+  if (forcedSeconds > 0) sampleAccumulator += forcedSeconds;
+  const steps = Math.min(12, Math.floor(sampleAccumulator / SAMPLE_DT));
+  if (steps > 0) {
+    sampleAccumulator -= steps * SAMPLE_DT;
+    sampleIndex += steps;
+  }
+  return steps * SAMPLE_DT;
+}
+
+function sampleLabel() {
+  return SAMPLE_HZ + ' Hz · n ' + String(sampleIndex).padStart(5, '0');
 }
 
 // safe line renderer ('|' = line break) — no innerHTML, content is static authored text
@@ -335,7 +366,7 @@ function syncInstrument(){
   const phase = Math.min(1, tAccum / STAGE_SECS);
   setTelemetry({
     fps: REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps'),
-    sample: REDUCED_MOTION ? 'sample static' : (sampleDeltaMs ? 'Δt ' + (sampleDeltaMs / 1000).toFixed(3) + 's' : 'sample --'),
+    sample: REDUCED_MOTION ? 'sample static' : sampleLabel(),
     time: 't+' + tAccum.toFixed(2) + 's',
     phase: 'phase ' + phase.toFixed(2),
     metric: 'morph ' + morphCur.toFixed(2) + '→' + morphTarget.toFixed(2),
@@ -348,6 +379,7 @@ function syncInstrument(){
     'phase = ' + phase.toFixed(2) + ' · morph target = ' + morphTarget.toFixed(2) + ' · morph actual = ' + morphCur.toFixed(2) + '\n' +
     'morph lag |target-actual| = ' + Math.abs(morphTarget - morphCur).toFixed(3) + ' · clocked stage dwell = ' + STAGE_SECS.toFixed(1) + 's\n' +
     'frame = ' + (REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps')) + ' · rate = ' + rateValue().toFixed(2) + 'x\n' +
+    'sample clock = ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · fixed Δt = ' + SAMPLE_DT.toFixed(3) + 's\n' +
     projectionState + '\n' +
     'sequence: line → plane → sphere → horn → Burrisphere';
 }
@@ -419,7 +451,6 @@ function fmtProj(){
   return 'projection length ≈ ' + val.toExponential(1).replace('e+', '×10^');
 }
 
-const clock = new THREE.Clock();
 function advanceStageClock(deltaSeconds){
   if (deltaSeconds <= 0) return;
   tAccum += deltaSeconds;
@@ -434,13 +465,13 @@ function animate(frameTime = performance.now()){
   const frameDt = lastFrame ? Math.max(1, frameTime - lastFrame) : 16.7;
   fps = fps ? fps * 0.9 + (1000 / frameDt) * 0.1 : 1000 / frameDt;
   lastFrame = frameTime;
-  sampleDeltaMs = frameDt;
-  const dt = Math.min(clock.getDelta(), 0.05);
-
-  // clocked, inspectable stage advance
   const pendingStep = stepSeconds;
   stepSeconds = 0;
-  if (playing || pendingStep > 0) advanceStageClock((playing ? dt * rateValue() : 0) + pendingStep);
+  const dt = advanceSamples(frameDt * 0.001, rateValue(), pendingStep, !playing);
+  sampleDeltaMs = dt * 1000;
+
+  // clocked, inspectable stage advance
+  if (dt > 0) advanceStageClock(dt);
 
   // morph
   morphCur += (morphTarget - morphCur) * Math.min(1, dt * 0.9);
@@ -504,7 +535,7 @@ if (REDUCED_MOTION) {
 }
 
 addEventListener('resize', () => {
-  camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
+  frameCascadeCamera();
   renderer.setSize(innerWidth, innerHeight);
 });
 </script>

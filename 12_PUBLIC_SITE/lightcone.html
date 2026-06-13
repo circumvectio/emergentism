@@ -76,6 +76,9 @@ try {
 const REDUCED_MOTION = !!(window.matchMedia
   && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
 const TAU = Math.PI * 2;
+const SAMPLE_HZ = 30;
+const SAMPLE_DT = 1 / SAMPLE_HZ;
+const MAX_FRAME_DT = 0.12;
 const GOLD = 0xffeb3b, TEAL = 0x2196f3, CRIMSON = 0xf44336;
 const canvas = document.getElementById('scene');
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true });
@@ -173,6 +176,23 @@ let lastOmegaProxy = 0;
 let lastSampleT = 0;
 let lastFrame = 0;
 let fps = 0;
+let sampleAccumulator = 0;
+let sampleIndex = 0;
+
+function advanceSamples(frameSeconds, rate = 1, forcedSeconds = 0, pausedState = false) {
+  if (!pausedState) sampleAccumulator += Math.min(Math.max(frameSeconds, 0), MAX_FRAME_DT) * rate;
+  if (forcedSeconds > 0) sampleAccumulator += forcedSeconds;
+  const steps = Math.min(12, Math.floor(sampleAccumulator / SAMPLE_DT));
+  if (steps > 0) {
+    sampleAccumulator -= steps * SAMPLE_DT;
+    sampleIndex += steps;
+  }
+  return steps * SAMPLE_DT;
+}
+
+function sampleLabel() {
+  return SAMPLE_HZ + ' Hz · n ' + String(sampleIndex).padStart(5, '0');
+}
 
 function syncPlayback() {
   if (!holdButton) return;
@@ -209,12 +229,11 @@ function updateInstrument(frameTime = performance.now(), poseOffset = null){
   fps = fps ? fps * 0.9 + (1000 / frameDt) * 0.1 : 1000 / frameDt;
   lastFrame = now;
   const rate = rateInput ? parseFloat(rateInput.value) / 100 : 1;
-  if (poseOffset !== null) simTime += poseOffset;
-  else if (!REDUCED_MOTION && !paused) simTime += frameDt * 0.001 * rate;
-  if (stepSeconds > 0) {
-    simTime += stepSeconds;
-    stepSeconds = 0;
-  }
+  const sampleAdvance = poseOffset !== null
+    ? poseOffset
+    : advanceSamples(frameDt * 0.001, rate, stepSeconds, paused);
+  stepSeconds = 0;
+  simTime += sampleAdvance;
   const t = REDUCED_MOTION ? simTime || 1.2 : simTime;
   // F5/Ω drive in the interpretive register: the cone widens and lengthens on
   // a measured cycle, without claiming a new settled physical force.
@@ -249,7 +268,7 @@ function updateInstrument(frameTime = performance.now(), poseOffset = null){
   mLabel.textContent = 'Ω proxy ' + omegaProxy.toFixed(2);
   setTelemetry({
     fps: REDUCED_MOTION ? 'static' : fps.toFixed(0) + ' fps',
-    sample: REDUCED_MOTION ? 'sample static' : 'Δt ' + (frameDt / 1000).toFixed(3) + 's',
+    sample: REDUCED_MOTION ? 'sample static' : sampleLabel(),
     time: 't+' + t.toFixed(2) + 's',
     phase: 'phase ' + reach.toFixed(2),
     metric: 'Ω ' + omegaProxy.toFixed(2) + ' · dΩ/dt ' + omegaRate.toFixed(2),
@@ -261,6 +280,7 @@ function updateInstrument(frameTime = performance.now(), poseOffset = null){
     'Ω proxy = cone volume = ' + omegaProxy.toFixed(2) + ' · dΩ/dt = ' + omegaRate.toFixed(2) + ' · phase = ' + reach.toFixed(2) + '\n' +
     'cone residual |r-h·tanθ| = ' + coneResidual.toExponential(1) + ' · calibration rings fixed\n' +
     'frame = ' + (REDUCED_MOTION ? 'static' : fps.toFixed(0) + ' fps') + ' · ' + (paused ? 'held sample' : 'run') + ' · rate = ' + rate.toFixed(2) + 'x\n' +
+    'sample clock = ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · fixed Δt = ' + SAMPLE_DT.toFixed(3) + 's\n' +
     'coordinate convention: c=1 units · present hyperplane fixed at t=0\n' +
     'tier: [I] selection image; no literal fifth-force physics claim';
   controls.update();
