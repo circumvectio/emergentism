@@ -651,7 +651,7 @@ function makeReadout() {
     el = document.createElement("div");
     el.className = "model-readout";
     el.style.cssText =
-      "position:absolute;left:16px;top:74px;z-index:5;max-width:68%;" +
+      "position:absolute;left:16px;right:auto;top:auto;bottom:16px;z-index:5;max-width:68%;max-height:min(34vh,280px);" +
       "font:600 11px/1.55 'Roboto Mono',ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums;" +
       "color:var(--text,#F3F4F6);pointer-events:none;letter-spacing:0;white-space:pre-line;text-align:left;" +
       "background:rgba(5,5,5,.78);padding:9px 12px;" +
@@ -931,7 +931,8 @@ function buildScene(mode, scene) {
     if (readout) {
       readout.style.whiteSpace = "normal";
       readout.style.maxWidth = "min(440px, 46%)";
-      readout.style.top = "74px";
+      readout.style.top = "auto";
+      readout.style.bottom = "70px";
       readout.classList.add("horn-readout");
     }
     const W_MAX = 4.5;                                          // ends: v/c -> 0.9998, γ -> ~45

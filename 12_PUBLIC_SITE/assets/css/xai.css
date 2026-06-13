@@ -656,6 +656,7 @@ body.soul-loop-instrument .instrument-reticle {
 
 body.soul-loop-instrument .visual-labels {
   z-index: 4;
+  display: none;
 }
 
 body.soul-loop-instrument .visual-labels .label {
