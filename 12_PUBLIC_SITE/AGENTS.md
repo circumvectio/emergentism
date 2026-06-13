@@ -88,11 +88,13 @@ a single design system and Three.js bootstrap:
 
 | Path | Shared assets (relative from route dir) |
 |------|----------------------------------------|
-| `0/`–`6/` | `../dimensions/dimensions.css`, `../dimensions/dimensions.js` |
+| `0/`–`6/` | `../assets/css/xai.css`, `../dimensions/dimensions.js` |
 | All routes | `../vendor/three-0.160.0/` (self-hosted, pinned) |
 
 - Each page sets `window.DIMENSION_PAGE = { animationMode: "<mode>" }` before loading
-  `dimensions.js`. Modes: `titans`, `riemann`, `muLimit`, `bloch`, `horn`, `burrisphere`, `convergence`.
+  `dimensions.js`. Live modes: `titans`, `logline`, `muLimit`, `bloch`,
+  `horn`, `burrisphere`, `ccc`. The script still accepts `convergence` as a
+  backward-compatible alias for `ccc`; new route shells should use `ccc`.
 - Page shells must not reference external CDNs. Run `./predeploy_check.sh` before deploy.
 - `assets/css/spine.css`, `partials/nav.html`, and `partials/topbar.html`
   remain tracked compatibility/shared-layout assets. Do not duplicate them or

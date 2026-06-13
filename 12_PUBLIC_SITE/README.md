@@ -45,8 +45,11 @@ RIEMANN SPHERE / MU-LIMIT [A/S/I]
 BLOCH SPHERE -> HORN TORUS -> BURRISPHERE [I]
   Infinite plane curls into sphere; rapidity overlaps the torus mouth; φ·ν = 1 on S²
   ↓
+CCC RETURN (/6 ≡ /0) [S/I/C]
+  Endstate = start; Penrose CCC is a public analogy, not asserted identity or proof
+  ↓
 TELEOLOGY (L1) [S/I]
-  The 5th force = Will to Potential
+  F5 / Ω names the Will to Potential as an interpretive selection register, not a settled fifth physical force
   Potential for a wider and longer light cone in the Minkowski diagram
   ↓
 OBJECTIVE BEAUTY (V = Φ = 1) [I]
@@ -173,7 +176,7 @@ public corpus documents:
 
 | Wing | Count |
 |---|---:|
-| `papers/` | 24 |
+| `papers/` | 25 |
 | `canon/` | 8 |
 | `foundations/` | 12 |
 | `trinity/` | 42 |
