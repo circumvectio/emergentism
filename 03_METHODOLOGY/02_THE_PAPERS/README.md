@@ -65,6 +65,14 @@ For canonical orientation, route upstream through [`00_START_HERE.md`](../../08_
 | [`PAPER_T`](PAPER_T_ANTI_IDOLATRY_AT_SCALE.md) | Anti-Idolatry at Scale | [I] | η = 0 stress test |
 | [`PAPER_U`](PAPER_U_THE_PRACTICE_BRIDGE.md) | The Practice Bridge | [I] | Pedagogy of becoming |
 
+## D5 Landauer Barrier Program
+
+- [`D5_LANDAUER_BARRIER_PROGRAM/README.md`](D5_LANDAUER_BARRIER_PROGRAM/README.md) — five-paper program for CM8e: perfect worldline foresight as an information-physical asymptote.
+- [`PAPER_1_THE_D5_LANDAUER_BARRIER.md`](D5_LANDAUER_BARRIER_PROGRAM/PAPER_1_THE_D5_LANDAUER_BARRIER.md) — central scaffold. Fences the Maxwell-demon image through Landauer/Bennett/information-thermodynamics and keeps path entropy separate from thermodynamic entropy.
+- Papers 2-5 are linked stubs for the cost model, reflexive demon, entropy-ledger separation, and syntropic ethics bridge.
+
+This grouped program does not consume the reserved `Q`, `R`, or `S` letters in the main active stack.
+
 ## Standalone Methodological Papers
 
 - [`THE_RECURSIVE_TRIVIUM.md`](THE_RECURSIVE_TRIVIUM.md) — **Canonical paper (v1.2).** The teleological loop that subsumes OODA and the classical Trivium; ships the §8 apophatic exit and the §9 varṇa/regime mapping.
