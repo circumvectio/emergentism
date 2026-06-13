@@ -1744,9 +1744,18 @@ pre.glyph-block {
     flex-direction: column;
   }
 
+  body.dimension-page .hero {
+    padding-top: 88px;
+  }
+
   .hero-copy {
     width: 100%;
     max-width: 100%;
+  }
+
+  body.dimension-page .hero-copy {
+    order: 1;
+    margin-top: 32px;
   }
 
   .equation-strip {
@@ -1773,6 +1782,12 @@ pre.glyph-block {
     max-width: 100%;
     margin-top: 32px;
     min-height: min(58vh, 480px);
+  }
+
+  body.dimension-page .visual-panel {
+    order: -1;
+    margin-top: 0;
+    min-height: min(62svh, 520px);
   }
 
   .model-readout {
