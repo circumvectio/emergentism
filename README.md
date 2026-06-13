@@ -74,6 +74,12 @@ Play:
 - `i` raises `H` and `H` raises `i` is the syntropic dyad.
 - one side rises by degrading the other is extraction / evil.
 
+Action-register gloss: `V` here is D4 means-to-act — body, tools, energy,
+access, runway, hands, shovel, industrial digger. `Φ` is D5
+worldline-foresight — the ability to envision reachable futures, rank them, and
+operate the means. A child beside a jet and a pilot without usable bodily/tool
+access are opposite zero-factor failures; durable `P_node` needs both.
+
 Canonical sources:
 
 - [`05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md`](05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md) — compact worldview and game rule.

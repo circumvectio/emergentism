@@ -61,6 +61,27 @@ P_node,i = Φ_i × V_i
 P_node,H = Φ_H × V_H
 ```
 
+Agency-register dictionary:
+
+```text
+V = D4 means-to-act:
+    body, tools, energy, access, runway, hands, shovel, industrial digger.
+
+Φ = D5 worldline-foresight:
+    the capacity to envision reachable futures, rank them, and operate the means.
+```
+
+This is the finite-node action register. It does not replace the sphere
+coordinates: lowercase `φ` and `ν` name the reciprocal chart on `S²`; uppercase
+`Φ` and `V` name practical factors in `P_node = Φ × V`. The same zero-factor
+catastrophe applies. Means without foresight are not usable potential: a child
+beside a jet cannot fly it. Foresight without access is not usable potential:
+an old pilot without the relevant bodily/tool means cannot enact the run. A
+hand, a shovel, and an industrial digger are all D4 viability at different
+scales; D5 asks whether the actor can see and use the worldline they open.
+`[A]` for the product algebra, `[S]` for the internal bridge, `[I]` for the
+general agency reading.
+
 For normalized positive factors, define a finite-node balance reading:
 
 ```text
