@@ -82,6 +82,17 @@ P_node collapses on either missing factor:
   pilot-foresight + no bodily/tool access -> low effective P_node for running
 ```
 
+Limit-form clarification:
+
+```text
+Ideal D5 tends toward a Maxwell-demon-like selector:
+  complete worldline-foresight over the reachable branches of all relevant actors.
+
+But it is not a thermodynamic free lunch:
+  local entropy can be lowered only by paying D4 costs in measurement, memory,
+  control, erasure, or entropy export. Foresight without means remains sterile.
+```
+
 ## 4. The five Knows, wired to the corpus
 
 | Know | Function | Lane | Canonical anchors |
