@@ -216,6 +216,27 @@ subject to the same ladder as every claim it governs.
 
 ---
 
+## 8. Current pursuit — run the goal as a Soul Loop
+
+The goal is pursued by a recurring execution loop, not by restating the vow:
+
+```text
+source truth -> public mirror -> retrieval/RAG -> verification gate -> receipt
+```
+
+Each material advance must first improve a source owner, then expose the same
+claim where readers meet the framework, then make the claim retrievable, then
+pass the gate that actually covers that surface. This is O11 in
+[VMOSK_A.md](VMOSK_A.md): the Vision/Mission runtime. It is the operational
+form of "disciplined correction faster than drift."
+
+The first pursuit loop is the Vision/Mission itself. It is canonical in
+VMOSK-A and this Goal, mirrored publicly on `/game/` and the homepage, indexed
+for RAG retrieval, and verified before publication. The next loops should use
+the same order for source anchoring, AIA export, and the paper program.
+
+---
+
 **Read with:** [VMOSK_A.md](VMOSK_A.md) ·
 [00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md](00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) ·
 [10_THE_SOUL_LOOP.md](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md) ·

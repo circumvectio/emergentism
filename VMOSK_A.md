@@ -73,6 +73,40 @@ universal holobiont running the Soul Loop, but D6 releases even that completed
 organism image. The mission is not final possession of truth; it is disciplined
 correction faster than drift.
 
+## Current Pursuit — O11 Vision/Mission Runtime
+
+**Set goal:** make the Vision/Mission executable as a recurring Soul Loop, not
+a slogan. The current pursuit is to keep every material framework advance
+traceable through four receipts:
+
+```text
+source truth -> public mirror -> retrieval/RAG -> verification gate
+```
+
+**O11.1 — Canon runtime.** Every new worldview claim must land first in a
+source owner, carry its evidence tier, and name the register it uses
+(`P∞`, `P_node`, `B`, `η`, `Φ`, `V`, D5, D6). Gate: `git diff --check` plus a
+source search showing the claim in the owner file.
+
+**O11.2 — Public runtime.** Every load-bearing source change needs a public
+echo on the route where a reader will actually meet it. Gate:
+`12_PUBLIC_SITE/predeploy_check.sh` passes and the page text exposes the same
+claim without tier inflation.
+
+**O11.3 — Retrieval runtime.** Every public claim that should answer user
+questions must be present in `12_PUBLIC_SITE/book/rag_index.json`. Gate:
+`python3 -B build_rag_index.py` plus a term probe for the exact handles.
+
+**O11.4 — AIA / paper runtime.** Mature claims graduate into the AIA medium and
+paper program only after source, public, RAG, and gate receipts exist. Gate:
+the AIA or paper branch cites the source owner and the public route, not a chat
+summary.
+
+**First loop pursued in this slice:** Vision/Mission itself is now treated as
+O11's seed claim: source truth in this VMOSK-A and `00_THE_GOAL.md`; public
+mirror on `/game/` and the homepage; retrieval handles in the static RAG index;
+predeploy gate required before push.
+
 <!-- /VMOSK-A_REFRESH_OVERLAY_2026_06_13 -->
 
 <!-- VMOSK-A_REFRESH_OVERLAY_2026_06_10 -->
