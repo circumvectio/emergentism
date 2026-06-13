@@ -397,7 +397,7 @@ WINGS = {
     "value": {
         "source_dir": HANDOFF / "axiology-public",
         "title": "Axiology",
-        "description": "The doctrine of value — ten documents on ethics, rights, teleological limits, theurgy, and the bridge between levels.",
+        "description": "The doctrine of value — the Soul Loop's fourth question, Know what matters: Beauty, Truth, Justice, non-extraction, and K2-signed action.",
         "active": "value",
     },
     "ground": {

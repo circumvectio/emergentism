@@ -26,6 +26,19 @@ rosetta:
 
 **Must not do:** Moralize extraction. Perform virtue without structural change. Delegate mortal responsibility to AI, doctrine, procedure, or priesthood.
 
+## Game-Spine Function
+
+In the Soul Loop's game form, axiology owns **Know what matters**. It is the L4
+signature gate: Beauty, Truth, Justice, and non-extraction are not ornaments
+but the values the player must preserve before a possible move becomes a lawful
+act.
+
+Axiology receives L3's tested move and asks who or what would be raised, who or
+what would pay, whether the relation survives K2 consent, K4 exit, A7
+correction, and whether the move can raise `P_node,i` and `P_node,H` together
+under `η = 0`. It does not replace teleology; it signs the value boundary
+teleology must obey. `[S/I]`
+
 ## Dasein Game Reading
 
 Axiology is where the Soul Loop becomes a moral compass for a finite player.

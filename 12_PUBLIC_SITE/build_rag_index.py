@@ -21,6 +21,8 @@ OUT = ROOT / "book" / "rag_index.json"
 LIBRARY = ["canon", "foundations", "trinity", "formal", "paradox", "memetic", "rosettad", "operators",
            "will", "value", "ground", "sacred", "method", "meta"]
 
+LANDING_PAGES = ["value"]
+
 # Overview/doctrine pages chunked at their own headings (h2/h3 chapters) so the
 # RAG corpus stays current with the front-of-house surfaces — these carry the
 # 2026-06 findings (mass-shell, agency gloss, the unfolding) that the frozen
@@ -97,6 +99,30 @@ def library_passages():
     return out
 
 
+def landing_passages():
+    """Add selected library landing pages whose ledes carry current doctrine."""
+    out = []
+    for page in LANDING_PAGES:
+        idx = ROOT / page / "index.html"
+        if not idx.exists():
+            continue
+        html = idx.read_text(encoding="utf-8", errors="replace")
+        m = re.search(r"<h1[^>]*>(.*?)</h1>", html, re.S)
+        title = clean(m.group(1)) if m else page
+        article = re.search(
+            r'<article[^>]*class="[^"]*\blibrary-article\b[^"]*"[^>]*>(.*?)</article>',
+            html,
+            re.S,
+        )
+        body_html = article.group(1) if article else html
+        text = clean(body_html)[:MAX_PASSAGE]
+        if len(text) < 80:
+            continue
+        out.append({"id": f"page:{page}:landing", "title": title,
+                    "href": f"/{page}/", "text": text})
+    return out
+
+
 SEC_RE = re.compile(r"<h([23])[^>]*>(.*?)</h\1>(.*?)(?=<h[23]\b|</section>|</article>|<footer)", re.S)
 
 
@@ -130,7 +156,7 @@ def overview_passages():
 
 
 def main() -> int:
-    passages = book_passages() + library_passages() + overview_passages()
+    passages = book_passages() + library_passages() + landing_passages() + overview_passages()
     OUT.write_text(json.dumps({"generated": "build_rag_index.py",
                                "count": len(passages), "passages": passages},
                               ensure_ascii=False), encoding="utf-8")
