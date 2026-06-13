@@ -133,7 +133,7 @@ These five lines are the **kernel**. Everything else is elaboration, proof, inte
 | [S] | Structural | The formal proofs (EFR 21–24), the derivation chain, the L-level geometry |
 | [I] | Interpretive | Reality IS S², D₀–D₆ are dimensional strata, consciousness as activity |
 | [D] | Draft / Demonstration | Local mock loops, unvalidated structures |
-| [C] | Conjecture | Liouville CFT at c=25, retrocausal F₅, CCC correspondence |
+| [C] | Conjecture | Liouville CFT at c=25, literal retrocausal F₅ signatures, CCC correspondence |
 
 **The commitment:** Every claim is pre-registered with upgrade criteria, kill conditions, and survival clauses. The framework publishes failures, not hides them.
 

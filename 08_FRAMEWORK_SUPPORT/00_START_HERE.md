@@ -251,7 +251,7 @@ For agents building on, extending, or auditing the framework:
 | **[S]** | Structural (follows from axioms) | phi*nu = 1 on S² implies equator is Hamiltonian minimum | Accept IF you accept axioms |
 | **[I]** | Interpretive | Reality IS S² (not just modeled by it) | Treat as hypothesis |
 | **[D]** | Draft / demonstration | Staging surface or illustrative artifact | Do not cite as settled |
-| **[C]** | Conjecture | Dark matter is mutual information; Ektropy is retrocausal | Treat as speculation |
+| **[C]** | Conjecture | Dark matter as mutual information; literal retrocausal ektropy signatures | Treat as speculation |
 
 **Rule:** No claim may be presented at a higher tier than its actual status. If you encounter a mismatch, file it.
 
@@ -274,7 +274,7 @@ For agents building on, extending, or auditing the framework:
 | K7 | R* threshold ~1.5 (system 2.6x more fragile than claimed) | **ALREADY FALSIFIED** (2026-04-09). Actual η_c ~0.58. Qualitative claim [S] survives; quantitative threshold [C] replaced. | **Active — falsified, updated** |
 | K8 | Dark matter is NOT mutual information | Untestable now | *Deferred* |
 | K9 | DAC is NOT immune to capture (requires 5+ years) | Untestable now | *Deferred* |
-| K10 | Ektropy retrocausal signatures undetected | Untestable now | *Deferred* |
+| K10 | C13 literal retrocausal ektropy signatures fail to appear | Untestable now; would demote only C13, not the default non-retrocausal F5 reading | *Deferred* |
 
 **Active** kill conditions can be tested now. **Deferred** conditions require future technology or timescales.
 

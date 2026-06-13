@@ -113,9 +113,9 @@ However, the Emergentism version goes further. The hypothesis is not just that t
 
 ### C. Ektropy and Reverse Entropy
 
-The concept of ektropy/extropy/syntropy as the reverse of entropy is philosophically live but scientifically marginal. Negentropy (Schrodinger), syntropy (Fantappie), and extropy (More) all name the observation that living systems locally reverse entropy. The framework's F5 goes further by claiming this is a *force*, not just a statistical tendency.
+The concept of ektropy/extropy/syntropy as the reverse of entropy is philosophically live but scientifically marginal. The physics-safe phrasing is stricter: living systems create and maintain local order by importing free energy and exporting entropy; they do not reverse the total entropy bill. Negentropy (Schrodinger), syntropy (Fantappie), and extropy (More) name different attempts to describe local order-building under cost. The framework's default F5 reading is therefore not a new settled force. It names a viability-directed selection / attractor register where feedback, coupling, and correction exist. The stronger claim that F5 is a literal fifth force or retrocausal influence remains [C].
 
-No mainstream physics currently recognizes a fifth force corresponding to ektropy. However, the fine-tuning of physical constants (the anthropic coincidences) remains unexplained. The strong anthropic principle (the universe *must* produce observers) is teleological; the weak version (we observe life-permitting constants because we exist) is tautological. The framework's position that F5 IS this fine-tuning tendency is [C] Conjecture.
+No mainstream physics currently recognizes a fifth force corresponding to ektropy. However, the fine-tuning of physical constants (the anthropic coincidences) remains unexplained. The strong anthropic principle (the universe *must* produce observers) is teleological; the weak version (we observe life-permitting constants because we exist) is tautological. The framework's position that F5 can be read as a fine-tuning tendency is [C] Conjecture; its operational default remains non-retrocausal teleological compression through present selection, not proof that fine-tuning is a force.
 
 ---
 
