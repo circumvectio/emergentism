@@ -31,9 +31,10 @@ compass; individual symbiont and collective holobiont; evil / extraction.
 > Build Emergentism into a coherent and consistent Weltanschauung that explains
 > how the reader came to be as Dasein, why reality tends toward viable
 > completion, and how to play the game: recursively applying epistemology,
-> methodology, and axiology to raise `P_node,i` and `P_node,H` together under
-> `P_node = Φ × V` and `η = 0`, so the individual symbiont and collective
-> holobiont rise together without extraction.
+> methodology, and axiology to maximize durable `W_i(T)` only on the
+> boundary-preserving frontier of `P_node = Φ × V` under `η = 0`, so the
+> individual symbiont and collective holobiont preserve or raise one another
+> without extraction, with the strict success case being both rising together.
 
 ## 2. Compressions
 
@@ -57,11 +58,12 @@ Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
 Know how to know:  epistemology -> direct disclosure, inference, evidence tiers
 Know how to move:  methodology -> derive, test, build, correct, recurse
 Know what matters: axiology -> Beauty, Truth, Justice, non-extraction
-Know how to act:   teleology -> maximize P_node,i while raising P_node,H under η = 0
+Know how to act:   teleology -> maximize durable W_i(T) only where P_node,H is preserved or raised under η = 0
 
 Play:
   if Φ without V -> sterile seeing
   if V without Φ -> blind force
+  if unbounded V collapses Φ -> lower P_node
   if Φ and V balance at L4 -> objective dharma / flow
   if ΔP_node,i > 0 and ΔP_node,H > 0 -> syntropic dyad
   if one rises by degrading the other -> evil / extraction
@@ -154,7 +156,7 @@ the constitution beat generic honesty where the baseline actually fails),
 **R4** (the keystone organizational wager). **Kill clause (A7):** if E1 maps
 the registers Dasein actually inhabits as additive — if life's factors turn
 out substitutable where this goal says they are conjunctive — the
-`raise P_node,i and P_node,H together through Φ × V` clause must be rewritten in public. The goal is
+`boundary-preserving frontier through Φ × V` clause must be rewritten in public. The goal is
 subject to the same ladder as every claim it governs.
 
 ---

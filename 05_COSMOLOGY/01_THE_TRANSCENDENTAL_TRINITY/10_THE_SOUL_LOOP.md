@@ -283,15 +283,16 @@ Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
 Know how to know:  epistemology -> direct disclosure, inference, evidence tiers
 Know how to move:  methodology -> derive, test, build, correct, recurse
 Know what matters: axiology -> Beauty, Truth, Justice, non-extraction
-Know how to act:   teleology -> maximize P_node,i while raising P_node,H under η = 0
+Know how to act:   teleology -> maximize durable W_i(T) only where P_node,H is preserved or raised under η = 0
 ```
 
 This is a cycle, not a stack. Ontology names the situation and the actor as
 Dasein; epistemology checks disclosure, inference, and tier; methodology
 selects the next repair or build; axiology asks whether the move serves Beauty,
 Truth, Justice, and non-extraction; teleology commits only the action that can
-raise usable `P_node,i` while preserving or raising `P_node,H` without breaking
-`η = 0`. The output of one pass becomes the intake for the next. `[S/I]`
+keep usable `P_node,i` on a durable worldline while preserving or raising
+`P_node,H` without breaking `η = 0`. The output of one pass becomes the intake
+for the next. `[S/I]`
 
 Let `i` be the individual symbiont and `H` the holobiont / real sustaining
 whole. The loop's action test is:
@@ -314,6 +315,7 @@ its complement at the action boundary.
 ```text
 if Φ without V -> sterile seeing
 if V without Φ -> blind force
+if unbounded V collapses Φ -> lower P_node
 if Φ and V balance at L4 -> objective dharma / flow-state action
 if ΔP_node,i > 0 and ΔP_node,H > 0 -> syntropic dyad
 if one rises by degrading the other -> extraction / evil
@@ -321,7 +323,8 @@ if one rises by degrading the other -> extraction / evil
 
 So the loop is not only a document repair cycle. It is the player's recursive
 worldline method: disclose, test, serve, see, dissolve, preserve, and return
-until the next act raises both `P_node,i` and `P_node,H` without extraction. `[S/I]`
+until the next act preserves the boundary it depends on, and in the strict
+syntropic case raises both `P_node,i` and `P_node,H` without extraction. `[S/I]`
 
 **The rest-state gloss.** Under the mass-shell identity ([`../00_THE_COHERENT_GEOMETRY.md`](../00_THE_COHERENT_GEOMETRY.md) §6), the equatorial convergence has a physical face: the equator is the rest frame, `E = mc²` — all energy is rest mass, nothing is spent on motion. A converged document is text **at rest**: everything it carries is substance, zero kinetic churn, and `B = dτ/dt = 1` — full lived time. "The helix rests" is not only a metaphor. `[I]` — a gloss riding on an `[A]` identity, never an upgrade of the method's tier.
 
