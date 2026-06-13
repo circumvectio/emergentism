@@ -38,6 +38,14 @@
 </div>
 <div class="meter"><span id="m-label">reachable future</span><div class="bar"><div class="fill" id="m-fill"></div></div></div>
 <div class="tier">[I] illustrative — a Minkowski image of F5/Ω routed through the L1 Teleology lane; not a literal settled-physics force.</div>
+<div class="standalone-telemetry" id="lightcone-telemetry" aria-hidden="true">
+  <span data-field="mode">lightcone assay</span>
+  <span data-field="fps">-- fps</span>
+  <span data-field="time">t+0.00s</span>
+  <span data-field="phase">phase --</span>
+  <span data-field="metric">Ω --</span>
+  <span data-field="state">RUN</span>
+</div>
 <div id="stage-readout" aria-live="polite">LIGHTCONE INSTRUMENT</div>
 <div class="instrument-controls standalone-controls" id="lightcone-controls">
   <button type="button" id="lc-hold" aria-pressed="false">HOLD</button>
@@ -156,6 +164,7 @@ const readout = document.getElementById('stage-readout');
 const holdButton = document.getElementById('lc-hold');
 const stepButton = document.getElementById('lc-step');
 const rateInput = document.getElementById('lc-rate');
+const telemetry = document.getElementById('lightcone-telemetry');
 let simTime = 0;
 let paused = false;
 let stepSeconds = 0;
@@ -168,6 +177,14 @@ function syncPlayback() {
   if (!holdButton) return;
   holdButton.textContent = paused ? 'RUN' : 'HOLD';
   holdButton.setAttribute('aria-pressed', paused ? 'true' : 'false');
+}
+
+function setTelemetry(fields){
+  if (!telemetry) return;
+  Object.entries(fields).forEach(([key, value]) => {
+    const el = telemetry.querySelector('[data-field="' + key + '"]');
+    if (el) el.textContent = value;
+  });
 }
 
 if (holdButton) {
@@ -229,6 +246,13 @@ function updateInstrument(frameTime = performance.now(), poseOffset = null){
   // meter
   const reach = ease; mFill.style.width = (20 + reach*80) + '%';
   mLabel.textContent = 'Ω proxy ' + omegaProxy.toFixed(2);
+  setTelemetry({
+    fps: REDUCED_MOTION ? 'static' : fps.toFixed(0) + ' fps',
+    time: 't+' + t.toFixed(2) + 's',
+    phase: 'phase ' + reach.toFixed(2),
+    metric: 'Ω ' + omegaProxy.toFixed(2) + ' · dΩ/dt ' + omegaRate.toFixed(2),
+    state: (paused ? 'HOLD' : 'RUN') + ' · ' + rate.toFixed(2) + 'x'
+  });
   if (readout) readout.textContent =
     'LIGHTCONE INSTRUMENT\n' +
     'angle = ' + (angle * 180 / Math.PI).toFixed(1) + '° · height = ' + height.toFixed(2) + ' · radius = ' + radius.toFixed(2) + '\n' +

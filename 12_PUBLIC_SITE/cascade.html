@@ -47,7 +47,22 @@
 
 <button class="nav" id="prev" aria-label="previous">‹</button>
 <button class="nav" id="next" aria-label="next">›</button>
-<button id="playpause">HOLD</button>
+<div class="standalone-telemetry" id="cascade-telemetry" aria-hidden="true">
+  <span data-field="mode">cascade assay</span>
+  <span data-field="fps">-- fps</span>
+  <span data-field="time">t+0.00s</span>
+  <span data-field="phase">phase --</span>
+  <span data-field="metric">morph --</span>
+  <span data-field="state">RUN</span>
+</div>
+<div class="instrument-controls standalone-controls cascade-controls" id="cascade-controls">
+  <button type="button" id="playpause" aria-pressed="false">HOLD</button>
+  <button type="button" id="cascade-step">STEP</button>
+  <label>
+    <span>rate</span>
+    <input id="cascade-rate" type="range" min="25" max="150" step="5" value="100" aria-label="cascade simulation rate" />
+  </label>
+</div>
 <div id="stage-readout" aria-live="polite">CASCADE INSTRUMENT</div>
 <label id="timeline-shell" for="timeline">
   <span>stage</span>
@@ -276,10 +291,26 @@ const counterEl = document.getElementById('counter'), enterEl = document.getElem
 const stageReadoutEl = document.getElementById('stage-readout');
 const timelineEl = document.getElementById('timeline');
 const timelineValueEl = document.getElementById('timeline-value');
+const telemetryEl = document.getElementById('cascade-telemetry');
+const cascadeStepEl = document.getElementById('cascade-step');
+const cascadeRateEl = document.getElementById('cascade-rate');
 let textTimer = null;
 let projectionState = 'projection assay idle';
 let fps = 0;
 let lastFrame = 0;
+let stepSeconds = 0;
+
+function rateValue(){
+  return cascadeRateEl ? parseFloat(cascadeRateEl.value) / 100 : 1;
+}
+
+function setTelemetry(fields){
+  if (!telemetryEl) return;
+  Object.entries(fields).forEach(([key, value]) => {
+    const el = telemetryEl.querySelector('[data-field="' + key + '"]');
+    if (el) el.textContent = value;
+  });
+}
 
 // safe line renderer ('|' = line break) — no innerHTML, content is static authored text
 function setLines(el, str){
@@ -299,14 +330,21 @@ function stageName(index){
 function syncInstrument(){
   if (timelineEl) timelineEl.value = String(cur);
   if (timelineValueEl) timelineValueEl.textContent = cur + '/' + (STAGES.length - 1);
-  if (!stageReadoutEl) return;
   const phase = Math.min(1, tAccum / STAGE_SECS);
+  setTelemetry({
+    fps: REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps'),
+    time: 't+' + tAccum.toFixed(2) + 's',
+    phase: 'phase ' + phase.toFixed(2),
+    metric: 'morph ' + morphCur.toFixed(2) + '→' + morphTarget.toFixed(2),
+    state: (playing ? 'RUN' : 'HOLD') + ' · ' + rateValue().toFixed(2) + 'x'
+  });
+  if (!stageReadoutEl) return;
   stageReadoutEl.textContent =
     'CASCADE INSTRUMENT\n' +
     'stage ' + cur + '/' + (STAGES.length - 1) + ' · ' + stageName(cur) + ' · ' + (playing ? 'RUN' : 'HOLD') + '\n' +
     'phase = ' + phase.toFixed(2) + ' · morph target = ' + morphTarget.toFixed(2) + ' · morph actual = ' + morphCur.toFixed(2) + '\n' +
     'morph lag |target-actual| = ' + Math.abs(morphTarget - morphCur).toFixed(3) + ' · clocked stage dwell = ' + STAGE_SECS.toFixed(1) + 's\n' +
-    'frame = ' + (REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps')) + '\n' +
+    'frame = ' + (REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps')) + ' · rate = ' + rateValue().toFixed(2) + 'x\n' +
     projectionState + '\n' +
     'sequence: line → plane → sphere → horn → Burrisphere';
 }
@@ -353,6 +391,13 @@ const pp = document.getElementById('playpause');
 function syncPlayButton(){ pp.textContent = playing ? 'HOLD' : 'RUN'; pp.setAttribute('aria-pressed', playing ? 'false' : 'true'); }
 pp.onclick = () => { playing = !playing; syncPlayButton(); syncInstrument(); };
 syncPlayButton();
+if (cascadeStepEl) {
+  cascadeStepEl.addEventListener('click', () => {
+    playing = false;
+    stepSeconds += STAGE_SECS / 12;
+    syncPlayButton();
+  });
+}
 if (timelineEl) {
   timelineEl.max = String(STAGES.length - 1);
   timelineEl.addEventListener('input', () => {
@@ -372,6 +417,15 @@ function fmtProj(){
 }
 
 const clock = new THREE.Clock();
+function advanceStageClock(deltaSeconds){
+  if (deltaSeconds <= 0) return;
+  tAccum += deltaSeconds;
+  while (tAccum > STAGE_SECS) {
+    const overflow = tAccum - STAGE_SECS;
+    show(cur + 1);
+    tAccum = overflow;
+  }
+}
 function animate(frameTime = performance.now()){
   requestAnimationFrame(animate);
   const frameDt = lastFrame ? Math.max(1, frameTime - lastFrame) : 16.7;
@@ -379,8 +433,10 @@ function animate(frameTime = performance.now()){
   lastFrame = frameTime;
   const dt = Math.min(clock.getDelta(), 0.05);
 
-  // auto-advance
-  if (playing){ tAccum += dt; if (tAccum > STAGE_SECS) show(cur + 1); }
+  // clocked, inspectable stage advance
+  const pendingStep = stepSeconds;
+  stepSeconds = 0;
+  if (playing || pendingStep > 0) advanceStageClock((playing ? dt * rateValue() : 0) + pendingStep);
 
   // morph
   morphCur += (morphTarget - morphCur) * Math.min(1, dt * 0.9);

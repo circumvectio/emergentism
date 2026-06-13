@@ -54,8 +54,23 @@
 </div>
 
 <div class="hint" id="hint">drag to rotate · click or scrub a position</div>
+<div class="standalone-telemetry" id="sphere-telemetry" aria-hidden="true">
+  <span data-field="mode">burrisphere assay</span>
+  <span data-field="fps">-- fps</span>
+  <span data-field="time">t+0.00s</span>
+  <span data-field="phase">position 3/6</span>
+  <span data-field="metric">B 1.000</span>
+  <span data-field="state">SCAN</span>
+</div>
 <div id="stage-readout" aria-live="polite">BURRISPHERE INSTRUMENT</div>
-<button id="scan-toggle" type="button" aria-pressed="false">HOLD</button>
+<div class="instrument-controls standalone-controls sphere-controls" id="sphere-controls">
+  <button id="scan-toggle" type="button" aria-pressed="false">HOLD</button>
+  <button id="position-step" type="button">STEP</button>
+  <label>
+    <span>rate</span>
+    <input id="scan-rate" type="range" min="25" max="150" step="5" value="100" aria-label="Burrisphere scan rate" />
+  </label>
+</div>
 <div class="legend">
   <span><i style="background:#F44336"></i>Demon-move</span>
   <span><i style="background:#FFEB3B"></i>God-move</span>
@@ -186,10 +201,28 @@ const els = { lvl:'p-lvl', op:'p-op', tier:'p-tier', ology:'p-ology', q:'p-q', b
 const positionScrub = document.getElementById('position-scrub');
 const stageReadout = document.getElementById('stage-readout');
 const scanToggle = document.getElementById('scan-toggle');
+const positionStep = document.getElementById('position-step');
+const scanRate = document.getElementById('scan-rate');
+const telemetry = document.getElementById('sphere-telemetry');
 let selectedIndex = 3;
 let scanRunning = !REDUCED_MOTION;
+let scanClock = 3 * 2100;
 let lastFrame = 0;
 let fps = 0;
+const SCAN_MS = 2100;
+
+function rateValue(){
+  return scanRate ? parseFloat(scanRate.value) / 100 : 1;
+}
+
+function setTelemetry(fields){
+  if (!telemetry) return;
+  Object.entries(fields).forEach(([key, value]) => {
+    const el = telemetry.querySelector('[data-field="' + key + '"]');
+    if (el) el.textContent = value;
+  });
+}
+
 function syncScanButton() {
   if (!scanToggle) return;
   scanToggle.textContent = scanRunning ? 'HOLD' : 'SCAN';
@@ -220,12 +253,19 @@ function select(i, manual = false){
   document.getElementById(els.chart).textContent = phi.toFixed(2) + ' · ' + nu.toFixed(2);
   document.getElementById(els.residual).textContent = '|φν−1| ' + reciprocalResidual.toExponential(1) + ' · |1−B| ' + balanceError.toFixed(3);
   document.getElementById(els.act).textContent = p.act;
+  setTelemetry({
+    fps: REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps'),
+    time: 't+' + (scanClock / 1000).toFixed(2) + 's',
+    phase: 'position ' + i + '/6',
+    metric: 'B ' + balance.toFixed(3) + ' · |φν−1| ' + reciprocalResidual.toExponential(1),
+    state: (scanRunning ? 'SCAN' : 'HOLD') + ' · ' + rateValue().toFixed(2) + 'x'
+  });
   if (stageReadout) stageReadout.textContent =
     'BURRISPHERE INSTRUMENT\n' +
     p.L + ' · ' + p.op + ' · ' + p.ology + '\n' +
     'θ = ' + p.phi.toFixed(1) + '° · φ = ' + phi.toFixed(2) + ' · ν = ' + nu.toFixed(2) + ' · φν = ' + (phi * nu).toFixed(3) + '\n' +
     'B = sinθ = ' + balance.toFixed(3) + ' · |φν−1| = ' + reciprocalResidual.toExponential(1) + ' · |1−B| = ' + balanceError.toFixed(3) + '\n' +
-    'selected row = ' + i + '/6 · ' + (scanRunning ? 'SCAN' : 'HOLD') + '\n' +
+    'selected row = ' + i + '/6 · ' + (scanRunning ? 'SCAN' : 'HOLD') + ' · rate = ' + rateValue().toFixed(2) + 'x\n' +
     'frame = ' + (REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps')) + ' · calibrated latitude rings visible\n' +
     'tier: [S] sphere chart; [I] operator reading';
   markers.forEach((m, k) => m.scale.setScalar(k === i ? 1.5 : 1));
@@ -242,6 +282,12 @@ if (scanToggle) scanToggle.addEventListener('click', () => {
   scanRunning = !scanRunning;
   syncScanButton();
   select(selectedIndex);
+});
+if (positionStep) positionStep.addEventListener('click', () => {
+  scanRunning = false;
+  syncScanButton();
+  select((selectedIndex + 1) % POS.length, true);
+  if (REDUCED_MOTION) render(performance.now());
 });
 if (positionScrub) positionScrub.addEventListener('input', () => select(Number(positionScrub.value), true));
 
@@ -270,9 +316,11 @@ function render(time = 0){
   fps = fps ? fps * 0.9 + (1000 / dt) * 0.1 : 1000 / dt;
   lastFrame = now;
   if (scanRunning) {
-    const nextIndex = Math.floor((now / 2100) % POS.length);
-    if (nextIndex !== selectedIndex) select(nextIndex);
+    scanClock += dt * rateValue();
+    const nextIndex = Math.floor((scanClock / SCAN_MS) % POS.length);
+    if (nextIndex !== selectedIndex) selectedIndex = nextIndex;
   }
+  select(selectedIndex);
   if (stageReadout) stageReadout.dataset.fps = REDUCED_MOTION ? 'static' : fps.toFixed(0) + ' fps';
   controls.update();
   renderer.render(scene, camera);

@@ -2010,6 +2010,11 @@ body > a.exit:hover {
   color: var(--gold);
   border-color: var(--gold);
 }
+body.sphere-instrument > a.exit {
+  top: auto;
+  right: 20px;
+  bottom: 92px;
+}
 .title {
   position: fixed;
   left: 32px;
@@ -2073,6 +2078,46 @@ body > a.exit:hover {
   color: var(--text-muted);
   font: 700 12px/1 var(--font-mono);
   opacity: 0;
+}
+.standalone-telemetry {
+  position: fixed;
+  top: 86px;
+  left: 50%;
+  z-index: 4;
+  width: max-content;
+  max-width: min(440px, calc(100vw - 700px));
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  color: rgba(243, 244, 246, 0.76);
+  font: 700 10px/1 var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.standalone-telemetry span {
+  min-width: max-content;
+  border: 1px solid rgba(243, 244, 246, 0.16);
+  border-radius: var(--shape-sm);
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  padding: 4px 6px;
+  backdrop-filter: blur(6px);
+}
+
+.standalone-telemetry span[data-field="metric"] {
+  color: var(--gold);
+}
+
+.standalone-telemetry span[data-field="phase"] {
+  color: var(--sector-insurance);
+}
+
+.standalone-telemetry span[data-field="state"] {
+  color: rgba(66, 165, 245, 0.92);
 }
 #stage-readout {
   position: fixed;
@@ -2217,6 +2262,19 @@ button.nav:hover {
   color: var(--gold);
   border-color: var(--gold);
 }
+.standalone-controls #playpause,
+.standalone-controls #scan-toggle {
+  position: static;
+  right: auto;
+  bottom: auto;
+  z-index: auto;
+  min-height: 25px;
+  border-radius: var(--shape-sm);
+  padding: 0 8px;
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  color: inherit;
+  font: inherit;
+}
 .standalone-controls {
   position: fixed;
   top: auto;
@@ -2225,6 +2283,11 @@ button.nav:hover {
   left: auto;
   z-index: 4;
   grid-template-columns: auto auto minmax(104px, 140px);
+}
+
+.cascade-controls,
+.sphere-controls {
+  width: max-content;
 }
 
 .standalone-controls button,
@@ -2301,6 +2364,11 @@ button.nav:hover {
   border-color: var(--gold);
   background: var(--gold);
 }
+@media (max-width: 1100px) {
+  .standalone-telemetry {
+    display: none;
+  }
+}
 @media (max-width: 680px) {
   body > span.brand,
   body > a.exit {
@@ -2336,20 +2404,15 @@ button.nav:hover {
     overflow: hidden;
     font-size: 9.5px;
   }
+  .standalone-telemetry {
+    display: none;
+  }
   body.sphere-instrument #stage-readout {
     left: 18px;
     right: 18px;
   }
   button.nav {
     display: none;
-  }
-  #playpause {
-    right: 18px;
-    bottom: 18px;
-  }
-  #scan-toggle {
-    right: 18px;
-    bottom: 18px;
   }
   .standalone-controls {
     position: fixed;
@@ -2358,10 +2421,6 @@ button.nav:hover {
     bottom: 18px;
     width: auto;
     grid-template-columns: auto auto minmax(0, 1fr);
-  }
-  body.sphere-instrument #scan-toggle {
-    top: 206px;
-    bottom: auto;
   }
   #timeline-shell {
     left: 18px;
@@ -2375,9 +2434,7 @@ button.nav:hover {
     display: none;
   }
   #dots {
-    left: 18px;
-    bottom: 34px;
-    transform: none;
+    display: none;
   }
   #enter {
     left: 18px;
@@ -2404,9 +2461,7 @@ button.nav:hover {
     overflow: hidden;
   }
   body.lightcone-instrument .title {
-    bottom: 58px;
-    max-height: 130px;
-    overflow: hidden;
+    display: none;
   }
 }
 /* hidden until the page's own catch sets display:flex */
@@ -2507,16 +2562,12 @@ button.nav:hover {
     display: none;
   }
   body.sphere-instrument .hint {
-    bottom: 64px;
-    max-width: calc(100vw - 36px);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 10px;
+    display: none;
   }
   body.sphere-instrument .legend {
     left: 18px;
     right: 18px;
-    bottom: 34px;
+    bottom: 64px;
     transform: none;
     flex-wrap: wrap;
     justify-content: center;
@@ -2524,9 +2575,8 @@ button.nav:hover {
     white-space: normal;
     font-size: 10px;
   }
-  body.sphere-instrument #scan-toggle {
-    top: 206px !important;
-    bottom: auto !important;
+  body.sphere-instrument .sphere-controls {
+    bottom: 18px;
   }
 }
 
