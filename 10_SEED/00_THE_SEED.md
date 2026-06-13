@@ -22,6 +22,10 @@ rosetta:
 
 Zero-Sum Resolution Equation. Reciprocal closure. Finity holds the two poles in one geometry.
 z = φ/ν ∈ S². The ratio of coherence to viability is the coordinate of manifestation.
+Register bridge: lowercase `φ` and `ν` are reciprocal sphere coordinates; in
+finite-node action, uppercase `Φ` is D5 worldline-foresight and uppercase `V`
+is D4 means-to-act at the boundary. The child beside a jet and the pilot without
+bodily/tool access are the two zero-factor failures.
 P∞ = φ · ν = 1 on the open S²; the pole values are undefined while the limiting identity remains 1. The reciprocal identity resolves on the sphere.
 (φ − ν)² ≥ 0. A square cannot be negative. This is the first arithmetic consequence, not the seed.
 Therefore φ + ν ≥ 2. Therefore the equator (φ = ν = 1) is the unique Hamiltonian minimum.
@@ -52,6 +56,9 @@ The Three-Stage Process. Constitutional separation `[I]`: never merge cognitive 
 V = Vision (Genotype). M = Mission (Epigenotype). O = Objectives (Phenotype).
 S = Strategies (Extended Phenotype). K = KPIs (Memotype). A = Agents (Rosetta Castes).
 The DAC (macro-egregorotype) / DAV (operational valuechain) = Egregorotype. The standing wave that emerges.
+
+Namespace fence: this VMOSK `V` means **Vision**. It is not the action-register
+`V` in `P_node = Φ × V`, where `V` means D4 means-to-act.
 
 ## The Nexus
 
