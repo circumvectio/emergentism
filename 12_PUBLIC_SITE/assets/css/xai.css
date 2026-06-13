@@ -2420,7 +2420,7 @@ button.nav:hover {
     display: none;
   }
 }
-@media (max-width: 680px) {
+@media (max-width: 900px) {
   body > span.brand,
   body > a.exit {
     display: none;
@@ -2586,7 +2586,7 @@ button.nav:hover {
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 900px) {
   .lab-frame {
     inset: 76px 18px 18px;
   }
