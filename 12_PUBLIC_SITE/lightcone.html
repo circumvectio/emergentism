@@ -41,6 +41,7 @@
 <div class="standalone-telemetry" id="lightcone-telemetry" aria-hidden="true">
   <span data-field="mode">lightcone assay</span>
   <span data-field="fps">-- fps</span>
+  <span data-field="sample">sample --</span>
   <span data-field="time">t+0.00s</span>
   <span data-field="phase">phase --</span>
   <span data-field="metric">Ω --</span>
@@ -248,6 +249,7 @@ function updateInstrument(frameTime = performance.now(), poseOffset = null){
   mLabel.textContent = 'Ω proxy ' + omegaProxy.toFixed(2);
   setTelemetry({
     fps: REDUCED_MOTION ? 'static' : fps.toFixed(0) + ' fps',
+    sample: REDUCED_MOTION ? 'sample static' : 'Δt ' + (frameDt / 1000).toFixed(3) + 's',
     time: 't+' + t.toFixed(2) + 's',
     phase: 'phase ' + reach.toFixed(2),
     metric: 'Ω ' + omegaProxy.toFixed(2) + ' · dΩ/dt ' + omegaRate.toFixed(2),

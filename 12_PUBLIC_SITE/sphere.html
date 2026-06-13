@@ -57,6 +57,7 @@
 <div class="standalone-telemetry" id="sphere-telemetry" aria-hidden="true">
   <span data-field="mode">burrisphere assay</span>
   <span data-field="fps">-- fps</span>
+  <span data-field="sample">sample --</span>
   <span data-field="time">t+0.00s</span>
   <span data-field="phase">position 3/6</span>
   <span data-field="metric">B 1.000</span>
@@ -209,6 +210,7 @@ let scanRunning = !REDUCED_MOTION;
 let scanClock = 3 * 2100;
 let lastFrame = 0;
 let fps = 0;
+let sampleDeltaMs = 0;
 const SCAN_MS = 2100;
 
 function rateValue(){
@@ -255,6 +257,7 @@ function select(i, manual = false){
   document.getElementById(els.act).textContent = p.act;
   setTelemetry({
     fps: REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps'),
+    sample: REDUCED_MOTION ? 'sample static' : (sampleDeltaMs ? 'Δt ' + (sampleDeltaMs / 1000).toFixed(3) + 's' : 'sample --'),
     time: 't+' + (scanClock / 1000).toFixed(2) + 's',
     phase: 'position ' + i + '/6',
     metric: 'B ' + balance.toFixed(3) + ' · |φν−1| ' + reciprocalResidual.toExponential(1),
@@ -315,6 +318,7 @@ function render(time = 0){
   const dt = lastFrame ? Math.max(1, now - lastFrame) : 16.7;
   fps = fps ? fps * 0.9 + (1000 / dt) * 0.1 : 1000 / dt;
   lastFrame = now;
+  sampleDeltaMs = dt;
   if (scanRunning) {
     scanClock += dt * rateValue();
     const nextIndex = Math.floor((scanClock / SCAN_MS) % POS.length);

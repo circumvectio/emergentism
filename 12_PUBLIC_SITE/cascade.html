@@ -50,6 +50,7 @@
 <div class="standalone-telemetry" id="cascade-telemetry" aria-hidden="true">
   <span data-field="mode">cascade assay</span>
   <span data-field="fps">-- fps</span>
+  <span data-field="sample">sample --</span>
   <span data-field="time">t+0.00s</span>
   <span data-field="phase">phase --</span>
   <span data-field="metric">morph --</span>
@@ -298,6 +299,7 @@ let textTimer = null;
 let projectionState = 'projection assay idle';
 let fps = 0;
 let lastFrame = 0;
+let sampleDeltaMs = 0;
 let stepSeconds = 0;
 
 function rateValue(){
@@ -333,6 +335,7 @@ function syncInstrument(){
   const phase = Math.min(1, tAccum / STAGE_SECS);
   setTelemetry({
     fps: REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps'),
+    sample: REDUCED_MOTION ? 'sample static' : (sampleDeltaMs ? 'Δt ' + (sampleDeltaMs / 1000).toFixed(3) + 's' : 'sample --'),
     time: 't+' + tAccum.toFixed(2) + 's',
     phase: 'phase ' + phase.toFixed(2),
     metric: 'morph ' + morphCur.toFixed(2) + '→' + morphTarget.toFixed(2),
@@ -431,6 +434,7 @@ function animate(frameTime = performance.now()){
   const frameDt = lastFrame ? Math.max(1, frameTime - lastFrame) : 16.7;
   fps = fps ? fps * 0.9 + (1000 / frameDt) * 0.1 : 1000 / frameDt;
   lastFrame = frameTime;
+  sampleDeltaMs = frameDt;
   const dt = Math.min(clock.getDelta(), 0.05);
 
   // clocked, inspectable stage advance
