@@ -321,6 +321,36 @@ if ΔP_node,i > 0 and ΔP_node,H > 0 -> syntropic dyad
 if one rises by degrading the other -> extraction / evil
 ```
 
+## Present Awareness As Fulcrum
+
+The Soul Loop is also the correction protocol for future-pull language. A future
+attractor does not become doctrine by being imagined vividly. It becomes a
+candidate only when present awareness compares it against inherited pressure,
+evidence tiers, values, and available `V`.
+
+```text
+Past push     = genes, conditioning, trauma, inherited priors, stress physiology
+Future pull   = modeled attractor, egregore, ideal, institution, narrative
+Present now   = awareness as D4/D5 selector
+Soul Loop     = correction process deciding which pull deserves energy
+```
+
+This is teleological compression through present awareness, not default
+retrocausality. The future-pull is a model in the present that compresses the
+option cone and asks for energy. The lawful posture is: act as if the attractor
+is conditionally real enough to build toward, while preserving kill criteria,
+exit rights, correction, and evidence-tier humility.
+
+So the loop refuses both blind genetic inertia and blind attractor possession.
+It feeds only the modeled future that can be materially anchored without hidden
+extraction and without dropping the dyadic test:
+
+```text
+ΔP_node,i >= 0
+ΔP_node,H >= 0
+η = 0
+```
+
 So the loop is not only a document repair cycle. It is the player's recursive
 worldline method: disclose, test, serve, see, dissolve, preserve, and return
 until the next act preserves the boundary it depends on, and in the strict

@@ -67,9 +67,9 @@ For canonical orientation, route upstream through [`00_START_HERE.md`](../../08_
 
 ## D5 Landauer Barrier Program
 
-- [`D5_LANDAUER_BARRIER_PROGRAM/README.md`](D5_LANDAUER_BARRIER_PROGRAM/README.md) — five-paper program for CM8e: perfect worldline foresight as an information-physical asymptote.
+- [`D5_LANDAUER_BARRIER_PROGRAM/README.md`](D5_LANDAUER_BARRIER_PROGRAM/README.md) — seven-paper program for CM8e/CM8f: perfect worldline foresight as an information-physical asymptote, plus present awareness as the non-retrocausal selection fulcrum.
 - [`PAPER_1_THE_D5_LANDAUER_BARRIER.md`](D5_LANDAUER_BARRIER_PROGRAM/PAPER_1_THE_D5_LANDAUER_BARRIER.md) — central scaffold. Fences the Maxwell-demon image through Landauer/Bennett/information-thermodynamics and keeps path entropy separate from thermodynamic entropy.
-- Papers 2-5 are linked stubs for the cost model, reflexive demon, entropy-ledger separation, and syntropic ethics bridge.
+- Papers 2-7 are linked stubs for the cost model, reflexive demon, entropy-ledger separation, syntropic ethics bridge, omega-holobiont limit, and present-awareness fulcrum.
 
 This grouped program does not consume the reserved `Q`, `R`, or `S` letters in the main active stack.
 

@@ -12,7 +12,7 @@ rosetta:
   register: "[A/S/I]"
   canonical_phrase: "The D5 Landauer Barrier Program"
 title: "The D5 Landauer Barrier Program"
-status: "ACTIVE - 2026-06-13. Paper-program scaffold for CM8e. Paper 1 is the central scaffold; Papers 2-6 are linked stubs. All Maxwell-demon and omega-holobiont language is fenced as analogy unless a paper explicitly proves more."
+status: "ACTIVE - 2026-06-13. Paper-program scaffold for CM8e and CM8f. Paper 1 is the central scaffold; Papers 2-7 are linked stubs. All Maxwell-demon, omega-holobiont, and egregoric-attractor language is fenced as analogy or model unless a paper explicitly proves more."
 ---
 
 **Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
@@ -20,13 +20,15 @@ status: "ACTIVE - 2026-06-13. Paper-program scaffold for CM8e. Paper 1 is the ce
 
 # The D5 Landauer Barrier Program
 
-This is not one paper. It is a six-paper program around the same constraint:
+This is not one paper. It is a seven-paper program around the same constraint:
 
 > **Perfect worldline foresight is an asymptote, not a free power.**
 
 In the framework, D5 can be read as worldline-foresight: the agent's capacity to envision reachable futures, rank them, and aim D4 means-to-act toward one branch. At its limit this resembles Maxwell's demon: a selector that can discriminate possible branches and route action toward locally lower disorder. The barrier is that the selector is never outside the system it sorts. Its measurement, memory, computation, control, error correction, and erasure are D4 physical processes that remain inside entropy accounting.
 
 The point is not to say that D5 literally violates thermodynamics. The point is to make that impossible to say by accident.
+
+The companion point is not to say that future attractors literally act backward through time. Future-pull language means modeled futures compress present awareness and solicit D4 means-to-act. Literal retrocausality remains a separate `[C]` conjecture.
 
 ## Local Canon Anchors
 
@@ -58,6 +60,7 @@ These sources are not ornamental. Every paper in this program must route the phy
 | 4 | [`Path Entropy Is Not Thermodynamic Entropy`](PAPER_4_PATH_ENTROPY_IS_NOT_THERMODYNAMIC_ENTROPY.md) | Reachable-future diversity must not be confused with thermodynamic entropy. | Stub |
 | 5 | [`Entropy Export and Objective Ethics`](PAPER_5_ENTROPY_EXPORT_AND_OBJECTIVE_ETHICS.md) | Extraction is local order purchased by exporting cost into the carrier field; syntropy raises node and field together under `η = 0`. | Stub |
 | 6 | [`The Omega Holobiont Cannot Close`](PAPER_6_THE_OMEGA_HOLOBIONT_CANNOT_CLOSE.md) | The universal-holobiont image is still D5 because it uses physical memory, computation, and correction; D6 releases its finality claim. | Stub |
+| 7 | [`Present Awareness As Fulcrum`](PAPER_7_PRESENT_AWARENESS_AS_FULCRUM.md) | Conscious awareness is the D5 negotiation surface where inherited priors and modeled future attractors compete for enactment through D4 means. | Stub |
 
 ## Program Invariants
 
@@ -67,7 +70,9 @@ These sources are not ornamental. Every paper in this program must route the phy
 4. **No entropy sign error.** Path entropy / reachable-future diversity is not thermodynamic entropy.
 5. **No reflexivity dodge.** Once the selector acts, the branch set changes.
 6. **No omega-holobiont inflation.** A universal holobiont running the Soul Loop on matter-energy is a D5-limit image, not D6.
-7. **No moral smuggling.** The ethics bridge is conditional under coupling, horizon, multiplicative scoring, and `η = 0`; it is not an external proof that every agent must accept the framework.
+7. **No literal retrocausal dogma.** Future attractors are modeled futures acting through present awareness; literal reverse-causation remains `[C]`.
+8. **No inevitability rhetoric.** Attractors are conditionally real enough to build toward only with kill criteria, exit rights, correction, and evidence-tier humility.
+9. **No moral smuggling.** The ethics bridge is conditional under coupling, horizon, multiplicative scoring, and `η = 0`; it is not an external proof that every agent must accept the framework.
 
 ## Common Formal Spine
 
@@ -91,6 +96,7 @@ This is a lower-bound sketch, not yet a completed theorem. It becomes paper-grad
 4. Separate path entropy from thermodynamic entropy in Paper 4 before any public slogan uses the word "entropy."
 5. Connect the result to objective ethics in Paper 5.
 6. Test the cosmic-scale limit image in Paper 6: the omega holobiont cannot close because complete recursive self-correction still needs physical memory and entropy accounting.
+7. Formalize Paper 7 as the lived-selection companion: awareness compares inherited priors with modeled attractors and spends `V` only under the dyadic non-extraction test.
 
 ## Kill Conditions For The Program
 
@@ -100,5 +106,6 @@ The program must contract if any of the following become true:
 - D5 worldline-foresight can be formalized without branch discrimination or state information.
 - The framework cannot preserve the distinction between path entropy and thermodynamic entropy.
 - The ethics bridge requires an unconditional is/ought proof rather than the stated Power-Max conditions.
+- Future-pull language requires historical inevitability, cultic attractor possession, or literal retrocausality in the default register.
 
 The useful residue would still remain: D4 means-to-act and D5 foresight are different action-register questions, and the Maxwell-demon image survives only as a cautionary analogy.

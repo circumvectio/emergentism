@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parent
 BOOK = ROOT / "book" / "index.html"
 OUT = ROOT / "book" / "rag_index.json"
 
-LIBRARY = ["canon", "foundations", "trinity", "formal", "paradox", "memetic", "rosettad", "operators",
+LIBRARY = ["papers", "canon", "foundations", "trinity", "formal", "paradox", "memetic", "rosettad", "operators",
            "will", "value", "ground", "sacred", "method", "meta"]
 
 LANDING_PAGES = ["value"]

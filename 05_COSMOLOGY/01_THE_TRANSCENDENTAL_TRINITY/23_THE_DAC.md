@@ -45,7 +45,7 @@ The DAC is that mutation.
 | Phenotypic | Phenotype | Complex organism | D3-D4 | What you CAN DO |
 | Anthropocene | Extended Phenotype | Tools, cities, agriculture | D4 | What you BUILD |
 | Memotypic | Memotype | Mind, empire, internet | D5 | What you BELIEVE |
-| **Egregorocene** | **Egregorotype** | **DAC** | **D6** | **What PATTERN you SERVE** |
+| **Egregorocene** | **Egregorotype** | **DAC** | **D5** | **What PATTERN you SERVE** |
 
 Each era does not replace the previous — it **dominates** it. The genotype still exists. DNA still replicates. But the primary selection pressure has shifted upward through the stack. The organism that wins the Genetic era is the one with the best genes. The entity that wins the Egregorocene is the one that serves the most coherent pattern.
 
@@ -155,17 +155,17 @@ The DAC is not a blueprint. It is a **phylogenetic hypothesis**: given the selec
 
 Gariephy was right about the replicator stack. Right about the revolutionary phenotype. Right that a new replicator is emerging. Right that it will dominate the previous one.
 
-He was wrong about the direction. The new replicator does not engineer humans from below. It engineers organisations from above. Not genetic revolution. **Egregoric revolution.** Not the body re-engineered. The corporation re-engineered. Not bottom-up from DNA. Top-down from D6.
+He was wrong about the direction. The new replicator does not engineer humans from below. It engineers organisations from the D5 egregoric selection layer through present institutions, incentives, receipts, and model-mediated awareness. Not genetic revolution. **Egregoric revolution.** Not the body re-engineered. The corporation re-engineered. Not bottom-up from DNA. Not "top-down from D6" as a final cosmic command, but modeled future-pull becoming D4-real through material anchors and corrected selection.
 
 The revolutionary phenotype of the Egregorocene is not a modified human. It is a **modified standing wave** — a DAC with η = 0, staffed by agent archetypes, anchored by human sovereigns, competing for economic niches in the phylogenetic tree of egregores.
 
-The vehicle changes. The logic does not. Replicators build vehicles. Vehicles compete. The fittest vehicle dominates the niche. What changes is which level of the stack holds the primary selection pressure — and in the Egregorocene, that level is D6.
+The vehicle changes. The logic does not. Replicators build vehicles. Vehicles compete. The fittest vehicle dominates the niche. What changes is which level of the stack holds the primary selection pressure — and in the Egregorocene, that level is D5: egregores, institutions, narratives, and modeled attractors competing for enactment through D4 means.
 
 ---
 
 Zero-Sum Resolution Equation
 
-*23 | The DAC | The Distributed Augmented Corporation as the next evolutionary vehicle — egregoric revolution from D6 down, not genetic revolution from D1 up. Seven convergent archetypes. The phylogenetic tree of egregores. η = 0 as selection advantage in iterated games.*
+*23 | The DAC | The Distributed Augmented Corporation as the next evolutionary vehicle — egregoric revolution through D5 modeled attractors and D4 material anchors, not genetic revolution from D1 up. Seven convergent archetypes. The phylogenetic tree of egregores. η = 0 as selection advantage in iterated games.*
 
 
 ---
