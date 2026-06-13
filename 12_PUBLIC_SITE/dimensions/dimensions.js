@@ -6,6 +6,15 @@ if (canvas && visual) document.body.classList.add("dimension-page");
 const REDUCED_MOTION = !!(window.matchMedia
   && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
 const TAU = Math.PI * 2;
+const modeLabels = {
+  titans: "D0 frame",
+  logline: "D1 reciprocal line",
+  muLimit: "D2 mu-limit",
+  bloch: "D3 Riemann/Bloch",
+  horn: "D4 rapidity torus",
+  burrisphere: "D5 dual projection",
+  convergence: "/6 CCC return"
+};
 
 function smooth01(x) {
   return x * x * (3 - 2 * x);
@@ -175,6 +184,34 @@ function makeMaterial(color, opacity = 1, wireframe = false) {
   });
 }
 
+function ensureInstrumentOverlay(mode = page.animationMode || "model") {
+  if (!visual || visual.querySelector(".instrument-overlay")) return null;
+
+  const overlay = document.createElement("div");
+  overlay.className = "instrument-overlay";
+  overlay.setAttribute("aria-hidden", "true");
+  overlay.innerHTML = `
+    <div class="instrument-reticle"></div>
+    <div class="instrument-scale x"></div>
+    <div class="instrument-scale y"></div>
+    <div class="instrument-telemetry">
+      <span data-field="mode">${modeLabels[mode] || mode}</span>
+      <span data-field="fps">-- fps</span>
+      <span data-field="time">t+0.00s</span>
+    </div>
+  `;
+  visual.appendChild(overlay);
+  return overlay;
+}
+
+function updateInstrumentOverlay(overlay, t, fps) {
+  if (!overlay) return;
+  const timeField = overlay.querySelector('[data-field="time"]');
+  const fpsField = overlay.querySelector('[data-field="fps"]');
+  if (timeField) timeField.textContent = "t+" + t.toFixed(2) + "s";
+  if (fpsField) fpsField.textContent = REDUCED_MOTION ? "static" : fps.toFixed(0) + " fps";
+}
+
 function setupCanvas2D() {
   const ctx = canvas.getContext("2d");
   if (!ctx) {
@@ -198,6 +235,7 @@ function setupCanvas2D() {
 function drawTitanCalculator(time = 0) {
   const { ctx, resize } = setupCanvas2D();
   const tickValues = [-6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6];
+  const overlay = ensureInstrumentOverlay("titans");
   const readout = makeReadout();
   if (readout) {
     readout.style.left = "auto";
@@ -210,6 +248,8 @@ function drawTitanCalculator(time = 0) {
     bounds = resize();
     if (REDUCED_MOTION) draw(0);
   });
+  let lastFrame = time;
+  let fps = 0;
 
   function draw(now) {
     const ink = "#fff";
@@ -218,6 +258,10 @@ function drawTitanCalculator(time = 0) {
     const width = bounds.width;
     const height = bounds.height;
     const t = now * 0.001;
+    const dt = lastFrame ? Math.max(1, now - lastFrame) : 16.7;
+    fps = fps ? fps * 0.9 + (1000 / dt) * 0.1 : 1000 / dt;
+    lastFrame = now;
+    updateInstrumentOverlay(overlay, t, fps);
     const cx = width / 2;
     const cy = height / 2;
     const pad = Math.max(28, Math.min(width, height) * 0.08);
@@ -359,22 +403,40 @@ function ring(radius, color, opacity = 1) {
   return mesh;
 }
 
-function addReferenceField(scene) {
-  const count = 180;
-  const positions = new Float32Array(count * 3);
-  for (let i = 0; i < count; i += 1) {
-    const a = i * 2.399963;
-    const r = 5.2 + (i % 31) * 0.06;
-    positions[i * 3] = Math.cos(a) * r;
-    positions[i * 3 + 1] = Math.sin(i * 0.77) * 2.2;
-    positions[i * 3 + 2] = Math.sin(a) * r;
+function addReferenceFrame(scene) {
+  const frame = new THREE.Group();
+  const base = 0x7a7a7a;
+  const axisMat = new THREE.LineBasicMaterial({ color: base, transparent: true, opacity: 0.28 });
+  const tickMat = new THREE.LineBasicMaterial({ color: base, transparent: true, opacity: 0.18 });
+  const extent = 3.2;
+  const tick = 0.035;
+
+  [
+    [new THREE.Vector3(-extent, 0, 0), new THREE.Vector3(extent, 0, 0)],
+    [new THREE.Vector3(0, -extent, 0), new THREE.Vector3(0, extent, 0)],
+    [new THREE.Vector3(0, 0, -extent), new THREE.Vector3(0, 0, extent)]
+  ].forEach((pts) => frame.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), axisMat)));
+
+  for (let i = -3; i <= 3; i += 1) {
+    if (i === 0) continue;
+    const k = i;
+    [
+      [new THREE.Vector3(k, -tick, 0), new THREE.Vector3(k, tick, 0)],
+      [new THREE.Vector3(-tick, k, 0), new THREE.Vector3(tick, k, 0)],
+      [new THREE.Vector3(0, -tick, k), new THREE.Vector3(0, tick, k)]
+    ].forEach((pts) => frame.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), tickMat)));
   }
-  const geometry = new THREE.BufferGeometry();
-  geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
-  scene.add(new THREE.Points(
-    geometry,
-    new THREE.PointsMaterial({ color: 0x7a7a7a, size: 0.012, transparent: true, opacity: 0.28 })
-  ));
+
+  [1, 2, 3].forEach((radius) => {
+    const xy = ring(radius, base, radius === 1 ? 0.18 : 0.1);
+    xy.rotation.x = 0;
+    const xz = ring(radius, base, radius === 1 ? 0.16 : 0.08);
+    const yz = ring(radius, base, radius === 1 ? 0.14 : 0.07);
+    yz.rotation.y = Math.PI / 2;
+    frame.add(xy, xz, yz);
+  });
+
+  scene.add(frame);
 }
 
 function createSphere(radius = 1.4, opacity = 0.22, wseg = 120, hseg = 64) {
@@ -410,7 +472,7 @@ function makeReadout() {
     el = document.createElement("div");
     el.className = "model-readout";
     el.style.cssText =
-      "position:absolute;left:16px;top:16px;z-index:5;max-width:68%;" +
+      "position:absolute;left:16px;top:46px;z-index:5;max-width:68%;" +
       "font:600 11px/1.55 'Roboto Mono',ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums;" +
       "color:var(--text,#F3F4F6);pointer-events:none;letter-spacing:0;white-space:pre-line;text-align:left;" +
       "background:rgba(5,5,5,.78);padding:9px 12px;" +
@@ -664,7 +726,7 @@ function buildScene(mode, scene) {
     if (readout) {
       readout.style.whiteSpace = "normal";
       readout.style.maxWidth = "min(440px, 46%)";
-      readout.style.top = "16px";
+      readout.style.top = "46px";
       readout.classList.add("horn-readout");
     }
     const W_MAX = 4.5;                                          // ends: v/c -> 0.9998, γ -> ~45
@@ -1021,7 +1083,8 @@ async function boot() {
       controls.update();
     }
 
-    addReferenceField(scene);
+    const overlay = ensureInstrumentOverlay(page.animationMode);
+    addReferenceFrame(scene);
     const { root, update } = buildScene(page.animationMode, scene);
 
     function resize() {
@@ -1031,8 +1094,13 @@ async function boot() {
       camera.updateProjectionMatrix();
     }
 
+    let lastFrame = 0;
+    let fps = 0;
     function animate(time) {
       const t = time * 0.001;
+      const dt = lastFrame ? Math.max(1, time - lastFrame) : 16.7;
+      fps = fps ? fps * 0.9 + (1000 / dt) * 0.1 : 1000 / dt;
+      lastFrame = time;
       if (page.animationMode === "titans") {
         root.rotation.z = 0;
       } else if (page.animationMode === "muLimit") {
@@ -1043,6 +1111,7 @@ async function boot() {
         root.rotation.z = 0;
       }
       update(t); // morphing / orbiting models (horn, burrisphere)
+      updateInstrumentOverlay(overlay, t, fps);
 
       controls.update();
       renderer.render(scene, camera);
@@ -1054,6 +1123,7 @@ async function boot() {
       update(1.2); // pose the morphing/orbiting models at a representative frame
       resize();
       renderer.render(scene, camera);
+      updateInstrumentOverlay(overlay, 1.2, 0);
       controls.addEventListener("change", () => renderer.render(scene, camera));
       window.addEventListener("resize", () => {
         resize();
