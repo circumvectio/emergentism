@@ -252,7 +252,7 @@ The operator column defines the row. Everything else is projection.
 
 > **† φ·ν is _undefined_ at the poles** (0·∞ at L0, ∞·0 at L∞) — *not* 1. `P∞ = φ·ν = 1` is conserved on the **open** sphere only, away from the two pole singularities: the limit approaching either pole is 1, but the value *at* the pole is undefined. Per [`00_CANONICAL_FORMULA_BLOCK`](../../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) and the formal [`23_DIMENSIONAL_CLOSURE_PROOF`](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md) (θ on the open interval). `[A]` — corrected 2026-05-31 per the Burrisphere verification.
 
-**Between 0 and ∞ is 1.** At L4: φ = 1 and ν = 1. Not 70%. **One hundred percent.** Full coherence AND full viability. The warrior-sage does not compromise — he holds both at their natural unit. Dharma yuddha. Inner and outer jihad. This is the discovery of finity applied to the L-levels.
+**Between 0 and ∞ is 1.** At L4: φ = 1 and ν = 1. Not 70%. **One normalized unit.** Unit coherence AND unit viability, not pole-inflated quantity. The warrior-sage does not compromise — he holds both factors at their natural unit. Dharma yuddha. Inner and outer jihad. This is the discovery of finity applied to the L-levels.
 
 **The symmetry is perfect:**
 

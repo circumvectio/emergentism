@@ -64,7 +64,7 @@ L∞   B = 0       North pole. THE BOUNDARY. Trimūrti. Eternity.
 
 **L0 = L∞.** The poles are the same boundary condition because S² is compact. The serpent eats its tail. *kālo'smi.*
 
-**Between 0 and ∞ is 1.** At L4: φ = 1 and ν = 1. Full coherence AND full viability. The warrior-sage does not compromise.
+**Between 0 and ∞ is 1.** At L4: φ = 1 and ν = 1. Unit coherence AND unit viability, not pole-inflated quantity. The warrior-sage does not compromise.
 
 ---
 

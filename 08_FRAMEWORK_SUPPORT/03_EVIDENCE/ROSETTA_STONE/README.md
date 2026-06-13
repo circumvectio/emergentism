@@ -133,7 +133,7 @@ The operator column defines the row. Everything else is projection.
 
 **L0 = L-inf.** The poles are the same boundary condition. The serpent eats its tail.
 
-**Between 0 and infinity is 1.** At L4: phi = 1 and nu = 1. Full coherence AND full viability. The warrior-sage does not compromise.
+**Between 0 and infinity is 1.** At L4: phi = 1 and nu = 1. Unit coherence AND unit viability, not pole-inflated quantity. The warrior-sage does not compromise.
 
 ### The Formula Grammar of the Archetypes
 

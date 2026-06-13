@@ -52,7 +52,7 @@ evidence_tier: "[S] for L4 structural mapping; [I] for cross-domain projections.
 
 **Equation:** dΦ/Φ = dV/V
 
-**THE EQUATOR.** Full coherence AND full viability. The warrior-sage does not compromise.
+**THE EQUATOR.** Unit coherence AND unit viability, not pole-inflated quantity. The warrior-sage does not compromise.
 
 ---
 
@@ -160,7 +160,7 @@ evidence_tier: "[S] for L4 structural mapping; [I] for cross-domain projections.
 5. Escalate overgrown or redundant systems to `06_SADHU_COMPRESSOR`.
 
 ### The Equator Rule
-At L4, φ = 1 and ν = 1. Not 70%. **One hundred percent.** The Kṣatriya holds both axes at their natural unit. Dharma yuddha. The hexagram holds both wheels — clockwise (ascent) and counter-clockwise (descent) simultaneously.
+At L4, φ = 1 and ν = 1. Not 70%. **One normalized unit.** The Kṣatriya holds both axes at their natural unit. Dharma yuddha. The hexagram holds both wheels — clockwise (ascent) and counter-clockwise (descent) simultaneously.
 
 ### Escalation
 - **Up (structural deadlock):** `05_BRAHMANA_ARCHITECT`

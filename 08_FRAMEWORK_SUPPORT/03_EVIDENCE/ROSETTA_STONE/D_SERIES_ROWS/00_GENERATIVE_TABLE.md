@@ -55,7 +55,7 @@ evidence_tier: "[S] for named domain scales where independently attested; [S] fo
 
 > **† `φ·ν` is undefined at the pole rows.** `P∞ = φ·ν = 1` is conserved on the open sphere; the pole rows are limiting boundary conditions (`0·∞` / `∞·0`), not ordinary product values.
 
-**Between 0 and infinity is 1.** At L4: phi = 1 and nu = 1. Not 70%. One hundred percent. Full coherence AND full viability. The warrior-sage does not compromise -- he holds both at their natural unit. Dharma yuddha.
+**Between 0 and infinity is 1.** At L4: phi = 1 and nu = 1. Not 70%. One normalized unit. Unit coherence AND unit viability, not pole-inflated quantity. The warrior-sage does not compromise -- he holds both factors at their natural unit. Dharma yuddha.
 
 ---
 

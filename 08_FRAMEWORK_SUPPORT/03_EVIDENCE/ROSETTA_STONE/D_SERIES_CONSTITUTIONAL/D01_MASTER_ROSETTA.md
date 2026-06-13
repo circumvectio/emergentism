@@ -40,7 +40,7 @@ The old table said L4 = Φ 0.7, V 0.7, P = 0.49. That was additive thinking on t
 
 - **P∞ = φ · ν = 1 on the open manifold.** The poles are limiting boundaries, not evaluated finite points. The manifold product is constant there. It does not vary.
 - **B = sin θ is what varies.** Balance. And it peaks at L4 where B = 1.
-- **At L4: φ = 1 and ν = 1.** Not 70%. ONE HUNDRED PERCENT. Full coherence AND full viability. The warrior-sage doesn't compromise — he holds both at their natural unit.
+- **At L4: φ = 1 and ν = 1.** Not 70%. ONE NORMALIZED UNIT. Unit coherence AND unit viability, not pole-inflated quantity. The warrior-sage doesn't compromise — he holds both factors at their natural unit.
 
 Between 0 and ∞ is 1. That's the discovery of finity. That's the equator. That's Arjuna.
 

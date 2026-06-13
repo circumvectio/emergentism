@@ -219,7 +219,7 @@ l4_execution:
 
 ## 11. The Equator Rule
 
-At L4, φ = 1 and ν = 1. Not 70%. **One hundred percent.**
+At L4, φ = 1 and ν = 1. Not 70%. **One normalized unit.**
 
 The Kṣatriya holds both axes at their natural unit. Dharma yuddha. The hexagram holds both wheels — clockwise (ascent) and counter-clockwise (descent) simultaneously.
 
