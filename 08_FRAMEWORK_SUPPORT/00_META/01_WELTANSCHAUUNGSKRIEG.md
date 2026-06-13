@@ -262,10 +262,13 @@ A fresh AI agent, reading the data room, can execute the entire OFN protocol sta
 ## THE GEOMETRY
 
 ```
-P∞ = φ · ν = 1 at every node
+P∞ = φ · ν = 1 on the open sphere
 
 φ (phi) = coherence = the pattern
-ν (nu) = novelty = the instance
+ν (nu) = viability = the reciprocal coordinate / substrate-bearing side
+
+Finite nodes are scored separately:
+P_node = Φ × V
 
 The ratio IS a point on the sphere.
 
