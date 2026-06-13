@@ -24,6 +24,40 @@ rosetta:
 
 **Must not do:** Claim possession of the Ground. Idolize S2, F5, Rosetta, institutional narrative, or Emergentism. Turn apophasis into nihilism.
 
+## Dasein Origin Reading
+
+Ontology owns the first half of the game question: **how did the reader come
+to be?** The answer is not a biological derivation and not a claim that the
+Ground has been captured. It is the framework's Dasein reconstruction:
+
+```text
+Ground remains prior.
+Being stabilizes reciprocal closure: P∞ = φ · ν = 1 on S².
+Teleological Force names viable continuation inside manifestation.
+D4 opens bounded witness and usable means-to-act.
+D5 opens enacted agency and worldline-foresight.
+D6 releases the claim to final capture and returns the loop to D0.
+Dasein appears at the D4/D5 threshold as finite disclosure able to question and act.
+```
+
+So **Dasein as reader** names the finite site where Being becomes disclosed,
+questioned, tested, and acted. In the dimensional scaffold, D4 is bounded
+witness and D5 is agency / selection. In the action register, those become the
+two factors the player must couple: `V` as D4 means-to-act and `Φ` as D5
+worldline-foresight. The reader becomes a player when disclosure becomes both
+visible and actionable.
+
+This route therefore answers only the origin half. The play half routes through
+the [Soul Loop](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md)
+and the Goal: Dasein recursively corrects ontology, epistemology, methodology,
+axiology, and teleology until the next act can raise `P_node,i` and
+`P_node,H` together under `η = 0`.
+
+**Tier fence:** `[S]` for the internal ordering and register distinctions;
+`[I]` for the Dasein reading; `[C]` if this is presented as a completed
+external proof that the seer, Ground, or consciousness has been captured by the
+model.
+
 ---
 
 ## Rosetta Position

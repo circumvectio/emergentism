@@ -168,6 +168,11 @@ directly (the only available lever):
 	        bridge into the full ontological compression, so D4 is witness plus
 	        means-to-act and D5 is agentic present plus worldline-foresight instead of
 	        passive witness versus disembodied agency.
+  - ground/                                     : mirrored the Dasein origin
+        route summary from the source ontology route: Ground remains prior,
+        Dasein appears at the D4/D5 threshold as finite disclosure able to
+        question and act, and the play half routes to the Soul Loop / Goal where
+        `P_node,i` and `P_node,H` must rise together under `η = 0`.
 	  - formal/08-efr-power-max-lemma/              : tightened the status from
 	        pure geometric theorem to conditional model theorem / design lemma,
 	        and added the `W_i(T)` / `P_node,H` worldline notation for the
