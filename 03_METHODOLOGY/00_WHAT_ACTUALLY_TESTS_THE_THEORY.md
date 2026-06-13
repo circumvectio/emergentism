@@ -58,7 +58,7 @@ For hostile-formalization and scope-boundary discipline, use:
 | Instrument | Why It's Not Decisive | What It Tests Instead |
 |-----------|----------------------|----------------------|
 | **GFS (survey)** | Self-report measures are proxies for `φ` and `ν`, not the coordinates themselves. Cultural noise overwhelms signal. | Whether survey-operationalized "flourishing" follows a multiplicative structure in cross-cultural data |
-| **Protocol D (AI simulation)** | Framework-designed simulation testing framework metrics. Circular. | Whether framework-defined agents cooperate multiplicatively (confirmed, but [S] not independent [A]) |
+| **Protocol D (AI simulation)** | Framework-designed simulation testing framework metrics. Circular. | Whether coupled, long-horizon, multiplicative agents under enforced `η = 0` select syntropic-frontier outcomes more strongly than additive baselines (internally supportive, but [S] not independent [A]) |
 | **Agent V x Phi** | Same circularity problem. | Whether framework-defined agent performance correlates with framework-defined balance |
 
 These tests are informative. They are not decisive. They test operationalizations, not the geometry.
@@ -88,8 +88,8 @@ These tests are informative. They are not decisive. They test operationalization
 ### Tier B: Tests of the Mathematical Structure
 
 **4. Power-Max Lemma — Independent Replication**
-- **What it tests:** Whether multiplicative fitness structures generate cooperation in agent simulations NOT designed by the framework authors.
-- **Why it matters:** Protocol D confirmed this within framework-designed simulations. Independent replication by a separate team with a pre-registered protocol would upgrade from [S] to [A].
+- **What it tests:** Whether coupled multiplicative agents under long horizon and enforced `η = 0` select syntropic-frontier outcomes (`ΔP_node,i >= 0` and `ΔP_node,H >= 0`) more strongly than additive baselines in agent simulations NOT designed by the framework authors.
+- **Why it matters:** Protocol D is internally supportive within framework-designed simulations, but the current Power-Max claim is conditional: it requires coupling, product scoring, long horizon, and an enforced non-extraction floor. Independent replication by a separate team with a pre-registered protocol would upgrade from [S] to [A].
 - **Status:** Submission-ready paper. Needs independent team.
 
 **5. AMRITA — Spherical Alignment vs. RLHF**
@@ -161,8 +161,8 @@ If the practitioner says "I found nothing" — that is data. It does not falsify
 
 | Test | Result | Impact on Framework |
 |------|--------|-------------------|
-| Protocol D | Confirmed [S] (framework-designed) | Multiplicative cooperation works in simulation |
-| Agent V x Phi | Confirmed [S] (framework-designed) | Balance predicts agent performance in simulation |
+| Protocol D | Internally supportive [S] (framework-designed) | Coupled multiplicative cooperation works in the historical simulation; the current constrained-frontier spec still needs independent replication |
+| Agent V x Phi | Internally supportive [S] (framework-designed) | Balance tracked agent performance in simulation; independent validation still required |
 | SPHERE Probe | Negative/informative | First public-model run did not confirm equatorial projection |
 | GFS Wave 1 | **Mixed** (signal in 30%, pooled interaction marginally negative) | **Survey-operationalized flourishing does not cleanly follow multiplicative model. Instrument validity in question.** |
 | Protocol R | Not yet run | **THE decisive geometric test** |
@@ -170,7 +170,7 @@ If the practitioner says "I found nothing" — that is data. It does not falsify
 | Phi-meter | Built, not validated | Proxy measure for phi |
 | Cross-Scale | Not yet tested | Low-hanging fruit with existing bio data |
 
-**Two tests confirmed (in framework-designed environments). One negative. One mixed. Two pending (Protocol R, Phi-meter; AMRITA reframed — POC implementable at $0).**
+**Two tests are internally supportive in framework-designed environments. One is negative. One is mixed. Two are pending (Protocol R, Phi-meter; AMRITA reframed — POC implementable at $0).**
 
 The bridge is under construction. The foundation (mathematics) is solid. The superstructure (empirical validation) is incomplete. The GFS pier is wobbling but may be a measurement problem, not a structural problem. The decisive piers (Protocol R, AMRITA) are not yet built.
 

@@ -52,6 +52,18 @@ directly (the only available lever):
         world-line potential, and `P_node,i`/`P_node,H` under the existing
         Power-Max conditions; later mirrored stale generated proof notation
         from `Pᵢ` / `ΣP` to `P_node,i` / `ΣP_node`.
+  - foundations/the-honest-position/, method/00-what-actually-tests-the-theory/,
+        will/00-the-generative-lagrangian/     : downgraded Protocol D public
+        wording from unconditional "multiplicative fitness generates
+        cooperation" to the constrained Power-Max frontier: real coupling,
+        multiplicative `P_node`, long horizon, and enforced `η = 0`; independent
+        replication must test additive baselines and failure modes before any
+        public evidence-tier upgrade; later added public Claim Boundary ledes
+        and included foundations in the static RAG library index.
+  - canon/the-ontology-index/                  : mirrored the same S15/S16
+        downgrade in the empirical-program table so Protocol D and Agent V×Φ
+        read as internally supportive framework-designed simulations, not
+        confirmed public evidence.
   - trinity/22-the-teleology/, trinity/28-l4-star/, trinity/31-vmosk-as-applied-emergentism/
                                               : tightened bare `P = 1` wording to
         the current `P∞ = φ·ν = 1` manifold identity, with `B` / `P_node`

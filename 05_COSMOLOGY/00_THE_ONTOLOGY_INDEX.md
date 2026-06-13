@@ -180,9 +180,9 @@ Key corrections already propagated:
 | Experiment | Tests | Status |
 |---|---|---|
 | GFS Wave 1 | Multiplicative balance in human populations | MIXED RESULTS (30% of countries) |
-| Protocol D | Multiplicative cooperation in AI agents | CONFIRMED (framework-designed) |
+| Protocol D | Constrained syntropic-frontier selection in coupled multiplicative agents | Internally supportive (framework-designed; independent replication needed) |
 | SPHERE Probe | Equatorial projection improves coherence | Negative/informative first run |
-| Agent V×Φ | Balance beats imbalance in simulated agents | CONFIRMED (framework-designed) |
+| Agent V×Φ | Balance beats imbalance in simulated agents | Internally supportive (framework-designed; independent replication needed) |
 | Φ-meter validation | Coherence measurable | Built v0.1, needs validation |
 | Protocol R | Perceptual complementarity bound | Designed, needs lab |
 | AMRITA vs RLHF | Spherical alignment outperforms | Specified, POC implementable |

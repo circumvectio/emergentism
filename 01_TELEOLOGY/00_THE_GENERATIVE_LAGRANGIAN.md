@@ -197,9 +197,12 @@ invariants to the admissible worlds**.
 **Generative question:** what internal architecture preserves
 `φ · ν = 1` across this agent's decision surface?
 
-Protocol D (multiplicative fitness generates cooperation, `d = 6.66`)
-is the generative reading: the agent is **built** with multiplicative
-internal scoring; cooperation is what falls out.
+Protocol D is the generative reading only in its constrained form: the agent is
+**built** with multiplicative internal scoring, real coupling, long-horizon
+feedback, and an enforced `η = 0` floor. Cooperation is not assumed to
+spontaneously fall out of multiplication alone; the extraction channel is
+designed closed, so the admissible optimum is searched on the syntropic
+frontier.
 
 ### 2. Institution design
 

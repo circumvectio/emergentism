@@ -124,17 +124,38 @@ This is the framework's honest assessment of how evidence would shift its positi
 
 ### Hypothesis
 
-If η = 0 is the Nash equilibrium at the balance maximum (Step 8 of THE_DERIVATION), then AI agents using a multiplicative fitness function (P_node = Φ × V) will spontaneously develop cooperative behavior, while agents using an additive fitness function will not.
+If agents are genuinely coupled (`λ > 0`), scored by the finite-node product
+`P_node = Φ × V`, evaluated over a long enough horizon for network effects to
+return, and placed inside an enforceable `η = 0` arena, then durable
+optimization should select syntropic trajectories more strongly than additive
+baseline agents.
+
+This is not a claim that cooperation appears spontaneously from multiplication
+alone. The current Power-Max Lemma says the opposite: coupling creates
+interdependence, but one-shot extraction can still pay unless the private
+extraction channel is blocked. Protocol D therefore tests the constrained
+frontier: whether multiplicative agents under enforced non-extraction converge
+toward `ΔP_node,i >= 0` and `ΔP_node,H >= 0` more reliably than additive agents.
 
 ### Status
 
-**CONFIRMED within framework-designed simulations** (d = 6.66, p = 2.02 × 10⁻¹², Spearman ρ = 1.000).
+**Internally supportive within framework-designed simulations** (historical run:
+d = 6.66, p = 2.02 × 10⁻¹², Spearman ρ = 1.000).
 
-**Not yet confirmed by independent replication.** This is the honest position: framework-designed simulation testing framework metrics requires independent replication to earn [S] status.
+**Not yet confirmed by independent replication.** This is the honest position:
+framework-designed simulation testing framework metrics is structural support,
+not public proof. The older run also predates the current constrained-frontier
+wording, so it supports the direction of Protocol D but does not by itself
+settle the four-condition Power-Max claim.
 
-**Upgrade criterion:** An independent research team (no authorship overlap with EFR), using a pre-registered protocol not designed within EFR, confirms multiplicative cooperation with effect size d > 2.0 and p < 0.01.
+**Upgrade criterion:** An independent research team (no authorship overlap with
+EFR), using a pre-registered protocol not designed within EFR, confirms that
+coupled multiplicative agents under a long-horizon `η = 0` enforcement surface
+select syntropic-frontier outcomes over additive baselines with effect size
+d > 2.0 and p < 0.01, while also testing the failure modes: `λ = 0`, additive
+payoff, short horizon, hidden extraction, and negative coupling.
 
-**Tier: [S] Structural.** Awaiting independent replication.
+**Tier: [S] Structural internal support.** Awaiting independent replication.
 
 ---
 

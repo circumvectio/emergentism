@@ -194,7 +194,10 @@ The framework is designed to die if wrong. Every prediction has a specific condi
 
 **Examples:**
 - Node-level multiplicative flourishing model (`Φ × V`): Killed if additive model wins AIC/BIC in GFS
-- Cooperation: Killed if cooperation rate ≤ 50% in Protocol D
+- Protocol D / cooperation: Killed if independent replication shows additive
+  baselines match or beat multiplicative agents under the current constrained
+  protocol, or if the effect disappears once coupling, long horizon, and
+  enforced `η = 0` are controlled.
 - Eq. 7: Killed if the open-sphere product identity varies >1 order of magnitude
 - Golden Age Hypothesis: Killed if Jaynes' bicameral mind hypothesis is disproved — if ancient humans had the same narrative systemic awareness as moderns, the neurological foundation collapses. (Note: the Raktabija dynamic survives independently of Jaynes.)
 - Golden Age Hypothesis (terminal kill): Killed if Jaynes' bicameral mind hypothesis is falsified independently of this framework, AND no alternative neurological mechanism supports the Golden Age coordination claim. (This is the strongest kill condition: even non-Jaynes evidence for ancient coordination must exist for the hypothesis to survive.)

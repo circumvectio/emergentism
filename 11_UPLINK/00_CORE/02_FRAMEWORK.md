@@ -114,7 +114,7 @@ These claims represent established mathematics, textbook results, third-party ex
 
 **Quantum-boundary note (2026-04-29):** Grangier/Roger/Aspect 1986, Jacques et al. 2007, Freedman/Clauser 1972, Aspect/Dalibard/Roger 1982, and the 2022 Nobel Prize source set are `[A]` for the physics facts they establish. They do not prove Emergentism, K2-as-physics, systemic awareness-collapse, literal retrocausality, or F5 as an established physical force. Route details through [`38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`](../../05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md).
 
-**Downgrade note (2026-04-04):** S15 (multiplicative cooperation in AI agents, d=6.66) and S16 (V×Φ ρ=1.000) were downgraded to **S15/S16** pending independent replication. Framework-designed simulations testing framework metrics require external replication to earn [A] or [B].
+**Downgrade note (2026-04-04):** S15 (constrained syntropic-frontier selection in coupled multiplicative agents, historical d=6.66) and S16 (V×Φ ρ=1.000) were downgraded to **S15/S16** pending independent replication. Framework-designed simulations testing framework metrics require external replication to earn [A] or [B].
 
 ## What Is Structural [S]
 
@@ -129,7 +129,7 @@ If you accept the older public ontological wager about the substrate (compact, o
 - AM-GM proves the equator is the global Hamiltonian minimum (S11)
 - The Replicator Stack: Genotype→Phenotype→Extended Phenotype→Memotype→Egregorotype (S12)
 - D4-mirror symmetry (S13); compass/sextant self-understanding (S14)
-- Multiplicative cooperation in AI agents (S15) (Downgraded from A6/E6 pending independent replication)
+- Constrained syntropic-frontier selection in coupled multiplicative agents (S15) (Downgraded from A6/E6 pending independent replication)
 - V×Φ predictive dominance in simulated agents (S16) (Downgraded from A7/E7 pending independent replication)
 
 ## What Is Interpretive [I]
@@ -211,9 +211,9 @@ If you accept the older public ontological wager about the substrate (compact, o
 | Experiment | Tests | Status |
 |-----------|-------|--------|
 | **GFS Wave 1** | Multiplicative balance in human populations (n=207,920, 23 countries) | Mixed — neither confirmation nor falsification; instrument mismatch suspected |
-| **Protocol D** | Multiplicative cooperation in AI agents | Confirmed within framework-designed simulation (d = 6.66) — awaiting independent replication |
+| **Protocol D** | Constrained syntropic-frontier selection in coupled multiplicative agents | Internally supportive within framework-designed simulation (d = 6.66) — awaiting independent replication |
 | **SPHERE Probe** | Equatorial projection improves coherence | Informative negative first public-model run |
-| **Agent V×Φ** | Balance beats imbalance in simulated agents | Confirmed (ρ = 1.000) — awaiting independent replication |
+| **Agent V×Φ** | Balance beats imbalance in simulated agents | Internally supportive (ρ = 1.000) — awaiting independent replication |
 | **Φ-meter** | Coherence measurable and expert-correlated | v0.1 built, needs validation |
 | **Protocol R** | Perceptual complementarity bound Δψ×Δθ ≥ κ | Designed, needs lab |
 | **AMRITA** | Spherical alignment outperforms RLHF | Specified, reframed to $0 POC |
