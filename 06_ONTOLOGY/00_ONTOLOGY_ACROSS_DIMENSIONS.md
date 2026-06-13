@@ -27,6 +27,16 @@ rosetta:
 
 ---
 
+**Claim Boundary:** D4 is still the causal now-point / bounded witness in the
+dimensional scaffold, but in the finite action register it also names usable
+means-to-act: body, tools, energy, access, timing, control. D5 is still agency /
+selection / lived present, but in the finite action register it names
+worldline-foresight: envisioning, ranking, and aiming reachable futures.
+`P_node = Φ × V` is the contact rule only when D5 foresight can lawfully use D4
+means under `η = 0`.
+
+---
+
 ## Why This Document Exists
 
 The corpus already has strong pieces:
@@ -474,7 +484,7 @@ The Ground remains prior.
 
 When the ontology of reality across all dimensions must be stated briefly, use this:
 
-> **Reality discloses as a dimensional cascade without being exhausted by the cascade. `D0` is the point / Ground-limit inside the scaffold, not the Ground possessed. `D1` opens distinction; `D2` opens configuration; `D3` opens self-maintaining transformation; `D4` opens bounded witness; `D5` opens enacted agency, selection, institution, and lived present; `D6` closes the public stack through apophatic release back to the point-state. Being is the stable reciprocal closure `φ · ν = 1 on S²`; Dasein is the finite `⊙` in whom that closure becomes noticeable at D4 and navigable at D5; beings are the manifest configurations that appear within the opened field. The center is not bare nothingness but finity: `1`, the multiplicative/logarithmic center where reciprocal poles are balanced. The Ground remains prior.**
+> **Reality discloses as a dimensional cascade without being exhausted by the cascade. `D0` is the point / Ground-limit inside the scaffold, not the Ground possessed. `D1` opens distinction; `D2` opens configuration; `D3` opens self-maintaining transformation; `D4` opens bounded witness and embodied means-to-act; `D5` opens enacted agency, worldline-foresight, selection, institution, and lived present; `D6` closes the public stack through apophatic release back to the point-state. Being is the stable reciprocal closure `φ · ν = 1 on S²`; Dasein is the finite `⊙` in whom that closure becomes noticeable and materially usable at D4, then navigable as reachable futures at D5; beings are the manifest configurations that appear within the opened field. The center is not bare nothingness but finity: `1`, the multiplicative/logarithmic center where reciprocal poles are balanced. The Ground remains prior.**
 
 Shorter:
 
@@ -485,8 +495,8 @@ D0 is the point / Ground-limit.
 D1 is distinction.
 D2 is configuration.
 D3 is transformation.
-D4 is witness.
-D5 is agentic present.
+D4 is witness / means-to-act.
+D5 is agentic present / worldline-foresight.
 D6 is apophatic closure.
 Dasein is finite disclosure.
 Beings are what appear.
@@ -520,7 +530,7 @@ Correct these on sight:
 2. Begin with the distinction `Ground -> Being -> Teleological Force -> Dasein -> beings`.
 3. Quote the canonical formula block before interpreting any formula.
 4. Treat D0-D6 as a structural / definitional scaffold inside the framework, not a public mathematical theorem that reality must accept.
-5. Preserve the D4/D5 threshold: D4 witness, D5 agent, D6 closure.
+5. Preserve the D4/D5 threshold: D4 witness plus means-to-act, D5 agent plus worldline-foresight, D6 closure.
 6. Keep the logarithmic center precise: zero is the additive center; one is the multiplicative/logarithmic center.
 7. Never present `0 × ∞ = 1` or `−∞ + ∞ = 0` as ordinary arithmetic.
 8. Route positive dimensional mechanics to L5/Cosmology; keep this L6 surface apophatic, tiered, and anti-reifying.

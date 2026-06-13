@@ -163,6 +163,11 @@ directly (the only available lever):
 	  - formal/34-d4-d5-canonical-reference/        : added the register bridge that
 	        keeps dimensional D4 witness distinct from action-register D4 means-to-act
 	        and pairs D5 worldline-foresight with D4 means in `P_node = Φ × V`.
+	  - foundations/ontology-across-dimensions/, ground/00-ontology-across-dimensions/
+	                                              : mirrored the D4/D5 action-register
+	        bridge into the full ontological compression, so D4 is witness plus
+	        means-to-act and D5 is agentic present plus worldline-foresight instead of
+	        passive witness versus disembodied agency.
 	  - formal/08-efr-power-max-lemma/              : tightened the status from
 	        pure geometric theorem to conditional model theorem / design lemma,
 	        and added the `W_i(T)` / `P_node,H` worldline notation for the

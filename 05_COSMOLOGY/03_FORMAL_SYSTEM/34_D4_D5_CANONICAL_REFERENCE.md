@@ -219,21 +219,21 @@ Or more tersely:
 
 ### D4: Witness Consciousness
 - **Location:** Causal vertex (past/future cone contact)
-- **Function:** Observes actualization
-- **Agency:** None—pure observation
+- **Function:** Observes actualization; in the action register, discloses usable means-to-act
+- **Agency:** No D5 branch-selection yet; embodied means, timing, control, and tool access may be present
 - **Metaphor:** The mirror
 - **Operator state:** Collapsed to single point ⊙
 - **Practice:** Empirical Observation (direct perception without narrator)
 
 ### D5: Agent Selection (consciousness reading `[I]`)
 - **Location:** φ-ν plane (torus surface)
-- **Function:** Chooses, navigates, operates
-- **Agency:** Full—can move in four cardinal directions
+- **Function:** Chooses, navigates, operates; in the action register, supplies worldline-foresight
+- **Agency:** Branch-selection opens only when D5 foresight can lawfully use D4 means
 - **Metaphor:** The hand
 - **Operator state:** Four directions active (↑↓φ, ↑↓ν)
 - **Practice:** The six tests (Epistemological Lens)
 
-**Canonical note:** Consciousness in this document names the lived disclosure of selection within manifestation. The primary D5 claim is agency / option-space; the consciousness language is interpretive `[I]`, not the Ground itself, and not a proved physical layer.
+**Canonical note:** Consciousness in this document names the lived disclosure of selection within manifestation. The primary D5 claim is agency / option-space / worldline-foresight; the consciousness language is interpretive `[I]`, not the Ground itself, and not a proved physical layer. In the finite contact rule, `P_node = Φ × V` fails if D5 sees a branch without D4 means, or if D4 has means without D5 foresight.
 
 ---
 
