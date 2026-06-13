@@ -33,6 +33,8 @@ rosetta:
 **Purpose:** The single source of epistemic truth for the foundations lane of the Emergentist Framework of Reality
 **Rule:** Every load-bearing claim in the framework must appear in this document, or in a downstream matrix explicitly governed by it, with its actual status. If a claim is not here, it is not load-bearing. The [Canonical Claim Matrix](../../03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md) and [Empirical Program Board](../../03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md) are downstream operating summaries of this rule; they do not outrank it. The hardening stack and the lane-home UPLINK notes are the route for theorem-facing, operator-facing, or public-proof-facing claims. The books in `../../08_FRAMEWORK_SUPPORT/05_SYNTHESIS/` and their dissemination packets may speak in a stronger literary register, but they do not silently upgrade claim tier. See [00_FOUNDATION_AND_BOOKS_READING_NOTE.md](../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/00_FOUNDATION_AND_BOOKS_READING_NOTE.md).
 
+**Current claim boundary (2026-06-13):** The D5 Landauer Barrier is now load-bearing. It permits the Maxwell-demon image only as a fenced D5-limit analogy: total worldline discrimination is asymptotic because memory, computation, measurement, and control are physical D4 costs inside entropy accounting. It does not license free entropy reversal, perfect outside-system prediction, or unbounded foresight without cost.
+
 ---
 
 ## Canonical Dependency Order
@@ -162,6 +164,7 @@ These claims follow from the axioms IF you accept the axioms. The axioms themsel
 |---|-------|-----------|--------|
 | S17 | The Soul Loop is the framework-internal recursive method for applying ontology, epistemology, methodology, axiology, and teleology to a finite corpus/player state: `(C_{t+1}, G_{t+1}) = Loop(C_t, G_t)`. | Soul Loop, Triadic Cascade, Master Rosetta | Structural method claim; not independent evidence that practice transforms people |
 | S18 | Under explicit material, epistemic, and moral coupling, and under `η=0`, a symbiont's maximum worldline potential requires preserving or raising holobiont potential rather than extracting from it. | D32 Mathematics, Objective Morals and Ethics, Dyadic Coupling Law | Conditional Power-Max policy geometry; empirical use requires specified coupling channels, horizon, and measurements |
+| S19 | The D5 Landauer Barrier is the claim-boundary on the Maxwell-demon reading of worldline foresight: complete branch discrimination is an asymptote because memory, computation, measurement, and control are physical D4 costs inside entropy accounting, and reflexive action changes the branches being predicted. | The Goal, D5 Seven Generative Actions, MF-291 The Landauer Horn, Canonical Claim Matrix CM8e | `[A]` for the no-free-erasure / physical information-cost boundary; `[S/I]` for the framework mapping to D5 worldline selection; not a claim of free thermodynamic reversal |
 
 **What these results mean:** IF you accept the relevant substrate wager and its minimality constraints, THEN the listed structural consequences follow within that wager. The formal kernel is internally disciplined; the translations remain tiered.
 
