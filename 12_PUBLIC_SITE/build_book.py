@@ -105,7 +105,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>The Book — Emergentism</title>
-<meta name="description" content="Emergentism, the whole book, free to read online: one equation — coherence × viability = 1 — read from seven positions. Every claim wears its evidence tier; the book ends by dissolving itself." />
+<meta name="description" content="Emergentism, the whole book, free to read online: P∞ = φ · ν = 1 as manifold identity, P_node = Φ × V as finite action rule, read from seven positions. Every claim wears its evidence tier; the book ends by dissolving itself." />
 <meta name="color-scheme" content="light dark" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23b8862c' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.4' fill='%23b8862c'/%3E%3C/svg%3E" />
 <style>
