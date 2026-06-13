@@ -15,18 +15,18 @@ rosetta:
   operator: "Kālī 💀"
   tier: "God"
   regime: "Śūdra"
-  register: "[E/I/C]"
+  register: "[A/I/C]"
   canonical_phrase: "PD-25 — Bell Local Realism Boundary"
 ---
 
 # PD_25: Bell Inequalities, Locality, Realism, And The 2022 Nobel Prize
 
 **Directory:** `03_EVIDENCE/PARADOX_DISSOLUTIONS/`
-**Evidence tier:** `[E/I/C] split`
+**Evidence tier:** `[A/I/C] split`
 **Canonical number:** PD_25
 **Boundary source:** [`38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md)
 
-> **Evidence-tier note.** Bell-test violations, delayed-choice outcomes, and single-photon anticorrelation / interference are `[S]` established physics when stated in the language of the cited experiments. The framework reading of these results through D4/D5, S2, and `Zero-Sum Resolution Equation` is `[I]`. Consciousness-collapse, literal retrocausal, K2-as-physics, or F5-as-physical-force readings remain `[C]`.
+> **Evidence-tier note.** Bell-test violations, delayed-choice outcomes, and single-photon anticorrelation / interference are `[A]` established physics when stated in the language of the cited experiments. The framework reading of these results through D4/D5, S², and `Zero-Sum Resolution Equation` is `[I]`. Consciousness-collapse, literal retrocausal, K2-as-physics, or F5-as-physical-force readings remain `[C]`.
 
 ---
 

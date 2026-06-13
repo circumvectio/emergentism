@@ -212,7 +212,7 @@ For agents building on, extending, or auditing the framework:
 | Area | Folder | Documents | Focus |
 |------|--------|-----------|-------|
 | **Axioms & Derivation** | seven Foundation roots under `../` | ~80 files | Mathematical foundations, formal proofs, corrected geometry |
-| **Paradox Dissolutions** | `03_EVIDENCE/PARADOX_DISSOLUTIONS/` | 25 files | 18 classical paradoxes dissolved on S² (all [I] — see epistemic notes) |
+| **Paradox Dissolutions** | `03_EVIDENCE/PARADOX_DISSOLUTIONS/` | 25 files | Classical paradoxes reframed through S²/Burri geometry (tiered — see epistemic notes) |
 | **Rosetta Stone** | `03_EVIDENCE/ROSETTA_STONE/` | 42+ files | D-series constitutional docs, domain mappings, row-specific analyses |
 | **Research Papers** | `../03_METHODOLOGY/02_THE_PAPERS/` | 8 papers | Peer-review candidates (Frame Algebra, Bloch-Burri, Wave-Particle, etc.) |
 | **Neuroscience** | `04_APPLICATIONS/NEUROSCIENCE/` | 40+ files | Brain mapping [I], flow states, EEG predictions (see Neuroscience Caveat) |

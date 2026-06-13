@@ -37,7 +37,7 @@ The files formerly known as `PD-01` (Mind-Body), `PD-02` (Free Will), and `PD-03
 The Paradox Dissolution sequence correctly begins at **PD_04**.
 *All legacy numbering via dashes (`PD-##`) is deprecated. Underscores (`PD_##`) are canonical.*
 
-> **STATUS:** All planned paradox dissolutions now exist. PD_17 (QM/GR Unification) has been moved to archive as an incomplete draft. PD_25 (2026-04-29) integrates the quantum-foundations source set as an evidence-tier boundary: physics `[S]`, framework translation `[I]`, stronger systemic awareness-collapse / retrocausal / F5-as-physics claims `[C]`.
+> **STATUS:** All planned paradox dissolutions now exist. PD_17 (QM/GR Unification) has been moved to archive as an incomplete draft. PD_25 (2026-04-29) integrates the quantum-foundations source set as an evidence-tier boundary: physics `[A]`, framework translation `[I]`, stronger systemic awareness-collapse / retrocausal / F5-as-physics claims `[C]`.
 
 > **Workspace-slice note:** This index names a broader paradox corpus than is locally present in the current workspace slice. Missing files should be treated as corpus references, not broken canon. For the local audit, see 00_PARADOX_SUITE_AUDIT.md (local file; link removed to prevent cycle).
 
@@ -77,7 +77,7 @@ This table is the single source of truth. If any other document shows a differen
 | **PD_22** | Implications (Science) | `PD_22_SCIENTIFIC_IMPLICATIONS.md` | ✓ EXISTS | [I/C] |
 | **PD_23** | The Completion | `PD_23_THE_COMPLETION.md` | ✓ EXISTS | [C/S] |
 | **PD_24** | Third Unveiling | `PD_24_THE_THIRD_UNVEILING.md` | ✓ EXISTS | [I] |
-| **PD_25** | Bell Inequalities, Locality, Realism | `PD_25_BELL_LOCAL_REALISM.md` | ✓ EXISTS | [E/I/C] |
+| **PD_25** | Bell Inequalities, Locality, Realism | `PD_25_BELL_LOCAL_REALISM.md` | ✓ EXISTS | [A/I/C] |
 
 ### Files Currently in `02_PARADOX_DISSOLUTIONS/`
 

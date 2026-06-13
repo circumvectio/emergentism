@@ -79,9 +79,9 @@ Nothing → Trinity → Sphere → Equation → Axioms → Framework → Deploym
   - [00_THE_MASTER_ROSETTA.md](00_THE_MASTER_ROSETTA.md)
 
 ### D0→D2: Genesis
-*• → S² → ℂ* — From the point to the sphere. Every classical paradox dissolves by moving from the plane to the sphere.
+*• → S² → ℂ* — From the point to the sphere. The paradox suite is reframed by moving from the plane to the sphere.
 
-- `02_PARADOX_DISSOLUTIONS/` — 24 classical paradoxes dissolved: Hard Problem, Is-Ought, Mind-Body, Zeno, Fermi, Death, Meaning, Evil
+- `02_PARADOX_DISSOLUTIONS/` — classical paradox suite reframed: Hard Problem, Is-Ought, Mind-Body, Zeno, Fermi, Death, Meaning, Evil
   - [PD_00_INDEX.md](../PARADOX_DISSOLUTIONS/PD_00_INDEX.md)
   - [00_THE_EXTRACTION_PATTERN.md](../PARADOX_DISSOLUTIONS/00_THE_EXTRACTION_PATTERN.md)
 

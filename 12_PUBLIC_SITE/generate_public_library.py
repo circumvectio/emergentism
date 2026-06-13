@@ -60,6 +60,11 @@ directly (the only available lever):
         replication must test additive baselines and failure modes before any
         public evidence-tier upgrade; later added public Claim Boundary ledes
         and included foundations in the static RAG library index.
+  - paradox/*, paradox/pd-25-bell-local-realism/, formal/38-quantum-foundations-
+        confirmation-boundary/                 : changed public paradox chrome from
+        "dissolved" to "reframed"; upgraded the cited quantum-foundations physics
+        source tier from legacy `[S]` / `[E]` language to current `[A]`, while
+        keeping Emergentism translations `[I]` and stronger physics readings `[C]`.
   - canon/the-ontology-index/                  : mirrored the same S15/S16
         downgrade in the empirical-program table so Protocol D and Agent V×Φ
         read as internally supportive framework-designed simulations, not
@@ -367,7 +372,7 @@ WINGS = {
     "paradox": {
         "source_dir": HANDOFF / "paradox-public",
         "title": "Paradox Dissolutions",
-        "description": "Twenty-six classical paradoxes dissolved through the framework's lens — each with its evidence tier and kill-criterion.",
+        "description": "Twenty-six classical paradoxes reframed through the framework's lens — each with its evidence tier and kill-criterion.",
         "active": "paradox",
     },
     "memetic": {

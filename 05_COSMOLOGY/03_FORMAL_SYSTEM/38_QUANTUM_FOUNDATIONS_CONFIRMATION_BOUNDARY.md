@@ -7,7 +7,7 @@ rosetta:
       column: Method
       role: "evidence-tier boundary for physics-facing analogies"
   operator: "Kṛṣṇa ◇"
-  register: "[E/I/C] split"
+  register: "[A/I/C] split"
   canonical_phrase: "Quantum-foundations experiments confirm the non-classical boundary, not Emergentism as physics."
 ---
 
@@ -15,7 +15,7 @@ rosetta:
 
 **Date:** 2026-04-29
 **Status:** Active evidence-boundary note
-**Evidence tier:** `[S]` for the cited physics results; `[I]` for Emergentism lens translations; `[C]` for systemic awareness-collapse, literal retrocausal, or F5-as-physics readings
+**Evidence tier:** `[A]` for the cited physics results; `[I]` for Emergentism lens translations; `[C]` for systemic awareness-collapse, literal retrocausal, or F5-as-physics readings
 **Purpose:** Integrate the landmark quantum-foundations experiments into Emergentism without letting established physics be used as unauthorized proof of the framework.
 
 ---
@@ -34,7 +34,7 @@ Journalistic sources such as "The Universe Is Not Locally Real..." may be used a
 
 ---
 
-## What Is Confirmed `[S]`
+## What Is Confirmed `[A]`
 
 ### 1. Single photons exhibit non-classical behavior
 
@@ -83,10 +83,10 @@ Lens translation:
 
 | Physics result | Established tier | Emergentism translation |
 |---|---|---|
-| Single-photon anticorrelation plus interference | `[S]` | One event can be detected discretely while its preparation/propagation retains wave-like relational structure. Translate as `○` possibility-field plus `⊙` event receipt. |
-| Delayed-choice context dependence | `[S]` | Which receipt appears depends on the measurement context. Translate `×` as apparatus/protocol interaction, not human attention. |
-| Bell inequality violation | `[S]` | Local pre-written-property models fail. Translate as a boundary against naive local realism, not as proof of the whole Burri Sphere core state. |
-| 2022 Nobel recognition | `[S]` for historical award | Public validation that this experimental arc is central, not fringe. |
+| Single-photon anticorrelation plus interference | `[A]` | One event can be detected discretely while its preparation/propagation retains wave-like relational structure. Translate as `○` possibility-field plus `⊙` event receipt. |
+| Delayed-choice context dependence | `[A]` | Which receipt appears depends on the measurement context. Translate `×` as apparatus/protocol interaction, not human attention. |
+| Bell inequality violation | `[A]` | Local pre-written-property models fail. Translate as a boundary against naive local realism, not as proof of the whole Burri Sphere core state. |
+| 2022 Nobel recognition | `[A]` for historical award | Public validation that this experimental arc is central, not fringe. |
 
 ---
 
@@ -112,7 +112,7 @@ The clean statement is:
 When citing these experiments in Emergentism:
 
 1. Cite the primary paper or Nobel source.
-2. Mark the physics claim `[S]`.
+2. Mark the physics claim `[A]`.
 3. Mark the Emergentism translation `[I]`.
 4. Mark systemic awareness-collapse, literal retrocausal, or F5-as-physics claims `[C]`.
 5. Use "measurement" to mean apparatus/protocol interaction unless the text is explicitly in phenomenological or governance register.

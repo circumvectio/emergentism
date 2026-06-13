@@ -28,7 +28,7 @@ rosetta:
 **Kill Criteria:** Mixed by file
 **Register:** Interpretive / structural
 
-> **Epistemic Mode:** This folder contains paradox-dissolution claims inside the EFR/VIVEKA layer. Most individual dissolutions are `[I]` or `[S]` rather than `[S]`. Use [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) as the governing epistemic reference.
+> **Epistemic Mode:** This folder contains paradox-dissolution claims inside the EFR/VIVEKA layer. Most individual dissolutions are `[I]` or `[S]`, not `[A]` or `[B]`. Use [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) as the governing epistemic reference.
 
 ---
 
