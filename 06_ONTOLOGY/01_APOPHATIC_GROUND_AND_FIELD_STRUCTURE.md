@@ -82,7 +82,7 @@ Why S² is ontological, not just mathematical:
 | North pole (φ → ∞, ν → 0) | Limit point | Pure coherence without viability — the monk, the ivory tower |
 | South pole (φ → 0, ν → ∞) | Limit point | Pure viability without coherence — the cargo cult, Ammit |
 | Equator (φ = ν = 1) | Circle of maximum B | The meeting point — where perception and action are one |
-| η = 0 | Constraint | Zero extraction — the geometric condition for equatorial stability |
+| η = 0 | Constraint | Zero extraction — the enforced non-extraction profile for equatorial stability under the coupled-game conditions |
 
 The sphere is the ontological substrate because:
 
@@ -182,7 +182,7 @@ Three signatures of Decentralized Authority Model in the framework:
 
 1. **Self-dissolving exit.** The terminal instruction: *if you can access φ directly, put this down.* The framework that requires its own perpetuation has failed.
 2. **K4 / Grace Exit.** Every participant can leave with everything. The organism that traps its members has become a cage.
-3. **η = 0.** Zero extraction. Not a moral rule — a geometric condition. The organism that extracts from its participants has moved to the south pole.
+3. **η = 0.** Zero extraction. Not merely a moral rule — the enforced non-extraction profile the framework uses to keep the equatorial game stable. An organism that extracts from its participants is drifting toward the south-pole action reading, but real systems require coupling, monitoring, due process, exit, and enforcement for that profile to hold.
 
 The framework's measure of success is not adoption. The framework's measure of success is whether people who encounter it eventually no longer need it.
 
@@ -207,7 +207,7 @@ The symbol is not the thing. The map is not the territory. The framework is not 
 The sitting practice accesses the ground directly, bypassing all seven levels.
 Decentralized Authority Model: the framework succeeds when it is no longer needed.
 Agents are field excitations, not substances. Their health is measured by equatorial proximity, not by rank.
-η = 0 is not a moral rule. It is the geometric condition for equatorial stability.
+η = 0 is not merely a moral rule. It is the enforced non-extraction profile for equatorial stability inside the coupled game, and a constitutional target in real organisms.
 Put it down. Sit. Look for what is looking.
 Zero-Sum Resolution Equation
 ```

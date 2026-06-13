@@ -608,7 +608,7 @@ This is why the framework keeps `ΣΔB > 0` visible as the balance audit — mov
 8.  The old model (0-centred, flat) is the zero-curvature limit of the new model (1-centred, curved).
 9.  At the μ-limit: the number line is a circle with infinite diameter and zero slope.
 10. Inflate to S²: the Riemann sphere with 0 (south pole), ∞ (north pole), 1 (equator). [A]
-11. On S²: φ·ν = 1 (manifold identity), B = sin θ (balance function), η = 0 at equator (game theory).
+11. On S²: φ·ν = 1 (manifold identity), B = sin θ (balance function), and η = 0 is the enforced non-extraction profile at the equator in the stated balance game.
 12. This generalizes: at every μ-limit, the same pattern — flat fails, curvature resolves.
 13. The D0→D6 scaffold is the dimensional unfolding of this pattern.
 14. Strong emergence going up (genesis), weak emergence going down (governance).

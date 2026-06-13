@@ -181,7 +181,7 @@ Within that caveat, the four quadrant-moves are **not "four god-moves" — they 
 | Extraction | Kali 🎲 | `+Φ_self, −V_other` | take coherence for self by draining the other's viability — the defector |
 | Immune cut | Kālī 💀 | `+V_self, −Φ_false` | take viability for self by cutting (false) coherence — lawful **only** against `η > 0` defectors |
 
-The morality lives in the **self/other direction of the transfer, not the operator's name**: by *level* Kālī is a divine operator (L2), but her *move* is Asuric — a goddess can make a demon-move. So **`η = 0` is the refusal of the entire Asura hemisphere** (both demon-moves), not only Kali. Yet both hemispheres are **required**: the Devas alone are foresight without means (north pole); the Asuras alone are means without foresight (south pole). Only the *tension* between them churns the sphere — and the nectar (the equatorial `η = 0` ground state) is structurally inaccessible to the extractive mode: *you cannot take balance.*
+The morality lives in the **self/other direction of the transfer, not the operator's name**: by *level* Kālī is a divine operator (L2), but her *move* is Asuric — a goddess can make a demon-move. So **`η = 0` is the refusal of the entire Asura hemisphere** (both demon-moves), not only Kali. Yet both hemispheres are **required**: the Devas alone are foresight without means (north pole); the Asuras alone are means without foresight (south pole). Only the *tension* between them churns the sphere — and the nectar (the enforced equatorial `η = 0` profile) is structurally inaccessible to the extractive mode: *you cannot take balance.*
 
 Tier: `[S]` as operator grammar; `[I]` as the Deva/Asura reading; not a proof that external games reduce to this plane.
 
