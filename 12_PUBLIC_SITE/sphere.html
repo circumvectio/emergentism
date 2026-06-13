@@ -69,13 +69,10 @@
 }}
 </script>
 <script type="module">
-let THREE, OrbitControls, EffectComposer, RenderPass, UnrealBloomPass;
+let THREE, OrbitControls;
 try {
   THREE = await import('three');
   ({ OrbitControls } = await import('three/addons/controls/OrbitControls.js'));
-  ({ EffectComposer } = await import('three/addons/postprocessing/EffectComposer.js'));
-  ({ RenderPass } = await import('three/addons/postprocessing/RenderPass.js'));
-  ({ UnrealBloomPass } = await import('three/addons/postprocessing/UnrealBloomPass.js'));
 } catch (e) { document.getElementById('fallback').style.display = 'flex'; throw e; }
 
 const GOLD = 0xc9a84c, TEAL = 0x3a7a6e, CRIMSON = 0x8b2e2e, VIOLET = 0x7a6ea8, WHITE = 0xe8e4df;
@@ -98,15 +95,8 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(46, innerWidth/innerHeight, 0.1, 100);
 camera.position.set(2.4, 0.9, 4.4);
 const controls = new OrbitControls(camera, canvas);
-controls.enableDamping = true; controls.dampingFactor = 0.06; controls.enablePan = false;
-controls.minDistance = 3; controls.maxDistance = 9; controls.autoRotate = true; controls.autoRotateSpeed = 0.5;
-
-let composer = null;
-try {
-  composer = new EffectComposer(renderer);
-  composer.addPass(new RenderPass(scene, camera));
-  composer.addPass(new UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), 0.75, 0.5, 0.2));
-} catch (e) { composer = null; }
+controls.enableDamping = false; controls.enablePan = false;
+controls.minDistance = 3; controls.maxDistance = 9; controls.autoRotate = false; controls.autoRotateSpeed = 0;
 
 const R = 1.5;
 const root = new THREE.Group(); scene.add(root);
@@ -162,6 +152,7 @@ function select(i){
   document.getElementById(els.b).textContent = p.B;
   document.getElementById(els.act).textContent = p.act;
   markers.forEach((m, k) => m.scale.setScalar(k === i ? 1.5 : 1));
+  render();
 }
 select(3); // L4 default
 
@@ -177,20 +168,19 @@ canvas.addEventListener('pointerup', e => {
   ptr.x = (e.clientX/innerWidth)*2 - 1; ptr.y = -(e.clientY/innerHeight)*2 + 1;
   ray.setFromCamera(ptr, camera);
   const hit = ray.intersectObjects(markers)[0];
-  if (hit) { select(hit.object.userData.i); document.getElementById('hint').style.opacity = '0'; }
+  if (hit) { select(hit.object.userData.i); document.getElementById('hint').style.opacity = '0'; render(); }
 });
 
-function animate(){
-  requestAnimationFrame(animate);
-  controls.update();
-  if (composer) composer.render(); else renderer.render(scene, camera);
+function render(){
+  renderer.render(scene, camera);
 }
-animate();
-  addEventListener('resize', () => {
-    camera.aspect = innerWidth/innerHeight; camera.updateProjectionMatrix();
-    renderer.setSize(innerWidth, innerHeight);
-    if (composer) composer.setSize(innerWidth, innerHeight);
-  });
+controls.addEventListener('change', render);
+render();
+addEventListener('resize', () => {
+  camera.aspect = innerWidth/innerHeight; camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+  render();
+});
 </script>
 
 <footer class="site-footer">

@@ -64,17 +64,17 @@
 }}
 </script>
 <script type="module">
-let THREE, OrbitControls, EffectComposer, RenderPass, UnrealBloomPass;
+let THREE, OrbitControls;
 try {
   THREE = await import('three');
   ({ OrbitControls } = await import('three/addons/controls/OrbitControls.js'));
-  ({ EffectComposer } = await import('three/addons/postprocessing/EffectComposer.js'));
-  ({ RenderPass } = await import('three/addons/postprocessing/RenderPass.js'));
-  ({ UnrealBloomPass } = await import('three/addons/postprocessing/UnrealBloomPass.js'));
 } catch (e) {
   document.getElementById('fallback').style.display = 'flex';
   throw e;
 }
+
+const REDUCED_MOTION = !!(window.matchMedia
+  && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
 
 const canvas = document.getElementById('scene');
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
@@ -88,30 +88,24 @@ camera.position.set(0, 0.7, 5.4);
 const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = true; controls.dampingFactor = 0.06;
 controls.enablePan = false; controls.minDistance = 3.2; controls.maxDistance = 9;
-controls.autoRotate = true; controls.autoRotateSpeed = 0.55;
-
-// bloom
-let composer = null;
-try {
-  composer = new EffectComposer(renderer);
-  composer.addPass(new RenderPass(scene, camera));
-  const bloom = new UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), 0.9, 0.55, 0.18);
-  composer.addPass(bloom);
-} catch (e) { composer = null; }
+controls.autoRotate = false; controls.autoRotateSpeed = 0;
 
 const GOLD = 0xc9a84c, TEAL = 0x3a7a6e, CRIMSON = 0x8b2e2e, WHITE = 0xe8e4df;
 
-// ── shared starfield (the noosphere dust) ──
+// ── reference lattice: fixed measurement frame, not atmosphere ──
 (() => {
-  const N = 700, pos = new Float32Array(N * 3);
-  // deterministic scatter (no Math.random — varied by index)
-  for (let i = 0; i < N; i++) {
-    const a = i * 2.39996, r = 9 + (i % 50) * 0.18, y = Math.sin(i * 0.7) * 7;
-    pos[i*3] = Math.cos(a) * r; pos[i*3+1] = y; pos[i*3+2] = Math.sin(a) * r;
-  }
-  const g = new THREE.BufferGeometry();
-  g.setAttribute('position', new THREE.BufferAttribute(pos, 3));
-  scene.add(new THREE.Points(g, new THREE.PointsMaterial({ color: 0x4a4636, size: 0.03, transparent: true, opacity: 0.55 })));
+  const grid = new THREE.GridHelper(7.2, 18, 0x2f3136, 0x1c1d20);
+  grid.material.transparent = true;
+  grid.material.opacity = 0.28;
+  grid.position.y = -1.72;
+  scene.add(grid);
+  const axisMat = new THREE.LineBasicMaterial({ color: 0x6d7480, transparent: true, opacity: 0.32 });
+  const axisGeo = new THREE.BufferGeometry().setFromPoints([
+    new THREE.Vector3(-3.6, -1.72, 0), new THREE.Vector3(3.6, -1.72, 0),
+    new THREE.Vector3(0, -1.72, -3.6), new THREE.Vector3(0, -1.72, 3.6),
+    new THREE.Vector3(0, -3.2, 0), new THREE.Vector3(0, 2.2, 0)
+  ]);
+  scene.add(new THREE.LineSegments(axisGeo, axisMat));
 })();
 
 // ── intro group A: finity (the point • and the ring ○) ──
@@ -241,7 +235,7 @@ const STAGES = [
 ];
 
 let cur = 0, playing = true, tAccum = 0;
-const STAGE_SECS = 5.2;
+const STAGE_SECS = 7.0;
 let morphTarget = 0, morphCur = 0;
 const fades = new Map(); // object -> target opacity
 
@@ -296,13 +290,12 @@ STAGES.forEach((_, k) => {
 document.getElementById('next').onclick = () => show(cur + 1);
 document.getElementById('prev').onclick = () => show(cur - 1);
 const pp = document.getElementById('playpause');
-pp.onclick = () => { playing = !playing; pp.textContent = playing ? '❚❚ pause' : '▶ play'; controls.autoRotate = playing; };
+pp.onclick = () => { playing = !playing; pp.textContent = playing ? '❚❚ pause' : '▶ play'; };
 addEventListener('keydown', e => { if (e.key === 'ArrowRight') show(cur+1); if (e.key === 'ArrowLeft') show(cur-1); });
 
 // counter animation (projection → ∞)
 let projExp = 0;
 function fmtProj(){
-  projExp += 0.08;
   if (projExp > 12) return 'projection → ∞';
   const val = Math.pow(10, projExp);
   return 'projection length ≈ ' + val.toExponential(1).replace('e+', '×10^');
@@ -317,7 +310,7 @@ function animate(){
   if (playing){ tAccum += dt; if (tAccum > STAGE_SECS) show(cur + 1); }
 
   // morph
-  morphCur += (morphTarget - morphCur) * Math.min(1, dt * 1.7);
+  morphCur += (morphTarget - morphCur) * Math.min(1, dt * 0.9);
   if (Math.abs(morphCur - morphTarget) > 0.001 || cur >= 2) rebuild(morphCur);
 
   // dual projection rays trade V ↔ Φ on final stage
@@ -337,22 +330,30 @@ function animate(){
     if (mat.opacity < 0.01 && target === 0) { /* leave hidden */ }
   });
 
-  if (STAGES[cur].counter) counterEl.textContent = fmtProj(); else projExp = 0;
+  if (STAGES[cur].counter) {
+    projExp = Math.min(12.2, (tAccum / STAGE_SECS) * 12.2);
+    counterEl.textContent = fmtProj();
+  } else {
+    projExp = 0;
+  }
 
-  // subtle hue on the morph mesh across the cascade
-  const hue = 0.12 + 0.04 * Math.sin(morphCur);
-  morphMat.color.setHSL(hue, 0.55, 0.55);
+  morphMat.color.setHex(GOLD);
 
   controls.update();
-  if (composer) composer.render(); else renderer.render(scene, camera);
+  renderer.render(scene, camera);
 }
 show(0);
-animate();
+if (REDUCED_MOTION) {
+  playing = false;
+  rebuild(morphCur);
+  renderer.render(scene, camera);
+} else {
+  animate();
+}
 
 addEventListener('resize', () => {
   camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
   renderer.setSize(innerWidth, innerHeight);
-  if (composer) composer.setSize(innerWidth, innerHeight);
 });
 </script>
 </body>

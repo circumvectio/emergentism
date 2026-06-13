@@ -5,6 +5,16 @@ const rootElement = document.documentElement;
 if (canvas && visual) document.body.classList.add("dimension-page");
 const REDUCED_MOTION = !!(window.matchMedia
   && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+const TAU = Math.PI * 2;
+
+function smooth01(x) {
+  return x * x * (3 - 2 * x);
+}
+
+function sweep01(t, cyclesPerSecond = 0.045) {
+  const p = ((t * cyclesPerSecond) % 1 + 1) % 1;
+  return p < 0.5 ? p * 2 : (1 - p) * 2;
+}
 const dimensionCommands = [
   { key: "/0", aliases: ["/0", "0", "d0", "titans"], label: "/0 · Titans", detail: "Ground / finity", href: "../0/" },
   { key: "/1", aliases: ["/1", "1", "d1", "one", "finity"], label: "/1 · The Special One", detail: "Reciprocal mirror", href: "../1/" },
@@ -206,7 +216,7 @@ function drawTitanCalculator(time = 0) {
     const pad = Math.max(28, Math.min(width, height) * 0.08);
     const left = pad;
     const right = width - pad;
-    const axis = cy + Math.sin(t * 0.35) * 4;
+    const axis = cy;
     const span = right - left;
     const unit = span / 12;
 
@@ -254,13 +264,12 @@ function drawTitanCalculator(time = 0) {
       }
     });
 
-    const pulse = 0.5 + Math.sin(t * 1.6) * 0.5;
-    const reciprocalS = 3.1 + Math.sin(t * 0.6) * 1.25;
+    const reciprocalS = 1.85 + smooth01(sweep01(t, 0.035)) * 2.5;
     const lx = cx - reciprocalS * unit;
     const rx = cx + reciprocalS * unit;
 
     ctx.setLineDash([8, 8]);
-    ctx.strokeStyle = `rgba(245,245,245,${0.36 + pulse * 0.28})`;
+    ctx.strokeStyle = "rgba(245,245,245,0.48)";
     ctx.lineWidth = 1.5;
     ctx.beginPath();
     ctx.moveTo(lx, axis - 72);
@@ -337,21 +346,21 @@ function ring(radius, color, opacity = 1) {
   return mesh;
 }
 
-function addStars(scene) {
-  const count = 340;
+function addReferenceField(scene) {
+  const count = 180;
   const positions = new Float32Array(count * 3);
   for (let i = 0; i < count; i += 1) {
     const a = i * 2.399963;
-    const r = 5.5 + (i % 37) * 0.055;
+    const r = 5.2 + (i % 31) * 0.06;
     positions[i * 3] = Math.cos(a) * r;
-    positions[i * 3 + 1] = Math.sin(i * 0.77) * 2.7;
+    positions[i * 3 + 1] = Math.sin(i * 0.77) * 2.2;
     positions[i * 3 + 2] = Math.sin(a) * r;
   }
   const geometry = new THREE.BufferGeometry();
   geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
   scene.add(new THREE.Points(
     geometry,
-    new THREE.PointsMaterial({ color: 0x606060, size: 0.018, transparent: true, opacity: 0.65 })
+    new THREE.PointsMaterial({ color: 0x7a7a7a, size: 0.012, transparent: true, opacity: 0.28 })
   ));
 }
 
@@ -390,7 +399,7 @@ function makeReadout() {
     el.style.cssText =
       "position:absolute;left:16px;top:16px;z-index:5;max-width:68%;" +
       "font:600 11px/1.55 'Roboto Mono',ui-monospace,Menlo,monospace;" +
-      "color:var(--text,#F3F4F6);pointer-events:none;letter-spacing:.01em;white-space:pre-line;text-align:left;" +
+      "color:var(--text,#F3F4F6);pointer-events:none;letter-spacing:0;white-space:pre-line;text-align:left;" +
       "background:color-mix(in srgb, #050505 66%, transparent);padding:9px 12px;" +
       "border:1px solid rgba(255,255,255,.09);border-radius:9px;backdrop-filter:blur(4px);" +
       "box-shadow:0 12px 34px rgba(0,0,0,.32)";
@@ -510,7 +519,7 @@ function buildScene(mode, scene) {
     const readout = makeReadout();
     if (readout) readout.style.whiteSpace = "pre-line";
     dyn.push(function (t) {
-      const s = 2.9 * Math.sin(t * 0.45);             // sweep in log coordinates
+      const s = -2.9 + smooth01(sweep01(t, 0.035)) * 5.8; // sweep in log coordinates
       const x = Math.pow(2, s);
       xPt.position.set(s * SC, 0, 0);
       invPt.position.set(-s * SC, 0, 0);
@@ -602,7 +611,7 @@ function buildScene(mode, scene) {
       const wrap = document.createElement("div");
       wrap.className = "model-slider";
       wrap.style.cssText = "position:absolute;left:16px;right:16px;bottom:16px;z-index:6;display:flex;" +
-        "align-items:center;gap:10px;font:700 11px/1 'Roboto Mono',ui-monospace,monospace;color:#9CA3AF;letter-spacing:.04em";
+        "align-items:center;gap:10px;font:700 11px/1 'Roboto Mono',ui-monospace,monospace;color:#9CA3AF;letter-spacing:0";
       const lo = document.createElement("span"); lo.textContent = "0 · horn"; lo.style.color = "#FFEB3B";
       const hi = document.createElement("span"); hi.textContent = "∞ · sphere"; hi.style.color = "#42A5F5";
       slider = document.createElement("input");
@@ -624,7 +633,7 @@ function buildScene(mode, scene) {
       if (userActive && slider) {
         w = (parseFloat(slider.value) / 100) * W_MAX;            // slider is LINEAR in rapidity = LOG in velocity
       } else {
-        w = (0.5 + 0.5 * Math.sin(t * 0.22)) * W_MAX * 0.92;    // gentle 0→∞ demo until the user grabs the slider
+        w = smooth01(sweep01(t, 0.035)) * W_MAX * 0.92;          // measured rapidity sweep until the user grabs the slider
         if (slider) slider.value = String(Math.round((w / W_MAX) * 100));
       }
       const vc = Math.tanh(w);                                  // β = v/c — tends to 1
@@ -642,11 +651,11 @@ function buildScene(mode, scene) {
       // the relative centre moves on the complex plane (log-compressed real axis)
       const px = 2.5 * Math.tanh(w / 2.2);
       relCentre.position.set(px, 0, 0);
-      relCentre.scale.setScalar(1 + 1.4 * aB);
-      root.rotation.y += 0.0024;
+      relCentre.scale.setScalar(1 + 0.45 * aB);
+      root.rotation.y = 0;
       const moving = w > 0.02;
       if (readout) readout.innerHTML =
-        "<div style='color:#FFEB3B;font-weight:800;letter-spacing:.08em;margin-bottom:6px'>D4 HORN · RAPIDITY 0 → ∞</div>" +
+        "<div style='color:#FFEB3B;font-weight:800;letter-spacing:0;margin-bottom:6px'>D4 HORN · RAPIDITY 0 → ∞</div>" +
         "w = " + w.toFixed(2) + " · β = " + vc.toFixed(4) + " " + bar(aB, "#42A5F5") + "<br>" +
         "γ = cosh(w) = " + gamma.toFixed(1) + " · E/mc² = γ " + bar(gamma / G_MAX, "#FFEB3B") + "<br>" +
         "R/r = 1/γ = " + (1 / gamma).toFixed(3) + " · dτ/dt<br>" +
@@ -740,9 +749,9 @@ function buildScene(mode, scene) {
     root.add(pMark); root.add(rayDown); root.add(rayUp); root.add(phiPt); root.add(nuPt);
 
     // the two spiral trails traced by the landings — reciprocal radii
-    const TRAIL = 360, phiTrail = [], nuTrail = [];
-    const phiLine = line([new THREE.Vector3(U, -r, 0)], 0xffeb3b, 0.38);
-    const nuLine = line([new THREE.Vector3(U, r, 0)], 0xffeb3b, 0.38);
+    const TRAIL = 180, phiTrail = [], nuTrail = [];
+    const phiLine = line([new THREE.Vector3(U, -r, 0)], 0xffeb3b, 0.24);
+    const nuLine = line([new THREE.Vector3(U, r, 0)], 0xffeb3b, 0.24);
     root.add(phiLine); root.add(nuLine);
 
     const readout = makeReadout();
@@ -761,7 +770,7 @@ function buildScene(mode, scene) {
       const wrap = document.createElement("div");
       wrap.className = "model-slider theta-slider";
       wrap.style.cssText = "position:absolute;left:16px;right:16px;bottom:16px;z-index:6;display:flex;" +
-        "align-items:center;gap:10px;font:700 11px/1 'Roboto Mono',ui-monospace,monospace;color:#9CA3AF;letter-spacing:.04em";
+        "align-items:center;gap:10px;font:700 11px/1 'Roboto Mono',ui-monospace,monospace;color:#9CA3AF;letter-spacing:0";
       const lo = document.createElement("span"); lo.textContent = "D5 Φ foresight"; lo.style.color = "#FFEB3B";
       const hi = document.createElement("span"); hi.textContent = "D4 V means"; hi.style.color = "#D23B3B";
       thetaSlider = document.createElement("input");
@@ -780,10 +789,10 @@ function buildScene(mode, scene) {
       Math.round(((theta - THETA_MIN) / (THETA_MAX - THETA_MIN)) * 100);
     const quadName = ["I", "II", "III", "IV"];
     dyn.push(function (t) {
-      const psi = t * 1.6;                                           // azimuth rotates
+      const psi = t * 0.42;                                          // measured azimuth trace
       const theta = thetaUserActive
         ? thetaFromSlider()
-        : Math.PI / 2 + 0.70 * Math.sin(t * 0.23);                  // auto-demo until the reader grabs θ
+        : THETA_MIN + smooth01(sweep01(t, 0.038)) * (THETA_MAX - THETA_MIN); // auto-demo until the reader grabs θ
       if (!thetaUserActive && thetaSlider) thetaSlider.value = String(sliderFromTheta(theta));
       const phi = 1 / Math.tan(theta / 2);                           // cot(θ/2)
       const nu = Math.tan(theta / 2);                                // 1/φ
@@ -808,7 +817,7 @@ function buildScene(mode, scene) {
       nuTrail.push(Lnu.clone()); if (nuTrail.length > TRAIL) nuTrail.shift();
       phiLine.geometry.setFromPoints(phiTrail);
       nuLine.geometry.setFromPoints(nuTrail);
-      root.rotation.y += 0.0016;
+      root.rotation.y = 0;
       const q = quadName[Math.floor((((psi % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI)) / (Math.PI / 2)) % 4];
       const opName = isBalance
         ? "Viṣṇu L5 · balance"
@@ -858,8 +867,8 @@ function buildScene(mode, scene) {
       makeMaterial(0xffffff, 0.96)
     );
     const restartPulse = new THREE.Mesh(
-      new THREE.SphereGeometry(0.12, 32, 16),
-      makeMaterial(0xffeb3b, 0.48)
+      new THREE.SphereGeometry(0.1, 32, 16),
+      makeMaterial(0xffeb3b, 0.32)
     );
     root.add(startDot);
     root.add(restartPulse);
@@ -872,17 +881,16 @@ function buildScene(mode, scene) {
     ], 0xffffff, 0.18));
     dyn.push((t) => {
       aeons.forEach((loop) => {
-        const p = (t * 0.14 + loop.userData.phase) % 1;
+        const p = (t * 0.07 + loop.userData.phase) % 1;
         const scale = 0.12 + p * 1.7;
         loop.scale.setScalar(scale);
-        loop.rotation.z = t * 0.025 + p * 0.22;
-        loop.material.opacity = Math.max(0.06, 0.88 * (1 - p));
+        loop.rotation.z = p * 0.18;
+        loop.material.opacity = Math.max(0.05, 0.72 * (1 - p));
       });
-      const pulse = (t * 0.42) % 1;
-      restartPulse.scale.setScalar(0.55 + pulse * 1.8);
-      restartPulse.material.opacity = 0.42 * (1 - pulse);
-      boundary.rotation.z = -t * 0.018;
-      boundary.material.opacity = 0.18 + 0.08 * Math.sin(t * 0.7);
+      restartPulse.scale.setScalar(1);
+      restartPulse.material.opacity = 0.26;
+      boundary.rotation.z = 0;
+      boundary.material.opacity = 0.22;
       if (readout) readout.textContent =
         "CCC RETURN · ENDSTATE = START\n" +
         "/6 ≡ /0 is route closure, not a new object\n" +
@@ -923,10 +931,8 @@ async function boot() {
     controls.enableDamping = true;
     controls.enablePan = false;
     controls.enableZoom = false;
-    // models that spin their own root don't also get camera auto-rotate
-    const selfRotating = page.animationMode === "burrisphere" || page.animationMode === "horn";
-    controls.autoRotate = !REDUCED_MOTION && !selfRotating;
-    controls.autoRotateSpeed = page.autoRotateSpeed || 0.35;
+    controls.autoRotate = false;
+    controls.autoRotateSpeed = 0;
     if (page.animationMode === "burrisphere") {
       // the sphere sits sandwiched between the two tangent planes (floor = 0,
       // top = ∞) — stand near the floor and look UP toward infinity
@@ -952,7 +958,7 @@ async function boot() {
       controls.update();
     }
 
-    addStars(scene);
+    addReferenceField(scene);
     const { root, update } = buildScene(page.animationMode, scene);
 
     function resize() {
@@ -965,13 +971,13 @@ async function boot() {
     function animate(time) {
       const t = time * 0.001;
       if (page.animationMode === "titans") {
-        root.rotation.z = Math.sin(t * 0.6) * 0.08;
+        root.rotation.z = 0;
       } else if (page.animationMode === "muLimit") {
-        root.rotation.x = Math.sin(t * 0.42) * 0.18;
+        root.rotation.x = 0;
       } else if (page.animationMode === "bloch") {
-        root.scale.setScalar(1 + Math.sin(t * 0.6) * 0.025);
+        root.scale.setScalar(1);
       } else if (page.animationMode === "convergence") {
-        root.rotation.z = t * 0.018;
+        root.rotation.z = 0;
       }
       update(t); // morphing / orbiting models (horn, burrisphere)
 

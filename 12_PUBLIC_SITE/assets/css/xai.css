@@ -1582,6 +1582,224 @@ pre.glyph-block {
     linear-gradient(180deg, transparent 44%, rgba(0,0,0,.52) 100%),
     linear-gradient(90deg, rgba(0,0,0,.32), transparent 18%, transparent 82%, rgba(0,0,0,.32));
 }
+body > span.brand {
+  position: fixed;
+  left: 32px;
+  top: 86px;
+  z-index: 4;
+  color: var(--gold);
+  font: 700 12px/1 var(--font-mono);
+  letter-spacing: 0;
+}
+body > a.exit {
+  position: fixed;
+  right: 32px;
+  top: 84px;
+  z-index: 4;
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: var(--shape-full);
+  padding: 0 14px;
+  color: var(--text-muted);
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+  text-decoration: none;
+  font: 700 12px/1 var(--font-mono);
+}
+body > a.exit:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+.title {
+  position: fixed;
+  left: 32px;
+  bottom: 32px;
+  z-index: 4;
+  max-width: min(520px, calc(100vw - 64px));
+  font-family: var(--font-mono);
+}
+.title .eq {
+  color: var(--gold);
+  font-size: clamp(18px, 3vw, 34px);
+  font-weight: 800;
+  line-height: 1.1;
+}
+.title .sub {
+  margin-top: 8px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+#overlay {
+  position: fixed;
+  left: 32px;
+  top: 136px;
+  z-index: 4;
+  width: min(360px, calc(100vw - 64px));
+  border: 1px solid var(--border);
+  border-radius: var(--shape-lg);
+  background: color-mix(in srgb, var(--bg) 76%, transparent);
+  padding: 14px 16px;
+  backdrop-filter: blur(8px);
+  pointer-events: none;
+  color: var(--text);
+}
+#glyph {
+  color: var(--gold);
+  font: 800 21px/1.05 var(--font-mono);
+  transition: opacity .18s linear;
+}
+#caption {
+  margin-top: 10px;
+  transition: opacity .18s linear;
+}
+#caption .lead {
+  display: block;
+  max-width: 30ch;
+  color: var(--text);
+  font: 700 18px/1.22 var(--font-heading);
+}
+#caption .sub {
+  display: block;
+  max-width: 42ch;
+  margin-top: 10px;
+  color: var(--text-muted);
+  font: 500 12px/1.55 var(--font-body);
+}
+#counter {
+  position: fixed;
+  right: 32px;
+  bottom: 126px;
+  z-index: 4;
+  color: var(--text-muted);
+  font: 700 12px/1 var(--font-mono);
+  opacity: 0;
+}
+#enter {
+  position: fixed;
+  left: 32px;
+  bottom: 32px;
+  z-index: 4;
+  min-height: 44px;
+  display: none;
+  align-items: center;
+  border: 1px solid var(--gold);
+  border-radius: var(--shape-full);
+  padding: 0 16px;
+  color: #050505;
+  background: var(--gold);
+  text-decoration: none;
+  font: 800 12px/1 var(--font-mono);
+}
+#enter.show { display: inline-flex; }
+button.nav {
+  position: fixed;
+  top: 50%;
+  z-index: 4;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+  color: var(--text-muted);
+  font: 400 30px/1 var(--font-heading);
+  cursor: pointer;
+}
+button.nav:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+#prev { left: 24px; }
+#next { right: 24px; }
+#playpause {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  z-index: 4;
+  min-height: 40px;
+  border: 1px solid var(--border);
+  border-radius: var(--shape-full);
+  padding: 0 14px;
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+  color: var(--text-muted);
+  font: 700 12px/1 var(--font-mono);
+  cursor: pointer;
+}
+#playpause:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+#dots {
+  position: fixed;
+  left: 50%;
+  bottom: 42px;
+  transform: translateX(-50%);
+  z-index: 4;
+  display: flex;
+  gap: 9px;
+}
+#dots .dot {
+  width: 8px;
+  height: 8px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+#dots .dot.on {
+  border-color: var(--gold);
+  background: var(--gold);
+}
+@media (max-width: 680px) {
+  body > span.brand,
+  body > a.exit {
+    display: none;
+  }
+  #overlay {
+    left: 18px;
+    right: 18px;
+    top: auto;
+    bottom: 86px;
+    width: auto;
+    padding: 12px 14px;
+  }
+  #glyph { font-size: 18px; }
+  #caption .lead {
+    font-size: clamp(17px, 6vw, 24px);
+  }
+  #caption .sub {
+    font-size: 13px;
+  }
+  #counter {
+    left: 18px;
+    right: 18px;
+    bottom: 72px;
+    text-align: left;
+  }
+  button.nav {
+    display: none;
+  }
+  #playpause {
+    right: 18px;
+    bottom: 18px;
+  }
+  #dots {
+    left: 18px;
+    bottom: 34px;
+    transform: none;
+  }
+  #enter {
+    left: 18px;
+    bottom: 18px;
+  }
+  .title {
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+    max-width: none;
+  }
+}
 /* hidden until the page's own catch sets display:flex */
 #fallback {
   display: none;
