@@ -25,7 +25,7 @@ rosetta:
 **Evidence Tier:** `[S/I]` (Structural/Interpretive)
 **Canonical Number:** PD_11 (see [PD_00_INDEX](PD_00_INDEX.md) for the definitive numbering table)
 
-> **Evidence Tier: [S/I].** The structural component follows from the D4-D5 dual projection on S² (the framework's dimensional hierarchy). The interpretive component is the mapping of classical free-will terminology onto that structure. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
+> **Evidence Tier: [S/I].** The structural component follows from the framework's coordinate/action split: `φ/ν` names reciprocal coordinates on S², while `Φ/V` names finite-node factors at the D4/D5 action boundary. The interpretive component is the mapping of classical free-will terminology onto that structure. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 
 > **Claim Boundary:** `[S/I]` This document models the free-will dilemma as D4/D5 coordinate tension. It does not prove libertarian free will, disprove compatibilism, or establish a neural mechanism for μ-limit transition. "Agency" here means an operational framework reading: D5 worldline-foresight and D4 means-to-act are both represented as present.
 
@@ -59,13 +59,13 @@ The free-will debate maps one axis to the entire sphere and then argues about wh
 
 On S², "determined" is mapped to D4 (actuality, the represented actual state). "Free" is mapped to D5 (possibility, the not-yet-actualized option-space). Both are treated as simultaneous projections of the same sphere.
 
-Within this model, freedom is not the absence of causation, and determination is not the absence of choice. They are complementary coordinates on a closed manifold where φ·ν = 1 everywhere.
+Within this model, freedom is not the absence of causation, and determination is not the absence of choice. They are complementary readings of one modeled point: on open S² the reciprocal coordinates obey `P∞ = φ · ν = 1`, while contact action is scored separately as `P_node = Φ × V`.
 
 The agent's "will" is modeled as traversal across the D4-D5 boundary via the μ-limit. At every moment, the agent is represented by a point on S² with coordinate images and, in the contact register, by finite-node factors `(Φ, V)`. The D5 projection shows what *could* be (the space of coherent, rankable possibilities). The D4 projection shows what *is available to act with* (actualized state, body, tools, energy, access). Choice is modeled as the μ-limit transition: the framework's name for D5 possibility becoming D4 actuality through available means.
 
 At the equator (Φ = 1, V = 1 in the normalized contact reading), the agent has maximum balance in the model — enough coherence to envision and rank options (D5 possibility) and enough viability as relevant means-to-act (D4 actualization). Balance is the constraint that keeps agency usable, not the whole objective by itself. The objective is the lawful selection of a reachable future without extraction.
 
-The "problem" is reframed within the framework because freedom and determination are not opposed. [S/I] They are read as the Φ and ν components of the same point. Asking "is it free or determined?" is like asking "is a point on a sphere its latitude or its longitude?" The question is malformed inside this coordinate model. Both, in this model.
+The "problem" is reframed within the framework because freedom and determination are not opposed. [S/I] They are read as D5 possibility and D4 contact aspects of the same modeled point, then evaluated at the action boundary through `(Φ, V)`. Asking "is it free or determined?" is like asking "is a point on a sphere its latitude or its longitude?" The question is malformed inside this coordinate model. Both, in this model.
 
 ## 4. THE FRAMEWORK CONNECTION
 
@@ -79,7 +79,7 @@ This is not offered as moral relativism. The equator is a geometric fact of S² 
 
 The proposal loses force if:
 
-1. **D4-only core state were sufficient.** If a purely physical, deterministic account can explain agency, choice, and moral responsibility without reference to D5, the dual projection is unnecessary. [S/I] Compatibilism would win by default.
+1. **D4-only core state were sufficient.** If a purely physical, deterministic account can explain agency, choice, and moral responsibility without reference to D5, the coordinate/action split is unnecessary. [S/I] Compatibilism would win by default.
 
 2. **The μ-limit has no empirical proxy.** If there is no detectable transition pattern between possibility representation and actualization at the neural, cognitive, or behavioral level, the proposal remains a structural analogy with no empirical traction.
 

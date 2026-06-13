@@ -296,7 +296,7 @@ The Rosetta mappings show:
 
 The Rosetta Stone translates *horizontally* — across domains. The Triadic Cascade translates *vertically* — across levels of knowledge itself:
 
-| Level | φ (coherence) | P (balance) | ν (viability) |
+| Level | φ (coherence) | B (balance / truth) | ν (viability) |
 |-------|---------------|-------------|---------------|
 | **Transcendentals** | Beauty | Truth | Justice |
 | **Disciplines** | Data Science | Auditing | Value Alignment |

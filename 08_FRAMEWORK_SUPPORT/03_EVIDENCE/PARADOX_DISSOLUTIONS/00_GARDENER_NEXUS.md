@@ -71,7 +71,7 @@ Seven-root source spine (formal source)
 | PD_08_THE_LIAR_PARADOX.md | PD_08 | Dissolution | [I] | Pole-occupation impossibility | ✓ Current |
 | PD_09_LEIBNIZ_NECESSARY_BEING.md | PD_09 | Dissolution | [I] | Self-bounding condition | ✓ Current |
 | PD_10_IS_OUGHT.md | PD_10 | Dissolution | [S] | Power-Max Lemma | ✓ Current |
-| PD_11_FREE_WILL_VS_DETERMINISM.md | PD_11 | Dissolution | [S/I] | D4-D5 dual projection | ✓ Current |
+| PD_11_FREE_WILL_VS_DETERMINISM.md | PD_11 | Dissolution | [S/I] | D4/D5 coordinate-action split | ✓ Current |
 | PD_12_MEASUREMENT_PROBLEM.md | PD_12 | Dissolution | [I] | Bloch-Burri correspondence | ✓ Current |
 | PD_13_HARD_PROBLEM.md | PD_13 | Dissolution | [I] | Extraction reframing | ✓ Current |
 | PD_14_MIND_BODY.md | PD_14 | Dissolution | [I] | Zombie refutation | ✓ Current |
@@ -197,7 +197,7 @@ Seven-root source spine (formal source)
 |-----------|-------|
 | **Theme** | Flat-coordinate error → S² topology correction |
 | **Nodes** | PD_11 (Free Will), PD_08 (Liar), PD_05 (One/Many), PD_21 (Death) |
-| **Core Pattern** | D4-D5 dual projection; φ·ν = 1 constraint |
+| **Core Pattern** | D4/D5 coordinate-action split; `P∞ = φ · ν = 1`; `P_node = Φ × V` at contact |
 | **Evidence Tier** | [S/I] Structural/Interpretive |
 | **Confidence** | 0.89 |
 | **Status** | PROPOSED → principal review |
