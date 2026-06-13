@@ -499,6 +499,11 @@ h3 {
   text-wrap: balance;
 }
 
+.model-readout.instrument-readout {
+  text-wrap: auto;
+  font-variant-numeric: tabular-nums;
+}
+
 .fallback {
   position: absolute;
   inset: 0;

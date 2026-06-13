@@ -198,6 +198,13 @@ function setupCanvas2D() {
 function drawTitanCalculator(time = 0) {
   const { ctx, resize } = setupCanvas2D();
   const tickValues = [-6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6];
+  const readout = makeReadout();
+  if (readout) {
+    readout.style.left = "auto";
+    readout.style.right = "16px";
+    readout.style.maxWidth = "min(420px, 46%)";
+    readout.classList.add("instrument-readout");
+  }
   let bounds = resize();
   window.addEventListener("resize", () => {
     bounds = resize();
@@ -302,6 +309,12 @@ function drawTitanCalculator(time = 0) {
     marker(cx, axis, 13, "#fff", "⊙", "s = log(1) = 0");
     marker(rx, axis, 8, muted, "○", "s -> +∞");
 
+    if (readout) readout.textContent =
+      "D0 FRAME REGISTER · reciprocal calibration\n" +
+      "left s = " + (-reciprocalS).toFixed(2) + " · right s = " + reciprocalS.toFixed(2) + " · centre s = 0\n" +
+      "mirror operation: s ↦ −s · product register: • × ○ → ⊙\n" +
+      "measured variable: displacement only; the frame remains fixed";
+
     // titles sit below the top HTML chip and above the bottom one — no overlap
     ctx.fillStyle = ink;
     ctx.font = "700 13px ui-monospace, SFMono-Regular, Menlo, monospace";
@@ -398,11 +411,11 @@ function makeReadout() {
     el.className = "model-readout";
     el.style.cssText =
       "position:absolute;left:16px;top:16px;z-index:5;max-width:68%;" +
-      "font:600 11px/1.55 'Roboto Mono',ui-monospace,Menlo,monospace;" +
+      "font:600 11px/1.55 'Roboto Mono',ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums;" +
       "color:var(--text,#F3F4F6);pointer-events:none;letter-spacing:0;white-space:pre-line;text-align:left;" +
-      "background:color-mix(in srgb, #050505 66%, transparent);padding:9px 12px;" +
-      "border:1px solid rgba(255,255,255,.09);border-radius:9px;backdrop-filter:blur(4px);" +
-      "box-shadow:0 12px 34px rgba(0,0,0,.32)";
+      "background:rgba(5,5,5,.78);padding:9px 12px;" +
+      "border:1px solid rgba(255,255,255,.14);border-left:2px solid var(--accent,#FFEB3B);border-radius:6px;backdrop-filter:blur(4px);" +
+      "box-shadow:0 10px 28px rgba(0,0,0,.28)";
     visual.appendChild(el);
   }
   return el;
@@ -556,6 +569,35 @@ function buildScene(mode, scene) {
       new THREE.Vector3(0, 1.6, 0),
       new THREE.Vector3(1.8, 0, 0)
     ], 0xb8b8b8, 0.9));
+    const sample = makeMarker(new THREE.Vector3(-1.8, 0, 0), 0xffeb3b, 0.075);
+    const projection = makeMarker(new THREE.Vector3(-1.8, 0, 0), 0xffffff, 0.045);
+    const liftLine = line([
+      new THREE.Vector3(-1.8, 0, 0),
+      new THREE.Vector3(-1.8, 0, 0)
+    ], 0xffeb3b, 0.65);
+    root.add(sample, projection, liftLine);
+    const readout = makeReadout();
+    if (readout) {
+      readout.style.left = "auto";
+      readout.style.right = "16px";
+      readout.style.maxWidth = "min(430px, 46%)";
+      readout.classList.add("instrument-readout");
+    }
+    dyn.push((t) => {
+      const p = smooth01(sweep01(t, 0.04));
+      const x = -1.8 + 3.6 * p;
+      const lift = 1.6 * Math.max(0, 1 - Math.abs(2 * p - 1));
+      const onLine = new THREE.Vector3(x, 0, 0);
+      const onPlane = new THREE.Vector3(x, lift, 0);
+      sample.position.copy(onPlane);
+      projection.position.copy(onLine);
+      liftLine.geometry.setFromPoints([onLine, onPlane]);
+      if (readout) readout.textContent =
+        "D2 μ-LIMIT · line-to-plane assay\n" +
+        "sample λ = " + p.toFixed(2) + " · lift μ = " + lift.toFixed(2) + "\n" +
+        "constraint: a line cannot inspect its own off-axis curvature\n" +
+        "instrument reading: local coordinate gains a second degree of freedom";
+    });
   }
 
   if (mode === "bloch") {
@@ -573,12 +615,33 @@ function buildScene(mode, scene) {
     unitC.position.y = -r; root.add(unitC);
     root.add(makeMarker(N, 0xb8b8b8, 0.07));                    // ∞
     root.add(makeMarker(Sp, 0x707070, 0.07));                   // 0 — where the sphere touches ℂ
-    const th = Math.PI * 80 / 180;                              // P just above the equator → φ just over 1
-    const P0 = new THREE.Vector3(r * Math.sin(th), r * Math.cos(th), 0);
-    const land = new THREE.Vector3(2 * r / Math.tan(th / 2), -r, 0); // 2r·cot(θ/2), on the floor
-    root.add(line([N, land], 0xffeb3b, 0.9));                   // straight ray ∞ → P → ℂ
-    root.add(makeMarker(P0, 0xffffff, 0.08));
-    root.add(makeMarker(land, 0xffeb3b, 0.07));
+    const projectionRay = line([N, new THREE.Vector3(2 * r, -r, 0)], 0xffeb3b, 0.9);
+    const pMarker = makeMarker(new THREE.Vector3(r, 0, 0), 0xffffff, 0.08);
+    const landMarker = makeMarker(new THREE.Vector3(2 * r, -r, 0), 0xffeb3b, 0.07);
+    root.add(projectionRay, pMarker, landMarker);
+    const readout = makeReadout();
+    if (readout) {
+      readout.style.left = "auto";
+      readout.style.right = "16px";
+      readout.style.maxWidth = "min(430px, 46%)";
+      readout.classList.add("instrument-readout");
+    }
+    dyn.push((t) => {
+      const p = smooth01(sweep01(t, 0.035));
+      const th = (55 + 70 * p) * Math.PI / 180;
+      const P = new THREE.Vector3(r * Math.sin(th), r * Math.cos(th), 0);
+      const land = new THREE.Vector3(2 * r / Math.tan(th / 2), -r, 0);
+      pMarker.position.copy(P);
+      landMarker.position.copy(land);
+      projectionRay.geometry.setFromPoints([N, land]);
+      const phi = 1 / Math.tan(th / 2);
+      const nu = Math.tan(th / 2);
+      if (readout) readout.textContent =
+        "D3 RIEMANN/BLOCH · tangent projection\n" +
+        "θ = " + (th * 180 / Math.PI).toFixed(1) + "° · φ = cot(θ/2) = " + phi.toFixed(2) + "\n" +
+        "ν = tan(θ/2) = " + nu.toFixed(2) + " · φ·ν = 1\n" +
+        "instrument reading: surface point P lands on the complex plane";
+    });
   }
 
   if (mode === "horn") {

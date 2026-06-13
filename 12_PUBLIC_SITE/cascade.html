@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>The Emergence — Emergentism</title>
 <meta name="description" content="From the point between zero and infinity, the Burrisphere emerges. ⊙ = • × ○. φ·ν = 1 on S²." />
+<link rel="icon" href="data:,">
 
 <link rel="stylesheet" href="assets/css/xai.css">
 </head>
@@ -45,7 +46,13 @@
 
 <button class="nav" id="prev" aria-label="previous">‹</button>
 <button class="nav" id="next" aria-label="next">›</button>
-<button id="playpause">❚❚ pause</button>
+<button id="playpause">HOLD</button>
+<div id="stage-readout" aria-live="polite">CASCADE INSTRUMENT</div>
+<label id="timeline-shell" for="timeline">
+  <span>stage</span>
+  <input id="timeline" type="range" min="0" max="7" step="1" value="0" />
+  <output id="timeline-value" for="timeline">0/7</output>
+</label>
 <div id="dots"></div>
 
 <div id="fallback">
@@ -242,6 +249,10 @@ const fades = new Map(); // object -> target opacity
 const glyphEl = document.getElementById('glyph'), capEl = document.getElementById('caption');
 const leadEl = document.getElementById('lead'), subEl = document.getElementById('sub');
 const counterEl = document.getElementById('counter'), enterEl = document.getElementById('enter');
+const stageReadoutEl = document.getElementById('stage-readout');
+const timelineEl = document.getElementById('timeline');
+const timelineValueEl = document.getElementById('timeline-value');
+let textTimer = null;
 
 // safe line renderer ('|' = line break) — no innerHTML, content is static authored text
 function setLines(el, str){
@@ -254,12 +265,30 @@ function setLines(el, str){
 
 function setFade(group, target){ group.visible = true; group.traverse(o => { if (o.material) fades.set(o.material, target); }); }
 
+function stageName(index){
+  return ['finity', 'riemann', 'projection', 'mu-limit', 'bloch', 'horn', 'overlap', 'burrisphere'][index] || 'stage';
+}
+
+function syncInstrument(){
+  if (timelineEl) timelineEl.value = String(cur);
+  if (timelineValueEl) timelineValueEl.textContent = cur + '/' + (STAGES.length - 1);
+  if (!stageReadoutEl) return;
+  const phase = Math.min(1, tAccum / STAGE_SECS);
+  stageReadoutEl.textContent =
+    'CASCADE INSTRUMENT\n' +
+    'stage ' + cur + '/' + (STAGES.length - 1) + ' · ' + stageName(cur) + ' · ' + (playing ? 'RUN' : 'HOLD') + '\n' +
+    'phase = ' + phase.toFixed(2) + ' · morph target = ' + morphTarget.toFixed(2) + ' · morph actual = ' + morphCur.toFixed(2) + '\n' +
+    'sequence: line → plane → sphere → horn → Burrisphere';
+}
+
 function show(i){
+  const previous = cur;
   cur = (i + STAGES.length) % STAGES.length;
   const s = STAGES[cur];
   // text
   capEl.style.opacity = '0'; glyphEl.style.opacity = '0';
-  setTimeout(() => {
+  if (textTimer) clearTimeout(textTimer);
+  textTimer = setTimeout(() => {
     glyphEl.textContent = s.glyph; glyphEl.style.opacity = s.glyph ? '1' : '0';
     setLines(leadEl, s.lead); setLines(subEl, s.sub); capEl.style.opacity = '1';
   }, 320);
@@ -270,6 +299,7 @@ function show(i){
   // morph mesh visible from stage 2 on
   fades.set(morphMat, cur >= 2 ? 0.92 : 0);
   morphTarget = s.mt;
+  if (previous === STAGES.length - 1 && cur === 0) morphCur = morphTarget;
   setFade(burri, s.burri ? 0.95 : 0);
   // dual projection rays only on final Burrisphere stage
   const showProj = !!s.burri;
@@ -279,6 +309,7 @@ function show(i){
   // dots
   [...dots.children].forEach((d, k) => d.classList.toggle('on', k === cur));
   tAccum = 0;
+  syncInstrument();
 }
 
 // dots + controls
@@ -290,7 +321,17 @@ STAGES.forEach((_, k) => {
 document.getElementById('next').onclick = () => show(cur + 1);
 document.getElementById('prev').onclick = () => show(cur - 1);
 const pp = document.getElementById('playpause');
-pp.onclick = () => { playing = !playing; pp.textContent = playing ? '❚❚ pause' : '▶ play'; };
+function syncPlayButton(){ pp.textContent = playing ? 'HOLD' : 'RUN'; pp.setAttribute('aria-pressed', playing ? 'false' : 'true'); }
+pp.onclick = () => { playing = !playing; syncPlayButton(); syncInstrument(); };
+syncPlayButton();
+if (timelineEl) {
+  timelineEl.max = String(STAGES.length - 1);
+  timelineEl.addEventListener('input', () => {
+    playing = false;
+    syncPlayButton();
+    show(Number(timelineEl.value));
+  });
+}
 addEventListener('keydown', e => { if (e.key === 'ArrowRight') show(cur+1); if (e.key === 'ArrowLeft') show(cur-1); });
 
 // counter animation (projection → ∞)
@@ -337,6 +378,8 @@ function animate(){
     projExp = 0;
   }
 
+  syncInstrument();
+
   morphMat.color.setHex(GOLD);
 
   controls.update();
@@ -345,6 +388,8 @@ function animate(){
 show(0);
 if (REDUCED_MOTION) {
   playing = false;
+  syncPlayButton();
+  syncInstrument();
   rebuild(morphCur);
   renderer.render(scene, camera);
 } else {

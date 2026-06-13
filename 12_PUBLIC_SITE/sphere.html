@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>The Burrisphere — Emergentism</title>
 <meta name="description" content="φ·ν = 1 on S². The seven positions on the Burrisphere — drag to rotate, click a position to read its operator, discipline, and action." />
+<link rel="icon" href="data:,">
 
 <link rel="stylesheet" href="assets/css/xai.css">
 </head>
@@ -35,16 +36,22 @@
 
 <div id="panel">
   <div class="lvl" id="p-lvl">L4 · Kṣatriya</div>
-  <div class="op" id="p-op">Arjuna ⚔</div>
+  <div class="op" id="p-op">Arjuna</div>
   <div class="tier" id="p-tier" style="color:var(--gold)">God · the equator</div>
   <div class="ology" id="p-ology">Axiology</div>
   <div class="q" id="p-q">"What has value?"</div>
   <div class="row"><span class="k">Balance B = sin θ</span><span class="v" id="p-b">1.000</span></div>
+  <div class="row"><span class="k">θ / chart</span><span class="v" id="p-theta">90.0°</span></div>
+  <div class="row"><span class="k">φ · ν</span><span class="v" id="p-chart">1.00 · 1.00</span></div>
   <div class="row"><span class="k">Action / chart</span><span class="v" id="p-act">balance dΦ/Φ = dV/V</span></div>
   <div class="row"><span class="k">P∞ = φ · ν</span><span class="v">1</span></div>
+  <label class="position-scrub" for="position-scrub">
+    <span>position</span>
+    <input id="position-scrub" type="range" min="0" max="6" step="1" value="3" />
+  </label>
 </div>
 
-<div class="hint" id="hint">drag to rotate · click a position</div>
+<div class="hint" id="hint">drag to rotate · click or scrub a position</div>
 <div class="legend">
   <span><i style="background:#8b2e2e"></i>Demon-move</span>
   <span><i style="background:#c9a84c"></i>God-move</span>
@@ -78,10 +85,10 @@ try {
 const GOLD = 0xc9a84c, TEAL = 0x3a7a6e, CRIMSON = 0x8b2e2e, VIOLET = 0x7a6ea8, WHITE = 0xe8e4df;
 // the seven positions (read off 00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md / the Master Rosetta)
 const POS = [
-  { L:'L1', op:'Kali 🎲',  tier:'Demon', tierNote:'Demon · η-boundary', caste:'Caṇḍāla', ology:'Teleology',    q:'What is the end?',        B:'→ 0',  act:'limit  Φ → 0',          phi:165, col:CRIMSON },
-  { L:'L2', op:'Kālī 💀',  tier:'God',   tierNote:'God · truth-cut',     caste:'Śūdra',   ology:'Epistemology', q:'How do we know?',         B:'0.500',act:'differential  dP_node = VdΦ+ΦdV', phi:138, col:TEAL },
+  { L:'L1', op:'Kali',  tier:'Demon', tierNote:'Demon · η-boundary', caste:'Caṇḍāla', ology:'Teleology',    q:'What is the end?',        B:'→ 0',  act:'limit  Φ → 0',          phi:165, col:CRIMSON },
+  { L:'L2', op:'Kālī',  tier:'God',   tierNote:'God · truth-cut',     caste:'Śūdra',   ology:'Epistemology', q:'How do we know?',         B:'0.500',act:'differential  dP_node = VdΦ+ΦdV', phi:138, col:TEAL },
   { L:'L3', op:'Kṛṣṇa ◇',  tier:'God',   tierNote:'God · enable/audit',  caste:'Vaiśya',  ology:'Methodology',  q:'What follows?',           B:'0.866',act:'partial  ∂P_node/∂V = Φ',    phi:112, col:TEAL },
-  { L:'L4', op:'Arjuna ⚔', tier:'God',   tierNote:'God · the equator',   caste:'Kṣatriya',ology:'Axiology',     q:'What has value?',         B:'1.000',act:'balance  dΦ/Φ = dV/V',  phi:90,  col:GOLD },
+  { L:'L4', op:'Arjuna', tier:'God',   tierNote:'God · the equator',   caste:'Kṣatriya',ology:'Axiology',     q:'What has value?',         B:'1.000',act:'balance  dΦ/Φ = dV/V',  phi:90,  col:GOLD },
   { L:'L5', op:'Brahmā ○', tier:'Executive', tierNote:'Executive boundary · create both', caste:'Brāhmaṇa',ology:'Cosmology',    q:'How does reality work?',  B:'0.866',act:'log  P_node = logΦ + logV',  phi:68,  col:VIOLET },
   { L:'L6', op:'Śiva •',   tier:'Executive', tierNote:'Executive boundary · dissolve both',caste:'Sādhu',  ology:'Ontology',     q:'What is Being?',          B:'0.500',act:'neg-log  E = −log P_node',   phi:42,  col:VIOLET },
   { L:'L7', op:'Viṣṇu ⊙', tier:'Executive', tierNote:'Executive boundary · hold both',    caste:'Ṛṣi',    ology:'Theology',     q:'What is the Ultimate?',   B:'→ 0',  act:'chart  z = φ/ν',        phi:15,  col:0x6a6a6a },
@@ -124,6 +131,19 @@ function triangle(up, color){
 }
 root.add(triangle(true, GOLD), triangle(false, TEAL));
 
+const selectorMat = new THREE.LineBasicMaterial({ color: 0xe8e4df, transparent: true, opacity: 0.72 });
+const selectorRay = new THREE.Line(
+  new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0, 0, 0), new THREE.Vector3(R, 0, 0)]),
+  selectorMat
+);
+root.add(selectorRay);
+const selectedLatitude = new THREE.Mesh(
+  new THREE.TorusGeometry(1, 0.012, 12, 160),
+  new THREE.MeshBasicMaterial({ color: WHITE, transparent: true, opacity: 0.5 })
+);
+selectedLatitude.rotation.x = Math.PI / 2;
+root.add(selectedLatitude);
+
 // the seven position markers (clickable)
 const markers = [];
 POS.forEach((p, i) => {
@@ -139,9 +159,13 @@ POS.forEach((p, i) => {
 });
 
 // info panel
-const els = { lvl:'p-lvl', op:'p-op', tier:'p-tier', ology:'p-ology', q:'p-q', b:'p-b', act:'p-act' };
+const els = { lvl:'p-lvl', op:'p-op', tier:'p-tier', ology:'p-ology', q:'p-q', b:'p-b', theta:'p-theta', chart:'p-chart', act:'p-act' };
+const positionScrub = document.getElementById('position-scrub');
 function select(i){
   const p = POS[i];
+  const theta = p.phi * Math.PI / 180;
+  const phi = 1 / Math.tan(theta / 2);
+  const nu = Math.tan(theta / 2);
   document.getElementById(els.lvl).textContent = `${p.L} · ${p.caste}`;
   document.getElementById(els.op).textContent = p.op;
   const t = document.getElementById(els.tier); t.textContent = p.tierNote;
@@ -150,11 +174,20 @@ function select(i){
   document.getElementById(els.ology).textContent = p.ology;
   document.getElementById(els.q).textContent = `"${p.q}"`;
   document.getElementById(els.b).textContent = p.B;
+  document.getElementById(els.theta).textContent = p.phi.toFixed(1) + '°';
+  document.getElementById(els.chart).textContent = phi.toFixed(2) + ' · ' + nu.toFixed(2);
   document.getElementById(els.act).textContent = p.act;
   markers.forEach((m, k) => m.scale.setScalar(k === i ? 1.5 : 1));
+  const selected = markers[i].position.clone();
+  selectorRay.geometry.setFromPoints([new THREE.Vector3(0, 0, 0), selected]);
+  selectedLatitude.position.y = R * Math.cos(theta);
+  const radius = Math.max(0.08, R * Math.sin(theta));
+  selectedLatitude.scale.set(radius, radius, radius);
+  if (positionScrub) positionScrub.value = String(i);
   render();
 }
 select(3); // L4 default
+if (positionScrub) positionScrub.addEventListener('input', () => select(Number(positionScrub.value)));
 
 // raycasting
 const ray = new THREE.Raycaster(); const ptr = new THREE.Vector2();

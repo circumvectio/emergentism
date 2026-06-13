@@ -122,24 +122,21 @@
     /* ---------- the sphere ---------- */
     .sphere-stage{display:grid; place-items:center; position:relative}
     .sphere-stage svg{width:100%; max-width:500px; height:auto}
-    .lat{fill:none; stroke:var(--bone); stroke-width:1; opacity:.16; stroke-dasharray:900; stroke-dashoffset:900; animation:draw 1.8s cubic-bezier(.2,.7,.2,1) forwards}
+    .lat{fill:none; stroke:var(--bone); stroke-width:1; opacity:.16}
     .meridian{fill:none; stroke:var(--bone); stroke-width:1; opacity:.1}
     .equator{
-      fill:none; stroke:var(--gold); stroke-width:2.4; opacity:0;
-      stroke-dasharray:920; stroke-dashoffset:920; animation:draw 1.6s cubic-bezier(.2,.7,.2,1) .9s forwards, fadein .4s linear .9s forwards;
+      fill:none; stroke:var(--gold); stroke-width:2.4; opacity:1;
     }
-    .ray{fill:none; stroke:rgba(255,235,59,.52); stroke-width:1.2; stroke-dasharray:3 5; opacity:0; animation:fadein .6s linear 1.75s forwards}
+    .ray{fill:none; stroke:rgba(255,235,59,.52); stroke-width:1.2; stroke-dasharray:3 5; opacity:1}
     .meet circle{}
-    .meet{opacity:0; animation:fadein .5s linear 2.15s forwards}
-    .proj{opacity:0; animation:fadein .5s linear 2.05s forwards}
+    .meet{opacity:1}
+    .proj{opacity:1}
     .proj text{font-family:var(--mono); font-size:13px; fill:var(--gold)}
     .pole{font-family:var(--mono); fill:var(--bone-dim); font-size:12px}
     .pole .sym{font-family:var(--serif); font-size:19px}
     .pole.eq .sym{fill:var(--gold)} .pole.eq{fill:var(--gold)}
     .pole.inf .sym{fill:var(--cold)} .pole.zero .sym{fill:var(--violet)}
-    .dot{animation:fadein .5s linear 2.05s both}
-    @keyframes draw{to{stroke-dashoffset:0}}
-    @keyframes fadein{to{opacity:1}}
+    .dot{opacity:1}
 
     /* ---------- reveal ---------- */
     .js .reveal{opacity:0}
@@ -231,7 +228,7 @@
     }
     @media(prefers-reduced-motion:reduce){
       *{animation:none!important; transition:none!important}
-      .lat{stroke-dashoffset:0} .equator,.ray,.dot,.meet,.proj{opacity:1}
+      .equator,.ray,.dot,.meet,.proj{opacity:1}
       .js .reveal{opacity:1; transform:none}
     }
   </style>
@@ -266,11 +263,6 @@
       <div class="sphere-stage reveal" aria-hidden="true">
         <svg viewBox="0 0 500 418" role="img">
           <defs>
-            <radialGradient id="orb" cx="38%" cy="30%" r="80%">
-              <stop offset="0%" stop-color="#1b2433"/>
-              <stop offset="55%" stop-color="#10151f"/>
-              <stop offset="100%" stop-color="#080b11"/>
-            </radialGradient>
             <linearGradient id="poles" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stop-color="rgba(188,212,242,.35)"/>
               <stop offset="48%" stop-color="rgba(255,235,59,.10)"/>
@@ -279,16 +271,16 @@
           </defs>
 
           <!-- sphere body -->
-          <circle cx="210" cy="200" r="140" fill="url(#orb)" stroke="rgba(236,230,214,.18)" stroke-width="1"/>
+          <circle cx="210" cy="200" r="140" fill="#080b11" stroke="rgba(236,230,214,.18)" stroke-width="1"/>
           <circle cx="210" cy="200" r="140" fill="url(#poles)" opacity=".9"/>
 
           <!-- latitudes (7 positions) -->
-          <ellipse class="lat" cx="210" cy="80"  rx="72"  ry="12" style="animation-delay:.15s"/>
-          <ellipse class="lat" cx="210" cy="122" rx="116" ry="20" style="animation-delay:.3s"/>
-          <ellipse class="lat" cx="210" cy="160" rx="134" ry="23" style="animation-delay:.45s"/>
-          <ellipse class="lat" cx="210" cy="240" rx="134" ry="23" style="animation-delay:.7s"/>
-          <ellipse class="lat" cx="210" cy="278" rx="116" ry="20" style="animation-delay:.85s"/>
-          <ellipse class="lat" cx="210" cy="320" rx="72"  ry="12" style="animation-delay:1s"/>
+          <ellipse class="lat" cx="210" cy="80"  rx="72"  ry="12"/>
+          <ellipse class="lat" cx="210" cy="122" rx="116" ry="20"/>
+          <ellipse class="lat" cx="210" cy="160" rx="134" ry="23"/>
+          <ellipse class="lat" cx="210" cy="240" rx="134" ry="23"/>
+          <ellipse class="lat" cx="210" cy="278" rx="116" ry="20"/>
+          <ellipse class="lat" cx="210" cy="320" rx="72"  ry="12"/>
           <!-- meridian hint -->
           <ellipse class="meridian" cx="210" cy="200" rx="46" ry="140"/>
 
