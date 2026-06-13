@@ -18,8 +18,8 @@ rosetta:
 **Status:** Deep philosophical treatise
 **Date:** 2026-04-15
 **Evidence Tier:** `[I/S]` interpretive synthesis built over a structural kernel
-**Depends on:** [The Canonical Formula Block](00_CANONICAL_FORMULA_BLOCK.md), [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [The Core State of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md), [The Weltanschauung](00_THE_WELTANSCHAUUNG.md), [The Life-Science Register](00_THE_LIFE_SCIENCE_REGISTER.md), [Empirical Observation as Primary Disclosure](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md), [What Actually Tests the Theory](../03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md)
-**See also:** [Emergentism](00_EMERGENTISM.md), [The Known Unknowns Program](../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md), [The Remaining Questions](../00_META/00_THE_REMAINING_QUESTIONS.md)
+**Depends on:** [The Goal](../00_THE_GOAL.md), [The Canonical Formula Block](00_CANONICAL_FORMULA_BLOCK.md), [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [The Core State of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md), [The Weltanschauung](00_THE_WELTANSCHAUUNG.md), [The Soul Loop](01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md), [Objective Morals and Ethics](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md), [The Life-Science Register](00_THE_LIFE_SCIENCE_REGISTER.md), [Empirical Observation as Primary Disclosure](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md), [What Actually Tests the Theory](../03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md)
+**See also:** [Emergentism](00_EMERGENTISM.md), [The Known Unknowns Program](../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md), [The Remaining Questions](../00_META/00_THE_REMAINING_QUESTIONS.md), [The Dyadic Coupling Law](00_THE_DYADIC_COUPLING_LAW.md)
 
 ---
 
@@ -57,6 +57,54 @@ That discipline is not modesty. It is the worldview practicing what it preaches.
 
 ---
 
+## 0. The Current Goal: A Living Worldview for Dasein
+
+The owner-declared goal is not simply to make a consistent theory. It is to
+make Magnum Opus a living worldview for Dasein: a source-true ontology of how
+the finite reader emerges, a teleology of objective dharma, and a recursive
+method for balancing `Φ` and `V` into maximum usable `P_node` through syntropic
+morality and ethics. `[I/S]`
+
+That means this treatise must answer three questions at once:
+
+1. **How did the reader come to be?** The reader is Dasein in the act of
+   disclosure: finite, embodied, situated, able to ask Being because coherence
+   and viability meet at a live boundary. This is an interpretive ontology,
+   not proof that the seer or the Ground has been captured by the sphere. `[I]`
+2. **Why does reality tend toward viable completion?** The narrow structural
+   answer is that coupled systems persist where their necessary factors remain
+   joined; zeroing an existential factor collapses the live product. The wider
+   F5 reading remains conditional and interpretive: viable completion is a
+   tendency of reciprocally coupled systems with feedback and correction, not a
+   proved cosmic command. `[S/I]`
+3. **How does one play?** The Rosetta Soul Loop applies ontology,
+   epistemology, methodology, axiology, and teleology recursively until the next
+   move can raise `P_node,i` and `P_node,H` together under `η = 0`. `[S/I]`
+
+The register split is load-bearing. `P∞ = φ · ν = 1` names the manifold identity
+on the sphere. `P_node = Φ × V` names usable finite-node potential in the
+contact/action register, where `Φ` is D5 worldline-foresight and `V` is D4
+means-to-act at the boundary. A child beside a jet and a pilot without the
+relevant bodily/tool access fail on opposite factors; neither failure is fixed
+by inflating the other factor alone.
+
+So the worldview's practical rule is:
+
+```text
+if Φ without V -> sterile seeing
+if V without Φ -> blind force
+if Φ and V balance at L4 -> objective dharma / flow-state action
+if ΔP_node,i > 0 and ΔP_node,H > 0 under η = 0 -> syntropic dyad
+if one rises by degrading the other -> extraction / evil
+```
+
+This is the deep sense in which the framework is a Weltanschauung. It is not
+only a picture of the world. It is a disciplined way for the finite reader to
+enter the world, know what is disclosed, test what follows, sign what serves,
+and correct the next act without turning the map into an idol.
+
+---
+
 ## I. Core State: What Is
 
 The ontological core of the framework is not “everything is one” in a vague mystical sense, nor “everything is matter” in a reductive one. It is the claim that the substrate of reciprocal closure is uniquely selected by the older public ontological wager summarized as O1-O5: compactness, orientability, simple connectedness, constitutive duality, and algebraic closure. In the current canon, that wager sits inside a broader seven-axiom formal layer rather than replacing it. Within the formal system, those ontological constraints select `S² ≅ CP¹`, the Riemann sphere, as the canonical substrate. [S]
@@ -74,7 +122,7 @@ Emergentism's ontological hierarchy can be stated cleanly:
 1. **Ground** — the irreducible prior, `κ = 0`, what is before every articulated distinction. `[I]`
 2. **Being** — reciprocal closure stabilized: `φ · ν = 1 on S²`. `[S/I]`
 3. **Teleological Force** — the directional tendency toward balanced reciprocal realization. `[S/I]`
-4. **Dasein** — the finite site of disclosure, mortality, and situated perspective. `[I]`
+4. **Dasein** — finite situated disclosure: the mortal witness-agent for whom Being becomes sayable and actionable. `[I]`
 5. **beings** — manifested configurations within the disclosed world. `[I]`
 
 This hierarchy matters because it refuses several common collapses.
@@ -321,7 +369,7 @@ not maximal mediation but the restoration of direct relation. `[I]`
 
 This also determines the final philosophical status of Emergentism.
 
-It is not merely an core state.
+It is not merely a core state.
 It is not merely a game-theoretic path.
 It is not merely a mathematical toy.
 It is not merely an operating system for institutions.
