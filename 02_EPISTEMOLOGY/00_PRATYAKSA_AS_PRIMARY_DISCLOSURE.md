@@ -12,7 +12,7 @@ rosetta:
   operator: "Kālī 💀"
   tier: "God"
   regime: "Śūdra"
-  register: "[I/E]"
+  register: "[I/A]"
   canonical_phrase: "Pratyakṣa is primary disclosure"
 ---
 
@@ -22,7 +22,7 @@ rosetta:
 
 **Status:** Canonical epistemic bridge for first-person evidence
 **Date:** 2026-04-14
-**Evidence Tier:** [I/E] Interpretive inside the core state; partially supported by neurophenomenology, interoceptive systemic awareness research, and contemplative science
+**Evidence Tier:** [I/A] Interpretive inside the core state; partially supported by established neurophenomenology, interoceptive systemic awareness research, and contemplative science literatures
 **Depends on:** [The Honest Position](01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [The Core State of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md)
 **See also:** [The Replication Protocol](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_REPLICATION_PROTOCOL.md), [I Is the Equator](00_I_IS_THE_EQUATOR.md), [The Sitting Practice](../90_ARCHIVE/00_THE_SITTING_PRACTICE.md)
 

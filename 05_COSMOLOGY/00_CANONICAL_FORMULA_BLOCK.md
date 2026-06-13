@@ -9,7 +9,7 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[E/S]"
+  register: "[A/S]"
   canonical_phrase: "Canonical Formula Block"
   vmosk_a_ref: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root (see also 00_SEVENFOLD_FOUNDATION_ROOT.md)"
 ---
@@ -17,7 +17,7 @@ rosetta:
 # The Canonical Formula Block
 
 **Status:** Active
-**Evidence tier:** [E/S] Canonical compression of the load-bearing sequence
+**Evidence tier:** [A/S] Canonical compression of the load-bearing sequence
 **Depends on:** `01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md`, `../01_TELEOLOGY/02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md`
 **Purpose:** The shortest verbatim block that states the framework's load-bearing sequence without hierarchy drift
 

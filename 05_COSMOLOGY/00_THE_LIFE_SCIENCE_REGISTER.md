@@ -129,8 +129,8 @@ It does make the framework's evidence architecture more scientifically legible.
 | **Being** | No single biology term. In living systems it appears indirectly as reciprocal self-maintaining closure. | [I] if mapped into biology. |
 | **Teleological Force** | The proposed unifying name for teleonomy + autopoiesis + homeostatic/allostatic + interoceptive viability-direction. | [I] interpretive synthesis over [S] biological phenomena. |
 | **Dasein** | The embodied, finite, self-modeling organism or agent for whom viability and disclosure matter. | [I] philosophical translation using biological agency. |
-| **beings** | Organisms, ecologies, lineages, institutions, technical systems. | [E/I] depending on the claim. |
-| **Pratyakṣa** | In scientific register: disciplined first-person disclosure or trained phenomenological report constrained by physiology, behavior, and method. | [I/E] bridge term; not standalone proof of frontier claims. |
+| **beings** | Organisms, ecologies, lineages, institutions, technical systems. | [A/I] depending on the claim. |
+| **Pratyakṣa** | In scientific register: disciplined first-person disclosure or trained phenomenological report constrained by physiology, behavior, and method. | [I/A] bridge term; not standalone proof of frontier claims. |
 | **Equator** | The viable operating regime where integration and capability remain jointly sustainable. | [I] biological analogy, not a standard term. |
 | **Operational ektropy (`P_node = Φ × V`)** | Heuristic multiplicative proxy for integration x viability at the node level. | [S/I] framework model, not standard biology. |
 | **Hidden Hand** | Older metaphor for viability-directed organization in biology. | Prefer teleonomy / self-maintaining regulation when writing for scientists. |

@@ -7,7 +7,7 @@
 The framework's over-claims ("fifth force," "unifies the sciences," "verified 92%," "creatively destroys the Big Four") are **not lapses — they are endogenous.** A lens that fits every domain becomes unfalsifiable in proportion to its scope: a failure in one domain is always absorbable as "that register has a different geometry." Scope buys immunity; immunity *feels like* confirmation; and confirmation wearing a beautiful seven-fold symmetry is, from the inside, indistinguishable from profundity. So the architecture **secretes grandiosity** — which is why it needed three separate immune systems (A7, Paper P, the Serpent). A one-time scrub does not hold; the next extension of the lens regenerates the over-claim. This rule is the antibody **made standing.**
 
 ## The rule
-> **Every cathedral-scope claim wears its evidence tier inline, on the surface a reader actually sees — and carries the "lens, not law" frame unless it is `[A]` or `[E]`.**
+> **Every cathedral-scope claim wears its evidence tier inline, on the surface a reader actually sees — and carries the "lens, not law" frame unless it is `[A]` or `[B]`.**
 
 A *cathedral-scope* claim is any claim that reaches across domains (physics ↔ biology ↔ ethics ↔ theology) or asserts unification, fundamental status, proof, or conquest. The tier must be **visible at the point of the claim**, not buried in a footnote or a frontmatter field — because the failure mode is a reader absorbing a `[C]` as an `[A]`.
 

@@ -72,7 +72,7 @@ Ground -> Being -> Teleological Force -> Dasein -> beings
 | **Being** | Stable reciprocal closure: `φ · ν = 1 on S²` | The first stable ontological identity inside the framework | `[S]` internally; `[I]` ontologically |
 | **Teleological Force** | Directional bias toward viable completion within manifestation | Appears downstream of Being, especially where selection becomes legible | `[I/S]` |
 | **Dasein** | Finite situated disclosure; the witness-agent for whom Being becomes sayable | Minimal witness at D4; enacted agency at D5; released at D6 | `[I]` |
-| **Beings** | Manifest configurations, organisms, agents, institutions, worlds | Appear within the opened dimensional field | `[E/I]` depending on claim |
+| **Beings** | Manifest configurations, organisms, agents, institutions, worlds | Appear within the opened dimensional field | `[A/I]` depending on claim |
 
 The most important guardrail:
 

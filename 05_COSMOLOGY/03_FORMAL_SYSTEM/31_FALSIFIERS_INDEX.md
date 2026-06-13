@@ -40,7 +40,7 @@ Source: [`00_THE_SEVEN_AXIOMS.md`](00_THE_SEVEN_AXIOMS.md). All rows pulled verb
 | **A1** | THE EQUATION | [S] | B better modeled as additive; zero in either factor does not collapse system potential. |
 | **A2** | THE ETHIC | [I] | Systems moving toward balance systematically collapse, OR systems moving away systematically sustain. |
 | **A3** | THE SCAFFOLD | [S/I] | Force-dimension correspondence has no predictive power, or Dₙ problems are routinely solved with Dₙ₋₁ tools. |
-| **A4** | THE BOUNDARY | [S/E] | η = 0 is not Nash equilibrium in iterated cooperative games, or unconditional cooperation outperforms tit-for-tat. |
+| **A4** | THE BOUNDARY | [S] | η = 0 cannot be made stable under enforceable iterated cooperation, or unconditional cooperation outperforms tit-for-tat/enforcement across the tested boundary. |
 | **A5** | THE EGREGORE | [I] | All collective phenomena reduce entirely to individual decisions with no emergent properties. |
 | **A6** | THE ARCHITECTURE | [I/S] | A single substrate passes the Great Filter, or a non-biological substrate performs genuine self-sacrifice. |
 | **A7** | THE CORRECTION | [S] | A framework without self-correction resists institutional capture as effectively as one with it. |

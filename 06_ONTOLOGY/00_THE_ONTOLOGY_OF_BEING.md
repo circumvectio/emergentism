@@ -103,7 +103,7 @@ These must not be collapsed into one another.
 | **Being** | `φ · ν = 1 on S²` — the stable reciprocal identity named by the framework | [S] inside the formalism, [I] as core state |
 | **Teleological Force** | The directional pull toward viable completion emerging from Being; positive descriptions relocated to [Teleological Force and F5 Dynamics](../05_COSMOLOGY/02_EMERGENTISM_CORE/01_TELEOLOGICAL_FORCE_AND_F5_DYNAMICS.md) | [I] |
 | **Dasein** | Finite situated disclosure: the mortal `⊙` for whom Being becomes explicit | [I] |
-| **Beings** | The manifested configurations, entities, systems, and worlds that appear on the basis of Being | [E/I] depending on claim |
+| **Beings** | The manifested configurations, entities, systems, and worlds that appear on the basis of Being | [A/I] depending on claim |
 | **In Rosetta coordinates** | The Ground is the pole-boundary `L0 = L∞` (B = 0, Kāla/Trimūrti, `• × ○ = ⊙`, D6 ≡ D0), reached only by Śiva (L6) via-negativa; Being is read as the manifold `φ · ν = 1 on S²` between the poles; Dasein is the L4 equator where Being becomes sayable | [I/S] |
 
 **Ground is prior. Being is the first stable closure. Teleological Force is the first generative bias in manifestation. Dasein is the site of disclosure. Beings are what show up.**

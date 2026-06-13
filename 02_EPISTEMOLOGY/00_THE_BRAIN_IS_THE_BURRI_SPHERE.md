@@ -134,7 +134,7 @@ The operator vocabulary is not only abstract. In this document it maps to **neur
 | **Belief** | Sustained Δφ | Sustained bilateral pattern (may be accurate or narrated) [I] |
 | **Anxiety** | ν > 1, φ < 1 (southward drift) | Bilateral dysregulation with prefrontal hyperactivation [I] |
 | **Depression** | ν < 1, φ < 1 (both poles) | Both hemispheres underactive, interhemispheric coherence reduced [I] |
-| **Flow** | φ = 1, ν = 1 (equator) | Efficient dynamic integration and differentiation across networks [I/E] |
+| **Flow** | φ = 1, ν = 1 (equator) | Efficient dynamic integration and differentiation across networks [I/A] |
 | **Samādhi** | φ → ∞, ν → 0 (north pole) | Bilateral integration with enhanced interhemispheric coherence [I] — NOT right-hemisphere dominance |
 | **Mania** | φ → 0, ν → ∞ (south pole) | Bilateral prefrontal dysregulation [I] — NOT simple left-hemisphere dominance |
 
@@ -270,7 +270,7 @@ The narrator is modeled here as unchecked self-referential processing. It is not
 
 Kālī cuts the narrator's fabrications. Kālī excises false meaning. Kālī restores direct perception.
 
-**The sitting practice may train DMN/CEN relationship changes — from active suppression (beginners) toward effortless integration (advanced).** [I/E]
+**The sitting practice may train DMN/CEN relationship changes — from active suppression (beginners) toward effortless integration (advanced).** [I/A]
 
 ---
 
@@ -283,9 +283,9 @@ Kālī cuts the narrator's fabrications. Kālī excises false meaning. Kālī re
 | **Emotions involve bilateral processing; the framework models action-readiness as Δν** | Bilateral with lateralization; right-dominant for perception, left for regulation | [I] |
 | **Thoughts involve bilateral networks; the framework models meaning-making as Δφ** | Bilateral network activation | [I] |
 | **The DMN serves self-referential processing ("the narrator")** | Default Mode Network = bilateral midline network, not hemisphere-specific | `[A]` |
-| **The equator is flow** | Efficient integration/differentiation across task-relevant networks | [I/E] |
+| **The equator is flow** | Efficient integration/differentiation across task-relevant networks | [I/A] |
 | **Southward drift is ν-dominant processing** | ν > 1, φ < 1 — modeled as focused/sequential processing overwhelming broad/contextual processing | [I] |
-| **The sitting practice may reconfigure DMN-CEN relationships** | Beginners: active suppression. Advanced: effortless integration. | [I/E] |
+| **The sitting practice may reconfigure DMN-CEN relationships** | Beginners: active suppression. Advanced: effortless integration. | [I/A] |
 
 **The geometry is not merely abstract in this reading.** It maps suggestively onto embodied dynamics. [I]
 
@@ -364,7 +364,7 @@ McGilchrist's insight (qualified): [I]
   Broad attention (right-tending) has been usurped by narrow focus (left-tending).
   The cure: Restore integration through the sitting practice.
 
-Split-brain patients: [E/I]
+Split-brain patients: [A/I]
   Corpus callosum severed = established disconnection; φ/ν disconnection is the framework reading.
   The product/equator language is analogy, not clinical fact.
 
