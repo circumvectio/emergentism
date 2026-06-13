@@ -75,7 +75,7 @@ The problem is reframed when you recognize that measurement is dimensional, not 
 
 ## 4. THE FRAMEWORK CONNECTION
 
-The D4-D5 dual projection on S² provides the structural basis. D5 is the φ-domain (coherence, superposition, wavefunction). D4 is the ν-domain (viability, actuality, definite states). The equator (Φ = 1, V = 1) is the region of maximum balance — where the agent has equal access to both domains.
+The D4-D5 bridge provides the structural basis, but the registers must not be collapsed. On the sphere, `φ` names the coherence coordinate and `ν` names the viability coordinate. In the action register, `Φ` is D5 worldline-foresight — the agent's ability to hold and rank reachable possibilities — while `V` is D4 means-to-act: the body, tool, energy, and access side through which one branch becomes definite. The equator (`φ = ν = 1`; action read: `Φ` and `V` both usable) is the maximum-balance region where possibility and actuality can be coupled without either pole consuming the other.
 
 The μ-limit is the mechanism of D5→D4 traversal. It is not unique to quantum measurement. It operates in every act of actualization: every decision, every perception, every moment a possibility becomes a fact. Quantum mechanics simply makes the D5 domain explicit through the wavefunction formalism, making the transition unusually visible.
 
