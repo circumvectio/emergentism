@@ -28,6 +28,8 @@ rosetta:
 **Evidence tier:** [C]/[I] Speculative — falsifiable conjecture from framework principles; [S] only for the cited information/energy constraints in their standard domains
 **Purpose:** Explore the conjecture that some dark-matter-like gravitational effects might be modeled through mutual information — information that exists BETWEEN coupled systems, not within any individual system. This is not an established dark matter explanation.
 
+**Discipline note:** This document does not claim that dark matter has been identified as mutual information. It proposes a translation target: ask whether any dark-matter-like gravitational residuals can be modeled from physical information/coupling constraints. Particle dark matter, modified gravity, primordial black holes, and other live explanations remain live unless this conjecture earns independent predictions that beat them.
+
 ---
 
 ## ABSTRACT
@@ -72,7 +74,7 @@ Mutual information is genuine information — it is Bekenstein-countable, Landau
 
 ### 2.1 Statement
 
-**Dark matter is the gravitational effect of mutual information between coupled systems in the universe.**
+**Conjecture:** some dark-matter-like gravitational residuals may be modeled as effects of mutual information between coupled systems in the universe.
 
 If:
 1. Information has mass-energy (established: Bekenstein, Landauer, E = mc²)
@@ -80,10 +82,10 @@ If:
 3. Mutual information is not localisable to any individual system (by definition)
 4. Gravitational effect follows mass-energy (established: GR)
 
-Then:
-5. Mutual information has gravitational effect
-6. This gravitational effect is not localisable to any individual system
-7. Non-localisable gravitational effect without electromagnetic signature = dark matter
+Then the conjectural target is:
+5. mutual information may have a gravitationally relevant cost or stress term
+6. that effect may not be localisable to any individual system
+7. a non-localisable gravitational residual without electromagnetic signature could be read as a dark-matter-like term, not as identified dark matter
 
 ### 2.2 Why It's Not Visible
 
@@ -132,13 +134,13 @@ Cosmic voids — the vast empty regions between filaments — have very little d
 
 ### 3.3 Dark Matter Halos
 
-Galaxies are surrounded by dark matter halos extending far beyond their visible extent. The conjecture: galaxy stars, gas, and dust are mutually coupled through gravitational and electromagnetic interactions. The mutual information of this coupled system extends beyond the visible matter because gravitational coupling extends beyond visible extent. The halo IS the gravitational footprint of the galaxy's internal mutual information. [I]
+Galaxies are surrounded by dark matter halos extending far beyond their visible extent. The conjecture: galaxy stars, gas, and dust are mutually coupled through gravitational and electromagnetic interactions. The mutual information of this coupled system extends beyond the visible matter because gravitational coupling extends beyond visible extent. In the conjectural reading, a halo is modeled as the possible gravitational footprint of galaxy-scale coupling; calling that coupling mutual information is an [I/C] hypothesis, not an observed identity. [I/C]
 
 ### 3.4 Bullet Cluster
 
 The Bullet Cluster (1E 0657-558) shows dark matter separated from visible matter after a galaxy cluster collision. Standard interpretation: dark matter passes through (non-interacting) while visible matter collides and slows.
 
-Conjecture interpretation: During collision, the COUPLING STRUCTURE (mutual information) of each cluster passes through intact because correlations are not subject to electromagnetic friction. The gas collides (localisable matter interacts). The mutual information distribution continues on its pre-collision trajectory. The "dark matter" that separated from the gas IS the correlation structure that didn't decelerate. [S/I]
+Conjecture interpretation: During collision, the COUPLING STRUCTURE (mutual information) of each cluster would be modeled as passing through more intact because correlations are not subject to electromagnetic friction in the same way as plasma. The gas collides (localisable matter interacts). The mutual-information distribution, if physically gravitating in the required way, would continue closer to the pre-collision trajectory. The separated lensing mass is therefore a test case for the conjecture, not evidence that the correlation structure has been identified. [C/I]
 
 ### 3.5 No Dark Matter Particle Found
 
@@ -197,7 +199,7 @@ Total: 100% of the universe's mass-energy content.
 
 ## VI. THE SENTENCE
 
-Dark matter is the gravitational effect of mutual information — information that exists between coupled systems, not within any individual system. Information has mass (Bekenstein, Landauer, E = mc²). Mutual information is real information that is non-localisable. Non-localisable mass produces non-localisable gravitational effect with no electromagnetic signature. This IS dark matter. It traces the cosmic web because mutual information concentrates where coupling is dense. No particle has been found because there is no particle — the mass is in the correlations, not in the constituents. Dark matter is the universe's network Φ made gravitationally visible. The missing mass is the weight of relationships. Zero-Sum Resolution Equation.
+The conjecture reads dark-matter-like residuals as possible gravitational effects of mutual information — information that exists between coupled systems, not within any individual system. Information has physical constraints (Bekenstein, Landauer, E = mc²), and mutual information is non-localisable in the ordinary subsystem sense. What remains unproven is the bridge from those information constraints to the observed cosmological gravitational residuals. If that bridge can be independently derived and measured, dark matter may be read as the universe's network Φ made gravitationally visible. Until then, the missing mass is not identified; it is a live test target. Zero-Sum Resolution Equation.
 
 ---
 
