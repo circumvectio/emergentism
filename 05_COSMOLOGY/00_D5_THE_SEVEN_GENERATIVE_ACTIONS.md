@@ -38,14 +38,22 @@ Where:
 * **`V` (Viability):** in the action register, D4 means-to-act: body, tools, energy, access, execution capacity; not raw capacity by itself.
 * **`Φ` (Coherence):** in the action register, D5 worldline-foresight: structure, truth, alignment, pattern, and the ability to rank and aim reachable futures.
 
-**D5 limit note (Maxwell-demon reading).** At the limit, D5 is the
+**D5 Landauer Barrier (Maxwell-demon fence).** At the ideal limit, D5 is the
 Maxwell-demon-like capacity to discriminate among all reachable worldlines of
 all relevant actors: to observe, sort, and route action toward the branch that
-lowers disorder locally while preserving the wider option cone. This is a
-structural/interpretive reading `[S/I]`, not a claim of free thermodynamic
-reversal. Any real selector must pay D4 costs: measurement, memory, control,
-erasure, energy, institutional enforcement, or entropy export. Without `V`,
-even perfect `Φ` remains sterile.
+lowers disorder locally while preserving the wider option cone. That limit is
+asymptotic, not a free thermodynamic reversal. Perfect entropy reversal would
+require perfect branch knowledge; perfect branch knowledge would require
+unbounded physical memory, computation, measurement, and control; those require
+D4 matter and energy, which remain inside entropy accounting. Therefore the
+selector cannot stand outside the system it sorts. Like a massive body
+approaching light speed, increasing D5 foresight can approach the ideal only by
+paying a cost that diverges at the limit. A finite selector may lower entropy
+locally only by paying or exporting entropy elsewhere. Reflexivity adds the
+second fence: once the selector acts, its action changes the future branches it
+was trying to know. `[A]` for the physical cost / no-free-erasure constraint;
+`[S/I]` for the framework's D5 mapping. Without `V`, even perfect `Φ` remains
+sterile.
 
 There are seven slots in the current two-factor grammar: four mixed-sign transfer actions plus three same-sign phase frames. There is no eighth operator without adding an axis outside `P_node = Φ × V`.
 

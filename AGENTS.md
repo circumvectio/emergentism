@@ -14,7 +14,7 @@ rosetta:
 ## Relation to VMOSK-A and Overall Vision
 
 **Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
-**Overall Magnum Opus Vision [I]; Rosetta invariant [S]:** Sovereign intelligence for every natural person. phi × nu = 1 on S². eta = 0 always. The organism that succeeds when you put it down.
+**Overall Magnum Opus Vision [I]; Rosetta invariant [S]:** Sovereign intelligence for every natural person. `φ · ν = 1` on S²; `P_node = Φ × V` only in the finite-node/action register. `η = 0` always. The organism that succeeds when you put it down.
 
 This folder serves the Emergentism doctrine replicator stack (VMOSK-A above) and, through it, the Emergentism framework's perennial Vision. Every file, spec, and decision in this folder should be traceable back to at least one Objective in the project VMOSK-A and ultimately to the immutable Vision.
 

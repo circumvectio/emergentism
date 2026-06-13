@@ -81,10 +81,13 @@ worldline-foresight — the ability to envision reachable futures, rank them, an
 operate the means. A child beside a jet and a pilot without usable bodily/tool
 access are opposite zero-factor failures; durable `P_node` needs both.
 
-D5 limit gloss: ideal worldline-foresight is Maxwell-demon-like selection
-across reachable branches, but it is not a thermodynamic free lunch. Local
-disorder can be lowered only by paying D4 costs: measurement, memory, control,
-erasure, enforcement, energy, or entropy export.
+D5 Landauer Barrier: ideal worldline-foresight is Maxwell-demon-like selection
+across reachable branches, but it is an asymptote, not a thermodynamic free
+lunch. Perfect branch knowledge would require physical memory, computation,
+measurement, and control; those require matter and energy, which remain inside
+entropy accounting. The selector cannot stand outside the system it sorts.
+Local disorder can be lowered only by paying or exporting entropy elsewhere,
+and reflexive action changes the branches being predicted.
 
 Canonical sources:
 

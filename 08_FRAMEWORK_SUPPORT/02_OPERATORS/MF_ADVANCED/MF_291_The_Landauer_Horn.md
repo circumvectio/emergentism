@@ -63,6 +63,24 @@ The key insight: **information processing has a minimum thermodynamic cost.** Co
 
 And Landauer's principle says: **you cannot increase altitude without paying V.** Every bit of Φ costs at least kT ln 2 in V dissipation. The horn cannot grow taller for free.
 
+### 1.4 The D5 Landauer Barrier
+
+The demon image is useful only if the fence is stated as strongly as the dream.
+Perfect entropy reversal would require perfect branch knowledge; perfect branch
+knowledge would require unbounded physical memory, computation, measurement,
+and control. Memory and control require matter and energy, and matter and
+energy remain inside entropy accounting. Therefore the demon cannot stand
+outside the system it sorts.
+
+In the D5 register this is the **D5 Landauer Barrier**: total worldline
+discrimination is an asymptote. Like a massive body approaching light speed,
+greater D5 foresight can approach the ideal only by paying a cost that diverges
+at the limit. A finite selector can lower entropy locally only by paying or
+exporting entropy elsewhere. Reflexivity adds the second barrier: once the
+selector acts, it changes the future branches it was trying to know. `[B]` for
+the Landauer/Maxwell-demon source family already named in this operator; `[S/I]`
+for the framework mapping to D5.
+
 ---
 
 ## II. THE BIOLOGICAL LANDAUER TAX

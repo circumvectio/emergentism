@@ -82,15 +82,22 @@ P_node collapses on either missing factor:
   pilot-foresight + no bodily/tool access -> low effective P_node for running
 ```
 
-Limit-form clarification:
+Limit-form clarification — the D5 Landauer Barrier:
 
 ```text
 Ideal D5 tends toward a Maxwell-demon-like selector:
   complete worldline-foresight over the reachable branches of all relevant actors.
 
 But it is not a thermodynamic free lunch:
-  local entropy can be lowered only by paying D4 costs in measurement, memory,
-  control, erasure, or entropy export. Foresight without means remains sterile.
+  perfect branch knowledge requires memory, computation, measurement, and control;
+  memory and control require matter and energy;
+  matter and energy remain inside entropy accounting.
+
+Therefore the selector cannot stand outside the system it sorts.
+Like a massive body approaching light speed, D5 can approach perfect foresight
+only by paying a cost that diverges at the limit.
+Local entropy can be lowered only by paying or exporting entropy elsewhere.
+Reflexivity adds the final fence: acting changes the branches being predicted.
 ```
 
 ## 4. The five Knows, wired to the corpus
