@@ -84,6 +84,10 @@ directly (the only available lever):
         F5 is conditional selection toward viable completion under coupling,
         feedback, correction, and `η = 0`; disambiguated finite-node `V`
         from sphere-coordinate `ν`.
+  - generated library chrome                 : added Game links to the topbar and
+        library route row so every frozen corpus page exposes the Soul Loop's
+        outward how-to-play surface; mirrored in this generator for the next
+        successful handoff-bundle run.
   - trinity/10-the-soul-loop/                 : restored the public Goal / Ω framing
         in the Game Form and mirrored the D4 means / D5 worldline-foresight
         zero-factor examples while the source bundle is absent.
@@ -544,6 +548,7 @@ def topbar(active: str, depth: int) -> str:
         ("6", "6/"),
         ("R", "rosetta/"),
         ("S", "soul-loop/"),
+        ("Game", "game/"),
         ("A", "atlas/"),
         ("Read", "read/"),
     ]
@@ -600,6 +605,7 @@ def page_html(
     <p>{html.escape(description)}</p>
     <div class="library-route-row">
       <a href="{prefix}read/">Read</a>
+      <a href="{prefix}game/">Game</a>
       <a href="{prefix}papers/">Papers</a>
       <a href="{prefix}canon/">Canon</a>
       <a href="{prefix}foundations/">Foundations</a>
