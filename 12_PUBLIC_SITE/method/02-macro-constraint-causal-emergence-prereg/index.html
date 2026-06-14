@@ -45,6 +45,7 @@
   <article class="library-article">
     <p><strong>Project VMOSK-A:</strong> <code>01_EMERGENTISM/VMOSK_A.md</code><br>
     <strong>Evidence tier:</strong> <code>[S]</code> protocol inside the framework; <code>[I]</code> quantum-to-agency continuity thesis; <code>[C]</code> for any universal physics claim until domain tests earn their own tier.</p>
+    <p><strong>Claim Boundary:</strong> This preregistration tests macro-constraint causation only after declaring effective information, <code>EI_baseline</code>, full <code>Cost_C</code> including <code>Cost_entropy_export</code>, perturbability of <code>C</code>, and the kill condition. <code>W_C &gt; 0</code> is the witness; failure to beat fair baselines rewrites the claim instead of rephrasing the result as proof.</p>
 
     <h1 id="pre-registration-macro-constraint-causal-emergence-measurement-protocol">Pre-Registration — Macro-Constraint Causal-Emergence Measurement Protocol</h1>
 
@@ -56,14 +57,22 @@
 support(K_X^C) subset support(K_X)
 
 EI_macro = I(Y_t ; Y_{t+1} | do(Y_t), C)
-EI_micro = I(X_t ; X_{t+1} | do(X_t))
+EI_micro_fair = I(X_t ; X_{t+1} | do(X_t)) under the same budget
+EI_coarse_null = I(Y_t ; Y_{t+1} | do(Y_t), no C)
+EI_domain = best domain-specific lower mechanism witness
+
+EI_baseline = max(EI_micro_fair, EI_coarse_null, EI_domain)
 
 Cost_C = Cost_measure + Cost_memory + Cost_control
        + Cost_erasure + Cost_model + Cost_entropy_export
 
-W_C = EI_macro - EI_micro - Cost_C
+W_C = EI_macro - EI_baseline - Cost_C
 </code></pre>
     <p>The macro claim passes only if <code>W_C &gt; 0</code>, or if a cost-matched macro model improves held-out trajectory prediction or intervention selection against the best available micro baseline.</p>
+<pre><code class="language-text">exists intervention a:
+D_KL(P_C(Y_{t+1} | do(a), Y_t) || P_notC(Y_{t+1} | do(a), Y_t)) &gt; epsilon
+</code></pre>
+    <p>The perturbability check prevents a merely decorative coarse-graining from being called a cause.</p>
 
     <h2 id="objects-frozen-before-testing">2. Objects Frozen Before Testing</h2>
     <table>

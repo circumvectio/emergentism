@@ -57,6 +57,7 @@
   <article class="library-article">
     <p><strong>Paper O · Opaque from Below, Legible from Above</strong> — Evidence tier: <code>[S/I]</code> — a <strong>proposed cross-scale principle</strong>, not a proved theorem.
 <strong>Source:</strong> <code>01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_O_STRONG_WEAK_EMERGENCE_D5.md</code></p>
+<p><strong>Claim Boundary:</strong> The asymmetry theorem is operational only where the macro view becomes a costed effective information witness: <code>W_C = EI_macro - EI_baseline - Cost_C &gt; 0</code>, with <code>EI_baseline</code> including fair micro, coarse-null, and domain-mechanism baselines, and <code>Cost_C</code> including <code>Cost_entropy_export</code>. If <code>C</code> is not perturbable, or if the macro model wins only by blinding the lower model or hiding costs, the claim contracts to explanatory language.</p>
 <blockquote>
 <p><strong>Read with care.</strong> The body labels this "Theorem / heuristic" and tiers it <code>[S/I]</code> — read it as a <strong>proposed principle</strong>, not a proved mathematical theorem. Emergence is opaque viewed from below, legible viewed from above; the gap between the views is where a mediator can insert itself and charge rent — hence legitimate governance must stay legible to the strata beneath it. ("egregore" = an emergent collective agent.)</p>
 <p><strong>How this can be wrong.</strong> Falsified by <em>Symmetric Emergence</em> (a complex boundary fully predictable from the substrate before the transition), <em>Pathological Stability</em> (an extractive system genuinely transparent from below yet still dominant), or <em>Scale Dependence</em> (the asymmetry holds only at one scale).</p>
@@ -109,24 +110,37 @@ are reachable, likely, stable, reinforced, or suppressed.</p>
 <p>The emergence claim becomes measurable when we ask whether the macrostate
 retains causal information better than the available micro-description:</p>
 <pre><code class="language-text">EI_macro = I(Y_t ; Y_{t+1} | do(Y_t), C)
-EI_micro = I(X_t ; X_{t+1} | do(X_t))
+EI_micro_fair = I(X_t ; X_{t+1} | do(X_t)) under the same budget
+EI_coarse_null = I(Y_t ; Y_{t+1} | do(Y_t), no C)
+EI_domain = best domain-specific lower mechanism witness
+
+EI_baseline = max(EI_micro_fair, EI_coarse_null, EI_domain)
+
+Cost_C = Cost_measure + Cost_memory + Cost_control
+       + Cost_erasure + Cost_model + Cost_entropy_export
+
+W_C = EI_macro - EI_baseline - Cost_C
 
 causal-emergence witness:
-EI_macro &gt; EI_micro at the tested grain
+W_C &gt; 0 at the tested grain, with perturbable C
 </code></pre>
 <p>If the macro model wins only because the micro model was artificially blinded,
-the witness fails. If the macro model wins after fair intervention,
-compression, measurement, and prediction costs, the higher level is objectively
-real in the public scientific register: it is the better causal state variable
-for that system.</p>
+the witness fails. If holding, removing, or perturbing <code>C</code> does not change the
+measured future distribution, the macro term is explanatory language rather
+than a causal-information witness. If the macro model wins after fair
+intervention, compression, measurement, prediction, domain-mechanism, and
+entropy-export costs, the higher level is objectively real in the public
+scientific register: it is the better costed causal state variable for that
+system at that grain.</p>
 <p>Syntropy then has a restrained open-system meaning. A macro-constraint is
 syntropic when it increases local order, coherence, or effective information
 while paying its matter, memory, control, and entropy-export bill. It is not a
 claim of total entropy reversal, retrocausality, or a Standard Model fifth
 force.</p>
 <p>Paper X turns this section into the operational calculus: declare the lower
-law, macro map, constraint gate, cost ledger, causal-information witness, and
-kill condition before calling the macro layer a cause.</p>
+law, macro map, constraint gate, fair baseline, cost ledger, perturbable
+causal-information witness, and kill condition before calling the macro layer
+a cause.</p>
 <hr>
 <h2 id="2-a-general-cross-scale-law">2. A General, Cross-Scale Law</h2>
 <p>While this theorem initially crystallized at <code>D5</code> (the boundary between biochemical mechanism and conscious direction), it is identical across all recursive scales:</p>

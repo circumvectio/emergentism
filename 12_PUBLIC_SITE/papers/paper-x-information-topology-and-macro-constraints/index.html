@@ -57,6 +57,7 @@
   <article class="library-article">
     <p><strong>Paper X · Information Topology and Macro-Constraints</strong> — Evidence tier: <code>[S/I]</code> — structural calculus inside the framework; empirical per domain.
 <strong>Source:</strong> <code>01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md</code></p>
+<p><strong>Claim Boundary:</strong> Macro-constraint causation is a costed effective information witness, not a new force: a macro layer earns public causal standing only when <code>W_C = EI_macro - EI_baseline - Cost_C &gt; 0</code> against fair micro, coarse-null, and domain baselines, with <code>Cost_C</code> including <code>Cost_entropy_export</code>, and only when <code>C</code> is perturbable. The cross-scale continuity claim remains <code>[I]</code>; universal physics remains <code>[C]</code> until domain tests earn their own tier.</p>
 <blockquote>
 <p><strong>Read with care.</strong> This is the operational sequel to Paper O. It does not claim that macro causes break physics, that syntropy reverses total entropy, or that consciousness is quantum magic. It says a macro-cause changes the reachable-future graph of lower-law-admissible trajectories and must beat the costed micro-description.</p>
 <p><strong>How this can be wrong.</strong> Falsified or demoted if the proposed macro-cause requires forbidden lower transitions, wins only by blinding the micro model, has non-positive costed information gain, cannot be operationally perturbed, or hides memory/control/entropy-export costs.</p>
@@ -67,7 +68,7 @@
 <p><strong>Yves R. Burri &amp; Emergent Super Intelligence</strong><br>
 Menexus GmbH, 2026</p>
 <p><strong>Evidence Tier:</strong> [S/I] — structural calculus inside the framework; empirical per domain<br>
-<strong>Depends on:</strong> PAPER_O_STRONG_WEAK_EMERGENCE_D5.md, 00_BRIDGE_LAWS_BETWEEN_LEVELS.md, 00_THE_HONEST_POSITION.md</p>
+<strong>Depends on:</strong> PAPER_O_STRONG_WEAK_EMERGENCE_D5.md, 00_BRIDGE_LAWS_BETWEEN_LEVELS.md, 00_THE_HONEST_POSITION.md, 02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md</p>
 <hr>
 <h2 id="abstract">Abstract</h2>
 <p>Emergentism becomes scientifically usable only when "the higher level matters" is replaced by a testable claim. This paper states that claim as information topology: a higher-level organization is causally real when it changes the admissible topology of lower-level trajectories while preserving the lower transition laws, and when that macro-description carries more cost-adjusted causal information than the available micro-description.</p>
@@ -116,11 +117,16 @@ E_C subset E_K
 <h2 id="3-the-costed-causal-emergence-witness">3. The Costed Causal-Emergence Witness</h2>
 <p>The public witness is not verbal elegance. It is information preserved under intervention and cost.</p>
 <pre><code class="language-text">EI_macro = I(Y_t ; Y_{t+1} | do(Y_t), C)
-EI_micro = I(X_t ; X_{t+1} | do(X_t))
+EI_micro_fair = I(X_t ; X_{t+1} | do(X_t)) under the same budget
+EI_coarse_null = I(Y_t ; Y_{t+1} | do(Y_t), no C)
+EI_domain = best domain-specific lower mechanism witness
 
-Cost_C = Cost_measure + Cost_memory + Cost_control + Cost_erasure + Cost_model
+EI_baseline = max(EI_micro_fair, EI_coarse_null, EI_domain)
 
-W_C = EI_macro - EI_micro - Cost_C
+Cost_C = Cost_measure + Cost_memory + Cost_control
+       + Cost_erasure + Cost_model + Cost_entropy_export
+
+W_C = EI_macro - EI_baseline - Cost_C
 </code></pre>
 <p>A macro-description earns public causal reality at the tested grain if:</p>
 <pre><code class="language-text">W_C &gt; 0
@@ -131,6 +137,23 @@ W_C = EI_macro - EI_micro - Cost_C
 <li><strong>Reductionist erasure:</strong> If <code>W_C &gt; 0</code>, the macrostate is not merely a human nickname for microstates. It is the better causal variable at that grain.</li>
 <li><strong>Mystical inflation:</strong> If <code>support(K_X^C)</code> is not a subset of <code>support(K_X)</code>, or if the costs are hidden, the claim is not accepted.</li>
 </ol>
+<hr>
+<h2 id="3a-the-macro-constraint-lemma">3a. The Macro-Constraint Lemma</h2>
+<p><strong>Lemma (costed macro-causal admissibility).</strong> Given a lower system <code>(X, K_X)</code>, a macro map <code>pi: X -&gt; Y</code>, a constraint gate <code>G_C</code>, and a declared intervention class <code>A</code>, the macro variable <code>Y</code> earns causal status at grain <code>Y</code> only when all three conditions hold:</p>
+<pre><code class="language-text">1. closure / no magic:
+   K_X^C &lt;&lt; K_X
+   equivalently: support(K_X^C) subset support(K_X)
+
+2. non-redundant perturbability:
+   exists a in A such that
+   D_KL(P_C(Y_{t+1} | do(a), Y_t) || P_notC(Y_{t+1} | do(a), Y_t)) &gt; epsilon
+
+3. fair costed surplus:
+   W_C = EI_macro - max(EI_micro_fair, EI_coarse_null, EI_domain) - Cost_C &gt; 0
+</code></pre>
+<p>Condition 1 prevents strong-emergence magic. Condition 2 prevents a merely decorative coarse-graining from being called a cause. Condition 3 prevents weak emergence from erasing every higher-level cause by appealing to an omniscient, cost-free micro-description that no finite observer or controller can instantiate.</p>
+<p><strong>Proof sketch.</strong> If Condition 1 fails, the macro claim contradicts the accepted lower law. If Condition 2 fails, holding, removing, or perturbing <code>C</code> does not change the measured future distribution, so the macro variable is explanatory language only. If Condition 3 fails, the macro variable may remain useful shorthand, but it has not beaten the best fair baseline after the costs of measurement, memory, control, erasure, modeling, and entropy export. If all three hold, changing the macro-constraint changes lower-law-admissible future distributions and does so with positive costed causal surplus. That is the framework's operational meaning of downward causation.</p>
+<p>This is a structural lemma <code>[S]</code>, not a domain result. A domain earns <code>[A]</code>, <code>[B]</code>, or remains <code>[C]</code> according to its own lower law, intervention evidence, and preregistered witness.</p>
 <hr>
 <h2 id="4-the-causal-exclusion-repair">4. The Causal Exclusion Repair</h2>
 <p>The causal exclusion problem says: if the microstate fully determines the next state, the macro-cause is redundant.</p>
@@ -191,7 +214,9 @@ at least one inequality is strict
 <li><strong>Evidence tier:</strong> [S/I] for the framework calculus; domain claims must earn their own tier.</li>
 <li><strong>Do not say:</strong> "macro causes violate physics," "syntropy reverses total entropy," or "consciousness is quantum magic."</li>
 <li><strong>Do say:</strong> "macro causes change the topology of lower-law-admissible trajectories and must beat the costed micro-description."</li>
-<li><strong>Operational test:</strong> declare <code>X</code>, <code>Y</code>, <code>pi</code>, <code>K_X</code>, <code>G_C</code>, the cost ledger, the intervention, and the falsifier.</li>
+<li><strong>Operational test:</strong> declare <code>X</code>, <code>Y</code>, <code>pi</code>, <code>K_X</code>, <code>G_C</code>, <code>EI_baseline</code>, the cost ledger, the intervention, and the falsifier.</li>
+<li><strong>Pre-registration harness:</strong> freeze domain tests through <code>03_METHODOLOGY/03_PREREGISTRATIONS/02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md</code>.</li>
+<li><strong>Canonical Path:</strong> <code>01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md</code></li>
 </ol>
 <hr>
 <p>⊙ = • × ○</p>

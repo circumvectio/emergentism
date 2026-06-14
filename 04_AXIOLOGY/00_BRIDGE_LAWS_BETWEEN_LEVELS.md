@@ -25,6 +25,12 @@ rosetta:
 **Depends on:** [00_THE_HONEST_POSITION.md](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [00_THE_ONTOLOGY_OF_BEING.md](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md), [00_D_LEVEL_STUDIES.md](../00_META/00_D_LEVEL_STUDIES.md), [00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md](../05_COSMOLOGY/00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md), [03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md](../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md), **[VMOSK-A](../VMOSK_A.md)**
 **See also:** [00_THE_LIFE_SCIENCE_REGISTER.md](../05_COSMOLOGY/00_THE_LIFE_SCIENCE_REGISTER.md), [00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md), [00_EMERGENTISM_PHI_RESOLUTION.md](../05_COSMOLOGY/02_EMERGENTISM_CORE/00_EMERGENTISM_PHI_RESOLUTION.md)
 
+**Claim Boundary:** Bridge Law 2 becomes scientific only as the macro-constraint
+test: lower-law closure, fair baselines, effective information, a physical cost
+ledger including `Cost_entropy_export`, perturbable `C`, and
+`W_C = EI_macro - EI_baseline - Cost_C > 0`. Without those handles, a higher
+level may remain useful translation, but it is not yet a public causal witness.
+
 ---
 
 ## Why This Document Exists
@@ -120,11 +126,20 @@ compression:
 
 ```text
 EI_macro = I(Y_t ; Y_{t+1} | do(Y_t), C)
-EI_micro = I(X_t ; X_{t+1} | do(X_t))
+EI_micro_fair = I(X_t ; X_{t+1} | do(X_t)) under the same budget
+EI_coarse_null = I(Y_t ; Y_{t+1} | do(Y_t), no C)
+EI_domain = best domain-specific lower mechanism witness
 
-macro-real if EI_macro > EI_micro at the tested grain,
+EI_baseline = max(EI_micro_fair, EI_coarse_null, EI_domain)
+
+Cost_C = Cost_measure + Cost_memory + Cost_control
+       + Cost_erasure + Cost_model + Cost_entropy_export
+
+W_C = EI_macro - EI_baseline - Cost_C
+
+macro-real only if W_C > 0 at the tested grain,
 or if the macro model predicts held-out trajectories with lower loss
-after paying the compression, measurement, and intervention costs.
+after paying the same fair costs.
 ```
 
 This is the framework's bridge from weak emergence to operational emergence:
@@ -134,6 +149,10 @@ strong-emergence magic, because every macro effect is paid for as constraint,
 boundary condition, memory, measurement, control, and entropy export inside the
 physical substrate. `[S/I]` for the framework rule; `[C]` until a given domain
 passes the measurement test.
+
+The test also requires perturbability. Holding, removing, or randomizing the
+macro-constraint must change the measured future distribution. Otherwise the
+macro term is language, not a cause.
 
 ### Macro-Constraint Test Algorithm
 

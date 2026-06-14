@@ -143,6 +143,12 @@ directly (the only available lever):
         frozen macro-constraint causal-emergence test harness while the source
         handoff bundle is absent; preserves the lower-law gate, fair-grain
         witness, cost ledger, and kill criteria for future generator runs.
+  - papers/paper-x-information-topology-and-macro-constraints/,
+        papers/paper-o-strong-weak-emergence-d5/,
+        value/00-bridge-laws-between-levels/ : hand-mirrored the fair-baseline
+        macro-constraint lemma while the source handoff bundle is absent;
+        preserves `EI_baseline`, perturbability, domain-mechanism baselines,
+        entropy-export cost, and `W_C > 0` witness language.
   - formal/22-power-max-demonstration/, formal/24-geometric-exclusion-convergence/,
         formal/41-unified-dimensional-derivation/ : added the 2026-06-12 A7
         boundary that the Nash/dominant-strategy results are balance-only or

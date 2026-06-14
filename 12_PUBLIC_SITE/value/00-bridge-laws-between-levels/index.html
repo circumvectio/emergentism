@@ -63,6 +63,7 @@
 <strong>Evidence Tier:</strong> [S/I] Structural in dimensional dependence, interpretive in disciplinary translation
 <strong>Depends on:</strong> <a href="../../sources/">00_THE_HONEST_POSITION.md</a>, <a href="../../sources/">00_THE_ONTOLOGY_OF_BEING.md</a>, <a href="../../sources/">00_D_LEVEL_STUDIES.md</a>, <a href="../../sources/">00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md</a>, <a href="../../sources/">03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md</a>, <strong><a href="../../sources/">VMOSK-A</a></strong>
 <strong>See also:</strong> <a href="../../sources/">00_THE_LIFE_SCIENCE_REGISTER.md</a>, <a href="../../sources/">00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md</a>, <a href="../../sources/">00_EMERGENTISM_PHI_RESOLUTION.md</a></p>
+<p><strong>Claim Boundary:</strong> Bridge Law 2 becomes scientific only as the macro-constraint test: lower-law closure, fair baselines, effective information, a physical cost ledger including <code>Cost_entropy_export</code>, perturbable <code>C</code>, and <code>W_C = EI_macro - EI_baseline - Cost_C &gt; 0</code>. Without those handles, a higher level may remain useful translation, but it is not yet a public causal witness.</p>
 <hr>
 <h2 id="why-this-document-exists">Why This Document Exists</h2>
 <p>The framework can only unify the sciences if it says, clearly and non-rhetorically, how one level opens into the next.</p>
@@ -135,11 +136,20 @@ create a transition the lower-level law forbids.</p>
 whether the macro description carries causal information that survives
 compression:</p>
 <pre><code class="language-text">EI_macro = I(Y_t ; Y_{t+1} | do(Y_t), C)
-EI_micro = I(X_t ; X_{t+1} | do(X_t))
+EI_micro_fair = I(X_t ; X_{t+1} | do(X_t)) under the same budget
+EI_coarse_null = I(Y_t ; Y_{t+1} | do(Y_t), no C)
+EI_domain = best domain-specific lower mechanism witness
 
-macro-real if EI_macro &gt; EI_micro at the tested grain,
+EI_baseline = max(EI_micro_fair, EI_coarse_null, EI_domain)
+
+Cost_C = Cost_measure + Cost_memory + Cost_control
+       + Cost_erasure + Cost_model + Cost_entropy_export
+
+W_C = EI_macro - EI_baseline - Cost_C
+
+macro-real only if W_C &gt; 0 at the tested grain,
 or if the macro model predicts held-out trajectories with lower loss
-after paying the compression, measurement, and intervention costs.
+after paying the same fair costs.
 </code></pre>
 <p>This is the framework's bridge from weak emergence to operational emergence:
 the higher level is not "only shorthand" when it loses less causal information
@@ -148,6 +158,9 @@ strong-emergence magic, because every macro effect is paid for as constraint,
 boundary condition, memory, measurement, control, and entropy export inside the
 physical substrate. <code>[S/I]</code> for the framework rule; <code>[C]</code> until a given domain
 passes the measurement test.</p>
+<p>The test also requires perturbability. Holding, removing, or randomizing the
+macro-constraint must change the measured future distribution. Otherwise the
+macro term is language, not a cause.</p>
 <h3 id="macro-constraint-test-algorithm">Macro-Constraint Test Algorithm</h3>
 <p>Use this checklist before calling any higher-level object a cause:</p>
 <ol>

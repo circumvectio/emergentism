@@ -21,6 +21,13 @@ Menexus GmbH, 2026
 **Evidence Tier:** [S/I] — structural calculus inside the framework; empirical per domain
 **Depends on:** [PAPER_O_STRONG_WEAK_EMERGENCE_D5.md](PAPER_O_STRONG_WEAK_EMERGENCE_D5.md), [00_BRIDGE_LAWS_BETWEEN_LEVELS.md](../../04_AXIOLOGY/00_BRIDGE_LAWS_BETWEEN_LEVELS.md), [00_THE_HONEST_POSITION.md](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md](../03_PREREGISTRATIONS/02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md)
 
+**Claim Boundary:** Macro-constraint causation is a costed effective information
+witness, not a new force: a macro layer earns public causal standing only when
+`W_C = EI_macro - EI_baseline - Cost_C > 0` against fair micro, coarse-null, and
+domain baselines, with `Cost_C` including `Cost_entropy_export`, and only when
+`C` is perturbable. The cross-scale continuity claim remains `[I]`; universal
+physics remains `[C]` until domain tests earn their own tier.
+
 ---
 
 ## Abstract
@@ -119,11 +126,16 @@ intervention and cost.
 
 ```text
 EI_macro = I(Y_t ; Y_{t+1} | do(Y_t), C)
-EI_micro = I(X_t ; X_{t+1} | do(X_t))
+EI_micro_fair = I(X_t ; X_{t+1} | do(X_t)) under the same budget
+EI_coarse_null = I(Y_t ; Y_{t+1} | do(Y_t), no C)
+EI_domain = best domain-specific lower mechanism witness
 
-Cost_C = Cost_measure + Cost_memory + Cost_control + Cost_erasure + Cost_model
+EI_baseline = max(EI_micro_fair, EI_coarse_null, EI_domain)
 
-W_C = EI_macro - EI_micro - Cost_C
+Cost_C = Cost_measure + Cost_memory + Cost_control
+       + Cost_erasure + Cost_model + Cost_entropy_export
+
+W_C = EI_macro - EI_baseline - Cost_C
 ```
 
 A macro-description earns public causal reality at the tested grain if:
@@ -141,6 +153,48 @@ This blocks two common errors:
    nickname for microstates. It is the better causal variable at that grain.
 2. **Mystical inflation:** If `support(K_X^C)` is not a subset of
    `support(K_X)`, or if the costs are hidden, the claim is not accepted.
+
+---
+
+## 3a. The Macro-Constraint Lemma
+
+**Lemma (costed macro-causal admissibility).** Given a lower system
+`(X, K_X)`, a macro map `pi: X -> Y`, a constraint gate `G_C`, and a declared
+intervention class `A`, the macro variable `Y` earns causal status at grain `Y`
+only when all three conditions hold:
+
+```text
+1. closure / no magic:
+   K_X^C << K_X
+   equivalently: support(K_X^C) subset support(K_X)
+
+2. non-redundant perturbability:
+   exists a in A such that
+   D_KL(P_C(Y_{t+1} | do(a), Y_t) || P_notC(Y_{t+1} | do(a), Y_t)) > epsilon
+
+3. fair costed surplus:
+   W_C = EI_macro - max(EI_micro_fair, EI_coarse_null, EI_domain) - Cost_C > 0
+```
+
+Condition 1 prevents strong-emergence magic. Condition 2 prevents a merely
+decorative coarse-graining from being called a cause. Condition 3 prevents weak
+emergence from erasing every higher-level cause by appealing to an omniscient,
+cost-free micro-description that no finite observer or controller can
+instantiate.
+
+**Proof sketch.** If Condition 1 fails, the macro claim contradicts the accepted
+lower law. If Condition 2 fails, holding, removing, or perturbing `C` does not
+change the measured future distribution, so the macro variable is explanatory
+language only. If Condition 3 fails, the macro variable may remain useful
+shorthand, but it has not beaten the best fair baseline after the costs of
+measurement, memory, control, erasure, modeling, and entropy export. If all
+three hold, changing the macro-constraint changes lower-law-admissible future
+distributions and does so with positive costed causal surplus. That is the
+framework's operational meaning of downward causation.
+
+This is a structural lemma `[S]`, not a domain result. A domain earns `[A]`,
+`[B]`, or remains `[C]` according to its own lower law, intervention evidence,
+and preregistered witness.
 
 ---
 
@@ -245,8 +299,8 @@ This paper contracts or fails if:
    entropy," or "consciousness is quantum magic."
 3. **Do say:** "macro causes change the topology of lower-law-admissible
    trajectories and must beat the costed micro-description."
-4. **Operational test:** declare `X`, `Y`, `pi`, `K_X`, `G_C`, the cost ledger,
-   the intervention, and the falsifier.
+4. **Operational test:** declare `X`, `Y`, `pi`, `K_X`, `G_C`, `EI_baseline`,
+   the cost ledger, the intervention, and the falsifier.
 5. **Pre-registration harness:** freeze domain tests through
    `03_METHODOLOGY/03_PREREGISTRATIONS/02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md`.
 6. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md`

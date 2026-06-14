@@ -33,6 +33,12 @@ domain tests earn their own tier.
 [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md),
 [The Goal](../../00_THE_GOAL.md).
 
+**Claim Boundary:** This preregistration tests macro-constraint causation only
+after declaring effective information, `EI_baseline`, full `Cost_C` including
+`Cost_entropy_export`, perturbability of `C`, and the kill condition. `W_C > 0`
+is the witness; failure to beat fair baselines rewrites the claim instead of
+rephrasing the result as proof.
+
 **Guard:** This protocol does not license strong-emergence magic. A
 macro-constraint may change which lower-law-admissible trajectories are
 reachable, likely, stable, reinforced, or suppressed. It may not create a
@@ -62,12 +68,16 @@ K_X^C(x' | x,y) = normalize(K_X(x' | x) * G_C(x' | x,y))
 support(K_X^C) subset support(K_X)
 
 EI_macro = I(Y_t ; Y_{t+1} | do(Y_t), C)
-EI_micro = I(X_t ; X_{t+1} | do(X_t))
+EI_micro_fair = I(X_t ; X_{t+1} | do(X_t)) under the same budget
+EI_coarse_null = I(Y_t ; Y_{t+1} | do(Y_t), no C)
+EI_domain = best domain-specific lower mechanism witness
+
+EI_baseline = max(EI_micro_fair, EI_coarse_null, EI_domain)
 
 Cost_C = Cost_measure + Cost_memory + Cost_control
        + Cost_erasure + Cost_model + Cost_entropy_export
 
-W_C = EI_macro - EI_micro - Cost_C
+W_C = EI_macro - EI_baseline - Cost_C
 ```
 
 The macro claim passes only if:
@@ -78,6 +88,13 @@ W_C > 0
 
 or if a cost-matched macro model improves held-out trajectory prediction or
 intervention selection against the best available micro baseline.
+
+It must also be perturbable:
+
+```text
+exists intervention a:
+D_KL(P_C(Y_{t+1} | do(a), Y_t) || P_notC(Y_{t+1} | do(a), Y_t)) > epsilon
+```
 
 This is the operational rescue of emergence: the macro layer is neither mere
 description nor a second force. It is a physically instantiated constraint that

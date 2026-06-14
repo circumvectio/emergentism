@@ -22,6 +22,14 @@ Menexus GmbH, 2026
 **Dependencies:** [PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md](PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md), [00_THE_ONTOLOGY_OF_BEING.md](../../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md)
 **Operational sequel:** [PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md](PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md)
 
+**Claim Boundary:** The asymmetry theorem is operational only where the macro
+view becomes a costed effective information witness:
+`W_C = EI_macro - EI_baseline - Cost_C > 0`, with `EI_baseline` including fair
+micro, coarse-null, and domain-mechanism baselines, and `Cost_C` including
+`Cost_entropy_export`. If `C` is not perturbable, or if the macro model wins
+only by blinding the lower model or hiding costs, the claim contracts to
+explanatory language.
+
 ---
 
 ## Abstract
@@ -82,17 +90,29 @@ retains causal information better than the available micro-description:
 
 ```text
 EI_macro = I(Y_t ; Y_{t+1} | do(Y_t), C)
-EI_micro = I(X_t ; X_{t+1} | do(X_t))
+EI_micro_fair = I(X_t ; X_{t+1} | do(X_t)) under the same budget
+EI_coarse_null = I(Y_t ; Y_{t+1} | do(Y_t), no C)
+EI_domain = best domain-specific lower mechanism witness
+
+EI_baseline = max(EI_micro_fair, EI_coarse_null, EI_domain)
+
+Cost_C = Cost_measure + Cost_memory + Cost_control
+       + Cost_erasure + Cost_model + Cost_entropy_export
+
+W_C = EI_macro - EI_baseline - Cost_C
 
 causal-emergence witness:
-EI_macro > EI_micro at the tested grain
+W_C > 0 at the tested grain, with perturbable C
 ```
 
 If the macro model wins only because the micro model was artificially blinded,
-the witness fails. If the macro model wins after fair intervention,
-compression, measurement, and prediction costs, the higher level is objectively
-real in the public scientific register: it is the better causal state variable
-for that system.
+the witness fails. If holding, removing, or perturbing `C` does not change the
+measured future distribution, the macro term is explanatory language rather
+than a causal-information witness. If the macro model wins after fair
+intervention, compression, measurement, prediction, domain-mechanism, and
+entropy-export costs, the higher level is objectively real in the public
+scientific register: it is the better costed causal state variable for that
+system at that grain.
 
 Syntropy then has a restrained open-system meaning. A macro-constraint is
 syntropic when it increases local order, coherence, or effective information
@@ -101,8 +121,9 @@ claim of total entropy reversal, retrocausality, or a Standard Model fifth
 force.
 
 Paper X turns this section into the operational calculus: declare the lower
-law, macro map, constraint gate, cost ledger, causal-information witness, and
-kill condition before calling the macro layer a cause.
+law, macro map, constraint gate, fair baseline, cost ledger, perturbable
+causal-information witness, and kill condition before calling the macro layer
+a cause.
 
 ---
 
