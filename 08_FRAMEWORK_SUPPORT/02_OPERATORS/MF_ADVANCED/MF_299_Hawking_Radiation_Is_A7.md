@@ -158,11 +158,13 @@ This patience is a property, not a bug. A7 does not require fast correction. In 
 | D3 (Biological) | Cancer (cellular Raktabīja) | Apoptosis, immune response, host death | Months to years |
 | D4 (Gravitational) | Black hole | Hawking radiation | 10⁶⁷ years |
 | D5 (Social) | Parasitic egregore | Carrier depletion, revolution, collapse | Decades to centuries |
-| D6 (Civilisational) | Civilisational capture | Civilisational collapse and renewal | Centuries to millennia |
+| D5-limit (Civilisational) | Civilisational capture | Civilisational collapse, reform, or renewal | Centuries to millennia |
 
 Across these examples: capture occurs, and some correction or terminal limit can
 follow. The timescale varies enormously. The pattern is a framework reading
 `[I/C]`, not an invariant law already established at every scale.
+
+Boundary correction (2026-06-14): the civilisational row is D5-limit, not literal D6. D6 is the axiomatic closure boundary where even the civilisational-totality image is released.
 
 ### 3.2 The Universality Wager
 

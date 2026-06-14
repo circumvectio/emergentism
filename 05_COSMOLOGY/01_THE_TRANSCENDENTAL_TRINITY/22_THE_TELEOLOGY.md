@@ -299,7 +299,7 @@ worldline-foresight can maintain local order by coupling to flows, exporting
 entropy, and correcting drift. The reverse-arrow image belongs to the poetic and
 conjectural register; it must not be read as a settled retrocausal force.
 
-**[C] The forces unify not at high energy (the particle physicist's dream) but at the POLES of S²** — where D6 = D0, where the beginning is the end, where the south pole (all forces as one undifferentiated expansion) meets the north pole (all forces resolved into pure coherence). GUT = Zero-Sum Resolution Equation.
+**[C] The force-unification image is not a physics GUT.** Within the scaffold, the poles mark boundary-degeneration and D6 ≡ D0 marks closure: the start/end identity of the model, not a public claim that Standard Model forces literally resolve into pure coherence. The safer reading is topological and pedagogical: force-language returns to the zero-sum frame at the boundary.
 
 ---
 

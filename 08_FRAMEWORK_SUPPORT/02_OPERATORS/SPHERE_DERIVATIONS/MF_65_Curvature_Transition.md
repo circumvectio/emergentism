@@ -169,7 +169,7 @@ This is the proposed location of “collective coherence”: not at D6, but as *
 
 ### 5.4 D6 ≡ D0: Closure (Beyond Standing Waves)
 
-D6 ≡ D0 is not “the collective.” It is **closure**: the Riemann sphere (ℂ̂ / Ĉ) as completed totality, beyond all standing waves. The phenomenological correlate is Satori — contact with the compactification point where the topology recognizes itself. [I]
+D6 ≡ D0 is not “the collective.” It is **closure**: the completed compactification boundary, beyond all standing waves. The contemplative/Satori language belongs to upper D5 as a boundary-approach image; D6 itself is not an object or state of experience. [I]
 
 ---
 

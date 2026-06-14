@@ -32,9 +32,9 @@
 <div class="lab-frame" aria-hidden="true"><span class="corner"></span><span class="corner"></span><span class="corner"></span><span class="corner"></span></div>
 
 <span class="brand">Emergentism · The Emergence</span>
-<a class="exit" href="index.html">Enter the framework →</a>
+<a class="exit" href="index.html">Open index</a>
 
-<div class="counter" id="counter">projection → ∞</div>
+<div class="counter" id="counter">projection length: calibrated</div>
 <div id="overlay">
   <div class="glyph" id="glyph">⊙ = • × ○</div>
   <div class="caption" id="caption">
@@ -43,7 +43,7 @@
   </div>
 </div>
 
-<a id="enter" href="index.html">⊙ &nbsp;Enter the framework</a>
+<a id="enter" href="index.html">Open framework index</a>
 
 <button class="nav" id="prev" aria-label="previous">‹</button>
 <button class="nav" id="next" aria-label="next">›</button>
@@ -78,7 +78,7 @@
   <div class="g">⊙ = • × ○</div>
   <p style="max-width:40ch;line-height:1.7">Your browser could not start the WebGL emergence.
   Between zero and infinity, finity emerges; the sphere becomes the Burrisphere where φ·ν = 1.</p>
-  <a href="index.html">Enter the framework →</a>
+  <a href="index.html">Open index</a>
 </div>
 
 <!-- Three.js is self-hosted under ./vendor/three-0.160.0/ — no external CDN.
@@ -557,10 +557,10 @@ if (timelineEl) {
 }
 addEventListener('keydown', e => { if (e.key === 'ArrowRight') show(cur+1); if (e.key === 'ArrowLeft') show(cur-1); });
 
-// counter animation (projection → ∞)
+// Counter animation: finite displayed samples approaching the projection asymptote.
 let projExp = 0;
 function fmtProj(){
-  if (projExp > 12) return 'projection → ∞';
+  if (projExp > 12) return 'projection length > 1×10^12 · asymptote';
   const val = Math.pow(10, projExp);
   return 'projection length ≈ ' + val.toExponential(1).replace('e+', '×10^');
 }

@@ -204,7 +204,7 @@ Zero-Sum Resolution Equation
 
 1. **Report test status honestly.** CONFIRMED, MIXED, NEGATIVE, PENDING — use the actual status. Do not upgrade or downgrade.
 2. **Do not excuse failures.** If a test fails, report it. The framework's integrity depends on honest reporting.
-3. **Route to the appropriate test.** D2 neurophysiology, D4 simulation, D5 behavioral, D6 phenomenological — each has its own validation path.
+3. **Route to the appropriate test.** D2 neurophysiology, D4 simulation, D5 behavioral/phenomenological, and D6 boundary-discipline/apophatic checks — each has its own validation path.
 4. **Await decisive tests.** The strongest claims await the strongest tests. Do not present pending tests as confirmed.
 5. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md`
 

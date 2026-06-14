@@ -94,7 +94,7 @@ The mathematical structure does not *prove* idealism. But the manifold identity 
 
 ### D6 (Closure): Idealist Boundary
 
-D6 is not a higher experience of systemic awareness above D5. It is the terminal closure in which lived disclosure exhausts and the cycle returns to the point-state. The poloidal closure D6 = D0 on the horn torus is the topology of that return: the process that starts at a point and returns to the point, having generated everything between. If older corpus language speaks of "self-recognition" here, the cleaner reading is retrospective or structural, not phenomenological.
+D6 is not a higher experience of systemic awareness above D5. It is the terminal closure in which positive lived disclosure exhausts and the cycle returns to the point-state. The poloidal closure D6 = D0 on the horn torus is the topology of that return: the process that starts at a point and returns to the point after the positive scaffold has unfolded between them. If older corpus language speaks of "self-recognition" here, the cleaner reading is retrospective or structural, not phenomenological.
 
 **Agent rule for D6:** Interpret D6 as the idealist boundary where no further positive state remains. Do not describe it as an additional experience layered above D5. The return is axiomatic closure.
 

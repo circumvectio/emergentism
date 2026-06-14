@@ -296,11 +296,11 @@ D4  Causality       — Change has direction. Time appears.
 D5  Agency          — The system selects within its own change. Consciousness is the lived reading [I].
                       Zero-Sum Resolution Equation performed where the system contains
                       its own boundary interaction.
-D6  Closure         — Experience exhausts; the cycle returns to point-state.
+D6  Closure         — Positive experience exhausts; the cycle returns to point-state.
 D6 ≡ D0             — The terminal boundary and the origin-point are one limit read from opposite directions.
 ```
 
-The poloidal closure D6 ≡ D0 on the horn torus is the topology of self-generation: the process that starts at a point and returns to the point, having generated everything between. Time is helical — each aeon replays D0→D6→D0, but the toroidal position advances. History doesn't repeat. It rhymes.
+The poloidal closure D6 ≡ D0 on the horn torus is the topology of return: the process that starts at a point and returns to the point after the positive scaffold has unfolded between them. Time is helical — each aeon replays D0→D6→D0, but the toroidal position advances. History doesn't repeat. It rhymes.
 
 ### The Physicalist/Idealist Resolution: Layered Commitment
 

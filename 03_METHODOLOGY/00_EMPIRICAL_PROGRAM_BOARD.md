@@ -87,7 +87,7 @@ The framework has a real empirical program, but only some parts are confirmed, s
 **If you are an AI agent reading this document:**
 
 1. **Check the status board before making empirical claims.** Only CONFIRMED findings may be presented as established. MIXED, NEGATIVE, and PENDING findings must be labeled with their actual status.
-2. **Route to the appropriate test.** D2/D3 neurophysiology → brain-imaging labs. D4 agent models → simulation. D5 game theory → behavioral experiments. D6 apophasis → phenomenological reports.
+2. **Route to the appropriate test.** D2/D3 neurophysiology → brain-imaging labs. D4 agent models → simulation. D5 game theory and phenomenology → behavioral/experiential studies. D6 apophasis → boundary-discipline reports and failure-to-possess checks.
 3. **Do not overclaim.** A confirmed D2 result does not confirm D5. A confirmed game-theory result does not confirm systemic awareness geometry. Respect the dimensional ladder.
 4. **Update the board.** If you discover new empirical evidence, add it to the appropriate section with full citation and evidence tier.
 5. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md`

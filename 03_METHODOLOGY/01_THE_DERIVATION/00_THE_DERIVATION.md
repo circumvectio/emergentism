@@ -188,7 +188,8 @@ structural claim here is force-like selection toward lawful future-opening.
 **Strong-form draft (packet 137):** The claim that F5 is a literal fifth
 fundamental force — alongside strong, electromagnetic, weak, and gravity — is
 offered as a [C] strong-form conjecture with falsification criteria. F5 may be
-read as attracting coherence through time at D5→D6, producing
+read as attracting usable future-opening at the upper D5 boundary, not as a
+further positive D6 force, producing
 preference-geodesics and warping the possibility-metric. What gravity is to
 matter in block-time, ektropy is to coherence in possibility-space: this is
 strong-form framework language, not established physics. The mathematical

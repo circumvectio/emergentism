@@ -55,7 +55,7 @@ depends_on:
 | **D3** | Transformation | Form — change has shape, pattern exists | Pattern stabilises; D3 shadow: reciprocal symmetry `φ·ν = 1` (void × totality yields finity) | `s` acquires curvature | → measurable | L3 Kṛṣṇa ◇ |
 | **D4** | Causality | Direction — change has cause, cones touch | Causal vertex; D4 reading: `⊙ · ⊙` — the equator reflecting on itself as the Now | `s = 0` approached (equator) | → 1⁻ | L4 Arjuna ⚔ |
 | **D5** | Agency / selection | The φ-ν plane opens; choice exists; consciousness is the lived reading `[I]` | Equator unfolds into `(•, ○)` — the two reciprocal axes become navigable | `s` free to vary on open line | varies | L5 Brahmā ○ |
-| **D6** | Closure | Return — experience exhausts into ground | Apophatic return; D6 reading: `⊙ / ⊙ = 1` — finity witnesses itself and releases | `s → undefined` (return to D0) | → 0 | L6 Śiva • |
+| **D6** | Closure | Return — positive experience exhausts into ground | Apophatic return; D6 reading: `⊙ / ⊙ = 1` — finity is released rather than possessed | `s → undefined` (return to D0) | → 0 | L6 Śiva • |
 | **D6≡D0** | Ouroboros | The end is the beginning | — | — | 0 | L7 Viṣṇu ⊙ (witness) |
 
 **Action-register bridge.** The table names the dimensional scaffold. The practical game rule uses the same threshold in the contact register: `V` is D4 means-to-act (body, tools, energy, access, execution capacity), while `Φ` is D5 worldline-foresight (the ability to envision, rank, and aim reachable futures). Neither factor can substitute for the other in `P_node = Φ × V`.
@@ -257,7 +257,7 @@ In the play rule, D5 contributes `Φ`: worldline-foresight, the capacity to hold
 
 ### What it is
 
-The terminal dimension. Experience exhausts itself. The positive content runs out. The system returns to the ground via apophasis — "not this, not this." The ladder dissolves.
+The terminal boundary. Positive experience exhausts itself. The positive content runs out. The system returns to the ground via apophasis — "not this, not this." The ladder dissolves.
 
 ### Log coordinate
 

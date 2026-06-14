@@ -74,7 +74,7 @@ D3  Transformation — form emerges
    **"Consciousness" is the lived-interior reading [I]**
    **Four operators distinguishable**
 ↓ μ₆
-D6  Terminal boundary — experience exhausts into closure
+D6  Terminal boundary — positive experience exhausts into closure
 ↓
 D6 ≡ D0 — closure (poloidal on horn torus)
 ```

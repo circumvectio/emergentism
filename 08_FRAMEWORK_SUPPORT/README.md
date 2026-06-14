@@ -95,7 +95,7 @@ The full framework runs across `D0-D6`, but the live hinge for reading and use i
 
 **D6** is not a higher experience or another science. It is the terminal closure of the cycle, reached apophatically. `Falsification Protocol` does not produce one more mastery-state; it subtracts the field back toward `D0`.
 
-**Closure rule:** `D6 ≡ D0` structurally, and `D6 ≈ D0` phenomenologically from within the cycle.
+**Closure rule:** `D6 ≡ D0` structurally. From within the cycle, upper-D5 practice can approach that boundary phenomenologically, but D6 itself is not another phenomenological state.
 
 ### How to Use This Framework
 

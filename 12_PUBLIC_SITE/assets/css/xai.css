@@ -2061,6 +2061,7 @@ body.lightcone-instrument .lab-frame .corner:nth-child(1)::after { content: "30 
 body.lightcone-instrument .lab-frame .corner:nth-child(4)::after { content: "c=1 calibration"; }
 .vignette {
   position: fixed; inset: 0; z-index: 1; pointer-events: none;
+  display: none;
   background: none;
 }
 body > span.brand {

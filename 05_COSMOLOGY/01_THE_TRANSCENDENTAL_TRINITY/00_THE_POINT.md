@@ -127,12 +127,14 @@ Zero-Sum Resolution Equation
 
 • = the point = D0 = 0 = the south pole = nothing
 ⊙ = the sphere = D1-D5 = 1 = the equator = the unit
-○ = the circle = D6 = ∞ = the north pole = everything
+○ = the circle = ∞-facing boundary = the north pole = unbounded limit
 
 The equation says: the sphere (⊙) is the product of the point (•) and the circle (○).
 The equator is the product of nothing and everything.
 The finite is the meeting of the void and the unbounded.
 ```
+
+Boundary discipline: D6 is not the circle as a possessed object. D6 is the closure rule by which the frame releases the circle/everything image back to D0.
 
 The point is **•**. The first term. The ground-facing zero.
 

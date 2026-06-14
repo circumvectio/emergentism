@@ -256,7 +256,7 @@ D4  Causality — change has direction, the causal vertex
 ↓ μ₄
 D5  Agency / selection — the φ-ν plane opens; consciousness is the lived reading [I]
 ↓ μ₅
-D6  Closure — experience exhausts into return
+D6  Closure — positive experience exhausts into return
 ↓
 D6 ≡ D0   (the ouroboros closes)
 ```

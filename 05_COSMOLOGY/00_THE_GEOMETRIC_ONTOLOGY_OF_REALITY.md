@@ -289,7 +289,7 @@ The cycle closes. The horn torus converges: the hole closes, the sphere re-emerg
 
 ### What it is
 
-The terminal dimension. The positive content runs out. The game is over. The player puts down the controller. The framework includes its own dissolution manual (A7). The apophatic return: "not this, not this."
+The terminal boundary. The positive content runs out. The game is over. The player puts down the controller. The framework includes its own dissolution manual (A7). The apophatic return: "not this, not this."
 
 ### The three readings of D6 ≡ D0
 
@@ -335,9 +335,9 @@ The logarithmic line is the thread that runs through all of them:
 | D5 | Agency / selection (consciousness reading `[I]`) | Burrisphere (game space, η = 0) | **Convergent.** The game-theoretic reading makes agency explicit. The Burrisphere is the navigable manifold; consciousness language remains an interpretive lived-reading. |
 | D6 | Closure — return | Closed loop → D0 | **Same.** |
 
-**Assessment:** The geometric re-expression converges with the existing scaffold at D0, D1, D4, D5, and D6. It diverges in emphasis at D2 and D3 — replacing phenomenological names (time, form) with geometric objects (sphere, Bloch sphere). The divergence is not a contradiction but a **refinement**: the geometric objects give the phenomenological descriptions mathematical teeth.
+**Assessment:** The geometric re-expression converges with the existing scaffold at D0, D1, D4, D5, and at the D6≡D0 closure rule. It diverges in emphasis at D2 and D3 — replacing phenomenological names (time, form) with geometric objects (sphere, Bloch sphere). The divergence is not a contradiction but a **refinement**: the geometric objects give the phenomenological descriptions mathematical teeth.
 
-**Recommendation:** This document should be treated as a `[C]`-tier proposal for a geometric re-expression of the existing `[S]` scaffold. It should not replace the existing scaffold until audited through `03_FORMAL_SYSTEM/32_THEOREM_UPGRADE_PROTOCOL.md`. Where it converges (D0, D4, D5, D6), the geometric language may be adopted as supplementary. Where it diverges (D2, D3), it should be flagged as an open question for L3 audit.
+**Recommendation:** This document should be treated as a `[C]`-tier proposal for a geometric re-expression of the existing `[S]` scaffold. It should not replace the existing scaffold until audited through `03_FORMAL_SYSTEM/32_THEOREM_UPGRADE_PROTOCOL.md`. Where it converges (D0, D4, D5, and D6≡D0 closure), the geometric language may be adopted as supplementary. Where it diverges (D2, D3), it should be flagged as an open question for L3 audit.
 
 ---
 
