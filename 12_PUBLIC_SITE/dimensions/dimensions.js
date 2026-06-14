@@ -87,18 +87,18 @@ function createSampleClock() {
   };
 }
 const dimensionCommands = [
-  { key: "/0", aliases: ["/0", "0", "d0", "titans"], label: "/0 · Titans", detail: "Ground / finity", href: "../0/" },
-  { key: "/1", aliases: ["/1", "1", "d1", "one", "finity"], label: "/1 · The Special One", detail: "Reciprocal mirror", href: "../1/" },
-  { key: "/2", aliases: ["/2", "2", "d2", "mu", "mu-limit"], label: "/2 · Mu-Limit", detail: "Line to plane", href: "../2/" },
-  { key: "/3", aliases: ["/3", "3", "d3", "sphere", "bloch"], label: "/3 · Sphere", detail: "Closure surface", href: "../3/" },
-  { key: "/4", aliases: ["/4", "4", "d4", "torus", "horn"], label: "/4 · Horn Torus", detail: "Energy overlap", href: "../4/" },
-  { key: "/5", aliases: ["/5", "5", "d5", "burrisphere", "game"], label: "/5 · Burrisphere", detail: "Dual projection", href: "../5/" },
-  { key: "/6", aliases: ["/6", "6", "d6", "convergence", "ccc"], label: "/6 · CCC Return", detail: "Endstate = start", href: "../6/" },
-  { key: "R", aliases: ["rosetta", "r"], label: "Rosetta", detail: "Sevenfold map", href: "../rosetta/" },
-  { key: "S", aliases: ["soul", "soul-loop"], label: "Soul Loop", detail: "Loop doctrine", href: "../soul-loop/" },
-  { key: "A", aliases: ["atlas", "a"], label: "Atlas", detail: "Public atlas", href: "../atlas/" },
-  { key: "EM", aliases: ["cascade", "emergence"], label: "Emergence", detail: "Animation", href: "../cascade.html" },
-  { key: "SP", aliases: ["sphere-instrument", "burri", "burri-sphere"], label: "Burri Sphere", detail: "Instrument", href: "../sphere.html" }
+  { key: "/0", aliases: ["/0", "0", "d0", "titans"], label: "/0 · Titans", detail: "Ground / finity", href: "/0/" },
+  { key: "/1", aliases: ["/1", "1", "d1", "one", "finity"], label: "/1 · The Special One", detail: "Reciprocal mirror", href: "/1/" },
+  { key: "/2", aliases: ["/2", "2", "d2", "mu", "mu-limit"], label: "/2 · Mu-Limit", detail: "Line to plane", href: "/2/" },
+  { key: "/3", aliases: ["/3", "3", "d3", "sphere", "bloch"], label: "/3 · Sphere", detail: "Closure surface", href: "/3/" },
+  { key: "/4", aliases: ["/4", "4", "d4", "torus", "horn"], label: "/4 · Horn Torus", detail: "Energy overlap", href: "/4/" },
+  { key: "/5", aliases: ["/5", "5", "d5", "burrisphere", "game"], label: "/5 · Burrisphere", detail: "Dual projection", href: "/5/" },
+  { key: "/6", aliases: ["/6", "6", "d6", "convergence", "ccc"], label: "/6 · CCC Return", detail: "Endstate = start", href: "/6/" },
+  { key: "R", aliases: ["rosetta", "r"], label: "Rosetta", detail: "Sevenfold map", href: "/rosetta/" },
+  { key: "S", aliases: ["soul", "soul-loop"], label: "Soul Loop", detail: "Loop doctrine", href: "/soul-loop/" },
+  { key: "A", aliases: ["atlas", "a"], label: "Atlas", detail: "Public atlas", href: "/atlas/" },
+  { key: "EM", aliases: ["cascade", "emergence"], label: "Emergence", detail: "Animation", href: "/cascade.html" },
+  { key: "SP", aliases: ["sphere-instrument", "burri", "burri-sphere"], label: "Burri Sphere", detail: "Instrument", href: "/sphere.html" }
 ];
 
 let THREE;
@@ -767,13 +767,17 @@ function drawConstitutionInstrument(time = 0) {
     );
     updateInstrumentOverlay(overlay, t, fps);
     if (readout) {
-      readout.style.display = width < 620 ? "none" : "block";
-      readout.textContent =
-        "5+1 CONSTITUTION · perimeter assay\n" +
-        "active fence " + (active + 1) + "/5 · " + activeFence.key + " · " + activeFence.title + " · " + activeFence.tier + "\n" +
-        "Ω is the directional +1, not a sixth refusal\n" +
-        "closure residual |Σedges|/r = " + closureResidual.toExponential(1) + "\n" +
-        "centroid offset = " + centerResidual.toExponential(1) + " · sample clock " + (REDUCED_MOTION ? "static" : sampleClock.label());
+      readout.style.display = "block";
+      readout.textContent = width < 620
+        ? "5+1 CONSTITUTION · perimeter assay\n" +
+          "fence " + (active + 1) + "/5 · " + activeFence.key + " · " + activeFence.tier + "\n" +
+          "closure " + closureResidual.toExponential(1) + " · center " + centerResidual.toExponential(1) + "\n" +
+          (REDUCED_MOTION ? "sample static" : sampleClock.label())
+        : "5+1 CONSTITUTION · perimeter assay\n" +
+          "active fence " + (active + 1) + "/5 · " + activeFence.key + " · " + activeFence.title + " · " + activeFence.tier + "\n" +
+          "Ω is the directional +1, not a sixth refusal\n" +
+          "closure residual |Σedges|/r = " + closureResidual.toExponential(1) + "\n" +
+          "centroid offset = " + centerResidual.toExponential(1) + " · sample clock " + (REDUCED_MOTION ? "static" : sampleClock.label());
     }
 
     if (!REDUCED_MOTION) requestAnimationFrame(draw);
