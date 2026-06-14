@@ -47,16 +47,26 @@ export function createStripChart(THREE, options = {}) {
     cursorColor = 0xf3f4f6,
     frameColor = 0x6d7480,
     frameOpacity = 0.25,
+    gridOpacity = 0.12,
     traceOpacity = 0.57,
     cursorOpacity = 0.26,
     label = "",
-    labelColor = color
+    labelColor = color,
+    targetValue = null,
+    targetBand = null,
+    targetColor = 0xffeb3b,
+    currentMarkerColor = color
   } = options;
   const group = new THREE.Group();
   const frameMat = new THREE.LineBasicMaterial({
     color: frameColor,
     transparent: true,
     opacity: frameOpacity
+  });
+  const gridMat = new THREE.LineBasicMaterial({
+    color: frameColor,
+    transparent: true,
+    opacity: gridOpacity
   });
   const frame = new THREE.LineSegments(
     new THREE.BufferGeometry().setFromPoints([
@@ -73,6 +83,53 @@ export function createStripChart(THREE, options = {}) {
     ]),
     frameMat
   );
+  const gridPoints = [];
+  for (let i = 1; i < 4; i += 1) {
+    const x = origin.x + width * (i / 4);
+    gridPoints.push(
+      new THREE.Vector3(x, origin.y, origin.z + 0.002),
+      new THREE.Vector3(x, origin.y + height, origin.z + 0.002)
+    );
+    if (i !== 2) {
+      const y = origin.y + height * (i / 4);
+      gridPoints.push(
+        new THREE.Vector3(origin.x, y, origin.z + 0.002),
+        new THREE.Vector3(origin.x + width, y, origin.z + 0.002)
+      );
+    }
+  }
+  const grid = new THREE.LineSegments(
+    new THREE.BufferGeometry().setFromPoints(gridPoints),
+    gridMat
+  );
+  let bandMesh = null;
+  if (Array.isArray(targetBand) && targetBand.length === 2) {
+    bandMesh = new THREE.Mesh(
+      new THREE.PlaneGeometry(1, 1),
+      new THREE.MeshBasicMaterial({
+        color: targetColor,
+        transparent: true,
+        opacity: 0.11,
+        depthWrite: false,
+        side: THREE.DoubleSide
+      })
+    );
+    bandMesh.position.set(origin.x + width / 2, origin.y + height / 2, origin.z + 0.004);
+    bandMesh.scale.set(width, height, 1);
+  }
+  const targetLine = typeof targetValue === "number"
+    ? new THREE.Line(
+      new THREE.BufferGeometry().setFromPoints([
+        new THREE.Vector3(origin.x, origin.y, origin.z + 0.01),
+        new THREE.Vector3(origin.x + width, origin.y, origin.z + 0.01)
+      ]),
+      new THREE.LineBasicMaterial({
+        color: targetColor,
+        transparent: true,
+        opacity: 0.32
+      })
+    )
+    : null;
   const trace = new THREE.Line(
     new THREE.BufferGeometry().setFromPoints([
       new THREE.Vector3(origin.x, origin.y, origin.z + 0.012),
@@ -95,7 +152,21 @@ export function createStripChart(THREE, options = {}) {
       opacity: cursorOpacity
     })
   );
-  group.add(frame, trace, cursor);
+  const currentMarker = new THREE.Mesh(
+    new THREE.CircleGeometry(Math.min(width, height) * 0.055, 24),
+    new THREE.MeshBasicMaterial({
+      color: currentMarkerColor,
+      transparent: true,
+      opacity: 0.88,
+      depthWrite: false,
+      side: THREE.DoubleSide
+    })
+  );
+  currentMarker.position.set(origin.x + width, origin.y, origin.z + 0.026);
+  group.add(frame, grid);
+  if (bandMesh) group.add(bandMesh);
+  if (targetLine) group.add(targetLine);
+  group.add(trace, cursor, currentMarker);
   if (label) {
     const labelSprite = createTextSprite(THREE, label, {
       color: labelColor,
@@ -104,7 +175,21 @@ export function createStripChart(THREE, options = {}) {
     labelSprite.position.set(origin.x + width * 0.29, origin.y + height + 0.14, origin.z + 0.04);
     group.add(labelSprite);
   }
-  return { group, origin, width, height, max, samples: [], trace, cursor };
+  return {
+    group,
+    origin,
+    width,
+    height,
+    max,
+    samples: [],
+    trace,
+    cursor,
+    currentMarker,
+    targetLine,
+    targetBand,
+    bandMesh,
+    targetValue
+  };
 }
 
 export function clearStripChart(THREE, chart) {
@@ -134,4 +219,27 @@ export function updateStripChart(THREE, chart, value, min = 0, max = 1, sampled 
     new THREE.Vector3(x, chart.origin.y, chart.origin.z + 0.018),
     new THREE.Vector3(x, chart.origin.y + chart.height, chart.origin.z + 0.018)
   ]);
+  if (chart.currentMarker) {
+    chart.currentMarker.position.set(x, chart.origin.y + normalized * chart.height, chart.origin.z + 0.026);
+  }
+  if (chart.targetLine && typeof chart.targetValue === "number") {
+    const targetN = Math.max(0, Math.min(1, (chart.targetValue - min) / span));
+    const y = chart.origin.y + targetN * chart.height;
+    chart.targetLine.geometry.setFromPoints([
+      new THREE.Vector3(chart.origin.x, y, chart.origin.z + 0.01),
+      new THREE.Vector3(chart.origin.x + chart.width, y, chart.origin.z + 0.01)
+    ]);
+  }
+  if (chart.bandMesh && Array.isArray(chart.targetBand) && chart.targetBand.length === 2) {
+    const low = Math.max(0, Math.min(1, (Math.min(chart.targetBand[0], chart.targetBand[1]) - min) / span));
+    const high = Math.max(0, Math.min(1, (Math.max(chart.targetBand[0], chart.targetBand[1]) - min) / span));
+    const bandHeight = Math.max((high - low) * chart.height, chart.height * 0.018);
+    chart.bandMesh.position.set(
+      chart.origin.x + chart.width / 2,
+      chart.origin.y + ((low + high) / 2) * chart.height,
+      chart.origin.z + 0.004
+    );
+    chart.bandMesh.scale.set(chart.width, bandHeight, 1);
+    chart.bandMesh.visible = high >= low;
+  }
 }

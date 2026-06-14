@@ -90,7 +90,7 @@
 }}
 </script>
 <script type="module">
-import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js';
+import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-3';
 
 let THREE, OrbitControls;
 try {
@@ -276,7 +276,10 @@ const morphLagChart = createStripChart(THREE, {
   color: TEAL,
   max: 144,
   label: 'morph lag delta',
-  labelColor: TEAL
+  labelColor: TEAL,
+  targetValue: 0,
+  targetBand: [0, 0.16],
+  targetColor: GOLD
 });
 const balanceChart = createStripChart(THREE, {
   origin: new THREE.Vector3(1.05, -2.12, 0.08),
@@ -285,7 +288,10 @@ const balanceChart = createStripChart(THREE, {
   color: GOLD,
   max: 144,
   label: 'B=sin theta',
-  labelColor: GOLD
+  labelColor: GOLD,
+  targetValue: 1,
+  targetBand: [0.94, 1],
+  targetColor: TEAL
 });
 morphLagChart.group.visible = false;
 balanceChart.group.visible = false;

@@ -74,7 +74,7 @@ let createStripChart, clearStripChart, updateStripChart;
 try {
   THREE = await import('three');
   ({ OrbitControls } = await import('three/addons/controls/OrbitControls.js'));
-  ({ createStripChart, clearStripChart, updateStripChart } = await import('./assets/js/instrument-charts.js'));
+  ({ createStripChart, clearStripChart, updateStripChart } = await import('./assets/js/instrument-charts.js?v=2026-06-14-instrument-3'));
 } catch (e) { document.getElementById('fallback').style.display = 'flex'; throw e; }
 
 const REDUCED_MOTION = !!(window.matchMedia
@@ -169,7 +169,9 @@ const omegaChart = createStripChart(THREE, {
   max: OMEGA_TRACE_MAX,
   label: 'Ω proxy',
   labelColor: TEAL,
-  traceOpacity: 0.6
+  traceOpacity: 0.6,
+  targetBand: [OMEGA_GRAPH_MAX * 0.72, OMEGA_GRAPH_MAX],
+  targetColor: GOLD
 });
 scene.add(omegaChart.group);
 

@@ -2,7 +2,7 @@ import {
   createStripChart as createSharedStripChart,
   clearStripChart as clearSharedStripChart,
   updateStripChart as updateSharedStripChart
-} from "../assets/js/instrument-charts.js";
+} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-3";
 
 const page = window.DIMENSION_PAGE || {};
 const canvas = document.querySelector(".dimension-canvas");
@@ -925,7 +925,7 @@ function createXYTickedRing(radius, color = 0xffffff, opacity = 0.32, tickCount 
   return group;
 }
 
-function createStripChart(origin, width = 2.2, height = 0.52, color = 0x42a5f5, max = 96, label = "", labelColor = color) {
+function createStripChart(origin, width = 2.2, height = 0.52, color = 0x42a5f5, max = 96, label = "", labelColor = color, chartOptions = {}) {
   return createSharedStripChart(THREE, {
     origin,
     width,
@@ -936,7 +936,8 @@ function createStripChart(origin, width = 2.2, height = 0.52, color = 0x42a5f5, 
     labelColor,
     frameOpacity: 0.28,
     traceOpacity: 0.64,
-    cursorOpacity: 0.3
+    cursorOpacity: 0.3,
+    ...chartOptions
   });
 }
 
@@ -1138,7 +1139,11 @@ function buildScene(mode, scene) {
     const invPt = makeMarker(new THREE.Vector3(-SC, 0, 0), 0xffffff, 0.075);  // 1/x — the mirror
     const ePt = makeMarker(new THREE.Vector3(SC, 0.17, 0), 0xb8b8b8, 0.05);   // E(x) on the well
     const arc = line([new THREE.Vector3(0, 0, 0)], 0xffeb3b, 0.55);           // the inversion fold
-    const balanceChart = createStripChart(new THREE.Vector3(-1.42, -1.12, 0.04), 2.84, 0.46, 0x42a5f5, 120, "B=sech(ln x)");
+    const balanceChart = createStripChart(new THREE.Vector3(-1.42, -1.12, 0.04), 2.84, 0.46, 0x42a5f5, 120, "B=sech(ln x)", 0x42a5f5, {
+      targetValue: 1,
+      targetBand: [0.94, 1],
+      targetColor: 0xffeb3b
+    });
     root.add(xPt); root.add(invPt); root.add(ePt); root.add(arc, balanceChart.group);
     if (visual) {
       visual.addEventListener("instrument:zero", () => clearStripChart(balanceChart));
@@ -1283,7 +1288,11 @@ function buildScene(mode, scene) {
     const landingSamples = [];
     const surfaceDots = createPointTrace(150, 0xffffff, 0.42, 0.024);
     const landingDots = createPointTrace(150, 0x42a5f5, 0.48, 0.026);
-    const balanceChart = createStripChart(new THREE.Vector3(-1.52, -1.54, 0.06), 3.04, 0.48, 0x42a5f5, 120, "B=sin theta");
+    const balanceChart = createStripChart(new THREE.Vector3(-1.52, -1.54, 0.06), 3.04, 0.48, 0x42a5f5, 120, "B=sin theta", 0x42a5f5, {
+      targetValue: 1,
+      targetBand: [0.94, 1],
+      targetColor: 0xffeb3b
+    });
     if (visual) {
       visual.addEventListener("instrument:zero", () => {
         surfaceSamples.length = 0;
@@ -1361,7 +1370,11 @@ function buildScene(mode, scene) {
     const properTimeGauge = createTickedRing(1.0, 0x42a5f5, 0.36, 40);
     properTimeGauge.position.y = 0.014;
     const rapidityTrace = line([new THREE.Vector3(0, 0.018, 0), new THREE.Vector3(0, 0.018, 0)], 0x42a5f5, 0.58);
-    const properTimeChart = createStripChart(new THREE.Vector3(-1.55, -1.58, 0.08), 3.1, 0.42, 0x42a5f5, 120, "dτ/dt = 1/γ");
+    const properTimeChart = createStripChart(new THREE.Vector3(-1.55, -1.58, 0.08), 3.1, 0.42, 0x42a5f5, 120, "dτ/dt = 1/γ", 0x42a5f5, {
+      targetValue: 1,
+      targetBand: [0.94, 1],
+      targetColor: 0xffeb3b
+    });
     root.add(properTimeGauge, rapidityTrace, relCentre, properTimeChart.group);
 
     const readout = makeReadout();
@@ -1554,7 +1567,11 @@ function buildScene(mode, scene) {
     const nuRange = createTickedRing(U, MEANS, 0.2, 56);
     phiRange.position.y = -r + 0.01;
     nuRange.position.y = r + 0.01;
-    const balanceChart = createStripChart(new THREE.Vector3(-1.7, -1.36, 0.08), 3.4, 0.42, 0x42a5f5, 120, "U_B bridge");
+    const balanceChart = createStripChart(new THREE.Vector3(-1.7, -1.36, 0.08), 3.4, 0.42, 0x42a5f5, 120, "U_B bridge", 0x42a5f5, {
+      targetValue: 1,
+      targetBand: [0.94, 1],
+      targetColor: 0xffeb3b
+    });
     root.add(phiRange, nuRange, phiLine, nuLine, pointLine, phiDots.mesh, nuDots.mesh, pointDots.mesh, balanceChart.group);
 
     const readout = makeReadout();
@@ -1674,7 +1691,7 @@ function buildScene(mode, scene) {
         "B=sinθ " + balance.toFixed(3) + " · U_B " + finiteCouplingProxy.toFixed(3) + " · γ=1/B " + energyCost.toFixed(2) + " · |lnφ| " + imbalance.toFixed(2) + "\n" +
         "residuals: σ(φν) " + reciprocalResidual.toExponential(1) + " · σ(ray) " + rayResidual.toExponential(1) + "\n" +
         "strip chart: sampled bridge viability U_B over clocked frames\n" +
-        "finite action bridge: score P_node = PHI_action x V_action only after the lowercase chart is read as D5 sight and D4 means\n" +
+        "finite action bridge: score P_node = Φ_action × V_action only after the lowercase chart is read as D5 sight and D4 means\n" +
         "quadrant " + q + " · " + opName + " · " + moveName;
     });
   }

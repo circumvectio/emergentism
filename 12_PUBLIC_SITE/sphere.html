@@ -98,7 +98,7 @@
 }}
 </script>
 <script type="module">
-import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js';
+import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-3';
 
 let THREE, OrbitControls;
 try {
@@ -216,7 +216,10 @@ const balanceStrip = createStripChart(THREE, {
   color: TEAL,
   max: 144,
   label: 'B=sin theta',
-  labelColor: TEAL
+  labelColor: TEAL,
+  targetValue: 1,
+  targetBand: [0.94, 1],
+  targetColor: GOLD
 });
 root.add(balanceStrip.group);
 
