@@ -1070,6 +1070,123 @@ body.dimension-page .model-slider {
   box-shadow: 0 0 0 1px rgba(255,255,255,0.46);
 }
 
+.instrument-visual {
+  --instrument-phase: 0;
+  --instrument-primary: 0;
+  --instrument-secondary: 0;
+  --instrument-error: 0;
+}
+
+.instrument-visual::after {
+  opacity: 0.055;
+}
+
+.instrument-overlay {
+  box-shadow:
+    inset 0 0 0 1px rgba(5, 5, 5, 0.86),
+    inset 0 0 0 12px rgba(243, 244, 246, 0.006);
+}
+
+.instrument-graticule {
+  opacity: 0.082;
+  background:
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.06) 0 1px, transparent 1px 40px),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.06) 0 1px, transparent 1px 40px),
+    repeating-linear-gradient(90deg, rgba(33,150,243,0.11) 0 1px, transparent 1px 160px),
+    repeating-linear-gradient(0deg, rgba(255,235,59,0.08) 0 1px, transparent 1px 160px);
+}
+
+.instrument-reticle {
+  opacity: 0.074;
+}
+
+.instrument-aperture {
+  position: absolute;
+  inset: 54px 64px 84px;
+  border: 1px solid rgba(243, 244, 246, 0.12);
+  background:
+    linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,235,59,0.18) calc(50% - 0.5px), rgba(255,235,59,0.18) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    linear-gradient(0deg, transparent calc(50% - 0.5px), rgba(66,165,245,0.16) calc(50% - 0.5px), rgba(66,165,245,0.16) calc(50% + 0.5px), transparent calc(50% + 0.5px));
+  opacity: 0.3;
+}
+
+.instrument-aperture span {
+  position: absolute;
+  inset: 8px;
+  border: 1px dashed rgba(243, 244, 246, 0.08);
+}
+
+.instrument-acquisition {
+  position: absolute;
+  left: 13px;
+  right: 13px;
+  top: 45px;
+  height: 5px;
+  border: 1px solid rgba(243, 244, 246, 0.1);
+  background:
+    repeating-linear-gradient(90deg, rgba(243,244,246,0.13) 0 1px, transparent 1px 24px),
+    rgba(5, 5, 5, 0.76);
+}
+
+.instrument-acquisition span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(var(--instrument-phase));
+  transform-origin: left center;
+  background: linear-gradient(90deg, rgba(255,235,59,0.52), rgba(66,165,245,0.42));
+}
+
+.instrument-acquisition b {
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  left: calc(var(--instrument-phase) * 100%);
+  width: 1px;
+  background: rgba(243, 244, 246, 0.64);
+  transform: translateX(-0.5px);
+}
+
+.instrument-meter b,
+.instrument-acquisition span,
+.instrument-acquisition b {
+  transition: transform 90ms linear, left 90ms linear;
+}
+
+.instrument-controls label {
+  grid-template-columns: auto minmax(56px, 1fr) auto;
+}
+
+.instrument-controls output {
+  min-width: 3.4rem;
+  color: rgba(243, 244, 246, 0.86);
+  text-align: right;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .instrument-meter,
+  .instrument-telemetry span,
+  .instrument-controls button,
+  .instrument-controls label,
+  .model-readout.instrument-readout,
+  .model-slider .slider-end,
+  .model-slider .slider-output {
+    backdrop-filter: none !important;
+    background: #050505 !important;
+  }
+}
+
+@media (prefers-contrast: more) {
+  .instrument-overlay,
+  .instrument-meter,
+  .instrument-telemetry span,
+  .instrument-controls button,
+  .instrument-controls label,
+  .model-readout.instrument-readout {
+    border-color: rgba(243, 244, 246, 0.34) !important;
+  }
+}
+
 .fallback {
   position: absolute;
   inset: 0;

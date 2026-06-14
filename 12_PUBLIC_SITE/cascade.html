@@ -74,6 +74,7 @@
   <label>
     <span>rate</span>
     <input id="cascade-rate" type="range" min="25" max="150" step="5" value="100" aria-label="cascade simulation rate" />
+    <output id="cascade-rate-value" data-rate-output>1.00x</output>
   </label>
 </div>
 <div id="stage-readout" aria-live="polite">CASCADE INSTRUMENT</div>
@@ -100,7 +101,7 @@
 }}
 </script>
 <script type="module">
-import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-13';
+import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-14';
 
 let THREE, OrbitControls;
 try {
@@ -443,6 +444,7 @@ const glyphEl = document.getElementById('glyph'), capEl = document.getElementByI
 const leadEl = document.getElementById('lead'), subEl = document.getElementById('sub');
 const counterEl = document.getElementById('counter'), enterEl = document.getElementById('enter');
 const stageReadoutEl = document.getElementById('stage-readout');
+const labFrameEl = document.querySelector('.lab-frame');
 const timelineEl = document.getElementById('timeline');
 const timelineValueEl = document.getElementById('timeline-value');
 const telemetryEl = document.getElementById('cascade-telemetry');
@@ -450,6 +452,7 @@ const measurementsEl = document.getElementById('cascade-measurements');
 const cascadeStepEl = document.getElementById('cascade-step');
 const cascadeZeroEl = document.getElementById('cascade-zero');
 const cascadeRateEl = document.getElementById('cascade-rate');
+const cascadeRateValueEl = document.getElementById('cascade-rate-value');
 let textTimer = null;
 let projectionState = 'projection assay idle';
 let fps = 0;
@@ -541,8 +544,13 @@ function stageName(index){
 function syncInstrument(){
   if (timelineEl) timelineEl.value = String(cur);
   if (timelineValueEl) timelineValueEl.textContent = cur + '/' + (STAGES.length - 1);
+  if (cascadeRateValueEl) cascadeRateValueEl.textContent = rateValue().toFixed(2) + 'x';
   const phase = Math.min(1, tAccum / STAGE_SECS);
   const lag = Math.abs(morphTarget - morphCur);
+  if (labFrameEl) {
+    labFrameEl.style.setProperty('--instrument-phase', phase.toFixed(4));
+    labFrameEl.style.setProperty('--instrument-primary', clamp01(morphCur / (SHAPES.length - 1)).toFixed(4));
+  }
   setTelemetry({
     fps: REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps'),
     sample: REDUCED_MOTION ? 'sample static' : sampleLabel(),

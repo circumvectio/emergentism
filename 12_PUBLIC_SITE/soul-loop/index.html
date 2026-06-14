@@ -377,6 +377,7 @@
         <label>
           <span>rate</span>
           <input type="range" min="25" max="150" step="5" value="100" aria-label="Soul Loop simulation rate">
+          <output data-rate-output>1.00x</output>
         </label>
       `;
       visual.appendChild(controls);
@@ -385,7 +386,8 @@
       hold: controls.querySelector('[data-action="hold"]'),
       step: controls.querySelector('[data-action="step"]'),
       zero: controls.querySelector('[data-action="zero"]'),
-      rate: controls.querySelector('input[type="range"]')
+      rate: controls.querySelector('input[type="range"]'),
+      rateOutput: controls.querySelector('[data-rate-output]')
     };
   })();
 
@@ -393,6 +395,9 @@
     if (!playback || !playback.hold) return;
     playback.hold.textContent = paused ? 'RUN' : 'HOLD';
     playback.hold.setAttribute('aria-pressed', paused ? 'true' : 'false');
+    if (playback.rate && playback.rateOutput) {
+      playback.rateOutput.textContent = (parseFloat(playback.rate.value) / 100).toFixed(2) + 'x';
+    }
   }
 
   if (playback) {
@@ -415,6 +420,7 @@
       syncPlayback();
       draw(0, false);
     });
+    playback.rate.addEventListener('input', syncPlayback);
     syncPlayback();
   }
 

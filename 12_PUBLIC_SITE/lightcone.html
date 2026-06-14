@@ -66,6 +66,7 @@
   <label>
     <span>rate</span>
     <input id="lc-rate" type="range" min="25" max="150" step="5" value="100" aria-label="lightcone simulation rate" />
+    <output id="lc-rate-value" data-rate-output>1.00x</output>
   </label>
 </div>
 <div id="fallback"><div class="g">↑</div><p style="max-width:40ch;line-height:1.7">WebGL could not start. F5/Ω is shown here as an interpretive selection register: present action widens or narrows the reachable future cone.</p><a href="index.html">Open index</a></div>
@@ -84,7 +85,7 @@ let createStripChart, clearStripChart, updateStripChart;
 try {
   THREE = await import('three');
   ({ OrbitControls } = await import('three/addons/controls/OrbitControls.js'));
-  ({ createStripChart, clearStripChart, updateStripChart } = await import('./assets/js/instrument-charts.js?v=2026-06-14-instrument-13'));
+  ({ createStripChart, clearStripChart, updateStripChart } = await import('./assets/js/instrument-charts.js?v=2026-06-14-instrument-14'));
 } catch (e) { document.getElementById('fallback').style.display = 'flex'; throw e; }
 
 const REDUCED_MOTION = !!(window.matchMedia
@@ -220,8 +221,10 @@ const holdButton = document.getElementById('lc-hold');
 const stepButton = document.getElementById('lc-step');
 const zeroButton = document.getElementById('lc-zero');
 const rateInput = document.getElementById('lc-rate');
+const rateOutput = document.getElementById('lc-rate-value');
 const telemetry = document.getElementById('lightcone-telemetry');
 const measurements = document.getElementById('lightcone-measurements');
+const labFrame = document.querySelector('.lab-frame');
 let simTime = 0;
 let paused = false;
 let stepSeconds = 0;
@@ -283,6 +286,7 @@ function syncPlayback() {
   if (!holdButton) return;
   holdButton.textContent = paused ? 'RUN' : 'HOLD';
   holdButton.setAttribute('aria-pressed', paused ? 'true' : 'false');
+  if (rateOutput && rateInput) rateOutput.textContent = (parseFloat(rateInput.value) / 100).toFixed(2) + 'x';
 }
 
 function setTelemetry(fields){
@@ -342,6 +346,7 @@ if (zeroButton) {
     updateInstrument(nowMs(), 0);
   });
 }
+if (rateInput) rateInput.addEventListener('input', syncPlayback);
 syncPlayback();
 
 function updateInstrument(frameTime = nowMs(), poseOffset = null){
@@ -365,6 +370,10 @@ function updateInstrument(frameTime = nowMs(), poseOffset = null){
   const radius = height * Math.tan(angle);
   const coneResidual = Math.abs(radius - height * Math.tan(angle));
   const omegaProxy = Math.PI * radius * radius * height / 3;
+  if (labFrame) {
+    labFrame.style.setProperty('--instrument-phase', reach.toFixed(4));
+    labFrame.style.setProperty('--instrument-primary', (omegaProxy / OMEGA_GRAPH_MAX).toFixed(4));
+  }
   if (sampleAdvance > 0 || omegaChart.samples.length === 0) {
     const sampleDt = lastSampleT ? Math.max(0.001, t - lastSampleT) : sampleAdvance;
     lastOmegaRate = sampleDt ? (omegaProxy - lastOmegaProxy) / sampleDt : 0;

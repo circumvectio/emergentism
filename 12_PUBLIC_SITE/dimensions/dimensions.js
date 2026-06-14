@@ -3,7 +3,7 @@ import {
   createStripChart as createSharedStripChart,
   clearStripChart as clearSharedStripChart,
   updateStripChart as updateSharedStripChart
-} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-13";
+} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-14";
 
 const page = window.DIMENSION_PAGE || {};
 const canvas = document.querySelector(".dimension-canvas");
@@ -329,6 +329,13 @@ function ensureInstrumentOverlay(mode = animationMode) {
       <span></span><span></span><span></span><span></span>
     </div>
     <div class="instrument-reticle"></div>
+    <div class="instrument-aperture">
+      <span></span>
+    </div>
+    <div class="instrument-acquisition">
+      <span></span>
+      <b></b>
+    </div>
     <div class="instrument-scale x" data-axis-label="${scale.x}"></div>
     <div class="instrument-scale y" data-axis-label="${scale.y}"></div>
     <div class="instrument-id">
@@ -377,10 +384,25 @@ function ensureInstrumentOverlay(mode = animationMode) {
 function setInstrumentMetric(metric = "", state = "", phase = "", uncertainty = "", signals = null) {
   if (!visual) return;
   if (metric) visual.dataset.instrumentMetric = metric;
-  if (state) visual.dataset.instrumentState = state;
-  if (phase) visual.dataset.instrumentPhase = phase;
+  if (state) {
+    visual.dataset.instrumentState = state;
+    visual.dataset.instrumentRunState = /held|zeroed/i.test(state) ? "hold" : "run";
+  }
+  if (phase) {
+    visual.dataset.instrumentPhase = phase;
+    const phaseValue = normalizedPhaseFromText(phase);
+    if (Number.isFinite(phaseValue)) {
+      visual.style.setProperty("--instrument-phase", phaseValue.toFixed(4));
+    }
+  }
   if (uncertainty) visual.dataset.instrumentUncertainty = uncertainty;
   if (signals) setInstrumentSignals(signals);
+}
+
+function normalizedPhaseFromText(phase) {
+  const match = String(phase).match(/(?:phase|q)\s*([+-]?(?:\d+\.?\d*|\.\d+))/i);
+  if (!match) return Number.NaN;
+  return clamp01(parseFloat(match[1]));
 }
 
 function setInstrumentSignals(signals = {}) {
@@ -391,7 +413,11 @@ function setInstrumentSignals(signals = {}) {
     ["error", "Residual"]
   ].forEach(([key, fallbackLabel]) => {
     const raw = finiteNumber(signals[key], Number.NaN);
-    if (Number.isFinite(raw)) visual.dataset[`signal${key}`] = String(clamp01(raw));
+    if (Number.isFinite(raw)) {
+      const clamped = clamp01(raw);
+      visual.dataset[`signal${key}`] = String(clamped);
+      visual.style.setProperty(`--instrument-${key}`, clamped.toFixed(4));
+    }
     if (signals[`${key}Label`]) visual.dataset[`signal${key}Label`] = String(signals[`${key}Label`]);
     else if (!visual.dataset[`signal${key}Label`]) visual.dataset[`signal${key}Label`] = fallbackLabel;
     if (signals[`${key}Text`]) visual.dataset[`signal${key}Text`] = String(signals[`${key}Text`]);
@@ -447,6 +473,7 @@ function ensureInstrumentControls() {
       <label>
         <span>rate</span>
         <input type="range" min="25" max="150" step="5" value="100" aria-label="simulation rate" />
+        <output data-rate-output>1.00x</output>
       </label>
     `;
     visual.appendChild(controls);
@@ -456,7 +483,8 @@ function ensureInstrumentControls() {
     hold: controls.querySelector('[data-action="hold"]'),
     step: controls.querySelector('[data-action="step"]'),
     zero: controls.querySelector('[data-action="zero"]'),
-    rate: controls.querySelector('input[type="range"]')
+    rate: controls.querySelector('input[type="range"]'),
+    rateOutput: controls.querySelector('[data-rate-output]')
   };
 }
 
@@ -464,6 +492,9 @@ function syncInstrumentControls(playback, paused) {
   if (!playback || !playback.hold) return;
   playback.hold.textContent = paused ? "RUN" : "HOLD";
   playback.hold.setAttribute("aria-pressed", paused ? "true" : "false");
+  if (playback.rate && playback.rateOutput) {
+    playback.rateOutput.textContent = (parseFloat(playback.rate.value) / 100).toFixed(2) + "x";
+  }
 }
 
 function createModelSlider({
@@ -581,6 +612,7 @@ function drawTitanCalculator(time = 0) {
     });
     playback.rate.addEventListener("input", () => {
       setInstrumentMetric(visual.dataset.instrumentMetric || "", "rate " + (parseFloat(playback.rate.value) / 100).toFixed(2) + "x", visual.dataset.instrumentPhase || "");
+      syncInstrumentControls(playback, paused);
     });
     syncInstrumentControls(playback, paused);
   }
@@ -793,6 +825,7 @@ function drawConstitutionInstrument(time = 0) {
     });
     playback.rate.addEventListener("input", () => {
       setInstrumentMetric(visual.dataset.instrumentMetric || "", "rate " + (parseFloat(playback.rate.value) / 100).toFixed(2) + "x", visual.dataset.instrumentPhase || "");
+      syncInstrumentControls(playback, paused);
     });
     sync();
   }
@@ -2226,6 +2259,7 @@ async function boot() {
       });
       playback.rate.addEventListener("input", () => {
         setInstrumentMetric(visual.dataset.instrumentMetric || "", "rate " + (parseFloat(playback.rate.value) / 100).toFixed(2) + "x", visual.dataset.instrumentPhase || "");
+        syncInstrumentControls(playback, paused);
       });
       syncInstrumentControls(playback, paused);
     }

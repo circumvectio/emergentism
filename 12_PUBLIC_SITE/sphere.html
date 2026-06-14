@@ -82,6 +82,7 @@
   <label>
     <span>rate</span>
     <input id="scan-rate" type="range" min="25" max="150" step="5" value="100" aria-label="Burrisphere scan rate" />
+    <output id="scan-rate-value" data-rate-output>1.00x</output>
   </label>
 </div>
 <div class="legend">
@@ -108,7 +109,7 @@
 }}
 </script>
 <script type="module">
-import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-13';
+import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-14';
 
 let THREE, OrbitControls;
 try {
@@ -280,8 +281,10 @@ const scanToggle = document.getElementById('scan-toggle');
 const positionStep = document.getElementById('position-step');
 const positionZero = document.getElementById('position-zero');
 const scanRate = document.getElementById('scan-rate');
+const scanRateValue = document.getElementById('scan-rate-value');
 const telemetry = document.getElementById('sphere-telemetry');
 const measurements = document.getElementById('sphere-measurements');
+const labFrame = document.querySelector('.lab-frame');
 let selectedIndex = 3;
 let scanRunning = !REDUCED_MOTION;
 const SCAN_MS = 3200;
@@ -362,6 +365,7 @@ function syncScanButton() {
   if (!scanToggle) return;
   scanToggle.textContent = scanRunning ? 'HOLD' : 'SCAN';
   scanToggle.setAttribute('aria-pressed', scanRunning ? 'false' : 'true');
+  if (scanRateValue) scanRateValue.textContent = rateValue().toFixed(2) + 'x';
 }
 function select(i, manual = false){
   selectedIndex = i;
@@ -376,6 +380,10 @@ function select(i, manual = false){
   const balance = Math.sin(theta);
   const reciprocalResidual = Math.abs(phi * nu - 1);
   const balanceError = Math.abs(1 - balance);
+  if (labFrame) {
+    labFrame.style.setProperty('--instrument-phase', (i / 6).toFixed(4));
+    labFrame.style.setProperty('--instrument-primary', balance.toFixed(4));
+  }
   document.getElementById(els.lvl).textContent = `${p.L} · ${p.caste}`;
   document.getElementById(els.op).textContent = p.op;
   const t = document.getElementById(els.tier); t.textContent = p.tierNote;
@@ -457,6 +465,10 @@ if (positionZero) positionZero.addEventListener('click', () => {
   if (REDUCED_MOTION) render(performance.now());
 });
 if (positionScrub) positionScrub.addEventListener('input', () => select(Number(positionScrub.value), true));
+if (scanRate) scanRate.addEventListener('input', () => {
+  syncScanButton();
+  select(selectedIndex);
+});
 
 // raycasting
 const ray = new THREE.Raycaster(); const ptr = new THREE.Vector2();
