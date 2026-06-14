@@ -521,14 +521,14 @@ h3 {
   border: 1px solid rgba(243, 244, 246, 0.09);
   box-shadow:
     inset 0 0 0 1px rgba(5, 5, 5, 0.78),
-    inset 0 0 0 12px rgba(243, 244, 246, 0.008);
+    inset 0 0 0 12px rgba(243, 244, 246, 0.006);
   contain: paint;
 }
 
 .instrument-graticule {
   position: absolute;
   inset: 24px;
-  opacity: 0.105;
+  opacity: 0.082;
   background:
     repeating-linear-gradient(90deg, rgba(255,255,255,0.07) 0 1px, transparent 1px 32px),
     repeating-linear-gradient(0deg, rgba(255,255,255,0.07) 0 1px, transparent 1px 32px),
@@ -573,7 +573,7 @@ h3 {
   background:
     linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,255,255,0.16) calc(50% - 0.5px), rgba(255,255,255,0.16) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
     linear-gradient(0deg, transparent calc(50% - 0.5px), rgba(66,165,245,0.14) calc(50% - 0.5px), rgba(66,165,245,0.14) calc(50% + 0.5px), transparent calc(50% + 0.5px));
-  opacity: 0.095;
+  opacity: 0.072;
 }
 
 .instrument-id {
@@ -680,11 +680,11 @@ h3 {
   height: 100%;
   transform: scaleX(0);
   transform-origin: left center;
-  background: linear-gradient(90deg, rgba(66,165,245,0.74), rgba(243,244,246,0.84));
+  background: linear-gradient(90deg, rgba(66,165,245,0.56), rgba(243,244,246,0.72));
 }
 
 .instrument-meter.error b {
-  background: linear-gradient(90deg, rgba(76,175,80,0.54), rgba(255,122,23,0.72));
+  background: linear-gradient(90deg, rgba(76,175,80,0.42), rgba(255,122,23,0.58));
 }
 
 .instrument-mode-burrisphere .instrument-measurements,
@@ -853,8 +853,8 @@ h3 {
 }
 
 .instrument-controls button:hover {
-  border-color: rgba(255, 235, 59, 0.58);
-  color: #FFEB3B;
+  border-color: rgba(243, 244, 246, 0.42);
+  color: rgba(243, 244, 246, 0.94);
 }
 
 .instrument-controls button[aria-pressed="true"] {
@@ -880,8 +880,8 @@ h3 {
   background-repeat: no-repeat;
   background-size: 100% 3px;
   background-image:
-    repeating-linear-gradient(90deg, rgba(243,244,246,.24) 0 1px, transparent 1px 8px),
-    linear-gradient(90deg, rgba(66,165,245,.28), rgba(243,244,246,.42));
+    repeating-linear-gradient(90deg, rgba(243,244,246,.2) 0 1px, transparent 1px 8px),
+    linear-gradient(90deg, rgba(66,165,245,.2), rgba(243,244,246,.34));
 }
 
 .instrument-controls input[type="range"]::-webkit-slider-thumb {
@@ -982,7 +982,7 @@ h3 {
   background: var(--instrument-bg) !important;
   border-color: var(--instrument-line) !important;
   border-left-color: var(--instrument-amber) !important;
-  color: rgba(243, 244, 246, 0.9) !important;
+  color: rgba(243, 244, 246, 0.86) !important;
   line-height: 1.42 !important;
   max-height: min(25vh, 156px) !important;
   outline: 1px solid rgba(5, 5, 5, 0.78);
@@ -1023,11 +1023,11 @@ h3 {
 }
 
 .model-slider .slider-lo {
-  color: #FFEB3B;
+  color: rgba(255, 235, 59, 0.88);
 }
 
 .model-slider .slider-hi {
-  color: #42A5F5;
+  color: rgba(66, 165, 245, 0.88);
 }
 
 .model-slider .slider-output {
@@ -1050,8 +1050,8 @@ body.dimension-page .model-slider {
   background-size: 100% 4px;
   background-image:
     linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(243,244,246,.5) calc(50% - 0.5px), rgba(243,244,246,.5) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
-    repeating-linear-gradient(90deg, rgba(255,255,255,0.24) 0 1px, transparent 1px 8px),
-    linear-gradient(90deg, rgba(255,235,59,0.28), rgba(66,165,245,0.28));
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.2) 0 1px, transparent 1px 8px),
+    linear-gradient(90deg, rgba(255,235,59,0.2), rgba(66,165,245,0.2));
   cursor: pointer;
 }
 
@@ -1100,16 +1100,16 @@ body.dimension-page .model-slider {
 }
 
 .instrument-graticule {
-  opacity: 0.082;
+  opacity: 0.064;
   background:
     repeating-linear-gradient(90deg, rgba(255,255,255,0.06) 0 1px, transparent 1px 40px),
     repeating-linear-gradient(0deg, rgba(255,255,255,0.06) 0 1px, transparent 1px 40px),
-    repeating-linear-gradient(90deg, rgba(33,150,243,0.11) 0 1px, transparent 1px 160px),
-    repeating-linear-gradient(0deg, rgba(255,235,59,0.08) 0 1px, transparent 1px 160px);
+    repeating-linear-gradient(90deg, rgba(33,150,243,0.075) 0 1px, transparent 1px 160px),
+    repeating-linear-gradient(0deg, rgba(255,235,59,0.055) 0 1px, transparent 1px 160px);
 }
 
 .instrument-reticle {
-  opacity: 0.074;
+  opacity: 0.058;
 }
 
 .instrument-aperture {
@@ -1119,7 +1119,7 @@ body.dimension-page .model-slider {
   background:
     linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,235,59,0.18) calc(50% - 0.5px), rgba(255,235,59,0.18) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
     linear-gradient(0deg, transparent calc(50% - 0.5px), rgba(66,165,245,0.16) calc(50% - 0.5px), rgba(66,165,245,0.16) calc(50% + 0.5px), transparent calc(50% + 0.5px));
-  opacity: 0.3;
+  opacity: 0.22;
 }
 
 .instrument-aperture::before,
@@ -1127,7 +1127,7 @@ body.dimension-page .model-slider {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: rgba(243, 244, 246, 0.72);
+  background: rgba(243, 244, 246, 0.58);
 }
 
 .instrument-aperture::before {
@@ -1143,7 +1143,7 @@ body.dimension-page .model-slider {
   bottom: 0;
   left: calc(var(--instrument-secondary) * 100%);
   width: 1px;
-  background: rgba(66, 165, 245, 0.76);
+  background: rgba(66, 165, 245, 0.58);
 }
 
 .instrument-aperture span {
@@ -1209,17 +1209,17 @@ body.dimension-page .model-slider {
 
 .instrument-signal-ruler .primary {
   top: calc((1 - var(--instrument-primary)) * 100%);
-  background: #FFEB3B;
+  background: rgba(255, 235, 59, 0.78);
 }
 
 .instrument-signal-ruler .secondary {
   top: calc((1 - var(--instrument-secondary)) * 100%);
-  background: #42A5F5;
+  background: rgba(66, 165, 245, 0.78);
 }
 
 .instrument-signal-ruler .error {
   top: calc((1 - var(--instrument-error)) * 100%);
-  background: #FF7A17;
+  background: rgba(255, 122, 23, 0.78);
 }
 
 .instrument-sample-ledger {
@@ -1268,7 +1268,7 @@ body.dimension-page .model-slider {
   height: 100%;
   transform: scaleX(var(--instrument-phase));
   transform-origin: left center;
-  background: linear-gradient(90deg, rgba(255,235,59,0.52), rgba(66,165,245,0.42));
+  background: linear-gradient(90deg, rgba(255,235,59,0.34), rgba(66,165,245,0.3));
 }
 
 .instrument-acquisition b {

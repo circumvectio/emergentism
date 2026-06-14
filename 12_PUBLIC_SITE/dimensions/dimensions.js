@@ -3,7 +3,7 @@ import {
   createStripChart as createSharedStripChart,
   clearStripChart as clearSharedStripChart,
   updateStripChart as updateSharedStripChart
-} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-15";
+} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-16";
 
 const page = window.DIMENSION_PAGE || {};
 const canvas = document.querySelector(".dimension-canvas");
@@ -17,13 +17,14 @@ const SAMPLE_HZ = 30;
 const SAMPLE_DT = 1 / SAMPLE_HZ;
 const MAX_FRAME_DT = 0.12;
 const INITIAL_ASSAY_SECONDS = 1.6;
-// Skyzai motion discipline: slow drift, no bounce/spring. These are assay
-// cycles, not decorative loops; they must move enough to read in 2-3 seconds.
+// Skyzai motion discipline: bounded drift, no bounce/spring. These are assay
+// cycles, not decorative loops; motion only exists to expose a measured state.
 const INSTRUMENT_CPS = {
-  slow: 0.024,
-  medium: 0.036,
-  fast: 0.052
+  slow: 0.018,
+  medium: 0.03,
+  fast: 0.044
 };
+const INSTRUMENT_AZIMUTH_RPS = 0.0065;
 function nowMs() {
   return (typeof window.performance !== "undefined" && typeof window.performance.now === "function")
     ? window.performance.now()
@@ -1174,9 +1175,9 @@ function createStripChart(origin, width = 2.2, height = 0.52, color = 0x42a5f5, 
     max,
     label,
     labelColor,
-    frameOpacity: 0.28,
-    traceOpacity: 0.64,
-    cursorOpacity: 0.3,
+    frameOpacity: 0.24,
+    traceOpacity: 0.58,
+    cursorOpacity: 0.26,
     ...chartOptions
   });
 }
@@ -1194,9 +1195,9 @@ function updateStripChart(chart, value, min = 0, max = 1, sampled = false) {
 function addReferenceFrame(scene) {
   const frame = new THREE.Group();
   const base = 0x7a7a7a;
-  const axisMat = new THREE.LineBasicMaterial({ color: base, transparent: true, opacity: 0.28 });
-  const tickMat = new THREE.LineBasicMaterial({ color: base, transparent: true, opacity: 0.18 });
-  const majorTickMat = new THREE.LineBasicMaterial({ color: 0xf3f4f6, transparent: true, opacity: 0.22 });
+  const axisMat = new THREE.LineBasicMaterial({ color: base, transparent: true, opacity: 0.22 });
+  const tickMat = new THREE.LineBasicMaterial({ color: base, transparent: true, opacity: 0.13 });
+  const majorTickMat = new THREE.LineBasicMaterial({ color: 0xf3f4f6, transparent: true, opacity: 0.18 });
   const extent = 3.2;
   const tick = 0.035;
 
@@ -1218,10 +1219,10 @@ function addReferenceFrame(scene) {
   }
 
   [1, 2, 3].forEach((radius) => {
-    const xy = ring(radius, base, radius === 1 ? 0.18 : 0.1);
+    const xy = ring(radius, base, radius === 1 ? 0.14 : 0.07);
     xy.rotation.x = 0;
-    const xz = ring(radius, base, radius === 1 ? 0.16 : 0.08);
-    const yz = ring(radius, base, radius === 1 ? 0.14 : 0.07);
+    const xz = ring(radius, base, radius === 1 ? 0.12 : 0.06);
+    const yz = ring(radius, base, radius === 1 ? 0.1 : 0.05);
     yz.rotation.y = Math.PI / 2;
     frame.add(xy, xz, yz);
   });
@@ -1259,7 +1260,7 @@ function createGridPlane(size = 3.8, lines = 13) {
   for (let i = 0; i < lines; i += 1) {
     const p = -half + (size * i) / (lines - 1);
     const major = i === 0 || i === lines - 1 || i === Math.floor(lines / 2);
-    const opacity = major ? 0.38 : 0.22;
+    const opacity = major ? 0.28 : 0.14;
     group.add(line([
       new THREE.Vector3(-half, 0, p),
       new THREE.Vector3(half, 0, p)
@@ -1693,9 +1694,9 @@ function buildScene(mode, scene) {
     // slider sends w toward infinity: β tends to c, R/r tends to 0, and the
     // finite drawing approaches the sphere limit without pretending to reach it.
     root.add(createGridPlane(6.4, 21));                          // the complex plane
-    root.add(createTickedRing(1.0, 0xffeb3b, 0.52, 40));          // unit circle |z|=1  (x=1, Suda)
-    root.add(line([new THREE.Vector3(-3.1, 0, 0), new THREE.Vector3(3.1, 0, 0)], 0x555555, 0.55));
-    root.add(line([new THREE.Vector3(0, 0, -3.1), new THREE.Vector3(0, 0, 3.1)], 0x555555, 0.55));
+    root.add(createTickedRing(1.0, 0xffeb3b, 0.38, 40));          // unit circle |z|=1  (x=1, Suda)
+    root.add(line([new THREE.Vector3(-3.1, 0, 0), new THREE.Vector3(3.1, 0, 0)], 0x555555, 0.36));
+    root.add(line([new THREE.Vector3(0, 0, -3.1), new THREE.Vector3(0, 0, 3.1)], 0x555555, 0.36));
     const torus = makeMorphTorus(1.7, 84, 24, 0xffffff);        // calibrated wire density; high enough to read, light enough to run
     root.add(torus.mesh);
     const limitShell = createSphere(1.7, 0.045, 88, 44);
@@ -1767,10 +1768,10 @@ function buildScene(mode, scene) {
       // the Burrisphere — which then projects upward.
       const f = gamma / (gamma + 1);
       const g = torus.setF(f);
-      torus.mesh.material.opacity = 0.3 + 0.06 * aB;
-      limitShell.material.opacity = 0.035 + 0.12 * clamp01(gamma / G_MAX);
+      torus.mesh.material.opacity = 0.24 + 0.045 * aB;
+      limitShell.material.opacity = 0.028 + 0.09 * clamp01(gamma / G_MAX);
       limitGauge.scale.setScalar(0.98 + 0.02 * clamp01(gamma / G_MAX));
-      limitGauge.traverse((o) => { if (o.material) o.material.opacity = 0.08 + 0.15 * clamp01(gamma / G_MAX); });
+      limitGauge.traverse((o) => { if (o.material) o.material.opacity = 0.06 + 0.11 * clamp01(gamma / G_MAX); });
       // the relative centre moves on the complex plane (log-compressed real axis)
       const px = 2.5 * Math.tanh(w / 2.2);
       relCentre.position.set(px, 0, 0);
@@ -1837,10 +1838,10 @@ function buildScene(mode, scene) {
     const FORESIGHT = 0xffeb3b, MEANS = 0x42a5f5, BALANCED = 0xf3f4f6;
     const U = 2 * r;                                                 // unit-circle radius on a tangent plane
 
-    root.add(createSphere(r, 0.22));
-    root.add(ring(r, FORESIGHT, 0.8));                                // the equator — Φ/V balance boundary on the sphere
+    root.add(createSphere(r, 0.18));
+    root.add(ring(r, FORESIGHT, 0.66));                                // the equator — Φ/V balance boundary on the sphere
     [0.45, 0.8].forEach((y) => {
-      const lat = ring(Math.sqrt(r * r - y * y), 0x666666, 0.3);
+      const lat = ring(Math.sqrt(r * r - y * y), 0x666666, 0.18);
       lat.position.y = y; root.add(lat);
       const m = lat.clone(); m.position.y = -y; root.add(m);
     });
@@ -1848,9 +1849,9 @@ function buildScene(mode, scene) {
     // the two tangent copies of the same complex plane (floor at 0, top at ∞)
     [-r, r].forEach((y) => {
       const g = createGridPlane(9.0, 21); g.position.y = y; root.add(g);
-      const u = createTickedRing(U, FORESIGHT, 0.46, 56); u.position.y = y; root.add(u); // unit circle = the equator's shadow
-      root.add(line([new THREE.Vector3(-4.5, y, 0), new THREE.Vector3(4.5, y, 0)], 0x555555, 0.5));
-      root.add(line([new THREE.Vector3(0, y, -4.5), new THREE.Vector3(0, y, 4.5)], 0x555555, 0.5));
+      const u = createTickedRing(U, FORESIGHT, 0.32, 56); u.position.y = y; root.add(u); // unit circle = the equator's shadow
+      root.add(line([new THREE.Vector3(-4.5, y, 0), new THREE.Vector3(4.5, y, 0)], 0x555555, 0.28));
+      root.add(line([new THREE.Vector3(0, y, -4.5), new THREE.Vector3(0, y, 4.5)], 0x555555, 0.28));
     });
     root.add(makeMarker(N, 0xc8c8c8, 0.07));
     root.add(makeMarker(S, 0x8a8a8a, 0.07));
@@ -1872,7 +1873,7 @@ function buildScene(mode, scene) {
     const quadTint = (sx, sz, color) => {
       const m = new THREE.Mesh(
         new THREE.PlaneGeometry(U, U),
-        new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 0.08, side: THREE.DoubleSide, depthWrite: false }));
+        new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 0.035, side: THREE.DoubleSide, depthWrite: false }));
       m.rotation.x = -Math.PI / 2;
       m.position.set(sx * U / 2, r + 0.004, sz * U / 2);
       root.add(m);
@@ -1881,7 +1882,7 @@ function buildScene(mode, scene) {
     quadTint(-1, -1, MEANS); quadTint(1, -1, MEANS);       // Im<0 — V-heavy
     const overlap = new THREE.Mesh(
       new THREE.CircleGeometry(U, 48),
-      new THREE.MeshBasicMaterial({ color: FORESIGHT, transparent: true, opacity: 0.11, side: THREE.DoubleSide, depthWrite: false }));
+      new THREE.MeshBasicMaterial({ color: FORESIGHT, transparent: true, opacity: 0.05, side: THREE.DoubleSide, depthWrite: false }));
     overlap.rotation.x = -Math.PI / 2; overlap.position.y = r + 0.006; root.add(overlap); // the balance overlap (⊙1 / L4)
 
     // THE TRANSCENDENTALS ARE THE STATIONS OF THE GEOMETRY ITSELF — the
@@ -1893,8 +1894,8 @@ function buildScene(mode, scene) {
     root.add(makeMarker(new THREE.Vector3(0, 0, 0), 0xffeb3b, 0.055)); // ⊙ — the One at the centre (Viṣṇu's sign)
 
     const pMark = makeMarker(new THREE.Vector3(r, 0, 0), 0xffffff, 0.085); // P — where the two rays meet
-    const rayDown = line([N, new THREE.Vector3(U, -r, 0)], FORESIGHT, 0.8);  // ∞ → P → floor: lands at 2r·φ
-    const rayUp = line([S, new THREE.Vector3(U, r, 0)], FORESIGHT, 0.8);     // 0 → P → top: lands at 2r·ν
+    const rayDown = line([N, new THREE.Vector3(U, -r, 0)], FORESIGHT, 0.58); // ∞ → P → floor: lands at 2r·φ
+    const rayUp = line([S, new THREE.Vector3(U, r, 0)], FORESIGHT, 0.58);    // 0 → P → top: lands at 2r·ν
     const phiPt = makeMarker(new THREE.Vector3(U, -r, 0), FORESIGHT, 0.07);  // the φ landing (floor)
     const nuPt = makeMarker(new THREE.Vector3(U, r, 0), FORESIGHT, 0.07);    // the ν landing (top)
     root.add(pMark); root.add(rayDown); root.add(rayUp); root.add(phiPt); root.add(nuPt);
@@ -1914,11 +1915,11 @@ function buildScene(mode, scene) {
         pointTrail.length = 0;
       });
     }
-    const phiLine = line([new THREE.Vector3(U, -r, 0)], 0xffeb3b, 0.24);
-    const nuLine = line([new THREE.Vector3(U, r, 0)], 0x42a5f5, 0.24);
-    const pointLine = line([new THREE.Vector3(r, 0, 0)], 0xffffff, 0.18);
-    const phiRange = createTickedRing(U, FORESIGHT, 0.2, 56);
-    const nuRange = createTickedRing(U, MEANS, 0.2, 56);
+    const phiLine = line([new THREE.Vector3(U, -r, 0)], 0xffeb3b, 0.18);
+    const nuLine = line([new THREE.Vector3(U, r, 0)], 0x42a5f5, 0.18);
+    const pointLine = line([new THREE.Vector3(r, 0, 0)], 0xffffff, 0.14);
+    const phiRange = createTickedRing(U, FORESIGHT, 0.14, 56);
+    const nuRange = createTickedRing(U, MEANS, 0.14, 56);
     phiRange.position.y = -r + 0.01;
     nuRange.position.y = r + 0.01;
     const balanceChart = createStripChart(new THREE.Vector3(-1.7, -1.36, 0.08), 3.4, 0.42, 0x42a5f5, 120, "U_B bridge", 0x42a5f5, {
@@ -1974,7 +1975,7 @@ function buildScene(mode, scene) {
       return ap.cross(ab).length() / Math.max(ab.length(), 1e-9);
     }
     dyn.push(function (t, sampled) {
-      const psi = t * 0.12;                                          // measured azimuth trace
+      const psi = t * TAU * INSTRUMENT_AZIMUTH_RPS;                  // measured azimuth trace
       const theta = thetaUserActive
         ? thetaFromSlider()
         : THETA_MIN + assaySweep01(t + D5_BALANCE_OFFSET, D5_SWEEP_CPS) * (THETA_MAX - THETA_MIN); // auto-sweep from the calibrated balance latitude
@@ -2079,17 +2080,17 @@ function buildScene(mode, scene) {
       makeMaterial(color, opacity)
     );
     const boundaryRadius = 1.82;
-    const boundary = cccRing(0xffffff, 0.24, 0.009);
+    const boundary = cccRing(0xffffff, 0.18, 0.009);
     boundary.scale.setScalar(boundaryRadius);
     root.add(boundary);
-    const boundaryGauge = createXYTickedRing(boundaryRadius, 0xffffff, 0.22, 72, 0.035);
+    const boundaryGauge = createXYTickedRing(boundaryRadius, 0xffffff, 0.16, 72, 0.035);
     root.add(boundaryGauge);
     addSceneLabel(root, "aeon boundary", new THREE.Vector3(-1.52, 1.58, 0.05), 0xf3f4f6, [0.74, 0.11]);
     addSceneLabel(root, "/0 origin", new THREE.Vector3(0.42, 0.16, 0.05), 0xffeb3b, [0.54, 0.1]);
     addSceneLabel(root, "q-map", new THREE.Vector3(1.42, -1.08, 0.05), 0x42a5f5, [0.46, 0.1]);
 
-    const aeonShell = cccRing(0xffffff, 0.74, 0.011);
-    const conformalShell = cccRing(0x42a5f5, 0.42, 0.009);
+    const aeonShell = cccRing(0xffffff, 0.56, 0.011);
+    const conformalShell = cccRing(0x42a5f5, 0.32, 0.009);
     root.add(aeonShell, conformalShell);
 
     const originDot = new THREE.Mesh(
@@ -2155,8 +2156,8 @@ function buildScene(mode, scene) {
       const conformalRadius = 0.12 + (1 - q) * (boundaryRadius - 0.12);
       aeonShell.scale.setScalar(aeonRadius);
       conformalShell.scale.setScalar(conformalRadius);
-      aeonShell.material.opacity = 0.18 + 0.58 * (1 - 0.35 * q);
-      conformalShell.material.opacity = 0.18 + 0.34 * q;
+      aeonShell.material.opacity = 0.14 + 0.42 * (1 - 0.35 * q);
+      conformalShell.material.opacity = 0.12 + 0.26 * q;
       const a = leadPhase * TAU;
       phaseNeedle.geometry.setFromPoints([
         new THREE.Vector3(0, 0, 0.02),
@@ -2178,7 +2179,7 @@ function buildScene(mode, scene) {
       inverseDot.position.set(graphX, inverseY, 0.04);
       boundary.rotation.z = 0;
       boundaryGauge.rotation.z = 0;
-      boundary.material.opacity = 0.22;
+      boundary.material.opacity = 0.16;
       const mapResidual = Math.abs(q + (1 - q) - 1);
       const closureResidual = Math.abs((aeonRadius + conformalRadius) - (boundaryRadius + 0.12));
       updateStripChart(closureChart, q, 0, 1, sampled);

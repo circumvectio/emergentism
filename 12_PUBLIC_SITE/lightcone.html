@@ -85,7 +85,7 @@ let createStripChart, clearStripChart, updateStripChart;
 try {
   THREE = await import('three');
   ({ OrbitControls } = await import('three/addons/controls/OrbitControls.js'));
-  ({ createStripChart, clearStripChart, updateStripChart } = await import('./assets/js/instrument-charts.js?v=2026-06-14-instrument-15'));
+  ({ createStripChart, clearStripChart, updateStripChart } = await import('./assets/js/instrument-charts.js?v=2026-06-14-instrument-16'));
 } catch (e) { document.getElementById('fallback').style.display = 'flex'; throw e; }
 
 const REDUCED_MOTION = !!(window.matchMedia
@@ -94,6 +94,7 @@ const TAU = Math.PI * 2;
 const SAMPLE_HZ = 30;
 const SAMPLE_DT = 1 / SAMPLE_HZ;
 const MAX_FRAME_DT = 0.12;
+const LIGHTCONE_SWEEP_CPS = 0.026;
 const GOLD = 0xffeb3b, TEAL = 0x2196f3, CRIMSON = 0xf44336;
 const canvas = document.getElementById('scene');
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true });
@@ -110,6 +111,8 @@ controls.autoRotate = false; controls.autoRotateSpeed = 0;
 
 // spatial grid at t=0 (the present hyperplane)
 const grid = new THREE.GridHelper(8, 16, 0x222222, 0x161616);
+grid.material.transparent = true;
+grid.material.opacity = 0.22;
 scene.add(grid);
 // time axis (vertical, +y = future)
 scene.add(new THREE.Line(
@@ -151,7 +154,7 @@ const CONE_SEGMENTS = RINGS * SPOKES + Math.ceil(SPOKES / 3);
 const CONE_COORDS = CONE_SEGMENTS * 2 * 3;
 const futureConePositions = new Float32Array(CONE_COORDS);
 const pastConePositions = new Float32Array(CONE_COORDS);
-const coneMat = new THREE.LineBasicMaterial({ color: GOLD, transparent: true, opacity: 0.72 });
+const coneMat = new THREE.LineBasicMaterial({ color: GOLD, transparent: true, opacity: 0.52 });
 const coneGeo = new THREE.BufferGeometry();
 coneGeo.setAttribute('position', new THREE.BufferAttribute(futureConePositions, 3));
 const cone = new THREE.LineSegments(coneGeo, coneMat);
@@ -161,13 +164,13 @@ const fillMat = new THREE.MeshBasicMaterial({ color: GOLD, transparent: true, op
 const fill = new THREE.Mesh(new THREE.ConeGeometry(1, 1, 48, 1, true), fillMat);
 scene.add(fill);
 // a faint past cone (downward, dim)
-const pastMat = new THREE.LineBasicMaterial({ color: TEAL, transparent: true, opacity: 0.18 });
+const pastMat = new THREE.LineBasicMaterial({ color: TEAL, transparent: true, opacity: 0.13 });
 const pastGeo = new THREE.BufferGeometry();
 pastGeo.setAttribute('position', new THREE.BufferAttribute(pastConePositions, 3));
 const past = new THREE.LineSegments(pastGeo, pastMat);
 scene.add(past);
 // the worldline rising up the time axis
-const wl = new THREE.Line(new THREE.BufferGeometry(), new THREE.LineBasicMaterial({ color: 0xe8e4df, transparent:true, opacity:0.5 }));
+const wl = new THREE.Line(new THREE.BufferGeometry(), new THREE.LineBasicMaterial({ color: 0xe8e4df, transparent:true, opacity:0.38 }));
 scene.add(wl);
 
 const OMEGA_TRACE_MAX = 180;
@@ -364,7 +367,7 @@ function updateInstrument(frameTime = nowMs(), poseOffset = null){
   const t = REDUCED_MOTION ? simTime || 1.2 : simTime;
   // F5/Ω drive in the interpretive register: the cone widens and lengthens on
   // a measured cycle, without claiming a new settled physical force.
-  const reach = assaySweep01(t, 0.036, 0.08);           // repeatable 0..1 assay sweep
+  const reach = assaySweep01(t, LIGHTCONE_SWEEP_CPS, 0.08); // repeatable 0..1 assay sweep
   const angle = (18 + reach * 12) * Math.PI / 180;      // 18°..30° (widen)
   const height = 1.35 + reach * 1.55;                   // lengthen without clipping
   const radius = height * Math.tan(angle);

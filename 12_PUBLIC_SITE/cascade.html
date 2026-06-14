@@ -101,7 +101,7 @@
 }}
 </script>
 <script type="module">
-import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-15';
+import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-16';
 
 let THREE, OrbitControls;
 try {
@@ -166,6 +166,8 @@ function frameCascadeCamera() {
 frameCascadeCamera();
 
 const GOLD = 0xffeb3b, TEAL = 0x2196f3, CRIMSON = 0xf44336, WHITE = 0xf3f4f6;
+const CASCADE_SWEEP_CPS = 0.026;
+const CASCADE_AZIMUTH_RPS = 0.0048;
 
 function markerObject(radius, color, opacity = 1) {
   return new THREE.Mesh(
@@ -188,10 +190,10 @@ function tangentRing(radius, y, color, opacity = 0.28) {
 (() => {
   const grid = new THREE.GridHelper(7.2, 18, 0x2f3136, 0x1c1d20);
   grid.material.transparent = true;
-  grid.material.opacity = 0.28;
+  grid.material.opacity = 0.2;
   grid.position.y = -1.72;
   scene.add(grid);
-  const axisMat = new THREE.LineBasicMaterial({ color: 0x6d7480, transparent: true, opacity: 0.32 });
+  const axisMat = new THREE.LineBasicMaterial({ color: 0x6d7480, transparent: true, opacity: 0.24 });
   const axisGeo = new THREE.BufferGeometry().setFromPoints([
     new THREE.Vector3(-3.6, -1.72, 0), new THREE.Vector3(3.6, -1.72, 0),
     new THREE.Vector3(0, -1.72, -3.6), new THREE.Vector3(0, -1.72, 3.6),
@@ -208,7 +210,7 @@ const introFinity = new THREE.Group();
       new THREE.Vector3(-2.45, 0, 0),
       new THREE.Vector3(2.45, 0, 0)
     ]),
-    new THREE.LineBasicMaterial({ color: WHITE, transparent: true, opacity: 0.72 })
+    new THREE.LineBasicMaterial({ color: WHITE, transparent: true, opacity: 0.58 })
   );
   const tickPts = [];
   for (let i = -3; i <= 3; i += 1) {
@@ -217,7 +219,7 @@ const introFinity = new THREE.Group();
   }
   const ticks = new THREE.LineSegments(
     new THREE.BufferGeometry().setFromPoints(tickPts),
-    new THREE.LineBasicMaterial({ color: 0x9ca3af, transparent: true, opacity: 0.58 })
+    new THREE.LineBasicMaterial({ color: 0x9ca3af, transparent: true, opacity: 0.42 })
   );
   const left = new THREE.Mesh(new THREE.SphereGeometry(0.07, 20, 20),
     new THREE.MeshBasicMaterial({ color: 0x707070, transparent: true, opacity: 0.76 }));
@@ -237,9 +239,9 @@ scene.add(introFinity);
 const introRiemann = new THREE.Group();
 {
   const s = new THREE.Mesh(new THREE.SphereGeometry(1.3, 48, 32),
-    new THREE.MeshBasicMaterial({ color: GOLD, wireframe: true, transparent: true, opacity: 0.46 }));
+    new THREE.MeshBasicMaterial({ color: GOLD, wireframe: true, transparent: true, opacity: 0.32 }));
   const axis = new THREE.Mesh(new THREE.CylinderGeometry(0.006, 0.006, 4.2, 8),
-    new THREE.MeshBasicMaterial({ color: TEAL, transparent: true, opacity: 0.34 }));
+    new THREE.MeshBasicMaterial({ color: TEAL, transparent: true, opacity: 0.24 }));
   introRiemann.add(s, axis);
 }
 scene.add(introRiemann);
@@ -329,7 +331,7 @@ function updatePointTrace(trace, samples) {
   trace.mesh.geometry.attributes.position.needsUpdate = true;
 }
 
-const probeDots = createPointTrace(96, WHITE, 0.5, 0.028);
+const probeDots = createPointTrace(96, WHITE, 0.38, 0.024);
 scene.add(probeTrace, probeDots.mesh, probeLink, morphTargetProbe, morphProbe);
 const morphLagChart = createStripChart(THREE, {
   origin: new THREE.Vector3(-3.38, -2.12, 0.08),
@@ -372,8 +374,8 @@ rebuild(0);
 // ── Burrisphere ornaments: equator band + the seven L-positions ──
 const burri = new THREE.Group();
 {
-  const eq = new THREE.Mesh(new THREE.TorusGeometry(R, 0.018, 16, 160),
-    new THREE.MeshBasicMaterial({ color: GOLD, transparent: true, opacity: 0.76 }));
+  const eq = new THREE.Mesh(new THREE.TorusGeometry(R, 0.014, 16, 160),
+    new THREE.MeshBasicMaterial({ color: GOLD, transparent: true, opacity: 0.58 }));
   eq.rotation.x = Math.PI / 2;
   burri.add(eq);
   // L1..L7 markers along the front meridian; L4 (index 3) at the equator
@@ -453,7 +455,6 @@ const cascadeStepEl = document.getElementById('cascade-step');
 const cascadeZeroEl = document.getElementById('cascade-zero');
 const cascadeRateEl = document.getElementById('cascade-rate');
 const cascadeRateValueEl = document.getElementById('cascade-rate-value');
-let textTimer = null;
 let projectionState = 'projection assay idle';
 let fps = 0;
 let lastFrame = 0;
@@ -597,24 +598,23 @@ function show(i){
     clearProbeTrace();
   }
   // text
-  capEl.style.opacity = '0'; glyphEl.style.opacity = '0';
-  if (textTimer) clearTimeout(textTimer);
-  textTimer = setTimeout(() => {
-    glyphEl.textContent = s.glyph; glyphEl.style.opacity = s.glyph ? '1' : '0';
-    setLines(leadEl, s.lead); setLines(subEl, s.sub); capEl.style.opacity = '1';
-  }, 320);
+  glyphEl.textContent = s.glyph;
+  glyphEl.style.opacity = s.glyph ? '1' : '0';
+  setLines(leadEl, s.lead);
+  setLines(subEl, s.sub);
+  capEl.style.opacity = '1';
   counterEl.style.opacity = s.counter ? '0.85' : '0';
   enterEl.classList.toggle('show', !!s.enter);
   // intros
-  [introFinity, introRiemann].forEach(g => setFade(g, s.intro === g ? 0.74 : 0));
+  [introFinity, introRiemann].forEach(g => setFade(g, s.intro === g ? 0.58 : 0));
   // morph mesh visible from stage 2 on
-  fades.set(morphMat, cur >= 2 ? 0.46 : 0);
+  fades.set(morphMat, cur >= 2 ? 0.32 : 0);
   morphTarget = s.mt;
   if (previous === STAGES.length - 1 && cur === 0) morphCur = morphTarget;
-  setFade(burri, s.burri ? 0.58 : 0);
+  setFade(burri, s.burri ? 0.42 : 0);
   // dual projection assay only on final Burrisphere stage
   const showProj = !!s.burri;
-  setFade(projGroup, showProj ? 0.62 : 0);
+  setFade(projGroup, showProj ? 0.46 : 0);
   projGroup.visible = showProj || projGroup.visible;
   // dots
   [...dots.children].forEach((d, k) => d.classList.toggle('on', k === cur));
@@ -702,8 +702,8 @@ function animate(frameTime = nowMs()){
   morphCur += (morphTarget - morphCur) * Math.min(1, dt * 0.42);
   if (Math.abs(morphCur - morphTarget) > 0.001 || cur >= 2) rebuild(morphCur);
   if (cur >= 2) {
-    const probeU = 0.14 + 0.72 * assaySweep01(tAccum, 0.032, 0.06);
-    const probeV = 0.18 + 0.64 * assaySweep01(tAccum + 11.5, 0.021, 0.06);
+    const probeU = 0.14 + 0.72 * assaySweep01(tAccum, CASCADE_SWEEP_CPS, 0.06);
+    const probeV = 0.18 + 0.64 * assaySweep01(tAccum + 11.5, CASCADE_SWEEP_CPS * 0.68, 0.06);
     const currentQ = morphAt(probeU, probeV, morphCur);
     const targetQ = morphAt(probeU, probeV, morphTarget);
     const current = new THREE.Vector3(currentQ[0], currentQ[1], currentQ[2]);
@@ -740,8 +740,8 @@ function animate(frameTime = nowMs()){
 
   // dual projection rays read reciprocal coordinates on final stage.
   if (STAGES[cur].burri) {
-    const psi = tAccum * 0.18;
-    const theta = Math.PI / 2 + (assaySweep01(tAccum + 3.5, 0.035, 0.08) - 0.5) * 0.84;
+    const psi = tAccum * Math.PI * 2 * CASCADE_AZIMUTH_RPS;
+    const theta = Math.PI / 2 + (assaySweep01(tAccum + 3.5, CASCADE_SWEEP_CPS, 0.08) - 0.5) * 0.84;
     const phi = 1 / Math.tan(theta / 2);
     const nu = Math.tan(theta / 2);
     const balance = Math.sin(theta);

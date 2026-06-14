@@ -41,6 +41,7 @@
     "padding:0;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font-size:0;line-height:1;opacity:1}",
     ".bookbar #atlas-fab::before{content:'☰';font-size:18px;line-height:1;color:inherit}",
     "@media(max-width:680px){.bookbar #atlas-fab{display:none}body.dimension-page #atlas-fab{display:none}",
+    "body:not(.dimension-page) > #atlas-fab{display:none}",
     "#atlas-fab{right:12px;bottom:calc(env(safe-area-inset-bottom,0px) + 12px);",
     "width:48px;height:48px;padding:0;border-radius:50%;display:flex;align-items:center;justify-content:center;",
     "font-size:0;line-height:1}#atlas-fab::before{content:'☰';font-size:20px;line-height:1;color:inherit}}"

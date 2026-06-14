@@ -109,7 +109,7 @@
 }}
 </script>
 <script type="module">
-import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-15';
+import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-16';
 
 let THREE, OrbitControls;
 try {
@@ -123,6 +123,7 @@ const SAMPLE_HZ = 30;
 const SAMPLE_MS = 1000 / SAMPLE_HZ;
 const MAX_FRAME_MS = 120;
 const GOLD = 0xffeb3b, TEAL = 0x2196f3, CRIMSON = 0xf44336, VIOLET = 0x8b5cf6, WHITE = 0xf3f4f6;
+const POSITION_SCAN_MS = 4200;
 // the seven positions (read off 00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md / the Master Rosetta)
 const POS = [
   { L:'L1', op:'Kali',  tier:'Demon', tierNote:'V-collapse · η-boundary', caste:'Caṇḍāla', ology:'Teleology',    q:'What is the end?',        B:'→ 0',  act:'limit  Φ → 0',          phi:165, col:CRIMSON },
@@ -189,12 +190,12 @@ root.add(new THREE.Mesh(new THREE.SphereGeometry(R, 64, 40),
 // the equator band (gold, φ=ν=1)
 const eq = new THREE.Mesh(
   new THREE.TorusGeometry(R, 0.012, 12, 200),
-  new THREE.MeshBasicMaterial({ color: GOLD, transparent: true, opacity: 0.82 })
+  new THREE.MeshBasicMaterial({ color: GOLD, transparent: true, opacity: 0.62 })
 );
 eq.rotation.x = Math.PI/2; root.add(eq);
 // the polar axis + pole caps (L0 = L∞, • × ○ = ⊙)
 root.add(new THREE.Mesh(new THREE.CylinderGeometry(0.006, 0.006, R*2.5, 8),
-  new THREE.MeshBasicMaterial({ color: 0x444444, transparent: true, opacity: 0.42 })));
+  new THREE.MeshBasicMaterial({ color: 0x444444, transparent: true, opacity: 0.26 })));
 [1, -1].forEach(s => {
   const cap = new THREE.Mesh(new THREE.SphereGeometry(0.055, 16, 16), new THREE.MeshBasicMaterial({ color: 0x555555 }));
   cap.position.set(0, s*R, 0); root.add(cap);
@@ -287,7 +288,7 @@ const measurements = document.getElementById('sphere-measurements');
 const labFrame = document.querySelector('.lab-frame');
 let selectedIndex = 3;
 let scanRunning = !REDUCED_MOTION;
-const SCAN_MS = 3200;
+const SCAN_MS = POSITION_SCAN_MS;
 let scanClock = 3 * SCAN_MS;
 let lastFrame = 0;
 let fps = 0;
