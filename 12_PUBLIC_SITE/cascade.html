@@ -411,6 +411,10 @@ function show(i){
   const previous = cur;
   cur = (i + STAGES.length) % STAGES.length;
   const s = STAGES[cur];
+  if (previous !== cur) {
+    probeTraceSamples.length = 0;
+    probeTrace.geometry.setFromPoints([new THREE.Vector3(), new THREE.Vector3()]);
+  }
   // text
   capEl.style.opacity = '0'; glyphEl.style.opacity = '0';
   if (textTimer) clearTimeout(textTimer);
@@ -491,6 +495,7 @@ function animate(frameTime = performance.now()){
   const pendingStep = stepSeconds;
   stepSeconds = 0;
   const dt = advanceSamples(frameDt * 0.001, rateValue(), pendingStep, !playing);
+  const sampled = dt > 0;
   sampleDeltaMs = dt * 1000;
 
   // clocked, inspectable stage advance
@@ -513,8 +518,10 @@ function animate(frameTime = performance.now()){
     morphProbe.position.copy(current);
     morphTargetProbe.position.copy(target);
     probeLink.geometry.setFromPoints([current, target]);
-    probeTraceSamples.push(current.clone());
-    if (probeTraceSamples.length > 96) probeTraceSamples.shift();
+    if (sampled) {
+      probeTraceSamples.push(current.clone());
+      if (probeTraceSamples.length > 96) probeTraceSamples.shift();
+    }
     probeTrace.geometry.setFromPoints(probeTraceSamples.length > 1 ? probeTraceSamples : [current, current]);
     morphProbeState =
       'morph probe u=' + probeU.toFixed(2) + ' v=' + probeV.toFixed(2) +
