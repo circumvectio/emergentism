@@ -2,7 +2,7 @@ import {
   createStripChart as createSharedStripChart,
   clearStripChart as clearSharedStripChart,
   updateStripChart as updateSharedStripChart
-} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-9";
+} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-10";
 
 const page = window.DIMENSION_PAGE || {};
 const canvas = document.querySelector(".dimension-canvas");
@@ -537,7 +537,7 @@ function drawTitanCalculator(time = 0) {
     readout.style.left = "auto";
     readout.style.right = "16px";
     readout.style.maxWidth = "min(420px, 46%)";
-    readout.classList.add("instrument-readout");
+    readout.classList.add("instrument-readout", "titans-readout");
   }
   let bounds = resize();
   window.addEventListener("resize", () => {
@@ -1326,7 +1326,15 @@ function buildScene(mode, scene) {
     }
 
     const readout = makeReadout();
-    if (readout) readout.style.whiteSpace = "pre-line";
+    if (readout) {
+      readout.style.whiteSpace = "pre-line";
+      readout.style.left = "auto";
+      readout.style.right = "16px";
+      readout.style.top = "92px";
+      readout.style.bottom = "auto";
+      readout.style.maxWidth = "min(390px, 44%)";
+      readout.classList.add("instrument-readout", "logline-readout");
+    }
     dyn.push(function (t, sampled) {
       const logPhase = phase01(t, INSTRUMENT_CPS.medium);
       const s = -2.9 + smooth01(sweep01(t, INSTRUMENT_CPS.medium)) * 5.8; // sweep in log coordinates
@@ -1415,8 +1423,10 @@ function buildScene(mode, scene) {
     if (readout) {
       readout.style.left = "auto";
       readout.style.right = "16px";
+      readout.style.top = "auto";
+      readout.style.bottom = "70px";
       readout.style.maxWidth = "min(430px, 46%)";
-      readout.classList.add("instrument-readout");
+      readout.classList.add("instrument-readout", "mu-readout");
     }
     dyn.push((t, sampled) => {
       const muPhase = phase01(t, INSTRUMENT_CPS.medium);
@@ -1510,7 +1520,7 @@ function buildScene(mode, scene) {
       readout.style.top = "92px";
       readout.style.bottom = "auto";
       readout.style.maxWidth = "min(430px, 46%)";
-      readout.classList.add("instrument-readout");
+      readout.classList.add("instrument-readout", "bloch-readout");
     }
     dyn.push((t, sampled) => {
       const projectionPhase = phase01(t, INSTRUMENT_CPS.medium);
@@ -1598,7 +1608,7 @@ function buildScene(mode, scene) {
       readout.style.maxWidth = "min(440px, 46%)";
       readout.style.top = "auto";
       readout.style.bottom = "70px";
-      readout.classList.add("horn-readout");
+      readout.classList.add("instrument-readout", "horn-readout");
     }
     const W_MAX = 4.5;                                          // ends: v/c -> 0.9998, γ -> ~45
     const G_MAX = Math.cosh(W_MAX);
@@ -1687,9 +1697,9 @@ function buildScene(mode, scene) {
             "R/r=" + (1 / gamma).toFixed(3) + " · dτ/dt=" + (1 / gamma).toFixed(3) + "\n" +
             "σ(R/r)=" + morphResidual.toExponential(1) + " · " + limitState
           : "D4 HORN · RAPIDITY ASSAY\n" +
-            "w=" + w.toFixed(2) + " · β=" + vc.toFixed(4) + " · γ=cosh(w)=" + gamma.toFixed(1) + " · E/mc²=γ\n" +
-            "R/r=1/γ=" + (1 / gamma).toFixed(3) + " · dτ/dt=" + (1 / gamma).toFixed(3) + " · k=e^w=" + k.toFixed(2) + "\n" +
-            "σ(R/r)=" + morphResidual.toExponential(1) + " · chart: sampled proper-time ratio\n" +
+            "w=" + w.toFixed(2) + " · β=" + vc.toFixed(4) + " · γ=" + gamma.toFixed(1) + " · E/mc²=γ\n" +
+            "R/r=dτ/dt=" + (1 / gamma).toFixed(3) + " · k=e^w=" + k.toFixed(2) + " · σ(R/r)=" + morphResidual.toExponential(1) + "\n" +
+            "chart: sampled proper-time ratio · " +
             "limit: " + limitState;
       }
     });
@@ -1745,7 +1755,7 @@ function buildScene(mode, scene) {
     const quadTint = (sx, sz, color) => {
       const m = new THREE.Mesh(
         new THREE.PlaneGeometry(U, U),
-        new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 0.14, side: THREE.DoubleSide, depthWrite: false }));
+        new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 0.08, side: THREE.DoubleSide, depthWrite: false }));
       m.rotation.x = -Math.PI / 2;
       m.position.set(sx * U / 2, r + 0.004, sz * U / 2);
       root.add(m);
@@ -1754,7 +1764,7 @@ function buildScene(mode, scene) {
     quadTint(-1, -1, MEANS); quadTint(1, -1, MEANS);       // Im<0 — V-heavy
     const overlap = new THREE.Mesh(
       new THREE.CircleGeometry(U, 48),
-      new THREE.MeshBasicMaterial({ color: FORESIGHT, transparent: true, opacity: 0.16, side: THREE.DoubleSide, depthWrite: false }));
+      new THREE.MeshBasicMaterial({ color: FORESIGHT, transparent: true, opacity: 0.11, side: THREE.DoubleSide, depthWrite: false }));
     overlap.rotation.x = -Math.PI / 2; overlap.position.y = r + 0.006; root.add(overlap); // the balance overlap (⊙1 / L4)
 
     // THE TRANSCENDENTALS ARE THE STATIONS OF THE GEOMETRY ITSELF — the
@@ -1804,7 +1814,7 @@ function buildScene(mode, scene) {
       readout.style.top = "auto";
       readout.style.bottom = "70px";
       readout.style.maxWidth = "min(520px, 52%)";
-      readout.classList.add("burrisphere-readout");
+      readout.classList.add("instrument-readout", "burrisphere-readout");
     }
     const THETA_MIN = 0.12;
     const THETA_MAX = Math.PI - 0.12;
@@ -1927,8 +1937,8 @@ function buildScene(mode, scene) {
           "quadrant " + q + " · " + opName
         : "D5 BURRISPHERE · DUAL-PROJECTION ASSAY\n" +
           "θ=" + (theta * 180 / Math.PI).toFixed(0) + "° " + (thetaUserActive ? "hold" : "sweep") + " · φ=" + phi.toFixed(2) + " · ν=" + nu.toFixed(2) + " · φν=1\n" +
-          "B=sinθ " + balance.toFixed(3) + " · U_B " + finiteCouplingProxy.toFixed(3) + " · γ≈1/B " + energyCost.toFixed(2) + " · |lnφ| " + imbalance.toFixed(2) + "\n" +
-          "residuals: σφν " + reciprocalResidual.toExponential(1) + " · σray " + rayResidual.toExponential(1) + " · chart: sampled bridge viability\n" +
+          "B=" + balance.toFixed(3) + " · U_B=" + finiteCouplingProxy.toFixed(3) + " · γ≈" + energyCost.toFixed(2) + " · |lnφ|=" + imbalance.toFixed(2) + "\n" +
+          "σφν=" + reciprocalResidual.toExponential(1) + " · σray=" + rayResidual.toExponential(1) + " · chart: sampled bridge viability\n" +
           "state: quadrant " + q + " · " + opName + " · " + moveName;
     });
   }
@@ -1943,7 +1953,7 @@ function buildScene(mode, scene) {
       readout.style.bottom = "70px";
       readout.style.left = "16px";
       readout.style.right = "auto";
-      readout.classList.add("ccc-readout");
+      readout.classList.add("instrument-readout", "ccc-readout");
     }
     const cccRing = (color, opacity = 1, tube = 0.012) => new THREE.Mesh(
       new THREE.TorusGeometry(1, tube, 12, 192),
@@ -1970,33 +1980,35 @@ function buildScene(mode, scene) {
     );
     root.add(originDot, boundaryDot);
 
-    const graphY = -1.45;
+    const graphX0 = 0.28;
+    const graphW = 2.95;
+    const graphY = -1.48;
     root.add(line([
-      new THREE.Vector3(-1.65, graphY, 0.02),
-      new THREE.Vector3(1.65, graphY, 0.02)
+      new THREE.Vector3(graphX0, graphY, 0.02),
+      new THREE.Vector3(graphX0 + graphW, graphY, 0.02)
     ], 0xffffff, 0.2));
     root.add(line([
-      new THREE.Vector3(-1.65, graphY, 0.02),
-      new THREE.Vector3(-1.65, graphY + 0.54, 0.02)
+      new THREE.Vector3(graphX0, graphY, 0.02),
+      new THREE.Vector3(graphX0, graphY + 0.54, 0.02)
     ], 0xffffff, 0.16));
     const expansionCurve = [];
     const inverseCurve = [];
     for (let i = 0; i <= 96; i += 1) {
       const q = i / 96;
-      const x = -1.65 + q * 3.3;
+      const x = graphX0 + q * graphW;
       expansionCurve.push(new THREE.Vector3(x, graphY + 0.08 + 0.42 * smooth01(q), 0.02));
       inverseCurve.push(new THREE.Vector3(x, graphY + 0.08 + 0.42 * (1 - smooth01(q)), 0.02));
     }
     root.add(line(expansionCurve, 0xffeb3b, 0.48));
     root.add(line(inverseCurve, 0x42a5f5, 0.48));
     const graphCursor = line([
-      new THREE.Vector3(-1.65, graphY + 0.02, 0.03),
-      new THREE.Vector3(-1.65, graphY + 0.56, 0.03)
+      new THREE.Vector3(graphX0, graphY + 0.02, 0.03),
+      new THREE.Vector3(graphX0, graphY + 0.56, 0.03)
     ], 0xffffff, 0.3);
-    const expansionDot = makeMarker(new THREE.Vector3(-1.65, graphY + 0.08, 0.04), 0xffeb3b, 0.035);
-    const inverseDot = makeMarker(new THREE.Vector3(-1.65, graphY + 0.5, 0.04), 0x42a5f5, 0.035);
+    const expansionDot = makeMarker(new THREE.Vector3(graphX0, graphY + 0.08, 0.04), 0xffeb3b, 0.035);
+    const inverseDot = makeMarker(new THREE.Vector3(graphX0, graphY + 0.5, 0.04), 0x42a5f5, 0.035);
     root.add(graphCursor, expansionDot, inverseDot);
-    const closureChart = createStripChart(new THREE.Vector3(-1.65, graphY - 0.62, 0.04), 3.3, 0.4, 0xffeb3b, 120, "q closure", 0xffeb3b);
+    const closureChart = createStripChart(new THREE.Vector3(graphX0, graphY - 0.62, 0.04), graphW, 0.4, 0xffeb3b, 120, "q closure", 0xffeb3b);
     const boundarySamples = [];
     const boundaryTrace = createPointTrace(140, 0xffeb3b, 0.38, 0.018);
     root.add(closureChart.group, boundaryTrace.mesh);
@@ -2033,7 +2045,7 @@ function buildScene(mode, scene) {
       originDot.scale.setScalar(1 + 0.35 * q);
       if (sampled) appendTrace(boundarySamples, boundaryDot.position, 140);
       updatePointTrace(boundaryTrace, boundarySamples);
-      const graphX = -1.65 + q * 3.3;
+      const graphX = graphX0 + q * graphW;
       const expansionY = graphY + 0.08 + 0.42 * q;
       const inverseY = graphY + 0.08 + 0.42 * (1 - q);
       graphCursor.geometry.setFromPoints([
@@ -2066,11 +2078,10 @@ function buildScene(mode, scene) {
       );
       if (readout) readout.textContent =
         "CCC RETURN · CONFORMAL RESCALE\n" +
-        "/6 ≡ /0 is route closure, not a new object\n" +
-        "aeon radius a=" + (aeonRadius / boundaryRadius).toFixed(2) + " · rescaled radius Ω=" + (conformalRadius / boundaryRadius).toFixed(2) + "\n" +
-        "closure check: q+(1−q)=1 · σ " + mapResidual.toExponential(1) + " · boundary trace sampled\n" +
-        "end boundary maps to origin; the start marker is the only survivor\n" +
-        "Penrose CCC is analogy here, not asserted identity";
+        "/6 ≡ /0 · route closure, not a new object\n" +
+        "a=" + (aeonRadius / boundaryRadius).toFixed(2) + " · Ω=" + (conformalRadius / boundaryRadius).toFixed(2) + " · q+(1−q)=1 · σ=" + mapResidual.toExponential(1) + "\n" +
+        "boundary trace sampled · end boundary → origin\n" +
+        "Penrose CCC = analogy, not asserted identity";
     });
   }
 

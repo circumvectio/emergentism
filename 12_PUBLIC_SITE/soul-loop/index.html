@@ -312,6 +312,7 @@
   const canvas = document.getElementById('soul-loop-canvas');
   const ctx = canvas.getContext('2d');
   const visual = canvas.closest('.visual-panel');
+  if (visual) visual.classList.add('instrument-visual', 'instrument-mode-soul-loop');
   const REDUCED_MOTION = !!(window.matchMedia
     && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
   const SAMPLE_HZ = 30;
@@ -466,7 +467,7 @@
         "font:700 10.5px/1.48 'Roboto Mono',ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums;" +
         "color:#f3f4f6;pointer-events:none;letter-spacing:0;white-space:pre-line;text-align:left;" +
         "background:rgba(5,5,5,.94);padding:9px 12px;" +
-        "border:1px solid rgba(255,255,255,.14);border-left:2px solid #ffeb3b;border-radius:6px;backdrop-filter:blur(4px);" +
+        "border:1px solid rgba(255,255,255,.18);border-left:2px solid #ffeb3b;border-radius:2px;backdrop-filter:blur(3px);" +
         "box-shadow:none";
       visual.appendChild(el);
     }
@@ -647,10 +648,10 @@
     const stripW = hasTelemetryRail ? Math.min(210, w * 0.25) : r * 1.16;
     const stripH = 46;
     const stripY = Math.min(h - stripH - 14, hasTelemetryRail ? cy + r * 0.72 : cy + r * 1.18);
-    ctx.strokeStyle = 'rgba(255,255,255,0.16)';
+    ctx.strokeStyle = 'rgba(255,255,255,0.22)';
     ctx.lineWidth = 1;
     ctx.strokeRect(stripX, stripY, stripW, stripH);
-    ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+    ctx.strokeStyle = 'rgba(255,255,255,0.10)';
     for (let i = 1; i < 6; i += 1) {
       const x = stripX + (stripW * i) / 6;
       ctx.beginPath();
@@ -658,7 +659,16 @@
       ctx.lineTo(x, stripY + stripH);
       ctx.stroke();
     }
+    const targetY = stripY + stripH * (0.88 - 0.5 * 0.74);
+    ctx.strokeStyle = 'rgba(255,235,59,0.46)';
+    ctx.setLineDash([5, 5]);
+    ctx.beginPath();
+    ctx.moveTo(stripX, targetY);
+    ctx.lineTo(stripX + stripW, targetY);
+    ctx.stroke();
+    ctx.setLineDash([]);
     ctx.strokeStyle = '#42A5F5';
+    ctx.lineWidth = 2;
     ctx.beginPath();
     const trace = residualSamples.length > 1 ? residualSamples : [residualProxy, residualProxy];
     trace.forEach((value, i) => {
@@ -670,10 +680,18 @@
       else ctx.lineTo(x, y);
     });
     ctx.stroke();
+    const markerY = stripY + stripH * (0.88 - Math.max(0, Math.min(1, residualProxy)) * 0.74);
+    ctx.fillStyle = '#42A5F5';
+    ctx.strokeStyle = '#050505';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.arc(stripX + stripW, markerY, 4.5, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
     ctx.fillStyle = '#9b9488';
     ctx.font = '700 10px Roboto Mono, ui-monospace, SFMono-Regular, Menlo, monospace';
     ctx.textAlign = 'left';
-    ctx.fillText('contradiction residual', stripX + 8, stripY + stripH - 8);
+    ctx.fillText('residual trace · target 0.500', stripX + 8, stripY + stripH - 8);
 
     if (readout) {
       readout.textContent = w < 720

@@ -82,10 +82,10 @@ export function createStripChart(THREE, options = {}) {
     max = 144,
     cursorColor = 0xf3f4f6,
     frameColor = 0x6d7480,
-    frameOpacity = 0.25,
-    gridOpacity = 0.12,
-    traceOpacity = 0.57,
-    cursorOpacity = 0.26,
+    frameOpacity = 0.38,
+    gridOpacity = 0.18,
+    traceOpacity = 0.78,
+    cursorOpacity = 0.36,
     label = "",
     labelColor = color,
     targetValue = null,
@@ -148,7 +148,7 @@ export function createStripChart(THREE, options = {}) {
       new THREE.MeshBasicMaterial({
         color: targetColor,
         transparent: true,
-        opacity: 0.11,
+        opacity: 0.16,
         depthWrite: false,
         side: THREE.DoubleSide
       })
@@ -165,7 +165,7 @@ export function createStripChart(THREE, options = {}) {
       new THREE.LineBasicMaterial({
         color: targetColor,
         transparent: true,
-        opacity: 0.32
+        opacity: 0.5
       })
     )
     : null;
@@ -196,7 +196,7 @@ export function createStripChart(THREE, options = {}) {
     new THREE.MeshBasicMaterial({
       color: currentMarkerColor,
       transparent: true,
-      opacity: 0.88,
+      opacity: 0.96,
       depthWrite: false,
       side: THREE.DoubleSide
     })
