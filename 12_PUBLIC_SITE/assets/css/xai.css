@@ -983,7 +983,7 @@ body.soul-loop-instrument .instrument-measurements {
   flex-wrap: nowrap;
   gap: 5px;
   align-items: center;
-  max-width: calc(100% - 354px);
+  max-width: calc(100% - 372px);
   min-height: 25px;
   overflow: hidden;
   color: rgba(243, 244, 246, 0.76);
@@ -1053,6 +1053,10 @@ body.soul-loop-instrument .instrument-measurements {
 }
 
 @media (min-width: 1520px) {
+  .instrument-telemetry {
+    max-width: calc(100% - 354px);
+  }
+
   .instrument-telemetry span[data-field="metric"],
   .instrument-telemetry span[data-field="uncertainty"],
   .instrument-telemetry span[data-field="time"],
@@ -1441,7 +1445,7 @@ body.soul-loop-instrument .instrument-measurements {
   bottom: 64px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  color: transparent;
+  color: rgba(243, 244, 246, 0.28);
   font: 700 8px/1 var(--font-mono);
   font-variant-numeric: tabular-nums;
   pointer-events: none;
@@ -1580,6 +1584,26 @@ body.soul-loop-instrument .instrument-measurements {
 
 .instrument-meter.error b {
   background: linear-gradient(90deg, rgba(76,175,80,0.4), rgba(255,122,23,0.58));
+}
+
+@media (min-width: 1180px) {
+  .instrument-telemetry span[data-field="sample"],
+  .instrument-telemetry span[data-field="phase"],
+  .instrument-telemetry span[data-field="state"] {
+    display: inline-block;
+  }
+
+  .instrument-telemetry span[data-field="sample"] {
+    max-width: 6.8rem;
+  }
+
+  .instrument-telemetry span[data-field="phase"] {
+    max-width: 5.6rem;
+  }
+
+  .instrument-telemetry span[data-field="state"] {
+    max-width: 8.2rem;
+  }
 }
 
 .instrument-telemetry span,

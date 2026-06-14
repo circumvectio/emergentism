@@ -630,7 +630,9 @@ function drawTitanCalculator(time = 0) {
   let simTime = INITIAL_ASSAY_SECONDS;
   let stepSeconds = 0;
   const sampleClock = createSampleClock();
-  let lastFrame = time;
+  sampleClock.index = Math.round(simTime * SAMPLE_HZ);
+  const startFrame = time || nowMs();
+  let lastFrame = startFrame;
   let fps = 0;
   if (playback) {
     playback.hold.addEventListener("click", () => {
@@ -811,7 +813,7 @@ function drawTitanCalculator(time = 0) {
     if (!REDUCED_MOTION) scheduleFrame(draw);
   }
 
-  draw(INITIAL_ASSAY_SECONDS);
+  draw(startFrame);
 }
 
 function drawConstitutionInstrument(time = 0) {
@@ -838,7 +840,8 @@ function drawConstitutionInstrument(time = 0) {
   let paused = false;
   let simTime = 0;
   let stepSeconds = 0;
-  let lastFrame = time;
+  const startFrame = time || nowMs();
+  let lastFrame = startFrame;
   let fps = 0;
 
   function sync() {
@@ -1078,7 +1081,7 @@ function drawConstitutionInstrument(time = 0) {
     bounds = resize();
     if (REDUCED_MOTION) draw(0);
   });
-  draw(0);
+  draw(startFrame);
 }
 
 function line(points, color = 0xffffff, opacity = 1) {
@@ -2166,27 +2169,28 @@ function buildScene(mode, scene) {
     root.add(phaseNeedle);
 
     dyn.push((t, sampled) => {
-      const leadPhase = phase01(t, INSTRUMENT_CPS.medium);
+      const leadPhase = phase01(t, INSTRUMENT_CPS.slow);
       const q = leadPhase;
+      const qEase = smooth01(q);
       const aeonRadius = 0.12 + q * (boundaryRadius - 0.12);
       const conformalRadius = 0.12 + (1 - q) * (boundaryRadius - 0.12);
       aeonShell.scale.setScalar(aeonRadius);
       conformalShell.scale.setScalar(conformalRadius);
-      aeonShell.material.opacity = 0.14 + 0.42 * (1 - 0.35 * q);
-      conformalShell.material.opacity = 0.12 + 0.26 * q;
+      aeonShell.material.opacity = 0.18 + 0.34 * (1 - 0.3 * q);
+      conformalShell.material.opacity = 0.16 + 0.22 * q;
       const a = leadPhase * TAU;
       phaseNeedle.geometry.setFromPoints([
         new THREE.Vector3(0, 0, 0.02),
         new THREE.Vector3(boundaryRadius * Math.cos(a), boundaryRadius * Math.sin(a), 0.02)
       ]);
       boundaryDot.position.set(boundaryRadius * Math.cos(a), boundaryRadius * Math.sin(a), 0.03);
-      originDot.material.color.setHex(q > 0.92 ? 0xffeb3b : 0xffffff);
-      originDot.scale.setScalar(1 + 0.35 * q);
+      originDot.material.color.setHex(0xffffff);
+      originDot.scale.setScalar(1);
       if (sampled) appendTrace(boundarySamples, boundaryDot.position, 140);
       updatePointTrace(boundaryTrace, boundarySamples);
       const graphX = graphX0 + q * graphW;
-      const expansionY = graphY + 0.08 + 0.42 * q;
-      const inverseY = graphY + 0.08 + 0.42 * (1 - q);
+      const expansionY = graphY + 0.08 + 0.42 * qEase;
+      const inverseY = graphY + 0.08 + 0.42 * (1 - qEase);
       graphCursor.geometry.setFromPoints([
         new THREE.Vector3(graphX, graphY + 0.02, 0.03),
         new THREE.Vector3(graphX, graphY + 0.56, 0.03)
