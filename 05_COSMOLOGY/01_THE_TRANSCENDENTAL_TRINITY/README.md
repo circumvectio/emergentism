@@ -294,9 +294,9 @@ The numbers are not discovered. The numbers are not created. The numbers are per
    register.** `1/0 → ∞` is treated as the north-pole point on the sphere, while
    the same expression remains undefined in ordinary field arithmetic. `[A/S]`
 
-2. **The computational foundation is grounded.** Bit → qubit is not a technological advance. It is the dimensional emergence from D0 (the point, {0,1}) to D1 (the sphere, S²). The qubit IS the Burri Sphere. Quantum computation IS computation on S².
+2. **The computational foundation is grounded as an analogy.** Bit -> qubit is read here as a useful image for dimensional emergence from D0 (the point, `{0,1}`) to a sphere-like state space. The Bloch sphere is `[A]` quantum formalism; the claim that the qubit should be read as the Burri Sphere, or that quantum computation is computation on the framework's S², remains `[I]` translation rather than identity.
 
-3. **The dimensional hierarchy closes.** D6 = D0. The sphere that emerged from the dot returns to the dot. The hierarchy is not open-ended. The hierarchy is a cycle. The cycle IS the torus. The torus IS CCC. The system architecture falls out of the arithmetic.
+3. **The dimensional hierarchy closes.** D6 = D0 as an apophatic route rule: the positive hierarchy is not open-ended. The torus/cycle/CCC language is a conjectural return-image for that closure, not an asserted physical identification. System architecture is inspired by the arithmetic; it does not "fall out" as a proved consequence.
 
 4. **Zero-Sum Resolution Equation is more than a symbol — but it is an EMBLEM, not a new theorem.** It names the frame in which `0 × ∞` is read as a geometric emblem on `S²` (resting on the standard point-at-infinity completion, `[A]`), and it carries the ontological reading that presence is the relational product of nothing and everything `[S/I]`. In the number field `0 × ∞` stays the indeterminate form; the framework's contribution is the *naming* and the *reading*, never a proof. Do not present `1 = 0 × ∞` as `[A]` field arithmetic.
 
