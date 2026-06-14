@@ -50,7 +50,7 @@ const modeScales = {
   muLimit: { x: "λ along source line", y: "μ orthogonal lift" },
   bloch: { x: "complex-plane radius", y: "sphere latitude θ" },
   horn: { x: "rapidity w", y: "proper-time ratio dτ/dt" },
-  burrisphere: { x: "tangent-plane Re(z)", y: "tangent-plane Im(z)" },
+  burrisphere: { x: "dual tangent radii φ/ν", y: "latitude θ · B=sinθ" },
   constitution: { x: "fence index", y: "closure residual" },
   ccc: { x: "aeon phase q", y: "conformal radius Ω" },
   convergence: { x: "aeon phase q", y: "conformal radius Ω" }
@@ -1407,7 +1407,7 @@ function buildScene(mode, scene) {
     // radius 2r·cot(θ/2) = 2r·φ; from 0 a straight ray through P lands UP on
     // the top plane at 2r·tan(θ/2) = 2r·ν. Both rays pass through P — the two
     // projections meet ON the sphere. φ·ν = 1 throughout. The unit circles
-    // (radius 2r on each plane) are the equator's two shadows: the Φ/V
+    // (radius 2r on each plane) are the equator's two shadows: the φ/ν
     // balance boundary. As ψ rotates while θ sweeps, both landings SPIRAL through the
     // quadrants — reciprocal radii, crossing their unit circles together.
     const r = 1.0;
@@ -1513,8 +1513,8 @@ function buildScene(mode, scene) {
       wrap.className = "model-slider theta-slider";
       wrap.style.cssText = "position:absolute;left:16px;right:16px;bottom:16px;z-index:6;display:flex;" +
         "align-items:center;gap:10px;font:700 11px/1 'Roboto Mono',ui-monospace,monospace;color:#9CA3AF;letter-spacing:0";
-      const lo = document.createElement("span"); lo.textContent = "D5 Φ foresight"; lo.style.color = "#FFEB3B";
-      const hi = document.createElement("span"); hi.textContent = "D4 V means"; hi.style.color = "#D23B3B";
+      const lo = document.createElement("span"); lo.textContent = "φ · D5 sight"; lo.style.color = "#FFEB3B";
+      const hi = document.createElement("span"); hi.textContent = "ν · D4 means"; hi.style.color = "#42A5F5";
       thetaSlider = document.createElement("input");
       thetaSlider.type = "range"; thetaSlider.min = "0"; thetaSlider.max = "100"; thetaSlider.step = "1"; thetaSlider.value = "50";
       thetaSlider.setAttribute("aria-label", "theta latitude from D5 worldline foresight through balance to D4 means-to-act");
@@ -1536,6 +1536,11 @@ function buildScene(mode, scene) {
     const quadName = ["I", "II", "III", "IV"];
     const D5_SWEEP_CPS = 0.03;
     const D5_BALANCE_OFFSET = 0.25 / D5_SWEEP_CPS;
+    function pointLineResidual(a, p, b) {
+      const ab = b.clone().sub(a);
+      const ap = p.clone().sub(a);
+      return ap.cross(ab).length() / Math.max(ab.length(), 1e-9);
+    }
     dyn.push(function (t, sampled) {
       const psi = t * 0.34;                                          // measured azimuth trace
       const theta = thetaUserActive
@@ -1559,7 +1564,7 @@ function buildScene(mode, scene) {
       phiRange.visible = Number.isFinite(phi);
       nuRange.visible = Number.isFinite(nu);
       const BALANCE_EPSILON = 0.015;
-      const isBalance = Math.abs(phi - 1) <= BALANCE_EPSILON;        // the equator: Φ = V = 1
+      const isBalance = Math.abs(phi - 1) <= BALANCE_EPSILON;        // the equator: φ = ν = 1
       const isForesightDominant = phi > 1 + BALANCE_EPSILON;         // P above the equator
       const col = isBalance ? BALANCED : isForesightDominant ? FORESIGHT : MEANS;
       [pMark, phiPt, nuPt].forEach((m) => m.material.color.setHex(col));
@@ -1581,28 +1586,31 @@ function buildScene(mode, scene) {
       const opName = isBalance
         ? "equator calibration"
         : isForesightDominant
-          ? "Φ-dominant sector"
-          : "V-dominant sector";
+          ? "φ-dominant sector"
+          : "ν-dominant sector";
       const moveName = isBalance
-        ? "BALANCED (Φ≈V≈1)"
+        ? "BALANCED (φ≈ν≈1)"
         : isForesightDominant
-          ? "FORESIGHT-DOMINANT (Φ proxy > V proxy)"
-          : "MEANS-DOMINANT (V proxy > Φ proxy)";
+          ? "FORESIGHT-GLOSS (D5 sight proxy > D4 means proxy)"
+          : "MEANS-GLOSS (D4 means proxy > D5 sight proxy)";
       const balance = Math.sin(theta);
       const imbalance = Math.abs(Math.log(Math.max(phi, 1e-6)));
       const energyCost = 1 / Math.max(balance, 1e-6);
       const reciprocalResidual = Math.abs(phi * nu - 1);
+      const rayResidual = Math.max(pointLineResidual(N, P, Lphi), pointLineResidual(S, P, Lnu));
+      const finiteCouplingProxy = balance;
       setInstrumentMetric(
-        "B " + balance.toFixed(3) + " · γ " + energyCost.toFixed(2),
+        "B " + balance.toFixed(3) + " · U " + finiteCouplingProxy.toFixed(3),
         thetaUserActive ? "manual latitude" : "reciprocal sweep",
         "phase " + (((psi % TAU) + TAU) % TAU / TAU).toFixed(2),
-        "σ φν " + reciprocalResidual.toExponential(1)
+        "σ φν " + reciprocalResidual.toExponential(1) + " · ray " + rayResidual.toExponential(1)
       );
       if (readout) readout.textContent =
-        "D5 BURRISPHERE · Φ/V BALANCE ASSAY\n" +
+        "D5 BURRISPHERE · DUAL-PROJECTION ASSAY\n" +
         "θ " + (theta * 180 / Math.PI).toFixed(0) + "°" + (thetaUserActive ? " held" : " sweep") + " · φ " + phi.toFixed(2) + " · ν " + nu.toFixed(2) + " · φ·ν=1\n" +
-        "B=sinθ " + balance.toFixed(3) + " · γ=1/B " + energyCost.toFixed(2) + " · |lnφ| " + imbalance.toFixed(2) + "\n" +
-        "finite action: P_node = Φ × V; zero or runaway factor collapses the move\n" +
+        "B=sinθ " + balance.toFixed(3) + " · U_B " + finiteCouplingProxy.toFixed(3) + " · γ=1/B " + energyCost.toFixed(2) + " · |lnφ| " + imbalance.toFixed(2) + "\n" +
+        "residuals: σ(φν) " + reciprocalResidual.toExponential(1) + " · σ(ray) " + rayResidual.toExponential(1) + "\n" +
+        "finite action bridge: score P_node = PHI_action x V_action only after the lowercase chart is read as D5 sight and D4 means\n" +
         "quadrant " + q + " · " + opName + " · " + moveName;
     });
   }

@@ -24,7 +24,7 @@ evidence_tier: "[I] Interpretive — creative synthesis; caveated against binary
 
 # ROSETTA R7: THE BRAIN AS COMPLEX PLANE
 
-## Neural Anatomy as V-PHI Geometry
+## Neural Anatomy as ν-φ Geometry
 
 **Status:** Active  
 **Hat:** Neuroscientist/Philosopher  
@@ -64,9 +64,9 @@ evidence_tier: "[I] Interpretive — creative synthesis; caveated against binary
 
 ## 1. THE HEMISPHERES AS AXES
 
-### 1.1 Right Hemisphere = PHI (φ)
+### 1.1 Right Hemisphere = φ
 
-| Feature | Right Hemisphere | PHI Axis |
+| Feature | Right Hemisphere | φ Axis |
 |---------|------------------|----------|
 | **Function** | Gestalt perception | Coherence |
 | **Mode** | Sees the whole | Sees the sphere |
@@ -77,9 +77,9 @@ evidence_tier: "[I] Interpretive — creative synthesis; caveated against binary
 
 **The right hemisphere perceives the sphere.** It sees the whole. It recognizes the ground. It cannot break the gestalt into fragments. It is high coherence.
 
-### 1.2 Left Hemisphere = V (ν)
+### 1.2 Left Hemisphere = ν
 
-| Feature | Left Hemisphere | V Axis |
+| Feature | Left Hemisphere | ν Axis |
 |---------|-----------------|--------|
 | **Function** | Fragmentation | Capability |
 | **Mode** | Projects onto plane | Acts, builds |

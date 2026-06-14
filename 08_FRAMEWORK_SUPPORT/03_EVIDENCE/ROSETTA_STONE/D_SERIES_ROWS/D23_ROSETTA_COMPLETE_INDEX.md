@@ -284,7 +284,7 @@ The Rosetta mappings show:
 | R4 | Egyptian Ma'at | Interpretive | 3,000-year-old proof |
 | R5 | Nietzsche Metamorphoses | Interpretive | The fourth stage revealed |
 | R6 | Torus Framework | [S] torus math, [I] framework correspondences, [C] CCC | Physical realization of Zero-Sum Resolution Equation |
-| R7 | Brain as Complex Plane | Interpretive | Neural anatomy IS the V-PHI geometry |
+| R7 | Brain as Complex Plane | Interpretive | Neural anatomy is the ν-φ proxy geometry |
 | R8 | AUM Mandukya Upanishad | Interpretive | The four states as geometric positions |
 | R9 | German (Anmut/Demut) | [S] etymologies, [I] mapping | Mut · Anmut · Demut on S² |
 | R10 | Greek Philology/Formalization | [S] vocabulary, [I] mapping | 80+ Greek terms placed on S² |

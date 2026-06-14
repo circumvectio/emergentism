@@ -304,6 +304,11 @@ directly (the only available lever):
         row from bare `P` to finite-node `P_node`, with `P∞ = φ·ν = 1`
         preserved as the background manifold identity rather than a variable
         harm target.
+  - formal/20-efr-operators-on-complex-plane/: normalized the public operator
+        chart from legacy `V-PHI` / `V × PHI = 1` notation to lowercase
+        sphere-chart `ν-φ` / `φ·ν = 1`, explicitly reserving uppercase
+        `Φ × V` for finite-node `P_node`; also changed "geometric exclusion"
+        language to strategic exclusion under the enforced Power-Max game.
   - operators/mf-68-area-measure/             : renamed the legacy local value
         function from bare `P(θ)` to projected `P_band(θ)` so the area-measure
         derivation does not compete with `P∞` or finite-node `P_node`.
@@ -320,7 +325,7 @@ glossary-public will/become-as-gods bundles, plus meta-public
 remaining-questions, plus memetic-public, paradox-public PD_10_IS_OUGHT,
 teleology-public L1_L7_REFINEMENT_AUDIT, glossary-public, formal-public 25/29/30,
 formal-public 12, trinity-public 31/33,
-teleology-public 00_A_SQUARE/05_EXHAUSTIVE_OBSERVATIONS, and operators-public
+teleology-public 00_A_SQUARE/05_EXHAUSTIVE_OBSERVATIONS, formal-public 20, and operators-public
 MF-68/MF-290/MF-292/MF-294/MF-70), or this generator will overwrite
 the hand-patches and reintroduce the over-claims. Also fix the title-doubling: when a source heading already ends in
 "— Emergentism", `page_shell(title=...)` appends a second one.

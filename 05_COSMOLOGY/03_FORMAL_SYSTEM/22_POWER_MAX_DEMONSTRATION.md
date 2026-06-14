@@ -18,7 +18,7 @@ rosetta:
 **Version:** v2.1
 **Hat:** Mathematician
 **Evidence Tier:** [S] Structural — formal game-theoretic demonstration
-**Purpose:** Show that the equatorial state (φ = ν = 1, balance maximized) is the unique dominant strategy equilibrium of the idealized balance-only game on S²
+**Purpose:** Show that the equatorial state (φ = ν = 1, B = 1) is the unique dominant strategy equilibrium of the idealized balance-only game on S²
 **Kill Criterion:** Exhibit a profitable unilateral deviation from the equatorial profile under the stated balance-only payoff model
 
 > **A7 boundary note — 2026-06-12.** This demonstration proves a result inside a deliberately narrow payoff model: every player is paid only by `B` or a convex average of `B`. It does **not** prove that `η = 0` is an unconditional Nash equilibrium in games with private side-payments, capture channels, asymmetric information, budget-balance constraints, or weak enforcement. In the wider constitutional/game-theory register, `η = 0` is an enforced or repeated-game target under monitoring, penalties, exit, and real coupling. This file is therefore `[S]` for the internal balance-game result and `[I/C]` if quoted as a general social theorem.

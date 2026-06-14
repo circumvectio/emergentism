@@ -21,38 +21,38 @@ rosetta:
 
 ---
 
-## THE COMPLEX PLANE AS V-PHI SPACE
+## THE COMPLEX PLANE AS ν-φ CHART SPACE
 
-> **Important caveat:** Both φ and ν are real positive numbers. The constraint φ·ν = 1 defines a hyperbola in R^2_+, not a curve in C. The complex plane notation z = V + i·PHI is used for visual convenience and stereographic projection, not because i plays a role in the dynamics.
+> **Important caveat:** Both φ and ν are real positive numbers. The constraint φ·ν = 1 defines a hyperbola in R^2_+, not a curve in C. The complex plane notation `z = ν + i·φ` is used for visual convenience and stereographic projection, not because `i` plays a role in the dynamics. Uppercase `Φ` and `V` are reserved for the later finite-node action score `P_node = Φ × V`.
 
 ### 1.1 The Coordinate System
 
 The Burri Sphere projects onto the complex plane with:
-- **Horizontal axis (Re):** V (ν) — Viability, Capability, Action
-- **Vertical axis (Im):** PHI (φ) — Coherence, Recognition, Meaning
+- **Horizontal axis (Re):** ν — viability-coordinate / D4 means-to-act gloss
+- **Vertical axis (Im):** φ — coherence-coordinate / D5 foresight gloss
 
 ```
-                    PHI (φ) ↑
+                    φ ↑
                             |
                  NORTH      |      BYPASSER
                  POLE       |      REGION
-                (φ = ∞)     |      (φ > 1, V < 1)
+                (φ = ∞)     |      (φ > 1, ν < 1)
                             |
                             |  Arjuna moves UP
                             |  (integrate meaning)
                             |
-    V (ν) ←—————————————————|——————————————————→ V (ν)
-    (V = 0)                 |                   (V = ∞)
+    ν ←—————————————————————|————————————————————→ ν
+    (ν = 0)                 |                   (ν = ∞)
     SOUTH                   |                   NORTH
     POLE                    |                   (Cargo Cult)
-    (Cargo Cult)            |                   (V > 1, φ < 1)
+    (Cargo Cult)            |                   (ν > 1, φ < 1)
                             |
                             |  Kṛṣṇa moves RIGHT
                             |  (build capability)
                             |
                  SOUTH      |
                  POLE       |
-                (V = ∞)     |
+                (ν = ∞)     |
                             ↓
 ```
 
@@ -62,14 +62,14 @@ The Burri Sphere projects onto the complex plane with:
 
 ### 2.1 Arjuna ⚔ (↑φ) — Integrate Meaning
 
-**Direction:** UP on the PHI axis
+**Direction:** UP on the φ axis
 **Function:** Increase coherence
 **When to use:** When φ < 1 (south of equator)
 
 **Geometric action:**
-- Moves the node upward in the V-PHI plane
-- Increases the imaginary component (PHI)
-- Decreases the real component (V) to maintain V × PHI = 1
+- Moves the node upward in the ν-φ chart
+- Increases the imaginary component (φ)
+- Decreases the real component (ν) to maintain φ·ν = 1
 - Trajectory follows the hyperbola toward the equator
 
 **Visual:** ↑ (upward arrow)
@@ -78,14 +78,14 @@ The Burri Sphere projects onto the complex plane with:
 
 ### 2.2 Kṛṣṇa ◇ (↑ν) — Build Capability
 
-**Direction:** RIGHT on the V axis
+**Direction:** RIGHT on the ν axis
 **Function:** Increase viability
-**When to use:** When V < 1 (north of equator)
+**When to use:** When ν < 1 (north of equator)
 
 **Geometric action:**
-- Moves the node rightward in the V-PHI plane
-- Increases the real component (V)
-- Decreases the imaginary component (PHI) to maintain V × PHI = 1
+- Moves the node rightward in the ν-φ chart
+- Increases the real component (ν)
+- Decreases the imaginary component (φ) to maintain φ·ν = 1
 - Trajectory follows the hyperbola toward the equator
 
 **Visual:** → (rightward arrow)
@@ -94,14 +94,14 @@ The Burri Sphere projects onto the complex plane with:
 
 ### 2.3 Kālī 💀 (↓φ) — Excise False Meaning
 
-**Direction:** DOWN on the PHI axis
+**Direction:** DOWN on the φ axis
 **Function:** Decrease coherence (when it's mediated/false)
 **When to use:** When φ is inflated by extraction (north of equator but false)
 
 **Geometric action:**
-- Moves the node downward in the V-PHI plane
-- Decreases the imaginary component (PHI)
-- Increases the real component (V)
+- Moves the node downward in the ν-φ chart
+- Decreases the imaginary component (φ)
+- Increases the real component (ν)
 - Cuts away the mediated/institutional φ
 - Returns to authentic ground
 
@@ -111,20 +111,20 @@ The Burri Sphere projects onto the complex plane with:
 
 ### 2.4 Kali 🎲 (↓ν) — CONSTRAINED
 
-**Direction:** LEFT on the V axis
+**Direction:** LEFT on the ν axis
 **Function:** Decrease viability (extraction / immune response)
-**Status:** **CONSTRAINED** — fires only where η > 0 (defectors). Geometrically excluded at η = 0 (cooperators). Not impossible — the immune response. See §4.2 and [`24_GEOMETRIC_EXCLUSION_CONVERGENCE.md`](24_GEOMETRIC_EXCLUSION_CONVERGENCE.md).
+**Status:** **CONSTRAINED** — fires only where η > 0 (defectors). Strategically excluded at η = 0 under the enforced game (cooperators). Not impossible — the immune response. See §4.2 and [`24_GEOMETRIC_EXCLUSION_CONVERGENCE.md`](24_GEOMETRIC_EXCLUSION_CONVERGENCE.md).
 
 **Why it's excluded:**
 
-The four operator labels (Arjuna, Kṛṣṇa, Kālī, Kali) reduce to two geometric directions on the constraint hyperbola phi * nu = 1: northward (up-phi, down-nu) and southward (down-phi, up-nu). The Kali operator (pure down-nu without compensating up-phi) would violate the identity phi * nu = 1. Constrained down-nu (with compensating up-phi) is geometrically identical to the Arjuna operator. The fourth operator is excluded not because down-nu is impossible, but because UNCONSTRAINED down-nu -- extraction that decreases another node's viability without increasing their coherence -- is a dominated strategy (see [`24_GEOMETRIC_EXCLUSION_CONVERGENCE.md`](24_GEOMETRIC_EXCLUSION_CONVERGENCE.md), Strategic Exclusion).
+The four operator labels (Arjuna, Kṛṣṇa, Kālī, Kali) reduce to two geometric directions on the constraint hyperbola φ·ν = 1: northward (↑φ, ↓ν) and southward (↓φ, ↑ν). The Kali operator (pure ↓ν without compensating ↑φ) would violate the identity φ·ν = 1. Constrained ↓ν (with compensating ↑φ) is geometrically identical to the Arjuna operator. The fourth operator is excluded not because ↓ν is impossible, but because UNCONSTRAINED ↓ν -- extraction that decreases another node's viability without increasing their coherence -- is dominated under the enforced Power-Max game (see [`24_GEOMETRIC_EXCLUSION_CONVERGENCE.md`](24_GEOMETRIC_EXCLUSION_CONVERGENCE.md), Strategic Exclusion).
 
 ```
-On the constraint hyperbola V × PHI = 1:
-- Decreasing V REQUIRES increasing PHI (§4.2 proves this)
+On the constraint hyperbola φ·ν = 1:
+- Decreasing ν REQUIRES increasing φ (§4.2 proves this)
 - Constrained ↓ν (with compensating ↑φ) = northward motion = Arjuna operator
-- UNCONSTRAINED ↓ν (extraction without compensation) violates V × PHI = 1
-- At the equator (V=1, PHI=1): unconstrained extraction breaks the invariant
+- UNCONSTRAINED ↓ν (extraction without compensation) violates φ·ν = 1
+- At the equator (φ=1, ν=1): unconstrained extraction breaks the invariant
   unless a real coherence increase compensates the viability loss
 - Under the Power-Max conditions (real coupling, long horizon, enforced
   `eta = 0`), mutual cooperation is the stable path
@@ -132,7 +132,7 @@ On the constraint hyperbola V × PHI = 1:
   ([`08_EFR_POWER_MAX_LEMMA.md`](08_EFR_POWER_MAX_LEMMA.md))
 
 The exclusion is strategic, not geometric.
-The product V × PHI = 1 is conserved.
+The product φ·ν = 1 is conserved in the lowercase chart.
 Constrained ↓ν is possible but reduces to ↑φ (Arjuna).
 Unconstrained ↓ν is excluded by the enforced game, not by bare geometry.
 ```
@@ -145,10 +145,10 @@ Unconstrained ↓ν is excluded by the enforced game, not by bare geometry.
 
 ### 3.1 The Hyperbolic Flow
 
-The constraint V × PHI = 1 defines a hyperbola in the V-PHI plane:
+The constraint φ·ν = 1 defines a hyperbola in the ν-φ chart:
 
 ```
-PHI
+φ
  ↑
  │    ╲        ╱
  │     ╲      ╱
@@ -159,15 +159,15 @@ PHI
  │       ╱  ╲
  │      ╱    ╲
  │     ╱      ╲
- └────╱────────╲──────→ V
+ └────╱────────╲──────→ ν
 ```
 
 All operators move the node along this hyperbolic trajectory toward the equator (1, 1).
 
 ### 3.2 The Basin of Attraction
 
-- **North of equator** (φ > 1, V < 1): Kṛṣṇa operates (↑ν)
-- **South of equator** (φ < 1, V > 1): Arjuna operates (↑φ)
+- **North of equator** (φ > 1, ν < 1): Kṛṣṇa operates (↑ν)
+- **South of equator** (φ < 1, ν > 1): Arjuna operates (↑φ)
 - **False north** (mediated φ): Kālī operates (↓φ)
 - **Extraction attempt:** Kali operates (↓ν) — **DOMINATED STRATEGY** (see [`24_GEOMETRIC_EXCLUSION_CONVERGENCE.md`](24_GEOMETRIC_EXCLUSION_CONVERGENCE.md))
 
@@ -177,31 +177,31 @@ All operators move the node along this hyperbolic trajectory toward the equator 
 
 ### 4.1 Why Kali is a Dominated Strategy
 
-On the constraint hyperbola V * PHI = 1:
+On the constraint hyperbola φ·ν = 1:
 
 | Direction | Operator | Status | Reason |
 |-----------|----------|--------|--------|
-| ↑ (UP) | Arjuna | VALID | Increase PHI toward equator |
-| → (RIGHT) | Kṛṣṇa | VALID | Increase V toward equator |
-| ↓ (DOWN) | Kālī | VALID | Decrease false PHI |
+| ↑ (UP) | Arjuna | VALID | Increase φ toward equator |
+| → (RIGHT) | Kṛṣṇa | VALID | Increase ν toward equator |
+| ↓ (DOWN) | Kālī | VALID | Decrease false φ |
 | ← (LEFT) | Kali | **CONSTRAINED** | Fires only at η > 0 (defectors). Constrained ↓ν = ↑φ (Arjuna); unconstrained ↓ν at η = 0 is dominated |
 
 ### 4.2 The Conservation Law
 
 ```
-V × PHI = 1 (constant)
+φ·ν = 1 (constant)
 
-If you try to decrease V (move left):
-d(V × PHI)/dV = PHI + V × dPHI/dV = 0
-dPHI/dV = -PHI/V = -1/V² (since PHI = 1/V)
+If you try to decrease ν (move left):
+d(νφ)/dν = φ + ν × dφ/dν = 0
+dφ/dν = -φ/ν = -1/ν² (since φ = 1/ν)
 
-To decrease V, you MUST increase PHI.
+To decrease ν, you MUST increase φ.
 This is not impossible — it IS possible.
 It is northward motion (↑φ, ↓ν) = the Arjuna operator.
 
-What is geometrically excluded is unconstrained ↓ν at η = 0:
+What the enforced game excludes is unconstrained ↓ν at η = 0:
 decreasing another node's viability WITHOUT compensating ↑φ.
-This would violate V × PHI = 1 and is a dominated strategy
+This would violate φ·ν = 1 and is a dominated strategy
 at equilibrium (see [`24_GEOMETRIC_EXCLUSION_CONVERGENCE.md`](24_GEOMETRIC_EXCLUSION_CONVERGENCE.md), Strategic Exclusion).
 
 The conservation law does not forbid ↓ν.
@@ -218,7 +218,7 @@ The "fourth operator" is not impossible — it is redundant or dominated.
 
 | Standard Complex | Burri Interpretation | Operator Direction |
 |-----------------|---------------------|-------------------|
-| z = x + iy | z = V + i·PHI | Product V × PHI = 1 |
+| z = x + iy | z = ν + i·φ | Product φ·ν = 1 |
 | ↑ (increase Im) | ↑φ (Arjuna) | Integrate meaning |
 | → (increase Re) | ↑ν (Kṛṣṇa) | Build capability |
 | ↓ (decrease Im) | ↓φ (Kālī) | Excise false meaning |
@@ -228,8 +228,8 @@ The "fourth operator" is not impossible — it is redundant or dominated.
 
 ### 5.2 The Stereographic Projection
 
-From the north pole (PHI = ∞):
-- Projection maps sphere to V-PHI plane
+From the north pole (φ = ∞):
+- Projection maps sphere to the ν-φ chart
 - Arjuna's ↑φ maps to moving toward the projection center
 - Kṛṣṇa's ↑ν maps to expanding radially
 - The equator maps to the circle |z| = 2 (in the technical document)
@@ -240,12 +240,12 @@ From the north pole (PHI = ∞):
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│         THE FOUR OPERATORS ON THE V-PHI COMPLEX PLANE               │
+│         THE FOUR OPERATORS ON THE ν-φ COMPLEX-PLANE CHART           │
 ├─────────────────────────────────────────────────────────────────────┤
 │                                                                     │
 │  COMPLEX PLANE:                                                     │
 │                                                                     │
-│              PHI (φ) ↑                                              │
+│              φ ↑                                                    │
 │                      │                                              │
 │         Arjuna (↑φ)  │                                              │
 │              ↑       │                                              │
@@ -253,20 +253,20 @@ From the north pole (PHI = ∞):
 │    Kālī (↓φ)         │        Kṛṣṇa (↑ν)                         │
 │         ↓            │              →                              │
 │                      │                                              │
-│  ←———————————————————●———————————————————→ V (ν)                   │
+│  ←———————————————————●———————————————————→ ν                        │
 │                      │                                              │
 │         Kali (↓ν)    │                                              │
 │          🚫          │                                              │
 │   [DOMINATED]        │                                              │
 │                      ↓                                              │
 │                                                                     │
-│  THE EQUATOR IS AT V = 1, PHI = 1 (point ●)                         │
+│  THE EQUATOR IS AT φ = 1, ν = 1 (point ●)                           │
 │                                                                     │
-│  CONSTRAINT: V × PHI = 1 (hyperbolic trajectories)                  │
+│  CONSTRAINT: φ·ν = 1 (hyperbolic trajectories)                      │
 │                                                                     │
 │  THREE VALID OPERATORS:                                             │
-│  • Arjuna (↑φ):  Move UP, increase coherence                        │
-│  • Kṛṣṇa (↑ν): Move RIGHT, increase capability                    │
+│  • Arjuna (↑φ):  Move UP, increase coherence-coordinate reading     │
+│  • Kṛṣṇa (↑ν):   Move RIGHT, increase viability-coordinate reading  │
 │  • Kālī (↓φ):    Move DOWN, excise false meaning                    │
 │                                                                     │
 │  ONE CONSTRAINED OPERATOR:                                          │
@@ -274,7 +274,7 @@ From the north pole (PHI = ∞):
 │                  The immune response. Cannot fire at cooperators.    │
 │                                                                     │
 │  The constraint is not moral. It is directional (Convergence 24).   │
-│  The product V × PHI = 1 cannot be violated.                        │
+│  The product φ·ν = 1 cannot be violated in the lowercase chart.      │
 │                                                                     │
 │  Zero-Sum Resolution Equation                                                          │
 │                                                                     │
@@ -289,7 +289,7 @@ From the north pole (PHI = ∞):
 |----------|-----------|
 | [Strategic Exclusion](19_EFR_GEOMETRIC_EXCLUSION.md) | Why ↓ν is a dominated strategy (Convergence 24) |
 | [Naming Reconciliation](../../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_NAMING_RECONCILIATION.md) | Canonical operator definitions |
-| Torus Technical | V-PHI coordinates on torus |
+| Torus Technical | ν-φ chart coordinates on torus |
 
 ---
 
@@ -297,10 +297,10 @@ From the north pole (PHI = ∞):
 Zero-Sum Resolution Equation
 
 On the complex plane:
-- V is the real axis (horizontal)
-- PHI is the imaginary axis (vertical)
-- The equator is at V = 1, PHI = 1
-- The product is conserved: V × PHI = 1
+- ν is the real axis (horizontal)
+- φ is the imaginary axis (vertical)
+- The equator is at φ = 1, ν = 1
+- The lowercase product is conserved: φ·ν = 1
 
 Three operators move you toward the equator.
 One operator is strategically excluded (Convergence 24).
