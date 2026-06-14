@@ -83,10 +83,10 @@ export function createStripChart(THREE, options = {}) {
     max = 144,
     cursorColor = 0xf3f4f6,
     frameColor = 0x6d7480,
-    frameOpacity = 0.38,
-    gridOpacity = 0.18,
-    traceOpacity = 0.78,
-    cursorOpacity = 0.36,
+    frameOpacity = 0.3,
+    gridOpacity = 0.12,
+    traceOpacity = 0.66,
+    cursorOpacity = 0.26,
     label = "",
     labelColor = color,
     targetValue = null,
@@ -149,7 +149,7 @@ export function createStripChart(THREE, options = {}) {
       new THREE.MeshBasicMaterial({
         color: targetColor,
         transparent: true,
-        opacity: 0.16,
+        opacity: 0.11,
         depthWrite: false,
         side: THREE.DoubleSide
       })
@@ -166,7 +166,7 @@ export function createStripChart(THREE, options = {}) {
       new THREE.LineBasicMaterial({
         color: targetColor,
         transparent: true,
-        opacity: 0.5
+        opacity: 0.42
       })
     )
     : null;
@@ -197,7 +197,7 @@ export function createStripChart(THREE, options = {}) {
     new THREE.MeshBasicMaterial({
       color: currentMarkerColor,
       transparent: true,
-      opacity: 0.96,
+      opacity: 0.86,
       depthWrite: false,
       side: THREE.DoubleSide
     })
@@ -210,7 +210,9 @@ export function createStripChart(THREE, options = {}) {
   if (label) {
     const labelSprite = createTextSprite(THREE, label, {
       color: labelColor,
-      scale: [Math.min(width * 0.58, 1.28), 0.15]
+      scale: [Math.min(width * 0.54, 1.12), 0.12],
+      background: false,
+      stroke: false
     });
     labelSprite.position.set(origin.x + width * 0.29, origin.y + height + 0.14, origin.z + 0.04);
     group.add(labelSprite);

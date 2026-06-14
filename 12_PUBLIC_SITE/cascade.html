@@ -101,7 +101,7 @@
 }}
 </script>
 <script type="module">
-import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-17';
+import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-18';
 
 let THREE, OrbitControls;
 try {
@@ -513,7 +513,13 @@ function advanceSamples(frameSeconds, rate = 1, forcedSeconds = 0, pausedState =
 }
 
 function sampleLabel() {
-  return SAMPLE_HZ + ' Hz · n ' + String(sampleIndex).padStart(5, '0');
+  return SAMPLE_HZ + 'Hz n' + String(sampleIndex).padStart(5, '0');
+}
+
+function displayLabel() {
+  if (REDUCED_MOTION) return 'static frame';
+  if (!Number.isFinite(fps) || fps <= 0) return 'display sync';
+  return 'display ' + Math.min(120, Math.max(1, Math.round(fps))) + 'Hz';
 }
 
 function clearProbeTrace() {
@@ -557,7 +563,7 @@ function syncInstrument(){
     labFrameEl.style.setProperty('--instrument-primary', clamp01(morphCur / (SHAPES.length - 1)).toFixed(4));
   }
   setTelemetry({
-    fps: REDUCED_MOTION ? 'static frame' : 'display sync',
+    fps: displayLabel(),
     sample: REDUCED_MOTION ? 'sample static' : sampleLabel(),
     time: 't+' + tAccum.toFixed(2) + 's',
     phase: 'phase ' + phase.toFixed(2),
@@ -589,7 +595,7 @@ function syncInstrument(){
     'CASCADE INSTRUMENT\n' +
     'stage ' + cur + '/' + (STAGES.length - 1) + ' · ' + stageName(cur) + ' · ' + (playing ? 'RUN' : 'HOLD') + '\n' +
     'phase=' + phase.toFixed(2) + ' · target=' + morphTarget.toFixed(2) + ' · actual=' + morphCur.toFixed(2) + ' · Δ=' + lag.toFixed(3) + '\n' +
-    'clock ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · display sync · rate ' + rateValue().toFixed(2) + 'x\n' +
+    'clock ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · ' + displayLabel() + ' · rate ' + rateValue().toFixed(2) + 'x\n' +
     morphProbeState + '\n' +
     projectionState;
 }

@@ -85,7 +85,7 @@ let createStripChart, clearStripChart, updateStripChart;
 try {
   THREE = await import('three');
   ({ OrbitControls } = await import('three/addons/controls/OrbitControls.js'));
-  ({ createStripChart, clearStripChart, updateStripChart } = await import('./assets/js/instrument-charts.js?v=2026-06-14-instrument-17'));
+  ({ createStripChart, clearStripChart, updateStripChart } = await import('./assets/js/instrument-charts.js?v=2026-06-14-instrument-18'));
 } catch (e) { document.getElementById('fallback').style.display = 'flex'; throw e; }
 
 const REDUCED_MOTION = !!(window.matchMedia
@@ -286,7 +286,13 @@ function advanceSamples(frameSeconds, rate = 1, forcedSeconds = 0, pausedState =
 }
 
 function sampleLabel() {
-  return SAMPLE_HZ + ' Hz · n ' + String(sampleIndex).padStart(5, '0');
+  return SAMPLE_HZ + 'Hz n' + String(sampleIndex).padStart(5, '0');
+}
+
+function displayLabel() {
+  if (REDUCED_MOTION) return 'static frame';
+  if (!Number.isFinite(fps) || fps <= 0) return 'display sync';
+  return 'display ' + Math.min(120, Math.max(1, Math.round(fps))) + 'Hz';
 }
 
 function syncPlayback() {
@@ -407,7 +413,7 @@ function updateInstrument(frameTime = nowMs(), poseOffset = null){
   mFill.style.width = (20 + reach*80) + '%';
   mLabel.textContent = 'Ω proxy ' + omegaProxy.toFixed(2);
   setTelemetry({
-    fps: REDUCED_MOTION ? 'static frame' : 'display sync',
+    fps: displayLabel(),
     sample: REDUCED_MOTION ? 'sample static' : sampleLabel(),
     time: 't+' + t.toFixed(2) + 's',
     phase: 'phase ' + reach.toFixed(2),
@@ -435,7 +441,7 @@ function updateInstrument(frameTime = nowMs(), poseOffset = null){
       'θ=' + (angle * 180 / Math.PI).toFixed(1) + '° · h=' + height.toFixed(2) + ' · r=' + radius.toFixed(2) + ' · c=1\n' +
       'Ω proxy=' + omegaProxy.toFixed(2) + ' · dΩ/dt=' + lastOmegaRate.toFixed(2) + ' · phase=' + reach.toFixed(2) + '\n' +
       'σ cone=' + coneResidual.toExponential(1) + ' · present hyperplane fixed at t=0\n' +
-      'clock ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · display sync · ' + (paused ? 'HOLD' : 'RUN') + ' · rate ' + rate.toFixed(2) + 'x\n' +
+      'clock ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · ' + displayLabel() + ' · ' + (paused ? 'HOLD' : 'RUN') + ' · rate ' + rate.toFixed(2) + 'x\n' +
       'tier: [I] selection image · no settled fifth-force claim';
   controls.update();
   renderer.render(scene, camera);

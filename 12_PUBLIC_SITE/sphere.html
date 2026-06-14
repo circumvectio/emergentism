@@ -109,7 +109,7 @@
 }}
 </script>
 <script type="module">
-import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-17';
+import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-18';
 
 let THREE, OrbitControls;
 try {
@@ -341,7 +341,13 @@ function advanceSamples(frameMs, rate = 1) {
 }
 
 function sampleLabel() {
-  return SAMPLE_HZ + ' Hz · n ' + String(sampleIndex).padStart(5, '0');
+  return SAMPLE_HZ + 'Hz n' + String(sampleIndex).padStart(5, '0');
+}
+
+function displayLabel() {
+  if (REDUCED_MOTION) return 'static frame';
+  if (!Number.isFinite(fps) || fps <= 0) return 'display sync';
+  return 'display ' + Math.min(120, Math.max(1, Math.round(fps))) + 'Hz';
 }
 
 function clearScanTrace() {
@@ -399,7 +405,7 @@ function select(i, manual = false){
   document.getElementById(els.act).textContent = p.act;
   updateStripChart(THREE, balanceStrip, balance, 0, 1, manual || sampleDeltaMs > 0 || balanceStrip.samples.length === 0);
   setTelemetry({
-    fps: REDUCED_MOTION ? 'static frame' : 'display sync',
+    fps: displayLabel(),
     sample: REDUCED_MOTION ? 'sample static' : sampleLabel(),
     time: 't+' + ((sampleIndex * SAMPLE_MS) / 1000).toFixed(2) + 's',
     phase: 'position ' + i + '/6',
@@ -507,7 +513,7 @@ function render(time = 0){
     sampleDeltaMs = 0;
   }
   select(selectedIndex);
-  if (stageReadout) stageReadout.dataset.fps = REDUCED_MOTION ? 'static frame' : 'display sync';
+  if (stageReadout) stageReadout.dataset.fps = displayLabel();
   controls.update();
   renderer.render(scene, camera);
   if (!REDUCED_MOTION) scheduleFrame(render);

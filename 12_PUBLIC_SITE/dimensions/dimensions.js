@@ -3,7 +3,7 @@ import {
   createStripChart as createSharedStripChart,
   clearStripChart as clearSharedStripChart,
   updateStripChart as updateSharedStripChart
-} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-17";
+} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-18";
 
 const page = window.DIMENSION_PAGE || {};
 const canvas = document.querySelector(".dimension-canvas");
@@ -144,6 +144,12 @@ function finiteNumber(value, fallback = 0) {
   return Number.isFinite(n) ? n : fallback;
 }
 
+function formatDisplayHz(fps) {
+  if (REDUCED_MOTION) return "static frame";
+  if (!Number.isFinite(fps) || fps <= 0) return "display sync";
+  return "display " + Math.min(120, Math.max(1, Math.round(fps))) + "Hz";
+}
+
 function createSampleClock() {
   return {
     accumulator: 0,
@@ -161,7 +167,7 @@ function createSampleClock() {
       return steps * SAMPLE_DT;
     },
     label() {
-      return SAMPLE_HZ + " Hz · n " + String(this.index).padStart(5, "0");
+      return SAMPLE_HZ + "Hz n" + String(this.index).padStart(5, "0");
     }
   };
 }
@@ -463,6 +469,8 @@ function updateSignalMeter(overlay, key) {
   if (labelEl) labelEl.textContent = label;
   if (valueEl) valueEl.textContent = text;
   if (barEl) barEl.style.transform = `scaleX(${value.toFixed(4)})`;
+  const rulerMark = overlay.querySelector(`.instrument-signal-ruler .${key}`);
+  if (rulerMark) rulerMark.dataset.label = label;
 }
 
 function updateInstrumentOverlay(overlay, t, fps) {
@@ -475,7 +483,7 @@ function updateInstrumentOverlay(overlay, t, fps) {
   const uncertaintyField = overlay.querySelector('[data-field="uncertainty"]');
   const stateField = overlay.querySelector('[data-field="state"]');
   if (timeField) timeField.textContent = "t+" + t.toFixed(2) + "s";
-  if (fpsField) fpsField.textContent = REDUCED_MOTION ? "static frame" : "display sync";
+  if (fpsField) fpsField.textContent = formatDisplayHz(fps);
   if (sampleField) sampleField.textContent = visual.dataset.instrumentSample || "sample --";
   if (phaseField) phaseField.textContent = visual.dataset.instrumentPhase || "phase --";
   if (metricField) metricField.textContent = visual.dataset.instrumentMetric || "sample --";
@@ -658,7 +666,6 @@ function drawTitanCalculator(time = 0) {
     simTime += sampleAdvance;
     visual.dataset.instrumentSample = REDUCED_MOTION ? "sample static" : sampleClock.label();
     const t = simTime;
-    updateInstrumentOverlay(overlay, t, fps);
     const cx = width / 2;
     const cy = height / 2;
     const pad = Math.max(28, Math.min(width, height) * 0.08);
@@ -734,6 +741,7 @@ function drawTitanCalculator(time = 0) {
         errorText: mirrorResidual.toExponential(1)
       }
     );
+    updateInstrumentOverlay(overlay, t, fps);
 
     ctx.setLineDash([8, 8]);
     ctx.strokeStyle = "rgba(245,245,245,0.48)";

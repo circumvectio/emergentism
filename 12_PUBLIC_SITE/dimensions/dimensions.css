@@ -518,7 +518,7 @@ h3 {
   z-index: 2;
   pointer-events: none;
   overflow: hidden;
-  border: 1px solid rgba(243, 244, 246, 0.09);
+  border: 1px solid rgba(243, 244, 246, 0.075);
   box-shadow:
     inset 0 0 0 1px rgba(5, 5, 5, 0.78),
     inset 0 0 0 12px rgba(243, 244, 246, 0.006);
@@ -528,7 +528,7 @@ h3 {
 .instrument-graticule {
   position: absolute;
   inset: 24px;
-  opacity: 0.082;
+  opacity: 0.052;
   background:
     repeating-linear-gradient(90deg, rgba(255,255,255,0.07) 0 1px, transparent 1px 32px),
     repeating-linear-gradient(0deg, rgba(255,255,255,0.07) 0 1px, transparent 1px 32px),
@@ -545,7 +545,7 @@ h3 {
   position: absolute;
   width: 24px;
   height: 24px;
-  border-color: rgba(243, 244, 246, 0.18);
+  border-color: rgba(243, 244, 246, 0.14);
   border-style: solid;
 }
 
@@ -559,7 +559,7 @@ h3 {
   content: "";
   position: absolute;
   inset: 12px;
-  border: 1px solid rgba(243, 244, 246, 0.12);
+  border: 1px solid rgba(243, 244, 246, 0.095);
 }
 
 .instrument-overlay::after {
@@ -573,7 +573,7 @@ h3 {
   background:
     linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,255,255,0.16) calc(50% - 0.5px), rgba(255,255,255,0.16) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
     linear-gradient(0deg, transparent calc(50% - 0.5px), rgba(66,165,245,0.14) calc(50% - 0.5px), rgba(66,165,245,0.14) calc(50% + 0.5px), transparent calc(50% + 0.5px));
-  opacity: 0.072;
+  opacity: 0.064;
 }
 
 .instrument-id {
@@ -641,7 +641,7 @@ h3 {
   min-height: 19px;
   border: 1px solid var(--instrument-line-soft);
   border-radius: 2px;
-  background: var(--instrument-bg);
+  background: rgba(5, 5, 5, 0.88);
   padding: 4px 6px 5px;
   backdrop-filter: blur(3px);
 }
@@ -680,11 +680,11 @@ h3 {
   height: 100%;
   transform: scaleX(0);
   transform-origin: left center;
-  background: linear-gradient(90deg, rgba(66,165,245,0.56), rgba(243,244,246,0.72));
+  background: linear-gradient(90deg, rgba(66,165,245,0.5), rgba(243,244,246,0.66));
 }
 
 .instrument-meter.error b {
-  background: linear-gradient(90deg, rgba(76,175,80,0.42), rgba(255,122,23,0.58));
+  background: linear-gradient(90deg, rgba(76,175,80,0.36), rgba(255,122,23,0.5));
 }
 
 .instrument-mode-burrisphere .instrument-measurements,
@@ -767,7 +767,7 @@ h3 {
   white-space: nowrap;
   border: 1px solid var(--instrument-line);
   border-radius: 2px;
-  background: var(--instrument-bg);
+  background: rgba(5, 5, 5, 0.88);
   padding: 4px 6px;
   backdrop-filter: blur(4px);
 }
@@ -775,20 +775,26 @@ h3 {
 .instrument-telemetry span[data-field="metric"],
 .instrument-telemetry span[data-field="uncertainty"],
 .instrument-telemetry span[data-field="time"],
-.instrument-telemetry span[data-field="phase"] {
+.instrument-telemetry span[data-field="phase"],
+.instrument-telemetry span[data-field="sample"],
+.instrument-telemetry span[data-field="state"] {
   display: none;
 }
 
 .instrument-telemetry span[data-field="mode"] {
-  max-width: 7.75rem;
+  max-width: 8.75rem;
 }
 
 .instrument-telemetry span[data-field="invariant"] {
-  max-width: 9.5rem;
+  max-width: 8.75rem;
 }
 
 .instrument-telemetry span[data-field="sample"] {
-  max-width: 7rem;
+  max-width: 6.4rem;
+}
+
+.instrument-telemetry span[data-field="state"] {
+  max-width: 7.25rem;
 }
 
 .instrument-telemetry span[data-field="metric"] {
@@ -815,7 +821,9 @@ h3 {
   .instrument-telemetry span[data-field="metric"],
   .instrument-telemetry span[data-field="uncertainty"],
   .instrument-telemetry span[data-field="time"],
-  .instrument-telemetry span[data-field="phase"] {
+  .instrument-telemetry span[data-field="phase"],
+  .instrument-telemetry span[data-field="sample"],
+  .instrument-telemetry span[data-field="state"] {
     display: inline-block;
     max-width: 11.5rem;
   }
@@ -827,7 +835,7 @@ h3 {
   right: 13px;
   z-index: 6;
   display: grid;
-  grid-template-columns: auto auto auto minmax(96px, 128px);
+  grid-template-columns: auto auto auto minmax(120px, 156px);
   gap: 5px;
   align-items: center;
   color: rgba(243, 244, 246, 0.78);
@@ -842,7 +850,7 @@ h3 {
   min-height: 25px;
   border: 1px solid var(--instrument-line);
   border-radius: 2px;
-  background: var(--instrument-bg);
+  background: rgba(5, 5, 5, 0.9);
   color: inherit;
   backdrop-filter: blur(4px);
 }
@@ -979,12 +987,12 @@ h3 {
 .model-readout.instrument-readout {
   text-wrap: auto;
   font-variant-numeric: tabular-nums;
-  background: var(--instrument-bg) !important;
+  background: rgba(5, 5, 5, 0.9) !important;
   border-color: var(--instrument-line) !important;
   border-left-color: var(--instrument-amber) !important;
-  color: rgba(243, 244, 246, 0.86) !important;
-  line-height: 1.42 !important;
-  max-height: min(25vh, 156px) !important;
+  color: rgba(243, 244, 246, 0.84) !important;
+  line-height: 1.38 !important;
+  max-height: min(23vh, 142px) !important;
   outline: 1px solid rgba(5, 5, 5, 0.78);
   text-wrap: auto;
 }
@@ -1100,7 +1108,7 @@ body.dimension-page .model-slider {
 }
 
 .instrument-graticule {
-  opacity: 0.064;
+  opacity: 0.048;
   background:
     repeating-linear-gradient(90deg, rgba(255,255,255,0.06) 0 1px, transparent 1px 40px),
     repeating-linear-gradient(0deg, rgba(255,255,255,0.06) 0 1px, transparent 1px 40px),
@@ -1109,17 +1117,17 @@ body.dimension-page .model-slider {
 }
 
 .instrument-reticle {
-  opacity: 0.058;
+  opacity: 0.052;
 }
 
 .instrument-aperture {
   position: absolute;
   inset: 54px 64px 84px;
-  border: 1px solid rgba(243, 244, 246, 0.12);
+  border: 1px solid rgba(243, 244, 246, 0.09);
   background:
-    linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,235,59,0.18) calc(50% - 0.5px), rgba(255,235,59,0.18) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
-    linear-gradient(0deg, transparent calc(50% - 0.5px), rgba(66,165,245,0.16) calc(50% - 0.5px), rgba(66,165,245,0.16) calc(50% + 0.5px), transparent calc(50% + 0.5px));
-  opacity: 0.22;
+    linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,235,59,0.13) calc(50% - 0.5px), rgba(255,235,59,0.13) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    linear-gradient(0deg, transparent calc(50% - 0.5px), rgba(66,165,245,0.12) calc(50% - 0.5px), rgba(66,165,245,0.12) calc(50% + 0.5px), transparent calc(50% + 0.5px));
+  opacity: 0.16;
 }
 
 .instrument-aperture::before,
@@ -1127,7 +1135,7 @@ body.dimension-page .model-slider {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: rgba(243, 244, 246, 0.58);
+  background: rgba(243, 244, 246, 0.54);
 }
 
 .instrument-aperture::before {

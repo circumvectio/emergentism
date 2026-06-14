@@ -731,7 +731,7 @@ body.soul-loop-instrument .visual-labels .bottom {
   z-index: 2;
   pointer-events: none;
   overflow: hidden;
-  border: 1px solid rgba(243, 244, 246, 0.09);
+  border: 1px solid rgba(243, 244, 246, 0.075);
   box-shadow:
     inset 0 0 0 1px rgba(5, 5, 5, 0.78),
     inset 0 0 0 12px rgba(243, 244, 246, 0.008);
@@ -741,7 +741,7 @@ body.soul-loop-instrument .visual-labels .bottom {
 .instrument-graticule {
   position: absolute;
   inset: 24px;
-  opacity: 0.105;
+  opacity: 0.052;
   background:
     repeating-linear-gradient(90deg, rgba(255,255,255,0.07) 0 1px, transparent 1px 32px),
     repeating-linear-gradient(0deg, rgba(255,255,255,0.07) 0 1px, transparent 1px 32px),
@@ -758,7 +758,7 @@ body.soul-loop-instrument .visual-labels .bottom {
   position: absolute;
   width: 24px;
   height: 24px;
-  border-color: rgba(243, 244, 246, 0.18);
+  border-color: rgba(243, 244, 246, 0.14);
   border-style: solid;
 }
 
@@ -791,7 +791,7 @@ body.soul-loop-instrument .visual-labels .bottom {
   content: "";
   position: absolute;
   inset: 12px;
-  border: 1px solid rgba(243, 244, 246, 0.12);
+  border: 1px solid rgba(243, 244, 246, 0.095);
 }
 
 .instrument-overlay::after {
@@ -805,7 +805,7 @@ body.soul-loop-instrument .visual-labels .bottom {
   background:
     linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,255,255,0.16) calc(50% - 0.5px), rgba(255,255,255,0.16) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
     linear-gradient(0deg, transparent calc(50% - 0.5px), rgba(66,165,245,0.14) calc(50% - 0.5px), rgba(66,165,245,0.14) calc(50% + 0.5px), transparent calc(50% + 0.5px));
-  opacity: 0.095;
+  opacity: 0.064;
 }
 
 .instrument-id {
@@ -873,7 +873,7 @@ body.soul-loop-instrument .visual-labels .bottom {
   min-height: 19px;
   border: 1px solid var(--instrument-line-soft);
   border-radius: 2px;
-  background: var(--instrument-bg);
+  background: rgba(5, 5, 5, 0.88);
   padding: 4px 6px;
   backdrop-filter: blur(3px);
 }
@@ -911,11 +911,11 @@ body.soul-loop-instrument .visual-labels .bottom {
   height: 100%;
   transform: scaleX(0);
   transform-origin: left center;
-  background: linear-gradient(90deg, rgba(66,165,245,0.74), rgba(243,244,246,0.84));
+  background: linear-gradient(90deg, rgba(66,165,245,0.58), rgba(243,244,246,0.7));
 }
 
 .instrument-meter.error b {
-  background: linear-gradient(90deg, rgba(76,175,80,0.54), rgba(255,122,23,0.72));
+  background: linear-gradient(90deg, rgba(76,175,80,0.44), rgba(255,122,23,0.62));
 }
 
 body.soul-loop-instrument .instrument-measurements {
@@ -1002,7 +1002,7 @@ body.soul-loop-instrument .instrument-measurements {
   white-space: nowrap;
   border: 1px solid var(--instrument-line);
   border-radius: 2px;
-  background: var(--instrument-bg);
+  background: rgba(5, 5, 5, 0.88);
   padding: 4px 6px;
   backdrop-filter: blur(4px);
 }
@@ -1010,20 +1010,26 @@ body.soul-loop-instrument .instrument-measurements {
 .instrument-telemetry span[data-field="metric"],
 .instrument-telemetry span[data-field="uncertainty"],
 .instrument-telemetry span[data-field="time"],
-.instrument-telemetry span[data-field="phase"] {
+.instrument-telemetry span[data-field="phase"],
+.instrument-telemetry span[data-field="sample"],
+.instrument-telemetry span[data-field="state"] {
   display: none;
 }
 
 .instrument-telemetry span[data-field="mode"] {
-  max-width: 7.75rem;
+  max-width: 8.75rem;
 }
 
 .instrument-telemetry span[data-field="invariant"] {
-  max-width: 9.5rem;
+  max-width: 8.75rem;
 }
 
 .instrument-telemetry span[data-field="sample"] {
-  max-width: 7rem;
+  max-width: 6.4rem;
+}
+
+.instrument-telemetry span[data-field="state"] {
+  max-width: 7.25rem;
 }
 
 .instrument-telemetry span[data-field="metric"] {
@@ -1050,7 +1056,9 @@ body.soul-loop-instrument .instrument-measurements {
   .instrument-telemetry span[data-field="metric"],
   .instrument-telemetry span[data-field="uncertainty"],
   .instrument-telemetry span[data-field="time"],
-  .instrument-telemetry span[data-field="phase"] {
+  .instrument-telemetry span[data-field="phase"],
+  .instrument-telemetry span[data-field="sample"],
+  .instrument-telemetry span[data-field="state"] {
     display: inline-block;
     max-width: 11.5rem;
   }
@@ -1062,7 +1070,7 @@ body.soul-loop-instrument .instrument-measurements {
   right: 13px;
   z-index: 6;
   display: grid;
-  grid-template-columns: auto auto auto minmax(96px, 128px);
+  grid-template-columns: auto auto auto minmax(120px, 156px);
   gap: 5px;
   align-items: center;
   color: rgba(243, 244, 246, 0.78);
@@ -1077,7 +1085,7 @@ body.soul-loop-instrument .instrument-measurements {
   min-height: 25px;
   border: 1px solid var(--instrument-line);
   border-radius: 2px;
-  background: var(--instrument-bg);
+  background: rgba(5, 5, 5, 0.9);
   color: inherit;
   backdrop-filter: blur(4px);
 }
@@ -1187,12 +1195,12 @@ body.soul-loop-instrument .instrument-measurements {
 .model-readout.instrument-readout {
   text-wrap: auto;
   font-variant-numeric: tabular-nums;
-  background: var(--instrument-bg) !important;
+  background: rgba(5, 5, 5, 0.9) !important;
   border-color: var(--instrument-line) !important;
   border-left-color: var(--instrument-amber) !important;
-  color: rgba(243, 244, 246, 0.9) !important;
-  line-height: 1.42 !important;
-  max-height: min(25vh, 156px) !important;
+  color: rgba(243, 244, 246, 0.84) !important;
+  line-height: 1.38 !important;
+  max-height: min(23vh, 142px) !important;
   outline: 1px solid rgba(5, 5, 5, 0.76);
   text-wrap: auto;
 }
@@ -1304,7 +1312,7 @@ body.soul-loop-instrument .instrument-measurements {
 }
 
 .instrument-graticule {
-  opacity: 0.082;
+  opacity: 0.048;
   background:
     repeating-linear-gradient(90deg, rgba(255,255,255,0.06) 0 1px, transparent 1px 40px),
     repeating-linear-gradient(0deg, rgba(255,255,255,0.06) 0 1px, transparent 1px 40px),
@@ -1313,17 +1321,17 @@ body.soul-loop-instrument .instrument-measurements {
 }
 
 .instrument-reticle {
-  opacity: 0.074;
+  opacity: 0.052;
 }
 
 .instrument-aperture {
   position: absolute;
   inset: 54px 64px 84px;
-  border: 1px solid rgba(243, 244, 246, 0.12);
+  border: 1px solid rgba(243, 244, 246, 0.09);
   background:
-    linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,235,59,0.18) calc(50% - 0.5px), rgba(255,235,59,0.18) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
-    linear-gradient(0deg, transparent calc(50% - 0.5px), rgba(66,165,245,0.16) calc(50% - 0.5px), rgba(66,165,245,0.16) calc(50% + 0.5px), transparent calc(50% + 0.5px));
-  opacity: 0.3;
+    linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,235,59,0.13) calc(50% - 0.5px), rgba(255,235,59,0.13) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    linear-gradient(0deg, transparent calc(50% - 0.5px), rgba(66,165,245,0.12) calc(50% - 0.5px), rgba(66,165,245,0.12) calc(50% + 0.5px), transparent calc(50% + 0.5px));
+  opacity: 0.16;
 }
 
 .instrument-aperture::before,
@@ -1331,7 +1339,7 @@ body.soul-loop-instrument .instrument-measurements {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: rgba(243, 244, 246, 0.72);
+  background: rgba(243, 244, 246, 0.58);
 }
 
 .instrument-aperture::before {
@@ -2704,14 +2712,14 @@ pre.glyph-block {
   pointer-events: none;
   --instrument-phase: 0;
   --instrument-primary: 0;
-  border: 1px solid rgba(243, 244, 246, 0.12);
+  border: 1px solid rgba(243, 244, 246, 0.095);
   background:
     repeating-linear-gradient(90deg, rgba(243,244,246,.022) 0 1px, transparent 1px 40px),
     repeating-linear-gradient(0deg, rgba(243,244,246,.022) 0 1px, transparent 1px 40px),
     repeating-linear-gradient(90deg, rgba(66,165,245,.034) 0 1px, transparent 1px 160px),
     repeating-linear-gradient(0deg, rgba(255,235,59,.026) 0 1px, transparent 1px 160px);
   box-shadow: inset 0 0 0 1px rgba(255,255,255,.028);
-  opacity: .28;
+  opacity: .22;
 }
 .lab-frame::before,
 .lab-frame::after {
@@ -2723,8 +2731,8 @@ pre.glyph-block {
 .lab-frame::after {
   inset: 0;
   background:
-    linear-gradient(90deg, transparent calc(50% - .5px), rgba(243,244,246,.09) calc(50% - .5px), rgba(243,244,246,.09) calc(50% + .5px), transparent calc(50% + .5px)),
-    linear-gradient(0deg, transparent calc(50% - .5px), rgba(66,165,245,.06) calc(50% - .5px), rgba(66,165,245,.06) calc(50% + .5px), transparent calc(50% + .5px));
+    linear-gradient(90deg, transparent calc(50% - .5px), rgba(243,244,246,.07) calc(50% - .5px), rgba(243,244,246,.07) calc(50% + .5px), transparent calc(50% + .5px)),
+    linear-gradient(0deg, transparent calc(50% - .5px), rgba(66,165,245,.045) calc(50% - .5px), rgba(66,165,245,.045) calc(50% + .5px), transparent calc(50% + .5px));
 }
 .lab-frame .corner {
   position: absolute;
@@ -2859,7 +2867,7 @@ body.sphere-instrument .title {
   border: 1px solid var(--border);
   border-left: 2px solid var(--gold);
   border-radius: var(--shape-sm);
-  background: rgba(5, 5, 5, 0.94);
+  background: rgba(5, 5, 5, 0.9);
   padding: 10px 12px;
   backdrop-filter: blur(4px);
   pointer-events: none;
@@ -2927,7 +2935,7 @@ body.sphere-instrument .title {
   white-space: nowrap;
   border: 1px solid var(--instrument-line);
   border-radius: 2px;
-  background: var(--instrument-bg);
+  background: rgba(5, 5, 5, 0.88);
   padding: 4px 6px;
   backdrop-filter: blur(4px);
 }
@@ -3038,7 +3046,7 @@ body.lightcone-instrument .standalone-measurements {
   min-height: 19px;
   border: 1px solid var(--instrument-line-soft);
   border-radius: var(--shape-sm);
-  background: var(--instrument-bg);
+  background: rgba(5, 5, 5, 0.88);
   padding: 4px 6px;
   backdrop-filter: blur(3px);
 }
@@ -3076,12 +3084,12 @@ body.lightcone-instrument .standalone-measurements {
   height: 100%;
   transform: scaleX(0);
   transform-origin: left center;
-  background: linear-gradient(90deg, rgba(66,165,245,0.52), rgba(243,244,246,0.68));
+  background: linear-gradient(90deg, rgba(66,165,245,0.46), rgba(243,244,246,0.62));
   transition: transform 90ms linear;
 }
 
 .standalone-meter.error b {
-  background: linear-gradient(90deg, rgba(76,175,80,0.4), rgba(255,122,23,0.56));
+  background: linear-gradient(90deg, rgba(76,175,80,0.36), rgba(255,122,23,0.5));
 }
 #stage-readout {
   position: fixed;
@@ -3092,7 +3100,7 @@ body.lightcone-instrument .standalone-measurements {
   border: 1px solid var(--border);
   border-left: 2px solid var(--gold);
   border-radius: var(--shape-sm);
-  background: rgba(5, 5, 5, 0.94);
+  background: rgba(5, 5, 5, 0.9);
   color: var(--text-muted);
   padding: 10px 12px;
   white-space: pre-line;
@@ -3381,6 +3389,9 @@ button.nav:hover {
     max-height: 106px;
     overflow: hidden;
     font-size: 9.5px;
+    border-color: rgba(243, 244, 246, 0.16);
+    border-left-color: rgba(255, 235, 59, 0.92);
+    background: rgba(5, 5, 5, 0.78);
   }
   .standalone-telemetry {
     display: none;
