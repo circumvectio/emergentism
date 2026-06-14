@@ -375,6 +375,20 @@ td {
   max-width: 720px;
 }
 
+body.dimension-page .hero-copy {
+  max-width: min(38vw, 460px);
+}
+
+body.dimension-page .subtitle {
+  max-width: 34ch;
+}
+
+@media (min-width: 901px) {
+  body.dimension-page .hero {
+    align-items: start;
+  }
+}
+
 .kicker,
 .evidence,
 .chapter-kicker {
@@ -463,13 +477,11 @@ h3 {
 
 .instrument-visual {
   border-color: rgba(243, 244, 246, 0.18);
-  background:
-    radial-gradient(circle at 50% 50%, rgba(33, 150, 243, 0.045), transparent 52%),
-    #050505;
+  background: #050505;
 }
 
 .instrument-visual::after {
-  opacity: 0.18;
+  opacity: 0.09;
 }
 
 .dimension-canvas {
@@ -487,17 +499,22 @@ h3 {
   z-index: 2;
   pointer-events: none;
   overflow: hidden;
+  border: 1px solid rgba(243, 244, 246, 0.09);
+  box-shadow:
+    inset 0 0 0 1px rgba(5, 5, 5, 0.78),
+    inset 0 0 0 12px rgba(243, 244, 246, 0.012);
+  contain: paint;
 }
 
 .instrument-graticule {
   position: absolute;
   inset: 24px;
-  opacity: 0.14;
+  opacity: 0.1;
   background:
-    repeating-linear-gradient(90deg, rgba(255,255,255,0.08) 0 1px, transparent 1px 32px),
-    repeating-linear-gradient(0deg, rgba(255,255,255,0.08) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.07) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.07) 0 1px, transparent 1px 32px),
     repeating-linear-gradient(90deg, rgba(255,235,59,0.08) 0 1px, transparent 1px 128px),
-    repeating-linear-gradient(0deg, rgba(33,150,243,0.075) 0 1px, transparent 1px 128px);
+    repeating-linear-gradient(0deg, rgba(33,150,243,0.07) 0 1px, transparent 1px 128px);
 }
 
 .instrument-corners {
@@ -535,9 +552,29 @@ h3 {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,235,59,0.16) calc(50% - 0.5px), rgba(255,235,59,0.16) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
-    linear-gradient(0deg, transparent calc(50% - 0.5px), rgba(66,165,245,0.16) calc(50% - 0.5px), rgba(66,165,245,0.16) calc(50% + 0.5px), transparent calc(50% + 0.5px));
-  opacity: 0.16;
+    linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,235,59,0.13) calc(50% - 0.5px), rgba(255,235,59,0.13) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    linear-gradient(0deg, transparent calc(50% - 0.5px), rgba(66,165,245,0.13) calc(50% - 0.5px), rgba(66,165,245,0.13) calc(50% + 0.5px), transparent calc(50% + 0.5px));
+  opacity: 0.12;
+}
+
+.instrument-id {
+  position: absolute;
+  left: 13px;
+  bottom: 13px;
+  display: inline-flex;
+  gap: 5px;
+  color: rgba(243, 244, 246, 0.5);
+  font: 700 9px/1 var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.instrument-id span {
+  border: 1px solid rgba(243, 244, 246, 0.11);
+  border-radius: 2px;
+  background: rgba(5, 5, 5, 0.86);
+  padding: 3px 5px;
 }
 
 .instrument-calibration {
@@ -826,7 +863,7 @@ h3 {
   bottom: 16px;
   z-index: 6;
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  grid-template-columns: minmax(5.2rem, auto) minmax(0, 1fr) minmax(5.2rem, auto) minmax(5.8rem, auto);
   gap: 10px;
   align-items: center;
   color: rgba(243, 244, 246, 0.68);
@@ -874,9 +911,18 @@ body.dimension-page .model-slider {
   background-repeat: no-repeat;
   background-size: 100% 4px;
   background-image:
+    linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(243,244,246,.5) calc(50% - 0.5px), rgba(243,244,246,.5) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
     repeating-linear-gradient(90deg, rgba(255,255,255,0.24) 0 1px, transparent 1px 8px),
     linear-gradient(90deg, rgba(255,235,59,0.38), rgba(66,165,245,0.34));
   cursor: pointer;
+}
+
+.rapidity-slider .slider-hi {
+  min-width: 10.5rem;
+}
+
+.theta-slider .slider-end {
+  min-width: 5.2rem;
 }
 
 .model-slider input[type="range"]::-webkit-slider-thumb {
@@ -1180,7 +1226,8 @@ noscript {
     max-width: calc(100% - 1.5rem);
   }
 
-  .instrument-calibration {
+  .instrument-calibration,
+  .instrument-id {
     display: none;
   }
 

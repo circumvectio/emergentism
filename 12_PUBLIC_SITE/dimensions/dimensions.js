@@ -16,9 +16,9 @@ const SAMPLE_HZ = 30;
 const SAMPLE_DT = 1 / SAMPLE_HZ;
 const MAX_FRAME_DT = 0.12;
 const INSTRUMENT_CPS = {
-  slow: 0.012,
-  medium: 0.018,
-  fast: 0.026
+  slow: 0.008,
+  medium: 0.014,
+  fast: 0.02
 };
 function nowMs() {
   return (typeof window.performance !== "undefined" && typeof window.performance.now === "function")
@@ -76,13 +76,24 @@ const modeInvariants = {
   ccc: "/6 ≡ /0",
   convergence: "/6 ≡ /0"
 };
+const modeInstrumentIds = {
+  titans: "E0-FRM",
+  logline: "E1-REC",
+  muLimit: "E2-LFT",
+  bloch: "E3-STP",
+  horn: "E4-RPD",
+  burrisphere: "E5-DLP",
+  constitution: "E5+1-GOV",
+  ccc: "E6-CCC",
+  convergence: "E6-CCC"
+};
 const modeScales = {
   titans: { x: "log coordinate s", y: "reciprocal mirror offset" },
   logline: { x: "log₂(x) axis", y: "E=(ln x)² well" },
   muLimit: { x: "λ along source line", y: "μ orthogonal lift" },
   bloch: { x: "complex-plane radius", y: "sphere latitude θ" },
-  horn: { x: "rapidity w", y: "proper-time ratio dτ/dt" },
-  burrisphere: { x: "dual tangent radii φ/ν", y: "latitude θ · B=sinθ" },
+  horn: { x: "rapidity w", y: "means ratio dτ/dt" },
+  burrisphere: { x: "ν means radius", y: "Φ worldline sight θ" },
   constitution: { x: "fence index", y: "closure residual" },
   ccc: { x: "aeon phase q", y: "conformal radius Ω" },
   convergence: { x: "aeon phase q", y: "conformal radius Ω" }
@@ -307,6 +318,10 @@ function ensureInstrumentOverlay(mode = animationMode) {
     <div class="instrument-reticle"></div>
     <div class="instrument-scale x" data-axis-label="${scale.x}"></div>
     <div class="instrument-scale y" data-axis-label="${scale.y}"></div>
+    <div class="instrument-id">
+      <span>${modeInstrumentIds[mode] || "E-MOD"}</span>
+      <span>calibrated model</span>
+    </div>
     <div class="instrument-calibration">
       <span>CAL</span>
       <span>30 Hz</span>
@@ -400,6 +415,8 @@ function createModelSlider({
   if (!visual) return null;
   const wrap = document.createElement("div");
   wrap.className = `model-slider ${className}`.trim();
+  wrap.setAttribute("role", "group");
+  wrap.setAttribute("aria-label", ariaLabel);
 
   const lo = document.createElement("span");
   lo.className = "slider-end slider-lo";
@@ -420,6 +437,7 @@ function createModelSlider({
   const output = document.createElement("output");
   output.className = "slider-output";
   output.textContent = value;
+  output.setAttribute("aria-live", "polite");
 
   wrap.append(lo, input, hi, output);
   visual.appendChild(wrap);
@@ -1102,9 +1120,9 @@ function makeReadout() {
       "position:absolute;left:16px;right:auto;top:auto;bottom:16px;z-index:5;max-width:68%;max-height:min(34vh,280px);" +
       "font:600 11px/1.55 'Roboto Mono',ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums;" +
       "color:var(--ink,#F3F4F6);pointer-events:none;letter-spacing:0;white-space:pre-line;text-align:left;" +
-      "background:rgba(5,5,5,.86);padding:9px 12px;" +
-      "border:1px solid rgba(255,255,255,.14);border-left:2px solid #FFEB3B;border-radius:6px;backdrop-filter:blur(4px);" +
-      "box-shadow:0 6px 18px rgba(0,0,0,.16)";
+      "background:rgba(5,5,5,.9);padding:9px 12px;" +
+      "border:1px solid rgba(255,255,255,.14);border-left:2px solid #FFEB3B;border-radius:2px;backdrop-filter:blur(4px);" +
+      "box-shadow:none";
     visual.appendChild(el);
   }
   return el;
@@ -1482,19 +1500,19 @@ function buildScene(mode, scene) {
     if (visual) {
       sliderControl = createModelSlider({
         className: "rapidity-slider",
-        leftLabel: "0 · horn",
-        rightLabel: "∞ · sphere",
+        leftLabel: "w=0 · horn",
+        rightLabel: "w→∞ · sphere limit",
         value: "0",
         ariaLabel: "rapidity from horn touch toward the infinite light-speed sphere limit"
       });
       slider = sliderControl ? sliderControl.input : null;
       if (slider) slider.addEventListener("input", () => { userActive = true; });
-      if (sliderControl) sliderControl.setOutput("w 0.00");
+      if (sliderControl) sliderControl.setOutput("w = 0.00");
       visual.dataset.midLabel = "rest";
       visual.addEventListener("instrument:zero", () => {
         userActive = false;
         if (slider) slider.value = "0";
-        if (sliderControl) sliderControl.setOutput("w 0.00");
+        if (sliderControl) sliderControl.setOutput("w = 0.00");
         clearStripChart(properTimeChart);
       });
     }
@@ -1506,7 +1524,7 @@ function buildScene(mode, scene) {
         w = smooth01(sweep01(t, INSTRUMENT_CPS.slow)) * W_MAX * 0.92; // measured rapidity sweep until the user grabs the slider
         if (slider) slider.value = String(Math.round((w / W_MAX) * 100));
       }
-      if (sliderControl) sliderControl.setOutput("w " + w.toFixed(2));
+      if (sliderControl) sliderControl.setOutput("w = " + w.toFixed(2));
       const vc = Math.tanh(w);                                  // β = v/c — tends to 1
       const aB = Math.abs(vc);
       const gamma = Math.cosh(w);                               // γ — the relativistic-mass factor
@@ -1680,18 +1698,18 @@ function buildScene(mode, scene) {
     if (visual) {
       thetaSliderControl = createModelSlider({
         className: "theta-slider",
-        leftLabel: "φ · D5 sight",
-        rightLabel: "ν · D4 means",
+        leftLabel: "Φ sight",
+        rightLabel: "V means",
         value: "50",
         ariaLabel: "theta latitude from D5 worldline foresight through balance to D4 means-to-act"
       });
       thetaSlider = thetaSliderControl ? thetaSliderControl.input : null;
       if (thetaSlider) thetaSlider.addEventListener("input", () => { thetaUserActive = true; });
-      if (thetaSliderControl) thetaSliderControl.setOutput("θ 90°");
+      if (thetaSliderControl) thetaSliderControl.setOutput("θ = 90°");
       visual.addEventListener("instrument:zero", () => {
         thetaUserActive = false;
         if (thetaSlider) thetaSlider.value = "50";
-        if (thetaSliderControl) thetaSliderControl.setOutput("θ 90°");
+        if (thetaSliderControl) thetaSliderControl.setOutput("θ = 90°");
         clearStripChart(balanceChart);
       });
     }
@@ -1715,7 +1733,7 @@ function buildScene(mode, scene) {
         ? thetaFromSlider()
         : THETA_MIN + smooth01(sweep01(t + D5_BALANCE_OFFSET, D5_SWEEP_CPS)) * (THETA_MAX - THETA_MIN); // auto-sweep from the calibrated balance latitude
       if (!thetaUserActive && thetaSlider) thetaSlider.value = String(sliderFromTheta(theta));
-      if (thetaSliderControl) thetaSliderControl.setOutput("θ " + Math.round(theta * 180 / Math.PI) + "°");
+      if (thetaSliderControl) thetaSliderControl.setOutput("θ = " + Math.round(theta * 180 / Math.PI) + "°");
       const phi = 1 / Math.tan(theta / 2);                           // cot(θ/2)
       const nu = Math.tan(theta / 2);                                // 1/φ
       const cps = Math.cos(psi), sps = Math.sin(psi), sT = Math.sin(theta);
