@@ -1,8 +1,9 @@
 import {
+  createTextSprite,
   createStripChart as createSharedStripChart,
   clearStripChart as clearSharedStripChart,
   updateStripChart as updateSharedStripChart
-} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-10";
+} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-11";
 
 const page = window.DIMENSION_PAGE || {};
 const canvas = document.querySelector(".dimension-canvas");
@@ -1262,6 +1263,19 @@ function makeMarker(position, color = 0xffffff, size = 0.055) {
   return marker;
 }
 
+function addSceneLabel(group, text, position, color = 0xf3f4f6, scale = [0.7, 0.13]) {
+  const label = createTextSprite(THREE, text, {
+    color,
+    font: "800 20px Roboto Mono, ui-monospace, Menlo, monospace",
+    scale,
+    background: true,
+    stroke: true
+  });
+  label.position.copy(position);
+  group.add(label);
+  return label;
+}
+
 function buildScene(mode, scene) {
   const root = new THREE.Group();
   scene.add(root);
@@ -1306,6 +1320,9 @@ function buildScene(mode, scene) {
     root.add(makeMarker(new THREE.Vector3(EXT + 0.5, 0, 0), 0xc8c8c8, 0.055)); // ○ toward ∞
     const one = ring(0.1, 0xffeb3b, 0.95);
     one.rotation.x = 0; root.add(one);                // ⊙ — the One, facing the viewer
+    addSceneLabel(root, "0 limit", new THREE.Vector3(-EXT - 0.5, -0.28, 0.05), 0x9ca3af, [0.48, 0.1]);
+    addSceneLabel(root, "1 fixed", new THREE.Vector3(0, -0.28, 0.05), 0xffeb3b, [0.48, 0.1]);
+    addSceneLabel(root, "∞ limit", new THREE.Vector3(EXT + 0.5, -0.28, 0.05), 0x9ca3af, [0.52, 0.1]);
     root.add(line([new THREE.Vector3(0, -0.55, 0), new THREE.Vector3(0, 1.95, 0)], 0xffeb3b, 0.28)); // the mirror axis
     // the energy well E = (ln x)² — drawn over the line, minimum exactly at 1
     const well = [];
@@ -1412,6 +1429,9 @@ function buildScene(mode, scene) {
       new THREE.Vector3(0, 1.6, 0),
       new THREE.Vector3(1.8, 0, 0)
     ], 0xb8b8b8, 0.9));
+    addSceneLabel(root, "source line λ", new THREE.Vector3(-1.58, -0.18, 0.06), 0xf3f4f6, [0.7, 0.12]);
+    addSceneLabel(root, "μ lift", new THREE.Vector3(0.22, 1.36, 0.06), 0xffeb3b, [0.46, 0.11]);
+    addSceneLabel(root, "projection σ", new THREE.Vector3(1.55, 0.22, 0.06), 0x42a5f5, [0.62, 0.11]);
     const sample = makeMarker(new THREE.Vector3(-1.8, 0, 0), 0xffeb3b, 0.075);
     const projection = makeMarker(new THREE.Vector3(-1.8, 0, 0), 0xffffff, 0.045);
     const liftLine = line([
@@ -1491,6 +1511,10 @@ function buildScene(mode, scene) {
     unitC.position.y = -r; root.add(unitC);
     root.add(makeMarker(N, 0xb8b8b8, 0.07));                    // ∞
     root.add(makeMarker(Sp, 0x707070, 0.07));                   // 0 — where the sphere touches ℂ
+    addSceneLabel(root, "∞ pole", new THREE.Vector3(0.22, r + 0.08, 0.02), 0xb8b8b8, [0.48, 0.1]);
+    addSceneLabel(root, "0 touch", new THREE.Vector3(0.34, -r + 0.08, 0.02), 0x9ca3af, [0.5, 0.1]);
+    addSceneLabel(root, "ℂ tangent plane", new THREE.Vector3(-1.85, -r + 0.05, -1.55), 0x42a5f5, [0.78, 0.11]);
+    addSceneLabel(root, "|z|=1 shadow", new THREE.Vector3(1.25, -r + 0.05, 1.15), 0xffeb3b, [0.72, 0.11]);
     const projectionRay = line([N, new THREE.Vector3(2 * r, -r, 0)], 0xffeb3b, 0.9);
     const pMarker = makeMarker(new THREE.Vector3(r, 0, 0), 0xffffff, 0.08);
     const landMarker = makeMarker(new THREE.Vector3(2 * r, -r, 0), 0xffeb3b, 0.07);
@@ -1594,6 +1618,10 @@ function buildScene(mode, scene) {
     const relCentre = ring(0.12, 0xffeb3b, 0.95);               // the relative centre on the plane (a ring, no dot)
     const properTimeGauge = createTickedRing(1.0, 0x42a5f5, 0.36, 40);
     properTimeGauge.position.y = 0.014;
+    addSceneLabel(root, "horn touch", new THREE.Vector3(-1.42, 0.12, 0.12), 0xffeb3b, [0.78, 0.14]);
+    addSceneLabel(root, "sphere limit shell", new THREE.Vector3(1.15, 1.58, 0.06), 0x42a5f5, [1.0, 0.15]);
+    addSceneLabel(root, "R/r = 1/γ", new THREE.Vector3(1.32, -0.16, 1.1), 0xf3f4f6, [0.78, 0.14]);
+    addSceneLabel(root, "dτ/dt gauge", new THREE.Vector3(-1.2, 0.18, -1.15), 0x42a5f5, [0.86, 0.14]);
     const rapidityTrace = line([new THREE.Vector3(0, 0.018, 0), new THREE.Vector3(0, 0.018, 0)], 0x42a5f5, 0.58);
     const properTimeChart = createStripChart(new THREE.Vector3(-1.55, -1.58, 0.08), 3.1, 0.42, 0x42a5f5, 120, "dτ/dt = 1/γ", 0x42a5f5, {
       targetValue: 1,
@@ -1740,6 +1768,9 @@ function buildScene(mode, scene) {
     });
     root.add(makeMarker(N, 0xc8c8c8, 0.07));
     root.add(makeMarker(S, 0x8a8a8a, 0.07));
+    addSceneLabel(root, "∞ plane", new THREE.Vector3(-3.1, r + 0.08, -2.35), 0x9ca3af, [0.9, 0.15]);
+    addSceneLabel(root, "0 plane", new THREE.Vector3(-3.1, -r + 0.08, -2.35), 0x9ca3af, [0.84, 0.15]);
+    addSceneLabel(root, "equator B=1", new THREE.Vector3(1.18, 0.12, 0.08), 0xffeb3b, [0.86, 0.14]);
 
     // four quadrant probes on the ∞-plane (the ν-chart): balanced/foresight
     // samples stay inside the unit circle; means-heavy samples fall outside.
@@ -1781,6 +1812,9 @@ function buildScene(mode, scene) {
     const phiPt = makeMarker(new THREE.Vector3(U, -r, 0), FORESIGHT, 0.07);  // the φ landing (floor)
     const nuPt = makeMarker(new THREE.Vector3(U, r, 0), FORESIGHT, 0.07);    // the ν landing (top)
     root.add(pMark); root.add(rayDown); root.add(rayUp); root.add(phiPt); root.add(nuPt);
+    addSceneLabel(root, "P on S²", new THREE.Vector3(0.48, 0.22, 0.12), BALANCED, [0.68, 0.13]);
+    addSceneLabel(root, "φ landing", new THREE.Vector3(U + 0.34, -r + 0.08, 0.12), FORESIGHT, [0.78, 0.13]);
+    addSceneLabel(root, "ν landing", new THREE.Vector3(U + 0.34, r + 0.08, 0.12), MEANS, [0.78, 0.13]);
 
     // the two spiral trails traced by the landings — reciprocal radii
     const TRAIL = 150, phiTrail = [], nuTrail = [], pointTrail = [];
@@ -1965,6 +1999,9 @@ function buildScene(mode, scene) {
     root.add(boundary);
     const boundaryGauge = createXYTickedRing(boundaryRadius, 0xffffff, 0.22, 72, 0.035);
     root.add(boundaryGauge);
+    addSceneLabel(root, "aeon boundary", new THREE.Vector3(-1.52, 1.58, 0.05), 0xf3f4f6, [0.74, 0.11]);
+    addSceneLabel(root, "/0 origin", new THREE.Vector3(0.42, 0.16, 0.05), 0xffeb3b, [0.54, 0.1]);
+    addSceneLabel(root, "q-map", new THREE.Vector3(1.42, -1.08, 0.05), 0x42a5f5, [0.46, 0.1]);
 
     const aeonShell = cccRing(0xffffff, 0.74, 0.011);
     const conformalShell = cccRing(0x42a5f5, 0.42, 0.009);

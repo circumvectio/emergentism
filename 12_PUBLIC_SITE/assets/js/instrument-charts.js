@@ -23,6 +23,7 @@ export function createTextSprite(THREE, text, options = {}) {
   const sprite = new THREE.Sprite(new THREE.SpriteMaterial({
     map: texture,
     transparent: true,
+    depthTest: false,
     depthWrite: false
   }));
   sprite.scale.set(scale[0], scale[1], 1);
