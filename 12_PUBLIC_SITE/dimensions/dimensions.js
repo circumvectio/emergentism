@@ -16,9 +16,9 @@ const SAMPLE_HZ = 30;
 const SAMPLE_DT = 1 / SAMPLE_HZ;
 const MAX_FRAME_DT = 0.12;
 const INSTRUMENT_CPS = {
-  slow: 0.018,
-  medium: 0.024,
-  fast: 0.035
+  slow: 0.012,
+  medium: 0.018,
+  fast: 0.026
 };
 function nowMs() {
   return (typeof window.performance !== "undefined" && typeof window.performance.now === "function")
@@ -290,7 +290,10 @@ function makeMaterial(color, opacity = 1, wireframe = false) {
 }
 
 function ensureInstrumentOverlay(mode = animationMode) {
-  if (!visual || visual.querySelector(".instrument-overlay")) return null;
+  if (!visual) return null;
+  visual.classList.add("instrument-visual", `instrument-mode-${mode}`);
+  const existing = visual.querySelector(".instrument-overlay");
+  if (existing) return existing;
 
   const scale = modeScales[mode] || { x: "x instrument axis", y: "y instrument axis" };
   const overlay = document.createElement("div");
@@ -304,6 +307,12 @@ function ensureInstrumentOverlay(mode = animationMode) {
     <div class="instrument-reticle"></div>
     <div class="instrument-scale x" data-axis-label="${scale.x}"></div>
     <div class="instrument-scale y" data-axis-label="${scale.y}"></div>
+    <div class="instrument-calibration">
+      <span>CAL</span>
+      <span>30 Hz</span>
+      <span>Δt 0.0333 s</span>
+      <span>screen-space assay</span>
+    </div>
     <div class="instrument-telemetry">
       <span data-field="mode">${modeLabels[mode] || mode}</span>
       <span data-field="invariant">${modeInvariants[mode] || "calibrated"}</span>
@@ -376,6 +385,53 @@ function syncInstrumentControls(playback, paused) {
   if (!playback || !playback.hold) return;
   playback.hold.textContent = paused ? "RUN" : "HOLD";
   playback.hold.setAttribute("aria-pressed", paused ? "true" : "false");
+}
+
+function createModelSlider({
+  className = "",
+  leftLabel = "min",
+  rightLabel = "max",
+  ariaLabel = "instrument slider",
+  value = "0",
+  min = "0",
+  max = "100",
+  step = "1"
+} = {}) {
+  if (!visual) return null;
+  const wrap = document.createElement("div");
+  wrap.className = `model-slider ${className}`.trim();
+
+  const lo = document.createElement("span");
+  lo.className = "slider-end slider-lo";
+  lo.textContent = leftLabel;
+
+  const input = document.createElement("input");
+  input.type = "range";
+  input.min = String(min);
+  input.max = String(max);
+  input.step = String(step);
+  input.value = String(value);
+  input.setAttribute("aria-label", ariaLabel);
+
+  const hi = document.createElement("span");
+  hi.className = "slider-end slider-hi";
+  hi.textContent = rightLabel;
+
+  const output = document.createElement("output");
+  output.className = "slider-output";
+  output.textContent = value;
+
+  wrap.append(lo, input, hi, output);
+  visual.appendChild(wrap);
+
+  return {
+    root: wrap,
+    input,
+    output,
+    setOutput(text) {
+      output.textContent = text;
+    }
+  };
 }
 
 function setupCanvas2D() {
@@ -1045,9 +1101,9 @@ function makeReadout() {
     el.style.cssText =
       "position:absolute;left:16px;right:auto;top:auto;bottom:16px;z-index:5;max-width:68%;max-height:min(34vh,280px);" +
       "font:600 11px/1.55 'Roboto Mono',ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums;" +
-      "color:var(--text,#F3F4F6);pointer-events:none;letter-spacing:0;white-space:pre-line;text-align:left;" +
-      "background:rgba(5,5,5,.78);padding:9px 12px;" +
-      "border:1px solid rgba(255,255,255,.14);border-left:2px solid var(--accent,#FFEB3B);border-radius:6px;backdrop-filter:blur(4px);" +
+      "color:var(--ink,#F3F4F6);pointer-events:none;letter-spacing:0;white-space:pre-line;text-align:left;" +
+      "background:rgba(5,5,5,.86);padding:9px 12px;" +
+      "border:1px solid rgba(255,255,255,.14);border-left:2px solid #FFEB3B;border-radius:6px;backdrop-filter:blur(4px);" +
       "box-shadow:0 6px 18px rgba(0,0,0,.16)";
     visual.appendChild(el);
   }
@@ -1178,8 +1234,8 @@ function buildScene(mode, scene) {
     const readout = makeReadout();
     if (readout) readout.style.whiteSpace = "pre-line";
     dyn.push(function (t, sampled) {
-      const logPhase = phase01(t, 0.022);
-      const s = -2.9 + smooth01(sweep01(t, 0.022)) * 5.8; // sweep in log coordinates
+      const logPhase = phase01(t, INSTRUMENT_CPS.medium);
+      const s = -2.9 + smooth01(sweep01(t, INSTRUMENT_CPS.medium)) * 5.8; // sweep in log coordinates
       const x = Math.pow(2, s);
       xPt.position.set(s * SC, 0, 0);
       invPt.position.set(-s * SC, 0, 0);
@@ -1343,8 +1399,8 @@ function buildScene(mode, scene) {
       readout.classList.add("instrument-readout");
     }
     dyn.push((t, sampled) => {
-      const projectionPhase = phase01(t, 0.022);
-      const p = smooth01(sweep01(t, 0.022));
+      const projectionPhase = phase01(t, INSTRUMENT_CPS.medium);
+      const p = smooth01(sweep01(t, INSTRUMENT_CPS.medium));
       const th = (55 + 70 * p) * Math.PI / 180;
       const P = new THREE.Vector3(r * Math.sin(th), r * Math.cos(th), 0);
       const land = new THREE.Vector3(2 * r / Math.tan(th / 2), -r, 0);
@@ -1414,7 +1470,7 @@ function buildScene(mode, scene) {
 
     const readout = makeReadout();
     if (readout) {
-      readout.style.whiteSpace = "normal";
+      readout.style.whiteSpace = "pre-line";
       readout.style.maxWidth = "min(440px, 46%)";
       readout.style.top = "auto";
       readout.style.bottom = "70px";
@@ -1422,25 +1478,23 @@ function buildScene(mode, scene) {
     }
     const W_MAX = 4.5;                                          // ends: v/c -> 0.9998, γ -> ~45
     const G_MAX = Math.cosh(W_MAX);
-    let userActive = false, slider = null;
+    let userActive = false, slider = null, sliderControl = null;
     if (visual) {
-      const wrap = document.createElement("div");
-      wrap.className = "model-slider";
-      wrap.style.cssText = "position:absolute;left:16px;right:16px;bottom:16px;z-index:6;display:flex;" +
-        "align-items:center;gap:10px;font:700 11px/1 'Roboto Mono',ui-monospace,monospace;color:#9CA3AF;letter-spacing:0";
-      const lo = document.createElement("span"); lo.textContent = "0 · horn"; lo.style.color = "#FFEB3B";
-      const hi = document.createElement("span"); hi.textContent = "∞ · sphere"; hi.style.color = "#42A5F5";
-      slider = document.createElement("input");
-      slider.type = "range"; slider.min = "0"; slider.max = "100"; slider.step = "1"; slider.value = "0";
-      slider.setAttribute("aria-label", "rapidity from horn touch toward the infinite light-speed sphere limit");
-      slider.style.cssText = "flex:1;accent-color:#FFEB3B;cursor:pointer";
-      slider.addEventListener("input", () => { userActive = true; });
-      wrap.append(lo, slider, hi);
-      visual.appendChild(wrap);
+      sliderControl = createModelSlider({
+        className: "rapidity-slider",
+        leftLabel: "0 · horn",
+        rightLabel: "∞ · sphere",
+        value: "0",
+        ariaLabel: "rapidity from horn touch toward the infinite light-speed sphere limit"
+      });
+      slider = sliderControl ? sliderControl.input : null;
+      if (slider) slider.addEventListener("input", () => { userActive = true; });
+      if (sliderControl) sliderControl.setOutput("w 0.00");
       visual.dataset.midLabel = "rest";
       visual.addEventListener("instrument:zero", () => {
         userActive = false;
-        slider.value = "0";
+        if (slider) slider.value = "0";
+        if (sliderControl) sliderControl.setOutput("w 0.00");
         clearStripChart(properTimeChart);
       });
     }
@@ -1452,6 +1506,7 @@ function buildScene(mode, scene) {
         w = smooth01(sweep01(t, INSTRUMENT_CPS.slow)) * W_MAX * 0.92; // measured rapidity sweep until the user grabs the slider
         if (slider) slider.value = String(Math.round((w / W_MAX) * 100));
       }
+      if (sliderControl) sliderControl.setOutput("w " + w.toFixed(2));
       const vc = Math.tanh(w);                                  // β = v/c — tends to 1
       const aB = Math.abs(vc);
       const gamma = Math.cosh(w);                               // γ — the relativistic-mass factor
@@ -1500,8 +1555,8 @@ function buildScene(mode, scene) {
           : "D4 HORN · RAPIDITY ASSAY\n" +
             "w=" + w.toFixed(2) + " · β=" + vc.toFixed(4) + " · γ=cosh(w)=" + gamma.toFixed(1) + " · E/mc²=γ\n" +
             "R/r=1/γ=" + (1 / gamma).toFixed(3) + " · dτ/dt=" + (1 / gamma).toFixed(3) + " · k=e^w=" + k.toFixed(2) + "\n" +
-            "residual σ(R/r)=" + morphResidual.toExponential(1) + " · chart: sampled proper-time ratio\n" +
-            "limit state: " + limitState + " · finite frame never reaches β=1";
+            "σ(R/r)=" + morphResidual.toExponential(1) + " · chart: sampled proper-time ratio\n" +
+            "limit: " + limitState;
       }
     });
   }
@@ -1621,23 +1676,22 @@ function buildScene(mode, scene) {
     const THETA_MAX = Math.PI - 0.12;
     let thetaUserActive = false;
     let thetaSlider = null;
+    let thetaSliderControl = null;
     if (visual) {
-      const wrap = document.createElement("div");
-      wrap.className = "model-slider theta-slider";
-      wrap.style.cssText = "position:absolute;left:16px;right:16px;bottom:16px;z-index:6;display:flex;" +
-        "align-items:center;gap:10px;font:700 11px/1 'Roboto Mono',ui-monospace,monospace;color:#9CA3AF;letter-spacing:0";
-      const lo = document.createElement("span"); lo.textContent = "φ · D5 sight"; lo.style.color = "#FFEB3B";
-      const hi = document.createElement("span"); hi.textContent = "ν · D4 means"; hi.style.color = "#42A5F5";
-      thetaSlider = document.createElement("input");
-      thetaSlider.type = "range"; thetaSlider.min = "0"; thetaSlider.max = "100"; thetaSlider.step = "1"; thetaSlider.value = "50";
-      thetaSlider.setAttribute("aria-label", "theta latitude from D5 worldline foresight through balance to D4 means-to-act");
-      thetaSlider.style.cssText = "flex:1;accent-color:#FFEB3B;cursor:pointer";
-      thetaSlider.addEventListener("input", () => { thetaUserActive = true; });
-      wrap.append(lo, thetaSlider, hi);
-      visual.appendChild(wrap);
+      thetaSliderControl = createModelSlider({
+        className: "theta-slider",
+        leftLabel: "φ · D5 sight",
+        rightLabel: "ν · D4 means",
+        value: "50",
+        ariaLabel: "theta latitude from D5 worldline foresight through balance to D4 means-to-act"
+      });
+      thetaSlider = thetaSliderControl ? thetaSliderControl.input : null;
+      if (thetaSlider) thetaSlider.addEventListener("input", () => { thetaUserActive = true; });
+      if (thetaSliderControl) thetaSliderControl.setOutput("θ 90°");
       visual.addEventListener("instrument:zero", () => {
         thetaUserActive = false;
-        thetaSlider.value = "50";
+        if (thetaSlider) thetaSlider.value = "50";
+        if (thetaSliderControl) thetaSliderControl.setOutput("θ 90°");
         clearStripChart(balanceChart);
       });
     }
@@ -1656,11 +1710,12 @@ function buildScene(mode, scene) {
       return ap.cross(ab).length() / Math.max(ab.length(), 1e-9);
     }
     dyn.push(function (t, sampled) {
-      const psi = t * 0.22;                                          // measured azimuth trace
+      const psi = t * 0.12;                                          // measured azimuth trace
       const theta = thetaUserActive
         ? thetaFromSlider()
         : THETA_MIN + smooth01(sweep01(t + D5_BALANCE_OFFSET, D5_SWEEP_CPS)) * (THETA_MAX - THETA_MIN); // auto-sweep from the calibrated balance latitude
       if (!thetaUserActive && thetaSlider) thetaSlider.value = String(sliderFromTheta(theta));
+      if (thetaSliderControl) thetaSliderControl.setOutput("θ " + Math.round(theta * 180 / Math.PI) + "°");
       const phi = 1 / Math.tan(theta / 2);                           // cot(θ/2)
       const nu = Math.tan(theta / 2);                                // 1/φ
       const cps = Math.cos(psi), sps = Math.sin(psi), sT = Math.sin(theta);
@@ -1705,8 +1760,8 @@ function buildScene(mode, scene) {
       const moveName = isBalance
         ? "BALANCED (φ≈ν≈1)"
         : isForesightDominant
-          ? "FORESIGHT-GLOSS (D5 sight proxy > D4 means proxy)"
-          : "MEANS-GLOSS (D4 means proxy > D5 sight proxy)";
+          ? "D5 sight proxy > D4 means proxy"
+          : "D4 means proxy > D5 sight proxy";
       const balance = Math.sin(theta);
       const imbalance = Math.abs(Math.log(Math.max(phi, 1e-6)));
       const energyCost = 1 / Math.max(balance, 1e-6);
@@ -1730,8 +1785,7 @@ function buildScene(mode, scene) {
           "θ=" + (theta * 180 / Math.PI).toFixed(0) + "° " + (thetaUserActive ? "hold" : "sweep") + " · φ=" + phi.toFixed(2) + " · ν=" + nu.toFixed(2) + " · φν=1\n" +
           "B=sinθ " + balance.toFixed(3) + " · U_B " + finiteCouplingProxy.toFixed(3) + " · γ≈1/B " + energyCost.toFixed(2) + " · |lnφ| " + imbalance.toFixed(2) + "\n" +
           "residuals: σφν " + reciprocalResidual.toExponential(1) + " · σray " + rayResidual.toExponential(1) + " · chart: sampled bridge viability\n" +
-          "state: quadrant " + q + " · " + opName + " · " + moveName + "\n" +
-          "rule: P_node = Φ_action × V_action only after sight and means are jointly read";
+          "state: quadrant " + q + " · " + opName + " · " + moveName;
     });
   }
 
@@ -1815,7 +1869,7 @@ function buildScene(mode, scene) {
     root.add(phaseNeedle);
 
     dyn.push((t, sampled) => {
-      const leadPhase = phase01(t, 0.026);
+      const leadPhase = phase01(t, INSTRUMENT_CPS.medium);
       const q = smooth01(leadPhase);
       const aeonRadius = 0.12 + q * (boundaryRadius - 0.12);
       const conformalRadius = 0.12 + (1 - q) * (boundaryRadius - 0.12);

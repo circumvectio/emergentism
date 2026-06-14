@@ -131,6 +131,12 @@
     },
     {
       "section": "papers",
+      "title": "PAPER X: INFORMATION TOPOLOGY AND MACRO-CONSTRAINTS",
+      "href": "papers/paper-x-information-topology-and-macro-constraints/",
+      "source": "01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md"
+    },
+    {
+      "section": "papers",
       "title": "PAPER P: THE SU(3) OBSTRUCTION ON BARE S²",
       "href": "papers/paper-p-su3-obstruction-bare-s2/",
       "source": "docs/handoff/papers-public/PAPER_P_SU3_OBSTRUCTION_BARE_S2.md"

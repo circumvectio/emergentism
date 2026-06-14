@@ -64,6 +64,7 @@ For canonical orientation, route upstream through [`00_START_HERE.md`](../../08_
 | [`PAPER_P`](PAPER_P_SU3_OBSTRUCTION_BARE_S2.md) | SU(3) Obstruction on Bare S² | [S]/[A]/[C] | Why bare S² is insufficient for SU(3) |
 | [`PAPER_T`](PAPER_T_ANTI_IDOLATRY_AT_SCALE.md) | Anti-Idolatry at Scale | [I] | η = 0 stress test |
 | [`PAPER_U`](PAPER_U_THE_PRACTICE_BRIDGE.md) | The Practice Bridge | [I] | Pedagogy of becoming |
+| [`PAPER_X`](PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md) | Information Topology and Macro-Constraints | [S]/[I] | Costed macro-constraint calculus for causal emergence |
 
 ## D5 Landauer Barrier Program
 

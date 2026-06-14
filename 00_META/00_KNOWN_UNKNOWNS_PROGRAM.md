@@ -146,6 +146,7 @@ These are the strongest next papers implied by the present corpus:
 11. **Paper S — Independent Implementors**
 12. **Paper T — Anti-Idolatry at Scale**
 13. **Paper U — The Practice Bridge**
+14. **Paper X — Information Topology and Macro-Constraints**
 
 ---
 
@@ -155,14 +156,15 @@ If only a few papers are written next, write them in this order:
 
 1. **Paper I — The Known Unknowns Program**
 2. **Paper O — D5 as Strong Emergence in Genesis, Weak Emergence in Governance**
-3. **Paper M — The Sphere as Translation Layer**
-4. **Paper N — Productive Transcendental Wagers**
-5. **Paper J — Protocol R Without a New Lab**
-6. **Paper K — AMRITA at Zero Cost**
-7. **Paper L — The Phi-Meter Without a New Instrument**
-8. **Paper R — Retrospective eta-Zero**
-9. **Paper T — Anti-Idolatry at Scale**
-10. **Paper U — The Practice Bridge**
+3. **Paper X — Information Topology and Macro-Constraints**
+4. **Paper M — The Sphere as Translation Layer**
+5. **Paper N — Productive Transcendental Wagers**
+6. **Paper J — Protocol R Without a New Lab**
+7. **Paper K — AMRITA at Zero Cost**
+8. **Paper L — The Phi-Meter Without a New Instrument**
+9. **Paper R — Retrospective eta-Zero**
+10. **Paper T — Anti-Idolatry at Scale**
+11. **Paper U — The Practice Bridge**
 
 Why this order:
 

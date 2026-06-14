@@ -135,6 +135,29 @@ boundary condition, memory, measurement, control, and entropy export inside the
 physical substrate. `[S/I]` for the framework rule; `[C]` until a given domain
 passes the measurement test.
 
+### Macro-Constraint Test Algorithm
+
+Use this checklist before calling any higher-level object a cause:
+
+1. **Declare the lower law:** name `X`, `K_X`, and the public discipline that
+   owns the lower-level transition claim.
+2. **Declare the macro map:** name `π : X -> Y`, the macrostate `Y_t`, and the
+   fiber `C_y = {x in X : π(x) = y}`.
+3. **Declare the constraint gate:** name `G_C(x' | x,y)` and show
+   `support(K_X^C) ⊆ support(K_X)`.
+4. **Declare the cost ledger:** charge measurement, memory, control, erasure,
+   modeling, and entropy-export costs.
+5. **Run the witness:** accept the macro claim only if it improves effective
+   information, held-out prediction, or intervention selection after costs.
+6. **Name the kill condition:** say exactly what observation would demote the
+   macro claim back to shorthand.
+
+This is the public procedure behind the phrase "information topology." A
+macro-cause changes the reachable-future graph of lower-law-admissible
+trajectories; it does not add a forbidden micro-transition.
+
+See also: [PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md](../03_METHODOLOGY/02_THE_PAPERS/PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md).
+
 ---
 
 ## Bridge Law 3: Every Public Translation Must Use the Nearest Established Register First
@@ -210,6 +233,32 @@ So the public bridge disciplines are:
 - institutional economics
 
 This is why D5 is the most important near-term scientific bridge for the framework.
+
+### Physics to Biology Boundary
+
+The biology boundary is the first place where this bridge becomes unavoidable
+for public science. A living system is not chemistry plus a poetic label. It is
+a macro-constraint architecture: membranes, catalysts, metabolic cycles,
+homeostasis, repair, reproduction, and niche construction change which
+chemical trajectories remain reachable, reinforced, or suppressed.
+
+The lawful statement is:
+
+```text
+life-cause = chemistry constrained by viability-preserving organization
+```
+
+not:
+
+```text
+life-cause = a non-chemical force that breaks chemistry
+```
+
+The same form continues upward into cognition and agency. Nervous systems
+constrain motor and attentional policy; institutions constrain social action;
+present awareness constrains which modeled future receives `V`. The continuity
+is syntropic only when the constraint raises local order, coherence, viability,
+or effective information while paying its physical costs.
 
 ### Emergence Asymmetry
 

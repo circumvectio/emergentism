@@ -298,7 +298,7 @@ def check_public_reading_bundle():
             all_ok = False
 
     expected = {
-        "papers": 25,
+        "papers": 26,
         "canon": 8,
         "foundations": 12,
         "trinity": 42,

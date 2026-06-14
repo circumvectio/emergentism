@@ -362,7 +362,7 @@ WINGS = {
     "papers": {
         "source_dir": HANDOFF / "papers-public",
         "title": "The Papers",
-        "description": "Twenty-four tiered papers with falsifiers and source boundaries.",
+        "description": "Twenty-six tiered papers with falsifiers and source boundaries.",
         "active": "papers",
     },
     "canon": {

@@ -20,6 +20,7 @@ Menexus GmbH, 2026
 
 **Evidence Tier:** [S/I] — Structural heuristic mapped across historical topologies
 **Dependencies:** [PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md](PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md), [00_THE_ONTOLOGY_OF_BEING.md](../../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md)
+**Operational sequel:** [PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md](PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md)
 
 ---
 
@@ -98,6 +99,10 @@ syntropic when it increases local order, coherence, or effective information
 while paying its matter, memory, control, and entropy-export bill. It is not a
 claim of total entropy reversal, retrocausality, or a Standard Model fifth
 force.
+
+Paper X turns this section into the operational calculus: declare the lower
+law, macro map, constraint gate, cost ledger, causal-information witness, and
+kill condition before calling the macro layer a cause.
 
 ---
 
