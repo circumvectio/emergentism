@@ -45,7 +45,7 @@
   <article class="library-article">
     <p><strong>Project VMOSK-A:</strong> <code>01_EMERGENTISM/VMOSK_A.md</code><br>
     <strong>Evidence tier:</strong> <code>[S]</code> protocol inside the framework; <code>[I]</code> quantum-to-agency continuity thesis; <code>[C]</code> for any universal physics claim until domain tests earn their own tier.</p>
-    <p><strong>Claim Boundary:</strong> This preregistration tests macro-constraint causation only after declaring effective information, <code>EI_baseline</code>, full <code>Cost_C</code> including <code>Cost_entropy_export</code>, perturbability of <code>C</code>, and the kill condition. <code>W_C &gt; 0</code> is the witness; failure to beat fair baselines rewrites the claim instead of rephrasing the result as proof.</p>
+    <p><strong>Claim Boundary:</strong> This preregistration tests macro-constraint causation only after declaring effective information, <code>EI_baseline</code>, full <code>Cost_C</code> including <code>Cost_entropy_export</code>, perturbability of <code>C</code>, negative controls, and the kill condition. <code>W_C &gt; 0</code> is the witness; failure to beat fair baselines or failure to reject false-positive controls rewrites the claim instead of rephrasing the result as proof.</p>
 
     <h1 id="pre-registration-macro-constraint-causal-emergence-measurement-protocol">Pre-Registration — Macro-Constraint Causal-Emergence Measurement Protocol</h1>
 
@@ -84,6 +84,7 @@ D_KL(P_C(Y_{t+1} | do(a), Y_t) || P_notC(Y_{t+1} | do(a), Y_t)) &gt; epsilon
         <tr><td>Intervention</td><td>How <code>C</code> is held, removed, perturbed, or randomized.</td></tr>
         <tr><td>Cost ledger</td><td>Units for measurement, memory, control, erasure, modeling, and entropy export.</td></tr>
         <tr><td>Baselines</td><td>Micro model, fair coarse-graining baseline, null constraint, and domain-specific mechanism baseline.</td></tr>
+        <tr><td>Negative controls</td><td>A no-gate null, a high-cost or hidden-cost case, and a lower-law support-violation case scored by the same code path.</td></tr>
         <tr><td>Witness</td><td><code>W_C</code>, held-out loss, intervention utility, or all three.</td></tr>
         <tr><td>Kill condition</td><td>The exact observation that demotes the macro claim back to shorthand.</td></tr>
       </tbody>
@@ -110,7 +111,22 @@ D_KL(P_C(Y_{t+1} | do(a), Y_t) || P_notC(Y_{t+1} | do(a), Y_t)) &gt; epsilon
       </tbody>
     </table>
 
-    <h2 id="syntropy-ledger">6. Syntropy Ledger</h2>
+    <h2 id="negative-control-discipline">6. Negative-Control Discipline</h2>
+    <p>No macro-causal witness is publishable unless the same scoring path rejects the obvious false positives:</p>
+<pre><code class="language-text">no_gate:
+  G_C leaves K_X unchanged
+  required result: perturbation &lt;= epsilon or W_C &lt;= 0
+
+high_cost:
+  C changes the channel, but declared physical costs exceed the gain
+  required result: W_C &lt;= 0
+
+forbidden_support:
+  K_X^C assigns probability to a transition outside support(K_X)
+  required result: support violation detected</code></pre>
+    <p>These controls make the protocol hostile to its own preferred conclusion. A toy harness may earn <code>[B]</code> as executable proof-of-method when it passes the positive witness and rejects these controls. A domain claim remains <code>[C]</code> or domain-local until the frozen domain run carries equivalent controls.</p>
+
+    <h2 id="syntropy-ledger">7. Syntropy Ledger</h2>
 <pre><code class="language-text">SYN_C = DeltaOrder_C
       + DeltaCoherence_C
       + DeltaEffectiveInformation_C
@@ -127,7 +143,7 @@ at least one inequality is strict
 </code></pre>
     <p>If local order increases by exporting unreported disorder, extraction, memory cost, labor cost, control cost, or entropy elsewhere, the syntropy claim fails.</p>
 
-    <h2 id="kill-criteria">7. Kill Criteria</h2>
+    <h2 id="kill-criteria">8. Kill Criteria</h2>
     <ol>
       <li><code>support(K_X^C)</code> includes transitions outside <code>support(K_X)</code>.</li>
       <li><code>W_C &lt;= 0</code> under fair grain, fair intervention, and full cost accounting.</li>
@@ -138,6 +154,7 @@ at least one inequality is strict
       <li>A domain-specific lower mechanism predicts or controls better at lower cost.</li>
       <li>The protocol becomes so broad that every outcome can be re-described as a macro-constraint after the fact.</li>
       <li>The physics-to-biology boundary test fails repeatedly under honest implementations.</li>
+      <li>The same scoring path fails to reject no-gate, high-cost, or lower-law support-violation negative controls.</li>
     </ol>
 
     <h2 id="agent-execution-surface">Agent Execution Surface</h2>

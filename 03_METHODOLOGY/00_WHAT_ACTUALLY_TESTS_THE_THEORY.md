@@ -25,6 +25,11 @@ rosetta:
 **Depends on:** [GFS Wave 1 Results](00_GFS_WAVE1_RESULTS.md), [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)
 **See also:** [00_KNOWN_UNKNOWNS_PROGRAM.md](../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md), [00_RECONCILIATION_THEOREM_PACKET.md](../07_THEOLOGY/00_RECONCILIATION_THEOREM_PACKET.md), [00_RECONCILIATION_SCOPE_BOUNDARY_NOTE.md](../00_META/00_RECONCILIATION_SCOPE_BOUNDARY_NOTE.md), [16_OPERATOR_CONSISTENCY_AUDIT.md](../01_TELEOLOGY/02_THE_DERIVATION/16_OPERATOR_CONSISTENCY_AUDIT.md), [BREAKTHROUGH_REPLICATION_PACKET](../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/README.md)
 
+Retrieval handles: geometry flagship = Protocol R; emergence flagship =
+Macro-Constraint Physics-to-Biology; toy macro-constraint harness `[B]`;
+negative controls = no-gate, high-cost, forbidden-support; real domain run
+pending.
+
 ---
 
 ## The Core Claim
@@ -50,6 +55,13 @@ For hostile-formalization and scope-boundary discipline, use:
 - [16_OPERATOR_CONSISTENCY_AUDIT.md](../01_TELEOLOGY/02_THE_DERIVATION/16_OPERATOR_CONSISTENCY_AUDIT.md)
 
 **Rule:** the tests listed below can move one bridge, one operator claim, or one prediction tier at a time. They do not by themselves authorize a whole-core state victory statement.
+
+**Operational-emergence rule:** the macro-constraint program tests a different
+claim from the geometry flagship. Protocol R asks whether the `S²` reading has
+empirical bite. The physics-to-biology macro-constraint run asks whether
+higher-level organization can earn public causal standing without reductionist
+erasure or strong-emergence magic. A toy harness can be `[B]` proof-of-method;
+biology upgrades only by a frozen domain run.
 
 ---
 
@@ -97,14 +109,31 @@ These tests are informative. They are not decisive. They test operationalization
 - **Why it matters:** If the geometry is real, then systems aligned to it should perform better. This is a practical test with measurable outcomes.
 - **Status:** Specified. Reframed: POC implementable with existing open-source models at $0.
 
+**6. Macro-Constraint Physics-to-Biology Boundary**
+- **What it tests:** Whether a membrane, autocatalytic loop, metabolism-like
+  reactor, or homeostasis controller behaves as a costed macro-constraint over
+  lower-law chemistry.
+- **Why it matters:** This is the cleanest test of Emergentism's operational
+  escape from weak/strong emergence. The macro layer may not violate chemistry;
+  it must change lower-law-admissible trajectory topology and beat fair
+  baselines after measurement, memory, control, erasure, modeling, and
+  entropy-export costs.
+- **Status:** Toy vesicle harness executed with a `[B]` receipt for the method:
+  `W_C=0.425356`, `SYN_C=0.785347`, `KL=0.141286`, and no-gate, high-cost, and
+  forbidden-support negative controls reject. No biology-facing domain upgrade
+  exists yet.
+- **Evidence tier if confirmed in a real domain:** `[B]` for the frozen domain
+  receipt, potential `[A]` only if independently reproduced inside the relevant
+  discipline.
+
 ### Tier C: Tests That Would Falsify
 
-**6. Alternative Geometry Challenge**
+**7. Alternative Geometry Challenge**
 - **What would falsify:** Demonstrating that a non-S² substrate (hyperbolic, toroidal, higher-dimensional) reproduces the same cross-domain convergence with equal or greater parsimony.
 - **Why it matters:** The framework claims S² is *unique* given the older public ontological wager O1-O5. But if someone constructs a viable framework on a torus or H² that explains the same data, the uniqueness claim collapses.
 - **Status:** Open challenge. No takers yet.
 
-**7. Core Proof Error**
+**8. Core Proof Error**
 - **What would falsify:** Finding an uncorrectable error in Correspondence 21 (Triadic Stability), Demonstration 22 (Power Maximum), or Convergence 24 (Geometric Exclusion).
 - **Why it matters:** The formal system stands or falls on the mathematics.
 - **Status:** Open challenge. AI reviews have not found fatal errors.
@@ -116,14 +145,19 @@ These tests are informative. They are not decisive. They test operationalization
 If resources are limited, the framework should pursue tests in this order:
 
 1. **Protocol R** (most decisive for the geometry claim, moderate cost)
-2. **Cross-Scale Invariance** (testable now with existing data, low cost)
-3. **Power-Max independent replication** (needs external team, low cost to publish the paper)
-4. **AMRITA** (most expensive but most practical impact if successful)
-5. **GFS refinement** (only if a psychometrically validated phi/nu instrument is developed)
+2. **Macro-Constraint Physics-to-Biology Boundary** (first load-bearing emergence test without consciousness-language)
+3. **Cross-Scale Invariance** (testable now with existing data, low cost)
+4. **Power-Max independent replication** (needs external team, low cost to publish the paper)
+5. **AMRITA** (most expensive but most practical impact if successful)
+6. **GFS refinement** (only if a psychometrically validated phi/nu instrument is developed)
 
 ## The Current Flagship Path
 
-For public legitimacy, the framework now designates **Protocol R** as the first flagship empirical bridge.
+For public legitimacy, the framework now has two flagship hardening paths, and
+they must not be conflated.
+
+**Geometry flagship:** **Protocol R** is the first bridge for the manifold
+claim.
 
 Why:
 
@@ -134,6 +168,22 @@ Why:
 The flagship public route is therefore:
 
 **equation -> manifold -> reciprocal consequence -> Protocol R**
+
+**Emergence flagship:** **Macro-Constraint Physics-to-Biology** is the first
+bridge for the scientific emergence claim.
+
+Why:
+
+- it tests the causal-exclusion repair without invoking consciousness
+- it requires lower-law closure instead of strong-emergence magic
+- it charges information/control/entropy costs instead of treating syntropy as
+  free reversal
+- it now has an executable toy harness whose positive witness and negative
+  controls are both visible
+
+The emergence public route is therefore:
+
+**lower law -> macro map -> constraint gate -> cost ledger -> witness -> controls**
 
 GFS remains useful. It is not the first public validation path.
 
@@ -166,13 +216,21 @@ If the practitioner says "I found nothing" — that is data. It does not falsify
 | SPHERE Probe | Negative/informative | First public-model run did not confirm equatorial projection |
 | GFS Wave 1 | **Mixed** (signal in 30%, pooled interaction marginally negative) | **Survey-operationalized flourishing does not cleanly follow multiplicative model. Instrument validity in question.** |
 | Protocol R | Not yet run | **THE decisive geometric test** |
+| Macro-Constraint Physics-to-Biology | Toy vesicle harness `[B]` proof-of-method; real domain run not yet run | First load-bearing test of information-topology emergence; no biology upgrade yet |
 | AMRITA | Not yet built | **THE decisive practical test** |
 | Phi-meter | Built, not validated | Proxy measure for phi |
 | Cross-Scale | Not yet tested | Low-hanging fruit with existing bio data |
 
-**Two tests are internally supportive in framework-designed environments. One is negative. One is mixed. Two are pending (Protocol R, Phi-meter; AMRITA reframed — POC implementable at $0).**
+**Two tests are internally supportive in framework-designed environments. One
+toy macro-constraint harness is `[B]` proof-of-method only. One is negative. One
+is mixed. Protocol R, Phi-meter validation, AMRITA, cross-scale invariance, and
+the real physics-to-biology domain run remain pending.**
 
-The bridge is under construction. The foundation (mathematics) is solid. The superstructure (empirical validation) is incomplete. The GFS pier is wobbling but may be a measurement problem, not a structural problem. The decisive piers (Protocol R, AMRITA) are not yet built.
+The bridge is under construction. The foundation (mathematics) is solid. The
+superstructure (empirical validation) is incomplete. The GFS pier is wobbling
+but may be a measurement problem, not a structural problem. The decisive
+geometry pier (Protocol R) is not built; the decisive emergence pier now has a
+toy load test but not a real domain run.
 
 ---
 
@@ -184,7 +242,7 @@ The empirical programme operates on three distinct classes of test. They must no
 |---|---|---|---|---|
 | **Self-consistency** | Does the framework predict cooperative behaviour inside its own geometry? | [S] | Yes — the simulator encodes the Burrisphere by construction | Protocol R, Agent V×Φ |
 | **Framework-external referents** | Do established external results fit the framework's reading? | [A] for the result; [I] for the mapping | No — the experiment was not designed by the framework | MEGA-plate, iterated prisoner's dilemma, multi-level selection theory |
-| **Independent replication** | Do framework predictions hold on data the framework did not generate? | [B] → potential [A] | No — data and design are independent | AMRITA, Φ-meter, cross-scale invariance |
+| **Independent replication / domain run** | Do framework predictions hold on data, lower laws, or systems the framework did not generate? | [B] -> potential [A] | No — data and design are independent | AMRITA, Φ-meter, cross-scale invariance, real macro-constraint domain run |
 
 **The steelman concern (PAPER V §3.4):** Protocol R — the strongest remaining test — runs inside a framework-designed simulator. A positive result confirms self-consistency, not worldly correspondence. This concern is accepted and documented here.
 

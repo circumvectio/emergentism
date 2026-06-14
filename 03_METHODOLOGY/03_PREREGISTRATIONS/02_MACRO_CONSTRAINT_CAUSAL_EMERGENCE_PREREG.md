@@ -35,9 +35,10 @@ domain tests earn their own tier.
 
 **Claim Boundary:** This preregistration tests macro-constraint causation only
 after declaring effective information, `EI_baseline`, full `Cost_C` including
-`Cost_entropy_export`, perturbability of `C`, and the kill condition. `W_C > 0`
-is the witness; failure to beat fair baselines rewrites the claim instead of
-rephrasing the result as proof.
+`Cost_entropy_export`, perturbability of `C`, negative controls, and the kill
+condition. `W_C > 0` is the witness; failure to beat fair baselines or failure
+to reject false-positive controls rewrites the claim instead of rephrasing the
+result as proof.
 
 **Guard:** This protocol does not license strong-emergence magic. A
 macro-constraint may change which lower-law-admissible trajectories are
@@ -114,6 +115,7 @@ Every domain run must freeze these objects before results are inspected:
 | Intervention | How `C` is held, removed, perturbed, or randomized without smuggling in a forbidden transition. |
 | Cost ledger | Units for measurement, memory, control, erasure, modeling, and entropy export. |
 | Baselines | Micro model, fair coarse-graining baseline, null constraint, and domain-specific mechanism baseline. |
+| Negative controls | A no-gate null, a high-cost or hidden-cost case, and a lower-law support-violation case scored by the same code path. |
 | Witness | `W_C`, held-out loss, intervention utility, or all three. |
 | Kill condition | The exact observation that demotes the macro claim back to shorthand. |
 
@@ -160,7 +162,8 @@ The minimal intervention design is:
 3. Hold, remove, perturb, or randomize `C`.
 4. Measure the changed trajectory distribution over `X` and `Y`.
 5. Compute the causal-information witness and the cost ledger.
-6. Compare against cost-matched micro, coarse-grained, null, and
+6. Run negative controls through the same scoring path.
+7. Compare against cost-matched micro, coarse-grained, null, and
    domain-specific baselines.
 
 The intervention can be experimental, simulation-based, historical, or
@@ -212,7 +215,33 @@ force across all domains.
 
 ---
 
-## 7. Syntropy Ledger
+## 7. Negative-Control Discipline
+
+No macro-causal witness is publishable unless the same scoring path rejects
+the obvious false positives:
+
+```text
+no_gate:
+  G_C leaves K_X unchanged
+  required result: perturbation <= epsilon or W_C <= 0
+
+high_cost:
+  C changes the channel, but declared physical costs exceed the gain
+  required result: W_C <= 0
+
+forbidden_support:
+  K_X^C assigns probability to a transition outside support(K_X)
+  required result: support violation detected
+```
+
+These controls make the protocol hostile to its own preferred conclusion. A
+toy harness may earn `[B]` as executable proof-of-method when it passes the
+positive witness and rejects these controls. A domain claim remains `[C]` or
+domain-local until the frozen domain run carries equivalent controls.
+
+---
+
+## 8. Syntropy Ledger
 
 For each candidate constraint:
 
@@ -241,7 +270,7 @@ cost, labor cost, control cost, or entropy elsewhere, the syntropy claim fails.
 
 ---
 
-## 8. Kill Criteria
+## 9. Kill Criteria
 
 The macro-constraint claim fails or contracts if any of these occur:
 
@@ -259,6 +288,8 @@ The macro-constraint claim fails or contracts if any of these occur:
    macro-constraint after the fact.
 9. The physics-to-biology boundary test fails repeatedly under honest
    implementations.
+10. The same scoring path fails to reject no-gate, high-cost, or lower-law
+    support-violation negative controls.
 
 **What dies if killed:** the information-topology formulation as a scientific
 calculus for causal emergence in the tested domain.
@@ -276,6 +307,7 @@ violate lower-level laws; the specific macro-constraint witness can be rewritten
 - [ ] Intervention design fixed.
 - [ ] Cost units fixed.
 - [ ] Micro, coarse-grain, null, and domain-specific baselines fixed.
+- [ ] Negative controls fixed: no-gate, high-cost/hidden-cost, support violation.
 - [ ] Witness metric fixed: `W_C`, held-out loss, intervention utility, or all.
 - [ ] Kill criteria fixed.
 - [ ] Repository tag `prereg/macro-constraint-causal-emergence-v1` recorded.

@@ -27,7 +27,7 @@ rosetta:
 
 **Claim Boundary:** Bridge Law 2 becomes scientific only as the macro-constraint
 test: lower-law closure, fair baselines, effective information, a physical cost
-ledger including `Cost_entropy_export`, perturbable `C`, and
+ledger including `Cost_entropy_export`, perturbable `C`, negative controls, and
 `W_C = EI_macro - EI_baseline - Cost_C > 0`. Without those handles, a higher
 level may remain useful translation, but it is not yet a public causal witness.
 
@@ -168,7 +168,9 @@ Use this checklist before calling any higher-level object a cause:
    modeling, and entropy-export costs.
 5. **Run the witness:** accept the macro claim only if it improves effective
    information, held-out prediction, or intervention selection after costs.
-6. **Name the kill condition:** say exactly what observation would demote the
+6. **Reject false positives:** run no-gate, high-cost, and lower-law
+   support-violation controls through the same scoring path.
+7. **Name the kill condition:** say exactly what observation would demote the
    macro claim back to shorthand.
 
 This is the public procedure behind the phrase "information topology." A

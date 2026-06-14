@@ -48,7 +48,8 @@
     <strong>Evidence tier:</strong> <code>[C]</code> proposed biology-facing domain run; <code>[S]</code> inherited macro-constraint protocol; <code>[B]</code> only for the deterministic toy model receipt in the companion harness.</p>
     <p><strong>Claim Boundary:</strong> This file does not prove life, consciousness, syntropy, or downward causation. It converts the first clean boundary test into freezeable objects: lower law, macro map, constraint gate, fair baselines, physical cost ledger, perturbation, witness, and kill condition.</p>
     <p><strong>Freeze handle:</strong> <code>macro-constraint-freeze-v1</code> · <code>report_sha256</code> · <code>FREEZE_MANIFEST.json</code>.</p>
-    <p><strong>Executable harness:</strong> The source folder <code>physics_to_biology_harness/</code> now contains a deterministic toy vesicle model, unit tests, a report, and <code>FREEZE_MANIFEST.json</code> with <code>manifest_version=macro-constraint-freeze-v1</code> and <code>report_sha256</code>. Its current receipt is <code>[B]</code> only for that toy model: <code>W_C=0.425356</code>, <code>SYN_C=0.785347</code>, <code>KL=0.141286</code>. Biology remains <code>[C]</code> until a frozen domain run exists.</p>
+    <p><strong>Retrieval handles:</strong> Macro-Constraint Physics-to-Biology; toy macro-constraint harness <code>[B]</code>; negative controls reject no-gate, high-cost, and forbidden-support; real domain run pending.</p>
+    <p><strong>Executable harness:</strong> The source folder <code>physics_to_biology_harness/</code> now contains a deterministic toy vesicle model, unit tests, a report, and <code>FREEZE_MANIFEST.json</code> with <code>manifest_version=macro-constraint-freeze-v1</code> and <code>report_sha256</code>. Its current receipt is <code>[B]</code> only for that toy model: <code>W_C=0.425356</code>, <code>SYN_C=0.785347</code>, <code>KL=0.141286</code>, with negative controls rejecting no-gate, high-cost, and forbidden-support false positives. Biology remains <code>[C]</code> until a frozen domain run exists.</p>
 
     <h1 id="physics-to-biology-macro-constraint-run-sheet">Physics-to-Biology Macro-Constraint Run Sheet</h1>
     <p>The active worldview goal requires Emergentism to escape both weak-emergence erasure and strong-emergence magic. This run sheet starts with chemistry-to-biology because it can be tested without invoking consciousness, social meaning, or D6 closure.</p>
@@ -138,6 +139,13 @@ report_sha256    = recorded in source FREEZE_MANIFEST.json
 file_hashes      = README.md, test_vesicle_macro_constraint.py, vesicle_macro_constraint.py
 frozen_objects   = X, K_X, pi, Y, G_C, Cost_C, epsilon</code></pre>
     <p>The freeze manifest is the receipt for this toy run only. A real biology-facing run needs its own companion result file and manifest.</p>
+
+    <h2 id="negative-controls">Negative Controls</h2>
+<pre><code class="language-text">no_gate        = rejected; KL=0.000000, W_C=-0.060000
+high_cost      = rejected; EI gain=0.485356, W_C=-0.564644
+forbidden_edge = rejected; support violation detected
+all_controls_reject = true</code></pre>
+    <p>The toy witness is useful only because the same scoring path rejects these false positives. A future domain run must carry equivalent controls.</p>
   </article>
 
   <aside class="library-meta">

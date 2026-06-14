@@ -25,8 +25,10 @@ Menexus GmbH, 2026
 witness, not a new force: a macro layer earns public causal standing only when
 `W_C = EI_macro - EI_baseline - Cost_C > 0` against fair micro, coarse-null, and
 domain baselines, with `Cost_C` including `Cost_entropy_export`, and only when
-`C` is perturbable. The cross-scale continuity claim remains `[I]`; universal
-physics remains `[C]` until domain tests earn their own tier.
+`C` is perturbable. The same scoring path must also reject no-gate, high-cost,
+and lower-law support-violation controls. The cross-scale continuity claim
+remains `[I]`; universal physics remains `[C]` until domain tests earn their
+own tier.
 
 ---
 
@@ -198,6 +200,33 @@ and preregistered witness.
 
 ---
 
+## 3b. Negative-Control Corollary
+
+A positive `W_C` is not sufficient if the scoring path is credulous. The same
+pipeline that accepts a candidate macro-constraint must reject three controls:
+
+```text
+no_gate:
+  C does not change K_X
+  required failure: perturbation <= epsilon or W_C <= 0
+
+high_cost:
+  C changes the channel but cost accounting exceeds the gain
+  required failure: W_C <= 0
+
+forbidden_support:
+  K_X^C assigns probability outside support(K_X)
+  required failure: support-subset violation
+```
+
+The first control blocks ornamental coarse-graining. The second blocks hidden
+entropy, memory, measurement, or control subsidies. The third blocks strong
+emergence magic. A toy harness that passes the witness and rejects these
+controls earns `[B]` only as proof that the method was executed; it does not
+upgrade biology or universal emergence.
+
+---
+
 ## 4. The Causal Exclusion Repair
 
 The causal exclusion problem says: if the microstate fully determines the next
@@ -286,6 +315,8 @@ This paper contracts or fails if:
    costs.
 6. A domain-specific mechanism explains the target phenomenon with lower loss
    and lower cost than the macro-constraint model.
+7. The scoring pipeline cannot reject no-gate, high-cost, or lower-law
+   support-violation controls.
 
 ---
 

@@ -1,6 +1,6 @@
 {
  "generated": "build_atlas_index.py",
- "total": 267,
+ "total": 270,
  "tree": [
   {
    "key": "unfolding",
@@ -78,7 +78,7 @@
   },
   {
    "key": "papers",
-   "label": "Papers (26)",
+   "label": "Papers (27)",
    "pages": [
     {
      "href": "/papers/",
@@ -183,6 +183,10 @@
     {
      "href": "/papers/paper-w-present-awareness-as-fulcrum/",
      "title": "PAPER W: Present Awareness As Fulcrum"
+    },
+    {
+     "href": "/papers/paper-x-information-topology-and-macro-constraints/",
+     "title": "PAPER X: INFORMATION TOPOLOGY AND MACRO-CONSTRAINTS"
     }
    ]
   },
@@ -1084,7 +1088,7 @@
   },
   {
    "key": "method",
-   "label": "Method (11)",
+   "label": "Method (13)",
    "pages": [
     {
      "href": "/method/",
@@ -1129,6 +1133,14 @@
     {
      "href": "/method/01-the-anumana-audit-protocol/",
      "title": "The Inferential Logic Audit Protocol"
+    },
+    {
+     "href": "/method/02-macro-constraint-causal-emergence-prereg/",
+     "title": "Macro-Constraint Causal-Emergence Preregistration"
+    },
+    {
+     "href": "/method/03-physics-to-biology-macro-constraint-run-sheet/",
+     "title": "Physics-to-Biology Macro-Constraint Run Sheet"
     }
    ]
   },

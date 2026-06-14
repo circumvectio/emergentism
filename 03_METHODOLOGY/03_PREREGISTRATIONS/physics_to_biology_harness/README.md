@@ -38,6 +38,15 @@ SYN_C = 0.785347
 KL    = 0.141286
 ```
 
+Negative controls:
+
+```text
+no_gate        = rejected; KL=0.000000, W_C=-0.060000
+high_cost      = rejected; EI gain=0.485356, W_C=-0.564644
+forbidden_edge = rejected; support violation detected
+all_controls_reject = true
+```
+
 Current freeze manifest:
 
 ```text

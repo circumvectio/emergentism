@@ -16,7 +16,7 @@ from __future__ import annotations
 import json
 import math
 import hashlib
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, replace
 from pathlib import Path
 from typing import Iterable
 
@@ -184,9 +184,19 @@ def cost_ledger(config: VesicleConfig) -> dict[str, float]:
     }
 
 
-def macro_constraint_report(config: VesicleConfig = DEFAULT_CONFIG) -> dict:
-    lower = build_lower_kernel(config)
-    constrained = build_constrained_kernel(config, lower)
+def build_null_gate_kernel(
+    config: VesicleConfig, lower_kernel: list[list[float]] | None = None
+) -> list[list[float]]:
+    """Return the no-constraint control: K_X unchanged by any macro gate."""
+    lower = lower_kernel if lower_kernel is not None else build_lower_kernel(config)
+    return [row[:] for row in lower]
+
+
+def witness_summary(
+    config: VesicleConfig,
+    lower: list[list[float]],
+    constrained: list[list[float]],
+) -> dict:
     null_channel = macro_channel(config, lower)
     constrained_channel = macro_channel(config, constrained)
 
@@ -198,6 +208,8 @@ def macro_constraint_report(config: VesicleConfig = DEFAULT_CONFIG) -> dict:
     costs = cost_ledger(config)
     cost_c = sum(costs.values())
     w_c = ei_macro - ei_baseline - cost_c
+    perturbation_kl = average_kl_bits(constrained_channel, null_channel)
+    support_ok = support_subset(lower, constrained, config.support_epsilon)
 
     viable_index = MACRO_STATES.index("viable")
     diagonal_constrained = sum(
@@ -223,19 +235,13 @@ def macro_constraint_report(config: VesicleConfig = DEFAULT_CONFIG) -> dict:
     )
 
     return {
-        "model": "minimal two-compartment vesicle diffusion with membrane gate",
-        "evidence_tier": "[B] toy-model receipt only; [C] for biology",
-        "claim_boundary": (
-            "This is an executable proof-of-method for the macro-constraint "
-            "protocol, not biological evidence and not a claim that life has "
-            "been explained."
+        "support_subset": support_ok,
+        "perturbation_kl": perturbation_kl,
+        "passes_macro_constraint": (
+            support_ok
+            and perturbation_kl > config.epsilon
+            and w_c > 0.0
         ),
-        "config": asdict(config),
-        "macro_states": list(MACRO_STATES),
-        "closure": "support(K_X^C) subset support(K_X)",
-        "support_subset": support_subset(lower, constrained, config.support_epsilon),
-        "epsilon": config.epsilon,
-        "perturbation_kl": average_kl_bits(constrained_channel, null_channel),
         "channels": {
             "null_no_membrane": null_channel,
             "constrained_membrane": constrained_channel,
@@ -257,6 +263,91 @@ def macro_constraint_report(config: VesicleConfig = DEFAULT_CONFIG) -> dict:
             "delta_effective_information": delta_effective_information,
             "syn_c": syn_c,
         },
+    }
+
+
+def format_control_float(value: float) -> str:
+    return f"{value:.6f}"
+
+
+def negative_control_suite(config: VesicleConfig = DEFAULT_CONFIG) -> dict:
+    lower = build_lower_kernel(config)
+    null_gate = build_null_gate_kernel(config, lower)
+    no_gate_witness = witness_summary(config, lower, null_gate)
+
+    high_cost_config = replace(config, cost_model=1.0)
+    high_cost_lower = build_lower_kernel(high_cost_config)
+    high_cost_constrained = build_constrained_kernel(high_cost_config, high_cost_lower)
+    high_cost_witness = witness_summary(
+        high_cost_config,
+        high_cost_lower,
+        high_cost_constrained,
+    )
+
+    forbidden_lower = [[1.0, 0.0], [0.0, 1.0]]
+    forbidden_constrained = [[0.5, 0.5], [0.0, 1.0]]
+    forbidden_detected = not support_subset(
+        forbidden_lower,
+        forbidden_constrained,
+        config.support_epsilon,
+    )
+
+    no_gate_passes = no_gate_witness["passes_macro_constraint"]
+    high_cost_passes = high_cost_witness["passes_macro_constraint"]
+
+    return {
+        "no_gate": {
+            "description": "C is identical to K_X; perturbability and surplus must fail.",
+            "passes_macro_constraint": no_gate_passes,
+            "perturbation_kl": format_control_float(no_gate_witness["perturbation_kl"]),
+            "w_c": format_control_float(no_gate_witness["witness"]["w_c"]),
+        },
+        "high_cost": {
+            "description": "C changes the macro channel, but the declared cost ledger overwhelms surplus.",
+            "passes_macro_constraint": high_cost_passes,
+            "ei_macro_minus_baseline": format_control_float(
+                high_cost_witness["witness"]["ei_macro"]
+                - high_cost_witness["witness"]["ei_baseline"]
+            ),
+            "w_c": format_control_float(high_cost_witness["witness"]["w_c"]),
+        },
+        "forbidden_support": {
+            "description": "Artificial constrained row assigns probability to a lower-law-forbidden transition.",
+            "violation_detected": forbidden_detected,
+        },
+        "all_controls_reject": (
+            not no_gate_passes
+            and not high_cost_passes
+            and forbidden_detected
+        ),
+    }
+
+
+def macro_constraint_report(config: VesicleConfig = DEFAULT_CONFIG) -> dict:
+    lower = build_lower_kernel(config)
+    constrained = build_constrained_kernel(config, lower)
+    summary = witness_summary(config, lower, constrained)
+
+    return {
+        "model": "minimal two-compartment vesicle diffusion with membrane gate",
+        "evidence_tier": "[B] toy-model receipt only; [C] for biology",
+        "claim_boundary": (
+            "This is an executable proof-of-method for the macro-constraint "
+            "protocol, not biological evidence and not a claim that life has "
+            "been explained."
+        ),
+        "config": asdict(config),
+        "macro_states": list(MACRO_STATES),
+        "closure": "support(K_X^C) subset support(K_X)",
+        "support_subset": summary["support_subset"],
+        "epsilon": config.epsilon,
+        "perturbation_kl": summary["perturbation_kl"],
+        "passes_macro_constraint": summary["passes_macro_constraint"],
+        "channels": summary["channels"],
+        "cost_ledger": summary["cost_ledger"],
+        "witness": summary["witness"],
+        "syntropy": summary["syntropy"],
+        "negative_controls": negative_control_suite(config),
         "public_interpretation": (
             "If this were a frozen domain run, the only safe wording would be: "
             "in this toy model and at this grain, the declared organization "
@@ -318,6 +409,7 @@ def freeze_manifest(
             "perturbation_kl": f"{report['perturbation_kl']:.6f}",
             "support_subset": report["support_subset"],
         },
+        "negative_controls": report["negative_controls"],
     }
 
 

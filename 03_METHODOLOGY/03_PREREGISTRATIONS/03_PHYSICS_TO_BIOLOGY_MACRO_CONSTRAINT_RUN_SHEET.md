@@ -43,7 +43,10 @@ deterministic toy vesicle model and unit tests. Its current report is a `[B]`
 receipt only for that toy model (`W_C=0.425356`, `SYN_C=0.785347`,
 `KL=0.141286`); biological claims remain `[C]` until a frozen domain run is
 executed. The same command writes `FREEZE_MANIFEST.json`, which records the
-report hash, file hashes, commands, and frozen objects for the toy run.
+report hash, file hashes, commands, frozen objects, and negative controls for
+the toy run. The controls reject the no-gate null (`KL=0.000000`,
+`W_C=-0.060000`), the high-cost case (`W_C=-0.564644` despite information
+gain), and an artificial lower-law support violation.
 
 ---
 
@@ -187,7 +190,8 @@ Do not score any result until this block is complete.
 For the toy harness, the freeze block is represented by
 `physics_to_biology_harness/FREEZE_MANIFEST.json`. For any real biology-facing
 run, create a new companion result file and manifest rather than overwriting
-the toy receipt.
+the toy receipt. A frozen run is not adequate unless its negative controls
+reject null, cost-hiding, and support-violation false positives.
 
 ---
 

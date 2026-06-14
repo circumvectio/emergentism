@@ -70,6 +70,26 @@
     "high"
   ],
   "model": "minimal two-compartment vesicle diffusion with membrane gate",
+  "negative_controls": {
+    "all_controls_reject": true,
+    "forbidden_support": {
+      "description": "Artificial constrained row assigns probability to a lower-law-forbidden transition.",
+      "violation_detected": true
+    },
+    "high_cost": {
+      "description": "C changes the macro channel, but the declared cost ledger overwhelms surplus.",
+      "ei_macro_minus_baseline": "0.485356",
+      "passes_macro_constraint": false,
+      "w_c": "-0.564644"
+    },
+    "no_gate": {
+      "description": "C is identical to K_X; perturbability and surplus must fail.",
+      "passes_macro_constraint": false,
+      "perturbation_kl": "0.000000",
+      "w_c": "-0.060000"
+    }
+  },
+  "passes_macro_constraint": true,
   "perturbation_kl": 0.14128637478789777,
   "public_interpretation": "If this were a frozen domain run, the only safe wording would be: in this toy model and at this grain, the declared organization behaved as a costed macro-constraint.",
   "support_subset": true,
