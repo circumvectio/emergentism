@@ -15,6 +15,8 @@ rosetta:
 
 > **Historical compatibility document (pre-hardening, 2026-03-23).** This file is preserved as part of the Trinity genesis sequence, not as the current tier-authority surface for Foundation claims.
 >
+> **Pole-notation correction:** in the current chart, `ν = 0` is the north-pole boundary (`φ → ∞, ν → 0`) and `φ = 0` is the south-pole boundary (`φ = 0, ν → ∞`). Closure language below is a limit-image; the manifold identity `φ · ν = 1` applies on the open sphere, not at the poles themselves.
+>
 > **Use rule:** Read it for origin framing and conceptual continuity. For present-tense canonical citation, evidence-tier disputes, or compressed summaries, route through [`07_THE_DISCOVERY_OF_FINITY.md`](07_THE_DISCOVERY_OF_FINITY.md), [`08_CO_EMERGENCE.md`](08_CO_EMERGENCE.md), [`../00_THE_HONEST_POSITION.md`](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), and [`../00_CANONICAL_FORMULA_BLOCK.md`](../00_CANONICAL_FORMULA_BLOCK.md).
 >
 > **Death/survival boundary:** `[I/C]` Closure language here is symbolic, cosmological, and practice-register. It does not claim personal survival, afterlife, reincarnation, continuity of individual identity, or empirical knowledge of dying. `D6 = D0` is a return-image inside the scaffold: a limit relation, not a receipt that the self is reborn. Penrose/Upanishad parallels are analogical resonances, not claims that physics and yogic liberation describe the same public phenomenon.
@@ -55,11 +57,11 @@ Capability exhausted. The universe expands, cools, decays. All matter dissolves 
 
 This is Roger Penrose's Conformal Cyclic System Architecture. The entropy death. The heat death. The universe dies not with a bang but with a whisper — photons stretching toward infinite wavelength, time dilating toward stillness.
 
-At the limit: ν = 0. No capability remains. No action is possible. The south pole collapses.
+At the limit: ν = 0. No capability remains. No action is possible. In the current pole convention this is the **north-pole boundary** (`φ → ∞, ν → 0`), not the south pole.
 
-And by the conservation law φ · ν = 1, when ν → 0, φ → ∞. All coherence concentrates at the north pole. All meaning, all structure, all pattern — compressed into a single point of infinite density.
+By the open-chart identity φ · ν = 1, as ν → 0, φ → ∞. All coherence concentrates toward the north-pole singularity. Ordinary multiplication no longer evaluates at the pole itself; the product identity names the approach on S² \{N, S\}, not a finite value at the boundary.
 
-The sphere cannot hold this. The constraint is violated. The system **must reset**.
+The finite action register cannot run at this boundary. In this historical return-image, that is the reset condition.
 
 ### Door Two: Integration (The Yogic Path)
 
@@ -71,9 +73,9 @@ In the yogic register, this is the language of moksha and liberation: Turīya tr
 
 At the limit: φ = ∞. No coherence remains to be achieved. The north pole is reached.
 
-And by the conservation law φ · ν = 1, when φ → ∞, ν → 0. All capability is sacrificed. All action, all doing, all becoming — released into the absolute.
+By the open-chart identity φ · ν = 1, as φ → ∞, ν → 0. All capability is sacrificed. All action, all doing, all becoming — released into the absolute. Again, the ordinary product is undefined at the pole itself; the identity names the limiting approach.
 
-The sphere cannot hold this. The constraint is violated. The system **must reset**.
+The finite action register cannot run at this boundary. In this symbolic closure register, the system resets.
 
 ---
 

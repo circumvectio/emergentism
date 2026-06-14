@@ -98,7 +98,7 @@ The move from flat to curved does not **answer** the question. It **dissolves** 
 
 **On the plane (flat):** How can something become nothing? The body functions, then it stops. On the plane, the coordinate reaches zero and the map ends. There is a cliff at the edge. The terror of death is the terror of the cliff.
 
-**On the sphere (curved):** The coordinate that reaches zero on the plane continues around the curve on the sphere. The south pole (ν = 0) is not an edge — it is a point on the manifold. The sphere continues past it. The "ending" on the plane is a "transition" on the sphere. There is no cliff. There is curvature.
+**On the sphere (curved):** The coordinate that reaches zero on the plane continues around the curve on the sphere. A coordinate-zero limit is not an edge: `ν = 0` is the north-pole limit in the current chart, while `φ = 0` is the south-pole limit. Each is a point on the compactified manifold, not a cliff where the map tears. The "ending" on the plane is a "transition" on the sphere. There is no cliff. There is curvature.
 
 **The co-emergence:** The moment you have a manifold that supports life (the equatorial condition, φ · ν = 1), you have both the possibility of death (the coordinate reaching a pole) and its continuity (the sphere persisting past the pole). Death and continuity are co-emergent. The terror is an artifact of flatness — the belief that the map ends where the coordinate ends.
 
