@@ -914,6 +914,72 @@ function createXYTickedRing(radius, color = 0xffffff, opacity = 0.32, tickCount 
   return group;
 }
 
+function createStripChart(origin, width = 2.2, height = 0.52, color = 0x42a5f5, max = 96) {
+  const group = new THREE.Group();
+  const frameMaterial = new THREE.LineBasicMaterial({
+    color: 0x6d7480,
+    transparent: true,
+    opacity: 0.24
+  });
+  const frame = new THREE.LineSegments(
+    new THREE.BufferGeometry().setFromPoints([
+      new THREE.Vector3(origin.x, origin.y, origin.z),
+      new THREE.Vector3(origin.x + width, origin.y, origin.z),
+      new THREE.Vector3(origin.x, origin.y + height, origin.z),
+      new THREE.Vector3(origin.x + width, origin.y + height, origin.z),
+      new THREE.Vector3(origin.x, origin.y, origin.z),
+      new THREE.Vector3(origin.x, origin.y + height, origin.z),
+      new THREE.Vector3(origin.x + width, origin.y, origin.z),
+      new THREE.Vector3(origin.x + width, origin.y + height, origin.z),
+      new THREE.Vector3(origin.x, origin.y + height * 0.5, origin.z),
+      new THREE.Vector3(origin.x + width, origin.y + height * 0.5, origin.z)
+    ]),
+    frameMaterial
+  );
+  const trace = line([
+    new THREE.Vector3(origin.x, origin.y, origin.z + 0.012),
+    new THREE.Vector3(origin.x + 0.001, origin.y, origin.z + 0.012)
+  ], color, 0.58);
+  const cursor = line([
+    new THREE.Vector3(origin.x, origin.y, origin.z + 0.018),
+    new THREE.Vector3(origin.x, origin.y + height, origin.z + 0.018)
+  ], 0xf3f4f6, 0.24);
+  group.add(frame, trace, cursor);
+  return { group, origin, width, height, max, samples: [], trace, cursor };
+}
+
+function clearStripChart(chart) {
+  if (!chart) return;
+  chart.samples.length = 0;
+  chart.trace.geometry.setFromPoints([
+    new THREE.Vector3(chart.origin.x, chart.origin.y, chart.origin.z + 0.012),
+    new THREE.Vector3(chart.origin.x + 0.001, chart.origin.y, chart.origin.z + 0.012)
+  ]);
+}
+
+function updateStripChart(chart, value, min = 0, max = 1, sampled = false) {
+  if (!chart) return;
+  const span = Math.max(max - min, 1e-9);
+  const normalized = clamp01((value - min) / span);
+  if (sampled || chart.samples.length === 0) {
+    chart.samples.push(normalized);
+    if (chart.samples.length > chart.max) chart.samples.shift();
+  }
+  const samples = chart.samples.length > 1 ? chart.samples : [normalized, normalized];
+  const denom = Math.max(samples.length - 1, 1);
+  const points = samples.map((sample, index) => new THREE.Vector3(
+    chart.origin.x + (index / denom) * chart.width,
+    chart.origin.y + sample * chart.height,
+    chart.origin.z + 0.012
+  ));
+  chart.trace.geometry.setFromPoints(points);
+  const x = chart.origin.x + chart.width;
+  chart.cursor.geometry.setFromPoints([
+    new THREE.Vector3(x, chart.origin.y, chart.origin.z + 0.018),
+    new THREE.Vector3(x, chart.origin.y + chart.height, chart.origin.z + 0.018)
+  ]);
+}
+
 function addReferenceFrame(scene) {
   const frame = new THREE.Group();
   const base = 0x7a7a7a;
@@ -1102,11 +1168,15 @@ function buildScene(mode, scene) {
     const invPt = makeMarker(new THREE.Vector3(-SC, 0, 0), 0xffffff, 0.075);  // 1/x — the mirror
     const ePt = makeMarker(new THREE.Vector3(SC, 0.17, 0), 0xb8b8b8, 0.05);   // E(x) on the well
     const arc = line([new THREE.Vector3(0, 0, 0)], 0xffeb3b, 0.55);           // the inversion fold
-    root.add(xPt); root.add(invPt); root.add(ePt); root.add(arc);
+    const balanceChart = createStripChart(new THREE.Vector3(-1.42, -1.12, 0.04), 2.84, 0.46, 0x42a5f5, 120);
+    root.add(xPt); root.add(invPt); root.add(ePt); root.add(arc, balanceChart.group);
+    if (visual) {
+      visual.addEventListener("instrument:zero", () => clearStripChart(balanceChart));
+    }
 
     const readout = makeReadout();
     if (readout) readout.style.whiteSpace = "pre-line";
-    dyn.push(function (t) {
+    dyn.push(function (t, sampled) {
       const logPhase = phase01(t, 0.035);
       const s = -2.9 + smooth01(sweep01(t, 0.035)) * 5.8; // sweep in log coordinates
       const x = Math.pow(2, s);
@@ -1126,9 +1196,11 @@ function buildScene(mode, scene) {
       }
       const u = (x - 1) / (x + 1);
       const E = Math.pow(Math.log(x), 2);
+      const balance = 1 / Math.cosh(Math.log(x));
       const reciprocalResidual = Math.abs(x * (1 / x) - 1);
+      updateStripChart(balanceChart, balance, 0, 1, sampled);
       setInstrumentMetric(
-        "s " + s.toFixed(2) + " · x " + x.toFixed(2),
+        "s " + s.toFixed(2) + " · B " + balance.toFixed(3),
         "x·1/x=1",
         "phase " + logPhase.toFixed(2),
         "σ x·1/x " + reciprocalResidual.toExponential(1)
@@ -1136,7 +1208,8 @@ function buildScene(mode, scene) {
       if (readout) readout.textContent =
         "SUDA'S LINE · in log coordinates the ONE is the centre\n" +
         "x = " + x.toFixed(2) + "   1/x = " + (1 / x).toFixed(2) + "   x · 1/x = 1\n" +
-        "s = log₂ x = " + s.toFixed(2) + "   mirror s ↦ −s   E = (ln x)² = " + E.toFixed(2) + " (min at 1)\n" +
+        "s = log₂ x = " + s.toFixed(2) + "   B = sech(ln x) = " + balance.toFixed(3) + "   E = (ln x)² = " + E.toFixed(2) + "\n" +
+        "strip chart: sampled B history · σ(x·1/x−1) = " + reciprocalResidual.toExponential(1) + "\n" +
         "three charts · one centre:  x   ·   s = log x   ·   u = (x−1)/(x+1) = " + u.toFixed(2);
     });
   }
@@ -1236,17 +1309,21 @@ function buildScene(mode, scene) {
     const landingSamples = [];
     const surfaceDots = createPointTrace(150, 0xffffff, 0.42, 0.024);
     const landingDots = createPointTrace(150, 0x42a5f5, 0.48, 0.026);
+    const balanceChart = createStripChart(new THREE.Vector3(-1.52, -1.54, 0.06), 3.04, 0.48, 0x42a5f5, 120);
     if (visual) {
       visual.addEventListener("instrument:zero", () => {
         surfaceSamples.length = 0;
         landingSamples.length = 0;
+        clearStripChart(balanceChart);
       });
     }
-    root.add(surfaceTrace, landingTrace, surfaceDots.mesh, landingDots.mesh, projectionRay, pMarker, landMarker);
+    root.add(surfaceTrace, landingTrace, surfaceDots.mesh, landingDots.mesh, projectionRay, pMarker, landMarker, balanceChart.group);
     const readout = makeReadout();
     if (readout) {
       readout.style.left = "auto";
       readout.style.right = "16px";
+      readout.style.top = "92px";
+      readout.style.bottom = "auto";
       readout.style.maxWidth = "min(430px, 46%)";
       readout.classList.add("instrument-readout");
     }
@@ -1269,18 +1346,23 @@ function buildScene(mode, scene) {
       updatePointTrace(landingDots, landingSamples);
       const phi = 1 / Math.tan(th / 2);
       const nu = Math.tan(th / 2);
+      const balance = Math.sin(th);
+      const landingRadius = Math.abs(land.x);
+      const expectedLandingRadius = 2 * r * phi;
       const reciprocalResidual = Math.abs(phi * nu - 1);
+      const landingResidual = Math.abs(landingRadius - expectedLandingRadius);
+      updateStripChart(balanceChart, balance, 0, 1, sampled);
       setInstrumentMetric(
-        "θ " + (th * 180 / Math.PI).toFixed(1) + "° · φν " + (phi * nu).toFixed(3),
+        "θ " + (th * 180 / Math.PI).toFixed(1) + "° · B " + balance.toFixed(3),
         "tangent projection",
         "phase " + projectionPhase.toFixed(2),
-        "σ φν " + reciprocalResidual.toExponential(1)
+        "σ φν " + reciprocalResidual.toExponential(1) + " · ρ " + landingResidual.toExponential(1)
       );
       if (readout) readout.textContent =
         "D3 RIEMANN/BLOCH · tangent projection\n" +
         "θ = " + (th * 180 / Math.PI).toFixed(1) + "° · φ = cot(θ/2) = " + phi.toFixed(2) + "\n" +
-        "ν = tan(θ/2) = " + nu.toFixed(2) + " · φ·ν = 1\n" +
-        "instrument reading: surface point P lands on the complex plane";
+        "ν = tan(θ/2) = " + nu.toFixed(2) + " · φ·ν = 1 · B=sinθ " + balance.toFixed(3) + "\n" +
+        "landing ρ = " + landingRadius.toFixed(2) + " · expected 2rφ = " + expectedLandingRadius.toFixed(2) + " · σρ " + landingResidual.toExponential(1);
     });
   }
 
@@ -1621,6 +1703,8 @@ function buildScene(mode, scene) {
     if (readout) {
       readout.style.maxWidth = "min(430px, 46%)";
       readout.style.whiteSpace = "pre-line";
+      readout.style.top = "92px";
+      readout.style.bottom = "auto";
       readout.classList.add("ccc-readout");
     }
     const cccRing = (color, opacity = 1, tube = 0.012) => new THREE.Mesh(
@@ -1674,6 +1758,17 @@ function buildScene(mode, scene) {
     const expansionDot = makeMarker(new THREE.Vector3(-1.65, graphY + 0.08, 0.04), 0xffeb3b, 0.035);
     const inverseDot = makeMarker(new THREE.Vector3(-1.65, graphY + 0.5, 0.04), 0x42a5f5, 0.035);
     root.add(graphCursor, expansionDot, inverseDot);
+    const closureChart = createStripChart(new THREE.Vector3(-1.65, graphY - 0.62, 0.04), 3.3, 0.4, 0xffeb3b, 120);
+    const boundarySamples = [];
+    const boundaryTrace = createPointTrace(140, 0xffeb3b, 0.38, 0.018);
+    root.add(closureChart.group, boundaryTrace.mesh);
+    if (visual) {
+      visual.addEventListener("instrument:zero", () => {
+        clearStripChart(closureChart);
+        boundarySamples.length = 0;
+        updatePointTrace(boundaryTrace, boundarySamples);
+      });
+    }
 
     const phaseNeedle = line([
       new THREE.Vector3(0, 0, 0.02),
@@ -1681,7 +1776,7 @@ function buildScene(mode, scene) {
     ], 0xffeb3b, 0.45);
     root.add(phaseNeedle);
 
-    dyn.push((t) => {
+    dyn.push((t, sampled) => {
       const leadPhase = phase01(t, 0.045);
       const q = smooth01(leadPhase);
       const aeonRadius = 0.12 + q * (boundaryRadius - 0.12);
@@ -1698,6 +1793,8 @@ function buildScene(mode, scene) {
       boundaryDot.position.set(boundaryRadius * Math.cos(a), boundaryRadius * Math.sin(a), 0.03);
       originDot.material.color.setHex(q > 0.92 ? 0xffeb3b : 0xffffff);
       originDot.scale.setScalar(1 + 0.35 * q);
+      if (sampled) appendTrace(boundarySamples, boundaryDot.position, 140);
+      updatePointTrace(boundaryTrace, boundarySamples);
       const graphX = -1.65 + q * 3.3;
       const expansionY = graphY + 0.08 + 0.42 * q;
       const inverseY = graphY + 0.08 + 0.42 * (1 - q);
@@ -1711,16 +1808,19 @@ function buildScene(mode, scene) {
       boundaryGauge.rotation.z = 0;
       boundary.material.opacity = 0.22;
       const mapResidual = Math.abs(q + (1 - q) - 1);
+      const closureResidual = Math.abs((aeonRadius + conformalRadius) - (boundaryRadius + 0.12));
+      updateStripChart(closureChart, q, 0, 1, sampled);
       setInstrumentMetric(
         "a " + (aeonRadius / boundaryRadius).toFixed(2) + " · Ω " + (conformalRadius / boundaryRadius).toFixed(2),
         "CCC rescale analogy",
         "phase " + leadPhase.toFixed(2),
-        "σ q-map " + mapResidual.toExponential(1)
+        "σ q-map " + mapResidual.toExponential(1) + " · close " + closureResidual.toExponential(1)
       );
       if (readout) readout.textContent =
         "CCC RETURN · CONFORMAL RESCALE\n" +
         "/6 ≡ /0 is route closure, not a new object\n" +
         "aeon radius a=" + (aeonRadius / boundaryRadius).toFixed(2) + " · rescaled radius Ω=" + (conformalRadius / boundaryRadius).toFixed(2) + "\n" +
+        "closure check: q+(1−q)=1 · σ " + mapResidual.toExponential(1) + " · boundary trace sampled\n" +
         "end boundary maps to origin; the start marker is the only survivor\n" +
         "Penrose CCC is analogy here, not asserted identity";
     });
