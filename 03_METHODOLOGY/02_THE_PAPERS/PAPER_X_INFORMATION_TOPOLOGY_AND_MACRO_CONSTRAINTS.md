@@ -77,13 +77,17 @@ A macro-constraint is admissible only if it acts by restricting or weighting
 lower-level trajectories that the lower law already allows:
 
 ```text
-G_C(x' | x, y)    in [0,1]       constraint gate
+G_C(x' | x, y)    >= 0           constraint gate or weight
 K_X^C(x' | x,y)   = normalize(K_X(x' | x) * G_C(x' | x,y))
+K_X^C << K_X      absolute continuity / no-magic condition
 support(K_X^C)    subset support(K_X)
 ```
 
 This is the causal-closure guard. The macro layer does not create a forbidden
-micro-transition. It changes the topology of the option space.
+micro-transition. Hard constraints set `G_C = 0` for some lower-law-admissible
+transitions and shrink support. Soft constraints keep support but change
+relative transition weights, basin structure, dwell times, or stability. Both
+are causal only if they remain absolutely continuous with the lower law.
 
 ---
 
@@ -93,20 +97,25 @@ The relevant object is not only the set of microstates. It is the adjacency
 structure of possible transitions:
 
 ```text
-T_K = (X, E_K)
+T_K = (X, E_K, w_K)
 E_K = { (x, x') : K_X(x' | x) > 0 }
+w_K(x,x') = K_X(x' | x)
 ```
 
 Under a macro-constraint:
 
 ```text
-T_C = (X, E_C)
+T_C = (X, E_C, w_C)
 E_C = { (x, x') : K_X^C(x' | x, y) > 0 }
 E_C subset E_K
+w_C(x,x',y) = K_X^C(x' | x,y)
 ```
 
 The macro-cause is the change from `T_K` to `T_C`. It is not a ghostly push.
-It is a topology change in the reachable future graph under an organization.
+In the hard case it is an edge-removal topology change in the reachable future
+graph. In the soft case it is a weighted-geometry change over the same support.
+The general object is therefore the **weighted reachable-future graph** under
+an organization.
 
 Examples:
 
@@ -117,7 +126,8 @@ Examples:
 - a narrative changes which future models receive energy
 
 All five are macro-constraints if they preserve the lower law and change the
-reachable trajectory topology.
+reachable trajectory support or its transition weights in a perturbable,
+costed way.
 
 ---
 
@@ -153,8 +163,8 @@ This blocks two common errors:
 
 1. **Reductionist erasure:** If `W_C > 0`, the macrostate is not merely a human
    nickname for microstates. It is the better causal variable at that grain.
-2. **Mystical inflation:** If `support(K_X^C)` is not a subset of
-   `support(K_X)`, or if the costs are hidden, the claim is not accepted.
+2. **Mystical inflation:** If `K_X^C` is not absolutely continuous with `K_X`,
+   or if the costs are hidden, the claim is not accepted.
 
 ---
 
@@ -168,7 +178,7 @@ only when all three conditions hold:
 ```text
 1. closure / no magic:
    K_X^C << K_X
-   equivalently: support(K_X^C) subset support(K_X)
+   therefore: support(K_X^C) subset support(K_X)
 
 2. non-redundant perturbability:
    exists a in A such that
@@ -216,7 +226,7 @@ high_cost:
 
 forbidden_support:
   K_X^C assigns probability outside support(K_X)
-  required failure: support-subset violation
+  required failure: absolute-continuity / support-subset violation
 ```
 
 The first control blocks ornamental coarse-graining. The second blocks hidden
@@ -330,8 +340,9 @@ This paper contracts or fails if:
    entropy," or "consciousness is quantum magic."
 3. **Do say:** "macro causes change the topology of lower-law-admissible
    trajectories and must beat the costed micro-description."
-4. **Operational test:** declare `X`, `Y`, `pi`, `K_X`, `G_C`, `EI_baseline`,
-   the cost ledger, the intervention, and the falsifier.
+4. **Operational test:** declare `X`, `Y`, `pi`, `K_X`, `G_C`, whether `C` is a
+   hard restriction or soft reweighting, `EI_baseline`, the cost ledger, the
+   intervention, and the falsifier.
 5. **Pre-registration harness:** freeze domain tests through
    `03_METHODOLOGY/03_PREREGISTRATIONS/02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md`.
 6. **First boundary run:** instantiate the chemistry-to-biology test through

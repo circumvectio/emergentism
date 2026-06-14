@@ -57,7 +57,7 @@ X          lower-level state space
 K_X        lower-level transition kernel
 pi: X -> Y macro map
 Y_t        pi(X_t)
-G_C        constraint gate
+G_C        hard constraint gate or soft transition weight
 Cost_C     physical information/control cost ledger
 ```
 
@@ -66,6 +66,7 @@ costed witness hold:
 
 ```text
 K_X^C(x' | x,y) = normalize(K_X(x' | x) * G_C(x' | x,y))
+K_X^C << K_X
 support(K_X^C) subset support(K_X)
 
 EI_macro = I(Y_t ; Y_{t+1} | do(Y_t), C)
@@ -80,6 +81,13 @@ Cost_C = Cost_measure + Cost_memory + Cost_control
 
 W_C = EI_macro - EI_baseline - Cost_C
 ```
+
+Before scoring, the run must declare whether `C` is a **hard** constraint
+(`G_C = 0` removes some otherwise admissible transitions) or a **soft**
+constraint (`G_C > 0` reweights transition likelihoods, basins, dwell times, or
+stability while leaving support unchanged). Both forms are valid only if
+`K_X^C` remains absolutely continuous with `K_X`; no macro layer may assign
+probability where the lower law assigns none.
 
 The macro claim passes only if:
 
@@ -111,7 +119,7 @@ Every domain run must freeze these objects before results are inspected:
 |---|---|
 | Lower law | `X`, `K_X`, time step, boundary conditions, owning discipline, and why the kernel is accepted. |
 | Macro map | `pi: X -> Y`, macro variables, fiber `C_y = {x in X : pi(x)=y}`, and why this grain is not post-hoc. |
-| Constraint gate | `G_C(x' | x,y)` and the proof or numerical check that `support(K_X^C) subset support(K_X)`. |
+| Constraint gate | `G_C(x' | x,y)`, hard-vs-soft status, and the proof or numerical check that `K_X^C << K_X` / `support(K_X^C) subset support(K_X)`. |
 | Intervention | How `C` is held, removed, perturbed, or randomized without smuggling in a forbidden transition. |
 | Cost ledger | Units for measurement, memory, control, erasure, modeling, and entropy export. |
 | Baselines | Micro model, fair coarse-graining baseline, null constraint, and domain-specific mechanism baseline. |
@@ -231,7 +239,7 @@ high_cost:
 
 forbidden_support:
   K_X^C assigns probability to a transition outside support(K_X)
-  required result: support violation detected
+  required result: absolute-continuity / support violation detected
 ```
 
 These controls make the protocol hostile to its own preferred conclusion. A
@@ -274,7 +282,8 @@ cost, labor cost, control cost, or entropy elsewhere, the syntropy claim fails.
 
 The macro-constraint claim fails or contracts if any of these occur:
 
-1. `support(K_X^C)` includes transitions outside `support(K_X)`.
+1. `K_X^C` is not absolutely continuous with `K_X`, or `support(K_X^C)`
+   includes transitions outside `support(K_X)`.
 2. `W_C <= 0` under fair grain, fair intervention, and full cost accounting.
 3. The macro model wins only because the micro model was blinded, starved, or
    denied the same observation budget.
@@ -303,7 +312,8 @@ violate lower-level laws; the specific macro-constraint witness can be rewritten
 
 - [ ] Domain selected and tier declared.
 - [ ] `X`, `K_X`, `pi`, `Y`, `C_y`, and `G_C` fixed.
-- [ ] Support-subset check specified.
+- [ ] Hard-vs-soft constraint status and absolute-continuity/support-subset
+      check specified.
 - [ ] Intervention design fixed.
 - [ ] Cost units fixed.
 - [ ] Micro, coarse-grain, null, and domain-specific baselines fixed.
@@ -327,8 +337,8 @@ No domain result is canonical until this block is frozen.
    "macro-causes constrain lower-law-admissible trajectories."
 3. Never say "syntropy reverses total entropy." Say:
    "local order or effective-information gain must pay its cost ledger."
-4. Before accepting a macro-cause, require `X`, `K_X`, `pi`, `G_C`, `Cost_C`,
-   an intervention, and a kill condition.
+4. Before accepting a macro-cause, require `X`, `K_X`, `pi`, `G_C`,
+   hard-vs-soft status, `Cost_C`, an intervention, and a kill condition.
 5. Route any physics-to-biology unification claim through this protocol first.
 6. Canonical Path:
    `01_EMERGENTISM/03_METHODOLOGY/03_PREREGISTRATIONS/02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md`

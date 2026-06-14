@@ -65,6 +65,7 @@ A higher-level organization is real at a tested grain when it constrains the
 reachable-future topology of the lower level without violating the lower law:
 
 ```text
+K_X^C << K_X
 support(K_X^C) subset support(K_X)
 ```
 
@@ -83,16 +84,18 @@ This is how Emergentism exits the old fork:
 
 - **against weak emergence:** if the macro layer beats the best fair baseline
   after costs, it is not merely human shorthand.
-- **against strong emergence:** if it violates `support(K_X)`, hides costs, or
-  cannot be perturbed, it is not accepted as a cause.
+- **against strong emergence:** if it violates absolute continuity with
+  `K_X`, hides costs, or cannot be perturbed, it is not accepted as a cause.
 
 So the unifying scientific spine is information topology: membranes,
 catalysts, bodies, policies, institutions, and present-awareness selection all
-change which lower-law-admissible trajectories are reachable, likely, stable,
-reinforced, or suppressed. The continuity from physics to agency is continuity
-of constraint form, not proof of one occult force. Syntropy means local order,
-coherence, viability, or effective-information gain after the physical bill is
-paid; it is not free reversal of total entropy.
+change the weighted reachable-future graph of lower-law-admissible
+trajectories. Hard constraints remove support; soft constraints reweight
+likelihood, dwell time, basin structure, or stability. The continuity from
+physics to agency is continuity of constraint form, not proof of one occult
+force. Syntropy means local order, coherence, viability, or
+effective-information gain after the physical bill is paid; it is not free
+reversal of total entropy.
 
 The current hardening route is explicit: Protocol R is the geometry flagship;
 Macro-Constraint Physics-to-Biology is the emergence flagship. The toy vesicle

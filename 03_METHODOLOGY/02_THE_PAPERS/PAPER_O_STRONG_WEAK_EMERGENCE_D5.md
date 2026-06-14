@@ -75,15 +75,20 @@ macrostate induced by a coarse-graining, organism, institution, interface,
 law, or control architecture.
 
 ```text
-K_X(x' | x)        lower-level transition law
-C_y                admissible microstates under macrostate y
-K_X^C(x' | x, y)   K_X restricted by C_y
-support(K_X^C)     ⊆ support(K_X)
+K_X(x' | x)          lower-level transition law
+C_y                  admissible microstates under macrostate y
+G_C(x' | x,y) >= 0   constraint gate or weight induced by C_y
+K_X^C(x' | x,y)      normalize(K_X(x' | x) * G_C(x' | x,y))
+K_X^C << K_X         absolute-continuity / no-magic condition
+support(K_X^C)       ⊆ support(K_X)
 ```
 
-The subset relation is the causal-closure guard. The macro layer does not add a
-forbidden micro-transition. It changes the option topology: which trajectories
-are reachable, likely, stable, reinforced, or suppressed.
+The absolute-continuity relation is the causal-closure guard. The macro layer
+does not add a forbidden micro-transition. Hard constraints can shrink support;
+soft constraints can leave support unchanged while reweighting probabilities,
+attractor basins, dwell times, or stability. In either case the macro layer
+changes the option topology or weighted transition geometry: which
+trajectories are reachable, likely, stable, reinforced, or suppressed.
 
 The emergence claim becomes measurable when we ask whether the macrostate
 retains causal information better than the available micro-description:
@@ -121,9 +126,9 @@ claim of total entropy reversal, retrocausality, or a Standard Model fifth
 force.
 
 Paper X turns this section into the operational calculus: declare the lower
-law, macro map, constraint gate, fair baseline, cost ledger, perturbable
-causal-information witness, and kill condition before calling the macro layer
-a cause.
+law, macro map, hard-or-soft constraint gate, fair baseline, cost ledger,
+perturbable causal-information witness, negative controls, and kill condition
+before calling the macro layer a cause.
 
 ---
 

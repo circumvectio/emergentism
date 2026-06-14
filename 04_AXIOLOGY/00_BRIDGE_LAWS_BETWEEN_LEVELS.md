@@ -110,15 +110,22 @@ claim is admissible only if it can be stated as a constraint on lower-level
 degrees of freedom:
 
 ```text
-K_X(x' | x)        = lower-level transition law
-C_y                = {x in X : π(x) = y}
-K_X^C(x' | x, y)   = K_X(x' | x) restricted to trajectories admissible under C_y
-support(K_X^C)     ⊆ support(K_X)
+K_X(x' | x)          = lower-level transition law
+C_y                  = {x in X : π(x) = y}
+G_C(x' | x,y) >= 0   = constraint gate or weight induced by C_y
+K_X^C(x' | x,y)      = normalize(K_X(x' | x) * G_C(x' | x,y))
+K_X^C << K_X         = absolute-continuity / no-magic condition
+support(K_X^C)       ⊆ support(K_X)
 ```
 
-The inclusion is the no-magic clause. The macro-constraint may change which
-micro-trajectories are available, likely, stable, or reinforced, but it may not
-create a transition the lower-level law forbids.
+Absolute continuity is the no-magic clause: wherever the lower law assigns
+zero probability, the constrained law must also assign zero probability. In a
+**hard** macro-constraint, `G_C = 0` for some transitions and the reachable
+support shrinks. In a **soft** macro-constraint, support may stay equal while
+relative weights, attractor basins, dwell times, or stability change. Both are
+admissible only if they remain inside the lower law. The macro-constraint may
+change which micro-trajectories are available, likely, stable, or reinforced,
+but it may not create a transition the lower-level law forbids.
 
 The public test is not whether the macro word feels useful. The public test is
 whether the macro description carries causal information that survives
@@ -162,8 +169,9 @@ Use this checklist before calling any higher-level object a cause:
    owns the lower-level transition claim.
 2. **Declare the macro map:** name `π : X -> Y`, the macrostate `Y_t`, and the
    fiber `C_y = {x in X : π(x) = y}`.
-3. **Declare the constraint gate:** name `G_C(x' | x,y)` and show
-   `support(K_X^C) ⊆ support(K_X)`.
+3. **Declare the constraint gate:** name `G_C(x' | x,y)`, state whether it is
+   hard support restriction or soft reweighting, and show `K_X^C << K_X`
+   (`support(K_X^C) ⊆ support(K_X)`).
 4. **Declare the cost ledger:** charge measurement, memory, control, erasure,
    modeling, and entropy-export costs.
 5. **Run the witness:** accept the macro claim only if it improves effective
@@ -174,8 +182,10 @@ Use this checklist before calling any higher-level object a cause:
    macro claim back to shorthand.
 
 This is the public procedure behind the phrase "information topology." A
-macro-cause changes the reachable-future graph of lower-law-admissible
-trajectories; it does not add a forbidden micro-transition.
+macro-cause changes the weighted reachable-future graph of
+lower-law-admissible trajectories: sometimes by removing edges, sometimes by
+changing transition weights, stability, or basin structure. It does not add a
+forbidden micro-transition.
 
 See also: [PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md](../03_METHODOLOGY/02_THE_PAPERS/PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md).
 For the frozen test harness, use

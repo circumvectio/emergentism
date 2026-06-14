@@ -33,9 +33,10 @@ model receipt in the companion harness.
 
 **Claim Boundary:** This file does not prove life, consciousness, syntropy, or
 downward causation. It converts the first clean boundary test into freezeable
-objects: lower law, macro map, constraint gate, fair baselines, physical cost
-ledger, perturbation, witness, and kill condition. If the run fails, the
-quantum-to-agency continuity claim contracts before rhetoric expands.
+objects: lower law, macro map, hard-or-soft constraint gate, fair baselines,
+physical cost ledger, perturbation, witness, negative controls, and kill
+condition. If the run fails, the quantum-to-agency continuity claim contracts
+before rhetoric expands.
 
 **Executable harness:** The companion folder
 [`physics_to_biology_harness/`](physics_to_biology_harness/) contains a
@@ -67,8 +68,9 @@ The target question is narrow:
 
 ```text
 Does a physically instantiated organizational constraint C
-change the reachable-future topology of lower-law-admissible chemistry
-with positive costed causal surplus?
+change the weighted reachable-future graph of lower-law-admissible chemistry
+with positive costed causal surplus, while remaining absolutely continuous with
+the lower chemistry law?
 ```
 
 ---
@@ -90,8 +92,8 @@ it does not prove the biology.
 | Lower law `K_X` | Chemical diffusion / reaction transition model accepted for the chosen simulator or experiment. |
 | Macro map `π: X -> Y` | `Y_t = (inside/outside concentration gradients, membrane integrity, viable concentration band)`. |
 | Fiber `C_y` | Microstates with the same coarse membrane-gradient state. |
-| Constraint gate `G_C` | Permeability gate that weights allowed crossings by membrane selectivity. |
-| Closure check | `support(K_X^C) subset support(K_X)`; the membrane changes rates/reachability, not the lower chemistry law. |
+| Constraint gate `G_C` | Permeability gate that weights allowed crossings by membrane selectivity; declare whether the run treats it as a hard support restriction or soft reweighting. |
+| Closure check | `K_X^C << K_X` and `support(K_X^C) subset support(K_X)`; the membrane changes rates/reachability, not the lower chemistry law. |
 | Perturbation | Hold membrane, remove membrane, randomize permeability, or damage boundary while keeping lower chemistry model fixed. |
 | Cost ledger | Membrane maintenance energy, measurement cost, model cost, control cost, erasure/logging cost, entropy export. |
 | Baselines | Fair micro model, coarse-null no-membrane model, domain-specific diffusion/reaction model. |
@@ -175,8 +177,8 @@ entropy export were hidden.
 - [ ] Source of lower law `K_X` recorded.
 - [ ] State vector `X` and time step frozen.
 - [ ] Macro map `π`, macrostate `Y`, and fiber `C_y` frozen.
-- [ ] Constraint gate `G_C` frozen.
-- [ ] Support-subset check specified.
+- [ ] Constraint gate `G_C` frozen, with hard-vs-soft status.
+- [ ] Absolute-continuity/support-subset check specified.
 - [ ] Perturbation design frozen.
 - [ ] Cost units frozen.
 - [ ] Baselines frozen.

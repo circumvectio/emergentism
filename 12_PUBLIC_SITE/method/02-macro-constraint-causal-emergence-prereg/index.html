@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Macro-Constraint Causal-Emergence Preregistration — Emergentism</title>
-<meta name="description" content="A preregistration harness for testing macro-constraint causation: lower law, macro map, constraint gate, cost ledger, witness, intervention, and kill condition.">
+<meta name="description" content="A preregistration harness for testing macro-constraint causation: lower law, macro map, hard-or-soft constraint gate, cost ledger, witness, intervention, negative controls, and kill condition.">
 <link rel="icon" href="data:,">
 <link rel="stylesheet" href="../../assets/css/xai.css">
 </head>
@@ -49,11 +49,12 @@
 
     <h1 id="pre-registration-macro-constraint-causal-emergence-measurement-protocol">Pre-Registration — Macro-Constraint Causal-Emergence Measurement Protocol</h1>
 
-    <p>This protocol operationalizes <a href="../../papers/paper-x-information-topology-and-macro-constraints/">Paper X</a> and <a href="../../value/00-bridge-laws-between-levels/">Bridge Law 2</a>. It asks whether a macro-constraint changes the reachable-future graph of lower-law-admissible trajectories while paying its physical information costs.</p>
+    <p>This protocol operationalizes <a href="../../papers/paper-x-information-topology-and-macro-constraints/">Paper X</a> and <a href="../../value/00-bridge-laws-between-levels/">Bridge Law 2</a>. It asks whether a macro-constraint changes the weighted reachable-future graph of lower-law-admissible trajectories while paying its physical information costs.</p>
 
     <h2 id="exact-claim-under-test">1. The Exact Claim Under Test</h2>
-    <p>For a declared lower state space <code>X</code>, transition kernel <code>K_X</code>, macro map <code>pi: X -&gt; Y</code>, constraint gate <code>G_C</code>, and cost ledger <code>Cost_C</code>, the macro-cause is accepted only when closure and a costed witness both hold:</p>
+    <p>For a declared lower state space <code>X</code>, transition kernel <code>K_X</code>, macro map <code>pi: X -&gt; Y</code>, hard or soft constraint gate <code>G_C</code>, and cost ledger <code>Cost_C</code>, the macro-cause is accepted only when closure and a costed witness both hold:</p>
 <pre><code class="language-text">K_X^C(x' | x,y) = normalize(K_X(x' | x) * G_C(x' | x,y))
+K_X^C << K_X
 support(K_X^C) subset support(K_X)
 
 EI_macro = I(Y_t ; Y_{t+1} | do(Y_t), C)
@@ -68,6 +69,7 @@ Cost_C = Cost_measure + Cost_memory + Cost_control
 
 W_C = EI_macro - EI_baseline - Cost_C
 </code></pre>
+    <p>Before scoring, the run must declare whether <code>C</code> is a hard constraint (<code>G_C = 0</code> removes some otherwise admissible transitions) or a soft constraint (<code>G_C &gt; 0</code> reweights transition likelihoods, basins, dwell times, or stability while leaving support unchanged). Both forms are valid only if <code>K_X^C</code> remains absolutely continuous with <code>K_X</code>.</p>
     <p>The macro claim passes only if <code>W_C &gt; 0</code>, or if a cost-matched macro model improves held-out trajectory prediction or intervention selection against the best available micro baseline.</p>
 <pre><code class="language-text">exists intervention a:
 D_KL(P_C(Y_{t+1} | do(a), Y_t) || P_notC(Y_{t+1} | do(a), Y_t)) &gt; epsilon
@@ -80,7 +82,7 @@ D_KL(P_C(Y_{t+1} | do(a), Y_t) || P_notC(Y_{t+1} | do(a), Y_t)) &gt; epsilon
       <tbody>
         <tr><td>Lower law</td><td><code>X</code>, <code>K_X</code>, time step, boundary conditions, owning discipline, and why the kernel is accepted.</td></tr>
         <tr><td>Macro map</td><td><code>pi: X -&gt; Y</code>, macro variables, fiber <code>C_y</code>, and why this grain is not post-hoc.</td></tr>
-        <tr><td>Constraint gate</td><td><code>G_C(x' | x,y)</code> and the support-subset check.</td></tr>
+        <tr><td>Constraint gate</td><td><code>G_C(x' | x,y)</code>, hard-vs-soft status, and the <code>K_X^C &lt;&lt; K_X</code> / support-subset check.</td></tr>
         <tr><td>Intervention</td><td>How <code>C</code> is held, removed, perturbed, or randomized.</td></tr>
         <tr><td>Cost ledger</td><td>Units for measurement, memory, control, erasure, modeling, and entropy export.</td></tr>
         <tr><td>Baselines</td><td>Micro model, fair coarse-graining baseline, null constraint, and domain-specific mechanism baseline.</td></tr>
@@ -96,7 +98,7 @@ D_KL(P_C(Y_{t+1} | do(a), Y_t) || P_notC(Y_{t+1} | do(a), Y_t)) &gt; epsilon
 </code></pre>
 
     <h2 id="physics-to-biology-boundary-test">4. Physics-to-Biology Boundary Test</h2>
-    <p>The clean first boundary is chemistry-to-biology: membrane, autocatalytic network, metabolism-like flow reactor, or homeostasis controller. The test is whether removing <code>C</code> lets lower-law chemistry continue while viability-preserving trajectory topology degrades, and whether holding <code>C</code> makes viable trajectories more reachable or stable after costs.</p>
+    <p>The clean first boundary is chemistry-to-biology: membrane, autocatalytic network, metabolism-like flow reactor, or homeostasis controller. The test is whether removing <code>C</code> lets lower-law chemistry continue while viability-preserving transition geometry degrades, and whether holding <code>C</code> makes viable trajectories more reachable or stable after costs.</p>
 
     <h2 id="domain-templates">5. Domain Templates</h2>
     <table>
@@ -145,7 +147,7 @@ at least one inequality is strict
 
     <h2 id="kill-criteria">8. Kill Criteria</h2>
     <ol>
-      <li><code>support(K_X^C)</code> includes transitions outside <code>support(K_X)</code>.</li>
+      <li><code>K_X^C</code> is not absolutely continuous with <code>K_X</code>, or <code>support(K_X^C)</code> includes transitions outside <code>support(K_X)</code>.</li>
       <li><code>W_C &lt;= 0</code> under fair grain, fair intervention, and full cost accounting.</li>
       <li>The macro model wins only because the micro model was blinded, starved, or denied the same observation budget.</li>
       <li>The macro variables duplicate lower variables under a new name.</li>

@@ -46,7 +46,7 @@
   <article class="library-article">
     <p><strong>Project VMOSK-A:</strong> <code>01_EMERGENTISM/VMOSK_A.md</code><br>
     <strong>Evidence tier:</strong> <code>[C]</code> proposed biology-facing domain run; <code>[S]</code> inherited macro-constraint protocol; <code>[B]</code> only for the deterministic toy model receipt in the companion harness.</p>
-    <p><strong>Claim Boundary:</strong> This file does not prove life, consciousness, syntropy, or downward causation. It converts the first clean boundary test into freezeable objects: lower law, macro map, constraint gate, fair baselines, physical cost ledger, perturbation, witness, and kill condition.</p>
+    <p><strong>Claim Boundary:</strong> This file does not prove life, consciousness, syntropy, or downward causation. It converts the first clean boundary test into freezeable objects: lower law, macro map, hard-or-soft constraint gate, fair baselines, physical cost ledger, perturbation, witness, negative controls, and kill condition.</p>
     <p><strong>Freeze handle:</strong> <code>macro-constraint-freeze-v1</code> · <code>report_sha256</code> · <code>FREEZE_MANIFEST.json</code>.</p>
     <p><strong>Retrieval handles:</strong> Macro-Constraint Physics-to-Biology; toy macro-constraint harness <code>[B]</code>; negative controls reject no-gate, high-cost, and forbidden-support; real domain run pending.</p>
     <p><strong>Executable harness:</strong> The source folder <code>physics_to_biology_harness/</code> now contains a deterministic toy vesicle model, unit tests, a report, and <code>FREEZE_MANIFEST.json</code> with <code>manifest_version=macro-constraint-freeze-v1</code> and <code>report_sha256</code>. Its current receipt is <code>[B]</code> only for that toy model: <code>W_C=0.425356</code>, <code>SYN_C=0.785347</code>, <code>KL=0.141286</code>, with negative controls rejecting no-gate, high-cost, and forbidden-support false positives. Biology remains <code>[C]</code> until a frozen domain run exists.</p>
@@ -55,8 +55,9 @@
     <p>The active worldview goal requires Emergentism to escape both weak-emergence erasure and strong-emergence magic. This run sheet starts with chemistry-to-biology because it can be tested without invoking consciousness, social meaning, or D6 closure.</p>
 
 <pre><code class="language-text">Does a physically instantiated organizational constraint C
-change the reachable-future topology of lower-law-admissible chemistry
-with positive costed causal surplus?</code></pre>
+change the weighted reachable-future graph of lower-law-admissible chemistry
+with positive costed causal surplus, while remaining absolutely continuous
+with the lower chemistry law?</code></pre>
 
     <h2 id="candidate-system-a-minimal-vesicle-constraint">Candidate System A: Minimal Vesicle Constraint</h2>
     <p>The preferred first run is membrane permeability. The macro-constraint is visible: a boundary changes which lower-law-admissible crossings are reachable, likely, stable, reinforced, or suppressed.</p>
@@ -67,8 +68,8 @@ with positive costed causal surplus?</code></pre>
         <tr><td>Lower state <code>X</code></td><td>Molecule counts, internal/external compartments, solvent conditions, temperature, pH, and time step.</td></tr>
         <tr><td>Lower law <code>K_X</code></td><td>Chemical diffusion / reaction transition model accepted for the chosen simulator or experiment.</td></tr>
         <tr><td>Macro map <code>pi: X -&gt; Y</code></td><td>Inside/outside concentration gradients, membrane integrity, and viable concentration band.</td></tr>
-        <tr><td>Constraint gate <code>G_C</code></td><td>Permeability gate that weights allowed crossings by membrane selectivity.</td></tr>
-        <tr><td>Closure check</td><td><code>support(K_X^C) subset support(K_X)</code>; the membrane changes rates/reachability, not lower chemistry law.</td></tr>
+        <tr><td>Constraint gate <code>G_C</code></td><td>Permeability gate that weights allowed crossings by membrane selectivity; declare whether the run treats it as a hard support restriction or soft reweighting.</td></tr>
+        <tr><td>Closure check</td><td><code>K_X^C &lt;&lt; K_X</code> and <code>support(K_X^C) subset support(K_X)</code>; the membrane changes rates/reachability, not lower chemistry law.</td></tr>
         <tr><td>Perturbation</td><td>Hold membrane, remove membrane, randomize permeability, or damage boundary while keeping lower chemistry fixed.</td></tr>
         <tr><td>Cost ledger</td><td>Maintenance energy, measurement, model, control, erasure/logging, and entropy export.</td></tr>
         <tr><td>Baselines</td><td>Fair micro model, coarse-null no-membrane model, and domain-specific diffusion/reaction model.</td></tr>

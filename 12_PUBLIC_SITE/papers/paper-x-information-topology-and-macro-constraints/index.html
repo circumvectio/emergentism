@@ -59,7 +59,7 @@
 <strong>Source:</strong> <code>01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md</code></p>
 <p><strong>Claim Boundary:</strong> Macro-constraint causation is a costed effective information witness, not a new force: a macro layer earns public causal standing only when <code>W_C = EI_macro - EI_baseline - Cost_C &gt; 0</code> against fair micro, coarse-null, and domain baselines, with <code>Cost_C</code> including <code>Cost_entropy_export</code>, and only when <code>C</code> is perturbable. The same scoring path must also reject no-gate, high-cost, and lower-law support-violation controls. The cross-scale continuity claim remains <code>[I]</code>; universal physics remains <code>[C]</code> until domain tests earn their own tier.</p>
 <blockquote>
-<p><strong>Read with care.</strong> This is the operational sequel to Paper O. It does not claim that macro causes break physics, that syntropy reverses total entropy, or that consciousness is quantum magic. It says a macro-cause changes the reachable-future graph of lower-law-admissible trajectories and must beat the costed micro-description.</p>
+<p><strong>Read with care.</strong> This is the operational sequel to Paper O. It does not claim that macro causes break physics, that syntropy reverses total entropy, or that consciousness is quantum magic. It says a macro-cause changes the weighted reachable-future graph of lower-law-admissible trajectories and must beat the costed micro-description.</p>
 <p><strong>How this can be wrong.</strong> Falsified or demoted if the proposed macro-cause requires forbidden lower transitions, wins only by blinding the micro model, has non-positive costed information gain, cannot be operationally perturbed, or hides memory/control/entropy-export costs.</p>
 </blockquote>
 <hr>
@@ -87,23 +87,26 @@ Y_t = pi(X_t)
 <pre><code class="language-text">C_y = { x in X : pi(x) = y }
 </code></pre>
 <p>A macro-constraint is admissible only if it acts by restricting or weighting lower-level trajectories that the lower law already allows:</p>
-<pre><code class="language-text">G_C(x' | x, y)    in [0,1]       constraint gate
+<pre><code class="language-text">G_C(x' | x, y)    &gt;= 0           constraint gate or weight
 K_X^C(x' | x,y)   = normalize(K_X(x' | x) * G_C(x' | x,y))
+K_X^C &lt;&lt; K_X      absolute continuity / no-magic condition
 support(K_X^C)    subset support(K_X)
 </code></pre>
-<p>This is the causal-closure guard. The macro layer does not create a forbidden micro-transition. It changes the topology of the option space.</p>
+<p>This is the causal-closure guard. The macro layer does not create a forbidden micro-transition. Hard constraints set <code>G_C = 0</code> for some lower-law-admissible transitions and shrink support. Soft constraints keep support but change relative transition weights, basin structure, dwell times, or stability. Both are causal only if they remain absolutely continuous with the lower law.</p>
 <hr>
 <h2 id="2-information-topology">2. Information Topology</h2>
 <p>The relevant object is not only the set of microstates. It is the adjacency structure of possible transitions:</p>
-<pre><code class="language-text">T_K = (X, E_K)
+<pre><code class="language-text">T_K = (X, E_K, w_K)
 E_K = { (x, x') : K_X(x' | x) &gt; 0 }
+w_K(x,x') = K_X(x' | x)
 </code></pre>
 <p>Under a macro-constraint:</p>
-<pre><code class="language-text">T_C = (X, E_C)
+<pre><code class="language-text">T_C = (X, E_C, w_C)
 E_C = { (x, x') : K_X^C(x' | x, y) &gt; 0 }
 E_C subset E_K
+w_C(x,x',y) = K_X^C(x' | x,y)
 </code></pre>
-<p>The macro-cause is the change from <code>T_K</code> to <code>T_C</code>. It is not a ghostly push. It is a topology change in the reachable future graph under an organization.</p>
+<p>The macro-cause is the change from <code>T_K</code> to <code>T_C</code>. It is not a ghostly push. In the hard case it is an edge-removal topology change in the reachable future graph. In the soft case it is a weighted-geometry change over the same support. The general object is therefore the weighted reachable-future graph under an organization.</p>
 <p>Examples:</p>
 <ul>
 <li>a membrane changes which molecules can cross</li>
@@ -112,7 +115,7 @@ E_C subset E_K
 <li>a law changes which institutional actions remain viable</li>
 <li>a narrative changes which future models receive energy</li>
 </ul>
-<p>All five are macro-constraints if they preserve the lower law and change the reachable trajectory topology.</p>
+<p>All five are macro-constraints if they preserve the lower law and change the reachable trajectory support or its transition weights in a perturbable, costed way.</p>
 <hr>
 <h2 id="3-the-costed-causal-emergence-witness">3. The Costed Causal-Emergence Witness</h2>
 <p>The public witness is not verbal elegance. It is information preserved under intervention and cost.</p>
@@ -135,14 +138,14 @@ W_C = EI_macro - EI_baseline - Cost_C
 <p>This blocks two common errors:</p>
 <ol>
 <li><strong>Reductionist erasure:</strong> If <code>W_C &gt; 0</code>, the macrostate is not merely a human nickname for microstates. It is the better causal variable at that grain.</li>
-<li><strong>Mystical inflation:</strong> If <code>support(K_X^C)</code> is not a subset of <code>support(K_X)</code>, or if the costs are hidden, the claim is not accepted.</li>
+<li><strong>Mystical inflation:</strong> If <code>K_X^C</code> is not absolutely continuous with <code>K_X</code>, or if the costs are hidden, the claim is not accepted.</li>
 </ol>
 <hr>
 <h2 id="3a-the-macro-constraint-lemma">3a. The Macro-Constraint Lemma</h2>
 <p><strong>Lemma (costed macro-causal admissibility).</strong> Given a lower system <code>(X, K_X)</code>, a macro map <code>pi: X -&gt; Y</code>, a constraint gate <code>G_C</code>, and a declared intervention class <code>A</code>, the macro variable <code>Y</code> earns causal status at grain <code>Y</code> only when all three conditions hold:</p>
 <pre><code class="language-text">1. closure / no magic:
    K_X^C &lt;&lt; K_X
-   equivalently: support(K_X^C) subset support(K_X)
+   therefore: support(K_X^C) subset support(K_X)
 
 2. non-redundant perturbability:
    exists a in A such that
@@ -167,14 +170,14 @@ high_cost:
 
 forbidden_support:
   K_X^C assigns probability outside support(K_X)
-  required failure: support-subset violation</code></pre>
+  required failure: absolute-continuity / support-subset violation</code></pre>
 <p>The first control blocks ornamental coarse-graining. The second blocks hidden entropy, memory, measurement, or control subsidies. The third blocks strong emergence magic. A toy harness that passes the witness and rejects these controls earns <code>[B]</code> only as proof that the method was executed; it does not upgrade biology or universal emergence.</p>
 <hr>
 <h2 id="4-the-causal-exclusion-repair">4. The Causal Exclusion Repair</h2>
 <p>The causal exclusion problem says: if the microstate fully determines the next state, the macro-cause is redundant.</p>
 <p>Emergentism answers: the microstate and the macrostate do different jobs.</p>
 <pre><code class="language-text">micro-cause = local transition under K_X
-macro-cause = constraint that selects the admissible transition topology
+macro-cause = constraint that selects or weights the admissible transition geometry
 </code></pre>
 <p>The macro layer is not a second push competing with the micro push. It is the condition under which the micro push occurs. The cause is real when changing the macro-constraint changes the reachable future distribution in a way that a costed observer can measure, predict, or intervene on.</p>
 <p>So <code>do(Y=y)</code> does not mean "move particles by magic." It means: instantiate, hold, remove, or perturb the macro-constraint and measure the changed trajectory distribution.</p>
