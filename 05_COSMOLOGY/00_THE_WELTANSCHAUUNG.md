@@ -38,12 +38,66 @@ It is:
 - a **map of objective function**: the conditional directional tendency toward viable completion, reciprocal fit, and asymptotic approach to Beauty, Truth, and Justice where coupling, feedback, correction, and non-extraction keep the system inside the accepted game
 - a **lens for data science**: how disclosure, inference, and public method relate
 - a **tool for methodology**: how to test, build, constitute worlds, navigate, and correct
+- an **information-topology framework for emergence**: higher levels earn
+  causal standing only as macro-constraints on lower-law-admissible
+  trajectories, never as a second force outside physics
 - an **ordering of value alignment**: what is worth preserving, strengthening, and protecting
 - a **mathematical action grammar**: each Rosetta level carries a canonical operation on `P_node = Φ × V`, from boundary limit to differential, partial derivative, proportional balance, logarithm, negative log, and stereographic return
 - an **objective teleology under the framework's ontology**: not arbitrary preference, but better or worse alignment with the geometry of balance, non-extraction, and the three asymptotic limits of Beauty, Truth, and Justice
 - a **constitutional world-generator**: the Lagrangian read backward from the invariants to the worlds that are admissible under them; see [The Generative Lagrangian](../01_TELEOLOGY/00_THE_GENERATIVE_LAGRANGIAN.md)
 
 This is the shortest complete statement of what the framework claims to be.
+
+---
+
+## Emergence Without Magic
+
+The worldview's scientific claim is not merely that "the whole is greater than
+the sum of the parts." That sentence is too vague to unify anything.
+
+The sharper claim is:
+
+```text
+micro-law completeness != macro-causal redundancy
+```
+
+A higher-level organization is real at a tested grain when it constrains the
+reachable-future topology of the lower level without violating the lower law:
+
+```text
+support(K_X^C) subset support(K_X)
+```
+
+and when the macro description carries positive costed causal surplus:
+
+```text
+W_C = EI_macro - EI_baseline - Cost_C > 0
+```
+
+with `EI_baseline` including fair micro, coarse-null, and domain-mechanism
+baselines, `Cost_C` including measurement, memory, control, erasure, modeling,
+and entropy export, and the same scoring path rejecting no-gate, high-cost, and
+lower-law support-violation controls.
+
+This is how Emergentism exits the old fork:
+
+- **against weak emergence:** if the macro layer beats the best fair baseline
+  after costs, it is not merely human shorthand.
+- **against strong emergence:** if it violates `support(K_X)`, hides costs, or
+  cannot be perturbed, it is not accepted as a cause.
+
+So the unifying scientific spine is information topology: membranes,
+catalysts, bodies, policies, institutions, and present-awareness selection all
+change which lower-law-admissible trajectories are reachable, likely, stable,
+reinforced, or suppressed. The continuity from physics to agency is continuity
+of constraint form, not proof of one occult force. Syntropy means local order,
+coherence, viability, or effective-information gain after the physical bill is
+paid; it is not free reversal of total entropy.
+
+The current hardening route is explicit: Protocol R is the geometry flagship;
+Macro-Constraint Physics-to-Biology is the emergence flagship. The toy vesicle
+harness is `[B]` only as proof-of-method. Biology, cognition, and agency upgrade
+only through frozen domain runs.
 
 ---
 
