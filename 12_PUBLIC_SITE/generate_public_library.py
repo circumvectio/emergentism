@@ -65,6 +65,11 @@ directly (the only available lever):
         "dissolved" to "reframed"; upgraded the cited quantum-foundations physics
         source tier from legacy `[S]` / `[E]` language to current `[A]`, while
         keeping Emergentism translations `[I]` and stronger physics readings `[C]`.
+  - paradox/pd-04-zeno/                        : mirrored the source repair that
+        removes stale uppercase `V` / `Φ` reuse for spatial capability and momentum;
+        current `V` means D4 means-to-act and current `Φ` means D5 worldline-
+        foresight, so the Arrow reframe now stays at the lower position/state
+        register.
   - canon/the-ontology-index/                  : mirrored the same S15/S16
         downgrade in the empirical-program table so Protocol D and Agent V×Φ
         read as internally supportive framework-designed simulations, not

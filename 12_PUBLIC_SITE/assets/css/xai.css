@@ -1855,6 +1855,11 @@ pre.glyph-block {
     left: 8px;
   }
 
+  .instrument-scale.x::after,
+  .instrument-scale.y::after {
+    content: none;
+  }
+
   .instrument-telemetry {
     top: 9px;
     left: 9px;

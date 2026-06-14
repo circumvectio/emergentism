@@ -1020,6 +1020,11 @@ noscript {
     max-width: calc(100% - 1.5rem);
   }
 
+  .instrument-scale.x::after,
+  .instrument-scale.y::after {
+    content: none;
+  }
+
   body.dimension-page .model-slider {
     bottom: 2.7rem !important;
   }

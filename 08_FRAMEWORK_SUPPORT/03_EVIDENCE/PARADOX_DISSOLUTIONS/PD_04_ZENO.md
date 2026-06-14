@@ -55,10 +55,11 @@ In this reading, convergence is not a lucky arithmetic trick layered on top of m
 The Arrow Paradox presents a different topological error. Zeno assumes time is a sequence of isolated, zero-duration (discrete) frames, like a filmstrip. If the arrow is frozen in each D1 frame, where does the motion come from?
 
 **The reframe:**
-Zeno has mapped Euclidean spatial capability ($V$) but completely stripped systemic integration ($\Phi$). 
-A geometric point of time ($t=0$) is purely an artificial $V$-measurement coordinate. It does not exist in the physical universe. Reality ($P$) insists that every particle entering a coordinate carries an established momentum ($\Phi$). Momentum is the structural memory of the sequence preceding it. 
+Zeno has mapped an instantaneous D1/D4 position-slice and treated that slice as the whole physical state. That is the error. A coordinate time (`t = 0`) can be a useful measurement idealization, but a still-frame reading that records only occupied extension has discarded the dynamical data: velocity, momentum, field relations, boundary conditions, and continuity constraints.
 
-The arrow is *not* motionless at any instant. Its physical identity at that slice of time is not merely its geometric shape; its identity is the $\Phi$-vector (momentum/inertia) carrying through it. The discrete D1 snapshot is an observational illusion; the underlying $\Phi$-integration is a continuous unbroken wave traversing the observer.
+Register guardrail: this document does not use uppercase `V` for "spatial capability" or uppercase `Φ` for "momentum." In the current action register, `V` is D4 means-to-act and `Φ` is D5 worldline-foresight. Zeno's Arrow is a lower-register problem about mistaking a position coordinate for a complete state description.
+
+The arrow is *not* motionless merely because a coordinate slice can be drawn as static. Its physical state at that slice is not exhausted by its geometric shape or occupied interval; it includes the dynamical quantities and continuity constraints that carry through the slice. The discrete D1 snapshot is an observational abstraction. The motion belongs to the state-and-law structure the snapshot suppresses.
 
 The important distinction is:
 
@@ -75,7 +76,7 @@ The framework claims both errors arise when a D1 coordinate tool is mistaken for
 ## 4. WHAT WOULD FALSIFY THIS
 
 - **If motion on S² required actual traversal of infinite points.** If the framework's bounded curved container still demanded that a moving object physically visit every point in an infinite partition -- if compactness did not guarantee convergence -- then the topological reframing adds nothing beyond standard calculus. [I]
-- **If instantaneous physical states were ontologically complete.** If a full description of a system at a single time-slice (t=0) contained all information about the system's behavior, including momentum and trajectory, without reference to continuity constraints or boundary conditions, then the Arrow reframe's claim that the D1 snapshot strips coherence would be wrong.
+- **If instantaneous physical states were ontologically complete.** If a full description of a system at a single time-slice (t=0) contained all information about the system's behavior, including momentum and trajectory, without reference to continuity constraints or boundary conditions, then the Arrow reframe's claim that the D1 snapshot strips dynamical state would be wrong.
 - **If a non-compact manifold resolved the paradoxes equally well.** If the reframe works on any geometry -- flat Euclidean space included -- then the specific claim about S² compactness is ornamental. The reframe must depend on the bounded curved structure to be non-trivial.
 
 

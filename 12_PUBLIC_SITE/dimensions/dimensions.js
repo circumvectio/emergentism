@@ -1360,17 +1360,17 @@ function buildScene(mode, scene) {
     // radius 2r·cot(θ/2) = 2r·φ; from 0 a straight ray through P lands UP on
     // the top plane at 2r·tan(θ/2) = 2r·ν. Both rays pass through P — the two
     // projections meet ON the sphere. φ·ν = 1 throughout. The unit circles
-    // (radius 2r on each plane) are the equator's two shadows: the god/demon
-    // boundary. As ψ rotates while θ sweeps, both landings SPIRAL through the
+    // (radius 2r on each plane) are the equator's two shadows: the Φ/V
+    // balance boundary. As ψ rotates while θ sweeps, both landings SPIRAL through the
     // quadrants — reciprocal radii, crossing their unit circles together.
     const r = 1.0;
     const N = new THREE.Vector3(0, r, 0);                            // ○ ∞ — the top plane touches here (Brahmā's sign)
     const S = new THREE.Vector3(0, -r, 0);                           // • 0 — the floor touches here (Śiva's sign)
-    const GOD = 0xffeb3b, DEMON = 0xd23b3b;
+    const FORESIGHT = 0xffeb3b, MEANS = 0x42a5f5, BALANCED = 0xf3f4f6;
     const U = 2 * r;                                                 // unit-circle radius on a tangent plane
 
     root.add(createSphere(r, 0.22));
-    root.add(ring(r, GOD, 0.8));                                     // the equator — god/demon boundary on the sphere
+    root.add(ring(r, FORESIGHT, 0.8));                                // the equator — Φ/V balance boundary on the sphere
     [0.45, 0.8].forEach((y) => {
       const lat = ring(Math.sqrt(r * r - y * y), 0x666666, 0.3);
       lat.position.y = y; root.add(lat);
@@ -1380,27 +1380,24 @@ function buildScene(mode, scene) {
     // the two tangent copies of the same complex plane (floor at 0, top at ∞)
     [-r, r].forEach((y) => {
       const g = createGridPlane(9.0, 21); g.position.y = y; root.add(g);
-      const u = createTickedRing(U, GOD, 0.46, 56); u.position.y = y; root.add(u); // unit circle = the equator's shadow
+      const u = createTickedRing(U, FORESIGHT, 0.46, 56); u.position.y = y; root.add(u); // unit circle = the equator's shadow
       root.add(line([new THREE.Vector3(-4.5, y, 0), new THREE.Vector3(4.5, y, 0)], 0x555555, 0.5));
       root.add(line([new THREE.Vector3(0, y, -4.5), new THREE.Vector3(0, y, 4.5)], 0x555555, 0.5));
     });
     root.add(makeMarker(N, 0xc8c8c8, 0.07));
     root.add(makeMarker(S, 0x8a8a8a, 0.07));
 
-    // the four operators, resident on the ∞-plane (the ν-chart): gods have
-    // ν < 1 → INSIDE the unit circle, clustered near ∞; demons have ν > 1 →
-    // OUTSIDE. One quadrant each, per the complex-plane game.
-    [[0.9, 0.9, GOD], [-0.9, 0.9, GOD], [-2.2, -2.2, DEMON], [2.2, -2.2, DEMON]]
+    // four quadrant probes on the ∞-plane (the ν-chart): balanced/foresight
+    // samples stay inside the unit circle; means-heavy samples fall outside.
+    [[0.9, 0.9, FORESIGHT], [-0.9, 0.9, FORESIGHT], [-2.2, -2.2, MEANS], [2.2, -2.2, MEANS]]
       .forEach((o) => root.add(makeMarker(new THREE.Vector3(o[0], r, o[1]), o[2], 0.06)));
 
-    // MAP THE GODS INTO QUADRANTS, AND SHADE WHERE THEY OVERLAP. The ∞-plane
-    // splits by two axes: Im (z) = god ⁄ demon (above ⁄ below the equator),
-    // Re (x) = give ⁄ take. Four quadrants = the four operators:
-    //   +x +z Arjuna (god·give)   −x +z Kṛṣṇa (god·give)
-    //   −x −z Kali  (demon·take)  +x −z Kālī  (demon·take)
+    // Map the instrument into quadrants without moralizing the geometry. The
+    // ∞-plane splits by two axes: Im(z) = foresight-heavy / means-heavy,
+    // Re(x) = outward / inward move orientation.
     // The OVERLAP is the unit-circle disc (the equator's shadow): the region
     // where the φ-chart and ν-chart coincide and all four moves meet at balance
-    // — ⊙1, L4. Gods cluster inside it (φ>1, near ∞); demons fall outside.
+    // — ⊙1, L4. It is a calibrated target band, not an automatic moral verdict.
     const quadTint = (sx, sz, color) => {
       const m = new THREE.Mesh(
         new THREE.PlaneGeometry(U, U),
@@ -1409,11 +1406,11 @@ function buildScene(mode, scene) {
       m.position.set(sx * U / 2, r + 0.004, sz * U / 2);
       root.add(m);
     };
-    quadTint(1, 1, GOD); quadTint(-1, 1, GOD);            // Im>0 — the two gods
-    quadTint(-1, -1, DEMON); quadTint(1, -1, DEMON);      // Im<0 — the two demons
+    quadTint(1, 1, FORESIGHT); quadTint(-1, 1, FORESIGHT); // Im>0 — Φ-heavy
+    quadTint(-1, -1, MEANS); quadTint(1, -1, MEANS);       // Im<0 — V-heavy
     const overlap = new THREE.Mesh(
       new THREE.CircleGeometry(U, 48),
-      new THREE.MeshBasicMaterial({ color: GOD, transparent: true, opacity: 0.16, side: THREE.DoubleSide, depthWrite: false }));
+      new THREE.MeshBasicMaterial({ color: FORESIGHT, transparent: true, opacity: 0.16, side: THREE.DoubleSide, depthWrite: false }));
     overlap.rotation.x = -Math.PI / 2; overlap.position.y = r + 0.006; root.add(overlap); // the balance overlap (⊙1 / L4)
 
     // THE TRANSCENDENTALS ARE THE STATIONS OF THE GEOMETRY ITSELF — the
@@ -1425,16 +1422,16 @@ function buildScene(mode, scene) {
     root.add(makeMarker(new THREE.Vector3(0, 0, 0), 0xffeb3b, 0.055)); // ⊙ — the One at the centre (Viṣṇu's sign)
 
     const pMark = makeMarker(new THREE.Vector3(r, 0, 0), 0xffffff, 0.085); // P — where the two rays meet
-    const rayDown = line([N, new THREE.Vector3(U, -r, 0)], GOD, 0.8);  // ∞ → P → floor: lands at 2r·φ
-    const rayUp = line([S, new THREE.Vector3(U, r, 0)], GOD, 0.8);     // 0 → P → top: lands at 2r·ν
-    const phiPt = makeMarker(new THREE.Vector3(U, -r, 0), GOD, 0.07);  // the φ landing (floor)
-    const nuPt = makeMarker(new THREE.Vector3(U, r, 0), GOD, 0.07);    // the ν landing (top)
+    const rayDown = line([N, new THREE.Vector3(U, -r, 0)], FORESIGHT, 0.8);  // ∞ → P → floor: lands at 2r·φ
+    const rayUp = line([S, new THREE.Vector3(U, r, 0)], FORESIGHT, 0.8);     // 0 → P → top: lands at 2r·ν
+    const phiPt = makeMarker(new THREE.Vector3(U, -r, 0), FORESIGHT, 0.07);  // the φ landing (floor)
+    const nuPt = makeMarker(new THREE.Vector3(U, r, 0), FORESIGHT, 0.07);    // the ν landing (top)
     root.add(pMark); root.add(rayDown); root.add(rayUp); root.add(phiPt); root.add(nuPt);
 
     // the two spiral trails traced by the landings — reciprocal radii
     const TRAIL = 150, phiTrail = [], nuTrail = [], pointTrail = [];
-    const phiDots = createPointTrace(TRAIL, 0xffeb3b, 0.48, 0.026);
-    const nuDots = createPointTrace(TRAIL, 0x42a5f5, 0.46, 0.026);
+    const phiDots = createPointTrace(TRAIL, FORESIGHT, 0.48, 0.026);
+    const nuDots = createPointTrace(TRAIL, MEANS, 0.46, 0.026);
     const pointDots = createPointTrace(TRAIL, 0xffffff, 0.4, 0.021);
     if (visual) {
       visual.addEventListener("instrument:zero", () => {
@@ -1446,8 +1443,8 @@ function buildScene(mode, scene) {
     const phiLine = line([new THREE.Vector3(U, -r, 0)], 0xffeb3b, 0.24);
     const nuLine = line([new THREE.Vector3(U, r, 0)], 0x42a5f5, 0.24);
     const pointLine = line([new THREE.Vector3(r, 0, 0)], 0xffffff, 0.18);
-    const phiRange = createTickedRing(U, GOD, 0.2, 56);
-    const nuRange = createTickedRing(U, 0x42a5f5, 0.2, 56);
+    const phiRange = createTickedRing(U, FORESIGHT, 0.2, 56);
+    const nuRange = createTickedRing(U, MEANS, 0.2, 56);
     phiRange.position.y = -r + 0.01;
     nuRange.position.y = r + 0.01;
     root.add(phiRange, nuRange, phiLine, nuLine, pointLine, phiDots.mesh, nuDots.mesh, pointDots.mesh);
@@ -1516,8 +1513,8 @@ function buildScene(mode, scene) {
       nuRange.visible = Number.isFinite(nu);
       const BALANCE_EPSILON = 0.015;
       const isBalance = Math.abs(phi - 1) <= BALANCE_EPSILON;        // the equator: Φ = V = 1
-      const isGod = phi > 1 + BALANCE_EPSILON;                       // P above the equator
-      const col = isBalance || isGod ? GOD : DEMON;
+      const isForesightDominant = phi > 1 + BALANCE_EPSILON;         // P above the equator
+      const col = isBalance ? BALANCED : isForesightDominant ? FORESIGHT : MEANS;
       [pMark, phiPt, nuPt].forEach((m) => m.material.color.setHex(col));
       rayDown.material.color.setHex(col);
       rayUp.material.color.setHex(col);
@@ -1535,26 +1532,29 @@ function buildScene(mode, scene) {
       root.rotation.y = 0;
       const q = quadName[Math.floor((((psi % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI)) / (Math.PI / 2)) % 4];
       const opName = isBalance
-        ? "L4/L5 balance gate"
-        : isGod
-        ? (cps < 0 ? "Φ-dominant quadrant" : "Φ-dominant quadrant")
-        : (cps < 0 ? "V-dominant quadrant" : "V-dominant quadrant");
+        ? "equator calibration"
+        : isForesightDominant
+          ? "Φ-dominant sector"
+          : "V-dominant sector";
       const moveName = isBalance
-        ? "BALANCE (Φ=V=1)"
-        : isGod
-          ? "FORESIGHT-DOMINANT (Φ > V)"
-          : "MEANS-DOMINANT (V > Φ)";
+        ? "BALANCED (Φ≈V≈1)"
+        : isForesightDominant
+          ? "FORESIGHT-DOMINANT (Φ proxy > V proxy)"
+          : "MEANS-DOMINANT (V proxy > Φ proxy)";
       const balance = Math.sin(theta);
+      const imbalance = Math.abs(Math.log(Math.max(phi, 1e-6)));
+      const energyCost = 1 / Math.max(balance, 1e-6);
       setInstrumentMetric(
-        "B " + balance.toFixed(3) + " · |φν-1| " + Math.abs(phi * nu - 1).toExponential(1),
+        "B " + balance.toFixed(3) + " · γ " + energyCost.toFixed(2),
         thetaUserActive ? "manual latitude" : "reciprocal sweep",
         "phase " + (((psi % TAU) + TAU) % TAU / TAU).toFixed(2)
       );
       if (readout) readout.textContent =
-        "D5 BURRISPHERE · dual rays meet at P\n" +
-        "θ " + (theta * 180 / Math.PI).toFixed(0) + "°" + (thetaUserActive ? " held" : " sweep") + " · φ " + phi.toFixed(2) + " · ν " + nu.toFixed(2) + " · φ·ν=1 · B=sinθ " + balance.toFixed(3) + "\n" +
-        "P_node = Φ × V; either missing factor collapses the move\n" +
-        "quadrant " + q + " · " + opName + " · class " + moveName;
+        "D5 BURRISPHERE · Φ/V BALANCE ASSAY\n" +
+        "θ " + (theta * 180 / Math.PI).toFixed(0) + "°" + (thetaUserActive ? " held" : " sweep") + " · φ " + phi.toFixed(2) + " · ν " + nu.toFixed(2) + " · φ·ν=1\n" +
+        "B=sinθ " + balance.toFixed(3) + " · γ=1/B " + energyCost.toFixed(2) + " · |lnφ| " + imbalance.toFixed(2) + "\n" +
+        "finite action: P_node = Φ × V; zero or runaway factor collapses the move\n" +
+        "quadrant " + q + " · " + opName + " · " + moveName;
     });
   }
 
