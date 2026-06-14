@@ -1,0 +1,42 @@
+{
+  "claim_boundary": "This is an executable proof-of-method for the macro-constraint protocol, not biological evidence and not a claim that life has been explained.",
+  "commands": [
+    "python3 -m unittest test_vesicle_macro_constraint.py",
+    "python3 vesicle_macro_constraint.py"
+  ],
+  "evidence_tier": "[B] toy-model receipt only; [C] for biology",
+  "file_hashes": {
+    "README.md": "c2a40a34f43e7219cc221539c23b5f06023dda0deecce06d970650a953443054",
+    "test_vesicle_macro_constraint.py": "9b6ae0ae93f8bc99719962eab592a9d3a63af7f7f5bd0cd7aee28c5d83b0614d",
+    "vesicle_macro_constraint.py": "acfabbaaecf52ad78daf37247a53e4b156f3c2a85dd434e5fd4a687342abdc83"
+  },
+  "frozen_objects": {
+    "Cost_C": {
+      "Cost_control": 0.015,
+      "Cost_entropy_export": 0.01,
+      "Cost_erasure": 0.005,
+      "Cost_measure": 0.01,
+      "Cost_memory": 0.01,
+      "Cost_model": 0.01
+    },
+    "G_C": "membrane gate preserving macro concentration topology",
+    "K_X": "binomial diffusion transition kernel",
+    "X": "internal molecule count in finite two-compartment vesicle model",
+    "Y": [
+      "low",
+      "viable",
+      "high"
+    ],
+    "epsilon": 0.01,
+    "pi": "macro map from count to low / viable / high"
+  },
+  "manifest_version": "macro-constraint-freeze-v1",
+  "report_file": "vesicle_macro_constraint_report.json",
+  "report_sha256": "0d9bca34af03a4e569aeae78089aadb23f9878057f308b82a14a865e20e6ecb8",
+  "report_witness": {
+    "perturbation_kl": "0.141286",
+    "support_subset": true,
+    "syn_c": "0.785347",
+    "w_c": "0.425356"
+  }
+}

@@ -42,7 +42,8 @@ quantum-to-agency continuity claim contracts before rhetoric expands.
 deterministic toy vesicle model and unit tests. Its current report is a `[B]`
 receipt only for that toy model (`W_C=0.425356`, `SYN_C=0.785347`,
 `KL=0.141286`); biological claims remain `[C]` until a frozen domain run is
-executed.
+executed. The same command writes `FREEZE_MANIFEST.json`, which records the
+report hash, file hashes, commands, and frozen objects for the toy run.
 
 ---
 
@@ -183,6 +184,11 @@ entropy export were hidden.
 
 Do not score any result until this block is complete.
 
+For the toy harness, the freeze block is represented by
+`physics_to_biology_harness/FREEZE_MANIFEST.json`. For any real biology-facing
+run, create a new companion result file and manifest rather than overwriting
+the toy receipt.
+
 ---
 
 ## Public Interpretation Rule
@@ -212,7 +218,8 @@ Empirical Program Board. The framework survives by contracting quickly.
 2. For the toy proof-of-method harness, run
    `python3 -m unittest test_vesicle_macro_constraint.py` and
    `python3 vesicle_macro_constraint.py` from
-   `physics_to_biology_harness/`.
+   `physics_to_biology_harness/`. The second command regenerates both
+   `vesicle_macro_constraint_report.json` and `FREEZE_MANIFEST.json`.
 3. Do not modify this run sheet after real domain results are inspected. Add a
    companion result file instead.
 4. Treat a simulation as a `[B]` receipt only for the declared model. External

@@ -7,7 +7,9 @@ from vesicle_macro_constraint import (
     DEFAULT_CONFIG,
     build_lower_kernel,
     build_constrained_kernel,
+    freeze_manifest,
     macro_constraint_report,
+    write_freeze_manifest,
     write_report,
 )
 
@@ -48,6 +50,42 @@ class VesicleMacroConstraintTests(unittest.TestCase):
         self.assertIn("not biological evidence", parsed["claim_boundary"])
         self.assertIn("support(K_X^C) subset support(K_X)", parsed["closure"])
         self.assertIn("Cost_entropy_export", parsed["cost_ledger"])
+
+    def test_freeze_manifest_records_hashes_and_frozen_objects(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            tmp_path = Path(tmpdir)
+            report_path = tmp_path / "vesicle_macro_constraint_report.json"
+            write_report(report_path, DEFAULT_CONFIG)
+
+            manifest = freeze_manifest(report_path=report_path)
+
+        self.assertEqual(manifest["manifest_version"], "macro-constraint-freeze-v1")
+        self.assertEqual(manifest["evidence_tier"], "[B] toy-model receipt only; [C] for biology")
+        self.assertEqual(manifest["report_witness"]["w_c"], "0.425356")
+        self.assertEqual(manifest["report_witness"]["syn_c"], "0.785347")
+        self.assertEqual(manifest["report_witness"]["perturbation_kl"], "0.141286")
+        self.assertIn("X", manifest["frozen_objects"])
+        self.assertIn("K_X", manifest["frozen_objects"])
+        self.assertIn("pi", manifest["frozen_objects"])
+        self.assertIn("G_C", manifest["frozen_objects"])
+        self.assertIn("Cost_C", manifest["frozen_objects"])
+        self.assertIn("python3 -m unittest test_vesicle_macro_constraint.py", manifest["commands"])
+        self.assertIn("vesicle_macro_constraint.py", manifest["file_hashes"])
+        self.assertRegex(manifest["file_hashes"]["vesicle_macro_constraint.py"], r"^[0-9a-f]{64}$")
+        self.assertRegex(manifest["report_sha256"], r"^[0-9a-f]{64}$")
+
+    def test_freeze_manifest_export_is_deterministic_json(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            tmp_path = Path(tmpdir)
+            report_path = tmp_path / "vesicle_macro_constraint_report.json"
+            manifest_path = tmp_path / "FREEZE_MANIFEST.json"
+            write_report(report_path, DEFAULT_CONFIG)
+
+            manifest = write_freeze_manifest(manifest_path, report_path=report_path)
+            parsed = json.loads(manifest_path.read_text(encoding="utf-8"))
+
+        self.assertEqual(parsed, manifest)
+        self.assertEqual(list(parsed["file_hashes"].keys()), sorted(parsed["file_hashes"].keys()))
 
 
 if __name__ == "__main__":

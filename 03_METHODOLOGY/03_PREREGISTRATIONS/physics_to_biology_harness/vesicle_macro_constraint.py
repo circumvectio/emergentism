@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import json
 import math
+import hashlib
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Iterable
@@ -41,6 +42,12 @@ class VesicleConfig:
 
 DEFAULT_CONFIG = VesicleConfig()
 MACRO_STATES = ("low", "viable", "high")
+HARNESS_DIR = Path(__file__).resolve().parent
+HASHED_FILES = (
+    "README.md",
+    "test_vesicle_macro_constraint.py",
+    "vesicle_macro_constraint.py",
+)
 
 
 def binomial_probability(n: int, k: int, p: float) -> float:
@@ -264,13 +271,80 @@ def write_report(path: Path, config: VesicleConfig = DEFAULT_CONFIG) -> dict:
     return report
 
 
+def sha256_file(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def freeze_manifest(
+    report_path: Path,
+    config: VesicleConfig = DEFAULT_CONFIG,
+    harness_dir: Path = HARNESS_DIR,
+) -> dict:
+    report = json.loads(report_path.read_text(encoding="utf-8"))
+    hashed_paths = {name: harness_dir / name for name in HASHED_FILES}
+    file_hashes = {
+        name: sha256_file(path) for name, path in sorted(hashed_paths.items())
+    }
+    witness = report["witness"]
+    syntropy = report["syntropy"]
+
+    return {
+        "manifest_version": "macro-constraint-freeze-v1",
+        "evidence_tier": report["evidence_tier"],
+        "claim_boundary": report["claim_boundary"],
+        "commands": [
+            "python3 -m unittest test_vesicle_macro_constraint.py",
+            "python3 vesicle_macro_constraint.py",
+        ],
+        "frozen_objects": {
+            "X": "internal molecule count in finite two-compartment vesicle model",
+            "K_X": "binomial diffusion transition kernel",
+            "pi": "macro map from count to low / viable / high",
+            "Y": list(MACRO_STATES),
+            "G_C": "membrane gate preserving macro concentration topology",
+            "Cost_C": cost_ledger(config),
+            "epsilon": config.epsilon,
+        },
+        "report_file": report_path.name,
+        "report_sha256": sha256_file(report_path),
+        "file_hashes": file_hashes,
+        "report_witness": {
+            "w_c": f"{witness['w_c']:.6f}",
+            "syn_c": f"{syntropy['syn_c']:.6f}",
+            "perturbation_kl": f"{report['perturbation_kl']:.6f}",
+            "support_subset": report["support_subset"],
+        },
+    }
+
+
+def write_freeze_manifest(
+    path: Path,
+    report_path: Path,
+    config: VesicleConfig = DEFAULT_CONFIG,
+    harness_dir: Path = HARNESS_DIR,
+) -> dict:
+    manifest = freeze_manifest(report_path=report_path, config=config, harness_dir=harness_dir)
+    path.write_text(
+        json.dumps(manifest, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    return manifest
+
+
 def main() -> int:
     output = Path(__file__).with_name("vesicle_macro_constraint_report.json")
     report = write_report(output)
+    manifest_output = Path(__file__).with_name("FREEZE_MANIFEST.json")
+    write_freeze_manifest(manifest_output, report_path=output)
     print(
         f"{output.name}: W_C={report['witness']['w_c']:.6f}, "
         f"SYN_C={report['syntropy']['syn_c']:.6f}, "
-        f"KL={report['perturbation_kl']:.6f}"
+        f"KL={report['perturbation_kl']:.6f}; "
+        f"{manifest_output.name} written"
     )
     return 0
 

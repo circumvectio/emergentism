@@ -13,6 +13,11 @@ python3 -m unittest test_vesicle_macro_constraint.py
 python3 vesicle_macro_constraint.py
 ```
 
+The second command writes both:
+
+- `vesicle_macro_constraint_report.json`
+- `FREEZE_MANIFEST.json`
+
 The harness declares:
 
 - `X`: internal molecule count in a finite two-compartment system
@@ -32,6 +37,18 @@ W_C   = 0.425356
 SYN_C = 0.785347
 KL    = 0.141286
 ```
+
+Current freeze manifest:
+
+```text
+manifest_version = macro-constraint-freeze-v1
+report_sha256    = recorded in FREEZE_MANIFEST.json
+file_hashes      = README.md, test_vesicle_macro_constraint.py, vesicle_macro_constraint.py
+frozen_objects   = X, K_X, pi, Y, G_C, Cost_C, epsilon
+```
+
+The manifest is the freeze receipt for this toy run. If any harness file or the
+report changes, regenerate it before citing the receipt.
 
 Safe interpretation:
 
