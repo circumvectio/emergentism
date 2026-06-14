@@ -3,7 +3,7 @@ import {
   createStripChart as createSharedStripChart,
   clearStripChart as clearSharedStripChart,
   updateStripChart as updateSharedStripChart
-} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-18";
+} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-19";
 
 const page = window.DIMENSION_PAGE || {};
 const canvas = document.querySelector(".dimension-canvas");
@@ -25,10 +25,18 @@ const INSTRUMENT_CPS = {
   fast: 0.044
 };
 const INSTRUMENT_AZIMUTH_RPS = 0.0065;
+const DESKTOP_PIXEL_RATIO_CAP = 1.45;
+const MOBILE_PIXEL_RATIO_CAP = 1.2;
 function nowMs() {
   return (typeof window.performance !== "undefined" && typeof window.performance.now === "function")
     ? window.performance.now()
     : Date.now();
+}
+
+function instrumentPixelRatio() {
+  const ratio = window.devicePixelRatio || 1;
+  const cap = window.innerWidth < 720 ? MOBILE_PIXEL_RATIO_CAP : DESKTOP_PIXEL_RATIO_CAP;
+  return Math.min(ratio, cap);
 }
 
 function scheduleFrame(callback) {
@@ -589,7 +597,7 @@ function setupCanvas2D() {
 
   function resize() {
     const bounds = visual.getBoundingClientRect();
-    const ratio = Math.min(window.devicePixelRatio || 1, 2);
+    const ratio = instrumentPixelRatio();
     canvas.width = Math.max(1, Math.floor(bounds.width * ratio));
     canvas.height = Math.max(1, Math.floor(bounds.height * ratio));
     canvas.style.width = `${bounds.width}px`;
@@ -1731,7 +1739,7 @@ function buildScene(mode, scene) {
       readout.style.whiteSpace = "pre-line";
       readout.style.maxWidth = "min(440px, 46%)";
       readout.style.top = "auto";
-      readout.style.bottom = "70px";
+      readout.style.bottom = "92px";
       readout.classList.add("instrument-readout", "horn-readout");
     }
     const W_MAX = 4.5;                                          // ends: v/c -> 0.9998, γ -> ~45
@@ -1846,7 +1854,7 @@ function buildScene(mode, scene) {
     const FORESIGHT = 0xffeb3b, MEANS = 0x42a5f5, BALANCED = 0xf3f4f6;
     const U = 2 * r;                                                 // unit-circle radius on a tangent plane
 
-    root.add(createSphere(r, 0.18));
+    root.add(createSphere(r, 0.18, 72, 36));
     root.add(ring(r, FORESIGHT, 0.66));                                // the equator — Φ/V balance boundary on the sphere
     [0.45, 0.8].forEach((y) => {
       const lat = ring(Math.sqrt(r * r - y * y), 0x666666, 0.18);
@@ -1856,8 +1864,8 @@ function buildScene(mode, scene) {
 
     // the two tangent copies of the same complex plane (floor at 0, top at ∞)
     [-r, r].forEach((y) => {
-      const g = createGridPlane(9.0, 21); g.position.y = y; root.add(g);
-      const u = createTickedRing(U, FORESIGHT, 0.32, 56); u.position.y = y; root.add(u); // unit circle = the equator's shadow
+      const g = createGridPlane(9.0, 17); g.position.y = y; root.add(g);
+      const u = createTickedRing(U, FORESIGHT, 0.32, 48); u.position.y = y; root.add(u); // unit circle = the equator's shadow
       root.add(line([new THREE.Vector3(-4.5, y, 0), new THREE.Vector3(4.5, y, 0)], 0x555555, 0.28));
       root.add(line([new THREE.Vector3(0, y, -4.5), new THREE.Vector3(0, y, 4.5)], 0x555555, 0.28));
     });
@@ -1912,7 +1920,7 @@ function buildScene(mode, scene) {
     addSceneLabel(root, "ν landing", new THREE.Vector3(U + 0.34, r + 0.08, 0.12), MEANS, [0.78, 0.13]);
 
     // the two spiral trails traced by the landings — reciprocal radii
-    const TRAIL = 150, phiTrail = [], nuTrail = [], pointTrail = [];
+    const TRAIL = 96, phiTrail = [], nuTrail = [], pointTrail = [];
     const phiDots = createPointTrace(TRAIL, FORESIGHT, 0.48, 0.026);
     const nuDots = createPointTrace(TRAIL, MEANS, 0.46, 0.026);
     const pointDots = createPointTrace(TRAIL, 0xffffff, 0.4, 0.021);
@@ -1941,7 +1949,7 @@ function buildScene(mode, scene) {
     if (readout) {
       readout.style.whiteSpace = "pre-line";
       readout.style.top = "auto";
-      readout.style.bottom = "70px";
+      readout.style.bottom = "92px";
       readout.style.maxWidth = "min(520px, 52%)";
       readout.classList.add("instrument-readout", "burrisphere-readout");
     }
@@ -2246,7 +2254,7 @@ async function boot() {
       alpha: true,
       preserveDrawingBuffer: true
     });
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setPixelRatio(instrumentPixelRatio());
     renderer.setClearColor(0x050505, 1);
 
     const scene = new THREE.Scene();
@@ -2290,6 +2298,7 @@ async function boot() {
     let simTime = INITIAL_ASSAY_SECONDS;
     let stepSeconds = 0;
     const sampleClock = createSampleClock();
+    sampleClock.index = Math.round(simTime * SAMPLE_HZ);
     if (playback) {
       playback.hold.addEventListener("click", () => {
         paused = !paused;
@@ -2321,6 +2330,7 @@ async function boot() {
 
     function resize() {
       const bounds = visual.getBoundingClientRect();
+      renderer.setPixelRatio(instrumentPixelRatio());
       renderer.setSize(bounds.width, bounds.height, false);
       camera.aspect = bounds.width / Math.max(bounds.height, 1);
       camera.updateProjectionMatrix();

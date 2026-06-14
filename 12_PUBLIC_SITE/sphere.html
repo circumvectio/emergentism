@@ -109,7 +109,7 @@
 }}
 </script>
 <script type="module">
-import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-18';
+import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-19';
 
 let THREE, OrbitControls;
 try {
@@ -122,6 +122,8 @@ const REDUCED_MOTION = !!(window.matchMedia
 const SAMPLE_HZ = 30;
 const SAMPLE_MS = 1000 / SAMPLE_HZ;
 const MAX_FRAME_MS = 120;
+const DESKTOP_PIXEL_RATIO_CAP = 1.45;
+const MOBILE_PIXEL_RATIO_CAP = 1.2;
 const GOLD = 0xffeb3b, TEAL = 0x2196f3, CRIMSON = 0xf44336, VIOLET = 0x8b5cf6, WHITE = 0xf3f4f6;
 const POSITION_SCAN_MS = 4200;
 // the seven positions (read off 00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md / the Master Rosetta)
@@ -137,7 +139,11 @@ const POS = [
 
 const canvas = document.getElementById('scene');
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true });
-renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+function instrumentPixelRatio() {
+  const ratio = window.devicePixelRatio || 1;
+  return Math.min(ratio, innerWidth < 720 ? MOBILE_PIXEL_RATIO_CAP : DESKTOP_PIXEL_RATIO_CAP);
+}
+renderer.setPixelRatio(instrumentPixelRatio());
 renderer.setSize(innerWidth, innerHeight);
 renderer.setClearColor(0x050505, 1);
 const scene = new THREE.Scene();
@@ -524,6 +530,7 @@ controls.addEventListener('change', () => {
 if (REDUCED_MOTION) render(0); else scheduleFrame(render);
 addEventListener('resize', () => {
   frameSphereCamera();
+  renderer.setPixelRatio(instrumentPixelRatio());
   renderer.setSize(innerWidth, innerHeight);
   if (REDUCED_MOTION) render(0);
 });
