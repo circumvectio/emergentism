@@ -49,7 +49,7 @@
 <button class="nav" id="next" aria-label="next">›</button>
 <div class="standalone-telemetry" id="cascade-telemetry" aria-hidden="true">
   <span data-field="mode">cascade assay</span>
-  <span data-field="fps">-- fps</span>
+  <span data-field="fps">display sync</span>
   <span data-field="sample">sample --</span>
   <span data-field="time">t+0.00s</span>
   <span data-field="phase">phase --</span>
@@ -101,7 +101,7 @@
 }}
 </script>
 <script type="module">
-import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-16';
+import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-17';
 
 let THREE, OrbitControls;
 try {
@@ -259,13 +259,17 @@ function shapeHorn(u, v){
   return [(Rr + a * Math.cos(ps)) * Math.cos(ph), a * Math.sin(ps), (Rr + a * Math.cos(ps)) * Math.sin(ph)];
 }
 const SHAPES = [shapeLine, shapePlane, shapeSphere, shapeHorn, shapeSphere]; // last = Burrisphere
+function smooth01(x) {
+  return x * x * (3 - 2 * x);
+}
+
 function assaySweep01(t, cyclesPerSecond = 0.04, holdFraction = 0.08) {
   const hold = Math.max(0, Math.min(0.24, holdFraction));
   const p = ((t * cyclesPerSecond) % 1 + 1) % 1;
   const half = p < 0.5 ? p * 2 : (1 - p) * 2;
   if (half <= hold) return 0;
   if (half >= 1 - hold) return 1;
-  return (half - hold) / Math.max(1e-9, 1 - 2 * hold);
+  return smooth01((half - hold) / Math.max(1e-9, 1 - 2 * hold));
 }
 function morphAt(u, v, mt){
   const seg = Math.max(0, Math.min(SHAPES.length - 2, Math.floor(mt)));
@@ -553,7 +557,7 @@ function syncInstrument(){
     labFrameEl.style.setProperty('--instrument-primary', clamp01(morphCur / (SHAPES.length - 1)).toFixed(4));
   }
   setTelemetry({
-    fps: REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps'),
+    fps: REDUCED_MOTION ? 'static frame' : 'display sync',
     sample: REDUCED_MOTION ? 'sample static' : sampleLabel(),
     time: 't+' + tAccum.toFixed(2) + 's',
     phase: 'phase ' + phase.toFixed(2),
@@ -585,7 +589,7 @@ function syncInstrument(){
     'CASCADE INSTRUMENT\n' +
     'stage ' + cur + '/' + (STAGES.length - 1) + ' · ' + stageName(cur) + ' · ' + (playing ? 'RUN' : 'HOLD') + '\n' +
     'phase=' + phase.toFixed(2) + ' · target=' + morphTarget.toFixed(2) + ' · actual=' + morphCur.toFixed(2) + ' · Δ=' + lag.toFixed(3) + '\n' +
-    'clock ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · frame ' + (REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps')) + ' · rate ' + rateValue().toFixed(2) + 'x\n' +
+    'clock ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · display sync · rate ' + rateValue().toFixed(2) + 'x\n' +
     morphProbeState + '\n' +
     projectionState;
 }

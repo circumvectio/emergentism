@@ -65,7 +65,7 @@
         </div>
         <div class="instrument-telemetry">
           <span data-field="mode">Soul Loop assay</span>
-          <span data-field="fps">-- fps</span>
+          <span data-field="fps">display sync</span>
           <span data-field="sample">sample --</span>
           <span data-field="time">t+0.00s</span>
           <span data-field="phase">phase --</span>
@@ -581,7 +581,7 @@
     const overlay = visual ? visual.querySelector('.soul-loop-overlay') : null;
     if (overlay) {
       const fields = {
-        fps: REDUCED_MOTION ? 'static' : fps.toFixed(0) + ' fps',
+        fps: REDUCED_MOTION ? 'static frame' : 'display sync',
         sample: REDUCED_MOTION ? 'sample static' : sampleLabel(),
         time: 't+' + (t / 1000).toFixed(2) + 's',
         phase: 'phase ' + phase.toFixed(2),

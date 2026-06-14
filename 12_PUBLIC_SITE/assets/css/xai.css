@@ -1501,6 +1501,133 @@ body.soul-loop-instrument .instrument-measurements {
   text-align: right;
 }
 
+/* Instrument-grade refinement pass: retain the lab grammar, reduce HUD glare. */
+.instrument-visual::after {
+  opacity: 0.038;
+}
+
+.instrument-overlay {
+  border-color: rgba(243, 244, 246, 0.075);
+  box-shadow:
+    inset 0 0 0 1px rgba(5, 5, 5, 0.9),
+    inset 0 0 0 12px rgba(243, 244, 246, 0.004);
+}
+
+.instrument-overlay::before {
+  border-color: rgba(243, 244, 246, 0.09);
+}
+
+.instrument-overlay::after {
+  border-color: rgba(243, 244, 246, 0.04);
+}
+
+.instrument-graticule {
+  opacity: 0.052;
+}
+
+.instrument-reticle {
+  opacity: 0.044;
+}
+
+.instrument-aperture {
+  inset: 58px 72px 96px;
+  opacity: 0.17;
+}
+
+.instrument-aperture::before,
+.instrument-aperture::after {
+  background: rgba(243, 244, 246, 0.48);
+}
+
+.instrument-aperture::after {
+  background: rgba(66, 165, 245, 0.52);
+}
+
+.instrument-signal-ruler {
+  opacity: 0.64;
+}
+
+.instrument-measurements {
+  opacity: 0.84;
+}
+
+.instrument-meter,
+.instrument-telemetry span,
+.instrument-controls button,
+.instrument-controls label,
+.model-readout.instrument-readout,
+.model-slider .slider-end,
+.model-slider .slider-output {
+  background: rgba(5, 5, 5, 0.9);
+  backdrop-filter: blur(3px);
+}
+
+.instrument-meter {
+  border-color: rgba(243, 244, 246, 0.06);
+}
+
+.instrument-meter b {
+  background: linear-gradient(90deg, rgba(66,165,245,0.54), rgba(243,244,246,0.68));
+}
+
+.instrument-meter.error b {
+  background: linear-gradient(90deg, rgba(76,175,80,0.4), rgba(255,122,23,0.58));
+}
+
+.instrument-telemetry span,
+.instrument-controls button,
+.instrument-controls label {
+  border-color: rgba(243, 244, 246, 0.12);
+}
+
+.instrument-controls button {
+  min-width: 3.25rem;
+}
+
+.instrument-controls button,
+.instrument-controls label,
+.model-slider .slider-end,
+.model-slider .slider-output {
+  box-shadow: 0 0 0 1px rgba(5, 5, 5, 0.56);
+}
+
+.model-readout.instrument-readout {
+  max-height: min(22vh, 140px) !important;
+  border-left-width: 2px !important;
+}
+
+.instrument-mode-burrisphere .instrument-measurements,
+.instrument-mode-ccc .instrument-measurements {
+  top: 58px;
+}
+
+body.soul-loop-instrument .instrument-overlay {
+  opacity: 0.76;
+}
+
+body.soul-loop-instrument .instrument-graticule {
+  opacity: 0.12;
+}
+
+body.soul-loop-instrument .instrument-reticle {
+  opacity: 0.18;
+}
+
+.lab-frame {
+  opacity: 0.22;
+}
+
+.standalone-telemetry span,
+.instrument-spec,
+.standalone-measurements {
+  background: rgba(5, 5, 5, 0.9);
+  backdrop-filter: blur(3px);
+}
+
+.standalone-telemetry span {
+  border-color: rgba(243, 244, 246, 0.12);
+}
+
 @media (prefers-reduced-transparency: reduce) {
   .instrument-meter,
   .instrument-telemetry span,
@@ -1575,10 +1702,13 @@ body.webgl-failed .fallback {
 }
 
 .chapter {
+  display: block;
   margin-bottom: 96px;
 }
 
 .chapter-body {
+  width: 100%;
+  min-width: 0;
   max-width: 840px;
 }
 
@@ -2269,6 +2399,8 @@ pre.glyph-block {
 @media (max-width: 720px) {
   .topbar {
     padding: 0 16px;
+    width: 100dvw;
+    max-width: 100dvw;
   }
 
   .topbar .number-nav {
@@ -2276,8 +2408,19 @@ pre.glyph-block {
     gap: 10px;
   }
 
+  .topbar .topbar-inner {
+    min-width: 0;
+  }
+
+  .topbar .routes {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
   .topbar .number-nav a,
-  .topbar .number-nav span {
+  .topbar .number-nav span,
+  .topbar .route,
+  .topbar .nav-route {
     min-width: var(--target-min);
   }
 
@@ -2427,6 +2570,7 @@ pre.glyph-block {
 
   .instrument-aperture {
     inset: 54px 18px 118px;
+    opacity: 0.14;
   }
 
   .instrument-telemetry span[data-field="time"],

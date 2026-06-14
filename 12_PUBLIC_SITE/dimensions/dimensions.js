@@ -3,7 +3,7 @@ import {
   createStripChart as createSharedStripChart,
   clearStripChart as clearSharedStripChart,
   updateStripChart as updateSharedStripChart
-} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-16";
+} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-17";
 
 const page = window.DIMENSION_PAGE || {};
 const canvas = document.querySelector(".dimension-canvas");
@@ -128,7 +128,7 @@ function assaySweep01(t, cyclesPerSecond = 0.045, holdFraction = 0.035) {
   const half = p < 0.5 ? p * 2 : (1 - p) * 2;
   if (half <= hold) return 0;
   if (half >= 1 - hold) return 1;
-  return (half - hold) / Math.max(1e-9, 1 - (2 * hold));
+  return smooth01((half - hold) / Math.max(1e-9, 1 - (2 * hold)));
 }
 
 function phase01(t, cyclesPerSecond = 0.045, offset = 0) {
@@ -394,7 +394,7 @@ function ensureInstrumentOverlay(mode = animationMode) {
     <div class="instrument-telemetry">
       <span data-field="mode">${modeLabels[mode] || mode}</span>
       <span data-field="invariant">${modeInvariants[mode] || "calibrated"}</span>
-      <span data-field="fps">-- fps</span>
+      <span data-field="fps">display sync</span>
       <span data-field="sample">sample --</span>
       <span data-field="time">t+0.00s</span>
       <span data-field="phase">phase --</span>
@@ -475,7 +475,7 @@ function updateInstrumentOverlay(overlay, t, fps) {
   const uncertaintyField = overlay.querySelector('[data-field="uncertainty"]');
   const stateField = overlay.querySelector('[data-field="state"]');
   if (timeField) timeField.textContent = "t+" + t.toFixed(2) + "s";
-  if (fpsField) fpsField.textContent = REDUCED_MOTION ? "static" : fps.toFixed(0) + " fps";
+  if (fpsField) fpsField.textContent = REDUCED_MOTION ? "static frame" : "display sync";
   if (sampleField) sampleField.textContent = visual.dataset.instrumentSample || "sample --";
   if (phaseField) phaseField.textContent = visual.dataset.instrumentPhase || "phase --";
   if (metricField) metricField.textContent = visual.dataset.instrumentMetric || "sample --";
