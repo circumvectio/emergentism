@@ -61,6 +61,7 @@
   <span data-field="time">t+0.00s</span>
   <span data-field="phase">position 3/6</span>
   <span data-field="metric">B 1.000</span>
+  <span data-field="uncertainty">σ --</span>
   <span data-field="state">SCAN</span>
 </div>
 <div id="stage-readout" aria-live="polite">BURRISPHERE INSTRUMENT</div>
@@ -130,7 +131,19 @@ const camera = new THREE.PerspectiveCamera(46, innerWidth/innerHeight, 0.1, 100)
 camera.position.set(2.4, 0.9, 4.4);
 const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = true; controls.dampingFactor = 0.06; controls.enablePan = false;
-controls.minDistance = 3; controls.maxDistance = 9; controls.autoRotate = false; controls.autoRotateSpeed = 0;
+controls.minDistance = 3; controls.maxDistance = 12; controls.autoRotate = false; controls.autoRotateSpeed = 0;
+
+function frameSphereCamera() {
+  const portrait = innerWidth < 700 || innerHeight > innerWidth * 1.35;
+  camera.fov = portrait ? 42 : 46;
+  camera.aspect = innerWidth / innerHeight;
+  camera.position.set(portrait ? 1.05 : 2.4, portrait ? 0.68 : 0.9, portrait ? 9.2 : 4.4);
+  controls.target.set(0, portrait ? 0.1 : 0, 0);
+  camera.updateProjectionMatrix();
+  controls.update();
+}
+
+frameSphereCamera();
 
 const R = 1.5;
 const root = new THREE.Group(); scene.add(root);
@@ -307,6 +320,7 @@ function select(i, manual = false){
     time: 't+' + ((sampleIndex * SAMPLE_MS) / 1000).toFixed(2) + 's',
     phase: 'position ' + i + '/6',
     metric: 'B ' + balance.toFixed(3) + ' · |φν−1| ' + reciprocalResidual.toExponential(1),
+    uncertainty: 'σ φν ' + reciprocalResidual.toExponential(1),
     state: (scanRunning ? 'SCAN' : 'HOLD') + ' · ' + rateValue().toFixed(2) + 'x'
   });
   if (stageReadout) {
@@ -406,7 +420,7 @@ controls.addEventListener('change', () => {
 });
 if (REDUCED_MOTION) render(0); else requestAnimationFrame(render);
 addEventListener('resize', () => {
-  camera.aspect = innerWidth/innerHeight; camera.updateProjectionMatrix();
+  frameSphereCamera();
   renderer.setSize(innerWidth, innerHeight);
   if (REDUCED_MOTION) render(0);
 });

@@ -510,7 +510,7 @@ h3 {
 }
 
 .instrument-scale.x::after {
-  content: "x axis · 32 px minor · 128 px major";
+  content: attr(data-axis-label);
   position: absolute;
   right: 0;
   top: -15px;
@@ -527,10 +527,13 @@ h3 {
 }
 
 .instrument-scale.y::after {
-  content: "y";
+  content: attr(data-axis-label);
   position: absolute;
   left: 16px;
   top: 0;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  transform-origin: left top;
 }
 
 .instrument-telemetry {
@@ -541,7 +544,7 @@ h3 {
   flex-wrap: wrap;
   gap: 6px;
   align-items: center;
-  max-width: calc(100% - 360px);
+  max-width: calc(100% - 410px);
   color: rgba(243, 244, 246, 0.76);
   font: 700 10px/1 "Roboto Mono", ui-monospace, Menlo, monospace;
   font-variant-numeric: tabular-nums;
@@ -568,6 +571,10 @@ h3 {
 
 .instrument-telemetry span[data-field="phase"] {
   color: #4CAF50;
+}
+
+.instrument-telemetry span[data-field="uncertainty"] {
+  color: rgba(255, 122, 23, 0.94);
 }
 
 .instrument-telemetry span[data-field="state"] {

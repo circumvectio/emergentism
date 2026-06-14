@@ -780,7 +780,7 @@ body.soul-loop-instrument .visual-labels .bottom {
 }
 
 .instrument-scale.x::after {
-  content: "x axis · 32 px minor · 128 px major";
+  content: attr(data-axis-label);
   position: absolute;
   right: 0;
   top: -15px;
@@ -797,10 +797,13 @@ body.soul-loop-instrument .visual-labels .bottom {
 }
 
 .instrument-scale.y::after {
-  content: "y";
+  content: attr(data-axis-label);
   position: absolute;
   left: 16px;
   top: 0;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  transform-origin: left top;
 }
 
 .instrument-telemetry {
@@ -811,7 +814,7 @@ body.soul-loop-instrument .visual-labels .bottom {
   flex-wrap: wrap;
   gap: 6px;
   align-items: center;
-  max-width: calc(100% - 360px);
+  max-width: calc(100% - 410px);
   color: rgba(243, 244, 246, 0.76);
   font: 700 10px/1 "Roboto Mono", ui-monospace, Menlo, monospace;
   font-variant-numeric: tabular-nums;
@@ -838,6 +841,10 @@ body.soul-loop-instrument .visual-labels .bottom {
 
 .instrument-telemetry span[data-field="phase"] {
   color: var(--sector-insurance);
+}
+
+.instrument-telemetry span[data-field="uncertainty"] {
+  color: var(--sector-finance);
 }
 
 .instrument-telemetry span[data-field="state"] {
@@ -2032,6 +2039,12 @@ pre.glyph-block {
 .lab-frame .corner:nth-child(4) { bottom: 0; left: 0; border-width: 0 0 1px 1px; }
 .lab-frame .corner:nth-child(1)::after { content: "30 Hz sample"; left: 8px; top: 8px; }
 .lab-frame .corner:nth-child(4)::after { content: "calibrated grid"; left: 8px; bottom: 8px; }
+body.cascade-instrument .lab-frame .corner:nth-child(1)::after { content: "30 Hz morph sample"; }
+body.cascade-instrument .lab-frame .corner:nth-child(4)::after { content: "u/v mesh grid"; }
+body.sphere-instrument .lab-frame .corner:nth-child(1)::after { content: "30 Hz latitude scan"; }
+body.sphere-instrument .lab-frame .corner:nth-child(4)::after { content: "S² chart grid"; }
+body.lightcone-instrument .lab-frame .corner:nth-child(1)::after { content: "30 Hz cone sample"; }
+body.lightcone-instrument .lab-frame .corner:nth-child(4)::after { content: "c=1 calibration"; }
 .vignette {
   position: fixed; inset: 0; z-index: 1; pointer-events: none;
   background: none;
@@ -2173,6 +2186,10 @@ body.sphere-instrument > a.exit {
 
 .standalone-telemetry span[data-field="phase"] {
   color: var(--sector-insurance);
+}
+
+.standalone-telemetry span[data-field="uncertainty"] {
+  color: var(--sector-finance);
 }
 
 .standalone-telemetry span[data-field="state"] {

@@ -45,6 +45,7 @@
   <span data-field="time">t+0.00s</span>
   <span data-field="phase">phase --</span>
   <span data-field="metric">Ω --</span>
+  <span data-field="uncertainty">σ --</span>
   <span data-field="state">RUN</span>
 </div>
 <div id="stage-readout" aria-live="polite">LIGHTCONE INSTRUMENT</div>
@@ -352,6 +353,7 @@ function updateInstrument(frameTime = performance.now(), poseOffset = null){
     time: 't+' + t.toFixed(2) + 's',
     phase: 'phase ' + reach.toFixed(2),
     metric: 'Ω ' + omegaProxy.toFixed(2) + ' · dΩ/dt ' + lastOmegaRate.toFixed(2),
+    uncertainty: 'σ cone ' + coneResidual.toExponential(1),
     state: (paused ? 'HOLD' : 'RUN') + ' · ' + rate.toFixed(2) + 'x'
   });
   if (readout) readout.textContent = innerWidth < 900

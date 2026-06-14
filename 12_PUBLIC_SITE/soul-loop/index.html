@@ -56,8 +56,8 @@
         <div class="instrument-graticule"></div>
         <div class="instrument-reticle"></div>
         <div class="instrument-corners"><span></span><span></span><span></span><span></span></div>
-        <div class="instrument-scale x"></div>
-        <div class="instrument-scale y"></div>
+        <div class="instrument-scale x" data-axis-label="loop phase index"></div>
+        <div class="instrument-scale y" data-axis-label="contradiction residual"></div>
         <div class="instrument-telemetry">
           <span data-field="mode">Soul Loop assay</span>
           <span data-field="fps">-- fps</span>
@@ -65,6 +65,7 @@
           <span data-field="time">t+0.00s</span>
           <span data-field="phase">phase --</span>
           <span data-field="metric">cycle --</span>
+          <span data-field="uncertainty">σ --</span>
           <span data-field="state">recursive correction</span>
         </div>
       </div>
@@ -504,6 +505,9 @@
         time: 't+' + (t / 1000).toFixed(2) + 's',
         phase: 'phase ' + phase.toFixed(2),
         metric: 'residual ' + residualProxy.toFixed(3),
+        uncertainty: 'σ trend ' + (residualSamples.length > 2
+          ? Math.abs(residualSamples[residualSamples.length - 1] - residualSamples[residualSamples.length - 2]).toFixed(3)
+          : '0.000'),
         state: paused ? 'held frame' : 'L4 return gate'
       };
       Object.entries(fields).forEach(([key, value]) => {

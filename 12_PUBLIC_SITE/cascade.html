@@ -54,6 +54,7 @@
   <span data-field="time">t+0.00s</span>
   <span data-field="phase">phase --</span>
   <span data-field="metric">morph --</span>
+  <span data-field="uncertainty">σ --</span>
   <span data-field="state">RUN</span>
 </div>
 <div class="instrument-controls standalone-controls cascade-controls" id="cascade-controls">
@@ -426,6 +427,7 @@ function syncInstrument(){
     time: 't+' + tAccum.toFixed(2) + 's',
     phase: 'phase ' + phase.toFixed(2),
     metric: 'morph ' + morphCur.toFixed(2) + '→' + morphTarget.toFixed(2),
+    uncertainty: 'σ lag ' + Math.abs(morphTarget - morphCur).toFixed(3),
     state: (playing ? 'RUN' : 'HOLD') + ' · ' + rateValue().toFixed(2) + 'x'
   });
   if (!stageReadoutEl) return;

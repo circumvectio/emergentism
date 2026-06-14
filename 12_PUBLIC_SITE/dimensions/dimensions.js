@@ -44,6 +44,17 @@ const modeInvariants = {
   ccc: "/6 ≡ /0",
   convergence: "/6 ≡ /0"
 };
+const modeScales = {
+  titans: { x: "log coordinate s", y: "reciprocal mirror offset" },
+  logline: { x: "log₂(x) axis", y: "E=(ln x)² well" },
+  muLimit: { x: "λ along source line", y: "μ orthogonal lift" },
+  bloch: { x: "complex-plane radius", y: "sphere latitude θ" },
+  horn: { x: "rapidity w", y: "proper-time ratio dτ/dt" },
+  burrisphere: { x: "tangent-plane Re(z)", y: "tangent-plane Im(z)" },
+  constitution: { x: "fence index", y: "closure residual" },
+  ccc: { x: "aeon phase q", y: "conformal radius Ω" },
+  convergence: { x: "aeon phase q", y: "conformal radius Ω" }
+};
 const animationMode = page.animationMode === "convergence"
   ? "ccc"
   : (page.animationMode || "model");
@@ -249,6 +260,7 @@ function makeMaterial(color, opacity = 1, wireframe = false) {
 function ensureInstrumentOverlay(mode = animationMode) {
   if (!visual || visual.querySelector(".instrument-overlay")) return null;
 
+  const scale = modeScales[mode] || { x: "x instrument axis", y: "y instrument axis" };
   const overlay = document.createElement("div");
   overlay.className = "instrument-overlay";
   overlay.setAttribute("aria-hidden", "true");
@@ -258,8 +270,8 @@ function ensureInstrumentOverlay(mode = animationMode) {
       <span></span><span></span><span></span><span></span>
     </div>
     <div class="instrument-reticle"></div>
-    <div class="instrument-scale x"></div>
-    <div class="instrument-scale y"></div>
+    <div class="instrument-scale x" data-axis-label="${scale.x}"></div>
+    <div class="instrument-scale y" data-axis-label="${scale.y}"></div>
     <div class="instrument-telemetry">
       <span data-field="mode">${modeLabels[mode] || mode}</span>
       <span data-field="invariant">${modeInvariants[mode] || "calibrated"}</span>
@@ -268,6 +280,7 @@ function ensureInstrumentOverlay(mode = animationMode) {
       <span data-field="time">t+0.00s</span>
       <span data-field="phase">phase --</span>
       <span data-field="metric">sample --</span>
+      <span data-field="uncertainty">σ --</span>
       <span data-field="state">locked frame</span>
     </div>
   `;
@@ -275,11 +288,12 @@ function ensureInstrumentOverlay(mode = animationMode) {
   return overlay;
 }
 
-function setInstrumentMetric(metric = "", state = "", phase = "") {
+function setInstrumentMetric(metric = "", state = "", phase = "", uncertainty = "") {
   if (!visual) return;
   if (metric) visual.dataset.instrumentMetric = metric;
   if (state) visual.dataset.instrumentState = state;
   if (phase) visual.dataset.instrumentPhase = phase;
+  if (uncertainty) visual.dataset.instrumentUncertainty = uncertainty;
 }
 
 function updateInstrumentOverlay(overlay, t, fps) {
@@ -289,12 +303,14 @@ function updateInstrumentOverlay(overlay, t, fps) {
   const sampleField = overlay.querySelector('[data-field="sample"]');
   const phaseField = overlay.querySelector('[data-field="phase"]');
   const metricField = overlay.querySelector('[data-field="metric"]');
+  const uncertaintyField = overlay.querySelector('[data-field="uncertainty"]');
   const stateField = overlay.querySelector('[data-field="state"]');
   if (timeField) timeField.textContent = "t+" + t.toFixed(2) + "s";
   if (fpsField) fpsField.textContent = REDUCED_MOTION ? "static" : fps.toFixed(0) + " fps";
   if (sampleField) sampleField.textContent = visual.dataset.instrumentSample || "sample --";
   if (phaseField) phaseField.textContent = visual.dataset.instrumentPhase || "phase --";
   if (metricField) metricField.textContent = visual.dataset.instrumentMetric || "sample --";
+  if (uncertaintyField) uncertaintyField.textContent = visual.dataset.instrumentUncertainty || "σ --";
   if (stateField) stateField.textContent = visual.dataset.instrumentState || "locked frame";
 }
 
@@ -472,7 +488,13 @@ function drawTitanCalculator(time = 0) {
     const reciprocalS = 1.85 + smooth01(sweep01(t, 0.035)) * 2.5;
     const lx = cx - reciprocalS * unit;
     const rx = cx + reciprocalS * unit;
-    setInstrumentMetric("s ±" + reciprocalS.toFixed(2), (paused ? "held frame" : "unity fixed"), "phase " + reciprocalPhase.toFixed(2));
+    const mirrorResidual = Math.abs((lx + rx) - (2 * cx)) / Math.max(unit, 1e-6);
+    setInstrumentMetric(
+      "s ±" + reciprocalS.toFixed(2),
+      (paused ? "held frame" : "unity fixed"),
+      "phase " + reciprocalPhase.toFixed(2),
+      "σ mirror " + mirrorResidual.toExponential(1)
+    );
 
     ctx.setLineDash([8, 8]);
     ctx.strokeStyle = "rgba(245,245,245,0.48)";
@@ -763,7 +785,8 @@ function drawConstitutionInstrument(time = 0) {
     setInstrumentMetric(
       "closure " + closureResidual.toExponential(1) + " · center " + centerResidual.toExponential(1),
       (paused ? "held frame" : "perimeter scan"),
-      "phase " + phase.toFixed(2)
+      "phase " + phase.toFixed(2),
+      "σ closure " + Math.max(closureResidual, centerResidual).toExponential(1)
     );
     updateInstrumentOverlay(overlay, t, fps);
     if (readout) {
@@ -1103,7 +1126,13 @@ function buildScene(mode, scene) {
       }
       const u = (x - 1) / (x + 1);
       const E = Math.pow(Math.log(x), 2);
-      setInstrumentMetric("s " + s.toFixed(2) + " · x " + x.toFixed(2), "x·1/x=1", "phase " + logPhase.toFixed(2));
+      const reciprocalResidual = Math.abs(x * (1 / x) - 1);
+      setInstrumentMetric(
+        "s " + s.toFixed(2) + " · x " + x.toFixed(2),
+        "x·1/x=1",
+        "phase " + logPhase.toFixed(2),
+        "σ x·1/x " + reciprocalResidual.toExponential(1)
+      );
       if (readout) readout.textContent =
         "SUDA'S LINE · in log coordinates the ONE is the centre\n" +
         "x = " + x.toFixed(2) + "   1/x = " + (1 / x).toFixed(2) + "   x · 1/x = 1\n" +
@@ -1168,7 +1197,13 @@ function buildScene(mode, scene) {
       setLinePoints(projectionTrace, projectionSamples);
       updatePointTrace(liftDots, liftSamples);
       updatePointTrace(projectionDots, projectionSamples);
-      setInstrumentMetric("λ " + p.toFixed(2) + " · μ " + lift.toFixed(2), "orthogonal lift", "phase " + muPhase.toFixed(2));
+      const projectionResidual = Math.abs(onPlane.x - onLine.x);
+      setInstrumentMetric(
+        "λ " + p.toFixed(2) + " · μ " + lift.toFixed(2),
+        "orthogonal lift",
+        "phase " + muPhase.toFixed(2),
+        "σ projection " + projectionResidual.toExponential(1)
+      );
       if (readout) readout.textContent =
         "D2 μ-LIMIT · line-to-plane assay\n" +
         "sample λ = " + p.toFixed(2) + " · lift μ = " + lift.toFixed(2) + "\n" +
@@ -1234,7 +1269,13 @@ function buildScene(mode, scene) {
       updatePointTrace(landingDots, landingSamples);
       const phi = 1 / Math.tan(th / 2);
       const nu = Math.tan(th / 2);
-      setInstrumentMetric("θ " + (th * 180 / Math.PI).toFixed(1) + "° · φν " + (phi * nu).toFixed(3), "tangent projection", "phase " + projectionPhase.toFixed(2));
+      const reciprocalResidual = Math.abs(phi * nu - 1);
+      setInstrumentMetric(
+        "θ " + (th * 180 / Math.PI).toFixed(1) + "° · φν " + (phi * nu).toFixed(3),
+        "tangent projection",
+        "phase " + projectionPhase.toFixed(2),
+        "σ φν " + reciprocalResidual.toExponential(1)
+      );
       if (readout) readout.textContent =
         "D3 RIEMANN/BLOCH · tangent projection\n" +
         "θ = " + (th * 180 / Math.PI).toFixed(1) + "° · φ = cot(θ/2) = " + phi.toFixed(2) + "\n" +
@@ -1336,7 +1377,13 @@ function buildScene(mode, scene) {
       ]);
       root.rotation.y = 0;
       const moving = w > 0.02;
-      setInstrumentMetric("w " + w.toFixed(2) + " · γ " + gamma.toFixed(1), "dτ/dt " + (1 / gamma).toFixed(3), "phase " + clamp01(w / W_MAX).toFixed(2));
+      const morphResidual = Math.abs((g.R / Math.max(g.rt, 1e-9)) - (1 / gamma));
+      setInstrumentMetric(
+        "w " + w.toFixed(2) + " · γ " + gamma.toFixed(1),
+        "dτ/dt " + (1 / gamma).toFixed(3),
+        "phase " + clamp01(w / W_MAX).toFixed(2),
+        "σ R/r " + morphResidual.toExponential(1)
+      );
       if (readout) readout.innerHTML =
         "<div style='color:#FFEB3B;font-weight:800;letter-spacing:0;margin-bottom:6px'>D4 HORN · RAPIDITY 0 → ∞</div>" +
         "w = " + w.toFixed(2) + " · β = " + vc.toFixed(4) + " " + bar(aB, "#42A5F5") + "<br>" +
@@ -1544,10 +1591,12 @@ function buildScene(mode, scene) {
       const balance = Math.sin(theta);
       const imbalance = Math.abs(Math.log(Math.max(phi, 1e-6)));
       const energyCost = 1 / Math.max(balance, 1e-6);
+      const reciprocalResidual = Math.abs(phi * nu - 1);
       setInstrumentMetric(
         "B " + balance.toFixed(3) + " · γ " + energyCost.toFixed(2),
         thetaUserActive ? "manual latitude" : "reciprocal sweep",
-        "phase " + (((psi % TAU) + TAU) % TAU / TAU).toFixed(2)
+        "phase " + (((psi % TAU) + TAU) % TAU / TAU).toFixed(2),
+        "σ φν " + reciprocalResidual.toExponential(1)
       );
       if (readout) readout.textContent =
         "D5 BURRISPHERE · Φ/V BALANCE ASSAY\n" +
@@ -1653,10 +1702,12 @@ function buildScene(mode, scene) {
       boundary.rotation.z = 0;
       boundaryGauge.rotation.z = 0;
       boundary.material.opacity = 0.22;
+      const mapResidual = Math.abs(q + (1 - q) - 1);
       setInstrumentMetric(
         "a " + (aeonRadius / boundaryRadius).toFixed(2) + " · Ω " + (conformalRadius / boundaryRadius).toFixed(2),
         "CCC rescale analogy",
-        "phase " + leadPhase.toFixed(2)
+        "phase " + leadPhase.toFixed(2),
+        "σ q-map " + mapResidual.toExponential(1)
       );
       if (readout) readout.textContent =
         "CCC RETURN · CONFORMAL RESCALE\n" +
