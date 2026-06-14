@@ -303,7 +303,10 @@ This paper contracts or fails if:
    the cost ledger, the intervention, and the falsifier.
 5. **Pre-registration harness:** freeze domain tests through
    `03_METHODOLOGY/03_PREREGISTRATIONS/02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md`.
-6. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md`
+6. **First boundary run:** instantiate the chemistry-to-biology test through
+   `03_METHODOLOGY/03_PREREGISTRATIONS/03_PHYSICS_TO_BIOLOGY_MACRO_CONSTRAINT_RUN_SHEET.md`
+   before exporting the thesis into cognition, institutions, agency, or D6-adjacent language.
+7. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md`
 
 ---
 

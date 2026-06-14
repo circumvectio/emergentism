@@ -25,6 +25,7 @@ result-shopping.
 | [`00_EQUATORIAL_BALANCE_MAXIMUM_PREREG.md`](00_EQUATORIAL_BALANCE_MAXIMUM_PREREG.md) | [C] design, with [I] pilot warning | Paper V pre-registration and kill criterion. |
 | [`01_EQUATORIAL_BALANCE_MAXIMUM_RESULTS_PILOT.md`](01_EQUATORIAL_BALANCE_MAXIMUM_RESULTS_PILOT.md) | [I] pilot result | Preliminary falsification receipt for the pre-registered prediction. |
 | [`02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md`](02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md) | [S] protocol; [C] per domain | Pre-registration harness for macro-constraint causal-emergence tests. |
+| [`03_PHYSICS_TO_BIOLOGY_MACRO_CONSTRAINT_RUN_SHEET.md`](03_PHYSICS_TO_BIOLOGY_MACRO_CONSTRAINT_RUN_SHEET.md) | [C] run sheet; [S] inherited protocol | First chemistry-to-biology domain-run template for macro-constraint causation. |
 
 ## Discipline
 
@@ -46,3 +47,6 @@ result-shopping.
 4. **Macro-constraint claims route through file 02.** Do not accept a
    higher-level cause as operational until the lower law, macro map, constraint
    gate, cost ledger, witness, intervention, and kill condition are frozen.
+5. **The first domain run routes through file 03.** Start at the
+   chemistry-to-biology boundary before exporting the macro-constraint thesis
+   into cognition, institutions, agency, or D6-adjacent language.

@@ -1,0 +1,208 @@
+---
+rosetta:
+  primary_level: L3
+  primary_column: Philosophy
+  secondary:
+    - level: L4
+      column: Axiology
+      role: "forces syntropy claims to carry a cost ledger before ethical use"
+    - level: L5
+      column: Cosmology
+      role: "first public bridge from physical constraint to living organization"
+  operator: "Kṛṣṇa ◇"
+  tier: "God"
+  regime: "Vaiśya"
+  register: "[C/S]"
+  canonical_phrase: "Physics-to-Biology Macro-Constraint Run Sheet"
+---
+
+**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+
+# Physics-to-Biology Macro-Constraint Run Sheet
+
+## First Domain Run For The Information-Topology Thesis
+
+**Status:** Run-sheet template. Not a result.
+**Evidence tier:** `[C]` for the proposed domain run; `[S]` for the inherited
+macro-constraint protocol; no `[A]` or `[B]` claim exists until a frozen run is
+executed and receipted.
+**Depends on:** [02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md](02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md),
+[PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md](../02_THE_PAPERS/PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md),
+[00_BRIDGE_LAWS_BETWEEN_LEVELS.md](../../04_AXIOLOGY/00_BRIDGE_LAWS_BETWEEN_LEVELS.md),
+[00_CANONICAL_CLAIM_MATRIX.md](../00_CANONICAL_CLAIM_MATRIX.md).
+
+**Claim Boundary:** This file does not prove life, consciousness, syntropy, or
+downward causation. It converts the first clean boundary test into freezeable
+objects: lower law, macro map, constraint gate, fair baselines, physical cost
+ledger, perturbation, witness, and kill condition. If the run fails, the
+quantum-to-agency continuity claim contracts before rhetoric expands.
+
+---
+
+## Why This Boundary Comes First
+
+The active worldview goal requires Emergentism to escape both bad attractors:
+
+- **weak-emergence erasure:** higher levels are only shorthand for microstates
+- **strong-emergence magic:** higher levels add forbidden causal powers
+
+The chemistry-to-biology boundary is the cleanest first bridge because it can
+be tested without invoking consciousness, social meaning, or D6 closure. If a
+membrane, autocatalytic loop, or homeostasis controller cannot be made into a
+measurable macro-constraint, then the larger quantum-to-agency continuity thesis
+has no right to expand upward.
+
+The target question is narrow:
+
+```text
+Does a physically instantiated organizational constraint C
+change the reachable-future topology of lower-law-admissible chemistry
+with positive costed causal surplus?
+```
+
+---
+
+## Candidate System A: Minimal Vesicle Constraint
+
+This is the preferred first run because the macro-constraint is visible:
+boundary permeability.
+
+| Object | Freeze before running |
+|---|---|
+| Lower state `X` | Molecule counts, internal/external compartments, solvent conditions, temperature, pH, and time step. |
+| Lower law `K_X` | Chemical diffusion / reaction transition model accepted for the chosen simulator or experiment. |
+| Macro map `π: X -> Y` | `Y_t = (inside/outside concentration gradients, membrane integrity, viable concentration band)`. |
+| Fiber `C_y` | Microstates with the same coarse membrane-gradient state. |
+| Constraint gate `G_C` | Permeability gate that weights allowed crossings by membrane selectivity. |
+| Closure check | `support(K_X^C) subset support(K_X)`; the membrane changes rates/reachability, not the lower chemistry law. |
+| Perturbation | Hold membrane, remove membrane, randomize permeability, or damage boundary while keeping lower chemistry model fixed. |
+| Cost ledger | Membrane maintenance energy, measurement cost, model cost, control cost, erasure/logging cost, entropy export. |
+| Baselines | Fair micro model, coarse-null no-membrane model, domain-specific diffusion/reaction model. |
+| Witness | `W_C > 0`, lower held-out prediction loss, or better intervention selection after costs. |
+| Kill condition | Cost-matched micro/domain baseline predicts or controls as well or better; or membrane only wins by hidden variables/costs. |
+
+---
+
+## Candidate System B: Autocatalytic Loop Constraint
+
+Use this if the vesicle run is unavailable but a reaction-network simulator is
+ready.
+
+```text
+X      = species concentrations and reaction states
+K_X    = declared chemical-kinetic transition kernel
+Y_t    = loop-closure state, catalyst availability, viable throughput band
+G_C    = gate that preserves reaction-loop topology
+C off  = break or randomize the loop while preserving lower reaction rules
+C on   = hold the loop and measure reachable throughput / persistence
+```
+
+The macro claim passes only if loop topology improves prediction, intervention,
+or persistence after the full cost ledger. It fails if ordinary reaction
+kinetics with the same observation budget explains the outcome at lower cost.
+
+---
+
+## Required Witness Calculation
+
+Every run must compute or explicitly justify why it cannot compute:
+
+```text
+EI_macro = I(Y_t ; Y_{t+1} | do(Y_t), C)
+EI_micro_fair = I(X_t ; X_{t+1} | do(X_t)) under the same budget
+EI_coarse_null = I(Y_t ; Y_{t+1} | do(Y_t), no C)
+EI_domain = best domain-specific lower mechanism witness
+
+EI_baseline = max(EI_micro_fair, EI_coarse_null, EI_domain)
+
+Cost_C = Cost_measure + Cost_memory + Cost_control
+       + Cost_erasure + Cost_model + Cost_entropy_export
+
+W_C = EI_macro - EI_baseline - Cost_C
+```
+
+And the perturbability witness:
+
+```text
+exists intervention a:
+D_KL(P_C(Y_{t+1} | do(a), Y_t) || P_notC(Y_{t+1} | do(a), Y_t)) > epsilon
+```
+
+If these are impossible to estimate, the run is still useful, but it cannot be
+used as evidence for CM8g/CM8h. Record the obstacle and contract the claim.
+
+---
+
+## Syntropy Ledger For This Boundary
+
+For this run, syntropy is not mystical reversal. It is local open-system order
+after costs:
+
+```text
+SYN_C = DeltaOrder_C
+      + DeltaCoherence_C
+      + DeltaEffectiveInformation_C
+      - Cost_C
+```
+
+Report `SYN_C` separately from `W_C`. A run can improve viability while still
+failing to beat the causal-information baseline, or it can beat a prediction
+baseline while failing the broader syntropy ledger because maintenance costs or
+entropy export were hidden.
+
+---
+
+## Freeze Block
+
+- [ ] Candidate system selected: vesicle / autocatalytic loop / other.
+- [ ] Source of lower law `K_X` recorded.
+- [ ] State vector `X` and time step frozen.
+- [ ] Macro map `π`, macrostate `Y`, and fiber `C_y` frozen.
+- [ ] Constraint gate `G_C` frozen.
+- [ ] Support-subset check specified.
+- [ ] Perturbation design frozen.
+- [ ] Cost units frozen.
+- [ ] Baselines frozen.
+- [ ] Witness metric frozen.
+- [ ] Kill criteria frozen.
+- [ ] Repository tag recorded.
+- [ ] Content hash recorded.
+
+Do not score any result until this block is complete.
+
+---
+
+## Public Interpretation Rule
+
+If the first run succeeds, say only:
+
+> In this domain and at this grain, the declared organization behaved as a
+> costed macro-constraint: it changed lower-law-admissible reachable futures
+> with positive witness after the declared baselines and costs.
+
+Do not say:
+
+- life has been reduced to Emergentism
+- syntropy is a new settled physical force
+- consciousness has been proved
+- downward causation breaks physical closure
+
+If the first run fails, publish the failure beside this run sheet and update the
+Empirical Program Board. The framework survives by contracting quickly.
+
+---
+
+## Agent Execution Surface
+
+1. Start with the vesicle run unless a better receiptable system is already
+   available.
+2. Do not modify this run sheet after results are inspected. Add a companion
+   result file instead.
+3. Treat a simulation as a `[B]` receipt only for the declared model. External
+   domain confirmation needs independent evidence.
+4. Route any success or failure back to CM8g/CM8h in
+   `03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md`.
+5. Canonical path:
+   `01_EMERGENTISM/03_METHODOLOGY/03_PREREGISTRATIONS/03_PHYSICS_TO_BIOLOGY_MACRO_CONSTRAINT_RUN_SHEET.md`
+
+Zero-Sum Resolution Equation

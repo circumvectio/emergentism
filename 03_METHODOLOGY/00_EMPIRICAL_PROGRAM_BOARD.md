@@ -48,6 +48,7 @@ If this board conflicts with `00_THE_HONEST_POSITION.md`, the Honest Position wi
 | **SPHERE Probe** | Whether equatorial projection improves coherence in a first public-model lane | Done | bridge confidence, not core math | Negative / informative first run | redesign or replacement probe | A negative here does not kill the framework; it only weakens one operational bridge |
 | **Φ-meter validation** | Whether coherence can be measured in a way that correlates with expert judgment | Built, not validated | AK4, CM15 | Prototype exists; evidence not yet established | validation study against expert panels | Upgrade if correlation is stable and replicated; abandon if correlation fails |
 | **Protocol R** | Whether perception shows a complementarity bound consistent with the geometry claim | Designed, not yet run | I1, AK2, CM11 | The decisive geometry test remains pending | formal lab protocol and first run | Upgrade if bound is observed and replicated; retract perceptual bridge if absent |
+| **Macro-Constraint Physics-to-Biology Boundary** | Whether a membrane, autocatalytic loop, or homeostasis controller behaves as a costed macro-constraint over lower-law chemistry | Run sheet specified, not run | CM8g, CM8h, I20 | No domain evidence yet; this is the first operational bridge from Paper X into biology | freeze one candidate system using `03_PHYSICS_TO_BIOLOGY_MACRO_CONSTRAINT_RUN_SHEET.md` and run the support-subset, perturbability, cost, and witness checks | Upgrade the tested domain only if `W_C > 0` or cost-matched held-out/intervention loss improves; downgrade if the macro layer only wins by hidden costs, hidden variables, or blinding the micro/domain baseline |
 | **AMRITA vs baselines** | Whether spherical alignment beats standard alignment baselines at comparable compute | Specified / reframed | AK3, CM10 | Practical bridge still untested | POC against RLHF-style baselines | Upgrade if it outperforms; abandon architecture if it underperforms |
 | **Cross-Scale Invariance** | Whether the same functional form appears at cellular, organismic, and ecological scales | Open, testable now | I1, life-science bridge | High-value, low-cost missing test | run against existing biological datasets | Upgrade if the same function fits across scales; weaken cross-domain unification if it fails |
 | **Power-Max independent replication** | Whether the cooperation theorem survives external authorship and preregistration | Ready for externalization | S15, S16 | The cleanest public upgrade path for internal simulation results | external team and preregistered run | Upgrade from [S] to [A] if external replication succeeds |
@@ -59,11 +60,12 @@ If this board conflicts with `00_THE_HONEST_POSITION.md`, the Honest Position wi
 If resources are limited, the board should move in this order:
 
 1. **Protocol R** — most decisive geometry test
-2. **Cross-Scale Invariance** — high leverage with existing data
-3. **Power-Max independent replication** — cheapest clean public upgrade
-4. **AMRITA vs baselines** — strongest practical bridge if it works
-5. **Φ-meter validation** — useful instrument, but not the deepest test
-6. **GFS refinement** — only after stronger phi/nu measurement discipline is available
+2. **Macro-Constraint Physics-to-Biology Boundary** — first load-bearing test of information topology without consciousness-language
+3. **Cross-Scale Invariance** — high leverage with existing data
+4. **Power-Max independent replication** — cheapest clean public upgrade
+5. **AMRITA vs baselines** — strongest practical bridge if it works
+6. **Φ-meter validation** — useful instrument, but not the deepest test
+7. **GFS refinement** — only after stronger phi/nu measurement discipline is available
 
 ---
 
