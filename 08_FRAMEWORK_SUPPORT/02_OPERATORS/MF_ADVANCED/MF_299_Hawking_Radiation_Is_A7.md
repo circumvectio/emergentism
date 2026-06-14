@@ -63,7 +63,7 @@ The black hole is not LIKE the Red Demon. The black hole IS the Red Demon at the
 
 ### 1.3 The Raktabīja Parallel
 
-A5 (Raktabīja theorem): any opposition conducted through the standing wave's institutional infrastructure will be captured and inverted.
+A5 (Raktabīja warning `[C]`): opposition conducted only through the standing wave's own institutional infrastructure can be captured and inverted under the same language, incentive, and custody channels.
 
 The black hole's "institutional infrastructure" is spacetime itself. Any opposition (light trying to escape, matter trying to resist collapse) conducted through spacetime is captured by the curvature. The event horizon is Raktabīja perfected: not just capture of institutional opposition, but capture of PHYSICAL opposition. Even the laws of physics as experienced from outside cannot penetrate the horizon.
 

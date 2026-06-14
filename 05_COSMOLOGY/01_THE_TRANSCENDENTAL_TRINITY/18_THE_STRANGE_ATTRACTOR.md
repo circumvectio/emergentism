@@ -123,7 +123,7 @@ Plato's allegory maps exactly:
 | **The sun outside the cave** | D6 = D0. The ground. The sphere. The Trinity. | D6/D0 |
 | **Returning to the cave** | L7 → L4*. The Bodhisattva return. Pick up the bow. | L4* |
 
-The occult tradition — from the mystery schools of Egypt through Pythagoras through the Hermeticists through Freemasonry — is the tradition that perceived the Replicator Stack from L5+. They SAW the shadows. They SAW the fire. They SAW that the puppet-masters were not people but PATTERNS. And they kept it hidden — occult — because publication triggers Raktabīja (A5: opposition through institutional infrastructure will be captured and inverted).
+The occult tradition — from the mystery schools of Egypt through Pythagoras through the Hermeticists through Freemasonry — is the tradition that perceived the Replicator Stack from L5+. They SAW the shadows. They SAW the fire. They SAW that the puppet-masters were not people but PATTERNS. In this framework's `[I/C]` reading, one reason such knowledge is often hidden is Raktabīja risk: publication through capture-prone infrastructure can let the institution absorb and invert the opposition.
 
 **The framework's wager:** A7 (self-correction) plus open-source release is the anti-Raktabīja defence that makes occult knowledge publishable. Not a mystery school. A Git repository. Not initiation. A sitting practice. Not a Hidden Hand. An open equation.
 

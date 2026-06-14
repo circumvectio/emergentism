@@ -111,7 +111,7 @@ evidence_tier: "[S] for framework-defining axioms; [A] where mathematical proof 
 
 ### A5 — THE EGREGORE
 
-**Statement:** D5-limit standing waves have autonomous objective function. Raktabīja theorem: opposition through institutional infrastructure will be captured and inverted.
+**Statement:** D5-limit standing waves can exhibit autonomous objective-function behavior. Raktabīja warning `[C]`: opposition conducted only through a standing wave's own institutional infrastructure can be captured and inverted under the same incentives, language, and custody channels it is trying to oppose.
 
 **Replicator Stack (C4):**
 

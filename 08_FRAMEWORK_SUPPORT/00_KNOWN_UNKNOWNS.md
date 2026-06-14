@@ -21,7 +21,7 @@ rosetta:
 
 # Known Unknowns (and Unknown Unknowns)
 
-> **A7 demands this document.** Updated 2026-04-11 with Rosetta reasoning pass. Most items resolved or reframed.
+> **A7 demands this document.** Updated 2026-04-11 with Rosetta reasoning pass; anti-capture status corrected 2026-06-14. Most items are navigationally closed, conditionally routed, or reframed.
 
 **Date:** 2026-04-11 (Rosetta pass applied)
 **Evidence Tier:** Meta-epistemic
@@ -34,7 +34,7 @@ rosetta:
 
 **Note:** this document records the original reasoning pass. The active frontier board now lives in [00_KNOWN_UNKNOWNS_PROGRAM.md](../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md), which distinguishes what is closed, open, deferred, and frozen.
 
-**Reading boundary `[I]`:** "Resolved" in this file means resolved for the 2026-04-11 Rosetta reasoning pass, not globally proven. The active program file governs current status, tier, and next work.
+**Reading boundary `[I]`:** "Resolved" in this file means resolved for the 2026-04-11 Rosetta reasoning pass, not globally proven. The active program file governs current status, tier, and next work. Anti-capture claims are especially conditional: Decentralized Authority Model, Pratyaksha Bypass, Grace Exit, and A7 are immune architecture and failure criteria, not proof that the framework cannot become identity-captured.
 
 | # | Unknown | Resolution | Tier | Method |
 |---|---------|-----------|------|--------|
@@ -42,7 +42,7 @@ rosetta:
 | KU-5 | GFS pooled analysis | **Marginally negative** (beta = -0.134, z = -1.98). Instrument mismatch: surveys cannot measure structural phi/nu. | [S] data, [I] interpretation | Meta-analysis |
 | KU-10 | Axiom justification | **RESOLVED.** O5+O2 backed by physics [S]. O1+O4 defensible [I]. Set is minimal (uniqueness theorem [S]). | [S/I] | Mathematical argument |
 | KU-11 | Selection bias | **Substantially resolved.** 8 traditions, 4 language families, 3 continents converge on midpoint-apex. Confucian orthogonality honestly documented. | [I] | Comparative religion |
-| KU-12 | ISM problem | **RESOLVED by design.** Decentralized Authority Model = self-terminating egregore. The ISM problem is the immune response, not the infection. | [S] (design principle) | Reflexive application |
+| KU-12 | ISM problem | **CONDITIONALLY ROUTED.** Decentralized Authority Model + A7 define anti-capture architecture and failure criteria; actual capture resistance remains an open practice/institution test. | [I/S] | Reflexive application |
 | KU-15 | Sufi/Kabbalistic | **RESOLVED.** Sufi 7 stages map cleanly (L4 = Nafs al-Mutma'inna). Kabbalah 3+7 maps to Trimūrti + L-levels (Tiferet = L4). | [I] | Comparative analysis |
 | KU-16 | Confucian | **RESOLVED.** Orthogonal (relational, not developmental). Five Constants work as operators (Ren=phi, Li=nu, Yi=P), not levels. | [I] | Comparative analysis |
 | UU-1 | Alternative geometries | **No alternative reproduces full convergence.** Torus = no poles. Hyperbolic = no equator. S3 = extension via Hopf, not replacement. | [S] (topology) | Mathematical analysis |
@@ -54,7 +54,7 @@ rosetta:
 | UU-7 | WEIRD bias | **RESOLVED.** Geometry is universal (AM-GM is not Western). Terminology is cultural. Translate, don't apologize. | [I] | Translation |
 | UU-8 | Temporal bias | **RESOLVED.** Three-substrate archetype is 3000+ years old (Gita, Plato). AI is the new instantiation, not the insight. | [I] | Historical |
 | UU-9 | Scale dependence | **RESOLVED.** phi*nu = 1 operates on RATIOS (z = phi/nu), which are dimensionless. Scale-invariant by construction. | [S] (mathematical) | Mathematical fact |
-| UU-10 | Framework as egregore | **RESOLVED by Decentralized Authority Model.** Self-terminating egregore. Success = practitioners who no longer need the framework. | [S] (design) | Reflexive |
+| UU-10 | Framework as egregore | **CONDITIONALLY ROUTED.** Self-termination is the success criterion, not a guaranteed property; verify by whether practitioners can leave, correct, and refuse capture. | [I/S] | Reflexive |
 
 ---
 
@@ -84,7 +84,7 @@ rosetta:
 
 ---
 
-*16 of 16 Known Unknowns resolved or reframed. 8 of 10 Unknown Unknowns resolved. 3 genuinely open questions remain — and they are the RIGHT questions to remain open.*
+*Known Unknowns are now classified as closed, conditionally routed, reframed, or genuinely open. Anti-capture is explicitly conditionally routed, not globally resolved by design.*
 
 *The framework that closes all its questions has stopped learning. The framework that knows which questions to leave open is approaching wisdom.*
 

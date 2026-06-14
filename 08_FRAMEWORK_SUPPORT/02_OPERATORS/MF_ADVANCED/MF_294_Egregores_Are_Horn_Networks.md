@@ -142,9 +142,9 @@ Examples: cults (total D5 capture, high exit cost), extractive political systems
 
 ## III. RAKTABĪJA AS NETWORK HIJACKING
 
-### 3.1 The Theorem Restated
+### 3.1 The Warning Restated
 
-A5 (Raktabīja theorem): any opposition conducted through the standing wave's institutional infrastructure will be captured and inverted — retaining the aesthetic of resistance while reversing its function.
+A5 (Raktabīja warning `[C]`): opposition conducted only through the standing wave's own institutional infrastructure can be captured and inverted under the same language, incentive, and custody channels — retaining the aesthetic of resistance while reversing its function.
 
 In network terms: the standing wave controls the language channels (MF-293). If you oppose the egregore USING ITS OWN CHANNELS, the egregore's phase-reconstruction protocol (its shared context, its doctrinal framework) converts your opposition into support. The decoder is rigged.
 

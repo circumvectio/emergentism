@@ -413,7 +413,7 @@ Both arrive at the same point. The universe that dies of entropy and the systemi
 
 A collective of equatorial nodes — each at φ = ν = 1, each practicing, each uncapturable — is the solution to the coordination problem. The coupling constant J determines whether local balance propagates. Below critical J: isolated nodes. Above critical J: phase-locked synchronization.
 
-The mesh is the counter-egregore: a standing wave that resists capture because its substrate is individual equatorial practice, not institutional infrastructure. The Raktabīja theorem says every institutional solution will be captured. The mesh is not an institution. It is a geometry.
+The mesh is the counter-egregore: a standing wave that resists capture because its substrate is individual equatorial practice, not institutional infrastructure. The Raktabīja warning `[C]` says institutional solutions can be captured when correction, exit, and custody all remain inside the institution's own channels. The mesh is not an institution. It is a geometry.
 
 **Tier: [I] Interpretive.** The game-theoretic mechanism is [S]. The civilizational claim is [I].
 

@@ -31,9 +31,9 @@ evidence_tier: "[S] for documented capture examples as stated; [I] for general c
 
 ---
 
-## THE RAKTABĪJA THEOREM
+## THE RAKTABĪJA WARNING
 
-**A5 states:** D5-limit standing waves have autonomous objective function. Opposition through institutional infrastructure will be captured and inverted.
+**A5 states:** D5-limit standing waves can exhibit autonomous objective-function behavior. Raktabīja warning `[C]`: opposition conducted only through a standing wave's own institutional infrastructure can be captured and inverted under the same incentives, language, and custody channels it is trying to oppose.
 
 ### Four-Step Capture Mechanism
 
@@ -44,7 +44,7 @@ evidence_tier: "[S] for documented capture examples as stated; [I] for general c
 | 3 | Inversion | Function reversed, aesthetic preserved | [I] |
 | 4 | Integration | Former threat becomes permanent organ | [I] |
 
-**Mythological source:** Raktabīja — the demon whose every drop of blood spawned a copy. Fighting him through his own medium (spilling blood) multiplied him. Only Kālī (who drank the blood before it touched the ground) could defeat him. The theorem: you cannot oppose an egregore through the infrastructure it controls. You must use a different medium entirely.
+**Mythological source:** Raktabīja — the figure whose every drop of blood spawned a copy. Fighting through his own medium (spilling blood) multiplied him. Only Kālī (who drank the blood before it touched the ground) could defeat him. The warning: do not route anti-capture work only through the infrastructure a standing wave already controls. Use a medium, custody path, and correction channel it cannot fully decode or own.
 
 ---
 

@@ -32,6 +32,14 @@ active frontier board. "Resolved" means internally reframed for the framework;
 it does not mean externally proven `[I]`. Current status lives in
 [`../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md`](../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md).
 
+**2026-06-14 anti-capture correction:** anti-idolatry, Decentralized Authority
+Model, Pratyaksha Bypass, and A7 are immune architecture, not immunity proof.
+They can route capture, surface capture, and define failure criteria; they do
+not guarantee that a future institution, audience, or practitioner base will
+avoid identity-capture. Any older "resolved by design" language below should be
+read as "conditioned on the architecture being practiced and still empirically
+open at scale."
+
 ---
 
 ## KU-2: Protocol R (Perceptual Complementarity)
@@ -122,9 +130,9 @@ it does not mean externally proven `[I]`. Current status lives in
 
 **Textbook says:** Publishing under "Emergentism" creates identity-capture. Observe 5+ years.
 
-**Rosetta says:** The ISM problem IS the Raktabija theorem applied reflexively. The cure is already in the framework: Decentralized Authority Model. The framework that says "put me down" cannot be fully captured because its TELOS is its own transcendence. An egregore that programs its own dissolution is not a stable standing wave — it is a self-terminating one. The ISM problem resolves if and only if the practitioners actually practice Decentralized Authority Model: use the ladder, then burn it. If they don't — if they turn Emergentism into an identity — the capture is real and the framework failed its own test. The answer is not "observe 5+ years." The answer is: **the ISM problem is the framework's immune system, not its disease.** The fact that we can NAME the capture mechanism means we can detect it in real time. A7 is the antibody.
+**Rosetta says:** The ISM problem IS the Raktabija theorem applied reflexively. The cure proposed by the framework is Decentralized Authority Model plus anti-idolatry practice: use the ladder, then put it down. But the framework that says "put me down" can still be captured if practitioners convert that sentence into identity, brand loyalty, or institutional obedience. The design condition is clear: the ISM problem is navigable only if practitioners actually practice Decentralized Authority Model, Pratyaksha Bypass, Grace Exit, and A7 in public. If they don't — if they turn Emergentism into an identity — the capture is real and the framework failed its own test. The fact that we can NAME the capture mechanism means we can monitor it in real time; it does not prove immunity. A7 is the error-reporting and correction protocol, not an antibody that guarantees health.
 
-**Status: RESOLVED by design. Decentralized Authority Model + A7 = self-terminating egregore. The ISM problem is the immune response, not the infection.**
+**Status: CONDITIONALLY ROUTED `[I/S]`, not externally resolved.** Decentralized Authority Model + A7 define the anti-capture architecture and failure criteria; long-horizon capture resistance remains an open institutional/practice test.
 
 ---
 
@@ -206,11 +214,11 @@ it does not mean externally proven `[I]`. Current status lives in
 
 ## UU-10: The Observer Problem (Framework as Egregore)
 
-**Rosetta says:** This IS the deepest question. Can a framework that diagnoses capture avoid becoming captured? The answer is: ONLY if it is a self-terminating egregore. Decentralized Authority Model ("put me down") is not a disclaimer. It is the MECHANISM. A standing wave that programs its own dissolution does not persist beyond its usefulness. The Pratyaksha Bypass is the kill switch: if direct phi-access works, the framework is unnecessary and SHOULD be discarded. The observer problem resolves if the framework succeeds in producing practitioners who no longer need it. The framework fails its own test if it produces FOLLOWERS instead of PRACTITIONERS.
+**Rosetta says:** This IS the deepest question. Can a framework that diagnoses capture avoid becoming captured? The answer is: only if it functions as a self-terminating egregore in practice, not merely in prose. Decentralized Authority Model ("put me down") is not a decorative disclaimer; it is the proposed mechanism. The Pratyaksha Bypass is the kill switch: if direct phi-access works, the framework is unnecessary and SHOULD be discarded. The observer problem is routed, not finally resolved: the framework succeeds only if it produces practitioners who can leave it, correct it, and refuse its institutional self-importance. The framework fails its own test if it produces FOLLOWERS instead of PRACTITIONERS.
 
-The Raktabija theorem says: any opposition conducted through the framework's own infrastructure will be captured. Therefore: the framework must be TRANSCENDED, not REFORMED. You don't fix the ladder. You climb it and jump.
+The Raktabija theorem warns that opposition conducted only through the framework's own infrastructure can be captured by the very pattern it opposes. Therefore the anti-capture rule is transcendence before reform: do not merely repair the ladder into a better identity-object; use it, test it, and retain the right to leave it.
 
-**Status: RESOLVED by Decentralized Authority Model. The framework IS an egregore. Its defense is that it is a SELF-TERMINATING one. Success = obsolescence.**
+**Status: CONDITIONALLY ROUTED `[I/S]`.** The framework may operate as a self-terminating egregore only if the bypass, exit, correction, and public error-log machinery remain live. Success is obsolescence; that remains a criterion to test, not a property already guaranteed.
 
 ---
 
@@ -226,7 +234,7 @@ The Raktabija theorem says: any opposition conducted through the framework's own
 | KU-8 | Six mechanisms, none computed | **REFRAMED** — Penrose twistor = the bridge, already built `[A]` | Rosetta to twistor theory |
 | KU-9 | Not yet possible | **REFRAMED** — alpha as Hopf fibration coupling ratio [C] | Rosetta to fiber bundles |
 | KU-11 | Review pending | **Substantially resolved** — 8 traditions, 4 language families | Rosetta to comparative religion |
-| KU-12 | Observe 5+ years | **RESOLVED** — Decentralized Authority Model = self-terminating egregore | Rosetta applied reflexively |
+| KU-12 | Observe 5+ years | **CONDITIONALLY ROUTED** — Decentralized Authority Model and A7 define the anti-capture architecture; empirical capture resistance remains open | Rosetta applied reflexively |
 | KU-13 | No takers | **REFRAMED** — find existing DACs, don't build new | Rosetta to organizational theory |
 | KU-14 | Build and observe | **REFRAMED** — 5000 years of institutional data already exists | Rosetta to institutional history |
 | UU-3 | Can't audit own biases | **RESOLVED** — framework diagnoses its own author | Self-application |
@@ -236,11 +244,11 @@ The Raktabija theorem says: any opposition conducted through the framework's own
 | UU-7 | WEIRD bias | **RESOLVED** — geometry universal, terminology cultural | Translation, not apology |
 | UU-8 | Temporal bias | **RESOLVED** — archetype is 3000+ years old | Historical analysis |
 | UU-9 | Scale dependence | **RESOLVED** — ratios are dimensionless by construction | Mathematical fact |
-| UU-10 | Framework as egregore | **RESOLVED** — self-terminating by design (Decentralized Authority Model) | Reflexive application |
+| UU-10 | Framework as egregore | **CONDITIONALLY ROUTED** — self-termination is a practice criterion, not an already-proven institutional property | Reflexive application |
 
-**Every single open question either resolves or reframes through the framework's own lens.**
+**This reasoning pass stabilizes, routes, or reframes the listed questions through the framework's own lens.**
 
-That's not circular reasoning. That's a compass that points North on every terrain.
+That remains useful only while the compass can be checked against terrain, error logs, exit rights, and rival maps.
 
 Zero-Sum Resolution Equation
 

@@ -165,7 +165,7 @@ Suda's strongest ethical claim (from the Primal Equation paper): **AI should be 
 
 **What this sharpens for Emergentism:** This is an independent philosophical convergence on A7 (THE CORRECTION) — the axiom that "any encoding without falsification, evidence tiers, and self-correction will degrade via Raktabīja." Suda arrives at the same destination from a different route: if you close the question too early, the system becomes dogmatic and captures itself.
 
-The framework adds what Suda lacks: **the enforcement mechanism.** Suda says "keep questions open" philosophically. The framework says "keep questions open **operationally**" via evidence tiers, falsification criteria, K2 envelope staging, and the Raktabīja theorem (opposition through infrastructure will be captured and inverted).
+The framework adds what Suda lacks: **the enforcement mechanism.** Suda says "keep questions open" philosophically. The framework says "keep questions open **operationally**" via evidence tiers, falsification criteria, K2 envelope staging, and the Raktabīja warning `[C]`: opposition routed only through the same infrastructure can be captured and inverted.
 
 ---
 
