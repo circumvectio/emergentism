@@ -59,6 +59,7 @@
 <div class="instrument-controls standalone-controls cascade-controls" id="cascade-controls">
   <button type="button" id="playpause" aria-pressed="false">HOLD</button>
   <button type="button" id="cascade-step">STEP</button>
+  <button type="button" id="cascade-zero">ZERO</button>
   <label>
     <span>rate</span>
     <input id="cascade-rate" type="range" min="25" max="150" step="5" value="100" aria-label="cascade simulation rate" />
@@ -230,7 +231,41 @@ const probeTrace = new THREE.Line(
   new THREE.LineBasicMaterial({ color: WHITE, transparent: true, opacity: 0.2 })
 );
 const probeTraceSamples = [];
-scene.add(probeTrace, probeLink, morphTargetProbe, morphProbe);
+
+function createPointTrace(max = 96, color = WHITE, opacity = 0.46, size = 0.026) {
+  const geometry = new THREE.BufferGeometry();
+  const positions = new Float32Array(max * 3);
+  geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+  geometry.setDrawRange(0, 0);
+  const mesh = new THREE.Points(
+    geometry,
+    new THREE.PointsMaterial({
+      color,
+      size,
+      transparent: true,
+      opacity,
+      sizeAttenuation: true,
+      depthWrite: false
+    })
+  );
+  return { max, mesh, positions };
+}
+
+function updatePointTrace(trace, samples) {
+  const count = Math.min(samples.length, trace.max);
+  const start = Math.max(0, samples.length - count);
+  for (let i = 0; i < count; i += 1) {
+    const p = samples[start + i];
+    trace.positions[i * 3] = p.x;
+    trace.positions[i * 3 + 1] = p.y;
+    trace.positions[i * 3 + 2] = p.z;
+  }
+  trace.mesh.geometry.setDrawRange(0, count);
+  trace.mesh.geometry.attributes.position.needsUpdate = true;
+}
+
+const probeDots = createPointTrace(96, WHITE, 0.5, 0.028);
+scene.add(probeTrace, probeDots.mesh, probeLink, morphTargetProbe, morphProbe);
 function rebuild(mt){
   const p = morphGeo.attributes.position.array;
   for (let i = 0; i <= NU; i++) for (let j = 0; j <= NV; j++) {
@@ -321,6 +356,7 @@ const timelineEl = document.getElementById('timeline');
 const timelineValueEl = document.getElementById('timeline-value');
 const telemetryEl = document.getElementById('cascade-telemetry');
 const cascadeStepEl = document.getElementById('cascade-step');
+const cascadeZeroEl = document.getElementById('cascade-zero');
 const cascadeRateEl = document.getElementById('cascade-rate');
 let textTimer = null;
 let projectionState = 'projection assay idle';
@@ -357,6 +393,12 @@ function advanceSamples(frameSeconds, rate = 1, forcedSeconds = 0, pausedState =
 
 function sampleLabel() {
   return SAMPLE_HZ + ' Hz · n ' + String(sampleIndex).padStart(5, '0');
+}
+
+function clearProbeTrace() {
+  probeTraceSamples.length = 0;
+  probeTrace.geometry.setFromPoints([new THREE.Vector3(), new THREE.Vector3()]);
+  updatePointTrace(probeDots, probeTraceSamples);
 }
 
 // safe line renderer ('|' = line break) — no innerHTML, content is static authored text
@@ -412,8 +454,7 @@ function show(i){
   cur = (i + STAGES.length) % STAGES.length;
   const s = STAGES[cur];
   if (previous !== cur) {
-    probeTraceSamples.length = 0;
-    probeTrace.geometry.setFromPoints([new THREE.Vector3(), new THREE.Vector3()]);
+    clearProbeTrace();
   }
   // text
   capEl.style.opacity = '0'; glyphEl.style.opacity = '0';
@@ -458,6 +499,22 @@ if (cascadeStepEl) {
     playing = false;
     stepSeconds += STAGE_SECS / 12;
     syncPlayButton();
+  });
+}
+if (cascadeZeroEl) {
+  cascadeZeroEl.addEventListener('click', () => {
+    playing = false;
+    stepSeconds = 0;
+    sampleAccumulator = 0;
+    sampleIndex = 0;
+    tAccum = 0;
+    morphCur = STAGES[cur].mt;
+    morphTarget = STAGES[cur].mt;
+    clearProbeTrace();
+    rebuild(morphCur);
+    syncPlayButton();
+    syncInstrument();
+    renderer.render(scene, camera);
   });
 }
 if (timelineEl) {
@@ -523,6 +580,7 @@ function animate(frameTime = performance.now()){
       if (probeTraceSamples.length > 96) probeTraceSamples.shift();
     }
     probeTrace.geometry.setFromPoints(probeTraceSamples.length > 1 ? probeTraceSamples : [current, current]);
+    updatePointTrace(probeDots, probeTraceSamples);
     morphProbeState =
       'morph probe u=' + probeU.toFixed(2) + ' v=' + probeV.toFixed(2) +
       ' · Δ(target,current)=' + current.distanceTo(target).toFixed(3);
@@ -531,9 +589,11 @@ function animate(frameTime = performance.now()){
     morphTargetProbe.visible = false;
     probeLink.visible = false;
     probeTrace.visible = false;
-    probeTraceSamples.length = 0;
+    probeDots.mesh.visible = false;
+    clearProbeTrace();
     morphProbeState = 'morph probe idle';
   }
+  if (cur >= 2) probeDots.mesh.visible = true;
 
   // dual projection rays read reciprocal coordinates on final stage.
   if (STAGES[cur].burri) {

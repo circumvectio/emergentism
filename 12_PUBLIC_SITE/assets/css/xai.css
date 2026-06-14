@@ -2337,7 +2337,7 @@ button.nav:hover {
   bottom: 32px;
   left: auto;
   z-index: 4;
-  grid-template-columns: auto auto minmax(104px, 140px);
+  grid-template-columns: auto auto auto minmax(104px, 140px);
 }
 
 .cascade-controls,
@@ -2477,7 +2477,7 @@ button.nav:hover {
     right: 18px;
     bottom: 18px;
     width: auto;
-    grid-template-columns: auto auto minmax(0, 1fr);
+    grid-template-columns: auto auto auto minmax(0, 1fr);
   }
   #timeline-shell {
     left: 18px;
@@ -2622,15 +2622,7 @@ button.nav:hover {
     display: none;
   }
   body.sphere-instrument .legend {
-    left: 18px;
-    right: 18px;
-    bottom: 64px;
-    transform: none;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6px 10px;
-    white-space: normal;
-    font-size: 10px;
+    display: none;
   }
   body.sphere-instrument .sphere-controls {
     bottom: 18px;

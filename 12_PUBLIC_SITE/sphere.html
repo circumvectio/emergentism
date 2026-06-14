@@ -67,6 +67,7 @@
 <div class="instrument-controls standalone-controls sphere-controls" id="sphere-controls">
   <button id="scan-toggle" type="button" aria-pressed="false">HOLD</button>
   <button id="position-step" type="button">STEP</button>
+  <button id="position-zero" type="button">ZERO</button>
   <label>
     <span>rate</span>
     <input id="scan-rate" type="range" min="25" max="150" step="5" value="100" aria-label="Burrisphere scan rate" />
@@ -207,6 +208,7 @@ const positionScrub = document.getElementById('position-scrub');
 const stageReadout = document.getElementById('stage-readout');
 const scanToggle = document.getElementById('scan-toggle');
 const positionStep = document.getElementById('position-step');
+const positionZero = document.getElementById('position-zero');
 const scanRate = document.getElementById('scan-rate');
 const telemetry = document.getElementById('sphere-telemetry');
 let selectedIndex = 3;
@@ -278,7 +280,7 @@ function select(i, manual = false){
   setTelemetry({
     fps: REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps'),
     sample: REDUCED_MOTION ? 'sample static' : sampleLabel(),
-    time: 't+' + (scanClock / 1000).toFixed(2) + 's',
+    time: 't+' + ((sampleIndex * SAMPLE_MS) / 1000).toFixed(2) + 's',
     phase: 'position ' + i + '/6',
     metric: 'B ' + balance.toFixed(3) + ' · |φν−1| ' + reciprocalResidual.toExponential(1),
     state: (scanRunning ? 'SCAN' : 'HOLD') + ' · ' + rateValue().toFixed(2) + 'x'
@@ -317,6 +319,15 @@ if (positionStep) positionStep.addEventListener('click', () => {
   scanRunning = false;
   syncScanButton();
   select((selectedIndex + 1) % POS.length, true);
+  if (REDUCED_MOTION) render(performance.now());
+});
+if (positionZero) positionZero.addEventListener('click', () => {
+  scanRunning = false;
+  scanClock = 3 * SCAN_MS;
+  sampleAccumulatorMs = 0;
+  sampleIndex = 0;
+  syncScanButton();
+  select(3, false);
   if (REDUCED_MOTION) render(performance.now());
 });
 if (positionScrub) positionScrub.addEventListener('input', () => select(Number(positionScrub.value), true));

@@ -382,12 +382,14 @@ function drawTitanCalculator(time = 0) {
       syncInstrumentControls(playback, paused);
     });
     playback.zero.addEventListener("click", () => {
+      paused = true;
       simTime = 0;
       stepSeconds = 0;
       sampleClock.accumulator = 0;
       sampleClock.index = 0;
       visual.dispatchEvent(new CustomEvent("instrument:zero"));
       setInstrumentMetric(visual.dataset.instrumentMetric || "", "zeroed", "phase 0.00");
+      syncInstrumentControls(playback, paused);
     });
     playback.rate.addEventListener("input", () => {
       setInstrumentMetric(visual.dataset.instrumentMetric || "", "rate " + (parseFloat(playback.rate.value) / 100).toFixed(2) + "x", visual.dataset.instrumentPhase || "");
@@ -1033,6 +1035,10 @@ function buildScene(mode, scene) {
       wrap.append(lo, slider, hi);
       visual.appendChild(wrap);
       visual.dataset.midLabel = "rest";
+      visual.addEventListener("instrument:zero", () => {
+        userActive = false;
+        slider.value = "0";
+      });
     }
     function bar(frac, color) {
       const w = Math.max(0, Math.min(1, frac)) * 100;
@@ -1215,6 +1221,10 @@ function buildScene(mode, scene) {
       thetaSlider.addEventListener("input", () => { thetaUserActive = true; });
       wrap.append(lo, thetaSlider, hi);
       visual.appendChild(wrap);
+      visual.addEventListener("instrument:zero", () => {
+        thetaUserActive = false;
+        thetaSlider.value = "0";
+      });
     }
     const thetaFromSlider = () => {
       const p = thetaSlider ? parseFloat(thetaSlider.value) / 100 : 0.5;
@@ -1480,12 +1490,14 @@ async function boot() {
         syncInstrumentControls(playback, paused);
       });
       playback.zero.addEventListener("click", () => {
+        paused = true;
         simTime = 0;
         stepSeconds = 0;
         sampleClock.accumulator = 0;
         sampleClock.index = 0;
         visual.dispatchEvent(new CustomEvent("instrument:zero"));
         setInstrumentMetric(visual.dataset.instrumentMetric || "", "zeroed", "phase 0.00");
+        syncInstrumentControls(playback, paused);
       });
       playback.rate.addEventListener("input", () => {
         setInstrumentMetric(visual.dataset.instrumentMetric || "", "rate " + (parseFloat(playback.rate.value) / 100).toFixed(2) + "x", visual.dataset.instrumentPhase || "");
