@@ -26,6 +26,7 @@ result-shopping.
 | [`01_EQUATORIAL_BALANCE_MAXIMUM_RESULTS_PILOT.md`](01_EQUATORIAL_BALANCE_MAXIMUM_RESULTS_PILOT.md) | [I] pilot result | Preliminary falsification receipt for the pre-registered prediction. |
 | [`02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md`](02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md) | [S] protocol; [C] per domain | Pre-registration harness for macro-constraint causal-emergence tests. |
 | [`03_PHYSICS_TO_BIOLOGY_MACRO_CONSTRAINT_RUN_SHEET.md`](03_PHYSICS_TO_BIOLOGY_MACRO_CONSTRAINT_RUN_SHEET.md) | [C] run sheet; [S] inherited protocol | First chemistry-to-biology domain-run template for macro-constraint causation. |
+| [`physics_to_biology_harness/`](physics_to_biology_harness/) | [B] toy-model receipt only; [C] for biology | Executable vesicle proof-of-method for the file 03 run sheet. |
 
 ## Discipline
 
@@ -50,3 +51,6 @@ result-shopping.
 5. **The first domain run routes through file 03.** Start at the
    chemistry-to-biology boundary before exporting the macro-constraint thesis
    into cognition, institutions, agency, or D6-adjacent language.
+6. **The toy harness is not biology evidence.** It proves that the witness
+   objects can be computed in a declared model; it does not upgrade any living
+   system claim.

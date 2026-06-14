@@ -306,7 +306,10 @@ This paper contracts or fails if:
 6. **First boundary run:** instantiate the chemistry-to-biology test through
    `03_METHODOLOGY/03_PREREGISTRATIONS/03_PHYSICS_TO_BIOLOGY_MACRO_CONSTRAINT_RUN_SHEET.md`
    before exporting the thesis into cognition, institutions, agency, or D6-adjacent language.
-7. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md`
+7. **Proof-of-method harness:** the toy vesicle implementation lives at
+   `03_METHODOLOGY/03_PREREGISTRATIONS/physics_to_biology_harness/`;
+   its `[B]` receipt applies only to that declared model.
+8. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md`
 
 ---
 

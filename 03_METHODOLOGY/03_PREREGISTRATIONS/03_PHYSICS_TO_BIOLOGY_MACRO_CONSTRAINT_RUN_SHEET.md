@@ -23,9 +23,9 @@ rosetta:
 ## First Domain Run For The Information-Topology Thesis
 
 **Status:** Run-sheet template. Not a result.
-**Evidence tier:** `[C]` for the proposed domain run; `[S]` for the inherited
-macro-constraint protocol; no `[A]` or `[B]` claim exists until a frozen run is
-executed and receipted.
+**Evidence tier:** `[C]` for the proposed biology-facing domain run; `[S]` for
+the inherited macro-constraint protocol; `[B]` only for the deterministic toy
+model receipt in the companion harness.
 **Depends on:** [02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md](02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md),
 [PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md](../02_THE_PAPERS/PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md),
 [00_BRIDGE_LAWS_BETWEEN_LEVELS.md](../../04_AXIOLOGY/00_BRIDGE_LAWS_BETWEEN_LEVELS.md),
@@ -36,6 +36,13 @@ downward causation. It converts the first clean boundary test into freezeable
 objects: lower law, macro map, constraint gate, fair baselines, physical cost
 ledger, perturbation, witness, and kill condition. If the run fails, the
 quantum-to-agency continuity claim contracts before rhetoric expands.
+
+**Executable harness:** The companion folder
+[`physics_to_biology_harness/`](physics_to_biology_harness/) contains a
+deterministic toy vesicle model and unit tests. Its current report is a `[B]`
+receipt only for that toy model (`W_C=0.425356`, `SYN_C=0.785347`,
+`KL=0.141286`); biological claims remain `[C]` until a frozen domain run is
+executed.
 
 ---
 
@@ -66,6 +73,12 @@ with positive costed causal surplus?
 
 This is the preferred first run because the macro-constraint is visible:
 boundary permeability.
+
+The current toy harness instantiates this candidate as a finite
+two-compartment diffusion model. The toy membrane gate preserves macro
+concentration topology and allows recovery toward the viable band without
+adding lower-law-forbidden transitions. That proves the method can be executed;
+it does not prove the biology.
 
 | Object | Freeze before running |
 |---|---|
@@ -196,13 +209,17 @@ Empirical Program Board. The framework survives by contracting quickly.
 
 1. Start with the vesicle run unless a better receiptable system is already
    available.
-2. Do not modify this run sheet after results are inspected. Add a companion
-   result file instead.
-3. Treat a simulation as a `[B]` receipt only for the declared model. External
+2. For the toy proof-of-method harness, run
+   `python3 -m unittest test_vesicle_macro_constraint.py` and
+   `python3 vesicle_macro_constraint.py` from
+   `physics_to_biology_harness/`.
+3. Do not modify this run sheet after real domain results are inspected. Add a
+   companion result file instead.
+4. Treat a simulation as a `[B]` receipt only for the declared model. External
    domain confirmation needs independent evidence.
-4. Route any success or failure back to CM8g/CM8h in
+5. Route any success or failure back to CM8g/CM8h in
    `03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md`.
-5. Canonical path:
+6. Canonical path:
    `01_EMERGENTISM/03_METHODOLOGY/03_PREREGISTRATIONS/03_PHYSICS_TO_BIOLOGY_MACRO_CONSTRAINT_RUN_SHEET.md`
 
 Zero-Sum Resolution Equation
