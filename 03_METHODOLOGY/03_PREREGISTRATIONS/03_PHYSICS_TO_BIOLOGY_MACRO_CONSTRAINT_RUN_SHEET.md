@@ -95,7 +95,7 @@ it does not prove the biology.
 | Constraint gate `G_C` | Permeability gate that weights allowed crossings by membrane selectivity; declare whether the run treats it as a hard support restriction or soft reweighting. |
 | Closure check | `K_X^C << K_X` and `support(K_X^C) subset support(K_X)`; the membrane changes rates/reachability, not the lower chemistry law. |
 | Perturbation | Hold membrane, remove membrane, randomize permeability, or damage boundary while keeping lower chemistry model fixed. |
-| Cost ledger | Membrane maintenance energy, measurement cost, model cost, control cost, erasure/logging cost, entropy export. |
+| Cost ledger | Membrane maintenance energy, measurement cost, model cost, control cost, labor cost, erasure/logging cost, entropy export. |
 | Baselines | Fair micro model, coarse-null no-membrane model, domain-specific diffusion/reaction model. |
 | Witness | `W_C > 0`, lower held-out prediction loss, or better intervention selection after costs. |
 | Kill condition | Cost-matched micro/domain baseline predicts or controls as well or better; or membrane only wins by hidden variables/costs. |
@@ -135,7 +135,8 @@ EI_domain = best domain-specific lower mechanism witness
 EI_baseline = max(EI_micro_fair, EI_coarse_null, EI_domain)
 
 Cost_C = Cost_measure + Cost_memory + Cost_control
-       + Cost_erasure + Cost_model + Cost_entropy_export
+       + Cost_erasure + Cost_model + Cost_labor
+       + Cost_entropy_export
 
 W_C = EI_macro - EI_baseline - Cost_C
 ```

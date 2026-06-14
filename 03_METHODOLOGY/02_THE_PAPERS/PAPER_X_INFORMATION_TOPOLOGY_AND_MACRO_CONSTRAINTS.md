@@ -24,11 +24,13 @@ Menexus GmbH, 2026
 **Claim Boundary:** Macro-constraint causation is a costed effective information
 witness, not a new force: a macro layer earns public causal standing only when
 `W_C = EI_macro - EI_baseline - Cost_C > 0` against fair micro, coarse-null, and
-domain baselines, with `Cost_C` including `Cost_entropy_export`, and only when
-`C` is perturbable. The same scoring path must also reject no-gate, high-cost,
-and lower-law support-violation controls. The cross-scale continuity claim
-remains `[I]`; universal physics remains `[C]` until domain tests earn their
-own tier.
+domain baselines, with `Cost_C` including labor and `Cost_entropy_export`, and
+only when `C` is perturbable. Section 0 names the worldview contract: lower
+law, macro map, constraint gate, closure proof, perturbation, cost ledger,
+negative controls, and kill condition. The same scoring path must also reject
+no-gate, high-cost, and lower-law support-violation controls. The cross-scale
+continuity claim remains `[I]`; universal physics remains `[C]` until domain
+tests earn their own tier.
 
 ---
 
@@ -49,6 +51,74 @@ reinforced, or suppressed.
 
 **Keywords:** causal emergence, information topology, macro-constraints,
 effective information, downward causation, syntropy, causal exclusion.
+
+---
+
+## 0. The Weltanschauung Architecture Contract
+
+This paper is the load-bearing scientific contract for Emergentism as a
+worldview. It does not say "everything is emergent" and then leave the claim
+philosophical. It says every higher-level causal claim must become a declared
+macro-constraint test.
+
+The contract has three pillars:
+
+| Pillar | Formal demand | What it rejects |
+|---|---|---|
+| Causal exclusion repair | `K_X^C << K_X`, `support(K_X^C) subset support(K_X)`, and perturbable `C` | strong-emergence magic and forbidden downward pushes |
+| Quantified emergence | `W_C = EI_macro - EI_baseline - Cost_C > 0` against fair baselines | weak-emergence erasure and verbal "greater than the sum" claims |
+| Syntropic continuity | `SYN_C > 0` locally after matter, memory, control, erasure, modeling, labor, and entropy-export costs | free entropy reversal, hidden extraction, and uncosted order |
+
+So the worldview's scientific claim is not a slogan. It is this audit rule:
+
+```text
+For any proposed higher-level cause C:
+  declare lower law        (X, K_X)
+  declare macro map        pi: X -> Y
+  declare constraint gate  G_C
+  prove no-magic closure   K_X^C << K_X
+  perturb C                hold / remove / randomize / damage
+  score information        W_C against fair baselines
+  charge costs             Cost_C, including labor and entropy export
+  run controls             no_gate, high_cost, forbidden_support
+  publish kill condition   what demotes C back to shorthand
+```
+
+Only then may the framework say that a higher level has causal power. The
+power is not an extra force beside physics. It is the physically instantiated
+organization that changes which lower-law-admissible trajectories remain
+reachable, likely, stable, reinforced, or suppressed for a finite observer or
+controller.
+
+This also defines the scope of the claimed unity of science. The unity is not
+that quantum mechanics, biology, mind, and ethics are all secretly the same
+thing. The unity is that each domain can be asked the same disciplined
+question:
+
+```text
+What lower law is being constrained?
+What organization implements the constraint?
+What future topology changes when it is perturbed?
+What information gain remains after costs?
+What result would kill the claim?
+```
+
+The physics-to-biology boundary is therefore the first serious bridge. If a
+membrane, catalyst, autocatalytic loop, or homeostasis controller cannot earn a
+positive costed macro-constraint witness, then the larger quantum-to-agency
+continuity claim must contract before any rhetoric expands. If it does earn
+that witness, the result still upgrades only that domain and grain; it does
+not prove universal emergence.
+
+For agency, the same contract becomes stricter rather than looser. Present
+awareness, institutions, narratives, and the Soul Loop count as candidate
+macro-constraints only when they preserve lower-law closure, improve prediction
+or intervention after costs, and raise or preserve both the individual
+symbiont and the collective holobiont under `eta = 0`. Hidden extraction is a
+failed syntropy ledger, not a clever moral exception.
+
+This is the framework's bulletproofing rule. Emergentism becomes an
+operational architecture only where it can survive this contract.
 
 ---
 
@@ -145,7 +215,8 @@ EI_domain = best domain-specific lower mechanism witness
 EI_baseline = max(EI_micro_fair, EI_coarse_null, EI_domain)
 
 Cost_C = Cost_measure + Cost_memory + Cost_control
-       + Cost_erasure + Cost_model + Cost_entropy_export
+       + Cost_erasure + Cost_model + Cost_labor
+       + Cost_entropy_export
 
 W_C = EI_macro - EI_baseline - Cost_C
 ```
@@ -199,10 +270,10 @@ lower law. If Condition 2 fails, holding, removing, or perturbing `C` does not
 change the measured future distribution, so the macro variable is explanatory
 language only. If Condition 3 fails, the macro variable may remain useful
 shorthand, but it has not beaten the best fair baseline after the costs of
-measurement, memory, control, erasure, modeling, and entropy export. If all
-three hold, changing the macro-constraint changes lower-law-admissible future
-distributions and does so with positive costed causal surplus. That is the
-framework's operational meaning of downward causation.
+measurement, memory, control, erasure, modeling, labor, and entropy export. If
+all three hold, changing the macro-constraint changes lower-law-admissible
+future distributions and does so with positive costed causal surplus. That is
+the framework's operational meaning of downward causation.
 
 This is a structural lemma `[S]`, not a domain result. A domain earns `[A]`,
 `[B]`, or remains `[C]` according to its own lower law, intervention evidence,
@@ -246,7 +317,7 @@ Emergentism answers: the microstate and the macrostate do different jobs.
 
 ```text
 micro-cause = local transition under K_X
-macro-cause = constraint that selects the admissible transition topology
+macro-cause = constraint that selects or weights the admissible transition geometry
 ```
 
 The macro layer is not a second push competing with the micro push. It is the
@@ -276,7 +347,8 @@ claims a lawful continuity of constraint form across scales:
 
 The continuity is syntropic only in the restrained open-system sense: the
 constraint increases local order, coherence, viability, or effective
-information while paying the matter, memory, control, and entropy-export bill.
+information while paying the matter, memory, control, labor, and
+entropy-export bill.
 
 ---
 
@@ -321,8 +393,8 @@ This paper contracts or fails if:
 2. The macro model wins only because the micro model was artificially blinded.
 3. `W_C` is non-positive under fair grain, fair intervention, and honest costs.
 4. The constraint cannot be operationally perturbed, removed, held, or measured.
-5. The syntropy ledger hides matter, memory, control, erasure, or entropy-export
-   costs.
+5. The syntropy ledger hides matter, memory, control, erasure, modeling, labor,
+   or entropy-export costs.
 6. A domain-specific mechanism explains the target phenomenon with lower loss
    and lower cost than the macro-constraint model.
 7. The scoring pipeline cannot reject no-gate, high-cost, or lower-law

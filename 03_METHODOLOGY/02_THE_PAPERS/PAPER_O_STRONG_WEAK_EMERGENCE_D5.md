@@ -102,7 +102,8 @@ EI_domain = best domain-specific lower mechanism witness
 EI_baseline = max(EI_micro_fair, EI_coarse_null, EI_domain)
 
 Cost_C = Cost_measure + Cost_memory + Cost_control
-       + Cost_erasure + Cost_model + Cost_entropy_export
+       + Cost_erasure + Cost_model + Cost_labor
+       + Cost_entropy_export
 
 W_C = EI_macro - EI_baseline - Cost_C
 
@@ -114,16 +115,16 @@ If the macro model wins only because the micro model was artificially blinded,
 the witness fails. If holding, removing, or perturbing `C` does not change the
 measured future distribution, the macro term is explanatory language rather
 than a causal-information witness. If the macro model wins after fair
-intervention, compression, measurement, prediction, domain-mechanism, and
-entropy-export costs, the higher level is objectively real in the public
+intervention, compression, measurement, prediction, domain-mechanism, labor,
+and entropy-export costs, the higher level is objectively real in the public
 scientific register: it is the better costed causal state variable for that
 system at that grain.
 
 Syntropy then has a restrained open-system meaning. A macro-constraint is
 syntropic when it increases local order, coherence, or effective information
-while paying its matter, memory, control, and entropy-export bill. It is not a
-claim of total entropy reversal, retrocausality, or a Standard Model fifth
-force.
+while paying its matter, memory, control, labor, and entropy-export bill. It is
+not a claim of total entropy reversal, retrocausality, or a Standard Model
+fifth force.
 
 Paper X turns this section into the operational calculus: declare the lower
 law, macro map, hard-or-soft constraint gate, fair baseline, cost ledger,

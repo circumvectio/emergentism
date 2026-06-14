@@ -71,7 +71,7 @@ with the lower chemistry law?</code></pre>
         <tr><td>Constraint gate <code>G_C</code></td><td>Permeability gate that weights allowed crossings by membrane selectivity; declare whether the run treats it as a hard support restriction or soft reweighting.</td></tr>
         <tr><td>Closure check</td><td><code>K_X^C &lt;&lt; K_X</code> and <code>support(K_X^C) subset support(K_X)</code>; the membrane changes rates/reachability, not lower chemistry law.</td></tr>
         <tr><td>Perturbation</td><td>Hold membrane, remove membrane, randomize permeability, or damage boundary while keeping lower chemistry fixed.</td></tr>
-        <tr><td>Cost ledger</td><td>Maintenance energy, measurement, model, control, erasure/logging, and entropy export.</td></tr>
+        <tr><td>Cost ledger</td><td>Maintenance energy, measurement, model, control, erasure/logging, labor, and entropy export.</td></tr>
         <tr><td>Baselines</td><td>Fair micro model, coarse-null no-membrane model, and domain-specific diffusion/reaction model.</td></tr>
         <tr><td>Witness</td><td><code>W_C &gt; 0</code>, lower held-out prediction loss, or better intervention selection after costs.</td></tr>
         <tr><td>Kill condition</td><td>Cost-matched micro/domain baseline predicts or controls as well or better; or membrane only wins by hidden variables/costs.</td></tr>
@@ -96,7 +96,8 @@ EI_domain = best domain-specific lower mechanism witness
 EI_baseline = max(EI_micro_fair, EI_coarse_null, EI_domain)
 
 Cost_C = Cost_measure + Cost_memory + Cost_control
-       + Cost_erasure + Cost_model + Cost_entropy_export
+       + Cost_erasure + Cost_model + Cost_labor
+       + Cost_entropy_export
 
 W_C = EI_macro - EI_baseline - Cost_C</code></pre>
 

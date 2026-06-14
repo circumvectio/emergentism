@@ -35,10 +35,10 @@ domain tests earn their own tier.
 
 **Claim Boundary:** This preregistration tests macro-constraint causation only
 after declaring effective information, `EI_baseline`, full `Cost_C` including
-`Cost_entropy_export`, perturbability of `C`, negative controls, and the kill
-condition. `W_C > 0` is the witness; failure to beat fair baselines or failure
-to reject false-positive controls rewrites the claim instead of rephrasing the
-result as proof.
+labor and `Cost_entropy_export`, perturbability of `C`, negative controls, and
+the kill condition. `W_C > 0` is the witness; failure to beat fair baselines or
+failure to reject false-positive controls rewrites the claim instead of
+rephrasing the result as proof.
 
 **Guard:** This protocol does not license strong-emergence magic. A
 macro-constraint may change which lower-law-admissible trajectories are
@@ -77,7 +77,8 @@ EI_domain = best domain-specific lower mechanism witness
 EI_baseline = max(EI_micro_fair, EI_coarse_null, EI_domain)
 
 Cost_C = Cost_measure + Cost_memory + Cost_control
-       + Cost_erasure + Cost_model + Cost_entropy_export
+       + Cost_erasure + Cost_model + Cost_labor
+       + Cost_entropy_export
 
 W_C = EI_macro - EI_baseline - Cost_C
 ```
@@ -121,7 +122,7 @@ Every domain run must freeze these objects before results are inspected:
 | Macro map | `pi: X -> Y`, macro variables, fiber `C_y = {x in X : pi(x)=y}`, and why this grain is not post-hoc. |
 | Constraint gate | `G_C(x' | x,y)`, hard-vs-soft status, and the proof or numerical check that `K_X^C << K_X` / `support(K_X^C) subset support(K_X)`. |
 | Intervention | How `C` is held, removed, perturbed, or randomized without smuggling in a forbidden transition. |
-| Cost ledger | Units for measurement, memory, control, erasure, modeling, and entropy export. |
+| Cost ledger | Units for measurement, memory, control, erasure, modeling, labor, and entropy export. |
 | Baselines | Micro model, fair coarse-graining baseline, null constraint, and domain-specific mechanism baseline. |
 | Negative controls | A no-gate null, a high-cost or hidden-cost case, and a lower-law support-violation case scored by the same code path. |
 | Witness | `W_C`, held-out loss, intervention utility, or all three. |

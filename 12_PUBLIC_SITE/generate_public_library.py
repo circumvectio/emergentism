@@ -148,7 +148,9 @@ directly (the only available lever):
         value/00-bridge-laws-between-levels/ : hand-mirrored the fair-baseline
         macro-constraint lemma while the source handoff bundle is absent;
         preserves `EI_baseline`, perturbability, domain-mechanism baselines,
-        entropy-export cost, and `W_C > 0` witness language.
+        entropy-export cost, and `W_C > 0` witness language; later added the
+        Paper X "Weltanschauung Architecture Contract" and harmonized the cost
+        ledger to include hidden labor costs.
   - formal/22-power-max-demonstration/, formal/24-geometric-exclusion-convergence/,
         formal/41-unified-dimensional-derivation/ : added the 2026-06-12 A7
         boundary that the Nash/dominant-strategy results are balance-only or

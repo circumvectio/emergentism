@@ -27,9 +27,10 @@ rosetta:
 
 **Claim Boundary:** Bridge Law 2 becomes scientific only as the macro-constraint
 test: lower-law closure, fair baselines, effective information, a physical cost
-ledger including `Cost_entropy_export`, perturbable `C`, negative controls, and
-`W_C = EI_macro - EI_baseline - Cost_C > 0`. Without those handles, a higher
-level may remain useful translation, but it is not yet a public causal witness.
+ledger including labor and `Cost_entropy_export`, perturbable `C`, negative
+controls, and `W_C = EI_macro - EI_baseline - Cost_C > 0`. Without those
+handles, a higher level may remain useful translation, but it is not yet a
+public causal witness.
 
 ---
 
@@ -140,7 +141,8 @@ EI_domain = best domain-specific lower mechanism witness
 EI_baseline = max(EI_micro_fair, EI_coarse_null, EI_domain)
 
 Cost_C = Cost_measure + Cost_memory + Cost_control
-       + Cost_erasure + Cost_model + Cost_entropy_export
+       + Cost_erasure + Cost_model + Cost_labor
+       + Cost_entropy_export
 
 W_C = EI_macro - EI_baseline - Cost_C
 
@@ -153,9 +155,9 @@ This is the framework's bridge from weak emergence to operational emergence:
 the higher level is not "only shorthand" when it loses less causal information
 over time than the micro-description available to the observer. It is also not
 strong-emergence magic, because every macro effect is paid for as constraint,
-boundary condition, memory, measurement, control, and entropy export inside the
-physical substrate. `[S/I]` for the framework rule; `[C]` until a given domain
-passes the measurement test.
+boundary condition, memory, measurement, control, labor, and entropy export
+inside the physical substrate. `[S/I]` for the framework rule; `[C]` until a
+given domain passes the measurement test.
 
 The test also requires perturbability. Holding, removing, or randomizing the
 macro-constraint must change the measured future distribution. Otherwise the
@@ -173,7 +175,7 @@ Use this checklist before calling any higher-level object a cause:
    hard support restriction or soft reweighting, and show `K_X^C << K_X`
    (`support(K_X^C) ⊆ support(K_X)`).
 4. **Declare the cost ledger:** charge measurement, memory, control, erasure,
-   modeling, and entropy-export costs.
+   modeling, labor, and entropy-export costs.
 5. **Run the witness:** accept the macro claim only if it improves effective
    information, held-out prediction, or intervention selection after costs.
 6. **Reject false positives:** run no-gate, high-cost, and lower-law

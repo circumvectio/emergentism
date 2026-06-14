@@ -45,7 +45,7 @@
   <article class="library-article">
     <p><strong>Project VMOSK-A:</strong> <code>01_EMERGENTISM/VMOSK_A.md</code><br>
     <strong>Evidence tier:</strong> <code>[S]</code> protocol inside the framework; <code>[I]</code> quantum-to-agency continuity thesis; <code>[C]</code> for any universal physics claim until domain tests earn their own tier.</p>
-    <p><strong>Claim Boundary:</strong> This preregistration tests macro-constraint causation only after declaring effective information, <code>EI_baseline</code>, full <code>Cost_C</code> including <code>Cost_entropy_export</code>, perturbability of <code>C</code>, negative controls, and the kill condition. <code>W_C &gt; 0</code> is the witness; failure to beat fair baselines or failure to reject false-positive controls rewrites the claim instead of rephrasing the result as proof.</p>
+    <p><strong>Claim Boundary:</strong> This preregistration tests macro-constraint causation only after declaring effective information, <code>EI_baseline</code>, full <code>Cost_C</code> including labor and <code>Cost_entropy_export</code>, perturbability of <code>C</code>, negative controls, and the kill condition. <code>W_C &gt; 0</code> is the witness; failure to beat fair baselines or failure to reject false-positive controls rewrites the claim instead of rephrasing the result as proof.</p>
 
     <h1 id="pre-registration-macro-constraint-causal-emergence-measurement-protocol">Pre-Registration — Macro-Constraint Causal-Emergence Measurement Protocol</h1>
 
@@ -65,7 +65,8 @@ EI_domain = best domain-specific lower mechanism witness
 EI_baseline = max(EI_micro_fair, EI_coarse_null, EI_domain)
 
 Cost_C = Cost_measure + Cost_memory + Cost_control
-       + Cost_erasure + Cost_model + Cost_entropy_export
+       + Cost_erasure + Cost_model + Cost_labor
+       + Cost_entropy_export
 
 W_C = EI_macro - EI_baseline - Cost_C
 </code></pre>
@@ -84,7 +85,7 @@ D_KL(P_C(Y_{t+1} | do(a), Y_t) || P_notC(Y_{t+1} | do(a), Y_t)) &gt; epsilon
         <tr><td>Macro map</td><td><code>pi: X -&gt; Y</code>, macro variables, fiber <code>C_y</code>, and why this grain is not post-hoc.</td></tr>
         <tr><td>Constraint gate</td><td><code>G_C(x' | x,y)</code>, hard-vs-soft status, and the <code>K_X^C &lt;&lt; K_X</code> / support-subset check.</td></tr>
         <tr><td>Intervention</td><td>How <code>C</code> is held, removed, perturbed, or randomized.</td></tr>
-        <tr><td>Cost ledger</td><td>Units for measurement, memory, control, erasure, modeling, and entropy export.</td></tr>
+        <tr><td>Cost ledger</td><td>Units for measurement, memory, control, erasure, modeling, labor, and entropy export.</td></tr>
         <tr><td>Baselines</td><td>Micro model, fair coarse-graining baseline, null constraint, and domain-specific mechanism baseline.</td></tr>
         <tr><td>Negative controls</td><td>A no-gate null, a high-cost or hidden-cost case, and a lower-law support-violation case scored by the same code path.</td></tr>
         <tr><td>Witness</td><td><code>W_C</code>, held-out loss, intervention utility, or all three.</td></tr>
