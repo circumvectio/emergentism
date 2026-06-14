@@ -24,6 +24,7 @@ result-shopping.
 |---|---|---|
 | [`00_EQUATORIAL_BALANCE_MAXIMUM_PREREG.md`](00_EQUATORIAL_BALANCE_MAXIMUM_PREREG.md) | [C] design, with [I] pilot warning | Paper V pre-registration and kill criterion. |
 | [`01_EQUATORIAL_BALANCE_MAXIMUM_RESULTS_PILOT.md`](01_EQUATORIAL_BALANCE_MAXIMUM_RESULTS_PILOT.md) | [I] pilot result | Preliminary falsification receipt for the pre-registered prediction. |
+| [`02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md`](02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md) | [S] protocol; [C] per domain | Pre-registration harness for macro-constraint causal-emergence tests. |
 
 ## Discipline
 
@@ -42,3 +43,6 @@ result-shopping.
    study design, but it does not replace independent evidence or a dated
    receipt.
 3. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/03_PREREGISTRATIONS/README.md`
+4. **Macro-constraint claims route through file 02.** Do not accept a
+   higher-level cause as operational until the lower law, macro map, constraint
+   gate, cost ledger, witness, intervention, and kill condition are frozen.

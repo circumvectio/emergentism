@@ -311,7 +311,7 @@ def check_public_reading_bundle():
         "value": 10,
         "ground": 9,
         "sacred": 6,
-        "method": 10,
+        "method": 11,
         "meta": 6,
     }
     for section, expected_count in expected.items():

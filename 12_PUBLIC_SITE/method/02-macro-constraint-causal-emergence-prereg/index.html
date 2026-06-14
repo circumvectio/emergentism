@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Macro-Constraint Causal-Emergence Preregistration — Emergentism</title>
+<meta name="description" content="A preregistration harness for testing macro-constraint causation: lower law, macro map, constraint gate, cost ledger, witness, intervention, and kill condition.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../../assets/css/xai.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="../../">Emergentism</a>
+  <nav class="number-nav" aria-label="Public doctrine routes">
+    <a href="../../0/">0</a>
+    <a href="../../1/">1</a>
+    <a href="../../2/">2</a>
+    <a href="../../3/">3</a>
+    <a href="../../4/">4</a>
+    <a href="../../5/">5</a>
+    <a href="../../6/">6</a>
+    <a href="../../rosetta/">R</a>
+    <a href="../../soul-loop/">S</a>
+    <a href="../../game/">Game</a>
+    <a href="../../atlas/">A</a>
+    <a href="../../read/">Read</a>
+  </nav>
+</header>
+
+<main class="library-shell">
+  <section class="library-hero">
+    <div class="evidence">Public reading library</div>
+    <h1>Macro-Constraint Causal-Emergence Preregistration</h1>
+    <p>A frozen-test harness for deciding when a higher-level organization is a real cause rather than shorthand or magic.</p>
+    <div class="library-route-row">
+      <a href="../../read/">Read</a>
+      <a href="../../game/">Game</a>
+      <a href="../../papers/">Papers</a>
+      <a href="../../value/">Axiology</a>
+      <a href="../">Method</a>
+      <a href="../../sources/">Sources</a>
+    </div>
+  </section>
+  <article class="library-article">
+    <p><strong>Project VMOSK-A:</strong> <code>01_EMERGENTISM/VMOSK_A.md</code><br>
+    <strong>Evidence tier:</strong> <code>[S]</code> protocol inside the framework; <code>[I]</code> quantum-to-agency continuity thesis; <code>[C]</code> for any universal physics claim until domain tests earn their own tier.</p>
+
+    <h1 id="pre-registration-macro-constraint-causal-emergence-measurement-protocol">Pre-Registration — Macro-Constraint Causal-Emergence Measurement Protocol</h1>
+
+    <p>This protocol operationalizes <a href="../../papers/paper-x-information-topology-and-macro-constraints/">Paper X</a> and <a href="../../value/00-bridge-laws-between-levels/">Bridge Law 2</a>. It asks whether a macro-constraint changes the reachable-future graph of lower-law-admissible trajectories while paying its physical information costs.</p>
+
+    <h2 id="exact-claim-under-test">1. The Exact Claim Under Test</h2>
+    <p>For a declared lower state space <code>X</code>, transition kernel <code>K_X</code>, macro map <code>pi: X -&gt; Y</code>, constraint gate <code>G_C</code>, and cost ledger <code>Cost_C</code>, the macro-cause is accepted only when closure and a costed witness both hold:</p>
+<pre><code class="language-text">K_X^C(x' | x,y) = normalize(K_X(x' | x) * G_C(x' | x,y))
+support(K_X^C) subset support(K_X)
+
+EI_macro = I(Y_t ; Y_{t+1} | do(Y_t), C)
+EI_micro = I(X_t ; X_{t+1} | do(X_t))
+
+Cost_C = Cost_measure + Cost_memory + Cost_control
+       + Cost_erasure + Cost_model + Cost_entropy_export
+
+W_C = EI_macro - EI_micro - Cost_C
+</code></pre>
+    <p>The macro claim passes only if <code>W_C &gt; 0</code>, or if a cost-matched macro model improves held-out trajectory prediction or intervention selection against the best available micro baseline.</p>
+
+    <h2 id="objects-frozen-before-testing">2. Objects Frozen Before Testing</h2>
+    <table>
+      <thead><tr><th>Object</th><th>Must declare</th></tr></thead>
+      <tbody>
+        <tr><td>Lower law</td><td><code>X</code>, <code>K_X</code>, time step, boundary conditions, owning discipline, and why the kernel is accepted.</td></tr>
+        <tr><td>Macro map</td><td><code>pi: X -&gt; Y</code>, macro variables, fiber <code>C_y</code>, and why this grain is not post-hoc.</td></tr>
+        <tr><td>Constraint gate</td><td><code>G_C(x' | x,y)</code> and the support-subset check.</td></tr>
+        <tr><td>Intervention</td><td>How <code>C</code> is held, removed, perturbed, or randomized.</td></tr>
+        <tr><td>Cost ledger</td><td>Units for measurement, memory, control, erasure, modeling, and entropy export.</td></tr>
+        <tr><td>Baselines</td><td>Micro model, fair coarse-graining baseline, null constraint, and domain-specific mechanism baseline.</td></tr>
+        <tr><td>Witness</td><td><code>W_C</code>, held-out loss, intervention utility, or all three.</td></tr>
+        <tr><td>Kill condition</td><td>The exact observation that demotes the macro claim back to shorthand.</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="fair-grain-rule">3. Fair-Grain Rule</h2>
+    <p>A macro model does not win by making the micro model stupid. The micro baseline receives the same observation, training, and intervention budget. The macro model may not duplicate hidden lower-level variables and then call them higher level. If a cost-matched micro or domain-specific model predicts or controls better, the macro-constraint claim contracts.</p>
+<pre><code class="language-text">micro-law completeness != macro-causal redundancy
+</code></pre>
+
+    <h2 id="physics-to-biology-boundary-test">4. Physics-to-Biology Boundary Test</h2>
+    <p>The clean first boundary is chemistry-to-biology: membrane, autocatalytic network, metabolism-like flow reactor, or homeostasis controller. The test is whether removing <code>C</code> lets lower-law chemistry continue while viability-preserving trajectory topology degrades, and whether holding <code>C</code> makes viable trajectories more reachable or stable after costs.</p>
+
+    <h2 id="domain-templates">5. Domain Templates</h2>
+    <table>
+      <thead><tr><th>Domain</th><th>Candidate constraint</th><th>Witness</th><th>Tier guard</th></tr></thead>
+      <tbody>
+        <tr><td>Quantum / field</td><td>preparation, boundary condition, measurement context</td><td>changed admissible state or transition structure</td><td><code>[A]</code> textbook physics; <code>[I]</code> framework reading</td></tr>
+        <tr><td>Chemistry</td><td>catalyst, reaction-network topology</td><td>reaction path selection after energy/cost accounting</td><td><code>[A/B]</code> locally</td></tr>
+        <tr><td>Biology</td><td>membrane, metabolism, homeostasis</td><td>viability-preserving reachable futures after costs</td><td><code>[A/B]</code> locally; <code>[I]</code> unified reading</td></tr>
+        <tr><td>Cognition</td><td>attention, policy, embodied controller</td><td>action-space prediction/control gain</td><td><code>[A/B]</code> locally; <code>[I]</code> D4/D5 bridge</td></tr>
+        <tr><td>Social</td><td>institution, law, market, narrative</td><td>changed strategy topology and held-out behavior</td><td><code>[A/B]</code> locally; <code>[I/C]</code> egregore language</td></tr>
+        <tr><td>Agency</td><td>Soul Loop, present-awareness selection, objective dharma</td><td>dyadic <code>P_node</code> improvement under <code>eta=0</code></td><td><code>[S/I]</code> until measured</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="syntropy-ledger">6. Syntropy Ledger</h2>
+<pre><code class="language-text">SYN_C = DeltaOrder_C
+      + DeltaCoherence_C
+      + DeltaEffectiveInformation_C
+      - Cost_C
+
+P_node,i = Phi_i * V_i
+P_node,H = Phi_H * V_H
+
+strict syntropic dyad:
+Delta P_node,i &gt;= 0
+Delta P_node,H &gt;= 0
+eta = 0
+at least one inequality is strict
+</code></pre>
+    <p>If local order increases by exporting unreported disorder, extraction, memory cost, labor cost, control cost, or entropy elsewhere, the syntropy claim fails.</p>
+
+    <h2 id="kill-criteria">7. Kill Criteria</h2>
+    <ol>
+      <li><code>support(K_X^C)</code> includes transitions outside <code>support(K_X)</code>.</li>
+      <li><code>W_C &lt;= 0</code> under fair grain, fair intervention, and full cost accounting.</li>
+      <li>The macro model wins only because the micro model was blinded, starved, or denied the same observation budget.</li>
+      <li>The macro variables duplicate lower variables under a new name.</li>
+      <li>The constraint cannot be held, removed, perturbed, randomized, or otherwise measured.</li>
+      <li>The cost ledger hides measurement, memory, control, erasure, modeling, labor, or entropy-export costs.</li>
+      <li>A domain-specific lower mechanism predicts or controls better at lower cost.</li>
+      <li>The protocol becomes so broad that every outcome can be re-described as a macro-constraint after the fact.</li>
+      <li>The physics-to-biology boundary test fails repeatedly under honest implementations.</li>
+    </ol>
+
+    <h2 id="agent-execution-surface">Agent Execution Surface</h2>
+    <ol>
+      <li>Do not present macro-constraint causation as proven physics. The protocol is <code>[S]</code>; domain universality is not.</li>
+      <li>Say macro-causes constrain lower-law-admissible trajectories; never say they violate physical closure.</li>
+      <li>Say local order or effective-information gain must pay its cost ledger; never say syntropy reverses total entropy.</li>
+      <li>Require <code>X</code>, <code>K_X</code>, <code>pi</code>, <code>G_C</code>, <code>Cost_C</code>, an intervention, and a kill condition.</li>
+      <li>Route any physics-to-biology unification claim through this protocol first.</li>
+    </ol>
+  </article>
+  <aside class="library-meta">
+    <span>[S] / [I] / [C] public rendered prose</span>
+    <span>Source: 01_EMERGENTISM/03_METHODOLOGY/03_PREREGISTRATIONS/02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md</span>
+    <span>Generated by 12_PUBLIC_SITE/generate_public_library.py</span>
+    <span>Hand mirrored while handoff bundle is absent; preserve in next generator run.</span>
+  </aside>
+  <footer class="site-footer">
+    <div class="phi">⊙ = • × ○</div>
+    <p>Public doctrine surface · evidence tiers preserved</p>
+  </footer>
+
+</main>
+<script defer src="/assets/js/atlas-drawer.js"></script>
+</body>
+</html>

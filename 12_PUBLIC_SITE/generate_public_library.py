@@ -139,6 +139,10 @@ directly (the only available lever):
         the public RAG lede exposes the already-source-backed L4 flow reading;
         later normalized the stale "Maximum P" / "L4 is the apex" wording to
         `B = 1`, finite-node `P_node`, and a non-hierarchical balance apex.
+  - method/02-macro-constraint-causal-emergence-prereg/ : hand-mirrored the
+        frozen macro-constraint causal-emergence test harness while the source
+        handoff bundle is absent; preserves the lower-law gate, fair-grain
+        witness, cost ledger, and kill criteria for future generator runs.
   - formal/22-power-max-demonstration/, formal/24-geometric-exclusion-convergence/,
         formal/41-unified-dimensional-derivation/ : added the 2026-06-12 A7
         boundary that the Nash/dominant-strategy results are balance-only or

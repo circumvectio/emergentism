@@ -157,6 +157,8 @@ macro-cause changes the reachable-future graph of lower-law-admissible
 trajectories; it does not add a forbidden micro-transition.
 
 See also: [PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md](../03_METHODOLOGY/02_THE_PAPERS/PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md).
+For the frozen test harness, use
+[02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md](../03_METHODOLOGY/03_PREREGISTRATIONS/02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md).
 
 ---
 

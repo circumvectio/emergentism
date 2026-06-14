@@ -19,7 +19,7 @@ rosetta:
 Menexus GmbH, 2026
 
 **Evidence Tier:** [S/I] — structural calculus inside the framework; empirical per domain
-**Depends on:** [PAPER_O_STRONG_WEAK_EMERGENCE_D5.md](PAPER_O_STRONG_WEAK_EMERGENCE_D5.md), [00_BRIDGE_LAWS_BETWEEN_LEVELS.md](../../04_AXIOLOGY/00_BRIDGE_LAWS_BETWEEN_LEVELS.md), [00_THE_HONEST_POSITION.md](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)
+**Depends on:** [PAPER_O_STRONG_WEAK_EMERGENCE_D5.md](PAPER_O_STRONG_WEAK_EMERGENCE_D5.md), [00_BRIDGE_LAWS_BETWEEN_LEVELS.md](../../04_AXIOLOGY/00_BRIDGE_LAWS_BETWEEN_LEVELS.md), [00_THE_HONEST_POSITION.md](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md](../03_PREREGISTRATIONS/02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md)
 
 ---
 
@@ -247,7 +247,9 @@ This paper contracts or fails if:
    trajectories and must beat the costed micro-description."
 4. **Operational test:** declare `X`, `Y`, `pi`, `K_X`, `G_C`, the cost ledger,
    the intervention, and the falsifier.
-5. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md`
+5. **Pre-registration harness:** freeze domain tests through
+   `03_METHODOLOGY/03_PREREGISTRATIONS/02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md`.
+6. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md`
 
 ---
 
