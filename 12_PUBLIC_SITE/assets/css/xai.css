@@ -35,6 +35,14 @@
   --shape-full: 999px;
   --target-min: 48px;
   --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --instrument-bg: rgba(5, 5, 5, 0.96);
+  --instrument-bg-soft: rgba(5, 5, 5, 0.82);
+  --instrument-line: rgba(243, 244, 246, 0.15);
+  --instrument-line-soft: rgba(243, 244, 246, 0.075);
+  --instrument-amber: #FFEB3B;
+  --instrument-blue: #2196F3;
+  --instrument-green: #4CAF50;
+  --instrument-warn: #FF7A17;
 
   /* Skyzai grammar via self-hosted Roboto (accessible, consistent everywhere) + system fallback */
   --font-heading: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
@@ -726,18 +734,18 @@ body.soul-loop-instrument .visual-labels .bottom {
   border: 1px solid rgba(243, 244, 246, 0.09);
   box-shadow:
     inset 0 0 0 1px rgba(5, 5, 5, 0.78),
-    inset 0 0 0 12px rgba(243, 244, 246, 0.012);
+    inset 0 0 0 12px rgba(243, 244, 246, 0.008);
   contain: paint;
 }
 
 .instrument-graticule {
   position: absolute;
   inset: 24px;
-  opacity: 0.075;
+  opacity: 0.105;
   background:
-    repeating-linear-gradient(90deg, rgba(255,255,255,0.08) 0 1px, transparent 1px 32px),
-    repeating-linear-gradient(0deg, rgba(255,255,255,0.08) 0 1px, transparent 1px 32px),
-    repeating-linear-gradient(90deg, rgba(66,165,245,0.12) 0 1px, transparent 1px 128px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.07) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.07) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(90deg, rgba(33,150,243,0.13) 0 1px, transparent 1px 128px),
     repeating-linear-gradient(0deg, rgba(255,255,255,0.1) 0 1px, transparent 1px 128px);
 }
 
@@ -845,11 +853,11 @@ body.soul-loop-instrument .visual-labels .bottom {
 
 .instrument-measurements {
   position: absolute;
-  top: 150px;
+  top: 112px;
   left: 13px;
   display: grid;
-  width: min(228px, calc(100% - 26px));
-  gap: 6px;
+  width: min(218px, calc(100% - 26px));
+  gap: 5px;
   color: rgba(243, 244, 246, 0.7);
   font: 700 9px/1 var(--font-mono);
   font-variant-numeric: tabular-nums;
@@ -859,13 +867,13 @@ body.soul-loop-instrument .visual-labels .bottom {
 
 .instrument-meter {
   display: grid;
-  grid-template-columns: minmax(4.8rem, 0.55fr) minmax(0, 1fr) minmax(3.8rem, auto);
-  gap: 7px;
+  grid-template-columns: minmax(4.5rem, 0.55fr) minmax(0, 1fr) minmax(3.5rem, auto);
+  gap: 6px;
   align-items: center;
   min-height: 19px;
-  border: 1px solid rgba(243, 244, 246, 0.11);
+  border: 1px solid var(--instrument-line-soft);
   border-radius: 2px;
-  background: rgba(5, 5, 5, 0.94);
+  background: var(--instrument-bg);
   padding: 4px 6px;
   backdrop-filter: blur(3px);
 }
@@ -907,7 +915,7 @@ body.soul-loop-instrument .visual-labels .bottom {
 }
 
 .instrument-meter.error b {
-  background: linear-gradient(90deg, rgba(76,175,80,0.56), rgba(255,122,23,0.78));
+  background: linear-gradient(90deg, rgba(76,175,80,0.54), rgba(255,122,23,0.72));
 }
 
 body.soul-loop-instrument .instrument-measurements {
@@ -918,7 +926,7 @@ body.soul-loop-instrument .instrument-measurements {
 .instrument-mode-ccc .instrument-measurements {
   left: auto;
   right: 13px;
-  top: 58px;
+  top: 52px;
 }
 
 .instrument-scale {
@@ -972,24 +980,48 @@ body.soul-loop-instrument .instrument-measurements {
   top: 13px;
   left: 13px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
+  flex-wrap: nowrap;
+  gap: 5px;
   align-items: center;
-  max-width: max(9.5rem, calc(100% - 410px));
+  max-width: calc(100% - 354px);
+  min-height: 25px;
+  overflow: hidden;
   color: rgba(243, 244, 246, 0.76);
-  font: 700 10px/1 "Roboto Mono", ui-monospace, Menlo, monospace;
+  font: 700 9px/1 "Roboto Mono", ui-monospace, Menlo, monospace;
   font-variant-numeric: tabular-nums;
   letter-spacing: 0;
   text-transform: none;
 }
 
 .instrument-telemetry span {
-  min-width: max-content;
-  border: 1px solid rgba(243, 244, 246, 0.16);
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: 10.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: 1px solid var(--instrument-line);
   border-radius: 2px;
-  background: rgba(5, 5, 5, 0.94);
+  background: var(--instrument-bg);
   padding: 4px 6px;
   backdrop-filter: blur(4px);
+}
+
+.instrument-telemetry span[data-field="metric"],
+.instrument-telemetry span[data-field="uncertainty"] {
+  display: none;
+}
+
+.instrument-telemetry span[data-field="mode"] {
+  max-width: 7.75rem;
+}
+
+.instrument-telemetry span[data-field="invariant"] {
+  max-width: 9.5rem;
+}
+
+.instrument-telemetry span[data-field="sample"] {
+  max-width: 7rem;
 }
 
 .instrument-telemetry span[data-field="metric"] {
@@ -1018,11 +1050,11 @@ body.soul-loop-instrument .instrument-measurements {
   right: 13px;
   z-index: 6;
   display: grid;
-  grid-template-columns: auto auto auto minmax(104px, 140px);
-  gap: 6px;
+  grid-template-columns: auto auto auto minmax(96px, 128px);
+  gap: 5px;
   align-items: center;
   color: rgba(243, 244, 246, 0.78);
-  font: 700 10px/1 var(--font-mono);
+  font: 700 9px/1 var(--font-mono);
   font-variant-numeric: tabular-nums;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -1031,9 +1063,9 @@ body.soul-loop-instrument .instrument-measurements {
 .instrument-controls button,
 .instrument-controls label {
   min-height: 25px;
-  border: 1px solid rgba(243, 244, 246, 0.16);
+  border: 1px solid var(--instrument-line);
   border-radius: 2px;
-  background: rgba(5, 5, 5, 0.94);
+  background: var(--instrument-bg);
   color: inherit;
   backdrop-filter: blur(4px);
 }
@@ -1143,6 +1175,14 @@ body.soul-loop-instrument .instrument-measurements {
 .model-readout.instrument-readout {
   text-wrap: auto;
   font-variant-numeric: tabular-nums;
+  background: var(--instrument-bg) !important;
+  border-color: var(--instrument-line) !important;
+  border-left-color: var(--instrument-amber) !important;
+  color: rgba(243, 244, 246, 0.9) !important;
+  line-height: 1.42 !important;
+  max-height: min(25vh, 156px) !important;
+  outline: 1px solid rgba(5, 5, 5, 0.76);
+  text-wrap: auto;
 }
 
 .model-readout,
@@ -2428,14 +2468,16 @@ body.sphere-instrument .title {
   left: 50%;
   z-index: 4;
   width: max-content;
-  max-width: min(440px, calc(100vw - 700px));
+  max-width: min(520px, calc(100vw - 680px));
   transform: translateX(-50%);
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
-  gap: 6px;
+  gap: 5px;
+  min-height: 25px;
+  overflow: hidden;
   color: rgba(243, 244, 246, 0.76);
-  font: 700 10px/1 var(--font-mono);
+  font: 700 9px/1 var(--font-mono);
   font-variant-numeric: tabular-nums;
   letter-spacing: 0;
   text-transform: none;
@@ -2443,12 +2485,30 @@ body.sphere-instrument .title {
 }
 
 .standalone-telemetry span {
-  min-width: max-content;
-  border: 1px solid rgba(243, 244, 246, 0.16);
-  border-radius: 3px;
-  background: rgba(5, 5, 5, 0.94);
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: 10.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: 1px solid var(--instrument-line);
+  border-radius: 2px;
+  background: var(--instrument-bg);
   padding: 4px 6px;
   backdrop-filter: blur(4px);
+}
+
+.standalone-telemetry span[data-field="metric"],
+.standalone-telemetry span[data-field="uncertainty"] {
+  display: none;
+}
+
+.standalone-telemetry span[data-field="mode"] {
+  max-width: 8.5rem;
+}
+
+.standalone-telemetry span[data-field="sample"] {
+  max-width: 7rem;
 }
 
 .standalone-telemetry span[data-field="metric"] {
@@ -2474,10 +2534,10 @@ body.sphere-instrument .title {
   display: grid;
   gap: 6px;
   width: min(340px, calc(100vw - 64px));
-  border: 1px solid rgba(243, 244, 246, 0.14);
+  border: 1px solid var(--instrument-line);
   border-left: 2px solid rgba(66, 165, 245, 0.86);
   border-radius: var(--shape-sm);
-  background: rgba(5, 5, 5, 0.92);
+  background: var(--instrument-bg);
   color: rgba(243, 244, 246, 0.68);
   padding: 9px 12px;
   font: 700 10px/1.42 var(--font-mono);
@@ -2530,9 +2590,9 @@ body.lightcone-instrument .standalone-measurements {
   gap: 7px;
   align-items: center;
   min-height: 19px;
-  border: 1px solid rgba(243, 244, 246, 0.12);
+  border: 1px solid var(--instrument-line-soft);
   border-radius: var(--shape-sm);
-  background: rgba(5, 5, 5, 0.94);
+  background: var(--instrument-bg);
   padding: 4px 6px;
   backdrop-filter: blur(3px);
 }
@@ -2574,7 +2634,7 @@ body.lightcone-instrument .standalone-measurements {
 }
 
 .standalone-meter.error b {
-  background: linear-gradient(90deg, rgba(76,175,80,0.56), rgba(255,122,23,0.78));
+  background: linear-gradient(90deg, rgba(76,175,80,0.54), rgba(255,122,23,0.72));
 }
 #stage-readout {
   position: fixed;

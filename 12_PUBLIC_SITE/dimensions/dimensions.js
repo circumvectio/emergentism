@@ -3,7 +3,7 @@ import {
   createStripChart as createSharedStripChart,
   clearStripChart as clearSharedStripChart,
   updateStripChart as updateSharedStripChart
-} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-12";
+} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-13";
 
 const page = window.DIMENSION_PAGE || {};
 const canvas = document.querySelector(".dimension-canvas");
@@ -336,10 +336,10 @@ function ensureInstrumentOverlay(mode = animationMode) {
       <span>calibrated model</span>
     </div>
     <div class="instrument-calibration">
-      <span>CAL</span>
-      <span>30 Hz</span>
-      <span>Δt 0.0333 s</span>
-      <span>screen-space assay</span>
+      <span>CAL LOCK</span>
+      <span>Fs 30 Hz</span>
+      <span>Δt 0.0333s</span>
+      <span>model-space assay</span>
     </div>
     <div class="instrument-measurements">
       <div class="instrument-meter" data-signal="primary">
@@ -1737,8 +1737,7 @@ function buildScene(mode, scene) {
           : "D4 HORN · RAPIDITY ASSAY\n" +
             "w=" + w.toFixed(2) + " · β=" + vc.toFixed(4) + " · γ=" + gamma.toFixed(1) + " · E/mc²=γ\n" +
             "R/r=dτ/dt=" + (1 / gamma).toFixed(3) + " · k=e^w=" + k.toFixed(2) + " · σ(R/r)=" + morphResidual.toExponential(1) + "\n" +
-            "chart: sampled proper-time ratio · " +
-            "limit: " + limitState;
+            "trace: sampled proper-time ratio · " + limitState;
       }
     });
   }
@@ -1980,10 +1979,9 @@ function buildScene(mode, scene) {
           "σφν=" + reciprocalResidual.toExponential(1) + " · σray=" + rayResidual.toExponential(1) + "\n" +
           "quadrant " + q + " · " + opName
         : "D5 BURRISPHERE · DUAL-PROJECTION ASSAY\n" +
-          "θ=" + (theta * 180 / Math.PI).toFixed(0) + "° " + (thetaUserActive ? "hold" : "sweep") + " · φ=" + phi.toFixed(2) + " · ν=" + nu.toFixed(2) + " · φν=1\n" +
-          "B=" + balance.toFixed(3) + " · U_B=" + finiteCouplingProxy.toFixed(3) + " · γ≈" + energyCost.toFixed(2) + " · |lnφ|=" + imbalance.toFixed(2) + "\n" +
-          "σφν=" + reciprocalResidual.toExponential(1) + " · σray=" + rayResidual.toExponential(1) + " · chart: sampled bridge viability\n" +
-          "state: quadrant " + q + " · " + opName + " · " + moveName;
+          "θ=" + (theta * 180 / Math.PI).toFixed(0) + "° " + (thetaUserActive ? "hold" : "sweep") + " · φ=" + phi.toFixed(2) + " · ν=" + nu.toFixed(2) + " · φν=1 · B=" + balance.toFixed(3) + "\n" +
+          "U_B=" + finiteCouplingProxy.toFixed(3) + " · γ≈" + energyCost.toFixed(2) + " · |lnφ|=" + imbalance.toFixed(2) + " · σ=" + Math.max(reciprocalResidual, rayResidual).toExponential(1) + "\n" +
+          "trace: bridge viability · quadrant " + q + " · " + opName;
     });
   }
 
@@ -2127,8 +2125,7 @@ function buildScene(mode, scene) {
         "CCC RETURN · CONFORMAL RESCALE\n" +
         "/6 ≡ /0 · route closure, not a new object\n" +
         "a=" + (aeonRadius / boundaryRadius).toFixed(2) + " · Ω=" + (conformalRadius / boundaryRadius).toFixed(2) + " · q+(1−q)=1 · σ=" + mapResidual.toExponential(1) + "\n" +
-        "boundary trace sampled · end boundary → origin\n" +
-        "Penrose CCC = analogy, not asserted identity";
+        "trace: boundary return · Penrose CCC is analogy, not identity";
     });
   }
 
