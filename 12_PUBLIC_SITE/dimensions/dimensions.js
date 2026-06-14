@@ -562,6 +562,39 @@ function appendTrace(points, point, max = 120) {
   if (points.length > max) points.shift();
 }
 
+function createPointTrace(max = 120, color = 0xffffff, opacity = 0.42, size = 0.026) {
+  const geometry = new THREE.BufferGeometry();
+  const positions = new Float32Array(max * 3);
+  geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+  geometry.setDrawRange(0, 0);
+  const mesh = new THREE.Points(
+    geometry,
+    new THREE.PointsMaterial({
+      color,
+      size,
+      transparent: true,
+      opacity,
+      sizeAttenuation: true,
+      depthWrite: false
+    })
+  );
+  return { max, mesh, positions };
+}
+
+function updatePointTrace(trace, samples) {
+  if (!trace) return;
+  const count = Math.min(samples.length, trace.max);
+  const start = Math.max(0, samples.length - count);
+  for (let i = 0; i < count; i += 1) {
+    const p = samples[start + i];
+    trace.positions[i * 3] = p.x;
+    trace.positions[i * 3 + 1] = p.y;
+    trace.positions[i * 3 + 2] = p.z;
+  }
+  trace.mesh.geometry.setDrawRange(0, count);
+  trace.mesh.geometry.attributes.position.needsUpdate = true;
+}
+
 function createTickedRing(radius, color = 0xffffff, opacity = 0.38, tickCount = 40, tickLength = 0.045) {
   const group = new THREE.Group();
   group.add(ring(radius, color, opacity));
@@ -831,6 +864,8 @@ function buildScene(mode, scene) {
     const projectionTrace = line([new THREE.Vector3(-1.8, 0, 0)], 0x42a5f5, 0.22);
     const liftSamples = [];
     const projectionSamples = [];
+    const liftDots = createPointTrace(160, 0xffeb3b, 0.5, 0.032);
+    const projectionDots = createPointTrace(160, 0x42a5f5, 0.42, 0.025);
     if (visual) {
       visual.addEventListener("instrument:zero", () => {
         liftSamples.length = 0;
@@ -848,7 +883,7 @@ function buildScene(mode, scene) {
       new THREE.Vector3(-1.8, 0, 0),
       new THREE.Vector3(-1.8, 0, 0)
     ], 0xffeb3b, 0.65);
-    root.add(liftTrace, projectionTrace, sample, projection, liftLine);
+    root.add(liftTrace, projectionTrace, liftDots.mesh, projectionDots.mesh, sample, projection, liftLine);
     const readout = makeReadout();
     if (readout) {
       readout.style.left = "auto";
@@ -856,7 +891,7 @@ function buildScene(mode, scene) {
       readout.style.maxWidth = "min(430px, 46%)";
       readout.classList.add("instrument-readout");
     }
-    dyn.push((t) => {
+    dyn.push((t, sampled) => {
       const muPhase = phase01(t, 0.032);
       const p = smooth01(sweep01(t, 0.032));
       const x = -1.8 + 3.6 * p;
@@ -866,10 +901,14 @@ function buildScene(mode, scene) {
       sample.position.copy(onPlane);
       projection.position.copy(onLine);
       liftLine.geometry.setFromPoints([onLine, onPlane]);
-      appendTrace(liftSamples, onPlane, 160);
-      appendTrace(projectionSamples, onLine, 160);
+      if (sampled) {
+        appendTrace(liftSamples, onPlane, 160);
+        appendTrace(projectionSamples, onLine, 160);
+      }
       setLinePoints(liftTrace, liftSamples);
       setLinePoints(projectionTrace, projectionSamples);
+      updatePointTrace(liftDots, liftSamples);
+      updatePointTrace(projectionDots, projectionSamples);
       setInstrumentMetric("λ " + p.toFixed(2) + " · μ " + lift.toFixed(2), "orthogonal lift", "phase " + muPhase.toFixed(2));
       if (readout) readout.textContent =
         "D2 μ-LIMIT · line-to-plane assay\n" +
@@ -901,13 +940,15 @@ function buildScene(mode, scene) {
     const landingTrace = line([new THREE.Vector3(2 * r, -r, 0)], 0x42a5f5, 0.28);
     const surfaceSamples = [];
     const landingSamples = [];
+    const surfaceDots = createPointTrace(150, 0xffffff, 0.42, 0.024);
+    const landingDots = createPointTrace(150, 0x42a5f5, 0.48, 0.026);
     if (visual) {
       visual.addEventListener("instrument:zero", () => {
         surfaceSamples.length = 0;
         landingSamples.length = 0;
       });
     }
-    root.add(surfaceTrace, landingTrace, projectionRay, pMarker, landMarker);
+    root.add(surfaceTrace, landingTrace, surfaceDots.mesh, landingDots.mesh, projectionRay, pMarker, landMarker);
     const readout = makeReadout();
     if (readout) {
       readout.style.left = "auto";
@@ -915,7 +956,7 @@ function buildScene(mode, scene) {
       readout.style.maxWidth = "min(430px, 46%)";
       readout.classList.add("instrument-readout");
     }
-    dyn.push((t) => {
+    dyn.push((t, sampled) => {
       const projectionPhase = phase01(t, 0.03);
       const p = smooth01(sweep01(t, 0.03));
       const th = (55 + 70 * p) * Math.PI / 180;
@@ -924,10 +965,14 @@ function buildScene(mode, scene) {
       pMarker.position.copy(P);
       landMarker.position.copy(land);
       projectionRay.geometry.setFromPoints([N, land]);
-      appendTrace(surfaceSamples, P, 150);
-      appendTrace(landingSamples, land, 150);
+      if (sampled) {
+        appendTrace(surfaceSamples, P, 150);
+        appendTrace(landingSamples, land, 150);
+      }
       setLinePoints(surfaceTrace, surfaceSamples);
       setLinePoints(landingTrace, landingSamples);
+      updatePointTrace(surfaceDots, surfaceSamples);
+      updatePointTrace(landingDots, landingSamples);
       const phi = 1 / Math.tan(th / 2);
       const nu = Math.tan(th / 2);
       setInstrumentMetric("θ " + (th * 180 / Math.PI).toFixed(1) + "° · φν " + (phi * nu).toFixed(3), "tangent projection", "phase " + projectionPhase.toFixed(2));
@@ -1125,6 +1170,9 @@ function buildScene(mode, scene) {
 
     // the two spiral trails traced by the landings — reciprocal radii
     const TRAIL = 150, phiTrail = [], nuTrail = [], pointTrail = [];
+    const phiDots = createPointTrace(TRAIL, 0xffeb3b, 0.48, 0.026);
+    const nuDots = createPointTrace(TRAIL, 0x42a5f5, 0.46, 0.026);
+    const pointDots = createPointTrace(TRAIL, 0xffffff, 0.4, 0.021);
     if (visual) {
       visual.addEventListener("instrument:zero", () => {
         phiTrail.length = 0;
@@ -1139,7 +1187,7 @@ function buildScene(mode, scene) {
     const nuRange = createTickedRing(U, 0x42a5f5, 0.2, 56);
     phiRange.position.y = -r + 0.01;
     nuRange.position.y = r + 0.01;
-    root.add(phiRange, nuRange, phiLine, nuLine, pointLine);
+    root.add(phiRange, nuRange, phiLine, nuLine, pointLine, phiDots.mesh, nuDots.mesh, pointDots.mesh);
 
     const readout = makeReadout();
     if (readout) {
@@ -1175,7 +1223,7 @@ function buildScene(mode, scene) {
     const sliderFromTheta = (theta) =>
       Math.round(((theta - THETA_MIN) / (THETA_MAX - THETA_MIN)) * 100);
     const quadName = ["I", "II", "III", "IV"];
-    dyn.push(function (t) {
+    dyn.push(function (t, sampled) {
       const psi = t * 0.34;                                          // measured azimuth trace
       const theta = thetaUserActive
         ? thetaFromSlider()
@@ -1204,12 +1252,17 @@ function buildScene(mode, scene) {
       [pMark, phiPt, nuPt].forEach((m) => m.material.color.setHex(col));
       rayDown.material.color.setHex(col);
       rayUp.material.color.setHex(col);
-      phiTrail.push(Lphi.clone()); if (phiTrail.length > TRAIL) phiTrail.shift();
-      nuTrail.push(Lnu.clone()); if (nuTrail.length > TRAIL) nuTrail.shift();
-      appendTrace(pointTrail, P, TRAIL);
+      if (sampled) {
+        appendTrace(phiTrail, Lphi, TRAIL);
+        appendTrace(nuTrail, Lnu, TRAIL);
+        appendTrace(pointTrail, P, TRAIL);
+      }
       setLinePoints(phiLine, phiTrail);
       setLinePoints(nuLine, nuTrail);
       setLinePoints(pointLine, pointTrail);
+      updatePointTrace(phiDots, phiTrail);
+      updatePointTrace(nuDots, nuTrail);
+      updatePointTrace(pointDots, pointTrail);
       root.rotation.y = 0;
       const q = quadName[Math.floor((((psi % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI)) / (Math.PI / 2)) % 4];
       const opName = isBalance
@@ -1345,7 +1398,7 @@ function buildScene(mode, scene) {
     });
   }
 
-  return { root, update: (t) => dyn.forEach((f) => f(t)) };
+  return { root, update: (t, sampled = true) => dyn.forEach((f) => f(t, sampled)) };
 }
 
 async function boot() {
@@ -1470,7 +1523,7 @@ async function boot() {
       } else if (animationMode === "ccc") {
         root.rotation.z = 0;
       }
-      update(t); // morphing / orbiting models (horn, burrisphere)
+      update(t, sampleAdvance > 0); // morph state every frame; advance histories only on sample ticks
       if (paused) {
         setInstrumentMetric(visual.dataset.instrumentMetric || "", "held frame", visual.dataset.instrumentPhase || "");
       }
@@ -1481,8 +1534,8 @@ async function boot() {
       requestAnimationFrame(animate);
     }
 
-    function renderInstrumentFrame(t, fpsValue) {
-      update(t);
+    function renderInstrumentFrame(t, fpsValue, sampled = true) {
+      update(t, sampled);
       controls.update();
       renderer.render(scene, camera);
       updateInstrumentOverlay(overlay, t, fpsValue);
@@ -1491,14 +1544,14 @@ async function boot() {
     resize();
     window.addEventListener("resize", resize);
     visual.dataset.instrumentSample = REDUCED_MOTION ? "sample static" : sampleClock.label();
-    renderInstrumentFrame(REDUCED_MOTION ? 1.2 : 0, 0);
+    renderInstrumentFrame(REDUCED_MOTION ? 1.2 : 0, 0, true);
 
     if (REDUCED_MOTION) {
       // static render: one calibrated frame now, re-render only on interaction/resize
-      controls.addEventListener("change", () => renderInstrumentFrame(1.2, 0));
+      controls.addEventListener("change", () => renderInstrumentFrame(1.2, 0, true));
       window.addEventListener("resize", () => {
         resize();
-        renderInstrumentFrame(1.2, 0);
+        renderInstrumentFrame(1.2, 0, true);
       });
       return;
     }
