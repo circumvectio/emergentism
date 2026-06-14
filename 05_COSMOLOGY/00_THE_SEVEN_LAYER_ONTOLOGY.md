@@ -325,7 +325,7 @@ D6 is the **terminal boundary** where no positive register may claim finality. I
 
 | Constraint | What constrains | How |
 |---|---|---|
-| D₅→D₄ | Agency reshapes causality | The player's choice reaches back to the Now-point |
+| D₅→D₄ | Agency reshapes causality | The player's choice selects the next D4 boundary condition in the present |
 | D₄→D₃ | Causality constrains form | The causal structure selects which forms persist |
 | D₃→D₂ | Form constrains configuration | Persistent patterns limit possible arrangements |
 | D₂→D₁ | Configuration constrains distinction | Lawful arrangement fixes which distinctions are meaningful |

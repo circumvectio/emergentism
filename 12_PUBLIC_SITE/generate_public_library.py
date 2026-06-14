@@ -231,13 +231,20 @@ directly (the only available lever):
 	        `P_node,i` and `P_node,H` together under `η = 0`; later normalized
 	        the Dasein non-reduction clause so the D5 μ-limit is agency /
 	        selection first, with consciousness as the `[I]` lived reading and
-	        quantum-collapse resonance left `[C]`.
+	        quantum-collapse resonance left `[C]`; later removed active-facing
+	        "reaches back" language so weak emergence reads as present-time
+	        constraint through boundary conditions, not retrocausal rewriting.
 	  - trinity/03-the-closure/, trinity/06-the-cosmological-cycle/,
 	        trinity/simulation-spec/, trinity/22-the-teleology/
 	                                              : fenced remaining Trinity compatibility
 	        "D5 = Consciousness" phrasing so D5 is agency / selection first,
 	        with consciousness only as the `[I]` lived-interior reading of that
-	        register rather than a separate physics layer.
+	        register rather than a separate physics layer; later fenced
+	        trinity/09-the-triadic-cascade so "against time" means infer
+	        backward and test forward, not reverse causation.
+  - book/                                      : hand-patched the frozen long-scroll
+        public HTML so the lineage paragraph says the framework "looks back"
+        instead of "reaches back," avoiding accidental retrocausal echo.
 	  - memetic/                                    : normalized the Dasein game
 	        reading action test from stale `P_i` / `P_H` to `P_node,i` /
         `P_node,H`; later added the public memetics operational-language guard

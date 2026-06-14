@@ -113,9 +113,9 @@ This is the deepest level. Each inference — and each level of the cascade — 
 
 **Deduction operates ABOVE time.** Deduction is timeless. The Pythagorean theorem was true before any triangle was drawn. Deduction does not depend on sequence. Deduction does not wait. Deduction is eternal — the relationship between premises and conclusions holds regardless of when (or whether) anyone notices. Deduction is P — the truth that holds.
 
-**Abduction operates AGAINST time.** Abduction reverses the arrow. Given the effect, abduction conjectures the cause. Given the observation, abduction reaches *backward* to the hypothesis that would explain it. Abduction is creative precisely because it moves against the temporal grain — from present to past, from evidence to origin, from what is to what must have been. Abduction is ν — the action that reaches.
+**Abduction operates AGAINST time.** Abduction reverses the explanatory arrow. Given the effect, abduction conjectures the cause. Given the observation, abduction infers *backward* to the hypothesis that would explain it. This is inferential reconstruction, not reverse causation: the guess is made now, then tested forward. Abduction is creative precisely because it moves against the temporal grain — from present evidence to possible origin, from what is to what may have been. Abduction is ν — the action that reaches.
 
-**The connection:** In time (φ) — receiving what arrives. Above time (P) — the invariant that holds. Against time (ν) — the conjecture that reaches back. The three temporal orientations are the three faces of knowledge's relationship to becoming.
+**The connection:** In time (φ) — receiving what arrives. Above time (P) — the invariant that holds. Against time (ν) — infer backward, test forward. The three temporal orientations are the three faces of knowledge's relationship to becoming.
 
 ---
 

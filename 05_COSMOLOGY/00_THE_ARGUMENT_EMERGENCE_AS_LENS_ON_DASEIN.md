@@ -54,7 +54,7 @@ Emergence is the proper lens for understanding *Dasein*, or being-in-the-world. 
 
 **Weak emergence** moves top-down: higher-order structures organize, constrain, and explain the behavior of the parts beneath them.
 
-Together, they form a feedback loop. The world generates structure from below, then that structure reaches back downward and reshapes the field that produced it.
+Together, they form a feedback loop. The world generates structure from below, then the stabilized structure constrains the next round of lower-level behavior through present boundary conditions, incentives, and affordances. This is recursive causation in time, not a claim that the future reaches backward.
 
 ### 1a. How the Reader Came to Be
 

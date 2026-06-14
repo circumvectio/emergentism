@@ -212,7 +212,7 @@ D4 is causality — the structure that gives change its direction. It is where t
 
 This is the crossing where **strong emergence is most dramatic.** A causal point (D4) is not the same as an agent that can choose (D5). The emergence of agency and option-space is the μ₄ crossing; "consciousness" names the lived-interior reading `[I]`, not a proved physical layer.
 
-**Weak emergence going down.** Once D5 stabilises, it becomes a compact constraint on D4. The agent's choices reshape the causal vertex. The present reaches back and reshapes the Now.
+**Weak emergence going down.** Once D5 stabilises, it becomes a compact constraint on D4. The agent's choices reshape the next causal vertex by selecting, in the present, which D4 boundary conditions receive energy, attention, and commitment. This is top-down constraint through present action, not retrocausal rewriting of the Now.
 
 ---
 
