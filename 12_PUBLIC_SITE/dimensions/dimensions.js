@@ -3,7 +3,7 @@ import {
   createStripChart as createSharedStripChart,
   clearStripChart as clearSharedStripChart,
   updateStripChart as updateSharedStripChart
-} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-14";
+} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-15";
 
 const page = window.DIMENSION_PAGE || {};
 const canvas = document.querySelector(".dimension-canvas");
@@ -101,6 +101,17 @@ const modeScales = {
   constitution: { x: "fence index", y: "closure residual" },
   ccc: { x: "aeon phase q", y: "conformal radius Ω" },
   convergence: { x: "aeon phase q", y: "conformal radius Ω" }
+};
+const modeSignalLabels = {
+  titans: { primary: "|s|", secondary: "mirror", error: "σ mirror" },
+  logline: { primary: "B", secondary: "|u|", error: "σ x·1/x" },
+  muLimit: { primary: "μ", secondary: "λ", error: "σ projection" },
+  bloch: { primary: "B", secondary: "ρ", error: "σ φν/ρ" },
+  horn: { primary: "dτ/dt", secondary: "β", error: "σ R/r" },
+  burrisphere: { primary: "B", secondary: "balance proximity", error: "σ φν/ray" },
+  constitution: { primary: "scan", secondary: "centroid", error: "σ closure" },
+  ccc: { primary: "aeon q", secondary: "rescale", error: "σ q-map" },
+  convergence: { primary: "aeon q", secondary: "rescale", error: "σ q-map" }
 };
 const animationMode = page.animationMode === "convergence"
   ? "ccc"
@@ -320,6 +331,7 @@ function ensureInstrumentOverlay(mode = animationMode) {
   if (existing) return existing;
 
   const scale = modeScales[mode] || { x: "x instrument axis", y: "y instrument axis" };
+  const signal = modeSignalLabels[mode] || { primary: "primary", secondary: "secondary", error: "residual" };
   const overlay = document.createElement("div");
   overlay.className = "instrument-overlay";
   overlay.setAttribute("aria-hidden", "true");
@@ -331,6 +343,19 @@ function ensureInstrumentOverlay(mode = animationMode) {
     <div class="instrument-reticle"></div>
     <div class="instrument-aperture">
       <span></span>
+    </div>
+    <div class="instrument-signal-ruler">
+      <span data-tick="1.00"></span>
+      <span data-tick="0.75"></span>
+      <span data-tick="0.50"></span>
+      <span data-tick="0.25"></span>
+      <span data-tick="0.00"></span>
+      <b class="primary" data-label="${signal.primary}"></b>
+      <b class="secondary" data-label="${signal.secondary}"></b>
+      <b class="error" data-label="${signal.error}"></b>
+    </div>
+    <div class="instrument-sample-ledger">
+      <span>0</span><span>15</span><span>30</span><span>45</span><span>60</span>
     </div>
     <div class="instrument-acquisition">
       <span></span>
@@ -1171,6 +1196,7 @@ function addReferenceFrame(scene) {
   const base = 0x7a7a7a;
   const axisMat = new THREE.LineBasicMaterial({ color: base, transparent: true, opacity: 0.28 });
   const tickMat = new THREE.LineBasicMaterial({ color: base, transparent: true, opacity: 0.18 });
+  const majorTickMat = new THREE.LineBasicMaterial({ color: 0xf3f4f6, transparent: true, opacity: 0.22 });
   const extent = 3.2;
   const tick = 0.035;
 
@@ -1183,11 +1209,12 @@ function addReferenceFrame(scene) {
   for (let i = -3; i <= 3; i += 1) {
     if (i === 0) continue;
     const k = i;
+    const mat = Math.abs(i) === 1 ? majorTickMat : tickMat;
     [
       [new THREE.Vector3(k, -tick, 0), new THREE.Vector3(k, tick, 0)],
       [new THREE.Vector3(-tick, k, 0), new THREE.Vector3(tick, k, 0)],
       [new THREE.Vector3(0, -tick, k), new THREE.Vector3(0, tick, k)]
-    ].forEach((pts) => frame.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), tickMat)));
+    ].forEach((pts) => frame.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), mat)));
   }
 
   [1, 2, 3].forEach((radius) => {
@@ -1197,6 +1224,23 @@ function addReferenceFrame(scene) {
     const yz = ring(radius, base, radius === 1 ? 0.14 : 0.07);
     yz.rotation.y = Math.PI / 2;
     frame.add(xy, xz, yz);
+  });
+
+  [
+    ["x", new THREE.Vector3(extent + 0.18, 0.08, 0), 0xf3f4f6],
+    ["y", new THREE.Vector3(0.08, extent + 0.18, 0), 0xffeb3b],
+    ["z", new THREE.Vector3(0, 0.08, extent + 0.18), 0x42a5f5],
+    ["±1 calibration", new THREE.Vector3(1.06, -0.16, 0.06), 0x9ca3af]
+  ].forEach(([text, position, color]) => {
+    const label = createTextSprite(THREE, text, {
+      color,
+      font: "800 18px Roboto Mono, ui-monospace, Menlo, monospace",
+      scale: text.length > 2 ? [0.68, 0.09] : [0.18, 0.07],
+      background: false,
+      stroke: false
+    });
+    label.position.copy(position);
+    frame.add(label);
   });
 
   scene.add(frame);
