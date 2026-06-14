@@ -1,3 +1,9 @@
+import {
+  createStripChart as createSharedStripChart,
+  clearStripChart as clearSharedStripChart,
+  updateStripChart as updateSharedStripChart
+} from "../assets/js/instrument-charts.js";
+
 const page = window.DIMENSION_PAGE || {};
 const canvas = document.querySelector(".dimension-canvas");
 const visual = document.querySelector(".visual-panel");
@@ -919,70 +925,29 @@ function createXYTickedRing(radius, color = 0xffffff, opacity = 0.32, tickCount 
   return group;
 }
 
-function createStripChart(origin, width = 2.2, height = 0.52, color = 0x42a5f5, max = 96) {
-  const group = new THREE.Group();
-  const frameMaterial = new THREE.LineBasicMaterial({
-    color: 0x6d7480,
-    transparent: true,
-    opacity: 0.24
+function createStripChart(origin, width = 2.2, height = 0.52, color = 0x42a5f5, max = 96, label = "", labelColor = color) {
+  return createSharedStripChart(THREE, {
+    origin,
+    width,
+    height,
+    color,
+    max,
+    label,
+    labelColor,
+    frameOpacity: 0.28,
+    traceOpacity: 0.64,
+    cursorOpacity: 0.3
   });
-  const frame = new THREE.LineSegments(
-    new THREE.BufferGeometry().setFromPoints([
-      new THREE.Vector3(origin.x, origin.y, origin.z),
-      new THREE.Vector3(origin.x + width, origin.y, origin.z),
-      new THREE.Vector3(origin.x, origin.y + height, origin.z),
-      new THREE.Vector3(origin.x + width, origin.y + height, origin.z),
-      new THREE.Vector3(origin.x, origin.y, origin.z),
-      new THREE.Vector3(origin.x, origin.y + height, origin.z),
-      new THREE.Vector3(origin.x + width, origin.y, origin.z),
-      new THREE.Vector3(origin.x + width, origin.y + height, origin.z),
-      new THREE.Vector3(origin.x, origin.y + height * 0.5, origin.z),
-      new THREE.Vector3(origin.x + width, origin.y + height * 0.5, origin.z)
-    ]),
-    frameMaterial
-  );
-  const trace = line([
-    new THREE.Vector3(origin.x, origin.y, origin.z + 0.012),
-    new THREE.Vector3(origin.x + 0.001, origin.y, origin.z + 0.012)
-  ], color, 0.58);
-  const cursor = line([
-    new THREE.Vector3(origin.x, origin.y, origin.z + 0.018),
-    new THREE.Vector3(origin.x, origin.y + height, origin.z + 0.018)
-  ], 0xf3f4f6, 0.24);
-  group.add(frame, trace, cursor);
-  return { group, origin, width, height, max, samples: [], trace, cursor };
 }
 
 function clearStripChart(chart) {
   if (!chart) return;
-  chart.samples.length = 0;
-  chart.trace.geometry.setFromPoints([
-    new THREE.Vector3(chart.origin.x, chart.origin.y, chart.origin.z + 0.012),
-    new THREE.Vector3(chart.origin.x + 0.001, chart.origin.y, chart.origin.z + 0.012)
-  ]);
+  clearSharedStripChart(THREE, chart);
 }
 
 function updateStripChart(chart, value, min = 0, max = 1, sampled = false) {
   if (!chart) return;
-  const span = Math.max(max - min, 1e-9);
-  const normalized = clamp01((value - min) / span);
-  if (sampled || chart.samples.length === 0) {
-    chart.samples.push(normalized);
-    if (chart.samples.length > chart.max) chart.samples.shift();
-  }
-  const samples = chart.samples.length > 1 ? chart.samples : [normalized, normalized];
-  const denom = Math.max(samples.length - 1, 1);
-  const points = samples.map((sample, index) => new THREE.Vector3(
-    chart.origin.x + (index / denom) * chart.width,
-    chart.origin.y + sample * chart.height,
-    chart.origin.z + 0.012
-  ));
-  chart.trace.geometry.setFromPoints(points);
-  const x = chart.origin.x + chart.width;
-  chart.cursor.geometry.setFromPoints([
-    new THREE.Vector3(x, chart.origin.y, chart.origin.z + 0.018),
-    new THREE.Vector3(x, chart.origin.y + chart.height, chart.origin.z + 0.018)
-  ]);
+  updateSharedStripChart(THREE, chart, value, min, max, sampled);
 }
 
 function addReferenceFrame(scene) {
@@ -1173,7 +1138,7 @@ function buildScene(mode, scene) {
     const invPt = makeMarker(new THREE.Vector3(-SC, 0, 0), 0xffffff, 0.075);  // 1/x — the mirror
     const ePt = makeMarker(new THREE.Vector3(SC, 0.17, 0), 0xb8b8b8, 0.05);   // E(x) on the well
     const arc = line([new THREE.Vector3(0, 0, 0)], 0xffeb3b, 0.55);           // the inversion fold
-    const balanceChart = createStripChart(new THREE.Vector3(-1.42, -1.12, 0.04), 2.84, 0.46, 0x42a5f5, 120);
+    const balanceChart = createStripChart(new THREE.Vector3(-1.42, -1.12, 0.04), 2.84, 0.46, 0x42a5f5, 120, "B=sech(ln x)");
     root.add(xPt); root.add(invPt); root.add(ePt); root.add(arc, balanceChart.group);
     if (visual) {
       visual.addEventListener("instrument:zero", () => clearStripChart(balanceChart));
@@ -1232,7 +1197,7 @@ function buildScene(mode, scene) {
     const projectionSamples = [];
     const liftDots = createPointTrace(160, 0xffeb3b, 0.5, 0.032);
     const projectionDots = createPointTrace(160, 0x42a5f5, 0.42, 0.025);
-    const liftChart = createStripChart(new THREE.Vector3(-1.48, -1.28, 0.06), 2.96, 0.46, 0x42a5f5, 120);
+    const liftChart = createStripChart(new THREE.Vector3(-1.48, -1.28, 0.06), 2.96, 0.46, 0x42a5f5, 120, "μ lift");
     if (visual) {
       visual.addEventListener("instrument:zero", () => {
         liftSamples.length = 0;
@@ -1318,7 +1283,7 @@ function buildScene(mode, scene) {
     const landingSamples = [];
     const surfaceDots = createPointTrace(150, 0xffffff, 0.42, 0.024);
     const landingDots = createPointTrace(150, 0x42a5f5, 0.48, 0.026);
-    const balanceChart = createStripChart(new THREE.Vector3(-1.52, -1.54, 0.06), 3.04, 0.48, 0x42a5f5, 120);
+    const balanceChart = createStripChart(new THREE.Vector3(-1.52, -1.54, 0.06), 3.04, 0.48, 0x42a5f5, 120, "B=sin theta");
     if (visual) {
       visual.addEventListener("instrument:zero", () => {
         surfaceSamples.length = 0;
@@ -1396,7 +1361,7 @@ function buildScene(mode, scene) {
     const properTimeGauge = createTickedRing(1.0, 0x42a5f5, 0.36, 40);
     properTimeGauge.position.y = 0.014;
     const rapidityTrace = line([new THREE.Vector3(0, 0.018, 0), new THREE.Vector3(0, 0.018, 0)], 0x42a5f5, 0.58);
-    const properTimeChart = createStripChart(new THREE.Vector3(-1.55, -1.58, 0.08), 3.1, 0.42, 0x42a5f5, 120);
+    const properTimeChart = createStripChart(new THREE.Vector3(-1.55, -1.58, 0.08), 3.1, 0.42, 0x42a5f5, 120, "dτ/dt = 1/γ");
     root.add(properTimeGauge, rapidityTrace, relCentre, properTimeChart.group);
 
     const readout = makeReadout();
@@ -1589,7 +1554,7 @@ function buildScene(mode, scene) {
     const nuRange = createTickedRing(U, MEANS, 0.2, 56);
     phiRange.position.y = -r + 0.01;
     nuRange.position.y = r + 0.01;
-    const balanceChart = createStripChart(new THREE.Vector3(-1.7, -1.36, 0.08), 3.4, 0.42, 0x42a5f5, 120);
+    const balanceChart = createStripChart(new THREE.Vector3(-1.7, -1.36, 0.08), 3.4, 0.42, 0x42a5f5, 120, "U_B bridge");
     root.add(phiRange, nuRange, phiLine, nuLine, pointLine, phiDots.mesh, nuDots.mesh, pointDots.mesh, balanceChart.group);
 
     const readout = makeReadout();
@@ -1775,7 +1740,7 @@ function buildScene(mode, scene) {
     const expansionDot = makeMarker(new THREE.Vector3(-1.65, graphY + 0.08, 0.04), 0xffeb3b, 0.035);
     const inverseDot = makeMarker(new THREE.Vector3(-1.65, graphY + 0.5, 0.04), 0x42a5f5, 0.035);
     root.add(graphCursor, expansionDot, inverseDot);
-    const closureChart = createStripChart(new THREE.Vector3(-1.65, graphY - 0.62, 0.04), 3.3, 0.4, 0xffeb3b, 120);
+    const closureChart = createStripChart(new THREE.Vector3(-1.65, graphY - 0.62, 0.04), 3.3, 0.4, 0xffeb3b, 120, "q closure", 0xffeb3b);
     const boundarySamples = [];
     const boundaryTrace = createPointTrace(140, 0xffeb3b, 0.38, 0.018);
     root.add(closureChart.group, boundaryTrace.mesh);

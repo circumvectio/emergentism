@@ -70,9 +70,11 @@
 </script>
 <script type="module">
 let THREE, OrbitControls;
+let createStripChart, clearStripChart, updateStripChart;
 try {
   THREE = await import('three');
   ({ OrbitControls } = await import('three/addons/controls/OrbitControls.js'));
+  ({ createStripChart, clearStripChart, updateStripChart } = await import('./assets/js/instrument-charts.js'));
 } catch (e) { document.getElementById('fallback').style.display = 'flex'; throw e; }
 
 const REDUCED_MOTION = !!(window.matchMedia
@@ -158,49 +160,25 @@ const wl = new THREE.Line(new THREE.BufferGeometry(), new THREE.LineBasicMateria
 scene.add(wl);
 
 const OMEGA_TRACE_MAX = 180;
-const omegaTraceSamples = [];
-const omegaGraph = {
-  x: -3.4,
-  y: -1.86,
-  z: 0.08,
-  w: 2.2,
-  h: 0.72,
-  max: Math.PI * Math.pow((1.25 + 1.95) * Math.tan((16 + 17.5) * Math.PI / 180), 2) * (1.25 + 1.95) / 3
-};
-const omegaFrame = new THREE.LineSegments(
-  new THREE.BufferGeometry().setFromPoints([
-    new THREE.Vector3(omegaGraph.x, omegaGraph.y, omegaGraph.z),
-    new THREE.Vector3(omegaGraph.x + omegaGraph.w, omegaGraph.y, omegaGraph.z),
-    new THREE.Vector3(omegaGraph.x, omegaGraph.y, omegaGraph.z),
-    new THREE.Vector3(omegaGraph.x, omegaGraph.y + omegaGraph.h, omegaGraph.z),
-    new THREE.Vector3(omegaGraph.x, omegaGraph.y + omegaGraph.h * 0.5, omegaGraph.z),
-    new THREE.Vector3(omegaGraph.x + omegaGraph.w, omegaGraph.y + omegaGraph.h * 0.5, omegaGraph.z)
-  ]),
-  new THREE.LineBasicMaterial({ color: 0x6d7480, transparent: true, opacity: 0.22 })
-);
-const omegaTrace = new THREE.Line(
-  new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(), new THREE.Vector3()]),
-  new THREE.LineBasicMaterial({ color: TEAL, transparent: true, opacity: 0.52 })
-);
-scene.add(omegaFrame, omegaTrace);
+const OMEGA_GRAPH_MAX = Math.PI * Math.pow((1.25 + 1.95) * Math.tan((16 + 17.5) * Math.PI / 180), 2) * (1.25 + 1.95) / 3;
+const omegaChart = createStripChart(THREE, {
+  origin: new THREE.Vector3(-3.4, -1.86, 0.08),
+  width: 2.2,
+  height: 0.72,
+  color: TEAL,
+  max: OMEGA_TRACE_MAX,
+  label: 'Ω proxy',
+  labelColor: TEAL,
+  traceOpacity: 0.6
+});
+scene.add(omegaChart.group);
 
 function clearOmegaTrace() {
-  omegaTraceSamples.length = 0;
-  omegaTrace.geometry.setFromPoints([new THREE.Vector3(), new THREE.Vector3()]);
+  clearStripChart(THREE, omegaChart);
 }
 
 function appendOmegaSample(value) {
-  omegaTraceSamples.push(Math.max(0, Math.min(omegaGraph.max, value)));
-  if (omegaTraceSamples.length > OMEGA_TRACE_MAX) omegaTraceSamples.shift();
-  const trace = omegaTraceSamples.length > 1
-    ? omegaTraceSamples
-    : [omegaTraceSamples[0], omegaTraceSamples[0]];
-  const pts = trace.map((sample, i) => {
-    const q = trace.length === 1 ? 0 : i / (trace.length - 1);
-    const y = omegaGraph.y + (sample / omegaGraph.max) * omegaGraph.h;
-    return new THREE.Vector3(omegaGraph.x + q * omegaGraph.w, y, omegaGraph.z + 0.01);
-  });
-  omegaTrace.geometry.setFromPoints(pts);
+  updateStripChart(THREE, omegaChart, value, 0, OMEGA_GRAPH_MAX, true);
 }
 
 function writeConeSegments(target, height, angle, dir){ // dir +1 future, -1 past
@@ -241,6 +219,12 @@ let lastFrame = 0;
 let fps = 0;
 let sampleAccumulator = 0;
 let sampleIndex = 0;
+
+function nowMs() {
+  return (typeof performance !== 'undefined' && typeof performance.now === 'function')
+    ? performance.now()
+    : Date.now();
+}
 
 function advanceSamples(frameSeconds, rate = 1, forcedSeconds = 0, pausedState = false) {
   if (!pausedState) sampleAccumulator += Math.min(Math.max(frameSeconds, 0), MAX_FRAME_DT) * rate;
@@ -296,13 +280,14 @@ if (zeroButton) {
     lastSampleT = 0;
     clearOmegaTrace();
     syncPlayback();
-    updateInstrument(performance.now(), 0);
+    updateInstrument(nowMs(), 0);
   });
 }
 syncPlayback();
 
-function updateInstrument(frameTime = performance.now(), poseOffset = null){
-  const now = typeof frameTime === 'number' ? frameTime : performance.now();
+function updateInstrument(frameTime = nowMs(), poseOffset = null){
+  try {
+  const now = typeof frameTime === 'number' ? frameTime : nowMs();
   const frameDt = lastFrame ? Math.max(1, now - lastFrame) : 16.7;
   fps = fps ? fps * 0.9 + (1000 / frameDt) * 0.1 : 1000 / frameDt;
   lastFrame = now;
@@ -322,7 +307,7 @@ function updateInstrument(frameTime = performance.now(), poseOffset = null){
   const radius = height * Math.tan(angle);
   const coneResidual = Math.abs(radius - height * Math.tan(angle));
   const omegaProxy = Math.PI * radius * radius * height / 3;
-  if (sampleAdvance > 0 || omegaTraceSamples.length === 0) {
+  if (sampleAdvance > 0 || omegaChart.samples.length === 0) {
     const sampleDt = lastSampleT ? Math.max(0.001, t - lastSampleT) : sampleAdvance;
     lastOmegaRate = sampleDt ? (omegaProxy - lastOmegaProxy) / sampleDt : 0;
     lastOmegaProxy = omegaProxy;
@@ -371,12 +356,20 @@ function updateInstrument(frameTime = performance.now(), poseOffset = null){
       'tier: [I] selection image; no literal fifth-force physics claim';
   controls.update();
   renderer.render(scene, camera);
+  } catch (error) {
+    if (readout) readout.textContent = 'LIGHTCONE ERROR\n' + (error && error.message ? error.message : String(error));
+    throw error;
+  }
 }
 function animate(){
-  requestAnimationFrame(animate);
   updateInstrument();
+  requestAnimationFrame(animate);
 }
-if (REDUCED_MOTION) updateInstrument(performance.now(), 1.2); else animate();
+if (REDUCED_MOTION || typeof requestAnimationFrame !== 'function') {
+  updateInstrument(nowMs(), 1.2);
+} else {
+  animate();
+}
 addEventListener('resize', () => {
   camera.aspect = innerWidth/innerHeight; camera.updateProjectionMatrix();
   renderer.setSize(innerWidth, innerHeight);
