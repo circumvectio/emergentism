@@ -9,6 +9,11 @@ const TAU = Math.PI * 2;
 const SAMPLE_HZ = 30;
 const SAMPLE_DT = 1 / SAMPLE_HZ;
 const MAX_FRAME_DT = 0.12;
+const INSTRUMENT_CPS = {
+  slow: 0.018,
+  medium: 0.024,
+  fast: 0.035
+};
 const COLORS = {
   bg: "#050505",
   surface: "#0A0A0A",
@@ -484,8 +489,8 @@ function drawTitanCalculator(time = 0) {
       }
     });
 
-    const reciprocalPhase = phase01(t, 0.035);
-    const reciprocalS = 1.85 + smooth01(sweep01(t, 0.035)) * 2.5;
+    const reciprocalPhase = phase01(t, INSTRUMENT_CPS.medium);
+    const reciprocalS = 1.85 + smooth01(sweep01(t, INSTRUMENT_CPS.medium)) * 2.5;
     const lx = cx - reciprocalS * unit;
     const rx = cx + reciprocalS * unit;
     const mirrorResidual = Math.abs((lx + rx) - (2 * cx)) / Math.max(unit, 1e-6);
@@ -653,7 +658,7 @@ function drawConstitutionInstrument(time = 0) {
     const cy = height * 0.52;
     const radius = Math.min(width, height) * (wide ? 0.25 : 0.31);
     const t = simTime;
-    const phase = phase01(t, 0.046);
+    const phase = phase01(t, INSTRUMENT_CPS.fast);
     const scan = phase * fences.length;
     const active = Math.floor(scan) % fences.length;
     const local = scan - Math.floor(scan);
@@ -1177,8 +1182,8 @@ function buildScene(mode, scene) {
     const readout = makeReadout();
     if (readout) readout.style.whiteSpace = "pre-line";
     dyn.push(function (t, sampled) {
-      const logPhase = phase01(t, 0.035);
-      const s = -2.9 + smooth01(sweep01(t, 0.035)) * 5.8; // sweep in log coordinates
+      const logPhase = phase01(t, 0.022);
+      const s = -2.9 + smooth01(sweep01(t, 0.022)) * 5.8; // sweep in log coordinates
       const x = Math.pow(2, s);
       xPt.position.set(s * SC, 0, 0);
       invPt.position.set(-s * SC, 0, 0);
@@ -1227,10 +1232,12 @@ function buildScene(mode, scene) {
     const projectionSamples = [];
     const liftDots = createPointTrace(160, 0xffeb3b, 0.5, 0.032);
     const projectionDots = createPointTrace(160, 0x42a5f5, 0.42, 0.025);
+    const liftChart = createStripChart(new THREE.Vector3(-1.48, -1.28, 0.06), 2.96, 0.46, 0x42a5f5, 120);
     if (visual) {
       visual.addEventListener("instrument:zero", () => {
         liftSamples.length = 0;
         projectionSamples.length = 0;
+        clearStripChart(liftChart);
       });
     }
     root.add(line([
@@ -1244,7 +1251,7 @@ function buildScene(mode, scene) {
       new THREE.Vector3(-1.8, 0, 0),
       new THREE.Vector3(-1.8, 0, 0)
     ], 0xffeb3b, 0.65);
-    root.add(liftTrace, projectionTrace, liftDots.mesh, projectionDots.mesh, sample, projection, liftLine);
+    root.add(liftTrace, projectionTrace, liftDots.mesh, projectionDots.mesh, sample, projection, liftLine, liftChart.group);
     const readout = makeReadout();
     if (readout) {
       readout.style.left = "auto";
@@ -1253,8 +1260,8 @@ function buildScene(mode, scene) {
       readout.classList.add("instrument-readout");
     }
     dyn.push((t, sampled) => {
-      const muPhase = phase01(t, 0.032);
-      const p = smooth01(sweep01(t, 0.032));
+      const muPhase = phase01(t, INSTRUMENT_CPS.medium);
+      const p = smooth01(sweep01(t, INSTRUMENT_CPS.medium));
       const x = -1.8 + 3.6 * p;
       const lift = 1.6 * Math.max(0, 1 - Math.abs(2 * p - 1));
       const onLine = new THREE.Vector3(x, 0, 0);
@@ -1270,6 +1277,7 @@ function buildScene(mode, scene) {
       setLinePoints(projectionTrace, projectionSamples);
       updatePointTrace(liftDots, liftSamples);
       updatePointTrace(projectionDots, projectionSamples);
+      updateStripChart(liftChart, lift, 0, 1.6, sampled);
       const projectionResidual = Math.abs(onPlane.x - onLine.x);
       setInstrumentMetric(
         "λ " + p.toFixed(2) + " · μ " + lift.toFixed(2),
@@ -1281,6 +1289,7 @@ function buildScene(mode, scene) {
         "D2 μ-LIMIT · line-to-plane assay\n" +
         "sample λ = " + p.toFixed(2) + " · lift μ = " + lift.toFixed(2) + "\n" +
         "constraint: a line cannot inspect its own off-axis curvature\n" +
+        "strip chart: sampled μ lift history\n" +
         "instrument reading: local coordinate gains a second degree of freedom";
     });
   }
@@ -1328,8 +1337,8 @@ function buildScene(mode, scene) {
       readout.classList.add("instrument-readout");
     }
     dyn.push((t, sampled) => {
-      const projectionPhase = phase01(t, 0.03);
-      const p = smooth01(sweep01(t, 0.03));
+      const projectionPhase = phase01(t, 0.022);
+      const p = smooth01(sweep01(t, 0.022));
       const th = (55 + 70 * p) * Math.PI / 180;
       const P = new THREE.Vector3(r * Math.sin(th), r * Math.cos(th), 0);
       const land = new THREE.Vector3(2 * r / Math.tan(th / 2), -r, 0);
@@ -1387,7 +1396,8 @@ function buildScene(mode, scene) {
     const properTimeGauge = createTickedRing(1.0, 0x42a5f5, 0.36, 40);
     properTimeGauge.position.y = 0.014;
     const rapidityTrace = line([new THREE.Vector3(0, 0.018, 0), new THREE.Vector3(0, 0.018, 0)], 0x42a5f5, 0.58);
-    root.add(properTimeGauge, rapidityTrace, relCentre);
+    const properTimeChart = createStripChart(new THREE.Vector3(-1.55, -1.58, 0.08), 3.1, 0.42, 0x42a5f5, 120);
+    root.add(properTimeGauge, rapidityTrace, relCentre, properTimeChart.group);
 
     const readout = makeReadout();
     if (readout) {
@@ -1418,6 +1428,7 @@ function buildScene(mode, scene) {
       visual.addEventListener("instrument:zero", () => {
         userActive = false;
         slider.value = "0";
+        clearStripChart(properTimeChart);
       });
     }
     function bar(frac, color) {
@@ -1425,12 +1436,12 @@ function buildScene(mode, scene) {
       return "<span style='display:inline-block;width:74px;height:7px;border:1px solid #3a3a3a;border-radius:4px;vertical-align:-1px;overflow:hidden'>" +
         "<span style='display:block;height:100%;width:" + w.toFixed(0) + "%;background:" + color + "'></span></span>";
     }
-    dyn.push(function (t) {
+    dyn.push(function (t, sampled) {
       let w;
       if (userActive && slider) {
         w = (parseFloat(slider.value) / 100) * W_MAX;            // slider is LINEAR in rapidity = LOG in velocity
       } else {
-        w = smooth01(sweep01(t, 0.028)) * W_MAX * 0.92;          // measured rapidity sweep until the user grabs the slider
+        w = smooth01(sweep01(t, INSTRUMENT_CPS.slow)) * W_MAX * 0.92; // measured rapidity sweep until the user grabs the slider
         if (slider) slider.value = String(Math.round((w / W_MAX) * 100));
       }
       const vc = Math.tanh(w);                                  // β = v/c — tends to 1
@@ -1457,6 +1468,7 @@ function buildScene(mode, scene) {
         new THREE.Vector3(0, 0.018, 0),
         new THREE.Vector3(px, 0.018, 0)
       ]);
+      updateStripChart(properTimeChart, 1 / gamma, 0, 1, sampled);
       root.rotation.y = 0;
       const moving = w > 0.02;
       const morphResidual = Math.abs((g.R / Math.max(g.rt, 1e-9)) - (1 / gamma));
@@ -1472,6 +1484,7 @@ function buildScene(mode, scene) {
         "γ = cosh(w) = " + gamma.toFixed(1) + " · E/mc² = γ " + bar(gamma / G_MAX, "#FFEB3B") + "<br>" +
         "R/r = 1/γ = " + (1 / gamma).toFixed(3) + " · dτ/dt<br>" +
         "<span style='color:#9CA3AF'>blue shell = sampled sphere asymptote; finite frame never reaches the limit.</span><br>" +
+        "<span style='color:#9CA3AF'>strip chart = sampled proper-time ratio dτ/dt.</span><br>" +
         (!moving
           ? "<span style='color:#FFEB3B'>w=0 · HORN touch (γ=1, R=r) — rest energy E = mc²</span>"
           : gamma > 20
@@ -1576,7 +1589,8 @@ function buildScene(mode, scene) {
     const nuRange = createTickedRing(U, MEANS, 0.2, 56);
     phiRange.position.y = -r + 0.01;
     nuRange.position.y = r + 0.01;
-    root.add(phiRange, nuRange, phiLine, nuLine, pointLine, phiDots.mesh, nuDots.mesh, pointDots.mesh);
+    const balanceChart = createStripChart(new THREE.Vector3(-1.7, -1.36, 0.08), 3.4, 0.42, 0x42a5f5, 120);
+    root.add(phiRange, nuRange, phiLine, nuLine, pointLine, phiDots.mesh, nuDots.mesh, pointDots.mesh, balanceChart.group);
 
     const readout = makeReadout();
     if (readout) {
@@ -1607,6 +1621,7 @@ function buildScene(mode, scene) {
       visual.addEventListener("instrument:zero", () => {
         thetaUserActive = false;
         thetaSlider.value = "50";
+        clearStripChart(balanceChart);
       });
     }
     const thetaFromSlider = () => {
@@ -1616,7 +1631,7 @@ function buildScene(mode, scene) {
     const sliderFromTheta = (theta) =>
       Math.round(((theta - THETA_MIN) / (THETA_MAX - THETA_MIN)) * 100);
     const quadName = ["I", "II", "III", "IV"];
-    const D5_SWEEP_CPS = 0.03;
+    const D5_SWEEP_CPS = INSTRUMENT_CPS.slow;
     const D5_BALANCE_OFFSET = 0.25 / D5_SWEEP_CPS;
     function pointLineResidual(a, p, b) {
       const ab = b.clone().sub(a);
@@ -1624,7 +1639,7 @@ function buildScene(mode, scene) {
       return ap.cross(ab).length() / Math.max(ab.length(), 1e-9);
     }
     dyn.push(function (t, sampled) {
-      const psi = t * 0.34;                                          // measured azimuth trace
+      const psi = t * 0.22;                                          // measured azimuth trace
       const theta = thetaUserActive
         ? thetaFromSlider()
         : THETA_MIN + smooth01(sweep01(t + D5_BALANCE_OFFSET, D5_SWEEP_CPS)) * (THETA_MAX - THETA_MIN); // auto-sweep from the calibrated balance latitude
@@ -1681,6 +1696,7 @@ function buildScene(mode, scene) {
       const reciprocalResidual = Math.abs(phi * nu - 1);
       const rayResidual = Math.max(pointLineResidual(N, P, Lphi), pointLineResidual(S, P, Lnu));
       const finiteCouplingProxy = balance;
+      updateStripChart(balanceChart, finiteCouplingProxy, 0, 1, sampled);
       setInstrumentMetric(
         "B " + balance.toFixed(3) + " · U " + finiteCouplingProxy.toFixed(3),
         thetaUserActive ? "manual latitude" : "reciprocal sweep",
@@ -1692,6 +1708,7 @@ function buildScene(mode, scene) {
         "θ " + (theta * 180 / Math.PI).toFixed(0) + "°" + (thetaUserActive ? " held" : " sweep") + " · φ " + phi.toFixed(2) + " · ν " + nu.toFixed(2) + " · φ·ν=1\n" +
         "B=sinθ " + balance.toFixed(3) + " · U_B " + finiteCouplingProxy.toFixed(3) + " · γ=1/B " + energyCost.toFixed(2) + " · |lnφ| " + imbalance.toFixed(2) + "\n" +
         "residuals: σ(φν) " + reciprocalResidual.toExponential(1) + " · σ(ray) " + rayResidual.toExponential(1) + "\n" +
+        "strip chart: sampled bridge viability U_B over clocked frames\n" +
         "finite action bridge: score P_node = PHI_action x V_action only after the lowercase chart is read as D5 sight and D4 means\n" +
         "quadrant " + q + " · " + opName + " · " + moveName;
     });
@@ -1777,7 +1794,7 @@ function buildScene(mode, scene) {
     root.add(phaseNeedle);
 
     dyn.push((t, sampled) => {
-      const leadPhase = phase01(t, 0.045);
+      const leadPhase = phase01(t, 0.026);
       const q = smooth01(leadPhase);
       const aeonRadius = 0.12 + q * (boundaryRadius - 0.12);
       const conformalRadius = 0.12 + (1 - q) * (boundaryRadius - 0.12);

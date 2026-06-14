@@ -138,17 +138,17 @@ const CONE_SEGMENTS = RINGS * SPOKES + Math.ceil(SPOKES / 3);
 const CONE_COORDS = CONE_SEGMENTS * 2 * 3;
 const futureConePositions = new Float32Array(CONE_COORDS);
 const pastConePositions = new Float32Array(CONE_COORDS);
-const coneMat = new THREE.LineBasicMaterial({ color: GOLD, transparent: true, opacity: 0.9 });
+const coneMat = new THREE.LineBasicMaterial({ color: GOLD, transparent: true, opacity: 0.72 });
 const coneGeo = new THREE.BufferGeometry();
 coneGeo.setAttribute('position', new THREE.BufferAttribute(futureConePositions, 3));
 const cone = new THREE.LineSegments(coneGeo, coneMat);
 scene.add(cone);
 // translucent interior (a translatable cone mesh)
-const fillMat = new THREE.MeshBasicMaterial({ color: GOLD, transparent: true, opacity: 0.035, side: THREE.DoubleSide });
+const fillMat = new THREE.MeshBasicMaterial({ color: GOLD, transparent: true, opacity: 0.024, side: THREE.DoubleSide });
 const fill = new THREE.Mesh(new THREE.ConeGeometry(1, 1, 48, 1, true), fillMat);
 scene.add(fill);
 // a faint past cone (downward, dim)
-const pastMat = new THREE.LineBasicMaterial({ color: TEAL, transparent: true, opacity: 0.25 });
+const pastMat = new THREE.LineBasicMaterial({ color: TEAL, transparent: true, opacity: 0.18 });
 const pastGeo = new THREE.BufferGeometry();
 pastGeo.setAttribute('position', new THREE.BufferAttribute(pastConePositions, 3));
 const past = new THREE.LineSegments(pastGeo, pastMat);
@@ -157,7 +157,7 @@ scene.add(past);
 const wl = new THREE.Line(new THREE.BufferGeometry(), new THREE.LineBasicMaterial({ color: 0xe8e4df, transparent:true, opacity:0.5 }));
 scene.add(wl);
 
-const OMEGA_TRACE_MAX = 120;
+const OMEGA_TRACE_MAX = 180;
 const omegaTraceSamples = [];
 const omegaGraph = {
   x: -3.4,
@@ -315,10 +315,10 @@ function updateInstrument(frameTime = performance.now(), poseOffset = null){
   const t = REDUCED_MOTION ? simTime || 1.2 : simTime;
   // F5/Ω drive in the interpretive register: the cone widens and lengthens on
   // a measured cycle, without claiming a new settled physical force.
-  const cyc = (1 - Math.cos(t * 0.32)) / 2;            // 0..1 calibrated sweep, zeroed at t=0
+  const cyc = (1 - Math.cos(t * 0.18)) / 2;            // 0..1 calibrated sweep, zeroed at t=0
   const ease = cyc * cyc * (3 - 2 * cyc);
-  const angle = (16 + ease * 17.5) * Math.PI / 180;     // 16°..33.5° (widen)
-  const height = 1.25 + ease * 1.95;                     // lengthen without clipping
+  const angle = (18 + ease * 12) * Math.PI / 180;       // 18°..30° (widen)
+  const height = 1.35 + ease * 1.55;                    // lengthen without clipping
   const radius = height * Math.tan(angle);
   const coneResidual = Math.abs(radius - height * Math.tan(angle));
   const omegaProxy = Math.PI * radius * radius * height / 3;

@@ -345,7 +345,7 @@ const STAGES = [
 ];
 
 let cur = 0, playing = true, tAccum = 0;
-const STAGE_SECS = 7.0;
+const STAGE_SECS = 9.0;
 let morphTarget = 0, morphCur = 0;
 const fades = new Map(); // object -> target opacity
 
@@ -470,13 +470,13 @@ function show(i){
   // intros
   [introFinity, introRiemann].forEach(g => setFade(g, s.intro === g ? 0.95 : 0));
   // morph mesh visible from stage 2 on
-  fades.set(morphMat, cur >= 2 ? 0.92 : 0);
+  fades.set(morphMat, cur >= 2 ? 0.72 : 0);
   morphTarget = s.mt;
   if (previous === STAGES.length - 1 && cur === 0) morphCur = morphTarget;
-  setFade(burri, s.burri ? 0.95 : 0);
+  setFade(burri, s.burri ? 0.82 : 0);
   // dual projection assay only on final Burrisphere stage
   const showProj = !!s.burri;
-  setFade(projGroup, showProj ? 0.9 : 0);
+  setFade(projGroup, showProj ? 0.74 : 0);
   projGroup.visible = showProj || projGroup.visible;
   // dots
   [...dots.children].forEach((d, k) => d.classList.toggle('on', k === cur));
@@ -561,11 +561,11 @@ function animate(frameTime = performance.now()){
   if (dt > 0) advanceStageClock(dt);
 
   // morph
-  morphCur += (morphTarget - morphCur) * Math.min(1, dt * 0.9);
+  morphCur += (morphTarget - morphCur) * Math.min(1, dt * 0.48);
   if (Math.abs(morphCur - morphTarget) > 0.001 || cur >= 2) rebuild(morphCur);
   if (cur >= 2) {
-    const probeU = 0.5 + 0.32 * Math.sin(tAccum * 0.34);
-    const probeV = 0.5 + 0.18 * Math.cos(tAccum * 0.27);
+    const probeU = 0.5 + 0.24 * Math.sin(tAccum * 0.18);
+    const probeV = 0.5 + 0.14 * Math.cos(tAccum * 0.15);
     const currentQ = morphAt(probeU, probeV, morphCur);
     const targetQ = morphAt(probeU, probeV, morphTarget);
     const current = new THREE.Vector3(currentQ[0], currentQ[1], currentQ[2]);
@@ -599,8 +599,8 @@ function animate(frameTime = performance.now()){
 
   // dual projection rays read reciprocal coordinates on final stage.
   if (STAGES[cur].burri) {
-    const psi = tAccum * 0.42;
-    const theta = Math.PI / 2 + Math.sin(tAccum * 0.48) * 0.5;
+    const psi = tAccum * 0.24;
+    const theta = Math.PI / 2 + Math.sin(tAccum * 0.22) * 0.42;
     const phi = 1 / Math.tan(theta / 2);
     const nu = Math.tan(theta / 2);
     const balance = Math.sin(theta);
@@ -625,7 +625,7 @@ function animate(frameTime = performance.now()){
 
   // opacity tweens
   fades.forEach((target, mat) => {
-    mat.opacity += (target - mat.opacity) * Math.min(1, dt * 3);
+    mat.opacity += (target - mat.opacity) * Math.min(1, dt * 1.6);
     if (mat.opacity < 0.01 && target === 0) { /* leave hidden */ }
   });
 

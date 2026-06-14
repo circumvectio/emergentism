@@ -612,7 +612,7 @@ noscript {
   border-radius: var(--shape-md);
   background: #050505;
   overflow: hidden;
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.025), 0 8px 28px rgba(0,0,0,0.18);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.035), 0 8px 22px rgba(0,0,0,0.14);
 }
 
 .visual-panel::after {
@@ -621,9 +621,9 @@ noscript {
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(transparent 0, rgba(255, 255, 255, 0.035) 1px, transparent 1px) 0 0 / 100% 64px,
-    linear-gradient(90deg, transparent 0, rgba(255, 255, 255, 0.035) 1px, transparent 1px) 0 0 / 64px 100%;
-  opacity: 0.72;
+    linear-gradient(transparent 0, rgba(255, 255, 255, 0.028) 1px, transparent 1px) 0 0 / 100% 64px,
+    linear-gradient(90deg, transparent 0, rgba(255, 255, 255, 0.028) 1px, transparent 1px) 0 0 / 64px 100%;
+  opacity: 0.52;
 }
 
 .visual-labels {
@@ -693,7 +693,7 @@ body.soul-loop-instrument .visual-labels .bottom {
 .instrument-graticule {
   position: absolute;
   inset: 24px;
-  opacity: 0.16;
+  opacity: 0.13;
   background:
     repeating-linear-gradient(90deg, rgba(255,255,255,0.09) 0 1px, transparent 1px 32px),
     repeating-linear-gradient(0deg, rgba(255,255,255,0.09) 0 1px, transparent 1px 32px),
@@ -710,7 +710,7 @@ body.soul-loop-instrument .visual-labels .bottom {
   position: absolute;
   width: 24px;
   height: 24px;
-  border-color: rgba(255, 235, 59, 0.28);
+  border-color: rgba(255, 235, 59, 0.22);
   border-style: solid;
 }
 
@@ -757,7 +757,7 @@ body.soul-loop-instrument .visual-labels .bottom {
   background:
     linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,235,59,0.16) calc(50% - 0.5px), rgba(255,235,59,0.16) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
     linear-gradient(0deg, transparent calc(50% - 0.5px), rgba(66,165,245,0.16) calc(50% - 0.5px), rgba(66,165,245,0.16) calc(50% + 0.5px), transparent calc(50% + 0.5px));
-  opacity: 0.28;
+  opacity: 0.22;
 }
 
 .instrument-scale {
@@ -814,7 +814,7 @@ body.soul-loop-instrument .visual-labels .bottom {
   flex-wrap: wrap;
   gap: 6px;
   align-items: center;
-  max-width: calc(100% - 410px);
+  max-width: max(9.5rem, calc(100% - 410px));
   color: rgba(243, 244, 246, 0.76);
   font: 700 10px/1 "Roboto Mono", ui-monospace, Menlo, monospace;
   font-variant-numeric: tabular-nums;
@@ -826,7 +826,7 @@ body.soul-loop-instrument .visual-labels .bottom {
   min-width: max-content;
   border: 1px solid rgba(243, 244, 246, 0.16);
   border-radius: 3px;
-  background: rgba(5, 5, 5, 0.9);
+  background: rgba(5, 5, 5, 0.94);
   padding: 4px 6px;
   backdrop-filter: blur(4px);
 }
@@ -872,7 +872,7 @@ body.soul-loop-instrument .visual-labels .bottom {
   min-height: 25px;
   border: 1px solid rgba(243, 244, 246, 0.16);
   border-radius: 3px;
-  background: rgba(5, 5, 5, 0.9);
+  background: rgba(5, 5, 5, 0.94);
   color: inherit;
   backdrop-filter: blur(4px);
 }
@@ -990,8 +990,8 @@ body.soul-loop-instrument .visual-labels .bottom {
   height: 4px !important;
   border-radius: 999px;
   background:
-    repeating-linear-gradient(90deg, rgba(255,255,255,0.22) 0 1px, transparent 1px 8px),
-    linear-gradient(90deg, rgba(255,235,59,0.45), rgba(66,165,245,0.34));
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.24) 0 1px, transparent 1px 8px),
+    linear-gradient(90deg, rgba(255,235,59,0.38), rgba(66,165,245,0.34));
 }
 
 .model-slider input[type="range"]::-webkit-slider-thumb {
@@ -1998,12 +1998,12 @@ pre.glyph-block {
   pointer-events: none;
   border: 1px solid rgba(243, 244, 246, 0.12);
   background:
-    repeating-linear-gradient(90deg, rgba(243,244,246,.052) 0 1px, transparent 1px 32px),
-    repeating-linear-gradient(0deg, rgba(243,244,246,.052) 0 1px, transparent 1px 32px),
-    repeating-linear-gradient(90deg, rgba(255,235,59,.078) 0 1px, transparent 1px 128px),
-    repeating-linear-gradient(0deg, rgba(33,150,243,.072) 0 1px, transparent 1px 128px);
+    repeating-linear-gradient(90deg, rgba(243,244,246,.044) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(0deg, rgba(243,244,246,.044) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(90deg, rgba(255,235,59,.052) 0 1px, transparent 1px 128px),
+    repeating-linear-gradient(0deg, rgba(33,150,243,.052) 0 1px, transparent 1px 128px);
   box-shadow: inset 0 0 0 1px rgba(255,255,255,.035);
-  opacity: .28;
+  opacity: .34;
 }
 .lab-frame::before,
 .lab-frame::after {
@@ -2016,13 +2016,13 @@ pre.glyph-block {
   inset: 0;
   background:
     linear-gradient(90deg, transparent calc(50% - .5px), rgba(255,235,59,.16) calc(50% - .5px), rgba(255,235,59,.16) calc(50% + .5px), transparent calc(50% + .5px)),
-    linear-gradient(0deg, transparent calc(50% - .5px), rgba(66,165,245,.14) calc(50% - .5px), rgba(66,165,245,.14) calc(50% + .5px), transparent calc(50% + .5px));
+    linear-gradient(0deg, transparent calc(50% - .5px), rgba(66,165,245,.12) calc(50% - .5px), rgba(66,165,245,.12) calc(50% + .5px), transparent calc(50% + .5px));
 }
 .lab-frame .corner {
   position: absolute;
   width: 26px;
   height: 26px;
-  border-color: rgba(255,235,59,.38);
+  border-color: rgba(255,235,59,.3);
   border-style: solid;
 }
 .lab-frame .corner::after {
@@ -2175,7 +2175,7 @@ body.sphere-instrument > a.exit {
   min-width: max-content;
   border: 1px solid rgba(243, 244, 246, 0.16);
   border-radius: 3px;
-  background: rgba(5, 5, 5, 0.88);
+  background: rgba(5, 5, 5, 0.94);
   padding: 4px 6px;
   backdrop-filter: blur(4px);
 }
@@ -2200,11 +2200,11 @@ body.sphere-instrument > a.exit {
   right: 32px;
   top: 136px;
   z-index: 4;
-  width: min(360px, calc(100vw - 64px));
+  width: min(410px, calc(100vw - 64px));
   border: 1px solid var(--border);
   border-left: 2px solid var(--gold);
   border-radius: var(--shape-md);
-  background: rgba(5, 5, 5, 0.92);
+  background: rgba(5, 5, 5, 0.94);
   color: var(--text-muted);
   padding: 10px 12px;
   white-space: pre-line;

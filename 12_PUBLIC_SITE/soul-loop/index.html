@@ -317,7 +317,7 @@
     { label: 'L2', title: 're-gather', color: '#2196f3' },
     { label: 'L7', title: 'preserve', color: '#42A5F5' }
   ];
-  const STEP_MS = 1100;
+  const STEP_MS = 1700;
   let lastFrame = 0;
   let fps = 0;
   let paused = false;
@@ -325,7 +325,7 @@
   let stepMs = 0;
   let sampleAccumulatorMs = 0;
   let sampleIndex = 0;
-  const RESIDUAL_TRACE_MAX = 96;
+  const RESIDUAL_TRACE_MAX = 144;
   const residualSamples = [];
 
   const playback = (() => {
@@ -407,9 +407,9 @@
         "position:absolute;right:16px;top:74px;z-index:5;max-width:min(330px,38%);" +
         "font:700 10.5px/1.48 'Roboto Mono',ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums;" +
         "color:#f3f4f6;pointer-events:none;letter-spacing:0;white-space:pre-line;text-align:left;" +
-        "background:rgba(5,5,5,.78);padding:9px 12px;" +
+        "background:rgba(5,5,5,.94);padding:9px 12px;" +
         "border:1px solid rgba(255,255,255,.14);border-left:2px solid #ffeb3b;border-radius:6px;backdrop-filter:blur(4px);" +
-        "box-shadow:0 10px 28px rgba(0,0,0,.28)";
+        "box-shadow:none";
       visual.appendChild(el);
     }
     return el;
@@ -524,8 +524,8 @@
     for (let i = 0; i < nodes.length; i++) {
       const start = pointOnLoop(cx, cy, r, i);
       const end = pointOnLoop(cx, cy, r, (i + 1) % nodes.length);
-      ctx.strokeStyle = i === active ? 'rgba(255,235,59,0.95)' : 'rgba(255,255,255,0.12)';
-      ctx.lineWidth = i === active ? 2 : 1;
+      ctx.strokeStyle = i === active ? 'rgba(255,235,59,0.78)' : 'rgba(255,255,255,0.10)';
+      ctx.lineWidth = i === active ? 1.5 : 1;
       ctx.beginPath();
       ctx.moveTo(start.x, start.y);
       ctx.quadraticCurveTo(cx, cy, end.x, end.y);
@@ -539,18 +539,18 @@
     ctx.strokeStyle = '#050505';
     ctx.lineWidth = 2;
     ctx.beginPath();
-    ctx.arc(phasePoint.x, phasePoint.y, 7, 0, Math.PI * 2);
+    ctx.arc(phasePoint.x, phasePoint.y, 5.5, 0, Math.PI * 2);
     ctx.fill();
     ctx.stroke();
 
     nodes.forEach((node, i) => {
       const p = pointOnLoop(cx, cy, r, i);
-      const radius = i === active ? 25 : 21;
+      const radius = i === active ? 23 : 20;
       ctx.beginPath();
       ctx.arc(p.x, p.y, radius, 0, Math.PI * 2);
       ctx.fillStyle = i === active ? node.color : '#10100f';
       ctx.strokeStyle = node.color;
-      ctx.lineWidth = i === active ? 2 : 1;
+      ctx.lineWidth = i === active ? 1.5 : 1;
       ctx.fill();
       ctx.stroke();
       ctx.fillStyle = i === active ? '#070707' : node.color;

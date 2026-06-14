@@ -150,13 +150,13 @@ const root = new THREE.Group(); scene.add(root);
 
 // the sphere (faint wire)
 root.add(new THREE.Mesh(new THREE.SphereGeometry(R, 64, 40),
-  new THREE.MeshBasicMaterial({ color: GOLD, wireframe: true, transparent: true, opacity: 0.12 })));
+  new THREE.MeshBasicMaterial({ color: GOLD, wireframe: true, transparent: true, opacity: 0.09 })));
 // the equator band (gold, φ=ν=1)
 const eq = new THREE.Mesh(new THREE.TorusGeometry(R, 0.02, 16, 200), new THREE.MeshBasicMaterial({ color: GOLD }));
 eq.rotation.x = Math.PI/2; root.add(eq);
 // the polar axis + pole caps (L0 = L∞, • × ○ = ⊙)
 root.add(new THREE.Mesh(new THREE.CylinderGeometry(0.006, 0.006, R*2.5, 8),
-  new THREE.MeshBasicMaterial({ color: 0x444444, transparent: true, opacity: 0.5 })));
+  new THREE.MeshBasicMaterial({ color: 0x444444, transparent: true, opacity: 0.42 })));
 [1, -1].forEach(s => {
   const cap = new THREE.Mesh(new THREE.SphereGeometry(0.055, 16, 16), new THREE.MeshBasicMaterial({ color: 0x555555 }));
   cap.position.set(0, s*R, 0); root.add(cap);
@@ -167,7 +167,7 @@ function triangle(up, color){
   const g = new THREE.BufferGeometry(); const pts = [];
   for (let i = 0; i <= 3; i++){ const a = (up ? 1 : -1) * (i/3) * Math.PI*2 + Math.PI/2; pts.push(R*0.96*Math.cos(a), 0, R*0.96*Math.sin(a)); }
   g.setAttribute('position', new THREE.Float32BufferAttribute(pts, 3));
-  return new THREE.Line(g, new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.4 }));
+  return new THREE.Line(g, new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.32 }));
 }
 root.add(triangle(true, GOLD), triangle(false, TEAL));
 
@@ -188,7 +188,7 @@ POS.forEach((p) => {
   root.add(latitudeRing(theta, p.L === 'L4' ? GOLD : 0x777777, p.L === 'L4' ? 0.3 : 0.12));
 });
 
-const selectorMat = new THREE.LineBasicMaterial({ color: 0xe8e4df, transparent: true, opacity: 0.72 });
+const selectorMat = new THREE.LineBasicMaterial({ color: 0xe8e4df, transparent: true, opacity: 0.56 });
 const selectorRay = new THREE.Line(
   new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0, 0, 0), new THREE.Vector3(R, 0, 0)]),
   selectorMat
@@ -196,13 +196,13 @@ const selectorRay = new THREE.Line(
 root.add(selectorRay);
 const selectedLatitude = new THREE.Mesh(
   new THREE.TorusGeometry(1, 0.012, 12, 160),
-  new THREE.MeshBasicMaterial({ color: WHITE, transparent: true, opacity: 0.5 })
+  new THREE.MeshBasicMaterial({ color: WHITE, transparent: true, opacity: 0.38 })
 );
 selectedLatitude.rotation.x = Math.PI / 2;
 root.add(selectedLatitude);
 const scanTrace = new THREE.Line(
   new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(), new THREE.Vector3()]),
-  new THREE.LineBasicMaterial({ color: WHITE, transparent: true, opacity: 0.28 })
+  new THREE.LineBasicMaterial({ color: WHITE, transparent: true, opacity: 0.22 })
 );
 const scanTraceSamples = [];
 root.add(scanTrace);
@@ -217,7 +217,7 @@ POS.forEach((p, i) => {
   m.userData = { i }; markers.push(m); root.add(m);
   // halo
   const halo = new THREE.Mesh(new THREE.SphereGeometry((p.L==='L4'?0.16:0.12), 16, 16),
-    new THREE.MeshBasicMaterial({ color: p.col, transparent: true, opacity: 0.12 }));
+    new THREE.MeshBasicMaterial({ color: p.col, transparent: true, opacity: 0.08 }));
   halo.position.copy(m.position); root.add(halo);
 });
 
@@ -232,14 +232,14 @@ const scanRate = document.getElementById('scan-rate');
 const telemetry = document.getElementById('sphere-telemetry');
 let selectedIndex = 3;
 let scanRunning = !REDUCED_MOTION;
-let scanClock = 3 * 2100;
+const SCAN_MS = 3200;
+let scanClock = 3 * SCAN_MS;
 let lastFrame = 0;
 let fps = 0;
 let sampleDeltaMs = 0;
 let sampleAccumulatorMs = 0;
 let sampleIndex = 0;
 let lastRecordedIndex = null;
-const SCAN_MS = 2100;
 
 function rateValue(){
   return scanRate ? parseFloat(scanRate.value) / 100 : 1;
@@ -278,7 +278,7 @@ function recordScanSample(force = false) {
   if (!force && lastRecordedIndex === selectedIndex) return;
   lastRecordedIndex = selectedIndex;
   scanTraceSamples.push(markers[selectedIndex].position.clone());
-  if (scanTraceSamples.length > 64) scanTraceSamples.shift();
+  if (scanTraceSamples.length > 96) scanTraceSamples.shift();
   scanTrace.geometry.setFromPoints(
     scanTraceSamples.length > 1 ? scanTraceSamples : [scanTraceSamples[0], scanTraceSamples[0]]
   );
