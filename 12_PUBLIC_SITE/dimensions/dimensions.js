@@ -2,7 +2,7 @@ import {
   createStripChart as createSharedStripChart,
   clearStripChart as clearSharedStripChart,
   updateStripChart as updateSharedStripChart
-} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-3";
+} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-4";
 
 const page = window.DIMENSION_PAGE || {};
 const canvas = document.querySelector(".dimension-canvas");
@@ -1398,7 +1398,7 @@ function buildScene(mode, scene) {
       slider = document.createElement("input");
       slider.type = "range"; slider.min = "0"; slider.max = "100"; slider.step = "1"; slider.value = "0";
       slider.setAttribute("aria-label", "rapidity from horn touch toward the infinite light-speed sphere limit");
-      slider.style.cssText = "flex:1;accent-color:#FFEB3B;cursor:pointer;height:4px";
+      slider.style.cssText = "flex:1;accent-color:#FFEB3B;cursor:pointer";
       slider.addEventListener("input", () => { userActive = true; });
       wrap.append(lo, slider, hi);
       visual.appendChild(wrap);
@@ -1596,7 +1596,7 @@ function buildScene(mode, scene) {
       thetaSlider = document.createElement("input");
       thetaSlider.type = "range"; thetaSlider.min = "0"; thetaSlider.max = "100"; thetaSlider.step = "1"; thetaSlider.value = "50";
       thetaSlider.setAttribute("aria-label", "theta latitude from D5 worldline foresight through balance to D4 means-to-act");
-      thetaSlider.style.cssText = "flex:1;accent-color:#FFEB3B;cursor:pointer;height:4px";
+      thetaSlider.style.cssText = "flex:1;accent-color:#FFEB3B;cursor:pointer";
       thetaSlider.addEventListener("input", () => { thetaUserActive = true; });
       wrap.append(lo, thetaSlider, hi);
       visual.appendChild(wrap);

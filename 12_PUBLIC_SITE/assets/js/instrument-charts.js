@@ -10,31 +10,67 @@ export function createTextSprite(THREE, text, options = {}) {
     color = "#f3f4f6",
     font = "700 22px Roboto Mono, ui-monospace, Menlo, monospace",
     scale = [0.86, 0.14],
-    align = "left"
+    align = "left",
+    background = true,
+    stroke = true
   } = options;
   const canvas = document.createElement("canvas");
   canvas.width = 512;
   canvas.height = 96;
   const ctx = canvas.getContext("2d");
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.font = font;
-  ctx.textAlign = align;
-  ctx.textBaseline = "middle";
-  ctx.fillStyle = "rgba(5, 5, 5, 0.68)";
-  ctx.fillRect(0, 10, canvas.width, canvas.height - 20);
-  ctx.strokeStyle = "rgba(243, 244, 246, 0.18)";
-  ctx.strokeRect(0.5, 10.5, canvas.width - 1, canvas.height - 21);
-  ctx.fillStyle = colorToCss(color);
-  ctx.fillText(text, align === "center" ? canvas.width / 2 : 22, canvas.height / 2 + 1);
   const texture = new THREE.CanvasTexture(canvas);
-  texture.needsUpdate = true;
+  drawTextSprite(ctx, texture, text, { color, font, align, background, stroke });
   const sprite = new THREE.Sprite(new THREE.SpriteMaterial({
     map: texture,
     transparent: true,
     depthWrite: false
   }));
   sprite.scale.set(scale[0], scale[1], 1);
+  sprite.userData.instrumentText = { ctx, texture, color, font, align, background, stroke };
   return sprite;
+}
+
+function drawTextSprite(ctx, texture, text, options) {
+  const {
+    color,
+    font,
+    align = "left",
+    background = true,
+    stroke = true
+  } = options;
+  const { canvas } = ctx;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.font = font;
+  ctx.textAlign = align;
+  ctx.textBaseline = "middle";
+  if (background) {
+    ctx.fillStyle = "rgba(5, 5, 5, 0.68)";
+    ctx.fillRect(0, 10, canvas.width, canvas.height - 20);
+  }
+  if (stroke) {
+    ctx.strokeStyle = "rgba(243, 244, 246, 0.18)";
+    ctx.strokeRect(0.5, 10.5, canvas.width - 1, canvas.height - 21);
+  }
+  ctx.fillStyle = colorToCss(color);
+  const x = align === "center" ? canvas.width / 2 : (align === "right" ? canvas.width - 22 : 22);
+  ctx.fillText(String(text), x, canvas.height / 2 + 1);
+  texture.needsUpdate = true;
+}
+
+function setTextSpriteText(sprite, text) {
+  const state = sprite && sprite.userData && sprite.userData.instrumentText;
+  if (!state) return;
+  drawTextSprite(state.ctx, state.texture, text, state);
+}
+
+function formatTick(value) {
+  if (!Number.isFinite(value)) return "--";
+  const abs = Math.abs(value);
+  if (abs !== 0 && (abs >= 1000 || abs < 0.01)) return value.toExponential(1);
+  if (abs >= 100) return value.toFixed(0);
+  if (abs >= 10) return value.toFixed(1).replace(/\.0$/, "");
+  if (abs >= 1) return value.toFixed(2).replace(/0$/, "").replace(/\.0$/, "");
+  return value.toFixed(3).replace(/0+$/, "").replace(/\.$/, "");
 }
 
 export function createStripChart(THREE, options = {}) {
@@ -55,7 +91,10 @@ export function createStripChart(THREE, options = {}) {
     targetValue = null,
     targetBand = null,
     targetColor = 0xffeb3b,
-    currentMarkerColor = color
+    currentMarkerColor = color,
+    showScale = true,
+    scaleColor = "#9ca3af",
+    unitLabel = ""
   } = options;
   const group = new THREE.Group();
   const frameMat = new THREE.LineBasicMaterial({
@@ -175,6 +214,39 @@ export function createStripChart(THREE, options = {}) {
     labelSprite.position.set(origin.x + width * 0.29, origin.y + height + 0.14, origin.z + 0.04);
     group.add(labelSprite);
   }
+  const scaleLabels = [];
+  if (showScale) {
+    [
+      { key: "max", y: origin.y + height, text: "1" },
+      { key: "mid", y: origin.y + height / 2, text: "0.5" },
+      { key: "min", y: origin.y, text: "0" }
+    ].forEach((tick) => {
+      const sprite = createTextSprite(THREE, tick.text, {
+        color: scaleColor,
+        font: "700 18px Roboto Mono, ui-monospace, Menlo, monospace",
+        scale: [0.24, 0.055],
+        align: "right",
+        background: false,
+        stroke: false
+      });
+      sprite.position.set(origin.x - 0.08, tick.y, origin.z + 0.038);
+      group.add(sprite);
+      scaleLabels.push({ ...tick, sprite });
+    });
+    if (unitLabel) {
+      const unitSprite = createTextSprite(THREE, unitLabel, {
+        color: scaleColor,
+        font: "700 15px Roboto Mono, ui-monospace, Menlo, monospace",
+        scale: [0.34, 0.05],
+        align: "left",
+        background: false,
+        stroke: false
+      });
+      unitSprite.position.set(origin.x + width - 0.08, origin.y - 0.1, origin.z + 0.038);
+      group.add(unitSprite);
+      scaleLabels.push({ key: "unit", sprite: unitSprite, unit: true });
+    }
+  }
   return {
     group,
     origin,
@@ -188,7 +260,9 @@ export function createStripChart(THREE, options = {}) {
     targetLine,
     targetBand,
     bandMesh,
-    targetValue
+    targetValue,
+    scaleLabels,
+    unitLabel
   };
 }
 
@@ -241,5 +315,19 @@ export function updateStripChart(THREE, chart, value, min = 0, max = 1, sampled 
     );
     chart.bandMesh.scale.set(chart.width, bandHeight, 1);
     chart.bandMesh.visible = high >= low;
+  }
+  if (Array.isArray(chart.scaleLabels) && chart.scaleLabels.length) {
+    const mid = min + span / 2;
+    chart.scaleLabels.forEach((tick) => {
+      if (tick.unit) {
+        setTextSpriteText(tick.sprite, chart.unitLabel || "");
+      } else if (tick.key === "max") {
+        setTextSpriteText(tick.sprite, formatTick(max));
+      } else if (tick.key === "mid") {
+        setTextSpriteText(tick.sprite, formatTick(mid));
+      } else if (tick.key === "min") {
+        setTextSpriteText(tick.sprite, formatTick(min));
+      }
+    });
   }
 }
