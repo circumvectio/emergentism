@@ -925,8 +925,8 @@ body.soul-loop-instrument .visual-labels .bottom {
 .visual-labels .label {
   position: absolute;
   border: 1px solid var(--border);
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.72);
+  border-radius: var(--shape-sm);
+  background: rgba(5, 5, 5, 0.82);
   color: var(--text-muted);
   font-size: 12px;
   padding: 6px 10px;
@@ -1991,7 +1991,7 @@ pre.glyph-block {
     repeating-linear-gradient(90deg, rgba(255,235,59,.078) 0 1px, transparent 1px 128px),
     repeating-linear-gradient(0deg, rgba(33,150,243,.072) 0 1px, transparent 1px 128px);
   box-shadow: inset 0 0 0 1px rgba(255,255,255,.035);
-  opacity: .36;
+  opacity: .28;
 }
 .lab-frame::before,
 .lab-frame::after {
@@ -2029,8 +2029,7 @@ pre.glyph-block {
 .lab-frame .corner:nth-child(4)::after { content: "calibrated grid"; left: 8px; bottom: 8px; }
 .vignette {
   position: fixed; inset: 0; z-index: 1; pointer-events: none;
-  background:
-    linear-gradient(180deg, transparent 88%, rgba(0,0,0,.05) 100%);
+  background: none;
 }
 body > span.brand {
   position: fixed;
@@ -2097,9 +2096,9 @@ body.sphere-instrument > a.exit {
   border: 1px solid var(--border);
   border-left: 2px solid var(--gold);
   border-radius: var(--shape-md);
-  background: color-mix(in srgb, var(--bg) 94%, transparent);
+  background: rgba(5, 5, 5, 0.92);
   padding: 10px 12px;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(4px);
   pointer-events: none;
   color: var(--text);
 }
@@ -2158,9 +2157,9 @@ body.sphere-instrument > a.exit {
   min-width: max-content;
   border: 1px solid rgba(243, 244, 246, 0.16);
   border-radius: 3px;
-  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  background: rgba(5, 5, 5, 0.88);
   padding: 4px 6px;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(4px);
 }
 
 .standalone-telemetry span[data-field="metric"] {
@@ -2183,13 +2182,13 @@ body.sphere-instrument > a.exit {
   border: 1px solid var(--border);
   border-left: 2px solid var(--gold);
   border-radius: var(--shape-md);
-  background: color-mix(in srgb, var(--bg) 96%, transparent);
+  background: rgba(5, 5, 5, 0.92);
   color: var(--text-muted);
   padding: 10px 12px;
   white-space: pre-line;
   font: 700 10.5px/1.5 var(--font-mono);
   font-variant-numeric: tabular-nums;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(4px);
   pointer-events: none;
 }
 body.sphere-instrument #stage-readout {
@@ -2204,12 +2203,12 @@ body.lightcone-instrument .meter {
   width: min(320px, calc(100vw - 64px));
   border: 1px solid var(--border);
   border-radius: var(--shape-md);
-  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  background: rgba(5, 5, 5, 0.9);
   color: var(--text-muted);
   padding: 10px 12px;
   font: 700 11px/1 var(--font-mono);
   font-variant-numeric: tabular-nums;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(4px);
 }
 
 body.lightcone-instrument .meter .bar {
@@ -2239,11 +2238,11 @@ body.lightcone-instrument .tier {
   border: 1px solid var(--border);
   border-left: 2px solid rgba(66, 165, 245, 0.8);
   border-radius: var(--shape-md);
-  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  background: rgba(5, 5, 5, 0.9);
   color: var(--text-muted);
   padding: 9px 12px;
   font: 700 10.5px/1.45 var(--font-mono);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(4px);
 }
 #enter {
   position: fixed;
@@ -2326,7 +2325,7 @@ button.nav:hover {
   min-height: 25px;
   border-radius: var(--shape-sm);
   padding: 0 8px;
-  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  background: rgba(5, 5, 5, 0.88);
   color: inherit;
   font: inherit;
 }
@@ -2347,7 +2346,7 @@ button.nav:hover {
 
 .standalone-controls button,
 .standalone-controls label {
-  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  background: rgba(5, 5, 5, 0.88);
 }
 
 #timeline-shell {

@@ -187,6 +187,12 @@ const selectedLatitude = new THREE.Mesh(
 );
 selectedLatitude.rotation.x = Math.PI / 2;
 root.add(selectedLatitude);
+const scanTrace = new THREE.Line(
+  new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(), new THREE.Vector3()]),
+  new THREE.LineBasicMaterial({ color: WHITE, transparent: true, opacity: 0.28 })
+);
+const scanTraceSamples = [];
+root.add(scanTrace);
 
 // the seven position markers (clickable)
 const markers = [];
@@ -219,6 +225,7 @@ let fps = 0;
 let sampleDeltaMs = 0;
 let sampleAccumulatorMs = 0;
 let sampleIndex = 0;
+let lastRecordedIndex = null;
 const SCAN_MS = 2100;
 
 function rateValue(){
@@ -245,6 +252,23 @@ function advanceSamples(frameMs, rate = 1) {
 
 function sampleLabel() {
   return SAMPLE_HZ + ' Hz · n ' + String(sampleIndex).padStart(5, '0');
+}
+
+function clearScanTrace() {
+  scanTraceSamples.length = 0;
+  lastRecordedIndex = null;
+  scanTrace.geometry.setFromPoints([new THREE.Vector3(), new THREE.Vector3()]);
+}
+
+function recordScanSample(force = false) {
+  if (!markers[selectedIndex]) return;
+  if (!force && lastRecordedIndex === selectedIndex) return;
+  lastRecordedIndex = selectedIndex;
+  scanTraceSamples.push(markers[selectedIndex].position.clone());
+  if (scanTraceSamples.length > 64) scanTraceSamples.shift();
+  scanTrace.geometry.setFromPoints(
+    scanTraceSamples.length > 1 ? scanTraceSamples : [scanTraceSamples[0], scanTraceSamples[0]]
+  );
 }
 
 function syncScanButton() {
@@ -307,9 +331,11 @@ function select(i, manual = false){
   const radius = Math.max(0.08, R * Math.sin(theta));
   selectedLatitude.scale.set(radius, radius, radius);
   if (positionScrub) positionScrub.value = String(i);
+  if (manual) recordScanSample(true);
 }
 syncScanButton();
 select(3); // L4 default
+recordScanSample(true);
 if (scanToggle) scanToggle.addEventListener('click', () => {
   scanRunning = !scanRunning;
   syncScanButton();
@@ -326,8 +352,10 @@ if (positionZero) positionZero.addEventListener('click', () => {
   scanClock = 3 * SCAN_MS;
   sampleAccumulatorMs = 0;
   sampleIndex = 0;
+  clearScanTrace();
   syncScanButton();
   select(3, false);
+  recordScanSample(true);
   if (REDUCED_MOTION) render(performance.now());
 });
 if (positionScrub) positionScrub.addEventListener('input', () => select(Number(positionScrub.value), true));
@@ -360,7 +388,10 @@ function render(time = 0){
     sampleDeltaMs = advanceSamples(dt, rateValue());
     scanClock += sampleDeltaMs;
     const nextIndex = Math.floor((scanClock / SCAN_MS) % POS.length);
-    if (nextIndex !== selectedIndex) selectedIndex = nextIndex;
+    if (nextIndex !== selectedIndex) {
+      selectedIndex = nextIndex;
+      recordScanSample(true);
+    }
   } else {
     sampleDeltaMs = 0;
   }

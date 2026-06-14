@@ -1223,7 +1223,7 @@ function buildScene(mode, scene) {
       visual.appendChild(wrap);
       visual.addEventListener("instrument:zero", () => {
         thetaUserActive = false;
-        thetaSlider.value = "0";
+        thetaSlider.value = "50";
       });
     }
     const thetaFromSlider = () => {
@@ -1233,11 +1233,13 @@ function buildScene(mode, scene) {
     const sliderFromTheta = (theta) =>
       Math.round(((theta - THETA_MIN) / (THETA_MAX - THETA_MIN)) * 100);
     const quadName = ["I", "II", "III", "IV"];
+    const D5_SWEEP_CPS = 0.03;
+    const D5_BALANCE_OFFSET = 0.25 / D5_SWEEP_CPS;
     dyn.push(function (t, sampled) {
       const psi = t * 0.34;                                          // measured azimuth trace
       const theta = thetaUserActive
         ? thetaFromSlider()
-        : THETA_MIN + smooth01(sweep01(t, 0.03)) * (THETA_MAX - THETA_MIN); // auto-sweep until the reader grabs θ
+        : THETA_MIN + smooth01(sweep01(t + D5_BALANCE_OFFSET, D5_SWEEP_CPS)) * (THETA_MAX - THETA_MIN); // auto-sweep from the calibrated balance latitude
       if (!thetaUserActive && thetaSlider) thetaSlider.value = String(sliderFromTheta(theta));
       const phi = 1 / Math.tan(theta / 2);                           // cot(θ/2)
       const nu = Math.tan(theta / 2);                                // 1/φ
