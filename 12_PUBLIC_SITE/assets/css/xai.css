@@ -2195,6 +2195,9 @@ body.sphere-instrument #stage-readout {
   left: 32px;
   right: auto;
 }
+.constitution-visual .label.center {
+  display: none;
+}
 body.lightcone-instrument .meter {
   position: fixed;
   left: 32px;

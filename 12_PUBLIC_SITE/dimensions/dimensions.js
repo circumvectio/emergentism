@@ -29,6 +29,7 @@ const modeLabels = {
   bloch: "D3 Riemann/Bloch",
   horn: "D4 rapidity torus",
   burrisphere: "D5 dual projection",
+  constitution: "5+1 constitution",
   ccc: "/6 CCC return",
   convergence: "/6 CCC return"
 };
@@ -39,6 +40,7 @@ const modeInvariants = {
   bloch: "φ·ν = 1",
   horn: "R/r = 1/γ",
   burrisphere: "φ·ν = 1 · B=sinθ",
+  constitution: "5 refusals + Ω",
   ccc: "/6 ≡ /0",
   convergence: "/6 ≡ /0"
 };
@@ -530,6 +532,257 @@ function drawTitanCalculator(time = 0) {
     if (!REDUCED_MOTION) requestAnimationFrame(draw);
   }
 
+  draw(0);
+}
+
+function drawConstitutionInstrument(time = 0) {
+  if (visual) visual.classList.add("constitution-visual");
+  const { ctx, resize } = setupCanvas2D();
+  const overlay = ensureInstrumentOverlay("constitution");
+  const readout = makeReadout();
+  if (readout) {
+    readout.style.left = "auto";
+    readout.style.right = "16px";
+    readout.style.maxWidth = "min(330px, 38%)";
+    readout.classList.add("instrument-readout");
+  }
+  const playback = ensureInstrumentControls();
+  const sampleClock = createSampleClock();
+  const fences = [
+    { key: "η=0", title: "no extraction", tier: "[S]", color: "#FFEB3B" },
+    { key: "K2", title: "human signature", tier: "[B/S]", color: "#42A5F5" },
+    { key: "K3", title: "archive first", tier: "[S]", color: "#F3F4F6" },
+    { key: "K4", title: "grace exit", tier: "[S]", color: "#8B5CF6" },
+    { key: "A7", title: "self-correction", tier: "[S]", color: "#4CAF50" }
+  ];
+  let bounds = resize();
+  let paused = false;
+  let simTime = 0;
+  let stepSeconds = 0;
+  let lastFrame = time;
+  let fps = 0;
+
+  function sync() {
+    syncInstrumentControls(playback, paused);
+  }
+
+  if (playback) {
+    playback.hold.addEventListener("click", () => {
+      paused = !paused;
+      sync();
+    });
+    playback.step.addEventListener("click", () => {
+      paused = true;
+      stepSeconds += 1 / 12;
+      sync();
+    });
+    playback.zero.addEventListener("click", () => {
+      paused = true;
+      simTime = 0;
+      stepSeconds = 0;
+      sampleClock.accumulator = 0;
+      sampleClock.index = 0;
+      setInstrumentMetric("closure 0.000", "zeroed", "phase 0.00");
+      sync();
+      draw(0);
+    });
+    playback.rate.addEventListener("input", () => {
+      setInstrumentMetric(visual.dataset.instrumentMetric || "", "rate " + (parseFloat(playback.rate.value) / 100).toFixed(2) + "x", visual.dataset.instrumentPhase || "");
+    });
+    sync();
+  }
+
+  function regularPoint(cx, cy, r, index, offset = -Math.PI / 2) {
+    const angle = offset + (index / fences.length) * TAU;
+    return { x: cx + Math.cos(angle) * r, y: cy + Math.sin(angle) * r, angle };
+  }
+
+  function drawArrow(x0, y0, x1, y1, color) {
+    const angle = Math.atan2(y1 - y0, x1 - x0);
+    const head = 9;
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 1.4;
+    ctx.beginPath();
+    ctx.moveTo(x0, y0);
+    ctx.lineTo(x1, y1);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(x1, y1);
+    ctx.lineTo(x1 - Math.cos(angle - 0.48) * head, y1 - Math.sin(angle - 0.48) * head);
+    ctx.moveTo(x1, y1);
+    ctx.lineTo(x1 - Math.cos(angle + 0.48) * head, y1 - Math.sin(angle + 0.48) * head);
+    ctx.stroke();
+  }
+
+  function draw(now = 0) {
+    const dt = lastFrame ? Math.max(1, now - lastFrame) : 16.7;
+    fps = fps ? fps * 0.9 + (1000 / dt) * 0.1 : 1000 / dt;
+    lastFrame = now;
+    const rate = playback && playback.rate ? parseFloat(playback.rate.value) / 100 : 1;
+    const sampleAdvance = sampleClock.advance(dt * 0.001, rate, stepSeconds, paused);
+    stepSeconds = 0;
+    simTime += sampleAdvance;
+    visual.dataset.instrumentSample = REDUCED_MOTION ? "sample static" : sampleClock.label();
+
+    const width = bounds.width;
+    const height = bounds.height;
+    const wide = width >= 780;
+    const cx = width * (wide ? 0.36 : 0.5);
+    const cy = height * 0.52;
+    const radius = Math.min(width, height) * (wide ? 0.25 : 0.31);
+    const t = simTime;
+    const phase = phase01(t, 0.046);
+    const scan = phase * fences.length;
+    const active = Math.floor(scan) % fences.length;
+    const local = scan - Math.floor(scan);
+    const activeFence = fences[active];
+    const nextIndex = (active + 1) % fences.length;
+    const p0 = regularPoint(cx, cy, radius, active);
+    const p1 = regularPoint(cx, cy, radius, nextIndex);
+    const cursor = {
+      x: p0.x + (p1.x - p0.x) * local,
+      y: p0.y + (p1.y - p0.y) * local
+    };
+    const points = fences.map((_, i) => regularPoint(cx, cy, radius, i));
+    let closureX = 0;
+    let closureY = 0;
+    for (let i = 0; i < points.length; i += 1) {
+      const a = points[i];
+      const b = points[(i + 1) % points.length];
+      closureX += b.x - a.x;
+      closureY += b.y - a.y;
+    }
+    const closureResidual = Math.hypot(closureX, closureY) / Math.max(radius, 1);
+    const centroid = points.reduce((acc, point) => ({ x: acc.x + point.x, y: acc.y + point.y }), { x: 0, y: 0 });
+    centroid.x /= points.length;
+    centroid.y /= points.length;
+    const centerResidual = Math.hypot(centroid.x - cx, centroid.y - cy) / Math.max(radius, 1);
+
+    ctx.clearRect(0, 0, width, height);
+    ctx.fillStyle = "#050505";
+    ctx.fillRect(0, 0, width, height);
+
+    ctx.strokeStyle = "rgba(243,244,246,0.08)";
+    ctx.lineWidth = 1;
+    for (let x = 0; x <= width; x += 32) {
+      ctx.beginPath();
+      ctx.moveTo(x, 0);
+      ctx.lineTo(x, height);
+      ctx.stroke();
+    }
+    for (let y = 0; y <= height; y += 32) {
+      ctx.beginPath();
+      ctx.moveTo(0, y);
+      ctx.lineTo(width, y);
+      ctx.stroke();
+    }
+
+    ctx.strokeStyle = "rgba(243,244,246,0.2)";
+    ctx.beginPath();
+    points.forEach((point, index) => {
+      if (index === 0) ctx.moveTo(point.x, point.y);
+      else ctx.lineTo(point.x, point.y);
+    });
+    ctx.closePath();
+    ctx.stroke();
+
+    ctx.strokeStyle = "rgba(255,235,59,0.22)";
+    ctx.beginPath();
+    ctx.arc(cx, cy, radius * 0.54, 0, TAU);
+    ctx.stroke();
+
+    points.forEach((point, index) => {
+      const fence = fences[index];
+      drawArrow(point.x, point.y, cx + (point.x - cx) * 0.24, cy + (point.y - cy) * 0.24, "rgba(243,244,246,0.18)");
+      ctx.beginPath();
+      ctx.arc(point.x, point.y, index === active ? 24 : 20, 0, TAU);
+      ctx.fillStyle = index === active ? fence.color : "#10100f";
+      ctx.strokeStyle = fence.color;
+      ctx.lineWidth = index === active ? 2 : 1;
+      ctx.fill();
+      ctx.stroke();
+      ctx.fillStyle = index === active ? "#050505" : fence.color;
+      ctx.font = "800 13px ui-monospace, SFMono-Regular, Menlo, monospace";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText(fence.key, point.x, point.y - 3);
+      ctx.fillStyle = "rgba(243,244,246,0.58)";
+      ctx.font = "700 10px ui-monospace, SFMono-Regular, Menlo, monospace";
+      ctx.fillText(fence.title, point.x, point.y + 33);
+    });
+
+    ctx.beginPath();
+    ctx.arc(cx, cy, 34, 0, TAU);
+    ctx.fillStyle = "#0A0A0A";
+    ctx.strokeStyle = "#FFEB3B";
+    ctx.lineWidth = 2;
+    ctx.fill();
+    ctx.stroke();
+    ctx.fillStyle = "#FFEB3B";
+    ctx.font = "800 26px ui-monospace, SFMono-Regular, Menlo, monospace";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText("Ω", cx, cy - 2);
+    ctx.fillStyle = "rgba(243,244,246,0.58)";
+    ctx.font = "700 10px ui-monospace, SFMono-Regular, Menlo, monospace";
+    ctx.fillText("+1 direction", cx, cy + 48);
+
+    drawArrow(cx, cy, cursor.x, cursor.y, activeFence.color);
+    ctx.beginPath();
+    ctx.arc(cursor.x, cursor.y, 7, 0, TAU);
+    ctx.fillStyle = activeFence.color;
+    ctx.fill();
+    ctx.strokeStyle = "#050505";
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    if (wide) {
+      const graphX = width * 0.62;
+      const graphY = Math.min(height - 72, cy + radius * 0.72);
+      const graphW = Math.min(210, width * 0.23);
+      const graphH = 44;
+      ctx.strokeStyle = "rgba(243,244,246,0.16)";
+      ctx.lineWidth = 1;
+      ctx.strokeRect(graphX, graphY, graphW, graphH);
+      ctx.strokeStyle = "rgba(66,165,245,0.55)";
+      ctx.beginPath();
+      for (let i = 0; i <= 24; i += 1) {
+        const q = i / 24;
+        const y = graphY + graphH * (0.78 - 0.3 * Math.sin((q + phase) * TAU));
+        const x = graphX + q * graphW;
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      }
+      ctx.stroke();
+      ctx.fillStyle = "rgba(243,244,246,0.58)";
+      ctx.font = "700 10px ui-monospace, SFMono-Regular, Menlo, monospace";
+      ctx.textAlign = "left";
+      ctx.fillText("route pressure scan", graphX + 8, graphY + graphH - 8);
+    }
+
+    setInstrumentMetric(
+      "closure " + closureResidual.toExponential(1) + " · center " + centerResidual.toExponential(1),
+      (paused ? "held frame" : "perimeter scan"),
+      "phase " + phase.toFixed(2)
+    );
+    updateInstrumentOverlay(overlay, t, fps);
+    if (readout) {
+      readout.style.display = width < 620 ? "none" : "block";
+      readout.textContent =
+        "5+1 CONSTITUTION · perimeter assay\n" +
+        "active fence " + (active + 1) + "/5 · " + activeFence.key + " · " + activeFence.title + " · " + activeFence.tier + "\n" +
+        "Ω is the directional +1, not a sixth refusal\n" +
+        "closure residual |Σedges|/r = " + closureResidual.toExponential(1) + "\n" +
+        "centroid offset = " + centerResidual.toExponential(1) + " · sample clock " + (REDUCED_MOTION ? "static" : sampleClock.label());
+    }
+
+    if (!REDUCED_MOTION) requestAnimationFrame(draw);
+  }
+
+  window.addEventListener("resize", () => {
+    bounds = resize();
+    if (REDUCED_MOTION) draw(0);
+  });
   draw(0);
 }
 
@@ -1425,6 +1678,10 @@ async function boot() {
 
     if (animationMode === "titans") {
       drawTitanCalculator();
+      return;
+    }
+    if (animationMode === "constitution") {
+      drawConstitutionInstrument();
       return;
     }
 
