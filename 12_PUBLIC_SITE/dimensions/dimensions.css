@@ -464,7 +464,7 @@ h3 {
     linear-gradient(0deg, rgba(255,255,255,0.018) 1px, transparent 1px) 0 0 / 32px 32px,
     #050505;
   overflow: hidden;
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.035);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.028);
 }
 
 .visual-panel::after {
@@ -473,9 +473,9 @@ h3 {
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(transparent 0, var(--visual-grid-line) 1px, transparent 1px) 0 0 / 100% 64px,
-    linear-gradient(90deg, transparent 0, var(--visual-grid-line) 1px, transparent 1px) 0 0 / 64px 100%;
-  opacity: 0.3;
+    linear-gradient(transparent 0, rgba(255, 255, 255, 0.018) 1px, transparent 1px) 0 0 / 100% 64px,
+    linear-gradient(90deg, transparent 0, rgba(255, 255, 255, 0.018) 1px, transparent 1px) 0 0 / 64px 100%;
+  opacity: 0.38;
 }
 
 .instrument-visual {
@@ -512,12 +512,12 @@ h3 {
 .instrument-graticule {
   position: absolute;
   inset: 24px;
-  opacity: 0.16;
+  opacity: 0.075;
   background:
-    repeating-linear-gradient(90deg, rgba(255,255,255,0.1) 0 1px, transparent 1px 32px),
-    repeating-linear-gradient(0deg, rgba(255,255,255,0.1) 0 1px, transparent 1px 32px),
-    repeating-linear-gradient(90deg, rgba(255,235,59,0.16) 0 1px, transparent 1px 128px),
-    repeating-linear-gradient(0deg, rgba(33,150,243,0.14) 0 1px, transparent 1px 128px);
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.08) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.08) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(90deg, rgba(66,165,245,0.12) 0 1px, transparent 1px 128px),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.1) 0 1px, transparent 1px 128px);
 }
 
 .instrument-corners {
@@ -529,7 +529,7 @@ h3 {
   position: absolute;
   width: 24px;
   height: 24px;
-  border-color: rgba(255, 235, 59, 0.22);
+  border-color: rgba(243, 244, 246, 0.18);
   border-style: solid;
 }
 
@@ -555,9 +555,9 @@ h3 {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,235,59,0.13) calc(50% - 0.5px), rgba(255,235,59,0.13) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
-    linear-gradient(0deg, transparent calc(50% - 0.5px), rgba(66,165,245,0.13) calc(50% - 0.5px), rgba(66,165,245,0.13) calc(50% + 0.5px), transparent calc(50% + 0.5px));
-  opacity: 0.12;
+    linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,255,255,0.16) calc(50% - 0.5px), rgba(255,255,255,0.16) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    linear-gradient(0deg, transparent calc(50% - 0.5px), rgba(66,165,245,0.14) calc(50% - 0.5px), rgba(66,165,245,0.14) calc(50% + 0.5px), transparent calc(50% + 0.5px));
+  opacity: 0.095;
 }
 
 .instrument-id {
@@ -664,11 +664,11 @@ h3 {
   height: 100%;
   transform: scaleX(0);
   transform-origin: left center;
-  background: linear-gradient(90deg, rgba(66,165,245,0.86), rgba(255,235,59,0.94));
+  background: linear-gradient(90deg, rgba(66,165,245,0.74), rgba(243,244,246,0.84));
 }
 
 .instrument-meter.error b {
-  background: linear-gradient(90deg, rgba(76,175,80,0.62), rgba(255,122,23,0.82));
+  background: linear-gradient(90deg, rgba(76,175,80,0.56), rgba(255,122,23,0.78));
 }
 
 .instrument-mode-burrisphere .instrument-measurements,
@@ -828,8 +828,8 @@ h3 {
   background-repeat: no-repeat;
   background-size: 100% 3px;
   background-image:
-    repeating-linear-gradient(90deg, rgba(243,244,246,.22) 0 1px, transparent 1px 8px),
-    linear-gradient(90deg, rgba(66,165,245,.34), rgba(255,235,59,.55));
+    repeating-linear-gradient(90deg, rgba(243,244,246,.24) 0 1px, transparent 1px 8px),
+    linear-gradient(90deg, rgba(66,165,245,.28), rgba(243,244,246,.42));
 }
 
 .instrument-controls input[type="range"]::-webkit-slider-thumb {
@@ -994,7 +994,7 @@ body.dimension-page .model-slider {
   background-image:
     linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(243,244,246,.5) calc(50% - 0.5px), rgba(243,244,246,.5) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
     repeating-linear-gradient(90deg, rgba(255,255,255,0.24) 0 1px, transparent 1px 8px),
-    linear-gradient(90deg, rgba(255,235,59,0.38), rgba(66,165,245,0.34));
+    linear-gradient(90deg, rgba(255,235,59,0.28), rgba(66,165,245,0.28));
   cursor: pointer;
 }
 

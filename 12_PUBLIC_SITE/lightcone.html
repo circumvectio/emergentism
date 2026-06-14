@@ -84,7 +84,7 @@ let createStripChart, clearStripChart, updateStripChart;
 try {
   THREE = await import('three');
   ({ OrbitControls } = await import('three/addons/controls/OrbitControls.js'));
-  ({ createStripChart, clearStripChart, updateStripChart } = await import('./assets/js/instrument-charts.js?v=2026-06-14-instrument-10'));
+  ({ createStripChart, clearStripChart, updateStripChart } = await import('./assets/js/instrument-charts.js?v=2026-06-14-instrument-12'));
 } catch (e) { document.getElementById('fallback').style.display = 'flex'; throw e; }
 
 const REDUCED_MOTION = !!(window.matchMedia
@@ -255,6 +255,15 @@ function scheduleFrame(callback) {
   });
 }
 
+function assaySweep01(t, cyclesPerSecond = 0.045, holdFraction = 0.08) {
+  const hold = Math.max(0, Math.min(0.24, holdFraction));
+  const p = ((t * cyclesPerSecond) % 1 + 1) % 1;
+  const half = p < 0.5 ? p * 2 : (1 - p) * 2;
+  if (half <= hold) return 0;
+  if (half >= 1 - hold) return 1;
+  return (half - hold) / Math.max(1e-9, 1 - 2 * hold);
+}
+
 function advanceSamples(frameSeconds, rate = 1, forcedSeconds = 0, pausedState = false) {
   if (!pausedState) sampleAccumulator += Math.min(Math.max(frameSeconds, 0), MAX_FRAME_DT) * rate;
   if (forcedSeconds > 0) sampleAccumulator += forcedSeconds;
@@ -350,10 +359,9 @@ function updateInstrument(frameTime = nowMs(), poseOffset = null){
   const t = REDUCED_MOTION ? simTime || 1.2 : simTime;
   // F5/Ω drive in the interpretive register: the cone widens and lengthens on
   // a measured cycle, without claiming a new settled physical force.
-  const cyc = (1 - Math.cos(t * 0.18)) / 2;            // 0..1 calibrated sweep, zeroed at t=0
-  const ease = cyc * cyc * (3 - 2 * cyc);
-  const angle = (18 + ease * 12) * Math.PI / 180;       // 18°..30° (widen)
-  const height = 1.35 + ease * 1.55;                    // lengthen without clipping
+  const reach = assaySweep01(t, 0.036, 0.08);           // repeatable 0..1 assay sweep
+  const angle = (18 + reach * 12) * Math.PI / 180;      // 18°..30° (widen)
+  const height = 1.35 + reach * 1.55;                   // lengthen without clipping
   const radius = height * Math.tan(angle);
   const coneResidual = Math.abs(radius - height * Math.tan(angle));
   const omegaProxy = Math.PI * radius * radius * height / 3;
@@ -380,7 +388,7 @@ function updateInstrument(frameTime = nowMs(), poseOffset = null){
   }
   wl.geometry.setFromPoints(pts);
   // meter
-  const reach = ease; mFill.style.width = (20 + reach*80) + '%';
+  mFill.style.width = (20 + reach*80) + '%';
   mLabel.textContent = 'Ω proxy ' + omegaProxy.toFixed(2);
   setTelemetry({
     fps: REDUCED_MOTION ? 'static' : fps.toFixed(0) + ' fps',

@@ -3,7 +3,7 @@ import {
   createStripChart as createSharedStripChart,
   clearStripChart as clearSharedStripChart,
   updateStripChart as updateSharedStripChart
-} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-11";
+} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-12";
 
 const page = window.DIMENSION_PAGE || {};
 const canvas = document.querySelector(".dimension-canvas");
@@ -107,9 +107,13 @@ function smooth01(x) {
   return x * x * (3 - 2 * x);
 }
 
-function sweep01(t, cyclesPerSecond = 0.045) {
+function assaySweep01(t, cyclesPerSecond = 0.045, holdFraction = 0.08) {
+  const hold = Math.max(0, Math.min(0.24, holdFraction));
   const p = ((t * cyclesPerSecond) % 1 + 1) % 1;
-  return p < 0.5 ? p * 2 : (1 - p) * 2;
+  const half = p < 0.5 ? p * 2 : (1 - p) * 2;
+  if (half <= hold) return 0;
+  if (half >= 1 - hold) return 1;
+  return (half - hold) / Math.max(1e-9, 1 - (2 * hold));
 }
 
 function phase01(t, cyclesPerSecond = 0.045, offset = 0) {
@@ -648,7 +652,7 @@ function drawTitanCalculator(time = 0) {
     });
 
     const reciprocalPhase = phase01(t, INSTRUMENT_CPS.medium);
-    const reciprocalS = 1.85 + smooth01(sweep01(t, INSTRUMENT_CPS.medium)) * 2.5;
+    const reciprocalS = 1.85 + assaySweep01(t, INSTRUMENT_CPS.medium) * 2.5;
     const lx = cx - reciprocalS * unit;
     const rx = cx + reciprocalS * unit;
     const mirrorResidual = Math.abs((lx + rx) - (2 * cx)) / Math.max(unit, 1e-6);
@@ -1354,7 +1358,7 @@ function buildScene(mode, scene) {
     }
     dyn.push(function (t, sampled) {
       const logPhase = phase01(t, INSTRUMENT_CPS.medium);
-      const s = -2.9 + smooth01(sweep01(t, INSTRUMENT_CPS.medium)) * 5.8; // sweep in log coordinates
+      const s = -2.9 + assaySweep01(t, INSTRUMENT_CPS.medium) * 5.8; // sweep in log coordinates
       const x = Math.pow(2, s);
       xPt.position.set(s * SC, 0, 0);
       invPt.position.set(-s * SC, 0, 0);
@@ -1450,7 +1454,7 @@ function buildScene(mode, scene) {
     }
     dyn.push((t, sampled) => {
       const muPhase = phase01(t, INSTRUMENT_CPS.medium);
-      const p = smooth01(sweep01(t, INSTRUMENT_CPS.medium));
+      const p = assaySweep01(t, INSTRUMENT_CPS.medium);
       const x = -1.8 + 3.6 * p;
       const lift = 1.6 * Math.max(0, 1 - Math.abs(2 * p - 1));
       const onLine = new THREE.Vector3(x, 0, 0);
@@ -1548,7 +1552,7 @@ function buildScene(mode, scene) {
     }
     dyn.push((t, sampled) => {
       const projectionPhase = phase01(t, INSTRUMENT_CPS.medium);
-      const p = smooth01(sweep01(t, INSTRUMENT_CPS.medium));
+      const p = assaySweep01(t, INSTRUMENT_CPS.medium);
       const th = (55 + 70 * p) * Math.PI / 180;
       const P = new THREE.Vector3(r * Math.sin(th), r * Math.cos(th), 0);
       const land = new THREE.Vector3(2 * r / Math.tan(th / 2), -r, 0);
@@ -1665,7 +1669,7 @@ function buildScene(mode, scene) {
       if (userActive && slider) {
         w = (parseFloat(slider.value) / 100) * W_MAX;            // slider is LINEAR in rapidity = LOG in velocity
       } else {
-        w = smooth01(sweep01(t, INSTRUMENT_CPS.slow)) * W_MAX * 0.92; // measured rapidity sweep until the user grabs the slider
+        w = assaySweep01(t, INSTRUMENT_CPS.slow) * W_MAX * 0.92; // measured rapidity sweep until the user grabs the slider
         if (slider) slider.value = String(Math.round((w / W_MAX) * 100));
       }
       if (sliderControl) sliderControl.setOutput("w = " + w.toFixed(2));
@@ -1891,7 +1895,7 @@ function buildScene(mode, scene) {
       const psi = t * 0.12;                                          // measured azimuth trace
       const theta = thetaUserActive
         ? thetaFromSlider()
-        : THETA_MIN + smooth01(sweep01(t + D5_BALANCE_OFFSET, D5_SWEEP_CPS)) * (THETA_MAX - THETA_MIN); // auto-sweep from the calibrated balance latitude
+        : THETA_MIN + assaySweep01(t + D5_BALANCE_OFFSET, D5_SWEEP_CPS) * (THETA_MAX - THETA_MIN); // auto-sweep from the calibrated balance latitude
       if (!thetaUserActive && thetaSlider) thetaSlider.value = String(sliderFromTheta(theta));
       if (thetaSliderControl) thetaSliderControl.setOutput("θ = " + Math.round(theta * 180 / Math.PI) + "°");
       const phi = 1 / Math.tan(theta / 2);                           // cot(θ/2)
@@ -2065,7 +2069,7 @@ function buildScene(mode, scene) {
 
     dyn.push((t, sampled) => {
       const leadPhase = phase01(t, INSTRUMENT_CPS.medium);
-      const q = smooth01(leadPhase);
+      const q = leadPhase;
       const aeonRadius = 0.12 + q * (boundaryRadius - 0.12);
       const conformalRadius = 0.12 + (1 - q) * (boundaryRadius - 0.12);
       aeonShell.scale.setScalar(aeonRadius);

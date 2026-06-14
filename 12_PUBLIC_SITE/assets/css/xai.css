@@ -637,7 +637,7 @@ body.dimension-page .visual-panel {
   border-radius: var(--shape-md);
   background: #050505;
   overflow: hidden;
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.035), 0 8px 22px rgba(0,0,0,0.14);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.028);
 }
 
 .visual-panel::after {
@@ -646,9 +646,9 @@ body.dimension-page .visual-panel {
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(transparent 0, rgba(255, 255, 255, 0.028) 1px, transparent 1px) 0 0 / 100% 64px,
-    linear-gradient(90deg, transparent 0, rgba(255, 255, 255, 0.028) 1px, transparent 1px) 0 0 / 64px 100%;
-  opacity: 0.52;
+    linear-gradient(transparent 0, rgba(255, 255, 255, 0.018) 1px, transparent 1px) 0 0 / 100% 64px,
+    linear-gradient(90deg, transparent 0, rgba(255, 255, 255, 0.018) 1px, transparent 1px) 0 0 / 64px 100%;
+  opacity: 0.38;
 }
 
 .visual-labels {
@@ -733,12 +733,12 @@ body.soul-loop-instrument .visual-labels .bottom {
 .instrument-graticule {
   position: absolute;
   inset: 24px;
-  opacity: 0.1;
+  opacity: 0.075;
   background:
-    repeating-linear-gradient(90deg, rgba(255,255,255,0.07) 0 1px, transparent 1px 32px),
-    repeating-linear-gradient(0deg, rgba(255,255,255,0.07) 0 1px, transparent 1px 32px),
-    repeating-linear-gradient(90deg, rgba(255,235,59,0.08) 0 1px, transparent 1px 128px),
-    repeating-linear-gradient(0deg, rgba(33,150,243,0.07) 0 1px, transparent 1px 128px);
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.08) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.08) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(90deg, rgba(66,165,245,0.12) 0 1px, transparent 1px 128px),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.1) 0 1px, transparent 1px 128px);
 }
 
 .instrument-corners {
@@ -750,7 +750,7 @@ body.soul-loop-instrument .visual-labels .bottom {
   position: absolute;
   width: 24px;
   height: 24px;
-  border-color: rgba(255, 235, 59, 0.22);
+  border-color: rgba(243, 244, 246, 0.18);
   border-style: solid;
 }
 
@@ -795,9 +795,9 @@ body.soul-loop-instrument .visual-labels .bottom {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,235,59,0.13) calc(50% - 0.5px), rgba(255,235,59,0.13) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
-    linear-gradient(0deg, transparent calc(50% - 0.5px), rgba(66,165,245,0.13) calc(50% - 0.5px), rgba(66,165,245,0.13) calc(50% + 0.5px), transparent calc(50% + 0.5px));
-  opacity: 0.12;
+    linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,255,255,0.16) calc(50% - 0.5px), rgba(255,255,255,0.16) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    linear-gradient(0deg, transparent calc(50% - 0.5px), rgba(66,165,245,0.14) calc(50% - 0.5px), rgba(66,165,245,0.14) calc(50% + 0.5px), transparent calc(50% + 0.5px));
+  opacity: 0.095;
 }
 
 .instrument-id {
@@ -865,9 +865,9 @@ body.soul-loop-instrument .visual-labels .bottom {
   min-height: 19px;
   border: 1px solid rgba(243, 244, 246, 0.11);
   border-radius: 2px;
-  background: rgba(5, 5, 5, 0.82);
+  background: rgba(5, 5, 5, 0.94);
   padding: 4px 6px;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(3px);
 }
 
 .instrument-meter span,
@@ -903,11 +903,11 @@ body.soul-loop-instrument .visual-labels .bottom {
   height: 100%;
   transform: scaleX(0);
   transform-origin: left center;
-  background: linear-gradient(90deg, rgba(66,165,245,0.74), rgba(255,235,59,0.78));
+  background: linear-gradient(90deg, rgba(66,165,245,0.74), rgba(243,244,246,0.84));
 }
 
 .instrument-meter.error b {
-  background: linear-gradient(90deg, rgba(76,175,80,0.62), rgba(255,122,23,0.82));
+  background: linear-gradient(90deg, rgba(76,175,80,0.56), rgba(255,122,23,0.78));
 }
 
 body.soul-loop-instrument .instrument-measurements {
@@ -1071,8 +1071,8 @@ body.soul-loop-instrument .instrument-measurements {
   background-repeat: no-repeat;
   background-size: 100% 3px;
   background-image:
-    repeating-linear-gradient(90deg, rgba(243,244,246,.22) 0 1px, transparent 1px 8px),
-    linear-gradient(90deg, rgba(66,165,245,.34), rgba(255,235,59,.55));
+    repeating-linear-gradient(90deg, rgba(243,244,246,.24) 0 1px, transparent 1px 8px),
+    linear-gradient(90deg, rgba(66,165,245,.28), rgba(243,244,246,.42));
 }
 
 .instrument-controls input[type="range"]::-webkit-slider-thumb {
@@ -1203,7 +1203,7 @@ body.soul-loop-instrument .instrument-measurements {
   background-image:
     linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(243,244,246,.5) calc(50% - 0.5px), rgba(243,244,246,.5) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
     repeating-linear-gradient(90deg, rgba(255,255,255,0.24) 0 1px, transparent 1px 8px),
-    linear-gradient(90deg, rgba(255,235,59,0.38), rgba(66,165,245,0.34));
+    linear-gradient(90deg, rgba(255,235,59,0.28), rgba(66,165,245,0.28));
   cursor: pointer;
 }
 
@@ -2040,6 +2040,9 @@ pre.glyph-block {
 
   body.dimension-page .visual-panel,
   body.soul-loop-instrument .visual-panel {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
     order: -1;
     margin-top: 0;
     min-height: min(62svh, 520px);
@@ -2260,12 +2263,12 @@ pre.glyph-block {
   pointer-events: none;
   border: 1px solid rgba(243, 244, 246, 0.12);
   background:
-    repeating-linear-gradient(90deg, rgba(243,244,246,.032) 0 1px, transparent 1px 32px),
-    repeating-linear-gradient(0deg, rgba(243,244,246,.032) 0 1px, transparent 1px 32px),
-    repeating-linear-gradient(90deg, rgba(255,235,59,.04) 0 1px, transparent 1px 128px),
-    repeating-linear-gradient(0deg, rgba(33,150,243,.04) 0 1px, transparent 1px 128px);
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.035);
-  opacity: .36;
+    repeating-linear-gradient(90deg, rgba(243,244,246,.026) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(0deg, rgba(243,244,246,.026) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(90deg, rgba(66,165,245,.038) 0 1px, transparent 1px 128px),
+    repeating-linear-gradient(0deg, rgba(243,244,246,.034) 0 1px, transparent 1px 128px);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.028);
+  opacity: .3;
 }
 .lab-frame::before,
 .lab-frame::after {
@@ -2277,14 +2280,14 @@ pre.glyph-block {
 .lab-frame::after {
   inset: 0;
   background:
-    linear-gradient(90deg, transparent calc(50% - .5px), rgba(255,235,59,.11) calc(50% - .5px), rgba(255,235,59,.11) calc(50% + .5px), transparent calc(50% + .5px)),
-    linear-gradient(0deg, transparent calc(50% - .5px), rgba(66,165,245,.09) calc(50% - .5px), rgba(66,165,245,.09) calc(50% + .5px), transparent calc(50% + .5px));
+    linear-gradient(90deg, transparent calc(50% - .5px), rgba(243,244,246,.12) calc(50% - .5px), rgba(243,244,246,.12) calc(50% + .5px), transparent calc(50% + .5px)),
+    linear-gradient(0deg, transparent calc(50% - .5px), rgba(66,165,245,.08) calc(50% - .5px), rgba(66,165,245,.08) calc(50% + .5px), transparent calc(50% + .5px));
 }
 .lab-frame .corner {
   position: absolute;
   width: 26px;
   height: 26px;
-  border-color: rgba(255,235,59,.3);
+  border-color: rgba(243,244,246,.18);
   border-style: solid;
 }
 .lab-frame .corner::after {
@@ -2529,9 +2532,9 @@ body.lightcone-instrument .standalone-measurements {
   min-height: 19px;
   border: 1px solid rgba(243, 244, 246, 0.12);
   border-radius: var(--shape-sm);
-  background: rgba(5, 5, 5, 0.84);
+  background: rgba(5, 5, 5, 0.94);
   padding: 4px 6px;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(3px);
 }
 
 .standalone-meter span,
@@ -2567,11 +2570,11 @@ body.lightcone-instrument .standalone-measurements {
   height: 100%;
   transform: scaleX(0);
   transform-origin: left center;
-  background: linear-gradient(90deg, rgba(66,165,245,0.72), rgba(255,235,59,0.76));
+  background: linear-gradient(90deg, rgba(66,165,245,0.72), rgba(243,244,246,0.82));
 }
 
 .standalone-meter.error b {
-  background: linear-gradient(90deg, rgba(76,175,80,0.6), rgba(255,122,23,0.82));
+  background: linear-gradient(90deg, rgba(76,175,80,0.56), rgba(255,122,23,0.78));
 }
 #stage-readout {
   position: fixed;
@@ -2628,7 +2631,7 @@ body.lightcone-instrument .meter .bar {
 body.lightcone-instrument .meter .fill {
   height: 100%;
   width: 20%;
-  background: linear-gradient(90deg, rgba(33,150,243,.42), rgba(255,235,59,.72));
+  background: linear-gradient(90deg, rgba(33,150,243,.42), rgba(243,244,246,.72));
 }
 
 body.lightcone-instrument .tier {
