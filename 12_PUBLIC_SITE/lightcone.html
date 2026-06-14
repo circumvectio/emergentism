@@ -48,6 +48,11 @@
   <span data-field="uncertainty">σ --</span>
   <span data-field="state">RUN</span>
 </div>
+<div class="standalone-measurements" id="lightcone-measurements" aria-hidden="true">
+  <div class="standalone-meter" data-signal="primary"><span>reach</span><i><b></b></i><em>--</em></div>
+  <div class="standalone-meter" data-signal="secondary"><span>Ω</span><i><b></b></i><em>--</em></div>
+  <div class="standalone-meter error" data-signal="error"><span>cone σ</span><i><b></b></i><em>--</em></div>
+</div>
 <div class="instrument-spec" aria-hidden="true">
   <span>invariant: present hyperplane fixed at t = 0</span>
   <span>axes: cone angle · height · Ω proxy</span>
@@ -79,7 +84,7 @@ let createStripChart, clearStripChart, updateStripChart;
 try {
   THREE = await import('three');
   ({ OrbitControls } = await import('three/addons/controls/OrbitControls.js'));
-  ({ createStripChart, clearStripChart, updateStripChart } = await import('./assets/js/instrument-charts.js?v=2026-06-14-instrument-4'));
+  ({ createStripChart, clearStripChart, updateStripChart } = await import('./assets/js/instrument-charts.js?v=2026-06-14-instrument-9'));
 } catch (e) { document.getElementById('fallback').style.display = 'flex'; throw e; }
 
 const REDUCED_MOTION = !!(window.matchMedia
@@ -216,6 +221,7 @@ const stepButton = document.getElementById('lc-step');
 const zeroButton = document.getElementById('lc-zero');
 const rateInput = document.getElementById('lc-rate');
 const telemetry = document.getElementById('lightcone-telemetry');
+const measurements = document.getElementById('lightcone-measurements');
 let simTime = 0;
 let paused = false;
 let stepSeconds = 0;
@@ -275,6 +281,27 @@ function setTelemetry(fields){
   Object.entries(fields).forEach(([key, value]) => {
     const el = telemetry.querySelector('[data-field="' + key + '"]');
     if (el) el.textContent = value;
+  });
+}
+
+function clamp01(value) {
+  return Math.max(0, Math.min(1, Number.isFinite(value) ? value : 0));
+}
+
+function setMeasurements(signals) {
+  if (!measurements) return;
+  ['primary', 'secondary', 'error'].forEach((key) => {
+    const meter = measurements.querySelector('[data-signal="' + key + '"]');
+    if (!meter) return;
+    const value = clamp01(signals[key]);
+    const label = signals[key + 'Label'] || key;
+    const text = signals[key + 'Text'] || value.toFixed(3);
+    const labelEl = meter.querySelector('span');
+    const valueEl = meter.querySelector('em');
+    const barEl = meter.querySelector('b');
+    if (labelEl) labelEl.textContent = label;
+    if (valueEl) valueEl.textContent = text;
+    if (barEl) barEl.style.transform = 'scaleX(' + value.toFixed(4) + ')';
   });
 }
 
@@ -363,6 +390,17 @@ function updateInstrument(frameTime = nowMs(), poseOffset = null){
     metric: 'Ω ' + omegaProxy.toFixed(2) + ' · dΩ/dt ' + lastOmegaRate.toFixed(2),
     uncertainty: 'σ cone ' + coneResidual.toExponential(1),
     state: (paused ? 'HOLD' : 'RUN') + ' · ' + rate.toFixed(2) + 'x'
+  });
+  setMeasurements({
+    primary: reach,
+    primaryLabel: 'reach',
+    primaryText: reach.toFixed(2),
+    secondary: omegaProxy / OMEGA_GRAPH_MAX,
+    secondaryLabel: 'Ω',
+    secondaryText: omegaProxy.toFixed(2),
+    error: coneResidual * 1e6,
+    errorLabel: 'cone σ',
+    errorText: coneResidual.toExponential(1)
   });
   if (readout) readout.textContent = innerWidth < 900
     ? 'LIGHTCONE INSTRUMENT\n' +

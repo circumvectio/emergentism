@@ -58,6 +58,11 @@
         <div class="instrument-corners"><span></span><span></span><span></span><span></span></div>
         <div class="instrument-scale x" data-axis-label="loop phase index"></div>
         <div class="instrument-scale y" data-axis-label="contradiction residual"></div>
+        <div class="instrument-measurements">
+          <div class="instrument-meter" data-signal="primary"><span>residual</span><i><b></b></i><em>--</em></div>
+          <div class="instrument-meter" data-signal="secondary"><span>L4 proximity</span><i><b></b></i><em>--</em></div>
+          <div class="instrument-meter error" data-signal="error"><span>trend σ</span><i><b></b></i><em>--</em></div>
+        </div>
         <div class="instrument-telemetry">
           <span data-field="mode">Soul Loop assay</span>
           <span data-field="fps">-- fps</span>
@@ -427,6 +432,29 @@
     return SAMPLE_HZ + ' Hz · n ' + String(sampleIndex).padStart(5, '0');
   }
 
+  function clamp01(value) {
+    return Math.max(0, Math.min(1, Number.isFinite(value) ? value : 0));
+  }
+
+  function setMeasurements(signals) {
+    if (!visual) return;
+    const root = visual.querySelector('.instrument-measurements');
+    if (!root) return;
+    ['primary', 'secondary', 'error'].forEach((key) => {
+      const meter = root.querySelector('[data-signal="' + key + '"]');
+      if (!meter) return;
+      const value = clamp01(signals[key]);
+      const label = signals[key + 'Label'] || key;
+      const text = signals[key + 'Text'] || value.toFixed(3);
+      const labelEl = meter.querySelector('span');
+      const valueEl = meter.querySelector('em');
+      const barEl = meter.querySelector('b');
+      if (labelEl) labelEl.textContent = label;
+      if (valueEl) valueEl.textContent = text;
+      if (barEl) barEl.style.transform = 'scaleX(' + value.toFixed(4) + ')';
+    });
+  }
+
   const readout = (() => {
     if (!visual) return null;
     let el = visual.querySelector('.soul-loop-readout');
@@ -530,6 +558,18 @@
     const residualTrend = residualSamples.length > 2
       ? Math.abs(residualSamples[residualSamples.length - 1] - residualSamples[residualSamples.length - 2])
       : 0;
+    const l4Proximity = 1 - Math.min(1, l4Distance / 5);
+    setMeasurements({
+      primary: residualProxy,
+      primaryLabel: 'residual',
+      primaryText: residualProxy.toFixed(3),
+      secondary: l4Proximity,
+      secondaryLabel: 'L4 proximity',
+      secondaryText: l4Proximity.toFixed(3),
+      error: residualTrend * 20,
+      errorLabel: 'trend σ',
+      errorText: residualTrend.toFixed(3)
+    });
     const overlay = visual ? visual.querySelector('.soul-loop-overlay') : null;
     if (overlay) {
       const fields = {

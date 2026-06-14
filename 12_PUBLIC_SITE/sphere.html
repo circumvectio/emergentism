@@ -64,6 +64,11 @@
   <span data-field="uncertainty">σ --</span>
   <span data-field="state">SCAN</span>
 </div>
+<div class="standalone-measurements" id="sphere-measurements" aria-hidden="true">
+  <div class="standalone-meter" data-signal="primary"><span>B</span><i><b></b></i><em>--</em></div>
+  <div class="standalone-meter" data-signal="secondary"><span>row</span><i><b></b></i><em>--</em></div>
+  <div class="standalone-meter error" data-signal="error"><span>φν σ</span><i><b></b></i><em>--</em></div>
+</div>
 <div class="instrument-spec" aria-hidden="true">
   <span>invariant: φ · ν = 1 on S²</span>
   <span>axes: θ latitude · B = sinθ · reciprocal charts</span>
@@ -103,7 +108,7 @@
 }}
 </script>
 <script type="module">
-import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-4';
+import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-9';
 
 let THREE, OrbitControls;
 try {
@@ -273,6 +278,7 @@ const positionStep = document.getElementById('position-step');
 const positionZero = document.getElementById('position-zero');
 const scanRate = document.getElementById('scan-rate');
 const telemetry = document.getElementById('sphere-telemetry');
+const measurements = document.getElementById('sphere-measurements');
 let selectedIndex = 3;
 let scanRunning = !REDUCED_MOTION;
 const SCAN_MS = 3200;
@@ -293,6 +299,27 @@ function setTelemetry(fields){
   Object.entries(fields).forEach(([key, value]) => {
     const el = telemetry.querySelector('[data-field="' + key + '"]');
     if (el) el.textContent = value;
+  });
+}
+
+function clamp01(value) {
+  return Math.max(0, Math.min(1, Number.isFinite(value) ? value : 0));
+}
+
+function setMeasurements(signals) {
+  if (!measurements) return;
+  ['primary', 'secondary', 'error'].forEach((key) => {
+    const meter = measurements.querySelector('[data-signal="' + key + '"]');
+    if (!meter) return;
+    const value = clamp01(signals[key]);
+    const label = signals[key + 'Label'] || key;
+    const text = signals[key + 'Text'] || value.toFixed(3);
+    const labelEl = meter.querySelector('span');
+    const valueEl = meter.querySelector('em');
+    const barEl = meter.querySelector('b');
+    if (labelEl) labelEl.textContent = label;
+    if (valueEl) valueEl.textContent = text;
+    if (barEl) barEl.style.transform = 'scaleX(' + value.toFixed(4) + ')';
   });
 }
 
@@ -367,6 +394,17 @@ function select(i, manual = false){
     metric: 'B ' + balance.toFixed(3) + ' · |φν−1| ' + reciprocalResidual.toExponential(1),
     uncertainty: 'σ φν ' + reciprocalResidual.toExponential(1),
     state: (scanRunning ? 'SCAN' : 'HOLD') + ' · ' + rateValue().toFixed(2) + 'x'
+  });
+  setMeasurements({
+    primary: balance,
+    primaryLabel: 'B',
+    primaryText: balance.toFixed(3),
+    secondary: i / 6,
+    secondaryLabel: 'row',
+    secondaryText: i + '/6',
+    error: reciprocalResidual * 1e6,
+    errorLabel: 'φν σ',
+    errorText: reciprocalResidual.toExponential(1)
   });
   if (stageReadout) {
     stageReadout.textContent = innerWidth < 900

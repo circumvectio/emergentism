@@ -57,6 +57,11 @@
   <span data-field="uncertainty">σ --</span>
   <span data-field="state">RUN</span>
 </div>
+<div class="standalone-measurements" id="cascade-measurements" aria-hidden="true">
+  <div class="standalone-meter" data-signal="primary"><span>morph</span><i><b></b></i><em>--</em></div>
+  <div class="standalone-meter" data-signal="secondary"><span>phase</span><i><b></b></i><em>--</em></div>
+  <div class="standalone-meter error" data-signal="error"><span>lag</span><i><b></b></i><em>--</em></div>
+</div>
 <div class="instrument-spec" aria-hidden="true">
   <span>invariant: finite sample never equals asymptote</span>
   <span>axes: u/v mesh · morph target · residual lag</span>
@@ -95,7 +100,7 @@
 }}
 </script>
 <script type="module">
-import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-4';
+import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-9';
 
 let THREE, OrbitControls;
 try {
@@ -412,6 +417,7 @@ const stageReadoutEl = document.getElementById('stage-readout');
 const timelineEl = document.getElementById('timeline');
 const timelineValueEl = document.getElementById('timeline-value');
 const telemetryEl = document.getElementById('cascade-telemetry');
+const measurementsEl = document.getElementById('cascade-measurements');
 const cascadeStepEl = document.getElementById('cascade-step');
 const cascadeZeroEl = document.getElementById('cascade-zero');
 const cascadeRateEl = document.getElementById('cascade-rate');
@@ -434,6 +440,27 @@ function setTelemetry(fields){
   Object.entries(fields).forEach(([key, value]) => {
     const el = telemetryEl.querySelector('[data-field="' + key + '"]');
     if (el) el.textContent = value;
+  });
+}
+
+function clamp01(value) {
+  return Math.max(0, Math.min(1, Number.isFinite(value) ? value : 0));
+}
+
+function setMeasurements(signals) {
+  if (!measurementsEl) return;
+  ['primary', 'secondary', 'error'].forEach((key) => {
+    const meter = measurementsEl.querySelector('[data-signal="' + key + '"]');
+    if (!meter) return;
+    const value = clamp01(signals[key]);
+    const label = signals[key + 'Label'] || key;
+    const text = signals[key + 'Text'] || value.toFixed(3);
+    const labelEl = meter.querySelector('span');
+    const valueEl = meter.querySelector('em');
+    const barEl = meter.querySelector('b');
+    if (labelEl) labelEl.textContent = label;
+    if (valueEl) valueEl.textContent = text;
+    if (barEl) barEl.style.transform = 'scaleX(' + value.toFixed(4) + ')';
   });
 }
 
@@ -479,28 +506,40 @@ function syncInstrument(){
   if (timelineEl) timelineEl.value = String(cur);
   if (timelineValueEl) timelineValueEl.textContent = cur + '/' + (STAGES.length - 1);
   const phase = Math.min(1, tAccum / STAGE_SECS);
+  const lag = Math.abs(morphTarget - morphCur);
   setTelemetry({
     fps: REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps'),
     sample: REDUCED_MOTION ? 'sample static' : sampleLabel(),
     time: 't+' + tAccum.toFixed(2) + 's',
     phase: 'phase ' + phase.toFixed(2),
     metric: 'morph ' + morphCur.toFixed(2) + '→' + morphTarget.toFixed(2),
-    uncertainty: 'σ lag ' + Math.abs(morphTarget - morphCur).toFixed(3),
+    uncertainty: 'σ lag ' + lag.toFixed(3),
     state: (playing ? 'RUN' : 'HOLD') + ' · ' + rateValue().toFixed(2) + 'x'
+  });
+  setMeasurements({
+    primary: morphCur / (SHAPES.length - 1),
+    primaryLabel: 'morph',
+    primaryText: morphCur.toFixed(2),
+    secondary: phase,
+    secondaryLabel: 'phase',
+    secondaryText: phase.toFixed(2),
+    error: lag,
+    errorLabel: 'lag',
+    errorText: lag.toFixed(3)
   });
   if (!stageReadoutEl) return;
   if (innerWidth < 900) {
     stageReadoutEl.textContent =
       'CASCADE INSTRUMENT\n' +
       'stage ' + cur + '/' + (STAGES.length - 1) + ' · ' + stageName(cur) + ' · ' + (playing ? 'RUN' : 'HOLD') + '\n' +
-      'phase ' + phase.toFixed(2) + ' · morph Δ=' + Math.abs(morphTarget - morphCur).toFixed(3) + '\n' +
+      'phase ' + phase.toFixed(2) + ' · morph Δ=' + lag.toFixed(3) + '\n' +
       (REDUCED_MOTION ? 'sample static' : sampleLabel());
     return;
   }
   stageReadoutEl.textContent =
     'CASCADE INSTRUMENT\n' +
     'stage ' + cur + '/' + (STAGES.length - 1) + ' · ' + stageName(cur) + ' · ' + (playing ? 'RUN' : 'HOLD') + '\n' +
-    'phase=' + phase.toFixed(2) + ' · target=' + morphTarget.toFixed(2) + ' · actual=' + morphCur.toFixed(2) + ' · Δ=' + Math.abs(morphTarget - morphCur).toFixed(3) + '\n' +
+    'phase=' + phase.toFixed(2) + ' · target=' + morphTarget.toFixed(2) + ' · actual=' + morphCur.toFixed(2) + ' · Δ=' + lag.toFixed(3) + '\n' +
     'clock ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · frame ' + (REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps')) + ' · rate ' + rateValue().toFixed(2) + 'x\n' +
     morphProbeState + '\n' +
     projectionState;

@@ -2,7 +2,7 @@ import {
   createStripChart as createSharedStripChart,
   clearStripChart as clearSharedStripChart,
   updateStripChart as updateSharedStripChart
-} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-4";
+} from "../assets/js/instrument-charts.js?v=2026-06-14-instrument-9";
 
 const page = window.DIMENSION_PAGE || {};
 const canvas = document.querySelector(".dimension-canvas");
@@ -117,6 +117,11 @@ function phase01(t, cyclesPerSecond = 0.045, offset = 0) {
 
 function clamp01(x) {
   return Math.max(0, Math.min(1, x));
+}
+
+function finiteNumber(value, fallback = 0) {
+  const n = Number(value);
+  return Number.isFinite(n) ? n : fallback;
 }
 
 function createSampleClock() {
@@ -328,6 +333,23 @@ function ensureInstrumentOverlay(mode = animationMode) {
       <span>Δt 0.0333 s</span>
       <span>screen-space assay</span>
     </div>
+    <div class="instrument-measurements">
+      <div class="instrument-meter" data-signal="primary">
+        <span data-label="primary">primary</span>
+        <i><b></b></i>
+        <em data-value="primary">--</em>
+      </div>
+      <div class="instrument-meter" data-signal="secondary">
+        <span data-label="secondary">secondary</span>
+        <i><b></b></i>
+        <em data-value="secondary">--</em>
+      </div>
+      <div class="instrument-meter error" data-signal="error">
+        <span data-label="error">residual</span>
+        <i><b></b></i>
+        <em data-value="error">--</em>
+      </div>
+    </div>
     <div class="instrument-telemetry">
       <span data-field="mode">${modeLabels[mode] || mode}</span>
       <span data-field="invariant">${modeInvariants[mode] || "calibrated"}</span>
@@ -344,12 +366,43 @@ function ensureInstrumentOverlay(mode = animationMode) {
   return overlay;
 }
 
-function setInstrumentMetric(metric = "", state = "", phase = "", uncertainty = "") {
+function setInstrumentMetric(metric = "", state = "", phase = "", uncertainty = "", signals = null) {
   if (!visual) return;
   if (metric) visual.dataset.instrumentMetric = metric;
   if (state) visual.dataset.instrumentState = state;
   if (phase) visual.dataset.instrumentPhase = phase;
   if (uncertainty) visual.dataset.instrumentUncertainty = uncertainty;
+  if (signals) setInstrumentSignals(signals);
+}
+
+function setInstrumentSignals(signals = {}) {
+  if (!visual) return;
+  [
+    ["primary", "Primary"],
+    ["secondary", "Secondary"],
+    ["error", "Residual"]
+  ].forEach(([key, fallbackLabel]) => {
+    const raw = finiteNumber(signals[key], Number.NaN);
+    if (Number.isFinite(raw)) visual.dataset[`signal${key}`] = String(clamp01(raw));
+    if (signals[`${key}Label`]) visual.dataset[`signal${key}Label`] = String(signals[`${key}Label`]);
+    else if (!visual.dataset[`signal${key}Label`]) visual.dataset[`signal${key}Label`] = fallbackLabel;
+    if (signals[`${key}Text`]) visual.dataset[`signal${key}Text`] = String(signals[`${key}Text`]);
+    else if (Number.isFinite(raw)) visual.dataset[`signal${key}Text`] = clamp01(raw).toFixed(3);
+  });
+}
+
+function updateSignalMeter(overlay, key) {
+  const meter = overlay.querySelector(`[data-signal="${key}"]`);
+  if (!meter) return;
+  const value = clamp01(finiteNumber(visual.dataset[`signal${key}`], 0));
+  const label = visual.dataset[`signal${key}Label`] || key;
+  const text = visual.dataset[`signal${key}Text`] || value.toFixed(3);
+  const labelEl = meter.querySelector(`[data-label="${key}"]`);
+  const valueEl = meter.querySelector(`[data-value="${key}"]`);
+  const barEl = meter.querySelector("b");
+  if (labelEl) labelEl.textContent = label;
+  if (valueEl) valueEl.textContent = text;
+  if (barEl) barEl.style.transform = `scaleX(${value.toFixed(4)})`;
 }
 
 function updateInstrumentOverlay(overlay, t, fps) {
@@ -368,6 +421,9 @@ function updateInstrumentOverlay(overlay, t, fps) {
   if (metricField) metricField.textContent = visual.dataset.instrumentMetric || "sample --";
   if (uncertaintyField) uncertaintyField.textContent = visual.dataset.instrumentUncertainty || "σ --";
   if (stateField) stateField.textContent = visual.dataset.instrumentState || "locked frame";
+  updateSignalMeter(overlay, "primary");
+  updateSignalMeter(overlay, "secondary");
+  updateSignalMeter(overlay, "error");
 }
 
 function ensureInstrumentControls() {
@@ -599,7 +655,17 @@ function drawTitanCalculator(time = 0) {
       "s ±" + reciprocalS.toFixed(2),
       (paused ? "held frame" : "unity fixed"),
       "phase " + reciprocalPhase.toFixed(2),
-      "σ mirror " + mirrorResidual.toExponential(1)
+      "σ mirror " + mirrorResidual.toExponential(1),
+      {
+        primary: reciprocalS / 4.5,
+        primaryLabel: "|s|",
+        primaryText: reciprocalS.toFixed(2),
+        secondary: 1 - clamp01(mirrorResidual),
+        secondaryLabel: "mirror",
+        secondaryText: "1.000",
+        error: clamp01(mirrorResidual * 24),
+        errorText: mirrorResidual.toExponential(1)
+      }
     );
 
     ctx.setLineDash([8, 8]);
@@ -892,7 +958,17 @@ function drawConstitutionInstrument(time = 0) {
       "closure " + closureResidual.toExponential(1) + " · center " + centerResidual.toExponential(1),
       (paused ? "held frame" : "perimeter scan"),
       "phase " + phase.toFixed(2),
-      "σ closure " + Math.max(closureResidual, centerResidual).toExponential(1)
+      "σ closure " + Math.max(closureResidual, centerResidual).toExponential(1),
+      {
+        primary: (active + local) / fences.length,
+        primaryLabel: "scan",
+        primaryText: (active + 1) + "/5",
+        secondary: 1 - clamp01(centerResidual * 18),
+        secondaryLabel: "centroid",
+        secondaryText: centerResidual.toExponential(1),
+        error: clamp01(Math.max(closureResidual, centerResidual) * 24),
+        errorText: Math.max(closureResidual, centerResidual).toExponential(1)
+      }
     );
     updateInstrumentOverlay(overlay, t, fps);
     if (readout) {
@@ -1278,7 +1354,17 @@ function buildScene(mode, scene) {
         "s " + s.toFixed(2) + " · B " + balance.toFixed(3),
         "x·1/x=1",
         "phase " + logPhase.toFixed(2),
-        "σ x·1/x " + reciprocalResidual.toExponential(1)
+        "σ x·1/x " + reciprocalResidual.toExponential(1),
+        {
+          primary: balance,
+          primaryLabel: "B",
+          primaryText: balance.toFixed(3),
+          secondary: Math.abs(u),
+          secondaryLabel: "|u|",
+          secondaryText: Math.abs(u).toFixed(3),
+          error: clamp01(reciprocalResidual * 1e6),
+          errorText: reciprocalResidual.toExponential(1)
+        }
       );
       if (readout) readout.textContent = isCompactInstrument()
         ? "D1 RECIPROCAL LINE · " + (sampled ? "SAMPLE" : "HOLD") + "\n" +
@@ -1356,7 +1442,17 @@ function buildScene(mode, scene) {
         "λ " + p.toFixed(2) + " · μ " + lift.toFixed(2),
         "orthogonal lift",
         "phase " + muPhase.toFixed(2),
-        "σ projection " + projectionResidual.toExponential(1)
+        "σ projection " + projectionResidual.toExponential(1),
+        {
+          primary: lift / 1.6,
+          primaryLabel: "μ",
+          primaryText: lift.toFixed(2),
+          secondary: p,
+          secondaryLabel: "λ",
+          secondaryText: p.toFixed(2),
+          error: clamp01(projectionResidual * 20),
+          errorText: projectionResidual.toExponential(1)
+        }
       );
       if (readout) readout.textContent = isCompactInstrument()
         ? "D2 μ-LIMIT · LIFT ASSAY\n" +
@@ -1445,7 +1541,17 @@ function buildScene(mode, scene) {
         "θ " + (th * 180 / Math.PI).toFixed(1) + "° · B " + balance.toFixed(3),
         "tangent projection",
         "phase " + projectionPhase.toFixed(2),
-        "σ φν " + reciprocalResidual.toExponential(1) + " · ρ " + landingResidual.toExponential(1)
+        "σ φν " + reciprocalResidual.toExponential(1) + " · ρ " + landingResidual.toExponential(1),
+        {
+          primary: balance,
+          primaryLabel: "B",
+          primaryText: balance.toFixed(3),
+          secondary: clamp01(landingRadius / (4 * r)),
+          secondaryLabel: "ρ",
+          secondaryText: landingRadius.toFixed(2),
+          error: clamp01((reciprocalResidual * 1e6) + landingResidual),
+          errorText: Math.max(reciprocalResidual, landingResidual).toExponential(1)
+        }
       );
       if (readout) readout.textContent = isCompactInstrument()
         ? "D3 TANGENT PROJECTION\n" +
@@ -1557,7 +1663,17 @@ function buildScene(mode, scene) {
         "w " + w.toFixed(2) + " · γ " + gamma.toFixed(1),
         "dτ/dt " + (1 / gamma).toFixed(3),
         "phase " + clamp01(w / W_MAX).toFixed(2),
-        "σ R/r " + morphResidual.toExponential(1)
+        "σ R/r " + morphResidual.toExponential(1),
+        {
+          primary: 1 / gamma,
+          primaryLabel: "dτ/dt",
+          primaryText: (1 / gamma).toFixed(3),
+          secondary: vc,
+          secondaryLabel: "β",
+          secondaryText: vc.toFixed(4),
+          error: clamp01(morphResidual * 40),
+          errorText: morphResidual.toExponential(1)
+        }
       );
       if (readout) {
         const limitState = !moving
@@ -1791,7 +1907,17 @@ function buildScene(mode, scene) {
         "B " + balance.toFixed(3) + " · U " + finiteCouplingProxy.toFixed(3),
         thetaUserActive ? "manual latitude" : "reciprocal sweep",
         "phase " + (((psi % TAU) + TAU) % TAU / TAU).toFixed(2),
-        "σ φν " + reciprocalResidual.toExponential(1) + " · ray " + rayResidual.toExponential(1)
+        "σ φν " + reciprocalResidual.toExponential(1) + " · ray " + rayResidual.toExponential(1),
+        {
+          primary: balance,
+          primaryLabel: "B",
+          primaryText: balance.toFixed(3),
+          secondary: 1 / (1 + imbalance),
+          secondaryLabel: "1/(1+|lnφ|)",
+          secondaryText: (1 / (1 + imbalance)).toFixed(3),
+          error: clamp01((reciprocalResidual * 1e6) + rayResidual * 18),
+          errorText: Math.max(reciprocalResidual, rayResidual).toExponential(1)
+        }
       );
       if (readout) readout.textContent = isCompactInstrument()
         ? "D5 BURRISPHERE · DUAL PROJECTION\n" +
@@ -1813,8 +1939,10 @@ function buildScene(mode, scene) {
     if (readout) {
       readout.style.maxWidth = "min(430px, 46%)";
       readout.style.whiteSpace = "pre-line";
-      readout.style.top = "92px";
-      readout.style.bottom = "auto";
+      readout.style.top = "auto";
+      readout.style.bottom = "70px";
+      readout.style.left = "16px";
+      readout.style.right = "auto";
       readout.classList.add("ccc-readout");
     }
     const cccRing = (color, opacity = 1, tube = 0.012) => new THREE.Mesh(
@@ -1924,7 +2052,17 @@ function buildScene(mode, scene) {
         "a " + (aeonRadius / boundaryRadius).toFixed(2) + " · Ω " + (conformalRadius / boundaryRadius).toFixed(2),
         "CCC rescale analogy",
         "phase " + leadPhase.toFixed(2),
-        "σ q-map " + mapResidual.toExponential(1) + " · close " + closureResidual.toExponential(1)
+        "σ q-map " + mapResidual.toExponential(1) + " · close " + closureResidual.toExponential(1),
+        {
+          primary: q,
+          primaryLabel: "aeon q",
+          primaryText: q.toFixed(2),
+          secondary: 1 - q,
+          secondaryLabel: "rescale",
+          secondaryText: (1 - q).toFixed(2),
+          error: clamp01(Math.max(mapResidual, closureResidual) * 40),
+          errorText: Math.max(mapResidual, closureResidual).toExponential(1)
+        }
       );
       if (readout) readout.textContent =
         "CCC RETURN · CONFORMAL RESCALE\n" +
