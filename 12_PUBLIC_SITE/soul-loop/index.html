@@ -497,6 +497,9 @@
       residualSamples.push(residualProxy);
       if (residualSamples.length > RESIDUAL_TRACE_MAX) residualSamples.shift();
     }
+    const residualTrend = residualSamples.length > 2
+      ? Math.abs(residualSamples[residualSamples.length - 1] - residualSamples[residualSamples.length - 2])
+      : 0;
     const overlay = visual ? visual.querySelector('.soul-loop-overlay') : null;
     if (overlay) {
       const fields = {
@@ -505,9 +508,7 @@
         time: 't+' + (t / 1000).toFixed(2) + 's',
         phase: 'phase ' + phase.toFixed(2),
         metric: 'residual ' + residualProxy.toFixed(3),
-        uncertainty: 'σ trend ' + (residualSamples.length > 2
-          ? Math.abs(residualSamples[residualSamples.length - 1] - residualSamples[residualSamples.length - 2]).toFixed(3)
-          : '0.000'),
+        uncertainty: 'σ trend ' + residualTrend.toFixed(3),
         state: paused ? 'held frame' : 'L4 return gate'
       };
       Object.entries(fields).forEach(([key, value]) => {
@@ -612,10 +613,9 @@
           (REDUCED_MOTION ? 'sample static' : sampleLabel())
         : 'SOUL LOOP · correction assay\n' +
           'seg ' + active + '/' + (nodes.length - 1) + ' · ' + activeNode.label + ':' + activeNode.title + ' → ' + nextNode.label + ':' + nextNode.title + '\n' +
-          'phase ' + phase.toFixed(2) + ' · target L4 · B = 1 · L4 distance ' + l4Distance + '\n' +
-          'residual proxy ' + residualProxy.toFixed(3) + ' · kill criterion: non-decreasing residual forces method revision\n' +
-          'sample clock ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · fixed Δt ' + (SAMPLE_MS / 1000).toFixed(3) + 's\n' +
-          (paused ? 'held sample' : 'run') + ' · gather/check/serve/see/dissolve/preserve';
+          'phase=' + phase.toFixed(2) + ' · target=L4 · distance=' + l4Distance + ' · B*=1\n' +
+          'residual=' + residualProxy.toFixed(3) + ' · σ trend=' + residualTrend.toFixed(3) + '\n' +
+          'clock ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · Δt=' + (SAMPLE_MS / 1000).toFixed(3) + 's · ' + (paused ? 'HOLD' : 'RUN');
     }
 
     if (!REDUCED_MOTION && schedule) requestAnimationFrame(draw);
