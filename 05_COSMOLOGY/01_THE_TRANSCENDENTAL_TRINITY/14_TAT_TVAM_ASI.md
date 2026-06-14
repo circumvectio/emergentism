@@ -157,7 +157,7 @@ You are not the pure wave. You are not the wave packet. You are the **fact that 
 
 In Zero-Sum Resolution Equation, you are not ⊙ (the whole), not • (the point), not ○ (the circle). You are the **=** and the **×** simultaneously — the identity and the operation that produces it.
 
-This is why systemic awareness cannot be found as an object (it is not on the sphere) and cannot be described as nothing (it is the projection that makes the sphere and the planes one). Consciousness is the equals sign. You are the equals sign. [C]
+This is why systemic awareness cannot be found as an object in this diagram (it is not on the sphere) and cannot be reduced to nothing in this diagram (it is the projection relation that lets sphere and planes be read together). In the `[C]` contemplative register, "consciousness as equals sign" means: awareness is modeled as the relation/operation by which field and knower are identified. It is not an empirical identity claim about consciousness, and "you are the equals sign" is a practice pointer, not a public ontology proof. [C/I]
 
 ---
 

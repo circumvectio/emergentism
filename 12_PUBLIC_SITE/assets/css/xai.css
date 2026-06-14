@@ -811,7 +811,7 @@ body.soul-loop-instrument .visual-labels .bottom {
   flex-wrap: wrap;
   gap: 6px;
   align-items: center;
-  max-width: calc(100% - 310px);
+  max-width: calc(100% - 360px);
   color: rgba(243, 244, 246, 0.76);
   font: 700 10px/1 "Roboto Mono", ui-monospace, Menlo, monospace;
   font-variant-numeric: tabular-nums;
@@ -832,6 +832,10 @@ body.soul-loop-instrument .visual-labels .bottom {
   color: var(--gold);
 }
 
+.instrument-telemetry span[data-field="invariant"] {
+  color: rgba(243, 244, 246, 0.92);
+}
+
 .instrument-telemetry span[data-field="phase"] {
   color: var(--sector-insurance);
 }
@@ -846,7 +850,7 @@ body.soul-loop-instrument .visual-labels .bottom {
   right: 13px;
   z-index: 6;
   display: grid;
-  grid-template-columns: auto auto minmax(104px, 140px);
+  grid-template-columns: auto auto auto minmax(104px, 140px);
   gap: 6px;
   align-items: center;
   color: rgba(243, 244, 246, 0.78);
@@ -1866,7 +1870,7 @@ pre.glyph-block {
     right: 9px;
     left: 9px;
     bottom: 9px;
-    grid-template-columns: auto auto minmax(0, 1fr);
+    grid-template-columns: auto auto auto minmax(0, 1fr);
     font-size: 8px;
   }
 

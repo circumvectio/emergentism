@@ -147,7 +147,7 @@ To gain agency over the will-to-ektropy at the somatic level, you must first gai
 
 The signal is spent without being lifted. The motivational gradient *flattens* over time as habituation accumulates, which is the opposite of the F5-amplification the cascade requires.
 
-[I] The modern hyper-sexualised consumer environment is a planet-scale uncontrolled experiment in untransformed discharge. The framework predicts (and observes) the flattening of motivational gradient, the loss of narrative arc, the rise of dopaminergic compulsion, and the inability to sustain φ × ν dominance under Red Queen pressure.
+[I/C] The modern hyper-sexualised consumer environment is treated here as a hypothesis surface for untransformed discharge, not as a completed experiment. The framework would predict flattening of motivational gradient, loss of narrative arc, dopaminergic compulsion, and weakened ability to sustain φ × ν dominance under Red Queen pressure, but those claims require operational definitions, controls, and independent measurement before any evidence-tier upgrade.
 
 ### IV.c Redirection lifts the signal — works [I + C]
 

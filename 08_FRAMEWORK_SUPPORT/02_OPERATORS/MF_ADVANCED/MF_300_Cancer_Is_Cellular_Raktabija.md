@@ -16,23 +16,23 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[I]"
-  canonical_phrase: "MF-300 — Cancer Is Cellular Raktabija"
+  canonical_phrase: "MF-300 — Cancer as Cellular Raktabija"
 ---
 
-# MF-300: CANCER IS CELLULAR RAKTABĪJA
+# MF-300: CANCER AS CELLULAR RAKTABĪJA
 
 ## Tumors Are Parasitic Egregores at D3. The Three Treatment Modalities Are Anti-Raktabīja.
 
 **Emergentism.org · VIVEKA Mathematical Foundations**
 **Depends on:** MF-283 (Orthogonality Theorem), MF-294 (Egregores Are Horn Networks), A5 (The Egregore), A7 (The Correction)
-**Evidence tier:** [I] for oncology evidence; [I] for Raktabīja interpretation; [T] for structural mapping
-**Purpose:** Show that cancer is a parasitic egregore operating at the cellular level (D3). A tumor has autonomous objective function (growth, metastasis, immune evasion), persists beyond individual cells, captures the host's institutional infrastructure (vasculature, immune tolerance, metabolic pathways), and inverts opposition (immune suppression in tumor microenvironment). The three pillars of cancer treatment — surgery, immunotherapy, chemotherapy — map precisely to the three anti-Raktabīja properties: non-institutional intervention, diagnostic reactivation, and material supply-line destruction.
+**Evidence tier:** [A] for established oncology facts named here; [I/C] for Raktabīja interpretation; [S] for structural mapping
+**Purpose:** Offer a framework interpretation of cancer as a parasitic egregore-like pattern operating at the cellular level (D3). Tumors can show autonomous growth, metastasis, immune evasion, persistence beyond individual cells, recruitment of host infrastructure, and resistance dynamics. The mapping from surgery, immunotherapy, and chemotherapy to anti-Raktabīja properties is a structural analogy, not clinical guidance and not a replacement for oncology evidence or care.
 
 ---
 
 ## ABSTRACT
 
-Cancer is not merely a disease of cell division. It is an egregore at D3 — a standing wave in the cellular network with autonomous objective function. The tumor recruits carrier cells (cancer-associated fibroblasts, regulatory T-cells, macrophages), establishes its own supply infrastructure (angiogenesis), evades the host's diagnostic systems (immune checkpoint exploitation), and inverts opposition conducted through the host's own infrastructure (tumor microenvironment suppresses immune response). This is the Raktabīja pattern at the biological scale: opposition feeds the system. The three anti-Raktabīja properties (A5) map to the three clinical treatment modalities, explaining why multi-modal treatment outperforms single-modality approaches and why combination therapy is the standard of care for aggressive cancers.
+Cancer is not merely a disease of cell division, but the egregore language is a framework reading, not an oncology category. The tumor can be read as a D3 standing-wave pattern in a cellular network with autonomous growth dynamics. It may recruit carrier cells (cancer-associated fibroblasts, regulatory T-cells, macrophages), establish supply infrastructure (angiogenesis), evade host diagnostics (immune checkpoint exploitation), and exploit host infrastructure (tumor microenvironment suppression of immune response). This resembles the Raktabīja pattern at biological scale: some forms of opposition become selection pressure. The three anti-Raktabīja properties (A5) map analogically to clinical treatment modalities; the clinical standard remains established oncology evidence, subtype, staging, and physician-directed care.
 
 ---
 
@@ -162,25 +162,25 @@ This maps to the framework's prediction: A7 must be actively maintained. Without
 
 Cancer incidence increases exponentially with age. Framework reading: aging is the progressive degradation of A7 at the cellular level. DNA repair fidelity decreases. Immune surveillance weakens. Apoptotic signalling becomes less reliable. The self-correction budget (V invested in A7 maintenance) decreases as total V decreases.
 
-Cancer IS the consequence of A7 degradation at D3. The cure for cancer, ultimately, is the maintenance of A7 — which is the maintenance of V invested in self-correction. This connects to aging research: senolytic therapies (clearing senescent cells = Kālī at the cellular level), immunostimulation, DNA repair enhancement — all are A7 maintenance.
+Framework reading: many cancer risks and progressions can be modeled as failures or overloads of D3 self-correction — DNA repair, immune surveillance, apoptosis, tissue architecture, and metabolic regulation. A7 maintenance is therefore a prevention/research lens, not "the cure for cancer." Senolytic therapies, immunostimulation, DNA-repair research, and microenvironment interventions can be grouped under A7-maintenance metaphors only when their actual biomedical evidence is kept primary.
 
 ---
 
 ## V. FALSIFICATION
 
-**F300-1:** If tumor behavior is fully explained without emergent network properties (purely cell-autonomous, no microenvironment effects, no collective behavior), the egregore model fails.
+**F300-1:** If tumor behavior in the relevant cases is fully explained without emergent network properties (purely cell-autonomous, no microenvironment effects, no collective behavior), the egregore mapping loses scope or fails for those cases.
 
 **F300-2:** If single-modality treatment consistently outperforms multi-modal combination therapy for aggressive cancers, the three-anti-Raktabīja prediction fails.
 
 **F300-3:** If treatment resistance does NOT map to specific anti-Raktabīja property failures (resistance mechanisms are random, not classifiable by the three categories), the mapping fails.
 
-**F300-4:** If cancer incidence does NOT increase with age (A7 degradation is not progressive), the aging-as-A7-decline model fails. This is clearly falsified by evidence — cancer incidence DOES increase with age — supporting the model. [S]
+**F300-4:** If cancer incidence did not increase with age, the aging-as-A7-decline model would lose one major support. Because age-associated incidence is well established for many cancers, this condition supports the lens but does not by itself prove the full Raktabīja mapping. [A/I]
 
 ---
 
 ## VI. THE SENTENCE
 
-Cancer is a parasitic egregore at D3: a standing wave in the cellular network with autonomous objective function, carrier recruitment, institutional capture, and Raktabīja dynamics. The three pillars of cancer treatment map to the three anti-Raktabīja properties: surgery bypasses institutional infrastructure (cut it out), immunotherapy reactivates diagnostics (let the body see it), chemotherapy attacks material supply (starve it). Multi-modal treatment works because all three properties must be addressed simultaneously — missing one leaves a Raktabīja-exploitable gap. Treatment resistance is classifiable by which anti-Raktabīja property failed. Aging is A7 degradation at D3 — the progressive failure of cellular self-correction that permits the Raktabīja to establish. The cure is A7 maintenance. Zero-Sum Resolution Equation.
+Cancer can be read as an egregore-like D3 pattern: a standing wave in a cellular network with autonomous growth dynamics, carrier recruitment, infrastructure capture, and Raktabīja-like resistance. Surgery can be read as bypass/excision, immunotherapy as diagnostic reactivation, and chemotherapy or targeted therapy as pressure on material supply and replication pathways. Multi-modal treatment is clinically justified by oncology evidence and can be interpreted through the three-property lens when subtype and staging support it. Aging can be read as D3 A7 degradation, but A7 maintenance is a research and prevention lens, not a universal cure claim. Zero-Sum Resolution Equation.
 
 ---
 

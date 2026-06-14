@@ -32,6 +32,16 @@ const modeLabels = {
   ccc: "/6 CCC return",
   convergence: "/6 CCC return"
 };
+const modeInvariants = {
+  titans: "s_left + s_right = 0",
+  logline: "x·1/x = 1",
+  muLimit: "rank +1 at μ",
+  bloch: "φ·ν = 1",
+  horn: "R/r = 1/γ",
+  burrisphere: "φ·ν = 1 · B=sinθ",
+  ccc: "/6 ≡ /0",
+  convergence: "/6 ≡ /0"
+};
 const animationMode = page.animationMode === "convergence"
   ? "ccc"
   : (page.animationMode || "model");
@@ -250,6 +260,7 @@ function ensureInstrumentOverlay(mode = animationMode) {
     <div class="instrument-scale y"></div>
     <div class="instrument-telemetry">
       <span data-field="mode">${modeLabels[mode] || mode}</span>
+      <span data-field="invariant">${modeInvariants[mode] || "calibrated"}</span>
       <span data-field="fps">-- fps</span>
       <span data-field="sample">sample --</span>
       <span data-field="time">t+0.00s</span>
@@ -294,6 +305,7 @@ function ensureInstrumentControls() {
     controls.innerHTML = `
       <button type="button" data-action="hold" aria-pressed="false">HOLD</button>
       <button type="button" data-action="step">STEP</button>
+      <button type="button" data-action="zero">ZERO</button>
       <label>
         <span>rate</span>
         <input type="range" min="25" max="150" step="5" value="100" aria-label="simulation rate" />
@@ -305,6 +317,7 @@ function ensureInstrumentControls() {
     root: controls,
     hold: controls.querySelector('[data-action="hold"]'),
     step: controls.querySelector('[data-action="step"]'),
+    zero: controls.querySelector('[data-action="zero"]'),
     rate: controls.querySelector('input[type="range"]')
   };
 }
@@ -367,6 +380,14 @@ function drawTitanCalculator(time = 0) {
       paused = true;
       stepSeconds += 1 / 12;
       syncInstrumentControls(playback, paused);
+    });
+    playback.zero.addEventListener("click", () => {
+      simTime = 0;
+      stepSeconds = 0;
+      sampleClock.accumulator = 0;
+      sampleClock.index = 0;
+      visual.dispatchEvent(new CustomEvent("instrument:zero"));
+      setInstrumentMetric(visual.dataset.instrumentMetric || "", "zeroed", "phase 0.00");
     });
     playback.rate.addEventListener("input", () => {
       setInstrumentMetric(visual.dataset.instrumentMetric || "", "rate " + (parseFloat(playback.rate.value) / 100).toFixed(2) + "x", visual.dataset.instrumentPhase || "");
@@ -507,11 +528,7 @@ function drawTitanCalculator(time = 0) {
     if (!REDUCED_MOTION) requestAnimationFrame(draw);
   }
 
-  if (REDUCED_MOTION) {
-    draw(0);
-  } else {
-    requestAnimationFrame(draw);
-  }
+  draw(0);
 }
 
 function line(points, color = 0xffffff, opacity = 1) {
@@ -814,6 +831,12 @@ function buildScene(mode, scene) {
     const projectionTrace = line([new THREE.Vector3(-1.8, 0, 0)], 0x42a5f5, 0.22);
     const liftSamples = [];
     const projectionSamples = [];
+    if (visual) {
+      visual.addEventListener("instrument:zero", () => {
+        liftSamples.length = 0;
+        projectionSamples.length = 0;
+      });
+    }
     root.add(line([
       new THREE.Vector3(-1.8, 0, 0),
       new THREE.Vector3(0, 1.6, 0),
@@ -878,6 +901,12 @@ function buildScene(mode, scene) {
     const landingTrace = line([new THREE.Vector3(2 * r, -r, 0)], 0x42a5f5, 0.28);
     const surfaceSamples = [];
     const landingSamples = [];
+    if (visual) {
+      visual.addEventListener("instrument:zero", () => {
+        surfaceSamples.length = 0;
+        landingSamples.length = 0;
+      });
+    }
     root.add(surfaceTrace, landingTrace, projectionRay, pMarker, landMarker);
     const readout = makeReadout();
     if (readout) {
@@ -1096,6 +1125,13 @@ function buildScene(mode, scene) {
 
     // the two spiral trails traced by the landings — reciprocal radii
     const TRAIL = 150, phiTrail = [], nuTrail = [], pointTrail = [];
+    if (visual) {
+      visual.addEventListener("instrument:zero", () => {
+        phiTrail.length = 0;
+        nuTrail.length = 0;
+        pointTrail.length = 0;
+      });
+    }
     const phiLine = line([new THREE.Vector3(U, -r, 0)], 0xffeb3b, 0.24);
     const nuLine = line([new THREE.Vector3(U, r, 0)], 0x42a5f5, 0.24);
     const pointLine = line([new THREE.Vector3(r, 0, 0)], 0xffffff, 0.18);
@@ -1390,6 +1426,14 @@ async function boot() {
         stepSeconds += 1 / 12;
         syncInstrumentControls(playback, paused);
       });
+      playback.zero.addEventListener("click", () => {
+        simTime = 0;
+        stepSeconds = 0;
+        sampleClock.accumulator = 0;
+        sampleClock.index = 0;
+        visual.dispatchEvent(new CustomEvent("instrument:zero"));
+        setInstrumentMetric(visual.dataset.instrumentMetric || "", "zeroed", "phase 0.00");
+      });
       playback.rate.addEventListener("input", () => {
         setInstrumentMetric(visual.dataset.instrumentMetric || "", "rate " + (parseFloat(playback.rate.value) / 100).toFixed(2) + "x", visual.dataset.instrumentPhase || "");
       });
@@ -1437,23 +1481,28 @@ async function boot() {
       requestAnimationFrame(animate);
     }
 
-    if (REDUCED_MOTION) {
-      // static render: one frame now, re-render only on interaction/resize
-      update(1.2); // pose the morphing/orbiting models at a representative frame
-      visual.dataset.instrumentSample = "sample static";
-      resize();
+    function renderInstrumentFrame(t, fpsValue) {
+      update(t);
+      controls.update();
       renderer.render(scene, camera);
-      updateInstrumentOverlay(overlay, 1.2, 0);
-      controls.addEventListener("change", () => renderer.render(scene, camera));
-      window.addEventListener("resize", () => {
-        resize();
-        renderer.render(scene, camera);
-      });
-      return;
+      updateInstrumentOverlay(overlay, t, fpsValue);
     }
 
     resize();
     window.addEventListener("resize", resize);
+    visual.dataset.instrumentSample = REDUCED_MOTION ? "sample static" : sampleClock.label();
+    renderInstrumentFrame(REDUCED_MOTION ? 1.2 : 0, 0);
+
+    if (REDUCED_MOTION) {
+      // static render: one calibrated frame now, re-render only on interaction/resize
+      controls.addEventListener("change", () => renderInstrumentFrame(1.2, 0));
+      window.addEventListener("resize", () => {
+        resize();
+        renderInstrumentFrame(1.2, 0);
+      });
+      return;
+    }
+
     requestAnimationFrame(animate);
   } catch (error) {
     fail(error);

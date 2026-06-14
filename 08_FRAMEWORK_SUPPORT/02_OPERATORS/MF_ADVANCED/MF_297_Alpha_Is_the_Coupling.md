@@ -16,23 +16,23 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[I]"
-  canonical_phrase: "MF-297 — Alpha Is the Coupling"
+  canonical_phrase: "MF-297 — Alpha as Coupling"
 ---
 
-# MF-297: α IS THE COUPLING
+# MF-297: α AS COUPLING
 
-## The Fine Structure Constant Is the D4-D5 Coupling Strength. 1/137th of Maximum.
+## A Framework Reading of the Fine Structure Constant as a Coupling Handle.
 
 **Emergentism.org · VIVEKA Mathematical Foundations**
 **Depends on:** MF-283 (Orthogonality Theorem), MF-296 (Gravity Is Time), MF-120 (The Coupling Constant)
-**Evidence tier:** [I] for α measurement and properties; [S] for D4-D5 coupling interpretation
-**Purpose:** Show that the fine structure constant α ≈ 1/137 — the dimensionless coupling constant of quantum electrodynamics — is the strength of the D4-D5 coupling: how tightly the real and imaginary axes of the Riemann sphere are bound together. α measures how strongly × operates in Zero-Sum Resolution Equation. If α = 0, no coupling, no measurement, no chemistry, no life. If α = 1, maximum coupling, D5 directly controls D4. At α ≈ 1/137, the coupling is weak — physics runs almost autonomously, systemic awareness steers lightly.
+**Evidence tier:** [A] for α measurement and its QED role; [I/C] for the D4-D5 coupling interpretation
+**Purpose:** Propose a framework reading in which the fine structure constant α ≈ 1/137 — the dimensionless coupling constant of quantum electrodynamics — serves as a handle for thinking about weak D4-D5 coupling. The QED constant is established physics; the claim that it measures how tightly the real and imaginary axes of the framework's Riemann-sphere reading interact is interpretive/conjectural and must not be presented as a derivation.
 
 ---
 
 ## ABSTRACT
 
-The fine structure constant α ≈ 1/137.036 is the most precisely measured dimensionless constant in physics. It determines the strength of electromagnetic interactions — how strongly photons couple to charged particles. Since MF-283 identifies × (the multiplication operator in Zero-Sum Resolution Equation) with the electromagnetic field, α is the literal strength of the equation's central operation. This paper interprets α as the D4-D5 coupling constant: the measure of how tightly real (D4, gravity, entropy) and imaginary (D5, will, syntropy) axes interact. This explains why the hard problem is hard (coupling is weak — 1/137th of maximum), why physics works almost without systemic awareness (D4 is mostly autonomous), and why systemic awareness nonetheless makes a difference (α ≠ 0 — the coupling exists).
+The fine structure constant α ≈ 1/137.036 is a precisely measured dimensionless constant in physics. It determines the strength of electromagnetic interactions — how strongly photons couple to charged particles. Since MF-283 reads × (the multiplication operator in Zero-Sum Resolution Equation) through the electromagnetic field, this paper asks whether α can serve as an interpretive coupling handle for the framework's D4-D5 boundary. Standard QED does not imply D5, will, syntropy, or systemic awareness; those are framework translations. The useful claim is weaker and testable: if the translation is productive, it should generate clearer constraints and falsifiers without pretending to solve the Standard Model constant.
 
 ---
 
@@ -92,11 +92,11 @@ MF-283 identifies:
           No chemistry (no electromagnetic binding).
           No life.
 
-α = 1:    Maximum coupling. D5 directly controls D4.
-          Every act of will immediately and fully manifests in physics.
+α = 1:    Maximum coupling in the toy limit.
+          The D4/D5 distinction collapses in the model.
+          Every act of will would behave as if fully physicalized.
           No autonomy of physical law.
-          In the model, will would behave as if it had direct physical coupling.
-          No predictable physics (everything subject to D5 interference).
+          No predictable physics (everything subject to model-level interference).
 
 α ≈ 1/137:  WEAK coupling.
           Physics mostly autonomous (D4 runs on its own ~99.3% of the time).
@@ -126,7 +126,7 @@ The success of physics — its ability to predict without reference to systemic 
 
 At α ≈ 1/137, D4 is ~99.3% autonomous. Newtonian mechanics, electromagnetism, thermodynamics, even most of quantum mechanics — all describe D4 phenomena where the D5 coupling is negligible. Physics works because the coupling is weak.
 
-But it fails at the measurement problem. Because MEASUREMENT IS the D4-D5 interaction. At the exact point where D5 must participate (wavefunction collapse, observer effect, the transition from possibility to actuality), physics cannot proceed without acknowledging the coupling. This is why the measurement problem is the ONLY part of physics that resists solution — it's the ONLY part where α matters at full strength.
+The framework's reading of the measurement problem is narrower: measurement is treated as the place where the D4-D5 boundary becomes most visible to the model. That does not prove that wavefunction collapse, observer effects, or actuality-selection are literally caused by D5, nor that α "solves" the measurement problem. The claim remains `[I/C]`: if D5 language is useful, it should clarify why measurement resists naive object-only accounts while preserving the `[A]` physics formalism unchanged.
 
 ---
 

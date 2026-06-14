@@ -541,7 +541,7 @@ h3 {
   flex-wrap: wrap;
   gap: 6px;
   align-items: center;
-  max-width: calc(100% - 310px);
+  max-width: calc(100% - 360px);
   color: rgba(243, 244, 246, 0.76);
   font: 700 10px/1 "Roboto Mono", ui-monospace, Menlo, monospace;
   font-variant-numeric: tabular-nums;
@@ -562,6 +562,10 @@ h3 {
   color: #FFEB3B;
 }
 
+.instrument-telemetry span[data-field="invariant"] {
+  color: rgba(243, 244, 246, 0.92);
+}
+
 .instrument-telemetry span[data-field="phase"] {
   color: #4CAF50;
 }
@@ -576,7 +580,7 @@ h3 {
   right: 13px;
   z-index: 6;
   display: grid;
-  grid-template-columns: auto auto minmax(104px, 140px);
+  grid-template-columns: auto auto auto minmax(104px, 140px);
   gap: 6px;
   align-items: center;
   color: rgba(243, 244, 246, 0.78);
@@ -999,7 +1003,7 @@ noscript {
     right: 0.75rem;
     left: 0.75rem;
     bottom: 0.75rem;
-    grid-template-columns: auto auto minmax(0, 1fr);
+    grid-template-columns: auto auto auto minmax(0, 1fr);
     font-size: 8px;
   }
 

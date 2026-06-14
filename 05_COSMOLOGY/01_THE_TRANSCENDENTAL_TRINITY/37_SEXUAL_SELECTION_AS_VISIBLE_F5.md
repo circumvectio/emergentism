@@ -204,7 +204,7 @@ The same dyadic structure operates one cascade-dimension up. From [Doc 36](36_TH
 
 ### VI.a Costly memetic signals
 
-Religions that demand expensive ritual (fasts, pilgrimages, tithes, martyrdom risk) outcompete cheap-signal religions on retention. Zahavi's handicap principle applied to memes: **only a meme whose hosts can afford the V-cost of its ritual is signalling honest φ.** The framework predicts (and observes) that costly-ritual religions persist while low-cost-syncretic religions dissolve.
+Religions that demand expensive ritual (fasts, pilgrimages, tithes, martyrdom risk) can be read through costly-signalling theory as higher-retention systems, but the framework does not treat this as a proved universal law. Zahavi's handicap principle applied to memes gives the `[I]` hypothesis: costly ritual may function as an honest φ signal when hosts can bear the V-cost. The prediction is directional and testable — compare retention, transmission, and dissolution against low-cost alternatives while controlling for coercion, institutions, demography, and material incentives.
 
 ### VI.b Memetic mate-choice
 
