@@ -348,14 +348,11 @@ function select(i, manual = false){
         'θ=' + p.phi.toFixed(1) + '° · φ=' + phi.toFixed(2) + ' · ν=' + nu.toFixed(2) + ' · B=' + balance.toFixed(3) + '\n' +
         '|φν−1|=' + reciprocalResidual.toExponential(1)
       : 'BURRISPHERE INSTRUMENT\n' +
-        p.L + ' · ' + p.op + ' · ' + p.ology + '\n' +
-        'θ = ' + p.phi.toFixed(1) + '° · φ = ' + phi.toFixed(2) + ' · ν = ' + nu.toFixed(2) + ' · φν = ' + (phi * nu).toFixed(3) + '\n' +
-        'B = sinθ = ' + balance.toFixed(3) + ' · |φν−1| = ' + reciprocalResidual.toExponential(1) + ' · |1−B| = ' + balanceError.toFixed(3) + '\n' +
-        'selected row = ' + i + '/6 · ' + (scanRunning ? 'SCAN' : 'HOLD') + ' · rate = ' + rateValue().toFixed(2) + 'x\n' +
-        'frame = ' + (REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps')) + ' · calibrated latitude rings visible\n' +
-        'strip chart = sampled B history across selected positions\n' +
-        'sample clock = ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · fixed Δt = ' + (SAMPLE_MS / 1000).toFixed(3) + 's\n' +
-        'tier: [S] sphere chart; [I] operator reading';
+        p.L + ' · ' + p.op + ' · ' + p.ology + ' · row ' + i + '/6\n' +
+        'θ=' + p.phi.toFixed(1) + '° · φ=' + phi.toFixed(2) + ' · ν=' + nu.toFixed(2) + ' · φν=' + (phi * nu).toFixed(3) + '\n' +
+        'B=sinθ ' + balance.toFixed(3) + ' · |φν−1|=' + reciprocalResidual.toExponential(1) + ' · |1−B|=' + balanceError.toFixed(3) + '\n' +
+        'clock ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · ' + (scanRunning ? 'SCAN' : 'HOLD') + ' · rate ' + rateValue().toFixed(2) + 'x\n' +
+        'tier: [S] sphere chart · [I] operator reading';
   }
   markers.forEach((m, k) => m.scale.setScalar(k === i ? 1.5 : 1));
   const selected = markers[i].position.clone();

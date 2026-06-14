@@ -1033,6 +1033,11 @@ function makeReadout() {
   return el;
 }
 
+function isCompactInstrument(width = 0) {
+  const measured = width || (visual ? visual.getBoundingClientRect().width : window.innerWidth);
+  return measured < 700;
+}
+
 // Morphing horn torus driven by one-sided RAPIDITY. At w = 0 it is the horn
 // touch (R = rt). As w grows, v/c = tanh(w) -> 1 and the major radius R tends
 // to 0: the torus converges asymptotically toward the sphere/light boundary.
@@ -1180,12 +1185,15 @@ function buildScene(mode, scene) {
         "phase " + logPhase.toFixed(2),
         "σ x·1/x " + reciprocalResidual.toExponential(1)
       );
-      if (readout) readout.textContent =
-        "SUDA'S LINE · in log coordinates the ONE is the centre\n" +
-        "x = " + x.toFixed(2) + "   1/x = " + (1 / x).toFixed(2) + "   x · 1/x = 1\n" +
-        "s = log₂ x = " + s.toFixed(2) + "   B = sech(ln x) = " + balance.toFixed(3) + "   E = (ln x)² = " + E.toFixed(2) + "\n" +
-        "strip chart: sampled B history · σ(x·1/x−1) = " + reciprocalResidual.toExponential(1) + "\n" +
-        "three charts · one centre:  x   ·   s = log x   ·   u = (x−1)/(x+1) = " + u.toFixed(2);
+      if (readout) readout.textContent = isCompactInstrument()
+        ? "D1 RECIPROCAL LINE · " + (sampled ? "SAMPLE" : "HOLD") + "\n" +
+          "s=" + s.toFixed(2) + " · x=" + x.toFixed(2) + " · 1/x=" + (1 / x).toFixed(2) + "\n" +
+          "B=" + balance.toFixed(3) + " · E=" + E.toFixed(2) + " · u=" + u.toFixed(2) + "\n" +
+          "σ(x·1/x−1)=" + reciprocalResidual.toExponential(1)
+        : "D1 RECIPROCAL LINE · LOG-COORDINATE ASSAY\n" +
+          "s=log₂x " + s.toFixed(2) + " · x " + x.toFixed(2) + " · 1/x " + (1 / x).toFixed(2) + " · x·1/x 1\n" +
+          "B=sech(lnx) " + balance.toFixed(3) + " · E=(lnx)² " + E.toFixed(2) + " · u=(x−1)/(x+1) " + u.toFixed(2) + "\n" +
+          "residual σ(x·1/x−1)=" + reciprocalResidual.toExponential(1) + " · chart: sampled B history";
     });
   }
 
@@ -1255,12 +1263,15 @@ function buildScene(mode, scene) {
         "phase " + muPhase.toFixed(2),
         "σ projection " + projectionResidual.toExponential(1)
       );
-      if (readout) readout.textContent =
-        "D2 μ-LIMIT · line-to-plane assay\n" +
-        "sample λ = " + p.toFixed(2) + " · lift μ = " + lift.toFixed(2) + "\n" +
-        "constraint: a line cannot inspect its own off-axis curvature\n" +
-        "strip chart: sampled μ lift history\n" +
-        "instrument reading: local coordinate gains a second degree of freedom";
+      if (readout) readout.textContent = isCompactInstrument()
+        ? "D2 μ-LIMIT · LIFT ASSAY\n" +
+          "λ=" + p.toFixed(2) + " · μ=" + lift.toFixed(2) + "\n" +
+          "σ projection=" + projectionResidual.toExponential(1) + "\n" +
+          "state: off-axis coordinate sampled"
+        : "D2 μ-LIMIT · LINE-TO-PLANE ASSAY\n" +
+          "λ=" + p.toFixed(2) + " · μ=" + lift.toFixed(2) + " · projection σ=" + projectionResidual.toExponential(1) + "\n" +
+          "state: local coordinate gains one off-axis degree of freedom\n" +
+          "chart: sampled μ lift history";
     });
   }
 
@@ -1341,11 +1352,14 @@ function buildScene(mode, scene) {
         "phase " + projectionPhase.toFixed(2),
         "σ φν " + reciprocalResidual.toExponential(1) + " · ρ " + landingResidual.toExponential(1)
       );
-      if (readout) readout.textContent =
-        "D3 RIEMANN/BLOCH · tangent projection\n" +
-        "θ = " + (th * 180 / Math.PI).toFixed(1) + "° · φ = cot(θ/2) = " + phi.toFixed(2) + "\n" +
-        "ν = tan(θ/2) = " + nu.toFixed(2) + " · φ·ν = 1 · B=sinθ " + balance.toFixed(3) + "\n" +
-        "landing ρ = " + landingRadius.toFixed(2) + " · expected 2rφ = " + expectedLandingRadius.toFixed(2) + " · σρ " + landingResidual.toExponential(1);
+      if (readout) readout.textContent = isCompactInstrument()
+        ? "D3 TANGENT PROJECTION\n" +
+          "θ=" + (th * 180 / Math.PI).toFixed(1) + "° · φ=" + phi.toFixed(2) + " · ν=" + nu.toFixed(2) + "\n" +
+          "B=" + balance.toFixed(3) + " · ρ=" + landingRadius.toFixed(2) + " · σρ=" + landingResidual.toExponential(1)
+        : "D3 RIEMANN/BLOCH · TANGENT PROJECTION\n" +
+          "θ=" + (th * 180 / Math.PI).toFixed(1) + "° · φ=cot(θ/2) " + phi.toFixed(2) + " · ν=tan(θ/2) " + nu.toFixed(2) + " · φν=1\n" +
+          "B=sinθ " + balance.toFixed(3) + " · landing ρ " + landingRadius.toFixed(2) + " · expected 2rφ " + expectedLandingRadius.toFixed(2) + "\n" +
+          "residuals: σφν " + reciprocalResidual.toExponential(1) + " · σρ " + landingResidual.toExponential(1);
     });
   }
 
@@ -1409,11 +1423,6 @@ function buildScene(mode, scene) {
         clearStripChart(properTimeChart);
       });
     }
-    function bar(frac, color) {
-      const w = Math.max(0, Math.min(1, frac)) * 100;
-      return "<span style='display:inline-block;width:74px;height:7px;border:1px solid #3a3a3a;border-radius:4px;vertical-align:-1px;overflow:hidden'>" +
-        "<span style='display:block;height:100%;width:" + w.toFixed(0) + "%;background:" + color + "'></span></span>";
-    }
     dyn.push(function (t, sampled) {
       let w;
       if (userActive && slider) {
@@ -1456,18 +1465,23 @@ function buildScene(mode, scene) {
         "phase " + clamp01(w / W_MAX).toFixed(2),
         "σ R/r " + morphResidual.toExponential(1)
       );
-      if (readout) readout.innerHTML =
-        "<div style='color:#FFEB3B;font-weight:800;letter-spacing:0;margin-bottom:6px'>D4 HORN · RAPIDITY 0 → ∞</div>" +
-        "w = " + w.toFixed(2) + " · β = " + vc.toFixed(4) + " " + bar(aB, "#42A5F5") + "<br>" +
-        "γ = cosh(w) = " + gamma.toFixed(1) + " · E/mc² = γ " + bar(gamma / G_MAX, "#FFEB3B") + "<br>" +
-        "R/r = 1/γ = " + (1 / gamma).toFixed(3) + " · dτ/dt<br>" +
-        "<span style='color:#9CA3AF'>blue shell = sampled sphere asymptote; finite frame never reaches the limit.</span><br>" +
-        "<span style='color:#9CA3AF'>strip chart = sampled proper-time ratio dτ/dt.</span><br>" +
-        (!moving
-          ? "<span style='color:#FFEB3B'>w=0 · HORN touch (γ=1, R=r) — rest energy E = mc²</span>"
+      if (readout) {
+        const limitState = !moving
+          ? "rest: E=mc² · R=r"
           : gamma > 20
-            ? "<span style='color:#FFEB3B'>w→∞ · R/r→0 · sphere/light limit approached only as γmc² diverges</span>"
-            : "<span style='color:#9CA3AF'>approach · β tends to c · acceleration work appears as <b style='color:#FFEB3B'>mass-energy</b></span>");
+            ? "asymptote: γmc² diverges"
+            : "approach: β tends to c";
+        readout.textContent = isCompactInstrument()
+          ? "D4 HORN · RAPIDITY 0→∞\n" +
+            "w=" + w.toFixed(2) + " · β=" + vc.toFixed(4) + " · γ=" + gamma.toFixed(1) + "\n" +
+            "R/r=" + (1 / gamma).toFixed(3) + " · dτ/dt=" + (1 / gamma).toFixed(3) + "\n" +
+            "σ(R/r)=" + morphResidual.toExponential(1) + " · " + limitState
+          : "D4 HORN · RAPIDITY ASSAY\n" +
+            "w=" + w.toFixed(2) + " · β=" + vc.toFixed(4) + " · γ=cosh(w)=" + gamma.toFixed(1) + " · E/mc²=γ\n" +
+            "R/r=1/γ=" + (1 / gamma).toFixed(3) + " · dτ/dt=" + (1 / gamma).toFixed(3) + " · k=e^w=" + k.toFixed(2) + "\n" +
+            "residual σ(R/r)=" + morphResidual.toExponential(1) + " · chart: sampled proper-time ratio\n" +
+            "limit state: " + limitState + " · finite frame never reaches β=1";
+      }
     });
   }
 
@@ -1685,14 +1699,18 @@ function buildScene(mode, scene) {
         "phase " + (((psi % TAU) + TAU) % TAU / TAU).toFixed(2),
         "σ φν " + reciprocalResidual.toExponential(1) + " · ray " + rayResidual.toExponential(1)
       );
-      if (readout) readout.textContent =
-        "D5 BURRISPHERE · DUAL-PROJECTION ASSAY\n" +
-        "θ " + (theta * 180 / Math.PI).toFixed(0) + "°" + (thetaUserActive ? " held" : " sweep") + " · φ " + phi.toFixed(2) + " · ν " + nu.toFixed(2) + " · φ·ν=1\n" +
-        "B=sinθ " + balance.toFixed(3) + " · U_B " + finiteCouplingProxy.toFixed(3) + " · γ=1/B " + energyCost.toFixed(2) + " · |lnφ| " + imbalance.toFixed(2) + "\n" +
-        "residuals: σ(φν) " + reciprocalResidual.toExponential(1) + " · σ(ray) " + rayResidual.toExponential(1) + "\n" +
-        "strip chart: sampled bridge viability U_B over clocked frames\n" +
-        "finite action bridge: score P_node = Φ_action × V_action only after the lowercase chart is read as D5 sight and D4 means\n" +
-        "quadrant " + q + " · " + opName + " · " + moveName;
+      if (readout) readout.textContent = isCompactInstrument()
+        ? "D5 BURRISPHERE · DUAL PROJECTION\n" +
+          "θ=" + (theta * 180 / Math.PI).toFixed(0) + "° " + (thetaUserActive ? "hold" : "sweep") + " · φ=" + phi.toFixed(2) + " · ν=" + nu.toFixed(2) + "\n" +
+          "B=" + balance.toFixed(3) + " · U_B=" + finiteCouplingProxy.toFixed(3) + " · γ≈" + energyCost.toFixed(2) + "\n" +
+          "σφν=" + reciprocalResidual.toExponential(1) + " · σray=" + rayResidual.toExponential(1) + "\n" +
+          "quadrant " + q + " · " + opName
+        : "D5 BURRISPHERE · DUAL-PROJECTION ASSAY\n" +
+          "θ=" + (theta * 180 / Math.PI).toFixed(0) + "° " + (thetaUserActive ? "hold" : "sweep") + " · φ=" + phi.toFixed(2) + " · ν=" + nu.toFixed(2) + " · φν=1\n" +
+          "B=sinθ " + balance.toFixed(3) + " · U_B " + finiteCouplingProxy.toFixed(3) + " · γ≈1/B " + energyCost.toFixed(2) + " · |lnφ| " + imbalance.toFixed(2) + "\n" +
+          "residuals: σφν " + reciprocalResidual.toExponential(1) + " · σray " + rayResidual.toExponential(1) + " · chart: sampled bridge viability\n" +
+          "state: quadrant " + q + " · " + opName + " · " + moveName + "\n" +
+          "rule: P_node = Φ_action × V_action only after sight and means are jointly read";
     });
   }
 

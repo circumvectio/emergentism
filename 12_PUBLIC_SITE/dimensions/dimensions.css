@@ -1046,7 +1046,7 @@ noscript {
   }
 
   body.dimension-page .model-readout {
-    bottom: 5.65rem !important;
+    bottom: 5.35rem !important;
   }
 
   .model-readout {
@@ -1055,9 +1055,15 @@ noscript {
     top: auto !important;
     bottom: 3.8rem !important;
     max-width: none !important;
-    max-height: 32vh;
+    max-height: 26vh;
     overflow: hidden;
     font-size: 9.5px !important;
     line-height: 1.45 !important;
+  }
+
+  .instrument-telemetry span[data-field="time"],
+  .instrument-telemetry span[data-field="sample"],
+  .instrument-telemetry span[data-field="state"] {
+    display: none;
   }
 }

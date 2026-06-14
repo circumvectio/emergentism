@@ -1837,7 +1837,7 @@ pre.glyph-block {
     top: auto !important;
     bottom: 3.8rem !important;
     max-width: none !important;
-    max-height: 32vh;
+    max-height: 26vh;
     font-size: 9.5px !important;
     line-height: 1.45 !important;
   }
@@ -1885,6 +1885,12 @@ pre.glyph-block {
     font-size: 8px;
   }
 
+  .instrument-telemetry span[data-field="time"],
+  .instrument-telemetry span[data-field="sample"],
+  .instrument-telemetry span[data-field="state"] {
+    display: none;
+  }
+
   .instrument-controls {
     top: auto;
     right: 9px;
@@ -1905,7 +1911,7 @@ pre.glyph-block {
 
   body.dimension-page .model-readout,
   body.soul-loop-instrument .model-readout {
-    bottom: 5.65rem !important;
+    bottom: 5.35rem !important;
   }
 
   body.soul-loop-instrument .visual-labels .label {
@@ -2493,7 +2499,7 @@ button.nav:hover {
     right: 18px;
     top: 86px;
     width: auto;
-    max-height: 118px;
+    max-height: 106px;
     overflow: hidden;
     font-size: 9.5px;
   }
@@ -2636,7 +2642,7 @@ button.nav:hover {
     top: auto;
     bottom: 92px;
     width: auto;
-    max-height: min(310px, calc(100vh - 292px));
+    max-height: min(232px, calc(100vh - 314px));
     overflow: auto;
     padding: 10px 12px;
     font-size: 11px;
@@ -2649,6 +2655,9 @@ button.nav:hover {
   }
   body.sphere-instrument #panel .row {
     padding: 4px 0;
+  }
+  body.sphere-instrument #panel .row:nth-last-of-type(-n+2) {
+    display: none;
   }
   body.sphere-instrument .title,
   body.sphere-instrument .legend-note {
