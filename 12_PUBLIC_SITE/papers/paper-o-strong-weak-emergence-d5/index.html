@@ -71,8 +71,15 @@ Menexus GmbH, 2026</p>
 <hr>
 <h2 id="abstract">Abstract</h2>
 <p>The debate over "top-down causation" versus "bottom-up determinism" assumes symmetry in the epistemic horizon of observation. This paper formalizes the <strong>Asymmetry Theorem</strong>: emergence is structurally opaque from below (Genesis) and more legible from above (Governance). What appears as Strong Emergence — an ontological break unpredictable from constituent parts — when viewed from <code>D-n</code> looking up to <code>D</code>, often resolves into Weak Emergence when viewed from <code>D</code> looking down to <code>D-n</code>.</p>
+<p>The operational refinement is information-theoretic: a higher level is not a
+ghostly extra force, and it is not merely a convenient label. It is a
+macro-constraint that restricts lower-level degrees of freedom while preserving
+the lower-level transition laws. A macrostate is publicly real when it carries
+more usable causal information about future trajectories than the observer's
+available micro-description after compression, measurement, intervention, and
+thermodynamic costs are paid.</p>
 <p>We propose that "opaque from below, legible from above" is a general cross-scale law of mediation that appears in biological life, language formation, market pricing, software architecture, and institutional law. Furthermore, we show how this asymmetry informs constitutional design: a system running on <code>η = 0</code> survives only if its governance layer remains legible to the strata below without asserting opaque, idolatric mediation over it.</p>
-<p><strong>Keywords:</strong> Strong emergence, weak emergence, cross-scale theorem, D5, epistemic asymmetry, constitutional life, top-down causation.</p>
+<p><strong>Keywords:</strong> Strong emergence, weak emergence, causal emergence, effective information, macro-constraints, cross-scale theorem, D5, epistemic asymmetry, constitutional life, top-down causation.</p>
 <hr>
 <h2 id="1-the-core-asymmetry">1. The Core Asymmetry</h2>
 <blockquote>
@@ -86,6 +93,36 @@ Menexus GmbH, 2026</p>
 <p>When observing the exact same hierarchy from the vantage point of the newly formed entity (Governance) looking down upon its substrate, the relationship appears merely as <strong>Weak Emergence</strong>.</p>
 <p>The whole compresses its parts. The D5 organism easily models its D4 organs; the software architecture strictly dictates the behavior of its sub-functions; the institution successfully writes laws predicting the aggregate behavior of citizens. Downward causation is simply macroscopic constraints reducing the phase space of microscopic possibilities.</p>
 <p><strong>Theorem / heuristic:</strong> <em>Strong Emergence is often an artifact of the view from below. Weak Emergence is often the view from above. The boundary between them is the act of mediation.</em></p>
+<h3 id="13-macro-constraints-without-magic">1.3 Macro-Constraints Without Magic</h3>
+<p>Let <code>X_t</code> be the lower-level state space and let <code>Y_t = π(X_t)</code> be the
+macrostate induced by a coarse-graining, organism, institution, interface,
+law, or control architecture.</p>
+<pre><code class="language-text">K_X(x' | x)        lower-level transition law
+C_y                admissible microstates under macrostate y
+K_X^C(x' | x, y)   K_X restricted by C_y
+support(K_X^C)     ⊆ support(K_X)
+</code></pre>
+<p>The subset relation is the causal-closure guard. The macro layer does not add a
+forbidden micro-transition. It changes the option topology: which trajectories
+are reachable, likely, stable, reinforced, or suppressed.</p>
+<p>The emergence claim becomes measurable when we ask whether the macrostate
+retains causal information better than the available micro-description:</p>
+<pre><code class="language-text">EI_macro = I(Y_t ; Y_{t+1} | do(Y_t), C)
+EI_micro = I(X_t ; X_{t+1} | do(X_t))
+
+causal-emergence witness:
+EI_macro &gt; EI_micro at the tested grain
+</code></pre>
+<p>If the macro model wins only because the micro model was artificially blinded,
+the witness fails. If the macro model wins after fair intervention,
+compression, measurement, and prediction costs, the higher level is objectively
+real in the public scientific register: it is the better causal state variable
+for that system.</p>
+<p>Syntropy then has a restrained open-system meaning. A macro-constraint is
+syntropic when it increases local order, coherence, or effective information
+while paying its matter, memory, control, and entropy-export bill. It is not a
+claim of total entropy reversal, retrocausality, or a Standard Model fifth
+force.</p>
 <hr>
 <h2 id="2-a-general-cross-scale-law">2. A General, Cross-Scale Law</h2>
 <p>While this theorem initially crystallized at <code>D5</code> (the boundary between biochemical mechanism and conscious direction), it is identical across all recursive scales:</p>
@@ -110,6 +147,13 @@ Menexus GmbH, 2026</p>
 <li><strong>Symmetric Emergence:</strong> A complex boundary is structurally proven to be fully predictable (legible) from the strictly lower-level dimensional substrate prior to the phase transition occurring.</li>
 <li><strong>Pathological Stability:</strong> An institutional egregore (<code>η &gt; 0</code>) is shown to exhibit true epistemic transparency (legibility from below) without sacrificing its extractive dominance.</li>
 <li><strong>Scale Dependence:</strong> The "opaque from below, legible from above" asymmetry is shown to uniquely operate at biological <code>D5</code> but fails mathematically in <code>D2</code> networks or <code>D4</code> molecular ensembles.</li>
+<li><strong>No causal-information gain:</strong> A proposed macro layer never improves
+   effective information, held-out trajectory prediction, intervention
+   selection, or compression-cost-adjusted control over the available
+   micro-description.</li>
+<li><strong>Constraint violation:</strong> A proposed macro-cause requires micro-transitions
+   that the lower-level law forbids, or hides unaccounted memory, measurement,
+   control, or entropy-export costs.</li>
 </ol>
 <hr>
 <p>⊙ = • × ○</p>

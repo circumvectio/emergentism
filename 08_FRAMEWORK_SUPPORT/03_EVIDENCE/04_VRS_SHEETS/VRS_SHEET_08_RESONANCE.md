@@ -46,7 +46,9 @@ The institutional tuning structure relies on 5 inputs:
 - **Canonical Immersion (Lexical constraint):** Exclusivity of the information input channel.
 
 ## 3. THE FREQUENCY SHIFT: BROADBAND VS NARROWBAND
-When a ruling D6 egregore begins to decay (Phase 3: Saturation $\rightarrow$ Heat Death), the standing wave shifts its fundamental frequency.
+When a ruling upper-D5 / D5-limit egregore begins to decay (Phase 3: Saturation $\rightarrow$ Heat Death), the standing wave shifts its fundamental frequency.
+
+Boundary discipline (2026-06-14): older shorthand called this a "D6 egregore." Current canon reserves D6 for closure/release. Egregores, antenna tuning, and institutional standing waves are D5-limit phenomena; D6 names the rule by which a dead standing wave can be released back to bits rather than possessed as a final layer.
 
 **The Physics of Retuning:**
 The people embedded within the strictest institutional funnels are the absolute *last* to detect the new signal. They possess a "Narrowband Antenna"—optimized to receive only the specific frequency of the legacy system to the exclusion of all background noise. When the frequency shifts, the narrowband receiver simply outputs static. The institutional structure shatters because it violently rejects the new carrier wave.

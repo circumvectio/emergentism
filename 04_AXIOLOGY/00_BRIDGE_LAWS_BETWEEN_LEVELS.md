@@ -94,6 +94,47 @@ Examples:
 
 This is the framework's non-magical version of downward causation.
 
+### Information-Theoretic Constraint Test
+
+This law becomes scientific only when the constraint is measurable.
+
+Let `X_t` be the lower-level microstate, let `π : X -> Y` be a coarse-graining
+or organizational map, and let `Y_t = π(X_t)` be the macrostate. A macro-level
+claim is admissible only if it can be stated as a constraint on lower-level
+degrees of freedom:
+
+```text
+K_X(x' | x)        = lower-level transition law
+C_y                = {x in X : π(x) = y}
+K_X^C(x' | x, y)   = K_X(x' | x) restricted to trajectories admissible under C_y
+support(K_X^C)     ⊆ support(K_X)
+```
+
+The inclusion is the no-magic clause. The macro-constraint may change which
+micro-trajectories are available, likely, stable, or reinforced, but it may not
+create a transition the lower-level law forbids.
+
+The public test is not whether the macro word feels useful. The public test is
+whether the macro description carries causal information that survives
+compression:
+
+```text
+EI_macro = I(Y_t ; Y_{t+1} | do(Y_t), C)
+EI_micro = I(X_t ; X_{t+1} | do(X_t))
+
+macro-real if EI_macro > EI_micro at the tested grain,
+or if the macro model predicts held-out trajectories with lower loss
+after paying the compression, measurement, and intervention costs.
+```
+
+This is the framework's bridge from weak emergence to operational emergence:
+the higher level is not "only shorthand" when it loses less causal information
+over time than the micro-description available to the observer. It is also not
+strong-emergence magic, because every macro effect is paid for as constraint,
+boundary condition, memory, measurement, control, and entropy export inside the
+physical substrate. `[S/I]` for the framework rule; `[C]` until a given domain
+passes the measurement test.
+
 ---
 
 ## Bridge Law 3: Every Public Translation Must Use the Nearest Established Register First

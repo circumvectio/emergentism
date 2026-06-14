@@ -20,6 +20,27 @@ const INSTRUMENT_CPS = {
   medium: 0.024,
   fast: 0.035
 };
+function nowMs() {
+  return (typeof window.performance !== "undefined" && typeof window.performance.now === "function")
+    ? window.performance.now()
+    : Date.now();
+}
+
+function scheduleFrame(callback) {
+  let settled = false;
+  const timer = window.setTimeout(() => {
+    if (settled) return;
+    settled = true;
+    callback(nowMs());
+  }, 1000 / 60);
+  if (typeof window.requestAnimationFrame !== "function") return timer;
+  return window.requestAnimationFrame((time) => {
+    if (settled) return;
+    settled = true;
+    window.clearTimeout(timer);
+    callback(typeof time === "number" ? time : nowMs());
+  });
+}
 const COLORS = {
   bg: "#050505",
   surface: "#0A0A0A",
@@ -218,7 +239,7 @@ function initCommandPalette() {
     trigger.setAttribute("aria-expanded", "true");
     input.value = seed;
     render();
-    requestAnimationFrame(() => {
+    scheduleFrame(() => {
       input.focus();
       input.select();
     });
@@ -562,7 +583,7 @@ function drawTitanCalculator(time = 0) {
     ctx.fillStyle = muted;
     ctx.fillText("frame/register doctrine, not field arithmetic", right, height - pad - 28);
 
-    if (!REDUCED_MOTION) requestAnimationFrame(draw);
+    if (!REDUCED_MOTION) scheduleFrame(draw);
   }
 
   draw(0);
@@ -814,7 +835,7 @@ function drawConstitutionInstrument(time = 0) {
           "centroid offset = " + centerResidual.toExponential(1) + " · sample clock " + (REDUCED_MOTION ? "static" : sampleClock.label());
     }
 
-    if (!REDUCED_MOTION) requestAnimationFrame(draw);
+    if (!REDUCED_MOTION) scheduleFrame(draw);
   }
 
   window.addEventListener("resize", () => {
@@ -1982,7 +2003,7 @@ async function boot() {
 
       controls.update();
       renderer.render(scene, camera);
-      requestAnimationFrame(animate);
+      scheduleFrame(animate);
     }
 
     function renderInstrumentFrame(t, fpsValue, sampled = true) {
@@ -2007,7 +2028,7 @@ async function boot() {
       return;
     }
 
-    requestAnimationFrame(animate);
+    scheduleFrame(animate);
   } catch (error) {
     fail(error);
   }

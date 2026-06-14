@@ -48,6 +48,11 @@
   <span data-field="uncertainty">σ --</span>
   <span data-field="state">RUN</span>
 </div>
+<div class="instrument-spec" aria-hidden="true">
+  <span>invariant: present hyperplane fixed at t = 0</span>
+  <span>axes: cone angle · height · Ω proxy</span>
+  <span>contract: [I] selection image, not a settled force claim</span>
+</div>
 <div id="stage-readout" aria-live="polite">LIGHTCONE INSTRUMENT</div>
 <div class="instrument-controls standalone-controls" id="lightcone-controls">
   <button type="button" id="lc-hold" aria-pressed="false">HOLD</button>
@@ -228,6 +233,22 @@ function nowMs() {
     : Date.now();
 }
 
+function scheduleFrame(callback) {
+  let settled = false;
+  const timer = setTimeout(() => {
+    if (settled) return;
+    settled = true;
+    callback(nowMs());
+  }, 1000 / 60);
+  if (typeof requestAnimationFrame !== 'function') return timer;
+  return requestAnimationFrame((time) => {
+    if (settled) return;
+    settled = true;
+    clearTimeout(timer);
+    callback(typeof time === 'number' ? time : nowMs());
+  });
+}
+
 function advanceSamples(frameSeconds, rate = 1, forcedSeconds = 0, pausedState = false) {
   if (!pausedState) sampleAccumulator += Math.min(Math.max(frameSeconds, 0), MAX_FRAME_DT) * rate;
   if (forcedSeconds > 0) sampleAccumulator += forcedSeconds;
@@ -363,9 +384,9 @@ function updateInstrument(frameTime = nowMs(), poseOffset = null){
 }
 function animate(){
   updateInstrument();
-  requestAnimationFrame(animate);
+  scheduleFrame(animate);
 }
-if (REDUCED_MOTION || typeof requestAnimationFrame !== 'function') {
+if (REDUCED_MOTION) {
   updateInstrument(nowMs(), 1.2);
 } else {
   animate();

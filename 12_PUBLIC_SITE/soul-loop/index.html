@@ -248,6 +248,14 @@
           practice does not shift stuck operator weights toward L4, the loop is
           only an editing checklist, not a player-transforming practice.
         </p>
+        <p>
+          Future-pull language is also routed through the loop. A modeled
+          attractor, egregore, ideal, institution, or narrative is not
+          retrocausal and not historically inevitable; it is a present D5 model
+          asking for D4 means. The lawful posture is to treat it as conditionally
+          real enough to build toward only while preserving kill criteria, exit
+          rights, correction, and evidence-tier humility.
+        </p>
         <p style="color:var(--muted); font-size:0.92rem; margin-top:1rem;">
           <strong>Framework update (2026-06-06):</strong> the Soul Loop is the operational form of the <strong>A7 self-correction discipline</strong> — one of the five refusals in the unified 5+1 constitution (K2-ruled 2026-05-30). A7 binds every claim in the framework to the "Honest Position" rule: report the actual tier, not the strongest tier the claim could justify; tier upgrades follow the append-only Falsifier Register. The Soul Loop's "kill criterion" (a corpus that cannot be made coherent, valid, and serviceful) is A7's self-correction made operational. The loop is *allowed to fail* because the constitutional discipline requires it to fail when it must.
         </p>
@@ -327,6 +335,28 @@
   let sampleIndex = 0;
   const RESIDUAL_TRACE_MAX = 144;
   const residualSamples = [];
+
+  function nowMs() {
+    return (typeof performance !== 'undefined' && typeof performance.now === 'function')
+      ? performance.now()
+      : Date.now();
+  }
+
+  function scheduleFrame(callback) {
+    let settled = false;
+    const timer = setTimeout(() => {
+      if (settled) return;
+      settled = true;
+      callback(nowMs());
+    }, 1000 / 60);
+    if (typeof requestAnimationFrame !== 'function') return timer;
+    return requestAnimationFrame((time) => {
+      if (settled) return;
+      settled = true;
+      clearTimeout(timer);
+      callback(typeof time === 'number' ? time : nowMs());
+    });
+  }
 
   const playback = (() => {
     if (!visual) return null;
@@ -618,7 +648,7 @@
           'clock ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · Δt=' + (SAMPLE_MS / 1000).toFixed(3) + 's · ' + (paused ? 'HOLD' : 'RUN');
     }
 
-    if (!REDUCED_MOTION && schedule) requestAnimationFrame(draw);
+    if (!REDUCED_MOTION && schedule) scheduleFrame(draw);
   }
 
   resize();

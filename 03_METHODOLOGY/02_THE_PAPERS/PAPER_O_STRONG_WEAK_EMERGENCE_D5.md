@@ -27,9 +27,17 @@ Menexus GmbH, 2026
 
 The debate over "top-down causation" versus "bottom-up determinism" assumes symmetry in the epistemic horizon of observation. This paper formalizes the **Asymmetry Theorem**: emergence is structurally opaque from below (Genesis) and more legible from above (Governance). What appears as Strong Emergence — an ontological break unpredictable from constituent parts — when viewed from `D-n` looking up to `D`, often resolves into Weak Emergence when viewed from `D` looking down to `D-n`.
 
+The operational refinement is information-theoretic: a higher level is not a
+ghostly extra force, and it is not merely a convenient label. It is a
+macro-constraint that restricts lower-level degrees of freedom while preserving
+the lower-level transition laws. A macrostate is publicly real when it carries
+more usable causal information about future trajectories than the observer's
+available micro-description after compression, measurement, intervention, and
+thermodynamic costs are paid.
+
 We propose that "opaque from below, legible from above" is a general cross-scale law of mediation that appears in biological life, language formation, market pricing, software architecture, and institutional law. Furthermore, we show how this asymmetry informs constitutional design: a system running on `η = 0` survives only if its governance layer remains legible to the strata below without asserting opaque, idolatric mediation over it.
 
-**Keywords:** Strong emergence, weak emergence, cross-scale theorem, D5, epistemic asymmetry, constitutional life, top-down causation.
+**Keywords:** Strong emergence, weak emergence, causal emergence, effective information, macro-constraints, cross-scale theorem, D5, epistemic asymmetry, constitutional life, top-down causation.
 
 ---
 
@@ -50,6 +58,46 @@ When observing the exact same hierarchy from the vantage point of the newly form
 The whole compresses its parts. The D5 organism easily models its D4 organs; the software architecture strictly dictates the behavior of its sub-functions; the institution successfully writes laws predicting the aggregate behavior of citizens. Downward causation is simply macroscopic constraints reducing the phase space of microscopic possibilities.
 
 **Theorem / heuristic:** *Strong Emergence is often an artifact of the view from below. Weak Emergence is often the view from above. The boundary between them is the act of mediation.*
+
+### 1.3 Macro-Constraints Without Magic
+
+Let `X_t` be the lower-level state space and let `Y_t = π(X_t)` be the
+macrostate induced by a coarse-graining, organism, institution, interface,
+law, or control architecture.
+
+```text
+K_X(x' | x)        lower-level transition law
+C_y                admissible microstates under macrostate y
+K_X^C(x' | x, y)   K_X restricted by C_y
+support(K_X^C)     ⊆ support(K_X)
+```
+
+The subset relation is the causal-closure guard. The macro layer does not add a
+forbidden micro-transition. It changes the option topology: which trajectories
+are reachable, likely, stable, reinforced, or suppressed.
+
+The emergence claim becomes measurable when we ask whether the macrostate
+retains causal information better than the available micro-description:
+
+```text
+EI_macro = I(Y_t ; Y_{t+1} | do(Y_t), C)
+EI_micro = I(X_t ; X_{t+1} | do(X_t))
+
+causal-emergence witness:
+EI_macro > EI_micro at the tested grain
+```
+
+If the macro model wins only because the micro model was artificially blinded,
+the witness fails. If the macro model wins after fair intervention,
+compression, measurement, and prediction costs, the higher level is objectively
+real in the public scientific register: it is the better causal state variable
+for that system.
+
+Syntropy then has a restrained open-system meaning. A macro-constraint is
+syntropic when it increases local order, coherence, or effective information
+while paying its matter, memory, control, and entropy-export bill. It is not a
+claim of total entropy reversal, retrocausality, or a Standard Model fifth
+force.
 
 ---
 
@@ -85,6 +133,13 @@ This paper is falsified if:
 1. **Symmetric Emergence:** A complex boundary is structurally proven to be fully predictable (legible) from the strictly lower-level dimensional substrate prior to the phase transition occurring.
 2. **Pathological Stability:** An institutional egregore (`η > 0`) is shown to exhibit true epistemic transparency (legibility from below) without sacrificing its extractive dominance.
 3. **Scale Dependence:** The "opaque from below, legible from above" asymmetry is shown to uniquely operate at biological `D5` but fails mathematically in `D2` networks or `D4` molecular ensembles.
+4. **No causal-information gain:** A proposed macro layer never improves
+   effective information, held-out trajectory prediction, intervention
+   selection, or compression-cost-adjusted control over the available
+   micro-description.
+5. **Constraint violation:** A proposed macro-cause requires micro-transitions
+   that the lower-level law forbids, or hides unaccounted memory, measurement,
+   control, or entropy-export costs.
 
 ---
 

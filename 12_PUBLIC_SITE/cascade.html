@@ -57,6 +57,11 @@
   <span data-field="uncertainty">σ --</span>
   <span data-field="state">RUN</span>
 </div>
+<div class="instrument-spec" aria-hidden="true">
+  <span>invariant: finite sample never equals asymptote</span>
+  <span>axes: u/v mesh · morph target · residual lag</span>
+  <span>contract: HOLD freezes state; STEP advances one measured increment</span>
+</div>
 <div class="instrument-controls standalone-controls cascade-controls" id="cascade-controls">
   <button type="button" id="playpause" aria-pressed="false">HOLD</button>
   <button type="button" id="cascade-step">STEP</button>
@@ -120,6 +125,28 @@ const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = true; controls.dampingFactor = 0.06;
 controls.enablePan = false; controls.minDistance = 3.2; controls.maxDistance = 9;
 controls.autoRotate = false; controls.autoRotateSpeed = 0;
+
+function nowMs() {
+  return (typeof performance !== 'undefined' && typeof performance.now === 'function')
+    ? performance.now()
+    : Date.now();
+}
+
+function scheduleFrame(callback) {
+  let settled = false;
+  const timer = setTimeout(() => {
+    if (settled) return;
+    settled = true;
+    callback(nowMs());
+  }, 1000 / 60);
+  if (typeof requestAnimationFrame !== 'function') return timer;
+  return requestAnimationFrame((time) => {
+    if (settled) return;
+    settled = true;
+    clearTimeout(timer);
+    callback(typeof time === 'number' ? time : nowMs());
+  });
+}
 
 function frameCascadeCamera() {
   const portrait = innerWidth < 680 || innerHeight > innerWidth * 1.35;
@@ -574,8 +601,8 @@ function advanceStageClock(deltaSeconds){
     tAccum = overflow;
   }
 }
-function animate(frameTime = performance.now()){
-  requestAnimationFrame(animate);
+function animate(frameTime = nowMs()){
+  scheduleFrame(animate);
   const frameDt = lastFrame ? Math.max(1, frameTime - lastFrame) : 16.7;
   fps = fps ? fps * 0.9 + (1000 / frameDt) * 0.1 : 1000 / frameDt;
   lastFrame = frameTime;

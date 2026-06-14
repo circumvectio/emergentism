@@ -117,6 +117,37 @@ moving from one level to another without losing <code>A7</code> honesty.</p>
 <li>ethics does not violate strategic interaction; it constrains what should be selected within it</li>
 </ul>
 <p>This is the framework's non-magical version of downward causation.</p>
+<h3 id="information-theoretic-constraint-test">Information-Theoretic Constraint Test</h3>
+<p>This law becomes scientific only when the constraint is measurable.</p>
+<p>Let <code>X_t</code> be the lower-level microstate, let <code>π : X -&gt; Y</code> be a coarse-graining
+or organizational map, and let <code>Y_t = π(X_t)</code> be the macrostate. A macro-level
+claim is admissible only if it can be stated as a constraint on lower-level
+degrees of freedom:</p>
+<pre><code class="language-text">K_X(x' | x)        = lower-level transition law
+C_y                = {x in X : π(x) = y}
+K_X^C(x' | x, y)   = K_X(x' | x) restricted to trajectories admissible under C_y
+support(K_X^C)     ⊆ support(K_X)
+</code></pre>
+<p>The inclusion is the no-magic clause. The macro-constraint may change which
+micro-trajectories are available, likely, stable, or reinforced, but it may not
+create a transition the lower-level law forbids.</p>
+<p>The public test is not whether the macro word feels useful. The public test is
+whether the macro description carries causal information that survives
+compression:</p>
+<pre><code class="language-text">EI_macro = I(Y_t ; Y_{t+1} | do(Y_t), C)
+EI_micro = I(X_t ; X_{t+1} | do(X_t))
+
+macro-real if EI_macro &gt; EI_micro at the tested grain,
+or if the macro model predicts held-out trajectories with lower loss
+after paying the compression, measurement, and intervention costs.
+</code></pre>
+<p>This is the framework's bridge from weak emergence to operational emergence:
+the higher level is not "only shorthand" when it loses less causal information
+over time than the micro-description available to the observer. It is also not
+strong-emergence magic, because every macro effect is paid for as constraint,
+boundary condition, memory, measurement, control, and entropy export inside the
+physical substrate. <code>[S/I]</code> for the framework rule; <code>[C]</code> until a given domain
+passes the measurement test.</p>
 <hr>
 <h2 id="bridge-law-3-every-public-translation-must-use-the-nearest-established-register-first">Bridge Law 3: Every Public Translation Must Use the Nearest Established Register First</h2>
 <p>This is the cross-disciplinary honesty rule.</p>

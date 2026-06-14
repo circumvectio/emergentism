@@ -989,6 +989,10 @@ body.soul-loop-instrument .visual-labels .bottom {
   font-variant-numeric: tabular-nums;
 }
 
+.model-slider {
+  bottom: 44px !important;
+}
+
 .model-slider input[type="range"] {
   appearance: none;
   height: 16px !important;
@@ -2210,6 +2214,40 @@ body.sphere-instrument > a.exit {
 .standalone-telemetry span[data-field="state"] {
   color: rgba(66, 165, 245, 0.92);
 }
+.instrument-spec {
+  position: fixed;
+  left: 32px;
+  top: 268px;
+  z-index: 4;
+  display: grid;
+  gap: 6px;
+  width: min(340px, calc(100vw - 64px));
+  border: 1px solid rgba(243, 244, 246, 0.14);
+  border-left: 2px solid rgba(66, 165, 245, 0.86);
+  border-radius: var(--shape-sm);
+  background: rgba(5, 5, 5, 0.92);
+  color: rgba(243, 244, 246, 0.68);
+  padding: 9px 12px;
+  font: 700 10px/1.42 var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  backdrop-filter: blur(4px);
+  pointer-events: none;
+}
+
+.instrument-spec span:first-child {
+  color: rgba(243, 244, 246, 0.9);
+}
+
+body.sphere-instrument .instrument-spec {
+  top: 262px;
+}
+
+body.lightcone-instrument .instrument-spec {
+  top: 286px;
+  width: min(520px, calc(100vw - 64px));
+}
 #stage-readout {
   position: fixed;
   right: 32px;
@@ -2466,6 +2504,10 @@ button.nav:hover {
   .standalone-telemetry {
     display: none;
   }
+
+  .instrument-spec {
+    display: none;
+  }
 }
 @media (max-width: 900px) {
   body > span.brand,
@@ -2505,6 +2547,10 @@ button.nav:hover {
     font-size: 9.5px;
   }
   .standalone-telemetry {
+    display: none;
+  }
+
+  .instrument-spec {
     display: none;
   }
   body.sphere-instrument #stage-readout {
