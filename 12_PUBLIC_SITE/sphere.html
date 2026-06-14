@@ -98,6 +98,8 @@
 }}
 </script>
 <script type="module">
+import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js';
+
 let THREE, OrbitControls;
 try {
   THREE = await import('three');
@@ -207,71 +209,15 @@ const scanTrace = new THREE.Line(
 const scanTraceSamples = [];
 root.add(scanTrace);
 
-function createStripChart(origin, width = 2.2, height = 0.5, color = TEAL, max = 144) {
-  const group = new THREE.Group();
-  const frame = new THREE.LineSegments(
-    new THREE.BufferGeometry().setFromPoints([
-      new THREE.Vector3(origin.x, origin.y, origin.z),
-      new THREE.Vector3(origin.x + width, origin.y, origin.z),
-      new THREE.Vector3(origin.x, origin.y + height, origin.z),
-      new THREE.Vector3(origin.x + width, origin.y + height, origin.z),
-      new THREE.Vector3(origin.x, origin.y, origin.z),
-      new THREE.Vector3(origin.x, origin.y + height, origin.z),
-      new THREE.Vector3(origin.x + width, origin.y, origin.z),
-      new THREE.Vector3(origin.x + width, origin.y + height, origin.z),
-      new THREE.Vector3(origin.x, origin.y + height * 0.5, origin.z),
-      new THREE.Vector3(origin.x + width, origin.y + height * 0.5, origin.z)
-    ]),
-    new THREE.LineBasicMaterial({ color: 0x6d7480, transparent: true, opacity: 0.24 })
-  );
-  const trace = new THREE.Line(
-    new THREE.BufferGeometry().setFromPoints([
-      new THREE.Vector3(origin.x, origin.y, origin.z + 0.012),
-      new THREE.Vector3(origin.x + 0.001, origin.y, origin.z + 0.012)
-    ]),
-    new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.58 })
-  );
-  const cursor = new THREE.Line(
-    new THREE.BufferGeometry().setFromPoints([
-      new THREE.Vector3(origin.x, origin.y, origin.z + 0.018),
-      new THREE.Vector3(origin.x, origin.y + height, origin.z + 0.018)
-    ]),
-    new THREE.LineBasicMaterial({ color: WHITE, transparent: true, opacity: 0.26 })
-  );
-  group.add(frame, trace, cursor);
-  return { group, origin, width, height, max, samples: [], trace, cursor };
-}
-
-function clearStripChart(chart) {
-  chart.samples.length = 0;
-  chart.trace.geometry.setFromPoints([
-    new THREE.Vector3(chart.origin.x, chart.origin.y, chart.origin.z + 0.012),
-    new THREE.Vector3(chart.origin.x + 0.001, chart.origin.y, chart.origin.z + 0.012)
-  ]);
-}
-
-function updateStripChart(chart, value, min = 0, max = 1, sampled = false) {
-  const span = Math.max(max - min, 1e-9);
-  const normalized = Math.max(0, Math.min(1, (value - min) / span));
-  if (sampled || chart.samples.length === 0) {
-    chart.samples.push(normalized);
-    if (chart.samples.length > chart.max) chart.samples.shift();
-  }
-  const samples = chart.samples.length > 1 ? chart.samples : [normalized, normalized];
-  const denom = Math.max(samples.length - 1, 1);
-  chart.trace.geometry.setFromPoints(samples.map((sample, index) => new THREE.Vector3(
-    chart.origin.x + (index / denom) * chart.width,
-    chart.origin.y + sample * chart.height,
-    chart.origin.z + 0.012
-  )));
-  const x = chart.origin.x + chart.width;
-  chart.cursor.geometry.setFromPoints([
-    new THREE.Vector3(x, chart.origin.y, chart.origin.z + 0.018),
-    new THREE.Vector3(x, chart.origin.y + chart.height, chart.origin.z + 0.018)
-  ]);
-}
-
-const balanceStrip = createStripChart(new THREE.Vector3(-2.78, -1.9, 0.06), 2.22, 0.5, TEAL, 144);
+const balanceStrip = createStripChart(THREE, {
+  origin: new THREE.Vector3(-2.78, -1.9, 0.06),
+  width: 2.22,
+  height: 0.5,
+  color: TEAL,
+  max: 144,
+  label: 'B=sin theta',
+  labelColor: TEAL
+});
 root.add(balanceStrip.group);
 
 // the seven position markers (clickable)
@@ -338,7 +284,7 @@ function clearScanTrace() {
   scanTraceSamples.length = 0;
   lastRecordedIndex = null;
   scanTrace.geometry.setFromPoints([new THREE.Vector3(), new THREE.Vector3()]);
-  clearStripChart(balanceStrip);
+  clearStripChart(THREE, balanceStrip);
 }
 
 function recordScanSample(force = false) {
@@ -382,7 +328,7 @@ function select(i, manual = false){
   document.getElementById(els.chart).textContent = phi.toFixed(2) + ' · ' + nu.toFixed(2);
   document.getElementById(els.residual).textContent = '|φν−1| ' + reciprocalResidual.toExponential(1) + ' · |1−B| ' + balanceError.toFixed(3);
   document.getElementById(els.act).textContent = p.act;
-  updateStripChart(balanceStrip, balance, 0, 1, manual || sampleDeltaMs > 0 || balanceStrip.samples.length === 0);
+  updateStripChart(THREE, balanceStrip, balance, 0, 1, manual || sampleDeltaMs > 0 || balanceStrip.samples.length === 0);
   setTelemetry({
     fps: REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps'),
     sample: REDUCED_MOTION ? 'sample static' : sampleLabel(),

@@ -90,6 +90,8 @@
 }}
 </script>
 <script type="module">
+import { createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js';
+
 let THREE, OrbitControls;
 try {
   THREE = await import('three');
@@ -265,75 +267,26 @@ function updatePointTrace(trace, samples) {
   trace.mesh.geometry.attributes.position.needsUpdate = true;
 }
 
-function createStripChart(origin, width = 2.2, height = 0.52, color = TEAL, max = 144) {
-  const group = new THREE.Group();
-  const frameMat = new THREE.LineBasicMaterial({ color: 0x6d7480, transparent: true, opacity: 0.26 });
-  const frame = new THREE.LineSegments(
-    new THREE.BufferGeometry().setFromPoints([
-      new THREE.Vector3(origin.x, origin.y, origin.z),
-      new THREE.Vector3(origin.x + width, origin.y, origin.z),
-      new THREE.Vector3(origin.x, origin.y + height, origin.z),
-      new THREE.Vector3(origin.x + width, origin.y + height, origin.z),
-      new THREE.Vector3(origin.x, origin.y, origin.z),
-      new THREE.Vector3(origin.x, origin.y + height, origin.z),
-      new THREE.Vector3(origin.x + width, origin.y, origin.z),
-      new THREE.Vector3(origin.x + width, origin.y + height, origin.z),
-      new THREE.Vector3(origin.x, origin.y + height * 0.5, origin.z),
-      new THREE.Vector3(origin.x + width, origin.y + height * 0.5, origin.z)
-    ]),
-    frameMat
-  );
-  const trace = new THREE.Line(
-    new THREE.BufferGeometry().setFromPoints([
-      new THREE.Vector3(origin.x, origin.y, origin.z + 0.012),
-      new THREE.Vector3(origin.x + 0.001, origin.y, origin.z + 0.012)
-    ]),
-    new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.56 })
-  );
-  const cursor = new THREE.Line(
-    new THREE.BufferGeometry().setFromPoints([
-      new THREE.Vector3(origin.x, origin.y, origin.z + 0.018),
-      new THREE.Vector3(origin.x, origin.y + height, origin.z + 0.018)
-    ]),
-    new THREE.LineBasicMaterial({ color: WHITE, transparent: true, opacity: 0.26 })
-  );
-  group.add(frame, trace, cursor);
-  return { group, origin, width, height, max, samples: [], trace, cursor };
-}
-
-function clearStripChart(chart) {
-  chart.samples.length = 0;
-  chart.trace.geometry.setFromPoints([
-    new THREE.Vector3(chart.origin.x, chart.origin.y, chart.origin.z + 0.012),
-    new THREE.Vector3(chart.origin.x + 0.001, chart.origin.y, chart.origin.z + 0.012)
-  ]);
-}
-
-function updateStripChart(chart, value, min = 0, max = 1, sampled = false) {
-  const span = Math.max(max - min, 1e-9);
-  const normalized = Math.max(0, Math.min(1, (value - min) / span));
-  if (sampled || chart.samples.length === 0) {
-    chart.samples.push(normalized);
-    if (chart.samples.length > chart.max) chart.samples.shift();
-  }
-  const samples = chart.samples.length > 1 ? chart.samples : [normalized, normalized];
-  const denom = Math.max(samples.length - 1, 1);
-  chart.trace.geometry.setFromPoints(samples.map((sample, index) => new THREE.Vector3(
-    chart.origin.x + (index / denom) * chart.width,
-    chart.origin.y + sample * chart.height,
-    chart.origin.z + 0.012
-  )));
-  const x = chart.origin.x + chart.width;
-  chart.cursor.geometry.setFromPoints([
-    new THREE.Vector3(x, chart.origin.y, chart.origin.z + 0.018),
-    new THREE.Vector3(x, chart.origin.y + chart.height, chart.origin.z + 0.018)
-  ]);
-}
-
 const probeDots = createPointTrace(96, WHITE, 0.5, 0.028);
 scene.add(probeTrace, probeDots.mesh, probeLink, morphTargetProbe, morphProbe);
-const morphLagChart = createStripChart(new THREE.Vector3(-3.38, -2.12, 0.08), 2.35, 0.48, TEAL, 144);
-const balanceChart = createStripChart(new THREE.Vector3(1.05, -2.12, 0.08), 2.35, 0.48, GOLD, 144);
+const morphLagChart = createStripChart(THREE, {
+  origin: new THREE.Vector3(-3.38, -2.12, 0.08),
+  width: 2.35,
+  height: 0.48,
+  color: TEAL,
+  max: 144,
+  label: 'morph lag delta',
+  labelColor: TEAL
+});
+const balanceChart = createStripChart(THREE, {
+  origin: new THREE.Vector3(1.05, -2.12, 0.08),
+  width: 2.35,
+  height: 0.48,
+  color: GOLD,
+  max: 144,
+  label: 'B=sin theta',
+  labelColor: GOLD
+});
 morphLagChart.group.visible = false;
 balanceChart.group.visible = false;
 scene.add(morphLagChart.group, balanceChart.group);
@@ -470,8 +423,8 @@ function clearProbeTrace() {
   probeTraceSamples.length = 0;
   probeTrace.geometry.setFromPoints([new THREE.Vector3(), new THREE.Vector3()]);
   updatePointTrace(probeDots, probeTraceSamples);
-  clearStripChart(morphLagChart);
-  clearStripChart(balanceChart);
+  clearStripChart(THREE, morphLagChart);
+  clearStripChart(THREE, balanceChart);
 }
 
 // safe line renderer ('|' = line break) — no innerHTML, content is static authored text
@@ -656,7 +609,7 @@ function animate(frameTime = performance.now()){
     probeTrace.geometry.setFromPoints(probeTraceSamples.length > 1 ? probeTraceSamples : [current, current]);
     updatePointTrace(probeDots, probeTraceSamples);
     morphLagChart.group.visible = true;
-    updateStripChart(morphLagChart, current.distanceTo(target), 0, 4, sampled);
+    updateStripChart(THREE, morphLagChart, current.distanceTo(target), 0, 4, sampled);
     morphProbeState =
       'morph probe u=' + probeU.toFixed(2) + ' v=' + probeV.toFixed(2) +
       ' · Δ(target,current)=' + current.distanceTo(target).toFixed(3);
@@ -691,7 +644,7 @@ function animate(frameTime = performance.now()){
     projGeoPhi.attributes.position.needsUpdate = true;
     projGeoNu.attributes.position.needsUpdate = true;
     balanceChart.group.visible = true;
-    updateStripChart(balanceChart, balance, 0, 1, sampled);
+    updateStripChart(THREE, balanceChart, balance, 0, 1, sampled);
     projectionState =
       'θ=' + (theta * 180 / Math.PI).toFixed(1) + '° · φ=' + phi.toFixed(2) +
       ' · ν=' + nu.toFixed(2) + ' · B=' + balance.toFixed(3) +
