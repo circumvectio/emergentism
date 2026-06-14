@@ -106,6 +106,7 @@ const canvas = document.getElementById('scene');
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true });
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 renderer.setSize(innerWidth, innerHeight);
+renderer.setClearColor(0x050505, 1);
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(48, innerWidth / innerHeight, 0.1, 100);
@@ -218,6 +219,18 @@ morphGeo.setIndex(indices);
 const morphMat = new THREE.MeshBasicMaterial({ color: GOLD, wireframe: true, transparent: true, opacity: 0 });
 const morphMesh = new THREE.Mesh(morphGeo, morphMat);
 scene.add(morphMesh);
+const morphProbe = markerObject(0.045, WHITE, 0.92);
+const morphTargetProbe = markerObject(0.035, TEAL, 0.74);
+const probeLink = new THREE.Line(
+  new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(), new THREE.Vector3()]),
+  new THREE.LineBasicMaterial({ color: TEAL, transparent: true, opacity: 0.34 })
+);
+const probeTrace = new THREE.Line(
+  new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(), new THREE.Vector3()]),
+  new THREE.LineBasicMaterial({ color: WHITE, transparent: true, opacity: 0.2 })
+);
+const probeTraceSamples = [];
+scene.add(probeTrace, probeLink, morphTargetProbe, morphProbe);
 function rebuild(mt){
   const p = morphGeo.attributes.position.array;
   for (let i = 0; i <= NU; i++) for (let j = 0; j <= NV; j++) {
@@ -317,6 +330,7 @@ let sampleDeltaMs = 0;
 let stepSeconds = 0;
 let sampleAccumulator = 0;
 let sampleIndex = 0;
+let morphProbeState = 'morph probe idle';
 
 function rateValue(){
   return cascadeRateEl ? parseFloat(cascadeRateEl.value) / 100 : 1;
@@ -373,6 +387,14 @@ function syncInstrument(){
     state: (playing ? 'RUN' : 'HOLD') + ' · ' + rateValue().toFixed(2) + 'x'
   });
   if (!stageReadoutEl) return;
+  if (innerWidth < 900) {
+    stageReadoutEl.textContent =
+      'CASCADE INSTRUMENT\n' +
+      'stage ' + cur + '/' + (STAGES.length - 1) + ' · ' + stageName(cur) + ' · ' + (playing ? 'RUN' : 'HOLD') + '\n' +
+      'phase ' + phase.toFixed(2) + ' · morph Δ=' + Math.abs(morphTarget - morphCur).toFixed(3) + '\n' +
+      (REDUCED_MOTION ? 'sample static' : sampleLabel());
+    return;
+  }
   stageReadoutEl.textContent =
     'CASCADE INSTRUMENT\n' +
     'stage ' + cur + '/' + (STAGES.length - 1) + ' · ' + stageName(cur) + ' · ' + (playing ? 'RUN' : 'HOLD') + '\n' +
@@ -380,6 +402,7 @@ function syncInstrument(){
     'morph lag |target-actual| = ' + Math.abs(morphTarget - morphCur).toFixed(3) + ' · clocked stage dwell = ' + STAGE_SECS.toFixed(1) + 's\n' +
     'frame = ' + (REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps')) + ' · rate = ' + rateValue().toFixed(2) + 'x\n' +
     'sample clock = ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · fixed Δt = ' + SAMPLE_DT.toFixed(3) + 's\n' +
+    morphProbeState + '\n' +
     projectionState + '\n' +
     'sequence: line → plane → sphere → horn → Burrisphere';
 }
@@ -476,6 +499,34 @@ function animate(frameTime = performance.now()){
   // morph
   morphCur += (morphTarget - morphCur) * Math.min(1, dt * 0.9);
   if (Math.abs(morphCur - morphTarget) > 0.001 || cur >= 2) rebuild(morphCur);
+  if (cur >= 2) {
+    const probeU = 0.5 + 0.32 * Math.sin(tAccum * 0.34);
+    const probeV = 0.5 + 0.18 * Math.cos(tAccum * 0.27);
+    const currentQ = morphAt(probeU, probeV, morphCur);
+    const targetQ = morphAt(probeU, probeV, morphTarget);
+    const current = new THREE.Vector3(currentQ[0], currentQ[1], currentQ[2]);
+    const target = new THREE.Vector3(targetQ[0], targetQ[1], targetQ[2]);
+    morphProbe.visible = true;
+    morphTargetProbe.visible = true;
+    probeLink.visible = true;
+    probeTrace.visible = true;
+    morphProbe.position.copy(current);
+    morphTargetProbe.position.copy(target);
+    probeLink.geometry.setFromPoints([current, target]);
+    probeTraceSamples.push(current.clone());
+    if (probeTraceSamples.length > 96) probeTraceSamples.shift();
+    probeTrace.geometry.setFromPoints(probeTraceSamples.length > 1 ? probeTraceSamples : [current, current]);
+    morphProbeState =
+      'morph probe u=' + probeU.toFixed(2) + ' v=' + probeV.toFixed(2) +
+      ' · Δ(target,current)=' + current.distanceTo(target).toFixed(3);
+  } else {
+    morphProbe.visible = false;
+    morphTargetProbe.visible = false;
+    probeLink.visible = false;
+    probeTrace.visible = false;
+    probeTraceSamples.length = 0;
+    morphProbeState = 'morph probe idle';
+  }
 
   // dual projection rays read reciprocal coordinates on final stage.
   if (STAGES[cur].burri) {

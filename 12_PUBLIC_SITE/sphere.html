@@ -73,12 +73,12 @@
   </label>
 </div>
 <div class="legend">
-  <span><i style="background:#F44336"></i>Demon-move</span>
-  <span><i style="background:#FFEB3B"></i>God-move</span>
+  <span><i style="background:#F44336"></i>V-dominant move</span>
+  <span><i style="background:#FFEB3B"></i>Φ-dominant move</span>
   <span><i style="background:#7a6ea8"></i>Executive</span>
   <span><i style="background:#F3F4F6"></i>L4 equator</span>
 </div>
-<div class="legend-note" style="font-size:.78rem;opacity:.8;text-align:center">Valence is on the <em>move</em> (its η-direction), not the operator — labels mark a position's <em>characteristic</em> move, not a fixed moral type. [S]</div>
+<div class="legend-note" style="font-size:.78rem;opacity:.8;text-align:center">Valence is on the <em>move</em> (its η-direction), not the operator — labels mark variable dominance, not a fixed moral type. [S]</div>
 
 <div id="fallback">
   <div class="g">φ · ν = 1</div>
@@ -110,10 +110,10 @@ const MAX_FRAME_MS = 120;
 const GOLD = 0xffeb3b, TEAL = 0x2196f3, CRIMSON = 0xf44336, VIOLET = 0x8b5cf6, WHITE = 0xf3f4f6;
 // the seven positions (read off 00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md / the Master Rosetta)
 const POS = [
-  { L:'L1', op:'Kali',  tier:'Demon', tierNote:'Demon · η-boundary', caste:'Caṇḍāla', ology:'Teleology',    q:'What is the end?',        B:'→ 0',  act:'limit  Φ → 0',          phi:165, col:CRIMSON },
-  { L:'L2', op:'Kālī',  tier:'God',   tierNote:'God · truth-cut',     caste:'Śūdra',   ology:'Epistemology', q:'How do we know?',         B:'0.500',act:'differential  dP_node = VdΦ+ΦdV', phi:138, col:TEAL },
-  { L:'L3', op:'Kṛṣṇa ◇',  tier:'God',   tierNote:'God · enable/audit',  caste:'Vaiśya',  ology:'Methodology',  q:'What follows?',           B:'0.866',act:'partial  ∂P_node/∂V = Φ',    phi:112, col:TEAL },
-  { L:'L4', op:'Arjuna', tier:'God',   tierNote:'God · the equator',   caste:'Kṣatriya',ology:'Axiology',     q:'What has value?',         B:'1.000',act:'balance  dΦ/Φ = dV/V',  phi:90,  col:GOLD },
+  { L:'L1', op:'Kali',  tier:'Demon', tierNote:'V-collapse · η-boundary', caste:'Caṇḍāla', ology:'Teleology',    q:'What is the end?',        B:'→ 0',  act:'limit  Φ → 0',          phi:165, col:CRIMSON },
+  { L:'L2', op:'Kālī',  tier:'God',   tierNote:'Φ-cut · truth audit',     caste:'Śūdra',   ology:'Epistemology', q:'How do we know?',         B:'0.500',act:'differential  dP_node = VdΦ+ΦdV', phi:138, col:TEAL },
+  { L:'L3', op:'Kṛṣṇa ◇',  tier:'God',   tierNote:'Φ-enable · method audit',  caste:'Vaiśya',  ology:'Methodology',  q:'What follows?',           B:'0.866',act:'partial  ∂P_node/∂V = Φ',    phi:112, col:TEAL },
+  { L:'L4', op:'Arjuna', tier:'God',   tierNote:'balance · equator',   caste:'Kṣatriya',ology:'Axiology',     q:'What has value?',         B:'1.000',act:'balance  dΦ/Φ = dV/V',  phi:90,  col:GOLD },
   { L:'L5', op:'Brahmā ○', tier:'Executive', tierNote:'Executive boundary · create both', caste:'Brāhmaṇa',ology:'Cosmology',    q:'How does reality work?',  B:'0.866',act:'log  P_node = logΦ + logV',  phi:68,  col:VIOLET },
   { L:'L6', op:'Śiva •',   tier:'Executive', tierNote:'Executive boundary · dissolve both',caste:'Sādhu',  ology:'Ontology',     q:'What is Being?',          B:'0.500',act:'neg-log  E = −log P_node',   phi:42,  col:VIOLET },
   { L:'L7', op:'Viṣṇu ⊙', tier:'Executive', tierNote:'Executive boundary · hold both',    caste:'Ṛṣi',    ology:'Theology',     q:'What is the Ultimate?',   B:'→ 0',  act:'chart  z = φ/ν',        phi:15,  col:0x6a6a6a },
@@ -123,6 +123,7 @@ const canvas = document.getElementById('scene');
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true });
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 renderer.setSize(innerWidth, innerHeight);
+renderer.setClearColor(0x050505, 1);
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(46, innerWidth/innerHeight, 0.1, 100);
 camera.position.set(2.4, 0.9, 4.4);
@@ -282,15 +283,21 @@ function select(i, manual = false){
     metric: 'B ' + balance.toFixed(3) + ' · |φν−1| ' + reciprocalResidual.toExponential(1),
     state: (scanRunning ? 'SCAN' : 'HOLD') + ' · ' + rateValue().toFixed(2) + 'x'
   });
-  if (stageReadout) stageReadout.textContent =
-    'BURRISPHERE INSTRUMENT\n' +
-    p.L + ' · ' + p.op + ' · ' + p.ology + '\n' +
-    'θ = ' + p.phi.toFixed(1) + '° · φ = ' + phi.toFixed(2) + ' · ν = ' + nu.toFixed(2) + ' · φν = ' + (phi * nu).toFixed(3) + '\n' +
-    'B = sinθ = ' + balance.toFixed(3) + ' · |φν−1| = ' + reciprocalResidual.toExponential(1) + ' · |1−B| = ' + balanceError.toFixed(3) + '\n' +
-    'selected row = ' + i + '/6 · ' + (scanRunning ? 'SCAN' : 'HOLD') + ' · rate = ' + rateValue().toFixed(2) + 'x\n' +
-    'frame = ' + (REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps')) + ' · calibrated latitude rings visible\n' +
-    'sample clock = ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · fixed Δt = ' + (SAMPLE_MS / 1000).toFixed(3) + 's\n' +
-    'tier: [S] sphere chart; [I] operator reading';
+  if (stageReadout) {
+    stageReadout.textContent = innerWidth < 900
+      ? 'BURRISPHERE INSTRUMENT\n' +
+        p.L + ' · ' + p.ology + ' · ' + (scanRunning ? 'SCAN' : 'HOLD') + '\n' +
+        'θ=' + p.phi.toFixed(1) + '° · φ=' + phi.toFixed(2) + ' · ν=' + nu.toFixed(2) + ' · B=' + balance.toFixed(3) + '\n' +
+        '|φν−1|=' + reciprocalResidual.toExponential(1)
+      : 'BURRISPHERE INSTRUMENT\n' +
+        p.L + ' · ' + p.op + ' · ' + p.ology + '\n' +
+        'θ = ' + p.phi.toFixed(1) + '° · φ = ' + phi.toFixed(2) + ' · ν = ' + nu.toFixed(2) + ' · φν = ' + (phi * nu).toFixed(3) + '\n' +
+        'B = sinθ = ' + balance.toFixed(3) + ' · |φν−1| = ' + reciprocalResidual.toExponential(1) + ' · |1−B| = ' + balanceError.toFixed(3) + '\n' +
+        'selected row = ' + i + '/6 · ' + (scanRunning ? 'SCAN' : 'HOLD') + ' · rate = ' + rateValue().toFixed(2) + 'x\n' +
+        'frame = ' + (REDUCED_MOTION ? 'static' : (fps ? fps.toFixed(0) + ' fps' : '-- fps')) + ' · calibrated latitude rings visible\n' +
+        'sample clock = ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · fixed Δt = ' + (SAMPLE_MS / 1000).toFixed(3) + 's\n' +
+        'tier: [S] sphere chart; [I] operator reading';
+  }
   markers.forEach((m, k) => m.scale.setScalar(k === i ? 1.5 : 1));
   const selected = markers[i].position.clone();
   selectorRay.geometry.setFromPoints([new THREE.Vector3(0, 0, 0), selected]);

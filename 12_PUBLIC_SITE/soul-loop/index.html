@@ -532,12 +532,12 @@
       ctx.fill();
       ctx.stroke();
       ctx.fillStyle = i === active ? '#070707' : node.color;
-      ctx.font = '700 14px Courier New, monospace';
+      ctx.font = '700 14px Roboto Mono, ui-monospace, SFMono-Regular, Menlo, monospace';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       ctx.fillText(node.label, p.x, p.y - 2);
       ctx.fillStyle = '#9b9488';
-      ctx.font = '11px Courier New, monospace';
+      ctx.font = '700 11px Roboto Mono, ui-monospace, SFMono-Regular, Menlo, monospace';
       ctx.fillText(node.title, p.x, p.y + 34);
     });
 
@@ -577,18 +577,22 @@
     }
     ctx.stroke();
     ctx.fillStyle = '#9b9488';
-    ctx.font = '10px Courier New, monospace';
+    ctx.font = '700 10px Roboto Mono, ui-monospace, SFMono-Regular, Menlo, monospace';
     ctx.textAlign = 'left';
     ctx.fillText('contradiction residual', stripX + 8, stripY + stripH - 8);
 
     if (readout) {
-      readout.textContent =
-        'SOUL LOOP · correction assay\n' +
-        'seg ' + active + '/' + (nodes.length - 1) + ' · ' + activeNode.label + ':' + activeNode.title + ' → ' + nextNode.label + ':' + nextNode.title + '\n' +
-        'phase ' + phase.toFixed(2) + ' · target L4 · B = 1 · L4 distance ' + l4Distance + '\n' +
-        'residual proxy ' + residualProxy.toFixed(3) + ' · kill criterion: non-decreasing residual forces method revision\n' +
-        'sample clock ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · fixed Δt ' + (SAMPLE_MS / 1000).toFixed(3) + 's\n' +
-        (paused ? 'held sample' : 'run') + ' · gather/check/serve/see/dissolve/preserve';
+      readout.textContent = w < 720
+        ? 'SOUL LOOP · correction assay\n' +
+          activeNode.label + ':' + activeNode.title + ' → ' + nextNode.label + ':' + nextNode.title + '\n' +
+          'phase ' + phase.toFixed(2) + ' · residual ' + residualProxy.toFixed(3) + ' · L4 distance ' + l4Distance + '\n' +
+          (REDUCED_MOTION ? 'sample static' : sampleLabel())
+        : 'SOUL LOOP · correction assay\n' +
+          'seg ' + active + '/' + (nodes.length - 1) + ' · ' + activeNode.label + ':' + activeNode.title + ' → ' + nextNode.label + ':' + nextNode.title + '\n' +
+          'phase ' + phase.toFixed(2) + ' · target L4 · B = 1 · L4 distance ' + l4Distance + '\n' +
+          'residual proxy ' + residualProxy.toFixed(3) + ' · kill criterion: non-decreasing residual forces method revision\n' +
+          'sample clock ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · fixed Δt ' + (SAMPLE_MS / 1000).toFixed(3) + 's\n' +
+          (paused ? 'held sample' : 'run') + ' · gather/check/serve/see/dissolve/preserve';
     }
 
     if (!REDUCED_MOTION) requestAnimationFrame(draw);

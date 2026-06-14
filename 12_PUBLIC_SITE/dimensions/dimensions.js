@@ -630,14 +630,16 @@ function createGridPlane(size = 3.8, lines = 13) {
   const half = size / 2;
   for (let i = 0; i < lines; i += 1) {
     const p = -half + (size * i) / (lines - 1);
+    const major = i === 0 || i === lines - 1 || i === Math.floor(lines / 2);
+    const opacity = major ? 0.38 : 0.22;
     group.add(line([
       new THREE.Vector3(-half, 0, p),
       new THREE.Vector3(half, 0, p)
-    ], 0xb8b8b8, 0.45));
+    ], 0xb8b8b8, opacity));
     group.add(line([
       new THREE.Vector3(p, 0, -half),
       new THREE.Vector3(p, 0, half)
-    ], 0xb8b8b8, 0.45));
+    ], 0xb8b8b8, opacity));
   }
   return group;
 }
@@ -921,6 +923,10 @@ function buildScene(mode, scene) {
     root.add(line([new THREE.Vector3(0, 0, -3.1), new THREE.Vector3(0, 0, 3.1)], 0x555555, 0.55));
     const torus = makeMorphTorus(1.7, 84, 24, 0xffffff);        // calibrated wire density; high enough to read, light enough to run
     root.add(torus.mesh);
+    const limitShell = createSphere(1.7, 0.045, 88, 44);
+    limitShell.material.color.setHex(0x42a5f5);
+    const limitGauge = createXYTickedRing(1.7, 0x42a5f5, 0.12, 72, 0.035);
+    root.add(limitShell, limitGauge);
     const relCentre = ring(0.12, 0xffeb3b, 0.95);               // the relative centre on the plane (a ring, no dot)
     const properTimeGauge = createTickedRing(1.0, 0x42a5f5, 0.36, 40);
     properTimeGauge.position.y = 0.014;
@@ -979,6 +985,9 @@ function buildScene(mode, scene) {
       const f = gamma / (gamma + 1);
       const g = torus.setF(f);
       torus.mesh.material.opacity = 0.3 + 0.06 * aB;
+      limitShell.material.opacity = 0.035 + 0.12 * clamp01(gamma / G_MAX);
+      limitGauge.scale.setScalar(0.98 + 0.02 * clamp01(gamma / G_MAX));
+      limitGauge.traverse((o) => { if (o.material) o.material.opacity = 0.08 + 0.15 * clamp01(gamma / G_MAX); });
       // the relative centre moves on the complex plane (log-compressed real axis)
       const px = 2.5 * Math.tanh(w / 2.2);
       relCentre.position.set(px, 0, 0);
@@ -996,7 +1005,7 @@ function buildScene(mode, scene) {
         "w = " + w.toFixed(2) + " · β = " + vc.toFixed(4) + " " + bar(aB, "#42A5F5") + "<br>" +
         "γ = cosh(w) = " + gamma.toFixed(1) + " · E/mc² = γ " + bar(gamma / G_MAX, "#FFEB3B") + "<br>" +
         "R/r = 1/γ = " + (1 / gamma).toFixed(3) + " · dτ/dt<br>" +
-        "<span style='color:#9CA3AF'>V = means-to-act; D5 foresight still selects the worldline.</span><br>" +
+        "<span style='color:#9CA3AF'>blue shell = sampled sphere asymptote; finite frame never reaches the limit.</span><br>" +
         (!moving
           ? "<span style='color:#FFEB3B'>w=0 · HORN touch (γ=1, R=r) — rest energy E = mc²</span>"
           : gamma > 20
@@ -1168,15 +1177,15 @@ function buildScene(mode, scene) {
       root.rotation.y = 0;
       const q = quadName[Math.floor((((psi % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI)) / (Math.PI / 2)) % 4];
       const opName = isBalance
-        ? "Viṣṇu L5 · balance"
+        ? "L4/L5 balance gate"
         : isGod
-        ? (cps < 0 ? "Kṛṣṇa L3 · give" : "Arjuna L4 · give")
-        : (cps < 0 ? "Kali L1 · take" : "Kālī L2 · take");
+        ? (cps < 0 ? "Φ-dominant quadrant" : "Φ-dominant quadrant")
+        : (cps < 0 ? "V-dominant quadrant" : "V-dominant quadrant");
       const moveName = isBalance
         ? "BALANCE (Φ=V=1)"
         : isGod
-          ? "GOD-move (Φ > V)"
-          : "DEMON-move (V > Φ)";
+          ? "FORESIGHT-DOMINANT (Φ > V)"
+          : "MEANS-DOMINANT (V > Φ)";
       const balance = Math.sin(theta);
       setInstrumentMetric(
         "B " + balance.toFixed(3) + " · |φν-1| " + Math.abs(phi * nu - 1).toExponential(1),
@@ -1187,7 +1196,7 @@ function buildScene(mode, scene) {
         "D5 BURRISPHERE · dual rays meet at P\n" +
         "θ " + (theta * 180 / Math.PI).toFixed(0) + "°" + (thetaUserActive ? " held" : " sweep") + " · φ " + phi.toFixed(2) + " · ν " + nu.toFixed(2) + " · φ·ν=1 · B=sinθ " + balance.toFixed(3) + "\n" +
         "P_node = Φ × V; either missing factor collapses the move\n" +
-        "quadrant " + q + " · " + opName + " · " + moveName;
+        "quadrant " + q + " · " + opName + " · class " + moveName;
     });
   }
 
@@ -1328,6 +1337,7 @@ async function boot() {
       preserveDrawingBuffer: true
     });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setClearColor(0x050505, 1);
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100);

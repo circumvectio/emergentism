@@ -442,12 +442,12 @@ h3 {
 .instrument-graticule {
   position: absolute;
   inset: 24px;
-  opacity: 0.2;
+  opacity: 0.16;
   background:
-    repeating-linear-gradient(90deg, rgba(255,255,255,0.11) 0 1px, transparent 1px 32px),
-    repeating-linear-gradient(0deg, rgba(255,255,255,0.11) 0 1px, transparent 1px 32px),
-    repeating-linear-gradient(90deg, rgba(255,235,59,0.12) 0 1px, transparent 1px 128px),
-    repeating-linear-gradient(0deg, rgba(33,150,243,0.1) 0 1px, transparent 1px 128px);
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.09) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.09) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(90deg, rgba(255,235,59,0.1) 0 1px, transparent 1px 128px),
+    repeating-linear-gradient(0deg, rgba(33,150,243,0.085) 0 1px, transparent 1px 128px);
 }
 
 .instrument-corners {
@@ -459,7 +459,7 @@ h3 {
   position: absolute;
   width: 24px;
   height: 24px;
-  border-color: rgba(255, 235, 59, 0.34);
+  border-color: rgba(255, 235, 59, 0.28);
   border-style: solid;
 }
 
@@ -487,7 +487,7 @@ h3 {
   background:
     linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255,235,59,0.16) calc(50% - 0.5px), rgba(255,235,59,0.16) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
     linear-gradient(0deg, transparent calc(50% - 0.5px), rgba(66,165,245,0.16) calc(50% - 0.5px), rgba(66,165,245,0.16) calc(50% + 0.5px), transparent calc(50% + 0.5px));
-  opacity: 0.34;
+  opacity: 0.28;
 }
 
 .instrument-scale {
@@ -552,8 +552,8 @@ h3 {
 .instrument-telemetry span {
   min-width: max-content;
   border: 1px solid rgba(243, 244, 246, 0.16);
-  border-radius: 4px;
-  background: rgba(5, 5, 5, 0.82);
+  border-radius: 3px;
+  background: rgba(5, 5, 5, 0.9);
   padding: 4px 6px;
   backdrop-filter: blur(4px);
 }
@@ -590,8 +590,8 @@ h3 {
 .instrument-controls label {
   min-height: 25px;
   border: 1px solid rgba(243, 244, 246, 0.16);
-  border-radius: 4px;
-  background: rgba(5, 5, 5, 0.84);
+  border-radius: 3px;
+  background: rgba(5, 5, 5, 0.9);
   color: inherit;
   backdrop-filter: blur(4px);
 }
