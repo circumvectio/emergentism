@@ -155,8 +155,8 @@ function scheduleFrame(callback) {
 
 function frameCascadeCamera() {
   const portrait = innerWidth < 680 || innerHeight > innerWidth * 1.35;
-  camera.position.set(0, portrait ? 0.52 : 0.7, portrait ? 6.85 : 5.4);
-  camera.fov = portrait ? 43 : 48;
+  camera.position.set(0, portrait ? 0.42 : 0.62, portrait ? 9.35 : 6.65);
+  camera.fov = portrait ? 38 : 43;
   camera.aspect = innerWidth / innerHeight;
   camera.updateProjectionMatrix();
   controls.target.set(0, portrait ? 0.05 : 0, 0);
@@ -202,10 +202,10 @@ function tangentRing(radius, y, color, opacity = 0.28) {
 // ── intro group A: finity (the point • and the ring ○) ──
 const introFinity = new THREE.Group();
 {
-  const pt = new THREE.Mesh(new THREE.SphereGeometry(0.13, 24, 24),
+  const pt = new THREE.Mesh(new THREE.SphereGeometry(0.095, 20, 20),
     new THREE.MeshBasicMaterial({ color: GOLD }));
-  const ring = new THREE.Mesh(new THREE.TorusGeometry(1.25, 0.015, 16, 120),
-    new THREE.MeshBasicMaterial({ color: TEAL, transparent: true, opacity: 0.9 }));
+  const ring = new THREE.Mesh(new THREE.TorusGeometry(1.08, 0.01, 12, 120),
+    new THREE.MeshBasicMaterial({ color: TEAL, transparent: true, opacity: 0.58 }));
   introFinity.add(pt, ring);
 }
 scene.add(introFinity);
@@ -214,9 +214,9 @@ scene.add(introFinity);
 const introRiemann = new THREE.Group();
 {
   const s = new THREE.Mesh(new THREE.SphereGeometry(1.3, 48, 32),
-    new THREE.MeshBasicMaterial({ color: GOLD, wireframe: true, transparent: true, opacity: 0.85 }));
+    new THREE.MeshBasicMaterial({ color: GOLD, wireframe: true, transparent: true, opacity: 0.46 }));
   const axis = new THREE.Mesh(new THREE.CylinderGeometry(0.006, 0.006, 4.2, 8),
-    new THREE.MeshBasicMaterial({ color: TEAL, transparent: true, opacity: 0.6 }));
+    new THREE.MeshBasicMaterial({ color: TEAL, transparent: true, opacity: 0.34 }));
   introRiemann.add(s, axis);
 }
 scene.add(introRiemann);
@@ -343,14 +343,14 @@ rebuild(0);
 const burri = new THREE.Group();
 {
   const eq = new THREE.Mesh(new THREE.TorusGeometry(R, 0.018, 16, 160),
-    new THREE.MeshBasicMaterial({ color: GOLD }));
+    new THREE.MeshBasicMaterial({ color: GOLD, transparent: true, opacity: 0.76 }));
   eq.rotation.x = Math.PI / 2;
   burri.add(eq);
   // L1..L7 markers along the front meridian; L4 (index 3) at the equator
   const cols = [0x6a5a2a, TEAL, TEAL, GOLD, CRIMSON, TEAL, 0x6a5a2a];
   for (let k = 0; k < 7; k++) {
     const ph = (k + 1) / 8 * Math.PI; // 22.5° .. 157.5°, L4 at 90°
-    const m = new THREE.Mesh(new THREE.SphereGeometry(k === 3 ? 0.075 : 0.05, 16, 16),
+    const m = new THREE.Mesh(new THREE.SphereGeometry(k === 3 ? 0.056 : 0.04, 14, 14),
       new THREE.MeshBasicMaterial({ color: cols[k] }));
     m.position.set(R * Math.sin(ph), R * Math.cos(ph), 0);
     burri.add(m);
@@ -496,7 +496,14 @@ function setLines(el, str){
   });
 }
 
-function setFade(group, target){ group.visible = true; group.traverse(o => { if (o.material) fades.set(o.material, target); }); }
+function setFade(group, target){
+  group.visible = target > 0.01;
+  group.traverse(o => {
+    if (!o.material) return;
+    o.material.opacity = target;
+    fades.set(o.material, target);
+  });
+}
 
 function stageName(index){
   return ['finity', 'riemann', 'projection', 'mu-limit', 'bloch', 'horn', 'overlap', 'burrisphere'][index] || 'stage';
@@ -562,15 +569,15 @@ function show(i){
   counterEl.style.opacity = s.counter ? '0.85' : '0';
   enterEl.classList.toggle('show', !!s.enter);
   // intros
-  [introFinity, introRiemann].forEach(g => setFade(g, s.intro === g ? 0.95 : 0));
+  [introFinity, introRiemann].forEach(g => setFade(g, s.intro === g ? 0.74 : 0));
   // morph mesh visible from stage 2 on
-  fades.set(morphMat, cur >= 2 ? 0.72 : 0);
+  fades.set(morphMat, cur >= 2 ? 0.46 : 0);
   morphTarget = s.mt;
   if (previous === STAGES.length - 1 && cur === 0) morphCur = morphTarget;
-  setFade(burri, s.burri ? 0.82 : 0);
+  setFade(burri, s.burri ? 0.58 : 0);
   // dual projection assay only on final Burrisphere stage
   const showProj = !!s.burri;
-  setFade(projGroup, showProj ? 0.74 : 0);
+  setFade(projGroup, showProj ? 0.62 : 0);
   projGroup.visible = showProj || projGroup.visible;
   // dots
   [...dots.children].forEach((d, k) => d.classList.toggle('on', k === cur));

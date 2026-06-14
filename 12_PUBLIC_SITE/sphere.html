@@ -140,7 +140,7 @@ renderer.setSize(innerWidth, innerHeight);
 renderer.setClearColor(0x050505, 1);
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(46, innerWidth/innerHeight, 0.1, 100);
-camera.position.set(2.4, 0.9, 4.4);
+camera.position.set(2.4, 0.9, 5.65);
 const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = true; controls.dampingFactor = 0.06; controls.enablePan = false;
 controls.minDistance = 3; controls.maxDistance = 12; controls.autoRotate = false; controls.autoRotateSpeed = 0;
@@ -169,10 +169,10 @@ function scheduleFrame(callback) {
 
 function frameSphereCamera() {
   const portrait = innerWidth < 700 || innerHeight > innerWidth * 1.35;
-  camera.fov = portrait ? 42 : 46;
+  camera.fov = portrait ? 38 : 42;
   camera.aspect = innerWidth / innerHeight;
-  camera.position.set(portrait ? 1.05 : 2.4, portrait ? 0.68 : 0.9, portrait ? 9.2 : 4.4);
-  controls.target.set(0, portrait ? 0.1 : 0, 0);
+  camera.position.set(portrait ? 0.82 : 2.25, portrait ? 0.52 : 0.86, portrait ? 12.2 : 5.65);
+  controls.target.set(0, portrait ? 0.04 : 0, 0);
   camera.updateProjectionMatrix();
   controls.update();
 }
@@ -184,9 +184,12 @@ const root = new THREE.Group(); scene.add(root);
 
 // the sphere (faint wire)
 root.add(new THREE.Mesh(new THREE.SphereGeometry(R, 64, 40),
-  new THREE.MeshBasicMaterial({ color: GOLD, wireframe: true, transparent: true, opacity: 0.09 })));
+  new THREE.MeshBasicMaterial({ color: GOLD, wireframe: true, transparent: true, opacity: 0.055 })));
 // the equator band (gold, φ=ν=1)
-const eq = new THREE.Mesh(new THREE.TorusGeometry(R, 0.02, 16, 200), new THREE.MeshBasicMaterial({ color: GOLD }));
+const eq = new THREE.Mesh(
+  new THREE.TorusGeometry(R, 0.012, 12, 200),
+  new THREE.MeshBasicMaterial({ color: GOLD, transparent: true, opacity: 0.82 })
+);
 eq.rotation.x = Math.PI/2; root.add(eq);
 // the polar axis + pole caps (L0 = L∞, • × ○ = ⊙)
 root.add(new THREE.Mesh(new THREE.CylinderGeometry(0.006, 0.006, R*2.5, 8),
@@ -201,7 +204,7 @@ function triangle(up, color){
   const g = new THREE.BufferGeometry(); const pts = [];
   for (let i = 0; i <= 3; i++){ const a = (up ? 1 : -1) * (i/3) * Math.PI*2 + Math.PI/2; pts.push(R*0.96*Math.cos(a), 0, R*0.96*Math.sin(a)); }
   g.setAttribute('position', new THREE.Float32BufferAttribute(pts, 3));
-  return new THREE.Line(g, new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.32 }));
+  return new THREE.Line(g, new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.18 }));
 }
 root.add(triangle(true, GOLD), triangle(false, TEAL));
 
@@ -219,18 +222,18 @@ function latitudeRing(theta, color, opacity = 0.16) {
 
 POS.forEach((p) => {
   const theta = p.phi * Math.PI / 180;
-  root.add(latitudeRing(theta, p.L === 'L4' ? GOLD : 0x777777, p.L === 'L4' ? 0.3 : 0.12));
+  root.add(latitudeRing(theta, p.L === 'L4' ? GOLD : 0x777777, p.L === 'L4' ? 0.2 : 0.09));
 });
 
-const selectorMat = new THREE.LineBasicMaterial({ color: 0xe8e4df, transparent: true, opacity: 0.56 });
+const selectorMat = new THREE.LineBasicMaterial({ color: 0xe8e4df, transparent: true, opacity: 0.44 });
 const selectorRay = new THREE.Line(
   new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0, 0, 0), new THREE.Vector3(R, 0, 0)]),
   selectorMat
 );
 root.add(selectorRay);
 const selectedLatitude = new THREE.Mesh(
-  new THREE.TorusGeometry(1, 0.012, 12, 160),
-  new THREE.MeshBasicMaterial({ color: WHITE, transparent: true, opacity: 0.38 })
+  new THREE.TorusGeometry(1, 0.008, 10, 160),
+  new THREE.MeshBasicMaterial({ color: WHITE, transparent: true, opacity: 0.3 })
 );
 selectedLatitude.rotation.x = Math.PI / 2;
 root.add(selectedLatitude);
@@ -259,13 +262,13 @@ root.add(balanceStrip.group);
 const markers = [];
 POS.forEach((p, i) => {
   const ph = p.phi * Math.PI/180;
-  const m = new THREE.Mesh(new THREE.SphereGeometry(p.L === 'L4' ? 0.1 : 0.07, 24, 24),
+  const m = new THREE.Mesh(new THREE.SphereGeometry(p.L === 'L4' ? 0.074 : 0.052, 20, 20),
     new THREE.MeshBasicMaterial({ color: p.col }));
   m.position.set(R*Math.sin(ph), R*Math.cos(ph), 0);
   m.userData = { i }; markers.push(m); root.add(m);
   // halo
-  const halo = new THREE.Mesh(new THREE.SphereGeometry((p.L==='L4'?0.16:0.12), 16, 16),
-    new THREE.MeshBasicMaterial({ color: p.col, transparent: true, opacity: 0.08 }));
+  const halo = new THREE.Mesh(new THREE.SphereGeometry((p.L==='L4'?0.11:0.088), 14, 14),
+    new THREE.MeshBasicMaterial({ color: p.col, transparent: true, opacity: 0.045 }));
   halo.position.copy(m.position); root.add(halo);
 });
 
@@ -419,7 +422,7 @@ function select(i, manual = false){
         'clock ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · ' + (scanRunning ? 'SCAN' : 'HOLD') + ' · rate ' + rateValue().toFixed(2) + 'x\n' +
         'tier: [S] sphere chart · [I] operator reading';
   }
-  markers.forEach((m, k) => m.scale.setScalar(k === i ? 1.5 : 1));
+  markers.forEach((m, k) => m.scale.setScalar(k === i ? 1.22 : 1));
   const selected = markers[i].position.clone();
   selectorRay.geometry.setFromPoints([new THREE.Vector3(0, 0, 0), selected]);
   selectedLatitude.position.y = R * Math.cos(theta);

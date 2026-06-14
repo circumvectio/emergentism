@@ -1211,8 +1211,19 @@ noscript {
     flex: 0 0 2rem;
   }
 
+  h1 {
+    max-width: 100%;
+    font-size: clamp(2rem, 9.5vw, 3rem);
+    overflow-wrap: anywhere;
+  }
+
   .visual-panel {
     min-height: 58vh;
+  }
+
+  body.dimension-page .hero-copy,
+  body.dimension-page .subtitle {
+    max-width: 100%;
   }
 
   .route-footer {
