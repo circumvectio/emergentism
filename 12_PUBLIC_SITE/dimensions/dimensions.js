@@ -16,10 +16,13 @@ const TAU = Math.PI * 2;
 const SAMPLE_HZ = 30;
 const SAMPLE_DT = 1 / SAMPLE_HZ;
 const MAX_FRAME_DT = 0.12;
+const INITIAL_ASSAY_SECONDS = 1.6;
+// Skyzai motion discipline: slow drift, no bounce/spring. These are assay
+// cycles, not decorative loops; they must move enough to read in 2-3 seconds.
 const INSTRUMENT_CPS = {
-  slow: 0.008,
-  medium: 0.014,
-  fast: 0.02
+  slow: 0.024,
+  medium: 0.036,
+  fast: 0.052
 };
 function nowMs() {
   return (typeof window.performance !== "undefined" && typeof window.performance.now === "function")
@@ -107,7 +110,7 @@ function smooth01(x) {
   return x * x * (3 - 2 * x);
 }
 
-function assaySweep01(t, cyclesPerSecond = 0.045, holdFraction = 0.08) {
+function assaySweep01(t, cyclesPerSecond = 0.045, holdFraction = 0.035) {
   const hold = Math.max(0, Math.min(0.24, holdFraction));
   const p = ((t * cyclesPerSecond) % 1 + 1) % 1;
   const half = p < 0.5 ? p * 2 : (1 - p) * 2;
@@ -551,7 +554,7 @@ function drawTitanCalculator(time = 0) {
   });
   const playback = ensureInstrumentControls();
   let paused = false;
-  let simTime = 0;
+  let simTime = INITIAL_ASSAY_SECONDS;
   let stepSeconds = 0;
   const sampleClock = createSampleClock();
   let lastFrame = time;
@@ -601,6 +604,7 @@ function drawTitanCalculator(time = 0) {
     const cx = width / 2;
     const cy = height / 2;
     const pad = Math.max(28, Math.min(width, height) * 0.08);
+    const compact = isCompactInstrument(width);
     const left = pad;
     const right = width - pad;
     const axis = cy;
@@ -715,23 +719,25 @@ function drawTitanCalculator(time = 0) {
 
     // titles sit below the top HTML chip and above the bottom one — no overlap
     ctx.fillStyle = ink;
-    ctx.font = "700 13px ui-monospace, SFMono-Regular, Menlo, monospace";
+    ctx.font = (compact ? "700 11px " : "700 13px ") + "ui-monospace, SFMono-Regular, Menlo, monospace";
     ctx.textAlign = "left";
     ctx.fillText("Emergentism logarithmic calculator scale", left, pad + 44);
     ctx.fillStyle = muted;
-    ctx.font = "12px ui-monospace, SFMono-Regular, Menlo, monospace";
+    ctx.font = (compact ? "10px " : "12px ") + "ui-monospace, SFMono-Regular, Menlo, monospace";
     ctx.fillText("x ↦ 1/x mirrors s ↦ -s around unity", left, pad + 64);
 
-    ctx.textAlign = "right";
-    ctx.fillStyle = ink;
-    ctx.fillText("⊙ = • × ○", right, height - pad - 48);
-    ctx.fillStyle = muted;
-    ctx.fillText("frame/register doctrine, not field arithmetic", right, height - pad - 28);
+    if (!compact) {
+      ctx.textAlign = "right";
+      ctx.fillStyle = ink;
+      ctx.fillText("⊙ = • × ○", right, height - pad - 48);
+      ctx.fillStyle = muted;
+      ctx.fillText("frame/register doctrine, not field arithmetic", right, height - pad - 28);
+    }
 
     if (!REDUCED_MOTION) scheduleFrame(draw);
   }
 
-  draw(0);
+  draw(INITIAL_ASSAY_SECONDS);
 }
 
 function drawConstitutionInstrument(time = 0) {
@@ -2198,7 +2204,7 @@ async function boot() {
     const overlay = ensureInstrumentOverlay(animationMode);
     const playback = ensureInstrumentControls();
     let paused = false;
-    let simTime = 0;
+    let simTime = INITIAL_ASSAY_SECONDS;
     let stepSeconds = 0;
     const sampleClock = createSampleClock();
     if (playback) {
@@ -2278,14 +2284,14 @@ async function boot() {
     resize();
     window.addEventListener("resize", resize);
     visual.dataset.instrumentSample = REDUCED_MOTION ? "sample static" : sampleClock.label();
-    renderInstrumentFrame(REDUCED_MOTION ? 1.2 : 0, 0, true);
+    renderInstrumentFrame(REDUCED_MOTION ? INITIAL_ASSAY_SECONDS : simTime, 0, true);
 
     if (REDUCED_MOTION) {
       // static render: one calibrated frame now, re-render only on interaction/resize
-      controls.addEventListener("change", () => renderInstrumentFrame(1.2, 0, true));
+      controls.addEventListener("change", () => renderInstrumentFrame(INITIAL_ASSAY_SECONDS, 0, true));
       window.addEventListener("resize", () => {
         resize();
-        renderInstrumentFrame(1.2, 0, true);
+        renderInstrumentFrame(INITIAL_ASSAY_SECONDS, 0, true);
       });
       return;
     }
