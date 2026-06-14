@@ -124,7 +124,10 @@ directly (the only available lever):
 	        `P_node,i` / `P_node,H`; later normalized the conditional is-ought
 	        wording from closure to bypass and made the displayed Power-Max
 	        condition include multiplicative `P_node`, long horizon, and enforced
-	        `η = 0`.
+	        `η = 0`; later mirrored the action-register repair that keeps lowercase
+	        `φ` / `ν` as sphere coordinates, uppercase `Φ` / `V` as finite-node
+	        action factors, and L4 balance as the feasibility surface rather than
+	        the object maximized.
   - value/00-the-good-the-evil-and-the-transcendentals/ : added the claim-boundary
         lead for knowledge of good and evil: good = both `P_node,i` and `P_node,H`
         rise under `η = 0`; evil = one side's apparent gain degrades the other;

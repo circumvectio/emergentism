@@ -104,7 +104,7 @@ Each mapping is a **verification**. Each mapping shows that P∞ = φ · ν = 1 
 | Ammit | South pole | Cargo cult, collapse |
 | Field of Reeds | Equator (experienced) | Paradise, liberation |
 
-**Key insight:** The Weighing of the Heart (3,000 BCE) encodes P∞ = φ · ν = 1. The heart must balance the feather. The equator is the goal.
+**Key insight:** The Weighing of the Heart (3,000 BCE) encodes P∞ = φ · ν = 1. The heart must balance the feather. The equator is the balance gate: the feasibility surface where judgment can pass without either side consuming the other, not the object maximized.
 
 **Documents:**
 - Summary: [00_ROSETTA_R4_SUMMARY.md](D23_ROSETTA_COMPLETE_INDEX.md)

@@ -79,11 +79,12 @@ P_node,i = Φ_i × V_i
 P_node,H = Φ_H × V_H
 ΔP_node  = change in reachable future / effective potential at a tested node
 ΔP       = local shorthand only; directionally specify ΔP_node,i or ΔP_node,H
-Φ      = coherence, fit, directness, integrity of relation
-       = in the action register, D5 worldline-foresight
-V      = viability, continuation, means-to-act
-       = in the action register, D4 means at the boundary:
-         body, tools, energy, access, execution capacity
+Φ      = in the action register, D5 worldline-foresight:
+         truthful relation, coherence, fit, directness, integrity, and the
+         ability to envision reachable futures without capture
+V      = in the action register, D4 means-to-act:
+         viability, continuation, body, tools, energy, access, execution
+         capacity, and material boundary control
 η = 0  = no hidden rent, no extraction disguised as service
 ```
 
@@ -91,9 +92,12 @@ V      = viability, continuation, means-to-act
 explicitly marks the passage as analogy. In this document it is only a local
 shorthand for the node whose boundary is being tested; when morality/ethics
 direction matters, write `ΔP_node,i` and `ΔP_node,H`. `V` is not physics
-velocity. `Φ` is not a physical potential field. Lowercase `v`, `φ`, and `Δp`
-are public shorthand; inside canon, normalize them to `V`, `Φ`, and
-`ΔP_node`.
+velocity. `Φ` is not a physical potential field. Lowercase `φ` and `ν` remain
+the reciprocal sphere coordinates; uppercase `Φ` and `V` are the finite-node
+action factors. Do not normalize lowercase sphere notation into uppercase
+action notation unless the passage explicitly changes register. Lowercase `Δp`
+is informal shorthand only; inside canon, write `ΔP_node` with the tested
+boundary specified.
 
 `Individual` and `collective` name relative positions in a boundary relation.
 They are not value ranks. A person, family, institution, organism, city, or DAV
@@ -315,12 +319,15 @@ This is `[S]` as a conditional framework theorem under the Power-Max conditions;
 
 ### The Equator Is the Moral-Ethical Fixed Point
 
-L4 (`φ = ν = 1`, `B = 1`) is the point where both vectors are maximal at once:
-the individual fully raised by the collective and fully raising it. It is
-non-arbitrary inside the model because `(φ - ν)^2 >= 0` has its hard floor at
-the equator, so there is no "more balanced than balanced" within the coordinate
-grammar. Morality and ethics are read as one act there. This is why Axiology
-sits at L4: the value layer is the equator made practical. `[S/I]`
+L4 (`φ = ν = 1`, `B = 1`) is the point where both vectors can be jointly scored
+without either side zeroing the dyad: the individual is raised by the collective
+and returns value into it. It is non-arbitrary inside the model because
+`(φ - ν)^2 >= 0` has its hard floor at the equator, so there is no "more
+balanced than balanced" within the coordinate grammar. Balance is still the
+feasibility surface, not the object maximized; the object is durable usable
+worldline potential under `η = 0`. Morality and ethics are read as one act at
+that surface. This is why Axiology sits at L4: the value layer is the equator
+made practical. `[S/I]`
 
 ### The Is/Ought Dissolution
 
