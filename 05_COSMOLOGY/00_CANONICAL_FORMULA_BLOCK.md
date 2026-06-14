@@ -121,7 +121,7 @@ has its own regime. When compressing, name the regime explicitly:
 |---|---|---|---|
 | `P∞ = φ · ν = 1` | The manifold identity on open S² | Conserved on the open sphere; the poles are limiting boundaries where φ or ν is undefined | `[S]` / definition |
 | `B = sin θ` | Balance / equatorial alignment | Varies from 0 at the poles to 1 at the equator | `[S]` |
-| `P_node = Φ × V` | Effective potential at a finite node (organism, institution, DAC) | Can be less than 1 when D5 coherence/worldline-foresight (`Φ`) and D4 means-to-act (`V`) are not reciprocally calibrated | `[S/I]` |
+| `P_node = Φ × V` | Effective potential at a finite node (organism, institution, DAC) | Can be less than 1 when the uppercase node factors — D5 foresight/coherence (`Φ`) and D4 means-to-act/viability (`V`) — are not coupled at the action boundary. These are not the lowercase sphere coordinates `φ,ν`. | `[S/I]` |
 | `ΣΔB`, `ΣΔP_node` | Directional change across the widest relevant boundary | Evaluates outcome deltas, not operator prestige | `[I]` |
 
 **Disambiguation convention:** do not use `P` bare in source-truth

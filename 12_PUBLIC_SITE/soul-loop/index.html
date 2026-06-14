@@ -334,6 +334,7 @@
       controls.innerHTML = `
         <button type="button" data-action="hold" aria-pressed="false">HOLD</button>
         <button type="button" data-action="step">STEP</button>
+        <button type="button" data-action="zero">ZERO</button>
         <label>
           <span>rate</span>
           <input type="range" min="25" max="150" step="5" value="100" aria-label="Soul Loop simulation rate">
@@ -344,6 +345,7 @@
     return {
       hold: controls.querySelector('[data-action="hold"]'),
       step: controls.querySelector('[data-action="step"]'),
+      zero: controls.querySelector('[data-action="zero"]'),
       rate: controls.querySelector('input[type="range"]')
     };
   })();
@@ -363,6 +365,15 @@
       paused = true;
       stepMs += STEP_MS / 12;
       syncPlayback();
+    });
+    playback.zero.addEventListener('click', () => {
+      paused = true;
+      simTime = 0;
+      stepMs = 0;
+      sampleAccumulatorMs = 0;
+      sampleIndex = 0;
+      syncPlayback();
+      draw(0, false);
     });
     syncPlayback();
   }
@@ -451,7 +462,7 @@
     };
   }
 
-  function draw(frameTime = 0) {
+  function draw(frameTime = 0, schedule = true) {
     const dt = lastFrame ? Math.max(1, frameTime - lastFrame) : 16.7;
     fps = fps ? fps * 0.9 + (1000 / dt) * 0.1 : 1000 / dt;
     lastFrame = frameTime;
@@ -595,16 +606,15 @@
           (paused ? 'held sample' : 'run') + ' · gather/check/serve/see/dissolve/preserve';
     }
 
-    if (!REDUCED_MOTION) requestAnimationFrame(draw);
+    if (!REDUCED_MOTION && schedule) requestAnimationFrame(draw);
   }
 
   resize();
   window.addEventListener('resize', () => {
     resize();
-    if (REDUCED_MOTION) draw(0);
+    if (REDUCED_MOTION) draw(0, false);
   });
-  if (REDUCED_MOTION) draw(0);
-  else requestAnimationFrame(draw);
+  draw(0);
 })();
 </script>
 <script defer src="/assets/js/atlas-drawer.js"></script>

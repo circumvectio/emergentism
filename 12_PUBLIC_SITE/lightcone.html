@@ -51,6 +51,7 @@
 <div class="instrument-controls standalone-controls" id="lightcone-controls">
   <button type="button" id="lc-hold" aria-pressed="false">HOLD</button>
   <button type="button" id="lc-step">STEP</button>
+  <button type="button" id="lc-zero">ZERO</button>
   <label>
     <span>rate</span>
     <input id="lc-rate" type="range" min="25" max="150" step="5" value="100" aria-label="lightcone simulation rate" />
@@ -130,10 +131,15 @@ for (let i = 0; i < 12; i += 1) {
 }
 scene.add(calibration);
 
-// the forward light cone (rebuilt each frame as it widens + lengthens)
+// the forward light cone: fixed buffers, calibrated per sample.
 const RINGS = 5, SPOKES = 48;
+const CONE_SEGMENTS = RINGS * SPOKES + Math.ceil(SPOKES / 3);
+const CONE_COORDS = CONE_SEGMENTS * 2 * 3;
+const futureConePositions = new Float32Array(CONE_COORDS);
+const pastConePositions = new Float32Array(CONE_COORDS);
 const coneMat = new THREE.LineBasicMaterial({ color: GOLD, transparent: true, opacity: 0.9 });
 const coneGeo = new THREE.BufferGeometry();
+coneGeo.setAttribute('position', new THREE.BufferAttribute(futureConePositions, 3));
 const cone = new THREE.LineSegments(coneGeo, coneMat);
 scene.add(cone);
 // translucent interior (a translatable cone mesh)
@@ -142,32 +148,40 @@ const fill = new THREE.Mesh(new THREE.ConeGeometry(1, 1, 48, 1, true), fillMat);
 scene.add(fill);
 // a faint past cone (downward, dim)
 const pastMat = new THREE.LineBasicMaterial({ color: TEAL, transparent: true, opacity: 0.25 });
-const past = new THREE.LineSegments(new THREE.BufferGeometry(), pastMat);
+const pastGeo = new THREE.BufferGeometry();
+pastGeo.setAttribute('position', new THREE.BufferAttribute(pastConePositions, 3));
+const past = new THREE.LineSegments(pastGeo, pastMat);
 scene.add(past);
 // the worldline rising up the time axis
 const wl = new THREE.Line(new THREE.BufferGeometry(), new THREE.LineBasicMaterial({ color: 0xe8e4df, transparent:true, opacity:0.5 }));
 scene.add(wl);
 
-function coneSegments(height, angle, dir){ // dir +1 future, -1 past
-  const r = height * Math.tan(angle), segs = [];
+function writeConeSegments(target, height, angle, dir){ // dir +1 future, -1 past
+  const r = height * Math.tan(angle);
+  let n = 0;
+  const push = (x0, y0, z0, x1, y1, z1) => {
+    target[n++] = x0; target[n++] = y0; target[n++] = z0;
+    target[n++] = x1; target[n++] = y1; target[n++] = z1;
+  };
   for (let k = 1; k <= RINGS; k++){
     const h = (k / RINGS) * height, rr = (k / RINGS) * r, y = dir * h;
     for (let i = 0; i < SPOKES; i++){
       const a0 = i/SPOKES*Math.PI*2, a1 = (i+1)/SPOKES*Math.PI*2;
-      segs.push(rr*Math.cos(a0), y, rr*Math.sin(a0), rr*Math.cos(a1), y, rr*Math.sin(a1)); // ring
+      push(rr*Math.cos(a0), y, rr*Math.sin(a0), rr*Math.cos(a1), y, rr*Math.sin(a1)); // ring
     }
   }
   for (let i = 0; i < SPOKES; i += 3){ // spokes from apex to rim
     const a = i/SPOKES*Math.PI*2;
-    segs.push(0,0,0, r*Math.cos(a), dir*height, r*Math.sin(a));
+    push(0,0,0, r*Math.cos(a), dir*height, r*Math.sin(a));
   }
-  return new Float32Array(segs);
+  return n / 3;
 }
 
 const mFill = document.getElementById('m-fill'), mLabel = document.getElementById('m-label');
 const readout = document.getElementById('stage-readout');
 const holdButton = document.getElementById('lc-hold');
 const stepButton = document.getElementById('lc-step');
+const zeroButton = document.getElementById('lc-zero');
 const rateInput = document.getElementById('lc-rate');
 const telemetry = document.getElementById('lightcone-telemetry');
 let simTime = 0;
@@ -222,6 +236,19 @@ if (stepButton) {
     syncPlayback();
   });
 }
+if (zeroButton) {
+  zeroButton.addEventListener('click', () => {
+    paused = true;
+    stepSeconds = 0;
+    simTime = 0;
+    sampleAccumulator = 0;
+    sampleIndex = 0;
+    lastOmegaProxy = 0;
+    lastSampleT = 0;
+    syncPlayback();
+    updateInstrument(performance.now(), 0);
+  });
+}
 syncPlayback();
 
 function updateInstrument(frameTime = performance.now(), poseOffset = null){
@@ -238,7 +265,7 @@ function updateInstrument(frameTime = performance.now(), poseOffset = null){
   const t = REDUCED_MOTION ? simTime || 1.2 : simTime;
   // F5/Ω drive in the interpretive register: the cone widens and lengthens on
   // a measured cycle, without claiming a new settled physical force.
-  const cyc = (Math.sin(t * 0.32) + 1) / 2;            // 0..1 calibrated sweep
+  const cyc = (1 - Math.cos(t * 0.32)) / 2;            // 0..1 calibrated sweep, zeroed at t=0
   const ease = cyc * cyc * (3 - 2 * cyc);
   const angle = (16 + ease * 17.5) * Math.PI / 180;     // 16°..33.5° (widen)
   const height = 1.25 + ease * 1.95;                     // lengthen without clipping
@@ -249,9 +276,9 @@ function updateInstrument(frameTime = performance.now(), poseOffset = null){
   const omegaRate = sampleDt ? (omegaProxy - lastOmegaProxy) / sampleDt : 0;
   lastOmegaProxy = omegaProxy;
   lastSampleT = t;
-  coneGeo.setAttribute('position', new THREE.BufferAttribute(coneSegments(height, angle, 1), 3));
+  coneGeo.setDrawRange(0, writeConeSegments(futureConePositions, height, angle, 1));
   coneGeo.attributes.position.needsUpdate = true;
-  past.geometry.setAttribute('position', new THREE.BufferAttribute(coneSegments(height*0.55, angle, -1), 3));
+  pastGeo.setDrawRange(0, writeConeSegments(pastConePositions, height*0.55, angle, -1));
   past.geometry.attributes.position.needsUpdate = true;
   // interior cone matches by scale; no per-frame geometry allocation.
   fill.scale.set(radius, height, radius);
