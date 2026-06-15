@@ -68,6 +68,18 @@ table.tx td:first-child{color:var(--gold);font-weight:600;white-space:nowrap}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--shape-lg);padding:1.1rem 1.3rem;margin-top:1rem}
 .card h4{margin:0 0 .35rem;font-size:1.02rem;color:var(--cold)}
 .card p{margin:.3rem 0 0;color:var(--bone-dim);font-size:.95rem}
+.game-readout{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line-soft);border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:1.2rem 0 1rem}
+.readout-cell{min-width:0;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012)),var(--panel);padding:1rem 1rem .95rem;border-top:2px solid var(--line)}
+.readout-cell:nth-child(1){border-top-color:var(--gold)}
+.readout-cell:nth-child(2){border-top-color:var(--sector-insurance)}
+.readout-cell:nth-child(3){border-top-color:var(--sector-finance)}
+.readout-cell:nth-child(4){border-top-color:var(--sector-real-infra)}
+.readout-cell span{display:block;font-family:var(--mono);font-size:.64rem;color:var(--bone-faint);text-transform:uppercase;letter-spacing:0;margin-bottom:.4rem}
+.readout-cell strong{display:block;font-size:.96rem;line-height:1.25;margin-bottom:.35rem}
+.readout-cell p{margin:0;color:var(--bone-dim);font-size:.84rem;line-height:1.45}
+.rule-code{font-family:var(--mono);font-size:13px;line-height:1.7;border:1px solid rgba(255,255,255,.14);border-radius:8px;padding:16px 18px;overflow-x:auto;margin:14px 0;color:var(--bone-dim);background:rgba(0,0,0,.18);white-space:pre-wrap}
+.handle-strip{display:flex;flex-wrap:wrap;gap:.4rem;margin:1rem 0 1.1rem}
+.handle-strip span{font-family:var(--mono);font-size:.66rem;color:var(--bone-faint);border:1px solid var(--line-soft);border-radius:999px;padding:.24rem .55rem;background:rgba(255,255,255,.025)}
 .cap{color:var(--bone-faint);font-size:.92rem;margin-top:.9rem}
 .walk{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.2rem}
 .walk a{display:inline-flex;min-height:var(--target-min);align-items:center;font-family:var(--mono);font-size:.82rem;text-decoration:none;color:var(--cream);border:1px solid var(--line);border-radius:999px;padding:0 .95rem}
@@ -75,7 +87,8 @@ table.tx td:first-child{color:var(--gold);font-weight:600;white-space:nowrap}
 footer{padding:2.4rem 0 4rem;color:var(--bone-faint);font-family:var(--mono);font-size:.78rem;text-align:center}
 footer .phi{color:var(--gold);font-size:1.1rem;margin-bottom:.5rem}
 @media(prefers-reduced-transparency:reduce){header.top{background:var(--void);backdrop-filter:none}}
-@media(max-width:680px){.moves{grid-template-columns:1fr}}
+@media(max-width:860px){.game-readout{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.moves,.game-readout{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -135,16 +148,46 @@ Know how to act   → teleology</pre>
   <section>
     <h2><span class="n">The goal</span>How to play</h2>
     <p class="sec-lede">The game has a declared goal — the framework's <strong>Ω</strong>, the +1 the
-      five refusals clear the space for: <em>teach Dasein how to play — see clearly, act lawfully,
-      balance Φ and V, raise symbiont and holobiont together, and recursively correct the map until
-      life moves as objective dharma.</em> Handles: living worldview for Dasein; source-true ontology;
-      finite reader emerges; maximum usable P_node; balancing Φ and V; individual symbiont and
-      collective holobiont; objective moral compass; evil / extraction; Φ without V; V without Φ;
-      D5 Landauer Barrier; omega holobiont cannot close; D5-limit universal holobiont; /6 CCC return;
-      endstate = start;
-      Maxwell-demon-like worldline selection; entropy cost; flow state; Krishna; Gita. The five Knows in plain order are ontology, epistemology,
-      methodology, axiology, teleology. The rule card:</p>
-    <pre style="font-family:'Roboto Mono',monospace;font-size:13px;line-height:1.7;border:1px solid rgba(255,255,255,.14);border-radius:6px;padding:16px 18px;overflow-x:auto;margin:14px 0">Know what is:      ontology     → Ground, Being, Teleological Force, Dasein, beings
+      five refusals clear the space for: <em>teach Dasein how to play.</em> See clearly, act lawfully,
+      balance <code>Φ</code> and <code>V</code>, raise symbiont and holobiont together, and recursively
+      correct the map until action can move as objective dharma.</p>
+    <div class="game-readout" aria-label="Game rule readout">
+      <div class="readout-cell">
+        <span>Objective</span>
+        <strong>Widen usable futures</strong>
+        <p>Maximize durable <code>W_i(T)</code> through contact-register <code>P_node = Φ × V</code>.</p>
+      </div>
+      <div class="readout-cell">
+        <span>Constraint</span>
+        <strong>Non-extraction</strong>
+        <p>The move is lawful only where <code>P_node,i</code> and <code>P_node,H</code> preserve or raise one another.</p>
+      </div>
+      <div class="readout-cell">
+        <span>Failure</span>
+        <strong>One side zeroes the move</strong>
+        <p><code>Φ</code> without <code>V</code> is sterile seeing; <code>V</code> without <code>Φ</code> is blind force.</p>
+      </div>
+      <div class="readout-cell">
+        <span>Method</span>
+        <strong>Loop until receipt</strong>
+        <p>Name, tier, test, act, record, and re-enter through the Soul Loop.</p>
+      </div>
+    </div>
+    <div class="handle-strip" aria-label="Retrieval handles">
+      <span>living worldview for Dasein</span>
+      <span>finite reader emerges</span>
+      <span>balancing Φ and V</span>
+      <span>syntropic dyad</span>
+      <span>objective moral compass</span>
+      <span>D5 Landauer Barrier</span>
+      <span>omega holobiont cannot close</span>
+      <span>/6 CCC return</span>
+      <span>entropy cost</span>
+      <span>flow-state action</span>
+    </div>
+    <p class="sec-lede">The five Knows in plain order are ontology, epistemology, methodology,
+      axiology, and teleology. The rule card:</p>
+    <pre class="rule-code">Know what is:      ontology     → Ground, Being, Teleological Force, Dasein, beings
 Know how to know:  epistemology → disclosure, inference, evidence tiers
 Know how to move:  methodology  → derive, test, build, correct, recurse
 Know what matters: axiology     → Beauty, Truth, Justice, non-extraction
