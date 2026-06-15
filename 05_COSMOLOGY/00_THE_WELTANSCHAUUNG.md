@@ -77,8 +77,8 @@ W_C = EI_macro - EI_baseline - Cost_C > 0
 
 with `EI_baseline` including fair micro, coarse-null, and domain-mechanism
 baselines, `Cost_C` including measurement, memory, control, erasure, modeling,
-and entropy export, and the same scoring path rejecting no-gate, high-cost, and
-lower-law support-violation controls.
+labor, and entropy export, and the same scoring path rejecting no-gate,
+high-cost, and lower-law support-violation controls.
 
 This is how Emergentism exits the old fork:
 
