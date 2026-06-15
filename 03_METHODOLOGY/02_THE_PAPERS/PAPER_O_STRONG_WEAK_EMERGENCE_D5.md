@@ -26,9 +26,9 @@ Menexus GmbH, 2026
 view becomes a costed effective information witness:
 `W_C = EI_macro - EI_baseline - Cost_C > 0`, with `EI_baseline` including fair
 micro, coarse-null, and domain-mechanism baselines, and `Cost_C` including
-`Cost_entropy_export`. If `C` is not perturbable, or if the macro model wins
-only by blinding the lower model or hiding costs, the claim contracts to
-explanatory language.
+`Cost_labor` and `Cost_entropy_export`. If `C` is not perturbable, or if the
+macro model wins only by blinding the lower model or hiding costs, the claim
+contracts to explanatory language.
 
 ---
 

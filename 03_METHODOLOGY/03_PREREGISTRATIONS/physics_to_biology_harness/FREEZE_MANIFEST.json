@@ -6,15 +6,16 @@
   ],
   "evidence_tier": "[B] toy-model receipt only; [C] for biology",
   "file_hashes": {
-    "README.md": "61593adf67d641b63af448dcde1a8df39f4ee9e77ddfc71489f8b77701c14efb",
-    "test_vesicle_macro_constraint.py": "695e4fc17232577a17d64f5151456bcd4fb85b8caa24ece20d43e8468b60cd38",
-    "vesicle_macro_constraint.py": "bd506ad7c655fbe2a866a8da9737aeaaccfaadc5b93746b0c80e9f083604fd1e"
+    "README.md": "3444b444cecdb427c9db1ef2b31b2ceea90b32b8a64fd6ed0b5b1d5eb55a3868",
+    "test_vesicle_macro_constraint.py": "bed004620c2823e626175c5ce29941979ba84392360c9c2f9aa3f10fbc7b7188",
+    "vesicle_macro_constraint.py": "888136f2ec5a48d1182f86d679db86aecd892aa6a7f0baed64efae401b3ec551"
   },
   "frozen_objects": {
     "Cost_C": {
       "Cost_control": 0.015,
       "Cost_entropy_export": 0.01,
       "Cost_erasure": 0.005,
+      "Cost_labor": 0.01,
       "Cost_measure": 0.01,
       "Cost_memory": 0.01,
       "Cost_model": 0.01
@@ -41,21 +42,21 @@
       "description": "C changes the macro channel, but the declared cost ledger overwhelms surplus.",
       "ei_macro_minus_baseline": "0.485356",
       "passes_macro_constraint": false,
-      "w_c": "-0.564644"
+      "w_c": "-0.574644"
     },
     "no_gate": {
       "description": "C is identical to K_X; perturbability and surplus must fail.",
       "passes_macro_constraint": false,
       "perturbation_kl": "0.000000",
-      "w_c": "-0.060000"
+      "w_c": "-0.070000"
     }
   },
   "report_file": "vesicle_macro_constraint_report.json",
-  "report_sha256": "eae7f2e8ddb104ed63614adced9845c26c10d1e01c23304c9c70f300b5563e10",
+  "report_sha256": "5e4f878e0786c1e90cf15a062846362f934cd10788bb56d877d34bf289dc9bb8",
   "report_witness": {
     "perturbation_kl": "0.141286",
     "support_subset": true,
-    "syn_c": "0.785347",
-    "w_c": "0.425356"
+    "syn_c": "0.775347",
+    "w_c": "0.415356"
   }
 }

@@ -116,10 +116,10 @@ These tests are informative. They are not decisive. They test operationalization
 - **Why it matters:** This is the cleanest test of Emergentism's operational
   escape from weak/strong emergence. The macro layer may not violate chemistry;
   it must change lower-law-admissible trajectory topology and beat fair
-  baselines after measurement, memory, control, erasure, modeling, and
+  baselines after measurement, memory, control, erasure, modeling, labor, and
   entropy-export costs.
 - **Status:** Toy vesicle harness executed with a `[B]` receipt for the method:
-  `W_C=0.425356`, `SYN_C=0.785347`, `KL=0.141286`, and no-gate, high-cost, and
+  `W_C=0.415356`, `SYN_C=0.775347`, `KL=0.141286`, and no-gate, high-cost, and
   forbidden-support negative controls reject. No biology-facing domain upgrade
   exists yet.
 - **Evidence tier if confirmed in a real domain:** `[B]` for the frozen domain

@@ -42,6 +42,7 @@
     "cost_control": 0.015,
     "cost_entropy_export": 0.01,
     "cost_erasure": 0.005,
+    "cost_labor": 0.01,
     "cost_measure": 0.01,
     "cost_memory": 0.01,
     "cost_model": 0.01,
@@ -58,6 +59,7 @@
     "Cost_control": 0.015,
     "Cost_entropy_export": 0.01,
     "Cost_erasure": 0.005,
+    "Cost_labor": 0.01,
     "Cost_measure": 0.01,
     "Cost_memory": 0.01,
     "Cost_model": 0.01
@@ -80,13 +82,13 @@
       "description": "C changes the macro channel, but the declared cost ledger overwhelms surplus.",
       "ei_macro_minus_baseline": "0.485356",
       "passes_macro_constraint": false,
-      "w_c": "-0.564644"
+      "w_c": "-0.574644"
     },
     "no_gate": {
       "description": "C is identical to K_X; perturbability and surplus must fail.",
       "passes_macro_constraint": false,
       "perturbation_kl": "0.000000",
-      "w_c": "-0.060000"
+      "w_c": "-0.070000"
     }
   },
   "passes_macro_constraint": true,
@@ -98,15 +100,15 @@
     "delta_macro_state_preservation": 0.1411917598555742,
     "delta_viable_reachability": 0.005827410482074358,
     "delta_viable_stability": 0.2187988278972276,
-    "syn_c": 0.7853469772655682
+    "syn_c": 0.7753469772655683
   },
   "witness": {
-    "cost_c": 0.060000000000000005,
+    "cost_c": 0.07,
     "ei_baseline": 0.7496804124115818,
     "ei_coarse_null": 0.7496804124115818,
     "ei_domain": 0.7496804124115818,
     "ei_macro": 1.2350368019243483,
     "ei_micro_fair": 0.7496804124115818,
-    "w_c": 0.4253563895127665
+    "w_c": 0.4153563895127665
   }
 }

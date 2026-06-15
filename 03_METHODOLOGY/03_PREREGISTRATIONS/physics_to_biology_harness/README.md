@@ -25,24 +25,24 @@ The harness declares:
 - `pi: X -> Y`: macro map to `low`, `viable`, and `high`
 - `G_C`: membrane gate that preserves macro concentration topology without
   adding lower-law-forbidden transitions
-- `Cost_C`: measurement, memory, control, erasure, model, and entropy-export
-  ledger
+- `Cost_C`: measurement, memory, control, erasure, model, labor, and
+  entropy-export ledger
 - witness: `W_C = EI_macro - EI_baseline - Cost_C`
 - perturbability: average macro-channel `D_KL(C || notC)`
 
 Current deterministic report:
 
 ```text
-W_C   = 0.425356
-SYN_C = 0.785347
+W_C   = 0.415356
+SYN_C = 0.775347
 KL    = 0.141286
 ```
 
 Negative controls:
 
 ```text
-no_gate        = rejected; KL=0.000000, W_C=-0.060000
-high_cost      = rejected; EI gain=0.485356, W_C=-0.564644
+no_gate        = rejected; KL=0.000000, W_C=-0.070000
+high_cost      = rejected; EI gain=0.485356, W_C=-0.574644
 forbidden_edge = rejected; support violation detected
 all_controls_reject = true
 ```

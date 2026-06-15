@@ -52,6 +52,7 @@ class VesicleMacroConstraintTests(unittest.TestCase):
         self.assertEqual(parsed["evidence_tier"], "[B] toy-model receipt only; [C] for biology")
         self.assertIn("not biological evidence", parsed["claim_boundary"])
         self.assertIn("support(K_X^C) subset support(K_X)", parsed["closure"])
+        self.assertIn("Cost_labor", parsed["cost_ledger"])
         self.assertIn("Cost_entropy_export", parsed["cost_ledger"])
         self.assertIn("negative_controls", parsed)
 
@@ -65,8 +66,8 @@ class VesicleMacroConstraintTests(unittest.TestCase):
 
         self.assertEqual(manifest["manifest_version"], "macro-constraint-freeze-v1")
         self.assertEqual(manifest["evidence_tier"], "[B] toy-model receipt only; [C] for biology")
-        self.assertEqual(manifest["report_witness"]["w_c"], "0.425356")
-        self.assertEqual(manifest["report_witness"]["syn_c"], "0.785347")
+        self.assertEqual(manifest["report_witness"]["w_c"], "0.415356")
+        self.assertEqual(manifest["report_witness"]["syn_c"], "0.775347")
         self.assertEqual(manifest["report_witness"]["perturbation_kl"], "0.141286")
         self.assertTrue(manifest["negative_controls"]["all_controls_reject"])
         self.assertIn("X", manifest["frozen_objects"])

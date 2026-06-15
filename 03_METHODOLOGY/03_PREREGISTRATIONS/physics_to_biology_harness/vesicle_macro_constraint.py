@@ -37,6 +37,7 @@ class VesicleConfig:
     cost_control: float = 0.015
     cost_erasure: float = 0.005
     cost_model: float = 0.01
+    cost_labor: float = 0.01
     cost_entropy_export: float = 0.01
 
 
@@ -180,6 +181,7 @@ def cost_ledger(config: VesicleConfig) -> dict[str, float]:
         "Cost_control": config.cost_control,
         "Cost_erasure": config.cost_erasure,
         "Cost_model": config.cost_model,
+        "Cost_labor": config.cost_labor,
         "Cost_entropy_export": config.cost_entropy_export,
     }
 
