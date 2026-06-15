@@ -19,6 +19,15 @@ literally. The CONSERVATION half is not recovered — Φ-as-depth saturates and
 oscillates, no conserved hyperbola family, and real budgets buy reliability,
 not depth. R10 splits into R10a (supported) and R10b (open, weakened).**
 
+**V3 UPDATE (2026-06-15) — the open fork is now run (§7).** Depth-vs-depth mutual
+modeling does **not** recover R10b. It yields a **positional arms race**: depth is
+a strictly relative good (a total order — deeper always wins), both agents run to
+the boundary, and the advantage is **competed to zero** at the reflexive
+equilibrium. R10a's product form and the exact zero-factor reproduce a **third**
+time; F-E2-4 strengthens to a strict total order. The depth-axis route to a
+conserved `φ·ν` law is now **closed** — what survives at contact is, triply, the
+product form and its catastrophe, never the conservation.
+
 **Artifacts:** [E2_SUPPORT_REFLEXIVE_EMPOWERMENT_SIM.py](E2_SUPPORT_REFLEXIVE_EMPOWERMENT_SIM.py)
 (V1: both games), [E2_SUPPORT_REFLEXIVE_EMPOWERMENT_SIM_V2.py](E2_SUPPORT_REFLEXIVE_EMPOWERMENT_SIM_V2.py)
 (V2: contact game, depth-graded opponents). Registered predictions in each
@@ -151,14 +160,18 @@ directions.
   truth to be retired**: the *product* survives; the *conserved product* does
   not (in these games).
 
-## 6. Limitations and the open fork (V3, designed, NOT run)
+## 6. Limitations and the open fork (V3 — now RUN, see §7)
 
 1. Both games use **fixed** opponent populations; true depth-vs-depth mutual
    modeling (the spec's sender–receiver-with-nested-beliefs option, or k vs
    k_opp tournaments) might unsaturate Φ where fixed automata cannot. That is
    the remaining live route for R10b. Pre-registered expectation if run:
    relational depth effects (F-E2-4) strengthen; a conserved product remains
-   unlikely.
+   unlikely. **RUN 2026-06-15 (§7): the expectation held in both directions —
+   relational depth strengthened to a strict total order, and the conserved
+   product is still absent. Φ did *un*saturate (depth now strictly dominates,
+   the opposite of V2), but toward a positional arms race, not a conservation
+   law. R10b's depth-axis route closed.**
 2. The receding-horizon parity oscillation is an instrument property of
    finite-horizon DP as much as a phenomenon; a discounted-infinite-horizon
    planner would remove it (and likely flatten the k-axis further, against
@@ -166,3 +179,120 @@ directions.
 3. Quantization (Game A) makes V non-monotone in `c` at low bits — real but
    it adds fit noise; the contour extractor failed on plateaued regions of
    the smooth payoff (reported as ambiguous, not forced).
+
+## 7. V3 — depth-vs-depth mutual modeling: the arms race, not the conservation law
+
+**Status:** Executed 2026-06-15, the open fork of §6 item 1.
+[E2_SUPPORT_REFLEXIVE_EMPOWERMENT_SIM_V3.py](E2_SUPPORT_REFLEXIVE_EMPOWERMENT_SIM_V3.py)
+— a 2-player p-beauty cognitive-hierarchy tournament (my depth `k_A` vs opponent
+depth `k_B`) plus a depth-mixed trembling population for the surface and budget
+legs. Registered predictions in the docstring, written before first run.
+Deterministic, stdlib, no sampling. **Verdict: R10b is still NOT recovered — and
+now we see why mutual modeling structurally cannot supply a conservation law. The
+second modeler creates a POSITIONAL ARMS RACE, not a conserved product: depth is
+a strictly relative good, both agents run to the boundary, and the advantage is
+competed to zero at the reflexive equilibrium. R10a's product form and the exact
+zero-factor reproduce a third time; F-E2-4 strengthens from "one step ahead" to a
+strict total order.**
+
+### Results (verbatim, key lines)
+
+```
+L1 tournament W(k_A,k_B) [P(A closer to target)+½P(tie), no trembles]:
+   W = 1.00 whenever k_A > k_B, 0.50 on the diagonal, 0.00 whenever k_A < k_B
+   argmax_k_A per k_B = [1,2,3,4,5,6,6]; diagonal all 0.50 (ties)
+   => DEPTH IS A STRICT TOTAL ORDER: payoff is a function of sign(k_A − k_B) alone
+
+L2 surface me=(k,c) vs Poisson(1.5) depth-mixed pop (executes at c=3):
+   monotone increasing in BOTH k and c; best at k=6 for every c (NO interior peak)
+   zero-factor at c=0 (ε=1): k-lift = +0.000000 EXACT  → V(any depth, no-exec)=V(naive)
+   fits: additive 0.805 | Cobb-Douglas 0.852 (a,b=.50,.25) | CES 0.905 ρ=+0.25
+   optimal-depth ridge: k*=6 flat, slope +0.00; line R²=1.00 vs hyperbola R²<0
+   budget leg (cost(k)=k+1 vs channel c): corner optima everywhere, interior 0.00
+
+L3 reflexive best-response orbit from k=0: [0,1,2,3,4,5,6,6,6]
+   ratchets +1/step to the boundary k=6, where W(6,6)=0.50 (advantage competed to 0)
+```
+
+### Findings
+
+**F-E2-6 — Relational depth is a strict total order. `[A]` within model.** The
+2-player CH tournament matrix is exactly triangular: deeper wins, always; equal
+depth ties; the payoff depends only on the **sign of the depth difference**, not
+on absolute depth. F-E2-4's "one step deeper than the other" is the *minimal*
+winning move (`argmax = k_B+1`), but any greater depth wins too. This is the
+sharpest possible form of reflexive, positional empowerment — and it is precisely
+the structure single-agent reach (R6) cannot express, because it has no "other"
+to be relative to.
+
+**F-E2-7 — The product form and the zero-factor reproduce a third time. `[A]`
+within model.** Against the depth-mixed population the surface is
+complementary/multiplicative (CES ρ̂ = +0.25; Cobb-Douglas beats additive), and at
+full tremble (`ε = 1`) the value of *every* depth collapses to the naive baseline
+**exactly** (`k`-lift = 0.000000). Plan × execution, existentially conjunctive,
+once more. R10a is now robust across three independent game families: memory-1 PD
+(V1), depth-graded automata (V2), and p-beauty mutual modeling (V3).
+
+**F-E2-8 — Still no conserved product — and mutual modeling cannot supply one.
+`[A]` within model; the decisive half.** A conserved `φ·ν = const` law requires
+the system to **select an interior point on a hyperbola** — a conjugate trade
+where more depth buys less reliability at equal value. V3 refuses this on every
+leg: the optimal-depth ridge is **flat at the maximum** (slope 0; a hyperbola
+fits with R² < 0), the budget optima are **all corners** (interior fraction 0.00
+— every marginal unit is spent pushing depth *up*, never trading it), and the
+reflexive dynamics **ratchet to the boundary** (L3) rather than to an interior
+fixed point. The mechanism is **new** relative to V2: V2 had no conserved product
+because depth *saturated* (deeper was worthless); V3 has none because depth is a
+**positional good in an arms race** (deeper is always worth more, so both run to
+the wall — the Nash floor where all guesses → 0 — and **the advantage cancels**).
+What is conserved at the reflexive equilibrium is not `φ·ν`; it is the **zero-sum
+cancellation** of a purely relative advantage. That is the ZSRE register, not the
+sphere.
+
+### Scoring the registered predictions (the discipline, again)
+
+| Prediction | Outcome |
+|---|---|
+| P-V3a relational depth (interior best-reply, rises in `k_B`, diagonal ties) | **RIGHT, and stronger** — a strict total order, not merely a single-peaked best-reply. |
+| P-V3b "single-peaked in `k`, ρ̂ > 0.3, no conserved product" | **SPLIT** — the *no-conserved-product* conclusion is **RIGHT** (flat-at-max ridge, corner budgets), but the *mechanism* is **WRONG**: depth does not peak/saturate, it strictly dominates (peak at `k_max`), and ρ̂ = +0.25 is *more* multiplicative than predicted. My deflationary "interior peak" bias **under-estimated relational depth**. Recorded as missed. |
+| P-V3c reflexive ratchet, no interior fixed point, advantage → 0 | **RIGHT** — orbit 0→1→…→6→6; `W(6,6) = 0.50`. |
+| KILL/UPGRADE (hyperbolic ridge + interior budget + ρ̂ ≤ 0 ⇒ upgrade R10b) | **Did not fire** — ridge anti-hyperbolic, budget corners. R10b stays `[C]`. |
+
+P-V3b's mechanism joins V1-P1 and V2-P-V2a in the "wrong, reported as wrong"
+column — **three E2 misses, all in the same direction: the author under-rating
+the reflexive register.** The pre-registration earns its keep precisely by
+catching that bias.
+
+### What this moves
+
+- **R10b's depth-axis route is now closed.** The two natural ways depth could
+  have supplied a conserved product — *saturation balanced against reliability*
+  (V2) and *mutual modeling* (V3) — have both been run and both fail, for
+  **opposite** reasons (worthless vs purely-positional). The conjugate
+  conservation law `φ·ν = 1` does not live in the empowerment/teleology register
+  at the agent scale. What survives across V1–V3 is **R10a**: the product *form*
+  and its *catastrophe*, robust; never the *conservation*.
+- **The Dyadic Coupling Law:** its reflexive-contact witness is now corroborated
+  a **third** time across a third game family (the p-beauty strict total order +
+  exact zero-factor), and its **boundary** is sharpened: at reflexive contact the
+  coupling is multiplicative but **positional**, so it **dissipates at
+  equilibrium** rather than conserving — exactly where the law hands off to the
+  Zero-Sum Resolution register.
+- **The honest scoreboard:** "mutual modeling might rescue the sphere" — §6's
+  last live hope for R10b — is **retired**. It does not. The teleology thread's
+  single positive formal result remains R10a (interaction), now scoped *triply*
+  to the product form, never the conservation law.
+
+### Limitations (V3's own)
+
+1. CH-ladder guesses (`g_k = 50·p^k`) are the canonical homogeneous-population
+   best-responses, not the exact 2-player nested-belief best-responses; the
+   strict total order is a property of the ladder-vs-ladder comparison. A full
+   nested-belief solver could soften the triangularity — it would **not** create
+   a conserved product (the positional logic is robust to it).
+2. "Execution = revert to the anchor" is one tremble model; a revert-to-uniform
+   model would blunt the exact zero-factor at `ε = 1` into an approximate one
+   (the *form* survives; the *exactness* is model-specific — as already noted for
+   Game A vs B).
+3. The arms race is bounded by `K_MAX = 6`; the unbounded game has the same logic
+   (ratchet to the Nash floor, advantage → 0) without a terminal tie cell.
