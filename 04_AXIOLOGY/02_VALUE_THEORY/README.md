@@ -37,10 +37,10 @@ Beauty/Truth/Justice, dissolve hidden rent, leave receipts, and return.
 
 In the action register, `V` means usable D4 means-to-act: body, tools, energy,
 access, execution capacity. `Φ` means D5 worldline-foresight: the ability to
-envision the reachable future and use the means coherently. Objective morality
-is the `H -> i` vector that raises the node; objective ethics is the `i -> H`
-vector that raises the whole; objective dharma is both directions rising
-together without extraction.
+envision the reachable future and use the means coherently. Objective morals
+are the `i -> H` vector that raises the holobiont; objective ethics is the
+`H -> i` vector that raises the symbiont; objective dharma is both directions
+rising together without extraction.
 
 This is framework-objective, not an external proof of moral realism. Under real
 coupling, multiplicative `P_node`, long horizon, and enforced `η = 0`, the

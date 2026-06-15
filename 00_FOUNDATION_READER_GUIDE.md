@@ -29,7 +29,7 @@ For the actual folder-by-folder lens, read:
 6. `01_TELEOLOGY/00_THE_GENERATIVE_LAGRANGIAN.md` for direction and admissible world-building.
 7. `02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md` for what can be claimed.
 8. `03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md` for public-safe phrasing and downgrade paths.
-9. `04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md` for the syntropic dyad, objective morality, objective ethics, and objective dharma.
+9. `04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md` for the syntropic dyad, objective morals, objective ethics, and objective dharma.
 10. `04_AXIOLOGY/02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md` for value, good, evil, and the major philosophical questions.
 11. `07_THEOLOGY/README.md` for public symbol, pedagogy, and anti-gatekeeping.
 12. `10_SEED/00_THE_SEED.md` last, as compression, not source authority.
@@ -104,7 +104,7 @@ Plus the interpretive bridge documents that connect the Trinity to the tradition
 **Canonical D/L bridge:** [00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md](00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md) — why D0-D6 and L1-L7 resonate without collapsing.
 **Deep philosophical expansion:** [00_EMERGENTISM_AS_WELTANSCHAUUNG.md](05_COSMOLOGY/00_EMERGENTISM_AS_WELTANSCHAUUNG.md) — the longer treatise now bound to the Goal/Soul Loop spine: living worldview for Dasein, source-true ontology, objective dharma, recursive play through `P_node = Φ × V`, and the tiered scientific/philosophical unification attempt.
 **Canonical synthesis-reading boundary:** [00_FOUNDATION_AND_BOOKS_READING_NOTE.md](../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/00_FOUNDATION_AND_BOOKS_READING_NOTE.md) _(archived)_ — how to read literary certainty downstream of tiered claim discipline.
-**Canonical moral/ethical dyad:** [00_OBJECTIVE_MORALS_AND_ETHICS.md](04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) — objective morality (`H -> i`), objective ethics (`i -> H`), objective dharma, and syntropic dyadism under `P_node = Φ × V` and `η = 0`.
+**Canonical moral/ethical dyad:** [00_OBJECTIVE_MORALS_AND_ETHICS.md](04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) — objective morals (`i -> H`), objective ethics (`H -> i`), objective dharma, and syntropic dyadism under `P_node = Φ × V` and `η = 0`.
 **Canonical moral compression:** [00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md](04_AXIOLOGY/02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md) — one disciplined surface for beauty, truth, justice, good, evil, ethics, morals, and the major philosophical questions.
 **Canonical first-person bridge:** [00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md](02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md) — disclosure first, doctrine second, scientific register explicit.
 **Canonical archetype grammar:** [00_NAMING_RECONCILIATION.md](08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_NAMING_RECONCILIATION.md) — Titans, Gods, Demon, Witnesses.

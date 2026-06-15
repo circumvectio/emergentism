@@ -291,32 +291,17 @@ From the empty limit, the descriptions re-enter.
 
 ## 5. THE TELEOLOGY OF EMERGENTISM
 
-### 5.1 Objective Morality (Whole → Individual)
+### 5.1 Objective Morals (Individual → Whole)
 
-**Objective morality** names the whole-to-node vector. A moral structure raises
-the coherent viability of its constituent beings without capturing them.
+**Objective morals** name the node-to-whole vector. A moral act returns
+coherent viability into the boundary that made the act possible.
 
 ```
 i = individual symbiont
 H = holobiont / real sustaining whole
 
-Moral(H -> i) = ΔP_node,i > 0
-                subject to ΔP_node,H >= 0, η = 0, B ≈ 1
-```
-
-Examples:
-- Collective protection that increases agency rather than dependency
-- Institutions that widen access without enclosing the person
-- Truthful inheritance of language, memory, tools, and rights
-
-### 5.2 Objective Ethics (Individual → Whole)
-
-**Objective ethics** names the node-to-whole vector. An ethical act returns
-coherent viability into the boundary that made the act possible.
-
-```
-Ethical(i -> H) = ΔP_node,H > 0
-                  subject to ΔP_node,i >= 0, η = 0, evidence-tier discipline
+Moral(i -> H) = ΔP_node,H > 0
+                subject to ΔP_node,i >= 0, η = 0, B ≈ 1
 ```
 
 Examples:
@@ -324,16 +309,31 @@ Examples:
 - Non-extractive contribution to the commons
 - Truth-telling, repair, and skill returned into the shared field
 
+### 5.2 Objective Ethics (Whole → Individual)
+
+**Objective ethics** names the whole-to-node vector. An ethical structure raises
+the coherent viability of its constituent beings without capturing them.
+
+```
+Ethical(H -> i) = ΔP_node,i > 0
+                  subject to ΔP_node,H >= 0, η = 0, evidence-tier discipline
+```
+
+Examples:
+- Collective protection that increases agency rather than dependency
+- Institutions that widen access without enclosing the person
+- Truthful inheritance of language, memory, tools, and rights
+
 ### 5.3 The Unity of Morals and Ethics
 
 At the equator, morals and ethics converge:
 
 ```
-Whole-to-individual morality:
-  H raises i without capture.
-
-Individual-to-whole ethics:
+Individual-to-whole morals:
   i raises H without self-erasure.
+
+Whole-to-individual ethics:
+  H raises i without capture.
 
 Syntropic dyad:
   dP_node,i/dt >= 0 and dP_node,H/dt >= 0 under η = 0.
@@ -341,10 +341,10 @@ Syntropic dyad:
 Power-Max form:
   max worldline potential W_i requires raising the coupled holobiont H.
 
-The Is-Ought gap is conditionally recast: if morality is defined as structural
-optimization under η = 0, evidence-tier discipline, and real boundary
-conditions, then moral evaluation tracks balance inside the framework. Outside
-those definitions, this is not an external proof of moral realism.
+The Is-Ought gap is conditionally recast: if morals and ethics are defined as
+structural optimization under η = 0, evidence-tier discipline, and real
+boundary conditions, then moral evaluation tracks balance inside the framework.
+Outside those definitions, this is not an external proof of moral realism.
 ```
 
 ---
@@ -446,8 +446,8 @@ The framework commits to:
 │                 Knowledge as dimensional transformation             │
 │                                                                     │
 │  TELEOLOGY:     Purpose as Ω under equatorial constraint            │
-│                 Morality = H -> i raises P_node,i without capture   │
-│                 Ethics = i -> H raises P_node,H without extraction  │
+│                 Morals = i -> H raises P_node,H without extraction  │
+│                 Ethics = H -> i raises P_node,i without capture     │
 │                                                                     │
 │  AXIOLOGY:      Truth = P∞ = φ · ν = 1 invariance                   │
 │                 Beauty = B = 1 symmetry                             │

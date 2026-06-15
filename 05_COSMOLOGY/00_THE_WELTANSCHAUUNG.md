@@ -236,10 +236,10 @@ The framework's strongest claim here is:
 
 In compressed form:
 
-- **objective morality** names the whole-to-individual vector: `H -> i`,
-  where the holobiont raises the symbiont without capture.
-- **objective ethics** names the individual-to-whole vector: `i -> H`,
+- **objective morals** name the individual-to-whole vector: `i -> H`,
   where the symbiont raises the holobiont without extraction.
+- **objective ethics** names the whole-to-individual vector: `H -> i`,
+  where the holobiont raises the symbiont without capture.
 - **objective dharma** names the equatorial act where both vectors raise
   `P_node,i` and `P_node,H` under `η = 0`.
 

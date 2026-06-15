@@ -189,23 +189,23 @@ This compression uses the same two-layer grammar as the value-theory owner.
 
 ### Layer 1: Directional Value Transfer
 
-At the canonical layer, morality and ethics name the two directions of
+At the canonical layer, morals and ethics name the two directions of
 Syntropic Dyadism:
 
 ```text
-Morality = H -> i
-  The holobiont raises the individual symbiont's Φ, V, sovereignty,
-  and reachable option cone.
-
-Ethics = i -> H
+Morals = i -> H
   The individual symbiont raises the holobiont's Φ, V, truthfulness,
   resilience, and reachable option cone.
+
+Ethics = H -> i
+  The holobiont raises the individual symbiont's Φ, V, sovereignty,
+  and reachable option cone without capture.
 
 Good = both directions raise coupled worldline potential under η = 0
 Evil = local gain by degrading the field that carries future potential
 ```
 
-So ethics is not arbitrary preference, and morality is not mere social custom.
+So ethics is not arbitrary preference, and morals are not mere social custom.
 Both are directional value transfers under `P_node = Φ × V`, real coupling, and
 `η = 0`.
 
@@ -217,8 +217,8 @@ rituals, and laws by which beings try to preserve the two directions in time.
 
 So:
 
-- objective morality = whole-to-node raising, `H -> i`
-- objective ethics = node-to-whole raising, `i -> H`
+- objective morals = node-to-whole raising, `i -> H`
+- objective ethics = whole-to-node raising, `H -> i`
 - moral/ethical codes = local attempts to implement those directions without
   extraction
 

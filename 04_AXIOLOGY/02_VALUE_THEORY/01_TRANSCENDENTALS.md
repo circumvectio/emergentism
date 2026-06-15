@@ -82,8 +82,8 @@ Beauty = coherence of the relation
 Truth  = faithful disclosure of the relation
 Justice = non-extractive power in both directions
 
-H -> i = objective morality
-i -> H = objective ethics
+i -> H = objective morals
+H -> i = objective ethics
 ```
 
 The maximum worldline potential of `i` cannot be reached by degrading `H`,

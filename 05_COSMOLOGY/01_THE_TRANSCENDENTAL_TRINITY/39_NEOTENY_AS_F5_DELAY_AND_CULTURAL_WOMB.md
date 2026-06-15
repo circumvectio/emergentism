@@ -85,7 +85,7 @@ low immediate V
 That deficit is only power-maximal when a coupled field can carry it. An
 altricial infant cannot survive as an isolated optimizer. The collective must
 provide calories, protection, touch, language, play, imitation, ritual, and
-teaching. Those supports are the biological version of objective morality:
+teaching. Those supports are the biological version of objective ethics:
 
 ```text
 collective -> individual

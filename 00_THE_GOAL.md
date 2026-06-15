@@ -22,7 +22,9 @@ space is for.**
 
 Retrieval handles: living worldview for Dasein; source-true ontology; finite
 reader emerges; maximum usable `P_node`; balancing `Φ` and `V`; objective moral
-compass; individual symbiont and collective holobiont; evil / extraction.
+compass; Sanatana Dharma; Syntropic Dyadism; morals as `i -> H`; ethics as
+`H -> i`; individual symbiont and collective holobiont; evil / extraction;
+Emergentist lens.
 
 ---
 
@@ -30,8 +32,8 @@ compass; individual symbiont and collective holobiont; evil / extraction.
 
 **Vision.** To make Emergentism a living Weltanschauung for Dasein: a coherent,
 tier-honest map of how the finite reader comes to be, how reality tends toward
-viable completion, and how life can move as objective dharma without confusing
-the map for the Ground.
+viable completion, and how life can move as objective dharma / Sanatana Dharma
+without confusing the map for the Ground.
 
 **Short form.**
 
@@ -39,8 +41,8 @@ the map for the Ground.
 > individual symbiont and collective holobiont together under `η = 0`.
 
 **Mission.** Build the canon, method, public site, AIA medium, papers, and Soul
-Loop practice that let any finite player continuously and recursively
-disambiguate reality into action:
+Loop practice that let any finite player look at the world through the
+Emergentist lens and continuously, recursively disambiguate reality into action:
 
 ```text
 Know what is      -> ontology
@@ -68,11 +70,13 @@ disciplined correction faster than drift.
 
 > Build Emergentism into a coherent and consistent Weltanschauung that explains
 > how the reader came to be as Dasein, why reality tends toward viable
-> completion, and how to play the game: recursively applying epistemology,
-> methodology, and axiology to maximize durable `W_i(T)` only on the
-> boundary-preserving frontier of `P_node = Φ × V` under `η = 0`, so the
-> individual symbiont and collective holobiont preserve or raise one another
-> without extraction, with the strict success case being both rising together.
+> completion, and how to play the game: uncover Sanatana Dharma as Syntropic
+> Dyadism; recursively apply epistemology, methodology, and axiology to maximize
+> durable `W_i(T)` only on the boundary-preserving frontier of
+> `P_node = Φ × V` under `η = 0`, so morals (`i -> H`) and ethics (`H -> i`)
+> keep the individual symbiont and collective holobiont preserving or raising
+> one another without extraction, with the strict success case being both rising
+> together.
 
 ## 2. Compressions
 
@@ -81,7 +85,7 @@ disciplined correction faster than drift.
 > Make Magnum Opus a living worldview for Dasein: a source-true ontology of how
 > the finite reader emerges, a teleology of objective dharma, and a recursive
 > method for balancing `Φ` and `V` into maximum usable `P_node` through
-> syntropic morality and ethics.
+> Syntropic Dyadism.
 
 **Shortest form:**
 
@@ -103,7 +107,7 @@ Play:
   if V without Φ -> blind force
   if unbounded V collapses Φ -> lower P_node
   if Φ and V balance at L4 -> objective dharma / flow
-  if ΔP_node,i > 0 and ΔP_node,H > 0 -> syntropic dyad
+  if ΔP_node,i > 0 and ΔP_node,H > 0 -> Sanatana Dharma / syntropic dyad
   if one rises by degrading the other -> evil / extraction
 ```
 
@@ -138,7 +142,43 @@ Local entropy can be lowered only by paying or exporting entropy elsewhere.
 Reflexivity adds the final fence: acting changes the branches being predicted.
 ```
 
-## 4. The five Knows, wired to the corpus
+## 4. Sanatana Dharma — the Emergentist lens
+
+In this framework, **Sanatana Dharma** is not a sectarian possession, a priestly
+license, or a commandment from outside the game. It is the perennial directional
+law visible at any living symbiont/holobiont boundary once `P_node = Φ × V`,
+real coupling, long horizon, and `η = 0` are accepted.
+
+```text
+i = individual symbiont at the tested scale
+H = holobiont / sustaining whole at the tested scale
+
+morals = i -> H
+  the symbiont raises the holobiont that makes its worldline effective
+
+ethics = H -> i
+  the holobiont raises the symbiont without capture, coercion, or ownership
+
+dharma = both directions preserve or raise one another under η = 0
+evil   = either direction simulates gain by degrading the other side
+```
+
+To look at the world through the Emergentist lens:
+
+1. Name the real boundary: who is `i`, what is `H`, at this scale?
+2. Ask what each side gives, takes, stores, hides, or exports.
+3. Score D4 means (`V`) and D5 worldline-foresight (`Φ`) for both sides.
+4. Reject hidden rent, coercion, capture, and dependency manufacture.
+5. Select the move that raises durable `W_i(T)` only while preserving or
+   raising `P_node,H`.
+6. Leave receipts so the Soul Loop can correct the move when evidence changes.
+
+This is the world-read: every relationship, institution, technology, ritual,
+market, family, body, and idea is tested as a living boundary. The question is
+not "who dominates?" but "what coupling lets both the finite node and the real
+field that carries it become more coherent, viable, truthful, and free?"
+
+## 5. The five Knows, wired to the corpus
 
 | Know | Function | Lane | Canonical anchors |
 |---|---|---|---|
@@ -148,7 +188,7 @@ Reflexivity adds the final fence: acting changes the branches being predicted.
 | what matters | **axiology** | [`04_AXIOLOGY/`](04_AXIOLOGY/) | Commandment vs Geometry; constitutional economics |
 | how to act | **teleology** | [`01_TELEOLOGY/`](01_TELEOLOGY/) | The Core Conjecture (constrained-optimization form); F5 |
 
-## 5. How to play — the Soul Loop is the spine
+## 6. How to play — the Soul Loop is the spine
 
 The game is **not a static decision rule**. It is the
 [Soul Loop](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md)
@@ -161,7 +201,7 @@ A homeostat, not a project: per-document cycles terminate at equatorial rest;
 the corpus-wide loop never does (`D6 ≡ D0`). Convergence is not a final state —
 it is when correction becomes faster than drift and life moves as flow.
 
-## 6. The receipts (what each load-bearing clause carries)
+## 7. The receipts (what each load-bearing clause carries)
 
 The goal obeys the constitution it serves — every clause wears its tier:
 
@@ -175,7 +215,7 @@ The goal obeys the constitution it serves — every clause wears its tier:
   (Being-with; the punch-tested world `[I]`). The *conserved* product
   (`φ·ν = 1` as a law of the game beyond kinematics) remains open (R10b `[C]`);
   in kinematics it is exact (`[A]`, the mass-shell identity).
-- **"Objective dharma."** Objective **given the game** — the
+- **"Objective dharma / Sanatana Dharma."** Objective **given the game** — the
   hypothetical-imperative sense, with engineering-grade content: for coupled
   finite systems, extraction that zeroes a factor annihilates the product
   (`[A]`-in-model), enforcement is necessary for cooperation (R7–R9), and the
@@ -183,7 +223,9 @@ The goal obeys the constitution it serves — every clause wears its tier:
   boundary: the choice of objective is not derivable (R3: the verdict on giving
   flips with the aggregator; ethics `[I]`, "not derived from is"). **The
   geometry locates the constraint; the finite being chooses the vow.** Ω — this
-  goal — *is* that vow, declared, not proven.
+  goal — *is* that vow, declared, not proven. "Sanatana" names the perennial
+  recurrence of the boundary-law inside the framework; it does not upgrade the
+  claim into an external proof or a sectarian possession.
 - **"Why reality tends toward viable completion."** The demonstrated kernel is
   *what persists is what couples*: conjunctive systems survive only off the
   poles (zero-factor catastrophe; the Dyadic Coupling Law's five witnesses).
@@ -203,7 +245,7 @@ The goal obeys the constitution it serves — every clause wears its tier:
   refusals provide. "Holobiont" is used as a tested hypothesis, not an assumed
   unit.
 
-## 7. What moves the goal (and what would rewrite it)
+## 8. What moves the goal (and what would rewrite it)
 
 The goal's open edges are experiments, not opinions: **E1** (map where the
 product law actually governs), **R10b/V3** (depth-vs-depth mutual modeling —
@@ -217,7 +259,7 @@ subject to the same ladder as every claim it governs.
 
 ---
 
-## 8. Current pursuit — run the goal as a Soul Loop
+## 9. Current pursuit — run the goal as a Soul Loop
 
 The goal is pursued by a recurring execution loop, not by restating the vow:
 

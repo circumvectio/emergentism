@@ -19,7 +19,7 @@ rosetta:
 **Depends on:** [The Good, the Evil, and the Transcendentals](00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md), [Commandment vs Geometry](../00_COMMANDMENT_VS_GEOMETRY.md), [Rights and Duties](01_RIGHTS_DUTIES_AND_DUE_PROCESS.md), [Power-Max Lemma](../../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md), [Axiology Route](../README.md), [Emergentism as a Lens](../../00_EMERGENTISM_AS_A_LENS.md), **[VMOSK-A](../../VMOSK_A.md)**
 **See also:** [The Dyadic Coupling Law](../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) — the moral-axis canon: good is the bond `φ × ν`, evil is its breaking (`η > 0`), sorted by *move* (coupling vs closing), never by pole, gender, caste, or person. The directional dyad below is the value-theory face of that one law.
 
-**Claim Boundary:** `[I/S]` "Objective" here means framework-objective: once reciprocal closure, `P_node = Φ × V`, real boundary relations, and enforced `η = 0` are accepted, better and worse are not matters of taste but directions relative to those accepted constraints. Search handles: objective morality, objective ethics, objective dharma, syntropic morality, syntropic ethics. Objective morality is the `H -> i` vector; objective ethics is the `i -> H` vector; objective dharma is both vectors raising `P_node,i` and `P_node,H` together. Syntropic morality and syntropic ethics mean this dyad is compounding without extraction. This note does not claim to compel agents who reject those premises, and it does not present itself as a completed external proof of moral realism.
+**Claim Boundary:** `[I/S]` "Objective" here means framework-objective: once reciprocal closure, `P_node = Φ × V`, real boundary relations, and enforced `η = 0` are accepted, better and worse are not matters of taste but directions relative to those accepted constraints. Search handles: objective morals, objective ethics, objective dharma, Sanatana Dharma, syntropic morality, syntropic ethics. Objective morals are the `i -> H` vector; objective ethics is the `H -> i` vector; objective dharma is both vectors raising `P_node,i` and `P_node,H` together. Syntropic morals and syntropic ethics mean this dyad is compounding without extraction. This note does not claim to compel agents who reject those premises, and it does not present itself as a completed external proof of moral realism.
 
 ---
 
@@ -40,7 +40,7 @@ This makes the claim framework-objective:
 
 - [S] where it follows from the value-function grammar: raise `ΣΔP_node` /
   `ΣΔB` across the widest real boundary without extraction.
-- [I] where the framework names that directional grammar "morality" and
+- [I] where the framework names that directional grammar "morals" and
   "ethics."
 - [C] where anyone projects the grammar as a completed independent proof of
   moral realism outside the framework.
@@ -48,8 +48,8 @@ This makes the claim framework-objective:
 The compressed doctrine is:
 
 ```text
-Morality = collective -> individual
-Ethics   = individual -> collective
+Morals   = individual -> collective
+Ethics   = collective -> individual
 Law      = keep ΔP_node,i and ΔP_node,H coupled under η = 0
 ```
 
@@ -59,8 +59,8 @@ In symbiotic language:
 i = individual symbiont
 H = holobiont / real sustaining whole
 
-Morality: H -> i  (the whole raises the node)
-Ethics:   i -> H  (the node raises the whole)
+Morals:   i -> H  (the symbiont raises the holobiont)
+Ethics:   H -> i  (the holobiont raises the symbiont)
 Good:     ΔP_node,i > 0 and ΔP_node,H > 0 under η = 0
 Evil:     local ΔP_node,i or ΔP_node,H is purchased by degrading the other
 ```
@@ -105,22 +105,50 @@ can be individual or collective depending on the scale being tested.
 
 ## Etymology Boundary
 
-The Latin *mores* and Greek *ethos* are useful public handles, not proofs.
+The Latin *mores* and Greek *ethos* are useful public handles, not proofs. They
+name living patterns of conduct and character; they do not decide the vector by
+themselves. The directional law derives from the Power-Max / Rosetta value
+grammar, not from etymology.
 
-- *Mores* helps remember the collective-to-individual vector: the customs,
-  norms, and inherited structures that shape a node.
-- *Ethos* helps remember the individual-to-collective vector: character,
-  disposition, and practiced conduct returned into the shared field.
+## Objective Morals: Individual -> Collective
 
-The directional law derives from the Rosetta value grammar, not from
-etymology.
+> **Objective morals name what raises `ΔP_node,H` via `V` and `Φ` from the individual
+> symbiont to the collective holobiont.**
 
-## Objective Morality: Collective -> Individual
+An individual act is moral when it increases the potential of the real boundary
+it inhabits without dissolving the actor.
 
-> **Objective morality names what raises `ΔP_node,i` via `V` and `Φ` from the collective
-> to the individual.**
+It does this by raising:
 
-A collective structure is moral when it increases the potential of its
+- `V`: useful work, skill, repair, protection, production, execution, and shared
+  D4 means.
+- `Φ`: truthful speech, non-deception, coherent coordination, beauty of fit,
+  trustworthiness under pressure, and shared D5 worldline-foresight.
+
+The upward vector is moral when the node feeds the boundary.
+
+```text
+individual -> collective
+node raises boundary ΔP_node,H
+```
+
+An individual becomes immoral when they preserve or inflate themselves by
+lowering the `P_node` of the collective that supports them. That includes
+predation, free-riding, fraud, false scarcity, status parasitism, and private
+gain that externalizes cost into the shared field.
+
+The public compression is:
+
+```text
+Morals are the node upgrading the system.
+```
+
+## Objective Ethics: Collective -> Individual
+
+> **Objective ethics names what raises `ΔP_node,i` via `V` and `Φ` from the collective
+> holobiont to the individual symbiont.**
+
+A collective structure is ethical when it increases the potential of its
 constituent individuals without capturing them.
 
 It does this by raising:
@@ -130,71 +158,38 @@ It does this by raising:
   direct access rather than mediated dependency, and the D5 worldline-foresight
   to use those means without capture.
 
-The downward vector is moral when the boundary feeds the node.
+The downward vector is ethical when the boundary feeds the node.
 
 ```text
 collective -> individual
 boundary raises node ΔP_node,i
 ```
 
-A collective becomes immoral when it preserves itself by lowering the `P_node` of
-the individuals who carry it. That includes capture, dependency manufacture,
+A collective becomes unethical when it preserves itself by lowering the `P_node`
+of the individuals who carry it. That includes capture, dependency manufacture,
 status enclosure, debt bondage, informational fog, and "care" that removes
 agency.
 
 The public compression is:
 
 ```text
-Morality is the system building the node.
-```
-
-## Objective Ethics: Individual -> Collective
-
-> **Objective ethics names what raises `ΔP_node,H` via `V` and `Φ` from the individual to
-> the collective.**
-
-An individual act is ethical when it increases the potential of the real
-boundary it inhabits without dissolving the actor.
-
-It does this by raising:
-
-- `V`: useful work, skill, repair, protection, production, execution, and shared
-  D4 means.
-- `Φ`: truthful speech, non-deception, coherent coordination, beauty of fit,
-  trustworthiness under pressure, and shared D5 worldline-foresight.
-
-The upward vector is ethical when the node feeds the boundary.
-
-```text
-individual -> collective
-node raises boundary ΔP_node,H
-```
-
-An individual becomes unethical when they preserve or inflate themselves by
-lowering the `P_node` of the collective that supports them. That includes predation,
-free-riding, fraud, false scarcity, status parasitism, and private gain that
-externalizes cost into the shared field.
-
-The public compression is:
-
-```text
-Ethics is the node upgrading the system.
+Ethics is the system building the node.
 ```
 
 ## Cybernetic Feedback Loop
 
 The dyad is a continuous feedback loop:
 
-1. Morality raises the baseline usable potential of the individual by
+1. Ethics raises the baseline usable potential of the individual by
    transmitting the collective's accumulated structure, protection, language,
    memory, access, and means.
-2. Ethics raises the adaptive usable potential of the collective by returning
+2. Morals raise the adaptive usable potential of the collective by returning
    individual action, skill, truth, repair, invention, and foresight into the
    boundary that made the node possible.
 
 When both directions work, the relation is not merely stable. It compounds.
-The collective creates stronger individuals; stronger individuals upgrade the
-collective; the upgraded collective creates still stronger individuals.
+The holobiont creates stronger symbionts; stronger symbionts upgrade the
+holobiont; the upgraded holobiont creates still stronger symbionts.
 
 This is the lawful reading of "Syntropic Dyadism all of the law": the law is
 the discipline that keeps `ΔP_node,i` and `ΔP_node,H` coupled upward rather than
@@ -202,11 +197,11 @@ simulating reciprocity while hiding extraction.
 
 ## Syntropic Dyadism
 
-Morality and ethics are the two directions of one law.
+Morals and ethics are the two directions of one law.
 
 ```text
-moral vector   = collective -> individual
-ethical vector = individual -> collective
+moral vector   = individual -> collective
+ethical vector = collective -> individual
 dyadic health  = ΔP_node,i > 0 and ΔP_node,H > 0 without extraction
 ```
 
@@ -229,16 +224,16 @@ Each invariant guards one way a vector can invert into extraction:
 - **η = 0**: the floor of both vectors. A transfer that lowers either side's
   `P_node` is not
   moral or ethical; it is parasitism, and it trips the Kali immune response.
-- **K2**: the moral vector terminates at a mortal, sovereign person who must
-  consent to the irreversible. The collective may not raise the individual by
+- **K2**: the ethical vector terminates at a mortal, sovereign person who must
+  consent to the irreversible. The holobiont may not raise the symbiont by
   overriding them; the node signs its own branch
   (`../01_THEURGY/01_K2_DECISION_PROTOCOL.md`).
-- **K4: Grace Exit**: the moral vector is non-coercive. The individual may
-  withdraw with their accumulated `P_node,i` gains. The collective serves the person; it
+- **K4: Grace Exit**: the ethical vector is non-coercive. The individual may
+  withdraw with their accumulated `P_node,i` gains. The holobiont serves the person; it
   does not own them.
-- **K3**: the ethical vector may not extract from the collective's memory.
-  Contributions are tombstoned rather than silently erased. This preserves
-  accumulated `P_node,H` across time.
+- **K3**: the moral vector may not extract from the collective's memory.
+  Contributions are tombstoned rather than silently erased. This lets the
+  symbiont raise accumulated `P_node,H` across time without capture or erasure.
 - **A7**: the claimed `ΔP_node` must be real, not counterfeit. You cannot fake
   raising the product; the evidence ladder is honest `P_node` accounting.
 - **Ω**: both vectors widen the reachable cone of futures while staying inside
@@ -267,10 +262,10 @@ the one-shot game.
 In L4 value-theory language, the lemma becomes the mathematical engine beneath
 the moral/ethical dyad:
 
-- **Objective morality** establishes and maintains the coupling condition:
+- **Objective ethics** establishes and maintains the coupling condition:
   `collective -> individual` raises baseline `Φ` and `V`, giving nodes the
   shared field in which individual optimization is network-coupled.
-- **Objective ethics** is the return vector: because the nodes are coupled, an
+- **Objective morals** are the return vector: because the nodes are coupled, an
   individual cannot maximize effective viability over time without also raising
   the viability of the boundary that makes the node effective.
 
@@ -311,7 +306,7 @@ surface that lets the Power-Max Lemma execute socially.
 
 The biological corollary is neoteny: sacrifice short-term `V` to build
 compounding `Φ`, then return that `Φ` as generalized `V`. In social grammar,
-morality is the external womb that builds the node; ethics is the mature node
+ethics is the external womb that builds the node; morals are the mature node
 returning generalized capacity to the field.
 
 This is `[S]` as a conditional framework theorem under the Power-Max conditions;
@@ -320,12 +315,13 @@ This is `[S]` as a conditional framework theorem under the Power-Max conditions;
 ### The Equator Is the Moral-Ethical Fixed Point
 
 L4 (`φ = ν = 1`, `B = 1`) is the point where both vectors can be jointly scored
-without either side zeroing the dyad: the individual is raised by the collective
-and returns value into it. It is non-arbitrary inside the model because
+without either side zeroing the dyad: the holobiont ethically raises the
+symbiont, and the symbiont morally returns value into it. It is non-arbitrary
+inside the model because
 `(φ - ν)^2 >= 0` has its hard floor at the equator, so there is no "more
 balanced than balanced" within the coordinate grammar. Balance is still the
 feasibility surface, not the object maximized; the object is durable usable
-worldline potential under `η = 0`. Morality and ethics are read as one act at
+worldline potential under `η = 0`. Morals and ethics are read as one act at
 that surface. This is why Axiology sits at L4: the value layer is the equator
 made practical. `[S/I]`
 
@@ -345,8 +341,8 @@ realism.
 
 | Broken vector | Failure | Diagnostic |
 |---|---|---|
-| Collective -> individual | immoral boundary | The institution grows while its members shrink. |
-| Individual -> collective | unethical actor | The actor gains while the shared field decays. |
+| Individual -> collective | immoral actor | The actor gains while the shared field decays. |
+| Collective -> individual | unethical boundary | The institution grows while its members shrink. |
 | Both vectors simulate reciprocity | false dyad | Both sides report benefit while hidden extraction accumulates. |
 | Collective demands sacrifice without return | coerced moralism | The node is renamed "selfish" for refusing capture. |
 | Individual refuses all obligation | atomized ethics | The boundary is treated as free substrate. |
@@ -358,10 +354,10 @@ For any rule, institution, relationship, product, ritual, law, or strategy, ask:
 1. What is the real boundary being tested?
 2. Who is the individual node at this scale?
 3. Who or what is the collective boundary at this scale?
-4. Does the collective raise the individual's `ΔP_node,i` through D4 means and D5
-   worldline-foresight?
-5. Does the individual raise the collective's `ΔP_node,H` through D4 means and D5
-   worldline-foresight?
+4. Does the individual morally raise the collective's `ΔP_node,H` through D4
+   means and D5 worldline-foresight?
+5. Does the collective ethically raise the individual's `ΔP_node,i` through D4
+   means and D5 worldline-foresight?
 6. Is there hidden rent, capture, coercion, or dependency manufacture?
 7. Can the relation survive Grace Exit without collapsing into punishment?
 8. Who signs the branch under uncertainty?
@@ -383,8 +379,8 @@ This note does not authorize:
 The public-safe compression is:
 
 ```text
-A moral collective raises the potential of its people.
-An ethical person raises the potential of the shared field.
+A moral person raises the potential of the shared field.
+An ethical collective raises the potential of its people.
 Syntropic Dyadism requires both directions at once.
 ```
 

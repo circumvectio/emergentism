@@ -51,8 +51,8 @@ P_node,i = Φ_i × V_i
 P_node,H = Φ_H × V_H
 η = 0
 
-objective morality = H -> i  (the whole raises the node)
-objective ethics   = i -> H  (the node raises the whole)
+objective morals = i -> H  (the symbiont raises the holobiont)
+objective ethics = H -> i  (the holobiont raises the symbiont)
 objective dharma   = both directions rising together at the action boundary
 ```
 
@@ -122,7 +122,7 @@ That subfolder exists to prevent a separate "theurgy root" from drifting away fr
   applies the Power-Max frontier, `ΣΔB > 0` / `ΣΔP_node > 0`, `η = 0`, and the
   `P∞` invariant to real coupled boundaries.
 - Value Alignment is `[I]` interpretive where it names those structural
-  directions morality, ethics, dharma, justice, or specific institutional
+  directions morals, ethics, dharma, justice, or specific institutional
   applications.
 - Value Alignment is `[C]` where it projects civilisational outcomes or claims
   strong moral realism beyond the framework's accepted premises.

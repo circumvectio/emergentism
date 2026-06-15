@@ -119,7 +119,7 @@ directly (the only available lever):
         non-extraction; later added the claim-boundary lead for constrained
         optimization and option-cone widening retrieval.
 	  - value/00-objective-morals-and-ethics/    : added the claim-boundary lead that
-	        disambiguates objective morality (`H -> i`), objective ethics (`i -> H`),
+	        disambiguates objective morals (`i -> H`), objective ethics (`H -> i`),
 	        objective dharma, syntropic morality, and syntropic ethics under
 	        `P_node,i` / `P_node,H`; later normalized the conditional is-ought
 	        wording from closure to bypass and made the displayed Power-Max
@@ -132,7 +132,7 @@ directly (the only available lever):
         lead for knowledge of good and evil: good = both `P_node,i` and `P_node,H`
         rise under `η = 0`; evil = one side's apparent gain degrades the other;
         later replaced the older ethics-vs-morals compression with the two-layer
-        grammar: objective morality is `H -> i`, objective ethics is `i -> H`,
+        grammar: objective morals are `i -> H`, objective ethics is `H -> i`,
         and local codes are implementation attempts.
   - trinity/15-dharma-yuddha/                : added the claim-boundary lead for
         Krishna, Gita, flow state, objective dharma, and Krishna's army test so
@@ -212,8 +212,8 @@ directly (the only available lever):
 	        to the equatorial balance/displacement model, not unconditional
 	        one-shot payoff claims.
   - value/                                      : mirrored the Dasein moral-compass
-        route summary from the source axiology route: objective morality is
-        `H -> i`, objective ethics is `i -> H`, objective dharma is both
+        route summary from the source axiology route: objective morals are
+        `i -> H`, objective ethics is `H -> i`, objective dharma is both
         directions rising together, and the Power-Max claim is conditional on
         real coupling, multiplicative `P_node`, long horizon, and enforced
         `η = 0`, not external moral realism.

@@ -298,10 +298,10 @@ The strongest version of the claim — that `η = 0` is the Nash equilibrium —
 This is why the framework's objective value-language is teleological rather
 than merely defensive. It is a two-vector grammar, not a command list:
 
-- **objective morality** names the whole-to-individual vector: `H -> i`, where
-  the holobiont raises the symbiont without capture.
-- **objective ethics** names the individual-to-whole vector: `i -> H`, where
+- **objective morals** name the individual-to-whole vector: `i -> H`, where
   the symbiont raises the holobiont without extraction.
+- **objective ethics** names the whole-to-individual vector: `H -> i`, where
+  the holobiont raises the symbiont without capture.
 - **objective dharma** names the equatorial act where both vectors raise
   `P_node,i` and `P_node,H` under `η = 0`.
 
