@@ -8,6 +8,8 @@
 ## 1. The claim (the full stack, not just the top)
 Order propagates through **five replicator levels**, and the same two-part dynamic recurs at every one: (a) the replicator's "interest" diverges from its vehicle's welfare, and (b) it can *capture* the level below — hijack the substrate to serve its own copying. The egregore is not a special case; it is rung five of a ladder whose lower rungs are established biology.
 
+> **Five capture-rungs vs C4's six layers (2026-06-16).** Corollary C4's canonical stack has *six* layers (Genotype → **Epigenotype** → Phenotype → Extended Phenotype → Memotype → Egregorotype). AX5 counts *five* **capture-capable replicator rungs** — each a replicator with an autonomous objective function that can capture the substrate below (gene, organism, extended phenotype, meme, institution). **Epigenotype is a genuine C4 layer but not a separate capture-rung**: it regulates expression *within* the Genotype→Phenotype move and has no objective function diverging from its vehicle in the Dawkins/Hull sense. "Five rungs" here and "six layers" in C4 are therefore consistent — the same layer-vs-rung distinction that keeps Epigenotype out of the selection-era, multiplicative-factor, and D4-mirror counts. Do **not** "correct" this paper to six. See [`00_SETTLED_CANON_REGISTRY.md`](../../../../00_META/00_SETTLED_CANON_REGISTRY.md).
+
 ## 2. Prior art — rung by rung (it is textbook nearly all the way up)
 
 | # | Rung | Replicator | Capture instance (= "Raktabīja" at that level) | Prior art (verified this session unless noted) |
