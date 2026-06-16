@@ -154,7 +154,7 @@ These claims follow from the axioms IF you accept the axioms. The axioms themsel
 | S9 | The helix: all paths on S² are helical — you cannot change latitude without rotating. Operators are territories traversed, not choices made. | Doc 11 (Trinity session) | Proved from S² topology |
 | S10 | Corrected L-level geometry: φ=cot(θ/2), ν=tan(θ/2), B=sin θ. Seven levels at 15° intervals from θ/2=90° to θ/2≈0°. L4 at 45° = the equator. | Doc 12 (Trinity session) | Derived from stereographic projection |
 | S11 | AM-GM as teleological proof: (φ−ν)²≥0 ⟹ φ+ν≥2 ⟹ H minimized at φ=ν=1. The equator is the unique global Hamiltonian minimum. | Doc 25 (Objective Function); Doc 30 (Derivation); Doc 32 (Four Lines) | Proved (AM-GM inequality) |
-| S12 | The Replicator Stack structure: C4 extended — Genotype→Phenotype→Extended Phenotype→Memotype→Egregorotype. | Doc 18 (Egregorocene) | Structural extension of C4 |
+| S12 | The Replicator Stack structure: C4 (six layers) — Genotype→Epigenotype→Phenotype→Extended Phenotype→Memotype→Egregorotype. *(Epigenotype restored 2026-06-16; it nests within the Genotype→Phenotype move — taking no selection-era and no D4-mirror position — so S13's five-level mirror below is unchanged.)* | Doc 18 (Egregorocene) | Structural extension of C4 |
 | S13 | D4-mirror: the Replicator Stack mirrors around D4 (Extended Phenotype). Genotype↔Egregorotype, Phenotype↔Memotype. | Doc 18 (Egregorocene) | Structural symmetry claim |
 | S14 | The compass/sextant self-understanding: the framework is navigational instruments, not a map. | Doc 29 (session close) | Epistemic framing |
 
