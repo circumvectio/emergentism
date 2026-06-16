@@ -19,7 +19,7 @@ rosetta:
 - [`69_EXTRACTION_MATRIX_2026_04_23.md`](../50_AUDITS_AND_EXECUTIONS/69_EXTRACTION_MATRIX_2026_04_23.md) — APU extraction matrix (same lens applied here)
 - [`../02_SKYZAI/01_NOOSPHERE/00_INTAKE/PROCESSED/2026_04_23_intake_audit_deerflow_goose_hermes.md`](../02_SKYZAI/01_NOOSPHERE/00_INTAKE/PROCESSED/2026_04_23_intake_audit_deerflow_goose_hermes.md) — SWOT/TOWS audit
 - [`../02_SKYZAI/01_NOOSPHERE/02_ORGANS/TheCircle/00_BRIEF.md`](../../08_FRAMEWORK_SUPPORT/00_META/00_BRIEF.md) — IS organ spec
-- [`../02_SKYZAI/01_NOOSPHERE/09_PWAs/circle_news/PR_FAQ.md`](../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/06_NETWORK/emergentism.org/PR_FAQ.md) — North Star
+- [`../02_SKYZAI/01_NOOSPHERE/09_PWAs/circle_news/PR_FAQ.md`](../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/06_NETWORK/emergentism.org/PR_FAQ.md) — North Star
 
 ---
 

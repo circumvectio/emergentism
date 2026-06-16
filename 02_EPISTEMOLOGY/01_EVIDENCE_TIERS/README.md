@@ -24,7 +24,7 @@ This is the Data Science sublane for evidence-tier discipline.
 ## What It Must Not Own
 
 - Formal proofs themselves. Route those to `../../05_COSMOLOGY/03_FORMAL_SYSTEM/`.
-- Public release copy. The old dissemination lane is archived at `../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION`; new public copy needs an explicit active owner before publication.
+- Public release copy. The old dissemination lane is archived at `../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION`; new public copy needs an explicit active owner before publication.
 
 ## Read First
 

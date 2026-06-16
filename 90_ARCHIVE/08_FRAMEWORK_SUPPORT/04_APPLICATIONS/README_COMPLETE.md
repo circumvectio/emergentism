@@ -183,7 +183,7 @@ The equator is the ground state of reality.
 
 ## Integration with Landing Page
 
-The landing page (`../../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/04_MARKETING_MATERIALS/LANDING_PAGE/index.html`) should embed the Unified experience:
+The landing page (`../../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/04_MARKETING_MATERIALS/LANDING_PAGE/index.html`) should embed the Unified experience:
 
 ```html
 <!-- Embed the Unified simulation -->

@@ -23,7 +23,7 @@ type: tombstone
 status: TOMBSTONE — no canonical Axiology home
 scope: Link-preservation tombstone for a document whose planned Axiology home was not created; preserved in AIA prior-books archive.
 sources:
-  - 02_SKYZAI/02_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/SYNTHESIS/SARPASYA_VIJAYAM_MANUSCRIPT_ARCHIVE/MF_521_THE_WEIGHING_OF_THE_HEART.md
+  - 02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/SYNTHESIS/SARPASYA_VIJAYAM_MANUSCRIPT_ARCHIVE/MF_521_THE_WEIGHING_OF_THE_HEART.md
   - 01_EMERGENTISM/90_ARCHIVE/AGENTS.md
 ---
 
@@ -33,6 +33,6 @@ sources:
 
 **Rosetta boundary:** [D] This file is a tombstone, not a canonical Axiology paper. Do not recreate the missing home without an explicit migration receipt.
 
-The document survives only in the deep archive at: [../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/SYNTHESIS/SARPASYA_VIJAYAM_MANUSCRIPT_ARCHIVE/MF_521_THE_WEIGHING_OF_THE_HEART.md](../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/SYNTHESIS/SARPASYA_VIJAYAM_MANUSCRIPT_ARCHIVE/MF_521_THE_WEIGHING_OF_THE_HEART.md)
+The document survives only in the deep archive at: [../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/SYNTHESIS/SARPASYA_VIJAYAM_MANUSCRIPT_ARCHIVE/MF_521_THE_WEIGHING_OF_THE_HEART.md](../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/SYNTHESIS/SARPASYA_VIJAYAM_MANUSCRIPT_ARCHIVE/MF_521_THE_WEIGHING_OF_THE_HEART.md)
 
 Preserved under K3 (tombstone, not erasure). Old link preservation only — no canonical AXIOLOGY home exists.

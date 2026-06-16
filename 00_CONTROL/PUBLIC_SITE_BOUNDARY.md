@@ -17,14 +17,14 @@ production merge + DNS are owner-gated.
 
 > **Migration-executed note (2026-06-12, [S]):** the K2-signed AIA app migration
 > (`12_PUBLIC_SITE/00_K2_ENVELOPE_APP_MIGRATION_2026_05_31.md`) **executed** —
-> the canonical AIA app now lives at `02_SKYZAI/02_AIA/app/` (signoff
-> `02_SKYZAI/02_AIA/AUDITS/K2_AIA_APP_MIGRATION_SIGNOFF.md`; receipt: 193/193
+> the canonical AIA app now lives at `02_SKYZAI/03_AIA/app/` (signoff
+> `02_SKYZAI/03_AIA/AUDITS/K2_AIA_APP_MIGRATION_SIGNOFF.md`; receipt: 193/193
 > tests, clean lint+build, 50 book pages SSG-prerendered, HTTP 200 route smoke).
 > This `book-pwa/` tree is **frozen-preserved** with a `MOVED_TO_CANONICAL.md`
 > tombstone, not archived, until the AIA app has a verified live-deploy receipt
 > (K3 archive-first). **Do not develop here.** The two surfaces are distinct:
 > the static long-scroll `/book` is the **v1** public surface served from this
-> repo; the AIA "Infinite Book" (`02_AIA/app/`) is the **v2** dynamic medium,
+> repo; the AIA "Infinite Book" (`03_AIA/app/`) is the **v2** dynamic medium,
 > deploy/cutover owner-gated and routed via its own repo. `.vercelignore` keeps
 > `book-pwa/` out of *this* deploy regardless.
 

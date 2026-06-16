@@ -45,7 +45,7 @@ Full assessment: agent run 2026-06-10. Verdict: **(b) deployable but frozen shor
 **P0 — owner / K2 (must not be auto-executed):**
 1. **Public-site source-anchoring** (R-PUBLIC-ANCHOR) — generator pass so the ~180 highest-value public claims *link to their doctrine source* (lift ~9% → ~42%). This is the difference between *looks* disciplined and *is* verifiable.
 2. **Domain cutover + redeploy** — alias `emergentism-org`, repoint DNS/SSL, push current build, HTTPS apex→www.
-3. **book-pwa → `02_AIA/app/`** — execute the signed envelope once the AIA destination is ready; complete its verification gate.
+3. **book-pwa → `03_AIA/app/`** — execute the signed envelope once the AIA destination is ready; complete its verification gate.
 
 **P1 — gated but scoped:**
 4. **R-TOOLS-MIGRATE** — ~49 scripts on dead paths: dormant/active triage → per-file rewrite → test pass → dated K2 receipt.

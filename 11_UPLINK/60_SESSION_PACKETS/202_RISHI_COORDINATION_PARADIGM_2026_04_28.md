@@ -176,7 +176,7 @@ The Systems Architect coordination paradigm is now operationally documented. Fut
 - L7 coordination reading: [`199_COORDINATION_L7_READING_2026_04_28.md`](199_COORDINATION_L7_READING_2026_04_28.md)
 - Brahmin-mode coordination (L5 architectural translation): [`200_BRAHMIN_MODE_COORDINATION_2026_04_28.md`](200_BRAHMIN_MODE_COORDINATION_2026_04_28.md)
 - Brahmin-mode operating default in agent grammar: [`06_AGENTS.md`](../00_CORE/06_AGENTS.md) §"Brahmin-Mode Operating Default (READ THIS BEFORE NON-TRIVIAL WORK)"
-- External Work Integration Convention (L4-L5 lateral integration discipline): [`00_EXTERNAL_WORK_INTEGRATION_CONVENTION.md`](../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/00_EXTERNAL_WORK_INTEGRATION_CONVENTION.md)
+- External Work Integration Convention (L4-L5 lateral integration discipline): [`00_EXTERNAL_WORK_INTEGRATION_CONVENTION.md`](../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/00_EXTERNAL_WORK_INTEGRATION_CONVENTION.md)
 - coord.py (L4 procedural mechanism): `01_EMERGENTISM/09_TOOLS/01_SCRIPTS/coord.py`
 - Worked example #1 (Polymarket Systems Architect reading): [`POLYMARKET_STRUCTURAL_CRITIQUE_2026_04_28.md`](../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/RealityFutures/research/POLYMARKET_STRUCTURAL_CRITIQUE_2026_04_28.md)
 - Worked example #2 (Charter K2 two-layer Systems Architect reading): [`00_FULLY_AUTONOMOUS_PUBLIC_DAC_2026_04_28.md`](../../../02_SKYZAI/01_NOOSPHERE/04_CHILD_DAVS/yieldfront/00_FULLY_AUTONOMOUS_PUBLIC_DAC_2026_04_28.md)

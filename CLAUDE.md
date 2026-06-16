@@ -17,7 +17,7 @@ This root is the **framework canon**: doctrine, core state, methodology, evidenc
 
 ## Scope
 
-Work here is framework-layer unless a document explicitly says otherwise. Do **not** modify product-layer specs (`02_SKYZAI/02_PUBLIC_SCAFFOLD/`), organism runtime (`02_SKYZAI/01_NOOSPHERE/`), entity DAVs (`03_VENTURES/`), portfolio ventures (`03_VENTURES/_PORTFOLIO/`), or substrate roots (`02_SKYZAI/06_SPECTRE/`) from this root without an explicit cross-root task.
+Work here is framework-layer unless a document explicitly says otherwise. Do **not** modify product-layer specs (`02_SKYZAI/04_PUBLIC_SCAFFOLD/`), organism runtime (`02_SKYZAI/01_NOOSPHERE/`), entity DAVs (`03_VENTURES/`), portfolio ventures (`03_VENTURES/_PORTFOLIO/`), or substrate roots (`02_SKYZAI/06_SPECTRE/`) from this root without an explicit cross-root task.
 
 ## Read order
 
@@ -47,7 +47,7 @@ Work here is framework-layer unless a document explicitly says otherwise. Do **n
 | 11 | `11_UPLINK/` | Session packets + reconciliation surface; compressed routing, not source authority |
 | 09 | `09_TOOLS/` | Scripts, data pipelines, audit artifacts |
 | 10 | `10_SEED/` | The seed |
-| 12 | `12_PUBLIC_SITE/` | Tracked public-site/app source currently frozen for migration. `book-pwa` is **K2-signed for migration to `02_AIA/app/`** under spec 13; do not add new feature work here except migration/tombstone repair. |
+| 12 | `12_PUBLIC_SITE/` | Tracked public-site/app source currently frozen for migration. `book-pwa` is **K2-signed for migration to `03_AIA/app/`** under spec 13; do not add new feature work here except migration/tombstone repair. |
 | 90 | `90_ARCHIVE/` | Doctrine-supplement archive and archived support lanes; provenance, not current source authority. |
 | 91 | `91_COMPATIBILITY/` | Documented compatibility layer (182 stubs mirroring pre-2026-04-25 paths; see its TOMBSTONE.md). |
 
@@ -65,7 +65,7 @@ Filename collisions within this org (e.g., `02_THE_SERPENT_IS_F5.md` appearing i
 
 - Not the run-time governance surface (that's `AGENTS.md` here at root)
 - Not a place to add new doctrine (that goes inside the relevant -ology child)
-- Not a place to specify product behavior (that lives in `02_SKYZAI/02_PUBLIC_SCAFFOLD/`)
+- Not a place to specify product behavior (that lives in `02_SKYZAI/04_PUBLIC_SCAFFOLD/`)
 
 Zero-Sum Resolution Equation
 

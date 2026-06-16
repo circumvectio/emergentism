@@ -145,9 +145,9 @@ Per packet 202 Systems Architect paradigm: directional reversals are the framewo
 ## Receipts
 
 - K2 directive 2026-04-28 late session: explicit choice of *"Switch to DECIDE (expand) → Sprint 6 blocks for ~weeks while 6 chapters get drafted as full mainline prose. Volume I becomes a single-register experience at ~85-90k words."*
-- Trilogy audit (load-bearing): [`03_BOOK_I_SARPASYA_VIJAYAM/00_TRILOGY_AUDIT.md`](../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/SYNTHESIS_DRAFTS/00_TRILOGY_AUDIT.md)
-- Two-register note (NOW RETIRED): [`03_BOOK_I_SARPASYA_VIJAYAM/00_TWO_REGISTER_NOTE.md`](../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/SYNTHESIS_DRAFTS/00_TWO_REGISTER_NOTE.md)
-- Next sprints (UPDATED this commit): [`00_NEXT_SPRINTS_2026_04_28.md`](../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/00_NEXT_SPRINTS_2026_04_28.md) §1 mainline-vs-outline decision
+- Trilogy audit (load-bearing): [`03_BOOK_I_SARPASYA_VIJAYAM/00_TRILOGY_AUDIT.md`](../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/SYNTHESIS_DRAFTS/00_TRILOGY_AUDIT.md)
+- Two-register note (NOW RETIRED): [`03_BOOK_I_SARPASYA_VIJAYAM/00_TWO_REGISTER_NOTE.md`](../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/SYNTHESIS_DRAFTS/00_TWO_REGISTER_NOTE.md)
+- Next sprints (UPDATED this commit): [`00_NEXT_SPRINTS_2026_04_28.md`](../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/00_NEXT_SPRINTS_2026_04_28.md) §1 mainline-vs-outline decision
 - Bin-2 closure (the prior K2 ratification cycle this packet follows): [`204_BIN2_CLOSURE_2026_04_28.md`](204_BIN2_CLOSURE_2026_04_28.md)
 - YieldFront Charter §11 ratification (the other K2 ratification today): [`201_YIELDFRONT_K2_RATIFICATION_2026_04_28.md`](201_YIELDFRONT_K2_RATIFICATION_2026_04_28.md)
 - Systems Architect paradigm (this packet's discipline): [`202_RISHI_COORDINATION_PARADIGM_2026_04_28.md`](202_RISHI_COORDINATION_PARADIGM_2026_04_28.md)

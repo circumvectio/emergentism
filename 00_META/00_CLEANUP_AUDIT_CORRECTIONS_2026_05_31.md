@@ -38,7 +38,7 @@ The "851-file book-making in `90_ARCHIVE`" is **already migrated**: `07_DISSEMIN
 coordinates in this dated ledger are historical and must not be used as shell
 coordinates.
 
-`02_SKYZAI/02_AIA/app` is a proposed target from [`02_SKYZAI/02_AIA/13_APP_BOOKS_SEPARATION_2026_05_31.md`](../../02_SKYZAI/02_AIA/13_APP_BOOKS_SEPARATION_2026_05_31.md), not yet present in this checkout. Treat runtime/payment claims as requiring a dated `[B]` receipt; until attached, this is `[S]` source-path inspection plus `[C]` relocation staging. The scaffold->app merge is private-DAV K2 only if it changes private constitutional authority; public DAV/DAC release or governance consequences route through PRISM/public governance.
+`02_SKYZAI/03_AIA/app` is a proposed target from [`02_SKYZAI/03_AIA/13_APP_BOOKS_SEPARATION_2026_05_31.md`](../../02_SKYZAI/03_AIA/13_APP_BOOKS_SEPARATION_2026_05_31.md), not yet present in this checkout. Treat runtime/payment claims as requiring a dated `[B]` receipt; until attached, this is `[S]` source-path inspection plus `[C]` relocation staging. The scaffold->app merge is private-DAV K2 only if it changes private constitutional authority; public DAV/DAC release or governance consequences route through PRISM/public governance.
 
 ## Phase 4 — STRIKE or RE-POINT (VIVEKA is a phantom) `[A]`
 

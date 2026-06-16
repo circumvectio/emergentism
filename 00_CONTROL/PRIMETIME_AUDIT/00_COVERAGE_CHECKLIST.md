@@ -52,7 +52,7 @@ Detail: [`01_FRONTDOOR_VERDICT.md`](01_FRONTDOOR_VERDICT.md).
 | `00_CONTROL/` | 5 | 🔄 | 🟢 (partial) | PUBLIC_SITE_BOUNDARY 🟢; rest queued |
 
 ## Out of realm (not audited here — sovereign territories of their own)
-`02_SKYZAI/` (12,470) · `03_VENTURES/` (12,233) · `00_START_HERE/` (461) · `menexus_code/` (2,213) · `state/` (4). Annex only on K2 request.
+`02_SKYZAI/` (12,470) · `03_VENTURES/` (12,233) · `00_START_HERE/` (461) · `04_CODE/` (2,213) · `state/` (4). Annex only on K2 request.
 
 ---
 *Coverage rule: a ✅ means front-door + `00_*` read in full, remainder scanned for demon-signatures. Sampling is disclosed, never silent (charter §"Coverage discipline").*

@@ -151,7 +151,7 @@ When the corpus is compressed, extended, translated, or deployed, keep this depe
 
 The books in `05_SYNTHESIS/` and the public book packets in `07_DISSEMINATION/` are synthesis surfaces, not epistemic authority surfaces.
 
-Read them through [Foundation and Books Reading Note](../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/00_FOUNDATION_AND_BOOKS_READING_NOTE.md).
+Read them through [Foundation and Books Reading Note](../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/00_FOUNDATION_AND_BOOKS_READING_NOTE.md).
 
 > **The prose is invitation; the proof is in the tier assignments.**
 

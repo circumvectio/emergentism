@@ -23,15 +23,15 @@ rosetta:
 
 > **The Definitive One Book — *Emergentism: Sarpasya Vijayam (The Infinite Play)* — has moved.**
 >
-> **New home recorded by the move packet:** `/02_SKYZAI/02_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/`
+> **New home recorded by the move packet:** `/02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/`
 
 Per the AIA medium / instance split (**the medium is the message**): the book is the **first instance
-published in the AIA medium**, so it now lives under `02_SKYZAI/02_AIA/EMERGENTISM_AIA/` (the Emergentism
+published in the AIA medium**, so it now lives under `02_SKYZAI/03_AIA/EMERGENTISM_AIA/` (the Emergentism
 instance) beside its `worldview.manifest.json`. The Emergentism **doctrine / canon stays here in
 `01_EMERGENTISM/` as ground truth** — the book references it; it does not contain it.
 
 [I] The historical move note records a 2026-05-31 `git mv` with inbound/outbound relative links
 recomputed in the same pass. **K3:** do not re-add the book here; verify the live AIA target in
-`02_AIA/` before treating this tombstone as evidence that the destination exists in the current checkout.
+`03_AIA/` before treating this tombstone as evidence that the destination exists in the current checkout.
 
 ⊙ = • × ○

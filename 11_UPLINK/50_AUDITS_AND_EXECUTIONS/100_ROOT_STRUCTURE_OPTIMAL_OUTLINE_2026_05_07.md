@@ -19,7 +19,7 @@ The current top-level architecture should stay as seven visible canonical roots:
 ```text
 01_EMERGENTISM/   source core state, Rosetta, Uplink, tools, seed
 02_SKYZAI/01_NOOSPHERE/        living organism runtime
-02_SKYZAI/02_PUBLIC_SCAFFOLD/        public DAC-machine / product-composition surface
+02_SKYZAI/04_PUBLIC_SCAFFOLD/        public DAC-machine / product-composition surface
 03_VENTURES/          organism-native legal and entity membranes
 03_VENTURES/_PORTFOLIO/    independent portfolio lanes
 02_SKYZAI/06_SPECTRE/           distributed physical mesh substrate
@@ -57,7 +57,7 @@ Magnum Opus/
 ├── 00_*.md                      short orientation, handover, and tidy receipts
 ├── 01_EMERGENTISM/
 ├── 02_SKYZAI/01_NOOSPHERE/
-├── 02_SKYZAI/02_PUBLIC_SCAFFOLD/
+├── 02_SKYZAI/04_PUBLIC_SCAFFOLD/
 ├── 03_VENTURES/
 ├── 03_VENTURES/_PORTFOLIO/
 ├── 02_SKYZAI/06_SPECTRE/
@@ -284,7 +284,7 @@ Two follow-ups are needed before any move:
 1. `03_PRODUCTS/` exists and has a valid README, but root README and
    `manifest.yaml` still understate it. Decide whether it is an active product
    lane, compatibility lane, or should be folded into `07_PWAs/` and
-   `02_SKYZAI/02_PUBLIC_SCAFFOLD/`.
+   `02_SKYZAI/04_PUBLIC_SCAFFOLD/`.
 2. `04_CHILD_DAVS/AGENTZ_CLOUD/` stays as technical implementation lane only;
 Agentz itself remains the applied-core state front door at
    `02_SKYZAI/01_NOOSPHERE/02_INFRASTRUCTURE/Cascade/`.

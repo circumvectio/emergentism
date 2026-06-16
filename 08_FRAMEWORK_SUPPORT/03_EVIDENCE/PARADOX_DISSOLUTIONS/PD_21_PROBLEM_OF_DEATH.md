@@ -29,7 +29,7 @@ rosetta:
 
 > **Claim Boundary:** `[I]` This document models death as a topology boundary. It does not claim personal survival, afterlife, reincarnation, continuity of individual identity, or near-death-experience proof. "Field" means the framework's possibility-space, not a soul-substance or an empirically detected survival medium.
 
-> **Companion note.** Death intersects the Hard Problem (PD_13) and the Mind-Body Problem (PD_14). See also the mu-limit analysis in [PD_01_MIND_BODY_LEGACY.md](PD_14_MIND_BODY.md) and the D4-D5 boundary discussion in [PD_17 (archived)](../../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/PD_17_QUANTUM_RELATIVITY_UNIFICATION_DRAFT.md).
+> **Companion note.** Death intersects the Hard Problem (PD_13) and the Mind-Body Problem (PD_14). See also the mu-limit analysis in [PD_01_MIND_BODY_LEGACY.md](PD_14_MIND_BODY.md) and the D4-D5 boundary discussion in [PD_17 (archived)](../../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/PD_17_QUANTUM_RELATIVITY_UNIFICATION_DRAFT.md).
 
 ---
 

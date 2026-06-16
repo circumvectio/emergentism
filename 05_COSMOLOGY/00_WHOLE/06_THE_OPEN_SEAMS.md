@@ -100,7 +100,7 @@ The agent stack is presented as canonical L0–L6. Operationally:
 
 What is *actually* missing is smaller:
 
-1. **Cross-link headers on each of the five surfaces** pointing back to the master map. Today a reader landing on any single Cortex surface may not discover the map. Concrete fix: a one-line header on each of the 5 surface entry docs (`memory/CLAUDE.md`, `cortex-os/01_WHAT_CORTEX_IS.md`, `02_SKYZAI/02_PUBLIC_SCAFFOLD/08_CORTEX/README.md`, `FOUNDATION/CANON/306_CORTEX_MEMORY_PROTOCOL.md`, `ApuBot/cortex/README.md`) saying "Cortex master map: `cortex-os/00_CORTEX_MAP.md`."
+1. **Cross-link headers on each of the five surfaces** pointing back to the master map. Today a reader landing on any single Cortex surface may not discover the map. Concrete fix: a one-line header on each of the 5 surface entry docs (`memory/CLAUDE.md`, `cortex-os/01_WHAT_CORTEX_IS.md`, `02_SKYZAI/04_PUBLIC_SCAFFOLD/08_CORTEX/README.md`, `FOUNDATION/CANON/306_CORTEX_MEMORY_PROTOCOL.md`, `ApuBot/cortex/README.md`) saying "Cortex master map: `cortex-os/00_CORTEX_MAP.md`."
 2. **Operational tier markers per surface.** The master map's Status column uses informal labels ("Live", "Active", "Target architecture"). Standardize against the `Spec'd / Scaffold / Running / Battle-tested` tier from Seam #2 so the agent-stack credibility framing carries through Cortex too.
 3. **Promotion to "blocker for M1" is withdrawn.** The map exists; M1 mainnet announcement is not blocked on it. The cross-link audit can run in parallel with M2/M3.
 

@@ -54,7 +54,7 @@ Not what it *is*, not who *made* it, not what *technology* it uses. The seven va
 |---|---|
 | **Doctrine** | `01_EMERGENTISM/` |
 | **Organism-runtime** | `02_SKYZAI/01_NOOSPHERE/` |
-| **Product-surface (scaffold)** | `02_SKYZAI/02_PUBLIC_SCAFFOLD/` |
+| **Product-surface (scaffold)** | `02_SKYZAI/04_PUBLIC_SCAFFOLD/` |
 | **Legal-membrane** | `03_VENTURES/` |
 | **Outside-portfolio (sidecar)** | `03_VENTURES/_PORTFOLIO/` |
 | **Physical-substrate** | `02_SKYZAI/06_SPECTRE/` |
@@ -70,7 +70,7 @@ Every root has **exactly one** constitutional owner at **exactly one** authority
 |---|---|---|
 | `01_EMERGENTISM/` | L7 Ṛṣi | doctrine; only L7 amends invariants |
 | `02_SKYZAI/01_NOOSPHERE/` | K2 signatory + L4 Kṣatriya | K2 signs, L4 commits |
-| `02_SKYZAI/02_PUBLIC_SCAFFOLD/` | L4 Kṣatriya under K2 ratification | scaffold; not yet K2-bound at deployment |
+| `02_SKYZAI/04_PUBLIC_SCAFFOLD/` | L4 Kṣatriya under K2 ratification | scaffold; not yet K2-bound at deployment |
 | `03_VENTURES/` | K2 signatory only | legal personhood is non-delegable |
 | `03_VENTURES/_PORTFOLIO/` | K2 signatory + bilateral counterparty contract | sidecars are bilateral, not organism-internal |
 | `02_SKYZAI/06_SPECTRE/` | substrate-only | no K2; peer to Skyzai; physical mesh has no caste agents |
@@ -81,7 +81,7 @@ Every root has **exactly one** constitutional owner at **exactly one** authority
 When content fits two roots, **precedence (highest wins)**:
 
 ```
-03_VENTURES > 01_EMERGENTISM > 02_SKYZAI/06_SPECTRE > 02_SKYZAI/01_NOOSPHERE > 02_SKYZAI/02_PUBLIC_SCAFFOLD > 03_VENTURES/_PORTFOLIO > 90_ARCHIVE
+03_VENTURES > 01_EMERGENTISM > 02_SKYZAI/06_SPECTRE > 02_SKYZAI/01_NOOSPHERE > 02_SKYZAI/04_PUBLIC_SCAFFOLD > 03_VENTURES/_PORTFOLIO > 90_ARCHIVE
 ```
 
 **Worked example — the Agentz / Tokencen case (post 2026-05-02):**
@@ -107,7 +107,7 @@ Architectural decisions drift wherever a root could absorb work that legitimatel
 
 ## The Anti-Recommendation
 
-**Do NOT collapse `02_SKYZAI/02_PUBLIC_SCAFFOLD/` into `02_SKYZAI/01_NOOSPHERE/`** "for cleanliness."
+**Do NOT collapse `02_SKYZAI/04_PUBLIC_SCAFFOLD/` into `02_SKYZAI/01_NOOSPHERE/`** "for cleanliness."
 
 It looks elegant: Skyzai.com is "just" the public surface of Skyzai the organism, so why two roots? The Routing Law itself seems to push this way.
 

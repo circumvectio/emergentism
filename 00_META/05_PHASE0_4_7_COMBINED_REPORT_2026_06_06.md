@@ -153,7 +153,7 @@ Running `predeploy_check.sh` would NOT catch:
 
 | Page | Dead href count | Examples | Disposition |
 |---|---:|---|---|
-| `app.html` | 10 | 10 links to `02_SKYZAI/02_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/` (Definitive Book chapters) | **Intentional** — `app.html` is the PWA shell pointing at the manuscript, but the manuscript lives outside the public surface; from the deployed public site these 404. Need either: (a) move `app.html` to the K2-envelope-gated PWA bridge (Phase 8); (b) copy the manuscript into the public surface; (c) document the dead links as "PWA-only" |
+| `app.html` | 10 | 10 links to `02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/` (Definitive Book chapters) | **Intentional** — `app.html` is the PWA shell pointing at the manuscript, but the manuscript lives outside the public surface; from the deployed public site these 404. Need either: (a) move `app.html` to the K2-envelope-gated PWA bridge (Phase 8); (b) copy the manuscript into the public surface; (c) document the dead links as "PWA-only" |
 | `infinite.html` | 1 | `Master Rosetta` link (path doesn't resolve) | Broken — fix the path or remove the link |
 | `rosetta/index.html` | 1 | legacy path to old `assets/css/rosetta.css` | Stale — file was removed; link should point to `assets/css/xai.css` |
 | `sphere.html` | 1 | `../assets/css/dimensions.css` (actual: `dimensions/dimensions.css`) | Broken — wrong relative path |

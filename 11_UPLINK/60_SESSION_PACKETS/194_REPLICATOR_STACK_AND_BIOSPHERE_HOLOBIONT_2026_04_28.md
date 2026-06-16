@@ -26,7 +26,7 @@ rosetta:
 - [`../../01_TELEOLOGY/01_F5_FORCE/`](../../01_TELEOLOGY/01_F5_FORCE/) — the existing F5 force directory; this packet proposes refinement
 - [`../../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md`](../../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md) — theurgy/F5 mapping; this packet proposes the biosphere-scale extension
 - [`../00_CORE/03_HOLOBIONT_SELF_PORTRAIT.md`](../00_CORE/03_HOLOBIONT_SELF_PORTRAIT.md) — existing holobiont articulation; this packet proposes the biosphere-scale generalization
-- [`../../08_FRAMEWORK_SUPPORT/05_SYNTHESIS/00_EXOTERIC_ESOTERIC_PUBLICATION_ARCHITECTURE.md`](../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/00_EXOTERIC_ESOTERIC_PUBLICATION_ARCHITECTURE.md) — the publication architecture this material may eventually integrate into
+- [`../../08_FRAMEWORK_SUPPORT/05_SYNTHESIS/00_EXOTERIC_ESOTERIC_PUBLICATION_ARCHITECTURE.md`](../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/00_EXOTERIC_ESOTERIC_PUBLICATION_ARCHITECTURE.md) — the publication architecture this material may eventually integrate into
 
 ---
 

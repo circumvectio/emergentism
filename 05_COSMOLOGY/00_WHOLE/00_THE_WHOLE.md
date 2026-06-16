@@ -52,7 +52,7 @@ Existing canon stays in place to preserve links across the corpus. This folder *
 
 | External canon | Axis | Why read it |
 |---|---|---|
-| [`../SYNTHESIS.md`](../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/SYNTHESIS_DRAFTS/MANUSCRIPT/SYNTHESIS.md) | K2-centric | Every layer is defined by what K2 does to it |
+| [`../SYNTHESIS.md`](../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/SYNTHESIS_DRAFTS/MANUSCRIPT/SYNTHESIS.md) | K2-centric | Every layer is defined by what K2 does to it |
 | [`../AI_STACK_RECONCILIATION_2026_05_13.md`](../../../02_SKYZAI/01_NOOSPHERE/AI_STACK_RECONCILIATION_2026_05_13.md) | Three-axis | Organ × Agent × Phylogeny as orthogonal dimensions |
 | [`../ARCHITECTURE.md`](../../../02_SKYZAI/01_NOOSPHERE/ARCHITECTURE.md) | Organizational | Entities / organs / products / backbone |
 | [`../ARCHITECTURE_OODA.md`](../../../02_SKYZAI/01_NOOSPHERE/ARCHITECTURE_OODA.md) | Cognitive cycle | Same loop in military vocabulary |

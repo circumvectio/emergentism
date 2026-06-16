@@ -92,7 +92,7 @@ The active hardening outputs now live here:
 - Track 2: `../../../91_COMPATIBILITY/01_FOUNDATIONS/02_THE_DERIVATION/14_OPERATOR_CONSISTENCY_AUDIT.md` (historical route clue; verify current owner before editing)
 - Track 5: `../../../00_META/00_RECONCILIATION_SCOPE_BOUNDARY_NOTE.md`
 - Track 3: `BREAKTHROUGH_PREDICTION_REGISTER.md`
-- Track 4: `../../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/`
+- Track 4: `../../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/`
 
 Older `*_TRACK_*` and draft notes in the derivation lane should be treated as routing stubs unless they explicitly say otherwise.
 

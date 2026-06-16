@@ -170,7 +170,7 @@ Sovereign may:
 
 - [x] **Closed by cascade — Option B effective per Gate B 2026-04-25.** No separate K2 confirmation required.
 
-**Engineering implication:** factory genesis schema may include `equity_cap` as configurable field with default 100; per-DAC sovereign override at genesis allowed within governance constraints. Spec [`03_EQUITY/02_COMPOSITION.md`](../../../02_SKYZAI/02_PUBLIC_SCAFFOLD/03_EQUITY/02_COMPOSITION.md) updated with full cascade-closure note.
+**Engineering implication:** factory genesis schema may include `equity_cap` as configurable field with default 100; per-DAC sovereign override at genesis allowed within governance constraints. Spec [`03_EQUITY/02_COMPOSITION.md`](../../../02_SKYZAI/04_PUBLIC_SCAFFOLD/03_EQUITY/02_COMPOSITION.md) updated with full cascade-closure note.
 
 ---
 
@@ -204,7 +204,7 @@ Sovereign may:
 - [ ] **K2 CONFIRMS Option C (No auto-trigger)**
 - [ ] **K2 CONFIRMS Option D (Reserved)**
 
-**Implementation receipt:** `AUTO_LIQ_THRESHOLD = 0.50` is now canonical in [`04_CREDIT/05_AUTO_LIQUIDATION.md`](../../../02_SKYZAI/02_PUBLIC_SCAFFOLD/04_CREDIT/05_AUTO_LIQUIDATION.md), [`04_CREDIT/00_DEBTOR_CREDITOR_SPEC.md`](../../../02_SKYZAI/02_PUBLIC_SCAFFOLD/04_CREDIT/00_DEBTOR_CREDITOR_SPEC.md). Engineering unblocked.
+**Implementation receipt:** `AUTO_LIQ_THRESHOLD = 0.50` is now canonical in [`04_CREDIT/05_AUTO_LIQUIDATION.md`](../../../02_SKYZAI/04_PUBLIC_SCAFFOLD/04_CREDIT/05_AUTO_LIQUIDATION.md), [`04_CREDIT/00_DEBTOR_CREDITOR_SPEC.md`](../../../02_SKYZAI/04_PUBLIC_SCAFFOLD/04_CREDIT/00_DEBTOR_CREDITOR_SPEC.md). Engineering unblocked.
 
 ---
 

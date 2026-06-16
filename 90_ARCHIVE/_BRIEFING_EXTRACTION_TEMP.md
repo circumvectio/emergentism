@@ -59,7 +59,7 @@ SECTION A: ROOT FILES (8)
 - **Title:** Foundation Reader Guide
 - **Date:** n/a
 - **Evidence Tier:** n/a
-- **Summary:** **Books reading note:** the books (moved 2026-05-31 to the AIA instance at `../02_SKYZAI/02_AIA/EMERGENTISM_AIA/`) are downstream synthesis and invitation surfaces, not epistemic authority surfaces. If literary prose sounds stronger than the kernel, route thro
+- **Summary:** **Books reading note:** the books (moved 2026-05-31 to the AIA instance at `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/`) are downstream synthesis and invitation surfaces, not epistemic authority surfaces. If literary prose sounds stronger than the kernel, route thro
 - **Cross-refs:** 06_ONTOLOGY/00_THE_RING_THAT_IS_THE_GROUND.md, 03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md, 04_AXIOLOGY/02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md, 05_COSMOLOGY/00_THE_FOUR_METAMORPHOSES.md, 90_ARCHIVE/00_AUM_ON_THE_BURRI_SPHERE.md
 
 ### 00_CANONICAL_TREE_OUTLINE.md
@@ -74,11 +74,11 @@ SECTION: 12_PUBLIC_SITE (8 files)
 ================================================================================
 
 ### `00_K2_ENVELOPE_APP_MIGRATION_2026_05_31.md`
-- **Title:** K2 ENVELOPE — App Migration (12_PUBLIC_SITE/book-pwa → 02_SKYZAI/02_AIA/app; historical 10_PUBLIC_SITE signature preserved)
+- **Title:** K2 ENVELOPE — App Migration (12_PUBLIC_SITE/book-pwa → 02_SKYZAI/03_AIA/app; historical 10_PUBLIC_SITE signature preserved)
 - **Date:** 2026-05-31
 - **Evidence Tier:** [S] structural migration plan; [B] for the verified facts (gitignore state, file inventory); [D] for the unexecuted move.
-- **Summary:** Current executable interpretation: move the frozen app source **`01_EMERGENTISM/12_PUBLIC_SITE/book-pwa/`** → **`02_SKYZAI/02_AIA/app/`** only after the AIA destination and final signoff receipt exist. The signed 2026-05-31 text used `10_PUBLIC_SITE/book-p
-- **Cross-refs:** 02_SKYZAI/02_AIA/13_APP_BOOKS_SEPARATION_2026_05_31.md, CLAUDE.md, 12_PUBLIC_SITE/00_BOOK_PWA_MOVED.md
+- **Summary:** Current executable interpretation: move the frozen app source **`01_EMERGENTISM/12_PUBLIC_SITE/book-pwa/`** → **`02_SKYZAI/03_AIA/app/`** only after the AIA destination and final signoff receipt exist. The signed 2026-05-31 text used `10_PUBLIC_SITE/book-p
+- **Cross-refs:** 02_SKYZAI/03_AIA/13_APP_BOOKS_SEPARATION_2026_05_31.md, CLAUDE.md, 12_PUBLIC_SITE/00_BOOK_PWA_MOVED.md
 
 ### `AGENTS.md`
 - **Title:** 12_PUBLIC_SITE - Agent Routing
@@ -92,7 +92,7 @@ SECTION: 12_PUBLIC_SITE (8 files)
 - **Date:** n/a
 - **Evidence Tier:** [S] for canonical Rosetta geometry with source anchor; [I]/[C] for public interpretation and scaffold claims; [B] only for dated empirical, build, deployment, or product receipts.
 - **Summary:** **Source of truth:** This site explains Emergentism publicly. The sevenfold ladder traces to canonical Rosetta `08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md` §I lines 236-246. **Controlling source:** The Rosetta Master has
-- **Cross-refs:** WEBSITE_NARRATIVE.md, ../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/THE_DEFINITIVE_BOOK_FULL.md, 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md, ../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/10_ADAPTIVE_PWA_RAG_BLUEPRINT/00_THE_INFINITE_BOOK.md
+- **Cross-refs:** WEBSITE_NARRATIVE.md, ../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/THE_DEFINITIVE_BOOK_FULL.md, 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md, ../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/10_ADAPTIVE_PWA_RAG_BLUEPRINT/00_THE_INFINITE_BOOK.md
 
 ### `WEBSITE_NARRATIVE.md`
 - **Title:** Website Narrative - Teleology to Return
@@ -106,7 +106,7 @@ SECTION: 12_PUBLIC_SITE (8 files)
 - **Date:** n/a
 - **Evidence Tier:** [I]/[C] until build, runtime, payment, auth, live-model, and deployment receipts exist.
 - **Summary:** **Lane scope:** Next.js source scaffold for the public Infinite Book PWA. **Primary lead:** `L4 Kṣatriya` **Support:** L3 Vaiśya, L5 Brāhmaṇa, L6 Sādhu **Evidence tier:** `[I]/[C]` until build, runtime, payment, auth, and live-model receipts exist.
-- **Cross-refs:** ../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/10_ADAPTIVE_PWA_RAG_BLUEPRINT/00_THE_INFINITE_BOOK.md, ../WEBSITE_NARRATIVE.md, README.md, ../README.md
+- **Cross-refs:** ../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/10_ADAPTIVE_PWA_RAG_BLUEPRINT/00_THE_INFINITE_BOOK.md, ../WEBSITE_NARRATIVE.md, README.md, ../README.md
 
 ### `book-pwa/CLAUDE.md`
 - **Title:** Infinite Book PWA Claude Shim
@@ -120,7 +120,7 @@ SECTION: 12_PUBLIC_SITE (8 files)
 - **Date:** n/a
 - **Evidence Tier:** [I] for scaffold organization; [C] for provider/payment/pricing plans; [B] only for current build, runtime, deployment, auth, payment, database, or live-model receipts.
 - **Summary:** Date: 2026-05-30. This folder is the source-only Next.js scaffold for the public Infinite Book PWA. It translates the static proof-of-shape in `../infinite.html` into a routed app with: - manuscript-backed node ingestion through Prisma;
-- **Cross-refs:** ../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/10_ADAPTIVE_PWA_RAG_BLUEPRINT/00_THE_INFINITE_BOOK.md, ../WEBSITE_NARRATIVE.md, ../README.md
+- **Cross-refs:** ../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/10_ADAPTIVE_PWA_RAG_BLUEPRINT/00_THE_INFINITE_BOOK.md, ../WEBSITE_NARRATIVE.md, ../README.md
 
 ### `book-pwa/src/lib/aia/INTEGRATION.md`
 - **Title:** AIA Dialectical Layer — Integration Contract
@@ -222,7 +222,7 @@ SECTION: 90_ARCHIVE (195 files)
 - **Date:** n/a
 - **Evidence Tier:** [D] tombstone; [I] link-preservation metadata.
 - **Summary:** [D] The `04_AXIOLOGY/` home for this document was never created (the originally-planned moved path `04_AXIOLOGY/00_THE_WEIGHING_OF_THE_HEART.md` does not exist on disk). **Rosetta boundary:** [D] This file is a tombstone, not a canonical Axiology pap
-- **Cross-refs:** 04_AXIOLOGY/00_THE_WEIGHING_OF_THE_HEART.md, ../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/SYNTHESIS/SARPASYA_VIJAYAM_MANUSCRIPT_ARCHIVE/MF_521_THE_WEIGHING_OF_THE_HEART.md
+- **Cross-refs:** 04_AXIOLOGY/00_THE_WEIGHING_OF_THE_HEART.md, ../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/SYNTHESIS/SARPASYA_VIJAYAM_MANUSCRIPT_ARCHIVE/MF_521_THE_WEIGHING_OF_THE_HEART.md
 
 ### `08_FRAMEWORK_SUPPORT/04_APPLICATIONS/00_CORPUS.md`
 - **Title:** THE WHOLE — seen from 04_APPLICATIONS
@@ -690,7 +690,7 @@ SECTION: 90_ARCHIVE (195 files)
 - **Title:** The Strongest Objections
 - **Date:** n/a
 - **Evidence Tier:** n/a
-- **Summary:** **Status:** Active **Evidence Tier:** Meta-epistemic governance document **Depends on:** [00_THE_HONEST_POSITION.md](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [FRAGILITY_AUDIT_2026_04_04.md](../../../../../02_SKYZAI/02_AIA/EMERG
+- **Summary:** **Status:** Active **Evidence Tier:** Meta-epistemic governance document **Depends on:** [00_THE_HONEST_POSITION.md](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [FRAGILITY_AUDIT_2026_04_04.md](../../../../../02_SKYZAI/03_AIA/EMERG
 - **Cross-refs:** FRAGILITY_AUDIT_2026_04_04.md, 00_THE_HONEST_POSITION.md
 
 ### `08_FRAMEWORK_SUPPORT/06_TRANSLATION/PEER_REVIEW/00_SUBMISSION_GUIDE.md`

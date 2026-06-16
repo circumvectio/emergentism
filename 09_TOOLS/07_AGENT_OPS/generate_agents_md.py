@@ -26,7 +26,7 @@ ROOTS = {
         "upstream": "../../../../01_EMERGENTISM/11_UPLINK/00_CORE/00_INDEX.md",
         "context": "Runtime organism — the living DAC body, organs, and operational truth.",
     },
-    "02_SKYZAI/02_PUBLIC_SCAFFOLD": {
+    "02_SKYZAI/04_PUBLIC_SCAFFOLD": {
         "caste": "L5 Brāhmaṇa / L4 Kṣatriya",
         "support": "L3 Vaiśya, L2 Śūdra",
         "upstream": "../../../../../.codex/agents/ROOT_AND_GOD_DEPLOYMENT.md",

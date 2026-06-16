@@ -89,7 +89,7 @@ Do not mistake every top-level repo folder for a canonical Rosetta lane.
 - `08_ARCHIVE/root_legacy/00_ATTACHMENTS/` holds archived payload adjuncts; attachments are not doctrine owners.
 - `packages/` is a shared workspace library root, not a doctrine/product root.
 - `.local_github_mirrors/Github/` is the gitignored local future-repo staging mirror. It is not canonical repo content.
-- Public-reference docs belong under `02_SKYZAI/02_PUBLIC_SCAFFOLD/00_REFERENCE/public_surfaces/`.
+- Public-reference docs belong under `02_SKYZAI/04_PUBLIC_SCAFFOLD/00_REFERENCE/public_surfaces/`.
 - Organ research and intake summaries belong under the owning `02_SKYZAI/01_NOOSPHERE/02_ORGANS/...` lane.
 
 When root and owner-path readings diverge, route to the owner path.

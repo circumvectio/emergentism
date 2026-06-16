@@ -29,7 +29,7 @@ rosetta:
 ## Read First
 
 - `README.md`
-- [`../AGENTS.md`](../../../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/06_TRANSLATION/AGENTS.md)
+- [`../AGENTS.md`](../../../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/06_TRANSLATION/AGENTS.md)
 - `00_CORPUS.md`
 - `00_DECISION_MATRIX.md`
 - `00_FAIL_ITEMS_STATUS.md`
@@ -37,7 +37,7 @@ rosetta:
 ## Routing Law
 
 - This lane is part of Emergentism doctrine root — Sevenfold Foundation, framework support, Uplink, tools, archives, and seed.
-- Inherit local lane authority from [`../AGENTS.md`](../../../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/06_TRANSLATION/AGENTS.md).
+- Inherit local lane authority from [`../AGENTS.md`](../../../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/06_TRANSLATION/AGENTS.md).
 - Treat this lane as non-authoritative unless a current source-owner surface explicitly cites it.
 - Archive material may inform provenance; it must not revive superseded claims by itself.
 - Route law inherits from `01_EMERGENTISM/AGENTS.md` and the active owner-lane `AGENTS.md`; use `11_UPLINK/00_CORE/00_INDEX.md` only for compressed orientation and `11_UPLINK/00_CORE/06_AGENTS.md` for row-axis caste grammar.

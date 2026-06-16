@@ -78,7 +78,7 @@ build, deployment, payment, auth, model, or runtime receipts.
 - `12_PUBLIC_SITE/` is the current physical path.
 - `10_PUBLIC_SITE/` references are historical after the migration to this lane.
 - `book-pwa/` remains source-preserved and frozen for migration/tombstone/public
-  claim repair until the `02_SKYZAI/02_AIA/app/` destination is explicitly accepted.
+  claim repair until the `02_SKYZAI/03_AIA/app/` destination is explicitly accepted.
 - Public claims must preserve the `[A/B/S/I/D/C]` evidence ladder.
 
 ## Numbered Doctrine Spine (/0–/6)
@@ -105,7 +105,7 @@ a single design system and Three.js bootstrap:
 - Do not add new PWA product features in this folder during the frozen interval.
 - Do not claim deployment, payment, auth, AI-provider, or runtime readiness
   without fresh receipts.
-- Do not move this lane to `02_SKYZAI/02_AIA/app/` without satisfying the dated envelope.
+- Do not move this lane to `02_SKYZAI/03_AIA/app/` without satisfying the dated envelope.
 
 **Rosetta boundary:** [I] This route card governs public-site routing and source
 preservation. It does not make `book-pwa/` a live production surface.

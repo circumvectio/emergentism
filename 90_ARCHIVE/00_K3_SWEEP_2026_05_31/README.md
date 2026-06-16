@@ -40,7 +40,7 @@ sources:
 | `08_FRAMEWORK_SUPPORT/05_SYNTHESIS/00_WEBSITE_NARRATIVE_SPEC_2026_05_30.md` | SUPERSEDED brainstorm spec; successor lives in the public-site surface. |
 | `08_FRAMEWORK_SUPPORT/05_SYNTHESIS/00_ECOSYSTEM_ARCHITECTURE_ROOT_NOTE_2026_05_25.md` | [I/C] synthesis note on Tokencen/Aureus/OFN/SkyzAI entity separation — self-declares it is not source authority; not framework canon. |
 
-Part of the post-books restructure (the discovery keeps only the discovery). The definitive book + prior books + publishing apparatus live under `02_SKYZAI/02_AIA/EMERGENTISM_AIA/`.
+Part of the post-books restructure (the discovery keeps only the discovery). The definitive book + prior books + publishing apparatus live under `02_SKYZAI/03_AIA/EMERGENTISM_AIA/`.
 
 **Rosetta boundary:** [D] This is an archive manifest. It records why files were retired; it is not current audit authority for the live tree.
 

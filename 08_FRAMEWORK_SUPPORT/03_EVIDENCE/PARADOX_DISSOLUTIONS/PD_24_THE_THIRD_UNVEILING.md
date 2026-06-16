@@ -27,7 +27,7 @@ rosetta:
 
 > **Evidence Tier: [I] Interpretive.** The trinitarian reading (Zero, Infinity, Finity) is a coherent structural mapping within the EFR framework. The claim that these three concepts exhaust the space of "structural concepts that define the number system" is an ontological interpretation, not a formal proof. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 
-> **Companion note.** The Third Unveiling is introduced in [The Completion](PD_23_THE_COMPLETION.md), Section 3. For the full Trinity treatment, see [MF_519_THE_TRINITY_FINAL_FORM.md](../../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/SYNTHESIS_DRAFTS/MANUSCRIPT/MF_519_THE_TRINITY_FINAL_FORM.md).
+> **Companion note.** The Third Unveiling is introduced in [The Completion](PD_23_THE_COMPLETION.md), Section 3. For the full Trinity treatment, see [MF_519_THE_TRINITY_FINAL_FORM.md](../../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/SYNTHESIS_DRAFTS/MANUSCRIPT/MF_519_THE_TRINITY_FINAL_FORM.md).
 
 ---
 

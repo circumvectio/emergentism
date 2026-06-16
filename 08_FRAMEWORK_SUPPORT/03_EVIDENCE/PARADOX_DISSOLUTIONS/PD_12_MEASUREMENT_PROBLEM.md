@@ -29,7 +29,7 @@ rosetta:
 
 > **The Bloch-Burri reading:** Measurement is read as a Zero-Sum Resolution Equation analogue. The superposition (○, the full sphere of possibility) encounters the detector (•, the localized measurement apparatus). The product is modeled as ⊙ — one definite outcome. On the Bloch sphere, measurement projects a state to an outcome; the frame-product language is the framework's interpretation of that projection. See `../../06_TRANSLATION/PEER_REVIEW/COMPLETED_REVIEWS/FEEDBACK_THE_BLOCH_SPHERE.md` as historical feedback, not as an evidence-tier override.
 
-> **Companion treatment:** See [PD_17 archived draft](../../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/PD_17_QUANTUM_RELATIVITY_UNIFICATION_DRAFT.md) for the broader QM/GR unification thesis and its current status.
+> **Companion treatment:** See [PD_17 archived draft](../../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/PD_17_QUANTUM_RELATIVITY_UNIFICATION_DRAFT.md) for the broader QM/GR unification thesis and its current status.
 >
 > **Quantum-foundations boundary (2026-04-29):** Grangier/Roger/Aspect 1986, Jacques et al. 2007, Freedman/Clauser 1972, Aspect/Dalibard/Roger 1982, and the 2022 Nobel Prize source set are grounded at `[S]` tier in [`../../../05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md). These experiments confirm single-photon nonclassicality, measurement-context dependence, and Bell-inequality violation under the test assumptions. [B] They do not establish this D4/D5 reframe, systemic awareness-collapse, K2-as-physics, or literal F5. [I/C]
 

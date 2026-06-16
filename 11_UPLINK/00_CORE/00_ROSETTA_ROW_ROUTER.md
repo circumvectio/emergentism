@@ -35,7 +35,7 @@ These roots sit beside the organism, not inside it. They are not subordinate to 
 
 | Root | Path | What It Owns | Relation |
 |------|------|--------------|----------|
-| **02_SKYZAI/02_PUBLIC_SCAFFOLD** | `02_SKYZAI/02_PUBLIC_SCAFFOLD/` | public DAV machine / product-composition surface | peer to `02_SKYZAI/01_NOOSPHERE/`; downstream of organism runtime |
+| **02_SKYZAI/02_PUBLIC_SCAFFOLD** | `02_SKYZAI/04_PUBLIC_SCAFFOLD/` | public DAV machine / product-composition surface | peer to `02_SKYZAI/01_NOOSPHERE/`; downstream of organism runtime |
 | **02_SKYZAI/08_EVOLUTIONARY_NETWORK** | `02_SKYZAI/08_EVOLUTIONARY_NETWORK/` | entity / legal wrapper for Evolutionary.Network; political-philosophical canon | peer to `02_SKYZAI/01_NOOSPHERE/` and `02_SKYZAI/06_SPECTRE/`; immune organ entity layer |
 
 ## Read Law

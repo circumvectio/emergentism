@@ -18,8 +18,10 @@ rosetta:
 > **Canonical enumeration:** For the crisp authoritative list of the constitutional invariants, the K*/A* namespace disambiguation, and the Ω ratification status, see the canonical anchor `01_EMERGENTISM/05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md` (or equivalent relative path). Current K2 ruling (2026-05-30): **5 + 1** — five refusals plus Ω as the directional +1. Ω is not a sixth refusal.
 
 **Status:** Active  
-**Date:** 2026-05-20  
+**Date:** 2026-06-16 (root tree synced to 2026-06-15 three-pillar reorganization; canonical surface preserved per K3)
 **Scope:** Perennial doctrine root, sevenfold Foundation, Uplink packets, tools, seed
+
+*Last updated 2026-06-16: state-headers synced; "Does NOT Contain" section's path references updated to current canonical pillars (post-2026-06-15 three-pillar reorg + retired-alias cleanup); DS_Store sweep covered by the 2026-06-16 7-Varṇa hidden-file cleanup cycle; AGENTZ dispatch surface live at `../.codex/agents/ROOT_AND_GOD_DEPLOYMENT.md`.*
 
 ## Quick Links
 - [`00_CANONICAL_TREE_OUTLINE.md`](00_CANONICAL_TREE_OUTLINE.md) — the disk-verified whole-tree map; read it before concluding any name or number is "wrong"
@@ -148,7 +150,7 @@ Rules:
 | `11_UPLINK/` | numbered packet archive and compressed agent surfaces |
 | `09_TOOLS/` | scripts, compilers, annotation tools, audit utilities |
 | `10_SEED/` | seed closure material |
-| `12_PUBLIC_SITE/` | tracked public-site app source, frozen for signed AIA migration to `02_SKYZAI/02_AIA/app/` |
+| `12_PUBLIC_SITE/` | tracked public-site app source, frozen for signed AIA migration to `02_SKYZAI/03_AIA/app/` |
 | `91_COMPATIBILITY/` | old stubs and moved compatibility surfaces |
 | `90_ARCHIVE/` | local doctrine-supplement archive |
 
@@ -197,11 +199,12 @@ This root owns doctrine. It does not own the living runtime body. Runtime, entit
 Per the [Tree Constitution](08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_TREE_CONSTITUTION.md):
 
 - **Runtime state, product code, organs, agents, intake, PWAs** → `../02_SKYZAI/01_NOOSPHERE/` except the frozen `12_PUBLIC_SITE/` source awaiting AIA migration
-- **Public DAC factory / product scaffold** → `../02_SKYZAI/02_PUBLIC_SCAFFOLD/`
+- **Public DAC factory / product scaffold** → `../02_SKYZAI/04_PUBLIC_SCAFFOLD/`
 - **Legal entities, foundation, brand membranes** → `../03_VENTURES/`
-- **Outside portfolio ventures (Tokencen, QNTM (the institutional MPC/ZK-Identity rail))** → `../03_VENTURES/_PORTFOLIO/`
+- **Portfolio ventures (Tokencen, QNTM, etc.)** → `../03_VENTURES/OPEN_FINANCE_NETWORK/`, `../03_VENTURES/QNTM/`, etc. (per owning lane; the former `_PORTFOLIO/` namespace was retired 2026-06-15)
+- **Canonical code** → `../04_CODE/<owning-lane>/`
 - **Physical-mesh substrate, energy/capacity market** → `../02_SKYZAI/06_SPECTRE/`
-- **Cold history, intake archive, tombstones** → `../90_ARCHIVE_AND_COMPATIBILITY/`
+- **Cold history, intake archive, tombstones, tool noise** → `../90_ARCHIVE/` (the former `90_ARCHIVE_AND_COMPATIBILITY/` namespace was retired 2026-06-07; see [`../RETIRED.md`](../RETIRED.md) for the full retired-surfaces index)
 
 Tools live here only because they serve doctrine maintenance. Runtime services live in `02_SKYZAI/01_NOOSPHERE/00_BACKBONE/`.
 

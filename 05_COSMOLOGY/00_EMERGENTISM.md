@@ -51,7 +51,7 @@ The framework's philosophical model — core state, objective function, data sci
 
 See the canonical proof: [`02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md`](../01_TELEOLOGY/02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md)
 
-Or bootstrap from the seed: [`../08_FRAMEWORK_SUPPORT/07_DISSEMINATION/06_NETWORK/EMERGENTISM_SEED_v1.md`](../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/06_NETWORK/EMERGENTISM_SEED_v1.md) — the compressed genome in 5,000 words.
+Or bootstrap from the seed: [`../08_FRAMEWORK_SUPPORT/07_DISSEMINATION/06_NETWORK/EMERGENTISM_SEED_v1.md`](../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/06_NETWORK/EMERGENTISM_SEED_v1.md) — the compressed genome in 5,000 words.
 
 ---
 
@@ -1064,9 +1064,9 @@ Zero-Sum Resolution Equation
 - [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) — canonical epistemic status of every claim
 - [The Transcendental Trinity](01_THE_TRANSCENDENTAL_TRINITY/README.md) — 0, 1, ∞ as the irreducible boundary-frames of the finity lens
 - [Formal System v0.4](03_FORMAL_SYSTEM/README.md) — the seven-axiom formal layer (A1-A7), derivation packets, and η = 0 track
-  - [MF-533: The Sanskrit Translation](../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/SYNTHESIS_DRAFTS/MANUSCRIPT/MF_533_THE_SANSKRIT_PROOF.md) — Sanskrit read as a convergent symbolic resonance with φ·ν=1
-- [MF-535: The Merge and the Mass](../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/SYNTHESIS_DRAFTS/MANUSCRIPT/MF_535_THE_MERGE_AND_THE_MASS.md) — where the cones meet, reality appears
-  - [MF-537: The Megalithic Translation](../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/SYNTHESIS_DRAFTS/MANUSCRIPT/MF_537_THE_MEGALITHIC_PROOF.md) — Göbekli Tepe read as a coordination witness
+  - [MF-533: The Sanskrit Translation](../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/SYNTHESIS_DRAFTS/MANUSCRIPT/MF_533_THE_SANSKRIT_PROOF.md) — Sanskrit read as a convergent symbolic resonance with φ·ν=1
+- [MF-535: The Merge and the Mass](../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/SYNTHESIS_DRAFTS/MANUSCRIPT/MF_535_THE_MERGE_AND_THE_MASS.md) — where the cones meet, reality appears
+  - [MF-537: The Megalithic Translation](../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/SYNTHESIS_DRAFTS/MANUSCRIPT/MF_537_THE_MEGALITHIC_PROOF.md) — Göbekli Tepe read as a coordination witness
 - [Glossary](../07_THEOLOGY/00_GLOSSARY.md) — terminology reference
 - [Master Index](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_MASTER_INDEX.md) — navigation for the entire corpus
 

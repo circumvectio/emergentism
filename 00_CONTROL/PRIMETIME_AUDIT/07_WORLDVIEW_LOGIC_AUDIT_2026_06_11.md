@@ -125,7 +125,7 @@ The corpus now carries the sharper public-worldview line:
 
 **Verification result:**
 
-- `02_SKYZAI/02_AIA/workflowy-clone`: `npm test`, `npm run lint`, `npm run build`, and `python3 scripts/verify_workflowy_interactions.py` — PASS.
+- `02_SKYZAI/03_AIA/workflowy-clone`: `npm test`, `npm run lint`, `npm run build`, and `python3 scripts/verify_workflowy_interactions.py` — PASS.
 - Workflowy side-nav visual probe: desktop rail present at `272px`, main surface offset correctly, mobile verifier still green.
 - `01_EMERGENTISM/12_PUBLIC_SITE/book-pwa`: `npm test`, `npm run lint`, `npm run build` — PASS.
 - Emergentism book-pwa side-nav visual probe at `http://localhost:3061`: 51 chapter items, `280px` rail, item activation toggles correctly.
@@ -178,8 +178,8 @@ The corpus now carries the sharper public-worldview line:
 
 **Verification result:**
 
-- `02_SKYZAI/02_AIA/workflowy-clone`: `npm test` — PASS (`152/152`), `npm run lint` — PASS, `npm run build` — PASS.
-- `python3 02_SKYZAI/02_AIA/workflowy-clone/scripts/verify_workflowy_interactions.py` — PASS; imported Markdown produced a nested side-nav item at depth `1`, parent path stayed active, and the nested node was marked current.
+- `02_SKYZAI/03_AIA/workflowy-clone`: `npm test` — PASS (`152/152`), `npm run lint` — PASS, `npm run build` — PASS.
+- `python3 02_SKYZAI/03_AIA/workflowy-clone/scripts/verify_workflowy_interactions.py` — PASS; imported Markdown produced a nested side-nav item at depth `1`, parent path stayed active, and the nested node was marked current.
 - `python3 01_EMERGENTISM/12_PUBLIC_SITE/predeploy_check.py` — PASS.
 - Targeted overclaim scan returned only bounded guardrails, correction notes, benign verifier/test prompts, and old generated companion/RAG artifacts with source-scope boundaries; no unguarded live source or public-route defect was found in the patched surfaces.
 

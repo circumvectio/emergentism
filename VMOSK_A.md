@@ -5,7 +5,7 @@ status: ACTIVE v1.0 — 2026-05-23
 owner: K2 (Yves R. Burri) + L7 Ṛṣi council
 audience: All agents, scholars, practitioners, and organism operators entering the doctrine
 evidence_tier: "[S] structural doctrine; [B] foundational claims where formally grounded; [I] interpretive operational content; [C] forward scholarly targets"
-truth_boundary: "This VMOSK-A defines the replicator stack for the Emergentism doctrine root — the perennial framework built on φ·ν=1, the Sevenfold Foundation, and the Rosetta Stone. It is NOT the organism runtime root (02_SKYZAI/01_NOOSPHERE/) or the commercial factory (02_SKYZAI/02_PUBLIC_SCAFFOLD/). Doctrine changes slowly; runtime changes fast. Repair source truth before patching summaries."
+truth_boundary: "This VMOSK-A defines the replicator stack for the Emergentism doctrine root — the perennial framework built on φ·ν=1, the Sevenfold Foundation, and the Rosetta Stone. It is NOT the organism runtime root (02_SKYZAI/01_NOOSPHERE/) or the commercial factory (02_SKYZAI/04_PUBLIC_SCAFFOLD/). Doctrine changes slowly; runtime changes fast. Repair source truth before patching summaries."
 parent_doctrines:
   - 01_EMERGENTISM/00_SEVENFOLD_FOUNDATION_ROOT.md
   - 01_EMERGENTISM/11_UPLINK/00_CORE/00_INDEX.md
@@ -13,7 +13,7 @@ parent_doctrines:
 related:
   - 02_SKYZAI/01_NOOSPHERE/VMOSK_A.md (organism runtime)
   - 03_VENTURES/OPEN_FINANCE_NETWORK/GOVERNANCE/FOUNDATION/VMOSK_A.md (constitutional source entity)
-  - 02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/VMOSK_A.md (definitive book; moved 2026-05-31 per K3 tombstone 08_FRAMEWORK_SUPPORT/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK_MOVED.md)
+  - 03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/VMOSK_A.md (definitive book; moved 2026-05-31 per K3 tombstone 08_FRAMEWORK_SUPPORT/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK_MOVED.md)
 rosetta:
   primary_level: L7
   primary_column: Philosophy
@@ -153,7 +153,7 @@ predeploy gate required before push.
 **P0 — owner/K2 decisions (cannot be auto-executed):**
 1. **Public-site source-anchoring** (R-PUBLIC-ANCHOR): commission a generator pass so the ~180 highest-value public claims link to their doctrine source (lift ~9%→~42%). *The difference between "looks disciplined" and "is verifiable" — the framework's whole thesis.*
 2. **Domain cutover**: alias the linked Vercel project `emergentism-org` to the domain, repoint DNS/SSL off the old Google Sites/Squarespace host, redeploy current source (local prebuild is stale vs a 2026-06-10 `app.html` edit), enforce HTTPS apex→www.
-3. **book-pwa migration** (K2 envelope signed 2026-05-31, **unexecuted**): `git mv book-pwa → 02_SKYZAI/02_AIA/app/` once the AIA destination is ready; its full verification gate is unchecked.
+3. **book-pwa migration** (K2 envelope signed 2026-05-31, **unexecuted**): `git mv book-pwa → 02_SKYZAI/03_AIA/app/` once the AIA destination is ready; its full verification gate is unchecked.
 
 **P1 — gated but scoped:**
 4. **R-TOOLS-MIGRATE**: ~49 scripts on dead pre-consolidation paths → dormant/active triage + per-file rewrite + test pass + dated K2 receipt (touches runtime; no blind sweep).
@@ -390,12 +390,12 @@ Sprint window: 2026-05-23 → 2026-09-30.
 | Layer | VMOSK-A doc | Owner |
 |---|---|---|
 | Organism runtime | [`02_SKYZAI/01_NOOSPHERE/VMOSK_A.md`](../02_SKYZAI/01_NOOSPHERE/VMOSK_A.md) | Skyzai organism |
-| DAV factory | [`02_SKYZAI/02_PUBLIC_SCAFFOLD/VMOSK_A.md`](../02_SKYZAI/02_PUBLIC_SCAFFOLD/VMOSK_A.md) | Skyzai product surface |
+| DAV factory | [`02_SKYZAI/04_PUBLIC_SCAFFOLD/VMOSK_A.md`](../02_SKYZAI/04_PUBLIC_SCAFFOLD/VMOSK_A.md) | Skyzai product surface |
 | Constitutional source | [`03_VENTURES/OPEN_FINANCE_NETWORK/GOVERNANCE/FOUNDATION/VMOSK_A.md`](../03_VENTURES/OPEN_FINANCE_NETWORK/GOVERNANCE/FOUNDATION/VMOSK_A.md) | K2 + L7 Ṛṣi |
 | OFN ecosystem | [`03_VENTURES/OPEN_FINANCE_NETWORK/VMOSK_A.md`](../03_VENTURES/OPEN_FINANCE_NETWORK/VMOSK_A.md) | OFN AG + Tokencen |
 | Bank rail | [`03_VENTURES/_PORTFOLIO/QNTM/VMOSK_A.md`](../03_VENTURES/_PORTFOLIO/QNTM/VMOSK_A.md) | QNTM team |
 | Physical mesh | [`02_SKYZAI/06_SPECTRE/VMOSK_A.md`](../02_SKYZAI/06_SPECTRE/VMOSK_A.md) | SPECTRE mesh operators |
-| Definitive book | [`02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/VMOSK_A.md`](../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/VMOSK_A.md) | Book editorial team |
+| Definitive book | [`02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/VMOSK_A.md`](../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/VMOSK_A.md) | Book editorial team |
 
 ---
 
@@ -405,7 +405,7 @@ Sprint window: 2026-05-23 → 2026-09-30.
 
 ---
 
-> **Doctrine orients; it does not operate. The organism breathes in 02_SKYZAI/01_NOOSPHERE/. The factory sells in 02_SKYZAI/02_PUBLIC_SCAFFOLD/. The mesh routes in 02_SKYZAI/06_SPECTRE/. The doctrine watches from 01_EMERGENTISM/.**
+> **Doctrine orients; it does not operate. The organism breathes in 02_SKYZAI/01_NOOSPHERE/. The factory sells in 02_SKYZAI/04_PUBLIC_SCAFFOLD/. The mesh routes in 02_SKYZAI/06_SPECTRE/. The doctrine watches from 01_EMERGENTISM/.**
 >
 > Zero-Sum Resolution Equation
 

@@ -23,7 +23,7 @@ rosetta:
 
 **Status:** Active
 **Evidence Tier:** Meta-epistemic governance document
-**Depends on:** [00_THE_HONEST_POSITION.md](../../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [FRAGILITY_AUDIT_2026_04_04.md](../../../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/06_TRANSLATION/COUNCIL/05_DOCUMENT_AUDITS/01_BASELINE/FRAGILITY_AUDIT_2026_04_04.md)
+**Depends on:** [00_THE_HONEST_POSITION.md](../../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [FRAGILITY_AUDIT_2026_04_04.md](../../../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/06_TRANSLATION/COUNCIL/05_DOCUMENT_AUDITS/01_BASELINE/FRAGILITY_AUDIT_2026_04_04.md)
 <!-- [D] Dead links removed 2026-04-10: PROOF_DEBT_REGISTER.md was not present in this workspace; COMPREHENSIVE_FRAMEWORK_ASSESSMENT_2026_04_04.md archived to 99_ARCHIVE/SESSION_LOGS_2026/. -->
 **Date:** 2026-04-14
 **Purpose:** Steelman the strongest attacks on Emergentism. A framework that cannot survive its best critics is not antifragile — it is fragile with good marketing.

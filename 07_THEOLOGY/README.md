@@ -73,8 +73,8 @@ This is the clean part of the formation insight: children and groups learn throu
 |---|---|---|
 | Emergentism | `../05_COSMOLOGY/00_EMERGENTISM.md` | Public-facing doctrine (located in System Architecture) |
 | Weltanschauung | `../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md` | Public worldview translation (located in System Architecture) |
-| Translation surfaces (archived) | `../../02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/06_TRANSLATION` | Academy / council / peer-review surfaces — moved to org archive |
-| Dissemination outputs (archived) | `../../02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION` | Public outputs — moved to org archive |
+| Translation surfaces (archived) | `../../03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/06_TRANSLATION` | Academy / council / peer-review surfaces — moved to org archive |
+| Dissemination outputs (archived) | `../../03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION` | Public outputs — moved to org archive |
 
 ---
 

@@ -53,8 +53,8 @@ Start from:
 
 Archived provenance lanes, not active owner folders:
 
-- `../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/06_TRANSLATION` — academy, council, and review bridges
-- `../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION` — public/export corridor
+- `../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/06_TRANSLATION` — academy, council, and review bridges
+- `../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION` — public/export corridor
 
 ---
 
@@ -66,15 +66,15 @@ Archived provenance lanes, not active owner folders:
 | [00_NODE_ACTIVATION_PACKAGE.md](00_NODE_ACTIVATION_PACKAGE.md) | Compiler entry surface |
 | [00_NODE_ACTIVATION_PACKAGE_V2.md](00_NODE_ACTIVATION_PACKAGE_V2.md) | Archived expanded activation package |
 | [00_AGENT_ROUTING_TABLE.md](00_AGENT_ROUTING_TABLE.md) | Routing surface for agent roles |
-| [../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/README.md](../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/README.md) | Archived support lanes and legacy compiler surfaces |
+| [../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/README.md](../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/README.md) | Archived support lanes and legacy compiler surfaces |
 
 ---
 
 ## Adjacent Execution Surfaces
 
-- `../../../02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION` — archived release and public-export provenance
+- `../../../03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION` — archived release and public-export provenance
 - `../../../02_SKYZAI/01_NOOSPHERE/` — current Skyzai organism route root
-- `../../../02_SKYZAI/02_PUBLIC_SCAFFOLD/` — current Skyzai public-scaffold route root
+- `../../../02_SKYZAI/04_PUBLIC_SCAFFOLD/` — current Skyzai public-scaffold route root
 
 ---
 

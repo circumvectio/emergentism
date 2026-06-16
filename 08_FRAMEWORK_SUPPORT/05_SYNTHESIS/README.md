@@ -16,7 +16,7 @@ rosetta:
 
 ## Contents (what actually remains)
 
-- [`07_DEFINITIVE_ONE_BOOK_MOVED.md`](07_DEFINITIVE_ONE_BOOK_MOVED.md) — **K3 tombstone.** The book moved to `02_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/`. Keep; do not re-add the book here.
+- [`07_DEFINITIVE_ONE_BOOK_MOVED.md`](07_DEFINITIVE_ONE_BOOK_MOVED.md) — **K3 tombstone.** The book moved to `03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/`. Keep; do not re-add the book here.
 - [`00_WEBSITE_NARRATIVE_SPEC_2026_05_30.md`](../../90_ARCHIVE/00_K3_SWEEP_2026_05_31/08_FRAMEWORK_SUPPORT/05_SYNTHESIS/00_WEBSITE_NARRATIVE_SPEC_2026_05_30.md) — **superseded (K3).** The canonical website narrative now lives at [`../../12_PUBLIC_SITE/WEBSITE_NARRATIVE.md`](../../12_PUBLIC_SITE/WEBSITE_NARRATIVE.md); this brainstorm spec is kept for provenance only.
 - [`00_ECOSYSTEM_ARCHITECTURE_ROOT_NOTE_2026_05_25.md`](../../90_ARCHIVE/00_K3_SWEEP_2026_05_31/08_FRAMEWORK_SUPPORT/05_SYNTHESIS/00_ECOSYSTEM_ARCHITECTURE_ROOT_NOTE_2026_05_25.md) — `[I/C]` synthesis note on the Tokencen / Aureus entity-separation model; not source authority for those entities.
 

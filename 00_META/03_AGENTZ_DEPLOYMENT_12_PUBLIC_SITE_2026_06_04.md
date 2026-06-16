@@ -69,7 +69,7 @@ Manifest: [`03_AGENTZ_DEPLOYMENT_12_PUBLIC_SITE_2026_06_04.csv`](03_AGENTZ_DEPLO
 ## Lane Decisions
 
 - Historical 10_PUBLIC_SITE strings are signature provenance only; 12_PUBLIC_SITE is the current physical path.
-- No new book-pwa feature work belongs here while the 02_SKYZAI/02_AIA/app migration envelope is open.
+- No new book-pwa feature work belongs here while the 02_SKYZAI/03_AIA/app migration envelope is open.
 - No broad file moves, deletions, or doctrine upgrades were performed by this receipt generator.
 - Any future rename or restructure should cite this manifest and then update the owning front door.
 

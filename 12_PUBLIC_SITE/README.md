@@ -128,7 +128,7 @@ THEOLOGY (L7) [S/I]
 ## Infinite Book Route
 
 **Controlling spec [S/I]:**
-`../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/10_ADAPTIVE_PWA_RAG_BLUEPRINT/00_THE_INFINITE_BOOK.md`.
+`../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/10_ADAPTIVE_PWA_RAG_BLUEPRINT/00_THE_INFINITE_BOOK.md`.
 
 **Tracked prototype [I]:** `infinite.html` is the public proof-of-shape: the finite canonical
 book appears as a recursive tree, and each node exposes a stubbed `∞ expand` action. The product
@@ -136,8 +136,8 @@ line is constitutional: the book is free; paid value is compute, private branche
 exports, and grounded expansion.
 
 **Seed canon [S/I]:**
-`../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/THE_DEFINITIVE_BOOK_FULL.md`
-and `../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/MANUSCRIPT`.
+`../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/THE_DEFINITIVE_BOOK_FULL.md`
+and `../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/MANUSCRIPT`.
 
 **Workflowy UX anchor [B/I]:** Official Workflowy help frames the app as one infinite document with
 nesting, zoom, breadcrumbs, inline editing, live search, node types, mirrors/templates, slash
@@ -151,7 +151,7 @@ marked `[AI]`, tiered `[I]`, and exportable under K4 grace exit.
 **App-source status [S/B]:** `book-pwa/` is tracked source with ignored local runtime/build
 state (`.env`, `dev.db`, `.next/`, `node_modules/`). It has a signed migration envelope at
 [`00_K2_ENVELOPE_APP_MIGRATION_2026_05_31.md`](00_K2_ENVELOPE_APP_MIGRATION_2026_05_31.md)
-for move to `02_SKYZAI/02_AIA/app/` under spec 13. Do not add new product feature work here; use this
+for move to `02_SKYZAI/03_AIA/app/` under spec 13. Do not add new product feature work here; use this
 lane only for source-preserving migration, tombstone, and public-claim repair until the AIA move
 lands.
 

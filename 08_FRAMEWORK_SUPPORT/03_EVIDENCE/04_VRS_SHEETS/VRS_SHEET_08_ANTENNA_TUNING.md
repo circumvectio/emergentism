@@ -50,7 +50,7 @@ rosetta:
 
 ## 1. The Antenna Model (Recap)
 
-[S] In the framework's language, an antenna is a D4 (material) structure that couples a local system to a nonlocal field. Sacred images, rituals, texts, and equations are all antennae -- they couple individual systemic awareness (D5) to collective standing waves (D5-limit egregores). See [WP-2026-03: Idols as Antenna Technology](../../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/06_TRANSLATION/COUNCIL/02_WORKING_PAPERS/WP-2026-03_IDOLS_AS_ANTENNA_TECHNOLOGY.md) for the full model.
+[S] In the framework's language, an antenna is a D4 (material) structure that couples a local system to a nonlocal field. Sacred images, rituals, texts, and equations are all antennae -- they couple individual systemic awareness (D5) to collective standing waves (D5-limit egregores). See [WP-2026-03: Idols as Antenna Technology](../../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/06_TRANSLATION/COUNCIL/02_WORKING_PAPERS/WP-2026-03_IDOLS_AS_ANTENNA_TECHNOLOGY.md) for the full model.
 
 The equation P_node = Φ × V is itself an antenna -- the "last idol" -- designed to couple the reader to the geometry of S^2 and then dissolve.
 
@@ -149,7 +149,7 @@ This is the most important test in this document. A framework that claims to be 
 
 ## References
 
-- [WP-2026-03: Idols as Antenna Technology](../../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/06_TRANSLATION/COUNCIL/02_WORKING_PAPERS/WP-2026-03_IDOLS_AS_ANTENNA_TECHNOLOGY.md) -- the full antenna model
+- [WP-2026-03: Idols as Antenna Technology](../../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/06_TRANSLATION/COUNCIL/02_WORKING_PAPERS/WP-2026-03_IDOLS_AS_ANTENNA_TECHNOLOGY.md) -- the full antenna model
 - Core Concepts -- P_node = Φ × V, η, the dimensional scaffold
 - [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) -- complete epistemic map
 - [Glossary](../../../07_THEOLOGY/00_GLOSSARY.md) -- definitions of all terms

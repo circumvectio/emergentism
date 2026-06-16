@@ -33,7 +33,7 @@ Framework-support meta lane for agent-facing compilers, routing tables, analysis
 
 - Root Foundation doctrine. Route that to `../../00_META/` or the seven Foundation roots.
 - Active governance law. Route that to `../01_GOVERNANCE/`.
-- Public dissemination packages. Archived dissemination provenance lives at `../../../02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION`; create a new active owner only through the parent lane.
+- Public dissemination packages. Archived dissemination provenance lives at `../../../03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION`; create a new active owner only through the parent lane.
 
 ## Read First
 

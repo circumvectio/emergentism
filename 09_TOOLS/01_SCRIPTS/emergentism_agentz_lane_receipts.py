@@ -117,7 +117,7 @@ LANES = {
         archive_route="Frozen app source for migration/tombstone/public-claim repair only; not a live product feature lane.",
         notes=(
             "Historical 10_PUBLIC_SITE strings are signature provenance only; 12_PUBLIC_SITE is the current physical path.",
-            "No new book-pwa feature work belongs here while the 02_SKYZAI/02_AIA/app migration envelope is open.",
+            "No new book-pwa feature work belongs here while the 02_SKYZAI/03_AIA/app migration envelope is open.",
         ),
     ),
     "90_ARCHIVE": LaneConfig(

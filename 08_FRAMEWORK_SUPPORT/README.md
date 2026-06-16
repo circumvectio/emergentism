@@ -177,9 +177,9 @@ For a dated framework sprint packet: `SPRINT_004_PLAN.md` (historical execution/
 | `02_OPERATORS/` | Operator grammar, advanced operator correspondences, and sphere derivation support |
 | `03_EVIDENCE/` | Rosetta, paradox dissolutions, comparative evidence, and calibration layers |
 | `04_APPLICATIONS/` | Archived: use `../90_ARCHIVE/08_FRAMEWORK_SUPPORT/04_APPLICATIONS/` for provenance. No live folder exists here. |
-| `05_SYNTHESIS/` | Live synthesis front door and active PWA/RAG blueprint lane; older book/manuscript canon is archived under `../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS`. |
-| `06_TRANSLATION/` | Archived: use `../../02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/06_TRANSLATION` for provenance. No live folder exists here. |
-| `07_DISSEMINATION/` | Archived: use `../../02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION` for provenance. No live folder exists here. |
+| `05_SYNTHESIS/` | Live synthesis front door and active PWA/RAG blueprint lane; older book/manuscript canon is archived under `../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS`. |
+| `06_TRANSLATION/` | Archived: use `../../03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/06_TRANSLATION` for provenance. No live folder exists here. |
+| `07_DISSEMINATION/` | Archived: use `../../03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION` for provenance. No live folder exists here. |
 | `08_AGENTS/` | Agent-facing support surfaces for this framework lane |
 | `00_META/` | Agent-facing compiler, routing, and support-meta surfaces formerly held under the Lens lane |
 
@@ -213,7 +213,7 @@ The active canon no longer relies on a single hidden resolution packet. Drift is
 Historical conflict-resolution packets still exist in archive space when needed for provenance, especially under `90_ARCHIVE/`, but they are no longer the primary active authority.
 
 The older technical resolution memo remains available here:
-- **[00_CORPUS_CONFLICT_RESOLUTION.md](../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/08_DELIVERABLES/00_CORPUS_CONFLICT_RESOLUTION.md)** — archived dissemination-facing summary of resolved corpus conflicts
+- **[00_CORPUS_CONFLICT_RESOLUTION.md](../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/08_DELIVERABLES/00_CORPUS_CONFLICT_RESOLUTION.md)** — archived dissemination-facing summary of resolved corpus conflicts
 
 ### Genre-Aware Drift Scans
 

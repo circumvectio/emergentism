@@ -56,7 +56,7 @@ Emergentism belongs here when spoken positively. It is not L6 Core State. L6 say
 | The derivation | `01_EMERGENTISM/01_TELEOLOGY/02_THE_DERIVATION/` | Mathematical / interpretive derivation |
 | Rosetta Stone | `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/` | Seven-level cross-domain mapping |
 | Applications (archived) | `01_EMERGENTISM/90_ARCHIVE/08_FRAMEWORK_SUPPORT/04_APPLICATIONS/` | Empirical and applied research lanes — **archived 2026-04-25**; receipts (R*, Great Filter etc.) live here. Live `08_FRAMEWORK_SUPPORT/04_APPLICATIONS/` does NOT exist. |
-| Synthesis books (mostly archived) | `01_EMERGENTISM/90_ARCHIVE/08_FRAMEWORK_SUPPORT/05_SYNTHESIS/` for archived book canon · `02_SKYZAI/02_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/10_ADAPTIVE_PWA_RAG_BLUEPRINT/` for the current PWA/RAG blueprint | Definitive book manuscript archived 2026-04-25; current Infinite Book / PWA-RAG product work routes through AIA. Per L3 audit Wave SK-4 and current disk truth. |
+| Synthesis books (mostly archived) | `01_EMERGENTISM/90_ARCHIVE/08_FRAMEWORK_SUPPORT/05_SYNTHESIS/` for archived book canon · `02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/10_ADAPTIVE_PWA_RAG_BLUEPRINT/` for the current PWA/RAG blueprint | Definitive book manuscript archived 2026-04-25; current Infinite Book / PWA-RAG product work routes through AIA. Per L3 audit Wave SK-4 and current disk truth. |
 | Sphere system architecture applied | `01_EMERGENTISM/05_COSMOLOGY/01_THE_SPHERE_COSMOLOGY_APPLIED.md` | S² mapped to organism design: organ positions, drift diagnostics, P-score bridge |
 
 ---

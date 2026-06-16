@@ -241,7 +241,7 @@ The framework is provider-neutral on AI inference path (per K2 directive 2026-04
 - Survey 2 (02_SKYZAI/01_NOOSPHERE organism root): completed 2026-04-28 ~16:00, found Evolutionary.Network exists but adapter-not-built + RealityFutures Adapter-3 receiver missing + Skyzai biggest code/runtime gap
 - Survey 3 (outer roots + Foundation CANON): completed 2026-04-28 ~16:24, found Foundation CANON ~1,886 files + DUAL_TOKEN gap + PRISM duplication + Spectre proof-ladder zero progress
 - Charter v2.0 ratified: [`CHARTER.draft.md`](../../../02_SKYZAI/01_NOOSPHERE/04_CHILD_DAVS/EVOLUTIONARY_NETWORK/CHARTER.draft.md)
-- Book K2 matrix signed: [`00_K2_DECISIONS_SIGNED_2026_04_28.md`](../../../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/00_K2_DECISIONS_SIGNED_2026_04_28.md)
+- Book K2 matrix signed: [`00_K2_DECISIONS_SIGNED_2026_04_28.md`](../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/00_K2_DECISIONS_SIGNED_2026_04_28.md)
 - YieldFront K2 ratification packet: [`201_YIELDFRONT_K2_RATIFICATION_2026_04_28.md`](201_YIELDFRONT_K2_RATIFICATION_2026_04_28.md)
 - Systems Architect paradigm packet: [`202_RISHI_COORDINATION_PARADIGM_2026_04_28.md`](202_RISHI_COORDINATION_PARADIGM_2026_04_28.md)
 - Architecture map: [`ORIENTATION.md`](../../../ORIENTATION.md) (consolidated from `00_THE_THING_IN_ITS_ENTIRETY.md` on 2026-05-08)

@@ -116,7 +116,7 @@ The UI/UX of Skyzai forces humans to adopt the same structural rigor as the AI a
 
 > **Canonical cross-reference:**
 > - `02_SKYZAI/01_NOOSPHERE/07_PWAs/` — Public surfaces (agentz.cloud, skyzai.com)
-> - `02_SKYZAI/02_PUBLIC_SCAFFOLD/` — DAC machine / product-composition surface
+> - `02_SKYZAI/04_PUBLIC_SCAFFOLD/` — DAC machine / product-composition surface
 > - `01_EMERGENTISM/11_UPLINK/` — L4 compressed routing for AI
 
 ---

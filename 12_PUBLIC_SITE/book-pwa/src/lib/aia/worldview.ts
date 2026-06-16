@@ -30,7 +30,7 @@ export type WorldviewManifest = {
 const DEFAULT_MANIFEST_PATH = path.resolve(
   process.cwd(),
   "../../..",
-  "02_SKYZAI/02_AIA/EMERGENTISM_AIA/worldview.manifest.json"
+  "02_SKYZAI/03_AIA/EMERGENTISM_AIA/worldview.manifest.json"
 );
 
 export function loadWorldviewManifest(manifestPath = process.env.AIA_WORLDVIEW_MANIFEST_PATH): WorldviewManifest {

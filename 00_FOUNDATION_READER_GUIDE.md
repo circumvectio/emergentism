@@ -15,7 +15,7 @@ rosetta:
 
 > `00_META/00_CORPUS.md` is a generated historical topology map. It is useful for old corpus memory, but the current routing front door for this lane is this README.
 
-**Books reading note:** the books (moved 2026-05-31 to the AIA instance at `../02_SKYZAI/02_AIA/EMERGENTISM_AIA/`) are downstream synthesis and invitation surfaces, not epistemic authority surfaces. If literary prose sounds stronger than the kernel, route through [00_FOUNDATION_AND_BOOKS_READING_NOTE.md](../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/00_FOUNDATION_AND_BOOKS_READING_NOTE.md) _(archived)_ and let [00_THE_HONEST_POSITION.md](02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) govern the tier.
+**Books reading note:** the books (moved 2026-05-31 to the AIA instance at `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/`) are downstream synthesis and invitation surfaces, not epistemic authority surfaces. If literary prose sounds stronger than the kernel, route through [00_FOUNDATION_AND_BOOKS_READING_NOTE.md](../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/00_FOUNDATION_AND_BOOKS_READING_NOTE.md) _(archived)_ and let [00_THE_HONEST_POSITION.md](02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) govern the tier.
 
 ## Newcomer Path: Reality, Ontology, Teleology, Public Symbol
 
@@ -103,7 +103,7 @@ Plus the interpretive bridge documents that connect the Trinity to the tradition
 **Canonical sevenfold root:** [00_SEVENFOLD_FOUNDATION_ROOT.md](00_SEVENFOLD_FOUNDATION_ROOT.md) — the current Rosetta-numbered routing architecture for objective function, data science, methodology, value alignment/theurgy, system architecture, core state, and institutional narrative.
 **Canonical D/L bridge:** [00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md](00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md) — why D0-D6 and L1-L7 resonate without collapsing.
 **Deep philosophical expansion:** [00_EMERGENTISM_AS_WELTANSCHAUUNG.md](05_COSMOLOGY/00_EMERGENTISM_AS_WELTANSCHAUUNG.md) — the longer treatise now bound to the Goal/Soul Loop spine: living worldview for Dasein, source-true ontology, objective dharma, recursive play through `P_node = Φ × V`, and the tiered scientific/philosophical unification attempt.
-**Canonical synthesis-reading boundary:** [00_FOUNDATION_AND_BOOKS_READING_NOTE.md](../02_SKYZAI/02_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/00_FOUNDATION_AND_BOOKS_READING_NOTE.md) _(archived)_ — how to read literary certainty downstream of tiered claim discipline.
+**Canonical synthesis-reading boundary:** [00_FOUNDATION_AND_BOOKS_READING_NOTE.md](../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/00_FOUNDATION_AND_BOOKS_READING_NOTE.md) _(archived)_ — how to read literary certainty downstream of tiered claim discipline.
 **Canonical moral/ethical dyad:** [00_OBJECTIVE_MORALS_AND_ETHICS.md](04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) — objective morals (`i -> H`), objective ethics (`H -> i`), objective dharma, and syntropic dyadism under `P_node = Φ × V` and `η = 0`.
 **Canonical moral compression:** [00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md](04_AXIOLOGY/02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md) — one disciplined surface for beauty, truth, justice, good, evil, ethics, morals, and the major philosophical questions.
 **Canonical first-person bridge:** [00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md](02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md) — disclosure first, doctrine second, scientific register explicit.
