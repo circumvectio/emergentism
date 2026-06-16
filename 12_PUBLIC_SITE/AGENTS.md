@@ -20,8 +20,7 @@ rosetta:
 
 # 12_PUBLIC_SITE - Agent Routing
 
-**Lane scope:** public narrative prototypes plus frozen `book-pwa/` source while
-the signed AIA migration envelope remains open.
+**Lane scope:** public narrative prototypes plus the K3-frozen `book-pwa/` source — **moved → `02_SKYZAI/03_AIA/app/` per K2 signoff 2026-06-11** (see `00_BOOK_PWA_MOVED.md`). The K2 envelope is now CLOSED; source tree preserved per K3, archival pending deploy-readiness verification.
 **Primary lead:** L5 for public-site architecture, with L3 evidence audit and L6
 boundary control.
 **Evidence tier:** `[S]` only for Rosetta-linked doctrine; `[B]` only for dated
@@ -31,8 +30,9 @@ build, deployment, payment, auth, model, or runtime receipts.
 
 - [`README.md`](README.md)
 - [`WEBSITE_NARRATIVE.md`](WEBSITE_NARRATIVE.md)
-- [`00_K2_ENVELOPE_APP_MIGRATION_2026_05_31.md`](00_K2_ENVELOPE_APP_MIGRATION_2026_05_31.md)
-- [`book-pwa/AGENTS.md`](book-pwa/AGENTS.md)
+- [`00_BOOK_PWA_MOVED.md`](00_BOOK_PWA_MOVED.md) — **the K3 tombstone redirecting `book-pwa/` → `02_SKYZAI/03_AIA/app/`**
+- [`00_K2_ENVELOPE_APP_MIGRATION_2026_05_31.md`](00_K2_ENVELOPE_APP_MIGRATION_2026_05_31.md) — the signed K2 envelope (now CLOSED, execution receipt 2026-06-12)
+- [`book-pwa/AGENTS.md`](book-pwa/AGENTS.md) — preserved source (frozen)
 - [`../00_META/03_AGENTZ_DEPLOYMENT_12_PUBLIC_SITE_2026_06_04.md`](../00_META/03_AGENTZ_DEPLOYMENT_12_PUBLIC_SITE_2026_06_04.md)
 - [`../00_META/03_AGENTZ_DEPLOYMENT_12_PUBLIC_SITE_2026_06_04.csv`](../00_META/03_AGENTZ_DEPLOYMENT_12_PUBLIC_SITE_2026_06_04.csv)
 
@@ -102,10 +102,11 @@ a single design system and Three.js bootstrap:
 
 ## Constraints
 
+- **MIGRATION COMPLETE 2026-06-12:** `book-pwa/` is moved → `02_SKYZAI/03_AIA/app/` per K2 signoff. Source tree preserved here per K3 (do not develop). New AIA engine work goes to `02_SKYZAI/03_AIA/`.
 - Do not add new PWA product features in this folder during the frozen interval.
 - Do not claim deployment, payment, auth, AI-provider, or runtime readiness
   without fresh receipts.
-- Do not move this lane to `02_SKYZAI/03_AIA/app/` without satisfying the dated envelope.
 
 **Rosetta boundary:** [I] This route card governs public-site routing and source
-preservation. It does not make `book-pwa/` a live production surface.
+preservation. It does not make `book-pwa/` a live production surface; the canonical
+app at `02_SKYZAI/03_AIA/app/` is the live engine lane.

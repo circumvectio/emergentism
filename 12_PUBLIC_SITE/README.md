@@ -148,12 +148,7 @@ Book should feel like one zoomable outline first, not a two-pane docs app.
 visual identity, code source, brand, or clone target. [I] AI-grown branches must remain additive,
 marked `[AI]`, tiered `[I]`, and exportable under K4 grace exit.
 
-**App-source status [S/B]:** `book-pwa/` is tracked source with ignored local runtime/build
-state (`.env`, `dev.db`, `.next/`, `node_modules/`). It has a signed migration envelope at
-[`00_K2_ENVELOPE_APP_MIGRATION_2026_05_31.md`](00_K2_ENVELOPE_APP_MIGRATION_2026_05_31.md)
-for move to `02_SKYZAI/03_AIA/app/` under spec 13. Do not add new product feature work here; use this
-lane only for source-preserving migration, tombstone, and public-claim repair until the AIA move
-lands.
+**App-source status [S/B] (post-migration 2026-06-12):** `book-pwa/` is K3-frozen source (ignored local runtime/build state: `.env`, `dev.db`, `.next/`, `node_modules/`). It has been **moved → `02_SKYZAI/03_AIA/app/`** per K2 signoff [`02_SKYZAI/03_AIA/AUDITS/K2_AIA_APP_MIGRATION_SIGNOFF.md`](../../02_SKYZAI/03_AIA/AUDITS/K2_AIA_APP_MIGRATION_SIGNOFF.md) (2026-06-11, K2 envelope `00_K2_ENVELOPE_APP_MIGRATION_2026_05_31.md`). The K3 tombstone at [`00_BOOK_PWA_MOVED.md`](00_BOOK_PWA_MOVED.md) marks the migration; the canonical home is `02_SKYZAI/03_AIA/app/`. The source tree at `01_EMERGENTISM/12_PUBLIC_SITE/book-pwa/` is **preserved, not deleted**, per the envelope's "do not archive before deploy-readiness" rule. New AIA engine work goes to `02_SKYZAI/03_AIA/`.
 
 ## Agentz Deployment Control
 
