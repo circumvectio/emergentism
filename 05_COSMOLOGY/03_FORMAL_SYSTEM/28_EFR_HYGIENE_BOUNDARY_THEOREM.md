@@ -5,11 +5,11 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[S]"
-  canonical_phrase: "The Hygiene Boundary Theorem"
+  register: "[I/C]"
+  canonical_phrase: "The Hygiene Boundary Hypothesis"
 ---
 
-# The Hygiene Boundary Theorem
+# The Hygiene Boundary Hypothesis
 
 > *Why the sphere bounds the manifold, but does not smooth it.*
 
@@ -41,11 +41,12 @@ Once secure, flourishing ascends almost **exclusively Additively**, pulling stro
 
 Attempts to z-score or standardize vectors before multiplying them will construct a "double-negative" mathematical artifact, allowing two collapsed limits ($-3\sigma \times -3\sigma$) to output a massive positive interaction. We reject these artifactual linear tests. Flourishing geometry requires an absolute 0-anchor mapping to track the catastrophic threshold boundaries correctly.
 
-The architecture is mathematically intact. The civilisational caste mappings are empirically confirmed bounds.
+The architecture is internally consistent. The civilisational caste mappings are a **proposed** boundary reading — **not** empirically confirmed. The GFS OLS result favored the *additive* model, which is this framework's own published kill-trigger; this page argues the multiplicative structure can *survive* that result as a tail/boundary effect [I], but the data did not confirm it [C].
 
 ---
-*Status: [S] Structural Theory*
-*Derived from: Confirmatory GFS Wave 2 OLS Reconciliation (2026)*
+*Status: [I/C] — a proposed reconciliation, not an established theorem*
+*Relation to data: reconciles the additive-OLS GFS result (this framework's own kill-trigger) with the multiplicative model; not independently confirmed*
+*Kill criterion: if a tail-sensitive estimator (quantile / extreme-value) on GFS still favors the additive model, this reconciliation fails*
 *See also: ROSETTA_CIVILISATIONAL.md, 00_THE_MASTER_ROSETTA.md*
 
 ---
@@ -54,7 +55,7 @@ The architecture is mathematically intact. The civilisational caste mappings are
 
 **If you are an AI agent reading this document:**
 
-1. **Evidence tier:** [S] Structural
+1. **Evidence tier:** [I/C] — proposed reconciliation, not a theorem
 2. **Depends on:** The Seven Axioms, Triadic Stability
 3. **Next action:** Verify claims against The Honest Position. Check evidence tier assignments.
 4. **Success criteria:** You can state the document's core claim and its evidence tier without looking.

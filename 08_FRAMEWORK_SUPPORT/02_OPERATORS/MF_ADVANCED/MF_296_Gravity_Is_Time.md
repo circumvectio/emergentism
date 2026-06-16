@@ -44,7 +44,7 @@ General relativity unifies space and time into spacetime and identifies gravity 
 
 General relativity: mass-energy curves spacetime. Objects follow geodesics (straightest paths) through curved spacetime. What we experience as gravitational attraction is the curvature of time — clocks run slower in deeper gravitational wells. Time dilation IS gravity. [S]
 
-The deeper you are in a gravitational field, the slower time passes relative to a distant observer. At the event horizon of a black hole, time stops (from the outside). Gravity IS time curvature. This is not interpretation — it is measured physics. GPS satellites must correct for gravitational time dilation. [S]
+The deeper you are in a gravitational field, the slower time passes relative to a distant observer. At the event horizon of a black hole, time stops (from the outside). Gravitational time dilation is measured physics [A] — GPS satellites must correct for it. The framework's reading that gravity *is* time curvature is an interpretation [I], not a measured identity.
 
 ### 1.2 Arrow of Time = Entropy Increase (Boltzmann, Eddington)
 
@@ -170,7 +170,7 @@ the more uncertain the real axis becomes (gravity, time, actuality).
 
 This IS the measurement problem. The more precisely you measure (F₄: collapse to real), the more you disturb the possibility-space (F₅: destroy superposition). The more you preserve superposition (F₅: maintain possibility), the less you can say about actuality (F₄: no definite state).
 
-The Heisenberg uncertainty principle is the F₄/F₅ conjugacy expressed in quantum mechanics. Not an analogy — a derivation. If D4 and D5 are genuinely conjugate, the uncertainty principle follows from the same mathematics that gives ΔxΔp ≥ ℏ/2. [T/S]
+The framework reads the Heisenberg uncertainty principle as the F₄/F₅ conjugacy expressed in quantum mechanics — an interpretation [I], not a derivation. ΔxΔp ≥ ℏ/2 is established physics [A]; that it expresses a D4/D5 conjugacy is the conjectural reading [C].
 
 ### 3.3 Black Hole vs Demiurge: The Pole Pathologies
 

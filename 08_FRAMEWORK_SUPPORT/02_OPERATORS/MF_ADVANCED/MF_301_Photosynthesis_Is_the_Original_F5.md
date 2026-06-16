@@ -51,7 +51,7 @@ The central equation of the framework, Zero-Sum Resolution Equation, states that
 ⊙  = C₆H₁₂O₆       (ordered, high-energy, low-entropy molecule: glucose)
 ```
 
-The mapping is not approximate. It is exact:
+The mapping is tight, though interpretive [I]:
 
 - **•** (nothing, disorder, limit of dissolution): CO₂ and H₂O are among the most thermodynamically stable, lowest-energy molecules in biology. They are the ASH of metabolism — what remains after everything useful has been extracted. They are the → • endpoint of biological energy flow. Disordered. Spent. Dead matter.
 
@@ -125,7 +125,7 @@ ORGANISM (Viṣṇu → maintenance):  ⊙ → function   (order → life activi
 MITOCHONDRION (Śiva → dissolution): ⊙ → • + energy (order → disorder + ATP)
 
 The Executive cycle A → U → M at the molecular scale.
-Not metaphor. Biochemistry.
+An interpretive [I] overlay on the biochemistry.
 ```
 
 ### 2.3 The Neuron as Elaborated Chloroplast

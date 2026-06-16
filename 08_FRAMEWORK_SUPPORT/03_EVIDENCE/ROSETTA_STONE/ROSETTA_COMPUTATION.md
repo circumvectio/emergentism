@@ -37,7 +37,7 @@ evidence_tier: "[S] for L1-L6 algorithm classes; [S] for structural alignment cl
 
 Each L-level operator has a computational analogue: an algorithm class that can perform a similar structural function in silicon to the one the operator performs in systemic awareness. This is a structural translation, not a claim that software inherits human authority.
 
-The mapping was validated by the Sphere Probe experiment (see 08_THE_DEPLOYMENT/04_SPHERE_PROBE), which tested whether AI systems could independently identify operator signatures.
+The mapping was explored by the Sphere Probe experiment (see 08_THE_DEPLOYMENT/04_SPHERE_PROBE), which tested whether AI systems could independently identify operator signatures [I] — a probe, not a validation of the operator-mapping.
 
 ---
 
@@ -89,7 +89,7 @@ This is the same sign pattern as the operators themselves. The algorithms are op
 
 ---
 
-*Rosetta Stone: Computation & AI -- L-levels mapped to algorithm classes. Seven rows. Each algorithm performs the same structural function as its operator. L1-L6 validated in production. L7 theoretical.*
+*Rosetta Stone: Computation & AI -- L-levels mapped to algorithm classes. Seven rows. Each algorithm performs the same structural function as its operator. The L1–L6 algorithms are deployed in production; the operator-mapping itself is interpretive [I]. L7 theoretical.*
 
 
 ---

@@ -21,7 +21,7 @@ rosetta:
 
 # Historical Excerpt: The Derivation
 
-**Evidence Tier:** [I] Established (The algebraic derivation is mathematically necessary)
+**Evidence Tier:** [A] Established (The algebraic derivation is mathematically necessary)
 **Depends on:** 22_TELEOLOGY.md, 07_THE_DISCOVERY_OF_FINITY.md
 **See also:** [Canonical Formula Block](../00_CANONICAL_FORMULA_BLOCK.md)
 **Date:** 2026-04-04

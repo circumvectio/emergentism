@@ -128,13 +128,13 @@ Each dissolution follows the specific diagnostic pipeline:
 
 > **Reading note:** The one-line summaries below are compressed mnemonics, not substitutes for the underlying papers. Where the local file is absent from this workspace slice, treat the summary as a corpus pointer rather than a verified local artifact.
 
-*   **PD_04: Zeno's Paradoxes** (Resolved: the paradox assumes infinite discrete traversal where the framework posits bounded physical resolution)
-*   **PD_05: The One and the Many** (Resolved: unity and plurality are treated as multiplicative complements rather than additive rivals)
-*   **PD_06: The Ship of Theseus** (Resolved: identity tracks operational continuity `$\\Phi$`, not mere part replacement in `$V$`) [I]
-*   **PD_07: The Fermi Paradox** (Resolved: the bifurcation filter — most civilizations die under `η > 0`, survivors may become low-signature)
-*   **PD_08: The Liar Paradox** (Resolved: self-reference fails when the system exceeds its stable closure condition)
-*   **PD_09: Leibniz's Necessary Being** (Resolved: the framework relocates necessity from a supreme entity to a self-bounding condition)
-*   **PD_10: The Is-Ought Gap** (Resolved conditionally: within the axiom set, extraction is self-terminating and the multiplicative geometry constrains Ought)
+*   **PD_04: Zeno's Paradoxes** (Reframed: the paradox assumes infinite discrete traversal where the framework posits bounded physical resolution)
+*   **PD_05: The One and the Many** (Reframed: unity and plurality are treated as multiplicative complements rather than additive rivals)
+*   **PD_06: The Ship of Theseus** (Reframed: identity tracks operational continuity `$\\Phi$`, not mere part replacement in `$V$`) [I]
+*   **PD_07: The Fermi Paradox** (Reframed: the bifurcation filter — most civilizations die under `η > 0`, survivors may become low-signature)
+*   **PD_08: The Liar Paradox** (Reframed: self-reference fails when the system exceeds its stable closure condition)
+*   **PD_09: Leibniz's Necessary Being** (Reframed: the framework relocates necessity from a supreme entity to a self-bounding condition)
+*   **PD_10: The Is-Ought Gap** (Reframed conditionally: within the axiom set, extraction is self-terminating and the multiplicative geometry constrains Ought)
 *   **PD_13: The Hard Problem** (Reframed: awareness is not missing from reality but extracted from direct experience and then falsely treated as absent from third-person description)
 
 *(PD_11 through PD_24 cover advanced problems: free will, measurement, the hard problem, mind-body, evil, meaning, QM/GR unification, universals, identity persistence, philosophical and scientific implications, the completion thesis, and the third unveiling. See the Definitive Numbering Table above for the full list.)*

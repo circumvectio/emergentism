@@ -11,11 +11,11 @@ rosetta:
 
 # THE STRATEGIC EXCLUSION
 
-## Why The Fourth Operator Is Impossible, Not Prohibited
+## Why The Fourth Operator Is Strategically Dominated, Not Merely Prohibited
 
 **Status:** Active
 **Hat:** Philosopher
-**Evidence Tier:** [S] Structural — geometric necessity
+**Evidence Tier:** [S] Structural — strategically dominated under the enforced balance game
 **Date:** 2026-03-23
 **Depends on:** Burri Sphere formalism, η = 0 proof, Game theory
 
@@ -30,14 +30,14 @@ rosetta:
 **Religion says:** "Thou shalt not."
 **Dharma says:** "Thou canst not."
 
-The fourth operator (extractive ↓ν) is not **prohibited**.
-The fourth operator is **impossible**.
+The fourth operator (extractive ↓ν) is not merely **prohibited**.
+Within the enforced balance game, it is **strategically dominated**.
 
 Not by commandment.
 Not by rule.
 Not by legislation.
 
-By **geometry**.
+By the **payoff structure** of the enforced game.
 
 ---
 

@@ -57,7 +57,7 @@ This is the most empirically testable Three-Stage Process column. Paper G (Biolo
 
 ## Reading the Table
 
-**L1 -- Brainstem and Amygdala.** The oldest brain structures. Threat detection, fight-flight-freeze. High Beta/Gamma reflects hyperarousal. The Kali function is literally implemented in the amygdala: scan for danger, react before conscious processing. Subcortical -- below the hemispheric distinction entirely.
+**L1 -- Brainstem and Amygdala.** The oldest brain structures. Threat detection, fight-flight-freeze. High Beta/Gamma reflects hyperarousal. The Kali function maps to the amygdala [I]: scan for danger, react before conscious processing. Subcortical -- below the hemispheric distinction entirely.
 
 **L2 -- Limbic System and Mirror Neurons.** The social brain. Mirror neurons (discovered by Rizzolatti et al.) enable empathy and imitation -- the neural substrate of the social bond. Right-hemisphere dominant: the right hemisphere processes emotional prosody, facial recognition, social context. Alpha waves (8-12 Hz) reflect relaxed social engagement.
 

@@ -12,7 +12,7 @@ rosetta:
 
 # 32. The Four Lines
 
-**Evidence Tier:** [I] Established (AM-GM inequality) / [S] Structural (identification with framework)
+**Evidence Tier:** [A] Established (AM-GM inequality) / [S] Structural (identification with framework)
 **Depends on:** 07_THE_DISCOVERY_OF_FINITY.md, 22_THE_TELEOLOGY.md, 25_STEEL_THREAD.md
 **Date:** 2026-04-04
 

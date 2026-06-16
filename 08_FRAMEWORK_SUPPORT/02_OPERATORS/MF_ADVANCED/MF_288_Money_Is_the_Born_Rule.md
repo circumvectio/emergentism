@@ -46,7 +46,7 @@ Every entity of value has:
 
 **Φ-component (Imaginary axis):** Meaning, coherence, relational significance. The beauty of a painting. The sacredness of a place. The love encoded in a hand-knitted sweater. Not directly measurable. Not fungible (this particular painting ≠ that particular painting, even at the same price). Lives on D5. Does not obey the arrow of time (a Beethoven sonata does not decay; its Φ may increase with time).
 
-The total value is complex: z = V + iΦ. This is not a metaphor. Value genuinely has two orthogonal components that combine non-additively.
+The total value is modeled as complex: z = V + iΦ. In this model [I], value is treated as having two orthogonal components — a real part (V) and an imaginary part (Φ) — that combine non-additively.
 
 ### 1.2 Why Orthogonal
 

@@ -140,7 +140,7 @@ Truth = maximal coherence between disclosure, formalization, and outcome. From o
 
 | Tier | Name | Definition |
 |------|------|-----------|
-| **[S]** | Established | Empirically demonstrated, replicable, consensus |
+| **[A]** | Established | Empirically demonstrated, replicable, consensus |
 | **[S]** | Structural | Logical extension with mathematical support |
 | **[I]** | Interpretive | Framework-consistent reading of established data |
 | **[C]** | Conjecture | Beyond current evidence, testable in principle |
