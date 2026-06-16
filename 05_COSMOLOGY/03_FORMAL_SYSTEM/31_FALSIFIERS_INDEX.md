@@ -83,7 +83,7 @@ Source: [`00_THE_SEVEN_AXIOMS.md`](00_THE_SEVEN_AXIOMS.md). No inline falsifier;
 | **C1** | Exhaustive Strategy Space | [S] | A deployable operator exhibited with a *same-sign* `(Δφ, Δν)` profile and persistent payoff against cooperators; or an operator with a fifth mixed-sign profile not in {Arjuna, Kṛṣṇa, Kālī, Kali}. |
 | **C2** | L-Levels | [S/I] | A developmental level discovered with stable, reproducible `Φ̂, ν̂` coordinates that cannot be mapped to any of L1–L7 under the Coxeter-symmetry assignment. |
 | **C3** | Trophic Conditions | [I] | A biological or institutional system with a structurally broken regenerative circuit that sustains `Φ̂ · ν̂ ≈ 1` indefinitely, with no compensating external input. |
-| **C4** | Replicator Stack | [I] | A reproducing organism or organization that lacks one of the stack layers (genotype, phenotype, extended phenotype, memotype, egregorotype) and sustains replication across ≥3 generations. |
+| **C4** | Replicator Stack | [I] | A reproducing organism or organization that lacks one of the stack layers (genotype, epigenotype, phenotype, extended phenotype, memotype, egregorotype) and sustains replication across ≥3 generations. |
 | **C5** | Alignment Equation `E = −log(B)` | [S] | A system verified to deceive with no measured increase in `Ê`; or a maximally honest system with high `Ê`. |
 
 ---

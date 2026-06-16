@@ -131,7 +131,7 @@ Truth = maximal coherence between disclosure, formalization, and outcome. From o
 | **C1** | Exhaustive Strategy Space | A1 | Five (ΔΦ,ΔV) sign combinations on S². Only mixed-sign moves are deployable → four operators (2 Gods + 2 Demons: giving Devas Arjuna/Kṛṣṇa, extractive Asuras Kālī/Kali; the moral axis is the move's direction η, not the operator's name). | [S] |
 | **C2** | L-Levels | A1 + A3 | Seven developmental levels within D5 derived from trinity via Coxeter symmetry. L4 as apex (max B, equatorial, full operator palette). | [S/I] |
 | **C3** | Trophic Conditions | A2 + A5 | Circuit completion required. Breaking the circuit creates a Red Demon (structural deficit). | [I] |
-| **C4** | Replicator Stack | A3 + A5 | Genotype → Phenotype → Extended Phenotype → Memotype → Egregorotype. | [I] |
+| **C4** | Replicator Stack | A3 + A5 | Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregorotype. *(Epigenotype = the expression-regulation rung between code and body — the layer signaling interventions act on. A distinct stack layer, though in the historical-era reading it falls within the Genotype→Phenotype transition rather than forming its own selection era.)* | [I] |
 | **C5** | Alignment Equation | A1 | E = −log(B) = −log(sin θ). Alignment energy is a function of balance, not of the manifold identity. At the equator, E = 0 (ground state). At the poles, E → ∞ (maximum misalignment). Deception increases E. | [S] |
 
 ---

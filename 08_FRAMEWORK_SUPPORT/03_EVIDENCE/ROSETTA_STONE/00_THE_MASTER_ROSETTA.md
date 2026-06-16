@@ -819,7 +819,7 @@ When Moksha fails at L7, systemic awareness returns INTO D5 as inverted operator
 | C1 | Exhaustive Strategy Space | A1 | Seven operator actions from `P_node = Φ × V`: four mixed-sign self/other transfers plus three same-sign Executive boundary frames |
 | C2 | L-Levels | A1 + A3 | Seven levels within D5. L4 = apex. |
 | C3 | Trophic Conditions | A2 + A5 | Circuit completion required. Breaking creates Red Demon. |
-| C4 | Replicator Stack | A3 + A5 | Genotype → Phenotype → Extended Phenotype → Memotype → Egregorotype |
+| C4 | Replicator Stack | A3 + A5 | Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregorotype |
 | C5 | Alignment Equation | A1 | `E_node = −log(P_node)`. Alignment is energy minimum. |
 
 ---

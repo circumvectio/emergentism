@@ -164,7 +164,7 @@ Derived from axioms — not independent.
 | C1 | Exhaustive Strategy Space | A1 | Seven operator actions from `P_node = Φ × V`: four mixed-sign self/other transfers plus three same-sign Executive boundary phase frames. Only mixed-sign slots are deployable in ordinary runtime. | [T] |
 | C2 | L-Levels | A1 + A3 | Seven developmental levels within D5 derived from trinity via Coxeter symmetry. L4 as apex (max B, equatorial, full palette). | [T/I] |
 | C3 | Trophic Conditions | A2 + A5 | Circuit completion required. Breaking circuit creates Red Demon (structural deficit). | [T/I] |
-| C4 | Replicator Stack | A3 + A5 | Genotype → Phenotype → Extended Phenotype → Memotype → Egregorotype. | [T/I] |
+| C4 | Replicator Stack | A3 + A5 | Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregorotype. | [T/I] |
 | C5 | Alignment Equation | A1 | `E_node = −log(P_node)`. Alignment is energy minimum. Deception increases E. | [T] |
 
 ---

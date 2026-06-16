@@ -34,7 +34,7 @@ rosetta:
 
 ## ABSTRACT
 
-Corollary C4 (Replicator Stack) identifies five replicator levels: Genotype → Phenotype → Extended Phenotype → Memotype → Egregorotype. This paper shows the stack is not a single ladder but **two multiplicative chains** that converge at the Extended Phenotype (D4), producing the framework's core equation at the replicator level:
+Corollary C4 (Replicator Stack) identifies six replicator levels: Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregorotype. (Epigenotype — the regulation of genetic expression — is a distinct stack *layer* but not a separate multiplicative *factor*: it operates *within* the Genotype→Phenotype term of the material chain below, so the decomposition is unchanged.) This paper shows the stack is not a single ladder but **two multiplicative chains** that converge at the Extended Phenotype (D4), producing the framework's core equation at the replicator level:
 
 **V = Genotype × Phenotype × Environment** (material stack: D2-3 × D3 × D4)
 **Φ = Memotype × Egregorotype × Environment** (informational stack: D5 × D5-limit institutional patterning × D4)

@@ -25,7 +25,7 @@ rosetta:
 
 ## The Replicator Stack IS History
 
-Corollary C4 (derived from A3 + A5): Genotype → Phenotype → Extended Phenotype → Memotype → Egregorotype.
+Corollary C4 (derived from A3 + A5): Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregorotype.
 
 This is not a taxonomy. **This is a timeline.** Each era of deep history is defined by which level of the Replicator Stack is the DOMINANT selection pressure:
 
@@ -42,6 +42,8 @@ Each era does not replace the previous — it **dominates** it. Genes still repl
 Boundary note (2026-06-14): older drafts called the Egregorocene "D6." Current canon reads egregores, DACs, and hybrid sovereigns as upper-D5 / D5-limit selection phenomena. D6 is the closure horizon where the image is released, not the active layer that selects or engineers.
 
 ---
+
+**Epigenotype note (2026-06-16).** The stack's full ladder is **Genotype → Epigenotype → Phenotype → …**. Epigenotype — the regulation of genetic expression (the rung that signaling interventions such as peptides act on) — sits *between* code and body. It does not form its own selection **era** in the timeline above (it operates within the Genetic→Phenotypic transition), but it is a distinct **layer** of the replicator stack and must not be dropped from C4. `[I]`
 
 ## The Transition Boundaries
 

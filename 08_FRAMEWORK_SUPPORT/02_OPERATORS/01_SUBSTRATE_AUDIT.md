@@ -388,7 +388,7 @@ Identify every human-centric assumption in the Emergentism corpus and create sub
 5. **Axioms:** A1-A7 with formal definitions
 6. **Evidence Tiers:** [E/S/I/C/T]
 7. **Equation:** Zero-Sum Resolution Equation
-8. **Replicator Stack:** Genotype→Phenotype→Extended→Memotype→Egregorotype
+8. **Replicator Stack:** Genotype→Epigenotype→Phenotype→Extended→Memotype→Egregorotype
 9. **Great Filter:** Population distribution on S²
 10. **DAC Architecture:** Three substrates, seven archetypes
 
