@@ -43,3 +43,7 @@ npm-debug.log*
 # Foundry
 cache/
 out/
+
+# Local Codex Animation Shots
+.codex-animation-shots/
+

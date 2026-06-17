@@ -5,7 +5,7 @@
 
 ## The realm (scope)
 - **In scope:** `01_EMERGENTISM/` — 1,708 `.md`, the framework canon, the lane whose authority this root holds.
-- **Out of scope (sovereign territories of their own):** `02_SKYZAI/` (product/organism, own repo), `03_VENTURES/` (entities/portfolio, own repo), `menexus_code/`, `state/`. Their CLAUDE.md routing forbids framework-root edits. The public-facing surfaces (`12_PUBLIC_SITE/`, SKYZAI public scaffold) may be **annexed on K2 request**.
+- **Out of scope (sovereign territories of their own):** `02_SKYZAI/` (product/organism, own repo), `03_VENTURES/` (entities/portfolio, own repo), `04_CODE/` (canonical code repos, formerly `menexus_code/`), `state/`. Their CLAUDE.md routing forbids framework-root edits. The public-facing surfaces (`12_PUBLIC_SITE/`, SKYZAI public scaffold) may be **annexed on K2 request**.
 
 ## The constitution binds the sovereign (non-negotiable)
 - **K3 — archive-first.** Nothing is deleted. Superseded/clutter is *staged to `90_ARCHIVE/` with a tombstone*, never erased.
