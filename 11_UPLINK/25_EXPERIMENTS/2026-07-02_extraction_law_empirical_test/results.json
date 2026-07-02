@@ -1,0 +1,215 @@
+{
+  "comparisons": {
+    "fairness_only": {
+      "log_loss_win_rate_vs_payoff_only": 0.7,
+      "mean_log_loss_delta_vs_payoff_only": 0.03238356020820443
+    },
+    "fairness_payoff_power": {
+      "log_loss_win_rate_vs_payoff_only": 0.668,
+      "mean_log_loss_delta_vs_payoff_only": 0.01380851178723097
+    },
+    "interaction_full": {
+      "log_loss_win_rate_vs_payoff_only": 0.748,
+      "mean_log_loss_delta_vs_payoff_only": 0.030290963003580695
+    },
+    "multiplicative_proxy": {
+      "log_loss_win_rate_vs_payoff_only": 0.468,
+      "mean_log_loss_delta_vs_payoff_only": 1.0596785297245503e-05
+    },
+    "null": {
+      "log_loss_win_rate_vs_payoff_only": 0.332,
+      "mean_log_loss_delta_vs_payoff_only": -0.012820304452812015
+    },
+    "offer_only": {
+      "log_loss_win_rate_vs_payoff_only": 0.464,
+      "mean_log_loss_delta_vs_payoff_only": -0.010035352293151556
+    },
+    "payoff_only": {
+      "log_loss_win_rate_vs_payoff_only": 0.0,
+      "mean_log_loss_delta_vs_payoff_only": 0.0
+    },
+    "payoff_plus_fairness": {
+      "log_loss_win_rate_vs_payoff_only": 0.76,
+      "mean_log_loss_delta_vs_payoff_only": 0.033200374024987434
+    },
+    "payoff_plus_power": {
+      "log_loss_win_rate_vs_payoff_only": 0.272,
+      "mean_log_loss_delta_vs_payoff_only": -0.02816917768815319
+    }
+  },
+  "cv": {
+    "repeats": 50,
+    "splits": 5,
+    "type": "RepeatedStratifiedKFold"
+  },
+  "evidence_tier": "[B] reproducible local analysis of public dataset; [D] theoretical interpretation",
+  "generated_at": "2026-07-02",
+  "metrics": {
+    "fairness_only": {
+      "accuracy_mean": 0.7756842105263159,
+      "accuracy_std": 0.06298842749778184,
+      "auc_mean": 0.6921714285714285,
+      "auc_std": 0.13481890596934074,
+      "brier_mean": 0.16707189704207673,
+      "brier_std": 0.02835887340772626,
+      "log_loss_mean": 0.5141672336747607,
+      "log_loss_std": 0.06668696232117148
+    },
+    "fairness_payoff_power": {
+      "accuracy_mean": 0.7726549707602338,
+      "accuracy_std": 0.05846503495826331,
+      "auc_mean": 0.6719928571428573,
+      "auc_std": 0.13820839250727845,
+      "brier_mean": 0.17437322988262202,
+      "brier_std": 0.03393922164891313,
+      "log_loss_mean": 0.5327422820957342,
+      "log_loss_std": 0.08852660318774562
+    },
+    "interaction_full": {
+      "accuracy_mean": 0.779906432748538,
+      "accuracy_std": 0.060545457057571334,
+      "auc_mean": 0.6838,
+      "auc_std": 0.15031183879268872,
+      "brier_mean": 0.1664610636302736,
+      "brier_std": 0.03288397102449105,
+      "log_loss_mean": 0.5162598308793844,
+      "log_loss_std": 0.08249969519822918
+    },
+    "multiplicative_proxy": {
+      "accuracy_mean": 0.7524561403508772,
+      "accuracy_std": 0.0374644681139981,
+      "auc_mean": 0.6026142857142857,
+      "auc_std": 0.15852771554324827,
+      "brier_mean": 0.17890062488375094,
+      "brier_std": 0.020738396059988323,
+      "log_loss_mean": 0.5465401970976679,
+      "log_loss_std": 0.05422189402221945
+    },
+    "null": {
+      "accuracy_mean": 0.7532163742690058,
+      "accuracy_std": 0.020094531319980798,
+      "auc_mean": 0.5,
+      "auc_std": 0.0,
+      "brier_mean": 0.186104409274139,
+      "brier_std": 0.01006060134408234,
+      "log_loss_mean": 0.5593710983357771,
+      "log_loss_std": 0.022115689405514578
+    },
+    "offer_only": {
+      "accuracy_mean": 0.7484210526315789,
+      "accuracy_std": 0.034658237203063415,
+      "auc_mean": 0.6165857142857143,
+      "auc_std": 0.14537058773373304,
+      "brier_mean": 0.18132896434248075,
+      "brier_std": 0.018804200847544025,
+      "log_loss_mean": 0.5565861461761167,
+      "log_loss_std": 0.05472321304326346
+    },
+    "payoff_only": {
+      "accuracy_mean": 0.7701988304093568,
+      "accuracy_std": 0.03339011637756513,
+      "auc_mean": 0.6362428571428572,
+      "auc_std": 0.1432488934396446,
+      "brier_mean": 0.17665163190644928,
+      "brier_std": 0.020686458084417044,
+      "log_loss_mean": 0.5465507938829651,
+      "log_loss_std": 0.06321533988693705
+    },
+    "payoff_plus_fairness": {
+      "accuracy_mean": 0.7801286549707602,
+      "accuracy_std": 0.06100530721110213,
+      "auc_mean": 0.6886714285714286,
+      "auc_std": 0.1466576374622688,
+      "brier_mean": 0.16549817151817808,
+      "brier_std": 0.03236071444743216,
+      "log_loss_mean": 0.5133504198579777,
+      "log_loss_std": 0.08116107897508722
+    },
+    "payoff_plus_power": {
+      "accuracy_mean": 0.7538713450292397,
+      "accuracy_std": 0.0354296575998082,
+      "auc_mean": 0.595057142857143,
+      "auc_std": 0.15201922337342544,
+      "brier_mean": 0.18739025336262824,
+      "brier_std": 0.02452563967443964,
+      "log_loss_mean": 0.5747199715711183,
+      "log_loss_std": 0.07570771337084875
+    }
+  },
+  "models": {
+    "fairness_only": [
+      "fairness_score"
+    ],
+    "fairness_payoff_power": [
+      "material_score",
+      "fairness_score",
+      "product_score",
+      "treatment_weak_proposer",
+      "treatment_weak_responder"
+    ],
+    "interaction_full": [
+      "material_score",
+      "fairness_score",
+      "product_score"
+    ],
+    "multiplicative_proxy": [
+      "product_score"
+    ],
+    "null": [],
+    "offer_only": [
+      "offer_share"
+    ],
+    "payoff_only": [
+      "material_score"
+    ],
+    "payoff_plus_fairness": [
+      "material_score",
+      "fairness_score"
+    ],
+    "payoff_plus_power": [
+      "material_score",
+      "treatment_weak_proposer",
+      "treatment_weak_responder"
+    ]
+  },
+  "packet": "2026-07-02_extraction_law_empirical_test",
+  "raw_file_checks": {
+    "data.tsv": {
+      "actual_md5": "e0564d3b0f49a97592a3823cd9cd2803",
+      "expected_md5": "e0564d3b0f49a97592a3823cd9cd2803",
+      "ok": true,
+      "path": "data/data.tsv"
+    },
+    "prefs.annotated.csv": {
+      "actual_md5": "3056166bf0f30278127b54b008865a32",
+      "expected_md5": "3056166bf0f30278127b54b008865a32",
+      "ok": true,
+      "path": "data/prefs.annotated.csv"
+    }
+  },
+  "row_counts": {
+    "accepted": 70,
+    "annotated_games": 93,
+    "rejected": 23
+  },
+  "seed": 20260702,
+  "source": {
+    "article": "https://doi.org/10.1371/journal.pone.0099039",
+    "dataset": "Data for 'Power and Fairness in a Generalized Ultimatum Game'",
+    "doi": "https://doi.org/10.6084/m9.figshare.1021603.v1",
+    "license": "CC BY 4.0"
+  },
+  "variable_map": {
+    "fairness_score": "1 - abs(TPA - TRA) / 300, clipped 0..1",
+    "material_score": "(TRR - TRA + 300) / 900, clipped 0..1",
+    "offer_share": "TPA / 300; proposer accepted-workload share",
+    "outcome": "accepted_binary = 1 when Response == 'Accepted'",
+    "product_score": "material_score * fairness_score",
+    "responder_advantage_tasks": "TRR - TRA; positive means acceptance saves responder work versus rejection"
+  },
+  "verdict": {
+    "best_model_by_log_loss": "payoff_plus_fairness",
+    "bounded_extraction_law_proxy": "BOUNDED_SUPPORT",
+    "multiplicative_single_score_proxy": "PRODUCT_ONLY_NOT_SUPPORTED"
+  }
+}

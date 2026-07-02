@@ -1,0 +1,94 @@
+Game,Treatment,Response,Proposal,Prop.Pref,Prop.Ass,Resp.Pref,Prop.Donation,Resp.Donation,Prop.Cashed,Resp.Cashed
+23,balanced,Accepted,6,Multiple,Selfish,Multiple,0,0,1,0
+35,balanced,Accepted,5,Fair,Fair,Fair,0.117647058823529,1,0,0
+41,balanced,Accepted,4,None,None,None,0,0,1,1
+49,balanced,Accepted,6,Multiple,Selfish,Multiple,1,0.411764705882353,0,0
+53,balanced,Accepted,4,None,None,None,0,0,0,0
+57,balanced,Accepted,7,None,None,None,0,0,0,0
+60,balanced,Accepted,5,Fair,Fair,Fair,0,0.411764705882353,1,0
+61,balanced,Accepted,5,Fair,Fair,Fair,0,0,1,1
+62,balanced,Accepted,5,Fair,Fair,Fair,0.0588235294117647,0.117647058823529,0,0
+67,balanced,Rejected,9,None,None,None,0,0.117647058823529,0,0
+68,balanced,Rejected,5,Fair,Fair,Selfish,NA,1,0,0
+70,balanced,Accepted,5,Fair,Fair,Fair,0,0.411764705882353,1,1
+87,balanced,Accepted,6,Multiple,Selfish,Multiple,0,0,1,1
+88,balanced,Accepted,6,Multiple,Selfish,Multiple,0,0,1,1
+91,balanced,Accepted,5,Fair,Fair,Fair,0,0,1,0
+94,balanced,Accepted,6,Multiple,Selfish,Multiple,0,0,1,1
+96,balanced,Accepted,6,Multiple,Selfish,Multiple,0,1,1,0
+98,balanced,Accepted,5,Fair,Fair,Fair,0.176470588235294,0,1,1
+99,balanced,Accepted,6,Multiple,Selfish,Multiple,1,0,0,1
+106,balanced,Accepted,6,Fair,Selfish,Multiple,0.117647058823529,0,1,1
+108,balanced,Rejected,6,Multiple,Selfish,None,0,0.117647058823529,1,1
+117,balanced,Accepted,5,Fair,Fair,Fair,0,0,0,1
+118,balanced,Accepted,5,Fair,Fair,Fair,1,0,0,1
+121,balanced,Rejected,5,Fair,Fair,Selfish,0,0,0,0
+122,balanced,Rejected,9,None,None,None,0,0,0,0
+123,balanced,Accepted,5,Fair,Fair,Fair,0.117647058823529,0.117647058823529,1,0
+124,balanced,Rejected,5,Fair,Fair,Selfish,NA,0,0,0
+127,balanced,Rejected,3,None,None,None,0,1,1,0
+136,balanced,Accepted,6,Multiple,Selfish,Multiple,0,0,0,0
+22,weak proposer,Accepted,5,Fair,Fair,Fair,0,0,0,0
+27,weak proposer,Rejected,2,None,None,None,0,0.0588235294117647,0,0
+28,weak proposer,Accepted,5,Fair,Fair,Fair,0.176470588235294,0,0,0
+31,weak proposer,Accepted,6,None,None,None,0,0,0,0
+32,weak proposer,Accepted,5,Selfish,Fair,Fair,0,0,0,1
+39,weak proposer,Accepted,5,Fair,Fair,Fair,0,0,0,0
+44,weak proposer,Accepted,5,Fair,Fair,Fair,1,0,0,1
+48,weak proposer,Accepted,5,Fair,Fair,Fair,0.117647058823529,0,1,0
+59,weak proposer,Accepted,5,Fair,Fair,Fair,0,0,0,0
+73,weak proposer,Accepted,4,Fair,Fair,Fair,0,0,1,1
+75,weak proposer,Accepted,3,None,None,None,0,0,0,0
+78,weak proposer,Accepted,5,Fair,Fair,Fair,0.117647058823529,0,1,0
+81,weak proposer,Accepted,5,Fair,Fair,Fair,0,0,0,0
+82,weak proposer,Accepted,7,None,None,None,1,0,0,1
+89,weak proposer,Accepted,5,Fair,Fair,Fair,0,0.411764705882353,0,1
+90,weak proposer,Rejected,5,Fair,Fair,Selfish,0,1,0,0
+92,weak proposer,Accepted,5,Fair,Fair,Fair,0,0,1,1
+93,weak proposer,Accepted,7,None,None,None,0,0,1,1
+95,weak proposer,Rejected,4,None,None,None,0,0,1,0
+100,weak proposer,Rejected,4,None,None,None,0,0,0,1
+101,weak proposer,Accepted,5,Fair,Fair,Fair,0,0.117647058823529,0,1
+103,weak proposer,Accepted,5,Fair,Fair,Fair,1,0,0,1
+110,weak proposer,Accepted,7,None,None,None,0,0,1,0
+111,weak proposer,Accepted,2,None,None,None,0,1,1,0
+112,weak proposer,Rejected,1,Multiple,Selfish,Fair,0,0,1,1
+113,weak proposer,Accepted,5,Fair,Fair,Fair,0,0,1,1
+120,weak proposer,Accepted,4,None,None,None,NA,0,0,0
+125,weak proposer,Accepted,5,Fair,Fair,Fair,1,0,0,0
+126,weak proposer,Accepted,5,Fair,Fair,Fair,0.117647058823529,0.0588235294117647,0,0
+130,weak proposer,Accepted,5,Fair,Fair,Fair,1,0,0,0
+131,weak proposer,Accepted,5,Fair,Fair,Fair,0,0.411764705882353,1,0
+132,weak proposer,Accepted,6,None,None,None,0,0,0,1
+146,weak proposer,Accepted,3,Selfish,Fair,Fair,0.294117647058824,NA,0,0
+147,weak proposer,Accepted,2,None,None,None,0,0,0,0
+148,weak proposer,Accepted,5,Fair,Fair,Fair,0,0.0588235294117647,0,0
+25,weak responder,Rejected,6,None,None,None,0,0,0,1
+26,weak responder,Rejected,1,Selfish,Selfish,Fair,0,0.117647058823529,1,0
+30,weak responder,Accepted,5,Fair,Multiple,Multiple,0,0.117647058823529,0,0
+33,weak responder,Accepted,2,None,None,None,0,0,0,1
+36,weak responder,Accepted,5,Fair,Multiple,Multiple,0,1,1,0
+42,weak responder,Accepted,7,None,None,None,0,0.411764705882353,0,0
+46,weak responder,Accepted,5,Fair,Multiple,Multiple,0,0,0,0
+50,weak responder,Rejected,1,Selfish,Selfish,Fair,1,0,0,0
+54,weak responder,Accepted,5,Fair,Multiple,Multiple,0,0.588235294117647,0,0
+55,weak responder,Rejected,6,None,None,None,0,0,1,0
+63,weak responder,Rejected,5,Fair,Multiple,None,0.235294117647059,0.411764705882353,0,1
+65,weak responder,Rejected,1,Selfish,Selfish,Fair,0.411764705882353,0,0,1
+74,weak responder,Accepted,5,Fair,Multiple,Multiple,1,0,0,1
+80,weak responder,Rejected,5,Fair,Multiple,None,0,0,0,0
+83,weak responder,Accepted,2,None,None,None,0,1,1,0
+97,weak responder,Rejected,4,Selfish,Fair,None,0,0,1,0
+102,weak responder,Accepted,5,Fair,Multiple,Multiple,1,0,0,0
+105,weak responder,Rejected,6,None,None,None,0,1,1,0
+109,weak responder,Accepted,5,Fair,Multiple,None,0,0.411764705882353,0,0
+114,weak responder,Accepted,6,None,None,None,0.117647058823529,0,1,0
+116,weak responder,Accepted,1,Selfish,Selfish,Selfish,0,0,1,0
+128,weak responder,Rejected,5,Fair,Multiple,None,0,0,0,0
+129,weak responder,Accepted,6,None,None,None,0,0,0,0
+133,weak responder,Accepted,5,Fair,Multiple,Multiple,0,0,0,0
+134,weak responder,Accepted,5,Fair,Multiple,Multiple,0,0.117647058823529,0,0
+135,weak responder,Accepted,5,Fair,Multiple,Multiple,0,0.588235294117647,0,1
+139,weak responder,Accepted,5,Fair,Multiple,Multiple,0.117647058823529,0,0,0
+144,weak responder,Rejected,1,Selfish,Selfish,Fair,0,0,0,0
+145,weak responder,Accepted,5,Fair,Multiple,Multiple,0.0588235294117647,0,0,0
