@@ -1,0 +1,14 @@
+{
+  "packet": "2026-07-02_agentz_refinement_pilot",
+  "date": "2026-07-02",
+  "mode": "pilot",
+  "inputs": [
+    "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "11_UPLINK/25_EXPERIMENTS/2026-07-02_extraction_law_empirical_test/VERDICT.md",
+    "11_UPLINK/25_EXPERIMENTS/2026-07-02_extraction_law_empirical_test/results.json"
+  ],
+  "outputs_are_canon": false,
+  "k2_required_for_canon_change": true
+}

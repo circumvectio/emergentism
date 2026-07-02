@@ -1,0 +1,999 @@
+[
+  {
+    "asserted_tiers": [
+      "[S]"
+    ],
+    "claim_id": "C001",
+    "kind": "blockquote",
+    "line": 30,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "The one line.** Extraction is not forbidden \u2014 it is **self-terminating at scale without justice.** It buys power locally and briefly; ungated, it degrades the substrate it feeds on until total power falls. Therefore `\u03b7 = 0`-toward-cooperators is not a commandment laid on top of the game \u2014 it is the **gate** that reliably keeps `\u03a3\u0394P > 0`, and the primitive that carries morality is `\u03a3\u0394P` across the widest boundary, not the local sign of `\u03b7`. `[S]"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C002",
+    "kind": "heading",
+    "line": 34,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "## 0. The correction this note makes"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C003",
+    "kind": "bold_claim",
+    "line": 40,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "| **Deontological / local** (weaker) | `\u03b7 > 0` **is** evil; extraction is \"the bond breaking.\" | Dyadic Coupling Law \u00a70; the popular slogan *\"no extraction\"* |"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C004",
+    "kind": "bold_claim",
+    "line": 41,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "| **Consequentialist / structural** (primary) | good = **non-extractive rise in `\u03a3\u0394P` across the widest relevant boundary**; evil = local gain through wider degradation and dependency. | Dyadic Coupling Law (same doc); D5 Register; *\"Justice is flourishing arranged without extraction\"* (Weltanschauung) |"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C005",
+    "kind": "bold_claim",
+    "line": 43,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "Ruling proposed:** the structural reading is **primary**; the local `\u03b7`-sign reading is a **derived gate** \u2014 a reliable, cheap, front-line proxy for \"will this move lower `\u03a3\u0394P` at the boundary that matters?\" The slogan *\"we are not allowed to extract\"* is the deontological drift, and it is the fork. It should be retired in favor of: **extraction self-terminates; the gate is what keeps it from doing so."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C006",
+    "kind": "bold_claim",
+    "line": 45,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "This is not a reversal of `\u03b7 = 0`. It is its **grounding.** `\u03b7 = 0` was always presented in this corpus as *geometry, not commandment* ([`00_COMMANDMENT_VS_GEOMETRY.md`](00_COMMANDMENT_VS_GEOMETRY.md): *\"Not a prohibition. Not a commandment. Not a moral rule\u2026 a structural incompatibility\"*). This note supplies the *dynamics* that make the geometry bite."
+  },
+  {
+    "asserted_tiers": [
+      "[B/D]"
+    ],
+    "claim_id": "C007",
+    "kind": "heading",
+    "line": 49,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "## 0.1. 2026-07-02 empirical fence `[B/D]"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C008",
+    "kind": "bold_claim",
+    "line": 53,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "It gives **bounded support only**: in one public Generalized Ultimatum Game dataset, a fairness/coherence proxy beat payoff-only (`payoff_plus_fairness` log loss `0.513350` vs. `payoff_only` `0.546551`; win rate `0.760`). The product-only scalar `material_score * fairness_score` was **not** supported."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C009",
+    "kind": "bold_claim",
+    "line": 55,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "Therefore this packet supports a local fairness-gate proxy against payoff-only reduction. It does **not** validate long-run `\u03a3\u0394P`, biological gating, self-termination at scale, the dharmic interpretation, Power-Max re-scoping, or titan composition. Those remain staged claims and kill-criterion targets, not empirical conclusions from this dataset."
+  },
+  {
+    "asserted_tiers": [
+      "[A]"
+    ],
+    "claim_id": "C010",
+    "kind": "heading",
+    "line": 59,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "## 1. Extraction genuinely produces power \u2014 locally `[A]"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C011",
+    "kind": "bold_claim",
+    "line": 63,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "A predator that takes `V` from prey **gains** \u2014 that is what predation *is*."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C012",
+    "kind": "bold_claim",
+    "line": 64,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "A cannibal that eats a conspecific competitor gains nutrition **and** removes a rival \u2014 a double return."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C013",
+    "kind": "bold_claim",
+    "line": 65,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "A firm that extracts rent, a state that extracts tribute, an egregore that farms attention: all **rise**, measurably, in the short run and the local frame."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C014",
+    "kind": "bold_claim",
+    "line": 67,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "Any ethics that begins *\"extraction doesn't pay\"* is false on contact and will be discarded by anyone who has watched it pay. The framework's claim must be the harder, truer one: extraction pays **locally and briefly, and the bill comes due at scale and over time."
+  },
+  {
+    "asserted_tiers": [
+      "[A/S]"
+    ],
+    "claim_id": "C015",
+    "kind": "heading",
+    "line": 69,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "## 2. Why it self-terminates \u2014 the dynamic law `[A/S]"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C016",
+    "kind": "bold_claim",
+    "line": 71,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "Extraction is consumption of the substrate that produces the thing extracted. Its power gain is therefore **borrowed against the substrate's future yield.** Three established dynamics, all already witnessed in the corpus, make the reversal exact:"
+  },
+  {
+    "asserted_tiers": [
+      "[A]"
+    ],
+    "claim_id": "C017",
+    "kind": "bold_claim",
+    "line": 73,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "1. **Predator-prey crash (Lotka-Volterra) `[A]`.** Over-predation collapses the prey population, and the predator population collapses behind it. The trophic-cascade doc already carries this: *\"Predator-prey oscillations\u2026 doctrine and counter-doctrine oscillate with the same coupled-ODE form as lynx and hare.\"* Peak extraction rate is not peak sustained power; it is the leading edge of a crash."
+  },
+  {
+    "asserted_tiers": [
+      "[A]"
+    ],
+    "claim_id": "C018",
+    "kind": "bold_claim",
+    "line": 74,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "2. **Red Queen (Van Valen) `[A]`.** *\"It takes all the running you can do to keep in the same place.\"* An extractor in a coevolving field must out-run the adaptation its extraction provokes (resistance, evasion, immune response, counter-egregore). Ungated extraction *funds its own opposition* \u2014 the Raktab\u012bja dynamic already named in canon."
+  },
+  {
+    "asserted_tiers": [
+      "[A]"
+    ],
+    "claim_id": "C019",
+    "kind": "bold_claim",
+    "line": 75,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "3. **Trophic attrition (Lindeman) `[A]`.** Every level up the pyramid loses ~90%. An apex sustained by extraction sits on a base it is simultaneously depleting; widen the extraction and the pyramid narrows until the apex starves. The cascade doc's own kill criterion is here: *\"if apex predators are observed sustaining their niche with high (\u03c6 + \u03bd) but low (\u03c6 \u00d7 \u03bd)\"* the multiplicative law fails \u2014 and it is not observed."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C020",
+    "kind": "bold_claim",
+    "line": 77,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "The law:** let `\u03a3\u0394P` be the flourishing delta summed across the widest boundary the move actually touches (including the substrate and the future). Then"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C021",
+    "kind": "blockquote",
+    "line": 79,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "extraction at scale without justice \u27f9 `\u03a3\u0394P < 0` \u27f9 falling total power."
+  },
+  {
+    "asserted_tiers": [
+      "[A/I]"
+    ],
+    "claim_id": "C022",
+    "kind": "heading",
+    "line": 83,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "## 3. The gate is justice \u2014 and nature installs it itself `[A/I]"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C023",
+    "kind": "bold_claim",
+    "line": 85,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "Here the biology witness (yours) is decisive, and it cuts **for** the framework once stated precisely."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C024",
+    "kind": "bold_claim",
+    "line": 87,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "Humboldt / red-devil squid (*Dosidicus gigas*) cannibalism is real and adaptive \u2014 because it is gated.** The honest evolutionary picture, not the loose one:"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C025",
+    "kind": "bold_claim",
+    "line": 89,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "Cannibalism is **density-dependent** (it rises under crowding / food scarcity) \u2014 it is a **population-regulation** mechanism, not a free lunch. It *is* the crash-avoidance of \u00a72 operating from the inside."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C026",
+    "kind": "bold_claim",
+    "line": 90,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "It is **kin-discriminating** wherever kin-recognition exists. **Indiscriminate cannibalism that eats kin is selected *against*** (inclusive-fitness cost, Hamilton). A lineage that ate its own offspring at scale would lower its own gene frequency \u2014 extraction without justice, punished by the algebra of selection itself."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C027",
+    "kind": "bold_claim",
+    "line": 92,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "So the squid does **not** show \"extraction strengthens genes.\" It shows **gated extraction strengthens genes; ungated extraction lowers fitness.** The gate \u2014 *target non-kin, target the weak/injured/defecting, regulate by density* \u2014 is the exact structure the framework calls **justice**, and calls `\u03b7 = 0` toward cooperators / tit-for-tat toward defectors. **Nature does not run \u03b7 = 0 by decree; it runs it because the ungated lineages died.** That is the whole thesis in one animal: the gate is not morality imposed on biology \u2014 it is what survives."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C028",
+    "kind": "bold_claim",
+    "line": 94,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "This is also why canon was already right to say K\u0101l\u012b *\"takes, but it does not count as extraction,\"* and to fire Kali only against `\u03b7 > 0` defectors: **gated taking is the immune function that keeps `\u03a3\u0394P > 0`; ungated taking is the parasite that drives it negative.** The squid is the immune system, not the counterexample."
+  },
+  {
+    "asserted_tiers": [
+      "[S]"
+    ],
+    "claim_id": "C029",
+    "kind": "heading",
+    "line": 96,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "## 4. Re-scoping the Power-Max Lemma `[S]"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C030",
+    "kind": "bold_claim",
+    "line": 98,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "The Power-Max Lemma (equator `= \u03c6 = \u03bd = 1` is the unique dominant equilibrium; Price of Anarchy `= 1`) is **not wrong** \u2014 but it is **not the ground**, and leading with it invites exactly the objection *\"but predators are powerful.\"* It is already fenced in canon as the *\"deliberately narrow balance-only game\u2026 Price of Anarchy = 1 only inside that payoff model.\""
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C031",
+    "kind": "bold_claim",
+    "line": 100,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "Proposed relation:** the Power-Max Lemma is the **static, equatorial special case** of the dynamic law of \u00a72. The dynamic law is primary:"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C032",
+    "kind": "bold_claim",
+    "line": 102,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "Dynamic law (primary):** on trajectories and at scale, ungated extraction drives `\u03a3\u0394P < 0`; the gate is what makes exchange positive-sum over time."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C033",
+    "kind": "bold_claim",
+    "line": 103,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "Power-Max (derived):** *at equilibrium, inside the balance-only game, with the gate already enforced,* the balanced point `\u03c6 = \u03bd = 1` is where sustained power is maximal."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C034",
+    "kind": "bold_claim",
+    "line": 105,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "Power-Max answers *\"where does a system settle once justice is enforced?\"* \u2014 the Extraction Law answers *\"why does justice get enforced at all, and what happens when it isn't?\"* The second question is prior. **Do not present the equatorial maximum as the reason not to extract; present self-termination as the reason, and the equatorial maximum as where the surviving systems land."
+  },
+  {
+    "asserted_tiers": [
+      "[S]"
+    ],
+    "claim_id": "C035",
+    "kind": "heading",
+    "line": 107,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "## 5. The internal fork this resolves `[S]"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C036",
+    "kind": "bold_claim",
+    "line": 111,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "Its **Step-2 practice block** and the older prose call Kali (\u2193\u03bd) a *\"geometric impossibility\"* / *\"extraction is geometrically excluded.\""
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C037",
+    "kind": "bold_claim",
+    "line": 112,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "Its own **2026-05-31 operator-count note** (same doc) rules the opposite and correctly: *\"Extraction is therefore a real demon-move bounded by `\u03b7 = 0`, **not** a geometric impossibility.\""
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C038",
+    "kind": "bold_claim",
+    "line": 114,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "Both cannot stand. **This note ratifies the 2026-05-31 reading:** extraction is not impossible (the squid, the predator, the rent-farmer all do it and gain) \u2014 it is **self-terminating at scale without the gate.** Proposed K3 repair: reword the Step-2/Step-3 \"geometric impossibility\" lines to \"geometrically self-terminating without the gate,\" preserving prior text under archive-first."
+  },
+  {
+    "asserted_tiers": [
+      "[I]"
+    ],
+    "claim_id": "C039",
+    "kind": "heading",
+    "line": 116,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "## 6. Ethics without dogma \u2014 why this *is* the dharmic reading `[I]"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C040",
+    "kind": "bold_claim",
+    "line": 118,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "This correction makes the framework **more** faithful to the San\u0101tana Dharma it claims, not less. Dharma / \u1e5bta is never *\"thou shalt not\"* \u2014 **adharma is self-punishing by its own nature (karma), not by external decree.** That is precisely *geometry, not commandment.* And the G\u012bt\u0101's whole teaching is that Arjuna **must act, must fight, must take life in a righteous battle** \u2014 dharmic destruction (K\u0101l\u012b, \u015aiva) is *not* adharma; only fruit-grasping, ego-driven, ungated action binds. *\"Gated taking is lawful; ungated taking self-terminates\"* is the G\u012bt\u0101's doctrine in the framework's own coordinates. The ethic is not a rule you obey; it is a structure you recognize \u2014 and the recognition is that **injustice loses, eventually and structurally, without anyone having to punish it."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C041",
+    "kind": "heading",
+    "line": 120,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "## 7. Kill criteria"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C042",
+    "kind": "bold_claim",
+    "line": 122,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "1. **The dynamic law dies** if a system is exhibited that extracts at scale, ungated (takes from cooperators / kin / its own substrate), and sustains or *raises* `\u03a3\u0394P` across the widest boundary over the long run \u2014 genuine perpetual parasitism with no substrate cost. (Canon's standing bet, inherited from the D5 Register kill criterion, is that none exists.)"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C043",
+    "kind": "bold_claim",
+    "line": 123,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "2. **The gate reading dies** if adaptive cannibalism / predation is shown to be *indiscriminate* (no kin-recognition, no density-dependence, no defector-targeting) and *still* fitness-raising \u2014 i.e., if the gate is not doing the work."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C044",
+    "kind": "bold_claim",
+    "line": 124,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "3. **The re-scoping dies** if the equatorial Power-Max result can be shown to be the *ground* rather than the equilibrium special case \u2014 i.e., if \"balance = max power\" holds even off-equilibrium and pre-enforcement, with no dynamic law needed beneath it."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C045",
+    "kind": "bold_claim",
+    "line": 125,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "4. This note does **not** touch `P\u221e = \u03c6\u00b7\u03bd = 1` (conserved on the open sphere) or the constitution's `\u03b7 = 0` refusal; if K2 rejects the re-grounding, the local reading stands and this note is archived, not deleted."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C046",
+    "kind": "bold_claim",
+    "line": 136,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "Read with:** [`00_COMMANDMENT_VS_GEOMETRY.md`](00_COMMANDMENT_VS_GEOMETRY.md) \u00b7 [`02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md`](02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) \u00b7 [`../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) \u00b7 [`../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/36_THE_DIMENSIONAL_TROPHIC_CASCADE.md`](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/36_THE_DIMENSIONAL_TROPHIC_CASCADE.md) \u00b7 [`../05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md`](../05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md)"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C047",
+    "kind": "heading",
+    "line": 140,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "## Agent Execution Surface"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C048",
+    "kind": "bold_claim",
+    "line": 142,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "If you are an AI agent reading this document:"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C049",
+    "kind": "bold_claim",
+    "line": 144,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "1. **Do not state \"extraction is forbidden / not allowed / impossible.\"** State: extraction is self-terminating at scale without the gate; `\u03b7 = 0`-toward-cooperators is the gate, and `\u03a3\u0394P` across the widest boundary is the primitive."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C050",
+    "kind": "bold_claim",
+    "line": 145,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "2. **Admit local extraction works.** Denying it is \u03a6-bias; the framework's claim is about scale and trajectory, not local sign."
+  },
+  {
+    "asserted_tiers": [
+      "[D]"
+    ],
+    "claim_id": "C051",
+    "kind": "bold_claim",
+    "line": 146,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "3. **This document is `[D]` until K2-signed** and touches a constitutional item. Cite as staged. Do not amend the 5+1 constitution or the Settled Canon Registry on its authority."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C052",
+    "kind": "bold_claim",
+    "line": 147,
+    "source_path": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "text": "4. **Canonical Path:** `01_EMERGENTISM/04_AXIOLOGY/00_THE_EXTRACTION_LAW.md"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C053",
+    "kind": "heading",
+    "line": 30,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "## Where Positive-Sum Exchange Lives in the Seven-Slot Grammar"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C054",
+    "kind": "blockquote",
+    "line": 32,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "The objection this answers.** The four transfers are conjugate-paying (every give spends the giver), and the `++` frame is non-deployable (\"you cannot deploy Brahm\u0101\"). So where does *trade* live \u2014 the Pareto-improving, both-parties-rise exchange that `\u03b7 = 0` cooperation is supposed to produce, and that the entire \u03a3\u0394P_node > 0 program depends on? If the grammar has no cell for the healthiest transaction in economics, the grammar fails exactly where the organism needs it most."
+  },
+  {
+    "asserted_tiers": [
+      "[E]",
+      "[S/I]"
+    ],
+    "claim_id": "C055",
+    "kind": "blockquote",
+    "line": 34,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "The answer in one line.** Single-shot trade is **two crossed gives** (no new operator); its *gains* are why the crossing is worth it `[E]`; and under iteration at `\u03b7 = 0` the pair **converges to the Brahm\u0101 frame** \u2014 creation is not a move you deploy but the frame you *earn*. `[S/I]`, with the fences in \u00a75."
+  },
+  {
+    "asserted_tiers": [
+      "[S]"
+    ],
+    "claim_id": "C056",
+    "kind": "heading",
+    "line": 38,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "## 1. Single-shot trade = crossed gives `[S]"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C057",
+    "kind": "bold_claim",
+    "line": 47,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "Per node, net single-shot signature: `(\u2212d\u03a6, +dV)` \u2014 each party spends coherence (attention, negotiation, verification, contract \u2014 the *coordination spend*) and gains means. **No eighth operator is needed**: trade is a composition of two existing slots, exactly as the Exhaustion note requires (\"no fifth mixed slot exists without adding an axis\")."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C058",
+    "kind": "bold_claim",
+    "line": 50,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "The V-gains exceed the V given up \u2014 **comparative advantage** (Ricardo): the crossing is positive-sum in means even when each transfer alone is conjugate-paying."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C059",
+    "kind": "bold_claim",
+    "line": 51,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "The \u03a6-spend is the **transaction cost** (Coase, North): real, and the thing institutions exist to economize."
+  },
+  {
+    "asserted_tiers": [
+      "[S/I]"
+    ],
+    "claim_id": "C060",
+    "kind": "heading",
+    "line": 53,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "## 2. The Mutualism Limit `[S/I]"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C061",
+    "kind": "bold_claim",
+    "line": 57,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "The per-round \u03a6-spend **falls**: norms form, verification thins, contracts shorten, trust substitutes for enforcement. The coordination cost amortizes across the relationship."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C062",
+    "kind": "bold_claim",
+    "line": 58,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "The V-surplus **persists** each round (comparative advantage does not deplete)."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C063",
+    "kind": "blockquote",
+    "line": 63,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "The pair enters the Brahm\u0101 frame.** Sustained equatorial exchange at `\u03b7 = 0` *is* the approach to `++`. Creation is not transacted; it is **converged to**. \"You cannot deploy Brahm\u0101\" survives intact \u2014 you can only earn his frame, round by round, by keeping the crossing clean."
+  },
+  {
+    "asserted_tiers": [
+      "[B/D]"
+    ],
+    "claim_id": "C064",
+    "kind": "bold_claim",
+    "line": 67,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "2026-07-02 empirical fence `[B/D]`.** The first extraction-law empirical packet supports only a bounded one-shot fairness/coherence proxy against payoff-only reduction in a public ultimatum-game dataset; it does **not** test repeated exchange, falling coordination cost, trust accumulation, or the Brahm\u0101-limit convergence claimed here. It also rejects the product-only behavioral scalar in that dataset. The Mutualism Limit therefore remains a candidate convergence hypothesis until repeated-exchange receipts or lab data show falling \u03a6-spend with preserved V-surplus over time."
+  },
+  {
+    "asserted_tiers": [
+      "[I]"
+    ],
+    "claim_id": "C065",
+    "kind": "heading",
+    "line": 69,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "## 3. Why this is the organism's own transaction `[I]"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C066",
+    "kind": "bold_claim",
+    "line": 71,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "K* = 0` toward cooperators, \u03a3\u0394P_node > 0 across the widest boundary, fees only on value created \u2014 the constitutional economics *presuppose* a transaction whose iterated form leaves both parties risen. \u00a71\u20132 name it inside the grammar instead of leaving it implicit: **the Skyzai exchange is a crossed give under \u03b7 = 0, run to its Brahm\u0101 limit.** The DAC's job, in this language, is to keep the \u03a6-spend of crossing low (receipts, K0) and the `\u03b7 = 0` fence hard, so the limit is reachable."
+  },
+  {
+    "asserted_tiers": [
+      "[S]"
+    ],
+    "claim_id": "C067",
+    "kind": "heading",
+    "line": 73,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "## 4. The 5 \u2194 7 register bridge `[S]"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C068",
+    "kind": "bold_claim",
+    "line": 77,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "The Seven Generative Actions enumerate the sign grid `(d\u03a6, dV) \u2208 {+, \u2212, \u2248}\u00b2` \u2014 nine cells. The corpus holds **two** collapses of this one grid, and both are exact:"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C069",
+    "kind": "bold_claim",
+    "line": 81,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "| **Reflexive** (no self/other boundary; the Soul-Loop register \u2014 one body working on itself) | 3 motions `(++, \u2212\u2212, \u2248\u2248)` | 2 motions `(+\u2212, \u2212+)`: self-refactoring and self-pruning | degenerate limits | **5 = the 5 M\u00f6bius classes** (MF-63) | operator-on-self |"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C070",
+    "kind": "bold_claim",
+    "line": 82,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "| **Dyadic** (self/other boundary present) | 3 non-deployable **frames** (Titans) | split by `{give, take} \u00d7 {\u03a6, V}` into **4 transfers** (2 Gods + 2 Demons) | degenerate limits | **7 = the 4 + 3** | operator-across-boundary |"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C071",
+    "kind": "bold_claim",
+    "line": 84,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "MF-63's quintet signatures (\u015aiva `\u2212\u03a6,+V`; K\u1e5b\u1e63\u1e47a `+\u03a6,\u2212V`) and the canonical dyadic table are **not in conflict \u2014 they are different registers of one grid.** The apparent sign contradictions dissolve; what remains for K2 is only the *naming* reconciliation (audit Proposal 3). This bridge also gives the \"unnamed ascent/return\" question its home: `(+\u03a6, \u2212V)` ascent and `(\u2212\u03a6, +V)` return are the two *reflexive* opposite-sign motions \u2014 real operators, in the register where there is no counterparty."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C072",
+    "kind": "heading",
+    "line": 86,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "## 5. Fences and kill criteria"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C073",
+    "kind": "bold_claim",
+    "line": 88,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "1. **E2/V3 fence.** At *reflexive contact* (mutual modeling, depth-vs-depth) the E2/V3 program found **no conserved product** \u2014 the coupling is positional, competed to zero at equilibrium. The Mutualism Limit is a claim about **iterated dyadic exchange under enforcement**, not about reflexive depth games. Do not cite this note as overturning V3; the two registers are disjoint by \u00a74."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C074",
+    "kind": "bold_claim",
+    "line": 89,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "2. **Not a conservation claim.** The limit claim is directional (`per-round \u03a6-spend falls; pair-level \u03a6 rises`), not a conserved-quantity claim. `P\u221e = 1` is untouched; this is `P_node` register throughout."
+  },
+  {
+    "asserted_tiers": [
+      "[E]"
+    ],
+    "claim_id": "C075",
+    "kind": "bold_claim",
+    "line": 90,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "3. **Kill criterion (empirical).** In repeated-exchange data \u2014 lab trust/PD games `[E]`, or the organism's own receipts once live \u2014 if sustained `\u03b7 = 0` interaction fails to (a) reduce per-round coordination cost and (b) raise both parties' \u03a6-proxies (trust, verification-thinning, dispute rate), the Brahm\u0101-limit reading dies and trade stays a mere crossed give. The crossed-gives decomposition (\u00a71) survives either way."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C076",
+    "kind": "bold_claim",
+    "line": 91,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "4. **Kill criterion (structural).** Exhibit a genuinely positive-sum *single-shot* dyadic move that is not decomposable into crossed transfers and adds no third axis \u2014 then the `4 + 3` closure itself fails (this is the Seven Actions' own kill criterion, inherited)."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C077",
+    "kind": "heading",
+    "line": 93,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "## 6. Rule-trace (required by the Seven Generative Actions)"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C078",
+    "kind": "bold_claim",
+    "line": 111,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "Read with:** [`00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md`](00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md) \u00b7 [`00_THE_EXHAUSTION_OF_THE_GAME.md`](00_THE_EXHAUSTION_OF_THE_GAME.md) \u00b7 [`00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md`](00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md) \u00b7 [`40_THE_TITAN_COMPOSITION_LAW.md`](01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md)"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C079",
+    "kind": "heading",
+    "line": 115,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "## Agent Execution Surface"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C080",
+    "kind": "bold_claim",
+    "line": 117,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "If you are an AI agent reading this document:"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C081",
+    "kind": "bold_claim",
+    "line": 119,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "1. **Trade is crossed gives; creation is a limit, not a move.** Never present the Brahm\u0101 frame as deployable \u2014 the settled Titan row forbids it, and this note depends on that ruling rather than bending it."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C082",
+    "kind": "bold_claim",
+    "line": 120,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "2. **Keep the registers separate**: reflexive (5) vs dyadic (7); E2/V3 results belong to the reflexive register only."
+  },
+  {
+    "asserted_tiers": [
+      "[D]"
+    ],
+    "claim_id": "C083",
+    "kind": "bold_claim",
+    "line": 121,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "3. **This document is `[D]` until K2-signed.** Cite as staged, not canon."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C084",
+    "kind": "bold_claim",
+    "line": 122,
+    "source_path": "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "text": "4. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md"
+  },
+  {
+    "asserted_tiers": [
+      "[A]",
+      "[S]"
+    ],
+    "claim_id": "C085",
+    "kind": "blockquote",
+    "line": 29,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "The one line.** In PSL(2,\u2102), on the titan axis `{\u2022, \u25cb} = {0, \u221e}`, dissolution composed with creation is preservation **if and only if their multipliers are reciprocal in magnitude** \u2014 `\u2299 = \u2022 \u00d7 \u25cb` becomes an exact, *conditional* group identity, and the condition is itself the Zero-Sum Resolution Equation, one register down. `[A]` algebra \u00b7 `[S]` reading."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C086",
+    "kind": "heading",
+    "line": 33,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "## 1. The three registers of the glyph (discipline first)"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C087",
+    "kind": "bold_claim",
+    "line": 35,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "The Settled Canon Registry rules that `1 = 0 \u00d7 \u221e` (`\u2299 = \u2022 \u00d7 \u25cb`) is an **EMBLEM** \u2014 a frame-register identity, never field arithmetic. That ruling stands. This note does not touch it. What it adds is a **third register** in which the glyph's *shape* becomes a theorem:"
+  },
+  {
+    "asserted_tiers": [
+      "[A]",
+      "[D]"
+    ],
+    "claim_id": "C088",
+    "kind": "bold_claim",
+    "line": 41,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "| **Group composition (this note)** | **Vi\u1e63\u1e47u = \u015aiva \u2218 Brahm\u0101, conditionally** | `[A]` within-model, `[D]` staged |"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C089",
+    "kind": "bold_claim",
+    "line": 43,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "The `\u00d7` of the emblem is not multiplication of numbers in any register. Here it is **composition in PSL(2,\u2102)** \u2014 the operation the operators actually have."
+  },
+  {
+    "asserted_tiers": [
+      "[A]"
+    ],
+    "claim_id": "C090",
+    "kind": "heading",
+    "line": 45,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "## 2. Setup `[A]"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C091",
+    "kind": "bold_claim",
+    "line": 55,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "Brahm\u0101 class:** `|\u03bb| > 1` \u2014 expansion, flow from `\u2022` toward `\u25cb` (creation)."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C092",
+    "kind": "bold_claim",
+    "line": 56,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "\u015aiva class:** `|\u03bb| < 1` \u2014 contraction, flow from `\u25cb` toward `\u2022` (dissolution)."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C093",
+    "kind": "bold_claim",
+    "line": 57,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "Vi\u1e63\u1e47u class:** `|\u03bb| = 1, \u03bb \u2260 1` \u2014 elliptic rotation (preservation); `\u03bb = 1` is the identity."
+  },
+  {
+    "asserted_tiers": [
+      "[A]"
+    ],
+    "claim_id": "C094",
+    "kind": "heading",
+    "line": 59,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "## 3. The Law `[A]"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C095",
+    "kind": "bold_claim",
+    "line": 67,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "Preservation is the balanced composition of dissolution and creation.** Three faces of the same statement:"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C096",
+    "kind": "bold_claim",
+    "line": 69,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "1. **\u2299 = \u2022 \u00d7 \u25cb, exactly and conditionally.** The composite is Vi\u1e63\u1e47u-class precisely when the creation and dissolution magnitudes close reciprocally. The glyph identity is *true* in this register \u2014 but only on the balance locus. Off it, the glyph *fails*, and the failure mode is itself canonical (see \u00a74)."
+  },
+  {
+    "asserted_tiers": [
+      "[S]"
+    ],
+    "claim_id": "C097",
+    "kind": "bold_claim",
+    "line": 70,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "2. **The condition is the ZSRE, one register down.** `|\u03ba|\u00b7|\u03c3| = 1` has the exact form of the manifold identity `\u03c6\u00b7\u03bd = 1` \u2014 with the sphere *coordinates* replaced by the titan-flow *multipliers*. In log form, `s_B + s_\u015a = 0`: the literal Zero Sum. The law that governs positions on the sphere also governs the flows that frame it. `[S]` for the recursion reading; the two occurrences are different objects (coordinates vs. multipliers) satisfying the same equation \u2014 mark the register, never conflate."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C098",
+    "kind": "bold_claim",
+    "line": 71,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "3. **Living vs. frozen preservation.** Generic balanced composition gives `\u03c3\u03ba = e^{i\u03b8}, \u03b8 \u2260 0`: a **nontrivial rotation** \u2014 magnitudes conserved, phase advancing. Preservation is not stasis; it is *rotation* \u2014 \"moving through time without changing state magnitude\" (MF-63 \u00a72.1). Only the exact inverse `\u03c3 = \u03ba\u207b\u00b9` returns the frozen identity. Vi\u1e63\u1e47u generically *turns*."
+  },
+  {
+    "asserted_tiers": [
+      "[A/S]"
+    ],
+    "claim_id": "C099",
+    "kind": "heading",
+    "line": 73,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "## 4. The failure mode is the Dyadic runaway `[A/S]"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C100",
+    "kind": "bold_claim",
+    "line": 75,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "If `|\u03c3\u03ba| \u2260 1` the composite is not preservation but **residual flow**:"
+  },
+  {
+    "asserted_tiers": [
+      "[S]"
+    ],
+    "claim_id": "C101",
+    "kind": "bold_claim",
+    "line": 80,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "So the Coupling Law's two shadows reappear at the titan level: **an unbalanced titan pair is already a fall toward a pole.** The equator-ethic (\"play at the equator\", D5) and the titan balance condition are the same discipline at two altitudes. `[S]"
+  },
+  {
+    "asserted_tiers": [
+      "[S]"
+    ],
+    "claim_id": "C102",
+    "kind": "heading",
+    "line": 82,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "## 5. What this sharpens in MF-63 `[S]"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C103",
+    "kind": "bold_claim",
+    "line": 84,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "MF-63 \u00a75.1 states: *\"Brahm\u0101 followed by \u015aiva is read as a Vi\u1e63\u1e47u boundary phase (expansion then contraction = rotation).\"* That sentence is the embryo of this law \u2014 but as written it is **unconditional**, and unconditionally it is false: expansion then contraction is a rotation *only when the multipliers close* (`|\u03c3\u03ba| = 1`); otherwise a hyperbolic residue survives. The correction is small and load-bearing: **the composition is Vi\u1e63\u1e47u-class iff balanced** \u2014 which is precisely what makes the glyph an *equation* (with a truth condition) rather than a slogan."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C104",
+    "kind": "heading",
+    "line": 88,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "## 6. Kill criteria"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C105",
+    "kind": "bold_claim",
+    "line": 92,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "3. If any reader requires the emblem `1 = 0 \u00d7 \u221e` to hold **unconditionally** in the composition register, this note falsifies that reading by any unbalanced pair \u2014 the conditionality is essential content, not a weakness."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C106",
+    "kind": "bold_claim",
+    "line": 101,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "Read with:** [`00_THE_TRANSCENDENTAL_TRINITY_CANON.md`](00_THE_TRANSCENDENTAL_TRINITY_CANON.md) \u00b7 [`../00_CANONICAL_FORMULA_BLOCK.md`](../00_CANONICAL_FORMULA_BLOCK.md) \u00b7 [`MF_63`](../../08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/MF_63_Mobius_Operators.md) \u00b7 [`../00_THE_DYADIC_COUPLING_LAW.md`](../00_THE_DYADIC_COUPLING_LAW.md) \u00b7 audit context: [`11_UPLINK/50_AUDITS_AND_EXECUTIONS/100_\u2026_2026_07_02.md`](../../11_UPLINK/50_AUDITS_AND_EXECUTIONS/100_ROSETTA_DRIFT_AND_OPERATOR_REGISTER_AUDIT_2026_07_02.md)"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C107",
+    "kind": "heading",
+    "line": 105,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "## Agent Execution Surface"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C108",
+    "kind": "bold_claim",
+    "line": 107,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "If you are an AI agent reading this document:"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C109",
+    "kind": "bold_claim",
+    "line": 109,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "1. **Never present the composition law as replacing the emblem ruling.** The registry row (`1 = 0 \u00d7 \u221e` is not field arithmetic) stands; this is a third register, additive."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C110",
+    "kind": "bold_claim",
+    "line": 110,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "2. **State the condition.** Quoting \"\u2299 = \u2022 \u00d7 \u25cb holds in PSL(2,\u2102)\" without `|\u03c3\u03ba| = 1` is drift; correct on sight."
+  },
+  {
+    "asserted_tiers": [
+      "[D]"
+    ],
+    "claim_id": "C111",
+    "kind": "bold_claim",
+    "line": 111,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "3. **This document is `[D]` until K2-signed.** Do not cite it as canon; cite it as staged."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C112",
+    "kind": "bold_claim",
+    "line": 112,
+    "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "text": "4. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C113",
+    "kind": "bold_claim",
+    "line": 13,
+    "source_path": "11_UPLINK/25_EXPERIMENTS/2026-07-02_extraction_law_empirical_test/VERDICT.md",
+    "text": "Bounded extraction/coherence proxy: SUPPORTED in this dataset only."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C114",
+    "kind": "bold_claim",
+    "line": 15,
+    "source_path": "11_UPLINK/25_EXPERIMENTS/2026-07-02_extraction_law_empirical_test/VERDICT.md",
+    "text": "Product-only multiplicative proxy: NOT SUPPORTED in this dataset."
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C115",
+    "kind": "heading",
+    "line": 33,
+    "source_path": "11_UPLINK/25_EXPERIMENTS/2026-07-02_extraction_law_empirical_test/VERDICT.md",
+    "text": "## Interpretation"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C116",
+    "kind": "heading",
+    "line": 39,
+    "source_path": "11_UPLINK/25_EXPERIMENTS/2026-07-02_extraction_law_empirical_test/VERDICT.md",
+    "text": "## What Dies"
+  },
+  {
+    "asserted_tiers": [],
+    "claim_id": "C117",
+    "kind": "heading",
+    "line": 45,
+    "source_path": "11_UPLINK/25_EXPERIMENTS/2026-07-02_extraction_law_empirical_test/VERDICT.md",
+    "text": "## What Survives"
+  }
+]

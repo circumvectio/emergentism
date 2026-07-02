@@ -10,7 +10,7 @@ owner: "K2-staged; not signed"
 
 ## Result
 
-**Bounded extraction/coherence proxy: SUPPORTED in this dataset.**
+**Bounded extraction/coherence proxy: SUPPORTED in this dataset only.**
 
 **Product-only multiplicative proxy: NOT SUPPORTED in this dataset.**
 
@@ -44,10 +44,9 @@ It also rejects a stronger overcompressed reading: the single product score `mat
 
 ## What Survives
 
-- The bounded eta rewrite survives: extraction/taking must be judged through power, boundary, and justice conditions, not by material gain alone.
+- The bounded eta rewrite receives local support only: extraction/taking should be modeled with fairness/coherence and material gain, not material gain alone.
 - The local proxy claim survives: a fairness/coherence variable adds predictive power over payoff-only.
 
 ## Limit
 
 This is one small public dataset in a generalized ultimatum-game domain. It is evidence against payoff-only reduction and against product-only overcompression; it is not a proof of the full Extraction Law.
-

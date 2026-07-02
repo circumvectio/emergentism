@@ -1,0 +1,29 @@
+{
+  "canon_change": false,
+  "claims_extracted": 117,
+  "generated_at_utc": "2026-07-02T13:28:24.678044+00:00",
+  "k2_required_for_canon_change": true,
+  "outputs": [
+    "outputs/claims.json",
+    "outputs/claims.md",
+    "outputs/k2_packet.md",
+    "outputs/run_receipt.json",
+    "RUN_RECEIPT.md"
+  ],
+  "packet": "2026-07-02_agentz_refinement_pilot",
+  "reports_collated": [
+    "L2_kali_skeptic_A.md",
+    "L2_kali_skeptic_B.md",
+    "L3_krishna_test_backlog.md",
+    "L5_brahma_grounding.md",
+    "L6_shiva_archive_candidates.md",
+    "L7_vishnu_registry_guardian.md"
+  ],
+  "scope_inputs": [
+    "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+    "05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md",
+    "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+    "11_UPLINK/25_EXPERIMENTS/2026-07-02_extraction_law_empirical_test/VERDICT.md",
+    "11_UPLINK/25_EXPERIMENTS/2026-07-02_extraction_law_empirical_test/results.json"
+  ]
+}
