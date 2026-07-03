@@ -1,0 +1,32 @@
+/* Amrita page — layers on xai.css (shell/topbar/footer come from there). */
+.amrita-page main { max-width: 60rem; margin: 0 auto; padding: 0 1.25rem; }
+.screen { min-height: 82vh; display: flex; flex-direction: column; justify-content: center; padding: 4rem 0; border-bottom: 1px solid #161616; }
+.hero .equation { font-size: clamp(3rem, 12vw, 8rem); font-weight: 300; letter-spacing: .05em; margin: 0 0 1.5rem; }
+.hero-line { font-size: 1.35rem; line-height: 1.5; max-width: 40rem; color: #cfcfcf; }
+.scroll-cue { margin-top: 2rem; color: #8899ff; text-decoration: none; }
+.runaway-wrap { display: flex; gap: 2rem; flex-wrap: wrap; align-items: center; }
+#runaway-canvas { width: min(480px, 80vw); height: min(480px, 80vw); touch-action: none; cursor: ns-resize; filter: saturate(calc(.4 + var(--rd-balance, 1))); }
+.readouts { display: grid; grid-template-columns: 1fr; gap: .75rem; font-variant-numeric: tabular-nums; }
+.readouts dt { color: #888; font-size: .85rem; }
+.readouts dd { margin: 0; font-size: 2rem; font-weight: 300; }
+.caption { margin-top: 1.5rem; color: #aaa; max-width: 44rem; }
+/* tier badges */
+.tier { display: inline-block; font-size: .7rem; font-weight: 600; padding: .05rem .4rem; border-radius: .25rem; margin-right: .4rem; vertical-align: middle; }
+.tier.a { background:#123d1f; color:#7fe6a0; } .tier.b { background:#123246; color:#7fc6ff; }
+.tier.s { background:#1a2540; color:#9db4ff; } .tier.i { background:#2a2410; color:#d9c574; }
+.tier.c { background:#2a1a2a; color:#c79bd0; } .tier.poison { background:#3a1414; color:#ff8a8a; }
+/* ladder */
+.filters { display:flex; gap:.5rem; flex-wrap:wrap; margin-bottom:1.5rem; }
+.filters button { background:#111; color:#ccc; border:1px solid #333; border-radius:.3rem; padding:.4rem .8rem; cursor:pointer; }
+.filters button.active { border-color:#8899ff; color:#fff; }
+.columns { display:grid; grid-template-columns:1fr 1fr; gap:2rem; }
+@media (max-width:720px){ .columns{ grid-template-columns:1fr; } .runaway-wrap{ flex-direction:column; } }
+.drop { list-style:none; padding:1rem 0; border-top:1px solid #161616; }
+.drop.poison strong, .drop.poison p { text-decoration: line-through; text-decoration-color:#7a2a2a; color:#9a8a8a; }
+.drop strong { display:block; margin:.25rem 0; }
+.drop p { color:#bbb; margin:.25rem 0; }
+.drop .src { font-size:.8rem; color:#8899ff; text-decoration:none; }
+.deeper .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(14rem,1fr)); gap:1rem; }
+.deeper .cards a { display:block; padding:1.25rem; border:1px solid #222; border-radius:.4rem; color:#ddd; text-decoration:none; }
+.deeper .cards a:hover { border-color:#8899ff; }
+.muted { color:#777; }

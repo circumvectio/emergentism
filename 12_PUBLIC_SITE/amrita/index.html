@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Amrita — Emergentism</title>
+<meta name="description" content="The one proven result, made felt — then the tier-honest nectar and the halahala we cut. A worldview that shows its own poison." />
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../assets/css/xai.css">
+<link rel="stylesheet" href="amrita.css">
+</head>
+<body class="amrita-page">
+<header class="topbar">
+  <a class="brand" href="../">Emergentism</a>
+  <nav class="number-nav" aria-label="Public doctrine routes">
+    <a href="../0/">0</a><a href="../1/">1</a><a href="../2/">2</a><a href="../3/">3</a>
+    <a href="../4/">4</a><a href="../5/">5</a><a href="../6/">6</a>
+    <a href="../rosetta/">R</a><a href="../soul-loop/">S</a><a href="../atlas/">A</a><a href="../read/">Read</a>
+  </nav>
+</header>
+
+<main>
+  <!-- Screen 1: the one true thing -->
+  <section class="screen hero">
+    <p class="equation">&#966; &middot; &#957; = 1</p>
+    <p class="hero-line">Pull one apart and the other runs to infinity. That is the whole engine.
+    Everything else here is built on it &mdash; or honestly marked as not yet proven. <span class="tier a">[A]</span></p>
+    <a class="scroll-cue" href="#feel">feel it &darr;</a>
+  </section>
+
+  <!-- Screen 2: feel it (the runaway) -->
+  <section id="feel" class="screen runaway">
+    <h2>Feel the runaway</h2>
+    <div class="runaway-wrap">
+      <canvas id="runaway-canvas" width="480" height="480" aria-label="Interactive Burrisphere: drag vertically to move between the poles and the equator"></canvas>
+      <div id="runaway-fallback" hidden><svg viewBox="0 0 100 100" width="220" height="220" aria-hidden="true"><circle cx="50" cy="50" r="40" fill="none" stroke="#2a2a2a"/><ellipse cx="50" cy="50" rx="40" ry="12" fill="none" stroke="#8899ff"/></svg><p class="muted">WebGL unavailable &mdash; the numbers still move.</p></div>
+      <dl class="readouts">
+        <div><dt>&#966; (foresight)</dt><dd id="rd-phi">1.000</dd></div>
+        <div><dt>&#957; (means)</dt><dd id="rd-nu">1.000</dd></div>
+        <div><dt>B (balance)</dt><dd id="rd-B">1.000</dd></div>
+        <div><dt>&#947; (price)</dt><dd id="rd-gamma">1.000</dd></div>
+      </dl>
+    </div>
+    <p class="caption">Drag toward a pole. This is the one <span class="tier a">[A]</span>-proven result &mdash; pure AM&ndash;GM on the reciprocal.
+    It does <em>not</em> by itself prove the equator is anyone&rsquo;s optimum; that is <span class="tier s">[S]</span> and conditional. See the ladder.</p>
+  </section>
+
+  <!-- Screen 3: the honest ladder -->
+  <section id="ladder" class="screen ladder">
+    <h2>The honest ladder</h2>
+    <div class="filters" role="group" aria-label="Filter by tier">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="[A]">[A] proven</button>
+      <button data-filter="[S]">[S] structural</button>
+      <button data-filter="halahala">What we cut</button>
+    </div>
+    <div class="columns">
+      <div><h3>Amrita &mdash; the nectar</h3><ul id="nectar-list"></ul></div>
+      <div><h3>Hal&#257;hala &mdash; the poison</h3><ul id="halahala-list"></ul></div>
+    </div>
+  </section>
+
+  <!-- Screen 4: go deeper -->
+  <section class="screen deeper">
+    <h2>Go deeper</h2>
+    <div class="cards">
+      <a href="../paradox/"><span class="tier i">[I]</span> Paradox dissolutions</a>
+      <a href="../cosmology/"><span class="tier s">[S]</span> Cosmology</a>
+      <a href="../rosetta/"><span class="tier s">[S]</span> The Rosetta</a>
+      <a href="../papers/"><span class="tier b">[B]</span> Papers &amp; receipts</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">&#8857; = &bull; &times; &#9711;</footer>
+
+<script type="module">
+import { mountRunaway } from "./runaway.mjs";
+
+// Screen 2: mount the scene (async — catch mount failures rather than letting them go unhandled)
+mountRunaway({
+  canvas: document.getElementById("runaway-canvas"),
+  readouts: { phi: document.getElementById("rd-phi"), nu: document.getElementById("rd-nu"),
+              B: document.getElementById("rd-B"), gamma: document.getElementById("rd-gamma") },
+  fallbackEl: document.getElementById("runaway-fallback"),
+}).catch(e => console.error("runaway mount failed", e));
+
+// Screen 3: render the ladder from amrita.json
+fetch("amrita.json").then(r => r.json()).then(drops => {
+  const tierClass = t => ({ "[A]":"a","[B]":"b","[S]":"s","[I]":"i","[C]":"c","halahala":"poison" }[t] || "");
+  const li = d => {
+    const el = document.createElement("li");
+    el.className = "drop " + (d.group === "halahala" ? "poison" : "nectar");
+    el.dataset.tier = d.tier;
+    el.innerHTML = `<span class="tier ${tierClass(d.tier)}">${d.tier === "halahala" ? "cut" : d.tier}</span>`
+      + `<strong>${d.title}</strong><p>${d.body}</p>`
+      + `<a class="src" href="../read/" title="${d.source}">source &rarr;</a>`;
+    return el;
+  };
+  const nl = document.getElementById("nectar-list"), hl = document.getElementById("halahala-list");
+  drops.forEach(d => (d.group === "nectar" ? nl : hl).appendChild(li(d)));
+
+  // tier filter
+  document.querySelectorAll(".filters button").forEach(b => b.addEventListener("click", () => {
+    document.querySelectorAll(".filters button").forEach(x => x.classList.remove("active"));
+    b.classList.add("active");
+    const f = b.dataset.filter;
+    document.querySelectorAll(".drop").forEach(el => {
+      el.style.display = (f === "all" || el.dataset.tier === f) ? "" : "none";
+    });
+  }));
+});
+</script>
+</body>
+</html>
