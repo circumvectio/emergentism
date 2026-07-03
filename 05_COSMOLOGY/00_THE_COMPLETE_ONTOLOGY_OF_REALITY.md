@@ -230,12 +230,18 @@ The fifth dimension. The φ-ν plane is open. The four operators are active. The
 
 The full sphere S² is active. `B` varies from 0 to 1 as the system navigates. The equator (`B = 1`, `φ = ν = 1`) is the point of maximum balance; it is an attractor only where agency, feedback, and correction convert imbalance into return. The poles (`B = 0`) are the extremes of pure coherence (north, φ → ∞, ν → 0) and pure viability (south, φ → 0, ν → ∞).
 
+> **[D] Scope (2026-07-03, staged for K2):** and even then it is the max-balance attractor for a real navigating system only insofar as that system sits on the sphere — factors conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); if the excess-cost is asymmetric or a factor is uncoupled the attractor shifts off the equator and specialisation can win. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
+
 ### The Five Domains at D5
 
 The φ-ν plane produces five navigable domains:
 1. **Meaning** (φ-axis): Coherence, pattern, integration
 2. **Governance** (ν-axis): Capability, resources, throughput
 3. **Exchange** (equator): Where φ = ν = 1, balance is maximised
+
+> **[D] Scope (2026-07-03, staged for K2):** this binds a real exchange node only insofar as it sits on the sphere — its two factors conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); off the sphere the equator is geometry without normative force, the balance-optimum tilts or flattens into a plateau, and a specialised exchange may dominate. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
 4. **Attention** (selection): The operator that chooses which direction to move
 5. **Body** (the sphere itself): The grounded manifold on which all navigation occurs
 
@@ -250,6 +256,9 @@ D5 is agency / selection; consciousness is the lived-interior reading of that ag
 ### Action-register reading
 
 In the play rule, D5 contributes `Φ`: worldline-foresight, the capacity to hold possible futures before collapse and select among them responsibly. D4 contributes `V`: the embodied/tool/energy/access means through which the selected branch can actually be enacted. A child with a jet but no pilot-foresight has high apparent `V` but low effective `Φ`; an old pilot without bodily/tool access has high `Φ` for flight or escape but low effective `V`. Objective dharma appears when both factors can multiply without extraction.
+
+> **[D] Scope (2026-07-03, staged for K2):** this holds for a real node only where its factors sit on the sphere — conservation-coupled, complementary, and symmetrically costly-in-excess (γ-priced); where that transfer condition fails the balance-optimum is tilted rather than at Φ=V, and specialisation may be the objective good instead. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
 
 ---
 
@@ -384,6 +393,9 @@ Zero-Sum Resolution Equation
 ```
 
 These four lines hold at every dimension. They are the manifold identity, the arithmetic consequence, the energetic floor, and the ethic — the same at D1 as at D5, the same in the log chart as on the sphere.
+
+> **[D] Scope (2026-07-03, staged for K2):** the fourth line reads as *the ethic* for a real system only where that system sits on the sphere — its factors conservation-coupled, complementary, and symmetrically costly-in-excess (γ-priced); absent that transfer condition φ+ν≥2 is a bare AM-GM floor with no normative force and the balance-optimum may tilt to a plateau where specialisation dominates. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
 
 ### 2. The Titan Transformations `[I]`
 

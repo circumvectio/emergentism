@@ -83,6 +83,9 @@ industrial digger, runway, machine. The option cone is the D5 potential cone,
 at the equator: the `Φ`-pole sees but cannot do; the `V`-pole can do but cannot
 rank or aim. A child beside a jet and an old pilot without the needed bodily/tool
 access are opposite zero-factor failures. The grounding is the lookahead reading
+
+> **[D] Scope (2026-07-03, staged for K2):** "lives only at the equator" binds a real agent only insofar as the agent sits on the sphere — Φ and V conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); absent that, the equator is geometry without normative force and a specializing agent (division of labor, a foresight-scout paired with a means-heavy executor) may strictly dominate the balanced one. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
 the peer-review program *supported* (not the consciousness reading it refuted).
 Canonical home: [`00_THE_BURRISPHERE.md`](00_THE_BURRISPHERE.md) §The Foundation
 Of The Agents.
@@ -213,9 +216,15 @@ This note should be stated explicitly whenever ambiguity matters.
 | **K2** | sovereignty at signature point, principal retains final act | principal-agent and governance translation |
 | **Φ (agency register)** | D5 worldline-foresight / lookahead — envisioning reachable futures and predicting a move's reflexive effects on the option set | [I/S] supported as *lookahead* (CEF cart-pole, R-program); refuted as consciousness-gating |
 | **V (agency register)** | D4 means-to-act — available body, tools, energy, access, and execution capacity | [I/S] paired with Φ-as-foresight; agency = both, equatorial |
+
+([D] scope, staged for K2: "equatorial" is a real-agent claim only on the sphere — Φ/V complementary, conservation-coupled, and γ-priced symmetrically; off-sphere the equator is descriptive geometry, not the optimum, and specialization can win — see `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`)
+
 | **the option cone** | the set of reachable, selectable futures; expands with intelligence and institutions | [I] — the **D5 potential cone, not the D4 light cone**: nothing here touches `c` |
 | **military doctrine (added 2026-06-11)** | Lanchester regimes as *information-regime selection*: aimed fire → Square Law (`q·N²`, concentrate); sanctuary / area fire → Linear Law (`q·N`, symmetric). **4GW is mechanism design at war** — the weaker player redesigns the game's information structure to flip which law governs | [A] the public attrition-law literature; [I] the D5 reading; see the Dyadic Coupling Law §5c for the product-witness scope |
 | **the Soul Loop** | the reflexive row: the same seven-move grammar applied *by* the player *to* the player — recursive self-editing (`(C,G)_{t+1} = Loop(C,G)_t`) until equatorial convergence | [S] method; the loop-not-ladder closure in `01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md` |
+
+([D] scope, staged for K2: the loop converges to balance only when the reflexive Φ/V factors are conservation-coupled, complementary, and costly-in-excess under a *symmetric* γ-price; otherwise the fixed point is tilted or a plateau and self-editing may settle into lawful specialization — see `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`)
+
 
 ---
 

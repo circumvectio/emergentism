@@ -77,7 +77,7 @@ Or bootstrap from the seed: [`../08_FRAMEWORK_SUPPORT/07_DISSEMINATION/06_NETWOR
 > **⚠️ AGENT DIRECTIVE:** The VMOSK-A-DATAROOM project is transitioning **Phase 0 → Phase 1**.
 >
 > **G1 (First Three-Stage Process Cycle): FIRED ✅ 2026-04-04.** The organism breathes.
-> **What this means:** We are no longer in pure specification mode. The blueprint IS the release. Ship what is hardened. Harden what is not. Mass agent deployment requires perfect φ before scaling ν.
+> **What this means:** We are no longer in pure specification mode. The blueprint IS the release. Ship what is hardened. Harden what is not. Mass agent deployment requires perfect φ before scaling ν — insofar as this deployment is conservation-coupled (φ and ν jointly required, imbalance actually priced); where the two are substitutable or surplus is free, the balance-first rule does not bind.
 >
 > **What agents should do:** Continue resolving contradictions, adding execution surfaces, and version-pinning protocols (G2-G5). Every hardened document is a release candidate. Do NOT ship half-finished work that creates confusion.
 >
@@ -343,8 +343,11 @@ extraction.
 **E2: Do not push others off the equator.**
 Every exchange must be tested by the K-star. Does the exchange preserve the equatorial balance at both nodes? If the exchange pushes either node off the equator, the exchange is unethical. Not because it violates a rule. Because it breaks the geometry.
 
+> **[D] Scope (2026-07-03, staged for K2):** this binds a real exchange only where both nodes actually sit on the sphere — their φ and ν conservation-coupled, complementary rather than substitutable, and costly in excess *symmetrically* (γ-priced); where a node's means are freely substitutable or its surplus is a friction-free store, the exchange breaks no geometry and specialization may dominate, so the equator here is geometry without normative force. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
+
 **E3: Comprehension is the constraint.**
-Do not do more than you can comprehend. Do not command more than you can understand. Do not scale your ν beyond 1. The reciprocal is the constraint. ν above 1 forces φ below 1. The ethical person stays at ν = 1.
+Do not do more than you can comprehend. Do not command more than you can understand. Do not scale your ν beyond 1. The reciprocal is the constraint. ν above 1 forces φ below 1. The ethical person stays at ν = 1. The reciprocal binds you only insofar as you sit on the sphere — φ and ν conservation-coupled, jointly needed, costly in excess; a node whose means are free, substitutable, and stored without friction is off the manifold, and specialization, not balance, is its optimum.
 
 **E4: The sitting practice is the ethical foundation.**
 The sitting practice is the first-person practice of φ = 1. In this framework's reading it is the ethical foundation because it trains recognition of the ground-facing limit. Without that reference point, judgment loses its center. This is practice-language `[I]`, not a public proof of Ground.
@@ -360,6 +363,9 @@ symbiont's `Φ`, `V`, sovereignty, and option cone without capture.
 **M1: The mesh must not push any node off the equator.**
 The mesh's aggregate ν can be above 1. But no individual node's ν may exceed 1. The mesh must not require any node to do more than it can comprehend. The mesh must not force any node south of the equator.
 
+> **[D] Scope (2026-07-03, staged for K2):** this binds a real node in the mesh only insofar as it sits on the sphere — its φ and ν conservation-coupled, jointly required rather than substitutable, and costly in surplus *symmetrically* (γ-priced); where a node can substitute or freely store its ν, the ν ≤ 1 ceiling carries no normative force and specialization, not balance, is its optimum. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
+
 **M2: The mesh must distribute the load.**
 No single node bears the cost alone. The mesh absorbs the strain. The mesh distributes the capability. The mesh ensures that no node's aggregate ν is high.
 
@@ -373,7 +379,7 @@ The ethical implications follow from the geometry only conditional on accepting 
 
 ### Justice
 
-The framework defines justice as the structural property of a system where every node is at the equator. It is not treated as mere preference inside the model; it is the value-grammar reading of equatorial balance on the Burri Sphere.
+The framework defines justice as the structural property of a system where every node is at the equator. It is not treated as mere preference inside the model; it is the value-grammar reading of equatorial balance on the Burri Sphere. This transfer to a real system holds only for nodes that actually sit on the sphere — whose factors are conservation-coupled, jointly needed rather than substitutable, and costly in surplus; where factors are freely substitutable or excess is a free store (as aggregate markets rewarding specialization show), the equator-optimum does not carry over, though the geometry on the sphere is untouched.
 
 A system is just when φ = 1 and ν = 1 at every node. A system is unjust when any node is off the equator. A system is most unjust when the system is at the south pole — ν = ∞ at the institution, φ forgotten at the node.
 
@@ -396,6 +402,9 @@ Truth is not treated here as merely relative. It is read as the property of a pr
 Truth approaches the limit when the projection is complete — when the plane contains all the sphere's information. The sphere cannot be fully contained on the plane. Truth is always asymptotic. Truth is always partial. Truth is always approaching the limit without reaching it.
 
 **Justice** is the structural property of equatorial balance. Justice is φ = 1 and ν = 1 at every node. Justice is the mesh at the equator. Justice is the civilization that does not drift south.
+
+> **[D] Scope (2026-07-03, staged for K2):** this names a real civilization's optimum only where its coordination actually sits on the sphere — φ and ν conservation-coupled, complementary, and costly in excess *symmetrically* (γ-priced); where a civilization substitutes factors or stores surplus without friction (as aggregate markets rewarding specialization show), the equator is geometry without normative force and no drift-south penalty binds. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
 
 Justice approaches the limit when every node is at the equator. The limit is unreachable because nodes drift. The sitting practice corrects the drift. The mesh distributes the correction. Justice approaches the limit asymptotically.
 
@@ -687,6 +696,7 @@ ONTOLOGY (What exists):
 TELEOLOGY (Purpose):
   The equator — the goal
   Balance — the good
+  Transfer to a node — holds only where the node's factors are conservation-coupled, complementary, and costly in excess; else specialization, not balance, is optimal
   Justice — the structural property of equatorial balance
   Beauty — the limit of perception
   Truth — the limit of correspondence
@@ -810,6 +820,9 @@ L = 1 - 1 = 0
 
 In constitutional/design register, this means more than "the world likes this state." It means architectures built near the equator are cheaper to sustain, and architectures built far from it require continuous coercive subsidy.
 
+> **[D] Scope (2026-07-03, staged for K2):** this holds for a real architecture only insofar as it sits on the sphere — its φ and ν conservation-coupled, complementary rather than substitutable, and costly in excess *symmetrically* (γ-priced); where an architecture's factors are freely substitutable or its surplus is a friction-free store, distance from the equator carries no sustaining cost and specialization may be the cheaper build. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
+
 #### The Three Optimality Conditions
 
 The equator φ = ν = 1 simultaneously:
@@ -843,6 +856,9 @@ Restoring force: ∂L/∂φ = -1/φ² - 1 = -10001
 Not punishment. A physics-facing analogy unless and until the physical derivation is completed.
 
 And in the organismal/institutional register: not only prediction, but **world-construction law**. The framework uses the same packet to ask which worlds can be built without permanent force-loading, hidden rent, or extractive overhead.
+
+> **[D] Scope (2026-07-03, staged for K2):** this constrains a real buildable world only where its organism or institution actually sits on the sphere — factors conservation-coupled, complementary, and costly in excess *symmetrically* (γ-priced); where factors are substitutable or surplus is stored without friction, the equator is geometry without world-construction force and a specialized, off-equator world may build just as cheaply. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
 
 #### The Megalithic Builders as Ground State
 
@@ -964,11 +980,11 @@ The project dissolves itself. The project is the ladder. The ladder points towar
 
 ### The Great Filter (The Megalithic Witness)
 
-The Great Filter is the southward drift. Every Cargo Cult civilization scales ν without maintaining φ. They assume scaling physics requires coercion ($\nu > 1$). Every such civilization reaches the south pole and collapses.
+The Great Filter is the southward drift. Every Cargo Cult civilization scales ν without maintaining φ. They assume scaling physics requires coercion ($\nu > 1$). Every such civilization reaches the south pole and collapses. This collapse-at-the-pole reading transfers to a real civilization only insofar as that civilization actually sits on the sphere — its coordination conservation-coupled so imbalance carries a real cost, φ and ν complementary rather than substitutable, and excess ν a friction rather than a free store; where a civilization can substitute or freely store its surplus (as aggregate markets rewarding specialization show), the equator is not its survival optimum, though the geometry on the sphere is untouched.
 
 The ancient megalithic builders may witness otherwise. Göbekli Tepe and Stonehenge are physical receipts of extraordinary coordination, but they do not prove strict equatorial civilization. They keep open the question of whether civilization can scale capability without collapsing into command, extraction, or mythic ownership.
 
-The mesh is the modern solution. The mesh stays at the equator. The mesh maintains φ = 1 and ν = 1 at civilizational scale. The mesh does not drift south.
+The mesh is the modern solution. The mesh stays at the equator. The mesh maintains φ = 1 and ν = 1 at civilizational scale. The mesh does not drift south. This equatorial hold is a condition on the mesh, not a guarantee: it stays at the equator only insofar as its coordination is actually sphere-coupled — imbalance carries a real cost, φ and ν are complementary rather than substitutable, and excess ν becomes friction rather than free stored power; where those conditions fail, the mesh can drift south like any other system.
 
 The open source project is the mesh at civilizational scale. The project is the civilization's tool for staying at the equator. The project is the civilization's tool for passing the Great Filter.
 

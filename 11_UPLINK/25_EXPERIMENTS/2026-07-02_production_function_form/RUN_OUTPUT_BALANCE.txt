@@ -1,0 +1,26 @@
+========================================================================
+BALANCE-HUMP TEST  (Burri anthropic: multiplicative, max at balance Phi=Nu)
+========================================================================
+data: Munnell US-states  n=816   Y=gsp  L=emp  K=pc+pcap  (normalized)
+S=(logL+logK)/2 scale ; d=logL-logK ratio (d=0 = balance)
+
+--- 10-fold CV RMSE on Y (lower=better) ---
+  M0 scale-only     :     6870.4
+  M1 cobb-douglas   :     6657.5   (ratio linear, NO hump)
+  M2 balance-HUMP   :     6079.6   (adds d^2)
+
+--- M2 coefficients (the hump test) ---
+  intercept        = +10.4806   se=0.0031   t=+3331.33
+  S (scale)        =  +1.0604   se=0.0029   t=+362.11
+  d (ratio)        =  +0.1637   se=0.0099   t=+16.55
+  d^2 (curvature)  =  +0.2741   se=0.0166   t=+16.47  <-- HUMP if <0 & |t|>2
+
+--- interpretation ---
+  interior balance optimum exists (d^2<0, |t|>2)? NO
+  optimum log-ratio d* = -0.299   (d*=0 => symmetric Phi=Nu)
+    => optimum L/K (normalized) = 0.74 : 1
+  balance-hump beats cobb-douglas out-of-sample? YES  (6080 vs 6657)
+
+--- PRE-REGISTERED KILL ---
+  ANTHROPIC (a real balance hump exists): FAIL
+  SYMMETRIC (optimum at Phi=Nu):           N/A (no hump to locate)

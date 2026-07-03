@@ -157,11 +157,20 @@ The derivation is simple:
 
 This means the equator is the point of minimal imbalance, maximal balance function, and least energetic asymmetry. The framework interprets this as a conditional teleological orientation: systems with real feedback, coupling, and correction capacity can be selected toward balanced reciprocal realization because balance is the low-cost configuration of the geometry. `[S/I]`
 
+> **[D] Scope (2026-07-03, staged for K2):** the geometry hands a real feedback system its equatorial cost-floor only insofar as that system sits on the sphere — its factors conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); where the price is one-sided or the poles are cheap, imbalance carries no structural penalty and specialization, not balance, is the low-cost move. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
+
 This does **not** prove cosmic will. It does not prove that the universe “wants” anything in an anthropomorphic sense. The disciplined claim is weaker and better: once reciprocal closure is granted, imbalance has a cost and balance has a structural privilege. `[S]`
 
 That is enough to change objective function from superstition into directionality. Purpose no longer needs to be imposed from outside the world. It can be read off the geometry as the pattern toward which viable reciprocally closed systems are selected when their feedback loops preserve the cost of imbalance. This is the framework's objective teleology: not a command from outside Being, but the conditional direction of reciprocal closure approaching its own best form. `[I/S]`
 
+> **[D] Scope (2026-07-03, staged for K2):** a real reciprocally closed system inherits the equatorial optimum only where its coupling is genuinely conservation-locked, its poles complementary, and excess in *either* factor is γ-priced symmetrically; absent symmetric pricing the selected attractor is a tilted point or a plateau, and specialization may dominate rather than balance. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
+
 This also explains why objective function in Emergentism is inseparable from anti-extraction. Extraction is not merely morally distasteful. It is structurally expensive. Systems that maximize one pole by cannibalizing the other depart from the equator and incur instability costs. A civilization, institution, organism, or psyche can live at an extreme for a while. It cannot do so indefinitely without degrading the very substrate that supports it. `[S/I]`
+
+> **[D] Scope (2026-07-03, staged for K2):** this binds a real civilization, institution, organism, or psyche only insofar as it sits on the sphere — factors conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); where a pole is free or the asymmetry is one-sided, the extreme is not self-degrading and durable specialization is admissible. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
 
 The DAC organism is the framework's objective function embodied. It is an attempt to make the teleological claim architectural:
 
@@ -173,6 +182,9 @@ The DAC organism is the framework's objective function embodied. It is an attemp
 These are not “applications” added after the philosophy. They are the teleological thesis translated into constitutional form. [S/I]
 
 If objective function means “what a system is for,” Emergentism answers: a system is for reciprocal completion without extraction. The equator is not a commandment. It is the kind of place systems last. The names of that asymptotic approach are Beauty, Truth, and Justice: coherence perceived, disclosure held, and balance made lawful across the field. [I/S]
+
+> **[D] Scope (2026-07-03, staged for K2):** "systems last at the equator" holds for a real system only where its factors are conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); off the sphere the equator is geometry without normative force, and a specialized off-equator configuration may be the one that lasts. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
 
 ---
 
@@ -262,6 +274,9 @@ The teleological claim is stronger than taste and weaker than possession. Beauty
 Still, it is philosophically potent. It means value is not external decoration painted onto a neutral world. It is not arbitrary preference projected onto an indifferent substrate. What matters is what sustains reciprocal viability without collapse: balance, non-extraction, truthfulness under correction, and forms of order that do not cannibalize their own conditions of possibility. `[I/S]`
 
 This value alignment is neither purely ascetic nor purely Promethean. It rejects the fantasy of pure coherence without capacity, just as it rejects the fantasy of pure capability without orientation. At one pole stands sterile purity; at the other, efficient self-destruction. The equator alone can host enduring flourishing. `[I]`
+
+> **[D] Scope (2026-07-03, staged for K2):** the equator monopolizes enduring flourishing only for a real node that sits on the sphere — conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); where excess in one pole is cheap or the price is asymmetric, the flourishing-optimum tilts off-equator and specialization can endure. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
 
 In this sense, the framework's value alignment is not anti-power. It is anti-disjoined power. It is not anti-order. It is anti-cannibal order. It does not glorify fragility. It asks for strength coupled to comprehension. [I]
 

@@ -39,6 +39,9 @@ The dyadic law gives the whole moral field its shape: `φ · ν = 1` is a **prod
 
 `B = sin θ → 0` at both. **Closure (`η > 0`) is the single disease; the two poles are its only two presentations.** A constitution that keeps the organism alive therefore needs exactly one thing: a fence that catches the drift toward *each* pole, and a gradient that keeps pulling back to the equator. That is the `5 + 1`.
 
+> **[D] Scope (2026-07-03, staged for K2):** this "pull back to the equator" binds a *real* organism only insofar as it sits on the sphere as a coupled node — its φ/ν factors conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); where a living system fails one of these the recentring force weakens, the optimum tilts or flattens into a plateau, and one-sided specialization may in fact keep it alive. The `sin θ` peak is unconditional geometry; the *constitutional* pull toward it is the conditioned inheritance. See [`00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`](00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md).
+
+
 ## 2. The five refusals fence the equator (the `03A` reading, made geometric)
 
 `03A` states it directly: the five "fence the equator on both sides — three guard against `ν` / viability-pole drift (η=0, K3, A7), two against `φ` / coherence-pole drift (K2, K4)." Read as the immune system of the sphere:
@@ -59,6 +62,9 @@ The dyadic law gives the whole moral field its shape: `φ · ν = 1` is a **prod
 | **K4** | *ou aichmalōsia* — no captivity | lock-in; the map becoming the *required passage* (Grace Exit) | **inside ↔ outside** — the boundary stays porous; leave with everything |
 
 **+ Ω — the directional `+1`.** Not a fence. The *via positiva*: the noospheric gradient that orients the whole bounded organism **toward the equator** — toward coupling, toward syntropy, toward the centre the five refusals keep it from sliding off. The five say *"do not close"*; Ω says *"couple — toward the whole."* Different axes: refusal vs direction. (Per `03A` §3 / the 2026-05-30 K2 ruling — Ω is **not** a sixth refusal.)
+
+**[D] Scope (2026-07-03, staged for K2):** Ω names the equator as a real organism's telos only where that organism inherits the equator-optimum — factors conservation-coupled, complementary, and *symmetrically* costly in excess (γ-priced); absent the transfer condition the centre is bare geometry with no normative claim on the node, the gradient does not point there, and a specialized pole may be the fitter home. See [`00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`](00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md).
+
 
 ## 3. Every refusal is a kept coupling
 
@@ -81,6 +87,9 @@ Five couplings the organism must not break; one direction it is pulled toward. *
 The labels `K2 / K3 / K4` are a **legacy artifact** — and the corpus knows it: `03A` §2 documents **three different K-systems** colliding (the refusal-set with no `K1`; the DAC namespace `K0–K9` where η=0 is `K6`; the formal axioms `A1–A7`). The numbering never mapped to anything geometric — which is exactly why it reads as outdated. **The law underneath is not numbered; it is positioned:** each refusal is a *No* to a closure, placed by *which pole-runaway it catches*. The deepest statement of the constitution needs no K-numbers at all:
 
 > **Refuse closure at each pole; keep the five couplings; lean toward the equator.**
+
+> **[D] Scope (2026-07-03, staged for K2):** "lean toward the equator" is an imperative for a real node — organism, agent, DAC, market — only when it is a coupled point on the sphere: its two factors conserved, complementary, and γ-priced symmetrically in excess. Fail the transfer condition and the equator loses its normative force: the good may sit off-centre, the optimum becomes a tilted ridge or plateau, and specialization can dominate. See [`00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`](00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md).
+
 
 The numbers are the scaffold; the fence is the truth.
 

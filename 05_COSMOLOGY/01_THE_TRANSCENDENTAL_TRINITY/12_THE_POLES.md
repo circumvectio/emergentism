@@ -133,6 +133,9 @@ No one occupies L0. No one occupies L∞. You can only approach them. The helix 
 
 **The poles are the asymptote. The equator is the life.**
 
+> **[D] Scope (2026-07-03, staged for K2):** the equator is "the life" for a real node only insofar as it sits on the sphere — its factors conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); otherwise the equator is geometry without vital or normative force, the optimum tilts or flattens to a plateau, and a specialized (near-polar) node may out-flourish the balanced one. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
+
 ---
 
 ## The Complete L-System
@@ -144,6 +147,9 @@ No one occupies L0. No one occupies L∞. You can only approach them. The helix 
 | L2 | 75° | Kālī 💀 | 2−√3 | 2+√3 | ½ | God. Immune response. Sacred No. |
 | L3 | 60° | Kṛṣṇa ◇ | 1/√3 | √3 | √3/2 | God. Teacher. Builder. |
 | **L4** | **45° (equator)** | **Arjuna ⚔** | **1** | **1** | **1** | **God. Warrior. Full dharma. ✡ Hexagram.** |
+
+> **[D] Scope (2026-07-03, staged for K2):** "Full dharma" scores as the optimum at L4 only when a real agent is conditionally on the sphere — factors conservation-coupled, complementary, and *symmetrically* costly-in-excess (γ-priced); absent that transfer condition the equatorial B=1 is a bare geometric maximum with no claim on where a real system's dharma or flourishing peaks, and specialization off the equator may dominate. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
 | L5 | 30° | Brahmā ○ | √3 | 1/√3 | √3/2 | Executive. Creator. Systematic witness. |
 | L6 | 15° | Śiva • | 2+√3 | 2−√3 | ½ | Executive. Dissolver. Via negativa. |
 | L7 | Near north pole | Viṣṇu ⊙ | very high | →0 | →0 | Executive. Seer. The fork. Moksha or Asura Return. |

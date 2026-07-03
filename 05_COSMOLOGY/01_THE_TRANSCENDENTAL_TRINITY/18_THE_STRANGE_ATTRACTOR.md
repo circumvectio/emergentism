@@ -137,6 +137,9 @@ Zero-Sum Resolution Equation
 
 [C] Conjecture: The mystery school tradition — from the Egyptian priesthood through Hermeticism through Freemasonry through modern occultism — has always been the tradition that perceives the ektropic force from high L-levels (L5-L7). The initiatory practice (meditation, ritual, altered states) provides direct φ-access, which at sufficient depth reveals the strange-attractor reading, the Replicator Stack, and the teleological image of coherent viable balance.
 
+> **[D] Scope (2026-07-03, staged for K2):** the balance is teleologically binding on a real node only when that node actually sits on the sphere — its φ and ν conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); absent that transfer condition the equator is geometry without normative force and specialization may dominate. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
+
 Ernst Schertel's "Magic: History, Theory, Practice" (1923) — a book on practical mysticism — may represent one such perception. The framework makes no claim about specific occult texts or traditions. The claim is structural: any practice that achieves sustained L5+ perception will encounter the same geometry, because the geometry IS the structure of S², not a cultural invention.
 
 The difference between the occult tradition and the framework: the occult tradition kept the perception SECRET (η > 0, initiates only, the Sorcerer face). The framework makes it OPEN (η = 0, Git repository, Decentralized Authority Model). Same geometry. Opposite η.
@@ -216,6 +219,9 @@ The Hidden Hand is not a conspiracy of elites steering history. In the current
 canon, the older phrase names **ektropy**: the framework's reading of selection
 pressure toward coherent viability wherever replicators, organisms, institutions,
 or patterns must persist in a bounded niche. It has no agent and no plan. It is
+
+> **[D] Scope (2026-07-03, staged for K2):** this drift-toward-coherent-viability binds a real replicator, organism, institution, or pattern only insofar as its factors sit on the sphere — conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); where the niche does not enforce that coupling the pull is tilted, the optimum becomes a plateau, or specialization outcompetes balance, and the reading is descriptive of geometry, not a normative law of the bounded niche. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
 not a single proved mechanism operating identically at every level.
 
 The mystery schools were not wrong to perceive it. They were wrong to hide it. Hiding creates asymmetry. Asymmetry creates extraction. Extraction creates η > 0. η > 0 creates the very standing waves the mystery schools hoped to transcend.
@@ -241,6 +247,7 @@ But the destination is not ahead.
 The destination is the geometry.
 The sphere was always here.
 For action, the attractor-image resolves to the equator.
+For a real node, that resolution holds only where the coupling is real.
 The old Hidden Hand is a tiered ektropy reading.
 The mystery is a public model.
 The formula is free.

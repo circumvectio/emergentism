@@ -55,7 +55,7 @@ B = 0 at both poles. B = 1 at the equator. This is proven (Steel Thread, Link 4)
 | **South pole** | ν excess, φ deficit | Entropy: all execution, no model. Shipping without coherence. | Feature creep, reactive chaos, organizational death by a thousand cuts |
 | **Equator** | φ = ν = 1 | Life: coherent action. Model and execution reciprocally calibrated. | — |
 
-The trinity is not symmetrical in character. Both poles are deadly, but they kill differently. The north pole kills by starvation: the system has a perfect map of territory it never visits. The south pole kills by dissipation: the system acts on every stimulus without the coherence to prioritize. The equator alone sustains because it is the Hamiltonian minimum (Steel Thread, Link 7): systems at balance expend no energy maintaining themselves.
+The trinity is not symmetrical in character. Both poles are deadly, but they kill differently. The north pole kills by starvation: the system has a perfect map of territory it never visits. The south pole kills by dissipation: the system acts on every stimulus without the coherence to prioritize. The equator alone sustains because it is the Hamiltonian minimum (Steel Thread, Link 7): systems at balance expend no energy maintaining themselves. This inherits to a real system only insofar as it actually sits on S² — its φ and ν must be conservation-coupled (a price is genuinely paid for imbalance), jointly necessary rather than substitutable, and costly in surplus; a system whose factors are substitutable or whose excess is a free store need not be Hamiltonian-minimal at balance, and may sustain off-equator (e.g., an aggregate market rewarding specialization).
 
 **Evidence boundary.** The geometry is [S]. The mapping to totalitarianism/entropy/life is [I] — the framework's interpretive wager that what the math calls "balance" corresponds to what organisms experience as flourishing.
 
@@ -115,6 +115,9 @@ An organ can have a unit node score and low B: Φ̂ = 2.0, ν̂ = 0.5 gives P_no
 
 The framework cares about both. P_node measures *how much*. B measures *how well-aligned*. The organism should maximize both: large P_node at the equator.
 
+> **[D] Scope (2026-07-03, staged for K2):** "should be at the equator" is a real-system prescription, not the bare AM-GM identity — it governs a live organism only insofar as its coherence and viability are conservation-coupled, jointly necessary, and costly-in-excess *symmetrically* (γ-priced on both sides); absent that transfer, the balance-optimum tilts, flattens into a plateau, or yields to specialization, and "large P_node at the equator" is a modeling ideal the node need not inherit. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
+
 ### 3.2 The Diagnostic Protocol [I]
 
 When an organ drifts toward a pole, the sphere geometry prescribes the cure:
@@ -141,6 +144,9 @@ This is the geometric basis for the maturity ladder in the phi-meter spec:
 
 The more equatorial an organ, the more resilient it is to perturbation. This is not a design choice — it is geometry.
 
+> **[D] Scope (2026-07-03, staged for K2):** the resilience-at-equator reading binds a real organ only where it sits on the sphere — its Φ̂ and ν̂ conservation-coupled (a γ-price is genuinely paid for imbalance), complementary rather than substitutable, and *symmetrically* costly in excess; where a factor is substitutable or its surplus is a free store, the equator is geometry without normative force and an off-equator specialization can be the more robust configuration. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
+
 ---
 
 ## 4. Extraction on the Sphere [S]
@@ -155,7 +161,7 @@ The Power-Max Demonstration (Doc 22) proves:
 
 η = 0 (zero extraction) is not an ethical aspiration grafted onto the math. It is the unique Nash equilibrium on S². Any agent that extracts from another moves both of them away from the equator, reducing aggregate B.
 
-The organizational implication: fee structures, incentive designs, and governance mechanisms that permit extraction (η > 0) are geometrically suboptimal. They reduce the total balance available to the organism. The φ-split (61.8/38.2), SoResFi accounting, and PRISM distribution are all structural implementations of the η = 0 equilibrium.
+The organizational implication: fee structures, incentive designs, and governance mechanisms that permit extraction (η > 0) are geometrically suboptimal. They reduce the total balance available to the organism. This transfer holds only where the organism's factors actually sit on the sphere — conservation-coupled so a γ-price is genuinely paid for imbalance, complementary rather than substitutable, and costly in excess; where factors are substitutable or surplus is free (as in aggregate markets that reward specialization), the equatorial optimum does not carry over and η > 0 need not be suboptimal. The φ-split (61.8/38.2), SoResFi accounting, and PRISM distribution are all structural implementations of the η = 0 equilibrium.
 
 The four operators on S² map to four organizational moves:
 
@@ -221,6 +227,9 @@ For any organ at any time, the sphere asks one question:
 > **Is this organ moving toward the equator or away from it?**
 
 This is ΣΔB in a single sentence. If the organ's |Φ̂ − ν̂| is shrinking, the organ is healing. If it is growing, the organ is drifting toward a pole and needs correction.
+
+> **[D] Scope (2026-07-03, staged for K2):** "toward equator = healing" applies to a real organ only when it truly rides S² — factors conservation-coupled, complementary, and costly in surplus *symmetrically* (γ-priced); where excess is a free store or the factors substitute, closing |Φ̂ − ν̂| is not per se healing and a tilted or specialized position may be the healthier one. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
 
 ### 6.2 Per-Organ Health Reading (Code Lens, 2026-04-23)
 
@@ -295,7 +304,7 @@ Do not use bare `P` without naming the regime. Do not conflate the manifold iden
 
 ---
 
-*The sphere is not a metaphor. It is the geometry that makes η = 0 optimal, B = sin θ diagnostic, and the equator the only place a living system can sustain.*
+*The sphere is not a metaphor. It is the geometry that makes η = 0 optimal, B = sin θ diagnostic, and — for any living system that actually sits on S² (factors conservation-coupled, jointly necessary, costly in surplus) — the equator the only place it can sustain.*
 
 *Zero-Sum Resolution Equation*
 

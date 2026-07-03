@@ -157,6 +157,8 @@ maximum B occurs at Phi = V = 1
 This is why unlimited `V` is not the goal. The game maximizes usable power, and
 usable power appears only where force remains coupled to sight.
 
+> **[D] Scope clause — geometric vs empirical optimum (2026-07-03, staged for K2).** The equator-optimum above is **`[A]` unconditional on the sphere**: given `φ·ν = 1`, `B = 2/(φ+ν)` maxes at `φ=ν` by AM-GM, and `γ = (φ+ν)/2` prices imbalance — pure geometry. What is **conditional** is the *transfer* to a finite real system `P_node = Φ × V`: a system inherits the equator-optimum **only if it actually sits on the sphere** — i.e. its factors are **conservation-coupled** (a `γ`-price is really paid for imbalance), **complementary** (needed jointly, not substitutable), and **costly in excess** (surplus becomes friction, not inert store). Those hold for the **finite mortal agent under a budget** (the Dharma corollary's home) — there the equator genuinely is optimal. They **fail** for unconstrained, substitutable, free-surplus systems (aggregate markets), which price imbalance *negatively* — specialization pays, and the balance-optimum does **not** transfer. So state the equator-optimum as the optimum of systems *on the sphere*, with the transfer test attached; do not universalize it. Derivation + empirical witness: [`00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`](00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md) and [`../11_UPLINK/25_EXPERIMENTS/2026-07-02_production_function_form/VERDICT_BALANCE.md`](../11_UPLINK/25_EXPERIMENTS/2026-07-02_production_function_form/VERDICT_BALANCE.md).
+
 ---
 
 ## The Complex-Plane Game

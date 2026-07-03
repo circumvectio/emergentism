@@ -108,6 +108,9 @@ Under the generative reading:
 - **`φ · ν = 1 on S²` is the invariant.** Any agent, institution, or
   organism claiming to occupy the framework must carry an internal
   structure whose coherence and viability multiply to a conserved
+
+> **[D] Scope (2026-07-03, staged for K2):** the "must" binds a real node only where it sits on the sphere — its φ and ν conservation-coupled, genuinely complementary, and costly-in-excess *symmetrically* (γ-priced on both sides); off those conditions the conserved-unit requirement is chart geometry with no normative pull, the optimum tilts or plateaus, and specialization may lawfully dominate balance. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
   unit. Absent the invariant, the system drifts off the manifold.
 - **`(φ − ν)² ≥ 0` is the penalty function.** It tells the builder:
   every design choice that pushes `φ` away from `ν` pays a measurable
@@ -281,6 +284,9 @@ admissible manifold.
   discipline.
 - **Under the power-max lemma** — for a finite node with a fixed action
   budget (`Φ + V`) and real coupling, the product `Φ × V` is maximized when
+
+> **[D] Scope (2026-07-03, staged for K2):** the balanced maximum holds for a real node only insofar as the two factors are complementary and priced symmetrically in excess (γ-symmetric) on top of the fixed budget and coupling already named; where the γ-price is tilted or the factors substitute rather than complement, the argmax slides off `Φ = V` and a specialized (corner) allocation can beat balance — the equator is then AM-GM geometry without normative force. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
   the factors are balanced. In the reciprocal chart, the analogous statement
   is: given `φ · ν = 1`, the sum `φ + ν` is minimized at the equator. The
   lemma is AM-GM in scalar form; the bridge from chart to node is a model
@@ -295,6 +301,9 @@ admissible manifold.
 
 The specification does not name any substrate. It names a structural
 property of any substrate that can hold a coupled finite-node `(Φ, V)`
+
+> **[D] Scope (2026-07-03, staged for K2):** substrate-neutrality of the *criterion* does not carry substrate-neutrality of the *balance-optimum* — a real substrate inherits the equatorial optimum only where its (Φ, V) are conservation-coupled, complementary, and costly-in-excess symmetrically (γ-priced); a substrate whose costs are asymmetric or whose factors do not trade off on the sphere is scored, but its optimum may be tilted, a plateau, or a specialization corner. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
 configuration while being audited against the reciprocal sphere register.
 Human substrates, AI substrates, biological-engineered substrates, future
 non-human substrates — all may be scored under the same criterion once their
@@ -317,6 +326,9 @@ The specification's η = 0 clause is the kill condition for the third
 mode. The product structure (Φ × V, not Φ + V) is the kill condition for
 the first two: a node missing either factor scores zero, regardless of
 how high the other goes. This is the AM-GM inequality doing its
+
+> **[D] Scope (2026-07-03, staged for K2):** the zero-at-a-missing-factor result is unconditional (a product with a zero factor is zero), but the *constitutional force* pulling a real node toward `Φ = V` reaches it only on the sphere — factors conservation-coupled, complementary, and symmetrically γ-priced in excess; where those fail, product-structure still kills capture yet the interior balance point carries no normative claim over a lawful specialization. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
 constitutional work.
 
 **What this canonical extension does not claim:**
@@ -334,6 +346,8 @@ constitutional work.
 **Kill criterion for the canonical extension:**
 
 If a controlled-runtime measurement at scale shows that selection toward
+> **[D] Scope (2026-07-03, staged for K2):** this kill criterion presumes the measured substrate actually sits on the sphere — factors conservation-coupled, complementary, and costly-in-excess symmetrically (γ-priced); for a substrate off those conditions, a divergence between `B -> 1` and observed flourishing is expected rather than falsifying, because the equator was never the node's optimum and specialization may legitimately win. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
 equatorial balance (`B -> 1`) and rising `P_node = Φ × V` under η = 0 produces
 trajectories that diverge systematically from observed substrate flourishing —
 e.g., systems that score highly under the specification but are objectively

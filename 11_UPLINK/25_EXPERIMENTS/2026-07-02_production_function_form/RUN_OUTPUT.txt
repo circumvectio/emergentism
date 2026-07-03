@@ -1,0 +1,25 @@
+========================================================================
+PRODUCTION-FUNCTION FORM TEST  (agency register: output = labor x capital)
+========================================================================
+data: Munnell US-states panel  n=816  (48 states x 17 yrs, 1970-1986)
+Y=gsp  L=emp  K=pc+pcap  | 10-fold CV RMSE on output Y (lower = better)
+
+        6445.1   E CES(best rho=-0.9, d=0.6)
+        6721.2   A additive(levels)
+        6798.6   B cobb-douglas(free)
+        9141.7   D leontief(min)
+      580798.6   C product-unit(phi x nu)
+
+--- Cobb-Douglas elasticities (full sample) ---
+  labor a = 0.611   capital b = 0.442   a+b = 1.054
+  symmetric (a==b)?  |a-b| = 0.169
+  constant returns (a+b==1)?  a+b-1 = +0.054
+
+--- CES substitution family ---
+  best CES rho = -0.9   (rho~0 => Cobb-Douglas; rho->inf => Leontief/min; rho=-1 => additive)
+
+--- PRE-REGISTERED KILL-CRITERIA ---
+  K1 multiplicative beats additive:        FAIL  (CD 6799 vs ADD 6721)
+  K2 SYMMETRIC balance-product (a~b, a+b~1): FAIL  (a=0.61, b=0.44)
+  K2b product-unit ~ general CD:           FAIL  (prod 580799 vs CD 6799)
+  K3 CES rho ~ 0 (Cobb-Douglas family):    FAIL  (rho=-0.9)

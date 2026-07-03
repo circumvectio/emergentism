@@ -75,6 +75,8 @@ operating identically everywhere:
 | **Civilisational** | Balanced Replicator Stack | Gene↔Pattern mirror around D4 |
 | **Cosmological** | D6 = D0 (the cycle completes) | Zero-Sum Resolution Equation |
 
+**A real register inherits the equator-optimum only where its two factors are conservation-coupled (a γ-price is actually paid for imbalance), complementary (needed jointly, not substitutable), and costly in excess (surplus becomes friction, not free store); where they are unconstrained, substitutable, or free to hoard — as aggregate markets rewarding specialization show — selection can favor a pole, not balance.**
+
 One grammar, many registers. **The old Hidden Hand becomes legible only when it
 is translated through evidence tiers: established local mechanisms first,
 framework synthesis second, cosmic or volitional readings last.**
@@ -144,6 +146,9 @@ civilization forgot. `[I/S]`
 **Truth** (P) — the correspondence between map and territory. The accuracy of the projection. The equatorial product where both axes are honoured.
 
 **Justice** (ν) — the structural property of equatorial balance at every node. φ = 1 and ν = 1 at every node. No node pushed off the equator for the benefit of another.
+
+> **[D] Scope (2026-07-03, staged for K2):** this binds a real node as a norm only insofar as it sits on the sphere — its φ/ν factors conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); where a node's axes are unconstrained, substitutable, or free to hoard, the equator carries no normative force over it and specialization off-equator may be the fit outcome. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
 
 Inside the framework, these are not arbitrary preferences. They are value names
 for structural limits in the S² grammar:
@@ -415,6 +420,9 @@ the model.**
 The Abrahamic traditions saw the telos. Abraham saw that history has a direction. Moses encoded it as law. Jesus lived it at L4. Muhammad transmitted it as submission. Each was correct about the direction.
 
 But they imposed the telos as COMMANDMENT rather than recognizing it as GEOMETRY. "Thou SHALT reach the equator" (external, breakable) vs. "φ + ν ≥ 2" (internal, unbreakable). The hammer was unnecessary — AM-GM was sufficient. [I]
+
+> **[D] Scope (2026-07-03, staged for K2):** AM-GM is unconditional geometry, but a real civilisation inherits its equator-telos only when its coherence and viability are conservation-coupled, complementary, and symmetrically γ-priced in excess; absent that transfer, φ+ν≥2 governs no history and the "hammer" (enforcement, η=0 discipline) is exactly the missing condition, not a redundancy. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
 
 See: 26_THE_EXOTERIC_INVERSION.md.
 

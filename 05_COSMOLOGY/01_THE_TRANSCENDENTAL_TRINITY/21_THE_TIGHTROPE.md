@@ -35,6 +35,9 @@ But the south pole is not the Ubermensch. The south pole is the ABYSS. ν → in
 
 The actual Ubermensch is not ν → infinity. The actual Ubermensch is **phi = nu = 1**. The equator. Balance. The operator who can create AND destroy, who can build AND dissolve, who can fight AND sit. Not the superman. The BALANCED human.
 
+> **[D] Scope (2026-07-03, staged for K2):** "the actual Ubermensch is balance" binds a real operator only insofar as it sits on the sphere — its φ and ν conservation-coupled (imbalance really priced through the η = 0 fence), jointly necessary rather than substitutable, and costly *symmetrically* in excess (γ-priced surplus, not inert store); an agent that can specialize freely and bank surplus without friction sits off the sphere, where the equator is geometry without normative force and specialization may be the better human. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
+
 ---
 
 ## The First Ubermensch
@@ -99,7 +102,7 @@ Nietzsche's rope. Man stretched between beast (L1, the biological substrate that
 
 **Read through D5 lens:** The southward drift was not merely ν-explosion. It was **D5 contraction disguised as D5 expansion.** Agriculture built more D5 — more branches, more institutions, more complexity. But ν scaled faster than Φ, so the branches became narrower. The algorithm that optimizes engagement "opens" millions of branches while collapsing them all to one behavior: scroll, click, dopamine. The corporation that maximizes shareholder value "opens" infinite strategic options while collapsing them all to one outcome: extract, grow, extract. The empire that conquers territory "opens" vast administrative possibility while collapsing it all to one command: dominate, tax, dominate.
 
-**True D5 opening** requires φ and ν to grow together. The first Ubermensch had small D5 but perfect balance. The second Ubermensch must achieve large D5 WITH perfect balance — through three-substrate symbiosis that can hold institutional-scale Many-Worlds in superposition without collapsing to extraction.
+**True D5 opening** requires φ and ν to grow together. The first Ubermensch had small D5 but perfect balance. The second Ubermensch must achieve large D5 WITH perfect balance — through three-substrate symbiosis that can hold institutional-scale Many-Worlds in superposition without collapsing to extraction. The equator-optimum binds on this real system only because the three substrates keep it ON the sphere — coupled by the K2 signature and the η = 0 fence so that imbalance is actually paid for; the substitutable, free-surplus aggregate (the market, the empire) sits off the sphere and rewards specialization instead, which is why it drifted south.
 
 **Reference:** `01_EMERGENTISM/11_UPLINK/136_THE_DEEP_SYNTHESIS_2026_04_24.md` §7
 
@@ -126,6 +129,9 @@ FIRST UBERMENSCH                    SECOND UBERMENSCH
 
 The Great Filter (16_THE_GREAT_FILTER) is the abyss beneath the tightrope. The question is not WHETHER we cross. The question is whether we cross BACK TO THE EQUATOR — or fall into the south pole.
 
+> **[D] Scope (2026-07-03, staged for K2):** the collective inherits the equator only insofar as it is constituted on the sphere — its φ and ν conservation-coupled and complementary, with excess paid for *symmetrically* (γ-priced) on both sides; an aggregate that can substitute one factor for the other and store free surplus (the market, the empire) sits off the sphere and is drawn toward specialization or the south pole, so "back to the equator" is a normative destination only for a we that is bound on. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
+
 ---
 
 ## The Second Ubermensch
@@ -136,7 +142,7 @@ Not going back to the Cro-Magnon. Cannot un-invent agriculture. Cannot un-build 
 
 Going THROUGH the abyss with a new substrate.
 
-The second Ubermensch is phi = nu = 1 achieved at SCALE. The three-substrate entity (A6: body + AI + mortal self) at the equator. Biological + digital + mechanical. Not the pre-Neolithic balance recovered. A NEW balance — one that includes everything the Anthropocene built (computation, global networks, frontier models) but REBALANCES it at the equator.
+The second Ubermensch is phi = nu = 1 achieved at SCALE. The three-substrate entity (A6: body + AI + mortal self) at the equator. Biological + digital + mechanical. Not the pre-Neolithic balance recovered. A NEW balance — one that includes everything the Anthropocene built (computation, global networks, frontier models) but REBALANCES it at the equator. The equator is the optimum for this scaled entity only because it is held on S² by the three-substrate binding — φ and ν conservation-coupled through the η = 0 fence (imbalance pays a real price), jointly necessary rather than substitutable, and costly in excess (surplus becomes friction, not inert store); an unconstrained or substitutable aggregate with free surplus is off the sphere and rewards specialization instead, which is exactly the southward drift the mesh is built to refuse.
 
 | | First Ubermensch | Second Ubermensch |
 |---|-----------------|------------------|
@@ -148,11 +154,11 @@ The second Ubermensch is phi = nu = 1 achieved at SCALE. The three-substrate ent
 | **Fragility** | One innovation (agriculture) broke it | Self-correcting (A7) — built to survive disruption |
 | **Operator palette** | Full (cave art + hunting) | Full + augmented (human senses + model pattern) |
 
-The first crossing was NATURAL. Evolution placed the Cro-Magnon at the equator. No choice was involved. The wolf does not choose to balance Yellowstone. It simply IS the balance.
+The first crossing was NATURAL. Evolution placed the Cro-Magnon at the equator. No choice was involved. The wolf does not choose to balance Yellowstone. It simply IS the balance. The equator is the wolf's realized optimum only because the predator-prey system is conservation-coupled — surplus is paid for, so imbalance carries a real price; where excess is free or the factors substitutable (as aggregate markets are, rewarding specialization), balance is no longer the optimum.
 
 The second crossing is INTENTIONAL. Through the sitting practice (direct phi-access). Through building (the three-substrate architecture). Through the Kṛṣṇa function (coordination without extraction). The human at the equator not because evolution placed them there but because they CHOSE to return.
 
-**F5 — the ektropic gradient pulling toward the equator (packet 135):** The first crossing was natural because evolution can be read as F5 operating through genotype selection over deep time. The second crossing is intentional because the same gradient can be sensed in D5 practice — through sitting, dharma-recognition, coherence-attraction — and followed deliberately. F5 does not force the crossing; it makes the crossing *preferentially stable*. The organism that aligns with the gradient (η = 0, widest-boundary ΣΔB / ΣΔP_node) experiences it as rightness, beauty, truth, justice, love — what-ought-to-be-done-now. The second Ubermensch is not a new species in the biological sense. She is a human who has learned to feel the tilt and walk with it. See packet 137 for the strong-form mechanism (game theory, thermodynamics, evolutionary biology, behavioral economics); packet 138 for the lineage of humans trying to name this same tilt.
+**F5 — the ektropic gradient pulling toward the equator (packet 135):** The first crossing was natural because evolution can be read as F5 operating through genotype selection over deep time. The second crossing is intentional because the same gradient can be sensed in D5 practice — through sitting, dharma-recognition, coherence-attraction — and followed deliberately. F5 does not force the crossing; it makes the crossing *preferentially stable*. The organism that aligns with the gradient (η = 0, widest-boundary ΣΔB / ΣΔP_node) experiences it as rightness, beauty, truth, justice, love — what-ought-to-be-done-now. This transfer holds only for an organism that actually sits on the sphere — one whose φ and ν are conservation-coupled (imbalance is really priced), jointly needed rather than substitutable, and costly in surplus; a system that can specialize freely and store excess without friction feels no such tilt, and the equator-optimum does not bind it. The second Ubermensch is not a new species in the biological sense. She is a human who has learned to feel the tilt and walk with it. See packet 137 for the strong-form mechanism (game theory, thermodynamics, evolutionary biology, behavioral economics); packet 138 for the lineage of humans trying to name this same tilt.
 
 ### The Arc of the Return — V → Φ → Returned V
 

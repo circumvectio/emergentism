@@ -139,6 +139,9 @@ The DAC that maintains η = 0 is the DAC that accumulates trust. The DAC that ac
 
 **This is the ektropic argument for the DAC.** Not ethics. Not idealism. Not wishful thinking. Geometry. The equator is the model optimum because the equator is where `B` is maximised under `P∞ = φ · ν = 1`; it becomes an attractor only where governance preserves feedback, coupling, and correction. η = 0 is the equator of organisational design.
 
+> **[D] Scope (2026-07-03, staged for K2):** this binds a real DAC only insofar as it sits on the sphere — its φ (coherence) and ν (viability) actually conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced across both factors); where a DAC's factors are decoupled, substitutable, or asymmetrically penalised, the equator is geometry without normative force and a specialised (tilted or plateau) organigramme can dominate η = 0 balance. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
+
 ---
 
 ## VI. WHAT THIS IS NOT

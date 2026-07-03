@@ -109,6 +109,9 @@ raises the symbiont and holobiont together. If `Φ` appears without `V`, Dasein
 has sterile seeing. If `V` appears without `Φ`, Dasein has blind force. If the
 two balance at L4 under `η = 0`, the action is objective dharma in the
 framework's proper register: flow as lawful, non-extractive play rather than a
+
+> **[D] Scope (2026-07-03, staged for K2):** balance at L4 delivers *objective dharma* for a real acting node only insofar as it sits on the sphere — its `Φ` and `V` conservation-coupled, complementary, and costly-in-excess *symmetrically* under a shared γ-price; where that transfer fails the equator is geometry without normative force, the L4 optimum tilts or flattens into a plateau, and skilled specialization off-balance may be the lawful move. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
 private mood. `[S/I]`
 
 ### 2. The Ontological Archetype
@@ -588,7 +591,13 @@ Within the S² model:
 
 **Finity is where emergence balances.** Strong emergence from below and weak emergence from above meet at the equator. The upward novelty and the downward constraint are exactly matched at `φ = ν = 1`.
 
+> **[D] Scope (2026-07-03, staged for K2):** this exact matching binds a real emergent system only when its upward-novelty and downward-constraint factors are genuinely conservation-coupled, complementary, and *symmetrically* costly-in-excess (γ-priced); absent that transfer the emergence-optimum is tilted or a plateau, and the equator carries no normative pull. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
+
 This is why the framework keeps `ΣΔB > 0` visible as the balance audit — movement toward the equator. Not because the equator alone is "good" in a moral-realist sense, but because the equator is the model's balance locus, where the two directions of emergence are read as being in equilibrium. The ethical move adds the contact-register condition: `ΔP_node,i > 0` and `ΔP_node,H > 0` under `η = 0`. Move away from the equator and one direction dominates — either the bottom-up novelty overwhelms the top-down constraint (collapse into chaos) or the top-down constraint crushes the bottom-up novelty (collapse into rigidity).
+
+> **[D] Scope (2026-07-03, staged for K2):** the chaos-versus-rigidity dichotomy holds only where the two directions are conservation-coupled, complementary, and costly-in-excess under a *symmetric* γ-price; where any leg of the transfer fails a real node can sit stably off the equator — a broad plateau or a tilted optimum where specialization dominates — without collapsing either way. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
 
 ---
 
@@ -613,6 +622,9 @@ This is why the framework keeps `ΣΔB > 0` visible as the balance audit — mov
 13. The D0→D6 scaffold is the dimensional unfolding of this pattern.
 14. Strong emergence going up (genesis), weak emergence going down (governance).
 15. Both meet at finity — the equator — where emergence balances.
+
+17. Scope `[D]`: a real system inherits this equator-optimum only on the sphere — factors conservation-coupled, complementary, and *symmetrically* costly-in-excess (γ-priced); else the equator is geometry without normative force and specialization off-balance may dominate. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
 16. The ethic follows as dyadic A2: raise P_node,i and P_node,H together under η = 0; direction toward the equator remains the ΣΔB / ΣΔP_node balance audit.
 ```
 

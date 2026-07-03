@@ -66,6 +66,9 @@ Map the mixed-sign **game** to **D4** — the causal surface, where a give or a 
 
 The invariant is the operator column, **and only the operator column** — the seven generated positions. Every other column is that seven-fold position *projected onto a substrate* (Plato's regimes, Piaget's stages, the chakras, the church modes, gradient descent). *"Seven operators, fifteen projections; the rows hold because the sphere holds."* What varies down the ladder is **balance `B = sin θ`**, peaking at the equator `L4` (`φ = ν = 1`); the potential `P∞ = φ·ν = 1` is conserved, not what changes. The mirror `L1↔L7 · L2↔L6 · L3↔L5` around `L4` is geometric necessity — `L4` is the only latitude equal to its own inversion (its cleanest internal witness: the music column lands `L4` on **Dorian**, the one church mode that is its own retrograde).
 
+> **[D] Scope (2026-07-03, staged for K2):** the equator-peak `B = sin θ` at `L4` is bare-sphere geometry ([A] unconditional AM-GM); a *real* substrate in this projection column (Plato's regimes, Piaget's stages, gradient descent, any finite system) inherits the L4-peak only insofar as it sits on the sphere — its `φ`/`ν` factors conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); else the optimum tilts, flattens to a plateau, or specialization dominates, and the equator is geometry without normative force. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+
+
 And the *Recursive Trivium is already in the table*: the reasoning rows `L2` Inductive (Śūdra), `L3` Deductive (Vaiśya), `L4` Abductive (Kṣatriya) **are** the Trivium's three movements — and the Master Rosetta is candid that its *own genesis* was an abductive leap (*"the equation was inferred from this table"*), the Kṣatriya's own pramāṇa.
 
 **Why this can be trusted without being crowned** — the table's own honesty:
