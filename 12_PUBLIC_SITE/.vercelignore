@@ -14,6 +14,10 @@ __pycache__/
 *.sh
 *.md
 
+# Amrita route: dev-only tooling/tests, not part of the shipped page.
+amrita/tools/
+amrita/runaway.test.mjs
+
 # Local runtime state if present in the deploy checkout.
 .env
 .env.*
