@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="amrita.css">
 </head>
 <body class="amrita-page">
+<h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0">The Amrita</h1>
 <header class="topbar">
   <a class="brand" href="../">Emergentism</a>
   <nav class="number-nav" aria-label="Public doctrine routes">
@@ -49,10 +50,10 @@
   <section id="ladder" class="screen ladder">
     <h2>The honest ladder</h2>
     <div class="filters" role="group" aria-label="Filter by tier">
-      <button data-filter="all" class="active">All</button>
-      <button data-filter="[A]">[A] proven</button>
-      <button data-filter="[S]">[S] structural</button>
-      <button data-filter="halahala">What we cut</button>
+      <button data-filter="all" class="active" aria-pressed="true">All</button>
+      <button data-filter="[A]" aria-pressed="false">[A] proven</button>
+      <button data-filter="[S]" aria-pressed="false">[S] structural</button>
+      <button data-filter="halahala" aria-pressed="false">What we cut</button>
     </div>
     <div class="columns">
       <div><h3>Amrita &mdash; the nectar</h3><ul id="nectar-list"></ul></div>
@@ -102,14 +103,15 @@ fetch("amrita.json").then(r => r.json()).then(drops => {
 
   // tier filter
   document.querySelectorAll(".filters button").forEach(b => b.addEventListener("click", () => {
-    document.querySelectorAll(".filters button").forEach(x => x.classList.remove("active"));
+    document.querySelectorAll(".filters button").forEach(x => { x.classList.remove("active"); x.setAttribute("aria-pressed", "false"); });
     b.classList.add("active");
+    b.setAttribute("aria-pressed", "true");
     const f = b.dataset.filter;
     document.querySelectorAll(".drop").forEach(el => {
       el.style.display = (f === "all" || el.dataset.tier === f) ? "" : "none";
     });
   }));
-});
+}).catch(e => console.error("ladder load failed", e));
 </script>
 </body>
 </html>
