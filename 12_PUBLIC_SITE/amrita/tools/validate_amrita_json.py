@@ -26,6 +26,15 @@ def main() -> int:
         src = os.path.join(ROOT, d["source"].lstrip("/"))
         if not os.path.exists(src):
             print(f"FAIL: source not found for {d['id']}: {d['source']}"); return 1
+        # Receipts contract: every drop either links a real rendered route or is
+        # explicitly declared unpublished — a decoy link is worse than no link.
+        has_route, is_unpub = bool(d.get("route")), d.get("unpublished") is True
+        if has_route == is_unpub:
+            print(f"FAIL: {d['id']} must have exactly one of 'route' or 'unpublished:true'"); return 1
+        if has_route:
+            page = os.path.join(HERE, "..", d["route"].strip("/"), "index.html")
+            if not os.path.isfile(page):
+                print(f"FAIL: route for {d['id']} has no rendered page: {d['route']}"); return 1
         n_nectar += d["group"] == "nectar"; n_poison += d["group"] == "halahala"
     print(f"OK: {len(data)} drops ({n_nectar} nectar, {n_poison} halahala), all sources exist")
     return 0

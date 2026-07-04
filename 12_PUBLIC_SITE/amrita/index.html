@@ -12,7 +12,7 @@
 <body class="amrita-page">
 <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0">The Amrita</h1>
 <header class="topbar">
-  <a class="brand" href="../">Emergentism</a>
+  <a class="brand" href="../home/">Emergentism</a>
   <nav class="number-nav" aria-label="Public doctrine routes">
     <a href="../0/">0</a><a href="../1/">1</a><a href="../2/">2</a><a href="../3/">3</a>
     <a href="../4/">4</a><a href="../5/">5</a><a href="../6/">6</a>
@@ -95,7 +95,9 @@ fetch("amrita.json").then(r => r.json()).then(drops => {
     el.dataset.tier = d.tier;
     el.innerHTML = `<span class="tier ${tierClass(d.tier)}">${d.tier === "halahala" ? "cut" : d.tier}</span>`
       + `<strong>${d.title}</strong><p>${d.body}</p>`
-      + `<a class="src" href="../read/" title="${d.source}">source &rarr;</a>`;
+      + (d.route
+          ? `<a class="src" href="../${d.route}/" title="${d.source}">source &rarr;</a>`
+          : `<span class="src unpub" title="${d.source}">source: in the corpus &mdash; not yet published</span>`);
     return el;
   };
   const nl = document.getElementById("nectar-list"), hl = document.getElementById("halahala-list");

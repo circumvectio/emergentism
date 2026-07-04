@@ -61,7 +61,7 @@
 <strong>Date:</strong> 2026-04-22
 <strong>Evidence Tier:</strong> [C] Conjecture for every measurement protocol in this document; [S] Structural only for the coordinate identities pointed at
 <strong>Source:</strong> <a href="../29-primitives-and-type-signatures/"><code>29_PRIMITIVES_AND_TYPE_SIGNATURES.md</code></a>, <a href="../26-the-derivation-axioms/"><code>26_THE_DERIVATION_AXIOMS.md</code></a>, <a href="../12-efr-extraction-coefficient/"><code>12_EFR_EXTRACTION_COEFFICIENT.md</code></a>, <a href="../33-nash-equilibrium-eta-zero/"><code>33_NASH_EQUILIBRIUM_ETA_ZERO.md</code></a>
-<strong>See also:</strong> <a href="../31-falsifiers-index/"><code>31_FALSIFIERS_INDEX.md</code></a>, <a href="../32-theorem-upgrade-protocol/"><code>32_THEOREM_UPGRADE_PROTOCOL.md</code></a>, <a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md">Paper L (Phi-meter zero-cost validation)</a></p>
+<strong>See also:</strong> <a href="../31-falsifiers-index/"><code>31_FALSIFIERS_INDEX.md</code></a>, <a href="../32-theorem-upgrade-protocol/"><code>32_THEOREM_UPGRADE_PROTOCOL.md</code></a>, <span class="canon-src" title="in the corpus &mdash; not yet published online">Paper L (Phi-meter zero-cost validation)</span></p>
 <hr>
 <h2 id="why-this-file-exists">Why This File Exists</h2>
 <p>The coordinate identity <code>φ · ν = 1 on S²</code> is true by construction — it falls out of <code>φ = cot(θ/2), ν = tan(θ/2)</code>. That is not a claim about the world. It becomes a claim about the world only when <code>φ</code> and <code>ν</code> are defined <em>independently</em> — by a measurement procedure — and the resulting <code>φ̂, ν̂</code> are then checked against the constraint.</p>
@@ -131,15 +131,15 @@
 </ul>
 <hr>
 <h2 id="3-b-meter-balance-measurement">3. B-Meter (Balance Measurement)</h2>
-<p><strong>Geometric definition.</strong> <code>B = sin θ ∈ [0, 1]</code>. On-manifold identity: <code>B = 2 · φν / (φ² + ν²)</code> when using the <code>(φ, ν)</code> chart. When <code>φ · ν = 1</code> holds, <code>B = 2ν / (1 + ν²) = 2φ / (1 + φ²)</code>.</p>
+<p><strong>Geometric definition.</strong> <code>B = sin θ ∈ [0, 1]</code>. On the reciprocal chart where <code>φ · ν = 1</code>, the identity is <code>B = 2 / (φ + ν)</code>. Equivalently, using either one-coordinate form, <code>B = 2ν / (1 + ν²) = 2φ / (1 + φ²)</code>.</p>
 <h3 id="derived-protocol-from">Derived Protocol — From <code>φ̂, ν̂</code></h3>
 <p>Once <code>Φ̂</code> and <code>ν̂</code> are fixed (§1, §2), define:</p>
 <pre><code>B̂(system) := 2 · ν̂ / (1 + ν̂²)           (the on-manifold form, assuming φν = 1)
 </code></pre>
 <p>Or, without assuming the identity:</p>
-<pre><code>B̂_free(system) := 2 · Φ̂ · ν̂ / (Φ̂² + ν̂²)
+<pre><code>B̂_free(system) := 2 · sqrt(Φ̂ · ν̂) / (Φ̂ + ν̂)
 </code></pre>
-<p>The gap <code>|B̂_free − B̂|</code> is itself a diagnostic: it measures how far the system's measured pair deviates from the manifold identity.</p>
+<p><code>B̂_free</code> is a symmetric balance proxy for independently measured coordinates; it is not a manifold-deviation test. The direct reciprocity diagnostic is <code>|Φ̂ · ν̂ − 1|</code>, which measures how far the measured pair deviates from the reciprocal manifold.</p>
 <ul>
 <li><strong>Unit.</strong> Dimensionless, <code>∈ [0, 1]</code>.</li>
 <li><strong>Error bound.</strong> Propagated from <code>σ(Φ̂)</code> and <code>σ(ν̂)</code> via standard delta-method.</li>

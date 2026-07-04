@@ -101,7 +101,7 @@
     "status": "public",
     "evidenceTier": "[S]/[A]/[I]/[C]",
     "canonicalSources": [
-      "02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/10_ADAPTIVE_PWA_RAG_BLUEPRINT/07_D17_PWA_SHELL/deploy/THE_RECIPROCAL_PUBLIC_EDITION.md"
+      "[internal lane — withheld]"
     ],
     "publicClaimBoundary": "The load-bearing public statement of finity, integrated (2026-06-06) with the 5+1 constitution, the Dasein argument, the log realignment, and the five forces. Six dated K3-style updates preserve the original finity argument; the new doctrine is layered on top via dated update banners, no silent overwrite. Other chapters of the 12,571-line book are not yet integrated; Ch. 6 was the doctrinal core.",
     "nextAction": "Ch. 6 is integrated. Other chapters of the book may need the same 5+1 / log realignment / forces integration; this is a follow-up sprint."
@@ -208,7 +208,7 @@
     "canonicalSources": [
       "01_EMERGENTISM/12_PUBLIC_SITE/book-pwa/AGENTS.md",
       "01_EMERGENTISM/12_PUBLIC_SITE/00_K2_ENVELOPE_APP_MIGRATION_2026_05_31.md",
-      "02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/10_ADAPTIVE_PWA_RAG_BLUEPRINT/00_THE_INFINITE_BOOK.md"
+      "[internal lane — withheld]"
     ],
     "publicClaimBoundary": "book-pwa is source-preserved and frozen pending AIA migration; do not add public-site product features here.",
     "nextAction": "Keep migration boundary visible; route product work to the AIA lane."

@@ -26,6 +26,7 @@
 .drop strong { display:block; margin:.25rem 0; }
 .drop p { color:#bbb; margin:.25rem 0; }
 .drop .src { font-size:.8rem; color:#8899ff; text-decoration:none; }
+.drop .src.unpub { color:#667; cursor:default; }
 .deeper .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(14rem,1fr)); gap:1rem; }
 .deeper .cards a { display:block; padding:1.25rem; border:1px solid #222; border-radius:.4rem; color:#ddd; text-decoration:none; }
 .deeper .cards a:hover { border-color:#8899ff; }

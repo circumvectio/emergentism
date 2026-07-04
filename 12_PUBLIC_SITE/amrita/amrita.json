@@ -1,258 +1,290 @@
 [
-  {
-    "id": "n01",
-    "group": "nectar",
-    "tier": "[A]",
-    "title": "Conjugacy — the ring that closes",
-    "body": "For phi,nu > 0 with phi*nu = 1, driving one factor to 0 forces its complement to infinity. The law is a product, not a sum: a vanishing factor annihilates the whole. The engine under the titans, the game-moves, and the ethics.",
-    "source": "05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md"
-  },
-  {
-    "id": "n02",
-    "group": "nectar",
-    "tier": "[A]",
-    "title": "The self-dual unit",
-    "body": "1 is the unique fixed point of inversion x -> 1/x, which is, under log, the reflection s -> -s. It is simultaneously the multiplicative unit, the additive origin (log 1 = 0), and the projective hinge. Three charts, one point. This is the mathematical heart of the middle.",
-    "source": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md"
-  },
-  {
-    "id": "n03",
-    "group": "nectar",
-    "tier": "[A]",
-    "title": "The titans {0, 1, infinity}",
-    "body": "The unique minimal generative frame on the Riemann sphere up to Mobius: {0,infinity} closed under z -> 1/z yields 1; any fourth point is cross-ratio-determined, so the frame cannot be extended. They define the operations; they are not operands.",
-    "source": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md"
-  },
-  {
-    "id": "n04",
-    "group": "nectar",
-    "tier": "[A]",
-    "title": "The equator, derived not chosen",
-    "body": "By AM-GM, phi + nu >= 2 with equality iff phi = nu = 1; B = sin(theta) = 2/(phi+nu) maxes there, and the imbalance-price gamma = (phi+nu)/2 rises monotonically toward the poles. Unconditional sphere geometry. This is the one piece of the whole balance story that survived every falsification untouched, because it is pure arithmetic.",
-    "source": "05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md"
-  },
-  {
-    "id": "n05",
-    "group": "nectar",
-    "tier": "[A]",
-    "title": "One degree of freedom",
-    "body": "phi*nu = 1 collapses two variables to a single coordinate theta: (phi-nu)^2 = (phi+nu)^2 - 4, phi+nu = 2/sin(theta). The manifold is earned, not assumed.",
-    "source": "01_TELEOLOGY/02_THE_DERIVATION/00_THE_CORE_CONJECTURE.md"
-  },
-  {
-    "id": "n06",
-    "group": "nectar",
-    "tier": "[A]",
-    "title": "The log realignment",
-    "body": "Under s = log(nu): log(phi) + log(nu) = 0 (the literal zero-sum), B = sech(s), E = s^2, H = 2cosh(s). Reciprocation becomes reflection; the multiplicative structure becomes elementary. The additive and multiplicative faces of number are coupled by log/exp, keystoned by log 1 = 0.",
-    "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/40_THE_LOGARITHMIC_REALIGNMENT.md"
-  },
-  {
-    "id": "n07",
-    "group": "nectar",
-    "tier": "[A]",
-    "title": "The mass-shell",
-    "body": "Under phi = e^w, nu = e^(-w) (rapidity), phi*nu = 1 is E^2 - (pc)^2 = (mc^2)^2. The equator is the rest frame E = mc^2, the dyadic runaway is the relativistic divergence toward the light cone. Verified numerically.",
-    "source": "08_FRAMEWORK_SUPPORT/00_KNOWN_UNKNOWNS_RESOLVED.md"
-  },
-  {
-    "id": "n08",
-    "group": "nectar",
-    "tier": "[A]",
-    "title": "The operators are the Mobius classes",
-    "body": "The five VIVEKA operators map onto the conjugacy classes of PSL(2,C): elliptic (Vishnu), hyperbolic plus/minus (Brahma/Shiva, one flow two directions), loxodromic (Krishna), parabolic (Kali). The four-class trace partition is a genuine theorem; the naming is interpretive.",
-    "source": "08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/MF_63_Mobius_Operators.md"
-  },
-  {
-    "id": "n09",
-    "group": "nectar",
-    "tier": "[A]",
-    "title": "Division localized, not eliminated",
-    "body": "N/0 = infinity for nonzero N (projective); 0/0 and infinity/infinity stay genuinely indeterminate (the apophatic edge); 1/1 is frame-forbidden yet equals 1. The undefined is conserved, honestly bounded; the sphere does not make all undefined operations well-defined.",
-    "source": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md"
-  },
-  {
-    "id": "n10",
-    "group": "nectar",
-    "tier": "[A]",
-    "title": "An honest negative result",
-    "body": "Bare S^2 cannot produce SU(3): scalar-Laplacian degeneracies are 1,3,5,7,...; none is 8. The framework states where its own geometry stops. This is nectar because it is a limit the framework imposed on itself.",
-    "source": "03_METHODOLOGY/02_THE_PAPERS/PAPER_P_SU3_OBSTRUCTION_BARE_S2.md"
-  },
-  {
-    "id": "n11",
-    "group": "nectar",
-    "tier": "[S]",
-    "title": "The 4 + 3 exhaustion",
-    "body": "Exhausting {self,other} x {Phi,V} yields exactly four mixed-sign transfers (2 Gods give, 2 Demons take) and three same-sign boundary frames (Titans), no fifth mixed slot without a new axis. Morality rides on eta (give vs take), never on the operator's name. Exhaustive on two axes, silent on games with more.",
-    "source": "05_COSMOLOGY/00_THE_EXHAUSTION_OF_THE_GAME.md"
-  },
-  {
-    "id": "n12",
-    "group": "nectar",
-    "tier": "[S]",
-    "title": "The balance-optimum is CONDITIONAL",
-    "body": "The equator is optimal for a real system only if it is conservation-bound, complementary, costly-in-excess, and symmetrically gamma-priced. Drop symmetry and the optimum slides to a tilted ratio; drop the rest and it plateaus or specialization wins. The honest form that replaced the universal claim after Munnell showed a balance trough.",
-    "source": "05_COSMOLOGY/00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md"
-  },
-  {
-    "id": "n13",
-    "group": "nectar",
-    "tier": "[S]",
-    "title": "The extraction law",
-    "body": "Extraction produces power locally and briefly; ungated, it consumes its own substrate and drives the sum of flourishing change across the widest boundary negative, via Lotka-Volterra crash, Red Queen, Lindeman attrition (all proven). So total flourishing change is the moral primitive; eta=0-toward-cooperators is a derived front-line gate, not a commandment.",
-    "source": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md"
-  },
-  {
-    "id": "n14",
-    "group": "nectar",
-    "tier": "[S]",
-    "title": "The constitution is constrained optimization",
-    "body": "5 + 1 means maximize the option cone subject to the five refusals (eta=0, K2, K3, K4, A7) as the feasible set. Balance and eta=0 are the constraint, not the goal; the strong reality-maximizes-balance reading was withdrawn when the empowerment test showed the option cone is reach-dominated and diverges from the equator. This withdrawal is itself nectar.",
-    "source": "00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md"
-  },
-  {
-    "id": "n15",
-    "group": "nectar",
-    "tier": "[I]",
-    "title": "Commandment vs Geometry",
-    "body": "A constraint enforced as structural consequence (violation shows up as measurable loss in the tested domain) is a categorically different object from an externally-imposed rule needing an enforcer. The distinction, not the sphere-math, is what carries.",
-    "source": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md"
-  },
-  {
-    "id": "n16",
-    "group": "nectar",
-    "tier": "[S]",
-    "title": "D5's emergence asymmetry",
-    "body": "Strongly emergent in genesis (opaque, un-shortcuttable from below), weakly emergent in governance (compressible once stabilized). Opaque from below, legible from above. Falsifiable-shaped: it predicts where reduction fails vs succeeds. Keep the law; cut the boast that it is one of the strongest general laws.",
-    "source": "11_UPLINK/60_SESSION_PACKETS/131_D4_BODY_OPENS_D5_ACTIVE_EMERGENCE_THESIS_2026_04_24.md"
-  },
-  {
-    "id": "n17",
-    "group": "nectar",
-    "tier": "[S]",
-    "title": "The tier-separated ground",
-    "body": "Ground to Being to Teleological Force to Dasein to beings, each term held apart, with the anti-reification rule enforced structurally: the seer is not on the sphere; the lens diagrams what shows, not the showing. The sphere is the first stable closure of the Ground, never the Ground.",
-    "source": "06_ONTOLOGY/01_APOPHATIC_GROUND_AND_FIELD_STRUCTURE.md"
-  },
-  {
-    "id": "n18",
-    "group": "nectar",
-    "tier": "[S]",
-    "title": "The six-tier ladder + no silent upgrade",
-    "body": "[A/B/S/I/D/C], with the cardinal rule that tier changes are dated events with reasons, protecting three real seams: yours-vs-world's evidence, conditional-vs-unconditional, meaning-vs-mechanism. The self-audit proved this is load-bearing: 92 of 112 claims survived a hostile cut precisely because the tiering is real, not decorative.",
-    "source": "02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md"
-  },
-  {
-    "id": "n19",
-    "group": "nectar",
-    "tier": "[S]",
-    "title": "The four mandatory fields",
-    "body": "No claim is load-bearing until a reader can state its tier, upgrade path, kill criterion, and survivors, what stands if it falls. The fourth is the keystone: only claims that explicitly depend on a failed claim fall with it. This is why the framework can lose a round and not collapse.",
-    "source": "03_METHODOLOGY/02_THE_PAPERS/PAPER_V_STEELMAN.md"
-  },
-  {
-    "id": "n20",
-    "group": "nectar",
-    "tier": "[S]",
-    "title": "Kill criteria actually honored",
-    "body": "AK8 (R* approx 1.5) marked falsified and retired; GFS marked MIXED, not spun; a Paper-V pilot fired its own pre-registered kill and reported preliminary falsification. The Mirror Scoreboard prints the columns that fail.",
-    "source": "02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md"
-  },
-  {
-    "id": "n21",
-    "group": "nectar",
-    "tier": "[S]",
-    "title": "The eternal is the structure; the good is the vow",
-    "body": "The framework un-fuses the geometry from the moral obligation: the depth is found, the kindness is chosen. And it builds its own anti-cult immune system, the Anti-Sermon: if you can access phi directly through sitting, put this framework down, which cannot be revoked by any authority. A worldview with a door marked exit on the inside.",
-    "source": "07_THEOLOGY/01_SYMBOL_DESIGN_AND_PUBLIC_TRANSLATION.md"
-  },
-  {
-    "id": "h01",
-    "group": "halahala",
-    "tier": "halahala",
-    "title": "phi*nu = 1 as a conserved discovery",
-    "body": "It is cot(theta/2)*tan(theta/2) = 1, a coordinate tautology of nu := 1/phi, zero empirical content. The framework's own docs say re-deriving it is re-naming the same tautology. It appeared as poison in every single lane. Write it as structural/definition, never as a conserved invariant, a discovery, a maximum, or the equation the framework follows from.",
-    "source": "01_TELEOLOGY/02_THE_DERIVATION/00_THE_CORE_CONJECTURE.md"
-  },
-  {
-    "id": "h02",
-    "group": "halahala",
-    "tier": "halahala",
-    "title": "The symmetric balance hump as an empirical law",
-    "body": "output = phi times nu, maximized at phi=nu, the whole L4-apex superstructure, broken on real data (GFS mixed 7/23; Munnell a balance trough). Only conjunction (need-both) survives, and only untested at single-agent scale. The multiplicative-vs-additive core is an unwon wager, not a result.",
-    "source": "03_METHODOLOGY/00_GFS_WAVE1_RESULTS.md"
-  },
-  {
-    "id": "h03",
-    "group": "halahala",
-    "tier": "halahala",
-    "title": "The squid",
-    "body": "D. gigas 'gated kin-discriminating cannibalism' as the eta=0 witness — cut as false-to-fact by the framework's own audit: the animal is panmictic, semelparous, targets the weak not kin. It is the extraction law's own counterexample, not its witness.",
-    "source": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/101_SEVEN_OPERATOR_REFINEMENT_K2_PACKET_2026_07_02.md"
-  },
-  {
-    "id": "h04",
-    "group": "halahala",
-    "tier": "halahala",
-    "title": "Exactly seven, by necessity",
-    "body": "The 7 is the pre-existing caste ladder reverse-fit onto sign-space; honest enumeration gives 4 (pure signs) or 8-9 (with approx). No fifth God / no eighth operator is not an impossibility theorem; demote to conjecture. The four-forces to four-lines map self-contradicts (phi*nu=1 assigned to both EM and Strong) and predicts nothing measured.",
-    "source": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/101_SEVEN_OPERATOR_REFINEMENT_K2_PACKET_2026_07_02.md"
-  },
-  {
-    "id": "h05",
-    "group": "halahala",
-    "tier": "halahala",
-    "title": "Convergence-as-proof",
-    "body": "Reality organized itself this way before anyone drew the table; the perennial-grammar tables (Egypt, India, Tao, Nietzsche, Tolkien all encode phi*nu=1); Suda independently co-discovered it, so it's real; confidence increases with each translation. Fifteen renderings of one shape are one datum shown fifteen ways, not fifteen confirmations. Convergence is suggestive; it is never proof.",
-    "source": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md"
-  },
-  {
-    "id": "h06",
-    "group": "halahala",
-    "tier": "halahala",
-    "title": "Extraction is irrational / self-defeating at the equator, as a Nash result",
-    "body": "True only inside the balance-only public-goods game; with private side-payments it is not a Nash equilibrium (the paper's own Model-B). It is a dominated strategy in a narrow game, not a law.",
-    "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/33_NASH_EQUILIBRIUM_ETA_ZERO.md"
-  },
-  {
-    "id": "h07",
-    "group": "halahala",
-    "tier": "halahala",
-    "title": "Numeric coincidences read as derivations",
-    "body": "D6 = D0 via the 2*pi*k/7 horn-torus mapping (a framework overlay, the torus does not know about dimensional stages); the 12% approx Mandelbrot area coincidence; the torus IS the light cone, it fell out of the topology. Coincidence is not derivation.",
-    "source": "08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/MF_68_Area_Measure.md"
-  },
-  {
-    "id": "h08",
-    "group": "halahala",
-    "tier": "halahala",
-    "title": "The civilizational physics",
-    "body": "Megaliths ran at L=0, modern institutions at L approx 9.9, extractive civilizations self-terminate (Great Filter = Karma = Ma'at). An analogy asserted as physics.",
-    "source": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D21_ROSETTA_R12_MEGALITHIC.md"
-  },
-  {
-    "id": "h09",
-    "group": "halahala",
-    "tier": "halahala",
-    "title": "Dissolves the Hard Problem / Is-Ought / Death / Free-Will",
-    "body": "An unfalsifiable frame-trick: only the architecture is claimed dissolved; the mechanism (matter maps to phi, experience maps to nu) is asserted, not shown. The is-ought dissolution is true-by-redefinition of ought.",
-    "source": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_10_IS_OUGHT.md"
-  },
-  {
-    "id": "h10",
-    "group": "halahala",
-    "tier": "halahala",
-    "title": "Ektropy / F5 is real as the Teleological Force",
-    "body": "(phi-nu)^2 gives no trajectory; the doc itself admits the selection premise is not implied by the arithmetic of nonnegative squares. A trivial arithmetic fact wearing a cosmic name.",
-    "source": "01_TELEOLOGY/01_F5_FORCE_MAP_AND_EKTROPY.md"
-  },
-  {
-    "id": "h11",
-    "group": "halahala",
-    "tier": "halahala",
-    "title": "N=3 is uniquely stable, proven",
-    "body": "Stated as flat proof with no tier, justified by an unfalsifiable just-so (four reduces to three) and buttressed by convergence. Conjecture at best.",
-    "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/11_EFR_TRIADIC_STABILITY.md"
-  }
+ {
+  "id": "n01",
+  "group": "nectar",
+  "tier": "[A]",
+  "title": "Conjugacy — the ring that closes",
+  "body": "For phi,nu > 0 with phi*nu = 1, driving one factor to 0 forces its complement to infinity. The law is a product, not a sum: a vanishing factor annihilates the whole. The engine under the titans, the game-moves, and the ethics.",
+  "source": "05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md",
+  "route": "foundations/the-ring-that-is-the-ground"
+ },
+ {
+  "id": "n02",
+  "group": "nectar",
+  "tier": "[A]",
+  "title": "The self-dual unit",
+  "body": "1 is the unique fixed point of inversion x -> 1/x, which is, under log, the reflection s -> -s. It is simultaneously the multiplicative unit, the additive origin (log 1 = 0), and the projective hinge. Three charts, one point. This is the mathematical heart of the middle.",
+  "source": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md",
+  "route": "trinity/00-the-transcendental-trinity-canon"
+ },
+ {
+  "id": "n03",
+  "group": "nectar",
+  "tier": "[A]",
+  "title": "The titans {0, 1, infinity}",
+  "body": "The unique minimal generative frame on the Riemann sphere up to Mobius: {0,infinity} closed under z -> 1/z yields 1; any fourth point is cross-ratio-determined, so the frame cannot be extended. They define the operations; they are not operands.",
+  "source": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md",
+  "route": "trinity/00-the-transcendental-trinity-canon"
+ },
+ {
+  "id": "n04",
+  "group": "nectar",
+  "tier": "[A]",
+  "title": "The equator, derived not chosen",
+  "body": "By AM-GM, phi + nu >= 2 with equality iff phi = nu = 1; B = sin(theta) = 2/(phi+nu) maxes there, and the imbalance-price gamma = (phi+nu)/2 rises monotonically toward the poles. Unconditional sphere geometry. This is the one piece of the whole balance story that survived every falsification untouched, because it is pure arithmetic.",
+  "source": "05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md",
+  "route": "foundations/the-ring-that-is-the-ground"
+ },
+ {
+  "id": "n05",
+  "group": "nectar",
+  "tier": "[A]",
+  "title": "One degree of freedom",
+  "body": "phi*nu = 1 collapses two variables to a single coordinate theta: (phi-nu)^2 = (phi+nu)^2 - 4, phi+nu = 2/sin(theta). The manifold is earned, not assumed.",
+  "source": "01_TELEOLOGY/02_THE_DERIVATION/00_THE_CORE_CONJECTURE.md",
+  "route": "will/00-the-core-conjecture"
+ },
+ {
+  "id": "n06",
+  "group": "nectar",
+  "tier": "[A]",
+  "title": "The log realignment",
+  "body": "Under s = log(nu): log(phi) + log(nu) = 0 (the literal zero-sum), B = sech(s), E = s^2, H = 2cosh(s). Reciprocation becomes reflection; the multiplicative structure becomes elementary. The additive and multiplicative faces of number are coupled by log/exp, keystoned by log 1 = 0.",
+  "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/40_THE_LOGARITHMIC_REALIGNMENT.md",
+  "route": "canon/the-logarithmic-realignment"
+ },
+ {
+  "id": "n07",
+  "group": "nectar",
+  "tier": "[A]",
+  "title": "The mass-shell",
+  "body": "Under phi = e^w, nu = e^(-w) (rapidity), phi*nu = 1 is E^2 - (pc)^2 = (mc^2)^2. The equator is the rest frame E = mc^2, the dyadic runaway is the relativistic divergence toward the light cone. Verified numerically.",
+  "source": "08_FRAMEWORK_SUPPORT/00_KNOWN_UNKNOWNS_RESOLVED.md",
+  "unpublished": true
+ },
+ {
+  "id": "n08",
+  "group": "nectar",
+  "tier": "[A]",
+  "title": "The operators are the Mobius classes",
+  "body": "The five VIVEKA operators map onto the conjugacy classes of PSL(2,C): elliptic (Vishnu), hyperbolic plus/minus (Brahma/Shiva, one flow two directions), loxodromic (Krishna), parabolic (Kali). The four-class trace partition is a genuine theorem; the naming is interpretive.",
+  "source": "08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/MF_63_Mobius_Operators.md",
+  "route": "operators/mf-63-mobius-operators"
+ },
+ {
+  "id": "n09",
+  "group": "nectar",
+  "tier": "[A]",
+  "title": "Division localized, not eliminated",
+  "body": "N/0 = infinity for nonzero N (projective); 0/0 and infinity/infinity stay genuinely indeterminate (the apophatic edge); 1/1 is frame-forbidden yet equals 1. The undefined is conserved, honestly bounded; the sphere does not make all undefined operations well-defined.",
+  "source": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md",
+  "route": "trinity/00-the-transcendental-trinity-canon"
+ },
+ {
+  "id": "n10",
+  "group": "nectar",
+  "tier": "[A]",
+  "title": "An honest negative result",
+  "body": "Bare S^2 cannot produce SU(3): scalar-Laplacian degeneracies are 1,3,5,7,...; none is 8. The framework states where its own geometry stops. This is nectar because it is a limit the framework imposed on itself.",
+  "source": "03_METHODOLOGY/02_THE_PAPERS/PAPER_P_SU3_OBSTRUCTION_BARE_S2.md",
+  "route": "papers/paper-p-su3-obstruction-bare-s2"
+ },
+ {
+  "id": "n11",
+  "group": "nectar",
+  "tier": "[S]",
+  "title": "The 4 + 3 exhaustion",
+  "body": "Exhausting {self,other} x {Phi,V} yields exactly four mixed-sign transfers (2 Gods give, 2 Demons take) and three same-sign boundary frames (Titans), no fifth mixed slot without a new axis. Morality rides on eta (give vs take), never on the operator's name. Exhaustive on two axes, silent on games with more.",
+  "source": "05_COSMOLOGY/00_THE_EXHAUSTION_OF_THE_GAME.md",
+  "unpublished": true
+ },
+ {
+  "id": "n12",
+  "group": "nectar",
+  "tier": "[S]",
+  "title": "The balance-optimum is CONDITIONAL",
+  "body": "The equator is optimal for a real system only if it is conservation-bound, complementary, costly-in-excess, and symmetrically gamma-priced. Drop symmetry and the optimum slides to a tilted ratio; drop the rest and it plateaus or specialization wins. The honest form that replaced the universal claim after Munnell showed a balance trough.",
+  "source": "05_COSMOLOGY/00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md",
+  "unpublished": true
+ },
+ {
+  "id": "n13",
+  "group": "nectar",
+  "tier": "[S]",
+  "title": "The extraction law",
+  "body": "Extraction produces power locally and briefly; ungated, it consumes its own substrate and drives the sum of flourishing change across the widest boundary negative, via Lotka-Volterra crash, Red Queen, Lindeman attrition (all proven). So total flourishing change is the moral primitive; eta=0-toward-cooperators is a derived front-line gate, not a commandment.",
+  "source": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+  "unpublished": true
+ },
+ {
+  "id": "n14",
+  "group": "nectar",
+  "tier": "[S]",
+  "title": "The constitution is constrained optimization",
+  "body": "5 + 1 means maximize the option cone subject to the five refusals (eta=0, K2, K3, K4, A7) as the feasible set. Balance and eta=0 are the constraint, not the goal; the strong reality-maximizes-balance reading was withdrawn when the empowerment test showed the option cone is reach-dominated and diverges from the equator. This withdrawal is itself nectar.",
+  "source": "00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md",
+  "route": "five-plus-one"
+ },
+ {
+  "id": "n15",
+  "group": "nectar",
+  "tier": "[I]",
+  "title": "Commandment vs Geometry",
+  "body": "A constraint enforced as structural consequence (violation shows up as measurable loss in the tested domain) is a categorically different object from an externally-imposed rule needing an enforcer. The distinction, not the sphere-math, is what carries.",
+  "source": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+  "unpublished": true
+ },
+ {
+  "id": "n16",
+  "group": "nectar",
+  "tier": "[S]",
+  "title": "D5's emergence asymmetry",
+  "body": "Strongly emergent in genesis (opaque, un-shortcuttable from below), weakly emergent in governance (compressible once stabilized). Opaque from below, legible from above. Falsifiable-shaped: it predicts where reduction fails vs succeeds. Keep the law; cut the boast that it is one of the strongest general laws.",
+  "source": "11_UPLINK/60_SESSION_PACKETS/131_D4_BODY_OPENS_D5_ACTIVE_EMERGENCE_THESIS_2026_04_24.md",
+  "unpublished": true
+ },
+ {
+  "id": "n17",
+  "group": "nectar",
+  "tier": "[S]",
+  "title": "The tier-separated ground",
+  "body": "Ground to Being to Teleological Force to Dasein to beings, each term held apart, with the anti-reification rule enforced structurally: the seer is not on the sphere; the lens diagrams what shows, not the showing. The sphere is the first stable closure of the Ground, never the Ground.",
+  "source": "06_ONTOLOGY/01_APOPHATIC_GROUND_AND_FIELD_STRUCTURE.md",
+  "route": "ground/01-apophatic-ground-and-field-structure"
+ },
+ {
+  "id": "n18",
+  "group": "nectar",
+  "tier": "[S]",
+  "title": "The six-tier ladder + no silent upgrade",
+  "body": "[A/B/S/I/D/C], with the cardinal rule that tier changes are dated events with reasons, protecting three real seams: yours-vs-world's evidence, conditional-vs-unconditional, meaning-vs-mechanism. The self-audit proved this is load-bearing: 92 of 112 claims survived a hostile cut precisely because the tiering is real, not decorative.",
+  "source": "02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md",
+  "route": "foundations/the-honest-position"
+ },
+ {
+  "id": "n19",
+  "group": "nectar",
+  "tier": "[S]",
+  "title": "The four mandatory fields",
+  "body": "No claim is load-bearing until a reader can state its tier, upgrade path, kill criterion, and survivors, what stands if it falls. The fourth is the keystone: only claims that explicitly depend on a failed claim fall with it. This is why the framework can lose a round and not collapse.",
+  "source": "03_METHODOLOGY/02_THE_PAPERS/PAPER_V_STEELMAN.md",
+  "route": "papers/paper-v-steelman"
+ },
+ {
+  "id": "n20",
+  "group": "nectar",
+  "tier": "[S]",
+  "title": "Kill criteria actually honored",
+  "body": "AK8 (R* approx 1.5) marked falsified and retired; GFS marked MIXED, not spun; a Paper-V pilot fired its own pre-registered kill and reported preliminary falsification. The Mirror Scoreboard prints the columns that fail.",
+  "source": "02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md",
+  "route": "foundations/the-honest-position"
+ },
+ {
+  "id": "n21",
+  "group": "nectar",
+  "tier": "[S]",
+  "title": "The eternal is the structure; the good is the vow",
+  "body": "The framework un-fuses the geometry from the moral obligation: the depth is found, the kindness is chosen. And it builds its own anti-cult immune system, the Anti-Sermon: if you can access phi directly through sitting, put this framework down, which cannot be revoked by any authority. A worldview with a door marked exit on the inside.",
+  "source": "07_THEOLOGY/01_SYMBOL_DESIGN_AND_PUBLIC_TRANSLATION.md",
+  "route": "sacred/01-symbol-design-and-public-translation"
+ },
+ {
+  "id": "h01",
+  "group": "halahala",
+  "tier": "halahala",
+  "title": "phi*nu = 1 as a conserved discovery",
+  "body": "It is cot(theta/2)*tan(theta/2) = 1, a coordinate tautology of nu := 1/phi, zero empirical content. The framework's own docs say re-deriving it is re-naming the same tautology. It appeared as poison in every single lane. Write it as structural/definition, never as a conserved invariant, a discovery, a maximum, or the equation the framework follows from.",
+  "source": "01_TELEOLOGY/02_THE_DERIVATION/00_THE_CORE_CONJECTURE.md",
+  "route": "will/00-the-core-conjecture"
+ },
+ {
+  "id": "h02",
+  "group": "halahala",
+  "tier": "halahala",
+  "title": "The symmetric balance hump as an empirical law",
+  "body": "output = phi times nu, maximized at phi=nu, the whole L4-apex superstructure, broken on real data (GFS mixed 7/23; Munnell a balance trough). Only conjunction (need-both) survives, and only untested at single-agent scale. The multiplicative-vs-additive core is an unwon wager, not a result.",
+  "source": "03_METHODOLOGY/00_GFS_WAVE1_RESULTS.md",
+  "unpublished": true
+ },
+ {
+  "id": "h03",
+  "group": "halahala",
+  "tier": "halahala",
+  "title": "The squid",
+  "body": "D. gigas 'gated kin-discriminating cannibalism' as the eta=0 witness — cut as false-to-fact by the framework's own audit: the animal is panmictic, semelparous, targets the weak not kin. It is the extraction law's own counterexample, not its witness.",
+  "source": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/101_SEVEN_OPERATOR_REFINEMENT_K2_PACKET_2026_07_02.md",
+  "unpublished": true
+ },
+ {
+  "id": "h04",
+  "group": "halahala",
+  "tier": "halahala",
+  "title": "Exactly seven, by necessity",
+  "body": "The 7 is the pre-existing caste ladder reverse-fit onto sign-space; honest enumeration gives 4 (pure signs) or 8-9 (with approx). No fifth God / no eighth operator is not an impossibility theorem; demote to conjecture. The four-forces to four-lines map self-contradicts (phi*nu=1 assigned to both EM and Strong) and predicts nothing measured.",
+  "source": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/101_SEVEN_OPERATOR_REFINEMENT_K2_PACKET_2026_07_02.md",
+  "unpublished": true
+ },
+ {
+  "id": "h05",
+  "group": "halahala",
+  "tier": "halahala",
+  "title": "Convergence-as-proof",
+  "body": "Reality organized itself this way before anyone drew the table; the perennial-grammar tables (Egypt, India, Tao, Nietzsche, Tolkien all encode phi*nu=1); Suda independently co-discovered it, so it's real; confidence increases with each translation. Fifteen renderings of one shape are one datum shown fifteen ways, not fifteen confirmations. Convergence is suggestive; it is never proof.",
+  "source": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md",
+  "route": "rosetta"
+ },
+ {
+  "id": "h06",
+  "group": "halahala",
+  "tier": "halahala",
+  "title": "Extraction is irrational / self-defeating at the equator, as a Nash result",
+  "body": "True only inside the balance-only public-goods game; with private side-payments it is not a Nash equilibrium (the paper's own Model-B). It is a dominated strategy in a narrow game, not a law.",
+  "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/33_NASH_EQUILIBRIUM_ETA_ZERO.md",
+  "route": "formal/33-nash-equilibrium-eta-zero"
+ },
+ {
+  "id": "h07",
+  "group": "halahala",
+  "tier": "halahala",
+  "title": "Numeric coincidences read as derivations",
+  "body": "D6 = D0 via the 2*pi*k/7 horn-torus mapping (a framework overlay, the torus does not know about dimensional stages); the 12% approx Mandelbrot area coincidence; the torus IS the light cone, it fell out of the topology. Coincidence is not derivation.",
+  "source": "08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/MF_68_Area_Measure.md",
+  "route": "operators/mf-68-area-measure"
+ },
+ {
+  "id": "h08",
+  "group": "halahala",
+  "tier": "halahala",
+  "title": "The civilizational physics",
+  "body": "Megaliths ran at L=0, modern institutions at L approx 9.9, extractive civilizations self-terminate (Great Filter = Karma = Ma'at). An analogy asserted as physics.",
+  "source": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D21_ROSETTA_R12_MEGALITHIC.md",
+  "unpublished": true
+ },
+ {
+  "id": "h09",
+  "group": "halahala",
+  "tier": "halahala",
+  "title": "Dissolves the Hard Problem / Is-Ought / Death / Free-Will",
+  "body": "An unfalsifiable frame-trick: only the architecture is claimed dissolved; the mechanism (matter maps to phi, experience maps to nu) is asserted, not shown. The is-ought dissolution is true-by-redefinition of ought.",
+  "source": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_10_IS_OUGHT.md",
+  "route": "paradox/pd-10-is-ought"
+ },
+ {
+  "id": "h10",
+  "group": "halahala",
+  "tier": "halahala",
+  "title": "Ektropy / F5 is real as the Teleological Force",
+  "body": "(phi-nu)^2 gives no trajectory; the doc itself admits the selection premise is not implied by the arithmetic of nonnegative squares. A trivial arithmetic fact wearing a cosmic name.",
+  "source": "01_TELEOLOGY/01_F5_FORCE_MAP_AND_EKTROPY.md",
+  "route": "will/01-f5-force-map-and-ektropy"
+ },
+ {
+  "id": "h11",
+  "group": "halahala",
+  "tier": "halahala",
+  "title": "N=3 is uniquely stable, proven",
+  "body": "Stated as flat proof with no tier, justified by an unfalsifiable just-so (four reduces to three) and buttressed by convergence. Conjecture at best.",
+  "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/11_EFR_TRIADIC_STABILITY.md",
+  "route": "formal/11-efr-triadic-stability"
+ }
 ]

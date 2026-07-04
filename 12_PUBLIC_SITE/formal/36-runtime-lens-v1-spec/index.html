@@ -60,11 +60,11 @@
 <p><strong>Status:</strong> Working spec; sibling of <code>35_PHI_METER_V1_SPEC.md</code> for the runtime lens
 <strong>Date:</strong> 2026-04-22
 <strong>Evidence Tier:</strong> [C] Conjecture for the spec; pilot application is single-rater [C]
-<strong>Source:</strong> <a href="../30-operational-definitions/"><code>30_OPERATIONAL_DEFINITIONS.md</code></a>, <a href="../32-theorem-upgrade-protocol/"><code>32_THEOREM_UPGRADE_PROTOCOL.md</code></a>, <a href="../35-phi-meter-v1-spec/"><code>35_PHI_METER_V1_SPEC.md</code></a>, <a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/02_SKYZAI/01_NOOSPHERE/ORGANISM_RUNTIME_TRUTH.md"><code>../../../02_SKYZAI/01_NOOSPHERE/ORGANISM_RUNTIME_TRUTH.md</code></a>
-<strong>See also:</strong> <a href="../29-primitives-and-type-signatures/"><code>29_PRIMITIVES_AND_TYPE_SIGNATURES.md</code></a>, <a href="../31-falsifiers-index/"><code>31_FALSIFIERS_INDEX.md</code></a>, <a href="../37-adoption-lens-v1-spec/"><code>37_ADOPTION_LENS_V1_SPEC.md</code></a>, <a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/02_SKYZAI/01_NOOSPHERE/05_PROJECT_MANAGEMENT/01_SPRINTS/FORMAL_SYSTEM_HARDENING_SPRINT_DELTA_2026_04_28.md">Sprint δ packet</a></p>
+<strong>Source:</strong> <a href="../30-operational-definitions/"><code>30_OPERATIONAL_DEFINITIONS.md</code></a>, <a href="../32-theorem-upgrade-protocol/"><code>32_THEOREM_UPGRADE_PROTOCOL.md</code></a>, <a href="../35-phi-meter-v1-spec/"><code>35_PHI_METER_V1_SPEC.md</code></a>, <span class="canon-src" title="internal source lane &mdash; withheld"><code>internal lane &mdash; withheld</code></span>
+<strong>See also:</strong> <a href="../29-primitives-and-type-signatures/"><code>29_PRIMITIVES_AND_TYPE_SIGNATURES.md</code></a>, <a href="../31-falsifiers-index/"><code>31_FALSIFIERS_INDEX.md</code></a>, <a href="../37-adoption-lens-v1-spec/"><code>37_ADOPTION_LENS_V1_SPEC.md</code></a>, <span class="canon-src" title="internal source lane &mdash; withheld">Sprint δ packet</span></p>
 <hr>
 <h2 id="1-why-this-file-exists">1. Why This File Exists</h2>
-<p>The v1 code-lens spec in file 33 scores an organ's coherence and viability from what is present in the working tree. That is one valid view, and it is the <em>only</em> view with a v1 rubric today. But the published P-scores in <a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/02_SKYZAI/01_NOOSPHERE/P-SCORES.md"><code>P-SCORES.md</code></a> have drifted through multiple lenses historically: some audits counted deployment and live relay, others excluded them deliberately. Without a v1 runtime-lens spec, the single code-lens gets stretched beyond its scope — "live-deployed" judgments get scored under the code rubric, and the numbers lose meaning.</p>
+<p>The v1 code-lens spec in file 33 scores an organ's coherence and viability from what is present in the working tree. That is one valid view, and it is the <em>only</em> view with a v1 rubric today. But the published P-scores in <span class="canon-src" title="internal source lane &mdash; withheld"><code>P-SCORES.md</code></span> have drifted through multiple lenses historically: some audits counted deployment and live relay, others excluded them deliberately. Without a v1 runtime-lens spec, the single code-lens gets stretched beyond its scope — "live-deployed" judgments get scored under the code rubric, and the numbers lose meaning.</p>
 <p>This file fixes that gap. It is the v1 runtime-lens: what <code>Φ̂</code> and <code>ν̂</code> mean when we are looking at the <em>running</em> organism, not the code in the tree.</p>
 <hr>
 <h2 id="2-scope-the-runtime-lens">2. Scope — The Runtime Lens</h2>
@@ -407,7 +407,7 @@
 <p>Notably, runtime-lens sub-scores depend on <em>observations over a window</em>, so both raters must use the same observation window (pre-registered per audit) or IRR drops spuriously.</p>
 <hr>
 <h2 id="8-pilot-application-tbd-during-sprint">8. Pilot Application — TBD During Sprint δ</h2>
-<p>Unlike file 33, there is no retroactive pilot application for the runtime-lens yet. The 2026-04-19 audit was deliberately code-only. The Sprint δ packet's MEAS-7 calls for a single-rater runtime-lens pilot against current runtime state using <a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/02_SKYZAI/01_NOOSPHERE/ORGANISM_RUNTIME_TRUTH.md"><code>ORGANISM_RUNTIME_TRUTH.md</code></a> as the input surface.</p>
+<p>Unlike file 33, there is no retroactive pilot application for the runtime-lens yet. The 2026-04-19 audit was deliberately code-only. The Sprint δ packet's MEAS-7 calls for a single-rater runtime-lens pilot against current runtime state using <span class="canon-src" title="internal source lane &mdash; withheld"><code>ORGANISM_RUNTIME_TRUTH.md</code></span> as the input surface.</p>
 <p>Expected coordinate hints (based on 2026-04-19 runtime-truth content, not a scored pilot):</p>
 <ul>
 <li><strong>TheCircle:</strong> <code>φ_live_arch</code> moderate (RSS adapter breathes locally); <code>φ_relay</code> low (no external relay publication confirmed); <code>ν_uptime</code> low (not continuously deployed); <code>ν_recovery</code> unmeasured.</li>
@@ -456,7 +456,7 @@
 <h2 id="11-what-this-spec-does-not-do">11. What This Spec Does Not Do</h2>
 <ul>
 <li>Does not claim parity with code-lens judgments. A runtime <code>P̂</code> and a code <code>P̂</code> measure different surfaces; neither outranks the other.</li>
-<li>Does not authorize public-live claims (still bounded by <a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/02_SKYZAI/01_NOOSPHERE/ORGANISM_RUNTIME_TRUTH.md"><code>ORGANISM_RUNTIME_TRUTH.md</code></a>).</li>
+<li>Does not authorize public-live claims (still bounded by <span class="canon-src" title="internal source lane &mdash; withheld"><code>ORGANISM_RUNTIME_TRUTH.md</code></span>).</li>
 <li>Does not replace disclosure-based judgment (Pratyakṣa remains primary, see <a href="../26-the-derivation-axioms/"><code>26_THE_DERIVATION_AXIOMS.md</code></a> D5).</li>
 <li>Does not redefine the primitives from <a href="../29-primitives-and-type-signatures/"><code>29_PRIMITIVES_AND_TYPE_SIGNATURES.md</code></a>; <code>Φ_node</code>, <code>V_node</code> keep their type signatures.</li>
 </ul>
@@ -469,8 +469,8 @@
 <li><a href="../32-theorem-upgrade-protocol/"><code>32_THEOREM_UPGRADE_PROTOCOL.md</code></a> — promotion protocol</li>
 <li><a href="../35-phi-meter-v1-spec/"><code>35_PHI_METER_V1_SPEC.md</code></a> — code-lens sibling</li>
 <li><a href="../37-adoption-lens-v1-spec/"><code>37_ADOPTION_LENS_V1_SPEC.md</code></a> — adoption-lens sibling</li>
-<li><a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/02_SKYZAI/01_NOOSPHERE/ORGANISM_RUNTIME_TRUTH.md"><code>../../../02_SKYZAI/01_NOOSPHERE/ORGANISM_RUNTIME_TRUTH.md</code></a> — the canonical runtime input surface</li>
-<li><a href="https://github.com/Menexus-GmbH/magnum-opus/blob/main/02_SKYZAI/01_NOOSPHERE/05_PROJECT_MANAGEMENT/01_SPRINTS/FORMAL_SYSTEM_HARDENING_SPRINT_DELTA_2026_04_28.md">Sprint δ packet</a> — the sprint operationalizing this spec</li>
+<li><span class="canon-src" title="internal source lane &mdash; withheld"><code>internal lane &mdash; withheld</code></span> — the canonical runtime input surface</li>
+<li><span class="canon-src" title="internal source lane &mdash; withheld">Sprint δ packet</span> — the sprint operationalizing this spec</li>
 </ul>
 <hr>
 <h2 id="execution-surface">Execution Surface</h2>

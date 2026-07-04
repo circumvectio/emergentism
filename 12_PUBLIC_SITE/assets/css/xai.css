@@ -3689,3 +3689,7 @@ button.nav:hover {
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 5px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--gold); }
 ::-webkit-scrollbar-track { background: transparent; }
+/* Canon-source receipts whose online target is not yet published (audit 2026-07-04:
+   the former GitHub links 404'd and leaked a private lane). Rendered as honest muted
+   text, never a decoy link. */
+.canon-src { color: var(--text-muted, #888); font-style: italic; }
