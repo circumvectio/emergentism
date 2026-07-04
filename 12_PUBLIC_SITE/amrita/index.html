@@ -33,9 +33,9 @@
   <section id="feel" class="screen runaway">
     <h2>Feel the runaway</h2>
     <div class="runaway-wrap">
-      <canvas id="runaway-canvas" width="480" height="480" aria-label="Interactive Burrisphere: drag vertically to move between the poles and the equator"></canvas>
-      <div id="runaway-fallback" hidden><svg viewBox="0 0 100 100" width="220" height="220" aria-hidden="true"><circle cx="50" cy="50" r="40" fill="none" stroke="#2a2a2a"/><ellipse cx="50" cy="50" rx="40" ry="12" fill="none" stroke="#8899ff"/></svg><p class="muted">WebGL unavailable &mdash; the numbers still move.</p></div>
-      <dl class="readouts">
+      <canvas id="runaway-canvas" width="480" height="480" aria-label="Interactive Burrisphere: drag vertically, or focus and use the arrow keys, to move between the poles and the equator"></canvas>
+      <div id="runaway-fallback" hidden><svg viewBox="0 0 100 100" width="220" height="220" aria-hidden="true"><circle cx="50" cy="50" r="40" fill="none" stroke="#2a2a2a"/><ellipse cx="50" cy="50" rx="40" ry="12" fill="none" stroke="#8899ff"/></svg><p class="muted">WebGL unavailable &mdash; use the slider and the numbers move.</p><input type="range" id="runaway-range" min="0.02" max="3.1216" step="0.01" value="1.5708" aria-label="Move between the poles (extremes) and the equator (balance)" style="width:220px"></div>
+      <dl class="readouts" aria-live="polite">
         <div><dt>&#966; (foresight)</dt><dd id="rd-phi">1.000</dd></div>
         <div><dt>&#957; (means)</dt><dd id="rd-nu">1.000</dd></div>
         <div><dt>B (balance)</dt><dd id="rd-B">1.000</dd></div>

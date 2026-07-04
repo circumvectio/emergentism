@@ -24,4 +24,15 @@ import { sphereState } from "./runaway.mjs";
   assert.ok(s.phi < 0.02, "phi small near south pole");
   assert.ok(s.B < 0.05, "B collapses near a pole");
 }
+// The load-bearing identities the [A] result IS — swept across the open domain.
+// These, not the limit cases above, are the thing the amrita front door proves.
+for (let i = 1; i < 40; i++) {
+  const theta = (i / 40) * Math.PI;                       // in (0, pi)
+  const s = sphereState(theta);
+  assert.ok(Math.abs(s.phi * s.nu - 1) < 1e-9, `phi*nu=1 at theta=${theta}`);
+  assert.ok(Math.abs(s.B - 2 / (s.phi + s.nu)) < 1e-9, `B=2/(phi+nu) at theta=${theta}`);
+  assert.ok(Math.abs(s.gamma * s.B - 1) < 1e-9, `gamma*B=1 at theta=${theta}`);
+  assert.ok(s.B <= 1 + 1e-12, `B<=1 (equator is the max) at theta=${theta}`);
+}
+
 console.log("sphereState: all assertions passed");
