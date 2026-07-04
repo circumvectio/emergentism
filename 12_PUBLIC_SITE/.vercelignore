@@ -20,9 +20,8 @@ amrita/runaway.test.mjs
 
 # Deploy-cuts + boundary hardening (audit 2026-07-04).
 partials/                              # internal build partials (dev commentary)
-infinite.html                         # payment-not-wired paywall stub
-app.html                              # retired competing ladder (301 -> /amrita/)
-_PLANS/                               # internal specs, plans, audit reports
+infinite.html                         # payment-not-wired paywall stub (archived to _PLANS/retired/)
+_PLANS/                               # internal specs, plans, audit reports (incl. retired pages)
 .vercel/                              # Vercel build output / project config
 vendor/three-0.160.0/postprocessing/  # unused three.js addons
 vendor/three-0.160.0/shaders/         # unused three.js addons
