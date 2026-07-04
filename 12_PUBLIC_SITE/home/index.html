@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <base href="../" />
+  <title>Emergentism — between the infinite and infinity, finity</title>
+  <meta name="description" content="Emergentism as a living Weltanschauung for Dasein: a tier-honest map, Soul Loop method, and dyadic game rule that P_node,i and P_node,H rise together under η = 0." />
+  <meta name="color-scheme" content="dark" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%23FFEB3B' stroke-width='1' opacity='.5'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E" />
+  <link rel="preload" href="assets/fonts/Roboto-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/RobotoMono-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <script>document.documentElement.classList.add('js')</script>
+  <style>
+    /* Self-hosted Roboto (Apache-2.0) — accessible, gate-safe, and instrument-clear */
+    @font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:optional;src:url('assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+    @font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:optional;src:url('assets/fonts/Roboto-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+    @font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:optional;src:url('assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+    @font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:optional;src:url('assets/fonts/RobotoMono-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+    :root{
+      /* Emergentism instrument — near-black, signal yellow #FFEB3B, blue #2196F3, cream #FFFDE7 */
+      --void:#050505; --void-2:#0a0a0a; --panel:#101010; --panel-2:#161616;
+      --bone:#F3F4F6; --bone-dim:#9CA3AF; --bone-faint:#858C99;
+      --gold:#FFEB3B; --gold-bright:#FFF176; --gold-deep:#CBB800;
+      --cold:#42A5F5; --blue:#2196F3; --violet:#6e6a86; --cream:#FFFDE7;
+      --sector-finance:#F44336; --sector-insurance:#4CAF50; --sector-real-infra:#2196F3; --sector-electronic-lab:#FFEB3B;
+      --line:rgba(243,244,246,.12); --line-soft:rgba(243,244,246,.07);
+      --tier-a:#7fb2e6; --tier-s:#5fc6b0; --tier-i:#e8d24a; --tier-c:#b59ce0; --tier-b:#FFEB3B;
+      /* Emergentism instrument grammar via self-hosted Roboto — accessible, consistent everywhere, no CDN */
+      --serif:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+      --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+      --phi:1.618; --maxw:1140px; --shape-lg:16px; --target-min:48px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; background:var(--void); color:var(--bone);
+      font-family:var(--serif); font-size:18px; line-height:1.62;
+      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+      font-feature-settings:"liga" 1,"onum" 1,"kern" 1;
+      overflow-x:hidden;
+    }
+    /* Scientific-instrument ambient layer: cove light, wall wash, and floor bounce, never blobs. */
+    body::before{
+      content:""; position:fixed; inset:0; z-index:-2; pointer-events:none;
+      background:
+        linear-gradient(180deg, rgba(255,235,59,.075), transparent 28rem),
+        linear-gradient(90deg, rgba(33,150,243,.09), transparent 32%, transparent 70%, rgba(76,175,80,.045)),
+        linear-gradient(0deg, rgba(255,253,231,.035), transparent 18rem),
+        var(--void);
+    }
+    body::after{
+      content:""; position:fixed; inset:0; z-index:-1; pointer-events:none; opacity:.5;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.035'/%3E%3C/svg%3E");
+      mix-blend-mode:overlay;
+    }
+    ::selection{background:rgba(255,235,59,.30); color:#050505}
+    a{color:var(--bone); text-decoration:none}
+    :focus-visible{outline:2px solid var(--gold); outline-offset:2px; border-radius:2px}
+    *{scrollbar-width:thin; scrollbar-color:var(--line) transparent}
+    ::-webkit-scrollbar{width:10px} ::-webkit-scrollbar-track{background:transparent}
+    ::-webkit-scrollbar-thumb{background:var(--panel-2); border-radius:5px}
+    ::-webkit-scrollbar-thumb:hover{background:var(--gold)}
+
+    /* ---------- topbar ---------- */
+    .topbar{
+      position:sticky; top:0; z-index:20; display:flex; align-items:center; justify-content:space-between;
+      gap:1rem; padding:.85rem clamp(1rem,4vw,2.4rem);
+      min-height:64px;
+      background:color-mix(in srgb,var(--void) 86%,transparent); backdrop-filter:blur(12px) saturate(1.08);
+      border-bottom:1px solid var(--line-soft);
+    }
+    .brand{flex:0 0 auto; font-family:var(--serif); font-size:1.18rem; letter-spacing:0; font-weight:600}
+    .brand b{color:var(--gold)}
+    .number-nav{flex:1 1 auto; min-width:0; display:flex; justify-content:flex-end; gap:.1rem; flex-wrap:wrap; font-family:var(--mono); font-size:.82rem}
+    .number-nav a{
+      display:inline-grid; place-items:center; min-width:var(--target-min); min-height:var(--target-min); padding:0 .4rem;
+      color:var(--bone-dim); border:1px solid transparent; border-radius:999px; transition:.2s;
+    }
+    .number-nav a:hover{color:var(--void); background:var(--gold); border-color:var(--gold)}
+    @media(max-width:680px){
+      .number-nav{justify-content:flex-start; flex-wrap:nowrap; overflow-x:auto; overflow-y:hidden; scrollbar-width:none}
+      .number-nav::-webkit-scrollbar{display:none}
+      .number-nav a{flex:0 0 auto}
+    }
+
+    .wrap{max-width:var(--maxw); margin:0 auto; padding:0 clamp(1rem,4vw,2.4rem)}
+
+    /* ---------- hero ---------- */
+    .hero{
+      max-width:var(--maxw); margin:0 auto; padding:clamp(2.5rem,7vw,6rem) clamp(1rem,4vw,2.4rem) clamp(2rem,5vw,4rem);
+      display:grid; grid-template-columns:1.618fr 1fr; gap:clamp(1.5rem,4vw,3.5rem); align-items:center; /* φ split 61.8/38.2 */
+    }
+    @media(max-width:860px){ .hero{grid-template-columns:1fr; text-align:left} }
+    .eyebrow{
+      font-family:var(--mono); font-size:.74rem; letter-spacing:0; text-transform:uppercase;
+      color:var(--gold); margin:0 0 1.4rem;
+    }
+    .equation{
+      font-family:var(--mono); font-size:clamp(1.05rem,2.2vw,1.45rem); color:var(--bone-dim);
+      margin:0 0 .7rem; letter-spacing:0; display:flex; flex-wrap:wrap; gap:.25rem .7rem; align-items:baseline;
+    }
+    .equation b{color:var(--bone); white-space:nowrap}
+    .equation .gloss{white-space:nowrap}
+    h1.head{
+      font-family:var(--serif); font-weight:800; font-size:clamp(2.4rem,6.2vw,4.4rem); line-height:1.04;
+      letter-spacing:0; margin:.2rem 0 1.3rem; text-wrap:balance;
+    }
+    h1.head .li{color:var(--gold)}
+    .lede{font-size:clamp(1.02rem,1.5vw,1.2rem); color:var(--bone-dim); max-width:34ch; margin:0 0 1.5rem}
+    .lede b{color:var(--bone); font-weight:600}
+    .tier-note{font-family:var(--mono); font-size:.76rem; line-height:1.7; color:var(--bone-faint); max-width:46ch; margin:0 0 2rem}
+    .cta-row{display:flex; gap:.8rem; flex-wrap:wrap}
+    .btn{
+      font-family:var(--mono); font-size:.82rem; letter-spacing:0; text-transform:uppercase;
+      min-height:var(--target-min); padding:0 1.4rem; border-radius:999px; border:1px solid var(--line); transition:.22s; display:inline-flex; align-items:center; gap:.5rem;
+    }
+    .btn.primary{background:var(--gold); color:#1a1206; border-color:var(--gold); font-weight:600}
+    .btn.primary:hover{background:var(--gold-bright); box-shadow:0 0 0 1px var(--gold-bright),0 8px 30px -8px rgba(255,235,59,.5); transform:translateY(-1px)}
+    .btn.ghost{color:var(--bone)}
+    .btn.ghost:hover{border-color:var(--gold); color:var(--gold)}
+
+    .orientation-panel{
+      grid-column:1 / -1;
+      display:grid;
+      grid-template-columns:1.2fr repeat(4,minmax(0,1fr));
+      gap:1px;
+      margin-top:clamp(1.2rem,3vw,2.2rem);
+      border:1px solid var(--line);
+      border-radius:8px;
+      overflow:hidden;
+      background:var(--line-soft);
+      box-shadow:0 18px 70px -54px rgba(255,235,59,.55);
+    }
+    .orientation-panel > div{
+      min-width:0;
+      background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012)),var(--panel);
+      padding:1rem 1rem .95rem;
+      border-top:2px solid transparent;
+    }
+    .orientation-panel .orientation-status{border-top-color:var(--gold)}
+    .orientation-panel .orientation-cell:nth-child(2){border-top-color:var(--sector-real-infra)}
+    .orientation-panel .orientation-cell:nth-child(3){border-top-color:var(--sector-insurance)}
+    .orientation-panel .orientation-cell:nth-child(4){border-top-color:var(--sector-electronic-lab)}
+    .orientation-panel .orientation-cell:nth-child(5){border-top-color:var(--tier-c)}
+    .orientation-panel .lab{
+      display:block;
+      font-family:var(--mono);
+      font-size:.66rem;
+      line-height:1.25;
+      color:var(--bone-faint);
+      text-transform:uppercase;
+      letter-spacing:0;
+      margin-bottom:.45rem;
+    }
+    .orientation-panel strong{
+      display:block;
+      color:var(--bone);
+      font-size:.96rem;
+      line-height:1.28;
+      font-weight:650;
+      margin-bottom:.35rem;
+    }
+    .orientation-panel p{
+      margin:0;
+      color:var(--bone-dim);
+      font-size:.82rem;
+      line-height:1.45;
+    }
+    .orientation-panel code{font-family:var(--mono);color:var(--gold)}
+    @media(max-width:960px){.orientation-panel{grid-template-columns:repeat(2,minmax(0,1fr))}.orientation-panel .orientation-status{grid-column:1 / -1}}
+    @media(max-width:560px){.orientation-panel{grid-template-columns:1fr}}
+
+    /* ---------- the sphere ---------- */
+    .sphere-stage{display:grid; place-items:center; position:relative}
+    .sphere-stage svg{width:100%; max-width:500px; height:auto}
+    .lat{fill:none; stroke:var(--bone); stroke-width:1; opacity:.16}
+    .meridian{fill:none; stroke:var(--bone); stroke-width:1; opacity:.1}
+    .equator{
+      fill:none; stroke:var(--gold); stroke-width:2.4; opacity:1;
+    }
+    .ray{fill:none; stroke:rgba(255,235,59,.52); stroke-width:1.2; stroke-dasharray:3 5; opacity:1}
+    .meet circle{}
+    .meet{opacity:1}
+    .proj{opacity:1}
+    .proj text{font-family:var(--mono); font-size:13px; fill:var(--gold)}
+    .pole{font-family:var(--mono); fill:var(--bone-dim); font-size:12px}
+    .pole .sym{font-family:var(--serif); font-size:19px}
+    .pole.eq .sym{fill:var(--gold)} .pole.eq{fill:var(--gold)}
+    .pole.inf .sym{fill:var(--cold)} .pole.zero .sym{fill:var(--violet)}
+    .dot{opacity:1}
+
+    /* ---------- reveal ---------- */
+    .js .reveal{opacity:0}
+    .js .reveal.in{opacity:1; transition:opacity .42s linear}
+
+    /* ---------- bands ---------- */
+    section.band{padding:clamp(2.4rem,6vw,5rem) 0; border-top:1px solid var(--line-soft)}
+    .kicker{font-family:var(--mono); font-size:.74rem; letter-spacing:0; text-transform:uppercase; color:var(--gold); margin:0 0 1rem}
+    h2{font-family:var(--serif); font-weight:600; font-size:clamp(1.7rem,3.6vw,2.7rem); line-height:1.1; letter-spacing:0; margin:0 0 1rem; text-wrap:balance}
+    .band p.intro{color:var(--bone-dim); max-width:60ch; font-size:1.05rem; margin:0 0 2.2rem}
+
+    /* honesty band */
+    .honesty{background:linear-gradient(180deg,rgba(255,235,59,.05),transparent 70%)}
+    .honesty h2{max-width:18ch}
+    .honesty .intro{max-width:64ch}
+    .tier-legend{display:flex; flex-wrap:wrap; gap:.6rem; margin:1.6rem 0 1.8rem}
+    .chip{font-family:var(--mono); font-size:.76rem; padding:.35rem .7rem; border-radius:3px; border:1px solid var(--line); display:inline-flex; gap:.5rem; align-items:center; color:var(--bone-dim)}
+    .chip i{width:.55rem; height:.55rem; border-radius:50%; display:inline-block; font-style:normal}
+    .chip.a i{background:var(--tier-a)} .chip.s i{background:var(--tier-s)} .chip.i i{background:var(--tier-i)} .chip.c i{background:var(--tier-c)} .chip.b i{background:var(--tier-b)}
+    .exit-line{font-family:var(--serif); font-style:italic; font-size:clamp(1.15rem,2.4vw,1.55rem); color:var(--bone); border-left:2px solid var(--gold); padding-left:1.1rem; margin:1.5rem 0 0; max-width:40ch}
+
+    /* equation triptych */
+    .triptych{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line-soft); border:1px solid var(--line-soft); border-radius:var(--shape-lg); overflow:hidden}
+    @media(max-width:760px){ .triptych{grid-template-columns:1fr} }
+    .tri{background:var(--panel); padding:1.8rem 1.5rem; border-top:2px solid var(--line-soft)}
+    .tri:nth-child(1){border-top-color:var(--sector-real-infra)}
+    .tri:nth-child(2){border-top-color:var(--sector-insurance)}
+    .tri:nth-child(3){border-top-color:var(--sector-electronic-lab)}
+    .tri .gly{font-family:var(--serif); font-size:2.4rem; color:var(--gold); line-height:1; margin-bottom:.4rem}
+    .tri h3{font-family:var(--serif); font-size:1.25rem; font-weight:600; margin:.2rem 0 .5rem}
+    .tri p{color:var(--bone-dim); font-size:.98rem; margin:0}
+    .tri .tag{font-family:var(--mono); font-size:.7rem; color:var(--bone-faint); display:block; margin-top:.9rem; letter-spacing:0}
+    .tri.product{background:var(--panel-2)}
+    .tri.product .gly{font-style:italic}
+
+    /* game rule */
+    .rule-panel{
+      border:1px solid var(--line-soft); border-radius:var(--shape-lg); overflow:hidden; background:var(--panel);
+      display:grid; grid-template-columns:1fr 1fr; gap:1px; margin-top:1.2rem;
+    }
+    @media(max-width:820px){ .rule-panel{grid-template-columns:1fr} }
+    .rule-panel > div{background:var(--panel); padding:1.35rem 1.35rem}
+    .rule-panel pre{
+      margin:0; white-space:pre-wrap; font-family:var(--mono); font-size:.82rem; line-height:1.65;
+      color:var(--bone-dim);
+    }
+    .rule-panel code{font-family:var(--mono); color:var(--bone)}
+    .rule-panel p{margin:.2rem 0 .9rem; color:var(--bone-dim); font-size:.96rem}
+    .rule-panel strong{color:var(--bone); font-weight:600}
+    .constraint-map{
+      display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); gap:1px;
+      background:var(--line-soft); border:1px solid var(--line-soft); border-radius:var(--shape-lg); overflow:hidden;
+    }
+    @media(max-width:820px){ .constraint-map{grid-template-columns:1fr} }
+    .constraint-map > div{background:var(--panel); padding:1.35rem}
+    .constraint-map pre{margin:0; white-space:pre-wrap; font-family:var(--mono); font-size:.82rem; line-height:1.65; color:var(--bone-dim)}
+    .constraint-map ul{margin:.2rem 0 0; padding-left:1.05rem; color:var(--bone-dim); font-size:.95rem}
+    .constraint-map li{margin:.45rem 0}
+    .constraint-map b{color:var(--bone)}
+
+    /* spine + levels grid */
+    /* triaxial: 3 columns as the structural unit */
+    .grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line-soft); border:1px solid var(--line-soft); border-radius:var(--shape-lg); overflow:hidden}
+    @media(max-width:680px){ .grid{grid-template-columns:1fr} }
+    .cell{background:var(--panel); padding:1.3rem 1.25rem; transition:.22s; position:relative}
+    .cell:hover{background:var(--panel-2)}
+    .cell .num{font-family:var(--mono); font-size:.74rem; color:var(--gold); letter-spacing:0}
+    .cell h3{font-family:var(--serif); font-size:1.1rem; font-weight:600; margin:.5rem 0 .35rem; line-height:1.2}
+    .cell p{font-size:.9rem; color:var(--bone-dim); margin:0}
+    .cell::after{content:"→"; position:absolute; right:1.1rem; top:1.2rem; color:var(--bone-faint); font-family:var(--mono); opacity:0; transform:translateX(-4px); transition:.22s}
+    .cell:hover::after{opacity:1; transform:none; color:var(--gold)}
+
+    /* read library index */
+    .lib{display:grid; grid-template-columns:repeat(auto-fill,minmax(168px,1fr)); gap:.5rem}
+    .lib a{
+      display:flex; flex-direction:column; gap:.15rem; min-height:var(--target-min); padding:.85rem 1rem; border:1px solid var(--line-soft); border-radius:var(--shape-lg);
+      background:var(--panel); transition:.2s;
+    }
+    .lib a:hover{border-color:var(--gold); transform:translateY(-2px)}
+    .lib .nm{font-family:var(--serif); font-size:1.02rem; font-weight:600}
+    .lib .ct{font-family:var(--mono); font-size:.72rem; color:var(--bone-faint)}
+    .read-cta{margin-top:1.6rem}
+
+    /* constraints */
+    .moat{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem}
+    .moat .m{border:1px solid var(--line-soft); border-radius:var(--shape-lg); padding:1.3rem 1.3rem; background:linear-gradient(180deg,var(--panel),var(--void-2))}
+    .moat .lab{font-family:var(--mono); font-size:.92rem; color:var(--gold); letter-spacing:0}
+    .moat h3{font-family:var(--serif); font-size:1.12rem; font-weight:600; margin:.5rem 0 .35rem}
+    .moat p{font-size:.92rem; color:var(--bone-dim); margin:0}
+
+    /* footer */
+    .site-footer{border-top:1px solid var(--line); padding:clamp(2.5rem,6vw,4rem) clamp(1rem,4vw,2.4rem); text-align:center}
+    .site-footer .phi{font-family:var(--serif); font-size:1.8rem; color:var(--gold); margin-bottom:.7rem}
+    .site-footer p{color:var(--bone-faint); font-family:var(--mono); font-size:.78rem; letter-spacing:0; max-width:52ch; margin:0 auto}
+
+    @media(prefers-reduced-transparency:reduce){
+      .topbar{background:var(--void); backdrop-filter:none}
+      body::after{display:none}
+    }
+    @media(prefers-reduced-motion:reduce){
+      *{animation:none!important; transition:none!important}
+      .equator,.ray,.dot,.meet,.proj{opacity:1}
+      .js .reveal{opacity:1; transform:none}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="home/">Emergent<b>ism</b></a>
+    <nav class="number-nav" aria-label="Public doctrine routes">
+      <a href="0/">0</a><a href="1/">1</a><a href="2/">2</a><a href="3/">3</a>
+      <a href="4/">4</a><a href="5/">5</a><a href="6/">6</a>
+      <a href="rosetta/">R</a><a href="soul-loop/">S</a><a href="atlas/">A</a>
+      <a href="game/">Game</a><a href="synthesis/">Whole</a><a href="read/">Read</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="amrita-entry"><a href="amrita/" style="display:inline-block;margin:1rem 0;color:#8899ff;font-size:1.1rem;text-decoration:none;border-bottom:1px solid #33406a">Start here: the one proven thing &rarr;</a></p>
+        <p class="eyebrow reveal">A finite philosophy</p>
+        <p class="equation reveal"><b>φ · ν = 1</b><span class="gloss">— reciprocal closure on S²</span></p>
+        <h1 class="head reveal">Between the infinite and infinity,<br><span class="li">finity</span></h1>
+        <p class="lede reveal">Emergentism is a public instrument for <b>Dasein</b>: a finite witness-agent learning where it came from, how to know, and how to act so symbiont and holobiont rise together without extraction.</p>
+        <p class="tier-note reveal">[A] the sphere kernel is elementary mathematics &nbsp;·&nbsp; [S/I] the Soul Loop is the method &nbsp;·&nbsp; [C] that reality as such is this geometry remains a wager, not a proof.</p>
+        <div class="cta-row reveal">
+          <a href="0/" class="btn primary">Begin at /0 →</a>
+          <a href="soul-loop/" class="btn ghost">Use the Soul Loop →</a>
+          <a href="game/" class="btn ghost">Game rule →</a>
+        </div>
+      </div>
+
+      <div class="sphere-stage reveal" aria-hidden="true">
+        <svg viewBox="0 0 500 418" role="img">
+          <defs>
+            <linearGradient id="poles" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="rgba(188,212,242,.35)"/>
+              <stop offset="48%" stop-color="rgba(255,235,59,.10)"/>
+              <stop offset="100%" stop-color="rgba(124,112,173,.30)"/>
+            </linearGradient>
+          </defs>
+
+          <!-- sphere body -->
+          <circle cx="210" cy="200" r="140" fill="#080b11" stroke="rgba(236,230,214,.18)" stroke-width="1"/>
+          <circle cx="210" cy="200" r="140" fill="url(#poles)" opacity=".9"/>
+
+          <!-- latitudes (7 positions) -->
+          <ellipse class="lat" cx="210" cy="80"  rx="72"  ry="12"/>
+          <ellipse class="lat" cx="210" cy="122" rx="116" ry="20"/>
+          <ellipse class="lat" cx="210" cy="160" rx="134" ry="23"/>
+          <ellipse class="lat" cx="210" cy="240" rx="134" ry="23"/>
+          <ellipse class="lat" cx="210" cy="278" rx="116" ry="20"/>
+          <ellipse class="lat" cx="210" cy="320" rx="72"  ry="12"/>
+          <!-- meridian hint -->
+          <ellipse class="meridian" cx="210" cy="200" rx="46" ry="140"/>
+
+          <!-- the equator: the life -->
+          <ellipse class="equator" cx="210" cy="200" rx="140" ry="24"/>
+
+          <!-- DUAL stereographic projection — the two charts of S² ≅ CP¹.
+               φ = cot(θ/2) projects from ∞ (north pole), descending;
+               ν = tan(θ/2) projects from 0 (south pole), ascending;
+               the two rays meet at one point P on the sphere; φ·ν = 1. -->
+          <line class="ray" x1="210" y1="60" x2="440" y2="319"/>
+          <line class="ray" x1="210" y1="340" x2="320" y2="79"/>
+          <!-- the meeting point on the sphere -->
+          <g class="meet">
+            <circle cx="290" cy="150" r="8" fill="none" stroke="#FFF176" stroke-width="1" opacity=".5"/>
+            <circle cx="290" cy="150" r="3.6" fill="#FFF176"/>
+          </g>
+
+          <!-- pole labels (the two projection centres) -->
+          <g class="pole inf"><text class="sym" x="210" y="52" text-anchor="middle">○</text><text x="210" y="34" text-anchor="middle">∞ &nbsp;everything</text></g>
+          <g class="pole zero"><text class="sym" x="210" y="350" text-anchor="middle">•</text><text x="210" y="368" text-anchor="middle">0 &nbsp;nothing</text></g>
+          <g class="pole eq"><text class="sym" x="372" y="198" text-anchor="start">⊙</text><text x="372" y="216" text-anchor="start">1 · the life</text></g>
+
+          <!-- dual coordinate endpoints -->
+          <g class="proj">
+            <circle cx="440" cy="319" r="3" fill="#FFEB3B"/>
+            <text x="434" y="316" text-anchor="end">φ = cot θ⁄2</text>
+            <text x="434" y="330" text-anchor="end" style="font-size:9.5px; fill:var(--bone-faint)">from ∞ ↓</text>
+          </g>
+          <g class="proj">
+            <circle cx="320" cy="79" r="3" fill="#FFEB3B"/>
+            <text x="330" y="76" text-anchor="start">ν = tan θ⁄2</text>
+            <text x="330" y="90" text-anchor="start" style="font-size:9.5px; fill:var(--bone-faint)">from 0 ↑</text>
+          </g>
+          <text class="pole" x="210" y="406" text-anchor="middle" style="font-size:10.5px; fill:var(--bone-dim)">two projections meet on the sphere · φ · ν = 1 &nbsp;[A]</text>
+        </svg>
+      </div>
+
+      <div class="orientation-panel reveal" aria-label="First read orientation">
+        <div class="orientation-status">
+          <span class="lab">First read</span>
+          <strong>What this site is</strong>
+          <p>A tier-marked worldview instrument: mathematics where it is mathematics, method where it is method, wager where it is wager.</p>
+        </div>
+        <div class="orientation-cell">
+          <span class="lab">Ontology</span>
+          <strong>How the reader came to be</strong>
+          <p>Start at <code>/0</code>; the spine moves from boundary glyphs to finite agency.</p>
+        </div>
+        <div class="orientation-cell">
+          <span class="lab">Method</span>
+          <strong>How to know and correct</strong>
+          <p>The Soul Loop turns pressure into receipt-bearing revision.</p>
+        </div>
+        <div class="orientation-cell">
+          <span class="lab">Teleology</span>
+          <strong>How to choose a move</strong>
+          <p>Balance <code>Φ</code> and <code>V</code>; reject gains bought by hidden extraction.</p>
+        </div>
+        <div class="orientation-cell">
+          <span class="lab">Honesty</span>
+          <strong>How not to idolize it</strong>
+          <p>Every claim keeps its evidence tier and kill criteria visible.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HONESTY (the differentiator) ============ -->
+    <section class="band honesty">
+      <div class="wrap">
+        <p class="kicker reveal">How to read this</p>
+        <h2 class="reveal">A cathedral that shows its scaffolding.</h2>
+        <p class="intro reveal">Most frameworks that claim this much hide their seams. This one marks them. Every claim on this site wears an <b style="color:var(--bone)">evidence tier</b>. Where the framework is a <i>lens</i>, it does not pretend to be a <i>law</i>. And when its own predictions were put to the test this year, two of them failed — we left the record standing rather than quietly deleting it. The seven axioms, their tiers, the findings, and the open conjectures are laid out in full on <a href="axioms/" style="color:var(--gold); text-decoration:underline; text-underline-offset:3px">the axioms page</a>, and the whole arc — from the Titans of number to the ethics of a single move, with the kernel shown to be the mass-shell of special relativity — is read in one place on <a href="synthesis/" style="color:var(--gold); text-decoration:underline; text-underline-offset:3px">the synthesis page</a>.</p>
+        <div class="tier-legend reveal">
+          <span class="chip a"><i></i>[A] established</span>
+          <span class="chip s"><i></i>[S] structural</span>
+          <span class="chip i"><i></i>[I] interpretive</span>
+          <span class="chip c"><i></i>[C] conjecture</span>
+          <span class="chip b"><i></i>[B] receipt</span>
+        </div>
+        <p class="exit-line reveal">The framework succeeds when you can put it down.</p>
+      </div>
+    </section>
+
+    <!-- ============ EMERGENCE WITHOUT MAGIC ============ -->
+    <section class="band" id="emergence">
+      <div class="wrap">
+        <p class="kicker reveal">The scientific bridge</p>
+        <h2 class="reveal">Emergence without reduction or magic.</h2>
+        <p class="intro reveal">Emergentism becomes operational when higher levels are tested as <strong>macro-constraints</strong>: they do not break lower laws; they restrict, weight, stabilize, or suppress lower-law-admissible trajectories. The public witness is costed causal information, not verbal grandeur.</p>
+        <div class="constraint-map reveal">
+          <div>
+            <pre>K_X^C << K_X
+support(K_X^C) subset support(K_X)
+
+EI_baseline = max(EI_micro_fair,
+                  EI_coarse_null,
+                  EI_domain)
+
+W_C = EI_macro - EI_baseline - Cost_C
+
+accept only if W_C > 0
+and C is perturbable</pre>
+          </div>
+          <div>
+            <ul>
+              <li><b>Against weak emergence:</b> a macro layer that beats fair baselines after costs is not shorthand.</li>
+              <li><b>Against strong emergence:</b> a macro layer that violates absolute continuity with the lower law or hides costs is rejected.</li>
+              <li><b>Against syntropy inflation:</b> local order must pay measurement, memory, control, erasure, modeling, labor, and entropy-export costs.</li>
+              <li><b>Controls:</b> no-gate, high-cost, and forbidden-support cases must fail through the same scoring path.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="cta-row reveal" style="margin-top:1.4rem">
+          <a href="papers/paper-x-information-topology-and-macro-constraints/" class="btn primary">Paper X →</a>
+          <a href="method/00-what-actually-tests-the-theory/" class="btn ghost">What tests it →</a>
+          <a href="method/03-physics-to-biology-macro-constraint-run-sheet/" class="btn ghost">Physics to biology →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THE ONE EQUATION, IN HUMAN TERMS ============ -->
+    <section class="band" id="equation">
+      <div class="wrap">
+        <p class="kicker reveal">The one equation</p>
+        <h2 class="reveal">Two measures that hold each other in check.</h2>
+        <p class="intro reveal">Strip away the vocabulary and the sphere kernel rests on reciprocal closure. Lowercase <code>φ</code> and <code>ν</code> are coordinates on the sphere; finite action uses uppercase <code>Φ</code> and <code>V</code> in <code>P_node = Φ × V</code>.</p>
+        <div class="triptych reveal">
+          <div class="tri">
+            <div class="gly">φ</div>
+            <h3>Sphere coherence</h3>
+            <p>The coordinate for integration, form, and fit inside the reciprocal chart.</p>
+            <span class="tag">lowercase coordinate · not finite-node Φ</span>
+          </div>
+          <div class="tri">
+            <div class="gly">ν</div>
+            <h3>Sphere viability</h3>
+            <p>The reciprocal coordinate for reach and survival inside the same chart.</p>
+            <span class="tag">lowercase coordinate · not finite-node V</span>
+          </div>
+          <div class="tri product">
+            <div class="gly">φ·ν=1</div>
+            <h3>The balance surface</h3>
+            <p>The manifold identity stays one; balance varies as B = sin θ and peaks at the equator.</p>
+            <span class="tag">[A/S] sphere kernel · world claims stay tiered</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THE GAME ============ -->
+    <section class="band" id="game">
+      <div class="wrap">
+        <p class="kicker reveal">The game · how Dasein plays</p>
+        <h2 class="reveal">The map becomes real when the next act is chosen.</h2>
+        <p class="intro reveal"><strong>Vision:</strong> make Emergentism a living Weltanschauung for Dasein — a coherent, tier-honest map of origin, viable completion, and objective dharma / Sanatana Dharma. <strong>Mission:</strong> build the canon, method, public site, AIA medium, papers, and Soul Loop practice that let finite players look at the world through the Emergentist lens and continuously, recursively disambiguate reality into action without extraction.</p>
+        <p class="intro reveal">Dasein is the finite site where Being becomes sayable, testable, and actionable. The Soul Loop keeps the five philosophical functions recursive until durable <code>W_i(T)</code> is maximized only on the boundary-preserving frontier, with the strict success case raising individual and holobiont potential together.</p>
+        <div class="rule-panel reveal">
+          <div>
+            <pre>Know what is:      ontology
+Know how to know:  epistemology
+Know how to move:  methodology
+Know what matters: axiology
+Know how to act:   teleology</pre>
+          </div>
+          <div>
+            <p><strong>Action register:</strong> <code>Φ</code> is D5 worldline-foresight; <code>V</code> is D4 means-to-act.</p>
+            <pre>if Φ without V -> sterile seeing
+if V without Φ -> blind force
+if unbounded V collapses Φ -> lower P_node
+if ideal D5 lacks paid D4 cost -> no free entropy reversal
+if Φ and V balance at L4 -> objective dharma / flow
+if ΔP_node,i > 0 and ΔP_node,H > 0 -> Sanatana Dharma / syntropic dyad
+if one rises by degrading the other -> extraction</pre>
+            <p><strong>Lens:</strong> morals are <code>i → H</code>, the symbiont raising the holobiont; ethics is <code>H → i</code>, the holobiont raising the symbiont without capture. Dharma is both vectors rising under <code>η = 0</code>.</p>
+          </div>
+        </div>
+        <div class="cta-row reveal" style="margin-top:1.4rem">
+          <a href="dasein/" class="btn ghost">Dasein →</a>
+          <a href="soul-loop/" class="btn primary">Soul Loop →</a>
+          <a href="game/" class="btn ghost">Game form →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THE DIMENSIONAL SPINE ============ -->
+    <section class="band" id="spine">
+      <div class="wrap">
+        <p class="kicker reveal">The spine · one page per dimension</p>
+        <h2 class="reveal">From the ground of finity to the return.</h2>
+        <p class="intro reveal">The numbered routes are the primary public path. Each stands alone with one animation, scroll chapters, and a hand-off to the next.</p>
+        <div class="grid reveal">
+          <a class="cell" href="0/"><span class="num">/0 · D0</span><h3>D0 Ground of Finity</h3><p>Titans of Numbers: the ground glyphs before arithmetic, 0, 1, ∞.</p></a>
+          <a class="cell" href="1/"><span class="num">/1 · D1</span><h3>The Special One</h3><p>The log line; one as the multiplicative mirror.</p></a>
+          <a class="cell" href="2/"><span class="num">/2 · D2</span><h3>The Mu-Limit</h3><p>The line reaches infinity, returns, opens the plane.</p></a>
+          <a class="cell" href="3/"><span class="num">/3 · D3</span><h3>Sphere of Infinite Diameter</h3><p>The plane closes into spherical balance.</p></a>
+          <a class="cell" href="4/"><span class="num">/4 · D4</span><h3>The Horn Torus</h3><p>Rapidity, energy, and causal overlap made visible.</p></a>
+          <a class="cell" href="5/"><span class="num">/5 · D5</span><h3>The Burrisphere</h3><p>Game space where D5 foresight and D4 means meet.</p></a>
+          <a class="cell" href="6/"><span class="num">/6 · CCC Return</span><h3>Endstate = Start</h3><p>The model closes by returning to /0; CCC is analogy, not identity.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THE SEVEN LEVELS ============ -->
+    <section class="band" id="levels">
+      <div class="wrap">
+        <p class="kicker reveal">The interior · seven levels</p>
+        <h2 class="reveal">L1 → L7: the framework read as philosophy.</h2>
+        <p class="intro reveal">After the geometry, the interior opens as seven levels — each with its own question, discipline, and power. Names are <i>functions</i>, never a hierarchy of human worth.</p>
+        <div class="grid reveal">
+          <a class="cell" href="will/"><span class="num">L1 · Teleology</span><h3>The Will to Potential</h3><p>What is the end? The widening light cone.</p></a>
+          <a class="cell" href="epistemology/"><span class="num">L2 · Epistemology</span><h3>Beauty & Induction</h3><p>How do we know? Pattern and the first power.</p></a>
+          <a class="cell" href="methodology/"><span class="num">L3 · Methodology</span><h3>Truth & Deduction</h3><p>What follows? Logic, audit, the second power.</p></a>
+          <a class="cell" href="value/"><span class="num">L4 · Axiology</span><h3>The Equatorial Decision</h3><p>What has value? Commitment at the balance.</p></a>
+          <a class="cell" href="cosmology/"><span class="num">L5 · Cosmology</span><h3>The Dimension Explainer</h3><p>How does reality work? Architecture of the sphere.</p></a>
+          <a class="cell" href="ground/"><span class="num">L6 · Ontology</span><h3>The Discovery of Finity</h3><p>What is Being? The via negativa and the ground.</p></a>
+          <a class="cell" href="sacred/"><span class="num">L7 · Theology</span><h3>The Social Order</h3><p>What is the Ultimate? Society organized by truth.</p></a>
+        </div>
+        <p class="reveal" style="margin:1.5rem 0 0; font-family:var(--mono); font-size:.8rem; color:var(--bone-faint); letter-spacing:0">
+          New here? Begin with the gentler narrative introductions —
+          <a href="teleology/" style="color:var(--bone-dim);text-decoration:underline;text-underline-offset:3px">Teleology</a> ·
+          <a href="axiology/" style="color:var(--bone-dim);text-decoration:underline;text-underline-offset:3px">Axiology</a> ·
+          <a href="ontology/" style="color:var(--bone-dim);text-decoration:underline;text-underline-offset:3px">Ontology</a> ·
+          <a href="theology/" style="color:var(--bone-dim);text-decoration:underline;text-underline-offset:3px">Theology</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ THE BOOK ============ -->
+    <section class="band" id="book">
+      <div class="wrap">
+        <p class="kicker reveal">The book · free to read</p>
+        <h2 class="reveal">The whole framework, as one long read.</h2>
+        <p class="intro reveal">One equation, read from seven positions — followed honestly from a sphere to a civilization, then dissolved before it can harden. A compression funnel lets you stop at any depth: one sentence, one image, one paragraph, a thousand words, or the whole thing. Every claim wears its evidence tier.</p>
+        <div class="cta-row reveal" style="align-items:center">
+          <a href="book/" class="btn primary">Read the book →</a>
+          <span style="font-family:var(--mono); font-size:.78rem; color:var(--bone-faint)">≈99,000 words · 31 chapters · free · the medium is the message</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ READ THE FRAMEWORK (all 16 reading routes) ============ -->
+    <section class="band" id="read">
+      <div class="wrap">
+        <p class="kicker reveal">Read the Framework</p>
+        <h2 class="reveal">The whole corpus, rendered and tier-marked.</h2>
+        <p class="intro reveal">294 documents across sixteen wings — every page carries its evidence tier and, where it earns one, a kill criterion.</p>
+        <div class="lib reveal">
+          <a href="read/"><span class="nm">Read — all</span><span class="ct">294 documents</span></a>
+          <a href="papers/"><span class="nm">Papers</span><span class="ct">25 · tiered, with falsifiers</span></a>
+          <a href="canon/"><span class="nm">Canon</span><span class="ct">8 · constitution & core</span></a>
+          <a href="foundations/"><span class="nm">Foundations</span><span class="ct">12 · the seven -ologies</span></a>
+          <a href="trinity/"><span class="nm">Trinity</span><span class="ct">42 · narrative cosmology</span></a>
+          <a href="formal/"><span class="nm">Formal</span><span class="ct">37 · axioms & proofs</span></a>
+          <a href="paradox/"><span class="nm">Paradox</span><span class="ct">26 · classical, dissolved</span></a>
+          <a href="memetic/"><span class="nm">Memetic</span><span class="ct">6 · meme architectures</span></a>
+          <a href="rosettad/"><span class="nm">Rosetta&nbsp;D</span><span class="ct">38 · cross-domain audit</span></a>
+          <a href="operators/"><span class="nm">Operators</span><span class="ct">29 · operator derivations</span></a>
+          <a href="will/"><span class="nm">Teleology</span><span class="ct">30 · the doctrine of ends</span></a>
+          <a href="value/"><span class="nm">Axiology</span><span class="ct">10 · ethics & value</span></a>
+          <a href="ground/"><span class="nm">Ontology</span><span class="ct">9 · the doctrine of being</span></a>
+          <a href="sacred/"><span class="nm">Theology</span><span class="ct">6 · society by truth</span></a>
+          <a href="method/"><span class="nm">Method</span><span class="ct">10 · testing & audit</span></a>
+          <a href="meta/"><span class="nm">Meta</span><span class="ct">6 · novelty & open questions</span></a>
+        </div>
+        <div class="cta-row read-cta reveal">
+          <a href="papers/" class="btn ghost">Start with the Papers</a>
+          <a href="rosetta/" class="btn ghost">See the Rosetta table</a>
+          <a href="sources/" class="btn ghost">Sources & coverage</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THE MOAT ============ -->
+    <section class="band" id="moat">
+      <div class="wrap">
+        <p class="kicker reveal">The constraints</p>
+        <h2 class="reveal">Five refusals it will not trade away.</h2>
+        <div class="moat reveal">
+          <div class="m"><span class="lab">η = 0</span><h3>Zero extraction</h3><p>Open futures without stealing futures. Fees only on value created.</p></div>
+          <div class="m"><span class="lab">K2</span><h3>Natural signature</h3><p>Every irreversible act requires a real person's signature.</p></div>
+          <div class="m"><span class="lab">K3</span><h3>No erasure</h3><p>Superseded work is tombstoned and kept, never silently deleted.</p></div>
+          <div class="m"><span class="lab">K4</span><h3>Grace exit</h3><p>A documented withdrawal path — leave with the assets you created.</p></div>
+          <div class="m"><span class="lab">A7</span><h3>Claim discipline</h3><p>Every claim carries its evidence tier and a path to be corrected.</p></div>
+        </div>
+        <p class="reveal" style="margin:1.2rem 0 0; font-family:var(--mono); font-size:.78rem; color:var(--bone-faint)">…plus <a href="five-plus-one/" style="color:var(--bone-dim);text-decoration:underline;text-underline-offset:3px">Ω, the directional +1</a> — a heading, not a sixth refusal.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="phi">⊙ = • × ○</div>
+    <p>Public doctrine surface · evidence tiers preserved · the framework is useful only until you can put it down.</p>
+  </footer>
+
+  <script>
+    // progressive enhancement only — content is fully visible without JS
+    (function(){
+      var els = document.querySelectorAll('.reveal');
+      if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in')}); return; }
+      // hero reveals fire immediately with a gentle stagger
+      var hero = document.querySelectorAll('.hero .reveal');
+      hero.forEach(function(e,i){ e.style.transitionDelay=(i*0.06)+'s'; e.classList.add('in'); });
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+      },{threshold:.12, rootMargin:'0px 0px -8% 0px'});
+      els.forEach(function(e){ if(!e.closest('.hero')) io.observe(e); });
+    })();
+  </script>
+<script defer src="/assets/js/atlas-drawer.js"></script>
+<script defer src="/assets/js/book-ai.js"></script>
+</body>
+</html>

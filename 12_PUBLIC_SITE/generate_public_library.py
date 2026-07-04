@@ -358,7 +358,6 @@ import os
 import re
 import shutil
 from pathlib import Path
-from urllib.parse import quote
 
 import markdown
 
@@ -366,8 +365,6 @@ import markdown
 SITE_ROOT = Path(__file__).resolve().parent
 REPO_ROOT = SITE_ROOT.parents[1]
 HANDOFF = REPO_ROOT / "docs" / "handoff"
-BRANCH = os.environ.get("EMERGENTISM_SOURCE_BRANCH", "main")
-GITHUB_ROOT = f"https://github.com/Menexus-GmbH/magnum-opus/blob/{BRANCH}"
 SITE_BASE_URL = "https://www.emergentism.org/"
 
 WINGS = {
@@ -528,9 +525,8 @@ def rel_href(from_file: Path, target_dir: Path, anchor: str = "") -> str:
     return f"{href}/{anchor}"
 
 
-def github_href(target: Path, anchor: str = "") -> str:
-    rel = target.resolve().relative_to(REPO_ROOT).as_posix()
-    return f"{GITHUB_ROOT}/{quote(rel)}{anchor}"
+def unpublished_source_href(output_file: Path, anchor: str = "") -> str:
+    return rel_href(output_file, SITE_ROOT / "sources", anchor)
 
 
 LINK_RE = re.compile(r"(\[[^\]]+\]\()([^)\s]+)(#[^)]+)?(\))")
@@ -559,7 +555,7 @@ def rewrite_markdown_links(text: str, source: Path, output_file: Path) -> str:
         if raw_target in SOURCE_TO_OUTPUT:
             return f"{prefix}{rel_href(output_file, SOURCE_TO_OUTPUT[raw_target], anchor)}{suffix}"
         if raw_target.exists():
-            return f"{prefix}{github_href(raw_target, anchor)}{suffix}"
+            return f"{prefix}{unpublished_source_href(output_file, anchor)}{suffix}"
         fallback = rel_href(output_file, SITE_ROOT / "sources")
         return f"{prefix}{fallback}{suffix}"
 

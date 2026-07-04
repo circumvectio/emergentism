@@ -57,16 +57,22 @@ def read_file(rel_path):
         return fh.read()
 
 def extract_hrefs(body):
-    return re.findall(r'href="([^"]+)"', body)
+    static_body = re.sub(r"<script\b[^>]*>.*?</script>", "", body, flags=re.IGNORECASE | re.DOTALL)
+    return re.findall(r'href="([^"]+)"', static_body)
 
-def resolve_link(from_file, href):
+def extract_base_href(body):
+    match = re.search(r'<base\b[^>]*href="([^"]+)"', body, flags=re.IGNORECASE)
+    return match.group(1) if match else None
+
+def resolve_link(from_file, href, base_href=None):
     if href.startswith(("http://", "https://", "//", "mailto:", "javascript:", "data:", "#")):
         return None, "external"
     if href.startswith("/"):
         target = os.path.normpath(os.path.join(BASE_DIR, href.lstrip("/")))
         return target, "absolute"
     from_dir = os.path.dirname(from_file)
-    target = os.path.normpath(os.path.join(BASE_DIR, from_dir, href))
+    base_dir = os.path.normpath(os.path.join(BASE_DIR, from_dir, base_href or ""))
+    target = os.path.normpath(os.path.join(base_dir, href))
     return target, "relative"
 
 def check_external_refs():
@@ -100,8 +106,9 @@ def check_internal_links():
     dead = []
     for html_file in get_public_html_files():
         body = read_file(html_file)
+        base_href = extract_base_href(body)
         for href in extract_hrefs(body):
-            target, ltype = resolve_link(html_file, href)
+            target, ltype = resolve_link(html_file, href, base_href)
             if target is None:
                 continue
             if os.path.exists(target):
@@ -123,28 +130,40 @@ def check_internal_links():
 def check_orphans():
     print("\n[3] Orphan page check")
     html_files = get_public_html_files()
-    linked = set()
-    for html_file in html_files:
-        body = read_file(html_file)
-        for href in extract_hrefs(body):
-            target, _ = resolve_link(html_file, href)
-            if target:
-                linked.add(os.path.normpath(target))
-                if os.path.isdir(target):
-                    linked.add(os.path.normpath(os.path.join(target, "index.html")))
-    orphans = []
-    for html_file in html_files:
-        if html_file == "index.html":
+    html_set = {os.path.normpath(os.path.join(BASE_DIR, f)) for f in html_files}
+    entry = os.path.normpath(os.path.join(BASE_DIR, "amrita", "index.html"))
+    reachable = set()
+    queue = [entry] if os.path.exists(entry) else []
+    while queue:
+        full = os.path.normpath(queue.pop(0))
+        if full in reachable or full not in html_set:
             continue
-        full = os.path.normpath(os.path.join(BASE_DIR, html_file))
-        if full not in linked:
-            orphans.append(html_file)
+        reachable.add(full)
+        html_file = os.path.relpath(full, BASE_DIR)
+        body = read_file(html_file)
+        base_href = extract_base_href(body)
+        for href in extract_hrefs(body):
+            target, _ = resolve_link(html_file, href, base_href)
+            if not target:
+                continue
+            target = os.path.normpath(target)
+            if os.path.isdir(target):
+                target = os.path.normpath(os.path.join(target, "index.html"))
+            elif not os.path.splitext(target)[1]:
+                target = os.path.normpath(os.path.join(target, "index.html"))
+            if target in html_set and target not in reachable:
+                queue.append(target)
+    ignored = {os.path.normpath(os.path.join(BASE_DIR, "index.html"))}
+    orphans = [
+        os.path.relpath(full, BASE_DIR)
+        for full in sorted(html_set - reachable - ignored)
+    ]
     if orphans:
         for o in orphans:
-            warn(f"No inbound links: {o}")
+            error(f"Not reachable from /amrita/: {o}")
     else:
-        ok("No orphan pages")
-    return True  # Orphans are warnings, not errors
+        ok("All public pages reachable from /amrita/")
+    return len(orphans) == 0
 
 def check_required_assets():
     print("\n[4] Required asset presence")
