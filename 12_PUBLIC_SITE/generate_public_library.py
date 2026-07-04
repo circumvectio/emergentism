@@ -357,6 +357,7 @@ import json
 import os
 import re
 import shutil
+import sys
 from pathlib import Path
 
 import markdown
@@ -863,6 +864,19 @@ Sitemap: {SITE_BASE_URL}sitemap.xml
 
 
 def main() -> None:
+    # H3 guard (audit 2026-07-04): the ~308 wing pages are FROZEN, HAND-PATCHED
+    # artifacts carrying canon-fidelity + audit corrections (real receipts, tier
+    # cuts, conservation-law fences). An unconditional regeneration would silently
+    # overwrite them. Refuse unless the operator has restored the source bundle
+    # AND back-ported every hand-patch into the generator/templates, then re-runs
+    # with --force. Otherwise this library is a frozen archive.
+    if "--force" not in sys.argv:
+        raise SystemExit(
+            "REFUSING to regenerate: the generated library is a FROZEN, hand-patched "
+            "archive (see the 2026-07-04 audit). Re-running would overwrite the "
+            "tier-honesty corrections. Pass --force only after restoring the bundle "
+            "and back-porting every hand-patch into the templates."
+        )
     required = [HANDOFF / "00_READ_THE_FRAMEWORK.md"]
     required.extend(config["source_dir"] / "README.md" for config in WINGS.values())
     missing = [path for path in required if not path.exists()]
