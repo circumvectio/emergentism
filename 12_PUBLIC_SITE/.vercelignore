@@ -19,12 +19,16 @@ amrita/tools/
 amrita/runaway.test.mjs
 
 # Deploy-cuts + boundary hardening (audit 2026-07-04).
-partials/                              # internal build partials (dev commentary)
-infinite.html                         # payment-not-wired paywall stub (archived to _PLANS/retired/)
-_PLANS/                               # internal specs, plans, audit reports (incl. retired pages)
-.vercel/                              # Vercel build output / project config
-vendor/three-0.160.0/postprocessing/  # unused three.js addons
-vendor/three-0.160.0/shaders/         # unused three.js addons
+# NOTE: gitignore syntax — one pattern per line, no trailing inline comments.
+# internal build partials (dev commentary):
+partials/
+# internal specs, plans, audit reports:
+_PLANS/
+# Vercel build output / project config:
+.vercel/
+# unused three.js addons (referenced by zero pages):
+vendor/three-0.160.0/postprocessing/
+vendor/three-0.160.0/shaders/
 
 # Local runtime state if present in the deploy checkout.
 .env
