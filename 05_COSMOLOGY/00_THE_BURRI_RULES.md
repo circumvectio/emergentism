@@ -108,7 +108,11 @@ carries a *second* directed operator distinct from μ: **χ, finite commitment**
 (UP)**. Conflating them — as doc 10 does, labelling a downward move "μ" and
 identifying it with Born-rule measurement — is the flagged error; χ *does not turn
 a decision into a measurement*. The typed encoding is Codex **BR-2** (μ) / **BR-4**
-(χ), adopted as the engineering-layer articulation under this map.
+(χ), adopted as the engineering-layer articulation under this map. **These two
+operators are the two loops of Rule 4** (receipt 106, K2-accepted 2026-07-10):
+μ = the **strong-emergence** genesis loop (bottom-up), χ = the **weak-selective**
+governance/commitment loop (top-down). The strong/weak signature — its two ∅'s
+and two `[C]` wagers — lives at Rule 4.
 
 **Saturation** `[MODEL/analogy]`: "each Dₙ₊₁ emerges when Dₙ saturates" is
 **asserted in narrative and axiom form** (Trophic Cascade:154; axiom A3 —
@@ -156,6 +160,26 @@ dimensionality, marked `[CONJ]`.
   conditionality caveat: the dichotomy binds only where the two directions
   are conservation-coupled — stable off-equator systems that are not so
   coupled exist and are conceded.
+
+**The strong/weak signature (receipt 106, K2-accepted 2026-07-10).** The two loops
+are the two operators of Rule 2 — μ (genesis, up) and χ (governance/commitment,
+down) — and their asymmetry is `P = Φ × V`-deep. **Strong (μ↑) *adds a new
+factor*:** a novel degree of freedom, *irreducible* (no reducing derivation from
+below — a derivation would collapse it to weak, per the standing counterexample
+above). **Weak (χ↓) *deploys* a factor already won:** it selects among reachable
+futures (the F5 option-cone) and commits one to embodied D4, **producing a
+receipt**. The **two ∅'s are not the same gap**: the *strong* loop lacks a
+**reducing/threshold** law (Rule 2's μ-∅ — you cannot *derive* the crossing); the
+*weak* loop lacks a **governing** law (the top-down ∅ above — you cannot *predict*
+the selection) **yet is post-hoc auditable** (the receipt reconstructs what *was*
+chosen). So weak emergence is **auditable-after, not predictable-before** — the
+signature of free selection under constraint. **Two `[C]` wagers underlie the
+pair:** (i) `Φ×V` multiplicative not additive; (ii) the ∅ marks *genuine* strong
+emergence, not *unsolved* weak — the absence of a reducing law cannot decide
+between them, so the framework **bets strong**; reading the ∅ as *proof* would
+inflate Φ past earned V (η=0 turned inward). *"Weak" = weak-**selective** downward
+causation (ontologically non-novel, efficacious by selection, auditable) — **not**
+Bedau's no-downward-cause sense.*
 
 ## Rule 5 · The Replicator Stack and the Egregorotype — two axes, never fused
 

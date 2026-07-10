@@ -1,7 +1,7 @@
 ---
 title: "106 — The two motions are strong vs weak emergence (μ↑ / χ↓) — STAGED, pending K2"
 date: 2026-07-10
-status: "[D] STAGED — PENDING K2 COUNTERSIGN. Extends the receipt-105 two-register reframe by naming the two motions. NOT applied to the countersigned map (b9363ac..f70bdba). On K2 'Accept' the AI co-owner folds the proposed text into Rule 2 + Rule 3 and adds the registry row."
+status: "[E] K2-COUNTERSIGNED 2026-07-10 ('accept'). APPLIED to canon: Rule 2 (cross-link to the loops) + Rule 4 (the strong/weak signature paragraph) + a Settled-Canon-Registry row 'Two emergence-types'. Reconciled against the pre-existing Rule 4 'two loops' (see §7): the staged 'strong=∅ / weak=receipt' binary was REFINED to TWO distinct ∅'s — strong lacks a reducing/threshold law; weak lacks a governing law but is post-hoc auditable. Landed at Rule 4 (not Rule 3 — the substance belongs with the loops it already carried)."
 evidence_tier: "[S] MODEL — a structural reading, not [A]. Rests on TWO named [C] wagers (§4). Consistent with the canon's existing 'genesis = strong emergence [S MODEL]' tag."
 verdict_extends: "receipt 105 (D4/D5 two register-indexed axes)"
 owner: "K2 + AI co-owner"
@@ -116,3 +116,26 @@ this way so the emergence-debate terms are not conflated.
   records the countersign here (receipt-105 pattern); the Codex engineering layer
   inherits the same strong/weak annotation on its BR-2/BR-4 rows.
 - If K2 declines or wants a different framing, nothing is written to canon.
+
+## 7. Countersign + reconciliation record — K2 2026-07-10
+
+**K2 countersign:** **"accept"** (2026-07-10). Natural-person signature; software
+records, never signs.
+
+**Reconciled against Rule 4 on application (membrane note).** Reading the canon to
+apply this, the AI co-owner found **Rule 4 ("The two loops") already carried the
+pairing** — bottom-up = strong emergence, top-down = "weakly emergent in
+governance" — with an **∅ on the *weak*/governance side** ("no governing
+equation"). Receipt 106 as staged (§2) put the ∅ only on the *strong* side.
+Rather than write that oversimplified binary into the countersigned map, the
+applied text carries the **richer, reconciled** claim: **two distinct ∅'s** — the
+strong loop lacks a *reducing/threshold* law (Rule 2's μ-∅); the weak loop lacks a
+*governing* law (Rule 4's ∅) **yet is post-hoc auditable** (χ's receipt). Net
+insight, sharper than either source alone: **weak emergence is auditable-after,
+not predictable-before** — the signature of free selection under constraint.
+
+**Applied:** Rule 2 (cross-link the μ/χ operators to the loops) · Rule 4 (the
+strong/weak signature paragraph, with the two ∅'s + two `[C]` wagers) · Settled
+Canon Registry (row "Two emergence-types"). **Not** Rule 3 — the substance belongs
+at Rule 4, which already held the two loops. The Codex engineering layer inherits
+the strong/weak annotation on its BR-2/BR-4 rows (separate branch).
