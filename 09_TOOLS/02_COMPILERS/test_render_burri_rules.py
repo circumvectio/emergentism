@@ -33,6 +33,11 @@ TRACE_CRITERIA = {
     "objective-like-bias",
     "continuing-substrate-input-cost",
 }
+SOROS_URL = (
+    "https://www.opensocietyfoundations.org/uploads/"
+    "9ae17912-2262-4646-8ffc-d01afc934c36/"
+    "george-soros-general-theory-of-reflexivity-transcript.pdf"
+)
 
 
 def load_renderer():
@@ -209,7 +214,70 @@ class BurriRulesRendererTests(unittest.TestCase):
         self.assertIn("amplifying", signs["positive"].lower())
         self.assertIn("not moral", bridge["signBoundary"].lower())
         soros = next(source for source in topology["sources"] if "url" in source)
+        self.assertEqual(soros["id"], "src-soros")
+        self.assertEqual(soros["url"], SOROS_URL)
         self.assertEqual(soros["crosswalkTier"], "I")
+
+    def test_validator_rejects_load_bearing_semantic_retyping(self):
+        api, topology = self.api_and_topology()
+
+        mutations = {
+            "chi modality": lambda value: next(
+                node for node in value["nodes"] if node["id"] == "chi"
+            ).update(modality="possible"),
+            "action register": lambda value: next(
+                node for node in value["nodes"] if node["id"] == "d4-action"
+            ).update(dRegister="D5"),
+            "receipt role": lambda value: next(
+                node for node in value["nodes"] if node["id"] == "receipt"
+            ).update(role="forward"),
+            "actual edge modality": lambda value: next(
+                edge for edge in value["edges"] if edge["id"] == "e-chi-action"
+            ).update(modality="possible"),
+            "possible fan modality": lambda value: next(
+                edge for edge in value["edges"] if edge["id"] == "e-model-option-a"
+            ).update(modality="actual"),
+            "feedback policy": lambda value: next(
+                edge
+                for edge in value["edges"]
+                if edge["id"] == "e-receipt-model-feedback"
+            ).update(updatePolicy="changed"),
+            "Soros substitution": lambda value: next(
+                source for source in value["sources"] if source["id"] == "src-soros"
+            ).update(url="https://example.com/not-soros.pdf"),
+            "Soros identity": lambda value: next(
+                source for source in value["sources"] if source["id"] == "src-soros"
+            ).update(id="src-other"),
+        }
+        for name, mutate in mutations.items():
+            with self.subTest(name=name):
+                candidate = copy.deepcopy(topology)
+                mutate(candidate)
+                self.assertTrue(api.validate_topology(candidate, REPO_ROOT), name)
+
+    def test_validator_is_total_on_malformed_nested_shapes_and_nonfinite_geometry(self):
+        api, topology = self.api_and_topology()
+        mutations = {
+            "rule id list": lambda value: value["rules"][0].update(id=[]),
+            "view list": lambda value: value["views"].update(proof=[]),
+            "feedback signs null": lambda value: value["reflexiveBridge"].update(
+                feedbackSigns=None
+            ),
+            "boundary fields list": lambda value: value["boundaries"][0].update(
+                fields=[]
+            ),
+            "physical cone list": lambda value: value["cones"].update(physical=[]),
+            "operational core null": lambda value: value.update(operationalCore=None),
+            "NaN coordinate": lambda value: value["nodes"][0].update(x=float("nan")),
+            "infinite coordinate": lambda value: value["nodes"][0].update(y=float("inf")),
+        }
+        for name, mutate in mutations.items():
+            with self.subTest(name=name):
+                candidate = copy.deepcopy(topology)
+                mutate(candidate)
+                errors = api.validate_topology(candidate, REPO_ROOT)
+                self.assertIsInstance(errors, list)
+                self.assertTrue(errors, name)
 
     def test_receipt_feedback_requires_update_or_explicit_null_reason(self):
         _, topology = self.api_and_topology()
@@ -273,7 +341,7 @@ class BurriRulesRendererTests(unittest.TestCase):
             self.assertEqual(topology["views"][view_id]["height"], 1000)
             svg = api.render_view(topology, view_id, topology_hash)
             root = ET.fromstring(svg)
-            self.assertEqual(local_name(root.tag), "svg")
+            self.assertEqual(root.tag, "{http://www.w3.org/2000/svg}svg")
             self.assertEqual(root.attrib.get("role"), "img")
             self.assertEqual(root.attrib.get("width"), "1600")
             self.assertEqual(root.attrib.get("height"), "1000")
@@ -301,8 +369,131 @@ class BurriRulesRendererTests(unittest.TestCase):
                 "<foreignobject",
             ):
                 self.assertNotIn(forbidden, lowered)
-            self.assertNotIn("http://", lowered)
             self.assertNotIn("https://", lowered)
+
+        with self.assertRaises(ValueError):
+            api.render_view(topology, "proof", "g" * 64)
+        with self.assertRaises(ValueError):
+            api.render_view(topology, "proof", "0" * 63)
+
+    def test_banded_layout_and_reduced_emblem_contract(self):
+        """Keep dense proof annotations in panels and the emblem genuinely compact."""
+        api, topology = self.api_and_topology()
+        topology_hash = api.topology_sha256(TOPOLOGY)
+
+        proof = ET.fromstring(api.render_view(topology, "proof", topology_hash))
+        proof_by_id = {
+            element.attrib["id"]: element
+            for element in proof.iter()
+            if "id" in element.attrib
+        }
+        self.assertEqual(proof.attrib.get("data-layout"), "banded-v2")
+        for group_id in (
+            "dimension-spine",
+            "soul-loop",
+            "proof-insets",
+            "reflexive-bridge-panel",
+            "egregoreotype-inset",
+            "quantum-inset",
+        ):
+            self.assertIn(group_id, proof_by_id)
+
+        inset_boxes = []
+        for panel_id in (
+            "reflexive-bridge-panel",
+            "egregoreotype-inset",
+            "quantum-inset",
+        ):
+            raw_box = proof_by_id[panel_id].attrib.get("data-box", "")
+            values = tuple(float(value) for value in raw_box.split())
+            self.assertEqual(len(values), 4, panel_id)
+            x, y, width, height = values
+            self.assertGreater(width, 0)
+            self.assertGreater(height, 0)
+            self.assertGreaterEqual(x, 0)
+            self.assertGreaterEqual(y, 0)
+            self.assertLessEqual(x + width, 1600)
+            self.assertLessEqual(y + height, 1000)
+            inset_boxes.append((panel_id, x, y, width, height))
+        for index, (left_id, lx, ly, lw, lh) in enumerate(inset_boxes):
+            for right_id, rx, ry, rw, rh in inset_boxes[index + 1 :]:
+                separated = (
+                    lx + lw <= rx
+                    or rx + rw <= lx
+                    or ly + lh <= ry
+                    or ry + rh <= ly
+                )
+                self.assertTrue(separated, f"{left_id} overlaps {right_id}")
+
+        quantum_descendants = {
+            element.attrib.get("id")
+            for element in proof_by_id["quantum-inset"].iter()
+        }
+        self.assertTrue({"quantum-state", "quantum-record"} <= quantum_descendants)
+        for overlay_id in ("quantum-state", "quantum-record"):
+            self.assertEqual(
+                sum(element.attrib.get("id") == overlay_id for element in proof.iter()),
+                1,
+            )
+
+        emblem = ET.fromstring(api.render_view(topology, "emblem", topology_hash))
+        emblem_by_id = {
+            element.attrib["id"]: element
+            for element in emblem.iter()
+            if "id" in element.attrib
+        }
+        self.assertEqual(emblem.attrib.get("data-layout"), "banded-v2")
+        self.assertNotIn("proof-insets", emblem_by_id)
+        self.assertNotIn("quantum-inset", emblem_by_id)
+        for node_id in topology["operationalCore"]:
+            node_group = emblem_by_id[node_id]
+            compact_label = node_group.attrib.get("data-display-label", "")
+            self.assertTrue(compact_label, node_id)
+            self.assertLessEqual(len(compact_label), 22, node_id)
+
+        proof_text = " ".join(
+            " ".join("".join(element.itertext()).split())
+            for element in proof.iter()
+            if local_name(element.tag) == "text"
+        )
+        emblem_text = " ".join(
+            " ".join("".join(element.itertext()).split())
+            for element in emblem.iter()
+            if local_name(element.tag) == "text"
+        )
+        for annotation in (
+            "M_t fallible world-model",
+            "V_t declared selector / value state",
+            "chi_t finite authorized commitment",
+            "a_t D4 enacted action",
+            "R_(t+1) consequence receipt",
+            "changed or explicit null-with-reason",
+        ):
+            self.assertIn(annotation, proof_text)
+            self.assertNotIn(annotation, emblem_text)
+        self.assertTrue(
+            any(element.attrib.get("class") == "tier-badge" for element in proof.iter())
+        )
+        self.assertFalse(
+            any(element.attrib.get("class") == "tier-badge" for element in emblem.iter())
+        )
+
+    def test_modality_controls_dash_and_feedback_controls_curve(self):
+        api, topology = self.api_and_topology()
+        root = ET.fromstring(api.render_view(topology, "proof", api.topology_sha256(TOPOLOGY)))
+        by_id = {
+            element.attrib["id"]: element
+            for element in root.iter()
+            if "id" in element.attrib
+        }
+
+        actual_coupling = by_id["e-signature-chi"]
+        possible_coupling = by_id["e-model-chi"]
+        feedback = by_id["e-receipt-model-feedback"]
+        self.assertNotIn("stroke-dasharray", actual_coupling.attrib)
+        self.assertIn("stroke-dasharray", possible_coupling.attrib)
+        self.assertEqual(local_name(feedback.tag), "path")
+        self.assertEqual(feedback.attrib.get("data-role"), "feedback")
 
     def test_repeated_rendering_is_byte_identical(self):
         api, topology = self.api_and_topology()
@@ -316,6 +507,8 @@ class BurriRulesRendererTests(unittest.TestCase):
         api, _ = self.api_and_topology()
         written = api.write_outputs(TOPOLOGY, REPO_ROOT)
         self.assertEqual(written, EXPECTED_OUTPUTS)
+        for path in written:
+            self.assertEqual(path.stat().st_mode & 0o777, 0o644, path)
         command = [sys.executable, "-B", str(COMPILER)]
         checked = subprocess.run(
             command + ["--check"], cwd=REPO_ROOT, text=True, capture_output=True
