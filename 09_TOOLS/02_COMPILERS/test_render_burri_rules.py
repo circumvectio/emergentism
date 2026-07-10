@@ -268,6 +268,12 @@ class BurriRulesRendererTests(unittest.TestCase):
             ),
             "physical cone list": lambda value: value["cones"].update(physical=[]),
             "operational core null": lambda value: value.update(operationalCore=None),
+            "unhashable from endpoint": lambda value: value["edges"][0].update(
+                **{"from": []}
+            ),
+            "unhashable to endpoint": lambda value: value["edges"][0].update(
+                to={}
+            ),
             "NaN coordinate": lambda value: value["nodes"][0].update(x=float("nan")),
             "infinite coordinate": lambda value: value["nodes"][0].update(y=float("inf")),
         }
@@ -494,6 +500,7 @@ class BurriRulesRendererTests(unittest.TestCase):
         self.assertIn("stroke-dasharray", possible_coupling.attrib)
         self.assertEqual(local_name(feedback.tag), "path")
         self.assertEqual(feedback.attrib.get("data-role"), "feedback")
+        self.assertRegex(feedback.attrib.get("d", ""), r"\bC\b")
 
     def test_repeated_rendering_is_byte_identical(self):
         api, topology = self.api_and_topology()

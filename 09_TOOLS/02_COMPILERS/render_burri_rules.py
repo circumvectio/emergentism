@@ -597,7 +597,12 @@ def validate_topology(topology: dict, repo_root: Path) -> list[str]:
             if not isinstance(edge, dict) or edge.get("overlay") == "quantum":
                 continue
             start, end = edge.get("from"), edge.get("to")
-            if start in core and end in core:
+            if (
+                _is_nonempty_string(start)
+                and _is_nonempty_string(end)
+                and start in core
+                and end in core
+            ):
                 adjacency[start].add(end)
                 adjacency[end].add(start)
         if core:
