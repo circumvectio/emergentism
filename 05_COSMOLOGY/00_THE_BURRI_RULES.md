@@ -6,19 +6,22 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[A/B/S/I/D/C]"
-  canonical_phrase: "The Burri Rules — semantic authority for typed consequence diagrams"
+  canonical_phrase: "The Burri Rules — engineering/rendering-conformance layer UNDER 00_THE_BURRI_RULES.md (typed consequence diagrams)"
   vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root"
-status: "DRAFT v0.1 - pending K2 plate and claim-boundary signoff"
+status: "[D] engineering/rendering-conformance layer UNDER the K2-countersigned 01_EMERGENTISM/05_COSMOLOGY/00_THE_BURRI_RULES.md — ratified in that role 2026-07-10 (receipt 105, K2 'Accept'). Non-authoritative semantic mirror: may not introduce, redefine, weaken, or upgrade canon claims. Canon adopted ONLY this build's BR-2/BR-4 (mu/chi) operator grammar into Rule 2-3."
 evidence_tier: "[A] established mathematics and physics boundaries; [B] primary-source attribution and receipts; [S] typed-graph and rule semantics under declared premises; [I] cross-domain, Soul Loop, Rosetta, and reflexivity mappings; [D] this draft and universal mu claims pending K2; [C] quantum, literal-retrocausal, and cosmic claims"
 owner: "L5 Brāhmaṇa — Cosmology system architecture; K2 signoff required"
 ---
 
 # The Burri Rules
 
-> **Status:** `DRAFT v0.1 - pending K2 plate and claim-boundary signoff`.
-> This Markdown file owns the semantics of a Burri diagram. The topology JSON
-> is a non-authoritative semantic mirror plus geometry and source data; it may
-> not introduce claims, redefine, weaken, or silently upgrade these rules.
+> **Status:** `[D]` **engineering/rendering-conformance layer UNDER** the
+> K2-countersigned `01_EMERGENTISM/05_COSMOLOGY/00_THE_BURRI_RULES.md` (ratified
+> in that role 2026-07-10 — receipt 105, K2 "Accept"). The **signed map owns the
+> semantics**; this file owns **diagram typing + rendering conformance** and may
+> not introduce, redefine, weaken, or upgrade canon claims. Canon adopted only
+> this build's **BR-2/BR-4 (μ/χ) operator grammar** into Rule 2–3. The topology
+> JSON is a non-authoritative mirror of *this* file.
 
 ## 1. Scope and evidence boundary
 
@@ -264,8 +267,8 @@ physical particles or a proof of seven literal layers:
 | `D1` | distinction | crossing needs a new positive freedom and recovery |
 | `D2` | configuration | distinguished elements are required before arrangement |
 | `D3` | transformation / persistence | configuration is required before change can be tracked |
-| `D4` | causal actuality, bounded witness, embodied means, receipt | solid edges only |
-| `D5` | counterfactual possibility, selection, worldline foresight | dotted options are fallible representations |
+| `D4` | **action-register reading:** causal actuality, bounded witness, embodied means, receipt (the χ-commitment lands here). *Emergence-register (canon Rule 3): D4 = potential/witness.* | solid edges only |
+| `D5` | **action-register reading:** counterfactual possibility, selection, worldline foresight (Φ). *Emergence-register (canon Rule 3): D5 = the one actual enactment, μ₄ up.* "Actual" is register-indexed (receipt 105). | dotted options are fallible representations |
 | `D6` | apophatic closure / `D6 == D0` | `mu_5` declares demonstrable closure; no new positive freedom, science, or supermind |
 
 Each `D_n → D_(n+1)` claim must pass BR-2 independently. The internal dependency
