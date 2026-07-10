@@ -86,6 +86,40 @@ REQUIRED_EDGE_TYPES = {
     "e-receipt-trace": ("receipt", "shared-trace", "D4", "actual", "coupling"),
     "e-trace-selector": ("shared-trace", "d5-selector", "D5", "possible", "coupling"),
 }
+LIST_OF_OBJECT_FIELDS = {
+    "rules",
+    "sources",
+    "nodes",
+    "edges",
+    "boundaries",
+    "slippages",
+    "feedbackSigns",
+}
+LIST_OF_STRING_FIELDS = {
+    "ruleIds",
+    "sourceIds",
+    "criteria",
+    "requirements",
+    "updates",
+    "nodeIds",
+    "edgeIds",
+    "coreElementIds",
+    "operationalCore",
+}
+OBJECT_FIELDS = {
+    "cones",
+    "physical",
+    "option",
+    "quantumOverlay",
+    "reflexiveBridge",
+    "rosettaProjection",
+    "views",
+    "proof",
+    "emblem",
+}
+STRING_MAP_FIELDS = {"marks", "markLabels", "inputs", "outputs", "fields", "palette"}
+BOOLEAN_FIELDS = {"closure", "acting", "displayLociOnly", "removable"}
+NUMERIC_FIELDS = {"x", "y", "width", "height"}
 FULL_TEXT_EQUIVALENT = (
     "The Titans frame possibility; a finite agent forms a fallible D5 option field, "
     "commits through D4 means and authorization, receives D4 consequences, and "
@@ -205,6 +239,66 @@ def _is_allowed(value: Any, allowed: set[str]) -> bool:
     return isinstance(value, str) and value in allowed
 
 
+def _validate_declared_shapes(topology: dict) -> list[str]:
+    """Validate the JSON container/scalar grammar before semantic inspection.
+
+    The topology is intentionally closed over a small declared schema. This
+    pass prevents a malformed container from reaching string escaping, set
+    membership, geometry, or rendering code that expects a scalar.
+    """
+    errors: list[str] = []
+
+    def visit_mapping(value: dict, path: str) -> None:
+        for key in sorted(value):
+            child = value[key]
+            child_path = f"{path}.{key}"
+            if key in LIST_OF_OBJECT_FIELDS:
+                if not isinstance(child, list):
+                    errors.append(f"{child_path}: must be a list of objects")
+                    continue
+                for index, item in enumerate(child):
+                    item_path = f"{child_path}[{index}]"
+                    if not isinstance(item, dict):
+                        errors.append(f"{item_path}: must be an object")
+                    else:
+                        visit_mapping(item, item_path)
+            elif key in LIST_OF_STRING_FIELDS:
+                if not isinstance(child, list):
+                    errors.append(f"{child_path}: must be a list of non-empty strings")
+                    continue
+                for index, item in enumerate(child):
+                    if not _is_nonempty_string(item):
+                        errors.append(f"{child_path}[{index}]: must be a non-empty string")
+            elif key in OBJECT_FIELDS:
+                if not isinstance(child, dict):
+                    errors.append(f"{child_path}: must be an object")
+                else:
+                    visit_mapping(child, child_path)
+            elif key in STRING_MAP_FIELDS:
+                if not isinstance(child, dict):
+                    errors.append(f"{child_path}: must be a string map")
+                    continue
+                for map_key in sorted(child):
+                    map_path = f"{child_path}.{map_key}"
+                    if not _is_nonempty_string(map_key) or not _is_nonempty_string(child[map_key]):
+                        errors.append(f"{map_path}: must map a non-empty key to a non-empty string")
+            elif key in BOOLEAN_FIELDS or key.startswith("show"):
+                if not isinstance(child, bool):
+                    errors.append(f"{child_path}: must be boolean")
+            elif key in NUMERIC_FIELDS:
+                if (
+                    not isinstance(child, (int, float))
+                    or isinstance(child, bool)
+                    or not math.isfinite(float(child))
+                ):
+                    errors.append(f"{child_path}: must be finite numeric geometry")
+            elif not _is_nonempty_string(child):
+                errors.append(f"{child_path}: scalar fields must be non-empty strings")
+
+    visit_mapping(topology, "topology")
+    return errors
+
+
 def _refs_are_valid(
     element: dict,
     element_name: str,
@@ -240,6 +334,10 @@ def validate_topology(topology: dict, repo_root: Path) -> list[str]:
     errors: list[str] = []
     if not isinstance(topology, dict):
         return ["topology root must be an object"]
+
+    shape_errors = _validate_declared_shapes(topology)
+    if shape_errors:
+        return shape_errors
 
     required_top = {"schemaVersion", "rules", "sources", "nodes", "edges", "views"}
     missing_top = sorted(required_top - set(topology))

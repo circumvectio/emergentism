@@ -294,6 +294,76 @@ class BurriRulesRendererTests(unittest.TestCase):
                 self.assertIsInstance(errors, list)
                 self.assertTrue(errors, name)
 
+    def test_validator_rejects_containers_in_declared_scalar_fields(self):
+        api, topology = self.api_and_topology()
+        mutations = {
+            "rule tier": lambda value, replacement: value["rules"][0].update(
+                tier=replacement
+            ),
+            "Titan mark": lambda value, replacement: value["nodes"][0][
+                "marks"
+            ].update(bullet=replacement),
+            "Titan mark label": lambda value, replacement: value["nodes"][0][
+                "markLabels"
+            ].update(bullet=replacement),
+            "edge style": lambda value, replacement: value["edges"][0].update(
+                style=replacement
+            ),
+            "boundary field": lambda value, replacement: value["boundaries"][0][
+                "fields"
+            ].update(eta=replacement),
+            "view boolean": lambda value, replacement: value["views"]["proof"].update(
+                showFullLabels=replacement
+            ),
+            "top-level title": lambda value, replacement: value.update(
+                title=replacement
+            ),
+        }
+        for name, mutate in mutations.items():
+            for replacement in ([], {}):
+                with self.subTest(name=name, replacement=type(replacement).__name__):
+                    candidate = copy.deepcopy(topology)
+                    mutate(candidate, replacement)
+                    errors = api.validate_topology(candidate, REPO_ROOT)
+                    self.assertIsInstance(errors, list)
+                    self.assertTrue(errors, name)
+
+    def test_every_current_scalar_leaf_rejects_container_substitution(self):
+        api, topology = self.api_and_topology()
+        scalar_paths = []
+
+        def walk(value, path=()):
+            if isinstance(value, dict):
+                for key, child in value.items():
+                    walk(child, path + (key,))
+            elif isinstance(value, list):
+                for index, child in enumerate(value):
+                    walk(child, path + (index,))
+            else:
+                scalar_paths.append(path)
+
+        def parent_and_key(value, path):
+            parent = value
+            for step in path[:-1]:
+                parent = parent[step]
+            return parent, path[-1]
+
+        walk(topology)
+        self.assertGreater(len(scalar_paths), 1000)
+        for path in scalar_paths:
+            parent, key = parent_and_key(topology, path)
+            original = parent[key]
+            path_label = ".".join(str(step) for step in path)
+            for replacement in ([], {}):
+                with self.subTest(path=path_label, replacement=type(replacement).__name__):
+                    parent[key] = replacement
+                    try:
+                        errors = api.validate_topology(topology, REPO_ROOT)
+                    finally:
+                        parent[key] = original
+                    self.assertIsInstance(errors, list)
+                    self.assertTrue(errors, path_label)
+
     def test_receipt_feedback_requires_update_or_explicit_null_reason(self):
         _, topology = self.api_and_topology()
         receipts = [node for node in topology["nodes"] if node["kind"] == "receipt"]
