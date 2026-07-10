@@ -32,6 +32,7 @@ This is the Auditing sublane for the complete derivation spine.
 ## Read First
 
 - `00_THE_DERIVATION.md`
+- [`01_BURRI_RULES_DERIVATION_LEDGER.md`](01_BURRI_RULES_DERIVATION_LEDGER.md) — draft proof burden, contradiction receipts, Soros source fence, and kill criteria for the Burri Rules.
 - Parent route: `../README.md`
 
 ## Status
