@@ -1,7 +1,7 @@
 ---
 title: "107 — The two motions close at D6≡D0; the open loop — STAGED, pending K2"
 date: 2026-07-10
-status: "[D] STAGED — PENDING K2 COUNTERSIGN. Extends receipts 105–106. Its FORM enacts its content: an [S] spine written firm, an [I/C] edge written AS an open edge. NOT applied to the countersigned map."
+status: "[E] K2-COUNTERSIGNED 2026-07-10 ('accept'). APPLIED to canon: Rule 3 (D6 row — the two motions meet + summit-as-return), Rule 4 (the open-loop paragraph, written AS an open edge), Settled-Canon-Registry row 'The loop / the open loop'. Its FORM enacts its content: [S] spine firm, [I/C] edge open. Extends receipts 105–106."
 evidence_tier: "[S] the loop-closure + bounded-μ/unbounded-χ asymmetry; [I/C] the constitutive-openness turn (downstream of the two [C] wagers) — logged as orientation, NOT theorem"
 verdict_extends: "receipts 105 (two axes) + 106 (strong/weak)"
 owner: "K2 + AI co-owner"
@@ -122,6 +122,9 @@ purpose, unclosed —
 
 ## 6. Disposition
 
-`[S]` spine + `[I/C]` edge, pending K2. On **'Accept'** the AI co-owner applies
-(a)/(b)/(c) — writing the spine firm and the edge *as an edge* — and records the
-countersign (receipt-105/106 pattern). If K2 declines, nothing is written.
+`[S]` spine + `[I/C]` edge. **K2-COUNTERSIGNED 2026-07-10 ("accept").** Applied:
+Rule 3 D6 row (a), Rule 4 open-loop paragraph (b), registry row (c) — spine firm,
+edge open, per the receipt-105/106 pattern. The `[I/C]` open-loop edge is
+orientation, **deliberately not propagated as a hard rule** — its registry entry
+flags only its *misuse* (presenting it as a proven theorem), never its use. §5
+stays unclosed. The thread's next turn past here is Pratyakṣa, not text.

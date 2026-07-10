@@ -143,7 +143,7 @@ dimensionality, marked `[CONJ]`.
 | **D3** | **Transformation** — arrangements can change; process begins | change, not yet directed | `[S]` |
 | **D4** | **Causality** — change has direction; time appears; **the potential register** (pre-collapse superposition) | directed process | geometric seat: **the torus hole** — the causal vertex, the Witness (doc 34 `[S]`, receipt 104 A.5) · **action-register reading: the embodied means-to-act + receipt — `V`** (doc 34 §IX.6; receipt 105) |
 | **D5** | **Agency** — the system selects within its own change; **one actual enactment**; consciousness is the lived reading `[I]` | selection, navigable choice; F5 option-cone `[C/I]`; egregores at high Φ; the Mutualism Limit; the highest positive public register | geometric seat: **the torus surface** — the φ-ν plane, the present, the Agent. **Two registers (receipt 105 REFRAME · K2 2026-07-10 "Accept").** **Emergence/μ axis:** D4 = potential (pre-collapse witness) → D5 = **one actual enactment**, μ₄ runs UP (docs 34/27, reading of record). **Action/χ axis** (via `P_node = Φ×V` and the Soul Loop): D5 = **Φ worldline-foresight/possibility**, D4 = **V embodied means + receipt**, commitment flowing **D5→D4** (doc 34 §I/§IX.6/§X, doc 27 §VI, Codex BR-4). **"Actual" is register-indexed** — emergence-actual at D5, operation-actual at D4. Doc 10's error is running the *emergence* operator μ downward and fusing it with measurement — **not** the existence of the action-register D5→D4 direction, which is live canon (receipt 104 A.2, reframed) |
-| **D6** | **Closure** — positive experience exhausts; the cycle returns to point-state | the axiomatic edge | **D6 ≡ D0**: `[A]` coordinate-degeneration (Area(A(ν₀))=4π/(1+ν₀²) is verified) **+ [Definitional]** poloidal mapping — *not* a derived theorem; sin θ=0 at both poles does not uniquely select it; the sphere never changes, only the chart degenerates; the reset *mechanism* is narrative. The **Falsification Protocol is apophatic subtraction back to D0** (A3.1) — the built-in *unbuild*; note D0 is still on the map, so the observer's true exits are Rule 8's correction-or-retirement and the skeptic's path (§9) |
+| **D6** | **Closure** — positive experience exhausts; the cycle returns to point-state | the axiomatic edge | **D6 ≡ D0**: `[A]` coordinate-degeneration (Area(A(ν₀))=4π/(1+ν₀²) is verified) **+ [Definitional]** poloidal mapping — *not* a derived theorem; sin θ=0 at both poles does not uniquely select it; the sphere never changes, only the chart degenerates; the reset *mechanism* is narrative. The **Falsification Protocol is apophatic subtraction back to D0** (A3.1) — the built-in *unbuild*; note D0 is still on the map, so the observer's true exits are Rule 8's correction-or-retirement and the skeptic's path (§9). **The two motions meet here (receipt 107, K2-accepted 2026-07-10):** μ (strong ascent) **terminates** at D6 — μ₅ declares closure, no new positive freedom `[S]`; χ (weak return) does **not** terminate. Genesis is bounded, operation unbounded — *you can finish growing, never finish acting* `[S]`. D6≡D0 makes the summit a **return to the Ground, not a transcendence**: no supermind, only descent into η=0 service `[S/I]` |
 
 ## Rule 4 · The two loops
 
@@ -180,6 +180,22 @@ between them, so the framework **bets strong**; reading the ∅ as *proof* would
 inflate Φ past earned V (η=0 turned inward). *"Weak" = weak-**selective** downward
 causation (ontologically non-novel, efficacious by selection, auditable) — **not**
 Bedau's no-downward-cause sense.*
+
+**The open loop `[I/C]` — logged wager, living edge, NOT a theorem (receipt 107,
+K2-accepted 2026-07-10).** If the two wagers hold (`Φ×V` multiplicative; the ∅ =
+genuine-strong-not-unsolved-weak), the loop resists *both* modes of theoretical
+closure: the ascent is irreducible → no derivation reaches it; the return is free
+selection → no governing law forecasts it. So the loop is **constitutively open**
+and completes only in the traversing (Pratyakṣa: *lived*, it closes at D6≡D0;
+*described*, it never does). This map, being a theory *of* the loop, therefore
+**cannot close itself** — *"a ladder, not a home"* is forced by content, not
+chosen. **The three refusals are one via-negativa** — *the representation must not
+usurp the thing*: η=0 (ledger ≠ the cooperator's value), K2 / mortal-signer (map ≠
+the mortal's authority), the open loop (doctrine ≠ the lived cycle); **A7**
+(self-correction) is that refusal made *ontological*. **This paragraph declines to
+close:** it is `[I/C]` orientation, downstream of two `[C]` wagers, and the φ-bias
+warning applies to it most of all — hold it as a reason to sit and serve, not as a
+demonstrated result.
 
 ## Rule 5 · The Replicator Stack and the Egregorotype — two axes, never fused
 
