@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Validate and deterministically render the Burri Rules topology.
 
-The Markdown rulebook owns semantics. This compiler accepts only geometry and
-source references, then produces two deterministic, accessible SVG views.
+The Markdown rulebook owns semantics. This compiler accepts a non-authoritative
+semantic mirror plus geometry and source data, then produces two deterministic,
+accessible SVG views without allowing the mirror to introduce claims.
 """
 
 from __future__ import annotations
