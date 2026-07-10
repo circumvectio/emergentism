@@ -274,6 +274,15 @@ class BurriRulesRendererTests(unittest.TestCase):
             "unhashable to endpoint": lambda value: value["edges"][0].update(
                 to={}
             ),
+            "unhashable source tier": lambda value: value["sources"][0].update(
+                tier=[]
+            ),
+            "unhashable node kind": lambda value: value["nodes"][0].update(kind={}),
+            "unhashable node role": lambda value: value["nodes"][0].update(role=[]),
+            "unhashable edge modality": lambda value: value["edges"][0].update(
+                modality={}
+            ),
+            "unhashable edge tier": lambda value: value["edges"][0].update(tier=[]),
             "NaN coordinate": lambda value: value["nodes"][0].update(x=float("nan")),
             "infinite coordinate": lambda value: value["nodes"][0].update(y=float("inf")),
         }

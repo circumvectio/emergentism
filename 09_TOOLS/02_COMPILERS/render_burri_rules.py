@@ -200,6 +200,11 @@ def _is_nonempty_string(value: Any) -> bool:
     return isinstance(value, str) and bool(value.strip())
 
 
+def _is_allowed(value: Any, allowed: set[str]) -> bool:
+    """Return membership without hashing malformed JSON containers."""
+    return isinstance(value, str) and value in allowed
+
+
 def _refs_are_valid(
     element: dict,
     element_name: str,
@@ -288,7 +293,7 @@ def validate_topology(topology: dict, repo_root: Path) -> list[str]:
         if has_path == has_url:
             errors.append(f"{name}: provide exactly one of path or url")
             continue
-        if source.get("tier") not in ALLOWED_TIERS:
+        if not _is_allowed(source.get("tier"), ALLOWED_TIERS):
             errors.append(f"{name}: invalid tier")
         if has_path:
             value = source.get("path")
@@ -351,15 +356,15 @@ def validate_topology(topology: dict, repo_root: Path) -> list[str]:
             continue
         node_id = node.get("id", name)
         name = f"node {node_id}"
-        if node.get("kind") not in ALLOWED_KINDS:
+        if not _is_allowed(node.get("kind"), ALLOWED_KINDS):
             errors.append(f"{name}: invalid kind")
-        if node.get("dRegister") not in ALLOWED_REGISTERS:
+        if not _is_allowed(node.get("dRegister"), ALLOWED_REGISTERS):
             errors.append(f"{name}: invalid dRegister")
-        if node.get("modality") not in ALLOWED_MODALITIES:
+        if not _is_allowed(node.get("modality"), ALLOWED_MODALITIES):
             errors.append(f"{name}: invalid modality")
-        if node.get("role") not in ALLOWED_ROLES:
+        if not _is_allowed(node.get("role"), ALLOWED_ROLES):
             errors.append(f"{name}: invalid role")
-        if node.get("tier") not in ALLOWED_TIERS:
+        if not _is_allowed(node.get("tier"), ALLOWED_TIERS):
             errors.append(f"{name}: invalid tier")
         if not _is_nonempty_string(node.get("label")):
             errors.append(f"{name}: label must be non-empty")
@@ -384,13 +389,13 @@ def validate_topology(topology: dict, repo_root: Path) -> list[str]:
             errors.append(f"{name}: invalid from endpoint")
         if not _is_nonempty_string(edge.get("to")) or edge.get("to") not in node_ids:
             errors.append(f"{name}: invalid to endpoint")
-        if edge.get("dRegister") not in ALLOWED_REGISTERS:
+        if not _is_allowed(edge.get("dRegister"), ALLOWED_REGISTERS):
             errors.append(f"{name}: invalid dRegister")
-        if edge.get("modality") not in ALLOWED_MODALITIES:
+        if not _is_allowed(edge.get("modality"), ALLOWED_MODALITIES):
             errors.append(f"{name}: invalid modality")
-        if edge.get("role") not in ALLOWED_ROLES:
+        if not _is_allowed(edge.get("role"), ALLOWED_ROLES):
             errors.append(f"{name}: invalid role")
-        if edge.get("tier") not in ALLOWED_TIERS:
+        if not _is_allowed(edge.get("tier"), ALLOWED_TIERS):
             errors.append(f"{name}: invalid tier")
         _refs_are_valid(edge, name, source_ids, errors)
 
