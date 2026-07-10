@@ -241,7 +241,16 @@ a system's dimensional stage. No accessible-area calculation derives
 
 **Honesty note:** sin θ = 0 at both poles (θ = 0 and θ = π). The south pole also has zero balance. This criterion does not uniquely select the D₆ ≡ D₀ identification; it is consistent with it but does not single it out.
 
-**Interpretation 4.3 (Cosmological motivation).** [I] The framework is motivated by a cyclic cosmological picture: the universe begins as a singularity (D₀), evolves through structural stages (D₁–D₅), reaches a maximally expanded/diluted state (D₆), and the diluted state is informationally equivalent to a new singularity. The coordinate collapse on S² is offered as a mathematical illustration of this narrative: as one traverses "upward" on S² from the equator toward the north pole, the ν-chart resolving power goes to zero, mirroring the loss of structure at the end of an aeon.
+**Interpretation 4.3 (Cosmological motivation).** [I] The framework is motivated
+by a cyclic cosmological picture: the universe begins as a singularity (D0),
+evolves through structural stages (D1-D5), reaches a maximally
+expanded/diluted state (D6), and reads that state as informationally
+equivalent to a new singularity. The permitted coordinate analogy is only the
+point-endpoint fact: for an individual point,
+`nu = tan(theta/2) -> 0` implies `theta -> 0` and convergence to the north
+endpoint. It is not a loss of region resolution. The threshold region
+`A(nu_0)` instead expands to the full sphere, with area approaching `4pi`, as
+`nu_0 -> 0`. Any cosmological identification remains interpretive `[I]`.
 
 **Honesty note:** This is an analogy. The mathematics of stereographic coordinates on S² does not entail anything about cosmological evolution.
 
@@ -360,7 +369,12 @@ Collecting the honest content:
 
 This document is **falsified or requires revision** if any of the following is exhibited:
 
-1. **Against [A]:** A computation showing Area(A(ν₀)) ≠ 4π/(1 + ν₀²), or that the ν-chart does not degenerate as ν → 0. (This would contradict elementary calculus and is extremely unlikely.)
+1. **Against [A]:** A counterexample to Proposition 2.1 in which
+   `nu(p_n) -> 0` but `theta_n` does not approach `0`, `p_n` does not approach
+   the north pole, or `phi(p_n)` does not diverge; or a computation refuting
+   Theorem 2.3, including
+   `Area(A(nu_0)) = 4pi/(1 + nu_0^2)`, its `4pi` limit as `nu_0 -> 0`, or its
+   `0` limit as `nu_0 -> infinity`.
 
 2. **Against [S]:** A demonstration that the declared dependency order is
    internally contradictory — for example, that a later stage is required to
