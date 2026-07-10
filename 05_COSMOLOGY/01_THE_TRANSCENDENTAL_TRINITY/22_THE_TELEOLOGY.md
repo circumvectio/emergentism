@@ -346,7 +346,7 @@ The human claim is comparative and multidimensional: symbolic, counterfactual, i
 
 Not an escape from natural selection: environments still select organisms. **WILLFUL EVOLUTION** names the additional niche-construction capacity by which an organism can participate in selecting and modifying its environment.
 
-This is Prometheus unbound. This is Lucifer (light-bearer) before the Fall was rewritten as punishment. The being who gave humanity F₅ — choice, fire, the ability to SELECT rather than BE SELECTED. [I]
+This is Prometheus unbound. This is Lucifer (light-bearer) before the Fall was rewritten as punishment. In this mythic register, F₅ names choice, fire, and humanity's reflexive capacity to participate in selection through niche construction while remaining selected by environments, constraints, and other agents. It implies neither exemption from selection nor universal ecological dominance. [I]
 
 ---
 
