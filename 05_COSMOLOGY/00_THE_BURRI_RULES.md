@@ -104,6 +104,10 @@ no calculation, causal claim, or ontological entity. `[S]`
 
 ### BR-2 Crossing
 
+> **Emergence type (canon receipt 106):** μ = **strong emergence** — the genesis
+> loop that *wins* a novel degree of freedom (adds a Φ×V factor), irreducible; no
+> reducing/threshold law (∅ is its fingerprint, not a gap). `[S]`
+
 For `n = 0, …, 5`, a proposed crossing has the form
 
 \[
@@ -153,6 +157,11 @@ trace, or counterfactual contrast by which the macro constraint changes later
 D4 outcomes. Visual narrowing alone is not a witness. `[S]`
 
 ### BR-4 Commitment
+
+> **Emergence type (canon receipt 106):** χ = **weak-selective downward
+> causation** — the governance/commitment loop that *deploys* a won freedom by
+> selecting among reachable futures and emitting a **receipt** `R`; auditable-after
+> but with no *governing* law (∅). Not Bedau's no-downward-cause sense. `[S]`
 
 A finite commitment is
 
