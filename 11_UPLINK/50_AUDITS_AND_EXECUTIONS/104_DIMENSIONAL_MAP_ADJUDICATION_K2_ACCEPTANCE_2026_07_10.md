@@ -17,6 +17,11 @@ provenance: "Workflow wf_0101b320-ad9 (42 agents: 7 deep-read clusters, 33 adjud
 2. **D4/D5 direction (doc 10 vs docs 34/27).** Docs 34/27 are the reading of
    record: **D4 = potential (pre-collapse), D5 = one actual enactment**;
    doc 10's μ(P→F) D5→D4 assignment is the lagging text. → banner on doc 10.
+   **[REFRAME · K2 2026-07-10 · receipt 105]:** A.2 governs the **emergence/μ
+   axis only**. It does NOT retire the **action-register/χ-commitment direction**
+   (D5 foresight → D4 embodied means + receipt), live `[S/I]` canon (doc 34
+   §I/§VI/§X, doc 27 §VI, Soul Loop). Doc 10's specific defect is the downward-μ
+   + measurement fusion, not the existence of a D5→D4 operational direction.
 3. **μₙ indexing (doc 34 internal).** The PROSE stands: **μₙ = the saturation
    crossing Dₙ→Dₙ₊₁** (μ₄ = D4→D5 witness/agency crossing; μ₅ = D5→closure).
    The §II ASCII ladder (lines 65–69, 76) is a deviant double-indexing.
@@ -66,8 +71,10 @@ Adjudication counts for the record: 9 real (above) · 9 axis-fusion errors ·
 11. **F5** → [C/I] model claim; never an [A] physical interaction.
 12. **Per-Titan → per-dimension framing** → NO receipt; STATE THE ABSENCE.
 13. **Bloch = Burrisphere** → [I] translation, never [A] identity.
-14. **D5-possibility vs D4-actualization** → resolved per A.2 (D4=potential,
-    D5=actual); doc 10 flagged, not harmonized silently.
+14. **D5-possibility vs D4-actualization** → resolved **on the emergence axis**
+    per A.2 (D4=potential, D5=actual); the **operational D5→D4 (χ-commitment)
+    direction is preserved, not resolved away** (receipt 105 REFRAME, K2
+    2026-07-10); doc 10 flagged, not harmonized silently.
 
 ## C. Staged repair queue (K3 — banners, not rewrites; each cites this receipt)
 

@@ -7,7 +7,7 @@ rosetta:
   register: "[A/S/I/C] — per line, by the four-register law below"
   canonical_phrase: "THE BURRI RULES — the dimensional derivation grammar, tier-honest"
 title: "The Burri Rules — the canonical dimensional map"
-status: "CANONICAL — K2-COUNTERSIGNED in session 2026-07-10 (Yves R. Burri: 'I accept and sign!'). Provenance: staged v1→v3 through two adversarial BTJ rounds (wf_d742f55d-880, wf_ce2bd165-b99); v1 failed all three gates (17 defects), v2 re-audit found 18 more, all folded in v3; built on the K2-accepted adjudication packet (receipt 104); repairs R1-R3+R5-R6 applied to the lagging docs (R4 Cerberus queued in 02_SKYZAI). The four-register law, the eight stated absences, and Rule 8 (incl. the terminal retirement clause) govern from here."
+status: "CANONICAL — K2-COUNTERSIGNED in session 2026-07-10 (Yves R. Burri: 'I accept and sign!'). Provenance: staged v1→v3 through two adversarial BTJ rounds (wf_d742f55d-880, wf_ce2bd165-b99); v1 failed all three gates (17 defects), v2 re-audit found 18 more, all folded in v3; built on the K2-accepted adjudication packet (receipt 104); repairs R1-R3+R5-R6 applied to the lagging docs (R4 Cerberus queued in 02_SKYZAI). The four-register law, the eight stated absences, and Rule 8 (incl. the terminal retirement clause) govern from here. **[REFRAME 2026-07-10 · receipt 105 · K2 'Accept']:** Rule 3's D4/D5 rows, Rule 2, Rule 8 clause 3, and the SVG crossing were re-issued to two register-indexed axes — emergence/μ (D4=potential→D5=actual, UP) + action/χ (D5=foresight→D4=embodied receipt, DOWN); A.2's emergence-axis core stands — a reframe, not an overturn (terminal clause 6 not triggered)."
 evidence_tier: "per line — every row carries register + tier + receipt + kill criterion; unsourced lines are marked ABSENT or PROPOSED, never drawn solid"
 visual: "00_THE_BURRI_RULES_MAP.svg — companion visual (canonical on countersign): the frame/ladder/loops/closure skeleton; Rules 5–8 live in this document"
 ledger: "00_THE_BURRI_RULES_LEDGER.md — the full 30-item derivation ledger (register · tier · counterexample · kill criterion per line)"
@@ -91,6 +91,15 @@ peer review, and carries a flagged notational erratum (the boxed formula
 samples a scalar; the prose — "sample one outcome from the distribution
 |ψ(s)|²ds" — is authoritative; receipt 104 A.4).
 
+**Two operators, not one (accepted — receipt 105, K2 2026-07-10).** The framework
+carries a *second* directed operator distinct from μ: **χ, finite commitment** —
+`χ:(Ω,M,V,signature)→(action, receipt)` — the Soul-Loop move running **D5-decision
+→ D4-action + receipt (DOWN)**, whereas μ is the **emergence crossing Dₙ→Dₙ₊₁
+(UP)**. Conflating them — as doc 10 does, labelling a downward move "μ" and
+identifying it with Born-rule measurement — is the flagged error; χ *does not turn
+a decision into a measurement*. The typed encoding is Codex **BR-2** (μ) / **BR-4**
+(χ), adopted as the engineering-layer articulation under this map.
+
 **Saturation** `[MODEL/analogy]`: "each Dₙ₊₁ emerges when Dₙ saturates" is
 **asserted in narrative and axiom form** (Trophic Cascade:154; axiom A3 —
 which itself calls it a "μ-limit *analogy*"; doc 34 §II) **but nowhere given
@@ -118,8 +127,8 @@ dimensionality, marked `[CONJ]`.
 | **D1** | **Distinction** — zero separates from infinity; the line appears | difference held apart | crossing μ₀ underived ∅; glyph-shadow generator `[S/C]` |
 | **D2** | **Configuration** — distinct elements can be arranged; the plane | arrangement, relation | ⚑ **time-entry contradiction flagged**: Complete Ontology puts temporal ordering at D2 (`[I]`, self-tiered); 00_EMERGENTISM puts time at D4. Both stand at their tiers; unresolved (receipt 104 A.7) |
 | **D3** | **Transformation** — arrangements can change; process begins | change, not yet directed | `[S]` |
-| **D4** | **Causality** — change has direction; time appears; **the potential register** (pre-collapse superposition) | directed process | geometric seat: **the torus hole** — the causal vertex, the Witness (doc 34 `[S]`, receipt 104 A.5) |
-| **D5** | **Agency** — the system selects within its own change; **one actual enactment**; consciousness is the lived reading `[I]` | selection, navigable choice; F5 option-cone `[C/I]`; egregores at high Φ; the Mutualism Limit; the highest positive public register | geometric seat: **the torus surface** — the φ-ν plane, the present, the Agent. **The accepted direction: D4 = potential, D5 = actual** — the reading of record (docs 34/27) *inverts* the older "D5 possibility-space → D4 actualization" phrasing; doc 10 is the lagging text (receipt 104 A.2) |
+| **D4** | **Causality** — change has direction; time appears; **the potential register** (pre-collapse superposition) | directed process | geometric seat: **the torus hole** — the causal vertex, the Witness (doc 34 `[S]`, receipt 104 A.5) · **action-register reading: the embodied means-to-act + receipt — `V`** (doc 34 §IX.6; receipt 105) |
+| **D5** | **Agency** — the system selects within its own change; **one actual enactment**; consciousness is the lived reading `[I]` | selection, navigable choice; F5 option-cone `[C/I]`; egregores at high Φ; the Mutualism Limit; the highest positive public register | geometric seat: **the torus surface** — the φ-ν plane, the present, the Agent. **Two registers (receipt 105 REFRAME · K2 2026-07-10 "Accept").** **Emergence/μ axis:** D4 = potential (pre-collapse witness) → D5 = **one actual enactment**, μ₄ runs UP (docs 34/27, reading of record). **Action/χ axis** (via `P_node = Φ×V` and the Soul Loop): D5 = **Φ worldline-foresight/possibility**, D4 = **V embodied means + receipt**, commitment flowing **D5→D4** (doc 34 §I/§IX.6/§X, doc 27 §VI, Codex BR-4). **"Actual" is register-indexed** — emergence-actual at D5, operation-actual at D4. Doc 10's error is running the *emergence* operator μ downward and fusing it with measurement — **not** the existence of the action-register D5→D4 direction, which is live canon (receipt 104 A.2, reframed) |
 | **D6** | **Closure** — positive experience exhausts; the cycle returns to point-state | the axiomatic edge | **D6 ≡ D0**: `[A]` coordinate-degeneration (Area(A(ν₀))=4π/(1+ν₀²) is verified) **+ [Definitional]** poloidal mapping — *not* a derived theorem; sin θ=0 at both poles does not uniquely select it; the sphere never changes, only the chart degenerates; the reset *mechanism* is narrative. The **Falsification Protocol is apophatic subtraction back to D0** (A3.1) — the built-in *unbuild*; note D0 is still on the map, so the observer's true exits are Rule 8's correction-or-retirement and the skeptic's path (§9) |
 
 ## Rule 4 · The two loops
@@ -196,8 +205,11 @@ survivable form:
 2. Any line found drawn solid without a receipt → Truth-gate breach; the
    line is re-drawn dashed/∅ and the BTJ audit re-run. *(Fired once already:
    v1's closure arc — folded in v2.)*
-3. The D4/D5 direction ruling (receipt 104 A.2) overturned by K2 → Rule 3's
-   D4/D5 rows and the visual's crossing highlight are re-issued.
+3. The D4/D5 direction ruling (receipt 104 A.2) overturned **or reframed** by
+   K2 → Rule 3's D4/D5 rows and the visual's crossing highlight are re-issued.
+   *(Fired: the 2026-07-10 REFRAME to two register-indexed axes — receipt 105,
+   K2 "Accept". A.2's emergence-axis core stands; a reframe, not an overturn, so
+   the terminal clause 6 was not triggered.)*
 4. A saturation threshold equation is ever derived and survives review → the
    μ-grammar upgrades from MODEL to the mathematics it currently lacks, and
    this map's ∅ marks are lifted where earned.

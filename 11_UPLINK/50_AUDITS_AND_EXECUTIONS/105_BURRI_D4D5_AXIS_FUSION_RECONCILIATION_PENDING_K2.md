@@ -1,7 +1,7 @@
 ---
 title: "105 — Burri Rules D4/D5 reconciliation: AXIS-FUSION · receipt-104 REFRAME (pending K2)"
 date: 2026-07-10
-status: "[D] STAGED — PENDING K2 COUNTERSIGN. Corrections are NOT applied to the countersigned map (b9363ac). This packet records an adversarial re-adjudication (3 refutation lenses + synthesis, 568K tokens) that was hand-verified at the source by the AI co-owner. Per Rule 8 clause 3, even a REFRAME of A.2 re-issues Rule 3's D4/D5 rows + the SVG crossing highlight — a K2 act."
+status: "[E] K2-COUNTERSIGNED 2026-07-10 (Yves R. Burri: 'Accept', following 'This is good'). Corrections 1–6 + the SVG crossing re-issue APPLIED to canon (see §8). The REFRAME re-issued Rule 3's D4/D5 rows + the SVG crossing per Rule 8 clause 3; A.2's emergence-axis core stands (reframe, not overturn — terminal clause 6 NOT triggered). Adversarial provenance: 3 refutation lenses + synthesis (568K tokens), hand-verified at source. Filename retains 'PENDING' as a stable link slug; this status field is authoritative."
 evidence_tier: "[S] the source anchors (all hand-verified at file:line, §2); [I] the axis-fusion synthesis; the countersigned map (b9363ac) and receipt 104 are UPHELD on their axis and REFRAMED, not overturned"
 verdict: "AXIS_FUSION_BOTH"
 receipt_104_disposition: "REFRAME (not OVERTURN, not UPHOLD-as-is)"
@@ -149,4 +149,36 @@ engineering layer teaches the map, and canon adopts the two-operator grammar.
 *Adversarial provenance: 3 refutation lenses (refute-A, refute-B, axis-fusion) all
 returned AXIS_FUSION_BOTH at ~0.8 confidence; synthesis concurring. All §2 anchors
 re-verified at file:line by the AI co-owner before this packet was written. The
-Codex branch is kept as `[D]` — nothing merged into canon until K2 signs §7.*
+Codex branch is kept as `[D]`. **K2 signed §7 on 2026-07-10 ("Accept"); the
+canon corrections landed — see §8.***
+
+## 8. Countersign + applied record — K2 2026-07-10
+
+**K2 countersign:** Yves R. Burri, natural person — **"Accept"** (2026-07-10),
+following "This is good." The natural-person signing act; software records, never
+signs.
+
+**Applied to canon under this countersign (§5 corrections, now landed):**
+- Rule 3 **D5 row** → two-axis, register-indexed statement; **D4 row** →
+  action-register note. `05_COSMOLOGY/00_THE_BURRI_RULES.md`
+- Rule 2 → the **μ/χ two-operator** distinction (χ ≠ measurement; Codex
+  BR-2/BR-4 cited as the typed encoding). `…/00_THE_BURRI_RULES.md`
+- Rule 8 clause 3 → "overturned **or reframed**" + fired-note (reframe, not
+  overturn → terminal clause 6 not triggered). `…/00_THE_BURRI_RULES.md`
+- Receipt 104 **§A.2 + §B.14** → emergence-axis scoping; χ direction preserved.
+- **Settled Canon Registry** → new row "D4/D5 — two registers."
+- **SVG** crossing highlight re-issued (Rule 8 cl.3). `…/00_THE_BURRI_RULES_MAP.svg`
+- **Doc 10** banner → χ is the correct home for the D5→D4 direction; the erratum
+  is the μ/χ conflation, not the direction itself.
+
+**Ratified (decision 5):** the Codex build (`codex/burri-rules-canonical-map` @
+4b7f4b2) is the **engineering / rendering-conformance layer UNDER** the signed
+map — a non-authoritative mirror, adopting **only** its BR-2/BR-4 grammar into
+canon. Execution follow-ups on the Codex branch (header re-label §5.1 annotation,
+tier-vocab crosswalk — merge-plan steps 4–5) are **not canon edits**; safe on that
+isolated worktree.
+
+**Disposition: REFRAME, not OVERTURN (decision 7, confirmed).** A's emergence-axis
+reading (D4=potential / D5=actual) remains authoritative; only the blanket
+dismissal of the action-register axis was corrected. Two artifacts → one signed
+canon; the countersigned map keeps its semantics and inherits the μ/χ grammar.

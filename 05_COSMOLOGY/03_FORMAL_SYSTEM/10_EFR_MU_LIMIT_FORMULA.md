@@ -14,6 +14,8 @@ rosetta:
 > **History:** v1.0 FAILED peer review (Σ over uncountable set, conflated probability with collapse). v2.0 fixed math (integral, Born rule, sampling step). v3.0 added ontological reading (ψ*ψ = φ·ν = 1).
 > **Status:** Math corrected. Tier remains [C] until independently verified by physicist with QM background.
 > **See:** `../../08_FRAMEWORK_SUPPORT/06_TRANSLATION/PEER_REVIEW/00_INTERNAL_REVIEW_FINDINGS.md` for original findings.
+>
+> 🟢 **[105 REFRAME — 2026-07-10]:** the D5→D4 direction this doc formalizes belongs to the **χ operator** (finite commitment / action register / Codex BR-4), **not** to μ (the emergence crossing, which runs D4→D5 **UP**). The flagged error is the μ/χ conflation + the measurement identification — **not** the existence of the action-register D5→D4 direction, which is live canon. Tier unchanged `[C]`.
 
 > [!WARNING]
 > **Two flags (2026-07-10, receipt 104 A.2 + A.4 — adjudication K2-accepted):** (1) the D5=possibility→D4=factuality direction below is the LAGGING assignment — the reading of record is 34_D4_D5_CANONICAL_REFERENCE.md (D4 = potential, D5 = actual; μₙ = Dₙ→Dₙ₊₁); (2) the boxed formula's Sample[∫|ψ|²ds] samples a scalar (∫=1) — notational erratum, proposed v3.1; the prose 'sample one outcome o from the distribution |ψ(s)|²ds' is authoritative.
