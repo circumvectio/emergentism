@@ -283,9 +283,13 @@ relations                    — The mesh, projections, and great-circle constra
 
 Everything that exists is grounded in that sequence. The Ground is prior. Being is the first stable closure. Dasein is disclosure. beings are what appear.
 
-### The Dimensional Hierarchy — Derived, Not Defined
+### The Dimensional Hierarchy — Tiered Scaffold
 
-If Zero-Sum Resolution Equation is the self-generating ground, the dimensions are not introduced by fiat. They are derived. Each stage of self-generation requires the previous stage to exist. The ordering is logical dependency, not convention.
+The sequence is an internal dependency `[S]`: within the framework, each stage
+requires the prior capacity. Its ontology/read-across `[I]` treats that order as
+an unfolding of reality. The labels, count, and geometry are `[Definitional]`.
+This hierarchy is not a theorem derived from `S²`, the Zero-Sum Resolution
+Equation, or torus geometry.
 
 ```
 D0  Point           — The undifferentiated. Before the interaction. The Bindu.
@@ -300,7 +304,10 @@ D6  Closure         — Positive experience exhausts; the cycle returns to point
 D6 ≡ D0             — The terminal boundary and the origin-point are one limit read from opposite directions.
 ```
 
-The poloidal closure D6 ≡ D0 on the horn torus is the topology of return: the process that starts at a point and returns to the point after the positive scaffold has unfolded between them. Time is helical — each aeon replays D0→D6→D0, but the toroidal position advances. History doesn't repeat. It rhymes.
+The optional poloidal depiction of `D6 ≡ D0` is a definitional/interpretive
+image of return, not a derivation. In that `[I]` reading, each aeon follows a
+helical `D0→D6→D0` motif while the toroidal position advances. History does not
+repeat; it rhymes.
 
 ### The Physicalist/Idealist Resolution: Layered Commitment
 

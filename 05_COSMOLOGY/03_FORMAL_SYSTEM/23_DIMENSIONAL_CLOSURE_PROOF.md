@@ -95,8 +95,8 @@ $$\varphi = \cot(\theta/2), \qquad \nu = \tan(\theta/2)$$
 
 These are the *dual stereographic coordinates*:
 
-- φ: S² \ {S} → [0, ∞), where S is the south pole (θ = π)
-- ν: S² \ {N} → [0, ∞), where N is the north pole (θ = 0)
+- φ: S² \ {N} → [0, ∞), where N is the north pole (θ = 0)
+- ν: S² \ {S} → [0, ∞), where S is the south pole (θ = π)
 
 **Definition 1.4 (Fundamental constraint).** [A] The dual coordinates satisfy
 

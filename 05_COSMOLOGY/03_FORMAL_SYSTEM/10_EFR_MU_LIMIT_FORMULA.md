@@ -47,6 +47,12 @@ mu_n: D_n -> D_(n+1), for n=0..5
 freedom, and the closure identification `D6 == D0` is not an additional
 dimensional crossing.
 
+`mu_0` through `mu_4` are admissible only when the next register introduces a
+genuinely new positive freedom after a demonstrable saturation or failure.
+`mu_5` is the explicit exception: it requires demonstrable exhaustion of
+positive option-description and declares closure. It introduces **no new
+positive freedom**.
+
 The crossings are part of the framework's internal dependency scaffold `[S]`.
 Reading them as an exhaustive account of reality is interpretive `[I]`; their
 labels and count are definitional.
@@ -87,16 +93,18 @@ emergence of agency and as the exercise of agency.
 The canonical selector is
 
 ```text
-chi_t: (Omega_t, M_t, V_t, signature) -> (a_t, R_(t+1))
+chi_t:(Omega_t,M_t,V_t,signature)->(a_t,R_(t+1))
 ```
 
 where:
 
 - `Omega_t` is the bounded set of counterfactual options available at time
   `t`;
-- `M_t` is the memory and world-model used to compare those options;
-- `V_t` is the D4 body, tools, energy, access, timing, and control actually
-  available for enactment;
+- `M_t := (C_t,G_t)` is the fallible D5 decision state;
+- `C_t` is its memory and world-model component;
+- `G_t` is its selector, ranking, and value-policy component;
+- `V_t` is the D4 embodied means / viability actually available for
+  enactment: body, tools, energy, access, timing, and control;
 - `signature` is the applicable authorization for the consequential act;
 - `a_t` is the one act committed at time `t`; and
 - `R_(t+1)` is the resulting D4 receipt.

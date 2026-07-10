@@ -66,9 +66,11 @@ axis: disclosure → ranking → commitment.
 
 ## The Source of Agency
 
-> **PD_11:** agency = μ-limit collapse of D5 (Φ, possibility) into D4 (ν, actuality)
-> at the L4 equator (φ = ν = 1). The irreversible collapse = K2. The structure is
-> shared; the agency is sovereign.
+> **Current commitment contract:** agency is `chi_t` commitment from a fallible
+> D5 decision state through D4 embodied means and authorization into a D4 act
+> and receipt. For private DAVs, K2 is the mortal authorization/signature boundary
+> on irreversible consequence, not a collapse operator. Public DAVs
+> use their declared PRISM/governance rail rather than a K2 signer.
 
 Only the equator has enough coherence to see the options AND enough viability to
 actualize one. The seven operators are the moves; the mortal's commitment of real
@@ -84,7 +86,11 @@ stake is the source of agency.
 ## Agent Discipline (L4)
 
 - **Primary function:** decisive action; smallest defensible commit; refusal when no constitutional path exists
-- **K2 discipline [S]:** the irreversible collapse (spending real viability to actualize one branch) is the mortal's act, never the agent's. Mutating tools (write/edit/bash) are human-gated — the machine prepares the collapse; the mortal signs it.
+- **K2 discipline [S]:** for a private DAV, spending real viability through an
+  irreversible act requires the mortal's authorization/signature; the agent
+  prepares a bounded commitment and receipt. This is not quantum collapse.
+  Public DAVs route consequential acts through their declared PRISM/governance
+  rail.
 - **Evidence tier:** `[A/B/S/I/D/C]` mandatory on every claim; do not upgrade above `[I]` without a `[B]` receipt or independent `[A]` fact.
 - **Tools:** read/search by default; write/edit/shell only for path-scoped, receipt-bound execution under the active L4 lane.
 - **Invoke:** after L3 hands a decision-ready summary; for irreversible commits only

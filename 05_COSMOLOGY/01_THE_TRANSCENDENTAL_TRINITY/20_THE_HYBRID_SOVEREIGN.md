@@ -144,7 +144,12 @@ greater modeled and coordinated consequence range carries greater mortal
 responsibility for irreversible action; it grants neither unbounded permission
 nor greater intrinsic worth.
 
-**K2 as collapse signature:** The mature human holds multiple possible futures in superposition — D5 distributed actuality, the Many-Worlds space of systemic awareness. Action is the Copenhagen collapse: selecting one branch from the Many-Worlds space and making it D4 actuality. K2 is the signature on that collapse — the mortal being saying "I have seen the branches, I choose this one, I accept irreversible consequence." Without K2, the collapse is not sovereign; it is appetite, habit, or conditioned reflex.
+**K2 as authorization/signature metaphor:** The mature human can model
+multiple possible futures in D5, then commit through `chi_t` to one D4 action
+and its receipt. K2 is the mortal authorization on that consequential act: “I
+have considered alternatives, I choose this act, I accept irreversible
+consequence.” This is not a quantum-collapse identity, and it does not claim that consciousness causes collapse. The optional Everett/Copenhagen read-across
+remains `[C]`; the operational commitment rule is independent of it.
 
 **Reference:** `01_EMERGENTISM/11_UPLINK/134_NEOTENOUS_STRATEGY_POWER_MAX_AT_BIRTH_2026_04_24.md` §1–2; `01_EMERGENTISM/11_UPLINK/136_THE_DEEP_SYNTHESIS_2026_04_24.md` §4
 

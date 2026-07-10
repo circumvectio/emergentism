@@ -120,9 +120,14 @@ OBJECT_FIELDS = {
 STRING_MAP_FIELDS = {"marks", "markLabels", "inputs", "outputs", "fields", "palette"}
 BOOLEAN_FIELDS = {"closure", "acting", "displayLociOnly", "removable"}
 NUMERIC_FIELDS = {"x", "y", "width", "height"}
+AUTHORITY_BOUNDARY = (
+    "Non-authoritative semantic mirror plus geometry and source data; may not "
+    "introduce claims. The Markdown rulebook remains semantic authority."
+)
 FULL_TEXT_EQUIVALENT = (
-    "The Titans frame possibility; a finite agent forms a fallible D5 option field, "
-    "commits through D4 means and authorization, receives D4 consequences, and "
+    "The Titans frame possibility; a finite agent forms a fallible D5 decision state "
+    "and option field, commits through D4 embodied means and authorization, receives "
+    "D4 consequences, and "
     "recursively corrects both world-model and selector."
 )
 
@@ -146,7 +151,7 @@ SPINE_CROSSING_LABELS = {
     "mu-2": "transformation",
     "mu-3": "actuality",
     "mu-4": "counterfactuals",
-    "mu-5": "closure",
+    "mu-5": "closure · no new freedom",
 }
 PROOF_POSITIONS = {
     "d5-model": (730, 415),
@@ -175,11 +180,11 @@ EMBLEM_POSITIONS = {
     "shared-trace": (1210, 760),
 }
 PROOF_DISPLAY_LABELS = {
-    "d5-model": "world-model",
-    "d5-selector": "selector",
+    "d5-model": "C_t world-model",
+    "d5-selector": "G_t selector / policy",
     "d5-option-a": "selected option",
     "d5-option-b": "retained option",
-    "d4-means": "finite means",
+    "d4-means": "V_t embodied means",
     "signature": "authorization",
     "chi": "commitment",
     "d4-action": "enacted action",
@@ -189,11 +194,11 @@ PROOF_DISPLAY_LABELS = {
     "quantum-record": "D4 record",
 }
 EMBLEM_DISPLAY_LABELS = {
-    "d5-model": "M_t model",
-    "d5-selector": "V_t selector",
+    "d5-model": "C_t model",
+    "d5-selector": "G_t selector",
     "d5-option-a": "A selected",
     "d5-option-b": "B possible",
-    "d4-means": "D4 means",
+    "d4-means": "V_t means",
     "signature": "authorization",
     "chi": "chi commit",
     "d4-action": "a_t action",
@@ -201,11 +206,11 @@ EMBLEM_DISPLAY_LABELS = {
     "shared-trace": "shared trace",
 }
 NODE_SYMBOLS = {
-    "d5-model": "M",
-    "d5-selector": "V",
+    "d5-model": "C",
+    "d5-selector": "G",
     "d5-option-a": "A",
     "d5-option-b": "B",
-    "d4-means": "D4",
+    "d4-means": "V",
     "signature": "SIG",
     "chi": "χ",
     "d4-action": "a",
@@ -495,6 +500,8 @@ def validate_topology(topology: dict, repo_root: Path) -> list[str]:
             errors.append(f"{name}: invalid role")
         if not _is_allowed(edge.get("tier"), ALLOWED_TIERS):
             errors.append(f"{name}: invalid tier")
+        if "style" in edge:
+            errors.append(f"{name}: style is redundant; modality and role own geometry")
         _refs_are_valid(edge, name, source_ids, errors)
 
     node_by_id = {
@@ -524,9 +531,68 @@ def validate_topology(topology: dict, repo_root: Path) -> list[str]:
         actual = tuple(edge.get(field) for field in ("from", "to", "dRegister", "modality", "role"))
         if actual != expected:
             errors.append(f"load-bearing edge {edge_id} must retain endpoints/register/modality/role")
+
+    quantum_node_ids = {"quantum-state", "quantum-record"}
+    quantum_edge_id = "e-quantum-correspondence"
+    quantum_present = (quantum_node_ids & node_ids) | (
+        {quantum_edge_id} if quantum_edge_id in edge_by_id else set()
+    )
+    if quantum_present:
+        if not quantum_node_ids <= node_ids or quantum_edge_id not in edge_by_id:
+            errors.append("quantum overlay must be absent or retain both nodes and its edge")
+        else:
+            quantum_expected_nodes = {
+                "quantum-state": ("state", "D5", "possible", "coupling", "C"),
+                "quantum-record": ("state", "D4", "actual", "coupling", "C"),
+            }
+            for node_id, expected in quantum_expected_nodes.items():
+                node = node_by_id[node_id]
+                actual = tuple(
+                    node.get(field)
+                    for field in ("kind", "dRegister", "modality", "role", "tier")
+                )
+                if actual != expected or node.get("overlay") != "quantum":
+                    errors.append(f"quantum overlay node {node_id} must retain its typed contract")
+            quantum_edge = edge_by_id[quantum_edge_id]
+            quantum_actual = tuple(
+                quantum_edge.get(field)
+                for field in ("from", "to", "dRegister", "modality", "role", "tier")
+            )
+            if quantum_actual != (
+                "quantum-state",
+                "quantum-record",
+                "D5",
+                "possible",
+                "coupling",
+                "C",
+            ) or quantum_edge.get("overlay") != "quantum":
+                errors.append("quantum correspondence edge must retain its typed contract")
     feedback_edge = edge_by_id.get("e-receipt-model-feedback")
     if feedback_edge is not None and feedback_edge.get("updatePolicy") != "changed or explicit null-with-reason":
         errors.append("receipt feedback must retain changed or explicit null-with-reason policy")
+    if feedback_edge is not None and feedback_edge.get("label") != "receipt returns to next C and G":
+        errors.append("receipt feedback must return to the next C and G decision state")
+
+    required_labels = {
+        "d5-model": "C_t fallible world-model",
+        "d5-selector": "G_t declared selector / value policy",
+        "d4-means": "V_t D4 embodied means",
+    }
+    for node_id, expected_label in required_labels.items():
+        node = node_by_id.get(node_id, {})
+        if node.get("label") != expected_label:
+            errors.append(f"load-bearing node {node_id} must retain label {expected_label}")
+    chi = node_by_id.get("chi", {})
+    expected_chi_inputs = {
+        "Omega_t": "typed D5 option field",
+        "M_t": "(C_t,G_t) fallible D5 decision state",
+        "V_t": "D4 embodied means / viability",
+        "signature": "D4 authorization envelope",
+    }
+    if chi.get("formula") != "chi_t:(Omega_t,M_t,V_t,signature)->(a_t,R_(t+1))":
+        errors.append("chi must retain the canonical four-argument commitment formula")
+    if chi.get("inputs") != expected_chi_inputs:
+        errors.append("chi inputs must keep M_t=(C_t,G_t) distinct from V_t D4 means")
 
     required_states = {f"d{number}" for number in range(7)}
     if not required_states <= node_ids:
@@ -541,6 +607,20 @@ def validate_topology(topology: dict, repo_root: Path) -> list[str]:
     expected_crossings = {f"mu-{number}" for number in range(6)}
     if crossing_nodes != expected_crossings or "mu-6" in node_ids:
         errors.append("crossing nodes must be exactly mu-0 through mu-5")
+    for number in range(5):
+        crossing = node_by_id.get(f"mu-{number}", {})
+        requirements = crossing.get("requirements", [])
+        if "genuinely new positive freedom" not in requirements:
+            errors.append(f"mu-{number} must require genuinely new positive freedom")
+    mu5 = node_by_id.get("mu-5", {})
+    mu5_requirements = mu5.get("requirements", [])
+    if (
+        mu5.get("label") != "mu-5: declares closure; no new freedom"
+        or "genuinely new positive freedom" in mu5_requirements
+        or "demonstrable exhaustion and declared closure" not in mu5_requirements
+        or "no new positive freedom introduced" not in mu5_requirements
+    ):
+        errors.append("mu-5 must declare exhausted closure with no new positive freedom")
     edge_pairs = {
         (edge.get("from"), edge.get("to"))
         for edge in edges
@@ -562,13 +642,20 @@ def validate_topology(topology: dict, repo_root: Path) -> list[str]:
         errors.append("exactly one Titan frame node is required")
     else:
         marks = frames[0].get("marks")
+        mark_labels = frames[0].get("markLabels")
         if (
             not isinstance(marks, dict)
             or set(marks) != {"bullet", "finity", "horizon"}
+            or not isinstance(mark_labels, dict)
+            or set(mark_labels) != {"bullet", "finity", "horizon"}
+            or not all(_is_nonempty_string(value) for value in mark_labels.values())
             or frames[0].get("acting") is not False
             or frames[0].get("displayLociOnly") is not True
         ):
-            errors.append("Titan frame must be nonacting display loci bullet/finity/horizon")
+            errors.append(
+                "Titan frame must be nonacting display loci with labeled "
+                "bullet/finity/horizon marks"
+            )
 
     boundaries = topology.get("boundaries", [])
     if not isinstance(boundaries, list) or len(boundaries) != 1:
@@ -613,6 +700,11 @@ def validate_topology(topology: dict, repo_root: Path) -> list[str]:
         "outcome-gap",
     }:
         errors.append("Reflexive Bridge must name cognitive, execution, and outcome gaps")
+    if any(
+        not isinstance(item, dict) or not _is_nonempty_string(item.get("label"))
+        for item in slippages
+    ):
+        errors.append("every Reflexive Bridge slippage must carry a non-empty label")
     feedback_signs = bridge.get("feedbackSigns", [])
     if not isinstance(feedback_signs, list):
         errors.append("Reflexive Bridge feedbackSigns must be a list")
@@ -661,6 +753,8 @@ def validate_topology(topology: dict, repo_root: Path) -> list[str]:
         errors.append("Rosetta projection must be rho_domain with no proof transfer")
     if topology.get("fullTextEquivalent") != FULL_TEXT_EQUIVALENT:
         errors.append("master emblem fullTextEquivalent does not match the rulebook")
+    if topology.get("authorityBoundary") != AUTHORITY_BOUNDARY:
+        errors.append("topology must remain a non-authoritative mirror of the rulebook")
 
     views = topology.get("views", {})
     if not isinstance(views, dict) or set(views) != {"proof", "emblem"}:
@@ -781,10 +875,10 @@ def _palette(view_id: str) -> dict[str, str]:
         return {
             "background": "#F4ECDD",
             "ink": "#1C211E",
-            "muted": "#6D7068",
+            "muted": "#5B5F58",
             "line": "#303A34",
-            "possible": "#657D70",
-            "accent": "#A56A3A",
+            "possible": "#496A5A",
+            "accent": "#8A4E25",
             "gold": "#B28A45",
             "panel": "#FBF7EE",
             "panel2": "#E8DFCF",
@@ -924,7 +1018,7 @@ def _titan_frame_svg(frame: dict, view_id: str, colors: dict[str, str]) -> str:
         x, top, bottom = 130, 375, 735
     marks = frame["markLabels"] if view_id == "proof" else {
         "horizon": "open horizon",
-        "finity": "finite boundary",
+        "finity": "finity · finite boundary",
         "bullet": "Ground-limit",
     }
     loci = [
@@ -948,7 +1042,7 @@ def _proof_extras(topology: dict, colors: dict[str, str]) -> str:
     parts: list[str] = []
     parts.append(_text(55, 333, "SOUL LOOP · D5 OPTIONS → χ → D4 RECEIPT → RETURN", fill=colors["ink"], **{"font-family": "sans-serif", "font-size": 14, "font-weight": 800, "letter-spacing": 1.1}))
     parts.append(f"<g{_attrs({'id': 'physical-cone'})}>")
-    parts.append(f"<path{_attrs({'d': 'M 500 815 L 790 318 L 1110 815', 'fill': 'none', 'stroke': colors['muted'], 'stroke-width': 2.2})}/>")
+    parts.append(f"<path{_attrs({'d': 'M 420 815 L 560 330 L 1080 330 L 1240 815', 'fill': 'none', 'stroke': colors['muted'], 'stroke-width': 2.2})}/>")
     parts.append(_text(720, 792, "J+ · PHYSICAL LIGHT CONE · c-BOUNDED [A]", fill=colors["muted"], **{"font-family": "sans-serif", "font-size": 10, "font-weight": 800, "letter-spacing": 0.7}))
     parts.append("</g>")
     parts.append(f"<g{_attrs({'id': 'option-cone'})}>")
@@ -959,14 +1053,16 @@ def _proof_extras(topology: dict, colors: dict[str, str]) -> str:
     parts.append(f"<rect{_attrs({'x': 55, 'y': 800, 'width': 615, 'height': 122, 'rx': 10, 'fill': colors['panel'], 'stroke': colors['panel2'], 'stroke-width': 1.5})}/>")
     parts.append(_text(72, 823, "LOAD-BEARING PROOF ANNOTATIONS", fill=colors["ink"], **{"font-family": "sans-serif", "font-size": 10, "font-weight": 800, "letter-spacing": 0.8}))
     proof_lines = (
-        "D5 [S/I] · M_t fallible world-model · V_t declared selector / value state",
+        "D5 [S/I] · M_t := (C_t,G_t) fallible decision state",
+        "C_t fallible world-model · G_t declared selector / value policy",
+        "D4 [S] · V_t D4 embodied means / viability",
         "BR-4 [S] · chi_t finite authorized commitment",
         "D4 [S] · a_t D4 enacted action → R_(t+1) consequence receipt",
         "BR-5 [I] · changed or explicit null-with-reason",
         "rho_domain [I] · type and tier preserved; no proof transfer",
     )
     for index, line in enumerate(proof_lines):
-        parts.append(_text(72, 843 + index * 15, line, fill=colors["muted"], **{"font-family": "sans-serif", "font-size": 9, "font-weight": 700}))
+        parts.append(_text(72, 843 + index * 12, line, fill=colors["muted"], **{"font-family": "sans-serif", "font-size": 8.5, "font-weight": 700}))
     parts.append("</g>")
     return "".join(parts)
 
@@ -975,9 +1071,9 @@ def _proof_overlay_annotations(colors: dict[str, str]) -> str:
     """Paint semantic edge labels last so paths cannot strike through them."""
     parts = [f"<g{_attrs({'id': 'proof-edge-annotations'})}>"]
     labels = (
-        (680, 332, 350, 22, 855, 347, "RETURN [I] · receipt updates M,V or declares a reasoned null", colors["accent"], 9),
+        (680, 332, 350, 22, 855, 347, "RETURN [I] · receipt updates C,G or declares a reasoned null", colors["accent"], 9),
         (675, 368, 315, 23, 686, 384, "Ω OPTION CONE [I] · MODELED / RANKED / REACHABLE INSIDE J+", colors["possible"], 8.5),
-        (675, 586, 230, 22, 790, 601, "χ_t(Ω_t, M_t, V_t, D4 means, signature)", colors["muted"], 8.5),
+        (675, 586, 230, 22, 790, 601, "χ_t(Ω_t, M_t, V_t, signature)", colors["muted"], 8.5),
         (824, 617, 102, 20, 875, 631, "AUTHORIZED [S]", colors["accent"], 7.5),
         (964, 617, 100, 20, 1014, 631, "CONSEQUENCE [S]", colors["accent"], 7.5),
     )
@@ -991,7 +1087,7 @@ def _proof_overlay_annotations(colors: dict[str, str]) -> str:
 
 def _emblem_extras(topology: dict, colors: dict[str, str]) -> str:
     parts = [f"<g{_attrs({'id': 'master-emblem-geometry'})}>"]
-    parts.append(f"<path{_attrs({'d': 'M 350 820 L 820 300 L 1450 820', 'fill': 'none', 'stroke': colors['muted'], 'stroke-width': 2.1, 'opacity': 0.65})}/>")
+    parts.append(f"<path{_attrs({'d': 'M 300 820 L 390 310 L 1090 310 L 1480 820', 'fill': 'none', 'stroke': colors['muted'], 'stroke-width': 2.1, 'opacity': 0.65})}/>")
     parts.append(f"<rect{_attrs({'x': 445, 'y': 345, 'width': 340, 'height': 225, 'rx': 28, 'fill': colors['panel'], 'fill-opacity': 0.5, 'stroke': colors['possible'], 'stroke-width': 2, 'stroke-dasharray': '7 9'})}/>")
     parts.append(_text(350, 842, "J+ · c-BOUNDED PHYSICAL ENVELOPE", fill=colors["muted"], **{"font-family": "sans-serif", "font-size": 9, "font-weight": 800, "letter-spacing": 0.9}))
     parts.append("</g>")
@@ -1013,7 +1109,7 @@ def _dimension_spine_svg(topology: dict, view_id: str, colors: dict[str, str]) -
     parts = [f"<g{_attrs({'id': 'dimension-spine', 'data-box': f'{x} {y} {width} {height}'})}>"]
     parts.append(f"<rect{_attrs({'x': x, 'y': y, 'width': width, 'height': height, 'rx': 14, 'fill': colors['panel'], 'fill-opacity': 0.72, 'stroke': colors['panel2'], 'stroke-width': 1.5})}/>")
     if view_id == "proof":
-        parts.append(_text(70, 143, "D0 → μ₀ → … → D6 · STRUCTURAL / INTERPRETIVE SCAFFOLD [S]", fill=colors["muted"], **{"font-family": "sans-serif", "font-size": 9, "font-weight": 800, "letter-spacing": 0.65}))
+        parts.append(_text(70, 143, "D0 → μ₀ → … → D6 · INTERNAL DEPENDENCY [S] · ONTOLOGY/READ-ACROSS [I] · LABELS/COUNT/GEOMETRY [DEFINITIONAL]", fill=colors["muted"], **{"font-family": "sans-serif", "font-size": 8.5, "font-weight": 800, "letter-spacing": 0.35}))
 
     spine_edges = [
         edge
@@ -1079,7 +1175,11 @@ def _dimension_spine_svg(topology: dict, view_id: str, colors: dict[str, str]) -
             description = (
                 SPINE_STATE_LABELS[node_id]
                 if node_id in SPINE_STATE_LABELS
-                else f"opens {SPINE_CROSSING_LABELS[node_id]}"
+                else (
+                    "declares closure · no new freedom"
+                    if node_id == "mu-5"
+                    else f"opens {SPINE_CROSSING_LABELS[node_id]}"
+                )
             )
             label_y = 220 if node_id in SPINE_STATE_LABELS else 251
             parts.append(_text(nx, label_y, description, fill=colors["ink"], **{"font-family": "sans-serif", "font-size": 8.5, "font-weight": 700, "text-anchor": "middle"}))

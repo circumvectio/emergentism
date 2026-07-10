@@ -55,8 +55,9 @@ source lane, repair the source and recompile.
 Ownership is split deliberately:
 
 - `05_COSMOLOGY/00_THE_BURRI_RULES.md` owns semantics and claim boundaries.
-- `05_COSMOLOGY/00_BURRI_RULES_TOPOLOGY.json` owns geometry and stable source
-  references only.
+- `05_COSMOLOGY/00_BURRI_RULES_TOPOLOGY.json` is a non-authoritative semantic
+  mirror plus geometry and source data. It may not introduce claims; all mirrored
+  semantics must remain at parity with the Markdown authority.
 - `render_burri_rules.py` validates that contract and derives both SVG views.
 
 Write both outputs atomically after topology review:

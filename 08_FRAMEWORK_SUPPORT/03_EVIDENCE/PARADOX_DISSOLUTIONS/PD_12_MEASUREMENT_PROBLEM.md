@@ -74,19 +74,17 @@ without pretending to replace quantum theory.
 
 ## 3. THE REFRAME
 
-Measurement is modeled *as* a μ-limit crossing. It is not asserted to be a new
-physical force, and the framework does not claim that ordinary D4 interactions
-are irrelevant. The μ-limit is the interpretive name for the boundary where a
-possibility description becomes a definite public record.
+Measurement is retained only as an optional quantum correspondence `[C]`, not
+as a generic dimensional crossing or new physical force:
 
-The μ-limit formula from the framework:
+```text
+D5 possibilities <-> structured quantum alternatives / branch relations  [C]
+D4 actuality     <-> enacted or observer-relative factual record          [C]
+```
 
-> μ(P → F) = lim[δt → 0] { Σ^∞ C(ψ) } = F
-
-In plain terms: the framework reads the transition from Possibility (P, the
-D5-facing option description) to the Finitor (F, the bounded D4-facing record)
-as occurring at the limit where coherent alternatives are no longer available
-as public alternatives inside that measurement context.
+Everett is a no-collapse relative-state formulation; Copenhagen-style
+actualization is interpretation-specific. Neither is literally an additional
+spacetime dimension, and neither proves the D4/D5 ontology.
 
 The Finitor is the model's name for the bounded recording boundary, not a magic
 observer-substance. Consciousness does not *cause* collapse in the crude sense
@@ -103,22 +101,25 @@ Finitor when it produces an irreversible-enough bounded record in a given
 measurement context. That is a model of the boundary, not a proof that the
 boundary has been physically solved.
 
-The problem is reframed when measurement is treated as both physical event and
-register crossing: a D4 interaction that, under the framework's interpretation,
-also marks the D5-to-D4 handoff from option description to public record. The
-stronger claim that no D4 formalism can ever describe the boundary remains a
-falsifiable conjecture, not an established result.
+The problem is reframed when a physical D4 measurement event and its stable
+record are kept distinct from the D5-facing possibility description used in
+the analogy. The stronger claim that no D4 formalism can ever describe the
+boundary remains a falsifiable conjecture, not an established result.
+
+Operational agent enactment is separately typed by
+`chi_t:(Omega_t,M_t,V_t,signature)->(a_t,R_(t+1))`: D5 decision state plus D4
+means and authorization produces a D4 action and receipt. `chi_t` is not a
+wave-function collapse rule, and the operational calculus remains intact if
+this quantum inset is removed.
 
 ## 4. THE FRAMEWORK CONNECTION
 
 The D4-D5 bridge provides the structural basis, but the registers must not be collapsed. On the sphere, `φ` names the coherence coordinate and `ν` names the viability coordinate. In the action register, `Φ` is D5 worldline-foresight — the agent's ability to hold and rank reachable possibilities — while `V` is D4 means-to-act: the body, tool, energy, and access side through which one branch becomes definite. The equator (`φ = ν = 1`; action read: `Φ` and `V` both usable) is the maximum-balance region where possibility and actuality can be coupled without either pole consuming the other.
 
-The μ-limit is the framework's model for D5→D4 traversal. It is not established
-as the physical mechanism of collapse. The same model can be used by analogy for
-decisions, perceptions, and acts of actualization, but those analogies remain
-lower-tier until they generate independent tests. Quantum mechanics makes the
-possibility/record tension unusually visible; it does not automatically validate
-the full D5 ontology.
+The D5-possibility / D4-record pairing is correspondence only `[C]`; it is not
+established as a physical mechanism of collapse. Quantum mechanics makes the
+possibility/record tension unusually visible; it does not automatically
+validate the full D5 ontology or the independent `chi_t` agency rule.
 
 The transcendental Trinity {0, 1, ∞} provides the grammar: 0 (void / no public
 record yet), 1 (the Finitor / bounded record), ∞ (the possibility field).
@@ -132,14 +133,14 @@ The reframe fails if:
 1. **Decoherence or another standard physical account fully explains outcome
    selection.** If environmental decoherence, many-worlds, objective-collapse,
    Bohmian mechanics, or another standard account gives a consensus physical
-   solution to the selection/record problem, no μ-limit mechanism is needed.
-   The framework reading could remain metaphorical but would lose any claim to
-   explanatory necessity.
+   solution to the selection/record problem, no additional framework mechanism
+   is needed. The correspondence could remain metaphorical but would lose any
+   claim to explanatory necessity.
 
-2. **The μ-limit has no physical correlate.** If there is no detectable boundary
-   between possibility description and public record -- no operational signature
-   distinguishable from existing physical accounts -- the framework offers only
-   metaphor, not mechanism.
+2. **The correspondence has no physical bite.** If there is no detectable
+   boundary between possibility description and public record -- no operational
+   signature distinguishable from existing physical accounts -- the framework
+   offers only metaphor, not mechanism.
 
 3. **A D4-only definition of measurement succeeds.** If a purely physical
    criterion (for example thermodynamic irreversibility, information recording,

@@ -1,8 +1,8 @@
 {
   "schemaVersion": "0.1",
   "title": "Burri Rules Master Topology",
-  "authorityBoundary": "Geometry and source references only. The Markdown rulebook remains semantic authority.",
-  "fullTextEquivalent": "The Titans frame possibility; a finite agent forms a fallible D5 option field, commits through D4 means and authorization, receives D4 consequences, and recursively corrects both world-model and selector.",
+  "authorityBoundary": "Non-authoritative semantic mirror plus geometry and source data; may not introduce claims. The Markdown rulebook remains semantic authority.",
+  "fullTextEquivalent": "The Titans frame possibility; a finite agent forms a fallible D5 decision state and option field, commits through D4 embodied means and authorization, receives D4 consequences, and recursively corrects both world-model and selector.",
   "rules": [
     {
       "id": "BR-1",
@@ -20,7 +20,7 @@
       "label": "Crossing",
       "tier": "D",
       "structuralTier": "S",
-      "summary": "Each mu-n crossing from Dn to D(n+1), for n zero through five, declares saturation, new freedom, recovery, tier, and kill criterion.",
+      "summary": "The mu-0 through mu-4 crossings require saturation, genuinely new positive freedom, recovery, tier, and kill criterion; mu-5 instead demonstrates exhaustion, declares closure, and introduces no new positive freedom.",
       "sourceIds": [
         "src-rulebook",
         "src-ledger",
@@ -44,7 +44,7 @@
       "label": "Commitment",
       "tier": "D",
       "structuralTier": "S",
-      "summary": "A finite authorized chi commitment combines option, model, selector, means, and signature to produce a D4 action and receipt.",
+      "summary": "A finite authorized chi commitment combines Omega_t, the M_t := (C_t,G_t) fallible D5 decision state, V_t D4 embodied means, and signature to produce a D4 action and receipt.",
       "sourceIds": [
         "src-rulebook",
         "src-ledger",
@@ -161,7 +161,7 @@
       },
       "markLabels": {
         "bullet": "0 / Ground-limit",
-        "finity": "1 / finite distinction",
+        "finity": "finity · finite boundary",
         "horizon": "infinity / open horizon"
       },
       "acting": false,
@@ -208,7 +208,7 @@
       "requirements": [
         "typed prior register",
         "observable saturation or failure",
-        "genuinely new freedom",
+        "genuinely new positive freedom",
         "lower-register recovery or explicit loss",
         "evidence tier",
         "kill criterion"
@@ -254,7 +254,7 @@
       "requirements": [
         "typed prior register",
         "observable saturation or failure",
-        "genuinely new freedom",
+        "genuinely new positive freedom",
         "lower-register recovery or explicit loss",
         "evidence tier",
         "kill criterion"
@@ -300,7 +300,7 @@
       "requirements": [
         "typed prior register",
         "observable saturation or failure",
-        "genuinely new freedom",
+        "genuinely new positive freedom",
         "lower-register recovery or explicit loss",
         "evidence tier",
         "kill criterion"
@@ -346,7 +346,7 @@
       "requirements": [
         "typed prior register",
         "observable saturation or failure",
-        "genuinely new freedom",
+        "genuinely new positive freedom",
         "lower-register recovery or explicit loss",
         "evidence tier",
         "kill criterion"
@@ -393,7 +393,7 @@
       "requirements": [
         "typed prior register",
         "observable saturation or failure",
-        "genuinely new freedom",
+        "genuinely new positive freedom",
         "lower-register recovery or explicit loss",
         "evidence tier",
         "kill criterion"
@@ -433,15 +433,15 @@
         "src-rulebook",
         "src-ledger"
       ],
-      "label": "mu-5: declared closure opens",
+      "label": "mu-5: declares closure; no new freedom",
       "x": 1220,
       "y": 230,
       "priorRegister": "D5",
       "nextRegister": "D6",
       "requirements": [
         "typed prior register",
-        "observable saturation or failure",
-        "genuinely new freedom",
+        "demonstrable exhaustion and declared closure",
+        "no new positive freedom introduced",
         "lower-register recovery or explicit loss",
         "evidence tier",
         "kill criterion"
@@ -483,7 +483,7 @@
         "src-d4-d5",
         "src-soros"
       ],
-      "label": "M_t fallible world-model",
+      "label": "C_t fallible world-model",
       "x": 1010,
       "y": 405
     },
@@ -503,7 +503,7 @@
         "src-rulebook",
         "src-ledger"
       ],
-      "label": "V_t declared selector / value state",
+      "label": "G_t declared selector / value policy",
       "x": 820,
       "y": 405
     },
@@ -559,7 +559,7 @@
         "src-rulebook",
         "src-d4-d5"
       ],
-      "label": "D4 finite means",
+      "label": "V_t D4 embodied means",
       "x": 515,
       "y": 575
     },
@@ -599,12 +599,12 @@
       "label": "chi_t finite authorized commitment",
       "x": 820,
       "y": 620,
+      "formula": "chi_t:(Omega_t,M_t,V_t,signature)->(a_t,R_(t+1))",
       "inputs": {
-        "option": "d5-option-a",
-        "model": "d5-model",
-        "selector": "d5-selector",
-        "means": "d4-means",
-        "signature": "signature"
+        "Omega_t": "typed D5 option field",
+        "M_t": "(C_t,G_t) fallible D5 decision state",
+        "V_t": "D4 embodied means / viability",
+        "signature": "D4 authorization envelope"
       },
       "outputs": {
         "action": "d4-action",
@@ -736,8 +736,7 @@
       "sourceIds": [
         "src-rulebook",
         "src-ledger"
-      ],
-      "style": "solid"
+      ]
     },
     {
       "id": "e-mu-0-d1",
@@ -753,8 +752,7 @@
       "sourceIds": [
         "src-rulebook",
         "src-ledger"
-      ],
-      "style": "solid"
+      ]
     },
     {
       "id": "e-d1-mu-1",
@@ -770,8 +768,7 @@
       "sourceIds": [
         "src-rulebook",
         "src-ledger"
-      ],
-      "style": "solid"
+      ]
     },
     {
       "id": "e-mu-1-d2",
@@ -787,8 +784,7 @@
       "sourceIds": [
         "src-rulebook",
         "src-ledger"
-      ],
-      "style": "solid"
+      ]
     },
     {
       "id": "e-d2-mu-2",
@@ -804,8 +800,7 @@
       "sourceIds": [
         "src-rulebook",
         "src-ledger"
-      ],
-      "style": "solid"
+      ]
     },
     {
       "id": "e-mu-2-d3",
@@ -821,8 +816,7 @@
       "sourceIds": [
         "src-rulebook",
         "src-ledger"
-      ],
-      "style": "solid"
+      ]
     },
     {
       "id": "e-d3-mu-3",
@@ -838,8 +832,7 @@
       "sourceIds": [
         "src-rulebook",
         "src-ledger"
-      ],
-      "style": "solid"
+      ]
     },
     {
       "id": "e-mu-3-d4",
@@ -855,8 +848,7 @@
       "sourceIds": [
         "src-rulebook",
         "src-ledger"
-      ],
-      "style": "solid"
+      ]
     },
     {
       "id": "e-d4-mu-4",
@@ -872,8 +864,7 @@
       "sourceIds": [
         "src-rulebook",
         "src-d4-d5"
-      ],
-      "style": "solid"
+      ]
     },
     {
       "id": "e-mu-4-d5",
@@ -889,8 +880,7 @@
       "sourceIds": [
         "src-rulebook",
         "src-d4-d5"
-      ],
-      "style": "dotted"
+      ]
     },
     {
       "id": "e-d5-mu-5",
@@ -906,8 +896,7 @@
       "sourceIds": [
         "src-rulebook",
         "src-ledger"
-      ],
-      "style": "dotted"
+      ]
     },
     {
       "id": "e-mu-5-d6",
@@ -923,8 +912,7 @@
       "sourceIds": [
         "src-rulebook",
         "src-ledger"
-      ],
-      "style": "dotted"
+      ]
     },
     {
       "id": "e-d6-d0-closure",
@@ -941,7 +929,6 @@
         "src-rulebook",
         "src-ledger"
       ],
-      "style": "curved",
       "closure": true,
       "label": "declared scaffold closure; no mu-6"
     },
@@ -961,7 +948,6 @@
         "src-rulebook",
         "src-d4-d5"
       ],
-      "style": "dotted",
       "cone": "option-cone"
     },
     {
@@ -980,7 +966,6 @@
         "src-rulebook",
         "src-ledger"
       ],
-      "style": "dotted",
       "cone": "option-cone"
     },
     {
@@ -999,7 +984,6 @@
         "src-rulebook",
         "src-d4-d5"
       ],
-      "style": "dotted",
       "label": "modeled / selectable / reachable inside J+",
       "cone": "option-cone"
     },
@@ -1019,7 +1003,6 @@
         "src-rulebook",
         "src-d4-d5"
       ],
-      "style": "dotted",
       "label": "retained counterfactual inside J+",
       "cone": "option-cone"
     },
@@ -1038,8 +1021,7 @@
       "sourceIds": [
         "src-rulebook",
         "src-ledger"
-      ],
-      "style": "dotted"
+      ]
     },
     {
       "id": "e-selector-option-b",
@@ -1056,8 +1038,7 @@
       "sourceIds": [
         "src-rulebook",
         "src-ledger"
-      ],
-      "style": "dotted"
+      ]
     },
     {
       "id": "e-d4-means",
@@ -1074,7 +1055,6 @@
         "src-rulebook",
         "src-d4-d5"
       ],
-      "style": "solid",
       "cone": "physical-cone"
     },
     {
@@ -1091,8 +1071,7 @@
       "sourceIds": [
         "src-rulebook",
         "src-ledger"
-      ],
-      "style": "solid"
+      ]
     },
     {
       "id": "e-model-chi",
@@ -1108,8 +1087,7 @@
       "sourceIds": [
         "src-rulebook",
         "src-ledger"
-      ],
-      "style": "dotted"
+      ]
     },
     {
       "id": "e-selector-chi",
@@ -1125,8 +1103,7 @@
       "sourceIds": [
         "src-rulebook",
         "src-ledger"
-      ],
-      "style": "dotted"
+      ]
     },
     {
       "id": "e-option-a-chi",
@@ -1143,7 +1120,6 @@
         "src-rulebook",
         "src-d4-d5"
       ],
-      "style": "dotted",
       "label": "fallible finite selection"
     },
     {
@@ -1160,8 +1136,7 @@
       "sourceIds": [
         "src-rulebook",
         "src-d4-d5"
-      ],
-      "style": "solid"
+      ]
     },
     {
       "id": "e-signature-chi",
@@ -1177,8 +1152,7 @@
       "sourceIds": [
         "src-rulebook",
         "src-ledger"
-      ],
-      "style": "solid"
+      ]
     },
     {
       "id": "e-chi-action",
@@ -1195,7 +1169,6 @@
         "src-rulebook",
         "src-d4-d5"
       ],
-      "style": "solid",
       "label": "authorized event"
     },
     {
@@ -1214,7 +1187,6 @@
         "src-rulebook",
         "src-ledger"
       ],
-      "style": "solid",
       "label": "D4 consequence"
     },
     {
@@ -1233,8 +1205,7 @@
         "src-ledger",
         "src-soros"
       ],
-      "style": "curved",
-      "label": "receipt returns to next M and V",
+      "label": "receipt returns to next C and G",
       "updates": [
         "d5-model",
         "d5-selector"
@@ -1257,7 +1228,6 @@
         "src-rulebook",
         "src-egregoreotype"
       ],
-      "style": "curved",
       "label": "shared trace persists"
     },
     {
@@ -1275,7 +1245,6 @@
         "src-rulebook",
         "src-egregoreotype"
       ],
-      "style": "curved",
       "label": "later selection reweighted"
     },
     {
@@ -1294,7 +1263,6 @@
         "src-rulebook",
         "src-quantum-boundary"
       ],
-      "style": "dotted",
       "overlay": "quantum",
       "label": "optional correspondence, not identity"
     },
@@ -1314,7 +1282,6 @@
         "src-rulebook",
         "src-quantum-boundary"
       ],
-      "style": "dotted",
       "overlay": "quantum",
       "label": "analogy only"
     },
@@ -1334,7 +1301,6 @@
         "src-rulebook",
         "src-quantum-boundary"
       ],
-      "style": "dotted",
       "overlay": "quantum",
       "label": "analogy only"
     }

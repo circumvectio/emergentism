@@ -171,50 +171,40 @@ The three Executive boundary readings form the **three-player coordination game*
 
 ---
 
-## V. Quantum Interpretation Resolution (Corrected)
+## V. Quarantined quantum correspondence `[C]` — removable
 
-The D4/D5 distinction **dissolves the measurement problem** with corrected dimensional mapping:
+**Supersession / canonical-owner note:** this section is a removable analogy
+only. The register owner is
+[`34_D4_D5_CANONICAL_REFERENCE.md`](34_D4_D5_CANONICAL_REFERENCE.md), and the
+physics boundary remains
+[`38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`](38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md).
+If this section conflicts with either owner, the owner governs.
 
-### Many-Worlds ↔ D5 Distributed Actuality
-- **Location**: Entire sphere (all points equally real)
-- **Character**: All branches ACTUAL (not potential)
-- **Agent**: Distributed actuality across the opened field
-- **Status**: Correct about **D5 multiplicity** — all worlds enacted
+Everett is a **no-collapse relative-state** formulation. Its structured
+alternatives and branch relations may be compared with D5 possibilities, but
+the comparison is `[C]`: it does not say that D5 is a field of enacted worlds,
+that an agent is distributed across branches, or that a quantum state is a
+dimensional layer.
 
-### Copenhagen ↔ D4→D5 Selection
-- **Location**: Equatorial selection (D4 potential → D5 actual)
-- **Character**: Wave function collapses to ONE branch
-- **Agent**: Witness→Agent transition
-- **Status**: Correct about **selection** — from potential (D4) to singular actual (D5)
+Copenhagen-style actualization is **interpretation-specific**. An enacted or
+observer-relative factual record may be compared with D4 actuality / receipt,
+again only as `[C]`. The framework does not identify consciousness with a
+collapse mechanism or claim that awareness selects a quantum outcome.
 
-### The Resolution (Corrected)
+Neither interpretation is literally an additional spacetime dimension. The
+correspondence therefore preserves the owner types:
 
+```text
+D5 possibilities <-> structured alternatives / branch relations  [C]
+D4 actuality     <-> enacted or observer-relative factual record  [C]
+
+D5 --chi_t--> D4 action and receipt                               [S]
 ```
-MANY-WORLDS (D5 distributed — all branches actual)
-    Brahman's multiplicity
-    All possibilities equally real
-            ↓
-    D4 ← WITNESS (potential recognized)
-         ↓ μ₄ (selection limit)
-    D5 → AGENT (one world enacted)
-    Ātman's singular present
-            ↓
-COPENHAGEN (D5 singular — one branch selected)
-```
 
-**Both interpretations are correct about different phases of the interface:**
-- **Many-Worlds** = D5 distributed actuality (all branches enacted within the opened field)
-- **Copenhagen** = D4→D5 singular selection (from potential recognized at D4 to one enacted present in D5)
-
-**Canonical paragraph:** Many-Worlds is true at D5 as distributed actuality. Copenhagen is true at D4→D5 as singular selection. Consciousness is the equatorial disclosure / selector interface, not the Ground itself. `Teleological Force` is the interpretive name for the bias toward viable singular enactment at this interface. Stronger retrocausal readings remain [C].
-
-**Biology-facing note:** in life-science register, this interface is best translated first into embodied action selection, interoceptive regulation, and self-maintaining agency. It is not yet accepted biology that systemic awareness literally causes quantum collapse, and the framework should not present it that way in scientific contexts.
-
-**Physics-facing note (2026-04-29):** single-photon, delayed-choice, and Bell-test experiments confirm the non-classical boundary and the insufficiency of local pre-written-property models. They do not prove this D4/D5 interpretation, systemic awareness-collapse, or literal retrocausal F5. Use [`38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`](38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md) for source-tier discipline.
-
-**The "collapse" is the selection event** — choosing one enactment from a distributed field. It is neither purely physical nor purely perceptual, but **dimensional transit** — from D4 potential to D5 actual, from witness to agent.
-
-**Correction note:** Earlier framework versions mapped Many-Worlds to D4 as "potential." The corrected logic recognizes Many-Worlds as D5 distributed actuality (all branches real), while Copenhagen traverses D4→D5 (selection from potential to actual).
+The operational `chi_t` commitment is a forward-causal decision rule, not a
+wave-function collapse and not a solution to the quantum measurement problem.
+Removing this entire section leaves the D4/D5 spine, the Burri Rules, and the
+Soul Loop intact.
 
 ---
 

@@ -105,9 +105,14 @@ The system is **unstable** if it fails any of these conditions.
 
 2. **Composition is multiplicative:** The product structure is native to S² (MF-140). The symmetry group PSL(2,ℂ) composes by matrix multiplication. There is no additive isometry of S².
 
-3. **Emergence is real:** Each dimensional level D0-D6 has predicates not definable from the level below. [Proved: T12 in v0.3.]
+3. **Emergence is scaffold-internal:** The D0-D6 predicate order is `[S]`
+   inside the declared framework; its ontology/read-across is `[I]`, and its
+   labels/count are `[Definitional]`. T12 does not prove the D0-D6 predicates
+   as seven physical strata.
 
-4. **Closure exists:** D6 ≡ D0. The system returns to its origin. [Proved: Hopf fibration S³ → S².]
+4. **Closure is declared:** Inside the scaffold, `D6 == D0` is the terminal
+   boundary identification `[S/I]`. The Hopf fibration does not prove `D6 == D0`
+   or derive the closure from `S³ → S²`.
 
 5. **No redundancy:** The three primitives are categorically distinct. Removing any one destroys the system:
    - Without • (0): no origin, no ground, no starting point

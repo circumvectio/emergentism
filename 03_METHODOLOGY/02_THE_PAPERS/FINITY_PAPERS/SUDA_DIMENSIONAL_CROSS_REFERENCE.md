@@ -37,7 +37,7 @@ depends_on:
 | **Theorem 5: Continuous Half-Twist** | Geometric rotation + PSL(2,ℝ) lift Mₜ(x) = (x+t)/(1−tx) | **D2–D4** | L2–L4 | μ₁→μ₂→μ₃→μ₄ | Continuous transformation as path on S²; the helix |
 | **Theorem 6: Möbius Control Triad** | (A, B, T) — safe inversion with S, Q, P | **D4–D5** | L4–L5 | μ₃→μ₄, μ₄→μ₅ | The control structure at the causal vertex; agency emerging from causality |
 | **Theorem 7: Minimal Structural Equation** | 0* := limₓ→₀ 1/x = ±∞ | **D0–D1** | L0–L1 | μ₀→μ₁ | The boundary algebra; the first distinction |
-| **Theorem 8: Möbius Structural Equation** | Symbolic fusion of Euler identity with infinite circulation | **D6≡D0** | L7 | μ₅→μ₆ (closure) | The return; the identity that generates all structure |
+| **Theorem 8: Möbius Structural Equation** | Symbolic fusion of Euler identity with infinite circulation | **D6≡D0** | L7 | μ₅: D5→D6; D6≡D0 closure; no μ₆ | The return; the identity that generates all structure |
 
 ---
 

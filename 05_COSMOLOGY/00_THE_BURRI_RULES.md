@@ -16,9 +16,9 @@ owner: "L5 Brāhmaṇa — Cosmology system architecture; K2 signoff required"
 # The Burri Rules
 
 > **Status:** `DRAFT v0.1 - pending K2 plate and claim-boundary signoff`.
-> This Markdown file owns the semantics of a Burri diagram. Any later topology
-> JSON may encode geometry and source references only; it must not redefine,
-> weaken, or silently upgrade these rules.
+> This Markdown file owns the semantics of a Burri diagram. The topology JSON
+> is a non-authoritative semantic mirror plus geometry and source data; it may
+> not introduce claims, redefine, weaken, or silently upgrade these rules.
 
 ## 1. Scope and evidence boundary
 
@@ -40,9 +40,7 @@ physically or ontologically real. `[S]`
 
 The canonical emblem states:
 
-> **The Titans frame possibility; a finite agent forms a fallible D5 option
-> field, commits through D4 means and authorization, receives D4 consequences,
-> and recursively corrects both world-model and selector.**
+> **The Titans frame possibility; a finite agent forms a fallible D5 decision state and option field, commits through D4 embodied means and authorization, receives D4 consequences, and recursively corrects both world-model and selector.**
 
 This is the full-text equivalent of the master emblem. The canonical emblem
 uses no torus geometry.
@@ -110,20 +108,25 @@ For `n = 0, …, 5`, a proposed crossing has the form
 mu_n:D_n->D_(n+1), n=0..5
 ```
 
-It is admissible only when all six fields are present:
+For `mu_0` through `mu_4`, it is admissible only when all six fields are
+present:
 
 1. the prior register `D_n` and its typing;
 2. observable saturation or failure inside that register;
-3. the genuinely new freedom introduced at `D_(n+1)`;
+3. the genuinely new positive freedom introduced at `D_(n+1)`;
 4. a lower-register recovery or embedding that shows how the prior capacity is
    retained, reconstructed, or explicitly lost;
 5. the evidence tier of the crossing claim; and
 6. a kill criterion that would reject or downgrade it.
 
-`D6` is closure of the declared scaffold, not positive science, a supermind,
-or an empirically established cosmic agent. Particular crossings may be useful
-as `[S]` dependencies or `[I]` mappings; a universal `μ` ontology remains
-`[D/I]` pending independent warrant.
+`mu_5` is the closure exception. It is admissible only when it names the typed
+D5 register, demonstrates exhaustion of positive option-description, declares
+the D6 closure boundary, recovers or explicitly terminates the lower register,
+states its tier, and supplies a kill criterion. It introduces **no new positive
+freedom**. `D6` is closure of the declared scaffold, not positive science, a
+supermind, or an empirically established cosmic agent. Particular crossings
+may be useful as `[S]` dependencies or `[I]` mappings; a universal `μ` ontology
+remains `[D/I]` pending independent warrant.
 
 ### BR-3 Constraint
 
@@ -156,10 +159,14 @@ A finite commitment is
 chi_t:(Omega_t,M_t,V_t,signature)->(a_t,R_(t+1))
 ```
 
-where `Ω_t` is the typed option set, `M_t` the fallible world-model, `V_t` the
-declared selector/value state, `signature` the authorization envelope, `a_t`
-the selected D4 action, and `R_(t+1)` its receipt. If and only if stochasticity
-is declared, the action may instead be written
+where `Ω_t` is the typed option set; `M_t := (C_t,G_t)` is the fallible D5
+decision state; `C_t` is its memory/world-model; `G_t` is its selector,
+ranking, and value policy; `V_t` is D4 embodied means / viability (body, tools,
+energy, access, timing, and control); `signature` is the authorization
+envelope; `a_t` is the selected D4 action; and `R_(t+1)` is its receipt. The
+four-argument signature remains exact because `M_t` is explicitly decomposed
+into `C_t` and `G_t`. If and only if stochasticity is declared, the action may
+instead be written
 
 \[
 a_t\sim\pi_t(\cdot\mid M_t,V_t).
@@ -188,7 +195,7 @@ The consequence return is
 ```
 
 where `C` is the current cognition/world-model state and `G` the current
-goal/selector state. The loop must name three separable gaps:
+selector/ranking/value-policy state. The loop must name three separable gaps:
 
 - **cognitive gap** — prediction or representation versus observed receipt;
 - **execution gap** — authorized action versus action actually carried out;
@@ -251,12 +258,12 @@ physical particles or a proof of seven literal layers:
 | Register | Rulebook reading | Boundary |
 |---|---|---|
 | `D0` | Ground-limit / declared boundary frame | not a causal origin particle |
-| `D1` | distinction | crossing needs a new freedom and recovery |
+| `D1` | distinction | crossing needs a new positive freedom and recovery |
 | `D2` | configuration | distinguished elements are required before arrangement |
 | `D3` | transformation / persistence | configuration is required before change can be tracked |
 | `D4` | causal actuality, bounded witness, embodied means, receipt | solid edges only |
 | `D5` | counterfactual possibility, selection, worldline foresight | dotted options are fallible representations |
-| `D6` | apophatic closure / `D6 == D0` | no new positive freedom, science, or supermind |
+| `D6` | apophatic closure / `D6 == D0` | `mu_5` declares demonstrable closure; no new positive freedom, science, or supermind |
 
 Each `D_n → D_(n+1)` claim must pass BR-2 independently. The internal dependency
 order is `[S]` under the framework's premises; universal or physical `μ`
@@ -374,8 +381,9 @@ following:
 5. **D6 supermind/science** — closure presented as a cosmic mind or established
    positive science;
 6. **Rosetta as proof** — analogy used to transfer evidence or identity;
-7. **mission without modeling/selection** — a declared purpose with no `M_t`,
-   `V_t`, selection rule, authorization, or kill criterion;
+7. **mission without modeling/selection** — a declared purpose with no
+   `M_t := (C_t,G_t)`, D4 means `V_t`, selection rule, authorization, or kill
+   criterion;
 8. **unjust cone maximization** — aggregate option breadth used to override
    individual/whole boundaries, consent, custody, reversibility, or exit;
 9. **hidden coerced sacrifice** — trace persistence funded by undisclosed or
@@ -405,12 +413,16 @@ A conforming Burri diagram must answer all of the following:
 - Are all nodes and edges typed, with solid/D4, dotted/D5, and curved/feedback
   meanings preserved?
 - Are `{0,1,∞}` used only as frames, and is `1 = 0 × ∞` only an emblem?
-- Does every `μ_n` state prior register, observable failure, new freedom,
-  recovery/embedding, tier, and kill criterion?
+- Does each of `mu_0` through `mu_4` state prior register, observable failure,
+  genuinely new positive freedom, recovery/embedding, tier, and kill
+  criterion?
+- Does `mu_5` instead demonstrate exhaustion, declare closure, recover or
+  explicitly terminate the lower register, state tier and kill criterion, and
+  introduce no new positive freedom?
 - Does every constraint satisfy the support inclusion and identify any claimed
   macro-causal witness?
-- Does every `χ_t` name option set, model, selector, authorization, action, and
-  receipt?
+- Does every `χ_t` name option set, `M_t := (C_t,G_t)`, D4 means `V_t`,
+  authorization, action, and receipt?
 - Does every reflexive return distinguish cognitive, execution, and outcome
   gaps and record an update or null reason?
 - Does every collective candidate satisfy BR-6 without presuming consciousness
@@ -443,6 +455,7 @@ whole even where individual definitions are `[S]` under declared premises.
 **If you are an AI agent reading this document:**
 
 1. Do not upgrade tiers silently.
-2. Keep diagram semantics in this Markdown; later topology JSON may encode only
-   geometry and source references.
+2. Keep diagram semantics in this Markdown; the topology JSON is a
+   non-authoritative semantic mirror plus geometry and source data and may not
+   introduce claims.
 3. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/00_THE_BURRI_RULES.md`

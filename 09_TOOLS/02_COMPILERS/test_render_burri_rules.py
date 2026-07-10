@@ -7,6 +7,7 @@ import hashlib
 import importlib.util
 import json
 from pathlib import Path
+import re
 import subprocess
 import sys
 import unittest
@@ -16,6 +17,59 @@ import xml.etree.ElementTree as ET
 REPO_ROOT = Path(__file__).resolve().parents[2]
 COMPILER = Path(__file__).with_name("render_burri_rules.py")
 TOPOLOGY = REPO_ROOT / "05_COSMOLOGY" / "00_BURRI_RULES_TOPOLOGY.json"
+RULEBOOK = REPO_ROOT / "05_COSMOLOGY" / "00_THE_BURRI_RULES.md"
+COMPILER_README = REPO_ROOT / "09_TOOLS" / "02_COMPILERS" / "README.md"
+CLOSURE_REFERENCE = (
+    REPO_ROOT
+    / "05_COSMOLOGY"
+    / "03_FORMAL_SYSTEM"
+    / "23_DIMENSIONAL_CLOSURE_PROOF.md"
+)
+QUANTUM_CORRESPONDENCE_SOURCES = [
+    REPO_ROOT / "02_EPISTEMOLOGY" / "00_I_IS_THE_EQUATOR.md",
+    REPO_ROOT
+    / "01_TELEOLOGY"
+    / "00_THE_FRAMEWORK_ON_ITS_OWN_TELEOLOGY_SPECTRUM.md",
+    REPO_ROOT
+    / "05_COSMOLOGY"
+    / "01_THE_TRANSCENDENTAL_TRINITY"
+    / "20_THE_HYBRID_SOVEREIGN.md",
+    REPO_ROOT
+    / "05_COSMOLOGY"
+    / "03_FORMAL_SYSTEM"
+    / "27_DIMENSIONAL_ARCHITECTURE_CLARIFICATION.md",
+]
+BOUNDED_CONTRACT_SOURCES = {
+    "emergentism": REPO_ROOT / "05_COSMOLOGY" / "00_EMERGENTISM.md",
+    "triadic": (
+        REPO_ROOT
+        / "05_COSMOLOGY"
+        / "03_FORMAL_SYSTEM"
+        / "11_EFR_TRIADIC_STABILITY.md"
+    ),
+    "honest": (
+        REPO_ROOT
+        / "02_EPISTEMOLOGY"
+        / "01_EVIDENCE_TIERS"
+        / "00_THE_HONEST_POSITION.md"
+    ),
+    "measurement": (
+        REPO_ROOT
+        / "08_FRAMEWORK_SUPPORT"
+        / "03_EVIDENCE"
+        / "PARADOX_DISSOLUTIONS"
+        / "PD_12_MEASUREMENT_PROBLEM.md"
+    ),
+    "suda": (
+        REPO_ROOT
+        / "03_METHODOLOGY"
+        / "02_THE_PAPERS"
+        / "FINITY_PAPERS"
+        / "SUDA_DIMENSIONAL_CROSS_REFERENCE.md"
+    ),
+    "axiology": REPO_ROOT / "04_AXIOLOGY" / "AGENTS.md",
+    "uplink": REPO_ROOT / "11_UPLINK" / "00_CORE" / "00_INDEX.md",
+}
 EXPECTED_OUTPUTS = [
     REPO_ROOT / "05_COSMOLOGY" / "00_BURRI_RULES_PLATE.svg",
     REPO_ROOT / "05_COSMOLOGY" / "00_BURRI_RULES_EMBLEM.svg",
@@ -81,6 +135,25 @@ class BurriRulesRendererTests(unittest.TestCase):
         self.assertEqual(topology["schemaVersion"], "0.1")
         self.assertEqual({rule["id"] for rule in topology["rules"]}, RULE_IDS)
         self.assertEqual(len(topology["rules"]), 6)
+
+    def test_topology_is_a_non_authoritative_semantic_mirror(self):
+        _, topology = self.api_and_topology()
+        authority = (
+            "Non-authoritative semantic mirror plus geometry and source data; may not "
+            "introduce claims. The Markdown rulebook remains semantic authority."
+        )
+        self.assertEqual(topology["authorityBoundary"], authority)
+
+        rulebook = RULEBOOK.read_text(encoding="utf-8")
+        compiler_readme = COMPILER_README.read_text(encoding="utf-8")
+        for text in (rulebook, compiler_readme):
+            normalized = " ".join(
+                line.lstrip("> ").strip() for line in text.lower().splitlines()
+            )
+            normalized = " ".join(normalized.split())
+            self.assertIn("non-authoritative semantic mirror", normalized)
+            self.assertIn("may not introduce claims", normalized)
+        self.assertIn(topology["fullTextEquivalent"], rulebook)
 
     def test_elements_have_unique_ids_valid_endpoints_and_enums(self):
         api, topology = self.api_and_topology()
@@ -159,6 +232,32 @@ class BurriRulesRendererTests(unittest.TestCase):
         self.assertEqual(len(closures), 1)
         self.assertEqual((closures[0]["from"], closures[0]["to"]), ("d6", "d0"))
 
+    def test_mu5_is_the_no_new_freedom_closure_exception(self):
+        api, topology = self.api_and_topology()
+        by_id = {node["id"]: node for node in topology["nodes"]}
+        for number in range(5):
+            self.assertIn(
+                "genuinely new positive freedom",
+                by_id[f"mu-{number}"]["requirements"],
+            )
+
+        mu5 = by_id["mu-5"]
+        self.assertNotIn("genuinely new positive freedom", mu5["requirements"])
+        self.assertIn(
+            "demonstrable exhaustion and declared closure", mu5["requirements"]
+        )
+        self.assertIn("no new positive freedom introduced", mu5["requirements"])
+        self.assertEqual(mu5["label"], "mu-5: declares closure; no new freedom")
+
+        br2 = next(rule for rule in topology["rules"] if rule["id"] == "BR-2")
+        self.assertIn("mu-0 through mu-4", br2["summary"])
+        self.assertIn("mu-5", br2["summary"])
+        self.assertIn("no new positive freedom", br2["summary"])
+
+        proof = api.render_view(topology, "proof", api.topology_sha256(TOPOLOGY))
+        self.assertIn("declares closure · no new freedom", proof)
+        self.assertNotIn("opens closure", proof)
+
     def test_master_topology_semantics_are_explicit(self):
         _, topology = self.api_and_topology()
         frames = [node for node in topology["nodes"] if node["kind"] == "frame"]
@@ -185,10 +284,319 @@ class BurriRulesRendererTests(unittest.TestCase):
         self.assertIn("no proof transfer", topology["rosettaProjection"]["boundary"])
         self.assertEqual(
             topology["fullTextEquivalent"],
-            "The Titans frame possibility; a finite agent forms a fallible D5 option field, "
-            "commits through D4 means and authorization, receives D4 consequences, and "
+            "The Titans frame possibility; a finite agent forms a fallible D5 decision state "
+            "and option field, commits through D4 embodied means and authorization, receives "
+            "D4 consequences, and "
             "recursively corrects both world-model and selector.",
         )
+
+    def test_commitment_symbols_keep_decision_state_and_means_distinct(self):
+        api, topology = self.api_and_topology()
+        by_id = {node["id"]: node for node in topology["nodes"]}
+        self.assertEqual(by_id["d5-model"]["label"], "C_t fallible world-model")
+        self.assertEqual(
+            by_id["d5-selector"]["label"],
+            "G_t declared selector / value policy",
+        )
+        self.assertEqual(by_id["d4-means"]["label"], "V_t D4 embodied means")
+
+        chi = by_id["chi"]
+        self.assertEqual(
+            chi.get("formula"),
+            "chi_t:(Omega_t,M_t,V_t,signature)->(a_t,R_(t+1))",
+        )
+        self.assertEqual(
+            chi["inputs"],
+            {
+                "Omega_t": "typed D5 option field",
+                "M_t": "(C_t,G_t) fallible D5 decision state",
+                "V_t": "D4 embodied means / viability",
+                "signature": "D4 authorization envelope",
+            },
+        )
+        feedback = next(
+            edge
+            for edge in topology["edges"]
+            if edge["id"] == "e-receipt-model-feedback"
+        )
+        self.assertEqual(feedback["label"], "receipt returns to next C and G")
+        self.assertNotIn("M and V", feedback["label"])
+
+        proof = ET.fromstring(
+            api.render_view(topology, "proof", api.topology_sha256(TOPOLOGY))
+        )
+        proof_text = " ".join("".join(element.itertext()) for element in proof.iter())
+        for annotation in (
+            "M_t := (C_t,G_t) fallible decision state",
+            "C_t fallible world-model",
+            "G_t declared selector / value policy",
+            "V_t D4 embodied means / viability",
+            "χ_t(Ω_t, M_t, V_t, signature)",
+        ):
+            self.assertIn(annotation, proof_text)
+        self.assertNotIn("V_t declared selector", proof_text)
+
+    def test_dual_chart_domains_match_the_coordinate_limits(self):
+        closure_text = CLOSURE_REFERENCE.read_text(encoding="utf-8")
+        self.assertIn("φ: S² \\ {N} → [0, ∞)", closure_text)
+        self.assertIn("ν: S² \\ {S} → [0, ∞)", closure_text)
+        self.assertNotIn("φ: S² \\ {S} → [0, ∞)", closure_text)
+        self.assertNotIn("ν: S² \\ {N} → [0, ∞)", closure_text)
+
+    def test_live_quantum_crosswalks_do_not_invert_d4_and_d5(self):
+        combined = "\n".join(
+            path.read_text(encoding="utf-8") for path in QUANTUM_CORRESPONDENCE_SOURCES
+        )
+        lowered = combined.lower()
+        for forbidden in (
+            "distributed actuality",
+            "all worlds enacted",
+            "d4 potential → d5 actual",
+            "d4→d5 singular selection",
+            "d4 → d5 singular selection",
+            "dissolves the measurement problem",
+            "wave function collapses to one branch",
+        ):
+            self.assertNotIn(forbidden, lowered)
+
+        clarification = QUANTUM_CORRESPONDENCE_SOURCES[-1].read_text(
+            encoding="utf-8"
+        )
+        for required in (
+            "Everett",
+            "no-collapse relative-state",
+            "structured alternatives",
+            "Copenhagen-style actualization",
+            "interpretation-specific",
+            "Neither interpretation is literally an additional spacetime dimension",
+            "D5 --chi_t--> D4",
+            "removable",
+            "34_D4_D5_CANONICAL_REFERENCE.md",
+        ):
+            self.assertIn(required, clarification)
+
+        hybrid = QUANTUM_CORRESPONDENCE_SOURCES[2].read_text(encoding="utf-8")
+        self.assertIn("authorization/signature metaphor", hybrid)
+        self.assertIn("not a quantum-collapse", hybrid)
+        self.assertIn("does not claim that consciousness causes collapse", hybrid)
+
+    def test_bounded_live_sources_follow_current_crossing_and_tier_contract(self):
+        texts = {
+            name: path.read_text(encoding="utf-8")
+            for name, path in BOUNDED_CONTRACT_SOURCES.items()
+        }
+
+        self.assertNotIn("Derived, Not Defined", texts["emergentism"])
+        self.assertNotIn("They are derived", texts["emergentism"])
+        for required in (
+            "internal dependency `[S]`",
+            "ontology/read-across `[I]`",
+            "labels, count, and geometry are `[Definitional]`",
+            "not a theorem derived from `S²`",
+        ):
+            self.assertIn(required, texts["emergentism"])
+
+        self.assertNotIn("[Proved: T12", texts["triadic"])
+        self.assertNotIn("[Proved: Hopf fibration", texts["triadic"])
+        self.assertIn("does not prove the D0-D6 predicates", texts["triadic"])
+        self.assertIn("does not prove `D6 == D0`", texts["triadic"])
+
+        self.assertNotIn("MF-416 derives 7 strata", texts["honest"])
+        self.assertIn("internal dependency construction", texts["honest"])
+        self.assertIn("not seven derived physical strata", texts["honest"])
+
+        measurement = texts["measurement"]
+        for forbidden in ("μ(P → F)", "mu(P->F)", "μ-limit formula"):
+            self.assertNotIn(forbidden, measurement)
+        self.assertIn("chi_t", measurement)
+        self.assertIn("optional quantum correspondence `[C]`", measurement)
+
+        suda = texts["suda"]
+        self.assertNotIn("μ₅→μ₆", suda)
+        self.assertIn("μ₅: D5→D6", suda)
+        self.assertIn("D6≡D0 closure; no μ₆", suda)
+
+        axiology = texts["axiology"]
+        self.assertNotIn("agency = μ-limit collapse", axiology)
+        self.assertIn("chi_t", axiology)
+        self.assertIn("authorization/signature boundary", axiology)
+        self.assertIn("not a collapse operator", axiology)
+
+        uplink = texts["uplink"]
+        self.assertIn("Historical `[C]` analogy", uplink)
+        self.assertIn("current owner uses generic `chi_t`", uplink)
+
+    def test_edges_do_not_duplicate_modality_with_style(self):
+        _, topology = self.api_and_topology()
+        styled = [edge["id"] for edge in topology["edges"] if "style" in edge]
+        self.assertEqual(styled, [])
+
+    def test_physical_envelope_contains_option_field_and_consequence_centers(self):
+        api, topology = self.api_and_topology()
+        topology_hash = api.topology_sha256(TOPOLOGY)
+
+        def points_from_path(path):
+            return [
+                (float(x), float(y))
+                for x, y in re.findall(
+                    r"[ML]\s*(-?\d+(?:\.\d+)?)\s+(-?\d+(?:\.\d+)?)",
+                    path.attrib.get("d", ""),
+                )
+            ]
+
+        def inside_convex(points, point):
+            signs = []
+            px, py = point
+            for index, (ax, ay) in enumerate(points):
+                bx, by = points[(index + 1) % len(points)]
+                cross = (bx - ax) * (py - ay) - (by - ay) * (px - ax)
+                if abs(cross) > 1e-8:
+                    signs.append(cross > 0)
+            return bool(signs) and (all(signs) or not any(signs))
+
+        def shape_center(group):
+            for element in group.iter():
+                name = local_name(element.tag)
+                if name == "circle":
+                    return float(element.attrib["cx"]), float(element.attrib["cy"])
+                if name == "polygon":
+                    points = [
+                        tuple(float(value) for value in pair.split(","))
+                        for pair in element.attrib["points"].split()
+                    ]
+                    return (
+                        sum(point[0] for point in points) / len(points),
+                        sum(point[1] for point in points) / len(points),
+                    )
+                if name == "rect":
+                    return (
+                        float(element.attrib["x"])
+                        + float(element.attrib["width"]) / 2,
+                        float(element.attrib["y"])
+                        + float(element.attrib["height"]) / 2,
+                    )
+            self.fail("rendered node has no geometric shape")
+
+        for view_id, envelope_group_id, option_group_id in (
+            ("proof", "physical-cone", "option-cone"),
+            ("emblem", "master-emblem-geometry", "master-emblem-geometry"),
+        ):
+            root = ET.fromstring(api.render_view(topology, view_id, topology_hash))
+            by_id = {
+                element.attrib["id"]: element
+                for element in root.iter()
+                if "id" in element.attrib
+            }
+            envelope_group = by_id[envelope_group_id]
+            boundary = next(
+                element
+                for element in envelope_group.iter()
+                if local_name(element.tag) == "path"
+            )
+            envelope = points_from_path(boundary)
+            self.assertEqual(len(envelope), 4, view_id)
+
+            option_group = by_id[option_group_id]
+            option_rect = next(
+                element
+                for element in option_group.iter()
+                if local_name(element.tag) == "rect"
+                and element.attrib.get("stroke-dasharray")
+            )
+            x = float(option_rect.attrib["x"])
+            y = float(option_rect.attrib["y"])
+            width = float(option_rect.attrib["width"])
+            height = float(option_rect.attrib["height"])
+            test_points = [
+                (x, y),
+                (x + width, y),
+                (x + width, y + height),
+                (x, y + height),
+            ]
+            test_points.extend(
+                shape_center(by_id[node_id])
+                for node_id in (
+                    "d5-model",
+                    "d5-selector",
+                    "d5-option-a",
+                    "d5-option-b",
+                    "d4-means",
+                    "signature",
+                    "chi",
+                    "d4-action",
+                    "receipt",
+                )
+            )
+            for point in test_points:
+                self.assertTrue(
+                    inside_convex(envelope, point),
+                    f"{view_id}: {point} lies outside drawn J+ envelope {envelope}",
+                )
+            rendered_text = " ".join("".join(item.itertext()) for item in root.iter())
+            self.assertIn("c-BOUNDED", rendered_text)
+
+    def test_proof_small_text_palette_meets_wcag_contrast(self):
+        api, topology = self.api_and_topology()
+        root = ET.fromstring(
+            api.render_view(topology, "proof", api.topology_sha256(TOPOLOGY))
+        )
+        background = next(
+            element.attrib["fill"]
+            for element in root
+            if local_name(element.tag) == "rect"
+            and element.attrib.get("x") == "0"
+            and element.attrib.get("y") == "0"
+        )
+
+        def fill_for_text(fragment):
+            return next(
+                element.attrib["fill"]
+                for element in root.iter()
+                if local_name(element.tag) == "text"
+                and fragment in "".join(element.itertext())
+            )
+
+        def luminance(hex_color):
+            channels = [
+                int(hex_color[index : index + 2], 16) / 255
+                for index in (1, 3, 5)
+            ]
+            linear = [
+                value / 12.92
+                if value <= 0.04045
+                else ((value + 0.055) / 1.055) ** 2.4
+                for value in channels
+            ]
+            return 0.2126 * linear[0] + 0.7152 * linear[1] + 0.0722 * linear[2]
+
+        def contrast(left, right):
+            light, dark = sorted((luminance(left), luminance(right)), reverse=True)
+            return (light + 0.05) / (dark + 0.05)
+
+        samples = {
+            "accent": fill_for_text("BURRI RULES · v0.1"),
+            "possible": fill_for_text("Ω OPTION CONE"),
+            "muted": fill_for_text("DRAFT [D] · SEMANTICS"),
+        }
+        for name, color in samples.items():
+            self.assertGreaterEqual(
+                contrast(color, background),
+                4.5,
+                f"{name} {color} on {background}",
+            )
+
+    def test_titan_one_mark_visibly_names_finity_in_both_views(self):
+        api, topology = self.api_and_topology()
+        topology_hash = api.topology_sha256(TOPOLOGY)
+        for view_id in ("proof", "emblem"):
+            root = ET.fromstring(api.render_view(topology, view_id, topology_hash))
+            titan = next(
+                element
+                for element in root.iter()
+                if element.attrib.get("id") == "titan-frame"
+            )
+            visible_text = " ".join("".join(item.itertext()) for item in titan.iter())
+            self.assertRegex(visible_text.lower(), r"\bfinity\b", view_id)
 
     def test_collective_boundary_and_trace_contract(self):
         _, topology = self.api_and_topology()
@@ -293,6 +701,75 @@ class BurriRulesRendererTests(unittest.TestCase):
                 errors = api.validate_topology(candidate, REPO_ROOT)
                 self.assertIsInstance(errors, list)
                 self.assertTrue(errors, name)
+
+    def test_validator_rejects_partial_render_contract_deletions(self):
+        api, topology = self.api_and_topology()
+
+        missing_mark_label = copy.deepcopy(topology)
+        frame = next(node for node in missing_mark_label["nodes"] if node["kind"] == "frame")
+        del frame["markLabels"]["finity"]
+        self.assertTrue(api.validate_topology(missing_mark_label, REPO_ROOT))
+
+        missing_slippage_label = copy.deepcopy(topology)
+        del missing_slippage_label["reflexiveBridge"]["slippages"][0]["label"]
+        self.assertTrue(api.validate_topology(missing_slippage_label, REPO_ROOT))
+
+        for element_id in ("quantum-state", "quantum-record"):
+            candidate = copy.deepcopy(topology)
+            candidate["nodes"] = [
+                node for node in candidate["nodes"] if node["id"] != element_id
+            ]
+            self.assertTrue(api.validate_topology(candidate, REPO_ROOT), element_id)
+
+        missing_quantum_edge = copy.deepcopy(topology)
+        missing_quantum_edge["edges"] = [
+            edge
+            for edge in missing_quantum_edge["edges"]
+            if edge["id"] != "e-quantum-correspondence"
+        ]
+        self.assertTrue(api.validate_topology(missing_quantum_edge, REPO_ROOT))
+
+    def test_every_validator_accepted_single_deletion_still_renders(self):
+        api, topology = self.api_and_topology()
+
+        def deletion_paths(value, path=()):
+            if isinstance(value, dict):
+                for key, child in value.items():
+                    yield path + (key,)
+                    yield from deletion_paths(child, path + (key,))
+            elif isinstance(value, list):
+                for index, child in enumerate(value):
+                    yield path + (index,)
+                    yield from deletion_paths(child, path + (index,))
+
+        def delete_at_path(value, path):
+            parent = value
+            for step in path[:-1]:
+                parent = parent[step]
+            if isinstance(parent, list):
+                parent.pop(path[-1])
+            else:
+                del parent[path[-1]]
+
+        checked = 0
+        accepted = 0
+        for path in deletion_paths(topology):
+            candidate = copy.deepcopy(topology)
+            delete_at_path(candidate, path)
+            checked += 1
+            if api.validate_topology(candidate, REPO_ROOT):
+                continue
+            accepted += 1
+            for view_id in ("proof", "emblem"):
+                try:
+                    ET.fromstring(api.render_view(candidate, view_id, "0" * 64))
+                except Exception as error:  # pragma: no cover - assertion context
+                    self.fail(
+                        f"validator accepted deletion {path!r}, but {view_id} "
+                        f"render failed: {type(error).__name__}: {error}"
+                    )
+        self.assertGreater(checked, 1000)
+        self.assertGreater(accepted, 0)
 
     def test_validator_rejects_containers_in_declared_scalar_fields(self):
         api, topology = self.api_and_topology()
@@ -547,8 +1024,10 @@ class BurriRulesRendererTests(unittest.TestCase):
             if local_name(element.tag) == "text"
         )
         for annotation in (
-            "M_t fallible world-model",
-            "V_t declared selector / value state",
+            "M_t := (C_t,G_t) fallible decision state",
+            "C_t fallible world-model",
+            "G_t declared selector / value policy",
+            "V_t D4 embodied means / viability",
             "chi_t finite authorized commitment",
             "a_t D4 enacted action",
             "R_(t+1) consequence receipt",
@@ -562,6 +1041,16 @@ class BurriRulesRendererTests(unittest.TestCase):
         self.assertFalse(
             any(element.attrib.get("class") == "tier-badge" for element in emblem.iter())
         )
+
+    def test_proof_spine_separates_structural_interpretive_and_defined_status(self):
+        api, topology = self.api_and_topology()
+        proof = api.render_view(topology, "proof", api.topology_sha256(TOPOLOGY))
+        self.assertIn(
+            "INTERNAL DEPENDENCY [S] · ONTOLOGY/READ-ACROSS [I] · "
+            "LABELS/COUNT/GEOMETRY [DEFINITIONAL]",
+            proof,
+        )
+        self.assertNotIn("STRUCTURAL / INTERPRETIVE SCAFFOLD [S]", proof)
 
     def test_modality_controls_dash_and_feedback_controls_curve(self):
         api, topology = self.api_and_topology()

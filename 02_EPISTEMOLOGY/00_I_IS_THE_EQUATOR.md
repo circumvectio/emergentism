@@ -249,7 +249,14 @@ The **Trika fully articulates at D5**. At D4, only the product (⊙) exists. At 
 
 **The poles are limits, not the whole quantum story.**
 
-**Many-Worlds is D5 distributed actuality. Copenhagen is D4→D5 singular selection.**
+**Quarantined quantum correspondence `[C]`: Everett's no-collapse
+relative-state alternatives may be compared with D5 possibilities;
+Copenhagen-style actualization is interpretation-specific and may be compared
+with a D4 factual record. Neither is a literal dimensional identity.**
+
+**Operationally, finite agency remains `D5 --chi_t--> D4`: an authorized
+commitment enacts one option and produces a receipt without making
+consciousness a quantum-collapse mechanism.**
 
 **The present is i — the equator, the selector interface, the site where one enactment becomes explicit.**
 

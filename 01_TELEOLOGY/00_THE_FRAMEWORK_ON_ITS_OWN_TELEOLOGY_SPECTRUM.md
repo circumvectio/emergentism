@@ -100,8 +100,9 @@ This is the level at which the framework can be said to have **real direction wi
 
 - `Zero-Sum Resolution Equation -> φ · ν = 1 on S² -> (φ − ν)^2 ≥ 0 -> φ + ν ≥ 2`
 - `Ground -> Being -> Teleological Force -> Dasein -> beings`
-- `Many-Worlds = D5 distributed actuality`
-- `Copenhagen = D4→D5 singular selection`
+- `[C] Everett no-collapse relative-state alternatives ↔ D5 possibilities`
+- `[C] Copenhagen-style, interpretation-specific actualization ↔ D4 factual record`
+- `[S] finite commitment: D5 --chi_t--> D4 action and receipt`
 
 The framework at Level 2 is not yet alive in the strong sense. But it is no longer arbitrary.
 
