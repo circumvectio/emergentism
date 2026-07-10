@@ -48,6 +48,32 @@ source lane, repair the source and recompile.
 | Compiler | Output | Status |
 |---|---|---|
 | `build_corpus_map.py` | `00_CORPUS.md` folder-perspective maps | [B] Dormant in this checkout: requires `../_corpus_source.yaml`, which is not present. |
+| `render_burri_rules.py` | `05_COSMOLOGY/00_BURRI_RULES_PLATE.svg` and `05_COSMOLOGY/00_BURRI_RULES_EMBLEM.svg` | [B] Deterministic generated views of the `[D]` Burri Rules topology; the L5 Markdown rulebook remains semantic authority. |
+
+## Burri Rules Renderer
+
+Ownership is split deliberately:
+
+- `05_COSMOLOGY/00_THE_BURRI_RULES.md` owns semantics and claim boundaries.
+- `05_COSMOLOGY/00_BURRI_RULES_TOPOLOGY.json` owns geometry and stable source
+  references only.
+- `render_burri_rules.py` validates that contract and derives both SVG views.
+
+Write both outputs atomically after topology review:
+
+```bash
+python3 -B 09_TOOLS/02_COMPILERS/render_burri_rules.py --write
+```
+
+Check tracked bytes for missing or drifted generated output without writing:
+
+```bash
+python3 -B 09_TOOLS/02_COMPILERS/render_burri_rules.py --check
+```
+
+Exactly one mode is required. Output contains no timestamp or
+environment-dependent value; both views carry the renderer version and the
+same topology SHA-256.
 
 ## Route Upstream
 

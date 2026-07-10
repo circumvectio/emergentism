@@ -1,0 +1,1593 @@
+{
+  "schemaVersion": "0.1",
+  "title": "Burri Rules Master Topology",
+  "authorityBoundary": "Geometry and source references only. The Markdown rulebook remains semantic authority.",
+  "fullTextEquivalent": "The Titans frame possibility; a finite agent forms a fallible D5 option field, commits through D4 means and authorization, receives D4 consequences, and recursively corrects both world-model and selector.",
+  "rules": [
+    {
+      "id": "BR-1",
+      "label": "Frame",
+      "tier": "D",
+      "structuralTier": "S",
+      "summary": "The marks 0, 1, and infinity frame a register and never act as operands, agents, causal particles, or deployable operators.",
+      "sourceIds": [
+        "src-rulebook",
+        "src-titan-canon"
+      ]
+    },
+    {
+      "id": "BR-2",
+      "label": "Crossing",
+      "tier": "D",
+      "structuralTier": "S",
+      "summary": "Each mu-n crossing from Dn to D(n+1), for n zero through five, declares saturation, new freedom, recovery, tier, and kill criterion.",
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger",
+        "src-d4-d5"
+      ]
+    },
+    {
+      "id": "BR-3",
+      "label": "Constraint",
+      "tier": "D",
+      "structuralTier": "S",
+      "summary": "A constraint removes or reweights lower-law-admissible candidates and does not create a physical future outside the causal possibility set.",
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger",
+        "src-bridge-laws"
+      ]
+    },
+    {
+      "id": "BR-4",
+      "label": "Commitment",
+      "tier": "D",
+      "structuralTier": "S",
+      "summary": "A finite authorized chi commitment combines option, model, selector, means, and signature to produce a D4 action and receipt.",
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger",
+        "src-d4-d5"
+      ]
+    },
+    {
+      "id": "BR-5",
+      "label": "Reflexive Return",
+      "tier": "D",
+      "structuralTier": "S",
+      "crosswalkTier": "I",
+      "summary": "A receipt returns to the next model and selector while cognitive, execution, and outcome gaps remain distinct.",
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger",
+        "src-soros"
+      ]
+    },
+    {
+      "id": "BR-6",
+      "label": "Composition",
+      "tier": "D",
+      "crosswalkTier": "I",
+      "summary": "Coupled loops qualify as a candidate Egregoreotype only through a persistent, reweighting, cost-bearing shared trace inside a declared collective boundary.",
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger",
+        "src-egregoreotype"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-rulebook",
+      "label": "The Burri Rules",
+      "path": "05_COSMOLOGY/00_THE_BURRI_RULES.md",
+      "tier": "D",
+      "authority": "semantic authority"
+    },
+    {
+      "id": "src-ledger",
+      "label": "Burri Rules Derivation Ledger",
+      "path": "03_METHODOLOGY/01_THE_DERIVATION/01_BURRI_RULES_DERIVATION_LEDGER.md",
+      "tier": "D",
+      "authority": "proof burden and claim movement"
+    },
+    {
+      "id": "src-titan-canon",
+      "label": "Transcendental Trinity Canon",
+      "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md",
+      "tier": "S",
+      "authority": "Titan frame vocabulary"
+    },
+    {
+      "id": "src-d4-d5",
+      "label": "D4 D5 Canonical Reference",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md",
+      "tier": "S",
+      "authority": "D4 actual and D5 possible register fence"
+    },
+    {
+      "id": "src-bridge-laws",
+      "label": "Bridge Laws Between Levels",
+      "path": "04_AXIOLOGY/00_BRIDGE_LAWS_BETWEEN_LEVELS.md",
+      "tier": "S",
+      "authority": "constraint and crossing discipline"
+    },
+    {
+      "id": "src-egregoreotype",
+      "label": "Stigmergy and the Egregoreotype",
+      "path": "05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md",
+      "tier": "I",
+      "authority": "candidate trace-field crosswalk"
+    },
+    {
+      "id": "src-quantum-boundary",
+      "label": "Quantum Foundations Confirmation Boundary",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md",
+      "tier": "C",
+      "authority": "removable analogy boundary"
+    },
+    {
+      "id": "src-soros",
+      "label": "George Soros, General Theory of Reflexivity",
+      "url": "https://www.opensocietyfoundations.org/uploads/9ae17912-2262-4646-8ffc-d01afc934c36/george-soros-general-theory-of-reflexivity-transcript.pdf",
+      "tier": "B",
+      "crosswalkTier": "I",
+      "authority": "primary-source attribution only"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "titan-frame",
+      "kind": "frame",
+      "dRegister": "D0",
+      "modality": "possible",
+      "role": "coupling",
+      "tier": "S",
+      "ruleIds": [
+        "BR-1"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-titan-canon"
+      ],
+      "label": "Titan frame {0, 1, infinity}",
+      "x": 100,
+      "y": 92,
+      "marks": {
+        "bullet": "Ground-limit / boundary marker",
+        "finity": "finite distinction / boundary marker",
+        "horizon": "open horizon / boundary marker"
+      },
+      "markLabels": {
+        "bullet": "0 / Ground-limit",
+        "finity": "1 / finite distinction",
+        "horizon": "infinity / open horizon"
+      },
+      "acting": false,
+      "displayLociOnly": true,
+      "claimBoundary": "Boundary-frame marks only; they do not generate dimensions, sign acts, enter arithmetic, or become causal nodes. The emblem 1 = 0 x infinity is not ordinary arithmetic."
+    },
+    {
+      "id": "d0",
+      "kind": "state",
+      "dRegister": "D0",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "label": "D0 Ground-limit",
+      "x": 120,
+      "y": 230
+    },
+    {
+      "id": "mu-0",
+      "kind": "crossing",
+      "dRegister": "D0",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "label": "mu-0: distinction opens",
+      "x": 220,
+      "y": 230,
+      "priorRegister": "D0",
+      "nextRegister": "D1",
+      "requirements": [
+        "typed prior register",
+        "observable saturation or failure",
+        "genuinely new freedom",
+        "lower-register recovery or explicit loss",
+        "evidence tier",
+        "kill criterion"
+      ]
+    },
+    {
+      "id": "d1",
+      "kind": "state",
+      "dRegister": "D1",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "label": "D1 Distinction",
+      "x": 320,
+      "y": 230
+    },
+    {
+      "id": "mu-1",
+      "kind": "crossing",
+      "dRegister": "D1",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "label": "mu-1: configuration opens",
+      "x": 420,
+      "y": 230,
+      "priorRegister": "D1",
+      "nextRegister": "D2",
+      "requirements": [
+        "typed prior register",
+        "observable saturation or failure",
+        "genuinely new freedom",
+        "lower-register recovery or explicit loss",
+        "evidence tier",
+        "kill criterion"
+      ]
+    },
+    {
+      "id": "d2",
+      "kind": "state",
+      "dRegister": "D2",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "label": "D2 Configuration",
+      "x": 520,
+      "y": 230
+    },
+    {
+      "id": "mu-2",
+      "kind": "crossing",
+      "dRegister": "D2",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "label": "mu-2: transformation opens",
+      "x": 620,
+      "y": 230,
+      "priorRegister": "D2",
+      "nextRegister": "D3",
+      "requirements": [
+        "typed prior register",
+        "observable saturation or failure",
+        "genuinely new freedom",
+        "lower-register recovery or explicit loss",
+        "evidence tier",
+        "kill criterion"
+      ]
+    },
+    {
+      "id": "d3",
+      "kind": "state",
+      "dRegister": "D3",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "label": "D3 Transformation / persistence",
+      "x": 720,
+      "y": 230
+    },
+    {
+      "id": "mu-3",
+      "kind": "crossing",
+      "dRegister": "D3",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "label": "mu-3: causal actuality opens",
+      "x": 820,
+      "y": 230,
+      "priorRegister": "D3",
+      "nextRegister": "D4",
+      "requirements": [
+        "typed prior register",
+        "observable saturation or failure",
+        "genuinely new freedom",
+        "lower-register recovery or explicit loss",
+        "evidence tier",
+        "kill criterion"
+      ]
+    },
+    {
+      "id": "d4",
+      "kind": "state",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2",
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-d4-d5"
+      ],
+      "label": "D4 Causal actuality",
+      "x": 920,
+      "y": 230
+    },
+    {
+      "id": "mu-4",
+      "kind": "crossing",
+      "dRegister": "D4",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-d4-d5"
+      ],
+      "label": "mu-4: counterfactual selection opens",
+      "x": 1020,
+      "y": 230,
+      "priorRegister": "D4",
+      "nextRegister": "D5",
+      "requirements": [
+        "typed prior register",
+        "observable saturation or failure",
+        "genuinely new freedom",
+        "lower-register recovery or explicit loss",
+        "evidence tier",
+        "kill criterion"
+      ]
+    },
+    {
+      "id": "d5",
+      "kind": "state",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2",
+        "BR-3",
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-d4-d5"
+      ],
+      "label": "D5 Counterfactual selection",
+      "x": 1120,
+      "y": 230
+    },
+    {
+      "id": "mu-5",
+      "kind": "crossing",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "label": "mu-5: declared closure opens",
+      "x": 1220,
+      "y": 230,
+      "priorRegister": "D5",
+      "nextRegister": "D6",
+      "requirements": [
+        "typed prior register",
+        "observable saturation or failure",
+        "genuinely new freedom",
+        "lower-register recovery or explicit loss",
+        "evidence tier",
+        "kill criterion"
+      ]
+    },
+    {
+      "id": "d6",
+      "kind": "state",
+      "dRegister": "D6",
+      "modality": "possible",
+      "role": "coupling",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "label": "D6 Closure of declared scaffold",
+      "x": 1320,
+      "y": 230,
+      "claimBoundary": "Closure only; not positive science, a supermind, or an empirically established cosmic agent."
+    },
+    {
+      "id": "d5-model",
+      "kind": "state",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-3",
+        "BR-4",
+        "BR-5"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-d4-d5",
+        "src-soros"
+      ],
+      "label": "M_t fallible world-model",
+      "x": 1010,
+      "y": 405
+    },
+    {
+      "id": "d5-selector",
+      "kind": "state",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-4",
+        "BR-5",
+        "BR-6"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "label": "V_t declared selector / value state",
+      "x": 820,
+      "y": 405
+    },
+    {
+      "id": "d5-option-a",
+      "kind": "state",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "I",
+      "ruleIds": [
+        "BR-3",
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-d4-d5"
+      ],
+      "label": "Omega_t option A / selected candidate",
+      "x": 1125,
+      "y": 515
+    },
+    {
+      "id": "d5-option-b",
+      "kind": "state",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "I",
+      "ruleIds": [
+        "BR-3",
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-d4-d5"
+      ],
+      "label": "Omega_t option B / retained alternative",
+      "x": 1305,
+      "y": 455
+    },
+    {
+      "id": "d4-means",
+      "kind": "state",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-d4-d5"
+      ],
+      "label": "D4 finite means",
+      "x": 515,
+      "y": 575
+    },
+    {
+      "id": "signature",
+      "kind": "state",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "coupling",
+      "tier": "S",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "label": "signature / authorization envelope",
+      "x": 640,
+      "y": 690
+    },
+    {
+      "id": "chi",
+      "kind": "commitment",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger",
+        "src-d4-d5"
+      ],
+      "label": "chi_t finite authorized commitment",
+      "x": 820,
+      "y": 620,
+      "inputs": {
+        "option": "d5-option-a",
+        "model": "d5-model",
+        "selector": "d5-selector",
+        "means": "d4-means",
+        "signature": "signature"
+      },
+      "outputs": {
+        "action": "d4-action",
+        "receipt": "receipt"
+      },
+      "claimBoundary": "A finite commitment is not a Titan act, an eighth generative move, or a quantum measurement."
+    },
+    {
+      "id": "d4-action",
+      "kind": "state",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-4",
+        "BR-5"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-d4-d5"
+      ],
+      "label": "a_t D4 enacted action",
+      "x": 1010,
+      "y": 700
+    },
+    {
+      "id": "receipt",
+      "kind": "receipt",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "feedback",
+      "tier": "S",
+      "ruleIds": [
+        "BR-4",
+        "BR-5"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger",
+        "src-soros"
+      ],
+      "label": "R_(t+1) consequence receipt",
+      "x": 1210,
+      "y": 700,
+      "recordBoundary": "Recorded does not mean true; provenance and tier remain visible."
+    },
+    {
+      "id": "shared-trace",
+      "kind": "trace",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "coupling",
+      "tier": "I",
+      "ruleIds": [
+        "BR-6"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger",
+        "src-egregoreotype"
+      ],
+      "label": "Shared persistent trace / candidate Egregoreotype",
+      "x": 1400,
+      "y": 620,
+      "criteria": [
+        "carrier-turnover-persistence",
+        "later-selection-reweighting",
+        "objective-like-bias",
+        "continuing-substrate-input-cost"
+      ],
+      "claimBoundary": "No consciousness claim: persistence, selection effect, reproduced bias, and continuing cost do not establish a conscious super-agent."
+    },
+    {
+      "id": "quantum-state",
+      "kind": "state",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "coupling",
+      "tier": "C",
+      "ruleIds": [
+        "BR-3",
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-quantum-boundary"
+      ],
+      "label": "[C] quantum state-space analogy",
+      "x": 190,
+      "y": 835,
+      "overlay": "quantum",
+      "claimBoundary": "Optional analogy only; quantum state space is not a literal D5 spacetime layer."
+    },
+    {
+      "id": "quantum-record",
+      "kind": "state",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "coupling",
+      "tier": "C",
+      "ruleIds": [
+        "BR-4",
+        "BR-5"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-quantum-boundary"
+      ],
+      "label": "[C] enacted / observer-relative record analogy",
+      "x": 445,
+      "y": 835,
+      "overlay": "quantum",
+      "claimBoundary": "No inference from measurement to decision, agency, universal mu physics, or D5 ontology."
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-d0-mu-0",
+      "from": "d0",
+      "to": "mu-0",
+      "dRegister": "D0",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "style": "solid"
+    },
+    {
+      "id": "e-mu-0-d1",
+      "from": "mu-0",
+      "to": "d1",
+      "dRegister": "D1",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "style": "solid"
+    },
+    {
+      "id": "e-d1-mu-1",
+      "from": "d1",
+      "to": "mu-1",
+      "dRegister": "D1",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "style": "solid"
+    },
+    {
+      "id": "e-mu-1-d2",
+      "from": "mu-1",
+      "to": "d2",
+      "dRegister": "D2",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "style": "solid"
+    },
+    {
+      "id": "e-d2-mu-2",
+      "from": "d2",
+      "to": "mu-2",
+      "dRegister": "D2",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "style": "solid"
+    },
+    {
+      "id": "e-mu-2-d3",
+      "from": "mu-2",
+      "to": "d3",
+      "dRegister": "D3",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "style": "solid"
+    },
+    {
+      "id": "e-d3-mu-3",
+      "from": "d3",
+      "to": "mu-3",
+      "dRegister": "D3",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "style": "solid"
+    },
+    {
+      "id": "e-mu-3-d4",
+      "from": "mu-3",
+      "to": "d4",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "style": "solid"
+    },
+    {
+      "id": "e-d4-mu-4",
+      "from": "d4",
+      "to": "mu-4",
+      "dRegister": "D4",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-d4-d5"
+      ],
+      "style": "solid"
+    },
+    {
+      "id": "e-mu-4-d5",
+      "from": "mu-4",
+      "to": "d5",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-d4-d5"
+      ],
+      "style": "dotted"
+    },
+    {
+      "id": "e-d5-mu-5",
+      "from": "d5",
+      "to": "mu-5",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "style": "dotted"
+    },
+    {
+      "id": "e-mu-5-d6",
+      "from": "mu-5",
+      "to": "d6",
+      "dRegister": "D6",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "style": "dotted"
+    },
+    {
+      "id": "e-d6-d0-closure",
+      "from": "d6",
+      "to": "d0",
+      "dRegister": "D6",
+      "modality": "possible",
+      "role": "coupling",
+      "tier": "S",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "style": "curved",
+      "closure": true,
+      "label": "declared scaffold closure; no mu-6"
+    },
+    {
+      "id": "e-d5-model",
+      "from": "d5",
+      "to": "d5-model",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-3",
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-d4-d5"
+      ],
+      "style": "dotted",
+      "cone": "option-cone"
+    },
+    {
+      "id": "e-d5-selector",
+      "from": "d5",
+      "to": "d5-selector",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-4",
+        "BR-5"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "style": "dotted",
+      "cone": "option-cone"
+    },
+    {
+      "id": "e-model-option-a",
+      "from": "d5-model",
+      "to": "d5-option-a",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "I",
+      "ruleIds": [
+        "BR-3",
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-d4-d5"
+      ],
+      "style": "dotted",
+      "label": "modeled / selectable / reachable inside J+",
+      "cone": "option-cone"
+    },
+    {
+      "id": "e-model-option-b",
+      "from": "d5-model",
+      "to": "d5-option-b",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "I",
+      "ruleIds": [
+        "BR-3",
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-d4-d5"
+      ],
+      "style": "dotted",
+      "label": "retained counterfactual inside J+",
+      "cone": "option-cone"
+    },
+    {
+      "id": "e-selector-option-a",
+      "from": "d5-selector",
+      "to": "d5-option-a",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "coupling",
+      "tier": "I",
+      "ruleIds": [
+        "BR-3",
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "style": "dotted"
+    },
+    {
+      "id": "e-selector-option-b",
+      "from": "d5-selector",
+      "to": "d5-option-b",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "coupling",
+      "tier": "I",
+      "ruleIds": [
+        "BR-3",
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "style": "dotted"
+    },
+    {
+      "id": "e-d4-means",
+      "from": "d4",
+      "to": "d4-means",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-d4-d5"
+      ],
+      "style": "solid",
+      "cone": "physical-cone"
+    },
+    {
+      "id": "e-d4-signature",
+      "from": "d4",
+      "to": "signature",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "coupling",
+      "tier": "S",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "style": "solid"
+    },
+    {
+      "id": "e-model-chi",
+      "from": "d5-model",
+      "to": "chi",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "coupling",
+      "tier": "S",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "style": "dotted"
+    },
+    {
+      "id": "e-selector-chi",
+      "from": "d5-selector",
+      "to": "chi",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "coupling",
+      "tier": "S",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "style": "dotted"
+    },
+    {
+      "id": "e-option-a-chi",
+      "from": "d5-option-a",
+      "to": "chi",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "coupling",
+      "tier": "S",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-d4-d5"
+      ],
+      "style": "dotted",
+      "label": "fallible finite selection"
+    },
+    {
+      "id": "e-means-chi",
+      "from": "d4-means",
+      "to": "chi",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-d4-d5"
+      ],
+      "style": "solid"
+    },
+    {
+      "id": "e-signature-chi",
+      "from": "signature",
+      "to": "chi",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "coupling",
+      "tier": "S",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "style": "solid"
+    },
+    {
+      "id": "e-chi-action",
+      "from": "chi",
+      "to": "d4-action",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-d4-d5"
+      ],
+      "style": "solid",
+      "label": "authorized event"
+    },
+    {
+      "id": "e-action-receipt",
+      "from": "d4-action",
+      "to": "receipt",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-4",
+        "BR-5"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger"
+      ],
+      "style": "solid",
+      "label": "D4 consequence"
+    },
+    {
+      "id": "e-receipt-model-feedback",
+      "from": "receipt",
+      "to": "d5-model",
+      "dRegister": "D5",
+      "modality": "actual",
+      "role": "feedback",
+      "tier": "I",
+      "ruleIds": [
+        "BR-5"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger",
+        "src-soros"
+      ],
+      "style": "curved",
+      "label": "receipt returns to next M and V",
+      "updates": [
+        "d5-model",
+        "d5-selector"
+      ],
+      "updatePolicy": "changed or explicit null-with-reason"
+    },
+    {
+      "id": "e-receipt-trace",
+      "from": "receipt",
+      "to": "shared-trace",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "coupling",
+      "tier": "I",
+      "ruleIds": [
+        "BR-5",
+        "BR-6"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-egregoreotype"
+      ],
+      "style": "curved",
+      "label": "shared trace persists"
+    },
+    {
+      "id": "e-trace-selector",
+      "from": "shared-trace",
+      "to": "d5-selector",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "coupling",
+      "tier": "I",
+      "ruleIds": [
+        "BR-6"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-egregoreotype"
+      ],
+      "style": "curved",
+      "label": "later selection reweighted"
+    },
+    {
+      "id": "e-quantum-correspondence",
+      "from": "quantum-state",
+      "to": "quantum-record",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "coupling",
+      "tier": "C",
+      "ruleIds": [
+        "BR-3",
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-quantum-boundary"
+      ],
+      "style": "dotted",
+      "overlay": "quantum",
+      "label": "optional correspondence, not identity"
+    },
+    {
+      "id": "e-quantum-option-analogy",
+      "from": "quantum-state",
+      "to": "d5-option-a",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "coupling",
+      "tier": "C",
+      "ruleIds": [
+        "BR-3",
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-quantum-boundary"
+      ],
+      "style": "dotted",
+      "overlay": "quantum",
+      "label": "analogy only"
+    },
+    {
+      "id": "e-quantum-record-analogy",
+      "from": "quantum-record",
+      "to": "receipt",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "coupling",
+      "tier": "C",
+      "ruleIds": [
+        "BR-4",
+        "BR-5"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-quantum-boundary"
+      ],
+      "style": "dotted",
+      "overlay": "quantum",
+      "label": "analogy only"
+    }
+  ],
+  "boundaries": [
+    {
+      "id": "egregoreotype-boundary",
+      "label": "Individual / whole boundary for candidate Egregoreotype",
+      "tier": "I",
+      "ruleIds": [
+        "BR-6"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-ledger",
+        "src-egregoreotype"
+      ],
+      "traceId": "shared-trace",
+      "fields": {
+        "individual": "Name each finite person or agent that can gain, lose, consent, refuse, or exit.",
+        "whole": "Name the modeled collective, ecology, institution, and affected system.",
+        "eta": "Declare the extraction condition and its measurement register; eta = 0 remains the constitutional fence.",
+        "custody": "Declare who holds identity, data, capital, keys, records, and outputs.",
+        "consent": "Declare who authorized what, at which tier, and how refusal is expressed.",
+        "reversibility": "Declare which effects can be undone, at what cost, and by whom.",
+        "exit": "Declare how each participant leaves with the assets, identity, data, and rights they are entitled to carry."
+      },
+      "omissionPolicy": "An omitted field is an unresolved boundary, not permission.",
+      "claimBoundary": "A persistent trace supports no consciousness claim and no presumption of a sovereign super-agent."
+    }
+  ],
+  "cones": {
+    "physical": {
+      "id": "physical-cone",
+      "label": "J+",
+      "name": "physical light cone",
+      "tier": "A",
+      "ruleIds": [
+        "BR-3"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-bridge-laws"
+      ],
+      "boundary": "The c-bounded physical envelope; no modeled selection widens spacetime or places a reachable history outside it."
+    },
+    "option": {
+      "id": "option-cone",
+      "label": "Omega",
+      "name": "modeled option cone",
+      "tier": "I",
+      "ruleIds": [
+        "BR-3",
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-d4-d5"
+      ],
+      "boundary": "Modeled, selectable, and reachable histories inside J+; not a wider physical light cone and not a claim of actualized futures."
+    }
+  },
+  "reflexiveBridge": {
+    "id": "reflexive-bridge",
+    "label": "Reflexive Bridge",
+    "tier": "I",
+    "ruleIds": [
+      "BR-5"
+    ],
+    "sourceIds": [
+      "src-rulebook",
+      "src-ledger",
+      "src-soros"
+    ],
+    "slippages": [
+      {
+        "id": "cognitive-gap",
+        "label": "Cognitive gap: prediction or representation versus observed receipt"
+      },
+      {
+        "id": "execution-gap",
+        "label": "Execution gap: authorized action versus action actually carried out"
+      },
+      {
+        "id": "outcome-gap",
+        "label": "Outcome gap: carried-out action versus consequence received"
+      }
+    ],
+    "feedbackSigns": [
+      {
+        "id": "negative",
+        "label": "Negative / corrective feedback contracts a declared error"
+      },
+      {
+        "id": "positive",
+        "label": "Positive / amplifying feedback enlarges a deviation or self-confirming tendency"
+      }
+    ],
+    "signBoundary": "These are dynamical signs, not moral verdicts; the collective boundary supplies the moral test.",
+    "sourceBoundary": "Soros supplies a social-theory analogue only and does not evidence quantum collapse, Everett or Copenhagen, universal mu physics, literal retrocausality, or D5 ontology."
+  },
+  "rosettaProjection": {
+    "id": "rosetta-projection",
+    "label": "rho_domain",
+    "tier": "I",
+    "ruleIds": [
+      "BR-2",
+      "BR-3",
+      "BR-5"
+    ],
+    "sourceIds": [
+      "src-rulebook",
+      "src-ledger"
+    ],
+    "boundary": "Type- and tier-preserving projection with no proof transfer between domains; partial and failed mappings remain lawful outputs."
+  },
+  "quantumOverlay": {
+    "id": "quantum-overlay",
+    "label": "Quarantined quantum analogy [C]",
+    "tier": "C",
+    "removable": true,
+    "nodeIds": [
+      "quantum-state",
+      "quantum-record"
+    ],
+    "edgeIds": [
+      "e-quantum-correspondence",
+      "e-quantum-option-analogy",
+      "e-quantum-record-analogy"
+    ],
+    "boundary": "Deleting every listed node and edge leaves BR-1 through BR-6 and the connected operational core intact."
+  },
+  "operationalCore": [
+    "d0",
+    "mu-0",
+    "d1",
+    "mu-1",
+    "d2",
+    "mu-2",
+    "d3",
+    "mu-3",
+    "d4",
+    "mu-4",
+    "d5",
+    "mu-5",
+    "d6",
+    "d5-model",
+    "d5-selector",
+    "d5-option-a",
+    "d5-option-b",
+    "d4-means",
+    "signature",
+    "chi",
+    "d4-action",
+    "receipt",
+    "shared-trace"
+  ],
+  "views": {
+    "proof": {
+      "output": "05_COSMOLOGY/00_BURRI_RULES_PLATE.svg",
+      "width": 1600,
+      "height": 1000,
+      "title": "The Burri Rules — Ivory Proof Plate",
+      "description": "A full typed consequence diagram with evidence badges, dimensional spine, physical and option cone fence, Reflexive Bridge, collective trace boundary, and removable quantum inset.",
+      "theme": "ivory-proof",
+      "palette": {
+        "background": "#F4EBDD",
+        "ink": "#1F1B16",
+        "muted": "#6F6253",
+        "accent": "#9A6A2F",
+        "conjecture": "#7B5A86"
+      },
+      "showFullLabels": true,
+      "showEvidenceBadges": true,
+      "showDimensionalSpine": true,
+      "showConeFence": true,
+      "showReflexiveBridge": true,
+      "showCollectiveInset": true,
+      "showQuantumInset": true,
+      "coreElementIds": [
+        "titan-frame",
+        "d0",
+        "mu-0",
+        "d1",
+        "mu-1",
+        "d2",
+        "mu-2",
+        "d3",
+        "mu-3",
+        "d4",
+        "mu-4",
+        "d5",
+        "mu-5",
+        "d6",
+        "d5-model",
+        "d5-selector",
+        "d5-option-a",
+        "d5-option-b",
+        "d4-means",
+        "signature",
+        "chi",
+        "d4-action",
+        "receipt",
+        "shared-trace"
+      ]
+    },
+    "emblem": {
+      "output": "05_COSMOLOGY/00_BURRI_RULES_EMBLEM.svg",
+      "width": 1600,
+      "height": 1000,
+      "title": "The Burri Rules — Obsidian Emblem",
+      "description": "The reduced master topology and its exact one-sentence full-text equivalent.",
+      "theme": "obsidian-emblem",
+      "palette": {
+        "background": "#11100E",
+        "ink": "#F4EBDD",
+        "muted": "#C7BBA8",
+        "accent": "#C8A45B"
+      },
+      "legend": "The Titans frame possibility; a finite agent forms a fallible D5 option field, commits through D4 means and authorization, receives D4 consequences, and recursively corrects both world-model and selector.",
+      "showFullLabels": false,
+      "showEvidenceBadges": false,
+      "showDimensionalSpine": true,
+      "showConeFence": true,
+      "showReflexiveBridge": true,
+      "showCollectiveInset": true,
+      "showQuantumInset": false,
+      "coreElementIds": [
+        "titan-frame",
+        "d0",
+        "mu-0",
+        "d1",
+        "mu-1",
+        "d2",
+        "mu-2",
+        "d3",
+        "mu-3",
+        "d4",
+        "mu-4",
+        "d5",
+        "mu-5",
+        "d6",
+        "d5-model",
+        "d5-selector",
+        "d5-option-a",
+        "d5-option-b",
+        "d4-means",
+        "signature",
+        "chi",
+        "d4-action",
+        "receipt",
+        "shared-trace"
+      ]
+    }
+  }
+}
