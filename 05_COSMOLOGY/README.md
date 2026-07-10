@@ -38,6 +38,7 @@ Emergentism belongs here when spoken positively. It is not L6 Core State. L6 say
 | File | Current Path | Role |
 |---|---|---|
 | **The Seven-Layer Ontology of Reality** | `01_EMERGENTISM/05_COSMOLOGY/00_THE_SEVEN_LAYER_ONTOLOGY.md` | **Canonical 7-layer formulation: logarithmic line as primary geometry, each dimension with core question, geometric object, key equation, and ethical direction** |
+| **The Burri Rules** | `01_EMERGENTISM/05_COSMOLOGY/00_THE_BURRI_RULES.md` | **Draft semantic authority for typed Burri diagrams, consequence loops, composition, and claim boundaries; later topology JSON may encode geometry and source references only** |
 | **The Complete Ontology of Reality** | `01_EMERGENTISM/05_COSMOLOGY/00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md` | **Unified D0→D6 scaffold: each dimension, μ-limit crossing, dimensional manifestation of the trans-dimensional Titan grammar, log-coordinate expression, and Rosetta layer** |
 | **The Ontology Index** | `01_EMERGENTISM/05_COSMOLOGY/00_THE_ONTOLOGY_INDEX.md` | **Navigational hub: one entry point to the complete dimensional scaffold, with question-based routing** |
 | **The Geometric Ontology of Reality** | `01_EMERGENTISM/05_COSMOLOGY/00_THE_GEOMETRIC_ONTOLOGY_OF_REALITY.md` | **7-layer geometric re-expression: each dimension IS its geometric object (log line → sphere → Bloch → torus → Burrisphere → return). `[C]` proposal** |
