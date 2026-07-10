@@ -143,7 +143,11 @@ Moral regressions occur when:
 
 ### 3.1 Interstellar Ethics
 
-For the first time in human history, our actions have consequences outside the Earth-scale light cone. Light from Earth takes 4.24 years to reach Proxima Centauri. Radio signals from early broadcasts are ~100 light-years out.
+For the first time in human history, our actions can create interstellar
+consequences beyond Earth. Those influences remain inside and propagate through
+each event's physical future `J+` at no more than `c`: light from Earth takes
+4.24 years to reach Proxima Centauri, and radio signals from early broadcasts
+are now roughly 100 light-years out.
 
 If we ever detect alien life, the ethical radius MUST extend to include them. But:
 
