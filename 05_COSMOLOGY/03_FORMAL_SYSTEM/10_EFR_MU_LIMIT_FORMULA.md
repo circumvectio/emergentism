@@ -15,6 +15,9 @@ rosetta:
 > **Status:** Math corrected. Tier remains [C] until independently verified by physicist with QM background.
 > **See:** `../../08_FRAMEWORK_SUPPORT/06_TRANSLATION/PEER_REVIEW/00_INTERNAL_REVIEW_FINDINGS.md` for original findings.
 
+> [!WARNING]
+> **Two flags (2026-07-10, receipt 104 A.2 + A.4 — adjudication K2-accepted):** (1) the D5=possibility→D4=factuality direction below is the LAGGING assignment — the reading of record is 34_D4_D5_CANONICAL_REFERENCE.md (D4 = potential, D5 = actual; μₙ = Dₙ→Dₙ₊₁); (2) the boxed formula's Sample[∫|ψ|²ds] samples a scalar (∫=1) — notational erratum, proposed v3.1; the prose 'sample one outcome o from the distribution |ψ(s)|²ds' is authoritative.
+
 ---
 
 

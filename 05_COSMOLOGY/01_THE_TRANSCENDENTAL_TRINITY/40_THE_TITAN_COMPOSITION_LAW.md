@@ -15,7 +15,7 @@ rosetta:
   register: "[A/S/I]"
   canonical_phrase: "The Titan Composition Law — ⊙ = • × ○ made exact in PSL(2,ℂ)"
 title: "The Titan Composition Law"
-status: "DRAFT [D] — 2026-07-02. Staged for K2 review. Does not amend the Settled Canon Registry; the emblem ruling (1 = 0 × ∞ is NOT field arithmetic) stands untouched."
+status: "ACCEPTED — adjudication K2-accepted in session 2026-07-10 (receipt 104 A.1/R5; acceptance receipt: 11_UPLINK/50_AUDITS_AND_EXECUTIONS/104_DIMENSIONAL_MAP_ADJUDICATION_K2_ACCEPTANCE_2026_07_10.md). Original staging note preserved: staged 2026-07-02; does not amend the Settled Canon Registry; the emblem ruling stands untouched."
 evidence_tier: "[A] the Möbius algebra (elementary, within-model); [S] the balance-condition reading as ZSRE; [I] the operator naming (inherited from MF-63, as MF-63 marks it); [D] the note as a whole pending K2."
 depends_on:
   - 00_THE_TRANSCENDENTAL_TRINITY_CANON.md
@@ -108,7 +108,7 @@ Zero-Sum Resolution Equation
 
 1. **Never present the composition law as replacing the emblem ruling.** The registry row (`1 = 0 × ∞` is not field arithmetic) stands; this is a third register, additive.
 2. **State the condition.** Quoting "⊙ = • × ○ holds in PSL(2,ℂ)" without `|σκ| = 1` is drift; correct on sight.
-3. **This document is `[D]` until K2-signed.** Do not cite it as canon; cite it as staged.
+3. **This document is K2-accepted (2026-07-10).** Acceptance receipt: [`11_UPLINK/50_AUDITS_AND_EXECUTIONS/104_DIMENSIONAL_MAP_ADJUDICATION_K2_ACCEPTANCE_2026_07_10.md`](../../11_UPLINK/50_AUDITS_AND_EXECUTIONS/104_DIMENSIONAL_MAP_ADJUDICATION_K2_ACCEPTANCE_2026_07_10.md) (receipt 104 A.1/R5). Cite it as accepted, with tiers as marked.
 4. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md`
 
 ⊙ = • × ○

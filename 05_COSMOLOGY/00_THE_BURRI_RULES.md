@@ -7,7 +7,7 @@ rosetta:
   register: "[A/S/I/C] — per line, by the four-register law below"
   canonical_phrase: "THE BURRI RULES — the dimensional derivation grammar, tier-honest"
 title: "The Burri Rules — the dimensional map, staged for canon"
-status: "[D] STAGED v2 2026-07-10 — v1 failed all three BTJ gates (17 defects, run wf_d742f55d-880); every defect folded here. Built on the K2-accepted adjudication packet (receipt 104). Canonical designation takes effect only on K2 countersign of THIS document."
+status: "[D] STAGED v3 2026-07-10 — v1 failed all three BTJ gates (17 defects, wf_d742f55d-880), folded in v2; the v2 re-audit (wf_ce2bd165-b99) verified all 17 folds and found 6+7+5 further defects (serious: legend clipping, ledger rule-14 drift, Rule-8 mortality overstatement), folded here; repairs R1-R3+R5-R6 applied to the lagging docs. Built on the K2-accepted adjudication packet (receipt 104). Canonical designation takes effect only on K2 countersign of THIS document."
 evidence_tier: "per line — every row carries register + tier + receipt + kill criterion; unsourced lines are marked ABSENT or PROPOSED, never drawn solid"
 visual: "00_THE_BURRI_RULES_MAP.svg — companion visual (canonical on countersign): the frame/ladder/loops/closure skeleton; Rules 5–8 live in this document"
 ledger: "00_THE_BURRI_RULES_LEDGER.md — the full 30-item derivation ledger (register · tier · counterexample · kill criterion per line)"
@@ -39,7 +39,7 @@ Every statement in this map carries one register and one tier:
 
 | Register | Means | Example |
 |---|---|---|
-| **MATH** | would survive a mathematician, *within the stated model/chart* | given φ·ν=1: (φ−ν)²≥0 ⟹ φ+ν≥2 `[A]` |
+| **MATH** | would survive a mathematician, *within the stated model/chart* | given φ,ν>0 with φ·ν=1: (φ−ν)²≥0 ⟹ φ+ν≥2 `[A]` |
 | **MODEL** | a structural modeling choice that does real work but is stipulated | "{0,1,∞} are frames, not operands" `[S]` |
 | **INTERP** | an interpretive translation between the model and lived/perennial registers | Bloch↔Burrisphere `[I]` |
 | **CONJ** | a wager awaiting contact with evidence | P = Φ×V multiplicative `[C/I]` |
@@ -66,7 +66,7 @@ category-correction `[S]`.
 |---|---|---|
 | Frame/emblem | the ZSRE — finity is the closure of the two boundary-frames | settled `[S/I]`; **never field arithmetic** (0·∞ is the indeterminate form; defining 0·∞=1 breaks associativity) |
 | Log-coordinate | s + (−s) = 0 | canonical (Formula Block) |
-| **Composition** | Viṣṇu = Śiva ∘ Brahmā **iff \|σκ\| = 1 and σκ ≠ 1** (σκ = 1 returns the identity — frozen, not living, preservation; doc 40 §3.3); balanced dissolution∘creation rotates, unbalanced pairs drift to a pole (the Dyadic runaway) | `[A]` within-model PSL(2,ℂ). **Adjudication K2-accepted 2026-07-10 (receipt 104 A.1); doc 40's status flip is QUEUED (R5) — cite doc 40 as staged `[D]` until flipped, per receipt 104 B.5 and doc 40's own execution surface** |
+| **Composition** | Viṣṇu = Śiva ∘ Brahmā **iff \|σκ\| = 1 and σκ ≠ 1** (σκ = 1 returns the identity — frozen, not living, preservation; doc 40 §3.3); balanced dissolution∘creation rotates, unbalanced pairs drift to a pole (the Dyadic runaway) | `[A]` within-model PSL(2,ℂ). **Adjudication K2-accepted 2026-07-10 (receipt 104 A.1); doc 40's status flip APPLIED (R5, 2026-07-10) — doc 40 now reads ACCEPTED with the receipt path; registry row added (R6)** |
 
 **Trans-dimensional means trans-dimensional** (the fence): the Titans frame
 the *whole* field. **No per-Titan-per-dimension assignment exists anywhere in
@@ -120,7 +120,7 @@ dimensionality, marked `[CONJ]`.
 | **D3** | **Transformation** — arrangements can change; process begins | change, not yet directed | `[S]` |
 | **D4** | **Causality** — change has direction; time appears; **the potential register** (pre-collapse superposition) | directed process | geometric seat: **the torus hole** — the causal vertex, the Witness (doc 34 `[S]`, receipt 104 A.5) |
 | **D5** | **Agency** — the system selects within its own change; **one actual enactment**; consciousness is the lived reading `[I]` | selection, navigable choice; F5 option-cone `[C/I]`; egregores at high Φ; the Mutualism Limit; the highest positive public register | geometric seat: **the torus surface** — the φ-ν plane, the present, the Agent. **The accepted direction: D4 = potential, D5 = actual** — the reading of record (docs 34/27) *inverts* the older "D5 possibility-space → D4 actualization" phrasing; doc 10 is the lagging text (receipt 104 A.2) |
-| **D6** | **Closure** — positive description exhausts | the axiomatic edge | **D6 ≡ D0**: `[A]` coordinate-degeneration (Area(A(ν₀))=4π/(1+ν₀²) is verified) **+ [Definitional]** poloidal mapping — *not* a derived theorem; sin θ=0 at both poles does not uniquely select it; the sphere never changes, only the chart degenerates; the reset *mechanism* is narrative. The **Falsification Protocol is apophatic subtraction back to D0** (A3.1) — the built-in *unbuild*; note D0 is still on the map, so the observer's true exits are Rule 8 and the skeptic's path (§9) |
+| **D6** | **Closure** — positive experience exhausts; the cycle returns to point-state | the axiomatic edge | **D6 ≡ D0**: `[A]` coordinate-degeneration (Area(A(ν₀))=4π/(1+ν₀²) is verified) **+ [Definitional]** poloidal mapping — *not* a derived theorem; sin θ=0 at both poles does not uniquely select it; the sphere never changes, only the chart degenerates; the reset *mechanism* is narrative. The **Falsification Protocol is apophatic subtraction back to D0** (A3.1) — the built-in *unbuild*; note D0 is still on the map, so the observer's true exits are Rule 8's correction-or-retirement and the skeptic's path (§9) |
 
 ## Rule 4 · The two loops
 
@@ -188,7 +188,7 @@ survivable form:
 |---|---|---|
 | AM–GM core | **given φ·ν=1**: (φ−ν)²≥0 ⟹ φ+ν≥2 ⟹ B=2/(φ+ν)≤1, equality iff φ=ν | none for the algebra; dies only off the φ·ν=1 chart |
 | Area law | Area(A(ν₀)) = 4π/(1+ν₀²) — independently verified | exhibit an arithmetic error (none exists) |
-| Composition law | Ś∘B elliptic ⟺ \|σκ\|=1 **and σκ≠1** (σκ=1 → the identity: frozen preservation, doc 40 §3.3), on the shared titan axis | a balanced pair (σκ≠1) whose composite is not elliptic, or an unbalanced one that is |
+| Composition law | Ś∘B elliptic ⟺ \|σκ\|=1 **and σκ≠1** (σκ=1 → the identity: frozen preservation, doc 40 §3.3), on the shared titan axis | a balanced pair (|σκ|=1, σκ≠1) whose composite is not elliptic, or an unbalanced one that is |
 
 ## Rule 8 · Kill criteria for the map itself
 
@@ -202,23 +202,30 @@ survivable form:
    μ-grammar upgrades from MODEL to the mathematics it currently lacks, and
    this map's ∅ marks are lifted where earned.
 5. GFS-class evidence supporting the multiplicative wager → Rule 6.1 re-tiers.
+6. **The terminal clause:** the D0–D6 plain scheme itself, or a load-bearing
+   registry ruling this map relays, is overturned → this map is **RETIRED to
+   90_ARCHIVE** (K3 tombstone), not repaired.
 
 ## Rule 9 · BTJ self-audit (acceptance gates — session ruling 2026-07-10; the K2 countersign of this document is the gates' receipt)
 
 - **Beauty** — the canvas shows the *skeleton* whole (frame, ladder,
-  crossings, both loops, closure, exit-stub) in one glance; the deeper
+  crossings, both loops, closure, the [CONJ] bridge-stub) in one glance; the deeper
   layers are the rung rows (this document) and the ledger file; the
-  line-style law carries the registers on every stroke; no square 2-axis
+  line-style law carries the registers on every connective stroke (edges and
+  arcs — node outlines are glyph boundaries outside the law); no square 2-axis
   grid (frame + ladder + loop rails are three distinct visual axes).
 - **Truth** — every line carries register + tier + receipt; nine
   contradictions adjudicated (not harmonized) with the accepted resolutions
-  cited; eight absences stated as ∅ rather than filled; the map's one
+  cited; the receipt's eight absences all stated — six under the ∅ mark, the 7-count
+  and the Stack↔D placement as [Def]/[S] fences, the generative bridge as the
+  [CONJ] stub; the map's one
   original synthesis (Titans-generate-the-ladder) is marked [CONJ], drawn as
   a stub that touches no rung; the ledger is a real, descendable file.
 - **Justice** — the map orients without capturing: the skeptic's path
   (MATH+MODEL rows only) is legal; the apophatic unbuild (D6→D0) is drawn
   *and honestly described as staying on the map* — the observer's true exits
-  are Rule 8's kill criteria and the skeptic's path; the wagers are labeled
+  are Rule 8's correction-or-retirement (clause 6 genuinely retires the map)
+  and the skeptic's path; the wagers are labeled
   as wagers, one as currently losing; the map's own status is [D] staged and
   its "canonical" designation takes effect only on countersign.
 

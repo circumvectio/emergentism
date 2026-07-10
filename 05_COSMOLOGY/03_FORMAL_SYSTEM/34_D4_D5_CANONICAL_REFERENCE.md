@@ -52,6 +52,9 @@ non-extractive under `η = 0`.
 
 The **Bang** is the progression through all dimensions with μ-limit transitions:
 
+> [!WARNING]
+> **Erratum (2026-07-10, receipt 104 A.3 — adjudication K2-accepted):** this ASCII ladder's μ-indexing is deviant; the PROSE of §II is authoritative — μₙ = the saturation crossing Dₙ→Dₙ₊₁ (μ₄ = D4→D5 witness/agency; μ₅ = D5→closure). Ladder preserved unedited per K3.
+
 ```
 D0  Point (Bindu) — undifferentiated ground
 ↓ μ₀

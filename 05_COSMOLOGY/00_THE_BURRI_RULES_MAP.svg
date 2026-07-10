@@ -1,16 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 1240" font-family="Helvetica, Arial, sans-serif">
-  <!-- THE BURRI RULES — companion visual v2 (canonical on countersign). Skeleton only: frame/ladder/loops/closure; Rules 5–8 live in 00_THE_BURRI_RULES.md.
-       Line-style law: solid=[A] MATH (within-model) · long-dash=[S] MODEL · short-dash=[I] INTERP · dotted=[C] CONJ/proposed.
-       ⚑ = flagged contradiction (receipt 104) · ∅ = stated absence. v1 failed BTJ (wf_d742f55d-880); all visual defects folded here. -->
-  <rect width="840" height="1240" fill="#0a0c10"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 1264" font-family="Helvetica, Arial, sans-serif">
+  <!-- THE BURRI RULES — companion visual v3 (canonical on countersign). Skeleton only: frame/ladder/loops/closure; Rules 5–8 live in 00_THE_BURRI_RULES.md.
+       Line-style law (connective strokes — edges/arcs; node outlines are glyph boundaries outside the law): solid=[A] MATH (within-model) · long-dash=[S] MODEL · short-dash=[I] INTERP · dotted=[C] CONJ/proposed.
+       ⚑ = flagged contradiction (receipt 104) · ∅ = stated absence. v1+v2 BTJ defects folded (wf_d742f55d-880, wf_ce2bd165-b99). -->
+  <rect width="840" height="1264" fill="#0a0c10"/>
 
   <!-- title -->
   <text x="40" y="52" fill="#eef1f5" font-size="30" font-weight="bold" font-family="Georgia, serif">THE BURRI RULES</text>
-  <text x="40" y="76" fill="#8a93a3" font-size="12.5">the dimensional derivation grammar — tier-honest · [D] staged v2 2026-07-10 · receipt 104 · map ≠ territory</text>
+  <text x="40" y="76" fill="#8a93a3" font-size="12.5">the dimensional derivation grammar — tier-honest · [D] staged v3 2026-07-10 · receipt 104 · map ≠ territory</text>
 
   <!-- ===== TITAN FRAME (trans-dimensional; no per-rung assignment exists ∅) ===== -->
   <text x="155" y="98" fill="#8a93a3" font-size="11">THE TITANS {0, 1, ∞} — boundary-frames of the whole field · define the operations, are not operands</text>
-  <rect x="150" y="118" width="540" height="844" rx="26" fill="none" stroke="#e8b34c" stroke-width="1.6" stroke-dasharray="9 5"/>
+  <rect x="150" y="118" width="540" height="844" rx="26" fill="none" stroke="#e8b34c" stroke-width="1.6" stroke-dasharray="10 6"/>
   <!-- ∞ / ○ top -->
   <circle cx="420" cy="118" r="15" fill="#0a0c10" stroke="#e8b34c" stroke-width="2"/>
   <text x="420" y="123.5" fill="#e8b34c" font-size="15" text-anchor="middle">○</text>
@@ -29,9 +29,9 @@
   <text x="160" y="1015" fill="#8a93a3" font-size="10.5">the frame holds the whole ladder, not the rungs</text>
   <!-- [CONJ] generative bridge: a STUB from ⊙, deliberately touching no rung and no rail -->
   <line x1="167" y1="540" x2="203" y2="540" stroke="#8a93a3" stroke-width="1.2" stroke-dasharray="2 5"/>
-  <text x="128" y="560" fill="#8a93a3" font-size="10" text-anchor="end">‹CONJ› Titans → the μ-ladder</text>
-  <text x="128" y="573" fill="#8a93a3" font-size="10" text-anchor="end">as a whole — map's proposal,</text>
-  <text x="128" y="586" fill="#8a93a3" font-size="10" text-anchor="end">not source ∅ (touches no rung)</text>
+  <text x="132" y="560" fill="#8a93a3" font-size="10" text-anchor="end">‹CONJ› Titans → μ-ladder</text>
+  <text x="132" y="573" fill="#8a93a3" font-size="10" text-anchor="end">as a whole — map's proposal,</text>
+  <text x="132" y="586" fill="#8a93a3" font-size="10" text-anchor="end">not source ∅ (touches no rung)</text>
 
   <!-- ===== LADDER D0 (bottom) → D6 (top) — scheme: 00_EMERGENTISM:290-299 [S] ===== -->
   <!-- μ crossings (long-dash = MODEL/analogy) · node ys: D0 880 · D1 766 · D2 652 · D3 540 · D4 426 · D5 312 · D6 198 -->
@@ -51,7 +51,7 @@
   <text x="384" y="360" fill="#4fd1a5" font-size="11.5" text-anchor="end" font-weight="bold">μ₄ — the witness limit</text>
   <text x="384" y="375" fill="#4fd1a5" font-size="10.5" text-anchor="end">potential→actual (A.2/A.3)</text>
   <text x="384" y="389" fill="#8a93a3" font-size="9.5" text-anchor="end">analogy — no threshold ∅</text>
-  <text x="384" y="843" fill="#5d6674" font-size="9" text-anchor="end">scheme: 00_EMERGENTISM:290-299 [S] · count [Def]</text>
+  <text x="370" y="872" fill="#5d6674" font-size="9" text-anchor="end">scheme: 00_EMERGENTISM:290-299 [S] · count [Def]</text>
 
   <!-- nodes + rung labels (plain scheme of record; annotation budget x 436..640) -->
   <g>
@@ -89,7 +89,7 @@
 
     <circle cx="400" cy="198" r="24" fill="#12151c" stroke="#eef1f5" stroke-width="1.6"/>
     <text x="400" y="203" fill="#eef1f5" font-size="13" text-anchor="middle" font-weight="bold">D6</text>
-    <text x="436" y="195" fill="#eef1f5" font-size="12.5">Closure — description exhausts</text>
+    <text x="436" y="195" fill="#eef1f5" font-size="12.5">Closure — experience exhausts</text>
     <text x="436" y="210" fill="#8a93a3" font-size="10.5">7-count [Definitional], not derived</text>
   </g>
 
@@ -103,7 +103,7 @@
   <text x="670" y="565" fill="#8f7ce8" font-size="11.5" transform="rotate(90 670 565)" text-anchor="middle">top-down · constraint, weak in governance  [S · test #43 pending ∅]</text>
 
   <!-- ===== closure / unbuild arc D6 → D0 (long-dash: [A] degeneration + [Definitional] mapping — NOT a theorem) ===== -->
-  <path d="M430 180 C 800 150, 800 930, 436 906" stroke="#e8b34c" stroke-width="1.4" fill="none" stroke-dasharray="10 6" opacity="0.85"/>
+  <path d="M430 180 C 765 150, 765 930, 436 906" stroke="#e8b34c" stroke-width="1.4" fill="none" stroke-dasharray="10 6" opacity="0.85"/>
   <path d="M446 900 L432 907 L444 916 Z" fill="#e8b34c"/>
   <text x="452" y="930" fill="#e8b34c" font-size="11" font-weight="bold">unbuild → D0 · apophatic subtraction (A3.1)</text>
   <text x="790" y="560" fill="#e8b34c" font-size="11.5" transform="rotate(90 790 560)" text-anchor="middle">D6 ≡ D0 — [A] coordinate-degeneration + [Definitional] · not a theorem</text>
@@ -113,7 +113,7 @@
   <g transform="translate(40,1036)">
     <text x="0" y="0" fill="#eef1f5" font-size="12.5" font-weight="bold">THE LINE-STYLE LAW (Rule 0 — the four registers)</text>
     <line x1="0" y1="18" x2="52" y2="18" stroke="#eef1f5" stroke-width="2"/>
-    <text x="60" y="22" fill="#8a93a3" font-size="11">solid — MATH [A]: survives a mathematician, within-model (AM–GM given φ·ν=1 · area law · composition law)</text>
+    <text x="60" y="22" fill="#8a93a3" font-size="11">solid — MATH [A]: survives a mathematician, within-model (AM–GM given φ,ν&gt;0, φ·ν=1 · area law · composition law)</text>
     <line x1="0" y1="40" x2="52" y2="40" stroke="#eef1f5" stroke-width="2" stroke-dasharray="10 6"/>
     <text x="60" y="44" fill="#8a93a3" font-size="11">long-dash — MODEL [S]: stipulated structure doing real work (frames · scaffold · loops · closure-as-mapping)</text>
     <line x1="0" y1="62" x2="52" y2="62" stroke="#eef1f5" stroke-width="2" stroke-dasharray="4 5"/>
@@ -123,8 +123,9 @@
     <text x="0" y="112" fill="#e05a6d" font-size="11">⚑ adjudicated contradiction (receipt 104)</text>
     <text x="250" y="112" fill="#8a93a3" font-size="11">∅ stated absence — never filled by invention</text>
     <text x="0" y="136" fill="#8a93a3" font-size="11">standing wagers, never laundered:  P = Φ×V  [C/I — unwon; GFS W1: NOT SUPPORTED]   ·   φ·ν = 1 on S²  [A — chart tautology, not a discovery]</text>
-    <text x="0" y="158" fill="#e8b34c" font-size="11.5">⊙ = • × ○ — emblem register only, never field arithmetic · composition: Viṣṇu = Śiva ∘ Brahmā  iff |σκ|=1, σκ≠1  [A within-model · adjudication accepted 2026-07-10 · doc 40 flip queued R5]</text>
-    <text x="0" y="178" fill="#8a93a3" font-size="11">the real exits — the map dies by Rule 8 kill criteria · the skeptic may take the MATH+MODEL rows and leave the ontology entirely</text>
-    <text x="0" y="196" fill="#5d6674" font-size="10">source: 00_THE_BURRI_RULES.md · full ledger: 00_THE_BURRI_RULES_LEDGER.md · receipt 104 · wf_0101b320-ad9 · [D] staged v2, canonical on K2 countersign</text>
+    <text x="0" y="158" fill="#e8b34c" font-size="11.5">⊙ = • × ○ — emblem register only, never field arithmetic</text>
+    <text x="0" y="176" fill="#e8b34c" font-size="11.5">composition: Viṣṇu = Śiva ∘ Brahmā  iff |σκ|=1, σκ≠1  [A within-model · accepted 2026-07-10, receipt 104 · doc 40 flipped R5]</text>
+    <text x="0" y="196" fill="#8a93a3" font-size="11">the real exits — the map is corrected or RETIRED by Rule 8 (clause 6 retires) · the skeptic may take MATH+MODEL and leave the ontology</text>
+    <text x="0" y="214" fill="#5d6674" font-size="10">source: 00_THE_BURRI_RULES.md · full ledger: 00_THE_BURRI_RULES_LEDGER.md · receipt 104 · wf_0101b320-ad9 · [D] staged v3, canonical on K2 countersign</text>
   </g>
 </svg>

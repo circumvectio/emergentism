@@ -189,6 +189,9 @@ Five operators. Four conjugacy classes plus directional split on hyperbolic. Thi
 
 ### 5.1 Operator Sequence as Group Composition
 
+> [!NOTE]
+> **Conditionality banner (2026-07-10, receipt 104 A.1 — adjudication K2-accepted):** the composition reading below holds **iff |σκ| = 1** (and σκ ≠ 1 for a nontrivial rotation); unconditionally it is false — see [`05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md`](../../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md) (ACCEPTED 2026-07-10 per receipt 104 R5).
+
 Operators compose as Möbius transformations compose. Brahmā followed by Śiva is read as a Viṣṇu boundary phase (expansion then contraction = rotation). Kṛṣṇa followed by Kṛṣṇa is closer to either elliptic or parabolic depending on the spiral tightness. The strategic calculus of which mixed-sign move to deploy, and which Executive boundary phase to recognize, is Möbius composition theory. [I]
 
 ### 5.2 The L4 APEX as Fixed Point of Viṣṇu

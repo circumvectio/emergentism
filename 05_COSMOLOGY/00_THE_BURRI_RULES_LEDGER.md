@@ -198,7 +198,7 @@ parents:
 - **Counterexample / stress case:** Argument:599 [D] caveat — the chaos-vs-rigidity dichotomy binds ONLY where the two directions are conservation-coupled, complementary, and symmetrically costly-in-excess; else a node sits stably off-equator without collapsing. Conditional, not universal.
 - **Kill criterion:** Exhibit a stable system persisting off-equator that is NOT conservation-coupled (the [D] note concedes these exist), refuting the universal chaos/rigidity claim.
 
-## 24. D5 = possibility-space vs D4 = actualization (reconciled via QM superposition→collapse)
+## 24. D4 = potential vs D5 = actual — direction RESOLVED per receipt 104 A.2 (as-audited header noted the then-unreconciled contradiction; doc 10 = lagging text, repair R2 applied)
 
 - **Register:** MODEL
 - **Tier:** [S/I], rests on a QM analogy; carries an unresolved internal DIRECTION-contradiction
@@ -269,6 +269,6 @@ parents:
 11. Five Forces / F5 (D5 teleological drive): must state [C/I], never an [A] recognized fifth physical interaction (registry:31; it is an Emergentism model claim, not a Standard Model result).
 12. Per-Titan → dimension framing ('which dimension each Titan of Number frames'): NO receipt exists; the map must STATE THE ABSENCE, not invent an assignment. Titans are trans-dimensional frames; it is the operators (Brahmā L5 / Śiva L6 / Viṣṇu L7), not the Titans, that sit at latitudes (canon:173).
 13. Bloch = Burrisphere / qubit = Burrisphere: must state [I] translation, not [A] identity — a two-point structure vs a three-point triad (registry:38; README:297).
-14. D5-possibility vs D4-actualization: the two canonical docs DISAGREE on direction (doc 10 runs D5→D4 possibility→factuality; doc 34 runs D4→D5 potential→actual). The map must flag the unreconciled contradiction, not present a single settled assignment.
+14. D5-possibility vs D4-actualization: **resolved per receipt 104 A.2 — D4 = potential, D5 = actual** (docs 34/27 are the reading of record); doc 10 flagged as the lagging text (repair R2 applied 2026-07-10), never harmonized silently. *(As-audited wording — 'flag the unreconciled contradiction' — superseded on acceptance; preserved in the wf record.)*
 
 ⊙ = • × ○
