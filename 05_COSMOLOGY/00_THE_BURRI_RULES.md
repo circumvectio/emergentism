@@ -6,8 +6,8 @@ rosetta:
   tier: "Executive"
   register: "[A/S/I/C] — per line, by the four-register law below"
   canonical_phrase: "THE BURRI RULES — the dimensional derivation grammar, tier-honest"
-title: "The Burri Rules — the dimensional map, staged for canon"
-status: "[D] STAGED v3 2026-07-10 — v1 failed all three BTJ gates (17 defects, wf_d742f55d-880), folded in v2; the v2 re-audit (wf_ce2bd165-b99) verified all 17 folds and found 6+7+5 further defects (serious: legend clipping, ledger rule-14 drift, Rule-8 mortality overstatement), folded here; repairs R1-R3+R5-R6 applied to the lagging docs. Built on the K2-accepted adjudication packet (receipt 104). Canonical designation takes effect only on K2 countersign of THIS document."
+title: "The Burri Rules — the canonical dimensional map"
+status: "CANONICAL — K2-COUNTERSIGNED in session 2026-07-10 (Yves R. Burri: 'I accept and sign!'). Provenance: staged v1→v3 through two adversarial BTJ rounds (wf_d742f55d-880, wf_ce2bd165-b99); v1 failed all three gates (17 defects), v2 re-audit found 18 more, all folded in v3; built on the K2-accepted adjudication packet (receipt 104); repairs R1-R3+R5-R6 applied to the lagging docs (R4 Cerberus queued in 02_SKYZAI). The four-register law, the eight stated absences, and Rule 8 (incl. the terminal retirement clause) govern from here."
 evidence_tier: "per line — every row carries register + tier + receipt + kill criterion; unsourced lines are marked ABSENT or PROPOSED, never drawn solid"
 visual: "00_THE_BURRI_RULES_MAP.svg — companion visual (canonical on countersign): the frame/ladder/loops/closure skeleton; Rules 5–8 live in this document"
 ledger: "00_THE_BURRI_RULES_LEDGER.md — the full 30-item derivation ledger (register · tier · counterexample · kill criterion per line)"
@@ -23,8 +23,8 @@ depends_on:
 # The Burri Rules
 
 > **The name.** The finished system stands under its own name and grammar
-> (session ruling, 2026-07-10 — **the K2 countersign of this document is that
-> ruling's receipt**). An earlier diagrammatic comparison served as scaffolding
+> (session ruling, 2026-07-10 — **K2-countersigned this document: "I accept and
+> sign!"**). An earlier diagrammatic comparison served as scaffolding
 > and is retired to this one gloss, per the house pattern (registry row
 > 2026-05-31: retired names survive as glosses, never leads).
 >

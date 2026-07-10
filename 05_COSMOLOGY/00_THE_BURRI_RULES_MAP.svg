@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 1264" font-family="Helvetica, Arial, sans-serif">
-  <!-- THE BURRI RULES — companion visual v3 (canonical on countersign). Skeleton only: frame/ladder/loops/closure; Rules 5–8 live in 00_THE_BURRI_RULES.md.
+  <!-- THE BURRI RULES — companion visual v3 (CANONICAL — countersigned 2026-07-10). Skeleton only: frame/ladder/loops/closure; Rules 5–8 live in 00_THE_BURRI_RULES.md.
        Line-style law (connective strokes — edges/arcs; node outlines are glyph boundaries outside the law): solid=[A] MATH (within-model) · long-dash=[S] MODEL · short-dash=[I] INTERP · dotted=[C] CONJ/proposed.
        ⚑ = flagged contradiction (receipt 104) · ∅ = stated absence. v1+v2 BTJ defects folded (wf_d742f55d-880, wf_ce2bd165-b99). -->
   <rect width="840" height="1264" fill="#0a0c10"/>
 
   <!-- title -->
   <text x="40" y="52" fill="#eef1f5" font-size="30" font-weight="bold" font-family="Georgia, serif">THE BURRI RULES</text>
-  <text x="40" y="76" fill="#8a93a3" font-size="12.5">the dimensional derivation grammar — tier-honest · [D] staged v3 2026-07-10 · receipt 104 · map ≠ territory</text>
+  <text x="40" y="76" fill="#8a93a3" font-size="12.5">the dimensional derivation grammar — tier-honest · CANONICAL · K2-countersigned 2026-07-10 · receipt 104 · map ≠ territory</text>
 
   <!-- ===== TITAN FRAME (trans-dimensional; no per-rung assignment exists ∅) ===== -->
   <text x="155" y="98" fill="#8a93a3" font-size="11">THE TITANS {0, 1, ∞} — boundary-frames of the whole field · define the operations, are not operands</text>
@@ -126,6 +126,6 @@
     <text x="0" y="158" fill="#e8b34c" font-size="11.5">⊙ = • × ○ — emblem register only, never field arithmetic</text>
     <text x="0" y="176" fill="#e8b34c" font-size="11.5">composition: Viṣṇu = Śiva ∘ Brahmā  iff |σκ|=1, σκ≠1  [A within-model · accepted 2026-07-10, receipt 104 · doc 40 flipped R5]</text>
     <text x="0" y="196" fill="#8a93a3" font-size="11">the real exits — the map is corrected or RETIRED by Rule 8 (clause 6 retires) · the skeptic may take MATH+MODEL and leave the ontology</text>
-    <text x="0" y="214" fill="#5d6674" font-size="10">source: 00_THE_BURRI_RULES.md · full ledger: 00_THE_BURRI_RULES_LEDGER.md · receipt 104 · wf_0101b320-ad9 · [D] staged v3, canonical on K2 countersign</text>
+    <text x="0" y="214" fill="#5d6674" font-size="10">source: 00_THE_BURRI_RULES.md · full ledger: 00_THE_BURRI_RULES_LEDGER.md · receipt 104 · wf_0101b320-ad9 · CANONICAL — K2-countersigned 2026-07-10 (receipt 104)</text>
   </g>
 </svg>

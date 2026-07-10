@@ -1,7 +1,7 @@
 ---
 title: "104 — Dimensional-map adjudication packet: K2 acceptance receipt"
 date: 2026-07-10
-status: "ACTIVE receipt — K2 accepted in session 2026-07-10 ('ok i accept!') the 9 contradiction adjudications and 14 tier-downgrade rules below. Repairs to lagging docs are QUEUED (staged [D] banners), not silently applied."
+status: "ACTIVE receipt — K2 accepted the 9 adjudications + 14 downgrade rules in session 2026-07-10 ('ok i accept!'), then COUNTERSIGNED the full Burri Rules map packet ('I accept and sign!' — see §E). Repairs R1–R3, R5, R6 APPLIED to the lagging docs; R4 (Cerberus, 02_SKYZAI repo) queued."
 evidence_tier: "[B] receipt of the acceptance event · adjudications cite their own sources"
 provenance: "Workflow wf_0101b320-ad9 (42 agents: 7 deep-read clusters, 33 adjudications, 30-item tier ledger, completeness critic). Feeds 05_COSMOLOGY/00_THE_BURRI_RULES.md."
 ---
@@ -88,5 +88,21 @@ Stack↔D-axis mapping is non-registry [S] (and the Nexus disclosure D1–D6 ind
 must never be fused with dimensional D0–D6) · Epigenotype has no D-level ·
 per-Titan-per-dimension assignment does not exist · the Titans-generate-the-
 ladder bridge is [CONJ] synthesis, not source.
+
+## E. Map countersign (the packet, closed)
+
+**K2-COUNTERSIGNED in session 2026-07-10 — Yves R. Burri: "I accept and sign!"**
+This countersign covers the whole packet as one act:
+
+- `05_COSMOLOGY/00_THE_BURRI_RULES.md` — now CANONICAL (was [D] staged v3);
+- `05_COSMOLOGY/00_THE_BURRI_RULES_MAP.svg` — canonical companion visual;
+- `05_COSMOLOGY/00_THE_BURRI_RULES_LEDGER.md` — the 30-item derivation ledger;
+- this receipt (§A adjudications, §B downgrade law, §D absences);
+- repairs R1–R3, R5, R6 (applied to the lagging docs).
+
+**Still open (not blocked by this countersign):** repair R4 — the Cerberus
+patch (A.8 L5 Balance, A.9 Kṛṣṇa signature) lives in the `02_SKYZAI` repo and
+is applied there under its own commit. The map's governing law from here is
+its Rule 8, including the terminal retirement clause (clause 6).
 
 ⊙ = • × ○
