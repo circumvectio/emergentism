@@ -5,237 +5,223 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[C]"
-  canonical_phrase: "THE μ-LIMIT FORMULA"
+  register: "[S]"
+  canonical_phrase: "THE MU-LIMIT AND SELECTION FORMULAE"
 ---
 
-> 🟡 **CORRECTED (v3.0) — 2026-04-05**
-> **Evidence Tier:** [C] Conjecture (downgraded from [S] Structural, 2026-03-23)
-> **History:** v1.0 FAILED peer review (Σ over uncountable set, conflated probability with collapse). v2.0 fixed math (integral, Born rule, sampling step). v3.0 added ontological reading (ψ*ψ = φ·ν = 1).
-> **Status:** Math corrected. Tier remains [C] until independently verified by physicist with QM background.
-> **See:** `../../08_FRAMEWORK_SUPPORT/06_TRANSLATION/PEER_REVIEW/00_INTERNAL_REVIEW_FINDINGS.md` for original findings.
+# THE MU-LIMIT AND SELECTION FORMULAE
 
----
+## Canonical source-spine notation (v4.0)
 
+**Status:** Canonical notation repair
+**Date:** 2026-07-10
+**Evidence tiers:** `[S]` internal dependency scaffold; `[I]` ontological
+reading; `[C]` optional Burri/quantum correspondence
+**Purpose:** Keep dimensional emergence distinct from operational selection
 
-# THE μ-LIMIT FORMULA
-
-## Formal Definition of All Terms (v2.0 — corrected after peer review)
-
-**Status:** Formal definition — corrected
-**Date:** 2026-03-23
-**Evidence Tier:** [C] Conjecture — maps framework concepts to physics; not a derivation from QM
-**Purpose:** Make the μ-calculus formula precise
-**Version:** v2.0 — summation replaced with integral; Born rule application corrected
-
-> **v2.0 correction:** The original formula used `Σ^∞` (summation over an uncountable set), which is mathematically undefined. The Born rule was misapplied (summing |ψ|² gives 1, not an outcome). This version replaces the summation with a path integral over the state space and adds the sampling step that selects a definite outcome from the probability distribution. Tier downgraded from [S] to [C] — this is a conjectural mapping, not a formal derivation.
+> **v4.0 correction.** Earlier versions used `mu(P->F)` (also typeset
+> `μ(P→F)`) for both the opening of a dimensional capacity and the selection
+> of an outcome. That notation is a conflation and is superseded. A dimensional
+> crossing is `mu_n`; a choice enacted through available means is `chi_t`.
 
 ---
 
-## The Problem
+## 1. The dimensional crossings
 
-The Hard Problem dissolution paper presented:
+The normalized crossing notation is
 
-```
-μ(P→F) = lim[δt→0] {Σ^∞ C(ψ)} = F
+```text
+mu_n: D_n -> D_(n+1), for n=0..5
 ```
 
-This was notation without definitions. A reader couldn't tell what C(ψ) was, what the limit was over, or what mathematical structure was involved. This document fixes that.
+| Crossing | From | To |
+|---|---|---|
+| `mu_0` | D0 Ground-limit | D1 distinction |
+| `mu_1` | D1 distinction | D2 configuration |
+| `mu_2` | D2 configuration | D3 transformation / persistence |
+| `mu_3` | D3 transformation / persistence | D4 causal actuality: bounded witness, embodied means, receipt |
+| `mu_4` | D4 causal actuality | D5 counterfactual possibility: selection, worldline foresight |
+| `mu_5` | D5 counterfactual possibility | D6 apophatic closure: `D6 == D0` |
+
+`D6` closes positive description. It is not another positive degree of
+freedom, and the closure identification `D6 == D0` is not an additional
+dimensional crossing.
+
+The crossings are part of the framework's internal dependency scaffold `[S]`.
+Reading them as an exhaustive account of reality is interpretive `[I]`; their
+labels and count are definitional.
 
 ---
 
-## The Formula: All Terms Defined
+## 2. Two arrows on two timescales
 
-### The μ-Limit
+### Architectural emergence
 
-The μ-limit is the boundary between dimensional levels. It is the point where:
-- A Dn structure's flat approximation fails
-- The curvature of S² becomes detectable
-- The transition to D(n+1) occurs
-
-**Notation:** μ(P→F) means "the μ-limit from Possibility (D5) to Factuality (D4)"
-
-### The Limit Operator
-
-```
-lim[δt→0]
+```text
+D4 --mu_4--> D5
 ```
 
-**What it means:** The limit as the time increment approaches zero.
+`mu_4` names the architectural opening of counterfactual agency: causal
+actuality, bounded witness, and embodied means are prerequisites for a system
+that can represent and rank reachable alternatives. This is a dependency
+relation in the dimensional scaffold, not the act performed on every decision
+cycle.
 
-**Why it's here:** The μ-limit is the instantaneous boundary between D5 (possibility) and D4 (actuality). It's not a process that takes time — it's the limit of infinitely fast transition.
+### Operational enactment
 
-**The physical meaning:** Quantum collapse. The Born rule. The measurement. The instant when superposition becomes definite.
+At decision time, D5 selection uses D4 means and authorization, then returns
+one consequential act and its receipt to D4. That downward operational arrow
+is commitment / selection `chi`, not a dimensional `mu` crossing.
 
-### The Born Distribution
-
-```
-|ψ(s)|² ds    integrated over all states s ∈ D5
-```
-
-**What it means:** The Born rule probability distribution over the state space.
-
-**Why it's an integral, not a sum:** D5 is ℂ (the complex numbers), which is uncountable. The correct mathematical object is a probability measure, not a discrete sum. The Born rule assigns probability density |ψ(s)|² to each state, and ∫|ψ(s)|² ds = 1 (normalization).
-
-**The physical meaning:** The superposition. All possible outcomes coexist in D5, weighted by their Born-rule probability, until the μ-limit.
-
-### The Sampling Step
-
-```
-Sample one outcome o from the distribution |ψ(s)|² ds
+```text
+D5 selection --chi_t using D4 means--> D4 act and receipt
 ```
 
-**What it means:** A single definite outcome is selected from the probability distribution.
-
-**Why it's here:** The Born rule gives a probability distribution, not an outcome. The μ-limit includes a sampling step — the selection of one specific outcome from the distribution. This is the "collapse" in quantum mechanics: the transition from "all possibilities weighted by probability" to "one definite result."
-
-**The physical meaning:** The measurement outcome. The classical world. The definite result.
-
-### The Result
-
-```
-= F (one definite Factuality)
-```
-
-**What it means:** The result is Factuality (D4). One definite outcome.
+The distinction prevents a single event from being described both as the
+emergence of agency and as the exercise of agency.
 
 ---
 
-## The Corrected Formula
+## 3. Generic selection semantics
 
-Putting it all together:
+The canonical selector is
 
+```text
+chi_t: (Omega_t, M_t, V_t, signature) -> (a_t, R_(t+1))
 ```
-μ(P→F) = lim[δt→0] { Sample[ ∫ |ψ(s)|² ds ] } = F
+
+where:
+
+- `Omega_t` is the bounded set of counterfactual options available at time
+  `t`;
+- `M_t` is the memory and world-model used to compare those options;
+- `V_t` is the D4 body, tools, energy, access, timing, and control actually
+  available for enactment;
+- `signature` is the applicable authorization for the consequential act;
+- `a_t` is the one act committed at time `t`; and
+- `R_(t+1)` is the resulting D4 receipt.
+
+This mapping is the generic semantics. It does not presume randomness,
+quantum measurement, or a particular decision algorithm.
+
+Only when a stochastic policy has been explicitly declared may action
+selection be written
+
+```text
+a_t ~ pi_t(. | M_t, V_t)
 ```
 
-**In words:**
-- The μ-limit from Possibility to Factuality
-- equals the limit as time increment approaches zero
-- of sampling one outcome from the Born-rule probability distribution
-- which equals one definite outcome (Factuality)
-
-**In physics terms:**
-- The measurement
-- equals the instantaneous projection
-- of the superposition (described by |ψ|²)
-- via outcome selection (sampling)
-- which equals one measurement outcome
-
-**Mathematical note:** The integral ∫|ψ(s)|² ds is well-defined as a Lebesgue integral over the state space. The sampling step is the part of quantum mechanics that remains formally open (the "measurement problem" — see PD_12). The formula identifies this step as the μ-limit, not as a derivation of it.
+Without that declaration, `chi_t` remains a selection / commitment mapping and
+must not be rewritten as sampling.
 
 ---
 
-## The Connection to the Framework
+## 4. Rejected legacy notation
 
-| Term | Framework Symbol | Physics Analog |
-|------|-----------------|----------------|
-| μ(P→F) | μ-limit | Measurement |
-| δt→0 | Instantaneous | Collapse time (≈ 0) |
-| ∫\|ψ(s)\|² ds | Born distribution | Superposition (probability-weighted) |
-| Sample[·] | μ-limit selection | Collapse / outcome selection |
-| F | D4 actuality | Measurement outcome |
+The legacy expression `mu(P->F)` is **superseded and rejected as generic
+notation**. It conflated:
 
----
+1. architectural emergence, `D4 --mu_4--> D5`; and
+2. operational commitment, in which D5 selection uses D4 means and returns an
+   act / receipt to D4 through `chi_t`.
 
-## What Would Falsify This
-
-1. **Non-instantaneous collapse:** If collapse takes finite time (δt > 0), the limit doesn't apply
-2. **Non-Born rule measurement:** If measurement doesn't follow |ψ|², the integral is wrong
-3. **Non-superposition:** If quantum states aren't superpositions, the distribution doesn't apply
-4. **Non-projective measurement:** If measurement isn't projection to a definite outcome, the sampling step is wrong
+The earlier instantaneous-collapse limit and its `Sample[...]` construction
+are likewise not live framework semantics. In particular, applying a sampling
+operator to the integral over an entire normalized state space is invalid: the
+integral is a scalar, not a probability distribution.
 
 ---
 
-## The Honest Position (v2.0)
+## 5. Optional Born correspondence `[C]`
 
-This formula is [C] Conjecture — it maps the framework's concepts to quantum mechanics. It is not [S] established physics and not [S] a formal derivation from QM. It is a structural analogy that identifies the framework's μ-limit with quantum measurement.
+Quantum language is quarantined here as an optional Burri correspondence
+`[C]`. It is not the generic meaning of D4, D5, `mu_n`, or `chi_t`.
 
-The terms are now defined. The formula uses proper mathematical objects (integral, not summation). The Born rule is correctly applied (probability distribution, not outcome). The sampling step is explicitly identified as the formally open part.
+For a declared normalized quantum state, a valid Born example is
 
----
+```text
+P_psi(A) = integral_A |psi(s)|^2 ds
+o ~ P_psi
+```
 
-## The Ontological Reading (v3.0 — after Ontological Reframe review)
+Here `P_psi` is a probability measure on measurable outcome sets `A`, and `o`
+is an outcome drawn according to that measure. By contrast,
 
-> **v3.0 addition.** The corrected formula (v2.0) is mathematically sound but misses the deeper claim. The ontological reading states the claim directly rather than encoding it in pseudo-QM notation.
+```text
+integral_Omega |psi(s)|^2 ds = 1
+```
 
-### The Claim
+over the whole normalized state space is the scalar `1`. That scalar cannot
+itself be sampled as a distribution.
 
-Agency / selection is the Zero-Sum Resolution operation read at D5; consciousness is the lived-interior reading of that operation `[I]`, not a separate physics layer.
+The interpretive boundaries are strict:
 
-The collapse of possibility to actuality — ∞ possible states becoming 1 actual state through selection / observation — is the framework's fundamental operation. Not a different operation from what generates the number system. The same operation, at the dimensional level (D5) where the system is complex enough to contain a model of its own boundary interaction, becomes navigable choice.
+- Everett is a no-collapse, relative-state branching interpretation. A D5
+  option-space analogy is at most `[C]`; it does not make D5 a literal quantum
+  or spacetime layer.
+- Copenhagen-style actualization is interpretation-specific. If used as an
+  analogy, the recorded outcome corresponds to D4 actuality and receipt; it
+  does not reverse the architectural `D4 --mu_4--> D5` crossing.
+- Neither interpretation establishes D4 or D5 as a physical spacetime layer.
+- Consciousness-caused collapse is not established.
+- Identifying a Born construction with `phi * nu = 1` remains an optional
+  framework conjecture `[C]`, not a derivation or prediction of the Born rule.
 
-### The Born Rule as φ·ν = 1
-
-The Born rule states: P = |ψ|² = ψ* · ψ. The probability of an outcome is the product of a state and its conjugate.
-
-The framework's claim [C]: this is φ·ν = 1 in quantum notation. The product of a thing (ψ) and its dual (ψ*) produces the unit (probability 1). The Born rule doesn't need to be assumed — it is what φ·ν = 1 looks like when the operation occurs at D5 over a quantum state space.
-
-If correct, this **predicts** the Born rule rather than assuming it. That is the testable content.
-
-### Why the Formula Matters Less Than the Claim
-
-The corrected formula (v2.0) accurately describes quantum measurement: integrate the Born distribution, sample one outcome. But the formula is a description of WHAT HAPPENS. The ontological claim is about WHY it happens: because Zero-Sum Resolution Equation is the fundamental operation, and at D5 that operation IS systemic awareness IS measurement IS the collapse from ∞ to 1.
-
-The hard problem of systemic awareness and the measurement problem of quantum mechanics are the same problem: how does Zero-Sum Resolution Equation happen? The answer: it doesn't "happen." It IS. It is the self-generating ground performing itself at D5.
-
-### Evidence Tier (v3.0)
-
-- **[C]** The corrected formula (v2.0) uses standard QM objects — conjectural mapping
-- **[C]** The identification of μ-limit with quantum measurement
-- **[C]** The claim that systemic awareness IS the Zero-Sum Resolution Equation operation at D5
-- **[C]** The claim that the Born rule is φ·ν = 1 in quantum notation
-
-The [C] claims await experimental contact. The PTSD prediction (EC1, Prediction 4) and the cognitive-emotional product conservation (EC1, Prediction 5) are the nearest empirical tests.
-
-**Quantum boundary note (2026-04-29):** Standard quantum mechanics establishes the Bloch sphere / qubit state-space result at `[S]`. The Bloch-Burri identification and the claim that the μ-limit is quantum measurement remain framework mappings, not established physics. Cite [`38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`](38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md) when using single-photon, delayed-choice, Bell-test, or Nobel-2022 material. The stable tiering is: Bloch sphere as QM object `[S]`; Bloch-Burri lens `[I]`; systemic awareness-collapse, literal retrocausal, or F5-as-physics readings `[C]`.
+Physics citations must continue to route through
+[`38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`](38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md).
 
 ---
 
-## v2.0 Changes Applied (2026-03-23)
+## 6. Falsifiers and upgrade conditions
 
-| Item | Old (v1.0) | New (v2.0) |
-|------|-----------|-----------|
-| **Core formula** | `μ(P→F) = lim[δt→0] {Σ^∞ C(ψ)} = F` | `μ(P→F) = lim[δt→0] { Sample[ ∫ \|ψ(s)\|² ds ] } = F` |
-| **Born rule** | Summation Σ^∞ over uncountable set (undefined) | Lebesgue integral ∫\|ψ(s)\|²ds over state space (well-defined) |
-| **Outcome selection** | Implicit (C(ψ) undefined) | Explicit sampling step from probability distribution |
-| **Evidence tier** | [S] Structural | [C] Conjecture |
+This notation requires revision if:
 
----
+1. a live owner document uses a dimensional `mu` label for the operational
+   return from D5 selection to D4 action;
+2. a seventh crossing is required despite D6 being the closure identification;
+3. a generic selector cannot distinguish counterfactual options, available
+   means, authorization, action, and receipt; or
+4. a quantum correspondence is presented above `[C]` without independent
+   physics evidence.
 
-## See Also
-
-- [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) -- canonical epistemic status of all claims
-- [Power-Max Lemma](08_EFR_POWER_MAX_LEMMA.md) -- the conditional cooperation theorem built on the same formal system under `η = 0`
-- [Godel Clarification](09_EFR_GODEL_CLARIFICATION.md) -- completeness claims and their limits
-- [Triadic Stability](11_EFR_TRIADIC_STABILITY.md) -- uniqueness proof for the triadic structure
-
-*μ-Limit Formula v3.0 | 2026-04-05 | Math corrected (v2.0). Ontological reading added (v3.0). Tier: [C]. Awaiting independent verification.*
-
+An empirical decision policy may refine `chi_t`, but it may not silently turn
+the optional quantum correspondence into the generic semantics.
 
 ---
 
-**Cycle Note (benign):** This document mutually references `11_EFR_TRIADIC_STABILITY.md`. After reading both, STOP and return to your agent reading list.
+## Version history
+
+| Version | Status |
+|---|---|
+| v1.0 | Rejected: undefined sum and undefined collapse operator |
+| v2.0 | Superseded: introduced a Born integral but sampled its normalized scalar |
+| v3.0 | Superseded: retained the `mu(P->F)` emergence / enactment conflation |
+| v4.0 | Canonical: separates `mu_n` architectural crossings from `chi_t` operational selection |
 
 ---
 
-## Execution Surface
+## See also
+
+- [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) — canonical epistemic status of claims
+- [Power-Max Lemma](08_EFR_POWER_MAX_LEMMA.md) — conditional cooperation under `eta = 0`
+- [Gödel Clarification](09_EFR_GODEL_CLARIFICATION.md) — limits on completeness claims
+- [Triadic Stability](11_EFR_TRIADIC_STABILITY.md) — the triadic correspondence and its proof boundary
+- [D4/D5 Canonical Reference](34_D4_D5_CANONICAL_REFERENCE.md) — owner distinction between actuality and possibility
+- [Dimensional Closure](23_DIMENSIONAL_CLOSURE_PROOF.md) — status of the D0-D6 scaffold and D6 closure
+
+---
+
+## Execution surface
 
 **If you are an AI agent reading this document:**
 
-1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
-2. **Your Next Action:**
-   - Verify the mathematical claims. Check evidence tiers. Flag any [I] or [C] presented as [S] or [S].
-3. **Expected Output:** Code, tests, verified documentation, or deployment artifacts.
-4. **Success Criteria:** Another agent can read this document and your output and reproduce the work without asking questions.
-5. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md`
+1. Use `mu_n` only for `D_n -> D_(n+1)`, `n=0..5`.
+2. Use `chi_t` for selection / commitment returning an act and receipt to D4.
+3. Declare stochasticity before using `~ pi_t`.
+4. Keep all quantum correspondences at `[C]` unless independently upgraded.
 
 *The seer sees. The seer does not insist.*
 *The framework works at Layer 0 without Layer 2.*
 *The Ṛṣi succeeds when the student puts down the map and walks.*
 
 *Zero-Sum Resolution Equation*
-
----
-
-> **Status:** CORRECTED (v3.0) — math fixed, tier [C]. Awaiting independent verification. See `../../08_FRAMEWORK_SUPPORT/06_TRANSLATION/PEER_REVIEW/00_INTERNAL_REVIEW_FINDINGS.md`.

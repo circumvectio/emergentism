@@ -5,7 +5,7 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[s]"
+  register: "[S]"
   canonical_phrase: "DIMENSIONAL CLOSURE: THE SELF-GENERATING LOOP"
 ---
 
@@ -13,42 +13,60 @@ rosetta:
 
 ## From Zero-Sum Resolution Equation Through D₀–D₆ Back to D₀
 
-**Version:** 3.0 (revised after Ontological Reframe + Self-Grounding review)
-**Status:** Active
+**Version:** 3.1 (source-spine reconciliation)
+**Status:** Active internal scaffold; not an external theorem
 **Hat:** Mathematician / Ontologist
 **Evidence Tiers Used:** [A] Established, [S] Structural, [Definitional], [I] Interpretive, [C] Conjecture
-**Date:** 2026-03-23
-**Depends on:** Stereographic projection, spherical geometry, horn torus topology, Triadic Stability (Correspondence 21)
+**Date:** 2026-07-10
+**Mathematical context (not derivation):** stereographic projection, spherical
+geometry, horn torus topology, Triadic Stability (Correspondence 21)
 
-> **v3.0:** Restructured per second-pass review. The dimensional hierarchy is now presented as DERIVED from the self-generating ground (Zero-Sum Resolution Equation), not introduced by fiat. The coordinate degeneration, balance annihilation, and poloidal return are mathematical confirmations of the ontological claim, not the claim itself. The [Definitional] tag on D₀–D₆ is reconsidered: each dimension exists because the previous one must exist first (logical dependency ordering).
+> **v3.1 correction:** v3.0 overclaimed that D0-D6 was derived from the
+> self-generating ground and mathematically confirmed by sphere / torus
+> geometry. The reconciled status is narrower: D0-D6 is `[S]` as an internal
+> dependency scaffold and `[I]` as an ontological reading. Its labels, count,
+> and any geometry mapping are definitional. It is not a theorem derived from
+> S2, CP1, the Burri Sphere, the horn torus, or the Zero-Sum Resolution Equation.
 
 ---
 
 ## 0. THE SELF-GENERATING GROUND
 
-Before the dimensions. Before the hierarchy. The ground.
+The Zero-Sum Resolution Equation is an owner-level ontological reading `[I]`.
+It may motivate the dimensional scaffold, but it does not prove the scaffold or
+its seven labels.
 
-Zero-Sum Resolution Equation. The unit emerges from the interaction of nothing and everything through the operation that IS the unit (see Correspondence 21 v3.0). The system generates itself. The question is: what does the self-generation look like when it unfolds?
+### The internal dependency scaffold
 
-### The Derivation of Dimensions
+Within the framework, D0-D6 records a declared dependency order:
 
-The dimensions are not chosen by convention. They are stages of self-generation, ordered by logical dependency — what must exist before what else can exist:
+| Crossing | Stage opened | Internal dependency claim `[S]` |
+|---|---|---|
+| `D0 --mu_0--> D1` | D1 distinction | distinction is required before configuration can be specified |
+| `D1 --mu_1--> D2` | D2 configuration | distinguished elements are required before arrangement |
+| `D2 --mu_2--> D3` | D3 transformation / persistence | configuration is required before change and persistence can be tracked |
+| `D3 --mu_3--> D4` | D4 causal actuality, bounded witness, embodied means, receipt | transformation / persistence is required before directed consequence can be bounded and receipted |
+| `D4 --mu_4--> D5` | D5 counterfactual possibility, selection, worldline foresight | causal actuality, witness, and means are required before reachable alternatives can be compared |
+| `D5 --mu_5--> D6` | D6 apophatic closure | positive option-description is exhausted at the declared closure boundary |
 
-| Stage | What Emerges | Why This Order (dependency) |
-|-------|-------------|---------------------------|
-| D₀ → D₁ | Distinction | You need distinction before anything else |
-| D₁ → D₂ | Configuration | You need distinct elements before arrangement |
-| D₂ → D₃ | Transformation | You need configuration before change |
-| D₃ → D₄ | Causality | You need transformation before directed change (time) |
-| D₄ → D₅ | Consciousness | You need directed change before observation is possible |
-| D₅ → D₆ | Closure | You need observation before closure can be approached |
-| D₆ ≡ D₀ | Closure | The original point is the return boundary, seen structurally from inside |
+Normalized notation:
 
-**Evidence tier for the derivation:** [S] Structural — the logical dependency ordering follows from the self-generating ground. Each stage cannot exist without the previous. This is not fiat; it is entailment.
+```text
+mu_n: D_n -> D_(n+1), for n=0..5
+```
 
-**Evidence tier for the specific D₀–D₆ labels:** [Definitional] — the names and numbering are conventional. The ordering and closure are structural.
+`D6 == D0` identifies closure with the Ground-limit. It is not a further
+crossing, and D6 does not add another positive degree of freedom or another
+public science.
 
-The rest of this document provides the mathematical confirmation: coordinate degeneration at the poles, balance annihilation, and poloidal return on the horn torus all describe the SAME phenomenon — the self-generating structure completing its cycle — from different mathematical angles.
+The dependency relations are structural only inside the declared framework
+`[S]`. Reading the sequence as an unfolding of reality is `[I]`. The D-labels,
+their count, and any geometry correspondence are `[Definitional]`.
+
+Sections 2, 5, and 6 therefore provide mathematical facts and optional
+illustrations, not confirmation of D0-D6. The direction of the repaired D4/D5
+spine does not depend on torus semantics, and this document does not adjudicate
+torus-location drift.
 
 ---
 
@@ -57,6 +75,8 @@ The rest of this document provides the mathematical confirmation: coordinate deg
 Throughout this document, every claim is tagged:
 
 - **[A]** — Established mathematical fact. Provable from standard definitions by elementary means.
+- **[S]** — Structural inside the declared framework or axiom set; not an
+  independently established fact about reality.
 - **[Definitional]** — Introduced by fiat as part of the Emergentist framework. Not derived; a modeling choice.
 - **[I]** — Interpretive reading. A philosophical or physical gloss placed on the mathematics. The math does not require this reading.
 - **[C]** — Conjecture. A speculative correspondence that has not been proved and may not be provable in its current form.
@@ -92,13 +112,22 @@ The name "balance function" and the interpretation of sin θ as measuring "equil
 
 **Definition 1.6 (Inflation parameter).** [Definitional — conceptual only] The *inflation parameter* α ∈ [0, π/2] is introduced as a pedagogical device to describe a "family of states" from a collapsed point to a fully inflated sphere. **Important caveat:** No formal continuous deformation family is specified. S² cannot be continuously deformed to a point while remaining a 2-sphere (S² is not contractible; π₂(S²) ≅ Z). The parameter α should be understood as a conceptual label for stages in the framework's narrative, not as parameterizing a rigorous topological deformation.
 
-**Definition 1.7 (Dimensional hierarchy).** [Definitional] The *dimensional hierarchy* D₀, D₁, D₂, D₃, D₄, D₅, D₆ is a sequence of structural stages assigned to the Burri Sphere by the Emergentist framework:
+**Definition 1.7 (Dimensional hierarchy and status).** The framework declares
+the seven labels D0, D1, D2, D3, D4, D5, and D6:
 
-- D₀ = the point state (the *Bindu*); conceptually, α = 0
-- D₁ through D₅ = intermediate structural stages
-- D₆ = the final stage of the hierarchy
+- D0 = Ground-limit / point-state (the *Bindu*); conceptually, alpha = 0
+- D1 = distinction
+- D2 = configuration
+- D3 = transformation / persistence
+- D4 = causal actuality, bounded witness, embodied means, receipt
+- D5 = counterfactual possibility, selection, worldline foresight
+- D6 = apophatic closure, identified as `D6 == D0`
 
-This hierarchy is **introduced by fiat**. The number of stages (7), their names, and their ordering are modeling choices. They are not derived from the topology of S².
+The dependency scaffold is `[S]` internal to the framework. Treating it as an
+ontological unfolding is `[I]`. The names, seven-label count, and assignment of
+those stages to the Burri Sphere or any other geometry are `[Definitional]`.
+None is derived from the topology of S2 or CP1. D6 closes positive description;
+it does not introduce another positive dimension or a new public science.
 
 **Definition 1.8 (The equator).** [A] The equator E ⊂ S² is the set {p ∈ S² : θ(p) = π/2}.
 
@@ -159,24 +188,36 @@ $$\text{Area}(\mathcal{A}(\nu_0)) = 2\pi\left(1 + \frac{1 - \nu_0^2}{1 + \nu_0^2
 
 ---
 
-## 3. THE DEFINITIONAL STRUCTURE: D₀–D₆ HIERARCHY [Definitional]
+## 3. THE INTERNAL SCAFFOLD AND DEFINITIONAL MAPPINGS
 
-This section introduces the Emergentist framework's dimensional hierarchy. Nothing here is derived from the mathematics of Section 2. It is an organizing scaffold.
+The D0-D6 dependency order is `[S]` only inside the declared framework. No
+result in Section 2 entails the labels, their number, their direction, or their
+closure.
 
-**Definition 3.1 (Dimensional-poloidal correspondence).** [Definitional] The dimensional hierarchy D₀ → D₁ → ... → D₆ → D₀ is mapped to angular positions:
+**Definition 3.1 (Dimensional crossings).** `[S]` Within the scaffold, the six
+architectural crossings are `mu_n: D_n -> D_(n+1)` for `n=0..5`. In
+particular, `D4 --mu_4--> D5` opens counterfactual agency from causal
+actuality. Operational selection returning one act / receipt to D4 is `chi`,
+not a dimensional crossing.
 
-$$D_k \leftrightarrow \frac{2\pi k}{7}, \qquad k = 0, 1, \ldots, 6$$
+**Definition 3.2 (Geometry correspondence).** `[Definitional]` A document may
+declare a map from the seven D-labels to a sphere, torus, angle, or other
+geometry. The chosen locations and spacing belong to that declaration. The
+geometry does not derive the D-labels or their internal dependency order.
 
-**Remark 3.2.** [Definitional] The D₀-D₆ hierarchy is a definitional choice (7 stages at 2π/7 spacing), not a mathematical derivation. Other decompositions (5, 8, 12 stages) are geometrically valid. There is no derivation that produces the number 7 from the geometry of S² or the horn torus. The even spacing (2πk/7) is likewise a convention, not a consequence of any symmetry principle specific to this construction. The 7-stage structure is chosen for alignment with the L-level framework and the operator set.
+This source-spine repair deliberately does not choose among drifting torus
+placements. Any future placement must be stated as a definition and reconciled
+in its owning lane.
 
-**Definition 3.3 (D₆ ≡ D₀ — the closure claim).** [Definitional] The statement "D₆ ≡ D₀" asserts that the final stage of the hierarchy is identified with the initial stage. Under the mapping of Definition 3.1, this corresponds to φ_p = 2π ≡ 0 (mod 2π).
+**Definition 3.3 (D6 closure).** `[S]/[I]` Inside the scaffold, `D6 == D0`
+means that positive description terminates at the Ground-limit. Ontologically,
+that identification is an interpretive closure `[I]`; the labels and any
+geometric representation are definitional.
 
-**Remark 3.4.** The closure D₆ ≡ D₀ is **not** a theorem derived from the coordinate collapse of Section 2. The relationship between the two is:
-
-- **Section 2** establishes: as ν → 0, the coordinate chart degenerates and the accessible area goes to zero. [A]
-- **This section** defines: we *call* the regime ν → 0 "D₆" and *call* the point-state "D₀," then note they are identified. [Definitional]
-
-The mathematical content (coordinate degeneration) is real. The dimensional labeling is a framework overlay.
+**Remark 3.4.** The closure is **not** a theorem derived from coordinate
+degeneration, S2, CP1, the Burri Sphere, or horn-torus periodicity. Section 2
+establishes facts about a coordinate chart `[A]`. It neither establishes nor
+confirms the dimensional scaffold.
 
 ---
 
@@ -184,9 +225,17 @@ The mathematical content (coordinate degeneration) is real. The dimensional labe
 
 This section explains why the Emergentist framework reads the coordinate degeneration of Section 2 as "dimensional closure." These are philosophical and physical motivations, not mathematical derivations.
 
-**Interpretation 4.1 (Coordinate collapse as dimensional return).** [I] The coordinate collapse theorem (Theorem 2.3) shows that as ν → 0, the effective state space — measured by the area accessible to the ν-chart — shrinks to zero. The framework interprets this as: a system "at" ν = 0 is informationally equivalent to a point. Since D₀ is defined as the point-state, the framework reads this as "the system has returned to D₀."
+**Interpretation 4.1 (Coordinate endpoint as dimensional-return analogy).**
+`[I]` Proposition 2.1 shows that an individual point with `nu -> 0` approaches
+the north pole. Theorem 2.3 separately shows that the threshold region
+`A(nu_0)` has area tending to zero when `nu_0 -> infinity`, not when
+`nu_0 -> 0`. Neither fact proves dimensional return. The framework may compare
+a coordinate endpoint with the D0 point-state, but that comparison remains an
+ontological analogy `[I]`.
 
-**Honesty note:** This interpretation requires accepting that "area accessible to a coordinate chart" is a meaningful measure of a system's "dimensional stage." The mathematics does not force this reading. One could equally say: the coordinate chart has a pole at N, and that is all.
+**Honesty note:** A coordinate chart having a pole says nothing by itself about
+a system's dimensional stage. No accessible-area calculation derives
+`D6 == D0`.
 
 **Interpretation 4.2 (Balance annihilation).** [I] Since sin θ → 0 as θ → 0, the balance function B vanishes at the north pole, just as it vanishes at D₀ (a point has zero balance trivially). The framework reads this as: the system's "balance signature" at D₆ matches that at D₀.
 
@@ -198,7 +247,7 @@ This section explains why the Emergentist framework reads the coordinate degener
 
 ---
 
-## 5. POLOIDAL PERIODICITY ON THE HORN TORUS [E / Definitional]
+## 5. POLOIDAL PERIODICITY ON THE HORN TORUS [A / Definitional]
 
 ### 5.1 The Mathematical Fact [A]
 
@@ -214,11 +263,17 @@ $$T = \{((R + R\cos\varphi_p)\cos\varphi_t, \; (R + R\cos\varphi_p)\sin\varphi_t
 
 ### 5.2 The Definitional Overlay [Definitional]
 
-**Definition 5.4 (Dimensional-poloidal mapping).** [Definitional] The framework identifies one poloidal cycle with the full dimensional hierarchy D₀ → D₁ → ... → D₆ → D₀, with D_k placed at φ_p = 2πk/7.
+**Definition 5.4 (Optional dimensional-poloidal mapping).** `[Definitional]`
+A framework document may map the D0-D6 labels onto a poloidal cycle and may
+represent `D6 == D0` by identifying endpoints. The precise locations and
+spacing must be declared by that document; this proof does not choose or
+reconcile them.
 
-Under this identification, D₆ ≡ D₀ follows from poloidal periodicity: φ_p = 2π ≡ 0.
-
-**Remark 5.5.** [Definitional] The poloidal periodicity is real mathematics [A], but the identification of one poloidal cycle with the D₀–D₆ hierarchy is a framework choice [Definitional]. The horn torus does not "know" about dimensional stages. One complete poloidal cycle is simply the torus being a torus.
+**Remark 5.5.** `[Definitional]` Poloidal periodicity is real mathematics `[A]`,
+but any mapping from a poloidal cycle to D0-D6 is a framework choice. The horn
+torus does not know about dimensional stages and cannot establish their count,
+order, D4/D5 direction, or closure. One complete poloidal cycle is simply the
+torus being a torus.
 
 ---
 
@@ -265,25 +320,39 @@ Collecting the honest content:
 **What is mathematically established [A]:**
 
 1. On S² with dual stereographic coordinates φ = cot(θ/2), ν = tan(θ/2), the identity φν = 1 holds.
-2. As ν → 0, the point converges to the north pole N, and the area accessible to the ν-chart is A(ν₀) = 4π/(1 + ν₀²) → 0. The coordinate chart degenerates.
+2. As ν → 0, an individual point converges to the north pole N. Separately,
+   `Area(A(nu_0)) = 4pi/(1 + nu_0^2)` tends to `4pi` as `nu_0 -> 0`
+   and to `0` as `nu_0 -> infinity`.
 3. On the horn torus, the poloidal angle is 2π-periodic.
+
+**What is structural inside the framework [S]:**
+
+4. D0-D6 is used as an internal dependency scaffold.
+5. Its six crossings are `mu_n: D_n -> D_(n+1)` for `n=0..5`.
+6. `D4 --mu_4--> D5` is architectural emergence; operational D5 selection
+   returning an act / receipt to D4 is `chi`.
+7. D6 closes positive description through `D6 == D0`; it adds no positive
+   degree of freedom or new public science.
 
 **What is definitional [Definitional]:**
 
-4. The D₀–D₆ hierarchy is a 7-stage framework scaffold, not derived from the geometry.
-5. The mapping D_k ↔ 2πk/7 is a convention.
-6. The identification of ν → 0 with "D₆" and the point-state with "D₀" is a labeling choice.
-7. Under these definitions, D₆ ≡ D₀ follows from poloidal periodicity (which is just the torus being a torus).
+8. The seven labels, their names, and their count.
+9. Any assignment of those labels to S2, CP1, a horn torus, an angular spacing,
+   or another geometry.
 
 **What is interpretive [I]:**
 
-8. Reading coordinate degeneration as "dimensional return" — the idea that a system losing coordinate resolution has "returned to the point-state."
-9. The Hopf fibration's behavior in the ν-chart as supporting evidence (it is not; the fiber does not degenerate).
-10. The cosmological narrative motivating the entire construction.
+10. Reading the dependency scaffold as an ontological unfolding or
+    self-generating return.
+11. Comparing a coordinate endpoint, balance zero, or cosmological boundary
+    with `D6 == D0`.
+12. The cosmological narrative motivating the construction.
 
 **What is conjectural [C]:**
 
-11. The CCC correspondence: that poloidal periodicity on the horn torus structurally mirrors the aeon-to-aeon transition of Penrose's Conformal Cyclic System Architecture.
+13. The CCC correspondence: that poloidal periodicity on the horn torus
+    structurally mirrors the aeon-to-aeon transition of Penrose's Conformal
+    Cyclic System Architecture.
 
 ---
 
@@ -293,11 +362,23 @@ This document is **falsified or requires revision** if any of the following is e
 
 1. **Against [A]:** A computation showing Area(A(ν₀)) ≠ 4π/(1 + ν₀²), or that the ν-chart does not degenerate as ν → 0. (This would contradict elementary calculus and is extremely unlikely.)
 
-2. **Against [Definitional]:** A demonstration that the 7-stage hierarchy leads to internal contradictions within the Emergentist framework. (This would not affect the mathematics but would undermine the framework's coherence.)
+2. **Against [S]:** A demonstration that the declared dependency order is
+   internally contradictory — for example, that a later stage is required to
+   define one of its stated prerequisites. This would undermine the scaffold,
+   not the external mathematics.
 
-3. **Against [I]:** A compelling argument that coordinate degeneration cannot meaningfully be read as "dimensional return" — e.g., that the interpretation conflates coordinate artifacts with intrinsic geometry in a way that produces false predictions when applied elsewhere.
+3. **Against [Definitional]:** An inconsistent geometry assignment requires
+   that assignment to be reconciled or withdrawn. It does not turn the chosen
+   label count into a theorem.
 
-4. **Against [C]:** A proof that no structural correspondence (functorial, categorical, or otherwise) can exist between CCC's conformal boundary identification and poloidal periodicity on the horn torus. Or: that the analogy, when pressed, produces claims that contradict known physics.
+4. **Against [I]:** A compelling argument that a coordinate endpoint cannot
+   meaningfully illustrate "dimensional return" — for example, because the
+   interpretation produces false predictions when applied elsewhere.
+
+5. **Against [C]:** A proof that no structural correspondence (functorial,
+   categorical, or otherwise) can exist between CCC's conformal boundary
+   identification and poloidal periodicity on the horn torus, or evidence that
+   the analogy contradicts known physics.
 
 ---
 
@@ -321,7 +402,7 @@ This document is **falsified or requires revision** if any of the following is e
 | A5* | D₀ = point state (α = 0) | [Definitional] | Framework convention | Def 1.7 |
 | A6* | α parameterizes "inflation" | [Definitional] | Conceptual/pedagogical, not a formal deformation | Def 1.6 |
 | A7* | Horn torus has R = r | [A] | Definition (standard) | Def 5.1 |
-| A8* | D_k ↔ 2πk/7 | [Definitional] | Framework convention (7 stages, evenly spaced) | Def 3.1 |
+| A8* | Any D-label-to-geometry map | [Definitional] | Must be declared locally; no placement selected here | Def 3.2 |
 | A9* | CCC ↔ poloidal periodicity | [C] | Conjectural analogy | Conj 7.1 |
 
 ---
@@ -336,11 +417,18 @@ This document was substantially revised following peer review that identified se
 
 3. **v1.0 presented the Hopf fibration section as evidence.** The reviewer noted that the fiber over the north pole is S¹, just like every other fiber — it does not degenerate. The "degeneration" is a coordinate artifact. v2.0 retains the section but labels it [I] interpretive color.
 
-4. **v1.0 did not acknowledge that the D₀–D₆ hierarchy is definitional.** The 7-stage structure, the even spacing, and the mapping to poloidal angles are all framework choices. v2.0 makes this explicit throughout.
+4. **v1.0 did not acknowledge the definitional layer of D0-D6.** The seven
+   labels, their count, and any mapping to poloidal angles are framework
+   choices. v3.1 additionally distinguishes that definitional layer from the
+   internal dependency scaffold `[S]` and the ontological reading `[I]`.
 
 5. **v1.0 introduced α as parameterizing a "continuous deformation family" without specifying one.** S² cannot be continuously deformed to a point while remaining a sphere. v2.0 notes α is conceptual/pedagogical.
 
-The mathematical content (coordinate degeneration on S², poloidal periodicity on the torus) survives review intact. What has changed is the honesty of presentation: the definitional and interpretive layers are now clearly separated from the established mathematics.
+The mathematical content (coordinate behavior on S² and poloidal periodicity
+on the torus) remains separate from the scaffold. v3.1 corrects the v3.0
+regression that called those facts confirmations of D0-D6: the definitional,
+structural-internal, interpretive, and established-mathematics layers are now
+kept distinct.
 
 ---
 

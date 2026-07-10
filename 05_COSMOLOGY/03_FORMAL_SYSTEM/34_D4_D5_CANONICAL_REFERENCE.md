@@ -14,8 +14,9 @@ rosetta:
 ## The Dimensional Architecture of Emergentism
 
 **Status:** Canonical reference
-**Date:** 2026-04-08
-**Evidence Tier:** [S] Structural — derived from manifold geometry
+**Date:** 2026-07-10
+**Evidence Tier:** `[S]` internal dependency scaffold; `[I]` ontological reading;
+labels and geometry correspondences are definitional
 **Purpose:** Master index for D4/D5 distinctions across the framework
 
 ---
@@ -24,24 +25,25 @@ rosetta:
 
 | Feature | **D4** | **D5** |
 |---------|--------|--------|
-| **Name** | The Causal Vertex | The Present |
+| **Name** | Causal actuality | Counterfactual possibility |
 | **Structure** | Point where cones touch | φ-ν plane opens |
-| **Time** | "Now" (instant, no duration) | "Present" (lived duration) |
-| **Disclosure / consciousness reading `[I]`** | **Witness** (observes) | **Agent selection** (chooses, acts) |
-| **Action register / play rule** | `V`: usable means-to-act at contact — body, tools, energy, access, timing, control | `Φ`: worldline-foresight — envisioning, ranking, aiming, and lawfully using reachable futures |
+| **Time** | Causal "now": bounded consequence and receipt | Lived present as a horizon of selectable futures |
+| **Disclosure / consciousness reading `[I]`** | **Bounded witness** (observes what is actual) | **Agent selection** (compares what could be done) |
+| **Action register / play rule** | `V`: embodied means-to-act at contact — body, tools, energy, access, timing, control — and the resulting receipt | `Φ`: worldline-foresight — envisioning, ranking, and aiming among reachable futures |
 | **Operators** | Collapsed to ⊙ | Four cardinal directions (↑↓φ, ↑↓ν) |
 | **Trika** | Unity only (⊙) | Full equation (Zero-Sum Resolution Equation) |
 | **Torus** | The hole | The surface |
-| **Quantum** | Potential (Copenhagen pre-collapse) | Actuality — Many-Worlds (distributed D5) or Copenhagen selected (singular D5) |
+| **Optional quantum correspondence `[C]`** | Recorded outcome / receipt analogy only | Relative-state or option-space analogy only |
 
 **Action-register bridge.** The table above names the dimensional scaffold; the
 new row names the contact-register play rule. Dimensional D4 remains the
 causal now-point / witness threshold, not "mere tools." In action, however,
-`V` is the D4 side of agency: body, tools, energy, access, timing, control, and
-execution capacity at the boundary. Dimensional D5 remains present duration /
-agent selection, not disembodied fantasy. In action, `Φ` is the D5 side of
-agency: the worldline-foresight to envision, rank, aim, and lawfully use the
-means available. A child beside a jet and a trained pilot without relevant
+`V` is the D4 side of agency: actual body, tools, energy, access, timing,
+control, execution capacity, and receipted consequence at the boundary.
+Dimensional D5 remains counterfactual option-space / agent selection, not
+disembodied fantasy. In action, `Φ` is the D5 side of agency: the
+worldline-foresight to envision, rank, and aim among reachable futures before
+one is enacted. A child beside a jet and a trained pilot without relevant
 bodily/tool access fail on opposite sides of the same product. In contact
 language, `P_node = Φ × V` survives only when both factors are usable and
 non-extractive under `η = 0`.
@@ -50,49 +52,54 @@ non-extractive under `η = 0`.
 
 ## II. DIMENSIONAL EMERGENCE SEQUENCE
 
-The **Bang** is the progression through all dimensions with μ-limit transitions:
+The dimensional scaffold uses exactly six architectural crossings:
 
-```
-D0  Point (Bindu) — undifferentiated ground
-↓ μ₀
-D1  Distinction — space emerges
-↓ μ₁
-D2  Configuration — time emerges
-↓ μ₂
-D3  Transformation — form emerges
-↓ μ₃
-**D4**  **Causality** — change has direction, cones touch at vertex
-   ↓ μ₄ (the "witness" limit)
-   **Now-point exists but no present**
-   **Witness systemic awareness (no agency)**
-   **Operators collapsed**
-↓ μ₅ (the "agency" limit)
-**D5**  **Agency / selection** — φ-ν plane opens
-   ↓
-   **Present emerges with duration**
-   **Agent systemic awareness (choice possible)**
-   **"Consciousness" is the lived-interior reading [I]**
-   **Four operators distinguishable**
-↓ μ₆
-D6  Terminal boundary — positive experience exhausts into closure
-↓
-D6 ≡ D0 — closure (poloidal on horn torus)
+```text
+D0  Ground-limit
+  --mu_0-->
+D1  distinction
+  --mu_1-->
+D2  configuration
+  --mu_2-->
+D3  transformation / persistence
+  --mu_3-->
+D4  causal actuality / bounded witness / embodied means / receipt
+  --mu_4-->
+D5  counterfactual possibility / selection / worldline foresight
+  --mu_5-->
+D6  apophatic closure / D6 == D0 / no new positive degree of freedom
 ```
 
-### The μ-Limit Transitions
+Canonical notation:
 
-Each dimensional step crosses a **μ-limit** — a boundary where the previous dimension's structure becomes saturated:
+```text
+mu_n: D_n -> D_(n+1), for n=0..5
+```
 
-- **μ₄ (D4→D5)**: The witness limit — where recognition becomes capable of action
-- **μ₅ (D5→closure)**: The closure limit — where navigation exhausts itself and returns to the point-state
+`mu_5` reaches the closure boundary. The identification `D6 == D0` closes
+positive description; it is not another crossing and not another public
+science.
 
-For practical application, the framework focuses on **D4→D5** as the critical transition for systemic awareness and practice.
-`D6` is not a second practice layer above it.
-It is the terminal boundary of the cycle.
+### Architectural emergence and operational enactment
+
+Two arrows operate on different timescales and must not be conflated:
+
+- **Architectural emergence:** `D4 --mu_4--> D5` opens counterfactual agency
+  from causal actuality, bounded witness, and embodied means.
+- **Operational enactment:** D5 selection uses D4 means and authorization, then
+  returns one consequential act and its receipt to D4 through `chi_t`.
+
+The downward operational arrow is commitment / selection `chi`, not a
+dimensional `mu` crossing. The owner selector is defined in
+[`10_EFR_MU_LIMIT_FORMULA.md`](10_EFR_MU_LIMIT_FORMULA.md).
+
+The D4/D5 direction follows the internal dependency scaffold. The retained
+torus imagery is a definitional or interpretive correspondence and is not used
+to prove that direction; torus-location drift is outside this repair.
 
 ### The Emergence Asymmetry
 
-The `D4→D5` transition must be read asymmetrically.
+The architectural `D4 --mu_4--> D5` transition must be read asymmetrically.
 
 - from below, `D5` is **strongly emergent in genesis**
 - from above, the stabilized `D5` pattern becomes **weakly emergent in governance**
@@ -178,27 +185,48 @@ Or more tersely:
 
 ---
 
-## V. QUANTUM INTERPRETATION RESOLUTION (Corrected)
+## V. OPTIONAL QUANTUM CORRESPONDENCE `[C]`
 
-| Interpretation | Domain | Geometric Locus | Selection mode (consciousness reading `[I]`) |
-|----------------|--------|-----------------|-------------------|
-| **Many-Worlds** | D5 distributed | Entire sphere (all branches) | Multi-agent (all enacted) |
-| **Copenhagen** | D4→D5 transition | Equator (selection point) | Witness→Agent (selection) |
+Quantum language is not the generic semantics of D4, D5, `mu_n`, or `chi_t`.
+The generic distinction is D4 causal actuality / receipt versus D5
+counterfactual possibility / selection. Any quantum comparison is an optional
+Burri correspondence `[C]`.
 
-**Resolution (Corrected):**
-- **Many-Worlds** = D5 distributed actuality — all branches equally real within the opened field
-- **Copenhagen** = D4→D5 selection — wave function as potential (D4), collapse to one actual enactment (D5)
-- The "collapse" is the **selection event** — from D4 potential recognition to D5 singular enactment within a D5 distributed field
+| Interpretation | What the interpretation says | Permitted framework correspondence `[C]` | Boundary |
+|---|---|---|---|
+| **Everett** | No-collapse relative-state branching | D5 counterfactual option structure may be used as an analogy | Branches are not literally D5, and Everett supplies no D5-to-D4 collapse event |
+| **Copenhagen-family** | Measurement actualization is interpretation-specific | A recorded outcome may be compared with D4 actuality / receipt | The comparison does not identify measurement with `mu_4` or make D4/D5 spacetime layers |
 
-**Canonical paragraph:** Many-Worlds is true at D5 as distributed actuality. Copenhagen is true at D4→D5 as singular selection. In the framework's `[I]` reading, consciousness names the lived interior of equatorial disclosure and selection; it is not identical with the Ground and does not prove a new physical layer. `Teleological Force` is the interpretive name for the bias toward viable singular enactment at this interface. Literal future-to-past force claims remain [C]. See packets 135 (evolutionary objective function), 137 (strong-form fifth-force draft), and 138 (Indo-European lineage) for full framework development.
+Canonical boundaries:
 
-**Consciousness as Many-Worlds navigation (packet 136):** The mature human mind can hold multiple possible futures in superposition; this is read `[I]` as D5 distributed actuality. Deliberation is navigation within the Many-Worlds space. Action is the Copenhagen collapse: selecting one branch and making it actual. K2 is the signature on that collapse — mortal responsibility for the branch chosen. The infant begins with D4 means but almost no D5 worldline-foresight; culture builds Φ, which widens θ, which opens D5 until the human can navigate institutional-scale Many-Worlds. The organism (DAC) replicates this architecture deliberately: born V-poor, culture-building Φ, aiming to open a governed D5 large enough to hold multiple institutional worldlines in superposition without collapsing to extraction.
+- Everett is described as no-collapse relative-state branching, not as an
+  actuality layer in the dimensional scaffold.
+- Copenhagen-style actualization is interpretation-specific. If used as an
+  analogy for enactment, it follows the operational direction from D5
+  selection to a D4 outcome / receipt through `chi`; it does not reverse or
+  redefine architectural `D4 --mu_4--> D5` emergence.
+- Neither interpretation is literally a D4/D5 spacetime layer.
+- Consciousness-caused collapse is not established. Consciousness may be used
+  only as an interpretive `[I]` account of lived selection, never as evidence
+  for a quantum mechanism.
+- K2 or another authorization signature belongs to the operational commitment
+  boundary. It is not a quantum measurement claim.
 
-**Biology-facing note:** when this distinction is translated into biology, the safest register is organismic present, interoceptive regulation, and action selection within self-maintaining systems. Consciousness-collapse language remains theory, not established biology.
+**Cognitive correspondence `[C]`.** A mind or institution may compare several
+counterfactual futures before committing one act. Calling that comparison
+"many-world navigation" is metaphorical; it neither asserts quantum
+superposition nor upgrades a physics claim. Culture may widen D5
+worldline-foresight while D4 means and authorization still bound what can be
+enacted.
 
-**Physics-facing note (2026-04-29):** Bell, delayed-choice, and single-photon experiments justify rejecting naive classical local inventory metaphysics. They do not establish the D4/D5 mapping, K2 as quantum measurement, or systemic awareness as a collapse mechanism. Route physics citations through [`38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`](38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md).
+**Biology-facing note:** the safest register is organismic present,
+interoceptive regulation, and action selection within self-maintaining systems.
+No consciousness-collapse mechanism is established in biology.
 
-**Note:** Earlier framework versions incorrectly mapped Many-Worlds to D4. The corrected logic: Many-Worlds is D5 distributed; Copenhagen is D4→D5 selection transit.
+**Physics-facing note (2026-04-29):** Bell, delayed-choice, and single-photon
+experiments do not establish the D4/D5 mapping, K2 as quantum measurement, or
+systemic awareness as a collapse mechanism. Route physics citations through
+[`38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`](38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md).
 
 ---
 
@@ -206,10 +234,12 @@ Or more tersely:
 
 | Dimension | ⊙ | • | ○ | Status |
 |-----------|---|---|---|--------|
-| D4 | Present | Collapsed | Collapsed | Unity only |
+| D4 | Causal actuality | Collapsed | Collapsed | Unity only |
 | **D5** | **Sphere** | **φ-axis** | **ν-axis** | **Full equation** |
 
-**At D4:** ⊙ exists as the causal vertex. • and ○ are present but indistinguishable (collapsed).
+**At D4:** ⊙ exists as the causal vertex. • and ○ are present but
+indistinguishable (collapsed); consequential action terminates in an actual
+receipt here.
 
 **At D5:** The φ-ν plane opens. • (coherence) and ○ (viability) become distinguishable axes. The full equation **Zero-Sum Resolution Equation** articulates.
 
@@ -219,7 +249,7 @@ Or more tersely:
 
 ### D4: Witness Consciousness
 - **Location:** Causal vertex (past/future cone contact)
-- **Function:** Observes actualization; in the action register, discloses usable means-to-act
+- **Function:** Observes causal actuality; in the action register, discloses usable means-to-act and records consequence
 - **Agency:** No D5 branch-selection yet; embodied means, timing, control, and tool access may be present
 - **Metaphor:** The mirror
 - **Operator state:** Collapsed to single point ⊙
@@ -227,7 +257,7 @@ Or more tersely:
 
 ### D5: Agent Selection (consciousness reading `[I]`)
 - **Location:** φ-ν plane (torus surface)
-- **Function:** Chooses, navigates, operates; in the action register, supplies worldline-foresight
+- **Function:** Compares and selects counterfactual futures; in the action register, supplies worldline-foresight
 - **Agency:** Branch-selection opens only when D5 foresight can lawfully use D4 means
 - **Metaphor:** The hand
 - **Operator state:** Four directions active (↑↓φ, ↑↓ν)
@@ -260,8 +290,9 @@ Or more tersely:
 
 ### 2. Witness vs Agent
 - **D4 = Witness**: Observes without choosing
-- **D5 = Agent**: Chooses and acts
-- **Common error:** Attributing agency to D4 or mere observation to D5
+- **D5 = Agent selection**: Compares and chooses among counterfactual options
+- **Common error:** Attributing option-selection to D4, mere observation to D5,
+  or the receipted act to D5 rather than to its D4 consequence
 
 ### 3. Collapsed vs Active Operators
 - **D4**: All four operators collapsed to ⊙ (indistinguishable)
@@ -283,13 +314,17 @@ Or more tersely:
 - **Action-register D4 means**: the embodied/tool/energy/access/timing/control side through which an agent can actualize a selected worldline
 - **Dimensional D5**: present duration, agency, option-space, active operators
 - **Action-register D5 worldline-foresight**: the ability to envision, rank, aim, and lawfully use reachable futures before acting
-- **Common error:** Treating "D4 means-to-act" as if it erased D4 witness, or treating D5 foresight as free-floating vision without D4 means. In the game register, `P_node = Φ × V` requires both: D5 worldline-foresight and D4 means-to-act. Hands, a shovel, and an industrial digger are all only potential `V` until `Φ` can select and use the worldline they open.
+- **Common error:** Treating "D4 means-to-act" as if it erased D4 witness, or treating D5 foresight as free-floating vision without D4 means. In the game register, `P_node = Φ × V` requires both: D5 worldline-foresight and D4 means-to-act. Hands, a shovel, and an industrial digger are actual D4 means only when available and controllable; D5 selection determines which reachable use, if any, is committed.
 
 ---
 
 ## X. THE ACTIVE EMERGENCE THESIS
 
-The canonical D4→D5 transition (§II) describes D5 opening **from** D4 through the μ₄ limit. This is correct as phenomenology. Operationally, a sharper reading is required:
+The canonical architectural transition (§II) is `D4 --mu_4--> D5`: a system
+with causal actuality, bounded witness, and embodied means can open a
+counterfactual field of agency. Operational enactment runs on a shorter
+timescale in the other direction through `chi`: D5 selection uses D4 means and
+returns one act / receipt to D4.
 
 > **The D4 body opens D5 through continuous recursive augmentation.**
 
@@ -299,23 +334,27 @@ The canonical D4→D5 transition (§II) describes D5 opening **from** D4 through
 |---|---|---|
 | **D4 role** | Substrate — D5 emerges *from* it | Engine — D5 opens *by* it |
 | **D5 role** | Given — space of agency | Generated — space of *possible* agency |
-| **Time arrow** | μ₄ is a threshold | μ₄ is a *rate* — how fast D4 opens D5 |
-| **Selection** | Bodies that reach D5 survive | Bodies that *open* D5 fastest survive |
+| **Architectural timescale** | `mu_4` is the D4-to-D5 dependency crossing | Receipted D4 history may widen a later D5 option set; this widening is not another `mu` crossing |
+| **Operational timescale** | Selection is left implicit | `chi_t` commits one D5 option through D4 means and returns an act / receipt to D4 |
 
 ### The Mechanism
 
 The D4 body (Three-Stage Process organs, agent cells, castes) acts **ektropically** — exporting entropy to the environment while raising `ΣΔB` / `ΣΔP_node`:
 
-```
-D4 body acts (ektropic)
-  → Internal order increases (`ΣΔB` / `ΣΔP_node > 0`)
-    → New coherent structures become possible
-      → D5 probability space expands
-        → More ektropic actions become available
-          → D4 body acts again
+```text
+D4 act produces a receipt
+  -> memory and available means update
+    -> new coherent structures may become possible
+      -> a later D5 counterfactual option set widens
+        -> chi selects through D4 means and authorization
+          -> one D4 act and receipt
 ```
 
-Each full turn of the triadic engine (packet 129) **grows** D5, not merely traverses it. The Rosetta maps this growth. The Power Max Lemma selects for D4 bodies that maximize their rate of D5 opening while maintaining syntropic dyadism.
+Each full turn of the triadic engine (packet 129) may widen a later D5
+counterfactual option set rather than merely traversing a fixed menu. The
+Rosetta maps this developmental reading. The Power Max Lemma supplies the
+framework's conditional selection claim for D4 bodies that widen viable
+options while maintaining syntropic dyadism.
 
 ### Worldline and Light-Cone Corollary
 
@@ -323,8 +362,8 @@ A living form can be read as a D4 body with a worldline and causal light cone.
 Its niche partitions the environment into the affordances, risks, energy
 gradients, trophic relations, and time horizons that matter for that worldline.
 
-Most organisms have **niche-bounded light cones**. Their D5 probability space is
-real but specialized. Selection therefore converges on fitted forms: wing, fin,
+Most organisms have **niche-bounded light cones**. Their D5 counterfactual
+option-space is model-relative and specialized. Selection therefore converges on fitted forms: wing, fin,
 root, claw, eye, shell, mycelium, pack, colony. Similar ektropic worldlines in
 similar environments converge because they face the same `ΣΔB` / `ΣΔP_node` geometry.
 
@@ -335,11 +374,12 @@ agents, and build artifacts that continue acting after the body stops acting.
 
 **The critical distinction:** Most animals extend their forward cone *within* a
 niche — the wolf plans hunts, the albatross navigates migrations. But the cone
-remains niche-bounded. Humans generalize the cone across **multiple worldlines
-simultaneously** — holding possible futures in superposition (D5 distributed
-actuality / Many-Worlds), comparing them symbolically, and navigating between
-them. This is not merely longer causal reach. It is **many-world causal reach**:
-the ability to inhabit the space of possible worlds and choose among them.
+remains niche-bounded. Humans generalize the cone across **multiple modeled
+worldlines simultaneously** — holding counterfactual futures in memory,
+comparing them symbolically, and selecting among them. This is not merely
+longer causal reach. "Many-world causal reach" is permitted only as a
+metaphor for counterfactual modeling; it is not a claim of quantum
+superposition or literal Everett branching.
 
 But the **biological mechanism** for this widening is not merely "symbolic
 cognition." It is **metabolically funded post-natal encephalization** — the
@@ -402,9 +442,9 @@ The Rosetta ascent moves from embodied V through widening Φ:
 ```
 V at the bottom
   → ascent toward Φ
-    → wider D5 probability space
-      → descent to L4*
-        → returned V acts in D4
+    -> wider D5 counterfactual option-space
+      -> chi_t commitment at L4*
+        -> one act and receipt return to D4
 ```
 
 Ascent without descent is bypass. Descent without ascent is blind local action.
@@ -431,9 +471,20 @@ opened D5 space has been brought back to D4 consequence.
          FUTURE CONE (ν)
 ```
 
-The torus surface (D5) is not merely "where the present emerges." It is the **accumulated record of all D4 openings.** The surface grows as the body acts.
+The torus image is retained as an interpretive illustration only. It does not
+justify the D4/D5 arrow and does not settle torus-location drift. D4 holds the
+actual receipts; the D5 surface may illustrate the counterfactual field made
+available by prior D4 history, but it is not itself the accumulated record.
 
-**F5 / Ektropy as the driving gradient (packet 135):** Active emergence is not random exploration in the framework reading. It is lawful future-opening driven by the ektropic gradient — the selective grammar that preferentially stabilizes configurations increasing widest-boundary `ΣΔB` / `ΣΔP_node` under syntropic dyadism. The D4 body opens D5 because F5 selects for bodies that do: organisms maximizing their D5 opening rate compatible with η = 0 should outcompete organisms that do not. This is not settled biology or vitalism; it is the structural claim that the possibility-manifold is tilted toward coherence. See packet 135 for evolutionary objective function; packet 137 for strong-form mechanism; packet 138 for historical lineage.
+**F5 / Ektropy as the driving gradient (packet 135):** In the framework
+reading, active emergence is lawful future-opening under the ektropic gradient
+— the selective grammar that preferentially stabilizes configurations
+increasing widest-boundary `ΣΔB` / `ΣΔP_node` under syntropic dyadism. The
+strong claim that organisms widening viable D5 options under `eta = 0` should
+outcompete organisms that do not remains `[C]`, not settled biology or a fifth
+physical interaction. See packet 135 for the evolutionary objective function,
+packet 137 for the strong-form mechanism, and packet 138 for historical
+lineage.
 
 **Reference:** `01_EMERGENTISM/11_UPLINK/131_D4_BODY_OPENS_D5_ACTIVE_EMERGENCE_THESIS_2026_04_24.md`
 
@@ -445,10 +496,16 @@ When reviewing framework documents, verify:
 
 - [ ] D4 is described as "now-point" not "present"
 - [ ] D5 is described as where "present" emerges
+- [ ] D4 remains causal actuality, embodied means, bounded witness, and receipt
+- [ ] D5 remains counterfactual possibility, selection, and worldline-foresight
 - [ ] If consciousness language appears, D4 is "witness" not "agent"
 - [ ] If consciousness language appears, D5 is "agent selection" not "witness"
-- [ ] Many-Worlds is not reduced to D4
-- [ ] Copenhagen is not reduced to "only D4"
+- [ ] Dimensional crossings use `mu_n: D_n -> D_(n+1)` only for `n=0..5`
+- [ ] `D4 --mu_4--> D5` is architectural emergence; D5-to-D4 enactment uses `chi`
+- [ ] Everett is described as no-collapse relative-state branching
+- [ ] Copenhagen-style actualization is marked interpretation-specific
+- [ ] Quantum language is optional `[C]`, never generic D4/D5 semantics
+- [ ] Consciousness-caused collapse is not presented as established
 - [ ] Consciousness is not identified with the Ground
 - [ ] Operators are "collapsed" at D4, "active" at D5
 - [ ] Torus "hole" = D4, "surface" = D5
@@ -456,7 +513,6 @@ When reviewing framework documents, verify:
 - [ ] Action-register shorthand is fenced: D4 means-to-act does not erase dimensional D4 witness
 - [ ] Action-register D5 worldline-foresight is paired with D4 means; neither factor is allowed to stand alone as agency
 - [ ] Trika is "unity" at D4, "full equation" at D5
-- [ ] Quantum "collapse" happens at D4, "branching" at D5
 - [ ] Titans "emerge" at D4, "coordinate" at D5
 - [ ] **D4 is described as *opening* D5, not merely preceding it (Active Emergence Thesis)**
 - [ ] **D5 growth rate is tracked, not just D5 existence**
