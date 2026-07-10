@@ -47,6 +47,16 @@ Every statement in this map carries one register and one tier:
 A skeptic may read the MATH+MODEL rows alone and use the map without
 adopting one word of the ontology. That is by design (Justice gate, §9).
 
+**Tier-vocabulary crosswalk (receipt 105, 2026-07-10).** The four registers are
+the corpus's **[A/S/I/C] epistemic-strength spine**, named: **MATH ≡ [A]**,
+**MODEL ≡ [S]**, **INTERP ≡ [I]**, **CONJ ≡ [C]** (see the `register:`
+frontmatter). The full ladder `[A/B/S/I/D/C]` adds **two orthogonal axes that are
+not registers**: **[B]** = provenance (primary-source attribution / receipts) and
+**[D]** = lifecycle status (draft / pending K2). A claim carries *one register*
+(its strength) and *may also* carry [B] (it is sourced) and/or [D] (it is staged)
+— so Codex's engineering-layer tiers map onto canon without collapsing the two
+axes into one. Full table: receipt 105 §9.
+
 ## Rule 1 · The Titans {0, 1, ∞} — the frame, not the rungs
 
 **Settled** (registry rows, 2026-05-31/06-01): the Titans are the three

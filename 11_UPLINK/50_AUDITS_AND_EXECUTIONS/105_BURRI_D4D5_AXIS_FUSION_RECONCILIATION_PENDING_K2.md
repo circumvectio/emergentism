@@ -182,3 +182,27 @@ isolated worktree.
 reading (D4=potential / D5=actual) remains authoritative; only the blanket
 dismissal of the action-register axis was corrected. Two artifacts → one signed
 canon; the countersigned map keeps its semantics and inherits the μ/χ grammar.
+
+## 9. Tier-vocabulary crosswalk (decision 6 — executed 2026-07-10)
+
+Decision 6 asked: map Codex's `[A/B/S/I/D/C]` onto the canon four-register law, or
+keep both with an explicit crosswalk. **Resolution: keep both — they are not one
+axis.** The four-register law is the *epistemic-strength* spine; the ladder folds
+in two *orthogonal* axes (provenance, status). A claim carries exactly one register
+and may independently carry [B] and/or [D].
+
+| Ladder tier | Four-register law | Axis | Meaning |
+|---|---|---|---|
+| **[A]** | **MATH** | strength | survives a mathematician within the stated model/chart |
+| **[S]** | **MODEL** | strength | a structural modeling choice that does real work but is stipulated |
+| **[I]** | **INTERP** | strength | interpretive translation between the model and lived/perennial registers |
+| **[C]** | **CONJ** | strength | a wager awaiting contact with evidence |
+| **[B]** | *(no register)* | **provenance** | primary-source attribution / receipts — rides on any register |
+| **[D]** | *(no register)* | **status** | draft / staged / pending K2 — rides on any register |
+
+**Reading rule.** To tier a Codex-layer claim in canon terms: take its
+strength-register from the [A/S/I/C]→MATH/MODEL/INTERP/CONJ column; treat any [B]
+as a provenance note and any [D] as a lifecycle flag, **never** as a register.
+This blocks the two failure modes — reading a [D]-draft as if its *strength* were
+weak (it may be MATH), and reading a [B]-sourced claim as if provenance upgraded
+its *register* (it does not). Landed in canon: map Rule 0 (crosswalk clause).
