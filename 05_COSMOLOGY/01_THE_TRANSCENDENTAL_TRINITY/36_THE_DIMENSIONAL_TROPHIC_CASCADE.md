@@ -61,7 +61,7 @@ The cascade dimension never collapses into the substrate dimension. That is why 
 | **2 — Primary consumer** | Herbivore (caterpillar, deer) | Phenotype (organism, body) |
 | **3 — Secondary consumer** | Small carnivore (sparrow, fox) | Extended Phenotype (tool, dam, city) |
 | **4 — Tertiary consumer** | Mid carnivore (snake, hawk) | Memotype (idea, doctrine, code) |
-| **5 — Apex predator** | Apex (eagle, orca, lion) | Egregorotype (DAC, religion, nation) |
+| **5 — Apex predator** | Apex (eagle, orca, lion) | Egregoreotype (DAC, religion, nation) |
 | **6 — Decomposer** | Fungi, bacteria, scavengers | **Sādhu / L6 / axiomatic compression** |
 | **Closure** | Decomposers return matter to producers | Sādhus return egregores to bits — **D6 ≡ D0** |
 
@@ -90,7 +90,7 @@ Attrition_n→n+1  ≈  1 − ε_n   where  0 < ε_n ≤ 1
 | Genotype → Phenotype | Most genes never express; most expressions never reproduce | ε ≈ 10⁻² to 10⁻⁴ depending on niche |
 | Phenotype → Extended Phenotype | Most behaviours leave no durable trace in the environment | ε ≈ 10⁻³ |
 | Extended Phenotype → Memotype | Most artefacts never become meme-bearing | ε ≈ 10⁻⁴ |
-| Memotype → Egregorotype | Most memes never crystallise into a self-sustaining standing wave | ε ≈ 10⁻⁶ to 10⁻⁹ |
+| Memotype → Egregoreotype | Most memes never crystallise into a self-sustaining standing wave | ε ≈ 10⁻⁶ to 10⁻⁹ |
 
 The pattern pyramid narrows for the same reason the food pyramid narrows: **most candidates die before being eaten by the next level.** Most genes never code a successful body. Most bodies never produce a successful artefact. Most artefacts never carry a successful meme. Most memes never become a self-sustaining egregore. The attrition is not failure — it is the geometry of selection.
 
@@ -117,7 +117,7 @@ The pattern pyramid narrows for the same reason the food pyramid narrows: **most
 ### IV.b A population of genes feeds an egregore
 
 ```
-1 egregorotype (apex replicator, D5)
+1 egregoreotype (apex replicator, D5)
 ↑  ~10⁹ attrition — most memes never crystallise
 ~10⁹ memotypes circulating in the noosphere
 ↑  ~10⁴ attrition — most artefacts never become meme-bearing

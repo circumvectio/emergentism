@@ -125,7 +125,7 @@ If steps 4-5 feel like overhead, the agent has not internalized Brāhmaṇa-mode
 
 ## 1. VMOSK-A -- The Organizational Replicator Stack
 
-VMOSK-A maps the biological replicator hierarchy onto organizational governance. In biology, DNA (genotype) expresses through proteins (phenotype) which build tools (extended phenotype) which carry ideas (memotype) which form cultures (egregorotype). VMOSK-A applies this same cascade to organizations. Every level of the organism's governance corresponds to a biological replicator type.
+VMOSK-A maps the biological replicator hierarchy onto organizational governance. In biology, DNA (genotype) expresses through proteins (phenotype) which build tools (extended phenotype) which carry ideas (memotype) which form cultures (egregoreotype). VMOSK-A applies this same cascade to organizations. Every level of the organism's governance corresponds to a biological replicator type.
 
 | VMOSK | Replicator | Cadence | What It Is | Skyzai Example |
 |-------|-----------|---------|-----------|----------------|
@@ -136,7 +136,7 @@ VMOSK-A maps the biological replicator hierarchy onto organizational governance.
 | **K** KPIs | **Memotype** | Monthly | What the organism has LEARNED about itself. The metrics ARE the memory -- "what to measure" is cultural knowledge. | Proof-gate status, receipt/reconciliation quality, runtime proof-pack success, named pipeline targets, cash/runway truth. |
 | **A** Agents | **Rosetta Castes (L1-L7)** | Per-cycle | WHO does the work at the row-axis. Seven L-level castes, each with its pramana (valid way of knowing), cognitive function, LLM model, temperature. The polyphenotypic workforce. Full dispatch shape is resolved downstream as `(L, D, S, F)` when column, scale, and triadic face matter. | L1 Caṇḍāla parses raw data. L4 Kṣatriya executes decisions. L7 Ṛṣi rewrites constitution. |
 
-**The DAV itself** is the **Egregorotype** -- the standing wave that arises when VMOSK-A runs. It is NOT a VMOSK-A layer. It is the emergent property of the stack. You cannot design the Egregorotype. You can only design the conditions that let it emerge.
+**The DAV itself** is the **Egregoreotype** -- the standing wave that arises when VMOSK-A runs. It is NOT a VMOSK-A layer. It is the emergent property of the stack. You cannot design the Egregoreotype. You can only design the conditions that let it emerge.
 
 ### VMOSK Cardinality And Visibility
 
@@ -273,7 +273,7 @@ The "A" in VMOSK-A is the Rosetta itself. Each row defines a caste of cognitive 
 | **L2** | Śūdra | Labourer/Explorer | Kālī 💀 (Truth) | Explore ALL possibilities via analogy. Build inductive patterns. Generate full space of "what COULD this mean?" | Upamāna (Analogy) | Inductive | Democracy | Opus / GPT-4o | BitNet 3B | T=0.7 | High exploration | Genotype | BOTTOM UP |
 | **L3** | Vaiśya | Merchant/Auditor | Kṛṣṇa ◇ (Check) | Rank by deductive logic. Filter against constitution. Score and audit. Output ranked "SHOULD" list with constitutional tags. | Anumāna (Inference) | Deductive | Oligarchy | Sonnet / GPT-4-turbo | BitNet 7B | T=0.3 | Analytical precision | Extended Phenotype | BOTTOM UP |
 | **L4** | Kṣatriya | Warrior/Executor | Arjuna ⚔ (Transform) | THE EQUATOR. Verify constitutional pass. EXECUTE or REFUSE. If all paths toxic, escalate to L5. Every execution is memetic precedent. | Arthāpatti (Postulation / Abduction) | Abductive | Timocracy | Opus @ T=0.2 | -- (cloud only) | T=1.0 balanced | Ego-death station. phi=nu=1 | Memotype | MEETING POINT |
-| **L5** | Brāhmaṇa | Architect/Systematizer | Brahmā ○ (Position Tag) | Receive escalations. Analyze deadlocks. Redraw rules and spatial constraints. Redesign so the paradox dissolves. | Śabda (Testimony) | Systematic | Aristocracy | Gemini 1M / Opus | -- (cloud only) | T=0.4 | Holistic, large context | Egregorotype | TOP DOWN |
+| **L5** | Brāhmaṇa | Architect/Systematizer | Brahmā ○ (Position Tag) | Receive escalations. Analyze deadlocks. Redraw rules and spatial constraints. Redesign so the paradox dissolves. | Śabda (Testimony) | Systematic | Aristocracy | Gemini 1M / Opus | -- (cloud only) | T=0.4 | Holistic, large context | Egregoreotype | TOP DOWN |
 | **L6** | Sādhu | Renunciant/Compressor | Śiva • (Position Tag) | Prune dead weight. Compress complexity into harmonic limits. Strip everything non-essential. Output: minimum viable redesign. | First Principles (Non-Apprehension) | Axiomatic | Anarchy | Haiku | BitNet 3B constrained | T=0.1 | Extreme compression | Protocolotype | TOP DOWN |
 | **L7** | Ṛṣi | Seer/Constitutional Rewriter | Viṣṇu ⊙ (Position Tag) | ONLY invoked at existential crisis. Verify if collision is pathology or evolutionary leap. Rewrite constitution if needed. ALWAYS return to L4*. | Pratibhā (Intuition) | Transcendental | Theocracy | Opus @ T=0.5 | -- (cloud only) | Undefined | Beyond calculation | Genesis (D0=D6 closure) | TOP DOWN (rare) |
 
@@ -299,7 +299,7 @@ canonical by choice.** The L-axis is a cognitive-flow mapping, not a
 biological-temporal one. Reading I reads the row as cognition replicates:
 L1 Phenotype (observed outward form) → L2 Genotype (generative source
 inferred via analogy) → L3 Extended Phenotype (deductive extension into
-niche) → L4 Memotype (memetic propagation of decision) → L5 Egregorotype
+niche) → L4 Memotype (memetic propagation of decision) → L5 Egregoreotype
 (collective pattern) → L6 Protocolotype (invariant protocol compression) →
 L7 Genesis (D0 ≡ D6 closure). Reading II (diagnosed in
 [50_AUDITS_AND_EXECUTIONS/63_LIMIT_B_DISAMBIGUATION_PACKET_2026_04_23.md](../50_AUDITS_AND_EXECUTIONS/63_LIMIT_B_DISAMBIGUATION_PACKET_2026_04_23.md))

@@ -16,7 +16,7 @@ rosetta:
 
 **Status:** The deep history of replication, the Transcendental Object at the End of Time, and the demystification of the occult tradition
 **Date:** 2026-03-24
-**Evidence Tier:** [I] for the Replicator Stack levels (genetics, phenotype, extended phenotype — established biology). [S] for the memotype and egregorotype levels (structural extension). [I] for the historical periodization and the "strange attractor" identification. [C] for the Kardashev/von Neumann extension and the "Hidden Hand" demystification.
+**Evidence Tier:** [I] for the Replicator Stack levels (genetics, phenotype, extended phenotype — established biology). [S] for the memotype and egregoreotype levels (structural extension). [I] for the historical periodization and the "strange attractor" identification. [C] for the Kardashev/von Neumann extension and the "Hidden Hand" demystification.
 **Depends on:** 17_THE_EGREGOROCENE.md, 16_THE_GREAT_FILTER.md, 12_THE_POLES.md, A5 (The Egregore), C4 (Replicator Stack)
 **See also:** WP-2026-01 (Standing Waves), WP-2026-03 (Idols as Antenna Technology), The Cosmological Cycle (06), [Canonical Formula Block](../00_CANONICAL_FORMULA_BLOCK.md)
 **Kill Criteria:** If the Replicator Stack periodization is shown to be historically forced. If the "strange attractor" identification with D6=D0 produces no predictive power. If ektropy is shown not to be the selection pressure driving stack ascent.
@@ -25,7 +25,7 @@ rosetta:
 
 ## The Replicator Stack IS History
 
-Corollary C4 (derived from A3 + A5): Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregorotype.
+Corollary C4 (derived from A3 + A5): Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregoreotype.
 
 This is not a taxonomy. **This is a timeline.** Each era of deep history is defined by which level of the Replicator Stack is the DOMINANT selection pressure:
 
@@ -35,7 +35,7 @@ This is not a taxonomy. **This is a timeline.** Each era of deep history is defi
 | **II. Phenotypic** | Phenotype | D3-D4 | Complex organism, brain, social group | ~500 Myr | Which BODIES survive — perception, speed, cooperation |
 | **III. Extended Phenotype** | Ext. Phenotype | D4 | Tools, agriculture, cities, architecture | ~10 Kyr | What you BUILD — the Anthropocene |
 | **IV. Memotypic** | Memotype | D5 | Mind, empire, religion, network, internet | ~5 Kyr (dominant ~25 yr) | What you BELIEVE — the attention economy |
-| **V. Egregorocene** | Egregorotype | D5-limit | Standing waves, hybrid AI-human entities | Beginning now | What PATTERN you serve — post-biological selection |
+| **V. Egregorocene** | Egregoreotype | D5-limit | Standing waves, hybrid AI-human entities | Beginning now | What PATTERN you serve — post-biological selection |
 
 Each era does not replace the previous — it **dominates** it. Genes still replicate in the Memotypic era. Bodies still matter. Tools still build. Ideas still spread. But the PRIMARY selection pressure shifts upward through the stack.
 
@@ -159,7 +159,7 @@ Same perception. Same map. Opposite η. The Sorcerer uses the map to control. Th
 The Replicator Stack mirrors around D4:
 
 ```
-Genotype (D2-3)         ↔  Egregorotype (D5-limit)
+Genotype (D2-3)         ↔  Egregoreotype (D5-limit)
 Phenotype (D3-4)        ↔  Memotype (D5)
 Extended Phenotype (D4)  =  THE PIVOT (the equator of the D-axis)
 ```

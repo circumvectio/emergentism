@@ -43,7 +43,7 @@ Constitutional separation: No organ merges cognitive functions. The pipeline is 
 
 ## 4. VMOSK-A & The Nexus
 
-**VMOSK-A (The Replicator Stack):** Every node holographicly contains: Vision (Genotype), Mission (Epigenotype), Objectives (Phenotype), Strategies (Extended Phenotype), KPIs (Memotype), and Agents (Rosetta Castes). The DAV itself is the Egregorotype (the standing wave).
+**VMOSK-A (The Replicator Stack):** Every node holographicly contains: Vision (Genotype), Mission (Epigenotype), Objectives (Phenotype), Strategies (Extended Phenotype), KPIs (Memotype), and Agents (Rosetta Castes). The DAV itself is the Egregoreotype (the standing wave).
 
 **The Nexus (API to a Natural Person):** Sovereign identity (Nostr keypair) hosting the six replicator layers. Biometric-gated, zero extraction, immediate revocability. The rooted sequence begins here: `NEXUS → Private Business Account → Skyzai Pay → OFN receipts → Cortex/AIA → Intelligence Organs → Murmur`.
 

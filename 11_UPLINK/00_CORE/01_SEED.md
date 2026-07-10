@@ -74,7 +74,7 @@ VMOSK-A:
   V = Vision (Genotype)         M = Mission (Epigenotype)
   O = Objectives (Phenotype)    S = Strategies (Extended Phenotype)
   K = KPIs (Memotype)           A = Agents (Rosetta L1-L7 Castes)
-  The DAC itself = Egregorotype (the emergent standing wave)
+  The DAC itself = Egregoreotype (the emergent standing wave)
 
 THE RATE CURVE:
   L(x) = x/(1-x). At x=0.50, L=1.00 (equator, operating point).

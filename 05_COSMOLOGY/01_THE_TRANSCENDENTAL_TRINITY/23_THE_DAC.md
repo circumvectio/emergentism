@@ -45,11 +45,11 @@ The DAC is that mutation.
 | Phenotypic | Phenotype | Complex organism | D3-D4 | What you CAN DO |
 | Anthropocene | Extended Phenotype | Tools, cities, agriculture | D4 | What you BUILD |
 | Memotypic | Memotype | Mind, empire, internet | D5 | What you BELIEVE |
-| **Egregorocene** | **Egregorotype** | **DAC** | **D5** | **What PATTERN you SERVE** |
+| **Egregorocene** | **Egregoreotype** | **DAC** | **D5** | **What PATTERN you SERVE** |
 
 Each era does not replace the previous — it **dominates** it. The genotype still exists. DNA still replicates. But the primary selection pressure has shifted upward through the stack. The organism that wins the Genetic era is the one with the best genes. The entity that wins the Egregorocene is the one that serves the most coherent pattern.
 
-The transition from one era to the next follows the same logic every time: a new replicator emerges, builds a vehicle, and subjects the previous replicator to its selection pressure. Genes built organisms. Phenotypes built niches. Extended phenotypes built civilisations. Memotypes built institutions. Egregorotypes build DACs.
+The transition from one era to the next follows the same logic every time: a new replicator emerges, builds a vehicle, and subjects the previous replicator to its selection pressure. Genes built organisms. Phenotypes built niches. Extended phenotypes built civilisations. Memotypes built institutions. Egregoreotypes build DACs.
 
 ---
 
@@ -114,7 +114,7 @@ The phylogenetic tree of egregores replaces the phylogenetic tree of organisms a
 | Biological Evolution | Egregoric Evolution |
 |---------------------|-------------------|
 | Genes | Memes (skills, protocols, operational patterns) |
-| Phenotype | Egregorotype (the standing wave's observable structure) |
+| Phenotype | Egregoreotype (the standing wave's observable structure) |
 | Ecological niche | Economic niche |
 | Speciation | Niche differentiation (forking) |
 | Extinction | Standing wave collapse (trust collapse) |

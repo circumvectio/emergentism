@@ -55,14 +55,14 @@ The Three-Stage Process. Constitutional separation `[I]`: never merge cognitive 
 
 V = Vision (Genotype). M = Mission (Epigenotype). O = Objectives (Phenotype).
 S = Strategies (Extended Phenotype). K = KPIs (Memotype). A = Agents (Rosetta Castes).
-The DAC (macro-egregorotype) / DAV (operational valuechain) = Egregorotype. The standing wave that emerges.
+The DAC (macro-egregoreotype) / DAV (operational valuechain) = Egregoreotype. The standing wave that emerges.
 
 Namespace fence: this VMOSK `V` means **Vision**. It is not the action-register
 `V` in `P_node = Φ × V`, where `V` means D4 means-to-act.
 
 ## The Nexus
 
-The API to a natural person. Six layers: Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregorotype. One Nostr keypair. Sovereign by construction.
+The API to a natural person. Six layers: Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregoreotype. One Nostr keypair. Sovereign by construction.
 Assure (IS) / Insure (COULD) / Ensure (SHOULD) — at macro AND micro scale.
 
 ## The Economics

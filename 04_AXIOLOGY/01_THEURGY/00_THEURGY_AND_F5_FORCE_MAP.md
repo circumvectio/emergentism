@@ -172,7 +172,7 @@ substrate they consume*. The 2026-04-28 P.S. extension closes that gap.
 The framework's organizational replicator stack is **[VMOSK-A](../../VMOSK_A.md)**: Vision
 (Genotype), Mission (Epigenotype), Objectives (Phenotype), Strategies
 (Extended Phenotype), KPIs (Memotype), Agents (Rosetta L1-L7 castes).
-The DAC itself is the Egregorotype — the standing-wave product that V,
+The DAC itself is the Egregoreotype — the standing-wave product that V,
 M, O, S, K, and A jointly sustain at population scale.
 
 Read in the F5 register:

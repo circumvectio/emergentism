@@ -90,7 +90,7 @@ Same K2 boundary in every reading. Same constitutional invariants. Different dec
 
 **The API PAY breathing-path predicate** is the experiment that decides which decomposition is load-bearing for runtime vs which is teaching scaffolding. If the six-surface shape closes PAY end-to-end, it is the deployable decomposition. The others remain valid as diagnostic lenses and K4-exportable pedagogy.
 
-**Lens, not law.** Biology (organs, soma/germline, modularity, homeostasis, major-transition, Red Queen) is a lens for *checking* whether the architecture has plausible shape — not a frame for *constraining* it. The entity replicator stack (Genotype → Egregorotype) is a useful check, not a structural commitment. The moment a mapping changes a decision *to preserve itself*, it's forcing — and forcing is the failure mode.
+**Lens, not law.** Biology (organs, soma/germline, modularity, homeostasis, major-transition, Red Queen) is a lens for *checking* whether the architecture has plausible shape — not a frame for *constraining* it. The entity replicator stack (Genotype → Egregoreotype) is a useful check, not a structural commitment. The moment a mapping changes a decision *to preserve itself*, it's forcing — and forcing is the failure mode.
 
 ---
 

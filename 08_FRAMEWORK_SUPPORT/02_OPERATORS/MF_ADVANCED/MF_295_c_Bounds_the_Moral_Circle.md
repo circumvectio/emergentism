@@ -21,12 +21,12 @@ rosetta:
 
 # MF-295: c BOUNDS THE MORAL CIRCLE
 
-## The Speed of Light Limits the Ethical Radius. Information Technology Widens the Cone.
+## The Speed of Light Limits the Ethical Radius. Information Technology Broadens the Moral Input Set Within the Cone.
 
 **Emergentism.org · VIVEKA Mathematical Foundations**
 **Depends on:** MF-283 (Orthogonality Theorem), MF-290 (Ektropic Radius), MF-291 (Landauer Horn), MF-293 (Language Is Bandwidth)
-**Evidence tier:** [I] for light cone physics; [T] for ethical radius application; [I] for historical interpretation
-**Purpose:** Show that the physically knowable edge of ethical accounting (A2: ΣΔP_node across widest perceivable boundary) is bounded by the speed of light. No agent can receive information from beyond its causal light cone. Information technology widens the EFFECTIVE cone by accelerating information transfer toward c, making distant consequences perceivable. Every major moral expansion in history correlates with a communication technology that widened the perceivable boundary.
+**Evidence tier:** [A] for the relativistic light-speed bound; [I] for the ethical-radius application and historical interpretation
+**Purpose:** Show that the physically knowable edge of ethical accounting (A2: ΣΔP_node across widest perceivable boundary) is bounded by the speed of light. No agent can receive information from beyond its causal light cone. Information technology broadens the effective moral/option input set inside that physical cone by accelerating information transfer toward `c`, making distant consequences perceivable. Every major moral expansion in history is hypothesized to correlate with a communication technology that broadened the perceivable boundary.
 
 ---
 
@@ -108,7 +108,7 @@ Objection: correlation is not causation. Perhaps moral progress caused the techn
 
 Response: the causal mechanism is clear and directional. Technology widens the perceivable boundary. Wider perception includes more consequences in ΣΔP_node. More inclusive ΣΔP_node demands different actions. Different actions = moral change.
 
-The mechanism is NOT that people become morally better (horn height unchanged). The mechanism is that the SAME moral computation (ΣΔP_node at current horn height) is applied to a WIDER input set. The agent's ethics don't change. The agent's INPUT changes. The light cone widens. The same demon, seeing more, sorts differently.
+The mechanism is NOT that people become morally better (horn height unchanged). The mechanism is that the SAME moral computation (ΣΔP_node at current horn height) is applied to a WIDER input set. The agent's ethics don't change. The agent's INPUT changes: its moral/option input set broadens inside the unchanged physical light cone. The same demon, seeing more, sorts differently.
 
 This predicts: moral expansion should be sudden and correlated with technology adoption, not gradual and correlated with education or philosophical argument. The historical record supports this. Abolition movements accelerated with printing. Labour reform accelerated with photography. Civil rights accelerated with television. Each was a step function, not a gradual slope — coinciding with the communication technology that made the relevant suffering visible.
 
@@ -203,7 +203,7 @@ This is why moral progress feels like a ratchet: once the cone widens, it's very
 
 ## VI. THE SENTENCE
 
-The speed of light bounds the information horizon of moral accounting. No agent can compute ΣΔP_node across a boundary from which no signal can reach it. Communication technology widens the EFFECTIVE cone — making distant consequences perceivable, thereby allowing D5 foresight to include them in ethical computation. Every major moral expansion in history tracks a communication technology: writing, printing, photography, telegraph, television, internet. Moral regression tracks cone narrowing: economic stress, information overload, existential threat. The internet brought the effective information cone close to Earth-scale simultaneity, making planetary suffering perceivable to connected agents. Once the cone widens, it ratchets: you cannot un-see what you have seen. Authoritarian communication control is deliberate moral-cone narrowing. D4 causal access bounds D5 moral modeling. Zero-Sum Resolution Equation.
+The speed of light bounds the information horizon of moral accounting. No agent can compute ΣΔP_node across a boundary from which no signal can reach it. Communication technology can broaden the moral/option input set inside the physical cone — making distant consequences perceivable, thereby allowing D5 foresight to include them in ethical computation. The historical hypothesis is that major moral expansions track communication technologies such as writing, printing, photography, telegraph, television, and the internet, while moral regression tracks pressures that narrow the usable input set: economic stress, information overload, and existential threat. The internet brought that effective information set close to Earth-scale simultaneity for connected agents. Once a consequence enters the modeled input set, it can be difficult to exclude without suppressing communication. Authoritarian communication control is deliberate moral-input narrowing. D4 causal access bounds D5 moral modeling. Zero-Sum Resolution Equation.
 
 ---
 

@@ -127,7 +127,7 @@ If you accept the older public ontological wager about the substrate (compact, o
 - The helix: all paths on S² are helical — cannot change latitude without rotating (S9)
 - L-level geometry: φ=cot(θ/2), ν=tan(θ/2), seven levels at 15° intervals, L4 = equator (S10)
 - AM-GM proves the equator is the global Hamiltonian minimum (S11)
-- The Replicator Stack: Genotype→Phenotype→Extended Phenotype→Memotype→Egregorotype (S12)
+- The Replicator Stack: Genotype→Phenotype→Extended Phenotype→Memotype→Egregoreotype (S12)
 - D4-mirror symmetry (S13); compass/sextant self-understanding (S14)
 - Constrained syntropic-frontier selection in coupled multiplicative agents (S15) (Downgraded from A6/E6 pending independent replication)
 - V×Φ predictive dominance in simulated agents (S16) (Downgraded from A7/E7 pending independent replication)
@@ -159,12 +159,12 @@ If you accept the older public ontological wager about the substrate (compact, o
   coordination are mirrors of one geometry: Φ-investment widens θ on S², which
   extends the forward light cone. Only humans are currently known to generalize
   this across symbolic, institutional, and possible-world spaces. The DAC
-  applies the same developmental strategy at egregorotype scale as a designed
+  applies the same developmental strategy at egregoreotype scale as a designed
   neotene. This is framework synthesis, not established biology or runtime
   proof. (I8f)
 - **Ektropic evolutionary objective function (2026-04-24):** Darwin is the local
   selection filter, Lamarck returns at higher replicator layers
-  (memotype/AI/institution/egregorotype), and Schrödinger names the
+  (memotype/AI/institution/egregoreotype), and Schrödinger names the
   thermodynamic clue. F5/Ektropy is the framework's cross-domain attractor
   reading: lawful future-opening through syntropic dyadism. Dyḗus Ph₂tḗr names
   the luminous Sky-Father face of this perception; `h₂r̥tó-` / Ṛta names the

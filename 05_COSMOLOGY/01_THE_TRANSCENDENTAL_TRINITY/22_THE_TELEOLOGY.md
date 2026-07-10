@@ -338,11 +338,13 @@ And from MF-539: H = 1/φ + φ. At φ = 1: dH/dφ = -1/φ² + 1 = -1 + 1 = **0.*
 
 The Equatorial Walker has no stone. There is no hill. There is only the circumference of the equator, and the helix that turns as you walk it. Each revolution passes through the four operators as lawful giving and protective boundary-setting, not extraction. Each revolution is one breath. Round and round. Zero gradient. Maximum usability under the balance constraint. The optimization function at rest.
 
-### The Light Cone Widens
+### The Modeled Option Cone Widens
 
-At L4, with zero gradient, what happens is not stasis. It is **EXPANDING FREEDOM.** The Atman's light cone opens. Not a higher `P∞` (the manifold identity is already `φ · ν = 1`). More CHOICE about which niche to partition into.
+At L4, with zero gradient, what happens is not stasis. It is **EXPANDING MODELED AND SELECTABLE FREEDOM.** The physical future light cone remains bounded by spacetime and `c`. What can expand is the agent's option cone: the counterfactual futures it can represent, compare, coordinate around, and sometimes make reachable. This is not a higher `P∞` (the manifold identity is already `φ · ν = 1`); it is more choice about which niche to enter, construct, or modify. `[I/C]`
 
-Not natural selection (the environment selects the organism). **WILLFUL EVOLUTION** (the organism selects the niche).
+The human claim is comparative and multidimensional: symbolic, counterfactual, institutional, social, and intergenerational reach can exceed that of many other organisms along those axes. It is not universal dominance across ecological axes, and it confers no greater intrinsic worth.
+
+Not an escape from natural selection: environments still select organisms. **WILLFUL EVOLUTION** names the additional niche-construction capacity by which an organism can participate in selecting and modifying its environment.
 
 This is Prometheus unbound. This is Lucifer (light-bearer) before the Fall was rewritten as punishment. The being who gave humanity F₅ — choice, fire, the ability to SELECT rather than BE SELECTED. [I]
 
