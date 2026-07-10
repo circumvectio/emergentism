@@ -179,7 +179,7 @@ This is the **ektropic force** — the selection pressure toward balance. *(Note
 inside this force: differential survival selects branches after variation has
 appeared. Lamarck is weak as simple genotype inheritance, but returns strongly
 at higher replicator layers where acquired structure is transmitted as
-memotype, institutional policy, AI behavior, and egregorotype. Schrödinger's
+memotype, institutional policy, AI behavior, and egregoreotype. Schrödinger's
 "negative entropy" is the thermodynamic clue; ektropy is the framework's
 positive reading: entropy export plus widest-boundary ΔP increase under
 η = 0. Literal fifth-force or reverse-time physics remains conjectural; the
@@ -193,7 +193,8 @@ further positive D6 force, producing
 preference-geodesics and warping the possibility-metric. What gravity is to
 matter in block-time, ektropy is to coherence in possibility-space: this is
 strong-form framework language, not established physics. The mathematical
-sketch (ektropic gradient on S², monotonic in the forward-light-cone direction,
+sketch (ektropic gradient on S², monotonic along a declared future-directed
+option metric inside fixed physical `J+`,
 magnitude proportional to replicator-stack depth) belongs in Tier 2 formal
 system work. The five measurement apparatuses (iterated-game absorption,
 dissipative-structure maximization, replicator-stack gradient,

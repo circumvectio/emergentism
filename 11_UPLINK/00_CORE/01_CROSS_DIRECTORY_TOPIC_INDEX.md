@@ -122,7 +122,7 @@ rosetta:
 | **Uplink** | [`03_ORGANISM.md`](03_ORGANISM.md) | Compressed organism summary |
 | **Tool** | [`09_TOOLS/10_SPRINT_GATES/`](../../09_TOOLS/10_SPRINT_GATES/) | Sprint gate automation |
 
-**Agent routing:** Vision = genotype. Mission = epigenotype. Objectives = phenotype. Strategies = extended phenotype. KPIs = memotype. Agents = Rosetta L1-L7 castes. The DAC itself = egregorotype.
+**Agent routing:** Vision = genotype. Mission = epigenotype. Objectives = phenotype. Strategies = extended phenotype. KPIs = memotype. Agents = Rosetta L1-L7 castes. The DAC itself = egregoreotype.
 
 ---
 

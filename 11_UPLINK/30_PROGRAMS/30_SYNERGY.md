@@ -166,12 +166,13 @@ Read through the dimensional lens (packet 131): each organ is a **D4 body** acti
 
 The Three-Stage Process loop is not a pipeline moving through a fixed D5 space. It is a **recursive engine that grows D5**. Each turn widens the manifold of what is strategically possible. The rate of widening is the organism's power.
 
-Biological organisms do this through niche-bounded light cones: each body opens
-possibility along a particular worldline and converges toward the form fitted
-to that niche. Skyzai extends the human pattern instead: a generalized light
-cone governed by symbols, evidence, memory, institutions, and K2. The loop
-therefore needs stronger truth discipline than a biological niche because its
-possible consequence-space is wider.
+Biological organisms do this through niche-bounded option cones: each body
+opens possibility along a particular worldline and converges toward the form
+fitted to that niche. Skyzai proposes to extend the human pattern instead: a
+generalized modeled/selectable/reachable subset governed by symbols, evidence,
+memory, institutions, and K2, all inside fixed physical `J+`. The loop therefore
+needs stronger truth discipline than a biological niche because its modeled
+consequence-space may be wider.
 
 The human pattern begins metabolically: low realized V at birth, long
 dependency, and high brain/culture cost. That cost buys culture-built Phi, which

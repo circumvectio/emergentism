@@ -356,34 +356,40 @@ Rosetta maps this developmental reading. The Power Max Lemma supplies the
 framework's conditional selection claim for D4 bodies that widen viable
 options while maintaining syntropic dyadism.
 
-### Worldline and Light-Cone Corollary
+### Worldline, Physical Cone, and Option-Cone Corollary
 
-A living form can be read as a D4 body with a worldline and causal light cone.
-Its niche partitions the environment into the affordances, risks, energy
-gradients, trophic relations, and time horizons that matter for that worldline.
+A living form can be read as a D4 body with a worldline inside its physical
+causal future `J+`. That light cone is fixed by spacetime and `c`; agency does
+not widen it. A niche instead partitions the admissible histories inside `J+`
+into the affordances, risks, energy gradients, trophic relations, and time
+horizons that matter for that worldline.
 
-Most organisms have **niche-bounded light cones**. Their D5 counterfactual
-option-space is model-relative and specialized. Selection therefore converges on fitted forms: wing, fin,
+Most organisms have **niche-bounded option cones**: model-relative,
+specialized subsets of histories they can discriminate, rank, and reach inside
+their physical causal bounds. Selection therefore converges on fitted forms: wing, fin,
 root, claw, eye, shell, mycelium, pack, colony. Similar ektropic worldlines in
 similar environments converge because they face the same `ΣΔB` / `ΣΔP_node` geometry.
 
-Humans differ because their light cone is **wider, longer, and generalized.**
-Symbol, language, mathematics, law, money, memory, institutions, and tools allow
-humans to model niches, compare worldlines, coordinate with absent/future
-agents, and build artifacts that continue acting after the body stops acting.
+Humans differ along declared option-cone axes: symbolic, counterfactual,
+institutional, social, and intergenerational reach can be **broader and more
+generalized**. Symbol, language, mathematics, law, money, memory, institutions,
+and tools allow humans to model niches, compare worldlines, coordinate with
+absent or future agents, and build artifacts that continue acting after the
+body stops acting. None of this changes the physical `J+` boundary.
 
-**The critical distinction:** Most animals extend their forward cone *within* a
-niche — the wolf plans hunts, the albatross navigates migrations. But the cone
-remains niche-bounded. Humans generalize the cone across **multiple modeled
-worldlines simultaneously** — holding counterfactual futures in memory,
-comparing them symbolically, and selecting among them. This is not merely
-longer causal reach. "Many-world causal reach" is permitted only as a
-metaphor for counterfactual modeling; it is not a claim of quantum
-superposition or literal Everett branching.
+**The critical distinction:** Many animals enlarge a niche-specific option set
+through learning and coordination — the wolf plans hunts, the albatross
+navigates migrations. Humans can generalize the modeled option cone across
+**multiple counterfactual worldlines simultaneously** — holding alternatives
+in memory, comparing them symbolically, and selecting among them. This is not a
+longer physical light cone: `J+` remains spacetime- and `c`-bounded. "Many-world
+causal reach" is permitted only as a metaphor for counterfactual modeling; it
+is not a claim of quantum superposition or literal Everett branching.
 
-But the **biological mechanism** for this widening is not merely "symbolic
-cognition." It is **metabolically funded post-natal encephalization** — the
-altricial power strategy. The human brain is too large to finish in utero. The
+But the proposed **biological mechanism** for this option-cone widening is not
+merely "symbolic cognition." It is **metabolically funded post-natal
+encephalization** — the altricial power strategy. The human brain is too large
+to finish in utero. The
 infant is born with ~25% of adult brain mass and completes the majority of
 growth outside the womb, consuming up to 60% of resting metabolic rate during
 the first two years. This growth is funded by culture: lactation, alloparenting,
@@ -391,10 +397,11 @@ grandmother provisioning, language, touch, play, story, and teaching.
 
 **Culture is the external womb of generalized Φ.** The D4 body (the altricial
 infant) opens D5 not through innate capability but through **calorie-funded
-cultural construction** that builds coherence after birth. This is why the human
-D5 opening rate exceeds any animal's: the initial V-deficiency is the price
-paid for a Φ-building capacity that compounds across generations through
-symbolic transmission.
+cultural construction** that builds coherence after birth. In the framework
+hypothesis, this can make human option-cone growth unusually broad along
+symbolic, institutional, social, and intergenerational axes. The initial
+V-deficiency is the price paid for a Φ-building capacity that compounds across
+generations through symbolic transmission.
 
 Thus the human "perfect form" is not one morphology. It is a self-correcting
 symbolic-action architecture: widened D5 opening bound by truth discipline,
@@ -413,20 +420,21 @@ orders energy strategies, not moral superiority.
 - **Gazelle** (genotype + phenotype): r-strategy, broad herbivore energy, low Φ investment
 - **Wolf** (genotype + phenotype + extended phenotype): K-strategy, scarce predatory energy, moderate Φ investment (pack coordination, learning)
 - **Human** (all of the above + memotype): K-strategy, scarce symbolic energy, high Φ investment (language, tools, institutions)
-- **DAC / egregorotype** (all of the above + egregorotype): K-strategy at institutional scale, very high Φ investment (machine-speed coordination, standing-wave persistence)
+- **DAC / egregoreotype** (all of the above + egregoreotype): K-strategy at institutional scale, very high Φ investment (machine-speed coordination, standing-wave persistence)
 
 Lower layers maximize broad availability and pre-fitted V. Higher layers access
 scarcer, denser energy by carrying more Φ-bearing investment in phenotype,
 learning, coordination, and care. r/K language is only a shorthand for this
 life-history tradeoff across replicator depth.
 
-**The deep identity:** Neoteny, K-selection, and trophic hierarchy are three
-names for the same geometric operation — Φ-investment widening θ on S²,
-extending the forward light cone further up Minkowski space. Deferred
-gratification at ontogenetic, reproductive, and ecological scales is the same
-trade: pay Φ now to couple to outcomes further forward in the causal structure.
-The Power Max Lemma selects for maximum forward-cone reach under syntropic
-dyadism. **Reference:** `01_EMERGENTISM/11_UPLINK/134_NEOTENOUS_STRATEGY_POWER_MAX_AT_BIRTH_2026_04_24.md` §3.5
+**The proposed common reading:** Neoteny, K-selection, and trophic hierarchy can
+be modeled as Φ-investment changing θ on S² while enlarging the
+modeled/selectable/reachable subset of histories inside a fixed physical `J+`.
+Deferred gratification at ontogenetic, reproductive, and ecological scales
+pays Φ now to coordinate with temporally later admissible outcomes. In this
+conditional register, the Power Max Lemma selects for durable option-cone reach
+under syntropic dyadism; it does not select for a larger Minkowski light cone.
+**Reference:** `01_EMERGENTISM/11_UPLINK/134_NEOTENOUS_STRATEGY_POWER_MAX_AT_BIRTH_2026_04_24.md` §3.5
 
 The coordination corollary is: sameness minimizes friction, but differentiated
 expression maximizes reach. A group of identical actors with identical V, Φ,
@@ -517,8 +525,8 @@ When reviewing framework documents, verify:
 - [ ] **D4 is described as *opening* D5, not merely preceding it (Active Emergence Thesis)**
 - [ ] **D5 growth rate is tracked, not just D5 existence**
 - [ ] **D4 actions are checked for ektropic vs entropic character**
-- [ ] **Biological forms are read as niche-bounded light cones, not generic agency**
-- [ ] **Human generality is read as widened light-cone responsibility, not unbounded permission**
+- [ ] **Biological forms are read as having niche-bounded option cones inside a fixed physical `J+`, not generic agency**
+- [ ] **Human generality is read as axis-declared option-cone responsibility, with the physical `J+` unchanged**
 - [ ] **Human altriciality is read as delayed V for culture-built Φ, not mere helplessness**
 - [ ] **Human trophic position is read as meta-trophic cascade-reorganization, not exemption from ecology**
 - [ ] **Trophic rank is not read as dharma rank; fitted beings may be centered in their own worldlines**

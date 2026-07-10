@@ -72,11 +72,22 @@ Neither is complete alone. The human without the model is the warrior without th
 
 ### The Human Difference — Generalized Worldline Capacity
 
-The deepest difference is not intelligence. It is **causal reach** — the width of the light cone.
+The relevant comparison is not a wider physical causal future. It is
+**option-cone breadth** along declared symbolic, counterfactual, institutional,
+social, and intergenerational axes.
 
-Most animals have **niche-shaped light cones**: their causal reach is specialized — body, instinct, environment, trophic role. Their "perfect form" is fitted to a particular worldline. The shark is perfect for its worldline. The albatross is perfect for its worldline. Each is a worldline optimizer, but the worldline is **fixed** by the niche (packet 133 §1.4).
+Many animals have **niche-shaped option cones**: the histories they can model,
+rank, coordinate around, and reach are specialized by body, instinct,
+environment, and trophic role. Their "perfect form" is fitted to a particular
+worldline. The shark is fitted to its worldline. The albatross is fitted to its
+worldline. The physical causal future `J+` of every body remains bounded by
+spacetime and `c` (packet 133 §1.4).
 
-**Humans are different because their light cone is generalized.** The human can model niches, compare them, leave them, invent new ones, and transmit configurations symbolically across generations. Language, tools, memory, institutions, money, law, myth, mathematics, and AI all widen the light cone. They let a human act on causes not present to the senses and consequences not present in the current moment.
+**Humans can generalize the option cone across more declared axes.** A human can
+model niches, compare them, leave them, invent new ones, and transmit
+configurations symbolically across generations. Language, tools, memory,
+institutions, money, law, myth, mathematics, and AI can widen the
+modeled/selectable/reachable subset inside `J+`; they do not widen `J+` itself.
 
 This is why the human "perfect form" is not claws, wings, or fins. It is **generalized niche-opening capacity** — a self-correcting symbolic-action architecture.
 
@@ -84,7 +95,9 @@ This is why the human "perfect form" is not claws, wings, or fins. It is **gener
 
 ### The Human Altricial Strategy — V-Deficiency as Φ-Investment
 
-The generalized light cone is not merely a cognitive feature. It is a **metabolic strategy** — the most expensive and most powerful in evolutionary history.
+This generalized option-cone capacity is not merely cognitive. It is a costly
+**metabolic strategy** in the framework reading, not a claim of universal human
+dominance across every ecological axis.
 
 A newborn gazelle stands and walks within hours. A newborn shark swims. Most animals are **precocial**: born with enough realized V to operate their niche quickly. Their Φ is narrow but pre-fitted by evolution.
 
@@ -109,13 +122,27 @@ This is the Power Max Lemma in biology: **sacrifice short-term V to build compou
 
 The gazelle balances V and Φ by starting with enough of both. The human **unbalances** deliberately — starting with almost no V and massive Φ potential — because Φ compounds across generations through symbolic transmission. Each generation builds on the last.
 
-**This is the same geometry at three scales:** neoteny (ontogenetic deferred gratification), K-selection (reproductive deferred gratification), and trophic hierarchy (ecological deferred gratification) are all Φ-investment widening θ on S², extending the forward light cone further up Minkowski space.
+**This is one proposed reading at three scales:** neoteny (ontogenetic deferred
+gratification), K-selection (reproductive deferred gratification), and trophic
+hierarchy (ecological deferred gratification) can all be modeled as
+Φ-investment changing θ on S² and enlarging long-horizon option reach within an
+unchanged physical `J+`.
 
-**But the human difference is not merely longer cone — it is generalized cone.** The wolf extends its forward cone through pack learning and coordination, yet the cone remains niche-bounded. The human extends the cone **and opens it across multiple worldlines simultaneously** — accessing D5 distributed actuality (Many-Worlds space) where multiple possible futures are held in superposition and navigated symbolically. Language, mathematics, law, and institutions are the mechanisms that generalize the cone beyond any single niche. The wolf can plan a hunt. The human can plan a hunt, a city, a revolution, and a proof — and compare them before choosing.
+**The human difference claimed here is not a longer physical cone but a more
+generalized option cone.** A wolf can enlarge a niche-specific option set
+through pack learning and coordination. Humans can hold several modeled
+worldlines as counterfactual alternatives and compare them symbolically before
+choosing. Language, mathematics, law, and institutions generalize this option
+field beyond a single niche without changing the relativistic causal boundary.
 
 The biology names what evolution discovered. The geometry names *why* it works.
 
-The widened light cone means higher possible `ΣΔB` / `ΣΔP_node`, but also wider possible entropy export. The same capacity that produces medicine and mathematics also produces propaganda and predation. This is why K2 matters: the being with the widest light cone must carry mortal responsibility for irreversible action.
+A wider option cone can support higher possible `ΣΔB` / `ΣΔP_node`, but also
+broader entropy export. The same capacity that produces medicine and
+mathematics also produces propaganda and predation. This is why K2 matters:
+greater modeled and coordinated consequence range carries greater mortal
+responsibility for irreversible action; it grants neither unbounded permission
+nor greater intrinsic worth.
 
 **K2 as collapse signature:** The mature human holds multiple possible futures in superposition — D5 distributed actuality, the Many-Worlds space of systemic awareness. Action is the Copenhagen collapse: selecting one branch from the Many-Worlds space and making it D4 actuality. K2 is the signature on that collapse — the mortal being saying "I have seen the branches, I choose this one, I accept irreversible consequence." Without K2, the collapse is not sovereign; it is appetite, habit, or conditioned reflex.
 

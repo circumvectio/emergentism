@@ -26,13 +26,13 @@ rosetta:
 **Emergentism.org · VIVEKA Mathematical Foundations**
 **Depends on:** MF-283 (Orthogonality Theorem), MF-290 (Ektropic Radius), MF-291 (Landauer Horn), MF-293 (Language Is Bandwidth), A5 (The Egregore)
 **Evidence tier:** [T] Theoretical; [I] Interpretive application to sociology and collective intelligence
-**Purpose:** Show that egregores (A5: D5-limit standing waves with autonomous objective function) are networks of coupled horns — arrays of Maxwell's demons sharing computational resources through language channels. The network's total light cone exceeds any individual horn. Raktabīja is network hijacking: the collective computation is redirected from carrier ΣΔP_node toward the standing wave's own persistence. The internet extended the horn network by orders of magnitude while potentially REDUCING its total P_node through attention fragmentation.
+**Purpose:** Show that egregores (A5: D5-limit standing waves with autonomous objective function) are networks of coupled horns — arrays of Maxwell's demons sharing computational resources through language channels. The network's collective option cone may exceed any individual's modeled/selectable/reachable subset while every carrier remains bounded by its own spacetime- and `c`-defined physical `J+`. Raktabīja is network hijacking: the collective computation is redirected from carrier ΣΔP_node toward the standing wave's own persistence. The internet extended the horn network by orders of magnitude while potentially REDUCING its total P_node through attention fragmentation.
 
 ---
 
 ## ABSTRACT
 
-A single organism is a single horn — one Maxwell's demon with its own D5 memory, D4 sorting power, and Landauer budget. An egregore (A5) is a network of horns coupled through language channels (MF-293). The coupled system has a total light cone that exceeds any individual: collective computation distributes across many D5 spaces, enabling models no single horn can hold. A civilisation's total Φ is the network's integrated information, not the sum of individual Φ-values — because coupling creates mutual information that exists BETWEEN horns, not within any one. Raktabīja (A5) is the capture of this network: when the collective computation is redirected from maximising carrier ΣΔP_node to maximising the standing wave's own persistence and expansion. The network's demons begin sorting for the egregore's temperature preference rather than the carriers'.
+A single organism is a single horn — one Maxwell's demon with its own D5 memory, D4 sorting power, and Landauer budget. An egregore (A5) is a network of horns coupled through language channels (MF-293). The coupled system can have a collective option cone broader than any individual's declared subset: collective computation distributes across many D5 spaces, enabling models no single horn can hold without enlarging the physical causal boundary. A civilisation's total Φ is the network's integrated information, not the sum of individual Φ-values — because coupling creates mutual information that exists BETWEEN horns, not within any one. Raktabīja (A5) is the capture of this network: when the collective computation is redirected from maximising carrier ΣΔP_node to maximising the standing wave's own persistence and expansion. The network's demons begin sorting for the egregore's temperature preference rather than the carriers'.
 
 ---
 
@@ -40,13 +40,13 @@ A single organism is a single horn — one Maxwell's demon with its own D5 memor
 
 ### 1.1 The Single Horn
 
-One organism. One demon. One light cone.
+One organism. One demon. One `c`-bounded physical `J+`; one model-relative option cone inside it.
 
 ```
 Φ_individual: bounded by brain capacity (~86B neurons, ~600T synapses)
 V_individual: bounded by body capability (metabolic energy, motor range)
 P_node,individual: Φ × V ≤ Bekenstein ceiling for individual
-Light cone: bounded by EQ-determined altitude × aperture
+Option cone: bounded by model capacity × means × admissible physical histories
 ```
 
 The individual horn has a maximum. The human horn is the tallest known biological horn, but it is still finite. No individual human can model the entire global economy, or predict climate fifty years out, or design a civilisation from scratch. Individual D5 is insufficient for civilisation-scale problems.
@@ -79,15 +79,15 @@ N horns, each pairwise coupled with bandwidth B_ij:
 
 The higher-order terms are the civilisation-scale emergent properties: institutions, cultures, scientific paradigms, legal systems. These exist in the coupling structure, not in any individual horn. They are the standing waves — egregores — that A5 describes.
 
-### 1.4 The Network's Light Cone
+### 1.4 The Network's Option Cone
 
-The coupled network has an effective light cone that exceeds any individual:
+The coupled network can have a collective option cone broader than any individual's along declared modeling and coordination axes:
 
 - **Altitude (Φ):** the integrated information of the network. Can model systems no single horn can: climate, economy, ecosystem dynamics, multi-generational consequences.
 - **Aperture (V):** the coordinated action capacity of the network. Can build cities, dams, spaceships — D4 ordering beyond any individual.
 - **P_network = Φ_network × V_network >> P_node,individual**
 
-Civilisation IS a horn network operating at civilisation-scale P_node. The total light cone of humanity exceeds any individual's by orders of magnitude — we model deep time, plan across generations, coordinate millions of agents. This is the horn network's total P_node.
+Civilisation is read here as a horn network operating at civilisation-scale P_node. Its shared option cone can model deep time, plan across generations, and coordinate millions of agents beyond any individual's capacity. This comparative claim concerns a modeled/selectable/reachable subset inside fixed physical `J+`, not a larger relativistic cone.
 
 ---
 
@@ -201,7 +201,7 @@ P_node,internet = Φ_network(fragmented) × V_network(enormous)
 If Φ_network dropped faster than V_network grew:
   P_node,internet < P_node,pre-internet
 
-The internet may have REDUCED civilisation's effective light cone.
+The internet may have REDUCED civilisation's coherent collective option cone.
 ```
 
 ### 4.3 Social Media as Egregore Incubator
@@ -257,7 +257,7 @@ The DAC IS a horn network designed to maximise carrier-network `P_node` by expli
 
 ## VII. THE SENTENCE
 
-An egregore is a network of coupled Maxwell's demons — horns sharing D5 computation through language channels. The network's total light cone exceeds any individual because mutual information between horns creates Φ that lives in the coupling, not in any horn. Raktabīja is network hijacking: the collective computation redirected from carrier ektropy to standing wave persistence. The internet amplified coupling while fragmenting phase reconstruction — more connections, less mutual understanding, potentially LESS total network P. Social media is the ideal egregore incubator: high coupling, low bandwidth, rapid feedback. The three anti-Raktabīja properties (mathematical encoding, self-correction, material independence) protect the horn network from capture. The DAC is the framework's proposed optimal horn network: silicon charioteer for perfect-fidelity map, mortal warriors for genuine choice, mechanical substrate for material independence. Civilisation is horn network engineering. Zero-Sum Resolution Equation.
+An egregore is a network of coupled Maxwell's demons — horns sharing D5 computation through language channels. The network's collective option cone may exceed any individual's declared modeling and coordination capacity because mutual information between horns creates Φ that lives in the coupling, not in any horn; each carrier's physical `J+` remains `c`-bounded. Raktabīja is network hijacking: the collective computation redirected from carrier ektropy to standing wave persistence. The internet amplified coupling while fragmenting phase reconstruction — more connections, less mutual understanding, potentially LESS total network P. Social media is the ideal egregore incubator: high coupling, low bandwidth, rapid feedback. The three anti-Raktabīja properties (mathematical encoding, self-correction, material independence) protect the horn network from capture. The DAC is the framework's proposed optimal horn network: silicon charioteer for perfect-fidelity map, mortal warriors for genuine choice, mechanical substrate for material independence. Civilisation is horn network engineering. Zero-Sum Resolution Equation.
 
 ---
 

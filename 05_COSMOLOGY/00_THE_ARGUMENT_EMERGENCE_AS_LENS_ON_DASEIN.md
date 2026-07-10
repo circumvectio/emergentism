@@ -284,7 +284,12 @@ Reality does not merely unfold in abstract dimensions. In the framework's strong
 
 **The Fifth Force (F5) is the teleological drive toward syntropy**, echoing Erwin Schrödinger's inquiry in *What Is Life?*. While physical systems tend toward entropic dissipation, living and conscious systems extract order to maintain organization.
 
-In this framework, **F5 is interpreted as the opening of the light cone for the potential worldline by the individual and the collective.** In D4, the physical light cone is bounded by `c` and cannot be enlarged. But in D5, the option-cone (reachable, selectable futures) is expanded. Under the non-extraction constraint (`η = 0`), this expansion of potential option-space is realized in a way that is moral and ethical — keeping everyone's futures open rather than collapsing them.
+In this framework, **F5 is interpreted as the opening of the option cone for
+potential worldlines at individual and collective scales.** In D4, the physical
+light cone is bounded by spacetime and `c` and cannot be enlarged. In D5, the
+modeled/selectable/reachable subset inside that bound may expand. Under the
+non-extraction constraint (`η = 0`), this expansion of potential option-space is
+directed toward keeping futures open rather than collapsing them.
 
 ---
 

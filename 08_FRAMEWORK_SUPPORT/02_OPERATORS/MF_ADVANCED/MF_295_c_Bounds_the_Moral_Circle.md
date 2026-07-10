@@ -66,11 +66,14 @@ Maximum ethical spacetime volume:
 
 No agent can have an ethical radius wider than its light cone. This is not a moral limitation — it is a physical one. You cannot be responsible for consequences you cannot in principle know about.
 
-### 1.3 The Effective Light Cone
+### 1.3 The Perceivable Causal/Option Input Set
 
-In practice, the effective light cone is much smaller than the theoretical maximum. Information does not travel at c for most of human history — it travels at the speed of the fastest available communication technology:
+In practice, the portion of the physical causal history available to an
+agent's D5 model is much smaller than the theoretical maximum. For most of
+human history, recorded information propagated at the speed of the fastest
+available communication technology rather than at `c`:
 
-| Era | Effective Information Speed | Effective Ethical Radius at T=1 year |
+| Era | Information Speed | Perceivable Ethical Radius at T=1 year |
 |-----|---------------------------|-------------------------------------|
 | Pre-literate | Walking speed (~5 km/h) | ~44,000 km (but no storage — decays) |
 | Horse messenger | ~50 km/day | ~18,000 km (with relay stations) |
@@ -80,7 +83,10 @@ In practice, the effective light cone is much smaller than the theoretical maxim
 | Television (1930s) | ~c (image + sound) | Instant multi-modal, mass broadcast |
 | Internet (1990s) | ~c (all modalities) | Instant, interactive, bidirectional, global |
 
-Each technology widened the effective light cone by increasing the speed at which information about distant consequences reached the agent. The PHYSICAL light cone didn't change. The EFFECTIVE light cone — the portion of the physical cone the agent can actually perceive — expanded enormously.
+Each technology broadened the perceivable moral/option input set by increasing
+the speed at which information about distant consequences reached the agent.
+The physical light cone did not change; more of the causally admissible history
+became available to the D5 model.
 
 ---
 
@@ -96,11 +102,15 @@ Every major expansion of the moral circle correlates with a communication techno
 
 **Photography (1840s):** Made distant suffering VISUALLY perceivable. Jacob Riis's photographs of New York slums (1890) triggered reform movements. The image arrived at the agent's D5 model with far higher bandwidth than text — emotional phase preserved (MF-293). The moral circle expanded to include the unseen poor.
 
-**Telegraph/transatlantic cable (1866):** Made global events perceivable in near-real-time. The first time the effective light cone matched the physical light cone for Earth-scale events. International humanitarian movements became possible because suffering anywhere could be known everywhere within hours.
+**Telegraph/transatlantic cable (1866):** Made global events perceivable in near-real-time. The perceivable information set began to cover Earth-scale events with far less delay. International humanitarian movements became possible because suffering anywhere could be known elsewhere within hours.
 
 **Television (1950s-60s):** High-bandwidth visual + auditory. Vietnam War footage in American living rooms. The civil rights movement broadcast nationwide. Multi-modal emotional phase transmission (MF-293: image + sound preserves more phase than text alone). The moral circle expanded to include distant wars, foreign populations.
 
-**Internet/social media (1990s-2010s):** Instant, bidirectional, global, multi-modal. Arab Spring. Black Lives Matter. Climate activism. The agent's effective light cone approached the physical light cone for the first time in history. Every phone became a broadcast station. Every suffering was potentially visible to every agent.
+**Internet/social media (1990s-2010s):** Near-instant, bidirectional, global,
+multi-modal. Arab Spring. Black Lives Matter. Climate activism. Connected
+agents could receive a much larger Earth-scale evidence set with delays closer
+to the physical limit. Every phone became a broadcast station; more suffering
+became potentially visible without changing the relativistic boundary.
 
 ### 2.2 The Causal Direction
 
@@ -173,19 +183,29 @@ Communication technology is not ABOUT communication. It is moral infrastructure.
 
 The telegraph was not just a business tool. It was a moral technology that made distant suffering perceivable, thereby including it in the agent's ΣΔP_node computation, thereby changing what actions were ethical.
 
-The internet is not just an information tool. It is the most powerful moral technology in history — it brought the effective light cone to near-c for the first time, making the entire planet's suffering simultaneously perceivable to every connected agent.
+The internet is not just an information tool. It is a powerful moral technology
+in this framework reading: it moved information propagation closer to `c` and
+broadened the Earth-scale evidence set available to connected agents.
 
 ### 4.2 The Responsibility Asymmetry
 
-Widening the cone creates an asymmetry: once you CAN perceive a consequence, you MUST include it in ΣΔP_node. There is no moral "unsee."
+Widening the perceivable option/input set creates an asymmetry: once you CAN perceive a consequence, you MUST include it in ΣΔP_node. There is no moral "unsee."
 
-Before photography: sweatshop labour was outside the consumer's effective light cone. Ignorance was genuine. ΣΔP_node computation excluded what couldn't be perceived.
+Before photography: sweatshop labour was outside the consumer's available evidence set. Ignorance could be genuine. ΣΔP_node computation excluded what could not be perceived.
 
-After photography: the images entered the consumer's D5 model. The consequence is now INSIDE the light cone. ΣΔP_node must include it. Failing to include a perceivable consequence is computational error — the demon is ignoring observations, which (per Landauer) still cost memory but produce no ordering. Deliberate ignorance is worse than genuine blindness.
+After photography: the images entered the consumer's D5 model and therefore
+the modeled moral/option input set. ΣΔP_node must include the evidence. Failing
+to include a perceivable consequence is computational error — the demon is
+ignoring observations, which (per Landauer) still cost memory but produce no
+ordering. Deliberate ignorance is worse than genuine blindness.
 
-This is why moral progress feels like a ratchet: once the cone widens, it's very difficult to narrow it back without destroying the communication technology. You can't un-photograph the suffering. You can't un-broadcast the war. The moral circle expands because the light cone doesn't contract.
+This is why moral progress can feel like a ratchet: once the evidence set
+widens, it is difficult to narrow without destroying or suppressing the
+communication technology. You cannot un-photograph the suffering or
+un-broadcast the war. The moral circle may expand because the available D5
+input set is harder to contract, not because the physical light cone changed.
 
-(Unless the technology is destroyed — which is why authoritarian regimes control communication infrastructure first. Internet shutdowns are MORAL CONE NARROWING — reducing the effective light cone to make consequences invisible, thereby removing them from the population's ΣΔP_node computation.)
+(Unless the technology is destroyed or suppressed — which is why authoritarian regimes control communication infrastructure first. Internet shutdowns narrow the population's perceivable moral/option input set, making consequences invisible and removing them from its ΣΔP_node computation.)
 
 ---
 
@@ -195,7 +215,9 @@ This is why moral progress feels like a ratchet: once the cone widens, it's very
 
 **F295-2:** If moral regressions occur WITHOUT preceding cone-narrowing pressures (economic stress, information overload, existential threat, or communication infrastructure degradation), the regression model fails.
 
-**F295-3:** If agents demonstrably include consequences outside their effective light cone in ΣΔP_node computation (ethical behaviour toward completely unknown consequences), the c-bound claim fails.
+**F295-3:** If agents demonstrably include consequences outside their declared
+causally available evidence set in ΣΔP_node computation (ethical behavior
+toward completely unknown consequences), the c-bound claim fails.
 
 **F295-4:** If authoritarian suppression of communication infrastructure does NOT produce moral circle constriction, the technology-as-moral-infrastructure claim fails.
 

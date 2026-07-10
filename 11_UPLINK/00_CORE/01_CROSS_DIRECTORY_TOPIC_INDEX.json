@@ -134,7 +134,7 @@
         "01_EMERGENTISM/09_TOOLS/sprint_lineage_gates.py",
         "01_EMERGENTISM/09_TOOLS/sprint_politik_gates.py"
       ],
-      "agent_routing": "V=genotype, M=epigenotype, O=phenotype, S=extended phenotype, K=memotype, A=agents, DAC=egregorotype."
+      "agent_routing": "V=genotype, M=epigenotype, O=phenotype, S=extended phenotype, K=memotype, A=agents, DAC=egregoreotype."
     },
     {
       "id": "proof_loop",

@@ -84,9 +84,14 @@ Agriculture changed the calorie equation:
 
 The Neolithic Revolution was the moment when the species' altricial strategy achieved **infrastructure escape velocity** — the point where calorie surplus exceeded the metabolic cost of sustained Φ construction. ν did not merely explode. The **conditions for Φ-building** exploded.
 
-This is why the Fall was so deep: not because agriculture was evil, but because the infrastructure that made Φ-building viable at scale also made **extraction** viable at scale. The same surplus that funds education also funds armies. The same institutions that transmit law also transmit propaganda. The widened light cone carries both medicine and the bomb.
+This is why the Fall was so deep: not because agriculture was evil, but because the infrastructure that made Φ-building viable at scale also made **extraction** viable at scale. The same surplus that funds education also funds armies. The same institutions that transmit law also transmit propaganda. The widened institutional option cone carries both medicine and the bomb; the physical `J+` remains unchanged.
 
-**The unification:** Neoteny, K-selection, and trophic hierarchy are not three separate phenomena. They are three projections of one geometry — Φ-investment widening θ on S², extending the forward light cone further up Minkowski space. Deferred gratification at any scale is the same trade. Agriculture was the calorie infrastructure that made this trade viable at population scale.
+**The proposed unification:** Neoteny, K-selection, and trophic hierarchy are
+three projections of one framework geometry -- Φ-investment changing θ on S²
+while enlarging the modeled/selectable/reachable subset inside fixed physical
+`J+`. Deferred gratification can extend planning and coordination horizons, not
+the Minkowski light cone. Agriculture was the calorie infrastructure that made
+this trade viable at population scale.
 
 **Reference:** `01_EMERGENTISM/11_UPLINK/134_NEOTENOUS_STRATEGY_POWER_MAX_AT_BIRTH_2026_04_24.md` §2
 

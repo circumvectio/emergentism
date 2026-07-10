@@ -18,7 +18,9 @@ rosetta:
 
 **Definition:** Objective Function is the root of direction. It asks which way possibility opens before that direction is formalized, argued, valued, or taught. In framework terms: objective function is the ektropic gradient, the future-vector grounded in and from core state.
 
-**Must answer:** Where does the gradient point? What opens the forward light cone? What does the Power-Max Lemma select for across replicator layers?
+**Must answer:** Where does the gradient point? What widens a modeled,
+selectable, and reachable option cone inside fixed physical `J+`? What does the
+Power-Max Lemma conditionally select for across replicator layers?
 
 **Must not do:** Call every future-motion good. Confuse local acceleration with alignment. Turn F5 into destiny, gatekeeping, or a literal settled physics claim.
 
@@ -129,7 +131,7 @@ Do not collapse these scales:
 ## Public-Translation Risks
 
 - Risk: F5 read as predestination. Correction: F5 is gradient, not guarantee.
-- Risk: "Forward light cone" read as techno-utopianism. Correction: cone-widening must preserve `η = 0` and widest-boundary `ΔB` / `ΔP_node`.
+- Risk: option-cone widening read as techno-utopianism or as a larger physical light cone. Correction: physical `J+` remains bounded by spacetime and `c`; the option objective must preserve `η = 0` and widest-boundary `ΔB` / `ΔP_node`.
 - Risk: Objective Function used to justify suffering now for a promised future. Correction: receipts before rhetoric; no extraction in the name of future good.
 
 ---

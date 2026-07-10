@@ -351,9 +351,9 @@ When L4 cannot find a constitutional path forward, it escalates upward. This is 
 
 **The Descent Rule:** All insights from L5/L6/L7 MUST descend back to L4 for execution. Wisdom without descent is a pathology. The measure of higher cognition is not how profound it sounds, but whether it returns to the battlefield with a viable action.
 
-**Light-cone reading (2026-04-24):** the Rosetta ascent is how the organism
-widens D5 probability space; the descent is how it returns that opened space to
-D4 consequence. The movement is:
+**Option-cone reading (2026-04-24):** the Rosetta ascent is how the organism may
+widen a modeled D5 option field inside fixed physical `J+`; the descent is how
+it returns that opened field to D4 consequence. The movement is:
 
 ```
 V at the bottom

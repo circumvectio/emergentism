@@ -174,9 +174,10 @@ receipts, proof traces, and graph updates feed nervous system
 
 Intelligence is not a separate product. It is the **reflexive readout** of the metabolic loop. The triadic cascade (Beauty→Truth→Justice→Beauty) is the engine; the six flywheels are the consequences. Cortex remembers each turn. VMOSK replicates the pattern. AIA detects when the cycle drifts. Skyzai executes only after lawful K2 descent.
 
-This is the human-generalized light cone made institutional: the organism opens
-a wider D5 probability space than one body or one niche can hold, then forces
-that widened space to descend back into evidence-tiered, K2-bound D4 action.
+This is the human-generalized option cone made institutional: the organism
+models a wider D5 alternative field than one body or one niche can hold, then
+forces that widened field to descend back into evidence-tiered, K2-bound D4
+action. The physical causal future `J+` remains spacetime- and `c`-bounded.
 It inherits the human altricial strategy at institutional scale: short-term
 dependency and coordination cost are accepted so shared Phi can compound, then
 return as generalized V in receipts, tools, and lawful execution.
