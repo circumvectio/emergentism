@@ -54,8 +54,11 @@ forms are compositions of them, not extra primitives.
    register or boundary relation and never acts as an operand, agent, causal
    particle, or deployable operator.
 2. **Typed edge** — a directed relation whose type determines its reading:
-   **solid** is D4 actual, **dotted** is D5 possible, and **curved** is
-   feedback/coupling. Edge style is semantic, not decoration.
+   **solid** is actual/enacted, **dotted** is possible/modeled, and **curved**
+   is feedback/coupling. In the operational Soul Loop, the enacted D4
+   action/receipt worldline is solid and the modeled D5 option fan is dotted;
+   the global line grammar remains modality-first. Edge style is semantic, not
+   decoration.
 3. **`μ`-crossing** — a typed transition `μ_n : D_n → D_(n+1)` satisfying
    [BR-2](#br-2-crossing).
 4. **Finite `χ` commitment** — the authorized, fallible selection that turns a
@@ -410,8 +413,9 @@ unaccepted.
 
 A conforming Burri diagram must answer all of the following:
 
-- Are all nodes and edges typed, with solid/D4, dotted/D5, and curved/feedback
-  meanings preserved?
+- Are all nodes and edges typed, with solid/actual, dotted/possible, and
+  curved/feedback meanings preserved—and, in the operational Soul Loop, are
+  the D4 action/receipt worldline solid and the D5 option fan dotted?
 - Are `{0,1,∞}` used only as frames, and is `1 = 0 × ∞` only an emblem?
 - Does each of `mu_0` through `mu_4` state prior register, observable failure,
   genuinely new positive freedom, recovery/embedding, tier, and kill

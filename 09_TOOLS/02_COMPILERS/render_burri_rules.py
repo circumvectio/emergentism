@@ -1049,7 +1049,7 @@ def _proof_extras(topology: dict, colors: dict[str, str]) -> str:
     parts.append(f"<g{_attrs({'id': 'option-cone'})}>")
     parts.append(f"<rect{_attrs({'x': 665, 'y': 365, 'width': 330, 'height': 205, 'rx': 24, 'fill': colors['panel'], 'fill-opacity': 0.62, 'stroke': colors['possible'], 'stroke-width': 2, 'stroke-dasharray': '7 9'})}/>")
     parts.append("</g>")
-    parts.append(_text(55, 362, "SOLID = D4 ACTUAL · DOTTED = D5 POSSIBLE · CURVE = REFLEXIVE RETURN", fill=colors["muted"], **{"font-family": "sans-serif", "font-size": 9, "font-weight": 800, "letter-spacing": 0.6}))
+    parts.append(_text(55, 362, "SOLID = ACTUAL / ENACTED · DOTTED = POSSIBLE / MODELED · CURVE = REFLEXIVE RETURN", fill=colors["muted"], **{"font-family": "sans-serif", "font-size": 9, "font-weight": 800, "letter-spacing": 0.6}))
     parts.append(f"<g{_attrs({'id': 'proof-annotations', 'data-box': '55 800 615 122'})}>")
     parts.append(f"<rect{_attrs({'x': 55, 'y': 800, 'width': 615, 'height': 122, 'rx': 10, 'fill': colors['panel'], 'stroke': colors['panel2'], 'stroke-width': 1.5})}/>")
     parts.append(_text(72, 823, "LOAD-BEARING PROOF ANNOTATIONS", fill=colors["ink"], **{"font-family": "sans-serif", "font-size": 10, "font-weight": 800, "letter-spacing": 0.8}))
@@ -1094,7 +1094,7 @@ def _emblem_extras(topology: dict, colors: dict[str, str]) -> str:
     parts.append("</g>")
     parts.append(f"<g{_attrs({'id': 'emblem-legend'})}>")
     parts.append(_multiline_text(800, 880, topology["fullTextEquivalent"], 112, 21, fill=colors["ink"], **{"font-family": "serif", "font-size": 15, "text-anchor": "middle"}))
-    parts.append(_text(800, 944, "SOLID D4 ACTUAL · DOTTED D5 POSSIBLE · CURVED RETURN · [S] STRUCTURE / [I] CROSSWALK", fill=colors["muted"], **{"font-family": "sans-serif", "font-size": 9, "font-weight": 800, "letter-spacing": 0.8, "text-anchor": "middle"}))
+    parts.append(_text(800, 944, "SOLID ACTUAL · DOTTED POSSIBLE · CURVED RETURN · [S] STRUCTURE / [I] CROSSWALK", fill=colors["muted"], **{"font-family": "sans-serif", "font-size": 9, "font-weight": 800, "letter-spacing": 0.8, "text-anchor": "middle"}))
     parts.append("</g>")
     return "".join(parts)
 

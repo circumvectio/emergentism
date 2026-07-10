@@ -1054,7 +1054,10 @@ class BurriRulesRendererTests(unittest.TestCase):
 
     def test_modality_controls_dash_and_feedback_controls_curve(self):
         api, topology = self.api_and_topology()
-        root = ET.fromstring(api.render_view(topology, "proof", api.topology_sha256(TOPOLOGY)))
+        topology_hash = api.topology_sha256(TOPOLOGY)
+        proof_svg = api.render_view(topology, "proof", topology_hash)
+        emblem_svg = api.render_view(topology, "emblem", topology_hash)
+        root = ET.fromstring(proof_svg)
         by_id = {
             element.attrib["id"]: element
             for element in root.iter()
@@ -1069,6 +1072,18 @@ class BurriRulesRendererTests(unittest.TestCase):
         self.assertEqual(local_name(feedback.tag), "path")
         self.assertEqual(feedback.attrib.get("data-role"), "feedback")
         self.assertRegex(feedback.attrib.get("d", ""), r"\bC\b")
+
+        self.assertIn(
+            "SOLID = ACTUAL / ENACTED · DOTTED = POSSIBLE / MODELED · "
+            "CURVE = REFLEXIVE RETURN",
+            proof_svg,
+        )
+        self.assertIn(
+            "SOLID ACTUAL · DOTTED POSSIBLE · CURVED RETURN",
+            emblem_svg,
+        )
+        self.assertNotIn("DOTTED = D5", proof_svg)
+        self.assertNotIn("DOTTED D5", emblem_svg)
 
     def test_repeated_rendering_is_byte_identical(self):
         api, topology = self.api_and_topology()

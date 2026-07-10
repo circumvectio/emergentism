@@ -119,7 +119,11 @@ The system is **unstable** if it fails any of these conditions.
    - Without ○ (∞): no horizon, no extension, no possibility
    - Without ⊙ (1): no unity, no product, no reality
 
-6. **No missing structure:** The scaffold D0-D6 with 5 independent axioms (O1, O2, O4, O5 + A7; O3 is a corollary — reduced from 7 in v0.3, from 12 in v0.1) is the unique stable configuration. [Proved: T14 in v0.3.]
+6. **No missing triadic role (internal result):** The framework records T14 as
+   an internal triadic/axiom-sufficiency result under its declared premises. It
+   does not prove the D0-D6 labels or count, nor a unique physical
+   decomposition. Those remain structural/interpretive scaffold choices.
+   `[S/Definitional; not a theorem of S²]`
 
 **Conclusion:** Triadism is stable. Three is enough.
 
