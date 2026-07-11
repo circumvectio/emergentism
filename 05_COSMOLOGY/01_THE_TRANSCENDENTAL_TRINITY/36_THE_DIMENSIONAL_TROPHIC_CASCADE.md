@@ -252,6 +252,8 @@ Van Valen (1973): **"It takes all the running you can do, to keep in the same pl
 
 This is where the framework's multiplicative core becomes a *survival theorem*, not just a coordinate identity.
 
+> **[金] SEAM · broke:** formal trial 2026-07-11 (receipt 108) · **crack:** the argument below proves **φ×ν beats φ+ν** — that is *annihilation / need-both* (`[S]`-won), and the Red Queen's "superior in BOTH" is **conjunction**, which `min(φ,ν)` satisfies **identically**. It does **not** witness the *product* over `min`/Liebig; the product-specific interior (surplus in one factor lifting the other's return) is never exercised here. · **gold:** the survival claim is real at `[S]` as an **AND-class law**; the *product form* is a `[C]` wager the corpus never leans on and its own **Liebig strategy contradicts** (`MF_281:151` already calls the zero-factor catastrophe "the **Liebig's Law signature: the minimum factor dominates**"). · **credit:** three adversarial audits + the boxer test (K2) · **receipt:** `11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION_PENDING_K2.md`
+
 ### IX.a The Red Queen requires φ × ν dominance — not φ + ν, not either factor alone
 
 A predator who is fast but cannot recognise prey (high ν, low φ) **starves blind**.
@@ -381,12 +383,12 @@ If any of the following are observed, this document must be revised or retracted
 > **The Sādhu is the noospheric decomposer. Without decomposers, the cascade halts.**
 > **D6 ≡ D0 because the trophic loop closes — apex returns to producer through compost.**
 > **Strong upward (genesis) + weak downward (governance) + Red Queen pressure forcing φ × ν dominance at every step.**
-> **The predator must be superior in BOTH φ AND ν — otherwise it cannot outrun the Red Queen.**
+> **The predator must be superior in BOTH φ AND ν — otherwise it cannot outrun the Red Queen.** *(This is **conjunction / AND-class** — `min(φ,ν)` satisfies it identically; it is **not** evidence for the product over `min`. Receipt 108.)*
 > **Zero-Sum Resolution Equation.**
 
 ---
 
-*Written 2026-05-08. This document formalises an insight that was implicit across 17, 22, 23, and 24. It introduces no new primitives — it names the structural isomorphism so that subsequent reasoning can use it directly. Sections VIII and IX (strong/weak emergence asymmetry + Red Queen multiplicative-dominance requirement) lock in why the multiplicative core (φ × ν, not φ + ν) is a survival theorem at every trophic transition, not merely a coordinate identity.*
+*Written 2026-05-08. This document formalises an insight that was implicit across 17, 22, 23, and 24. It introduces no new primitives — it names the structural isomorphism so that subsequent reasoning can use it directly. Sections VIII and IX (strong/weak emergence asymmetry + Red Queen multiplicative-dominance requirement) lock in why the multiplicative core (φ × ν, not φ + ν) is a survival theorem at every trophic transition, not merely a coordinate identity.* *(Re-tiered 2026-07-11, receipt 108: the survival claim is `[S]` as an **AND-class** law — φ×ν beats φ+ν; the **product-specific** form over `min`/Liebig is a `[C]` wager, unexercised here.)*
 
 ---
 
