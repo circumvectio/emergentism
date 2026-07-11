@@ -6,7 +6,9 @@
 
 **Scope order:** A — signed kernel and recent changes; B — active corpus; C — public phenotype
 
-**Repository base:** `main@736cf22`
+**Repository approval base:** `main@736cf22`
+
+**Observed execution head:** `main@1a2cf85` (post-approval concurrency addendum)
 **Working branch:** `codex/kintsugi-formal-logic-spec`
 
 ## 1. Purpose
@@ -41,12 +43,16 @@ The repository already contains:
   `00_META/00_THE_KINTSUGI_PROTOCOL.md`; and
 - a frozen public phenotype under `12_PUBLIC_SITE/`.
 
-The staged protocol refers to a Formal Stress Ledger numbered 108, but that
-receipt does not exist. It also contains claims that fail its own intended
-discipline: a visible repair is treated as an automatic truth warrant; its
-antifragility score adds heterogeneous quantities; clean no-change trials are
-misclassified as failures; and the breakage bounty does not yet protect
-consent, privacy, compensation, custody, reversibility, or exit.
+The staged protocol refers to a canonical Phase A Formal Stress Ledger numbered
+108 at `108_FORMAL_STRESS_LEDGER_2026_07_11.md`; that exact receipt does not
+exist. Post-approval `main` added a differently named staged predecessor,
+`108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION_PENDING_K2.md`. It is provenance,
+not the Phase A receipt, and cannot satisfy a `phaseReceipt` path or status. The
+protocol also contains claims that fail its own intended discipline: a visible
+repair is treated as an automatic truth warrant; its antifragility score adds
+heterogeneous quantities; clean no-change trials are misclassified as failures;
+and the breakage bounty does not yet protect consent, privacy, compensation,
+custody, reversibility, or exit.
 
 The baseline repository test suite currently reports 14 passing tests and five
 pre-existing failures. The failures belong to marketplace and cross-entity
@@ -54,6 +60,30 @@ tests whose Skyzai/OFN fixtures are absent from the current Documents topology.
 They occur identically on `main` and in the isolated worktree. They are recorded
 as baseline evidence and are outside this program unless a Kintsugi change
 directly alters those tests.
+
+### 2.1 Post-approval concurrency addendum
+
+After this design was approved at `736cf22`, canonical `main` advanced through:
+
+- `6c2106f`, which added the staged predecessor receipt 108 and narrowed the
+  product-survival claim in
+  `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/36_THE_DIMENSIONAL_TROPHIC_CASCADE.md`;
+  and
+- `2ab90ac`, which added
+  `01_TELEOLOGY/02_THE_DERIVATION/07A_F5_UNBUNDLED_COUPLING_PER_DIMENSION_PENDING_K2.md`;
+  and
+- `1a2cf85`, which added the open QM/GR ordering tension at
+  `08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_22A_QM_GR_DIMENSIONAL_ORDERING_TENSION_PENDING_K2.md`.
+
+These commits do not change the approved semantics. They change the execution
+inventory. Phase A must rebase onto `1a2cf85`, re-freeze its manifest and
+baseline there, and harvest all three new claim surfaces as recent-change
+inputs.
+The differently named staged receipt 108 is a raw-hashed `RECEIPT/PROVENANCE`
+source and remains byte-identical. The canonical Phase A receipt remains the
+exact A4 path and ID declared below. If canonical `main` is no longer
+`1a2cf85` when execution begins, execution stops before rebasing, inventories
+the additional delta, and updates this addendum and the manifest explicitly.
 
 ## 3. Governance decision
 
@@ -94,8 +124,9 @@ repo-wide retirement of K2 terminology would be a separate explicit project.
 
 - modifying `90_ARCHIVE/` or `91_COMPATIBILITY/`;
 - modifying `12_PUBLIC_SITE/` during this program;
-- modifying the contents of receipts 104–107 or renaming their historical
-  `PENDING_K2` filenames;
+- modifying the contents of receipts 104–107, modifying the staged predecessor
+  `108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION_PENDING_K2.md`, or renaming
+  their historical `PENDING_K2` filenames;
 - silently changing the signed `Egregorotype`/`Egregoreotype` spelling question;
 - proving literal quantum collapse, physical retrocausality, F5 as a recognized
   physical interaction, or strong emergence from absence of a reducing law;
@@ -252,7 +283,7 @@ a separate `[D/C]` claim with its own trial.
 trial: TRIED -> DISPUTED | ADJUDICATED -> CLOSED
 
 confirmed-break seam:
-CONFIRMED -> REPAIRED -> VERIFIED -> PROPAGATED
+CONFIRMED -> REPAIRED -> VERIFIED
           |
           -> HELD_OPEN
           -> RETRACTED
@@ -269,21 +300,21 @@ CONFIRMED -> REPAIRED -> VERIFIED -> PROPAGATED
   tombstone or retraction notice as `afterQuote`.
 - `REPAIRED` requires `repairKind` and `afterQuote`.
 - `VERIFIED` requires independent logic review and passing regression tests.
-- `PROPAGATED` means active derivatives cite or reproduce the repaired owner
-  claim without tier drift.
+- A `VERIFIED` seam is immutable. Later derivative propagation is an append-only
+  `propagation` event tied to a later receipt; it never mutates the seam frozen
+  in an earlier validation bundle.
 
 Allowed seam transitions are exactly:
 
 ```text
 CONFIRMED -> REPAIRED | HELD_OPEN | RETRACTED
 REPAIRED  -> VERIFIED
-VERIFIED  -> PROPAGATED
 HELD_OPEN -> REPAIRED | RETRACTED
 ```
 
 `RETRACTED` is terminal unless a new claim ID is created; reintroducing the old
 claim under the same ID is forbidden. A later counterexample to a repaired or
-propagated claim creates a new trial and successor seam with `priorSeamIds`; the
+verified claim creates a new trial and successor seam with `priorSeamIds`; the
 older seam remains immutable evidence.
 
 A clean trial that finds no break creates a trial record and phase receipt, not
@@ -305,6 +336,7 @@ seams
 antibodies
 discriminators
 fixtures
+propagations
 phaseReceipts
 ```
 
@@ -353,6 +385,8 @@ manifest = {
   candidateFiles: LIST[fileHashRecord],
   candidateFileCount: COUNT,
   includedFiles: LIST[fileHashRecord],
+  finalFiles: LIST[fileHashRecord],
+  finalFileCount: COUNT,
   excludedPaths: LIST[pathExclusion],
   eligibleFileCount: COUNT,
   scannedFileCount: COUNT,
@@ -369,6 +403,7 @@ manifest = {
     canonical: LIST[fileHashRecord]
   },
   allowedChangePaths: LIST[PATH],
+  closureOnlyPaths: LIST[PATH],
   allowedPreexistingUntracked: {
     isolated: LIST[fileHashRecord],
     canonical: LIST[fileHashRecord]
@@ -428,6 +463,7 @@ antibody = {
   seamId: ID,
   pattern: TEXT,
   matchMode: LITERAL | REGEX | SEMANTIC_FIXTURE,
+  semanticEvaluator: SEMANTIC_EVALUATOR | null,
   scopeGlobs: LIST[TEXT],
   excludeGlobs: LIST[TEXT],
   positiveFixtureIds: LIST[ID],
@@ -459,6 +495,17 @@ fixture = {
   seamIds: LIST[ID]
 }
 
+propagation = {
+  id: ID,
+  seamId: ID,
+  receiptId: ID,
+  derivativeSourceId: ID,
+  derivativeAnchor: TEXT,
+  derivativeQuote: TEXT,
+  derivativeHash: TEXT_HASH,
+  status: VERIFIED
+}
+
 phaseReceipt = {
   id: ID,
   phase: A | B | C,
@@ -469,6 +516,8 @@ phaseReceipt = {
   claimIds: LIST[ID],
   trialIds: LIST[ID],
   seamIds: LIST[ID],
+  propagationIds: LIST[ID],
+  reviewTargetDigest: RAW_HASH | null,
   validationBundlePath: PATH | null,
   validationDigest: RAW_HASH | null,
   logicReviewPath: PATH | null,
@@ -482,14 +531,18 @@ Controlled values are:
 source.kind ∈ {OWNER, SUPPORT, COMPRESSION, PUBLIC, RECEIPT}
 source.authorityRole ∈ {SEMANTIC_OWNER, EVIDENCE, DERIVATIVE, PROVENANCE}
 antibody.matchMode ∈ {LITERAL, REGEX, SEMANTIC_FIXTURE}
+antibody.semanticEvaluator ∈ {
+  VERDICT_MATRIX, JUSTICE_CONTEXT, RECEIPT_ROLE,
+  REGISTER_INDEX, QUANTUM_MEASURE, OPTION_CONE,
+  TROPHIC_AGGREGATOR
+}
 discriminator.status ∈ {QUEUED, RUNNING, DECISIVE, INCONCLUSIVE, RETIRED}
 fixture.kind ∈ {POSITIVE, NEGATIVE, QUOTATION, HISTORICAL, MUTATION}
+gate.status ∈ {PENDING, PASS, FAIL}
 trial.status ∈ {TRIED, DISPUTED, ADJUDICATED, CLOSED}
 trial.breakState ∈ {NONE, ALLEGED, CONFIRMED}
-seam.status ∈ {
-  CONFIRMED, REPAIRED, HELD_OPEN, RETRACTED,
-  VERIFIED, PROPAGATED
-}
+seam.status ∈ {CONFIRMED, REPAIRED, HELD_OPEN, RETRACTED, VERIFIED}
+propagation.status = VERIFIED
 phaseReceipt.status ∈ {DRAFT, COMPLETE, VERIFIED}
 claim.justiceScope ∈ {
   NONE, INDIVIDUAL, COLLECTIVE, NORMATIVE, COLLECTIVE_NORMATIVE
@@ -527,8 +580,12 @@ The standard-library validator
 implements only the schema keywords used by that file: `type`, `required`,
 `properties`, `additionalProperties`, `enum`, `pattern`, `minimum`, `minLength`,
 `minItems`, `maxItems`, `items`, `uniqueItems`, `const`, `$ref`, `allOf`, `anyOf`,
-`oneOf`, and `if/then/else`. An unknown key, unknown schema keyword, or
-unconsumed field fails validation.
+`oneOf`, `if/then/else`, plus the structural meta-keywords `$schema`, `$id`, and
+`$defs`. The schema defines exactly `$defs.coreData`, `$defs.publicQueue`, and
+`$defs.baselineAllowlist`; each CLI input role selects its named root definition
+before validation. `$schema`, `$id`, and `$defs` organize the schema but do not
+act as instance assertions. An unknown key, unknown schema keyword, unresolved
+reference, or unconsumed field fails validation.
 
 The types, enums, conditionals, cardinalities, and references in this section
 are normative now; the schema artifact is their mechanical transcription and
@@ -613,9 +670,9 @@ countermodel = {
   defeatedConclusion: TEXT
 }
 gate = {
-  status: PASS | FAIL,
+  status: PENDING | PASS | FAIL,
   rationale: TEXT,
-  reviewerPath: PATH
+  reviewerPath: PATH | null
 }
 credit = {displayName: TEXT, role: TEXT}
 containment = {
@@ -657,6 +714,12 @@ Only these list fields may be empty:
   `expectedExitCode` make that relationship inapplicable;
 - Phase A's `phaseReceipt.dependsOnReceiptIds` and a phase receipt's `seamIds`
   when that phase confirmed no break; and
+- a phase receipt's `propagationIds` when that phase performs no derivative
+  propagation; and
+- `reviewAttestation.findingIds`, `openSevereFindingIds`,
+  `approvedUpgradeSeamIds`, and `approvedGateSeamIds`; PASS requires
+  `openSevereFindingIds=[]`, while the other three remain empty when no finding,
+  upgrade, or terminal gate applies; and
 - Phase C `candidateOwners` and owned `seamIds` under the tagged-union rules in
   §13.
 
@@ -665,8 +728,9 @@ Every other list has `minItems: 1`; all ID lists use `uniqueItems: true`.
 `program` is exactly one object. Every plural top-level key is an array.
 `manifests`, `sources`, `claims`, `trials`, and `phaseReceipts` have at least one
 record. `seams`, `antibodies`, `discriminators`, and `fixtures` may be empty only
-during the Phase A bootstrap state; a verified receipt may not reference an
-empty required collection.
+during the Phase A bootstrap state; `propagations` may be empty in any phase
+that performs no derivative propagation. A verified receipt may not reference
+an empty required collection.
 
 Cross-references are closed and typed:
 
@@ -689,23 +753,88 @@ antibody.quotationFixtureIds                           -> fixtures.id
 antibody.historicalFixtureIds                          -> fixtures.id
 fixture.antibodyIds                                    -> antibodies.id
 fixture.seamIds                                        -> seams.id
+propagation.seamId                                     -> seams.id
+propagation.receiptId                                  -> phaseReceipts.id
+propagation.derivativeSourceId                         -> sources.id
 phaseReceipt.claimIds                                  -> claims.id
 phaseReceipt.trialIds                                  -> trials.id
 phaseReceipt.seamIds                                   -> seams.id
+phaseReceipt.propagationIds                            -> propagations.id
 phaseReceipt.dependsOnReceiptIds                       -> phaseReceipts.id
 ```
 
 Every reference target must exist, reference arrays contain no duplicates, and
 no undeclared entailment cycle is allowed among `claim.dependencyClaimIds`.
+A source with `authorityRole=PROVENANCE` may be cited only as historical input:
+it cannot be a `claim.ownerSourceId`, cannot share its path with any
+`phaseReceipt.path`, cannot satisfy `dependsOnReceiptIds`, and cannot by itself
+upgrade evidence strength. Phase A contains exactly one `phaseReceipt` record,
+`REC-A-108`, even though the audit lane contains two filenames beginning with
+the number 108.
 
-`COMPLETE` means the producing pass claims all declared artifacts exist;
-`VERIFIED` additionally requires matching hashes, complete manifest coverage,
-passing validation, and both independent review paths.
+`COMPLETE` means the producing pass claims all declared artifacts exist and both
+review attestations pass against one frozen semantic package. `VERIFIED`
+additionally requires matching hashes, complete manifest coverage, passing
+validation, and the immutable validation bundle.
+
+Before review, the renderer canonicalizes a `reviewTarget` containing a semantic
+projection of the phase manifest; the phase's source/claim/trial/propagation/
+antibody/discriminator/fixture records; a semantic projection of each seam; the
+raw schema hash; `ledgerSemanticSections`; and `semanticDiffPaths` from
+`baseCommit` to the candidate tree. `manifest.closureOnlyPaths` explicitly names
+the review-target output, validation bundle, and both independent review files.
+It is a subset of `allowedChangePaths`. The manifest projection retains the
+complete scope law but removes hash records for those closure-only paths from
+`candidateFiles`, `includedFiles`, and `finalFiles`. `semanticDiffPaths` is the
+changed-path set minus `closureOnlyPaths`; the review-target output path is passed
+to the renderer and must itself be one of those declared closure-only paths.
+This makes render-then-recompute, post-review, and post-bundle targets byte-stable
+without hiding an owner or semantic artifact.
+
+The seam projection contains every seam field except mechanical closure: a
+`VERIFIED` status is normalized back to `REPAIRED`, and each Beauty/Truth/Justice
+gate is projected to its `rationale` only, omitting `status` and `reviewerPath`.
+`RETRACTED` remains `RETRACTED` because retraction is a semantic disposition.
+For every seam named by the receipt, the renderer parses exactly one fenced
+`json kintsugi-seam` record from its raw ledger section and emits:
+
+```text
+ledgerSemanticSection = {
+  id: ID,
+  narrativeRawSha256: RAW_HASH,
+  seamProjection: review_seam_projection(parsed fenced seam)
+}
+```
+
+`narrativeRawSha256` hashes the exact raw bytes before and after that one fence,
+concatenated in source order; changing prose, headings, spacing, or line endings
+therefore changes the target. The parsed fence must deep-equal the corresponding
+core seam before projection. Changing only seam status/gate closure fields in
+both representations leaves the target stable; changing `afterQuote`, any other
+semantic seam field, or ledger narrative changes it. Raw whole-section hashes
+are deliberately absent from the review target and remain in the final
+validation bundle only.
+
+The target excludes receipt status/digest fields and closure-only file bytes.
+`reviewTargetDigest` is the raw SHA-256 of the canonical target bytes. Both
+reviewers receive those bytes and cite that digest. After review begins, only
+review files; `REPAIRED -> VERIFIED`; gate `PENDING -> PASS|FAIL` plus
+`reviewerPath`; the phase receipt's mechanical closure fields; its synchronized
+receipt fence; final hashes for closure-only files; and the new validation bundle
+may change. These permitted closure mutations must reproduce the same
+review-target bytes. Any other owner, claim, seam, manifest-final, or ledger
+change invalidates the target and requires both reviews to restart.
 
 At the `COMPLETE -> VERIFIED` transition, the runner emits one immutable
 canonical JSON file at `phaseReceipt.validationBundlePath` and sets
 `validationDigest` to the raw-byte SHA-256 of that exact file. The receipt file
 itself and its digest field are excluded from the bundle to avoid recursion.
+The renderer constructs a prospective final `receiptDescriptor`: it copies the
+COMPLETE receipt, sets `status=VERIFIED` and `validationBundlePath` to the exact
+requested output, and removes `validationDigest`. After the bundle is written,
+the only permitted receipt mutation is to match that descriptor and add the
+computed digest. Final validation deep-compares the live receipt with the
+descriptor after removing `validationDigest`.
 The exact bundle is:
 
 ```text
@@ -713,11 +842,13 @@ validationBundle = {
   schemaVersion: "1.0.0",
   phase: phaseReceipt.phase,
   receiptDescriptor: phaseReceipt with validationDigest removed,
+  reviewTargetDigest: phaseReceipt.reviewTargetDigest,
   manifest: the exact referenced manifest object,
   sources: all source records transitively referenced by the phase,
   claims: records named by phaseReceipt.claimIds plus their dependencies,
   trials: records named by phaseReceipt.trialIds,
   seams: records named by phaseReceipt.seamIds plus prior seams,
+  propagations: records named by phaseReceipt.propagationIds,
   antibodies: records attached to those seams,
   discriminators: records referenced by those trials/seams,
   fixtures: records referenced by those seams/antibodies,
@@ -751,10 +882,13 @@ inventory are frozen. Completion requires:
 ```text
 C = set(candidateFiles.path)
 I = set(includedFiles.path)
+F = set(finalFiles.path)
 E = set(excludedPaths.path)
 C = I disjoint-union E
 candidateFileCount = len(C)
 eligibleFileCount = scannedFileCount = len(I)
+if receipt.status = DRAFT: F = empty and finalFileCount = 0
+if receipt.status in {COMPLETE, VERIFIED}: F = I and finalFileCount = len(F)
 
 H = set(harvestedClaimIds)
 T = set(trialedClaimIds)
@@ -763,16 +897,22 @@ H = T disjoint-union X
 eligibleClaimCount = len(H)
 trialedClaimCount = len(T)
 T = set(trial.claimId where trial.manifestId = this manifest.id)
+set(closureOnlyPaths) subset-of set(allowedChangePaths)
 ```
 
 Candidate, included, excluded, harvested, trialed, and excluded-claim paths/IDs
-are individually unique. Every exclusion has a reason, every candidate-file
-hash still matches, and `inventoryReviewPaths` names the read-only reviews of
-the frozen inventory. The receipt therefore proves complete coverage of its
-declared manifest, not the impossible claim that no unrecognized proposition
-exists anywhere in prose.
+are individually unique. Every exclusion has a reason. Candidate and included
+hashes are immutable input hashes and must match the corresponding blobs at
+`baseCommit`; they are not expected to match a repaired worktree. At completion,
+every `finalFiles` hash must match the current verified worktree, and every
+modified included owner must have a closed trial plus a seam or an explicitly
+recorded no-change disposition. `inventoryReviewPaths` names the read-only
+reviews of the frozen inventory. The receipt therefore proves complete coverage
+of its declared manifest and before/after states, not the impossible claim that
+no unrecognized proposition exists anywhere in prose.
 
-`protectedProvenance` freezes receipts 104–107 as `FULL_FILE` records. It also
+`protectedProvenance` freezes receipts 104–107 and the staged predecessor
+receipt 108 as `FULL_FILE` records. It also
 freezes the exact countersign-history spans retained inside any editable owner
 as `EXACT_SPAN`; the span text is included and its raw UTF-8 byte SHA-256 must
 still match. This preserves historical provenance without granting it logical
@@ -793,10 +933,17 @@ The Git checks are additional scope guards:
 
 ```text
 git diff --name-only <baseCommit> -- <protected paths>          -> empty
+C_root = set(git diff --name-only <baseCommit>..HEAD -- all paths)
 S_root = set(git status --porcelain=v1 -z --untracked-files=all paths)
 P_root = set(manifest.allowedPreexistingUntracked[root].path)
-(S_root - P_root) subset-of set(manifest.allowedChangePaths)
+((C_root union S_root) - P_root)
+  subset-of set(manifest.allowedChangePaths)
 ```
+
+`C_root` closes the committed-scope hole: committing an off-scope path cannot
+make it disappear from validation. `S_root` covers staged, unstaged, and
+untracked state. Both are parsed without line splitting; NUL-delimited status
+records are mandatory.
 
 The pre-existing `12_PUBLIC_SITE/docs/superpowers/` item in the canonical
 checkout is expanded into one
@@ -837,10 +984,10 @@ severity: SEVERITY
 validityVerdict: VALIDITY_VERDICT
 soundnessVerdict: SOUNDNESS_VERDICT
 verdict: OVERALL_VERDICT
-repairKind: REPAIR_KIND when repaired/retracted/verified/propagated
-afterQuote: TEXT when repaired/retracted/verified/propagated
+repairKind: REPAIR_KIND when repaired/retracted/verified
+afterQuote: TEXT when repaired/retracted/verified
 survivingKernel: TEXT
-evidenceAfter: evidence when repaired/retracted/verified/propagated
+evidenceAfter: evidence when repaired/retracted/verified
 upgradeCriterion: TEXT
 killCriterion: TEXT
 beautyGate: gate
@@ -853,11 +1000,11 @@ regressionFixtureIds: LIST[ID]
 discriminatorIds: LIST[ID]
 containment: containment only when held open
 residualRisk: residualRisk only when held open
-status: CONFIRMED | REPAIRED | HELD_OPEN | RETRACTED | VERIFIED | PROPAGATED
+status: CONFIRMED | REPAIRED | HELD_OPEN | RETRACTED | VERIFIED
 ```
 
-For `REPAIRED`, `RETRACTED`, `VERIFIED`, and `PROPAGATED`, `repairKind`,
-`afterQuote`, and `evidenceAfter` are required. For `CONFIRMED`, those fields
+For `REPAIRED`, `RETRACTED`, and `VERIFIED`, `repairKind`, `afterQuote`, and
+`evidenceAfter` are required. For `CONFIRMED`, those fields
 and the containment fields are absent. For `HELD_OPEN`, repair fields are
 absent and `containment`, `residualRisk`, and at least one `discriminatorId` are
 required. `priorSeamIds` is always present and may be empty only for the first
@@ -884,10 +1031,13 @@ genuinely absent. The declared nullable fields are:
   `null`; `ALLEGED` requires defect and severity but keeps `seamId=null` and
   status `TRIED` or `DISPUTED`; `CONFIRMED` requires all three non-null and
   status `ADJUDICATED` or `CLOSED`;
-- `phaseReceipt.validationBundlePath`, `validationDigest`, `logicReviewPath`,
-  and `btjReviewPath` are `null` while the receipt is `DRAFT`; review paths are
-  non-empty at `COMPLETE`, while bundle path and digest remain `null`; all four
-  are non-empty at `VERIFIED` after the immutable bundle is emitted once;
+- `antibody.matchMode=SEMANTIC_FIXTURE` requires a non-null closed-registry
+  `semanticEvaluator`; `LITERAL` and `REGEX` require it to be `null`;
+- `phaseReceipt.reviewTargetDigest`, `validationBundlePath`, `validationDigest`,
+  `logicReviewPath`, and `btjReviewPath` are `null` while the receipt is
+  `DRAFT`; review target and review paths are non-empty at `COMPLETE`, while
+  bundle path and digest remain `null`; all five are non-empty at `VERIFIED`
+  after the immutable bundle is emitted once;
 - `seam.repairKind`, `afterQuote`, and `evidenceAfter` are absent only for
   `CONFIRMED` and `HELD_OPEN`; and
 - `seam.containment` and `residualRisk` are present only for `HELD_OPEN`; and
@@ -896,6 +1046,12 @@ genuinely absent. The declared nullable fields are:
 
 No other field accepts `null`. Status-dependent absence is validated before
 rendering or owner-source comparison.
+
+All three seam gates are `PENDING` with `reviewerPath=null` before independent
+review while a seam is `CONFIRMED`, `REPAIRED`, `HELD_OPEN`, or a proposed
+`RETRACTED` disposition. After review, phase completion requires `RETRACTED` and
+`VERIFIED` seams to carry three `PASS` gates with non-null reviewer paths. A
+`FAIL` gate blocks completion; it never silently becomes `PENDING`.
 
 For claims and seams whose `justiceScope` is `COLLECTIVE`, `NORMATIVE`, or
 `COLLECTIVE_NORMATIVE`, the typed `justiceContext` object defined above is
@@ -930,10 +1086,54 @@ claim text; `beforeQuote`/`beforeHash` freeze the tried version and
 metadata and may not introduce a proposition absent from an owner source or
 seam-ledger trial.
 
+Each phase receipt Markdown file contains exactly one fenced record that
+deep-equals its machine record:
+
+````text
+```json kintsugi-receipt
+{ complete phaseReceipt record }
+```
+````
+
+Each independent review Markdown file contains exactly one attestation:
+
+```text
+reviewAttestation = {
+  id: ID,
+  kind: LOGIC | BTJ,
+  path: PATH,
+  receiptId: ID,
+  reviewerId: TEXT,
+  reviewerRole: TEXT,
+  independenceStatement: TEXT,
+  reviewTargetDigest: RAW_HASH,
+  verdict: PASS | FAIL,
+  findingIds: LIST[ID],
+  openSevereFindingIds: LIST[ID],
+  approvedUpgradeSeamIds: LIST[ID],
+  approvedGateSeamIds: LIST[ID]
+}
+```
+
+The attestation is fenced as `json kintsugi-review`. The two review paths,
+review IDs, and reviewer IDs must be distinct; both target the same
+`reviewTargetDigest`. `PASS` requires an empty `openSevereFindingIds` list. The
+LOGIC review alone may list `approvedUpgradeSeamIds`; the BTJ review alone may
+list `approvedGateSeamIds`. Receipt and review fences are parsed and compared
+before bundle validation.
+
 Independent review means two read-only reviewers receive the same immutable
 diff and seam package: one reviews formal validity, types, modality, and tier;
 the other reviews Beauty, Justice, consequence boundaries, and propagation.
 Neither reviewer may author or edit the repair being reviewed.
+
+The machine verifies the structure of these attestations, distinct identities,
+target digest, declared verdicts, and absence of open severe findings. It does
+not claim to infer intellectual independence, substantive truth, Beauty, or
+Justice. Those remain accountable human/reviewer judgments. Likewise, an
+evidence upgrade is structurally admissible only when the seam's ID appears in
+the LOGIC attestation and cited evidence records exist; the validator does not
+pretend to decide whether the evidence is scientifically persuasive.
 
 ## 8. Beauty, Truth, and Justice gates
 
@@ -1055,7 +1255,8 @@ The protocol cannot truthfully cite a completed receipt before the receipt
 exists. Phase A therefore boots in this fixed order:
 
 1. freeze manifest `MAN-A-001` at the phase base commit, including full-file
-   hashes for receipts 104–107, exact countersign-history spans, protected
+   hashes for receipts 104–107 and the staged predecessor receipt 108, exact
+   countersign-history spans, protected
    trees, and separate isolated/canonical protected-tree and pre-existing
    untracked snapshots;
 2. create the ledger/JSON skeleton and validator schema;
@@ -1120,8 +1321,10 @@ paths in this section and the artifact/index paths in A4. Phase A rejects every
 other tracked or untracked diff path. The owner/support paths are exactly:
 
 - `00_META/00_THE_KINTSUGI_PROTOCOL.md`;
+- `01_TELEOLOGY/02_THE_DERIVATION/07A_F5_UNBUNDLED_COUPLING_PER_DIMENSION_PENDING_K2.md`;
 - `05_COSMOLOGY/00_THE_BURRI_RULES.md`;
 - `05_COSMOLOGY/00_THE_BURRI_RULES_LEDGER.md`;
+- `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/36_THE_DIMENSIONAL_TROPHIC_CASCADE.md`;
 - `05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md`;
 - `05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md`;
 - `05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md`;
@@ -1129,16 +1332,29 @@ other tracked or untracked diff path. The owner/support paths are exactly:
 - `05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md`;
 - `05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md`; and
 - `08_FRAMEWORK_SUPPORT/00_META/02_ANALYSIS_DOCUMENTS/00_KINTSUGI.md` through a
-  reconciliation banner rather than historical erasure.
+  reconciliation banner rather than historical erasure;
+- `08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_22A_QM_GR_DIMENSIONAL_ORDERING_TENSION_PENDING_K2.md`.
 
-Receipts 105–107 are immutable historical inputs, never trial authorities or
-eligibility gates. Synchronizing their provenance into the Burri ledger is the
-first ledger repair target; no receipt can determine the validity of a new
-conclusion. Existing countersign history remains visible, but corrected claims
-do not inherit truth from the signature.
+Receipts 105–107 and the staged predecessor receipt 108 are immutable historical
+inputs, never trial authorities or eligibility gates. Synchronizing their
+provenance into the Burri ledger is the first ledger repair target; no receipt
+can determine the validity of a new conclusion. Existing countersign history
+remains visible, but corrected claims do not inherit truth from the signature.
 
 ### A4. Phase A artifacts
 
+- Modify: `docs/superpowers/specs/2026-07-11-kintsugi-formal-logic-design.md`
+  only for the approved concurrency/implementability addendum; freeze it before
+  `MAN-A-001`.
+- Create: `docs/superpowers/plans/2026-07-12-kintsugi-a0-foundations-implementation.md`;
+  execute it first. Reserve
+  `docs/superpowers/plans/2026-07-12-kintsugi-a0b-machine-kernel-implementation.md`,
+  `docs/superpowers/plans/2026-07-12-kintsugi-a1-owner-repairs-implementation.md`,
+  and
+  `docs/superpowers/plans/2026-07-12-kintsugi-a2-review-closure-implementation.md`.
+  Their contents are written one after the other from the preceding verified
+  artifacts; `MAN-A-001` may allow these exact paths but may not invent their
+  contents or hashes before they exist.
 - Modify: `00_META/00_THE_KINTSUGI_PROTOCOL.md`
 - Create: `03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAM_LEDGER.md`
 - Create: `03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SCHEMA.json`
@@ -1148,15 +1364,29 @@ do not inherit truth from the signature.
 - Create: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/108B_BTJ_REVIEW_2026_07_11.md`
 - Create: `09_TOOLS/02_COMPILERS/validate_kintsugi.py`
 - Create: `09_TOOLS/02_COMPILERS/test_validate_kintsugi.py`
+- Create: `09_TOOLS/02_COMPILERS/render_kintsugi.py`
+- Create: `09_TOOLS/02_COMPILERS/test_render_kintsugi.py`
 - Create: `09_TOOLS/02_COMPILERS/kintsugi_baseline_failures.json`
+- Create: `09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_phase_A_review_target.json`
 - Create: `09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_phase_A_validation_bundle.json`
 - Modify: `03_METHODOLOGY/01_THE_DERIVATION/README.md`
 - Modify: `09_TOOLS/02_COMPILERS/README.md`
+- Modify: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/README.md` with a two-row routing
+  note distinguishing the frozen staged predecessor 108 from canonical
+  `REC-A-108`.
 
-Phase A completes automatically when every severe kernel crack is repaired or
-retracted; the validator and mutation suite pass; independent logic and BTJ
-reviews agree; a final delta trial introduces no new severe fracture; and
-receipt 108 is `VERIFIED`. A severe `HELD_OPEN` seam blocks this transition.
+`MAN-A-001.closureOnlyPaths` is exactly the two review paths plus
+`09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_phase_A_review_target.json` and
+`09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_phase_A_validation_bundle.json`. It is a
+subset of `allowedChangePaths`. No owner, semantic ledger, schema, test,
+protocol, or core-data path may be classified closure-only.
+
+Phase A becomes eligible for evidence-governed verification when every severe
+kernel crack is repaired or retracted; the validator and mutation suite pass;
+independent logic and BTJ attestations both declare PASS against the same target;
+a final delta trial introduces no new severe fracture; and receipt 108 is
+`VERIFIED`. The machine checks the declarations and hashes, not their
+substantive truth. A severe `HELD_OPEN` seam blocks this transition.
 
 ## 12. Phase B — active corpus
 
@@ -1192,6 +1422,7 @@ corpus.
    `109A_FORMAL_LOGIC_REVIEW_2026_07_11.md`, and
    `109B_BTJ_REVIEW_2026_07_11.md`, all under
    `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, plus
+   `09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_phase_B_review_target.json` and
    `09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_phase_B_validation_bundle.json`.
 3. Reuse packet 103, audits 100–101, the Canonical Claim Matrix, Honest
    Position, Falsifiers Index, Theorem Upgrade Protocol, Settled Canon Registry,
@@ -1235,6 +1466,7 @@ contains exactly:
 - `11_UPLINK/50_AUDITS_AND_EXECUTIONS/110A_FORMAL_LOGIC_REVIEW_2026_07_11.md`;
 - `11_UPLINK/50_AUDITS_AND_EXECUTIONS/110B_BTJ_REVIEW_2026_07_11.md`; and
 - `09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_public_propagation_queue.json`; and
+- `09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_phase_C_review_target.json`; and
 - `09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_phase_C_validation_bundle.json`.
 
 It compares every manifest-discovered public claim against the repaired owner
@@ -1274,6 +1506,9 @@ ownership = OWNERLESS:
 `ownerSearchEvidence` records a complete manifest-bounded search.
 For an owned `KEEP` or `CITE` item, `seamIds` may be empty; every other owned
 action requires at least one seam ID explaining the divergence.
+An owned `KEEP` item is the only clean queue disposition: it requires
+`driftClass=null` and `severity=null`. Every non-`KEEP` action requires both
+fields to be non-null. This prevents coverage from manufacturing a defect.
 
 The Phase C JSON root and item types are:
 
@@ -1290,11 +1525,11 @@ publicQueueItem common fields = {
   publicFile: PATH,
   publicQuote: TEXT,
   ownership: OWNED | OWNERLESS,
-  driftClass: DEFECT_CLASS,
+  driftClass: DEFECT_CLASS | null,
   currentEvidence: evidence,
   maximumPublicStrength: A | S | I | C,
   requiredAction: KEEP | CITE | NARROW | RETIER | RETRACT | REGENERATE,
-  severity: SEVERITY,
+  severity: SEVERITY | null,
   verificationCommand: TEXT
 }
 
@@ -1330,6 +1565,11 @@ Queue references are closed against the core data:
 Ownerless items contain no invented core IDs; their search evidence and
 candidate paths are bounded by the Phase C manifest.
 
+The Markdown queue is a deterministic rendering of the canonical JSON queue
+and embeds exactly one `json kintsugi-public-queue` fence that deep-equals it.
+Hand-authored Markdown may add explanatory prose around the fence but cannot
+alter, omit, or add queue items.
+
 `requiredAction` is one of `KEEP`, `CITE`, `NARROW`, `RETIER`, `RETRACT`, or
 `REGENERATE`. Phase C does not perform the action. Public propagation remains a
 later, separately scoped migration/repair project.
@@ -1344,18 +1584,56 @@ counts reconcile exactly, the queue validates deterministically, receipt 110 is
 `validate_kintsugi.py` uses only the Python standard library. It never edits
 files.
 
+`render_kintsugi.py` is the separate deterministic producer. It also uses only
+the standard library and exposes four explicit operations:
+
+```text
+freeze-manifest  # populate input candidate/included hashes at phase start, or finalFiles at closure
+review-target    # emit the immutable semantic package reviewed by LOGIC and BTJ
+bundle           # emit the validation bundle after both reviews pass
+transition-core  # apply only the declared COMPLETE or VERIFIED mechanical fields
+```
+
+The renderer accepts one repository-relative `--output` path that must be in the
+selected manifest's `allowedChangePaths`, refuses protected paths and root
+escapes, writes canonical JSON through a same-directory temporary file plus
+`os.replace`, and never edits owner prose. `bundle` refuses to overwrite any
+existing output. `review-target` accepts an existing output only when the bytes
+are identical and otherwise fails, so review closure can prove the target did
+not move. `freeze-manifest --final` refuses an owner whose current input
+hash differs from the frozen trial hash unless that owner has a closed trial and
+recorded seam. Re-running any operation on unchanged inputs must produce the
+same bytes; a byte difference is a test failure.
+
+`transition-core --stage COMPLETE` reads the two deep-equal PASS review
+attestations, checks their shared target digest, changes only reviewed
+`REPAIRED -> VERIFIED` statuses, terminal gate status/reviewer paths, and the
+receipt's target/review/status fields, then atomically replaces the canonical
+core JSON at the explicit output. `transition-core --stage VERIFIED` requires
+the immutable bundle, verifies its prospective receipt descriptor, and changes
+only receipt status, bundle path, and bundle digest. It never edits owner prose,
+ledger narrative, or Markdown fences; those human-readable surfaces are patched
+separately and must deep-equal before the transition validates. Any other JSON
+delta fails `KIN-E-STATE`.
+
 ### Commands
 
 Run from the repository root:
 
 ```text
 python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py --check
-python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py --check --phase A --bootstrap --base-ref 736cf22 --canonical-root /Users/Yves/Documents/01_EMERGENTISM
+python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py --check --phase A --bootstrap --base-ref 1a2cf85 --canonical-root /Users/Yves/Documents/01_EMERGENTISM
 python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py --check --phase A --base-ref MANIFEST --canonical-root /Users/Yves/Documents/01_EMERGENTISM
 python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py --check --phase B --base-ref MANIFEST --canonical-root /Users/Yves/Documents/01_EMERGENTISM
 python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py --check --phase C --base-ref MANIFEST --canonical-root /Users/Yves/Documents/01_EMERGENTISM
 python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py --check-baseline --canonical-root /Users/Yves/Documents/01_EMERGENTISM
 python3 -m unittest discover -s 09_TOOLS/02_COMPILERS -p 'test_validate_kintsugi.py'
+python3 -m unittest discover -s 09_TOOLS/02_COMPILERS -p 'test_render_kintsugi.py'
+python3 -B 09_TOOLS/02_COMPILERS/render_kintsugi.py freeze-manifest --phase A --base-ref 1a2cf85 --canonical-root /Users/Yves/Documents/01_EMERGENTISM --output 03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json
+python3 -B 09_TOOLS/02_COMPILERS/render_kintsugi.py review-target --phase A --output 09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_phase_A_review_target.json
+python3 -B 09_TOOLS/02_COMPILERS/render_kintsugi.py bundle --phase A --output 09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_phase_A_validation_bundle.json
+python3 -B 09_TOOLS/02_COMPILERS/render_kintsugi.py transition-core --phase A --stage COMPLETE --output 03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json
+python3 -B 09_TOOLS/02_COMPILERS/render_kintsugi.py transition-core --phase A --stage VERIFIED --bundle 09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_phase_A_validation_bundle.json --output 03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json
 ```
 
 The implementation discovers the repository root as
@@ -1384,6 +1662,10 @@ name is also accepted and must resolve to the same commit or validation fails.
 versioned failure rule below; it cannot be combined with `--phase` or
 `--bootstrap`.
 
+The renderer shares the validator's root discovery, safe-path resolver,
+canonical JSON function, schema checks, and deterministic diagnostic format;
+it does not duplicate or weaken those contracts.
+
 `--canonical-root` is also mandatory with `--phase` and accepts one absolute
 directory. The validator requires that directory to be the `main` worktree in
 `git worktree list --porcelain`, share the same Git common directory as the
@@ -1393,11 +1675,53 @@ and protected-provenance checks. Bare `--check` performs no external-worktree
 check because it makes no phase-completion claim.
 
 The full command enforces phase order: B requires verified receipt 108; C
-requires verified receipts 108 and 109. A later manifest whose included-file
-hashes no longer match the filesystem is stale and fails until the affected
-claims are retried against a newly frozen manifest.
+requires verified receipts 108 and 109. A manifest whose input hashes no longer
+match `baseCommit`, or whose final hashes no longer match the reviewed
+worktree, is stale and fails until the affected claims are retried against a
+newly frozen manifest.
+
+At phase start, canonical `HEAD` must equal the manifest's `canonicalCommit`.
+Any later canonical-HEAD movement is `KIN-E-CONCURRENT` before a rebase or owner
+edit. Any candidate owner whose base blob, tried quote, or review-target final
+hash changes outside the declared repair sequence stops that claim and requires
+a new manifest/retrial. Concurrency is evidence to re-freeze, never permission
+to auto-merge doctrine.
 
 ### Exit codes
+
+Schema version `1.0.0` freezes this diagnostic-code registry:
+
+```text
+KIN-E-CLI          invocation/argument error
+KIN-E-IO           missing or unreadable input
+KIN-E-JSON         malformed JSON or fenced JSON
+KIN-E-SCHEMA-KEYWORD unknown schema keyword or unresolved $ref
+KIN-E-SCHEMA       instance/schema mismatch
+KIN-E-PATH         unsafe, absolute, escaping, or unexpected path
+KIN-E-CANONICAL    non-canonical JSON bytes or hash-domain mismatch
+KIN-E-ID           duplicate or malformed stable ID
+KIN-E-REF          missing, wrong-kind, or forbidden reference
+KIN-E-CYCLE        undeclared claim dependency cycle
+KIN-E-VERDICT      invalid validity/soundness/overall combination
+KIN-E-STATE        invalid trial/seam/receipt/gate transition or fields
+KIN-E-JUSTICE      missing or inconsistent Justice context
+KIN-E-LEDGER       missing, duplicate, or non-equal Markdown fence
+KIN-E-QUOTE        owner quote/hash mismatch
+KIN-E-MANIFEST     partition, count, input-hash, or final-hash mismatch
+KIN-E-SCOPE        committed/staged/unstaged/untracked path outside allowance
+KIN-E-PROTECTED    protected-tree, provenance, or frozen-baseline drift
+KIN-E-REVIEW       review identity, target, verdict, or gate mismatch
+KIN-E-RECEIPT      receipt role, phase order, or status mismatch
+KIN-E-BUNDLE       review-target/bundle digest or immutability failure
+KIN-E-FIXTURE      antibody/evaluator/fixture mismatch
+KIN-E-QUEUE        public queue union, ownership, or rendering mismatch
+KIN-E-BASELINE     removed test, new failure, or signature drift
+KIN-E-CONCURRENT   canonical HEAD or owner changed after manifest freeze
+```
+
+Adding or renaming a code requires a schema-version change. Each diagnostic has
+one primary code; explanatory detail belongs in the message, not an invented
+sub-code.
 
 ```text
 0  validation passed
@@ -1450,15 +1774,18 @@ to stdout and nothing to stderr.
 
 - schema version and exact enums;
 - unique manifest, source, claim, trial, seam, antibody, discriminator, fixture,
-  and phase-receipt IDs;
+  propagation, and phase-receipt IDs;
 - scalar/container type correctness;
 - existing owner, source, receipt, and derivative paths;
 - dependency endpoints and no undeclared entailment cycles;
-- exact candidate/included/excluded and harvested/trialed/excluded manifest
-  partitions with counts derived from unique sets;
+- exact candidate/included/excluded, final-file, and
+  harvested/trialed/excluded manifest partitions with counts derived from
+  unique sets; input hashes match `baseCommit` and final hashes match the
+  verified worktree;
 - after byte-verifying and subtracting the selected root's frozen
-  `allowedPreexistingUntracked` paths, every remaining tracked/untracked diff
-  path is contained in the selected phase's exact `allowedChangePaths`;
+  `allowedPreexistingUntracked` paths, every path in the union of
+  `baseCommit..HEAD` committed changes plus staged/unstaged/untracked status is
+  contained in the selected phase's exact `allowedChangePaths`;
 - exact `afterQuote` match in the declared owner;
 - status-aware required/nullable fields, including complete before/after,
   surviving-kernel, evidence, upgrade, and kill fields where applicable;
@@ -1466,12 +1793,17 @@ to stdout and nothing to stderr.
   satisfied by the cited evidence; Rosetta, repetition, `sourced=true`, and
   lifecycle changes can never supply that upgrade;
 - provenance and lifecycle axes validated independently from strength;
+- provenance-only receipts cannot own claims, satisfy phase dependencies,
+  impersonate the canonical receipt path, or justify tier upgrades;
 - collective/normative Justice fields;
 - owner-first full seam and derivative compact references;
 - no completed receipt cited when the file is absent;
-- deterministic canonical JSON bytes; and
-- byte-level protected-provenance checks for receipts 104–107 and retained
-  countersign-history spans; and
+- deep-equal seam, receipt, review, and public-queue Markdown fences;
+- distinct review identities, one review-target digest, declared PASS verdicts,
+  closed severe findings, and gate/upgrade attestations;
+- deterministic canonical JSON bytes and deterministic renderer output;
+- byte-level protected-provenance checks for receipts 104–107, the staged
+  predecessor receipt 108, and retained countersign-history spans; and
 - tracked/untracked protected-path checks for public site, archive, and
   compatibility trees in both the isolated and canonical checkouts.
 
@@ -1495,6 +1827,11 @@ DEPENDENCY_CYCLE
 STALE_OWNER_QUOTE
 PHASE_ORDER_BYPASS
 PROTECTED_PATH_CHANGE
+COMMITTED_SCOPE_ESCAPE
+PROVENANCE_AS_AUTHORITY
+RECEIPT_FENCE_DRIFT
+REVIEW_TARGET_DRIFT
+BUNDLE_OVERWRITE
 ```
 
 Each mutation must return exit code 1, emit at least one matching stable error
@@ -1534,14 +1871,26 @@ The exact repository-suite command, run from the repository root, is:
 python3 -m pytest -q --tb=short
 ```
 
-`kintsugi_baseline_failures.json` is fixed at schema version `1.0.0` and base
-commit `736cf229a0837a1fe189a8f69991c3a4bcbdf7f5`. Its normative initial content is:
+The exact identity-collection command is separate and mandatory:
+
+```text
+python3 -m pytest --collect-only -q
+```
+
+The execution command proves pass/fail behavior; the collection command proves
+that every frozen baseline node still exists. The baseline adapter runs and
+parses both.
+
+`kintsugi_baseline_failures.json` is fixed at schema version `1.0.0` and the
+post-approval execution base commit
+`1a2cf85f607f9bed2f06a6234250bee9d2876ec5`. Its normative initial content is:
 
 ```json
 {
   "schemaVersion": "1.0.0",
-  "baseCommit": "736cf229a0837a1fe189a8f69991c3a4bcbdf7f5",
+  "baseCommit": "1a2cf85f607f9bed2f06a6234250bee9d2876ec5",
   "command": ["python3", "-m", "pytest", "-q", "--tb=short"],
+  "collectCommand": ["python3", "-m", "pytest", "--collect-only", "-q"],
   "collectedAtBaseline": 19,
   "baselineNodeIds": [
     "03_METHODOLOGY/03_PREREGISTRATIONS/physics_to_biology_harness/test_vesicle_macro_constraint.py::VesicleMacroConstraintTests::test_constrained_kernel_preserves_lower_law_support",
