@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Trial Record — Emergentism</title>
+<meta name="description" content="Every time the framework was put to a test: what was claimed, what the test was, and the verdict — refuted, fenced, mixed, or held. The record is kept, not curated. Nothing struck was deleted." />
+<meta name="color-scheme" content="dark" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="The Trial Record — Emergentism" />
+<meta property="og:description" content="A forensic ledger of every test the framework has faced. Refutations accepted against interest are the credential — including this year's GFS result, run and reported win or lose." />
+<meta property="og:url" content="https://www.emergentism.org/record/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The Trial Record — Emergentism" />
+<meta name="twitter:description" content="Every test, every verdict, kept not curated. Struck means struck, not gone." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%23FFEB3B' stroke-width='1' opacity='.5'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E" />
+<style>
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Roboto-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../assets/fonts/RobotoMono-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+:root{
+  --void:#050505; --void-2:#080807; --panel:#0d0d0c; --panel-2:#141413;
+  --bone:#F3F4F6; --bone-dim:#9CA3AF; --bone-faint:#6b7280; --bone-ghost:#3a3d42;
+  --gold:#FFEB3B; --gold-deep:#CBB800; --blue:#42A5F5; --crimson:#e0453b; --green:#5bbf88;
+  --line:rgba(243,244,246,.11); --line-soft:rgba(243,244,246,.055);
+  --t-a:#7fb2e6; --t-e:#6fc79a; --t-s:#5fc6b0; --t-i:#e8d24a; --t-c:#b59ce0; --t-b:#FFEB3B;
+  --v-refuted:#e0453b; --v-fenced:#e8b23a; --v-mixed:#5aa9e6; --v-held:#5bbf88; --v-cut:#6b7280;
+  --sans:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --maxw:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--void);color:var(--bone);font-family:var(--sans);font-weight:300;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;font-feature-settings:"tnum" 1;overflow-x:hidden}
+/* atmosphere: two faint field-glows + a hairline scan grain */
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:radial-gradient(115% 70% at 82% -6%, rgba(224,69,59,.06), transparent 46%),
+             radial-gradient(120% 80% at 8% 108%, rgba(66,165,245,.055), transparent 52%), var(--void)}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5;
+  background-image:repeating-linear-gradient(0deg, rgba(255,255,255,.014) 0 1px, transparent 1px 3px)}
+::selection{background:rgba(255,235,59,.28);color:#050505}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1rem,4vw,2.4rem)}
+.mono{font-family:var(--mono)}
+
+/* ---- topbar ---- */
+.topbar{position:sticky;top:0;z-index:30;display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:.75rem clamp(1rem,4vw,2.4rem);background:rgba(5,5,5,.72);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.brand{font-weight:800;font-size:1.02rem;letter-spacing:-.01em;text-decoration:none}
+.brand b{color:var(--gold);font-weight:800}
+.nav{display:flex;gap:.15rem;flex-wrap:wrap;font-family:var(--mono);font-size:.78rem}
+.nav a{display:inline-grid;place-items:center;min-width:1.7rem;height:1.7rem;padding:0 .45rem;color:var(--bone-dim);border-radius:3px;text-decoration:none;transition:.15s}
+.nav a:hover{color:var(--void);background:var(--gold)}
+.nav a.here{color:var(--gold);border:1px solid var(--line)}
+
+/* ---- hero ---- */
+header.hero{padding:clamp(3rem,8vw,6rem) 0 1.4rem;position:relative}
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--crimson);margin:0 0 1.3rem;display:flex;align-items:center;gap:.7rem}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--crimson);display:inline-block}
+h1{font-size:clamp(2.6rem,8.5vw,6rem);font-weight:800;letter-spacing:-.035em;line-height:.94;margin:0 0 1.3rem;text-wrap:balance}
+h1 .em{color:var(--bone)}
+.dek{font-size:clamp(1.08rem,1.7vw,1.32rem);color:var(--bone-dim);max-width:60ch;margin:0 0 .6rem;font-weight:300}
+.dek b{color:var(--bone);font-weight:500}
+
+/* ---- scoreboard ---- */
+.board{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:2.6rem 0 .4rem}
+.stat{background:linear-gradient(180deg,var(--panel),var(--void-2));padding:1.5rem 1.4rem 1.3rem;position:relative}
+.stat .num{font-family:var(--mono);font-weight:700;font-size:clamp(2.4rem,5.5vw,3.6rem);line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.stat .lab{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--bone-faint);margin-top:.65rem;line-height:1.45}
+.stat.accent .num{color:var(--crimson)}
+.stat.zero .num{color:var(--green)}
+.stat.gold .num{color:var(--gold)}
+.stat::after{content:"";position:absolute;left:0;top:0;width:2px;height:100%;background:currentColor;opacity:.0}
+@media(max-width:720px){.board{grid-template-columns:repeat(2,1fr)}}
+
+.note{font-family:var(--mono);font-size:.76rem;color:var(--bone-faint);margin:1rem 0 0;letter-spacing:.01em}
+
+/* ---- legend / filter ---- */
+.legend{position:sticky;top:2.9rem;z-index:20;display:flex;flex-wrap:wrap;gap:.5rem;margin:2.6rem 0 .4rem;padding:.7rem 0;
+  background:linear-gradient(180deg,var(--void) 62%,transparent);backdrop-filter:blur(4px)}
+.chip{font-family:var(--mono);font-size:.73rem;letter-spacing:.03em;padding:.34rem .7rem .34rem .62rem;border:1px solid var(--line);border-radius:999px;
+  color:var(--bone-dim);background:var(--panel);cursor:pointer;transition:.16s;display:inline-flex;align-items:center;gap:.44rem;user-select:none}
+.chip .dot{width:8px;height:8px;border-radius:50%;background:var(--c);box-shadow:0 0 8px -1px var(--c)}
+.chip:hover{border-color:var(--bone-faint);color:var(--bone)}
+.chip[aria-pressed="true"]{color:var(--void);background:var(--c);border-color:var(--c);font-weight:500}
+.chip[aria-pressed="true"] .dot{background:var(--void);box-shadow:none}
+
+/* ---- ledger / timeline ---- */
+.ledger{position:relative;padding:1.4rem 0 2rem;margin-left:.2rem}
+.ledger::before{content:"";position:absolute;left:0;top:0;bottom:0;width:1px;
+  background:linear-gradient(180deg,transparent,var(--line) 6%,var(--line) 94%,transparent)}
+.docket{position:relative;padding:0 0 2.5rem 2.1rem;opacity:1}
+.docket::before{content:"";position:absolute;left:-4px;top:.55rem;width:9px;height:9px;border-radius:50%;
+  background:var(--void);border:2px solid var(--v);box-shadow:0 0 0 4px var(--void),0 0 12px -2px var(--v)}
+.docket .card{border:1px solid var(--line);border-left:2px solid var(--v);border-radius:10px;
+  background:linear-gradient(180deg,var(--panel),var(--void-2));padding:1.25rem 1.4rem;transition:.2s;position:relative;overflow:hidden}
+.docket .card:hover{border-color:var(--line);border-left-color:var(--v);transform:translateX(2px)}
+.docket .card::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background:radial-gradient(120% 140% at 100% 0%, color-mix(in srgb, var(--v) 8%, transparent), transparent 40%)}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:.55rem;font-family:var(--mono);font-size:.72rem;color:var(--bone-faint);margin-bottom:.6rem}
+.meta .date{color:var(--bone-dim)}
+.meta .rid{color:var(--v);letter-spacing:.04em}
+.stamp{margin-left:auto;font-family:var(--mono);font-size:.66rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--v);border:1px solid var(--v);border-radius:3px;padding:.16em .5em;background:color-mix(in srgb,var(--v) 9%,transparent)}
+.docket h3{font-size:1.08rem;font-weight:600;letter-spacing:-.01em;margin:0 0 .5rem;line-height:1.35}
+.docket .body{color:var(--bone-dim);font-size:.95rem;margin:0}
+.docket .body b{color:var(--bone);font-weight:500}
+.docket.struck h3{color:var(--bone-faint);text-decoration:line-through;text-decoration-color:var(--crimson);text-decoration-thickness:1.5px}
+.tiermove{font-family:var(--mono);font-size:.76rem;color:var(--bone-faint);margin-top:.7rem;display:flex;flex-wrap:wrap;align-items:center;gap:.4rem}
+.t{font-family:var(--mono);font-size:.72em;font-weight:700;padding:.05em .4em;border-radius:3px;border:1px solid currentColor;line-height:1.5;white-space:nowrap}
+.t-a{color:var(--t-a)}.t-e{color:var(--t-e)}.t-s{color:var(--t-s)}.t-i{color:var(--t-i)}.t-c{color:var(--t-c)}.t-b{color:var(--t-b)}
+.arrow{color:var(--bone-ghost)}
+.cost{margin-top:.55rem;font-size:.9rem;color:var(--bone-faint);border-top:1px dashed var(--line-soft);padding-top:.55rem}
+.cost b{color:var(--v);font-weight:500}
+.src{font-family:var(--mono);font-size:.68rem;color:var(--bone-ghost);margin-top:.5rem}
+.docket[data-hidden="1"]{display:none}
+
+/* verdict color binding */
+.v-refuted{--v:var(--v-refuted)} .v-fenced{--v:var(--v-fenced)} .v-mixed{--v:var(--v-mixed)}
+.v-held{--v:var(--v-held)} .v-cut{--v:var(--v-cut)}
+
+/* ---- the GFS exhibit (grid-breaker) ---- */
+.exhibit{margin:.9rem 0 .2rem;border:1px solid var(--line);border-radius:10px;background:var(--void-2);padding:1.15rem 1.3rem 1rem}
+.exhibit .xh{font-family:var(--mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--bone-faint);margin:0 0 .1rem;display:flex;justify-content:space-between;gap:1rem}
+.exhibit .xh b{color:var(--gold)}
+.chart{width:100%;height:auto;display:block;margin-top:.4rem;overflow:visible}
+.chart text{font-family:var(--mono);fill:var(--bone-dim)}
+.bar{transition:width .9s var(--ease,cubic-bezier(.2,0,0,1))}
+.exhibit .cap{font-size:.82rem;color:var(--bone-faint);margin:.55rem 0 0}
+.exhibit .cap b{color:var(--bone-dim);font-weight:500}
+
+/* ---- closing ---- */
+.k3{margin:1.5rem 0 0;border:1px solid var(--line);border-radius:12px;
+  background:linear-gradient(180deg,rgba(224,69,59,.045),transparent 72%);padding:2rem 2rem 1.8rem}
+.k3 .r{font-family:var(--mono);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--crimson);margin:0 0 .9rem}
+.k3 p{font-size:clamp(1.04rem,1.5vw,1.2rem);color:var(--bone);max-width:66ch;margin:0;font-weight:300}
+.k3 p b{color:var(--gold-deep);font-weight:500}
+.cta-row{margin-top:1.6rem;display:flex;flex-wrap:wrap;gap:.5rem}
+.cta{display:inline-flex;gap:.5rem;align-items:center;font-family:var(--mono);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;
+  padding:.75rem 1.2rem;border-radius:4px;border:1px solid var(--line);text-decoration:none;color:var(--bone);transition:.2s}
+.cta:hover{border-color:var(--gold);color:var(--gold)}
+.cta.primary{background:var(--gold);color:#1a1206;border-color:var(--gold);font-weight:700}
+.cta.primary:hover{background:var(--gold-bright,#FFF176)}
+.foot{border-top:1px solid var(--line);margin-top:3rem;padding:2.6rem 0 3.4rem;text-align:center;color:var(--bone-ghost);font-family:var(--mono);font-size:.76rem}
+.foot .glyph{font-size:1.5rem;color:var(--gold);margin-bottom:.7rem}
+.foot a{color:var(--bone-faint);text-decoration:underline;text-underline-offset:3px}
+
+/* ---- motion (progressive; reduced-motion safe) ---- */
+.reveal{opacity:0;transform:translateY(14px)}
+.is-in .reveal,.no-js .reveal{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,0,0,1)}
+.stat,.docket{opacity:1}
+body:not(.no-js) .anim-stat{opacity:0;transform:translateY(10px)}
+body:not(.no-js) .anim-stat.in{opacity:1;transform:none;transition:opacity .6s ease,transform .6s cubic-bezier(.2,0,0,1)}
+@media (prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto!important}
+  .reveal,.anim-stat{opacity:1!important;transform:none!important;transition:none!important}
+  .bar{transition:none!important}
+}
+</style>
+<!-- pwa-chrome -->
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#050505">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<script src="/assets/js/pwa.js" defer></script>
+</head>
+<body class="no-js">
+<script>document.body.classList.remove('no-js');</script>
+
+<header class="topbar">
+  <a class="brand" href="../home/">Emergent<b>ism</b></a>
+  <nav class="nav" aria-label="Routes">
+    <a href="../0/">0</a><a href="../1/">1</a><a href="../2/">2</a><a href="../3/">3</a>
+    <a href="../4/">4</a><a href="../5/">5</a><a href="../6/">6</a>
+    <a href="../axioms/">Axioms</a><a href="../record/" class="here" aria-current="page">Record</a>
+    <a href="../book/">Book</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <header class="hero">
+    <p class="eyebrow reveal">The ledger of every test</p>
+    <h1 class="reveal">What we got<br><span class="em">wrong</span>, on the record.</h1>
+    <p class="dek reveal">Most frameworks that claim this much publish only their wins. This is the other book: every time an Emergentism claim met a test, what the test was, and how it came out — <b>refuted, fenced, mixed, or held</b>. The refutations are not footnotes here. They are the credential.</p>
+    <p class="dek reveal">A claim is only worth something if it could have failed. These are the ones that could — and some did.</p>
+
+    <div class="board" role="list" aria-label="Record summary">
+      <div class="stat anim-stat" role="listitem"><div class="num" data-count="16">16</div><div class="lab">tests on the<br>record</div></div>
+      <div class="stat accent anim-stat" role="listitem"><div class="num" data-count="4">4</div><div class="lab">verdicts against us,<br>accepted</div></div>
+      <div class="stat gold anim-stat" role="listitem"><div class="num" data-count="7">7</div><div class="lab">over-claims<br>fenced to tier</div></div>
+      <div class="stat zero anim-stat" role="listitem"><div class="num" data-count="0">0</div><div class="lab">records<br>deleted</div></div>
+    </div>
+    <p class="note reveal">Kept, not curated. Struck-through entries below were refuted or cut — and left standing, per K3 (no-erasure). Newest first.</p>
+  </header>
+
+  <div class="legend" role="group" aria-label="Filter by verdict">
+    <button class="chip" style="--c:var(--v-refuted)" data-f="refuted" aria-pressed="false"><span class="dot"></span>Refuted</button>
+    <button class="chip" style="--c:var(--v-fenced)" data-f="fenced" aria-pressed="false"><span class="dot"></span>Fenced</button>
+    <button class="chip" style="--c:var(--v-mixed)" data-f="mixed" aria-pressed="false"><span class="dot"></span>Mixed</button>
+    <button class="chip" style="--c:var(--v-held)" data-f="held" aria-pressed="false"><span class="dot"></span>Held</button>
+    <button class="chip" style="--c:var(--v-cut)" data-f="cut" aria-pressed="false"><span class="dot"></span>Cut</button>
+  </div>
+
+  <div class="ledger" id="ledger">
+
+    <!-- ===== GFS AND-class — the hero, newest ===== -->
+    <article class="docket v-refuted" data-verdict="refuted">
+      <div class="card reveal">
+        <div class="meta"><span class="date">2026 · 07 · 12</span><span>·</span><span class="rid">GFS-ANDCLASS</span><span class="stamp">Refuted · in range</span></div>
+        <h3>“Flourishing is multiplicative — coherence × viability, not their sum.”</h3>
+        <p class="body">April's test only pitched the product against the <em>sum</em>. But the zero-factor law selects a whole <b>AND-class</b> — min (Liebig), CES, geometric mean, product — that a ×-vs-+ test cannot tell apart. So we rebuilt the kill criterion to include the siblings and ran it on the real Wave-2 microdata: <b>128,868 respondents, 23 countries</b>, replication gate against the April pipeline passed 23/23.</p>
+        <div class="exhibit reveal">
+          <p class="xh"><span>Pooled out-of-sample R² · 5-fold CV · rank-scaled</span><span><b>higher = predicts flourishing better</b></span></p>
+          <svg class="chart" viewBox="0 0 640 196" role="img" aria-label="Six competing models by out-of-sample R². Additive-plus-interaction is highest at 0.143; the strict conjunctive forms — pure product 0.115 and Liebig-min 0.119 — are the two lowest.">
+            <!-- gridline at winner -->
+            <line x1="150" y1="10" x2="150" y2="182" stroke="rgba(243,244,246,.08)"/>
+            <!-- bars: x0=150, scale so 0.16 -> 470px width -->
+            <g font-size="12">
+              <!-- interaction (winner) -->
+              <text x="142" y="24" text-anchor="end">int</text>
+              <rect class="bar" x="150" y="14" width="419" height="15" rx="2" fill="#5aa9e6" data-w="419"></rect>
+              <text x="576" y="24" text-anchor="start" fill="#5aa9e6">0.143</text>
+              <!-- additive -->
+              <text x="142" y="49" text-anchor="end">add</text>
+              <rect class="bar" x="150" y="39" width="411" height="15" rx="2" fill="#8aa0ad" data-w="411"></rect>
+              <text x="568" y="49" text-anchor="start">0.140</text>
+              <!-- ces -->
+              <text x="142" y="74" text-anchor="end">CES</text>
+              <rect class="bar" x="150" y="64" width="410" height="15" rx="2" fill="#8aa0ad" data-w="410"></rect>
+              <text x="567" y="74" text-anchor="start">0.140</text>
+              <!-- geo -->
+              <text x="142" y="99" text-anchor="end">geo</text>
+              <rect class="bar" x="150" y="89" width="393" height="15" rx="2" fill="#8aa0ad" data-w="393"></rect>
+              <text x="550" y="99" text-anchor="start">0.134</text>
+              <!-- min (loser) -->
+              <text x="142" y="124" text-anchor="end" fill="#e0453b">min</text>
+              <rect class="bar" x="150" y="114" width="348" height="15" rx="2" fill="#e0453b" data-w="348"></rect>
+              <text x="505" y="124" text-anchor="start" fill="#e0453b">0.119</text>
+              <!-- product (loser) -->
+              <text x="142" y="149" text-anchor="end" fill="#e0453b">×</text>
+              <rect class="bar" x="150" y="139" width="338" height="15" rx="2" fill="#e0453b" data-w="338"></rect>
+              <text x="495" y="149" text-anchor="start" fill="#e0453b">0.115</text>
+              <text x="150" y="176" font-size="10.5" fill="#6b7280">the strict conjunctive forms — min and pure × — are the two shortest bars</text>
+            </g>
+          </svg>
+          <p class="cap"><b>The verdict:</b> the pure product wins in 0 of 23 countries; Liebig-min in 1 (the smallest). The best fit is additive with a faint positive interaction, and the fitted CES curvature lands on ρ ≈ 1 — the additive ordering itself.</p>
+        </div>
+        <p class="cost"><b>What it costs:</b> A1's multiplicative <em>interior</em> now has evidence <b>against</b> it, on the one population instrument the corpus has tested — not merely unproven. Honest fence: surveys can't reach the zero-factor region (the dead don't answer), so the annihilation <em>boundary</em> stays the corpus's won content; only the interior is measured, and it reads additive.</p>
+        <p class="src">receipt · 03_METHODOLOGY/00_GFS_AND_CLASS_RESULTS.md · run seed 108, pre-registered before results</p>
+      </div>
+    </article>
+
+    <!-- ===== today's formal-logic fences ===== -->
+    <article class="docket v-fenced" data-verdict="fenced">
+      <div class="card reveal">
+        <div class="meta"><span class="date">2026 · 07 · 12</span><span>·</span><span class="rid">A1-REGISTER</span><span class="stamp">Fenced</span></div>
+        <h3>“The Zero-Factor Catastrophe proves the product form.”</h3>
+        <p class="body">It doesn't. Kill either factor and min, CES, geometric mean and the product <em>all</em> collapse alike — the catastrophe selects the class, not the member. The product is uniquely forced only on the sphere's own coordinates, where φ·ν=1 is a chart identity.</p>
+        <p class="tiermove">node-law “× ” <span class="arrow">→</span> <span class="t t-c">[C]</span> unwon wager · manifold identity stays <span class="t t-a">[A]</span></p>
+        <p class="cost"><b>What it costs:</b> the framework may not claim “specifically ×, not min” for finite nodes. A ×-vs-+ test can't settle it; the live comparison is × against its siblings — see GFS above.</p>
+        <p class="src">audit · 05_COSMOLOGY/03_FORMAL_SYSTEM · keel-108 (K2-countersigned 2026-07-12)</p>
+      </div>
+    </article>
+
+    <article class="docket v-fenced" data-verdict="fenced">
+      <div class="card reveal">
+        <div class="meta"><span class="date">2026 · 07 · 12</span><span>·</span><span class="rid">TRIAD-N3</span><span class="stamp">Fenced</span></div>
+        <h3 class="">“Exactly three operators — N = 3 is uniquely forced. QED.”</h3>
+        <p class="body">The discharge of N ≥ 5 rested on “every group with N ≥ 4 has a proper non-trivial subgroup.” That is false: Z₅ — any prime-order group — has none, by Lagrange. One counterexample voids the uniqueness proof.</p>
+        <p class="tiermove">“N=3 proved” <span class="arrow">→</span> <span class="t t-c">[C]</span> conjecture, not a theorem</p>
+        <p class="cost"><b>What it costs:</b> “extraction is impossible by count” falls. The ethical floor is untouched — η=0 survives as a conditional gate, which never depended on the count.</p>
+        <p class="src">audit · formal/11-efr-triadic-stability (already fenced in place)</p>
+      </div>
+    </article>
+
+    <article class="docket v-fenced" data-verdict="fenced">
+      <div class="card reveal">
+        <div class="meta"><span class="date">2026 · 07 · 12</span><span>·</span><span class="rid">LV-CENTER</span><span class="stamp">Fenced</span></div>
+        <h3>“Zero extraction is a basin of attraction — the system converges to η = 1.”</h3>
+        <p class="body">The Lotka-Volterra interior equilibrium is a neutrally-stable <b>center</b>: closed orbits, purely imaginary eigenvalues, no basin. η oscillates and never converges — only its <em>time-average</em> is 1.</p>
+        <p class="tiermove">“attractor / basin” <span class="arrow">→</span> bounded orbit, time-average only · <span class="t t-i">[I]</span></p>
+        <p class="cost"><b>What it costs:</b> the word “attractor.” The load-bearing contrast survives — bounded orbit versus unbounded divergence — but not convergence to a point.</p>
+        <p class="src">audit · formal/12-efr-extraction-coefficient (fenced in place)</p>
+      </div>
+    </article>
+
+    <article class="docket v-fenced" data-verdict="fenced">
+      <div class="card reveal">
+        <div class="meta"><span class="date">2026 · 07 · 12</span><span>·</span><span class="rid">HELIX-S9</span><span class="stamp">Fenced</span></div>
+        <h3>“No path on the sphere changes latitude without rotating — all paths are helical.”</h3>
+        <p class="body">A <b>meridian</b> runs pole to pole at constant longitude: it changes latitude with zero rotation, and it is a great-circle geodesic. One paradigm non-helix kills the universal.</p>
+        <p class="tiermove">“all paths helical, proved” <span class="arrow">→</span> generic path only · <span class="t t-c">[C]</span></p>
+        <p class="cost"><b>What it costs:</b> a clean universal becomes “the generic (constant-bearing) path spirals.” True, weaker, and its own kill criterion firing.</p>
+        <p class="src">audit · trinity/11-the-helix · foundations/the-honest-position S9</p>
+      </div>
+    </article>
+
+    <article class="docket v-fenced" data-verdict="fenced">
+      <div class="card reveal">
+        <div class="meta"><span class="date">2026 · 07 · 12</span><span>·</span><span class="rid">O3-FROM-O5</span><span class="stamp">Fenced</span></div>
+        <h3>“Algebraic closure forces simple-connectedness — O3 follows from O5, proved.”</h3>
+        <p class="body">A torus is a smooth projective algebraic curve over ℂ — compact, orientable, algebraically closed — yet its fundamental group is ℤ², not trivial. Closure alone does not force genus 0.</p>
+        <p class="tiermove">“proved” <span class="arrow">→</span> <span class="t t-c">[C]</span>, needs duality + minimal dimension</p>
+        <p class="cost"><b>What it costs:</b> one leg of the axiom-minimality argument. The sphere is still <em>selected</em>, just not forced by closure by itself.</p>
+        <p class="src">audit · foundations/the-honest-position S2</p>
+      </div>
+    </article>
+
+    <article class="docket v-fenced" data-verdict="fenced">
+      <div class="card reveal">
+        <div class="meta"><span class="date">2026 · 07 · 12</span><span>·</span><span class="rid">A7-WAGER</span><span class="stamp">Fenced</span></div>
+        <h3>“Self-correction is the strongest axiom — the proof that the framework works.”</h3>
+        <p class="body">A process built to self-correct cannot be its own proof; the claim is partly circular. By the open-canon ruling, A7 is a <b>wager and an orientation, not a theorem</b> — and “we are self-correcting, therefore trust us” is exactly the shield the framework forbids itself.</p>
+        <p class="tiermove">A7 <span class="t t-s">[S]</span> theorem <span class="arrow">→</span> <span class="t t-i">[I]</span><span class="t t-c">[C]</span> wager · credential moves to the refutation (R6)</p>
+        <p class="cost"><b>What it costs:</b> the framework's proudest self-description. What replaces it is sturdier — a refusal of infallibility that cannot itself be held infallibly.</p>
+        <p class="src">audit · axioms page · Open Canon Covenant (K2 2026-07-12)</p>
+      </div>
+    </article>
+
+    <article class="docket v-fenced" data-verdict="fenced">
+      <div class="card reveal">
+        <div class="meta"><span class="date">2026 · 07 · 11</span><span>·</span><span class="rid">MULT-KEEL</span><span class="stamp">Fenced → ratified</span></div>
+        <h3>“Fitness <em>must</em> be multiplicative — the product is the unique law.”</h3>
+        <p class="body">min(Φ,V) satisfies every listed property — zero-factor, normalization, monotonicity, degree-1 homogeneity — and isn't a product. The famous “one unwon wager” (φ×ν vs φ+ν) is operationally weightless; the boundary content is identical under × or min.</p>
+        <p class="tiermove">“must be ×” <span class="arrow">→</span> AND-class law · boundary <span class="t t-e">[E]</span> (K2-countersigned) · interior <span class="t t-c">[C]</span></p>
+        <p class="cost"><b>What it costs:</b> the uniqueness of the corpus's signature operator — resolved, not lost: the keel holds as a class, and the class is what was ever load-bearing.</p>
+        <p class="src">receipt · keel-108 · settled-canon registry</p>
+      </div>
+    </article>
+
+    <!-- ===== R6 — the credential ===== -->
+    <article class="docket v-refuted struck" data-verdict="refuted">
+      <div class="card reveal">
+        <div class="meta"><span class="date">2026 · 06 · 10</span><span>·</span><span class="rid">R6</span><span class="stamp">Refuted · against interest</span></div>
+        <h3>Empowerment = Φ × V under a conserved conjugate product φ·ν = 1</h3>
+        <p class="body">The corpus's cleanest surviving formal delta — teleology as conjugate-constrained empowerment — was put to a decisive test and <b>failed</b>. Empowerment decomposes as E = H(S) − H(S|A): the iso-value sets are straight lines, not hyperbolae, and φ·ν=1 is the <em>dead</em> state. It is an additive simplex, not a sphere.</p>
+        <p class="tiermove">flagship claim <span class="t t-a">[A]</span> <span class="arrow">→</span> <span class="t t-c">refuted</span>, kill criterion fired twice and was honored</p>
+        <p class="cost"><b>What it costs:</b> the single most load-bearing novel result in the program. We changed our mind against our own interest and left the record standing. <b>This — not the self-narrative — is the credential.</b></p>
+        <p class="src">receipt · R6_CONJUGATE_RESULTS.md</p>
+      </div>
+    </article>
+
+    <article class="docket v-mixed" data-verdict="mixed">
+      <div class="card reveal">
+        <div class="meta"><span class="date">2026 · 06 · 15</span><span>·</span><span class="rid">R10</span><span class="stamp">Mixed · split</span></div>
+        <h3>Reflexive empowerment: does the conjugate law reappear at agent contact?</h3>
+        <p class="body">After R6, we asked whether the multi-agent register R6 never tested carries the structure. <b>R10a held</b> within the models — the contact register is multiplicative, with an exact zero-factor (“everyone has a plan until they get punched,” as a number). <b>R10b did not</b> — no conserved φ·ν frontier; depth saturates, then becomes a positional arms race competed to zero.</p>
+        <p class="tiermove">R10a <span class="t t-a">[A]</span> in-model · R10b <span class="t t-c">[C]</span> not recovered (both failure modes closed)</p>
+        <p class="cost"><b>What it costs:</b> the conservation law does not live at the agent scale. What survives is the product's <em>catastrophe</em>, not its <em>conservation</em> — recorded as a split, not smoothed.</p>
+        <p class="src">receipt · E2_REFLEXIVE_RESULTS.md · V3 mutual-modeling fork</p>
+      </div>
+    </article>
+
+    <article class="docket v-mixed" data-verdict="mixed">
+      <div class="card reveal">
+        <div class="meta"><span class="date">2026 · 04 · 10</span><span>·</span><span class="rid">GFS-W1</span><span class="stamp">Mixed · stratification refuted</span></div>
+        <h3>“The multiplicative structure will show up across human populations.”</h3>
+        <p class="body">Signal in 7 of 23 countries — present, not dominant; and the interaction sign was split. The rescue hypothesis (the μ-limit: the product only binds above a development threshold) was itself tested and came back <b>inverted</b> — the interaction concentrates where the additive model is weakest, not strongest.</p>
+        <p class="tiermove">“confirmed in populations” <span class="arrow">→</span> <span class="t t-i">[I]</span> weakened · μ-limit rescue <span class="t t-b">[B]</span> falsified</p>
+        <p class="cost"><b>What it costs:</b> the confident empirical prediction. Reported as mixed the day it ran; this year's AND-class test is the sequel that closed the ×-vs-+ loophole.</p>
+        <p class="src">receipt · 03_METHODOLOGY/00_GFS_WAVE1_RESULTS.md</p>
+      </div>
+    </article>
+
+    <article class="docket v-held" data-verdict="held">
+      <div class="card reveal">
+        <div class="meta"><span class="date">2026 · 05</span><span>·</span><span class="rid">CEF</span><span class="stamp">Held · corrected</span></div>
+        <h3>Does teleology require consciousness, or only lookahead?</h3>
+        <p class="body">Read from the causal-entropic cart-pole's own equations: the controller is driven by an external Monte-Carlo lookahead, and the force vanishes as the horizon τ → 0. A non-conscious algorithm produces the teleological behavior.</p>
+        <p class="tiermove">gate teleology on <b>lookahead</b> <span class="t t-i">[I]</span> supported · gate on <b>consciousness</b> refuted</p>
+        <p class="cost"><b>What it held:</b> the claim survived by <em>narrowing</em> — teleology as process, not as experience. A distinct claim (that genuine sacrifice needs a mortal self) stays untested and honestly open.</p>
+        <p class="src">reading · paper's own Eq. 11</p>
+      </div>
+    </article>
+
+    <article class="docket v-held" data-verdict="held">
+      <div class="card reveal">
+        <div class="meta"><span class="date">2026 · 05</span><span>·</span><span class="rid">R3</span><span class="stamp">Held · self-corrected</span></div>
+        <h3>The triage inversion — and the artifact we caught in it.</h3>
+        <p class="body">Under drift toward a mortality boundary, a sequence of individually-improving progressive transfers can <em>reduce</em> total welfare-time — static ethics and dynamic survival point opposite ways. Version 1 over-claimed a Jensen gain; we re-identified it as a boundary/payment-clipping artifact and logged the correction.</p>
+        <p class="tiermove">finding <span class="t t-a">[A]</span> in-model · v1 artifact caught and retracted internally</p>
+        <p class="cost"><b>What it held:</b> the inversion is real and trajectory-driven; the verdict is objective-relative (maximin, sum, per-capita disagree). We fixed our own error before shipping it.</p>
+        <p class="src">receipt · R3 ×3 · boundary control pending</p>
+      </div>
+    </article>
+
+    <article class="docket v-held" data-verdict="held">
+      <div class="card reveal">
+        <div class="meta"><span class="date">2026 · 06</span><span>·</span><span class="rid">R9</span><span class="stamp">Held · integrity</span></div>
+        <h3>The refusal to overfit.</h3>
+        <p class="body">In the holobiont runs, three consecutive interventions each appeared only after a claim failed. Rather than keep tuning enforcement until the result confirmed, the run <b>stopped</b> — the dogmatic-reversion trap, declined and recorded.</p>
+        <p class="tiermove">the epistemics working <span class="t t-s">[S]</span> · a null left null</p>
+        <p class="cost"><b>What it held:</b> nothing was claimed. This is the single most important entry in the ledger — the discipline choosing a null over a forced win.</p>
+        <p class="src">receipt · R9 haystack ×2 (+ two void runs logged)</p>
+      </div>
+    </article>
+
+    <!-- ===== cuts ===== -->
+    <article class="docket v-cut struck" data-verdict="cut">
+      <div class="card reveal">
+        <div class="meta"><span class="date">2026 · 07 · 02</span><span>·</span><span class="rid">SQUID</span><span class="stamp">Cut · false biology</span></div>
+        <h3>The Humboldt-squid cannibalism illustration of gated extraction</h3>
+        <p class="body">Used as a vivid case that extraction self-terminates. The underlying <em>Dosidicus gigas</em> biology, checked, did not hold up. It was cut — not softened, cut — because the point does not need a false example.</p>
+        <p class="tiermove">illustrative claim <span class="arrow">→</span> removed; the gated-extraction result stands on its own</p>
+        <p class="cost"><b>What it costs:</b> a memorable image. The seven-operator audit removed it and the argument was fine without it.</p>
+        <p class="src">audit · seven-operator corpus review (556 agents)</p>
+      </div>
+    </article>
+
+    <article class="docket v-cut struck" data-verdict="cut">
+      <div class="card reveal">
+        <div class="meta"><span class="date">2026</span><span>·</span><span class="rid">IMPORTS</span><span class="stamp">Cut · retracted figures</span></div>
+        <h3>The borrowed numbers: R* ≈ 1.5 · “ABM-verified” · 85–92% syntropy · Kolmogorov-zero · 25% tipping point</h3>
+        <p class="body">A cluster of confident-sounding figures that had entered the corpus without a live derivation behind them. Each was investigated and <b>falsified or retracted</b>; the one figure that survives is η<sub>c</sub> ≈ 0.58, and it carries a <span class="t t-c">[C]</span>.</p>
+        <p class="tiermove">five borrowed constants <span class="arrow">→</span> struck; “an AI confirmed X” barred as evidence</p>
+        <p class="cost"><b>What it costs:</b> a set of impressive-looking anchors. Tombstoned in place so no future reader mistakes them for live claims.</p>
+        <p class="src">registry · forbidden imports (flag only if presented live)</p>
+      </div>
+    </article>
+
+  </div>
+
+  <section class="k3">
+    <p class="r">K3 · the no-erasure law</p>
+    <p><b>Nothing on this page was deleted.</b> Struck means struck, not gone — a refuted claim is left legible with its date, so the next reader sees the framework changing its mind rather than a tidy story with the seams sanded off. A worldview that hides its corrections cannot be trusted with the ones it hasn't found yet. This is the record; it grows in both directions.</p>
+    <div class="cta-row">
+      <a class="cta primary" href="../axioms/">The axioms, tiered →</a>
+      <a class="cta" href="../book/">Read the book →</a>
+      <a class="cta" href="../5/">The Burrisphere →</a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot wrap">
+  <div class="glyph">⊙ = • × ○</div>
+  <p>The Trial Record · faithful to the receipts under 03_METHODOLOGY and the 2026-07 audits.<br>Every entry carries a date and a tier. Coherence is not truth — <a href="../axioms/">see the axioms</a>.</p>
+</footer>
+
+<script>
+(function(){
+  var rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+  // scroll-reveal for .reveal blocks
+  var reveals = [].slice.call(document.querySelectorAll('.reveal'));
+  if (rm || !('IntersectionObserver' in window)) {
+    reveals.forEach(function(el){ el.style.opacity=1; el.style.transform='none'; });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.closest('.docket,.hero,section,.exhibit')?.classList.add('is-in'); e.target.classList.add('is-in'); e.target.style.opacity=1; e.target.style.transform='none'; io.unobserve(e.target); }
+      });
+    }, {rootMargin:'0px 0px -8% 0px', threshold:0.08});
+    reveals.forEach(function(el){ io.observe(el); });
+  }
+
+  // scoreboard count-up
+  var stats = [].slice.call(document.querySelectorAll('.anim-stat'));
+  stats.forEach(function(s, i){
+    var el = s.querySelector('[data-count]'); if(!el) return;
+    var target = parseInt(el.getAttribute('data-count'),10);
+    if(rm){ el.textContent = target; s.classList.add('in'); return; }
+    setTimeout(function(){
+      s.classList.add('in');
+      var start=null, dur=820;
+      function step(ts){ if(!start) start=ts; var p=Math.min((ts-start)/dur,1);
+        el.textContent = Math.round((1-Math.pow(1-p,3))*target);
+        if(p<1) requestAnimationFrame(step); else el.textContent=target; }
+      requestAnimationFrame(step);
+    }, 140 + i*110);
+  });
+
+  // GFS bar draw-in
+  var bars = [].slice.call(document.querySelectorAll('.chart .bar'));
+  function drawBars(){ bars.forEach(function(b,i){ var w=b.getAttribute('data-w');
+    if(rm){ b.setAttribute('width', w); return; }
+    b.setAttribute('width','0'); setTimeout(function(){ b.setAttribute('width', w); }, 120+i*90); }); }
+  var chart = document.querySelector('.chart');
+  if(chart && !rm && ('IntersectionObserver' in window)){
+    // bars are full-width in markup; only animate the grow-in when we can observe entry
+    var co=new IntersectionObserver(function(en){ en.forEach(function(e){ if(e.isIntersecting){ drawBars(); co.disconnect(); } }); },{threshold:0.25});
+    co.observe(chart);
+  }
+
+  // failsafe: nothing may remain invisible if an observer never fires
+  setTimeout(function(){
+    document.querySelectorAll('.reveal').forEach(function(el){ el.style.opacity=1; el.style.transform='none'; });
+    document.querySelectorAll('.anim-stat').forEach(function(s){ s.classList.add('in'); var el=s.querySelector('[data-count]'); if(el&&!el.textContent.trim()) el.textContent=el.getAttribute('data-count'); });
+    document.querySelectorAll('.chart .bar').forEach(function(b){ if(!b.getAttribute('width')||b.getAttribute('width')==='0') b.setAttribute('width', b.getAttribute('data-w')); });
+  }, 1800);
+
+  // verdict filter (multi-select; none pressed = show all)
+  var chips = [].slice.call(document.querySelectorAll('.chip[data-f]'));
+  var dockets = [].slice.call(document.querySelectorAll('.docket'));
+  function apply(){
+    var active = chips.filter(function(c){ return c.getAttribute('aria-pressed')==='true'; }).map(function(c){ return c.getAttribute('data-f'); });
+    dockets.forEach(function(d){
+      var show = active.length===0 || active.indexOf(d.getAttribute('data-verdict'))>-1;
+      d.setAttribute('data-hidden', show ? '0' : '1');
+    });
+  }
+  chips.forEach(function(c){ c.addEventListener('click', function(){
+    c.setAttribute('aria-pressed', c.getAttribute('aria-pressed')==='true' ? 'false':'true'); apply();
+  }); });
+})();
+</script>
+</body>
+</html>
