@@ -5,7 +5,7 @@ scope: "05_COSMOLOGY/ — every 00_* paper, full read, full verdict"
 auditor: "Mavis (co-creator)"
 phase: 1
 papers: 29
-verdicts: 28 🟢 READY, 1 🟡 DISCIPLINE
+verdicts: 27 🟢 READY, 2 🟡 DISCIPLINE
 ---
 
 # Phase 1 Verdicts — Cosmology 00_* papers (29)
@@ -61,7 +61,7 @@ applied to every paper; the *write-up* is compact.
 ## Findings
 
 ### Headline grade
-**28 🟢 / 1 🟡 / 0 🟠 / 0 🔴.** Cosmology is the discipline
+**27 🟢 / 2 🟡 / 0 🟠 / 0 🔴.** Cosmology is the discipline
 domain of the corpus. The tier discipline is intact. The 5+1
 constitution is held in its geometric reading without
 over-reaching. The 19 settled questions in the Registry are
