@@ -1,7 +1,7 @@
 ---
 title: "114 — Register non-instantiation: one topology error in three tenses (quantum-gravity / free-will / the dead man's will) — STAGED, pending K2"
 date: 2026-07-12
-status: "[C/I] STAGED — PENDING K2. Founder insight (in-chat, 2026-07-12): 'a dead man has no will just as quantum has no gravity — it hasn't emerged.' Unifies PD_22A + PD_11 + PD_21 under a single error type. Also records the corrected reading of halāhala h09 (what it convicts, what it does not)."
+status: "[E] K2-COUNTERSIGNED 2026-07-12 ('accep') — recorded AT TIER per the Open Canon Covenant: §1–§2 enter canon at [I], §3 (mortal-signer corollary) at [C] with its fence verbatim, §4 amends the h09 gloss. Founder insight (in-chat, 2026-07-12): 'a dead man has no will just as quantum has no gravity — it hasn't emerged.' Unifies PD_22A + PD_11 + PD_21 under a single error type."
 evidence_tier: "[I] the taxonomy (interpretive within the ladder); [C] the mortal-signer corollary; [A] the prior-art citations"
 verdict_extends: "PD_11 (free will, [S/I]) · PD_21 (death, [I]) · PD_22A (QM/GR three-level, [C]) · receipt 106 (strong/weak two motions) · the Open Canon Covenant"
 owner: "K2 (Yves R. Burri) — the insight is the founder's; software staged it at tier and never signs."

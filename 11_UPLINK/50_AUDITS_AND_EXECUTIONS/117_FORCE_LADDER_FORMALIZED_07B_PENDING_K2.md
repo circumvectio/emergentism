@@ -1,7 +1,7 @@
 ---
 title: "117 — The force ladder formalized (07B staged): two theorems, one failure published as failure, one degenerate truth — and the anti-bijection theorem — PENDING K2"
 date: 2026-07-12
-status: "[C/I] STAGED — PENDING K2, with [A] components marked inline (dof formulas shown). Doc staged at 01_TELEOLOGY/02_THE_DERIVATION/07B_THE_FORCE_LADDER_FORMALIZED_PENDING_K2.md. One K2 input OWED: the EM leg's reading of 'a 2d space' must be disambiguated by the founder (see §3)."
+status: "[E] K2-COUNTERSIGNED 2026-07-12 ('accep') — recorded AT TIER per the covenant: [A] components stand as marked (dof theorems), ladder bridges stay [I], the strong leg stays published-as-failed, the weak leg [S/I]. NOTE: the countersign does NOT answer §3 — the EM leg's reading of 'a 2d space' remains OWED by the founder; until answered, the EM leg carries the three-threshold replacement ladder (true under every reading)."
 evidence_tier: "GRAVITY [A] theorem + [I] bridge · EM [A] core + [I] leg (disambiguation owed) · STRONG [I] failed-as-stated, salvage only · WEAK [S/I] · CROSSWALK [S/I]"
 verdict_extends: "07A (coupling-per-dimension) · receipt 114 (three tenses) · PD_22A (QM/GR ordering) · h04 (now re-derived from arithmetic)"
 owner: "K2 + AI co-owner. 11 agents, formalize + adversarial verify per leg; software staged, K2 signs."
