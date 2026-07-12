@@ -121,6 +121,31 @@ def _decode_pointer_token(token: str) -> str | None:
     return "".join(result)
 
 
+def _decode_uri_fragment(fragment: str) -> str | None:
+    payload = bytearray()
+    index = 0
+    while index < len(fragment):
+        character = fragment[index]
+        if character == "%":
+            if index + 2 >= len(fragment):
+                return None
+            encoded = fragment[index + 1:index + 3]
+            if any(digit not in "0123456789abcdefABCDEF" for digit in encoded):
+                return None
+            payload.append(int(encoded, 16))
+            index += 3
+            continue
+        try:
+            payload.extend(character.encode("utf-8"))
+        except UnicodeEncodeError:
+            return None
+        index += 1
+    try:
+        return payload.decode("utf-8")
+    except UnicodeDecodeError:
+        return None
+
+
 _NAMED_SUBSCHEMA_KEYWORDS = ("$defs", "properties")
 _SINGLE_SUBSCHEMA_KEYWORDS = ("items", "if", "then", "else")
 _ARRAY_SUBSCHEMA_KEYWORDS = ("allOf", "anyOf", "oneOf")
@@ -168,10 +193,13 @@ def _schema_locations(root: dict[str, Any]) -> dict[_SchemaLocation, dict[str, A
 
 
 def _pointer_tokens(reference: Any) -> _SchemaLocation | None:
-    if not isinstance(reference, str) or not reference.startswith("#/"):
+    if not isinstance(reference, str) or not reference.startswith("#"):
+        return None
+    pointer = _decode_uri_fragment(reference[1:])
+    if pointer is None or not pointer.startswith("/"):
         return None
     tokens: list[str] = []
-    for raw_token in reference[2:].split("/"):
+    for raw_token in pointer[1:].split("/"):
         token = _decode_pointer_token(raw_token)
         if token is None:
             return None
@@ -249,6 +277,15 @@ def _schema_shape_issues(
         if key not in SCHEMA_KEYWORDS:
             issues.append(_issue(_child(path, key), f"unknown schema keyword: {key}", keyword=True))
 
+    if path != "$":
+        for keyword in ("$id", "$schema"):
+            if keyword in node:
+                issues.append(_issue(
+                    _child(path, keyword),
+                    f"nested {keyword} is unsupported in the single-resource evaluator",
+                    keyword=True,
+                ))
+
     if "$schema" in node and not isinstance(node["$schema"], str):
         issues.append(_issue(_child(path, "$schema"), "$schema must be a string", keyword=True))
     if "$id" in node and not isinstance(node["$id"], str):
@@ -270,7 +307,8 @@ def _schema_shape_issues(
 
     if "$ref" in node:
         reference = node["$ref"]
-        if not isinstance(reference, str) or not reference.startswith("#/$defs/"):
+        tokens = _pointer_tokens(reference)
+        if tokens is None or len(tokens) < 2 or tokens[0] != "$defs":
             issues.append(_issue(_child(path, "$ref"), "$ref must be a local #/$defs pointer", keyword=True))
         elif _resolve_ref(root, reference, locations) is None:
             issues.append(_issue(_child(path, "$ref"), f"unresolved $ref: {reference}", keyword=True))
@@ -482,6 +520,12 @@ def load_schema(path: Path) -> dict[str, Any]:
             str(path),
             "JSON contains a string that cannot be encoded as canonical UTF-8",
         ) from None
+    except ValueError:
+        raise KintsugiError(
+            "KIN-E-JSON",
+            str(path),
+            "JSON value exceeds the supported decoder limits",
+        ) from None
     issues = validate_schema_document(value)
     if issues:
         first = issues[0]
@@ -509,31 +553,33 @@ def _evaluate(
     stack: frozenset[tuple[int, int]],
     locations: dict[_SchemaLocation, dict[str, Any]],
 ) -> list[Issue]:
-    while len(schema) == 1 and "$ref" in schema:
+    issues: list[Issue] = []
+    while "$ref" in schema:
         pair = (id(schema), id(instance))
         if pair in stack:
             return [_issue(path, "cyclic instance/schema evaluation")]
-        stack = stack | {pair}
         target = _resolve_ref(root, schema["$ref"], locations)
         if target is None:
             return [_issue(
                 path, f"unresolved $ref: {schema['$ref']}", keyword=True
             )]
+        stack = stack | {pair}
+        sibling_schema = {
+            keyword: value
+            for keyword, value in schema.items()
+            if keyword != "$ref"
+        }
+        if sibling_schema:
+            issues.extend(_evaluate(
+                sibling_schema, instance, root, path,
+                stack=stack, locations=locations,
+            ))
         schema = target
 
     pair = (id(schema), id(instance))
     if pair in stack:
         return [_issue(path, "cyclic instance/schema evaluation")]
     next_stack = stack | {pair}
-    issues: list[Issue] = []
-
-    if "$ref" in schema:
-        target = _resolve_ref(root, schema["$ref"], locations)
-        if target is None:
-            return [_issue(path, f"unresolved $ref: {schema['$ref']}", keyword=True)]
-        issues.extend(_evaluate(
-            target, instance, root, path, stack=next_stack, locations=locations
-        ))
 
     expected_type = schema.get("type")
     type_ok = expected_type is None or _type_matches(expected_type, instance)

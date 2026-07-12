@@ -412,6 +412,119 @@ class FrozenSchemaArtifactTests(SchemaAssertions):
             schema_path.write_bytes(kernel.canonical_json_bytes(chain))
             self.assertEqual(kernel.load_schema(schema_path), chain)
 
+    def test_thousand_definition_ref_chain_with_siblings_is_iterative_and_conjunctive(self):
+        chain = {
+            "$schema": "https://json-schema.org/draft/2020-12/schema",
+            "$id": kernel.SCHEMA_ID,
+            "$defs": {},
+        }
+        for index in range(1000):
+            chain["$defs"][f"x{index}"] = (
+                {"$ref": f"#/$defs/x{index + 1}", "const": None}
+                if index < 999
+                else {"type": "null", "const": None}
+            )
+
+        self.assertEqual(kernel.validate_schema_document(chain), ())
+        self.assertEqual(kernel.validate_named_definition(chain, "x0", None), ())
+        issues = kernel.validate_named_definition(chain, "x0", False)
+        self.assertSchemaFailure(issues)
+        self.assertTrue(any(issue.message == "value does not equal const" for issue in issues))
+        self.assertTrue(any("expected null" in issue.message for issue in issues))
+
+    def test_uri_fragment_percent_decoding_is_utf8_strict_and_pointer_aware(self):
+        referenced = copy.deepcopy(self.schema)
+        referenced["$defs"].update({
+            "a b": {"type": "string"},
+            "café": {"type": "integer"},
+            "a/b": {"type": "boolean"},
+            "spaceTarget": {"$ref": "#/$defs/a%20b"},
+            "utf8Target": {"$ref": "#/$defs/caf%C3%A9"},
+            "pointerTarget": {"$ref": "#/$defs/a%7E1b"},
+        })
+
+        self.assertEqual(kernel.validate_schema_document(referenced), ())
+        for name, valid, invalid in (
+            ("spaceTarget", "ok", 1),
+            ("utf8Target", 1, "no"),
+            ("pointerTarget", True, 1),
+        ):
+            with self.subTest(name=name):
+                self.assertEqual(
+                    kernel.validate_named_definition(referenced, name, valid), ()
+                )
+                self.assertSchemaFailure(
+                    kernel.validate_named_definition(referenced, name, invalid)
+                )
+
+        for fragment in ("%", "%2", "%GG", "%FF", "%C3%28"):
+            with self.subTest(malformed_fragment=fragment):
+                malformed = copy.deepcopy(referenced)
+                malformed["$defs"]["badFragment"] = {
+                    "$ref": f"#/$defs/{fragment}",
+                }
+                issues = kernel.validate_schema_document(malformed)
+                self.assertSchemaFailure(issues)
+                self.assertTrue(any("$ref" in issue.path for issue in issues))
+
+    def test_nested_resource_identifiers_and_dialects_are_rejected(self):
+        for keyword, value in (
+            ("$id", "nested-resource"),
+            ("$schema", self.schema["$schema"]),
+        ):
+            with self.subTest(keyword=keyword):
+                nested = copy.deepcopy(self.schema)
+                nested["$defs"]["nestedResource"] = {
+                    keyword: value,
+                    "type": "string",
+                }
+                issues = kernel.validate_schema_document(nested)
+                self.assertSchemaFailure(issues)
+                self.assertIn(
+                    kernel.Issue(
+                        f"$.$defs.nestedResource.{keyword}",
+                        "KIN-E-SCHEMA-KEYWORD",
+                        f"nested {keyword} is unsupported in the single-resource evaluator",
+                    ),
+                    issues,
+                )
+
+        root_only = {
+            "$schema": self.schema["$schema"],
+            "$id": kernel.SCHEMA_ID,
+            "$defs": {"x": {"type": "string"}},
+        }
+        self.assertEqual(kernel.validate_schema_document(root_only), ())
+
+    def test_large_integer_decoder_value_error_is_typed_and_stable(self):
+        payload = (
+            b'{"$defs":{"x":{"minimum":' + b'1' * 5000
+            + b'}},"$id":"https://emergentism.org/schema/kintsugi/1.0.0",'
+              b'"$schema":"https://json-schema.org/draft/2020-12/schema"}\n'
+        )
+
+        with tempfile.TemporaryDirectory() as directory:
+            schema_path = Path(directory) / "large-integer-schema.json"
+            schema_path.write_bytes(payload)
+            failures = []
+            for _ in range(2):
+                with self.assertRaises(kernel.KintsugiError) as caught:
+                    kernel.load_schema(schema_path)
+                failures.append((
+                    caught.exception.code,
+                    caught.exception.path,
+                    caught.exception.message,
+                ))
+        self.assertEqual(failures[0], failures[1])
+        self.assertEqual(
+            failures[0],
+            (
+                "KIN-E-JSON",
+                str(schema_path),
+                "JSON value exceeds the supported decoder limits",
+            ),
+        )
+
     def test_deep_json_load_failure_is_typed_and_stable(self):
         payload = (
             b'{"$defs":{"x":{"const":' + b'[' * 1000 + b'null' + b']' * 1000
