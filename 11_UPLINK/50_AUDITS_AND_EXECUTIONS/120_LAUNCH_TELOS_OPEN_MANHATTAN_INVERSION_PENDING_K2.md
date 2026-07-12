@@ -1,7 +1,7 @@
 ---
-title: "120 — Launch telos: the open-source Manhattan inversion — clearest lens, most compressed map, best compass to reality in toto — STAGED, pending K2"
+title: "120 — Launch telos: the open-source Manhattan inversion — clearest lens, most compressed map, best compass to reality in toto — K2-COUNTERSIGNED"
 date: 2026-07-12
-status: "[D] STAGED — the founder's positioning brief for the website rebuild, captured verbatim with the inversion doctrine and its four structural consequences. Governs the new site's information architecture. Pending K2 countersign; the site build implements against this."
+status: "[E] K2-COUNTERSIGNED 2026-07-12 ('Accept' [both] on the take-over). The founder's positioning brief is canonical: open-source Manhattan inversion. Internal engine = ambitious; public face = humble compass. The four structural consequences bind the new IA: open-source is structural, orient not convert, the compass is turnable and testable, ambition lives in scope not volume. Sighting 12 is the membrane: 'claim the inversion and you are the cult; be it and you are the antidote.' Site build implements against this (commits d8e1cfc take-over + 81bf186 axioms propagation)."
 evidence_tier: "[D] the brief (founder intent, verbatim); [I] the inversion reading; [S/I] the self-consistency argument (sighting 12)"
 verdict_extends: "receipt 119 (sightings, esp. #12) · the in-chat sighting set 12–17 · receipt 116 (recurrence-not-reduction) · the anti-sermon / K4"
 owner: "K2 (the telos is the founder's, verbatim). Software staged."

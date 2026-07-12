@@ -1,7 +1,7 @@
 ---
 title: "109 — The Proof-Layer Audit: four false lemmas under the honest tiers (the fact-class 108 left open)"
 date: 2026-07-12
-status: "[D] STAGED — PENDING K2 COUNTERSIGN. A one-time proof-layer pass AFTER the 108 STOP, admissible only because it found hand-verifiable arithmetic/topology ERRORS (facts), not coherence re-litigation. It does NOT reopen the keel — 108's keel resolution stands and is deferred to whole. NOTHING applied to canon; all four false-math repairs + the register-overreach demotions are STAGED for K2. Re-endorses 108's ruling: the binding constraint is now V (contact), not another audit."
+status: "[E] K2-COUNTERSIGNED 2026-07-12 ('Accept'). The four false-math repairs + the register-overreach demotions are SHIPPED. Re-endorses 108's ruling: the binding constraint is now V (contact), not another audit. Receipt 108's keel resolution stands and is deferred to whole."
 evidence_tier: "[S] the four false-math breaks — each hand-verified at file:line, each with a stated counterexample K2 can check in one line; [I] the register-overreach class (an earned weaker result stated one modal notch too high); [C] nothing new asserted"
 verdict_extends: "receipt 108 (the STOP + keel resolution); the 2-run 14-claim trial. This is the proof-LAYER pass 108 did not run (108 churned load-bearing CLAIMS; 109 checks the supporting LEMMAS)."
 owner: "K2 + AI co-owner"

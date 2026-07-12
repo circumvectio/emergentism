@@ -1,7 +1,7 @@
 ---
-title: "111 — The Compass staged: a navigational compression the reader can carry and reject — STAGED, pending K2"
+title: "111 — The Compass staged: a navigational compression the reader can carry and reject — K2-COUNTERSIGNED"
 date: 2026-07-12
-status: "[D] STAGED — PENDING K2 COUNTERSIGN. The compass artifact (00_THE_COMPASS.md) is the one thing the formal-logic audit said was missing: a reader-facing navigational surface a stranger can carry, use, and reject. It is NOT the map, NOT the territory, NOT the goal. It is the needle. Routes through 01_EMERGENTISM/AGENTS.md; K2 signs."
+status: "[E] K2-COUNTERSIGNED 2026-07-12 ('Accept'). The compass artifact (00_THE_COMPASS.md) is canonical: a reader-facing navigational surface a stranger can carry, use, and reject. It is NOT the map, NOT the territory, NOT the goal. It is the needle. The port to /compass/ wing ships in the same V-forcing arc (commit 0d06219). Receipt 121's corrected generators + open negative are binding."
 evidence_tier: "[I] the compass as navigational compression (untested by any external reader); [S] the constitution it orients within (the 5+1, ratified)"
 verdict_extends: "receipt 107 (the open loop) · receipt 110 (formal-logic audit + K2-delegation refusal) · the Open Canon Covenant"
 owner: "K2 + AI co-owner"
