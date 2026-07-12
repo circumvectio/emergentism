@@ -41,3 +41,9 @@ node_modules/
 .next/
 dist/
 build/
+# /build/ is a PUBLIC WING (the 7-wing restructure), not a build artifact — re-include it:
+!build/
+!build/**
+
+# Archive directories — old versions preserved per K3, not deployed
+_archive/
