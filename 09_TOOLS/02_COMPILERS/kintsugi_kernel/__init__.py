@@ -30,6 +30,15 @@ from .codec import (
     text_hash,
 )
 from .diagnostics import BaselineResult, Issue, KintsugiError
+from .schema import (
+    ROOT_ROLES,
+    SCHEMA_ID,
+    SCHEMA_KEYWORDS,
+    load_schema,
+    validate_named_definition,
+    validate_schema_document,
+    validate_schema_instance,
+)
 
 
 __all__ = [
@@ -46,10 +55,14 @@ __all__ = [
     "KintsugiError",
     "PYTEST_ENV",
     "ROOT",
+    "ROOT_ROLES",
+    "SCHEMA_ID",
+    "SCHEMA_KEYWORDS",
     "canonical_json_bytes",
     "compare_baseline",
     "infer_exception",
     "load_contract",
+    "load_schema",
     "normalize_lf",
     "parse_collected_nodes",
     "parse_failed_node_lines",
@@ -63,4 +76,7 @@ __all__ = [
     "safe_repo_path",
     "text_hash",
     "validate_contract",
+    "validate_named_definition",
+    "validate_schema_document",
+    "validate_schema_instance",
 ]

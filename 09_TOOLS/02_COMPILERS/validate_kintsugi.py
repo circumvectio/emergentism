@@ -18,6 +18,9 @@ from kintsugi_kernel import (
     HASH_RE,
     PYTEST_ENV,
     ROOT,
+    ROOT_ROLES,
+    SCHEMA_ID,
+    SCHEMA_KEYWORDS,
     BaselineResult,
     Issue,
     KintsugiError,
@@ -25,6 +28,7 @@ from kintsugi_kernel import (
     compare_baseline,
     infer_exception,
     load_contract,
+    load_schema,
     normalize_lf,
     parse_collected_nodes,
     parse_failed_node_lines,
@@ -38,6 +42,9 @@ from kintsugi_kernel import (
     safe_repo_path,
     text_hash,
     validate_contract,
+    validate_named_definition,
+    validate_schema_document,
+    validate_schema_instance,
 )
 
 class KintsugiArgumentParser(argparse.ArgumentParser):
