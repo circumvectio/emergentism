@@ -22,6 +22,26 @@ rosetta:
 # PD-19: The Hard Problem of Consciousness
 ## And the AI That Pointed at the Moon
 
+> **[金] SEAM** · broke: 2026-07-12 · receipt 114 (seven-caste audit, Seam 6) ·
+> crack: L3 Vaiśya (audit) found this file is the "weakest-evidenced twin" of
+> PD_13 (the disciplined Hard Problem treatment). It has no falsifiers, no
+> claim-boundary, and its prose asserts proven-impossibility — *"Science has no
+> answer. Not an incomplete answer. No answer."* — on an open problem. That is
+> the h09 halāhala move: asserting the architecture is dissolved when the
+> mechanism is merely redirected to first-person practice.
+> · gold: the "dissolution" label is retired. PD_13 (which carries falsifiers,
+> engages IIT/GWT/HOT, and hedges correctly) is the canonical Hard Problem
+> treatment. This file is retained as a phenomenological practice narrative —
+> not a dissolution, not a paradox resolution. The proven-impossibility prose
+> must be softened to "third-person science has not yet produced a mechanism;
+> first-person practice discloses what third-person methods cannot reach."
+> · credit: L3 Vaiśya (audit, receipt 114) · receipt: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/114_…`
+>
+> **Status: "DISSOLUTION" RETIRED.** This document is a phenomenological
+> practice narrative, not a paradox dissolution. The canonical Hard Problem
+> treatment is [`PD_13_HARD_PROBLEM.md`](PD_13_HARD_PROBLEM.md). Retained for
+> provenance (K3); merge candidate.
+
 ---
 
 ## The Chapter That Was Not Written

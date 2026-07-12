@@ -17,11 +17,32 @@ Menexus GmbH, 2026
 
 **Evidence Tier:** [A]/[S] — standard complex analysis plus novel algebraic interpretation
 
+> **[金] SEAM** · broke: 2026-07-12 · receipt 114 (seven-caste audit, Seam 1) ·
+> crack: this paper marks F(0) = 0·∞ = 1 as `[A]` / "a theorem of standard
+> complex analysis" throughout, conflating two distinct objects. The removable-
+> singularity theorem licenses the continuous extension of z·(1/z) to 1 — that
+> is `[A]`. But *writing that value as "0 · ∞ = 1"* reintroduces the indeterminate
+> product the theorem was invoked to avoid; the notation "0 · ∞ = 1" is the
+> **emblem register** (⊙ = • × ○), which the Settled Canon Registry rules as
+> `[S]` frame-register, "never field arithmetic… never marked `[A]`." The
+> conflation is the precise move C2 convicted of tautology-laundering.
+> · gold: the register distinction is now stated at the top of the paper —
+> F(0) = 1 is `[A]` (the function value); "0 · ∞ = 1" is `[S]` (the emblem
+> notation). The frame product theorem stands at `[A]`; the emblem identity
+> that names it is `[S]`. Every downstream paper that cites this result inherits
+> the correction.
+> · credit: L1 Caṇḍāla (firewall, receipt 114) · receipt: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/114_…`
+>
+> **Reading instruction (per seam above):** wherever this paper writes
+> "F(0) = 0 · ∞ = 1," the `[A]`-tier result is F(0) = 1 (the removable-
+> singularity extension of z·(1/z)). The notation "0 · ∞ = 1" is the
+> emblem-register name for that result — `[S]`, never field arithmetic.
+
 ---
 
 ## Abstract
 
-We distinguish two operations that have been conflated under the notation "0 × ∞" on the Riemann sphere ℂP¹. The *general product* μ(a, b) = a · b, evaluated at (0, ∞), is path-dependent and correctly left undefined in standard extended arithmetic. The *frame product* F(z) = z · σ(z), where σ(z) = 1/z is the Möbius involution, is the product of each element with its own involute. We prove that F(z) = 1 for all z ∈ ℂP¹, including z = 0, by the Riemann removable singularity theorem. The frame product is well-defined, unambiguous, and equals the multiplicative identity everywhere on the sphere. Crucially, the equation Zero-Sum Resolution Equation must not be read as mere arithmetic (where 0 × x = 0), but as the interaction of **transcendent operators** denoting topological closure. Understood as F(0) = 0 · σ(0) = 0 · ∞ = 1, it is not an abuse of notation but a theorem of standard complex analysis. We develop the algebraic consequences: the frame {0, 1, ∞} with the frame product constitutes a self-referential fixed-point structure in which the identity element is the product of the two absorbing elements through the involution, and the involution is the map whose fixed point is the identity element. We prove this structure is unique on ℂP¹ and propose that the failure of associativity when the frame product is mixed with ordinary arithmetic is not an error but a structural signature of the distinction between the frame and the numbers it generates.
+We distinguish two operations that have been conflated under the notation "0 × ∞" on the Riemann sphere ℂP¹. The *general product* μ(a, b) = a · b, evaluated at (0, ∞), is path-dependent and correctly left undefined in standard extended arithmetic. The *frame product* F(z) = z · σ(z), where σ(z) = 1/z is the Möbius involution, is the product of each element with its own involute. We prove that F(z) = 1 for all z ∈ ℂP¹, including z = 0, by the Riemann removable singularity theorem `[A]`. The frame product is well-defined, unambiguous, and equals the multiplicative identity everywhere on the sphere. Crucially, the equation Zero-Sum Resolution Equation must not be read as mere arithmetic (where 0 × x = 0), but as the interaction of **boundary-frames** (Titans) denoting topological closure. Understood as F(0) = 0 · σ(0) = 0 · ∞ = 1, the *function value* F(0) = 1 is `[A]` (a theorem of standard complex analysis); the *notation* "0 · ∞ = 1" is `[S]` — the emblem-register name (⊙ = • × ○) for that value, never field arithmetic. We develop the algebraic consequences: the frame {0, 1, ∞} with the frame product constitutes a self-referential fixed-point structure in which the identity element is the product of the two absorbing elements through the involution, and the involution is the map whose fixed point is the identity element. We prove this structure is unique on ℂP¹ and propose that the failure of associativity when the frame product is mixed with ordinary arithmetic is not an error but a structural signature of the distinction between the frame and the numbers it generates.
 
 **Keywords:** Riemann sphere, Möbius involution, removable singularity, frame product, projective arithmetic, self-referential structure
 
@@ -68,9 +89,7 @@ on the domain where the right-hand side is defined (i.e., z ∈ ℂ \ {0}).
 
 ### 2.2 The Theorem
 
-**Theorem 2.3 (Frame product identity).** The frame product F extends uniquely and continuously to all of Ĉ, with F(z) = 1 for all z ∈ Ĉ. In particular:
-
-$$F(0) = 0 \cdot \sigma(0) = 0 \cdot \infty = 1$$
+**Theorem 2.3 (Frame product identity).** The frame product F extends uniquely and continuously to all of Ĉ, with F(z) = 1 for all z ∈ Ĉ. In particular, F(0) = 1 `[A]` (the removable-singularity extension). The notation "0 · ∞ = 1" is the emblem-register name for this value `[S]` — it names the result, it is not field arithmetic:
 
 **Proof.**
 

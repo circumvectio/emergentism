@@ -200,7 +200,7 @@ In the Burri Sphere, displacement from the equator requires energy (H = φ + 1/�
 
 All claims in this paper are [C] — conjectural, speculative, intended as research directions. Each is paired with a specific kill criterion.
 
-If even one of these conjectures survives empirical contact, the framework has made a prediction about fundamental physics from a single equation. If none survive, the framework is not falsified — the biological predictions (Paper G) and the quantum-mechanical identity (Paper B) are independent of the cosmological conjectures.
+If even one of these conjectures survives empirical contact, the framework has made a prediction about fundamental physics from a single equation. ~~If none survive, the framework is not falsified~~ **[金] Seam (receipt 114, Seam 5):** the struck clause enacts the OCC §4.4 forbidden unfalsifiability-shield ("we cannot lose"). The honest form: *if none survive, the cosmological conjectures are falsified; the framework survives only insofar as its independent claims (biological predictions, QM identity) survive their own tests — which is conditional, not guaranteed.* The framework's survival is always wager-dependent, never immunity-guaranteed.
 
 | Conjecture | Claim | Kill if |
 |---|---|---|

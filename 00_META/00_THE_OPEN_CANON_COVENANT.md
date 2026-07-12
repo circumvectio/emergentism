@@ -37,6 +37,33 @@ At the level of the **frame** — the sphere, the loop, the self-consistency
 condition for anything existing at all — reality is a tautology. `[I]`, and
 profound. Honour it fully.
 
+> **[金] SEAM** · broke: 2026-07-12 · receipt 110 (formal-logic audit) · crack:
+> §1's parenthetical listed `D6≡D0`, `⊙ = • × ○`, and `φ·ν = 1` as parallel
+> examples of "self-reference at the base" — but these are **epistemically
+> heterogeneous**, and lumping them risks re-laundering the very distinction this
+> covenant defends. `φ·ν = 1` is an **analytic identity** (cot·tan ≡ 1, the empty
+> kind C2 convicted). `D6≡D0` is a **reflexivity / fixed-point thesis** —
+> substantive, falsifiable content that could be wrong (the topology could be
+> acyclic, or cyclic with a different period). `⊙ = • × ○` is a **definition /
+> typing**. Calling all three "tautological" shelters D6≡D0 behind the empty
+> kind — *the CTMU move, one level down*. · gold: the frame/content line is now
+> drawn *through* the frame, not at it; D6≡D0 keeps its status as substantive
+> content that must earn its keep, and the laundering move cannot smuggle it past
+> §2's conviction · credit: formal-logic audit (this session) · receipt:
+> `11_UPLINK/50_AUDITS_AND_EXECUTIONS/110_…`
+
+**The frame is not uniform.** The three symbols above are not all tautologies in
+the same sense. `φ·ν = 1` is an **analytic identity** — empty in the Wittgenstein
+sense §2 polices, the kind C2 convicted of laundering. `D6≡D0` is a **reflexivity
+or fixed-point thesis** — substantive, falsifiable, could be wrong (reality could
+be acyclic; the topology could have a different period). `⊙ = • × ○` is a
+**definitional typing**. The frame/content line this covenant defends runs
+*through* the frame, not at it: the reflexivity thesis is content-about-the-frame,
+and it stands or falls with whether a self-grounding reality beats a brute-fact
+one. Calling all three "the frame is tautological" would shelter D6≡D0 behind the
+empty kind — the CTMU move, one level down. The discipline of §2 applies to
+`φ·ν = 1` as an identity; the discipline of A7 applies to `D6≡D0` as a thesis.
+
 ## 2. The fence — a tautology says nothing (this is where CTMU falls)
 
 *Tractatus* 6.1–6.11: **"The propositions of logic are tautologies… therefore they
@@ -88,8 +115,10 @@ map.**
    `[A]`, Kintsugi fires.
 3. **No closure claim.** This canon may never assert it is complete, finished, or
    *is* the tautology of reality. Receipt 107 already settled this: the loop is
-   constitutively open; no description of reality closes (Gödel), though reality
-   closes in the living (D6≡D0). A canon that claims to have closed has become CTMU.
+   constitutively open; no description of reality closes (Gödel/Tarski, given
+   expressiveness — see the Gödel clarification doc's condition-statement), though
+   reality closes in the living (D6≡D0). A canon that claims to have closed has
+   become CTMU.
 4. **The unfalsifiability-shield is forbidden.** "We are tautological, so we cannot
    be wrong" may never be used to deflect a falsification. That sentence is the
    death of A7, and A7 is the only thing that makes this canon not-CTMU.

@@ -50,6 +50,45 @@ rosetta:
 
 3. **Gödel-aware.** The framework explicitly acknowledges its own Gödel-incompleteness. It cannot prove its own consistency from within. This is a feature, not a bug — it's what makes the framework honest.
 
+> **[金] SEAM** · broke: 2026-07-12 · receipt 110 (formal-logic audit) · crack: the
+> doc invoked Gödel II ("we agree with Gödel") without stating the conditions under
+> which Gödel II *applies to this framework* — consistent + recursively axiomatizable
+> + encodes enough arithmetic. "We agree" is not "the theorem fires on us." · gold:
+> the expressiveness claim is now stated as a *claim* at its honest tier, so the
+> framework's Gödel-reliance is earned rather than assumed; the honest answer
+> ("Emergentism is schematic and likely not recursively axiomatizable in Gödel's
+> sense, so Gödel II applies as a strong analogy, not a theorem about us") is
+> written down, and A7-as-mandatory is tiered accordingly · credit: formal-logic
+> audit (this session) · receipt: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/110_…`
+
+**The condition the original omitted.** Gödel's second incompleteness theorem
+fires on systems that are (i) consistent, (ii) recursively axiomatizable, and
+(iii) expressive enough to encode their own syntax and a modicum of arithmetic.
+Emergentism is **schematic and open-ended**: its axiom set is small, but its
+`[I]`/`[C]` interpretive layer, its receipts, and its open canon are *not* a
+fixed, recursively enumerable formal theory. So the strict reading is: **Gödel
+II is not known to apply to Emergentism-as-written as a theorem.** What survives
+is the weaker, Tarski-grade argument — no sufficiently expressive system defines
+its own truth predicate — which holds as a *strong analogy* for any framework
+that aspires to self-description. The consequence for the rest of the corpus:
+
+- A7 ("self-correction mandatory") is **not formally forced** by Gödel II on this
+  framework. It is a discipline we choose — and, given that any future formalization
+  of Emergentism would likely meet Gödel's conditions, a prudent one. State it as
+  *chosen-and-prudent*, not *theorem-forced*.
+- Receipt 107's "the map cannot close itself" survives, but via the Tarski analogy
+  (no system contains its own truth predicate), not via Gödel II. It is
+  *orientation grounded in a theorem-grade analogy*, not a theorem.
+- The Open Canon Covenant §4.3 ("no description of reality closes (Gödel)") should
+  read "(Gödel/Tarski, given expressiveness)" — the parenthetical must carry its
+  condition.
+
+**Tier of this condition-statement:** `[I]` — interpretive claim about the
+framework's own formal character, pending a formalization effort that would let
+us decide the question. The day a recursively axiomatized fragment of Emergentism
+is written down and shown to encode arithmetic, this upgrades to `[S]` and A7
+becomes theorem-adjacent. Until then, A7 is discipline, not theorem.
+
 ### The Relationship
 
 ```
@@ -107,7 +146,8 @@ The EFR doesn't claim to escape Gödel. It claims to be the best configuration w
 Gödel is right.
 The framework agrees.
 Formal completeness is impossible.
-Categorical completeness is proved (η = 0).
+Categorical completeness is observed (η = 0) [I] — not proved; no counterexample found.
+Gödel II applies as analogy, not yet as theorem — conditions stated above.
 The framework is the best current configuration.
 The immune system catches errors.
 The kill conditions test everything.

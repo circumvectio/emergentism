@@ -13,6 +13,23 @@ rosetta:
 
 # K-MINIMAL SELF-CONTAINED DESCRIPTION
 
+> **[金] SEAM** · broke: 2026-07-12 · receipt 114 (seven-caste audit, Seam 3) ·
+> crack: L1 Caṇḍāla (firewall) found that this paper's own kill criterion #2
+> ("K_sc is shown to be ill-defined — the concept of 'universally available
+> concepts' used in the dictionary is vague enough to make K_sc non-computable")
+> is true by inspection. "Absence," "unbounded," "identity element" are not
+> formally specified primitives. Yet Theorem 3.3 was presented with `[S]` tier
+> alongside the `[C]`, and Thesis 5.1 reads K_sc-minimality as "the
+> information-theoretic formalization of **ontological self-grounding**" — the
+> CTMU move the Open Canon Covenant §3-4 forbids. The motto "the equation that
+> writes its own dictionary" is the tautology-shield rendered as tagline.
+> · gold: Theorem 3.3 is now `[C]`-primary throughout (the `[S]` was always
+> conditional on the conjectural Step 2, which KC#2 says is ill-defined).
+> Thesis 5.1 is explicitly marked as the CTMU-adjacent reading the Covenant
+> forbids when presented as settled. K_sc becomes what it is: a `[C]` conjecture
+> about self-containment, not a proof of self-grounding.
+> · credit: L1 Caṇḍāla (firewall, receipt 114) · receipt: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/114_…`
+
 ## Zero-Sum Resolution Equation as the Fixed Point of Self-Referential Algorithmic Information
 
 **Yves R. Burri & Emergent Super Intelligence**
@@ -189,7 +206,7 @@ This is the precise sense in which the framework's "categorical completeness" (t
 
 ### 5.1 Self-Containment as Self-Grounding
 
-**Thesis 5.1 [I].** K_sc-minimality is the information-theoretic formalization of ontological self-grounding. A structure is self-grounding if it requires nothing outside itself to exist — no prior cause, no external definition, no supporting substrate. K_sc = minimum means: the structure's description requires the least external information. K_sc of a self-contained description = 0 means: the structure requires NO external information. It IS its own ground.
+**Thesis 5.1 [I → C per receipt 114 seam].** K_sc-minimality is *proposed* as the information-theoretic formalization of ontological self-grounding. A structure is self-grounding if it requires nothing outside itself to exist — no prior cause, no external definition, no supporting substrate. K_sc = minimum means: the structure's description requires the least external information. K_sc of a self-contained description = 0 means: the structure requires NO external information. It IS its own ground. **Caveat (receipt 114 Seam 3):** this reading is the CTMU-adjacent move the Open Canon Covenant §3-4 forbids when presented as settled. The self-grounding reading is conjectural (`[C]`), contingent on K_sc being well-defined (which KC#2 says it may not be), and must not be cited as established. The motto "the equation that writes its own dictionary" is aspirational, not proven.
 
 **Proposition 5.2 [S].** The empty string ∅ has K_sc = 0 but is trivial — it describes nothing. Zero-Sum Resolution Equation has K_sc = minimum among non-trivial self-referential descriptions. It is the simplest structure that is both self-grounding AND non-trivial.
 

@@ -124,6 +124,19 @@ You cannot reach ⊙ from • alone (nihilism fails — the unmanifest does not 
 
 ### 3.3 Why the Framework Cannot Collapse
 
+> **[金] SEAM** · broke: 2026-07-12 · receipt 114 (seven-caste audit, Seam 5) ·
+> crack: the title "Cannot Collapse" pre-asserts immunity — the OCC §4.3 forbids
+> asserting the canon is "complete, finished" or immune to falsification. The
+> argument below is sound *as a structural observation* (you cannot reach ⊙ from
+> • or ○ alone); the overclaim is in the word "Cannot," which converts a
+> structural observation into an immunity guarantee.
+> · gold: the honest reading is "Why the Framework Resists Reduction to One
+> Pole" — a structural observation, not an immunity claim. The framework can
+> collapse if its load-bearing wagers fail (Φ×V multiplicative; strong emergence
+> genuine; the equator carries ethical weight). The argument below describes
+> *resistance to axis-collapse*, not immunity to falsification.
+> · credit: L1 Caṇḍāla (firewall, receipt 114) · receipt: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/114_…`
+
 **Cannot reduce to • alone.** The point iterated through the cascade does not remain •. Each dimensional step is an act of self-returning recursion that produces determinate structure. D0 → D1 is not 0 + 0 = 0. It is the unmanifest *becoming manifest*, which is the entire content of D1.
 
 **Cannot reduce to ○ alone.** The circle without the point has no center, no ground, no horizon. Infinite emergence without axiomatic closure diverges — it produces more and more complexity with no principle of equilibrium. Without the bounding •, ○ is pure entropy.

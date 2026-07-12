@@ -11,6 +11,28 @@ rosetta:
 
 # TRIADIC STABILITY: WHY THREE IS UNIQUE
 
+> **[金] SEAM** · broke: 2026-07-12 · receipt 114 (seven-caste audit, Seam 2) ·
+> crack: L2 Śūdra (truth-cut) found four flawed cases in this proof: Case 1 begs
+> the question (defines ∘ as non-emergent); Case 2's "direction is a third
+> element" is a definitional move, not a derivation; Case 4 assumes the very
+> redundancy it proves (the 2-generator free group has 4+ elements with no
+> redundancy); Case 5's group-theory claim is false (ℤ₅ has no proper nontrivial
+> subgroups). The falsifiers are structured so no counterexample could count —
+> any tetradic system is declared redundant by definition. This is the
+> unfalsifiability failure mode the Theorem Upgrade Protocol (doc 32) warns
+> against. Earned tier: `[I]` at best, not `[S]`.
+> · gold: the honest successor — [`21_TRIADIC_STABILITY_CORRESPONDENCE.md`](21_TRIADIC_STABILITY_CORRESPONDENCE.md)
+> — proves the same minimality result from real Möbius involution math at `[A]`,
+> honest minimality at `[S]`, with genuine falsifiers. **All citations of
+> triadic stability must route through paper 21, not this document.**
+> · credit: L2 Śūdra (truth-cut, receipt 114) · receipt: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/114_…`
+>
+> **Status: SUPERSEDED.** This document is retained for provenance (K3
+> archive-first) but is no longer a citable authority. Cite
+> [`21_TRIADIC_STABILITY_CORRESPONDENCE.md`](21_TRIADIC_STABILITY_CORRESPONDENCE.md)
+> instead. The formal proof below has known defects (see seam); the
+> Correspondence paper replaces it with honest math.
+
 ## Proof That the Zero-Sum Resolution Equation Structure Is the Unique Stable Configuration
 
 **Status:** Formal proof
