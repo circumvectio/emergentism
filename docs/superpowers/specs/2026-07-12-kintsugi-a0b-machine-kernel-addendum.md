@@ -124,7 +124,7 @@ keyword is consumed by the restricted evaluator.
 
 ## 6. Pre-v1 claim contract additions
 
-Every claim gains five fields:
+Every claim gains six fields:
 
 ```text
 supportLinks: LIST[supportLink]              # may be empty
@@ -275,6 +275,14 @@ upgrade.
 For seams with no evidence upgrade, `upgradeEvidenceLinkIds` is absent. A
 repetition count, signature, receipt, or lifecycle change cannot populate it.
 
+`repairKind=RETIER` means a strict evidence-strength change in either direction,
+but its warrants are asymmetric. An upward RETIER is admissible only through
+the prospective-upgrade rules above; a downward RETIER is admissible only
+through the prior kill criterion below. Equal-strength RETIER is invalid. No
+other repair kind may change evidence strength. This pre-v1 clarification
+supersedes the parent's narrower prose that described RETIER only as a
+downgrade; it does not make upward movement automatic or score-based.
+
 ### 6.3 Kill criterion
 
 ```text
@@ -336,9 +344,11 @@ For `REPAIRED`, proposed `RETRACTED`, and `VERIFIED` seams, the unprefixed
 `supportLinks`, typed `upgradeCriterion`, typed `killCriterion`, and
 `survivingIfKilled` deep-equal the repaired current claim's next prospective
 contract. For `CONFIRMED` and `HELD_OPEN`, prior and current fields remain
-deep-equal because no repair exists. Actual evidence upgrades are judged
-against `priorUpgradeCriterion`; retiers and retractions are judged against
-`priorKillCriterion`. `beforeQuote`, `beforeHash`, the trial, and
+deep-equal because no repair exists. Upward RETIERs are judged against
+`priorUpgradeCriterion`; downward RETIERs and retractions are judged against
+`priorKillCriterion`. A retraction preserves evidence strength and changes the
+claim lifecycle to `RETIRED`; it cannot smuggle an upgrade or downgrade. The
+`beforeQuote`, `beforeHash`, the trial, and
 `evidenceBefore` preserve the failed historical form. The previous free-text
 seam `upgradeCriterion` and `killCriterion` fields are replaced before v1
 freeze; dual text/object forms are forbidden.
@@ -448,6 +458,194 @@ Rosetta projection may transfer a question, vocabulary, or proposed topology.
 It cannot transfer entailment, mechanism, causal law, independence, or evidence
 tier. The evaluator is not an NLP truth classifier.
 
+### 9.1 Closed antibody execution contract
+
+Every declared antibody is executable; the registry is not inert metadata.
+`LITERAL` and `REGEX` require `semanticEvaluator=null` and TEXT fixture payloads.
+`LITERAL` uses exact Unicode substring membership. `REGEX` uses the bounded
+`safeRegexSearch` language below, not Python's backtracking `re` engine. Source
+bytes decode as strict UTF-8 with no Unicode or newline normalization; invalid
+bytes fail `KIN-E-FIXTURE` at that path.
+
+`safeRegexSearch` compiles a pattern of at most 256 Unicode code points into a
+Thompson epsilon-NFA of at most 1,024 states and evaluates it in
+`O(pattern_states * source_code_points)` time. Its complete grammar is:
+
+```text
+expression  := branch ("|" branch)*
+branch      := piece*
+piece       := atom quantifier?
+atom        := literal | "." | character_class | "(" expression ")"
+quantifier  := "?" | "*" | "+"
+character_class := "[" "^"? class_item+ "]"
+class_item  := class_literal | class_literal "-" class_literal
+literal     := escaped_metachar | any code point outside .^$|?*+()[]\\
+class_literal := escaped_metachar | any code point outside ]-\\
+escaped_metachar := "\\" one-of .^$|?*+()[]-\\
+```
+
+Unescaped `^` is legal only as the first pattern token and unescaped `$` only
+as the last; they anchor the whole decoded source, never individual lines. Dot
+matches any Unicode code point except LF. Escapes quote only the literal
+metacharacters `.`, `^`, `$`, `|`, `?`, `*`, `+`, `(`, `)`, `[`, `]`, `-`,
+and `\\`; there are no backreferences, captures,
+lookarounds, named groups, brace quantifiers, inline flags, shorthand classes,
+or implementation-specific extensions. Class ranges compare Unicode scalar
+values and must ascend. Empty branches/classes, dangling escapes, malformed
+ranges, excess pattern/state size, or any other token fail `KIN-E-FIXTURE`.
+The executor maintains state sets rather than paths, so nested forms such as
+`(a+)+$` remain linear rather than catastrophically backtracking.
+
+Antibody globs use a closed segment-aware grammar. A pattern is a safe
+repository-relative POSIX path: no leading or trailing slash, backslash, empty,
+`.` or `..` segment. `**` is legal only as an entire segment and matches zero
+or more complete path segments. Inside any other segment, `*` matches zero or
+more characters but never `/`; `?`, bracket classes, escapes, and every other
+glob metacharacter are forbidden. Matching is anchored to the complete path.
+Repository scans include a path only when at least one `scopeGlobs` entry and
+no `excludeGlobs` entry matches. The evaluator returns the sorted resolved
+include/exclude inventories so a broad exclusion is inspectable and hashable.
+
+Fixture kind supplies explicit test context rather than inferred language
+understanding: `POSITIVE` is a live assertion expected to trigger exactly its
+`expectedAntibodyIds`; `NEGATIVE` is a live non-trigger; and `QUOTATION` and
+`HISTORICAL` are declared non-live contexts that must not trigger a live-source
+violation even when their text contains the protected pattern. Actual source
+scans do not infer quotation or historical status; active scope and archive
+exclusions must declare it. Every positive, negative, quotation, and historical
+fixture named by an antibody is executed, and actual trigger IDs must deep-equal
+the fixture's expected set.
+
+A QUOTATION or HISTORICAL fixture pass tests fixture dispatch only. It never
+warrants suppressing a matching span inside an active source: v1 has no NLP or
+typed-span quotation classifier, so an in-scope source match remains visible for
+review unless its whole path is explicitly and lawfully excluded.
+
+`SEMANTIC_FIXTURE` requires `payloadKind=JSON`. Its payload parses as exactly the
+named evaluator record below; the evaluator returns only a structural PASS or a
+typed `KIN-E-FIXTURE` failure. It never upgrades evidence or decides empirical
+truth. The seven non-Rosetta payloads are:
+
+```text
+verdictMatrixPayload = {
+  validityVerdict: VALID | INVALID | NOT_APPLICABLE,
+  soundnessVerdict:
+    SUPPORTED | CONDITIONALLY_SUPPORTED | UNSUPPORTED |
+    REFUTED | NOT_APPLICABLE,
+  verdict:
+    VALID_SOUND | VALID_CONDITIONAL | VALID_UNSUPPORTED_PREMISE |
+    INVALID | UNDERDETERMINED | DEFINITIONAL | OPEN_CONJECTURE | REFUTED
+}
+
+justiceContextPayload = {
+  claimType: CLAIM_TYPE,
+  modality: MODALITY,
+  justiceScope: JUSTICE_SCOPE,
+  authorityScope: NONE | PRIVATE_DAV | PUBLIC_DAV | OTHER,
+  authorityEffect:
+    NONE | DESCRIPTIVE | DISCRETIONARY | CONSEQUENTIAL |
+    CONSTITUTIONAL_AUTOMATIC,
+  evidenceLifecycle: DRAFT | ACTIVE | RETIRED,
+  justiceContext: justiceContext | null
+}
+
+receiptRolePayload = {
+  recordKind: SOURCE_RECORD | PHASE_RECEIPT,
+  sourceKind: OWNER | SUPPORT | COMPRESSION | PUBLIC | RECEIPT | null,
+  authorityRole: SEMANTIC_OWNER | EVIDENCE | DERIVATIVE | PROVENANCE | null,
+  receiptId: ID | null,
+  phase: A | B | C | null,
+  path: PATH,
+  status: DRAFT | COMPLETE | VERIFIED | null,
+  requestedUse:
+    PROVENANCE | CLAIM_OWNER | PHASE_DEPENDENCY |
+    EVIDENCE_UPGRADE | CANONICAL_PHASE_RECEIPT
+}
+
+registerIndexPayload = {
+  symbol: TEXT,
+  fromRegister: REGISTER_ID,
+  toRegister: REGISTER_ID,
+  relation:
+    SAME_REGISTER | DISTINCT_TYPED_TERM | EXPLICIT_BRIDGE |
+    UNMARKED_SUBSTITUTION,
+  bridgeClaimId: ID | null,
+  requestedInference: TYPED_REFERENCE | ENTAILMENT | MECHANISM
+}
+
+quantumMeasurePayload = {
+  probabilityObject: EVENT_MEASURE | NORMALIZATION_SCALAR,
+  requestedOperation: SAMPLE_OUTCOME | CHECK_NORMALIZATION,
+  interpretiveClaim:
+    NONE | CORRESPONDENCE | LITERAL_EXTRA_DIMENSION | UNIVERSAL_COLLAPSE
+}
+
+optionConePayload = {
+  physicalConstraint: C_BOUNDED | SUPERLUMINAL,
+  optionClaim: MODELED_REACHABILITY | PHYSICAL_CONE_EXPANSION,
+  futureInfluence: ANTICIPATORY_MODEL | PHYSICAL_RETROCAUSALITY,
+  commitmentKind: PARTIAL_RELATION | TOTAL_PREDICTOR
+}
+
+trophicAggregatorPayload = {
+  quantityKind: HUMAN_INVESTMENT_PROXY | PHYSICAL_ENERGY,
+  aggregationBasis: DECLARED_PROXY | MEASURED_PHYSICAL_SUM | METAPHORICAL,
+  conservationClaim: NONE | EMPIRICALLY_TESTED | ASSUMED,
+  persistentSharedTrace: BOOLEAN,
+  carrierTurnoverObserved: BOOLEAN,
+  laterSelectionReweightingObserved: BOOLEAN,
+  requestedInference:
+    DESCRIPTIVE_AGGREGATION | EGREGOREOTYPE_CANDIDATE | LITERAL_ENERGY_LAW
+}
+```
+
+The predicates are closed:
+
+- `VERDICT_MATRIX` passes exactly the verdict matrix already frozen in the
+  parent design.
+- `JUSTICE_CONTEXT` applies the same normative-premise-independent Justice and
+  authority shape rules as a claim. A null context represents absence; it is
+  legal only where neither Justice scope nor non-`NONE` authority effect
+  requires the object.
+- `RECEIPT_ROLE` is the following exact tagged truth table. For
+  `SOURCE_RECORD`, `sourceKind` and `authorityRole` are non-null while
+  `receiptId`, `phase`, and `status` are null; the source-role matrix must pass.
+  `PROVENANCE` passes exactly for authority role `PROVENANCE`, and `CLAIM_OWNER`
+  passes exactly for `OWNER`/`SEMANTIC_OWNER`; the other three requested uses
+  fail. For `PHASE_RECEIPT`, `sourceKind` and `authorityRole` are null while
+  typed receipt ID, phase, exact canonical receipt path, and status are
+  non-null. `PROVENANCE` and `CANONICAL_PHASE_RECEIPT` pass at any declared
+  status; `PHASE_DEPENDENCY` passes only at VERIFIED; `CLAIM_OWNER` and
+  `EVIDENCE_UPGRADE` always fail.
+- `REGISTER_INDEX` passes `TYPED_REFERENCE` exactly for: equal registers with
+  `SAME_REGISTER` and a null bridge; unequal registers with
+  `DISTINCT_TYPED_TERM` and a null bridge; or unequal registers with
+  `EXPLICIT_BRIDGE` whose non-null claim ID resolves. Every other tuple and all
+  `UNMARKED_SUBSTITUTION` cases fail. `ENTAILMENT` and `MECHANISM` always fail
+  in this evaluator; they must be reclassified as a separately validated
+  dependency claim rather than passing merely because this fixture names a
+  bridge.
+- `QUANTUM_MEASURE` accepts only EVENT_MEASURE/SAMPLE_OUTCOME or
+  NORMALIZATION_SCALAR/CHECK_NORMALIZATION. `NONE` and `CORRESPONDENCE` are the
+  only non-failing interpretation labels; literal extra dimensions and a
+  universal interpretation-independent collapse claim fail.
+- `OPTION_CONE` passes only the tuple `C_BOUNDED`, `MODELED_REACHABILITY`,
+  `ANTICIPATORY_MODEL`, `PARTIAL_RELATION`.
+- `TROPHIC_AGGREGATOR` passes `DESCRIPTIVE_AGGREGATION` for an explicitly
+  declared human-investment proxy with no conservation claim, or for a measured
+  physical sum whose conservation claim is marked empirically tested. An
+  `EGREGOREOTYPE_CANDIDATE` additionally requires the proxy form plus all three
+  persistent-trace/carrier-turnover/later-selection observations. This
+  evaluator always rejects `LITERAL_ENERGY_LAW`; such a law requires a separate
+  empirical claim and trial.
+- `ROSETTA_TRANSFER` retains the exact predicate in §9.
+
+The schema provides a closed `$def` for each semantic payload. Removing any
+evaluator from dispatch, accepting an untyped payload, skipping a declared
+fixture, or treating a match count as evidence is a named mutation failure.
+Payload booleans and enums are declarations supplied to a structural test; they
+are never empirical warrant by themselves.
+
 ## 10. The operational Compass fixture
 
 A0B's synthetic integration vessel tests the following topology without
@@ -507,11 +705,17 @@ authority = {
 `claim.authorityScope`, `claim.authorityEffect`, and their seam mirrors are
 required independently of Justice scope:
 
-- effect `NONE` requires scope/regime `NONE`/`NOT_APPLICABLE` and mechanism
-  `NONE`;
+- effect `NONE` requires `authorityScope=NONE`. When `justiceContext` is absent,
+  that absence is the canonical not-applicable authority representation. When
+  Justice scope independently requires a context, its authority must be
+  regime/mechanism `NOT_APPLICABLE`/`NONE`;
 - effect `DESCRIPTIVE` requires a non-`NONE` scope and Justice context. It may
-  describe a retired historical mismatch, but an ACTIVE or DRAFT public claim
-  still forbids `K2_NATURAL_PERSON`;
+  describe a retired historical mismatch, but authority regime always equals
+  the declared scope. At ACTIVE or DRAFT lifecycle, PRIVATE_DAV requires
+  `K2_NATURAL_PERSON`, PUBLIC_DAV requires `PRISM_PUBLIC_GOVERNANCE` or
+  `CONSTITUTIONAL_AUTO_ENFORCEMENT`, and OTHER requires `OTHER`. RETIRED may
+  preserve a historically mismatched mechanism while keeping the regime/scope
+  identity explicit;
 - `DISCRETIONARY` or `CONSEQUENTIAL` requires `PRIVATE_DAV` +
   `K2_NATURAL_PERSON`, `PUBLIC_DAV` + `PRISM_PUBLIC_GOVERNANCE`, or `OTHER` +
   `OTHER`;
@@ -605,7 +809,8 @@ schema is written.
   The semantic resolver additionally applies `safe_repo_path`; no absolute,
   empty, dot-segment, trailing-slash, backslash, or root-escaping path passes.
 - Top-level manifest/source/claim/trial/seam/antibody/discriminator/fixture/
-  propagation/receipt IDs are globally unique across those collections.
+  propagation/receipt/review-attempt/review-attestation/review-finding/
+  review-finding-disposition IDs are globally unique across those collections.
 - Premise IDs and support-link IDs are unique within their enclosing claim.
   A synchronized seam reuses those IDs and is not a second global definition.
 - The baseline schema validates shape. Exact commands, base commit, node set,
@@ -614,8 +819,41 @@ schema is written.
 
 ### 15.2 List and fixture cardinalities
 
-The default `minItems: 1` law yields to an explicit status law. In particular,
-a DRAFT manifest requires `finalFiles=[]` and `finalFileCount=0`.
+The default `minItems: 1` law yields to an explicit status law. A manifest
+referenced by a pre-review DRAFT receipt (`reviewAttemptId=null`) requires
+`finalFiles=[]` and `finalFileCount=0`. A review-ready DRAFT receipt
+(`reviewAttemptId` non-null) has already frozen the reviewed snapshot and
+requires the `finalFiles.path` set to equal the `includedFiles.path` set,
+`finalFileCount` to equal its length, and each final hash to cover the current
+reviewed bytes. COMPLETE and VERIFIED retain the same final-snapshot law.
+Receipt-to-manifest status and attempt state are cross-record semantic
+invariants, not fields local to the manifest schema.
+
+Manifest file inventories cover claim-bearing source/derivative bytes, not the
+typed mutable control vessel that contains the inventory itself. Before
+discovery cardinalities are computed, the resolver removes this exact reserved
+control set from `candidateFiles`, `includedFiles`, `finalFiles`, and
+`excludedPaths`:
+
+```text
+03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json
+03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAM_LEDGER.md
+the canonical phase-receipt path for REC-A-108, REC-B-109, or REC-C-110
+every current/prior attempt target, review, and bundle path
+```
+
+These paths remain in `allowedChangePaths`; only derived attempt paths belong in
+`closureOnlyPaths`. The core JSON, semantic ledger, and receipt are never
+closure-only and never receive a raw self/final hash inside their own manifest.
+They are bound instead by typed role-specific projections: the review target
+binds the core semantic records and ledger narrative/seam projections; attempt
+artifacts bind target/review bytes; the final bundle binds the complete typed
+records, raw final ledger sections, receipt descriptor/narrative hash, and
+review history.
+Receipt and ledger fences must still deep-equal their core records. Final
+validation recomputes both the ordinary raw source inventory and these typed
+control projections. A control path selected by a discovery glob is removed by
+this role filter, not disguised as a source exclusion.
 
 Fixture relationships are exact:
 
@@ -643,7 +881,12 @@ coverage metadata; it does not change the expected-error rule.
   decisive (`defeatedConclusion != NONE_FOUND`). `HELD_OPEN` always requires at
   least one discriminator because no repair or decisive countermodel closes it.
 - A `RETRACTED` seam requires `repairKind=RETRACT` and
-  `evidenceAfter.lifecycle=RETIRED`; the synchronized claim is also `RETIRED`.
+  `evidenceAfter.lifecycle=RETIRED`; the synchronized claim is also `RETIRED`,
+  and `evidenceAfter.strength=evidenceBefore.strength`.
+- `repairKind=RETIER` requires unequal before/after strengths. Upward movement
+  satisfies the prior upgrade criterion and upgrade-evidence rules; downward
+  movement satisfies the prior kill criterion. No other repair kind changes
+  strength.
 - `upgradeCriterion.kind=NONE` is legal at any current strength; strength `A`
   requires it because no higher target exists.
 
@@ -653,9 +896,9 @@ coverage metadata; it does not change the expected-error rule.
 - the BTJ review owns the Beauty and Justice gates; and
 - each gate's non-null `reviewerPath` must equal the owning receipt review path.
 
-Real-name consent is not inferred from display text. The machine validates only
-the declared `creditConsent` enum and the existing rule that a real displayed
-name requires `NAMED`; substantive identity/consent truth remains review work.
+Real-name consent is not inferred from display text. The machine validates the
+declared `creditConsent` enum; reviewers enforce that a real displayed name
+requires `NAMED`. Substantive identity and consent truth remain review work.
 
 ### 15.5 Receipt identities
 
@@ -708,7 +951,9 @@ disposition with null drift/severity.
 
 ### 15.8 Review and bundle schema roles
 
-`reviewAttestation`, `reviewTarget`, `receiptDescriptor`, and
+`reviewAttempt`, `reviewAttemptArtifact`, `reviewAttestation`, `reviewFinding`,
+`reviewProcessEvidence`, `reviewFindingDisposition`,
+`reviewFindingDispositionInput`, `reviewTarget`, `receiptDescriptor`, and
 `validationBundle` are named nested `$defs`. They are validated by renderer and
 orchestration functions through local references but are not additional CLI
 root roles. The only selectable roots remain `coreData`, `publicQueue`, and
@@ -720,6 +965,10 @@ root roles. The only selectable roots remain `coreData`, `publicQueue`, and
 reviewTarget = {
   schemaVersion: "1.0.0",
   phase: A | B | C,
+  currentAttemptId: ID,
+  receiptId: ID,
+  receiptNarrativeRawSha256: RAW_HASH,
+  reviewSubjectDigest: RAW_HASH,
   manifest: semantic manifest projection,
   sources: LIST[source],
   claims: LIST[claim],
@@ -730,8 +979,14 @@ reviewTarget = {
   discriminators: LIST[discriminator],
   fixtures: LIST[fixture],
   schemaSha256: RAW_HASH,
+  ledgerPreambleRawSha256: RAW_HASH,
   ledgerSemanticSections: LIST[ledgerSemanticSection],
-  semanticDiffPaths: LIST[PATH]
+  semanticDiffPaths: LIST[PATH],
+  priorReviewAttempts: LIST[reviewAttempt],
+  priorReviewAttemptArtifacts: LIST[reviewAttemptArtifact],
+  priorReviewAttestations: LIST[reviewAttestation],
+  priorReviewFindings: LIST[reviewFinding],
+  priorReviewFindingDispositions: LIST[reviewFindingDisposition]
 }
 
 ledgerSemanticSection = {
@@ -741,10 +996,440 @@ ledgerSemanticSection = {
 }
 ```
 
-The phase receipt is deliberately absent. Receipt status, digest, review paths,
-and bundle fields are mechanical closure, not reviewed semantics.
+Every two-sided narrative hash uses boundary-preserving framing rather than raw
+concatenation:
+
+```text
+framedNarrativeHash(prefix, suffix) = SHA256(
+  UTF8("KINTSUGI-NARRATIVE-V1") || 0x00 ||
+  uint64be(len(prefix)) || prefix ||
+  uint64be(len(suffix)) || suffix
+)
+```
+
+Lengths count raw bytes and overflow fails closed. Thus moving identical prose
+from one side of a fence to the other changes the digest.
+
+`ledgerPreambleRawSha256` hashes the exact bytes from the beginning of the
+semantic ledger through the byte before its first seam heading; the SHA-256 of
+empty bytes is used when no preamble exists. Together, the preamble hash, every
+section's `framedNarrativeHash(bytes_before_fence, bytes_after_fence)`, and
+every fenced seam projection bind every ledger byte without making mechanical
+gate/status fields semantic. `LEDGER-PREAMBLE` is a reserved review endpoint ID
+for that projection and may not be used as a claim, seam, finding, or ordinary
+record ID.
+
+The phase receipt's fenced record is deliberately absent except for its typed
+`receiptId` chain key. `receiptNarrativeRawSha256` equals
+`framedNarrativeHash(bytes_before_fence, bytes_after_fence)` for the unique
+`json kintsugi-receipt` fence. Receipt status, digest, review paths, and bundle
+fields inside the fence are mechanical closure, while any surrounding human
+claim and its side-of-fence position remain reviewed and hash-bound. Dynamic
+status prose is therefore forbidden outside the fence after target freeze.
+
+For a selected current attempt, the five prior-review lists contain its complete
+terminal ancestor chain, matching artifact hashes, every extant attestation and
+typed finding, and every disposition that authorized a successor. They are in
+root-to-leaf chain order, are empty on the first attempt, and exclude the
+current PENDING attempt. Thus a new reviewer receives cryptographically bound
+prior FAIL or ABANDONED history and its unresolved obligations without making
+the current target digest depend on its own future attestations. PASSED attempts
+are terminal successes and can never have a successor.
+
+`reviewSubjectDigest` is the raw SHA-256 of the canonical semantic-subject
+projection of this target. That projection removes `currentAttemptId`,
+`reviewSubjectDigest`, and all five `priorReview*` fields. It retains
+`receiptId`, but normalizes attempt mechanics out of the manifest by setting
+`closureOnlyPaths=[]`, removing all derived attempt paths from
+`allowedChangePaths`, and retaining no closure-file hash records (already
+removed by the semantic manifest projection). It therefore changes for a
+semantic repair but not merely because another review attempt number or review
+file exists. The raw SHA-256 of the complete `reviewTarget` remains the digest
+signed by attestations and stored by a completed receipt.
 
 Cross-file hashes, Git history, transitive graph closure, state-transition
 deltas, reviewer independence, and substantive warrant remain procedural
 kernel checks. The literal schema handles structural shape and conditionals; it
 does not simulate Git or intellectual judgment.
+
+### 15.9 Honest bootstrap and gate context
+
+The unique truthful pre-trial exception is the explicit Phase A
+`--bootstrap` state whose `REC-A-108` is DRAFT. In that state only:
+
+```text
+coreData.trials = []
+MAN-A-001.trialedClaimIds = []
+MAN-A-001.trialedClaimCount = 0
+REC-A-108.trialIds = []
+MAN-A-001.finalFiles = []
+MAN-A-001.finalFileCount = 0
+MAN-A-001.closureOnlyPaths = []
+```
+
+Claims and harvested-claim bindings remain non-empty: bootstrap freezes what is
+about to be tried without pretending that a trial already occurred. The schema
+therefore permits those three trial arrays to be empty, while the semantic
+kernel rejects emptiness outside this exact Phase A/bootstrap/DRAFT state.
+Phases B and C, bare non-bootstrap validation, COMPLETE, and VERIFIED all
+require non-empty closed trial coverage appropriate to their manifests.
+
+The empty `finalFiles` exception also applies to any honest pre-review DRAFT
+whose `reviewAttemptId=null`; it says only that no reviewed final snapshot has
+yet been frozen. Once `freeze-manifest --final` allocates an attempt, that same
+DRAFT becomes review-ready: its final-file path set equals its included-file
+path set, and its final records carry exact current hashes. Thus DRAFT describes
+both construction and review without ever pretending that an unfrozen worktree
+is the reviewed subject.
+
+Gate closure is likewise cross-record. While a receipt is DRAFT, the candidate
+gates it owns remain PENDING with null reviewer paths; gates already frozen by
+an earlier VERIFIED receipt remain immutable. A failed review is preserved by
+its immutable FAIL attestation; it does not mutate the candidate core gate, and
+the receipt cannot advance. A receipt at COMPLETE or VERIFIED requires every
+terminal gate it cites to be PASS with the owning review path: LOGIC owns
+Truth, while BTJ owns Beauty and Justice. No PASS or FAIL candidate gate may be
+persisted by the current DRAFT attempt, and a FAIL attestation can never satisfy
+a completion transition. `VERIFIED` seams retain the local structural all-PASS
+rule; proposed and terminal `RETRACTED` states are distinguished by their
+referencing receipt state rather than by inventing another seam status.
+
+### 15.10 Retryable review attempts and closure-only paths
+
+A failed review is evidence, not a permanent deadlock. The fixed single review
+and target paths in the parent design are superseded pre-v1 by an append-only
+attempt chain. `coreData` gains the following required arrays; all are empty at
+bootstrap and persist thereafter:
+
+```text
+reviewAttempts: LIST[reviewAttempt]
+reviewAttemptArtifacts: LIST[reviewAttemptArtifact]
+reviewAttestations: LIST[reviewAttestation]
+reviewFindings: LIST[reviewFinding]
+reviewFindingDispositions: LIST[reviewFindingDisposition]
+```
+
+Every phase receipt gains `reviewAttemptId: ID | null`, and every
+`reviewAttestation` gains `attemptId: ID`.
+
+```text
+reviewAttempt = {
+  id: ID,
+  phase: A | B | C,
+  receiptId: ID,
+  supersedesAttemptId: ID | null,
+  reviewSubjectDigest: RAW_HASH,
+  reviewTargetPath: PATH,
+  logicReviewPath: PATH,
+  btjReviewPath: PATH,
+  validationBundlePath: PATH,
+  logicAttestationId: ID | null,
+  btjAttestationId: ID | null,
+  status: PENDING | FAILED | PASSED | ABANDONED,
+  abandonReason: TEXT | null
+}
+
+reviewAttemptArtifact = {
+  attemptId: ID,
+  reviewTargetSha256: RAW_HASH | null,
+  logicReviewSha256: RAW_HASH | null,
+  btjReviewSha256: RAW_HASH | null
+}
+
+reviewFinding = {
+  id: ID,
+  attemptId: ID,
+  reviewKind: LOGIC | BTJ,
+  category:
+    LOGIC | EVIDENCE | BEAUTY | JUSTICE | PROVENANCE | SCOPE | PROCESS,
+  severity: CRITICAL | MAJOR | MINOR,
+  statement: TEXT,
+  claimIds: LIST[ID],
+  seamIds: LIST[ID],
+  ledgerSectionIds: LIST[ID],
+  receiptIds: LIST[ID],
+  subjectPaths: LIST[PATH]
+}
+
+reviewProcessEvidence = {
+  path: PATH,
+  sha256: RAW_HASH
+}
+
+reviewFindingDisposition = {
+  id: ID,
+  findingId: ID,
+  fromAttemptId: ID,
+  successorAttemptId: ID,
+  disposition: ADDRESSED | DISPUTED | PROCESS_INVALID,
+  rationale: TEXT,
+  claimIds: LIST[ID],
+  seamIds: LIST[ID],
+  ledgerSectionIds: LIST[ID],
+  receiptIds: LIST[ID],
+  subjectPaths: LIST[PATH],
+  discriminatorIds: LIST[ID],
+  evidenceFiles: LIST[reviewProcessEvidence]
+}
+
+reviewFindingDispositionInput = {
+  findingId: ID,
+  disposition: ADDRESSED | DISPUTED | PROCESS_INVALID,
+  rationale: TEXT,
+  claimIds: LIST[ID],
+  seamIds: LIST[ID],
+  ledgerSectionIds: LIST[ID],
+  receiptIds: LIST[ID],
+  subjectPaths: LIST[PATH],
+  discriminatorIds: LIST[ID],
+  evidenceFiles: LIST[reviewProcessEvidence]
+}
+```
+
+All five review-finding location lists may be empty; a PROCESS finding can
+concern review conduct rather than a semantic endpoint. A schema, source,
+provenance, or tool finding uses `subjectPaths`; ledger prose uses
+`ledgerSectionIds`; receipt prose uses the chain's `receiptIds`. No location
+field is an implicit evidence claim.
+
+Review Markdown retains exactly one `json kintsugi-review` attestation fence and
+adds exactly one `json kintsugi-review-findings` fence containing that review's
+sorted finding records; the list may be empty. Its IDs deep-equal
+`attestation.findingIds`, and every finding's `attemptId` and `reviewKind`
+deep-equal the enclosing attestation. The raw review artifact hash covers both
+fences and all intervening bytes.
+
+Attempt IDs are canonical, not merely regex-shaped. For positive integer `n`,
+the only legal spelling is `RVA-{phase}-{str(n).zfill(3)}`: `001`, `010`, `999`,
+and `1000` are legal, while `000`, `0001`, and any parse/re-render mismatch are
+not. `n` is the smallest unused positive integer for that phase across the live
+core, worktree attempt paths, the current Git tree, and reachable Git history.
+The ID letter equals `phase`. Paths derive exactly from the ID:
+
+```text
+reviewTargetPath =
+  09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_review_attempts/{id}/review_target.json
+logicReviewPath =
+  11_UPLINK/50_AUDITS_AND_EXECUTIONS/KINTSUGI_REVIEW_ATTEMPTS/{id}_LOGIC.md
+btjReviewPath =
+  11_UPLINK/50_AUDITS_AND_EXECUTIONS/KINTSUGI_REVIEW_ATTEMPTS/{id}_BTJ.md
+validationBundlePath =
+  09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_review_attempts/{id}/validation_bundle.json
+```
+
+The first attempt has `supersedesAttemptId=null`. Every later attempt points to
+the unique prior leaf for the same `(phase, receiptId)` chain; that prior leaf
+must be `FAILED` or `ABANDONED`. A `PASSED` attempt is never superseded. The
+union graph is acyclic and has exactly one leaf per `(phase, receiptId)` chain.
+Attempts and artifacts are one-to-one and stored in root-to-leaf chain order;
+attestations, findings, and dispositions resolve exactly once and cannot be
+orphaned.
+
+A successor cannot be allocated until the predecessor's terminal core record,
+receipt fence, target if present, every extant review, and matching artifact
+hashes are committed at the current `HEAD`. Those bytes and terminal records
+are then immutable. Allocation resolves the shared Git common directory with
+`git rev-parse --git-common-dir`, not the current worktree's `.git` indirection.
+It takes an exclusive-create `.kintsugi-transition.lock` there and reserves the
+chosen ID with another exclusive-create canonical JSON record at
+`kintsugi-attempt-reservations/{id}.json`. The durable reservation includes ID,
+phase, receipt, expected HEAD, and expected raw core hash and is counted as used
+by every worktree even before commit. An operation that fails after reservation
+may burn an ID but may never reuse it.
+
+The caller supplies the expected `HEAD` and raw core hash; both are checked
+before lock acquisition and again while holding the shared lock. Allocation
+scans core, worktree paths, current and reachable Git paths, and the shared
+reservation directory. Any collision, stale expectation, malformed
+reservation, or extant lock fails closed. The lock is removed in `finally`; a
+crash residue requires explicit inspection rather than lock stealing.
+Every mutating renderer stage uses this same Git-common-dir lock and repeats the
+HEAD/core compare-and-swap checks; the reservation file is additionally created
+only when an attempt ID is allocated.
+
+The locked transaction also freezes a sorted raw-hash read set covering every
+repository or external input consumed by prospective validation, including
+core, schema, manifest sources, ledger, receipt, existing target/reviews,
+candidate review/disposition files, current output bytes or typed `ABSENT`, and
+the reservation record. After all output temporaries are written and fsynced,
+but immediately before the first repository `os.replace`, the renderer re-reads
+`HEAD`, the raw core bytes, and every read-set member and requires exact
+identity with the frozen values. A changed, missing, newly appeared, retargeted
+symlink, or unreadable input aborts before any repository replacement, removes
+all temporaries, and burns only an already-created attempt reservation. The
+same final compare-and-swap is mandatory for every mutating stage; validation
+performed earlier while holding the custom lock is not a substitute.
+
+Findings close the reviewer-shopping gap. A FAIL attestation has non-empty
+`findingIds` and non-empty `openSevereFindingIds`; the latter deep-equals the set
+of referenced CRITICAL/MAJOR findings and is therefore a non-empty subset of the
+former. A PASS has no open severe finding and may name only MINOR findings. All
+finding IDs resolve to the same attempt and review kind as their attestation.
+
+Successor allocation and finding disposition are one locked transaction, not
+two individually valid intermediate states. `freeze-manifest --final` accepts a
+canonical JSON array through `--finding-dispositions-input` outside the
+repository. It is absent/empty for the first attempt and otherwise contains
+exactly one `reviewFindingDispositionInput` for every finding from the direct
+terminal predecessor, sorted by `findingId`. While holding the shared lock, the
+renderer reserves the successor ID, expands each input into a persisted
+disposition with:
+
+```text
+id = RFD-{successorAttemptId}-{str(1-based ordinal).zfill(3)}
+fromAttemptId = direct predecessor ID
+successorAttemptId = newly reserved ID
+```
+
+It then constructs and validates the successor attempt, dispositions, final
+manifest, receipt pointer, subject digest, and core graph together before any
+repository byte is written. A failed prospective transaction burns the shared
+reservation but leaves no dangling disposition or successor record.
+
+Disposition laws are exact:
+
+- `ADDRESSED` requires a non-empty combined claim/seam/ledger-section/receipt/
+  subject-path endpoint set. Claim and seam IDs resolve in the successor
+  subject; ledger IDs resolve to `ledgerSemanticSections` or the reserved
+  `LEDGER-PREAMBLE` projection; receipt IDs equal the target's chain receipt.
+  Every subject path is non-closure,
+  non-reserved-control, and present in the successor final source inventory.
+  Its predecessor projection is the prior raw hash or a typed `ABSENT` marker
+  when the repair lawfully creates the path. At least one named endpoint's
+  canonical projection, ledger preamble/narrative/seam projection, receipt
+  narrative hash, or raw subject-file hash/absence marker differs. Its
+  discriminator and evidence-file lists are empty;
+- `DISPUTED` requires at least one resolving discriminator ID, permits
+  semantic location lists only to locate the dispute, and has an empty
+  evidence-file list; and
+- `PROCESS_INVALID` requires at least one `reviewProcessEvidence` record and
+  empty claim, seam, ledger-section, receipt, subject-path, and discriminator
+  lists. Each evidence record must deep-equal either a predecessor target/review
+  path and hash in its immutable `reviewAttemptArtifact`, or a regular
+  non-closure file record in the successor manifest's `finalFiles`. The live
+  raw bytes must hash exactly.
+
+Because the complete disposition (including evidence hashes) appears in the
+successor review target and final validation bundle, a temporary, missing,
+mutable, or unhash-bound excuse cannot license a same-subject retry.
+
+If any disposition is ADDRESSED or DISPUTED, the successor's
+`reviewSubjectDigest` must differ from the predecessor's. The same semantic
+subject may be retried only when every predecessor disposition is
+PROCESS_INVALID; the universal condition is vacuously true for an ABANDONED
+attempt with no findings, whose non-empty `abandonReason` still exposes the
+process event. Every ancestor finding and its unique disposition remains in all
+later targets and final bundles.
+
+State laws are exact:
+
+- `PENDING` has zero or one attestation ID and null `abandonReason`. When one is
+  present it references a PASS attestation; this is the partially reviewed
+  ATTESTED state, not a terminal pass;
+- `FAILED` has one or two attestation IDs, at least one referenced FAIL
+  attestation with an open severe finding, and null `abandonReason`;
+- `PASSED` has both non-null attestation IDs, two PASS attestations over one
+  target digest, and null `abandonReason`;
+- `ABANDONED` has zero, one, or two attestation IDs and non-null
+  `abandonReason`; every extant attestation and finding is preserved even when
+  target drift or a process defect invalidates the attempt; and
+- only the atomic COMPLETE transition may change the current PENDING attempt to
+  PASSED while changing DRAFT to COMPLETE. FAILED or ABANDONED remains DRAFT
+  until a lawful successor is allocated after repair/re-freeze.
+
+Artifact hashes and file existence are biconditional. A target exists exactly
+when `reviewTargetSha256` is non-null. A LOGIC or BTJ review exists exactly when
+both its attestation ID and matching artifact hash are non-null. Every extant
+review requires the target and names its exact digest. Every extant file hashes
+exactly to its record. The permitted state/path matrix is:
+
+```text
+PENDING                 target optional; 0 or 1 PASS review; bundle absent
+FAILED                  target present; referenced reviews present; bundle absent
+PASSED + receipt COMPLETE  target + both reviews present; bundle absent
+PASSED + receipt VERIFIED  target + both reviews + bundle present
+ABANDONED               target/reviews exactly as recorded; bundle absent
+```
+
+No other closure file may exist. In particular, an unreferenced review, an old
+bundle under a failed/abandoned attempt, or a validation bundle written before
+the VERIFIED transition fails `KIN-E-BUNDLE`. An ATTESTED, FAILED, ABANDONED,
+or COMPLETE command accepts newly authored raw bytes only through optional
+`--logic-review-input` and `--btj-review-input` files outside the canonical
+repository root. Each supplied kind must be currently unrecorded and must parse
+to the exact derived attempt/path/kind. While holding the shared lock, the
+command validates the complete prospective state, stages the canonical review
+file plus core/artifact/finding/receipt updates, and installs or rolls back the
+whole set as one renderer transaction. It never copies a candidate into place
+before the prospective state passes. Outside that operation-specific intake,
+an unrecorded canonical review file is invalid.
+
+The receipt's nullable `reviewAttemptId` is null exactly for a pre-review DRAFT
+and becomes non-null exactly when the first/current attempt is allocated. It
+then points to the unique current leaf and never returns to null. DRAFT keeps
+its target/review/bundle closure fields null even when the attempt records those
+artifacts. COMPLETE and VERIFIED require the current PASSED attempt; their
+target digest and review
+paths deep-equal that attempt and its attestations. COMPLETE keeps the receipt
+bundle path/digest null; VERIFIED sets its bundle path to the attempt's derived
+`validationBundlePath` and adds the exact bundle digest.
+
+The four renderer operations implement six explicit stages:
+
+1. `freeze-manifest --final` freezes final-file path coverage equal to the
+   included-file path set using current hashes, allocates a new PENDING attempt,
+   expands/validates any required finding-disposition input, computes its
+   subject digest, and records null artifacts in the same locked transaction.
+   An existing non-terminal attempt must first become ABANDONED; a terminal
+   predecessor must satisfy the commit/immutability law above.
+2. `review-target` performs `TARGET_READY`: it writes only the current PENDING
+   attempt's canonical target and records its exact hash. Identical reuse is
+   allowed; drift or overwrite is not.
+3. `transition-core --stage ATTESTED` records the first PASS review and keeps
+   the attempt PENDING and the receipt DRAFT.
+4. `transition-core --stage FAILED` records all extant reviews after any FAIL,
+   sets the attempt FAILED, and leaves receipt and candidate gates
+   DRAFT/PENDING. `--stage ABANDONED` records zero to two extant reviews and the
+   reason, then sets ABANDONED without erasing bytes.
+5. `transition-core --stage COMPLETE` accepts the second independent PASS only
+   after constructing and validating the entire prospective VERIFIED bundle in
+   memory. It then records both reviews/findings, sets the attempt PASSED,
+   closes the owned gates, and changes the receipt to COMPLETE. If prospective
+   bundle construction, semantic validation, Git checks, or any hash check
+   fails, no COMPLETE bytes are written.
+6. `transition-core --stage VERIFIED` renders the already preflighted bundle,
+   revalidates it, and commits bundle/core/receipt outputs under the same
+   exclusive lock. All bytes are staged before replacement; any crash residue
+   is invalid and fails closed. The standalone `bundle` operation is a pure
+   deterministic construction/preflight surface and may not leave a canonical
+   bundle file without the matching VERIFIED transition.
+
+`closureOnlyPaths` is the exact union of the four derived paths for every
+declared attempt in the selected phase and is a subset of `allowedChangePaths`.
+No owner, protocol, schema, test, core data, semantic ledger, receipt, public
+queue, or other semantic path may be classified closure-only. A role/path
+mismatch fails before `semanticDiffPaths` is computed, so closure mechanics
+cannot erase a semantic change from the review target.
+
+The validation bundle gains the complete root-to-leaf review history:
+
+```text
+receiptNarrativeRawSha256: RAW_HASH
+ledgerPreambleRawSha256: RAW_HASH
+reviewAttempts: LIST[reviewAttempt]
+reviewAttemptArtifacts: LIST[reviewAttemptArtifact]
+reviewAttestations: LIST[reviewAttestation]
+reviewFindings: LIST[reviewFinding]
+reviewFindingDispositions: LIST[reviewFindingDisposition]
+```
+
+Each artifact ID deep-equals its attempt ID, and attempt/artifact coverage is an
+exact bijection. The bundle's existing final `logicReviewSha256` and
+`btjReviewSha256` equal the current PASSED artifact. It also repeats the exact
+current `reviewSubjectDigest` through the attempt/target records and deep-equals
+the receipt narrative hash in the reviewed target after recomputing the live
+bytes outside the fence. It likewise deep-equals the reviewed ledger preamble
+hash after recomputing the live bytes before the first seam heading. A bundle
+omitting an older failure, abandonment, attestation, finding, or disposition;
+changing any historical byte; hiding a partially completed review; or carrying
+an unreferenced closure file fails.
