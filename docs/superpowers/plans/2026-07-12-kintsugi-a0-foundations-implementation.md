@@ -14,14 +14,14 @@
 
 ## Fixed boundary
 
-- Expected canonical base: `454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22` on `main`.
+- Immutable execution base: `26e616e651e2a87e8c85bf37db515d7fcd007b7b`, observed on canonical `main` and frozen by [`2026-07-12-kintsugi-a0-execution-lock-26e616e.md`](../specs/2026-07-12-kintsugi-a0-execution-lock-26e616e.md).
 - This plan modifies exactly four paths:
   - `09_TOOLS/02_COMPILERS/kintsugi_baseline_failures.json`
   - `09_TOOLS/02_COMPILERS/validate_kintsugi.py`
   - `09_TOOLS/02_COMPILERS/test_validate_kintsugi.py`
   - `09_TOOLS/02_COMPILERS/README.md`
 - Do not modify `12_PUBLIC_SITE/`, any `90_ARCHIVE` subtree, or `91_COMPATIBILITY/`.
-- Preserve the canonical checkout's pre-existing untracked public file at raw SHA-256 `db794ac3e1d91b9c4d9e92ef121ef016f128a3fb518df86d11b5dc0f5a8eec1c`.
+- Preserve the protected public spine file at raw SHA-256 `db794ac3e1d91b9c4d9e92ef121ef016f128a3fb518df86d11b5dc0f5a8eec1c`; it is tracked at the frozen base.
 - Preserve `11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION_PENDING_K2.md` at raw SHA-256 `9cf25b80e6c252aa8d95b63ea1c7cc1ed361c05dedaea4aef72fa001f691069c`; it is historical provenance only.
 - Preserve `11_UPLINK/50_AUDITS_AND_EXECUTIONS/109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS_PENDING_K2.md` at raw SHA-256 `3d9f63df9ce8aabfa9a16ac5dd25acabf3084b75b6ad29740a61e078ecebd629`. It is immutable external/pre-program support and provenance only: not a Kintsugi phase receipt, claim owner, dependency, or authority. Its historical `PENDING_K2` lifecycle creates no K2 gate for Kintsugi.
 - The frozen proof audit's human number does not identify the future Phase B receipt. That receipt is only typed ID `REC-B-109` at exact path `11_UPLINK/50_AUDITS_AND_EXECUTIONS/109_ACTIVE_CORPUS_KINTSUGI_RECEIPT_2026_07_11.md`; bare `109` has no authority. Phase B must add the design's exact two-row README route, mirroring the existing 108 compatibility rule.
@@ -30,7 +30,7 @@
 - These plan/spec amendments are pre-rebase planning changes and are outside the A0 implementation diff. The A0 implementation scope remains exactly the four paths above, with a baseline of 19 collected nodes and five allowed failures.
 - The validator performs no direct repository writes and uses only the standard library. It disables pytest cache and Python bytecode writes, but it does not sandbox writes performed by repository test bodies.
 - Use `apply_patch` for hand-authored files. Stage only the four paths above.
-- If canonical `main` moves or a protected hash changes, stop before rebasing and write a concurrency addendum.
+- Before the execution ref is frozen, a changed protected hash, test inventory, baseline outcome, or A0-path delta stops execution. After the ref is frozen, later canonical-main movement follows the immutable execution lock: unrelated commits are recorded for integration and do not force an A0 restart.
 
 ## Handoff sequence
 
@@ -49,18 +49,29 @@ No handoff adds an extra K2 pause; the slices continue one after the other.
 
 **Files:** Read-only verification.
 
-- [ ] **Step 1: Verify canonical HEAD, branch, dirt, and protected bytes**
+- [ ] **Step 1: Verify the immutable base, relevant-delta isolation, and protected bytes**
 
 ```bash
 set -euo pipefail
 CANON=/Users/Yves/Documents/01_EMERGENTISM
 WT=/Users/Yves/Documents/.codex-worktrees/emergentism-kintsugi-formal-logic
-EXPECTED=454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22
+EXPECTED=26e616e651e2a87e8c85bf37db515d7fcd007b7b
+CANON_HEAD=$(git -C "$CANON" rev-parse HEAD)
 
 test "$(git -C "$CANON" rev-parse --abbrev-ref HEAD)" = main
-test "$(git -C "$CANON" rev-parse HEAD)" = "$EXPECTED"
-test "$(git -C "$CANON" status --porcelain=v1 --untracked-files=all)" = \
-  "?? 12_PUBLIC_SITE/docs/superpowers/specs/2026-06-05-numbered-doctrine-spine-design.md"
+git -C "$CANON" merge-base --is-ancestor "$EXPECTED" "$CANON_HEAD"
+test -z "$(git -C "$CANON" diff --name-only "$EXPECTED..$CANON_HEAD" -- \
+  09_TOOLS/02_COMPILERS/kintsugi_baseline_failures.json \
+  09_TOOLS/02_COMPILERS/validate_kintsugi.py \
+  09_TOOLS/02_COMPILERS/test_validate_kintsugi.py \
+  09_TOOLS/02_COMPILERS/README.md)"
+test -z "$(git -C "$CANON" diff --name-only "$EXPECTED..$CANON_HEAD" | \
+  rg '(^|/)(test[^/]*\.py|[^/]*_test\.py|tests?/)' || true)"
+test -z "$(git -C "$CANON" status --porcelain=v1 --untracked-files=all -- \
+  09_TOOLS/02_COMPILERS/kintsugi_baseline_failures.json \
+  09_TOOLS/02_COMPILERS/validate_kintsugi.py \
+  09_TOOLS/02_COMPILERS/test_validate_kintsugi.py \
+  09_TOOLS/02_COMPILERS/README.md)"
 test "$(shasum -a 256 "$CANON/12_PUBLIC_SITE/docs/superpowers/specs/2026-06-05-numbered-doctrine-spine-design.md" | awk '{print $1}')" = \
   db794ac3e1d91b9c4d9e92ef121ef016f128a3fb518df86d11b5dc0f5a8eec1c
 test "$(shasum -a 256 "$CANON/11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION_PENDING_K2.md" | awk '{print $1}')" = \
@@ -69,14 +80,15 @@ test "$(shasum -a 256 "$CANON/11_UPLINK/50_AUDITS_AND_EXECUTIONS/109_THE_PROOF_L
   3d9f63df9ce8aabfa9a16ac5dd25acabf3084b75b6ad29740a61e078ecebd629
 ```
 
-Expected: exit 0 and no output.
+Expected: exit 0 and no output. Unrelated newer commits and unrelated canonical
+dirt may remain; they are preserved and excluded from A0 authority.
 
 - [ ] **Step 2: Rebase only after this plan/spec commit exists**
 
 ```bash
 set -euo pipefail
 WT=/Users/Yves/Documents/.codex-worktrees/emergentism-kintsugi-formal-logic
-EXPECTED=454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22
+EXPECTED=26e616e651e2a87e8c85bf37db515d7fcd007b7b
 git -C "$WT" rebase "$EXPECTED"
 git -C "$WT" merge-base --is-ancestor "$EXPECTED" HEAD
 test -z "$(git -C "$WT" show-ref --verify --hash refs/codex/kintsugi-a0-start 2>/dev/null)"
@@ -110,14 +122,14 @@ Expected: 19 collected nodes; the execution returns exactly five failures, 14 pa
 
 The object below is shown pretty-printed for review. The file itself must be the
 single-line canonical serialization plus one LF, with raw hash
-`sha256:92bc13d84b0cee317f648af6b1589f507e23a227afb40da2d66fb94282017957`.
+`sha256:74496df660f0ca989f293c30db652b8f9aeb78beb30fa91fe249d87ee29ef69b`.
 The tests reject the pretty form, any key/order substitution, or any alternate
 command array.
 
 ```json
 {
   "schemaVersion": "1.0.0",
-  "baseCommit": "454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22",
+  "baseCommit": "26e616e651e2a87e8c85bf37db515d7fcd007b7b",
   "command": ["python3", "-m", "pytest", "-q", "--tb=short"],
   "collectCommand": ["python3", "-m", "pytest", "--collect-only", "-q"],
   "collectedAtBaseline": 19,
@@ -175,7 +187,7 @@ command array.
 Apply this exact one-line file content (followed by one LF):
 
 ```json
-{"allowedFailures":[{"exceptionType":"AssertionError","nodeId":"09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_discipline_passes_on_seeded_catalog","requiredSignature":"discipline check failed:"},{"exceptionType":"AssertionError","nodeId":"09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_discipline_strict_passes_on_seeded_catalog","requiredSignature":"assert 1 == 0"},{"exceptionType":"AssertionError","nodeId":"09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_a7_default_passes_with_only_warnings","requiredSignature":"assert 1 == 0"},{"exceptionType":"AssertionError","nodeId":"09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_manifest_exists_and_links_resolve","requiredSignature":"00_SKYZAI_COM_PRODUCT_MANIFEST.md"},{"exceptionType":"AssertionError","nodeId":"09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_cross_entity_receipt_traversal_passes","requiredSignature":"09_K2_ROUTE_READINESS_RECEIPT.jsonld"}],"baseCommit":"454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22","baselineNodeIds":["03_METHODOLOGY/03_PREREGISTRATIONS/physics_to_biology_harness/test_vesicle_macro_constraint.py::VesicleMacroConstraintTests::test_constrained_kernel_preserves_lower_law_support","03_METHODOLOGY/03_PREREGISTRATIONS/physics_to_biology_harness/test_vesicle_macro_constraint.py::VesicleMacroConstraintTests::test_default_run_has_perturbable_positive_costed_witness","03_METHODOLOGY/03_PREREGISTRATIONS/physics_to_biology_harness/test_vesicle_macro_constraint.py::VesicleMacroConstraintTests::test_freeze_manifest_export_is_deterministic_json","03_METHODOLOGY/03_PREREGISTRATIONS/physics_to_biology_harness/test_vesicle_macro_constraint.py::VesicleMacroConstraintTests::test_freeze_manifest_records_hashes_and_frozen_objects","03_METHODOLOGY/03_PREREGISTRATIONS/physics_to_biology_harness/test_vesicle_macro_constraint.py::VesicleMacroConstraintTests::test_negative_controls_reject_false_macro_constraint_witnesses","03_METHODOLOGY/03_PREREGISTRATIONS/physics_to_biology_harness/test_vesicle_macro_constraint.py::VesicleMacroConstraintTests::test_report_export_is_tier_honest_json","09_TOOLS/01_SCRIPTS/test_cross_entity_receipt_traversal.py::test_traversal","09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_discipline_passes_on_seeded_catalog","09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_discipline_strict_passes_on_seeded_catalog","09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_a7_default_passes_with_only_warnings","09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_a7_strict_flags_unresolved_warnings","09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_listings_have_titles","09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_manifest_exists_and_links_resolve","09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_cross_entity_receipt_traversal_passes","09_TOOLS/01_SCRIPTS/test_mver_validator.py::test_parse_index","09_TOOLS/01_SCRIPTS/test_mver_validator.py::test_validation_passes","09_TOOLS/01_SCRIPTS/test_mver_validator.py::test_validation_fails_on_missing_file","09_TOOLS/01_SCRIPTS/test_mver_validator.py::test_validation_fails_on_hash_mismatch","09_TOOLS/01_SCRIPTS/test_mver_validator.py::test_validation_flags_unindexed_file"],"collectCommand":["python3","-m","pytest","--collect-only","-q"],"collectedAtBaseline":19,"command":["python3","-m","pytest","-q","--tb=short"],"schemaVersion":"1.0.0"}
+{"allowedFailures":[{"exceptionType":"AssertionError","nodeId":"09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_discipline_passes_on_seeded_catalog","requiredSignature":"discipline check failed:"},{"exceptionType":"AssertionError","nodeId":"09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_discipline_strict_passes_on_seeded_catalog","requiredSignature":"assert 1 == 0"},{"exceptionType":"AssertionError","nodeId":"09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_a7_default_passes_with_only_warnings","requiredSignature":"assert 1 == 0"},{"exceptionType":"AssertionError","nodeId":"09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_manifest_exists_and_links_resolve","requiredSignature":"00_SKYZAI_COM_PRODUCT_MANIFEST.md"},{"exceptionType":"AssertionError","nodeId":"09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_cross_entity_receipt_traversal_passes","requiredSignature":"09_K2_ROUTE_READINESS_RECEIPT.jsonld"}],"baseCommit":"26e616e651e2a87e8c85bf37db515d7fcd007b7b","baselineNodeIds":["03_METHODOLOGY/03_PREREGISTRATIONS/physics_to_biology_harness/test_vesicle_macro_constraint.py::VesicleMacroConstraintTests::test_constrained_kernel_preserves_lower_law_support","03_METHODOLOGY/03_PREREGISTRATIONS/physics_to_biology_harness/test_vesicle_macro_constraint.py::VesicleMacroConstraintTests::test_default_run_has_perturbable_positive_costed_witness","03_METHODOLOGY/03_PREREGISTRATIONS/physics_to_biology_harness/test_vesicle_macro_constraint.py::VesicleMacroConstraintTests::test_freeze_manifest_export_is_deterministic_json","03_METHODOLOGY/03_PREREGISTRATIONS/physics_to_biology_harness/test_vesicle_macro_constraint.py::VesicleMacroConstraintTests::test_freeze_manifest_records_hashes_and_frozen_objects","03_METHODOLOGY/03_PREREGISTRATIONS/physics_to_biology_harness/test_vesicle_macro_constraint.py::VesicleMacroConstraintTests::test_negative_controls_reject_false_macro_constraint_witnesses","03_METHODOLOGY/03_PREREGISTRATIONS/physics_to_biology_harness/test_vesicle_macro_constraint.py::VesicleMacroConstraintTests::test_report_export_is_tier_honest_json","09_TOOLS/01_SCRIPTS/test_cross_entity_receipt_traversal.py::test_traversal","09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_discipline_passes_on_seeded_catalog","09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_discipline_strict_passes_on_seeded_catalog","09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_a7_default_passes_with_only_warnings","09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_a7_strict_flags_unresolved_warnings","09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_listings_have_titles","09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_manifest_exists_and_links_resolve","09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_cross_entity_receipt_traversal_passes","09_TOOLS/01_SCRIPTS/test_mver_validator.py::test_parse_index","09_TOOLS/01_SCRIPTS/test_mver_validator.py::test_validation_passes","09_TOOLS/01_SCRIPTS/test_mver_validator.py::test_validation_fails_on_missing_file","09_TOOLS/01_SCRIPTS/test_mver_validator.py::test_validation_fails_on_hash_mismatch","09_TOOLS/01_SCRIPTS/test_mver_validator.py::test_validation_flags_unindexed_file"],"collectCommand":["python3","-m","pytest","--collect-only","-q"],"collectedAtBaseline":19,"command":["python3","-m","pytest","-q","--tb=short"],"schemaVersion":"1.0.0"}
 ```
 
 - [ ] **Step 2: Add the complete test module**
@@ -209,7 +221,7 @@ EXPECTED_FAILURES = {
     "09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_manifest_exists_and_links_resolve": ("AssertionError", "00_SKYZAI_COM_PRODUCT_MANIFEST.md"),
     "09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_cross_entity_receipt_traversal_passes": ("AssertionError", "09_K2_ROUTE_READINESS_RECEIPT.jsonld"),
 }
-EXPECTED_CONTRACT_HASH = "sha256:92bc13d84b0cee317f648af6b1589f507e23a227afb40da2d66fb94282017957"
+EXPECTED_CONTRACT_HASH = "sha256:74496df660f0ca989f293c30db652b8f9aeb78beb30fa91fe249d87ee29ef69b"
 
 class PrimitiveTests(unittest.TestCase):
     def test_canonical_json_and_hash_domains(self):
@@ -251,7 +263,7 @@ class ContractTests(unittest.TestCase):
     def test_checked_in_contract_is_exact(self):
         contract = v.load_contract(CONTRACT_PATH)
         self.assertEqual(contract["schemaVersion"], "1.0.0")
-        self.assertEqual(contract["baseCommit"], "454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22")
+        self.assertEqual(contract["baseCommit"], "26e616e651e2a87e8c85bf37db515d7fcd007b7b")
         self.assertEqual(contract["collectedAtBaseline"], 19)
         self.assertEqual(contract["command"], ["python3", "-m", "pytest", "-q", "--tb=short"])
         self.assertEqual(contract["collectCommand"], ["python3", "-m", "pytest", "--collect-only", "-q"])
@@ -715,7 +727,7 @@ python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py \
   --canonical-root /Users/Yves/Documents/01_EMERGENTISM
 ```
 
-`kintsugi_baseline_failures.json` records 19 baseline node IDs and five exact failure signatures at `main@454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22`. A previously failing node may turn green; a removed node, new failure, exception drift, or signature drift fails. The validator itself introduces no direct writes and disables pytest cache and Python bytecode writes; arbitrary repository test bodies are not sandboxed. The baseline gate has no K2 approval gate.
+`kintsugi_baseline_failures.json` records 19 baseline node IDs and five exact failure signatures at `main@26e616e651e2a87e8c85bf37db515d7fcd007b7b`. A previously failing node may turn green; a removed node, new failure, exception drift, or signature drift fails. The validator itself introduces no direct writes and disables pytest cache and Python bytecode writes; arbitrary repository test bodies are not sandboxed. The baseline gate has no K2 approval gate.
 ~~~~
 
 Apply the block exactly; the outer tildes preserve the literal inner Bash fence.
@@ -742,7 +754,8 @@ Expected exit: 0. Stderr: empty.
 ```bash
 set -euo pipefail
 CANON=/Users/Yves/Documents/01_EMERGENTISM
-EXPECTED=454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22
+EXPECTED=26e616e651e2a87e8c85bf37db515d7fcd007b7b
+CANON_HEAD=$(git -C "$CANON" rev-parse HEAD)
 PROTECTED=(
   00_META/90_ARCHIVE
   01_TELEOLOGY/90_ARCHIVE
@@ -758,11 +771,21 @@ PROTECTED=(
   91_COMPATIBILITY
   91_COMPATIBILITY/01_FOUNDATIONS/02_THE_DERIVATION/90_ARCHIVE
 )
-test -z "$(git diff --name-only 454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22..HEAD -- "${PROTECTED[@]}")"
+test -z "$(git diff --name-only 26e616e651e2a87e8c85bf37db515d7fcd007b7b..HEAD -- "${PROTECTED[@]}")"
 test -z "$(git status --porcelain=v1 --untracked-files=all -- "${PROTECTED[@]}")"
-test "$(git -C "$CANON" rev-parse HEAD)" = "$EXPECTED"
-test "$(git -C "$CANON" status --porcelain=v1 --untracked-files=all)" = \
-  "?? 12_PUBLIC_SITE/docs/superpowers/specs/2026-06-05-numbered-doctrine-spine-design.md"
+git -C "$CANON" merge-base --is-ancestor "$EXPECTED" "$CANON_HEAD"
+test -z "$(git -C "$CANON" diff --name-only "$EXPECTED..$CANON_HEAD" -- \
+  09_TOOLS/02_COMPILERS/kintsugi_baseline_failures.json \
+  09_TOOLS/02_COMPILERS/validate_kintsugi.py \
+  09_TOOLS/02_COMPILERS/test_validate_kintsugi.py \
+  09_TOOLS/02_COMPILERS/README.md)"
+test -z "$(git -C "$CANON" diff --name-only "$EXPECTED..$CANON_HEAD" | \
+  rg '(^|/)(test[^/]*\.py|[^/]*_test\.py|tests?/)' || true)"
+test -z "$(git -C "$CANON" status --porcelain=v1 --untracked-files=all -- \
+  09_TOOLS/02_COMPILERS/kintsugi_baseline_failures.json \
+  09_TOOLS/02_COMPILERS/validate_kintsugi.py \
+  09_TOOLS/02_COMPILERS/test_validate_kintsugi.py \
+  09_TOOLS/02_COMPILERS/README.md)"
 test "$(shasum -a 256 "$CANON/12_PUBLIC_SITE/docs/superpowers/specs/2026-06-05-numbered-doctrine-spine-design.md" | awk '{print $1}')" = \
   db794ac3e1d91b9c4d9e92ef121ef016f128a3fb518df86d11b5dc0f5a8eec1c
 test "$(shasum -a 256 "$CANON/11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION_PENDING_K2.md" | awk '{print $1}')" = \
@@ -815,7 +838,8 @@ Expected: tests pass; CLI prints `KIN-OK baseline collected=19 failures=5`; stat
 
 ## A0 Acceptance Checklist
 
-- [ ] Execution branch descends from exact canonical `main@454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22`.
+- [ ] Execution branch descends from immutable base `26e616e651e2a87e8c85bf37db515d7fcd007b7b`.
+- [ ] Any later canonical-main delta changes no A0 path or tracked pytest test and leaves the frozen baseline unchanged.
 - [ ] Protected public, predecessor-receipt 108, and pre-program proof-audit 109 bytes are unchanged.
 - [ ] The baseline contract deep-equals the approved 19-node/five-failure data.
 - [ ] Canonical JSON, raw hash, normalized text hash, and safe path tests pass.
@@ -825,4 +849,5 @@ Expected: tests pass; CLI prints `KIN-OK baseline collected=19 failures=5`; stat
 - [ ] Real baseline returns `KIN-OK baseline collected=19 failures=5`.
 - [ ] Exactly the four declared A0 paths changed.
 - [ ] The pre-rebase plan/spec amendment commit is excluded from the four-path A0 implementation diff.
+- [ ] Unrelated canonical dirt is preserved, and none of the four A0 paths is dirty there.
 - [ ] No K2 gate was introduced.
