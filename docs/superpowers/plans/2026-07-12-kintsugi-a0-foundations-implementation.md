@@ -4,7 +4,7 @@
 
 **Goal:** Establish the deterministic, no-K2 foundation for Kintsugi: freeze the execution base, preserve the repository's known test state as data, and add a standard-library validator shell with canonical hashing, safe paths, exact baseline comparison, stable diagnostics, and a truthful CLI.
 
-**Architecture:** This is the first executable slice of the approved Kintsugi design. One read-only Python module owns canonical bytes, hash domains, safe repository paths, diagnostics, pytest collection/failure parsing, and the baseline command. Its contract is a checked-in JSON file. It does not yet create the Kintsugi schema, manifest, seam graph, owner repairs, `REC-A-108`, or review bundle; those receive separate plans after this slice passes.
+**Architecture:** This is the first executable slice of the approved Kintsugi design. One Python module performs no direct repository writes and owns canonical bytes, hash domains, safe repository paths, diagnostics, pytest collection/failure parsing, and the baseline command. It invokes existing pytest tests and does not sandbox side effects inside those tests. Its contract is a checked-in JSON file. It does not yet create the Kintsugi schema, manifest, seam graph, owner repairs, `REC-A-108`, or review bundle; those receive separate plans after this slice passes.
 
 **Tech Stack:** Python 3.11 standard library, `unittest`, pytest as the existing repository test runner, Git.
 
@@ -28,7 +28,7 @@
 - `/Users/Yves/.codex/attachments/ec649130-9018-4d89-a0f1-99b9e82f34b5/pasted-text.txt` is potential A0B support only at raw SHA-256 `2937faf077f58a49e3c5953d33c3413ea3108350f82c8166eaf54818cdb5ad73`. It is `[B/D]` external support, every finding starts `ALLEGED`, and its claimed counts are not proof. A0B may hash-pin and deduplicate it before `MAN-A-001` freezes; it is not an A0 input or A0 scope path.
 - The Kintsugi program has no K2 approval, countersign, checkpoint, or veto gate.
 - These plan/spec amendments are pre-rebase planning changes and are outside the A0 implementation diff. The A0 implementation scope remains exactly the four paths above, with a baseline of 19 collected nodes and five allowed failures.
-- The validator is read-only and uses only the standard library.
+- The validator performs no direct repository writes and uses only the standard library. It disables pytest cache and Python bytecode writes, but it does not sandbox writes performed by repository test bodies.
 - Use `apply_patch` for hand-authored files. Stage only the four paths above.
 - If canonical `main` moves or a protected hash changes, stop before rebasing and write a concurrency addendum.
 
@@ -706,7 +706,7 @@ git commit -m "feat(kintsugi): establish deterministic audit foundation"
 ~~~~markdown
 ## Kintsugi audit foundation
 
-The read-only A0 validator freezes the known repository test state without treating existing failures as new truth:
+The A0 baseline validator freezes the known repository test state without treating existing failures as new truth:
 
 ```bash
 set -euo pipefail
@@ -715,7 +715,7 @@ python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py \
   --canonical-root /Users/Yves/Documents/01_EMERGENTISM
 ```
 
-`kintsugi_baseline_failures.json` records 19 baseline node IDs and five exact failure signatures at `main@454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22`. A previously failing node may turn green; a removed node, new failure, exception drift, or signature drift fails. The validator never writes files and has no K2 approval gate.
+`kintsugi_baseline_failures.json` records 19 baseline node IDs and five exact failure signatures at `main@454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22`. A previously failing node may turn green; a removed node, new failure, exception drift, or signature drift fails. The validator itself introduces no direct writes and disables pytest cache and Python bytecode writes; arbitrary repository test bodies are not sandboxed. The baseline gate has no K2 approval gate.
 ~~~~
 
 Apply the block exactly; the outer tildes preserve the literal inner Bash fence.
