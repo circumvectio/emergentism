@@ -159,7 +159,11 @@ def check_orphans():
                 target = os.path.normpath(os.path.join(target, "index.html"))
             if target in html_set and target not in reachable:
                 queue.append(target)
-    ignored = {os.path.normpath(os.path.join(BASE_DIR, "index.html"))}
+    ignored = {
+        os.path.normpath(os.path.join(BASE_DIR, "index.html")),
+        # PWA offline fallback: served by the service worker, unlinked by design
+        os.path.normpath(os.path.join(BASE_DIR, "offline", "index.html")),
+    }
     orphans = [
         os.path.relpath(full, BASE_DIR)
         for full in sorted(html_set - reachable - ignored)
