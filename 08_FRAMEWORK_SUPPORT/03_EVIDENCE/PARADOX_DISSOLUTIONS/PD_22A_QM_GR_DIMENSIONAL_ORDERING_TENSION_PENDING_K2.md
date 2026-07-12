@@ -1,7 +1,7 @@
 ---
 title: "PD_22A — QM/GR dimensional ordering: an open tension in canon, and a candidate axis-fusion reconciliation"
 date: 2026-07-12
-status: "[D] OPEN — PENDING K2 (and, honestly, a physicist). Surfaces a direct contradiction inside canon on WHERE quantum sits relative to gravity, and proposes — does NOT assert — a two-register reconciliation on the pattern of receipts 105–107. Conjecture stacked on conjecture; authored at the AI co-owner's stated competence-edge."
+status: "[D] RESOLVED-CANDIDATE (2026-07-12). The §1 tension is dissolved by K2's three-level refinement — which is ALREADY canon across two docs: D3 = Quantum State (00_THE_GEOMETRIC_ONTOLOGY_OF_REALITY), D4 = collapse, D5 = Many-Worlds (doc 27). PD_22's flat 'QM = D5' was the bug: it referenced only the D5 slice. See §7. Still [C/I]; still owes external physics review before any promotion; the 'two quantums' of §3 is superseded by the cleaner three-level of §7."
 evidence_tier: "[I] the tension (verified at file:line in both docs); [C] the candidate reconciliation and every physical mapping; inherits PD_22's falsifiers"
 owner: "K2 + AI co-owner (+ external physics review before any promotion)"
 parents:
@@ -97,3 +97,46 @@ candidate, not to close it. On K2 direction (and physics review): either adopt t
 two-register reconciliation and reconcile PD_22 + Rule 3 D4 explicitly, or pick a
 single ordering and gild the other as superseded. Until then, **PD_22 and this
 live intuition disagree, and the honest state of canon is "open."**
+
+## 7. RESOLUTION (2026-07-12) — the tension was a *flattened* three-level structure
+
+The §1 contradiction dissolves — and from *inside* canon. "Quantum" is **three
+objects at three rungs**, and PD_22 and the live intuition each named only one:
+
+| Rung | "Quantum" as | Canon source (hand-verified) | QM reading |
+|---|---|---|---|
+| **D3** | one **quantum state** (Bloch sphere; unitary evolution) | `00_THE_GEOMETRIC_ONTOLOGY_OF_REALITY.md:70,198` — "D3 \| Quantum State … quantum possibility" | the state vector, pre-measurement |
+| **D4** | a **collapse** — one actual outcome; time/causality/spacetime appear | `27:35` "at D4 the causal structure bifurcates into light cones"; `27:215` "the collapse is the selection event" | **Copenhagen** (one world) |
+| **D5** | **all** possible collapses — the branch-space / option-cone | `27:206` "Many-Worlds = D5 distributed actuality (all branches)" | **Many-Worlds** |
+
+- **§1 was an artifact of PD_22 flattening this** to "QM = D5" (the branch-space
+  slice) while the live intuition named "QM = D3" (the state slice). **Both are
+  canon; neither is wrong; PD_22 under-referenced.** The "two quantums" of §3 is
+  superseded by this cleaner three.
+- **Register-indexing (receipts 105–107) reconciles the D4/D5 "actual" flip:**
+  doc 27 reads the *emergence axis* (D4 potential → D5 actual; Copenhagen = D4→D5
+  singular selection); the live/PD_22 reading is the *action axis* (the collapse /
+  embodied outcome = D4-actual = gravity/spacetime; the possibility-space = D5).
+  Same nodes, register-indexed. **Gravity = D4 on the action axis.**
+- **The physics kernel worth keeping (`[I/C]`, the strongest new content):** the
+  D3→D4 crossing is "undirected change → directed change, *time appears*" (Rule 3),
+  which maps **exactly** onto QM's own two processes — **unitary evolution is
+  time-*symmetric* and reversible (D3, no arrow); measurement/collapse is
+  *irreversible*, where the arrow of time enters (D4).** The measurement problem's
+  irreversibility *is* the D3→D4 "time appears." (von Neumann: reversible U-process
+  = D3; irreversible R-process = D4.) `[I/C]`, and it owes a physicist — but it is
+  a real correspondence, not a pun.
+- **Copenhagen vs Many-Worlds dissolves as a dimensional-level difference, not a
+  metaphysical war:** Copenhagen describes *one* collapse (the D4 slice a Dasein
+  inhabits); Many-Worlds describes *all* collapses (the D5 whole). Not rivals —
+  different D-levels of one structure (latent already at `27:209`).
+
+**Fix PD_22 owes:** replace its flat "QM = D5" with the three-level (D3 state / D4
+collapse / D5 all-collapses) mapping, cite both source docs, so it stops appearing
+to contradict the D3 reading.
+
+**Fences unchanged.** Still `[C/I]`; still owes external physics review. Two
+stretches flagged: (i) equating the relativistic **light cone** (a spacetime
+causal structure) with the **branch-space** of collapses (Hilbert-space MW) is an
+`[I]` fusion inside the model, not a physics identity; (ii) the register
+reconciliation rests on receipts 105–107, themselves `[C/I]`.
