@@ -27,7 +27,7 @@ EXPECTED_FAILURES = {
     "09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_manifest_exists_and_links_resolve": ("AssertionError", "00_SKYZAI_COM_PRODUCT_MANIFEST.md"),
     "09_TOOLS/01_SCRIPTS/test_marketplace_tools.py::test_cross_entity_receipt_traversal_passes": ("AssertionError", "09_K2_ROUTE_READINESS_RECEIPT.jsonld"),
 }
-EXPECTED_CONTRACT_HASH = "sha256:92bc13d84b0cee317f648af6b1589f507e23a227afb40da2d66fb94282017957"
+EXPECTED_CONTRACT_HASH = "sha256:8a6b6209abdaa3f4cf10b1fd50da7a6181fe08bd8f7dbd1fc4726af1448e203b"
 
 class PrimitiveTests(unittest.TestCase):
     def test_canonical_json_and_hash_domains(self):
@@ -76,7 +76,7 @@ class ContractTests(unittest.TestCase):
     def test_checked_in_contract_is_exact(self):
         contract = v.load_contract(CONTRACT_PATH)
         self.assertEqual(contract["schemaVersion"], "1.0.0")
-        self.assertEqual(contract["baseCommit"], "454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22")
+        self.assertEqual(contract["baseCommit"], "992a8382280d260b2440c140cc28568b468b1678")
         self.assertEqual(contract["collectedAtBaseline"], 19)
         self.assertEqual(contract["command"], ["python3", "-m", "pytest", "-q", "--tb=short"])
         self.assertEqual(contract["collectCommand"], ["python3", "-m", "pytest", "--collect-only", "-q"])
@@ -156,7 +156,7 @@ class RunnerTests(unittest.TestCase):
         )
 
     @mock.patch.object(v.subprocess, "run")
-    def test_runner_sanitizes_hostile_pytest_environment_without_writes(self, run):
+    def test_runner_sanitizes_hostile_pytest_environment_and_disables_cache_writes(self, run):
         run.return_value = subprocess.CompletedProcess([], 0, "", "")
         hostile = {
             "PYTEST_ADDOPTS": "-k never",
