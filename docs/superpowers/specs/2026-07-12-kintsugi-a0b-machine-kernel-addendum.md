@@ -122,6 +122,17 @@ selected by a CLI input role. Every object remains
 `additionalProperties: false`, every `$ref` is local, and every declared
 keyword is consumed by the restricted evaluator.
 
+### 5.1 Golden Seam erratum: bounded string length
+
+The canonical schema appendix uses `maxLength: 256` on the REGEX antibody
+pattern so the schema enforces the pattern-length bound in Section 9.1. The
+separate 1,024-state NFA ceiling remains a runtime/compiler check. The initial
+Task 2 evaluator list accidentally omitted `maxLength`, which made the literal
+schema and the fail-closed keyword registry jointly unsatisfiable. The
+restricted vocabulary therefore includes `maxLength` with ordinary JSON Schema
+string-length semantics. This is the sole vocabulary addition licensed by the
+seam; unknown keywords continue to fail closed.
+
 ## 6. Pre-v1 claim contract additions
 
 Every claim gains six fields:

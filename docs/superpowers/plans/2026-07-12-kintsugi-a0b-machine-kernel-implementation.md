@@ -406,10 +406,12 @@ repository replacement.
 - [ ] Implement only the keyword registry frozen by the design/addendum:
   `$schema`, `$id`, `$defs`, `$ref`, `type`, `required`, `properties`,
   `additionalProperties`, `enum`, `pattern`, `minimum`, `minLength`,
-  `minItems`, `maxItems`, `items`, `uniqueItems`, `const`, `allOf`, `anyOf`,
-  `oneOf`, `if`, `then`, `else`. Resolve local JSON Pointers, validate schema
-  vocabulary before instances, use `type(value) is int`, never coerce/default,
-  and sort all issues by `(path, code, message)`.
+  `maxLength`, `minItems`, `maxItems`, `items`, `uniqueItems`, `const`, `allOf`,
+  `anyOf`, `oneOf`, `if`, `then`, `else`. `maxLength` is the narrow Golden
+  Seam repair that makes the appendix's `maxLength: 256` REGEX bound executable;
+  it licenses no other vocabulary expansion. Resolve local JSON Pointers,
+  validate schema vocabulary before instances, use `type(value) is int`, never
+  coerce/default, and sort all issues by `(path, code, message)`.
 - [ ] Implement `validate_named_definition` for closed nested payload,
   attestation, review-target, receipt-descriptor, and bundle definitions. Keep
   `validate_schema_instance` hard-gated to exactly `coreData`, `publicQueue`,
