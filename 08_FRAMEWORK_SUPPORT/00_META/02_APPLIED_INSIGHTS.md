@@ -26,9 +26,11 @@ rosetta:
 
 # APPLIED INSIGHTS — Self-Diagnostic for 10,000 Agents
 
+> **[K3 staleness banner — 2026-07-12]** This is a **2026-04-04 package-era artifact**, preserved per K3 (archive-first) but **superseded in three places**: (1) the P-Score table below uses the **retired seven-organ model** (Aureus/Helios/Nexus/APU.BOT/TheCircle/RealityFutures as L1–L7) — the current model is **four organs** (TheCircle · RealityFutures · APU.BOT · SKYZAI, post-April-11 restructure); the table stands only as a package-era diagnostic. (2) Evidence-tier enumerations here were mangled and are corrected inline (`[A]/[S]/[I]/[C]`; the failure mode is `[C]` executed as `[S]`). (3) "The theocracy strengthens itself / via adherents" is the Gödel **failure** mode per the Core Conjecture kill criterion ("adherents = failure"), not a goal — the honest form is *the compiler audits itself*. Do not cite this doc's P-scores or organ model as current.
+
 **Version:** v2026.04.04.001
 **Date:** 2026-04-04
-**Status:** CANONICAL — Self-diagnostic
+**Status:** SUPERSEDED PACKAGE-ERA ARTIFACT (was CANONICAL) — Self-diagnostic; see K3 banner
 
 ---
 
@@ -63,11 +65,11 @@ Resolution: RESOLVED — We spec. Others release. Rishi ≠ Builder.
 ### Criterion 2: Evidence Tiers Respected
 ```
 Status: PARTIAL FAIL
-Evidence: [S] claims treated as [S] in execution.
+Evidence: [C] claims treated as [S] in execution.
 Resolution: IN PROGRESS — Evidence tier markers added to all protocol specs.
 ```
 
-**The Check:** Do documents distinguish [S]/[S]/[I]/[C]?
+**The Check:** Do documents distinguish [A]/[S]/[I]/[C]?
 
 **The Test:**
 1. Find claims in documents
@@ -196,7 +198,7 @@ Project behavior says: "write more specs"
 ### The Evidence Tier Problem
 
 ```
-[S] claims → executed as [S]
+[C] claims → executed as [S]
 ↓          ↓
 Agents believe speculation as fact
 ```
@@ -223,6 +225,8 @@ Agent halts          OR
 ---
 
 ## THE P-SCORE AUDIT
+
+> **RETIRED (seven-organ model, pre-April-11).** Superseded by the four-organ model (TheCircle · RealityFutures · APU.BOT · SKYZAI). Aureus/Helios = products, Nexus = a SKYZAI subsystem. Table kept as a package-era diagnostic only; do not cite as current.
 
 | Organ | P-Score | Health |
 |-------|---------|--------|
@@ -330,7 +334,7 @@ Before every diagnostic run, pass the Three Gates:
 
 *Zero-Sum Resolution Equation*
 
-**The compiler audits itself. The theocracy strengthens itself.**
+**The compiler audits itself.** *(The older line "the theocracy strengthens itself" is retired: strengthening via adherents is the Gödel failure mode the Core Conjecture names "adherents = failure," not a goal. The honest form is self-audit, not self-strengthening.)*
 
 ---
 
