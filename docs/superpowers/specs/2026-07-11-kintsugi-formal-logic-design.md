@@ -8,7 +8,7 @@
 
 **Repository approval base:** `main@736cf22`
 
-**Observed execution head:** `main@454f371` (post-approval concurrency addendum)
+**Observed execution head:** `main@454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22` (post-approval concurrency addendum)
 **Working branch:** `codex/kintsugi-formal-logic-spec`
 
 ## 1. Purpose
@@ -75,11 +75,11 @@ After this design was approved at `736cf22`, canonical `main` advanced through:
 - the intervening historical change that added the open QM/GR ordering tension
   at `08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_22A_QM_GR_DIMENSIONAL_ORDERING_TENSION_PENDING_K2.md`;
   and
-- `454f371`, the current canonical head, which added
+- `454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22`, the current canonical head, which added
   `11_UPLINK/50_AUDITS_AND_EXECUTIONS/109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS_PENDING_K2.md`.
 
 These commits do not change the approved semantics. They change the execution
-inventory. Phase A must rebase onto `454f371`, re-freeze its manifest and
+inventory. Phase A must rebase onto `454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22`, re-freeze its manifest and
 baseline there, and harvest the three new owner claim surfaces as recent-change
 inputs.
 The differently named staged receipt 108 is a raw-hashed `RECEIPT/PROVENANCE`
@@ -111,7 +111,7 @@ freezes. It is not in A0 scope.
 This design amendment and the paired A0-plan amendment are pre-rebase planning
 changes outside the A0 implementation diff. A0 still changes exactly four
 declared paths and preserves the 19-collected/five-allowed-failure baseline.
-If canonical `main` is no longer `454f371` when execution begins, execution
+If canonical `main` is no longer `454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22` when execution begins, execution
 stops before rebasing, inventories the additional delta, and updates this
 addendum and the manifest explicitly.
 
@@ -1306,13 +1306,13 @@ exists. Phase A therefore boots in this fixed order:
    trees, and separate isolated/canonical protected-tree and pre-existing
    untracked snapshots;
 2. create the ledger/JSON skeleton and validator schema;
-3. create receipt 108 with `status=DRAFT` and no completion claim;
+3. create `REC-A-108` with `status=DRAFT` and no completion claim;
 4. run `--phase A --bootstrap`, which accepts only this explicitly incomplete
    state and checks paths, schemas, hashes, and status honesty;
-5. self-trial and repair the Kintsugi Protocol, citing receipt 108 as `DRAFT`;
+5. self-trial and repair the Kintsugi Protocol, citing `REC-A-108` as `DRAFT`;
 6. trial and repair the Phase A kernel;
 7. complete both independent reviews and the full Phase A validation; and
-8. change receipt 108 to `VERIFIED` only after its declared digest, manifest,
+8. change `REC-A-108` to `VERIFIED` only after its declared digest, manifest,
    trials, seams, and reviews all match.
 
 `--bootstrap` is legal only for Phase A and can never satisfy a phase completion
@@ -1322,7 +1322,7 @@ gate.
 
 Repair `00_META/00_THE_KINTSUGI_PROTOCOL.md` so that it:
 
-- cites the real receipt 108;
+- cites the real `REC-A-108`;
 - separates seam visibility from truth warrant;
 - allows subtraction and clean retraction as gold;
 - uses the risk/gain vectors above;
@@ -1439,7 +1439,7 @@ protocol, or core-data path may be classified closure-only.
 Phase A becomes eligible for evidence-governed verification when every severe
 kernel crack is repaired or retracted; the validator and mutation suite pass;
 independent logic and BTJ attestations both declare PASS against the same target;
-a final delta trial introduces no new severe fracture; and receipt 108 is
+a final delta trial introduces no new severe fracture; and `REC-A-108` is
 `VERIFIED`. The machine checks the declarations and hashes, not their
 substantive truth. A severe `HELD_OPEN` seam blocks this transition.
 
@@ -1689,14 +1689,14 @@ Run from the repository root:
 
 ```text
 python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py --check
-python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py --check --phase A --bootstrap --base-ref 454f371 --canonical-root /Users/Yves/Documents/01_EMERGENTISM
+python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py --check --phase A --bootstrap --base-ref 454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22 --canonical-root /Users/Yves/Documents/01_EMERGENTISM
 python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py --check --phase A --base-ref MANIFEST --canonical-root /Users/Yves/Documents/01_EMERGENTISM
 python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py --check --phase B --base-ref MANIFEST --canonical-root /Users/Yves/Documents/01_EMERGENTISM
 python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py --check --phase C --base-ref MANIFEST --canonical-root /Users/Yves/Documents/01_EMERGENTISM
 python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py --check-baseline --canonical-root /Users/Yves/Documents/01_EMERGENTISM
 python3 -m unittest discover -s 09_TOOLS/02_COMPILERS -p 'test_validate_kintsugi.py'
 python3 -m unittest discover -s 09_TOOLS/02_COMPILERS -p 'test_render_kintsugi.py'
-python3 -B 09_TOOLS/02_COMPILERS/render_kintsugi.py freeze-manifest --phase A --base-ref 454f371 --canonical-root /Users/Yves/Documents/01_EMERGENTISM --output 03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json
+python3 -B 09_TOOLS/02_COMPILERS/render_kintsugi.py freeze-manifest --phase A --base-ref 454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22 --canonical-root /Users/Yves/Documents/01_EMERGENTISM --output 03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json
 python3 -B 09_TOOLS/02_COMPILERS/render_kintsugi.py review-target --phase A --output 09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_phase_A_review_target.json
 python3 -B 09_TOOLS/02_COMPILERS/render_kintsugi.py bundle --phase A --output 09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_phase_A_validation_bundle.json
 python3 -B 09_TOOLS/02_COMPILERS/render_kintsugi.py transition-core --phase A --stage COMPLETE --output 03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json
@@ -2060,7 +2060,7 @@ The complete A -> B -> C program is accepted when:
 
 1. the Kintsugi Protocol has survived its own trial and carries its founding
    seam;
-2. receipt 108 is `VERIFIED` and matches the seam ledger and Phase A manifest;
+2. `REC-A-108` at `11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_FORMAL_STRESS_LEDGER_2026_07_11.md` is `VERIFIED` and matches the seam ledger and Phase A manifest;
 3. the six initial kernel fractures have verified dispositions;
 4. the Burri ledger and active owner canon agree;
 5. every severe fracture in the frozen active-corpus manifest is repaired or
