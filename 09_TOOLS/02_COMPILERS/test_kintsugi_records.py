@@ -143,6 +143,81 @@ def fail_then_successor(core):
     return predecessor, successor, finding, attestation, disposition
 
 
+def passed_attempt(core, *, receipt_status="COMPLETE"):
+    attempt, artifact = pending_attempt(core)
+    attestations = []
+    for kind in ("LOGIC", "BTJ"):
+        review_path = attempt["logicReviewPath" if kind == "LOGIC" else "btjReviewPath"]
+        attestation = {
+            "id": f"ATT-{kind}-A-001",
+            "kind": kind,
+            "path": review_path,
+            "receiptId": attempt["receiptId"],
+            "reviewerId": f"independent-{kind.lower()}-reviewer",
+            "reviewerRole": f"Independent {kind} reviewer",
+            "independenceStatement": "No implementation role in this attempt.",
+            "reviewTargetDigest": support.RAW_HASH,
+            "verdict": "PASS",
+            "findingIds": [],
+            "openSevereFindingIds": [],
+            "approvedUpgradeSeamIds": [],
+            "approvedGateSeamIds": [],
+            "attemptId": attempt["id"],
+        }
+        attestations.append(attestation)
+    attempt.update({
+        "logicAttestationId": attestations[0]["id"],
+        "btjAttestationId": attestations[1]["id"],
+        "status": "PASSED",
+    })
+    artifact.update({
+        "reviewTargetSha256": support.RAW_HASH,
+        "logicReviewSha256": support.RAW_HASH,
+        "btjReviewSha256": support.RAW_HASH,
+    })
+    core["reviewAttestations"] = attestations
+    receipt = core["phaseReceipts"][0]
+    if receipt_status in {"COMPLETE", "VERIFIED"}:
+        receipt.update({
+            "status": receipt_status,
+            "reviewTargetDigest": support.RAW_HASH,
+            "logicReviewPath": attempt["logicReviewPath"],
+            "btjReviewPath": attempt["btjReviewPath"],
+        })
+    if receipt_status == "VERIFIED":
+        receipt.update({
+            "validationBundlePath": attempt["validationBundlePath"],
+            "validationDigest": support.RAW_HASH,
+        })
+    return attempt, artifact, attestations
+
+
+def one_pass_attestation(core, attempt, artifact, *, kind="LOGIC"):
+    review_key = "logicReviewPath" if kind == "LOGIC" else "btjReviewPath"
+    artifact_key = "logicReviewSha256" if kind == "LOGIC" else "btjReviewSha256"
+    slot = "logicAttestationId" if kind == "LOGIC" else "btjAttestationId"
+    attestation = {
+        "id": f"ATT-{kind}-A-001",
+        "kind": kind,
+        "path": attempt[review_key],
+        "receiptId": attempt["receiptId"],
+        "reviewerId": f"independent-{kind.lower()}-reviewer",
+        "reviewerRole": f"Independent {kind} reviewer",
+        "independenceStatement": "No implementation role in this attempt.",
+        "reviewTargetDigest": support.RAW_HASH,
+        "verdict": "PASS",
+        "findingIds": [],
+        "openSevereFindingIds": [],
+        "approvedUpgradeSeamIds": [],
+        "approvedGateSeamIds": [],
+        "attemptId": attempt["id"],
+    }
+    attempt[slot] = attestation["id"]
+    artifact.update({"reviewTargetSha256": support.RAW_HASH, artifact_key: support.RAW_HASH})
+    core["reviewAttestations"] = [attestation]
+    return attestation
+
+
 class VesselAndIdentityTests(unittest.TestCase):
     def assertSchemaValid(self, value):
         self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", value), ())
@@ -234,6 +309,25 @@ class VesselAndIdentityTests(unittest.TestCase):
         seam_core["sources"].append(provenance)
         seam["sourceIds"] = [provenance["id"]]
         self.assertIn("KIN-E-REF", codes(validate(seam_core, phase="A")))
+
+    def test_provenance_source_cannot_alias_any_canonical_phase_receipt_path(self):
+        for receipt_path in (
+            "11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_FORMAL_STRESS_LEDGER_2026_07_11.md",
+            "11_UPLINK/50_AUDITS_AND_EXECUTIONS/109_ACTIVE_CORPUS_KINTSUGI_RECEIPT_2026_07_11.md",
+            "11_UPLINK/50_AUDITS_AND_EXECUTIONS/110_KINTSUGI_PUBLIC_PHENOTYPE_PROPAGATION_QUEUE_2026_07_11.md",
+        ):
+            core = support.build_semantic_core()
+            source = copy.deepcopy(core["sources"][0])
+            source.update({
+                "id": "SRC-PROV-A-999",
+                "path": receipt_path,
+                "kind": "RECEIPT",
+                "authorityRole": "PROVENANCE",
+            })
+            core["sources"].append(source)
+            with self.subTest(path=receipt_path):
+                self.assertSchemaValid(core)
+                self.assertIn("KIN-E-REF", codes(validate(core, phase="A")))
 
 
 class ClaimGraphTests(unittest.TestCase):
@@ -413,6 +507,13 @@ class ReceiptBindingAndBootstrapTests(unittest.TestCase):
                     codes(validate(core, phase=phase, bootstrap=bootstrap)),
                 )
 
+    def test_bootstrap_requires_the_canonical_phase_a_manifest_identity(self):
+        core = support.build_semantic_core(bootstrap=True)
+        core["manifests"][0]["id"] = "MAN-A-999"
+        core["phaseReceipts"][0]["manifestId"] = "MAN-A-999"
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+        self.assertIn("KIN-E-RECEIPT", codes(validate(core, phase="A", bootstrap=True)))
+
     def test_attempt_sensitive_final_snapshot_and_closure_union(self):
         core = support.build_semantic_core()
         attempt, _ = pending_attempt(core)
@@ -431,6 +532,40 @@ class ReceiptBindingAndBootstrapTests(unittest.TestCase):
         stale_pointer = copy.deepcopy(core)
         stale_pointer["phaseReceipts"][0]["reviewAttemptId"] = None
         self.assertIn("KIN-E-RECEIPT", codes(validate(stale_pointer, phase="A")))
+
+    def test_receipt_state_and_closure_fields_bind_the_current_attempt_exactly(self):
+        draft = support.build_semantic_core()
+        passed_attempt(draft, receipt_status="DRAFT")
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", draft), ())
+        self.assertIn("KIN-E-RECEIPT", codes(validate(draft, phase="A")))
+
+        complete = support.build_semantic_core()
+        attempt, _, _ = passed_attempt(complete, receipt_status="COMPLETE")
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", complete), ())
+        self.assertEqual(validate(complete, phase="A"), [])
+        complete_rows = []
+        for field in ("logicReviewPath", "btjReviewPath"):
+            mutated = copy.deepcopy(complete)
+            mutated["phaseReceipts"][0][field] = f"11_UPLINK/false-{field}.md"
+            complete_rows.append((field, mutated))
+        wrong_target = copy.deepcopy(complete)
+        wrong_target["phaseReceipts"][0]["reviewTargetDigest"] = "sha256:" + "1" * 64
+        complete_rows.append(("reviewTargetDigest", wrong_target))
+        for label, mutated in complete_rows:
+            with self.subTest(status="COMPLETE", field=label):
+                self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", mutated), ())
+                self.assertIn("KIN-E-RECEIPT", codes(validate(mutated, phase="A")))
+
+        verified = support.build_semantic_core()
+        attempt, _, _ = passed_attempt(verified, receipt_status="VERIFIED")
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", verified), ())
+        self.assertEqual(validate(verified, phase="A"), [])
+        wrong_bundle = copy.deepcopy(verified)
+        wrong_bundle["phaseReceipts"][0]["validationBundlePath"] = (
+            "09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_review_attempts/RVA-A-999/validation_bundle.json"
+        )
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", wrong_bundle), ())
+        self.assertIn("KIN-E-RECEIPT", codes(validate(wrong_bundle, phase="A")))
 
 
 class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
@@ -478,6 +613,68 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
             if fixture["id"] != antibody["quotationFixtureIds"][0]
         ]
         self.assertIn("KIN-E-FIXTURE", codes(validate(core, phase="A")))
+
+    def test_trial_seam_and_seam_discriminators_preserve_claim_and_receipt_identity(self):
+        wrong_claim = support.build_semantic_core()
+        seam = support.add_confirmed_seam(wrong_claim)
+        seam.update({
+            "claimId": wrong_claim["claims"][1]["id"],
+            "ownerSource": wrong_claim["claims"][1]["ownerSourceId"],
+            "ownerAnchor": wrong_claim["claims"][1]["ownerAnchor"],
+        })
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", wrong_claim), ())
+        self.assertIn("KIN-E-REF", codes(validate(wrong_claim, phase="A")))
+
+        wrong_discriminator = support.build_semantic_core()
+        seam = support.add_confirmed_seam(wrong_discriminator)
+        discriminator = {
+            "id": "DISC-A-999",
+            "claimId": wrong_discriminator["claims"][1]["id"],
+            "question": "Does an unrelated claim survive its own test?",
+            "method": "Inspect the unrelated claim fixture.",
+            "cheapestTest": "Compare the two claim IDs.",
+            "expectedObservations": ["The claim IDs remain distinct."],
+            "decisionRule": "Treat distinct IDs as different propositions.",
+            "status": "QUEUED",
+        }
+        wrong_discriminator["discriminators"].append(discriminator)
+        seam["discriminatorIds"] = [discriminator["id"]]
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", wrong_discriminator), ())
+        self.assertIn("KIN-E-REF", codes(validate(wrong_discriminator, phase="A")))
+
+    def test_seam_claim_projection_has_local_typed_term_and_support_id_uniqueness(self):
+        duplicate_term = support.build_semantic_core()
+        seam = support.add_confirmed_seam(duplicate_term)
+        term = copy.deepcopy(seam["typedTerms"][0])
+        term.update({"type": "Different projected prose type", "definition": "Different projected prose."})
+        seam["typedTerms"].append(term)
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", duplicate_term), ())
+        self.assertIn("KIN-E-ID", codes(validate(duplicate_term, phase="A")))
+
+        duplicate_link = support.build_semantic_core()
+        seam = support.add_confirmed_seam(duplicate_link)
+        links = [
+            {
+                "id": "SUP-SEAM-A-001",
+                "supportingClaimId": duplicate_link["claims"][1]["id"],
+                "mode": "CORROBORATION",
+                "independenceStatus": "INDEPENDENT",
+                "evidenceCeiling": "A",
+                "rationale": "First projected support endpoint.",
+            },
+            {
+                "id": "SUP-SEAM-A-001",
+                "supportingClaimId": duplicate_link["claims"][2]["id"],
+                "mode": "CORROBORATION",
+                "independenceStatus": "INDEPENDENT",
+                "evidenceCeiling": "A",
+                "rationale": "Second projected support endpoint.",
+            },
+        ]
+        seam["priorSupportLinks"] = copy.deepcopy(links)
+        seam["supportLinks"] = copy.deepcopy(links)
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", duplicate_link), ())
+        self.assertIn("KIN-E-ID", codes(validate(duplicate_link, phase="A")))
 
     def test_review_attempt_artifact_bijection_paths_and_round_trip_id(self):
         core = support.build_semantic_core()
@@ -560,6 +757,133 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
 
         self.assertEqual(finding["id"], attestation["findingIds"][0])
         self.assertEqual(finding["id"], disposition["findingId"])
+
+    def test_attestation_slots_are_role_bound_and_distinct_in_every_attempt_state(self):
+        pending = support.build_semantic_core()
+        attempt, artifact = pending_attempt(pending)
+        one_pass_attestation(pending, attempt, artifact, kind="LOGIC")
+        self.assertEqual(validate(pending, phase="A"), [])
+        wrong_pending_slot = copy.deepcopy(pending)
+        wrong_pending_slot["reviewAttempts"][0]["logicAttestationId"] = None
+        wrong_pending_slot["reviewAttempts"][0]["btjAttestationId"] = "ATT-LOGIC-A-001"
+        wrong_pending_slot["reviewAttemptArtifacts"][0]["logicReviewSha256"] = None
+        wrong_pending_slot["reviewAttemptArtifacts"][0]["btjReviewSha256"] = support.RAW_HASH
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", wrong_pending_slot), ())
+        self.assertIn("KIN-E-REF", codes(validate(wrong_pending_slot, phase="A")))
+
+        failed = support.build_semantic_core()
+        predecessor, _, _, _, _ = fail_then_successor(failed)
+        predecessor["btjAttestationId"] = predecessor["logicAttestationId"]
+        failed["reviewAttemptArtifacts"][0]["btjReviewSha256"] = support.RAW_HASH
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", failed), ())
+        self.assertIn("KIN-E-STATE", codes(validate(failed, phase="A")))
+
+        abandoned = support.build_semantic_core()
+        attempt, artifact = pending_attempt(abandoned)
+        attestation = one_pass_attestation(abandoned, attempt, artifact, kind="LOGIC")
+        attempt.update({
+            "btjAttestationId": attestation["id"],
+            "status": "ABANDONED",
+            "abandonReason": "The duplicated review role invalidated this attempt.",
+        })
+        artifact["btjReviewSha256"] = support.RAW_HASH
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", abandoned), ())
+        self.assertIn("KIN-E-STATE", codes(validate(abandoned, phase="A")))
+
+        for receipt_status in ("COMPLETE", "VERIFIED"):
+            terminal = support.build_semantic_core()
+            attempt, _, attestations = passed_attempt(terminal, receipt_status=receipt_status)
+            terminal["reviewAttestations"] = [attestations[0]]
+            attempt["btjAttestationId"] = attempt["logicAttestationId"]
+            with self.subTest(receipt_status=receipt_status):
+                self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", terminal), ())
+                self.assertIn("KIN-E-STATE", codes(validate(terminal, phase="A")))
+
+    def test_review_findings_and_dispositions_are_scoped_to_their_attempt_subject(self):
+        finding_core = support.build_semantic_core()
+        fail_then_successor(finding_core)
+        unrelated = copy.deepcopy(finding_core["claims"][0])
+        unrelated.update({
+            "id": "CLM-A-999",
+            "proposition": "An unrelated global claim is outside the review subject.",
+            "conclusion": "The unrelated global claim remains outside the review subject.",
+        })
+        unrelated["typedTerms"][0]["symbol"] = "outsideSubject"
+        unrelated["premises"][0]["id"] = "PREM-A-999"
+        finding_core["claims"].append(unrelated)
+        finding_core["reviewFindings"][0]["claimIds"] = [unrelated["id"]]
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", finding_core), ())
+        self.assertIn("KIN-E-REF", codes(validate(finding_core, phase="A")))
+
+        disposition_core = support.build_semantic_core()
+        fail_then_successor(disposition_core)
+        unrelated = copy.deepcopy(disposition_core["claims"][0])
+        unrelated.update({
+            "id": "CLM-A-999",
+            "proposition": "An unrelated disposition endpoint is outside the successor subject.",
+            "conclusion": "The unrelated disposition endpoint remains outside the successor subject.",
+        })
+        unrelated["typedTerms"][0]["symbol"] = "outsideSuccessor"
+        unrelated["premises"][0]["id"] = "PREM-A-999"
+        disposition_core["claims"].append(unrelated)
+        disposition_core["reviewFindingDispositions"][0]["claimIds"] = [unrelated["id"]]
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", disposition_core), ())
+        self.assertIn("KIN-E-REF", codes(validate(disposition_core, phase="A")))
+
+        path_core = support.build_semantic_core()
+        fail_then_successor(path_core)
+        candidate_only = {
+            "path": "03_METHODOLOGY/candidate-only.md",
+            "kind": "FILE",
+            "sha256": support.RAW_HASH,
+        }
+        path_core["manifests"][0]["candidateFiles"].append(candidate_only)
+        path_core["manifests"][0]["candidateFileCount"] += 1
+        path_core["reviewFindings"][0]["subjectPaths"] = [candidate_only["path"]]
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", path_core), ())
+        self.assertIn("KIN-E-REF", codes(validate(path_core, phase="A")))
+
+    def test_process_invalid_evidence_is_scoped_to_the_successor_manifest(self):
+        core = support.build_semantic_core()
+        fail_then_successor(core)
+        file_record = {
+            "path": "03_METHODOLOGY/unrelated-phase-b-final.md",
+            "kind": "FILE",
+            "sha256": support.RAW_HASH,
+        }
+        unrelated_manifest = copy.deepcopy(core["manifests"][0])
+        unrelated_manifest.update({
+            "id": "MAN-B-999",
+            "phase": "B",
+            "discoveryRules": [{
+                "id": "DISC-B-999",
+                "includeGlobs": ["03_METHODOLOGY/*.md"],
+                "excludeGlobs": ["90_ARCHIVE/**"],
+                "parser": "MARKDOWN",
+                "rationale": "An unrelated manifest used only as an adversarial fixture.",
+            }],
+            "candidateFiles": [copy.deepcopy(file_record)],
+            "candidateFileCount": 1,
+            "includedFiles": [copy.deepcopy(file_record)],
+            "finalFiles": [copy.deepcopy(file_record)],
+            "finalFileCount": 1,
+            "eligibleFileCount": 1,
+            "scannedFileCount": 1,
+            "requiredClaimBindings": [],
+            "trialedClaimIds": [core["claims"][0]["id"]],
+            "trialedClaimCount": 1,
+            "inventoryReviewPaths": ["03_METHODOLOGY/unrelated-phase-b-review.md"],
+            "closureOnlyPaths": [],
+        })
+        core["manifests"].append(unrelated_manifest)
+        disposition = core["reviewFindingDispositions"][0]
+        disposition.update({
+            "disposition": "PROCESS_INVALID",
+            "claimIds": [],
+            "evidenceFiles": [{"path": file_record["path"], "sha256": file_record["sha256"]}],
+        })
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+        self.assertIn("KIN-E-REF", codes(validate(core, phase="A")))
 
     def test_review_artifact_hashes_and_process_evidence_are_typed(self):
         core = support.build_semantic_core()

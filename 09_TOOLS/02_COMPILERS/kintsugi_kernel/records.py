@@ -229,6 +229,9 @@ def _graph_cycle_issues(graph: dict[str, set[str]]) -> list[Issue]:
 
 def _validate_source_roles(core: dict[str, Any]) -> list[Issue]:
     result: list[Issue] = []
+    canonical_receipt_paths = {
+        identity[1] for identity in RECEIPT_IDENTITIES.values()
+    }
     for index, source in enumerate(items(core, "sources")):
         allowed = SOURCE_ROLE_MATRIX.get(source.get("kind"), frozenset())
         if source.get("authorityRole") not in allowed:
@@ -236,6 +239,15 @@ def _validate_source_roles(core: dict[str, Any]) -> list[Issue]:
                 f"core.sources[{index}].authorityRole",
                 "KIN-E-REF",
                 "source kind/authority role pairing is forbidden",
+            ))
+        if (
+            source.get("authorityRole") == "PROVENANCE"
+            and source.get("path") in canonical_receipt_paths
+        ):
+            result.append(issue(
+                f"core.sources[{index}].path",
+                "KIN-E-REF",
+                "provenance source path aliases a canonical phase receipt",
             ))
     return result
 
@@ -369,10 +381,21 @@ def _validate_references(core: dict[str, Any], indexes: dict[str, dict[str, dict
         base = f"core.trials[{position}]"
         _require_ref(result, f"{base}.claimId", trial.get("claimId"), claims, "claim")
         _require_ref(result, f"{base}.manifestId", trial.get("manifestId"), manifests, "manifest")
-        _require_ref(result, f"{base}.receiptId", trial.get("receiptId"), receipts, "phase receipt")
+        trial_receipt = _require_ref(result, f"{base}.receiptId", trial.get("receiptId"), receipts, "phase receipt")
+        if trial_receipt is not None and trial.get("id") not in trial_receipt.get("trialIds", []):
+            result.append(issue(f"{base}.receiptId", "KIN-E-REF", "trial is absent from its owning receipt"))
         seam_id = trial.get("seamId")
         if seam_id is not None:
-            _require_ref(result, f"{base}.seamId", seam_id, seams, "seam")
+            seam = _require_ref(result, f"{base}.seamId", seam_id, seams, "seam")
+            if seam is not None and (
+                seam.get("claimId") != trial.get("claimId")
+                or seam.get("receiptId") != trial.get("receiptId")
+            ):
+                result.append(issue(
+                    f"{base}.seamId",
+                    "KIN-E-REF",
+                    "trial seam must preserve the trial claim and receipt identity",
+                ))
         for index, value in enumerate(trial.get("discriminatorIds", [])):
             _require_ref(result, f"{base}.discriminatorIds[{index}]", value, discriminators, "discriminator")
 
@@ -382,6 +405,18 @@ def _validate_references(core: dict[str, Any], indexes: dict[str, dict[str, dict
         owner = _require_ref(result, f"{base}.ownerSource", seam.get("ownerSource"), sources, "source")
         if owner is not None and owner.get("authorityRole") != "SEMANTIC_OWNER":
             result.append(issue(f"{base}.ownerSource", "KIN-E-REF", "seam owner must be a semantic owner"))
+        term_pairs: set[tuple[Any, Any]] = set()
+        for index, term in enumerate(seam.get("typedTerms", [])):
+            if not isinstance(term, dict):
+                continue
+            pair = (term.get("symbol"), term.get("semanticRegister"))
+            if pair in term_pairs:
+                result.append(issue(
+                    f"{base}.typedTerms[{index}]",
+                    "KIN-E-ID",
+                    "seam typed term duplicates the semantic (symbol, register) pair",
+                ))
+            term_pairs.add(pair)
         for field, target_index, label in (
             ("sourceIds", sources, "source"),
             ("dependencyClaimIds", claims, "claim"),
@@ -396,10 +431,32 @@ def _validate_references(core: dict[str, Any], indexes: dict[str, dict[str, dict
                         f"{base}.{field}[{index}]", "KIN-E-REF",
                         "provenance or derivative source cannot serve as a seam warrant",
                     ))
-        _require_ref(result, f"{base}.receiptId", seam.get("receiptId"), receipts, "phase receipt")
+                if (
+                    field == "discriminatorIds"
+                    and resolved is not None
+                    and resolved.get("claimId") != seam.get("claimId")
+                ):
+                    result.append(issue(
+                        f"{base}.{field}[{index}]",
+                        "KIN-E-REF",
+                        "seam discriminator belongs to another claim",
+                    ))
+        seam_receipt = _require_ref(result, f"{base}.receiptId", seam.get("receiptId"), receipts, "phase receipt")
+        if seam_receipt is not None and seam.get("id") not in seam_receipt.get("seamIds", []):
+            result.append(issue(f"{base}.receiptId", "KIN-E-REF", "seam is absent from its owning receipt"))
         for field in ("priorSupportLinks", "supportLinks"):
+            link_ids: set[str] = set()
             for index, link in enumerate(seam.get(field, [])):
                 if isinstance(link, dict):
+                    link_id = link.get("id")
+                    if isinstance(link_id, str):
+                        if link_id in link_ids:
+                            result.append(issue(
+                                f"{base}.{field}[{index}].id",
+                                "KIN-E-ID",
+                                "support-link ID is duplicated inside the seam claim projection",
+                            ))
+                        link_ids.add(link_id)
                     _require_ref(result, f"{base}.{field}[{index}].supportingClaimId", link.get("supportingClaimId"), claims, "claim")
         for field in ("priorSurvivingIfKilled", "survivingIfKilled"):
             for index, value in enumerate(seam.get(field, {}).get("claimIds", [])):
@@ -531,6 +588,11 @@ def _validate_receipts_and_manifests(
     seams = indexes["seams"]
     propagations = indexes["propagations"]
     attempts = indexes["reviewAttempts"]
+    artifacts = {
+        record.get("attemptId"): record
+        for record in items(core, "reviewAttemptArtifacts")
+        if isinstance(record.get("attemptId"), str)
+    }
 
     receipt_phases = [receipt.get("phase") for receipt in items(core, "phaseReceipts")]
     phase_values = [PHASE_RANK[value] for value in receipt_phases if value in PHASE_RANK]
@@ -609,10 +671,38 @@ def _validate_receipts_and_manifests(
                 included_paths = {record.get("path") for record in manifest.get("includedFiles", []) if isinstance(record, dict)}
                 if final_paths != included_paths or manifest.get("finalFileCount") != len(final_paths):
                     result.append(issue(f"{base}.reviewAttemptId", "KIN-E-RECEIPT", "allocated attempt requires exact included/final path coverage"))
+            if receipt.get("status") == "DRAFT" and attempt is not None and attempt.get("status") == "PASSED":
+                result.append(issue(
+                    f"{base}.status",
+                    "KIN-E-RECEIPT",
+                    "DRAFT receipt cannot point to a PASSED attempt",
+                ))
             if receipt.get("status") in {"COMPLETE", "VERIFIED"} and (
                 attempt is None or attempt.get("status") != "PASSED"
             ):
                 result.append(issue(f"{base}.status", "KIN-E-RECEIPT", "terminal receipt requires the current PASSED attempt"))
+            if receipt.get("status") in {"COMPLETE", "VERIFIED"} and attempt is not None:
+                artifact = artifacts.get(attempt.get("id"), {})
+                expected_fields = {
+                    "logicReviewPath": attempt.get("logicReviewPath"),
+                    "btjReviewPath": attempt.get("btjReviewPath"),
+                    "reviewTargetDigest": artifact.get("reviewTargetSha256"),
+                }
+                if any(receipt.get(field) != value for field, value in expected_fields.items()):
+                    result.append(issue(
+                        base,
+                        "KIN-E-RECEIPT",
+                        "terminal receipt paths and target digest do not bind the current attempt artifact",
+                    ))
+                if (
+                    receipt.get("status") == "VERIFIED"
+                    and receipt.get("validationBundlePath") != attempt.get("validationBundlePath")
+                ):
+                    result.append(issue(
+                        f"{base}.validationBundlePath",
+                        "KIN-E-RECEIPT",
+                        "VERIFIED receipt bundle path does not bind the current attempt",
+                    ))
 
         empty_trials = not items(core, "trials")
         selected_bootstrap = (
@@ -623,6 +713,7 @@ def _validate_receipts_and_manifests(
             exact_empty = (
                 selected_bootstrap
                 and manifest is not None
+                and manifest.get("id") == "MAN-A-001"
                 and manifest.get("trialedClaimIds") == []
                 and manifest.get("trialedClaimCount") == 0
                 and receipt.get("trialIds") == []
@@ -686,6 +777,7 @@ def _validate_review_history(core: dict[str, Any], indexes: dict[str, dict[str, 
     attempts_list = items(core, "reviewAttempts")
     attempts = indexes["reviewAttempts"]
     receipts = indexes["phaseReceipts"]
+    manifests = indexes["manifests"]
     seams = indexes["seams"]
     claims = indexes["claims"]
     discriminators = indexes["discriminators"]
@@ -778,6 +870,75 @@ def _validate_review_history(core: dict[str, Any], indexes: dict[str, dict[str, 
     attestations = indexes["reviewAttestations"]
     findings = indexes["reviewFindings"]
     finding_ref_counts: Counter[str] = Counter()
+
+    def review_subject(attempt: dict[str, Any] | None) -> dict[str, set[Any]]:
+        if attempt is None:
+            return {
+                "claimIds": set(), "seamIds": set(), "ledgerSectionIds": set(),
+                "receiptIds": set(), "subjectPaths": set(), "discriminatorIds": set(),
+            }
+        receipt = receipts.get(attempt.get("receiptId"))
+        manifest = manifests.get(receipt.get("manifestId")) if receipt is not None else None
+        if receipt is None or manifest is None:
+            return {
+                "claimIds": set(), "seamIds": set(), "ledgerSectionIds": set(),
+                "receiptIds": set(), "subjectPaths": set(), "discriminatorIds": set(),
+            }
+        claim_ids = set(receipt.get("claimIds", [])) & set(manifest.get("harvestedClaimIds", []))
+        seam_ids = {
+            seam_id
+            for seam_id in receipt.get("seamIds", [])
+            if seam_id in seams
+            and seams[seam_id].get("receiptId") == receipt.get("id")
+            and seams[seam_id].get("claimId") in claim_ids
+        }
+        closure_paths = set(manifest.get("closureOnlyPaths", []))
+        subject_paths = {
+            record.get("path")
+            for record in manifest.get("finalFiles", [])
+            if isinstance(record, dict) and record.get("path") not in closure_paths
+        }
+        discriminator_ids = {
+            discriminator_id
+            for discriminator_id, discriminator in discriminators.items()
+            if discriminator.get("claimId") in claim_ids
+        }
+        return {
+            "claimIds": claim_ids,
+            "seamIds": seam_ids,
+            "ledgerSectionIds": seam_ids | {"LEDGER-PREAMBLE"},
+            "receiptIds": {receipt.get("id")},
+            "subjectPaths": subject_paths,
+            "discriminatorIds": discriminator_ids,
+        }
+
+    for position, attempt in enumerate(attempts_list):
+        base = f"core.reviewAttempts[{position}]"
+        logic_id = attempt.get("logicAttestationId")
+        btj_id = attempt.get("btjAttestationId")
+        if logic_id is not None and logic_id == btj_id:
+            result.append(issue(
+                base,
+                "KIN-E-STATE",
+                "LOGIC and BTJ review slots require distinct attestations",
+            ))
+        for field, attestation_id, expected_kind in (
+            ("logicAttestationId", logic_id, "LOGIC"),
+            ("btjAttestationId", btj_id, "BTJ"),
+        ):
+            if attestation_id is None:
+                continue
+            attestation = attestations.get(attestation_id)
+            if attestation is not None and (
+                attestation.get("kind") != expected_kind
+                or attestation.get("attemptId") != attempt.get("id")
+            ):
+                result.append(issue(
+                    f"{base}.{field}",
+                    "KIN-E-REF",
+                    f"{field} must resolve to a {expected_kind} attestation for this attempt",
+                ))
+
     for position, attestation in enumerate(items(core, "reviewAttestations")):
         base = f"core.reviewAttestations[{position}]"
         attempt = attempts.get(attestation.get("attemptId"))
@@ -816,15 +977,9 @@ def _validate_review_history(core: dict[str, Any], indexes: dict[str, dict[str, 
         if finding_ref_counts[finding_id] != 1:
             result.append(issue("core.reviewFindings", "KIN-E-REF", f"review finding must be resolved by exactly one attestation: {finding_id}"))
 
-    allowed_subject_paths = {
-        record.get("path")
-        for manifest in items(core, "manifests")
-        for field in ("candidateFiles", "includedFiles", "finalFiles")
-        for record in manifest.get(field, [])
-        if isinstance(record, dict)
-    }
     for position, finding in enumerate(items(core, "reviewFindings")):
         base = f"core.reviewFindings[{position}]"
+        subject = review_subject(attempts.get(finding.get("attemptId")))
         for field, target_index, label in (
             ("claimIds", claims, "claim"),
             ("seamIds", seams, "seam"),
@@ -833,12 +988,16 @@ def _validate_review_history(core: dict[str, Any], indexes: dict[str, dict[str, 
             for value in finding.get(field, []):
                 if value not in target_index:
                     result.append(issue(f"{base}.{field}", "KIN-E-REF", f"finding {label} endpoint does not resolve: {value}"))
+                elif value not in subject[field]:
+                    result.append(issue(f"{base}.{field}", "KIN-E-REF", f"finding {label} endpoint is outside its attempt subject: {value}"))
         for value in finding.get("ledgerSectionIds", []):
             if value != "LEDGER-PREAMBLE" and value not in seams:
                 result.append(issue(f"{base}.ledgerSectionIds", "KIN-E-REF", f"finding ledger endpoint does not resolve: {value}"))
+            elif value not in subject["ledgerSectionIds"]:
+                result.append(issue(f"{base}.ledgerSectionIds", "KIN-E-REF", f"finding ledger endpoint is outside its attempt subject: {value}"))
         for value in finding.get("subjectPaths", []):
-            if value not in allowed_subject_paths:
-                result.append(issue(f"{base}.subjectPaths", "KIN-E-REF", f"finding subject path is outside the typed inventory: {value}"))
+            if value not in subject["subjectPaths"]:
+                result.append(issue(f"{base}.subjectPaths", "KIN-E-REF", f"finding subject path is outside its attempt final inventory: {value}"))
 
     dispositions = items(core, "reviewFindingDispositions")
     dispositions_by_pair: Counter[tuple[Any, Any]] = Counter()
@@ -853,6 +1012,7 @@ def _validate_review_history(core: dict[str, Any], indexes: dict[str, dict[str, 
         if finding.get("attemptId") != predecessor.get("id") or successor.get("supersedesAttemptId") != predecessor.get("id"):
             result.append(issue(base, "KIN-E-REF", "disposition does not join a finding to its direct successor"))
         dispositions_by_pair[(finding.get("id"), successor.get("id"))] += 1
+        subject = review_subject(successor)
         for field, target_index, label in (
             ("claimIds", claims, "claim"),
             ("seamIds", seams, "seam"),
@@ -862,12 +1022,16 @@ def _validate_review_history(core: dict[str, Any], indexes: dict[str, dict[str, 
             for value in disposition.get(field, []):
                 if value not in target_index:
                     result.append(issue(f"{base}.{field}", "KIN-E-REF", f"disposition {label} endpoint does not resolve: {value}"))
+                elif value not in subject[field]:
+                    result.append(issue(f"{base}.{field}", "KIN-E-REF", f"disposition {label} endpoint is outside the successor subject: {value}"))
         for value in disposition.get("ledgerSectionIds", []):
             if value != "LEDGER-PREAMBLE" and value not in seams:
                 result.append(issue(f"{base}.ledgerSectionIds", "KIN-E-REF", f"disposition ledger endpoint does not resolve: {value}"))
+            elif value not in subject["ledgerSectionIds"]:
+                result.append(issue(f"{base}.ledgerSectionIds", "KIN-E-REF", f"disposition ledger endpoint is outside the successor subject: {value}"))
         for value in disposition.get("subjectPaths", []):
-            if value not in allowed_subject_paths:
-                result.append(issue(f"{base}.subjectPaths", "KIN-E-REF", f"disposition subject path is outside the typed inventory: {value}"))
+            if value not in subject["subjectPaths"]:
+                result.append(issue(f"{base}.subjectPaths", "KIN-E-REF", f"disposition subject path is outside the successor final inventory: {value}"))
         kind = disposition.get("disposition")
         endpoints = sum(len(disposition.get(field, [])) for field in (
             "claimIds", "seamIds", "ledgerSectionIds", "receiptIds", "subjectPaths"
@@ -896,9 +1060,18 @@ def _validate_review_history(core: dict[str, Any], indexes: dict[str, dict[str, 
                 digest = predecessor_artifact.get(hash_field)
                 if digest is not None:
                     allowed_evidence.add((predecessor.get(path_field), digest))
-            for manifest in items(core, "manifests"):
-                for file_record in manifest.get("finalFiles", []):
-                    if isinstance(file_record, dict):
+            successor_receipt = receipts.get(successor.get("receiptId"))
+            successor_manifest = (
+                manifests.get(successor_receipt.get("manifestId"))
+                if successor_receipt is not None else None
+            )
+            if successor_manifest is not None:
+                closure_paths = set(successor_manifest.get("closureOnlyPaths", []))
+                for file_record in successor_manifest.get("finalFiles", []):
+                    if (
+                        isinstance(file_record, dict)
+                        and file_record.get("path") not in closure_paths
+                    ):
                         allowed_evidence.add((file_record.get("path"), file_record.get("sha256")))
             for evidence in disposition.get("evidenceFiles", []):
                 if not isinstance(evidence, dict) or (
@@ -928,7 +1101,15 @@ def _validate_review_history(core: dict[str, Any], indexes: dict[str, dict[str, 
         base = f"core.reviewAttempts[{position}]"
         ids = [attempt.get("logicAttestationId"), attempt.get("btjAttestationId")]
         present = [value for value in ids if value is not None]
-        resolved = [attestations[value] for value in present if value in attestations]
+        resolved = []
+        for value, expected_kind in zip(ids, ("LOGIC", "BTJ")):
+            record = attestations.get(value) if value is not None else None
+            if (
+                record is not None
+                and record.get("kind") == expected_kind
+                and record.get("attemptId") == attempt.get("id")
+            ):
+                resolved.append(record)
         for value in present:
             if value not in attestations:
                 result.append(issue(base, "KIN-E-REF", f"attempt attestation does not resolve: {value}"))
@@ -944,9 +1125,10 @@ def _validate_review_history(core: dict[str, Any], indexes: dict[str, dict[str, 
             result.append(issue(base, "KIN-E-STATE", "FAILED requires one or two attestations including FAIL"))
         elif status == "PASSED" and (
             len(present) != 2 or reason is not None or len(resolved) != 2
+            or present[0] == present[1]
             or any(record.get("verdict") != "PASS" for record in resolved)
         ):
-            result.append(issue(base, "KIN-E-STATE", "PASSED requires two resolving PASS attestations"))
+            result.append(issue(base, "KIN-E-STATE", "PASSED requires distinct role-bound LOGIC and BTJ PASS attestations"))
         elif status == "ABANDONED" and not isinstance(reason, str):
             result.append(issue(base, "KIN-E-STATE", "ABANDONED requires a non-null reason"))
     return result
