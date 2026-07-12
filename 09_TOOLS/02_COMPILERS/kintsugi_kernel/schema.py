@@ -149,6 +149,8 @@ def _decode_uri_fragment(fragment: str) -> str | None:
 _NAMED_SUBSCHEMA_KEYWORDS = ("$defs", "properties")
 _SINGLE_SUBSCHEMA_KEYWORDS = ("items", "if", "then", "else")
 _ARRAY_SUBSCHEMA_KEYWORDS = ("allOf", "anyOf", "oneOf")
+_SAME_INSTANCE_SINGLE_KEYWORDS = ("if", "then", "else")
+_SAME_INSTANCE_ARRAY_KEYWORDS = ("allOf", "anyOf", "oneOf")
 _SchemaLocation = tuple[str, ...]
 
 
@@ -422,7 +424,7 @@ def _location_path(location: _SchemaLocation) -> str:
     return result
 
 
-def _reference_cycle_issues(
+def _evaluation_cycle_issues(
     schema: dict[str, Any],
     locations: dict[_SchemaLocation, dict[str, Any]],
 ) -> list[Issue]:
@@ -430,11 +432,24 @@ def _reference_cycle_issues(
         location: set() for location in locations
     }
     for location, node in locations.items():
-        if "$ref" not in node:
-            continue
-        resolved = _resolve_ref_location(schema, node["$ref"], locations)
-        if resolved is not None:
-            graph[location].add(resolved[0])
+        if "$ref" in node:
+            resolved = _resolve_ref_location(schema, node["$ref"], locations)
+            if resolved is not None:
+                graph[location].add(resolved[0])
+
+        for keyword in _SAME_INSTANCE_SINGLE_KEYWORDS:
+            child = location + (keyword,)
+            if child in locations:
+                graph[location].add(child)
+
+        for keyword in _SAME_INSTANCE_ARRAY_KEYWORDS:
+            branches = node.get(keyword)
+            if not isinstance(branches, list):
+                continue
+            for index in range(len(branches)):
+                child = location + (keyword, str(index))
+                if child in locations:
+                    graph[location].add(child)
 
     state: dict[_SchemaLocation, int] = {}
     issues: list[Issue] = []
@@ -490,7 +505,7 @@ def _validate_schema_document(schema: Any) -> tuple[Issue, ...]:
         schema, schema, "$", ancestors=frozenset(), locations=locations
     ))
     if not issues:
-        issues.extend(_reference_cycle_issues(schema, locations))
+        issues.extend(_evaluation_cycle_issues(schema, locations))
     return _ordered(issues)
 
 

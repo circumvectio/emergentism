@@ -392,6 +392,99 @@ class FrozenSchemaArtifactTests(SchemaAssertions):
         self.assertSchemaFailure(issues)
         self.assertTrue(any("cyclic $ref chain" in issue.message for issue in issues))
 
+    def test_same_instance_evaluation_cycles_are_rejected_at_schema_time(self):
+        definitions = {
+            "if": {
+                "if": {"$ref": "#/$defs/if"},
+                "then": {"const": False},
+            },
+            "allOf": {"allOf": [{"$ref": "#/$defs/allOf"}]},
+            "anyOf": {"anyOf": [{"$ref": "#/$defs/anyOf"}]},
+            "oneOf": {"oneOf": [{"$ref": "#/$defs/oneOf"}]},
+            "then": {
+                "if": {"const": True},
+                "then": {"$ref": "#/$defs/then"},
+            },
+            "else": {
+                "if": {"const": False},
+                "else": {"$ref": "#/$defs/else"},
+            },
+        }
+
+        for name, definition in definitions.items():
+            with self.subTest(keyword=name):
+                cyclic = {
+                    "$schema": "https://json-schema.org/draft/2020-12/schema",
+                    "$id": SCHEMA_ID,
+                    "$defs": {name: definition},
+                }
+                issues = kernel.validate_schema_document(cyclic)
+                self.assertSchemaFailure(issues)
+                self.assertTrue(any(
+                    "cyclic $ref chain" in issue.message for issue in issues
+                ))
+                self.assertSchemaFailure(
+                    kernel.validate_named_definition(cyclic, name, None)
+                )
+
+    def test_if_self_cycle_counterexample_cannot_validate_any_instance(self):
+        cyclic = {
+            "$schema": "https://json-schema.org/draft/2020-12/schema",
+            "$id": SCHEMA_ID,
+            "$defs": {
+                "a": {
+                    "if": {"$ref": "#/$defs/a"},
+                    "then": {"const": False},
+                },
+            },
+        }
+
+        self.assertSchemaFailure(kernel.validate_schema_document(cyclic))
+        for value in (None, True, False, "x"):
+            with self.subTest(value=value):
+                self.assertSchemaFailure(
+                    kernel.validate_named_definition(cyclic, "a", value)
+                )
+
+    def test_recursive_properties_and_items_evaluate_finite_subinstances(self):
+        recursive = {
+            "$schema": "https://json-schema.org/draft/2020-12/schema",
+            "$id": SCHEMA_ID,
+            "$defs": {
+                "node": {
+                    "type": "object",
+                    "properties": {
+                        "next": {"$ref": "#/$defs/node"},
+                    },
+                    "additionalProperties": False,
+                },
+                "nestedArray": {
+                    "type": "array",
+                    "items": {"$ref": "#/$defs/nestedArray"},
+                },
+            },
+        }
+
+        self.assertEqual(kernel.validate_schema_document(recursive), ())
+        self.assertEqual(
+            kernel.validate_named_definition(
+                recursive, "node", {"next": {"next": {}}}
+            ),
+            (),
+        )
+        self.assertSchemaFailure(kernel.validate_named_definition(
+            recursive, "node", {"next": {"next": 1}}
+        ))
+        self.assertEqual(
+            kernel.validate_named_definition(
+                recursive, "nestedArray", [[], [[]], [[[]]]]
+            ),
+            (),
+        )
+        self.assertSchemaFailure(kernel.validate_named_definition(
+            recursive, "nestedArray", [[], [1]]
+        ))
+
     def test_thousand_definition_acyclic_ref_chain_is_total(self):
         chain = {
             "$schema": "https://json-schema.org/draft/2020-12/schema",
