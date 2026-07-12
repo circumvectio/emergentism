@@ -54,3 +54,16 @@ source lane, repair the source and recompile.
 - main tool inventory: `../README.md` and `../CLAUDE.md`
 - UPLINK compile entry point: `../01_SCRIPTS/compile_uplink.py`
 - full routing layer: `../../11_UPLINK/00_CORE/00_INDEX.md`
+
+## Kintsugi audit foundation
+
+The A0 baseline validator freezes the known repository test state without treating existing failures as new truth:
+
+```bash
+set -euo pipefail
+python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py \
+  --check-baseline \
+  --canonical-root /Users/Yves/Documents/01_EMERGENTISM
+```
+
+`kintsugi_baseline_failures.json` records 19 baseline node IDs and five exact failure signatures at `main@26e616e651e2a87e8c85bf37db515d7fcd007b7b`. A previously failing node may turn green; a removed node, new failure, exception drift, or signature drift fails. The validator itself introduces no direct writes and disables pytest cache and Python bytecode writes; arbitrary repository test bodies are not sandboxed. The baseline gate has no K2 approval gate.
