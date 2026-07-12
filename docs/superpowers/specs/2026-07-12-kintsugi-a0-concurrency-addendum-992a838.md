@@ -47,7 +47,7 @@ still collects exactly 19 pre-A0 nodes. The reviewed validator returns:
 KIN-OK baseline collected=19 failures=5
 ```
 
-The same read-only command returns the same result against the concurrently
+The same validator command returns the same result against the concurrently
 dirty canonical checkout. The clean-worktree result controls; the dirty result
 is only a non-interference check.
 
@@ -75,11 +75,11 @@ Execution may resume only in this order:
 1. Reconstruct the A0 branch so all design, plan, and concurrency amendments
    precede implementation commits on top of exact `992a838`.
 2. Freeze the post-amendment commit as `refs/codex/kintsugi-a0-start`.
-3. Change the baseline contract's `baseCommit` from `454f371...` to
+3. Replay the reviewed A0 implementation commits, including the pytest-root
+   repair.
+4. Change the baseline contract's `baseCommit` from `454f371...` to
    `992a838...`; recompute its canonical raw hash and update the exact-hash
    regression. The 19 node IDs and five failure records do not change.
-4. Replay the reviewed A0 implementation commits, including the pytest-root
-   repair.
 5. Run the focused suite, syntax check, real baseline CLI, protected-byte
    checks, four-path scope check, and `git diff --check` before Task 4.
 

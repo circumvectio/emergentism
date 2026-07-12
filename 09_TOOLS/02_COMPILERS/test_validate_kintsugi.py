@@ -156,7 +156,7 @@ class RunnerTests(unittest.TestCase):
         )
 
     @mock.patch.object(v.subprocess, "run")
-    def test_runner_sanitizes_hostile_pytest_environment_without_writes(self, run):
+    def test_runner_sanitizes_hostile_pytest_environment_and_disables_cache_writes(self, run):
         run.return_value = subprocess.CompletedProcess([], 0, "", "")
         hostile = {
             "PYTEST_ADDOPTS": "-k never",
