@@ -7,7 +7,7 @@
   "cleanUrls": true,
   "trailingSlash": true,
   "redirects": [
-    { "source": "/", "destination": "/amrita/", "permanent": false }
+    { "source": "/", "destination": "/compass/", "permanent": false }
   ],
   "headers": [
     {
