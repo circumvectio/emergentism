@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <base href="../" />
+  <title>_meta — Public Audit Trail · Emergentism</title>
+  <meta name="description" content="The public audit trail of Emergentism: every claim traceable, every failure first-class. The Settled Canon Registry, audit verdicts, receipts of self-correction, and the new-reader meta-audit." />
+  <meta name="color-scheme" content="dark" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%23FFEB3B' stroke-width='1' opacity='.5'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E" />
+  <link rel="preload" href="assets/fonts/Roboto-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/RobotoMono-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <style>
+    /* Self-hosted Roboto (Apache-2.0) */
+    @font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:optional;src:url('assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U%2C2193,U+2212,U+2215,U+FEFF,U+FFFD}
+    @font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:optional;src:url('assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+    :root{
+      --void:#050505; --void-2:#0a0a0a; --panel:#101010; --panel-2:#161616;
+      --bone:#F3F4F6; --bone-dim:#9CA3AF; --bone-faint:#858C99;
+      --gold:#FFEB3B; --gold-bright:#FFF176; --gold-deep:#CBB800;
+      --cold:#42A5F5; --blue:#2196F3; --violet:#6e6a86; --cream:#FFFDE7;
+      --line:rgba(243,244,246,.12); --line-soft:rgba(243,244,246,.07);
+      --tier-a:#7fb2e6; --tier-s:#5fc6b0; --tier-i:#e8d24a; --tier-c:#b59ce0; --tier-b:#FFEB3B;
+      --serif:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+      --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+      --phi:1.618; --maxw:1140px; --shape-lg:16px; --target-min:48px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; background:var(--void); color:var(--bone); font-family:var(--serif); font-size:18px; line-height:1.62; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility}
+    body::before{content:""; position:fixed; inset:0; z-index:-2; pointer-events:none; background:linear-gradient(180deg, rgba(255,235,59,.05), transparent 28rem), linear-gradient(90deg, rgba(33,150,243,.07), transparent 32%, transparent 70%, rgba(76,175,80,.03)), var(--void)}
+    a{color:var(--bone); text-decoration:none}
+    a:hover{color:var(--gold)}
+    ::selection{background:rgba(255,235,59,.30); color:#050505}
+
+    /* topbar */
+    .topbar{position:sticky; top:0; z-index:20; display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.85rem clamp(1rem,4vw,2.4rem); min-height:64px; background:color-mix(in srgb,var(--void) 86%,transparent); backdrop-filter:blur(12px) saturate(1.08); border-bottom:1px solid var(--line-soft)}
+    .brand{flex:0 0 auto; font-family:var(--serif); font-size:1.18rem; font-weight:600}
+    .brand b{color:var(--gold)}
+    .nav{flex:1 1 auto; min-width:0; display:flex; justify-content:flex-end; gap:.2rem; flex-wrap:wrap; font-family:var(--mono); font-size:.82rem}
+    .nav a{display:inline-grid; place-items:center; min-height:var(--target-min); padding:0 .8rem; color:var(--bone-dim); border:1px solid transparent; border-radius:999px; transition:.2s}
+    .nav a:hover{color:var(--void); background:var(--gold); border-color:var(--gold)}
+    .nav a.active{color:var(--gold); border-color:var(--gold-deep); background:rgba(255,235,59,.08)}
+
+    /* layout */
+    .wrap{max-width:var(--maxw); margin:0 auto; padding:0 clamp(1rem,4vw,2.4rem)}
+    main{padding:clamp(2.5rem,6vw,5rem) 0 clamp(3rem,8vw,6rem)}
+
+    /* hero — short */
+    .hero{padding:clamp(2rem,5vw,4rem) 0 clamp(1rem,3vw,2rem); border-bottom:1px solid var(--line-soft); margin-bottom:2.5rem}
+    .eyebrow{font-family:var(--mono); font-size:.74rem; letter-spacing:0; text-transform:uppercase; color:var(--gold); margin:0 0 1rem}
+    h1.head{font-family:var(--serif); font-weight:800; font-size:clamp(2.2rem,5.4vw,3.6rem); line-height:1.05; letter-spacing:0; margin:.2rem 0 1rem; text-wrap:balance; max-width:22ch}
+    h1.head .li{color:var(--gold)}
+    .lede{font-size:clamp(1.02rem,1.5vw,1.18rem); color:var(--bone-dim); max-width:62ch; margin:0}
+
+    /* sections */
+    section.block{padding:1.6rem 0 1.4rem; border-bottom:1px solid var(--line-soft)}
+    section.block:last-of-type{border-bottom:0}
+    h2{font-family:var(--serif); font-weight:700; font-size:clamp(1.5rem,3.2vw,2.2rem); line-height:1.12; margin:0 0 .8rem; letter-spacing:0}
+    h3{font-family:var(--serif); font-weight:600; font-size:1.2rem; margin:1.2rem 0 .5rem}
+    p{margin:0 0 .9rem; color:var(--bone-dim); max-width:68ch}
+    p strong,li strong{color:var(--bone); font-weight:600}
+    code{font-family:var(--mono); font-size:.9em; color:var(--bone); background:rgba(255,255,255,.04); padding:.1em .35em; border-radius:3px}
+    ul,ol{margin:0 0 1rem; padding-left:1.2rem; color:var(--bone-dim)}
+    li{margin:.4rem 0}
+    a.inline{color:var(--gold); text-decoration:underline; text-underline-offset:3px}
+
+    /* tier badges (inline) */
+    .tb{display:inline-block; min-width:2.2em; text-align:center; padding:.1rem .45rem; border-radius:3px; font-family:var(--mono); font-size:.78rem; font-weight:600; border:1px solid var(--line); vertical-align:middle; margin:0 .2em}
+    .tb.a{color:var(--tier-a); border-color:rgba(127,178,230,.4)}
+    .tb.s{color:var(--tier-s); border-color:rgba(95,198,176,.4)}
+    .tb.i{color:var(--tier-i); border-color:rgba(232,210,74,.4)}
+    .tb.c{color:var(--tier-c); border-color:rgba(181,156,224,.4)}
+    .tb.b{color:var(--tier-b); border-color:rgba(255,235,59,.4)}
+
+    /* receipt card */
+    .receipt{border:1px solid var(--line-soft); border-radius:var(--shape-lg); padding:1.2rem 1.4rem; margin:0 0 1rem; background:linear-gradient(180deg,var(--panel),rgba(16,16,16,.5))}
+    .receipt h3{margin:0 0 .3rem; font-size:1.05rem}
+    .receipt .meta{font-family:var(--mono); font-size:.78rem; color:var(--bone-faint); margin:0 0 .6rem}
+    .receipt p{margin:0 0 .3rem}
+    .receipt .verdict{display:inline-block; font-family:var(--mono); font-size:.74rem; padding:.15rem .5rem; border-radius:3px; background:rgba(95,198,176,.15); color:var(--tier-s); border:1px solid rgba(95,198,176,.4); margin-right:.4rem}
+    .receipt .verdict.fail{background:rgba(244,67,54,.12); color:#ff8a80; border-color:rgba(244,67,54,.4)}
+    .receipt .verdict.partial{background:rgba(255,235,59,.12); color:var(--gold-bright); border-color:rgba(255,235,59,.4)}
+
+    /* gap callout */
+    .gap{border-left:3px solid #ff8a80; padding:.6rem 1rem 1rem; background:rgba(244,67,54,.06); border-radius:0 var(--shape-lg) var(--shape-lg) 0; margin:1rem 0}
+    .gap h3{margin:0 0 .4rem; color:#ff8a80; font-size:1.1rem}
+    .gap p{color:var(--bone-dim)}
+
+    /* the inversion (this whole page is the inversion) */
+    .inversion-box{border:1px solid var(--gold); border-radius:var(--shape-lg); padding:1.4rem 1.6rem; margin:1.4rem 0; background:linear-gradient(180deg,rgba(255,235,59,.06),rgba(255,235,59,.02))}
+    .inversion-box h3{margin:0 0 .6rem; color:var(--gold)}
+
+    /* footer */
+    .site-footer{border-top:1px solid var(--line); padding:clamp(2rem,5vw,3rem) clamp(1rem,4vw,2.4rem); text-align:center; margin-top:3rem}
+    .site-footer p{color:var(--bone-faint); font-family:var(--mono); font-size:.78rem; max-width:60ch; margin:0 auto}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="home/">Emergent<b>ism</b></a>
+    <nav class="nav" aria-label="Public doctrine routes">
+      <a href="perennial/">Perennial</a>
+      <a href="formal/">Formal</a>
+      <a href="operational/">Operational</a>
+      <a href="three-immune-systems/">3&nbsp;Immune</a>
+      <a href="_meta/" class="active">_meta</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <p class="eyebrow">The public audit trail</p>
+      <h1 class="head">Every claim traceable. <span class="li">Every failure first-class.</span></h1>
+      <p class="lede">This is the structural inversion: not a brochure that says "open source," but the actual record of who said what, what's been refined, what failed, and what the audit said about it. Read the failures first — they're how you tell whether the discipline is real.</p>
+    </section>
+
+    <section class="block wrap">
+      <h2>1. The settled canon (24 questions, ratified by audit)</h2>
+      <p>The <a class="inline" href="https://github.com/circumvectio/emergentism/blob/main/00_META/00_SETTLED_CANON_REGISTRY.md">Settled Canon Registry</a> is the document every audit defers to. It defines the 24 settled questions of the framework, with explicit <i>Do NOT flag</i> and <i>Still flag if</i> columns. A flag against a settled item is itself the defect. The most-recent additions (2026-07-12, this session):</p>
+      <ul>
+        <li><b>Register non-instantiation (three tenses)</b> <span class="tb s">S</span><span class="tb i">I</span> — receipt 114. A boundary-frame non-deployment, read across three tenses (before emergence / during instantiation-interrogated-from-below / after de-instantiation). <a class="inline" href="https://github.com/circumvectio/emergentism/blob/main/11_UPLINK/50_AUDITS_AND_EXECUTIONS/114_REGISTER_NON_INSTANTIATION_THREE_TENSES_PENDING_K2.md">Source</a></li>
+        <li><b>The lens as compass — 21 paradoxes reframed at tier</b> <span class="tb i">I</span> — receipt 116. 21 distinct classical problems (Zeno, Ship, Death, Liar, Hard Problem, …), each reframed as a topology error on the Burri Sphere, each with a "does NOT resolve" column. The lens is a compass, not a solver. <a class="inline" href="https://github.com/circumvectio/emergentism/blob/main/08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/00_THE_LENS_AS_COMPASS_PENDING_K2.md">Source</a></li>
+        <li><b>The four forces do not biject to four dimensions</b> <span class="tb a">A</span> — receipt 117 / 07B. Photon and gluon share the identical dof count <code>D−2</code> in any spacetime <code>D</code>; three thresholds for four forces makes the four-forces↔four-dimensions bijection <i>arithmetically impossible</i>, not merely unproven. The well-formedness rule: a force-existence sentence with an undeclared register is ill-formed; ill-formed is the h04 mixing. <a class="inline" href="https://github.com/circumvectio/emergentism/blob/main/01_TELEOLOGY/02_THE_DERIVATION/07B_THE_FORCE_LADDER_FORMALIZED_PENDING_K2.md">Source</a></li>
+      </ul>
+    </section>
+
+    <section class="block wrap">
+      <h2>2. The audit verdicts (the 13-phase re-audit, this session)</h2>
+      <p>The framework was re-audited against the Settled Canon Registry, paper by paper, across 13 phases on 2026-07-12. The full-read scope covered 131 papers (the doctrine-bearing core); sampled disposition covered ~550 more. The verdicts are first-class citizens of the audit trail.</p>
+      <div class="receipt">
+        <h3>Phase 0 — Pilot (3 papers, full read)</h3>
+        <p class="meta">2026-07-12 · <a class="inline" href="https://github.com/circumvectio/emergentism/blob/main/00_CONTROL/PRIMETIME_AUDIT/verdicts/2026_07_12_PHASE_0_PILOT.md">verdict file</a></p>
+        <p><span class="verdict">3 🟢</span>Foundational papers (Seven-Layer Ontology, Canonical Formula Block, Settled Canon Registry) — tier discipline intact; format validated for the 13-phase rollout.</p>
+      </div>
+      <div class="receipt">
+        <h3>Phases 1–10 — Doctrine-bearing core (~131 papers, full read)</h3>
+        <p class="meta">2026-07-12 · <a class="inline" href="https://github.com/circumvectio/emergentism/tree/main/00_CONTROL/PRIMETIME_AUDIT/verdicts">verdict files</a></p>
+        <p><span class="verdict">109 🟢</span><span class="verdict partial">6 🟡</span><span class="verdict">3 🔴-tombstoned</span>The 6 🟡 are <i>all</i> <code>[D]</code>-staged for K2 sign-off, correctly held. The 3 🔴 are correctly K3-tombstoned. <b>0 deviations from the Settled Canon Registry across 24 settled questions.</b> 0 demon-moves found.</p>
+      </div>
+      <div class="receipt">
+        <h3>Phases 11–13 — Tier C + Tools/Seed + Public-site (~550 papers, sampled)</h3>
+        <p class="meta">2026-07-12 · <a class="inline" href="https://github.com/circumvectio/emergentism/blob/main/00_CONTROL/PRIMETIME_AUDIT/verdicts/2026_07_12_PHASE_11_12_13_SAMPLED.md">sampled verdict</a></p>
+        <p>All sampled <span class="verdict">🟢</span>. Sample-acknowledged discipline held: declares sample size, surveys remainder, holds for follow-on. Full disposition in the file.</p>
+      </div>
+    </section>
+
+    <section class="block wrap">
+      <h2>3. The receipts of self-correction (the K2-burst of 2026-07-10)</h2>
+      <p>The doctrine <i>eats its own claim</i>. The 2026-07-10 session produced a K2-burst: four contested-doctrine forks were <b>reframed, not overturned</b>, with receipt evidence of independent builds reading the same sources and choosing opposite directions. The membrane worked.</p>
+      <div class="receipt">
+        <h3>Receipt 104 — Dimensional-map adjudication (K2-accepted, 9 adjudications + 14 downgrades)</h3>
+        <p class="meta">2026-07-10 · K2 "ok i accept!" · <a class="inline" href="https://github.com/circumvectio/emergentism/blob/main/11_UPLINK/50_AUDITS_AND_EXECUTIONS/104_DIMENSIONAL_MAP_ADJUDICATION_K2_ACCEPTANCE_2026_07_10.md">source</a></p>
+        <p><span class="verdict">APPLIED</span>9 real contradictions + 14 downgrade rules applied to the lagging docs. R1–R3, R5, R6 in. R4 (Cerberus, 02_SKYZAI repo) queued.</p>
+      </div>
+      <div class="receipt">
+        <h3>Receipt 105 — D4/D5 axis-fusion reconciliation (reframe, not overturn)</h3>
+        <p class="meta">2026-07-10 · K2 "Accept" · 568K tokens of adversarial synthesis · <a class="inline" href="https://github.com/circumvectio/emergentism/blob/main/11_UPLINK/50_AUDITS_AND_EXECUTIONS/105_BURRI_D4D5_AXIS_FUSION_RECONCILIATION_PENDING_K2.md">source</a></p>
+        <p><span class="verdict">REFRAME</span>Independent build read same sources, chose opposite direction. Resolution: <b>reframe, not overturn</b>. Terminal clause 6 NOT triggered. Receipt 104 A.2 governs the μ axis only; the action-register/χ direction (D5 foresight → D4 embodied means) is preserved.</p>
+      </div>
+      <div class="receipt">
+        <h3>Receipt 106 — Two emergence-types (μ↑ strong / χ↓ weak)</h3>
+        <p class="meta">2026-07-10 · K2 "accept" · <a class="inline" href="https://github.com/circumvectio/emergentism/blob/main/11_UPLINK/50_AUDITS_AND_EXECUTIONS/106_EMERGENCE_STRONG_WEAK_TWO_MOTIONS_PENDING_K2.md">source</a></p>
+        <p><span class="verdict">APPLIED</span>Two named <code>[C]</code> wagers honestly logged. <b>Strong</b> lacks a reducing law; <b>weak</b> lacks a governing law but is post-hoc auditable. Two ∅'s, not one. "Strong" is not Bedau-weak.</p>
+      </div>
+      <div class="receipt">
+        <h3>Receipt 107 — The loop / the open loop</h3>
+        <p class="meta">2026-07-10 · K2 "accept" · <a class="inline" href="https://github.com/circumvectio/emergentism/blob/main/11_UPLINK/50_AUDITS_AND_EXECUTIONS/107_THE_OPEN_LOOP_D6_D0_CLOSURE_PENDING_K2.md">source</a></p>
+        <p><span class="verdict">APPLIED</span><b>Form enacts content:</b> <code>[S]</code> spine firm, <code>[I/C]</code> edge open. "Finishing it would contradict it." The three refusals (η=0 / mortal-signer / open-loop) are one via-negativa; A7 is that refusal made ontological — <i>wager/orientation, not theorem</i>.</p>
+      </div>
+    </section>
+
+    <section class="block wrap">
+      <h2>4. The new-reader meta-audit (the cold-eye system)</h2>
+      <p>Five <code>verifier</code> agents were spawned in parallel, each as a <b>new reader</b> with no prior priming beyond the Settled Canon Registry. They audited every claim in the load-bearing recent work and returned findings. <i>The cold eye is the value</i> — it caught what the warm eye missed.</p>
+
+      <div class="receipt">
+        <h3>Receipt 117 (force ladder) — 11/11 PASS</h3>
+        <p class="meta">New-reader verdict · <a class="inline" href="https://github.com/circumvectio/emergentism/blob/main/00_CONTROL/PRIMETIME_AUDIT/verdicts/2026_07_12_NEW_READER_META_AUDIT.md">meta-audit file</a></p>
+        <p>The headline anti-bijection claim is <b>proved from the dof-table arithmetic</b>, not asserted. Photon and gluon share <code>D−2</code> in 07B §2.3. Tier marks honest; "2D EM" reading explicitly held open for the founder.</p>
+      </div>
+
+      <div class="receipt">
+        <h3>Receipt 116 (Lens as Compass) — PASS with 3 soft flags</h3>
+        <p class="meta">New-reader verdict</p>
+        <p>21 paradoxes counted and verified. The fence-check is <i>demonstrated</i>, not just claimed. Soft flags: PD-10 + PD-19 tier-inflation missed by the original fence-check (now <span class="tb s">S/I</span>→<span class="tb i">I</span> and <span class="tb i">I</span>→<span class="tb i">I/C</span> in this branch); ∅ glyph collision in D5 row (now <code>∅_phys</code>, distinct from the Burri Rules' <code>∅_strong</code>).</p>
+      </div>
+
+      <div class="receipt">
+        <h3>η=0 enforcement on apu_bot — <span class="verdict fail">FAIL (partial)</span></h3>
+        <p class="meta">New-reader verdict</p>
+        <p>The wire is correctly placed in <code>call_with_fallback</code>: best-effort, fires on success only, writes the value the gate was decided against, honest tests. <b>But 5 production callers bypass it entirely</b>: <code>council_protocol._call_llm_with_seat_rotation</code>, <code>llm_explainer</code>, <code>observability</code>, <code>chat_handler</code>, <code>key_resolver</code>. For those paths, the gate remains decorative. SCOPE §7's promotion to <code>[B]</code> is inflated for those paths — the honest tier is <code>[B]</code> for <code>call_with_fallback</code> only and <code>[C]</code> (untested) for the other 5 entry points. The gap is only partly closed.</p>
+      </div>
+
+      <div class="receipt">
+        <h3>13-phase re-audit verdicts — substantive PASS, 3 arithmetic errors</h3>
+        <p class="meta">Audit-the-audit</p>
+        <p>Substantively honest: 0 <code>[D]</code>-staged paper misclassified, sample-acknowledged discipline held. Three arithmetic errors in self-reporting: Phase 1 (28/1 → 27/2), Phase 10 (14 papers → 15), final summary (5 🟡 → 6). All corrected in the same branch.</p>
+      </div>
+
+      <div class="receipt">
+        <h3>Receipt 114 (3 tenses) — PASS with 3 minor flags</h3>
+        <p class="meta">New-reader verdict</p>
+        <p>Founder insight properly attributed (not elevated). §3 stays at <code>[C]</code> with its fence verbatim. Open Canon Covenant honored (no <code>[C]→[A]</code> upgrade, apophatic edge preserved). Minor flags: "exhaustive over a register's lifecycle" wording rephrased to avoid the no-closure implication.</p>
+      </div>
+    </section>
+
+    <section class="block wrap">
+      <h2>5. The constitutional canon: 5+1 + Open Canon Covenant</h2>
+      <p>The framework is governed by the <b>5+1 constitution</b> — five refusals + Ω as the directional +1 — and the <b>Open Canon Covenant</b> (K2-ratified 2026-07-12).</p>
+      <div class="inversion-box">
+        <h3>The Open Canon Covenant — the load-bearing meta-rule</h3>
+        <p>"The tautology is the frame. It is never the content. <i>Ratification records at tier; it does not make things true.</i>" Ratification never upgrades <code>[C]→[A]</code>. The "we're tautological so we can't be wrong" shield is <b>forbidden</b> (it kills A7). Reality closes in the living; no description closes.</p>
+        <p>This page is the Covenant in action: every settled question is audited; every failure is first-class; every claim has a tier mark and a source link.</p>
+      </div>
+    </section>
+
+    <section class="block wrap">
+      <h2>6. The η=0 enforcement gap (a first-class failure)</h2>
+      <p>The framework's <b>constitutional fence</b> is the η=0 invariant: zero extraction, fees only on value created. The operational test is whether the runtime enforces it. The current state:</p>
+
+      <div class="gap">
+        <h3>Gap: 5 production callers bypass the η=0 wire</h3>
+        <p>The <code>cost_ledger.record()</code> wire was added on 2026-07-12 to <code>call_with_fallback</code>, closing the gap for that path. The new-reader audit (above) found that 5 production callers — <code>council_protocol._call_llm_with_seat_rotation</code>, <code>llm_explainer</code>, <code>observability</code>, <code>chat_handler</code> (via <code>call_llm_with_resolver</code>), <code>key_resolver</code> (via <code>call_llm_provider</code>) — call <code>call_llm</code> / <code>call_llm_provider</code> directly and bypass <code>call_with_fallback</code>. For those paths, the gate is decorative.</p>
+        <p><b>This gap is on the audit trail by design.</b> The 13-phase re-audit and the new-reader meta-audit both show it. The fix is scoped as a separate V-forcing directive (wire <code>cost_ledger.record()</code> into the 5 bypass paths, or redirect them through <code>call_with_fallback</code>). When the wire expands, the audit verdict updates.</p>
+      </div>
+    </section>
+
+    <section class="block wrap">
+      <h2>7. The convergence-memo discipline</h2>
+      <p>The pattern that keeps the audit honest: <b>ship the directive, don't refine</b>. One V-forcing directive → one commit → stop. No third consolidating doc; no re-litigation of settled questions; the latest refinement is recorded at tier, not promoted to <code>[A]</code>. The 13-phase re-audit, the new-reader meta-audit, and the receipts of self-correction all follow this discipline.</p>
+    </section>
+
+    <section class="block wrap">
+      <h2>8. Open questions, waiting on K2</h2>
+      <p>Six <code>[D]</code>-staged papers and 2 <code>[E]</code>-K2-countersigned receipts are awaiting K2 sign-off. They are <b>not</b> live canon until the natural person signs. The audit lists them honestly:</p>
+      <ul>
+        <li>Receipt 114 — Register non-instantiation (3 tenses). <span class="tb s">S</span><span class="tb i">I</span></li>
+        <li>Receipt 116 — Lens as Compass (21 paradoxes). <span class="tb i">I</span></li>
+        <li>Receipt 117 — Force Ladder (07B). <span class="tb a">A</span></li>
+        <li>00_THE_MUTUALISM_LIMIT.md (Phase 1, Cosmology). <span class="tb s">S</span><span class="tb i">I</span></li>
+        <li>00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md (Phase 1, Cosmology). <span class="tb s">S</span><span class="tb i">I</span></li>
+        <li>00_CONSTITUTIONAL_ECONOMICS.md (Phase 6, Axiology). <span class="tb s">S</span></li>
+        <li>00_THE_EXTRACTION_LAW.md (Phase 6, Axiology). <span class="tb s">S</span></li>
+        <li>00_THE_KINTSUGI_PROTOCOL.md (Phase 10, Meta). <span class="tb s">S</span></li>
+        <li>η=0 wire expansion to 5 bypass paths (code change, apu_bot). <span class="tb s">S</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Emergentism is a public instrument. The audit trail is the proof. <br>The covenant governs: ratification records at tier, never upgrades.</p>
+  </footer>
+</body>
+</html>

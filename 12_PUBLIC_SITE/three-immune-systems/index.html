@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <base href="../" />
+  <title>Three Immune Systems · Emergentism</title>
+  <meta name="description" content="The three immune systems of the framework: A7 (self-correction), the Lens-Not-Law Rule (over-claim antibody), and the new-reader meta-audit (cold-eye). All three operational." />
+  <meta name="color-scheme" content="dark" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%23FFEB3B' stroke-width='1' opacity='.5'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E" />
+  <link rel="preload" href="assets/fonts/Roboto-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/RobotoMono-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <style>
+    @font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:optional;src:url('assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+    @font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:optional;src:url('assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+    :root{
+      --void:#050505; --void-2:#0a0a0a; --panel:#101010; --panel-2:#161616;
+      --bone:#F3F4F6; --bone-dim:#9CA3AF; --bone-faint:#858C99;
+      --gold:#FFEB3B; --gold-bright:#FFF176; --gold-deep:#CBB800;
+      --cold:#42A5F5; --blue:#2196F3; --violet:#6e6a86; --cream:#FFFDE7;
+      --line:rgba(243,244,246,.12); --line-soft:rgba(243,244,246,.07);
+      --tier-a:#7fb2e6; --tier-s:#5fc6b0; --tier-i:#e8d24a; --tier-c:#b59ce0; --tier-b:#FFEB3B;
+      --serif:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+      --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+      --phi:1.618; --maxw:1140px; --shape-lg:16px; --target-min:48px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; background:var(--void); color:var(--bone); font-family:var(--serif); font-size:18px; line-height:1.62; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility}
+    body::before{content:""; position:fixed; inset:0; z-index:-2; pointer-events:none; background:linear-gradient(180deg, rgba(255,235,59,.05), transparent 28rem), linear-gradient(90deg, rgba(33,150,243,.07), transparent 32%, transparent 70%, rgba(76,175,80,.03)), var(--void)}
+    a{color:var(--bone); text-decoration:none}
+    a:hover{color:var(--gold)}
+    ::selection{background:rgba(255,235,59,.30); color:#050505}
+
+    .topbar{position:sticky; top:0; z-index:20; display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.85rem clamp(1rem,4vw,2.4rem); min-height:64px; background:color-mix(in srgb,var(--void) 86%,transparent); backdrop-filter:blur(12px) saturate(1.08); border-bottom:1px solid var(--line-soft)}
+    .brand{flex:0 0 auto; font-family:var(--serif); font-size:1.18rem; font-weight:600}
+    .brand b{color:var(--gold)}
+    .nav{flex:1 1 auto; min-width:0; display:flex; justify-content:flex-end; gap:.2rem; flex-wrap:wrap; font-family:var(--mono); font-size:.82rem}
+    .nav a{display:inline-grid; place-items:center; min-height:var(--target-min); padding:0 .8rem; color:var(--bone-dim); border:1px solid transparent; border-radius:999px; transition:.2s}
+    .nav a:hover{color:var(--void); background:var(--gold); border-color:var(--gold)}
+    .nav a.active{color:var(--gold); border-color:var(--gold-deep); background:rgba(255,235,59,.08)}
+
+    .wrap{max-width:var(--maxw); margin:0 auto; padding:0 clamp(1rem,4vw,2.4rem)}
+    main{padding:clamp(2.5rem,6vw,5rem) 0 clamp(3rem,8vw,6rem)}
+
+    .hero{padding:clamp(2rem,5vw,4rem) 0 clamp(1rem,3vw,2rem); border-bottom:1px solid var(--line-soft); margin-bottom:2.5rem}
+    .eyebrow{font-family:var(--mono); font-size:.74rem; letter-spacing:0; text-transform:uppercase; color:var(--gold); margin:0 0 1rem}
+    h1.head{font-family:var(--serif); font-weight:800; font-size:clamp(2.2rem,5.4vw,3.6rem); line-height:1.05; letter-spacing:0; margin:.2rem 0 1rem; text-wrap:balance; max-width:24ch}
+    h1.head .li{color:var(--gold)}
+    .lede{font-size:clamp(1.02rem,1.5vw,1.18rem); color:var(--bone-dim); max-width:62ch; margin:0}
+
+    section.block{padding:1.6rem 0 1.4rem; border-bottom:1px solid var(--line-soft)}
+    section.block:last-of-type{border-bottom:0}
+    h2{font-family:var(--serif); font-weight:700; font-size:clamp(1.5rem,3.2vw,2.2rem); line-height:1.12; margin:0 0 .8rem}
+    h3{font-family:var(--serif); font-weight:600; font-size:1.2rem; margin:1.2rem 0 .5rem}
+    p{margin:0 0 .9rem; color:var(--bone-dim); max-width:68ch}
+    p strong,li strong{color:var(--bone); font-weight:600}
+    code{font-family:var(--mono); font-size:.9em; color:var(--bone); background:rgba(255,255,255,.04); padding:.1em .35em; border-radius:3px}
+    ul,ol{margin:0 0 1rem; padding-left:1.2rem; color:var(--bone-dim)}
+    li{margin:.4rem 0}
+    a.inline{color:var(--gold); text-decoration:underline; text-underline-offset:3px}
+
+    .tb{display:inline-block; min-width:2.2em; text-align:center; padding:.1rem .45rem; border-radius:3px; font-family:var(--mono); font-size:.78rem; font-weight:600; border:1px solid var(--line); vertical-align:middle; margin:0 .2em}
+    .tb.a{color:var(--tier-a); border-color:rgba(127,178,230,.4)}
+    .tb.s{color:var(--tier-s); border-color:rgba(95,198,176,.4)}
+    .tb.i{color:var(--tier-i); border-color:rgba(232,210,74,.4)}
+    .tb.c{color:var(--tier-c); border-color:rgba(181,156,224,.4)}
+    .tb.b{color:var(--tier-b); border-color:rgba(255,235,59,.4)}
+
+    /* three immune systems cards */
+    .immune-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1rem; margin:1.2rem 0 1.6rem}
+    .immune{border:1px solid var(--line-soft); border-radius:var(--shape-lg); padding:1.3rem 1.4rem; background:linear-gradient(180deg,var(--panel),var(--void-2))}
+    .immune h3{margin:0 0 .4rem; font-size:1.1rem; display:flex; gap:.5rem; align-items:center}
+    .immune .num{font-family:var(--mono); font-size:.7rem; color:var(--gold); background:rgba(255,235,59,.1); padding:.1rem .4rem; border-radius:3px; border:1px solid rgba(255,235,59,.3)}
+    .immune p{font-size:.95rem; margin:0 0 .5rem; max-width:42ch}
+    .immune ul{font-size:.88rem; margin:0; padding-left:1.05rem; color:var(--bone-faint)}
+    .immune li{margin:.3rem 0}
+
+    .site-footer{border-top:1px solid var(--line); padding:clamp(2rem,5vw,3rem) clamp(1rem,4vw,2.4rem); text-align:center; margin-top:3rem}
+    .site-footer p{color:var(--bone-faint); font-family:var(--mono); font-size:.78rem; max-width:60ch; margin:0 auto}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="home/">Emergent<b>ism</b></a>
+    <nav class="nav" aria-label="Public doctrine routes">
+      <a href="perennial/">Perennial</a>
+      <a href="formal/">Formal</a>
+      <a href="operational/">Operational</a>
+      <a href="three-immune-systems/" class="active">3&nbsp;Immune</a>
+      <a href="_meta/">_meta</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <p class="eyebrow">The framework's three working immune systems</p>
+      <h1 class="head">A framework without an <span class="li">immune system</span> is a cult with a citation page.</h1>
+      <p class="lede">Three systems, all operational, all in the same session. Each is structured feedback, not aspiration. Each can fail, and the failure modes are themselves first-class.</p>
+    </section>
+
+    <section class="block wrap">
+      <div class="immune-grid">
+        <div class="immune">
+          <h3><span class="num">1</span> A7 — self-correction</h3>
+          <p>Every load-bearing claim carries a tier mark. Every empirical claim carries a kill criterion. The framework audits itself and <b>eats its own overclaims in place</b>, retaining the corrections as reinforcement.</p>
+          <ul>
+            <li>Model case: <a class="inline" href="https://github.com/circumvectio/emergentism/blob/main/02_EPISTEMOLOGY/00_THE_BRAIN_IS_THE_BURRI_SPHERE.md">Brain as the Burri Sphere</a> 2026-04-04 self-correction — "hemisphere-as-tendency, not hemisphere-as-identity"</li>
+            <li>Operational: <code>addendum</code> retained in the document; the corrected reading is the live one</li>
+          </ul>
+        </div>
+        <div class="immune">
+          <h3><span class="num">2</span> Lens-Not-Law Rule — over-claim antibody</h3>
+          <p>Every cathedral-scope claim wears its evidence tier <i>inline, on the surface a reader actually sees</i>. The trigger watchlist names the words that demand a visible tier or a fence: <b>force, unifies, confirmed, named magnitude, conquest</b>. "Force" is reserved. "Unifies" earns a fence.</p>
+          <ul>
+            <li><a class="inline" href="https://github.com/circumvectio/emergentism/blob/main/03_METHODOLOGY/00_THE_LENS_NOT_LAW_RULE.md">The Lens-Not-Law Rule</a> — the standing discipline</li>
+            <li>This page is built under it: every claim above carries a tier mark</li>
+          </ul>
+        </div>
+        <div class="immune">
+          <h3><span class="num">3</span> New-reader meta-audit — cold eye</h3>
+          <p>Five <code>verifier</code> agents, in parallel, reading the load-bearing recent work cold, against the Settled Canon Registry. The <i>value is the cold eye</i> — it catches what the warm eye missed (e.g. the η=0 wire bypass on 5 production paths; the PD-10 + PD-19 tier-inflation).</p>
+          <ul>
+            <li><a class="inline" href="_meta/">_meta (audit trail)</a> — the public audit record</li>
+            <li>Findings compiled into the <a class="inline" href="https://github.com/circumvectio/emergentism/blob/main/00_CONTROL/PRIMETIME_AUDIT/verdicts/2026_07_12_NEW_READER_META_AUDIT.md">new-reader meta-audit file</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="block wrap">
+      <h2>Why three, and not one</h2>
+      <p>One immune system is a single point of failure. Two is a debate. Three is a <i>discipline</i>: each catches what the others miss, and the convergence of the three is what makes the framework self-correcting rather than self-confirming. A7 catches overclaims within the canon. The Lens-Not-Law Rule catches overclaims on the surface. The new-reader meta-audit catches overclaims in the recent work. <b>All three operating in the same session</b> is the load-bearing fact — the framework eats its own claim in real time.</p>
+      <p>What this is not: it is not a guarantee of correctness. Three immune systems can all fail together (a common failure mode is "the immune systems themselves drift to self-confirmation"). The check for that is the meta-meta-audit: someone, eventually, audits the immune systems themselves. The convergence-memo discipline says: ship the directive, don't refine past the fixed point. The fixed point is here; the meta-meta-audit is a future session.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Three systems, all operational. None are guarantees. All are auditable. <br>The audit trail is at <a class="inline" href="_meta/">_meta</a>.</p>
+  </footer>
+</body>
+</html>

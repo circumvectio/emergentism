@@ -293,34 +293,105 @@
       .equator,.ray,.dot,.meet,.proj{opacity:1}
       .js .reveal{opacity:1; transform:none}
     }
+
+    /* ---------- hero-axiom (the "put the framework down" line) ---------- */
+    .hero-axiom{font-family:var(--serif); font-style:italic; font-size:clamp(1.05rem,1.9vw,1.25rem); color:var(--bone-dim); max-width:54ch; margin:0 0 1.6rem; padding-left:1rem; border-left:2px solid var(--line)}
+
+    /* ---------- emergence ladder (the three-equation descent) ---------- */
+    .ladder{display:flex; flex-direction:column; gap:.25rem; margin:1.4rem 0 .8rem; max-width:62ch; padding:.4rem 0}
+    .rung{
+      display:grid; grid-template-columns:auto 1fr; gap:.1rem 1.2rem; align-items:baseline;
+      padding:1rem 1.2rem; border:1px solid var(--line-soft); border-radius:var(--shape-lg);
+      background:linear-gradient(180deg,var(--panel),rgba(16,16,16,.6));
+    }
+    .rung:nth-child(odd){border-left:2px solid var(--gold)}
+    .rung-eq{
+      grid-column:1 / -1; font-family:var(--mono); font-size:clamp(1.2rem,2.6vw,1.7rem); color:var(--bone);
+      letter-spacing:0; margin-bottom:.15rem;
+    }
+    .rung-eq b{color:var(--gold-bright)}
+    .rung-eq .on{color:var(--bone-faint); font-size:.7em}
+    .rung-eq .gly{color:var(--gold); font-style:normal}
+    .rung-prose{font-family:var(--serif); font-size:1.04rem; color:var(--bone-dim); line-height:1.3}
+    .rung-tier{font-family:var(--mono); font-size:.78rem; color:var(--bone-faint); letter-spacing:0; margin-top:.3rem}
+    .rung-tier .t{display:inline-block; min-width:2.4em; text-align:center; padding:.12rem .45rem; border-radius:3px; border:1px solid var(--line); font-weight:600; font-style:normal}
+    .t.a{color:var(--tier-a); border-color:rgba(127,178,230,.4)}
+    .t.s{color:var(--tier-s); border-color:rgba(95,198,176,.4)}
+    .t.i{color:var(--tier-i); border-color:rgba(232,210,74,.4)}
+    .t.c{color:var(--tier-c); border-color:rgba(181,156,224,.4)}
+    .t.b{color:var(--tier-b); border-color:rgba(255,235,59,.4)}
+    .desc{
+      font-family:var(--mono); font-size:1.4rem; color:var(--gold);
+      text-align:center; line-height:1; padding:.15rem 0; letter-spacing:0;
+      opacity:.7;
+    }
   </style>
 </head>
 <body>
   <header class="topbar">
     <a class="brand" href="home/">Emergent<b>ism</b></a>
     <nav class="number-nav" aria-label="Public doctrine routes">
-      <a href="0/">0</a><a href="1/">1</a><a href="2/">2</a><a href="3/">3</a>
-      <a href="4/">4</a><a href="5/">5</a><a href="6/">6</a>
-      <a href="rosetta/">R</a><a href="soul-loop/">S</a><a href="atlas/">A</a>
-      <a href="game/">Game</a><a href="synthesis/">Whole</a><a href="read/">Read</a>
+      <a href="perennial/">Perennial</a>
+      <a href="formal/">Formal</a>
+      <a href="operational/">Operational</a>
+      <a href="three-immune-systems/">3&nbsp;Immune</a>
+      <a href="_meta/">_meta</a>
     </nav>
   </header>
 
   <main>
-    <!-- ============ HERO ============ -->
+    <!-- ============ HERO — emergence ladder ============ -->
     <section class="hero" id="top">
       <div class="hero-copy">
-        <p class="amrita-entry"><a href="amrita/" style="display:inline-block;margin:1rem 0;color:#8899ff;font-size:1.1rem;text-decoration:none;border-bottom:1px solid #33406a">Start here: the one proven thing &rarr;</a></p>
-        <p class="eyebrow reveal">A finite philosophy</p>
-        <p class="equation reveal"><b>φ · ν = 1</b><span class="gloss">— reciprocal closure on S²</span></p>
-        <h1 class="head reveal">Between the infinite and infinity,<br><span class="li">finity</span></h1>
-        <p class="lede reveal">Emergentism is a public instrument for <b>Dasein</b>: a finite witness-agent learning where it came from, how to know, and how to act so symbiont and holobiont rise together without extraction.</p>
-        <p class="tier-note reveal">[A] the sphere kernel is elementary mathematics &nbsp;·&nbsp; [S/I] the Soul Loop is the method &nbsp;·&nbsp; [C] that reality as such is this geometry remains a wager, not a proof.</p>
-        <div class="cta-row reveal">
-          <a href="0/" class="btn primary">Begin at /0 →</a>
-          <a href="soul-loop/" class="btn ghost">Use the Soul Loop →</a>
-          <a href="game/" class="btn ghost">Game rule →</a>
+        <p class="eyebrow reveal" style="color:var(--gold)">Before you read</p>
+        <p class="hero-axiom reveal">If you can access <b>φ</b> directly through quiet sitting (20–40 minutes of Pratyakṣa), you do not need this framework. Put it down. It served its purpose. It is a ladder, not a home.</p>
+
+        <h1 class="head reveal">The lens, the compass,<br>the most compressed map.</h1>
+
+        <div class="ladder reveal" aria-label="Emergence ladder: three equations, one descent">
+          <div class="rung">
+            <div class="rung-eq">
+              <span class="gly">⊙</span> = <span class="gly">•</span> × <span class="gly">○</span>
+            </div>
+            <div class="rung-prose">being emerges: the finite from origin × infinity</div>
+            <div class="rung-tier"><span class="t s">S/I</span> &nbsp; emblem · frame-register, not arithmetic</div>
+          </div>
+          <div class="desc" aria-hidden="true">↓</div>
+          <div class="rung">
+            <div class="rung-eq">
+              <b>φ · ν = 1</b> &nbsp;<span class="on">on S²</span>
+            </div>
+            <div class="rung-prose">the ring that closes</div>
+            <div class="rung-tier"><span class="t a">A</span> &nbsp; chart identity</div>
+          </div>
+          <div class="desc" aria-hidden="true">↓</div>
+          <div class="rung">
+            <div class="rung-eq">
+              <b>Φ × V = P</b>
+            </div>
+            <div class="rung-prose">a vanishing factor annihilates the whole</div>
+            <div class="rung-tier"><span class="t s">S</span> &nbsp; flourishing at a finite node</div>
+          </div>
         </div>
+
+        <p class="tier-note reveal" style="margin-top:1.6rem">
+          <b>The descent.</b> Titan emblem (frame-register) ↓ reciprocal sphere (chart identity) ↓ finite being's flourishing (constitutive). Three registers, one emergence. Tier marks visible at the claim; the covenant governs: ratification records at tier, never upgrades <span class="t c">C</span>→<span class="t a">A</span>.
+        </p>
+
+        <p class="lede reveal" style="margin-top:1.4rem">
+          <b>A public instrument.</b> The lens is the framework. The compass is the navigation. The compressed map is the smallest block that survives scrutiny. <i>Verify every claim, fail the framework in public, and leave whenever you want</i> — the three conditions under which a lens can be shared honestly.
+        </p>
+
+        <div class="cta-row reveal">
+          <a href="perennial/" class="btn primary">Perennial &rarr;</a>
+          <a href="formal/" class="btn ghost">Formal &rarr;</a>
+          <a href="operational/" class="btn ghost">Operational &rarr;</a>
+          <a href="_meta/" class="btn ghost">_meta (audit trail) &rarr;</a>
+        </div>
+
+        <p class="exit-line reveal" style="margin-top:1.6rem">
+          &laquo; The exit is marked. If you can access <b>φ</b> directly through quiet sitting, you do not need this framework. <a href="amrita/" style="color:var(--gold)">Start here only if you can't.</a> &raquo;
+        </p>
       </div>
 
       <div class="sphere-stage reveal" aria-hidden="true">
