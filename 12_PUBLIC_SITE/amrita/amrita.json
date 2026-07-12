@@ -4,7 +4,7 @@
   "group": "nectar",
   "tier": "[A]",
   "title": "Conjugacy — the ring that closes",
-  "body": "For phi,nu > 0 with phi*nu = 1, driving one factor to 0 forces its complement to infinity. The law is a product, not a sum: a vanishing factor annihilates the whole. The engine under the titans, the game-moves, and the ethics.",
+  "body": "For phi,nu > 0 with phi*nu = 1, driving one factor toward 0 forces its complement to infinity; the product is conserved at 1 — a runaway, not an annihilation. Annihilation (a vanishing factor kills the whole) belongs to the node engine P = Phi x V, the AND-class wager — see the keel card. The frame conserves; the engine annihilates. Keep them apart.",
   "source": "05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md",
   "route": "foundations/the-ring-that-is-the-ground"
  },
@@ -22,7 +22,7 @@
   "group": "nectar",
   "tier": "[A]",
   "title": "The titans {0, 1, infinity}",
-  "body": "The unique minimal generative frame on the Riemann sphere up to Mobius: {0,infinity} closed under z -> 1/z yields 1; any fourth point is cross-ratio-determined, so the frame cannot be extended. They define the operations; they are not operands.",
+  "body": "The unique minimal generative frame on the Riemann sphere up to Mobius: {0,infinity} are swapped by z -> 1/z, whose fixed point — the self-dual centre — is 1; any fourth point is cross-ratio-determined, so the frame cannot be extended. That they define the operations rather than serve as operands is the framework's structural reading [S].",
   "source": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md",
   "route": "trinity/00-the-transcendental-trinity-canon"
  },
@@ -40,7 +40,7 @@
   "group": "nectar",
   "tier": "[A]",
   "title": "One degree of freedom",
-  "body": "phi*nu = 1 collapses two variables to a single coordinate theta: (phi-nu)^2 = (phi+nu)^2 - 4, phi+nu = 2/sin(theta). The manifold is earned, not assumed.",
+  "body": "phi*nu = 1 collapses two variables to a single coordinate theta: (phi-nu)^2 = (phi+nu)^2 - 4, phi+nu = 2/sin(theta). The manifold is a consequence of the reciprocal identity, not an extra assumption.",
   "source": "01_TELEOLOGY/02_THE_DERIVATION/00_THE_CORE_CONJECTURE.md",
   "route": "will/00-the-core-conjecture"
  },
@@ -58,7 +58,7 @@
   "group": "nectar",
   "tier": "[A]",
   "title": "The mass-shell",
-  "body": "Under phi = e^w, nu = e^(-w) (rapidity), phi*nu = 1 is E^2 - (pc)^2 = (mc^2)^2. The equator is the rest frame E = mc^2, the dyadic runaway is the relativistic divergence toward the light cone. Verified numerically.",
+  "body": "Under phi = e^w, nu = e^(-w) (rapidity), the balance identity coincides with the mass-shell E^2 - (pc)^2 = (mc^2)^2 — a kinematic translation (the register fence applies), not an empirical discovery. The equator is the rest frame E = mc^2; the runaway is the divergence toward the light cone. An exact coordinate identity (cosh^2 w - sinh^2 w = 1).",
   "source": "08_FRAMEWORK_SUPPORT/00_KNOWN_UNKNOWNS_RESOLVED.md",
   "unpublished": true
  },
@@ -85,7 +85,7 @@
   "group": "nectar",
   "tier": "[A]",
   "title": "An honest negative result",
-  "body": "Bare S^2 cannot produce SU(3): scalar-Laplacian degeneracies are 1,3,5,7,...; none is 8. The framework states where its own geometry stops. This is nectar because it is a limit the framework imposed on itself.",
+  "body": "Bare S^2 = CP^1 has one complex degree of freedom; the 8-gluon adjoint of SU(3) cannot be housed on it (CP^2 would be needed). The framework states where its own geometry stops. This is nectar because it is a limit the framework imposed on itself.",
   "source": "03_METHODOLOGY/02_THE_PAPERS/PAPER_P_SU3_OBSTRUCTION_BARE_S2.md",
   "route": "papers/paper-p-su3-obstruction-bare-s2"
  },
@@ -112,7 +112,7 @@
   "group": "nectar",
   "tier": "[S]",
   "title": "The extraction law",
-  "body": "Extraction produces power locally and briefly; ungated, it consumes its own substrate and drives the sum of flourishing change across the widest boundary negative, via Lotka-Volterra crash, Red Queen, Lindeman attrition (all proven). So total flourishing change is the moral primitive; eta=0-toward-cooperators is a derived front-line gate, not a commandment.",
+  "body": "Extraction produces power locally and briefly; ungated, it consumes its own substrate — the staged claim [D] is that it drives the sum of flourishing change across the widest boundary negative. The grounding models (Lotka-Volterra, Red Queen, Lindeman attrition) are established population dynamics, not proofs of the law — and base LV gives a neutral centre, not a crash. Total flourishing change is the moral primitive; eta=0-toward-cooperators is a derived front-line gate, not a commandment.",
   "source": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
   "unpublished": true
  },
@@ -139,7 +139,7 @@
   "group": "nectar",
   "tier": "[S]",
   "title": "D5's emergence asymmetry",
-  "body": "Strongly emergent in genesis (opaque, un-shortcuttable from below), weakly emergent in governance (compressible once stabilized). Opaque from below, legible from above. Falsifiable-shaped: it predicts where reduction fails vs succeeds. Keep the law; cut the boast that it is one of the strongest general laws.",
+  "body": "Strongly emergent in genesis (opaque, un-shortcuttable from below), weakly emergent in governance (compressible once stabilized). Opaque from below, legible from above — if the strong-emergence wager holds. Falsifiable-shaped: it predicts where reduction fails vs succeeds. Keep the reading; cut the boast that it is one of the strongest general laws.",
   "source": "11_UPLINK/60_SESSION_PACKETS/131_D4_BODY_OPENS_D5_ACTIVE_EMERGENCE_THESIS_2026_04_24.md",
   "unpublished": true
  },
@@ -148,7 +148,7 @@
   "group": "nectar",
   "tier": "[S]",
   "title": "The tier-separated ground",
-  "body": "Ground to Being to Teleological Force to Dasein to beings, each term held apart, with the anti-reification rule enforced structurally: the seer is not on the sphere; the lens diagrams what shows, not the showing. The sphere is the first stable closure of the Ground, never the Ground.",
+  "body": "Ground to Being to Dasein to beings, each term held apart, with the anti-reification rule enforced structurally: the seer is not on the sphere; the lens diagrams what shows, not the showing. The sphere is the first stable closure of the Ground, never the Ground.",
   "source": "06_ONTOLOGY/01_APOPHATIC_GROUND_AND_FIELD_STRUCTURE.md",
   "route": "ground/01-apophatic-ground-and-field-structure"
  },
@@ -157,7 +157,7 @@
   "group": "nectar",
   "tier": "[S]",
   "title": "The six-tier ladder + no silent upgrade",
-  "body": "[A/B/S/I/D/C], with the cardinal rule that tier changes are dated events with reasons, protecting three real seams: yours-vs-world's evidence, conditional-vs-unconditional, meaning-vs-mechanism. The self-audit proved this is load-bearing: 92 of 112 claims survived a hostile cut precisely because the tiering is real, not decorative.",
+  "body": "[A/B/S/I/D/C], with the cardinal rule that tier changes are dated events with reasons, protecting three real seams: yours-vs-world's evidence, conditional-vs-unconditional, meaning-vs-mechanism. The ladder is load-bearing, not decorative: it retires its own claims (AK8 falsified and retired; GFS marked MIXED, not spun) rather than spinning them.",
   "source": "02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md",
   "route": "foundations/the-honest-position"
  },
@@ -167,15 +167,15 @@
   "tier": "[S]",
   "title": "The four mandatory fields",
   "body": "No claim is load-bearing until a reader can state its tier, upgrade path, kill criterion, and survivors, what stands if it falls. The fourth is the keystone: only claims that explicitly depend on a failed claim fall with it. This is why the framework can lose a round and not collapse.",
-  "source": "03_METHODOLOGY/02_THE_PAPERS/PAPER_V_STEELMAN.md",
-  "route": "papers/paper-v-steelman"
+  "source": "02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md",
+  "route": "foundations/the-honest-position"
  },
  {
   "id": "n20",
   "group": "nectar",
   "tier": "[S]",
   "title": "Kill criteria actually honored",
-  "body": "AK8 (R* approx 1.5) marked falsified and retired; GFS marked MIXED, not spun; a Paper-V pilot fired its own pre-registered kill and reported preliminary falsification. The Mirror Scoreboard prints the columns that fail.",
+  "body": "AK8 (R* approx 1.5) marked falsified and retired; GFS marked MIXED, not spun; the mu-limit stratification reading was retracted when Wave-1 failed it. The Master Rosetta's Mirror Scoreboard prints the columns that fail.",
   "source": "02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md",
   "route": "foundations/the-honest-position"
  },
@@ -256,7 +256,7 @@
   "group": "halahala",
   "tier": "halahala",
   "title": "The civilizational physics",
-  "body": "Megaliths ran at L=0, modern institutions at L approx 9.9, extractive civilizations self-terminate (Great Filter = Karma = Ma'at). An analogy asserted as physics.",
+  "body": "Megaliths at perfect balance (B = 1), modern institutions at B << 1, extractive civilizations self-terminate (Great Filter = Karma = Ma'at). An analogy asserted as physics — and the L-numbers once quoted for it never appear in the cited source.",
   "source": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D21_ROSETTA_R12_MEGALITHIC.md",
   "unpublished": true
  },
@@ -283,7 +283,7 @@
   "group": "halahala",
   "tier": "halahala",
   "title": "N=3 is uniquely stable, proven",
-  "body": "Stated as flat proof with no tier, justified by an unfalsifiable just-so (four reduces to three) and buttressed by convergence. Conjecture at best.",
+  "body": "Dressed as an [S] structural proof (flat QED) — but the N>=5 branch rests on a false lemma: 'any group with N>=4 elements has proper subgroups' (Z5 has none). Broken math, not merely an un-won conjecture; staged demotion to [C] (receipt 109). eta=0 does not fall with it.",
   "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/11_EFR_TRIADIC_STABILITY.md",
   "route": "formal/11-efr-triadic-stability"
  },
@@ -301,7 +301,7 @@
   "group": "nectar",
   "tier": "[S]",
   "title": "The Open Canon Covenant — sruti frame, smrti body",
-  "body": "The self-referential character of reality is true of the frame and says nothing about the content (Wittgenstein 6.1). Canon commits sruti-frame (revered) / smrti-body (falsifiable, endlessly re-openable). Ratification records at tier; it never upgrades [C] to [A]. The we-are-tautological-so-we-cannot-be-wrong shield is forbidden.",
+  "body": "The self-referential character of reality is true of the frame and says nothing about the content (Wittgenstein 6.1). Canon commits sruti-frame (revered) / smrti-body (falsifiable, endlessly re-openable). Ratification records at tier; it never upgrades [C] to [A]. The we-are-tautological-so-we-cannot-be-wrong shield is forbidden. And the frame itself is not uniform: phi*nu=1 is an empty identity, D6=D0 a falsifiable reflexivity thesis, the emblem a definitional typing — the line runs through the frame, not at it.",
   "source": "00_META/00_THE_OPEN_CANON_COVENANT.md",
   "unpublished": true
  },
@@ -312,6 +312,33 @@
   "title": "The open loop — constitutively open, completes only in the living",
   "body": "If the two wagers hold (Phi*V multiplicative; strong emergence genuine), the loop resists both derivation and prediction — so it is constitutively open, completing only in the traversing (Pratyaksa). The map cannot close itself; the three refusals (eta=0 / mortal-signer / open loop) are one via-negativa. Orientation, not theorem.",
   "source": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/107_THE_OPEN_LOOP_D6_D0_CLOSURE_PENDING_K2.md",
+  "unpublished": true
+ },
+ {
+  "id": "n25",
+  "group": "nectar",
+  "tier": "[I]",
+  "title": "The fifth coupling is teleological, not physical",
+  "body": "A force is a coupling; each emergent dimension opens one. D1-D4's couplings take physical form as the four forces; D5's is the will-to-potential — the Omega-gradient on the eta=0 manifold, selection among reachable futures. So the framework predicts NO fifth physical force: fifty years of null searches are the signature that agency lives one register above the gauge fields. A reframe, not a proof.",
+  "source": "01_TELEOLOGY/02_THE_DERIVATION/07A_F5_UNBUNDLED_COUPLING_PER_DIMENSION_PENDING_K2.md",
+  "unpublished": true
+ },
+ {
+  "id": "n26",
+  "group": "nectar",
+  "tier": "[S]",
+  "title": "Two axes through D4-D5 — emergence up, commitment down",
+  "body": "mu (genesis) runs UP, D4-potential to D5-actual; chi (the soul-loop) runs DOWN, D5-foresight to D4-embodied-receipt. 'Actual' is register-indexed. Free selection is auditable-after, never predictable-before — and the receipt is the proof it happened.",
+  "source": "05_COSMOLOGY/00_THE_BURRI_RULES.md",
+  "unpublished": true
+ },
+ {
+  "id": "n27",
+  "group": "nectar",
+  "tier": "[S]",
+  "title": "Kintsugi — the seam is the strongest line",
+  "body": "Every break is gilded, not hidden: a repaired claim outranks an untested one, and the breakage bounty pays adversaries in credited, load-bearing repair. This page is that protocol — the halahala column is the gold, not the shame.",
+  "source": "00_META/00_THE_KINTSUGI_PROTOCOL.md",
   "unpublished": true
  },
  {
@@ -339,6 +366,24 @@
   "title": "The K2-delegation offer — the map accepting sovereign signature",
   "body": "On 2026-07-12 the software was offered K2 sovereignty exhaustively and refused on constitutional grounds (receipt 110 section 7). Accepting would collapse the via-negativa (the map signing for the mortal), kill A7 (self-certification), and corrupt the private/public DAV modes. The offer is the failure mode, named permanently; the refusal is the topology holding under stress.",
   "source": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/110_FORMAL_LOGIC_AUDIT_APPLY_THREE_GOLDEN_SEAMS_PENDING_K2.md",
+  "unpublished": true
+ },
+ {
+  "id": "h15",
+  "group": "halahala",
+  "tier": "halahala",
+  "title": "Four proofs under the spine are false",
+  "body": "A proof-layer audit hand-verified four false lemmas: Z5 voids 'N=3 is uniquely stable, QED'; Lotka-Volterra is a conservative centre, not an attractor; a meridian refutes 'all sphere paths are helical'; a torus refutes 'algebraic closure implies simple-connectedness.' The spine survives at its honest tiers — the supporting proofs need repair, not concealment.",
+  "source": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS_PENDING_K2.md",
+  "unpublished": true
+ },
+ {
+  "id": "h16",
+  "group": "halahala",
+  "tier": "halahala",
+  "title": "kappa = 0 as 'Kolmogorov complexity zero'",
+  "body": "Claiming the shortest description of reality is the empty string (K=0) is a category error — a length-0 program outputs nothing, not everything. Cut; kappa=0 survives only as a ground-facing simplicity boundary (the Bindu), never as literal zero-cost specification or possession of the Ground.",
+  "source": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_POINT.md",
   "unpublished": true
  }
 ]
