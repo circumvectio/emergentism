@@ -59,21 +59,47 @@ def _item(path: str, index: int) -> str:
 
 
 def _json_equal(left: Any, right: Any) -> bool:
-    if type(left) in (int, float) and type(right) in (int, float):
+    pending = [(left, right)]
+    compared_containers: set[tuple[int, int]] = set()
+    while pending:
+        current_left, current_right = pending.pop()
+        if type(current_left) in (int, float) and type(current_right) in (int, float):
+            try:
+                if not bool(current_left == current_right):
+                    return False
+            except Exception:
+                if current_left is not current_right:
+                    return False
+            continue
+        if type(current_left) is not type(current_right):
+            return False
+        if isinstance(current_left, dict):
+            if set(current_left) != set(current_right):
+                return False
+            pair = (id(current_left), id(current_right))
+            if pair in compared_containers:
+                continue
+            compared_containers.add(pair)
+            pending.extend(
+                (current_left[key], current_right[key]) for key in current_left
+            )
+            continue
+        if isinstance(current_left, list):
+            if len(current_left) != len(current_right):
+                return False
+            pair = (id(current_left), id(current_right))
+            if pair in compared_containers:
+                continue
+            compared_containers.add(pair)
+            pending.extend(zip(current_left, current_right))
+            continue
         try:
-            return bool(left == right)
+            if not bool(current_left == current_right):
+                return False
         except Exception:
-            return left is right
-    if type(left) is not type(right):
-        return False
-    if isinstance(left, dict):
-        return set(left) == set(right) and all(_json_equal(left[key], right[key]) for key in left)
-    if isinstance(left, list):
-        return len(left) == len(right) and all(_json_equal(a, b) for a, b in zip(left, right))
-    try:
-        return bool(left == right)
-    except Exception:
-        return left is right
+            if current_left is not current_right:
+                return False
+    return True
 
 
 def _is_nonnegative_integer(value: Any) -> bool:
@@ -95,16 +121,113 @@ def _decode_pointer_token(token: str) -> str | None:
     return "".join(result)
 
 
-def _resolve_ref(root: dict[str, Any], reference: Any) -> dict[str, Any] | None:
+_NAMED_SUBSCHEMA_KEYWORDS = ("$defs", "properties")
+_SINGLE_SUBSCHEMA_KEYWORDS = ("items", "if", "then", "else")
+_ARRAY_SUBSCHEMA_KEYWORDS = ("allOf", "anyOf", "oneOf")
+_SchemaLocation = tuple[str, ...]
+
+
+def _schema_locations(root: dict[str, Any]) -> dict[_SchemaLocation, dict[str, Any]]:
+    locations: dict[_SchemaLocation, dict[str, Any]] = {}
+    pending: list[tuple[_SchemaLocation, Any, frozenset[int]]] = [
+        ((), root, frozenset())
+    ]
+    while pending:
+        location, node, ancestors = pending.pop()
+        if not isinstance(node, dict):
+            continue
+        locations[location] = node
+        if id(node) in ancestors:
+            continue
+        next_ancestors = ancestors | {id(node)}
+
+        for keyword in _NAMED_SUBSCHEMA_KEYWORDS:
+            children = node.get(keyword)
+            if not isinstance(children, dict):
+                continue
+            for name, child in reversed(tuple(children.items())):
+                if isinstance(name, str) and isinstance(child, dict):
+                    pending.append((location + (keyword, name), child, next_ancestors))
+
+        for keyword in _SINGLE_SUBSCHEMA_KEYWORDS:
+            child = node.get(keyword)
+            if isinstance(child, dict):
+                pending.append((location + (keyword,), child, next_ancestors))
+
+        for keyword in _ARRAY_SUBSCHEMA_KEYWORDS:
+            children = node.get(keyword)
+            if not isinstance(children, list):
+                continue
+            for index in range(len(children) - 1, -1, -1):
+                child = children[index]
+                if isinstance(child, dict):
+                    pending.append((
+                        location + (keyword, str(index)), child, next_ancestors
+                    ))
+    return locations
+
+
+def _pointer_tokens(reference: Any) -> _SchemaLocation | None:
     if not isinstance(reference, str) or not reference.startswith("#/"):
         return None
-    current: Any = root
+    tokens: list[str] = []
     for raw_token in reference[2:].split("/"):
         token = _decode_pointer_token(raw_token)
-        if token is None or not isinstance(current, dict) or token not in current:
+        if token is None:
             return None
-        current = current[token]
-    return current if isinstance(current, dict) else None
+        tokens.append(token)
+    return tuple(tokens)
+
+
+def _array_index(token: str, length: int) -> int | None:
+    if not token or (token != "0" and token[0] == "0"):
+        return None
+    index = 0
+    for character in token:
+        if character not in "0123456789":
+            return None
+        index = index * 10 + ord(character) - ord("0")
+        if index >= length:
+            return None
+    return index
+
+
+def _resolve_ref_location(
+    root: dict[str, Any],
+    reference: Any,
+    locations: dict[_SchemaLocation, dict[str, Any]] | None = None,
+) -> tuple[_SchemaLocation, dict[str, Any]] | None:
+    tokens = _pointer_tokens(reference)
+    if tokens is None:
+        return None
+    current: Any = root
+    for token in tokens:
+        if isinstance(current, dict):
+            if token not in current:
+                return None
+            current = current[token]
+            continue
+        if isinstance(current, list):
+            index = _array_index(token, len(current))
+            if index is None:
+                return None
+            current = current[index]
+            continue
+        return None
+    schema_locations = locations if locations is not None else _schema_locations(root)
+    target = schema_locations.get(tokens)
+    if target is None or target is not current:
+        return None
+    return tokens, target
+
+
+def _resolve_ref(
+    root: dict[str, Any],
+    reference: Any,
+    locations: dict[_SchemaLocation, dict[str, Any]] | None = None,
+) -> dict[str, Any] | None:
+    resolved = _resolve_ref_location(root, reference, locations)
+    return resolved[1] if resolved is not None else None
 
 
 def _schema_shape_issues(
@@ -113,6 +236,7 @@ def _schema_shape_issues(
     path: str,
     *,
     ancestors: frozenset[int],
+    locations: dict[_SchemaLocation, dict[str, Any]],
 ) -> list[Issue]:
     if not isinstance(node, dict):
         return [_issue(path, "schema node must be an object", keyword=True)]
@@ -140,14 +264,15 @@ def _schema_shape_issues(
                 if not isinstance(name, str) or not name:
                     issues.append(_issue(definition_path, "definition name must be a non-empty string", keyword=True))
                 issues.extend(_schema_shape_issues(
-                    definition, root, definition_path, ancestors=next_ancestors
+                    definition, root, definition_path, ancestors=next_ancestors,
+                    locations=locations,
                 ))
 
     if "$ref" in node:
         reference = node["$ref"]
         if not isinstance(reference, str) or not reference.startswith("#/$defs/"):
             issues.append(_issue(_child(path, "$ref"), "$ref must be a local #/$defs pointer", keyword=True))
-        elif _resolve_ref(root, reference) is None:
+        elif _resolve_ref(root, reference, locations) is None:
             issues.append(_issue(_child(path, "$ref"), f"unresolved $ref: {reference}", keyword=True))
 
     if "type" in node and (not isinstance(node["type"], str) or node["type"] not in JSON_TYPES):
@@ -172,7 +297,8 @@ def _schema_shape_issues(
                 if not isinstance(name, str) or not name:
                     issues.append(_issue(property_path, "property name must be a non-empty string", keyword=True))
                 issues.extend(_schema_shape_issues(
-                    definition, root, property_path, ancestors=next_ancestors
+                    definition, root, property_path, ancestors=next_ancestors,
+                    locations=locations,
                 ))
 
     if "additionalProperties" in node and type(node["additionalProperties"]) is not bool:
@@ -217,7 +343,8 @@ def _schema_shape_issues(
 
     if "items" in node:
         issues.extend(_schema_shape_issues(
-            node["items"], root, _child(path, "items"), ancestors=next_ancestors
+            node["items"], root, _child(path, "items"), ancestors=next_ancestors,
+            locations=locations,
         ))
     if "uniqueItems" in node and type(node["uniqueItems"]) is not bool:
         issues.append(_issue(_child(path, "uniqueItems"), "uniqueItems must be boolean", keyword=True))
@@ -231,13 +358,15 @@ def _schema_shape_issues(
             continue
         for index, branch in enumerate(branches):
             issues.extend(_schema_shape_issues(
-                branch, root, _item(_child(path, keyword), index), ancestors=next_ancestors
+                branch, root, _item(_child(path, keyword), index),
+                ancestors=next_ancestors, locations=locations,
             ))
 
     for keyword in ("if", "then", "else"):
         if keyword in node:
             issues.extend(_schema_shape_issues(
-                node[keyword], root, _child(path, keyword), ancestors=next_ancestors
+                node[keyword], root, _child(path, keyword),
+                ancestors=next_ancestors, locations=locations,
             ))
     if ("then" in node or "else" in node) and "if" not in node:
         issues.append(_issue(path, "then/else requires if", keyword=True))
@@ -245,75 +374,70 @@ def _schema_shape_issues(
     return issues
 
 
-def _definition_ref_graph(schema: dict[str, Any]) -> dict[str, set[str]]:
-    definitions = schema.get("$defs")
-    if not isinstance(definitions, dict):
-        return {}
-    graph = {name: set() for name in definitions}
-
-    def collect(node: Any) -> Iterable[str]:
-        if not isinstance(node, dict):
-            return
-        reference = node.get("$ref")
-        if isinstance(reference, str) and reference.startswith("#/$defs/"):
-            token = reference[len("#/$defs/"):]
-            if "/" not in token:
-                decoded = _decode_pointer_token(token)
-                if decoded is not None:
-                    yield decoded
-
-        for keyword in ("$defs", "properties"):
-            children = node.get(keyword)
-            if isinstance(children, dict):
-                for child in children.values():
-                    yield from collect(child)
-        for keyword in ("items", "if", "then", "else"):
-            child = node.get(keyword)
-            if isinstance(child, dict):
-                yield from collect(child)
-        for keyword in ("allOf", "anyOf", "oneOf"):
-            children = node.get(keyword)
-            if isinstance(children, list):
-                for child in children:
-                    yield from collect(child)
-
-    for name, definition in definitions.items():
-        graph[name].update(target for target in collect(definition) if target in graph)
-    return graph
+def _location_path(location: _SchemaLocation) -> str:
+    result = "$"
+    for index, token in enumerate(location):
+        if index and location[index - 1] in _ARRAY_SUBSCHEMA_KEYWORDS and token.isdigit():
+            result += f"[{token}]"
+        else:
+            result += f".{token}"
+    return result
 
 
-def _reference_cycle_issues(schema: dict[str, Any]) -> list[Issue]:
-    graph = _definition_ref_graph(schema)
-    visited: set[str] = set()
-    active: list[str] = []
-    active_set: set[str] = set()
+def _reference_cycle_issues(
+    schema: dict[str, Any],
+    locations: dict[_SchemaLocation, dict[str, Any]],
+) -> list[Issue]:
+    graph: dict[_SchemaLocation, set[_SchemaLocation]] = {
+        location: set() for location in locations
+    }
+    for location, node in locations.items():
+        if "$ref" not in node:
+            continue
+        resolved = _resolve_ref_location(schema, node["$ref"], locations)
+        if resolved is not None:
+            graph[location].add(resolved[0])
+
+    state: dict[_SchemaLocation, int] = {}
     issues: list[Issue] = []
-
-    def visit(name: str) -> None:
-        if name in active_set:
-            cycle = active[active.index(name):] + [name]
-            issues.append(_issue(
-                f"$.$defs.{name}",
-                "cyclic $ref chain: " + " -> ".join(cycle),
-                keyword=True,
-            ))
-            return
-        if name in visited:
-            return
-        visited.add(name)
-        active.append(name)
-        active_set.add(name)
-        for target in sorted(graph[name]):
-            visit(target)
-        active.pop()
-        active_set.remove(name)
-
-    for name in sorted(graph):
-        visit(name)
+    for start in sorted(graph):
+        if state.get(start, 0) != 0:
+            continue
+        state[start] = 1
+        active = [start]
+        active_indexes = {start: 0}
+        stack: list[tuple[_SchemaLocation, Any]] = [
+            (start, iter(sorted(graph[start])))
+        ]
+        while stack:
+            current, targets = stack[-1]
+            try:
+                target = next(targets)
+            except StopIteration:
+                stack.pop()
+                state[current] = 2
+                active_indexes.pop(current, None)
+                active.pop()
+                continue
+            target_state = state.get(target, 0)
+            if target_state == 0:
+                state[target] = 1
+                active_indexes[target] = len(active)
+                active.append(target)
+                stack.append((target, iter(sorted(graph[target]))))
+                continue
+            if target_state == 1:
+                cycle = active[active_indexes[target]:] + [target]
+                issues.append(_issue(
+                    _location_path(target),
+                    "cyclic $ref chain: "
+                    + " -> ".join(_location_path(location) for location in cycle),
+                    keyword=True,
+                ))
     return issues
 
 
-def validate_schema_document(schema: Any) -> tuple[Issue, ...]:
+def _validate_schema_document(schema: Any) -> tuple[Issue, ...]:
     if not isinstance(schema, dict):
         return (_issue("$", "schema document must be an object", keyword=True),)
     issues: list[Issue] = []
@@ -323,15 +447,35 @@ def validate_schema_document(schema: Any) -> tuple[Issue, ...]:
         issues.append(_issue("$.$id", f"$id must equal {SCHEMA_ID}", keyword=True))
     if not isinstance(schema.get("$defs"), dict) or not schema.get("$defs"):
         issues.append(_issue("$.$defs", "$defs must be a non-empty object", keyword=True))
-    issues.extend(_schema_shape_issues(schema, schema, "$", ancestors=frozenset()))
+    locations = _schema_locations(schema)
+    issues.extend(_schema_shape_issues(
+        schema, schema, "$", ancestors=frozenset(), locations=locations
+    ))
     if not issues:
-        issues.extend(_reference_cycle_issues(schema))
+        issues.extend(_reference_cycle_issues(schema, locations))
     return _ordered(issues)
+
+
+def validate_schema_document(schema: Any) -> tuple[Issue, ...]:
+    try:
+        return _validate_schema_document(schema)
+    except RecursionError:
+        return (_issue(
+            "$",
+            "schema exceeds the supported nesting or evaluation depth",
+            keyword=True,
+        ),)
 
 
 def load_schema(path: Path) -> dict[str, Any]:
     try:
         value = load_canonical_value(path)
+    except RecursionError:
+        raise KintsugiError(
+            "KIN-E-JSON",
+            str(path),
+            "JSON exceeds the supported nesting depth",
+        ) from None
     except UnicodeError:
         raise KintsugiError(
             "KIN-E-CANONICAL",
@@ -363,7 +507,20 @@ def _evaluate(
     path: str,
     *,
     stack: frozenset[tuple[int, int]],
+    locations: dict[_SchemaLocation, dict[str, Any]],
 ) -> list[Issue]:
+    while len(schema) == 1 and "$ref" in schema:
+        pair = (id(schema), id(instance))
+        if pair in stack:
+            return [_issue(path, "cyclic instance/schema evaluation")]
+        stack = stack | {pair}
+        target = _resolve_ref(root, schema["$ref"], locations)
+        if target is None:
+            return [_issue(
+                path, f"unresolved $ref: {schema['$ref']}", keyword=True
+            )]
+        schema = target
+
     pair = (id(schema), id(instance))
     if pair in stack:
         return [_issue(path, "cyclic instance/schema evaluation")]
@@ -371,10 +528,12 @@ def _evaluate(
     issues: list[Issue] = []
 
     if "$ref" in schema:
-        target = _resolve_ref(root, schema["$ref"])
+        target = _resolve_ref(root, schema["$ref"], locations)
         if target is None:
             return [_issue(path, f"unresolved $ref: {schema['$ref']}", keyword=True)]
-        issues.extend(_evaluate(target, instance, root, path, stack=next_stack))
+        issues.extend(_evaluate(
+            target, instance, root, path, stack=next_stack, locations=locations
+        ))
 
     expected_type = schema.get("type")
     type_ok = expected_type is None or _type_matches(expected_type, instance)
@@ -396,7 +555,8 @@ def _evaluate(
         if isinstance(properties, dict):
             for key in sorted(set(instance) & set(properties)):
                 issues.extend(_evaluate(
-                    properties[key], instance[key], root, _child(path, key), stack=next_stack
+                    properties[key], instance[key], root, _child(path, key),
+                    stack=next_stack, locations=locations,
                 ))
             if schema.get("additionalProperties") is False:
                 for key in sorted(set(instance) - set(properties), key=str):
@@ -414,7 +574,8 @@ def _evaluate(
         if "items" in schema:
             for index, value in enumerate(instance):
                 issues.extend(_evaluate(
-                    schema["items"], value, root, _item(path, index), stack=next_stack
+                    schema["items"], value, root, _item(path, index),
+                    stack=next_stack, locations=locations,
                 ))
 
     if type(instance) is str:
@@ -430,11 +591,17 @@ def _evaluate(
 
     for keyword in ("allOf",):
         for branch in schema.get(keyword, []):
-            issues.extend(_evaluate(branch, instance, root, path, stack=next_stack))
+            issues.extend(_evaluate(
+                branch, instance, root, path, stack=next_stack,
+                locations=locations,
+            ))
 
     if "anyOf" in schema:
         matches = sum(
-            not _evaluate(branch, instance, root, path, stack=next_stack)
+            not _evaluate(
+                branch, instance, root, path, stack=next_stack,
+                locations=locations,
+            )
             for branch in schema["anyOf"]
         )
         if matches == 0:
@@ -442,17 +609,26 @@ def _evaluate(
 
     if "oneOf" in schema:
         matches = sum(
-            not _evaluate(branch, instance, root, path, stack=next_stack)
+            not _evaluate(
+                branch, instance, root, path, stack=next_stack,
+                locations=locations,
+            )
             for branch in schema["oneOf"]
         )
         if matches != 1:
             issues.append(_issue(path, f"value matches {matches} oneOf branches; expected exactly one"))
 
     if "if" in schema:
-        condition_matches = not _evaluate(schema["if"], instance, root, path, stack=next_stack)
+        condition_matches = not _evaluate(
+            schema["if"], instance, root, path, stack=next_stack,
+            locations=locations,
+        )
         selected = schema.get("then") if condition_matches else schema.get("else")
         if selected is not None:
-            issues.extend(_evaluate(selected, instance, root, path, stack=next_stack))
+            issues.extend(_evaluate(
+                selected, instance, root, path, stack=next_stack,
+                locations=locations,
+            ))
 
     return issues
 
@@ -465,7 +641,16 @@ def _validate_definition(schema: Any, name: str, instance: Any) -> tuple[Issue, 
     definitions = schema["$defs"]
     if not isinstance(name, str) or name not in definitions:
         return (_issue("definition", f"unknown schema definition: {name}"),)
-    return _ordered(_evaluate(definitions[name], instance, schema, "$", stack=frozenset()))
+    try:
+        return _ordered(_evaluate(
+            definitions[name], instance, schema, "$", stack=frozenset(),
+            locations=_schema_locations(schema),
+        ))
+    except RecursionError:
+        return (_issue(
+            "$",
+            "instance/schema exceeds the supported nesting or evaluation depth",
+        ),)
 
 
 def validate_schema_instance(schema: Any, role: str, instance: Any) -> tuple[Issue, ...]:

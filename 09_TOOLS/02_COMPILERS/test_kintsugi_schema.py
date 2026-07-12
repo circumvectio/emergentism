@@ -291,6 +291,147 @@ class FrozenSchemaArtifactTests(SchemaAssertions):
             (),
         )
 
+    def test_local_refs_resolve_only_to_declared_subschema_locations(self):
+        referenced = copy.deepcopy(self.schema)
+        referenced["$defs"].update({
+            "allContainer": {"allOf": [{"type": "string"}]},
+            "allTarget": {"$ref": "#/$defs/allContainer/allOf/0"},
+            "anyContainer": {"anyOf": [{"type": "string"}]},
+            "anyTarget": {"$ref": "#/$defs/anyContainer/anyOf/0"},
+            "oneContainer": {"oneOf": [{"type": "string"}]},
+            "oneTarget": {"$ref": "#/$defs/oneContainer/oneOf/0"},
+            "itemsContainer": {"items": {"type": "string"}},
+            "itemsTarget": {"$ref": "#/$defs/itemsContainer/items"},
+            "nestedDefsContainer": {
+                "$defs": {"inner": {"type": "string"}},
+            },
+            "nestedDefsTarget": {
+                "$ref": "#/$defs/nestedDefsContainer/$defs/inner",
+            },
+            "conditionalContainer": {
+                "if": {"type": "string"},
+                "then": {"type": "string"},
+                "else": {"type": "string"},
+            },
+            "ifTarget": {"$ref": "#/$defs/conditionalContainer/if"},
+            "thenTarget": {"$ref": "#/$defs/conditionalContainer/then"},
+            "elseTarget": {"$ref": "#/$defs/conditionalContainer/else"},
+            "escapedContainer": {
+                "properties": {"p/q~r": {"type": "string"}},
+            },
+            "escapedTarget": {
+                "$ref": "#/$defs/escapedContainer/properties/p~1q~0r",
+            },
+        })
+
+        self.assertEqual(kernel.validate_schema_document(referenced), ())
+        for name in (
+            "allTarget",
+            "anyTarget",
+            "oneTarget",
+            "itemsTarget",
+            "nestedDefsTarget",
+            "ifTarget",
+            "thenTarget",
+            "elseTarget",
+            "escapedTarget",
+        ):
+            with self.subTest(name=name):
+                self.assertEqual(
+                    kernel.validate_named_definition(referenced, name, "valid"), ()
+                )
+                self.assertSchemaFailure(
+                    kernel.validate_named_definition(referenced, name, 1)
+                )
+
+        for token in ("00", "٠"):
+            with self.subTest(array_token=token):
+                invalid_index = copy.deepcopy(referenced)
+                invalid_index["$defs"]["badIndex"] = {
+                    "$ref": f"#/$defs/allContainer/allOf/{token}",
+                }
+                self.assertSchemaFailure(
+                    kernel.validate_schema_document(invalid_index)
+                )
+
+    def test_refs_cannot_reinterpret_const_or_enum_data_as_subschemas(self):
+        for name, literal, reference in (
+            (
+                "literalConst",
+                {"const": {"payload": {"format": "forbidden"}}},
+                "#/$defs/literalConst/const/payload",
+            ),
+            (
+                "literalEnum",
+                {"enum": [{"payload": {"format": "forbidden"}}]},
+                "#/$defs/literalEnum/enum/0/payload",
+            ),
+        ):
+            with self.subTest(name=name):
+                opaque = copy.deepcopy(self.schema)
+                opaque["$defs"].update({
+                    name: literal,
+                    "smuggled": {"$ref": reference},
+                })
+                issues = kernel.validate_schema_document(opaque)
+                self.assertSchemaFailure(issues)
+                self.assertTrue(any("unresolved $ref" in issue.message for issue in issues))
+                self.assertSchemaFailure(
+                    kernel.validate_named_definition(opaque, "smuggled", None)
+                )
+
+    def test_nested_pointer_self_cycle_is_rejected(self):
+        cyclic = copy.deepcopy(self.schema)
+        cyclic["$defs"]["nestedCycle"] = {
+            "properties": {
+                "x": {"$ref": "#/$defs/nestedCycle/properties/x"},
+            },
+        }
+
+        issues = kernel.validate_schema_document(cyclic)
+        self.assertSchemaFailure(issues)
+        self.assertTrue(any("cyclic $ref chain" in issue.message for issue in issues))
+
+    def test_thousand_definition_acyclic_ref_chain_is_total(self):
+        chain = {
+            "$schema": "https://json-schema.org/draft/2020-12/schema",
+            "$id": kernel.SCHEMA_ID,
+            "$defs": {},
+        }
+        for index in range(1000):
+            chain["$defs"][f"x{index}"] = (
+                {"$ref": f"#/$defs/x{index + 1}"}
+                if index < 999
+                else {"type": "null"}
+            )
+
+        self.assertEqual(kernel.validate_schema_document(chain), ())
+        self.assertEqual(kernel.validate_named_definition(chain, "x0", None), ())
+        with tempfile.TemporaryDirectory() as directory:
+            schema_path = Path(directory) / "long-ref-chain.json"
+            schema_path.write_bytes(kernel.canonical_json_bytes(chain))
+            self.assertEqual(kernel.load_schema(schema_path), chain)
+
+    def test_deep_json_load_failure_is_typed_and_stable(self):
+        payload = (
+            b'{"$defs":{"x":{"const":' + b'[' * 1000 + b'null' + b']' * 1000
+            + b'}},"$id":"https://emergentism.org/schema/kintsugi/1.0.0",'
+              b'"$schema":"https://json-schema.org/draft/2020-12/schema"}\n'
+        )
+
+        with tempfile.TemporaryDirectory() as directory:
+            schema_path = Path(directory) / "deep-schema.json"
+            schema_path.write_bytes(payload)
+            for _ in range(2):
+                with self.assertRaises(kernel.KintsugiError) as caught:
+                    kernel.load_schema(schema_path)
+                self.assertIn(caught.exception.code, {"KIN-E-JSON", "KIN-E-CANONICAL"})
+                self.assertEqual(caught.exception.path, str(schema_path))
+                self.assertEqual(
+                    caught.exception.message,
+                    "JSON exceeds the supported nesting depth",
+                )
+
     def test_escaped_lone_surrogate_fails_with_typed_canonical_diagnostic(self):
         payload = (
             b'{"$defs":{"x":{"const":"\\ud800"}},'
@@ -389,6 +530,27 @@ class RestrictedEvaluatorTests(SchemaAssertions):
         duplicate_enum = copy.deepcopy(numeric)
         duplicate_enum["$defs"]["numericEnum"]["enum"] = [1, 1.0]
         self.assertSchemaFailure(kernel.validate_schema_document(duplicate_enum))
+
+    def test_deep_const_equality_is_iterative(self):
+        expected = None
+        for _ in range(400):
+            expected = [expected]
+        deep_const = copy.deepcopy(self.schema)
+        deep_const["$defs"]["deepConst"] = {"const": expected}
+
+        self.assertEqual(kernel.validate_schema_document(deep_const), ())
+        self.assertEqual(
+            kernel.validate_named_definition(
+                deep_const, "deepConst", copy.deepcopy(expected)
+            ),
+            (),
+        )
+        different = False
+        for _ in range(400):
+            different = [different]
+        self.assertSchemaFailure(
+            kernel.validate_named_definition(deep_const, "deepConst", different)
+        )
 
     def test_instance_validation_is_total_and_sorted(self):
         malformed = [None, True, 1, "instance", [], {}, {"schemaVersion": 1}, {"x": object()}]
