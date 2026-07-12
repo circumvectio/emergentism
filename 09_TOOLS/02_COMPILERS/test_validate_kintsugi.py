@@ -134,6 +134,27 @@ class ComparisonTests(unittest.TestCase):
         ), [])
 
 class RunnerTests(unittest.TestCase):
+    def test_runner_keeps_failure_node_ids_relative_to_requested_root(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "test_probe.py").write_text(
+                "def test_fails():\n    assert False\n",
+                encoding="utf-8",
+            )
+            collection = v.run_process(v.COLLECT_COMMAND, root)
+            execution = v.run_process(v.BASELINE_COMMAND, root)
+
+        self.assertEqual(collection.returncode, 0, collection.stderr)
+        self.assertEqual(execution.returncode, 1, execution.stderr)
+        self.assertEqual(
+            v.parse_collected_nodes(collection.stdout + collection.stderr),
+            {"test_probe.py::test_fails"},
+        )
+        self.assertEqual(
+            v.parse_failed_nodes(execution.stdout + execution.stderr),
+            ["test_probe.py::test_fails"],
+        )
+
     @mock.patch.object(v.subprocess, "run")
     def test_runner_sanitizes_hostile_pytest_environment_without_writes(self, run):
         run.return_value = subprocess.CompletedProcess([], 0, "", "")
@@ -154,7 +175,7 @@ class RunnerTests(unittest.TestCase):
                     "PYTHONDONTWRITEBYTECODE",
                 )
             }, {
-                "PYTEST_ADDOPTS": "-c /dev/null -p no:cacheprovider",
+                "PYTEST_ADDOPTS": "-c /dev/null --rootdir=. -p no:cacheprovider",
                 "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
                 "PYTHONDONTWRITEBYTECODE": "1",
             })
