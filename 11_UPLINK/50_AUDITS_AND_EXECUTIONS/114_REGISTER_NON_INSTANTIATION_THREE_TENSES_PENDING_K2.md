@@ -35,8 +35,10 @@ The dead man's will did not *go* anywhere. Same error, three tenses:
 **not-yet / mis-asked / no-longer.**
 
 New content of this receipt (beyond the three parents): the three are one error
-type; the taxonomy is exhaustive over a register's lifecycle (before emergence,
-during instantiation-interrogated-from-below, after de-instantiation).
+type; the three tenses partition a register's temporal lifecycle (before emergence,
+during instantiation-interrogated-from-below, after de-instantiation) — read as
+a *categorization* of the same topology error across its lifecycle, **not** as a
+*closure* of the lifecycle (per the Open Canon Covenant: no completeness claim).
 
 ## 2. Where the engine meets the ladder `[I]`
 
