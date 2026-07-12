@@ -69,6 +69,15 @@
           "value": "public, max-age=31536000, immutable"
         }
       ]
+    },
+    {
+      "source": "/:wing(papers|canon|foundations|trinity|formal|paradox|memetic|rosettad|rosetta|operators|will|value|ground|sacred|method|meta|axiology|epistemology|methodology|cosmology|ontology|theology|teleology|dasein|complete-ontology|geometric-ontology|burrisphere|suda-notes|game|atlas|soul-loop|r)/:path*",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
     }
   ]
 }

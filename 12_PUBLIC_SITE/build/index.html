@@ -95,9 +95,9 @@
     </div>
 
     <div class="pipeline-note">
-      <p><strong>Evidence tier [B]:</strong> These scripts are committed to the repository at
-      <code>01_EMERGENTISM/12_PUBLIC_SITE/_generator/</code>. Their file hashes are logged in the build receipt.
-      No claim about the pipeline requires trust — only <code>git show</code>.</p>
+      <p><span class="tier tier-s">[S]</span> These scripts are committed to the repository at the root of
+      <code>12_PUBLIC_SITE/</code> (<code>generate_public_library.py</code>, <code>predeploy_check.py</code>,
+      <code>build_book.py</code>). No claim about the pipeline requires trust — only <code>git show</code>.</p>
     </div>
   </div>
 </section>
@@ -146,23 +146,22 @@
       <div class="gate-card">
         <span class="gate-icon" aria-hidden="true">⚡</span>
         <h3>Build receipt</h3>
-        <p>The check emits a signed receipt: commit hash, timestamp, file count, tier distribution.
-        The receipt is embedded in every page footer. [B]</p>
+        <p>A signed, resolvable receipt (commit hash, timestamp, file count, tier distribution) is the
+        intended end-state &mdash; not yet emitted by the gate. <span class="tier tier-c">[C]</span> planned.</p>
       </div>
     </div>
 
     <div class="gate-console">
       <div class="console-header">
-        <span>predeploy_check.py — sample output</span>
+        <span>predeploy_check.py — illustrative output (your run differs)</span>
       </div>
-      <pre class="console-body"><code>[PASS]  287 files with valid evidence tiers
+      <pre class="console-body"><code>[PASS]  All public pages carry evidence-tier markers
 [PASS]  0 external resource references
 [PASS]  0 broken internal links
-[PASS]  12 Kintsugi seams verified
-[PASS]  0 draft files in public build
-[INFO]  Tier distribution: A=14  B=67  S=89  I=71  D=31  C=15
-[INFO]  Build receipt: 7a3f9e2 — 2026-07-14T13:40Z
-<span class="console-ok">[OK]    All gates passed. Deploy authorized.</span></code></pre>
+[PASS]  publication boundary intact (.vercelignore)
+[PASS]  generated-library chrome contract holds
+<span class="console-ok">[OK]    All gates passed. Deploy authorized.</span>
+<span class="cmd-comment"># Illustrative — run it yourself for the real, dated output.</span></code></pre>
     </div>
   </div>
 </section>
@@ -252,51 +251,47 @@
         <span class="step-num">1</span>
         <div class="step-body">
           <h3>Clone the repository</h3>
-          <pre><code>git clone https://github.com/yvesrb/magnum-opus.git
+          <pre><code>git clone https://github.com/circumvectio/emergentism.git
+cd emergentism/12_PUBLIC_SITE
 <span class="cmd-comment"># Or fork first, then clone your fork</span></code></pre>
         </div>
       </div>
       <div class="fork-step">
         <span class="step-num">2</span>
         <div class="step-body">
-          <h3>Install dependencies</h3>
-          <pre><code>cd magnum-opus/01_EMERGENTISM/12_PUBLIC_SITE/_generator
-pip install -r requirements.txt
-<span class="cmd-comment"># Only Python 3.11+ and standard packages: markdown, PyYAML, jinja2</span></code></pre>
+          <h3>Run the gate — zero dependencies</h3>
+          <pre><code>python3 predeploy_check.py
+<span class="cmd-comment"># Pure standard-library Python. No install, no packages to trust.</span>
+<span class="cmd-comment"># 10 gates: link integrity, tier markers, no external resources,</span>
+<span class="cmd-comment"># publication boundary. Exits nonzero on any failure.</span></code></pre>
         </div>
       </div>
       <div class="fork-step">
         <span class="step-num">3</span>
         <div class="step-body">
-          <h3>Run the generator</h3>
-          <pre><code>python generate_public_library.py
-python build_book.py
-python build_atlas_index.py
-<span class="cmd-comment"># Output lands in _STAGING_COMPASS_RESTRUCTURE/</span></code></pre>
+          <h3>Regenerate the library (optional)</h3>
+          <pre><code>pip install markdown        <span class="cmd-comment"># the one dependency</span>
+python3 generate_public_library.py --force
+<span class="cmd-comment"># Output lands in _STAGING_COMPASS_RESTRUCTURE/. --force is</span>
+<span class="cmd-comment"># required: the library is frozen with hand-patched tier fixes.</span></code></pre>
         </div>
       </div>
       <div class="fork-step">
         <span class="step-num">4</span>
         <div class="step-body">
-          <h3>Run the gate</h3>
-          <pre><code>python predeploy_check.py
-<span class="cmd-comment"># Must pass before deploy. If it fails, the build is rejected.</span></code></pre>
-        </div>
-      </div>
-      <div class="fork-step">
-        <span class="step-num">5</span>
-        <div class="step-body">
-          <h3>Verify the output</h3>
-          <pre><code>ls _STAGING_COMPASS_RESTRUCTURE/
-<span class="cmd-comment"># Should contain: compass/  test/  halahala/  build/  exit/  index.html</span></code></pre>
+          <h3>Diff against what is served</h3>
+          <pre><code>diff -r . &lt;(curl -s ...)   <span class="cmd-comment"># or just read the source you cloned</span>
+<span class="cmd-comment"># The page you are reading is in this repo. Nothing is hidden.</span></code></pre>
         </div>
       </div>
     </div>
 
     <div class="fork-note">
-      <p><strong>Evidence tier [B]:</strong> The commands above are copied from the actual generator README at
-      <code>_generator/README.md</code>. If they fail, that is a bug — file an issue or submit a pull request.
-      The repository is public. The build is reproducible.</p>
+      <p><span class="tier tier-s">[S]</span> The verify step (2) is pure standard-library Python: no package
+      manager, no build chain, nothing to trust beyond your own terminal. The repository goes public at launch.
+      <strong>If any command above fails — a 404 on the clone, a missing script, a diff that does not reconcile —
+      that is not a footnote, it is an audit finding, and it is worth reporting.</strong> The openness claim is only
+      as good as this block staying true.</p>
     </div>
   </div>
 </section>
@@ -304,11 +299,13 @@ python build_atlas_index.py
 <!-- ── 6. BUILD RECEIPT ──────────────────────────────────────────────────── -->
 <section class="content-section receipt-section" id="receipt">
   <div class="section-inner">
-    <p class="section-kicker">Evidence tier [B] — generated artifact</p>
-    <h2>Build Receipt</h2>
+    <p class="section-kicker"><span class="tier tier-c">[C]</span> — illustrative example, not a live artifact</p>
+    <h2>What a build receipt looks like</h2>
     <p class="lead">
-      This receipt is embedded in every page by the generator. It is not hand-edited.
-      If the commit hash does not resolve in the repository, the build is suspect.
+      <strong>This is a mock, shown for shape — your run will differ, and these numbers are not real.</strong>
+      <code>predeploy_check.py</code> does not currently emit a signed receipt, commit hash, or tier-distribution
+      table; wiring the generator to stamp a resolvable one at build time is an open work order. Shown here so you
+      know the form a receipt should take — and so this page does not claim a liveness it does not have.
     </p>
 
     <div class="receipt-card">
@@ -340,10 +337,10 @@ python build_atlas_index.py
       </div>
       <div class="receipt-provenance">
         <p>
-          <strong>Provenance:</strong> Generated by <code>build_receipt.py</code> at 2026-07-14T13:40Z
-          from commit <code>7a3f9e2</code> on branch <code>main</code>.
-          Signed by Executor (L4 Kṣatriya) agent <code>Arjuna-7f3a</code>.
-          Human review: pending K2 countersign.
+          <strong>Provenance (illustrative):</strong> the shape a receipt would take — generator name, UTC
+          timestamp, a commit hash that resolves via <code>git show</code>, the Executor tier that produced it,
+          and a distinct human-countersign step. None of the values above are real; when the generator emits a
+          live receipt, this block is replaced by it.
         </p>
       </div>
     </div>
@@ -369,9 +366,7 @@ python build_atlas_index.py
       <a href="../exit/">Exit</a>
     </nav>
     <div class="footer-receipt" id="footerReceipt">
-      <span>Build: 7a3f9e2 — 2026-07-14T13:40Z</span>
-      <span class="footer-sep">·</span>
-      <span>287 files · Gate: PASS</span>
+      <span>Gate: run <code>python3 predeploy_check.py</code> for the real, dated result</span>
     </div>
     <p class="footer-legal">
       Emergentism is an open research framework. No claims are peer-reviewed unless marked.

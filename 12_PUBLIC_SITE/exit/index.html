@@ -6,7 +6,7 @@
   <title>Exit — K4 Grace Exit | Emergentism Compass</title>
   <link rel="stylesheet" href="../assets/css/xai.css">
   <link rel="stylesheet" href="exit.css">
-  <meta name="description" content="K4 Grace Exit: you arrived with everything, you leave with everything. No lock-in. No extraction. The door is marked on the inside.">
+  <meta name="description" content="K4 Grace Exit: you leave with your redeemable assets, your keys, and your portable history. No lock-in. No extraction. The door is marked on the inside.">
 <!-- pwa-chrome -->
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#050505">
@@ -40,7 +40,7 @@
         <p class="kicker">K4 Grace Exit · Constitutional Fence</p>
         <h1>The door is marked on the inside.</h1>
         <p class="subtitle">
-          You arrived with everything. You leave with everything. No lock-in. No extraction. No data held hostage. This is not a promise — it is structural.
+          You leave with your redeemable assets, your keys, and your portable history — everything that is yours. No lock-in. No extraction. No data held hostage. This is not a promise — it is structural.
         </p>
         <p class="evidence">[S] K4 is a constitutional invariant, not a policy. Enforced by architecture, not goodwill.</p>
 
@@ -60,8 +60,8 @@
 
         <div class="k4-cards">
           <div class="k4-card">
-            <span class="card-label">[A] Axiomatic</span>
-            <h3>Leave with everything</h3>
+            <span class="card-label">[S] Structural</span>
+            <h3>Leave with what is yours</h3>
             <p>Your data, your keys, your relationships, your history — all portable. We do not hold your identity. We do not hold your assets. We do not hold your attention by friction.</p>
           </div>
           <div class="k4-card">
@@ -169,22 +169,20 @@
             <span class="console-dot green"></span>
             <span class="console-title">k4-verify — local</span>
           </div>
-          <pre class="console-body"><code><span class="prompt">$</span> <span class="cmd">git clone https://github.com/skyzai/emergentism-build.git</span>
-<span class="prompt">$</span> <span class="cmd">cd emergentism-build && npm install</span>
-<span class="prompt">$</span> <span class="cmd">npm run test:k4</span>
+          <pre class="console-body"><code><span class="prompt">$</span> <span class="cmd">git clone https://github.com/circumvectio/emergentism.git</span>
+<span class="prompt">$</span> <span class="cmd">cd emergentism/12_PUBLIC_SITE</span>
+<span class="prompt">$</span> <span class="cmd">python3 predeploy_check.py</span>   <span class="dim"># pure stdlib; what this site actually runs</span>
 
-<span class="output">  K4 Grace Exit Compliance</span>
-<span class="output">  ─────────────────────────</span>
-<span class="pass">  ✓</span> <span class="output"> export-format-valid     (json-schema/exit-v2.json)</span>
-<span class="pass">  ✓</span> <span class="output"> key-rotation-supported    (ed25519, secp256k1)</span>
-<span class="pass">  ✓</span> <span class="output"> penalty-free-closure      (0 fees, 0 delays)</span>
-<span class="pass">  ✓</span> <span class="output"> data-portability-verified (self-contained archive)</span>
-<span class="pass">  ✓</span> <span class="output"> re-import-roundtrip       (export → import → verify)</span>
+<span class="output">  What you can verify today, from the source:</span>
+<span class="output">  ──────────────────────────────────────────</span>
+<span class="pass">  ✓</span> <span class="output"> the pipeline is public and runs with zero dependencies</span>
+<span class="pass">  ✓</span> <span class="output"> every claim carries an evidence tier (the gate checks it)</span>
+<span class="pass">  ✓</span> <span class="output"> no external resources, no hidden calls (the gate checks it)</span>
 <span class="output"></span>
-<span class="pass">  5 passing</span><span class="output"> (1.2s)</span>
-<span class="output"></span>
-<span class="dim">  Evidence tier: [B] — test assertions are bounded by test coverage.</span>
-<span class="dim">  For [A] certainty, run the tests yourself and inspect the source.</span></code></pre>
+<span class="dim">  An automated K4 suite (export-format, key-rotation, penalty-free</span>
+<span class="dim">  closure, re-import roundtrip) is [C] planned, not yet written.</span>
+<span class="dim">  Until it exists, K4 is a structural [S] commitment you verify by</span>
+<span class="dim">  reading the export path in source — not by a green checkmark here.</span></code></pre>
         </div>
       </div>
     </section>
@@ -216,7 +214,7 @@
           <a href="./" class="fence-card active">
             <span class="fence-symbol">K4</span>
             <span class="fence-name">Grace Exit</span>
-            <span class="fence-desc">You leave with everything. The door is marked on the inside.</span>
+            <span class="fence-desc">You leave with what is yours. The door is marked on the inside.</span>
           </a>
           <a href="../five-plus-one/#a7" class="fence-card">
             <span class="fence-symbol">A7</span>
@@ -238,13 +236,12 @@
     <section class="content-section finale">
       <div class="section-inner">
         <h2>The compass is turnable.</h2>
-        <p class="subtitle">Test it. Break it. Leave with everything. Return any time.</p>
+        <p class="subtitle">Test it. Break it. Leave with what is yours. Return any time.</p>
         <div class="cta-row">
           <a href="../compass/" class="btn-primary">Back to Compass</a>
           <a href="../test/" class="btn-ghost">Run the Tests</a>
           <a href="../build/" class="btn-ghost">Inspect the Build</a>
         </div>
-        <p class="evidence-inline" style="margin-top:32px;">[S] This page is a staging artifact. Deployed version lives at <code>/exit/</code> post-restructure.</p>
       </div>
     </section>
 
@@ -252,8 +249,7 @@
     <footer class="site-footer">
       <div class="footer-inner">
         <p class="footer-meta">
-          <span class="tier">[S]</span> Emergentism Compass · K4 Grace Exit Wing · Staging artifact<br>
-          Built by Rosetta L4 Kṣatriya · exit_k4_wing · 2026-07-14<br>
+          Emergentism · K4 Grace Exit<br>
           <a href="../">← Compass</a> · <a href="../test/">Test →</a> · <a href="../halahala/">Halāhala →</a> · <a href="../build/">Build →</a>
         </p>
       </div>
