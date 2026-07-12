@@ -27,7 +27,7 @@ PYTEST_ENV = MappingProxyType({
         key: value for key, value in os.environ.items()
         if not key.startswith("PYTEST_")
     },
-    "PYTEST_ADDOPTS": "-c /dev/null -p no:cacheprovider",
+    "PYTEST_ADDOPTS": "-c /dev/null --rootdir=. -p no:cacheprovider",
     "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
     "PYTHONDONTWRITEBYTECODE": "1",
 })
