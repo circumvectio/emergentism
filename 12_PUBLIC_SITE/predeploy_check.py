@@ -42,7 +42,8 @@ def get_public_html_files():
     files = []
     for root, dirs, filenames in os.walk(BASE_DIR):
         dirs[:] = [
-            d for d in dirs if d not in {"node_modules", "vendor", ".git", ".vercel", ".next"}
+            d for d in dirs if d not in {"node_modules", "vendor", ".git", ".vercel", ".next",
+                                          "90_ARCHIVE", "_archive", "_STAGING_COMPASS_RESTRUCTURE"}
         ]
         for f in filenames:
             if f.endswith(".html"):
@@ -66,6 +67,10 @@ def extract_base_href(body):
 
 def resolve_link(from_file, href, base_href=None):
     if href.startswith(("http://", "https://", "//", "mailto:", "javascript:", "data:", "#")):
+        return None, "external"
+    # Strip fragment before path resolution (page/#anchor targets the page)
+    href = href.split("#", 1)[0]
+    if not href:
         return None, "external"
     if href.startswith("/"):
         target = os.path.normpath(os.path.join(BASE_DIR, href.lstrip("/")))
@@ -131,7 +136,8 @@ def check_orphans():
     print("\n[3] Orphan page check")
     html_files = get_public_html_files()
     html_set = {os.path.normpath(os.path.join(BASE_DIR, f)) for f in html_files}
-    entry = os.path.normpath(os.path.join(BASE_DIR, "amrita", "index.html"))
+    # Crawl root = the site's actual front door (vercel.json redirects / -> /compass/)
+    entry = os.path.normpath(os.path.join(BASE_DIR, "compass", "index.html"))
     reachable = set()
     queue = [entry] if os.path.exists(entry) else []
     while queue:
@@ -160,9 +166,9 @@ def check_orphans():
     ]
     if orphans:
         for o in orphans:
-            error(f"Not reachable from /amrita/: {o}")
+            error(f"Not reachable from /compass/: {o}")
     else:
-        ok("All public pages reachable from /amrita/")
+        ok("All public pages reachable from /compass/")
     return len(orphans) == 0
 
 def check_required_assets():
