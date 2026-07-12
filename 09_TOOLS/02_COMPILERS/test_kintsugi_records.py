@@ -3,6 +3,7 @@ from __future__ import annotations
 import copy
 import json
 import sys
+import tracemalloc
 import unittest
 from pathlib import Path
 
@@ -12,6 +13,7 @@ ROOT = COMPILER.parents[1]
 sys.path.insert(0, str(COMPILER))
 
 import kintsugi_kernel as kernel
+from kintsugi_kernel import records as records_module
 import kintsugi_test_support as support
 
 
@@ -218,6 +220,62 @@ def one_pass_attestation(core, attempt, artifact, *, kind="LOGIC"):
     return attestation
 
 
+def append_draft_phase(core, phase, *, include_trial=True):
+    """Append a schema-valid pre-review B/C vessel to a Phase-A core."""
+    vessel = support.build_core_data()
+    manifest = copy.deepcopy(vessel["manifests"][0])
+    source = copy.deepcopy(vessel["sources"][0])
+    claim = copy.deepcopy(vessel["claims"][0])
+    trial = copy.deepcopy(vessel["trials"][0])
+    receipt = copy.deepcopy(vessel["phaseReceipts"][0])
+
+    if phase == "C":
+        manifest["id"] = "MAN-C-001"
+        manifest["phase"] = "C"
+        manifest["discoveryRules"][0]["id"] = "DISC-C-001"
+        source["id"] = "SRC-C-001"
+        source["phases"] = ["C"]
+        claim["id"] = "CLM-C-001"
+        claim["ownerSourceId"] = source["id"]
+        claim["typedTerms"][0]["symbol"] = "xc"
+        claim["premises"][0]["id"] = "PREM-C-001"
+        claim["premises"][0]["sourceIds"] = [source["id"]]
+        trial.update({
+            "id": "TRL-C-001",
+            "claimId": claim["id"],
+            "manifestId": manifest["id"],
+            "receiptId": "REC-C-110",
+        })
+        receipt.update({
+            "id": "REC-C-110",
+            "phase": "C",
+            "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/110_KINTSUGI_PUBLIC_PHENOTYPE_PROPAGATION_QUEUE_2026_07_11.md",
+            "manifestId": manifest["id"],
+            "dependsOnReceiptIds": ["REC-A-108", "REC-B-109"],
+        })
+
+    manifest.update({
+        "finalFiles": [],
+        "finalFileCount": 0,
+        "harvestedClaimIds": [claim["id"]],
+        "eligibleClaimCount": 1,
+        "trialedClaimIds": [claim["id"]] if include_trial else [],
+        "trialedClaimCount": 1 if include_trial else 0,
+        "closureOnlyPaths": [],
+    })
+    receipt.update({
+        "claimIds": [claim["id"]],
+        "trialIds": [trial["id"]] if include_trial else [],
+    })
+    core["manifests"].append(manifest)
+    core["sources"].append(source)
+    core["claims"].append(claim)
+    if include_trial:
+        core["trials"].append(trial)
+    core["phaseReceipts"].append(receipt)
+    return manifest, claim, trial, receipt
+
+
 class VesselAndIdentityTests(unittest.TestCase):
     def assertSchemaValid(self, value):
         self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", value), ())
@@ -326,6 +384,33 @@ class VesselAndIdentityTests(unittest.TestCase):
             })
             core["sources"].append(source)
             with self.subTest(path=receipt_path):
+                self.assertSchemaValid(core)
+                self.assertIn("KIN-E-REF", codes(validate(core, phase="A")))
+
+    def test_no_source_role_can_relabel_a_canonical_receipt_path_as_evidence(self):
+        receipt_path = (
+            "11_UPLINK/50_AUDITS_AND_EXECUTIONS/"
+            "108_FORMAL_STRESS_LEDGER_2026_07_11.md"
+        )
+        valid_pairs = (
+            ("OWNER", "SEMANTIC_OWNER"),
+            ("SUPPORT", "EVIDENCE"),
+            ("SUPPORT", "PROVENANCE"),
+            ("COMPRESSION", "DERIVATIVE"),
+            ("PUBLIC", "DERIVATIVE"),
+            ("RECEIPT", "PROVENANCE"),
+        )
+        for index, (kind, role) in enumerate(valid_pairs, start=1):
+            core = support.build_semantic_core()
+            source = copy.deepcopy(core["sources"][0])
+            source.update({
+                "id": f"SRC-RELABELED-{index:03d}",
+                "path": receipt_path,
+                "kind": kind,
+                "authorityRole": role,
+            })
+            core["sources"].append(source)
+            with self.subTest(kind=kind, role=role):
                 self.assertSchemaValid(core)
                 self.assertIn("KIN-E-REF", codes(validate(core, phase="A")))
 
@@ -449,6 +534,20 @@ class ClaimGraphTests(unittest.TestCase):
         core["claims"].extend(deep_claims)
         self.assertEqual(validate(core, phase="A"), [])
 
+    def test_canonical_cycle_rotation_is_linear_space_and_preserves_ring_shape(self):
+        size = 3000
+        ring = [f"CLM-CYCLE-{index:05d}" for index in range(size)]
+        rotated = ring[1731:] + ring[:1731]
+        nodes = rotated + [rotated[0]]
+        tracemalloc.start()
+        try:
+            canonical = records_module._canonical_cycle(nodes)
+            _, peak = tracemalloc.get_traced_memory()
+        finally:
+            tracemalloc.stop()
+        self.assertEqual(canonical, tuple(ring + [ring[0]]))
+        self.assertLess(peak, 8 * 1024 * 1024)
+
 
 class ReceiptBindingAndBootstrapTests(unittest.TestCase):
     def test_exact_phase_a_binding_table_is_closed(self):
@@ -500,12 +599,104 @@ class ReceiptBindingAndBootstrapTests(unittest.TestCase):
         core = support.build_semantic_core(bootstrap=True)
         self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
         self.assertEqual(validate(core, phase="A", bootstrap=True), [])
-        for phase, bootstrap in (("A", False), ("B", True), ("C", True)):
+        for phase, bootstrap in (("A", False), ("B", True), ("C", True), (None, False)):
             with self.subTest(phase=phase, bootstrap=bootstrap):
                 self.assertIn(
                     "KIN-E-RECEIPT",
                     codes(validate(core, phase=phase, bootstrap=bootstrap)),
                 )
+
+    def test_each_trial_is_owned_by_one_same_phase_receipt_manifest_and_claim(self):
+        base = support.build_semantic_core()
+        passed_attempt(base, receipt_status="VERIFIED")
+        append_draft_phase(base, "B")
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", base), ())
+        self.assertEqual(validate(base, phase="B"), [])
+
+        mutations = []
+        cross_phase = copy.deepcopy(base)
+        cross_trial = cross_phase["trials"][-1]
+        cross_trial["receiptId"] = "REC-A-108"
+        cross_phase["phaseReceipts"][0]["trialIds"].append(cross_trial["id"])
+        cross_phase["phaseReceipts"][1]["trialIds"] = []
+        mutations.append(("cross-phase receipt laundering", cross_phase))
+
+        absent_receipt_claim = copy.deepcopy(base)
+        absent_receipt_claim["phaseReceipts"][1]["claimIds"] = [
+            absent_receipt_claim["claims"][0]["id"]
+        ]
+        mutations.append(("receipt claim membership", absent_receipt_claim))
+
+        absent_harvest = copy.deepcopy(base)
+        absent_harvest["manifests"][1]["harvestedClaimIds"] = [
+            absent_harvest["claims"][0]["id"]
+        ]
+        mutations.append(("manifest harvested membership", absent_harvest))
+
+        absent_trialed = copy.deepcopy(base)
+        absent_trialed["manifests"][1]["trialedClaimIds"] = [
+            absent_trialed["claims"][0]["id"]
+        ]
+        mutations.append(("manifest trialed membership", absent_trialed))
+
+        for label, mutated in mutations:
+            with self.subTest(label=label):
+                self.assertEqual(
+                    kernel.validate_schema_instance(SCHEMA, "coreData", mutated),
+                    (),
+                )
+                self.assertIn("KIN-E-REF", codes(validate(mutated, phase="B")))
+
+    def test_selected_nonbootstrap_phase_b_and_c_require_their_own_trials(self):
+        for phase in ("B", "C"):
+            core = support.build_semantic_core()
+            passed_attempt(core, receipt_status="VERIFIED")
+            if phase == "C":
+                append_draft_phase(core, "B", include_trial=True)
+            append_draft_phase(core, phase, include_trial=False)
+            self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+            phase_issues = validate(core, phase=phase)
+            with self.subTest(phase=phase):
+                self.assertTrue(any(
+                    issue.code == "KIN-E-RECEIPT"
+                    and f"selected Phase-{phase}" in issue.message
+                    and "requires at least one owned trial" in issue.message
+                    for issue in phase_issues
+                ), phase_issues)
+
+        open_core = support.build_semantic_core()
+        passed_attempt(open_core, receipt_status="VERIFIED")
+        _, _, open_trial, _ = append_draft_phase(open_core, "B")
+        open_trial.update({
+            "breakState": "ALLEGED",
+            "defectClass": "TYPE_ERROR",
+            "severity": "MAJOR",
+            "status": "TRIED",
+        })
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", open_core), ())
+        open_issues = validate(open_core, phase="B")
+        self.assertTrue(any(
+            issue.code == "KIN-E-RECEIPT"
+            and "requires at least one owned trial" in issue.message
+            for issue in open_issues
+        ), open_issues)
+
+        terminal_core = support.build_semantic_core()
+        passed_attempt(terminal_core, receipt_status="VERIFIED")
+        append_draft_phase(terminal_core, "B")
+        phase_a_trial_ids = set(terminal_core["phaseReceipts"][0]["trialIds"])
+        terminal_core["trials"] = [
+            trial for trial in terminal_core["trials"]
+            if trial["id"] not in phase_a_trial_ids
+        ]
+        terminal_core["phaseReceipts"][0]["trialIds"] = []
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", terminal_core), ())
+        terminal_issues = validate(terminal_core, phase="B")
+        self.assertTrue(any(
+            issue.path == "core.phaseReceipts[0].trialIds"
+            and "requires at least one owned trial" in issue.message
+            for issue in terminal_issues
+        ), terminal_issues)
 
     def test_bootstrap_requires_the_canonical_phase_a_manifest_identity(self):
         core = support.build_semantic_core(bootstrap=True)
@@ -642,6 +833,41 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
         self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", wrong_discriminator), ())
         self.assertIn("KIN-E-REF", codes(validate(wrong_discriminator, phase="A")))
 
+    def test_seam_frozen_quote_hash_owner_and_anchor_match_one_owning_trial(self):
+        rows = []
+        wrong_quote = support.build_semantic_core()
+        seam = support.add_confirmed_seam(wrong_quote)
+        seam["beforeQuote"] = "A different historical statement."
+        rows.append(("quote", wrong_quote))
+
+        wrong_hash = support.build_semantic_core()
+        seam = support.add_confirmed_seam(wrong_hash)
+        seam["beforeHash"] = "sha256-text-lf:" + "f" * 64
+        rows.append(("hash", wrong_hash))
+
+        wrong_owner = support.build_semantic_core()
+        seam = support.add_confirmed_seam(wrong_owner)
+        seam["ownerSource"] = wrong_owner["claims"][1]["ownerSourceId"]
+        rows.append(("owner identity", wrong_owner))
+
+        wrong_anchor = support.build_semantic_core()
+        seam = support.add_confirmed_seam(wrong_anchor)
+        seam["ownerAnchor"] = "## Drifted owner anchor"
+        rows.append(("owner anchor", wrong_anchor))
+
+        duplicate_owning_trial = support.build_semantic_core()
+        seam = support.add_confirmed_seam(duplicate_owning_trial)
+        extra_trial = copy.deepcopy(duplicate_owning_trial["trials"][0])
+        extra_trial["id"] = "TRL-A-999"
+        duplicate_owning_trial["trials"].append(extra_trial)
+        duplicate_owning_trial["phaseReceipts"][0]["trialIds"].append(extra_trial["id"])
+        rows.append(("exactly one owning trial", duplicate_owning_trial))
+
+        for label, core in rows:
+            with self.subTest(label=label):
+                self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+                self.assertIn("KIN-E-REF", codes(validate(core, phase="A")))
+
     def test_seam_claim_projection_has_local_typed_term_and_support_id_uniqueness(self):
         duplicate_term = support.build_semantic_core()
         seam = support.add_confirmed_seam(duplicate_term)
@@ -698,6 +924,33 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
         for label, mutated in rows:
             with self.subTest(label=label):
                 self.assertIn("KIN-E-REF", codes(validate(mutated, phase="A")))
+
+    def test_arbitrary_length_attempt_suffix_is_total_and_canonical(self):
+        huge_canonical = "RVA-A-" + "1" + "0" * 4999
+        huge_noncanonical = "RVA-A-" + "0" * 5000
+        self.assertTrue(records_module.canonical_attempt(huge_canonical, "A"))
+        self.assertFalse(records_module.canonical_attempt(huge_noncanonical, "A"))
+
+        core = support.build_semantic_core()
+        attempt, artifact = pending_attempt(core)
+        old_id = attempt["id"]
+        old_paths = set(records_module.attempt_paths(old_id))
+        new_paths = records_module.attempt_paths(huge_canonical)
+        attempt["id"] = huge_canonical
+        artifact["attemptId"] = huge_canonical
+        core["phaseReceipts"][0]["reviewAttemptId"] = huge_canonical
+        for key, path in zip(
+            ("reviewTargetPath", "logicReviewPath", "btjReviewPath", "validationBundlePath"),
+            new_paths,
+        ):
+            attempt[key] = path
+        manifest = core["manifests"][0]
+        manifest["closureOnlyPaths"] = sorted(new_paths)
+        manifest["allowedChangePaths"] = sorted(
+            (set(manifest["allowedChangePaths"]) - old_paths) | set(new_paths)
+        )
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+        self.assertEqual(validate(core, phase="A"), [])
 
     def test_review_chain_is_root_to_leaf_acyclic_and_passed_is_terminal(self):
         core = support.build_semantic_core()

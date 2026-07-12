@@ -124,8 +124,9 @@ def canonical_attempt(value: Any, phase: Any) -> bool:
     digits = parts[2]
     if not digits or any(character not in "0123456789" for character in digits):
         return False
-    number = int(digits)
-    return number > 0 and digits == str(number).zfill(3)
+    if len(digits) < 3 or not any(character != "0" for character in digits):
+        return False
+    return len(digits) == 3 or digits[0] != "0"
 
 
 def attempt_paths(attempt_id: str) -> tuple[str, str, str, str]:
@@ -179,8 +180,8 @@ def _canonical_cycle(nodes: list[str]) -> tuple[str, ...]:
     ring = nodes[:-1]
     if not ring:
         return tuple(nodes)
-    rotations = [tuple(ring[index:] + ring[:index]) for index in range(len(ring))]
-    chosen = min(rotations)
+    minimum_index = min(range(len(ring)), key=ring.__getitem__)
+    chosen = tuple(ring[minimum_index:]) + tuple(ring[:minimum_index])
     return chosen + (chosen[0],)
 
 
@@ -240,14 +241,11 @@ def _validate_source_roles(core: dict[str, Any]) -> list[Issue]:
                 "KIN-E-REF",
                 "source kind/authority role pairing is forbidden",
             ))
-        if (
-            source.get("authorityRole") == "PROVENANCE"
-            and source.get("path") in canonical_receipt_paths
-        ):
+        if source.get("path") in canonical_receipt_paths:
             result.append(issue(
                 f"core.sources[{index}].path",
                 "KIN-E-REF",
-                "provenance source path aliases a canonical phase receipt",
+                "source path aliases a canonical phase receipt",
             ))
     return result
 
@@ -376,14 +374,52 @@ def _validate_references(core: dict[str, Any], indexes: dict[str, dict[str, dict
     antibodies = indexes["antibodies"]
     fixtures = indexes["fixtures"]
     propagations = indexes["propagations"]
+    trials_by_seam: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for trial in items(core, "trials"):
+        seam_id = trial.get("seamId")
+        if isinstance(seam_id, str):
+            trials_by_seam[seam_id].append(trial)
 
     for position, trial in enumerate(items(core, "trials")):
         base = f"core.trials[{position}]"
-        _require_ref(result, f"{base}.claimId", trial.get("claimId"), claims, "claim")
-        _require_ref(result, f"{base}.manifestId", trial.get("manifestId"), manifests, "manifest")
+        trial_claim = _require_ref(result, f"{base}.claimId", trial.get("claimId"), claims, "claim")
+        trial_manifest = _require_ref(result, f"{base}.manifestId", trial.get("manifestId"), manifests, "manifest")
         trial_receipt = _require_ref(result, f"{base}.receiptId", trial.get("receiptId"), receipts, "phase receipt")
         if trial_receipt is not None and trial.get("id") not in trial_receipt.get("trialIds", []):
             result.append(issue(f"{base}.receiptId", "KIN-E-REF", "trial is absent from its owning receipt"))
+        if trial_receipt is not None and trial_manifest is not None and (
+            trial_receipt.get("manifestId") != trial.get("manifestId")
+            or trial_receipt.get("phase") != trial_manifest.get("phase")
+        ):
+            result.append(issue(
+                f"{base}.manifestId",
+                "KIN-E-REF",
+                "trial manifest and receipt must be the same-phase ownership tuple",
+            ))
+        if trial_receipt is not None and trial_claim is not None and (
+            trial.get("claimId") not in trial_receipt.get("claimIds", [])
+        ):
+            result.append(issue(
+                f"{base}.claimId",
+                "KIN-E-REF",
+                "trial claim is absent from its owning receipt",
+            ))
+        if trial_manifest is not None and trial_claim is not None:
+            excluded_claim_ids = {
+                exclusion.get("claimId")
+                for exclusion in trial_manifest.get("excludedClaimIds", [])
+                if isinstance(exclusion, dict)
+            }
+            if (
+                trial.get("claimId") not in trial_manifest.get("harvestedClaimIds", [])
+                or trial.get("claimId") not in trial_manifest.get("trialedClaimIds", [])
+                or trial.get("claimId") in excluded_claim_ids
+            ):
+                result.append(issue(
+                    f"{base}.claimId",
+                    "KIN-E-REF",
+                    "trial claim must be harvested, trialed, and not excluded by its manifest",
+                ))
         seam_id = trial.get("seamId")
         if seam_id is not None:
             seam = _require_ref(result, f"{base}.seamId", seam_id, seams, "seam")
@@ -401,10 +437,40 @@ def _validate_references(core: dict[str, Any], indexes: dict[str, dict[str, dict
 
     for position, seam in enumerate(items(core, "seams")):
         base = f"core.seams[{position}]"
-        _require_ref(result, f"{base}.claimId", seam.get("claimId"), claims, "claim")
+        seam_claim = _require_ref(result, f"{base}.claimId", seam.get("claimId"), claims, "claim")
         owner = _require_ref(result, f"{base}.ownerSource", seam.get("ownerSource"), sources, "source")
         if owner is not None and owner.get("authorityRole") != "SEMANTIC_OWNER":
             result.append(issue(f"{base}.ownerSource", "KIN-E-REF", "seam owner must be a semantic owner"))
+        if seam_claim is not None and (
+            seam.get("ownerSource") != seam_claim.get("ownerSourceId")
+            or seam.get("ownerAnchor") != seam_claim.get("ownerAnchor")
+        ):
+            result.append(issue(
+                f"{base}.ownerSource",
+                "KIN-E-REF",
+                "seam owner identity and anchor must match its tried claim",
+            ))
+        seam_id = seam.get("id")
+        owning_trials = trials_by_seam.get(seam_id, []) if isinstance(seam_id, str) else []
+        if len(owning_trials) != 1:
+            result.append(issue(
+                base,
+                "KIN-E-REF",
+                "seam must have exactly one owning trial",
+            ))
+        else:
+            owning_trial = owning_trials[0]
+            if (
+                owning_trial.get("claimId") != seam.get("claimId")
+                or owning_trial.get("receiptId") != seam.get("receiptId")
+                or owning_trial.get("triedQuote") != seam.get("beforeQuote")
+                or owning_trial.get("triedHash") != seam.get("beforeHash")
+            ):
+                result.append(issue(
+                    base,
+                    "KIN-E-REF",
+                    "seam frozen quote and hash must match its owning trial/claim/receipt tuple",
+                ))
         term_pairs: set[tuple[Any, Any]] = set()
         for index, term in enumerate(seam.get("typedTerms", [])):
             if not isinstance(term, dict):
@@ -602,6 +668,8 @@ def _validate_receipts_and_manifests(
         result.append(issue("phase", "KIN-E-RECEIPT", "selected phase is invalid"))
     if phase is not None and not any(receipt.get("phase") == phase for receipt in items(core, "phaseReceipts")):
         result.append(issue("phase", "KIN-E-RECEIPT", f"selected Phase {phase} has no receipt"))
+    if bootstrap and phase != "A":
+        result.append(issue("bootstrap", "KIN-E-RECEIPT", "bootstrap is legal only for Phase A"))
 
     attempts_by_phase: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for attempt in items(core, "reviewAttempts"):
@@ -704,29 +772,52 @@ def _validate_receipts_and_manifests(
                         "VERIFIED receipt bundle path does not bind the current attempt",
                     ))
 
-        empty_trials = not items(core, "trials")
         selected_bootstrap = (
             bootstrap and phase == "A" and receipt_phase == "A"
             and receipt.get("status") == "DRAFT"
         )
-        if empty_trials:
-            exact_empty = (
-                selected_bootstrap
-                and manifest is not None
-                and manifest.get("id") == "MAN-A-001"
-                and manifest.get("trialedClaimIds") == []
-                and manifest.get("trialedClaimCount") == 0
-                and receipt.get("trialIds") == []
-                and manifest.get("finalFiles") == []
-                and manifest.get("finalFileCount") == 0
-                and manifest.get("closureOnlyPaths") == []
-                and bool(items(core, "claims"))
-                and bool(manifest.get("requiredClaimBindings"))
+        exact_empty = (
+            selected_bootstrap
+            and not items(core, "trials")
+            and manifest is not None
+            and manifest.get("id") == "MAN-A-001"
+            and manifest.get("trialedClaimIds") == []
+            and manifest.get("trialedClaimCount") == 0
+            and receipt.get("trialIds") == []
+            and manifest.get("finalFiles") == []
+            and manifest.get("finalFileCount") == 0
+            and manifest.get("closureOnlyPaths") == []
+            and bool(items(core, "claims"))
+            and bool(manifest.get("requiredClaimBindings"))
+        )
+        owned_trials = [
+            trials.get(trial_id)
+            for trial_id in receipt.get("trialIds", [])
+            if trial_id in trials
+            and trials[trial_id].get("receiptId") == receipt.get("id")
+            and trials[trial_id].get("manifestId") == receipt.get("manifestId")
+            and trials[trial_id].get("claimId") in receipt.get("claimIds", [])
+            and manifest is not None
+            and trials[trial_id].get("claimId") in manifest.get("harvestedClaimIds", [])
+            and trials[trial_id].get("claimId") in manifest.get("trialedClaimIds", [])
+            and trials[trial_id].get("status") in {"ADJUDICATED", "CLOSED"}
+        ]
+        selected_for_coverage = (
+            phase == receipt_phase
+            or receipt.get("status") in {"COMPLETE", "VERIFIED"}
+            or (phase is None and not items(core, "trials"))
+        )
+        if selected_for_coverage and not exact_empty and not owned_trials:
+            coverage_context = (
+                f"selected Phase-{receipt_phase} non-bootstrap"
+                if phase == receipt_phase
+                else f"Phase-{receipt_phase} terminal or bare non-bootstrap"
             )
-            if not exact_empty:
-                result.append(issue(f"{base}.trialIds", "KIN-E-RECEIPT", "empty trials are legal only in the exact Phase-A bootstrap vessel"))
-        elif bootstrap and phase != "A":
-            result.append(issue("bootstrap", "KIN-E-RECEIPT", "bootstrap is legal only for Phase A"))
+            result.append(issue(
+                f"{base}.trialIds",
+                "KIN-E-RECEIPT",
+                f"{coverage_context} receipt requires at least one owned trial",
+            ))
     return result
 
 
