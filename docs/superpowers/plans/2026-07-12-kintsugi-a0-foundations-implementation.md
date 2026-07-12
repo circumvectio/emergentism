@@ -4,7 +4,7 @@
 
 **Goal:** Establish the deterministic, no-K2 foundation for Kintsugi: freeze the execution base, preserve the repository's known test state as data, and add a standard-library validator shell with canonical hashing, safe paths, exact baseline comparison, stable diagnostics, and a truthful CLI.
 
-**Architecture:** This is the first executable slice of the approved Kintsugi design. One read-only Python module owns canonical bytes, hash domains, safe repository paths, diagnostics, pytest collection/failure parsing, and the baseline command. Its contract is a checked-in JSON file. It does not yet create the Kintsugi schema, manifest, seam graph, owner repairs, receipt 108, or review bundle; those receive separate plans after this slice passes.
+**Architecture:** This is the first executable slice of the approved Kintsugi design. One read-only Python module owns canonical bytes, hash domains, safe repository paths, diagnostics, pytest collection/failure parsing, and the baseline command. Its contract is a checked-in JSON file. It does not yet create the Kintsugi schema, manifest, seam graph, owner repairs, `REC-A-108`, or review bundle; those receive separate plans after this slice passes.
 
 **Tech Stack:** Python 3.11 standard library, `unittest`, pytest as the existing repository test runner, Git.
 
@@ -67,8 +67,6 @@ test "$(shasum -a 256 "$CANON/11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_THE_FORMAL_
   9cf25b80e6c252aa8d95b63ea1c7cc1ed361c05dedaea4aef72fa001f691069c
 test "$(shasum -a 256 "$CANON/11_UPLINK/50_AUDITS_AND_EXECUTIONS/109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS_PENDING_K2.md" | awk '{print $1}')" = \
   3d9f63df9ce8aabfa9a16ac5dd25acabf3084b75b6ad29740a61e078ecebd629
-test "$(shasum -a 256 /Users/Yves/.codex/attachments/ec649130-9018-4d89-a0f1-99b9e82f34b5/pasted-text.txt | awk '{print $1}')" = \
-  2937faf077f58a49e3c5953d33c3413ea3108350f82c8166eaf54818cdb5ad73
 ```
 
 Expected: exit 0 and no output.
@@ -717,7 +715,7 @@ python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py \
   --canonical-root /Users/Yves/Documents/01_EMERGENTISM
 ```
 
-`kintsugi_baseline_failures.json` records 19 baseline node IDs and five exact failure signatures at `main@454f371`. A previously failing node may turn green; a removed node, new failure, exception drift, or signature drift fails. The validator never writes files and has no K2 approval gate.
+`kintsugi_baseline_failures.json` records 19 baseline node IDs and five exact failure signatures at `main@454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22`. A previously failing node may turn green; a removed node, new failure, exception drift, or signature drift fails. The validator never writes files and has no K2 approval gate.
 ~~~~
 
 Apply the block exactly; the outer tildes preserve the literal inner Bash fence.
@@ -817,7 +815,7 @@ Expected: tests pass; CLI prints `KIN-OK baseline collected=19 failures=5`; stat
 
 ## A0 Acceptance Checklist
 
-- [ ] Execution branch descends from exact canonical `main@454f371`.
+- [ ] Execution branch descends from exact canonical `main@454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22`.
 - [ ] Protected public, predecessor-receipt 108, and pre-program proof-audit 109 bytes are unchanged.
 - [ ] The baseline contract deep-equals the approved 19-node/five-failure data.
 - [ ] Canonical JSON, raw hash, normalized text hash, and safe path tests pass.
