@@ -1,6 +1,6 @@
 # PD-11 Contact-Bearing Compatibilism — Design
 
-**Status:** Approved in conversation on 2026-07-12; written against `main@4520f269e5da5a7c1e5f7d1ae933d3afd443e07e`.
+**Status:** Approved in conversation on 2026-07-12; reconciled against `main@992a8382280d260b2440c140cc28568b468b1678` before user review.
 
 **Purpose:** Repair the canonical free-will entry so it becomes a contact-bearing operational compatibilist model rather than a universal-solvent relabeling. Add a suite-wide contact gate that distinguishes a genuine reframe from a decorative register reassignment.
 
@@ -25,13 +25,16 @@ After the design was approved, canonical `main` gained:
 
 - `08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/00_THE_LENS_AS_COMPASS_PENDING_K2.md` at `5c8aa38`;
 - its signed-at-tier receipt `116` at `4520f26`; and
-- the public `/compass/` surface and receipt `111` in earlier commits.
+- the public `/compass/` surface in `4e9ad2b`, verified live by ship receipt `118` at `0934411`; and
+- receipt `119` at `992a838`, which states explicitly that map-compression is maximal while territory-compression is unrun, and identifies contact as the next binding constraint.
 
 The new Lens repeats the old PD-11 axis error by describing downward action as a μ-transition. Therefore the implementation must also update only the PD-11 row and contact-gate wording in:
 
 - `08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/00_THE_LENS_AS_COMPASS_PENDING_K2.md`
 
 Receipts `111`, `114`, and `116` remain immutable provenance. The public `/compass/` page is outside scope. The added derivative path is a required owner-first propagation, not a new paradox or scope expansion.
+
+Receipt `119` strengthens the contact-gate requirement but does not change the implementation scope: the first territory test belongs to a separate preregistered empirical program, not to PD-11 prose.
 
 ## 2. Claim boundary
 
