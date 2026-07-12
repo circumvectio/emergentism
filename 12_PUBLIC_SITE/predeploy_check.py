@@ -163,6 +163,8 @@ def check_orphans():
         os.path.normpath(os.path.join(BASE_DIR, "index.html")),
         # PWA offline fallback: served by the service worker, unlinked by design
         os.path.normpath(os.path.join(BASE_DIR, "offline", "index.html")),
+        # Custom 404: served by Vercel on miss, unlinked by design
+        os.path.normpath(os.path.join(BASE_DIR, "404.html")),
     }
     orphans = [
         os.path.relpath(full, BASE_DIR)

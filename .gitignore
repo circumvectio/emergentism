@@ -7,6 +7,8 @@ node_modules/
 dist/
 build/
 out/
+# 12_PUBLIC_SITE/build/ is a PUBLIC WING (7-wing compass spine), not a build artifact:
+!12_PUBLIC_SITE/build/
 
 # Python
 __pycache__/
