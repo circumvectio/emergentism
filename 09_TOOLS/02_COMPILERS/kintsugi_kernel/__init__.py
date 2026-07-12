@@ -39,6 +39,14 @@ from .schema import (
     validate_schema_document,
     validate_schema_instance,
 )
+from .semantics import (
+    evaluate_antibody_fixture,
+    evaluate_semantic_fixture,
+    safe_regex_search,
+    scan_antibodies,
+    validate_core_records,
+    validate_public_queue,
+)
 
 
 __all__ = [
@@ -60,6 +68,8 @@ __all__ = [
     "SCHEMA_KEYWORDS",
     "canonical_json_bytes",
     "compare_baseline",
+    "evaluate_antibody_fixture",
+    "evaluate_semantic_fixture",
     "infer_exception",
     "load_contract",
     "load_schema",
@@ -73,10 +83,14 @@ __all__ = [
     "raw_hash",
     "run_baseline",
     "run_process",
+    "safe_regex_search",
     "safe_repo_path",
     "text_hash",
     "validate_contract",
+    "validate_core_records",
     "validate_named_definition",
     "validate_schema_document",
     "validate_schema_instance",
+    "validate_public_queue",
+    "scan_antibodies",
 ]

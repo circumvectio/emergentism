@@ -521,3 +521,495 @@ REQUIRED_PHASE_A_BINDINGS = _copy([
         ("REQ-A-OPTION-CONE", "### Worldline and Light-Cone Corollary", "sha256-text-lf:6749c86499b1e5d1a04de8afcbc6df283403617f1d0e40bdf9dbe66073412527"),
     ], start=1)
 ])
+
+
+PHASE_A_REQUIREMENTS = (
+    (
+        "REQ-A-PROTOCOL-SELF-TRIAL",
+        "00_META/00_THE_KINTSUGI_PROTOCOL.md",
+        "# The Kintsugi Protocol",
+        "sha256-text-lf:9fe68c734bce6c709c5879e0f7e40b552cdacb4cd14121302371509fb13f7cc9",
+    ),
+    (
+        "REQ-A-TRIADIC-UNIQUENESS",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/11_EFR_TRIADIC_STABILITY.md",
+        "## The Uniqueness Theorem",
+        "sha256-text-lf:438269d12273e6c169e2ba8bdb8c126dcb118378a1d28a55328aa4dbdaec17b8",
+    ),
+    (
+        "REQ-A-D6-AREA-DIRECTION",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md",
+        "### 2.2 The Coordinate Collapse Theorem",
+        "sha256-text-lf:75893a2cd097580c3ee44a8a62f940e9b02d3dc09e4d73a5d3796e70de7d8e26",
+    ),
+    (
+        "REQ-A-POWER-MAX-CIRCULARITY",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+        "## The Statement",
+        "sha256-text-lf:8cb12ae6fb3b855cbe999d699041ae3a15c73d3c405362195f6bf58441019510",
+    ),
+    (
+        "REQ-A-D4-D5-REGISTER",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md",
+        "## I. THE FUNDAMENTAL DISTINCTION",
+        "sha256-text-lf:dee381fece54b4fe926b1af1145ab8676263091cc698460a3b37962c77a6cca2",
+    ),
+    (
+        "REQ-A-QUANTUM-MEASURE",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md",
+        "## The Corrected Formula",
+        "sha256-text-lf:41b8437a8e8715a7be6f8f7ddef46984b89757d9f9722494b554dc3e87d204fb",
+    ),
+    (
+        "REQ-A-OPTION-CONE",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md",
+        "### Worldline and Light-Cone Corollary",
+        "sha256-text-lf:6749c86499b1e5d1a04de8afcbc6df283403617f1d0e40bdf9dbe66073412527",
+    ),
+)
+
+
+def build_justice_context(
+    regime: str = "NOT_APPLICABLE", mechanism: str = "NONE"
+) -> dict[str, Any]:
+    return {
+        "individual": "The affected natural person.",
+        "whole": "The sustaining whole.",
+        "eta": "Zero extraction is declared.",
+        "beneficiary": ["The affected natural person"],
+        "costBearer": ["The affected natural person"],
+        "consent": {"status": "OBTAINED", "basis": "Explicit fixture consent."},
+        "custody": "The person retains custody.",
+        "reversibility": "REVERSIBLE",
+        "exit": "Grace Exit remains available.",
+        "optionConeEffect": {
+            "direction": "WIDENS",
+            "rationale": "The declared option set remains non-extractive.",
+        },
+        "authority": {
+            "regime": regime,
+            "mechanism": mechanism,
+            "basis": "A typed synthetic authority boundary.",
+        },
+    }
+
+
+def build_semantic_core(*, bootstrap: bool = False) -> dict[str, Any]:
+    """Return a complete, schema-valid Phase-A vessel for semantic tests."""
+    core = build_core_data()
+    sources_by_path: dict[str, dict[str, Any]] = {}
+    sources: list[dict[str, Any]] = []
+    claims: list[dict[str, Any]] = []
+    trials: list[dict[str, Any]] = []
+    bindings: list[dict[str, Any]] = []
+
+    for index, (requirement, owner_path, anchor, target_hash) in enumerate(
+        PHASE_A_REQUIREMENTS, start=1
+    ):
+        source = sources_by_path.get(owner_path)
+        if source is None:
+            source = _copy(_SOURCE)
+            source["id"] = f"SRC-A-{len(sources) + 1:03d}"
+            source["path"] = owner_path
+            source["phases"] = ["A"]
+            sources_by_path[owner_path] = source
+            sources.append(source)
+
+        claim = _copy(_CLAIM)
+        claim_id = f"CLM-A-{index:03d}"
+        proposition = f"The frozen Phase-A requirement {requirement} is explicitly trialed."
+        claim.update({
+            "id": claim_id,
+            "ownerSourceId": source["id"],
+            "ownerAnchor": anchor,
+            "proposition": proposition,
+            "conclusion": proposition,
+        })
+        claim["typedTerms"][0].update({
+            "symbol": f"x{index}",
+            "definition": f"The typed term for {requirement}.",
+        })
+        claim["premises"][0].update({
+            "id": f"PREM-A-{index:03d}",
+            "sourceIds": [source["id"]],
+        })
+        claims.append(claim)
+
+        trial = _copy(_TRIAL)
+        trial.update({
+            "id": f"TRL-A-{index:03d}",
+            "claimId": claim_id,
+            "manifestId": "MAN-A-001",
+            "triedQuote": proposition,
+            "triedHash": target_hash,
+            "receiptId": "REC-A-108",
+        })
+        trials.append(trial)
+        bindings.append({
+            "requirementId": requirement,
+            "claimId": claim_id,
+            "ownerSourceId": source["id"],
+            "ownerAnchor": anchor,
+            "targetHash": target_hash,
+            "rationale": "The exact frozen requirement is bound to one claim and trial.",
+        })
+
+    unique_paths = sorted(sources_by_path)
+    manifest = _copy(_MANIFEST)
+    manifest.update({
+        "id": "MAN-A-001",
+        "phase": "A",
+        "discoveryRules": [{
+            "id": "DISC-A-001",
+            "includeGlobs": ["**/*.md"],
+            "excludeGlobs": ["90_ARCHIVE/**"],
+            "parser": "MARKDOWN",
+            "rationale": "A closed synthetic Phase-A discovery boundary.",
+        }],
+        "candidateFiles": [_file(path) for path in unique_paths],
+        "candidateFileCount": len(unique_paths),
+        "includedFiles": [_file(path) for path in unique_paths],
+        "finalFiles": [],
+        "finalFileCount": 0,
+        "eligibleFileCount": len(unique_paths),
+        "scannedFileCount": len(unique_paths),
+        "harvestedClaimIds": [claim["id"] for claim in claims],
+        "requiredClaimBindings": bindings,
+        "eligibleClaimCount": len(claims),
+        "trialedClaimIds": [] if bootstrap else [claim["id"] for claim in claims],
+        "trialedClaimCount": 0 if bootstrap else len(claims),
+        "inventoryReviewPaths": ["03_METHODOLOGY/phase-a-inventory-review.md"],
+        "closureOnlyPaths": [],
+    })
+
+    receipt = _copy(_PHASE_RECEIPT)
+    receipt.update({
+        "id": "REC-A-108",
+        "phase": "A",
+        "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_FORMAL_STRESS_LEDGER_2026_07_11.md",
+        "manifestId": "MAN-A-001",
+        "dependsOnReceiptIds": [],
+        "claimIds": [claim["id"] for claim in claims],
+        "trialIds": [] if bootstrap else [trial["id"] for trial in trials],
+    })
+
+    core.update({
+        "manifests": [manifest],
+        "sources": sources,
+        "claims": claims,
+        "trials": [] if bootstrap else trials,
+        "phaseReceipts": [receipt],
+        "seams": [],
+        "antibodies": [],
+        "discriminators": [],
+        "fixtures": [],
+        "propagations": [],
+        "reviewAttempts": [],
+        "reviewAttemptArtifacts": [],
+        "reviewAttestations": [],
+        "reviewFindings": [],
+        "reviewFindingDispositions": [],
+    })
+    return core
+
+
+def add_confirmed_seam(core: dict[str, Any], *, seam_id: str = "KIN-A-001") -> dict[str, Any]:
+    claim = core["claims"][0]
+    trial = next(trial for trial in core["trials"] if trial["claimId"] == claim["id"])
+    fixture_id = f"FXT-{seam_id}"
+    gate = {
+        "status": "PENDING",
+        "rationale": "Awaiting the independent review artifact.",
+        "reviewerPath": None,
+    }
+    seam = {
+        "id": seam_id,
+        "claimId": claim["id"],
+        "ownerSource": claim["ownerSourceId"],
+        "ownerAnchor": claim["ownerAnchor"],
+        "beforeQuote": trial["triedQuote"],
+        "beforeHash": trial["triedHash"],
+        "priorSeamIds": [],
+        "claimType": claim["claimType"],
+        "typedTerms": _copy(claim["typedTerms"]),
+        "premises": _copy(claim["premises"]),
+        "conclusion": claim["conclusion"],
+        "inference": _copy(claim["inference"]),
+        "quantifiers": _copy(claim["quantifiers"]),
+        "modality": claim["modality"],
+        "scope": _copy(claim["scope"]),
+        "justiceScope": claim["justiceScope"],
+        "authorityScope": claim["authorityScope"],
+        "authorityEffect": claim["authorityEffect"],
+        "evidenceBefore": _copy(claim["evidence"]),
+        "sourceIds": [claim["ownerSourceId"]],
+        "dependencyClaimIds": _copy(claim["dependencyClaimIds"]),
+        "countermodel": {
+            "description": "A declared countermodel fractures the tried formulation.",
+            "construction": "Negate the tried conclusion inside its stated scope.",
+            "defeatedConclusion": "The tried conclusion is defeated.",
+        },
+        "defectClass": "TYPE_ERROR",
+        "severity": "MAJOR",
+        "validityVerdict": "INVALID",
+        "soundnessVerdict": "NOT_APPLICABLE",
+        "verdict": "INVALID",
+        "survivingKernel": "Only the explicitly typed lower-register statement survives.",
+        "priorSupportLinks": _copy(claim["supportLinks"]),
+        "priorUpgradeCriterion": _copy(claim["upgradeCriterion"]),
+        "priorKillCriterion": _copy(claim["killCriterion"]),
+        "priorSurvivingIfKilled": _copy(claim["survivingIfKilled"]),
+        "supportLinks": _copy(claim["supportLinks"]),
+        "upgradeCriterion": _copy(claim["upgradeCriterion"]),
+        "killCriterion": _copy(claim["killCriterion"]),
+        "survivingIfKilled": _copy(claim["survivingIfKilled"]),
+        "beautyGate": _copy(gate),
+        "truthGate": _copy(gate),
+        "justiceGate": _copy(gate),
+        "credit": {"displayName": "Synthetic reviewer", "role": "Fixture author"},
+        "creditConsent": "ALIAS",
+        "receiptId": core["phaseReceipts"][0]["id"],
+        "regressionFixtureIds": [fixture_id],
+        "discriminatorIds": [],
+        "status": "CONFIRMED",
+    }
+    trial.update({
+        "breakState": "CONFIRMED",
+        "defectClass": "TYPE_ERROR",
+        "severity": "MAJOR",
+        "validityVerdict": "INVALID",
+        "soundnessVerdict": "NOT_APPLICABLE",
+        "verdict": "INVALID",
+        "seamId": seam_id,
+        "status": "ADJUDICATED",
+        "countermodel": _copy(seam["countermodel"]),
+    })
+    fixture = {
+        "id": fixture_id,
+        "kind": "MUTATION",
+        "payloadKind": "JSON",
+        "payload": "{}",
+        "mutationLevel": "SEMANTIC",
+        "expectedExitCode": 1,
+        "expectedErrorCodes": ["KIN-E-STATE"],
+        "expectedAntibodyIds": [],
+        "antibodyIds": [],
+        "seamIds": [seam_id],
+    }
+    core["seams"].append(seam)
+    core["fixtures"].append(fixture)
+    core["phaseReceipts"][0]["seamIds"].append(seam_id)
+    return seam
+
+
+def add_antibody_fixture_set(
+    core: dict[str, Any], *, match_mode: str = "LITERAL", pattern: str = "forbidden"
+) -> dict[str, Any]:
+    if not core["seams"]:
+        add_confirmed_seam(core)
+    antibody_id = f"AB-{match_mode}-001"
+    fixture_ids = {
+        "POSITIVE": f"FXT-{match_mode}-POS",
+        "NEGATIVE": f"FXT-{match_mode}-NEG",
+        "QUOTATION": f"FXT-{match_mode}-QUO",
+        "HISTORICAL": f"FXT-{match_mode}-HIS",
+    }
+    antibody = {
+        "id": antibody_id,
+        "seamId": core["seams"][0]["id"],
+        "pattern": pattern,
+        "matchMode": match_mode,
+        "semanticEvaluator": None,
+        "scopeGlobs": ["active/**/*.md"],
+        "excludeGlobs": ["active/excluded/**"],
+        "positiveFixtureIds": [fixture_ids["POSITIVE"]],
+        "negativeFixtureIds": [fixture_ids["NEGATIVE"]],
+        "quotationFixtureIds": [fixture_ids["QUOTATION"]],
+        "historicalFixtureIds": [fixture_ids["HISTORICAL"]],
+    }
+    live_match = "forbidden" if match_mode == "REGEX" else pattern
+    payloads = {
+        "POSITIVE": f"This is {live_match} in active prose.",
+        "NEGATIVE": "This prose remains clean.",
+        "QUOTATION": f"A quotation repeats {live_match}.",
+        "HISTORICAL": f"History records {live_match}.",
+    }
+    for kind, fixture_id in fixture_ids.items():
+        expected = [antibody_id] if kind == "POSITIVE" else []
+        core["fixtures"].append({
+            "id": fixture_id,
+            "kind": kind,
+            "payloadKind": "TEXT",
+            "payload": payloads[kind],
+            "mutationLevel": None,
+            "expectedExitCode": 1 if kind == "POSITIVE" else 0,
+            "expectedErrorCodes": ["KIN-E-FIXTURE"] if kind == "POSITIVE" else [],
+            "expectedAntibodyIds": expected,
+            "antibodyIds": [antibody_id],
+            "seamIds": [core["seams"][0]["id"]] if kind == "POSITIVE" else [],
+        })
+    core["antibodies"].append(antibody)
+    return antibody
+
+
+def add_semantic_antibody_fixture_set(
+    core: dict[str, Any], evaluator: str, good_payload: dict[str, Any], bad_payload: dict[str, Any]
+) -> dict[str, Any]:
+    if not core["seams"]:
+        add_confirmed_seam(core)
+    antibody_id = f"AB-SEM-{len(core['antibodies']) + 1:03d}"
+    fixture_ids = {
+        "POSITIVE": f"FXT-{antibody_id}-POS",
+        "NEGATIVE": f"FXT-{antibody_id}-NEG",
+        "QUOTATION": f"FXT-{antibody_id}-QUO",
+        "HISTORICAL": f"FXT-{antibody_id}-HIS",
+    }
+    antibody = {
+        "id": antibody_id,
+        "seamId": core["seams"][0]["id"],
+        "pattern": evaluator,
+        "matchMode": "SEMANTIC_FIXTURE",
+        "semanticEvaluator": evaluator,
+        "scopeGlobs": ["active/**/*.md"],
+        "excludeGlobs": [],
+        "positiveFixtureIds": [fixture_ids["POSITIVE"]],
+        "negativeFixtureIds": [fixture_ids["NEGATIVE"]],
+        "quotationFixtureIds": [fixture_ids["QUOTATION"]],
+        "historicalFixtureIds": [fixture_ids["HISTORICAL"]],
+    }
+    for kind, fixture_id in fixture_ids.items():
+        expected = [antibody_id] if kind == "POSITIVE" else []
+        payload = bad_payload if kind in {"POSITIVE", "QUOTATION", "HISTORICAL"} else good_payload
+        core["fixtures"].append({
+            "id": fixture_id,
+            "kind": kind,
+            "payloadKind": "JSON",
+            "payload": json.dumps(payload, sort_keys=True, separators=(",", ":")),
+            "mutationLevel": None,
+            "expectedExitCode": 1 if kind == "POSITIVE" else 0,
+            "expectedErrorCodes": ["KIN-E-FIXTURE"] if kind == "POSITIVE" else [],
+            "expectedAntibodyIds": expected,
+            "antibodyIds": [antibody_id],
+            "seamIds": [core["seams"][0]["id"]] if kind == "POSITIVE" else [],
+        })
+    core["antibodies"].append(antibody)
+    return antibody
+
+
+def add_retiered_seam(
+    core: dict[str, Any], before: str, after: str, *, seam_id: str = "KIN-A-001"
+) -> dict[str, Any]:
+    order = {"C": 0, "I": 1, "S": 2, "A": 3}
+    if before == after:
+        raise ValueError("the schema-valid RETIER helper requires unequal strengths")
+    seam = add_confirmed_seam(core, seam_id=seam_id)
+    claim = core["claims"][0]
+    supporting_claim = core["claims"][1]
+    upward = order[after] > order[before]
+
+    claim["evidence"] = {"strength": after, "sourced": True, "lifecycle": "ACTIVE"}
+    claim["upgradeCriterion"] = {
+        "kind": "NONE",
+        "rationale": "No further promotion is asserted by this repaired fixture.",
+    }
+    claim["killCriterion"] = {
+        "kind": "TESTABLE",
+        "testability": "ACTIVE",
+        "trigger": "The repaired typed claim fails its declared test.",
+        "method": "Run the frozen discriminator.",
+        "disposition": "RETRACT",
+    }
+
+    if upward:
+        link = {
+            "id": f"SUP-{seam_id}",
+            "supportingClaimId": supporting_claim["id"],
+            "mode": "CORROBORATION",
+            "independenceStatus": "INDEPENDENT",
+            "evidenceCeiling": after,
+            "rationale": "An independently trialed supporting claim.",
+        }
+        claim["supportLinks"] = [link]
+        prior_upgrade = {
+            "kind": "AVAILABLE",
+            "targetStrength": after,
+            "criterion": "A qualifying independent corroboration closes successfully.",
+            "requiredMode": "CORROBORATION",
+            "minimumIndependence": "PARTIALLY_INDEPENDENT",
+            "minimumEvidenceCeiling": after,
+        }
+        prior_kill = {
+            "kind": "TESTABLE",
+            "testability": "ACTIVE",
+            "trigger": "The prior claim fails its declared test.",
+            "method": "Run the frozen discriminator.",
+            "disposition": "RETRACT",
+        }
+        seam["upgradeEvidenceLinkIds"] = [link["id"]]
+    else:
+        prior_upgrade = {
+            "kind": "NONE",
+            "rationale": "No promotion criterion is implicated by a downgrade.",
+        }
+        prior_kill = {
+            "kind": "TESTABLE",
+            "testability": "ACTIVE",
+            "trigger": "The prior tier ceiling is defeated.",
+            "method": "Apply the declared kill discriminator.",
+            "disposition": "RETIER",
+            "resultingStrength": after,
+        }
+
+    seam.update({
+        "status": "REPAIRED",
+        "repairKind": "RETIER",
+        "afterQuote": f"The repaired claim is explicitly bounded at {after}.",
+        "evidenceBefore": {"strength": before, "sourced": True, "lifecycle": "ACTIVE"},
+        "evidenceAfter": _copy(claim["evidence"]),
+        "priorSupportLinks": [],
+        "priorUpgradeCriterion": prior_upgrade,
+        "priorKillCriterion": prior_kill,
+        "supportLinks": _copy(claim["supportLinks"]),
+        "upgradeCriterion": _copy(claim["upgradeCriterion"]),
+        "killCriterion": _copy(claim["killCriterion"]),
+        "survivingIfKilled": _copy(claim["survivingIfKilled"]),
+    })
+    return seam
+
+
+def add_retracted_seam(
+    core: dict[str, Any], strength: str = "C", *, seam_id: str = "KIN-A-001"
+) -> dict[str, Any]:
+    seam = add_confirmed_seam(core, seam_id=seam_id)
+    claim = core["claims"][0]
+    before = {"strength": strength, "sourced": True, "lifecycle": "ACTIVE"}
+    claim["evidence"] = {"strength": strength, "sourced": True, "lifecycle": "RETIRED"}
+    claim["killCriterion"] = {
+        "kind": "NONE",
+        "rationale": "The retracted claim has no live kill criterion.",
+    }
+    claim["upgradeCriterion"] = {
+        "kind": "NONE",
+        "rationale": "The retracted claim has no asserted upgrade path.",
+    }
+    seam.update({
+        "status": "RETRACTED",
+        "repairKind": "RETRACT",
+        "afterQuote": "The claim is retracted while its historical tier is preserved.",
+        "evidenceBefore": before,
+        "evidenceAfter": _copy(claim["evidence"]),
+        "priorSupportLinks": [],
+        "priorUpgradeCriterion": _copy(claim["upgradeCriterion"]),
+        "priorKillCriterion": {
+            "kind": "TESTABLE",
+            "testability": "ACTIVE",
+            "trigger": "The claim's declared falsifier fires.",
+            "method": "Apply the frozen discriminator.",
+            "disposition": "RETRACT",
+        },
+        "supportLinks": [],
+        "upgradeCriterion": _copy(claim["upgradeCriterion"]),
+        "killCriterion": _copy(claim["killCriterion"]),
+        "survivingIfKilled": _copy(claim["survivingIfKilled"]),
+    })
+    return seam

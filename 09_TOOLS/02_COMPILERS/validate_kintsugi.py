@@ -26,6 +26,8 @@ from kintsugi_kernel import (
     KintsugiError,
     canonical_json_bytes,
     compare_baseline,
+    evaluate_antibody_fixture,
+    evaluate_semantic_fixture,
     infer_exception,
     load_contract,
     load_schema,
@@ -39,12 +41,16 @@ from kintsugi_kernel import (
     raw_hash,
     run_baseline,
     run_process,
+    safe_regex_search,
     safe_repo_path,
     text_hash,
     validate_contract,
+    validate_core_records,
     validate_named_definition,
     validate_schema_document,
     validate_schema_instance,
+    validate_public_queue,
+    scan_antibodies,
 )
 
 class KintsugiArgumentParser(argparse.ArgumentParser):
