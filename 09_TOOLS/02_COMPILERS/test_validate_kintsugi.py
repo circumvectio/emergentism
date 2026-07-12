@@ -4,6 +4,7 @@ import contextlib
 import hashlib
 import io
 import json
+import os
 import subprocess
 import sys
 import tempfile
@@ -40,6 +41,13 @@ class PrimitiveTests(unittest.TestCase):
             with self.subTest(bad=bad), self.assertRaises(v.KintsugiError) as caught:
                 v.safe_repo_path(ROOT, bad)
             self.assertEqual(caught.exception.code, "KIN-E-PATH")
+
+    def test_safe_repo_path_rejects_raw_empty_and_dot_segments(self):
+        for bad in ("a//b", "a/./b", "a/"):
+            with self.subTest(bad=bad):
+                with self.assertRaises(v.KintsugiError) as caught:
+                    v.safe_repo_path(ROOT, bad)
+                self.assertEqual(caught.exception.code, "KIN-E-PATH")
 
 class ParserTests(unittest.TestCase):
     def test_collect_parser_ignores_summary(self):
@@ -127,16 +135,94 @@ class ComparisonTests(unittest.TestCase):
 
 class RunnerTests(unittest.TestCase):
     @mock.patch.object(v.subprocess, "run")
+    def test_runner_sanitizes_hostile_pytest_environment_without_writes(self, run):
+        run.return_value = subprocess.CompletedProcess([], 0, "", "")
+        hostile = {
+            "PYTEST_ADDOPTS": "-k never",
+            "PYTEST_PLUGINS": "hostile_plugin",
+            "PYTEST_DEBUG": "1",
+        }
+        with mock.patch.dict(os.environ, hostile, clear=False):
+            v.run_process(v.COLLECT_COMMAND, ROOT)
+            self.assertIn("env", run.call_args.kwargs)
+            env = run.call_args.kwargs["env"]
+            self.assertIs(env, v.PYTEST_ENV)
+            self.assertEqual({
+                key: env[key]
+                for key in (
+                    "PYTEST_ADDOPTS", "PYTEST_DISABLE_PLUGIN_AUTOLOAD",
+                    "PYTHONDONTWRITEBYTECODE",
+                )
+            }, {
+                "PYTEST_ADDOPTS": "-c /dev/null -p no:cacheprovider",
+                "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+                "PYTHONDONTWRITEBYTECODE": "1",
+            })
+            self.assertNotIn("PYTEST_PLUGINS", env)
+            self.assertEqual(
+                {key for key in env if key.startswith("PYTEST_")},
+                {"PYTEST_ADDOPTS", "PYTEST_DISABLE_PLUGIN_AUTOLOAD"},
+            )
+            with self.assertRaises(TypeError):
+                env["PYTEST_ADDOPTS"] = "-k never"
+
+    @mock.patch.object(v.subprocess, "run")
     def test_runner_uses_collect_full_and_isolated_commands(self, run):
         run.side_effect = [
             subprocess.CompletedProcess([], 0, "suite.py::test_one\n1 test collected\n", ""),
             subprocess.CompletedProcess([], 1, "FAILED suite.py::test_one - AssertionError: expected\n", ""),
-            subprocess.CompletedProcess([], 1, "E   AssertionError: expected\n", ""),
+            subprocess.CompletedProcess([], 1, (
+                "E   AssertionError: expected\n"
+                "FAILED suite.py::test_one - AssertionError: expected\n"
+            ), ""),
         ]
         result = v.run_baseline(ROOT, tiny_contract())
         self.assertEqual(result, v.BaselineResult(1, 1, ()))
         self.assertEqual(run.call_count, 3)
         self.assertEqual(run.call_args_list[2].args[0][-1], "suite.py::test_one")
+
+    @mock.patch.object(v.subprocess, "run")
+    def test_isolated_probe_exit_zero_fails_closed(self, run):
+        result = run_with_isolated_probe(run, subprocess.CompletedProcess([], 0, (
+            "E   AssertionError: expected\n"
+            "FAILED suite.py::test_one - AssertionError: expected\n"
+        ), ""))
+        self.assertIn("isolated pytest returned unexpected exit 0", {
+            issue.message for issue in result.issues
+        })
+
+    @mock.patch.object(v.subprocess, "run")
+    def test_isolated_probe_runtime_error_fails_closed(self, run):
+        result = run_with_isolated_probe(run, subprocess.CompletedProcess([], 1, (
+            "E   AssertionError: expected\n"
+            "ERROR suite.py::test_one - RuntimeError\n"
+        ), ""))
+        self.assertIn("isolated pytest runtime/collection error", {
+            issue.message for issue in result.issues
+        })
+        self.assertEqual(result.issues, tuple(sorted(result.issues)))
+
+    @mock.patch.object(v.subprocess, "run")
+    def test_isolated_probe_wrong_failed_node_fails_closed(self, run):
+        result = run_with_isolated_probe(run, subprocess.CompletedProcess([], 1, (
+            "E   AssertionError: expected\n"
+            "FAILED suite.py::test_other - AssertionError: expected\n"
+        ), ""))
+        self.assertIn("isolated failure summary differs from requested node", {
+            issue.message for issue in result.issues
+        })
+
+    @mock.patch.object(v.subprocess, "run")
+    def test_isolated_probe_signature_must_come_from_evidence_line(self, run):
+        result = run_with_isolated_probe(run, subprocess.CompletedProcess([], 1, (
+            "E   AssertionError: different\n"
+            "---------------- Captured stdout call ----------------\n"
+            "expected\n"
+            "FAILED suite.py::test_one - AssertionError: different\n"
+        ), ""))
+        self.assertIn("required failure signature is absent", {
+            issue.message for issue in result.issues
+        })
 
     @mock.patch.object(v.subprocess, "run")
     def test_runtime_error_cannot_pass_as_green(self, run):
@@ -204,6 +290,14 @@ def tiny_contract():
             "requiredSignature": "expected",
         }],
     }
+
+def run_with_isolated_probe(run, probe):
+    run.side_effect = [
+        subprocess.CompletedProcess([], 0, "suite.py::test_one\n1 test collected\n", ""),
+        subprocess.CompletedProcess([], 1, "FAILED suite.py::test_one - AssertionError: expected\n", ""),
+        probe,
+    ]
+    return v.run_baseline(ROOT, tiny_contract())
 
 if __name__ == "__main__":
     unittest.main()

@@ -4,11 +4,13 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
 import subprocess
 import sys
 from dataclasses import dataclass
 from pathlib import Path, PurePosixPath
+from types import MappingProxyType
 from typing import Any, Sequence
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -20,6 +22,15 @@ EXCEPTION_RE = re.compile(r"^E\s+(?P<exception>[A-Za-z_][A-Za-z0-9_.]*(?:Error|E
 BASELINE_COMMAND = ["python3", "-m", "pytest", "-q", "--tb=short"]
 COLLECT_COMMAND = ["python3", "-m", "pytest", "--collect-only", "-q"]
 EXIT_TWO_CODES = {"KIN-E-CLI", "KIN-E-IO"}
+PYTEST_ENV = MappingProxyType({
+    **{
+        key: value for key, value in os.environ.items()
+        if not key.startswith("PYTEST_")
+    },
+    "PYTEST_ADDOPTS": "-c /dev/null -p no:cacheprovider",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+})
 
 @dataclass(frozen=True, order=True)
 class Issue:
@@ -62,9 +73,10 @@ def text_hash(text: str) -> str:
 def safe_repo_path(root: Path, relative: str) -> Path:
     if not relative or relative.startswith("/") or "\\" in relative:
         raise KintsugiError("KIN-E-PATH", relative or "<empty>", "path must be non-empty repository-relative POSIX")
-    pure = PurePosixPath(relative)
-    if any(part in ("", ".", "..") for part in pure.parts):
+    raw_parts = relative.split("/")
+    if any(part in ("", ".", "..") for part in raw_parts):
         raise KintsugiError("KIN-E-PATH", relative, "path contains a forbidden segment")
+    pure = PurePosixPath(relative)
     candidate = (root / Path(*pure.parts)).resolve(strict=False)
     try:
         candidate.relative_to(root.resolve(strict=True))
@@ -121,7 +133,10 @@ def validate_contract(value: Any) -> None:
         seen.add(item["nodeId"])
 
 def run_process(command: Sequence[str], root: Path) -> subprocess.CompletedProcess[str]:
-    return subprocess.run(command, cwd=root, text=True, capture_output=True, check=False)
+    return subprocess.run(
+        command, cwd=root, text=True, capture_output=True, check=False,
+        env=PYTEST_ENV,
+    )
 
 def parse_collected_nodes(output: str) -> set[str]:
     return {
@@ -131,11 +146,21 @@ def parse_collected_nodes(output: str) -> set[str]:
 
 def parse_failed_nodes(output: str) -> list[str]:
     nodes: list[str] = []
-    for line in output.splitlines():
-        match = FAILED_RE.match(line.strip())
-        if match and match.group("node") not in nodes:
-            nodes.append(match.group("node"))
+    for node in parse_failed_node_lines(output):
+        if node not in nodes:
+            nodes.append(node)
     return nodes
+
+def parse_failed_node_lines(output: str) -> list[str]:
+    return [
+        match.group("node")
+        for line in output.splitlines()
+        if (match := FAILED_RE.match(line.strip()))
+    ]
+
+def parse_pytest_evidence(output: str) -> str:
+    lines = [line for line in output.splitlines() if re.match(r"^E\s", line)]
+    return "\n".join(lines) + ("\n" if lines else "")
 
 def infer_exception(output: str) -> str:
     for line in output.splitlines():
@@ -203,12 +228,33 @@ def run_baseline(root: Path, contract: dict[str, Any]) -> BaselineResult:
         return BaselineResult(len(collected), len(failed_nodes), (issue,))
     isolated: dict[str, str] = {}
     failures: dict[str, str] = {}
+    issues: list[Issue] = []
     for node in sorted(failed_nodes):
         probe = run_process(["python3", "-m", "pytest", "-q", "--tb=short", node], root)
-        isolated[node] = probe.stdout + probe.stderr
-        failures[node] = infer_exception(isolated[node])
-    issues = compare_baseline(contract, collected, failures, isolated)
-    return BaselineResult(len(collected), len(failures), tuple(issues))
+        probe_output = probe.stdout + probe.stderr
+        probe_issues: list[Issue] = []
+        if probe.returncode != 1:
+            probe_issues.append(Issue(
+                node, "KIN-E-BASELINE",
+                f"isolated pytest returned unexpected exit {probe.returncode}",
+            ))
+        if parse_pytest_errors(probe_output):
+            probe_issues.append(Issue(
+                node, "KIN-E-BASELINE", "isolated pytest runtime/collection error",
+            ))
+        if parse_failed_node_lines(probe_output) != [node]:
+            probe_issues.append(Issue(
+                node, "KIN-E-BASELINE",
+                "isolated failure summary differs from requested node",
+            ))
+        if probe_issues:
+            issues.extend(probe_issues)
+            continue
+        evidence = parse_pytest_evidence(probe_output)
+        isolated[node] = evidence
+        failures[node] = infer_exception(evidence)
+    issues.extend(compare_baseline(contract, collected, failures, isolated))
+    return BaselineResult(len(collected), len(failures), tuple(sorted(issues)))
 
 class KintsugiArgumentParser(argparse.ArgumentParser):
     def error(self, message: str) -> None:
