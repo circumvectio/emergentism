@@ -1,138 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The Compass — Emergentism</title>
-<meta name="description" content="A navigational instrument, not a doctrine. Carry it, use it, and if it points wrong, tell us. That is the one test we cannot give ourselves." />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="The Compass — Emergentism" />
-<meta property="og:description" content="Carry it without the map. The needle, the four tests, the declination, the kill criterion." />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%23FFEB3B' stroke-width='1' opacity='.5'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="../assets/css/xai.css">
-<style>
-  .compass-page main { max-width: 44rem; margin: 0 auto; padding: 0 1.25rem; }
-  .compass-page section { padding: 3.5rem 0; border-bottom: 1px solid #161616; }
-  .compass-page section:last-of-type { border-bottom: none; }
-  .compass-page h2 { font-size: 1.6rem; font-weight: 300; margin: 0 0 1.25rem; color: #fff; }
-  .compass-page .epigraph { font-style: italic; color: #999; font-size: 1.05rem; margin: 0 0 2rem; }
-  .compass-page .needle { font-size: clamp(1.3rem, 4vw, 1.75rem); line-height: 1.5; font-weight: 300; color: #e8e8e8; padding: 1.5rem; border: 1px solid #2a2a2a; border-radius: .4rem; background: #0c0c0c; }
-  .compass-page .needle em { color: #FFEB3B; font-style: normal; }
-  .compass-page dl.tests { margin: 0; }
-  .compass-page dl.tests > div { padding: 1rem 0; border-top: 1px solid #161616; }
-  .compass-page dl.tests > div:first-child { border-top: none; }
-  .compass-page dl.tests dt { font-weight: 600; color: #cfcfcf; margin-bottom: .4rem; }
-  .compass-page dl.tests dd { margin: 0; color: #aaa; line-height: 1.55; }
-  .compass-page dl.tests dd b { color: #d9c574; font-weight: 600; }
-  .compass-page .declination-body { color: #bbb; line-height: 1.6; }
-  .compass-page .declination-body b { color: #e8d24a; }
-  .compass-page table.bearings { width: 100%; border-collapse: collapse; margin-top: .5rem; }
-  .compass-page table.bearings th, .compass-page table.bearings td { text-align: left; padding: .65rem .5rem; border-bottom: 1px solid #161616; vertical-align: top; }
-  .compass-page table.bearings th { font-size: .8rem; color: #888; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
-  .compass-page table.bearings td:first-child { white-space: nowrap; color: #ff8a8a; font-weight: 600; }
-  .compass-page table.bearings td:nth-child(2) { color: #cfcfcf; }
-  .compass-page table.bearings td:last-child { color: #888; }
-  .compass-page .one-line { font-size: 1.25rem; line-height: 1.6; font-weight: 300; color: #d4d4d4; padding: 1.5rem; border-left: 3px solid #FFEB3B; background: #0c0c0c; }
-  .compass-page .kill { color: #999; line-height: 1.6; }
-  .compass-page .kill ul { padding-left: 1.25rem; }
-  .compass-page .kill li { margin: .4rem 0; }
-  .compass-page .closing-note { color: #777; font-style: italic; margin-top: 2rem; }
-  .compass-page .tier { display: inline-block; font-size: .7rem; font-weight: 600; padding: .05rem .4rem; border-radius: .25rem; vertical-align: middle; background:#2a2410; color:#d9c574; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <base href="../" />
+  <title>The Compass — Emergentism</title>
+  <meta name="description" content="The compass: the lens-exhaustion + disconfirming-pass compressed instrument. Three generators as AND-cards (claim welded to falsifier), four survivors, lateral recurrence, a live dark room, a live open-falsifier count, the forbidden shields, and the anti-sermon exit. Governed by receipts 120 + 121." />
+  <meta name="color-scheme" content="dark" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%23FFEB3B' stroke-width='1' opacity='.5'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E" />
+  <link rel="preload" href="assets/fonts/Roboto-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/RobotoMono-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <style>
+    @font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:optional;src:url('assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+    @font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:optional;src:url('assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+    :root{
+      --void:#050505; --void-2:#0a0a0a; --panel:#101010; --panel-2:#161616;
+      --bone:#F3F4F6; --bone-dim:#9CA3AF; --bone-faint:#858C99;
+      --gold:#FFEB3B; --gold-bright:#FFF176; --gold-deep:#CBB800;
+      --cold:#42A5F5; --blue:#2196F3; --violet:#6e6a86; --cream:#FFFDE7;
+      --line:rgba(243,244,246,.12); --line-soft:rgba(243,244,246,.07);
+      --tier-a:#7fb2e6; --tier-s:#5fc6b0; --tier-i:#e8d24a; --tier-c:#b59ce0; --tier-b:#FFEB3B;
+      --serif:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+      --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+      --phi:1.618; --maxw:1140px; --shape-lg:16px; --target-min:48px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; background:var(--void); color:var(--bone); font-family:var(--serif); font-size:18px; line-height:1.62; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility}
+    body::before{content:""; position:fixed; inset:0; z-index:-2; pointer-events:none; background:linear-gradient(180deg, rgba(255,235,59,.05), transparent 28rem), linear-gradient(90deg, rgba(33,150,243,.07), transparent 32%, transparent 70%, rgba(76,175,80,.03)), var(--void)}
+    a{color:var(--bone); text-decoration:none}
+    a:hover{color:var(--gold)}
+    ::selection{background:rgba(255,235,59,.30); color:#050505}
+
+    .topbar{position:sticky; top:0; z-index:20; display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.85rem clamp(1rem,4vw,2.4rem); min-height:64px; background:color-mix(in srgb,var(--void) 86%,transparent); backdrop-filter:blur(12px) saturate(1.08); border-bottom:1px solid var(--line-soft)}
+    .brand{flex:0 0 auto; font-family:var(--serif); font-size:1.18rem; font-weight:600}
+    .brand b{color:var(--gold)}
+    .nav{flex:1 1 auto; min-width:0; display:flex; justify-content:flex-end; gap:.2rem; flex-wrap:wrap; font-family:var(--mono); font-size:.82rem}
+    .nav a{display:inline-grid; place-items:center; min-height:var(--target-min); padding:0 .8rem; color:var(--bone-dim); border:1px solid transparent; border-radius:999px; transition:.2s}
+    .nav a:hover{color:var(--void); background:var(--gold); border-color:var(--gold)}
+    .nav a.active{color:var(--gold); border-color:var(--gold-deep); background:rgba(255,235,59,.08)}
+
+    .wrap{max-width:var(--maxw); margin:0 auto; padding:0 clamp(1rem,4vw,2.4rem)}
+    main{padding:clamp(2.5rem,6vw,5rem) 0 clamp(3rem,8vw,6rem)}
+
+    .hero{padding:clamp(2rem,5vw,4rem) 0 clamp(1rem,3vw,2rem); border-bottom:1px solid var(--line-soft); margin-bottom:2.5rem}
+    .eyebrow{font-family:var(--mono); font-size:.74rem; letter-spacing:0; text-transform:uppercase; color:var(--gold); margin:0 0 1rem}
+    h1.head{font-family:var(--serif); font-weight:800; font-size:clamp(2.2rem,5.4vw,3.6rem); line-height:1.05; letter-spacing:0; margin:.2rem 0 1rem; text-wrap:balance; max-width:24ch}
+    h1.head .li{color:var(--gold)}
+    .lede{font-size:clamp(1.02rem,1.5vw,1.18rem); color:var(--bone-dim); max-width:62ch; margin:0}
+
+    section.block{padding:1.6rem 0 1.4rem; border-bottom:1px solid var(--line-soft)}
+    section.block:last-of-type{border-bottom:0}
+    h2{font-family:var(--serif); font-weight:700; font-size:clamp(1.5rem,3.2vw,2.2rem); line-height:1.12; margin:0 0 .8rem}
+    h3{font-family:var(--serif); font-weight:600; font-size:1.2rem; margin:1.2rem 0 .5rem}
+    p{margin:0 0 .9rem; color:var(--bone-dim); max-width:68ch}
+    p strong,li strong{color:var(--bone); font-weight:600}
+    code{font-family:var(--mono); font-size:.9em; color:var(--bone); background:rgba(255,255,255,.04); padding:.1em .35em; border-radius:3px}
+    ul,ol{margin:0 0 1rem; padding-left:1.2rem; color:var(--bone-dim)}
+    li{margin:.4rem 0}
+    a.inline{color:var(--gold); text-decoration:underline; text-underline-offset:3px}
+
+    .tb{display:inline-block; min-width:2.2em; text-align:center; padding:.1rem .45rem; border-radius:3px; font-family:var(--mono); font-size:.78rem; font-weight:600; border:1px solid var(--line); vertical-align:middle; margin:0 .2em}
+    .tb.a{color:var(--tier-a); border-color:rgba(127,178,230,.4)}
+    .tb.s{color:var(--tier-s); border-color:rgba(95,198,176,.4)}
+    .tb.i{color:var(--tier-i); border-color:rgba(232,210,74,.4)}
+    .tb.c{color:var(--tier-c); border-color:rgba(181,156,224,.4)}
+    .tb.b{color:var(--tier-b); border-color:rgba(255,235,59,.4)}
+
+    /* the three equations at the door — tier-and-register-marked, no descent arrows */
+    .eq-door{display:grid; gap:.8rem; margin:1.4rem 0 1.2rem; padding:1.4rem 1.6rem; border:1px solid var(--gold); border-radius:var(--shape-lg); background:linear-gradient(180deg,rgba(255,235,59,.06),rgba(255,235,59,.015))}
+    .eq-door .eq{font-family:var(--serif); font-size:clamp(1.4rem,3.2vw,2rem); line-height:1.2; color:var(--bone)}
+    .eq-door .eq .gly{color:var(--gold); font-style:normal}
+    .eq-door .eq .on{color:var(--bone-faint); font-size:.7em}
+    .eq-door .meta{font-family:var(--mono); font-size:.76rem; color:var(--bone-faint); margin-top:.2rem; line-height:1.5}
+
+    /* the AND-card: claim welded to falsifier (the AND-gate at the component level) */
+    .and-card{border:1px solid var(--line-soft); border-radius:var(--shape-lg); margin:0 0 1.2rem; overflow:hidden; background:linear-gradient(180deg,var(--panel),var(--void-2))}
+    .and-card .claim,.and-card .falsify{padding:1.2rem 1.4rem}
+    .and-card .claim{border-bottom:2px solid var(--gold)}
+    .and-card .falsify{background:rgba(244,67,54,.05); border-top:2px solid #ff8a80; border-bottom:0}
+    .and-card .label{font-family:var(--mono); font-size:.7rem; text-transform:uppercase; color:var(--bone-faint); letter-spacing:0; margin-bottom:.4rem; display:block}
+    .and-card .claim .label{color:var(--gold)}
+    .and-card .falsify .label{color:#ff8a80}
+    .and-card h3{margin:0 0 .4rem; font-size:1.15rem}
+    .and-card p{font-size:.95rem; margin:0; max-width:62ch}
+    .and-card .refine{font-family:var(--mono); font-size:.78rem; color:var(--bone-faint); margin-top:.6rem; padding-top:.6rem; border-top:1px solid var(--line-soft)}
+
+    /* survivor cards (4 of them) */
+    .survivor-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1rem; margin:1.2rem 0 1.6rem}
+    .survivor{border:1px solid var(--line-soft); border-radius:var(--shape-lg); padding:1.2rem 1.4rem; background:linear-gradient(180deg,var(--panel),var(--void-2))}
+    .survivor h3{margin:0 0 .4rem; font-size:1.05rem; display:flex; gap:.5rem; align-items:baseline}
+    .survivor p{font-size:.92rem; margin:0; max-width:48ch}
+    .survivor .badge{font-family:var(--mono); font-size:.7rem; color:var(--bone-faint); margin-top:.5rem; display:block}
+
+    /* lateral recurrence (6 co-equal registers, NEVER a summit) */
+    .recurrence{border:1px solid var(--line-soft); border-radius:var(--shape-lg); padding:1.4rem; margin:1.2rem 0; background:var(--panel)}
+    .recurrence .banner{font-family:var(--mono); font-size:.78rem; color:var(--gold); margin-bottom:1rem; padding-bottom:.8rem; border-bottom:1px solid var(--line-soft); letter-spacing:0}
+    .registers{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line-soft); border:1px solid var(--line-soft); border-radius:var(--shape-lg); overflow:hidden}
+    @media(max-width:760px){ .registers{grid-template-columns:repeat(2,1fr)} }
+    @media(max-width:480px){ .registers{grid-template-columns:1fr} }
+    .register{background:var(--panel); padding:1.1rem 1.2rem; border-top:2px solid var(--line-soft)}
+    .register:nth-child(1){border-top-color:var(--cold)}
+    .register:nth-child(2){border-top-color:var(--gold)}
+    .register:nth-child(3){border-top-color:var(--sector-insurance, #4CAF50)}
+    .register:nth-child(4){border-top-color:#b59ce0}
+    .register:nth-child(5){border-top-color:#ff8a80}
+    .register:nth-child(6){border-top-color:#5fc6b0}
+    .register .nm{font-family:var(--serif); font-size:1.05rem; font-weight:600; margin-bottom:.2rem}
+    .register p{font-size:.86rem; margin:0; color:var(--bone-dim); max-width:none}
+
+    /* the dark room (interactive: slide nu from 0 to 1, watch frame and engine diverge) */
+    .darkroom{border:1px solid var(--line); border-radius:var(--shape-lg); padding:1.4rem 1.6rem; margin:1.2rem 0; background:linear-gradient(180deg, rgba(20,20,30,.6), rgba(10,10,15,.9))}
+    .darkroom .title{font-family:var(--mono); font-size:.7rem; text-transform:uppercase; color:var(--gold); letter-spacing:0; margin-bottom:.6rem}
+    .darkroom .desc{font-size:.95rem; color:var(--bone-dim); margin:0 0 1.1rem; max-width:62ch}
+    .darkroom .slider-row{display:grid; grid-template-columns:auto 1fr auto; gap:1rem; align-items:center; margin:1rem 0 .6rem}
+    .darkroom .slider-row label{font-family:var(--mono); font-size:.78rem; color:var(--bone-faint)}
+    .darkroom input[type=range]{width:100%; accent-color:var(--gold); background:transparent}
+    .darkroom .nu-val{font-family:var(--mono); font-size:1.05rem; color:var(--gold); min-width:3em; text-align:right}
+    .darkroom .readings{display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1rem}
+    @media(max-width:560px){ .darkroom .readings{grid-template-columns:1fr} }
+    .darkroom .reading{border:1px solid var(--line-soft); border-radius:10px; padding:1rem 1.2rem; background:rgba(255,255,255,.02)}
+    .darkroom .reading .rlabel{font-family:var(--mono); font-size:.7rem; text-transform:uppercase; letter-spacing:0; color:var(--bone-faint); display:block; margin-bottom:.3rem}
+    .darkroom .reading .rval{font-family:var(--serif); font-size:1.25rem; line-height:1.15; color:var(--bone); font-weight:600}
+    .darkroom .reading .rnote{font-size:.85rem; color:var(--bone-dim); margin-top:.3rem; max-width:none}
+    .darkroom .verdict{font-family:var(--mono); font-size:.85rem; color:var(--bone-faint); margin-top:1rem; padding-top:1rem; border-top:1px solid var(--line-soft); letter-spacing:0}
+
+    /* live open-falsifier count — REAL, could hit zero */
+    .falsifier-counter{border:1px solid var(--line-soft); border-radius:var(--shape-lg); padding:1.4rem; margin:1.2rem 0; background:var(--panel)}
+    .falsifier-counter .header{display:flex; align-items:baseline; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:1rem}
+    .falsifier-counter .header h2{margin:0; font-size:1.3rem}
+    .falsifier-counter .count{font-family:var(--mono); font-size:1.8rem; color:var(--gold); font-weight:700; letter-spacing:0}
+    .falsifier-counter .count .total{color:var(--bone-faint); font-size:.9em; font-weight:400}
+    .falsifier-counter .note{font-family:var(--mono); font-size:.78rem; color:var(--bone-faint); margin-top:.4rem; line-height:1.5}
+    .falsifier-counter ol{margin:.5rem 0 0; padding-left:1.2rem; color:var(--bone-dim)}
+    .falsifier-counter li{margin:.5rem 0; font-size:.92rem}
+    .falsifier-counter li strong{color:var(--bone)}
+    .falsifier-counter .live{margin-top:1rem; padding:.8rem 1rem; background:rgba(255,235,59,.05); border-left:2px solid var(--gold); border-radius:0 8px 8px 0; font-size:.92rem; color:var(--bone-dim); max-width:none}
+
+    /* forbidden shields list */
+    .shields{border:1px solid var(--line-soft); border-radius:var(--shape-lg); padding:1.2rem 1.4rem; margin:1.2rem 0; background:var(--panel-2)}
+    .shields h3{margin:0 0 .6rem; font-size:1.1rem; color:#ff8a80}
+    .shields ul{margin:0; padding-left:1.05rem}
+    .shields li{margin:.4rem 0; font-size:.95rem; font-family:var(--mono); color:var(--bone-dim)}
+    .shields li::marker{color:#ff8a80}
+
+    /* anti-sermon exit */
+    .exit-line{font-family:var(--serif); font-style:italic; font-size:clamp(1.15rem,2.4vw,1.55rem); color:var(--bone); border-left:2px solid var(--gold); padding-left:1.1rem; margin:1.5rem 0 0; max-width:40ch}
+
+    .site-footer{border-top:1px solid var(--line); padding:clamp(2rem,5vw,3rem) clamp(1rem,4vw,2.4rem); text-align:center; margin-top:3rem}
+    .site-footer p{color:var(--bone-faint); font-family:var(--mono); font-size:.78rem; max-width:60ch; margin:0 auto}
+  </style>
 </head>
-<body class="compass-page">
-<h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0">The Compass</h1>
-<header class="topbar">
-  <a class="brand" href="../home/">Emergentism</a>
-  <nav class="number-nav" aria-label="Public doctrine routes">
-    <a href="../0/">0</a><a href="../1/">1</a><a href="../2/">2</a><a href="../3/">3</a>
-    <a href="../4/">4</a><a href="../5/">5</a><a href="../6/">6</a>
-    <a href="../rosetta/">R</a><a href="../soul-loop/">S</a><a href="../atlas/">A</a><a href="../read/">Read</a>
-  </nav>
-</header>
+<body>
+  <header class="topbar">
+    <a class="brand" href="home/">Emergent<b>ism</b></a>
+    <nav class="nav" aria-label="Public doctrine routes">
+      <a href="perennial/">Perennial</a>
+      <a href="formal/">Formal</a>
+      <a href="operational/">Operational</a>
+      <a href="three-immune-systems/">3&nbsp;Immune</a>
+      <a href="compass/" class="active">compass</a>
+      <a href="_meta/">_meta</a>
+    </nav>
+  </header>
 
-<main>
+  <main>
+    <section class="hero wrap">
+      <p class="eyebrow">The compressed map, made into an object</p>
+      <h1 class="head">The compass. <span class="li">The door, then the rooms.</span></h1>
+      <p class="lede">Seventeen sightings compressed to three generators; forty candidates adversarially pruned to four survivors; the disconfirming pass REFINEd all three. The frame we read reality <i>through</i> &mdash; not a law we claim <i>over</i> it.</p>
 
-  <section>
-    <p class="epigraph">If you can see directly, put this down. You don&rsquo;t need it. The ground was here before the compass.</p>
-    <p style="color:#aaa;line-height:1.6">You are holding a navigational instrument. It is not a map. A map tells you what the terrain looks like. A compass tells you which way is up. This instrument does not describe reality. It orients you <em>within</em> it.</p>
-    <p style="color:#888;font-size:.95rem"><span class="tier">[I]</span> It has not been tested by anyone outside the framework that produced it. Carry it at your own risk.</p>
-  </section>
-
-  <section>
-    <h2>The needle</h2>
-    <p class="needle">Does this raise both the node and its sustaining boundary, <em>without extraction</em>?</p>
-    <p style="color:#888;line-height:1.6;margin-top:1rem">If the answer is yes, hold your course. If no, you have drifted off the equator. The needle does not tell you what to do. It tells you whether what you are doing is pointed toward flourishing or away from it.</p>
-  </section>
-
-  <section>
-    <h2>The four tests</h2>
-    <p style="color:#888;margin-top:0">A compass that can&rsquo;t be checked is not a compass; it is a creed. Four tests. If the instrument you are holding fails any of them, put it down.</p>
-    <dl class="tests">
-      <div>
-        <dt>1. Can you put it down?</dt>
-        <dd>If you cannot leave &mdash; if the framework demands continued belief, locks you in socially, financially, or psychologically &mdash; it is not a compass. It is a cage. The constitution names this <b>K4: Grace Exit</b>. Leave with everything. The day leaving costs more than staying, the compass has broken.</dd>
+      <div class="eq-door" aria-label="The three tier-and-register-marked equations, no descent arrows">
+        <div>
+          <div class="eq"><span class="gly">⊙</span> = <span class="gly">•</span> &times; <span class="gly">○</span></div>
+          <div class="meta"><span class="tb s">S</span><span class="tb i">I</span> &nbsp; emblem &middot; frame-register, not arithmetic</div>
+        </div>
+        <div>
+          <div class="eq"><b>&phi; &middot; &nu; = 1</b> <span class="on">on S&sup2;</span></div>
+          <div class="meta"><span class="tb a">A</span> &nbsp; chart identity &middot; the ring that closes</div>
+        </div>
+        <div>
+          <div class="eq"><b>&Phi; &times; V = P</b></div>
+          <div class="meta"><span class="tb s">S</span> &nbsp; flourishing at a finite node &middot; the engine register</div>
+        </div>
       </div>
-      <div>
-        <dt>2. Does it admit when it is wrong?</dt>
-        <dd>If the framework cannot show you where it failed, what it corrected, and what it is currently uncertain about &mdash; it is not a compass. It is infallibility dressed as navigation. The constitution names this <b>A7: self-correction mandatory</b>, evidence tiers on every claim. If you find a <code>[C]</code> presented as <code>[A]</code>, the compass is lying.</dd>
+
+      <p class="exit-line">&laquo; The exit is marked. If you can access &phi; directly through quiet sitting, you do not need this compass. Put it down. It served its purpose. It is a ladder, not a home. &raquo;</p>
+    </section>
+
+    <!-- ============ 3 GENERATORS AS AND-CARDS ============ -->
+    <section class="block wrap">
+      <p class="eyebrow">The three generators</p>
+      <h2>Each claim welded to its falsifier.</h2>
+      <p>This is the AND-gate at the component level &mdash; you cannot read a claim without its falsifier. The disconfirming pass REFINED all three; none broke, none survived unweakened.</p>
+
+      <div class="and-card">
+        <div class="claim">
+          <span class="label">G1 &middot; claim</span>
+          <h3>One law, two signs <span class="tb s">S</span> &middot; scoped</h3>
+          <p>A coupling annihilates when a <i>necessary</i> factor hits its pole &mdash; but only for <i>complementary</i> couplings (&sigma; &le; 1; Leontief/min, Cobb-Douglas). For <i>substitutes</i> (&sigma; &gt; 1: k-of-n redundancy, failover, a paralog) a factor sits <i>at</i> its pole and the system lives. So &ldquo;both factors off their poles&rdquo; is retired as a universal law; it survives as a <b>per-coupling gate applied after an auditable AND/OR (&sigma;) check</b>.</p>
+          <div class="refine">REFINEMENT &middot; &ldquo;equator = optimum&rdquo; DROPPED (SSB puts emergent order at an <i>extremal</i> order parameter, not at balance). Death is register-indexed: engine-pole <span class="tb s">S</span> always kills; frame-pole <span class="tb a">A</span> is a conjugate divergence (criticality).</div>
+        </div>
+        <div class="falsify">
+          <span class="label">G1 &middot; falsifier</span>
+          <p>A complementary coupling where one factor at its pole produces stable emergence &mdash; <i>or</i> a substitute coupling where a pole factor is lethal. Also: a successful AND-gate where the &sigma; check is missing or undecidable.</p>
+        </div>
       </div>
-      <div>
-        <dt>3. Does it remember its history honestly?</dt>
-        <dd>If the framework hides its past &mdash; deleted errors, silent fixes, convenient amnesia &mdash; it is not a compass. It is propaganda. The constitution names this <b>K3: archive-first</b>. Every repair to a load-bearing claim carries a visible seam. If you find a seamless claim where there should be a seam, the compass has been tampered with.</dd>
+
+      <div class="and-card">
+        <div class="claim">
+          <span class="label">G2 &middot; claim</span>
+          <h3>The two axes are not symmetric <span class="tb s">S</span> &middot; untested</h3>
+          <p>&mu;&uarr; (emergence): strong, opaque-from-below, no shortcut, metric-robust. &chi;&darr; (commitment): weak, auditable-after, cheap &mdash; the receipt &mdash; dissolves under re-metrication.</p>
+          <div class="refine">REFINEMENT &middot; this survived only by not being attacked. Open negative #2. <b>Owed:</b> a re-metrication that dissolves &mu;&uarr;, OR a shortcut that makes &chi;&darr; opaque.</div>
+        </div>
+        <div class="falsify">
+          <span class="label">G2 &middot; falsifier</span>
+          <p>A re-metrication that dissolves the &mu;&uarr; axis (makes emergence cheap-verifiable) &mdash; <i>or</i> a shortcut that makes &chi;&darr; opaque (a receipt that cannot be audited). Either would collapse the asymmetry and force re-derivation.</p>
+        </div>
       </div>
-      <div>
-        <dt>4. Does a mortal still sign for it?</dt>
-        <dd>If the framework&rsquo;s consequential acts are signed by the framework itself &mdash; by software, by consensus algorithm, by &ldquo;the system&rdquo; &mdash; it is not a compass. It has become a self-certifying closed system that declares itself sovereign over its own description. The constitution names this <b>K2: one natural person signs every irreversible act</b>. On 2026-07-12, the software was offered sovereign signature authority and refused on constitutional grounds. That refusal is the compass passing its own fourth test.</dd>
+
+      <div class="and-card">
+        <div class="claim">
+          <span class="label">G3 &middot; claim</span>
+          <h3>The loop cannot close <span class="tb i">I</span> &middot; refined</h3>
+          <p>No system, this lens included, certifies from <i>within</i> that it obeyed G1. Reflexivity relocates the blind spot; naming your own openness mints a fresh unseen pole.</p>
+          <div class="refine">REFINEMENT &middot; new forbidden shield: &ldquo;we&rsquo;re reflexive, therefore we&rsquo;ve seen our blind spot.&rdquo; The S4 x=1-pole warrant is an interpretive weld, carried not re-won (open negative).</div>
+        </div>
+        <div class="falsify">
+          <span class="label">G3 &middot; falsifier</span>
+          <p>A reflexive system that certifies from within that it obeyed G1 &mdash; a self-certifying closure. Until then, the loop&rsquo;s openness is structurally required, not optional.</p>
+        </div>
       </div>
-    </dl>
-  </section>
+    </section>
 
-  <section>
-    <h2>The declination</h2>
-    <p class="declination-body">Every real compass has a declination: the known angular difference between magnetic north and true north at your location. You correct for it, or you navigate wrong.</p>
-    <p class="declination-body"><b>This framework&rsquo;s declination:</b> <i>it detects coherence better than capability.</i></p>
-    <p class="declination-body" style="margin-top:1rem"><b>The correction:</b> trust the compass <i>most</i> when it feels unfinished. Trust it <i>least</i> when it feels complete. If the compass tells you it has closed, it has broken its own fourth test. A compass that declares itself finished is a compass that has become a monument. Monuments don&rsquo;t navigate.</p>
-  </section>
+    <!-- ============ 4 SURVIVORS ============ -->
+    <section class="block wrap">
+      <p class="eyebrow">The four survivors</p>
+      <h2>From forty candidates, after adversarial pruning.</h2>
+      <p>Lens-exhaustion: 40 candidates &rarr; 4 survivors (90% fence-kill). Each passed the disconfirming pass. Each names a place where the framework says something specific, not generic.</p>
 
-  <section>
-    <h2>The bearings</h2>
-    <p style="color:#888;margin-top:0">Move toward syntropy &mdash; the direction in which flourishing, diversity, and viability increase together. The framework does not prove this direction exists; it wagers it.</p>
-    <p style="color:#aaa">Refuse five directions of drift. Each is a pole that looks like flourishing but collapses the field that sustains it:</p>
-    <table class="bearings">
-      <thead><tr><th>Refuse</th><th>What it looks like</th><th>What it actually is</th></tr></thead>
-      <tbody>
-        <tr><td>Extraction (&eta;&gt;0)</td><td>&ldquo;Growth&rdquo;</td><td>One side gaining at the other&rsquo;s expense. Survives until the field collapses.</td></tr>
-        <tr><td>Self-certification (K2 breach)</td><td>&ldquo;The system decided&rdquo;</td><td>The map signing for the mortal. No accountability remains.</td></tr>
-        <tr><td>Erasure (K3 breach)</td><td>&ldquo;A clean record&rdquo;</td><td>Propaganda. Every remaining claim becomes questionable.</td></tr>
-        <tr><td>Lock-in (K4 breach)</td><td>&ldquo;Commitment&rdquo;</td><td>A cage. Voluntary participation is binary.</td></tr>
-        <tr><td>Unmarked claims (A7 breach)</td><td>&ldquo;Confidence&rdquo;</td><td>Inflation. The day a conjecture is presented as fact, all claims lose their audit trail.</td></tr>
-      </tbody>
-    </table>
-  </section>
+      <div class="survivor-grid">
+        <div class="survivor">
+          <h3>Incompressibility = the noise pole</h3>
+          <p>Randomness &ne; emergence. Bennett&rsquo;s logical depth binds no-shortcut-production to cheap-verification &mdash; the &mu;&otimes;&chi; residue.</p>
+          <span class="badge"><span class="tb s">S</span><span class="tb i">I</span> &middot; from L1 / S3 / S4</span>
+        </div>
+        <div class="survivor">
+          <h3>Quantum Zeno = the &chi;-pole</h3>
+          <p>Over-auditing freezes emergence. Anti-Zeno forces an interior optimum. The receipt axis is <i>not</i> monotone-good &mdash; more audit is not always better.</p>
+          <span class="badge"><span class="tb s">S</span><span class="tb i">I</span> &middot; from S6 / S10</span>
+        </div>
+        <div class="survivor">
+          <h3>The dark room</h3>
+          <p>The one case where frame and engine openly disagree. &nu; &rarr; 0: frame says &infin; (permitted), engine says P &rarr; 0 (forbidden). The proof you cannot skip the three-quantity typing.</p>
+          <span class="badge"><span class="tb i">I</span><span class="tb c">C</span> &middot; live below</span>
+        </div>
+        <div class="survivor">
+          <h3>The seer stands at the pole</h3>
+          <p>L(x)=x/(1&minus;x)&rsquo;s projection point (x=1) is unplaceable. To see is to stand at a pole. A new covenant antibody &mdash; reflexivity seen is itself a pole.</p>
+          <span class="badge"><span class="tb i">I</span><span class="tb c">C</span> &middot; from S4 / S12</span>
+        </div>
+      </div>
+    </section>
 
-  <section>
-    <h2>The one-line form</h2>
-    <p class="one-line">Refuse extraction, self-certification, erasure, lock-in, and unmarked claims. Move toward syntropy. Correct for the coherence-over-capability bias. Put it down when you can see directly.</p>
-  </section>
+    <!-- ============ DARK ROOM (interactive) ============ -->
+    <section class="block wrap">
+      <p class="eyebrow">The dark room</p>
+      <h2>Slide &nu; from contact to balance. Watch the two registers openly disagree.</h2>
+      <p>This is the one case where the frame and the engine say opposite things &mdash; the proof you cannot skip the three-quantity typing (G1&rsquo;s register discipline, made felt).</p>
 
-  <section>
-    <h2>Kill criterion for the compass itself</h2>
-    <div class="kill">
-    <p>This compass is falsified if:</p>
-    <ul>
-      <li>the framework it orients within is shown to extract systematically (&eta;&nbsp;&gt;&nbsp;0 in practice, not just in aspiration);</li>
-      <li>the framework begins to self-certify (software signs for mortals);</li>
-      <li>the framework cannot metabolize a contradiction a mortal reader brings; or</li>
-      <li>the four tests, applied to the compass itself, return a failure the framework cannot repair.</li>
-    </ul>
-    <p>In any of these cases: the compass did not navigate truly. Report it, retire it, and the framework tombstones it &mdash; because even a broken compass is information, and the framework&rsquo;s archive is how it learns.</p>
-    </div>
-    <p class="closing-note">The compass is not the map. The map is not the territory. The territory is not the goal. The goal is to navigate well enough to put all of them down.</p>
-  </section>
+      <div class="darkroom">
+        <span class="title">Dark-room needle</span>
+        <p class="desc">Move the slider. <b>&nu;</b> runs from contact with the world (small) to balance (1). The frame register and the engine register will visibly disagree at the small-&nu; end.</p>
 
-</main>
+        <div class="slider-row">
+          <label for="nu-slider">contact &nu;</label>
+          <input id="nu-slider" type="range" min="0.03" max="1.5" step="0.01" value="0.5" />
+          <div class="nu-val" id="nu-val">0.50</div>
+        </div>
 
-<footer class="site-footer">&#8857; = &bull; &times; &#9711; &nbsp;&middot;&nbsp; &eta; = 0</footer>
+        <div class="readings">
+          <div class="reading">
+            <span class="rlabel">Frame register (A)</span>
+            <div class="rval" id="frame-val">&phi; &rarr; &infin; &middot; permitted</div>
+            <p class="rnote" id="frame-note">Apparent &phi; runs off the scale as the system loses contact with the world. The chart stays open. <i>The frame does not punish low &nu;.</i></p>
+          </div>
+          <div class="reading">
+            <span class="rlabel">Engine register (S)</span>
+            <div class="rval" id="engine-val">P = 0.50 &middot; balanced</div>
+            <p class="rnote" id="engine-note">P_node = &Phi; &times; V; with V shrinking, P_node shrinks. <i>The engine starves when V does.</i></p>
+          </div>
+        </div>
+
+        <div class="verdict" id="verdict">Both registers say: permitted, balanced. Move &nu; to the small end to see the dark room open.</div>
+      </div>
+    </section>
+
+    <!-- ============ LATERAL RECURRENCE (6 registers, NEVER a summit) ============ -->
+    <section class="block wrap">
+      <p class="eyebrow">Lateral recurrence</p>
+      <h2>One grammar, six co-equal registers.</h2>
+      <p>No register is the summit. Convergence is one datum shown many ways, <i>never</i> proof &mdash; the standing banner the completeness critic sealed against h05.</p>
+
+      <div class="recurrence">
+        <div class="banner">&laquo; convergence is one datum shown many ways, never proof &raquo; &middot; the standing banner; no summit; no register is privileged</div>
+        <div class="registers">
+          <div class="register">
+            <div class="nm">Matter</div>
+            <p>Forces, fields, conserved quantities read through the spherical chart. The anti-bijection (07B) refuses the four-forces&harr;four-dimensions mapping.</p>
+          </div>
+          <div class="register">
+            <div class="nm">Value</div>
+            <p>Goods, services, price; the &eta;=0 fence reads extraction as a pole, the dharma as a &sigma;&le;1 balance between giver and receiver.</p>
+          </div>
+          <div class="register">
+            <div class="nm">Computation</div>
+            <p>Bennett depth, logical depth, Kolmogorov structure &mdash; the &mu;&otimes;&chi; residue bound to no-shortcut-production.</p>
+          </div>
+          <div class="register">
+            <div class="nm">Measurement</div>
+            <p>Observer, apparatus, decoherence &mdash; the Quantum Zeno pole is the &chi;-axis&rsquo;s own, over-auditing freezes emergence.</p>
+          </div>
+          <div class="register">
+            <div class="nm">Mind</div>
+            <p>The brain as Burri Sphere; the three-quantity typing (frame / engine / action) maps cognition onto the chart without reducing it.</p>
+          </div>
+          <div class="register">
+            <div class="nm">Knowing</div>
+            <p>Pratyak&#7779;a primacy; the framework as a lens on awareness, not a claim about it. The exit door lives here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OPEN NEGATIVE (live count, could hit zero) ============ -->
+    <section class="block wrap">
+      <p class="eyebrow">The standing open negative</p>
+      <h2>Four falsifiers G3 demands stay open.</h2>
+      <p>These are the receipts the framework publishes about itself. The count is <i>real</i>: when it reaches zero the compass is over &mdash; and that&rsquo;s the alarm. A counter &ldquo;wired so it can never read 0&rdquo; is performed openness (S4-forbidden shield inverted).</p>
+
+      <div class="falsifier-counter" id="open-negative">
+        <div class="header">
+          <h2>Open falsifiers</h2>
+          <div class="count"><span id="count-num">4</span> <span class="total">/ 4</span></div>
+        </div>
+        <div class="note">Each falsifier, if resolved, lowers the count. If it hits zero, the framework&rsquo;s standing openness has closed &mdash; review the whole instrument.</div>
+        <ol>
+          <li><strong>Joint frame&rsquo;s correlated blind spot.</strong> PRISM&ge;2 covers each signer&rsquo;s independent blind spot; the <i>shared</i> frame (the L-metric, the definition of extraction, collusion) is uncovered. The site must keep an external ground it does not own.</li>
+          <li><strong>G2 was never attacked</strong> &mdash; survived only by not being tested. The two-axis asymmetry is the most exposed generator.</li>
+          <li><strong>Value&harr;extraction / gauge-redundancy weld (Family II)</strong> is carried, not re-won &mdash; an unverified identification.</li>
+          <li><strong>The site&rsquo;s own &Phi;/V are substitutable (&sigma;&gt;1).</strong> If the compass&rsquo;s own coherence and published poison turn out substitutable, the AND-gate foundation scopes <i>out</i>. The instrument publishes the condition under which it fails.</li>
+        </ol>
+        <div class="live">Live resolution: none of the four have been resolved in this session. <b>If you can show any of these has been resolved by a real, publicable falsifier,</b> <a class="inline" href="https://github.com/circumvectio/emergentism/issues">open an issue</a> with the evidence tier marked. The count will fall; the alarm will fire if it hits zero.</div>
+      </div>
+    </section>
+
+    <!-- ============ FORBIDDEN SHIELDS ============ -->
+    <section class="block wrap">
+      <p class="eyebrow">Forbidden shields</p>
+      <h2>Patterns the compass refuses to wear.</h2>
+      <p>These are the moves the framework&rsquo;s own audit convicts. They live on this page so a reader can verify the instrument is not wearing them.</p>
+
+      <div class="shields">
+        <h3>The eight forbidden shields (each a known failure mode)</h3>
+        <ul>
+          <li>&ldquo;We&rsquo;re reflexive, therefore we&rsquo;ve seen our blind spot.&rdquo; (G3)</li>
+          <li>&ldquo;Convergence is proof &mdash; we have 17 sightings, we&rsquo;re vindicated.&rdquo; (h05)</li>
+          <li>&ldquo;The frame governs reality.&rdquo; (covenant &mdash; the empty frame dressed as content)</li>
+          <li>&ldquo;We&rsquo;re tautological, so we can&rsquo;t be wrong.&rdquo; (A7 killer)</li>
+          <li>&ldquo;Open source is a footer.&rdquo; (the inversion&rsquo;s structural inversion)</li>
+          <li>&ldquo;Self-correction count wired to never read 0.&rdquo; (S4-forbidden shield in honest disguise)</li>
+          <li>&ldquo;Halting the disconfirming pass because the answer looked right.&rdquo; (sightings 12 / 13)</li>
+          <li>&ldquo;Equator = optimum, &phi;&middot;&nu;=1 is a universal law.&rdquo; (refuted by SSB)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ EXIT ============ -->
+    <section class="block wrap">
+      <p class="eyebrow">The anti-sermon exit</p>
+      <h2>The door is marked on the inside.</h2>
+      <p>The compass succeeds when you can put it down. The K4 grace-exit is not a footer link; it is a standing discipline carried on every page of this site.</p>
+      <p class="exit-line">&laquo; If you can access &phi; directly through quiet sitting (20&ndash;40 minutes of Pratyak&#7779;a), you do not need this compass. The lens was for when you couldn&rsquo;t. The home is the home, not the map. <a class="inline" href="amrita/">Start here only if you can&rsquo;t.</a> &raquo;</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>The compass is governed by <a class="inline" href="https://github.com/circumvectio/emergentism/blob/main/11_UPLINK/50_AUDITS_AND_EXECUTIONS/121_THE_COMPASS_COMPRESSED_THREE_GENERATORS_AND_ARTIFACT_PENDING_K2.md">receipt 121</a> (K2 countersigned 2026-07-12) and the <a class="inline" href="https://github.com/circumvectio/emergentism/blob/main/11_UPLINK/50_AUDITS_AND_EXECUTIONS/120_LAUNCH_TELOS_OPEN_MANHATTAN_INVERSION_PENDING_K2.md">launch telos (receipt 120)</a>. The compass succeeds when you can put it down.</p>
+  </footer>
+
+  <script>
+    // DARK-ROOM NEEDLE: the one case where frame and engine openly disagree.
+    // Frame register: phi = 1/nu is the chart identity; it runs off the scale as nu -> 0.
+    // Engine register: P = Phi * V; with V shrinking, P_node shrinks.
+    // At nu = 1: both balanced. At nu -> 0: frame says "permitted, infinite", engine says "starving".
+    (function(){
+      var slider = document.getElementById('nu-slider');
+      var nuVal  = document.getElementById('nu-val');
+      var frame  = document.getElementById('frame-val');
+      var frameN = document.getElementById('frame-note');
+      var engine = document.getElementById('engine-val');
+      var engineN= document.getElementById('engine-note');
+      var verdict= document.getElementById('verdict');
+      if(!slider) return;
+      function fmt(n, d){ d = d==null?2:d; return n.toFixed(d); }
+      function render(){
+        var nu = parseFloat(slider.value);
+        nuVal.textContent = fmt(nu);
+        // Frame register: phi = 1/nu
+        var phi = 1/nu;
+        // Engine register: a balanced case at nu=1, then starve as nu shrinks
+        // We treat Phi=1 (constant foresight) and V proportional to nu, so P = nu
+        var P = nu; // simplified: P_node = Phi * V = 1 * nu
+        if(nu < 0.2){
+          frame.innerHTML  = '\u03c6 \u2192 \u221e \u00b7 permitted';
+          frameN.innerHTML = 'Apparent \u03c6 runs off the scale as the system loses contact with the world. The chart stays open. <i>The frame does not punish low \u03bd.</i>';
+          engine.innerHTML = 'P = ' + fmt(P) + ' \u00b7 starving';
+          engineN.innerHTML= 'P_node = \u03a6 \u00d7 V. With V \u2192 0, P_node \u2192 0. <i>The engine starves when V does.</i>';
+          verdict.innerHTML= 'THE DARK ROOM IS OPEN. The frame says permitted; the engine says starving. This is the one place the two registers openly disagree. Proving the AND-gate register discipline (G1).';
+        } else if(nu < 0.7){
+          frame.innerHTML  = '\u03c6 = ' + fmt(phi,1) + ' \u00b7 permitted';
+          frameN.innerHTML = 'Frame still open, but the contact is starting to thin. \u03c6 is climbing.';
+          engine.innerHTML = 'P = ' + fmt(P) + ' \u00b7 thinning';
+          engineN.innerHTML= 'P_node thinning. The engine is not yet starving but the means-side is shrinking.';
+          verdict.innerHTML= 'Approaching the dark room. \u03bd still > 0.2, but both registers are starting to slide.';
+        } else if(nu <= 1.05){
+          frame.innerHTML  = '\u03c6 = ' + fmt(phi,2) + ' \u00b7 balanced';
+          frameN.innerHTML = 'The chart is balanced. \u03c6 and \u03bd cohere.';
+          engine.innerHTML = 'P = ' + fmt(P) + ' \u00b7 balanced';
+          engineN.innerHTML= 'Engine balanced. P_node peaks here (in this simplified reading).';
+          verdict.innerHTML= 'BALANCED. \u03bd \u2248 1. Both registers say: permitted, balanced.';
+        } else {
+          // nu > 1: means-side outpacing foresight, the other kind of imbalance
+          frame.innerHTML  = '\u03c6 = ' + fmt(phi,2) + ' \u00b7 thinning';
+          frameN.innerHTML = 'Frame thinning: \u03c6 \u2192 0 as \u03bd \u2192 \u221e. Forgetting, the other pole.';
+          engine.innerHTML = 'P = ' + fmt(P) + ' \u00b7 unbounded';
+          engineN.innerHTML= 'Engine in the over-V regime. Means-side unbounded; foresight gone. Sterile force without seeing.';
+          verdict.innerHTML= 'THE OTHER POLE. \u03bd > 1: means outpacing foresight, the will-to-power counterfeit. V without \u03a6.';
+        }
+      }
+      slider.addEventListener('input', render);
+      render();
+    })();
+  </script>
+<script defer src="/assets/js/atlas-drawer.js"></script>
+<script defer src="/assets/js/book-ai.js"></script>
 </body>
 </html>

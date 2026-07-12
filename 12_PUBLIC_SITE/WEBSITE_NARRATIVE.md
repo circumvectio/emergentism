@@ -282,13 +282,14 @@ archive-first (move, do not delete).
 
 ---
 
-## 7. Topbar nav (consistent across the 5 new pages)
+## 7. Topbar nav (consistent across the 6 pages)
 
 ```html
 <a href="perennial/">Perennial</a>
 <a href="formal/">Formal</a>
 <a href="operational/">Operational</a>
 <a href="three-immune-systems/">3 Immune</a>
+<a href="compass/">compass</a>
 <a href="_meta/">_meta</a>
 ```
 
@@ -297,7 +298,68 @@ but every page can be reached from every other page through the topbar.
 
 ---
 
-## 8. The one sentence
+## 8. The compass — the enacting instrument (K2 countersigned 2026-07-12)
+
+**Purpose [S]:** The `/compass/` wing is the compressed map as an *object* — the
+framework made into something a reader can look at, slide, and stress-test.
+Governed by [receipt 121](https://github.com/circumvectio/emergentism/blob/main/11_UPLINK/50_AUDITS_AND_EXECUTIONS/121_THE_COMPASS_COMPRESSED_THREE_GENERATORS_AND_ARTIFACT_PENDING_K2.md)
+(launch telos is receipt 120; both K2 countersigned 2026-07-12).
+
+**What it is [S]:**
+
+- **Three generators as AND-cards.** Each claim is welded to its falsifier. The
+  AND-gate at the component level — you cannot read a claim without its
+  falsifier. Post-disconfirming-pass: G1 `σ`-scoped (substitutes survive a
+  pole), G2 flagged untested, G3 refined with a new forbidden shield.
+- **Four survivors from forty.** Incompressibility is the noise pole (Bennett
+  depth is the `μ⊗χ` residue). Quantum Zeno is the `χ`-axis's own pole (the
+  receipt axis is not monotone-good). The dark room (where frame and engine
+  openly disagree). The seer stands at the pole (a new covenant antibody).
+- **Lateral recurrence (six co-equal registers).** Matter, value, computation,
+  measurement, mind, knowing. **No summit.** Convergence is one datum shown
+  many ways, never proof. The h05 banner is the standing fence.
+- **The dark room (live).** A `ν` slider that makes the three-quantity typing
+  felt: at `ν → 0`, the frame register says "permitted, infinite" while the
+  engine register says "P → 0, starving." The one place the two registers
+  openly disagree — the proof G1's register discipline is load-bearing.
+- **Live open-falsifier count.** A real counter (`4 / 4` as of 2026-07-12) that
+  *could* hit zero. If it does, the framework's standing openness has closed —
+  the alarm fires. A counter "wired so it can never read 0" would be performed
+  openness (S4-forbidden shield inverted) — the compass refuses to wear it.
+- **Eight forbidden shields.** Each a known failure mode the framework's own
+  audit convicts: "we're reflexive, therefore we've seen our blind spot";
+  "convergence is proof"; "the frame governs reality"; "we're tautological, so
+  we can't be wrong"; "open source as a footer"; "self-correction count wired
+  to never read 0"; "halting the disconfirming pass because the answer looked
+  right"; "equator = optimum." The compass publishes them so a reader can
+  verify the instrument is not wearing them.
+- **Anti-sermon exit.** The door is marked on the inside. The compass succeeds
+  when you can put it down.
+
+**Tier discipline [S]:** Every claim on `/compass/` wears a tier mark
+inline — no descent arrows (the wager shown as a question, not a procession);
+"reads through," never "governs" (the covenant honored); live falsifiable
+counts, never rigged-nonzero decoration. The three critic fixes from
+receipt 121 §4 are folded in.
+
+**The 4-item open negative (G3 demands this to be non-empty) [I/C]:**
+
+1. **Joint frame's correlated blind spot.** PRISM≥2 covers each signer's
+   independent blind spot; the *shared* frame is uncovered.
+2. **G2 was never attacked** — survived only by not being tested.
+3. **Value↔extraction / gauge-redundancy weld (Family II)** is carried, not
+   re-won — an unverified identification.
+4. **The site's own `Φ/V` are substitutable (`σ>1`).** If the compass's own
+   coherence and published poison turn out substitutable, the AND-gate
+   foundation scopes *out*. The instrument publishes the condition under
+   which it fails.
+
+**Critical:** Item 4 means the compass carries its own live falsifier. The
+build is honest, not safe.
+
+---
+
+## 9. The one sentence
 
 **The launch telos is the inversion shown, not claimed.** The Manhattan Project
 maximized yield, in secret, with no exit. Emergentism maximizes bearing, in the open,
