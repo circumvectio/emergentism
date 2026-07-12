@@ -196,7 +196,7 @@ def _schema_shape_issues(
         else:
             try:
                 re.compile(pattern)
-            except (re.error, OverflowError) as exc:
+            except Exception as exc:
                 issues.append(_issue(_child(path, "pattern"), f"invalid pattern: {exc}", keyword=True))
 
     if "minimum" in node and (
@@ -252,19 +252,30 @@ def _definition_ref_graph(schema: dict[str, Any]) -> dict[str, set[str]]:
     graph = {name: set() for name in definitions}
 
     def collect(node: Any) -> Iterable[str]:
-        if isinstance(node, dict):
-            reference = node.get("$ref")
-            if isinstance(reference, str) and reference.startswith("#/$defs/"):
-                token = reference[len("#/$defs/"):]
-                if "/" not in token:
-                    decoded = _decode_pointer_token(token)
-                    if decoded is not None:
-                        yield decoded
-            for value in node.values():
-                yield from collect(value)
-        elif isinstance(node, list):
-            for value in node:
-                yield from collect(value)
+        if not isinstance(node, dict):
+            return
+        reference = node.get("$ref")
+        if isinstance(reference, str) and reference.startswith("#/$defs/"):
+            token = reference[len("#/$defs/"):]
+            if "/" not in token:
+                decoded = _decode_pointer_token(token)
+                if decoded is not None:
+                    yield decoded
+
+        for keyword in ("$defs", "properties"):
+            children = node.get(keyword)
+            if isinstance(children, dict):
+                for child in children.values():
+                    yield from collect(child)
+        for keyword in ("items", "if", "then", "else"):
+            child = node.get(keyword)
+            if isinstance(child, dict):
+                yield from collect(child)
+        for keyword in ("allOf", "anyOf", "oneOf"):
+            children = node.get(keyword)
+            if isinstance(children, list):
+                for child in children:
+                    yield from collect(child)
 
     for name, definition in definitions.items():
         graph[name].update(target for target in collect(definition) if target in graph)
@@ -319,7 +330,14 @@ def validate_schema_document(schema: Any) -> tuple[Issue, ...]:
 
 
 def load_schema(path: Path) -> dict[str, Any]:
-    value = load_canonical_value(path)
+    try:
+        value = load_canonical_value(path)
+    except UnicodeError:
+        raise KintsugiError(
+            "KIN-E-CANONICAL",
+            str(path),
+            "JSON contains a string that cannot be encoded as canonical UTF-8",
+        ) from None
     issues = validate_schema_document(value)
     if issues:
         first = issues[0]

@@ -250,6 +250,62 @@ class FrozenSchemaArtifactTests(SchemaAssertions):
         self.assertEqual(caught.exception.code, "KIN-E-SCHEMA-KEYWORD")
         self.assertEqual(caught.exception.path, "$.$defs.overflowPattern.pattern")
 
+    def test_deeply_nested_pattern_fails_with_typed_schema_diagnostic(self):
+        nested = copy.deepcopy(self.schema)
+        nested["$defs"]["deepPattern"] = {
+            "type": "string",
+            "pattern": "(" * 500 + "a" + ")" * 500,
+        }
+
+        issues = kernel.validate_schema_document(nested)
+        self.assertSchemaFailure(issues)
+        self.assertEqual(issues[0].code, "KIN-E-SCHEMA-KEYWORD")
+        self.assertEqual(issues[0].path, "$.$defs.deepPattern.pattern")
+
+        with tempfile.TemporaryDirectory() as directory:
+            schema_path = Path(directory) / "deep-pattern-schema.json"
+            schema_path.write_bytes(kernel.canonical_json_bytes(nested))
+            with self.assertRaises(kernel.KintsugiError) as caught:
+                kernel.load_schema(schema_path)
+        self.assertEqual(caught.exception.code, "KIN-E-SCHEMA-KEYWORD")
+        self.assertEqual(caught.exception.path, "$.$defs.deepPattern.pattern")
+
+    def test_const_and_enum_literal_ref_keys_are_not_schema_edges(self):
+        literal_refs = copy.deepcopy(self.schema)
+        literal_refs["$defs"].update({
+            "literalConst": {"const": {"$ref": "#/$defs/literalConst"}},
+            "literalEnum": {"enum": [{"$ref": "#/$defs/literalEnum"}]},
+        })
+
+        self.assertEqual(kernel.validate_schema_document(literal_refs), ())
+        self.assertEqual(
+            kernel.validate_named_definition(
+                literal_refs, "literalConst", {"$ref": "#/$defs/literalConst"}
+            ),
+            (),
+        )
+        self.assertEqual(
+            kernel.validate_named_definition(
+                literal_refs, "literalEnum", {"$ref": "#/$defs/literalEnum"}
+            ),
+            (),
+        )
+
+    def test_escaped_lone_surrogate_fails_with_typed_canonical_diagnostic(self):
+        payload = (
+            b'{"$defs":{"x":{"const":"\\ud800"}},'
+            b'"$id":"https://emergentism.org/schema/kintsugi/1.0.0",'
+            b'"$schema":"https://json-schema.org/draft/2020-12/schema"}\n'
+        )
+
+        with tempfile.TemporaryDirectory() as directory:
+            schema_path = Path(directory) / "lone-surrogate-schema.json"
+            schema_path.write_bytes(payload)
+            with self.assertRaises(kernel.KintsugiError) as caught:
+                kernel.load_schema(schema_path)
+        self.assertEqual(caught.exception.code, "KIN-E-CANONICAL")
+        self.assertEqual(caught.exception.path, str(schema_path))
+
 
 class RestrictedEvaluatorTests(SchemaAssertions):
     def test_all_three_complete_synthetic_roots_validate_and_are_fresh(self):
