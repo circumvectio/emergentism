@@ -8,7 +8,7 @@
 
 **Repository approval base:** `main@736cf22`
 
-**Observed execution head:** `main@1a2cf85` (post-approval concurrency addendum)
+**Observed execution head:** `main@454f371` (post-approval concurrency addendum)
 **Working branch:** `codex/kintsugi-formal-logic-spec`
 
 ## 1. Purpose
@@ -54,8 +54,8 @@ heterogeneous quantities; clean no-change trials are misclassified as failures;
 and the breakage bounty does not yet protect consent, privacy, compensation,
 custody, reversibility, or exit.
 
-The baseline repository test suite currently reports 14 passing tests and five
-pre-existing failures. The failures belong to marketplace and cross-entity
+The baseline repository test suite currently reports 19 collected nodes: 14
+passing tests and five pre-existing allowed failures. The failures belong to marketplace and cross-entity
 tests whose Skyzai/OFN fixtures are absent from the current Documents topology.
 They occur identically on `main` and in the isolated worktree. They are recorded
 as baseline evidence and are outside this program unless a Kintsugi change
@@ -72,24 +72,56 @@ After this design was approved at `736cf22`, canonical `main` advanced through:
 - `2ab90ac`, which added
   `01_TELEOLOGY/02_THE_DERIVATION/07A_F5_UNBUNDLED_COUPLING_PER_DIMENSION_PENDING_K2.md`;
   and
-- `1a2cf85`, which added the open QM/GR ordering tension at
-  `08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_22A_QM_GR_DIMENSIONAL_ORDERING_TENSION_PENDING_K2.md`.
+- the intervening historical change that added the open QM/GR ordering tension
+  at `08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_22A_QM_GR_DIMENSIONAL_ORDERING_TENSION_PENDING_K2.md`;
+  and
+- `454f371`, the current canonical head, which added
+  `11_UPLINK/50_AUDITS_AND_EXECUTIONS/109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS_PENDING_K2.md`.
 
 These commits do not change the approved semantics. They change the execution
-inventory. Phase A must rebase onto `1a2cf85`, re-freeze its manifest and
-baseline there, and harvest all three new claim surfaces as recent-change
+inventory. Phase A must rebase onto `454f371`, re-freeze its manifest and
+baseline there, and harvest the three new owner claim surfaces as recent-change
 inputs.
 The differently named staged receipt 108 is a raw-hashed `RECEIPT/PROVENANCE`
-source and remains byte-identical. The canonical Phase A receipt remains the
-exact A4 path and ID declared below. If canonical `main` is no longer
-`1a2cf85` when execution begins, execution stops before rebasing, inventories
-the additional delta, and updates this addendum and the manifest explicitly.
+source frozen at raw SHA-256
+`9cf25b80e6c252aa8d95b63ea1c7cc1ed361c05dedaea4aef72fa001f691069c`
+and remains byte-identical. The canonical Phase A receipt remains the exact A4
+path and typed ID declared below.
+
+The proof-layer audit at the exact 109 path above is frozen at raw SHA-256
+`3d9f63df9ce8aabfa9a16ac5dd25acabf3084b75b6ad29740a61e078ecebd629`.
+It is immutable external/pre-program support and provenance only, registered as
+`SRC-PROV-109-PROOF-AUDIT` with `kind=SUPPORT` and
+`authorityRole=PROVENANCE`: it is not a Kintsugi phase receipt, claim owner,
+claim dependency, or authority. Its historical `PENDING_K2` lifecycle creates
+no K2 gate for Kintsugi. The human number 109 is therefore non-addressable by
+itself: the future Phase B receipt is only `REC-B-109` at the exact path
+`11_UPLINK/50_AUDITS_AND_EXECUTIONS/109_ACTIVE_CORPUS_KINTSUGI_RECEIPT_2026_07_11.md`.
+Bare `109` has no authority; receipt references require both the typed ID and
+exact filename, and Phase B adds the two-row README route defined in §12.
+
+The external audit attachment at
+`/Users/Yves/.codex/attachments/ec649130-9018-4d89-a0f1-99b9e82f34b5/pasted-text.txt`
+is potential A0B support only, frozen at raw SHA-256
+`2937faf077f58a49e3c5953d33c3413ea3108350f82c8166eaf54818cdb5ad73`.
+It is `[B/D]` external support; every finding starts `ALLEGED`, and its claimed
+counts are not proof. A0B may hash-pin and deduplicate it before `MAN-A-001`
+freezes. It is not in A0 scope.
+
+This design amendment and the paired A0-plan amendment are pre-rebase planning
+changes outside the A0 implementation diff. A0 still changes exactly four
+declared paths and preserves the 19-collected/five-allowed-failure baseline.
+If canonical `main` is no longer `454f371` when execution begins, execution
+stops before rebasing, inventories the additional delta, and updates this
+addendum and the manifest explicitly.
 
 ## 3. Governance decision
 
 This program has **no K2 approval, countersign, checkpoint, or veto gate**.
 Existing K2-labelled receipts remain untouched as historical provenance; they
 do not determine whether a new logical conclusion is valid.
+The A0 -> A0B -> A1 -> A2 sequence proceeds one after the other without an
+extra K2 pause; no `PENDING_K2` provenance lifecycle changes that sequencing.
 
 Future acceptance is evidence-governed. A repair becomes verified only when:
 
@@ -125,8 +157,12 @@ repo-wide retirement of K2 terminology would be a separate explicit project.
 - modifying `90_ARCHIVE/` or `91_COMPATIBILITY/`;
 - modifying `12_PUBLIC_SITE/` during this program;
 - modifying the contents of receipts 104–107, modifying the staged predecessor
-  `108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION_PENDING_K2.md`, or renaming
-  their historical `PENDING_K2` filenames;
+  `108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION_PENDING_K2.md`, modifying the
+  pre-program proof audit
+  `109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS_PENDING_K2.md`, or renaming their
+  historical `PENDING_K2` filenames;
+- treating the external audit attachment as an A0 input or treating any of its
+  `[B/D]` allegations or claimed counts as proof;
 - silently changing the signed `Egregorotype`/`Egregoreotype` spelling question;
 - proving literal quantum collapse, physical retrocausality, F5 as a recognized
   physical interaction, or strong emergence from absence of a reducing law;
@@ -768,9 +804,16 @@ no undeclared entailment cycle is allowed among `claim.dependencyClaimIds`.
 A source with `authorityRole=PROVENANCE` may be cited only as historical input:
 it cannot be a `claim.ownerSourceId`, cannot share its path with any
 `phaseReceipt.path`, cannot satisfy `dependsOnReceiptIds`, and cannot by itself
-upgrade evidence strength. Phase A contains exactly one `phaseReceipt` record,
+upgrade evidence strength. It also cannot appear in
+`claim.dependencyClaimIds`; `SRC-PROV-109-PROOF-AUDIT` is constrained by every
+one of these rules. Phase A contains exactly one `phaseReceipt` record,
 `REC-A-108`, even though the audit lane contains two filenames beginning with
-the number 108.
+the number 108. Phase B contains exactly one `phaseReceipt` record,
+`REC-B-109`, at
+`11_UPLINK/50_AUDITS_AND_EXECUTIONS/109_ACTIVE_CORPUS_KINTSUGI_RECEIPT_2026_07_11.md`,
+even though the audit lane contains the frozen pre-program 109 filename too.
+Bare human numbers 108 and 109 are not identifiers and carry no authority;
+phase-receipt references require the typed ID and exact path.
 
 `COMPLETE` means the producing pass claims all declared artifacts exist and both
 review attestations pass against one frozen semantic package. `VERIFIED`
@@ -911,8 +954,11 @@ reviews of the frozen inventory. The receipt therefore proves complete coverage
 of its declared manifest and before/after states, not the impossible claim that
 no unrecognized proposition exists anywhere in prose.
 
-`protectedProvenance` freezes receipts 104–107 and the staged predecessor
-receipt 108 as `FULL_FILE` records. It also
+`protectedProvenance` freezes receipts 104–107, the staged predecessor receipt
+108, and the pre-program proof audit 109 as `FULL_FILE` records. The exact 108
+and 109 records use the raw hashes in §2.1. The proof audit remains
+`SRC-PROV-109-PROOF-AUDIT`; it cannot become a phase receipt, claim owner,
+dependency, or authority. `protectedProvenance` also
 freezes the exact countersign-history spans retained inside any editable owner
 as `EXACT_SPAN`; the span text is included and its raw UTF-8 byte SHA-256 must
 still match. This preserves historical provenance without granting it logical
@@ -1255,8 +1301,8 @@ The protocol cannot truthfully cite a completed receipt before the receipt
 exists. Phase A therefore boots in this fixed order:
 
 1. freeze manifest `MAN-A-001` at the phase base commit, including full-file
-   hashes for receipts 104–107 and the staged predecessor receipt 108, exact
-   countersign-history spans, protected
+   hashes for receipts 104–107, the staged predecessor receipt 108, and the
+   pre-program proof audit 109, exact countersign-history spans, protected
    trees, and separate isolated/canonical protected-tree and pre-existing
    untracked snapshots;
 2. create the ledger/JSON skeleton and validator schema;
@@ -1328,6 +1374,7 @@ other tracked or untracked diff path. The owner/support paths are exactly:
 - `05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md`;
 - `05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md`;
 - `05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md`;
+- `05_COSMOLOGY/03_FORMAL_SYSTEM/11_EFR_TRIADIC_STABILITY.md`;
 - `05_COSMOLOGY/03_FORMAL_SYSTEM/21_TRIADIC_STABILITY_CORRESPONDENCE.md`;
 - `05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md`;
 - `05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md`; and
@@ -1335,8 +1382,10 @@ other tracked or untracked diff path. The owner/support paths are exactly:
   reconciliation banner rather than historical erasure;
 - `08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_22A_QM_GR_DIMENSIONAL_ORDERING_TENSION_PENDING_K2.md`.
 
-Receipts 105–107 and the staged predecessor receipt 108 are immutable historical
-inputs, never trial authorities or eligibility gates. Synchronizing their
+Receipts 105–107, the staged predecessor receipt 108, and the pre-program proof
+audit 109 are immutable historical inputs, never trial authorities, claim
+owners, dependencies, or eligibility gates. The proof audit's `PENDING_K2`
+lifecycle adds no K2 gate. Synchronizing the receipts'
 provenance into the Burri ledger is the first ledger repair target; no receipt
 can determine the validity of a new conclusion. Existing countersign history
 remains visible, but corrected claims do not inherit truth from the signature.
@@ -1355,6 +1404,7 @@ remains visible, but corrected claims do not inherit truth from the signature.
   Their contents are written one after the other from the preceding verified
   artifacts; `MAN-A-001` may allow these exact paths but may not invent their
   contents or hashes before they exist.
+
 - Modify: `00_META/00_THE_KINTSUGI_PROTOCOL.md`
 - Create: `03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAM_LEDGER.md`
 - Create: `03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SCHEMA.json`
@@ -1374,6 +1424,11 @@ remains visible, but corrected claims do not inherit truth from the signature.
 - Modify: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/README.md` with a two-row routing
   note distinguishing the frozen staged predecessor 108 from canonical
   `REC-A-108`.
+
+The plan/spec amendments above are committed before rebasing and before
+freezing `refs/codex/kintsugi-a0-start`; they are planning provenance, not part
+of the A0 implementation diff. The A0 diff measured from that post-rebase ref
+remains exactly the four compiler paths declared by the A0 plan.
 
 `MAN-A-001.closureOnlyPaths` is exactly the two review paths plus
 `09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_phase_A_review_target.json` and
@@ -1413,7 +1468,8 @@ corpus.
 
 ### Method
 
-1. Require receipt 108 to be `VERIFIED`; otherwise `--phase B` fails before
+1. Require `REC-A-108` at its exact canonical Phase A receipt path to be
+   `VERIFIED`; otherwise `--phase B` fails before
    corpus traversal.
 2. Freeze manifest `MAN-B-001` with every included file hash, exclusion reason,
    discovery rule, harvested claim ID, and an `allowedChangePaths` set equal to
@@ -1437,7 +1493,18 @@ corpus.
 9. Run a complete active-corpus delta after propagation.
 10. Create
     `11_UPLINK/50_AUDITS_AND_EXECUTIONS/109_ACTIVE_CORPUS_KINTSUGI_RECEIPT_2026_07_11.md`
-    and mark it `VERIFIED` only after manifest coverage and both reviews pass.
+    with typed ID `REC-B-109`, and mark it `VERIFIED` only after manifest
+    coverage and both reviews pass.
+11. Update `11_UPLINK/50_AUDITS_AND_EXECUTIONS/README.md` with exactly two 109
+    routing rows:
+
+    | Exact filename | Typed ID | Route |
+    |---|---|---|
+    | `109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS_PENDING_K2.md` | `SRC-PROV-109-PROOF-AUDIT` | immutable pre-program `SUPPORT/PROVENANCE`; never a phase receipt, owner, dependency, authority, or K2 gate |
+    | `109_ACTIVE_CORPUS_KINTSUGI_RECEIPT_2026_07_11.md` | `REC-B-109` | canonical Phase B receipt |
+
+    The route resolves only by exact filename plus typed ID. Bare `109` is
+    ambiguous human numbering and has no authority.
 
 No settled item is reopened merely because a legacy document uses reconciled
 shorthand. It is reopened only when a new counterexample attacks the ruling's
@@ -1448,14 +1515,14 @@ Phase B completes when every manifest-eligible file is scanned or has an
 explicit exclusion reason, every harvested claim has a closed trial or a
 non-severe held-open disposition, no severe crack remains held open, no
 compression surface upgrades a lower-tier owner claim, the full active-corpus
-validator passes twice without a new repair between runs, and receipt 109 is
-`VERIFIED`.
+validator passes twice without a new repair between runs, and `REC-B-109` at
+the exact active-corpus receipt path is `VERIFIED`.
 
 ## 13. Phase C — frozen public phenotype
 
 Phase C is read-only with respect to `12_PUBLIC_SITE/`.
 
-Phase C requires receipts 108 and 109 to be `VERIFIED`; otherwise `--phase C`
+Phase C requires `REC-A-108` and `REC-B-109` to be `VERIFIED`; otherwise `--phase C`
 fails before reading the public tree. It freezes manifest `MAN-C-001`, including
 every public HTML/Markdown/JSON claim-bearing file, its hash, the deterministic
 claim-discovery rule, and every explicit exclusion. Its `allowedChangePaths`
@@ -1622,14 +1689,14 @@ Run from the repository root:
 
 ```text
 python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py --check
-python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py --check --phase A --bootstrap --base-ref 1a2cf85 --canonical-root /Users/Yves/Documents/01_EMERGENTISM
+python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py --check --phase A --bootstrap --base-ref 454f371 --canonical-root /Users/Yves/Documents/01_EMERGENTISM
 python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py --check --phase A --base-ref MANIFEST --canonical-root /Users/Yves/Documents/01_EMERGENTISM
 python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py --check --phase B --base-ref MANIFEST --canonical-root /Users/Yves/Documents/01_EMERGENTISM
 python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py --check --phase C --base-ref MANIFEST --canonical-root /Users/Yves/Documents/01_EMERGENTISM
 python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py --check-baseline --canonical-root /Users/Yves/Documents/01_EMERGENTISM
 python3 -m unittest discover -s 09_TOOLS/02_COMPILERS -p 'test_validate_kintsugi.py'
 python3 -m unittest discover -s 09_TOOLS/02_COMPILERS -p 'test_render_kintsugi.py'
-python3 -B 09_TOOLS/02_COMPILERS/render_kintsugi.py freeze-manifest --phase A --base-ref 1a2cf85 --canonical-root /Users/Yves/Documents/01_EMERGENTISM --output 03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json
+python3 -B 09_TOOLS/02_COMPILERS/render_kintsugi.py freeze-manifest --phase A --base-ref 454f371 --canonical-root /Users/Yves/Documents/01_EMERGENTISM --output 03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json
 python3 -B 09_TOOLS/02_COMPILERS/render_kintsugi.py review-target --phase A --output 09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_phase_A_review_target.json
 python3 -B 09_TOOLS/02_COMPILERS/render_kintsugi.py bundle --phase A --output 09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_phase_A_validation_bundle.json
 python3 -B 09_TOOLS/02_COMPILERS/render_kintsugi.py transition-core --phase A --stage COMPLETE --output 03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json
@@ -1674,8 +1741,8 @@ isolated root, and match the manifest's `canonicalBranch` and
 and protected-provenance checks. Bare `--check` performs no external-worktree
 check because it makes no phase-completion claim.
 
-The full command enforces phase order: B requires verified receipt 108; C
-requires verified receipts 108 and 109. A manifest whose input hashes no longer
+The full command enforces phase order: B requires verified `REC-A-108`; C
+requires verified `REC-A-108` and `REC-B-109` at their exact canonical paths. A manifest whose input hashes no longer
 match `baseCommit`, or whose final hashes no longer match the reviewed
 worktree, is stale and fails until the affected claims are retried against a
 newly frozen manifest.
@@ -1803,7 +1870,8 @@ to stdout and nothing to stderr.
   closed severe findings, and gate/upgrade attestations;
 - deterministic canonical JSON bytes and deterministic renderer output;
 - byte-level protected-provenance checks for receipts 104–107, the staged
-  predecessor receipt 108, and retained countersign-history spans; and
+  predecessor receipt 108, the pre-program proof audit 109, and retained
+  countersign-history spans; and
 - tracked/untracked protected-path checks for public site, archive, and
   compatibility trees in both the isolated and canonical checkouts.
 
@@ -1883,12 +1951,14 @@ parses both.
 
 `kintsugi_baseline_failures.json` is fixed at schema version `1.0.0` and the
 post-approval execution base commit
-`1a2cf85f607f9bed2f06a6234250bee9d2876ec5`. Its normative initial content is:
+`454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22`. Its canonical raw-byte hash is
+`sha256:92bc13d84b0cee317f648af6b1589f507e23a227afb40da2d66fb94282017957`.
+Its normative initial content is:
 
 ```json
 {
   "schemaVersion": "1.0.0",
-  "baseCommit": "1a2cf85f607f9bed2f06a6234250bee9d2876ec5",
+  "baseCommit": "454f3719b6adf1d6d5a73ae3bb9eab6a34e45c22",
   "command": ["python3", "-m", "pytest", "-q", "--tb=short"],
   "collectCommand": ["python3", "-m", "pytest", "--collect-only", "-q"],
   "collectedAtBaseline": 19,
@@ -1998,7 +2068,7 @@ The complete A -> B -> C program is accepted when:
 6. compression surfaces cannot silently upgrade owner claims;
 7. every repair has a regression fixture;
 8. BTJ Justice fields are complete for normative and collective claims;
-9. receipt 109 is `VERIFIED` and two consecutive active-corpus validation
+9. `REC-B-109` at its exact canonical path is `VERIFIED` and two consecutive active-corpus validation
    passes produce no new repair;
 10. receipt 110 is `VERIFIED` and the public propagation queue covers every
     claim discovered by the frozen public manifest;
