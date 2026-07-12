@@ -1,0 +1,551 @@
+/* ================================================================
+   TEST FALSIFIERS WING — test-falsifiers.css
+   Staging: _STAGING_COMPASS_RESTRUCTURE/test_falsifiers_wing/
+   Design system: xai.css (minimalist dark, black background,
+   large headlines, high-contrast links, evidence tiers visible)
+   ================================================================ */
+
+/* --- Page shell --- */
+.test-page {
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--sector-finance) 4%, transparent), transparent 24rem),
+    linear-gradient(90deg, color-mix(in srgb, var(--sector-real-infra) 5%, transparent), transparent 40%, transparent 60%, color-mix(in srgb, var(--sector-insurance) 3%, transparent)),
+    var(--bg);
+}
+
+.test-page main,
+.test-page .index-inner,
+.test-page .gauges-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* --- Evidence tier badge (universal) --- */
+.tier {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.12rem 0.4rem;
+  border-radius: 4px;
+  background: rgba(255, 235, 59, 0.08);
+  color: var(--gold);
+  letter-spacing: 0;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.tier[data-tier="A"] { background: rgba(76, 175, 80, 0.12); color: #81C784; }
+.tier[data-tier="B"] { background: rgba(129, 199, 132, 0.10); color: #A5D6A7; }
+.tier[data-tier="S"] { background: rgba(255, 235, 59, 0.08); color: var(--gold); }
+.tier[data-tier="I"] { background: rgba(33, 150, 243, 0.10); color: var(--blue-soft); }
+.tier[data-tier="D"] { background: rgba(156, 163, 175, 0.10); color: var(--text-muted); }
+.tier[data-tier="C"] { background: rgba(244, 67, 54, 0.10); color: var(--sector-finance); }
+
+/* --- Hero --- */
+.test-hero {
+  min-height: calc(100vh - 64px);
+  align-items: flex-start;
+  padding-top: 140px;
+  padding-bottom: 80px;
+  text-align: left;
+}
+
+.test-hero .hero-copy {
+  width: min(100%, 980px);
+  max-width: none;
+  margin: 0 auto;
+}
+
+.test-hero h1 {
+  max-width: 14ch;
+  margin-left: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(44px, 6.5vw, 84px);
+  font-weight: 800;
+  line-height: 1.02;
+  margin: 24px 0 32px;
+  letter-spacing: 0;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+  text-wrap: balance;
+}
+
+.test-hero .subtitle {
+  margin: 0;
+  max-width: 56ch;
+  font-size: 21px;
+  color: var(--text-muted);
+}
+
+.test-hero .cta-row {
+  justify-content: flex-start;
+  margin-top: 34px;
+}
+
+/* --- Gauges Section --- */
+.gauges-section {
+  padding: 96px 0;
+  border-top: 1px solid var(--border);
+}
+
+.gauges-section h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 3.5vw, 42px);
+  font-weight: 700;
+  margin: 16px 0 12px;
+  letter-spacing: 0;
+}
+
+.section-note {
+  color: var(--text-muted);
+  font-size: 16px;
+  max-width: 70ch;
+  line-height: 1.55;
+  margin: 0 0 48px;
+}
+
+.gauges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 16px;
+}
+
+.gauge-card {
+  border: 1px solid var(--border);
+  border-radius: var(--shape-md);
+  background: var(--surface);
+  padding: 20px;
+  transition: border-color 0.2s var(--ease-standard);
+}
+
+.gauge-card:hover {
+  border-color: var(--border);
+}
+
+.gauge-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.gauge-id {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0;
+}
+
+.gauge-status {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  letter-spacing: 0;
+}
+
+.gauge-status[data-status="green"] {
+  background: rgba(76, 175, 80, 0.12);
+  color: #81C784;
+}
+
+.gauge-status[data-status="amber"] {
+  background: rgba(255, 235, 59, 0.10);
+  color: var(--gold);
+}
+
+.gauge-status[data-status="red"] {
+  background: rgba(244, 67, 54, 0.15);
+  color: var(--sector-finance);
+}
+
+.gauge-bar {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--elevated);
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.gauge-fill {
+  height: 100%;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--blue), var(--gold));
+  transition: width 0.6s var(--ease-standard);
+}
+
+.gauge-card[data-gauge="extraction"] .gauge-fill,
+.gauge-card[data-gauge="self-cert"] .gauge-fill {
+  background: linear-gradient(90deg, #4CAF50, #81C784);
+}
+
+.gauge-label {
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0 0 8px;
+}
+
+.gauge-falsifier {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* --- Index Sections --- */
+.index-section {
+  padding: 96px 0;
+  border-top: 1px solid var(--border);
+}
+
+.index-section h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 3.5vw, 42px);
+  font-weight: 700;
+  margin: 16px 0 12px;
+  letter-spacing: 0;
+}
+
+/* --- Falsifier Tables --- */
+.falsifier-table-wrap {
+  overflow-x: auto;
+  margin-top: 32px;
+  border: 1px solid var(--border);
+  border-radius: var(--shape-md);
+}
+
+.falsifier-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 1.5;
+  min-width: 720px;
+}
+
+.falsifier-table thead {
+  background: var(--elevated);
+}
+
+.falsifier-table th {
+  text-align: left;
+  padding: 12px 16px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.falsifier-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.falsifier-table tbody tr {
+  background: var(--surface);
+  transition: background 0.15s ease;
+}
+
+.falsifier-table tbody tr:hover {
+  background: var(--elevated);
+}
+
+.falsifier-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.fid {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--gold);
+  white-space: nowrap;
+  letter-spacing: 0;
+}
+
+.fname {
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.ffalse {
+  color: var(--text-muted);
+  max-width: 50ch;
+}
+
+.ffalse strong,
+.ffalse b {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.femp {
+  border-left: 2px solid var(--blue-soft);
+  padding-left: 12px;
+  margin-left: 4px;
+}
+
+/* Theorem table (5 columns) */
+.theorem-table th:nth-child(4),
+.theorem-table td:nth-child(4) {
+  max-width: 28ch;
+}
+
+.theorem-table th:nth-child(5),
+.theorem-table td:nth-child(5) {
+  max-width: 36ch;
+}
+
+/* Corollary divider */
+.corollary-divider td {
+  border-top: 2px solid var(--border);
+}
+
+/* --- Falsifier Card (A5.1) --- */
+.falsifier-card {
+  border: 1px solid var(--border);
+  border-radius: var(--shape-md);
+  background: var(--surface);
+  padding: 24px;
+  margin-top: 24px;
+}
+
+.falsifier-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.falsifier-card-body {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.falsifier-card-body em {
+  color: var(--text);
+  font-style: italic;
+}
+
+/* --- Discipline Ladder --- */
+.ladder-section {
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--sector-insurance) 3%, transparent), transparent 16rem),
+    var(--bg);
+}
+
+.ladder {
+  display: grid;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.ladder-rung {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+  border: 1px solid var(--border);
+  border-radius: var(--shape-md);
+  background: var(--surface);
+  padding: 20px 24px;
+  transition: border-color 0.2s var(--ease-standard);
+}
+
+.ladder-rung:hover {
+  border-color: var(--border);
+}
+
+.rung-number {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--gold);
+  line-height: 1;
+  min-width: 2.5rem;
+  text-align: center;
+  padding-top: 2px;
+}
+
+.rung-body h3 {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 6px;
+  color: var(--text);
+}
+
+.rung-body p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.rung-examples {
+  margin-top: 8px !important;
+  font-size: 13px !important;
+  color: var(--text-dim) !important;
+}
+
+.ladder-snapshot {
+  margin-top: 32px;
+  padding: 20px 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--shape-md);
+  background: var(--elevated);
+}
+
+.ladder-snapshot p {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.ladder-snapshot strong {
+  color: var(--text);
+}
+
+/* --- Unfalsifiable Section --- */
+.unfalsifiable-section {
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--sector-finance) 3%, transparent), transparent 12rem),
+    var(--bg);
+}
+
+.unfalsifiable-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.unfalsifiable-item {
+  border: 1px solid var(--border);
+  border-radius: var(--shape-md);
+  background: var(--surface);
+  padding: 20px 24px;
+}
+
+.unfalsifiable-item .fid {
+  margin-right: 8px;
+}
+
+.unfalsifiable-item .fname {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.unfalsifiable-item p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 8px 0 0;
+}
+
+/* --- Footer --- */
+.test-footer {
+  border-top: 1px solid var(--border);
+  padding: 64px 32px;
+  text-align: center;
+}
+
+.footer-inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.footer-epigraph {
+  font-style: italic;
+  color: var(--text-muted);
+  font-size: 18px;
+  margin: 0 0 16px;
+}
+
+.footer-meta {
+  color: var(--text-dim);
+  font-size: 13px;
+  font-family: var(--font-mono);
+  margin: 0 0 24px;
+}
+
+.footer-meta code {
+  font-size: 12px;
+}
+
+.footer-const {
+  color: var(--text-dim);
+  font-size: 14px;
+  margin: 0;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .test-hero {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  .test-hero h1 {
+    font-size: clamp(32px, 8vw, 48px);
+  }
+
+  .gauges-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .falsifier-table {
+    font-size: 13px;
+  }
+
+  .falsifier-table th,
+  .falsifier-table td {
+    padding: 10px 12px;
+  }
+
+  .ladder-rung {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .rung-number {
+    text-align: left;
+    font-size: 24px;
+  }
+}
+
+/* --- Reduced motion --- */
+@media (prefers-reduced-motion: reduce) {
+  .gauge-fill {
+    transition: none;
+  }
+
+  .falsifier-table tbody tr {
+    transition: none;
+  }
+}
+
+/* --- High contrast --- */
+@media (prefers-contrast: more) {
+  .gauge-card,
+  .falsifier-table-wrap,
+  .falsifier-card,
+  .ladder-rung,
+  .unfalsifiable-item,
+  .ladder-snapshot {
+    border-color: rgba(243, 244, 246, 0.3);
+  }
+}

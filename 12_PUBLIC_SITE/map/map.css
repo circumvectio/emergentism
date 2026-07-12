@@ -1,0 +1,383 @@
+/* ============================================================
+   map_rosetta_wing.css — Rosetta Map wing styles
+   Staging: 01_EMERGENTISM/12_PUBLIC_SITE/_STAGING_COMPASS_RESTRUCTURE/map_rosetta_wing/
+   Design system: xai.css (minimalist dark, black bg, large headlines, high-contrast)
+   ============================================================ */
+
+/* Map page — Rosetta wing staging */
+.map-page { background: var(--bg); }
+
+.map-page main {
+  max-width: min(100% - 48px, 1120px);
+  margin: 0 auto;
+  padding: 112px 0 80px;
+}
+
+/* Hero */
+.map-hero {
+  border-bottom: 1px solid var(--border);
+  padding: 48px 0 36px;
+}
+
+.map-hero .kicker {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.map-hero h1 {
+  max-width: 12ch;
+  margin: 16px 0 24px;
+  color: var(--text);
+  font-family: var(--font-heading);
+  font-size: clamp(48px, 9vw, 96px);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+}
+
+.map-hero .subtitle {
+  max-width: 760px;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.map-hero .evidence-badge {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.25rem;
+  background: rgba(201, 168, 76, 0.18);
+  color: var(--gold);
+  font-family: var(--font-mono);
+  letter-spacing: 0;
+}
+
+/* Honesty layer */
+.honesty-layer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1px;
+  margin: 48px 0;
+  border: 1px solid var(--border);
+  border-radius: var(--shape-lg);
+  overflow: hidden;
+  background: var(--border);
+}
+
+.honesty-card {
+  background: var(--surface);
+  padding: 20px;
+  min-height: 180px;
+}
+
+.honesty-card .eyebrow {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.honesty-card h2 {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0 0 12px;
+  color: var(--text);
+}
+
+.honesty-card p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.honesty-card p code {
+  font-size: 0.85em;
+}
+
+.honesty-card.wide {
+  grid-column: 1 / -1;
+}
+
+.scoreboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.score {
+  border-left: 2px solid var(--instrument-line);
+  padding-left: 12px;
+}
+
+.score strong {
+  display: block;
+  font-size: 13px;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.score span {
+  display: block;
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.score.warn {
+  border-left-color: var(--instrument-warn);
+}
+
+/* The 5-column honest table */
+.map-table-wrapper {
+  margin: 48px 0;
+  overflow-x: auto;
+}
+
+.map-table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.map-table th,
+.map-table td {
+  border-bottom: 1px solid var(--border);
+  padding: 0.85rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.map-table th {
+  background: var(--surface);
+  color: var(--text-muted);
+  font: 700 0.68rem/1.2 var(--font-mono);
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.map-table td {
+  color: var(--text);
+}
+
+.map-table .lvl {
+  color: var(--gold);
+  font: 700 0.9rem/1.2 var(--font-mono);
+  white-space: nowrap;
+}
+
+.map-table .equator .lvl {
+  color: var(--gold);
+}
+
+.map-table .equator td {
+  background: rgba(201, 168, 76, 0.04);
+}
+
+.map-table .role {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.map-table .operator {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+}
+
+.map-table .discipline {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.map-table .tier-cell {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.map-table .tier-S { color: var(--gold); }
+.map-table .tier-B { color: #82e6b0; }
+.map-table .tier-I { color: #8fc8ff; }
+.map-table .tier-C { color: #ffb26b; }
+
+/* Functional role toggle */
+.role-toggle {
+  display: flex;
+  gap: 8px;
+  margin: 24px 0 32px;
+  flex-wrap: wrap;
+}
+
+.role-toggle button {
+  min-height: 36px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-muted);
+  font: 700 12px/1 var(--font-body);
+  letter-spacing: 0;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.role-toggle button:hover {
+  border-color: var(--gold);
+  color: var(--text);
+}
+
+.role-toggle button.active {
+  border-color: var(--gold);
+  background: var(--gold);
+  color: var(--accent-contrast);
+}
+
+/* Scope guard */
+.scope-guard {
+  border-left: 2px solid var(--gold);
+  background: rgba(201, 168, 76, 0.06);
+  padding: 16px 20px;
+  margin: 32px 0;
+}
+
+.scope-guard p {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.scope-guard p + p {
+  margin-top: 8px;
+}
+
+/* Kill criterion */
+.kill-criterion {
+  border: 1px solid rgba(255, 165, 80, 0.34);
+  border-radius: var(--shape-lg);
+  background: rgba(255, 165, 80, 0.07);
+  margin: 32px 0;
+  padding: 20px 24px;
+}
+
+.kill-criterion h3 {
+  color: var(--text);
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+.kill-criterion ul {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.kill-criterion li {
+  margin: 0.3rem 0;
+}
+
+/* Cross-domain cards */
+.cross-domain {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin: 24px 0;
+}
+
+.cd-cell {
+  border: 1px solid var(--border);
+  border-radius: var(--shape-lg);
+  background: var(--surface);
+  padding: 0.85rem 1rem;
+}
+
+.cd-cell h4 {
+  margin: 0 0 0.45rem;
+  color: var(--gold);
+  font: 700 0.9rem/1.2 var(--font-mono);
+}
+
+.cd-cell p {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.86rem;
+}
+
+.cd-cell .tier {
+  margin-top: 0.4rem;
+}
+
+/* Footer bridge */
+.bridge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.bridge-row a {
+  display: inline-flex;
+  min-height: var(--target-min);
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.bridge-row a:hover {
+  border-color: var(--gold);
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .map-page main {
+    padding-top: 96px;
+  }
+
+  .map-hero h1 {
+    max-width: 100%;
+    font-size: clamp(38px, 11vw, 48px);
+  }
+
+  .map-table {
+    min-width: 540px;
+    font-size: 0.82rem;
+  }
+
+  .map-table th,
+  .map-table td {
+    padding: 0.6rem 0.5rem;
+  }
+
+  .honesty-card.wide {
+    grid-column: auto;
+  }
+
+  .scoreboard {
+    grid-template-columns: 1fr;
+  }
+}

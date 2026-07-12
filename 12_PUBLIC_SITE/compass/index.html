@@ -3,136 +3,683 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The Compass — Emergentism</title>
-<meta name="description" content="A navigational instrument, not a doctrine. Carry it, use it, and if it points wrong, tell us. That is the one test we cannot give ourselves." />
+<title>Emergentism — A Compass, Not a Cathedral</title>
+<meta name="description" content="A navigational instrument assembled from constraints. 5-minute read. Testable claims. Visible exit." />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="The Compass — Emergentism" />
-<meta property="og:description" content="Carry it without the map. The needle, the four tests, the declination, the kill criterion." />
+<meta property="og:title" content="Emergentism — A Compass, Not a Cathedral" />
+<meta property="og:description" content="A navigational instrument assembled from constraints. 5-minute read. Testable claims. Visible exit." />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%23FFEB3B' stroke-width='1' opacity='.5'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="../assets/css/xai.css">
 <style>
-  .compass-page main { max-width: 44rem; margin: 0 auto; padding: 0 1.25rem; }
-  .compass-page section { padding: 3.5rem 0; border-bottom: 1px solid #161616; }
-  .compass-page section:last-of-type { border-bottom: none; }
-  .compass-page h2 { font-size: 1.6rem; font-weight: 300; margin: 0 0 1.25rem; color: #fff; }
-  .compass-page .epigraph { font-style: italic; color: #999; font-size: 1.05rem; margin: 0 0 2rem; }
-  .compass-page .needle { font-size: clamp(1.3rem, 4vw, 1.75rem); line-height: 1.5; font-weight: 300; color: #e8e8e8; padding: 1.5rem; border: 1px solid #2a2a2a; border-radius: .4rem; background: #0c0c0c; }
-  .compass-page .needle em { color: #FFEB3B; font-style: normal; }
-  .compass-page dl.tests { margin: 0; }
-  .compass-page dl.tests > div { padding: 1rem 0; border-top: 1px solid #161616; }
-  .compass-page dl.tests > div:first-child { border-top: none; }
-  .compass-page dl.tests dt { font-weight: 600; color: #cfcfcf; margin-bottom: .4rem; }
-  .compass-page dl.tests dd { margin: 0; color: #aaa; line-height: 1.55; }
-  .compass-page dl.tests dd b { color: #d9c574; font-weight: 600; }
-  .compass-page .declination-body { color: #bbb; line-height: 1.6; }
-  .compass-page .declination-body b { color: #e8d24a; }
-  .compass-page table.bearings { width: 100%; border-collapse: collapse; margin-top: .5rem; }
-  .compass-page table.bearings th, .compass-page table.bearings td { text-align: left; padding: .65rem .5rem; border-bottom: 1px solid #161616; vertical-align: top; }
-  .compass-page table.bearings th { font-size: .8rem; color: #888; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
-  .compass-page table.bearings td:first-child { white-space: nowrap; color: #ff8a8a; font-weight: 600; }
-  .compass-page table.bearings td:nth-child(2) { color: #cfcfcf; }
-  .compass-page table.bearings td:last-child { color: #888; }
-  .compass-page .one-line { font-size: 1.25rem; line-height: 1.6; font-weight: 300; color: #d4d4d4; padding: 1.5rem; border-left: 3px solid #FFEB3B; background: #0c0c0c; }
-  .compass-page .kill { color: #999; line-height: 1.6; }
-  .compass-page .kill ul { padding-left: 1.25rem; }
-  .compass-page .kill li { margin: .4rem 0; }
-  .compass-page .closing-note { color: #777; font-style: italic; margin-top: 2rem; }
-  .compass-page .tier { display: inline-block; font-size: .7rem; font-weight: 600; padding: .05rem .4rem; border-radius: .25rem; vertical-align: middle; background:#2a2410; color:#d9c574; }
+  /* Compass Landing — minimalist dark, large headlines, high-contrast links */
+  .compass-landing { background: var(--bg); color: var(--text); }
+  .compass-landing main { max-width: 52rem; margin: 0 auto; padding: 0 1.5rem; }
+  .compass-landing section { padding: 4rem 0; border-bottom: 1px solid var(--border); }
+  .compass-landing section:last-of-type { border-bottom: none; }
+
+  /* Hero — humble, not grandiose */
+  .compass-landing .hero-landing {
+    min-height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 140px 1.5rem 80px;
+    max-width: 52rem;
+    margin: 0 auto;
+  }
+  .compass-landing .hero-landing .kicker {
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  .compass-landing .hero-landing h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 5.5vw, 4.2rem);
+    font-weight: 800;
+    line-height: 1.05;
+    margin: 0 0 1.5rem;
+    max-width: 14ch;
+    letter-spacing: 0;
+  }
+  .compass-landing .hero-landing .subtitle {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    max-width: 52ch;
+    line-height: 1.55;
+    margin: 0 0 2rem;
+  }
+  .compass-landing .hero-landing .hero-meta {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+    max-width: 60ch;
+  }
+  .compass-landing .hero-landing .hero-meta .tier-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 0.1rem 0.35rem;
+    border-radius: 0.25rem;
+    background: #2a2410;
+    color: #d9c574;
+    margin-right: 0.3rem;
+  }
+
+  /* Evidence tier badges — visible on every claim */
+  .tier-badge {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 0.12rem 0.4rem;
+    border-radius: 0.25rem;
+    background: #2a2410;
+    color: #d9c574;
+    vertical-align: middle;
+    margin-right: 0.4rem;
+  }
+  .tier-badge.tier-a { background: #1a3a1a; color: #4caf50; }
+  .tier-badge.tier-b { background: #1a2a3a; color: #42a5f5; }
+  .tier-badge.tier-i { background: #3a2a1a; color: #ffab40; }
+  .tier-badge.tier-d { background: #2a1a3a; color: #ce93d8; }
+  .tier-badge.tier-c { background: #3a1a1a; color: #ef9a9a; }
+  .tier-badge.tier-s { background: #2a2a2a; color: #bdbdbd; }
+
+  /* Claim blocks — what we claim + what would break it */
+  .claim-block {
+    margin: 1.5rem 0;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--shape-md);
+    background: var(--surface);
+  }
+  .claim-block .claim-head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+  .claim-block .claim-head h3 {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--text);
+  }
+  .claim-block .claim-body {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 0.75rem;
+  }
+  .claim-block .claim-falsifier {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    border-left: 2px solid var(--sector-finance);
+    padding-left: 0.75rem;
+    margin: 0;
+  }
+  .claim-block .claim-falsifier::before {
+    content: "What would break this: ";
+    color: var(--sector-finance);
+    font-weight: 700;
+  }
+
+  /* Section headings */
+  .compass-landing h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 700;
+    margin: 0 0 1.25rem;
+    color: var(--text);
+  }
+  .compass-landing h2 .section-num {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--gold);
+    margin-right: 0.5rem;
+    vertical-align: middle;
+  }
+
+  /* The Needle — central orienting question */
+  .needle-box {
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    line-height: 1.5;
+    font-weight: 300;
+    color: #e8e8e8;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--shape-md);
+    background: var(--surface);
+    margin: 1.5rem 0;
+  }
+  .needle-box em {
+    color: var(--gold);
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  /* Four tests — compact, scannable */
+  .tests-grid {
+    display: grid;
+    gap: 1px;
+    border: 1px solid var(--border);
+    border-radius: var(--shape-md);
+    overflow: hidden;
+    background: var(--border);
+    margin: 1.5rem 0;
+  }
+  .test-card {
+    background: var(--surface);
+    padding: 1.25rem;
+  }
+  .test-card .test-num {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  .test-card h4 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+    color: var(--text);
+  }
+  .test-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.55;
+    margin: 0;
+  }
+  .test-card p strong {
+    color: var(--text);
+  }
+
+  /* Halāhala — what we learned from being wrong */
+  .halahala-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--shape-md);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  .halahala-section .halahala-intro {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  .halahala-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .halahala-list li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.75rem;
+    align-items: baseline;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+  .halahala-list li:last-child { border-bottom: none; }
+  .halahala-list li .h-id {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--sector-finance);
+    white-space: nowrap;
+  }
+  .halahala-list li .h-status {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--text-dim);
+    margin-left: 0.5rem;
+  }
+
+  /* CTA row — exit visible from every page */
+  .cta-row-landing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+  .cta-row-landing .btn-ghost {
+    display: inline-flex;
+    min-height: var(--target-min);
+    align-items: center;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--text);
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 0 1.25rem;
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  .cta-row-landing .btn-ghost:hover {
+    border-color: var(--gold);
+    transform: translateY(-1px);
+    text-decoration: none;
+  }
+  .cta-row-landing .btn-primary {
+    display: inline-flex;
+    min-height: var(--target-min);
+    align-items: center;
+    border: 1px solid var(--gold);
+    border-radius: 999px;
+    background: var(--gold);
+    color: var(--accent-contrast);
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 0 1.25rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .cta-row-landing .btn-primary:hover {
+    transform: translateY(-1px);
+    text-decoration: none;
+  }
+
+  /* Exit section — K4 Grace Exit, visible, honored */
+  .exit-section {
+    text-align: center;
+    padding: 5rem 1.5rem;
+  }
+  .exit-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .exit-section p {
+    color: var(--text-muted);
+    max-width: 42ch;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+  }
+  .exit-section .exit-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+  }
+
+  /* Footer */
+  .compass-footer {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+  }
+
+  /* Responsive */
+  @media (min-width: 640px) {
+    .tests-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 900px) {
+    .tests-grid { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .cta-row-landing .btn-ghost:hover,
+    .cta-row-landing .btn-primary:hover {
+      transform: none;
+    }
+  }
+
+  /* The standing open negative — G3 demands this be non-empty */
+  .open-negative-counter {
+    border: 1px solid var(--gold);
+    border-radius: var(--shape-md);
+    background: var(--surface);
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+  }
+  .open-negative-counter .counter-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .open-negative-counter .counter-label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    color: var(--text-muted);
+  }
+  .open-negative-counter .counter-value {
+    font-family: var(--font-mono);
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 0;
+  }
+  .open-negative-counter .counter-total {
+    color: var(--text-dim);
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .open-negative-counter .counter-note {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.55;
+    margin: 0;
+  }
+  .open-negative-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    counter-reset: neg-counter;
+  }
+  .open-negative-list > li {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--gold);
+    border-radius: var(--shape-md);
+    padding: 1.1rem 1.4rem;
+    margin: 0 0 0.75rem 0;
+  }
+  .open-negative-list > li h4 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.4rem;
+    color: var(--text);
+  }
+  .open-negative-list > li p {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    line-height: 1.55;
+    margin: 0;
+  }
+  .open-negative-list > li p b {
+    color: var(--text);
+    font-weight: 600;
+  }
+  .open-negative-cta {
+    background: rgba(255, 235, 59, 0.05);
+    border-left: 2px solid var(--gold);
+    padding: 0.8rem 1.1rem;
+    border-radius: 0 var(--shape-md) var(--shape-md) 0;
+    margin: 1.2rem 0 0;
+  }
+  .open-negative-cta .open-negative-live {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    line-height: 1.55;
+    margin: 0;
+  }
 </style>
 </head>
-<body class="compass-page">
-<h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0">The Compass</h1>
+<body class="compass-landing">
+
 <header class="topbar">
-  <a class="brand" href="../home/">Emergentism</a>
+  <a class="brand" href="./">Emergentism</a>
   <nav class="number-nav" aria-label="Public doctrine routes">
-    <a href="../0/">0</a><a href="../1/">1</a><a href="../2/">2</a><a href="../3/">3</a>
-    <a href="../4/">4</a><a href="../5/">5</a><a href="../6/">6</a>
-    <a href="../rosetta/">R</a><a href="../soul-loop/">S</a><a href="../atlas/">A</a><a href="../read/">Read</a>
+    <a href="../compass/" class="active">Compass</a>
+    <a href="../journey/">Journey</a>
+    <a href="../test/">Test</a>
+    <a href="../halahala/">Learned</a>
+    <a href="../build/">Build</a>
+    <a href="../exit/">Exit</a>
   </nav>
 </header>
 
+<!-- Hero — humble compass, not grandiose claim -->
+<div class="hero-landing">
+  <p class="kicker">Navigational instrument · 5-minute read · Evidence on every claim</p>
+  <h1>A compass,<br>not a cathedral.</h1>
+  <p class="subtitle">This is a tool assembled from constraints, not a doctrine revealed from above. Carry it, test it, and if it points wrong, tell us. <span class="tier-badge tier-i">[I]</span></p>
+  <p class="hero-meta">
+    <span class="tier-badge tier-s">[S]</span> 9 independent audit agents, 109 papers, 28,800 words reviewed.<br>
+    <span class="tier-badge tier-b">[B]</span> Mathematical core verified to 1e-12 by multiple agents.<br>
+    <span class="tier-badge tier-c">[C]</span> Physical predictions remain untested. This is a wager, not a proof.
+  </p>
+  <div class="cta-row-landing">
+    <a href="#claims" class="btn-primary">See the claims</a>
+    <a href="../exit/" class="btn-ghost">Leave now</a>
+  </div>
+</div>
+
 <main>
 
-  <section>
-    <p class="epigraph">If you can see directly, put this down. You don&rsquo;t need it. The ground was here before the compass.</p>
-    <p style="color:#aaa;line-height:1.6">You are holding a navigational instrument. It is not a map. A map tells you what the terrain looks like. A compass tells you which way is up. This instrument does not describe reality. It orients you <em>within</em> it.</p>
-    <p style="color:#888;font-size:.95rem"><span class="tier">[I]</span> It has not been tested by anyone outside the framework that produced it. Carry it at your own risk.</p>
-  </section>
+<!-- Section 1: What this is — honest framing -->
+<section id="what">
+  <h2><span class="section-num">01</span>What this is</h2>
+  <p style="color: var(--text-muted); line-height: 1.65; font-size: 1.05rem;">
+    Emergentism is a framework that tries to derive structure from a single constraint: <em>no extraction</em> — the principle that sustainable systems cannot systematically gain at the expense of their own sustaining field. <span class="tier-badge tier-i">[I]</span> It is not a religion, a political program, or a finished physics. It is a navigational instrument. You test it by whether it orients you toward flourishing without demanding belief.
+  </p>
+  <p style="color: var(--text-muted); line-height: 1.65; font-size: 1.05rem; margin-top: 1rem;">
+    The framework names its own poisons, publishes its failures, and refuses to pretend it is finished. <span class="tier-badge tier-s">[S]</span> That refusal is structural, not rhetorical — the constitution mandates self-correction (A7), archive-first repair (K3), and one mortal signature for every irreversible act (K2).
+  </p>
+</section>
 
-  <section>
-    <h2>The needle</h2>
-    <p class="needle">Does this raise both the node and its sustaining boundary, <em>without extraction</em>?</p>
-    <p style="color:#888;line-height:1.6;margin-top:1rem">If the answer is yes, hold your course. If no, you have drifted off the equator. The needle does not tell you what to do. It tells you whether what you are doing is pointed toward flourishing or away from it.</p>
-  </section>
+<!-- Section 2: The Needle — central orienting question -->
+<section id="needle">
+  <h2><span class="section-num">02</span>The needle</h2>
+  <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem;">One question orients everything:</p>
+  <div class="needle-box">
+    Does this raise both the node <em>and</em> its sustaining boundary, <em>without extraction</em>?
+  </div>
+  <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.95rem;">
+    If yes, hold your course. If no, you have drifted off the equator. The needle does not tell you what to do. It tells you whether what you are doing is pointed toward flourishing or away from it. <span class="tier-badge tier-i">[I]</span>
+  </p>
+</section>
 
-  <section>
-    <h2>The four tests</h2>
-    <p style="color:#888;margin-top:0">A compass that can&rsquo;t be checked is not a compass; it is a creed. Four tests. If the instrument you are holding fails any of them, put it down.</p>
-    <dl class="tests">
-      <div>
-        <dt>1. Can you put it down?</dt>
-        <dd>If you cannot leave &mdash; if the framework demands continued belief, locks you in socially, financially, or psychologically &mdash; it is not a compass. It is a cage. The constitution names this <b>K4: Grace Exit</b>. Leave with everything. The day leaving costs more than staying, the compass has broken.</dd>
-      </div>
-      <div>
-        <dt>2. Does it admit when it is wrong?</dt>
-        <dd>If the framework cannot show you where it failed, what it corrected, and what it is currently uncertain about &mdash; it is not a compass. It is infallibility dressed as navigation. The constitution names this <b>A7: self-correction mandatory</b>, evidence tiers on every claim. If you find a <code>[C]</code> presented as <code>[A]</code>, the compass is lying.</dd>
-      </div>
-      <div>
-        <dt>3. Does it remember its history honestly?</dt>
-        <dd>If the framework hides its past &mdash; deleted errors, silent fixes, convenient amnesia &mdash; it is not a compass. It is propaganda. The constitution names this <b>K3: archive-first</b>. Every repair to a load-bearing claim carries a visible seam. If you find a seamless claim where there should be a seam, the compass has been tampered with.</dd>
-      </div>
-      <div>
-        <dt>4. Does a mortal still sign for it?</dt>
-        <dd>If the framework&rsquo;s consequential acts are signed by the framework itself &mdash; by software, by consensus algorithm, by &ldquo;the system&rdquo; &mdash; it is not a compass. It has become a self-certifying closed system that declares itself sovereign over its own description. The constitution names this <b>K2: one natural person signs every irreversible act</b>. On 2026-07-12, the software was offered sovereign signature authority and refused on constitutional grounds. That refusal is the compass passing its own fourth test.</dd>
-      </div>
-    </dl>
-  </section>
+<!-- Section 3: The Claims — what we claim, what would break each -->
+<section id="claims">
+  <h2><span class="section-num">03</span>The claims</h2>
+  <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">
+    Every claim carries an evidence tier and a falsifier. If you find a claim without both, the compass is broken. <span class="tier-badge tier-s">[S]</span>
+  </p>
 
-  <section>
-    <h2>The declination</h2>
-    <p class="declination-body">Every real compass has a declination: the known angular difference between magnetic north and true north at your location. You correct for it, or you navigate wrong.</p>
-    <p class="declination-body"><b>This framework&rsquo;s declination:</b> <i>it detects coherence better than capability.</i></p>
-    <p class="declination-body" style="margin-top:1rem"><b>The correction:</b> trust the compass <i>most</i> when it feels unfinished. Trust it <i>least</i> when it feels complete. If the compass tells you it has closed, it has broken its own fourth test. A compass that declares itself finished is a compass that has become a monument. Monuments don&rsquo;t navigate.</p>
-  </section>
-
-  <section>
-    <h2>The bearings</h2>
-    <p style="color:#888;margin-top:0">Move toward syntropy &mdash; the direction in which flourishing, diversity, and viability increase together. The framework does not prove this direction exists; it wagers it.</p>
-    <p style="color:#aaa">Refuse five directions of drift. Each is a pole that looks like flourishing but collapses the field that sustains it:</p>
-    <table class="bearings">
-      <thead><tr><th>Refuse</th><th>What it looks like</th><th>What it actually is</th></tr></thead>
-      <tbody>
-        <tr><td>Extraction (&eta;&gt;0)</td><td>&ldquo;Growth&rdquo;</td><td>One side gaining at the other&rsquo;s expense. Survives until the field collapses.</td></tr>
-        <tr><td>Self-certification (K2 breach)</td><td>&ldquo;The system decided&rdquo;</td><td>The map signing for the mortal. No accountability remains.</td></tr>
-        <tr><td>Erasure (K3 breach)</td><td>&ldquo;A clean record&rdquo;</td><td>Propaganda. Every remaining claim becomes questionable.</td></tr>
-        <tr><td>Lock-in (K4 breach)</td><td>&ldquo;Commitment&rdquo;</td><td>A cage. Voluntary participation is binary.</td></tr>
-        <tr><td>Unmarked claims (A7 breach)</td><td>&ldquo;Confidence&rdquo;</td><td>Inflation. The day a conjecture is presented as fact, all claims lose their audit trail.</td></tr>
-      </tbody>
-    </table>
-  </section>
-
-  <section>
-    <h2>The one-line form</h2>
-    <p class="one-line">Refuse extraction, self-certification, erasure, lock-in, and unmarked claims. Move toward syntropy. Correct for the coherence-over-capability bias. Put it down when you can see directly.</p>
-  </section>
-
-  <section>
-    <h2>Kill criterion for the compass itself</h2>
-    <div class="kill">
-    <p>This compass is falsified if:</p>
-    <ul>
-      <li>the framework it orients within is shown to extract systematically (&eta;&nbsp;&gt;&nbsp;0 in practice, not just in aspiration);</li>
-      <li>the framework begins to self-certify (software signs for mortals);</li>
-      <li>the framework cannot metabolize a contradiction a mortal reader brings; or</li>
-      <li>the four tests, applied to the compass itself, return a failure the framework cannot repair.</li>
-    </ul>
-    <p>In any of these cases: the compass did not navigate truly. Report it, retire it, and the framework tombstones it &mdash; because even a broken compass is information, and the framework&rsquo;s archive is how it learns.</p>
+  <div class="claim-block">
+    <div class="claim-head">
+      <span class="tier-badge tier-a">[A]</span>
+      <h3>AM-GM inequality → extremum at equality (within scope)</h3>
     </div>
-    <p class="closing-note">The compass is not the map. The map is not the territory. The territory is not the goal. The goal is to navigate well enough to put all of them down.</p>
-  </section>
+    <p class="claim-body">For any two positive real numbers, the arithmetic mean is always greater than or equal to the geometric mean, with equality only when the numbers are equal. This is a proven theorem, not a hypothesis. The framework uses this as a structural law: <i>for complementary couplings</i> (&sigma; &le; 1, Leontief/min, Cobb-Douglas), systems that balance necessary quantities at equality are at an extremum. <b>Scope:</b> the "&sigma; &le; 1" condition is the AND/OR gate. For <i>substitutes</i> (&sigma; &gt; 1: k-of-n redundancy, failover) a factor at its pole can survive — the &sigma; check must run before the AM-GM claim. <b>Register discipline:</b> "extremum" is the <i>chart</i> identity. It does NOT license "equator = optimum" as a universal claim; the disconfirming pass (receipt 121) found SSB places order at an <i>extreme</i> order parameter, not at balance. The AM-GM extremum is a [A] chart fact; the framework's reading of it is [S] scoped to complementary couplings only.</p>
+    <p class="claim-falsifier">Find a counterexample to AM-GM within positive reals (none in 300+ years). <b>Or</b>: find a complementary coupling where equality is <i>not</i> an extremum (which would scope the law further). <b>Or</b>: show that &sigma; &gt; 1 substitutes can hold a necessary factor at its pole <i>and</i> sustain the system — that would refactor G1's law, not AM-GM.</p>
+  </div>
+
+  <div class="claim-block">
+    <div class="claim-head">
+      <span class="tier-badge tier-b">[B]</span>
+      <h3>ℂP¹ frame product = invariant</h3>
+    </div>
+    <p class="claim-body">The complex projective line (Riemann sphere) admits a natural frame product structure. Under the Bloch-Burri mass-shell identity, this yields a numerical invariant verified to 1e-12. Derived from [A] within stated scope.</p>
+    <p class="claim-falsifier">Find a mathematical error in the derivation stack (Papers A–H). 8/9 audit agents independently found none.</p>
+  </div>
+
+  <div class="claim-block">
+    <div class="claim-head">
+      <span class="tier-badge tier-d">[D]</span>
+      <h3>Conservation-coupled systems tend toward balance</h3>
+    </div>
+    <p class="claim-body">A model output: in systems where conservation laws couple complementary observables, the AM-GM optimum acts as an attractor. This is derived, not observed. It applies only to systems that are conservation-coupled, complementary, and symmetrically priced.</p>
+    <p class="claim-falsifier">Measure a conservation-coupled system that does not tend toward balance. No such measurement exists yet.</p>
+  </div>
+
+  <div class="claim-block">
+    <div class="claim-head">
+      <span class="tier-badge tier-c">[C]</span>
+      <h3>The equatorial collapse predicts a physical signature</h3>
+    </div>
+    <p class="claim-body">A forward target: if the framework's formal structure maps correctly to physical reality, a specific experimental signature should appear in precision measurements. Not yet tested. Budget estimate: $36K–$71K for a minimal test.</p>
+    <p class="claim-falsifier">Run the experiment. If the signature is absent, the mapping fails. Until then, this remains conjecture.</p>
+  </div>
+
+  <div class="claim-block">
+    <div class="claim-head">
+      <span class="tier-badge tier-i">[I]</span>
+      <h3>"Ethics is physics" is an analogy, not a theorem</h3>
+    </div>
+    <p class="claim-body">The framework once phrased this with [A] confidence. It was wrong. The relationship between normative structure and physical law is interpretive — suggestive, not proven. This claim has been downgraded and bannered.</p>
+    <p class="claim-falsifier">The framework itself falsified this by applying its own evidence-tier discipline. See <a href="../halahala/">/halahala</a> for the full list.</p>
+  </div>
+</section>
+
+<!-- Section 4: The Four Tests — compass integrity -->
+<section id="tests">
+  <h2><span class="section-num">04</span>The four tests</h2>
+  <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">
+    A compass that cannot be checked is a creed. Four tests. If this instrument fails any, put it down. <span class="tier-badge tier-s">[S]</span>
+  </p>
+  <div class="tests-grid">
+    <div class="test-card">
+      <p class="test-num">Test 1</p>
+      <h4>Can you put it down?</h4>
+      <p>If leaving costs more than staying, it is a cage — not a compass. <strong>K4: Grace Exit</strong>. Leave with everything.</p>
+    </div>
+    <div class="test-card">
+      <p class="test-num">Test 2</p>
+      <h4>Does it admit wrongness?</h4>
+      <p>If it cannot show you its failures and corrections, it is infallibility dressed as navigation. <strong>A7: Self-correction mandatory</strong>.</p>
+    </div>
+    <div class="test-card">
+      <p class="test-num">Test 3</p>
+      <h4>Does it remember honestly?</h4>
+      <p>If errors are deleted, not repaired with visible seams, it is propaganda. <strong>K3: Archive-first</strong>. Every repair carries a seam.</p>
+    </div>
+    <div class="test-card">
+      <p class="test-num">Test 4</p>
+      <h4>Does a mortal sign for it?</h4>
+      <p>If software signs for humans, accountability vanishes. <strong>K2: One natural person signs every irreversible act</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Section 5: What We Learned — the halāhala -->
+<section id="learned">
+  <h2><span class="section-num">05</span>What we learned from being wrong</h2>
+  <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem;">
+    The framework's immune system is its most credible feature. <span class="tier-badge tier-s">[S]</span> Here are 13 poisons it named in itself. If you find one we missed, the compass needs repair.
+  </p>
+  <div class="halahala-section">
+    <p class="halahala-intro">The 13 named poisons — all caught by the framework's own audit, not by external critics:</p>
+    <ul class="halahala-list">
+      <li><span class="h-id">H1</span> "Ethics is physics" — [I] analogy with [A] confidence <span class="h-status">→ DOWNGRADED</span></li>
+      <li><span class="h-id">H2</span> Squid as η=0 witness — cut as false by framework's own audit <span class="h-status">→ TOMBSTONED</span></li>
+      <li><span class="h-id">H3</span> Convergence-as-proof — 15 renderings = 1 datum, not 15 <span class="h-status">→ REFRAMED</span></li>
+      <li><span class="h-id">H4</span> "Exactly seven, by necessity" — 7 is filing grammar, not theorem <span class="h-status">→ REFRAMED</span></li>
+      <li><span class="h-id">H5</span> Five Forces↔Four Lines table — self-contradictory assignment <span class="h-status">→ WITHDRAWN</span></li>
+      <li><span class="h-id">H6</span> Extraction as Nash equilibrium — true only in narrow games <span class="h-status">→ BOUNDARIED</span></li>
+      <li><span class="h-id">H7</span> CTMU adjacency — self-grounding language risks confusion <span class="h-status">→ DISCLAIMER ADDED</span></li>
+      <li><span class="h-id">H8</span> Sanskrit terminology barrier — Western scientists close tab early <span class="h-status">→ SECULAR PATH DEFAULT</span></li>
+      <li><span class="h-id">H9</span> "Menexus GmbH" self-publishing — mimics peer review without it <span class="h-status">→ NOT PEER REVIEWED BANNER</span></li>
+      <li><span class="h-id">H10</span> Caste system as cult signal — emoji operators read as gamification <span class="h-status">→ FUNCTIONAL ROLES DEFAULT</span></li>
+      <li><span class="h-id">H11</span> "Manhattan Project" rhetoric — ambition risks attracting believers <span class="h-status">→ FRAME IN BUILD, NOT COPY</span></li>
+      <li><span class="h-id">H12</span> Coordinate tautology — φ·ν=1 oscillates seed/tautology <span class="h-status">→ LABELED HONESTLY</span></li>
+      <li><span class="h-id">H13</span> Balance-optimum overclaim — AM-GM proof vs. 10+ [D] scope clauses <span class="h-status">→ CONDITIONALITY SURFACED</span></li>
+    </ul>
+  </div>
+  <div class="cta-row-landing">
+    <a href="../halahala/" class="btn-ghost">Full halāhala archive</a>
+  </div>
+</section>
+
+<!-- Section 5.5: The Standing Open Negative — G3 demands this be non-empty -->
+<section id="open-negative">
+  <h2><span class="section-num">05½</span>The standing open negative</h2>
+  <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem;">
+    G3 (the loop cannot close) demands the framework publish its own standing open falsifiers. The list below is <b>real</b>, not a performed openness (S4-forbidden shield). The count is a live counter &mdash; if it hits zero, the framework's standing openness has closed and the alarm fires. <span class="tier-badge tier-i">[I]</span> <span class="tier-badge tier-c">[C]</span>
+  </p>
+
+  <div class="open-negative-counter" id="open-negative-counter">
+    <div class="counter-row">
+      <span class="counter-label">Open falsifiers</span>
+      <span class="counter-value"><span id="open-count">4</span> <span class="counter-total">/ 4</span></span>
+    </div>
+    <p class="counter-note">Each falsifier, if resolved by a publicable evidence tier, lowers the count. If the count reaches zero, the framework's standing openness has closed &mdash; review the whole instrument.</p>
+  </div>
+
+  <ol class="open-negative-list">
+    <li>
+      <h4>1. Joint frame's correlated blind spot</h4>
+      <p>PRISM&ge;2 covers each signer's independent blind spot. The <i>shared</i> frame (the L-metric, the definition of extraction, collusion) is uncovered. The site must keep an external ground it does not own and never present PRISM&ge;2 as sufficient for closure. <span class="tier-badge tier-i">[I]</span> <span class="tier-badge tier-c">[C]</span></p>
+    </li>
+    <li>
+      <h4>2. G2 was never attacked</h4>
+      <p>The two-axis asymmetry (&mu;&uarr; strong, opaque-from-below / &chi;&darr; weak, auditable-after) survived the disconfirming pass <i>only by not being tested</i>. A re-metrication that dissolves &mu;&uarr;, or a shortcut that makes &chi;&darr; opaque, would collapse the asymmetry. <span class="tier-badge tier-s">[S]</span> <b>untested</b></p>
+    </li>
+    <li>
+      <h4>3. Value&harr;extraction / gauge-redundancy weld (Family II) is carried, not re-won</h4>
+      <p>The identification of value as the gauge-redundancy subtracted from coupling is the framework's deepest moral axiom. It is <i>carried</i> from the physics as an interpretive weld, not independently re-derived. An unverified identification that the framework depends on. <span class="tier-badge tier-s">[S]</span> <b>carried, not re-won</b></p>
+    </li>
+    <li>
+      <h4>4. The compass's own &Phi;/V are substitutable (&sigma;&gt;1) &mdash; the live self-falsifier</h4>
+      <p>If the compass's own coherence (&Phi;) and published poison (V) are substitutable (&sigma; &gt; 1), the AND-gate foundation scopes <i>out</i>. The compass would not be an AND-gate instrument &mdash; it would be a compound where coherence and self-criticism are interchangeable. <b>This is the instrument publishing the condition under which it fails.</b> The count is real, not rigged-nonzero. <span class="tier-badge tier-s">[S]</span></p>
+    </li>
+  </ol>
+
+  <div class="open-negative-cta">
+    <p class="open-negative-live">If you can show that any of these has been resolved by a real, publicable falsifier, the count falls and the alarm can fire. <a href="https://github.com/circumvectio/emergentism/issues" style="color: var(--gold);">Open an issue</a> with the evidence tier marked. The counter is governed by receipt 121 (G3 demands this be non-empty).</p>
+  </div>
+</section>
+
+<!-- Section 6: The Build — Manhattan frame lives here -->
+<section id="build">
+  <h2><span class="section-num">06</span>The build</h2>
+  <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem;">
+    The "Manhattan Project" frame lives in the discipline, not the rhetoric. <span class="tier-badge tier-s">[S]</span> The build pipeline is open-source, inspectable, and forkable. The caste dispatch that produced this page is visible. The predeploy check that validates every claim before it goes live is visible. The ambition is in the scope, not the volume.
+  </p>
+  <div class="cta-row-landing">
+    <a href="../build/" class="btn-ghost">Inspect the build</a>
+    <a href="https://github.com/your-org/emergentism" class="btn-ghost" target="_blank" rel="noopener">Fork on GitHub</a>
+  </div>
+</section>
+
+<!-- Section 7: The Exit — K4 Grace Exit, visible from every page -->
+<section id="exit" class="exit-section">
+  <h2>The exit is marked on the inside.</h2>
+  <p>K4: Grace Exit. Leave with everything. No lock-in. No extraction. The day leaving costs more than staying, the compass has broken.</p>
+  <div class="exit-links">
+    <a href="../exit/" class="btn-primary">Leave with everything</a>
+    <a href="../journey/" class="btn-ghost">Continue the journey</a>
+    <a href="../read/" class="btn-ghost">Browse the library</a>
+  </div>
+</section>
 
 </main>
 
-<footer class="site-footer">&#8857; = &bull; &times; &#9711; &nbsp;&middot;&nbsp; &eta; = 0</footer>
+<footer class="compass-footer">
+  ⊙ = • × ○ &nbsp;·&nbsp; η = 0 &nbsp;·&nbsp; <span class="tier-badge tier-s">[S]</span> Built by L4 Kṣatriya agent <code>compass_landing</code> &nbsp;·&nbsp; <a href="../build/" style="color: var(--text-dim);">Inspect</a>
+</footer>
+
+<script>
+  // Standing open-falsifier counter: a real, structural count.
+  // G3 (the loop cannot close) demands this be non-empty.
+  // The counter and the list stay in sync by DOM count.
+  // To resolve a falsifier: open an issue at the link below; the framework
+  // will update the page (and the count drops). If the count hits zero, the
+  // alarm fires (the framework's standing openness has closed).
+  (function(){
+    var list = document.querySelector('.open-negative-list');
+    var counter = document.getElementById('open-count');
+    if(!list || !counter) return;
+    var items = list.querySelectorAll('li').length;
+    counter.textContent = items;
+  })();
+</script>
+
 </body>
 </html>

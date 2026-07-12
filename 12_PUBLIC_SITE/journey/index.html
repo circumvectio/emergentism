@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Journey Mode — Emergentism</title>
+<meta name="description" content="D0 Ground of Finity to L7 Return. An optional path through the dimension spine. Not a doctrine. Not a requirement." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Journey Mode — Emergentism" />
+<meta property="og:description" content="The path exists. You do not have to take it." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%23FFEB3B' stroke-width='1' opacity='.5'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/css/xai.css">
+<style>
+  /* Journey Mode — L4 Kṣatriya execution wing [S] */
+  .journey-page { background: var(--bg); }
+  .journey-page main { max-width: 52rem; margin: 0 auto; padding: 0 1.5rem; }
+
+  /* Hero — humble, not grandiose */
+  .journey-hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 0 60px;
+  }
+  .journey-hero .kicker {
+    color: var(--text-muted);
+    font-size: 0.72rem;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+  .journey-hero h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 800;
+    line-height: 1.05;
+    margin: 16px 0 28px;
+    letter-spacing: 0;
+    color: var(--text);
+  }
+  .journey-hero .subtitle {
+    font-size: 20px;
+    color: var(--text-muted);
+    max-width: 48ch;
+    line-height: 1.55;
+    margin: 0;
+  }
+  .journey-hero .epigraph {
+    margin-top: 32px;
+    padding: 1.25rem 1.5rem;
+    border-left: 2px solid var(--gold);
+    background: var(--surface);
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+  .journey-hero .epigraph cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-style: normal;
+    font-size: 0.85rem;
+    color: var(--text-dim);
+  }
+
+  /* Evidence tier badges — visible on every claim */
+  .tier {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 0.12rem 0.4rem;
+    border-radius: 3px;
+    vertical-align: middle;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+  .tier-a { background: #1a3a1a; color: #4CAF50; }
+  .tier-b { background: #2a2a10; color: #d9c574; }
+  .tier-s { background: #1a1a2a; color: #42A5F5; }
+  .tier-i { background: #2a1a2a; color: #ce93d8; }
+  .tier-d { background: #1a202a; color: #90caf9; }
+  .tier-c { background: #2a1a1a; color: #ef9a9a; }
+
+  /* Stage cards — the path */
+  .stage-grid {
+    display: grid;
+    gap: 1px;
+    border: 1px solid var(--border);
+    border-radius: var(--shape-md);
+    overflow: hidden;
+    background: var(--border);
+    margin: 2rem 0 4rem;
+  }
+  .stage-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0;
+    background: var(--surface);
+    transition: background 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+  }
+  .stage-card:hover {
+    background: var(--elevated);
+  }
+  .stage-card:hover .stage-glyph {
+    color: var(--gold);
+  }
+  .stage-glyph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    min-height: 120px;
+    font-size: 28px;
+    font-weight: 300;
+    color: var(--text-dim);
+    border-right: 1px solid var(--border);
+    font-family: var(--font-heading);
+    transition: color 0.2s ease;
+  }
+  .stage-body {
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .stage-body .stage-label {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0;
+    margin-bottom: 0.4rem;
+  }
+  .stage-body h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 0.4rem;
+    line-height: 1.3;
+  }
+  .stage-body p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin: 0;
+  }
+  .stage-body .stage-meta {
+    margin-top: 0.6rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  /* Section dividers */
+  .section-rule {
+    border: 0;
+    height: 1px;
+    background: var(--border);
+    margin: 3rem 0;
+  }
+
+  /* What this is / What this is not */
+  .clarity-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    border: 1px solid var(--border);
+    border-radius: var(--shape-md);
+    overflow: hidden;
+    background: var(--border);
+    margin: 1.5rem 0 3rem;
+  }
+  .clarity-cell {
+    background: var(--surface);
+    padding: 1.25rem 1.5rem;
+  }
+  .clarity-cell h4 {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    margin: 0 0 0.75rem;
+  }
+  .clarity-cell.is h4 { color: var(--instrument-green); }
+  .clarity-cell.is-not h4 { color: var(--sector-finance); }
+  .clarity-cell ul {
+    margin: 0;
+    padding-left: 1.1rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  .clarity-cell li { margin: 0.3rem 0; }
+
+  @media (max-width: 640px) {
+    .clarity-grid { grid-template-columns: 1fr; }
+    .stage-card { grid-template-columns: 60px 1fr; }
+    .stage-glyph { width: 60px; font-size: 22px; }
+  }
+
+  /* Exit banner */
+  .exit-banner {
+    margin: 4rem 0 2rem;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--shape-md);
+    background: var(--surface);
+    text-align: center;
+  }
+  .exit-banner p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .exit-banner a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .exit-banner a:hover { text-decoration: underline; }
+
+  /* Footer */
+  .journey-footer {
+    text-align: center;
+    padding: 3rem 0 4rem;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+  }
+  .journey-footer .phi {
+    font-size: 1.1rem;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+</style>
+</head>
+<body class="journey-page">
+
+<header class="topbar">
+  <a class="brand" href="../">Emergentism</a>
+  <nav class="number-nav" aria-label="Public doctrine routes">
+    <a href="../compass/">Compass</a>
+    <a href="../0/">0</a><a href="../1/">1</a><a href="../2/">2</a><a href="../3/">3</a>
+    <a href="../4/">4</a><a href="../5/">5</a><a href="../6/">6</a>
+    <a href="../rosetta/">R</a><a href="../soul-loop/">S</a><a href="../atlas/">A</a><a href="../read/">Read</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Hero — humble compass, not grandiose claim -->
+  <section class="journey-hero">
+    <div>
+      <div class="kicker">Optional Path · D0 → L7 · <span class="tier tier-s">[S]</span></div>
+      <h1>Journey Mode</h1>
+      <p class="subtitle">
+        A path through the dimension spine. Not a doctrine. Not a requirement. The compass works without the map.
+      </p>
+      <div class="epigraph">
+        "If you can see directly, put this down. You don't need it. The ground was here before the compass."
+        <cite>— <span class="tier tier-i">[I]</span> Entry epigraph, not a command</cite>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-rule">
+
+  <!-- What this is / What this is not — halāhala antidote -->
+  <section>
+    <div class="kicker" style="margin-bottom:1rem">Clarity · <span class="tier tier-s">[S]</span></div>
+    <div class="clarity-grid">
+      <div class="clarity-cell is">
+        <h4>This is</h4>
+        <ul>
+          <li>A navigable index of the dimension spine</li>
+          <li>An optional deepening for those who want it</li>
+          <li>Every claim tiered — no silent upgrades</li>
+          <li>Exit-visible at every stage</li>
+        </ul>
+      </div>
+      <div class="clarity-cell is-not">
+        <h4>This is not</h4>
+        <ul>
+          <li>A required conversion path</li>
+          <li>A proof of worldview correctness</li>
+          <li>A substitute for the compass at <a href="../compass/">/compass</a></li>
+          <li>A closed system — K4 Grace Exit applies</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-rule">
+
+  <!-- The path — stage cards -->
+  <section>
+    <div class="kicker" style="margin-bottom:1rem">The Stages · <span class="tier tier-s">[S]</span> for route structure; <span class="tier tier-i">[I]</span> for content summaries</div>
+
+    <div class="stage-grid">
+
+      <a href="../0/" class="stage-card">
+        <div class="stage-glyph">⊙</div>
+        <div class="stage-body">
+          <div class="stage-label">D0 · Ground of Finity</div>
+          <h3>Titans of Numbers</h3>
+          <p>Before the number line: three boundary-frames that make relation legible. Zero-pole, finity-mirror, infinity-pole.</p>
+          <div class="stage-meta">
+            <span class="tier tier-s">[S]</span>
+            <span class="tier tier-a">[A]</span>
+            <span style="color:var(--text-dim);font-size:0.75rem">Frame register · 8 min</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="../1/" class="stage-card">
+        <div class="stage-glyph">•</div>
+        <div class="stage-body">
+          <div class="stage-label">D1 · The Light Cone</div>
+          <h3>Logarithmic Line</h3>
+          <p>Finity casts a shadow: the multiplicative center becomes one. The logarithmic line makes the infinite finite and the finite infinite.</p>
+          <div class="stage-meta">
+            <span class="tier tier-b">[B]</span>
+            <span class="tier tier-i">[I]</span>
+            <span style="color:var(--text-dim);font-size:0.75rem">Derived from D0 · 10 min</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="../2/" class="stage-card">
+        <div class="stage-glyph">○</div>
+        <div class="stage-body">
+          <div class="stage-label">D2 · Balance</div>
+          <h3>AM-GM and the Equator</h3>
+          <p>The arithmetic-geometric mean inequality becomes a physical principle: systems that conserve complementary quantities settle at the geometric mean.</p>
+          <div class="stage-meta">
+            <span class="tier tier-a">[A]</span>
+            <span class="tier tier-d">[D]</span>
+            <span style="color:var(--text-dim);font-size:0.75rem">AM-GM proof · conditional scope · 12 min</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="../3/" class="stage-card">
+        <div class="stage-glyph">△</div>
+        <div class="stage-body">
+          <div class="stage-label">D3 · The Trivium</div>
+          <h3>Threefold Constraint</h3>
+          <p>Grammar, logic, rhetoric — not as academic disciplines but as structural constraints on any coherent description. The frame that makes frames possible.</p>
+          <div class="stage-meta">
+            <span class="tier tier-i">[I]</span>
+            <span class="tier tier-s">[S]</span>
+            <span style="color:var(--text-dim);font-size:0.75rem">Methodology scaffold · 10 min</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="../4/" class="stage-card">
+        <div class="stage-glyph">□</div>
+        <div class="stage-body">
+          <div class="stage-label">D4 · Equatorial Collapse</div>
+          <h3>When the Center Folds</h3>
+          <p>The equator is not stable. Systems that optimize one pole at the expense of the complementary pole collapse the field that sustains them.</p>
+          <div class="stage-meta">
+            <span class="tier tier-b">[B]</span>
+            <span class="tier tier-c">[C]</span>
+            <span style="color:var(--text-dim);font-size:0.75rem">Model output · forward target · 8 min</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="../5/" class="stage-card">
+        <div class="stage-glyph">◈</div>
+        <div class="stage-body">
+          <div class="stage-label">D5 · Executive Descent</div>
+          <h3>The Operator and the Organism</h3>
+          <p>From abstract structure to concrete runtime: the Rosetta caste system as dispatch grammar, not identity. L1–L4 execute; L5–L7 witness.</p>
+          <div class="stage-meta">
+            <span class="tier tier-s">[S]</span>
+            <span class="tier tier-i">[I]</span>
+            <span style="color:var(--text-dim);font-size:0.75rem">Operational grammar · 15 min</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="../6/" class="stage-card">
+        <div class="stage-glyph">∞</div>
+        <div class="stage-body">
+          <div class="stage-label">D6 · Return</div>
+          <h3>Ground of the Ground</h3>
+          <p>The loop closes. What began as three boundary-frames returns as the self-describing limit: the framework that orients within itself.</p>
+          <div class="stage-meta">
+            <span class="tier tier-i">[I]</span>
+            <span class="tier tier-c">[C]</span>
+            <span style="color:var(--text-dim);font-size:0.75rem">Self-description limit · 8 min</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <hr class="section-rule">
+
+  <!-- The Rosetta Ladder — functional roles, Sanskrit optional -->
+  <section>
+    <div class="kicker" style="margin-bottom:1rem">The Rosetta Ladder · <span class="tier tier-s">[S]</span> for dispatch grammar</div>
+    <p style="color:var(--text-muted);line-height:1.6;margin:0 0 1.5rem">
+      The caste system is <strong>dispatch grammar</strong> for the agent runtime, not sovereign identity. 
+      <span class="tier tier-i">[I]</span> Sanskrit names are internal; public pages default to functional roles.
+    </p>
+    <div class="stage-grid" style="margin-bottom:3rem">
+      <div class="stage-card" style="cursor:default">
+        <div class="stage-glyph" style="font-size:18px">L1</div>
+        <div class="stage-body">
+          <div class="stage-label">Firewall · Raw Intake</div>
+          <h3>Caṇḍāla</h3>
+          <p>Drift pressure, overclaim firewall, contradiction isolation. The boundary that keeps η > 0 from entering.</p>
+          <div class="stage-meta"><span class="tier tier-s">[S]</span></div>
+        </div>
+      </div>
+      <div class="stage-card" style="cursor:default">
+        <div class="stage-glyph" style="font-size:18px">L2</div>
+        <div class="stage-body">
+          <div class="stage-label">Truth-Cut · Pattern Recognition</div>
+          <h3>Śūdra</h3>
+          <p>Evidence-tier disclosure, epistemology entry point. The blade that separates what is known from what is hoped.</p>
+          <div class="stage-meta"><span class="tier tier-s">[S]</span></div>
+        </div>
+      </div>
+      <div class="stage-card" style="cursor:default">
+        <div class="stage-glyph" style="font-size:18px">L3</div>
+        <div class="stage-body">
+          <div class="stage-label">Audit · Evidence Compliance</div>
+          <h3>Vaiśya</h3>
+          <p>Citation audit, route drift detection, archive verification. The accountant of truth-claims.</p>
+          <div class="stage-meta"><span class="tier tier-s">[S]</span></div>
+        </div>
+      </div>
+      <div class="stage-card" style="cursor:default">
+        <div class="stage-glyph" style="font-size:18px">L4</div>
+        <div class="stage-body">
+          <div class="stage-label">Executor · Handoff</div>
+          <h3>Kṣatriya</h3>
+          <p>K2 envelope staging, decisive execution. The agent that builds what the architect designed, within K2 gates.</p>
+          <div class="stage-meta"><span class="tier tier-s">[S]</span></div>
+        </div>
+      </div>
+      <div class="stage-card" style="cursor:default">
+        <div class="stage-glyph" style="font-size:18px">L5</div>
+        <div class="stage-body">
+          <div class="stage-label">Architect · Schema Design</div>
+          <h3>Brāhmaṇa</h3>
+          <p>Lane-map design, canonical maps, schema evolution. The cartographer of possibility.</p>
+          <div class="stage-meta"><span class="tier tier-s">[S]</span></div>
+        </div>
+      </div>
+      <div class="stage-card" style="cursor:default">
+        <div class="stage-glyph" style="font-size:18px">L6</div>
+        <div class="stage-body">
+          <div class="stage-label">Compressor · Archive Guard</div>
+          <h3>Sādhu</h3>
+          <p>K3 tombstone discipline, apophatic prune, superseded canon management. The keeper of what was true and is no longer.</p>
+          <div class="stage-meta"><span class="tier tier-s">[S]</span></div>
+        </div>
+      </div>
+      <div class="stage-card" style="cursor:default">
+        <div class="stage-glyph" style="font-size:18px">L7</div>
+        <div class="stage-body">
+          <div class="stage-label">Witness · Boundary Symbol</div>
+          <h3>Ṛṣi</h3>
+          <p>Public narrative, compressed witness, never overrides source. The voice that says what the framework is, not what it should become.</p>
+          <div class="stage-meta"><span class="tier tier-s">[S]</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-rule">
+
+  <!-- Honest framing — halāhala visible -->
+  <section>
+    <div class="kicker" style="margin-bottom:1rem">Honest Framing · <span class="tier tier-i">[I]</span></div>
+    <p style="color:var(--text-muted);line-height:1.65;margin:0 0 1.5rem">
+      The audit of 2026-07-14 found the framework intellectually sound in its evidence-tier discipline but public-translation fragile in its packaging. 
+      <span class="tier tier-s">[S]</span> 9 agents, 109 papers, 1 convergence. The halāhala are all at the surface layer.
+    </p>
+    <p style="color:var(--text-muted);line-height:1.65;margin:0 0 1.5rem">
+      This page is an attempt to fix the packaging without changing the content. The cathedral stays. The door changes. 
+      <span class="tier tier-c">[C]</span> Whether the restructure succeeds is a test the framework cannot give itself.
+    </p>
+    <p style="color:var(--text-muted);line-height:1.65;margin:0">
+      The Manhattan frame lives in the build, not the copy. The open-source pipeline, the generator, the caste dispatch, the predeploy check — 
+      the discipline is visible at <a href="../read/">/read</a> and in the repository. The ambition is in the scope, not the volume.
+      <span class="tier tier-b">[B]</span> Build pipeline is inspectable; rhetoric is restrained.
+    </p>
+  </section>
+
+  <!-- Exit banner — K4 Grace Exit visible -->
+  <div class="exit-banner">
+    <p>
+      <strong style="color:var(--text)">K4 Grace Exit</strong> — Leave with everything. 
+      <a href="../compass/">Return to the Compass</a> · 
+      <a href="../">Go to the landing</a> · 
+      <a href="../read/">Browse the library</a>
+    </p>
+  </div>
+
+</main>
+
+<footer class="journey-footer">
+  <div class="phi">⊙ = • × ○</div>
+  <p>η = 0 · Evidence tiers on every claim · <span class="tier tier-s">[S]</span> for structural routing</p>
+</footer>
+
+</body>
+</html>
