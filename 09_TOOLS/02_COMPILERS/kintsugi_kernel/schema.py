@@ -59,6 +59,11 @@ def _item(path: str, index: int) -> str:
 
 
 def _json_equal(left: Any, right: Any) -> bool:
+    if type(left) in (int, float) and type(right) in (int, float):
+        try:
+            return bool(left == right)
+        except Exception:
+            return left is right
     if type(left) is not type(right):
         return False
     if isinstance(left, dict):
@@ -191,7 +196,7 @@ def _schema_shape_issues(
         else:
             try:
                 re.compile(pattern)
-            except re.error as exc:
+            except (re.error, OverflowError) as exc:
                 issues.append(_issue(_child(path, "pattern"), f"invalid pattern: {exc}", keyword=True))
 
     if "minimum" in node and (

@@ -6,6 +6,7 @@ import hashlib
 import io
 import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 from unittest import mock
@@ -229,6 +230,26 @@ class FrozenSchemaArtifactTests(SchemaAssertions):
             with self.subTest(value=repr(value)):
                 self.assertSchemaFailure(kernel.validate_schema_document(value))
 
+    def test_overflowing_pattern_quantifier_fails_with_typed_schema_diagnostic(self):
+        overflowing = copy.deepcopy(self.schema)
+        overflowing["$defs"]["overflowPattern"] = {
+            "type": "string",
+            "pattern": "a{999999999999999999999999999999}",
+        }
+
+        issues = kernel.validate_schema_document(overflowing)
+        self.assertSchemaFailure(issues)
+        self.assertEqual(issues[0].code, "KIN-E-SCHEMA-KEYWORD")
+        self.assertEqual(issues[0].path, "$.$defs.overflowPattern.pattern")
+
+        with tempfile.TemporaryDirectory() as directory:
+            schema_path = Path(directory) / "overflow-schema.json"
+            schema_path.write_bytes(kernel.canonical_json_bytes(overflowing))
+            with self.assertRaises(kernel.KintsugiError) as caught:
+                kernel.load_schema(schema_path)
+        self.assertEqual(caught.exception.code, "KIN-E-SCHEMA-KEYWORD")
+        self.assertEqual(caught.exception.path, "$.$defs.overflowPattern.pattern")
+
 
 class RestrictedEvaluatorTests(SchemaAssertions):
     def test_all_three_complete_synthetic_roots_validate_and_are_fresh(self):
@@ -287,6 +308,31 @@ class RestrictedEvaluatorTests(SchemaAssertions):
         duplicate = support.build_core_data()
         duplicate["manifests"][0]["harvestedClaimIds"].append(support.CLAIM_ID)
         self.assertSchemaFailure(kernel.validate_schema_instance(self.schema, "coreData", duplicate))
+
+    def test_json_numeric_equality_applies_to_const_enum_and_unique_items(self):
+        numeric = copy.deepcopy(self.schema)
+        numeric["$defs"].update({
+            "numericConst": {"const": 1},
+            "numericEnum": {"enum": [1]},
+            "numericUnique": {"type": "array", "uniqueItems": True},
+        })
+        self.assertEqual(kernel.validate_schema_document(numeric), ())
+
+        self.assertEqual(kernel.validate_named_definition(numeric, "numericConst", 1.0), ())
+        self.assertEqual(kernel.validate_named_definition(numeric, "numericEnum", 1.0), ())
+        self.assertSchemaFailure(
+            kernel.validate_named_definition(numeric, "numericUnique", [1, 1.0])
+        )
+
+        self.assertSchemaFailure(kernel.validate_named_definition(numeric, "numericConst", True))
+        self.assertSchemaFailure(kernel.validate_named_definition(numeric, "numericEnum", True))
+        self.assertEqual(
+            kernel.validate_named_definition(numeric, "numericUnique", [1, True]), ()
+        )
+
+        duplicate_enum = copy.deepcopy(numeric)
+        duplicate_enum["$defs"]["numericEnum"]["enum"] = [1, 1.0]
+        self.assertSchemaFailure(kernel.validate_schema_document(duplicate_enum))
 
     def test_instance_validation_is_total_and_sorted(self):
         malformed = [None, True, 1, "instance", [], {}, {"schemaVersion": 1}, {"x": object()}]
