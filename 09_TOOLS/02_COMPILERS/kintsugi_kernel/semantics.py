@@ -209,7 +209,7 @@ def _supporting_trial(
         )
         and _verdict_valid(trial)
     ]
-    return len(eligible) == 1
+    return bool(eligible)
 
 
 def _validate_claims(core: dict[str, Any]) -> list[Issue]:
@@ -273,6 +273,16 @@ def _validate_claims(core: dict[str, Any]) -> list[Issue]:
             mode = link.get("mode")
             independence = link.get("independenceStatus")
             ceiling = link.get("evidenceCeiling")
+            ceiling_valid = True
+            if supporting is not None:
+                support_evidence = supporting.get("evidence", {})
+                ceiling_valid = (
+                    ceiling in EVIDENCE_ORDER
+                    and support_evidence.get("strength") in EVIDENCE_ORDER
+                    and EVIDENCE_ORDER[ceiling] <= EVIDENCE_ORDER[support_evidence["strength"]]
+                )
+                if not ceiling_valid:
+                    result.append(_issue(path, "KIN-E-VERDICT", "link ceiling exceeds the supporting claim"))
             if mode in {"ANALOGY", "ROSETTA_TRANSFER"}:
                 if (independence, ceiling) != ("NOT_APPLICABLE", "I"):
                     result.append(_issue(path, "KIN-E-VERDICT", "analogy/Rosetta support is fixed at I/NOT_APPLICABLE"))
@@ -282,12 +292,7 @@ def _validate_claims(core: dict[str, Any]) -> list[Issue]:
             if supporting is None:
                 continue
             support_evidence = supporting.get("evidence", {})
-            if (
-                ceiling not in EVIDENCE_ORDER
-                or support_evidence.get("strength") not in EVIDENCE_ORDER
-                or EVIDENCE_ORDER[ceiling] > EVIDENCE_ORDER[support_evidence["strength"]]
-            ):
-                result.append(_issue(path, "KIN-E-VERDICT", "link ceiling exceeds the supporting claim"))
+            if not ceiling_valid:
                 continue
             target_a = ceiling == "A"
             if support_evidence.get("lifecycle") != "ACTIVE" or not _supporting_trial(
@@ -386,12 +391,10 @@ def _qualifying_upgrade(
         ):
             return False
         if after == "A":
-            if not (
+            has_independent_a = has_independent_a or (
                 independence == "INDEPENDENT" and ceiling == "A"
-                and evidence.get("strength") == "A" and evidence.get("sourced")
-            ):
-                return False
-            has_independent_a = True
+                and evidence.get("strength") == "A" and evidence.get("sourced") is True
+            )
     return after != "A" or has_independent_a
 
 
@@ -551,9 +554,19 @@ def validate_public_queue(
     seams = _index(core, "seams")
     manifest = manifests.get(queue.get("manifestId"))
     receipt = receipts.get(queue.get("receiptId"))
+    manifest_paths = {
+        record.get("path") for record in manifest.get("includedFiles", [])
+        if isinstance(record, dict)
+    } if manifest is not None else set()
+    expected_receipt = RECEIPT_IDENTITIES["C"]
     if manifest is None or manifest.get("phase") != "C":
         result.append(_issue("publicQueue.manifestId", "KIN-E-QUEUE", "queue manifest must resolve to Phase C"))
-    if receipt is None or receipt.get("phase") != "C" or receipt.get("manifestId") != queue.get("manifestId"):
+    if (
+        receipt is None
+        or receipt.get("phase") != "C"
+        or receipt.get("manifestId") != queue.get("manifestId")
+        or (receipt.get("id"), receipt.get("path")) != expected_receipt[:2]
+    ):
         result.append(_issue("publicQueue.receiptId", "KIN-E-QUEUE", "queue receipt must resolve to the same Phase-C manifest"))
 
     for position, item in enumerate(queue.get("items", [])):
@@ -561,6 +574,11 @@ def validate_public_queue(
             result.append(_issue(f"publicQueue.items[{position}]", "KIN-E-QUEUE", "queue item must be an object"))
             continue
         base = f"publicQueue.items[{position}]"
+        if manifest is not None and item.get("publicFile") not in manifest_paths:
+            result.append(_issue(
+                f"{base}.publicFile", "KIN-E-QUEUE",
+                "public file is outside the selected Phase-C manifest inventory",
+            ))
         current = item.get("currentEvidence", {}).get("strength")
         maximum = item.get("maximumPublicStrength")
         if current in EVIDENCE_ORDER and maximum in EVIDENCE_ORDER and EVIDENCE_ORDER[current] > EVIDENCE_ORDER[maximum]:
@@ -573,19 +591,37 @@ def validate_public_queue(
             if claim is None or claim.get("ownerSourceId") != item.get("ownerSourceId"):
                 result.append(_issue(f"{base}.claimId", "KIN-E-QUEUE", "owned item claim/owner membership does not agree"))
             if manifest is not None and source is not None:
-                manifest_paths = {
-                    record.get("path") for record in manifest.get("includedFiles", [])
-                    if isinstance(record, dict)
-                }
                 if manifest.get("phase") not in source.get("phases", []) or source.get("path") not in manifest_paths:
                     result.append(_issue(f"{base}.ownerSourceId", "KIN-E-QUEUE", "owned source is not eligible under the selected manifest"))
+            owner_strength = claim.get("evidence", {}).get("strength") if claim is not None else None
+            if (
+                owner_strength in EVIDENCE_ORDER
+                and maximum in EVIDENCE_ORDER
+                and EVIDENCE_ORDER[maximum] > EVIDENCE_ORDER[owner_strength]
+            ):
+                result.append(_issue(base, "KIN-E-QUEUE", "maximum public strength exceeds the owner claim"))
+            if (
+                owner_strength in EVIDENCE_ORDER
+                and current in EVIDENCE_ORDER
+                and EVIDENCE_ORDER[current] > EVIDENCE_ORDER[owner_strength]
+            ):
+                result.append(_issue(base, "KIN-E-QUEUE", "current public evidence exceeds the owner claim"))
             if item.get("requiredAction") == "KEEP" and (
                 item.get("driftClass") is not None or item.get("severity") is not None
             ):
                 result.append(_issue(base, "KIN-E-QUEUE", "KEEP requires null drift and severity"))
             for seam_id in item.get("seamIds", []):
-                if seam_id not in seams:
+                seam = seams.get(seam_id)
+                if seam is None:
                     result.append(_issue(f"{base}.seamIds", "KIN-E-QUEUE", "owned queue seam does not resolve"))
+                elif (
+                    seam.get("claimId") != item.get("claimId")
+                    or seam.get("ownerSource") != item.get("ownerSourceId")
+                ):
+                    result.append(_issue(
+                        f"{base}.seamIds", "KIN-E-QUEUE",
+                        "owned queue seam belongs to another claim or owner",
+                    ))
         elif item.get("ownership") == "OWNERLESS":
             if item.get("requiredAction") not in {"RETRACT", "REGENERATE"}:
                 result.append(_issue(f"{base}.requiredAction", "KIN-E-QUEUE", "ownerless item permits only RETRACT or REGENERATE"))
@@ -616,11 +652,18 @@ def validate_public_queue(
                         and source.get("path") in paths
                     ):
                         eligible_ids.add(source_id)
+            if not searched_ids.issubset(eligible_ids):
+                result.append(_issue(
+                    f"{base}.ownerSearchEvidence.searchedSourceIds", "KIN-E-QUEUE",
+                    "owner search includes a source outside the manifest-bounded semantic-owner set",
+                ))
             candidates = item.get("candidateOwners", [])
             if not candidates and searched_ids != eligible_ids:
                 result.append(_issue(f"{base}.ownerSearchEvidence", "KIN-E-QUEUE", "empty candidates require a complete manifest-bounded owner search"))
             searched_paths = {
-                sources[source_id].get("path") for source_id in searched_ids if source_id in sources
+                sources[source_id].get("path")
+                for source_id in searched_ids
+                if source_id in eligible_ids and source_id in sources
             }
             if any(candidate not in searched_paths for candidate in candidates):
                 result.append(_issue(f"{base}.candidateOwners", "KIN-E-QUEUE", "candidate is outside the searched semantic-owner set"))
@@ -731,6 +774,165 @@ def _semantic_rosetta(payload: dict[str, Any], core: dict[str, Any]) -> bool:
     return payload.get("requestedTransfer") in {"VOCABULARY", "QUESTION", "TOPOLOGY"}
 
 
+def _scalar_text(value: Any, *, nonempty: bool = True) -> bool:
+    if not isinstance(value, str) or (nonempty and not value):
+        return False
+    try:
+        value.encode("utf-8", errors="strict")
+    except UnicodeEncodeError:
+        return False
+    return True
+
+
+def _closed_enum(*values: str) -> Callable[[Any], bool]:
+    allowed = frozenset(values)
+    return lambda value: type(value) is str and value in allowed
+
+
+def _nullable(validator: Callable[[Any], bool]) -> Callable[[Any], bool]:
+    return lambda value: value is None or validator(value)
+
+
+def _identifier(value: Any) -> bool:
+    return (
+        _scalar_text(value)
+        and "A" <= value[0] <= "Z"
+        and all(
+            "A" <= character <= "Z"
+            or "0" <= character <= "9"
+            or character in "_-"
+            for character in value[1:]
+        )
+    )
+
+
+def _register_id(value: Any) -> bool:
+    return (
+        _scalar_text(value)
+        and "A" <= value[0] <= "Z"
+        and all(
+            "A" <= character <= "Z"
+            or "0" <= character <= "9"
+            or character == "_"
+            for character in value[1:]
+        )
+    )
+
+
+def _schema_path(value: Any) -> bool:
+    if (
+        not _scalar_text(value)
+        or value.startswith("/")
+        or value.endswith("/")
+        or "\\" in value
+    ):
+        return False
+    segments = value.split("/")
+    return all(segment and segment not in {".", ".."} for segment in segments)
+
+
+def _justice_payload_context(value: Any) -> bool:
+    return value is None or _justice_context_shape(value)
+
+
+_CLAIM_TYPE = _closed_enum(
+    "MATHEMATICAL", "STRUCTURAL", "INTERPRETIVE", "EMPIRICAL", "NORMATIVE",
+    "METAPHORICAL",
+)
+_MODALITY = _closed_enum(*sorted(MODALITIES))
+_JUSTICE_SCOPE = _closed_enum(
+    "NONE", "INDIVIDUAL", "COLLECTIVE", "NORMATIVE", "COLLECTIVE_NORMATIVE",
+)
+
+
+SEMANTIC_PAYLOAD_FIELDS: dict[str, dict[str, Callable[[Any], bool]]] = {
+    "VERDICT_MATRIX": {
+        "validityVerdict": _closed_enum("VALID", "INVALID", "NOT_APPLICABLE"),
+        "soundnessVerdict": _closed_enum(
+            "SUPPORTED", "CONDITIONALLY_SUPPORTED", "UNSUPPORTED", "REFUTED",
+            "NOT_APPLICABLE",
+        ),
+        "verdict": _closed_enum(*VERDICT_MATRIX),
+    },
+    "JUSTICE_CONTEXT": {
+        "claimType": _CLAIM_TYPE,
+        "modality": _MODALITY,
+        "justiceScope": _JUSTICE_SCOPE,
+        "authorityScope": _closed_enum("NONE", "PRIVATE_DAV", "PUBLIC_DAV", "OTHER"),
+        "authorityEffect": _closed_enum(
+            "NONE", "DESCRIPTIVE", "DISCRETIONARY", "CONSEQUENTIAL",
+            "CONSTITUTIONAL_AUTOMATIC",
+        ),
+        "evidenceLifecycle": _closed_enum("DRAFT", "ACTIVE", "RETIRED"),
+        "justiceContext": _justice_payload_context,
+    },
+    "RECEIPT_ROLE": {
+        "recordKind": _closed_enum("SOURCE_RECORD", "PHASE_RECEIPT"),
+        "sourceKind": _nullable(_closed_enum(
+            "OWNER", "SUPPORT", "COMPRESSION", "PUBLIC", "RECEIPT",
+        )),
+        "authorityRole": _nullable(_closed_enum(
+            "SEMANTIC_OWNER", "EVIDENCE", "DERIVATIVE", "PROVENANCE",
+        )),
+        "receiptId": _nullable(_identifier),
+        "phase": _nullable(_closed_enum("A", "B", "C")),
+        "path": _schema_path,
+        "status": _nullable(_closed_enum("DRAFT", "COMPLETE", "VERIFIED")),
+        "requestedUse": _closed_enum(
+            "PROVENANCE", "CLAIM_OWNER", "PHASE_DEPENDENCY", "EVIDENCE_UPGRADE",
+            "CANONICAL_PHASE_RECEIPT",
+        ),
+    },
+    "REGISTER_INDEX": {
+        "symbol": _scalar_text,
+        "fromRegister": _register_id,
+        "toRegister": _register_id,
+        "relation": _closed_enum(
+            "SAME_REGISTER", "DISTINCT_TYPED_TERM", "EXPLICIT_BRIDGE",
+            "UNMARKED_SUBSTITUTION",
+        ),
+        "bridgeClaimId": _nullable(_identifier),
+        "requestedInference": _closed_enum("TYPED_REFERENCE", "ENTAILMENT", "MECHANISM"),
+    },
+    "QUANTUM_MEASURE": {
+        "probabilityObject": _closed_enum("EVENT_MEASURE", "NORMALIZATION_SCALAR"),
+        "requestedOperation": _closed_enum("SAMPLE_OUTCOME", "CHECK_NORMALIZATION"),
+        "interpretiveClaim": _closed_enum(
+            "NONE", "CORRESPONDENCE", "LITERAL_EXTRA_DIMENSION", "UNIVERSAL_COLLAPSE",
+        ),
+    },
+    "OPTION_CONE": {
+        "physicalConstraint": _closed_enum("C_BOUNDED", "SUPERLUMINAL"),
+        "optionClaim": _closed_enum("MODELED_REACHABILITY", "PHYSICAL_CONE_EXPANSION"),
+        "futureInfluence": _closed_enum("ANTICIPATORY_MODEL", "PHYSICAL_RETROCAUSALITY"),
+        "commitmentKind": _closed_enum("PARTIAL_RELATION", "TOTAL_PREDICTOR"),
+    },
+    "TROPHIC_AGGREGATOR": {
+        "quantityKind": _closed_enum("HUMAN_INVESTMENT_PROXY", "PHYSICAL_ENERGY"),
+        "aggregationBasis": _closed_enum(
+            "DECLARED_PROXY", "MEASURED_PHYSICAL_SUM", "METAPHORICAL",
+        ),
+        "conservationClaim": _closed_enum("NONE", "EMPIRICALLY_TESTED", "ASSUMED"),
+        "persistentSharedTrace": lambda value: type(value) is bool,
+        "carrierTurnoverObserved": lambda value: type(value) is bool,
+        "laterSelectionReweightingObserved": lambda value: type(value) is bool,
+        "requestedInference": _closed_enum(
+            "DESCRIPTIVE_AGGREGATION", "EGREGOREOTYPE_CANDIDATE", "LITERAL_ENERGY_LAW",
+        ),
+    },
+    "ROSETTA_TRANSFER": {
+        "targetClaimId": _identifier,
+        "bridgeClaimId": _nullable(_identifier),
+        "fromRegister": _register_id,
+        "toRegister": _register_id,
+        "requestedTransfer": _closed_enum(
+            "VOCABULARY", "QUESTION", "TOPOLOGY", "ENTAILMENT", "MECHANISM",
+            "NECESSITY", "EVIDENCE_UPGRADE",
+        ),
+    },
+}
+
+
 SEMANTIC_DISPATCH: dict[
     str, tuple[set[str], Callable[[dict[str, Any], dict[str, Any]], bool]]
 ] = {
@@ -774,10 +976,16 @@ def evaluate_semantic_fixture(
     if entry is None:
         return [_issue("semanticFixture.evaluator", "KIN-E-FIXTURE", "unknown semantic evaluator")]
     keys, predicate = entry
-    if not isinstance(payload, dict) or set(payload) != keys:
+    fields = SEMANTIC_PAYLOAD_FIELDS[evaluator]
+    if (
+        not isinstance(payload, dict)
+        or set(payload) != keys
+        or set(fields) != keys
+        or any(not validator(payload[field]) for field, validator in fields.items())
+    ):
         return [_issue(
             "semanticFixture.payload", "KIN-E-FIXTURE",
-            "semantic payload keys do not exactly match the closed evaluator definition",
+            "semantic payload does not match the exact named evaluator definition",
         )]
     try:
         passed = predicate(payload, core if isinstance(core, dict) else {})
@@ -1022,7 +1230,7 @@ def safe_regex_search(pattern: str, source: str) -> tuple[bool, list[Issue]]:
 
 def _safe_path_segments(value: Any, *, pattern: bool) -> tuple[str, ...]:
     if (
-        not isinstance(value, str) or not value or value.startswith("/")
+        not _scalar_text(value) or value.startswith("/")
         or value.endswith("/") or "\\" in value
     ):
         raise ValueError("path/glob must be a non-empty repository-relative POSIX path")
@@ -1031,8 +1239,8 @@ def _safe_path_segments(value: Any, *, pattern: bool) -> tuple[str, ...]:
         raise ValueError("path/glob contains an empty or dot segment")
     if pattern:
         for segment in segments:
-            if any(character in segment for character in "?[]\\"):
-                raise ValueError("safe glob forbids ?, classes, and escapes")
+            if any(character in segment for character in "?[]\\{}()!+@"):
+                raise ValueError("safe glob contains syntax outside the closed * and ** grammar")
             if "**" in segment and segment != "**":
                 raise ValueError("** is legal only as a complete segment")
     elif any(
@@ -1067,35 +1275,43 @@ def _segment_match(pattern: str, value: str) -> bool:
 def _glob_match(pattern: str, path: str) -> bool:
     pattern_segments = _safe_path_segments(pattern, pattern=True)
     path_segments = _safe_path_segments(path, pattern=False)
-    memo: dict[tuple[int, int], bool] = {}
 
-    def match(pattern_index: int, path_index: int) -> bool:
-        key = (pattern_index, path_index)
-        if key in memo:
-            return memo[key]
-        if pattern_index == len(pattern_segments):
-            value = path_index == len(path_segments)
-        elif pattern_segments[pattern_index] == "**":
-            value = match(pattern_index + 1, path_index) or (
-                path_index < len(path_segments) and match(pattern_index, path_index + 1)
-            )
-        else:
-            value = (
-                path_index < len(path_segments)
-                and _segment_match(pattern_segments[pattern_index], path_segments[path_index])
-                and match(pattern_index + 1, path_index + 1)
-            )
-        memo[key] = value
-        return value
+    def epsilon_closure(states: set[int]) -> set[int]:
+        closed = set(states)
+        pending = list(states)
+        while pending:
+            index = pending.pop()
+            if index < len(pattern_segments) and pattern_segments[index] == "**":
+                target = index + 1
+                if target not in closed:
+                    closed.add(target)
+                    pending.append(target)
+        return closed
 
-    return match(0, 0)
+    states = epsilon_closure({0})
+    for segment in path_segments:
+        advanced: set[int] = set()
+        for index in states:
+            if index >= len(pattern_segments):
+                continue
+            token = pattern_segments[index]
+            if token == "**":
+                advanced.add(index)
+            elif _segment_match(token, segment):
+                advanced.add(index + 1)
+        states = epsilon_closure(advanced)
+        if not states:
+            return False
+    return len(pattern_segments) in states
 
 
 def _text_match(antibody: dict[str, Any], source: str) -> tuple[bool, list[Issue]]:
+    if not _scalar_text(source, nonempty=False):
+        return False, [_issue("fixture.payload", "KIN-E-FIXTURE", "text payload must contain only Unicode scalar text")]
     if antibody.get("matchMode") == "LITERAL":
         pattern = antibody.get("pattern")
-        if not isinstance(pattern, str):
-            return False, [_issue("antibody.pattern", "KIN-E-FIXTURE", "literal pattern must be text")]
+        if not _scalar_text(pattern):
+            return False, [_issue("antibody.pattern", "KIN-E-FIXTURE", "literal pattern must be non-empty Unicode scalar text")]
         return pattern in source, []
     if antibody.get("matchMode") == "REGEX":
         return safe_regex_search(antibody.get("pattern"), source)
@@ -1173,17 +1389,25 @@ def evaluate_antibody_fixture(
 
 def scan_antibodies(
     core: dict[str, object], documents: dict[str, str]
-) -> tuple[dict[str, tuple[str, ...]], list[Issue]]:
+) -> tuple[dict[str, Any], list[Issue]]:
+    empty: dict[str, Any] = {"included": {}, "excluded": {}, "triggers": {}}
     if not isinstance(core, dict) or not isinstance(documents, dict):
-        return {}, [_issue("scan", "KIN-E-FIXTURE", "core and documents must be objects")]
-    antibodies = [
+        return empty, [_issue("scan", "KIN-E-FIXTURE", "core and documents must be objects")]
+    antibodies = sorted([
         antibody for antibody in _records(core, "antibodies")
         if antibody.get("matchMode") in {"LITERAL", "REGEX"}
-    ]
+    ], key=lambda antibody: antibody.get("id", ""))
     issues: list[Issue] = []
     for position, antibody in enumerate(antibodies):
         for field in ("scopeGlobs", "excludeGlobs"):
-            for pattern in sorted(antibody.get(field, [])):
+            patterns = antibody.get(field)
+            if not isinstance(patterns, list) or any(not isinstance(item, str) for item in patterns):
+                issues.append(_issue(
+                    f"core.antibodies[{position}].{field}", "KIN-E-FIXTURE",
+                    "glob inventory must be a list of Unicode strings",
+                ))
+                continue
+            for pattern in sorted(patterns):
                 try:
                     _safe_path_segments(pattern, pattern=True)
                 except ValueError as exc:
@@ -1192,16 +1416,15 @@ def scan_antibodies(
             _, regex_issues = safe_regex_search(antibody.get("pattern"), "")
             issues.extend(regex_issues)
     if issues:
-        return {}, ordered_issues(issues)
+        return empty, ordered_issues(issues)
 
-    result: dict[str, tuple[str, ...]] = {}
-    for path in sorted(documents):
+    decoded_documents: dict[str, str] = {}
+    for path, raw_source in documents.items():
         try:
             _safe_path_segments(path, pattern=False)
         except ValueError as exc:
-            issues.append(_issue(path, "KIN-E-FIXTURE", str(exc)))
+            issues.append(_issue("scan.documents.path", "KIN-E-FIXTURE", str(exc)))
             continue
-        raw_source = documents[path]
         if isinstance(raw_source, bytes):
             try:
                 source = raw_source.decode("utf-8", errors="strict")
@@ -1218,23 +1441,44 @@ def scan_antibodies(
         else:
             issues.append(_issue(path, "KIN-E-FIXTURE", "source must be str or bytes"))
             continue
-        selected: list[dict[str, Any]] = []
-        for antibody in antibodies:
-            scopes = sorted(antibody.get("scopeGlobs", []))
-            excludes = sorted(antibody.get("excludeGlobs", []))
-            if any(_glob_match(pattern, path) for pattern in scopes) and not any(
-                _glob_match(pattern, path) for pattern in excludes
-            ):
-                selected.append(antibody)
-        if not selected:
-            continue
+        decoded_documents[path] = source
+    if issues:
+        return empty, ordered_issues(issues)
+
+    included: dict[str, tuple[str, ...]] = {}
+    excluded: dict[str, tuple[str, ...]] = {}
+    selected_by_path: dict[str, list[dict[str, Any]]] = {}
+    paths = tuple(sorted(decoded_documents))
+    for antibody in antibodies:
+        scopes = tuple(sorted(antibody["scopeGlobs"]))
+        excludes = tuple(sorted(antibody["excludeGlobs"]))
+        resolved_includes = tuple(
+            path for path in paths if any(_glob_match(pattern, path) for pattern in scopes)
+        )
+        resolved_excludes = tuple(
+            path for path in paths if any(_glob_match(pattern, path) for pattern in excludes)
+        )
+        included[antibody["id"]] = resolved_includes
+        excluded[antibody["id"]] = resolved_excludes
+        excluded_set = set(resolved_excludes)
+        for path in resolved_includes:
+            if path not in excluded_set:
+                selected_by_path.setdefault(path, []).append(antibody)
+
+    triggers_by_path: dict[str, tuple[str, ...]] = {}
+    for path in sorted(selected_by_path):
         triggers: list[str] = []
-        for antibody in selected:
-            matched, match_issues = _text_match(antibody, source)
+        for antibody in selected_by_path[path]:
+            matched, match_issues = _text_match(antibody, decoded_documents[path])
             issues.extend(match_issues)
             if matched:
                 triggers.append(antibody["id"])
-        result[path] = tuple(sorted(triggers))
+        triggers_by_path[path] = tuple(sorted(triggers))
+    result = {
+        "included": {key: included[key] for key in sorted(included)},
+        "excluded": {key: excluded[key] for key in sorted(excluded)},
+        "triggers": triggers_by_path,
+    }
     return result, ordered_issues(issues)
 
 

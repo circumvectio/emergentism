@@ -49,7 +49,8 @@ def regex_search(pattern, source):
 
 def scan(core, documents):
     function = getattr(kernel, "scan_antibodies", None)
-    return ({}, []) if function is None else function(core, documents)
+    empty = {"included": {}, "excluded": {}, "triggers": {}}
+    return (empty, []) if function is None else function(core, documents)
 
 
 def codes(issues):
@@ -80,6 +81,15 @@ def make_queue_core():
         "manifestId": "MAN-C-001",
         "dependsOnReceiptIds": ["REC-A-108", "REC-B-109"],
     })
+    for public_path in (
+        "12_PUBLIC_SITE/compass/index.html",
+        "12_PUBLIC_SITE/orphan/index.html",
+    ):
+        manifest["includedFiles"].append({
+            "path": public_path,
+            "kind": "FILE",
+            "sha256": support.RAW_HASH,
+        })
     queue = {
         "schemaVersion": "1.0.0",
         "manifestId": "MAN-C-001",
@@ -398,6 +408,62 @@ class ModalityAndEvidenceTests(unittest.TestCase):
         downward["seams"][0]["upgradeEvidenceLinkIds"] = ["SUP-LEAK"]
         self.assertIn("KIN-E-VERDICT", codes(validate(downward)))
 
+    def test_analogy_ceiling_and_support_trial_quantifiers_are_universal_and_existential(self):
+        analogy = support.build_semantic_core()
+        target, supporting = analogy["claims"][:2]
+        supporting["evidence"]["strength"] = "C"
+        target["supportLinks"] = [{
+            "id": "SUP-A-ANALOGY",
+            "supportingClaimId": supporting["id"],
+            "mode": "ANALOGY",
+            "independenceStatus": "NOT_APPLICABLE",
+            "evidenceCeiling": "I",
+            "rationale": "An analogy cannot outrun its supporting claim.",
+        }]
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", analogy), ())
+        self.assertIn("KIN-E-VERDICT", codes(validate(analogy)))
+
+        repeated = support.build_semantic_core()
+        target, supporting = repeated["claims"][:2]
+        target["supportLinks"] = [{
+            "id": "SUP-A-REPEATED",
+            "supportingClaimId": supporting["id"],
+            "mode": "CORROBORATION",
+            "independenceStatus": "INDEPENDENT",
+            "evidenceCeiling": "A",
+            "rationale": "At least one admissible trial is sufficient.",
+        }]
+        second_trial = copy.deepcopy(repeated["trials"][1])
+        second_trial["id"] = "TRL-A-099"
+        second_trial["triedQuote"] = "An independent replication of the supporting claim."
+        second_trial["triedHash"] = "sha256-text-lf:" + "1" * 64
+        repeated["trials"].append(second_trial)
+        repeated["phaseReceipts"][0]["trialIds"].append(second_trial["id"])
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", repeated), ())
+        self.assertEqual(validate(repeated), [])
+
+    def test_target_a_upgrade_needs_any_independent_witness_and_every_ordinary_link(self):
+        core = support.build_semantic_core()
+        seam = support.add_retiered_seam(core, "C", "A")
+        second = {
+            "id": "SUP-KIN-A-002",
+            "supportingClaimId": core["claims"][2]["id"],
+            "mode": "CORROBORATION",
+            "independenceStatus": "PARTIALLY_INDEPENDENT",
+            "evidenceCeiling": "A",
+            "rationale": "A second ordinary qualifying A link need not itself be independent.",
+        }
+        core["claims"][0]["supportLinks"].append(copy.deepcopy(second))
+        seam["supportLinks"].append(copy.deepcopy(second))
+        seam["upgradeEvidenceLinkIds"].append(second["id"])
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+        self.assertEqual(validate(core), [])
+
+        second["independenceStatus"] = "NOT_INDEPENDENT"
+        core["claims"][0]["supportLinks"][1] = copy.deepcopy(second)
+        seam["supportLinks"][1] = copy.deepcopy(second)
+        self.assertIn("KIN-E-VERDICT", codes(validate(core)))
+
 
 class JusticeGateAndQueueTests(unittest.TestCase):
     def configure_authority(self, claim, *, effect, scope, regime, mechanism, lifecycle="ACTIVE"):
@@ -532,6 +598,72 @@ class JusticeGateAndQueueTests(unittest.TestCase):
             with self.subTest(label=label):
                 self.assertIn("KIN-E-QUEUE", codes(validate_queue(mutated, core)))
 
+    def test_public_queue_closes_manifest_receipt_owner_and_evidence_boundaries(self):
+        core, queue = make_queue_core()
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+
+        rows = []
+        absent_public = copy.deepcopy(queue)
+        absent_public["items"][0]["publicFile"] = "12_PUBLIC_SITE/not-in-manifest.html"
+        rows.append(("public file inventory", core, absent_public))
+
+        wrong_receipt_path = copy.deepcopy(core)
+        wrong_receipt_path["phaseReceipts"][0]["path"] = "11_UPLINK/wrong-receipt.md"
+        rows.append(("canonical receipt identity", wrong_receipt_path, copy.deepcopy(queue)))
+
+        wrong_seam_core = copy.deepcopy(core)
+        seam = support.add_confirmed_seam(wrong_seam_core)
+        seam["claimId"] = wrong_seam_core["claims"][1]["id"]
+        seam["ownerSource"] = wrong_seam_core["claims"][1]["ownerSourceId"]
+        wrong_seam_queue = copy.deepcopy(queue)
+        wrong_seam_queue["items"][0]["seamIds"] = [seam["id"]]
+        rows.append(("same claim and owner seam", wrong_seam_core, wrong_seam_queue))
+
+        weak_owner = copy.deepcopy(core)
+        weak_owner["claims"][0]["evidence"]["strength"] = "C"
+        over_maximum = copy.deepcopy(queue)
+        over_maximum["items"][0]["currentEvidence"]["strength"] = "C"
+        rows.append(("maximum bounded by owner", weak_owner, over_maximum))
+        over_current = copy.deepcopy(queue)
+        over_current["items"][0]["maximumPublicStrength"] = "A"
+        rows.append(("current bounded by owner", weak_owner, over_current))
+
+        for label, candidate_core, candidate_queue in rows:
+            with self.subTest(label=label):
+                if label != "canonical receipt identity":
+                    self.assertEqual(
+                        kernel.validate_schema_instance(SCHEMA, "coreData", candidate_core), ()
+                    )
+                else:
+                    self.assertNotEqual(
+                        kernel.validate_schema_instance(SCHEMA, "coreData", candidate_core), ()
+                    )
+                self.assertEqual(
+                    kernel.validate_schema_instance(SCHEMA, "publicQueue", candidate_queue), ()
+                )
+                self.assertIn("KIN-E-QUEUE", codes(validate_queue(candidate_queue, candidate_core)))
+
+    def test_ownerless_candidates_are_bounded_to_searched_semantic_owners(self):
+        core, queue = make_queue_core()
+        derivative = copy.deepcopy(core["sources"][0])
+        derivative.update({
+            "id": "SRC-C-999",
+            "kind": "SUPPORT",
+            "authorityRole": "PROVENANCE",
+            "path": "05_COSMOLOGY/derivative-source.md",
+        })
+        core["sources"].append(derivative)
+        core["manifests"][0]["includedFiles"].append({
+            "path": derivative["path"], "kind": "FILE", "sha256": support.RAW_HASH,
+        })
+        ownerless = make_ownerless_item(core)
+        ownerless["ownerSearchEvidence"]["searchedSourceIds"] = [derivative["id"]]
+        ownerless["candidateOwners"] = [derivative["path"]]
+        queue["items"] = [ownerless]
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "publicQueue", queue), ())
+        self.assertIn("KIN-E-QUEUE", codes(validate_queue(queue, core)))
+
 
 class SafeRegexGlobAndAntibodyTests(unittest.TestCase):
     def test_complete_safe_regex_grammar_and_anchors(self):
@@ -599,15 +731,26 @@ class SafeRegexGlobAndAntibodyTests(unittest.TestCase):
         }
         result, issues = scan(core, documents)
         self.assertEqual(issues, [])
-        self.assertEqual(list(result), ["active/a.md", "active/clean.md", "active/nested/b.md"])
-        self.assertEqual(result["active/a.md"], ("AB-LITERAL-001",))
-        self.assertEqual(result["active/nested/b.md"], ("AB-LITERAL-001",))
-        self.assertEqual(result["active/clean.md"], ())
+        self.assertEqual(result["included"], {
+            "AB-LITERAL-001": (
+                "active/a.md", "active/clean.md", "active/excluded/c.md",
+                "active/nested/b.md",
+            ),
+        })
+        self.assertEqual(result["excluded"], {
+            "AB-LITERAL-001": ("active/excluded/c.md",),
+        })
+        self.assertEqual(result["triggers"], {
+            "active/a.md": ("AB-LITERAL-001",),
+            "active/clean.md": (),
+            "active/nested/b.md": ("AB-LITERAL-001",),
+        })
 
     def test_invalid_safe_globs_and_utf8_fail_fixture_execution(self):
         invalid = (
             "/absolute/**", "a\\b", "a//b", "a/./b", "a/../b", "a/?/b",
-            "a/[x]/b", "a/**x/b", "a/",
+            "a/[x]/b", "a/**x/b", "a/", "a/{x,y}.md", "a/!(x).md",
+            "a/@(x).md", "a/+(x).md", "a/*(x).md",
         )
         for pattern in invalid:
             core = support.build_semantic_core()
@@ -621,6 +764,34 @@ class SafeRegexGlobAndAntibodyTests(unittest.TestCase):
         support.add_antibody_fixture_set(core)
         _, issues = scan(core, {"active/bad.md": b"\xff"})
         self.assertIn("KIN-E-FIXTURE", codes(issues))
+
+    def test_glob_matching_is_iterative_and_scan_inputs_are_total_unicode_scalars(self):
+        core = support.build_semantic_core()
+        antibody = support.add_antibody_fixture_set(core)
+        antibody["scopeGlobs"] = ["**"]
+        long_path = "/".join(["a"] * 1200)
+        result, issues = scan(core, {long_path: "forbidden"})
+        self.assertEqual(issues, [])
+        self.assertEqual(result["included"][antibody["id"]], (long_path,))
+        self.assertEqual(result["triggers"][long_path], (antibody["id"],))
+
+        malformed = (
+            ({"active/\ud800.md": "forbidden"}, "surrogate path"),
+            ({"active/a.md": "\ud800"}, "surrogate source"),
+            ({1: "forbidden"}, "non-text path"),
+            ({"active/a.md": object()}, "non-text source"),
+        )
+        for documents, label in malformed:
+            with self.subTest(label=label):
+                _, malformed_issues = scan(core, documents)
+                self.assertIn("KIN-E-FIXTURE", codes(malformed_issues))
+
+        positive_id = antibody["positiveFixtureIds"][0]
+        fixture = next(item for item in core["fixtures"] if item["id"] == positive_id)
+        fixture["payload"] = 7
+        self.assertIn("KIN-E-FIXTURE", codes(evaluate_fixture(core, positive_id)))
+        fixture["payload"] = "\ud800"
+        self.assertIn("KIN-E-FIXTURE", codes(evaluate_fixture(core, positive_id)))
 
     def test_literal_regex_and_all_fixture_contexts_dispatch_exactly_once(self):
         for mode, pattern in (("LITERAL", "forbidden"), ("REGEX", "for+bidden")):
@@ -639,6 +810,13 @@ class SafeRegexGlobAndAntibodyTests(unittest.TestCase):
                 "KIN-E-FIXTURE",
                 codes(validate(core)),
             )
+
+    def test_fixture_context_registration_is_exactly_once(self):
+        core = support.build_semantic_core()
+        antibody = support.add_antibody_fixture_set(core)
+        fixture_id = antibody["positiveFixtureIds"][0]
+        antibody["negativeFixtureIds"].append(fixture_id)
+        self.assertIn("KIN-E-FIXTURE", codes(validate(core)))
 
 
 class SemanticEvaluatorTests(unittest.TestCase):
@@ -799,6 +977,88 @@ class SemanticEvaluatorTests(unittest.TestCase):
             '"commitmentKind":"PARTIAL_RELATION"}'
         )
         self.assertIn("KIN-E-FIXTURE", codes(evaluate_fixture(core, negative_id)))
+
+    def test_every_semantic_payload_field_matches_its_named_schema_definition(self):
+        core = support.build_semantic_core()
+        definition_names = {
+            "VERDICT_MATRIX": "verdictMatrixPayload",
+            "JUSTICE_CONTEXT": "justiceContextPayload",
+            "RECEIPT_ROLE": "receiptRolePayload",
+            "REGISTER_INDEX": "registerIndexPayload",
+            "QUANTUM_MEASURE": "quantumMeasurePayload",
+            "OPTION_CONE": "optionConePayload",
+            "TROPHIC_AGGREGATOR": "trophicAggregatorPayload",
+            "ROSETTA_TRANSFER": "rosettaTransferPayload",
+        }
+        invalid_values = {
+            "VERDICT_MATRIX": {
+                "validityVerdict": None, "soundnessVerdict": [], "verdict": "UNKNOWN",
+            },
+            "JUSTICE_CONTEXT": {
+                "claimType": None, "modality": [], "justiceScope": {},
+                "authorityScope": 0, "authorityEffect": False,
+                "evidenceLifecycle": "UNKNOWN", "justiceContext": [],
+            },
+            "RECEIPT_ROLE": {
+                "recordKind": None, "sourceKind": [], "authorityRole": {},
+                "receiptId": [], "phase": {}, "path": None, "status": [],
+                "requestedUse": 0,
+            },
+            "REGISTER_INDEX": {
+                "symbol": None, "fromRegister": None, "toRegister": {},
+                "relation": [], "bridgeClaimId": [], "requestedInference": 0,
+            },
+            "QUANTUM_MEASURE": {
+                "probabilityObject": None, "requestedOperation": [],
+                "interpretiveClaim": {},
+            },
+            "OPTION_CONE": {
+                "physicalConstraint": None, "optionClaim": [],
+                "futureInfluence": {}, "commitmentKind": 0,
+            },
+            "TROPHIC_AGGREGATOR": {
+                "quantityKind": None, "aggregationBasis": [],
+                "conservationClaim": {}, "persistentSharedTrace": "true",
+                "carrierTurnoverObserved": None,
+                "laterSelectionReweightingObserved": 1,
+                "requestedInference": False,
+            },
+            "ROSETTA_TRANSFER": {
+                "targetClaimId": None, "bridgeClaimId": [],
+                "fromRegister": {}, "toRegister": 0, "requestedTransfer": False,
+            },
+        }
+        for evaluator, (good, _) in self.payload_rows(core).items():
+            definition = definition_names[evaluator]
+            self.assertEqual(kernel.validate_named_definition(SCHEMA, definition, good), ())
+            for field, invalid in invalid_values[evaluator].items():
+                payload = copy.deepcopy(good)
+                payload[field] = invalid
+                with self.subTest(evaluator=evaluator, field=field):
+                    self.assertNotEqual(
+                        kernel.validate_named_definition(SCHEMA, definition, payload), ()
+                    )
+                    self.assertTrue(semantic_issue(evaluate(evaluator, payload, core)))
+
+    def test_outer_fixture_json_string_cannot_hide_an_invalid_named_payload(self):
+        core = support.build_semantic_core()
+        good, bad = self.payload_rows(core)["REGISTER_INDEX"]
+        antibody = support.add_semantic_antibody_fixture_set(
+            core, "REGISTER_INDEX", good, bad
+        )
+        fixture_id = antibody["negativeFixtureIds"][0]
+        fixture = next(item for item in core["fixtures"] if item["id"] == fixture_id)
+        fixture["payload"] = json.dumps({
+            "symbol": None,
+            "fromRegister": None,
+            "toRegister": {},
+            "relation": "DISTINCT_TYPED_TERM",
+            "bridgeClaimId": None,
+            "requestedInference": "TYPED_REFERENCE",
+        }, sort_keys=True, separators=(",", ":"))
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+        self.assertIn("KIN-E-FIXTURE", codes(evaluate_fixture(core, fixture_id)))
+        self.assertIn("KIN-E-FIXTURE", codes(validate(core)))
 
 
 if __name__ == "__main__":
