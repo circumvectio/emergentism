@@ -10,6 +10,7 @@ from .records import (
     RECEIPT_IDENTITIES,
     SOURCE_ROLE_MATRIX,
     ordered_issues,
+    valid_id,
     validate_record_graph,
 )
 
@@ -50,6 +51,31 @@ SEMANTIC_EVALUATORS = frozenset({
 
 def _issue(path: str, code: str, message: str) -> Issue:
     return Issue(path, code, message)
+
+
+def _typed_collection_issues(
+    core: dict[str, Any], names: Iterable[str], *, code: str, root: str
+) -> list[Issue]:
+    result: list[Issue] = []
+    for name in names:
+        value = core.get(name)
+        if not isinstance(value, list):
+            result.append(_issue(
+                f"{root}.{name}", code, f"{name} must be a list of objects",
+            ))
+        elif any(not isinstance(record, dict) for record in value):
+            result.append(_issue(
+                f"{root}.{name}", code, f"{name} must contain only objects",
+            ))
+    return result
+
+
+def _identifier_list(value: Any) -> bool:
+    return isinstance(value, list) and all(valid_id(item) for item in value)
+
+
+def _text_list(value: Any) -> bool:
+    return isinstance(value, list) and all(_scalar_text(item) for item in value)
 
 
 def _records(core: dict[str, Any], name: str) -> list[dict[str, Any]]:
@@ -677,11 +703,118 @@ def validate_core_records(
     return ordered_issues(result)
 
 
+def _public_queue_shape_issues(
+    queue: dict[str, Any], core: dict[str, Any]
+) -> list[Issue]:
+    result = _typed_collection_issues(
+        core, ("manifests", "phaseReceipts", "sources", "claims", "seams"),
+        code="KIN-E-QUEUE", root="core",
+    )
+    for field in ("manifestId", "receiptId"):
+        if not valid_id(queue.get(field)):
+            result.append(_issue(
+                f"publicQueue.{field}", "KIN-E-QUEUE",
+                f"{field} must be a canonical identifier",
+            ))
+    items = queue.get("items")
+    if not isinstance(items, list):
+        result.append(_issue(
+            "publicQueue.items", "KIN-E-QUEUE", "queue items must be a list",
+        ))
+        return ordered_issues(result)
+    for position, item in enumerate(items):
+        base = f"publicQueue.items[{position}]"
+        if not isinstance(item, dict):
+            result.append(_issue(base, "KIN-E-QUEUE", "queue item must be an object"))
+            continue
+        public_file = item.get("publicFile")
+        if not _scalar_text(public_file):
+            result.append(_issue(
+                f"{base}.publicFile", "KIN-E-QUEUE",
+                "public file must be non-empty Unicode scalar text",
+            ))
+        else:
+            try:
+                _safe_path_segments(public_file, pattern=False)
+            except ValueError as exc:
+                result.append(_issue(f"{base}.publicFile", "KIN-E-QUEUE", str(exc)))
+        current = item.get("currentEvidence")
+        if (
+            not isinstance(current, dict)
+            or type(current.get("strength")) is not str
+            or current.get("strength") not in EVIDENCE_ORDER
+        ):
+            result.append(_issue(
+                f"{base}.currentEvidence", "KIN-E-QUEUE",
+                "current evidence must carry a closed evidence strength",
+            ))
+        maximum = item.get("maximumPublicStrength")
+        if type(maximum) is not str or maximum not in EVIDENCE_ORDER:
+            result.append(_issue(
+                f"{base}.maximumPublicStrength", "KIN-E-QUEUE",
+                "maximum public strength must use the closed evidence order",
+            ))
+        ownership = item.get("ownership")
+        if type(ownership) is not str or ownership not in {"OWNED", "OWNERLESS"}:
+            result.append(_issue(
+                f"{base}.ownership", "KIN-E-QUEUE",
+                "ownership must use the closed queue union",
+            ))
+            continue
+        if ownership == "OWNED":
+            for field in ("ownerSourceId", "claimId"):
+                if not valid_id(item.get(field)):
+                    result.append(_issue(
+                        f"{base}.{field}", "KIN-E-QUEUE",
+                        f"{field} must be a canonical identifier",
+                    ))
+            if not _identifier_list(item.get("seamIds")):
+                result.append(_issue(
+                    f"{base}.seamIds", "KIN-E-QUEUE",
+                    "owned seam IDs must be a list of canonical identifiers",
+                ))
+        else:
+            search = item.get("ownerSearchEvidence")
+            if not isinstance(search, dict):
+                result.append(_issue(
+                    f"{base}.ownerSearchEvidence", "KIN-E-QUEUE",
+                    "ownerless item requires typed search evidence",
+                ))
+                continue
+            for field in ("manifestIds", "searchedSourceIds"):
+                if not _identifier_list(search.get(field)):
+                    result.append(_issue(
+                        f"{base}.ownerSearchEvidence.{field}", "KIN-E-QUEUE",
+                        f"{field} must be a list of canonical identifiers",
+                    ))
+            if not _text_list(item.get("candidateOwners")):
+                result.append(_issue(
+                    f"{base}.candidateOwners", "KIN-E-QUEUE",
+                    "candidate owners must be a list of Unicode paths",
+                ))
+    return ordered_issues(result)
+
+
 def validate_public_queue(
     queue: dict[str, object], core: dict[str, object]
 ) -> list[Issue]:
     if not isinstance(queue, dict) or not isinstance(core, dict):
         return [_issue("publicQueue", "KIN-E-QUEUE", "queue and core must be objects")]
+    try:
+        shape_issues = _public_queue_shape_issues(queue, core)
+        if shape_issues:
+            return shape_issues
+        return _validate_public_queue_unchecked(queue, core)
+    except Exception:
+        return [_issue(
+            "publicQueue", "KIN-E-QUEUE",
+            "queue validation failed safely on malformed nested data",
+        )]
+
+
+def _validate_public_queue_unchecked(
+    queue: dict[str, object], core: dict[str, object]
+) -> list[Issue]:
     result: list[Issue] = []
     manifests = _index(core, "manifests")
     receipts = _index(core, "phaseReceipts")
@@ -1213,13 +1346,22 @@ SEMANTIC_DISPATCH: dict[
 }
 
 
-def evaluate_semantic_fixture(
-    evaluator: str, payload: dict[str, object], core: dict[str, object]
-) -> list[Issue]:
+@dataclass(frozen=True)
+class _SemanticExecution:
+    predicate_passed: bool | None
+    execution_issues: tuple[Issue, ...]
+
+
+def _execute_semantic_fixture(
+    evaluator: Any, payload: Any, core: Any
+) -> _SemanticExecution:
     try:
         entry = SEMANTIC_DISPATCH.get(evaluator)
         if entry is None:
-            return [_issue("semanticFixture.evaluator", "KIN-E-FIXTURE", "unknown semantic evaluator")]
+            return _SemanticExecution(None, (_issue(
+                "semanticFixture.evaluator", "KIN-E-FIXTURE",
+                "unknown semantic evaluator",
+            ),))
         _bounded_inner_json_tree(payload)
         keys, predicate = entry
         fields = SEMANTIC_PAYLOAD_FIELDS[evaluator]
@@ -1229,17 +1371,28 @@ def evaluate_semantic_fixture(
             or set(fields) != keys
             or any(not validator(payload[field]) for field, validator in fields.items())
         ):
-            return [_issue(
+            return _SemanticExecution(None, (_issue(
                 "semanticFixture.payload", "KIN-E-FIXTURE",
                 "semantic payload does not match the exact named evaluator definition",
-            )]
+            ),))
         passed = predicate(payload, core if isinstance(core, dict) else {})
+        if type(passed) is not bool:
+            raise TypeError("semantic predicate must return bool")
     except Exception:
-        return [_issue(
+        return _SemanticExecution(None, (_issue(
             "semanticFixture.payload", "KIN-E-FIXTURE",
             "semantic payload validation failed safely",
-        )]
-    return [] if passed else [_issue(
+        ),))
+    return _SemanticExecution(passed, ())
+
+
+def evaluate_semantic_fixture(
+    evaluator: str, payload: dict[str, object], core: dict[str, object]
+) -> list[Issue]:
+    execution = _execute_semantic_fixture(evaluator, payload, core)
+    if execution.execution_issues:
+        return list(execution.execution_issues)
+    return [] if execution.predicate_passed else [_issue(
         "semanticFixture.payload", "KIN-E-FIXTURE",
         f"{evaluator} structural predicate failed",
     )]
@@ -1553,6 +1706,117 @@ def _glob_match(pattern: str, path: str) -> bool:
     return len(pattern_segments) in states
 
 
+def _antibody_shape_issues(core: dict[str, Any]) -> list[Issue]:
+    result = _typed_collection_issues(
+        core, ("antibodies",), code="KIN-E-FIXTURE", root="core",
+    )
+    antibodies = core.get("antibodies")
+    if not isinstance(antibodies, list):
+        return ordered_issues(result)
+    seen_ids: set[str] = set()
+    for position, antibody in enumerate(antibodies):
+        base = f"core.antibodies[{position}]"
+        if not isinstance(antibody, dict):
+            continue
+        antibody_id = antibody.get("id")
+        if not valid_id(antibody_id):
+            result.append(_issue(
+                f"{base}.id", "KIN-E-FIXTURE",
+                "antibody ID must be a canonical identifier",
+            ))
+        elif antibody_id in seen_ids:
+            result.append(_issue(
+                f"{base}.id", "KIN-E-FIXTURE", "antibody ID must be unique",
+            ))
+        else:
+            seen_ids.add(antibody_id)
+        mode = antibody.get("matchMode")
+        if type(mode) is not str or mode not in {
+            "LITERAL", "REGEX", "SEMANTIC_FIXTURE",
+        }:
+            result.append(_issue(
+                f"{base}.matchMode", "KIN-E-FIXTURE",
+                "antibody match mode is outside the closed registry",
+            ))
+        if not _scalar_text(antibody.get("pattern")):
+            result.append(_issue(
+                f"{base}.pattern", "KIN-E-FIXTURE",
+                "antibody pattern must be non-empty Unicode scalar text",
+            ))
+        evaluator = antibody.get("semanticEvaluator")
+        if mode == "SEMANTIC_FIXTURE":
+            if type(evaluator) is not str or evaluator not in SEMANTIC_EVALUATORS:
+                result.append(_issue(
+                    f"{base}.semanticEvaluator", "KIN-E-FIXTURE",
+                    "semantic evaluator is outside the closed registry",
+                ))
+        elif mode in {"LITERAL", "REGEX"} and evaluator is not None:
+            result.append(_issue(
+                f"{base}.semanticEvaluator", "KIN-E-FIXTURE",
+                "text antibody must have a null semantic evaluator",
+            ))
+        for field in ("scopeGlobs", "excludeGlobs"):
+            if not _text_list(antibody.get(field)):
+                result.append(_issue(
+                    f"{base}.{field}", "KIN-E-FIXTURE",
+                    "glob inventory must be a list of Unicode scalar strings",
+                ))
+    return ordered_issues(result)
+
+
+def _fixture_shape_issues(core: dict[str, Any]) -> list[Issue]:
+    result = _typed_collection_issues(
+        core, ("fixtures",), code="KIN-E-FIXTURE", root="core",
+    )
+    result.extend(_antibody_shape_issues(core))
+    fixtures = core.get("fixtures")
+    if not isinstance(fixtures, list):
+        return ordered_issues(result)
+    seen_ids: set[str] = set()
+    for position, fixture in enumerate(fixtures):
+        base = f"core.fixtures[{position}]"
+        if not isinstance(fixture, dict):
+            continue
+        fixture_id = fixture.get("id")
+        if not valid_id(fixture_id):
+            result.append(_issue(
+                f"{base}.id", "KIN-E-FIXTURE",
+                "fixture ID must be a canonical identifier",
+            ))
+        elif fixture_id in seen_ids:
+            result.append(_issue(
+                f"{base}.id", "KIN-E-FIXTURE", "fixture ID must be unique",
+            ))
+        else:
+            seen_ids.add(fixture_id)
+        kind = fixture.get("kind")
+        if type(kind) is not str or kind not in {
+            "POSITIVE", "NEGATIVE", "QUOTATION", "HISTORICAL", "MUTATION",
+        }:
+            result.append(_issue(
+                f"{base}.kind", "KIN-E-FIXTURE",
+                "fixture kind is outside the closed registry",
+            ))
+        payload_kind = fixture.get("payloadKind")
+        if type(payload_kind) is not str or payload_kind not in {"TEXT", "JSON"}:
+            result.append(_issue(
+                f"{base}.payloadKind", "KIN-E-FIXTURE",
+                "fixture payload kind must be TEXT or JSON",
+            ))
+        if not _scalar_text(fixture.get("payload"), nonempty=False):
+            result.append(_issue(
+                f"{base}.payload", "KIN-E-FIXTURE",
+                "fixture payload must be Unicode scalar text",
+            ))
+        for field in ("antibodyIds", "expectedAntibodyIds"):
+            if not _identifier_list(fixture.get(field)):
+                result.append(_issue(
+                    f"{base}.{field}", "KIN-E-FIXTURE",
+                    f"{field} must be a list of canonical identifiers",
+                ))
+    return ordered_issues(result)
+
+
 def _text_match(antibody: dict[str, Any], source: str) -> tuple[bool, list[Issue]]:
     if not _scalar_text(source, nonempty=False):
         return False, [_issue("fixture.payload", "KIN-E-FIXTURE", "text payload must contain only Unicode scalar text")]
@@ -1571,6 +1835,26 @@ def evaluate_antibody_fixture(
 ) -> list[Issue]:
     if not isinstance(core, dict):
         return [_issue("fixture", "KIN-E-FIXTURE", "core must be an object")]
+    if not valid_id(fixture_id):
+        return [_issue(
+            "fixture.id", "KIN-E-FIXTURE",
+            "fixture ID must be a canonical identifier",
+        )]
+    try:
+        shape_issues = _fixture_shape_issues(core)
+        if shape_issues:
+            return shape_issues
+        return _evaluate_antibody_fixture_unchecked(core, fixture_id)
+    except Exception:
+        return [_issue(
+            "fixture", "KIN-E-FIXTURE",
+            "fixture execution failed safely on malformed nested data",
+        )]
+
+
+def _evaluate_antibody_fixture_unchecked(
+    core: dict[str, object], fixture_id: str
+) -> list[Issue]:
     fixtures = _index(core, "fixtures")
     antibodies = _index(core, "antibodies")
     fixture = fixtures.get(fixture_id)
@@ -1603,9 +1887,13 @@ def evaluate_antibody_fixture(
             except Exception:
                 execution_issues.append(_issue("fixture.payload", "KIN-E-FIXTURE", "semantic fixture payload is invalid JSON"))
                 continue
-            triggered = bool(evaluate_semantic_fixture(
+            execution = _execute_semantic_fixture(
                 antibody.get("semanticEvaluator"), payload, core
-            ))
+            )
+            if execution.execution_issues:
+                execution_issues.extend(execution.execution_issues)
+                continue
+            triggered = execution.predicate_passed is False
         else:
             execution_issues.append(_issue("antibody.matchMode", "KIN-E-FIXTURE", "unknown antibody match mode"))
         if triggered and context in {"POSITIVE", "NEGATIVE"}:
@@ -1626,6 +1914,22 @@ def scan_antibodies(
     empty: dict[str, Any] = {"included": {}, "excluded": {}, "triggers": {}}
     if not isinstance(core, dict) or not isinstance(documents, dict):
         return empty, [_issue("scan", "KIN-E-FIXTURE", "core and documents must be objects")]
+    try:
+        shape_issues = _antibody_shape_issues(core)
+        if shape_issues:
+            return empty, shape_issues
+        return _scan_antibodies_unchecked(core, documents)
+    except Exception:
+        return empty, [_issue(
+            "scan", "KIN-E-FIXTURE",
+            "antibody scan failed safely on malformed nested data",
+        )]
+
+
+def _scan_antibodies_unchecked(
+    core: dict[str, object], documents: dict[str, str]
+) -> tuple[dict[str, Any], list[Issue]]:
+    empty: dict[str, Any] = {"included": {}, "excluded": {}, "triggers": {}}
     antibodies = sorted([
         antibody for antibody in _records(core, "antibodies")
         if antibody.get("matchMode") in {"LITERAL", "REGEX"}

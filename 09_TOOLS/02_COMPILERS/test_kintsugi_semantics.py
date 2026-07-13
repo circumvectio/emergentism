@@ -61,6 +61,19 @@ def semantic_issue(issues):
     return "KIN-E-FIXTURE" in codes(issues)
 
 
+def issue_signature(issues):
+    return tuple((issue.path, issue.code, issue.message) for issue in issues)
+
+
+def replace_path(value, path, replacement):
+    mutated = copy.deepcopy(value)
+    cursor = mutated
+    for component in path[:-1]:
+        cursor = cursor[component]
+    cursor[path[-1]] = copy.deepcopy(replacement)
+    return mutated
+
+
 def make_queue_core():
     core = support.build_semantic_core()
     manifest = core["manifests"][0]
@@ -640,6 +653,13 @@ class ModalityAndEvidenceTests(unittest.TestCase):
 
 
 class JusticeGateAndQueueTests(unittest.TestCase):
+    def assertStableQueueFailure(self, queue, core):
+        first = validate_queue(copy.deepcopy(queue), copy.deepcopy(core))
+        second = validate_queue(copy.deepcopy(queue), copy.deepcopy(core))
+        self.assertTrue(first)
+        self.assertEqual(issue_signature(first), issue_signature(second))
+        self.assertTrue(all(issue.code == "KIN-E-QUEUE" for issue in first))
+
     def configure_authority(self, claim, *, effect, scope, regime, mechanism, lifecycle="ACTIVE"):
         claim.update({
             "authorityEffect": effect,
@@ -850,8 +870,69 @@ class JusticeGateAndQueueTests(unittest.TestCase):
         self.assertEqual(kernel.validate_schema_instance(SCHEMA, "publicQueue", queue), ())
         self.assertIn("KIN-E-QUEUE", codes(validate_queue(queue, core)))
 
+    def test_public_queue_boundary_is_total_for_bounded_json_shape_mutations(self):
+        core, queue = make_queue_core()
+        scalar_shapes = (None, False, 0, 1.5, "", [], {})
+
+        for malformed in scalar_shapes:
+            with self.subTest(surface="queue", shape=type(malformed).__name__):
+                self.assertStableQueueFailure(malformed, core)
+            with self.subTest(surface="core", shape=type(malformed).__name__):
+                self.assertStableQueueFailure(queue, malformed)
+
+        queue_scalar_paths = (
+            ("manifestId",),
+            ("receiptId",),
+            ("items", 0, "publicFile"),
+            ("items", 0, "ownerSourceId"),
+            ("items", 0, "claimId"),
+            ("items", 0, "maximumPublicStrength"),
+        )
+        for path in queue_scalar_paths:
+            for malformed in scalar_shapes:
+                candidate = replace_path(queue, path, malformed)
+                with self.subTest(path=path, shape=type(malformed).__name__):
+                    self.assertStableQueueFailure(candidate, core)
+
+        for path in (("items",), ("items", 0, "currentEvidence"), ("items", 0, "seamIds")):
+            for malformed in (None, False, 0, 1.5, "", {}, [None], [{}]):
+                candidate = replace_path(queue, path, malformed)
+                with self.subTest(path=path, shape=type(malformed).__name__):
+                    self.assertStableQueueFailure(candidate, core)
+
+        ownerless = copy.deepcopy(queue)
+        ownerless["items"] = [make_ownerless_item(core)]
+        ownerless_paths = (
+            ("items", 0, "ownerSearchEvidence"),
+            ("items", 0, "ownerSearchEvidence", "manifestIds"),
+            ("items", 0, "ownerSearchEvidence", "searchedSourceIds"),
+            ("items", 0, "candidateOwners"),
+        )
+        for path in ownerless_paths:
+            for malformed in (None, False, 0, 1.5, "", {}, [None], [{}]):
+                candidate = replace_path(ownerless, path, malformed)
+                with self.subTest(path=path, shape=type(malformed).__name__):
+                    self.assertStableQueueFailure(candidate, core)
+
 
 class SafeRegexGlobAndAntibodyTests(unittest.TestCase):
+    def assertStableFixtureFailure(self, core, fixture_id):
+        first = evaluate_fixture(copy.deepcopy(core), copy.deepcopy(fixture_id))
+        second = evaluate_fixture(copy.deepcopy(core), copy.deepcopy(fixture_id))
+        self.assertTrue(first)
+        self.assertEqual(issue_signature(first), issue_signature(second))
+        self.assertTrue(all(issue.code == "KIN-E-FIXTURE" for issue in first))
+
+    def assertStableScanFailure(self, core, documents):
+        first_result, first_issues = scan(copy.deepcopy(core), copy.deepcopy(documents))
+        second_result, second_issues = scan(copy.deepcopy(core), copy.deepcopy(documents))
+        empty = {"included": {}, "excluded": {}, "triggers": {}}
+        self.assertEqual(first_result, empty)
+        self.assertEqual(second_result, empty)
+        self.assertTrue(first_issues)
+        self.assertEqual(issue_signature(first_issues), issue_signature(second_issues))
+        self.assertTrue(all(issue.code == "KIN-E-FIXTURE" for issue in first_issues))
+
     def test_complete_safe_regex_grammar_and_anchors(self):
         positives = (
             ("abc", "xxabczz"),
@@ -1003,6 +1084,131 @@ class SafeRegexGlobAndAntibodyTests(unittest.TestCase):
         fixture_id = antibody["positiveFixtureIds"][0]
         antibody["negativeFixtureIds"].append(fixture_id)
         self.assertIn("KIN-E-FIXTURE", codes(validate(core)))
+
+    def test_fixture_boundary_is_total_for_bounded_json_shape_mutations(self):
+        core = support.build_semantic_core()
+        antibody = support.add_antibody_fixture_set(core)
+        fixture_id = antibody["positiveFixtureIds"][0]
+        scalar_shapes = (None, False, 0, 1.5, "", [], {})
+
+        for malformed in scalar_shapes:
+            with self.subTest(surface="core", shape=type(malformed).__name__):
+                self.assertStableFixtureFailure(malformed, fixture_id)
+            with self.subTest(surface="fixtureId", shape=type(malformed).__name__):
+                self.assertStableFixtureFailure(core, malformed)
+
+        paths = (
+            ("antibodies", 0, "id"),
+            ("antibodies", 0, "matchMode"),
+            ("antibodies", 0, "pattern"),
+            ("fixtures", 1, "id"),
+            ("fixtures", 1, "kind"),
+            ("fixtures", 1, "payloadKind"),
+            ("fixtures", 1, "payload"),
+        )
+        positive_position = next(
+            position for position, fixture in enumerate(core["fixtures"])
+            if fixture.get("id") == fixture_id
+        )
+        normalized_paths = tuple(
+            path if path[:2] != ("fixtures", 1)
+            else ("fixtures", positive_position, *path[2:])
+            for path in paths
+        )
+        for path in normalized_paths:
+            for malformed in scalar_shapes:
+                candidate = replace_path(core, path, malformed)
+                with self.subTest(path=path, shape=type(malformed).__name__):
+                    self.assertStableFixtureFailure(candidate, fixture_id)
+
+        list_paths = (
+            ("antibodies", 0, "scopeGlobs"),
+            ("antibodies", 0, "excludeGlobs"),
+            ("fixtures", positive_position, "antibodyIds"),
+            ("fixtures", positive_position, "expectedAntibodyIds"),
+        )
+        for path in list_paths:
+            for malformed in (None, False, 0, 1.5, "", {}, [None], [{}]):
+                candidate = replace_path(core, path, malformed)
+                with self.subTest(path=path, shape=type(malformed).__name__):
+                    self.assertStableFixtureFailure(candidate, fixture_id)
+
+        semantic_core = support.build_semantic_core()
+        payload = {
+            "physicalConstraint": "C_BOUNDED",
+            "optionClaim": "MODELED_REACHABILITY",
+            "futureInfluence": "ANTICIPATORY_MODEL",
+            "commitmentKind": "PARTIAL_RELATION",
+        }
+        forbidden = copy.deepcopy(payload)
+        forbidden["physicalConstraint"] = "SUPERLUMINAL"
+        semantic = support.add_semantic_antibody_fixture_set(
+            semantic_core, "OPTION_CONE", payload, forbidden
+        )
+        semantic_fixture_id = semantic["positiveFixtureIds"][0]
+        for malformed in scalar_shapes:
+            candidate = replace_path(
+                semantic_core, ("antibodies", 0, "semanticEvaluator"), malformed
+            )
+            with self.subTest(path="semanticEvaluator", shape=type(malformed).__name__):
+                self.assertStableFixtureFailure(candidate, semantic_fixture_id)
+
+    def test_scan_boundary_is_total_for_bounded_json_shape_mutations(self):
+        core = support.build_semantic_core()
+        support.add_antibody_fixture_set(core)
+        documents = {"active/a.md": "forbidden"}
+
+        for malformed in (None, False, 0, 1.5, "", []):
+            with self.subTest(surface="core", shape=type(malformed).__name__):
+                self.assertStableScanFailure(malformed, documents)
+            with self.subTest(surface="documents", shape=type(malformed).__name__):
+                self.assertStableScanFailure(core, malformed)
+
+        scalar_paths = (
+            ("antibodies", 0, "id"),
+            ("antibodies", 0, "matchMode"),
+            ("antibodies", 0, "pattern"),
+        )
+        for path in scalar_paths:
+            malformed_values = (None, False, 0, 1.5, "", [], {})
+            if path[-1] != "pattern":
+                malformed_values += ("bad id",)
+            for malformed in malformed_values:
+                candidate = replace_path(core, path, malformed)
+                with self.subTest(path=path, shape=type(malformed).__name__):
+                    self.assertStableScanFailure(candidate, documents)
+
+        for path in (("antibodies", 0, "scopeGlobs"), ("antibodies", 0, "excludeGlobs")):
+            for malformed in (None, False, 0, 1.5, "", {}, [None], [{}]):
+                candidate = replace_path(core, path, malformed)
+                with self.subTest(path=path, shape=type(malformed).__name__):
+                    self.assertStableScanFailure(candidate, documents)
+
+        for malformed in (None, False, 0, 1.5, [], {}):
+            with self.subTest(documentValue=type(malformed).__name__):
+                self.assertStableScanFailure(core, {"active/a.md": malformed})
+        for path in ("", "/absolute/a.md", "active/../a.md", "active/\ud800.md"):
+            with self.subTest(documentPath=repr(path)):
+                self.assertStableScanFailure(core, {path: "forbidden"})
+
+    def test_semantics_public_boundaries_do_not_swallow_process_control(self):
+        class RaisingDict(dict):
+            signal = KeyboardInterrupt
+
+            def get(self, *args, **kwargs):
+                raise self.signal("process-control probe")
+
+        for signal in (KeyboardInterrupt, SystemExit):
+            RaisingDict.signal = signal
+            with self.subTest(signal=signal.__name__, boundary="fixture"):
+                with self.assertRaises(signal):
+                    evaluate_fixture(RaisingDict(), "FXT-A-001")
+            with self.subTest(signal=signal.__name__, boundary="scan"):
+                with self.assertRaises(signal):
+                    scan(RaisingDict(), {})
+            with self.subTest(signal=signal.__name__, boundary="queue"):
+                with self.assertRaises(signal):
+                    validate_queue(RaisingDict(), RaisingDict())
 
 
 class SemanticEvaluatorTests(unittest.TestCase):
@@ -1245,6 +1451,35 @@ class SemanticEvaluatorTests(unittest.TestCase):
         self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
         self.assertIn("KIN-E-FIXTURE", codes(evaluate_fixture(core, fixture_id)))
         self.assertIn("KIN-E-FIXTURE", codes(validate(core)))
+
+    def test_wrong_shaped_payload_is_execution_failure_in_every_fixture_context(self):
+        contexts = (
+            ("POSITIVE", "positiveFixtureIds"),
+            ("NEGATIVE", "negativeFixtureIds"),
+            ("QUOTATION", "quotationFixtureIds"),
+            ("HISTORICAL", "historicalFixtureIds"),
+        )
+        for evaluator in self.payload_rows(support.build_semantic_core()):
+            for context, fixture_field in contexts:
+                core = support.build_semantic_core()
+                good, bad = self.payload_rows(core)[evaluator]
+                antibody = support.add_semantic_antibody_fixture_set(
+                    core, evaluator, good, bad
+                )
+                fixture_id = antibody[fixture_field][0]
+                fixture = next(
+                    item for item in core["fixtures"] if item["id"] == fixture_id
+                )
+                fixture["payload"] = "{}"
+                with self.subTest(evaluator=evaluator, context=context):
+                    self.assertEqual(
+                        kernel.validate_schema_instance(SCHEMA, "coreData", core), ()
+                    )
+                    self.assertIn(
+                        "KIN-E-FIXTURE",
+                        codes(evaluate_fixture(core, fixture_id)),
+                    )
+                    self.assertIn("KIN-E-FIXTURE", codes(validate(core)))
 
     def test_justice_nested_enums_are_exception_total_for_lists_and_objects(self):
         core = support.build_semantic_core()
