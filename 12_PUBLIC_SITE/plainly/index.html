@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emergentism, plainly — the whole idea in ordinary words</title>
+<meta name="description" content="The elevator pitch and the whole idea of Emergentism, explained from scratch in plain language — what's actually proven, what's a bet, and why a worldview that publishes its own failures is worth your attention." />
+<meta name="color-scheme" content="dark" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Emergentism, plainly" />
+<meta property="og:description" content="Everything worth doing needs two things at once — and one of them, alone, is a trap. The whole idea, in ordinary words, with every claim graded." />
+<meta property="og:url" content="https://www.emergentism.org/plainly/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Emergentism, plainly" />
+<meta name="twitter:description" content="Start from something you already know. Build up in pictures. Stay honest about what's proven and what's a guess." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%23FFEB3B' stroke-width='1' opacity='.5'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E" />
+<style>
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Roboto-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../assets/fonts/RobotoMono-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+:root{
+  --void:#050505; --void-2:#080807; --panel:#0d0d0c; --panel-2:#131312;
+  --bone:#F5F5F3; --bone-dim:#a4a7a9; --bone-faint:#6b6f74; --bone-ghost:#3a3d42;
+  --gold:#FFEB3B; --gold-deep:#CBB800; --crimson:#e0453b; --crimson-dim:#8f312c;
+  --blue:#5aa9e6; --green:#5bbf88;
+  --line:rgba(245,245,243,.10); --line-soft:rgba(245,245,243,.05);
+  --t-a:#7fb2e6; --t-e:#6fc79a; --t-s:#5fc6b0; --t-i:#e8d24a; --t-c:#b59ce0; --t-b:#FFEB3B;
+  --sans:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --maxw:1080px; --read:44rem;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--void);color:var(--bone);font-family:var(--sans);font-weight:300;font-size:18px;line-height:1.72;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:radial-gradient(110% 60% at 84% -8%, rgba(255,235,59,.05), transparent 45%),
+             radial-gradient(120% 80% at 6% 108%, rgba(66,165,245,.045), transparent 52%), var(--void)}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5;
+  background-image:repeating-linear-gradient(0deg, rgba(255,255,255,.012) 0 1px, transparent 1px 3px)}
+::selection{background:rgba(255,235,59,.26);color:#050505}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1rem,4vw,2.6rem)}
+.read{max-width:var(--read)}
+.mono{font-family:var(--mono)}
+
+.topbar{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:.72rem clamp(1rem,4vw,2.6rem);background:rgba(5,5,5,.72);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.brand{font-weight:800;font-size:1.02rem;letter-spacing:-.01em;text-decoration:none}
+.brand b{color:var(--gold);font-weight:800}
+.nav{display:flex;gap:.15rem;flex-wrap:wrap;font-family:var(--mono);font-size:.78rem}
+.nav a{display:inline-grid;place-items:center;min-width:1.7rem;height:1.7rem;padding:0 .45rem;color:var(--bone-dim);border-radius:3px;text-decoration:none;transition:.15s}
+.nav a:hover{color:var(--void);background:var(--gold)}
+.nav a.here{color:var(--gold);border:1px solid var(--line)}
+
+/* hero */
+header.hero{padding:clamp(3rem,8vw,6.5rem) 0 1rem}
+.fileno{font-family:var(--mono);font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1.6rem;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
+.fileno::before{content:"";width:30px;height:1px;background:var(--gold-deep);display:inline-block}
+h1{font-size:clamp(2.5rem,7vw,5.4rem);letter-spacing:-.03em;line-height:.99;margin:0 0 1.5rem;text-wrap:balance;font-weight:200}
+h1 .heavy{font-weight:900;letter-spacing:-.04em}
+h1 .gold{color:var(--gold);font-weight:900}
+.dek{font-size:clamp(1.12rem,1.7vw,1.4rem);color:var(--bone-dim);max-width:60ch;margin:0 0 1rem;font-weight:300;line-height:1.6}
+.dek b{color:var(--bone);font-weight:500}
+
+/* the one-liner card */
+.pitch{border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:0 14px 14px 0;background:linear-gradient(90deg,rgba(255,235,59,.05),transparent 70%);padding:1.8rem 2rem;margin:2.6rem 0 0;max-width:74ch}
+.pitch .lab{font-family:var(--mono);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 .8rem}
+.pitch p{font-size:clamp(1.14rem,1.7vw,1.4rem);color:var(--bone);margin:0;font-weight:300;line-height:1.55}
+.pitch b{color:var(--gold);font-weight:500}
+
+/* generic section */
+section{padding:clamp(2.6rem,6vw,4.6rem) 0;border-top:1px solid var(--line-soft)}
+.kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1rem}
+h2{font-size:clamp(1.7rem,3.4vw,2.6rem);font-weight:200;letter-spacing:-.02em;margin:0 0 1.3rem;line-height:1.08;text-wrap:balance}
+h2 b{font-weight:800}
+.lead{font-size:clamp(1.06rem,1.4vw,1.2rem);color:var(--bone-dim);margin:0 0 1.5rem;font-weight:300}
+p{margin:0 0 1.25rem}
+.body p{color:var(--bone-dim);font-weight:300}
+.body p b{color:var(--bone);font-weight:500}
+.body em{font-style:italic;color:var(--bone)}
+.pull{font-size:clamp(1.3rem,2.4vw,1.9rem);font-weight:200;letter-spacing:-.015em;line-height:1.3;color:var(--bone);margin:2rem 0;max-width:38ch}
+.pull b{font-weight:700}
+.pull .gold{color:var(--gold);font-weight:700}
+
+/* the build-up steps */
+.step{display:grid;grid-template-columns:auto 1fr;gap:1.6rem;padding:1.8rem 0;border-top:1px solid var(--line-soft)}
+.step:first-of-type{border-top:0}
+.step .n{font-family:var(--mono);font-size:2.4rem;font-weight:100;color:var(--bone-ghost);line-height:1;letter-spacing:-.02em}
+.step h3{font-size:clamp(1.2rem,2vw,1.55rem);font-weight:300;letter-spacing:-.01em;margin:0 0 .8rem;color:var(--bone);line-height:1.25}
+.step h3 b{font-weight:700}
+.step p{color:var(--bone-dim);font-weight:300;margin:0 0 .9rem;max-width:62ch}
+.step p:last-child{margin-bottom:0}
+.step p b{color:var(--bone);font-weight:500}
+.step em{font-style:italic;color:var(--bone)}
+@media(max-width:640px){.step{grid-template-columns:1fr;gap:.5rem}.step .n{font-size:1.6rem}}
+
+/* the globe figure */
+.figrow{display:grid;grid-template-columns:1fr 320px;gap:2.5rem;align-items:center;margin:1rem 0 0}
+@media(max-width:820px){.figrow{grid-template-columns:1fr}.globe{max-width:300px;margin:1rem auto 0}}
+.globe svg{width:100%;height:auto;display:block;overflow:visible}
+.globe figcaption{font-family:var(--mono);font-size:.74rem;color:var(--bone-faint);text-align:center;margin-top:.8rem}
+
+/* honesty callout */
+.callout{border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,var(--panel),var(--void-2));padding:clamp(1.6rem,4vw,2.6rem)}
+.callout .big{font-size:clamp(1.5rem,3vw,2.3rem);font-weight:200;letter-spacing:-.02em;line-height:1.22;color:var(--bone);margin:0 0 1.3rem;max-width:30ch}
+.callout .big b{font-weight:800;color:var(--gold)}
+.callout p{color:var(--bone-dim);max-width:64ch;font-weight:300}
+.callout p b{color:var(--bone);font-weight:500}
+.callout .r6{margin-top:1.6rem;padding:1.3rem 1.5rem;border:1px solid var(--line);border-left:2px solid var(--crimson);border-radius:0 10px 10px 0;background:linear-gradient(90deg,rgba(224,69,59,.05),transparent 70%)}
+.callout .r6 .l{font-family:var(--mono);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--crimson);margin:0 0 .6rem}
+.callout .r6 p{margin:0;color:var(--bone-dim)}
+.callout .r6 b{color:var(--bone)}
+
+/* know vs bet grid */
+.split{display:grid;grid-template-columns:1fr;gap:2rem;margin-top:.5rem}
+.colhead{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;margin:0 0 1.1rem;display:flex;align-items:center;gap:.6rem}
+.colhead.know{color:var(--green)} .colhead.bet{color:var(--t-c)}
+.colhead .d{width:9px;height:9px;border-radius:50%;background:currentColor}
+.item{border-top:1px solid var(--line-soft);padding:1.25rem 0}
+.item:first-of-type{border-top:0}
+.item h4{font-size:1.12rem;font-weight:400;margin:0 0 .5rem;color:var(--bone);letter-spacing:-.01em}
+.item h4 b{font-weight:700}
+.item p{color:var(--bone-dim);font-size:.97rem;font-weight:300;margin:0 0 .55rem;max-width:66ch}
+.item p:last-child{margin-bottom:0}
+.item em{font-style:italic;color:var(--bone)}
+.gloss{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--mono);font-size:.72rem;color:var(--bone-faint);margin-top:.3rem}
+.t{font-family:var(--mono);font-size:.92em;font-weight:700;padding:.06em .42em;border-radius:3px;border:1px solid currentColor;line-height:1.5;white-space:nowrap}
+.t-a{color:var(--t-a)}.t-e{color:var(--t-e)}.t-s{color:var(--t-s)}.t-i{color:var(--t-i)}.t-c{color:var(--t-c)}.t-b{color:var(--t-b)}
+.howlose{color:var(--bone-faint);font-size:.9rem;font-weight:300}
+.howlose b{color:var(--t-c);font-weight:500}
+
+/* not-this list */
+.nots{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:.5rem}
+@media(max-width:680px){.nots{grid-template-columns:1fr}}
+.not{background:linear-gradient(180deg,var(--panel),var(--void-2));padding:1.3rem 1.5rem}
+.not h4{font-size:1rem;font-weight:600;margin:0 0 .4rem;color:var(--crimson)}
+.not h4 .x{font-family:var(--mono);margin-right:.4rem;opacity:.7}
+.not p{color:var(--bone-dim);font-size:.92rem;font-weight:300;margin:0}
+.not p b{color:var(--bone);font-weight:500}
+
+/* close */
+.close{border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,rgba(255,235,59,.04),transparent 72%);padding:clamp(1.8rem,4vw,2.6rem)}
+.close p{font-size:clamp(1.14rem,1.7vw,1.4rem);color:var(--bone);max-width:60ch;margin:0;font-weight:200;line-height:1.5}
+.close b{color:var(--gold-deep);font-weight:600}
+.cta-row{margin-top:1.8rem;display:flex;flex-wrap:wrap;gap:.5rem}
+.cta{display:inline-flex;gap:.5rem;align-items:center;font-family:var(--mono);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;
+  padding:.8rem 1.25rem;border-radius:4px;border:1px solid var(--line);text-decoration:none;color:var(--bone);transition:.2s}
+.cta:hover{border-color:var(--gold);color:var(--gold)}
+.cta.primary{background:var(--gold);color:#1a1206;border-color:var(--gold);font-weight:700}
+.cta.primary:hover{background:#FFF176}
+.foot{border-top:1px solid var(--line);margin-top:3rem;padding:2.6rem 0 3.6rem;text-align:center;color:var(--bone-ghost);font-family:var(--mono);font-size:.75rem;line-height:1.75}
+.foot .glyph{font-size:1.5rem;color:var(--gold);margin-bottom:.7rem}
+.foot a{color:var(--bone-faint);text-decoration:underline;text-underline-offset:3px}
+
+.reveal{opacity:0;transform:translateY(16px)}
+.reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important;transition:none!important}}
+</style>
+<!-- pwa-chrome -->
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#050505">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<script src="/assets/js/pwa.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="../home/">Emergent<b>ism</b></a>
+  <nav class="nav" aria-label="Routes">
+    <a href="../0/">0</a><a href="../1/">1</a><a href="../2/">2</a><a href="../3/">3</a>
+    <a href="../4/">4</a><a href="../5/">5</a><a href="../6/">6</a>
+    <a href="../plainly/" class="here" aria-current="page">Plainly</a>
+    <a href="../axioms/">Axioms</a><a href="../record/">Record</a><a href="../book/">Book</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <header class="hero">
+    <p class="fileno reveal in">Emergentism, in plain words · no jargon required</p>
+    <h1 class="reveal in">Everything worth doing<br>needs <span class="gold">two things</span> at once.</h1>
+    <p class="dek reveal in">And one of them, on its own, is a trap. That single sentence is the whole idea. What follows builds it up from scratch — no equations you have to trust, no vocabulary you have to swallow — and tells you honestly, at each step, whether we've <b>proven</b> a thing or are <b>betting</b> on it.</p>
+
+    <div class="pitch reveal in">
+      <p class="lab">If you remember one thing</p>
+      <p>Emergentism takes the simplest fact in arithmetic — a number times its opposite is one — and turns it into a way of seeing how anything, a cell or a company or a country, stays alive: by holding <b>coherence</b> and <b>capability</b> in balance. The maths is old and certain. The reading laid over it is new. And unusually, the whole thing is built to be <b>proven wrong</b> — and this year, in one place, it was, and we published it.</p>
+    </div>
+  </header>
+
+  <!-- THE BUILD-UP -->
+  <section>
+    <p class="kicker reveal">Start from something you already know</p>
+    <h2 class="reveal read">Six small steps. Each one is <b>obvious</b> on its own.</h2>
+
+    <div class="step reveal">
+      <div class="n">1</div>
+      <div>
+        <h3>Two things, and you need <b>both</b>.</h3>
+        <p>Think of anything that has to survive — a body, a business, an idea. It always has two sides. One is <b>coherence</b>: how well it hangs together, how clearly it sees, how much sense it makes. The other is <b>capability</b>: how much it can actually <em>do</em> in the world — its reach, its resources, its power to act.</p>
+        <p>A brilliant plan nobody can execute is a corpse. Raw power with no coherence is a cancer. You have met both. Neither survives. You need the two <em>together</em>.</p>
+      </div>
+    </div>
+
+    <div class="step reveal">
+      <div class="n">2</div>
+      <div>
+        <h3>They <b>multiply</b> — they don't add.</h3>
+        <p>Here is the part that isn't obvious until you see it. These two don't <em>add</em> up, where being great at one covers for being terrible at the other. They <em>multiply</em>. And anything times zero is zero.</p>
+        <p>All the coherence in the world times no capability is nothing — a beautiful fossil. All the capability times no coherence is nothing — formless appetite. <b>Kill either factor and the whole thing goes to zero.</b> That's why you can't paper over a missing half. The multiplication won't let you.</p>
+      </div>
+    </div>
+
+    <div class="step reveal">
+      <div class="n">3</div>
+      <div>
+        <div class="figrow">
+          <div>
+            <h3>There's a natural <b>shape</b> for "two things in balance."</h3>
+            <p>Take any number and its reciprocal — 2 and ½, 10 and 1/10. Multiply them: always 1. Now imagine every such pair as a point on a globe. Slide up toward the north pole and one side runs to infinity while the other starves to zero — <em>all coherence, no power</em>. Slide down to the south pole and it flips — <em>all power, no coherence</em>.</p>
+            <p>The <b>equator</b> is the one place where the two are equal, both exactly 1, in perfect balance. That's the sweet spot. Not the top. The <em>middle</em>.</p>
+          </div>
+          <figure class="globe">
+            <svg viewBox="0 0 300 320" role="img" aria-label="A globe. The north pole is labelled all coherence, no power — a fossil. The south pole is all power, no coherence — a cancer. The gold equator across the middle is labelled balance, both equal to one.">
+              <circle cx="150" cy="160" r="112" fill="none" stroke="rgba(245,245,243,.16)" stroke-width="1"/>
+              <ellipse cx="150" cy="160" rx="112" ry="26" fill="none" stroke="rgba(245,245,243,.07)" stroke-width="1"/>
+              <line x1="38" y1="160" x2="262" y2="160" stroke="#FFEB3B" stroke-width="2.4"/>
+              <circle cx="150" cy="48" r="4.5" fill="none" stroke="#b59ce0" stroke-width="1.6"/>
+              <circle cx="150" cy="272" r="4.5" fill="#e0453b"/>
+              <circle cx="150" cy="160" r="4" fill="#FFEB3B"/>
+              <g font-family="Roboto Mono,monospace" font-size="10.5">
+                <text x="150" y="30" text-anchor="middle" fill="#b59ce0">all coherence</text>
+                <text x="150" y="300" text-anchor="middle" fill="#e0453b">all power</text>
+                <text x="270" y="156" fill="#FFEB3B">balance</text>
+                <text x="270" y="171" fill="#CBB800">both = 1</text>
+              </g>
+            </svg>
+            <figcaption>the poles are traps · the equator is the point</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="step reveal">
+      <div class="n">4</div>
+      <div>
+        <h3>Now the <b>surprise</b> — and be careful with it.</h3>
+        <p>That exact globe, with that exact reciprocal balance, turns out to be the same shape Einstein's relativity is written on. Line the pieces up and they match, term for term: the balance point is the state of rest, and the balance number is — this is real — <b>the rate at which your clock ticks</b>. Near the poles, where balance breaks, the clock stops. Same statement as "the poles cannot act."</p>
+        <p>Here's the discipline. This does <em>not</em> mean we've explained relativity, or that anything "travels at light speed." It means two very different things — a theory of motion, and a picture of balance — happen to be drawn on the same simple shape, so they share it. <b>A genuine coincidence of mathematics, and we label it exactly that.</b> It's the strongest single thing on offer <em>because</em> it's checkable, not because it's grand.</p>
+      </div>
+    </div>
+
+    <div class="step reveal">
+      <div class="n">5</div>
+      <div>
+        <h3>An <b>ethic</b> falls out — as arithmetic, not preaching.</h3>
+        <p>Because the two sides multiply, watch what happens when you steal. Say you pump up your own capability by draining a partner's — taking without giving back. You went up a little; they went down. But the thing that actually matters is the <em>product</em> across the whole system, and you just lowered it. Do it at scale and the system you live in shrinks under you.</p>
+        <p>So "don't extract" isn't a commandment handed down from anywhere. It's what the multiplication says: <b>extraction is a losing move.</b> (Honestly: this holds under real conditions — repeated dealings, genuine coupling, some way to catch cheats. One-shot smash-and-grab can still pay. The framework's whole politics is about making the honest game the real one.)</p>
+      </div>
+    </div>
+
+    <div class="step reveal">
+      <div class="n">6</div>
+      <div>
+        <h3>And then the part that actually <b>matters</b>.</h3>
+        <p>Everything above is a <em>lens</em> — a way of looking. Lots of grand systems offer you a lens. What almost none of them do is tell you, out loud, which parts are proven, which are reasoned, and which are frankly guesses — and then let you kill the guesses.</p>
+        <p>Emergentism does that on every page. And that discipline is the real product. Keep reading — it's worth its own section.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE HONESTY -->
+  <section>
+    <div class="callout reveal">
+      <p class="big">The point isn't that we're right. It's that we're <b>wrong-able</b> — and we've been wrong, on the record.</p>
+      <p>Every claim on this site wears a small grade. In plain terms: <b>proven maths</b> you can check yourself; <b>structural</b> reasoning that holds if you grant the setup; an <b>interpretation</b>, which is a lens and says so; or a <b>bet</b>, which comes with a stated way to lose. Nothing is dressed up as more than it is. When the grades and the grand story disagree, the grade wins.</p>
+      <p>Why should a stakeholder care about a grading system? Because it's the one thing that separates a research programme from a religion. A framework that can't lose an argument to reality will tell you whatever keeps it alive. This one is built to lose arguments — and keeps the losses in plain sight, dated, never deleted.</p>
+      <div class="r6">
+        <p class="l">The proof it means it — 2026</p>
+        <p><b>This year the framework's single cleanest new idea was put to a real test, and it failed.</b> The prediction was that a certain kind of "potential" would balance like the sphere; the experiment showed it doesn't — it stacks up in a straight line instead. So we retired the claim, wrote down exactly how it died, and left it standing where anyone can read it. Changing your mind against your own interest, in public, is the whole credential. The rest is commentary.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE KNOW -->
+  <section>
+    <p class="kicker reveal">What we've actually found</p>
+    <h2 class="reveal read">The strong stuff — <b>checkable, not hoped-for.</b></h2>
+    <p class="lead reveal read">These are the findings that carry real weight. Each carries its plain grade.</p>
+    <div class="split reveal">
+      <div>
+        <p class="colhead know"><span class="d"></span>What we know</p>
+        <div class="item">
+          <h4>The balance shape <b>is</b> relativity's shape.</h4>
+          <p>The reciprocal-balance globe, written out, is special relativity term for term — the balance number is literally the rate of lived time. Verified by calculation, to a trillionth.</p>
+          <span class="gloss"><span class="t t-a">[A]</span> proven maths — check it yourself</span>
+        </div>
+        <div class="item">
+          <h4>The honesty machine <b>works.</b></h4>
+          <p>The grading-and-killing discipline isn't decoration — this year alone it caught and fenced several of the framework's own over-claims (a bad proof, a mislabelled "attractor," a false "always" that one counterexample breaks). It polices its own side.</p>
+          <span class="gloss"><span class="t t-s">[S]</span> demonstrated, repeatedly</span>
+        </div>
+        <div class="item">
+          <h4>We know exactly what we <b>haven't</b> earned.</h4>
+          <p>The famous "it must multiply" claim turned out unproven: the same evidence fits several balance-laws equally well. Rather than bluff, we downgraded it and said so. Knowing the edge of your knowledge is itself a result.</p>
+          <span class="gloss"><span class="t t-e">[E]</span> settled, and signed off</span>
+        </div>
+        <div class="item">
+          <h4>A real experiment, run and reported — <b>win or lose.</b></h4>
+          <p>On 200,000 people across 23 countries, we tested whether human flourishing follows the balance law. The strict version lost; flourishing looks simpler than we guessed, in the range a survey can see. We reported the loss, in full.</p>
+          <span class="gloss"><span class="t t-b">[B]</span> a receipt — the data is in</span>
+        </div>
+      </div>
+    </div>
+    <p class="pull reveal">Notice: most of our <span class="gold">certainties</span> are about the <b>discipline</b>. The exciting ideas are still bets — and we say so.</p>
+  </section>
+
+  <!-- WHAT WE BET -->
+  <section>
+    <p class="kicker reveal">What we're still betting on</p>
+    <h2 class="reveal read">The open bets — <b>each with a way to lose.</b></h2>
+    <p class="lead reveal read">This is where the real intellectual risk lives. If you want to attack the framework, attack here — at the stated tier.</p>
+    <div class="split reveal">
+      <div>
+        <p class="colhead bet"><span class="d"></span>What we bet</p>
+        <div class="item">
+          <h4>The unit "1" is a <b>hidden frame</b>, not just a number.</h4>
+          <p>A long historical thread — from Euclid to the modern metric system — reads as humanity slowly discovering that "one" is a chosen vantage point, not a thing. Our strongest surviving idea.</p>
+          <p class="howlose"><b>How it loses:</b> if historians already tell this exact story, it's a nice retelling, not a discovery.</p>
+          <span class="gloss"><span class="t t-i">[I]</span> an interpretation, with real history under it</span>
+        </div>
+        <div class="item">
+          <h4>Good organisations really do <b>multiply</b> their two sides.</h4>
+          <p>The balance law may genuinely predict which teams and systems thrive — the "weakest link matters most" pattern. This is the version most likely to earn its keep in the real world.</p>
+          <p class="howlose"><b>How it loses:</b> if plain addition predicts outcomes just as well on real data.</p>
+          <span class="gloss"><span class="t t-i">[I]</span> a bet, and a testable one</span>
+        </div>
+        <div class="item">
+          <h4>"Don't extract" is a <b>stable equilibrium</b>, not just a nice idea.</h4>
+          <p>Under repeated, coupled, enforceable play, zero-extraction is the strategy that holds. The ethical floor — and it never depended on the shakier claims around it.</p>
+          <p class="howlose"><b>How it loses:</b> if honest cooperation can't be made stable even with enforcement.</p>
+          <span class="gloss"><span class="t t-s">[S]</span> structural — the most consequential if true</span>
+        </div>
+        <div class="item">
+          <h4>There's a <b>direction</b> built into how things come together.</h4>
+          <p>The boldest, most dangerous idea: a pull toward viable, balanced completion — a kind of fifth "force-slot" at the level of agency and meaning. The part most worth attacking.</p>
+          <p class="howlose"><b>How it loses:</b> plainly stated — this is <em>not</em> a new force of physics, and any literal-physics reading is rejected unless it makes a measurement ordinary science doesn't. No such measurement yet.</p>
+          <span class="gloss"><span class="t t-c">[C]</span> a conjecture, fully fenced</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IT IS NOT -->
+  <section>
+    <p class="kicker reveal">Say the honest thing plainly</p>
+    <h2 class="reveal read">What this is <b>not.</b></h2>
+    <p class="lead reveal read">Feynman's rule: the first principle is that you must not fool yourself — and you are the easiest person to fool. So, in plain words, the things Emergentism is careful <em>not</em> to claim:</p>
+    <div class="nots reveal">
+      <div class="not">
+        <h4><span class="x">✕</span> A theory of everything.</h4>
+        <p>It's a <b>lens plus a discipline</b>, not a final account of reality. It translates known science; it doesn't replace it.</p>
+      </div>
+      <div class="not">
+        <h4><span class="x">✕</span> A new force of physics.</h4>
+        <p>The "fifth force" language is a <b>model, fully fenced</b>. It must never be sold to a physicist as an accepted interaction — and it isn't.</p>
+      </div>
+      <div class="not">
+        <h4><span class="x">✕</span> Proven to be how reality is.</h4>
+        <p>The maths is proven. That <b>reality itself is this shape is a wager</b>, stated as a wager — the single most honest line in the whole corpus.</p>
+      </div>
+      <div class="not">
+        <h4><span class="x">✕</span> Something to believe in.</h4>
+        <p>Its own rule: the day it has <b>followers instead of users</b>, it has failed. Use it, test it, put it down. It succeeds when you no longer need it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSE -->
+  <section>
+    <div class="close reveal">
+      <p>So here's the whole thing, once more, plainly: <b>hold coherence and capability in balance, because they multiply; refuse to grow by draining what sustains you; and never let how good a story sounds outrun how much of it you've actually earned.</b> The maths is real and old. The reading is new and honest about being a reading. And the proof that the honesty is real is that we've already lost rounds — and kept the losses on the wall.</p>
+      <div class="cta-row">
+        <a class="cta primary" href="../axioms/">See every claim, graded →</a>
+        <a class="cta" href="../record/">The record of what we got wrong →</a>
+        <a class="cta" href="../book/">Read the whole book →</a>
+        <a class="cta" href="../5/">Turn the sphere yourself →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot wrap">
+  <div class="glyph">⊙ = • × ○</div>
+  <p>Emergentism, plainly · every claim on this page is graded in full on <a href="../axioms/">the axioms page</a>, and every failure is dated on <a href="../record/">the trial record</a>.<br>Coherence is not truth. The framework succeeds when you can put it down.</p>
+</footer>
+
+<script>
+(function(){
+  var rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var reveals = [].slice.call(document.querySelectorAll('.reveal:not(.in)'));
+  if (rm || !('IntersectionObserver' in window)) { reveals.forEach(function(e){e.classList.add('in');}); }
+  else {
+    var io = new IntersectionObserver(function(en){ en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {rootMargin:'0px 0px -6% 0px', threshold:0.05});
+    reveals.forEach(function(el){ io.observe(el); });
+  }
+  setTimeout(function(){ document.querySelectorAll('.reveal:not(.in)').forEach(function(e){e.classList.add('in');}); }, 2000);
+})();
+</script>
+<script defer src="/assets/js/atlas-drawer.js"></script>
+</body>
+</html>
