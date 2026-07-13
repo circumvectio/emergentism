@@ -265,7 +265,7 @@ For agents building on, extending, or auditing the framework:
 
 | # | Condition | Status | Type |
 |---|-----------|--------|------|
-| K1 | GFS shows additive model wins (human flourishing) | **MIXED** (2026-04-09): signal in 30%, pooled interaction marginally negative. **BUT:** GFS was not designed to test P_node = Φ × V; proxy validity unestablished; instrument mismatch likely. See [GFS Results](../03_METHODOLOGY/00_GFS_WAVE1_RESULTS.md) and [What Actually Tests the Theory](../03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md). | **Active — ambiguous (instrument validity in question)** |
+| K1 | ~~GFS shows additive model wins (human flourishing)~~ | **RETRACTED 2026-07-13 (K2):** GFS measured the wrong register (flourishing survey aggregates, not the zero-factor boundary). See Tyson/KO doc and `90_ARCHIVE/2026_07_13_gfs_retraction/`. K1 replaced by K-T1 (Tyson/KO boundary falsifier). | **Retracted** |
 | K2 | Protocol R shows no perceptual complementarity bound | Designed | **Active** |
 | K3 | AMRITA underperforms RLHF at comparable compute | Reframed: POC implementable with existing models at $0 | **Active** |
 | K4 | Phi-meter shows no correlation with expert judgment | Built (v0.1) | **Active** |
