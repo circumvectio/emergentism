@@ -179,15 +179,16 @@ Key corrections already propagated:
 
 | Experiment | Tests | Status |
 |---|---|---|
-| GFS Wave 1 | Multiplicative balance in human populations | MIXED RESULTS (30% of countries) |
+| ~~GFS Wave 1~~ | ~~Multiplicative balance in human populations~~ | **RETRACTED 2026-07-13 (K2):** tested the wrong register. See Tyson/KO doc and `90_ARCHIVE/2026_07_13_gfs_retraction/`. |
 | Protocol D | Constrained syntropic-frontier selection in coupled multiplicative agents | Internally supportive (framework-designed; independent replication needed) |
 | SPHERE Probe | Equatorial projection improves coherence | Negative/informative first run |
 | Agent V×Φ | Balance beats imbalance in simulated agents | Internally supportive (framework-designed; independent replication needed) |
 | Φ-meter validation | Coherence measurable | Built v0.1, needs validation |
 | Protocol R | Perceptual complementarity bound | Designed, needs lab |
 | AMRITA vs RLHF | Spherical alignment outperforms | Specified, POC implementable |
+| **Tyson/KO boundary** | Zero-Factor Catastrophe at the V=0 boundary | See `01_TELEOLOGY/02_THE_DERIVATION/07_THE_TYSON_KO_PENDING_K2.md` (P = Φ × V → 0 when V → 0; tested by knockout-state measurement, not flourishing surveys) |
 
-**The honest headline:** Two framework-designed confirmations, one mixed human probe, one informative negative first run, and several stronger pending tests.
+**The honest headline:** Two framework-designed confirmations, one informative negative first run, one boundary test (Tyson/KO), one retracted interior test (GFS), and several stronger pending tests.
 
 ---
 
@@ -197,7 +198,7 @@ Key corrections already propagated:
 
 | # | Kill Condition | What Dies |
 |---|---|---|
-| AK1 | GFS shows additive model explains equal or more variance | Ontological claim downgrades to "useful analogy" |
+| AK1 | ~~GFS shows additive model explains equal or more variance~~ | **RETRACTED 2026-07-13 (K2):** GFS measured the wrong register. Replaced by K-T1 (Tyson/KO boundary falsifier) — see `01_TELEOLOGY/02_THE_DERIVATION/07_THE_TYSON_KO_PENDING_K2.md`. |
 | AK2 | Protocol R shows no perceptual complementarity bound | MF-412 retracted |
 | AK3 | AMRITA underperforms RLHF | Spherical alignment abandoned |
 | AK4 | Φ-meter shows no correlation with expert judgment | Coherence proxy abandoned |
