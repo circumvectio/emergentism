@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import math
 from dataclasses import dataclass
 from typing import Any, Callable, Iterable
 
@@ -78,37 +79,54 @@ def _justice_context_shape(context: Any) -> bool:
     }:
         return False
     text_fields = ("individual", "whole", "eta", "custody", "exit")
-    if any(not isinstance(context.get(field), str) or not context[field] for field in text_fields):
+    if any(not _scalar_text(context.get(field)) for field in text_fields):
         return False
     for field in ("beneficiary", "costBearer"):
         values = context.get(field)
         if not isinstance(values, list) or not values or any(
-            not isinstance(value, str) or not value for value in values
+            not _scalar_text(value) for value in values
         ):
             return False
     consent = context.get("consent")
     if not isinstance(consent, dict) or set(consent) != {"status", "basis"}:
         return False
-    if consent.get("status") not in {"OBTAINED", "NOT_REQUIRED", "MISSING"} or not isinstance(consent.get("basis"), str) or not consent["basis"]:
+    consent_status = consent.get("status")
+    if (
+        type(consent_status) is not str
+        or consent_status not in {"OBTAINED", "NOT_REQUIRED", "MISSING"}
+        or not _scalar_text(consent.get("basis"))
+    ):
         return False
-    if context.get("reversibility") not in {"REVERSIBLE", "PARTIAL", "IRREVERSIBLE"}:
+    reversibility = context.get("reversibility")
+    if (
+        type(reversibility) is not str
+        or reversibility not in {"REVERSIBLE", "PARTIAL", "IRREVERSIBLE"}
+    ):
         return False
     option = context.get("optionConeEffect")
     if not isinstance(option, dict) or set(option) != {"direction", "rationale"}:
         return False
-    if option.get("direction") not in {"WIDENS", "NEUTRAL", "CONTRACTS", "MIXED"} or not isinstance(option.get("rationale"), str) or not option["rationale"]:
+    direction = option.get("direction")
+    if (
+        type(direction) is not str
+        or direction not in {"WIDENS", "NEUTRAL", "CONTRACTS", "MIXED"}
+        or not _scalar_text(option.get("rationale"))
+    ):
         return False
     authority = context.get("authority")
+    if not isinstance(authority, dict) or set(authority) != {"regime", "mechanism", "basis"}:
+        return False
+    regime = authority.get("regime")
+    mechanism = authority.get("mechanism")
     return (
-        isinstance(authority, dict)
-        and set(authority) == {"regime", "mechanism", "basis"}
-        and authority.get("regime") in {"NOT_APPLICABLE", "PRIVATE_DAV", "PUBLIC_DAV", "OTHER"}
-        and authority.get("mechanism") in {
+        type(regime) is str
+        and regime in {"NOT_APPLICABLE", "PRIVATE_DAV", "PUBLIC_DAV", "OTHER"}
+        and type(mechanism) is str
+        and mechanism in {
             "NONE", "K2_NATURAL_PERSON", "PRISM_PUBLIC_GOVERNANCE",
             "CONSTITUTIONAL_AUTO_ENFORCEMENT", "OTHER",
         }
-        and isinstance(authority.get("basis"), str)
-        and bool(authority["basis"])
+        and _scalar_text(authority.get("basis"))
     )
 
 
@@ -197,12 +215,96 @@ def _kill_shape_valid(criterion: Any, *, strength: Any, lifecycle: Any) -> bool:
     )
 
 
+def _excluded_claim_ids(manifest: dict[str, Any]) -> set[str]:
+    return {
+        item.get("claimId")
+        for item in manifest.get("excludedClaimIds", [])
+        if isinstance(item, dict) and isinstance(item.get("claimId"), str)
+    }
+
+
+def _admissible_evidence_trials(
+    core: dict[str, Any], *, phase: str | None = None,
+    receipt_id: str | None = None,
+) -> dict[str, set[str]]:
+    """Return claim->trial IDs transported by the selected or verified inputs.
+
+    A globally resolving claim is deliberately insufficient.  The current
+    receipt transports only the non-excluded claim/trial inventory of its own
+    manifest.  A dependency transports the same inventory only when the
+    selected receipt names it and its receipt is VERIFIED with a bound bundle
+    digest and path.
+    """
+    manifests = _index(core, "manifests")
+    receipts = _index(core, "phaseReceipts")
+    trials = _records(core, "trials")
+    selected = [
+        receipt for receipt in receipts.values()
+        if (
+            (receipt_id is not None and receipt.get("id") == receipt_id)
+            or (
+                receipt_id is None
+                and phase is not None
+                and receipt.get("phase") == phase
+            )
+        )
+    ]
+    if receipt_id is None and phase is None:
+        selected = list(receipts.values()) if len(receipts) == 1 else []
+
+    result: dict[str, set[str]] = {}
+
+    def add_transport(receipt: dict[str, Any], *, dependency: bool) -> None:
+        manifest = manifests.get(receipt.get("manifestId"))
+        if (
+            manifest is None
+            or manifest.get("phase") != receipt.get("phase")
+            or (
+                dependency
+                and not (
+                    receipt.get("status") == "VERIFIED"
+                    and isinstance(receipt.get("validationBundlePath"), str)
+                    and isinstance(receipt.get("validationDigest"), str)
+                )
+            )
+        ):
+            return
+        allowed_claims = (
+            set(manifest.get("harvestedClaimIds", []))
+            & set(manifest.get("trialedClaimIds", []))
+            & set(receipt.get("claimIds", []))
+        ) - _excluded_claim_ids(manifest)
+        listed_trials = set(receipt.get("trialIds", []))
+        for trial in trials:
+            claim_id = trial.get("claimId")
+            trial_id = trial.get("id")
+            if (
+                claim_id in allowed_claims
+                and trial_id in listed_trials
+                and trial.get("manifestId") == manifest.get("id")
+                and trial.get("receiptId") == receipt.get("id")
+                and isinstance(claim_id, str)
+                and isinstance(trial_id, str)
+            ):
+                result.setdefault(claim_id, set()).add(trial_id)
+
+    for receipt in selected:
+        add_transport(receipt, dependency=False)
+        for dependency_id in receipt.get("dependsOnReceiptIds", []):
+            dependency_receipt = receipts.get(dependency_id)
+            if dependency_receipt is not None:
+                add_transport(dependency_receipt, dependency=True)
+    return result
+
+
 def _supporting_trial(
-    claim_id: str, trials_by_claim: dict[str, list[dict[str, Any]]], *, target_a: bool
+    claim_id: str, trials_by_claim: dict[str, list[dict[str, Any]]], *,
+    target_a: bool, admissible_trial_ids: dict[str, set[str]],
 ) -> bool:
     eligible = [
         trial for trial in trials_by_claim.get(claim_id, [])
-        if trial.get("status") == "CLOSED"
+        if trial.get("id") in admissible_trial_ids.get(claim_id, set())
+        and trial.get("status") == "CLOSED"
         and trial.get("breakState") == "NONE"
         and trial.get("verdict") in (
             {"VALID_SOUND"} if target_a else {"VALID_SOUND", "VALID_CONDITIONAL"}
@@ -212,7 +314,7 @@ def _supporting_trial(
     return bool(eligible)
 
 
-def _validate_claims(core: dict[str, Any]) -> list[Issue]:
+def _validate_claims(core: dict[str, Any], *, phase: str | None) -> list[Issue]:
     result: list[Issue] = []
     claims = _index(core, "claims")
     trials_by_claim: dict[str, list[dict[str, Any]]] = {}
@@ -220,6 +322,7 @@ def _validate_claims(core: dict[str, Any]) -> list[Issue]:
         claim_id = trial.get("claimId")
         if isinstance(claim_id, str):
             trials_by_claim.setdefault(claim_id, []).append(trial)
+    admissible_trial_ids = _admissible_evidence_trials(core, phase=phase)
 
     for position, claim in enumerate(_records(core, "claims")):
         base = f"core.claims[{position}]"
@@ -296,7 +399,8 @@ def _validate_claims(core: dict[str, Any]) -> list[Issue]:
                 continue
             target_a = ceiling == "A"
             if support_evidence.get("lifecycle") != "ACTIVE" or not _supporting_trial(
-                supporting.get("id"), trials_by_claim, target_a=target_a
+                supporting.get("id"), trials_by_claim, target_a=target_a,
+                admissible_trial_ids=admissible_trial_ids,
             ):
                 result.append(_issue(path, "KIN-E-VERDICT", "supporting claim lacks one closed admissible active trial"))
             if target_a and (
@@ -344,6 +448,7 @@ def _validate_trial_states(core: dict[str, Any]) -> list[Issue]:
 def _qualifying_upgrade(
     seam: dict[str, Any], claims: dict[str, dict[str, Any]],
     trials_by_claim: dict[str, list[dict[str, Any]]],
+    admissible_trial_ids: dict[str, set[str]],
 ) -> bool:
     after = seam.get("evidenceAfter", {}).get("strength")
     criterion = seam.get("priorUpgradeCriterion")
@@ -387,7 +492,8 @@ def _qualifying_upgrade(
             return False
         evidence = supporting.get("evidence", {})
         if evidence.get("lifecycle") != "ACTIVE" or not _supporting_trial(
-            supporting.get("id"), trials_by_claim, target_a=after == "A"
+            supporting.get("id"), trials_by_claim, target_a=after == "A",
+            admissible_trial_ids=admissible_trial_ids,
         ):
             return False
         if after == "A":
@@ -398,13 +504,14 @@ def _qualifying_upgrade(
     return after != "A" or has_independent_a
 
 
-def _validate_seams(core: dict[str, Any]) -> list[Issue]:
+def _validate_seams(core: dict[str, Any], *, phase: str | None) -> list[Issue]:
     result: list[Issue] = []
     claims = _index(core, "claims")
     trials_by_claim: dict[str, list[dict[str, Any]]] = {}
     for trial in _records(core, "trials"):
         if isinstance(trial.get("claimId"), str):
             trials_by_claim.setdefault(trial["claimId"], []).append(trial)
+    admissibility_by_receipt: dict[str | None, dict[str, set[str]]] = {}
     for position, seam in enumerate(_records(core, "seams")):
         base = f"core.seams[{position}]"
         claim = claims.get(seam.get("claimId"))
@@ -446,11 +553,32 @@ def _validate_seams(core: dict[str, Any]) -> list[Issue]:
         after = seam.get("evidenceAfter", {}).get("strength") if isinstance(seam.get("evidenceAfter"), dict) else before
         repair_kind = seam.get("repairKind")
         changed = before != after
+        evidence_before = seam.get("evidenceBefore", {})
+        evidence_after = seam.get("evidenceAfter")
+        before_lifecycle = evidence_before.get("lifecycle") if isinstance(evidence_before, dict) else None
+        after_lifecycle = evidence_after.get("lifecycle") if isinstance(evidence_after, dict) else None
+        receipt_id = seam.get("receiptId") if isinstance(seam.get("receiptId"), str) else None
+        if receipt_id not in admissibility_by_receipt:
+            admissibility_by_receipt[receipt_id] = _admissible_evidence_trials(
+                core, phase=phase if receipt_id is None else None,
+                receipt_id=receipt_id,
+            )
+        admissible_trial_ids = admissibility_by_receipt[receipt_id]
         if repair_kind == "RETIER":
+            if (
+                before_lifecycle not in {"DRAFT", "ACTIVE"}
+                or after_lifecycle != before_lifecycle
+            ):
+                result.append(_issue(
+                    base, "KIN-E-VERDICT",
+                    "RETIER must preserve one non-retired evidence lifecycle",
+                ))
             if not changed or before not in EVIDENCE_ORDER or after not in EVIDENCE_ORDER:
                 result.append(_issue(base, "KIN-E-VERDICT", "RETIER requires unequal evidence strengths"))
             elif EVIDENCE_ORDER[after] > EVIDENCE_ORDER[before]:
-                if not _qualifying_upgrade(seam, claims, trials_by_claim):
+                if not _qualifying_upgrade(
+                    seam, claims, trials_by_claim, admissible_trial_ids
+                ):
                     result.append(_issue(base, "KIN-E-VERDICT", "upward RETIER lacks its prospective criterion and qualifying evidence links"))
             else:
                 kill = seam.get("priorKillCriterion")
@@ -464,6 +592,14 @@ def _validate_seams(core: dict[str, Any]) -> list[Issue]:
                     result.append(_issue(base, "KIN-E-VERDICT", "downward RETIER cannot carry upgrade-evidence links"))
         elif changed and status != "RETRACTED":
             result.append(_issue(base, "KIN-E-VERDICT", "only RETIER may change evidence strength"))
+
+        if after_lifecycle == "RETIRED" and not (
+            status == "RETRACTED" and repair_kind == "RETRACT"
+        ):
+            result.append(_issue(
+                base, "KIN-E-VERDICT",
+                "only a typed RETRACTED/RETRACT seam may retire evidence",
+            ))
 
         if status == "RETRACTED":
             prior_kill = seam.get("priorKillCriterion")
@@ -533,9 +669,9 @@ def validate_core_records(
     result = list(validate_record_graph(core, phase=phase, bootstrap=bootstrap))
     if core.get("program", {}).get("noK2Gate") is not True:
         result.append(_issue("core.program.noK2Gate", "KIN-E-JUSTICE", "Kintsugi has no K2 gate"))
-    result.extend(_validate_claims(core))
+    result.extend(_validate_claims(core, phase=phase))
     result.extend(_validate_trial_states(core))
-    result.extend(_validate_seams(core))
+    result.extend(_validate_seams(core, phase=phase))
     result.extend(_validate_gates(core))
     result.extend(_validate_antibody_contract(core))
     return ordered_issues(result)
@@ -558,6 +694,10 @@ def validate_public_queue(
         record.get("path") for record in manifest.get("includedFiles", [])
         if isinstance(record, dict)
     } if manifest is not None else set()
+    manifest_claim_ids = (
+        set(manifest.get("harvestedClaimIds", [])) - _excluded_claim_ids(manifest)
+        if manifest is not None else set()
+    )
     expected_receipt = RECEIPT_IDENTITIES["C"]
     if manifest is None or manifest.get("phase") != "C":
         result.append(_issue("publicQueue.manifestId", "KIN-E-QUEUE", "queue manifest must resolve to Phase C"))
@@ -590,6 +730,18 @@ def validate_public_queue(
                 result.append(_issue(f"{base}.ownerSourceId", "KIN-E-QUEUE", "owned item source is not a semantic owner"))
             if claim is None or claim.get("ownerSourceId") != item.get("ownerSourceId"):
                 result.append(_issue(f"{base}.claimId", "KIN-E-QUEUE", "owned item claim/owner membership does not agree"))
+            if (
+                manifest is not None
+                and (
+                    item.get("claimId") not in manifest_claim_ids
+                    or receipt is None
+                    or item.get("claimId") not in receipt.get("claimIds", [])
+                )
+            ):
+                result.append(_issue(
+                    f"{base}.claimId", "KIN-E-QUEUE",
+                    "owned claim is not admissible in the selected Phase-C manifest and receipt",
+                ))
             if manifest is not None and source is not None:
                 if manifest.get("phase") not in source.get("phases", []) or source.get("path") not in manifest_paths:
                     result.append(_issue(f"{base}.ownerSourceId", "KIN-E-QUEUE", "owned source is not eligible under the selected manifest"))
@@ -784,6 +936,98 @@ def _scalar_text(value: Any, *, nonempty: bool = True) -> bool:
     return True
 
 
+_MAX_INNER_JSON_CODEPOINTS = 262_144
+_MAX_INNER_JSON_DEPTH = 64
+_MAX_INNER_JSON_NODES = 16_384
+
+
+def _preflight_inner_json(raw: Any) -> None:
+    if not _scalar_text(raw):
+        raise ValueError("semantic fixture payload must be non-empty Unicode scalar JSON text")
+    if len(raw) > _MAX_INNER_JSON_CODEPOINTS:
+        raise ValueError("semantic fixture payload exceeds the deterministic text bound")
+    stack: list[str] = []
+    in_string = False
+    escaped = False
+    containers = 0
+    pairs = {"}": "{", "]": "["}
+    for character in raw:
+        if in_string:
+            if escaped:
+                escaped = False
+            elif character == "\\":
+                escaped = True
+            elif character == '"':
+                in_string = False
+            continue
+        if character == '"':
+            in_string = True
+        elif character in "[{":
+            stack.append(character)
+            containers += 1
+            if len(stack) > _MAX_INNER_JSON_DEPTH:
+                raise ValueError("semantic fixture payload exceeds the deterministic depth bound")
+            if containers > _MAX_INNER_JSON_NODES:
+                raise ValueError("semantic fixture payload exceeds the deterministic node bound")
+        elif character in "]}":
+            if not stack or stack.pop() != pairs[character]:
+                raise ValueError("semantic fixture payload has mismatched containers")
+    if in_string or stack:
+        raise ValueError("semantic fixture payload has an unterminated string or container")
+
+
+def _bounded_inner_json_tree(value: Any) -> None:
+    pending: list[tuple[Any, int]] = [(value, 0)]
+    nodes = 0
+    while pending:
+        child, depth = pending.pop()
+        nodes += 1
+        if nodes > _MAX_INNER_JSON_NODES:
+            raise ValueError("semantic fixture payload exceeds the deterministic node bound")
+        if depth > _MAX_INNER_JSON_DEPTH:
+            raise ValueError("semantic fixture payload exceeds the deterministic depth bound")
+        if isinstance(child, dict):
+            for key, nested in child.items():
+                if not _scalar_text(key):
+                    raise ValueError("semantic fixture object keys must be Unicode scalar text")
+                pending.append((nested, depth + 1))
+        elif isinstance(child, list):
+            pending.extend((nested, depth + 1) for nested in child)
+        elif isinstance(child, str):
+            if not _scalar_text(child, nonempty=False):
+                raise ValueError("semantic fixture text must contain only Unicode scalars")
+        elif child is None or type(child) in {bool, int}:
+            continue
+        elif type(child) is float:
+            if not math.isfinite(child):
+                raise ValueError("semantic fixture numbers must be finite")
+        else:
+            raise ValueError("semantic fixture payload contains a non-JSON value")
+
+
+def _decode_semantic_payload(raw: Any) -> Any:
+    _preflight_inner_json(raw)
+
+    def reject_constant(value: str) -> None:
+        raise ValueError(f"non-standard JSON constant: {value}")
+
+    def closed_object(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
+        value: dict[str, Any] = {}
+        for key, child in pairs:
+            if key in value:
+                raise ValueError(f"duplicate JSON key: {key}")
+            value[key] = child
+        return value
+
+    decoded = json.loads(
+        raw,
+        object_pairs_hook=closed_object,
+        parse_constant=reject_constant,
+    )
+    _bounded_inner_json_tree(decoded)
+    return decoded
+
+
 def _closed_enum(*values: str) -> Callable[[Any], bool]:
     allowed = frozenset(values)
     return lambda value: type(value) is str and value in allowed
@@ -972,25 +1216,29 @@ SEMANTIC_DISPATCH: dict[
 def evaluate_semantic_fixture(
     evaluator: str, payload: dict[str, object], core: dict[str, object]
 ) -> list[Issue]:
-    entry = SEMANTIC_DISPATCH.get(evaluator)
-    if entry is None:
-        return [_issue("semanticFixture.evaluator", "KIN-E-FIXTURE", "unknown semantic evaluator")]
-    keys, predicate = entry
-    fields = SEMANTIC_PAYLOAD_FIELDS[evaluator]
-    if (
-        not isinstance(payload, dict)
-        or set(payload) != keys
-        or set(fields) != keys
-        or any(not validator(payload[field]) for field, validator in fields.items())
-    ):
+    try:
+        entry = SEMANTIC_DISPATCH.get(evaluator)
+        if entry is None:
+            return [_issue("semanticFixture.evaluator", "KIN-E-FIXTURE", "unknown semantic evaluator")]
+        _bounded_inner_json_tree(payload)
+        keys, predicate = entry
+        fields = SEMANTIC_PAYLOAD_FIELDS[evaluator]
+        if (
+            not isinstance(payload, dict)
+            or set(payload) != keys
+            or set(fields) != keys
+            or any(not validator(payload[field]) for field, validator in fields.items())
+        ):
+            return [_issue(
+                "semanticFixture.payload", "KIN-E-FIXTURE",
+                "semantic payload does not match the exact named evaluator definition",
+            )]
+        passed = predicate(payload, core if isinstance(core, dict) else {})
+    except Exception:
         return [_issue(
             "semanticFixture.payload", "KIN-E-FIXTURE",
-            "semantic payload does not match the exact named evaluator definition",
+            "semantic payload validation failed safely",
         )]
-    try:
-        passed = predicate(payload, core if isinstance(core, dict) else {})
-    except (KeyError, TypeError, ValueError, OverflowError):
-        passed = False
     return [] if passed else [_issue(
         "semanticFixture.payload", "KIN-E-FIXTURE",
         f"{evaluator} structural predicate failed",
@@ -1351,23 +1599,8 @@ def evaluate_antibody_fixture(
                 execution_issues.append(_issue("fixture.payloadKind", "KIN-E-FIXTURE", "semantic antibody requires a JSON fixture"))
                 continue
             try:
-                def reject_constant(value: str) -> None:
-                    raise ValueError(f"non-standard JSON constant: {value}")
-
-                def closed_object(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
-                    value: dict[str, Any] = {}
-                    for key, child in pairs:
-                        if key in value:
-                            raise ValueError(f"duplicate JSON key: {key}")
-                        value[key] = child
-                    return value
-
-                payload = json.loads(
-                    fixture.get("payload"),
-                    object_pairs_hook=closed_object,
-                    parse_constant=reject_constant,
-                )
-            except (TypeError, ValueError):
+                payload = _decode_semantic_payload(fixture.get("payload"))
+            except Exception:
                 execution_issues.append(_issue("fixture.payload", "KIN-E-FIXTURE", "semantic fixture payload is invalid JSON"))
                 continue
             triggered = bool(evaluate_semantic_fixture(

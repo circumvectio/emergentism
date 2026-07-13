@@ -464,6 +464,180 @@ class ModalityAndEvidenceTests(unittest.TestCase):
         seam["supportLinks"][1] = copy.deepcopy(second)
         self.assertIn("KIN-E-VERDICT", codes(validate(core)))
 
+    def _select_phase_b_with_phase_a_dependency(self, core, seam, *, verified):
+        dependency_receipt = core["phaseReceipts"][0]
+        if verified:
+            dependency_receipt.update({
+                "status": "VERIFIED",
+                "reviewTargetDigest": support.RAW_HASH,
+                "validationBundlePath": "09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_review_attempts/RVA-A-900/validation_bundle.json",
+                "validationDigest": support.RAW_HASH,
+                "logicReviewPath": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/KINTSUGI_REVIEW_ATTEMPTS/RVA-A-900_LOGIC.md",
+                "btjReviewPath": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/KINTSUGI_REVIEW_ATTEMPTS/RVA-A-900_BTJ.md",
+                "reviewAttemptId": "RVA-A-900",
+            })
+
+        target = core["claims"][0]
+        source = next(item for item in core["sources"] if item["id"] == target["ownerSourceId"])
+        source["phases"] = sorted(set(source["phases"] + ["B"]))
+        target_trial = copy.deepcopy(next(
+            item for item in core["trials"] if item["claimId"] == target["id"]
+        ))
+        target_trial.update({
+            "id": "TRL-B-900",
+            "manifestId": "MAN-B-001",
+            "receiptId": "REC-B-109",
+        })
+        core["trials"].append(target_trial)
+
+        manifest = copy.deepcopy(core["manifests"][0])
+        manifest.update({
+            "id": "MAN-B-001",
+            "phase": "B",
+            "requiredClaimBindings": [],
+            "harvestedClaimIds": [target["id"]],
+            "excludedClaimIds": [],
+            "eligibleClaimCount": 1,
+            "trialedClaimIds": [target["id"]],
+            "trialedClaimCount": 1,
+        })
+        core["manifests"].append(manifest)
+
+        receipt = copy.deepcopy(dependency_receipt)
+        receipt.update({
+            "id": "REC-B-109",
+            "phase": "B",
+            "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/109_ACTIVE_CORPUS_KINTSUGI_RECEIPT_2026_07_11.md",
+            "status": "DRAFT",
+            "manifestId": "MAN-B-001",
+            "dependsOnReceiptIds": ["REC-A-108"],
+            "claimIds": [target["id"]],
+            "trialIds": [target_trial["id"]],
+            "seamIds": [seam["id"]],
+            "propagationIds": [],
+            "reviewTargetDigest": None,
+            "validationBundlePath": None,
+            "validationDigest": None,
+            "logicReviewPath": None,
+            "btjReviewPath": None,
+            "reviewAttemptId": None,
+        })
+        core["phaseReceipts"].append(receipt)
+        seam["receiptId"] = receipt["id"]
+
+    def test_upgrade_evidence_is_admissible_only_through_selected_or_verified_inventory(self):
+        current = support.build_semantic_core()
+        support.add_retiered_seam(current, "C", "S")
+        self.assertSchemaValid(current)
+        self.assertNotIn("KIN-E-VERDICT", codes(validate(current, phase="A")))
+
+        excluded = support.build_semantic_core()
+        support.add_retiered_seam(excluded, "C", "S")
+        supporting_id = excluded["claims"][1]["id"]
+        supporting_trial = next(
+            item for item in excluded["trials"] if item["claimId"] == supporting_id
+        )
+        manifest = excluded["manifests"][0]
+        manifest["harvestedClaimIds"].remove(supporting_id)
+        manifest["trialedClaimIds"].remove(supporting_id)
+        manifest["excludedClaimIds"].append({
+            "claimId": supporting_id,
+            "reason": "The supporting claim is explicitly excluded from this manifest.",
+        })
+        manifest["eligibleClaimCount"] -= 1
+        manifest["trialedClaimCount"] -= 1
+        excluded["phaseReceipts"][0]["claimIds"].remove(supporting_id)
+        excluded["phaseReceipts"][0]["trialIds"].remove(supporting_trial["id"])
+        self.assertSchemaValid(excluded)
+        self.assertIn("KIN-E-VERDICT", codes(validate(excluded, phase="A")))
+
+        unselected = support.build_semantic_core()
+        support.add_retiered_seam(unselected, "C", "S")
+        supporting_id = unselected["claims"][1]["id"]
+        supporting_trial = next(
+            item for item in unselected["trials"] if item["claimId"] == supporting_id
+        )
+        selected_manifest = unselected["manifests"][0]
+        selected_manifest["harvestedClaimIds"].remove(supporting_id)
+        selected_manifest["trialedClaimIds"].remove(supporting_id)
+        selected_manifest["eligibleClaimCount"] -= 1
+        selected_manifest["trialedClaimCount"] -= 1
+        unselected["phaseReceipts"][0]["claimIds"].remove(supporting_id)
+        unselected["phaseReceipts"][0]["trialIds"].remove(supporting_trial["id"])
+        other_manifest = copy.deepcopy(selected_manifest)
+        other_manifest.update({
+            "id": "MAN-B-999", "phase": "B", "requiredClaimBindings": [],
+            "harvestedClaimIds": [supporting_id], "excludedClaimIds": [],
+            "eligibleClaimCount": 1, "trialedClaimIds": [supporting_id],
+            "trialedClaimCount": 1,
+        })
+        unselected["manifests"].append(other_manifest)
+        other_receipt = copy.deepcopy(unselected["phaseReceipts"][0])
+        other_receipt.update({
+            "id": "REC-B-109", "phase": "B",
+            "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/109_ACTIVE_CORPUS_KINTSUGI_RECEIPT_2026_07_11.md",
+            "manifestId": "MAN-B-999", "dependsOnReceiptIds": ["REC-A-108"],
+            "claimIds": [supporting_id], "trialIds": [supporting_trial["id"]],
+            "seamIds": [],
+        })
+        unselected["phaseReceipts"].append(other_receipt)
+        supporting_trial.update({"manifestId": "MAN-B-999", "receiptId": "REC-B-109"})
+        self.assertSchemaValid(unselected)
+        self.assertIn("KIN-E-VERDICT", codes(validate(unselected, phase="A")))
+
+        for verified in (True, False):
+            dependency = support.build_semantic_core()
+            seam = support.add_retiered_seam(dependency, "C", "S")
+            self._select_phase_b_with_phase_a_dependency(
+                dependency, seam, verified=verified
+            )
+            self.assertSchemaValid(dependency)
+            with self.subTest(route="verified dependency" if verified else "unverified dependency"):
+                verdict_codes = codes(validate(dependency, phase="B"))
+                if verified:
+                    self.assertNotIn("KIN-E-VERDICT", verdict_codes)
+                else:
+                    self.assertIn("KIN-E-VERDICT", verdict_codes)
+
+    def test_retier_preserves_a_live_lifecycle_and_cannot_launder_retirement(self):
+        rows = []
+        for before, after in (("C", "S"), ("A", "S")):
+            core = support.build_semantic_core()
+            seam = support.add_retiered_seam(core, before, after)
+            seam["evidenceAfter"]["lifecycle"] = "RETIRED"
+            core["claims"][0]["evidence"]["lifecycle"] = "RETIRED"
+            retired_kill = {"kind": "NONE", "rationale": "Retirement is not a RETIER effect."}
+            seam["killCriterion"] = copy.deepcopy(retired_kill)
+            core["claims"][0]["killCriterion"] = copy.deepcopy(retired_kill)
+            rows.append((f"{before}->{after} retired", core))
+
+        lifecycle_change = support.build_semantic_core()
+        seam = support.add_retiered_seam(lifecycle_change, "C", "S")
+        seam["evidenceBefore"]["lifecycle"] = "DRAFT"
+        rows.append(("DRAFT->ACTIVE RETIER", lifecycle_change))
+
+        non_retract = support.build_semantic_core()
+        seam = support.add_confirmed_seam(non_retract)
+        claim = non_retract["claims"][0]
+        claim["evidence"]["lifecycle"] = "RETIRED"
+        claim["killCriterion"] = {"kind": "NONE", "rationale": "Only RETRACT may retire."}
+        seam.update({
+            "status": "REPAIRED",
+            "repairKind": "NARROW",
+            "afterQuote": "A narrowed formulation that improperly retires the claim.",
+            "evidenceAfter": copy.deepcopy(claim["evidence"]),
+            "supportLinks": copy.deepcopy(claim["supportLinks"]),
+            "upgradeCriterion": copy.deepcopy(claim["upgradeCriterion"]),
+            "killCriterion": copy.deepcopy(claim["killCriterion"]),
+            "survivingIfKilled": copy.deepcopy(claim["survivingIfKilled"]),
+        })
+        rows.append(("non-RETRACT retirement", non_retract))
+
+        for label, core in rows:
+            with self.subTest(label=label):
+                self.assertSchemaValid(core)
+                self.assertIn("KIN-E-VERDICT", codes(validate(core)))
+
 
 class JusticeGateAndQueueTests(unittest.TestCase):
     def configure_authority(self, claim, *, effect, scope, regime, mechanism, lifecycle="ACTIVE"):
@@ -642,6 +816,18 @@ class JusticeGateAndQueueTests(unittest.TestCase):
                     kernel.validate_schema_instance(SCHEMA, "publicQueue", candidate_queue), ()
                 )
                 self.assertIn("KIN-E-QUEUE", codes(validate_queue(candidate_queue, candidate_core)))
+
+    def test_owned_public_claim_must_be_harvested_by_the_selected_phase_c_manifest(self):
+        core, queue = make_queue_core()
+        claim_id = queue["items"][0]["claimId"]
+        manifest = core["manifests"][0]
+        manifest["harvestedClaimIds"].remove(claim_id)
+        manifest["trialedClaimIds"].remove(claim_id)
+        manifest["eligibleClaimCount"] -= 1
+        manifest["trialedClaimCount"] -= 1
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "publicQueue", queue), ())
+        self.assertIn("KIN-E-QUEUE", codes(validate_queue(queue, core)))
 
     def test_ownerless_candidates_are_bounded_to_searched_semantic_owners(self):
         core, queue = make_queue_core()
@@ -1059,6 +1245,121 @@ class SemanticEvaluatorTests(unittest.TestCase):
         self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
         self.assertIn("KIN-E-FIXTURE", codes(evaluate_fixture(core, fixture_id)))
         self.assertIn("KIN-E-FIXTURE", codes(validate(core)))
+
+    def test_justice_nested_enums_are_exception_total_for_lists_and_objects(self):
+        core = support.build_semantic_core()
+        payload = {
+            "claimType": "STRUCTURAL",
+            "modality": "ACTUAL",
+            "justiceScope": "COLLECTIVE",
+            "authorityScope": "NONE",
+            "authorityEffect": "NONE",
+            "evidenceLifecycle": "ACTIVE",
+            "justiceContext": support.build_justice_context(),
+        }
+        enum_paths = (
+            ("consent", "status"),
+            ("reversibility",),
+            ("optionConeEffect", "direction"),
+            ("authority", "regime"),
+            ("authority", "mechanism"),
+        )
+        for path in enum_paths:
+            for wrong_type in ([], {}):
+                mutated = copy.deepcopy(payload)
+                cursor = mutated["justiceContext"]
+                for component in path[:-1]:
+                    cursor = cursor[component]
+                cursor[path[-1]] = wrong_type
+                with self.subTest(path=path, wrong_type=type(wrong_type).__name__):
+                    self.assertTrue(semantic_issue(evaluate("JUSTICE_CONTEXT", mutated, core)))
+
+                fixture_core = support.build_semantic_core()
+                antibody = support.add_semantic_antibody_fixture_set(
+                    fixture_core, "JUSTICE_CONTEXT", payload, mutated
+                )
+                fixture_id = antibody["negativeFixtureIds"][0]
+                fixture = next(
+                    item for item in fixture_core["fixtures"] if item["id"] == fixture_id
+                )
+                fixture["payload"] = json.dumps(
+                    mutated, sort_keys=True, separators=(",", ":")
+                )
+                with self.subTest(
+                    path=path, wrong_type=type(wrong_type).__name__, boundary="decoded fixture"
+                ):
+                    self.assertEqual(
+                        kernel.validate_schema_instance(SCHEMA, "coreData", fixture_core), ()
+                    )
+                    self.assertIn(
+                        "KIN-E-FIXTURE", codes(evaluate_fixture(fixture_core, fixture_id))
+                    )
+
+    def test_every_nested_justice_text_leaf_rejects_lone_surrogates(self):
+        core = support.build_semantic_core()
+        base = {
+            "claimType": "STRUCTURAL",
+            "modality": "ACTUAL",
+            "justiceScope": "COLLECTIVE",
+            "authorityScope": "NONE",
+            "authorityEffect": "NONE",
+            "evidenceLifecycle": "ACTIVE",
+            "justiceContext": support.build_justice_context(),
+        }
+        text_paths = (
+            ("individual",),
+            ("whole",),
+            ("eta",),
+            ("beneficiary", 0),
+            ("costBearer", 0),
+            ("consent", "basis"),
+            ("custody",),
+            ("exit",),
+            ("optionConeEffect", "rationale"),
+            ("authority", "basis"),
+        )
+        for path in text_paths:
+            mutated = copy.deepcopy(base)
+            cursor = mutated["justiceContext"]
+            for component in path[:-1]:
+                cursor = cursor[component]
+            cursor[path[-1]] = "\ud800"
+            with self.subTest(path=path, boundary="direct mirror"):
+                self.assertTrue(semantic_issue(evaluate("JUSTICE_CONTEXT", mutated, core)))
+
+            fixture_core = support.build_semantic_core()
+            good = copy.deepcopy(base)
+            bad = copy.deepcopy(mutated)
+            antibody = support.add_semantic_antibody_fixture_set(
+                fixture_core, "JUSTICE_CONTEXT", good, bad
+            )
+            fixture_id = antibody["negativeFixtureIds"][0]
+            fixture = next(item for item in fixture_core["fixtures"] if item["id"] == fixture_id)
+            fixture["payload"] = json.dumps(
+                bad, sort_keys=True, separators=(",", ":"), ensure_ascii=True
+            )
+            with self.subTest(path=path, boundary="decoded fixture"):
+                self.assertEqual(
+                    kernel.validate_schema_instance(SCHEMA, "coreData", fixture_core), ()
+                )
+                self.assertIn("KIN-E-FIXTURE", codes(evaluate_fixture(fixture_core, fixture_id)))
+
+    def test_deep_inner_arrays_and_objects_fail_as_typed_fixture_issues(self):
+        for label, raw_payload in (
+            ("array", "[" * 2000 + "0" + "]" * 2000),
+            ("object", '{"x":' * 2000 + "0" + "}" * 2000),
+        ):
+            core = support.build_semantic_core()
+            good, bad = self.payload_rows(core)["OPTION_CONE"]
+            antibody = support.add_semantic_antibody_fixture_set(
+                core, "OPTION_CONE", good, bad
+            )
+            fixture_id = antibody["negativeFixtureIds"][0]
+            fixture = next(item for item in core["fixtures"] if item["id"] == fixture_id)
+            fixture["payload"] = raw_payload
+            with self.subTest(label=label):
+                self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+                self.assertIn("KIN-E-FIXTURE", codes(evaluate_fixture(core, fixture_id)))
 
 
 if __name__ == "__main__":
