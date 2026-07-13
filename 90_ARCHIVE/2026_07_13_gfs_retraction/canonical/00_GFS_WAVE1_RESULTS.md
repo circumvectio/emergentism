@@ -11,6 +11,12 @@ rosetta:
   regime: "Vaiśya"
   register: "[B] data/result receipt / [I] interpretation"
   canonical_phrase: "GFS Wave 1 Results"
+status: "[金] SEAM · broke: 2026-07-13 · receipt 119 (GFS correction, K2 2026-07-13) · STAGED, K2 RETRACTED, archived per K3 · not citable · the GFS study tested the wrong register (the interior) not the zero-factor claim (the boundary) — see 01_TELEOLOGY/02_THE_DERIVATION/07_THE_TYSON_KO_PENDING_K2.md (Tyson/KO boundary) and 11_UPLINK/50_AUDITS_AND_EXECUTIONS/119_LAGRANGIAN_QUESTION_CLOSED...md §GFS correction"
+retracted: "2026-07-13"
+retracted_by: "K2 (Yves R. Burri)"
+reason: "GFS measured additive-vs-multiplicative on flourishing survey aggregates; the framework's load-bearing claim is the Zero-Factor Catastrophe at the boundary (P = Φ × V → 0 when V → 0), which a population survey cannot measure. The GFS data was real but irrelevant to the actual multiplicative claim. Tyson/KO image: the plan is Φ, the punch drives V → 0, P = Φ × 0 = 0. KO. A survey of flourishing across countries cannot measure the knockout."
+kept_visible: true
+do_not_delete: true
 ---
 
 **Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
