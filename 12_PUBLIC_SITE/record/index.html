@@ -213,7 +213,7 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
       <svg viewBox="0 0 680 150" role="img" aria-label="A seismogram of sixteen tests over 2026, height encoding consequence. The tallest bar is today's GFS refutation on the far right; the second tallest is the R6 refutation mid-series.">
         <line x1="40" y1="118.5" x2="640" y2="118.5" stroke="rgba(245,245,243,.12)" stroke-width="1"/>
         <g class="bars">
-          <rect class="bar" x="51"  y="67"   width="15" height="51"   rx="1.5" fill="#5aa9e6"><title>GFS Wave 1 — mixed (2026-04)</title></rect>
+          <rect class="bar" x="51"  y="84"   width="15" height="34"   rx="1.5" fill="#71757b"><title>GFS Wave 1 — scoped: interior only (2026-04)</title></rect>
           <rect class="bar" x="88"  y="75.5" width="15" height="42.5" rx="1.5" fill="#5bbf88"><title>CEF cart-pole — held</title></rect>
           <rect class="bar" x="126" y="75.5" width="15" height="42.5" rx="1.5" fill="#5bbf88"><title>R3 triage — held</title></rect>
           <rect class="bar" x="163" y="41.5" width="15" height="76.5" rx="1.5" fill="#e0453b"><title>R6 — refuted, against interest (2026-06-10)</title></rect>
@@ -228,17 +228,16 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
           <rect class="bar" x="501" y="92.5" width="15" height="25.5" rx="1.5" fill="#e8b23a"><title>S9 “all paths helical” — fenced</title></rect>
           <rect class="bar" x="538" y="84"   width="15" height="34"   rx="1.5" fill="#e8b23a"><title>O3-from-O5 “proved” — fenced</title></rect>
           <rect class="bar" x="576" y="58.5" width="15" height="59.5" rx="1.5" fill="#e8b23a"><title>A7 “strongest axiom” — fenced to wager</title></rect>
-          <rect class="bar" x="613" y="33"   width="15" height="85"   rx="1.5" fill="#e0453b"><title>GFS AND-class — refuted in range (2026-07-12, today)</title></rect>
+          <rect class="bar" x="613" y="84"   width="15" height="34"   rx="1.5" fill="#71757b"><title>GFS AND-class — scoped: tests the interior, not the zero-factor claim (2026-07-12, today)</title></rect>
         </g>
-        <line class="today-tick" x1="620.5" y1="24" x2="620.5" y2="30" stroke="#e0453b" stroke-width="1.5"/>
         <text x="40" y="136" font-size="10.5" fill="#63676c">2026 · 04</text>
-        <text x="628" y="136" font-size="10.5" fill="#e0453b" text-anchor="end">today</text>
+        <text x="628" y="136" font-size="10.5" fill="#63676c" text-anchor="end">today</text>
       </svg>
     </div>
 
     <div class="readout reveal in" role="group" aria-label="Record summary">
       <span class="r"><span class="n" data-count="16">16</span><span class="lab">tested</span></span><span class="pipe">|</span>
-      <span class="r bad"><span class="n" data-count="4">4</span><span class="lab">against us, kept</span></span><span class="pipe">|</span>
+      <span class="r bad"><span class="n" data-count="3">3</span><span class="lab">against us, kept</span></span><span class="pipe">|</span>
       <span class="r gold"><span class="n" data-count="7">7</span><span class="lab">fenced to tier</span></span><span class="pipe">|</span>
       <span class="r zero"><span class="n" data-count="0">0</span><span class="lab">deleted</span></span>
     </div>
@@ -250,6 +249,7 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
     <button class="chip" style="--c:var(--v-mixed)" data-f="mixed" aria-pressed="false"><span class="dot"></span>Mixed</button>
     <button class="chip" style="--c:var(--v-held)" data-f="held" aria-pressed="false"><span class="dot"></span>Held</button>
     <button class="chip" style="--c:var(--v-cut)" data-f="cut" aria-pressed="false"><span class="dot"></span>Cut</button>
+    <button class="chip" style="--c:var(--v-cut)" data-f="retracted" aria-pressed="false"><span class="dot"></span>Retracted</button>
   </div>
 
   <div class="ledger" id="ledger">
@@ -263,48 +263,20 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
       </div>
     </article>
 
-    <!-- № 016 · GFS AND-class (today, hero) -->
-    <article class="case v-refuted" data-verdict="refuted" style="--v:var(--v-refuted)">
+    <!-- № 016 · GFS AND-class — RETRACTED 2026-07-13; experiment archived per K3 -->
+    <article class="case" data-verdict="retracted" style="--v:var(--v-cut)">
       <div class="rail reveal">
         <div class="no">№016</div><div class="vdot"></div>
         <div class="date">2026<br>07 · 12</div><div class="cid">GFS·ANDCLASS</div>
       </div>
       <div class="doc reveal">
-        <p class="claimline">The claim</p>
-        <p class="claim">Flourishing is <em>multiplicative</em> — coherence × viability, never their sum.</p>
-        <p class="test"><b>Test —</b> April pitched the product only against the <em>sum</em>. But the zero-factor law selects a whole AND-class — min (Liebig), CES, geometric mean, product — a ×-vs-+ test cannot tell apart. So we rebuilt the kill criterion to include the siblings and ran it on the real Wave-2 microdata: <b>128,868 respondents, 23 countries</b>, replication gate passed 23/23.</p>
-        <div class="exhibit">
-          <p class="xh"><span>pooled out-of-sample R² · 5-fold cv · rank-scaled</span><span><b>longer = predicts flourishing better</b></span></p>
-          <svg class="chart" viewBox="0 0 640 176" role="img" aria-label="Six competing models by out-of-sample R². Additive-plus-interaction is highest at 0.143; the strict conjunctive forms — pure product 0.115 and Liebig-min 0.119 — are the two lowest.">
-            <line x1="150" y1="8" x2="150" y2="158" stroke="rgba(245,245,243,.08)"/>
-            <g font-size="12">
-              <text x="142" y="24" text-anchor="end">int</text>
-              <rect x="150" y="14" width="419" height="15" rx="2" fill="#5aa9e6"></rect>
-              <text x="576" y="24" text-anchor="start" fill="#5aa9e6">0.143</text>
-              <text x="142" y="49" text-anchor="end">add</text>
-              <rect x="150" y="39" width="411" height="15" rx="2" fill="#8aa0ad"></rect>
-              <text x="568" y="49" text-anchor="start">0.140</text>
-              <text x="142" y="74" text-anchor="end">CES</text>
-              <rect x="150" y="64" width="410" height="15" rx="2" fill="#8aa0ad"></rect>
-              <text x="567" y="74" text-anchor="start">0.140</text>
-              <text x="142" y="99" text-anchor="end">geo</text>
-              <rect x="150" y="89" width="393" height="15" rx="2" fill="#8aa0ad"></rect>
-              <text x="550" y="99" text-anchor="start">0.134</text>
-              <text x="142" y="124" text-anchor="end" fill="#e0453b">min</text>
-              <rect x="150" y="114" width="348" height="15" rx="2" fill="#e0453b"></rect>
-              <text x="505" y="124" text-anchor="start" fill="#e0453b">0.119</text>
-              <text x="142" y="149" text-anchor="end" fill="#e0453b">×</text>
-              <rect x="150" y="139" width="338" height="15" rx="2" fill="#e0453b"></rect>
-              <text x="495" y="149" text-anchor="start" fill="#e0453b">0.115</text>
-              <text x="150" y="171" font-size="10.5" fill="#63676c">the strict conjunctive forms — min and pure × — are the two shortest bars</text>
-            </g>
-          </svg>
-          <p class="cap2"><b>The verdict:</b> the pure product wins in 0 of 23 countries; Liebig-min in 1 (the smallest). Best fit is additive with a faint positive interaction; the fitted CES curvature lands on ρ ≈ 1 — the additive ordering itself.</p>
-        </div>
-        <div class="verdict-row"><span class="stamp">Refuted</span><span class="qual">in range · reported win or lose</span></div>
-        <p class="tiermove">node-law “ד <span class="arrow">→</span> evidence <span class="t t-c">against</span> · manifold identity stays <span class="t t-a">[A]</span></p>
-        <p class="cost"><b>What it costs:</b> A1's multiplicative <span class="em">interior</span> now has evidence against it on the one population instrument the corpus has tested — not merely unproven. Honest fence: surveys can't reach the zero-factor region (the dead don't answer), so the annihilation <span class="em">boundary</span> stays the corpus's won content; only the interior is measured, and it reads additive.</p>
-        <p class="src">receipt · 03_METHODOLOGY/00_GFS_AND_CLASS_RESULTS.md · seed 108, pre-registered before results</p>
+        <p class="claimline">A test — retracted 2026-07-13</p>
+        <p class="claim">Does flourishing follow the product law in the <em>ordinary range</em> of survey data?</p>
+        <p class="test"><b>What ran —</b> the product against additive, min (Liebig), geometric mean and CES on flourishing-survey data (128,868 respondents, 23 countries). In the mid-range it read roughly additive. <b>Then we retracted it</b> — not because of the numbers, but because it tested the wrong register.</p>
+        <div class="verdict-row"><span class="stamp">Retracted</span><span class="qual">tested the wrong register</span></div>
+        <p class="tiermove">an <em>interior</em> reading the framework never load-bears on <span class="arrow">→</span> the zero-factor claim is <b>untouched</b></p>
+        <p class="cost"><b>Why it was retracted:</b> the real claim is the zero-factor catastrophe — the knockout, where <em>one</em> factor hits zero and the whole product collapses. <em>Everyone has a plan until they get punched in the face.</em> A survey can't reach that: nobody at zero fills out a questionnaire — the dead don't, the knocked-out don't. It can only measure how well Tyson's opponents were doing <em>before</em> the punch landed. The claim lives at the boundary; this measured the middle. <b>Kept here rather than hidden</b> — a record you can prune is not a record.</p>
+        <p class="src">experiment archived to 90_ARCHIVE/2026_07_13_gfs_retraction · retained per K3, not citable · I over-featured it this session; retracted 2026-07-13</p>
       </div>
     </article>
 
@@ -462,17 +434,17 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
       </div>
     </article>
 
-    <!-- № 004 · GFS W1 -->
-    <article class="case v-mixed" data-verdict="mixed" style="--v:var(--v-mixed)">
+    <!-- № 004 · GFS W1 — RETRACTED alongside №016, 2026-07-13 -->
+    <article class="case" data-verdict="retracted" style="--v:var(--v-cut)">
       <div class="rail reveal"><div class="no">№004</div><div class="vdot"></div><div class="date">2026<br>04 · 10</div><div class="cid">GFS·W1</div></div>
       <div class="doc reveal">
-        <p class="claimline">The claim</p>
-        <p class="claim">The multiplicative structure will show up across human populations.</p>
-        <p class="test"><b>Test —</b> signal in 7 of 23 countries — present, not dominant; the interaction sign split. The rescue hypothesis (the μ-limit) was itself tested and came back <em>inverted</em> — the interaction concentrates where the additive model is weakest, not strongest.</p>
-        <div class="verdict-row"><span class="stamp">Mixed</span><span class="qual">stratification rescue refuted</span></div>
-        <p class="tiermove">“confirmed in populations” <span class="arrow">→</span> <span class="t t-i">[I]</span> weakened · μ-limit rescue <span class="t t-b">[B]</span> falsified</p>
-        <p class="cost"><b>What it costs:</b> the confident empirical prediction. Reported as mixed the day it ran; №016 is the sequel that closed the ×-vs-+ loophole.</p>
-        <p class="src">receipt · 03_METHODOLOGY/00_GFS_WAVE1_RESULTS.md</p>
+        <p class="claimline">A test — retracted 2026-07-13</p>
+        <p class="claim">The earlier survey pass — the first look at flourishing data.</p>
+        <p class="test"><b>What ran —</b> a product-vs-additive signal in 7 of 23 countries, present but not dominant, sign split; a rescue hypothesis was tested and came back inverted. The follow-up (№016) added the min/CES siblings.</p>
+        <div class="verdict-row"><span class="stamp">Retracted</span><span class="qual">same wrong register as №016</span></div>
+        <p class="tiermove">retracted with №016 <span class="arrow">→</span> survey proxies reach the interior, never the zero-factor boundary</p>
+        <p class="cost"><b>Why it was retracted:</b> like №016, it can only see people in the ordinary range; the framework's real claim lives at the boundary — the knockout — a survey can't touch. Preserved for provenance, not cited.</p>
+        <p class="src">retained per K3 · retracted with №016, 2026-07-13</p>
       </div>
     </article>
 
