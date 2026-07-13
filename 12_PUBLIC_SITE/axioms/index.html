@@ -6,6 +6,13 @@
 <title>The Seven Axioms — Emergentism</title>
 <meta name="description" content="The seven axioms of Emergentism, honestly tiered: faithful statements, the corpus's own evidence tier, and the verdict after the peer-review program — including R6, the refutation the framework accepted against its own interest." />
 <meta name="color-scheme" content="dark" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="The Seven Axioms — Emergentism" />
+<meta property="og:description" content="Seven axioms, each wearing its tier and its verdict. The credential is the one refutation the framework accepted against its own interest." />
+<meta property="og:url" content="https://www.emergentism.org/axioms/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The Seven Axioms — Emergentism" />
+<meta name="twitter:description" content="Every claim wears its evidence tier. Coherence is not truth." />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%23FFEB3B' stroke-width='1' opacity='.5'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E" />
 <style>
 @font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -13,94 +20,162 @@
 @font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../assets/fonts/RobotoMono-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
 :root{
-  --void:#050505; --void-2:#0a0a0a; --panel:#101010; --panel-2:#161616;
-  --bone:#F3F4F6; --bone-dim:#9CA3AF; --bone-faint:#6b7280;
-  --gold:#FFEB3B; --gold-deep:#CBB800; --blue:#42A5F5; --crimson:#d23b3b;
-  --line:rgba(243,244,246,.12); --line-soft:rgba(243,244,246,.07);
+  --void:#050505; --void-2:#080807; --panel:#0d0d0c; --panel-2:#131312;
+  --bone:#F5F5F3; --bone-dim:#9a9d9f; --bone-faint:#63676c; --bone-ghost:#34373c;
+  --gold:#FFEB3B; --gold-deep:#CBB800; --crimson:#e0453b; --crimson-dim:#8f312c;
+  --line:rgba(245,245,243,.10); --line-soft:rgba(245,245,243,.05);
   --t-a:#7fb2e6; --t-e:#6fc79a; --t-s:#5fc6b0; --t-i:#e8d24a; --t-c:#b59ce0; --t-b:#FFEB3B;
+  --v-fenced:#e8b23a; --v-held:#5bbf88; --v-mixed:#5aa9e6; --v-refuted:#e0453b;
   --sans:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
   --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
-  --maxw:1000px;
+  --maxw:1120px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--void);color:var(--bone);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
-body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
-  background:radial-gradient(120% 80% at 80% 0%, rgba(255,235,59,.05), transparent 50%),
-            radial-gradient(100% 80% at 10% 100%, rgba(66,165,245,.06), transparent 55%), var(--void)}
-::selection{background:rgba(255,235,59,.3);color:#050505}
+body{margin:0;background:var(--void);color:var(--bone);font-family:var(--sans);font-weight:300;font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased;font-feature-settings:"tnum" 1;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:radial-gradient(110% 62% at 88% -8%, rgba(255,235,59,.045), transparent 44%),
+             radial-gradient(120% 80% at 4% 110%, rgba(66,165,245,.05), transparent 52%), var(--void)}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5;
+  background-image:repeating-linear-gradient(0deg, rgba(255,255,255,.012) 0 1px, transparent 1px 3px)}
+::selection{background:rgba(255,235,59,.26);color:#050505}
 a{color:inherit}
-:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1rem,4vw,2rem)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1rem,4vw,2.6rem)}
+.mono{font-family:var(--mono)}
 
-.topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:1rem;
-  padding:.8rem clamp(1rem,4vw,2rem);background:rgba(5,5,5,.8);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft)}
-.brand{font-weight:700;font-size:1.05rem;letter-spacing:.01em;text-decoration:none}
-.brand b{color:var(--gold)}
-.nav{display:flex;gap:.2rem;flex-wrap:wrap;font-family:var(--mono);font-size:.8rem}
-.nav a{display:inline-grid;place-items:center;min-width:1.8rem;height:1.8rem;padding:0 .4rem;color:var(--bone-dim);border-radius:3px;text-decoration:none;transition:.15s}
+.topbar{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:.72rem clamp(1rem,4vw,2.6rem);background:rgba(5,5,5,.72);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.brand{font-weight:800;font-size:1.02rem;letter-spacing:-.01em;text-decoration:none}
+.brand b{color:var(--gold);font-weight:800}
+.nav{display:flex;gap:.15rem;flex-wrap:wrap;font-family:var(--mono);font-size:.78rem}
+.nav a{display:inline-grid;place-items:center;min-width:1.7rem;height:1.7rem;padding:0 .45rem;color:var(--bone-dim);border-radius:3px;text-decoration:none;transition:.15s}
 .nav a:hover{color:var(--void);background:var(--gold)}
+.nav a.here{color:var(--gold);border:1px solid var(--line)}
 
-header.hero{padding:clamp(2.5rem,7vw,5rem) 0 1.5rem}
-.eyebrow{font-family:var(--mono);font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin:0 0 1.2rem}
-h1{font-size:clamp(2.2rem,6vw,3.8rem);font-weight:800;letter-spacing:-.02em;line-height:1.04;margin:0 0 1.1rem;text-wrap:balance}
-.lede{font-size:clamp(1.05rem,1.6vw,1.25rem);color:var(--bone-dim);max-width:62ch;margin:0 0 1.5rem}
-.lede b{color:var(--bone);font-weight:600}
+/* hero */
+header.hero{padding:clamp(3rem,8vw,6rem) 0 1rem}
+.fileno{font-family:var(--mono);font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1.6rem;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
+.fileno::before{content:"";width:30px;height:1px;background:var(--gold-deep);display:inline-block}
+h1{font-size:clamp(2.5rem,7vw,5.4rem);letter-spacing:-.03em;line-height:.99;margin:0 0 1.4rem;text-wrap:balance;font-weight:200}
+h1 .heavy{font-weight:900;letter-spacing:-.04em;color:var(--gold)}
+h1 .kill{font-weight:900;letter-spacing:-.04em;color:var(--crimson)}
+.dek{font-size:clamp(1.05rem,1.6vw,1.26rem);color:var(--bone-dim);max-width:64ch;margin:0 0 .7rem;font-weight:300}
+.dek b{color:var(--bone);font-weight:500}
+.legend{display:flex;flex-wrap:wrap;gap:.5rem 1rem;margin:1.7rem 0 0;font-family:var(--mono);font-size:.78rem;color:var(--bone-faint);align-items:center}
+.t{font-family:var(--mono);font-size:.72em;font-weight:700;padding:.06em .42em;border-radius:3px;border:1px solid currentColor;line-height:1.5;white-space:nowrap}
+.t-a{color:var(--t-a)}.t-e{color:var(--t-e)}.t-s{color:var(--t-s)}.t-i{color:var(--t-i)}.t-c{color:var(--t-c)}.t-b{color:var(--t-b)}
 
-.tier{font-family:var(--mono);font-size:.72em;font-weight:700;padding:.06em .42em;border-radius:3px;border:1px solid currentColor;white-space:nowrap;line-height:1.5}
-.t-a{color:var(--t-a)} .t-e{color:var(--t-e)} .t-s{color:var(--t-s)} .t-i{color:var(--t-i)} .t-c{color:var(--t-c)} .t-b{color:var(--t-b)}
-.legend{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.5rem 0 0;font-family:var(--mono);font-size:.78rem;color:var(--bone-faint)}
+.readout{display:flex;flex-wrap:wrap;align-items:center;gap:.1rem 1.4rem;margin:2rem 0 .2rem;font-family:var(--mono);font-size:.83rem;color:var(--bone-dim);
+  border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);padding:.85rem 0}
+.readout .r{display:inline-flex;align-items:baseline;gap:.5rem}
+.readout .n{font-size:1.4rem;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums;color:var(--bone)}
+.readout .r.bad .n{color:var(--crimson)}
+.readout .lab{color:var(--bone-faint)}
+.readout .pipe{color:var(--bone-ghost)}
 
-section{padding:clamp(2rem,5vw,3.5rem) 0;border-top:1px solid var(--line-soft)}
-.kicker{font-family:var(--mono);font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin:0 0 .9rem}
-h2{font-size:clamp(1.5rem,3vw,2.1rem);font-weight:700;letter-spacing:-.01em;margin:0 0 1rem}
-.intro{color:var(--bone-dim);max-width:64ch;margin:0 0 2rem}
+/* section scaffold */
+section{padding:clamp(2.2rem,5vw,3.6rem) 0;border-top:1px solid var(--line-soft)}
+.kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 .9rem}
+h2{font-size:clamp(1.5rem,3vw,2.15rem);font-weight:300;letter-spacing:-.015em;margin:0 0 1rem}
+h2 b{font-weight:800}
+.intro{color:var(--bone-dim);max-width:66ch;margin:0 0 2rem;font-weight:300}
 p{margin:0 0 1rem}
-code,.mono{font-family:var(--mono);font-size:.92em}
-.kernel{background:var(--panel);border:1px solid var(--line-soft);border-radius:12px;padding:1.6rem 1.8rem;margin:0 0 1.5rem}
-.kernel pre{font-family:var(--mono);font-size:clamp(.95rem,1.6vw,1.15rem);color:var(--gold);margin:0 0 1rem;line-height:1.9;overflow-x:auto}
-.kernel p{color:var(--bone-dim);margin:.4rem 0 0;font-size:.97rem}
-.kernel b{color:var(--bone)}
+code{font-family:var(--mono);font-size:.9em;color:var(--bone)}
 
-/* axiom cards */
-.ax{display:grid;grid-template-columns:auto 1fr;gap:0 1.3rem;padding:1.5rem 0;border-top:1px solid var(--line-soft)}
-.ax:first-of-type{border-top:0}
-.ax-id{font-family:var(--mono);font-weight:700;font-size:.9rem;color:var(--gold);padding-top:.2rem}
-.ax-id .nm{display:block;color:var(--bone-faint);font-size:.7rem;letter-spacing:.16em;margin-top:.3rem;text-transform:uppercase}
-.ax h3{font-size:1.15rem;font-weight:700;margin:0 0 .5rem}
-.ax .state{color:var(--bone);margin:0 0 .7rem}
-.ax .verdict{color:var(--bone-dim);font-size:.96rem;margin:.2rem 0 0;padding-left:.9rem;border-left:2px solid var(--line)}
-.ax .verdict b{color:var(--bone)}
-.ax .chips{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin:0 0 .6rem;font-family:var(--mono);font-size:.74rem;color:var(--bone-faint)}
-.fired{color:var(--crimson);font-weight:700}
+/* kernel exhibit */
+.kernel{border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,var(--panel),var(--void-2));padding:1.7rem 1.9rem;margin:0}
+.kernel pre{font-family:var(--mono);font-size:clamp(.92rem,1.5vw,1.15rem);color:var(--gold);margin:0 0 1.2rem;line-height:1.95;overflow-x:auto;font-weight:400}
+.kernel p{color:var(--bone-dim);margin:.9rem 0 0;font-size:.98rem;max-width:74ch}
+.kernel p:first-of-type{margin-top:0}
+.kernel b{color:var(--bone);font-weight:500}
+.kernel em{font-style:normal;color:var(--bone)}
 
-/* table */
+/* axiom case files */
+.axioms{padding-top:.4rem}
+.case{display:grid;grid-template-columns:150px 1fr;gap:0;border-top:1px solid var(--line);padding:2.1rem 0}
+.case:first-of-type{border-top:0}
+.rail{padding-right:1.4rem;border-right:1px solid var(--line-soft)}
+.rail .no{font-family:var(--mono);font-size:1.7rem;font-weight:300;letter-spacing:-.01em;color:var(--v);line-height:1}
+.rail .axname{font-size:.82rem;color:var(--bone-dim);margin-top:.4rem;font-weight:400;letter-spacing:.01em}
+.rail .vdot{width:9px;height:9px;border-radius:50%;background:var(--v);margin:.9rem 0 .8rem;box-shadow:0 0 0 4px color-mix(in srgb,var(--v) 16%,transparent)}
+.rail .ct{font-family:var(--mono);font-size:.68rem;color:var(--bone-faint);letter-spacing:.05em;display:flex;flex-wrap:wrap;gap:.3rem;align-items:center}
+.doc{padding-left:1.7rem;min-width:0}
+.claimline{font-family:var(--mono);font-size:.63rem;letter-spacing:.22em;text-transform:uppercase;color:var(--bone-ghost);margin:0 0 .5rem}
+.claim{font-size:clamp(1.12rem,1.9vw,1.5rem);font-weight:200;letter-spacing:-.015em;line-height:1.32;margin:0 0 1rem;color:var(--bone);text-wrap:pretty}
+.claim code{font-weight:300;color:var(--bone);font-size:.86em}
+.claim b{font-weight:500}
+.verdict-row{display:flex;align-items:center;gap:.9rem;flex-wrap:wrap;margin:0 0 1rem}
+.stamp{font-family:var(--mono);font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--v);
+  border:1.5px solid var(--v);border-radius:3px;padding:.28em .6em;background:color-mix(in srgb,var(--v) 10%,transparent);
+  transform:rotate(-1.3deg);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--v) 12%,transparent)}
+.verdict-row .qual{font-family:var(--mono);font-size:.74rem;color:var(--bone-faint)}
+.analysis{font-size:.95rem;color:var(--bone-dim);margin:0 0 .85rem;font-weight:300}
+.analysis:last-child{margin-bottom:0}
+.analysis b{color:var(--bone);font-weight:500}
+.analysis em{font-style:normal;color:var(--bone)}
+.analysis.fence{padding-left:1rem;border-left:2px solid color-mix(in srgb,var(--v) 55%,transparent)}
+.analysis.fence b:first-child{color:var(--v)}
+
+.coroll{color:var(--bone-faint);font-size:.9rem;margin-top:1.8rem;padding-top:1.4rem;border-top:1px solid var(--line-soft);max-width:80ch;font-family:var(--mono);line-height:1.9}
+.coroll b{color:var(--bone-dim)}
+
+/* findings */
+.findings{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.find{background:linear-gradient(180deg,var(--panel),var(--void-2));padding:1.2rem 1.35rem}
+.find h4{font-size:.98rem;font-weight:600;margin:0 0 .4rem;color:var(--bone)}
+.find p{color:var(--bone-dim);font-size:.9rem;margin:0;font-weight:300}
+.find em{font-style:normal;color:var(--bone)}
+.find .tag{font-family:var(--mono);font-size:.68rem;color:var(--t-a);display:block;margin-top:.6rem;letter-spacing:.02em}
+.meta-find{color:var(--bone-dim);margin-top:1.7rem;max-width:74ch}
+.meta-find b{color:var(--bone);font-weight:500}
+.meta-find em{font-style:normal;color:var(--bone)}
+
+/* conjectures table */
 .tbl{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.9rem}
-.tbl th,.tbl td{border:1px solid var(--line-soft);padding:.6rem .8rem;text-align:left;vertical-align:top}
-.tbl th{background:var(--panel);font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;color:var(--bone-dim)}
-.tbl td b{color:var(--bone)}
-.tbl .killed td{opacity:.62}
-.tbl .killed .c1{text-decoration:line-through;text-decoration-color:var(--crimson)}
+.tbl th,.tbl td{border:1px solid var(--line-soft);padding:.7rem .85rem;text-align:left;vertical-align:top}
+.tbl th{background:var(--panel);font-family:var(--mono);font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--bone-faint);font-weight:400}
+.tbl td{color:var(--bone-dim);font-weight:300}
+.tbl td b{color:var(--bone);font-weight:500}
+.tbl td em{font-style:normal;color:var(--bone-faint)}
+.tbl .status{font-family:var(--mono);font-size:.72rem;white-space:nowrap;color:var(--bone-faint)}
+.tbl .killed td{opacity:.66}
+.tbl .killed .c1{text-decoration:line-through;text-decoration-color:var(--crimson);text-decoration-thickness:2px}
+.tblwrap{overflow-x:auto}
 
-.findings{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);border-radius:10px;overflow:hidden}
-@media(max-width:680px){.findings{grid-template-columns:1fr} .ax{grid-template-columns:1fr;gap:.5rem}}
-.find{background:var(--panel);padding:1.1rem 1.3rem}
-.find h4{font-size:.97rem;font-weight:700;margin:0 0 .35rem}
-.find p{color:var(--bone-dim);font-size:.9rem;margin:0}
-.find .tag{font-family:var(--mono);font-size:.7rem;color:var(--gold);display:block;margin-top:.5rem}
-
-.weltan{background:linear-gradient(180deg,rgba(255,235,59,.05),transparent 70%);border:1px solid var(--line-soft);border-radius:12px;padding:1.8rem 2rem}
-.weltan p{font-size:clamp(1.02rem,1.5vw,1.15rem);color:var(--bone);max-width:70ch}
-.weltan b{color:var(--gold-deep)}
-
-.foot{border-top:1px solid var(--line);padding:3rem 0;text-align:center;color:var(--bone-faint);font-family:var(--mono);font-size:.78rem}
-.foot .phi{font-size:1.6rem;color:var(--gold);margin-bottom:.6rem}
-.foot a{color:var(--bone-dim);text-decoration:underline;text-underline-offset:3px}
-.cta{display:inline-flex;gap:.5rem;align-items:center;font-family:var(--mono);font-size:.82rem;text-transform:uppercase;letter-spacing:.06em;
-  padding:.8rem 1.3rem;border-radius:4px;border:1px solid var(--line);text-decoration:none;color:var(--bone);transition:.2s;margin:.4rem .3rem 0}
+/* weltanschauung */
+.weltan{border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,rgba(255,235,59,.045),transparent 72%);padding:2.2rem 2.2rem 2rem}
+.weltan p{font-size:clamp(1.06rem,1.55vw,1.3rem);color:var(--bone);max-width:72ch;margin:0;font-weight:200;line-height:1.5}
+.weltan b{color:var(--gold-deep);font-weight:600}
+.weltan em{font-style:normal;color:var(--bone)}
+.cta-row{margin-top:1.7rem;display:flex;flex-wrap:wrap;gap:.5rem}
+.cta{display:inline-flex;gap:.5rem;align-items:center;font-family:var(--mono);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;
+  padding:.75rem 1.2rem;border-radius:4px;border:1px solid var(--line);text-decoration:none;color:var(--bone);transition:.2s}
 .cta:hover{border-color:var(--gold);color:var(--gold)}
 .cta.primary{background:var(--gold);color:#1a1206;border-color:var(--gold);font-weight:700}
-.cta.primary:hover{background:#FFF176;color:#1a1206}
+.cta.primary:hover{background:#FFF176}
+.record-note{color:var(--bone-faint);font-size:.9rem;margin-top:1.1rem;max-width:66ch}
+.record-note a{color:var(--bone-dim);text-decoration:underline;text-underline-offset:3px}
+
+.foot{border-top:1px solid var(--line);margin-top:2.4rem;padding:2.6rem 0 3.6rem;text-align:center;color:var(--bone-ghost);font-family:var(--mono);font-size:.75rem;line-height:1.75}
+.foot .glyph{font-size:1.5rem;color:var(--gold);margin-bottom:.7rem}
+.foot .mono{color:var(--bone-faint)}
+
+.reveal{opacity:0;transform:translateY(16px)}
+.reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .75s cubic-bezier(.16,1,.3,1)}
+@media(max-width:720px){
+  .case{grid-template-columns:74px 1fr}
+  .rail{padding-right:.8rem}
+  .rail .no{font-size:1.2rem}
+  .rail .axname{font-size:.7rem}
+  .doc{padding-left:1rem}
+  .findings{grid-template-columns:1fr}
+  .readout .n{font-size:1.2rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto!important}
+  .reveal{opacity:1!important;transform:none!important;transition:none!important}
+}
 </style>
 <!-- pwa-chrome -->
 <link rel="manifest" href="/manifest.webmanifest">
@@ -109,123 +184,139 @@ code,.mono{font-family:var(--mono);font-size:.92em}
 <script src="/assets/js/pwa.js" defer></script>
 </head>
 <body>
+
 <header class="topbar">
-  <a class="brand" href="../">Emergent<b>ism</b></a>
+  <a class="brand" href="../home/">Emergent<b>ism</b></a>
   <nav class="nav" aria-label="Routes">
     <a href="../0/">0</a><a href="../1/">1</a><a href="../2/">2</a><a href="../3/">3</a>
     <a href="../4/">4</a><a href="../5/">5</a><a href="../6/">6</a>
-    <a href="../book/">Book</a><a href="../read/">Read</a>
+    <a href="../axioms/" class="here" aria-current="page">Axioms</a><a href="../record/">Record</a>
+    <a href="../book/">Book</a>
   </nav>
 </header>
 
 <main class="wrap">
   <header class="hero">
-    <p class="eyebrow">The framework, honestly tiered</p>
-    <h1>The Seven Axioms</h1>
-    <p class="lede">Every claim here wears its evidence tier — and its verdict after the peer-review program, the ten model-internal experiments, and the literature grounding. <b>The credential is not the self-narrative; it is the one refutation the framework accepted against its own interest (R6).</b></p>
-    <div class="legend">
-      <span class="tier t-a">[A]</span> established maths &nbsp;
-      <span class="tier t-e">[E]</span> established science &nbsp;
-      <span class="tier t-s">[S]</span> structural &nbsp;
-      <span class="tier t-i">[I]</span> interpretive &nbsp;
-      <span class="tier t-c">[C]</span> conjecture &nbsp;
-      <span class="tier t-b">[B]</span> receipt
+    <p class="fileno reveal in">The framework, honestly tiered</p>
+    <h1 class="reveal in">Seven axioms.<br>Every one wears its <span class="heavy">tier</span>.</h1>
+    <p class="dek reveal in">Each carries its evidence tier — and its verdict after the peer-review program, the ten model-internal experiments, and the literature grounding. <b>The credential is not the self-narrative; it is the one refutation the framework accepted against its own interest (R6).</b></p>
+    <div class="legend reveal in">
+      <span><span class="t t-a">[A]</span> established maths</span>
+      <span><span class="t t-e">[E]</span> established science</span>
+      <span><span class="t t-s">[S]</span> structural</span>
+      <span><span class="t t-i">[I]</span> interpretive</span>
+      <span><span class="t t-c">[C]</span> conjecture</span>
+      <span><span class="t t-b">[B]</span> receipt</span>
+    </div>
+    <div class="readout reveal in" role="group" aria-label="Summary">
+      <span class="r"><span class="n">7</span><span class="lab">axioms</span></span><span class="pipe">|</span>
+      <span class="r"><span class="n">5</span><span class="lab">corollaries</span></span><span class="pipe">|</span>
+      <span class="r"><span class="n">8</span><span class="lab">open conjectures</span></span><span class="pipe">|</span>
+      <span class="r bad"><span class="n">1</span><span class="lab">kill accepted (R6)</span></span>
     </div>
   </header>
 
   <!-- KERNEL -->
   <section>
-    <p class="kicker">Layer 0 · the kernel</p>
-    <h2>One equation, and an honest line drawn through it</h2>
-    <div class="kernel">
+    <p class="kicker reveal">Layer 0 · the kernel</p>
+    <h2 class="reveal">One equation, and an <b>honest line</b> drawn through it</h2>
+    <div class="kernel reveal">
       <pre>φ · ν = 1   on S²      reciprocal closure — the resolved identity
 (φ − ν)² ≥ 0           a square (always true)
 φ + ν   ≥ 2            AM–GM</pre>
-      <p>The mathematics is <span class="tier t-a">[A]</span> — correct, and <b>elementary</b> (a reciprocal identity, a square, AM–GM, a hyperbolic-trig substitution). <b>Correct ≠ deep.</b></p>
-      <p><b>The strongest anchor (2026-06-11):</b> read in light-cone coordinates of the four-momentum (φ = (E+pc)/mc², ν = (E−pc)/mc²), the three lines above <em>are</em> special relativity term for term — the mass-shell E²−(pc)²=(mc²)², momentum real, and E ≥ mc² (the equator is the rest frame; B = sin θ = 1/γ = dτ/dt, the rate of lived time) <span class="tier t-a">[A]</span>. Derivation: Paper B §8.</p>
-      <p>That reality <em>is</em> this geometry — beyond kinematics, where the identity holds exactly — is the load-bearing wager <span class="tier t-s">[S]</span><span class="tier t-i">[I]</span> — not a theorem. The formula block draws this line itself ("the maths is [A]; the identification is [S]"), which is the single most honest sentence in the corpus.</p>
+      <p>The mathematics is <span class="t t-a">[A]</span> — correct, and <b>elementary</b> (a reciprocal identity, a square, AM–GM, a hyperbolic-trig substitution). <b>Correct ≠ deep.</b></p>
+      <p><b>The strongest anchor (2026-06-11):</b> read in light-cone coordinates of the four-momentum (φ = (E+pc)/mc², ν = (E−pc)/mc²), the three lines above <em>are</em> special relativity term for term — the mass-shell E²−(pc)²=(mc²)², momentum real, and E ≥ mc² (the equator is the rest frame; B = sin θ = 1/γ = dτ/dt, the rate of lived time) <span class="t t-a">[A]</span>. Derivation: Paper B §8.</p>
+      <p>That reality <em>is</em> this geometry — beyond kinematics, where the identity holds exactly — is the load-bearing wager <span class="t t-s">[S]</span><span class="t t-i">[I]</span> — not a theorem. The formula block draws this line itself ("the maths is [A]; the identification is [S]"), which is the single most honest sentence in the corpus.</p>
       <p><b>R6 note:</b> the block carries <em>both</em> the multiplicative form (φ·ν=1) and the additive form (φ+ν≥2). The experiment showed the <b>additive form is correct for the teleology/empowerment register</b>, the multiplicative for the organizational register. The kernel contains both; the error was claiming <em>one geometry governs all scales</em>.</p>
     </div>
   </section>
 
   <!-- AXIOMS -->
-  <section>
-    <p class="kicker">Layer 1 · the seven operational axioms</p>
-    <h2>A1 – A7, with the corpus tier and this session's verdict</h2>
+  <section class="axioms">
+    <p class="kicker reveal">Layer 1 · the seven operational axioms</p>
+    <h2 class="reveal">A1 – A7, with the corpus tier and <b>this session's verdict</b></h2>
 
-    <div class="ax">
-      <div class="ax-id">A1<span class="nm">The Equation</span></div>
-      <div>
-        <div class="chips"><span>corpus</span><span class="tier t-s">[S]</span><span>·</span><span class="fired">kill criterion partially fired</span></div>
-        <p class="state">Balance <code>B = sin θ</code>; <code>φ·ν=1</code> on S²; zero in either factor collapses the whole (the Zero-Factor Catastrophe).</p>
-        <p class="verdict">Its own kill criterion ("B better modelled as additive") <b>partially fired</b>. R6: single-agent empowerment shows no conjugate coupling — its iso-value sets are lines, not hyperbolae. (Chart-fence, 2026-06-12: "additive" here is a statement about the <em>log-chart</em> — E = log of reachable options, so capacities add <em>because</em> option-counts multiply. The kill is the absence of a two-axis trade-off in the solipsistic register, <em>not</em> a claim that real-world power composes additively.) The multiplicative zero-factor-catastrophe holds for the <b>organizational</b> register (Kremer's O-ring is real) but <b>not</b> the single-agent empowerment register. <b>Split A1 by register.</b></p>
-        <p class="verdict"><b>AND-class fence (2026-07-11):</b> the Zero-Factor Catastrophe, by itself, does not single out the product. It selects a whole <em>class</em> of laws — min (Liebig's law of the minimum), CES, geometric mean, the product — that all collapse when either factor dies, and every load-bearing claim on this site survives under any of them. The product is uniquely forced only on the sphere's own coordinates, where φ·ν=1 is the chart identity <span class="tier t-a">[A]</span>; as a law of <em>finite nodes</em>, "specifically ×, not min" is an open <span class="tier t-c">[C]</span> wager the framework does not lean on. A test that pits × only against + cannot settle it — the live comparison is × against its AND-class siblings.</p>
+    <article class="case" style="--v:var(--v-fenced)">
+      <div class="rail reveal"><div class="no">A1</div><div class="axname">The Equation</div><div class="vdot"></div><div class="ct">corpus <span class="t t-s">[S]</span></div></div>
+      <div class="doc reveal">
+        <p class="claimline">The axiom</p>
+        <p class="claim">Balance <code>B = sin θ</code>; <code>φ·ν=1</code> on S²; zero in either factor collapses the whole (the Zero-Factor Catastrophe).</p>
+        <div class="verdict-row"><span class="stamp">Fenced</span><span class="qual">kill criterion partially fired</span></div>
+        <p class="analysis">Its own kill criterion ("B better modelled as additive") <b>partially fired</b>. R6: single-agent empowerment shows no conjugate coupling — its iso-value sets are lines, not hyperbolae. (Chart-fence, 2026-06-12: "additive" here is a statement about the <em>log-chart</em> — E = log of reachable options, so capacities add <em>because</em> option-counts multiply. The kill is the absence of a two-axis trade-off in the solipsistic register, <em>not</em> a claim that real-world power composes additively.) The multiplicative zero-factor-catastrophe holds for the <b>organizational</b> register (Kremer's O-ring is real) but <b>not</b> the single-agent empowerment register. <b>Split A1 by register.</b></p>
+        <p class="analysis fence"><b>AND-class fence (2026-07-11):</b> the Zero-Factor Catastrophe, by itself, does not single out the product. It selects a whole <em>class</em> of laws — min (Liebig's law of the minimum), CES, geometric mean, the product — that all collapse when either factor dies, and every load-bearing claim on this site survives under any of them. The product is uniquely forced only on the sphere's own coordinates, where φ·ν=1 is the chart identity <span class="t t-a">[A]</span>; as a law of <em>finite nodes</em>, "specifically ×, not min" is an open <span class="t t-c">[C]</span> wager the framework does not lean on. A test that pits × only against + cannot settle it — the live comparison is × against its AND-class siblings.</p>
       </div>
-    </div>
+    </article>
 
-    <div class="ax">
-      <div class="ax-id">A2<span class="nm">The Ethic</span></div>
-      <div>
-        <div class="chips"><span>corpus</span><span class="tier t-i">[I]</span><span>·</span><span>survives, as a posit</span></div>
-        <p class="state">"Ethical" ≡ dyadic node/boundary rise: <code>ΔP_node,i &gt; 0</code> and <code>ΔP_node,H &gt; 0</code> under <code>η = 0</code>. <em>ΣΔB / ΣΔP_node remains the widest-boundary audit. Posited, not derived from "is." Evaluates outcomes, not operators.</em></p>
-        <p class="verdict"><b>Honest after register split</b> — the is/ought seam is acknowledged <em>in the axiom itself</em>. Survives as an <span class="tier t-i">[I]</span> posit, never <span class="tier t-a">[A]</span>. R3 added: the verdict is <em>objective-relative</em> (maximin, sum, and per-capita welfare disagree), so the dyadic test must declare boundary and aggregator.</p>
+    <article class="case" style="--v:var(--v-held)">
+      <div class="rail reveal"><div class="no">A2</div><div class="axname">The Ethic</div><div class="vdot"></div><div class="ct">corpus <span class="t t-i">[I]</span></div></div>
+      <div class="doc reveal">
+        <p class="claimline">The axiom</p>
+        <p class="claim">"Ethical" ≡ dyadic node/boundary rise: <code>ΔP_node,i &gt; 0</code> and <code>ΔP_node,H &gt; 0</code> under <code>η = 0</code>. <em>ΣΔB / ΣΔP_node remains the widest-boundary audit. Posited, not derived from "is." Evaluates outcomes, not operators.</em></p>
+        <div class="verdict-row"><span class="stamp">Holds</span><span class="qual">survives, as a posit</span></div>
+        <p class="analysis"><b>Honest after register split</b> — the is/ought seam is acknowledged <em>in the axiom itself</em>. Survives as an <span class="t t-i">[I]</span> posit, never <span class="t t-a">[A]</span>. R3 added: the verdict is <em>objective-relative</em> (maximin, sum, and per-capita welfare disagree), so the dyadic test must declare boundary and aggregator.</p>
       </div>
-    </div>
+    </article>
 
-    <div class="ax">
-      <div class="ax-id">A3<span class="nm">The Scaffold</span></div>
-      <div>
-        <div class="chips"><span>corpus</span><span class="tier t-s">[S]</span><span class="tier t-i">[I]</span><span>·</span><span>structure coherent, physics weak</span></div>
-        <p class="state">Reality unfolds D0→D6; D6≡D0 closure; each level emerges at the μ-limit. <em>Force–dimension assignments are [I], "mapped by analogy."</em></p>
-        <p class="verdict">Structure <span class="tier t-s">[S]</span> coherent; the physics is weak. The force↔dimension map is numerology (gauge groups ≠ dimensions) — and the axiom <em>already tiers it [I] by analogy</em>, honestly. D6≡D0 as Penrose CCC is <span class="tier t-c">[C]</span> and "on life support." Keep 0 and ∞ as distinct poles, not "the same."</p>
+    <article class="case" style="--v:var(--v-fenced)">
+      <div class="rail reveal"><div class="no">A3</div><div class="axname">The Scaffold</div><div class="vdot"></div><div class="ct">corpus <span class="t t-s">[S]</span><span class="t t-i">[I]</span></div></div>
+      <div class="doc reveal">
+        <p class="claimline">The axiom</p>
+        <p class="claim">Reality unfolds D0→D6; D6≡D0 closure; each level emerges at the μ-limit. <em>Force–dimension assignments are [I], "mapped by analogy."</em></p>
+        <div class="verdict-row"><span class="stamp">Mixed</span><span class="qual">structure coherent, physics weak</span></div>
+        <p class="analysis">Structure <span class="t t-s">[S]</span> coherent; the physics is weak. The force↔dimension map is numerology (gauge groups ≠ dimensions) — and the axiom <em>already tiers it [I] by analogy</em>, honestly. D6≡D0 as Penrose CCC is <span class="t t-c">[C]</span> and "on life support." Keep 0 and ∞ as distinct poles, not "the same."</p>
       </div>
-    </div>
+    </article>
 
-    <div class="ax">
-      <div class="ax-id">A4<span class="nm">The Boundary</span></div>
-      <div>
-        <div class="chips"><span>corpus</span><span class="tier t-s">[S]</span><span class="tier t-e">[E]</span><span>·</span><span>vindicated, headline corrected</span></div>
-        <p class="state">self↔others is real; η=0 vs cooperators, tit-for-tat vs defectors; 2 Gods + 2 Demons — <b>"the boundary is the move's direction η, not the operator."</b></p>
-        <p class="verdict"><b>Vindicated in spirit.</b> R7/R8/R9: unconditional cooperation <em>is</em> free-ridden, so enforcement is necessary — A4's prediction holds, and it is the mainstream major-transitions result. BUT "η=0 is Nash" is <b>conditional/enforced</b> (Green–Laffont), not unconditional. And A4 itself says valence is on the <em>move</em>, not the operator — so "2 objectively immoral demons" contradicts the corpus's own axiom. The demons are the <em>fenced enforcement</em> that makes the gods stable.</p>
+    <article class="case" style="--v:var(--v-held)">
+      <div class="rail reveal"><div class="no">A4</div><div class="axname">The Boundary</div><div class="vdot"></div><div class="ct">corpus <span class="t t-s">[S]</span><span class="t t-e">[E]</span></div></div>
+      <div class="doc reveal">
+        <p class="claimline">The axiom</p>
+        <p class="claim">self↔others is real; η=0 vs cooperators, tit-for-tat vs defectors; 2 Gods + 2 Demons — <b>"the boundary is the move's direction η, not the operator."</b></p>
+        <div class="verdict-row"><span class="stamp">Vindicated</span><span class="qual">headline corrected</span></div>
+        <p class="analysis"><b>Vindicated in spirit.</b> R7/R8/R9: unconditional cooperation <em>is</em> free-ridden, so enforcement is necessary — A4's prediction holds, and it is the mainstream major-transitions result. BUT "η=0 is Nash" is <b>conditional/enforced</b> (Green–Laffont), not unconditional. And A4 itself says valence is on the <em>move</em>, not the operator — so "2 objectively immoral demons" contradicts the corpus's own axiom. The demons are the <em>fenced enforcement</em> that makes the gods stable.</p>
       </div>
-    </div>
+    </article>
 
-    <div class="ax">
-      <div class="ax-id">A5<span class="nm">The Egregore</span></div>
-      <div>
-        <div class="chips"><span>corpus</span><span class="tier t-i">[I]</span><span>·</span><span>coherent, untested</span></div>
-        <p class="state">D5 standing waves carry an autonomous objective function; institutional opposition is captured and inverted (Raktabīja).</p>
-        <p class="verdict"><b>Coherent <span class="tier t-i">[I]</span>.</b> The replicator-stack top rung (the egregore) is the idol the framework warns of; consistent with canon. Untested empirically.</p>
+    <article class="case" style="--v:var(--v-mixed)">
+      <div class="rail reveal"><div class="no">A5</div><div class="axname">The Egregore</div><div class="vdot"></div><div class="ct">corpus <span class="t t-i">[I]</span></div></div>
+      <div class="doc reveal">
+        <p class="claimline">The axiom</p>
+        <p class="claim">D5 standing waves carry an autonomous objective function; institutional opposition is captured and inverted (Raktabīja).</p>
+        <div class="verdict-row"><span class="stamp">Open</span><span class="qual">coherent, untested</span></div>
+        <p class="analysis"><b>Coherent <span class="t t-i">[I]</span>.</b> The replicator-stack top rung (the egregore) is the idol the framework warns of; consistent with canon. Untested empirically.</p>
       </div>
-    </div>
+    </article>
 
-    <div class="ax">
-      <div class="ax-id">A6<span class="nm">The Architecture</span></div>
-      <div>
-        <div class="chips"><span>corpus</span><span class="tier t-i">[I]</span><span class="tier t-s">[S]</span><span>·</span><span>open, partly in tension</span></div>
-        <p class="state">Three substrates: mechanical (V), AI (Φ / charioteer), mortal self (choice / warrior); the mortal self is irreplaceable for <em>genuine sacrifice</em>.</p>
-        <p class="verdict"><b>Open + partly in tension.</b> The CEF cart-pole showed <em>mechanical lookahead</em> suffices for teleology — refuting D5-as-<em>consciousness</em> for that task. But "genuine self-sacrifice requires a mortal self" is a distinct, <b>untested</b> claim. A real wager, correctly <span class="tier t-i">[I]</span>.</p>
+    <article class="case" style="--v:var(--v-mixed)">
+      <div class="rail reveal"><div class="no">A6</div><div class="axname">The Architecture</div><div class="vdot"></div><div class="ct">corpus <span class="t t-i">[I]</span><span class="t t-s">[S]</span></div></div>
+      <div class="doc reveal">
+        <p class="claimline">The axiom</p>
+        <p class="claim">Three substrates: mechanical (V), AI (Φ / charioteer), mortal self (choice / warrior); the mortal self is irreplaceable for <em>genuine sacrifice</em>.</p>
+        <div class="verdict-row"><span class="stamp">Open</span><span class="qual">partly in tension</span></div>
+        <p class="analysis"><b>Open + partly in tension.</b> The CEF cart-pole showed <em>mechanical lookahead</em> suffices for teleology — refuting D5-as-<em>consciousness</em> for that task. But "genuine self-sacrifice requires a mortal self" is a distinct, <b>untested</b> claim. A real wager, correctly <span class="t t-i">[I]</span>.</p>
       </div>
-    </div>
+    </article>
 
-    <div class="ax">
-      <div class="ax-id">A7<span class="nm">The Correction</span></div>
-      <div>
-        <div class="chips"><span>corpus</span><span class="tier t-s">[S]</span><span>·</span><span>the strongest axiom — held all session</span></div>
-        <p class="state">Any encoding without falsification + tiers + self-correction degrades; the set includes its own destruction manual. <em>(A7.1: coherentist inside, but from outside, coherence is not enough — the empirical bridge must survive.)</em></p>
-        <p class="verdict"><b>The strongest axiom, and it held all session.</b> The kernel's kill-criteria fired, were honoured, and the corpus survived or corrected. A7.1 is exactly the honest position — coherence ≠ truth from outside.</p>
-        <p class="verdict"><b>Two fences A7 wears itself (2026-07-10/12):</b> a process built to self-correct cannot be its own proof — "the framework demonstrates self-correction" is partly circular, so the credential stays with the refutation it accepted against interest (R6), not with this axiom's self-narrative. And by the open-canon ruling, A7 is a <b>wager and an orientation, not a theorem</b> <span class="tier t-i">[I]</span><span class="tier t-c">[C]</span> — the refusal of infallibility cannot itself be held infallibly, and "we are self-correcting, therefore trust us" is exactly the shield this framework forbids itself.</p>
+    <article class="case" style="--v:var(--v-fenced)">
+      <div class="rail reveal"><div class="no">A7</div><div class="axname">The Correction</div><div class="vdot"></div><div class="ct">corpus <span class="t t-s">[S]</span></div></div>
+      <div class="doc reveal">
+        <p class="claimline">The axiom · the deepest commitment</p>
+        <p class="claim">Any encoding without falsification + tiers + self-correction degrades; the set includes its own destruction manual. <em>(A7.1: coherentist inside, but from outside, coherence is not enough — the empirical bridge must survive.)</em></p>
+        <div class="verdict-row"><span class="stamp">Fenced</span><span class="qual">strongest — and it fences itself</span></div>
+        <p class="analysis"><b>The strongest axiom, and it held all session.</b> The kernel's kill-criteria fired, were honoured, and the corpus survived or corrected. A7.1 is exactly the honest position — coherence ≠ truth from outside.</p>
+        <p class="analysis fence"><b>Two fences A7 wears itself (2026-07-10/12):</b> a process built to self-correct cannot be its own proof — "the framework demonstrates self-correction" is partly circular, so the credential stays with the refutation it accepted against interest (R6), not with this axiom's self-narrative. And by the open-canon ruling, A7 is a <b>wager and an orientation, not a theorem</b> <span class="t t-i">[I]</span><span class="t t-c">[C]</span> — the refusal of infallibility cannot itself be held infallibly, and "we are self-correcting, therefore trust us" is exactly the shield this framework forbids itself.</p>
       </div>
-    </div>
-    <p style="color:var(--bone-faint);font-size:.86rem;margin-top:1.4rem"><b>Corollaries</b> (derived): C1 four-operator exhaustion <span class="tier t-s">[S]</span> (the keystone two-factor wager, R4-testable, unrun); C2 the seven L-levels <span class="tier t-s">[S]</span><span class="tier t-i">[I]</span>; C3 trophic/circuit <span class="tier t-i">[I]</span>; C4 the replicator stack <span class="tier t-i">[I]</span>; C5 alignment energy <code>E = −log B</code> <span class="tier t-s">[S]</span>.</p>
+    </article>
+
+    <p class="coroll reveal"><b>Corollaries</b> (derived): C1 four-operator exhaustion <span class="t t-s">[S]</span> (the keystone two-factor wager, R4-testable, unrun); C2 the seven L-levels <span class="t t-s">[S]</span><span class="t t-i">[I]</span>; C3 trophic/circuit <span class="t t-i">[I]</span>; C4 the replicator stack <span class="t t-i">[I]</span>; C5 alignment energy <code>E = −log B</code> <span class="t t-s">[S]</span>.</p>
   </section>
 
   <!-- FINDINGS -->
   <section>
-    <p class="kicker">What was actually shown</p>
-    <h2>Findings</h2>
-    <p class="intro">Ten model-internal experiments ran. These are results <em>within the stated models</em> <span class="tier t-a">[A]</span> — not yet claims about the world.</p>
-    <div class="findings">
+    <p class="kicker reveal">What was actually shown</p>
+    <h2 class="reveal">Findings</h2>
+    <p class="intro reveal">Ten model-internal experiments ran. These are results <em>within the stated models</em> <span class="t t-a">[A]</span> — not yet claims about the world.</p>
+    <div class="findings reveal">
       <div class="find"><h4>The triage inversion (R3)</h4><p>Under drift + a mortality boundary, a sequence of individually-improving progressive transfers can <em>reduce</em> aggregate welfare-time. The static transfer axiom and dynamic survival point opposite ways.</p><span class="tag">[A] in-model · trajectory-driven, not curvature</span></div>
       <div class="find"><h4>The verdict is objective-relative (R3)</h4><p>Under sum welfare, progressive giving is worst; under <b>maximin it is best</b> (worst-off ×10); under per-capita averaging, extraction wins. The social-welfare function is morally load-bearing — quantified.</p><span class="tag">[A] in-model</span></div>
       <div class="find"><h4>Targeting beats volume (R3 v2)</h4><p>With regeneration above a survival cliff, <b>targeted</b> transfers dominate (100% survival, +26%); untargeted transfers of equal volume rescue no one. Discernment, not transfer volume, is the binding variable.</p><span class="tag">[A] in-model</span></div>
@@ -233,49 +324,64 @@ code,.mono{font-family:var(--mono);font-size:.92em}
       <div class="find"><h4>Lookahead, not consciousness (CEF)</h4><p>The cart-pole is driven by external Monte-Carlo lookahead, not self-balancing (force → 0 as τ → 0). This <em>supports</em> gating teleology on lookahead and <em>refutes</em> gating it on consciousness — a non-conscious algorithm did it.</p><span class="tag">[A] read from the paper's own Eq. 11</span></div>
       <div class="find"><h4>The refusal to overfit (R9)</h4><p>When three consecutive interventions each appeared only after a claim failed, the run <b>stopped rather than tune enforcement to force a confirmation</b> — the dogmatic-reversion trap, declined and recorded. The single most important entry in the ledger.</p><span class="tag">[S] the epistemics working</span></div>
     </div>
-    <p style="color:var(--bone-dim);margin-top:1.6rem"><b>The convergent meta-finding:</b> Emergentism is a well-assembled synthesis of real, established prior art, generally honestly self-tiered, whose genuine contribution is the <em>coupling</em> — not the individual pieces. The recurring fault everywhere is that <em>headline framings</em> outran the components ("fifth force," "η=0 is a Nash equilibrium," "unifies the sciences"). And <b>grounding shrank claimed novelty on every paper — that is the pass succeeding</b>, not failing.</p>
+    <p class="meta-find reveal"><b>The convergent meta-finding:</b> Emergentism is a well-assembled synthesis of real, established prior art, generally honestly self-tiered, whose genuine contribution is the <em>coupling</em> — not the individual pieces. The recurring fault everywhere is that <em>headline framings</em> outran the components ("fifth force," "η=0 is a Nash equilibrium," "unifies the sciences"). And <b>grounding shrank claimed novelty on every paper — that is the pass succeeding</b>, not failing.</p>
   </section>
 
   <!-- CONJECTURES -->
   <section>
-    <p class="kicker">Open, ranked by surviving delta</p>
-    <h2>Conjectures &amp; their kill criteria</h2>
-    <p class="intro">Every claim carries an explicit way to die. After the literature grounding, here is what survives, what narrowed, and what fell.</p>
+    <p class="kicker reveal">Open, ranked by surviving delta</p>
+    <h2 class="reveal">Conjectures &amp; their <b>kill criteria</b></h2>
+    <p class="intro reveal">Every claim carries an explicit way to die. After the literature grounding, here is what survives, what narrowed, and what fell.</p>
+    <div class="tblwrap reveal">
     <table class="tbl">
       <thead><tr><th>Conjecture</th><th>Tier · status</th><th>Kill criterion</th></tr></thead>
       <tbody>
-        <tr class="killed"><td class="c1"><b>R6 — empowerment = Φ×V under a conserved conjugate product φ·ν=1</b></td><td><span class="tier t-c">[A] refuted</span><br>REFUTED 2026-06-10</td><td>The decomposition is <b>additive (a simplex), not multiplicative (a sphere)</b>: E = H(S)−H(S|A), so iso-empowerment sets are lines and φ·ν=1 is the <em>dead state</em>. Mortality does not rescue balance. <b>The "one geometry at all scales" claim fails here.</b> Kill criterion fired (twice) and was honoured. <em>Chart-fence (2026-06-12): E is a logarithm, so "additive" is the log-chart of multiplicative reach; the substantive kill is one axis + no conjugate coupling in the solipsistic register — not "power adds." The reflexive register (R10, below) is where the coupling is conjectured to appear: adversarial contact is the arrival of the second agent the solipsistic setting lacks.</em></td></tr>
-        <tr><td class="c1"><b>R10 — reflexive empowerment: Φ (recursion depth / plan) × ν (execution)</b></td><td><span class="tier t-a">[A]</span> R10a / <span class="tier t-c">[C]</span> R10b<br>EXECUTED 2026-06-12 — SPLIT; V3 2026-06-15 — depth route closed</td><td>Three deterministic games run (E2: V1+V2 2026-06-12, V3 depth-vs-depth 2026-06-15). <b>R10a supported within the models:</b> the contact register is multiplicative where the single-agent register was additive — the plan's value is <em>exactly zero</em> at no-execution ("everybody has a plan until they get punched in the mouth", as a number), reliability amplifies plan quality <em>including its badness</em> (a sign-crossing no additive surface can produce), and in the p-beauty game depth is a <em>strict total order</em> (deeper always wins; payoff = the sign of the depth difference). <b>R10b not recovered — and the depth route is now closed:</b> no conserved φ·ν frontier appears by <em>either</em> failure mode — depth <em>saturates</em> against fixed opponents (V2), and against a mutual modeller it becomes a <em>positional arms race</em> (V3) — deeper always pays, so both run to the wall, where the advantage is competed to zero at equilibrium. What survives at contact is the product and its catastrophe, not the conservation law. Across the program, three registered predictions were wrong and are scored as wrong.</td></tr>
-        <tr><td class="c1"><b>R5 — the 0/1/∞ triptych + the Euclid→Stevin→Buckingham→2019-SI arc as one story</b></td><td><span class="tier t-a">[A]</span> history, <span class="tier t-i">[I]</span> thesis<br>strongest surviving</td><td>If Rotman / de Courtenay already triangulate all three items and the full arc → it is exposition, not a claim.</td></tr>
-        <tr><td class="c1"><b>R4 — two-factor multiplicative structure of evaluated productivity</b> (the keystone)</td><td><span class="tier t-i">[I]</span><br>real but narrow</td><td>If additive ≥ multiplicative on cross-validated outcomes, or a single general factor predicts as well, or there is no floor non-compensation. The register where the sphere <em>is</em> appropriate.</td></tr>
-        <tr><td class="c1"><b>R1 — frame/operand signature extends to arithmetic boundary forms (0/0, ∞) + metrology</b></td><td><span class="tier t-i">[I]</span><br>narrowed</td><td>Can a real Lawvere/Inclosure <em>fixed-point witness</em> be built for 0/0? If not (predicted), it is family resemblance, not reduction.</td></tr>
-        <tr><td class="c1"><b>D5-gating of teleology</b></td><td><span class="tier t-i">[I]</span> fork</td><td>D5-as-lookahead is supported; D5-as-consciousness is refuted by the cart-pole. Name one task that provably needs a <em>conscious</em> lookahead — none named ⇒ the gate stays at lookahead.</td></tr>
-        <tr><td class="c1"><b>R7–R9 as a theoretical contribution</b></td><td><span class="tier t-i">[I]</span> → ?<br>most at-risk</td><td>If the currency reduces to b/c (Nowak) or assortment (Fletcher–Doebeli) → no theoretical novelty; publishable only as pedagogy. "Holobiont" is contested — frame it as tested, not assumed.</td></tr>
-        <tr><td class="c1"><b>The proto-dimensional cosmology</b> (D0→D6, force-ladder, "syntropy as fifth force")</td><td><span class="tier t-c">[C]</span><br>HOLD — not for submission</td><td>Paper P's SU(3) obstruction stands; "fifth force" must never be said to a physicist. Earns external life only via the grammar (R1) and the bench (R2/R4) first.</td></tr>
+        <tr class="killed"><td class="c1"><b>R6 — empowerment = Φ×V under a conserved conjugate product φ·ν=1</b></td><td class="status"><span class="t t-c">[A] refuted</span><br>REFUTED 2026-06-10</td><td>The decomposition is <b>additive (a simplex), not multiplicative (a sphere)</b>: E = H(S)−H(S|A), so iso-empowerment sets are lines and φ·ν=1 is the <em>dead state</em>. Mortality does not rescue balance. <b>The "one geometry at all scales" claim fails here.</b> Kill criterion fired (twice) and was honoured. <em>Chart-fence (2026-06-12): E is a logarithm, so "additive" is the log-chart of multiplicative reach; the substantive kill is one axis + no conjugate coupling in the solipsistic register — not "power adds." The reflexive register (R10, below) is where the coupling is conjectured to appear: adversarial contact is the arrival of the second agent the solipsistic setting lacks.</em></td></tr>
+        <tr><td class="c1"><b>R10 — reflexive empowerment: Φ (recursion depth / plan) × ν (execution)</b></td><td class="status"><span class="t t-a">[A]</span> R10a / <span class="t t-c">[C]</span> R10b<br>EXECUTED 2026-06-12 — SPLIT; V3 2026-06-15 — depth route closed</td><td>Three deterministic games run (E2: V1+V2 2026-06-12, V3 depth-vs-depth 2026-06-15). <b>R10a supported within the models:</b> the contact register is multiplicative where the single-agent register was additive — the plan's value is <em>exactly zero</em> at no-execution ("everybody has a plan until they get punched in the mouth", as a number), reliability amplifies plan quality <em>including its badness</em> (a sign-crossing no additive surface can produce), and in the p-beauty game depth is a <em>strict total order</em> (deeper always wins; payoff = the sign of the depth difference). <b>R10b not recovered — and the depth route is now closed:</b> no conserved φ·ν frontier appears by <em>either</em> failure mode — depth <em>saturates</em> against fixed opponents (V2), and against a mutual modeller it becomes a <em>positional arms race</em> (V3) — deeper always pays, so both run to the wall, where the advantage is competed to zero at equilibrium. What survives at contact is the product and its catastrophe, not the conservation law. Across the program, three registered predictions were wrong and are scored as wrong.</td></tr>
+        <tr><td class="c1"><b>R5 — the 0/1/∞ triptych + the Euclid→Stevin→Buckingham→2019-SI arc as one story</b></td><td class="status"><span class="t t-a">[A]</span> history, <span class="t t-i">[I]</span> thesis<br>strongest surviving</td><td>If Rotman / de Courtenay already triangulate all three items and the full arc → it is exposition, not a claim.</td></tr>
+        <tr><td class="c1"><b>R4 — two-factor multiplicative structure of evaluated productivity</b> (the keystone)</td><td class="status"><span class="t t-i">[I]</span><br>real but narrow</td><td>If additive ≥ multiplicative on cross-validated outcomes, or a single general factor predicts as well, or there is no floor non-compensation. The register where the sphere <em>is</em> appropriate.</td></tr>
+        <tr><td class="c1"><b>R1 — frame/operand signature extends to arithmetic boundary forms (0/0, ∞) + metrology</b></td><td class="status"><span class="t t-i">[I]</span><br>narrowed</td><td>Can a real Lawvere/Inclosure <em>fixed-point witness</em> be built for 0/0? If not (predicted), it is family resemblance, not reduction.</td></tr>
+        <tr><td class="c1"><b>D5-gating of teleology</b></td><td class="status"><span class="t t-i">[I]</span> fork</td><td>D5-as-lookahead is supported; D5-as-consciousness is refuted by the cart-pole. Name one task that provably needs a <em>conscious</em> lookahead — none named ⇒ the gate stays at lookahead.</td></tr>
+        <tr><td class="c1"><b>R7–R9 as a theoretical contribution</b></td><td class="status"><span class="t t-i">[I]</span> → ?<br>most at-risk</td><td>If the currency reduces to b/c (Nowak) or assortment (Fletcher–Doebeli) → no theoretical novelty; publishable only as pedagogy. "Holobiont" is contested — frame it as tested, not assumed.</td></tr>
+        <tr><td class="c1"><b>The proto-dimensional cosmology</b> (D0→D6, force-ladder, "syntropy as fifth force")</td><td class="status"><span class="t t-c">[C]</span><br>HOLD — not for submission</td><td>Paper P's SU(3) obstruction stands; "fifth force" must never be said to a physicist. Earns external life only via the grammar (R1) and the bench (R2/R4) first.</td></tr>
       </tbody>
     </table>
+    </div>
   </section>
 
   <!-- WELTANSCHAUUNG -->
   <section>
-    <p class="kicker">The weltanschauung, in one honest paragraph</p>
-    <div class="weltan">
+    <p class="kicker reveal">The weltanschauung, in one honest paragraph</p>
+    <div class="weltan reveal">
       <p>Existence is the fold between a void (0) and a totality (∞), held open at a self-dual centre (1, <em>finity</em>) where coherence and viability stand in reciprocal balance. To be a determinate thing is to hold a latitude on that sphere; to act well is to move toward balance and route order down the scarcity gradient; to govern well is to refuse extraction, preserve exit, and build in your own correction. <b>The maths of the centre is real and elementary; that reality is the centre is a wager; the ethics is a posited direction, not a derived fact; and the cosmology is honest conjecture.</b> The framework's deepest commitment is not any of its claims but A7 — that it states its own tier, names its own kill criteria, and dissolves rather than ossifies. By that commitment it is, today, an unusually self-honest synthesis whose truth against the world remains to be tested — and whose next move is the experiment, not the restatement.</p>
     </div>
-    <div style="margin-top:1.6rem">
+    <div class="cta-row reveal">
       <a class="cta primary" href="../record/">The trial record →</a>
       <a class="cta" href="../book/">Read the book →</a>
       <a class="cta" href="../read/">The source library →</a>
       <a class="cta" href="../5/">See the Burrisphere →</a>
     </div>
-    <p style="color:var(--bone-faint);font-size:.9rem;margin-top:1rem;max-width:64ch">Every refutation, fence, and cut above is dated and kept on <a href="../record/" style="color:var(--bone-dim);text-decoration:underline;text-underline-offset:3px">the trial record</a> — including this year's GFS result, run and reported win or lose.</p>
+    <p class="record-note reveal">Every refutation, fence, and cut above is dated and kept on <a href="../record/">the trial record</a> — including this year's GFS result, run and reported win or lose.</p>
   </section>
 </main>
 
 <footer class="foot wrap">
-  <div class="phi">⊙ = • × ○</div>
+  <div class="glyph">⊙ = • × ○</div>
   <p>Faithful to the corpus's <span class="mono">00_THE_SEVEN_AXIOMS.md</span> and <span class="mono">00_CANONICAL_FORMULA_BLOCK.md</span>, annotated with the 2026-06-10 peer-review-program results and the 2026-07 fences (AND-class, open canon). The audit has not stopped; when it finds defects, this page changes rather than the record. Every claim carries its tier; coherence is not truth.</p>
 </footer>
+
+<script>
+(function(){
+  var rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var reveals = [].slice.call(document.querySelectorAll('.reveal:not(.in)'));
+  if (rm || !('IntersectionObserver' in window)) { reveals.forEach(function(e){e.classList.add('in');}); }
+  else {
+    var io = new IntersectionObserver(function(en){ en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {rootMargin:'0px 0px -6% 0px', threshold:0.05});
+    reveals.forEach(function(el){ io.observe(el); });
+  }
+  setTimeout(function(){ document.querySelectorAll('.reveal:not(.in)').forEach(function(e){e.classList.add('in');}); }, 2000);
+})();
+</script>
 <script defer src="/assets/js/atlas-drawer.js"></script>
 <script defer src="/assets/js/book-ai.js"></script>
 </body>
