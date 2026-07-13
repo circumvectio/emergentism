@@ -6,6 +6,7 @@ import sys
 import tracemalloc
 import unittest
 from pathlib import Path
+from unittest import mock
 
 
 COMPILER = Path(__file__).resolve().parent
@@ -274,6 +275,203 @@ def append_draft_phase(core, phase, *, include_trial=True):
         core["trials"].append(trial)
     core["phaseReceipts"].append(receipt)
     return manifest, claim, trial, receipt
+
+
+def verify_latest_draft_phase(core, phase):
+    """Close the latest phase with one role-correct PASSED review attempt."""
+    manifest = core["manifests"][-1]
+    receipt = core["phaseReceipts"][-1]
+    attempt_id = f"RVA-{phase}-001"
+    target_path, logic_path, btj_path, bundle_path = records_module.attempt_paths(
+        attempt_id
+    )
+    logic_id = f"ATT-LOGIC-{phase}-001"
+    btj_id = f"ATT-BTJ-{phase}-001"
+    attempt = {
+        "id": attempt_id,
+        "phase": phase,
+        "receiptId": receipt["id"],
+        "supersedesAttemptId": None,
+        "reviewSubjectDigest": support.RAW_HASH,
+        "reviewTargetPath": target_path,
+        "logicReviewPath": logic_path,
+        "btjReviewPath": btj_path,
+        "validationBundlePath": bundle_path,
+        "logicAttestationId": logic_id,
+        "btjAttestationId": btj_id,
+        "status": "PASSED",
+        "abandonReason": None,
+    }
+    core["reviewAttempts"].append(attempt)
+    core["reviewAttemptArtifacts"].append({
+        "attemptId": attempt_id,
+        "reviewTargetSha256": support.RAW_HASH,
+        "logicReviewSha256": support.RAW_HASH,
+        "btjReviewSha256": support.RAW_HASH,
+    })
+    for kind, attestation_id, path in (
+        ("LOGIC", logic_id, logic_path),
+        ("BTJ", btj_id, btj_path),
+    ):
+        core["reviewAttestations"].append({
+            "id": attestation_id,
+            "kind": kind,
+            "path": path,
+            "receiptId": receipt["id"],
+            "reviewerId": f"independent-{kind.lower()}-{phase.lower()}-reviewer",
+            "reviewerRole": f"Independent {kind} reviewer",
+            "independenceStatement": "No implementation role in this attempt.",
+            "reviewTargetDigest": support.RAW_HASH,
+            "verdict": "PASS",
+            "findingIds": [],
+            "openSevereFindingIds": [],
+            "approvedUpgradeSeamIds": [],
+            "approvedGateSeamIds": [],
+            "attemptId": attempt_id,
+        })
+    derived_paths = [target_path, logic_path, btj_path, bundle_path]
+    manifest["finalFiles"] = copy.deepcopy(manifest["includedFiles"])
+    manifest["finalFileCount"] = len(manifest["finalFiles"])
+    manifest["closureOnlyPaths"] = sorted(derived_paths)
+    manifest["allowedChangePaths"] = sorted(
+        set(manifest["allowedChangePaths"]) | set(derived_paths)
+    )
+    receipt.update({
+        "reviewAttemptId": attempt_id,
+        "status": "VERIFIED",
+        "reviewTargetDigest": support.RAW_HASH,
+        "logicReviewPath": logic_path,
+        "btjReviewPath": btj_path,
+        "validationBundlePath": bundle_path,
+        "validationDigest": support.RAW_HASH,
+    })
+
+
+def long_failed_review_chain(core, *, count):
+    """Install a lawful linear attempt history with one finding per predecessor."""
+    manifest = core["manifests"][0]
+    receipt = core["phaseReceipts"][0]
+    claim_id = core["claims"][0]["id"]
+    subject_path = manifest["includedFiles"][0]["path"]
+    attempts = []
+    artifacts = []
+    attestations = []
+    findings = []
+    dispositions = []
+    derived_paths = []
+
+    for number in range(1, count + 1):
+        attempt_id = f"RVA-A-{number:03d}"
+        predecessor_id = f"RVA-A-{number - 1:03d}" if number > 1 else None
+        is_leaf = number == count
+        target_path, logic_path, btj_path, bundle_path = records_module.attempt_paths(
+            attempt_id
+        )
+        finding_id = f"FND-A-{number:05d}"
+        attestation_id = f"ATT-LOGIC-A-{number:05d}"
+        attempts.append({
+            "id": attempt_id,
+            "phase": "A",
+            "receiptId": receipt["id"],
+            "supersedesAttemptId": predecessor_id,
+            "reviewSubjectDigest": support.RAW_HASH,
+            "reviewTargetPath": target_path,
+            "logicReviewPath": logic_path,
+            "btjReviewPath": btj_path,
+            "validationBundlePath": bundle_path,
+            "logicAttestationId": None if is_leaf else attestation_id,
+            "btjAttestationId": None,
+            "status": "PENDING" if is_leaf else "FAILED",
+            "abandonReason": None,
+        })
+        artifacts.append({
+            "attemptId": attempt_id,
+            "reviewTargetSha256": None if is_leaf else support.RAW_HASH,
+            "logicReviewSha256": None if is_leaf else support.RAW_HASH,
+            "btjReviewSha256": None,
+        })
+        derived_paths.extend((target_path, logic_path, btj_path, bundle_path))
+
+        if not is_leaf:
+            findings.append({
+                "id": finding_id,
+                "attemptId": attempt_id,
+                "reviewKind": "LOGIC",
+                "category": "LOGIC",
+                "severity": "MAJOR",
+                "statement": "A typed synthetic finding remains open.",
+                "claimIds": [claim_id],
+                "seamIds": [],
+                "ledgerSectionIds": ["LEDGER-PREAMBLE"],
+                "receiptIds": [receipt["id"]],
+                "subjectPaths": [subject_path],
+            })
+            attestations.append({
+                "id": attestation_id,
+                "kind": "LOGIC",
+                "path": logic_path,
+                "receiptId": receipt["id"],
+                "reviewerId": f"independent-logic-reviewer-{number}",
+                "reviewerRole": "Independent LOGIC reviewer",
+                "independenceStatement": "No implementation role in this attempt.",
+                "reviewTargetDigest": support.RAW_HASH,
+                "verdict": "FAIL",
+                "findingIds": [finding_id],
+                "openSevereFindingIds": [finding_id],
+                "approvedUpgradeSeamIds": [],
+                "approvedGateSeamIds": [],
+                "attemptId": attempt_id,
+            })
+        if predecessor_id is not None:
+            predecessor_finding_id = f"FND-A-{number - 1:05d}"
+            dispositions.append({
+                "id": f"RFD-{attempt_id}-001",
+                "findingId": predecessor_finding_id,
+                "fromAttemptId": predecessor_id,
+                "successorAttemptId": attempt_id,
+                "disposition": "ADDRESSED",
+                "rationale": "The direct successor changes the named claim endpoint.",
+                "claimIds": [claim_id],
+                "seamIds": [],
+                "ledgerSectionIds": [],
+                "receiptIds": [],
+                "subjectPaths": [],
+                "discriminatorIds": [],
+                "evidenceFiles": [],
+            })
+
+    core["reviewAttempts"] = attempts
+    core["reviewAttemptArtifacts"] = artifacts
+    core["reviewAttestations"] = attestations
+    core["reviewFindings"] = findings
+    core["reviewFindingDispositions"] = dispositions
+    receipt["reviewAttemptId"] = attempts[-1]["id"]
+    manifest["finalFiles"] = copy.deepcopy(manifest["includedFiles"])
+    manifest["finalFileCount"] = len(manifest["finalFiles"])
+    manifest["closureOnlyPaths"] = sorted(derived_paths)
+    manifest["allowedChangePaths"] = sorted(
+        set(manifest["allowedChangePaths"]) | set(derived_paths)
+    )
+
+
+class CountingDict(dict):
+    def __init__(self, *args, counter, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.counter = counter
+
+    def items(self):
+        self.counter["finding_steps"] += len(self)
+        return super().items()
+
+
+class CountingList(list):
+    def __init__(self, *args, counter, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.counter = counter
+
+    def __iter__(self):
+        self.counter["disposition_steps"] += len(self)
+        return super().__iter__()
 
 
 class VesselAndIdentityTests(unittest.TestCase):
@@ -599,7 +797,9 @@ class ReceiptBindingAndBootstrapTests(unittest.TestCase):
         core = support.build_semantic_core(bootstrap=True)
         self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
         self.assertEqual(validate(core, phase="A", bootstrap=True), [])
-        for phase, bootstrap in (("A", False), ("B", True), ("C", True), (None, False)):
+        for phase, bootstrap in (
+            ("A", False), ("B", True), ("C", True), (None, False), (None, True)
+        ):
             with self.subTest(phase=phase, bootstrap=bootstrap):
                 self.assertIn(
                     "KIN-E-RECEIPT",
@@ -697,6 +897,49 @@ class ReceiptBindingAndBootstrapTests(unittest.TestCase):
             and "requires at least one owned trial" in issue.message
             for issue in terminal_issues
         ), terminal_issues)
+
+    def test_bare_cumulative_validation_checks_each_later_phase_coverage(self):
+        rows = []
+        for phase in ("B", "C"):
+            empty = support.build_semantic_core()
+            passed_attempt(empty, receipt_status="VERIFIED")
+            if phase == "C":
+                append_draft_phase(empty, "B", include_trial=True)
+                verify_latest_draft_phase(empty, "B")
+            append_draft_phase(empty, phase, include_trial=False)
+            rows.append((f"empty Phase-{phase}", phase, empty))
+
+            open_core = support.build_semantic_core()
+            passed_attempt(open_core, receipt_status="VERIFIED")
+            if phase == "C":
+                append_draft_phase(open_core, "B", include_trial=True)
+                verify_latest_draft_phase(open_core, "B")
+            _, _, open_trial, _ = append_draft_phase(
+                open_core, phase, include_trial=True
+            )
+            open_trial.update({
+                "breakState": "ALLEGED",
+                "defectClass": "TYPE_ERROR",
+                "severity": "MAJOR",
+                "status": "TRIED",
+            })
+            rows.append((f"open-only Phase-{phase}", phase, open_core))
+
+        for label, selected_phase, core in rows:
+            receipt_position = 1 if selected_phase == "B" else 2
+            self.assertEqual(
+                kernel.validate_schema_instance(SCHEMA, "coreData", core), (), label
+            )
+            for requested_phase in (None, selected_phase):
+                with self.subTest(label=label, requested_phase=requested_phase):
+                    phase_issues = validate(core, phase=requested_phase)
+                    self.assertTrue(any(
+                        issue.path
+                        == f"core.phaseReceipts[{receipt_position}].trialIds"
+                        and issue.code == "KIN-E-RECEIPT"
+                        and "requires at least one owned trial" in issue.message
+                        for issue in phase_issues
+                    ), phase_issues)
 
     def test_bootstrap_requires_the_canonical_phase_a_manifest_identity(self):
         core = support.build_semantic_core(bootstrap=True)
@@ -982,6 +1225,44 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
         extra_artifact["attemptId"] = "RVA-A-003"
         two_leaves["reviewAttemptArtifacts"].append(extra_artifact)
         self.assertIn("KIN-E-REF", codes(validate(two_leaves, phase="A")))
+
+    def test_large_lawful_review_chain_uses_linear_history_joins(self):
+        schema_probe = support.build_semantic_core()
+        long_failed_review_chain(schema_probe, count=25)
+        self.assertEqual(
+            kernel.validate_schema_instance(SCHEMA, "coreData", schema_probe), ()
+        )
+        self.assertEqual(validate(schema_probe, phase="A"), [])
+
+        count = 5000
+        core = support.build_semantic_core()
+        long_failed_review_chain(core, count=count)
+        counter = {"finding_steps": 0, "disposition_steps": 0}
+        original_collection_index = records_module._collection_index
+        original_items = records_module.items
+
+        def counted_collection_index(value, collection):
+            index = original_collection_index(value, collection)
+            if collection == "reviewFindings":
+                return CountingDict(index, counter=counter)
+            return index
+
+        def counted_items(value, collection):
+            records = original_items(value, collection)
+            if value is core and collection == "reviewFindingDispositions":
+                return CountingList(records, counter=counter)
+            return records
+
+        with (
+            mock.patch.object(
+                records_module, "_collection_index", counted_collection_index
+            ),
+            mock.patch.object(records_module, "items", counted_items),
+        ):
+            self.assertEqual(validate(core, phase="A"), [])
+
+        self.assertLessEqual(counter["finding_steps"], count * 3, counter)
+        self.assertLessEqual(counter["disposition_steps"], count * 8, counter)
 
     def test_attestation_finding_disposition_and_typed_endpoints_resolve_exactly(self):
         core = support.build_semantic_core()

@@ -803,9 +803,9 @@ def _validate_receipts_and_manifests(
             and trials[trial_id].get("status") in {"ADJUDICATED", "CLOSED"}
         ]
         selected_for_coverage = (
-            phase == receipt_phase
+            phase is None
+            or phase == receipt_phase
             or receipt.get("status") in {"COMPLETE", "VERIFIED"}
-            or (phase is None and not items(core, "trials"))
         )
         if selected_for_coverage and not exact_empty and not owned_trials:
             coverage_context = (
@@ -1092,11 +1092,15 @@ def _validate_review_history(core: dict[str, Any], indexes: dict[str, dict[str, 
 
     dispositions = items(core, "reviewFindingDispositions")
     dispositions_by_pair: Counter[tuple[Any, Any]] = Counter()
+    dispositions_by_successor: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for position, disposition in enumerate(dispositions):
         base = f"core.reviewFindingDispositions[{position}]"
+        successor_attempt_id = disposition.get("successorAttemptId")
+        if isinstance(successor_attempt_id, str):
+            dispositions_by_successor[successor_attempt_id].append(disposition)
         finding = findings.get(disposition.get("findingId"))
         predecessor = attempts.get(disposition.get("fromAttemptId"))
-        successor = attempts.get(disposition.get("successorAttemptId"))
+        successor = attempts.get(successor_attempt_id)
         if finding is None or predecessor is None or successor is None:
             result.append(issue(base, "KIN-E-REF", "disposition finding/predecessor/successor does not resolve"))
             continue
@@ -1170,18 +1174,24 @@ def _validate_review_history(core: dict[str, Any], indexes: dict[str, dict[str, 
                 ) not in allowed_evidence:
                     result.append(issue(f"{base}.evidenceFiles", "KIN-E-REF", "process evidence is not bound to an immutable predecessor artifact or successor final file"))
 
+    findings_by_attempt: dict[str, list[str]] = defaultdict(list)
+    for finding_id, finding in findings.items():
+        finding_attempt_id = finding.get("attemptId")
+        if isinstance(finding_attempt_id, str):
+            findings_by_attempt[finding_attempt_id].append(finding_id)
+    for finding_ids in findings_by_attempt.values():
+        finding_ids.sort()
+    for successor_dispositions in dispositions_by_successor.values():
+        successor_dispositions.sort(key=lambda record: str(record.get("findingId")))
+
     for parent_id, child_ids in children.items():
         if len(child_ids) != 1:
             continue
         child_id = child_ids[0]
-        predecessor_findings = [finding_id for finding_id, finding in findings.items() if finding.get("attemptId") == parent_id]
+        predecessor_findings = findings_by_attempt.get(parent_id, ())
         if any(dispositions_by_pair[(finding_id, child_id)] != 1 for finding_id in predecessor_findings):
             result.append(issue("core.reviewFindingDispositions", "KIN-E-REF", "every predecessor finding requires exactly one successor disposition"))
-        ordered_findings = sorted(predecessor_findings)
-        chain_dispositions = sorted(
-            (record for record in dispositions if record.get("successorAttemptId") == child_id),
-            key=lambda record: str(record.get("findingId")),
-        )
+        chain_dispositions = dispositions_by_successor.get(child_id, ())
         for ordinal, record in enumerate(chain_dispositions, start=1):
             expected_id = f"RFD-{child_id}-{ordinal:03d}"
             if record.get("id") != expected_id:
