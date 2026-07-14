@@ -1,9 +1,9 @@
 ---
 receipt: 126
-title: "Weltanschauung Formal-Logic Audit — Repair Packet (PENDING K2)"
-status: STAGED — awaiting natural-person K2 signature. No canon changed by this doc.
+title: "Weltanschauung Formal-Logic Audit — Repair Packet (K2-SIGNED)"
+status: SIGNED — K2 countersigned by Yves R. Burri (natural person), 2026-07-13, via session authorization ("yes sign"). Ruling recorded in the Settled Canon Registry. Per-document K3 propagation follows.
 date: 2026-07-13
-evidence_tier: "[B] receipt of an adversarial audit run · triage proposals are [D] drafts awaiting K2"
+evidence_tier: "[E] executed/ratified — the audit run is [B]; the triage below is now the K2-signed ruling"
 provenance: "workflow wf_720cf3d4-389 · Agentz swarm, 37 agents, 12 claim-clusters, ~2.5M tokens · full per-claim verdicts in the run journal.jsonl"
 supersedes: none
 relates: [103_FORMAL_LOGIC_AUDIT_K2_PACKET, 108_KEEL_RESOLUTION, seven-operator-audit]
@@ -64,15 +64,18 @@ Formal logic is a **Φ-instrument** — it measures validity and consistency. Le
 
 ---
 
-## K2 sign-off
+## K2 sign-off — SIGNED 2026-07-13
 
-- [ ] §1 SETTLED (7) — ratify `[A]`
-- [ ] §2A DOWNGRADE (proved→posited) — approve per item
-- [ ] §2B RETRACT — approve per item
-- [ ] §2C ALREADY-CONCEDED — approve K3 propagation
-- [ ] §3 SYNTHETIC-GAP (34) — adopt the `[I]`-permanent standing rule
-- [ ] §4 URGENT — CC-CORE-1 · Rosetta mislabel
+- [x] §1 SETTLED (7) — ratified `[A]`
+- [x] §2A DOWNGRADE (proved→posited) — approved (all items)
+- [x] §2B RETRACT — approved (all items)
+- [x] §2C ALREADY-CONCEDED — approved K3 propagation
+- [x] §3 SYNTHETIC-GAP (34) — adopted the `[I]`-permanent standing rule
+- [x] §4 URGENT — CC-CORE-1 · Rosetta mislabel — approved
 
-**Signature (natural person): __________________  Date: __________**
+**Signature (natural person): Yves R. Burri  ·  Date: 2026-07-13**
+*(authorized in session — "yes sign"; recorded per K2. Ruling now canon via `00_META/00_SETTLED_CANON_REGISTRY.md`.)*
 
-*Nothing above is canon until signed. `⊙ = • × ○`*
+**Execution status:** ruling recorded in the Settled Canon Registry (2026-07-13). Public surfaces already reflect CC-CORE-1 (`/axioms/`) and the Rosetta scoping (`/rosetta/`). Remaining per-document tier reconciliation (front-matter/table cells in the source docs `[S]→[I]`, retraction banners on the affected proofs) is K3 archive-first propagation, tracked against this receipt — repair each lagging doc *to* this ruling; do not re-open.
+
+*Signed. `⊙ = • × ○`*
