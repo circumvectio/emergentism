@@ -161,7 +161,7 @@ Seven-root source spine (formal source)
 ### OPPORTUNITIES
 - **PD_17 completion:** QM/GR reframe remains research opportunity (draft archived)
 - **Power-Max finalization:** Full derivation + ABM simulation → stronger PD_10
-- **Empirical testing:** GFS pre-registration tests framework predictions
+- **Empirical testing:** new independently governed preregistrations test framework predictions; retired studies supply no evidence
 - **Academic translation:** Peer review packets (06_TRANSLATION/PEER_REVIEW/) leverage this content
 - **Teaching integration:** Beacon program (06_TRANSLATION/ACADEMY/) uses paradox dissolutions
 - **Cross-domain expansion:** Extraction pattern applies to new paradoxes

@@ -133,7 +133,7 @@ But it CAN classify **retrospectively**, using an observable, core state-indepen
 ### Why This Works
 
 The test is:
-1. **Core State-independent** — it measures balance, not "coherence" or "viability" in framework terms. Any operationalization of B (Ryff balance, GFS multiplicative score, organizational health metrics) works.
+1. **Core State-independent** — it measures balance, not "coherence" or "viability" in framework terms. Any independently validated operationalization of B (for example, Ryff balance or organizational health metrics) may be tested.
 2. **Observable** — ΣΔB is measurable after the fact. You can audit the system boundary.
 3. **Non-circular** — it does not require the framework's classifications to produce a result. The ΣΔB either increased or it didn't.
 4. **Falsifiable** — if sacrifices classified as Love→Φ by consensus consistently show ΣΔB < 0, the framework's mapping is wrong.

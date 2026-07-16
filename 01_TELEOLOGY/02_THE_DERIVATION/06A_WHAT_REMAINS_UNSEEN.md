@@ -130,19 +130,16 @@ Nietzsche saw the tendency. He misidentified its direction. He thought it was to
 
 ---
 
-### 37. The GFS Is Not Just a Test — It Is the Experiment That Determines the Type of Object Emergentism Is
+### 37. No Single Experiment Determines What Kind of Object Emergentism Is
 
-Observation 28 said the GFS is existential. I want to sharpen this.
+The earlier claim that one survey could collapse the status of the entire
+worldview confused a proxy test with its target. A study may support, weaken,
+or kill only the operational claim it actually measures. Mathematics,
+ontology, ethics, and implementation each retain their own proof burdens.
 
-If GFS confirms multiplicative (φ × ν): Emergentism gains an empirical bridge for wellbeing in the tested domain.
-
-If GFS shows additive (φ + ν) works equally well: Emergentism is a **useful model**. Like Newtonian gravity — correct enough, but not fundamental.
-
-If GFS shows neither predicts: Emergentism is a **beautiful metaphor**. Internally consistent, aesthetically powerful, empirically empty.
-
-These three outcomes are not grades of success. They are three different KINDS OF THING. The framework is currently in superposition — it is all three simultaneously until the measurement collapses it. The GFS IS the measurement.
-
-April 8 is not a test date. It is a **wave function collapse**. [C]
+The former survey lane is retired. Its most valuable result is methodological:
+never make one instrument existential, and never let a failed construct mapping
+become either confirmation or exculpation. [S/I]
 
 ---
 

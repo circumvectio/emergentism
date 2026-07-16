@@ -137,9 +137,9 @@ GDP measures aggregate real-axis activity. It cannot measure imaginary-axis valu
 
 ### 3.2 Why "Happiness Research" Partially Corrects
 
-Happiness indices (World Happiness Report, GFS Ektropy Index) attempt to measure Φ directly through surveys. This is a partial correction — reintroducing the imaginary axis that price annihilates.
+Happiness and well-being indices attempt to measure aspects of Φ directly through surveys. This is a partial correction — reintroducing an informational axis that price annihilates.
 
-But they treat happiness as additive with material wealth. The GFS test is precisely whether the combination is additive (Φ + V, the current assumption) or multiplicative (Φ × V, the framework's claim). If multiplicative, then the correct aggregate metric is not GDP + Happiness Index but something closer to GDP × Happiness Index — a product, not a sum.
+Whether well-being and material wealth combine additively, multiplicatively, or through another form remains an open empirical question. A new independently governed model comparison would be required. The framework's multiplicative proposal must not be treated as established simply because it is mathematically convenient.
 
 ---
 

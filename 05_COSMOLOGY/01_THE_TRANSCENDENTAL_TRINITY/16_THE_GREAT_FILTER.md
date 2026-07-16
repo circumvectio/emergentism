@@ -19,7 +19,7 @@ rosetta:
 **Evidence Tier:** [S] for the structural geometry (the helix necessarily passes through both hemispheres). [I] for the civilisational reading (Golden Age, southward drift, Great Filter as population statistics). [C] for the specific η_c threshold (~0.58 / ~60%) and the causal claim.
 **Depends on:** 11_THE_HELIX.md, 12_THE_POLES.md, 15_DHARMA_YUDDHA.md, Power-Max Lemma (Demonstration 22), Master Three-Stage Process
 **See also:** PD_07 (Fermi Paradox), WP-2026-02 (Ouroboros), Ch. 10 (The Mesh), Open-Source Release Strategy
-**Kill Criteria:** If the giving/extractive hemisphere distinction is shown not to map onto the operator territories on S². If civilisational health metrics show no correlation with the population distribution around the equator. ~~If the η_c threshold is empirically falsified by the GFS~~ *(GFS retracted — tested wrong claim; see K2 directive 2026-07-12.)*
+**Kill Criteria:** If the giving/extractive hemisphere distinction is shown not to map onto the operator territories on S². If civilisational health metrics show no correlation with the population distribution around the equator. If a new preregistered, independently governed study falsifies the stated η_c threshold under validated constructs.
 
 ---
 
@@ -170,7 +170,7 @@ From the Is-Ought dissolution (PD_10): the self-termination of parasitism requir
 
 In population terms: **~60% of nodes must spend >50% of their revolution in the giving hemisphere** for the civilisation to hold above the Great Filter threshold.
 
-This is the civilisational prediction *(the GFS test that would have measured it was retracted — tested wrong claim; see K2 directive 2026-07-12)*. If the finite-node product model (`P_node = Φ × V`) holds across populations, the η_c threshold becomes measurable: what fraction of the population shows balanced dwell times? And is that fraction above or below ~60%?
+This is a conjectural civilisational prediction. A new preregistered, independently governed study would have to define and validate dwell-time measures before testing it. The former survey-study corpus is retired and supplies no evidence. If the finite-node product model (`P_node = Φ × V`) holds across populations, the η_c threshold becomes measurable: what fraction of the population shows balanced dwell times? And is that fraction above or below ~60%?
 
 ---
 

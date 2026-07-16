@@ -257,13 +257,13 @@ If the core conjecture is true:
 
 The framework's own ethics demand these:
 
-1. **GFS Wave 1 (April 8, 2026):** If φ x ν does NOT predict flourishing better than φ + ν across 15+ of 23 countries, the B = flourishing identification (Steel Thread Link 9) stays [I]. The core conjecture loses its empirical bridge.
+1. **P-28a (the physics prediction):** If the coupling constants cannot be derived from S² geometry or an enrichment thereof, the Four Forces mapping stays [C] and may be numerology.
 
-2. **P-28a (the physics prediction):** If the coupling constants cannot be derived from S² geometry or an enrichment thereof, the Four Forces mapping stays [C] and may be numerology.
+2. **Independent implementation (G5):** If no one outside the organism can reproduce the framework's predictions independently, it remains a beautiful closed system. An egg that never hatched.
 
-3. **Independent implementation (G5):** If no one outside the organism can reproduce the framework's predictions independently, it remains a beautiful closed system. An egg that never hatched.
+3. **The Godel criterion (Decentralized Authority Model):** If the framework becomes a religion — if adherents worship it instead of using it — it has failed on its own terms. Adherents = failure. The ladder must be thrown away after climbing.
 
-4. **The Godel criterion (Decentralized Authority Model):** If the framework becomes a religion — if adherents worship it instead of using it — it has failed on its own terms. Adherents = failure. The ladder must be thrown away after climbing.
+The former survey-study condition is [retired archive provenance](../../90_ARCHIVE/2026_07_13_gfs_retraction/README.md), not a live kill criterion or empirical bridge.
 
 ---
 
