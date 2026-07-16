@@ -509,15 +509,15 @@ def _validate_schema_document(schema: Any) -> tuple[Issue, ...]:
     return _ordered(issues)
 
 
-def validate_schema_document(schema: Any) -> tuple[Issue, ...]:
+def validate_schema_document(schema: object) -> list[Issue]:
     try:
-        return _validate_schema_document(schema)
+        return list(_validate_schema_document(schema))
     except RecursionError:
-        return (_issue(
+        return [_issue(
             "$",
             "schema exceeds the supported nesting or evaluation depth",
             keyword=True,
-        ),)
+        )]
 
 
 def load_schema(path: Path) -> dict[str, Any]:
@@ -695,7 +695,7 @@ def _evaluate(
 
 
 def _validate_definition(schema: Any, name: str, instance: Any) -> tuple[Issue, ...]:
-    schema_issues = validate_schema_document(schema)
+    schema_issues = tuple(validate_schema_document(schema))
     if schema_issues:
         return schema_issues
     assert isinstance(schema, dict)
@@ -714,14 +714,18 @@ def _validate_definition(schema: Any, name: str, instance: Any) -> tuple[Issue, 
         ),)
 
 
-def validate_schema_instance(schema: Any, role: str, instance: Any) -> tuple[Issue, ...]:
+def validate_schema_instance(
+    schema: dict[str, object], root_role: str, instance: object
+) -> list[Issue]:
     schema_issues = validate_schema_document(schema)
     if schema_issues:
         return schema_issues
-    if role not in ROOT_ROLES:
-        return (_issue("role", f"unsupported root role: {role}"),)
-    return _validate_definition(schema, role, instance)
+    if root_role not in ROOT_ROLES:
+        return [_issue("role", f"unsupported root role: {root_role}")]
+    return list(_validate_definition(schema, root_role, instance))
 
 
-def validate_named_definition(schema: Any, name: str, instance: Any) -> tuple[Issue, ...]:
-    return _validate_definition(schema, name, instance)
+def validate_named_definition(
+    schema: dict[str, object], def_name: str, instance: object
+) -> list[Issue]:
+    return list(_validate_definition(schema, def_name, instance))

@@ -1010,7 +1010,7 @@ class LedgerSynchronizationTests(unittest.TestCase):
                 schema, "reviewSeamProjection",
                 terminal_result.sections[0].seam_projection,
             ),
-            (),
+            [],
         )
 
     def test_deep_equality_drift_is_rejected_at_json_offset(self):

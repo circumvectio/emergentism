@@ -601,7 +601,7 @@ class ProcessEvidenceCountingList(list):
 
 class VesselAndIdentityTests(unittest.TestCase):
     def assertSchemaValid(self, value):
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", value), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", value), [])
 
     def assertPrimary(self, core, expected, *, phase="A", bootstrap=False):
         issues = validate(core, phase=phase, bootstrap=bootstrap)
@@ -740,7 +740,7 @@ class VesselAndIdentityTests(unittest.TestCase):
 
 class ClaimGraphTests(unittest.TestCase):
     def assertSchemaValid(self, core):
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), [])
 
     def test_dependency_support_and_mixed_cycles_are_rejected_canonically(self):
         cases = []
@@ -891,7 +891,7 @@ class ReceiptBindingAndBootstrapTests(unittest.TestCase):
         mutations.append(("owner path", wrong_owner))
         for label, mutated in mutations:
             with self.subTest(label=label):
-                self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", mutated), ())
+                self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", mutated), [])
                 self.assertIn("KIN-E-RECEIPT", codes(validate(mutated, phase="A")))
 
     def test_phase_a_binding_hash_cannot_be_laundered_by_a_later_trial(self):
@@ -916,7 +916,7 @@ class ReceiptBindingAndBootstrapTests(unittest.TestCase):
         )
         owner["phases"] = sorted(set(owner["phases"] + ["B"]))
 
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), [])
         for phase in ("A", "B", None):
             with self.subTest(phase=phase):
                 self.assertIn("KIN-E-RECEIPT", codes(validate(core, phase=phase)))
@@ -947,7 +947,7 @@ class ReceiptBindingAndBootstrapTests(unittest.TestCase):
 
     def test_only_explicit_phase_a_bootstrap_accepts_empty_trials(self):
         core = support.build_semantic_core(bootstrap=True)
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), [])
         self.assertEqual(validate(core, phase="A", bootstrap=True), [])
         for phase, bootstrap in (
             ("A", False), ("B", True), ("C", True), (None, False), (None, True)
@@ -962,7 +962,7 @@ class ReceiptBindingAndBootstrapTests(unittest.TestCase):
         base = support.build_semantic_core()
         passed_attempt(base, receipt_status="VERIFIED")
         append_draft_phase(base, "B")
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", base), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", base), [])
         self.assertEqual(validate(base, phase="B"), [])
 
         mutations = []
@@ -995,7 +995,7 @@ class ReceiptBindingAndBootstrapTests(unittest.TestCase):
             with self.subTest(label=label):
                 self.assertEqual(
                     kernel.validate_schema_instance(SCHEMA, "coreData", mutated),
-                    (),
+                    [],
                 )
                 self.assertIn("KIN-E-REF", codes(validate(mutated, phase="B")))
 
@@ -1006,7 +1006,7 @@ class ReceiptBindingAndBootstrapTests(unittest.TestCase):
             if phase == "C":
                 append_draft_phase(core, "B", include_trial=True)
             append_draft_phase(core, phase, include_trial=False)
-            self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+            self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), [])
             phase_issues = validate(core, phase=phase)
             with self.subTest(phase=phase):
                 self.assertTrue(any(
@@ -1025,7 +1025,7 @@ class ReceiptBindingAndBootstrapTests(unittest.TestCase):
             "severity": "MAJOR",
             "status": "TRIED",
         })
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", open_core), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", open_core), [])
         open_issues = validate(open_core, phase="B")
         self.assertTrue(any(
             issue.code == "KIN-E-RECEIPT"
@@ -1042,7 +1042,7 @@ class ReceiptBindingAndBootstrapTests(unittest.TestCase):
             if trial["id"] not in phase_a_trial_ids
         ]
         terminal_core["phaseReceipts"][0]["trialIds"] = []
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", terminal_core), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", terminal_core), [])
         terminal_issues = validate(terminal_core, phase="B")
         self.assertTrue(any(
             issue.path == "core.phaseReceipts[0].trialIds"
@@ -1080,7 +1080,7 @@ class ReceiptBindingAndBootstrapTests(unittest.TestCase):
         for label, selected_phase, core in rows:
             receipt_position = 1 if selected_phase == "B" else 2
             self.assertEqual(
-                kernel.validate_schema_instance(SCHEMA, "coreData", core), (), label
+                kernel.validate_schema_instance(SCHEMA, "coreData", core), [], label
             )
             for requested_phase in (None, selected_phase):
                 with self.subTest(label=label, requested_phase=requested_phase):
@@ -1097,13 +1097,13 @@ class ReceiptBindingAndBootstrapTests(unittest.TestCase):
         core = support.build_semantic_core(bootstrap=True)
         core["manifests"][0]["id"] = "MAN-A-999"
         core["phaseReceipts"][0]["manifestId"] = "MAN-A-999"
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), [])
         self.assertIn("KIN-E-RECEIPT", codes(validate(core, phase="A", bootstrap=True)))
 
     def test_attempt_sensitive_final_snapshot_and_closure_union(self):
         core = support.build_semantic_core()
         attempt, _ = pending_attempt(core)
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), [])
         self.assertEqual(validate(core, phase="A"), [])
 
         missing_final = copy.deepcopy(core)
@@ -1122,12 +1122,12 @@ class ReceiptBindingAndBootstrapTests(unittest.TestCase):
     def test_receipt_state_and_closure_fields_bind_the_current_attempt_exactly(self):
         draft = support.build_semantic_core()
         passed_attempt(draft, receipt_status="DRAFT")
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", draft), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", draft), [])
         self.assertIn("KIN-E-RECEIPT", codes(validate(draft, phase="A")))
 
         complete = support.build_semantic_core()
         attempt, _, _ = passed_attempt(complete, receipt_status="COMPLETE")
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", complete), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", complete), [])
         self.assertEqual(validate(complete, phase="A"), [])
         complete_rows = []
         for field in ("logicReviewPath", "btjReviewPath"):
@@ -1139,18 +1139,18 @@ class ReceiptBindingAndBootstrapTests(unittest.TestCase):
         complete_rows.append(("reviewTargetDigest", wrong_target))
         for label, mutated in complete_rows:
             with self.subTest(status="COMPLETE", field=label):
-                self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", mutated), ())
+                self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", mutated), [])
                 self.assertIn("KIN-E-RECEIPT", codes(validate(mutated, phase="A")))
 
         verified = support.build_semantic_core()
         attempt, _, _ = passed_attempt(verified, receipt_status="VERIFIED")
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", verified), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", verified), [])
         self.assertEqual(validate(verified, phase="A"), [])
         wrong_bundle = copy.deepcopy(verified)
         wrong_bundle["phaseReceipts"][0]["validationBundlePath"] = (
             "09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_review_attempts/RVA-A-999/validation_bundle.json"
         )
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", wrong_bundle), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", wrong_bundle), [])
         self.assertIn("KIN-E-RECEIPT", codes(validate(wrong_bundle, phase="A")))
 
 
@@ -1192,7 +1192,7 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
     def test_fixture_cardinality_and_exact_antibody_dispatch_membership(self):
         core = support.build_semantic_core()
         antibody = support.add_antibody_fixture_set(core)
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), [])
         self.assertEqual(validate(core, phase="A"), [])
         core["fixtures"] = [
             fixture for fixture in core["fixtures"]
@@ -1208,7 +1208,7 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
             "ownerSource": wrong_claim["claims"][1]["ownerSourceId"],
             "ownerAnchor": wrong_claim["claims"][1]["ownerAnchor"],
         })
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", wrong_claim), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", wrong_claim), [])
         self.assertIn("KIN-E-REF", codes(validate(wrong_claim, phase="A")))
 
         wrong_discriminator = support.build_semantic_core()
@@ -1225,7 +1225,7 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
         }
         wrong_discriminator["discriminators"].append(discriminator)
         seam["discriminatorIds"] = [discriminator["id"]]
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", wrong_discriminator), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", wrong_discriminator), [])
         self.assertIn("KIN-E-REF", codes(validate(wrong_discriminator, phase="A")))
 
     def test_seam_frozen_quote_hash_owner_and_anchor_match_one_owning_trial(self):
@@ -1260,7 +1260,7 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
 
         for label, core in rows:
             with self.subTest(label=label):
-                self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+                self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), [])
                 self.assertIn("KIN-E-REF", codes(validate(core, phase="A")))
 
     def test_seam_claim_projection_has_local_typed_term_and_support_id_uniqueness(self):
@@ -1269,7 +1269,7 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
         term = copy.deepcopy(seam["typedTerms"][0])
         term.update({"type": "Different projected prose type", "definition": "Different projected prose."})
         seam["typedTerms"].append(term)
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", duplicate_term), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", duplicate_term), [])
         self.assertIn("KIN-E-ID", codes(validate(duplicate_term, phase="A")))
 
         duplicate_link = support.build_semantic_core()
@@ -1294,7 +1294,7 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
         ]
         seam["priorSupportLinks"] = copy.deepcopy(links)
         seam["supportLinks"] = copy.deepcopy(links)
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", duplicate_link), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", duplicate_link), [])
         self.assertIn("KIN-E-ID", codes(validate(duplicate_link, phase="A")))
 
     def test_review_attempt_artifact_bijection_paths_and_round_trip_id(self):
@@ -1344,13 +1344,13 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
         manifest["allowedChangePaths"] = sorted(
             (set(manifest["allowedChangePaths"]) - old_paths) | set(new_paths)
         )
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), [])
         self.assertEqual(validate(core, phase="A"), [])
 
     def test_review_chain_is_root_to_leaf_acyclic_and_passed_is_terminal(self):
         core = support.build_semantic_core()
         predecessor, successor, *_ = fail_then_successor(core)
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), [])
         self.assertEqual(validate(core, phase="A"), [])
 
         reversed_chain = copy.deepcopy(core)
@@ -1382,7 +1382,7 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
         schema_probe = support.build_semantic_core()
         long_failed_review_chain(schema_probe, count=25)
         self.assertEqual(
-            kernel.validate_schema_instance(SCHEMA, "coreData", schema_probe), ()
+            kernel.validate_schema_instance(SCHEMA, "coreData", schema_probe), []
         )
         self.assertEqual(validate(schema_probe, phase="A"), [])
 
@@ -1449,7 +1449,7 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
         schema_probe = support.build_semantic_core()
         many_process_invalid_dispositions(schema_probe, count=25)
         self.assertEqual(
-            kernel.validate_schema_instance(SCHEMA, "coreData", schema_probe), ()
+            kernel.validate_schema_instance(SCHEMA, "coreData", schema_probe), []
         )
         self.assertEqual(validate(schema_probe, phase="A"), [])
 
@@ -1484,7 +1484,7 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
         schema_probe = support.build_semantic_core()
         many_ancestor_process_invalid_dispositions(schema_probe, count=25)
         self.assertEqual(
-            kernel.validate_schema_instance(SCHEMA, "coreData", schema_probe), ()
+            kernel.validate_schema_instance(SCHEMA, "coreData", schema_probe), []
         )
         first_issues = validate(schema_probe, phase="A")
         second_issues = validate(schema_probe, phase="A")
@@ -1577,14 +1577,14 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
         wrong_pending_slot["reviewAttempts"][0]["btjAttestationId"] = "ATT-LOGIC-A-001"
         wrong_pending_slot["reviewAttemptArtifacts"][0]["logicReviewSha256"] = None
         wrong_pending_slot["reviewAttemptArtifacts"][0]["btjReviewSha256"] = support.RAW_HASH
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", wrong_pending_slot), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", wrong_pending_slot), [])
         self.assertIn("KIN-E-REF", codes(validate(wrong_pending_slot, phase="A")))
 
         failed = support.build_semantic_core()
         predecessor, _, _, _, _ = fail_then_successor(failed)
         predecessor["btjAttestationId"] = predecessor["logicAttestationId"]
         failed["reviewAttemptArtifacts"][0]["btjReviewSha256"] = support.RAW_HASH
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", failed), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", failed), [])
         self.assertIn("KIN-E-STATE", codes(validate(failed, phase="A")))
 
         abandoned = support.build_semantic_core()
@@ -1596,7 +1596,7 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
             "abandonReason": "The duplicated review role invalidated this attempt.",
         })
         artifact["btjReviewSha256"] = support.RAW_HASH
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", abandoned), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", abandoned), [])
         self.assertIn("KIN-E-STATE", codes(validate(abandoned, phase="A")))
 
         for receipt_status in ("COMPLETE", "VERIFIED"):
@@ -1605,7 +1605,7 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
             terminal["reviewAttestations"] = [attestations[0]]
             attempt["btjAttestationId"] = attempt["logicAttestationId"]
             with self.subTest(receipt_status=receipt_status):
-                self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", terminal), ())
+                self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", terminal), [])
                 self.assertIn("KIN-E-STATE", codes(validate(terminal, phase="A")))
 
     def test_review_findings_and_dispositions_are_scoped_to_their_attempt_subject(self):
@@ -1621,7 +1621,7 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
         unrelated["premises"][0]["id"] = "PREM-A-999"
         finding_core["claims"].append(unrelated)
         finding_core["reviewFindings"][0]["claimIds"] = [unrelated["id"]]
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", finding_core), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", finding_core), [])
         self.assertIn("KIN-E-REF", codes(validate(finding_core, phase="A")))
 
         disposition_core = support.build_semantic_core()
@@ -1636,7 +1636,7 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
         unrelated["premises"][0]["id"] = "PREM-A-999"
         disposition_core["claims"].append(unrelated)
         disposition_core["reviewFindingDispositions"][0]["claimIds"] = [unrelated["id"]]
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", disposition_core), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", disposition_core), [])
         self.assertIn("KIN-E-REF", codes(validate(disposition_core, phase="A")))
 
         path_core = support.build_semantic_core()
@@ -1649,7 +1649,7 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
         path_core["manifests"][0]["candidateFiles"].append(candidate_only)
         path_core["manifests"][0]["candidateFileCount"] += 1
         path_core["reviewFindings"][0]["subjectPaths"] = [candidate_only["path"]]
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", path_core), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", path_core), [])
         self.assertIn("KIN-E-REF", codes(validate(path_core, phase="A")))
 
     def test_process_invalid_evidence_is_scoped_to_the_successor_manifest(self):
@@ -1691,7 +1691,7 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
             "claimIds": [],
             "evidenceFiles": [{"path": file_record["path"], "sha256": file_record["sha256"]}],
         })
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), [])
         self.assertIn("KIN-E-REF", codes(validate(core, phase="A")))
 
     def test_review_artifact_hashes_and_process_evidence_are_typed(self):
@@ -1711,7 +1711,7 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
                 "sha256": support.RAW_HASH,
             }],
         })
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", invalid_process), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", invalid_process), [])
         self.assertIn("KIN-E-REF", codes(validate(invalid_process, phase="A")))
 
         missing_attestation = support.build_semantic_core()
@@ -1721,7 +1721,7 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
             "reviewTargetSha256": support.RAW_HASH,
             "logicReviewSha256": support.RAW_HASH,
         })
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", missing_attestation), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", missing_attestation), [])
         self.assertIn("KIN-E-REF", codes(validate(missing_attestation, phase="A")))
 
 

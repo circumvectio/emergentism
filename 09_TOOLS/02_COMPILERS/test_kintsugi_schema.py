@@ -84,15 +84,15 @@ class SchemaAssertions(unittest.TestCase):
         cls.schema = schema_value()
 
     def assertValidRoot(self, role, value):
-        self.assertEqual(kernel.validate_schema_instance(self.schema, role, value), ())
+        self.assertEqual(kernel.validate_schema_instance(self.schema, role, value), [])
 
     def assertValidDef(self, name, value):
-        self.assertEqual(kernel.validate_named_definition(self.schema, name, value), ())
+        self.assertEqual(kernel.validate_named_definition(self.schema, name, value), [])
 
     def assertSchemaFailure(self, issues):
         self.assertTrue(issues)
         self.assertTrue(all(issue.code in {"KIN-E-SCHEMA", "KIN-E-SCHEMA-KEYWORD"} for issue in issues))
-        self.assertEqual(tuple(sorted(issues)), issues)
+        self.assertEqual(sorted(issues), issues)
 
 
 class CompatibilityExtractionTests(unittest.TestCase):
@@ -179,6 +179,67 @@ class CompatibilityExtractionTests(unittest.TestCase):
         self.assertEqual(stderr.getvalue(), "")
 
 
+class StablePackageSurfaceTests(SchemaAssertions):
+    def test_canonical_json_loader_is_public_and_preserves_canonical_contract(self):
+        from kintsugi_kernel import codec
+
+        self.assertTrue(
+            hasattr(codec, "load_canonical_json"),
+            "codec must publish the frozen load_canonical_json name",
+        )
+        self.assertTrue(
+            hasattr(kernel, "load_canonical_json"),
+            "package root must export the frozen load_canonical_json name",
+        )
+        self.assertIs(kernel.load_canonical_json, codec.load_canonical_json)
+
+        value = {"alpha": [1, True, None], "omega": "truth"}
+        with tempfile.TemporaryDirectory() as directory:
+            canonical = Path(directory) / "canonical.json"
+            canonical.write_bytes(kernel.canonical_json_bytes(value))
+            self.assertEqual(codec.load_canonical_json(canonical), value)
+
+            noncanonical = Path(directory) / "noncanonical.json"
+            noncanonical.write_text(
+                json.dumps(value, ensure_ascii=False, indent=2),
+                encoding="utf-8",
+            )
+            with self.assertRaises(kernel.KintsugiError) as caught:
+                codec.load_canonical_json(noncanonical)
+        self.assertEqual(caught.exception.code, "KIN-E-CANONICAL")
+
+    def test_schema_validator_frozen_keyword_names_are_callable(self):
+        core = support.build_core_data()
+        try:
+            root_issues = kernel.validate_schema_instance(
+                self.schema,
+                root_role="coreData",
+                instance=core,
+            )
+            definition_issues = kernel.validate_named_definition(
+                self.schema,
+                def_name="text",
+                instance="truth",
+            )
+        except TypeError as exc:
+            self.fail(f"frozen schema keyword call rejected: {exc}")
+        self.assertEqual(root_issues, [])
+        self.assertEqual(definition_issues, [])
+
+    def test_public_schema_validators_return_actual_lists(self):
+        results = (
+            kernel.validate_schema_document(self.schema),
+            kernel.validate_schema_instance(
+                self.schema, "coreData", support.build_core_data()
+            ),
+            kernel.validate_named_definition(self.schema, "text", "truth"),
+        )
+        for result in results:
+            with self.subTest(validator_result=result):
+                self.assertIs(type(result), list)
+                self.assertEqual(result, [])
+
+
 class FrozenSchemaArtifactTests(SchemaAssertions):
     def test_appendix_and_artifact_are_exact_canonical_bytes(self):
         payload = SCHEMA_PATH.read_bytes()
@@ -203,7 +264,7 @@ class FrozenSchemaArtifactTests(SchemaAssertions):
 
     def test_declared_keyword_vocabulary_is_exactly_consumed(self):
         self.assertEqual(schema_keyword_set(self.schema), set(kernel.SCHEMA_KEYWORDS))
-        self.assertEqual(kernel.validate_schema_document(self.schema), ())
+        self.assertEqual(kernel.validate_schema_document(self.schema), [])
 
     def test_every_declared_object_is_closed(self):
         objects = [node for node in walk_schemas(self.schema) if node.get("type") == "object"]
@@ -277,18 +338,18 @@ class FrozenSchemaArtifactTests(SchemaAssertions):
             "literalEnum": {"enum": [{"$ref": "#/$defs/literalEnum"}]},
         })
 
-        self.assertEqual(kernel.validate_schema_document(literal_refs), ())
+        self.assertEqual(kernel.validate_schema_document(literal_refs), [])
         self.assertEqual(
             kernel.validate_named_definition(
                 literal_refs, "literalConst", {"$ref": "#/$defs/literalConst"}
             ),
-            (),
+            [],
         )
         self.assertEqual(
             kernel.validate_named_definition(
                 literal_refs, "literalEnum", {"$ref": "#/$defs/literalEnum"}
             ),
-            (),
+            [],
         )
 
     def test_local_refs_resolve_only_to_declared_subschema_locations(self):
@@ -324,7 +385,7 @@ class FrozenSchemaArtifactTests(SchemaAssertions):
             },
         })
 
-        self.assertEqual(kernel.validate_schema_document(referenced), ())
+        self.assertEqual(kernel.validate_schema_document(referenced), [])
         for name in (
             "allTarget",
             "anyTarget",
@@ -338,7 +399,7 @@ class FrozenSchemaArtifactTests(SchemaAssertions):
         ):
             with self.subTest(name=name):
                 self.assertEqual(
-                    kernel.validate_named_definition(referenced, name, "valid"), ()
+                    kernel.validate_named_definition(referenced, name, "valid"), []
                 )
                 self.assertSchemaFailure(
                     kernel.validate_named_definition(referenced, name, 1)
@@ -465,12 +526,12 @@ class FrozenSchemaArtifactTests(SchemaAssertions):
             },
         }
 
-        self.assertEqual(kernel.validate_schema_document(recursive), ())
+        self.assertEqual(kernel.validate_schema_document(recursive), [])
         self.assertEqual(
             kernel.validate_named_definition(
                 recursive, "node", {"next": {"next": {}}}
             ),
-            (),
+            [],
         )
         self.assertSchemaFailure(kernel.validate_named_definition(
             recursive, "node", {"next": {"next": 1}}
@@ -479,7 +540,7 @@ class FrozenSchemaArtifactTests(SchemaAssertions):
             kernel.validate_named_definition(
                 recursive, "nestedArray", [[], [[]], [[[]]]]
             ),
-            (),
+            [],
         )
         self.assertSchemaFailure(kernel.validate_named_definition(
             recursive, "nestedArray", [[], [1]]
@@ -498,8 +559,8 @@ class FrozenSchemaArtifactTests(SchemaAssertions):
                 else {"type": "null"}
             )
 
-        self.assertEqual(kernel.validate_schema_document(chain), ())
-        self.assertEqual(kernel.validate_named_definition(chain, "x0", None), ())
+        self.assertEqual(kernel.validate_schema_document(chain), [])
+        self.assertEqual(kernel.validate_named_definition(chain, "x0", None), [])
         with tempfile.TemporaryDirectory() as directory:
             schema_path = Path(directory) / "long-ref-chain.json"
             schema_path.write_bytes(kernel.canonical_json_bytes(chain))
@@ -518,8 +579,8 @@ class FrozenSchemaArtifactTests(SchemaAssertions):
                 else {"type": "null", "const": None}
             )
 
-        self.assertEqual(kernel.validate_schema_document(chain), ())
-        self.assertEqual(kernel.validate_named_definition(chain, "x0", None), ())
+        self.assertEqual(kernel.validate_schema_document(chain), [])
+        self.assertEqual(kernel.validate_named_definition(chain, "x0", None), [])
         issues = kernel.validate_named_definition(chain, "x0", False)
         self.assertSchemaFailure(issues)
         self.assertTrue(any(issue.message == "value does not equal const" for issue in issues))
@@ -536,7 +597,7 @@ class FrozenSchemaArtifactTests(SchemaAssertions):
             "pointerTarget": {"$ref": "#/$defs/a%7E1b"},
         })
 
-        self.assertEqual(kernel.validate_schema_document(referenced), ())
+        self.assertEqual(kernel.validate_schema_document(referenced), [])
         for name, valid, invalid in (
             ("spaceTarget", "ok", 1),
             ("utf8Target", 1, "no"),
@@ -544,7 +605,7 @@ class FrozenSchemaArtifactTests(SchemaAssertions):
         ):
             with self.subTest(name=name):
                 self.assertEqual(
-                    kernel.validate_named_definition(referenced, name, valid), ()
+                    kernel.validate_named_definition(referenced, name, valid), []
                 )
                 self.assertSchemaFailure(
                     kernel.validate_named_definition(referenced, name, invalid)
@@ -587,7 +648,7 @@ class FrozenSchemaArtifactTests(SchemaAssertions):
             "$id": kernel.SCHEMA_ID,
             "$defs": {"x": {"type": "string"}},
         }
-        self.assertEqual(kernel.validate_schema_document(root_only), ())
+        self.assertEqual(kernel.validate_schema_document(root_only), [])
 
     def test_large_integer_decoder_value_error_is_typed_and_stable(self):
         payload = (
@@ -689,16 +750,16 @@ class RestrictedEvaluatorTests(SchemaAssertions):
     def test_one_of_requires_exactly_one_matching_branch(self):
         ambiguous = copy.deepcopy(self.schema)
         ambiguous["$defs"]["ambiguous"] = {"oneOf": [{}, {}]}
-        self.assertEqual(kernel.validate_schema_document(ambiguous), ())
+        self.assertEqual(kernel.validate_schema_document(ambiguous), [])
         self.assertSchemaFailure(kernel.validate_named_definition(ambiguous, "ambiguous", {}))
         self.assertSchemaFailure(kernel.validate_named_definition(self.schema, "upgradeCriterion", {}))
 
     def test_max_length_counts_unicode_code_points(self):
         bounded = copy.deepcopy(self.schema)
         bounded["$defs"]["boundedText"] = {"type": "string", "maxLength": 2}
-        self.assertEqual(kernel.validate_schema_document(bounded), ())
+        self.assertEqual(kernel.validate_schema_document(bounded), [])
         self.assertValidDef("text", "é🙂")
-        self.assertEqual(kernel.validate_named_definition(bounded, "boundedText", "é🙂"), ())
+        self.assertEqual(kernel.validate_named_definition(bounded, "boundedText", "é🙂"), [])
         self.assertSchemaFailure(
             kernel.validate_named_definition(bounded, "boundedText", "é🙂x")
         )
@@ -719,10 +780,10 @@ class RestrictedEvaluatorTests(SchemaAssertions):
             "numericEnum": {"enum": [1]},
             "numericUnique": {"type": "array", "uniqueItems": True},
         })
-        self.assertEqual(kernel.validate_schema_document(numeric), ())
+        self.assertEqual(kernel.validate_schema_document(numeric), [])
 
-        self.assertEqual(kernel.validate_named_definition(numeric, "numericConst", 1.0), ())
-        self.assertEqual(kernel.validate_named_definition(numeric, "numericEnum", 1.0), ())
+        self.assertEqual(kernel.validate_named_definition(numeric, "numericConst", 1.0), [])
+        self.assertEqual(kernel.validate_named_definition(numeric, "numericEnum", 1.0), [])
         self.assertSchemaFailure(
             kernel.validate_named_definition(numeric, "numericUnique", [1, 1.0])
         )
@@ -730,7 +791,7 @@ class RestrictedEvaluatorTests(SchemaAssertions):
         self.assertSchemaFailure(kernel.validate_named_definition(numeric, "numericConst", True))
         self.assertSchemaFailure(kernel.validate_named_definition(numeric, "numericEnum", True))
         self.assertEqual(
-            kernel.validate_named_definition(numeric, "numericUnique", [1, True]), ()
+            kernel.validate_named_definition(numeric, "numericUnique", [1, True]), []
         )
 
         duplicate_enum = copy.deepcopy(numeric)
@@ -744,12 +805,12 @@ class RestrictedEvaluatorTests(SchemaAssertions):
         deep_const = copy.deepcopy(self.schema)
         deep_const["$defs"]["deepConst"] = {"const": expected}
 
-        self.assertEqual(kernel.validate_schema_document(deep_const), ())
+        self.assertEqual(kernel.validate_schema_document(deep_const), [])
         self.assertEqual(
             kernel.validate_named_definition(
                 deep_const, "deepConst", copy.deepcopy(expected)
             ),
-            (),
+            [],
         )
         different = False
         for _ in range(400):

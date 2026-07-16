@@ -46,7 +46,7 @@ def safe_repo_path(root: Path, relative: str) -> Path:
     return candidate
 
 
-def load_canonical_value(path: Path) -> Any:
+def load_canonical_json(path: Path) -> object:
     try:
         payload = path.read_bytes()
     except OSError as exc:
@@ -62,3 +62,6 @@ def load_canonical_value(path: Path) -> Any:
     if payload != canonical_json_bytes(value):
         raise KintsugiError("KIN-E-CANONICAL", str(path), "JSON bytes are not canonical")
     return value
+
+
+load_canonical_value = load_canonical_json

@@ -232,7 +232,7 @@ def complete_receipt_with_seam(core, *, verified=False):
 
 class ModalityAndEvidenceTests(unittest.TestCase):
     def assertSchemaValid(self, core):
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), [])
 
     def test_all_six_modal_forces_are_preserved_without_an_ordering(self):
         modalities = ("ACTUAL", "POSSIBLE", "NECESSARY", "NORMATIVE", "DEFINITIONAL", "CONJECTURAL")
@@ -413,7 +413,7 @@ class ModalityAndEvidenceTests(unittest.TestCase):
         upward = support.build_semantic_core()
         support.add_retiered_seam(upward, "C", "S")
         upward["seams"][0]["priorUpgradeCriterion"]["minimumEvidenceCeiling"] = "A"
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", upward), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", upward), [])
         self.assertIn("KIN-E-VERDICT", codes(validate(upward)))
 
         downward = support.build_semantic_core()
@@ -433,7 +433,7 @@ class ModalityAndEvidenceTests(unittest.TestCase):
             "evidenceCeiling": "I",
             "rationale": "An analogy cannot outrun its supporting claim.",
         }]
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", analogy), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", analogy), [])
         self.assertIn("KIN-E-VERDICT", codes(validate(analogy)))
 
         repeated = support.build_semantic_core()
@@ -452,7 +452,7 @@ class ModalityAndEvidenceTests(unittest.TestCase):
         second_trial["triedHash"] = "sha256-text-lf:" + "1" * 64
         repeated["trials"].append(second_trial)
         repeated["phaseReceipts"][0]["trialIds"].append(second_trial["id"])
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", repeated), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", repeated), [])
         self.assertEqual(validate(repeated), [])
 
     def test_target_a_upgrade_needs_any_independent_witness_and_every_ordinary_link(self):
@@ -469,7 +469,7 @@ class ModalityAndEvidenceTests(unittest.TestCase):
         core["claims"][0]["supportLinks"].append(copy.deepcopy(second))
         seam["supportLinks"].append(copy.deepcopy(second))
         seam["upgradeEvidenceLinkIds"].append(second["id"])
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), [])
         self.assertEqual(validate(core), [])
 
         second["independenceStatus"] = "NOT_INDEPENDENT"
@@ -926,7 +926,7 @@ class JusticeGateAndQueueTests(unittest.TestCase):
             core = support.build_semantic_core()
             seam = complete_receipt_with_seam(core, verified=verified)
             with self.subTest(verified=verified):
-                self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+                self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), [])
                 self.assertEqual(validate(core), [])
             seam["beautyGate"]["reviewerPath"] = core["phaseReceipts"][0]["logicReviewPath"]
             self.assertIn("KIN-E-STATE", codes(validate(core)))
@@ -939,12 +939,12 @@ class JusticeGateAndQueueTests(unittest.TestCase):
 
     def test_public_queue_owned_and_ownerless_unions_resolve_purely(self):
         core, queue = make_queue_core()
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "publicQueue", queue), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "publicQueue", queue), [])
         self.assertEqual(validate_queue(queue, core), [])
 
         ownerless = copy.deepcopy(queue)
         ownerless["items"] = [make_ownerless_item(core)]
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "publicQueue", ownerless), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "publicQueue", ownerless), [])
         self.assertEqual(validate_queue(ownerless, core), [])
 
         mutations = []
@@ -973,7 +973,7 @@ class JusticeGateAndQueueTests(unittest.TestCase):
 
     def test_public_queue_closes_manifest_receipt_owner_and_evidence_boundaries(self):
         core, queue = make_queue_core()
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), [])
 
         rows = []
         absent_public = copy.deepcopy(queue)
@@ -1005,14 +1005,14 @@ class JusticeGateAndQueueTests(unittest.TestCase):
             with self.subTest(label=label):
                 if label != "canonical receipt identity":
                     self.assertEqual(
-                        kernel.validate_schema_instance(SCHEMA, "coreData", candidate_core), ()
+                        kernel.validate_schema_instance(SCHEMA, "coreData", candidate_core), []
                     )
                 else:
                     self.assertNotEqual(
                         kernel.validate_schema_instance(SCHEMA, "coreData", candidate_core), ()
                     )
                 self.assertEqual(
-                    kernel.validate_schema_instance(SCHEMA, "publicQueue", candidate_queue), ()
+                    kernel.validate_schema_instance(SCHEMA, "publicQueue", candidate_queue), []
                 )
                 self.assertIn("KIN-E-QUEUE", codes(validate_queue(candidate_queue, candidate_core)))
 
@@ -1024,8 +1024,8 @@ class JusticeGateAndQueueTests(unittest.TestCase):
         manifest["trialedClaimIds"].remove(claim_id)
         manifest["eligibleClaimCount"] -= 1
         manifest["trialedClaimCount"] -= 1
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "publicQueue", queue), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), [])
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "publicQueue", queue), [])
         self.assertIn("KIN-E-QUEUE", codes(validate_queue(queue, core)))
 
     def test_ownerless_candidates_are_bounded_to_searched_semantic_owners(self):
@@ -1045,8 +1045,8 @@ class JusticeGateAndQueueTests(unittest.TestCase):
         ownerless["ownerSearchEvidence"]["searchedSourceIds"] = [derivative["id"]]
         ownerless["candidateOwners"] = [derivative["path"]]
         queue["items"] = [ownerless]
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "publicQueue", queue), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), [])
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "publicQueue", queue), [])
         self.assertIn("KIN-E-QUEUE", codes(validate_queue(queue, core)))
 
     def test_public_queue_boundary_is_total_for_bounded_json_shape_mutations(self):
@@ -1601,7 +1601,7 @@ class SemanticEvaluatorTests(unittest.TestCase):
         }
         for evaluator, (good, _) in self.payload_rows(core).items():
             definition = definition_names[evaluator]
-            self.assertEqual(kernel.validate_named_definition(SCHEMA, definition, good), ())
+            self.assertEqual(kernel.validate_named_definition(SCHEMA, definition, good), [])
             for field, invalid in invalid_values[evaluator].items():
                 payload = copy.deepcopy(good)
                 payload[field] = invalid
@@ -1627,7 +1627,7 @@ class SemanticEvaluatorTests(unittest.TestCase):
             "bridgeClaimId": None,
             "requestedInference": "TYPED_REFERENCE",
         }, sort_keys=True, separators=(",", ":"))
-        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), [])
         self.assertIn("KIN-E-FIXTURE", codes(evaluate_fixture(core, fixture_id)))
         self.assertIn("KIN-E-FIXTURE", codes(validate(core)))
 
@@ -1652,7 +1652,7 @@ class SemanticEvaluatorTests(unittest.TestCase):
                 fixture["payload"] = "{}"
                 with self.subTest(evaluator=evaluator, context=context):
                     self.assertEqual(
-                        kernel.validate_schema_instance(SCHEMA, "coreData", core), ()
+                        kernel.validate_schema_instance(SCHEMA, "coreData", core), []
                     )
                     self.assertIn(
                         "KIN-E-FIXTURE",
@@ -1703,7 +1703,7 @@ class SemanticEvaluatorTests(unittest.TestCase):
                     path=path, wrong_type=type(wrong_type).__name__, boundary="decoded fixture"
                 ):
                     self.assertEqual(
-                        kernel.validate_schema_instance(SCHEMA, "coreData", fixture_core), ()
+                        kernel.validate_schema_instance(SCHEMA, "coreData", fixture_core), []
                     )
                     self.assertIn(
                         "KIN-E-FIXTURE", codes(evaluate_fixture(fixture_core, fixture_id))
@@ -1754,7 +1754,7 @@ class SemanticEvaluatorTests(unittest.TestCase):
             )
             with self.subTest(path=path, boundary="decoded fixture"):
                 self.assertEqual(
-                    kernel.validate_schema_instance(SCHEMA, "coreData", fixture_core), ()
+                    kernel.validate_schema_instance(SCHEMA, "coreData", fixture_core), []
                 )
                 self.assertIn("KIN-E-FIXTURE", codes(evaluate_fixture(fixture_core, fixture_id)))
 
@@ -1772,7 +1772,7 @@ class SemanticEvaluatorTests(unittest.TestCase):
             fixture = next(item for item in core["fixtures"] if item["id"] == fixture_id)
             fixture["payload"] = raw_payload
             with self.subTest(label=label):
-                self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+                self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), [])
                 self.assertIn("KIN-E-FIXTURE", codes(evaluate_fixture(core, fixture_id)))
 
 

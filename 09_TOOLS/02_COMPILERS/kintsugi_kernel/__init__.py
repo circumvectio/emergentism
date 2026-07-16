@@ -24,6 +24,7 @@ from .baseline import (
 )
 from .codec import (
     canonical_json_bytes,
+    load_canonical_json,
     normalize_lf,
     raw_hash,
     safe_repo_path,
@@ -96,6 +97,7 @@ __all__ = [
     "extract_fenced_json",
     "framed_narrative_hash",
     "infer_exception",
+    "load_canonical_json",
     "load_contract",
     "load_schema",
     "normalize_lf",
