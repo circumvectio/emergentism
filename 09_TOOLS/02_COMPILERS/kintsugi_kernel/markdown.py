@@ -3,6 +3,7 @@ from __future__ import annotations
 import copy
 import hashlib
 import json
+import math
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Iterable, Mapping, Sequence
@@ -14,6 +15,7 @@ from .diagnostics import Issue, KintsugiError
 _NARRATIVE_DOMAIN = b"KINTSUGI-NARRATIVE-V1\x00"
 _MAX_UINT64 = (1 << 64) - 1
 _MAX_JSON_DEPTH = 512
+_JSON_FENCE_MARKER = b"```json"
 _FENCE_PREFIX = b"```json "
 _KNOWN_ROLES = frozenset({
     "kintsugi-seam",
@@ -70,6 +72,10 @@ _DYNAMIC_RECEIPT_COMPACT_FIELDS = frozenset({
 _DYNAMIC_REVIEW_OUTCOMES = frozenset({
     "pass", "passed", "fail", "failed", "pending", "abandoned",
     "complete", "verified",
+})
+_DYNAMIC_RECEIPT_STATES = frozenset({"draft", "complete", "verified"})
+_DYNAMIC_REVIEW_SUBJECTS = frozenset({
+    "review", "gate", "logic", "btj", "truth", "beauty", "justice",
 })
 _ONE_SIDED_SEAM_STATUSES = frozenset({"CONFIRMED", "HELD_OPEN"})
 
@@ -147,13 +153,13 @@ class _DuplicateJsonKey(ValueError):
 def _as_bytes(value: Any, path: str) -> bytes:
     try:
         length = len(value)
-    except (TypeError, OverflowError) as exc:
+    except Exception as exc:
         raise KintsugiError("KIN-E-LEDGER", path, f"narrative is not byte-oriented: {exc}") from None
     if length > _MAX_UINT64:
         raise KintsugiError("KIN-E-LEDGER", path, "narrative byte length exceeds uint64")
     try:
         payload = value if isinstance(value, bytes) else bytes(value)
-    except (TypeError, ValueError, OverflowError) as exc:
+    except Exception as exc:
         raise KintsugiError("KIN-E-LEDGER", path, f"narrative is not bytes: {exc}") from None
     if len(payload) != length:
         raise KintsugiError("KIN-E-LEDGER", path, "narrative byte length changed during materialization")
@@ -218,6 +224,13 @@ def _reject_constant(value: str) -> None:
     raise ValueError(f"non-standard JSON constant: {value}")
 
 
+def _finite_float(value: str) -> float:
+    parsed = float(value)
+    if not math.isfinite(parsed):
+        raise ValueError(f"non-finite JSON number: {value}")
+    return parsed
+
+
 def _json_depth_exceeded(payload: bytes) -> bool:
     depth = 0
     in_string = False
@@ -254,6 +267,7 @@ def _json_value(raw: bytes, *, path: str, offset: int) -> tuple[Any, list[Issue]
             text,
             object_pairs_hook=_duplicate_safe_object,
             parse_constant=_reject_constant,
+            parse_float=_finite_float,
         )
     except json.JSONDecodeError as exc:
         byte_position = len(text[:exc.pos].encode("utf-8"))
@@ -276,6 +290,25 @@ def _scan_fences(payload: bytes, path: str) -> tuple[tuple[FenceRecord, ...], li
     while index < len(lines):
         line = lines[index]
         if not line.content.startswith(_FENCE_PREFIX):
+            if line.content.lower().startswith(_JSON_FENCE_MARKER):
+                issues.append(_issue(
+                    path, line.start, "KIN-E-LEDGER",
+                    "malformed JSON fence opener",
+                ))
+                closer_index = index + 1
+                while (
+                    closer_index < len(lines)
+                    and lines[closer_index].content != b"```"
+                ):
+                    closer_index += 1
+                if closer_index >= len(lines):
+                    issues.append(_issue(
+                        path, line.start, "KIN-E-LEDGER",
+                        "unterminated malformed JSON fence",
+                    ))
+                    break
+                index = closer_index + 1
+                continue
             index += 1
             continue
         raw_role = line.content[len(_FENCE_PREFIX):]
@@ -351,10 +384,12 @@ def _outside_utf8_issue(
 def _coerce_payload(payload: Any, path: str) -> tuple[bytes, list[Issue]]:
     if isinstance(payload, bytes):
         return payload, []
+    if not isinstance(payload, (bytearray, memoryview)):
+        return b"", [_issue(path, 0, "KIN-E-LEDGER", "Markdown input must be bytes-like")]
     try:
         return bytes(payload), []
-    except (TypeError, ValueError, OverflowError):
-        return b"", [_issue(path, 0, "KIN-E-LEDGER", "Markdown input must be bytes")]
+    except Exception:
+        return b"", [_issue(path, 0, "KIN-E-LEDGER", "Markdown input must be bytes-like")]
 
 
 def _synchronize_roles(
@@ -580,6 +615,18 @@ def _dynamic_receipt_issues(raw: bytes, *, base: int, path: str) -> list[Issue]:
             or ("gate" in words and (
                 "status" in words or bool(words & _DYNAMIC_REVIEW_OUTCOMES)
             ))
+            or (
+                bool(words & _DYNAMIC_REVIEW_SUBJECTS)
+                and bool(words & _DYNAMIC_REVIEW_OUTCOMES)
+            )
+            or (
+                bool(words & _DYNAMIC_REVIEW_SUBJECTS)
+                and {"signed", "off"} <= words
+            )
+            or (
+                bool(words & _DYNAMIC_RECEIPT_STATES)
+                and bool(words & {"receipt", "phase"})
+            )
             or first_word in {"bundle", "gate"}
         )
         if is_dynamic:
@@ -595,6 +642,15 @@ def _occurs_exactly_once(text: str, quote: str) -> bool:
         return False
     first = text.find(quote)
     return first >= 0 and text.find(quote, first + 1) < 0
+
+
+def _matches_text_hash(value: Any, expected: Any) -> bool:
+    if not isinstance(value, str):
+        return False
+    try:
+        return expected == text_hash(value)
+    except Exception:
+        return False
 
 
 def synchronize_receipt_markdown(
@@ -659,11 +715,46 @@ def synchronize_review_markdown(
             valid_findings.append(dict(finding))
         else:
             input_issues.append(_issue(path, 0, "KIN-E-LEDGER", "each expected finding must be an object"))
+    seen_finding_ids: set[str] = set()
+    for finding in valid_findings:
+        finding_id = finding.get("id")
+        if not isinstance(finding_id, str):
+            input_issues.append(_issue(
+                path, 0, "KIN-E-LEDGER",
+                "expected review finding id must be a string",
+            ))
+        elif finding_id in seen_finding_ids:
+            input_issues.append(_issue(
+                path, 0, "KIN-E-LEDGER",
+                f"duplicate expected review finding id: {finding_id}",
+            ))
+        else:
+            seen_finding_ids.add(finding_id)
+    attestation_finding_ids = attestation.get("findingIds")
+    if isinstance(attestation_finding_ids, Sequence) and not isinstance(
+        attestation_finding_ids, (str, bytes, bytearray)
+    ):
+        seen_attestation_ids: set[str] = set()
+        for finding_id in attestation_finding_ids:
+            if not isinstance(finding_id, str):
+                input_issues.append(_issue(
+                    path, 0, "KIN-E-LEDGER",
+                    "attestation finding id must be a string",
+                ))
+            elif finding_id in seen_attestation_ids:
+                input_issues.append(_issue(
+                    path, 0, "KIN-E-LEDGER",
+                    f"duplicate attestation finding id: {finding_id}",
+                ))
+            else:
+                seen_attestation_ids.add(finding_id)
     payload, payload_issues = _coerce_payload(payload, path)
     input_issues.extend(payload_issues)
     sorted_findings = sorted(
         valid_findings,
-        key=lambda finding: str(finding.get("id")),
+        key=lambda finding: (
+            finding.get("id") if isinstance(finding.get("id"), str) else ""
+        ),
     )
     synchronized = _synchronize_roles(payload, {
         "kintsugi-review": attestation,
@@ -739,6 +830,8 @@ def synchronize_owner(
         return (_issue(issue_path, 0, "KIN-E-QUOTE", f"unsafe owner path: {exc.message}"),)
     except OSError as exc:
         return (_issue(issue_path, 0, "KIN-E-QUOTE", f"owner repository root is unavailable: {exc}"),)
+    except ValueError as exc:
+        return (_issue(issue_path, 0, "KIN-E-QUOTE", f"owner source path is invalid: {exc}"),)
     if not owner_path.is_file():
         return (_issue(issue_path, 0, "KIN-E-QUOTE", "owner source does not exist as a file"),)
     try:
@@ -759,9 +852,9 @@ def synchronize_owner(
 
     before_quote = seam.get("beforeQuote")
     tried_quote = trial.get("triedQuote")
-    if not isinstance(before_quote, str) or seam.get("beforeHash") != text_hash(before_quote):
+    if not _matches_text_hash(before_quote, seam.get("beforeHash")):
         issues.append(_issue(issue_path, 0, "KIN-E-QUOTE", "seam beforeHash is not the LF-normalized beforeQuote hash"))
-    if not isinstance(tried_quote, str) or trial.get("triedHash") != text_hash(tried_quote):
+    if not _matches_text_hash(tried_quote, trial.get("triedHash")):
         issues.append(_issue(issue_path, 0, "KIN-E-QUOTE", "trial triedHash is not the LF-normalized triedQuote hash"))
     if (
         isinstance(before_quote, str) and isinstance(tried_quote, str)

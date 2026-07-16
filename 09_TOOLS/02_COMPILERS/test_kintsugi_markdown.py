@@ -47,6 +47,24 @@ class HugeBytes:
         raise AssertionError("overflow must be refused before materialization")
 
 
+class LengthBoom:
+    def __len__(self):
+        raise RuntimeError("length boom")
+
+
+class BytesBoom:
+    def __len__(self):
+        return 1
+
+    def __bytes__(self):
+        raise RuntimeError("bytes boom")
+
+
+class LengthControl:
+    def __len__(self):
+        raise KeyboardInterrupt
+
+
 class NarrativeHashTests(unittest.TestCase):
     def test_framed_hash_uses_exact_domain_lengths_and_raw_bytes(self):
         prefix = b"alpha\r\n"
@@ -68,6 +86,16 @@ class NarrativeHashTests(unittest.TestCase):
         with self.assertRaises(kernel.KintsugiError) as caught:
             kernel.framed_narrative_hash(HugeBytes(), b"")
         self.assertEqual(caught.exception.code, "KIN-E-LEDGER")
+
+    def test_framed_hash_controls_ordinary_conversion_errors_only(self):
+        for value in (LengthBoom(), BytesBoom()):
+            with self.subTest(value=value):
+                with self.assertRaises(kernel.KintsugiError) as caught:
+                    kernel.framed_narrative_hash(value, b"")
+                self.assertEqual(caught.exception.code, "KIN-E-LEDGER")
+
+        with self.assertRaises(KeyboardInterrupt):
+            kernel.framed_narrative_hash(LengthControl(), b"")
 
 
 class LedgerSynchronizationTests(unittest.TestCase):
@@ -236,6 +264,25 @@ class LedgerSynchronizationTests(unittest.TestCase):
             with self.subTest(payload=payload[:80]):
                 result = kernel.synchronize_ledger_markdown(payload, [seam], path="ledger.md")
                 self.assertIn("KIN-E-LEDGER", issue_codes(result))
+
+    def test_every_line_start_json_fence_lexical_variant_is_classified(self):
+        seam = seam_record()
+        valid = support.build_ledger_markdown([seam], preamble=b"")
+        malformed_fences = (
+            b"```json\n{}\n```\n",
+            b"```json\tkintsugi-seam\n{}\n```\n",
+            b"```JSON kintsugi-seam\n{}\n```\n",
+        )
+        for malformed in malformed_fences:
+            with self.subTest(opener=malformed.splitlines()[0]):
+                result = kernel.synchronize_ledger_markdown(
+                    valid + malformed, [seam], path="ledger.md"
+                )
+                self.assertIn("KIN-E-LEDGER", issue_codes(result))
+                self.assertTrue(any(
+                    "malformed JSON fence opener" in issue.message
+                    for issue in result.issues
+                ))
 
     def test_extra_and_missing_sections_and_duplicate_headings_are_rejected(self):
         first = seam_record("KIN-A-001")
@@ -411,6 +458,31 @@ class ReceiptSynchronizationTests(unittest.TestCase):
                     for issue in result.issues
                 ))
 
+    def test_frozen_receipt_rejects_explicit_receipt_and_phase_state_prose(self):
+        receipt = support.build_core_data()["phaseReceipts"][0]
+        state_lines = (
+            b"This receipt has reached VERIFIED.",
+            b"The receipt remains DRAFT.",
+            b"The phase is now COMPLETE.",
+            b"Logic signed off.",
+            b"BTJ review FAILED.",
+            b"Truth gate remains PENDING.",
+            b"The review was ABANDONED.",
+        )
+        for line in state_lines:
+            with self.subTest(line=line):
+                payload = support.build_receipt_markdown(
+                    receipt, prefix=b"# Receipt\n" + line + b"\n"
+                )
+                result = kernel.synchronize_receipt_markdown(
+                    payload, receipt, target_frozen=True
+                )
+                self.assertTrue(any(
+                    issue.code == "KIN-E-LEDGER"
+                    and "dynamic receipt prose" in issue.message
+                    for issue in result.issues
+                ))
+
     def test_receipt_missing_duplicate_wrong_malformed_and_drift_are_rejected(self):
         receipt = support.build_core_data()["phaseReceipts"][0]
         valid = support.build_receipt_markdown(receipt)
@@ -481,6 +553,48 @@ class ReviewAndQueueSynchronizationTests(unittest.TestCase):
                 payload, candidate_attestation, candidate_findings
             )
             self.assertIn("KIN-E-LEDGER", issue_codes(result))
+
+    def test_duplicate_expected_findings_and_attestation_ids_are_rejected(self):
+        finding = support.build_review_finding()
+        findings = [finding, copy.deepcopy(finding)]
+        attestation = support.build_review_attestation("LOGIC", "FAIL")
+        attestation["findingIds"] = [finding["id"], finding["id"]]
+        payload = support.build_review_markdown(attestation, findings)
+
+        result = kernel.synchronize_review_markdown(
+            payload, attestation, findings
+        )
+
+        self.assertIn("KIN-E-LEDGER", issue_codes(result))
+        self.assertTrue(any(
+            "duplicate expected review finding id" in issue.message
+            for issue in result.issues
+        ))
+        self.assertTrue(any(
+            "duplicate attestation finding id" in issue.message
+            for issue in result.issues
+        ))
+
+    def test_non_string_expected_finding_and_attestation_ids_are_rejected(self):
+        finding = support.build_review_finding()
+        finding["id"] = ["not", "an", "id"]
+        attestation = support.build_review_attestation("LOGIC", "FAIL")
+        attestation["findingIds"] = [["not", "an", "id"]]
+        payload = support.build_review_markdown(attestation, [finding])
+
+        result = kernel.synchronize_review_markdown(
+            payload, attestation, [finding]
+        )
+
+        self.assertIn("KIN-E-LEDGER", issue_codes(result))
+        self.assertTrue(any(
+            "expected review finding id must be a string" in issue.message
+            for issue in result.issues
+        ))
+        self.assertTrue(any(
+            "attestation finding id must be a string" in issue.message
+            for issue in result.issues
+        ))
 
     def test_review_rejects_missing_duplicate_malformed_and_misplaced_roles(self):
         attestation, findings = self.review_records()
@@ -598,6 +712,36 @@ class OwnerSynchronizationTests(unittest.TestCase):
             )
             self.assertEqual({issue.code for issue in issues}, {"KIN-E-QUOTE"})
 
+    def test_embedded_nul_owner_path_is_a_controlled_sorted_quote_issue(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source, claim, trial, seam, _ = support.build_owner_sync_fixture(root)
+            source["path"] = "03_METHODOLOGY/owner\x00.md"
+
+            issues = kernel.synchronize_owner(root, source, claim, trial, seam)
+
+            self.assertTrue(issues)
+            self.assertEqual({issue.code for issue in issues}, {"KIN-E-QUOTE"})
+            self.assertEqual(tuple(sorted(issues)), issues)
+
+    def test_lone_surrogate_owner_quotes_return_controlled_sorted_issues(self):
+        mutators = (
+            lambda trial, seam: seam.update(beforeQuote="\ud800"),
+            lambda trial, seam: trial.update(triedQuote="\ud800"),
+            lambda trial, seam: seam.update(afterQuote="\ud800"),
+        )
+        for mutate in mutators:
+            with self.subTest(mutate=mutate), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                source, claim, trial, seam, _ = support.build_owner_sync_fixture(root)
+                mutate(trial, seam)
+
+                issues = kernel.synchronize_owner(root, source, claim, trial, seam)
+
+                self.assertTrue(issues)
+                self.assertEqual({issue.code for issue in issues}, {"KIN-E-QUOTE"})
+                self.assertEqual(tuple(sorted(issues)), issues)
+
     def test_one_sided_seam_statuses_do_not_require_after_quote(self):
         for status in ("CONFIRMED", "HELD_OPEN"):
             with self.subTest(status=status), tempfile.TemporaryDirectory() as directory:
@@ -612,6 +756,33 @@ class OwnerSynchronizationTests(unittest.TestCase):
 
 
 class MalformedPublicBoundaryTests(unittest.TestCase):
+    def test_markdown_payloads_reject_scalars_and_arbitrary_bytes_hooks(self):
+        class Boom:
+            def __bytes__(self):
+                raise RuntimeError("boom")
+
+        for payload in (0, True, Boom()):
+            with self.subTest(payload=payload):
+                result = kernel.synchronize_ledger_markdown(payload, [])
+                self.assertTrue(result.issues)
+                self.assertEqual(
+                    {issue.code for issue in result.issues}, {"KIN-E-LEDGER"}
+                )
+
+    def test_nonfinite_fenced_number_is_malformed_json_even_when_expected_matches(self):
+        finite_queue = support.build_public_queue()
+        payload = support.build_public_queue_markdown(finite_queue).replace(
+            b'"manifestId":"MAN-C-001"', b'"manifestId":1e999', 1
+        )
+        expected_queue = copy.deepcopy(finite_queue)
+        expected_queue["manifestId"] = float("inf")
+
+        result = kernel.synchronize_public_queue_markdown(
+            payload, expected_queue, path="queue.md"
+        )
+
+        self.assertIn("KIN-E-JSON", issue_codes(result))
+
     def test_malformed_public_synchronizer_arguments_return_typed_issues(self):
         with tempfile.TemporaryDirectory() as directory:
             seam = seam_record()
