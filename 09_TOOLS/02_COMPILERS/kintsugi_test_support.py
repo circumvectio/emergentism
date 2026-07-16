@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import copy
+import hashlib
 import json
 from pathlib import Path
 from typing import Any
@@ -239,6 +240,125 @@ def build_public_queue() -> dict[str, Any]:
 
 def build_baseline_allowlist() -> dict[str, Any]:
     return _copy(_BASELINE_ALLOWLIST)
+
+
+def markdown_fence(label: str, value: Any, *, newline: bytes = b"\n") -> bytes:
+    payload = json.dumps(
+        value, ensure_ascii=False, sort_keys=True, separators=(",", ":"),
+        allow_nan=False,
+    ).encode("utf-8")
+    return (
+        b"```json " + label.encode("ascii") + newline
+        + payload + newline
+        + b"```" + newline
+    )
+
+
+def build_ledger_markdown(
+    seams: list[dict[str, Any]],
+    *,
+    newline: bytes = b"\n",
+    preamble: bytes | None = None,
+    prefixes: list[bytes] | None = None,
+    suffixes: list[bytes] | None = None,
+) -> bytes:
+    preamble = b"# Golden Seam Ledger" + newline + newline if preamble is None else preamble
+    prefixes = prefixes or [b"Human narrative before the fence." for _ in seams]
+    suffixes = suffixes or [b"Human narrative after the fence." for _ in seams]
+    sections: list[bytes] = []
+    for seam, prefix, suffix in zip(seams, prefixes, suffixes, strict=True):
+        sections.append(
+            b"## " + seam["id"].encode("ascii") + newline
+            + prefix + newline
+            + markdown_fence("kintsugi-seam", seam, newline=newline)
+            + suffix + newline
+        )
+    return preamble + b"".join(sections)
+
+
+def build_receipt_markdown(
+    receipt: dict[str, Any],
+    *,
+    newline: bytes = b"\n",
+    prefix: bytes = b"# Synthetic receipt\n\nFrozen human claim.\n",
+    suffix: bytes = b"Human provenance note.\n",
+) -> bytes:
+    if newline != b"\n":
+        prefix = prefix.replace(b"\n", newline)
+        suffix = suffix.replace(b"\n", newline)
+    return prefix + markdown_fence("kintsugi-receipt", receipt, newline=newline) + suffix
+
+
+def build_review_markdown(
+    attestation: dict[str, Any],
+    findings: list[dict[str, Any]],
+    *,
+    newline: bytes = b"\n",
+) -> bytes:
+    return (
+        b"# Independent review" + newline + newline
+        + markdown_fence("kintsugi-review", attestation, newline=newline)
+        + b"Review findings follow." + newline
+        + markdown_fence("kintsugi-review-findings", findings, newline=newline)
+    )
+
+
+def build_public_queue_markdown(
+    queue: dict[str, Any], *, newline: bytes = b"\n"
+) -> bytes:
+    return (
+        b"# Phase-C public queue" + newline + newline
+        + markdown_fence("kintsugi-public-queue", queue, newline=newline)
+    )
+
+
+def build_owner_sync_fixture(
+    root: Path, *, newline: str = "\n"
+) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any], dict[str, Any], Path]:
+    relative = "03_METHODOLOGY/owner.md"
+    owner = root / relative
+    owner.parent.mkdir(parents=True, exist_ok=True)
+    anchor = "## Synthetic owner anchor"
+    before_quote = "The former owner claim.\nIts second line."
+    after_quote = "The repaired owner claim.\nIts second line."
+    text = f"# Owner\n\n{anchor}\n\n{after_quote}\n"
+    raw = text.replace("\n", newline).encode("utf-8")
+    owner.write_bytes(raw)
+
+    def quote_hash(value: str) -> str:
+        normalized = value.replace("\r\n", "\n").replace("\r", "\n")
+        return "sha256-text-lf:" + hashlib.sha256(normalized.encode("utf-8")).hexdigest()
+
+    source = {
+        "id": "SRC-A-001",
+        "path": relative,
+        "kind": "OWNER",
+        "phases": ["A"],
+        "sha256": "sha256:" + hashlib.sha256(raw).hexdigest(),
+        "authorityRole": "SEMANTIC_OWNER",
+    }
+    claim = {
+        "id": "CLM-A-001",
+        "ownerSourceId": source["id"],
+        "ownerAnchor": anchor,
+    }
+    trial = {
+        "id": "TRL-A-001",
+        "claimId": claim["id"],
+        "triedQuote": before_quote,
+        "triedHash": quote_hash(before_quote),
+    }
+    seam = {
+        "id": "KIN-A-001",
+        "claimId": claim["id"],
+        "ownerSource": source["id"],
+        "ownerAnchor": anchor,
+        "beforeQuote": before_quote,
+        "beforeHash": quote_hash(before_quote),
+        "afterQuote": after_quote,
+        "status": "REPAIRED",
+    }
+    return source, claim, trial, seam, owner
 
 
 def build_review_attempt(
