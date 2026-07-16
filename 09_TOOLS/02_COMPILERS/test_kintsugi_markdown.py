@@ -1572,9 +1572,9 @@ class ReceiptSynchronizationTests(unittest.TestCase):
         unsupported_sources = (
             "See [documentation](https://example.test/).",
             "See ![diagram](diagram.svg).",
-            "See [documentation][reference].\n[reference]: https://example.test/",
-            "See [documentation][].\n[documentation]: https://example.test/",
-            "See [documentation].\n[documentation]: https://example.test/",
+            "See [documentation][reference].\n\n[reference]: https://example.test/",
+            "See [documentation][].\n\n[documentation]: https://example.test/",
+            "See [documentation].\n\n[documentation]: https://example.test/",
             "See <https://example.test/>.",
             "See <reader@example.test>.",
             "See <foo@bar>.",
@@ -1688,8 +1688,8 @@ class ReceiptSynchronizationTests(unittest.TestCase):
         for line in (
             "The re[vi](x)ew passed.",
             "The re<span>view passed.",
-            "The re[vi][x]ew passed.\n[x]: https://example.test/",
-            "The re[vi]ew passed.\n[vi]: https://example.test/",
+            "The re[vi][x]ew passed.\n\n[x]: https://example.test/",
+            "The re[vi]ew passed.\n\n[vi]: https://example.test/",
             "The re<span\nclass=x>view passed.",
             "The re<!--\n-->view passed.",
             "The re<!-- <3 -->view passed.",
@@ -1726,6 +1726,152 @@ class ReceiptSynchronizationTests(unittest.TestCase):
             target_frozen=True,
         )
         self.assertEqual(ordinary.issues, ())
+
+    def test_receipt_source_grammar_respects_commonmark_block_boundaries(self):
+        receipt = support.build_core_data()["phaseReceipts"][0]
+        cases = (
+            ("The re<span disabled required>view passed.", True),
+            ("The notation [x](\n\n/url) remains literal source.", False),
+            ("The notation [x]\n[x]: /url remains literal source.", False),
+            ("[x\n\ny](url)", False),
+            ('The notation [x](url "a\n\nb") remains literal source.', False),
+            ('The notation <span class="a\n\nb"> remains literal source.', False),
+            ("```text\nStatus: VERIFIED\n```", False),
+            (
+                "The notation [x] remains literal source.\n\n"
+                "[x]: not a destination",
+                False,
+            ),
+            (
+                "See [second].\n\n[first]: /one\n[second]: /two",
+                True,
+            ),
+        )
+        for source, unsupported in cases:
+            with self.subTest(source=source):
+                result = kernel.synchronize_receipt_markdown(
+                    support.build_receipt_markdown(
+                        receipt,
+                        prefix=(
+                            "# Synthetic receipt\n\n" + source + "\n"
+                        ).encode("utf-8"),
+                    ),
+                    receipt,
+                    target_frozen=True,
+                )
+                if unsupported:
+                    self.assertTrue(any(
+                        issue.code == "KIN-E-LEDGER"
+                        and "bounded lexical grammar" in issue.message
+                        for issue in result.issues
+                    ))
+                else:
+                    self.assertEqual(result.issues, ())
+
+    def test_reference_definition_payloads_follow_commonmark_examples(self):
+        receipt = support.build_core_data()["phaseReceipts"][0]
+        cases = (
+            (  # CommonMark 0.31.2 example 193.
+                "See [foo].\n\n   [foo]:\n      /url\n"
+                "           'the title'",
+                True,
+            ),
+            (  # Example 196: a nonblank multiline title is valid.
+                "See [foo].\n\n[foo]: /url '\n"
+                "title\nline1\nline2\n'",
+                True,
+            ),
+            (  # Example 198: destination on the next line, no title.
+                "See [foo].\n\n[foo]:\n/url",
+                True,
+            ),
+            (  # Example 209: trailing characters invalidate the definition.
+                "See [foo].\n\n[foo]: /url \"title\" ok",
+                False,
+            ),
+            (  # Example 210: malformed following-line title is separate prose.
+                "See [foo].\n\n[foo]: /url\n  \"title\" ok",
+                True,
+            ),
+            (
+                "See [foo].\n\n[foo]: /url\n  \"unterminated",
+                True,
+            ),
+            (  # Example 217: definitions continue after a title line.
+                "See [baz].\n\n[foo]: /foo-url \"foo\"\n"
+                "[bar]: /bar-url\n  \"bar\"\n[baz]: /baz-url",
+                True,
+            ),
+            (
+                "# Heading\n[foo]: /url\n\nSee [foo].",
+                True,
+            ),
+            (
+                "---\n[foo]: /url\n\nSee [foo].",
+                True,
+            ),
+            (
+                "See [foo].\n\n[\nfoo\n]: /url",
+                True,
+            ),
+            (
+                "See [foo].\r\r[foo]: /url",
+                True,
+            ),
+            (
+                "See [foo].\n\n> [foo]: /url",
+                True,
+            ),
+            (
+                "See [foo].\n\n- [foo]: /url",
+                True,
+            ),
+            (
+                "See [a[b]c].\n\n[a[b]c]: /url",
+                False,
+            ),
+            (
+                "See [foo].\n\n```text\n\n[foo]: /url\n```",
+                False,
+            ),
+        )
+        for source, unsupported in cases:
+            with self.subTest(source=source):
+                result = kernel.synchronize_receipt_markdown(
+                    support.build_receipt_markdown(
+                        receipt,
+                        prefix=(
+                            "# Synthetic receipt\n\n" + source + "\n"
+                        ).encode("utf-8"),
+                    ),
+                    receipt,
+                    target_frozen=True,
+                )
+                if unsupported:
+                    self.assertTrue(any(
+                        issue.code == "KIN-E-LEDGER"
+                        and "bounded lexical grammar" in issue.message
+                        for issue in result.issues
+                    ))
+                else:
+                    self.assertEqual(result.issues, ())
+
+    def test_invalid_backtick_fence_info_cannot_hide_dynamic_receipt_prose(self):
+        receipt = support.build_core_data()["phaseReceipts"][0]
+        source = "``` invalid`info\nStatus: VERIFIED"
+        result = kernel.synchronize_receipt_markdown(
+            support.build_receipt_markdown(
+                receipt,
+                prefix=("# Synthetic receipt\n\n" + source + "\n").encode(),
+            ),
+            receipt,
+            target_frozen=True,
+        )
+        self.assertTrue(any(
+            issue.code == "KIN-E-LEDGER"
+            and "dynamic receipt prose" in issue.message
+            for issue in result.issues
+        ))
 
     def test_receipt_projection_rechecks_bound_after_nfkc_expansion(self):
         receipt = support.build_core_data()["phaseReceipts"][0]

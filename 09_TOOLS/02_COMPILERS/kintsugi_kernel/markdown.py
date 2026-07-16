@@ -1010,14 +1010,16 @@ def _receipt_html_end(
         ):
             steps += 1
             cursor += 1
-        cursor, valid_whitespace = skip_tag_whitespace(cursor)
+        attribute_end = cursor
+        value_cursor, valid_whitespace = skip_tag_whitespace(cursor)
         if not valid_whitespace:
             return None, steps, False
-        if cursor >= limit:
+        if value_cursor >= limit:
             return None, steps, limit < len(text)
-        if text[cursor] != "=":
+        if text[value_cursor] != "=":
+            cursor = attribute_end
             continue
-        cursor += 1
+        cursor = value_cursor + 1
         cursor, valid_whitespace = skip_tag_whitespace(cursor)
         if not valid_whitespace:
             return None, steps, False
@@ -1045,30 +1047,50 @@ def _receipt_html_end(
                 return None, steps, False
 
 
-def _valid_inline_link_payload(
+def _valid_link_payload(
     text: str,
-    opener: int,
-    closer: int,
+    start: int,
+    end: int,
     escaped: Sequence[bool],
+    *,
+    destination_required: bool,
 ) -> bool:
-    cursor = opener + 1
-    while cursor < closer and text[cursor] in " \t\r\n":
-        cursor += 1
-    if cursor == closer:
-        return True
+    def skip_whitespace(cursor: int) -> tuple[int, bool]:
+        line_endings = 0
+        while cursor < end and text[cursor] in " \t\r\n":
+            if text[cursor] == "\r":
+                line_endings += 1
+                cursor += 1
+                if cursor < end and text[cursor] == "\n":
+                    cursor += 1
+            elif text[cursor] == "\n":
+                line_endings += 1
+                cursor += 1
+            else:
+                cursor += 1
+            if line_endings > 1:
+                return cursor, False
+        return cursor, True
+
+    cursor = start
+    cursor, valid_whitespace = skip_whitespace(cursor)
+    if not valid_whitespace:
+        return False
+    if cursor == end:
+        return not destination_required
     if text[cursor] == "<":
         cursor += 1
-        while cursor < closer and not (text[cursor] == ">" and not escaped[cursor]):
+        while cursor < end and not (text[cursor] == ">" and not escaped[cursor]):
             if text[cursor] in "\r\n" or (text[cursor] == "<" and not escaped[cursor]):
                 return False
             cursor += 1
-        if cursor >= closer:
+        if cursor >= end:
             return False
         cursor += 1
     else:
         depth = 0
         destination_start = cursor
-        while cursor < closer:
+        while cursor < end:
             character = text[cursor]
             if character in " \t\r\n" and depth == 0:
                 break
@@ -1084,25 +1106,308 @@ def _valid_inline_link_payload(
             cursor += 1
         if cursor == destination_start or depth:
             return False
-    while cursor < closer and text[cursor] in " \t\r\n":
-        cursor += 1
-    if cursor == closer:
+    cursor, valid_whitespace = skip_whitespace(cursor)
+    if not valid_whitespace:
+        return False
+    if cursor == end:
         return True
     quote = text[cursor]
     closing_quote = {"\"": "\"", "'": "'", "(": ")"}.get(quote)
     if closing_quote is None:
         return False
     cursor += 1
-    while cursor < closer and not (
-        text[cursor] == closing_quote and not escaped[cursor]
-    ):
+    title_line_nonblank = True
+    while cursor < end:
+        if text[cursor] == closing_quote and not escaped[cursor]:
+            break
+        if text[cursor] in "\r\n":
+            if not title_line_nonblank:
+                return False
+            if text[cursor] == "\r":
+                cursor += 1
+                if cursor < end and text[cursor] == "\n":
+                    cursor += 1
+            else:
+                cursor += 1
+            title_line_nonblank = False
+            continue
+        if text[cursor] not in " \t":
+            title_line_nonblank = True
         cursor += 1
-    if cursor >= closer:
+    if cursor >= end:
         return False
     cursor += 1
-    while cursor < closer and text[cursor] in " \t\r\n":
+    cursor, valid_whitespace = skip_whitespace(cursor)
+    return valid_whitespace and cursor == end
+
+
+def _valid_inline_link_payload(
+    text: str,
+    opener: int,
+    closer: int,
+    escaped: Sequence[bool],
+) -> bool:
+    return _valid_link_payload(
+        text,
+        opener + 1,
+        closer,
+        escaped,
+        destination_required=False,
+    )
+
+
+def _explicit_reference_block_predecessor(line: str) -> bool:
+    """Recognize the explicit block endings admitted by the receipt subset."""
+
+    indent = len(line) - len(line.lstrip(" "))
+    if indent > 3:
+        return False
+    content = line[indent:].rstrip(" \t")
+    if content.startswith("#"):
+        marker_count = len(content) - len(content.lstrip("#"))
+        if 1 <= marker_count <= 6 and (
+            marker_count == len(content)
+            or content[marker_count] in " \t"
+        ):
+            return True
+    compact = content.replace(" ", "").replace("\t", "")
+    return (
+        len(compact) >= 3
+        and compact[0] in "*-_"
+        and all(character == compact[0] for character in compact)
+    )
+
+
+def _reference_container_content_start(
+    text: str,
+    line_start: int,
+    opener: int,
+) -> tuple[int, bool]:
+    """Return the simple block-container content start for a definition."""
+
+    cursor = line_start
+    leading_spaces = 0
+    while cursor < opener and text[cursor] == " " and leading_spaces < 4:
         cursor += 1
-    return cursor == closer
+        leading_spaces += 1
+    if leading_spaces > 3:
+        return line_start, False
+
+    container = False
+    while cursor < opener and text[cursor] == ">":
+        container = True
+        cursor += 1
+        if cursor < opener and text[cursor] in " \t":
+            cursor += 1
+        nested_spaces = 0
+        while cursor < opener and text[cursor] == " " and nested_spaces < 4:
+            cursor += 1
+            nested_spaces += 1
+        if nested_spaces > 3:
+            return line_start, False
+
+    marker_end = cursor
+    if cursor < opener and text[cursor] in "*+-":
+        marker_end = cursor + 1
+    elif cursor < opener and text[cursor].isascii() and text[cursor].isdigit():
+        marker_end = cursor
+        while (
+            marker_end < opener
+            and marker_end - cursor < 9
+            and text[marker_end].isascii()
+            and text[marker_end].isdigit()
+        ):
+            marker_end += 1
+        if marker_end >= opener or text[marker_end] not in ".)":
+            marker_end = cursor
+        else:
+            marker_end += 1
+    if marker_end > cursor and marker_end < opener and text[marker_end] in " \t":
+        container = True
+        cursor = marker_end + 1
+        while cursor < opener and text[cursor] in " \t":
+            cursor += 1
+
+    return cursor, container
+
+
+def _valid_reference_label(
+    text: str,
+    opener: int,
+    closer: int,
+    escaped: Sequence[bool],
+) -> bool:
+    if not 1 <= closer - opener - 1 <= 999:
+        return False
+    has_non_whitespace = False
+    for position in range(opener + 1, closer):
+        character = text[position]
+        if character in "[]" and not escaped[position]:
+            return False
+        if character not in " \t\r\n":
+            has_non_whitespace = True
+    return has_non_whitespace
+
+
+def _reference_definition_end(
+    text: str,
+    start: int,
+    escaped: Sequence[bool],
+) -> tuple[int | None, int, bool]:
+    """Parse the bounded CommonMark 0.31.2 section 4.7 payload.
+
+    The returned end is the first byte-position of the following physical line
+    (or EOF).  A plausible construct that exceeds the receipt construct bound
+    is reported separately so callers can fail closed.
+    """
+
+    limit = min(len(text), start + _MAX_RECEIPT_CONSTRUCT_CHARS)
+    steps = 0
+
+    def advance_line_ending(cursor: int) -> int | None:
+        if cursor >= limit:
+            return None
+        if text[cursor] == "\n":
+            return cursor + 1
+        if text[cursor] == "\r":
+            cursor += 1
+            if cursor < limit and text[cursor] == "\n":
+                cursor += 1
+            return cursor
+        return None
+
+    def skip_spaces_tabs(cursor: int) -> tuple[int, bool]:
+        nonlocal steps
+        found = False
+        while cursor < limit and text[cursor] in " \t":
+            cursor += 1
+            steps += 1
+            found = True
+        return cursor, found
+
+    cursor, _ = skip_spaces_tabs(start)
+    following_line = advance_line_ending(cursor)
+    if following_line is not None:
+        steps += following_line - cursor
+        cursor, _ = skip_spaces_tabs(following_line)
+    if cursor >= limit:
+        return None, steps, limit < len(text)
+    if text[cursor] in "\r\n":
+        return None, steps, False
+
+    # Destination: either an angle-bracket destination (which may be empty)
+    # or a nonempty raw destination with balanced parentheses.
+    if text[cursor] == "<" and not escaped[cursor]:
+        cursor += 1
+        steps += 1
+        while cursor < limit:
+            steps += 1
+            character = text[cursor]
+            if character in "\r\n":
+                return None, steps, False
+            if character == "<" and not escaped[cursor]:
+                return None, steps, False
+            if character == ">" and not escaped[cursor]:
+                cursor += 1
+                break
+            cursor += 1
+        else:
+            return None, steps, limit < len(text)
+    else:
+        destination_start = cursor
+        depth = 0
+        while cursor < limit:
+            character = text[cursor]
+            if character in " \t\r\n" and depth == 0:
+                break
+            if not escaped[cursor]:
+                if ord(character) <= 32 or ord(character) == 127:
+                    return None, steps, False
+                if character == "(":
+                    depth += 1
+                    if depth > _MAX_RECEIPT_BRACKET_DEPTH:
+                        return None, steps, True
+                elif character == ")":
+                    if depth == 0:
+                        return None, steps, False
+                    depth -= 1
+            cursor += 1
+            steps += 1
+        if cursor == destination_start or depth:
+            return None, steps, cursor >= limit and limit < len(text)
+
+    if cursor >= limit:
+        return (
+            (cursor, steps, False)
+            if cursor == len(text)
+            else (None, steps, True)
+        )
+
+    # Save the no-title boundary before looking one physical line ahead.  If
+    # that next line does not begin a properly separated title, it belongs to
+    # the following block rather than invalidating the definition.
+    cursor, same_line_space = skip_spaces_tabs(cursor)
+    if cursor >= limit:
+        return (
+            (cursor, steps, False)
+            if cursor == len(text)
+            else (None, steps, True)
+        )
+    following_title_fallback: int | None = None
+    following_line = advance_line_ending(cursor)
+    if following_line is not None:
+        steps += following_line - cursor
+        title_cursor, next_line_space = skip_spaces_tabs(following_line)
+        if (
+            title_cursor >= limit
+            or text[title_cursor] not in "\"'("
+            or not (same_line_space or next_line_space)
+        ):
+            return following_line, steps, False
+        following_title_fallback = following_line
+        cursor = title_cursor
+    elif text[cursor] not in "\"'(" or not same_line_space:
+        return None, steps, False
+
+    closing_quote = {"\"": "\"", "'": "'", "(": ")"}[text[cursor]]
+    cursor += 1
+    steps += 1
+    physical_line_nonblank = True
+    while cursor < limit:
+        character = text[cursor]
+        if character == closing_quote and not escaped[cursor]:
+            cursor += 1
+            steps += 1
+            break
+        following_line = advance_line_ending(cursor)
+        if following_line is not None:
+            if not physical_line_nonblank:
+                return following_title_fallback, steps, False
+            steps += following_line - cursor
+            cursor = following_line
+            physical_line_nonblank = False
+            continue
+        if character not in " \t":
+            physical_line_nonblank = True
+        cursor += 1
+        steps += 1
+    else:
+        if limit < len(text):
+            return None, steps, True
+        return following_title_fallback, steps, False
+
+    cursor, _ = skip_spaces_tabs(cursor)
+    if cursor == len(text):
+        return cursor, steps, False
+    following_line = advance_line_ending(cursor)
+    if following_line is not None:
+        steps += following_line - cursor
+        return following_line, steps, False
+    if cursor >= limit:
+        if limit < len(text):
+            return None, steps, True
+        return following_title_fallback, steps, False
+    return following_title_fallback, steps, False
 
 
 def _scan_receipt_source(text: str) -> _ReceiptSourceScan:
@@ -1113,19 +1418,63 @@ def _scan_receipt_source(text: str) -> _ReceiptSourceScan:
     escaped = _source_escape_flags(text)
     steps += length
     paragraph_ids = [0] * length
+    source_line_starts = [0] * length
+    fenced_code_mask = bytearray(length)
+    definition_line_starts = bytearray(length + 1)
     paragraph = 0
     cursor = 0
+    previous_line_blank = True
+    previous_line_content = ""
+    active_fence: tuple[str, int] | None = None
     for physical_line in text.splitlines(keepends=True):
+        definition_line_starts[cursor] = (
+            previous_line_blank
+            or _explicit_reference_block_predecessor(previous_line_content)
+        )
         end = cursor + len(physical_line)
+        content = physical_line.rstrip("\r\n")
+        indent = len(content) - len(content.lstrip(" "))
+        fence_cursor = indent if indent <= 3 else len(content)
+        marker = content[fence_cursor:fence_cursor + 1]
+        run_end = fence_cursor
+        if marker in {"`", "~"}:
+            while run_end < len(content) and content[run_end] == marker:
+                run_end += 1
+        run_length = run_end - fence_cursor
+        line_is_fenced = active_fence is not None
+        closes_fence = False
+        valid_opener = (
+            run_length >= 3
+            and (marker != "`" or "`" not in content[run_end:])
+        )
+        if active_fence is None and valid_opener:
+            active_fence = (marker, run_length)
+            line_is_fenced = True
+        elif (
+            active_fence is not None
+            and marker == active_fence[0]
+            and run_length >= active_fence[1]
+            and not content[run_end:].strip(" \t")
+        ):
+            line_is_fenced = True
+            closes_fence = True
         for position in range(cursor, end):
             paragraph_ids[position] = paragraph
+            source_line_starts[position] = cursor
+            if line_is_fenced:
+                fenced_code_mask[position] = 1
             steps += 1
-        content = physical_line.rstrip("\r\n")
-        if not content.strip(" \t"):
+        if closes_fence:
+            active_fence = None
+        previous_line_blank = not content.strip(" \t")
+        previous_line_content = content
+        if previous_line_blank:
             paragraph += 1
         cursor = end
+    definition_line_starts[cursor] = previous_line_blank
     for position in range(cursor, length):
         paragraph_ids[position] = paragraph
+        source_line_starts[position] = cursor
         steps += 1
 
     def next_table(token: str) -> tuple[int, ...]:
@@ -1166,7 +1515,7 @@ def _scan_receipt_source(text: str) -> _ReceiptSourceScan:
         next_same[run_index] = last_by_length.get(run_length)
         last_by_length[run_length] = run_index
         steps += 1
-    code_mask = bytearray(length)
+    code_mask = bytearray(fenced_code_mask)
     delimiter_mask = bytearray(length)
     code_ranges: list[tuple[int, int]] = []
     run_index = 0
@@ -1189,18 +1538,23 @@ def _scan_receipt_source(text: str) -> _ReceiptSourceScan:
         for position in range(closer[0], closer[1]):
             delimiter_mask[position] = 1
             steps += 1
-        code_ranges.append((opener[1], closer[0]))
         run_index = closing_index + 1
 
+    range_start: int | None = None
+    for position in range(length + 1):
+        marked = position < length and bool(code_mask[position])
+        if marked and range_start is None:
+            range_start = position
+        elif not marked and range_start is not None:
+            code_ranges.append((range_start, position))
+            range_start = None
+
     paren_stack: list[int] = []
-    bracket_stack: list[int] = []
+    bracket_stack: list[tuple[int, int]] = []
     paren_closers: dict[int, int] = {}
     bracket_pairs: list[tuple[int, int, int]] = []
-    line_start = 0
     for index, character in enumerate(text):
         steps += 1
-        if character == "\n":
-            line_start = index + 1
         if code_mask[index] or escaped[index]:
             continue
         if character == "(":
@@ -1238,31 +1592,72 @@ def _scan_receipt_source(text: str) -> _ReceiptSourceScan:
                     tuple(code_ranges),
                     steps,
                 )
-            bracket_stack.append(index)
+            bracket_stack.append((index, source_line_starts[index]))
         elif character == "]" and bracket_stack:
-            bracket_pairs.append((bracket_stack.pop(), index, line_start))
+            opener, opener_line_start = bracket_stack.pop()
+            bracket_pairs.append((opener, index, opener_line_start))
 
     definitions: set[str] = set()
     definition_openers: set[int] = set()
-    for opener, closer, opener_line_start in bracket_pairs:
-        indent_width = opener - opener_line_start
-        if (
+    definition_continuations: set[int] = set()
+    definition_span_end = 0
+    definition_over_cap: int | None = None
+    for opener, closer, opener_line_start in sorted(bracket_pairs):
+        if opener < definition_span_end:
+            continue
+        content_start, in_container = _reference_container_content_start(
+            text, opener_line_start, opener
+        )
+        indent_width = opener - content_start
+        eligible = (
             0 <= indent_width <= 3
+            and not fenced_code_mask[opener]
+            and (
+                in_container
+                or definition_line_starts[opener_line_start]
+                or opener_line_start in definition_continuations
+            )
             and all(
                 text[position] == " "
-                for position in range(opener_line_start, opener)
+                for position in range(content_start, opener)
             )
             and closer + 1 < length
             and text[closer + 1] == ":"
-        ):
+            and _valid_reference_label(text, opener, closer, escaped)
+        )
+        if not eligible:
+            continue
+        definition_end, definition_steps, exhausted = _reference_definition_end(
+            text, closer + 2, escaped
+        )
+        steps += definition_steps
+        if exhausted:
+            definition_over_cap = (
+                opener
+                if definition_over_cap is None
+                else min(definition_over_cap, opener)
+            )
+            continue
+        if definition_end is not None:
             label = " ".join(text[opener + 1:closer].casefold().split())
             steps += closer - opener + 1
             if label:
                 definitions.add(label)
                 definition_openers.add(opener)
+                definition_span_end = max(definition_span_end, definition_end)
+                if definition_end < length:
+                    definition_continuations.add(definition_end)
 
-    unsupported: int | None = None
+    unsupported: int | None = definition_over_cap
     paired_brackets = {opener: closer for opener, closer, _ in bracket_pairs}
+    nested_bracket_openers: set[int] = set()
+    bracket_interval_stack: list[int] = []
+    for opener, closer, _ in sorted(bracket_pairs):
+        while bracket_interval_stack and opener > bracket_interval_stack[-1]:
+            bracket_interval_stack.pop()
+        if bracket_interval_stack:
+            nested_bracket_openers.add(opener)
+        bracket_interval_stack.append(closer)
     for opener, closer, _ in bracket_pairs:
         steps += 1
         if opener in definition_openers:
@@ -1272,6 +1667,9 @@ def _scan_receipt_source(text: str) -> _ReceiptSourceScan:
             following_index < length
             and text[following_index] == "("
             and following_index in paren_closers
+            and paragraph_ids[opener] == paragraph_ids[closer]
+            and paragraph_ids[opener]
+            == paragraph_ids[paren_closers[following_index]]
             and _valid_inline_link_payload(
                 text,
                 following_index,
@@ -1286,6 +1684,24 @@ def _scan_receipt_source(text: str) -> _ReceiptSourceScan:
             and following_index in paired_brackets
         ):
             reference_closer = paired_brackets[following_index]
+            collapsed = reference_closer == following_index + 1
+            if (
+                paragraph_ids[opener] != paragraph_ids[closer]
+                or paragraph_ids[opener] != paragraph_ids[reference_closer]
+                or (
+                    collapsed
+                    and not _valid_reference_label(
+                        text, opener, closer, escaped
+                    )
+                )
+                or (
+                    not collapsed
+                    and not _valid_reference_label(
+                        text, following_index, reference_closer, escaped
+                    )
+                )
+            ):
+                continue
             reference_label = " ".join(
                 text[following_index + 1:reference_closer].casefold().split()
             )
@@ -1297,7 +1713,8 @@ def _scan_receipt_source(text: str) -> _ReceiptSourceScan:
             if reference_label in definitions:
                 unsupported = opener if unsupported is None else min(unsupported, opener)
         elif (
-            opener > 0
+            opener not in nested_bracket_openers
+            and opener > 0
             and closer + 1 < length
             and _ascii_word(text[opener - 1])
             and _ascii_word(text[closer + 1])
@@ -1307,7 +1724,11 @@ def _scan_receipt_source(text: str) -> _ReceiptSourceScan:
             if definitions:
                 label = " ".join(text[opener + 1:closer].casefold().split())
                 steps += closer - opener + 1
-                if label and label in definitions:
+                if (
+                    _valid_reference_label(text, opener, closer, escaped)
+                    and label
+                    and label in definitions
+                ):
                     unsupported = opener if unsupported is None else min(unsupported, opener)
 
     for index, character in enumerate(text):
@@ -1318,7 +1739,31 @@ def _scan_receipt_source(text: str) -> _ReceiptSourceScan:
             text, index, next_positions
         )
         steps += html_steps
-        if end is not None or exhausted:
+        block_prefix = text[source_line_starts[index]:index]
+        block_capable = (
+            len(block_prefix) <= 3
+            and not block_prefix.strip(" ")
+            and (
+                text.startswith("<!--", index)
+                or text.startswith("<?", index)
+                or text.startswith("<![CDATA[", index)
+                or (
+                    text.startswith("<!", index)
+                    and index + 2 < length
+                    and text[index + 2].isascii()
+                    and text[index + 2].isalpha()
+                )
+            )
+        )
+        crosses_paragraph = (
+            end is not None
+            and end > index
+            and paragraph_ids[index] != paragraph_ids[end - 1]
+        )
+        if (
+            (end is not None and (not crosses_paragraph or block_capable))
+            or exhausted
+        ):
             unsupported = index if unsupported is None else min(unsupported, index)
 
     def is_whitespace(character: str) -> bool:
