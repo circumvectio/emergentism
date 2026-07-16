@@ -50,6 +50,7 @@ from .markdown import (
 )
 from .gitstate import inspect_git_state, resolve_git_common_dir
 from .manifest import freeze_manifest_value, validate_manifest
+from .orchestration import validate_inputs
 from .schema import (
     ROOT_ROLES,
     SCHEMA_ID,
@@ -131,6 +132,7 @@ __all__ = [
     "validate_schema_instance",
     "validate_markdown_sync",
     "validate_manifest",
+    "validate_inputs",
     "validate_public_queue",
     "scan_antibodies",
 ]

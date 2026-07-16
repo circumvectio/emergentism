@@ -2,7 +2,9 @@ from __future__ import annotations
 
 import copy
 import json
+import os
 import sys
+import tempfile
 import tracemalloc
 import unittest
 from pathlib import Path
@@ -13,9 +15,9 @@ COMPILER = Path(__file__).resolve().parent
 ROOT = COMPILER.parents[1]
 sys.path.insert(0, str(COMPILER))
 
-import kintsugi_kernel as kernel
-from kintsugi_kernel import records as records_module
-import kintsugi_test_support as support
+import kintsugi_kernel as kernel  # noqa: E402
+from kintsugi_kernel import records as records_module  # noqa: E402
+import kintsugi_test_support as support  # noqa: E402
 
 
 SCHEMA = json.loads(
@@ -1840,6 +1842,379 @@ class RecordValidationBoundaryTests(unittest.TestCase):
                 ):
                     with self.assertRaises(type(exception)):
                         validate(core, phase="A")
+
+
+class ReadOnlyOrchestrationTests(unittest.TestCase):
+    def invoke_with_stage_mocks(
+        self,
+        *,
+        phase="C",
+        public_queue=True,
+        record_issues=(),
+        markdown_issues=(),
+        manifest_issues=(),
+        queue_schema_issues=(),
+        public_issues=(),
+    ):
+        from kintsugi_kernel import orchestration
+
+        events = []
+        schema = {"$defs": {}}
+        core = {"program": {}}
+        queue = {"items": []}
+        data_path = Path("/synthetic/data.json")
+        queue_path = Path("/synthetic/queue.json") if public_queue else None
+
+        def load_schema(path):
+            events.append(("load-schema", path))
+            return schema
+
+        def load_json(path):
+            events.append(("load-json", path))
+            return queue if path == queue_path else core
+
+        def schema_instance(_schema, role, value):
+            events.append(("schema-instance", role, value))
+            return list(queue_schema_issues) if role == "publicQueue" else []
+
+        def records(value, *, phase, bootstrap):
+            events.append(("records", value, phase, bootstrap))
+            return list(record_issues)
+
+        def markdown(root, value, ledger):
+            events.append(("markdown", root, value, ledger))
+            return list(markdown_issues)
+
+        def manifest(root, canonical, value, phase, base_ref):
+            events.append(("manifest", root, canonical, value, phase, base_ref))
+            return list(manifest_issues)
+
+        def public(value, bound_core):
+            events.append(("public-queue", value, bound_core))
+            return list(public_issues)
+
+        with mock.patch.object(orchestration, "load_schema", side_effect=load_schema), \
+             mock.patch.object(orchestration, "load_canonical_json", side_effect=load_json), \
+             mock.patch.object(orchestration, "validate_schema_instance", side_effect=schema_instance), \
+             mock.patch.object(orchestration, "validate_core_records", side_effect=records), \
+             mock.patch.object(orchestration, "validate_markdown_sync", side_effect=markdown), \
+             mock.patch.object(orchestration, "validate_manifest", side_effect=manifest), \
+             mock.patch.object(orchestration, "validate_public_queue", side_effect=public):
+            issues = orchestration.validate_inputs(
+                root=Path("/synthetic/root"),
+                data_path=data_path,
+                schema_path=Path("/synthetic/schema.json"),
+                ledger_path=Path("/synthetic/ledger.md"),
+                phase=phase,
+                bootstrap=False,
+                base_ref="MANIFEST" if phase is not None else None,
+                canonical_root=(
+                    Path("/synthetic/canonical") if phase is not None else None
+                ),
+                public_queue_path=queue_path,
+            )
+        return events, issues
+
+    def test_orchestration_order_and_phase_c_queue_are_exact(self):
+        events, issues = self.invoke_with_stage_mocks()
+
+        self.assertEqual(issues, [])
+        self.assertEqual(
+            [event[0] if event[0] != "schema-instance" else f"schema-{event[1]}"
+             for event in events],
+            [
+                "load-schema",
+                "load-json",
+                "schema-coreData",
+                "records",
+                "markdown",
+                "manifest",
+                "load-json",
+                "schema-publicQueue",
+                "public-queue",
+            ],
+        )
+
+    def test_bare_or_phase_b_checks_skip_queue_unless_explicit(self):
+        bare_events, bare_issues = self.invoke_with_stage_mocks(
+            phase=None,
+            public_queue=False,
+        )
+        self.assertEqual(bare_issues, [])
+        self.assertNotIn("manifest", [event[0] for event in bare_events])
+        self.assertNotIn("public-queue", [event[0] for event in bare_events])
+
+        phase_events, phase_issues = self.invoke_with_stage_mocks(
+            phase="B",
+            public_queue=False,
+        )
+        self.assertEqual(phase_issues, [])
+        self.assertIn("manifest", [event[0] for event in phase_events])
+        self.assertNotIn("public-queue", [event[0] for event in phase_events])
+
+        explicit_events, explicit_issues = self.invoke_with_stage_mocks(
+            phase="B",
+            public_queue=True,
+        )
+        self.assertEqual(explicit_issues, [])
+        self.assertIn("public-queue", [event[0] for event in explicit_events])
+
+    def test_primary_stage_issue_stops_every_downstream_stage_and_is_sorted(self):
+        from kintsugi_kernel import orchestration
+
+        high = kernel.Issue("z", "KIN-E-SCHEMA", "later sort key")
+        low = kernel.Issue("a", "KIN-E-SCHEMA", "earlier sort key")
+        with mock.patch.object(orchestration, "load_schema", return_value={}), \
+             mock.patch.object(orchestration, "load_canonical_json", return_value={}), \
+             mock.patch.object(
+                 orchestration,
+                 "validate_schema_instance",
+                 return_value=[high, low],
+             ), \
+             mock.patch.object(orchestration, "validate_core_records") as records, \
+             mock.patch.object(orchestration, "validate_markdown_sync") as markdown, \
+             mock.patch.object(orchestration, "validate_manifest") as manifest:
+            issues = orchestration.validate_inputs(
+                root=Path("/synthetic/root"),
+                data_path=Path("/synthetic/data.json"),
+                schema_path=Path("/synthetic/schema.json"),
+                ledger_path=Path("/synthetic/ledger.md"),
+                phase="A",
+                bootstrap=True,
+                base_ref="MANIFEST",
+                canonical_root=Path("/synthetic/canonical"),
+                public_queue_path=None,
+            )
+
+        self.assertEqual(issues, [low, high])
+        records.assert_not_called()
+        markdown.assert_not_called()
+        manifest.assert_not_called()
+
+    def test_manifest_issue_prevents_public_queue_evaluation(self):
+        failure = kernel.Issue("manifest", "KIN-E-MANIFEST", "synthetic")
+        events, issues = self.invoke_with_stage_mocks(
+            manifest_issues=(failure,),
+        )
+
+        self.assertEqual(issues, [failure])
+        self.assertNotIn("public-queue", [event[0] for event in events])
+
+    def test_every_returned_issue_boundary_stops_downstream_without_deduplication(self):
+        high = kernel.Issue("z", "KIN-E-SEMANTIC", "later")
+        low = kernel.Issue("a", "KIN-E-SEMANTIC", "earlier")
+        rows = (
+            ("records", {"record_issues": (high, low, low)}, "markdown"),
+            ("markdown", {"markdown_issues": (high, low, low)}, "manifest"),
+            (
+                "queue-schema",
+                {"queue_schema_issues": (high, low, low)},
+                "public-queue",
+            ),
+            ("public", {"public_issues": (high, low, low)}, None),
+        )
+        for label, keyword, forbidden in rows:
+            with self.subTest(stage=label):
+                events, issues = self.invoke_with_stage_mocks(**keyword)
+                self.assertEqual(issues, [low, low, high])
+                if forbidden is not None:
+                    self.assertNotIn(forbidden, [event[0] for event in events])
+
+    def test_loader_exception_propagates_and_prevents_semantic_evaluation(self):
+        from kintsugi_kernel import orchestration
+
+        failure = kernel.KintsugiError("KIN-E-IO", "data", "synthetic")
+        with mock.patch.object(orchestration, "load_schema", return_value={}), \
+             mock.patch.object(
+                 orchestration, "load_canonical_json", side_effect=failure
+             ), \
+             mock.patch.object(orchestration, "validate_schema_instance") as schema, \
+             mock.patch.object(orchestration, "validate_core_records") as records:
+            with self.assertRaises(kernel.KintsugiError) as caught:
+                orchestration.validate_inputs(
+                    root=Path("/synthetic/root"),
+                    data_path=Path("/synthetic/data.json"),
+                    schema_path=Path("/synthetic/schema.json"),
+                    ledger_path=Path("/synthetic/ledger.md"),
+                )
+
+        self.assertIs(caught.exception, failure)
+        schema.assert_not_called()
+        records.assert_not_called()
+
+    def test_malformed_core_and_queue_json_fail_with_typed_diagnostics(self):
+        from kintsugi_kernel import orchestration
+
+        malformed_payloads = (
+            (
+                "nesting",
+                b"[" * 2000 + b"0" + b"]" * 2000,
+                "KIN-E-JSON",
+            ),
+            (
+                "integer-limit",
+                b'{"value":' + b"9" * 5000 + b"}\n",
+                "KIN-E-JSON",
+            ),
+            ("lone-surrogate", b'"\\ud800"\n', "KIN-E-CANONICAL"),
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            schema_path = root / "schema.json"
+            valid_core_path = root / "core.json"
+            schema_path.write_bytes(
+                (
+                    ROOT
+                    / "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SCHEMA.json"
+                ).read_bytes()
+            )
+            valid_core_path.write_bytes(
+                kernel.canonical_json_bytes(support.build_semantic_core())
+            )
+            for location in ("core", "queue"):
+                for label, payload, expected_code in malformed_payloads:
+                    with self.subTest(location=location, payload=label):
+                        malformed_path = root / f"{location}-{label}.json"
+                        malformed_path.write_bytes(payload)
+                        with mock.patch.object(
+                            orchestration, "validate_markdown_sync", return_value=[]
+                        ), self.assertRaises(kernel.KintsugiError) as caught:
+                            orchestration.validate_inputs(
+                                root=root,
+                                data_path=(
+                                    malformed_path
+                                    if location == "core"
+                                    else valid_core_path
+                                ),
+                                schema_path=schema_path,
+                                ledger_path=None,
+                                public_queue_path=(
+                                    malformed_path if location == "queue" else None
+                                ),
+                            )
+                        self.assertEqual(caught.exception.code, expected_code)
+                        self.assertEqual(caught.exception.path, str(malformed_path))
+
+    def test_phase_c_direct_api_requires_a_public_queue(self):
+        from kintsugi_kernel.orchestration import validate_inputs
+
+        with self.assertRaises(kernel.KintsugiError) as caught:
+            validate_inputs(
+                root=Path("/synthetic/root"),
+                data_path=Path("/synthetic/data.json"),
+                schema_path=Path("/synthetic/schema.json"),
+                ledger_path=Path("/synthetic/ledger.md"),
+                phase="C",
+                bootstrap=False,
+                base_ref="MANIFEST",
+                canonical_root=Path("/synthetic/canonical"),
+                public_queue_path=None,
+            )
+
+        self.assertEqual(caught.exception.code, "KIN-E-CLI")
+        self.assertEqual(caught.exception.path, "public-queue")
+
+    def test_real_phase_orchestration_preserves_inputs_and_git_state(self):
+        from kintsugi_kernel import orchestration
+
+        def snapshot_tree(root: Path) -> dict[str, tuple[str, bytes | str]]:
+            snapshot: dict[str, tuple[str, bytes | str]] = {}
+            for path in sorted(root.rglob("*")):
+                relative = path.relative_to(root).as_posix()
+                if path.is_symlink():
+                    snapshot[relative] = ("SYMLINK", os.readlink(path))
+                elif path.is_file():
+                    snapshot[relative] = ("FILE", path.read_bytes())
+            return snapshot
+
+        with tempfile.TemporaryDirectory() as directory:
+            parent = Path(directory)
+            fixture = support.build_synthetic_git_repository(parent)
+            core = support.build_synthetic_manifest_core(fixture)
+            data_path = parent / "phase-b-core.json"
+            schema_path = parent / "schema.json"
+            data_path.write_bytes(kernel.canonical_json_bytes(core))
+            schema_path.write_bytes(
+                (
+                    ROOT
+                    / "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SCHEMA.json"
+                ).read_bytes()
+            )
+            before = {
+                "canonical": snapshot_tree(fixture.canonical_root),
+                "isolated": snapshot_tree(fixture.isolated_root),
+                "data": data_path.read_bytes(),
+                "schema": schema_path.read_bytes(),
+            }
+
+            with mock.patch.object(
+                orchestration, "validate_schema_instance", return_value=[]
+            ), mock.patch.object(
+                orchestration, "validate_core_records", return_value=[]
+            ), mock.patch.object(
+                orchestration, "validate_markdown_sync", return_value=[]
+            ):
+                issues = orchestration.validate_inputs(
+                    root=fixture.isolated_root,
+                    data_path=data_path,
+                    schema_path=schema_path,
+                    ledger_path=None,
+                    phase="B",
+                    bootstrap=False,
+                    base_ref="MANIFEST",
+                    canonical_root=fixture.canonical_root,
+                    public_queue_path=None,
+                )
+
+            after = {
+                "canonical": snapshot_tree(fixture.canonical_root),
+                "isolated": snapshot_tree(fixture.isolated_root),
+                "data": data_path.read_bytes(),
+                "schema": schema_path.read_bytes(),
+            }
+
+        self.assertEqual(issues, [])
+        self.assertEqual(after, before)
+
+    def test_real_orchestration_is_read_only_even_when_markdown_fails(self):
+        from kintsugi_kernel.orchestration import validate_inputs
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            schema_path = root / "schema.json"
+            data_path = root / "data.json"
+            ledger_path = root / "ledger.md"
+            schema_path.write_bytes(
+                (ROOT / "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SCHEMA.json").read_bytes()
+            )
+            core = support.build_semantic_core()
+            data_path.write_bytes(kernel.canonical_json_bytes(core))
+            ledger_path.write_bytes(support.build_ledger_markdown(core["seams"]))
+            before = {
+                path.relative_to(root).as_posix(): path.read_bytes()
+                for path in root.rglob("*")
+                if path.is_file()
+            }
+
+            issues = validate_inputs(
+                root=root,
+                data_path=data_path,
+                schema_path=schema_path,
+                ledger_path=ledger_path,
+                phase=None,
+                bootstrap=False,
+                base_ref=None,
+                canonical_root=None,
+                public_queue_path=None,
+            )
+
+            after = {
+                path.relative_to(root).as_posix(): path.read_bytes()
+                for path in root.rglob("*")
+                if path.is_file()
+            }
+        self.assertTrue(issues)
+        self.assertEqual(after, before)
 
 
 if __name__ == "__main__":

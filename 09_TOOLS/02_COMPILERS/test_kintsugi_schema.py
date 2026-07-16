@@ -5,6 +5,7 @@ import copy
 import hashlib
 import io
 import json
+import os
 import sys
 import tempfile
 import unittest
@@ -177,6 +178,269 @@ class CompatibilityExtractionTests(unittest.TestCase):
         self.assertEqual(exit_code, 0)
         self.assertEqual(stdout.getvalue(), "KIN-OK baseline collected=19 failures=5\n")
         self.assertEqual(stderr.getvalue(), "")
+
+
+class A0BFacadeTests(unittest.TestCase):
+    def invoke(self, argv):
+        stdout = io.StringIO()
+        stderr = io.StringIO()
+        with contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
+            code = facade.main(argv)
+        return code, stdout.getvalue(), stderr.getvalue()
+
+    def test_parser_exposes_the_closed_a0b_flag_surface(self):
+        parser = facade.build_parser()
+        args = parser.parse_args([
+            "--check",
+            "--phase", "A",
+            "--bootstrap",
+            "--base-ref", "MANIFEST",
+            "--data", "data.json",
+            "--schema", "schema.json",
+            "--ledger", "ledger.md",
+            "--public-queue", "queue.json",
+            "--baseline-allowlist", "baseline.json",
+            "--canonical-root", str(ROOT),
+        ])
+
+        self.assertTrue(args.check)
+        self.assertFalse(args.check_baseline)
+        self.assertEqual(args.phase, "A")
+        self.assertTrue(args.bootstrap)
+        self.assertEqual(args.base_ref, "MANIFEST")
+        self.assertEqual(args.data, "data.json")
+        self.assertEqual(args.schema, "schema.json")
+        self.assertEqual(args.ledger, "ledger.md")
+        self.assertEqual(args.public_queue, "queue.json")
+        self.assertEqual(args.baseline_allowlist, "baseline.json")
+        self.assertEqual(args.canonical_root, ROOT)
+
+        defaults = parser.parse_args(["--check-baseline"])
+        self.assertEqual(defaults.contract, facade.DEFAULT_CONTRACT)
+        self.assertEqual(defaults.baseline_allowlist, facade.DEFAULT_CONTRACT)
+        self.assertEqual(defaults.canonical_root, facade.ROOT)
+
+        with self.assertRaises(kernel.KintsugiError) as caught:
+            parser.parse_args(["--check", "--check-baseline"])
+        self.assertEqual(caught.exception.code, "KIN-E-CLI")
+
+    def test_cli_argument_relations_fail_at_cli_with_exit_two(self):
+        cases = (
+            (["--check", "--phase", "A"], "--base-ref"),
+            (["--check", "--phase", "A", "--base-ref", "MANIFEST"], "--canonical-root"),
+            (["--check", "--bootstrap"], "Phase A"),
+            ([
+                "--check", "--phase", "B", "--bootstrap",
+                "--base-ref", "MANIFEST", "--canonical-root", str(ROOT),
+            ], "Phase A"),
+            ([
+                "--check", "--phase", "C", "--bootstrap",
+                "--base-ref", "MANIFEST", "--canonical-root", str(ROOT),
+            ], "Phase A"),
+            ([
+                "--check", "--phase", "A", "--base-ref", "MANIFEST",
+                "--canonical-root", ".",
+            ], "absolute"),
+            (["--check-baseline", "--phase", "A"], "baseline mode"),
+            (["--check-baseline", "--bootstrap"], "baseline mode"),
+            ([
+                "--check-baseline",
+                "--contract", "a.json",
+                "--baseline-allowlist", "b.json",
+            ], "conflict"),
+        )
+        for argv, fragment in cases:
+            with self.subTest(argv=argv):
+                code, stdout, stderr = self.invoke(argv)
+                self.assertEqual(code, 2)
+                self.assertEqual(stdout, "")
+                self.assertIn("KIN-ERROR CLI KIN-E-CLI:", stderr)
+                self.assertIn(fragment, stderr)
+                self.assertNotIn("Traceback", stderr)
+
+    def test_baseline_aliases_resolve_to_one_path_or_conflict(self):
+        parser = facade.build_parser()
+        default = ROOT / facade.DEFAULT_CONTRACT
+        cases = (
+            (["--check-baseline"], default),
+            (["--check-baseline", "--contract", facade.DEFAULT_CONTRACT], default),
+            ([
+                "--check-baseline", "--baseline-allowlist",
+                facade.DEFAULT_CONTRACT,
+            ], default),
+            ([
+                "--check-baseline", "--contract", facade.DEFAULT_CONTRACT,
+                "--baseline-allowlist", facade.DEFAULT_CONTRACT,
+            ], default),
+        )
+        for argv, expected in cases:
+            with self.subTest(argv=argv):
+                self.assertEqual(facade._baseline_path(parser.parse_args(argv)), expected)
+
+        args = parser.parse_args([
+            "--check-baseline", "--contract", "a.json",
+            "--baseline-allowlist", "b.json",
+        ])
+        with self.assertRaises(kernel.KintsugiError) as caught:
+            facade._baseline_path(args)
+        self.assertEqual(caught.exception.code, "KIN-E-CLI")
+
+    def test_public_queue_routing_distinguishes_default_from_explicit_input(self):
+        rows = (
+            (["--check"], None),
+            (["--check", "--public-queue", "queue.json"], ROOT / "queue.json"),
+            ([
+                "--check", "--phase", "B", "--base-ref", "HEAD",
+                "--canonical-root", str(ROOT),
+            ], None),
+            ([
+                "--check", "--phase", "C", "--base-ref", "HEAD",
+                "--canonical-root", str(ROOT),
+            ], ROOT / facade.DEFAULT_PUBLIC_QUEUE),
+        )
+        for argv, expected in rows:
+            with self.subTest(argv=argv), mock.patch.object(
+                facade, "validate_inputs", return_value=[]
+            ) as validate:
+                self.assertEqual(self.invoke(argv), (0, "KIN-OK validation\n", ""))
+                self.assertEqual(
+                    validate.call_args.kwargs["public_queue_path"], expected
+                )
+
+    def test_default_live_check_reports_the_absent_core_as_controlled_io(self):
+        before = (ROOT / facade.DEFAULT_DATA).exists()
+        code, stdout, stderr = self.invoke(["--check"])
+
+        self.assertEqual(code, 2)
+        self.assertEqual(stdout, "")
+        self.assertIn("KIN-ERROR CLI KIN-E-IO:", stderr)
+        self.assertIn(facade.DEFAULT_DATA, stderr)
+        self.assertNotIn("Traceback", stderr)
+        self.assertEqual((ROOT / facade.DEFAULT_DATA).exists(), before)
+
+    def test_core_io_error_precedes_downstream_git_inspection(self):
+        with tempfile.TemporaryDirectory() as directory:
+            code, stdout, stderr = self.invoke([
+                "--check",
+                "--phase", "A",
+                "--base-ref", "HEAD",
+                "--canonical-root", str(Path(directory).resolve()),
+            ])
+
+        self.assertEqual(code, 2)
+        self.assertEqual(stdout, "")
+        self.assertIn("KIN-ERROR CLI KIN-E-IO:", stderr)
+        self.assertIn(facade.DEFAULT_DATA, stderr)
+        self.assertNotIn("KIN-E-CONCURRENT", stderr)
+
+    def test_symlink_loop_canonical_root_is_a_controlled_path_error(self):
+        with tempfile.TemporaryDirectory() as directory:
+            loop = Path(directory) / "loop"
+            loop.symlink_to("loop")
+            rows = (
+                ["--check-baseline", "--canonical-root", str(loop)],
+                [
+                    "--check",
+                    "--phase", "A",
+                    "--base-ref", "HEAD",
+                    "--canonical-root", str(loop),
+                ],
+            )
+            for argv in rows:
+                with self.subTest(argv=argv):
+                    code, stdout, stderr = self.invoke(argv)
+                    self.assertEqual(code, 1)
+                    self.assertEqual(stdout, "")
+                    self.assertIn("KIN-E-PATH", stderr)
+                    self.assertNotIn("Traceback", stderr)
+
+    def test_symlink_loop_repository_relative_overrides_are_controlled(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            loop = root / "loop"
+            loop.symlink_to("loop")
+            rows = (
+                ["--check", "--data", "loop/input.json"],
+                ["--check-baseline", "--contract", "loop/input.json"],
+            )
+            with mock.patch.object(facade, "ROOT", root):
+                for argv in rows:
+                    with self.subTest(argv=argv):
+                        code, stdout, stderr = self.invoke(argv)
+                        self.assertEqual(code, 1)
+                        self.assertEqual(stdout, "")
+                        self.assertIn("KIN-E-PATH", stderr)
+                        self.assertNotIn("Traceback", stderr)
+
+    def test_malformed_baseline_contract_json_is_controlled(self):
+        malformed_payloads = (
+            (
+                "nesting.json",
+                b"[" * 2000 + b"0" + b"]" * 2000,
+                "KIN-E-JSON",
+            ),
+            (
+                "integer-limit.json",
+                b'{"value":' + b"9" * 5000 + b"}\n",
+                "KIN-E-JSON",
+            ),
+            ("lone-surrogate.json", b'"\\ud800"\n', "KIN-E-CANONICAL"),
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            with mock.patch.object(facade, "ROOT", root):
+                for name, payload, expected_code in malformed_payloads:
+                    with self.subTest(payload=name):
+                        (root / name).write_bytes(payload)
+                        code, stdout, stderr = self.invoke([
+                            "--check-baseline",
+                            "--contract", name,
+                            "--canonical-root", str(root),
+                        ])
+                        self.assertEqual(code, 1)
+                        self.assertEqual(stdout, "")
+                        self.assertIn(expected_code, stderr)
+                        self.assertNotIn("Traceback", stderr)
+
+    def test_full_check_success_and_semantic_failure_have_exact_streams(self):
+        with mock.patch.object(facade, "validate_inputs", return_value=[]):
+            self.assertEqual(
+                self.invoke(["--check"]),
+                (0, "KIN-OK validation\n", ""),
+            )
+
+        high = kernel.Issue("z", "KIN-E-SEMANTIC", "later failure")
+        low = kernel.Issue("a", "KIN-E-SEMANTIC", "earlier failure")
+        with mock.patch.object(
+            facade, "validate_inputs", return_value=[high, low, low]
+        ):
+            code, stdout, stderr = self.invoke(["--check"])
+        self.assertEqual(code, 1)
+        self.assertEqual(stdout, "")
+        self.assertEqual(
+            stderr,
+            "KIN-ERROR a KIN-E-SEMANTIC: earlier failure\n"
+            "KIN-ERROR a KIN-E-SEMANTIC: earlier failure\n"
+            "KIN-ERROR z KIN-E-SEMANTIC: later failure\n",
+        )
+
+    def test_default_paths_are_rooted_at_the_compiler_location_not_cwd(self):
+        with tempfile.TemporaryDirectory() as directory, mock.patch.object(
+            facade, "validate_inputs", return_value=[]
+        ) as validate:
+            previous = Path.cwd()
+            try:
+                os.chdir(directory)
+                code, stdout, stderr = self.invoke(["--check"])
+            finally:
+                os.chdir(previous)
+
+        self.assertEqual((code, stdout, stderr), (0, "KIN-OK validation\n", ""))
+        call = validate.call_args
+        self.assertEqual(call.kwargs["root"], ROOT)
+        self.assertEqual(call.kwargs["data_path"], ROOT / facade.DEFAULT_DATA)
+        self.assertEqual(call.kwargs["schema_path"], ROOT / facade.DEFAULT_SCHEMA)
+        self.assertEqual(call.kwargs["ledger_path"], ROOT / facade.DEFAULT_LEDGER)
 
 
 class StablePackageSurfaceTests(SchemaAssertions):
