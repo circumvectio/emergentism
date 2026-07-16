@@ -1428,6 +1428,261 @@ class ReceiptSynchronizationTests(unittest.TestCase):
                     for issue in result.issues
                 ))
 
+    def test_frozen_receipt_rejects_capped_modifier_closure_bypasses(self):
+        receipt = support.build_core_data()["phaseReceipts"][0]
+        for line in (
+            "The target is conclusively frozen.",
+            "The artifact was unequivocally finalized.",
+            "The package has unquestionably passed.",
+            "The bundle is indisputably complete.",
+            "The outcome was conclusively approved.",
+            "The target has already been frozen.",
+            "The package should now be considered final.",
+            "The target will be frozen.",
+            "The target must now be frozen.",
+            "The target is plainly frozen.",
+            "The package should now officially be formally considered unquestionably final.",
+        ):
+            with self.subTest(line=line):
+                result = kernel.synchronize_receipt_markdown(
+                    support.build_receipt_markdown(
+                        receipt,
+                        prefix=(
+                            "# Synthetic receipt\n\n" + line + "\n"
+                        ).encode("utf-8"),
+                    ),
+                    receipt,
+                    target_frozen=True,
+                )
+
+                self.assertTrue(any(
+                    issue.code == "KIN-E-LEDGER"
+                    and "dynamic receipt prose" in issue.message
+                    for issue in result.issues
+                ))
+
+    def test_frozen_receipt_allows_exact_control_nouns_and_math_prose(self):
+        receipt = support.build_core_data()["phaseReceipts"][0]
+        ordinary_lines = (
+            "Logic connects premises to conclusions.",
+            "A phase transition changes the order parameter.",
+            "The literature review surveys prior work.",
+            "The status of the theorem remains open.",
+            "The digest of a message is a mathematical function.",
+            "The gate in a circuit computes conjunction.",
+            "The relation x<y remains conjectural.",
+            "The interval f[x] remains bounded.",
+            "The type List[T] remains abstract.",
+            "The notation <A,B> denotes an inner product.",
+            "The audit artifact in the museum is historically important.",
+            "The status of the theorem is discussed at https://example.test/.",
+            "Status reports are documented at https://example.test/.",
+            "Audit.",
+            "Attestation.",
+            "BTJ.",
+            "Checker.",
+            "Logic.",
+            "Phase.",
+            "Receipt.",
+            "Review.",
+            "Reviewer.",
+            "Status.",
+            "Validation.",
+            "Verdict.",
+        )
+        hashes = []
+        for line in ordinary_lines:
+            with self.subTest(line=line):
+                result = kernel.synchronize_receipt_markdown(
+                    support.build_receipt_markdown(
+                        receipt,
+                        prefix=(
+                            "# Synthetic receipt\n\n" + line + "\n"
+                        ).encode("utf-8"),
+                    ),
+                    receipt,
+                    target_frozen=True,
+                )
+
+                self.assertEqual(result.issues, ())
+                hashes.append(result.narrative_raw_sha256)
+        self.assertEqual(len(hashes), len(set(hashes)))
+
+    def test_receipt_projection_preserves_character_reference_punctuation(self):
+        receipt = support.build_core_data()["phaseReceipts"][0]
+        for line in (
+            "The spelling re&#42;view remains visibly marked.",
+            "The spelling lo&#95;gic remains visibly marked.",
+            "The escaped text &lt;span&gt; is literal documentation.",
+            "The spelling St&#97tus is not a CommonMark character reference.",
+            "The spelling &ltspan is not a CommonMark character reference.",
+            "The literal `St&#97;tus: VERIFIED` is code documentation.",
+            "The literal `Status: VERIFIED` is code documentation.",
+            "The literal `Ｓｔａｔｕｓ: VERIFIED` is code documentation.",
+            "The literal `Sta&ZeroWidthSpace;tus: VERIFIED` is code documentation.",
+            r"The escaped \&#83;tatus: VERIFIED is literal source.",
+            "Lo_gic approved remains literal intraword punctuation.",
+            "The spelling re*view remains an unmatched literal delimiter.",
+            "The spelling re***view** remains visibly marked.",
+            "The spelling re~~view~~ remains visibly marked.",
+            "The re***view** passed.",
+            "The re***view* passed.",
+            "The re~~view~~ passed.",
+        ):
+            with self.subTest(line=line):
+                result = kernel.synchronize_receipt_markdown(
+                    support.build_receipt_markdown(
+                        receipt,
+                        prefix=(
+                            "# Synthetic receipt\n\n" + line + "\n"
+                        ).encode("utf-8"),
+                    ),
+                    receipt,
+                    target_frozen=True,
+                )
+
+                self.assertEqual(result.issues, ())
+
+        for line in (
+            "The re**view** passed.",
+            "_Logic_ approved.",
+            "St&#97;tus: VERIFIED",
+            "Sta&ZeroWidthSpace;tus: VERIFIED",
+        ):
+            with self.subTest(line=line):
+                result = kernel.synchronize_receipt_markdown(
+                    support.build_receipt_markdown(
+                        receipt,
+                        prefix=(
+                            "# Synthetic receipt\n\n" + line + "\n"
+                        ).encode("utf-8"),
+                    ),
+                    receipt,
+                    target_frozen=True,
+                )
+
+                self.assertTrue(any(
+                    issue.code == "KIN-E-LEDGER"
+                    and "dynamic receipt prose" in issue.message
+                    for issue in result.issues
+                ))
+
+    def test_frozen_receipt_rejects_proven_links_and_complete_inline_html(self):
+        receipt = support.build_core_data()["phaseReceipts"][0]
+        unsupported_sources = (
+            "See [documentation](https://example.test/).",
+            "See ![diagram](diagram.svg).",
+            "See [documentation][reference].\n[reference]: https://example.test/",
+            "See [documentation][].\n[documentation]: https://example.test/",
+            "See [documentation].\n[documentation]: https://example.test/",
+            "See <https://example.test/>.",
+            "See <reader@example.test>.",
+            "See <foo@bar>.",
+            "See <foo.bar@example.com>.",
+            "See <a+b:c>.",
+            "The prose contains <span class=\"note\">literal HTML</span>.",
+            "The prose contains <span\n class=\"note\">literal HTML</span>.",
+            "The prose contains <!-- a bounded\n comment --> here.",
+            "The prose contains <?instruction\n value?> here.",
+            "The prose contains <!DECLARATION\n value> here.",
+            "The prose contains <![CDATA[bounded\n text]]> here.",
+            "The prose contains <!doctype html> here.",
+            "The prose contains <!--> here.",
+            "The prose contains <!---> here.",
+            "An unmatched ` opener ends here.\n\n[docs](url)\n\nA later ` is separate.",
+        )
+        for source in unsupported_sources:
+            with self.subTest(source=source):
+                result = kernel.synchronize_receipt_markdown(
+                    support.build_receipt_markdown(
+                        receipt,
+                        prefix=(
+                            "# Synthetic receipt\n\n" + source + "\n"
+                        ).encode("utf-8"),
+                    ),
+                    receipt,
+                    target_frozen=True,
+                )
+
+                self.assertTrue(any(
+                    issue.code == "KIN-E-LEDGER"
+                    and "bounded lexical grammar" in issue.message
+                    for issue in result.issues
+                ))
+
+        for source in (
+            "The relation x<y remains conjectural.",
+            "The interval f[x] remains bounded.",
+            "The type List[T] remains abstract.",
+            "The notation <A,B> denotes an inner product.",
+            "The fragment <span is incomplete documentation.",
+            "The fragment <!-- remains unfinished documentation.",
+            "The fragment <? remains unfinished documentation.",
+            "The fragment <!DECLARATION remains unfinished documentation.",
+            "The fragment <![CDATA[ remains unfinished documentation.",
+            "Literal <span\n\nclass=x> notation remains ordinary source.",
+            r"The escaped link \[x](y) remains literal source.",
+            r"The escaped tag \<span> remains literal source.",
+            "The code span `[x](y)` remains literal source.",
+            "The invalid inline form [x](not a link) remains literal source.",
+            "The unresolved reference [x][missing] remains literal source.",
+        ):
+            with self.subTest(source=source):
+                result = kernel.synchronize_receipt_markdown(
+                    support.build_receipt_markdown(
+                        receipt,
+                        prefix=(
+                            "# Synthetic receipt\n\n" + source + "\n"
+                        ).encode("utf-8"),
+                    ),
+                    receipt,
+                    target_frozen=True,
+                )
+
+                self.assertEqual(result.issues, ())
+
+    def test_receipt_source_scanner_has_a_deterministic_linear_step_bound(self):
+        scanner = getattr(markdown_module, "_scan_receipt_source", None)
+        self.assertTrue(callable(scanner), "receipt source scanner is absent")
+        for repeats in (32, 64, 128):
+            with self.subTest(repeats=repeats):
+                source = (
+                    "x<y f[x] List[T] re*view \\[x](y) `z[z]` "
+                    * repeats
+                )
+                first = scanner(source)
+                second = scanner(source)
+                self.assertEqual(first, second)
+                self.assertIsNone(first.unsupported_offset)
+                self.assertLessEqual(first.steps, 40 * len(source) + 64)
+
+        for depth in (64, 128):
+            with self.subTest(depth=depth):
+                source = "[" * depth + "x" + "]" * depth
+                result = scanner(source)
+                self.assertIsNone(result.unsupported_offset)
+                self.assertLessEqual(result.steps, 40 * len(source) + 64)
+
+    def test_receipt_source_scanner_fails_closed_on_complete_over_cap_construct(self):
+        receipt = support.build_core_data()["phaseReceipts"][0]
+        source = "<!--\n" + ("bounded text\n" * 700) + "-->"
+        self.assertGreater(
+            len(source), markdown_module._MAX_RECEIPT_CONSTRUCT_CHARS
+        )
+        result = kernel.synchronize_receipt_markdown(
+            support.build_receipt_markdown(
+                receipt,
+                prefix=("# Synthetic receipt\n\n" + source + "\n").encode(),
+            ),
+            receipt,
+            target_frozen=True,
+        )
+        self.assertTrue(any(
+            issue.code == "KIN-E-LEDGER"
+            and "bounded lexical grammar" in issue.message
+            for issue in result.issues
+        ))
+
     def test_frozen_receipt_rejects_unsupported_rendered_split_constructs(self):
         receipt = support.build_core_data()["phaseReceipts"][0]
         for line in (
