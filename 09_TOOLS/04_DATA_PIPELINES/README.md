@@ -5,7 +5,7 @@ rosetta:
   secondary:
     - level: L3
       column: Evidence Audit
-      role: "index local GFS outputs as receipts, not doctrine"
+      role: "index local data outputs as receipts, not doctrine"
     - level: L4
       column: Pipeline Execution
       role: "identify active fetch and analysis scripts plus rerun boundaries"
@@ -35,19 +35,20 @@ artifacts.
 
 ## Current Focus
 
-This folder currently holds the GFS-oriented analysis lane and its supporting
-artifacts.
+This folder is available for newly constituted data-pipeline work. The former
+GFS-oriented lane and all of its direct artifacts were retired on 2026-07-16
+to [`../../90_ARCHIVE/2026_07_13_gfs_retraction/`](../../90_ARCHIVE/2026_07_13_gfs_retraction/README.md).
+Nothing in that archive is a live pipeline or active evidence source.
 
 ## Current Pipeline Inventory
 
 | Surface | Status |
 |---|---|
-| `download_gfs.py` | [B] OSF file-list fetcher for the GFS node; network-dependent, no local data write by default. |
-| `gfs_22_country_analysis_v2_fixed.py` | [B] Preferred GFS Codebook v2 analysis script in this checkout. |
-| `gfs_22_country_analysis.py` | [I] Earlier/provenance script; superseded for codebook-v2 runs by the v2-fixed variant. |
-| `gfs_22_country_analysis_wave2.py` | [I] Wave-2/provenance variant; use only with matching source data and column-mapping review. |
-| `gfs_results_20260409.csv` / `gfs_meta_analysis_20260409.txt` | [B] Local dated outputs from the GFS analysis lane; evidence artifacts, not doctrine. |
 | `ra_files.txt` | [I] Legacy absolute-path inventory; do not treat as live route authority. |
+
+The active inventory contains no executable study pipeline. Any new pipeline
+must declare its owner, source-data custody, preregistration or test contract,
+reproducible command, and evidence boundary before entry.
 
 ## Authority Rule
 

@@ -20,12 +20,15 @@ rosetta:
 title: "00 Gfs Wave1 Results"
 evidence_tier: "[D] compatibility stub; [I] route metadata."
 type: compatibility-stub
-status: ACTIVE — old-link preservation only; canonical content lives in the linked owner lane.
-canonical_target: "../../03_METHODOLOGY/00_GFS_WAVE1_RESULTS.md"
+status: RETIRED — archive-only pointer; no active canonical target.
+canonical_target: "../../90_ARCHIVE/2026_07_13_gfs_retraction/README.md"
 ---
 
-# MOVED
+# RETIRED
 
-This file moved to: [03_METHODOLOGY/00_GFS_WAVE1_RESULTS.md](../../03_METHODOLOGY/00_GFS_WAVE1_RESULTS.md)
+The entire GFS study corpus is retired. Its cold provenance lives at the
+[GFS retirement archive](../../90_ARCHIVE/2026_07_13_gfs_retraction/README.md).
 
-Canonical content lives at the new path (Phase 2c reorg per packet 156). Old link preservation only.
+This compatibility path preserves old-link meaning only. It is not an active
+owner, result, validation lane, or citation route, and it must not be used to
+revive any archived claim.
