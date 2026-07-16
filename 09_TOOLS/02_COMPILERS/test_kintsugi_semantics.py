@@ -477,20 +477,92 @@ class ModalityAndEvidenceTests(unittest.TestCase):
         seam["supportLinks"][1] = copy.deepcopy(second)
         self.assertIn("KIN-E-VERDICT", codes(validate(core)))
 
-    def _select_phase_b_with_phase_a_dependency(self, core, seam, *, verified):
-        dependency_receipt = core["phaseReceipts"][0]
-        if verified:
-            dependency_receipt.update({
-                "status": "VERIFIED",
+    def _verify_phase_a_receipt(self, core):
+        receipt = core["phaseReceipts"][0]
+        manifest = core["manifests"][0]
+        attempt_id = "RVA-A-900"
+        target_path = (
+            "09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_review_attempts/"
+            f"{attempt_id}/review_target.json"
+        )
+        logic_path = (
+            "11_UPLINK/50_AUDITS_AND_EXECUTIONS/KINTSUGI_REVIEW_ATTEMPTS/"
+            f"{attempt_id}_LOGIC.md"
+        )
+        btj_path = (
+            "11_UPLINK/50_AUDITS_AND_EXECUTIONS/KINTSUGI_REVIEW_ATTEMPTS/"
+            f"{attempt_id}_BTJ.md"
+        )
+        bundle_path = (
+            "09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_review_attempts/"
+            f"{attempt_id}/validation_bundle.json"
+        )
+        logic_id = "ATT-LOGIC-A-900"
+        btj_id = "ATT-BTJ-A-900"
+        core["reviewAttempts"].append({
+            "id": attempt_id,
+            "phase": "A",
+            "receiptId": receipt["id"],
+            "supersedesAttemptId": None,
+            "reviewSubjectDigest": support.RAW_HASH,
+            "reviewTargetPath": target_path,
+            "logicReviewPath": logic_path,
+            "btjReviewPath": btj_path,
+            "validationBundlePath": bundle_path,
+            "logicAttestationId": logic_id,
+            "btjAttestationId": btj_id,
+            "status": "PASSED",
+            "abandonReason": None,
+        })
+        core["reviewAttemptArtifacts"].append({
+            "attemptId": attempt_id,
+            "reviewTargetSha256": support.RAW_HASH,
+            "logicReviewSha256": support.RAW_HASH,
+            "btjReviewSha256": support.RAW_HASH,
+        })
+        for kind, attestation_id, path in (
+            ("LOGIC", logic_id, logic_path),
+            ("BTJ", btj_id, btj_path),
+        ):
+            core["reviewAttestations"].append({
+                "id": attestation_id,
+                "kind": kind,
+                "path": path,
+                "receiptId": receipt["id"],
+                "reviewerId": f"independent-{kind.lower()}-reviewer",
+                "reviewerRole": f"Independent {kind} reviewer",
+                "independenceStatement": "No implementation role in this attempt.",
                 "reviewTargetDigest": support.RAW_HASH,
-                "validationBundlePath": "09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_review_attempts/RVA-A-900/validation_bundle.json",
-                "validationDigest": support.RAW_HASH,
-                "logicReviewPath": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/KINTSUGI_REVIEW_ATTEMPTS/RVA-A-900_LOGIC.md",
-                "btjReviewPath": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/KINTSUGI_REVIEW_ATTEMPTS/RVA-A-900_BTJ.md",
-                "reviewAttemptId": "RVA-A-900",
+                "verdict": "PASS",
+                "findingIds": [],
+                "openSevereFindingIds": [],
+                "approvedUpgradeSeamIds": [],
+                "approvedGateSeamIds": [],
+                "attemptId": attempt_id,
             })
+        derived_paths = [target_path, logic_path, btj_path, bundle_path]
+        manifest["finalFiles"] = copy.deepcopy(manifest["includedFiles"])
+        manifest["finalFileCount"] = len(manifest["finalFiles"])
+        manifest["closureOnlyPaths"] = sorted(derived_paths)
+        manifest["allowedChangePaths"] = sorted(
+            set(manifest["allowedChangePaths"]) | set(derived_paths)
+        )
+        receipt.update({
+            "status": "VERIFIED",
+            "reviewTargetDigest": support.RAW_HASH,
+            "validationBundlePath": bundle_path,
+            "validationDigest": support.RAW_HASH,
+            "logicReviewPath": logic_path,
+            "btjReviewPath": btj_path,
+            "reviewAttemptId": attempt_id,
+        })
 
+    def _select_phase_b_with_phase_a_dependency(self, core, *, verified):
         target = core["claims"][0]
+        clean_target_trial = copy.deepcopy(next(
+            item for item in core["trials"] if item["claimId"] == target["id"]
+        ))
+        seam = support.add_retiered_seam(core, "C", "S")
         source = next(item for item in core["sources"] if item["id"] == target["ownerSourceId"])
         source["phases"] = sorted(set(source["phases"] + ["B"]))
         target_trial = copy.deepcopy(next(
@@ -500,8 +572,17 @@ class ModalityAndEvidenceTests(unittest.TestCase):
             "id": "TRL-B-900",
             "manifestId": "MAN-B-001",
             "receiptId": "REC-B-109",
+            "triedQuote": "A Phase-B target formulation is repaired at the declared tier.",
+            "triedHash": "sha256-text-lf:" + "9" * 64,
         })
+        core["trials"][0] = clean_target_trial
         core["trials"].append(target_trial)
+        seam.update({
+            "receiptId": "REC-B-109",
+            "beforeQuote": target_trial["triedQuote"],
+            "beforeHash": target_trial["triedHash"],
+        })
+        core["phaseReceipts"][0]["seamIds"] = []
 
         manifest = copy.deepcopy(core["manifests"][0])
         manifest.update({
@@ -513,10 +594,14 @@ class ModalityAndEvidenceTests(unittest.TestCase):
             "eligibleClaimCount": 1,
             "trialedClaimIds": [target["id"]],
             "trialedClaimCount": 1,
+            "finalFiles": [],
+            "finalFileCount": 0,
+            "closureOnlyPaths": [],
         })
+        manifest["discoveryRules"][0]["id"] = "DISC-B-001"
         core["manifests"].append(manifest)
 
-        receipt = copy.deepcopy(dependency_receipt)
+        receipt = copy.deepcopy(core["phaseReceipts"][0])
         receipt.update({
             "id": "REC-B-109",
             "phase": "B",
@@ -536,7 +621,9 @@ class ModalityAndEvidenceTests(unittest.TestCase):
             "reviewAttemptId": None,
         })
         core["phaseReceipts"].append(receipt)
-        seam["receiptId"] = receipt["id"]
+        if verified:
+            self._verify_phase_a_receipt(core)
+        return seam
 
     def test_upgrade_evidence_is_admissible_only_through_selected_or_verified_inventory(self):
         current = support.build_semantic_core()
@@ -600,17 +687,25 @@ class ModalityAndEvidenceTests(unittest.TestCase):
 
         for verified in (True, False):
             dependency = support.build_semantic_core()
-            seam = support.add_retiered_seam(dependency, "C", "S")
             self._select_phase_b_with_phase_a_dependency(
-                dependency, seam, verified=verified
+                dependency, verified=verified
             )
             self.assertSchemaValid(dependency)
             with self.subTest(route="verified dependency" if verified else "unverified dependency"):
-                verdict_codes = codes(validate(dependency, phase="B"))
                 if verified:
-                    self.assertNotIn("KIN-E-VERDICT", verdict_codes)
+                    self.assertEqual(validate(dependency, phase="B"), [])
                 else:
-                    self.assertIn("KIN-E-VERDICT", verdict_codes)
+                    self.assertIn(
+                        "KIN-E-VERDICT", codes(validate(dependency, phase="B"))
+                    )
+
+    def test_bare_multi_phase_validation_unions_each_receipts_admissible_evidence(self):
+        core = support.build_semantic_core()
+        self._select_phase_b_with_phase_a_dependency(core, verified=True)
+        self.assertSchemaValid(core)
+
+        self.assertEqual(validate(core, phase="B"), [])
+        self.assertEqual(validate(core, phase=None), [])
 
     def test_retier_preserves_a_live_lifecycle_and_cannot_launder_retirement(self):
         rows = []

@@ -278,7 +278,7 @@ def _admissible_evidence_trials(
         )
     ]
     if receipt_id is None and phase is None:
-        selected = list(receipts.values()) if len(receipts) == 1 else []
+        selected = list(receipts.values())
 
     result: dict[str, set[str]] = {}
 

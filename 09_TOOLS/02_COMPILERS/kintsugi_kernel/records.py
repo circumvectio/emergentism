@@ -998,19 +998,20 @@ def _validate_review_history(core: dict[str, Any], indexes: dict[str, dict[str, 
     findings = indexes["reviewFindings"]
     finding_ref_counts: Counter[str] = Counter()
 
-    def review_subject(attempt: dict[str, Any] | None) -> dict[str, set[Any]]:
-        if attempt is None:
-            return {
-                "claimIds": set(), "seamIds": set(), "ledgerSectionIds": set(),
-                "receiptIds": set(), "subjectPaths": set(), "discriminatorIds": set(),
-            }
-        receipt = receipts.get(attempt.get("receiptId"))
-        manifest = manifests.get(receipt.get("manifestId")) if receipt is not None else None
-        if receipt is None or manifest is None:
-            return {
-                "claimIds": set(), "seamIds": set(), "ledgerSectionIds": set(),
-                "receiptIds": set(), "subjectPaths": set(), "discriminatorIds": set(),
-            }
+    discriminator_ids_by_claim: dict[Any, set[Any]] = defaultdict(set)
+    for discriminator_id, discriminator in discriminators.items():
+        discriminator_ids_by_claim[discriminator.get("claimId")].add(discriminator_id)
+
+    empty_review_subject = {
+        "claimIds": set(), "seamIds": set(), "ledgerSectionIds": set(),
+        "receiptIds": set(), "subjectPaths": set(), "discriminatorIds": set(),
+    }
+    review_subjects_by_receipt: dict[Any, dict[str, set[Any]]] = {}
+    for receipt_id, receipt in receipts.items():
+        manifest = manifests.get(receipt.get("manifestId"))
+        if manifest is None:
+            review_subjects_by_receipt[receipt_id] = empty_review_subject
+            continue
         claim_ids = set(receipt.get("claimIds", [])) & set(manifest.get("harvestedClaimIds", []))
         seam_ids = {
             seam_id
@@ -1025,12 +1026,10 @@ def _validate_review_history(core: dict[str, Any], indexes: dict[str, dict[str, 
             for record in manifest.get("finalFiles", [])
             if isinstance(record, dict) and record.get("path") not in closure_paths
         }
-        discriminator_ids = {
-            discriminator_id
-            for discriminator_id, discriminator in discriminators.items()
-            if discriminator.get("claimId") in claim_ids
-        }
-        return {
+        discriminator_ids: set[Any] = set()
+        for claim_id in claim_ids:
+            discriminator_ids.update(discriminator_ids_by_claim.get(claim_id, ()))
+        review_subjects_by_receipt[receipt_id] = {
             "claimIds": claim_ids,
             "seamIds": seam_ids,
             "ledgerSectionIds": seam_ids | {"LEDGER-PREAMBLE"},
@@ -1038,6 +1037,13 @@ def _validate_review_history(core: dict[str, Any], indexes: dict[str, dict[str, 
             "subjectPaths": subject_paths,
             "discriminatorIds": discriminator_ids,
         }
+
+    def review_subject(attempt: dict[str, Any] | None) -> dict[str, set[Any]]:
+        if attempt is None:
+            return empty_review_subject
+        return review_subjects_by_receipt.get(
+            attempt.get("receiptId"), empty_review_subject
+        )
 
     for position, attempt in enumerate(attempts_list):
         base = f"core.reviewAttempts[{position}]"

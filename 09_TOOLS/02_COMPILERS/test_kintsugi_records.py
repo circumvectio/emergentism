@@ -474,6 +474,17 @@ class CountingList(list):
         return super().__iter__()
 
 
+class SubjectCountingList(list):
+    def __init__(self, *args, counter, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.counter = counter
+
+    def __iter__(self):
+        if self.counter["review_subject_active"]:
+            self.counter["claim_membership_scans"] += 1
+        return super().__iter__()
+
+
 class VesselAndIdentityTests(unittest.TestCase):
     def assertSchemaValid(self, value):
         self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", value), ())
@@ -1263,6 +1274,35 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
 
         self.assertLessEqual(counter["finding_steps"], count * 3, counter)
         self.assertLessEqual(counter["disposition_steps"], count * 8, counter)
+
+    def test_review_subject_membership_is_precomputed_once_per_receipt(self):
+        core = support.build_semantic_core()
+        long_failed_review_chain(core, count=25)
+        counter = {
+            "review_subject_active": False,
+            "claim_membership_scans": 0,
+        }
+        receipt = core["phaseReceipts"][0]
+        receipt["claimIds"] = SubjectCountingList(
+            receipt["claimIds"], counter=counter
+        )
+        original_validate_review_history = records_module._validate_review_history
+
+        def counted_validate_review_history(value, indexes):
+            counter["review_subject_active"] = True
+            try:
+                return original_validate_review_history(value, indexes)
+            finally:
+                counter["review_subject_active"] = False
+
+        with mock.patch.object(
+            records_module,
+            "_validate_review_history",
+            counted_validate_review_history,
+        ):
+            self.assertEqual(validate(core, phase="A"), [])
+
+        self.assertEqual(counter["claim_membership_scans"], 1, counter)
 
     def test_attestation_finding_disposition_and_typed_endpoints_resolve_exactly(self):
         core = support.build_semantic_core()
