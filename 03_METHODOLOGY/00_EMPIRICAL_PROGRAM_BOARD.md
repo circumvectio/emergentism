@@ -23,8 +23,8 @@ rosetta:
 **Status:** Active empirical routing surface
 **Date:** 2026-04-14
 **Evidence Tier:** Mixed by protocol; this document is a board, not a substitute for results
-**Depends on:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [What Actually Tests the Theory](00_WHAT_ACTUALLY_TESTS_THE_THEORY.md), [GFS Wave 1 Results](00_GFS_WAVE1_RESULTS.md), [The Canonical Claim Matrix](00_CANONICAL_CLAIM_MATRIX.md)
-**See also:** [GFS Human Validation Lane](../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/spec/empirical/03_GFS_STUDY/GFS_README.md), [GFS Multiplicative Test Pipeline](../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/spec/empirical/01_GFS_TEST/README.md)
+**Depends on:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [What Actually Tests the Theory](00_WHAT_ACTUALLY_TESTS_THE_THEORY.md), [The Canonical Claim Matrix](00_CANONICAL_CLAIM_MATRIX.md)
+**See also:** [GFS retirement receipt](../90_ARCHIVE/2026_07_13_gfs_retraction/2026-07-16_GFS_RETIREMENT_RECEIPT.md) (archive provenance only)
 
 ---
 
@@ -42,7 +42,7 @@ If this board conflicts with `00_THE_HONEST_POSITION.md`, the Honest Position wi
 
 | Program | What it tests | Current status | Tier affected | Current honest verdict | Next milestone | Upgrade / downgrade rule |
 |---|---|---|---|---|---|---|
-| **GFS Wave 1** | Whether survey-operationalized flourishing follows a multiplicative interaction structure in human populations | Done | I1, I6, AK1 | Mixed; signal present but not dominant | better psychometrics, pooled/meta refinement, moderator analysis | Upgrade if stronger instruments replicate multiplicative support; downgrade if additive dominance appears robustly |
+| **GFS study lane** | Former survey-proxy study of human flourishing | **Retired / archived** | None active; CM14 records the disposition only | Supplies no active evidence, validation claim, or pending program | None. A future human study must be constituted as a new preregistered lane with raw-data custody and independent authority. | The archive cannot upgrade. A new study stands or falls on its own frozen design and receipts. |
 | **Protocol D** | Whether multiplicative fitness structures generate cooperation in agent simulations | Done (framework-designed) | S15 | Confirmed internally; not independent public evidence yet | independent preregistered replication and paper submission | Upgrades to [A] only via independent replication |
 | **Agent V×Φ** | Whether balance predicts performance ranking in simulated agents | Done (framework-designed) | S16 | Confirmed internally; still structurally tiered | independent replication in non-framework environments | Upgrades to [A] only via independent replication |
 | **SPHERE Probe** | Whether equatorial projection improves coherence in a first public-model lane | Done | bridge confidence, not core math | Negative / informative first run | redesign or replacement probe | A negative here does not kill the framework; it only weakens one operational bridge |
@@ -65,7 +65,7 @@ If resources are limited, the board should move in this order:
 4. **Power-Max independent replication** — cheapest clean public upgrade
 5. **AMRITA vs baselines** — strongest practical bridge if it works
 6. **Φ-meter validation** — useful instrument, but not the deepest test
-7. **GFS refinement** — only after stronger phi/nu measurement discipline is available
+7. **No GFS follow-up** — the retired archive is closed; any future human-flourishing test must be a newly constituted study, not a refinement or revival
 
 ---
 

@@ -45,7 +45,7 @@ The tool layer of the Emergentism organism. Scripts, compilers, simulations, pac
 | `01_SCRIPTS/` | Operational scripts (evolution engine, agent sync, coordination) | L4 Kṣatriya |
 | `02_COMPILERS/` | Corpus map builders, uplink compilers | L5 Brāhmaṇa |
 | `03_SIMULATIONS/` | Formal proofs: spectrum, r-star, MIDUS | L5 Brāhmaṇa with L3/L6 checks |
-| `04_DATA_PIPELINES/` | GFS downloads, country analysis | L2 Śūdra |
+| `04_DATA_PIPELINES/` | General data-pipeline intake; the former GFS lane is retired under `90_ARCHIVE/2026_07_13_gfs_retraction/` | L2 Śūdra |
 | `05_DEPLOY/` | Docker and deployment configs (docker-compose.yml, Dockerfile.heartbeat) | L4 Kṣatriya |
 | `06_PACKAGES/emergentism-core/` | **Shared primitives package** — polygenic evolution, K2 crypto, provider taxonomy | L5 Brāhmaṇa |
 | `07_AGENT_OPS/` | Agent framework integration, Rosetta loader, syntropic router | L4 Kṣatriya |
