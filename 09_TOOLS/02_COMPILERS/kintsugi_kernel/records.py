@@ -3,6 +3,7 @@ from __future__ import annotations
 from collections import Counter, defaultdict
 from typing import Any, Iterable
 
+from .codec import text_hash
 from .diagnostics import Issue
 
 
@@ -403,13 +404,11 @@ def _validate_references(core: dict[str, Any], indexes: dict[str, dict[str, dict
     claims = indexes["claims"]
     manifests = indexes["manifests"]
     receipts = indexes["phaseReceipts"]
-    trials = indexes["trials"]
     seams = indexes["seams"]
     sources = indexes["sources"]
     discriminators = indexes["discriminators"]
     antibodies = indexes["antibodies"]
     fixtures = indexes["fixtures"]
-    propagations = indexes["propagations"]
     trials_by_seam: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for trial in items(core, "trials"):
         seam_id = trial.get("seamId")
@@ -418,6 +417,19 @@ def _validate_references(core: dict[str, Any], indexes: dict[str, dict[str, dict
 
     for position, trial in enumerate(items(core, "trials")):
         base = f"core.trials[{position}]"
+        tried_quote = trial.get("triedQuote")
+        tried_hash = trial.get("triedHash")
+        if isinstance(tried_quote, str) and isinstance(tried_hash, str):
+            try:
+                computed_tried_hash = text_hash(tried_quote)
+            except UnicodeError:
+                computed_tried_hash = None
+            if computed_tried_hash != tried_hash:
+                result.append(issue(
+                    f"{base}.triedHash",
+                    "KIN-E-RECEIPT",
+                    "tried quote does not recompute to its declared text hash",
+                ))
         trial_claim = _require_ref(result, f"{base}.claimId", trial.get("claimId"), claims, "claim")
         trial_manifest = _require_ref(result, f"{base}.manifestId", trial.get("manifestId"), manifests, "manifest")
         trial_receipt = _require_ref(result, f"{base}.receiptId", trial.get("receiptId"), receipts, "phase receipt")

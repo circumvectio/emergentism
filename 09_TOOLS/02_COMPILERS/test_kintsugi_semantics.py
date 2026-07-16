@@ -11,8 +11,8 @@ COMPILER = Path(__file__).resolve().parent
 ROOT = COMPILER.parents[1]
 sys.path.insert(0, str(COMPILER))
 
-import kintsugi_kernel as kernel
-import kintsugi_test_support as support
+import kintsugi_kernel as kernel  # noqa: E402
+import kintsugi_test_support as support  # noqa: E402
 
 
 SCHEMA = json.loads(
@@ -354,7 +354,7 @@ class ModalityAndEvidenceTests(unittest.TestCase):
         pairs = [(left, right) for left in order for right in order if left != right]
         for before, after in pairs:
             core = support.build_semantic_core()
-            seam = support.add_retiered_seam(core, before, after)
+            support.add_retiered_seam(core, before, after)
             with self.subTest(before=before, after=after, case="warranted"):
                 self.assertSchemaValid(core)
                 self.assertEqual(validate(core), [])
@@ -449,7 +449,7 @@ class ModalityAndEvidenceTests(unittest.TestCase):
         second_trial = copy.deepcopy(repeated["trials"][1])
         second_trial["id"] = "TRL-A-099"
         second_trial["triedQuote"] = "An independent replication of the supporting claim."
-        second_trial["triedHash"] = "sha256-text-lf:" + "1" * 64
+        second_trial["triedHash"] = kernel.text_hash(second_trial["triedQuote"])
         repeated["trials"].append(second_trial)
         repeated["phaseReceipts"][0]["trialIds"].append(second_trial["id"])
         self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", repeated), [])
@@ -600,7 +600,9 @@ class ModalityAndEvidenceTests(unittest.TestCase):
             "manifestId": "MAN-B-001",
             "receiptId": "REC-B-109",
             "triedQuote": "A Phase-B target formulation is repaired at the declared tier.",
-            "triedHash": "sha256-text-lf:" + "9" * 64,
+            "triedHash": kernel.text_hash(
+                "A Phase-B target formulation is repaired at the declared tier."
+            ),
         })
         core["trials"][0] = clean_target_trial
         core["trials"].append(target_trial)

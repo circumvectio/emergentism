@@ -53,6 +53,15 @@ class AttemptPlan:
     paths: tuple[str, str, str, str]
 
 
+@dataclass(frozen=True)
+class _HistoricalAttemptRecord:
+    phase: str
+    receipt_id: str
+    identity: tuple[Any, ...]
+    statuses: frozenset[str]
+    disappeared_on_lineage: bool
+
+
 def _git_environment() -> dict[str, str]:
     environment = os.environ.copy()
     for name in (
@@ -250,6 +259,10 @@ def _parse_unrepresentable_mode_paths(tokens: tuple[bytes, ...]) -> tuple[str, .
             _decode_git_path(value) for value in tokens[index:index + path_count]
         ]
         index += path_count
+        supported_modes = {"000000", "100644", "100755", "120000"}
+        unsupported_transition = (
+            old_mode not in supported_modes or new_mode not in supported_modes
+        )
         executable_transition = (
             (new_mode == "100755" and old_mode != "100755")
             or (
@@ -257,7 +270,7 @@ def _parse_unrepresentable_mode_paths(tokens: tuple[bytes, ...]) -> tuple[str, .
                 and new_mode not in {"100755", "000000"}
             )
         )
-        if executable_transition:
+        if unsupported_transition or executable_transition:
             paths.update(record_paths)
     return tuple(sorted(paths))
 
@@ -1005,6 +1018,18 @@ _TARGET_ROOT = "09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_review_attempts"
 _REVIEW_ROOT = "11_UPLINK/50_AUDITS_AND_EXECUTIONS/KINTSUGI_REVIEW_ATTEMPTS"
 _TARGET_PREFIX = _TARGET_ROOT + "/"
 _REVIEW_PREFIX = _REVIEW_ROOT + "/"
+_CANONICAL_CORE_PATH = "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json"
+_IMMUTABLE_ATTEMPT_FIELDS = (
+    "id",
+    "phase",
+    "receiptId",
+    "supersedesAttemptId",
+    "reviewSubjectDigest",
+    "reviewTargetPath",
+    "logicReviewPath",
+    "btjReviewPath",
+    "validationBundlePath",
+)
 
 
 def _attempt_id_from_path(path: str) -> str | None:
@@ -1334,6 +1359,11 @@ def _used_attempt_ids(
 
     for attempt_id in _reachable_attempt_ids(root):
         if attempt_id.split("-")[1] == phase:
+            used.add(attempt_id)
+    for attempt_id, historical in _reachable_core_attempt_history(
+        root, _CANONICAL_CORE_PATH
+    ).items():
+        if historical.phase == phase:
             used.add(attempt_id)
     for reservation in _reservation_records(common_dir):
         if reservation["phase"] == phase:
@@ -1812,6 +1842,163 @@ def _decode_canonical_history_core(
     return value
 
 
+def _historical_attempt_identity(
+    attempt: dict[str, Any], *, context: str
+) -> tuple[Any, ...]:
+    attempt_id = attempt.get("id")
+    phase = attempt.get("phase")
+    receipt_id = attempt.get("receiptId")
+    if not isinstance(attempt_id, str) or not isinstance(phase, str):
+        raise KintsugiError(
+            "KIN-E-CONCURRENT", context, "historical attempt identity is malformed"
+        )
+    _canonical_attempt_number(attempt_id, phase)
+    receipt_identity = RECEIPT_IDENTITIES.get(phase)
+    if receipt_identity is None or receipt_id != receipt_identity[0]:
+        raise KintsugiError(
+            "KIN-E-CONCURRENT", attempt_id, "historical attempt receipt is non-canonical"
+        )
+    predecessor_id = attempt.get("supersedesAttemptId")
+    if predecessor_id is not None:
+        if not isinstance(predecessor_id, str):
+            raise KintsugiError(
+                "KIN-E-CONCURRENT",
+                attempt_id,
+                "historical attempt predecessor is malformed",
+            )
+        _canonical_attempt_number(predecessor_id, phase)
+        if predecessor_id == attempt_id:
+            raise KintsugiError(
+                "KIN-E-CONCURRENT",
+                attempt_id,
+                "historical attempt cannot supersede itself",
+            )
+    if not isinstance(attempt.get("reviewSubjectDigest"), str):
+        raise KintsugiError(
+            "KIN-E-CONCURRENT",
+            attempt_id,
+            "historical attempt subject digest is malformed",
+        )
+    expected_paths = attempt_paths(attempt_id)
+    actual_paths = tuple(
+        attempt.get(field)
+        for field in (
+            "reviewTargetPath",
+            "logicReviewPath",
+            "btjReviewPath",
+            "validationBundlePath",
+        )
+    )
+    if actual_paths != expected_paths:
+        raise KintsugiError(
+            "KIN-E-CONCURRENT",
+            attempt_id,
+            "historical attempt paths are not exactly derived",
+        )
+    return tuple(attempt.get(field) for field in _IMMUTABLE_ATTEMPT_FIELDS)
+
+
+def _reachable_core_attempt_history(
+    root: Path, core_relative: str
+) -> dict[str, _HistoricalAttemptRecord]:
+    identities: dict[str, tuple[Any, ...]] = {}
+    phases: dict[str, str] = {}
+    receipt_ids: dict[str, str] = {}
+    statuses: dict[str, set[str]] = {}
+    disappeared_ids: set[str] = set()
+    commit_states: dict[str, dict[str, tuple[tuple[Any, ...], str]]] = {}
+    allowed_statuses = {"PENDING", "PASSED", "FAILED", "ABANDONED"}
+
+    for commit, parents in _reachable_history_graph(root):
+        payload = _regular_blob_at_commit(root, commit, core_relative)
+        historical_core = (
+            {}
+            if payload is None
+            else _decode_canonical_history_core(
+                payload,
+                relative=core_relative,
+                commit=commit,
+            )
+        )
+        attempts = historical_core.get("reviewAttempts")
+        if attempts is None:
+            attempts = []
+        if not isinstance(attempts, list):
+            raise KintsugiError(
+                "KIN-E-CONCURRENT",
+                "history",
+                "historical reviewAttempts collection is malformed",
+            )
+
+        current: dict[str, tuple[tuple[Any, ...], str]] = {}
+        for attempt in attempts:
+            if not isinstance(attempt, dict):
+                raise KintsugiError(
+                    "KIN-E-CONCURRENT", "history", "historical attempt is malformed"
+                )
+            identity = _historical_attempt_identity(attempt, context=commit)
+            attempt_id = str(attempt["id"])
+            status = attempt.get("status")
+            if not isinstance(status, str) or status not in allowed_statuses:
+                raise KintsugiError(
+                    "KIN-E-CONCURRENT",
+                    attempt_id,
+                    "historical attempt status is malformed",
+                )
+            if attempt_id in current:
+                raise KintsugiError(
+                    "KIN-E-CONCURRENT",
+                    attempt_id,
+                    "historical attempt identity is duplicated",
+                )
+            previous_identity = identities.get(attempt_id)
+            if previous_identity is not None and previous_identity != identity:
+                raise KintsugiError(
+                    "KIN-E-CONCURRENT",
+                    attempt_id,
+                    "historical attempt immutable identity changed",
+                )
+            identities.setdefault(attempt_id, identity)
+            phases.setdefault(attempt_id, str(attempt["phase"]))
+            receipt_ids.setdefault(attempt_id, str(attempt["receiptId"]))
+            statuses.setdefault(attempt_id, set()).add(str(status))
+            current[attempt_id] = (identity, str(status))
+
+        for parent in parents:
+            parent_state = commit_states[parent]
+            missing = set(parent_state) - set(current)
+            if missing:
+                disappeared_ids.update(missing)
+            for attempt_id, (parent_identity, parent_status) in parent_state.items():
+                if attempt_id not in current:
+                    continue
+                child_identity, child_status = current[attempt_id]
+                if child_identity != parent_identity:
+                    raise KintsugiError(
+                        "KIN-E-CONCURRENT",
+                        attempt_id,
+                        "historical attempt immutable identity changed",
+                    )
+                if parent_status != "PENDING" and child_status != parent_status:
+                    raise KintsugiError(
+                        "KIN-E-CONCURRENT",
+                        attempt_id,
+                        "terminal attempt changed or reopened on a reachable lineage",
+                    )
+        commit_states[commit] = current
+
+    return {
+        attempt_id: _HistoricalAttemptRecord(
+            phase=phases[attempt_id],
+            receipt_id=receipt_ids[attempt_id],
+            identity=identity,
+            statuses=frozenset(statuses[attempt_id]),
+            disappeared_on_lineage=attempt_id in disappeared_ids,
+        )
+        for attempt_id, identity in sorted(identities.items())
+    }
+
+
 def _unique_history_record(
     core: dict[str, Any],
     collection: str,
@@ -2130,13 +2317,31 @@ def _validate_reachable_terminal_chain(
     receipt_id: str,
     core_relative: str,
 ) -> None:
+    historical_attempts = {
+        attempt_id: historical
+        for attempt_id, historical in _reachable_core_attempt_history(
+            root, core_relative
+        ).items()
+        if historical.phase == phase and historical.receipt_id == receipt_id
+    }
+    disappeared = sorted(
+        attempt_id
+        for attempt_id, historical in historical_attempts.items()
+        if historical.disappeared_on_lineage
+    )
+    if disappeared:
+        raise KintsugiError(
+            "KIN-E-CONCURRENT",
+            disappeared[0],
+            "allocated attempt disappeared on a reachable lineage",
+        )
     historical_statuses = _reachable_terminal_attempt_statuses(
         root,
         core_relative,
         phase,
         receipt_id,
     )
-    if not historical_statuses:
+    if not historical_attempts and not historical_statuses:
         return
     attempts_value = core.get("reviewAttempts")
     artifacts_value = core.get("reviewAttemptArtifacts")
@@ -2171,13 +2376,42 @@ def _validate_reachable_terminal_chain(
                 "KIN-E-CONCURRENT", "history", "current attempt history is malformed"
             )
         current_by_id[attempt_id] = attempt
-    missing = set(historical_statuses) - set(current_by_id)
+    missing = set(historical_attempts) - set(current_by_id)
     if missing:
         raise KintsugiError(
             "KIN-E-CONCURRENT",
             sorted(missing)[0],
-            "reachable terminal attempt is missing from the current chain",
+            "reachable allocated attempt is missing from the current chain",
         )
+    for attempt_id, historical in sorted(historical_attempts.items()):
+        attempt = current_by_id[attempt_id]
+        if _historical_attempt_identity(
+            attempt, context=attempt_id
+        ) != historical.identity:
+            raise KintsugiError(
+                "KIN-E-CONCURRENT",
+                attempt_id,
+                "current attempt differs from its immutable historical identity",
+            )
+        current_status = attempt.get("status")
+        if not isinstance(current_status, str) or current_status not in {
+            "PENDING",
+            "PASSED",
+            "FAILED",
+            "ABANDONED",
+        }:
+            raise KintsugiError(
+                "KIN-E-CONCURRENT", attempt_id, "current attempt status is malformed"
+            )
+        terminal_statuses = historical.statuses - {"PENDING"}
+        if len(terminal_statuses) > 1 or (
+            terminal_statuses and current_status not in terminal_statuses
+        ):
+            raise KintsugiError(
+                "KIN-E-CONCURRENT",
+                attempt_id,
+                "current attempt is not a legal continuation of reachable history",
+            )
     receipts = [
         value
         for value in receipts_value

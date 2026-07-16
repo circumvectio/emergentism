@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from .codec import canonical_json_bytes, raw_hash
+from .codec import canonical_json_bytes, normalize_lf, raw_hash, text_hash
 from .diagnostics import Issue, KintsugiError
 from .gitstate import (
     FileRecord,
@@ -527,6 +527,7 @@ def _validate_claim_partition(
     elif phase != "A" or not h:
         _raise("core.trials", "KIN-E-MANIFEST", "empty trials are legal only in exact Phase-A bootstrap")
     _validate_phase_a_bindings(
+        root,
         core,
         manifest,
         receipt,
@@ -542,6 +543,7 @@ def _validate_claim_partition(
 
 
 def _validate_phase_a_bindings(
+    root: Path,
     core: dict[str, object],
     manifest: dict[str, Any],
     receipt: dict[str, Any],
@@ -575,6 +577,7 @@ def _validate_phase_a_bindings(
         _raise("manifest.requiredClaimBindings", "KIN-E-MANIFEST", "Phase A requires all seven frozen bindings")
     declared_trial_ids = set(receipt.get("trialIds", ()))
     canonical_receipt_id = RECEIPT_IDENTITIES["A"][0]
+    owner_text_by_path: dict[str, str] = {}
     for requirement, expected in PHASE_A_REQUIREMENTS.items():
         owner_path, anchor, target_hash = expected
         binding = by_requirement[requirement]
@@ -593,6 +596,27 @@ def _validate_phase_a_bindings(
             or source.get("path") != owner_path
         ):
             _raise("manifest.requiredClaimBindings", "KIN-E-MANIFEST", "frozen Phase-A binding does not match its owner and claim")
+        owner_text = owner_text_by_path.get(owner_path)
+        if owner_text is None:
+            try:
+                owner_payload = _read_regular_no_symlinks(
+                    root,
+                    owner_path,
+                    code="KIN-E-MANIFEST",
+                    require_single_link=True,
+                )
+                owner_text = normalize_lf(owner_payload.decode("utf-8"))
+            except KintsugiError as exc:
+                _raise(owner_path, "KIN-E-MANIFEST", exc.message)
+            except UnicodeDecodeError:
+                _raise(owner_path, "KIN-E-MANIFEST", "owner source is not valid UTF-8")
+            owner_text_by_path[owner_path] = owner_text
+        if normalize_lf(anchor) not in owner_text:
+            _raise(
+                owner_path,
+                "KIN-E-MANIFEST",
+                "frozen Phase-A owner anchor is absent from the reviewed bytes",
+            )
         if not bootstrap:
             owned_trials = [
                 trial for trial in trials if trial.get("claimId") == claim_id
@@ -604,6 +628,8 @@ def _validate_phase_a_bindings(
                 and trial.get("manifestId") == manifest.get("id")
                 and trial.get("receiptId") == canonical_receipt_id
                 and trial.get("triedHash") == target_hash
+                and isinstance(trial.get("triedQuote"), str)
+                and text_hash(trial["triedQuote"]) == target_hash
             ]
             if (
                 claim_id not in trialed
@@ -611,6 +637,13 @@ def _validate_phase_a_bindings(
                 or len(matching_trials) != 1
             ):
                 _raise("manifest.requiredClaimBindings", "KIN-E-MANIFEST", "binding lacks its unique matching trial")
+            tried_quote = normalize_lf(str(matching_trials[0]["triedQuote"]))
+            if owner_text.count(tried_quote) != 1:
+                _raise(
+                    owner_path,
+                    "KIN-E-MANIFEST",
+                    "frozen Phase-A tried quote must occur exactly once in its owner bytes",
+                )
 
 
 def _validate_protected(
@@ -676,9 +709,12 @@ def _validate_scope(
     canonical: GitState,
     manifest: dict[str, Any],
     included_paths: set[str],
+    typed_control_paths: set[str],
 ) -> None:
     allowed = set(_path_list(manifest.get("allowedChangePaths"), "manifest.allowedChangePaths"))
     protected = set(_path_list(manifest.get("protectedPaths"), "manifest.protectedPaths"))
+    closure = set(_path_list(manifest.get("closureOnlyPaths"), "manifest.closureOnlyPaths"))
+    review_bound_paths = included_paths | typed_control_paths | closure
     allowances = _require_mapping(manifest.get("allowedPreexistingUntracked"), "manifest.allowedPreexistingUntracked")
     for label, state in (("isolated", isolated), ("canonical", canonical)):
         # Root-specific allowances are part of the CAS-bound phase-start core;
@@ -704,7 +740,7 @@ def _validate_scope(
             _raise(
                 sorted(unbound_modes)[0],
                 "KIN-E-SCOPE",
-                "executable mode change is not representable in the frozen file record",
+                "Git mode change is not representable in the frozen file record",
             )
         for relative in state.staged_paths:
             indexed = _index_record(state.root, relative)
@@ -734,6 +770,12 @@ def _validate_scope(
                 _raise(relative, "KIN-E-PROTECTED", "protected path changed")
             if relative not in allowed:
                 _raise(relative, "KIN-E-SCOPE", "path changed outside the allowed scope")
+            if relative not in review_bound_paths:
+                _raise(
+                    relative,
+                    "KIN-E-SCOPE",
+                    "changed semantic path lacks a hash-bearing or typed review projection",
+                )
 
 
 def _validate_manifest_or_raise(
@@ -850,7 +892,13 @@ def _validate_manifest_or_raise(
         reserved,
     )
     _validate_protected(isolated, canonical, manifest)
-    _validate_scope(isolated, canonical, manifest, included)
+    _validate_scope(
+        isolated,
+        canonical,
+        manifest,
+        included,
+        fixed_controls | {_SCHEMA_PATH},
+    )
 
 
 def validate_manifest(

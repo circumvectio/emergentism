@@ -17,7 +17,7 @@ from kintsugi_kernel import (
     resolve_git_common_dir,
     validate_manifest,
 )
-from kintsugi_kernel.codec import canonical_json_bytes, raw_hash
+from kintsugi_kernel.codec import canonical_json_bytes, raw_hash, text_hash
 from kintsugi_kernel.records import attempt_paths
 from kintsugi_test_support import (
     ATTEMPT_ID,
@@ -190,6 +190,34 @@ class GitStateInspectionTests(unittest.TestCase):
             "scratch/executable.sh",
             {record.path for record in state.untracked_records},
         )
+
+    def test_committed_gitlink_mode_cannot_be_allowlisted(self) -> None:
+        relative = "03_METHODOLOGY/opaque-gitlink"
+        self.git(
+            self.fixture.isolated_root,
+            "update-index",
+            "--add",
+            "--cacheinfo",
+            f"160000,{self.fixture.base_commit},{relative}",
+        )
+        self.git(self.fixture.isolated_root, "commit", "-m", "opaque gitlink")
+        core = build_synthetic_manifest_core(self.fixture)
+        core["manifests"][0]["allowedChangePaths"].append(relative)
+        core["manifests"][0]["allowedChangePaths"].sort()
+
+        state = inspect_git_state(
+            self.fixture.isolated_root, self.fixture.base_commit
+        )
+        issues = validate_manifest(
+            self.fixture.isolated_root,
+            self.fixture.canonical_root,
+            core,
+            "B",
+            "MANIFEST",
+        )
+
+        self.assertIn(relative, state.unrepresentable_mode_paths)
+        self.assertIn("KIN-E-SCOPE", {issue.code for issue in issues})
 
     def test_base_blob_and_registered_worktree_inventories_are_frozen(self) -> None:
         from kintsugi_kernel.gitstate import _base_blob_records, _list_worktrees
@@ -676,6 +704,55 @@ class AttemptAndConcurrencyPrimitiveTests(unittest.TestCase):
         self.assertEqual(plan.id, "RVA-B-002")
         self.assertEqual(plan.predecessor_id, "RVA-B-001")
         self.assertEqual(plan.paths, attempt_paths("RVA-B-002"))
+
+    def test_committed_pending_core_attempt_cannot_be_erased_or_reused(self) -> None:
+        from kintsugi_kernel.gitstate import _plan_next_attempt, _used_attempt_ids
+
+        clean = copy.deepcopy(self.core)
+        pending = copy.deepcopy(clean)
+        attempt = build_review_attempt()
+        pending["reviewAttempts"] = [attempt]
+        pending["reviewAttemptArtifacts"] = [{
+            "attemptId": ATTEMPT_ID,
+            "reviewTargetSha256": None,
+            "logicReviewSha256": None,
+            "btjReviewSha256": None,
+        }]
+        pending["phaseReceipts"][0]["reviewAttemptId"] = ATTEMPT_ID
+        manifest = pending["manifests"][0]
+        manifest["finalFiles"] = [
+            current_file_record(self.fixture.isolated_root, record["path"])
+            for record in manifest["includedFiles"]
+        ]
+        manifest["finalFileCount"] = len(manifest["finalFiles"])
+        manifest["closureOnlyPaths"] = sorted(attempt_paths(ATTEMPT_ID))
+        manifest["allowedChangePaths"] = sorted({
+            *manifest["allowedChangePaths"],
+            *manifest["closureOnlyPaths"],
+        })
+        core_path = self.fixture.isolated_root / self.core_relative
+        core_path.write_bytes(canonical_json_bytes(pending))
+        self.git(self.fixture.isolated_root, "add", "--", self.core_relative)
+        self.git(self.fixture.isolated_root, "commit", "-m", "allocate pending")
+        core_path.write_bytes(canonical_json_bytes(clean))
+        self.git(self.fixture.isolated_root, "add", "--", self.core_relative)
+        self.git(self.fixture.isolated_root, "commit", "-m", "erase pending")
+
+        issues = validate_manifest(
+            self.fixture.isolated_root,
+            self.fixture.canonical_root,
+            clean,
+            "B",
+            "MANIFEST",
+        )
+        used = _used_attempt_ids(self.fixture.isolated_root, clean, "B")
+        plan = _plan_next_attempt(
+            self.fixture.isolated_root, clean, "B", "REC-B-109"
+        )
+
+        self.assertIn("KIN-E-CONCURRENT", {issue.code for issue in issues})
+        self.assertEqual(used, (ATTEMPT_ID,))
+        self.assertEqual(plan.id, "RVA-B-002")
 
     def test_ignored_attempt_path_still_burns_its_attempt_id(self) -> None:
         from kintsugi_kernel.gitstate import _plan_next_attempt
@@ -2772,6 +2849,25 @@ class FinalManifestFreezeTests(unittest.TestCase):
         )
         self.assertEqual(manifest["finalFileCount"], len(manifest["finalFiles"]))
 
+    def test_allowed_only_semantic_payload_cannot_escape_hash_binding(self) -> None:
+        relative = "03_METHODOLOGY/arbitrary-review.md"
+        target = self.fixture.isolated_root / relative
+        target.write_bytes(b"payload A\n")
+        self.core["manifests"][0]["allowedChangePaths"].append(relative)
+        self.core["manifests"][0]["allowedChangePaths"].sort()
+
+        with self.assertRaises(KintsugiError) as caught:
+            freeze_manifest_value(
+                self.fixture.isolated_root,
+                self.fixture.canonical_root,
+                self.core,
+                "B",
+                "MANIFEST",
+                True,
+            )
+
+        self.assertEqual(caught.exception.code, "KIN-E-SCOPE")
+
     def test_review_subject_digest_changes_with_semantics_not_placeholder_data(self) -> None:
         baseline = freeze_manifest_value(
             self.fixture.isolated_root,
@@ -3427,6 +3523,45 @@ class PhaseABindingManifestTests(unittest.TestCase):
         self.assertEqual(self.validate(core), [])
 
         core["trials"][0]["triedHash"] = "sha256-text-lf:" + "f" * 64
+        self.assertIn(
+            "KIN-E-MANIFEST", {issue.code for issue in self.validate(core)}
+        )
+
+    def test_phase_a_fixture_quotes_recompute_to_frozen_hashes(self) -> None:
+        core = self.build_phase_a(self.fixture, bootstrap=False)
+        bindings = {
+            binding["claimId"]: binding
+            for binding in core["manifests"][0]["requiredClaimBindings"]
+        }
+
+        for trial in core["trials"]:
+            with self.subTest(claim_id=trial["claimId"]):
+                self.assertEqual(
+                    text_hash(trial["triedQuote"]),
+                    bindings[trial["claimId"]]["targetHash"],
+                )
+
+    def test_phase_a_tried_quote_and_owner_anchor_are_byte_proven(self) -> None:
+        core = self.build_phase_a(self.fixture, bootstrap=False)
+        core["trials"][0]["triedQuote"] = "An unrelated substituted quote."
+        self.assertIn(
+            "KIN-E-MANIFEST", {issue.code for issue in self.validate(core)}
+        )
+
+        core = self.build_phase_a(self.fixture, bootstrap=False)
+        binding = core["manifests"][0]["requiredClaimBindings"][0]
+        source = next(
+            source
+            for source in core["sources"]
+            if source["id"] == binding["ownerSourceId"]
+        )
+        owner = self.fixture.isolated_root / source["path"]
+        owner.write_text(
+            owner.read_text(encoding="utf-8").replace(binding["ownerAnchor"], ""),
+            encoding="utf-8",
+        )
+        source["sha256"] = raw_hash(owner.read_bytes())
+
         self.assertIn(
             "KIN-E-MANIFEST", {issue.code for issue in self.validate(core)}
         )

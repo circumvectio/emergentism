@@ -75,13 +75,17 @@ def build_synthetic_git_repository(parent: Path) -> SyntheticGitRepository:
         "03_METHODOLOGY/phase-a-inventory-review.md": b"# Synthetic Phase A inventory review\n",
         "11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_FORMAL_STRESS_LEDGER_2026_07_11.md": b"# Synthetic Phase A receipt\n",
     }
-    anchors_by_owner: dict[str, list[str]] = {}
-    for _, owner_path, anchor, _ in PHASE_A_REQUIREMENTS:
-        anchors_by_owner.setdefault(owner_path, []).append(anchor)
-    for owner_path, anchors in sorted(anchors_by_owner.items()):
+    bindings_by_owner: dict[str, list[tuple[str, str]]] = {}
+    for requirement, owner_path, anchor, _ in PHASE_A_REQUIREMENTS:
+        bindings_by_owner.setdefault(owner_path, []).append(
+            (anchor, PHASE_A_QUOTES[requirement])
+        )
+    for owner_path, bindings in sorted(bindings_by_owner.items()):
         tracked[owner_path] = (
             "# Synthetic Phase A owner\n\n"
-            + "\n\n".join(anchors)
+            + "\n\n".join(
+                f"{anchor}\n\n{quote}" for anchor, quote in bindings
+            )
             + "\n"
         ).encode("utf-8")
     for relative, payload in tracked.items():
@@ -533,7 +537,7 @@ _TRIAL = {
     "claimId": CLAIM_ID,
     "manifestId": MANIFEST_ID,
     "triedQuote": "A declared state remains inside its typed register.",
-    "triedHash": TEXT_HASH,
+    "triedHash": "sha256-text-lf:31f95b540bf7ee77f2b18646510c4ac34f1d6850345e5fba3853b039615cbc0f",
     "steelman": "The claim is purely structural and explicitly scoped.",
     "countermodel": {
         "description": "No countermodel defeats a definitionally typed fixture.",
@@ -1087,6 +1091,39 @@ PHASE_A_REQUIREMENTS = (
 )
 
 
+PHASE_A_QUOTES = {
+    "REQ-A-PROTOCOL-SELF-TRIAL": (
+        "**A repaired claim outranks an untested one.** A seam is not an apology — it is\n"
+        "a *verification mark*: this line was attacked by a named adversary, broke in a\n"
+        "specific way, and the repair survived re-trial. Pristine surfaces carry no such\n"
+        "evidence. Therefore: **seams are prestige, erasure is the only disgrace.**\n"
+        "Corollary for readers: trust the seamed passage *more*."
+    ),
+    "REQ-A-TRIADIC-UNIQUENESS": (
+        "**Theorem:** The triadic multiplicative structure Zero-Sum Resolution Equation "
+        "is the unique stable configuration."
+    ),
+    "REQ-A-D6-AREA-DIRECTION": "(iv) As ν₀ → 0⁺: Area → 4π (the full sphere)",
+    "REQ-A-POWER-MAX-CIRCULARITY": (
+        "The individual optimum is searched only\n"
+        "inside the admissible `η = 0` game; on that frontier, degrading the holobiont\n"
+        "degrades the field that returns as the individual's future viability. Without\n"
+        "the `η = 0` constraint, the derivative still shows interdependence, but it does\n"
+        "not by itself make cooperation dominant."
+    ),
+    "REQ-A-D4-D5-REGISTER": (
+        "| **Quantum** | Potential (Copenhagen pre-collapse) | Actuality — Many-Worlds "
+        "(distributed D5) or Copenhagen selected (singular D5) |"
+    ),
+    "REQ-A-QUANTUM-MEASURE": (
+        "μ(P→F) = lim[δt→0] { Sample[ ∫ |ψ(s)|² ds ] } = F"
+    ),
+    "REQ-A-OPTION-CONE": (
+        "Humans differ because their light cone is **wider, longer, and generalized.**"
+    ),
+}
+
+
 def build_justice_context(
     regime: str = "NOT_APPLICABLE", mechanism: str = "NONE"
 ) -> dict[str, Any]:
@@ -1158,7 +1195,7 @@ def build_semantic_core(*, bootstrap: bool = False) -> dict[str, Any]:
             "id": f"TRL-A-{index:03d}",
             "claimId": claim_id,
             "manifestId": "MAN-A-001",
-            "triedQuote": proposition,
+            "triedQuote": PHASE_A_QUOTES[requirement],
             "triedHash": target_hash,
             "receiptId": "REC-A-108",
         })
