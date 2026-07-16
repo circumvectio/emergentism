@@ -157,7 +157,7 @@
   "group": "nectar",
   "tier": "[S]",
   "title": "The six-tier ladder + no silent upgrade",
-  "body": "[A/B/S/I/D/C], with the cardinal rule that tier changes are dated events with reasons, protecting three real seams: yours-vs-world's evidence, conditional-vs-unconditional, meaning-vs-mechanism. The ladder is load-bearing, not decorative: it retires its own claims (AK8 falsified and retired; GFS marked MIXED, not spun) rather than spinning them.",
+  "body": "[A/B/S/I/D/C], with the cardinal rule that tier changes are dated events with reasons, protecting three real seams: yours-vs-world's evidence, conditional-vs-unconditional, meaning-vs-mechanism. The ladder is load-bearing, not decorative: it retires its own claims (AK8 and the R6 conserved-conjugate claim were both retired) rather than spinning them.",
   "source": "02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md",
   "route": "foundations/the-honest-position"
  },
@@ -175,7 +175,7 @@
   "group": "nectar",
   "tier": "[S]",
   "title": "Kill criteria actually honored",
-  "body": "AK8 (R* approx 1.5) marked falsified and retired; GFS marked MIXED, not spun; the mu-limit stratification reading was retracted when Wave-1 failed it. The Master Rosetta's Mirror Scoreboard prints the columns that fail.",
+  "body": "AK8 (R* approx 1.5) was marked falsified and retired; the preregistered R6 conserved-conjugate claim was also retired after two failures. The Master Rosetta's Mirror Scoreboard prints the columns that fail.",
   "source": "02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md",
   "route": "foundations/the-honest-position"
  },
@@ -202,8 +202,8 @@
   "group": "halahala",
   "tier": "halahala",
   "title": "The symmetric balance hump as an empirical law",
-  "body": "output = phi times nu, maximized at phi=nu, the whole L4-apex superstructure, broken on real data (GFS mixed 7/23; Munnell a balance trough). Only conjunction (need-both) survives, and only untested at single-agent scale. The multiplicative-vs-additive core is an unwon wager, not a result.",
-  "source": "03_METHODOLOGY/00_GFS_WAVE1_RESULTS.md",
+  "body": "Treating output = phi times nu, maximized at phi=nu, as an empirical law overreaches the evidence. A documented balance trough is a counterexample to the universal hump; only conjunction (need-both) survives, and it remains untested at single-agent scale. The multiplicative-vs-additive core is an unwon wager, not a result.",
+  "source": "00_META/00_THE_KINTSUGI_PROTOCOL.md",
   "unpublished": true
  },
  {
@@ -355,7 +355,7 @@
   "group": "halahala",
   "tier": "halahala",
   "title": "The keel overclaim — phi*nu sold as a proven product",
-  "body": "Presenting P = Phi*V as a proven product (not just the AND-class that survives) is the keel overclaim. GFS Wave-1 returned NOT SUPPORTED for the multiplicative form. Naming it the engine without the losing-wager caveat is the laundering this entry cuts.",
+  "body": "Presenting P = Phi*V as a proven product (not just the AND-class that survives) is the keel overclaim. The formal premises do not uniquely select multiplication over other conjunctive aggregators. Naming the product as established without the losing-wager caveat is the laundering this entry cuts.",
   "source": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION_PENDING_K2.md",
   "unpublished": true
  },

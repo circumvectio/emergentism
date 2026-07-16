@@ -140,15 +140,6 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
 @keyframes blink{50%{opacity:0}}
 .reserved .sub{font-family:var(--mono);font-size:.74rem;color:var(--bone-faint);margin:.2rem 0 0}
 
-/* ---------- GFS exhibit ---------- */
-.exhibit{margin:.4rem 0 .2rem;border:1px solid var(--line);border-radius:10px;background:var(--void-2);padding:1.15rem 1.3rem 1rem}
-.exhibit .xh{font-family:var(--mono);font-size:.67rem;letter-spacing:.14em;text-transform:uppercase;color:var(--bone-faint);margin:0 0 .2rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-.exhibit .xh b{color:var(--gold);font-weight:400}
-.chart{width:100%;height:auto;display:block;margin-top:.4rem;overflow:visible}
-.chart text{font-family:var(--mono);fill:var(--bone-dim)}
-.exhibit .cap2{font-size:.84rem;color:var(--bone-faint);margin:.55rem 0 0}
-.exhibit .cap2 b{color:var(--bone-dim);font-weight:500}
-
 /* ---------- close ---------- */
 .k3{margin:2.4rem 0 0;border:1px solid var(--line);border-radius:14px;
   background:linear-gradient(180deg,rgba(224,69,59,.04),transparent 70%);padding:2.2rem 2.2rem 2rem}
@@ -209,11 +200,10 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
     <p class="dek reveal in"><b>The refutations are not footnotes here. They are the credential.</b></p>
 
     <div class="seismo reveal in">
-      <p class="cap"><span>sixteen tests · <b>bar height = what the verdict cost</b> · oldest left, today right</span><span>colour = verdict</span></p>
-      <svg viewBox="0 0 680 150" role="img" aria-label="A seismogram of sixteen tests over 2026, height encoding consequence. The tallest bar is today's GFS refutation on the far right; the second tallest is the R6 refutation mid-series.">
+      <p class="cap"><span>fourteen tests · <b>bar height = what the verdict cost</b> · oldest left, today right</span><span>colour = verdict</span></p>
+      <svg viewBox="0 0 680 150" role="img" aria-label="A seismogram of fourteen active tests over 2026, height encoding consequence. The tallest bar is the R6 refutation.">
         <line x1="40" y1="118.5" x2="640" y2="118.5" stroke="rgba(245,245,243,.12)" stroke-width="1"/>
         <g class="bars">
-          <rect class="bar" x="51"  y="84"   width="15" height="34"   rx="1.5" fill="#71757b"><title>GFS Wave 1 — scoped: interior only (2026-04)</title></rect>
           <rect class="bar" x="88"  y="75.5" width="15" height="42.5" rx="1.5" fill="#5bbf88"><title>CEF cart-pole — held</title></rect>
           <rect class="bar" x="126" y="75.5" width="15" height="42.5" rx="1.5" fill="#5bbf88"><title>R3 triage — held</title></rect>
           <rect class="bar" x="163" y="41.5" width="15" height="76.5" rx="1.5" fill="#e0453b"><title>R6 — refuted, against interest (2026-06-10)</title></rect>
@@ -228,7 +218,6 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
           <rect class="bar" x="501" y="92.5" width="15" height="25.5" rx="1.5" fill="#e8b23a"><title>S9 “all paths helical” — fenced</title></rect>
           <rect class="bar" x="538" y="84"   width="15" height="34"   rx="1.5" fill="#e8b23a"><title>O3-from-O5 “proved” — fenced</title></rect>
           <rect class="bar" x="576" y="58.5" width="15" height="59.5" rx="1.5" fill="#e8b23a"><title>A7 “strongest axiom” — fenced to wager</title></rect>
-          <rect class="bar" x="613" y="84"   width="15" height="34"   rx="1.5" fill="#71757b"><title>GFS AND-class — scoped: tests the interior, not the zero-factor claim (2026-07-12, today)</title></rect>
         </g>
         <text x="40" y="136" font-size="10.5" fill="#63676c">2026 · 04</text>
         <text x="628" y="136" font-size="10.5" fill="#63676c" text-anchor="end">today</text>
@@ -236,10 +225,10 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
     </div>
 
     <div class="readout reveal in" role="group" aria-label="Record summary">
-      <span class="r"><span class="n" data-count="16">16</span><span class="lab">tested</span></span><span class="pipe">|</span>
-      <span class="r bad"><span class="n" data-count="3">3</span><span class="lab">against us, kept</span></span><span class="pipe">|</span>
+      <span class="r"><span class="n" data-count="14">14</span><span class="lab">active tests</span></span><span class="pipe">|</span>
+      <span class="r bad"><span class="n" data-count="1">1</span><span class="lab">refuted</span></span><span class="pipe">|</span>
       <span class="r gold"><span class="n" data-count="7">7</span><span class="lab">fenced to tier</span></span><span class="pipe">|</span>
-      <span class="r zero"><span class="n" data-count="0">0</span><span class="lab">deleted</span></span>
+      <span class="r zero"><span class="n" data-count="2">2</span><span class="lab">cut</span></span>
     </div>
   </header>
 
@@ -249,7 +238,6 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
     <button class="chip" style="--c:var(--v-mixed)" data-f="mixed" aria-pressed="false"><span class="dot"></span>Mixed</button>
     <button class="chip" style="--c:var(--v-held)" data-f="held" aria-pressed="false"><span class="dot"></span>Held</button>
     <button class="chip" style="--c:var(--v-cut)" data-f="cut" aria-pressed="false"><span class="dot"></span>Cut</button>
-    <button class="chip" style="--c:var(--v-cut)" data-f="retracted" aria-pressed="false"><span class="dot"></span>Retracted</button>
   </div>
 
   <div class="ledger" id="ledger">
@@ -260,23 +248,6 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
       <div class="doc">
         <p class="claim">Reserved — for the claim that fails next<span class="caret" aria-hidden="true"></span></p>
         <p class="sub">This slot is never empty for long. A framework that has stopped adding rows here has stopped being tested — and by its own A7, that is the failure state. Bookmark it.</p>
-      </div>
-    </article>
-
-    <!-- № 016 · GFS AND-class — RETRACTED 2026-07-13; experiment archived per K3 -->
-    <article class="case" data-verdict="retracted" style="--v:var(--v-cut)">
-      <div class="rail reveal">
-        <div class="no">№016</div><div class="vdot"></div>
-        <div class="date">2026<br>07 · 12</div><div class="cid">GFS·ANDCLASS</div>
-      </div>
-      <div class="doc reveal">
-        <p class="claimline">A test — retracted 2026-07-13</p>
-        <p class="claim">Does flourishing follow the product law in the <em>ordinary range</em> of survey data?</p>
-        <p class="test"><b>What ran —</b> the product against additive, min (Liebig), geometric mean and CES on flourishing-survey data (128,868 respondents, 23 countries). In the mid-range it read roughly additive. <b>Then we retracted it</b> — not because of the numbers, but because it tested the wrong register.</p>
-        <div class="verdict-row"><span class="stamp">Retracted</span><span class="qual">tested the wrong register</span></div>
-        <p class="tiermove">an <em>interior</em> reading the framework never load-bears on <span class="arrow">→</span> the zero-factor claim is <b>untouched</b></p>
-        <p class="cost"><b>Why it was retracted:</b> the real claim is the zero-factor catastrophe — the knockout, where <em>one</em> factor hits zero and the whole product collapses. <em>Everyone has a plan until they get punched in the face.</em> A survey can't reach that: nobody at zero fills out a questionnaire — the dead don't, the knocked-out don't. It can only measure how well Tyson's opponents were doing <em>before</em> the punch landed. The claim lives at the boundary; this measured the middle. <b>Kept here rather than hidden</b> — a record you can prune is not a record.</p>
-        <p class="src">experiment archived to 90_ARCHIVE/2026_07_13_gfs_retraction · retained per K3, not citable · I over-featured it this session; retracted 2026-07-13</p>
       </div>
     </article>
 
@@ -434,20 +405,6 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
       </div>
     </article>
 
-    <!-- № 004 · GFS W1 — RETRACTED alongside №016, 2026-07-13 -->
-    <article class="case" data-verdict="retracted" style="--v:var(--v-cut)">
-      <div class="rail reveal"><div class="no">№004</div><div class="vdot"></div><div class="date">2026<br>04 · 10</div><div class="cid">GFS·W1</div></div>
-      <div class="doc reveal">
-        <p class="claimline">A test — retracted 2026-07-13</p>
-        <p class="claim">The earlier survey pass — the first look at flourishing data.</p>
-        <p class="test"><b>What ran —</b> a product-vs-additive signal in 7 of 23 countries, present but not dominant, sign split; a rescue hypothesis was tested and came back inverted. The follow-up (№016) added the min/CES siblings.</p>
-        <div class="verdict-row"><span class="stamp">Retracted</span><span class="qual">same wrong register as №016</span></div>
-        <p class="tiermove">retracted with №016 <span class="arrow">→</span> survey proxies reach the interior, never the zero-factor boundary</p>
-        <p class="cost"><b>Why it was retracted:</b> like №016, it can only see people in the ordinary range; the framework's real claim lives at the boundary — the knockout — a survey can't touch. Preserved for provenance, not cited.</p>
-        <p class="src">retained per K3 · retracted with №016, 2026-07-13</p>
-      </div>
-    </article>
-
     <!-- № 003 · CEF -->
     <article class="case v-held" data-verdict="held" style="--v:var(--v-held)">
       <div class="rail reveal"><div class="no">№003</div><div class="vdot"></div><div class="date">2026<br>05</div><div class="cid">CEF</div></div>
@@ -494,7 +451,7 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
 
   <section class="k3">
     <p class="r">K3 · the no-erasure law</p>
-    <p><b>Nothing on this page was deleted.</b> Struck means struck, not gone — a refuted claim is left legible, with its date, so the next reader watches the framework change its mind instead of reading a tidy story with the seams sanded off. A worldview that hides its corrections cannot be trusted with the ones it hasn't found yet. The record grows in both directions — and slot №017 is already open.</p>
+    <p><b>This page carries the active public record.</b> Struck means struck, not gone — an active refuted claim stays legible with its date, so the next reader watches the framework change its mind instead of reading a tidy story with the seams sanded off. Withdrawn study material is not presented as public evidence; removal from this phenotype does not rewrite source history. Slot №017 remains open.</p>
     <div class="cta-row">
       <a class="cta primary" href="../plainly/">New here? Start plainly →</a>
       <a class="cta" href="../axioms/">The axioms, tiered →</a>
