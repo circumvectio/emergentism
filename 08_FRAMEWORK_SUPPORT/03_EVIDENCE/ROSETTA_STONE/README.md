@@ -234,7 +234,7 @@ The standalone `00_Rosetta_R*_SUMMARY.md` overview files are not present in this
 
 **It is not a theory.** The theory is `P∞ = φ · ν = 1` on `S²`. The Rosetta Stone is the *evidence* -- the observation that independently developed scales fall into the same seven-level pattern.
 
-**It is not proof.** One column proves nothing. [I] Two columns are suggestive. Five are striking. Fifteen demand an explanation. The framework provides one. The GFS test, Protocol R, and Paper G are designed to test it.
+**It is not proof.** One column proves nothing. [I] Two columns are suggestive. Five are striking. Fifteen demand an explanation. The framework provides one. Protocol R, Paper G, and future independently governed studies are designed to test it; retired studies supply no evidence.
 
 ---
 

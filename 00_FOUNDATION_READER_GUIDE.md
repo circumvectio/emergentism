@@ -82,7 +82,7 @@ Plus the interpretive bridge documents that connect the Trinity to the tradition
 | `90_ARCHIVE/00_THE_TRANSCENDENTAL_TRINITY.md` _(archived; the live Trinity corpus is the folder `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/`)_ | Standalone summary of the Trinity |
 | `05_COSMOLOGY/00_EMERGENTISM.md` | The canonical philosophical synthesis |
 | `07_THEOLOGY/00_FOREWORD.md` | Reader orientation and peer-review corrections |
-| `03_METHODOLOGY/00_GFS_WAVE1_RESULTS.md` | GFS Wave 1 empirical results (n=207,920, 23 countries) |
+| [`90_ARCHIVE/2026_07_13_gfs_retraction/README.md`](90_ARCHIVE/2026_07_13_gfs_retraction/README.md) | Retired survey-study provenance only; non-citable and not part of the active reading path |
 | `01_TELEOLOGY/00_SATURATION_AND_RETURN.md` | Closure patterns across runtime, life, and civilization |
 | `02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md` | Root epistemic authority — every claim, its tier, its status |
 | `03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md` | Empirical program: what tests what |

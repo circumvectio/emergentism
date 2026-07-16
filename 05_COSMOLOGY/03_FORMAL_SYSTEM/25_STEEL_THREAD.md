@@ -139,7 +139,7 @@ The chain above (Links 1-8) is **steel** — every link is [A] or [S] with speci
 
 The mathematical function sin θ is proven to have a maximum at θ = π/2. Calling this "balance" and equating it with "flourishing" is an **interpretive move**. The math doesn't know what "balance" means — it only knows that sin has a maximum.
 
-The framework's wager: B = sin θ measures something real about living systems (the interaction between coherence and viability). This is [I] Interpretive until GFS Wave 1 confirms or denies it.
+The framework's wager: B = sin θ measures something real about living systems (the interaction between coherence and viability). This remains [I] Interpretive until a new independently governed study confirms or denies it. The former survey-study corpus is retired and non-citable.
 
 **2026-04-04 — Has the break narrowed?** Partially. Three independent lines of evidence now converge on the identification of B with flourishing:
 
@@ -149,7 +149,7 @@ The framework's wager: B = sin θ measures something real about living systems (
 
 3. **The Four Lines (Doc 32):** The AM-GM inequality φ + ν ≥ 2 (Line 2) combined with the energy function −log(φ · ν) = 0 (Line 4) shows that the equator is both the Hamiltonian minimum AND the zero-energy ground state. Systems at balance expend no energy maintaining themselves. This is at minimum a structural analogue of what biologists call "fitness" and what the PIE speakers called *h₂r̥tó-*.
 
-**Revised assessment:** Link 9 remains [I], but the break has narrowed from "bare interpretive wager" to "interpretive claim with three independent convergent supports." The kill condition remains: GFS Wave 1 must confirm or deny that B correlates with measurable flourishing metrics. If it does not, Link 9 stays [I]. If it does, Link 9 upgrades to [S].
+**Revised assessment:** Link 9 remains [I], but the break has narrowed from "bare interpretive wager" to "interpretive claim with three convergent interpretive supports." A new independently governed study must test whether B correlates with measurable flourishing metrics. Until then, Link 9 does not upgrade.
 
 ### ══ BREAK: [I] → [C] ══
 
@@ -194,7 +194,7 @@ The framework's recommended position (Doc 30) is Level 3 interpreted through Pos
 | 7 | Equator is Hamiltonian minimum | [A] | AM-GM |
 | 8 | Coupling forces cooperation | [S] | EFR-08 |
 | **BREAK** | | | |
-| 9 | "Balance" = flourishing | [I] | FEP + *h₂r̥tó-* + Doc 32 converge. Pending GFS Wave 1. Break narrowed. |
+| 9 | "Balance" = flourishing | [I] | FEP + *h₂r̥tó-* + Doc 32 converge interpretively; no current empirical bridge. Former survey study retired. |
 | 10 | Equator = systemic awareness | [C] | Position Γ reframes but does not resolve. Neuro audit 3/10. Break unchanged. |
 | 11a | F₅ = real directional tendency | [I] | Level 3 ententional (Deacon). Break narrowed. |
 | 11b | F₅ = volitional | [C] | Level 4 (Nagel/Goff). Break unchanged. |

@@ -166,7 +166,7 @@ The sitting practice is one of five empirical bridges between the mathematical s
 | Bridge | What It Tests | Status | Tier |
 |--------|--------------|--------|------|
 | **Protocol P** (sitting practice) | D5 claim: systemic awareness = equator | Predictions stated, not yet tested | [C] |
-| **GFS** | I1: multiplicative balance in human populations (n=200K+) | Pipeline built, MIXED results (2026-04-09, n=207,920, 23 countries) | Staged |
+| **Retired survey-study corpus** | No active test | RETIRED / NON-CITABLE; archive provenance only; no evidentiary weight | Retired |
 | **Protocol R** | Perceptual complementarity bound Δψ × Δθ ≥ κ | Designed, needs lab | [C] |
 | **AMRITA** | Spherical alignment outperforms RLHF | Specified, needs $710K | [C] |
 | **Φ-meter** | Coherence is measurable and correlates with expert judgment | Built (v0.1), needs validation | [C] |

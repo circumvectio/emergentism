@@ -14,7 +14,7 @@ rosetta:
 > *Why the sphere bounds the manifold, but does not smooth it.*
 
 ## 1. The Methodological Crisis
-In standard empirical analytics (specifically global datasets such as the Global Flourishing Study), initial Ordinary Least Squares (OLS) regressions frequently indicate that the *Additive Model* of human flourishing ($φ + ν$) outperforms the *Multiplicative Model* ($φ \times ν$).
+In standard empirical analytics, interior-fit criteria such as Ordinary Least Squares (OLS) can favor an *Additive Model* ($φ + ν$) even when the hypothesis under test concerns behavior at a boundary where one input approaches zero.
 
 At scale, the structural limit $K^* = 0$ (which dictates that absolute failure in either Viability or Coherence causes total systemic collapse) appears mathematically falsified when run through standardized linear gradients. This document formalizes the resolution of this statistical anomaly.
 
@@ -41,12 +41,12 @@ Once secure, flourishing ascends almost **exclusively Additively**, pulling stro
 
 Attempts to z-score or standardize vectors before multiplying them will construct a "double-negative" mathematical artifact, allowing two collapsed limits ($-3\sigma \times -3\sigma$) to output a massive positive interaction. We reject these artifactual linear tests. Flourishing geometry requires an absolute 0-anchor mapping to track the catastrophic threshold boundaries correctly.
 
-The architecture is internally consistent. The civilisational caste mappings are a **proposed** boundary reading — **not** empirically confirmed. The GFS OLS result favored the *additive* model, which is this framework's own published kill-trigger; this page argues the multiplicative structure can *survive* that result as a tail/boundary effect [I], but the data did not confirm it [C].
+The architecture is internally consistent, but that consistency is not evidence. The civilisational caste mappings are a **proposed** boundary reading — **not** empirically confirmed. An interior regression cannot by itself establish a boundary law, and this methodological observation cannot rescue the multiplicative model from contrary data. Only a new preregistered, independently governed, boundary-sensitive comparison can adjudicate the claim [C].
 
 ---
 *Status: [I/C] — a proposed reconciliation, not an established theorem*
-*Relation to data: reconciles the additive-OLS GFS result (this framework's own kill-trigger) with the multiplicative model; not independently confirmed*
-*Kill criterion: if a tail-sensitive estimator (quantile / extreme-value) on GFS still favors the additive model, this reconciliation fails*
+*Relation to data: methodological proposal only; no archived result is used as support*
+*Kill criterion: if a new preregistered boundary-sensitive comparison still favors a competing model, this reconciliation fails*
 *See also: ROSETTA_CIVILISATIONAL.md, 00_THE_MASTER_ROSETTA.md*
 
 ---

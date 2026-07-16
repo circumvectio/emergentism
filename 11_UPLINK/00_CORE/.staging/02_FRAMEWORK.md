@@ -17,7 +17,7 @@ staging:
     - "Preserved the direct-phi / ladder-not-home boundary from Framework Support Start Here."
     - "Kept the canonical formula block, A1-A7 formal canon, AM-GM equator claim, and P_node/P_infinity distinction."
     - "Separated mathematician, philosopher, and builder modes so proof, interpretation, and build commitments do not collapse into one voice."
-    - "Imported active/mixed/deferred kill-condition posture, GFS Wave 1 mixed status, Protocol D and Agent VxPhi replication boundary, and antifragility rule."
+    - "Imported active/deferred kill-condition posture, the retirement boundary for the former survey study, Protocol D and Agent VxPhi replication boundary, and antifragility rule."
     - "Refreshed the corpus-agent protocol: parse, select, draft, lint, ground, ask; repair source truth before reflections."
     - "No claim tier was upgraded; interpretive and conjectural surfaces remain marked [I] or [C]."
   promotion_required:
@@ -117,7 +117,7 @@ The old `[E/S/I/C]` surface is retired for active routing. Do not revive `[E]` o
 
 | Surface | Current posture |
 |---|---|
-| GFS Wave 1 | Mixed: signal appears in a minority of country slices; neither clean confirmation nor clean falsification. |
+| Retired survey-study corpus | RETIRED / NON-CITABLE; archive provenance only; no evidentiary weight. |
 | Protocol D | Confirmed within a framework-designed simulation; independent replication remains the upgrade boundary. |
 | SPHERE Probe | Informative negative first public-model run. |
 | Agent VxPhi | Confirmed within simulation; independent replication remains the upgrade boundary. |
@@ -125,7 +125,7 @@ The old `[E/S/I/C]` surface is retired for active routing. Do not revive `[E]` o
 | Protocol R | Designed; lab test still needed. |
 | AMRITA | Specified/reframed; not established against RLHF. |
 
-Active kill conditions include GFS additive dominance, Protocol R failure, AMRITA underperformance, Phi-meter non-correlation, an equally parsimonious alternative geometry, or uncorrectable core-proof errors. [S] The old `R* ~= 1.5` threshold has already failed; the qualitative fragility/cooperation claim survived only with the threshold replaced by the observed value.
+Active kill conditions include a new independently governed model comparison favoring a competitor, Protocol R failure, AMRITA underperformance, Phi-meter non-correlation, an equally parsimonious alternative geometry, or uncorrectable core-proof errors. The retired survey-study corpus cannot trigger or satisfy a live condition. [S] The old `R* ~= 1.5` threshold has already failed; the qualitative fragility/cooperation claim survived only with the threshold replaced by the observed value.
 
 [C] Deferred kill conditions remain listed because they cannot be settled with current instruments or timescales. Deferred does not mean protected.
 
