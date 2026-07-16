@@ -28,7 +28,7 @@ evidence_tier: "[I] for civilisational stage-model mapping; [C] where noted for 
 
 **Hat:** 🔬 Cross-Domain Translation (Civilisation)
 **Evidence Tier:** [I] for all columns. Civilisational stage-models are inherently interpretive. The mapping draws on Toynbee, Spengler, and Tainter but is framework-specific.
-**Kill Criteria:** If the civilisational stages cannot be matched to historical societies at the corresponding L-levels -- e.g., if societies assessed as L4 (principled republics) do not exhibit balanced civic technology and heroic art -- this mapping falls. If the phi-max estimates are empirically contradicted by the Global Flourishing Study (GFS), the quantitative column falls.
+**Kill Criteria:** If the civilisational stages cannot be matched to historical societies at the corresponding L-levels -- e.g., if societies assessed as L4 (principled republics) do not exhibit balanced civic technology and heroic art -- this mapping falls. If a new independently governed civilisational dataset contradicts the phi-max estimates under preregistered criteria, the quantitative column falls. Retired studies do not adjudicate it.
 **Source:** Emergentism Rosetta Stone v10.0, sheet: CIVILISATIONAL
 
 ---

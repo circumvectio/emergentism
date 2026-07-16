@@ -206,7 +206,7 @@ If you accept the older public ontological wager about the substrate (compact, o
 
 | # | Condition | Status |
 |---|-----------|--------|
-| K1 (AK1) | ~~GFS shows additive model wins~~ | **RETRACTED 2026-07-13 (K2):** GFS measured the wrong register (flourishing survey aggregates, not the zero-factor boundary). See `01_TELEOLOGY/02_THE_DERIVATION/07_THE_TYSON_KO_PENDING_K2.md` (Tyson/KO boundary) and `90_ARCHIVE/2026_07_13_gfs_retraction/`. Replaced by K-T1 (Tyson/KO boundary falsifier, see Tyson/KO doc). |
+| K1 (AK1) | New independent comparison shows a competing model wins | Active only for a newly governed study; former survey-study corpus is RETIRED / NON-CITABLE and moves no claim. |
 | K2 (AK2) | Protocol R shows no perceptual complementarity bound | Designed, needs lab |
 | K3 (AK3) | AMRITA underperforms RLHF | Reframed: POC at $0 with open-source models |
 | K4 (AK4) | Φ-meter shows no correlation with expert judgment | Built v0.1, needs validation |
@@ -223,7 +223,7 @@ If you accept the older public ontological wager about the substrate (compact, o
 
 | Experiment | Tests | Status |
 |-----------|-------|--------|
-| ~~**GFS Wave 1**~~ | ~~Multiplicative balance in human populations (n=207,920, 23 countries)~~ | **RETRACTED 2026-07-13 (K2):** tested the wrong register. See Tyson/KO doc for the correct claim (zero-factor boundary, not interior). Archived to `90_ARCHIVE/2026_07_13_gfs_retraction/`. |
+| **Retired survey-study corpus** | No active test | RETIRED / NON-CITABLE; archive provenance only; no evidentiary weight. |
 | **Protocol D** | Constrained syntropic-frontier selection in coupled multiplicative agents | Internally supportive within framework-designed simulation (d = 6.66) — awaiting independent replication |
 | **SPHERE Probe** | Equatorial projection improves coherence | Informative negative first public-model run |
 | **Agent V×Φ** | Balance beats imbalance in simulated agents | Internally supportive (ρ = 1.000) — awaiting independent replication |

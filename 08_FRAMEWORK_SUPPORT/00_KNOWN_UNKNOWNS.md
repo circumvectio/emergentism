@@ -25,7 +25,7 @@ rosetta:
 
 **Date:** 2026-04-11 (Rosetta pass applied)
 **Evidence Tier:** Meta-epistemic
-**Depends on:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [GFS Wave 1 Results](../03_METHODOLOGY/00_GFS_WAVE1_RESULTS.md), [Rosetta Reasoning Pass](00_KNOWN_UNKNOWNS_RESOLVED.md)
+**Depends on:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [Rosetta Reasoning Pass](00_KNOWN_UNKNOWNS_RESOLVED.md). The former survey-study corpus is RETIRED / NON-CITABLE; its archive is provenance only.
 **See also:** [The Known Unknowns Program](../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md)
 
 ---
@@ -38,8 +38,8 @@ rosetta:
 
 | # | Unknown | Resolution | Tier | Method |
 |---|---------|-----------|------|--------|
-| KU-1 | GFS mu-limit stratification | **FALSIFIED.** Interaction concentrates in LOW-R² countries. But instrument mismatch likely — GFS does not test what the theory claims. | [S] data, [I] interpretation | Empirical test |
-| KU-5 | GFS pooled analysis | **Marginally negative** (beta = -0.134, z = -1.98). Instrument mismatch: surveys cannot measure structural phi/nu. | [S] data, [I] interpretation | Meta-analysis |
+| KU-1 | Former survey-study mu-limit record | **RETIRED / NON-CITABLE.** No archived result or interpretation moves a current claim. A new independently governed test is required. | [D] provenance only | Archive record |
+| KU-5 | Former survey-study pooled record | **RETIRED / NON-CITABLE.** No numerical result is active evidence. | [D] provenance only | Archive record |
 | KU-10 | Axiom justification | **RESOLVED.** O5+O2 backed by physics [S]. O1+O4 defensible [I]. Set is minimal (uniqueness theorem [S]). | [S/I] | Mathematical argument |
 | KU-11 | Selection bias | **Substantially resolved.** 8 traditions, 4 language families, 3 continents converge on midpoint-apex. Confucian orthogonality honestly documented. | [I] | Comparative religion |
 | KU-12 | ISM problem | **CONDITIONALLY ROUTED.** Decentralized Authority Model + A7 define anti-capture architecture and failure criteria; actual capture resistance remains an open practice/institution test. | [I/S] | Reflexive application |

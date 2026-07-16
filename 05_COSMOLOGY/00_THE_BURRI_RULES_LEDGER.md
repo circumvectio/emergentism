@@ -93,7 +93,7 @@ parents:
 - **Tier:** [A] for the trig/inversion identities; [C] for reading E as 'imbalance' and B as objective function
 - **Justification:** CANON.md:56-98. Verified elementary: B=2x/(1+x²)=sech(log x), E convex min at x=1. Canon:93 explicitly 'this identification inherits the conjectural tier of B-as-objective-function, NOT [A].' Provenance honest: framework 2024 priority, Suda 2025 later convergence.
 - **Counterexample / stress case:** The identities say nothing about 0·∞ (Suda keeps it indeterminate, canon:97), and E=0 sits at the UNIT not the Ground κ=0 (canon:98) — the energy well never touches the Bindu/apophatic claims.
-- **Kill criterion:** Refute B=sech(log x) as an identity (impossible), or show B-as-objective-function fails empirically — which is the live GFS test that returned NOT SUPPORTED (see P=Φ×V entry).
+- **Kill criterion:** Refute B=sech(log x) as an identity (impossible), or show B-as-objective-function fails in a new independently governed test. The retired survey-study corpus is non-citable and supplies no current evidence.
 
 ## 10. Titans are trans-dimensional / 'what makes dimensions possible' (prior to D0–D6)
 
@@ -218,10 +218,10 @@ parents:
 ## 25. P_node = Φ × V (Φ=D5 foresight, V=D4 means) — the multiplicative contact rule
 
 - **Register:** CONJ
-- **Tier:** self-tiered [S] (A1); HONEST TIER [C/I] — an UNWON, now 'losing' WAGER
-- **Justification:** A1 (SEVEN_AXIOMS:32) posits P=Φ×V + Zero-Factor Catastrophe, self-tier [S]. Audit 103:94 — A1's [S] is 'the corpus's largest single tier-inflation'; its pre-registered kill-test GFS Wave-1 returned NOT SUPPORTED/MIXED; proposed K2 action #1: re-tier [S]→[C/I].
+- **Tier:** self-tiered [S] (A1); HONEST TIER [C/I] — an UNWON WAGER
+- **Justification:** A1 (SEVEN_AXIOMS:32) posits P=Φ×V + Zero-Factor Catastrophe, self-tier [S]. Audit 103:94 identifies A1's [S] as the corpus's largest single tier-inflation and calls for re-tiering [S]→[C/I]. No active empirical result selects the product form.
 - **Counterexample / stress case:** Audit 103:94 — the zero-factor argument defeats only the pure SUM and selects the AND-gate CLASS (min, Cobb-Douglas, CES, geometric mean all zero-collapse); the PRODUCT form is unselected. min(Φ,V) or additive-with-floor fits 'either factor zero → collapse' equally.
-- **Kill criterion:** A1:32 — B better modeled as additive, or a coupled system where one factor→0 does NOT collapse potential; GFS Wave-1 already returned NOT SUPPORTED, so the wager is currently losing.
+- **Kill criterion:** A1:32 — B better modeled by a competing form, or a coupled system where one factor→0 does NOT collapse potential. A new independently governed comparison is required; the retired survey-study corpus supplies no evidence.
 
 ## 26. Replicator Stack — six layers Genotype→Epigenotype→Phenotype→Extended Phenotype→Memotype→Egregoreotype
 
@@ -265,7 +265,7 @@ parents:
 
 ## The fourteen downgrade rules (K2-accepted — receipt 104 §B)
 
-1. P = Φ × V (Axiom A1): self-tiered [S] → the map MUST state [C/I]. The φ×ν-vs-φ+ν choice is an UNWON wager and, after GFS Wave-1 returned NOT SUPPORTED, a LOSING one (audit 103:94). Never present the multiplicative form as structural fact; the zero-factor argument selects only the AND-gate class, not the product specifically.
+1. P = Φ × V (Axiom A1): self-tiered [S] → the map MUST state [C/I]. The φ×ν-vs-φ+ν choice is an UNWON wager. Never present the multiplicative form as structural fact; the zero-factor argument selects only the AND-gate class, not the product specifically. The retired survey-study corpus is non-citable and does not adjudicate this choice.
 2. φ·ν = 1 on S²: [A] but a definitional TAUTOLOGY (cot·tan≡1) carrying NO empirical content (audit 103:56). The map must state it as a chart identity, never as a discovered conservation/invariant law — narrating it as 'P∞ conservation' is the flagged tautology-laundering (Audit 103 S8).
 3. 'Successive μ-limits generate stacked degrees of freedom D0→D6 / each dimension derived from saturation of the prior register': must be stated as MODEL/analogy, NOT a derivation. The number 7 is explicitly NOT derivable from the geometry (doc 23:170); A3 calls saturation a 'μ-limit ANALOGY' (SEVEN_AXIOMS:34); no per-dimension degrees-of-freedom count exists anywhere in the corpus.
 4. The μ-limit 'formula' μ(P→F)=lim{Sample[∫|ψ|²ds]}=F: must be stated as [C] structural analogy with a known type-mismatch (∫=1, so it samples a scalar; doc 10:78,109), never as MATH or a derivation of collapse.
