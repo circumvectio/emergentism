@@ -19,7 +19,7 @@ rosetta:
 **Evidence Tier:** [S] for the structural geometry (the helix necessarily passes through both hemispheres). [I] for the civilisational reading (Golden Age, southward drift, Great Filter as population statistics). [C] for the specific η_c threshold (~0.58 / ~60%) and the causal claim.
 **Depends on:** 11_THE_HELIX.md, 12_THE_POLES.md, 15_DHARMA_YUDDHA.md, Power-Max Lemma (Demonstration 22), Master Three-Stage Process
 **See also:** PD_07 (Fermi Paradox), WP-2026-02 (Ouroboros), Ch. 10 (The Mesh), Open-Source Release Strategy
-**Kill Criteria:** If the giving/extractive hemisphere distinction is shown not to map onto the operator territories on S². If civilisational health metrics show no correlation with the population distribution around the equator. If the η_c threshold is empirically falsified by the GFS.
+**Kill Criteria:** If the giving/extractive hemisphere distinction is shown not to map onto the operator territories on S². If a new independently governed study finds civilisational health metrics show no correlation with population distribution around the equator. If the η_c threshold is empirically falsified.
 
 ---
 
@@ -170,7 +170,7 @@ From the Is-Ought dissolution (PD_10): the self-termination of parasitism requir
 
 In population terms: **~60% of nodes must spend >50% of their revolution in the giving hemisphere** for the civilisation to hold above the Great Filter threshold.
 
-This is the GFS test's civilisational prediction. If the finite-node product model (`P_node = Φ × V`) holds across ~208,000 individuals in 23 countries, the η_c threshold becomes measurable: what fraction of the population shows balanced dwell times? And is that fraction above or below ~60%?
+This remains a conjectural civilisational prediction, not an established measurement result. A new preregistered and independently governed study would need to define balanced dwell times, estimate the population fraction, and test whether it lies above or below ~60%. The former survey-study corpus is retired and supplies no evidence for this threshold.
 
 ---
 

@@ -8,7 +8,9 @@ human flourishing. Uses Ryff's six psychological wellbeing dimensions
 from MIDUS Wave 2 (Study 4652, ICPSR).
 
 Evidence tier: [C] Conjecture — exploratory proof-of-concept.
-The confirmatory test is the GFS 22-country analysis (preregistered).
+The former confirmatory survey lane is retired and non-citable. This script
+remains an exploratory [C] artifact; any upgrade requires a new independently
+governed, preregistered study.
 
 Data source: https://www.icpsr.umich.edu/web/NACDA/studies/4652
 
@@ -338,9 +340,9 @@ print("=" * 60)
 if h1_supported and robust_curv:
     print("\nResult: PROOF-OF-CONCEPT PASSED")
     print("The multiplicative model outperforms the additive model.")
-    print("Proceed with GFS preregistered confirmatory test.")
+    print("Do not promote: a new independently governed preregistered test is required.")
     print("Evidence tier: [C] → remains [C] (single dataset, one country, exploratory)")
-    print("Upgrade to [S] requires: GFS 22-country replication (preregistered)")
+    print("Upgrade requires a new independently governed preregistered replication.")
 elif m2_ols.params["phi_x_nu"] > 0 and p_val_12 < 0.05:
     print("\nResult: SUGGESTIVE (p < .05 but not < .005)")
     print("The interaction is in the predicted direction but does not meet")
@@ -348,10 +350,10 @@ elif m2_ols.params["phi_x_nu"] > 0 and p_val_12 < 0.05:
 else:
     print("\nResult: PROOF-OF-CONCEPT FAILED")
     print("The multiplicative model does not outperform the additive model.")
-    print("The GFS test remains the confirmatory analysis regardless.")
+    print("No retired study is a confirmatory analysis; design a new independent test.")
 
 print("\n--- Analysis complete ---")
 print("This is a PROOF-OF-CONCEPT on MIDUS data (single US sample).")
-print("The preregistered confirmatory test uses GFS (22 countries, 200K respondents).")
-print("All claims remain at [C] Conjecture until GFS results are in.")
+print("Any confirmatory test must be newly preregistered and independently governed.")
+print("All claims remain at [C] Conjecture; retired studies supply no upgrade.")
 print("\n⊙ = • × ○")

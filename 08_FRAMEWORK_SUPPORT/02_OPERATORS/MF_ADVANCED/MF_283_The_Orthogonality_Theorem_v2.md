@@ -272,7 +272,7 @@ F₅ is the force that:
    - The measurement problem requires D5 input (which is why it remains unsolved)
    - Quantum gravity requires D5 input (which is why it remains unsolved)
 
-4. **Is testable.** The GFS regression tests the downstream prediction. If P_node = Φ × V (multiplicative, interaction, coupled orthogonal axes), the force signature is present. If P_add = αΦ + βV (additive, independent, no coupling), the force signature is absent.
+4. **Is testable in principle.** A new independently governed coupled-axis study can compare the downstream prediction against competing forms. Even a multiplicative fit would support the measured relation only; it would not by itself establish a literal force.
 
 ### 4.3 The Multiplication as Force Signature
 
@@ -371,10 +371,10 @@ Any program that adds only real-valued structure (extra dimensions, discretised 
 Programs that take the measurement problem seriously and incorporate conscious observation (D5) will make more progress than programs that treat it as interpretive. Penrose's OR (objective reduction) is the closest existing program. [S]
 
 **P3: P_node = Φ × V, not P_add = αΦ + βV.**
-The multiplication (interaction term) reflects the coupling of orthogonal axes by F₅. If the GFS regression shows multiplicative > additive, this supports the force claim. If additive wins, the force claim is weakened (Φ and V are independent, no coupling, no F₅). [T → testable with [B] data]
+The multiplication (interaction term) is proposed to reflect coupling of orthogonal axes by F₅. If a new preregistered independent comparison shows multiplicative > credible alternatives, it supports the coupling model, not a literal force by itself. If a competing form wins, the coupling claim is weakened. [T → prospective test with independently governed [B] data]
 
 **P4: The Zero-Factor Catastrophe is the orthogonality constraint.**
-When Φ ≈ 0 (imaginary axis ≈ 0), no amount of V (real axis) rescues P — because the coupling requires both axes. When V ≈ 0 (real axis ≈ 0), no amount of Φ rescues P — because possibility without actuality produces nothing. This is the direct consequence of the axes being orthogonal, not parallel. If the axes were parallel (additive), high values on one could compensate for low values on the other. Orthogonality (multiplicative) prevents this. [T → testable with GFS]
+When Φ ≈ 0 (imaginary axis ≈ 0), no amount of V (real axis) rescues P — because the proposed coupling requires both axes. When V ≈ 0 (real axis ≈ 0), no amount of Φ rescues P — because possibility without actuality produces nothing. This boundary claim is not entailed merely by naming the axes orthogonal; it requires a new independently governed test against competing zero-collapse forms. [T]
 
 **P5: The measurement problem will remain unsolved within purely unitary QM.**
 Decoherence-only approaches will not resolve the definite-outcome question because they remain within D5 without the D5→D4 projection (F₅). [S — testable by observation]
@@ -383,7 +383,7 @@ Decoherence-only approaches will not resolve the definite-outcome question becau
 
 **F283-1:** If quantum gravity is achieved using purely real-valued, D4-internal mathematics with no reference to systemic awareness or observation, the orthogonality claim is falsified. The framework predicts this will not happen. Time-horizon: ongoing.
 
-**F283-2:** If the GFS regression shows P is additive (AIC_additive < AIC_multiplicative AND cross-validated), the coupling claim (F₅ creates the interaction term) is weakened. The force claim survives only if alternative coupling mechanisms are identified. Time-horizon: Spring 2026.
+**F283-2:** If a new preregistered independent comparison shows a competing model outperforms the multiplicative form under cross-validation, the coupling claim is weakened. The force claim cannot be rescued by the retired survey-study corpus.
 
 **F283-3:** If the measurement problem is solved within purely unitary QM (no observer, no D5 input, no projection), the D4/D5 interface claim is falsified. Time-horizon: ongoing.
 
@@ -479,9 +479,9 @@ North pole (z=0): pure entropy. South pole (z=∞): pure syntropy.
 | ℂ is algebraically irreducible to ℝ | [A] | Established, algebra |
 | All QG programs have failed | [B] | Established, 70 years of record |
 | QG fails BECAUSE of real/imaginary orthogonality | [S] | Speculative — structural explanation |
-| D5 (will) is genuine force, not epiphenomenon | [S/T] | Novel claim. GFS tests downstream. |
+| D5 (will) is genuine force, not epiphenomenon | [S/T] | Novel claim. Requires new independent downstream tests. |
 | Measurement = D5→D4 projection via F₅ | [S/T] | Framework derivation. Testable indirectly. |
-| × in P_node = Φ×V is force signature of F₅ | [T] | Framework derivation. GFS tests directly. |
+| × in P_node = Φ×V is force signature of F₅ | [T] | Framework proposal. Requires a new independent comparison. |
 | D0–D4 force-dimension mapping is organisational | [I] | Interpretive, not generative |
 
 ---

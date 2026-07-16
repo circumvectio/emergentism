@@ -956,7 +956,7 @@ The probability of this alignment arising by chance is claimed to decrease with 
 
 The framework's explanation: **P∞ = φ · ν = 1 on S².** The seven levels are seven positions on the sphere. The columns are proposed projections of the same geometry onto different domains. The rows hold inside the model because the sphere holds; outside the model, each column still needs its own source and kill criteria.
 
-This may be wrong. The GFS test, Protocol R, and the biological predictions (Paper G) are designed to test it. If the multiplicative model fails empirically, the Rosetta Stone becomes a beautiful coincidence rather than a structural identity.
+This may be wrong. Protocol R, the biological predictions (Paper G), and future independently governed studies are designed to test it. If the multiplicative model fails empirically, the Rosetta Stone becomes a beautiful coincidence rather than a structural identity. Retired studies supply no evidence.
 
 But the recurrent rows remain the observation. Their generator remains the framework's abductive wager.
 

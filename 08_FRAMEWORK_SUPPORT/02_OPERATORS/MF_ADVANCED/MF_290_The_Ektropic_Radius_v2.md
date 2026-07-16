@@ -296,9 +296,9 @@ A teacher who teaches (Arjuna: gives Φ) increases global entropy (metabolic cos
 
 **P290-5:** Moral regressions (atrocities, genocides, populist constrictions) should correlate with radius-narrowing pressures (economic stress, existential threat, information overload — all push toward L1, narrowing the cone).
 
-### 6.3 The GFS Connection
+### 6.3 A Prospective Independent Test
 
-**P290-6:** In the GFS data, the interaction term Φ × V should predict ektropy better than Φ + V. This is the downstream signature: if P is a product (the area of the ethical-cone proxy, D5 foresight × D4 means), it is multiplicative. If P is a sum (independent components, no coupling), it is additive. MF-290 predicts multiplicative because the action register couples two necessary factors.
+**P290-6:** In a new preregistered and independently governed dataset, the interaction term Φ × V should predict a valid ektropy outcome better than credible competing forms. This is a prospective downstream signature, not current evidence. MF-290 predicts multiplicative because the action register is proposed to couple two necessary factors; failure against a well-specified competitor weakens that proposal.
 
 ---
 

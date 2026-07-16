@@ -521,17 +521,6 @@
       "summary": "Overview and map of the 38-document Trinity sequence. The ontological core."
     },
     {
-      "path": "06_TRANSLATION/PEER_REVIEW/GFS_PREREGISTRATION_DRAFT.md",
-      "title": "GFS Pre-Registration Draft",
-      "evidence_tier": "Meta",
-      "reading_order": 47,
-      "depends_on": ["06_TRANSLATION/PEER_REVIEW/00_STRONGEST_OBJECTIONS.md"],
-      "category": "peer_review",
-      "has_execution_surface": false,
-      "word_count_approx": 3281,
-      "summary": "Pre-registration for the God-Function Select experiment. Kill criterion K1. The first empirical test."
-    },
-    {
       "path": "04_APPLICATIONS/RESEARCH_BRIEF_R_STAR_SIMULATION.md",
       "title": "Research Brief: R* Simulation",
       "evidence_tier": "[S]",

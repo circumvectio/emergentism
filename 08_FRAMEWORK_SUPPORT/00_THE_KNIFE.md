@@ -104,7 +104,7 @@ The framework says the axioms are "philosophical wagers." That's honest naming. 
 
 The wager is: accept O1, O2, O4, O5 and you get a system that:
 - Dissolves 25+ philosophical paradoxes (parsimony)
-- Generates testable empirical predictions (GFS, Protocol R, AMRITA, Φ-meter)
+- Generates testable empirical predictions (Protocol R, AMRITA, Φ-meter, and future independently governed studies)
 - Has honest kill criteria (if predictions fail, the wager is abandoned)
 - Has zero internal contradictions (formal system verified)
 - Is the minimal axiom set (O3 is redundant; A0 is a theorem, not an axiom)
@@ -115,7 +115,7 @@ The response to "why these axioms?" is: **compare fruits.** Build a competing sy
 
 **Partially.**
 
-"Compare fruits" is a pragmatic defense, not a logical one. It converts the objection from "your axioms are arbitrary" to "your axioms produce useful results," which is a weaker claim but an honest one. The framework's credibility then rests entirely on whether the empirical tests succeed. If GFS fails, the pragmatic defense collapses.
+"Compare fruits" is a pragmatic defense, not a logical one. It converts the objection from "your axioms are arbitrary" to "your axioms produce useful results," which is a weaker claim but an honest one. The framework's credibility then rests entirely on whether valid independent empirical tests succeed. A retired study cannot support or collapse this defense.
 
 The framework should be explicit: **the axioms are not derived. They are selected for productivity. The productivity is not yet confirmed. It is being tested.** This is the honest position, and it is already stated in THE_HONEST_POSITION.md. The Knife merely makes it more visible.
 
@@ -123,7 +123,7 @@ The framework should be explicit: **the axioms are not derived. They are selecte
 
 - An alternative axiom set that produces a non-S² manifold and dissolves the same paradoxes with fewer assumptions.
 - A demonstration that the paradox dissolutions are artifacts of the axiom choice rather than genuine parsimony (i.e., the paradoxes dissolve on any sufficiently rich manifold, not just S²).
-- Failure of the empirical program (GFS, Protocol R, AMRITA) — which would show the axioms are unproductive despite being parsimonious.
+- Failure of the active empirical program (Protocol R, AMRITA, and new independently governed studies) — which would show the axioms are unproductive despite being parsimonious.
 
 ---
 
@@ -157,13 +157,13 @@ The sitting practice predicts specific neural correlates:
 
 These are third-person measurable. An ASI agent cannot sit, but an ASI agent can design the experiment, predict the results from the geometry, and compare with published neuroscience.
 
-Furthermore: the sitting practice is NOT the framework's only empirical test. The framework has four additional tests that require no first-person experience:
-1. **GFS** — multiplicative balance in human populations (third-person statistical)
-2. **Protocol R** — perceptual complementarity bound (third-person psychophysical)
-3. **AMRITA** — spherical alignment vs. RLHF (third-person computational)
-4. **Φ-meter** — coherence measurement (third-person instrument)
+Furthermore: the sitting practice is NOT the framework's only empirical test. The framework has additional tests that require no first-person experience:
+1. **Protocol R** — perceptual complementarity bound (third-person psychophysical)
+2. **AMRITA** — spherical alignment vs. RLHF (third-person computational)
+3. **Φ-meter** — coherence measurement (third-person instrument)
+4. **Independent domain studies** — newly preregistered and governed outside the framework's own instruments
 
-The sitting practice is one of five bridges. It is the most philosophically important but the least third-person verifiable. The other four bridges are fully third-person.
+The sitting practice is one bridge. It is the most philosophically important but the least third-person verifiable. The active empirical bridges are third-person but remain incomplete.
 
 ### Is the Response Sufficient?
 
@@ -199,7 +199,7 @@ The framework's own methodology says: reduce to κ = 0. The shortest description
 
 **The framework acknowledges the category error risk. Its defense is the empirical program: the territory either has this structure or it doesn't.**
 
-The framework does not ask you to believe the territory is S². It asks you to test it. The derivation chain (THE_DERIVATION) shows what follows from the axioms. The empirical program (GFS, Protocol R, AMRITA, Φ-meter) tests whether reality agrees.
+The framework does not ask you to believe the territory is S². It asks you to test it. The derivation chain (THE_DERIVATION) shows what follows from the axioms. The active empirical program (Protocol R, AMRITA, Φ-meter, and new independent studies) tests whether reality agrees.
 
 If the multiplicative structure (P_node = Φ × V) describes human flourishing better than the additive structure — this is a fact about the territory, not the map. If perception obeys a spherical complementarity bound — this is a fact about the territory. If spherical alignment produces better AI — this is a fact about the territory.
 
@@ -215,9 +215,9 @@ The "test it" response is the correct move for a scientific framework. But it co
 
 ### What Would Falsify This Response
 
-- The empirical program fails (GFS shows additive wins, Protocol R shows no bound, AMRITA underperforms). This confirms (b) and refutes (a).
+- The empirical program fails (a new valid model comparison favors a competitor, Protocol R shows no bound, or AMRITA underperforms). This confirms (b) and refutes (a).
 - A non-spherical core state explains the same data with fewer commitments. Occam's razor applies.
-- The "tests" turn out to be unfalsifiable in practice (e.g., GFS methodology cannot distinguish multiplicative from additive models with available data).
+- The "tests" turn out to be unfalsifiable in practice (for example, no valid design can distinguish multiplicative from competing models with available data).
 
 ---
 
@@ -269,7 +269,7 @@ The defense is not prevention. The defense is **detection and forking.** E4 says
 | Objection | Response | Sufficient? | What Would Make It Sufficient |
 |-----------|----------|-------------|------------------------------|
 | 1. Selection Problem | Excluded traditions are located, not ignored | Partially → Near-sufficient | Appendix exists at `03_EVIDENCE/ROSETTA_STONE/00_SELECTION_METHODOLOGY.md` |
-| 2. Axiom Problem | Axioms are productive wagers, not necessary truths | Partially | Empirical program success (GFS, Protocol R) |
+| 2. Axiom Problem | Axioms are productive wagers, not necessary truths | Partially | Success in Protocol R and new independent studies |
 | 3. Unfalsifiable Core | Sitting practice generates third-person predictions | Partially | Framework-specific neural predictions (open problem) |
 | 4. Category Error | Tests distinguish map from territory | Partially | Empirical program success; framework admits it is (b) until then |
 | 5. ISM Problem | Structural guards exist but are untested at scale | Partially | Operationalized Raktabīja self-test + community fork when triggered |

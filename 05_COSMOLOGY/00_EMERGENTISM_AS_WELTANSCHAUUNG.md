@@ -251,7 +251,7 @@ Publicly, the method is abductive and triadic:
 
 No one of these is sufficient. Mathematics without disclosure risks becoming sterile formalism. Disclosure without public method risks becoming private certainty. Public method without structural clarity risks measurement without orientation. `[I]`
 
-This is why the framework defines itself as a wager, not a proof. It pre-registers kill criteria. It names what would narrow or break its bridges. It publishes mixed evidence when the evidence is mixed. The current empirical program is explicit that GFS is suggestive at best, that Protocol D is interesting but internally designed, and that Protocol R or cross-scale invariance would be more decisive. `[S]`
+This is why the framework defines itself as a wager, not a proof. It pre-registers kill criteria. It names what would narrow or break its bridges. The former survey-study lane is retired and non-citable; it supplies no present evidence. The current empirical program is explicit that Protocol D is interesting but internally designed, and that Protocol R, independently governed studies, or cross-scale invariance would be more decisive. `[S]`
 
 Methodologically, that matters more than it first appears. A worldview that cannot specify how it could fail has ceased to be a worldview and has become a defense mechanism. Emergentism tries, unusually, to build its own destruction manual into its method. `[S/I]`
 

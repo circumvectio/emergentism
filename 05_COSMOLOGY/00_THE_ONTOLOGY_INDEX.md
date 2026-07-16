@@ -179,7 +179,7 @@ Key corrections already propagated:
 
 | Experiment | Tests | Status |
 |---|---|---|
-| GFS Wave 1 | Multiplicative balance in human populations | MIXED RESULTS (30% of countries) |
+| Retired survey-study corpus | No active test | RETIRED / NON-CITABLE; archive provenance only |
 | Protocol D | Constrained syntropic-frontier selection in coupled multiplicative agents | Internally supportive (framework-designed; independent replication needed) |
 | SPHERE Probe | Equatorial projection improves coherence | Negative/informative first run |
 | Agent V×Φ | Balance beats imbalance in simulated agents | Internally supportive (framework-designed; independent replication needed) |
@@ -197,7 +197,7 @@ Key corrections already propagated:
 
 | # | Kill Condition | What Dies |
 |---|---|---|
-| AK1 | GFS shows additive model explains equal or more variance | Ontological claim downgrades to "useful analogy" |
+| AK1 | A new independently governed study shows a competing form explains equal or more variance | Ontological claim downgrades to "useful analogy"; retired survey-study records do not trigger it |
 | AK2 | Protocol R shows no perceptual complementarity bound | MF-412 retracted |
 | AK3 | AMRITA underperforms RLHF | Spherical alignment abandoned |
 | AK4 | Φ-meter shows no correlation with expert judgment | Coherence proxy abandoned |

@@ -112,7 +112,7 @@ Korzybski's objection — "the map is not the territory" — is the most common 
 
 The framework's response: **we agree. We are not building a map.**
 
-Check the compass against the stars (the empirical tests — GFS, Protocol R, SPHERE, Paper G's biological predictions). If the compass points true, use it. If it doesn't, recalibrate or discard.
+Check the compass against the stars (active empirical tests such as Protocol R and SPHERE, Paper G's biological predictions, and future independent studies). If the compass points true, use it. If it doesn't, recalibrate or discard.
 
 A compass that points true is not a map. A compass that points true is a TOOL. And tools do not claim to be the territory. Tools help you navigate it.
 

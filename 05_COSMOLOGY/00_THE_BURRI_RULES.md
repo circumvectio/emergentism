@@ -221,9 +221,9 @@ The ~10ⁿ trophic-attrition isomorphism is `[I/C]` imported analogy.
 ## Rule 6 · The standing wagers (never laundered)
 
 1. **P = Φ × V** — honest tier `[C/I]`. The zero-factor argument selects
-   the AND-gate *class*, not the product uniquely; GFS Wave-1 returned NOT
-   SUPPORTED. The multiplicative form is a wager currently *losing*, and the
-   whole superstructure knows it rests on this.
+   the AND-gate *class*, not the product uniquely. The multiplicative form is
+   an unwon wager; the retired survey-study corpus supplies it no evidentiary
+   weight, and the whole superstructure knows it rests on this uncertainty.
 2. **φ·ν = 1 on S²** — `[A]` and a **tautology** (cot·tan ≡ 1): a chart
    identity carrying no empirical content. Naming it "P∞ conservation" is
    permitted shorthand; narrating it as a *discovered* conservation law is
@@ -263,7 +263,8 @@ survivable form:
 4. A saturation threshold equation is ever derived and survives review → the
    μ-grammar upgrades from MODEL to the mathematics it currently lacks, and
    this map's ∅ marks are lifted where earned.
-5. GFS-class evidence supporting the multiplicative wager → Rule 6.1 re-tiers.
+5. New independently governed, boundary-sensitive evidence supporting the
+   multiplicative wager → Rule 6.1 re-tiers.
 6. **The terminal clause:** the D0–D6 plain scheme itself, or a load-bearing
    registry ruling this map relays, is overturned → this map is **RETIRED to
    90_ARCHIVE** (K3 tombstone), not repaired.

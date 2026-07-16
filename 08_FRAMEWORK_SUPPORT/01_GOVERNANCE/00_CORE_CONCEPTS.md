@@ -193,7 +193,7 @@ The framework has an immune system. Four corrections have been applied:
 The framework is designed to die if wrong. Every prediction has a specific condition that, if triggered, kills the claim.
 
 **Examples:**
-- Node-level multiplicative flourishing model (`Φ × V`): Killed if additive model wins AIC/BIC in GFS
+- Node-level multiplicative flourishing model (`Φ × V`): killed if a new independently governed comparison shows a competing model wins under preregistered criteria; retired studies do not count
 - Protocol D / cooperation: Killed if independent replication shows additive
   baselines match or beat multiplicative agents under the current constrained
   protocol, or if the effect disappears once coupling, long horizon, and

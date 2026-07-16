@@ -35,6 +35,13 @@ it may not revive this archive by reference.
 - `2026-07-16_GFS_RETIREMENT_RECEIPT.md` records the disposition, study limits,
   duplicate facts, missing evidence, and owner-reference repairs.
 
+An untracked live-root directory named
+`2026-07-02_gfs_pooled_multiplicative_vs_additive 2/` was inspected separately
+on 2026-07-16. Its four files are byte-identical to the corresponding
+`active_corpus/` payloads, so it is not a distinct study or payload and is
+already content-addressed by `SHA256_MANIFEST.tsv`. The live-root duplicate was
+not touched by this archive branch.
+
 ## Non-authority boundary
 
 The archived documents contain historical tier labels such as `[B]` and `[I]`.

@@ -208,7 +208,6 @@ These are current and real, but they live outside the old `08_THE_DEPLOYMENT/` n
 | [Paper G](../../03_METHODOLOGY/02_THE_PAPERS/PAPER_G_BIOLOGICAL_PREDICTIONS.md) | Public-facing prediction surface |
 | `../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/spec/empirical/AMRITA_EXPERIMENTAL_PROTOCOL.md` | Runtime route clue for the current AMRITA empirical protocol |
 | `../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/spec/empirical/02_SPHERE_PROBE/sphere_phase1_probe.py` | Runtime route clue for sphere-probe implementation |
-| `../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/spec/empirical/01_GFS_TEST/GFS_OSF_FILING_GUIDE.md` | Runtime route clue for GFS filing |
 | `../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/spec/self_diagnosis/00_P_SCORE_ASSESSMENT.md` | Runtime route clue for honest self-diagnosis |
 | `../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/spec/self_diagnosis/00_COMPETITIVE_LANDSCAPE_UPDATE.md` | Runtime route clue for competitive/positioning surface |
 | `../../../03_VENTURES/OPEN_FINANCE_NETWORK/GOVERNANCE/FOUNDATION/emergentism_org/SIMULATIONS/` | Entity route clue for simulation/runtime surfaces |

@@ -121,13 +121,12 @@ Nietzsche's "Will to Power" = ν → ∞ (the south pole). The framework's corre
 
 Nietzsche saw the tendency. He misidentified its direction by one variable. [I]
 
-### 37. The GFS Is a Wave Function Collapse
+### 37. No Proxy Test Is a Wave-Function Collapse
 
-If GFS confirms multiplicative: Emergentism gains an empirical bridge for wellbeing in the tested domain.
-If GFS shows additive works equally: Emergentism is a **useful model** (like Newtonian gravity).
-If GFS shows neither predicts: Emergentism is a **beautiful metaphor**.
-
-These are three different kinds of object. "Wave-function collapse" is metaphor here: a test can classify the model's public status, not turn a philosophy into physics by itself. [C]
+A test classifies only the operational claim it reaches. It cannot turn a
+philosophy into physics, nor can an instrument mismatch protect ontology from
+other evidence. The former survey lane is retired and carries no current
+evidentiary weight. [S/I]
 
 ### 38. The Organism and the Framework Are Entangled
 

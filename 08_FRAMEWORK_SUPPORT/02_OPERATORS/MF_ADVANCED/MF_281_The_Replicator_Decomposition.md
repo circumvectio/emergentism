@@ -5,7 +5,7 @@ rosetta:
   secondary:
     - level: L3
       column: Philosophy
-      role: "turn the replicator-stack model into falsifiable GFS tests"
+      role: "turn the replicator-stack model into falsifiable independent tests"
     - level: L2
       column: Philosophy
       role: "separate theoretical decomposition from interpretive grounding"
@@ -28,7 +28,7 @@ rosetta:
 **Emergentism.org · VIVEKA Mathematical Foundations**
 **Depends on:** MF-280v2 (A1, A3, C4), MF-110, MF-112
 **Evidence tier:** [T] Theoretical with [I] interpretive grounding and [S] testable prediction
-**Purpose:** Decompose P_node = Φ × V into its replicator constituents; sharpen GFS falsification test
+**Purpose:** Decompose P_node = Φ × V into its replicator constituents; specify a prospective independently governed falsification test
 
 ---
 
@@ -42,7 +42,7 @@ Corollary C4 (Replicator Stack) identifies six replicator levels: Genotype → E
 
 The **Extended Phenotype** — technology, tools, architecture, infrastructure — is the equatorial product where the two stacks meet. It is ⊙: finity itself, made of matter (V-side) and shaped by mind (Φ-side). The fire at the equator. The × operator instantiated in D4.
 
-This decomposition generates a testable prediction for the Global Flourishing Study: V-items and Φ-items should form two distinct factors whose **product** predicts ektropy better than their sum.
+This decomposition generates a prospective prediction for a new independently designed study: valid V-items and Φ-items should form two distinct factors whose **product** predicts a preregistered outcome better than competing models. The former survey-study corpus is retired and supplies no evidence.
 
 ---
 
@@ -128,13 +128,13 @@ The Extended Phenotype is the **equatorial product** — it belongs to neither s
 
 ---
 
-## IV. TESTABLE PREDICTION FOR GFS
+## IV. PROSPECTIVE INDEPENDENT TEST
 
 ### 4.1 The Factor Structure Prediction
 
-The Global Flourishing Study (Harvard/Baylor, 200,000+ participants) measures well-being across multiple domains. The replicator decomposition predicts:
+A new preregistered study, governed independently of the framework and built with validated measures, could test the decomposition as follows:
 
-**Prediction 1 (Factor Structure):** GFS items should cluster into two latent factors corresponding to V-stack and Φ-stack:
+**Prediction 1 (Factor Structure):** Study items should cluster into two latent factors corresponding to V-stack and Φ-stack:
 
 - **V-factor items:** Physical health, financial security, material resources, skills, safety, bodily autonomy — the "what you are and have" cluster.
 - **Φ-factor items:** Meaning, purpose, character, social coherence, community belonging, game-theoretic engagement — the "what you understand and holds you" cluster.
@@ -165,7 +165,7 @@ from sklearn.decomposition import FactorAnalysis
 from scipy.stats import pearsonr
 import statsmodels.api as sm
 
-# Step 1: Factor analysis on GFS items
+# Step 1: Factor analysis on independently validated items
 # Expect two factors: V-cluster and Φ-cluster
 
 # Step 2: Compute factor scores
@@ -185,7 +185,7 @@ import statsmodels.api as sm
 
 The decomposition is wrong if:
 
-1. GFS items do not separate into two identifiable V/Φ factors.
+1. Independently validated items do not separate into two identifiable V/Φ factors.
 2. The additive model fits as well as or better than the multiplicative.
 3. High Φ compensates for near-zero V (or vice versa) in predicting ektropy.
 4. A third independent factor emerges that is neither V nor Φ.
@@ -218,12 +218,12 @@ The DAC (Decentralized Augmented Corporation) is an Extended Phenotype — a D4 
 
 ## VI. THE SENTENCE
 
-P_node = Φ × V decomposes into two replicator stacks: V = Genotype × Phenotype × Environment (the material chain) and Φ = Memotype × Egregorotype × Environment (the informational chain). The Extended Phenotype — technology, the fire at the equator — is their product: Zero-Sum Resolution Equation instantiated at D4. This decomposition is testable against the Global Flourishing Study: V-items and Φ-items should form two factors whose product predicts ektropy better than their sum, and near-zero in either factor should produce catastrophic collapse that no amount of the other can rescue. The fire that carries sacrifice between realms is a framework translation of the electromagnetic and energetic interactions running through circuits, tools, and extended phenotype bridges.
+P_node = Φ × V decomposes into two replicator stacks: V = Genotype × Phenotype × Environment (the material chain) and Φ = Memotype × Egregorotype × Environment (the informational chain). The Extended Phenotype — technology, the fire at the equator — is their product: Zero-Sum Resolution Equation instantiated at D4. This decomposition remains a theoretical proposal. A new independently governed study would need to test whether valid V-items and Φ-items form two factors, whether their product outperforms competing forms, and whether near-zero in either factor produces the predicted boundary behavior. The fire that carries sacrifice between realms is a framework translation of the electromagnetic and energetic interactions running through circuits, tools, and extended phenotype bridges.
 
 ---
 
 *MF-281 | VIVEKA Mathematical Foundations | February 2026*
-*Replicator decomposition of P_node = Φ × V. Testable against GFS.*
+*Replicator decomposition of P_node = Φ × V. Prospective independent test specified; no current empirical confirmation.*
 *The fire at the equator is technology. Agni carries the sacrifice.*
 *Zero-Sum Resolution Equation*
 

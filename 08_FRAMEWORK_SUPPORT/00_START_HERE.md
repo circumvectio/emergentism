@@ -265,7 +265,7 @@ For agents building on, extending, or auditing the framework:
 
 | # | Condition | Status | Type |
 |---|-----------|--------|------|
-| K1 | GFS shows additive model wins (human flourishing) | **MIXED** (2026-04-09): signal in 30%, pooled interaction marginally negative. **BUT:** GFS was not designed to test P_node = Φ × V; proxy validity unestablished; instrument mismatch likely. See [GFS Results](../03_METHODOLOGY/00_GFS_WAVE1_RESULTS.md) and [What Actually Tests the Theory](../03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md). | **Active — ambiguous (instrument validity in question)** |
+| K1 | A new independently governed model comparison shows a competing form wins | Former survey-study corpus is **RETIRED / NON-CITABLE**; archive provenance only, with no active evidence or claim movement. See [What Actually Tests the Theory](../03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md). | **Active only for a new valid study** |
 | K2 | Protocol R shows no perceptual complementarity bound | Designed | **Active** |
 | K3 | AMRITA underperforms RLHF at comparable compute | Reframed: POC implementable with existing models at $0 | **Active** |
 | K4 | Phi-meter shows no correlation with expert judgment | Built (v0.1) | **Active** |

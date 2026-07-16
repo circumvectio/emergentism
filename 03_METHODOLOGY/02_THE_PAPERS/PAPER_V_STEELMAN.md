@@ -67,7 +67,7 @@ The framework has triggered its own kill criteria twice:
 
 **AK8 — R* ≈ 1.5 quantitative threshold [B]-FALSIFIED.** The original claim was that cooperation dominates above a critical benefit-to-cost ratio R* ≈ 1.5. Empirical and theoretical work showed the actual threshold depends on model assumptions and can be as low as R* ≈ 1.0 in well-mixed populations. The quantitative claim was retracted. The qualitative [S] reading — that multiplicative cooperation dominates under sufficient conditions — survives.
 
-**Mu-limit stratification interpretation [B]-FALSIFIED.** GFS Wave 1 (n=207,920, 23 countries) was expected to show stratification of cooperation above a critical mu (mutation rate) threshold. The data showed the opposite: interaction effects concentrate below the threshold, not above. The specific stratification interpretation was retracted. The GFS signal survives as a mixed result in ~30% of parameter space.
+**Mu-limit stratification interpretation [B]-RETIRED.** The former survey-study corpus and every inference drawn from it are retired and non-citable. Its archived record preserves provenance but supplies no current result, signal, falsifier, or support. Any future mu-limit claim requires a newly designed, independently governed test.
 
 These are honest falsifications. The framework named a claim at [B] tier, collected data, and retracted the claim when the data contradicted it. A7 (tier every claim) functioned as designed.
 
@@ -118,9 +118,9 @@ The framework explicitly downgrades the strong form to [C] (conjecture). But the
 
 ---
 
-### 3.4 The GFS Operationalization Problem
+### 3.4 The Empirical Operationalization Problem
 
-The GFS (Generative Fitness Simulation) is the framework's primary empirical tool. Wave 1 produced mixed results: a cooperation signal in ~30% of parameter space, a falsified stratification interpretation, and instrument validity caveats.
+The former survey-study lane is retired and non-citable. It is not an empirical tool, and no archived result may be used to support, damage, or rescue a live claim.
 
 The decisive remaining test is **Protocol R** — a test of whether the predicted equatorial feature (the balance surface where φ = ν = 1) produces a distinctive cooperative signature that no other latitude produces. Protocol R is the framework's flagship: if it passes, the Burrisphere has empirical bite; if it fails, the game-space reading is damaged.
 
@@ -163,7 +163,7 @@ This is not a refutation. It is a name.
 | Outcome | Definition | Doctrine's stated status |
 |---|---|---|
 | **FALSIFY** | [A] receipt contradicts an [A]/[B] claim; specific claim retracted | Honored when triggered (R*≈1.5; mu-limit) |
-| **DAMAGE** | Receipt contradicts an [I] or [D] claim; operationalization downgraded | Honored when triggered (GFS Wave 1) |
+| **DAMAGE** | A valid current receipt contradicts an [I] or [D] claim; operationalization downgraded | Must be honored when triggered by an active independently governed test |
 | **REFINE** | Receipt consistent with core but inconsistent with specific mechanism; mechanism updated | Default mode for experimental noise |
 
 The taxonomy is real. But:
@@ -244,7 +244,7 @@ The corrective is operational:
 
 ---
 
-### 3.4 Response — GFS Operationalization
+### 3.4 Response — Empirical Operationalization
 
 **Responding agent:** L3 Vaiśya (methodology) + L2 Śūdra (discipline)
 **Register:** [I] — partial acceptance, partial rebuttal
@@ -318,7 +318,7 @@ The steelman's one-sentence summary — "the framework has named this pattern an
 | 3.1 Uniqueness-of-S² | **Narrowed** — continuity is forced if assumed; framework should make the assumption explicit | Mark continuity as explicit axiom |
 | 3.2 Mapping Problem | **Partially accepted** — mapping is constrained, not arbitrary, but bridged by [I]-tier A2 | Clarify latitude assignments as design choices respecting geometric constraints |
 | 3.3 F5 Vulnerability | **Accepted in full** — rhetorical pressure exceeds tier label | Lane sweep: tier labels at top, separate philology from empirics, name strong-form as temptation |
-| 3.4 GFS Operationalization | **Accepted in structure, narrowed in scope** — empirical surface is larger than one test but does not reach structural claims | Document three test classes explicitly; acknowledge gap |
+| 3.4 Empirical Operationalization | **Accepted in structure, narrowed in scope** — empirical surface is larger than one test but does not reach structural claims | Document three test classes explicitly; acknowledge gap; exclude retired studies |
 | 3.5 Pratyakṣa Problem | **Accepted as structural** — gap is honest and irreducible | No closure attempted; gap named and published |
 | 3.6 Selection-After-Admission | **Accepted** — pattern is fairly named | Prioritise near-term [A] tests; accept structural reading status if decisive tests never report |
 

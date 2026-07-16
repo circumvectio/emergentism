@@ -53,7 +53,7 @@ rosetta:
 **Where this hat appears:**
 - Research Proposal v2
 - Funding Roadmap
-- GFS Preregistration
+- Preregistered independent studies
 - Protocol D results
 - Axiomatization paper (formal sections)
 

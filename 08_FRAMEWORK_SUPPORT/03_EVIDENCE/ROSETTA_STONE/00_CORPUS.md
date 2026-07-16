@@ -116,7 +116,6 @@ Nothing → Trinity → Sphere → Equation → Axioms → Framework → Deploym
   - [g1_cli/vmosk_graph.py](../../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/agents/g1_cli/vmosk_graph.py)
 - `../../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/spec/empirical/` — empirical protocols and probes (route clue; outside this pass).
   - [README.md]
-  - [09_EMPIRICAL/01_GFS_TEST/GFS_PREREG_Multiplicative_Ektropy.md]
   - [09_EMPIRICAL/PAPER_G_BIOLOGICAL_PREDICTIONS.md]
 - `06_TRANSLATION/COUNCIL/` — Translation engine: 7 working papers, stakeholder surfaces, academic formalization, applied frameworks (archived route)
   - [README.md](../../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/06_TRANSLATION/COUNCIL/README.md)

@@ -268,7 +268,7 @@ The framework's data science now has a clear foundation:
 | **Reduction** | Complexity → Zero | Primary method. The sitting practice. Strips away toward the boundary. |
 | **Emergence** | Zero → Complexity | What the scaffold reconstructs: the equation, sphere, plane, world-description. |
 | **Deduction** | Premises → Consequences | Derives theorems from axioms. Secondary to reduction. |
-| **Induction** | Observations → Patterns | Empirical validation (Protocol D, GFS, etc.). Tests emergence. |
+| **Induction** | Observations → Patterns | Empirical validation (Protocol D and independently governed domain studies). Tests emergence. |
 | **Abduction** | Surprises → Best Explanation | Inference to best explanation when reduction/induction conflict. |
 
 **The hierarchy:**

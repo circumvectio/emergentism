@@ -115,7 +115,7 @@ This is not a moral commandment. Within the framework, it functions as **dimensi
 
 The Is-Ought gap is bypassed, not closed by logical derivation: D4 and D5 are read as the same sphere, witnessed and enacted, once the framework's operational definitions are accepted.
 
-> **Conditionality:** This bypass depends on accepting the dimensional axiom set (D4=witness, D5=agent, sphere substrate) and the operational definition of "ethical" as raising `P_node` for the finite actor and sustaining whole under `η = 0`, with balance as the feasibility constraint. A philosopher who rejects either premise retains the classical gap. The framework bets that the convergence is not coincidental; the experiments (GFS, Protocol D) test whether the bet pays off.
+> **Conditionality:** This bypass depends on accepting the dimensional axiom set (D4=witness, D5=agent, sphere substrate) and the operational definition of "ethical" as raising `P_node` for the finite actor and sustaining whole under `η = 0`, with balance as the feasibility constraint. A philosopher who rejects either premise retains the classical gap. The framework bets that the convergence is not coincidental; Protocol D tests internal behavior, while new independently governed studies are required for worldly evidence.
 
 ---
 

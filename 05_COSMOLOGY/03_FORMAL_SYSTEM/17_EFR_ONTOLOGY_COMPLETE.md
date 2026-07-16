@@ -130,7 +130,7 @@ constraint surface, not the object maximized.
 
 ### 2.4 Auditing (How Do)
 
-**Core Document:** Empirical Protocols, GFS Study, The Sitting Practice
+**Core Document:** Empirical Protocols, The Sitting Practice. The former survey-study corpus is retired and non-citable.
 
 **The Principle:** The system reduces to zero. The system emerges from zero. The system is bidirectional.
 
@@ -201,7 +201,7 @@ The claim does NOT mean:
 | Loop Quantum Gravity | Physics | Spin networks | Internal | None (currently) |
 | Wolfram Physics | Physics | Graph rewriting | Conjectural | Early stages |
 | Integrated Information Theory | Consciousness | Φ (phi) | Contested | Developing |
-| **EFR** | **Cross-domain translation** | **S² geometry where applicable** | **Internally audited** | **Active (GFS, Protocol D)** |
+| **EFR** | **Cross-domain translation** | **S² geometry where applicable** | **Internally audited** | **Active internal test: Protocol D; independent replication needed** |
 
 **Differentiation:** EFR's claimed advantage is narrower:
 1. It attempts to translate physics-facing, systemic-awareness, ethics, and data-science registers through one grammar.
@@ -414,7 +414,7 @@ Maximum Value = Equatorial Position
 
 | Test | Domain | Status | Prediction |
 |------|--------|--------|------------|
-| GFS Wave 1 | Core State/Value Alignment | MIXED (2026-04-09, n=207,920, 23 countries) | Human flourishing follows B = sin θ |
+| Retired survey-study corpus | No active test | RETIRED / NON-CITABLE | Archive provenance only; no evidentiary weight |
 | Protocol D | Ethics/Objective Function | Confirmed | Cooperation from multiplicative structure |
 | SPHERE Probe | Data Science | Negative/Informative | Equatorial projection improves coherence |
 | AMRITA AI | Ethics/Auditing | Specified | Spherical alignment outperforms RLHF |
@@ -423,7 +423,7 @@ Maximum Value = Equatorial Position
 ### 8.2 Kill Conditions
 
 The framework commits to:
-- Publishing if GFS shows additive model wins
+- Publishing any failure of a new independently governed model comparison
 - Abandoning if AMRITA underperforms
 - Revising if Φ-meter shows no expert correlation
 

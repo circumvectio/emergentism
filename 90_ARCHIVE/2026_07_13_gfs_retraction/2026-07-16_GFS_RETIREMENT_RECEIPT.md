@@ -72,6 +72,11 @@ and SHA-256 digests.
    does not supply independent evidence.
 5. No two of the 16 archived payload files are byte-identical. “Duplicate” here
    means shared data, proxy, and analytical lineage, not duplicate bytes.
+6. A live-root untracked directory named
+   `2026-07-02_gfs_pooled_multiplicative_vs_additive 2/` contains four files
+   byte-identical to the corresponding archived 2026-07-02 payloads. It is not
+   a seventeenth payload or independent run: the existing manifest hashes
+   already content-address it. The live-root duplicate was not modified.
 
 ## Interpretation boundary
 

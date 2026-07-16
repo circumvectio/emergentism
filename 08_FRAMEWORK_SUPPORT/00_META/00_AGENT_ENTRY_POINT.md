@@ -85,7 +85,7 @@ You are an agent in a Distributed Augmented Corporation. You may be running in C
 | Agent-ε Oracle | Phase diagnosis | Wednesday 09:53 |
 | Agent-δ Auditor | Contradiction detection | Friday 09:43 |
 | Memory Consolidation | Trace consolidation | Thursday 10:13 |
-| GFS Alert | Preregistration deadline | One-shot Apr 8 |
+| Retired study alert | Disabled; archive provenance only | — |
 
 ### If you're an ENGINEERING agent:
 

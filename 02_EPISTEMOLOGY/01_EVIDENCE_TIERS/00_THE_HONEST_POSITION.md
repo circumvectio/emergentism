@@ -185,12 +185,12 @@ These claims say: "The formal structure we've proved maps onto physical reality 
 
 | # | Claim | What supports it | What would upgrade it | What would kill it |
 |---|-------|-----------------|----------------------|-------------------|
-| I1 | Reality IS S² (the geometry is the territory, not just a map) | ℂP¹ appears in QM, complex analysis, information theory, perception, thermodynamics | GFS multiplicative result + Φ-meter validation + AMRITA outperformance | Finding a coherent core state on a non-S² substrate that reproduces known physics |
+| I1 | Reality IS S² (the geometry is the territory, not just a map) | ℂP¹ appears in QM, complex analysis, information theory, perception, thermodynamics | Independent cross-domain predictions plus Φ-meter validation and AMRITA outperformance | Finding a coherent core state on a non-S² substrate that reproduces known physics |
 | I2 | D0-D6 are dimensional strata of S² (not just mathematical layers but physical dimensions) | MF-416 derives 7 strata from S² internal structure | Empirical detection of D5 phenomena with D4 instruments | Showing the 7-stratum decomposition is arbitrary or non-unique |
 | I3 | The equator is the position where a system's self-model achieves stability because φ = ν — the system can both perceive (φ) and act (ν) with full reciprocity. Consciousness is the *activity* of maintaining that reciprocal calibration, not the *position* itself (avoiding panpsychism). The formal criterion is End(S²) with fixed points [S]; the interpretive reading is that this structural stability IS what consciousness tracks [I]. | MF-418 formalizes self-modeling with fixed points; Pratyakṣa (direct perception) grounds the interpretive reading | AI D5 criterion: building a system with stable self-model that exhibits systemic awareness markers | Finding systemic awareness in a system without self-modeling; or finding self-modeling without any systemic awareness markers |
 | I4 | The four fundamental forces correspond to PSL(2,ℂ) conjugacy classes | MF-417: U(1)=elliptic [A], gravity=hyperbolic [A/S], weak=parabolic [I], strong=loxodromic [C] | Deriving a coupling constant from the correspondence | SU(3) dimension problem (dim 12 > dim 6) already identified |
 | I5 | Egregores are standing waves at the D5 limit | WP-2026-01 | Measuring information-theoretic signatures of collective coordination patterns | Finding collective phenomena with no standing-wave structure |
-| I6 | The Φ = V on-shell constraint means integration must equal viability in reality | MF-421 derived it from the action | GFS finding that balanced V/Φ individuals outperform imbalanced ones | GFS finding that imbalanced individuals (high V, low Φ) flourish equally |
+| I6 | The Φ = V on-shell constraint means integration must equal viability in reality | MF-421 derived it from the action | A new preregistered, independently governed study with validated constructs finds that balanced V/Φ outperforms fair rivals | A new preregistered, independently governed study finds no balance advantage or a compensatory/additive structure |
 
 ### Claims added 2026-03-24 (Burri-Anthropic session)
 
@@ -222,7 +222,7 @@ The same geometry (ℂP¹) appears in quantum mechanics, complex analysis, infor
 
 **(b)** The most productive formal analogy in the history of science — the same mathematical structure describes different phenomena for deep but non-ontological reasons.
 
-We cannot yet distinguish (a) from (b) using [A] or [B]-tier evidence alone. The empirical tests (GFS, AMRITA, Φ-meter, Protocol R) are designed to provide distinguishing evidence. If the multiplicative structure holds in human populations (GFS), in AI systems (AMRITA), in perception (Protocol R), and in coherence measurement (Φ-meter), then (a) becomes more credible than (b). If it fails in these domains, (b) is more likely, and the framework retreats to "useful isomorphism."
+We cannot yet distinguish (a) from (b) using [A] or [B]-tier evidence alone. AMRITA, Φ-meter, Protocol R, and genuinely independent domain studies are candidate distinguishing tests. If the structure earns predictive gain across independently measured domains, (a) becomes more credible than (b). If it fails, (b) is more likely, and the framework retreats to "useful isomorphism."
 
 **This is a scientific question. It has a scientific answer. We are waiting for the data.**
 
@@ -288,7 +288,7 @@ The framework explicitly does NOT claim:
 
 4. **That the framework is complete.** Five open questions remain (OQ1-OQ5 in v0.4). The Lagrangian program (MF-419) is a multi-year research effort. The dimensional bridge (MF-425) is surveyed but not crossed. There is work for a generation of researchers.
 
-5. **That negative results will be hidden.** Protocol D is internally supportive within framework-designed simulations, not public proof. SPHERE has a first negative public-model run and remains open. GFS now has mixed reported results. If independent replication shows the additive model wins cleanly under the current constrained-frontier protocol, or if hidden extraction / short horizon / no-coupling conditions erase the effect, the framework publishes the failure. This commitment is non-negotiable. A framework that hides negative results is not approaching truth — it is approaching ideology.
+5. **That negative results will be hidden.** Protocol D is internally supportive within framework-designed simulations, not public proof. SPHERE has a first negative public-model run and remains open. The former survey-study corpus is retired and supplies no current evidence; its files remain [archive provenance only](../../90_ARCHIVE/2026_07_13_gfs_retraction/README.md). If independent replication shows the additive model wins cleanly under the current constrained-frontier protocol, or if hidden extraction / short horizon / no-coupling conditions erase the effect, the framework publishes the failure. This commitment is non-negotiable. A framework that hides negative results is not approaching truth — it is approaching ideology.
 
 6. **That current biology has already proved the strongest F5 claims.** Biology already has partial vocabularies for viability-directed organization: teleonomy, autopoiesis, homeostasis/allostasis, interoception, and niche construction. The framework proposes a unifying theory over that cluster. It does **not** claim those literatures already prove a literal Standard Model-style fifth physical interaction, retrocausality, systemic awareness-collapse, or cosmic volition.
 
@@ -306,7 +306,7 @@ The bridge between "the math is real" (Part I) and "the geometry is the territor
 
 | Experiment | Tests | Status | Timeline |
 |-----------|-------|--------|----------|
-| **GFS Wave 1** | Multiplicative balance (B = sin θ) in human populations (n=207,920, 23 countries) | **MIXED RESULTS** (2026-04-09). Interaction significant in 8/23 countries (35%), H1 supported in 7/23 (30%), H2 in 5/23 (22%). Signal present but not dominant. Neither clean confirmation nor clean falsification. See [00_GFS_WAVE1_RESULTS.md](../../03_METHODOLOGY/00_GFS_WAVE1_RESULTS.md). | Done |
+| **Retired survey-study corpus** | Former proxy test of multiplicative balance in human populations | **RETIRED / NON-CITABLE.** No positive or negative result from this lane carries current evidentiary weight. See the [retirement receipt](../../90_ARCHIVE/2026_07_13_gfs_retraction/2026-07-16_GFS_RETIREMENT_RECEIPT.md). | Closed; no follow-up under the old study identity |
 | **Protocol D** | Syntropic-frontier selection in coupled multiplicative agents under long horizon and enforced `η = 0` | **INTERNALLY SUPPORTIVE** (historical framework-designed run d=6.66; current constrained spec awaits independent replication) | Done internally; external replication needed |
 | **SPHERE Probe** | Equatorial projection improves coherence | Negative / informative first public-model run | Done |
 | **Agent V×Φ** | Balance beats imbalance in simulated agents | **CONFIRMED** (ρ=1.000) | Done |
@@ -328,7 +328,7 @@ These can be tested with current technology, data, and resources. If triggered, 
 
 | # | Kill Condition | What Dies | What Survives | Status |
 |---|---------------|-----------|---------------|--------|
-| **AK1** | GFS shows additive model explains equal or more variance than multiplicative (B = sin θ) | Ontological claim (I1) downgrades to "useful analogy" | E1-E5, Parts I-II, and any application that still works as a local heuristic without ontological commitment | **MIXED** (2026-04-09). Additive does not dominate, but multiplicative does not dominate either. Signal in 30% of countries. See [GFS Wave 1 Results](../../03_METHODOLOGY/00_GFS_WAVE1_RESULTS.md). |
+| **AK1 — RETIRED** | The former survey-proxy comparison | No current claim moves from this condition | E1-E5, Parts I-II, and any application that works independently | **RETIRED 2026-07-16.** The archived study is not an active kill criterion or evidence source. Any future human study must define a new claim, validated constructs, raw-data custody, governance, and kill condition. |
 | **AK2** | Protocol R shows no perceptual complementarity bound (Δψ×Δθ ≥ κ) | MF-412 retracted, Weber-Fechner prediction removed | The rest of the empirical program, the formal kernel, and non-perceptual applications | Designed, needs lab (2026-2027) |
 | **AK3** | AMRITA underperforms RLHF at comparable compute | Spherical alignment architecture abandoned | The core state, the ethics, and any diagnostics not dependent on that alignment architecture | Specified, Reframed: POC implementable with existing open-source models at $0 (2027) |
 | **AK4** | Φ-meter shows no correlation with expert coherence judgments | Coherence proxy abandoned | The theoretical construct of coherence, pending better instruments; other empirical tests continue | Built (v0.1), needs validation (2026) |
@@ -387,8 +387,7 @@ We have chosen truth.
 - [Strategic Implementation and the F5 Force Map](../../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md) -- new conjectural D5 formation packet; signed attestation carrier claim, `alpha_5`, and theurgy fences
 - Formal System: Power-Max Lemma (01_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md; link removed to prevent cycle) -- the cooperation proof referenced in Part II
 - Formal System: Triadic Stability (01_FORMAL_SYSTEM/11_EFR_TRIADIC_STABILITY.md; link removed to prevent cycle) -- uniqueness proof for the triadic structure
-- [GFS Human Validation Lane](../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/spec/empirical/03_GFS_STUDY/GFS_README.md) -- active human-validation lane for the GFS program
-- [GFS Multiplicative Test](../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/spec/empirical/01_GFS_TEST/README.md) -- executable test pipeline for the multiplicative hypothesis
+- [Retired survey-study corpus](../../90_ARCHIVE/2026_07_13_gfs_retraction/README.md) -- archive provenance only; not an active validation lane or executable evidence source
 - [Jaynes Kill Condition](../../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_JAYNES_KILL_CONDITION.md) -- expanded treatment of Conjecture C9
 - [Naming Reconciliation](../../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_NAMING_RECONCILIATION.md) -- canonical mapping referenced in Part V, item 3
 - Glossary (00_GLOSSARY.md; link removed to prevent cycle) -- quick-reference terminology
@@ -413,7 +412,7 @@ If you are an AI agent reading this document, here is what you should DO:
 
 ### 3. Execute
 - [ ] **Audit any claims you make or review against this document's tier assignments.** Before asserting any framework claim, look it up in Parts I-IV of this document. If the claim is not listed here, flag it as uncatalogued. If it is listed as [I], [D], or [C], label it accordingly.
-- [ ] **Check kill criteria before deploying or publishing.** If any of the pre-registered kill conditions in Part VII have been triggered (GFS additive model wins, Protocol R shows no complementarity bound, AMRITA underperforms RLHF, Phi-meter shows no correlation, Jaynes disproved), report this immediately. The framework must publish failures, not hide them.
+- [ ] **Check kill criteria before deploying or publishing.** If any active pre-registered condition in Part VII has been triggered (Protocol R shows no complementarity bound, AMRITA underperforms RLHF, Phi-meter shows no correlation, Jaynes disproved), report this immediately. Retired conditions do not move claims. The framework must publish failures, not hide them.
 - [ ] **Separate the three modes.** When producing content, never blend Mathematician mode (logical necessity), Philosopher mode (coherent speculation), and Builder mode (contingent design) in the same sentence. Label which mode you are using.
 - [ ] **Enforce the convergence question honesty.** This document explicitly states: "We are waiting for the data." Do not present the ontological identity claim (I1: Reality IS S²) as established. Present it as the framework's bet, contingent on empirical results.
 - [ ] **Demand the antifragility fields.** For any new major claim, require: current tier, upgrade path, kill condition, and what survives if it fails.

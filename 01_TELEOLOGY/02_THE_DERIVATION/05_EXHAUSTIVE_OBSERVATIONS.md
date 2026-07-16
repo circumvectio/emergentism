@@ -74,7 +74,7 @@ Read the entire corpus (8.6M words, 14,000+ files). Look through the derivation 
 
 **#19. G5 is the only gate that matters.** One independent human implementor who ships without asking. Until G5 fires, Emergentism is potential energy.
 
-**#20. The GFS test is existential.** 2026-04-08 data release. If the multiplicative model fails, the ontological claim falls — the wisdom survives. The kill criterion is honest.
+**#20. No proxy study is existential.** The former survey lane is retired. Ontological claims move only under a new study whose constructs, custody, comparison class, and kill condition actually reach the claim.
 
 ### The Deep Patterns
 

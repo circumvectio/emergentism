@@ -147,21 +147,17 @@ invariants to the admissible worlds**.
   upgrade any claim. An `[I]` claim about the manifold identity is
   still `[I]`. An `[S]` claim about η=0 at the equator is still `[S]`.
   What changes is which inferences are primary.
-- **Kill conditions.** The pre-registered falsification criteria
-  (AK1–AK8) continue to apply. If GFS Wave 1 had shown additive
-  dominance, that would kill the generative reading just as it would
-  have killed the predictive one. The experiments still decide.
+- **Kill conditions.** Active pre-registered falsification criteria continue
+  to apply. The retired survey condition AK1 does not: archived results cannot
+  kill, rescue, or upgrade the generative reading. New experiments decide only
+  the claims and criteria they preregister.
 - **Mode separation.** Mathematician / Philosopher / Builder still
   do not blend. The generative reading is primarily a **Builder-mode**
   framing; it does not upgrade Philosopher-mode claims about what the
   world IS.
-- **Mixed results.** GFS Wave 1 showed multiplicative signal in 30%
-  of countries, not dominant. Under the generative reading, this is
-  exactly what you'd expect: the invariant describes which worlds
-  are cheap to maintain, not which worlds are observed. That a third
-  of human populations show the signal under crude aggregation is
-  consistent with a generative grammar that is selected for in
-  well-constituted subsystems, not universally imposed by physics.
+- **Retirement discipline.** A study whose construct mapping, claim fit, and
+  evidence custody cannot carry the assigned claim is retired. A generative
+  reinterpretation may not rescue an archived result after the fact.
 
 ---
 
@@ -384,8 +380,9 @@ at `../01_TELEOLOGY/01_F5_FORCE/03_F5_AS_GRADIENT_SELECTION_WITH_STAGING.md`
 ## What this doc is NOT claiming
 
 - **It is not saying the framework cannot predict.** Prediction is
-  preserved as constraint and falsification. GFS, SPHERE, AMRITA,
-  Protocol R, Φ-meter validation all continue to apply.
+  preserved as constraint and falsification. SPHERE, AMRITA,
+  Protocol R, Φ-meter validation, and future independently governed studies
+  apply only within their declared claim boundaries.
 - **It is not upgrading any `[I]` or `[C]` claim.** The generative
   reading is a framing, not new evidence. What was interpretive
   stays interpretive.

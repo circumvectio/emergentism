@@ -84,11 +84,13 @@ The operators are not roles. They are *vector fields* on S². The derivation def
 
 ---
 
-## 6. The GFS Test Hasn't Been Connected To The Derivation In One Sentence
+## 6. Every Test Must Name the Exact Bridge It Can Move
 
-The GFS test (April 8 data release) is an empirical test of the multiplicative hypothesis in one public data domain. If it confirms multiplicative structure, the framework gains an empirical bridge. If it fails, the derivation survives as mathematics while the public ontological bridge downgrades.
-
-**What hasn't been said in one crisp sentence:** "GFS either supports the multiplicative wellbeing bridge or it doesn't. If it does, Emergentism gains public empirical leverage in that domain. If it doesn't, the derivation remains mathematically valid while the world-facing claim downgrades. The wisdom survives either way."
+The former survey study was assigned more weight than its proxies, custody, and
+comparison class could carry. It is now retired. The corrected one-sentence
+rule is: **a result moves only the operational bridge it preregistered and
+actually measured; it neither upgrades the mathematics nor immunizes the
+ontology.**
 
 ---
 
@@ -98,7 +100,7 @@ The Honest Position says what's [A], [B], [S], [I], and [C]. It says what would 
 
 Not "is it coherent" or "is it useful" — but is it TRUE? And what would it mean for a framework to be true?
 
-**What hasn't been said:** Truth for Emergentism is not only correspondence (does the framework match reality?) or coherence (is it internally consistent?). Truth is *disciplined convergence*: when first-person evidence (sitting practice), third-person proof (derivation), and empirical data (GFS and any neuroscience-adjacent predictions) all point to the same structure without silently upgrading one another. Truth is not only a property of statements. It is a property of convergence under tier discipline.
+**What hasn't been said:** Truth for Emergentism is not only correspondence (does the framework match reality?) or coherence (is it internally consistent?). Truth is *disciplined convergence*: when first-person evidence (sitting practice), third-person proof (derivation), and independent empirical data all point to the same structure without silently upgrading one another. Truth is not only a property of statements. It is a property of convergence under tier discipline.
 
 If all three converge, the framework is true. If any one diverges, the framework is incomplete. If all three diverge, the framework is wrong.
 
