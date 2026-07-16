@@ -1008,8 +1008,8 @@ class JusticeGateAndQueueTests(unittest.TestCase):
                         kernel.validate_schema_instance(SCHEMA, "coreData", candidate_core), []
                     )
                 else:
-                    self.assertNotEqual(
-                        kernel.validate_schema_instance(SCHEMA, "coreData", candidate_core), ()
+                    self.assertTrue(
+                        kernel.validate_schema_instance(SCHEMA, "coreData", candidate_core)
                     )
                 self.assertEqual(
                     kernel.validate_schema_instance(SCHEMA, "publicQueue", candidate_queue), []
@@ -1606,8 +1606,8 @@ class SemanticEvaluatorTests(unittest.TestCase):
                 payload = copy.deepcopy(good)
                 payload[field] = invalid
                 with self.subTest(evaluator=evaluator, field=field):
-                    self.assertNotEqual(
-                        kernel.validate_named_definition(SCHEMA, definition, payload), ()
+                    self.assertTrue(
+                        kernel.validate_named_definition(SCHEMA, definition, payload)
                     )
                     self.assertTrue(semantic_issue(evaluate(evaluator, payload, core)))
 
