@@ -2,10 +2,13 @@ from __future__ import annotations
 
 import copy
 import hashlib
+import html
 import json
 import math
+import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
+from types import MappingProxyType
 from typing import Any, Iterable, Mapping, Sequence
 
 from .codec import normalize_lf, raw_hash, safe_repo_path, text_hash
@@ -15,6 +18,9 @@ from .diagnostics import Issue, KintsugiError
 _NARRATIVE_DOMAIN = b"KINTSUGI-NARRATIVE-V1\x00"
 _MAX_UINT64 = (1 << 64) - 1
 _MAX_JSON_DEPTH = 512
+_MAX_JSON_INTEGER_DIGITS = 4096
+_RECEIPT_LEXICAL_GRAMMAR_VERSION = "1"
+_MAX_RECEIPT_PROJECTION_CHARS = 8192
 _KNOWN_ROLES = frozenset({
     "kintsugi-seam",
     "kintsugi-receipt",
@@ -22,25 +28,89 @@ _KNOWN_ROLES = frozenset({
     "kintsugi-review-findings",
     "kintsugi-public-queue",
 })
-_RESERVED_RECEIPT_SUBJECT_STEMS = (
-    "receipt",
-    "phase",
-    "review",
-    "reviewer",
-    "logic",
-    "btj",
-    "truth",
-    "beauty",
-    "justice",
-    "gate",
-    "status",
-    "digest",
-    "bundle",
-)
 _STATIC_RECEIPT_LINES = frozenset({
     "# receipt",
     "# synthetic receipt",
 })
+_CONTROL_SUBJECT_LEXEMES = frozenset({
+    "audit", "audited", "auditing", "audits",
+    "attest", "attestation", "attestations", "attested", "attesting",
+    "attests",
+    "btj",
+    "check", "checked", "checker", "checkers", "checking", "checks",
+    "digest", "digests",
+    "gate", "gates",
+    "logic",
+    "phase", "phases",
+    "receipt", "receipts",
+    "review", "reviewed", "reviewing", "reviews",
+    "reviewer", "reviewers",
+    "status", "statuses",
+    "validate", "validated", "validates", "validating", "validation",
+    "validations",
+    "verdict", "verdicts",
+})
+_AMBIGUOUS_CONTROL_NOUNS = frozenset({
+    "artifact", "artifacts",
+    "beauty",
+    "bundle", "bundles",
+    "justice",
+    "outcome", "outcomes",
+    "package", "packages",
+    "target", "targets",
+    "truth",
+})
+_CLOSURE_PREDICATES = frozenset({
+    "abandon", "abandoned",
+    "accept", "accepted",
+    "approve", "approved", "approves",
+    "close", "closed",
+    "complete", "completed",
+    "draft",
+    "fail", "failed", "fails",
+    "final", "finalized",
+    "freeze", "frozen",
+    "pass", "passed", "passes",
+    "pending",
+    "reject", "rejected", "rejects",
+    "sign", "signed",
+    "succeed", "succeeded", "succeeds",
+    "verified",
+})
+_CLOSURE_LINKERS = frozenset({
+    "are", "be", "been", "being", "definitively", "formally", "fully",
+    "had", "has", "have", "is", "not", "now", "officially", "remain",
+    "remains", "successfully", "was", "were",
+})
+_MAX_CLOSURE_LINKERS = 6
+_CONTROL_PHRASES = frozenset({
+    ("audit", "artifact"),
+    ("audit", "outcome"),
+    ("audit", "package"),
+    ("beauty", "gate"),
+    ("justice", "gate"),
+    ("review", "artifact"),
+    ("review", "outcome"),
+    ("review", "package"),
+    ("review", "target"),
+    ("truth", "gate"),
+    ("validation", "artifact"),
+    ("validation", "bundle"),
+    ("validation", "outcome"),
+    ("validation", "package"),
+})
+_CONTROL_COMPOUNDS = frozenset(
+    {left + right for left, right in _CONTROL_PHRASES}
+    | {
+        "btjreview", "btjreviewerpath", "btjreviewpath",
+        "beautygate", "bundlepath", "gatestatus",
+        "justicegate", "logicreview", "logicreviewerpath",
+        "logicreviewpath", "receiptstatus", "reviewattempt",
+        "reviewattemptid", "reviewerpath", "reviewstatus",
+        "reviewtarget", "reviewtargetdigest", "truthgate",
+        "validationbundle", "validationbundlepath", "validationdigest",
+    }
+)
 _ONE_SIDED_SEAM_STATUSES = frozenset({"CONFIRMED", "HELD_OPEN"})
 
 
@@ -108,6 +178,49 @@ class _Line:
     content_end: int
     end: int
     content: bytes
+
+
+@dataclass(frozen=True)
+class _MarkdownScan:
+    records: tuple[FenceRecord, ...]
+    headings: tuple[tuple[str, int], ...]
+    issues: tuple[Issue, ...]
+
+
+@dataclass(frozen=True)
+class _ContainerState:
+    marker: int
+    run_length: int
+    exact_closer: bool
+    json_looking: bool
+    valid_role: bool
+    role: str
+    opener: _Line
+
+
+@dataclass(frozen=True)
+class _OwnerSubstringIndex:
+    transitions: tuple[Mapping[str, int], ...]
+    occurrences: tuple[int, ...]
+
+    def occurrence_count(self, pattern: str) -> int:
+        if not pattern:
+            return 2
+        state = 0
+        for character in pattern:
+            target = self.transitions[state].get(character)
+            if target is None:
+                return 0
+            state = target
+        return self.occurrences[state]
+
+
+@dataclass(frozen=True)
+class _OwnerView:
+    raw_sha256: str
+    normalized_text: str | None
+    substring_index: _OwnerSubstringIndex | None
+    utf8_error_offset: int | None
 
 
 class _DuplicateJsonKey(ValueError):
@@ -195,6 +308,26 @@ def _finite_float(value: str) -> float:
     return parsed
 
 
+def _bounded_json_int(value: str) -> int:
+    negative = value.startswith("-")
+    digits = value[1:] if negative else value
+    if len(digits) > _MAX_JSON_INTEGER_DIGITS:
+        raise ValueError(
+            "JSON integer exceeds fixed "
+            f"{_MAX_JSON_INTEGER_DIGITS}-digit ceiling"
+        )
+    result = 0
+    for start in range(0, len(digits), 9):
+        chunk = digits[start:start + 9]
+        if not chunk.isascii() or not chunk.isdigit():
+            raise ValueError("JSON integer contains a non-decimal digit")
+        chunk_value = 0
+        for character in chunk:
+            chunk_value = chunk_value * 10 + (ord(character) - 48)
+        result = result * (10 ** len(chunk)) + chunk_value
+    return -result if negative else result
+
+
 def _json_depth_exceeded(payload: bytes) -> bool:
     depth = 0
     in_string = False
@@ -232,6 +365,7 @@ def _json_value(raw: bytes, *, path: str, offset: int) -> tuple[Any, list[Issue]
             object_pairs_hook=_duplicate_safe_object,
             parse_constant=_reject_constant,
             parse_float=_finite_float,
+            parse_int=_bounded_json_int,
         )
     except json.JSONDecodeError as exc:
         byte_position = len(text[:exc.pos].encode("utf-8"))
@@ -246,16 +380,24 @@ def _json_value(raw: bytes, *, path: str, offset: int) -> tuple[Any, list[Issue]
     return value, []
 
 
-def _fence_parts(content: bytes) -> tuple[int, int, bytes] | None:
-    if not content or content[0] not in (96, 126):
+def _commonmark_fence_parts(
+    content: bytes,
+) -> tuple[int, int, int, bytes] | None:
+    indent = 0
+    while indent < len(content) and indent < 4 and content[indent] == 32:
+        indent += 1
+    if indent > 3 or indent >= len(content) or content[indent] not in (96, 126):
         return None
-    marker = content[0]
+    marker = content[indent]
     run_length = 1
-    while run_length < len(content) and content[run_length] == marker:
+    while (
+        indent + run_length < len(content)
+        and content[indent + run_length] == marker
+    ):
         run_length += 1
     if run_length < 3:
         return None
-    return marker, run_length, content[run_length:]
+    return indent, marker, run_length, content[indent + run_length:]
 
 
 def _json_looking_info(info: bytes) -> bool:
@@ -267,86 +409,123 @@ def _json_looking_info(info: bytes) -> bool:
     )
 
 
-def _is_fence_closer(
-    content: bytes, marker: int, run_length: int, *, exact: bool
+def _is_container_closer(
+    content: bytes, state: _ContainerState
 ) -> bool:
-    parts = _fence_parts(content)
+    parts = _commonmark_fence_parts(content)
     if parts is None:
         return False
-    closer_marker, closer_length, trailing = parts
-    if closer_marker != marker:
+    indent, closer_marker, closer_length, trailing = parts
+    if closer_marker != state.marker:
         return False
-    if exact:
-        return closer_length == run_length and trailing == b""
-    return closer_length >= run_length and trailing.strip(b" \t") == b""
+    if state.exact_closer:
+        return (
+            indent == 0
+            and closer_length == state.run_length
+            and trailing == b""
+        )
+    return (
+        closer_length >= state.run_length
+        and trailing.strip(b" \t") == b""
+    )
 
 
-def _scan_fences(payload: bytes, path: str) -> tuple[tuple[FenceRecord, ...], list[Issue]]:
+def _scan_markdown(payload: bytes, path: str) -> _MarkdownScan:
     lines = _lines(payload)
     records: list[FenceRecord] = []
+    headings: list[tuple[str, int]] = []
     issues: list[Issue] = []
-    index = 0
-    while index < len(lines):
-        line = lines[index]
-        parts = _fence_parts(line.content)
-        if parts is None:
-            index += 1
+    active: _ContainerState | None = None
+    for line in lines:
+        if active is not None:
+            if not _is_container_closer(line.content, active):
+                continue
+            if active.json_looking and active.valid_role:
+                raw_json = payload[active.opener.end:line.start]
+                value, json_issues = _json_value(
+                    raw_json, path=path, offset=active.opener.end
+                )
+                issues.extend(json_issues)
+                records.append(FenceRecord(
+                    active.role,
+                    active.opener.start,
+                    active.opener.end,
+                    line.start,
+                    line.start,
+                    line.end,
+                    value,
+                    not json_issues,
+                ))
+            active = None
             continue
 
-        marker, run_length, info = parts
+        parts = _commonmark_fence_parts(line.content)
+        if parts is None:
+            heading_id = _heading_id(line.content)
+            if heading_id is not None:
+                headings.append((heading_id, line.start))
+            continue
+
+        indent, marker, run_length, info = parts
         json_looking = _json_looking_info(info)
+        backtick_in_info = marker == 96 and b"`" in info
+        if backtick_in_info and not (indent == 0 and json_looking):
+            continue
         exact_role = info[len(b"json "):] if info.startswith(b"json ") else b""
         exact_opener = (
-            marker == 96
+            indent == 0
+            and marker == 96
             and run_length == 3
             and info.startswith(b"json ")
+            and not backtick_in_info
         )
         try:
             role = exact_role.decode("ascii", errors="strict")
         except UnicodeDecodeError:
             role = exact_role.decode("ascii", errors="replace")
 
-        if not json_looking:
-            closer_index = index + 1
-            while closer_index < len(lines) and not _is_fence_closer(
-                lines[closer_index].content, marker, run_length, exact=False
-            ):
-                closer_index += 1
-            index = len(lines) if closer_index >= len(lines) else closer_index + 1
-            continue
-
-        valid_opener = exact_opener and role in _KNOWN_ROLES
-        if not valid_opener:
+        machine_candidate = indent == 0 and json_looking
+        valid_role = machine_candidate and exact_opener and role in _KNOWN_ROLES
+        if machine_candidate and not valid_role:
             issues.append(_issue(
                 path, line.start, "KIN-E-LEDGER", "malformed JSON fence opener"
             ))
-        closer_index = index + 1
-        while closer_index < len(lines) and not _is_fence_closer(
-            lines[closer_index].content, marker, run_length, exact=True
-        ):
-            closer_index += 1
-        if closer_index >= len(lines):
-            detail = f"unterminated {role} fence" if valid_opener else "unterminated malformed JSON fence"
-            issues.append(_issue(path, line.start, "KIN-E-LEDGER", detail))
-            if valid_opener:
-                records.append(FenceRecord(
-                    role, line.start, line.end, len(payload), len(payload),
-                    len(payload), None, False,
-                ))
-            break
-        if not valid_opener:
-            index = closer_index + 1
-            continue
-        closer = lines[closer_index]
-        raw_json = payload[line.end:closer.start]
-        value, json_issues = _json_value(raw_json, path=path, offset=line.end)
-        issues.extend(json_issues)
-        records.append(FenceRecord(
-            role, line.start, line.end, closer.start, closer.start, closer.end,
-            value, not json_issues,
-        ))
-        index = closer_index + 1
-    return tuple(records), issues
+        active = _ContainerState(
+            marker=marker,
+            run_length=run_length,
+            exact_closer=machine_candidate,
+            json_looking=machine_candidate,
+            valid_role=valid_role,
+            role=role,
+            opener=line,
+        )
+
+    if active is not None and active.json_looking:
+        detail = (
+            f"unterminated {active.role} fence"
+            if active.valid_role
+            else "unterminated malformed JSON fence"
+        )
+        issues.append(_issue(path, active.opener.start, "KIN-E-LEDGER", detail))
+        if active.valid_role:
+            records.append(FenceRecord(
+                active.role,
+                active.opener.start,
+                active.opener.end,
+                len(payload),
+                len(payload),
+                len(payload),
+                None,
+                False,
+            ))
+    return _MarkdownScan(tuple(records), tuple(headings), tuple(issues))
+
+
+def _scan_fences(
+    payload: bytes, path: str
+) -> tuple[tuple[FenceRecord, ...], list[Issue]]:
+    scan = _scan_markdown(payload, path)
+    return scan.records, list(scan.issues)
 
 
 def extract_fenced_json(markdown: bytes, fence_kind: str) -> list[object]:
@@ -506,20 +685,16 @@ def synchronize_ledger_markdown(
     if not isinstance(seams, Sequence) or isinstance(seams, (str, bytes, bytearray)):
         issues.append(_issue(path, 0, "KIN-E-LEDGER", "expected seams must be a sequence"))
         seams = ()
-    lines = _lines(payload)
-    headings: list[tuple[str, int]] = []
+    scan = _scan_markdown(payload, path)
+    headings = list(scan.headings)
     seen_heading_ids: set[str] = set()
-    for line in lines:
-        heading_id = _heading_id(line.content)
-        if heading_id is None:
-            continue
-        headings.append((heading_id, line.start))
+    for heading_id, heading_start in headings:
         if heading_id in seen_heading_ids:
-            issues.append(_issue(path, line.start, "KIN-E-LEDGER", f"duplicate seam heading: {heading_id}"))
+            issues.append(_issue(path, heading_start, "KIN-E-LEDGER", f"duplicate seam heading: {heading_id}"))
         seen_heading_ids.add(heading_id)
 
-    records, fence_issues = _scan_fences(payload, path)
-    issues.extend(fence_issues)
+    records = scan.records
+    issues.extend(scan.issues)
     utf8_issue = _outside_utf8_issue(payload, records, path)
     if utf8_issue is not None:
         issues.append(utf8_issue)
@@ -613,9 +788,75 @@ def synchronize_ledger_markdown(
     return LedgerSynchronization(preamble, tuple(sections), _ordered(issues))
 
 
+def _rendered_receipt_projection(text: str) -> str:
+    if len(text) > _MAX_RECEIPT_PROJECTION_CHARS:
+        raise ValueError(
+            f"receipt lexical grammar v{_RECEIPT_LEXICAL_GRAMMAR_VERSION} "
+            "line exceeds projection bound"
+        )
+    projected = html.unescape(text)
+    if len(projected) > _MAX_RECEIPT_PROJECTION_CHARS:
+        raise ValueError(
+            f"receipt lexical grammar v{_RECEIPT_LEXICAL_GRAMMAR_VERSION} "
+            "entity expansion exceeds projection bound"
+        )
+    projected = unicodedata.normalize("NFKC", projected)
+    if len(projected) > _MAX_RECEIPT_PROJECTION_CHARS:
+        raise ValueError(
+            f"receipt lexical grammar v{_RECEIPT_LEXICAL_GRAMMAR_VERSION} "
+            "NFKC expansion exceeds projection bound"
+        )
+    projected = "".join(
+        character
+        for character in projected
+        if unicodedata.category(character) != "Cf"
+    )
+    if _has_unsupported_receipt_inline(projected):
+        raise ValueError(
+            f"receipt lexical grammar v{_RECEIPT_LEXICAL_GRAMMAR_VERSION} "
+            "does not admit link or HTML inline constructs"
+        )
+    return "".join(
+        character for character in projected
+        if character not in "*_`~"
+    )
+
+
+def _has_unsupported_receipt_inline(text: str) -> bool:
+    bracket_open = False
+    for index, character in enumerate(text):
+        if character == "[":
+            if index > 0 and text[index - 1].isalnum():
+                return True
+            bracket_open = True
+        elif character == "]" and bracket_open:
+            following = text[index + 1] if index + 1 < len(text) else ""
+            if following and (following.isalnum() or following in "(["):
+                return True
+            bracket_open = False
+
+        if character == "<":
+            candidate_index = index + 1
+            if (
+                candidate_index < len(text)
+                and text[candidate_index] == "/"
+            ):
+                candidate_index += 1
+            if (
+                candidate_index < len(text)
+                and (
+                    text[candidate_index].isalpha()
+                    or text[candidate_index] in "!?"
+                )
+            ):
+                return True
+    return False
+
+
 def _static_receipt_line(
-    normalized: str, receipt: Mapping[str, Any]
+    projected: str, receipt: Mapping[str, Any]
 ) -> bool:
+    normalized = " ".join(projected.strip().casefold().split())
     if normalized in _STATIC_RECEIPT_LINES:
         return True
     phase = receipt.get("phase")
@@ -652,6 +893,61 @@ def _receipt_subject_tokens(text: str) -> list[str]:
     return tokens
 
 
+def _receipt_line_is_dynamic(projected: str, tokens: Sequence[str]) -> bool:
+    token_set = set(tokens)
+    if token_set & _CONTROL_SUBJECT_LEXEMES:
+        return True
+    if token_set & _CONTROL_COMPOUNDS:
+        return True
+    if any(
+        (left, right) in _CONTROL_PHRASES
+        for left, right in zip(tokens, tokens[1:])
+    ):
+        return True
+    ambiguous = token_set & _AMBIGUOUS_CONTROL_NOUNS
+    if ambiguous and _has_bounded_closure_predicate(tokens):
+        return True
+    stripped = projected.strip().casefold()
+    return _has_ambiguous_field_label(stripped, ambiguous)
+
+
+def _has_ambiguous_field_label(
+    stripped: str, ambiguous: Iterable[str]
+) -> bool:
+    for noun in ambiguous:
+        if not stripped.startswith(noun):
+            continue
+        remainder = stripped[len(noun):]
+        if remainder and (remainder[0].isalnum() or remainder[0] == "_"):
+            continue
+        if remainder.lstrip(" \t").startswith((":", "=")):
+            return True
+    return False
+
+
+def _has_bounded_closure_predicate(tokens: Sequence[str]) -> bool:
+    for index, token in enumerate(tokens):
+        if token not in _AMBIGUOUS_CONTROL_NOUNS:
+            continue
+        if index > 0 and tokens[index - 1] in _CLOSURE_PREDICATES:
+            return True
+        predicate_index = index + 1
+        linker_count = 0
+        while (
+            predicate_index < len(tokens)
+            and tokens[predicate_index] in _CLOSURE_LINKERS
+            and linker_count < _MAX_CLOSURE_LINKERS
+        ):
+            predicate_index += 1
+            linker_count += 1
+        if (
+            predicate_index < len(tokens)
+            and tokens[predicate_index] in _CLOSURE_PREDICATES
+        ):
+            return True
+    return False
+
+
 def _dynamic_receipt_issues(
     raw: bytes,
     receipt: Mapping[str, Any],
@@ -665,15 +961,18 @@ def _dynamic_receipt_issues(
             text = line.content.decode("utf-8", errors="strict")
         except UnicodeDecodeError:
             continue
-        normalized = " ".join(text.strip().casefold().split())
-        if not normalized or _static_receipt_line(normalized, receipt):
+        try:
+            projected = _rendered_receipt_projection(text)
+        except Exception:
+            issues.append(_issue(
+                path, base + line.start, "KIN-E-LEDGER",
+                "receipt prose cannot be represented by the bounded lexical grammar",
+            ))
             continue
-        tokens = _receipt_subject_tokens(text)
-        if any(
-            token.startswith(stem)
-            for token in tokens
-            for stem in _RESERVED_RECEIPT_SUBJECT_STEMS
-        ):
+        if not projected.strip() or _static_receipt_line(projected, receipt):
+            continue
+        tokens = _receipt_subject_tokens(projected)
+        if _receipt_line_is_dynamic(projected, tokens):
             issues.append(_issue(
                 path, base + line.start, "KIN-E-LEDGER",
                 "dynamic receipt prose is forbidden outside the fence after target freeze",
@@ -681,11 +980,88 @@ def _dynamic_receipt_issues(
     return issues
 
 
-def _occurs_exactly_once(text: str, quote: str) -> bool:
-    if not quote:
-        return False
-    first = text.find(quote)
-    return first >= 0 and text.find(quote, first + 1) < 0
+def _build_owner_substring_index(text: str) -> _OwnerSubstringIndex:
+    """Build a capped-occurrence suffix automaton in linear time and space."""
+
+    transitions: list[dict[str, int]] = [{}]
+    links = [-1]
+    lengths = [0]
+    occurrences = [0]
+    last = 0
+
+    for character in text:
+        current = len(transitions)
+        transitions.append({})
+        links.append(0)
+        lengths.append(lengths[last] + 1)
+        occurrences.append(1)
+        predecessor = last
+        while (
+            predecessor >= 0
+            and character not in transitions[predecessor]
+        ):
+            transitions[predecessor][character] = current
+            predecessor = links[predecessor]
+        if predecessor < 0:
+            links[current] = 0
+        else:
+            successor = transitions[predecessor][character]
+            if lengths[predecessor] + 1 == lengths[successor]:
+                links[current] = successor
+            else:
+                clone = len(transitions)
+                transitions.append(transitions[successor].copy())
+                links.append(links[successor])
+                lengths.append(lengths[predecessor] + 1)
+                occurrences.append(0)
+                while (
+                    predecessor >= 0
+                    and transitions[predecessor].get(character) == successor
+                ):
+                    transitions[predecessor][character] = clone
+                    predecessor = links[predecessor]
+                links[successor] = clone
+                links[current] = clone
+        last = current
+
+    length_counts = [0] * (len(text) + 1)
+    for length in lengths:
+        length_counts[length] += 1
+    next_position = [0] * len(length_counts)
+    position = 0
+    for length, count in enumerate(length_counts):
+        next_position[length] = position
+        position += count
+    length_order = [0] * len(transitions)
+    for state, length in enumerate(lengths):
+        length_order[next_position[length]] = state
+        next_position[length] += 1
+    for state in reversed(length_order):
+        suffix = links[state]
+        if suffix >= 0:
+            occurrences[suffix] = min(
+                2, occurrences[suffix] + occurrences[state]
+            )
+
+    return _OwnerSubstringIndex(
+        tuple(MappingProxyType(edges) for edges in transitions),
+        tuple(min(2, count) for count in occurrences),
+    )
+
+
+def _build_owner_view(raw: bytes) -> _OwnerView:
+    raw_sha256 = raw_hash(raw)
+    try:
+        owner_text = raw.decode("utf-8", errors="strict")
+    except UnicodeDecodeError as exc:
+        return _OwnerView(raw_sha256, None, None, exc.start)
+    normalized_owner = normalize_lf(owner_text)
+    return _OwnerView(
+        raw_sha256,
+        normalized_owner,
+        _build_owner_substring_index(normalized_owner),
+        None,
+    )
 
 
 def _matches_text_hash(value: Any, expected: Any) -> bool:
@@ -889,9 +1265,40 @@ def synchronize_owner(
     except Exception:
         return (_issue(issue_path, 0, "KIN-E-QUOTE", "owner source is unreadable"),)
 
+    return _synchronize_owner_payload(
+        raw, issue_path, source, claim, trial, seam
+    )
+
+
+def _synchronize_owner_payload(
+    raw: bytes,
+    issue_path: str,
+    source: Mapping[str, Any],
+    claim: Mapping[str, Any],
+    trial: Mapping[str, Any],
+    seam: Mapping[str, Any],
+) -> tuple[Issue, ...]:
+    """Verify owner-bound records against one already-frozen byte snapshot."""
+
+    return _synchronize_owner_view(
+        _build_owner_view(raw), issue_path, source, claim, trial, seam
+    )
+
+
+def _synchronize_owner_view(
+    owner: _OwnerView,
+    issue_path: str,
+    source: Mapping[str, Any],
+    claim: Mapping[str, Any],
+    trial: Mapping[str, Any],
+    seam: Mapping[str, Any],
+) -> tuple[Issue, ...]:
+    """Verify records against one immutable, indexed owner view."""
+
+    issues: list[Issue] = []
     if source.get("kind") != "OWNER" or source.get("authorityRole") != "SEMANTIC_OWNER":
         issues.append(_issue(issue_path, 0, "KIN-E-QUOTE", "declared source is not a semantic owner"))
-    if source.get("sha256") != raw_hash(raw):
+    if source.get("sha256") != owner.raw_sha256:
         issues.append(_issue(issue_path, 0, "KIN-E-QUOTE", "owner source raw SHA-256 does not match"))
     if claim.get("ownerSourceId") != source.get("id") or seam.get("ownerSource") != source.get("id"):
         issues.append(_issue(issue_path, 0, "KIN-E-QUOTE", "owner source identity does not synchronize"))
@@ -913,14 +1320,25 @@ def synchronize_owner(
     ):
         issues.append(_issue(issue_path, 0, "KIN-E-QUOTE", "seam tried form does not synchronize with its trial"))
 
-    try:
-        owner_text = raw.decode("utf-8", errors="strict")
-    except UnicodeDecodeError as exc:
-        issues.append(_issue(issue_path, exc.start, "KIN-E-QUOTE", "owner source is not strict UTF-8"))
+    if owner.utf8_error_offset is not None:
+        issues.append(_issue(
+            issue_path,
+            owner.utf8_error_offset,
+            "KIN-E-QUOTE",
+            "owner source is not strict UTF-8",
+        ))
         return _ordered(issues)
-    normalized_owner = normalize_lf(owner_text)
+    substring_index = owner.substring_index
+    if owner.normalized_text is None or substring_index is None:
+        issues.append(_issue(
+            issue_path, 0, "KIN-E-QUOTE", "owner source index is unavailable"
+        ))
+        return _ordered(issues)
     anchor = seam.get("ownerAnchor")
-    if not isinstance(anchor, str) or normalize_lf(anchor) not in normalized_owner:
+    if (
+        not isinstance(anchor, str)
+        or substring_index.occurrence_count(normalize_lf(anchor)) == 0
+    ):
         issues.append(_issue(issue_path, 0, "KIN-E-QUOTE", "owner anchor is absent"))
     one_sided = seam.get("status") in _ONE_SIDED_SEAM_STATUSES
     current_field = "beforeQuote" if one_sided else "afterQuote"
@@ -932,7 +1350,7 @@ def synchronize_owner(
         ))
     if (
         not isinstance(current_quote, str)
-        or not _occurs_exactly_once(normalized_owner, normalize_lf(current_quote))
+        or substring_index.occurrence_count(normalize_lf(current_quote)) != 1
     ):
         issues.append(_issue(
             issue_path, 0, "KIN-E-QUOTE",
@@ -1056,6 +1474,113 @@ def _validate_markdown_sync(
     sources = _mapping_records(core, "sources", issues)
     claims = _mapping_records(core, "claims", issues)
     trials = _mapping_records(core, "trials", issues)
+    trials_by_seam_id: dict[str, list[Mapping[str, Any]]] = {}
+    for position, trial in enumerate(trials):
+        seam_id = trial.get("seamId")
+        if not isinstance(seam_id, str):
+            issues.append(_issue(
+                f"core.trials[{position}]", 0, "KIN-E-QUOTE",
+                "trial seamId must be a string",
+            ))
+            continue
+        matching_trials = trials_by_seam_id.setdefault(seam_id, [])
+        if matching_trials:
+            issues.append(_issue(
+                f"core.trials[{position}]", 0, "KIN-E-QUOTE",
+                f"duplicate trial seamId binding: {seam_id}",
+            ))
+        matching_trials.append(trial)
+
+    owner_snapshot_cache: dict[
+        Path, tuple[_OwnerView | None, str | None]
+    ] = {}
+
+    def read_owner_snapshot(
+        source: Mapping[str, Any],
+    ) -> tuple[str, _OwnerView | None, tuple[Issue, ...]]:
+        relative = source.get("path")
+        issue_path = relative if isinstance(relative, str) else "<owner>"
+        if not isinstance(relative, str):
+            return (
+                issue_path,
+                None,
+                (_issue(
+                    issue_path, 0, "KIN-E-QUOTE", "owner source path is absent"
+                ),),
+            )
+        try:
+            owner_path = safe_repo_path(resolved_root, relative)
+        except KintsugiError as exc:
+            return (
+                issue_path,
+                None,
+                (_issue(
+                    issue_path, 0, "KIN-E-QUOTE",
+                    f"unsafe owner path: {exc.message}",
+                ),),
+            )
+        except Exception:
+            return (
+                issue_path,
+                None,
+                (_issue(
+                    issue_path, 0, "KIN-E-QUOTE",
+                    "owner source path cannot be resolved",
+                ),),
+            )
+
+        if owner_path in owner_snapshot_cache:
+            owner_view, error_message = owner_snapshot_cache[owner_path]
+            snapshot_issues = (
+                ()
+                if error_message is None
+                else (_issue(
+                    issue_path, 0, "KIN-E-QUOTE", error_message
+                ),)
+            )
+            return issue_path, owner_view, snapshot_issues
+
+        if owner_path in read_cache:
+            raw = read_cache[owner_path]
+        else:
+            try:
+                is_file = owner_path.is_file()
+            except Exception:
+                error_message = "owner source kind cannot be resolved"
+                owner_snapshot_cache[owner_path] = (None, error_message)
+                return (
+                    issue_path, None,
+                    (_issue(issue_path, 0, "KIN-E-QUOTE", error_message),),
+                )
+            if not is_file:
+                error_message = "owner source does not exist as a file"
+                owner_snapshot_cache[owner_path] = (None, error_message)
+                return (
+                    issue_path, None,
+                    (_issue(issue_path, 0, "KIN-E-QUOTE", error_message),),
+                )
+            try:
+                raw = owner_path.read_bytes()
+            except Exception:
+                error_message = "owner source is unreadable"
+                owner_snapshot_cache[owner_path] = (None, error_message)
+                return (
+                    issue_path, None,
+                    (_issue(issue_path, 0, "KIN-E-QUOTE", error_message),),
+                )
+            read_cache[owner_path] = raw
+
+        try:
+            owner_view = _build_owner_view(raw)
+        except Exception:
+            error_message = "owner source cannot be indexed"
+            owner_snapshot_cache[owner_path] = (None, error_message)
+            return (
+                issue_path, None,
+                (_issue(issue_path, 0, "KIN-E-QUOTE", error_message),),
+            )
+        owner_snapshot_cache[owner_path] = (owner_view, None)
+        return issue_path, owner_view, ()
 
     if ledger_path is not None:
         try:
@@ -1185,7 +1710,7 @@ def _validate_markdown_sync(
             continue
         leaf = leaves[0]
         leaf_id = leaf.get("id")
-        matching_trials = [trial for trial in trials if trial.get("seamId") == leaf_id]
+        matching_trials = trials_by_seam_id.get(leaf_id, [])
         if len(matching_trials) != 1:
             issues.append(_issue(
                 f"seam.{leaf_id}", 0, "KIN-E-QUOTE",
@@ -1201,8 +1726,12 @@ def _validate_markdown_sync(
                 "current leaf seam owner references are unresolved",
             ))
             continue
-        issues.extend(synchronize_owner(
-            resolved_root, source, claim, matching_trials[0], leaf
+        issue_path, owner_view, owner_issues = read_owner_snapshot(source)
+        issues.extend(owner_issues)
+        if owner_view is None:
+            continue
+        issues.extend(_synchronize_owner_view(
+            owner_view, issue_path, source, claim, matching_trials[0], leaf
         ))
 
     return sorted(set(issues))

@@ -3,12 +3,15 @@ from __future__ import annotations
 import copy
 import hashlib
 import inspect
+import itertools
 import json
 import sys
 import tempfile
 import typing
+import unicodedata
 import unittest
 from pathlib import Path
+from unittest import mock
 
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -78,6 +81,78 @@ class RootPathControl:
         raise KeyboardInterrupt
 
 
+class TrialSeamIdProbe(dict):
+    seam_id_reads = 0
+
+    def get(self, key, default=None):
+        if key == "seamId":
+            type(self).seam_id_reads += 1
+        return super().get(key, default)
+
+
+class DecodeProbeBytes(bytes):
+    decode_calls = 0
+
+    def decode(self, *args, **kwargs):
+        type(self).decode_calls += 1
+        return super().decode(*args, **kwargs)
+
+
+def build_shared_owner_core(
+    root: Path, count: int, *, tracked_trials: bool = False
+) -> tuple[dict[str, object], Path]:
+    source, base_claim, base_trial, base_seam, owner = (
+        support.build_owner_sync_fixture(root)
+    )
+    claims = []
+    trials = []
+    seams = []
+    current_quotes = []
+    for index in range(1, count + 1):
+        suffix = f"{index:03}"
+        claim = copy.deepcopy(base_claim)
+        claim["id"] = f"CLM-A-{suffix}"
+        trial = copy.deepcopy(base_trial)
+        trial.update({
+            "id": f"TRL-A-{suffix}",
+            "claimId": claim["id"],
+            "seamId": f"KIN-A-{suffix}",
+        })
+        if tracked_trials:
+            trial = TrialSeamIdProbe(trial)
+        seam = copy.deepcopy(base_seam)
+        current_quote = f"The repaired owner claim {suffix}."
+        seam.update({
+            "id": f"KIN-A-{suffix}",
+            "claimId": claim["id"],
+            "afterQuote": current_quote,
+            "priorSeamIds": [],
+        })
+        claims.append(claim)
+        trials.append(trial)
+        seams.append(seam)
+        current_quotes.append(current_quote)
+
+    raw = (
+        "# Owner\n\n## Synthetic owner anchor\n\n"
+        + "\n".join(current_quotes)
+        + "\n"
+    ).encode("utf-8")
+    owner.write_bytes(raw)
+    source["sha256"] = kernel.raw_hash(raw)
+    core: dict[str, object] = {
+        "sources": [source],
+        "claims": claims,
+        "trials": trials,
+        "seams": seams,
+        "phaseReceipts": [],
+        "reviewAttestations": [],
+        "reviewFindings": [],
+        "reviewAttemptArtifacts": [],
+    }
+    return core, owner
+
+
 class NarrativeHashTests(unittest.TestCase):
     def test_framed_hash_uses_exact_domain_lengths_and_raw_bytes(self):
         prefix = b"alpha\r\n"
@@ -145,6 +220,16 @@ class StableMarkdownApiTests(unittest.TestCase):
             },
         )
 
+        owner_signature = inspect.signature(kernel.synchronize_owner)
+        self.assertEqual(
+            tuple(owner_signature.parameters),
+            ("root", "source", "claim", "trial", "seam"),
+        )
+        self.assertTrue(all(
+            parameter.default is inspect.Parameter.empty
+            for parameter in owner_signature.parameters.values()
+        ))
+
     def test_extract_fenced_json_returns_matching_values_in_source_order_read_only(self):
         first = {"id": "KIN-A-001"}
         second = ["KIN-A-002"]
@@ -172,6 +257,76 @@ class StableMarkdownApiTests(unittest.TestCase):
                 with self.assertRaises(kernel.KintsugiError) as caught:
                     kernel.extract_fenced_json(markdown, fence_kind)
                 self.assertIn(caught.exception.code, {"KIN-E-JSON", "KIN-E-LEDGER"})
+
+
+class JsonIntegerBoundaryTests(unittest.TestCase):
+    def integer_payload(self, digits: int) -> bytes:
+        return (
+            b"```json kintsugi-seam\n{\"n\":"
+            + b"7" * digits
+            + b"}\n```\n"
+        )
+
+    def test_large_integer_rejection_is_independent_of_process_global_limit(self):
+        has_limit = hasattr(sys, "set_int_max_str_digits")
+        original = sys.get_int_max_str_digits() if has_limit else None
+        payload = self.integer_payload(5_000)
+        try:
+            process_limits = (640, 0) if has_limit else (None,)
+            for process_limit in process_limits:
+                with self.subTest(process_limit=process_limit):
+                    if process_limit is not None:
+                        sys.set_int_max_str_digits(process_limit)
+                    with self.assertRaises(kernel.KintsugiError) as caught:
+                        kernel.extract_fenced_json(payload, "kintsugi-seam")
+                    self.assertEqual(caught.exception.code, "KIN-E-JSON")
+        finally:
+            if has_limit:
+                sys.set_int_max_str_digits(original)
+
+    def test_json_integer_uses_a_fixed_4096_digit_ceiling(self):
+        has_limit = hasattr(sys, "set_int_max_str_digits")
+        original = sys.get_int_max_str_digits() if has_limit else None
+        try:
+            process_limits = (640, 0) if has_limit else (None,)
+            for process_limit in process_limits:
+                with self.subTest(process_limit=process_limit):
+                    if process_limit is not None:
+                        sys.set_int_max_str_digits(process_limit)
+                    try:
+                        accepted = kernel.extract_fenced_json(
+                            self.integer_payload(4_096), "kintsugi-seam"
+                        )
+                    except kernel.KintsugiError as exc:
+                        self.fail(
+                            "4096 digits must be accepted independently of "
+                            f"the process limit; got {exc.code}: {exc.message}"
+                        )
+                    self.assertEqual(len(accepted), 1)
+                    self.assertIsInstance(accepted[0]["n"], int)
+                    with self.assertRaises(kernel.KintsugiError) as caught:
+                        kernel.extract_fenced_json(
+                            self.integer_payload(4_097), "kintsugi-seam"
+                        )
+                    self.assertEqual(caught.exception.code, "KIN-E-JSON")
+                    with self.assertRaises(kernel.KintsugiError) as caught:
+                        kernel.extract_fenced_json(
+                            self.integer_payload(5_000), "kintsugi-seam"
+                        )
+                    self.assertEqual(caught.exception.code, "KIN-E-JSON")
+        finally:
+            if has_limit:
+                sys.set_int_max_str_digits(original)
+
+    def test_json_parser_does_not_mask_direct_baseexceptions(self):
+        with mock.patch.object(
+            markdown_module.json, "loads", side_effect=KeyboardInterrupt
+        ):
+            with self.assertRaises(KeyboardInterrupt):
+                kernel.extract_fenced_json(
+                    b"```json kintsugi-seam\n{}\n```\n",
+                    "kintsugi-seam",
+                )
 
 
 class AggregateMarkdownSynchronizationTests(unittest.TestCase):
@@ -321,8 +476,409 @@ class AggregateMarkdownSynchronizationTests(unittest.TestCase):
         with self.assertRaises(KeyboardInterrupt):
             kernel.validate_markdown_sync(RootPathControl(), {}, None)
 
+    def test_current_trial_index_reads_seam_ids_only_linearly(self):
+        for count in (10, 100):
+            with self.subTest(count=count), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                core, _ = build_shared_owner_core(
+                    root, count, tracked_trials=True
+                )
+                TrialSeamIdProbe.seam_id_reads = 0
+
+                issues = kernel.validate_markdown_sync(root, core, None)
+
+                self.assertEqual(issues, [])
+                self.assertLessEqual(
+                    TrialSeamIdProbe.seam_id_reads,
+                    2 * count,
+                    "trial seamId lookups must remain linear",
+                )
+
+    def test_trial_index_reports_malformed_and_duplicate_seam_bindings(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            malformed_core, _ = build_shared_owner_core(root, 1)
+            malformed_core["trials"].append({
+                "id": "TRL-A-BAD",
+                "claimId": "CLM-A-001",
+            })
+
+            malformed = kernel.validate_markdown_sync(
+                root, malformed_core, None
+            )
+
+            self.assertTrue(any(
+                issue.code == "KIN-E-QUOTE"
+                and "trial seamId must be a string" in issue.message
+                for issue in malformed
+            ))
+            self.assertEqual(malformed, sorted(set(malformed)))
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            duplicate_core, _ = build_shared_owner_core(root, 1)
+            duplicate = copy.deepcopy(duplicate_core["trials"][0])
+            duplicate["id"] = "TRL-A-999"
+            duplicate_core["trials"].append(duplicate)
+
+            duplicate_issues = kernel.validate_markdown_sync(
+                root, duplicate_core, None
+            )
+
+            self.assertTrue(any(
+                issue.code == "KIN-E-QUOTE"
+                and "exactly one trial" in issue.message
+                for issue in duplicate_issues
+            ))
+            self.assertEqual(duplicate_issues, sorted(set(duplicate_issues)))
+
+    def test_trial_index_reports_duplicate_binding_off_the_current_leaf(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            core, _ = build_shared_owner_core(root, 1)
+            current = core["seams"][0]
+            historical = copy.deepcopy(current)
+            historical.update({
+                "id": "KIN-A-000",
+                "priorSeamIds": [],
+            })
+            current["priorSeamIds"] = [historical["id"]]
+            core["seams"].append(historical)
+            for suffix in ("001", "002"):
+                historical_trial = copy.deepcopy(core["trials"][0])
+                historical_trial.update({
+                    "id": f"TRL-A-HIST-{suffix}",
+                    "seamId": historical["id"],
+                })
+                core["trials"].append(historical_trial)
+
+            issues = kernel.validate_markdown_sync(root, core, None)
+
+            self.assertTrue(any(
+                issue.code == "KIN-E-QUOTE"
+                and "duplicate trial seamId binding" in issue.message
+                and historical["id"] in issue.message
+                for issue in issues
+            ))
+            self.assertEqual(issues, sorted(set(issues)))
+
+    def test_aggregate_reads_each_shared_owner_once_at_all_scales(self):
+        real_read_bytes = Path.read_bytes
+        for count in (1, 10, 100):
+            with self.subTest(count=count), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                core, owner = build_shared_owner_core(root, count)
+                resolved_owner = owner.resolve()
+                owner_reads = 0
+
+                def counting_read(path):
+                    nonlocal owner_reads
+                    if path.resolve() == resolved_owner:
+                        owner_reads += 1
+                    return real_read_bytes(path)
+
+                with mock.patch.object(Path, "read_bytes", counting_read):
+                    issues = kernel.validate_markdown_sync(root, core, None)
+
+                self.assertEqual(issues, [])
+                self.assertEqual(owner_reads, 1)
+
+    def test_aggregate_owner_checks_share_one_frozen_byte_snapshot(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            core, owner = build_shared_owner_core(root, 2)
+            resolved_owner = owner.resolve()
+            original = owner.read_bytes()
+            owner_reads = 0
+            real_read_bytes = Path.read_bytes
+
+            def changing_read(path):
+                nonlocal owner_reads
+                if path.resolve() != resolved_owner:
+                    return real_read_bytes(path)
+                owner_reads += 1
+                if owner_reads == 1:
+                    return original
+                return b"# Owner changed between verification reads.\n"
+
+            with mock.patch.object(Path, "read_bytes", changing_read):
+                issues = kernel.validate_markdown_sync(root, core, None)
+
+            self.assertEqual(issues, [])
+            self.assertEqual(owner_reads, 1)
+
+    def test_aggregate_derives_shared_owner_bytes_only_once(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            core, owner = build_shared_owner_core(root, 100)
+            resolved_owner = owner.resolve()
+            raw = owner.read_bytes()
+            owner_text = raw.decode("utf-8")
+            probed_raw = DecodeProbeBytes(raw)
+            real_read_bytes = Path.read_bytes
+            real_raw_hash = markdown_module.raw_hash
+            real_normalize_lf = markdown_module.normalize_lf
+            owner_hashes = 0
+            owner_normalizations = 0
+            DecodeProbeBytes.decode_calls = 0
+
+            def probing_read(path):
+                if path.resolve() == resolved_owner:
+                    return probed_raw
+                return real_read_bytes(path)
+
+            def counting_raw_hash(payload):
+                nonlocal owner_hashes
+                if payload is probed_raw:
+                    owner_hashes += 1
+                return real_raw_hash(payload)
+
+            def counting_normalize_lf(text):
+                nonlocal owner_normalizations
+                if text == owner_text:
+                    owner_normalizations += 1
+                return real_normalize_lf(text)
+
+            with (
+                mock.patch.object(Path, "read_bytes", probing_read),
+                mock.patch.object(
+                    markdown_module, "raw_hash", counting_raw_hash
+                ),
+                mock.patch.object(
+                    markdown_module, "normalize_lf", counting_normalize_lf
+                ),
+            ):
+                issues = kernel.validate_markdown_sync(root, core, None)
+
+            self.assertEqual(issues, [])
+            self.assertEqual(
+                (
+                    owner_hashes,
+                    DecodeProbeBytes.decode_calls,
+                    owner_normalizations,
+                ),
+                (1, 1, 1),
+            )
+
+    def test_aggregate_builds_one_owner_view_and_substring_index(self):
+        view_builder = getattr(markdown_module, "_build_owner_view", None)
+        index_builder = getattr(
+            markdown_module, "_build_owner_substring_index", None
+        )
+        self.assertTrue(callable(view_builder), "owner view builder is absent")
+        self.assertTrue(callable(index_builder), "owner index builder is absent")
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            core, _ = build_shared_owner_core(root, 100)
+            with (
+                mock.patch.object(
+                    markdown_module,
+                    "_build_owner_view",
+                    wraps=view_builder,
+                ) as build_view,
+                mock.patch.object(
+                    markdown_module,
+                    "_build_owner_substring_index",
+                    wraps=index_builder,
+                ) as build_index,
+            ):
+                issues = kernel.validate_markdown_sync(root, core, None)
+
+            self.assertEqual(issues, [])
+            self.assertEqual(build_view.call_count, 1)
+            self.assertEqual(build_index.call_count, 1)
+
+    def test_aggregate_owner_view_preserves_overlap_crlf_and_invalid_utf8(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            core, owner = build_shared_owner_core(root, 1)
+            raw = b"# Owner\n\n## Synthetic owner anchor\n\naaaa\n"
+            owner.write_bytes(raw)
+            core["sources"][0]["sha256"] = kernel.raw_hash(raw)
+            core["seams"][0]["afterQuote"] = "aaa"
+
+            overlap = kernel.validate_markdown_sync(root, core, None)
+
+            self.assertTrue(any(
+                issue.code == "KIN-E-QUOTE"
+                and "exactly once" in issue.message
+                for issue in overlap
+            ))
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            core, owner = build_shared_owner_core(root, 2)
+            raw = owner.read_bytes().replace(b"\n", b"\r\n")
+            owner.write_bytes(raw)
+            core["sources"][0]["sha256"] = kernel.raw_hash(raw)
+
+            self.assertEqual(
+                kernel.validate_markdown_sync(root, core, None), []
+            )
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            core, owner = build_shared_owner_core(root, 2)
+            raw = owner.read_bytes() + b"\xff"
+            owner.write_bytes(raw)
+            core["sources"][0]["sha256"] = kernel.raw_hash(raw)
+
+            invalid = kernel.validate_markdown_sync(root, core, None)
+
+            self.assertTrue(invalid)
+            self.assertEqual({issue.code for issue in invalid}, {"KIN-E-QUOTE"})
+            self.assertTrue(any(
+                "strict UTF-8" in issue.message for issue in invalid
+            ))
+
+    def test_resolved_owner_snapshot_skips_repeated_file_kind_checks(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            core, owner = build_shared_owner_core(root, 2)
+            alias = owner.with_name("owner-alias.md")
+            alias.symlink_to(owner)
+            alias_source = copy.deepcopy(core["sources"][0])
+            alias_source.update({
+                "id": "SRC-A-002",
+                "path": alias.relative_to(root).as_posix(),
+            })
+            core["sources"].append(alias_source)
+            core["claims"][1]["ownerSourceId"] = alias_source["id"]
+            core["seams"][1]["ownerSource"] = alias_source["id"]
+            resolved_owner = owner.resolve()
+            owner_kind_checks = 0
+            real_is_file = Path.is_file
+
+            def counting_is_file(path):
+                nonlocal owner_kind_checks
+                if path.resolve() == resolved_owner:
+                    owner_kind_checks += 1
+                return real_is_file(path)
+
+            with mock.patch.object(Path, "is_file", counting_is_file):
+                issues = kernel.validate_markdown_sync(root, core, None)
+
+            self.assertEqual(issues, [])
+            self.assertEqual(owner_kind_checks, 1)
+
+    def test_resolved_owner_snapshot_caches_failed_read_across_aliases(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            core, owner = build_shared_owner_core(root, 2)
+            alias = owner.with_name("owner-alias.md")
+            alias.symlink_to(owner)
+            alias_source = copy.deepcopy(core["sources"][0])
+            alias_source.update({
+                "id": "SRC-A-002",
+                "path": alias.relative_to(root).as_posix(),
+            })
+            core["sources"].append(alias_source)
+            core["claims"][1]["ownerSourceId"] = alias_source["id"]
+            core["seams"][1]["ownerSource"] = alias_source["id"]
+            resolved_owner = owner.resolve()
+            owner_read_attempts = 0
+            real_read_bytes = Path.read_bytes
+
+            def failing_read(path):
+                nonlocal owner_read_attempts
+                if path.resolve() == resolved_owner:
+                    owner_read_attempts += 1
+                    raise OSError("synthetic owner read failure")
+                return real_read_bytes(path)
+
+            with mock.patch.object(Path, "read_bytes", failing_read):
+                issues = kernel.validate_markdown_sync(root, core, None)
+
+            self.assertEqual(owner_read_attempts, 1)
+            self.assertEqual(
+                {issue.path.split("@", 1)[0] for issue in issues},
+                {
+                    core["sources"][0]["path"],
+                    alias_source["path"],
+                },
+            )
+            self.assertTrue(all(
+                issue.code == "KIN-E-QUOTE"
+                and "unreadable" in issue.message
+                for issue in issues
+            ))
+
 
 class LedgerSynchronizationTests(unittest.TestCase):
+    def container_variants(self):
+        for newline in (b"\n", b"\r\n"):
+            for marker in (b"````", b"~~~"):
+                for indent in range(4):
+                    yield newline, marker, b" " * indent
+
+    def test_literal_heading_cannot_supply_a_live_seam_section(self):
+        seam = seam_record()
+        for newline, marker, indent in self.container_variants():
+            with self.subTest(
+                newline=newline, marker=marker, indent=len(indent)
+            ):
+                payload = (
+                    b"# Ledger" + newline + newline
+                    + indent + marker + b"text" + newline
+                    + b"## KIN-A-001" + newline
+                    + indent + marker + newline
+                    + b"Narrative only." + newline
+                    + support.markdown_fence(
+                        "kintsugi-seam", seam, newline=newline
+                    )
+                )
+
+                result = kernel.synchronize_ledger_markdown(payload, [seam])
+
+                self.assertTrue(result.issues)
+                self.assertTrue(any(
+                    issue.code == "KIN-E-LEDGER"
+                    and "missing ledger section" in issue.message
+                    for issue in result.issues
+                ))
+
+    def test_enclosed_literal_heading_and_role_are_never_machine_records(self):
+        seam = seam_record()
+        for newline, marker, indent in self.container_variants():
+            with self.subTest(
+                newline=newline, marker=marker, indent=len(indent)
+            ):
+                payload = (
+                    b"# Ledger" + newline + newline
+                    + indent + marker + b"text" + newline
+                    + b"## KIN-A-001" + newline
+                    + support.markdown_fence(
+                        "kintsugi-seam", seam, newline=newline
+                    )
+                    + indent + marker + newline
+                )
+
+                result = kernel.synchronize_ledger_markdown(payload, [seam])
+
+                self.assertTrue(result.issues)
+                self.assertEqual(
+                    kernel.extract_fenced_json(payload, "kintsugi-seam"), []
+                )
+
+    def test_literal_example_headings_do_not_create_extra_sections(self):
+        seam = seam_record()
+        for newline, marker, indent in self.container_variants():
+            with self.subTest(
+                newline=newline, marker=marker, indent=len(indent)
+            ):
+                payload = support.build_ledger_markdown(
+                    [seam], newline=newline
+                ) + (
+                    newline
+                    + indent + marker + b"text" + newline
+                    + b"## KIN-A-999" + newline
+                    + indent + marker + newline
+                )
+
+                result = kernel.synchronize_ledger_markdown(payload, [seam])
+
+                self.assertEqual(result.issues, ())
+
     def test_lf_and_crlf_fence_boundaries_are_excluded_from_narrative_hash(self):
         seam = seam_record()
         for newline in (b"\n", b"\r\n"):
@@ -496,6 +1052,7 @@ class LedgerSynchronizationTests(unittest.TestCase):
             b"```json\n{}\n```\n",
             b"```json\tkintsugi-seam\n{}\n```\n",
             b"```JSON kintsugi-seam\n{}\n```\n",
+            b"```json kintsugi-seam`\n{}\n```\n",
         )
         for malformed in malformed_fences:
             with self.subTest(opener=malformed.splitlines()[0]):
@@ -817,6 +1374,167 @@ class ReceiptSynchronizationTests(unittest.TestCase):
         )
         self.assertEqual(result.issues, ())
 
+    def test_frozen_receipt_rejects_rendered_equivalent_control_bypasses(self):
+        receipt = support.build_core_data()["phaseReceipts"][0]
+        bypass_lines = (
+            "# Kintsugi Ph**ase** A re**ceipt**",
+            "## Re**ceipt** ID: REC-A-108",
+            "The re**view** passed.",
+            "Sta\u200btus: VERIFIED",
+            "St&#97;tus: VERIFIED",
+            "St&#x61;tus: VERIFIED",
+            "Sta&ZeroWidthSpace;tus: VERIFIED",
+            "Ｓｔａｔｕｓ: VERIFIED",
+            "The audit passed.",
+            "The attestation approved it.",
+            "The verdict was PASS.",
+            "The checker signed off.",
+            "The validation succeeded.",
+            "The target is frozen.",
+            "The artifact is final.",
+            "The package passed.",
+            "The bundle was finalized.",
+            "The outcome was approved.",
+            "The target is not approved.",
+            "The artifact was formally finalized.",
+            "The package has now been fully accepted.",
+            "The outcome was definitively rejected.",
+            "Bundle=bundle.json",
+            "Target=KIN-A-001",
+            "Outcome=PASSING-CANDIDATE",
+            "Bundle\t=\tbundle.json",
+            "Bundle : bundle.json",
+            "The target is being reviewed.",
+            "The artifact was audited.",
+            "The bundle has been validated.",
+            "The outcome is being checked.",
+        )
+        for line in bypass_lines:
+            with self.subTest(line=line):
+                payload = support.build_receipt_markdown(
+                    receipt,
+                    prefix=(
+                        "# Synthetic receipt\n\n" + line + "\n"
+                    ).encode("utf-8"),
+                )
+
+                result = kernel.synchronize_receipt_markdown(
+                    payload, receipt, target_frozen=True
+                )
+
+                self.assertTrue(any(
+                    issue.code == "KIN-E-LEDGER"
+                    and "dynamic receipt prose" in issue.message
+                    for issue in result.issues
+                ))
+
+    def test_frozen_receipt_rejects_unsupported_rendered_split_constructs(self):
+        receipt = support.build_core_data()["phaseReceipts"][0]
+        for line in (
+            "The re[vi](x)ew passed.",
+            "The re<span>view passed.",
+            "The re[vi][x]ew passed.\n[x]: https://example.test/",
+            "The re[vi]ew passed.\n[vi]: https://example.test/",
+            "The re<span\nclass=x>view passed.",
+            "The re<!--\n-->view passed.",
+            "The re<!-- <3 -->view passed.",
+            "The re<!-- <3\n-->view passed.",
+        ):
+            with self.subTest(line=line):
+                result = kernel.synchronize_receipt_markdown(
+                    support.build_receipt_markdown(
+                        receipt,
+                        prefix=(
+                            "# Synthetic receipt\n\n" + line + "\n"
+                        ).encode("utf-8"),
+                    ),
+                    receipt,
+                    target_frozen=True,
+                )
+
+                self.assertTrue(any(
+                    issue.code == "KIN-E-LEDGER"
+                    and "bounded lexical grammar" in issue.message
+                    for issue in result.issues
+                ))
+
+        ordinary = kernel.synchronize_receipt_markdown(
+            support.build_receipt_markdown(
+                receipt,
+                prefix=(
+                    b"# Synthetic receipt\n\n"
+                    b"The surviving claim remains bounded by sourced evidence.\n"
+                    b"The admissible interval is [0, 1]\n"
+                ),
+            ),
+            receipt,
+            target_frozen=True,
+        )
+        self.assertEqual(ordinary.issues, ())
+
+    def test_receipt_projection_rechecks_bound_after_nfkc_expansion(self):
+        receipt = support.build_core_data()["phaseReceipts"][0]
+        bound = markdown_module._MAX_RECEIPT_PROJECTION_CHARS
+        ligature = "\ufdfa"
+        expanded = unicodedata.normalize("NFKC", ligature)
+        repeats = bound // len(expanded) + 1
+        line = ligature * repeats
+        self.assertLessEqual(len(line), bound)
+        self.assertGreater(len(unicodedata.normalize("NFKC", line)), bound)
+
+        result = kernel.synchronize_receipt_markdown(
+            support.build_receipt_markdown(
+                receipt,
+                prefix=(
+                    "# Synthetic receipt\n\n" + line + "\n"
+                ).encode("utf-8"),
+            ),
+            receipt,
+            target_frozen=True,
+        )
+
+        self.assertTrue(any(
+            issue.code == "KIN-E-LEDGER"
+            and "bounded lexical grammar" in issue.message
+            for issue in result.issues
+        ))
+
+    def test_frozen_receipt_lexical_grammar_preserves_ordinary_narrative(self):
+        receipt = support.build_core_data()["phaseReceipts"][0]
+        ordinary_lines = (
+            "The digestive evidence remains narrowly bounded.",
+            "The logical relation remains conjectural.",
+            "The vector bundle remains topologically nontrivial.",
+            "The aggregate remains bounded by biological evidence.",
+            "The target is a geometric point in the diagram.",
+            "The artifact depicts a historical vessel.",
+            "The package contains source material.",
+            "The outcome variable remains undefined.",
+            "Truth remains a philosophical question.",
+            "Beauty remains a contested category.",
+            "Justice remains a substantive human concern.",
+            "The target is a geometric point in the final diagram.",
+            "The artifact depicts the final voyage of a historical vessel.",
+            "The package contains an essay whose draft remains in the archive.",
+            "Truth remains a philosophical question after the draft essay.",
+        )
+        hashes = []
+        for line in ordinary_lines:
+            with self.subTest(line=line):
+                result = kernel.synchronize_receipt_markdown(
+                    support.build_receipt_markdown(
+                        receipt,
+                        prefix=(
+                            "# Synthetic receipt\n\n" + line + "\n"
+                        ).encode("utf-8"),
+                    ),
+                    receipt,
+                    target_frozen=True,
+                )
+                self.assertEqual(result.issues, ())
+                hashes.append(result.narrative_raw_sha256)
+        self.assertEqual(len(hashes), len(set(hashes)))
+
     def test_receipt_missing_duplicate_wrong_malformed_and_drift_are_rejected(self):
         receipt = support.build_core_data()["phaseReceipts"][0]
         valid = support.build_receipt_markdown(receipt)
@@ -966,6 +1684,36 @@ class ReviewAndQueueSynchronizationTests(unittest.TestCase):
 
 
 class OwnerSynchronizationTests(unittest.TestCase):
+    def test_owner_substring_index_matches_bounded_overlapping_oracle(self):
+        def capped_naive_count(text: str, pattern: str) -> int:
+            count = 0
+            start = 0
+            while count < 2:
+                position = text.find(pattern, start)
+                if position < 0:
+                    break
+                count += 1
+                start = position + 1
+            return count
+
+        alphabet = "aβ"
+        for text_length in range(7):
+            for text_chars in itertools.product(
+                alphabet, repeat=text_length
+            ):
+                text = "".join(text_chars)
+                index = markdown_module._build_owner_substring_index(text)
+                for pattern_length in range(1, 5):
+                    for pattern_chars in itertools.product(
+                        alphabet, repeat=pattern_length
+                    ):
+                        pattern = "".join(pattern_chars)
+                        self.assertEqual(
+                            index.occurrence_count(pattern),
+                            capped_naive_count(text, pattern),
+                            (text, pattern),
+                        )
+
     def test_crlf_owner_uses_raw_source_hash_lf_quote_hashes_and_never_writes(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
