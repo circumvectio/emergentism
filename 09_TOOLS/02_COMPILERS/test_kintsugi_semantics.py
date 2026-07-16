@@ -557,6 +557,33 @@ class ModalityAndEvidenceTests(unittest.TestCase):
             "reviewAttemptId": attempt_id,
         })
 
+    def _append_draft_phase_b_claim(self, core):
+        vessel = support.build_core_data()
+        manifest = copy.deepcopy(vessel["manifests"][0])
+        source = copy.deepcopy(vessel["sources"][0])
+        claim = copy.deepcopy(vessel["claims"][0])
+        trial = copy.deepcopy(vessel["trials"][0])
+        receipt = copy.deepcopy(vessel["phaseReceipts"][0])
+        manifest.update({
+            "finalFiles": [],
+            "finalFileCount": 0,
+            "harvestedClaimIds": [claim["id"]],
+            "eligibleClaimCount": 1,
+            "trialedClaimIds": [claim["id"]],
+            "trialedClaimCount": 1,
+            "closureOnlyPaths": [],
+        })
+        receipt.update({
+            "claimIds": [claim["id"]],
+            "trialIds": [trial["id"]],
+        })
+        core["manifests"].append(manifest)
+        core["sources"].append(source)
+        core["claims"].append(claim)
+        core["trials"].append(trial)
+        core["phaseReceipts"].append(receipt)
+        return manifest, claim
+
     def _select_phase_b_with_phase_a_dependency(self, core, *, verified):
         target = core["claims"][0]
         clean_target_trial = copy.deepcopy(next(
@@ -699,13 +726,70 @@ class ModalityAndEvidenceTests(unittest.TestCase):
                         "KIN-E-VERDICT", codes(validate(dependency, phase="B"))
                     )
 
-    def test_bare_multi_phase_validation_unions_each_receipts_admissible_evidence(self):
+    def test_bare_multi_phase_validation_preserves_each_receipts_admissible_evidence(self):
         core = support.build_semantic_core()
         self._select_phase_b_with_phase_a_dependency(core, verified=True)
         self.assertSchemaValid(core)
 
+        self.assertEqual(validate(core, phase="A"), [])
         self.assertEqual(validate(core, phase="B"), [])
         self.assertEqual(validate(core, phase=None), [])
+
+    def test_bare_validation_does_not_launder_future_or_unrelated_receipt_support(self):
+        core = support.build_semantic_core()
+        self._verify_phase_a_receipt(core)
+        _, supporting = self._append_draft_phase_b_claim(core)
+        target = core["claims"][0]
+        target["supportLinks"] = [{
+            "id": "SUP-KIN-A-900",
+            "supportingClaimId": supporting["id"],
+            "mode": "CORROBORATION",
+            "independenceStatus": "NOT_INDEPENDENT",
+            "evidenceCeiling": "A",
+            "rationale": "A future unrelated receipt cannot support its Phase-A predecessor.",
+        }]
+        link_path = "core.claims[0].supportLinks[0]"
+
+        self.assertSchemaValid(core)
+        self.assertTrue(any(
+            issue.path == link_path and issue.code == "KIN-E-VERDICT"
+            for issue in validate(core, phase="A")
+        ))
+        self.assertFalse(any(
+            issue.path == link_path for issue in validate(core, phase="B")
+        ))
+        self.assertTrue(any(
+            issue.path == link_path and issue.code == "KIN-E-VERDICT"
+            for issue in validate(core, phase=None)
+        ))
+
+    def test_bare_validation_rejects_excluded_or_unverified_cross_phase_support(self):
+        rows = []
+        excluded = support.build_semantic_core()
+        self._select_phase_b_with_phase_a_dependency(excluded, verified=True)
+        supporting_id = excluded["claims"][1]["id"]
+        excluded["manifests"][1]["excludedClaimIds"].append({
+            "claimId": supporting_id,
+            "reason": "Phase B explicitly excludes this cross-phase support.",
+        })
+        rows.append(("excluded", excluded))
+
+        unverified = support.build_semantic_core()
+        self._select_phase_b_with_phase_a_dependency(unverified, verified=False)
+        rows.append(("unverified dependency", unverified))
+
+        link_path = "core.claims[0].supportLinks[0]"
+        for label, core in rows:
+            with self.subTest(label=label):
+                self.assertSchemaValid(core)
+                self.assertTrue(any(
+                    issue.path == link_path and issue.code == "KIN-E-VERDICT"
+                    for issue in validate(core, phase="B")
+                ))
+                self.assertTrue(any(
+                    issue.path == link_path and issue.code == "KIN-E-VERDICT"
+                    for issue in validate(core, phase=None)
+                ))
 
     def test_retier_preserves_a_live_lifecycle_and_cannot_launder_retirement(self):
         rows = []

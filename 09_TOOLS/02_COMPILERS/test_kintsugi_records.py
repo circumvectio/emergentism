@@ -454,6 +454,62 @@ def long_failed_review_chain(core, *, count):
     )
 
 
+def many_process_invalid_dispositions(core, *, count):
+    """Install many process findings that share one successor final snapshot."""
+    predecessor, successor, finding, attestation, disposition = fail_then_successor(core)
+    manifest = core["manifests"][0]
+    receipt = core["phaseReceipts"][0]
+    subject_path = manifest["includedFiles"][0]["path"]
+    extra_files = [
+        {
+            "path": f"03_METHODOLOGY/process-evidence-{number:05d}.md",
+            "kind": "FILE",
+            "sha256": support.RAW_HASH,
+        }
+        for number in range(1, count + 1)
+    ]
+    manifest["candidateFiles"].extend(copy.deepcopy(extra_files))
+    manifest["candidateFileCount"] = len(manifest["candidateFiles"])
+    manifest["includedFiles"].extend(copy.deepcopy(extra_files))
+    manifest["eligibleFileCount"] = len(manifest["includedFiles"])
+    manifest["scannedFileCount"] = len(manifest["candidateFiles"])
+    manifest["finalFiles"] = copy.deepcopy(manifest["includedFiles"])
+    manifest["finalFileCount"] = len(manifest["finalFiles"])
+
+    findings = []
+    dispositions = []
+    for ordinal in range(1, count + 1):
+        finding_id = f"FND-A-{ordinal:05d}"
+        next_finding = copy.deepcopy(finding)
+        next_finding.update({
+            "id": finding_id,
+            "statement": f"Process finding {ordinal} remains open.",
+            "subjectPaths": [subject_path],
+        })
+        findings.append(next_finding)
+        next_disposition = copy.deepcopy(disposition)
+        next_disposition.update({
+            "id": f"RFD-{successor['id']}-{ordinal:03d}",
+            "findingId": finding_id,
+            "disposition": "PROCESS_INVALID",
+            "rationale": "The predecessor review artifact proves the process defect.",
+            "claimIds": [],
+            "ledgerSectionIds": [],
+            "evidenceFiles": [{
+                "path": predecessor["reviewTargetPath"],
+                "sha256": support.RAW_HASH,
+            }],
+        })
+        dispositions.append(next_disposition)
+
+    attestation["findingIds"] = [item["id"] for item in findings]
+    attestation["openSevereFindingIds"] = list(attestation["findingIds"])
+    core["reviewFindings"] = findings
+    core["reviewFindingDispositions"] = dispositions
+    receipt["reviewAttemptId"] = successor["id"]
+    return manifest
+
+
 class CountingDict(dict):
     def __init__(self, *args, counter, **kwargs):
         super().__init__(*args, **kwargs)
@@ -482,6 +538,17 @@ class SubjectCountingList(list):
     def __iter__(self):
         if self.counter["review_subject_active"]:
             self.counter["claim_membership_scans"] += 1
+        return super().__iter__()
+
+
+class ProcessEvidenceCountingList(list):
+    def __init__(self, *args, counter, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.counter = counter
+
+    def __iter__(self):
+        if self.counter["review_history_active"]:
+            self.counter["final_file_steps"] += len(self)
         return super().__iter__()
 
 
@@ -779,6 +846,33 @@ class ReceiptBindingAndBootstrapTests(unittest.TestCase):
             with self.subTest(label=label):
                 self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", mutated), ())
                 self.assertIn("KIN-E-RECEIPT", codes(validate(mutated, phase="A")))
+
+    def test_phase_a_binding_hash_cannot_be_laundered_by_a_later_trial(self):
+        core = support.build_semantic_core()
+        passed_attempt(core, receipt_status="VERIFIED")
+        manifest_b, _, trial_b, receipt_b = append_draft_phase(core, "B")
+        target = core["claims"][0]
+        phase_a_trial = next(
+            item for item in core["trials"] if item["claimId"] == target["id"]
+        )
+        frozen_hash = core["manifests"][0]["requiredClaimBindings"][0]["targetHash"]
+        phase_a_trial["triedHash"] = support.TEXT_HASH
+        trial_b.update({"claimId": target["id"], "triedHash": frozen_hash})
+        manifest_b.update({
+            "harvestedClaimIds": [target["id"]],
+            "trialedClaimIds": [target["id"]],
+        })
+        receipt_b["claimIds"] = [target["id"]]
+        owner = next(
+            item for item in core["sources"]
+            if item["id"] == target["ownerSourceId"]
+        )
+        owner["phases"] = sorted(set(owner["phases"] + ["B"]))
+
+        self.assertEqual(kernel.validate_schema_instance(SCHEMA, "coreData", core), ())
+        for phase in ("A", "B", None):
+            with self.subTest(phase=phase):
+                self.assertIn("KIN-E-RECEIPT", codes(validate(core, phase=phase)))
 
     def test_phase_b_and_c_forbid_phase_a_requirement_bindings(self):
         for phase in ("B", "C"):
@@ -1303,6 +1397,41 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
             self.assertEqual(validate(core, phase="A"), [])
 
         self.assertEqual(counter["claim_membership_scans"], 1, counter)
+
+    def test_process_invalid_final_inventory_is_scanned_once_per_attempt_pair(self):
+        schema_probe = support.build_semantic_core()
+        many_process_invalid_dispositions(schema_probe, count=25)
+        self.assertEqual(
+            kernel.validate_schema_instance(SCHEMA, "coreData", schema_probe), ()
+        )
+        self.assertEqual(validate(schema_probe, phase="A"), [])
+
+        count = 200
+        core = support.build_semantic_core()
+        manifest = many_process_invalid_dispositions(core, count=count)
+        counter = {"review_history_active": False, "final_file_steps": 0}
+        manifest["finalFiles"] = ProcessEvidenceCountingList(
+            manifest["finalFiles"], counter=counter
+        )
+        original_validate_review_history = records_module._validate_review_history
+
+        def counted_validate_review_history(value, indexes):
+            counter["review_history_active"] = True
+            try:
+                return original_validate_review_history(value, indexes)
+            finally:
+                counter["review_history_active"] = False
+
+        with mock.patch.object(
+            records_module,
+            "_validate_review_history",
+            counted_validate_review_history,
+        ):
+            self.assertEqual(validate(core, phase="A"), [])
+
+        self.assertLessEqual(
+            counter["final_file_steps"], 3 * len(manifest["finalFiles"]), counter
+        )
 
     def test_attestation_finding_disposition_and_typed_endpoints_resolve_exactly(self):
         core = support.build_semantic_core()

@@ -613,6 +613,7 @@ def _validate_bindings(core: dict[str, Any], indexes: dict[str, dict[str, dict[s
     result: list[Issue] = []
     claims = indexes["claims"]
     sources = indexes["sources"]
+    receipts = indexes["phaseReceipts"]
     trials_by_claim: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for trial in items(core, "trials"):
         if isinstance(trial.get("claimId"), str):
@@ -670,12 +671,29 @@ def _validate_bindings(core: dict[str, Any], indexes: dict[str, dict[str, dict[s
             ):
                 result.append(issue(path, "KIN-E-RECEIPT", "binding does not match the frozen owner fingerprint"))
             if items(core, "trials"):
+                canonical_receipt_id, canonical_path, canonical_dependencies = (
+                    RECEIPT_IDENTITIES["A"]
+                )
+                canonical_receipt = receipts.get(canonical_receipt_id)
+                canonical_trial_ids = set()
+                if canonical_receipt is not None and (
+                    canonical_receipt.get("path") == canonical_path
+                    and tuple(canonical_receipt.get("dependsOnReceiptIds", []))
+                    == canonical_dependencies
+                    and canonical_receipt.get("manifestId") == manifest.get("id")
+                    and canonical_receipt.get("phase") == "A"
+                    and claim_id in canonical_receipt.get("claimIds", [])
+                ):
+                    canonical_trial_ids = set(canonical_receipt.get("trialIds", []))
                 matching_trials = [
                     trial for trial in trials_by_claim.get(claim_id, [])
                     if trial.get("triedHash") == expected_hash
+                    and trial.get("manifestId") == manifest.get("id")
+                    and trial.get("receiptId") == canonical_receipt_id
+                    and trial.get("id") in canonical_trial_ids
                 ]
                 if len(matching_trials) != 1:
-                    result.append(issue(path, "KIN-E-RECEIPT", "binding requires one uniquely matching tried quote hash"))
+                    result.append(issue(path, "KIN-E-RECEIPT", "binding requires one uniquely matching Phase-A-owned tried quote hash"))
     return result
 
 
@@ -1135,6 +1153,9 @@ def _validate_review_history(core: dict[str, Any], indexes: dict[str, dict[str, 
     dispositions = items(core, "reviewFindingDispositions")
     dispositions_by_pair: Counter[tuple[Any, Any]] = Counter()
     dispositions_by_successor: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    allowed_process_evidence_by_pair: dict[
+        tuple[Any, Any], set[tuple[Any, Any]]
+    ] = {}
     for position, disposition in enumerate(dispositions):
         base = f"core.reviewFindingDispositions[{position}]"
         successor_attempt_id = disposition.get("successorAttemptId")
@@ -1187,29 +1208,35 @@ def _validate_review_history(core: dict[str, Any], indexes: dict[str, dict[str, 
         ):
             result.append(issue(base, "KIN-E-STATE", "PROCESS_INVALID requires only hash-bound process evidence"))
         if kind == "PROCESS_INVALID":
-            allowed_evidence: set[tuple[Any, Any]] = set()
-            predecessor_artifact = artifacts.get(predecessor.get("id"), {})
-            for path_field, hash_field in (
-                ("reviewTargetPath", "reviewTargetSha256"),
-                ("logicReviewPath", "logicReviewSha256"),
-                ("btjReviewPath", "btjReviewSha256"),
-            ):
-                digest = predecessor_artifact.get(hash_field)
-                if digest is not None:
-                    allowed_evidence.add((predecessor.get(path_field), digest))
-            successor_receipt = receipts.get(successor.get("receiptId"))
-            successor_manifest = (
-                manifests.get(successor_receipt.get("manifestId"))
-                if successor_receipt is not None else None
-            )
-            if successor_manifest is not None:
-                closure_paths = set(successor_manifest.get("closureOnlyPaths", []))
-                for file_record in successor_manifest.get("finalFiles", []):
-                    if (
-                        isinstance(file_record, dict)
-                        and file_record.get("path") not in closure_paths
-                    ):
-                        allowed_evidence.add((file_record.get("path"), file_record.get("sha256")))
+            process_pair = (predecessor.get("id"), successor.get("id"))
+            allowed_evidence = allowed_process_evidence_by_pair.get(process_pair)
+            if allowed_evidence is None:
+                allowed_evidence = set()
+                predecessor_artifact = artifacts.get(predecessor.get("id"), {})
+                for path_field, hash_field in (
+                    ("reviewTargetPath", "reviewTargetSha256"),
+                    ("logicReviewPath", "logicReviewSha256"),
+                    ("btjReviewPath", "btjReviewSha256"),
+                ):
+                    digest = predecessor_artifact.get(hash_field)
+                    if digest is not None:
+                        allowed_evidence.add((predecessor.get(path_field), digest))
+                successor_receipt = receipts.get(successor.get("receiptId"))
+                successor_manifest = (
+                    manifests.get(successor_receipt.get("manifestId"))
+                    if successor_receipt is not None else None
+                )
+                if successor_manifest is not None:
+                    closure_paths = set(successor_manifest.get("closureOnlyPaths", []))
+                    for file_record in successor_manifest.get("finalFiles", []):
+                        if (
+                            isinstance(file_record, dict)
+                            and file_record.get("path") not in closure_paths
+                        ):
+                            allowed_evidence.add((
+                                file_record.get("path"), file_record.get("sha256")
+                            ))
+                allowed_process_evidence_by_pair[process_pair] = allowed_evidence
             for evidence in disposition.get("evidenceFiles", []):
                 if not isinstance(evidence, dict) or (
                     evidence.get("path"), evidence.get("sha256")

@@ -277,9 +277,6 @@ def _admissible_evidence_trials(
             )
         )
     ]
-    if receipt_id is None and phase is None:
-        selected = list(receipts.values())
-
     result: dict[str, set[str]] = {}
 
     def add_transport(receipt: dict[str, Any], *, dependency: bool) -> None:
@@ -322,6 +319,10 @@ def _admissible_evidence_trials(
             dependency_receipt = receipts.get(dependency_id)
             if dependency_receipt is not None:
                 add_transport(dependency_receipt, dependency=True)
+        selected_manifest = manifests.get(receipt.get("manifestId"))
+        if selected_manifest is not None:
+            for claim_id in _excluded_claim_ids(selected_manifest):
+                result.pop(claim_id, None)
     return result
 
 
@@ -345,15 +346,37 @@ def _supporting_trial(
 def _validate_claims(core: dict[str, Any], *, phase: str | None) -> list[Issue]:
     result: list[Issue] = []
     claims = _index(core, "claims")
+    receipts = _records(core, "phaseReceipts")
     trials_by_claim: dict[str, list[dict[str, Any]]] = {}
     for trial in _records(core, "trials"):
         claim_id = trial.get("claimId")
         if isinstance(claim_id, str):
             trials_by_claim.setdefault(claim_id, []).append(trial)
-    admissible_trial_ids = _admissible_evidence_trials(core, phase=phase)
+    admissibility_by_claim: dict[str, list[dict[str, set[str]]]] = {}
+    if phase is None:
+        admissibility_by_receipt: dict[str, dict[str, set[str]]] = {}
+        for receipt in receipts:
+            receipt_id = receipt.get("id")
+            if isinstance(receipt_id, str):
+                admissibility_by_receipt[receipt_id] = _admissible_evidence_trials(
+                    core, receipt_id=receipt_id
+                )
+        for receipt in receipts:
+            context = admissibility_by_receipt.get(receipt.get("id"))
+            if context is None:
+                continue
+            for claim_id in receipt.get("claimIds", []):
+                if isinstance(claim_id, str):
+                    admissibility_by_claim.setdefault(claim_id, []).append(context)
+    else:
+        selected_context = _admissible_evidence_trials(core, phase=phase)
 
     for position, claim in enumerate(_records(core, "claims")):
         base = f"core.claims[{position}]"
+        admissibility_contexts = (
+            admissibility_by_claim.get(claim.get("id"), [])
+            if phase is None else [selected_context]
+        )
         is_normative = claim.get("claimType") == "NORMATIVE" or claim.get("modality") == "NORMATIVE"
         if is_normative:
             normative_premise = any(
@@ -426,9 +449,16 @@ def _validate_claims(core: dict[str, Any], *, phase: str | None) -> list[Issue]:
             if not ceiling_valid:
                 continue
             target_a = ceiling == "A"
-            if support_evidence.get("lifecycle") != "ACTIVE" or not _supporting_trial(
-                supporting.get("id"), trials_by_claim, target_a=target_a,
-                admissible_trial_ids=admissible_trial_ids,
+            support_is_admissible = bool(admissibility_contexts) and all(
+                _supporting_trial(
+                    supporting.get("id"), trials_by_claim, target_a=target_a,
+                    admissible_trial_ids=context,
+                )
+                for context in admissibility_contexts
+            )
+            if (
+                support_evidence.get("lifecycle") != "ACTIVE"
+                or not support_is_admissible
             ):
                 result.append(_issue(path, "KIN-E-VERDICT", "supporting claim lacks one closed admissible active trial"))
             if target_a and (
