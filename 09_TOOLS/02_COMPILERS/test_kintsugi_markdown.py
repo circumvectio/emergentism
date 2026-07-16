@@ -2,15 +2,18 @@ from __future__ import annotations
 
 import copy
 import hashlib
+import inspect
 import json
 import sys
 import tempfile
+import typing
 import unittest
 from pathlib import Path
 
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import kintsugi_kernel as kernel
+import kintsugi_kernel.markdown as markdown_module
 import kintsugi_test_support as support
 
 
@@ -65,6 +68,16 @@ class LengthControl:
         raise KeyboardInterrupt
 
 
+class RootPathBoom:
+    def __fspath__(self):
+        raise RuntimeError("root path boom")
+
+
+class RootPathControl:
+    def __fspath__(self):
+        raise KeyboardInterrupt
+
+
 class NarrativeHashTests(unittest.TestCase):
     def test_framed_hash_uses_exact_domain_lengths_and_raw_bytes(self):
         prefix = b"alpha\r\n"
@@ -96,6 +109,217 @@ class NarrativeHashTests(unittest.TestCase):
 
         with self.assertRaises(KeyboardInterrupt):
             kernel.framed_narrative_hash(LengthControl(), b"")
+
+
+class StableMarkdownApiTests(unittest.TestCase):
+    def test_stable_markdown_apis_have_exact_signatures_and_package_exports(self):
+        self.assertIs(kernel.extract_fenced_json, markdown_module.extract_fenced_json)
+        self.assertIs(kernel.validate_markdown_sync, markdown_module.validate_markdown_sync)
+
+        extract_signature = inspect.signature(kernel.extract_fenced_json)
+        self.assertEqual(tuple(extract_signature.parameters), ("markdown", "fence_kind"))
+        self.assertTrue(all(
+            parameter.default is inspect.Parameter.empty
+            for parameter in extract_signature.parameters.values()
+        ))
+        self.assertEqual(
+            typing.get_type_hints(kernel.extract_fenced_json),
+            {"markdown": bytes, "fence_kind": str, "return": list[object]},
+        )
+
+        validate_signature = inspect.signature(kernel.validate_markdown_sync)
+        self.assertEqual(
+            tuple(validate_signature.parameters), ("root", "core", "ledger_path")
+        )
+        self.assertTrue(all(
+            parameter.default is inspect.Parameter.empty
+            for parameter in validate_signature.parameters.values()
+        ))
+        self.assertEqual(
+            typing.get_type_hints(kernel.validate_markdown_sync),
+            {
+                "root": Path,
+                "core": dict[str, object],
+                "ledger_path": Path | None,
+                "return": list[kernel.Issue],
+            },
+        )
+
+    def test_extract_fenced_json_returns_matching_values_in_source_order_read_only(self):
+        first = {"id": "KIN-A-001"}
+        second = ["KIN-A-002"]
+        payload = (
+            support.markdown_fence("kintsugi-seam", first)
+            + support.markdown_fence("kintsugi-receipt", {"id": "REC-A-001"})
+            + support.markdown_fence("kintsugi-seam", second)
+        )
+        before = bytes(payload)
+
+        self.assertEqual(
+            kernel.extract_fenced_json(payload, "kintsugi-seam"),
+            [first, second],
+        )
+        self.assertEqual(payload, before)
+
+    def test_extract_fenced_json_fails_closed_with_a_typed_deterministic_error(self):
+        malformed = b"````json kintsugi-seam\n{}\n````\n"
+        for markdown, fence_kind in (
+            (malformed, "kintsugi-seam"),
+            (b"```json kintsugi-seam\n{broken\n```\n", "kintsugi-seam"),
+            (b"", ""),
+        ):
+            with self.subTest(markdown=markdown, fence_kind=fence_kind):
+                with self.assertRaises(kernel.KintsugiError) as caught:
+                    kernel.extract_fenced_json(markdown, fence_kind)
+                self.assertIn(caught.exception.code, {"KIN-E-JSON", "KIN-E-LEDGER"})
+
+
+class AggregateMarkdownSynchronizationTests(unittest.TestCase):
+    def build_repository(self, root: Path):
+        source, claim, trial, seam, _ = support.build_owner_sync_fixture(root)
+        trial["seamId"] = seam["id"]
+        core = support.build_core_data()
+        core["sources"] = [source]
+        core["claims"] = [claim]
+        core["trials"] = [trial]
+        core["seams"] = [seam]
+
+        receipt = core["phaseReceipts"][0]
+        receipt.update({
+            "path": "receipts/phase.md",
+            "claimIds": [claim["id"]],
+            "trialIds": [trial["id"]],
+            "seamIds": [seam["id"]],
+        })
+        receipt_path = root / receipt["path"]
+        receipt_path.parent.mkdir(parents=True, exist_ok=True)
+        receipt_path.write_bytes(support.build_receipt_markdown(receipt))
+
+        finding = support.build_review_finding()
+        finding.update({
+            "claimIds": [claim["id"]],
+            "seamIds": [seam["id"]],
+            "subjectPaths": [source["path"]],
+        })
+        attestation = support.build_review_attestation("LOGIC", "FAIL")
+        attestation["path"] = "reviews/logic.md"
+        core["reviewAttestations"] = [attestation]
+        core["reviewFindings"] = [finding]
+        review_path = root / attestation["path"]
+        review_path.parent.mkdir(parents=True, exist_ok=True)
+        review_path.write_bytes(
+            support.build_review_markdown(attestation, [finding])
+        )
+
+        ledger_path = Path("ledger.md")
+        (root / ledger_path).write_bytes(support.build_ledger_markdown([seam]))
+        return core, ledger_path
+
+    @staticmethod
+    def tree_snapshot(root: Path):
+        return tuple(sorted(
+            (path.relative_to(root).as_posix(), path.read_bytes())
+            for path in root.rglob("*") if path.is_file()
+        ))
+
+    def test_validate_markdown_sync_coordinates_all_task4_layers_read_only(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            core, ledger_path = self.build_repository(root)
+            before = self.tree_snapshot(root)
+
+            issues = kernel.validate_markdown_sync(root, core, ledger_path)
+
+            self.assertEqual(issues, [])
+            self.assertEqual(self.tree_snapshot(root), before)
+
+    def test_allocated_attempt_does_not_freeze_prose_until_target_exists(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            core, ledger_path = self.build_repository(root)
+            receipt = core["phaseReceipts"][0]
+            receipt["reviewAttemptId"] = support.ATTEMPT_ID
+            core["reviewAttempts"] = [support.build_review_attempt()]
+            core["reviewAttemptArtifacts"] = [{
+                **support.build_review_attempt_artifact(),
+                "reviewTargetSha256": None,
+            }]
+            receipt_path = root / receipt["path"]
+            receipt_path.write_bytes(support.build_receipt_markdown(
+                receipt,
+                prefix=b"# Synthetic receipt\n\nLogic approved.\n",
+            ))
+
+            allocated_only = kernel.validate_markdown_sync(root, core, ledger_path)
+            self.assertEqual(allocated_only, [])
+
+            core["reviewAttemptArtifacts"][0]["reviewTargetSha256"] = support.RAW_HASH
+            target_present = kernel.validate_markdown_sync(root, core, ledger_path)
+            self.assertTrue(any(
+                issue.code == "KIN-E-LEDGER"
+                and "dynamic receipt prose" in issue.message
+                for issue in target_present
+            ))
+
+    def test_only_current_leaf_seam_is_checked_against_current_owner_bytes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            core, ledger_path = self.build_repository(root)
+            current = core["seams"][0]
+            historical = copy.deepcopy(current)
+            historical.update({
+                "id": "KIN-A-000",
+                "afterQuote": "A superseded repaired owner claim.",
+                "priorSeamIds": [],
+            })
+            current["priorSeamIds"] = [historical["id"]]
+            historical_trial = copy.deepcopy(core["trials"][0])
+            historical_trial.update({"id": "TRL-A-000", "seamId": historical["id"]})
+            core["trials"].insert(0, historical_trial)
+            core["seams"].insert(0, historical)
+            core["phaseReceipts"][0]["trialIds"].insert(0, historical_trial["id"])
+            core["phaseReceipts"][0]["seamIds"].insert(0, historical["id"])
+            receipt = core["phaseReceipts"][0]
+            (root / receipt["path"]).write_bytes(support.build_receipt_markdown(receipt))
+            (root / ledger_path).write_bytes(
+                support.build_ledger_markdown(core["seams"])
+            )
+
+            self.assertEqual(
+                kernel.validate_markdown_sync(root, core, ledger_path),
+                [],
+            )
+
+    def test_multiple_current_leaf_seams_are_a_typed_owner_ambiguity(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            core, ledger_path = self.build_repository(root)
+            sibling = copy.deepcopy(core["seams"][0])
+            sibling.update({"id": "KIN-A-002", "priorSeamIds": []})
+            core["seams"][0]["priorSeamIds"] = []
+            sibling_trial = copy.deepcopy(core["trials"][0])
+            sibling_trial.update({"id": "TRL-A-002", "seamId": sibling["id"]})
+            core["seams"].append(sibling)
+            core["trials"].append(sibling_trial)
+            receipt = core["phaseReceipts"][0]
+            receipt["seamIds"].append(sibling["id"])
+            receipt["trialIds"].append(sibling_trial["id"])
+            (root / receipt["path"]).write_bytes(support.build_receipt_markdown(receipt))
+            (root / ledger_path).write_bytes(support.build_ledger_markdown(core["seams"]))
+
+            issues = kernel.validate_markdown_sync(root, core, ledger_path)
+
+            self.assertTrue(any(
+                issue.code == "KIN-E-QUOTE" and "current leaf" in issue.message
+                for issue in issues
+            ))
+
+    def test_validate_markdown_sync_is_exception_total_but_not_baseexception_total(self):
+        issues = kernel.validate_markdown_sync(RootPathBoom(), {}, None)
+        self.assertTrue(issues)
+        self.assertTrue(all(isinstance(issue, kernel.Issue) for issue in issues))
+        with self.assertRaises(KeyboardInterrupt):
+            kernel.validate_markdown_sync(RootPathControl(), {}, None)
 
 
 class LedgerSynchronizationTests(unittest.TestCase):
@@ -483,6 +707,116 @@ class ReceiptSynchronizationTests(unittest.TestCase):
                     for issue in result.issues
                 ))
 
+    def test_frozen_receipt_reserves_mechanical_subjects_regardless_of_predicate(self):
+        receipt = support.build_core_data()["phaseReceipts"][0]
+        reserved_lines = (
+            b"Logic approved.",
+            b"BTJ accepted.",
+            b"Justice rejected.",
+            b"The receipt is closed.",
+            b"The phase was finalized.",
+            b"The reviewers approved it.",
+            b"The truth gate greenlit everything.",
+        )
+        for line in reserved_lines:
+            with self.subTest(line=line):
+                payload = support.build_receipt_markdown(
+                    receipt,
+                    prefix=b"# Synthetic receipt\n\n" + line + b"\n",
+                )
+                result = kernel.synchronize_receipt_markdown(
+                    payload, receipt, target_frozen=True
+                )
+                self.assertTrue(any(
+                    issue.code == "KIN-E-LEDGER"
+                    and "dynamic receipt prose" in issue.message
+                    for issue in result.issues
+                ))
+
+    def test_frozen_receipt_allows_only_closed_structural_heading_templates(self):
+        receipt = support.build_core_data()["phaseReceipts"][0]
+        for heading in (
+            b"# Synthetic receipt",
+            b"# Kintsugi Phase B receipt",
+            b"## Receipt ID: REC-B-109",
+        ):
+            with self.subTest(heading=heading):
+                payload = support.build_receipt_markdown(
+                    receipt,
+                    prefix=heading + b"\n\nThe bounded claim remains sourced.\n",
+                )
+                result = kernel.synchronize_receipt_markdown(
+                    payload, receipt, target_frozen=True
+                )
+                self.assertEqual(result.issues, ())
+
+        rejected = support.build_receipt_markdown(
+            receipt,
+            prefix=b"# The receipt is closed\n\nThe bounded claim remains sourced.\n",
+        )
+        self.assertTrue(kernel.synchronize_receipt_markdown(
+            rejected, receipt, target_frozen=True
+        ).issues)
+
+        for mismatched_heading in (
+            b"# Kintsugi Phase A receipt",
+            b"## Receipt ID: REC-A-108",
+        ):
+            with self.subTest(mismatched_heading=mismatched_heading):
+                mismatched = support.build_receipt_markdown(
+                    receipt,
+                    prefix=(
+                        mismatched_heading
+                        + b"\n\nThe bounded claim remains sourced.\n"
+                    ),
+                )
+                self.assertTrue(kernel.synchronize_receipt_markdown(
+                    mismatched, receipt, target_frozen=True
+                ).issues)
+
+    def test_frozen_receipt_accepts_and_hash_binds_ordinary_narrative(self):
+        receipt = support.build_core_data()["phaseReceipts"][0]
+        first = kernel.synchronize_receipt_markdown(
+            support.build_receipt_markdown(
+                receipt,
+                prefix=(
+                    b"# Synthetic receipt\n\n"
+                    b"The surviving claim remains bounded by sourced evidence.\n"
+                ),
+            ),
+            receipt,
+            target_frozen=True,
+        )
+        second = kernel.synchronize_receipt_markdown(
+            support.build_receipt_markdown(
+                receipt,
+                prefix=(
+                    b"# Synthetic receipt\n\n"
+                    b"The surviving claim remains narrowly bounded by sourced evidence.\n"
+                ),
+            ),
+            receipt,
+            target_frozen=True,
+        )
+        self.assertEqual(first.issues, ())
+        self.assertEqual(second.issues, ())
+        self.assertNotEqual(first.narrative_raw_sha256, second.narrative_raw_sha256)
+
+    def test_reserved_stems_do_not_match_inside_ordinary_words(self):
+        receipt = support.build_core_data()["phaseReceipts"][0]
+        result = kernel.synchronize_receipt_markdown(
+            support.build_receipt_markdown(
+                receipt,
+                prefix=(
+                    b"# Synthetic receipt\n\n"
+                    b"The aggregate remains bounded by biological evidence.\n"
+                ),
+            ),
+            receipt,
+            target_frozen=True,
+        )
+        self.assertEqual(result.issues, ())
+
     def test_receipt_missing_duplicate_wrong_malformed_and_drift_are_rejected(self):
         receipt = support.build_core_data()["phaseReceipts"][0]
         valid = support.build_receipt_markdown(receipt)
@@ -742,20 +1076,166 @@ class OwnerSynchronizationTests(unittest.TestCase):
                 self.assertEqual({issue.code for issue in issues}, {"KIN-E-QUOTE"})
                 self.assertEqual(tuple(sorted(issues)), issues)
 
-    def test_one_sided_seam_statuses_do_not_require_after_quote(self):
+    def test_one_sided_seam_statuses_require_before_quote_exactly_once(self):
         for status in ("CONFIRMED", "HELD_OPEN"):
             with self.subTest(status=status), tempfile.TemporaryDirectory() as directory:
                 root = Path(directory)
-                source, claim, trial, seam, _ = support.build_owner_sync_fixture(root)
+                source, claim, trial, seam, owner = support.build_owner_sync_fixture(root)
                 seam["status"] = status
-                seam.pop("afterQuote")
+                seam["afterQuote"] = None
+                raw = (
+                    "# Owner\r\n\r\n## Synthetic owner anchor\r\n\r\n"
+                    "The former owner claim.\r\nIts second line.\r\n"
+                ).encode("utf-8")
+                owner.write_bytes(raw)
+                source["sha256"] = kernel.raw_hash(raw)
                 self.assertEqual(
                     kernel.synchronize_owner(root, source, claim, trial, seam),
                     (),
                 )
 
+    def test_one_sided_seam_rejects_missing_and_duplicate_before_quote(self):
+        for status in ("CONFIRMED", "HELD_OPEN"):
+            for occurrence_count in (0, 2):
+                with (
+                    self.subTest(status=status, occurrence_count=occurrence_count),
+                    tempfile.TemporaryDirectory() as directory,
+                ):
+                    root = Path(directory)
+                    source, claim, trial, seam, owner = support.build_owner_sync_fixture(root)
+                    seam["status"] = status
+                    seam["afterQuote"] = None
+                    quote = "The former owner claim.\nIts second line.\n"
+                    raw = (
+                        "# Owner\n\n## Synthetic owner anchor\n\n"
+                        + quote * occurrence_count
+                    ).encode("utf-8")
+                    owner.write_bytes(raw)
+                    source["sha256"] = kernel.raw_hash(raw)
+
+                    issues = kernel.synchronize_owner(root, source, claim, trial, seam)
+
+                    self.assertTrue(any(
+                        issue.code == "KIN-E-QUOTE"
+                        and "beforeQuote" in issue.message
+                        and "exactly once" in issue.message
+                        for issue in issues
+                    ))
+
+    def test_one_sided_seam_rejects_a_non_null_after_quote(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source, claim, trial, seam, owner = support.build_owner_sync_fixture(root)
+            seam["status"] = "CONFIRMED"
+            raw = (
+                "# Owner\n\n## Synthetic owner anchor\n\n"
+                "The former owner claim.\nIts second line.\n"
+            ).encode("utf-8")
+            owner.write_bytes(raw)
+            source["sha256"] = kernel.raw_hash(raw)
+
+            issues = kernel.synchronize_owner(root, source, claim, trial, seam)
+
+            self.assertTrue(any(
+                issue.code == "KIN-E-QUOTE"
+                and "afterQuote" in issue.message
+                and "null" in issue.message
+                for issue in issues
+            ))
+
+    def test_owner_path_resolution_errors_are_typed_and_baseexceptions_propagate(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source, claim, trial, seam, _ = support.build_owner_sync_fixture(root)
+            loop_a = root / "loop-a"
+            loop_b = root / "loop-b"
+            loop_a.symlink_to(loop_b)
+            loop_b.symlink_to(loop_a)
+            source["path"] = "loop-a/owner.md"
+
+            loop_issues = kernel.synchronize_owner(root, source, claim, trial, seam)
+            self.assertTrue(loop_issues)
+            self.assertEqual({issue.code for issue in loop_issues}, {"KIN-E-QUOTE"})
+            self.assertEqual(tuple(sorted(loop_issues)), loop_issues)
+
+            boom_issues = kernel.synchronize_owner(
+                RootPathBoom(), source, claim, trial, seam
+            )
+            self.assertTrue(boom_issues)
+            self.assertEqual({issue.code for issue in boom_issues}, {"KIN-E-QUOTE"})
+            self.assertEqual(tuple(sorted(boom_issues)), boom_issues)
+
+            with self.assertRaises(KeyboardInterrupt):
+                kernel.synchronize_owner(
+                    RootPathControl(), source, claim, trial, seam
+                )
+
 
 class MalformedPublicBoundaryTests(unittest.TestCase):
+    def test_every_controlled_role_rejects_commonmark_json_fence_variants(self):
+        seam = seam_record()
+        receipt = support.build_core_data()["phaseReceipts"][0]
+        attestation = support.build_review_attestation()
+        findings: list[dict] = []
+        queue = support.build_public_queue()
+        artifacts = (
+            (
+                "kintsugi-seam",
+                support.build_ledger_markdown([seam]),
+                lambda payload: kernel.synchronize_ledger_markdown(payload, [seam]),
+            ),
+            (
+                "kintsugi-receipt",
+                support.build_receipt_markdown(receipt),
+                lambda payload: kernel.synchronize_receipt_markdown(payload, receipt),
+            ),
+            (
+                "kintsugi-review",
+                support.build_review_markdown(attestation, findings),
+                lambda payload: kernel.synchronize_review_markdown(
+                    payload, attestation, findings
+                ),
+            ),
+            (
+                "kintsugi-review-findings",
+                support.build_review_markdown(attestation, findings),
+                lambda payload: kernel.synchronize_review_markdown(
+                    payload, attestation, findings
+                ),
+            ),
+            (
+                "kintsugi-public-queue",
+                support.build_public_queue_markdown(queue),
+                lambda payload: kernel.synchronize_public_queue_markdown(payload, queue),
+            ),
+        )
+        variants = (
+            lambda role: b"````json " + role + b"\r\n{}\r\n````\r\n",
+            lambda role: b"~~~json " + role + b"\n{}\n~~~\n",
+            lambda role: b"``` json " + role + b"\n{}\n```\n",
+            lambda role: b"```\tjson " + role + b"\n{}\n```\n",
+            lambda role: b"```application/json " + role + b"\n{}\n```\n",
+            lambda role: b"```{.json} " + role + b"\n{}\n```\n",
+            lambda role: b"````json " + role + b"\n{}\n",
+        )
+        for role, valid, synchronize in artifacts:
+            role_bytes = role.encode("ascii")
+            for build_variant in variants:
+                variant = build_variant(role_bytes)
+                with self.subTest(role=role, variant=variant.splitlines()[0]):
+                    result = synchronize(valid + variant)
+                    self.assertIn("KIN-E-LEDGER", issue_codes(result))
+
+    def test_indented_json_looking_fences_are_outside_column_zero_machine_policy(self):
+        seam = seam_record()
+        payload = support.build_ledger_markdown([seam]) + (
+            b"  ```json kintsugi-seam\n{}\n  ```\n"
+        )
+        self.assertEqual(
+            kernel.synchronize_ledger_markdown(payload, [seam]).issues,
+            (),
+        )
+
     def test_markdown_payloads_reject_scalars_and_arbitrary_bytes_hooks(self):
         class Boom:
             def __bytes__(self):

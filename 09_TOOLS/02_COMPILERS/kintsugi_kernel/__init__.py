@@ -37,6 +37,7 @@ from .markdown import (
     LedgerSynchronization,
     MarkdownSynchronization,
     ReceiptSynchronization,
+    extract_fenced_json,
     framed_narrative_hash,
     project_review_seam,
     synchronize_ledger_markdown,
@@ -44,6 +45,7 @@ from .markdown import (
     synchronize_public_queue_markdown,
     synchronize_receipt_markdown,
     synchronize_review_markdown,
+    validate_markdown_sync,
 )
 from .schema import (
     ROOT_ROLES,
@@ -91,6 +93,7 @@ __all__ = [
     "compare_baseline",
     "evaluate_antibody_fixture",
     "evaluate_semantic_fixture",
+    "extract_fenced_json",
     "framed_narrative_hash",
     "infer_exception",
     "load_contract",
@@ -119,6 +122,7 @@ __all__ = [
     "validate_named_definition",
     "validate_schema_document",
     "validate_schema_instance",
+    "validate_markdown_sync",
     "validate_public_queue",
     "scan_antibodies",
 ]

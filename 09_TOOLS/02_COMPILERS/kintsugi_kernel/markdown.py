@@ -15,8 +15,6 @@ from .diagnostics import Issue, KintsugiError
 _NARRATIVE_DOMAIN = b"KINTSUGI-NARRATIVE-V1\x00"
 _MAX_UINT64 = (1 << 64) - 1
 _MAX_JSON_DEPTH = 512
-_JSON_FENCE_MARKER = b"```json"
-_FENCE_PREFIX = b"```json "
 _KNOWN_ROLES = frozenset({
     "kintsugi-seam",
     "kintsugi-receipt",
@@ -24,58 +22,24 @@ _KNOWN_ROLES = frozenset({
     "kintsugi-review-findings",
     "kintsugi-public-queue",
 })
-_DYNAMIC_RECEIPT_PREFIXES = (
-    "status:",
-    "review status:",
-    "review target:",
-    "review target digest:",
-    "review attempt:",
-    "logic review:",
-    "btj review:",
-    "validation bundle:",
-    "validation digest:",
-    "truth gate:",
-    "beauty gate:",
-    "justice gate:",
-    "digest:",
-    "reviewer path:",
-    "bundle:",
-    "gate:",
-    "reviewtargetdigest:",
-    "logicreviewpath:",
-    "btjreviewpath:",
-    "validationbundlepath:",
-    "validationdigest:",
-    "reviewattemptid:",
-    "reviewerpath:",
-    "truthgate:",
-    "beautygate:",
-    "justicegate:",
+_RESERVED_RECEIPT_SUBJECT_STEMS = (
+    "receipt",
+    "phase",
+    "review",
+    "reviewer",
+    "logic",
+    "btj",
+    "truth",
+    "beauty",
+    "justice",
+    "gate",
+    "status",
+    "digest",
+    "bundle",
 )
-_DYNAMIC_RECEIPT_COMPACT_FIELDS = frozenset({
-    "receiptstatus",
-    "reviewtargetdigest",
-    "logicreviewpath",
-    "logicreviewerpath",
-    "btjreviewpath",
-    "btjreviewerpath",
-    "validationbundle",
-    "validationbundlepath",
-    "validationdigest",
-    "reviewattemptid",
-    "reviewerpath",
-    "truthgate",
-    "beautygate",
-    "justicegate",
-    "gatestatus",
-})
-_DYNAMIC_REVIEW_OUTCOMES = frozenset({
-    "pass", "passed", "fail", "failed", "pending", "abandoned",
-    "complete", "verified",
-})
-_DYNAMIC_RECEIPT_STATES = frozenset({"draft", "complete", "verified"})
-_DYNAMIC_REVIEW_SUBJECTS = frozenset({
-    "review", "gate", "logic", "btj", "truth", "beauty", "justice",
+_STATIC_RECEIPT_LINES = frozenset({
+    "# receipt",
+    "# synthetic receipt",
 })
 _ONE_SIDED_SEAM_STATUSES = frozenset({"CONFIRMED", "HELD_OPEN"})
 
@@ -282,6 +246,41 @@ def _json_value(raw: bytes, *, path: str, offset: int) -> tuple[Any, list[Issue]
     return value, []
 
 
+def _fence_parts(content: bytes) -> tuple[int, int, bytes] | None:
+    if not content or content[0] not in (96, 126):
+        return None
+    marker = content[0]
+    run_length = 1
+    while run_length < len(content) and content[run_length] == marker:
+        run_length += 1
+    if run_length < 3:
+        return None
+    return marker, run_length, content[run_length:]
+
+
+def _json_looking_info(info: bytes) -> bool:
+    classified = info.lstrip(b" \t").lower()
+    return (
+        classified.startswith(b"json")
+        or classified.startswith(b"application/json")
+        or classified.startswith(b"{.json}")
+    )
+
+
+def _is_fence_closer(
+    content: bytes, marker: int, run_length: int, *, exact: bool
+) -> bool:
+    parts = _fence_parts(content)
+    if parts is None:
+        return False
+    closer_marker, closer_length, trailing = parts
+    if closer_marker != marker:
+        return False
+    if exact:
+        return closer_length == run_length and trailing == b""
+    return closer_length >= run_length and trailing.strip(b" \t") == b""
+
+
 def _scan_fences(payload: bytes, path: str) -> tuple[tuple[FenceRecord, ...], list[Issue]]:
     lines = _lines(payload)
     records: list[FenceRecord] = []
@@ -289,42 +288,55 @@ def _scan_fences(payload: bytes, path: str) -> tuple[tuple[FenceRecord, ...], li
     index = 0
     while index < len(lines):
         line = lines[index]
-        if not line.content.startswith(_FENCE_PREFIX):
-            if line.content.lower().startswith(_JSON_FENCE_MARKER):
-                issues.append(_issue(
-                    path, line.start, "KIN-E-LEDGER",
-                    "malformed JSON fence opener",
-                ))
-                closer_index = index + 1
-                while (
-                    closer_index < len(lines)
-                    and lines[closer_index].content != b"```"
-                ):
-                    closer_index += 1
-                if closer_index >= len(lines):
-                    issues.append(_issue(
-                        path, line.start, "KIN-E-LEDGER",
-                        "unterminated malformed JSON fence",
-                    ))
-                    break
-                index = closer_index + 1
-                continue
+        parts = _fence_parts(line.content)
+        if parts is None:
             index += 1
             continue
-        raw_role = line.content[len(_FENCE_PREFIX):]
+
+        marker, run_length, info = parts
+        json_looking = _json_looking_info(info)
+        exact_role = info[len(b"json "):] if info.startswith(b"json ") else b""
+        exact_opener = (
+            marker == 96
+            and run_length == 3
+            and info.startswith(b"json ")
+        )
         try:
-            role = raw_role.decode("ascii", errors="strict")
+            role = exact_role.decode("ascii", errors="strict")
         except UnicodeDecodeError:
-            role = raw_role.decode("ascii", errors="replace")
+            role = exact_role.decode("ascii", errors="replace")
+
+        if not json_looking:
+            closer_index = index + 1
+            while closer_index < len(lines) and not _is_fence_closer(
+                lines[closer_index].content, marker, run_length, exact=False
+            ):
+                closer_index += 1
+            index = len(lines) if closer_index >= len(lines) else closer_index + 1
+            continue
+
+        valid_opener = exact_opener and role in _KNOWN_ROLES
+        if not valid_opener:
+            issues.append(_issue(
+                path, line.start, "KIN-E-LEDGER", "malformed JSON fence opener"
+            ))
         closer_index = index + 1
-        while closer_index < len(lines) and lines[closer_index].content != b"```":
+        while closer_index < len(lines) and not _is_fence_closer(
+            lines[closer_index].content, marker, run_length, exact=True
+        ):
             closer_index += 1
         if closer_index >= len(lines):
-            issues.append(_issue(path, line.start, "KIN-E-LEDGER", f"unterminated {role} fence"))
-            records.append(FenceRecord(
-                role, line.start, line.end, len(payload), len(payload), len(payload), None, False,
-            ))
+            detail = f"unterminated {role} fence" if valid_opener else "unterminated malformed JSON fence"
+            issues.append(_issue(path, line.start, "KIN-E-LEDGER", detail))
+            if valid_opener:
+                records.append(FenceRecord(
+                    role, line.start, line.end, len(payload), len(payload),
+                    len(payload), None, False,
+                ))
             break
+        if not valid_opener:
+            index = closer_index + 1
+            continue
         closer = lines[closer_index]
         raw_json = payload[line.end:closer.start]
         value, json_issues = _json_value(raw_json, path=path, offset=line.end)
@@ -335,6 +347,29 @@ def _scan_fences(payload: bytes, path: str) -> tuple[tuple[FenceRecord, ...], li
         ))
         index = closer_index + 1
     return tuple(records), issues
+
+
+def extract_fenced_json(markdown: bytes, fence_kind: str) -> list[object]:
+    if not isinstance(markdown, bytes):
+        raise KintsugiError(
+            "KIN-E-LEDGER", "markdown@0", "Markdown input must be bytes"
+        )
+    if type(fence_kind) is not str or fence_kind not in _KNOWN_ROLES:
+        raise KintsugiError(
+            "KIN-E-LEDGER", "markdown@0", "fence kind must be a known role"
+        )
+    records, issues = _scan_fences(markdown, "markdown")
+    utf8_issue = _outside_utf8_issue(markdown, records, "markdown")
+    if utf8_issue is not None:
+        issues.append(utf8_issue)
+    ordered = _ordered(issues)
+    if ordered:
+        first = ordered[0]
+        raise KintsugiError(first.code, first.path, first.message)
+    return [
+        record.value for record in records
+        if record.role == fence_kind and record.parsed_ok
+    ]
 
 
 def _json_equal(left: Any, right: Any) -> bool:
@@ -578,58 +613,67 @@ def synchronize_ledger_markdown(
     return LedgerSynchronization(preamble, tuple(sections), _ordered(issues))
 
 
-def _dynamic_receipt_issues(raw: bytes, *, base: int, path: str) -> list[Issue]:
+def _static_receipt_line(
+    normalized: str, receipt: Mapping[str, Any]
+) -> bool:
+    if normalized in _STATIC_RECEIPT_LINES:
+        return True
+    phase = receipt.get("phase")
+    if isinstance(phase, str) and normalized == (
+        f"# kintsugi phase {phase.casefold()} receipt"
+    ):
+        return True
+    receipt_id = receipt.get("id")
+    return (
+        isinstance(receipt_id, str)
+        and normalized == f"## receipt id: {receipt_id.casefold()}"
+    )
+
+
+def _receipt_subject_tokens(text: str) -> list[str]:
+    raw_words = "".join(
+        character if character.isalnum() else " " for character in text
+    ).split()
+    tokens = [word.casefold() for word in raw_words]
+    for word in raw_words:
+        start = 0
+        for index in range(1, len(word)):
+            current = word[index]
+            previous = word[index - 1]
+            following = word[index + 1] if index + 1 < len(word) else ""
+            if current.isupper() and (
+                previous.islower()
+                or previous.isdigit()
+                or (previous.isupper() and following.islower())
+            ):
+                tokens.append(word[start:index].casefold())
+                start = index
+        tokens.append(word[start:].casefold())
+    return tokens
+
+
+def _dynamic_receipt_issues(
+    raw: bytes,
+    receipt: Mapping[str, Any],
+    *,
+    base: int,
+    path: str,
+) -> list[Issue]:
     issues: list[Issue] = []
     for line in _lines(raw):
         try:
             text = line.content.decode("utf-8", errors="strict")
         except UnicodeDecodeError:
             continue
-        normalized = text.strip().casefold()
-        while normalized and normalized[0] in "#-*`> ":
-            normalized = normalized[1:].lstrip()
-        normalized = normalized.replace("**", "").replace("`", "")
-        compact = "".join(character for character in normalized if character.isalnum())
-        words = {
-            word for word in "".join(
-                character if character.isalnum() else " "
-                for character in normalized
-            ).split()
-        }
-        first_word = next(iter(
-            "".join(
-                character if character.isalnum() else " "
-                for character in normalized
-            ).split()
-        ), "")
-        is_dynamic = (
-            any(normalized.startswith(prefix) for prefix in _DYNAMIC_RECEIPT_PREFIXES)
-            or any(field in compact for field in _DYNAMIC_RECEIPT_COMPACT_FIELDS)
-            or "status" in words
-            or "digest" in words
-            or ({"validation", "bundle"} <= words)
-            or ({"bundle", "path"} <= words)
-            or ({"reviewer", "path"} <= words)
-            or ({"review", "path"} <= words)
-            or ("review" in words and bool(words & _DYNAMIC_REVIEW_OUTCOMES))
-            or ("gate" in words and (
-                "status" in words or bool(words & _DYNAMIC_REVIEW_OUTCOMES)
-            ))
-            or (
-                bool(words & _DYNAMIC_REVIEW_SUBJECTS)
-                and bool(words & _DYNAMIC_REVIEW_OUTCOMES)
-            )
-            or (
-                bool(words & _DYNAMIC_REVIEW_SUBJECTS)
-                and {"signed", "off"} <= words
-            )
-            or (
-                bool(words & _DYNAMIC_RECEIPT_STATES)
-                and bool(words & {"receipt", "phase"})
-            )
-            or first_word in {"bundle", "gate"}
-        )
-        if is_dynamic:
+        normalized = " ".join(text.strip().casefold().split())
+        if not normalized or _static_receipt_line(normalized, receipt):
+            continue
+        tokens = _receipt_subject_tokens(text)
+        if any(
+            token.startswith(stem)
+            for token in tokens
+            for stem in _RESERVED_RECEIPT_SUBJECT_STEMS
+        ):
             issues.append(_issue(
                 path, base + line.start, "KIN-E-LEDGER",
                 "dynamic receipt prose is forbidden outside the fence after target freeze",
@@ -680,9 +724,13 @@ def synchronize_receipt_markdown(
         prefix, suffix, value = payload[:selected.opener_start], payload[selected.end:], selected.value
     issues = input_issues + list(synchronized.issues)
     if target_frozen:
-        issues.extend(_dynamic_receipt_issues(prefix, base=0, path=path))
+        issues.extend(_dynamic_receipt_issues(
+            prefix, receipt, base=0, path=path
+        ))
         suffix_base = selected.end if selected is not None else len(prefix)
-        issues.extend(_dynamic_receipt_issues(suffix, base=suffix_base, path=path))
+        issues.extend(_dynamic_receipt_issues(
+            suffix, receipt, base=suffix_base, path=path
+        ))
     receipt_id = receipt.get("id") if isinstance(receipt.get("id"), str) else None
     return ReceiptSynchronization(
         receipt_id,
@@ -817,7 +865,7 @@ def synchronize_owner(
         return (_issue("<owner>", 0, "KIN-E-QUOTE", "owner synchronization records must be objects"),)
     try:
         root = Path(root)
-    except TypeError:
+    except Exception:
         return (_issue("<owner>", 0, "KIN-E-QUOTE", "owner repository root is invalid"),)
     issues: list[Issue] = []
     relative = source.get("path")
@@ -828,16 +876,18 @@ def synchronize_owner(
         owner_path = safe_repo_path(root, relative)
     except KintsugiError as exc:
         return (_issue(issue_path, 0, "KIN-E-QUOTE", f"unsafe owner path: {exc.message}"),)
-    except OSError as exc:
-        return (_issue(issue_path, 0, "KIN-E-QUOTE", f"owner repository root is unavailable: {exc}"),)
-    except ValueError as exc:
-        return (_issue(issue_path, 0, "KIN-E-QUOTE", f"owner source path is invalid: {exc}"),)
-    if not owner_path.is_file():
+    except Exception:
+        return (_issue(issue_path, 0, "KIN-E-QUOTE", "owner source path cannot be resolved"),)
+    try:
+        is_file = owner_path.is_file()
+    except Exception:
+        return (_issue(issue_path, 0, "KIN-E-QUOTE", "owner source kind cannot be resolved"),)
+    if not is_file:
         return (_issue(issue_path, 0, "KIN-E-QUOTE", "owner source does not exist as a file"),)
     try:
         raw = owner_path.read_bytes()
-    except OSError as exc:
-        return (_issue(issue_path, 0, "KIN-E-QUOTE", f"owner source is unreadable: {exc}"),)
+    except Exception:
+        return (_issue(issue_path, 0, "KIN-E-QUOTE", "owner source is unreadable"),)
 
     if source.get("kind") != "OWNER" or source.get("authorityRole") != "SEMANTIC_OWNER":
         issues.append(_issue(issue_path, 0, "KIN-E-QUOTE", "declared source is not a semantic owner"))
@@ -872,13 +922,302 @@ def synchronize_owner(
     anchor = seam.get("ownerAnchor")
     if not isinstance(anchor, str) or normalize_lf(anchor) not in normalized_owner:
         issues.append(_issue(issue_path, 0, "KIN-E-QUOTE", "owner anchor is absent"))
-    after_quote = seam.get("afterQuote")
-    if seam.get("status") not in _ONE_SIDED_SEAM_STATUSES and (
-        not isinstance(after_quote, str)
-        or not _occurs_exactly_once(normalized_owner, normalize_lf(after_quote))
+    one_sided = seam.get("status") in _ONE_SIDED_SEAM_STATUSES
+    current_field = "beforeQuote" if one_sided else "afterQuote"
+    current_quote = seam.get(current_field)
+    if one_sided and seam.get("afterQuote") is not None:
+        issues.append(_issue(
+            issue_path, 0, "KIN-E-QUOTE",
+            "afterQuote must be null for a one-sided seam",
+        ))
+    if (
+        not isinstance(current_quote, str)
+        or not _occurs_exactly_once(normalized_owner, normalize_lf(current_quote))
     ):
-        issues.append(_issue(issue_path, 0, "KIN-E-QUOTE", "afterQuote must appear exactly once in the owner source"))
+        issues.append(_issue(
+            issue_path, 0, "KIN-E-QUOTE",
+            f"{current_field} must appear exactly once in the owner source",
+        ))
     return _ordered(issues)
+
+
+def _mapping_records(
+    core: Mapping[str, object], key: str, issues: list[Issue]
+) -> list[Mapping[str, Any]]:
+    if key not in core:
+        issues.append(_issue(
+            f"core.{key}", 0, "KIN-E-LEDGER", f"core is missing {key}"
+        ))
+        return []
+    value = core.get(key)
+    if not isinstance(value, Sequence) or isinstance(
+        value, (str, bytes, bytearray)
+    ):
+        issues.append(_issue(
+            f"core.{key}", 0, "KIN-E-LEDGER", f"core {key} must be a sequence"
+        ))
+        return []
+    records: list[Mapping[str, Any]] = []
+    for index, record in enumerate(value):
+        if isinstance(record, Mapping):
+            records.append(record)
+        else:
+            issues.append(_issue(
+                f"core.{key}[{index}]", 0, "KIN-E-LEDGER",
+                f"core {key} record must be an object",
+            ))
+    return records
+
+
+def _record_index(
+    records: Sequence[Mapping[str, Any]],
+    *,
+    label: str,
+    code: str,
+    issues: list[Issue],
+) -> dict[str, Mapping[str, Any]]:
+    indexed: dict[str, Mapping[str, Any]] = {}
+    for position, record in enumerate(records):
+        record_id = record.get("id")
+        if not isinstance(record_id, str):
+            issues.append(_issue(
+                f"core.{label}[{position}]", 0, code,
+                f"{label} record lacks a string id",
+            ))
+        elif record_id in indexed:
+            issues.append(_issue(
+                f"core.{label}[{position}]", 0, code,
+                f"duplicate {label} id: {record_id}",
+            ))
+        else:
+            indexed[record_id] = record
+    return indexed
+
+
+def _validate_markdown_sync(
+    root: Path, core: dict[str, object], ledger_path: Path | None
+) -> list[Issue]:
+    issues: list[Issue] = []
+    if not isinstance(core, dict):
+        return [_issue(
+            "core", 0, "KIN-E-LEDGER", "Markdown core must be an object"
+        )]
+    try:
+        resolved_root = Path(root).resolve(strict=True)
+        root_is_directory = resolved_root.is_dir()
+    except Exception:
+        return [_issue(
+            "<root>", 0, "KIN-E-LEDGER", "Markdown repository root is unavailable"
+        )]
+    if not root_is_directory:
+        return [_issue(
+            "<root>", 0, "KIN-E-LEDGER", "Markdown repository root is not a directory"
+        )]
+
+    read_cache: dict[Path, bytes] = {}
+
+    def read_path(path: Path, issue_path: str) -> bytes | None:
+        try:
+            if not path.is_file():
+                issues.append(_issue(
+                    issue_path, 0, "KIN-E-LEDGER",
+                    "declared Markdown path does not exist as a file",
+                ))
+                return None
+            if path not in read_cache:
+                read_cache[path] = path.read_bytes()
+            return read_cache[path]
+        except Exception:
+            issues.append(_issue(
+                issue_path, 0, "KIN-E-LEDGER", "declared Markdown path is unreadable"
+            ))
+            return None
+
+    def read_declared(relative: Any, label: str) -> bytes | None:
+        if not isinstance(relative, str):
+            issues.append(_issue(
+                label, 0, "KIN-E-LEDGER", "declared Markdown path must be a string"
+            ))
+            return None
+        try:
+            resolved = safe_repo_path(resolved_root, relative)
+        except Exception:
+            issues.append(_issue(
+                relative, 0, "KIN-E-LEDGER", "declared Markdown path is unsafe"
+            ))
+            return None
+        return read_path(resolved, relative)
+
+    seams = _mapping_records(core, "seams", issues)
+    receipts = _mapping_records(core, "phaseReceipts", issues)
+    attestations = _mapping_records(core, "reviewAttestations", issues)
+    findings = _mapping_records(core, "reviewFindings", issues)
+    artifacts = _mapping_records(core, "reviewAttemptArtifacts", issues)
+    sources = _mapping_records(core, "sources", issues)
+    claims = _mapping_records(core, "claims", issues)
+    trials = _mapping_records(core, "trials", issues)
+
+    if ledger_path is not None:
+        try:
+            candidate = Path(ledger_path)
+            if candidate.is_absolute():
+                resolved_ledger = candidate.resolve(strict=False)
+                resolved_ledger.relative_to(resolved_root)
+            else:
+                resolved_ledger = safe_repo_path(
+                    resolved_root, candidate.as_posix()
+                )
+        except Exception:
+            issues.append(_issue(
+                str(ledger_path), 0, "KIN-E-LEDGER", "ledger path is unsafe"
+            ))
+        else:
+            ledger_payload = read_path(resolved_ledger, candidate.as_posix())
+            if ledger_payload is not None:
+                issues.extend(synchronize_ledger_markdown(
+                    ledger_payload, seams, path=candidate.as_posix()
+                ).issues)
+
+    target_attempt_ids = {
+        artifact.get("attemptId")
+        for artifact in artifacts
+        if isinstance(artifact.get("attemptId"), str)
+        and artifact.get("reviewTargetSha256") is not None
+    }
+    for receipt in receipts:
+        receipt_path = receipt.get("path")
+        payload = read_declared(receipt_path, "phaseReceipt.path")
+        if payload is None:
+            continue
+        target_frozen = (
+            receipt.get("status") in {"COMPLETE", "VERIFIED"}
+            or receipt.get("reviewAttemptId") in target_attempt_ids
+        )
+        issues.extend(synchronize_receipt_markdown(
+            payload,
+            receipt,
+            path=receipt_path,
+            target_frozen=target_frozen,
+        ).issues)
+
+    finding_by_id = _record_index(
+        findings, label="reviewFindings", code="KIN-E-LEDGER", issues=issues
+    )
+    for attestation in attestations:
+        attestation_path = attestation.get("path")
+        payload = read_declared(attestation_path, "reviewAttestation.path")
+        if payload is None:
+            continue
+        requested_ids = attestation.get("findingIds")
+        resolved_findings: list[Mapping[str, Any]] = []
+        if not isinstance(requested_ids, Sequence) or isinstance(
+            requested_ids, (str, bytes, bytearray)
+        ):
+            issues.append(_issue(
+                attestation_path, 0, "KIN-E-LEDGER",
+                "review attestation findingIds must be a sequence",
+            ))
+        else:
+            for finding_id in requested_ids:
+                if not isinstance(finding_id, str):
+                    issues.append(_issue(
+                        attestation_path, 0, "KIN-E-LEDGER",
+                        "review attestation finding id must be a string",
+                    ))
+                    continue
+                finding = finding_by_id.get(finding_id)
+                if finding is None:
+                    issues.append(_issue(
+                        attestation_path, 0, "KIN-E-LEDGER",
+                        f"review finding is not present in core: {finding_id}",
+                    ))
+                else:
+                    resolved_findings.append(finding)
+        issues.extend(synchronize_review_markdown(
+            payload,
+            attestation,
+            resolved_findings,
+            path=attestation_path,
+        ).issues)
+
+    source_by_id = _record_index(
+        sources, label="sources", code="KIN-E-QUOTE", issues=issues
+    )
+    claim_by_id = _record_index(
+        claims, label="claims", code="KIN-E-QUOTE", issues=issues
+    )
+    seams_by_claim: dict[str, list[Mapping[str, Any]]] = {}
+    for seam in seams:
+        claim_id = seam.get("claimId")
+        if not isinstance(claim_id, str):
+            issues.append(_issue(
+                "core.seams", 0, "KIN-E-QUOTE", "seam claimId must be a string"
+            ))
+            continue
+        seams_by_claim.setdefault(claim_id, []).append(seam)
+
+    for claim_id in sorted(seams_by_claim):
+        claim_seams = seams_by_claim[claim_id]
+        referenced_prior_ids: set[str] = set()
+        for seam in claim_seams:
+            prior_ids = seam.get("priorSeamIds", ())
+            if not isinstance(prior_ids, Sequence) or isinstance(
+                prior_ids, (str, bytes, bytearray)
+            ):
+                issues.append(_issue(
+                    "core.seams", 0, "KIN-E-QUOTE",
+                    "seam priorSeamIds must be a sequence",
+                ))
+                continue
+            referenced_prior_ids.update(
+                prior_id for prior_id in prior_ids if isinstance(prior_id, str)
+            )
+        leaves = [
+            seam for seam in claim_seams
+            if isinstance(seam.get("id"), str)
+            and seam.get("id") not in referenced_prior_ids
+        ]
+        if len(leaves) != 1:
+            issues.append(_issue(
+                f"claim.{claim_id}", 0, "KIN-E-QUOTE",
+                "claim must have exactly one current leaf seam",
+            ))
+            continue
+        leaf = leaves[0]
+        leaf_id = leaf.get("id")
+        matching_trials = [trial for trial in trials if trial.get("seamId") == leaf_id]
+        if len(matching_trials) != 1:
+            issues.append(_issue(
+                f"seam.{leaf_id}", 0, "KIN-E-QUOTE",
+                "current leaf seam must have exactly one trial",
+            ))
+            continue
+        claim = claim_by_id.get(claim_id)
+        source_id = leaf.get("ownerSource")
+        source = source_by_id.get(source_id) if isinstance(source_id, str) else None
+        if claim is None or source is None:
+            issues.append(_issue(
+                f"seam.{leaf_id}", 0, "KIN-E-QUOTE",
+                "current leaf seam owner references are unresolved",
+            ))
+            continue
+        issues.extend(synchronize_owner(
+            resolved_root, source, claim, matching_trials[0], leaf
+        ))
+
+    return sorted(set(issues))
+
+
+def validate_markdown_sync(
+    root: Path, core: dict[str, object], ledger_path: Path | None
+) -> list[Issue]:
+    try:
+        return _validate_markdown_sync(root, core, ledger_path)
+    except Exception:
+        return [_issue(
+            "<markdown-sync>", 0, "KIN-E-LEDGER",
+            "Markdown synchronization could not classify malformed input",
+        )]
 
 
 __all__ = [
@@ -888,6 +1227,7 @@ __all__ = [
     "LedgerSynchronization",
     "MarkdownSynchronization",
     "ReceiptSynchronization",
+    "extract_fenced_json",
     "framed_narrative_hash",
     "project_review_seam",
     "synchronize_ledger_markdown",
@@ -895,4 +1235,5 @@ __all__ = [
     "synchronize_public_queue_markdown",
     "synchronize_receipt_markdown",
     "synchronize_review_markdown",
+    "validate_markdown_sync",
 ]
