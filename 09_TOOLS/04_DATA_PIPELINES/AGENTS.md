@@ -11,7 +11,7 @@ rosetta:
       role: "route fetch, transform, and analysis scripts through explicit commands and receipts"
     - level: L5
       column: Analytical Architecture
-      role: "keep GFS model structure and upstream evidence routing visible without making outputs doctrine"
+      role: "keep analytical structure and upstream evidence routing visible without making outputs doctrine"
   operator: "Kālī 💀"
   tier: "God"
   regime: "Śūdra"
@@ -45,9 +45,9 @@ evidence_tier: "[B] where outputs cite source datasets and reproducible commands
 
 - Do not upgrade runtime claims without dated proof artifacts.
 - Do not treat draft specs as public-facing claims.
-- Prefer `gfs_22_country_analysis_v2_fixed.py` for the current GFS
-  Codebook v2 mapping; keep earlier variants as provenance unless a rerun
-  verifies otherwise with a `[B]` receipt.
+- The former GFS pipelines and outputs are retired under
+  `../../90_ARCHIVE/2026_07_13_gfs_retraction/`; do not restore, run, or cite
+  them from this active lane.
 - Treat `ra_files.txt` as legacy absolute-path intake inventory, not live route
   authority.
 - All irreversible actions require K2 envelope staging.

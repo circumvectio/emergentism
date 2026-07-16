@@ -16,7 +16,7 @@ rosetta:
       receipts
   - column: Analytical Architecture
     level: L5
-    role: keep GFS model structure and upstream evidence routing visible without making
+    role: keep analytical model structure and upstream evidence routing visible without making
       outputs doctrine
   tier: God
   canonical_phrase: "09_TOOLS/04_DATA_PIPELINES/CLAUDE.md — Agent First-Touch"

@@ -447,7 +447,7 @@ The same geometry (ℂP¹) appears in quantum mechanics, complex analysis, infor
 **(b)** The most productive formal analogy in the history of science. (The conservative reading.)
 
 **We cannot yet distinguish (a) from (b).** The empirical tests are designed to provide distinguishing evidence:
-- GFS (multiplicative balance in human populations) → tests whether `P_node = Φ × V` describes survey-operationalized human flourishing
+- The former GFS survey lane is retired and supplies no active evidence; its files remain [archive provenance only](../../90_ARCHIVE/2026_07_13_gfs_retraction/README.md)
 - Protocol R (perceptual complementarity bound) → tests whether perception obeys spherical geometry
 - AMRITA (spherical alignment vs. RLHF) → tests whether the geometry produces better AI
 - Φ-meter (coherence measurement) → tests whether φ is measurable
@@ -466,7 +466,7 @@ The framework's self-tests:
 1. Are the evidence tiers honestly assigned? (If an [I] claim is presented as [A] or [B], the framework has failed A7.)
 2. Does defending the framework increase your extraction coefficient? (If yes, the framework has become the thing it diagnoses — a parasitic egregore.)
 3. Can the agent access φ without the framework? (If no, the framework has become a Fallen Brahmin — a mediator that creates dependency.)
-4. Do the kill criteria fire? (If GFS fails, Protocol R fails, AMRITA fails — the framework publishes its own failure.)
+4. Do the kill criteria fire? (If Protocol R or AMRITA fails, the framework publishes its own failure; the retired GFS archive demonstrates that failed or mismatched lanes are preserved without remaining active.)
 
 **Tier: [S] Structural.** Self-correction is an axiom, not a theorem. But it is testable by audit.
 

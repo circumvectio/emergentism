@@ -75,7 +75,7 @@ This lane is intentionally heavy on flat `00_*` / `01_*` status surfaces. `00_*`
 |---|---|
 | [`00_CANONICAL_CLAIM_MATRIX.md`](00_CANONICAL_CLAIM_MATRIX.md) | One operating surface for what the framework actually claims, with per-claim tiers. Routing surface, not itself an authority. |
 | [`00_EMPIRICAL_PROGRAM_BOARD.md`](00_EMPIRICAL_PROGRAM_BOARD.md) | Live test surface: the predictions reality is expected to satisfy. The board is not a substitute for results. |
-| [`00_GFS_WAVE1_RESULTS.md`](00_GFS_WAVE1_RESULTS.md) | Honest reckoning of GFS Wave 1: mixed results reported without spin (legacy `[S]` / current `[B]` data receipt, `[I]` interpretation). A7 receipt. |
+| [GFS retirement archive](../90_ARCHIVE/2026_07_13_gfs_retraction/README.md) | Cold provenance only. The entire GFS study lane was retired on 2026-07-16 and is not live, pending, or citable as active evidence. |
 | [`00_SCIENCE_STACK_STATUS.md`](00_SCIENCE_STACK_STATUS.md) | Closed / open / deferred routing across the D-level scientific surface. |
 
 **Foundations & method doctrine** — why the method is shaped as it is:
