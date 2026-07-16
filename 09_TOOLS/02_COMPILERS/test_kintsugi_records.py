@@ -1450,5 +1450,122 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
         self.assertIn("KIN-E-REF", codes(validate(missing_attestation, phase="A")))
 
 
+class RecordValidationBoundaryTests(unittest.TestCase):
+    JSON_SHAPES = (None, False, 0, "malformed", [], {})
+    TOP_LEVEL_COLLECTIONS = (
+        "manifests",
+        "sources",
+        "claims",
+        "trials",
+        "seams",
+        "antibodies",
+        "discriminators",
+        "fixtures",
+        "propagations",
+        "phaseReceipts",
+        "reviewAttempts",
+        "reviewAttemptArtifacts",
+        "reviewAttestations",
+        "reviewFindings",
+        "reviewFindingDispositions",
+    )
+    NESTED_PATHS = (
+        ("claims", 0, "claimType"),
+        ("claims", 0, "typedTerms"),
+        ("claims", 0, "premises"),
+        ("claims", 0, "evidence"),
+        ("trials", 0, "verdict"),
+        ("trials", 0, "discriminatorIds"),
+        ("trials", 0, "countermodel"),
+        ("seams", 0, "status"),
+        ("seams", 0, "evidenceAfter"),
+        ("seams", 0, "truthGate"),
+        ("phaseReceipts", 0, "status"),
+        ("phaseReceipts", 0, "claimIds"),
+        ("phaseReceipts", 0, "dependsOnReceiptIds"),
+        ("reviewAttempts", 0, "status"),
+        ("reviewAttempts", 0, "logicAttestationId"),
+        ("reviewAttemptArtifacts", 0, "logicReviewSha256"),
+        ("reviewAttestations", 0, "verdict"),
+        ("reviewAttestations", 0, "findingIds"),
+        ("reviewFindings", 0, "severity"),
+        ("reviewFindings", 0, "claimIds"),
+        ("reviewFindingDispositions", 0, "disposition"),
+        ("reviewFindingDispositions", 0, "evidenceFiles"),
+    )
+
+    @staticmethod
+    def _complete_core():
+        core = support.build_semantic_core()
+        support.add_confirmed_seam(core)
+        fail_then_successor(core)
+        return core
+
+    @staticmethod
+    def _replace(core, path, value):
+        parent = core
+        for component in path[:-1]:
+            parent = parent[component]
+        parent[path[-1]] = copy.deepcopy(value)
+
+    def test_json_shaped_depth_three_mutation_matrix_is_total_deterministic_and_pure(self):
+        paths = (("program",),) + tuple(
+            (collection,) for collection in self.TOP_LEVEL_COLLECTIONS
+        ) + self.NESTED_PATHS
+        self.assertTrue(all(1 <= len(path) <= 3 for path in paths))
+
+        for path in paths:
+            for value in self.JSON_SHAPES:
+                label = ".".join(str(component) for component in path)
+                with self.subTest(path=label, value=repr(value)):
+                    core = self._complete_core()
+                    self._replace(core, path, value)
+                    frozen_input = copy.deepcopy(core)
+                    first = validate(core, phase="A")
+                    second = validate(core, phase="A")
+                    self.assertEqual(first, second)
+                    self.assertEqual(core, frozen_input)
+                    self.assertTrue(all(isinstance(item, kernel.Issue) for item in first))
+
+    def test_known_program_enum_and_nested_container_crashes_fail_closed(self):
+        mutations = (
+            (("program",), None),
+            (("trials", 0, "verdict"), []),
+            (("claims", 0, "evidence"), []),
+            (("reviewFindings", 0, "claimIds"), None),
+        )
+        for path, value in mutations:
+            with self.subTest(path=path):
+                core = self._complete_core()
+                self._replace(core, path, value)
+                issues = validate(core, phase="A")
+                self.assertTrue(issues)
+                self.assertTrue(all(item.code == "KIN-E-REF" for item in issues))
+                self.assertTrue(all(item.path.startswith("core") for item in issues))
+
+    def test_malformed_nested_boundary_is_stable_and_typed(self):
+        core = self._complete_core()
+        core["trials"][0]["verdict"] = []
+        expected = [kernel.Issue(
+            "core",
+            "KIN-E-REF",
+            "core record validation failed safely on malformed nested data",
+        )]
+        self.assertEqual(validate(core, phase="A"), expected)
+        self.assertEqual(validate(core, phase="A"), expected)
+
+    def test_boundary_does_not_intercept_process_control_base_exceptions(self):
+        core = self._complete_core()
+        for exception in (KeyboardInterrupt(), SystemExit(17)):
+            with self.subTest(exception=type(exception).__name__):
+                with mock.patch.object(
+                    records_module,
+                    "_validate_source_roles",
+                    side_effect=exception,
+                ):
+                    with self.assertRaises(type(exception)):
+                        validate(core, phase="A")
+
+
 if __name__ == "__main__":
     unittest.main()

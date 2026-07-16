@@ -87,6 +87,42 @@ GLOBAL_COLLECTIONS = (
     "reviewFindings",
     "reviewFindingDispositions",
 )
+CORE_RECORD_COLLECTIONS = GLOBAL_COLLECTIONS + ("reviewAttemptArtifacts",)
+
+
+def malformed_core_issue() -> Issue:
+    return issue(
+        "core",
+        "KIN-E-REF",
+        "core record validation failed safely on malformed nested data",
+    )
+
+
+def core_record_shape_issues(core: Any) -> list[Issue]:
+    if not isinstance(core, dict):
+        return [issue("core", "KIN-E-REF", "core data must be an object")]
+    result: list[Issue] = []
+    if not isinstance(core.get("program"), dict):
+        result.append(issue(
+            "core.program",
+            "KIN-E-REF",
+            "program must be an object",
+        ))
+    for collection in CORE_RECORD_COLLECTIONS:
+        value = core.get(collection)
+        if not isinstance(value, list):
+            result.append(issue(
+                f"core.{collection}",
+                "KIN-E-REF",
+                f"{collection} must be a list of objects",
+            ))
+        elif any(not isinstance(record, dict) for record in value):
+            result.append(issue(
+                f"core.{collection}",
+                "KIN-E-REF",
+                f"{collection} must contain only objects",
+            ))
+    return ordered_issues(result)
 
 
 def ordered_issues(issues: Iterable[Issue]) -> list[Issue]:
@@ -1235,11 +1271,9 @@ def _validate_review_history(core: dict[str, Any], indexes: dict[str, dict[str, 
     return result
 
 
-def validate_record_graph(
+def _validate_record_graph_unchecked(
     core: dict[str, Any], *, phase: str | None = None, bootstrap: bool = False
 ) -> list[Issue]:
-    if not isinstance(core, dict):
-        return [issue("core", "KIN-E-REF", "core data must be an object")]
     _, result = _index_global_ids(core)
     indexes = {collection: _collection_index(core, collection) for collection in GLOBAL_COLLECTIONS}
     result.extend(_validate_source_roles(core))
@@ -1252,6 +1286,22 @@ def validate_record_graph(
     return ordered_issues(result)
 
 
+def validate_record_graph(
+    core: dict[str, Any], *, phase: str | None = None, bootstrap: bool = False
+) -> list[Issue]:
+    shape_issues = core_record_shape_issues(core)
+    if shape_issues:
+        return shape_issues
+    try:
+        return _validate_record_graph_unchecked(
+            core,
+            phase=phase,
+            bootstrap=bootstrap,
+        )
+    except Exception:
+        return [malformed_core_issue()]
+
+
 __all__ = [
     "PHASE_A_REQUIREMENTS",
     "PHASE_RANK",
@@ -1260,6 +1310,8 @@ __all__ = [
     "SOURCE_ROLE_MATRIX",
     "attempt_paths",
     "canonical_attempt",
+    "core_record_shape_issues",
+    "malformed_core_issue",
     "ordered_issues",
     "validate_record_graph",
     "valid_id",

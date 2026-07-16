@@ -9,6 +9,8 @@ from .diagnostics import Issue
 from .records import (
     RECEIPT_IDENTITIES,
     SOURCE_ROLE_MATRIX,
+    core_record_shape_issues,
+    malformed_core_issue,
     ordered_issues,
     valid_id,
     validate_record_graph,
@@ -687,11 +689,9 @@ def _validate_gates(core: dict[str, Any]) -> list[Issue]:
     return result
 
 
-def validate_core_records(
+def _validate_core_records_unchecked(
     core: dict[str, object], *, phase: str | None = None, bootstrap: bool = False
 ) -> list[Issue]:
-    if not isinstance(core, dict):
-        return [_issue("core", "KIN-E-REF", "core data must be an object")]
     result = list(validate_record_graph(core, phase=phase, bootstrap=bootstrap))
     if core.get("program", {}).get("noK2Gate") is not True:
         result.append(_issue("core.program.noK2Gate", "KIN-E-JUSTICE", "Kintsugi has no K2 gate"))
@@ -701,6 +701,22 @@ def validate_core_records(
     result.extend(_validate_gates(core))
     result.extend(_validate_antibody_contract(core))
     return ordered_issues(result)
+
+
+def validate_core_records(
+    core: dict[str, object], *, phase: str | None = None, bootstrap: bool = False
+) -> list[Issue]:
+    shape_issues = core_record_shape_issues(core)
+    if shape_issues:
+        return shape_issues
+    try:
+        return _validate_core_records_unchecked(
+            core,
+            phase=phase,
+            bootstrap=bootstrap,
+        )
+    except Exception:
+        return [malformed_core_issue()]
 
 
 def _public_queue_shape_issues(
