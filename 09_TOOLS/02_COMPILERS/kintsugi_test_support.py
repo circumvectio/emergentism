@@ -3,6 +3,9 @@ from __future__ import annotations
 import copy
 import hashlib
 import json
+import os
+import subprocess
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
@@ -17,6 +20,401 @@ MANIFEST_ID = "MAN-B-001"
 SOURCE_ID = "SRC-B-001"
 CLAIM_ID = "CLM-B-001"
 TRIAL_ID = "TRL-B-001"
+
+
+@dataclass(frozen=True)
+class SyntheticGitRepository:
+    canonical_root: Path
+    isolated_root: Path
+    common_dir: Path
+    base_commit: str
+
+
+def _git_fixture_run(root: Path, *argv: str) -> bytes:
+    environment = os.environ.copy()
+    environment.update({
+        "GIT_AUTHOR_DATE": "2000-01-01T00:00:00+0000",
+        "GIT_COMMITTER_DATE": "2000-01-01T00:00:00+0000",
+        "LC_ALL": "C",
+    })
+    return subprocess.run(
+        ["git", *argv],
+        cwd=root,
+        env=environment,
+        check=True,
+        stdin=subprocess.DEVNULL,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+    ).stdout
+
+
+def build_synthetic_git_repository(parent: Path) -> SyntheticGitRepository:
+    canonical_root = parent / "main"
+    isolated_root = parent / "isolated"
+    canonical_root.mkdir(parents=True)
+    _git_fixture_run(canonical_root, "init", "-b", "main")
+    _git_fixture_run(canonical_root, "config", "user.name", "Kintsugi Fixture")
+    _git_fixture_run(canonical_root, "config", "user.email", "fixture@example.invalid")
+
+    tracked = {
+        "03_METHODOLOGY/owner.md": b"# Synthetic owner\n",
+        "03_METHODOLOGY/support.md": b"# Synthetic support\n",
+        "03_METHODOLOGY/excluded.md": b"# Deliberately excluded synthetic candidate\n",
+        "03_METHODOLOGY/phase-b-inventory-review.md": b"# Synthetic inventory review\n",
+        "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json": b"{}\n",
+        "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SCHEMA.json": (
+            b'{"$id":"https://example.invalid/synthetic-kintsugi-schema",'
+            b'"$schema":"https://json-schema.org/draft/2020-12/schema"}\n'
+        ),
+        "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAM_LEDGER.md": b"# Synthetic ledger\n",
+        "11_UPLINK/50_AUDITS_AND_EXECUTIONS/109_ACTIVE_CORPUS_KINTSUGI_RECEIPT_2026_07_11.md": b"# Synthetic Phase B receipt\n",
+        "12_PUBLIC_SITE/index.html": b"<!doctype html><title>Synthetic</title>\n",
+        "12_PUBLIC_SITE/assets/base.css": b":root{color:#111}\n",
+        "90_ARCHIVE/history.txt": b"archived synthetic bytes\n",
+        "91_COMPATIBILITY/legacy.txt": b"compatibility synthetic bytes\n",
+        "03_METHODOLOGY/phase-a-inventory-review.md": b"# Synthetic Phase A inventory review\n",
+        "11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_FORMAL_STRESS_LEDGER_2026_07_11.md": b"# Synthetic Phase A receipt\n",
+    }
+    anchors_by_owner: dict[str, list[str]] = {}
+    for _, owner_path, anchor, _ in PHASE_A_REQUIREMENTS:
+        anchors_by_owner.setdefault(owner_path, []).append(anchor)
+    for owner_path, anchors in sorted(anchors_by_owner.items()):
+        tracked[owner_path] = (
+            "# Synthetic Phase A owner\n\n"
+            + "\n\n".join(anchors)
+            + "\n"
+        ).encode("utf-8")
+    for relative, payload in tracked.items():
+        target = canonical_root / relative
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(payload)
+    (canonical_root / "12_PUBLIC_SITE/assets-link").symlink_to("assets", target_is_directory=True)
+    _git_fixture_run(canonical_root, "add", "--all")
+    _git_fixture_run(canonical_root, "commit", "-m", "synthetic base")
+    base_commit = _git_fixture_run(canonical_root, "rev-parse", "HEAD").decode("ascii").strip()
+    _git_fixture_run(
+        canonical_root,
+        "worktree",
+        "add",
+        "-b",
+        "isolated",
+        str(isolated_root),
+        base_commit,
+    )
+
+    for root in (canonical_root, isolated_root):
+        untracked = root / "scratch/preexisting.txt"
+        untracked.parent.mkdir(parents=True, exist_ok=True)
+        untracked.write_bytes(b"pre-existing untracked bytes\n")
+
+    common_raw = _git_fixture_run(canonical_root, "rev-parse", "--git-common-dir")
+    common_path = Path(common_raw.decode("utf-8").strip())
+    common_dir = (
+        common_path if common_path.is_absolute() else canonical_root / common_path
+    ).resolve()
+    return SyntheticGitRepository(
+        canonical_root=canonical_root.resolve(),
+        isolated_root=isolated_root.resolve(),
+        common_dir=common_dir,
+        base_commit=base_commit,
+    )
+
+
+def _synthetic_file_record(root: Path, relative: str) -> dict[str, str]:
+    path = root / relative
+    if path.is_symlink():
+        return {
+            "path": relative,
+            "kind": "SYMLINK",
+            "sha256": "sha256:" + hashlib.sha256(os.readlink(path).encode("utf-8")).hexdigest(),
+        }
+    return {
+        "path": relative,
+        "kind": "FILE",
+        "sha256": "sha256:" + hashlib.sha256(path.read_bytes()).hexdigest(),
+    }
+
+
+def build_synthetic_manifest_core(
+    fixture: SyntheticGitRepository,
+) -> dict[str, Any]:
+    core = build_core_data()
+    # Phase B canonically depends on the verified Phase-A receipt.  Keep that
+    # dependency explicit in the synthetic core so manifest tests exercise the
+    # same transitive receipt boundary as production freezes.
+    core["phaseReceipts"].append({
+        "id": "REC-A-108",
+        "phase": "A",
+        "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_FORMAL_STRESS_LEDGER_2026_07_11.md",
+        "status": "VERIFIED",
+        "manifestId": "MAN-A-001",
+        "dependsOnReceiptIds": [],
+        "claimIds": [],
+        "trialIds": [],
+        "seamIds": [],
+        "propagationIds": [],
+        "reviewTargetDigest": RAW_HASH,
+        "validationBundlePath": "09_TOOLS/08_AUDIT_ARTIFACTS/dependencies/REC-A-108-validation.json",
+        "validationDigest": RAW_HASH,
+        "logicReviewPath": "09_TOOLS/08_AUDIT_ARTIFACTS/dependencies/REC-A-108-logic.md",
+        "btjReviewPath": "09_TOOLS/08_AUDIT_ARTIFACTS/dependencies/REC-A-108-btj.md",
+        "reviewAttemptId": "RVA-A-001",
+    })
+    manifest = core["manifests"][0]
+    candidates = (
+        "03_METHODOLOGY/excluded.md",
+        "03_METHODOLOGY/owner.md",
+        "03_METHODOLOGY/support.md",
+    )
+    included = candidates[1:]
+    protected = (
+        "12_PUBLIC_SITE/assets-link",
+        "12_PUBLIC_SITE/assets/base.css",
+        "12_PUBLIC_SITE/index.html",
+        "90_ARCHIVE/history.txt",
+        "91_COMPATIBILITY/legacy.txt",
+    )
+    preexisting = "scratch/preexisting.txt"
+    core_path = "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json"
+    ledger_path = "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAM_LEDGER.md"
+    receipt_path = core["phaseReceipts"][0]["path"]
+
+    manifest.update({
+        "baseCommit": fixture.base_commit,
+        "canonicalCommit": fixture.base_commit,
+        "discoveryRules": [{
+            "id": "DISC-B-001",
+            "includeGlobs": list(candidates),
+            "excludeGlobs": ["03_METHODOLOGY/excluded.md"],
+            "parser": "MARKDOWN",
+            "rationale": "Deterministic synthetic discovery boundary.",
+        }],
+        "candidateFiles": [
+            _synthetic_file_record(fixture.canonical_root, relative)
+            for relative in candidates
+        ],
+        "candidateFileCount": len(candidates),
+        "includedFiles": [
+            _synthetic_file_record(fixture.canonical_root, relative)
+            for relative in included
+        ],
+        "finalFiles": [],
+        "finalFileCount": 0,
+        "excludedPaths": [{
+            "path": "03_METHODOLOGY/excluded.md",
+            "reason": "Synthetic exclusion.",
+        }],
+        "eligibleFileCount": len(included),
+        "scannedFileCount": len(included),
+        "inventoryReviewPaths": ["03_METHODOLOGY/phase-b-inventory-review.md"],
+        "protectedProvenance": [
+            {
+                "path": "12_PUBLIC_SITE/index.html",
+                "mode": "FULL_FILE",
+                "sha256": _synthetic_file_record(
+                    fixture.canonical_root, "12_PUBLIC_SITE/index.html"
+                )["sha256"],
+            },
+            {
+                "path": "90_ARCHIVE/history.txt",
+                "mode": "EXACT_SPAN",
+                "exactSpan": "archived synthetic bytes",
+                "sha256": "sha256:" + hashlib.sha256(
+                    b"archived synthetic bytes"
+                ).hexdigest(),
+            },
+        ],
+        "protectedPaths": ["12_PUBLIC_SITE", "90_ARCHIVE", "91_COMPATIBILITY"],
+        "protectedTreeSnapshots": {
+            "isolated": [
+                _synthetic_file_record(fixture.isolated_root, relative)
+                for relative in protected
+            ],
+            "canonical": [
+                _synthetic_file_record(fixture.canonical_root, relative)
+                for relative in protected
+            ],
+        },
+        "allowedChangePaths": sorted({
+            core_path,
+            ledger_path,
+            receipt_path,
+            "03_METHODOLOGY/owner.md",
+            "03_METHODOLOGY/support.md",
+            "03_METHODOLOGY/phase-b-inventory-review.md",
+        }),
+        "closureOnlyPaths": [],
+        "allowedPreexistingUntracked": {
+            "isolated": [_synthetic_file_record(fixture.isolated_root, preexisting)],
+            "canonical": [_synthetic_file_record(fixture.canonical_root, preexisting)],
+        },
+    })
+
+    owner = core["sources"][0]
+    owner["sha256"] = _synthetic_file_record(
+        fixture.canonical_root, owner["path"]
+    )["sha256"]
+    support = _copy(owner)
+    support.update({
+        "id": "SRC-B-002",
+        "path": "03_METHODOLOGY/support.md",
+        "kind": "SUPPORT",
+        "authorityRole": "EVIDENCE",
+        "sha256": _synthetic_file_record(
+            fixture.canonical_root, "03_METHODOLOGY/support.md"
+        )["sha256"],
+    })
+    core["sources"] = [owner, support]
+    return core
+
+
+def build_synthetic_phase_a_manifest_core(
+    fixture: SyntheticGitRepository, *, bootstrap: bool
+) -> dict[str, Any]:
+    core = build_semantic_core(bootstrap=bootstrap)
+    manifest = core["manifests"][0]
+    phase_b_core = build_synthetic_manifest_core(fixture)
+    phase_b_manifest = phase_b_core["manifests"][0]
+    owner_paths = sorted({source["path"] for source in core["sources"]})
+    core_path = "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json"
+    ledger_path = "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAM_LEDGER.md"
+    receipt_path = core["phaseReceipts"][0]["path"]
+
+    manifest.update({
+        "baseCommit": fixture.base_commit,
+        "canonicalCommit": fixture.base_commit,
+        "discoveryRules": [{
+            "id": "DISC-A-001",
+            "includeGlobs": owner_paths,
+            "excludeGlobs": ["90_ARCHIVE/**"],
+            "parser": "MARKDOWN",
+            "rationale": "The seven frozen Phase-A requirements select their exact owners.",
+        }],
+        "candidateFiles": [
+            _synthetic_file_record(fixture.canonical_root, relative)
+            for relative in owner_paths
+        ],
+        "candidateFileCount": len(owner_paths),
+        "includedFiles": [
+            _synthetic_file_record(fixture.canonical_root, relative)
+            for relative in owner_paths
+        ],
+        "finalFiles": [],
+        "finalFileCount": 0,
+        "excludedPaths": [],
+        "eligibleFileCount": len(owner_paths),
+        "scannedFileCount": len(owner_paths),
+        "inventoryReviewPaths": ["03_METHODOLOGY/phase-a-inventory-review.md"],
+        "protectedProvenance": _copy(phase_b_manifest["protectedProvenance"]),
+        "protectedPaths": _copy(phase_b_manifest["protectedPaths"]),
+        "protectedTreeSnapshots": _copy(phase_b_manifest["protectedTreeSnapshots"]),
+        "allowedChangePaths": sorted({
+            core_path,
+            ledger_path,
+            receipt_path,
+            "03_METHODOLOGY/phase-a-inventory-review.md",
+            *owner_paths,
+        }),
+        "closureOnlyPaths": [],
+        "allowedPreexistingUntracked": _copy(
+            phase_b_manifest["allowedPreexistingUntracked"]
+        ),
+    })
+    for source in core["sources"]:
+        source["sha256"] = _synthetic_file_record(
+            fixture.canonical_root, source["path"]
+        )["sha256"]
+    return core
+
+
+def build_committed_predecessor_fixture(
+    fixture: SyntheticGitRepository,
+    *,
+    terminal_status: str = "FAILED",
+) -> dict[str, Any]:
+    if terminal_status not in {"FAILED", "ABANDONED"}:
+        raise ValueError("terminal_status must be FAILED or ABANDONED")
+    core = build_synthetic_manifest_core(fixture)
+    attempt = build_review_attempt(
+        terminal_status,
+        logic_attestation_id="ATT-LOGIC-001" if terminal_status == "FAILED" else None,
+    )
+    target_bytes = json.dumps(
+        {"fixture": "terminal predecessor target"},
+        ensure_ascii=False,
+        sort_keys=True,
+        separators=(",", ":"),
+        allow_nan=False,
+    ).encode("utf-8") + b"\n"
+    target_hash = "sha256:" + hashlib.sha256(target_bytes).hexdigest()
+    finding = build_review_finding() if terminal_status == "FAILED" else None
+    attestation = build_review_attestation("LOGIC", "FAIL") if terminal_status == "FAILED" else None
+    if attestation is not None and finding is not None:
+        attestation["path"] = attempt["logicReviewPath"]
+        attestation["reviewTargetDigest"] = target_hash
+        review_bytes = build_review_markdown(attestation, [finding])
+        review_hash = "sha256:" + hashlib.sha256(review_bytes).hexdigest()
+        attempt["reviewSubjectDigest"] = target_hash
+    else:
+        review_bytes = None
+        review_hash = None
+
+    core["reviewAttempts"] = [attempt]
+    core["reviewAttemptArtifacts"] = [{
+        "attemptId": ATTEMPT_ID,
+        "reviewTargetSha256": target_hash if terminal_status == "FAILED" else None,
+        "logicReviewSha256": review_hash,
+        "btjReviewSha256": None,
+    }]
+    core["reviewAttestations"] = [attestation] if attestation is not None else []
+    core["reviewFindings"] = [finding] if finding is not None else []
+    core["phaseReceipts"][0]["reviewAttemptId"] = ATTEMPT_ID
+    manifest = core["manifests"][0]
+    manifest["finalFiles"] = [
+        _synthetic_file_record(fixture.isolated_root, record["path"])
+        for record in manifest["includedFiles"]
+    ]
+    manifest["finalFileCount"] = len(manifest["finalFiles"])
+    manifest["closureOnlyPaths"] = sorted((
+        attempt["reviewTargetPath"],
+        attempt["logicReviewPath"],
+        attempt["btjReviewPath"],
+        attempt["validationBundlePath"],
+    ))
+    manifest["allowedChangePaths"] = sorted(set(
+        manifest["allowedChangePaths"] + manifest["closureOnlyPaths"]
+    ))
+
+    if terminal_status == "FAILED":
+        target_path = fixture.isolated_root / attempt["reviewTargetPath"]
+        target_path.parent.mkdir(parents=True, exist_ok=True)
+        target_path.write_bytes(target_bytes)
+        review_path = fixture.isolated_root / attempt["logicReviewPath"]
+        review_path.parent.mkdir(parents=True, exist_ok=True)
+        if review_bytes is None:
+            raise AssertionError("FAILED predecessor review bytes were not built")
+        review_path.write_bytes(review_bytes)
+    receipt = core["phaseReceipts"][0]
+    (fixture.isolated_root / receipt["path"]).write_bytes(
+        build_receipt_markdown(receipt)
+    )
+    core_path = fixture.isolated_root / "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json"
+    core_path.write_bytes(json.dumps(
+        core,
+        ensure_ascii=False,
+        sort_keys=True,
+        separators=(",", ":"),
+        allow_nan=False,
+    ).encode("utf-8") + b"\n")
+    relative_paths = [
+        "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json",
+        receipt["path"],
+    ]
+    if terminal_status == "FAILED":
+        relative_paths.extend((attempt["reviewTargetPath"], attempt["logicReviewPath"]))
+    _git_fixture_run(fixture.isolated_root, "add", "--", *relative_paths)
+    _git_fixture_run(fixture.isolated_root, "commit", "-m", "terminal predecessor")
+    return core
 
 
 def _copy(value: Any) -> Any:

@@ -48,6 +48,8 @@ from .markdown import (
     synchronize_review_markdown,
     validate_markdown_sync,
 )
+from .gitstate import inspect_git_state, resolve_git_common_dir
+from .manifest import freeze_manifest_value, validate_manifest
 from .schema import (
     ROOT_ROLES,
     SCHEMA_ID,
@@ -96,7 +98,9 @@ __all__ = [
     "evaluate_semantic_fixture",
     "extract_fenced_json",
     "framed_narrative_hash",
+    "freeze_manifest_value",
     "infer_exception",
+    "inspect_git_state",
     "load_canonical_json",
     "load_contract",
     "load_schema",
@@ -109,6 +113,7 @@ __all__ = [
     "parse_pytest_failures",
     "project_review_seam",
     "raw_hash",
+    "resolve_git_common_dir",
     "run_baseline",
     "run_process",
     "safe_regex_search",
@@ -125,6 +130,7 @@ __all__ = [
     "validate_schema_document",
     "validate_schema_instance",
     "validate_markdown_sync",
+    "validate_manifest",
     "validate_public_queue",
     "scan_antibodies",
 ]
