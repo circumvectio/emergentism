@@ -1153,8 +1153,11 @@ def _validate_review_history(core: dict[str, Any], indexes: dict[str, dict[str, 
     dispositions = items(core, "reviewFindingDispositions")
     dispositions_by_pair: Counter[tuple[Any, Any]] = Counter()
     dispositions_by_successor: dict[str, list[dict[str, Any]]] = defaultdict(list)
-    allowed_process_evidence_by_pair: dict[
-        tuple[Any, Any], set[tuple[Any, Any]]
+    predecessor_process_evidence_by_attempt: dict[
+        Any, set[tuple[Any, Any]]
+    ] = {}
+    successor_process_evidence_by_manifest: dict[
+        Any, set[tuple[Any, Any]]
     ] = {}
     for position, disposition in enumerate(dispositions):
         base = f"core.reviewFindingDispositions[{position}]"
@@ -1208,11 +1211,13 @@ def _validate_review_history(core: dict[str, Any], indexes: dict[str, dict[str, 
         ):
             result.append(issue(base, "KIN-E-STATE", "PROCESS_INVALID requires only hash-bound process evidence"))
         if kind == "PROCESS_INVALID":
-            process_pair = (predecessor.get("id"), successor.get("id"))
-            allowed_evidence = allowed_process_evidence_by_pair.get(process_pair)
-            if allowed_evidence is None:
-                allowed_evidence = set()
-                predecessor_artifact = artifacts.get(predecessor.get("id"), {})
+            predecessor_id = predecessor.get("id")
+            predecessor_evidence = predecessor_process_evidence_by_attempt.get(
+                predecessor_id
+            )
+            if predecessor_evidence is None:
+                predecessor_evidence = set()
+                predecessor_artifact = artifacts.get(predecessor_id, {})
                 for path_field, hash_field in (
                     ("reviewTargetPath", "reviewTargetSha256"),
                     ("logicReviewPath", "logicReviewSha256"),
@@ -1220,27 +1225,48 @@ def _validate_review_history(core: dict[str, Any], indexes: dict[str, dict[str, 
                 ):
                     digest = predecessor_artifact.get(hash_field)
                     if digest is not None:
-                        allowed_evidence.add((predecessor.get(path_field), digest))
-                successor_receipt = receipts.get(successor.get("receiptId"))
-                successor_manifest = (
-                    manifests.get(successor_receipt.get("manifestId"))
-                    if successor_receipt is not None else None
+                        predecessor_evidence.add((predecessor.get(path_field), digest))
+                predecessor_process_evidence_by_attempt[
+                    predecessor_id
+                ] = predecessor_evidence
+            successor_receipt = receipts.get(successor.get("receiptId"))
+            successor_manifest = (
+                manifests.get(successor_receipt.get("manifestId"))
+                if successor_receipt is not None else None
+            )
+            successor_evidence: set[tuple[Any, Any]] = set()
+            if successor_manifest is not None:
+                successor_manifest_id = successor_manifest.get("id")
+                cached_successor_evidence = (
+                    successor_process_evidence_by_manifest.get(successor_manifest_id)
                 )
-                if successor_manifest is not None:
+                if cached_successor_evidence is None:
+                    cached_successor_evidence = set()
                     closure_paths = set(successor_manifest.get("closureOnlyPaths", []))
                     for file_record in successor_manifest.get("finalFiles", []):
                         if (
                             isinstance(file_record, dict)
                             and file_record.get("path") not in closure_paths
                         ):
-                            allowed_evidence.add((
+                            cached_successor_evidence.add((
                                 file_record.get("path"), file_record.get("sha256")
                             ))
-                allowed_process_evidence_by_pair[process_pair] = allowed_evidence
+                    successor_process_evidence_by_manifest[
+                        successor_manifest_id
+                    ] = cached_successor_evidence
+                successor_evidence = cached_successor_evidence
             for evidence in disposition.get("evidenceFiles", []):
-                if not isinstance(evidence, dict) or (
-                    evidence.get("path"), evidence.get("sha256")
-                ) not in allowed_evidence:
+                evidence_key = (
+                    (evidence.get("path"), evidence.get("sha256"))
+                    if isinstance(evidence, dict) else None
+                )
+                if (
+                    evidence_key is None
+                    or (
+                        evidence_key not in predecessor_evidence
+                        and evidence_key not in successor_evidence
+                    )
+                ):
                     result.append(issue(f"{base}.evidenceFiles", "KIN-E-REF", "process evidence is not bound to an immutable predecessor artifact or successor final file"))
 
     findings_by_attempt: dict[str, list[str]] = defaultdict(list)

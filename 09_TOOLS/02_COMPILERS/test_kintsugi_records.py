@@ -510,6 +510,53 @@ def many_process_invalid_dispositions(core, *, count):
     return manifest
 
 
+def many_ancestor_process_invalid_dispositions(core, *, count):
+    """Point resolving ancestor findings at one non-direct final leaf."""
+    long_failed_review_chain(core, count=count + 1)
+    manifest = core["manifests"][0]
+    extra_files = [
+        {
+            "path": f"03_METHODOLOGY/ancestor-process-evidence-{number:05d}.md",
+            "kind": "FILE",
+            "sha256": support.RAW_HASH,
+        }
+        for number in range(1, count + 1)
+    ]
+    manifest["candidateFiles"].extend(copy.deepcopy(extra_files))
+    manifest["candidateFileCount"] = len(manifest["candidateFiles"])
+    manifest["includedFiles"].extend(copy.deepcopy(extra_files))
+    manifest["eligibleFileCount"] = len(manifest["includedFiles"])
+    manifest["scannedFileCount"] = len(manifest["candidateFiles"])
+    manifest["finalFiles"] = copy.deepcopy(manifest["includedFiles"])
+    manifest["finalFileCount"] = len(manifest["finalFiles"])
+
+    attempts = {
+        attempt["id"]: attempt for attempt in core["reviewAttempts"]
+    }
+    leaf_id = core["reviewAttempts"][-1]["id"]
+    for ordinal, disposition in enumerate(
+        core["reviewFindingDispositions"], start=1
+    ):
+        predecessor = attempts[disposition["fromAttemptId"]]
+        disposition.update({
+            "id": f"RFD-{leaf_id}-{ordinal:03d}",
+            "successorAttemptId": leaf_id,
+            "disposition": "PROCESS_INVALID",
+            "rationale": "The resolving ancestor artifact proves the process defect.",
+            "claimIds": [],
+            "seamIds": [],
+            "ledgerSectionIds": [],
+            "receiptIds": [],
+            "subjectPaths": [],
+            "discriminatorIds": [],
+            "evidenceFiles": [{
+                "path": predecessor["reviewTargetPath"],
+                "sha256": support.RAW_HASH,
+            }],
+        })
+    return manifest
+
+
 class CountingDict(dict):
     def __init__(self, *args, counter, **kwargs):
         super().__init__(*args, **kwargs)
@@ -1429,6 +1476,65 @@ class TrialFixtureAndReviewHistoryTests(unittest.TestCase):
         ):
             self.assertEqual(validate(core, phase="A"), [])
 
+        self.assertLessEqual(
+            counter["final_file_steps"], 3 * len(manifest["finalFiles"]), counter
+        )
+
+    def test_resolving_ancestor_joins_scan_successor_final_inventory_linearly(self):
+        schema_probe = support.build_semantic_core()
+        many_ancestor_process_invalid_dispositions(schema_probe, count=25)
+        self.assertEqual(
+            kernel.validate_schema_instance(SCHEMA, "coreData", schema_probe), ()
+        )
+        first_issues = validate(schema_probe, phase="A")
+        second_issues = validate(schema_probe, phase="A")
+        self.assertEqual(first_issues, second_issues)
+        self.assertEqual(len(first_issues), 25)
+        self.assertEqual(set(codes(first_issues)), {"KIN-E-REF"})
+        self.assertEqual(
+            sum(
+                issue.code == "KIN-E-REF"
+                and issue.message == (
+                    "disposition does not join a finding to its direct successor"
+                )
+                for issue in first_issues
+            ),
+            24,
+        )
+
+        count = 100
+        core = support.build_semantic_core()
+        manifest = many_ancestor_process_invalid_dispositions(core, count=count)
+        counter = {"review_history_active": False, "final_file_steps": 0}
+        manifest["finalFiles"] = ProcessEvidenceCountingList(
+            manifest["finalFiles"], counter=counter
+        )
+        original_validate_review_history = records_module._validate_review_history
+
+        def counted_validate_review_history(value, indexes):
+            counter["review_history_active"] = True
+            try:
+                return original_validate_review_history(value, indexes)
+            finally:
+                counter["review_history_active"] = False
+
+        with mock.patch.object(
+            records_module,
+            "_validate_review_history",
+            counted_validate_review_history,
+        ):
+            issues = validate(core, phase="A")
+
+        self.assertEqual(
+            sum(
+                issue.code == "KIN-E-REF"
+                and issue.message == (
+                    "disposition does not join a finding to its direct successor"
+                )
+                for issue in issues
+            ),
+            count - 1,
+        )
         self.assertLessEqual(
             counter["final_file_steps"], 3 * len(manifest["finalFiles"]), counter
         )
