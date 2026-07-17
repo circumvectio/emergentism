@@ -90,7 +90,7 @@ The move from flat to curved does not **answer** the question. It **dissolves** 
 
 **What this does NOT claim:** It does not derive specific "oughts" from specific "is" statements. It dissolves the *architectural assumption* that facts and values are logically independent. They are geometrically constrained. The constraint is φ · ν = 1.
 
-**Evidence tier: [I].** The is-ought gap is relocated, not solved. The relocation is structural [S]. Whether the relocation is correct is interpretive [I], pending empirical tests (GFS).
+**Evidence tier: [I].** The is-ought gap is relocated, not solved. The relocation is structural [S]. Whether the relocation is correct is interpretive [I], pending empirical tests ~~(GFS)~~ *(GFS retracted 2026-07-12 — tested wrong claim; K2 directive)*.
 
 ---
 
@@ -194,7 +194,7 @@ Or is it a frame trick — a way of redefining problems so they appear solved wi
 
 The honest answer: **it could be either.** The distinction depends on whether reality is actually curved in the way S² describes. If the sphere is the territory (not just a map), then co-emergence is discovery. If the sphere is a map (useful but not the territory), then co-emergence is a powerful heuristic — a way of thinking that produces insight without being literally true.
 
-The empirical tests (GFS, AMRITA, Protocol R) are designed to distinguish these. If the multiplicative structure holds empirically, the curvature is real. If not, the curvature is metaphorical — still useful, but not ontological.
+The empirical tests (~~GFS~~ *(GFS retracted 2026-07-12 — tested wrong claim; K2 directive)*, AMRITA, Protocol R) are designed to distinguish these. If the multiplicative structure holds empirically, the curvature is real. If not, the curvature is metaphorical — still useful, but not ontological.
 
 **This document does not resolve that question. This document names the method and shows its scope. The experiments decide whether the method is discovery or heuristic.**
 
