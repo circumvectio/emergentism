@@ -31,6 +31,10 @@ rosetta:
 > φ + ν ≥ 2
 > ```
 
+> **[金] Formula boundary:** the second line is legacy shorthand for the
+> analytic identity on `θ∈(0,π)` under the cotangent/tangent definitions; the
+> poles are excluded and no ontology follows from the identity alone.
+
 ---
 
 ## Why This Document Exists
@@ -55,12 +59,13 @@ The current canon is:
 
 - `D5` is the highest positive public register
 - `D5` is the last experiential layer
-- `D5` is strongly emergent in genesis and weakly emergent in governance
+- D5 candidate crossings are `currently_unreduced`; successful reduction
+  reclassifies a crossing as weak emergence without destroying the scaffold
 - `D6` is not a further science
 - `D6` is not a further experience
 - `D6` is the terminal boundary of the aeon
 - `Falsification Protocol` returns the field to `D0`
-- because closure holds, `D6 ≡ D0`
+- closure is represented by one non-μ interpretive edge `r₆:D6↝D0`
 
 This is now the default reading unless a document explicitly and carefully overrides it.
 
@@ -130,7 +135,8 @@ When older corpus documents say:
 
 read it as:
 
-- poetic or structural shorthand for `D6 ≡ D0`, not a claim that there is a further experience above `D5`
+- poetic return shorthand for `r₆:D6↝D0`, not literal identity or a further
+  experience above `D5`
 
 ---
 
@@ -152,7 +158,11 @@ If a document does so, it should be interpreted through the newer canon rather t
 
 When this stabilization must be stated briefly, the default sentence is:
 
-> **Across the corpus, `D5` is now the highest positive and experiential layer: publicly scientific, strategically legible, strongly emergent in genesis, and weakly emergent in governance. `D6` is not another science or experience, but the terminal axiomatic boundary through which `Falsification Protocol` returns the field to `D0`, with `D6 ≡ D0` as closure. Older `D6` language should be read structurally, retrospectively, or poetically unless explicitly re-hardened.**
+> **Across the corpus, D4 is causal actuality and D5 counterfactual
+> possibility. Candidate crossings remain `currently_unreduced` until fair
+> reduction tests decide otherwise. D6 is not another science or experience;
+> `r₆:D6↝D0` is one interpretive non-μ return edge. Older literal-identity and
+> strong-emergence language is superseded.**
 
 This sentence may be reused verbatim.
 

@@ -26,17 +26,18 @@ D4 = causal actuality
 D5 = counterfactual possibility
 ```
 
-| D4 actual | D5 possible |
+| D4 actual | D5 merely possible |
 |---|---|
-| embodied means and current constraints | represented alternatives |
-| performed or attempted action | ranking and selection before enactment |
-| factual records | modeled futures |
-| commitment and outcome receipts | option cone |
+| embodied means and current constraints | counterfactual alternative contents |
+| present model tokens | modeled-future referents |
+| performed ranking and selection events | rankings-as-represented and candidates for selection |
+| attempted/performed action, factual records, and receipts | possibility field |
 
 There is no alternate register in which D4 becomes potential and D5 becomes
 actual. `μ₄:D4→D5` asks whether counterfactual capacity emerges from embodied
-actuality; commitment moves `D5→D4` when a represented option is lawfully
-attempted.
+actuality; a D4 selection event can reference D5 content and produce a D4
+attempt. Authorization determines normative validity, not whether an attempt
+can exist causally.
 
 ## 2. D4 is not a dimensionless “now-point”
 
@@ -47,18 +48,23 @@ D-register is not a replacement coordinate system for physics.
 
 ## 3. D5 is an option field, not distributed actuality
 
-D5 contains alternatives **as modeled by finite agents**. A D5 option may be
-incorrect, unreachable, mutually inconsistent with another option, or never
-enacted. Selection does not make all options actual and does not guarantee one
-selected future.
+D5 contains merely-possible alternative content **represented by** D4-actual
+model tokens held by finite agents. The token, ranking event, and selection
+event are actual; their referents need not be. A D5 option may be incorrect,
+unreachable, mutually inconsistent with another option, or never enacted.
+Selection does not make all options actual and does not guarantee one selected
+future.
 
 The option cone is typed separately from the physical causal cone:
 
 ```text
 OptionCone_t(A)=ReachableHistories(models,means,coordination,
-                                  authorization,cost,horizon)
+                                  cost,horizon)
 ⊆ PhysicallyAdmissibleHistories(X_t)
 ```
+
+Authorization defines a separate normative subset of physically reachable
+options. An unauthorized attempt can remain physically possible and receipted.
 
 The physical cone does not widen. The modeled/reachable set can.
 
@@ -108,7 +114,7 @@ The D4/D5 calculus remains unchanged when this section is removed.
 ## 7. Commitment and outcome
 
 ```text
-χ_t:(X_t,Ω_t,M_t,V_t,U_t) → (a_t,q_t)
+χ_t:(X_t,Ω_t,M_t,V_t,U_t,G_t) → (a_t,q_t)
 (X_{t+1},r_{t+1}) ~ K_t(·|X_t,a_t,E_t)
 (M_{t+1},G_{t+1}) = Loop(M_t,G_t,q_t,r_{t+1})
 ```
@@ -116,6 +122,11 @@ The D4/D5 calculus remains unchanged when this section is removed.
 `q_t` is the commitment receipt; `r_{t+1}` is the environment's outcome
 receipt. This separation prevents selection, intention, or authorization from
 counterfeiting consequence.
+
+`U_t` is an authorization assessment, which may contain no valid envelope.
+`a_t=⊥` records no attempt; invalid authorization does not itself imply
+physical impossibility. A governed channel may refuse the action, while a
+descriptive channel must still submit an unauthorized attempt to `K_t`.
 
 ## 8. Closure
 

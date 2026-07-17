@@ -11,7 +11,7 @@ rosetta:
       role: "bind archive-first, tombstone, and no-competing-authority constraints"
     - level: L7
       column: Agent Constitution
-      role: "preserve K2 discipline and constitutional review boundaries"
+      role: "preserve accountable authorization and private-DAV K2 boundaries"
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
@@ -52,15 +52,19 @@ that Anthropic runs in hosted, sandboxed containers.
 not the SDK default: low-quality/high-throughput L1–L2 → Haiku; balanced/decisive L3–L4 → Sonnet;
 deep-reasoning L5–L7 → Opus. Reserve high-quality inference for higher-risk or constitutional lanes.
 
-## The K2 discipline, encoded structurally
+## Accountable authorization, encoded structurally
 
 Only **L4 (Arjuna)** and **L6 (Śiva)** can mutate state, and their `write`/`edit`/`bash`
 tools carry `permission_policy: {type: always_ask}`. The session goes idle and emits a
 `tool_use` event with `evaluated_permission: "ask"`; nothing lands until a human replies
-`user.tool_confirmation`. That **is** the constitution in the runtime:
+`user.tool_confirmation`. That is one runtime control, not a complete
+authorization envelope by itself:
 
-> **[S]** The machine *prepares* the collapse (drafts, stages the smallest-defensible diff);
-> the human performs the binding act (`K2 → Arjuna`: "do not simulate the mortal sacrifice").
+> **[S]** The machine prepares a proposed action (drafts and stages the
+> smallest-defensible diff); the accountable principal authorizes or refuses the
+> consequence. Private-DAV deployments may use K2; other deployments use their
+> own complete principal, mandate, scope, consent, custody, contest, actor, and
+> consequence-bearer envelope.
 
 η=0 (Kali fires only at defectors), A7 (tier every claim), and K3 (Śiva archives with a
 tombstone rather than deletion) live in the system prompts.

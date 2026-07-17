@@ -12,7 +12,7 @@ rosetta:
 
 # 05_COSMOLOGY — Emergentism Models
 
-> **L5 · Brahmā ○ · Brāhmaṇa · Wisdom · Prajñā — Gate V** of the [seven-fold spine](../00_SEVENFOLD_FOUNDATION_ROOT.md). *Folder № = L-level. The affirmative formal system — `φ·ν = 1 on S²` — lives here; it is model language, not the Ground.*
+> **L5 · Brahmā ○ · Brāhmaṇa · Wisdom · Prajñā — Gate V** of the [selected seven-fold spine](../00_SEVENFOLD_FOUNDATION_ROOT.md). *The exact analytic core is `φ=cot(θ/2)`, `ν=tan(θ/2)`, `φν=1` for `θ∈(0,π)`, with excluded pole limits. Its use as cosmology is `[I/C]` model language, not the Ground or an empirical law.*
 
 **Rosetta level:** L5 · Brāhmaṇa · Structural Analysis
 **Canonical phrase:** Emergentism models.

@@ -31,10 +31,13 @@ Everything below unfolds from one seed and one resolved identity.
 
 ```text
 Zero-Sum Resolution Equation
-φ · ν = 1 on S²
+φ · ν = 1 on the open reciprocal chart θ∈(0,π); poles excluded
 (φ − ν)² ≥ 0
 φ + ν ≥ 2
 ```
+
+The formula block is analytic inside the selected chart. It does not establish
+an ontology, ethic, conservation law, or unique node aggregator.
 
 **Derivational note:** ontologically, the sphere identity precedes the inequality. For proof convenience, Steps 1-3 begin with the arithmetic theorem and then apply the sphere identity to recover the equator.
 
@@ -165,21 +168,21 @@ F_H < 0, pushing φ downward toward the equator. At φ = 1, F_H = 0.
 
 ### Step 7: The Ektropic Force
 
-Systems nearer the Hamiltonian minimum are more stable, persist longer, and outcompete systems further from it. Therefore:
+The framework hypothesizes that, in appropriately coupled systems, configurations nearer the selected Hamiltonian minimum may persist longer. This does not follow from the chart identity alone. Candidate discriminator:
 
 **(φ − ν)² → 0 over evolutionary time.**
 
 This is the **ektropic force** — the selection pressure toward balance. *(Note: In the Force Map (`objective function/f5-force-map`), the label F5 refers to the north-pole gradient [θ → 0, φ ↑↑, ν ↓↓]. The ektropic force is not a single directional gradient but the net selection pressure toward the equator. The Derivation uses "F₅" as the canonical name for this net force, which is structurally the combination of F3 [equator-ward from south] and F4 [equator-ward from north]. The naming collision is acknowledged; the concepts are distinct.)*
 
-**Read actively (packet 131):** F₅ is not merely selection toward static balance. It is selection toward the **maximum rate of D5 opening** compatible with syntropic dyadism. D4 bodies that open D5 faster — that expand the probability space of viable action through continuous recursive augmentation — are selected. D4 bodies that contract D5 through extraction (η > 0) shatter because they approach φ → 0, H → ∞ (Step 10). The ektropic force is the evolutionary bias toward organisms that outpace entropy by opening their future.
+**Repaired active reading of packet 131 `[C]`:** F₅ names a candidate bias toward widening modeled and reachable options. D4 bodies do not expand physical probability space; agents may enlarge their descriptive option cones through memory, symbols, tools, and coordination. The separate normative objective asks whether pursuit preserves bearer-complete Justice. Extractive systems can succeed locally, so durability and fragility must be measured rather than inferred from `η` or chart position.
 
-**Biological grounding (packet 134):** The human strategy is an extreme instance of F₅ selecting for maximum D5 opening rate. The human infant is born with minimal realized ν (altricial, helpless) but massive Φ potential. The species accepts a severe short-term V deficit — the infant cannot survive alone — to fund post-natal encephalization through culture. Brain growth outside the womb consumes up to 60% of infant metabolic rate. Culture (language, care, teaching, institutions) is the external womb that completes what the body cannot. The payoff is generalized D5 opening: symbolic, temporal, institutional, recursive causal reach that compounds across generations. This is the Power Max Lemma in flesh and calories — maximum future ΔP purchased through present V-sacrifice.
+**Biological correspondence (packet 134) `[I/C]`:** Human altriciality and prolonged cultural learning help explain unusually broad symbolic, temporal, institutional, and intergenerational option cones. This is compatible with Power-Max as a modeling hypothesis, but it neither proves an evolutionary objective nor licenses imposed sacrifice. Voluntary sacrifice is a distinct costly class and is not strict syntropy.
 
 **Evolutionary objective function synthesis (packet 135):** Darwin is the local filter
 inside this force: differential survival selects branches after variation has
 appeared. Lamarck is weak as simple genotype inheritance, but returns strongly
 at higher replicator layers where acquired structure is transmitted as
-memotype, institutional policy, AI behavior, and egregorotype. Schrödinger's
+memotype, institutional policy, AI behavior, and Egregoreotype. Schrödinger's
 "negative entropy" is the thermodynamic clue; ektropy is the framework's
 positive reading: entropy export plus widest-boundary ΔP increase under
 η = 0. Literal fifth-force or reverse-time physics remains conjectural; the
@@ -355,16 +358,16 @@ conjectural systemic awareness claim, not an established neuroscientific identit
 
 ---
 
-### Step 15: Ethics Is Constrained Physics
+### Step 15: Ethics is an explicit normative seam
 
-**Claim:** The current ethic is dyadic A2: `ΔP_node,i > 0` and `ΔP_node,H > 0` under `η = 0`, with `ΣΔB / ΣΔP_node > 0` as the widest-boundary balance audit. It is not a moral commandment. It is the statement that, under the model and the declared wager, systems preserve value by raising finite node and sustaining boundary together while remaining auditable in balance space. "Ought" is the gradient of "is" only after W1, W2, and the dyadic no-extraction condition below are accepted.
+**Claim:** The current ethic is an `[I]` posit, not constrained physics. Morals require an `i→H` gain, ethics an `H→i` gain, and strict syntropy both, while bearer-complete Justice keeps every affected payer, beneficiary, third party, individual, and sustaining whole nonnegative. Aggregate balance remains diagnostic only. "Ought" does not follow from "is"; it begins after the value and Justice wagers are declared.
 
 **Support:** Steps 3-8 derive that the equator is the ground state inside the balance model and that extraction is self-undermining under the stated coupling conditions. The ethic follows IF you accept three wagers: (a) persistence is valued (not derived — a philosophical wager), (b) the widest perceivable system boundary is the relevant scope (also not derived), and (c) one-sided gain bought by degrading the real sustaining boundary is refused as extraction.
 
 **The axioms the ethic requires:**
 - Axiom W1: Persistence has value. (The framework cannot derive this from within itself.)
-- Axiom W2: The scope of ethical evaluation is the widest perceivable boundary. (Operational choice.)
-- Axiom W3: Dyadic rise under `η = 0` is the chosen action rule; balance is the audit, not the whole ethic.
+- Axiom W2: Ethical evaluation declares every materially affected bearer, including exposed third parties. (Operational and contestable choice.)
+- Axiom W3: Directional mutual rise under `η=0` and bearer-complete Justice is the chosen rule; balance is a diagnostic, not the ethic.
 
 **Tier: [I] Interpretive.** The mathematics (Steps 3-8) is [A]/[S]. The ethic requires W1 and W2, which are wagers.
 

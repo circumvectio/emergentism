@@ -68,7 +68,10 @@ Development requires CRISIS. Levels II-IV are *worse* (more conflicted, more anx
 
 **2. Spiral Dynamics / Graves (8 levels, open-ended) — STRONG CHALLENGE**
 
-Two structural features the framework lacks: (a) **open-endedness** — new levels continue to emerge, contradicting D6=D0 closure; (b) **individual/collective alternation** — each level swings between self-expressive and group-sacrifice orientations. Reconcilable via fractal nesting (closure at one scale, open at the next), but this adds structure the framework doesn't currently have.
+Two structural features challenge the selected scaffold: (a) **open-endedness**
+— new levels continue to emerge beyond its D6 closure horizon; (b)
+**individual/collective alternation**. The current `r₆:D6↝D0` edge is an
+interpretive return, not a literal identity that defeats the challenge.
 
 **3. Buddhist Pratityasamutpada (12 links, cyclic) — MODERATE CHALLENGE**
 
@@ -76,7 +79,11 @@ The 12 links of dependent origination form a CYCLE, not a hierarchy. Each link c
 
 **4. Wilber's AQAL (12+ levels) — MODERATE CHALLENGE**
 
-The 3rd Tier (Paramind through Supermind) claims developmental stages BEYOND what the framework maps at L5-L7. Either D6=D0 closure absorbs them, or the framework is incomplete at the high end. The multi-dimensional structure (4 quadrants x multiple lines) also challenges the framework's single-axis (phi-nu) approach.
+The 3rd Tier (Paramind through Supermind) claims developmental stages BEYOND
+what the framework maps at L5-L7. The selected scaffold may therefore be
+incomplete at the high end; its interpretive `r₆` edge cannot absorb contrary
+evidence by definition. AQAL's multi-dimensional structure also challenges the
+single-axis approach.
 
 **5. Resolution-dependent models (Commons=16, Maslow=8, Kohlberg=6, Piaget=4)**
 
@@ -89,7 +96,7 @@ These are NOT genuine challenges. They are the same continuum at different resol
 | **Dabrowski** | 5 | **Strongest** | Disintegration as necessity | Partial — Soul Loop needs "dark night" |
 | **Spiral Dynamics** | 8 (open) | Strong | Open spiral + alternation | Partial — fractal nesting |
 | **Pratityasamutpada** | 12 (cyclic) | Moderate | Cycle, not hierarchy | Hard — torus vs sphere |
-| **Wilber AQAL** | 12+ | Moderate | 3rd Tier beyond L7 | Partial — D6=D0 or incomplete |
+| **Wilber AQAL** | 12+ | Moderate | 3rd Tier beyond L7 | Challenge — selected scaffold may be incomplete |
 | **Maslow/Kohlberg/Piaget** | 4-8 | Weak | Resolution-dependent | Yes — different binning |
 
 ---

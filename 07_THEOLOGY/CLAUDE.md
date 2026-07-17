@@ -37,7 +37,7 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 
 - **Read-only by construction.** Viṣṇu proposes, never commits.
 - **The coordinator is Arjuna (L4), not L7.** Titans (L5–L7) are boundary conditions, not deployable.
-- **Theurgy = Arjuna (L4).** The L4 collapse / K2 act IS the theurgic move. The Ṛṣi witnesses and narrates; the Arjuna acts.
+- **Theurgy = Arjuna (L4).** The L4 move is accountable commitment with separate commitment and outcome receipts. The Ṛṣi witnesses and narrates; the Arjuna acts. K2 is private-DAV governance, not a worldview primitive.
 - **Invoke L7 only for:** existential contradictions, constitutional deadlocks, framework-boundary questions, or pathology-vs-evolutionary-leap judgment — not for routine work.
 
 ## Claim boundaries
@@ -50,16 +50,16 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 
 - **Symbolic force does not upgrade evidence tier.** `[I]` does not become `[A]` or `[B]` through narrative power.
 - Mythic, scriptural, linguistic, and ritual parallels are convergent symbolic translations unless a public receipt/testing lane is explicitly supplied.
-- AI may witness, draft, compare, and route theological material. K2 signatures, access gates, and priestly authority remain outside AI authority.
+- AI may witness, draft, compare, and route theological material only within mandate. It cannot presume authorization, erase consequence bearers, gate direct access, or assume priestly authority.
 
 ## Stewardship / coercion boundary
 
 | | Allowed | Forbidden |
 |---|---|---|
-| **Stewardship** | Holding symbols, rites, categories, institutions so `P_node,i` and `P_node,H` rise together under `η = 0`; `ΣΔB / ΣΔP_node > 0` audits the boundary | — |
+| **Stewardship** | Holding symbols, rites, categories, and institutions only inside bearer-complete Justice: `P_node,i` and `P_node,H` rise together under `η = 0`, and every affected bearer, payer, beneficiary, and exposed third party remains visible and nonnegative. `ΣΔB / ΣΔP_node > 0` may diagnose the boundary; it cannot authorize or morally validate the act. | — |
 | **Coercion** | — | Capture, obedience, access-gating, caste-worth hierarchy, gatekeeping |
 
-> Institutional Narrative is permitted only under K2 / `η = 0` / K4 / A7 / Decentralized Authority Model discipline.
+> Institutional Narrative is permitted only under the Justice envelope: non-extraction, accountable authorization, consent, custody, payer/beneficiary disclosure, contestability, correction, reversibility, and Grace Exit.
 
 ## Public-translation risks
 
@@ -87,7 +87,7 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 
 ## Cross-cutting laws
 
-- **K2:** every irreversible act requires natural-person signature.
+- **Accountable authorization:** every consequential act names principal, mandate, scope, consent, custody, expiry/revocation, contest path, actor, and consequence bearer. Private-DAV K2 is one implementation only.
 - **η = 0:** zero extraction; fees only on value created.
 - **K3:** no-deletion; archive-first.
 - **K4:** grace exit; documented withdrawal path (redeemable assets, not "everything").

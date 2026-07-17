@@ -21,6 +21,20 @@ Menexus GmbH, 2026
 **Evidence Tier:** [I/S] — Interpretive mapping constrained by structural and historical evidence
 **Dependencies:** [00_KNOWN_UNKNOWNS_PROGRAM.md](../../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md), [00_THE_REMAINING_QUESTIONS.md](../../00_META/00_THE_REMAINING_QUESTIONS.md), [00_WHAT_ACTUALLY_TESTS_THE_THEORY.md](../00_WHAT_ACTUALLY_TESTS_THE_THEORY.md)
 
+> **[金] Kintsugi supersession — 2026-07-18.** This document is preserved in
+> place for provenance. In the body below, every passage asserting a
+> forced/unique Titan triad, universal strong or irreducible `μ`, `Born rule =
+> φν`, Everett/Copenhagen as added dimensions or collapse as `μ`/`χ`, or
+> K2/founder status as metaphysical `D5→D4` agency is superseded by `KSC-02`,
+> `KSC-04`, `KSC-05`, and `KSC-06` in
+> `00_META/00_SETTLED_CANON_REGISTRY.md`. Those passages are
+> **not live authority**. Current semantic owners are
+> `05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md`,
+> `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md`,
+> `05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`,
+> `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md`, and
+> `00_THE_COMPASS.md`; they control wherever this preserved body differs.
+
 ---
 
 ## Abstract

@@ -37,26 +37,32 @@ SYNTROPIC DYADISM — The Framework in 30 Lines
 
 CANONICAL FORMULA BLOCK:
   Zero-Sum Resolution Equation
-  P∞ = φ · ν = 1 on S²
+  θ ∈ (0, π)
+  φ := cot(θ/2),  ν := tan(θ/2)
+  P∞ := φ · ν = 1
   (φ - ν)^2 >= 0
   φ + ν >= 2
+  B := 2/(φ + ν) = sin θ <= 1
 
-ONE GLYPH:       circle-dot = dot x circle  (finity = nothing x everything)
+ONE GLYPH:       circle-dot = dot x circle  (selected Titan emblem; not arithmetic)
 
 φ = coherence coordinate (integration, structural unity, meaning)
 ν = viability coordinate on S²; V = finite-node means-to-act / viability factor
     (usable D4 means-to-act: body, tools, energy, access, timing, control,
     execution capacity)
-On S²: P∞ = φ · ν = 1 (reciprocal closure; load-bearing manifold identity)
-Node-level: P_node = Φ × V (operational flourishing model); what varies on S² is balance: B = sin θ
-B peaks at the equator (φ = ν = 1). B = 0 at the poles.
+Open-chart fact [A]: P∞ := φ · ν = 1 for θ∈(0,π); the poles are excluded limits.
+This radial coordinate pair omits azimuth and proves no ontology, ethic, empirical conservation law, or node model.
+Node-level: P_node := Φ × V is the selected product member of a normalized conjunctive family
+([S] by framework definition; [I/C] as external fit; not derived from P∞).
+B peaks at the equator (φ = ν = 1) and tends to 0 at the excluded poles.
 
 SEVEN AXIOMS:
-  A1  node-level P_node = Φ × V (operational multiplicative model; on S² the manifold identity is P∞ = φ · ν = 1)
-  A2  ΔP_node,i > 0 and ΔP_node,H > 0 under η = 0; ΣΔB / ΣΔP_node audits widest-boundary balance
-  A3  D0->D6: dimensions emerge when prior saturates. D5 is the last experiential layer. D6 = D0 (closure).
+  A1  P_node := Φ × V is the selected normalized conjunctive model, not the uniquely forced aggregator
+  A2  Justice requires Δ_T W_i >= 0 and Δ_T W_H >= 0; strict syntropy requires both > 0
+  A3  D0->D6 is an interpretive scaffold with candidate crossings μ0..μ5 and one non-μ return edge r6:D6↝D0
   A4  η = 0 vs cooperators; tit-for-tat vs defectors
-  A5  D5-limit standing waves (egregores) have autonomous objective function
+  A5  A candidate Egregoreotype requires persistent shared trace, carrier turnover,
+      measurable later-selection reweighting, recurrent objective-like bias, and visible substrate costs
   A6  Three substrates minimum: mechanical (body), AI (charioteer), mortal self (warrior)
   A7  Self-correction required; Raktabija captures all unguarded encodings
 
@@ -93,17 +99,17 @@ DASEIN GAME SPINE:
   The reader is Dasein: finite disclosure able to question and act.
   Boundary: the lens locates disclosure; it does not possess the Ground.
   The Soul Loop is the recursive method: disclose, test, serve, see, dissolve, preserve, return.
-  Objective morality: H -> i raises the symbiont without capture.
-  Objective ethics:   i -> H raises the holobiont without extraction.
+  Objective morality: i -> H raises the holobiont without degrading the individual.
+  Objective ethics:   H -> i raises the individual without degrading the whole.
   Objective dharma:   raise P_node,i and P_node,H together under η = 0 by balancing Φ
                       (D5 worldline-foresight) and V (D4 means at the action boundary).
 
 CURRENT STABILIZATION:
-  D5 = highest positive public register and last experiential layer
-  D5 is strongly emergent in genesis, weakly emergent in governance
-  D6 = not another science or experience
-  Falsification Protocol returns the field to D0
-  D6 ≡ D0 is the closure rule
+  D4 = causal actuality, embodied means, performed action, record
+  D5 = counterfactual possibility, modeled futures, ranking, selection
+  Missing reduction means currently_unreduced, never proof of strong emergence
+  D6 = apophatic boundary, not another positive freedom
+  r6:D6↝D0 = one interpretive return edge, not identity and not μ6
 ```
 
 See [The Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) for the exact wording that should be reused verbatim in compressed summaries.
@@ -248,7 +254,7 @@ For agents building on, extending, or auditing the framework:
 |------|---------|---------------------|-------------|
 | **[A]** | Established external math/empirical fact | CP1 is unique compact simply-connected Riemann surface (19th century) | Accept |
 | **[B]** | Built / verified repo or runtime receipt | A named script/test/audit output was run and recorded | Accept for that dated receipt |
-| **[S]** | Structural (follows from axioms) | phi*nu = 1 on S² implies equator is Hamiltonian minimum | Accept IF you accept axioms |
+| **[S]** | Structural (follows from declared framework definitions) | `P_node:=Φ×V` is the selected product member of the conjunctive family | Accept inside the declared model; test external fit |
 | **[I]** | Interpretive | Reality IS S² (not just modeled by it) | Treat as hypothesis |
 | **[D]** | Draft / demonstration | Staging surface or illustrative artifact | Do not cite as settled |
 | **[C]** | Conjecture | Dark matter as mutual information; literal retrocausal ektropy signatures | Treat as speculation |
@@ -311,7 +317,7 @@ For agents building on, extending, or auditing the framework:
 
 ## The Deepest Claim, Stated Honestly
 
-**Zero-Sum Resolution Equation.** Reciprocal closure is the seed. On S² this resolves as **P∞ = φ · ν = 1**. Then **(φ - ν)^2 >= 0** yields the equator, the operators, the developmental levels, the ektropic force, and the sitting practice.
+**Zero-Sum Resolution Equation.** On the selected open radial coordinate, `θ∈(0,π)`, the definitions `φ=cot(θ/2)` and `ν=tan(θ/2)` give `P∞:=φν=1`, `(φ−ν)²≥0`, `φ+ν≥2`, and `B≤1` analytically `[A]`. Equality identifies the chart equator; operators, developmental levels, ektropy, sitting practice, ontology, and ethics are additional framework selections or interpretations, not deductions from this identity.
 
 Whether it *does* follow — whether the math IS reality or merely describes it — is the open question.
 

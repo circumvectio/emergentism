@@ -15,19 +15,19 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[S/I]"
+  register: "[I]"
   canonical_phrase: "PD-05 — One/Many Complementarity"
 ---
 
 # PD_05: THE ONE AND THE MANY
 
 **Directory:** `02_PARADOX_DISSOLUTIONS/`  
-**Evidence Tier:** `[S/I]` (Structural/Interpretive)
+**Evidence Tier:** `[I]` (optional philosophical crosswalk; analytic subclaims remain `[A]` in their own domain)
 **Canonical Number:** PD_05 (see [PD_00_INDEX](PD_00_INDEX.md))
 
-> **Evidence Tier: [S/I] Structural-Interpretive.** The multiplicative complementarity of unity and plurality is a structural consequence of the S² geometry (φ·ν=1). The mapping of classical one/many disputes onto this geometry is interpretive. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
+> **[金] Golden Seam (2026-07-17).** The earlier version treated `φν=1` as if sphere geometry forced a substantive One/Many complementarity and treated `S²` as the uniquely stable generative topology. It does neither. For `φ=cot(θ/2)` and `ν=tan(θ/2)`, the product is 1 because the reciprocal chart is defined that way. Mapping unity to `φ` and plurality to `ν` is an optional `[I]` projection; it may orient discussion but transfers no proof and does not settle the classical dispute. `S²` is selected, not uniquely necessary.
 
-> **Companion note:** This dissolution connects directly to the D0-D6 dimensional hierarchy and the Burri Sphere identification. See also [PD_10_IS_OUGHT.md](PD_10_IS_OUGHT.md) for a parallel case where multiplicative constraint dissolves an apparent dichotomy.
+> **Companion note:** This crosswalk can be compared with the D0–D6 scaffold and Burri Sphere model. See also [PD_10_IS_OUGHT.md](PD_10_IS_OUGHT.md), where the same warning applies: a coordinate grammar cannot derive an ought or dissolve a philosophical problem by itself.
 
 ---
 
@@ -45,38 +45,44 @@ Under additive logic, Parmenides is right (unity is real, plurality is illusion)
 
 ## 3. THE DISSOLUTION
 
-On S², unity and plurality are **multiplicative complements**, not additive rivals. The coherence-viability constraint φ·ν=1 IS the resolution.
+Emergentism optionally represents unity and plurality as two reciprocal coordinates on `S²`. Under that chosen mapping, they are modeled as coupled rather than as an exclusive-or. This is a lens on the dispute, not its logical resolution.
 
 - **φ** (coherence) measures the degree of systemic unity — how integrated, how singular the system is.
 - **ν** (viability) measures the degree of functional plurality — how differentiated, how many distinct stable configurations the system supports.
 
-Their product is fixed: φ·ν=1. Increasing coherence (the One becomes more One) necessarily increases the resolution of viable multiplicity (the One projects into more Many). Decreasing coherence (the One fragments) collapses viable distinctness (the Many dissolve into noise).
+Their product is fixed by the coordinate definitions: `φν=1` on `θ∈(0,π)`. Raising one coordinate lowers the other. Whether real unity and plurality behave reciprocally, and whether these variables can be measured without circularity, are independent empirical and philosophical questions.
 
 The **equator** (φ=1, ν=1) is the balance point where unity and plurality are in perfect equipoise. The **north pole** (φ→∞, ν→0) is pure coherent unity — all differentiation collapses. The **south pole** (ν→∞, φ→0) is pure unranked plurality — all coherence dissipates. In the agency register, this becomes the familiar contact rule: `Φ` without `V` is foresight without means, while `V` without `Φ` is means without a ranked worldline.
 
-The one *becomes* many through stereographic projection from the poles to the complex plane (S² ≅ ℂP¹). The many *return* to one through the μ-limit collapse as D4 actuality resolves D5 possibility into concrete singular states.
+Stereographic projection gives a chart between the sphere minus one point and
+the complex plane; it does not make the One become the Many. In the separate agency correspondence, a D5-ranked option may
+become one D4 action attempt through commitment and D4 means. Authorization
+separately evaluates normative validity. That enactment is `χ`, not a
+μ-crossing.
 
-Parmenides and Heraclitus were each describing one hemisphere of the same sphere.
+The framework reads Parmenides and Heraclitus as emphasizing opposite sides of this selected chart `[I]`; that historical-philosophical reading is not established by the geometry.
 
 ## 4. THE FRAMEWORK CONNECTION
 
 - **S² geometry:** The Burri Sphere (S² ≅ ℂP¹) is the geometric structure on which the complementarity is defined. See [03_EFR_AXIOMS.md](../../../README.md) for the axiom set.
-- **D0-D6 hierarchy:** Unity/manifestation maps across the dimensional scaffold. D0 is the primordial undifferentiated point. D5 possibility space contains the full plurality of viable configurations. The μ-limit collapses D5 plurality into D4 singular actuality.
-- **Transcendental Trinity:** The poles {0, ∞} and the equator {1} form the trinity. The One (north, φ→∞) and the Many (south, ν→∞) are unified at the equator where both equal identity.
-- **η = 0:** Extraction (η > 0) distorts the sphere, pushing a system toward a pole while breaking the φ·ν=1 constraint. A system that tries to be infinitely unified while extracting coherence from its environment collapses. A system that fragments without preserving coherence dissipates.
-- **PD_10 connection:** The Is-Ought dissolution uses the same multiplicative structure. The false dichotomy between Is and Ought parallels the false dichotomy between One and Many.
+- **D0-D6 scaffold:** Unity/manifestation maps across an interpretive scaffold.
+  D5 contains modeled possibilities; D4 contains causal actuality and records.
+  `μ₀…μ₅` name candidate emergence crossings; commitment enacts an option.
+- **Transcendental Trinity:** `{0,1,∞}` are selected symbolic/projective roles. Their Titan interpretation is `[I]`, not a forced ontology.
+- **η = 0:** Extraction may move a modeled system off the balance optimum, but it cannot "break" `φν=1` while the reciprocal chart definitions are retained. Non-extraction is a separate Justice norm and durability hypothesis.
+- **PD_10 connection:** The Is/Ought page may reuse the same optional crosswalk; neither page closes Hume's gap or the One/Many dispute by mathematics alone.
 
-## 5. WHAT WOULD FALSIFY THIS
+## 5. KILL AND NARROWING CRITERIA
 
-- **If φ·ν≠1 were demonstrated as a stable condition:** A physical or mathematical system could maintain simultaneous high coherence and high plurality without their product converging to identity. This would break the multiplicative complementarity and restore the additive opposition.
-- **If S² ≅ ℂP¹ were not the unique stable generative topology:** If a different topology (e.g., higher-genus surfaces, hyperbolic planes) were shown to support stable emergence while violating the φ·ν constraint, the dissolution loses its geometric foundation.
-- **If a synthesis of One and Many were achievable without multiplicative structure:** Any philosophical framework that successfully resolves the one/many tension through purely additive or linear means would demonstrate that the S² geometry is unnecessary for this dissolution.
-- **If equatorial balance were empirically non-functional:** If systems at φ=1, ν=1 showed no distinctive stability or generative properties compared to polar configurations, the equator-as-balance-point claim fails.
+- Operational measures of unity and plurality are not reciprocal, or the mapping adds no predictive/explanatory discrimination over ordinary language.
+- Additive, lattice, category-theoretic, process, higher-genus, or other models handle the target cases as well or better.
+- The equatorial model predicts distinctive stability or coordination that does not appear under preregistered tests.
+- Users mistake the crosswalk for a proof or treat alternative philosophical resolutions as topologically impossible; in that case demote the page to historical metaphor.
 
 
 ---
 
-> **What is proven vs interpreted in this document:** See the [Steel Thread](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/25_STEEL_THREAD.md) — 8 links of established mathematics, 3 links of interpretation. The boundary between proof and conjecture is explicitly marked.
+> **What is proven vs interpreted:** only the scoped projective and reciprocal-chart mathematics is `[A]`. The One/Many assignment, philosophical use, D-level mapping, and normative implications are `[I/C]` and removable.
 
 ---
 

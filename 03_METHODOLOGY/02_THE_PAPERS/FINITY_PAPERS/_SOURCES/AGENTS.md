@@ -31,6 +31,6 @@ rosetta:
 
 - Do not edit PDF content.
 - Do not upgrade third-party claims without independent verification.
-- All irreversible actions require K2 envelope staging.
+- Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.
 
 ⊙ = • × ○

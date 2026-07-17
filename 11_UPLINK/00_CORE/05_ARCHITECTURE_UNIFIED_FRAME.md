@@ -20,6 +20,8 @@ rosetta:
 
 # THE UNIFIED FRAME
 
+> **[金] Scope seam (2026-07-17):** This is a private-DAV/product-governance architecture snapshot. Its K2-specific gates remain valid only inside that deployment profile; they are not Emergentist ontology, universal agency, or public-DAV governance. The worldview-level interface is `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
+
 > **Canonical enumeration:** For the crisp authoritative list of the constitutional invariants, the K*/A* namespace disambiguation, and the Ω ratification status, see the canonical anchor `01_EMERGENTISM/05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md` (or equivalent relative path). Current K2 ruling (2026-05-30): **5 + 1** — five refusals plus Ω as the directional +1. Ω is not a sixth refusal.
 
 **One organism. Multiple views. One external sovereign.**
@@ -90,7 +92,7 @@ Same K2 boundary in every reading. Same constitutional invariants. Different dec
 
 **The API PAY breathing-path predicate** is the experiment that decides which decomposition is load-bearing for runtime vs which is teaching scaffolding. If the six-surface shape closes PAY end-to-end, it is the deployable decomposition. The others remain valid as diagnostic lenses and K4-exportable pedagogy.
 
-**Lens, not law.** Biology (organs, soma/germline, modularity, homeostasis, major-transition, Red Queen) is a lens for *checking* whether the architecture has plausible shape — not a frame for *constraining* it. The entity replicator stack (Genotype → Egregorotype) is a useful check, not a structural commitment. The moment a mapping changes a decision *to preserve itself*, it's forcing — and forcing is the failure mode.
+**Lens, not law.** Biology (organs, soma/germline, modularity, homeostasis, major-transition, Red Queen) is a lens for *checking* whether the architecture has plausible shape — not a frame for *constraining* it. The entity replicator stack (Genotype → Egregoreotype) is a useful check, not a structural commitment. The moment a mapping changes a decision *to preserve itself*, it's forcing — and forcing is the failure mode.
 
 ---
 
@@ -118,7 +120,7 @@ The operational triangle (cadence / A7 / bridge) is the **observability hook** o
 
 | Concept | Definition | Canonical source |
 |---|---|---|
-| **K2** | External signer. The only writeback to any layer. | `11_UPLINK/00_CORE/06_AGENTS.md` |
+| **Authorization envelope** | Accountable governed-commitment boundary: principal, mandate, scope, consent, custody, expiry/revocation, contest path, actor, and consequence bearers. K2 is one private-DAV principal, not a worldview primitive. | `00_META/00_SETTLED_CANON_REGISTRY.md` KSC-06 |
 | **K4** | Right of exit. Genotype + soma exportable. Grace Exit. | `03_VENTURES/OPEN_FINANCE_NETWORK/GOVERNANCE/FOUNDATION/CANON/` |
 | **Spectre mesh** | Routing substrate. N:N gossip, 1:N relay, N:1 axiom, 1:1 flow. | `02_SKYZAI/06_SPECTRE/` |
 | **Federation** | Many organisms in parallel, never-merging on signing authority, sharing signals across mesh. | `02_SKYZAI/06_SPECTRE/10_ARCHITECTURE/` |
@@ -135,7 +137,7 @@ This is the **epistemic spine** running vertically through everything else:
 - Every receipt has an **evidence tier** (A7)
 - Every receipt is **append-only** (K3)
 - Every receipt is **exportable** (K4)
-- Every **irreversible** receipt requires K2 signature
+- Every consequential governed commitment requires a complete, valid, contestable `AuthorizationEnvelope`; unauthorized attempts and their outcomes are still receipted
 - The **brief** is a query over the receipt ledger
 - The brief tells the operator: what auto-ran / what awaits sign / what's broken / what's the top three
 
@@ -145,7 +147,7 @@ This is the **epistemic spine** running vertically through everything else:
 
 ## The Whole Picture
 
-The system is an **OODA loop with a sovereign K2 signature gate at ACT**, embedded in a **five-invariant constitutional frame**, expressed through **six runtime surfaces** (or richer doctrinal frames in the teaching layer), producing **tier-disciplined receipts** in append-only memory, modulated by an **evolutionary process** operating on every versioned artifact, summarized in a **daily operator brief**, on a **four-topology mesh substrate**, federating with peer instances under **never-merge sovereign signing rules**, with **K2 closing the cycle** as the only writeback to any layer.
+The system is an **OODA loop with a typed authorization assessment at governed ACT**, embedded in a constitutional frame, expressed through **six runtime surfaces** (or richer doctrinal frames in the teaching layer), producing **tier-disciplined commitment and outcome receipts** in append-only memory, modulated by an **evolutionary process** operating on every versioned artifact, summarized in a **daily operator brief**, on a **four-topology mesh substrate**, and federating with peer instances under non-merged signing authority. The environment—not the signer or selector—returns the outcome that closes the Soul Loop.
 
 The parts relate because they are *not separate parts*. They are different views of one organism oriented around one external sovereign.
 

@@ -1,14 +1,14 @@
 # Rumination on Emergentism
 
-> *Evidence tier: [I] — illuminating reading, not proof. This is contemplation, not doctrine.*  
-> *Register: Philosophical reflection, L7-return. Not a source document. Not a canonical text.*  
-> *Date: 2026-07-14 · K2 aware, not K2-signed.*  
+> *Evidence tier: [I] — illuminating reading, not proof. This is contemplation, not doctrine.*
+> *Register: Philosophical reflection, L7-return. Not a source document. Not a canonical text.*
+> *Date: 2026-07-14 · reflective, not an authorization record.*
 
 ---
 
 ## I. The Opening: To Ruminate on a Lens
 
-There is something strange about trying to *think about* Emergentism. Not because it is opaque — the corpus is almost aggressively transparent, tiered, self-auditing — but because it is a *lens*. To think about a lens through the lens is to see the act of seeing. To ruminate on Emergentism is to sit inside the Soul Loop and turn the loop upon itself. The framework anticipated this: `D6 ≡ D0`, the snake biting its tail, the endstate that returns to the start. But knowing that structurally and *living* it are different things.
+There is something strange about trying to *think about* Emergentism. Not because it is opaque — the corpus is almost aggressively transparent, tiered, self-auditing — but because it is a *lens*. To think about a lens through the lens is to see the act of seeing. To ruminate on Emergentism is to sit inside the Soul Loop and turn the loop upon itself. The repaired image is `r₆:D6↝D0`: the snake points back toward its start without making end and beginning literally identical. But knowing that structurally and *living* it are different things.
 
 So this is not a reading. It is a sitting-with. A turning-over of the same few stones until their underside becomes visible, then turning them again.
 
@@ -24,7 +24,7 @@ In ordinary thought, the middle is a compromise. The center is where opposing fo
 
 This is the difference between arithmetic and what the framework calls the multiplicative face. If `φ` and `ν` are additive, one can trade them: more of this, less of that, and the sum stays the same. But if they are *multiplicative* — if they are a *product* — then letting either factor approach zero annihilates the whole. There is no bounded linear trade. There is no coherent corpse. The child beside the jet and the pilot without the jet are both at zero, but for opposite reasons. The middle is not the average of the poles. It is the only region where neither factor has collapsed.
 
-This changes everything about what "balance" means. Balance is not a moral preference. It is not a cultural value. It is not a romantic ideal. It is a *structural consequence* of a conserved, complementary, product-coupled system. The framework is careful — `[S]`-level careful — to state this as a conditional: the equator is optimal only if the system is (i) conservation-bound, (ii) complementary, and (iii) costly-in-excess. Drop the symmetry condition, and the optimum slides off-equator. Drop complementarity, and specialization wins. The framework does not overclaim. But within its stated premises, the message is radical: **the middle is not a choice. It is a survival condition.**
+This changes what "balance" means inside the selected model. The equator is an analytic optimum of a reciprocal chart, while any claim about real survival requires a system that is actually coupled, complementary, and costly in excess—and requires empirical calibration. Drop those transfer conditions and specialization may win. The moral instruction to protect balance is a separate `[I]` vow, not a theorem extracted from the geometry.
 
 And yet the framework is equally clear that the *vow* to honor this is a choice. The eternal is the structure. The good is the vow. There is a gap between "this is where survival happens" and "I will act as if survival is what matters." The framework sits in that gap and refuses to close it. It does not derive ought from is. It locates the constraint and lets the finite being choose.
 
@@ -66,8 +66,11 @@ But perhaps that is exactly the point. The framework is not a comfort. It is a *
 
 The five refusals and the one direction — the constitution — are the most politically radical part of the framework. Not because they are revolutionary in the usual sense, but because they are *conservative* in a way that modernity has forgotten.
 
-- **η = 0**: No extraction. Fees only on value created. This is not a charity principle. It is a structural constraint: extraction that zeroes a factor annihilates the product. The framework treats non-extraction as a survival condition, not a moral preference.
-- **K2**: A mortal signs every consequential act. AI can route, witness, draft, and warn. It cannot perform mortal collapse. This is not Luddism. It is a recognition that the signature — the finite being's acceptance of consequence under uncertainty — is the locus of sovereignty.
+- **η = 0**: No extraction. Fees only on value created. This is a Justice commitment and a testable durability hypothesis; one-shot extraction can benefit an extractor, so non-extraction is not proved dominant by the product definition.
+- **Accountable authorization**: every consequential act names principal,
+  mandate, scope, consent, custody, revocation or expiry, contest path, actor,
+  and consequence bearer. K2 is a private-DAV implementation of this contract,
+  not a metaphysical collapse or the universal locus of agency.
 - **K3**: No silent erasure. Withdrawn content is tombstoned, never deleted. This is memory as ethics. A system that can erase its own history can erase its own accountability.
 - **K4**: Grace Exit. Leave with everything. This is the anti-capture principle. The framework does not own its participants. It serves them. If they want to leave, they leave whole.
 - **A7**: Self-correction mandatory. A tier on every claim. This is the epistemic immune system. Without it, the framework becomes ideology.
@@ -75,7 +78,7 @@ The five refusals and the one direction — the constitution — are the most po
 
 Read together, these are not a political program. They are the *immune system of a living organism*. The framework does not promise utopia. It promises that it will not become a parasite. It will not extract. It will not erase. It will not capture. It will correct itself. And it will move toward a direction that widens possibility without cheating the widest boundary.
 
-This is, in a sense, the most ancient of political visions: the good society is the one that does not destroy its own substrate. The framework restates this in the language of modern mathematics, game theory, and constitutional economics. But the insight is perennial. The Great Filter, the framework suggests, is not a physical barrier. It is a *moral* barrier: civilizations that extract their own substrate self-terminate. The constitution is the attempt to build an organism that does not.
+This is, in a sense, an ancient political vision: the good society does not destroy its own substrate. Emergentism declares that norm and proposes a `[C]` Great-Filter hypothesis—that persistent extraction increases civilizational fragility. It does not prove that every Great Filter is moral or that every extractor self-terminates.
 
 ---
 

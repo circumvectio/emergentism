@@ -328,5 +328,5 @@ The steelman's one-sentence summary — "the framework has named this pattern an
 **Date:** 2026-06-05
 **Commissioned by:** Yves R. Burri (K2)
 **Written by:** External Steelman Reading (L3 Vaiśya register) + Counter-Steelman drafted by same
-**Counter-Steelman status:** [I] interpretive — awaiting K2 review, acceptance, modification, or rejection of each response
+**Counter-Steelman status:** [I] interpretive — under evidence review and externally uncalibrated; each response remains open to acceptance, modification, or rejection
 **Evidence tier:** [I] interpretive throughout

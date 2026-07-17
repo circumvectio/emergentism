@@ -13,6 +13,15 @@ rosetta:
 # THE CLOSURE
 ## D6 = D0: The Return to Nothing
 
+> **[金] Literal-identity supersession — 2026-07-18.** The heading and body below
+> preserve historical return imagery; `D6=D0` is not live canon. D6 opens no
+> positive freedom, and exactly one differently typed relation returns from it:
+> `r₆:D6↝D0`, an interpretive/apophatic edge—not equality and not `μ₆`. D4 is
+> causal actuality; D5 contains merely-possible counterfactual content, while
+> actual model tokens, rankings, and selections remain D4 carriers. See
+> [Dimensional Closure](../03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md) and
+> [D4/D5 Canonical Reference](../03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md).
+>
 > **Historical compatibility document (pre-hardening, 2026-03-23).** This file is preserved as part of the Trinity genesis sequence, not as the current tier-authority surface for Foundation claims.
 >
 > **Pole-notation correction:** in the current chart, `ν = 0` is the north-pole boundary (`φ → ∞, ν → 0`) and `φ = 0` is the south-pole boundary (`φ = 0, ν → ∞`). Closure language below is a limit-image; the manifold identity `φ · ν = 1` applies on the open sphere, not at the poles themselves.

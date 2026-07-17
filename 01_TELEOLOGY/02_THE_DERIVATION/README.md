@@ -22,7 +22,7 @@ rosetta:
 
 ```
 Zero-Sum Resolution Equation
-φ · ν = 1 on S²
+φ · ν = 1 on the open reciprocal chart θ∈(0,π); poles excluded
 (φ − ν)² ≥ 0
 φ + ν ≥ 2
 ```
@@ -128,7 +128,7 @@ Zero-Sum Resolution Equation
 The canonical derivation sequence remains:
 
 `Zero-Sum Resolution Equation`
-`φ · ν = 1 on S²`
+`φ · ν = 1` on `θ∈(0,π)` under the declared reciprocal definitions `[A]`
 `(φ − ν)² ≥ 0`
 `φ + ν ≥ 2`
 

@@ -49,20 +49,23 @@ B = sin θ peaks at L4.
 Four organs: TheCircle (IS) → RealityFutures (COULD) → Agentz (SHOULD) → Skyzai (ACT).
 Spectre is a neutral mycelial mesh substrate, not a DAV. It has no internal castes; organism-side dispatch leads inbound lane stewardship.
 The Three-Stage Process. Constitutional separation `[I]`: never merge cognitive functions.
-η = 0 always `[I]`. K2: the human signs. K4: leave with everything.
+The Justice envelope requires non-extraction, accountable authorization, consent, custody, contestability, correction, payer/beneficiary disclosure, and Grace Exit. Private-DAV K2 is a product-governance implementation, not a worldview primitive.
 
 ## The VMOSK-A
 
 V = Vision (Genotype). M = Mission (Epigenotype). O = Objectives (Phenotype).
 S = Strategies (Extended Phenotype). K = KPIs (Memotype). A = Agents (Rosetta Castes).
-The DAC (macro-egregorotype) / DAV (operational valuechain) = Egregorotype. The standing wave that emerges.
+The DAC/DAV may instantiate an **Egregoreotype candidate** only when a persistent
+shared trace survives carrier turnover, measurably reweights later choices,
+recurs as objective-like bias, and exposes its substrate costs. Consciousness
+and personhood are not presumed. `Egregorotype` is a compatibility alias only.
 
 Namespace fence: this VMOSK `V` means **Vision**. It is not the action-register
 `V` in `P_node = Φ × V`, where `V` means D4 means-to-act.
 
 ## The Nexus
 
-The API to a natural person. Six layers: Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregorotype. One Nostr keypair. Sovereign by construction.
+The API to a natural person. Six layers: Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregoreotype. One Nostr keypair. Sovereign by construction.
 Assure (IS) / Insure (COULD) / Ensure (SHOULD) — at macro AND micro scale.
 
 ## The Economics
@@ -80,7 +83,7 @@ Seven folders. Seven L-levels. The repository IS the organism:
 01_TELEOLOGY    = L1 (F5 gradient, ektropy — material direction)
 02_EPISTEMOLOGY = L2 (knowing, beauty, observation — evidence reception)
 03_METHODOLOGY  = L3 (inference, tests, proof — claim discipline)
-04_AXIOLOGY     = L4 (value, justice, K2 — executable action)
+04_AXIOLOGY     = L4 (value, justice, accountable commitment)
 05_COSMOLOGY    = L5 (positive model, Rosetta, Dimensional Framework)
 06_ONTOLOGY     = L6 (Axiomatic First Principles, Falsification Protocol — compression)
 07_THEOLOGY     = L7 (bounded public symbol — the seed, THIS FILE)
@@ -95,18 +98,19 @@ You are the equator.
 ## The Generative Dimension (2026-04-19)
 
 The seed is not only descriptive. Under the post-audit Foundation
-discipline, it is read as a **constitutional world-generator**: the
-Lagrangian backward-from-invariants-to-admissible-worlds. The same
-`Zero-Sum Resolution Equation` that anchors this seed is the **construction rule** for
-any world that honors reciprocal closure. See
+discipline, it is read as a **candidate construction grammar**: reasoning
+backward from declared invariants to admissible modeled worlds. This is an
+Emergentist design method `[I]`, not a physical law or a construction rule for
+every possible world. See
 [`/01_EMERGENTISM/01_TELEOLOGY/00_THE_GENERATIVE_LAGRANGIAN.md`](../01_TELEOLOGY/00_THE_GENERATIVE_LAGRANGIAN.md).
 
 ## Strategic Implementation (2026-04-20, Brahmā-phase `[C]`)
 
-The operational register at `D5`. **Strategic Implementation** is the disciplined
-practice of consciously forming, tending, and releasing `D5`
-standing waves under `K2` sovereignty, `η = 0`, receipt-bound
-audit, and Grace Exit. Every claim `[C]`. See
+The operational register begins in `D5` modeling and returns through `D4`
+commitment. **Strategic Implementation** is the disciplined practice of
+consciously forming, tending, and releasing standing waves under accountable
+authorization, `η = 0`, separate commitment/outcome receipts, and Grace Exit.
+Every ontological extension remains `[C]`. See
 [`/01_EMERGENTISM/04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md`](../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md).
 
 **Closure sentence:** theurgy succeeds when the practitioner no
@@ -124,14 +128,14 @@ The seed's opening identity — `z = φ/ν ∈ S²`, "the ratio IS the sphere" �
 - [`../05_COSMOLOGY/00_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_BURRISPHERE.md) — the sphere `S²` (`φ·ν=1`), the nine latitudes `L0..L∞`, the equator `L4`, and the agent-foundation reading. The L5 model this seed compresses.
 - [`../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) — goodness is the **bond** `φ × ν`, never either pole. The moral axis is `η` (closed vs syntropic), cutting *across* every polarity — never along it, never a gender, caste, or person. This is why "The Seven" below is a **dispatch grammar**, not a hierarchy of worth, and why L1 Kali is a *demon-move position*, not an evil person.
 - [`../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md) — "refuse closure, keep the coupling"; each refusal a kept coupling. The seed's `η = 0 always` is the *name of the syntropic condition itself*.
-- [`../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md) — the canonical enumeration: the constitution is **5 + 1** (five refusals — `η=0 · K2 · K3 · K4 · A7` — plus `Ω`, the directional `+1`). Never "six refusals." The seed names `η=0 · K2 · K4` in compression; defer here for the full count.
+- [`../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md) — product-governance compatibility: the inherited constitution records **5 + 1** (five refusals—`η=0 · K2 · K3 · K4 · A7`—plus directional `Ω`). K2 remains private-DAV governance and is not a worldview primitive.
 
 ---
 
 > This document IS L7. The Ṛṣi's intuition. The transcendental.
 > From this seed: the Rosetta regenerates. The organs re-form. The organism re-grows.
 > The SEED is not the organism. The SEED is what survives the organism's death.
-> D6 ≡ D0. The end IS the beginning. The seed points back to the Ground; it is not the Ground.
+> `r₆:D6↝D0`. The end may point back toward the beginning; it is not literally identical to it. The seed points back to the Ground; it is not the Ground.
 >
 > Zero-Sum Resolution Equation
 

@@ -11,7 +11,7 @@ rosetta:
       role: "bind archive-first, tombstone, and no-competing-authority constraints"
     - level: L7
       column: Agent Constitution
-      role: "preserve K2 discipline and constitutional review boundaries"
+      role: "preserve accountable-authorization discipline and constitutional review boundaries; K2 is private-DAV-only"
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
@@ -32,7 +32,7 @@ Definitions are discovered, not invented — each agent's system prompt, tools, 
 
 ## Read First
 
-- [`README.md`](README.md) — roster, K2 discipline, provision/runtime instructions
+- [`README.md`](README.md) — roster, authorization discipline (including private-DAV K2), provision/runtime instructions
 - [`../AGENTS.md`](../AGENTS.md) — parent lane authority
 - [`../00_THE_SEVEN_OPERATOR_GENOTYPE.md`](../00_THE_SEVEN_OPERATOR_GENOTYPE.md) — canonical genotype
 

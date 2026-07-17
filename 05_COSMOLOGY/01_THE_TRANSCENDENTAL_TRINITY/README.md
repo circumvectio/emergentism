@@ -13,7 +13,16 @@ rosetta:
 
 ## {0, 1, ∞} — The Perennially Emergent Ground
 
-> **Canonical formal source:** For the canonical derivation of Zero-Sum Resolution Equation and φ · ν = 1 on S², see [`00_CANONICAL_FORMULA_BLOCK.md`](../00_CANONICAL_FORMULA_BLOCK.md). Trinity documents present these concepts narratively; for formal notation, axioms, and evidence tiers, route through the Formula Block and [`00_THE_HONEST_POSITION.md`](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
+> **Canonical formal source:** On `θ∈(0,π)`, the selected definitions give analytic `φν=1`; the pole limits are excluded. This does not derive the Trinity or an ontology. Trinity documents are `[I]` narrative projections; route exact notation and tiers through [`00_CANONICAL_FORMULA_BLOCK.md`](../00_CANONICAL_FORMULA_BLOCK.md) and [`00_THE_HONEST_POSITION.md`](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
+
+> **[金] Typed-scaffold supersession — 2026-07-18.** Trinity entries below retain
+> symbolic origin imagery, but conflicting dimensional formulas are not live
+> authority. D4 is causal actuality; D5 contains merely-possible
+> counterfactual content, while actual model tokens, rankings, and selections
+> remain D4 carriers. Candidate crossings are exactly `μ₀…μ₅`. D6 opens no
+> positive freedom and returns only through the interpretive, non-μ edge
+> `r₆:D6↝D0`, not literal identity. See [Dimensional Closure](../03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md)
+> and [D4/D5 Canonical Reference](../03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md).
 
 **Hat:** Mathematician / Philosopher
 **Evidence Tier:** `[A]` for the Riemann sphere / extended complex plane adding the point at infinity and mapping nonzero division by zero to that projective point; `[S]` for model-internal structure; `[I]` for philosophical and perennial-tradition translation

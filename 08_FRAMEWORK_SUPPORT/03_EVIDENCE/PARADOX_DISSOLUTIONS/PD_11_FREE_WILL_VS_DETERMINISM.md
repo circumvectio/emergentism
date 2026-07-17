@@ -27,7 +27,7 @@ rosetta:
 
 > **Evidence Tier: [S/I].** The structural component follows from the framework's coordinate/action split: `φ/ν` names reciprocal coordinates on S², while `Φ/V` names finite-node factors at the D4/D5 action boundary. The interpretive component is the mapping of classical free-will terminology onto that structure. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 
-> **Claim Boundary:** `[S/I]` This document models the free-will dilemma as D4/D5 coordinate tension. It does not prove libertarian free will, disprove compatibilism, or establish a neural mechanism for μ-limit transition. "Agency" here means an operational framework reading: D5 worldline-foresight and D4 means-to-act are both represented as present.
+> **Claim Boundary:** `[S/I]` This document models the free-will dilemma as D4/D5 coordinate tension. It does not prove libertarian free will, disprove compatibilism, or establish a neural mechanism for the Soul Loop. "Agency" here means an operational framework reading: D5 worldline-foresight and D4 means-to-act are both represented as present.
 
 > **Migration note:** The earlier treatment (`PD_02_FREE_WILL.md`) is a legacy file. This document (PD_11) is the canonical indexed entry per the definitive numbering table.
 
@@ -61,7 +61,11 @@ On S², "determined" is mapped to D4 (actuality, the represented actual state). 
 
 Within this model, freedom is not the absence of causation, and determination is not the absence of choice. They are complementary readings of one modeled point: on open S² the reciprocal coordinates obey `P∞ = φ · ν = 1`, while contact action is scored separately as `P_node = Φ × V`.
 
-The agent's "will" is modeled as traversal across the D4-D5 boundary via the μ-limit. At every moment, the agent is represented by a point on S² with coordinate images and, in the contact register, by finite-node factors `(Φ, V)`. The D5 projection shows what *could* be (the space of coherent, rankable possibilities). The D4 projection shows what *is available to act with* (actualized state, body, tools, energy, access). Choice is modeled as the μ-limit transition: the framework's name for D5 possibility becoming D4 actuality through available means.
+The agent's "will" is modeled by the Soul Loop, not by a μ-crossing. At every
+moment, D5 represents coherent, rankable possibilities while D4 represents
+actual state and means: body, tools, energy, and access. Authorization is a
+separate normative predicate. The selector commits one attempt and emits a commitment receipt; the world then
+returns a separate outcome receipt. `μ₀…μ₅` remain candidate emergence labels.
 
 At the equator (Φ = 1, V = 1 in the normalized contact reading), the agent has maximum balance in the model — enough coherence to envision and rank options (D5 possibility) and enough viability as relevant means-to-act (D4 actualization). Balance is the constraint that keeps agency usable, not the whole objective by itself. The objective is the lawful selection of a reachable future without extraction.
 
@@ -69,7 +73,10 @@ The "problem" is reframed within the framework because freedom and determination
 
 ## 4. THE FRAMEWORK CONNECTION
 
-The D0-D6 dimensional hierarchy provides the scaffolding. D4-D5 boundary traversal (the μ-limit) names the modeled boundary operation. The equator (Φ = 1, V = 1 in normalized contact coordinates) defines the region where modeled agency has both usable foresight and usable means.
+The D0-D6 scaffold provides an interpretive taxonomy. D5 models possibilities;
+D4 supplies actual means and records. The equator (Φ = 1, V = 1 in normalized
+contact coordinates) defines the model region where agency has both usable
+foresight and usable means; it does not by itself authorize an act.
 
 Responsibility is modeled as tracking equatorial position plus reachable consequence. An agent at the equator — balanced coherence and viability — has represented access to D5 possibility space and represented D4 means to act. This is the model's account of freedom. An agent far off-equator — depleted coherence (Φ → 0) or depleted viability (V → 0) — has diminished access to possibility or diminished access to the means needed to actualize. The proposal is that responsibility scales with usable foresight, usable means, and the non-extractive shape of the chosen move.
 
@@ -81,7 +88,9 @@ The proposal loses force if:
 
 1. **D4-only core state were sufficient.** If a purely physical, deterministic account can explain agency, choice, and moral responsibility without reference to D5, the coordinate/action split is unnecessary. [S/I] Compatibilism would win by default.
 
-2. **The μ-limit has no empirical proxy.** If there is no detectable transition pattern between possibility representation and actualization at the neural, cognitive, or behavioral level, the proposal remains a structural analogy with no empirical traction.
+2. **The Soul Loop has no empirical discriminator.** If interventions on
+   represented futures do not change present action distributions, the
+   model-mediated future-influence claim loses empirical traction.
 
 3. **Equatorial balance does not correlate with agency.** If agents with high coherence and high capability do not demonstrably exhibit more "free" behavior than agents at the extremes, the geometric mapping is ornamental rather than explanatory.
 

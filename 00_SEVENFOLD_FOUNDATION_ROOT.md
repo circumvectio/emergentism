@@ -23,7 +23,8 @@ The sevenfold root is a filing grammar, not the Ground.
 
 It exists so the corpus can stop mixing rational discipline, esoteric practice, and public symbolic translation in the same undifferentiated surfaces. It does not create a new doctrine and it does not authorize gatekeeping.
 
-The root is valid only if it makes direct seeing, evidence-tier honesty, and K2-signed action easier.
+The root is valid only if it makes direct seeing, evidence-tier honesty, and
+accountable, contestable action easier. K2 remains private-DAV governance only.
 
 ---
 
@@ -56,7 +57,7 @@ The root is valid only if it makes direct seeing, evidence-tier honesty, and K2-
 | 1 | **Objective Function** | L1 / Empirical Observation | Where does life tend? | F5 / ektropy / Power Max / raw gradient | progress ideology |
 | 2 | **Data Science** | L2 / Comparative Analysis | How do we know? | Beauty / comparison / pattern disclosure | hallucinated pattern |
 | 3 | **Auditing** | L3 / Inferential Logic | How do we test and proceed? | Truth / inference / audit / deduction | sterile procedure |
-| 4 | **Value Alignment** | L4 / Strategic Abduction | What matters and who signs? | Justice / value / K2-signed theurgy | moral performance or blind action |
+| 4 | **Value Alignment** | L4 / Strategic Abduction | What matters, who may act, and who bears the consequence? | Justice / value / accountable commitment | moral performance or blind action |
 | 5 | **System Architecture** | L5 / Structural Analysis | How is reality structured? | Emergentism / S2 / Rosetta / formal system | idolatry of structure |
 | 6 | **Core State** | L6 / First Principles | What is prior to structure? | Axiomatic First Principles / Falsification Protocol / not-this | possession of the Ground |
 | 7 | **Institutional Narrative** | L7 / Intuitive Synthesis | How is the mission-critical taught publicly? | mythic-symbolic return for social coordination | gatekeeping / capture |
@@ -74,7 +75,7 @@ The seven roots are not only a flat list. They also have a Rosetta-depth reading
 | L1 | Caṇḍāla | **Objective Function** | Empirical Observation / direct gradient-sensing | survival-pressed F5 direction before social mediation |
 | L2 | Śūdra | Data Science | Comparative Analysis / comparison | Beauty becomes visible and workable |
 | L3 | Vaiśya | Auditing | Inferential Logic / inference | Truth disciplines the pattern |
-| L4 | Kṣatriya | **Value Alignment = Strategic Implementation** | Strategic Abduction / strategic abduction | the mortal signs value into action under uncertainty |
+| L4 | Kṣatriya | **Value Alignment = Strategic Implementation** | Strategic Abduction / strategic abduction | an accountable agent commits under uncertainty and accepts a contestable receipt |
 | L5 | Brāhmaṇa | **System Architecture / Emergentism** | systematic structural reading | the affirmative model of how reality works |
 | L6 | Sādhu | **Core State / Apophasis** | First Principles / non-apprehension | the Ground prior to structure; not-this discipline |
 | L7 | Ṛṣi | **Institutional Narrative / public-symbol return** | Intuitive Synthesis / transcendental intuition | the insight returns as symbolic form for the species |
@@ -83,7 +84,7 @@ The seven roots are not only a flat list. They also have a Rosetta-depth reading
 
 At L4, value alignment and theurgy are one act.
 
-Answering "what has value?" and signing "I choose this branch" are not separable for a mortal. Value Alignment without theurgy becomes unsigned philosophy. Strategic Implementation without value alignment becomes blind activism. K2 is the equatorial act: the warrior signs under uncertainty, with incomplete information, and accepts the consequence.
+Answering "what has value?" and committing "I choose this branch" are not separable for a finite agent. Value Alignment without action becomes unsigned philosophy. Strategic Implementation without value alignment becomes blind activism. The equatorial act is a typed commitment inside an `AuthorizationEnvelope`: principal, mandate, scope, consent, custody, revocation or expiry, contest path, actor, and consequence bearer. K2 remains a private-DAV governance implementation, not a primitive of agency or the worldview.
 
 This is why the Three-Stage Process-to-Four-Stage Analytical Model pivot happens at L4. L1-L4 ascends through task-positive engagement: survival, gathering, inference, sacrifice. L5-L7 descends through systemic reflection: system architecture, apophasis, institutional narrative. L4 is where ascent and descent meet.
 
@@ -91,7 +92,7 @@ This is why the Three-Stage Process-to-Four-Stage Analytical Model pivot happens
 
 Emergentism as a positive system belongs primarily at L5 System Architecture, not at L6 Core State.
 
-`phi · nu = 1 on S2`, the Rosetta Stone, the formal system, the replicator stack, and the Dimensional Framework are affirmative structural claims. They describe how reality is modeled within the framework. That is system architecture.
+The selected open-chart definitions `φ=cot(θ/2)` and `ν=tan(θ/2)` for `θ∈(0,π)`, the Rosetta Stone, the formal system, the replicator stack, and the Dimensional Framework are affirmative modeling commitments. The identity `φ·ν=1` is an analytic chart fact `[A]`; interpreting it as reality is `[I/C]`. That distinction belongs to system architecture.
 
 Core State proper is L6: the axiomatic layer that refuses to identify the Ground with any positive structure, including Emergentism itself. Packet `139` therefore belongs at L6. Confusing L5 system architecture with L6 core state is the root personalization/gatekeeping error: the symbol starts pretending to be the Ground.
 
@@ -110,7 +111,7 @@ The Dimensional Framework and the Leadership Pipeline are parallel structures, n
 - **D** is dimensional / phenomenological: D0-D6 names emergence, experience, public register, and axiomatic closure.
 - **L** is developmental / vocational: L1-L7 names roles, practices, pramanas, and corpus ownership.
 
-They resonate but must not be collapsed. `D6 ≡ D0` has an Leadership Pipeline analogue: L7 Institutional Narrative returns the transcendent insight to L1 survival through public symbol, childhood formation, ritual, and institutional category-structure.
+They resonate but must not be collapsed. The interpretive return edge `r₆:D6↝D0` has a Leadership Pipeline analogue: L7 Institutional Narrative returns the transcendent insight to L1 survival through public symbol, childhood formation, ritual, and institutional category-structure. This return is not a literal identity and not a seventh μ-crossing.
 
 ---
 
@@ -138,7 +139,7 @@ Current source surfaces include [`02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONES
 
 ### Value Alignment — Justice / Value / Abduction
 
-Value Alignment owns value-reading and situated action under incomplete information. Justice is the discipline of serving `ΣΔP > 0` across the widest boundary.
+Value Alignment owns value-reading and situated action under incomplete information. Justice quantifies over every materially affected bearer—individual, sustaining whole, payer, beneficiary, and exposed third party. No aggregate gain may launder a named bearer's loss; authorization, custody, consent, contestability, reversibility, exit, actor, and consequence bearer remain visible.
 
 Current source surfaces include [`03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md`](03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md), [`04_AXIOLOGY/02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md`](04_AXIOLOGY/02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md), [`08_FRAMEWORK_SUPPORT/02_OPERATORS/`](08_FRAMEWORK_SUPPORT/02_OPERATORS/), packets `129` and `141`.
 
@@ -154,15 +155,18 @@ Current source surfaces include the Rosetta Stone, [`05_COSMOLOGY/03_FORMAL_SYST
 
 ### Core State — L6 What Is Before Structure
 
-Core State owns the axiomatic origin question. The Ground is prior to all description. The Field can be modeled cosmologically as `phi · nu = 1 on S2`, but core state proper refuses to identify the Ground with that model. Beings and replicator stacks are structured readings within the field, not possessions of the Ground.
+Core State owns the axiomatic origin question. The Ground is prior to all description. On the selected open reciprocal chart, `θ∈(0,π)`, the definitions `φ=cot(θ/2)` and `ν=tan(θ/2)` give the analytic identity `φ·ν=1`; the poles are excluded singular limits. Core state proper refuses to identify the Ground with that chart. Beings and replicator stacks are structured readings within the field, not possessions of the Ground.
 
 Current source surfaces include `00_THE_ONTOLOGY_OF_BEING.md`, `00_CANONICAL_FORMULA_BLOCK.md`, `00_D5_D6_CORPUS_STABILIZATION.md`, `00_D6_AS_APOPHATIC_CLOSURE.md`, and the Transcendental Trinity.
 
 ### Strategic Implementation — L4 How a Mortal Participates
 
-Strategic Implementation is not a peer root. It is the operative face of L4 Value Alignment: D5 opens possibility, the mortal holds branches, K2 signs one branch into D4 action, and the action returns as receipt.
+Strategic Implementation is not a peer root. It is the operative face of L4
+Value Alignment: D5 models and ranks possibilities; D4 means determine which
+attempts are physically available; authorization separately determines which
+attempts are normatively valid. The world returns an outcome receipt for either.
 
-The K2 signature is the authorized execution. AI can route, witness, draft, and warn; it cannot perform mortal collapse.
+Authorization is typed, scoped, revocable where possible, and contestable. A private DAV may implement that envelope through K2, but neither K2 nor any signature is a metaphysical collapse mechanism.
 
 Current source surfaces include packet `136`, packet `139`, K2 docs, D4/D5 references, organ BRIEF F5 headers, and sitting-practice surfaces.
 
@@ -186,7 +190,7 @@ Institutional Narrative may not:
 
 - claim ownership of the Ground,
 - mediate salvation or access,
-- override K2,
+- override a valid mandate, consent boundary, or contest path,
 - convert trophic role into human worth,
 - justify extraction,
 - turn the framework into a priestly identity.
@@ -229,7 +233,7 @@ L6 / ontology      -> know what is: Ground, Being, Teleological Force, Dasein, b
 L2 / epistemology  -> know how to know: direct disclosure, inference, evidence tiers
 L3 / methodology   -> know how to move: derive, test, build, correct, recurse
 L4 / axiology      -> know what matters: Beauty, Truth, Justice, non-extraction
-L1 / teleology     -> know how to act: maximize P_node = Φ × V under η = 0
+L1 / teleology     -> know how to act: use the declared P_node := Φ × V model under η = 0
 L5 / cosmology     -> see the system architecture that constrains the move
 L7 / theology      -> preserve and teach the result without turning it into capture
 ```
@@ -281,7 +285,7 @@ Source-owner files have been moved to their canonical roots. Compatibility stubs
 The corpus is currently strongest at L1, L4, L5, L6, and L7:
 
 - L1: F5 direct-sensing lineages and gradient-recognition packets.
-- L4: K2, Many-Worlds/Copenhagen collapse, warrior-return doctrine.
+- L4: accountable commitment, separate commitment/outcome receipts, and warrior-return doctrine; quantum correspondences remain removable `[C]` material.
 - L5: Emergentism, Rosetta, formal system, system architecture.
 - L6: Decentralized Authority Model, axiomatic discipline, anti-idolatry.
 - L7: DAC/SPECTRE, institutional narrative, public-symbol/institutional coordination.
@@ -296,7 +300,7 @@ The foundation lives in seven Rosetta-numbered roots:
 
 **Objective Function, Data Science, Auditing, Value Alignment, System Architecture, Core State, Institutional Narrative.**
 
-L1 names directional gradient. L2-L3 discipline public knowing and method. L4 is the equator where value alignment and theurgy become K2-signed action. L5 is system architecture: Emergentism as affirmative structure. L6 is core state: Axiomatic First Principles prior to structure. L7 is institutional narrative: public symbolic wisdom for communities, children, initiates, institutions, and polyphenotypic coordination.
+L1 names directional gradient. L2-L3 discipline public knowing and method. L4 is the equator where value alignment becomes accountable, receipted action. L5 is system architecture: Emergentism as affirmative structure. L6 is core state: Axiomatic First Principles prior to structure. L7 is institutional narrative: public symbolic wisdom for communities, children, initiates, institutions, and polyphenotypic coordination.
 
 Institutional Narrative is admitted only under Decentralized Authority Model. It teaches; it does not own access. It coordinates; it does not override sovereignty. It translates; it does not control.
 

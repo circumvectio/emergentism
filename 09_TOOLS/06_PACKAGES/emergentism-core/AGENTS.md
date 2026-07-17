@@ -48,6 +48,6 @@ evidence_tier: "[B] for package metadata, source-file existence, and fresh compi
 - Treat source-file presence as `[B]` existence evidence only; do not infer
   API stability or release status without tests/build/release receipts.
 - Keep deeper `src/` route cards queued for their own subpackage passes.
-- All irreversible actions require K2 envelope staging.
+- Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.
 
 ⊙ = • × ○

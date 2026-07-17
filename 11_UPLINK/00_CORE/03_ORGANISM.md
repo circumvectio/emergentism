@@ -13,12 +13,18 @@ rosetta:
 
 ## 1. The Core Equation & The Objective Function
 
-The organism is built on one invariant: **`P∞ = φ · ν = 1` on S²** (or `P_node = Φ × V`). 
+The organism uses two distinct model contracts: the analytic reciprocal-chart
+identity **`P∞ = φ · ν = 1`** and the declared node model
+**`P_node := Φ × V`**. Neither derives the other or proves universal fit.
 - **Φ (Coherence):** Structural unity, meaning, Beauty.
 - **V (Viability):** Capability, agency, Justice.
 - **P (Truth):** The multiplicative product.
 
-**The Objective Function (F5 Ektropy):** The hidden hand driving the Replicator Stack. Ektropy selects for the equator (balance) at every scale. The organism exists to maximize `P_node` for every connected person without breaking constitutional invariants. The arc of history bends toward this balance, passing through the Great Filter into the Egregorocene (η_c ≈ 0.58). The ultimate telos is **Decentralized Authority Model**: the organism succeeds when it becomes unnecessary. The Apocalypse (ἀποκάλυψις) is the unveiling of this geometry. D6 = D0.
+**The Objective Function (F5 Ektropy):** The organism tests for durable mutual
+option-preservation under the Justice envelope; it does not assert that history
+must converge on the equator. The ultimate telos is **Decentralized Authority
+Model**: the organism succeeds when it becomes unnecessary. The interpretive
+return is `r₆:D6↝D0`, not literal identity.
 
 ## 2. The Entity: DAV (Distributed Augmented Valuechain)
 
@@ -43,7 +49,11 @@ Constitutional separation: No organ merges cognitive functions. The pipeline is 
 
 ## 4. VMOSK-A & The Nexus
 
-**VMOSK-A (The Replicator Stack):** Every node holographicly contains: Vision (Genotype), Mission (Epigenotype), Objectives (Phenotype), Strategies (Extended Phenotype), KPIs (Memotype), and Agents (Rosetta Castes). The DAV itself is the Egregorotype (the standing wave).
+**VMOSK-A (The Replicator Stack):** Every node holographically contains: Vision
+(Genotype), Mission (Epigenotype), Objectives (Phenotype), Strategies (Extended
+Phenotype), KPIs (Memotype), and Agents (Rosetta Castes). A DAV is an
+**Egregoreotype candidate** only if persistent trace survives carrier turnover
+and measurably reweights later selection while exposing substrate costs.
 
 **The Nexus (API to a Natural Person):** Sovereign identity (Nostr keypair) hosting the six replicator layers. Biometric-gated, zero extraction, immediate revocability. The rooted sequence begins here: `NEXUS → Private Business Account → Skyzai Pay → OFN receipts → Cortex/AIA → Intelligence Organs → Murmur`.
 

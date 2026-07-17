@@ -11,7 +11,7 @@ rosetta:
       role: "bound route authority and prune stale agent-language drift"
     - level: L7
       column: Agent Constitution
-      role: "preserve constitutional and K2 boundary escalation"
+      role: "preserve constitutional and accountable-authorization escalation; K2 is private-DAV-only"
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
@@ -36,7 +36,7 @@ evidence_tier: "[B] for local routing; [S] for canonical agent grammar; [I] for 
 | L1 Caṇḍāla | Names contradiction, capture, and direct-perception triggers in agent routing. |
 | L2 Śūdra | Explores candidate routes without treating agent output as proof. |
 | L3 Vaiśya | Keeps dispatch, evidence tiers, manifests, and sweep receipts auditable. |
-| L4 Kṣatriya | Routes execution and K2-bound commitments out of read-only agent specs. |
+| L4 Kṣatriya | Routes execution and consequential commitments out of read-only agent specs through accountable authorization; K2 is private-DAV-only. |
 | L5 Brāhmaṇa | Owns canonical agent grammar, manifest topology, and genotype architecture. |
 | L6 Sādhu | Bounds route authority and prunes stale agent-language drift. |
 | L7 Ṛṣi | Preserves constitutional escalation without runtime overclaim. |

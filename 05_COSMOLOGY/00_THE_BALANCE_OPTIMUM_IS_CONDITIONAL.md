@@ -12,7 +12,7 @@ rosetta:
   register: "[S/I]"
   canonical_phrase: "The balance-optimum is conditional — a theorem of finite conserved complementary systems, not a universal law"
 title: "The Balance-Optimum Is Conditional"
-status: "DRAFT [D] — 2026-07-03. Staged for K2. Reconciles the anthropic balance claim (B=sin θ peaks at Φ=ν) with the empirical anti-pattern (aggregate production rewards imbalance). Derived dialectically per owner direction; no new data."
+status: "[I] EVIDENCE REVIEW — externally uncalibrated. Reconciles the chart-bound balance claim (B=sin θ peaks at φ=ν=1) with the empirical specialization anti-pattern. The transfer to P_node remains conditional and receives no evidence upgrade."
 evidence_tier: "[A] the AM-GM downslope under conservation; [S] the three enabling conditions and the finite/aggregate split; [I] the domain mapping to P_node / the mortal agent."
 depends_on:
   - 00_THE_DYADIC_COUPLING_LAW.md
@@ -99,4 +99,4 @@ The equator is the optimum of the constrained mortal — not of the cosmos.
 
 **Read with:** [`00_THE_DYADIC_COUPLING_LAW.md`](00_THE_DYADIC_COUPLING_LAW.md) · [`00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md`](00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md) · [`VERDICT_BALANCE.md`](../11_UPLINK/25_EXPERIMENTS/2026-07-02_production_function_form/VERDICT_BALANCE.md)
 
-**Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md` — `[D]` pending K2.
+**Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md` — `[I/C]` evidence-review boundary; externally uncalibrated.

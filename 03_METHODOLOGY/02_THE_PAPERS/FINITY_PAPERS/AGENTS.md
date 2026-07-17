@@ -65,7 +65,7 @@ rosetta:
 - `1 = 0 × ∞` is a **frame-register emblem**, never field arithmetic.
 - Every claim tier-marked; never upgrade silently.
 - Do not treat draft specs or submission forms as published claims.
-- All irreversible actions require K2 envelope staging.
+- Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.
 
 ## The One Discipline
 

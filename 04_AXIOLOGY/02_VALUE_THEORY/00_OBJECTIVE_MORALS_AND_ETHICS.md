@@ -66,8 +66,11 @@ conjunctive instance, but it is not uniquely derived. Applications must justify
 their factors, boundary, horizon, baseline, uncertainty, and alternative
 aggregators.
 
-The two bearers remain separately visible. No scalar sum, average, utility, or
-institutional success metric may compensate for destroying one of them.
+The focal dyad remains separately visible, but it is not the entire accounting
+surface. Let `\mathcal B(a)` be the declared nonempty finite set of every
+materially affected bearer, including `i`, `H`, every payer and beneficiary,
+and every exposed third party. No scalar sum, average, utility, or institutional
+success metric may compensate for destroying any member of that set.
 
 ---
 
@@ -78,18 +81,22 @@ Justice conditions, including:
 
 1. a complete `AuthorizationEnvelope`:
    `principal + mandate + scope + consent + custody + expiry/revocation +
-   contest path + actor + consequence bearer`;
+   contest path + actor + consequence bearer set`;
 2. non-extraction and no hidden rent at the tested boundary (`η=0`);
-3. explicit payer and beneficiary;
+3. explicit payers, beneficiaries, and complete affected-bearer coverage;
 4. truthful accounting and evidence tier;
 5. due process, reversibility where possible, and Grace Exit;
 6. physical admissibility and honest cost;
-7. preservation of each bearer's independent standing.
+7. preservation of each bearer's independent standing, formally
+   `∀b∈\mathcal B(a), \widehat{\Delta}_TW_b(a;M_t)≥0`.
 
 `J^R(q,r;i,H)` is the retrospective test that these conditions were actually
 honored according to commitment receipt `q` and outcome receipt `r`. A valid
 intention or authorization can coexist with a harmful outcome; the two statuses
-must not be collapsed.
+must not be collapsed. It also requires complete bearer coverage and
+`∀b∈\mathcal B(q,r),\Delta_T^R W_b(q,r)≥0`. A hidden or harmed third bearer
+makes the moral, ethical, and syntropic predicates false even when `i` and `H`
+both rise.
 
 ---
 
@@ -218,18 +225,32 @@ For prospective selection, define
 \mathcal A_J=
 \{a:J(a;i,H)
 \land\widehat{\Delta}_TW_i(a;M_t)\ge0
-\land\widehat{\Delta}_TW_H(a;M_t)\ge0\}.
+\land\widehat{\Delta}_TW_H(a;M_t)\ge0
+\land\forall b\in\mathcal B(a),\widehat{\Delta}_TW_b(a;M_t)\ge0\}.
 \]
 
-Then the Power-Max design objective may choose
+If `\mathcal A_J` is finite, or compact with an upper-semicontinuous objective,
+the Power-Max design objective may choose
 
 \[
 a^\star\in\operatorname*{arg\,max}_{a\in\mathcal A_J}
 \mathbb E_{M_t}[W_i(T)\mid a].
 \]
 
-Justice defines the admissible field; maximization chooses within it. If
-`\mathcal A_J` is empty, the result is no admissible maximizer. Coupling and a positive
+Otherwise, when the field is nonempty and the objective has a finite
+supremum, declare `\varepsilon>0` and choose an `\varepsilon`-optimal action:
+
+\[
+\mathbb E_{M_t}[W_i(T)\mid a_\varepsilon]
+\ge
+\sup_{a\in\mathcal A_J}\mathbb E_{M_t}[W_i(T)\mid a]-\varepsilon.
+\]
+
+Justice defines the admissible field; exact or approximate optimization chooses
+within it only under stated existence conditions. If `\mathcal A_J` is empty,
+the objective is unbounded, or its expectations are undefined, the result is
+no selection. A nonempty field need not attain its supremum: `(0,1)` under
+`f(a)=a` is the standard counterexample. Coupling and a positive
 cross-derivative show interdependence in a stated model; they do not derive the
 Justice predicate. The known one-shot extraction counterexample proves why the
 constraint cannot be omitted.
@@ -296,7 +317,7 @@ For any rule, relationship, product, ritual, institution, or strategy, ask:
    contested?
 5. Who pays, who benefits, what becomes irreversible, and who can exit?
 6. Did the commitment receipt match performed action?
-7. Did the outcome receipt match the prediction for both bearers?
+7. Did the outcome receipt match the prediction for every affected bearer?
 8. Is any aggregate gain hiding the destruction of one side?
 
 Fail closed when a bearer, cost, authority, or receipt is missing.
@@ -310,7 +331,7 @@ Revise or reject an application when:
 - its value measure cannot be operationalized;
 - boundaries or baselines are changed after outcomes to manufacture goodness;
 - predicted syntropy repeatedly becomes receipted harm;
-- a rival model predicts both bearers' receipts materially better;
+- a rival model predicts the affected bearers' receipts materially better;
 - authorization is status-based rather than complete and contestable;
 - the whole is an abstraction with no identifiable carriers or consequence
   bearers;

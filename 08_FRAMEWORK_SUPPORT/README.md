@@ -22,7 +22,7 @@ rosetta:
 # FRAMEWORK — The Emergentism Philosophy
 
 > **Zero-Sum Resolution Equation**
-> **P∞ = φ · ν = 1 on S²**
+> **P∞ = φ · ν = 1 in the selected reciprocal chart on S²**
 > **Version:** v2026.04.10
 
 This directory contains the complete philosophical framework of Emergentism. It is the intellectual foundation upon which the ORGANISM operates.
@@ -83,19 +83,21 @@ The full framework runs across `D0-D6`, but the live hinge for reading and use i
 | Horizon | Name | Geometry | Status | Function |
 |---------|------|----------|--------|----------|
 | **D4** | Witness threshold | convergence / vertex | lived | recognition without duration |
-| **D5** | Lived world | sphere surface | lived | agency, strategy, ethics, public science |
+| **D5** | Counterfactual field | modeled alternatives | represented | foresight, ranking, selection, strategy |
 | **D6** | Axiomatic closure | terminal boundary | not lived as another state | exhaustion of positive description |
 | **D0** | Origin-boundary | seed / point | prior-to-articulation | the same limit approached from the opposite direction |
 
 **D4** is the threshold of witness: where patterns are seen, compression is possible, and the framework can be recognized.
 
-**D5** is the layer of enactment: the present duration in which navigation, institutions, morality, governance, and science become public.
+**D5** is the possibility register: modeled futures, counterfactual comparison, ranking, and selection. Enactment, public record, and outcome receipt remain D4 actuality.
 
 **Action-register bridge:** when the Goal, Soul Loop, and Game pages say `V` is D4 means-to-act, they are not replacing dimensional D4 witness. They are naming the actualization side of agency: body, tools, energy, access, and execution capacity. In the same register, `Φ` is D5 worldline-foresight: the ability to envision, rank, and aim reachable futures. Agency needs both; D5 foresight without D4 means cannot act, and D4 means without D5 foresight cannot rank or aim.
 
 **D6** is not a higher experience or another science. It is the terminal closure of the cycle, reached apophatically. `Falsification Protocol` does not produce one more mastery-state; it subtracts the field back toward `D0`.
 
-**Closure rule:** `D6 ≡ D0` structurally. From within the cycle, upper-D5 practice can approach that boundary phenomenologically, but D6 itself is not another phenomenological state.
+**Closure rule:** `r₆:D6↝D0` is one interpretive, non-μ return edge. D6
+opens no further positive freedom; it is neither literally identical to D0 nor
+another phenomenological state.
 
 ### How to Use This Framework
 

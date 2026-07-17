@@ -80,7 +80,7 @@ Documents `02_THE_TRINITY.md` through `06_THE_COSMOLOGICAL_CYCLE.md` and `SIMULA
 
 ## Cross-cutting laws
 
-- **K2:** every irreversible act requires natural-person signature.
+- **Authorization:** every consequential act requires a complete, scoped, contestable `AuthorizationEnvelope`; K2 is private-DAV-only.
 - **η = 0:** zero extraction; fees only on value created.
 - **K3:** no-deletion; archive-first.
 - **K4:** grace exit; documented withdrawal path (redeemable assets, not "everything").

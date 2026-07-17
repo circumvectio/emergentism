@@ -51,6 +51,6 @@ evidence_tier: "[B] where artifacts are dated audit receipts; [I] where they sum
   owning lane and verify the target path in the current checkout.
 - Keep generated audit outputs here only while they are active triage surfaces;
   long-term preservation belongs in `../90_ARCHIVE/`.
-- All irreversible actions require K2 envelope staging.
+- Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.
 
 Zero-Sum Resolution Equation

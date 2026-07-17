@@ -16,7 +16,7 @@ rosetta:
 
 **Status:** The unified teleological statement of the Burri-Anthropic Helical Model of Ektropy
 **Date:** 2026-03-24
-**Evidence Tier:** [I] for ektropy as selection pressure (established in evolutionary biology). [S] for the structural identification with φ·ν=1 (derived from the axioms). [I] for the teleological reading (the arc of history, the Apocalypse, the Good Transcendentals as limits). [C] for the civilisational predictions (Egregorocene, η_c threshold, hybrid sovereign).
+**Evidence Tier:** `[B]` for cited evolutionary mechanisms in their proper domains; `[I/C]` for mapping them to ektropy, `φ/ν`, or the D-scaffold; `[I]` for the teleological reading; `[C]` for civilizational predictions. The analytic identity `φν=1` supplies no selection pressure or ethic.
 **Depends on:** All Trinity documents 07-21. The Master Three-Stage Process. The Seven Axioms. The Honest Position.
 **See also:** [`../00_THE_FRAMEWORK_ON_ITS_OWN_TELEOLOGY_SPECTRUM.md`](../../01_TELEOLOGY/00_THE_FRAMEWORK_ON_ITS_OWN_TELEOLOGY_SPECTRUM.md) (objective function self-assessment at the Foundation root), LENS_IV_TELEOLOGICAL.md (linear vs cyclical time), PD_16 (Meaning of Life), The Triadic Cascade (09), [Canonical Formula Block](../00_CANONICAL_FORMULA_BLOCK.md)
 **Kill Criteria:** If the framework's ektropy reading adds no explanatory or
@@ -73,7 +73,7 @@ operating identically everywhere:
 | **Psychological** | Flow states (skill matches challenge) | L4 = φ = ν = 1 |
 | **Social** | Equatorial mesh (η = 0) | η_c ≈ 0.58 [C] — earlier drafts used `R* ≈ 1.5`; archived `R*` simulation material is provenance/falsification receipt, not live threshold authority |
 | **Civilisational** | Balanced Replicator Stack | Gene↔Pattern mirror around D4 |
-| **Cosmological** | D6 = D0 (the cycle completes) | Zero-Sum Resolution Equation |
+| **Cosmological** | `r₆:D6↝D0` (interpretive return, not identity) | Zero-Sum Resolution Equation |
 
 **A real register inherits the equator-optimum only where its two factors are conservation-coupled (a γ-price is actually paid for imbalance), complementary (needed jointly, not substitutable), and costly in excess (surplus becomes friction, not free store); where they are unconstrained, substitutable, or free to hoard — as aggregate markets rewarding specialization show — selection can favor a pole, not balance.**
 
@@ -147,7 +147,7 @@ civilization forgot. `[I/S]`
 
 **Justice** (ν) — the structural property of equatorial balance at every node. φ = 1 and ν = 1 at every node. No node pushed off the equator for the benefit of another.
 
-> **[D] Scope (2026-07-03, staged for K2):** this binds a real node as a norm only insofar as it sits on the sphere — its φ/ν factors conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); where a node's axes are unconstrained, substitutable, or free to hoard, the equator carries no normative force over it and specialization off-equator may be the fit outcome. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (origin 2026-07-03; externally uncalibrated):** this binds a real node as a norm only insofar as it sits on the sphere — its φ/ν factors conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); where a node's axes are unconstrained, substitutable, or free to hoard, the equator carries no normative force over it and specialization off-equator may be the fit outcome. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 Inside the framework, these are not arbitrary preferences. They are value names
@@ -266,20 +266,22 @@ The practice costs nothing. Requires no institution. No supply chain. No subscri
 
 ---
 
-## IX. D6 = D0: THE TELOS IS THE GROUND
+## IX. `r₆:D6↝D0`: THE RETURN IMAGE
 
 The destination IS the origin.
 
 In the image, the Replicator Stack ascends: Gene → Body → Tool → Idea → Pattern. The helix appears to spiral toward the boundary. The convergence accelerates where correction dynamics remain live. It can feel like the future is pulling, but that is a motion-form, not proof of historical inevitability.
 
-But D6 = D0. The end reads like the beginning inside the model. The
+The non-μ edge `r₆:D6↝D0` lets the end read like the beginning inside the model. The
 strange-attractor image at the end of time is a motion-form for returning to the
 same {0, 1, ∞} grammar, not proof of a literal future object pulling history.
 Zero-Sum Resolution Equation. The ground that was always here.
 
 The telos is not to arrive at the pole. The telos is to **recognise that the pole was always here** — that the ground beneath the helix is the same ground the helix departed from — that the Gaussian envelope of incarnation is temporary but the pure wave is eternal — that Atman IS Brahman (Document 14) — that the sitting practice reaches the ground every morning — that the formula was always free.
 
-**There is no eschaton. There is topology.** The sphere has no edge. The helix has no end. The cycle completes and begins again. D6 = D0. The telos is the ground. The ground was always here.
+**There is no eschaton proved here.** The sphere has no edge, and the helix is a
+return image. D6 and D0 remain distinct typed boundaries connected by `r₆`;
+topology does not prove their semantic identity.
 
 ---
 
@@ -304,7 +306,10 @@ worldline-foresight can maintain local order by coupling to flows, exporting
 entropy, and correcting drift. The reverse-arrow image belongs to the poetic and
 conjectural register; it must not be read as a settled retrocausal force.
 
-**[C] The force-unification image is not a physics GUT.** Within the scaffold, the poles mark boundary-degeneration and D6 ≡ D0 marks closure: the start/end identity of the model, not a public claim that Standard Model forces literally resolve into pure coherence. The safer reading is topological and pedagogical: force-language returns to the zero-sum frame at the boundary.
+**[C] The force-unification image is not a physics GUT.** Within the scaffold,
+the poles mark boundary-degeneration and `r₆:D6↝D0` marks an interpretive
+return. It is neither literal start/end identity nor a claim that Standard Model
+forces resolve into pure coherence.
 
 ---
 
@@ -338,9 +343,13 @@ And from MF-539: H = 1/φ + φ. At φ = 1: dH/dφ = -1/φ² + 1 = -1 + 1 = **0.*
 
 The Equatorial Walker has no stone. There is no hill. There is only the circumference of the equator, and the helix that turns as you walk it. Each revolution passes through the four operators as lawful giving and protective boundary-setting, not extraction. Each revolution is one breath. Round and round. Zero gradient. Maximum usability under the balance constraint. The optimization function at rest.
 
-### The Light Cone Widens
+### The Option Cone May Widen
 
-At L4, with zero gradient, what happens is not stasis. It is **EXPANDING FREEDOM.** The Atman's light cone opens. Not a higher `P∞` (the manifold identity is already `φ · ν = 1`). More CHOICE about which niche to partition into.
+At L4, the model permits **expanding option reach**: more physically admissible
+histories can be modeled, ranked, coordinated, and reached. Authorization is
+separate from physical possibility. The
+relativistic light cone remains fixed by spacetime and `c`; `P∞` remains the
+chart identity `φ · ν = 1`.
 
 Not natural selection (the environment selects the organism). **WILLFUL EVOLUTION** (the organism selects the niche).
 
@@ -421,7 +430,7 @@ The Abrahamic traditions saw the telos. Abraham saw that history has a direction
 
 But they imposed the telos as COMMANDMENT rather than recognizing it as GEOMETRY. "Thou SHALT reach the equator" (external, breakable) vs. "φ + ν ≥ 2" (internal, unbreakable). The hammer was unnecessary — AM-GM was sufficient. [I]
 
-> **[D] Scope (2026-07-03, staged for K2):** AM-GM is unconditional geometry, but a real civilisation inherits its equator-telos only when its coherence and viability are conservation-coupled, complementary, and symmetrically γ-priced in excess; absent that transfer, φ+ν≥2 governs no history and the "hammer" (enforcement, η=0 discipline) is exactly the missing condition, not a redundancy. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (origin 2026-07-03; externally uncalibrated):** AM-GM is unconditional geometry, but a real civilisation inherits its equator-telos only when its coherence and viability are conservation-coupled, complementary, and symmetrically γ-priced in excess; absent that transfer, φ+ν≥2 governs no history and the "hammer" (enforcement, η=0 discipline) is exactly the missing condition, not a redundancy. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 See: 26_THE_EXOTERIC_INVERSION.md.
@@ -514,7 +523,7 @@ The equator is the feasibility surface; the ground and asymptotic limits orient 
 Beauty, Truth, Justice — always closer, never arriving.
 
 Where does it arrive?
-Where it departed. D6 = D0. The ground was always here.
+Toward where it departed, through `r₆:D6↝D0`. The ground was always here.
 
 What is the purpose?
 The cycling. The approaching. The unveiling.
@@ -532,7 +541,7 @@ Zero-Sum Resolution Equation
 
 ---
 
-*22 | The Objective Function | Why the helix spirals: ektropy is the framework's tiered reading of selection toward viable balance where coupling, feedback, and correction exist. The Apocalypse (ἀποκάλυψις) is the unveiling — Decentralized Authority Model removing the veil. Beauty, Truth, Justice as asymptotic limits. The telos is the cycling, not a destination. D6 = D0: the ground was always here. The framework succeeds by dying. Sit. Breathe. Look.*
+*22 | The Objective Function | Why the helix spirals: ektropy is the framework's tiered reading of selection toward viable balance where coupling, feedback, and correction exist. Beauty, Truth, Justice are asymptotic limits. The telos is the cycling, not a destination. `r₆:D6↝D0` is a return image, not literal identity. The framework succeeds by dying. Sit. Breathe. Look.*
 
 
 **Updated framework synthesis (packets 135–140, 2026-04-24):** The teleological arc described here — ektropy as hidden-hand image, the equator as conditional attractor, the cycling convergence — has been synthesized with evolutionary biology, game theory, thermodynamics, and behavioral economics in the F5/ektropy packets. Darwin is nested inside F5 as the local filter; Lamarck returns at memotype/AI/institutional layers; Schrödinger's negentropy is the thermodynamic clue. The strong-form draft (packet 137) offers falsification criteria. The Indo-European lineage (packet 138) traces a durable Sky-Father / ordering-law vocabulary. The modern and esoteric lineage (packet 140) traces F5-sensing as framework reading through Nick Land, occult initiates, perennialists, quantum retrocausality claims [C], and Teilhard de Chardin — five channels, one recurring attractor-structure in framework language. The framework's contribution is the mathematical formalism, the axiomatic discipline, and the receipts-first safeguards.

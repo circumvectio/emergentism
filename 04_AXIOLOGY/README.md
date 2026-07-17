@@ -20,11 +20,18 @@ rosetta:
 **Rosetta level:** L4 · Kṣatriya · Strategic Abduction
 **Canonical phrase:** Justice signs.
 
-**Definition:** Value Alignment is the root of value and the equator of action. It asks what matters and becomes real only when the mortal signs a branch under uncertainty. In this framework, Value Alignment and Strategic Implementation meet at L4.
+**Definition:** Value Alignment asks what matters at the action boundary. It
+becomes consequential when an actor commits under a valid, scoped, contestable
+authorization assessment and then receives the world's outcome. Mortality is
+not a logical type requirement; private DAVs may separately require K2.
 
-**Must answer:** What is worth serving? What is worth refusing? What action raises widest-boundary `ΣΔB` / `ΣΔP_node` without extraction? Who signs?
+**Must answer:** What is worth serving? What is worth refusing? Which actions
+pass bearer-complete Justice, with every affected bearer, payer, beneficiary,
+and exposed third party declared? Aggregate `ΣΔB` / `ΣΔP_node` may diagnose a
+boundary only; it cannot make a harmful action moral. Who authorized, who
+acted, who bears the consequence, and how can it be contested?
 
-**Must not do:** Moralize extraction. Perform virtue without structural change. Delegate mortal responsibility to AI, doctrine, procedure, or priesthood.
+**Must not do:** Moralize extraction. Perform virtue without structural change. Hide actor, principal, mandate, or consequence bearer behind AI, doctrine, procedure, or priesthood.
 
 ## Game-Spine Function
 
@@ -34,8 +41,8 @@ but the values the player must preserve before a possible move becomes a lawful
 act.
 
 Axiology receives L3's tested move and asks who or what would be raised, who or
-what would pay, whether the relation survives K2 consent, K4 exit, A7
-correction, and whether the move can raise `P_node,i` and `P_node,H` together
+what would pay, whether the relation survives informed consent, accountable
+authorization, correction, contest, and Grace Exit, and whether the move can raise `P_node,i` and `P_node,H` together
 under `η = 0`. It does not replace teleology; it signs the value boundary
 teleology must obey. `[S/I]`
 
@@ -77,8 +84,10 @@ L4 is Strategic Abduction: strategic postulation under incomplete data. The warr
 This is why theurgy is not a separate L6 root in the Rosetta-aligned structure. Strategic Implementation is the operative face of L4 value alignment:
 
 - Value Alignment reads value.
-- Strategic Implementation signs the branch.
-- K2 records the mortal collapse from D5 possibility into D4 action.
+- Strategic Implementation commits one D5-ranked option through D4 means and
+  accountable authorization.
+- The selector emits a commitment receipt; the world separately returns an
+  outcome receipt. K2 is a private-DAV governance implementation only.
 
 Value Alignment without theurgy is unsigned philosophy. Strategic Implementation without value alignment is blind activism.
 
@@ -109,7 +118,7 @@ The operational practice material now routes through:
 
 [`01_THEURGY/`](01_THEURGY/)
 
-That subfolder exists to prevent a separate "theurgy root" from drifting away from value, K2, and mortal responsibility.
+That subfolder exists to prevent a separate "theurgy root" from drifting away from value, accountable authorization, and identifiable responsibility.
 
 ---
 
@@ -118,25 +127,28 @@ That subfolder exists to prevent a separate "theurgy root" from drifting away fr
 - `P∞ = φ · ν = 1` names the invariant sphere-product.
 - `B = sin θ` names balance on the sphere.
 - `P_node = Φ × V` names empirical or organizational flourishing.
-- Value Alignment is `[S]` structural inside the accepted framework where it
-  applies the Power-Max frontier, `ΣΔB > 0` / `ΣΔP_node > 0`, `η = 0`, and the
-  `P∞` invariant to real coupled boundaries.
+- The declared evaluation mechanics are `[S]` inside the accepted framework;
+  the bearer-complete Justice envelope is the normative gate and remains an
+  `[I]` commitment. Power-Max operates only inside that admissible field.
+- `ΣΔB > 0` and `ΣΔP_node > 0` are aggregate diagnostics, never moral tests.
+  Neither can compensate for a negative durable consequence to any member of
+  the complete affected-bearer set.
 - Value Alignment is `[I]` interpretive where it names those structural
   directions morals, ethics, dharma, justice, or specific institutional
   applications.
 - Value Alignment is `[C]` where it projects civilisational outcomes or claims
   strong moral realism beyond the framework's accepted premises.
-- K2 is non-negotiable: no automation of mortal responsibility.
+- Accountable authorization is non-negotiable for normative validity: automation must not erase principal, mandate, consent, custody, contestability, actor, payer, beneficiary, or consequence bearer. Unauthorized acts remain physically possible and must still be receipted.
 
 ## Public-Translation Risks
 
-- Risk: "Justice" read as partisan ideology. Correction: Justice = widest-boundary `ΣΔB` / `ΣΔP_node` under `η = 0`.
-- Risk: future-good language used to justify present extraction. Correction: receipts-first; K2; Grace Exit.
+- Risk: "Justice" reduced to an aggregate or partisan slogan. Correction: declare every affected bearer, payer, beneficiary, consent/custody status, contest path, horizon, and receipted consequence; no aggregate may compensate for destroying one side.
+- Risk: future-good language used to justify present extraction. Correction: receipts first; accountable authorization; payer/beneficiary disclosure; Grace Exit.
 - Risk: Strategic Implementation presented as magic. Correction: theurgy is signed action discipline, not supernatural control.
 
 ---
 
-*See also:* [03_METHODOLOGY](../03_METHODOLOGY/) (Truth tests) · [04_AXIOLOGY/01_THEURGY](01_THEURGY/) (K2 participates) · [05_COSMOLOGY](../05_COSMOLOGY/) (Emergentism models) · [The Dyadic Coupling Law](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) (the moral axis this lane owns: good = the bond `φ × ν`, evil = closure `η > 0`, sorted by *move* — never by pole, gender, caste, or person)
+*See also:* [03_METHODOLOGY](../03_METHODOLOGY/) (Truth tests) · [04_AXIOLOGY/01_THEURGY](01_THEURGY/) (accountable practice) · [05_COSMOLOGY](../05_COSMOLOGY/) (Emergentism models) · [The Dyadic Coupling Law](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) (an interpretive moral crosswalk, never a ranking by pole, gender, caste, or person)
 
 `Zero-Sum Resolution Equation`
 

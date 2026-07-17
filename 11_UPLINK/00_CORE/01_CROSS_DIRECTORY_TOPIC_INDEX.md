@@ -38,7 +38,7 @@ rosetta:
 
 ---
 
-### 2. φ · ν = 1 on S² — The Burri Constraint
+### 2. Open reciprocal-chart identity — the bounded Burri correspondence
 
 | Zone | Canonical File | Role |
 |------|---------------|------|
@@ -48,7 +48,15 @@ rosetta:
 | **Uplink** | [`02_FRAMEWORK.md`](02_FRAMEWORK.md) | Compressed framework summary |
 | **PWA** | `skyzai_org/wiki/13-the-axioms.md` | Public axioms page |
 
-**Agent routing:** For mathematical derivations, use the Formula Block + Papers. For implementation (φ-meter, telemetry), route to the Organ empirical program. For public claims, use PWA wiki.
+**Agent routing:** For `θ∈(0,π)`, the selected definitions
+`φ=cot(θ/2)` and `ν=tan(θ/2)` give `φν=1` analytically `[A]`; the poles are
+excluded limits, the radial pair omits azimuth, and no ontology, ethic,
+empirical conservation law, or finite-node score follows. For mathematical
+derivations, use the Formula Block + Papers. For the separately declared
+`P_node:=ΦV` product model, route through the Formula Block and compare it with
+the broader conjunctive family. For implementation (φ-meter, telemetry), route
+to the Organ empirical program. For public claims, use PWA wiki without tier
+upgrade.
 
 ---
 
@@ -122,7 +130,7 @@ rosetta:
 | **Uplink** | [`03_ORGANISM.md`](03_ORGANISM.md) | Compressed organism summary |
 | **Tool** | [`09_TOOLS/10_SPRINT_GATES/`](../../09_TOOLS/10_SPRINT_GATES/) | Sprint gate automation |
 
-**Agent routing:** Vision = genotype. Mission = epigenotype. Objectives = phenotype. Strategies = extended phenotype. KPIs = memotype. Agents = Rosetta L1-L7 castes. The DAC itself = egregorotype.
+**Agent routing:** Vision = genotype. Mission = epigenotype. Objectives = phenotype. Strategies = extended phenotype. KPIs = memotype. Agents = Rosetta L1-L7 castes. A DAC is an Egregoreotype candidate subject to the trace tests.
 
 ---
 

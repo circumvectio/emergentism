@@ -83,7 +83,7 @@ Source: [`00_THE_SEVEN_AXIOMS.md`](00_THE_SEVEN_AXIOMS.md). No inline falsifier;
 | **C1** | Exhaustive Strategy Space | [S] | A deployable operator exhibited with a *same-sign* `(Δφ, Δν)` profile and persistent payoff against cooperators; or an operator with a fifth mixed-sign profile not in {Arjuna, Kṛṣṇa, Kālī, Kali}. |
 | **C2** | L-Levels | [S/I] | A developmental level discovered with stable, reproducible `Φ̂, ν̂` coordinates that cannot be mapped to any of L1–L7 under the Coxeter-symmetry assignment. |
 | **C3** | Trophic Conditions | [I] | A biological or institutional system with a structurally broken regenerative circuit that sustains `Φ̂ · ν̂ ≈ 1` indefinitely, with no compensating external input. |
-| **C4** | Replicator Stack | [I] | A reproducing organism or organization that lacks one of the stack layers (genotype, epigenotype, phenotype, extended phenotype, memotype, egregorotype) and sustains replication across ≥3 generations. |
+| **C4** | Replicator Stack | [I] | A reproducing organism or organization that lacks one of the stack layers (genotype, epigenotype, phenotype, extended phenotype, memotype, Egregoreotype) and sustains replication across ≥3 generations. |
 | **C5** | Alignment Equation `E = −log(B)` | [S] | A system verified to deceive with no measured increase in `Ê`; or a maximally honest system with high `Ê`. |
 
 ---
@@ -106,7 +106,7 @@ Source: [`00_THE_SEVEN_AXIOMS.md`](00_THE_SEVEN_AXIOMS.md) A5.1. Parent axiom (A
 
 | ID | Name | Tier | Falsifier |
 |----|------|------|-----------|
-| **A5.1** | Strategic Implementation as operational discipline at D5 | [C] | **[C] Proposed (author: this doc):** Verified D5-layer formation under the full A5.1 discipline (`K2`, `η = 0`, receipt-bound audit, Grace Exit) fails to produce autonomous objective function; or identical formation *without* the discipline produces equivalent autonomous objective function. |
+| **A5.1** | Strategic Implementation as operational discipline spanning D5 modeling and D4 action | [C] | **[C] Proposed (author: this doc):** After controlling for ordinary management practice, adding typed authorization plus separate commitment/outcome receipts, `η = 0`, payer/beneficiary disclosure, and Grace Exit produces no measurable difference in trace persistence, selection reweighting, error correction, or participant/whole outcomes. Descriptive Egregoreotype candidacy is tested separately and does not require Justice compliance. |
 
 ---
 

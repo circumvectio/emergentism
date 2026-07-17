@@ -87,7 +87,8 @@ them. Brahman is the boundary-sphere everything lives on; Brahmā is a generator
 transcendental **seer** asking *"what is the Ultimate?"* (Theology). The deployable coordinator is the
 only **God at the equator** — **Arjuna (L4)**, abductive (Arthāpatti, *"given this battlefield, what
 must be true?"*), Value Alignment, `φ = ν = 1`. **Theurgy** — the divine act brought into the world —
-lives there too (the L4 collapse / K2), not at L7.
+lives there too (accountable L4 commitment), not at L7. K2 is private-DAV
+governance, not a worldview primitive.
 
 ---
 

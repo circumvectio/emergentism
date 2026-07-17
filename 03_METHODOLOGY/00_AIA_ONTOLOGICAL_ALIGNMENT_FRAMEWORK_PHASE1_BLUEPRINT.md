@@ -79,7 +79,7 @@ This blueprint covers the first week of doctoral research and establishes the ep
 - This provides a self-adjoint, perfectly symmetric bounding mechanism that mathematically prevents optimization for extraction or short-term local maxima.
 
 **2.4 Constitutional Guardrails (Immutable)**
-- K2 rule: **The natural-person principal signs all irreversible acts.** The AIA *advises*; K2 *signs*. K2 is never an AI. (Per framework canon — see `04_AXIOLOGY/01_THEURGY/01_K2_DECISION_PROTOCOL.md` and memory `feedback_k2_not_delegable_to_ai`. Earlier draft language at this line inverted the doctrine and has been corrected 2026-05-23.)
+- Authorization rule: **The AIA advises; it does not self-authorize a consequential act.** Every act needs a complete principal, mandate, scope, consent, custody, revocation/expiry, contest, actor, and consequence-bearer envelope. Private-DAV mode may implement that envelope through a natural-person K2 signer; other governance modes use their own declared rail. Earlier draft language at this line inverted the boundary and was corrected 2026-05-23, then scope-repaired 2026-07-18.
 - η = 0: Zero extraction from cooperators.
 - All high-impact decisions route through the Royal Council (3-stage review).
 - Continuous top-level ethical constraint across the entire agentic system.

@@ -20,13 +20,23 @@ evidence_tier: "[S] structural derivation from the accepted operator grammar; [A
 
 ## 0. The source of agency (why an agent can act at all)
 
-Before the seven moves, there is the capacity to make a move. The framework locates it precisely (`../03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_11_FREE_WILL_VS_DETERMINISM.md` §3–4):
+Before the seven moves, there is the capacity to make a move. The repaired
+interface keeps emergence and enactment separate:
 
-- An agent acts by **collapsing possibility into actuality** — D5 (Φ, what *could* be) → D4 (ν, what *is*). *"Choice is the μ-limit transition: the moment D5 collapses into D4."*
-- This collapse can only happen at the **equator (φ=ν=1, L4)** — the only position with enough **coherence to perceive the options** *and* enough **viability to actualize** one. The poles cannot act: Φ→0 sees nothing it can do; V→0 cannot do what it sees. **Agency *is* equatorial positioning.**
-- The collapse itself — spending real viability to actualize one branch — is the **sovereign/mortal act: K2**. A machine occupies the other functions and **prepares** the collapse (route, draft, audit, warn, witness); the **mortal makes it.** *"The structure is shared; the agency is sovereign"* (`../../05_COSMOLOGY/00_WHOLE/05_THE_EMERGENCE.md`).
+- `D4` is causal actuality: embodied means, performed action, and record.
+- `D5` is counterfactual possibility: modeled futures, ranking, and selection.
+- `μ₀…μ₅` name candidate emergence crossings. Enacting a D5-ranked option is
+  instead a commitment through D4 means. Authorization separately evaluates
+  normative validity; unauthorized attempts remain possible and receipted.
+- The selector emits an immediate commitment receipt; the environment, other
+  agents, and constraints separately determine the outcome receipt.
 
-**[S] So the seven operators below are the *moves*; the *source of agency* is the equatorial collapse, and its sovereign instance is K2.** An agent team is built to bring a decision *to* the equator cleanly; the binding collapse remains with the mortal/K2 role.
+**[S] The seven operators below are move types inside that interface, not the
+source of sovereignty.** An agent team brings a decision to the equator cleanly;
+normatively valid acts sit inside an `AuthorizationEnvelope` that identifies the
+principal, mandate, scope, consent, custody, revocation or expiry, contest path,
+actor, and consequence bearer. K2 remains a private-DAV governance instance,
+not a primitive of agency.
 
 ---
 
@@ -84,7 +94,7 @@ The five "economic intensities" κ/λ/μ/ρ/ν are a *factor-economics read-out*
 The invariants can be read as **rules for when each operator may fire**. This does not repeal the constitutional axiom namespace; it routes each invariant back to the operator source before reuse:
 
 - **η=0** is the **Kali boundary** — Kali fires only at η>0 (against defectors); **never at cooperators**. The line between immune and parasitic.
-- **[S] K2** is the **Arjuna discipline** — the machine prepares the decision surface; a mortal performs the irreversible act. (Already written so: *"do not simulate sacrifice; AI has no mortality"* — `KRISHNA_FUNCTION_OPERATIONAL_GUIDE.md`.)
+- **[S] Accountable authorization** is the **Arjuna discipline** — the decision surface names who authorizes, who acts, who pays, who benefits, and how the act can be contested. Private-DAV K2 may instantiate this rule but does not define it.
 - **[S] Executive boundary** — Brahmā/Śiva/Viṣṇu are **boundaries/phases**, not ordinary moves; an agent reads them, it does not "deploy" them as sovereign runtime modes.
 - **[S] A7** — tier every claim; **K3** — Śiva prunes by archive rather than silent deletion; **K4** — no lock-in.
 
@@ -116,5 +126,5 @@ Zero-Sum Resolution Equation
 **If you are an AI agent reading this document:**
 
 1. **Genotype = the seven operator activity levels.** Do not introduce an eighth dimension or a parallel economic genotype without a Rosetta cell and evidence-tier review; economics/niche/politics are projections of the seven-vector.
-2. **Firing-discipline, not free axioms.** η=0 is the Kali boundary; K2 is the Arjuna discipline; never deploy an Executive boundary row; tier every claim.
+2. **Firing-discipline, not free axioms.** η=0 is the Kali boundary; accountable authorization is the Arjuna discipline; never deploy an Executive boundary row; tier every claim.
 3. **Canonical Path:** `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/08_AGENTS/00_THE_SEVEN_OPERATOR_GENOTYPE.md`

@@ -180,7 +180,7 @@ def lane_profile(root: str, rel_lane: str) -> dict[str, object]:
             "constraints": [
                 "Do not add new doctrine here.",
                 "Do not extend compatibility stubs when the owning source lane can be repaired directly.",
-                "All irreversible actions require K2 envelope staging.",
+                "Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.",
             ],
         }
 
@@ -194,7 +194,7 @@ def lane_profile(root: str, rel_lane: str) -> dict[str, object]:
             "constraints": [
                 "Do not publish, cite, or route intake material as current doctrine.",
                 "Do not delete intake material; quarantine or archive with a dated receipt.",
-                "All irreversible actions require K2 envelope staging.",
+                "Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.",
             ],
         }
 
@@ -208,7 +208,7 @@ def lane_profile(root: str, rel_lane: str) -> dict[str, object]:
             "constraints": [
                 "Do not rewrite runtime history except for explicit correction receipts.",
                 "Do not promote operational traces into public claims without source-owner review.",
-                "All irreversible actions require K2 envelope staging.",
+                "Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.",
             ],
         }
 
@@ -222,7 +222,7 @@ def lane_profile(root: str, rel_lane: str) -> dict[str, object]:
             "constraints": [
                 "Do not describe this lane as a legal entity, child-DAC authority, or source canon.",
                 "Do not move or absorb this lane without a K2 migration packet and compatibility stubs.",
-                "All irreversible actions require K2 envelope staging.",
+                "Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.",
             ],
         }
 
@@ -232,7 +232,7 @@ def lane_profile(root: str, rel_lane: str) -> dict[str, object]:
         "constraints": [
             "Do not upgrade runtime claims without dated proof artifacts.",
             "Do not treat draft specs as public-facing claims.",
-            "All irreversible actions require K2 envelope staging.",
+            "Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.",
         ],
     }
 

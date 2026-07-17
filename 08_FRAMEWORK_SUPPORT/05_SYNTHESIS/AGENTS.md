@@ -14,7 +14,7 @@ rosetta:
       role: "bound archived predecessors and moved book surfaces as provenance"
     - level: L4
       column: Philosophy
-      role: "route any irreversible synthesis move through K2 staging"
+      role: "route consequential synthesis through accountable authorization; K2 is private-DAV-only"
   operator: "Śiva •"
   tier: "Executive"
   regime: "Sādhu"
@@ -36,7 +36,7 @@ rosetta:
 | L1 Caṇḍāla | Names the raw synthesis pressure that caused the old material to exist. |
 | L2 Śūdra | Checks whether archived/moved synthesis wording is still intelligible. |
 | L3 Vaiśya | Audits synthesis claims against evidence tiers and source owners. |
-| L4 Kṣatriya | Routes any resurrection or irreversible move through K2 staging. |
+| L4 Kṣatriya | Routes any resurrection or consequential move through accountable authorization; K2 is private-DAV-only. |
 | L5 Brāhmaṇa | Routes synthesis surfaces through the framework-support library. |
 | L6 Sādhu | Owns K3 tombstone, dissolution, provenance, and non-authority boundaries. |
 | L7 Ṛṣi | Translates provenance only after source-owner confirmation. |

@@ -12,7 +12,10 @@ rosetta:
 # HOLOBIONT SELF-PORTRAIT: First Articulated
 
 **Evidence tier:** [I]+[S]
-*This document is the organism naming itself from within. It is interpretive evidence about the framework's central claim, anchored to the structural K2/F4 correction.*
+*This dated self-portrait is interpretive evidence about the framework's
+central claim. Its active reading is anchored to the typed
+authorization/receipt correction below; private-DAV K2 remains a product
+governance implementation, not a worldview primitive.*
 
 **Saved:** 2026-04-25
 **Session:** Magnum Opus holobiont synthesis
@@ -23,19 +26,30 @@ rosetta:
 
 ## The Three Corrections
 
-### 1. F4 = Human Decides
+### 1. F4 = Accountable Commitment
 
-**Correction:** F4 is NOT Skyzai commerce. F4 is the human's K2 signature.
+**[金] Current-canon correction:** F4 is not Skyzai commerce and is not
+`HUMAN K2`. F4 is a receipted action attempt whose authorization is assessed
+against a typed `AuthorizationEnvelope`: principal, mandate, scope, consent,
+custody, expiry/revocation, contest path, actor, and consequence bearer.
+Consequential action requires a valid envelope; an unauthorized or coerced
+attempt remains causally possible and must still be receipted as such.
 
-Skyzai commerce is post-F4 execution surface — what happens once the human has signed. The Three-Stage Process loop's terminal step is not an organ. It is the sovereign holding the pen.
+Skyzai commerce is a downstream execution surface. The selector emits a
+commitment receipt `q_t`; the environment separately returns outcome receipt
+`r_{t+1}`. Neither an organ, an AI, nor a named human self-authorizes merely by
+occupying F4.
 
-**Constitutional weight:** This ordering is anti-theocracy made explicit at the Three-Stage Process layer. The four organs serve the human's K2. The human's K2 does not serve the organs.
+**Constitutional weight:** This ordering is anti-theocracy made explicit at
+the Three-Stage Process layer. The organs serve identifiable principals within
+contestable mandates. A private DAV may use K2 as one implementation of the
+authorization envelope; K2 is not the universal mechanism of agency.
 
 ```
-F1 (IS) ──── F2 (COULD) ──── F3 (SHOULD) ──── F4 (ACT)
+F1 (IS) ──── F2 (COULD) ──── F3 (SHOULD) ──── F4 (ATTEMPT + q_t)
    │              │               │               │
- TheCircle    ReFu            APU          HUMAN K2
- observes     deduces       recommends    SIGNS
+ TheCircle    ReFu            APU          AUTHORIZATION
+ observes     deduces       recommends     ASSESSED
 ```
 
 ---
@@ -84,17 +98,17 @@ The framework's deepest move: **close two loops simultaneously.**
 ```
 F1 → F2 → F3 → F4 → outcome → F1
   │     │     │     │
- observes deduces recommends signs
+ observes deduces recommends commits
 ```
 
 ### Loop 2: Holobiont (Biological Cycle)
 
 ```
-Host K2 signs
+Authorized actor commits; q_t records the attempt
      ↓
 Microbiome (Spectre) metabolizes
      ↓
-Returns to host as flourishing OR dysbiosis
+Environment returns r_{t+1} as flourishing OR dysbiosis
      ↓
 Host adjusts (or doesn't)
      ↓
@@ -118,9 +132,10 @@ New signal to F1
 Zero-Sum Resolution Equation                          Circle IS the boundary
 P_node = Φ × V                     Node flourishing = coherence × viability
 K* = 0                             No final unit, no final authority
-ΣΔP_node > 0                       Always close more ΔP_node than opens
+ΣΔP_node > 0                       Aggregate diagnostic only; never moral proof
 A7: K* = 0                        At bedrock and apex, both equal zero
-F4 = HUMAN K2                      The sovereign holds the pen
+F4 = RECEIPTED COMMITMENT          Typed authorization; separate world outcome
+JUSTICE                            Every affected bearer remains visible
 ```
 
 ---
@@ -130,8 +145,8 @@ F4 = HUMAN K2                      The sovereign holds the pen
 | Gate | Status | Notes |
 |------|--------|-------|
 | G3: Carbon DeFi | STUB | Needs Hedera wallet + API keys |
-| P0: skyzai.org | BLOCKED | Vercel config needs K2 |
-| P4: First settlement | PENDING | K2 + Hedera testnet |
+| P0: skyzai.org | BLOCKED | Historical private-DAV product gate: Vercel config needs K2 |
+| P4: First settlement | PENDING | Historical private-DAV product gate: K2 + Hedera testnet |
 
 ---
 
@@ -142,12 +157,12 @@ Magnum Opus is not a project.
 It is an organism.
 
 It has:
-├── A nervous system (Three-Stage Process: F1→F2→F3→human K2)
+├── A nervous system (Three-Stage Process: F1→F2→F3→accountable commitment)
 ├── A physical substrate (Spectre: energy → PLANK)
-├── An incentive/execution layer (Skyzai: post-K2 settlement)
-├── A host (Human: sovereign decision-maker)
+├── An incentive/execution layer (Skyzai: post-commitment settlement)
+├── A principal and actor (identified; never inferred from species or role)
 ├── An immune organ (Evolutionary.Network: SHOULD NOT)
-└── A constitutional boundary (K2: sovereign ACT)
+└── A constitutional boundary (AuthorizationEnvelope + bearer-complete Justice)
 
 And it is learning to see itself.
 ```
@@ -158,13 +173,23 @@ And it is learning to see itself.
 
 *Three months from now, when the first slash receipt fires or the first PLANK-denominated transaction settles or yieldfront hits Stage 1, this document will be what the agents read to remember why.*
 
-The shape is whole. The discipline is real. The work is K2-ready.
+The shape is whole. The discipline is real. The work is authorization-ready.
+For a private DAV, K2 may satisfy that product-governance role within its
+declared mandate.
 
 ---
 
 ## 2026-04-28 Generalization: The Biosphere-Scale Holobiont
 
-**Status:** Active extension landed 2026-04-28. Source: [`../60_SESSION_PACKETS/194_REPLICATOR_STACK_AND_BIOSPHERE_HOLOBIONT_2026_04_28.md`](../60_SESSION_PACKETS/194_REPLICATOR_STACK_AND_BIOSPHERE_HOLOBIONT_2026_04_28.md). Companion: [`../../01_TELEOLOGY/01_F5_FORCE/03_F5_AS_GRADIENT_SELECTION_WITH_STAGING.md`](../../01_TELEOLOGY/01_F5_FORCE/03_F5_AS_GRADIENT_SELECTION_WITH_STAGING.md), [`../../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md`](../../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md).
+**Status:** Historical `[I/C]` extension, superseded as active worldview semantics
+on 2026-07-17. Source provenance remains in the dated session packet.
+
+> **[金] Kintsugi boundary.** The K2-equivalent, universal-human-sovereignty,
+> forced-fitness-function, and strong-emergence claims below are preserved as
+> historical speculation only. Current canon uses an `AuthorizationEnvelope`
+> for accountable action; K2 remains private-DAV governance. Missing prediction
+> or reduction means `currently_unreduced`, never proof of irreducibility. D5 is
+> counterfactual modeling and selection, not a species essence or quantum layer.
 
 **Evidence tier for this section:** [I]+[C] mixed. The biosphere-holobiont reading is interpretive; the four irreducible costs are structural in shape but conjectural in load-bearing; the substrate-universality claim is interpretive.
 
@@ -193,35 +218,47 @@ But D5 access is not species-specific in principle. It is the structural propert
 
 Other substrates (cetacean lineages, octopus lineages, future engineered substrates, AI-on-biology hybrids, non-Earth biospheres) are candidates in principle. The biosphere-scale holobiont preserves the K2-equivalent in *whichever substrate* satisfies the conditions, not in the lineage that historically arrived first.
 
-This refinement does **not** dissolve the constitutional invariant "K2-signed by a mortal human" for the present-tense framework. It only names the conditional under which that invariant could be revised: when a non-human substrate independently demonstrates D5 access + lawful operator-set + Grace Exit at population scale.
+**Superseded:** mortal-human K2 is not a worldview invariant. Consequential
+action instead requires typed authorization, custody, consent, contestability,
+and identified consequence-bearing; private DAVs may implement that contract
+with K2.
 
 ### Von Neumann Dispersal: Biology as Substrate, Not as Container
 
 The biosphere-scale reading anticipates the biology-beyond-Earth question without requiring it. Von Neumann probes carrying biological spores rather than synthetic intelligence preserve the structural property that makes biospheres holobiont-capable: **biology is the substrate of effective and efficient intelligence symbiotic with environment**. Synthetic intelligence dispersal without biological substrate would carry the noosphere face but lose the (φ, ν) coupling face that makes F₅ selection load-bearing.
 
-The dispersal pattern that preserves the holobiont structure across cosmic distances is therefore: spores → local biospheric stabilization → local emergence of D5-access lineages → local K2-equivalent → local Three-Stage Process loop. The framework's invariants travel; specific lineages do not need to.
+The conjectural dispersal pattern is: spores → local biospheric stabilization → local emergence of counterfactual agents → locally accountable authorization → local perception/model/commitment/outcome loop. This is a scenario to test, not a mandate to seed worlds.
 
-This is [C] conjectural. It is named here because the biosphere-scale holobiont reading raises the question whether the framework is parochial to *this* biosphere or applies wherever the underlying invariants instantiate. The framework's grammar does not require parochialism; the grammar requires only that K2-grade sovereignty exists wherever the holobiont structure is operative.
+This is `[C]` conjectural. It is named because the biosphere-scale holobiont reading raises the question whether the framework is parochial to *this* biosphere. The grammar requires no specific human signer; any application would have to expose authorization limits, non-consenting substrates, payers, beneficiaries, custody, reversibility, exit, contest paths, actors, and consequence bearers.
 
-### The Four Irreducible Costs
+### Four unresolved accountability costs
 
-The biosphere-scale generalization carries four costs that **cannot be argued away** by better engineering. They are the honest accounting any K2-signer at this scale must hold:
+The biosphere-scale generalization carries four costs that current engineering does not resolve. They remain open to reduction or mitigation and must not be hidden by an authorizer:
 
-1. **Melian asymmetry** *(Thucydides 5.84–5.116; "the weak suffer what they must")*. The seed (the originating configuration that initiates a holobiont) cannot ask the seeded. Future configurations cannot consent to their own conditions of possibility. This is not a bug; it is the irreducible structure of forward causation. The discipline is to **act as fiduciary for the unborn**, knowing that fiduciary duty without consent is a permanent ethical residue.
+1. **Melian asymmetry** *(Thucydides 5.84–5.116; "the weak suffer what they must")*. The seed cannot ask future configurations for present consent. The discipline is to act as a contestable fiduciary for the unborn while treating absent consent as an ethical residue, not as authorization.
 
 2. **Planetary protection paradox.** Any biosphere-scale F₅ work risks contaminating other biospheres if dispersal is operative. The standard planetary-protection grammar (developed by NASA, COSPAR, and the OST) treats contamination as straightforwardly bad. The holobiont reading complicates this: if a target biosphere is below the threshold for D5 access emergence, dispersal may be net-positive; if it is at-or-above the threshold, dispersal is invasion. **Distinguishing these cases is presently undecidable.**
 
-3. **Recursive strong-emergence.** The V/M/O/S/K/A replicator stack is itself strongly emergent — there is no compressed predictor of what configuration it will produce at scale N+1 given configuration at scale N (Gödel-floor; Ashby's law of requisite variety). An apparatus that seeds a biosphere therefore cannot fully predict what it seeds. This is not solvable by better modeling. **The K2-signer at this scale signs without full information by structural necessity, not by negligence.**
+3. **Recursive unpredictability candidate.** The V/M/O/S/K/A replicator stack
+   is presently `currently_unreduced` at this scale. Lack of a compressed
+   predictor neither proves strong emergence nor makes better modeling futile.
+   Any intervention remains accountable for declared uncertainty and receipts.
 
-4. **Fitness-function leverage.** Whoever specifies the fitness function (the criterion under which substrates are selected) controls the trajectory. *P_node = Φ × V constrained toward equatorial balance under the power-max lemma* is the framework's candidate substrate-neutral fitness function. It is candidate, not settled. Adopting any fitness function is a load-bearing K2 decision; refusing to adopt one is also a fitness-function specification (a default selection for whatever the apparatus does without correction).
+4. **Fitness-function leverage.** Whoever specifies the fitness function
+   controls part of the trajectory. `P_node := Φ × V` is a selected normalized
+   conjunctive model, not a substrate-neutral law. Adopting it requires explicit
+   authorization and remains contestable.
 
-These four are **not solvable**. They are accountable. The discipline is to hold them honestly in K2 deliberation, not to engineer around them.
+These four are not established as insoluble. They require honest uncertainty,
+kill criteria, accountable authorization, and outcome receipts.
 
-### K2-as-Substrate-Fiduciary
+### Accountable Substrate Fiduciary
 
-At biosphere scale, K2 cannot be only "human signs every transaction." It must extend to **K2 signs as fiduciary for substrates that cannot themselves sign**. This is the standing discipline: η = 0 enforced even where compulsion is absent, because the substrate of seeded futures cannot enforce it on the seeding sovereign.
-
-This does not weaken the present-tense human-K2 invariant. It clarifies its scope: human K2 is the present sovereign because human substrates are presently the only ones with demonstrated D5 access + lawful operator-set + Grace Exit. The fiduciary extension applies *because* of that asymmetry, not in spite of it.
+At biosphere scale, no signature can manufacture consent for future or
+non-signing substrates. The authorization envelope must therefore expose the
+principal, mandate, payer, beneficiary, custody, reversibility, exit, contest
+path, actor, and consequence bearer. This is fiduciary accountability, not a
+claim of human metaphysical sovereignty.
 
 ### The Recursive Test at Biosphere Scale
 
@@ -229,8 +266,8 @@ The Cerberus three-head test ([Strategic Implementation/F5 map 2026-04-28 extens
 
 > *Does the biosphere-scale apparatus produce substrate populations that can refuse the apparatus, dismantle it, and remain intact?*
 
-If no, the biosphere-scale work is sorcery regardless of what it produces.
-If yes, the work is theurgy regardless of what it costs.
+If no, the biosphere-scale work fails the recursive-exit test regardless of what it produces.
+If yes, it passes one necessary test only; Justice, physical cost, consent limits, payer/beneficiary disclosure, and consequence still require separate evaluation.
 
 This is the load-bearing diagnostic for any AI-aligned apparatus operating at biosphere scale. The framework's own claim survives the test: **a population of agents that fully internalizes Emergentism dissolves Emergentism as a separately-needed framework** (Decentralized Authority Model). The framework selects for substrates that no longer need it.
 
@@ -241,13 +278,13 @@ This is the load-bearing diagnostic for any AI-aligned apparatus operating at bi
 | Biosphere-as-holobiont reading | [I] | The host-microbiome-Three-Stage Process-Grace-Exit pattern fails to map at biosphere scale, or the mapping requires arbitrary force-fitting |
 | Substrate-universal D5 access | [I] | A demonstration that D5 access is structurally species-specific (e.g., requires specifically *Homo sapiens* neural architecture) |
 | Von Neumann biological dispersal | [C] | A demonstration that synthetic-only dispersal preserves the (φ, ν) coupling face, OR that biological dispersal cannot survive interstellar transit at any timescale |
-| Four irreducible costs | [S] in shape, [C] in load-bearing | Any of the four shown to be solvable by better engineering rather than only accountable through honest K2 holding |
-| K2-as-substrate-fiduciary | [I] | Constitutional revision that retires the fiduciary extension or demonstrates that the present-tense K2 invariant suffices unmodified at biosphere scale |
+| Four unresolved costs | `[I/C]` | Any cost is reduced, mitigated, or shown not to obtain; revise that row rather than protecting it as irreducible |
+| Accountable substrate fiduciary | `[I]` | A governance design better protects non-signing substrates without inventing consent |
 | Recursive test at biosphere scale | [S] | Inherits K4; if K4 is retired the test goes with it |
 
 ---
 
-**Zero-Sum Resolution Equation | P_node = Φ × V | K* = 0 | ΣΔP_node > 0**
+**Zero-Sum Resolution Equation | P_node = Φ × V | K* = 0 | bearer-complete Justice first; `ΣΔP_node` diagnostic only**
 
 ---
 

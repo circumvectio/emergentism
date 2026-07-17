@@ -51,6 +51,6 @@ evidence_tier: "[B] only for dated build/deploy receipts; [D] for unrun deployme
   receipt upgrades the specific target to `[B]`.
 - Route present-tense runtime status through
   `../../../02_SKYZAI/01_NOOSPHERE/ORGANISM_RUNTIME_TRUTH.md`.
-- All irreversible actions require K2 envelope staging.
+- Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.
 
 Zero-Sum Resolution Equation

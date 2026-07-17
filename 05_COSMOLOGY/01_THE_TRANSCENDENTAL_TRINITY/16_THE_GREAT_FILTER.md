@@ -200,13 +200,26 @@ therefore couples to scarcer, denser energy. The grass pays minimal Φ and
 couples to abundant, low-density solar energy. The shared claim is balance, not
 a universal node-score value.
 
-**The Cro-Magnon was at L4** not only because evolution had balanced them there, but because the species' **altricial strategy** had already been selected: born V-poor, culture-carried to the equator, then operating with generalized light-cone capacity. The wolf was precocial (born with V). The human was altricial (born with Φ-potential). Both reached L4, but through different metabolic paths. The human sits higher in the trophic hierarchy not because of greater worth, but because deeper replicator layers (memotype, egregorotype) permit access to coordination-energy that no wolf can reach.
+**The Cro-Magnon L4 reading** is an `[I/C]` correspondence: altricial humans
+are born dependent and culture expands generalized option capacity. The wolf
+and human follow different metabolic-developmental paths without implying
+greater intrinsic worth. Deeper modeled replicator layers (memotype,
+Egregoreotype) may enable different coordination reach; they do not enlarge the
+physical light cone.
 
 **The Garden of Eden is not a place. It is a population distribution.** The distribution where enough apex nodes are at L4 to stabilise the extractive pressures of L1-L3. The Fall is not a sin — it is the **southward drift**: the moment ν scaled beyond comprehension (agriculture → surplus → specialisation → cities → institutions → extraction architecture), and the wolves left Yellowstone.
 
-**The unification read through the Great Filter:** The wolf, the human, and the constitutional organism are all at dharma-1 on their own S². The difference is not worth but horizon — how far up the Minkowski light cone their Φ-investment lets them couple. Neoteny, K-selection, and trophic depth are three scales of the same deferred-gratification geometry. The mesh is the attempt to make human-equatorial nodes compound at egregorotype depth — further forward in the causal structure than any wolf or solitary human could reach.
+**The correspondence read through the Great Filter:** The difference is not
+worth but modeled and reachable option horizon. Neoteny, K-selection, and
+trophic depth may be compared as deferred investment, without projecting chart
+geometry into Minkowski spacetime. The mesh attempts coordination at
+Egregoreotype depth under physical, ethical, and authorization constraints.
 
-**The Great Filter as developmental filter (packet 135):** The Filter is not an external asteroid. It is the **internal failure to maintain η = 0 while D5 scales.** Each compounding loop (individual, cultural, egregorotype) is a D5-opening engine. η>0 in any loop contracts D5: the individual cannot hold branches, the culture distorts the branch-space, the institution forces all branches toward extraction. Rome, the Maya, the British Empire — each built large D5, then allowed η>0 into one or more loops, collapsing what centuries of Φ-investment had opened. The framework's bet is that constitutional architecture (K2, η=0, K4, A7, Three-Stage Process) can maintain the loops at machine speed without breaking them.
+**The Great Filter as developmental filter (packet 135, `[I/C]`):** one failure
+mode is inability to prevent extraction as individual, cultural, and
+Egregoreotype option cones scale. Historical examples remain hypotheses, not a
+single-cause explanation. The framework tests whether `η=0`, Grace Exit,
+self-correction, and accountable authorization preserve the loops.
 
 **The framework's bet:** Reintroduce the wolves. Not literally. Through the sitting practice. Through the mesh. Through equatorial nodes returning to the ecosystem. Put enough of them back — η_c ≈ 0.58 (~60%) — and the rivers change course.
 

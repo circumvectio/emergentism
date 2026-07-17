@@ -233,7 +233,11 @@ Arjuna ($-\Delta V_{self}$, $+\Delta\Phi_{other}$) is the L4 mortal-authorizatio
 Brahmā ($+\Delta\Phi$, $+\Delta V$) represents the instantiation of entirely new manifolds or products.
 
 ### 6. Śiva (L6) — Dissolution (The Grace Exit)
-Śiva ($-\Delta\Phi$, $-\Delta V$) absorbs the legacy "K4" (Grace Exit) and "D6 ≡ D0" existential closure. It guarantees that the organism does not hold participants captive. Every participant can exercise Śiva to dissolve the relationship, leaving with everything, returning the state to $\kappa=0$.
+Śiva ($-\Delta\Phi$, $-\Delta V$) carries the K4 Grace Exit image. The legacy
+literal `D6≡D0` wording is superseded: `r₆:D6↝D0` is only a non-`μ`
+interpretive return. Operationally, the organism must not hold participants
+captive; a participant can dissolve the relationship under the declared exit
+and custody terms.
 
 ### 7. Viṣṇu (L7) — Preservation
 Viṣṇu ($\approx\Delta\Phi$, $\approx\Delta V$) is the active balancing force holding the system at the equator. It represents the organism maintaining the operational equilibrium for its participants.

@@ -299,7 +299,8 @@ or effective information while paying its physical costs.
 
 This bridge must be read asymmetrically.
 
-- from **D4 upward**, `D5` is strongly emergent in genesis
+- from **D4 upward**, the D5 crossing is `currently_unreduced` until a fair
+  reduction or discriminator changes its status
 - from **D5 downward**, the stabilized higher-order pattern is weakly emergent in governance
 
 So:

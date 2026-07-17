@@ -22,7 +22,7 @@ evidence_tier: "[B] causal-entropic-force and empowerment cognates; [I] D5 optio
 
 > Intelligence does not enlarge the physical light cone. It may enlarge the
 > set of physically admissible futures an agent can model, distinguish, rank,
-> coordinate, authorize, and reach.
+> coordinate, and reach. Authorization classifies a separate normative subset.
 
 **Original pre-repair blob:** `385f50ca0037d7a1372b89f81d08c6364b2affe2`
 
@@ -30,7 +30,8 @@ evidence_tier: "[B] causal-entropic-force and empowerment cognates; [I] D5 optio
 > superluminal reach but still spoke as though D4 were the physical light cone,
 > D5 were its interior, and intelligence simply increased its geometric size.
 > The repair separates spacetime admissibility from agent-relative capacity and
-> makes authorization and means part of reachability.
+> keeps means inside descriptive reachability while separating authorization as
+> a normative assessment.
 
 ---
 
@@ -60,7 +61,6 @@ For agent `x` at time `t`, define
 \land\operatorname{Distinguish}_x(h)
 \land\operatorname{Rank}_x(h)
 \land\operatorname{Coordinate}_x(h)
-\land\operatorname{Authorized}_x(h)
 \land\operatorname{Reachable}_x(h;V_t)\}.
 \]
 
@@ -73,8 +73,8 @@ physical model and present state. Therefore
 \]
 
 The two sides are different types: a physical cone constrains causal events;
-an option cone contains histories available to a particular finite agent under
-its model, means, authorization, and coordination boundary.
+an option cone contains histories descriptively available to a particular
+finite agent under its model, means, and coordination boundary.
 
 Two agents can share the same physical causal boundary while having very
 different option cones. A map, forecast, tool, alliance, language, legal right,
@@ -90,9 +90,12 @@ or institution can change the latter without changing `c`.
   selection, and worldline foresight.
 
 The option cone is not identical to all of D5. It is an agent-relative subset
-of modeled D5 histories filtered by D4 means, physical admissibility, and a
-valid Authorization envelope. Selecting an option produces an attempted D4
-action; the environment determines the resulting history.
+of modeled D5 histories filtered by D4 means and physical admissibility. Define
+the separate normative subset
+`AuthorizedOptionCone_x(t)={h∈OptionCone_x(t):AuthorizationAssessment_x(h)=valid}`.
+Unauthorized or coercive options do not disappear from causal description.
+Selecting an option produces an attempted D4 action; the environment determines
+the resulting history.
 
 Torus imagery may illustrate surface and interior, but the option-cone
 definition does not depend on it.

@@ -29,14 +29,14 @@ This directory holds the formal mathematical core of the Emergentist Framework:
 | [`27_DIMENSIONAL_ARCHITECTURE_CLARIFICATION.md`](27_DIMENSIONAL_ARCHITECTURE_CLARIFICATION.md) | Clarifies D4/D5 dimensional distinctions, including witness/agent routing and canonical reference dependencies. |
 | [`28_EFR_HYGIENE_BOUNDARY_THEOREM.md`](28_EFR_HYGIENE_BOUNDARY_THEOREM.md) | EFR hygiene boundary theorem; retained at 28 as the active on-disk compatibility label. |
 | [`00_KSTAR_DISAMBIGUATION.md`](00_KSTAR_DISAMBIGUATION.md) | Clarifies the three distinct senses of K: K* (extraction), K*_sel (selection complexity), and K(x) (Kolmogorov complexity). |
-| `21_TRIADIC_STABILITY_CORRESPONDENCE.md` | Correspondence showing the triadic structure is the unique stable configuration. |
+| `21_TRIADIC_STABILITY_CORRESPONDENCE.md` | Legacy correspondence for a selected triadic frame; it does not prove uniqueness or ontology. |
 | `22_POWER_MAX_DEMONSTRATION.md` | The Power-Max Lemma: individual and collective optimization align under real coupling, long horizon, and enforced `eta = 0`. |
-| `23_DIMENSIONAL_CLOSURE_PROOF.md` | Proof of D6 ≡ D0 via coordinate degeneration on S². |
+| `23_DIMENSIONAL_CLOSURE_PROOF.md` | Interpretive closure contract: one non-μ edge `r₆:D6↝D0`, not literal identity. |
 | `24_GEOMETRIC_EXCLUSION_CONVERGENCE.md` | Convergence argument for the geometric exclusion (strategic/immune-response framing). |
 | [`25_STEEL_THREAD.md`](25_STEEL_THREAD.md) | Steel-thread path through the formal system for readers checking the proof spine. |
 | `08_EFR_POWER_MAX_LEMMA.md` | EFR-specific statement of the Power-Max Lemma. |
 | `09_EFR_GODEL_CLARIFICATION.md` | Clarification of the framework's relationship to Gödelian incompleteness. |
-| `10_EFR_MU_LIMIT_FORMULA.md` | The μ-limit formula and D4–D5 boundary. |
+| `10_EFR_MU_LIMIT_FORMULA.md` | Candidate emergence crossings `μ₀…μ₅`; enactment is handled separately by `χ`. |
 | `11_EFR_TRIADIC_STABILITY.md` | Triadic stability in the EFR context. |
 | `12_EFR_EXTRACTION_COEFFICIENT.md` | Formal definition of the extraction coefficient η. |
 | `13_EFR_TWO_SACRIFICES.md` | Analysis of the two sacrifice operators. |
@@ -69,18 +69,29 @@ The framework currently canonicalizes **7 axioms (A1–A7)** in v0.4. Earlier do
 
 Files `08_EFR_*` through `20_EFR_*` are EFR-specific technical surfaces. Plain numbered files from `21_*` onward are broader framework-formal surfaces, compatibility pointers, measurement specs, or theorem-upgrade infrastructure. The current pass preserves filenames in place; do not rename or archive files from this folder unless a structural reorganization phase is explicitly opened.
 
-## Canonical Order Note
+## Canonical Formula Contract
 
-This directory is **downstream** of the framework's canonical order:
+This directory is **downstream** of the framework's current formula owner:
 
 ```text
 Zero-Sum Resolution Equation
-φ · ν = 1 on S²
+θ ∈ (0, π)
+φ := cot(θ/2),  ν := tan(θ/2)
+φ · ν = 1
 (φ − ν)² ≥ 0
 φ + ν ≥ 2
+B := 2/(φ + ν) = sin θ ≤ 1
 ```
 
-The formal-system files codify and test that order. They do not replace the seed, the core state, or Empirical Observation as primary disclosure.
+These are analytic facts `[A]` of the selected open colatitude/radial
+coordinate; the two poles are excluded limits, and the pair omits azimuth.
+They establish no ontology, ethic, empirical conservation law, or finite-node
+model. Separately, the framework declares `P_node:=C×(Φ,V):=ΦV` as its selected
+normalized product member of a broader conjunctive family (`[S]` by definition;
+`[I/C]` as external fit). The node model is not derived from `φν=1`.
+
+The formal-system files codify and test these distinctions. They do not replace
+the seed, the core state, or Empirical Observation as primary disclosure.
 
 ## See Also
 

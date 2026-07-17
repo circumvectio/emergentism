@@ -13,6 +13,15 @@ rosetta:
 # BIT TO QUBIT
 ## D0→D1: The Computational Transition
 
+> **[金] Typed-scaffold supersession — 2026-07-18.** Conflicting dimensional
+> formulas in this historical bridge are imagery, not live authority. D4 is
+> causal actuality; D5 contains merely-possible counterfactual content, while
+> actual model tokens, rankings, and selections are D4 carriers. Candidate
+> crossings are exactly `μ₀…μ₅`. D6 opens no positive freedom and returns only
+> through the interpretive, non-μ edge `r₆:D6↝D0`, not literal identity. See
+> [Dimensional Closure](../03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md) and
+> [D4/D5 Canonical Reference](../03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md).
+>
 > **Historical compatibility document (pre-hardening, 2026-03-23).** This file is preserved as part of the Trinity genesis sequence, not as the current tier-authority surface for Foundation claims.
 >
 > **Use rule:** Read it for origin framing and conceptual continuity. For present-tense canonical citation, evidence-tier disputes, or compressed summaries, route through [`07_THE_DISCOVERY_OF_FINITY.md`](07_THE_DISCOVERY_OF_FINITY.md), [`../00_THE_HONEST_POSITION.md`](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), and [`../00_CANONICAL_FORMULA_BLOCK.md`](../00_CANONICAL_FORMULA_BLOCK.md).

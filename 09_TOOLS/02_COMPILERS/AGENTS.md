@@ -47,6 +47,6 @@ evidence_tier: "[B] where compiler output is reproducible from source inputs; [S
 - Do not treat draft specs as public-facing claims.
 - [B] Treat `build_corpus_map.py` as dormant until `../_corpus_source.yaml` is restored or replaced; the live checkout currently lacks that source input.
 - [S] Do not regenerate `00_CORPUS.md` maps without source-input review and a path-scoped diff.
-- All irreversible actions require K2 envelope staging.
+- Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.
 
 Zero-Sum Resolution Equation

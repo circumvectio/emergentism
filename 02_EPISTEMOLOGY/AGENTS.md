@@ -83,7 +83,7 @@ three operative God moves on the `P_node = Φ × V` surface.
 | L1 Caṇḍāla | Reports the raw signal, sensory disclosure, or pattern pressure before interpretation. |
 | L2 Śūdra | Owns candidate surfacing, direct perception, comparative analysis, and Beauty-as-coherent-fit. |
 | L3 Vaiśya | Tests whether a disclosed pattern becomes a candidate claim under method and evidence tiers. |
-| L4 Kṣatriya | Blocks action, deployment, or K2 commitment until L2 disclosure passes L3 ranking. |
+| L4 Kṣatriya | Blocks action, deployment, or private-DAV K2 commitment until L2 disclosure passes L3 ranking. |
 | L5 Brāhmaṇa | Aligns epistemic claims with Rosetta, formal-system, and evidence-ladder architecture. |
 | L6 Sādhu | Cuts projection, pattern intoxication, and claims that outrun their receipts. |
 | L7 Ṛṣi | Translates only tier-cleared epistemology into public architecture or institutional narrative. |
@@ -115,16 +115,18 @@ lane, while per-document control rows live in `00_META/`.
 
 - Do not upgrade runtime claims without dated proof artifacts.
 - Do not treat draft specs as public-facing claims.
-- All irreversible actions require K2 envelope staging.
+- All consequential actions require a complete, scoped, contestable authorization assessment. Private DAVs may implement that envelope through K2; the worldview does not require K2.
 
 ## The Five+One Anchor
 
-The constitution is **5 + 1** — five refusals (η=0 · K2 · K3 · K4 · A7) plus Ω the
-directional +1, never "six refusals" (canonical enumeration:
+The inherited **private-DAV governance** constitution is **5 + 1** — five
+refusals (η=0 · K2 · K3 · K4 · A7) plus Ω the directional +1, never "six
+refusals" (canonical product-governance enumeration:
 [`05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md)).
-The five apply here as firing disciplines: η=0 (no extraction),
-A7 (tier every claim), K2 (the collapse is the mortal's). Epistemology prepares
-the disclosure; it does not perform the collapse.
+It is not the worldview contract. Here the general disciplines are η=0 (no
+extraction), A7 (tier every claim), and accountable authorization (name who may
+act and who bears the consequence). Epistemology prepares disclosure; it does
+not select or perform an action. K2 remains a private-DAV governance rail only.
 
 ---
 

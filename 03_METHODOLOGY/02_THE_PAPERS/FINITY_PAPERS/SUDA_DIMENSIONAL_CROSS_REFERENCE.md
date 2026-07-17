@@ -24,6 +24,15 @@ depends_on:
 **Date:** 2026-06-06
 **Purpose:** Map all 8 formal structures from the Suda corpus onto the Emergentist dimensional scaffold (D₀–D₆) and the Rosetta L-levels (L1–L7). This document makes explicit where each theorem lives in the ontology and which dimensional crossing it enables.
 
+> **[金] Typed-scaffold supersession — 2026-07-18.** This is a legacy
+> cross-reference. Wherever its body conflicts, read D4 as causal actuality and
+> D5 as merely-possible counterfactual content; actual model tokens, rankings,
+> and selections remain D4 carriers. The candidate crossings are exactly
+> `μ₀…μ₅`. D6 opens no positive freedom, and its only return is the interpretive,
+> non-μ edge `r₆:D6↝D0`, not equality or `μ₆`. Conflicting body formulas are
+> historical imagery, not live authority. See [Dimensional Closure](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md)
+> and [D4/D5 Canonical Reference](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md).
+
 ---
 
 ## The Mapping Table

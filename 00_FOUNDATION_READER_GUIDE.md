@@ -60,7 +60,12 @@ This folder contains three layers. Read it source-first. The hardening stack and
 
 `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/` — {0, 1, ∞}. The narrative entry into the Ground-facing model. Zero-Sum Resolution Equation. Division by zero resolved in the framework's frame-register. Thin perennial grammar, not a proof that any tradition exhausts the Ground.
 
-> **[Tiering]** φ·ν=1 on S² is the [S] formal axiom. The cross-tradition convergences (Egyptian, Vedic/AUM, Nietzsche, Bindu, etc.) are [I] interpretive bridges — resonances, not proof; do not read the list as [A] established fact.
+> **[金] Formula-contract seam.** For `θ∈(0,π)`, the definitions
+> `φ=cot(θ/2)` and `ν=tan(θ/2)` give `φν=1` analytically `[A]`; the poles are
+> excluded limits and the radial pair omits azimuth. The identity proves no
+> ontology, ethic, empirical conservation law, or node model. The
+> cross-tradition convergences (Egyptian, Vedic/AUM, Nietzsche, Bindu, etc.)
+> are `[I]` interpretive bridges — resonances, not proof.
 
 Plus the interpretive bridge documents that connect the Trinity to the traditions:
 
@@ -102,9 +107,9 @@ Plus the interpretive bridge documents that connect the Trinity to the tradition
 **Canonical practice spine:** [10_THE_SOUL_LOOP.md](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md) — continuous recursive disambiguation; the method that applies ontology, epistemology, methodology, axiology, and teleology to corpus and player.
 **Canonical sevenfold root:** [00_SEVENFOLD_FOUNDATION_ROOT.md](00_SEVENFOLD_FOUNDATION_ROOT.md) — the current Rosetta-numbered routing architecture for objective function, data science, methodology, value alignment/theurgy, system architecture, core state, and institutional narrative.
 **Canonical D/L bridge:** [00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md](00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md) — why D0-D6 and L1-L7 resonate without collapsing.
-**Deep philosophical expansion:** [00_EMERGENTISM_AS_WELTANSCHAUUNG.md](05_COSMOLOGY/00_EMERGENTISM_AS_WELTANSCHAUUNG.md) — the longer treatise now bound to the Goal/Soul Loop spine: living worldview for Dasein, source-true ontology, objective dharma, recursive play through `P_node = Φ × V`, and the tiered scientific/philosophical unification attempt.
+**Deep philosophical expansion:** [00_EMERGENTISM_AS_WELTANSCHAUUNG.md](05_COSMOLOGY/00_EMERGENTISM_AS_WELTANSCHAUUNG.md) — the longer treatise now bound to the Goal/Soul Loop spine: living worldview for Dasein, source-true ontology, objective dharma, recursive play through the declared product model `P_node:=ΦV`, and the tiered scientific/philosophical unification attempt.
 **Canonical synthesis-reading boundary:** [00_FOUNDATION_AND_BOOKS_READING_NOTE.md](../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/00_FOUNDATION_AND_BOOKS_READING_NOTE.md) _(archived)_ — how to read literary certainty downstream of tiered claim discipline.
-**Canonical moral/ethical dyad:** [00_OBJECTIVE_MORALS_AND_ETHICS.md](04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) — objective morals (`i -> H`), objective ethics (`H -> i`), objective dharma, and syntropic dyadism under `P_node = Φ × V` and `η = 0`.
+**Canonical moral/ethical dyad:** [00_OBJECTIVE_MORALS_AND_ETHICS.md](04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) — objective morals (`i -> H`), objective ethics (`H -> i`), objective dharma, and syntropic dyadism under the declared `P_node:=ΦV` model and `η=0`. The ethical rule is an explicit value commitment, not a consequence of the reciprocal chart.
 **Canonical moral compression:** [00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md](04_AXIOLOGY/02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md) — one disciplined surface for beauty, truth, justice, good, evil, ethics, morals, and the major philosophical questions.
 **Canonical first-person bridge:** [00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md](02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md) — disclosure first, doctrine second, scientific register explicit.
 **Canonical archetype grammar:** [00_NAMING_RECONCILIATION.md](08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_NAMING_RECONCILIATION.md) — Titans, Gods, Demon, Witnesses.
@@ -140,7 +145,7 @@ Plus the interpretive bridge documents that connect the Trinity to the tradition
 
 ### Layer 2: The Derivation
 
-`01_TELEOLOGY/02_THE_DERIVATION/` — **The framework in one folder.** The complete compression: from reciprocal closure and its first arithmetic consequence, through physics and game theory, to ethics and system architecture. If you read nothing else, read this.
+`01_TELEOLOGY/02_THE_DERIVATION/` — **The framework's derivation program in one folder.** It separates the reciprocal-chart mathematics from the framework's later translations into physics, game theory, ethics, and system architecture. Those translations retain their own evidence tiers; they are not mathematical consequences of `φν=1`.
 
 - [01_TELEOLOGY/02_THE_DERIVATION/README.md](01_TELEOLOGY/02_THE_DERIVATION/README.md) — Index and entry point
 - [01_TELEOLOGY/02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md](01_TELEOLOGY/02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md) — The derivation itself

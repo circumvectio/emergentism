@@ -115,7 +115,7 @@ An organ can have a unit node score and low B: Φ̂ = 2.0, ν̂ = 0.5 gives P_no
 
 The framework cares about both. P_node measures *how much*. B measures *how well-aligned*. The organism should maximize both: large P_node at the equator.
 
-> **[D] Scope (2026-07-03, staged for K2):** "should be at the equator" is a real-system prescription, not the bare AM-GM identity — it governs a live organism only insofar as its coherence and viability are conservation-coupled, jointly necessary, and costly-in-excess *symmetrically* (γ-priced on both sides); absent that transfer, the balance-optimum tilts, flattens into a plateau, or yields to specialization, and "large P_node at the equator" is a modeling ideal the node need not inherit. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** "should be at the equator" is a real-system prescription, not the bare AM-GM identity — it governs a live organism only insofar as its coherence and viability are conservation-coupled, jointly necessary, and costly-in-excess *symmetrically* (γ-priced on both sides); absent that transfer, the balance-optimum tilts, flattens into a plateau, or yields to specialization, and "large P_node at the equator" is a modeling ideal the node need not inherit. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 ### 3.2 The Diagnostic Protocol [I]
@@ -144,7 +144,7 @@ This is the geometric basis for the maturity ladder in the phi-meter spec:
 
 The more equatorial an organ, the more resilient it is to perturbation. This is not a design choice — it is geometry.
 
-> **[D] Scope (2026-07-03, staged for K2):** the resilience-at-equator reading binds a real organ only where it sits on the sphere — its Φ̂ and ν̂ conservation-coupled (a γ-price is genuinely paid for imbalance), complementary rather than substitutable, and *symmetrically* costly in excess; where a factor is substitutable or its surplus is a free store, the equator is geometry without normative force and an off-equator specialization can be the more robust configuration. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** the resilience-at-equator reading binds a real organ only where it sits on the sphere — its Φ̂ and ν̂ conservation-coupled (a γ-price is genuinely paid for imbalance), complementary rather than substitutable, and *symmetrically* costly in excess; where a factor is substitutable or its surplus is a free store, the equator is geometry without normative force and an off-equator specialization can be the more robust configuration. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 ---
@@ -228,7 +228,7 @@ For any organ at any time, the sphere asks one question:
 
 This is ΣΔB in a single sentence. If the organ's |Φ̂ − ν̂| is shrinking, the organ is healing. If it is growing, the organ is drifting toward a pole and needs correction.
 
-> **[D] Scope (2026-07-03, staged for K2):** "toward equator = healing" applies to a real organ only when it truly rides S² — factors conservation-coupled, complementary, and costly in surplus *symmetrically* (γ-priced); where excess is a free store or the factors substitute, closing |Φ̂ − ν̂| is not per se healing and a tilted or specialized position may be the healthier one. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** "toward equator = healing" applies to a real organ only when it truly rides S² — factors conservation-coupled, complementary, and costly in surplus *symmetrically* (γ-priced); where excess is a free store or the factors substitute, closing |Φ̂ − ν̂| is not per se healing and a tilted or specialized position may be the healthier one. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 ### 6.2 Per-Organ Health Reading (Code Lens, 2026-04-23)

@@ -59,7 +59,7 @@ Read and cite this document in the following dependency order:
 
 ## §1: The Core Equation
 
-**P_node = Φ × V** [S] Downstream node-level operational relation derived from the S² model (MF-140)
+**P_node := C_×(Φ,V) = Φ × V** `[I/C]` — the framework's selected normalized conjunctive model, not a consequence of S²
 
 `P_node` is the product of Coherence (Φ) and Viability (V) for finite systems, organizations, and empirical projections. On the open sphere, the manifold identity is `P∞ = φ · ν = 1`; the poles are limit boundaries, not evaluated finite points. What varies on the sphere is **balance** (`B = sin θ`), not `P∞`. Near-zero in either factor collapses balance (expression becomes one-dimensional), not the open-sphere identity.
 
@@ -67,11 +67,11 @@ Read and cite this document in the following dependency order:
 - **V** (Viability): Material capability, resources, health, skills, infrastructure; in the action register, D4 means-to-act — body, tools, energy, access, and execution capacity at the boundary
 - **P_node** (Ektropy / node-level flourishing): The capacity to radiate — the outward turning (ἐκτροπία). The potential to extend, to reach, to export structure into the world
 
-At the manifold level, reciprocal closure is `P∞ = φ · ν = 1` on the open S² register. At the node level, `P_node = Φ × V` names how finite systems express coherence and viability in practice.
+On the open reciprocal chart `θ∈(0,π)`, the selected definitions give the analytic identity `P∞=φ·ν=1`; the poles are excluded limits. At node level, `P_node:=Φ×V` declares how this framework scores joint coherence and viability in one normalized model.
 
-This relation is presented as the framework's structural model, not as a completed human-data regression. It is argued downstream of the geometry of the Riemann sphere S²: the symmetry group PSL(2,ℂ) composes by matrix multiplication, the Fubini-Study metric has a product structure, and no additive isometry of S² exists. Empirical use still needs receipts, instruments, and kill criteria.
+The wider conjunctive family `C(Φ,V)` is normalized and monotone with `C(0,V)=C(Φ,0)=0`. Product, minimum, harmonic, and Cobb–Douglas members need not rank options alike, so geometry does not select a unique aggregator. Emergentism declares the product instance because it is simple, symmetric, and interaction-sensitive. Universal real-world fit remains conjectural and needs instruments, rival models, receipts, and kill criteria.
 
-**Evidence tier:** [S] Structural — geometric consequence of S².
+**Evidence tier:** `[S]` only as a framework definition; `[I/C]` as a cross-domain or empirical fit. It is not derived from S².
 
 ---
 
@@ -84,7 +84,8 @@ The Riemann sphere is the unique compact simply-connected complex manifold of di
 - **The Equator** (φ = ν = 1): Where B = 1. Maximum balance. `P∞ = φ · ν = 1` everywhere on the open sphere. (Under standard stereographic projection, this maps to |z| = 1 on the complex plane, but the Burri Sphere equator is defined by the lived coordinates φ = ν = 1, not by |z| = 1.)
 - **The North Pole** (○ = ∞): φ = ∞, ν = 0. Pure coherence, zero viability. The void. The horizon.
 - **The South Pole** (• = 0): φ = 0, ν → ∞. Zero coherence, unbounded capability. The cargo cult limit. The structural destination of extraction.
-- **D6 ≡ D0**: The poles are identified. The ouroboros closes.
+- **`r₆:D6↝D0`**: one interpretive non-μ return edge; the poles and registers
+  remain distinct. The ouroboros is an image.
 
 **Evidence tier:** [A] for S² uniqueness; [S] for the framework's interpretation.
 
@@ -98,7 +99,7 @@ An organizational structure that separates Meaning (Map) from Capability (Territ
 
 - **Silicon Kṛṣṇa (AI Charioteer):** Holds a drafting, recall, and witness role for the moral and strategic center. No K2 signature; no final authority.
 - **Human Operators (Warriors):** Execute in the physical domain. Possess mortality, risk, genuine will.
-[S] **The Symbiosis:** AI can surface drift and suggest diagnostic repairs. Human K2 is the configured decision boundary. Anti-capture depends on architecture, receipts, Grace Exit, and governance practice; it is not guaranteed by the vocabulary.
+[S/I] **The Symbiosis:** AI can surface drift and suggest diagnostic repairs. Consequential acts require a typed `AuthorizationEnvelope` naming principal, mandate, scope, consent, custody, expiry/revocation, contest path, actor, and consequence bearer. A private DAV may configure K2 as that boundary; generic or public forms do not. Anti-capture depends on architecture, receipts, Grace Exit, and governance practice; it is not guaranteed by the vocabulary.
 
 **Key property:** η = 0 enforcement as an explicit design constraint. In the model, extraction collapses the stated purpose of the DAC; in the world, that claim still needs measured receipts and enforceable exit rights.
 
@@ -139,13 +140,13 @@ An organizational structure that separates Meaning (Map) from Capability (Territ
 
 **Dyadic A2 under `η = 0`** [S/I] Structural ethical direction
 
-In the move register, ethical direction is the dyadic rise of the finite node and its sustaining boundary: `ΔP_node,i > 0` and `ΔP_node,H > 0` under enforced `η = 0`. Across the widest relevant boundary, the balance audit asks whether manifold balance and measured node-level flourishing rise together: `ΣΔB / ΣΔP_node > 0`. This is the direction, not a destination. (`P∞ = φ · ν = 1` everywhere on open S²; what varies is balance, and finite nodes are scored by `P_node = Φ × V`.)
+In the move register, the declared `[I]` ethic is bearer-complete: morals require an `i→H` gain, ethics an `H→i` gain, and strict syntropy both, while every materially affected payer, beneficiary, third party, individual, and sustaining whole remains nonnegative under Justice. Aggregate balance scores are diagnostics only and cannot launder a negative bearer. `φν=1` is an analytic chart identity; `P_node:=ΦV` is a selected normalized score, not a derivation of the ethic.
 
-- **Syntropic:** Actions or relations that raise `P_node,i` and `P_node,H` together under `η = 0`, with `ΣΔB / ΣΔP_node > 0` as the widest-boundary audit
+- **Syntropic:** Actions or relations that raise both focal durable potentials under `η=0` while every materially affected bearer remains nonnegative and visible under Justice
 - **Parasitic:** Actions that raise one side by degrading the other — extraction that pushes systems toward the poles or hides a falling boundary
-- **The Telos:** The direction `ΣΔB / ΣΔP_node > 0` under `η = 0`, K2, receipts, and Grace Exit.
+- **The Telos:** Durable mutual option widening under non-extraction, bearer-complete Justice, accountable authorization, separate receipts, and Grace Exit. Aggregate scores are diagnostics only.
 
-**Evidence tier:** [S] for the structural direction; [C]/[B] depends on the domain-specific measurement claim.
+**Evidence tier:** `[I]` for the normative direction; `[C]/[B]` depends on domain-specific measurement.
 
 ---
 

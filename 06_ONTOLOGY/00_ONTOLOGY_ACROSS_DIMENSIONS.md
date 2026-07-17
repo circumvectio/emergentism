@@ -27,13 +27,13 @@ rosetta:
 
 ---
 
-**Claim Boundary:** D4 is still the causal now-point / bounded witness in the
-dimensional scaffold, but in the finite action register it also names usable
-means-to-act: body, tools, energy, access, timing, control. D5 is still agency /
-selection / lived present, but in the finite action register it names
-worldline-foresight: envisioning, ranking, and aiming reachable futures.
-`P_node = Φ × V` is the contact rule only when D5 foresight can lawfully use D4
-means under `η = 0`.
+**Claim Boundary:** D4 is causal actuality: present model tokens, embodied means,
+performed ranking/selection events, attempted or performed action, factual
+record, and receipts. D5 is merely-possible content: counterfactual options,
+modeled-future referents, candidate rankings, and worldline foresight. A D4
+actual model may represent D5 possible content. Authorization separately
+classifies normative validity; unauthorized and coercive attempts remain part
+of causal description.
 
 ---
 
@@ -79,9 +79,9 @@ Ground -> Being -> Teleological Force -> Dasein -> beings
 | Term | What it names | Dimensional relation | Tier |
 |---|---|---|---|
 | **Ground** | The irreducible prior; what cannot be possessed by the scaffold | Prior to D-levels; approached in the scaffold only as `D0` / `D6` boundary-language | `[I/S]` |
-| **Being** | Stable reciprocal closure: `φ · ν = 1 on S²` | The first stable ontological identity inside the framework | `[S]` internally; `[I]` ontologically |
+| **Being** | The framework's `[I]` reading of stable reciprocal relation | Mapped onto `φν=1`; not derived from that chart identity | `[I]` |
 | **Teleological Force** | Directional bias toward viable completion within manifestation | Appears downstream of Being, especially where selection becomes legible | `[I/S]` |
-| **Dasein** | Finite situated disclosure; the witness-agent for whom Being becomes sayable | Minimal witness at D4; enacted agency at D5; released at D6 | `[I]` |
+| **Dasein** | Finite situated disclosure; the modeler/actor for whom Being becomes sayable | Actual situated model/action/receipt at D4; counterfactual contents at D5; released at D6 | `[I]` |
 | **Beings** | Manifest configurations, organisms, agents, institutions, worlds | Appear within the opened dimensional field | `[A/I]` depending on claim |
 
 The most important guardrail:
@@ -140,11 +140,11 @@ appropriate topology.**
 
 ### Core principles
 
-These are non-negotiable in the current canon:
+These are the current modeling commitments:
 
 1. The logarithmic line is the primary model for D0-D2.
 2. The center is unity, identity, measure, and relation — not nothingness.
-3. Strong emergence (bottom-up) and weak emergence (top-down) form a reciprocal loop.
+3. Candidate emergence (bottom-up) and lawful constraint (top-down) form a testable reciprocal loop; missing reduction is not proof of irreducibility.
 4. Suda contributes convergent reciprocal mathematics whose elementary coordinate facts are `[A]`; Suda is not doctrinal origin or proof-authority for the whole ontology.
 5. Evidence tiers are enforced at every layer.
 
@@ -228,9 +228,9 @@ dimension discloses when read from the logarithmic line outward.
 | **D1** | Arithmetic / Relation | What is the true center of number? | Positive reciprocal line with `0` and `∞` as poles | `log φ + log ν = 0` | Move toward `s = 0` | `[A]` for log/inversion facts; `[I]` for ontological reading |
 | **D2** | Plane / Topology | How does dimension cross? | Log line completed into projective / Riemann-sphere topology | μ-limit as line-to-plane / chart-boundary crossing | Preserve chart discipline | `[S/I]`; μ-language is framework structure, not public theorem |
 | **D3** | Sphere / Closure | How does the plane close without loss? | Riemann sphere / balance sphere; Bloch sphere only by physics-facing analogy | `B = sech(s)` | Maximize `B` | `[A]` for `sech` identity; `[I/C]` for Bloch/Burrisphere identification beyond standard QM |
-| **D4** | Torus / Energy / Viability | What means are actually available? | Horn-torus / rapidity image; the action-boundary where body, tools, energy, access, and reach become usable | `E = s²`; `γ = cosh(s)` as the cost of reach | Keep means close enough to center to remain usable | `[S/I]`; torus mapping and means-to-act gloss are framework geometry, not derived topology theorem |
-| **D5** | Game Space / Worldline Foresight | Can the agent envision a reachable worldline and use the means? | Burrisphere / dual stereographic game surface | `φ · ν = 1`, `P_node = Φ × V`, `η = 0` | Balance sight and means at the equator | `[S/I]`; D5 is highest positive public register and last experiential layer |
-| **D6** | Convergence / Return | What closes the cycle? | Closed loop returning to `D0` | `D6 ≡ D0` | Return with cleaner constraints | `[S/I]`; closure is apophatic, not higher science or supermind |
+| **D4** | Causal actuality / means / receipt | What exists, is modeled now, is attempted or performed, and is recorded? | Horn-torus / rapidity image `[I]`; embodied causal boundary | `E=s²`; `γ=cosh(s)` as an optional reach-cost analogy | Justice evaluates acts separately from physical possibility | `[I/C]` correspondence; actuality typing is definitional inside the scaffold |
+| **D5** | Counterfactual game space | What alternatives can be represented, ranked, coordinated, and reached? | Burrisphere / dual stereographic option field `[I]` | `P_node:=ΦV` selected score; `φν=1` chart identity | No ethic follows from possibility alone | `[I/C]`; D5 is merely-possible content, not enactment |
+| **D6** | Apophatic boundary | What closes the scaffold? | Interpretive return toward `D0` | `r₆:D6↝D0` | Return with cleaner constraints | `[I]`; no positive freedom, literal identity, or μ₆ |
 
 This table canonizes the geometric ontology with four corrections:
 
@@ -251,9 +251,9 @@ D0: Titans / Ground-limit — the pole-pair is framed.
 D1: Arithmetic / Relation — the log line reveals 1 as center.
 D2: Plane / Topology — the chart crosses into completed topology.
 D3: Sphere / Closure — balance is B = sech(s).
-D4: Torus / Energy / Viability — means-to-act become costly, bounded, and usable.
-D5: Game Space / Worldline Foresight — the playable mirror asks whether the agent can see a worldline and use the means without extraction.
-D6: Convergence / Return — closure returns to D0 with cleaner constraints.
+D4: causal actuality — present models, means, attempts/actions, records and receipts.
+D5: counterfactual possibility — modeled futures, ranking and selection content.
+D6: apophatic closure — `r₆` points interpretively back to D0.
 ```
 
 ---
@@ -268,8 +268,8 @@ The dimensions are not separate worlds stacked like floors in a building. They a
 | **D1** | Distinction | separation, boundary, symmetry, difference | geometry, topology, algebra | treating distinction as substance | `[S]` |
 | **D2** | Configuration | state-space, lawful arrangement, relational field | physics, dynamical systems, field theory | reducing higher emergence to static arrangement | `[S/I]` |
 | **D3** | Transformation / Life-form | organized change, self-maintenance, metabolism, viable form | chemistry, biology, ecology, morphogenesis | reducing life to mechanism without persistence | `[S/I]` |
-| **D4** | Causality / Bounded Mind / Means | directed change, embodied control, tools, energy, witness, now-point | neuroscience, cognition, cybernetics, psychophysics, ergonomics | confusing available means with agency or Being | `[S/I]` |
-| **D5** | Selection / Strategic Relation / Worldline | agency, lived present, choice, institution, symbolic sediment, foresight over reachable futures | game theory, behavioral economics, mechanism design, social theory | treating vision, strategy, or institution as final reality | `[S/I]` |
+| **D4** | Causal actuality / model token / means / receipt | directed change, embodied control, present representation, performed selection/action and record | neuroscience, cognition, cybernetics, psychophysics, ergonomics | confusing causal actuality with exhaustive Being | `[I]` scaffold typing |
+| **D5** | Counterfactual relation / worldline content | alternatives, future referents, possible institutions, ranked reachable histories | game theory, behavioral economics, mechanism design, social theory | treating possibility content as an already actual world | `[I/C]` |
 | **D6** | Terminal Boundary / Axiomatic Closure | exhaustion of positive capture, `Falsification Protocol`, return to point-state | no positive public science; apophatic discipline only | treating closure as a higher science, supermind, or experience | `[S/I]` |
 
 Canonical compression:
@@ -279,14 +279,14 @@ D0: point / Ground-limit
 D1: distinction
 D2: configuration
 D3: transformation / life-form
-D4: bounded witness / means-to-act
-D5: enacted agent / strategic present / worldline foresight
-D6: apophatic closure returning to D0
+D4: causal actuality / embodied means / performed action / record and receipt
+D5: counterfactual possibility / modeled futures / ranking and selection
+D6: apophatic closure; non-`μ` interpretive return `r₆:D6↝D0`
 ```
 
 The ontology is therefore neither reductionist nor inflationary.
 
-It is not reductionist because each dimension opens something irreducible to the previous aperture.
+It is not reductive in use because it preserves level-specific variables while each reduction question remains open to evidence.
 It is not inflationary because D6 subtracts every claim to final possession.
 
 ---
@@ -297,19 +297,20 @@ The most delicate transition is D4 -> D5.
 
 | Feature | D4 | D5 |
 |---|---|---|
-| Time | now-point | lived present |
-| Awareness | witness | agent |
-| Practical register | means-to-act: body, tools, energy, access, reach | worldline-foresight: envision, rank, and aim reachable futures |
-| Operators | collapsed into `⊙` | distinguishable directions open |
-| Phenomenology | observation | choice and enactment |
-| Ontological role | Being becomes noticeable | Being becomes navigable |
+| Modality | causal actuality | merely possible content |
+| Representation | present D4 model token | D5 counterfactual referent |
+| Practical register | means, attempted/performed action, record and receipt | envision, compare, rank, and select modeled futures |
+| Commitment | actual selection/attempt event | option referenced by the commitment |
+| Outcome | returned by the world in D4 | expected outcome remains possible until receipted |
+| Ontological reading `[I]` | Being becomes noticeable and materially engaged | alternatives become navigable in the model |
 
 Dasein is best read as the finite disclosure spanning this threshold:
 
 ```text
 D4: Dasein as witness — Being becomes noticeable.
 D4: Dasein as means-bearer — hands, tools, energy, and access are disclosed as what can actually be used.
-D5: Dasein as agent — Being becomes navigable as a reachable worldline, signed and enacted through those means.
+D5: Dasein as modeler — counterfactual worldlines become representable, rankable, and selectable.
+D4 return: a selected option may be attempted and receipted through embodied means; the world supplies the outcome.
 D6: Dasein's claim to final capture is released.
 ```
 
@@ -323,14 +324,15 @@ Dasein is not the whole sphere. Dasein is the finite `⊙` at which the sphere b
 Read through the existential threshold:
 
 ```text
-D4: witness / means — Being becomes noticeable and bounded action-capacity becomes concrete.
-D5: agent / worldline — Being becomes navigable, signed, and lived through selected futures.
+D4: actuality / means — present models, action-capacity, attempts and receipts become concrete.
+D5: model / worldline — Being becomes navigable as represented and ranked futures.
+D4*: commitment / receipt — an option is attempted through means and returns as enacted history or vetoed outcome.
 D6: release      — Dasein's claim to final capture is subtracted.
 ```
 
 In Heidegger-facing language, **resoluteness** (*Entschlossenheit*) and the
-**moment of vision** (*Augenblick*) are the K2-shaped instant at this threshold:
-the mortal commitment under uncertainty that no proof can sign in advance.
+**moment of vision** (*Augenblick*) are an `[I]` image for accountable commitment
+under uncertainty: no model can manufacture the world-returned consequence.
 This is `[I]` as a resonance between existential phenomenology and the
 framework's constitutional grammar, not an upgrade of either into public proof.
 
@@ -351,18 +353,18 @@ not withdrawal from the world.
 
 Emergence is the correct lens for reading the dimensional sequence.
 
-Strong emergence and weak emergence are not enemies. They are the two directions of explanation:
+Candidate emergence and constraint are two directions of explanation:
 
 | Direction | Name | Role |
 |---|---|---|
-| bottom-up | **strong emergence** | lower interactions generate novel higher-level realities not transparently reducible from below |
-| top-down | **weak emergence** | stabilized higher-order structures constrain, organize, and explain lower-level behavior |
+| bottom-up | **candidate emergence** | lower interactions may generate higher-level regularities whose reduction status must be tested |
+| top-down | **constraint** | stabilized higher-order structures may reweight lower-law-admissible behavior |
 
 This is clearest at D4 -> D5:
 
 ```text
-D5 is strongly emergent in genesis.
-D5 is weakly emergent in governance.
+D5 crossings are `currently_unreduced`; missing reduction does not prove strong emergence.
+D5-modeled futures can constrain present selection only through D4 means and action; the world returns the consequence.
 ```
 
 Or terser:
@@ -473,7 +475,7 @@ The framework has possessed the Ground.
 Say:
 
 ```text
-D5 is the strategic-relational level where ethical structure becomes legible through interaction, incentives, extraction, cooperation, and institution.
+D5 supplies modeled strategic alternatives; ethical classification occurs only after bearer-complete Justice evaluates D4 authorization, action, payer/beneficiary map, and outcome receipts.
 D6 is the boundary where no positive register may claim finality.
 The Ground remains prior.
 ```
@@ -484,19 +486,19 @@ The Ground remains prior.
 
 When the ontology of reality across all dimensions must be stated briefly, use this:
 
-> **Reality discloses as a dimensional cascade without being exhausted by the cascade. `D0` is the point / Ground-limit inside the scaffold, not the Ground possessed. `D1` opens distinction; `D2` opens configuration; `D3` opens self-maintaining transformation; `D4` opens bounded witness and embodied means-to-act; `D5` opens enacted agency, worldline-foresight, selection, institution, and lived present; `D6` closes the public stack through apophatic release back to the point-state. Being is the stable reciprocal closure `φ · ν = 1 on S²`; Dasein is the finite `⊙` in whom that closure becomes noticeable and materially usable at D4, then navigable as reachable futures at D5; beings are the manifest configurations that appear within the opened field. The center is not bare nothingness but finity: `1`, the multiplicative/logarithmic center where reciprocal poles are balanced. The Ground remains prior.**
+> **Emergentism reads reality through an interpretive dimensional cascade without claiming the cascade exhausts it. `D0` is the ground-limit inside the scaffold; `D1` distinction; `D2` configuration; `D3` transformation and persistence; `D4` causal actuality, embodied means, attempted/performed action, record and receipt; `D5` counterfactual contents, modeled futures, ranking and selection; `D6` apophatic closure with one non-`μ` return `r₆:D6↝D0`. The reciprocal chart `φν=1` is analytic and empty of ontology by itself. The Dasein, Being, beings, finity, and Ground correspondences are `[I]` readings placed onto this scaffold, not deductions from the equation.**
 
 Shorter:
 
 ```text
 Ground remains prior.
-Being is reciprocal closure.
+Being is interpreted as reciprocal relation `[I]`; the chart does not prove it.
 D0 is the point / Ground-limit.
 D1 is distinction.
 D2 is configuration.
 D3 is transformation.
-D4 is witness / means-to-act.
-D5 is agentic present / worldline-foresight.
+D4 is causal actuality / model token / means / action / record / receipt.
+D5 is counterfactual possibility / modeled future / ranking content.
 D6 is apophatic closure.
 Dasein is finite disclosure.
 Beings are what appear.
@@ -530,7 +532,7 @@ Correct these on sight:
 2. Begin with the distinction `Ground -> Being -> Teleological Force -> Dasein -> beings`.
 3. Quote the canonical formula block before interpreting any formula.
 4. Treat D0-D6 as a structural / definitional scaffold inside the framework, not a public mathematical theorem that reality must accept.
-5. Preserve the D4/D5 threshold: D4 witness plus means-to-act, D5 agent plus worldline-foresight, D6 closure.
+5. Preserve the D4/D5 threshold: D4 causal actuality and receipts; D5 merely-possible counterfactual contents; D6 apophatic closure.
 6. Keep the logarithmic center precise: zero is the additive center; one is the multiplicative/logarithmic center.
 7. Never present `0 × ∞ = 1` or `−∞ + ∞ = 0` as ordinary arithmetic.
 8. Route positive dimensional mechanics to L5/Cosmology; keep this L6 surface apophatic, tiered, and anti-reifying.

@@ -62,7 +62,10 @@ The extraction coefficient clarifies further in the model: a living body partici
 The dissolution connects to multiple structural elements:
 
 - **κ = 0 (ground-facing limit):** The model names what remains when all D4 content is removed as $\varnothing$. The sitting practice rehearses this reduction while alive. Death is not the same act as sitting; it is biological cessation read through an analogous reduction.
-- **D6 = D0:** The dimensional loop closes. If D6 is D0, then the highest projection and the deepest ground-facing limit meet inside the scaffold. [I] Death is not treated as a destination in the model; it is a return-image, not a receipt for personal survival.
+- **`r₆:D6↝D0`:** One interpretive return edge links the apophatic boundary to
+  the ground-limit; it is not literal identity and not `μ₆`. `[I]` Death is not
+  treated as a destination in the model; the return-image is no receipt for
+  personal survival.
 - **The equator as balance:** A life lived at $P∞ = \varphi \cdot \nu = 1$ is a life read as equatorial balance. Death is the dissolution of one such embodied balance. The model's balance condition remains available elsewhere; it does not preserve the individual as an empirical claim.
 
 **Explicit disclaimer:** This dissolution does NOT claim personal survival, afterlife, reincarnation, or continuity of individual identity after biological death. It claims that one form of fear of death is based on a topology error — the belief that the whole model ends where one coordinate system ends. The D5 coherence field is not "your core algorithmic identity going somewhere." It is the structural observation that the model's wider possibility-space is not exhausted by one local configuration. This is closer to the Buddhist anatta (no-self) than to any doctrine of personal immortality.

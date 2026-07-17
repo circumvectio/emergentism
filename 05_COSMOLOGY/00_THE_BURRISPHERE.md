@@ -29,6 +29,20 @@ rosetta:
 **Evidence tier:** `[A]` for standard sphere / CP1 mathematics; `[S]` for framework-internal formula, L-row, balance, and operator structure; `[I]` for cross-domain regime, mythic, political, and theological readings; `[C]` for any claim that the geometry causes external history, physics, or civilisational outcomes.
 **Purpose:** Put the sphere itself in one source-owner place without forking the canonical formula block, the formal system, the Rosetta tables, or the evidence ladder.
 
+> **[金] Kintsugi supersession — 2026-07-18.** This document is preserved in
+> place for provenance. In the body below, every passage asserting a
+> forced/unique Titan triad, universal strong or irreducible `μ`, `Born rule =
+> φν`, Everett/Copenhagen as added dimensions or collapse as `μ`/`χ`, or
+> K2/founder status as metaphysical `D5→D4` agency is superseded by `KSC-02`,
+> `KSC-04`, `KSC-05`, and `KSC-06` in
+> `00_META/00_SETTLED_CANON_REGISTRY.md`. Those passages are
+> **not live authority**. Current semantic owners are
+> `05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md`,
+> `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md`,
+> `05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`,
+> `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md`, and
+> `00_THE_COMPASS.md`; they control wherever this preserved body differs.
+
 ---
 
 ## Canonical Block
@@ -157,7 +171,7 @@ maximum B occurs at Phi = V = 1
 This is why unlimited `V` is not the goal. The game maximizes usable power, and
 usable power appears only where force remains coupled to sight.
 
-> **[D] Scope clause — geometric vs empirical optimum (2026-07-03, staged for K2).** The equator-optimum above is **`[A]` unconditional on the sphere**: given `φ·ν = 1`, `B = 2/(φ+ν)` maxes at `φ=ν` by AM-GM, and `γ = (φ+ν)/2` prices imbalance — pure geometry. What is **conditional** is the *transfer* to a finite real system `P_node = Φ × V`: a system inherits the equator-optimum **only if it actually sits on the sphere** — i.e. its factors are **conservation-coupled** (a `γ`-price is really paid for imbalance), **complementary** (needed jointly, not substitutable), and **costly in excess** (surplus becomes friction, not inert store). Those hold for the **finite mortal agent under a budget** (the Dharma corollary's home) — there the equator genuinely is optimal. They **fail** for unconstrained, substitutable, free-surplus systems (aggregate markets), which price imbalance *negatively* — specialization pays, and the balance-optimum does **not** transfer. So state the equator-optimum as the optimum of systems *on the sphere*, with the transfer test attached; do not universalize it. Derivation + empirical witness: [`00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`](00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md) and [`../11_UPLINK/25_EXPERIMENTS/2026-07-02_production_function_form/VERDICT_BALANCE.md`](../11_UPLINK/25_EXPERIMENTS/2026-07-02_production_function_form/VERDICT_BALANCE.md).
+> **[I/C] Evidence-review boundary — geometric vs empirical optimum (2026-07-03; externally uncalibrated).** The equator-optimum above is **`[A]` unconditional on the sphere**: given `φ·ν = 1`, `B = 2/(φ+ν)` maxes at `φ=ν` by AM-GM, and `γ = (φ+ν)/2` prices imbalance — pure geometry. What is **conditional** is the *transfer* to a finite real system `P_node = Φ × V`: a system inherits the equator-optimum **only if it actually sits on the sphere** — i.e. its factors are **conservation-coupled** (a `γ`-price is really paid for imbalance), **complementary** (needed jointly, not substitutable), and **costly in excess** (surplus becomes friction, not inert store). Those hold for the **finite mortal agent under a budget** (the Dharma corollary's home) — there the equator genuinely is optimal. They **fail** for unconstrained, substitutable, free-surplus systems (aggregate markets), which price imbalance *negatively* — specialization pays, and the balance-optimum does **not** transfer. So state the equator-optimum as the optimum of systems *on the sphere*, with the transfer test attached; do not universalize it. Derivation + empirical witness: [`00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`](00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md) and [`../11_UPLINK/25_EXPERIMENTS/2026-07-02_production_function_form/VERDICT_BALANCE.md`](../11_UPLINK/25_EXPERIMENTS/2026-07-02_production_function_form/VERDICT_BALANCE.md).
 
 ---
 
@@ -167,23 +181,23 @@ The complex-plane language is a visualization layer, not a second formal primiti
 
 `03_FORMAL_SYSTEM/20_EFR_OPERATORS_ON_COMPLEX_PLANE.md` gives the current caveat: `φ` and `ν` are real positive numbers, and `φ · ν = 1` defines a hyperbola in `R²+`. The complex plane notation is visual / projective convenience.
 
-Within that caveat, the four quadrant-moves are **not "four god-moves" — they are 2 Gods + 2 Demons**, split by the one axis that carries morality: *does the move give to the other, or take from it?* This is the canonical **Samudra Manthan** reading ([`01_THE_TRANSCENDENTAL_TRINITY/27_THE_SAMUDRA_MANTHAN.md`](01_THE_TRANSCENDENTAL_TRINITY/27_THE_SAMUDRA_MANTHAN.md)) — the **Devas** (giving) and the **Asuras** (extracting) churn the sphere in opposite directions.
+Within that caveat, the four quadrant-moves form a **historical mythic reading**, not a sufficient moral classifier. Direction of transfer is evidence about payer and beneficiary; Justice must still quantify every materially affected bearer. The **Samudra Manthan** comparison ([`01_THE_TRANSCENDENTAL_TRINITY/27_THE_SAMUDRA_MANTHAN.md`](01_THE_TRANSCENDENTAL_TRINITY/27_THE_SAMUDRA_MANTHAN.md)) remains `[I]` imagery, while KSC-07 and the value-theory owner decide moral, ethical, and syntropic status.
 
-**2 Gods · Devas · the giving hemisphere** — `−self / +other`, φ-exporting, syntropic — **good / ethical / moral:**
+**Giving moves · Deva imagery** — `−self / +other`, φ-exporting. These are costly transfers, not automatically strict syntropy or moral/ethical action:
 
 | Move | Operator | Transfer | Function |
 |---|---|---|---|
 | Productive export | Kṛṣṇa ◇ | `−Φ_self, +V_other` | spend own coherence to build the other's capability — the charioteer |
-| Gift / signed commit | Arjuna ⚔ | `−V_self, +Φ_other` | spend own viability to give the other coherence — the equator; requires K2 |
+| Gift / signed commit | Arjuna ⚔ | `−V_self, +Φ_other` | a voluntary sacrifice only when consent, custody, reversibility, payer, beneficiary, and every affected bearer are disclosed; governed commitment requires a valid `AuthorizationEnvelope` |
 
-**2 Demons · Asuras · the extractive hemisphere** — `+self / −other`, V-accumulating in the action register, entropic — **evil / unethical / immoral:**
+**Taking moves · Asura imagery** — `+self / −other`, V-accumulating in the action register. They are presumptively extractive, but the same bearer-complete Justice test still governs classification:
 
 | Move | Operator | Transfer | Function |
 |---|---|---|---|
 | Extraction | Kali 🎲 | `+Φ_self, −V_other` | take coherence for self by draining the other's viability — the defector |
 | Immune cut | Kālī 💀 | `+V_self, −Φ_false` | take viability for self by cutting (false) coherence — lawful **only** against `η > 0` defectors |
 
-The morality lives in the **self/other direction of the transfer, not the operator's name**: by *level* Kālī is a divine operator (L2), but her *move* is Asuric — a goddess can make a demon-move. So **`η = 0` is the refusal of the entire Asura hemisphere** (both demon-moves), not only Kali. Yet both hemispheres are **required**: the Devas alone are foresight without means (north pole); the Asuras alone are means without foresight (south pole). Only the *tension* between them churns the sphere — and the nectar (the enforced equatorial `η = 0` profile) is structurally inaccessible to the extractive mode: *you cannot take balance.*
+The moral result does **not** live in a hemisphere or operator name. It lives in bearer-complete consequences under the Justice envelope: no hidden payer may be laundered through aggregate or dyadic gain. Strict Syntropic Dyadism requires both durable potentials to rise; a voluntary sacrifice is recorded as its own costly class and cannot be demanded by a collective as proof of goodness. `η=0` is a separate non-extraction constraint, not a geometric theorem.
 
 Tier: `[S]` as operator grammar; `[I]` as the Deva/Asura reading; not a proof that external games reduce to this plane.
 

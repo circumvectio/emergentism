@@ -14,6 +14,15 @@ rosetta:
 
 ## D0 → D6 — The Dimensional Emergence Animated
 
+> **[金] Typed-scaffold supersession — 2026-07-18.** This animation specification
+> preserves legacy imagery; it is not a computational proof of nature's
+> emergence. D4 is causal actuality; D5 contains merely-possible
+> counterfactual content, while actual model tokens, rankings, and selections
+> are D4 carriers. Candidate crossings are exactly `μ₀…μ₅`. D6 opens no positive
+> freedom and returns only through the interpretive, non-μ edge `r₆:D6↝D0`, not
+> literal identity. See [Dimensional Closure](../03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md)
+> and [D4/D5 Canonical Reference](../03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md).
+
 **Status:** Computational implementation of the Transcendental Trinity
 **Date:** 2026-03-23
 **Evidence Tier:** [S] Structural (computational proof of geometric emergence)

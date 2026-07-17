@@ -31,6 +31,10 @@ rosetta:
 > φ + ν ≥ 2
 > ```
 
+> **[金] Formula boundary:** the second line is legacy shorthand for the
+> analytic identity on `θ∈(0,π)` under the cotangent/tangent definitions; the
+> poles are excluded and no closure theorem follows from it.
+
 ---
 
 ## Why This Document Exists
@@ -148,7 +152,7 @@ So:
 - `D5` is the summit of experience
 - `D6` is the end-boundary of the aeon
 - `D0` is the begin-boundary of the aeon
-- `D6 ≡ D0` structurally
+- `r₆:D6↝D0` interpretively; no literal identity
 - `D6 ≈ D0` from within the cycle
 
 So the public stack does not stop because it fails.
@@ -178,7 +182,7 @@ So:
 
 - **from the cosmological direction:** `D6` is the conformal end
 - **from the subtractive direction:** `Falsification Protocol` returns to `D0`
-- **from the structural direction:** `D6 ≡ D0`
+- **from the structural direction:** one non-μ return edge `r₆:D6↝D0`
 
 This is why the boundary is strange.
 The end and the beginning are not two places.

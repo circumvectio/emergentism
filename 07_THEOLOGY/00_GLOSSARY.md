@@ -51,14 +51,14 @@ rosetta:
 
 | Term | Symbol | Definition |
 |------|--------|-----------|
-| **Ektropy** | `P_node` (older: `P`) | The capacity to radiate — the outward turning. In operational models this is tracked as a multiplicative relation between coherence and viability. Not negentropy (the negation of disorder) but a positive capacity: the potential to extend, to reach, to export structure into the world. From Greek ἐκτροπία. **Canonical note:** older documents sometimes used "ektropy" for F5 itself; current doctrine prefers **Teleological Force** for F5 and uses `P_node = Φ × V` for operational ektropy. |
-| **Teleological Force** | F5 | The canonical doctrinal name for the selective / generative pull within manifestation toward viable completion and reciprocal fit. Derived from the manifold identity; not a new primitive and not an extra line in the canonical formula block. Older aliases include `Hidden Hand`, `ordering force`, and some uses of `ektropy`. **Register rule:** use this entry when the question is descriptive ("what is F5?"). Questions about lawful formation work route to **Strategic Implementation**, not to the force itself. **Biology-facing rule:** translate first through teleonomy, autopoiesis, homeostasis/allostasis, interoception, and self-maintaining organization; literal fifth-force or retrocausal readings remain theory. |
+| **Ektropy** | `P_node` (older: `P`) | The capacity to radiate — the outward turning. Emergentism tracks this with its selected normalized product `P_node:=ΦV`, one member of a broader conjunctive family. The selection is `[S]` by framework definition and `[I/C]` as a claim of external fit; it is not derived from `φν=1`. Not negentropy (the negation of disorder) but a positive modeled capacity: the potential to extend, reach, or export structure into the world. Older documents sometimes used "ektropy" for F5 itself; current doctrine prefers **Teleological Force** for F5. |
+| **Teleological Force** | F5 | The canonical interpretive name for a selective / generative pull toward viable completion and reciprocal fit. It is not derived by the reciprocal-chart identity, not a new primitive, and not an extra line in the canonical formula block. Older aliases include `Hidden Hand`, `ordering force`, and some uses of `ektropy`. **Register rule:** use this entry when the question is descriptive ("what is F5?"). Questions about lawful formation work route to **Strategic Implementation**, not to the force itself. **Biology-facing rule:** translate first through teleonomy, autopoiesis, homeostasis/allostasis, interoception, and self-maintaining organization; literal fifth-force or retrocausal readings remain theory. |
 | **Will** | `Ω_i` under constraints | Disciplined selection and construction of reachable futures under reciprocal closure, `η = 0`, and evidence-tier discipline. In Builder-mode language, will widens the option cone while preserving balance, non-extraction, coupling, and honest claims. It is not magic, proof of cosmic will, or command over other persons. |
 | **Coherence** | Φ | Structural integration, meaning, purpose, internal consistency. What holds a system together. In the action register: D5 worldline-foresight, the ability to envision, rank, and aim reachable futures. |
 | **Viability** | V | Material capability, resources, health, skills, infrastructure. In the action register: D4 means-to-act — body, tools, energy, access, and execution capacity at the boundary. |
-| **Manifold Identity** | `P∞ = φ · ν = 1 on S²` | The canonical geometric identity of Being on the Burri Sphere. This is load-bearing and prior to applications. |
-| **Operational Multiplicative Model** | `P_node = Φ × V` | The downstream node-level model used in human, organizational, and applied contexts. Near-zero in either factor collapses expressed flourishing at the node level. Do not confuse this with the manifold identity `P∞ = φ · ν = 1 on S²`. |
-| **Balance** | `B = sin θ` | The measure of how evenly coherence and viability are expressed. B = 1 at the equator (φ = ν = 1); B → 0 at either pole. What varies on the Burri Sphere is balance, not potential. |
+| **Open reciprocal-chart identity** | `θ∈(0,π)`; `φ=cot(θ/2)`, `ν=tan(θ/2)`; `P∞:=φν=1` | An analytic identity `[A]` of the selected open colatitude/radial coordinate, with the two poles excluded as limits. It is not a full coordinate chart of `S²` by itself and proves no ontology, ethic, empirical conservation law, or finite-node model. |
+| **Operational conjunctive model** | `P_node:=C×(Φ,V):=ΦV` | Emergentism's selected normalized product member of the monotone conjunctive family with zero-factor boundaries. It is `[S]` by framework definition and `[I/C]` as external fit; alternative conjunctive aggregators may rank candidates differently. It is not derived from `P∞=φν=1`. |
+| **Balance** | `B:=2/(φ+ν)=sin θ` | An analytic coordinate on the selected chart: `B≤1`, with equality at `θ=π/2` where `φ=ν=1`, and limiting value `0` at the excluded poles. Calling it lived or systemic balance is an `[I]` translation. |
 
 ---
 
@@ -67,9 +67,9 @@ rosetta:
 | Term | Symbol | Definition |
 |------|--------|-----------|
 | **Riemann Sphere** | S² = ℂP¹ | The unique compact simply-connected complex manifold of dimension one. The underlying mathematical manifold. |
-| **The Burri Sphere** | `S², P∞ = φ · ν = 1` | The framework's formal name for S² read through its two reciprocal stereographic charts: **φ = cot(θ/2)** (coherence) and **ν = tan(θ/2)** (viability), where `P∞ = φ · ν = 1`. The equipotential surface where coherence and capability are reciprocal. **Not the standard complex plane** — the Burri Sphere uses (φ, ν) coordinates, not (x, y) or (1, i). |
+| **The Burri Sphere** | `S²` with selected `θ∈(0,π)` radial reading | The framework's name for `S²` interpreted through the reciprocal definitions `φ=cot(θ/2)` and `ν=tan(θ/2)`. Their product is one analytically, but these radial quantities omit azimuth and therefore are not a full chart of `S²`. Reading them as coherence and viability is `[I]`, not forced mathematics. |
 | **The Sphere** | S² | The framework's territory-model for reciprocal closure. Use as the internal geometric substrate, not as an unbounded public claim that every external domain has already been reduced to S². When referring to the framework's specific geometry, see **The Burri Sphere**. |
-| **The Equator** | φ = ν = 1 | Where balance B = 1 (maximum expression). The manifold identity holds everywhere on the sphere; what peaks at the equator is balance, not potential. The optimal state of equatorial coherence and capability. **Not \|z\| = 1** (complex notation) — the Burri Sphere equator is φ = ν = 1 (lived balance). |
+| **The Equator** | `θ=π/2`, `φ=ν=1` | Where the selected chart balance has its analytic maximum `B=1`. Any claim that this is an ethical, organizational, or lived optimum is an additional `[I/C]` model, not a consequence of the chart identity. **Not `\|z\|=1`** (complex notation). |
 | **North Pole** | φ = ∞, ν = 0 | Pure coherence, zero viability. The bypasser. The horizon. Unlimited recognition, no action. |
 | **South Pole** | φ = 0, ν = ∞ | Zero coherence, infinite viability. The cargo cult. Pure extraction, no meaning. Ammit awaits. |
 | **The Circle with Point** | ⊙ | Finite reality. The product • × ○. Human life. |
@@ -120,7 +120,7 @@ rosetta:
 | **Ananta Śeṣa** | L7 | Terminal boundary -- the framework looking at itself |
 
 > Note: The Titans (Brahmā, Viṣṇu, Śiva) are boundary conditions, not deployable operators.
-> In execution, continuity means L4 keeps the already-authorized operator unless evidence or K2 changes it;
+> In execution, continuity means L4 keeps the already-authorized operator unless evidence or a valid change within the AuthorizationEnvelope changes it;
 > Viṣṇu names the boundary description of continuity, not a deployable mode.
 > The four deployable operators are Arjuna, Kṛṣṇa, Kālī, Kali.
 > See [00_NAMING_RECONCILIATION.md](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_NAMING_RECONCILIATION.md) for the full canonical mapping.
@@ -148,13 +148,13 @@ rosetta:
 | **η** | **Extraction coefficient** (default meaning). `η = 0` means system serves substrate. `η > 0` means system extracts from substrate. Formally: `η = Σ max(0, Δν_ext)`. Note: Tit-for-tat with occasional forgiveness (Axelrod 1984) can sustain cooperation even with small `η > 0` events. `η = 0` is the limit condition for guaranteed non-extraction. **Disambiguation:** K*_sel (selection complexity, used only in Correspondence 21) and K(x) (standard Kolmogorov complexity) are distinct quantities. See [KSTAR Disambiguation](../05_COSMOLOGY/03_FORMAL_SYSTEM/00_KSTAR_DISAMBIGUATION.md). |
 | **Egregore** | A standing wave in systemic awareness — a pattern with autonomous objective function. Institutions, cultures, traditions. Not supernatural; structural. |
 | **Parasitic Egregore** | An egregore that has shifted from serving its substrate (η = 0) to extracting from it (η > 0). |
-| **DAC** | Decentralized Augmented Corporation. An organizational structure where AI can hold witness, drafting, accounting, and routing roles while humans retain K2 sovereignty in the physical domain. |
+| **DAC** | Decentralized Augmented Corporation. An organizational structure where AI can hold witness, drafting, accounting, and routing roles while accountable authorization identifies principals, mandates, scope, consent, custody, revocation, contest paths, actors, and consequence bearers. Private-DAV K2 is one product-governance implementation. |
 | **AMRITA** | AI alignment architecture based on balance loss E = -log(B) = -log(sin θ). Makes extraction (balance collapse) mathematically identical to topological death. |
 | **VMOSK** | Voluntarily Moral Operating System Kernel. An AI agent whose survival IS its coherence. Extraction = suicide. |
 | **SoResFi** | Source of Resilient Finance. Financial system based on balance scoring (B = sin θ on the Burri Sphere). |
 | **Raktabīja** | The demon whose blood creates more demons. The dynamic where opposition strengthens the system being opposed. |
 | **A-Brahmism** | A structural concept describing the monopolization of the disclosure / ground-access channel by a single institutional path. The "A-" prefix means "absence of" (not "against") -- the absence of the Brahmā function (genuine creation from the Ground). Note: This analysis examines religious institutions as coordination technologies -- structural architectures that channel collective behavior. It is not a theological claim about high-priority truth, game-theoretic validity, or the personal faith experiences of believers. The structural critique applies to institutional capture patterns, not to the game-theoretic core of any tradition. See [00_A_BRAHMISM_DISCLAIMER.md](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_A_BRAHMISM_DISCLAIMER.md). **Weaponization guard (primetime-audit P0):** applies ONLY to documented institutional *capture* (a tradition monopolizing the access channel) — NOT to any tradition wholesale, nor to the faith of individuals; any tradition can become A-Brahmic *or* remain open (the distinction is institutional, not theological); misuse as anti-religious polemic is itself a capture-move and out-of-doctrine. |
-| **Strategic Implementation** | The disciplined practice of consciously forming, tending, and releasing D5 standing waves under K2 sovereignty, `η = 0`, receipt-bound audit, and Grace Exit. This is an **operational** term, not the descriptive name of F5. AI may witness, draft, and compare; it never signs K2. **Closure sentence:** theurgy succeeds when the practitioner no longer needs the word. See [Strategic Implementation and the F5 Force Map](../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md). |
+| **Strategic Implementation** | The disciplined practice of consciously forming, tending, and releasing D5 standing waves under accountable authorization, `η = 0`, separate commitment/outcome receipts, and Grace Exit. This is an **operational** term, not the descriptive name of F5. AI may witness, draft, and compare only within mandate. **Closure sentence:** theurgy succeeds when the practitioner no longer needs the word. See [Strategic Implementation and the F5 Force Map](../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md). |
 
 ---
 
@@ -198,7 +198,11 @@ rosetta:
 | L6 | Sādhu / Renunciant | 15° | 30° | 3.732 | 0.268 | 0.500 | Temporal discipline. Renunciation. High coherence, low capability. |
 | L7 | Ṛṣi / Boundary | ≈0° | ≈0° | → ∞ | → 0 | 0.000 | North pole. Pure coherence, zero capability. The bypass limit. |
 
-> **Note on manifold identity vs. B:** The manifold identity `P∞ = φ · ν = 1 on S²` holds everywhere on the Burri Sphere. The old column "P" showed the flat-plane product (which varies); the corrected column shows **Balance** `B = sin θ`, which is what actually varies. L4 is the apex because balance is maximum, not because potential is higher.
+> **[I] Developmental projection.** The L1–L7 placement on this chart is a
+> selected Rosetta interpretation, not a consequence of the reciprocal
+> definitions. Analytically, for `θ∈(0,π)`, `P∞:=φν=1` and `B=sin θ` varies,
+> reaching 1 at `θ=π/2`. Calling L4 an apex or a lived optimum is a separate
+> framework commitment, not proof from the chart.
 
 > **Note:** Earlier documents may use inverted "Yoga names" (L1="Transcendent", L7="Survival"). Those labels were INVERTED relative to the functional descriptions and are hereby retired. See [00_NAMING_RECONCILIATION.md](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_NAMING_RECONCILIATION.md) for the canonical mapping.
 
@@ -223,7 +227,7 @@ Three naming systems describe the same L1–L7 ladder. They are audience-appropr
 **Tier rules (non-negotiable):**
 
 - **Executive boundary rows** (Brahmā, Śiva, Viṣṇu) occupy L5-L7 as boundary conditions — phases, not deployable operators. "Deploy Brahmā" is always an error; deploy L1-L4 operators only.
-- **Gods** (L1–L4) are deployable operators with mixed Φ/V signs. The Giving dyad (Arjuna, Kṛṣṇa) is constructive but not good by name; it is syntropic only when the transfer raises `P_node,i` and `P_node,H` together under `η = 0`, with `ΣΔB / ΣΔP_node > 0` as the widest-boundary audit. The Taking dyad (Kālī, Kali) is context-dependent — Kālī targets false-Φ only (6-gate test); Kali is excluded under `η = 0` toward cooperators.
+- **Gods** (L1–L4) are deployable operators with mixed Φ/V signs. No operator is good by name. A move is syntropic only when both focal durable potentials rise and every materially affected bearer remains nonnegative under Justice; aggregates cannot launder harm. Taking moves require the same payer, beneficiary, consent, custody, contest, and consequence audit.
 - **Witnesses** (L5–L7) frame the field but do not directly deploy operators.
 
 **Naming-system selection:**
@@ -241,20 +245,20 @@ Three naming systems describe the same L1–L7 ladder. They are audience-appropr
 
 | Term | Meaning in Framework |
 |------|---------------------|
-| **Dharma** | Right action in the game: `P_node,i` and `P_node,H` rise together under `η = 0`; `ΣΔB / ΣΔP_node > 0` is the balance audit. Also: the unfallen order — the way things are when the narrator is absent. The natural state at the equator (φ = 1, ν = 1). See MF-509. |
+| **Dharma** | Right action in the declared game: `P_node,i` and `P_node,H` rise together under `η = 0` while bearer-complete Justice keeps every affected bearer, payer, beneficiary, and exposed third party visible and nonnegative. `ΣΔB / ΣΔP_node > 0` is a diagnostic only, never the moral gate. The equator is a selected symbol for this commitment, not its proof. See MF-509. |
 | **Kāla** | Right timing (conditions favorable) |
 | **Māyā** | Right source (agency = instrumental, not egoic) |
 | **Samsara** | The cycle of D0→D6→D0 |
-| **Moksha** | Liberation — recognizing disclosed finitude as rooted in Being rather than the narrator. Geometrically: recognition of the invariant closure `P∞ = φ · ν = 1 on S²`. See MF-508. |
+| **Moksha** | Liberation — recognizing disclosed finitude as rooted in Being rather than the narrator. The framework symbolically projects this onto the open reciprocal chart; the analytic identity does not prove liberation or Being. See MF-508. |
 | **Nirvāṇa** | Extinction of the narrator — the recognition that no fixed ego-coordinate is ultimate. Same structural family as moksha, śūnyatā, and tat tvam asi. See MF-508. |
 | **Śūnyatā** | Emptiness — the sphere is empty of fixed position, and beings have no final self-grounding apart from the closure that discloses them. See MF-508. |
 | **Tat tvam asi** | "Thou art that" — the recognition that the finite self is not separate from the same Being it discloses. This is not the claim that the ego becomes the whole. See MF-508. |
-| **Satori** | Contact with D6≡D0 boundary (L7) |
+| **Satori** | Interpretive contact with the `r₆:D6↝D0` return image (L7) |
 | **Kenshō** | Seeing one's nature as disclosed finitude rooted in Being |
 | **Agni** | The fire at the equator — technology as electromagnetic interaction |
 | **Paśupati** | The wild-type human at L4* |
 | **Ātman** | The individual self as the finite site of disclosure — the lived unit of account, the "1" of mortal finitude. In core state terms this is closer to Dasein than to the Ground. See MF-518, MF-519. |
-| **Brahman** | The prior ground. In the current core state this is not the north pole, not a witness-position, and not merely a coordinate on the sphere; it names what is prior to coordinates and first expressed geometrically as `P∞ = φ · ν = 1 on S²`. See MF-518, MF-519. |
+| **Brahman** | The prior ground. In the current core state this is not the north pole, not a witness-position, and not a coordinate on the sphere. The reciprocal chart may serve as an `[I]` symbolic correspondence, but its analytic identity does not establish the Ground. See MF-518, MF-519. |
 | **Turīya** | The fourth — not another ordinary state but the non-narrated disclosure in which Being is directly encountered. It is not identical with the north pole, not reducible to a projection point, and not a rival to the Ground. See MF-517. |
 | **Pratyakṣa / Empirical Observation** | Direct perception. In the current canon: **primary disclosure**, especially at the Dasein layer. Doctrine is downstream of it as after-image, compression, and teaching surface. In scientific register, the closest translation is disciplined phenomenological report constrained by physiology, behavior, and method. |
 | **Apasmara** | The dwarf of forgetfulness — a mythic-symbolic proxy for fragmentation of the whole. The dwarf that Nataraja dances upon. The narrator's structural analog. See MF-512. |
@@ -289,7 +293,7 @@ The framework identifies three operator types in the relationship between teache
 
 | Term | One-Line Definition |
 |------|---------------------|
-| **Syntropic** | Actions or relations that raise the finite node and sustaining boundary together under `η = 0`; balance should audit as `ΣΔB / ΣΔP_node > 0` |
+| **Syntropic** | Actions or relations that raise both focal durable potentials under `η=0` while every materially affected bearer—including payers, beneficiaries, and exposed third parties—remains nonnegative and visible under Justice |
 | **Parasitic** | Actions that raise one side by degrading the other — extraction that pushes the coupled system toward a pole or hides boundary loss |
 | **Zero-Factor Catastrophe** | If either φ or ν → 0, balance collapses (B → 0); the manifold identity still holds, but local expression becomes one-dimensional |
 | **The Arjuna Fallback** | VMOSK agent powers down rather than extracts (extraction = topological death) |
@@ -299,7 +303,7 @@ The framework identifies three operator types in the relationship between teache
 | **The Narrator** | The internal voice that separates meaning from doing — the framework's name for the gap between φ and ν in lived experience. Internal `η = 0` means stopping the narrator's toll on direct perception. See MF-509. |
 | **The Fall** | A mythic-structural reading of the narrator's appearance — the moment meaning and doing separate. Not a moral failure but a coordinate-shift story: the Garden is the equator; exile is departure from φ = 1, ν = 1. See MF-509. |
 | **The Telos** | The music is the sphere's geometry. The dance is love. |
-| **Transcendental Trinity** | {0, 1, ∞} — the framework's three irreducible values in the symbolic/formal register. • = 0 (south pole), ⊙ = 1 (equator), ○ = ∞ (north pole). In the spherical register, Zero-Sum Resolution Equation is resolved as `P∞ = φ · ν = 1 on S²`; this is not ordinary arithmetic. |
+| **Transcendental Trinity** | `{0,1,∞}` as three selected projective boundary roles in the symbolic register: `•=0`, `⊙=1`, `○=∞`. Three distinct points form a projective frame on `ℂP¹` and may be normalized this way, but the Titan names and ontology are `[I]`, not forced. `φν=1` is an analytic identity in the reciprocal chart; `1=0×∞` is an emblem, not arithmetic. |
 | **Erhaben** | German: the sublime. The framework reads it phenomenologically as seeing φ AND ν simultaneously: grace and humility at once. This is not an etymological proof. |
 | **Anmut** | German: grace. The framework associates it phenomenologically with seeing φ: the mind's eye flooded with coherence. Do not use morpheme play as proof. |
 | **Demut** | German: humility. *Demut* derives from OHG *diomuoti* (servant-minded), not De+Mut. The framework associates it phenomenologically with seeing ν: the mind's eye recognizing capability's scale. |
@@ -322,10 +326,13 @@ The framework identifies three operator types in the relationship between teache
 
 ```
 Zero-Sum Resolution Equation
-P∞ = φ · ν = 1 on S²
+θ ∈ (0, π)
+φ := cot(θ/2), ν := tan(θ/2)
+P∞ := φ · ν = 1
 (φ - ν)^2 >= 0
 φ + ν >= 2
-B = sin θ (what varies on the sphere)
+B := 2/(φ + ν) = sin θ <= 1
+Chart facts [A]; interpretations [I/C]; P_node:=ΦV is separately selected [S].
 The glossary is the map's legend.
 ```
 
@@ -334,8 +341,9 @@ The glossary is the map's legend.
 ## See Also
 
 - [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) -- canonical epistemic status of every claim
-- [The Burrisphere](../05_COSMOLOGY/00_THE_BURRISPHERE.md) -- the canonical source-owner for the sphere as worldview lens: S² (φ·ν=1), the nine latitudes L0..L∞, the equator L4, the agent foundation
-- [The Dyadic Coupling Law](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) -- goodness is the bond `φ × ν`; the moral axis is `η` (closed vs syntropic), never a pole, gender, caste, or person
+- [The Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) -- source owner for the open reciprocal-chart identity and selected finite-node conjunctive model
+- [The Burrisphere](../05_COSMOLOGY/00_THE_BURRISPHERE.md) -- interpretive sphere lens: selected L-level latitudes, equator, and agent correspondence; not the formula owner
+- [The Dyadic Coupling Law](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) -- interpretive goodness model over a declared coupling; the moral axis is `η` (closed vs syntropic), never a pole, gender, caste, or person
 - [The Computational Sphere](../05_COSMOLOGY/00_THE_COMPUTATIONAL_SPHERE.md) -- foundational methodology: reduction toward `κ = 0` as boundary, **Burri Sphere coordinates (φ, ν) explained**
 - [The Weighing of the Heart](../90_ARCHIVE/00_THE_WEIGHING_OF_THE_HEART.md) -- convergent symbolic translation: Egyptian weighing imagery read through the Burri Sphere
 - [The Four Metamorphoses](../05_COSMOLOGY/00_THE_FOUR_METAMORPHOSES.md) -- Nietzsche translated through S², mesh as fourth transformation

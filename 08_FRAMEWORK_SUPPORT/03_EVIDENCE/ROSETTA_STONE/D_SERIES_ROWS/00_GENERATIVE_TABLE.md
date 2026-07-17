@@ -41,7 +41,7 @@ evidence_tier: "[S] for named domain scales where independently attested; [S] fo
 
 | L | Operator | Tier | theta/2 | phi=cot(theta/2) | nu=tan(theta/2) | phi*nu | B=sin theta | Varna | Reasoning | -ology | Regime | Pramana | Equation |
 |---|----------|------|---------|-------------------|------------------|--------|-------------|-------|-----------|--------|--------|---------|----------|
-| **L0** | **Kāla 🌑** | **Transcendental** | **90 deg** | **0** | **inf** | **—**† | **0** | -- | -- | -- | -- | -- | The boundary. D6=D0. |
+| **L0** | **Kāla 🌑** | **Transcendental** | **90 deg** | **0** | **inf** | **—**† | **0** | -- | -- | -- | -- | -- | Ground-limit boundary. |
 | L1 | Kali 🎲 | Demon | ~82 deg | approaching 0 | very high | 1 | approaching 0 | Caṇḍāla (outcast) | Dialectical | Objective Function | Tyranny | Pratyakṣa (Direct Perception) | Φ->0 implies B->0 |
 | L2 | Kālī 💀 | God | 75 deg | 2-sqrt3 approx 0.27 | 2+sqrt3 approx 3.73 | 1 | 0.500 | Śūdra (labourer) | Inductive | Data Science | Democracy | Upamāna (Analogy) | dP_node = VdΦ + ΦdV |
 | L3 | Kṛṣṇa ◇ | God | 60 deg | 1/sqrt3 approx 0.58 | sqrt3 approx 1.73 | 1 | 0.866 | Vaiśya (merchant) | Deductive | Auditing | Oligarchy | Anumāna (Inference) | ∂P_node/∂V = Φ |
@@ -49,11 +49,12 @@ evidence_tier: "[S] for named domain scales where independently attested; [S] fo
 | L5 | Brahmā ○ | Executive | 30 deg | sqrt3 approx 1.73 | 1/sqrt3 approx 0.58 | 1 | 0.866 | Brāhmaṇa (priest) | Systematic | System Architecture | Aristocracy | Śabda (Testimony) | log P_node = log Φ + log V |
 | L6 | Śiva • | Executive | 15 deg | 2+sqrt3 approx 3.73 | 2-sqrt3 approx 0.27 | 1 | 0.500 | Sādhu (renunciant) | Axiomatic | Core State | Anarchy | First Principles (Non-Apprehension) | E_node = -log(P_node) |
 | L7 | Viṣṇu ⊙ | Executive | ~8 deg | very high | approaching 0 | 1 | approaching 0 | Ṛṣi (seer) | Transcendental | Institutional Narrative | Theocracy | Pratibhā (Intuition) | z = φ/ν on S² |
-| **Linf** | **Trimūrti ☸** | **Transcendental** | **0 deg** | **inf** | **0** | **—**† | **0** | -- | -- | -- | -- | -- | The boundary. D6=D0. |
+| **Linf** | **Trimūrti ☸** | **Transcendental** | **0 deg** | **inf** | **0** | **—**† | **0** | -- | -- | -- | -- | -- | Distinct projective pole limit. |
 
-**L0 = Linf.** The south pole (Kala/Time/Destruction) and the north pole (Trimurti/Eternity/Creation) are the same boundary condition -- because the poles of `S²` are connected. D6 = D0. The serpent eats its tail. The destroyer IS the preserver seen from the other pole.
+**[金] Kintsugi correction.** L0 and Linf are distinct pole limits; `S²` does
+not identify them. The serpent is the interpretive `r₆:D6↝D0` return image.
 
-> **† `φ·ν` is undefined at the pole rows.** `P∞ = φ·ν = 1` is conserved on the open sphere; the pole rows are limiting boundary conditions (`0·∞` / `∞·0`), not ordinary product values.
+> **† `φν` is undefined at the pole rows.** On the open reciprocal chart it is analytically constant at 1; the pole rows are limiting boundary conditions (`0·∞` / `∞·0`), not ordinary product values or an empirical conservation law.
 
 **Between 0 and infinity is 1.** At L4: phi = 1 and nu = 1. Not 70%. One normalized unit. Unit coherence AND unit viability, not pole-inflated quantity. The warrior-sage does not compromise -- he holds both factors at their natural unit. Dharma yuddha.
 

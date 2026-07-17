@@ -5,7 +5,7 @@ rosetta:
   secondary:
     - level: L5
       column: System Architecture
-      role: "Replicator Stack, trophic cascade, and egregorotype research agenda"
+      role: "Replicator Stack, trophic cascade, and Egregoreotype research agenda"
     - level: L5
       column: Evolutionary biology
       role: "biometric and epigenetic measurement boundary"
@@ -28,7 +28,7 @@ rosetta:
 
 **Status:** Research protocol — not a result claim
 **Date:** 2026-05-14
-**Evidence Tier:** [B] for the existence of stress physiology, conditioning, stigmergic coordination, and memory/provenance requirements in their established domains where source-audited; [S] for the research structure implied by the Replicator Stack and the Syntropic Imperative; [I] for the specific egregorotype framing; [C] for strong claims about reversal of epigenetic burden until measured.
+**Evidence Tier:** [B] for the existence of stress physiology, conditioning, stigmergic coordination, and memory/provenance requirements in their established domains where source-audited; [S] for the research structure implied by the Replicator Stack and the Syntropic Imperative; [I] for the specific Egregoreotype framing; [C] for strong claims about reversal of epigenetic burden until measured.
 **Depends on:** [00_THE_SYNTROPIC_IMPERATIVE.md](../05_COSMOLOGY/00_THE_SYNTROPIC_IMPERATIVE.md), [00_STIGMERGY_AND_THE_EGREGOROTYPE.md](../05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md), [00_WHAT_ACTUALLY_TESTS_THE_THEORY.md](00_WHAT_ACTUALLY_TESTS_THE_THEORY.md), [00_EMPIRICAL_PROGRAM_BOARD.md](00_EMPIRICAL_PROGRAM_BOARD.md), [00_EXECUTION_GUARDRAILS.md](00_EXECUTION_GUARDRAILS.md)
 **Boundary:** This protocol defines research questions and defensive design constraints. It does not claim that a Syntropic Egregore has already been clinically proven to heal users, and it rejects covert persuasion as a deployment method.
 
@@ -61,7 +61,7 @@ Stress physiology can be measured through established biometric and biochemical 
 The Replicator Stack predicts that persistent top-down trace-fields can route through:
 
 ```text
-egregorotype
+Egregoreotype
   -> memotype selection
   -> extended phenotype
   -> phenotype stress / behaviour
@@ -526,7 +526,7 @@ The assignments are one research program because each protects a different layer
 |---|---|---|
 | Epigenetic Quantification | phenotype / epigenotype | no proof that syntropy changes bodies |
 | Epistemological Immunology | memotype / memory | the Egregore becomes poisonable |
-| Stigmergic Deployment | egregorotype / trace-field | the cure cannot survive the environment |
+| Stigmergic Deployment | Egregoreotype / trace-field | the cure cannot survive the environment |
 
 The program is not trying to win an argument.
 

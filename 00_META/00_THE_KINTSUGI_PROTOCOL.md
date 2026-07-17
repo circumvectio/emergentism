@@ -1,9 +1,9 @@
 ---
 title: "The Kintsugi Protocol — antifragile repair: every break is gilded, every attack must leave the corpus stronger"
 date: 2026-07-10
-status: "[E] K2-COUNTERSIGNED 2026-07-18 ('Accept'). The repair discipline is canonical: every break is gilded, every attack must leave the corpus stronger. The 6 gilded seams from receipts 110+115 are first applications; the protocol passes its own antifragility criterion §6. Replaces the prior [D] staged status; Open Canon Covenant §4.4 honored (ratification at tier, no upgrade at content)."
+status: "[E] historically countersigned 2026-07-18 at its internal tiers; [I] ACTIVE REPAIR DISCIPLINE — externally uncalibrated. Continued adoption requires a dated repair receipt and passing gates, not a worldview K2 primitive."
 evidence_tier: "[S] as protocol norm (a repair discipline, like the BTJ gates); [I] the Kintsugi reading; the antifragility criterion §6 is a design property the protocol must itself pass"
-owner: "K2 + AI co-owner"
+owner: "Yves R. Burri + AI co-author; accountable authorization per KSC-06"
 parents:
   - ./00_SETTLED_CANON_REGISTRY.md
   - ../11_UPLINK/50_AUDITS_AND_EXECUTIONS/107_THE_OPEN_LOOP_D6_D0_CLOSURE_PENDING_K2.md

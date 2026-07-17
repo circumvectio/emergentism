@@ -16,7 +16,7 @@ rosetta:
   canonical_phrase: "The Titan Composition Law — ⊙ = • × ○ made exact in PSL(2,ℂ)"
 title: "The Titan Composition Law"
 status: "ACCEPTED — adjudication K2-accepted in session 2026-07-10 (receipt 104 A.1/R5; acceptance receipt: 11_UPLINK/50_AUDITS_AND_EXECUTIONS/104_DIMENSIONAL_MAP_ADJUDICATION_K2_ACCEPTANCE_2026_07_10.md). Original staging note preserved: staged 2026-07-02; does not amend the Settled Canon Registry; the emblem ruling stands untouched."
-evidence_tier: "[A] the Möbius algebra (elementary, within-model); [S] the balance-condition reading as ZSRE; [I] the operator naming (inherited from MF-63, as MF-63 marks it); [D] the note as a whole pending K2."
+evidence_tier: "[A] the Möbius algebra (elementary, within-model); [S] the balance-condition reading as ZSRE; [I] the operator naming (inherited from MF-63, as MF-63 marks it); [I/C] the note as an externally uncalibrated evidence-review boundary."
 depends_on:
   - 00_THE_TRANSCENDENTAL_TRINITY_CANON.md
   - ../00_CANONICAL_FORMULA_BLOCK.md

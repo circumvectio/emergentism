@@ -33,7 +33,7 @@ rosetta:
 | L1 Caṇḍāla | Names raw operator pressure and pathology signals. |
 | L2 Śūdra | Checks whether operator mappings disclose rather than prove. |
 | L3 Vaiśya | Audits operator claims against source doctrine and evidence tiers. |
-| L4 Kṣatriya | Blocks deployable-action claims until K2 and governance routing are clear. |
+| L4 Kṣatriya | Blocks deployable-action claims until authorization and governance routing are clear; K2 is private-DAV-only. |
 | L5 Brāhmaṇa | Owns operator grammar architecture and VIVEKA mathematical-foundation routing. |
 | L6 Sādhu | Bounds operator grammar as map, not source ontology. |
 | L7 Ṛṣi | Witnesses Executive/God/Demon grammar without deploying Executive operators. |

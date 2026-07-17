@@ -38,6 +38,20 @@ depends_on:
 
 **Register guard:** This is an L5 system-architecture synthesis. The mathematics is `[A]` only where it cites standard material: inversion, logarithmic coordinates, compactification, and the Riemann sphere. The glyph equation `⊙ = • × ○` remains the Titan / frame-register emblem, not a field-arithmetic theorem that `0 × ∞ = 1`. The μ-limit and dimensional-generalization claims remain framework structure or conjectural ontology as tiered below.
 
+> **[金] Kintsugi supersession — 2026-07-18.** This document is preserved in
+> place for provenance. In the body below, every passage asserting a
+> forced/unique Titan triad, universal strong or irreducible `μ`, `Born rule =
+> φν`, Everett/Copenhagen as added dimensions or collapse as `μ`/`χ`, or
+> K2/founder status as metaphysical `D5→D4` agency is superseded by `KSC-02`,
+> `KSC-04`, `KSC-05`, and `KSC-06` in
+> `00_META/00_SETTLED_CANON_REGISTRY.md`. Those passages are
+> **not live authority**. Current semantic owners are
+> `05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md`,
+> `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md`,
+> `05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`,
+> `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md`, and
+> `00_THE_COMPASS.md`; they control wherever this preserved body differs.
+
 ---
 
 ## Executive Abstract
@@ -89,7 +103,8 @@ Ground remains prior.
 Being stabilizes reciprocal closure: φ · ν = 1 on S².
 Teleological Force names viable continuation inside manifestation.
 D4 opens bounded witness: Being becomes noticeable.
-D5 opens enacted agency: Being becomes navigable.
+D5 opens counterfactual agency and foresight; a D4 commitment attempts one
+physically available action, and the world returns the outcome receipt.
 D6 releases the claim to final capture and returns the loop to D0.
 Dasein appears at the D4/D5 threshold as finite disclosure able to question and act.
 The Soul Loop begins when Dasein recursively corrects that disclosure.
@@ -110,7 +125,7 @@ has sterile seeing. If `V` appears without `Φ`, Dasein has blind force. If the
 two balance at L4 under `η = 0`, the action is objective dharma in the
 framework's proper register: flow as lawful, non-extractive play rather than a
 
-> **[D] Scope (2026-07-03, staged for K2):** balance at L4 delivers *objective dharma* for a real acting node only insofar as it sits on the sphere — its `Φ` and `V` conservation-coupled, complementary, and costly-in-excess *symmetrically* under a shared γ-price; where that transfer fails the equator is geometry without normative force, the L4 optimum tilts or flattens into a plateau, and skilled specialization off-balance may be the lawful move. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** balance at L4 delivers *objective dharma* for a real acting node only insofar as it sits on the sphere — its `Φ` and `V` conservation-coupled, complementary, and costly-in-excess *symmetrically* under a shared γ-price; where that transfer fails the equator is geometry without normative force, the L4 optimum tilts or flattens into a plateau, and skilled specialization off-balance may be the lawful move. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 private mood. `[S/I]`
 
@@ -591,12 +606,12 @@ Within the S² model:
 
 **Finity is where emergence balances.** Strong emergence from below and weak emergence from above meet at the equator. The upward novelty and the downward constraint are exactly matched at `φ = ν = 1`.
 
-> **[D] Scope (2026-07-03, staged for K2):** this exact matching binds a real emergent system only when its upward-novelty and downward-constraint factors are genuinely conservation-coupled, complementary, and *symmetrically* costly-in-excess (γ-priced); absent that transfer the emergence-optimum is tilted or a plateau, and the equator carries no normative pull. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** this exact matching binds a real emergent system only when its upward-novelty and downward-constraint factors are genuinely conservation-coupled, complementary, and *symmetrically* costly-in-excess (γ-priced); absent that transfer the emergence-optimum is tilted or a plateau, and the equator carries no normative pull. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 This is why the framework keeps `ΣΔB > 0` visible as the balance audit — movement toward the equator. Not because the equator alone is "good" in a moral-realist sense, but because the equator is the model's balance locus, where the two directions of emergence are read as being in equilibrium. The ethical move adds the contact-register condition: `ΔP_node,i > 0` and `ΔP_node,H > 0` under `η = 0`. Move away from the equator and one direction dominates — either the bottom-up novelty overwhelms the top-down constraint (collapse into chaos) or the top-down constraint crushes the bottom-up novelty (collapse into rigidity).
 
-> **[D] Scope (2026-07-03, staged for K2):** the chaos-versus-rigidity dichotomy holds only where the two directions are conservation-coupled, complementary, and costly-in-excess under a *symmetric* γ-price; where any leg of the transfer fails a real node can sit stably off the equator — a broad plateau or a tilted optimum where specialization dominates — without collapsing either way. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** the chaos-versus-rigidity dichotomy holds only where the two directions are conservation-coupled, complementary, and costly-in-excess under a *symmetric* γ-price; where any leg of the transfer fails a real node can sit stably off the equator — a broad plateau or a tilted optimum where specialization dominates — without collapsing either way. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 ---

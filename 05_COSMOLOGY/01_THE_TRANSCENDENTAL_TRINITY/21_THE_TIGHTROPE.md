@@ -35,7 +35,7 @@ But the south pole is not the Ubermensch. The south pole is the ABYSS. ν → in
 
 The actual Ubermensch is not ν → infinity. The actual Ubermensch is **phi = nu = 1**. The equator. Balance. The operator who can create AND destroy, who can build AND dissolve, who can fight AND sit. Not the superman. The BALANCED human.
 
-> **[D] Scope (2026-07-03, staged for K2):** "the actual Ubermensch is balance" binds a real operator only insofar as it sits on the sphere — its φ and ν conservation-coupled (imbalance really priced through the η = 0 fence), jointly necessary rather than substitutable, and costly *symmetrically* in excess (γ-priced surplus, not inert store); an agent that can specialize freely and bank surplus without friction sits off the sphere, where the equator is geometry without normative force and specialization may be the better human. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (origin 2026-07-03; externally uncalibrated):** "the actual Ubermensch is balance" binds a real operator only insofar as it sits on the sphere — its φ and ν conservation-coupled (imbalance really priced through the η = 0 fence), jointly necessary rather than substitutable, and costly *symmetrically* in excess (γ-priced surplus, not inert store); an agent that can specialize freely and bank surplus without friction sits off the sphere, where the equator is geometry without normative force and specialization may be the better human. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 ---
@@ -84,9 +84,15 @@ Agriculture changed the calorie equation:
 
 The Neolithic Revolution was the moment when the species' altricial strategy achieved **infrastructure escape velocity** — the point where calorie surplus exceeded the metabolic cost of sustained Φ construction. ν did not merely explode. The **conditions for Φ-building** exploded.
 
-This is why the Fall was so deep: not because agriculture was evil, but because the infrastructure that made Φ-building viable at scale also made **extraction** viable at scale. The same surplus that funds education also funds armies. The same institutions that transmit law also transmit propaganda. The widened light cone carries both medicine and the bomb.
+This is why the Fall was so deep in the model: not because agriculture was
+evil, but because the infrastructure that expanded collective **option cones**
+also made extraction viable at scale. The same surplus that funds education can
+fund armies; no physical light cone is widened.
 
-**The unification:** Neoteny, K-selection, and trophic hierarchy are not three separate phenomena. They are three projections of one geometry — Φ-investment widening θ on S², extending the forward light cone further up Minkowski space. Deferred gratification at any scale is the same trade. Agriculture was the calorie infrastructure that made this trade viable at population scale.
+**The proposed correspondence:** Neoteny, K-selection, and trophic depth may be
+read as three forms of deferred investment that expand long-horizon options.
+That cross-domain projection is `[I/C]`; changing `θ` on S² does not extend a
+relativistic light cone in Minkowski spacetime.
 
 **Reference:** `01_EMERGENTISM/11_UPLINK/134_NEOTENOUS_STRATEGY_POWER_MAX_AT_BIRTH_2026_04_24.md` §2
 
@@ -102,7 +108,11 @@ Nietzsche's rope. Man stretched between beast (L1, the biological substrate that
 
 **Read through D5 lens:** The southward drift was not merely ν-explosion. It was **D5 contraction disguised as D5 expansion.** Agriculture built more D5 — more branches, more institutions, more complexity. But ν scaled faster than Φ, so the branches became narrower. The algorithm that optimizes engagement "opens" millions of branches while collapsing them all to one behavior: scroll, click, dopamine. The corporation that maximizes shareholder value "opens" infinite strategic options while collapsing them all to one outcome: extract, grow, extract. The empire that conquers territory "opens" vast administrative possibility while collapsing it all to one command: dominate, tax, dominate.
 
-**True D5 opening** requires φ and ν to grow together. The first Ubermensch had small D5 but perfect balance. The second Ubermensch must achieve large D5 WITH perfect balance — through three-substrate symbiosis that can hold institutional-scale Many-Worlds in superposition without collapsing to extraction. The equator-optimum binds on this real system only because the three substrates keep it ON the sphere — coupled by the K2 signature and the η = 0 fence so that imbalance is actually paid for; the substitutable, free-surplus aggregate (the market, the empire) sits off the sphere and rewards specialization instead, which is why it drifted south.
+**D5 option expansion** is defensible only when D4 means and consequences remain
+inside the Justice envelope. A three-substrate symbiosis may model more
+institutional futures, but this is neither Many-Worlds superposition nor
+quantum collapse. Its coupling requires `η = 0`, accountable authorization,
+consent, custody, exit, payer and beneficiary visibility, and contestability.
 
 **Reference:** `01_EMERGENTISM/11_UPLINK/136_THE_DEEP_SYNTHESIS_2026_04_24.md` §7
 
@@ -129,7 +139,7 @@ FIRST UBERMENSCH                    SECOND UBERMENSCH
 
 The Great Filter (16_THE_GREAT_FILTER) is the abyss beneath the tightrope. The question is not WHETHER we cross. The question is whether we cross BACK TO THE EQUATOR — or fall into the south pole.
 
-> **[D] Scope (2026-07-03, staged for K2):** the collective inherits the equator only insofar as it is constituted on the sphere — its φ and ν conservation-coupled and complementary, with excess paid for *symmetrically* (γ-priced) on both sides; an aggregate that can substitute one factor for the other and store free surplus (the market, the empire) sits off the sphere and is drawn toward specialization or the south pole, so "back to the equator" is a normative destination only for a we that is bound on. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (origin 2026-07-03; externally uncalibrated):** the collective inherits the equator only insofar as it is constituted on the sphere — its φ and ν conservation-coupled and complementary, with excess paid for *symmetrically* (γ-priced) on both sides; an aggregate that can substitute one factor for the other and store free surplus (the market, the empire) sits off the sphere and is drawn toward specialization or the south pole, so "back to the equator" is a normative destination only for a we that is bound on. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 ---
@@ -158,7 +168,7 @@ The first crossing was NATURAL. Evolution placed the Cro-Magnon at the equator. 
 
 The second crossing is INTENTIONAL. Through the sitting practice (direct phi-access). Through building (the three-substrate architecture). Through the Kṛṣṇa function (coordination without extraction). The human at the equator not because evolution placed them there but because they CHOSE to return.
 
-**F5 — the ektropic gradient pulling toward the equator (packet 135):** The first crossing was natural because evolution can be read as F5 operating through genotype selection over deep time. The second crossing is intentional because the same gradient can be sensed in D5 practice — through sitting, dharma-recognition, coherence-attraction — and followed deliberately. F5 does not force the crossing; it makes the crossing *preferentially stable*. The organism that aligns with the gradient (η = 0, widest-boundary ΣΔB / ΣΔP_node) experiences it as rightness, beauty, truth, justice, love — what-ought-to-be-done-now. This transfer holds only for an organism that actually sits on the sphere — one whose φ and ν are conservation-coupled (imbalance is really priced), jointly needed rather than substitutable, and costly in surplus; a system that can specialize freely and store excess without friction feels no such tilt, and the equator-optimum does not bind it. The second Ubermensch is not a new species in the biological sense. She is a human who has learned to feel the tilt and walk with it. See packet 137 for the strong-form mechanism (game theory, thermodynamics, evolutionary biology, behavioral economics); packet 138 for the lineage of humans trying to name this same tilt.
+**F5—an ektropic hypothesis (packet 135, repaired):** Evolution can be compared with selection over viable trajectories, while deliberate practice can reweight present choices through modeled futures. Neither comparison proves an equator force or an ought. The normative reading is separately declared: non-extraction and bearer-complete Justice, with no hidden payer or aggregate laundering. Real balance is favored only where the modeled factors are coupled, jointly needed, and costly in surplus; otherwise specialization may dominate. The "second Ubermensch" remains an `[I]` human-development image, not a new species or physical law.
 
 ### The Arc of the Return — V → Φ → Returned V
 
@@ -183,7 +193,10 @@ V (embodied viability — the biological body, the south pole)
 
 **The return to V is mandatory.** Pure Φ without return becomes bypass, doctrine, monastery, frozen possibility. The being that stays at the north pole cannot act, cannot export entropy, cannot raise `ΣΔB` / `ΣΔP_node` in the world.
 
-**K2 is the signature on the return.** The warrior ascends to see, descends to act, and signs before the act becomes irreversible. Without K2, descent is just appetite with extra steps. With K2, descent is sovereign action.
+**Accountable authorization governs the return.** The warrior ascends to see,
+descends to act, and identifies principal, mandate, scope, consent, custody,
+revocation or expiry, contest path, actor, and consequence bearer. A private DAV
+may use K2 for that envelope; K2 is not a worldview or agency primitive.
 
 That is why the return is not merely personal maturity. It is the completion of
 the human trophic strategy: calories become culture-built Φ; Φ returns as V in

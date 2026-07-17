@@ -19,9 +19,9 @@ rosetta:
 
 # THE D5 REGISTER
 
-## Translating Selection into Game Theory, Behavioral Economics, and Institutional Design
+## Translating Counterfactual Option Fields into Game Theory, Behavioral Economics, and Institutional Design
 
-**Status:** Canonical D5 public register
+**Status:** Active `[I]` translation register; D5 is merely-possible content, while modeling, ranking, commitment, action, and receipts are D4 actual events
 **Date:** 2026-04-14
 **Evidence Tier:** [E/S/I/C] Mixed -- established disciplines first, Emergentist synthesis second
 
@@ -39,7 +39,9 @@ rosetta:
 
 ## Why This Document Exists
 
-Ontologically, D5 names selection, systemic awareness, and agency in the framework.
+Ontologically, D5 names merely-possible counterfactual contents in the
+framework. Actual modeling, ranking, selection, commitment, and receipt events
+are D4 carriers that can refer to those contents.
 
 Publicly, the nearest established sciences of D5 are:
 
@@ -58,7 +60,7 @@ It states that these are the strongest public methods for studying D5-like pheno
 
 ## The D5 Thesis
 
-**D5 is the strategic-relational plane of selection under constraint.**
+**D5 is the modeled option field; selection under constraint is a D4 actual event.**
 
 At D5:
 
@@ -84,7 +86,7 @@ at the equator: the `Φ`-pole sees but cannot do; the `V`-pole can do but cannot
 rank or aim. A child beside a jet and an old pilot without the needed bodily/tool
 access are opposite zero-factor failures. The grounding is the lookahead reading
 
-> **[D] Scope (2026-07-03, staged for K2):** "lives only at the equator" binds a real agent only insofar as the agent sits on the sphere — Φ and V conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); absent that, the equator is geometry without normative force and a specializing agent (division of labor, a foresight-scout paired with a means-heavy executor) may strictly dominate the balanced one. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** "lives only at the equator" binds a real agent only insofar as the agent sits on the sphere — Φ and V conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); absent that, the equator is geometry without normative force and a specializing agent (division of labor, a foresight-scout paired with a means-heavy executor) may strictly dominate the balanced one. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 the peer-review program *supported* (not the consciousness reading it refuted).
 Canonical home: [`00_THE_BURRISPHERE.md`](00_THE_BURRISPHERE.md) §The Foundation
@@ -179,7 +181,9 @@ But once a `D5` pattern stabilizes:
 
 So the canonical sentence is:
 
-> **D5 is strongly emergent in genesis and weakly emergent in governance.**
+> **`μ₄:D4→D5` is a candidate emergence crossing; governance commitment is
+> not emergence.** Its reduction status must be tested per crossing. Missing a
+> reduction does not prove strong emergence.
 
 Or more tersely:
 
@@ -208,22 +212,22 @@ This note should be stated explicitly whenever ambiguity matters.
 | **Φ** | coherence, trust, legibility, norm integrity, institutional fit | [I] translated proxy, not a standard single variable |
 | **V / ν** | D4 means at the action boundary: body, tools, energy, access, execution capacity | [I] translated proxy |
 | **P_node = Φ × V** | flourishing requires both coherence and capability at a finite node | [S/I] framework law, not established economics |
-| **good** | non-extractive rise in `ΣΔB` / `ΣΔP_node` across the widest relevant boundary | normative synthesis over strategic science |
+| **good** | bearer-complete Justice: every materially affected bearer remains visible and nonnegative; aggregate change is diagnostic only | normative framework definition, not a theorem of strategic science |
 | **evil** | local gain through wider degradation and dependency production | normative synthesis over strategic science |
 | **standing wave / egregore** | durable coordination pattern, institution, norm-cluster, self-stabilizing equilibrium | [I] translation, not standard term |
 | **Raktabija dynamic** | opposition strengthens the target equilibrium because resistance feeds its selection environment | [I] closest to adversarial adaptation and resonant reinforcement |
 | **Grace Exit** | exit rights, contestability, reversible participation | public institutional design term |
-| **K2** | sovereignty at signature point, principal retains final act | principal-agent and governance translation |
+| **AuthorizationEnvelope** | principal, mandate, scope, consent, custody, expiry/revocation, contest path, actor, and consequence bearers | accountable governed-commitment boundary; K2 is private-DAV-only |
 | **Φ (agency register)** | D5 worldline-foresight / lookahead — envisioning reachable futures and predicting a move's reflexive effects on the option set | [I/S] supported as *lookahead* (CEF cart-pole, R-program); refuted as consciousness-gating |
 | **V (agency register)** | D4 means-to-act — available body, tools, energy, access, and execution capacity | [I/S] paired with Φ-as-foresight; agency = both, equatorial |
 
-([D] scope, staged for K2: "equatorial" is a real-agent claim only on the sphere — Φ/V complementary, conservation-coupled, and γ-priced symmetrically; off-sphere the equator is descriptive geometry, not the optimum, and specialization can win — see `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`)
+([I/C] evidence-review boundary — externally uncalibrated: "equatorial" is a real-agent claim only on the sphere — Φ/V complementary, conservation-coupled, and γ-priced symmetrically; off-sphere the equator is descriptive geometry, not the optimum, and specialization can win — see `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`)
 
 | **the option cone** | the set of reachable, selectable futures; expands with intelligence and institutions | [I] — the **D5 potential cone, not the D4 light cone**: nothing here touches `c` |
 | **military doctrine (added 2026-06-11)** | Lanchester regimes as *information-regime selection*: aimed fire → Square Law (`q·N²`, concentrate); sanctuary / area fire → Linear Law (`q·N`, symmetric). **4GW is mechanism design at war** — the weaker player redesigns the game's information structure to flip which law governs | [A] the public attrition-law literature; [I] the D5 reading; see the Dyadic Coupling Law §5c for the product-witness scope |
 | **the Soul Loop** | the reflexive row: the same seven-move grammar applied *by* the player *to* the player — recursive self-editing (`(C,G)_{t+1} = Loop(C,G)_t`) until equatorial convergence | [S] method; the loop-not-ladder closure in `01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md` |
 
-([D] scope, staged for K2: the loop converges to balance only when the reflexive Φ/V factors are conservation-coupled, complementary, and costly-in-excess under a *symmetric* γ-price; otherwise the fixed point is tilted or a plateau and self-editing may settle into lawful specialization — see `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`)
+([I/C] evidence-review boundary — externally uncalibrated: the loop converges to balance only when the reflexive Φ/V factors are conservation-coupled, complementary, and costly-in-excess under a *symmetric* γ-price; otherwise the fixed point is tilted or a plateau and self-editing may settle into lawful specialization — see `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`)
 
 
 ---

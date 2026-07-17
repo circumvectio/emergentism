@@ -137,7 +137,8 @@ The sitting practice mirrors this emergence:
 
 **Find the equator:** φ = ν = 1. The balanced state. Presence.
 
-**Release:** Return to the point. The cycle completes. D6 = D0.
+**Release:** Use the apophatic return image `r₆:D6↝D0`; it is an interpretive
+practice edge, not literal identity or a new emergence crossing.
 
 Each sit is a **micro-cosmogenesis.** The creation of a world in 20-40 minutes. The emergence from void to form to void.
 

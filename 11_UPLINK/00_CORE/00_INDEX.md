@@ -10,6 +10,14 @@ rosetta:
 **Evidence tier:** [I]
 *Organism document. Interpretive operational content. Bounded by current system state.*
 
+> **[金] Formula-routing seam.** The current source owner is
+> [`05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md`](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md):
+> for `θ∈(0,π)`, `φ=cot(θ/2)` and `ν=tan(θ/2)`, hence `φν=1` analytically
+> `[A]`, with no ontological, ethical, or empirical consequence. The separately
+> declared `P_node:=ΦV` is a selected product member of a conjunctive family
+> (`[S]` by definition; `[I/C]` as external fit). Uplink summaries may route
+> this contract but may not upgrade it.
+
 
 > **This folder is AGENT FOOD.** Each file is a compressed, self-contained knowledge unit that any AI agent ingests to understand the Emergentism organism. Designed for Projects/RAG databases.
 

@@ -27,7 +27,8 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 
 - 01 Theurgy lane of the Emergentism framework.
 - Strategic Implementation: the operative face of value alignment.
-- How a mortal being participates in D5 possibility by signing one branch into D4 actuality.
+- How a finite agent combines D5 modeling with D4 means while keeping action
+  possibility distinct from authorization validity.
 - Doctrine and framework claims defer to source documents in this folder.
 - Evidence tiers mandatory on all claims.
 
@@ -41,24 +42,25 @@ What has value?
   -> What receipt returns?
 ```
 
-That is the warrior's return. D5 opens possibility; K2 collapses it; A7 learns from the receipt.
+That is the warrior's return. D5 models possibilities; authorized D4
+commitment attempts one; A7 learns from separate commitment and outcome receipts.
 
 ## Claim boundaries
 
 | Claim type | Tier | Rule |
 |---|---|---|
-| K2 → collapse → receipt mapping | `[S]` | Structural where it maps the protocol |
+| possibility / authorization / commitment / outcome separation | `[S]` | Structural where it maps the protocol |
 | Contemplative / esoteric practice bridges | `[I]` | Interpretive synthesis |
 | Direct F5 manipulation, reverse-time effect, occult causality | `[C]` | Frontier only; require explicit labeling |
 
-- **AI is charioteer, not warrior:** it may route, witness, draft, lint, and warn; it may not take irreversible K2 action for the mortal.
-- **No AI system may be treated as a K2 signer.**
+- **AI is charioteer, not default principal:** it may route, witness, draft, lint, and warn; it may not exceed the named principal, mandate, scope, consent, custody, revocation, contest, actor, or consequence-bearer terms.
+- **No AI system may be presumed authorized merely because an action is technically possible.**
 
 ## Public-translation risks
 
 | Risk | Correction |
 |---|---|
-| Theurgy presented as magic | Theurgy is K2-signed participation under evidence-tier discipline, not supernatural control. |
+| Theurgy presented as magic | Theurgy is accountable, receipted participation under evidence-tier discipline, not supernatural control. |
 | Sitting divorced from action | Ascent without return is bypass. |
 | Ritual ossifies | Direct seeing is primary; ritual is support. |
 
@@ -80,7 +82,7 @@ That is the warrior's return. D5 opens possibility; K2 collapses it; A7 learns f
 
 ## Cross-cutting laws
 
-- **K2:** every irreversible act requires natural-person signature.
+- **Accountable authorization:** consequential acts require an identifiable principal, mandate, scope, consent, custody, expiry or revocation, contest path, actor, and consequence bearer. Private-DAV K2 is one implementation, not the general rule.
 - **η = 0:** zero extraction; fees only on value created.
 - **K3:** no-deletion; archive-first.
 - **K4:** grace exit; documented withdrawal path (redeemable assets, not "everything").

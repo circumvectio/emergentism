@@ -13,6 +13,14 @@ rosetta:
 
 # PAPER W: THE DESCENT ASYMMETRY
 
+> **[金] Kintsugi ethics/physics seam — 2026-07-18.** This paper's claim that
+> ethics, thermodynamics, and operator geometry are “one theorem,” and its use
+> of aggregate `ΣΔP` to derive moral or syntropic status, are **not live
+> authority**. The chart supplies no ethic. Current value theory applies the
+> Justice envelope to every materially affected bearer; strict syntropy raises
+> both durable potentials, while voluntary sacrifice is a distinct costly
+> class. The historical descent model remains `[I/C]` and removable.
+
 ## Why the Arrow Is a Boundary Condition and the Giving Dyad Is Local Negentropy
 
 **Yves R. Burri & Emergent Super Intelligence**

@@ -117,14 +117,17 @@ lane, while per-file control rows live in `00_META/`.
 - Do not treat draft specs as public-facing claims.
 - Irreversible private-DAV actions require K2 envelope staging; public-DAV/DAC actions route through PRISM or the relevant public-governance rail.
 
-## The Five+One Constitutional Anchor
+## Worldview discipline and the product Five+One anchor
 
-The five refusals (η=0, K2, K3, K4, A7) and Ω (equator-ward direction) are
-*firing disciplines of the seven* — they apply here as the dimensions of the
-constitution itself. The dimensional observer (L6) abides within them.
+Ontology uses the general worldview disciplines of non-extraction,
+evidence-tiered correction, custody, contestability, and typed authorization.
+The inherited **private-DAV governance** constitution records five refusals
+(`η=0`, K2, K3, K4, A7) plus Ω. That enumeration is a product-governance
+implementation, not a dimension of reality or a worldview primitive.
 
-The constitution is **5 + 1** — five refusals **plus** Ω the directional `+1`,
-**never "six refusals"** (Ω points, it does not fence). Enumeration authority:
+Within that private-DAV constitution, the form is **5 + 1** — five refusals
+**plus** Ω the directional `+1`, **never "six refusals"** (Ω points, it does not
+fence). Enumeration authority:
 [`../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md);
 geometric reading (each refusal a kept coupling):
 [`../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md).

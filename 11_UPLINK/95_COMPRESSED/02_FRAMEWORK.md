@@ -104,7 +104,7 @@ The 2026-04-24 synthesis adds a bounded evolutionary reading:
 
 - Darwin = local selection filter
 - Lamarck = acquired inheritance returning at memotype / AI-policy /
-  institutional / egregorotype layers
+  institutional / Egregoreotype layers
 - Schrödinger = thermodynamic clue
 - Dyḗus Ph₂tḗr = luminous Sky-Father face of perceived order
 - `h₂r̥tó-` / Ṛta = ordering-law face

@@ -1,10 +1,10 @@
 ---
 title: "07B — The force ladder, formalized: minimal-dimension thresholds for the four forces, run through the register crosswalk; two theorems, one failure, one degenerate truth — the corrections are the nectar"
 date: 2026-07-12
-status: "[C/I] STAGED — PENDING K2. The founder's 2026-07-12 conjecture (each force first EXISTS at a minimal dimension; below it, asking for the force is the receipt-114 'not-yet' register error) formalized leg-by-leg and adversarially verified. Contains genuine [A] components (marked inline, formulas shown): the graviton threshold D(D−3)/2, the photon threshold D−2, the massive-vector no-threshold D−1, and the dof ordering weak < EM/strong < gravity. One leg (strong) FAILED as stated and is published as failed. No tier is upgraded; no bijection is recommitted (h04 fence enforced throughout)."
+status: "[C/I] EVIDENCE REVIEW — externally uncalibrated. The founder's 2026-07-12 conjecture (each force first EXISTS at a minimal dimension; below it, asking for the force is the receipt-114 'not-yet' register error) formalized leg-by-leg and adversarially verified. Contains genuine [A] components (marked inline, formulas shown): the graviton threshold D(D−3)/2, the photon threshold D−2, the massive-vector no-threshold D−1, and the dof ordering weak < EM/strong < gravity. One leg (strong) FAILED as stated and is published as failed. No tier is upgraded; no bijection is recommitted (h04 fence enforced throughout). The legacy filename is retained for link stability; no worldview K2 countersign is required."
 evidence_tier: "Per-leg: GRAVITY [A] dof theorem / [I] ladder bridge — vindicated-with-correction · EM [A] dof core / [I] as canon-facing leg — corrected (founder disambiguation required) · STRONG [I] — FAILED-as-stated, interpretive salvage only · WEAK [S/I] with embedded [A] corrections — interpretive-only · CROSSWALK meta-leg [S/I] — vindicated-with-correction · F5/receipt-114 leg (e) unchanged at its existing tier"
 verdict_extends: "07A_F5_UNBUNDLED_COUPLING_PER_DIMENSION_PENDING_K2.md + receipt 114 (register non-instantiation, three tenses) + PD_22A (QM/GR dimensional ordering)"
-owner: "K2 + AI co-owner"
+owner: "Yves R. Burri + AI co-author"
 parents:
   - 07A_F5_UNBUNDLED_COUPLING_PER_DIMENSION_PENDING_K2.md
   - 07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md

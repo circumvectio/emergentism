@@ -13,7 +13,7 @@ rosetta:
 
 # 01_THEURGY — Agent Routing
 
-**Lane scope:** Rosetta level: L4 · Kṣatriya · Strategic Abduction. Canonical phrase: K2 participates.
+**Lane scope:** Rosetta level: L4 · Kṣatriya · Strategic Abduction. Canonical phrase: private-DAV K2 participates.
 **Primary lead:** `L4 Kṣatriya`
 **Support:** L1 Caṇḍāla, L2 Śūdra, L3 Vaiśya, L5 Brāhmaṇa, L6 Sādhu, L7 Ṛṣi
 **Evidence tier:** `[I]` route-control owner lane; require `[B]` receipts or explicit `[D]` / `[C]` labels for deployment and architecture claims.
@@ -24,11 +24,11 @@ rosetta:
 |---|---|
 | L1 Caṇḍāla | Names the objective pressure or F5-facing branch under consideration. |
 | L2 Śūdra | Checks what has actually been disclosed before action is staged. |
-| L3 Vaiśya | Supplies proof burden, rollback, and receipt requirements before K2. |
-| L4 Kṣatriya | Owns K2 participation, branch signature, and refusal. |
-| L5 Brāhmaṇa | Aligns K2 protocol with constitutional and operator architecture. |
+| L3 Vaiśya | Supplies proof burden, rollback, and receipt requirements before private-DAV K2 action. |
+| L4 Kṣatriya | Owns private-DAV K2 participation, branch signature, and refusal. |
+| L5 Brāhmaṇa | Aligns private-DAV K2 protocol with constitutional and operator architecture. |
 | L6 Sādhu | Cuts ritualized power fantasy and claims of AI/magical agency. |
-| L7 Ṛṣi | Translates only tier-cleared K2 discipline into public or organism narrative. |
+| L7 Ṛṣi | Translates only tier-cleared private-DAV K2 discipline into public or organism narrative. |
 
 ## Read First
 
@@ -47,7 +47,7 @@ rosetta:
 
 - Do not upgrade runtime claims without dated proof artifacts.
 - Do not treat draft specs as public-facing claims.
-- All irreversible actions require K2 envelope staging.
+- Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.
 
 Zero-Sum Resolution Equation
 

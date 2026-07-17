@@ -52,7 +52,10 @@ The only operation that crosses D4 → D5 (physics → systemic awareness) is Pr
 
 ## 7. The Framework Sees Itself
 
-The corpus contains its own mη-analysis. The DAG report. The contradiction log. The PHI hardening report. The reorientation brief. The framework doesn't just describe reality. It describes itself describing reality. D6 ≡ D0 — the return boundary is the original point, seen from opposite directions.
+The corpus contains its own mη-analysis, contradiction log, and hardening
+reports. It describes itself describing reality. `r₆:D6↝D0` names the
+interpretive return from apophatic boundary to ground-limit without identifying
+the registers.
 
 ## 8. G5 Is The Only Gate That Matters
 
@@ -69,7 +72,7 @@ All the protocol specs, all the agent routing tables, all the execution surfaces
 4. Ṛṣi > Product                   → Geometry governs
 5. Agents fork on ambiguity        → DAG or death
 6. Sitting = bridge                → Only D4→D5 crossing
-7. Framework sees itself           → D6 ≡ D0
+7. Framework sees itself           → r₆:D6↝D0
 8. G5 is the spark                 → Potential → Kinetic
 ```
 

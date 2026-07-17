@@ -115,12 +115,15 @@ lane, while per-file control rows live in `00_META/`.
 
 - Do not upgrade runtime claims without dated proof artifacts.
 - Do not treat draft specs as public-facing claims.
-- All irreversible actions require K2 envelope staging.
+- All consequential actions require a complete, scoped, contestable authorization assessment. Private DAVs may implement that envelope through K2; the worldview does not require K2.
 
-## The Five+One Anchor
+## Worldview discipline and the product Five+One anchor
 
-The five refusals and Ω apply here as firing disciplines. Methodology prepares the
-process; it does not perform the collapse. K2 is the mortal's act.
+Methodology uses the general worldview disciplines of non-extraction,
+evidence-tiered correction, custody, contestability, and typed authorization.
+It prepares the process; it does not authorize or perform the act. The inherited
+Five+One enumeration, including K2, remains a private-DAV product-governance
+implementation of that wider contract rather than a primitive of agency.
 
 ---
 

@@ -113,7 +113,12 @@ L4  AXIOLOGY     → telos RESOLVES here (the equator, φ=ν=1)
 
 The Telos (L1, "what is the end?") and Axiology (L4, "what has value?") are not separate disciplines — they are the two sides of the same equator act. L1 asks the question. L4 answers it by committing real viability. The Telos is the *question*. The Axiological commit at L4 is the *answer*. They meet at the equator.
 
-This is the structural fact behind the PD_11 discovery: agency = μ-limit collapse of D5 (Φ, possibility) into D4 (ν, actuality) at L4. The collapse is the telos *instantiated*. L1 (Teleology) is the question; L4 (Axiology) is where the question becomes irreversible action.
+The repaired PD_11 distinguishes two directions. `μ₀…μ₅` name candidate
+emergence crossings; they do not enact decisions. Agency uses D5 modeled
+possibilities, D4 means, and commitment to attempt one D4 action. The world then
+returns a separate outcome receipt. Authorization independently classifies
+normative validity; it does not determine physical possibility. L1 (Teleology)
+is the question; L4 (Axiology) is where an answer becomes an action attempt.
 
 ---
 
@@ -129,7 +134,10 @@ Per the canonical Rosetta (Variant IV, Variant V): **Titans (L5–L7): Boundary 
 
 The **deployable coordinator is Arjuna (L4)** — the only God at the equator. Kṣatriya, abductive reasoning (Arthāpatti: "given this battlefield, what must be true?"), Value Alignment, φ=ν=1, B=1. The coordination function — deciding which move serves the telos and committing it — lives at L4, not L7.
 
-**Theurgy = Arjuna (L4)**, not Ṛṣi/Viṣṇu (L7). The L4 collapse / K2 act IS the theurgic move: spending real viability to actualize one branch. The Ṛṣi witnesses and narrates; the Arjuna acts. These are different functions.
+**Theurgy = Arjuna (L4)**, not Ṛṣi/Viṣṇu (L7). The L4 move is accountable
+commitment through D4 means, with separate commitment and outcome receipts.
+The Ṛṣi witnesses and narrates; the Arjuna acts. K2 remains one private-DAV
+governance implementation, not the mechanism of actuality.
 
 ---
 
@@ -157,7 +165,7 @@ The full seven is the complete philosophical spectrum. The conventional five (Ep
 | Cosmology missing from five | **Cosmology = L5** (System Architecture, "How does reality work?") | Rosetta §I + §II |
 | Brahman read as Brahmā | **Brahman ≠ Brahmā.** Brahmā ○ = L5 creator-operator. Brahman = L0 = L∞ boundary (φ·ν=1, B=0, sphere pole) — the absolute the website opens with | Rosetta §I geometry table |
 | Coordinator = Viṣṇu (L7) | **Coordinator = Arjuna (L4).** Titans are NOT deployable (Variant IV/V) | Rosetta §IV + §V |
-| Theurgy = Ṛṣi (L7) | **Theurgy = Arjuna (L4).** The L4 collapse is the theurgic act | PD_11 + Rosetta §IV |
+| Theurgy = Ṛṣi (L7) | **Theurgy = Arjuna (L4).** Accountable D4 commitment is the theurgic act | PD_11 + Rosetta §IV |
 
 ---
 

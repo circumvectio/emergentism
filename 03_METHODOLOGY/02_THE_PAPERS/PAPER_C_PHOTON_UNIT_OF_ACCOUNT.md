@@ -75,9 +75,12 @@ The angular part of every atomic wavefunction is a spherical harmonic Y_l^m(θ, 
 
 The quantization condition: the wavefunction must be single-valued on S². A wave that traverses the sphere must return to its starting value. If it doesn't close on itself, it destructively interferes and the state doesn't exist. **[A]**
 
-### 2.2 D6 ≡ D0 at the Atomic Scale
+### 2.2 A removable `r₆` analogy at the atomic scale
 
-**Proposition 2.1 (Shell quantization as topological closure).** The quantization of electron energy levels is the topological requirement that standing waves close on S². This is D6 ≡ D0 — the dimensional closure — applied at the atomic scale: the wave that starts at a point on S² must return to that point after traversing the sphere. Only waves satisfying this closure condition exist as stable states. **[C]**
+**Correspondence 2.1 `[C]` (shell closure analogy).** Single-valued boundary
+conditions and spherical harmonics can be compared with the framework's
+return image. They do not establish literal `D6=D0`, derive the D-registers,
+or make `r₆` physical. The live closure owner keeps `r₆:D6↝D0` interpretive.
 
 The allowed angular momentum quantum numbers l = 0, 1, 2, ... count the number of nodal lines on S². Each l corresponds to a family of (2l+1) spherical harmonics, representing (2l+1) independent standing wave patterns with l nodal lines. With spin degeneracy (factor of 2), each l level accommodates 2(2l+1) electrons. **[A]**
 

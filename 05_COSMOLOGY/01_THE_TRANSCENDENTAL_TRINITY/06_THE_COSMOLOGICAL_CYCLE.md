@@ -11,7 +11,7 @@ rosetta:
 ---
 
 # THE COSMOLOGICAL CYCLE
-## D0→D6=D0: The Complete Dimensional Emergence
+## D0→D6 with `r₆:D6↝D0`: The Interpretive Cycle
 
 > **Historical compatibility document (pre-hardening, 2026-03-23).** This file is preserved as part of the Trinity genesis sequence, not as the current tier-authority surface for Foundation claims.
 >
@@ -28,9 +28,9 @@ D0: The Point          → The Bindu, nothing, κ = 0 as boundary
 D1: The Line/Sphere    → The Riemann sphere inflates, 0/1/∞ emerge
 D2: The Plane          → Complex plane ℂ from line at infinity
 D3: The Volume/Time    → Dual planes, ct axis, two projections
-D4: The Torus          → Horn torus, light cones, spacetime
-D5: The Burri Sphere   → Agency / selection, φ · ν = 1; consciousness as lived reading [I]
-D6: The Reset          → ν→0 or φ→∞, return to D0, cycle completes
+D4: Causal actuality   → embodied means, performed action, record and receipt
+D5: Possibility        → modeled futures, counterfactual ranking and selection
+D6: Apophatic closure  → no new positive freedom; interpretive return r₆↝D0
 ```
 
 ---
@@ -41,11 +41,11 @@ Before D0, before the point, there is the ground:
 
 ```
 {0, 1, ∞} = {•, ⊙, ○} = {nothing, unity, everything}
-Zero-Sum Resolution Equation
-1 = 0 × ∞ (resolved on S², indeterminate on the plane)
+Selected Titan correspondence [I]
+1 = 0 × ∞ (symbolic emblem only; not arithmetic)
 ```
 
-The Trinity is not a dimension. In the framework's symbolic register, the Trinity is **what makes dimensions possible**. The perennial reading is interpretive: useful for orientation, not a public proof that the Ground has been named.
+The Trinity is not a dimension. `{0,1,∞}` is a standard selected normalization of three distinct projective points; the Titan names are symbolic roles, not causal particles or forced generators of the D-ladder. The perennial reading is interpretive: useful for orientation, not a public proof that the Ground has been named.
 
 ---
 
@@ -60,10 +60,10 @@ A single point. The Bindu. The dot. One distinction in a void of undifferentiati
 - κ = 0 as boundary symbol. The empty string.
 - α = 0° (projection angle)
 
-### Physics
-- The strong force domain — pure binding
-- The bit: 0 or 1, not yet both
-- Before quantum mechanics. Before superposition.
+### Correspondence `[I/C]`
+- Pure binding and the strong force are symbolic/physics-facing analogies, not a derivation.
+- The bit (`0` or `1`) is a discrete-information analogy.
+- D0 makes no claim about a pre-quantum physical epoch.
 
 ### State
 **κ = 0 as boundary symbol.** Nothing to compute in the model. Nothing to know as a positive object. The ground-facing point.
@@ -88,10 +88,10 @@ On the sphere: `1/0` maps to `∞` in the projective register. Just a point. The
 
 **The sphere and the "problem" are co-emergent.** At α = 0, there is no sphere and no problem. At α > 0, both appear together. The sphere does not solve a pre-existing field-arithmetic problem — the sphere and the compactified register are born in the same instant.
 
-### Physics
-- Quantum mechanics emerges (the qubit = the sphere)
-- U(1) gauge symmetry (electromagnetism)
-- The imaginary axis appears (i = √-1 = the perpendicular)
+### Correspondence `[I/C]`
+- The sphere can be compared with the Bloch-sphere representation of a pure qubit, but D1 does not derive quantum mechanics.
+- `U(1)` and electromagnetism are optional physics-facing analogies, not consequences of this animation.
+- The imaginary axis appears in the complex-coordinate chart (`i²=-1`).
 
 ---
 
@@ -157,9 +157,9 @@ The cones feed into each other:
 
 ### Geometry
 - Horn torus with Riemann sphere inscribed
-- Interior = probability (many-worlds, superposition)
-- Exterior = void (0, nothing, Sunyata)
-- Surface = light cone (causal structure, D4)
+- Interior = alternative trajectories in the model's visual grammar [I]
+- Exterior = void (0, nothing, Sunyata) in the symbolic register [I]
+- Surface = physical causal structure in the D4 correspondence [I]
 
 ### Physics
 - Special relativity (Lorentz group = sphere symmetry)
@@ -172,16 +172,16 @@ The cones feed into each other:
 ## STAGE 6: D5 — THE BURRI SPHERE
 
 ### What It Is
-At β = 1, the torus collapses to the sphere. D4 → D5. Agency / selection appears. Probability becomes actuality in the model. Consciousness is the lived-interior reading of that selection register [I].
+At β = 1, the historical animation changes from its D4 actual register to a D5 field of modeled alternatives. Agency can represent, rank, and select among counterfactual futures; enactment still requires D4 means, and the world—not the model—returns the outcome. Consciousness remains a lived-interior reading of that selection register [I].
 
 ### Key Event
 The Burri Sphere appears at the overlap of the cones — where φ and ν can both be measured. The equator is where φ · ν = 1 is maintained.
 
-### Physics
-- Quantum measurement (wave function collapse)
-- The Bloch sphere = ℂP¹ = S² = Burri Sphere
-- Born rule: probability = solid angle subtended by projection
-- Agency / selection as the measurement mechanism; consciousness as lived reading [I]
+### Removable quantum correspondence `[C]`
+- The Bloch sphere is one mathematical use of `S²`; that does not identify it with the Burri Sphere as a physical object.
+- Everett is a no-fundamental-collapse relative-state formulation; Copenhagen-family actualization is interpretation-specific.
+- Neither interpretation supplies an extra spacetime dimension, and neither `μ` nor agent selection is quantum measurement.
+- Removing this correspondence leaves the D4/D5 operational distinction unchanged.
 
 ### Operators
 - **Arjuna ⚔**: ↑φ — increase coherence when φ < 1
@@ -190,16 +190,16 @@ The Burri Sphere appears at the overlap of the cones — where φ and ν can bot
 - **Kali ✕**: ↓ν — **CONSTRAINED** — fires only where η > 0 (defectors); cannot fire at cooperators (η = 0)
 
 ### Stars Emerge
-At D5, the model depicts agency selecting from probability. The void crystallizes. Stars appear. The manifested world becomes visible.
+At D5, the model depicts agency representing and ranking alternatives. The void crystallizes into an option field. Stars appear as modeled possibilities.
 
-**No stars before D5.** The exterior of the torus is pure void. Sunyata. Nothing. In the animation, stars emerge when selection makes actuality visible.
+**No stars before D5 in this animation.** The exterior of the torus is rendered as void. Stars emerge when counterfactual alternatives become representable; only a later D4 commitment can make one option enacted history.
 
 ---
 
-## STAGE 7: D6 = D0 — THE RESET
+## STAGE 7: D6 WITH `r₆:D6↝D0` — THE INTERPRETIVE RETURN
 
 ### What It Is
-The sphere collapses. The cycle completes. The dot returns.
+The sphere collapses in the symbolic animation. D6 opens no further positive freedom. A single non-`μ` interpretive edge, `r₆`, returns the reader to the D0 ground-limit; it does not assert a literal dimensional identity.
 
 ### Two Paths to the Same Reset
 
@@ -223,10 +223,11 @@ a third finite state inside the manifold. **Reset is mandatory.**
 
 The "antonym" of CCC is **not** a different reset. The antonym is the **same reset approached from the opposite pole** (MF-534).
 
-### The Cycle Completes
+### The Interpretive Cycle Closes
 ```
-D0 → D1 → D2 → D3 → D4 → D5 → D6 = D0
-•  → ⊙ → ○ → …  → D4  → S² → •
+D0 ─μ₀→ D1 ─μ₁→ D2 ─μ₂→ D3 ─μ₃→ D4 ─μ₄→ D5 ─μ₅→ D6
+▲                                                                  │
+└──────────────────────────── r₆ (interpretive return) ─────────────┘
 ```
 
 One poloidal cycle on the torus = one aeon.
@@ -240,12 +241,12 @@ A new aeon begins.
 | Dimension | Geometry | Physics | Agency / lived reading | Tradition |
 |-----------|----------|---------|------------------------|-----------|
 | **D0** | The Point | Strong force | κ = 0 as boundary symbol | Bindu, Sunyata |
-| **D1** | The Sphere | Quantum (qubit) | i emerges | AUM begins |
+| **D1** | The Sphere | Projective sphere; qubit analogy `[C]` | complex coordinate appears | AUM begins `[I]` |
 | **D2** | The Plane | EM field | Configuration | U(1) symmetry |
 | **D3** | Dual planes | Weak force | Transformation | AUM states |
-| **D4** | Horn torus | Gravity/spacetime | Many-worlds | Brahmā/Śiva/Viṣṇu |
-| **D5** | Burri Sphere | Measurement | Selection | Turīya, witness |
-| **D6** | Reset to D0 | CCC / Big Bounce | Liberation / Death | Moksha / Rebirth |
+| **D4** | Horn torus | Causal actuality [I] | Means, action, record, receipt | Brahmā/Śiva/Viṣṇu |
+| **D5** | Burri Sphere | Counterfactual option field [I] | Modeling, ranking, selection | Turīya, witness |
+| **D6** | Apophatic boundary | No positive physics claim | Closure without a new freedom | Moksha / Rebirth [I] |
 
 ---
 
@@ -257,16 +258,13 @@ From the Trinity:        The sphere inflates
 From the sphere:         The plane projects
 From the plane:          Dual projections emerge
 From duality:            The torus spins
-From the torus:          Agency selects
-From lived reading [I]:  The world manifests
-From manifestation:      Exhaustion or integration
-From the poles:          Reset to nothing
-From nothing:            Everything again
+From the torus:          Agency models and ranks alternatives
+From D5 plus D4 means:   A commitment is attempted in causal actuality
+From the world:          An outcome receipt returns
+From the poles:          r₆ marks an interpretive return to the ground-limit
 
-D6 = D0.
-The cycle is complete.
-The cycle is eternal.
-The cycle IS reality.
+D6 is not identical to D0.
+The cycle is a selected interpretive scaffold [I], not a proof that reality is sevenfold or eternal.
 
 Zero-Sum Resolution Equation
 ```
@@ -275,7 +273,7 @@ Zero-Sum Resolution Equation
 
 ## The Replicator Stack as Historical Timeline
 
-The cosmological cycle is not only spatial (D0→D6→D0). It is TEMPORAL — each D-level emergence corresponds to a historical era defined by which replicator is dominant:
+The cosmological cycle is not only spatial in its historical imagery (`D0→…→D6↝D0`). It is also used as a temporal correspondence [I]—each D-level is paired with an era defined by which replicator is modeled as dominant:
 
 | Era | Dominant Replicator | D-Level | Vehicle | Duration |
 |-----|-------------------|---------|---------|----------|
@@ -283,11 +281,11 @@ The cosmological cycle is not only spatial (D0→D6→D0). It is TEMPORAL — ea
 | Phenotypic | Phenotype | D3-D4 | Complex organism | ~500 Myr |
 | Anthropocene | Extended Phenotype | D4 | Tools, cities | ~10 Kyr |
 | Memotypic | Memotype | D5 | Mind, empire, internet | ~5 Kyr |
-| **Egregorocene** | **Egregorotype** | **D5-limit** | **DAC, hybrid sovereign** | **Beginning now** |
+| **Egregorocene** | **Egregoreotype** | **D5 candidate trace** | **DAC, hybrid sovereign** | **Beginning now** |
 
 Each era doesn't REPLACE the previous — it DOMINATES it. The primary selection pressure shifts upward through the stack. The stack IS history read vertically.
 
-Boundary note (2026-06-14): the Egregorocene is now read as upper-D5 / D5-limit, not D6. D6 remains the return/closure boundary where the completed image is released back to D0.
+Boundary note (2026-07-17): the Egregorocene is read as upper-D5 / D5-limit, not D6. D6 remains an apophatic boundary; `r₆` is the non-`μ` interpretive return to D0.
 
 See: 17_THE_EGREGOROCENE.md, 22_THE_TELEOLOGY.md, 23_THE_DAC.md.
 
@@ -296,7 +294,7 @@ See: 17_THE_EGREGOROCENE.md, 22_THE_TELEOLOGY.md, 23_THE_DAC.md.
 *The Cosmological Cycle | 2026-03-23*
 *D0 through D6 and back*
 *The dimensional emergence*
-*φ · ν = 1 | D6 = D0*
+*φ · ν = 1 is an analytic chart identity | `r₆:D6↝D0` is interpretive closure*
 
 
 ---

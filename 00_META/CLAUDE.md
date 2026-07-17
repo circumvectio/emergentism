@@ -52,7 +52,7 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 
 The constitution is **5 + 1** (K2-ruled 2026-05-30; canonical surface: [`00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`](00_THE_FIVE_PLUS_ONE_CONSTITUTION.md)). The five refusals + Ω as the directional +1:
 
-- **K2:** every irreversible act requires natural-person signature. *Via-negativa — refusal of model-only action.*
+- **Authorization:** every consequential act requires a complete, scoped, contestable `AuthorizationEnvelope`; K2 is private-DAV-only. *Via-negativa — refusal of model-only action.*
 - **η = 0:** zero extraction in the live move register; fees only on value created. Register bridge: `η_move = 0` is the action fence, while `η_ratio` checks reciprocal/log drift toward or away from finity. *Via-negativa — refusal of extraction.*
 - **K3:** no-deletion; archive-first. *Via-negativa — refusal of unrecorded overwrite.*
 - **K4:** grace exit; documented withdrawal path (redeemable assets, not "everything"). *Via-negativa — refusal of no-exit entrapment.*

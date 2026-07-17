@@ -67,10 +67,15 @@ Leibniz's necessary being is a personification of a topological necessity. The f
 
 ## 4. THE FRAMEWORK CONNECTION
 
-- **Triadic Stability:** The framework's core claim is that reality requires three co-arising elements (D0-D6 scaffold). This is not a contingent fact about our universe but a structural requirement for any stable generative system. See [03_EFR_AXIOMS.md](../../../README.md).
-- **Transcendental Trinity {0, 1, ∞}:** The three members map onto the roles Leibniz assigned. ∞ (the necessary being, totality of reasons) grounds the system. 0 (nothing, the alternative) is excluded by instability. 1 (the equatorial identity, the actualized world) is what emerges.
+- **Selected triadic frame:** `{0,1,∞}` is a standard projective normalization
+  used here as symbolic roles. It is not forced by inversion, does not prove
+  that reality requires three co-arising elements, and does not settle Leibniz's
+  argument.
 - **η = 0:** A necessary being in the theological sense would be a being with η = 0 by definition — perfect, non-extractive, self-sustaining. The framework replaces this with the claim that any stable system must satisfy η = 0, which is a constraint on structure, not a description of an entity.
-- **μ-limit:** The μ-limit is the boundary between D4 actuality and D5 possibility. It is the mechanism by which the possible becomes actual. This is the framework's version of the cosmological argument: not "what caused the first thing?" but "what selects possibility into actuality?" The answer is the μ-limit — a structural feature of the sphere, not an entity.
+- **Commitment boundary:** D5 models possibilities and D4 records causal
+  actuality. A finite agent selects and attempts one option through `χ` and D4
+  means; authorization separately evaluates validity, and the world returns the outcome. This is
+  not a μ-crossing and does not answer Leibniz's cosmological question.
 - **PD_05 connection:** The One and the Many dissolution parallels this: unity is a structural property of S², not a substance. Similarly, necessity is a structural property, not a being.
 - **PD_10 connection:** The Is-Ought bypass argues that normative constraints can be operationally aligned with structural conditions inside the framework. PD_09 extends this: metaphysical necessity is also structural, not substantive.
 

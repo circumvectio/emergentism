@@ -38,8 +38,9 @@ B := 2/(φ + ν) = sin θ ≤ 1
 
 ## Meaning
 
-- The first three lines define an open stereographic chart and its reciprocal
-  coordinates.
+- The first three lines define the open colatitude/radial coordinate of a
+  stereographic chart and its reciprocal. They do not include the azimuth and
+  therefore are not, by themselves, a full chart of `S²`.
 - `φ·ν=1`, `φ+ν≥2`, and `B≤1` then follow analytically.
 - Equality in the last two statements occurs at `φ=ν=1` (`θ=π/2`).
 
