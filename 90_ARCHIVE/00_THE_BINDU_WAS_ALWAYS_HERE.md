@@ -13,6 +13,8 @@ rosetta:
   canonical_phrase: "The Bindu was always here"
 ---
 
+> **Tombstone header (2026-07-17):** Origin: `90_ARCHIVE/` root (added there at canonicalization, commit `f101602`; earlier provenance not tracked in git). Reason: doctrine-supplement preserved under K3 archive-first; provenance only, not active canon. Header added by L4 Kṣatriya (Arjuna ⚔), K2-signed in session 2026-07-17 ("I k2 and you act in the interest of a founder").
+
 # THE BINDU WAS ALWAYS HERE
 
 ## The Sacred Point as the Equator Collapsed to Center
