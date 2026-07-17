@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg data-topology-sha256="b3f73e75becaf093428aaab850f89f541cd20c5d8041cd268cb9a7b646f43454" height="1000" role="img" viewBox="0 0 1600 1000" width="1600" xmlns="http://www.w3.org/2000/svg">
+<svg data-topology-sha256="f39561ac7037e1553335939397ca9891ea2245e653a70f2a64a8587414d0f8ce" height="1000" role="img" viewBox="0 0 1600 1000" width="1600" xmlns="http://www.w3.org/2000/svg">
   <title>The Burri Rules - Ivory Proof Plate</title>
-  <metadata id="topology-sha256">sha256:b3f73e75becaf093428aaab850f89f541cd20c5d8041cd268cb9a7b646f43454;view:proof</metadata>
+  <metadata id="topology-sha256">sha256:f39561ac7037e1553335939397ca9891ea2245e653a70f2a64a8587414d0f8ce;view:proof</metadata>
   <defs>
     <marker id="arrow-actual" markerHeight="8" markerWidth="8" orient="auto" refX="7" refY="4"><path d="M 0 0 L 8 4 L 0 8 Z" fill="#332d29"/></marker>
     <marker id="arrow-possible" markerHeight="8" markerWidth="8" orient="auto" refX="7" refY="4"><path d="M 0 0 L 8 4 L 0 8 Z" fill="#526879"/></marker>
@@ -11,7 +11,7 @@
   <text fill="#332d29" font-family="sans-serif" font-size="28" font-weight="800" letter-spacing="2.2" text-anchor="start" x="60" y="52">THE BURRI RULES</text>
   <text fill="#5b534c" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="start" x="60" y="79">Ivory proof plate · typed emergence, commitment, receipt, and composition</text>
   <text fill="#5b534c" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="1.2" text-anchor="end" x="1540" y="52">COMPASS / NOT COMMAND</text>
-  <text fill="#5b534c" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="end" x="1540" y="76">topology sha256 b3f73e75becaf093…</text>
+  <text fill="#5b534c" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="end" x="1540" y="76">topology sha256 f39561ac7037e155…</text>
   <rect fill="#fbf7eb" height="160" rx="20" stroke="#b8a98e" stroke-width="1.5" width="1510" x="45" y="104"/>
   <text fill="#5b534c" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="1" text-anchor="start" x="65" y="128">BR-2 · SIX CANDIDATE CROSSINGS + ONE NON-mu CLOSURE</text>
   <g data-primitive="mu-crossing" id="d-register-spine">
@@ -209,9 +209,10 @@
   <text fill="#5b534c" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="middle" x="1215" y="635">K_t may transform, veto, or distribute consequence</text>
   <rect fill="#fbf7eb" height="21" rx="10" width="350" x="875" y="643"/>
   <text fill="#5b534c" font-family="sans-serif" font-size="9" font-weight="400" text-anchor="middle" x="1050" y="657">a_t = bottom -&gt; null or ambient OutcomeReceipt (distinct cause)</text>
-  <path d="M 1390 552 C 1390 280, 395 280, 340 376" fill="none" id="e-outcome-model-feedback" marker-end="url(#arrow-actual)" stroke="#332d29" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"/>
+  <path d="M 1390 552 C 1390 280, 240 280, 263 405" fill="none" id="e-outcome-model-feedback" marker-end="url(#arrow-actual)" stroke="#332d29" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"/>
   <path d="M 1390 617 C 1350 680, 950 710, 730 434" fill="none" id="e-outcome-selector-feedback" marker-end="url(#arrow-actual)" stroke="#7b5f18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"/>
   <text fill="#5b534c" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="start" x="1045" y="292">Loop(M_t, G_t, q_t, r_t+1) revises M</text>
+  <rect fill="#fbf7eb" height="21" rx="9" width="230" x="887" y="676"/>
   <text fill="#7b5f18" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="start" x="900" y="690">receipt also revises G · not optional</text>
   <g data-primitive="titan-frame" id="titan-frame">
   <rect fill="#f7f0dc" height="102" rx="18" stroke="#b8a98e" stroke-width="1.5" width="238" x="95" y="605"/>

@@ -7,7 +7,7 @@ rosetta:
   register: "[I] semantic grammar; per-claim [A/B/S/I/D/C] tiers"
   canonical_phrase: "THE BURRI RULES — A GRAPHICAL GRAMMAR OF EMERGENCE, AGENCY, AND RECEIPT"
 title: "The Burri Rules"
-status: "STAGED [D] — semantic repair complete; acceptance receipt pending"
+status: "ACTIVE [I] — internally accepted by Receipt 127; externally uncalibrated"
 evidence_tier: "[I] as an externally uncalibrated translation grammar; [C] for empirical emergence and universal-fit claims."
 topology: "00_BURRI_RULES_TOPOLOGY.json"
 plate: "00_BURRI_RULES_PLATE.svg"

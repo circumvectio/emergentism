@@ -5,10 +5,10 @@ rosetta:
   operator: "Kṛṣṇa ◇"
   tier: "God"
   regime: "Vaiśya"
-  register: "[D]"
-  canonical_phrase: "Burri Rules derivation ledger — proof burden before promotion"
+  register: "[I]"
+  canonical_phrase: "Burri Rules derivation ledger — proof burden, source distance, and claim movement"
 title: "Burri Rules Derivation Ledger"
-status: "STAGED [D] — acceptance receipt pending"
+status: "ACTIVE [I] — internally accepted by Receipt 127; externally uncalibrated"
 evidence_tier: "[B] sources and receipts; [S] internal type discipline; [I] translations; [C] empirical conjectures."
 ---
 
@@ -37,7 +37,7 @@ The operational invariant is:
 | `[B]` | Primary-source attribution or reproducible receipt |
 | `[S]` | Consequence inside explicitly declared model premises |
 | `[I]` | Interpretation, selected scaffold, translation, or normative construction |
-| `[D]` | Lifecycle status: staged and not yet accepted |
+| `[D]` | Lifecycle status: staged and not yet accepted; no longer the status of this ledger |
 | `[C]` | Empirical or ontological conjecture with a kill criterion |
 
 Tiers do not automatically transfer through Rosetta projection.

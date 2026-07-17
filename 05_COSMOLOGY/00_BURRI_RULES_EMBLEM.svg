@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg data-topology-sha256="b3f73e75becaf093428aaab850f89f541cd20c5d8041cd268cb9a7b646f43454" height="1000" role="img" viewBox="0 0 1600 1000" width="1600" xmlns="http://www.w3.org/2000/svg">
+<svg data-topology-sha256="f39561ac7037e1553335939397ca9891ea2245e653a70f2a64a8587414d0f8ce" height="1000" role="img" viewBox="0 0 1600 1000" width="1600" xmlns="http://www.w3.org/2000/svg">
   <title>The Burri Rules - Obsidian Emblem</title>
-  <metadata id="topology-sha256">sha256:b3f73e75becaf093428aaab850f89f541cd20c5d8041cd268cb9a7b646f43454;view:emblem</metadata>
+  <metadata id="topology-sha256">sha256:f39561ac7037e1553335939397ca9891ea2245e653a70f2a64a8587414d0f8ce;view:emblem</metadata>
   <defs>
     <marker id="arrow-actual" markerHeight="8" markerWidth="8" orient="auto" refX="7" refY="4"><path d="M 0 0 L 8 4 L 0 8 Z" fill="#332d29"/></marker>
     <marker id="arrow-possible" markerHeight="8" markerWidth="8" orient="auto" refX="7" refY="4"><path d="M 0 0 L 8 4 L 0 8 Z" fill="#526879"/></marker>
@@ -11,7 +11,7 @@
   <text fill="#e7dcc2" font-family="sans-serif" font-size="28" font-weight="800" letter-spacing="2.2" text-anchor="start" x="60" y="58">THE BURRI RULES</text>
   <text fill="#9fb4bf" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="start" x="60" y="84">Obsidian emblem · derived compression</text>
   <text fill="#e8c96b" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="1" text-anchor="end" x="1540" y="58">FRAME · CROSS · COMMIT · RECEIVE · RETURN · COMPOSE</text>
-  <text fill="#9fb4bf" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="end" x="1540" y="82">sha256 b3f73e75becaf093…</text>
+  <text fill="#9fb4bf" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="end" x="1540" y="82">sha256 f39561ac7037e155…</text>
   <g data-primitive="mu-crossing" id="d-register-spine">
   <line id="e-d0-mu0" marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="112" x2="163" y1="175" y2="175"/>
   <line id="e-mu0-d1" marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="217" x2="268" y1="175" y2="175"/>
@@ -97,7 +97,9 @@
   <g id="master-emblem-geometry">
   <circle cx="800" cy="585" fill="#171d22" r="310" stroke="#e7dcc2" stroke-width="2.5"/>
   <circle cx="800" cy="585" fill="none" r="274" stroke="#9fb4bf" stroke-dasharray="10 8" stroke-width="1.5"/>
+  <rect fill="#171d22" height="20" rx="9" width="310" x="645" y="301"/>
   <text fill="#e7dcc2" font-family="sans-serif" font-size="11" font-weight="800" letter-spacing="1" text-anchor="middle" x="800" y="315">J+ PHYSICAL ENVELOPE · c-BOUNDED</text>
+  <rect fill="#171d22" height="19" rx="9" width="350" x="625" y="332"/>
   <text fill="#9fb4bf" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="middle" x="800" y="345">Omega option field lies inside · authorization remains separately typed</text>
   <path d="M 620 458 C 665 425, 700 414, 716 412" fill="none" id="e-model-option-a" marker-end="url(#arrow-possible)" stroke="#9fb4bf" stroke-dasharray="6 5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
   <path d="M 805 414 C 875 415, 930 440, 960 466" fill="none" id="e-option-a-chi" marker-end="url(#arrow-possible)" stroke="#9fb4bf" stroke-dasharray="6 5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
