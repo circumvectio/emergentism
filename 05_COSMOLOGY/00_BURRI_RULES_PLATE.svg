@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg data-topology-sha256="1ddec429925a50023cf6d04f8ff80e339eca55effdbb9862040426334e3aefae" height="1000" role="img" viewBox="0 0 1600 1000" width="1600" xmlns="http://www.w3.org/2000/svg">
+  <title>The Burri Rules - Ivory Proof Plate</title>
+  <metadata id="topology-sha256">sha256:1ddec429925a50023cf6d04f8ff80e339eca55effdbb9862040426334e3aefae;view:proof</metadata>
+  <defs>
+    <marker id="arrow-actual" markerHeight="8" markerWidth="8" orient="auto" refX="7" refY="4"><path d="M 0 0 L 8 4 L 0 8 Z" fill="#332d29"/></marker>
+    <marker id="arrow-possible" markerHeight="8" markerWidth="8" orient="auto" refX="7" refY="4"><path d="M 0 0 L 8 4 L 0 8 Z" fill="#526879"/></marker>
+    <marker id="arrow-light" markerHeight="8" markerWidth="8" orient="auto" refX="7" refY="4"><path d="M 0 0 L 8 4 L 0 8 Z" fill="#e7dcc2"/></marker>
+  </defs>
+  <rect fill="#f7f0dc" height="1000" width="1600" x="0" y="0"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="28" font-weight="800" letter-spacing="2.2" text-anchor="start" x="60" y="52">THE BURRI RULES</text>
+  <text fill="#5b534c" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="start" x="60" y="79">Ivory proof plate · typed emergence, commitment, receipt, and composition</text>
+  <text fill="#5b534c" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="1.2" text-anchor="end" x="1540" y="52">COMPASS / NOT COMMAND</text>
+  <text fill="#5b534c" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="end" x="1540" y="76">topology sha256 1ddec429925a5002…</text>
+  <rect fill="#fbf7eb" height="160" rx="20" stroke="#b8a98e" stroke-width="1.5" width="1510" x="45" y="104"/>
+  <text fill="#5b534c" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="1" text-anchor="start" x="65" y="128">BR-2 · SIX CANDIDATE CROSSINGS + ONE NON-mu CLOSURE</text>
+  <g data-primitive="mu-crossing" id="d-register-spine">
+  <line marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2" x1="112" x2="163" y1="170" y2="170"/>
+  <line marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2" x1="217" x2="268" y1="170" y2="170"/>
+  <g data-register="D0" id="d0">
+  <rect fill="#fffdf6" height="50" rx="12" stroke="#332d29" stroke-width="2" width="84" x="28" y="145"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle" x="70" y="168">D0</text>
+  <text fill="#526879" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle" x="70" y="187">ground</text>
+  </g>
+  <line marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2" x1="352" x2="403" y1="170" y2="170"/>
+  <line marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2" x1="457" x2="508" y1="170" y2="170"/>
+  <g data-register="D1" id="d1">
+  <rect fill="#fffdf6" height="50" rx="12" stroke="#332d29" stroke-width="2" width="84" x="268" y="145"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle" x="310" y="168">D1</text>
+  <text fill="#526879" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle" x="310" y="187">distinction</text>
+  </g>
+  <line marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2" x1="592" x2="643" y1="170" y2="170"/>
+  <line marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2" x1="697" x2="748" y1="170" y2="170"/>
+  <g data-register="D2" id="d2">
+  <rect fill="#fffdf6" height="50" rx="12" stroke="#332d29" stroke-width="2" width="84" x="508" y="145"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle" x="550" y="168">D2</text>
+  <text fill="#526879" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle" x="550" y="187">configuration</text>
+  </g>
+  <line marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2" x1="832" x2="883" y1="170" y2="170"/>
+  <line marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2" x1="937" x2="988" y1="170" y2="170"/>
+  <g data-register="D3" id="d3">
+  <rect fill="#fffdf6" height="50" rx="12" stroke="#332d29" stroke-width="2" width="84" x="748" y="145"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle" x="790" y="168">D3</text>
+  <text fill="#526879" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle" x="790" y="187">change</text>
+  </g>
+  <line marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2" x1="1072" x2="1123" y1="170" y2="170"/>
+  <line marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2" x1="1177" x2="1228" y1="170" y2="170"/>
+  <g data-register="D4" id="d4">
+  <rect fill="#fffdf6" height="50" rx="12" stroke="#332d29" stroke-width="2" width="84" x="988" y="145"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle" x="1030" y="168">D4</text>
+  <text fill="#526879" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle" x="1030" y="187">actual</text>
+  </g>
+  <line marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2" x1="1312" x2="1363" y1="170" y2="170"/>
+  <line marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2" x1="1417" x2="1468" y1="170" y2="170"/>
+  <g data-register="D5" id="d5">
+  <rect fill="#fffdf6" height="50" rx="12" stroke="#332d29" stroke-width="2" width="84" x="1228" y="145"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle" x="1270" y="168">D5</text>
+  <text fill="#526879" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle" x="1270" y="187">possible</text>
+  </g>
+  <g data-register="D6" id="d6">
+  <rect fill="#fffdf6" height="50" rx="12" stroke="#332d29" stroke-width="2" width="84" x="1468" y="145"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle" x="1510" y="168">D6</text>
+  <text fill="#526879" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle" x="1510" y="187">closure</text>
+  </g>
+  <g data-kind="crossing" data-reduction-status="currently_unreduced" id="mu-0">
+  <polygon fill="#fff1c7" points="190,143 217,170 190,197 163,170" stroke="#7b5f18" stroke-width="2"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="12" font-weight="700" text-anchor="middle" x="190" y="175">mu0</text>
+  <text fill="#526879" font-family="sans-serif" font-size="8" font-weight="600" text-anchor="middle" x="190" y="212">evidence: empty</text>
+  </g>
+  <g data-kind="crossing" data-reduction-status="currently_unreduced" id="mu-1">
+  <polygon fill="#fff1c7" points="430,143 457,170 430,197 403,170" stroke="#7b5f18" stroke-width="2"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="12" font-weight="700" text-anchor="middle" x="430" y="175">mu1</text>
+  <text fill="#526879" font-family="sans-serif" font-size="8" font-weight="600" text-anchor="middle" x="430" y="212">evidence: empty</text>
+  </g>
+  <g data-kind="crossing" data-reduction-status="currently_unreduced" id="mu-2">
+  <polygon fill="#fff1c7" points="670,143 697,170 670,197 643,170" stroke="#7b5f18" stroke-width="2"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="12" font-weight="700" text-anchor="middle" x="670" y="175">mu2</text>
+  <text fill="#526879" font-family="sans-serif" font-size="8" font-weight="600" text-anchor="middle" x="670" y="212">evidence: empty</text>
+  </g>
+  <g data-kind="crossing" data-reduction-status="currently_unreduced" id="mu-3">
+  <polygon fill="#fff1c7" points="910,143 937,170 910,197 883,170" stroke="#7b5f18" stroke-width="2"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="12" font-weight="700" text-anchor="middle" x="910" y="175">mu3</text>
+  <text fill="#526879" font-family="sans-serif" font-size="8" font-weight="600" text-anchor="middle" x="910" y="212">evidence: empty</text>
+  </g>
+  <g data-kind="crossing" data-reduction-status="currently_unreduced" id="mu-4">
+  <polygon fill="#fff1c7" points="1150,143 1177,170 1150,197 1123,170" stroke="#7b5f18" stroke-width="2"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="12" font-weight="700" text-anchor="middle" x="1150" y="175">mu4</text>
+  <text fill="#526879" font-family="sans-serif" font-size="8" font-weight="600" text-anchor="middle" x="1150" y="212">evidence: empty</text>
+  </g>
+  <g data-kind="crossing" data-reduction-status="currently_unreduced" id="mu-5">
+  <polygon fill="#fff1c7" points="1390,143 1417,170 1390,197 1363,170" stroke="#7b5f18" stroke-width="2"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="12" font-weight="700" text-anchor="middle" x="1390" y="175">mu5</text>
+  <text fill="#526879" font-family="sans-serif" font-size="8" font-weight="600" text-anchor="middle" x="1390" y="212">evidence: empty</text>
+  </g>
+  <path d="M 1510 197 C 1510 246, 70 246, 70 197" fill="none" id="r6" marker-end="url(#arrow-actual)" stroke="#526879" stroke-dasharray="9 6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <rect fill="#fbf7eb" height="18" rx="9" width="360" x="610" y="224"/>
+  <text fill="#526879" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle" x="790" y="239">r6 interpretive return · not identity · not mu6</text>
+  </g>
+  <g data-primitive="boundary-envelope" id="physical-cone">
+  <rect fill="#fbf7eb" height="430" rx="34" stroke="#332d29" stroke-width="2.4" width="1460" x="70" y="300"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="12" font-weight="800" letter-spacing="1" text-anchor="start" x="95" y="328">J+ · c-BOUNDED PHYSICAL CAUSAL ENVELOPE</text>
+  <text fill="#5b534c" font-family="sans-serif" font-size="11" font-weight="400" text-anchor="end" x="1505" y="328">modeling changes reachable choices, not c</text>
+  </g>
+  <g data-primitive="boundary-envelope" id="option-cone">
+  <rect fill="#eef3f4" height="220" rx="25" stroke="#526879" stroke-dasharray="8 6" stroke-width="2" width="590" x="250" y="350"/>
+  <text fill="#526879" font-family="sans-serif" font-size="11" font-weight="800" letter-spacing="0.8" text-anchor="start" x="270" y="376">Omega · AGENT-RELATIVE OPTION FIELD</text>
+  <text fill="#526879" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="end" x="815" y="376">authorized histories are a separate subset</text>
+  </g>
+  <line id="e-model-rank" marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2" x1="417" x2="458" y1="405" y2="405"/>
+  <line id="e-rank-selector" marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2" x1="612" x2="653" y1="405" y2="405"/>
+  <path d="M 340 432 C 340 478, 395 490, 430 506" fill="none" id="e-model-option-a" marker-end="url(#arrow-possible)" stroke="#526879" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 340 432 C 420 470, 575 485, 650 506" fill="none" id="e-model-option-b" marker-end="url(#arrow-possible)" stroke="#526879" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 535 432 C 515 478, 465 490, 430 506" fill="none" id="e-rank-option-a" marker-end="url(#arrow-possible)" stroke="#526879" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 535 432 C 560 475, 620 488, 650 506" fill="none" id="e-rank-option-b" marker-end="url(#arrow-possible)" stroke="#526879" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <g data-kind="state" data-modality="actual" id="d4-model-token">
+  <rect fill="#fffdf6" height="54" rx="13" stroke="#332d29" stroke-width="2" width="154" x="263" y="378"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="340" y="402">
+    <tspan dy="0" x="340">M_t actual token</tspan>
+    <tspan dy="17" x="340">represents D5 future</tspan>
+  </text>
+  </g>
+  <g data-kind="state" data-modality="actual" id="d4-rank-event">
+  <rect fill="#fffdf6" height="54" rx="13" stroke="#332d29" stroke-width="2" width="154" x="458" y="378"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="535" y="402">
+    <tspan dy="0" x="535">actual rank event</tspan>
+    <tspan dy="17" x="535">orders D5 contents</tspan>
+  </text>
+  </g>
+  <g data-kind="state" data-modality="actual" id="d4-selector-token">
+  <rect fill="#fffdf6" height="54" rx="13" stroke="#332d29" stroke-width="2" width="154" x="653" y="378"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="730" y="402">
+    <tspan dy="0" x="730">G_t actual selector</tspan>
+    <tspan dy="17" x="730">next-cycle policy</tspan>
+  </text>
+  </g>
+  <g data-kind="state" data-modality="possible" id="d5-option-a">
+  <rect fill="#eef3f4" height="54" rx="13" stroke="#526879" stroke-dasharray="6 5" stroke-width="2" width="154" x="353" y="508"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="430" y="532">
+    <tspan dy="0" x="430">D5 option A</tspan>
+    <tspan dy="17" x="430">merely possible</tspan>
+  </text>
+  </g>
+  <g data-kind="state" data-modality="possible" id="d5-option-b">
+  <rect fill="#eef3f4" height="54" rx="13" stroke="#526879" stroke-dasharray="6 5" stroke-width="2" width="154" x="573" y="508"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="650" y="532">
+    <tspan dy="0" x="650">D5 option B</tspan>
+    <tspan dy="17" x="650">merely possible</tspan>
+  </text>
+  </g>
+  <line id="e-means-availability" marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2" x1="507" x2="533" y1="655" y2="655"/>
+  <path d="M 687 655 C 750 650, 790 624, 814 605" fill="none" id="e-availability-chi" marker-end="url(#arrow-actual)" stroke="#332d29" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 687 705 C 770 705, 800 650, 830 611" fill="none" id="e-authorization-chi" marker-end="url(#arrow-actual)" stroke="#7b5f18" stroke-dasharray="3 4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 730 432 C 750 490, 810 520, 842 556" fill="none" id="e-selector-chi" marker-end="url(#arrow-actual)" stroke="#332d29" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 650 562 C 715 585, 765 588, 822 586" fill="none" id="e-option-a-chi" marker-end="url(#arrow-possible)" stroke="#526879" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <g data-kind="state" data-modality="actual" id="d4-means">
+  <rect fill="#fffdf6" height="54" rx="13" stroke="#332d29" stroke-width="2" width="154" x="353" y="628"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="430" y="652">
+    <tspan dy="0" x="430">V_t embodied means</tspan>
+    <tspan dy="17" x="430">actual resources</tspan>
+  </text>
+  </g>
+  <g data-kind="state" data-modality="actual" id="physical-availability">
+  <rect fill="#fffdf6" height="54" rx="13" stroke="#332d29" stroke-width="2" width="154" x="533" y="628"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="610" y="652">
+    <tspan dy="0" x="610">PHYSICAL</tspan>
+    <tspan dy="17" x="610">available / unavailable</tspan>
+  </text>
+  </g>
+  <g data-kind="state" data-modality="actual" id="authorization">
+  <rect fill="#fffdf6" height="54" rx="13" stroke="#332d29" stroke-width="2" width="154" x="533" y="678"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="610" y="702">
+    <tspan dy="0" x="610">AUTHORIZATION</tspan>
+    <tspan dy="17" x="610">valid / invalid / absent</tspan>
+  </text>
+  </g>
+  <line id="e-chi-commitment" marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2.7" x1="925" x2="980" y1="585" y2="585"/>
+  <line id="e-commitment-action" marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2.7" x1="1120" x2="1150" y1="585" y2="585"/>
+  <line id="e-action-outcome" marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2.7" x1="1292" x2="1320" y1="585" y2="585"/>
+  <g data-primitive="commitment" id="chi">
+  <polygon fill="#ffe7a3" points="875,540 927,585 875,630 823,585" stroke="#7b5f18" stroke-width="2.5"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="19" font-weight="800" text-anchor="middle" x="875" y="580">chi</text>
+  <text fill="#332d29" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle" x="875" y="600">commit</text>
+  </g>
+  <g data-kind="receipt" data-receipt-type="commitment" id="commitment-receipt">
+  <polygon fill="#fff8df" points="980,554 1099,554 1120,575 1120,616 980,616" stroke="#7b5f18" stroke-width="2"/>
+  <line stroke="#7b5f18" stroke-width="1.5" x1="1099" x2="1099" y1="554" y2="575"/>
+  <line stroke="#7b5f18" stroke-width="1.5" x1="1099" x2="1120" y1="575" y2="575"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle" x="1050" y="581">
+    <tspan dy="0" x="1050">q_t COMMITMENT</tspan>
+    <tspan dy="17" x="1050">attempt / refusal</tspan>
+  </text>
+  </g>
+  <g data-kind="state" data-modality="actual" id="d4-action">
+  <rect fill="#fffdf6" height="54" rx="13" stroke="#332d29" stroke-width="2" width="145" x="1142.5" y="558"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="1215" y="582">
+    <tspan dy="0" x="1215">a_t attempted</tspan>
+    <tspan dy="17" x="1215">D4 action</tspan>
+  </text>
+  </g>
+  <g data-kind="receipt" data-receipt-type="outcome" id="outcome-receipt">
+  <polygon fill="#fff8df" points="1320,554 1439,554 1460,575 1460,616 1320,616" stroke="#7b5f18" stroke-width="2"/>
+  <line stroke="#7b5f18" stroke-width="1.5" x1="1439" x2="1439" y1="554" y2="575"/>
+  <line stroke="#7b5f18" stroke-width="1.5" x1="1439" x2="1460" y1="575" y2="575"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle" x="1390" y="581">
+    <tspan dy="0" x="1390">r_t+1 OUTCOME</tspan>
+    <tspan dy="17" x="1390">world-issued</tspan>
+  </text>
+  </g>
+  <text fill="#5b534c" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="middle" x="1215" y="635">K_t may transform, veto, or distribute consequence</text>
+  <rect fill="#fbf7eb" height="21" rx="10" width="350" x="875" y="643"/>
+  <text fill="#5b534c" font-family="sans-serif" font-size="9" font-weight="400" text-anchor="middle" x="1050" y="657">a_t = bottom -&gt; null or ambient OutcomeReceipt (distinct cause)</text>
+  <path d="M 1390 552 C 1390 280, 395 280, 340 376" fill="none" id="e-outcome-model-feedback" marker-end="url(#arrow-actual)" stroke="#332d29" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"/>
+  <path d="M 1390 617 C 1350 680, 950 710, 730 434" fill="none" id="e-outcome-selector-feedback" marker-end="url(#arrow-actual)" stroke="#7b5f18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"/>
+  <text fill="#5b534c" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="start" x="1045" y="292">Loop(M_t, G_t, q_t, r_t+1) revises M</text>
+  <text fill="#7b5f18" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="start" x="900" y="690">receipt also revises G · not optional</text>
+  <g data-primitive="titan-frame" id="titan-frame">
+  <rect fill="#f7f0dc" height="102" rx="18" stroke="#b8a98e" stroke-width="1.5" width="238" x="95" y="605"/>
+  <text fill="#5b534c" font-family="sans-serif" font-size="10" font-weight="800" letter-spacing="0.8" text-anchor="start" x="112" y="627">BR-1 · SELECTED FRAME</text>
+  <circle cx="140" cy="661" fill="#fffdf6" r="20" stroke="#332d29" stroke-width="2"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="18" font-weight="700" text-anchor="middle" x="140" y="667">0</text>
+  <text fill="#5b534c" font-family="sans-serif" font-size="9" font-weight="400" text-anchor="middle" x="140" y="695">ground</text>
+  <circle cx="215" cy="661" fill="#fffdf6" r="20" stroke="#332d29" stroke-width="2"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="18" font-weight="700" text-anchor="middle" x="215" y="667">1</text>
+  <text fill="#5b534c" font-family="sans-serif" font-size="9" font-weight="400" text-anchor="middle" x="215" y="695">finite</text>
+  <circle cx="290" cy="661" fill="#fffdf6" r="20" stroke="#332d29" stroke-width="2"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="18" font-weight="700" text-anchor="middle" x="290" y="667">∞</text>
+  <text fill="#5b534c" font-family="sans-serif" font-size="9" font-weight="400" text-anchor="middle" x="290" y="695">horizon</text>
+  </g>
+  <g data-overlay="quantum" data-removable="true" id="quantum-inset">
+  <rect fill="#eef3f4" height="155" rx="20" stroke="#526879" stroke-dasharray="7 5" stroke-width="1.5" width="505" x="60" y="760"/>
+  <text fill="#526879" font-family="sans-serif" font-size="10" font-weight="800" letter-spacing="0.6" text-anchor="start" x="80" y="785">OPTIONAL QUANTUM CORRESPONDENCE [C] · REMOVABLE</text>
+  <rect fill="#fffdf6" height="48" rx="12" stroke="#526879" stroke-dasharray="5 4" stroke-width="1.5" width="175" x="90" y="815"/>
+  <rect fill="#fffdf6" height="48" rx="12" stroke="#332d29" stroke-width="1.5" width="175" x="350" y="815"/>
+  <text fill="#526879" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle" x="177.5" y="836">D5 structured</text>
+  <text fill="#526879" font-family="sans-serif" font-size="11" font-weight="400" text-anchor="middle" x="177.5" y="851">alternatives</text>
+  <text fill="#332d29" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle" x="437.5" y="836">D4 observer-relative</text>
+  <text fill="#332d29" font-family="sans-serif" font-size="11" font-weight="400" text-anchor="middle" x="437.5" y="851">factual record</text>
+  <line id="e-quantum-correspondence" marker-end="url(#arrow-possible)" stroke="#526879" stroke-dasharray="5 5" stroke-width="2" x1="265" x2="350" y1="839" y2="839"/>
+  <text fill="#5b534c" font-family="sans-serif" font-size="9" font-weight="400" text-anchor="middle" x="312" y="879">no extra dimension · no mu/chi measurement identity</text>
+  </g>
+  <g id="reflexive-bridge">
+  <rect fill="#fbf7eb" height="155" rx="20" stroke="#b8a98e" stroke-width="1.5" width="430" x="590" y="760"/>
+  <text fill="#5b534c" font-family="sans-serif" font-size="10" font-weight="800" letter-spacing="0.8" text-anchor="start" x="610" y="785">BR-5 · THREE INSPECTABLE GAPS</text>
+  <text fill="#7b5f18" font-family="sans-serif" font-size="10" font-weight="800" text-anchor="start" x="615" y="817">COGNITIVE</text>
+  <text fill="#332d29" font-family="sans-serif" font-size="11" font-weight="400" text-anchor="start" x="720" y="817">territory vs prediction</text>
+  <text fill="#7b5f18" font-family="sans-serif" font-size="10" font-weight="800" text-anchor="start" x="615" y="851">EXECUTION</text>
+  <text fill="#332d29" font-family="sans-serif" font-size="11" font-weight="400" text-anchor="start" x="720" y="851">intended vs performed</text>
+  <text fill="#7b5f18" font-family="sans-serif" font-size="10" font-weight="800" text-anchor="start" x="615" y="885">OUTCOME</text>
+  <text fill="#332d29" font-family="sans-serif" font-size="11" font-weight="400" text-anchor="start" x="720" y="885">expected vs observed</text>
+  <text fill="#5b534c" font-family="sans-serif" font-size="9" font-style="italic" font-weight="400" text-anchor="end" x="997" y="900">feedback sign is dynamical, not moral</text>
+  </g>
+  <g data-eta="0" data-primitive="boundary-envelope" id="justice-boundary">
+  <rect fill="#fff8df" height="165" rx="26" stroke="#7b5f18" stroke-width="2.5" width="475" x="1045" y="750"/>
+  <rect fill="none" height="151" rx="21" stroke="#7b5f18" stroke-width="1" width="461" x="1052" y="757"/>
+  <text fill="#7b5f18" font-family="sans-serif" font-size="10" font-weight="800" letter-spacing="0.8" text-anchor="start" x="1070" y="779">JUSTICE CLASSIFICATION · eta = 0</text>
+  <text fill="#5b534c" font-family="sans-serif" font-size="9" font-weight="400" text-anchor="end" x="1495" y="779">separate from candidacy</text>
+  </g>
+  <g data-eta-observed="number-or-unknown" data-primitive="trace-field" id="shared-trace">
+  <ellipse cx="1280" cy="835" fill="#f7f0dc" rx="78" ry="45" stroke="#332d29" stroke-width="2"/>
+  <ellipse cx="1280" cy="835" fill="none" rx="55" ry="30" stroke="#526879" stroke-dasharray="5 4" stroke-width="1.5"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="11" font-weight="800" text-anchor="middle" x="1280" y="831">EGREGOREOTYPE</text>
+  <text fill="#526879" font-family="sans-serif" font-size="9" font-weight="600" text-anchor="middle" x="1280" y="849">etaObserved = n | ?</text>
+  </g>
+  <path d="M 1390 617 C 1410 700, 1360 760, 1330 795" fill="none" id="e-outcome-trace" marker-end="url(#arrow-actual)" stroke="#332d29" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 1215 835 C 1070 825, 890 720, 748 434" fill="none" id="e-trace-selector" marker-end="url(#arrow-actual)" stroke="#7b5f18" stroke-dasharray="4 4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <text fill="#5b534c" font-family="sans-serif" font-size="9" font-weight="400" text-anchor="middle" x="1390" y="816">
+    <tspan dy="0" x="1390">affected bearer set</tspan>
+    <tspan dy="14" x="1390">payerIds / beneficiaryIds</tspan>
+    <tspan dy="14" x="1390">custody · consent · exit</tspan>
+  </text>
+  <text fill="#5b534c" font-family="sans-serif" font-size="9" font-weight="400" text-anchor="middle" x="1280" y="895">five trace tests · no consciousness or personhood presumed</text>
+  <line marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2.5" x1="65" x2="125" y1="949" y2="949"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="start" x="138" y="953">D4 actual / enacted</text>
+  <line marker-end="url(#arrow-possible)" stroke="#526879" stroke-dasharray="5 5" stroke-width="2" x1="310" x2="370" y1="949" y2="949"/>
+  <text fill="#526879" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="start" x="383" y="953">D5 merely possible / represented</text>
+  <path d="M 600 954 C 620 930, 660 930, 680 954" fill="none" marker-end="url(#arrow-actual)" stroke="#7b5f18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <text fill="#7b5f18" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="start" x="696" y="953">feedback / return</text>
+  <text fill="#332d29" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="end" x="1540" y="953">Map != territory · receipt &gt; self-certification</text>
+  <text fill="#5b534c" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="start" x="60" y="981">[I] externally uncalibrated translation grammar · empirical crossings and universal-fit claims remain [C]</text>
+  <text fill="#5b534c" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="end" x="1540" y="981">JSON mirrors owners; it cannot introduce doctrine or upgrade evidence</text>
+</svg>
