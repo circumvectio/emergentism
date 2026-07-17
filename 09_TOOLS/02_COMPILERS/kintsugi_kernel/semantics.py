@@ -1,8 +1,11 @@
 from __future__ import annotations
 
+import copy
 import json
 import math
+from collections.abc import Mapping
 from dataclasses import dataclass
+from types import MappingProxyType
 from typing import Any, Callable, Iterable
 
 from .diagnostics import Issue
@@ -2103,16 +2106,286 @@ def _validate_antibody_contract(core: dict[str, Any]) -> list[Issue]:
     return result
 
 
+COMPASS_MUTATION_CODES = MappingProxyType({
+    "empirical_chart_inflation": "KIN-E-COMPASS-CHART",
+    "product_uniqueness": "KIN-E-COMPASS-AGGREGATOR",
+    "forced_sevenfold_necessity": "KIN-E-COMPASS-REGISTERS",
+    "missing_law_irreducibility": "KIN-E-COMPASS-REDUCTION",
+    "d4_d5_inversion": "KIN-E-COMPASS-MODALITY",
+    "scalar_sampling": "KIN-E-COMPASS-MEASURE",
+    "quantum_dimension_stacking": "KIN-E-COMPASS-QUANTUM",
+    "forced_titans": "KIN-E-COMPASS-TITANS",
+    "legacy_spelling": "KIN-E-COMPASS-TERM",
+    "worldview_k2": "KIN-E-COMPASS-AUTHORIZATION",
+    "physical_cone_expansion": "KIN-E-COMPASS-CONE",
+    "physical_retrocausal_inflation": "KIN-E-COMPASS-CAUSALITY",
+    "aggregate_ethical_laundering": "KIN-E-COMPASS-ETHICS",
+    "unconditional_power_max": "KIN-E-COMPASS-POWER-MAX",
+})
+
+_COMPASS_AUTHORIZATION_FIELDS = (
+    "principal",
+    "mandate",
+    "scope",
+    "consent",
+    "custody",
+    "expiryOrRevocation",
+    "contestPath",
+    "actor",
+    "consequenceBearer",
+)
+
+_CANONICAL_COMPASS: dict[str, object] = {
+    "schemaVersion": "1.0.0",
+    "status": "DRAFT_EXTERNALLY_UNCALIBRATED",
+    "chart": {
+        "phi": "cot(theta/2)",
+        "nu": "tan(theta/2)",
+        "domain": "0<theta<pi",
+        "product": "ANALYTIC_IDENTITY",
+        "sumBound": "AM_GM_CHART_FACT",
+        "scope": "ANALYTIC_CHART_ONLY",
+    },
+    "nodePower": {
+        "family": "NORMALIZED_MONOTONE_CONJUNCTIVE",
+        "zeroAnnihilator": True,
+        "selectedModel": "PRODUCT",
+        "universality": "CONJECTURAL_REAL_WORLD_FIT",
+        "alternatives": ["MINIMUM", "HARMONIC", "COBB_DOUGLAS"],
+        "rankInterchangeable": False,
+    },
+    "registers": {
+        "sequence": ["D0", "D1", "D2", "D3", "D4", "D5", "D6"],
+        "d4": "CAUSAL_ACTUALITY",
+        "d5": "COUNTERFACTUAL_POSSIBILITY",
+        "necessity": "INTERPRETIVE_SCAFFOLD",
+    },
+    "mu": {
+        "ids": ["mu0", "mu1", "mu2", "mu3", "mu4", "mu5"],
+        "closure": {"id": "r6", "isMu": False, "relation": "INTERPRETIVE_RETURN"},
+        "missingReduction": "CURRENTLY_UNREDUCED",
+        "strongEmergence": "CANDIDATE_PER_CROSSING",
+    },
+    "titans": {
+        "tokens": ["0", "1", "infinity"],
+        "role": "SELECTED_SYMBOLIC_PROJECTIVE_NORMALIZATION",
+        "ordinaryZeroOne": "ARITHMETIC_NUMBERS",
+        "infinity": "PROJECTIVE_POINT",
+        "emblem": "1=0*infinity",
+        "emblemStatus": "NON_ARITHMETIC",
+    },
+    "quantum": {
+        "status": "REMOVABLE_CORRESPONDENCE",
+        "tier": "C",
+        "everett": "NO_FUNDAMENTAL_COLLAPSE",
+        "copenhagen": "INTERPRETATION_SPECIFIC_ACTUALIZATION",
+        "extraSpacetimeDimension": False,
+        "muOrChiIsMeasurement": False,
+        "bornRule": "EVENT_MEASURE",
+    },
+    "soulLoop": {
+        "selectorOutput": ["action", "commitmentReceipt"],
+        "environmentOutput": ["state", "outcomeReceipt"],
+        "modelTokenType": "PRESENT_PHYSICAL_STATE",
+        "representedFutureType": "COUNTERFACTUAL_CONTENT",
+        "coupling": "M_STAR_A",
+        "futureInfluence": "MODEL_MEDIATED",
+        "physicalRetrocausality": False,
+        "physicalCone": "C_BOUNDED",
+        "optionCone": "MODELED_RANKED_COORDINATED_REACHABLE",
+    },
+    "authorization": {
+        "primitive": "AUTHORIZATION_ENVELOPE",
+        "fields": list(_COMPASS_AUTHORIZATION_FIELDS),
+        "worldviewK2": False,
+    },
+    "ethics": {
+        "justiceRequired": True,
+        "individualFloor": "NON_NEGATIVE",
+        "wholeFloor": "NON_NEGATIVE",
+        "aggregateCompensation": False,
+        "strictSyntropy": "BOTH_STRICTLY_POSITIVE",
+        "voluntarySacrifice": "DISTINCT_COSTLY_CLASS",
+    },
+    "powerMax": {
+        "objective": "EXPECTED_INDIVIDUAL_DURABLE_POTENTIAL",
+        "admissibleSet": "JUSTICE_AND_BILATERAL_NONDECREASE",
+        "unconditional": False,
+        "oneShotExtraction": "COUNTEREXAMPLE_WITHOUT_NON_EXTRACTION",
+    },
+    "terminology": {
+        "canonical": "Egregoreotype",
+        "legacyAlias": "Egregorotype",
+        "legacyUse": "COMPATIBILITY_ONLY",
+    },
+}
+
+
+def build_compass_contract() -> dict[str, object]:
+    """Return the closed draft Compass contract without shared mutable state."""
+
+    return copy.deepcopy(_CANONICAL_COMPASS)
+
+
+def _compass_at(value: Mapping[str, object], *path: str) -> Any:
+    current: object = value
+    for component in path:
+        if not isinstance(current, Mapping) or component not in current:
+            return None
+        current = current[component]
+    return current
+
+
+def validate_compass_contract(value: object) -> list[Issue]:
+    """Validate fourteen load-bearing boundaries without calibrating the model."""
+
+    if not isinstance(value, Mapping):
+        return [_issue("compass", "KIN-E-COMPASS-SHAPE", "Compass contract must be an object")]
+
+    shape_issues: list[Issue] = []
+    expected_top = set(_CANONICAL_COMPASS)
+    actual_top = set(value)
+    if actual_top - expected_top or expected_top - actual_top - {"quantum"}:
+        shape_issues.append(_issue(
+            "compass",
+            "KIN-E-COMPASS-SHAPE",
+            "Compass fields are outside the closed contract",
+        ))
+    if value.get("schemaVersion") != "1.0.0" or value.get("status") != (
+        "DRAFT_EXTERNALLY_UNCALIBRATED"
+    ):
+        shape_issues.append(_issue(
+            "compass.status",
+            "KIN-E-COMPASS-SHAPE",
+            "Compass contract must remain the uncalibrated v1 draft",
+        ))
+    for section, expected in _CANONICAL_COMPASS.items():
+        if not isinstance(expected, Mapping) or section not in value:
+            continue
+        actual = value[section]
+        if not isinstance(actual, Mapping) or set(actual) != set(expected):
+            shape_issues.append(_issue(
+                f"compass.{section}",
+                "KIN-E-COMPASS-SHAPE",
+                "Compass section fields are outside the closed contract",
+            ))
+
+    checks: tuple[
+        tuple[str, str, str, Callable[[Mapping[str, object]], bool]], ...
+    ] = (
+        ("chart", COMPASS_MUTATION_CODES["empirical_chart_inflation"],
+         "chart identities are analytic facts only",
+         lambda root: _compass_at(root, "chart") == _CANONICAL_COMPASS["chart"]),
+        ("nodePower", COMPASS_MUTATION_CODES["product_uniqueness"],
+         "the product is selected inside a non-interchangeable conjunctive family",
+         lambda root: _compass_at(root, "nodePower") == _CANONICAL_COMPASS["nodePower"]),
+        ("registers.sequence", COMPASS_MUTATION_CODES["forced_sevenfold_necessity"],
+         "D0-D6 is a selected interpretive scaffold, not a forced decomposition",
+         lambda root: (
+             _compass_at(root, "registers", "sequence")
+             == _compass_at(_CANONICAL_COMPASS, "registers", "sequence")
+             and _compass_at(root, "registers", "necessity") == "INTERPRETIVE_SCAFFOLD"
+         )),
+        ("mu.reductionStatus", COMPASS_MUTATION_CODES["missing_law_irreducibility"],
+         "missing reduction records current non-reduction, not irreducibility",
+         lambda root: (
+             _compass_at(root, "mu", "missingReduction") == "CURRENTLY_UNREDUCED"
+             and _compass_at(root, "mu", "strongEmergence") == "CANDIDATE_PER_CROSSING"
+             and _compass_at(root, "mu", "ids")
+             == ["mu0", "mu1", "mu2", "mu3", "mu4", "mu5"]
+             and _compass_at(root, "mu", "closure")
+             == _compass_at(_CANONICAL_COMPASS, "mu", "closure")
+         )),
+        ("registers.modality", COMPASS_MUTATION_CODES["d4_d5_inversion"],
+         "D4 is actual and D5 is possible",
+         lambda root: (
+             _compass_at(root, "registers", "d4") == "CAUSAL_ACTUALITY"
+             and _compass_at(root, "registers", "d5") == "COUNTERFACTUAL_POSSIBILITY"
+         )),
+        ("quantum.bornRule", COMPASS_MUTATION_CODES["scalar_sampling"],
+         "Born probabilities sample outcomes from an event measure, never a scalar",
+         lambda root: (
+             "quantum" not in root
+             or _compass_at(root, "quantum", "bornRule") == "EVENT_MEASURE"
+         )),
+        ("quantum", COMPASS_MUTATION_CODES["quantum_dimension_stacking"],
+         "quantum interpretations are removable correspondences, not dimensions",
+         lambda root: (
+             "quantum" not in root
+             or all((
+                 _compass_at(root, "quantum", "status") == "REMOVABLE_CORRESPONDENCE",
+                 _compass_at(root, "quantum", "tier") == "C",
+                 _compass_at(root, "quantum", "everett") == "NO_FUNDAMENTAL_COLLAPSE",
+                 _compass_at(root, "quantum", "copenhagen")
+                 == "INTERPRETATION_SPECIFIC_ACTUALIZATION",
+                 _compass_at(root, "quantum", "extraSpacetimeDimension") is False,
+                 _compass_at(root, "quantum", "muOrChiIsMeasurement") is False,
+             ))
+         )),
+        ("titans", COMPASS_MUTATION_CODES["forced_titans"],
+         "Titan tokens are selected roles, not forced generators or arithmetic identities",
+         lambda root: _compass_at(root, "titans") == _CANONICAL_COMPASS["titans"]),
+        ("terminology", COMPASS_MUTATION_CODES["legacy_spelling"],
+         "Egregoreotype is canonical and Egregorotype is compatibility-only",
+         lambda root: _compass_at(root, "terminology") == _CANONICAL_COMPASS["terminology"]),
+        ("authorization", COMPASS_MUTATION_CODES["worldview_k2"],
+         "worldview accountability uses a complete authorization envelope, not K2",
+         lambda root: (
+             _compass_at(root, "authorization", "primitive") == "AUTHORIZATION_ENVELOPE"
+             and _compass_at(root, "authorization", "fields")
+             == list(_COMPASS_AUTHORIZATION_FIELDS)
+             and _compass_at(root, "authorization", "worldviewK2") is False
+         )),
+        ("soulLoop.cones", COMPASS_MUTATION_CODES["physical_cone_expansion"],
+         "the physical cone remains c-bounded while only modeled reach varies",
+         lambda root: (
+             _compass_at(root, "soulLoop", "physicalCone") == "C_BOUNDED"
+             and _compass_at(root, "soulLoop", "optionCone")
+             == "MODELED_RANKED_COORDINATED_REACHABLE"
+         )),
+        ("soulLoop.causality", COMPASS_MUTATION_CODES["physical_retrocausal_inflation"],
+         "represented futures influence present selection through models only",
+         lambda root: (
+             _compass_at(root, "soulLoop", "futureInfluence") == "MODEL_MEDIATED"
+             and _compass_at(root, "soulLoop", "physicalRetrocausality") is False
+             and _compass_at(root, "soulLoop", "modelTokenType")
+             == "PRESENT_PHYSICAL_STATE"
+             and _compass_at(root, "soulLoop", "representedFutureType")
+             == "COUNTERFACTUAL_CONTENT"
+             and _compass_at(root, "soulLoop", "coupling") == "M_STAR_A"
+             and _compass_at(root, "soulLoop", "selectorOutput")
+             == ["action", "commitmentReceipt"]
+             and _compass_at(root, "soulLoop", "environmentOutput")
+             == ["state", "outcomeReceipt"]
+         )),
+        ("ethics", COMPASS_MUTATION_CODES["aggregate_ethical_laundering"],
+         "aggregate gain cannot compensate for destroying either durable potential",
+         lambda root: _compass_at(root, "ethics") == _CANONICAL_COMPASS["ethics"]),
+        ("powerMax", COMPASS_MUTATION_CODES["unconditional_power_max"],
+         "Power-Max optimizes only inside the justice-constrained admissible set",
+         lambda root: _compass_at(root, "powerMax") == _CANONICAL_COMPASS["powerMax"]),
+    )
+    semantic_issues = [
+        _issue(path, code, message)
+        for path, code, message, predicate in checks
+        if not predicate(value)
+    ]
+    return sorted(shape_issues + semantic_issues)
+
+
 __all__ = [
+    "COMPASS_MUTATION_CODES",
     "EVIDENCE_ORDER",
     "INDEPENDENCE_ORDER",
     "MODALITIES",
     "SEMANTIC_EVALUATORS",
     "VERDICT_MATRIX",
+    "build_compass_contract",
     "evaluate_antibody_fixture",
     "evaluate_semantic_fixture",
     "safe_regex_search",
     "scan_antibodies",
     "validate_core_records",
+    "validate_compass_contract",
     "validate_public_queue",
 ]

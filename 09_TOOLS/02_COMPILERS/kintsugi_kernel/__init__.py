@@ -70,11 +70,14 @@ from .schema import (
     validate_schema_instance,
 )
 from .semantics import (
+    COMPASS_MUTATION_CODES,
+    build_compass_contract,
     evaluate_antibody_fixture,
     evaluate_semantic_fixture,
     safe_regex_search,
     scan_antibodies,
     validate_core_records,
+    validate_compass_contract,
     validate_public_queue,
 )
 
@@ -83,6 +86,7 @@ __all__ = [
     "BASELINE_COMMAND",
     "BaselineResult",
     "COLLECT_COMMAND",
+    "COMPASS_MUTATION_CODES",
     "DEFAULT_CONTRACT",
     "ERROR_RE",
     "EXCEPTION_RE",
@@ -106,6 +110,7 @@ __all__ = [
     "canonical_json_bytes",
     "build_review_target_value",
     "build_validation_bundle_value",
+    "build_compass_contract",
     "compare_baseline",
     "compute_review_subject_digest",
     "evaluate_antibody_fixture",
@@ -140,6 +145,7 @@ __all__ = [
     "text_hash",
     "transition_core_value",
     "validate_contract",
+    "validate_compass_contract",
     "validate_core_records",
     "validate_named_definition",
     "validate_schema_document",
