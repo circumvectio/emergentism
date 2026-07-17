@@ -21,6 +21,15 @@ rosetta:
 
 # MF-68: The Prior Probability of Ektropy
 
+> **[金] Kintsugi authority seam — measure depends on the chosen measure
+> (2026-07-18).** The area calculation is `[A]` only for the explicitly defined
+> band, parametrization, and uniform surface-area measure. It does not supply a
+> prior over real systems, show that ektropy is rare, prove intention, or derive
+> F5, ethics, Titans, or seven levels. D0 and D6 are not pole-identical; the
+> framework joins D6 back to D0 only through the interpretive non-μ edge `r₆`.
+> Every probabilistic or ontological sentence below is therefore `[I]/[C]` and
+> requires an independently justified sampling process.
+
 ## The Geometric Measure of High Projected-Ektropy States on S²
 
 **VIVEKA Mathematical Foundations Series — Sphere Derivations**
@@ -98,7 +107,7 @@ Total sphere area: A = 4π (θ₁ = 0, θ₂ = π). [A]
 
 ### 2.2 Note on the VIVEKA Parametrization
 
-The VIVEKA sphere uses only the first quadrant of S² for the Φ-V-P_band projected dynamics (θ ∈ [0, π/2]), representing one hemisphere. The other hemisphere is related by the involution z → 1/z (MF-44). For the area fraction calculation, we work with the full sphere and recognize that P_band(θ) = P_band(π − θ) by the pole identification D0 = D6. The high projected-ektropy band appears in both hemispheres symmetrically. [I]
+The VIVEKA sphere uses only the first quadrant of S² for the Φ-V-P_band projected dynamics (θ ∈ [0, π/2]), representing one hemisphere. The other hemisphere is related by the involution z → 1/z (MF-44). For this area calculation, the model imposes the reflection `P_band(θ)=P_band(π−θ)`. That symmetry does not identify D0 with D6; the interpretive return is the separate edge `r₆`. [I]
 
 ### 2.3 Area of the High Projected-Ektropy Band
 

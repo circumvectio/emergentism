@@ -22,6 +22,16 @@ rosetta:
 # THE ARCHETYPE OPERATOR PROTOCOL
 ## Executive Boundaries, Gods, Demon, and Witnesses — The Canonical Deep Grammar
 
+> **[金] Kintsugi authority seam — operator grammar, not ontology or moral
+> license (2026-07-18).** These archetypes are selected `[I/T]` dispatch labels,
+> not entities, personalities, diagnoses, castes of human worth, or geometric
+> necessities derived from `φν=1`. The chart does not force seven roles or an
+> equator-ward dynamics. No operator name, quadrant, target label, Nash slogan,
+> or aggregate `ΣΔ` authorizes harm. Justice must keep each individual and the
+> whole separately non-decreasing and requires a scoped, revocable, contestable
+> `AuthorizationEnvelope`; K2 applies only to private DAVs. Any contradictory
+> “impossible,” “always,” or universal authority claim below is superseded.
+
 **Status:** Active — Canonical
 **Evidence Tier:** [S] Structural (definitional governance of the framework's operator core state)
 **Depends on:** 00_NAMING_RECONCILIATION.md, 00_THE_HONEST_POSITION.md, 00_THE_DERIVATION.md, 06_AGENTS.md
@@ -87,7 +97,10 @@ Gods are MIXED-SIGN restorative transfers. They are the four orthogonal moves on
 | **Kālī** | `(+ΔV_self, −ΔΦ_false)` | ↓Φ_false | Recover viability by cutting false coherence — the immune truth-function | The Ego-Slayer, the Surgeon, the one who names what is not real | YES — with 6-gate test |
 | **Kali** | `(+ΔΦ_self, −ΔV_other)` | ↓V_other | The fourth mixed-sign slot. Extract capability, drain the other | The Extractor, the Immune Response, the Demon | CONSTRAINED |
 
-**The Giving Dyad (Arjuna + Kṛṣṇa):** Constructive, but not good by name. These are the operators of peace, construction, teaching, and cooperation when the transfer raises `P_node,i` and `P_node,H` together under `η = 0`; `ΣΔB / ΣΔP_node > 0` is the widest-boundary audit. If a "gift" creates dependency, burns the actor below viability, or hides a boundary loss, A2 marks the outcome as extractive.
+**The Giving Dyad (Arjuna + Kṛṣṇa):** Constructive, but not good by name. A
+transfer is admissible only when the Justice envelope and the separate
+individual/whole durable-potential tests pass. Aggregate `ΣΔB` or
+`ΣΔP_node > 0` may be descriptive but can never compensate for a harmed bearer.
 
 [S] **The Taking Dyad (Kālī + Kali):** Context-dependent. Kālī targets false-Φ only (not truth). Kali targets V of the other only at η > 0 (not cooperators). These are the operators of war, surgery, immune defense, and boundary enforcement.
 
@@ -110,7 +123,9 @@ Kali-slot fires ⟹ η_target > 0 (target must be a confirmed defector)
 η_target = 0 ⟹ Kali-slot is PARALYZED (geometrically excluded at the equator)
 ```
 
-This is not a moral rule. It is the Nash equilibrium at B = 1. At the equator, no agent can improve its position by extracting from another. The Demon IS the name for extraction. Extraction IS geometrically impossible at balance.
+This is a declared firing rule, not a theorem of geometry or a universal Nash
+equilibrium. Extraction is physically and strategically possible; the Justice
+envelope excludes it, and repeated-game conditions may make it dominated.
 
 **Cross-trophic clarification:** The Demon operates naturally across trophic levels (eagle eats rabbit). This is not extraction in the η > 0 sense — it is ecological energy flow. The constraint applies WITHIN the same trophic level (same-species cooperation). See Proof 4.
 

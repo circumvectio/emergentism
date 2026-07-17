@@ -183,6 +183,28 @@ class TopologyContractTests(unittest.TestCase):
             representation_edges,
             {"e-model-option-a", "e-model-option-b", "e-rank-option-a", "e-rank-option-b"},
         )
+        represented_content = next(
+            edge for edge in self.topology["edges"] if edge["id"] == "e-d5-model-content"
+        )
+        self.assertEqual(
+            (
+                represented_content["from"],
+                represented_content["to"],
+                represented_content["modality"],
+            ),
+            ("d4-model-token", "d5", "possible"),
+        )
+        mutant = copy.deepcopy(self.topology)
+        reversed_edge = next(
+            edge for edge in mutant["edges"] if edge["id"] == "e-d5-model-content"
+        )
+        reversed_edge["from"], reversed_edge["to"] = "d5", "d4-model-token"
+        self.assertTrue(
+            any(
+                "present D4 model token to D5 possible content" in error
+                for error in self.api.validate_topology(mutant, REPO_ROOT)
+            )
+        )
 
     def test_every_d4_and_d5_element_obeys_one_modality(self):
         for element in self.topology["nodes"] + self.topology["edges"]:
@@ -386,6 +408,44 @@ class RenderingContractTests(unittest.TestCase):
             root = ET.fromstring(self.api.render_view(self.topology, view_id, self.digest))
             ids = [item.attrib["id"] for item in root.iter() if "id" in item.attrib]
             self.assertEqual(len(ids), len(set(ids)), view_id)
+
+    def test_rendered_edges_preserve_possible_dashes_and_actual_solids(self):
+        expectations = {
+            "proof": {
+                "possible": ("e-mu4-d5", "e-d5-mu5", "e-option-a-chi"),
+                "actual": ("e-d4-mu4", "e-mu5-d6", "e-selector-chi"),
+            },
+            "emblem": {
+                "possible": ("e-model-option-a", "e-option-a-chi"),
+                "actual": (
+                    "e-commitment-action",
+                    "e-action-outcome",
+                    "e-outcome-model-feedback",
+                ),
+            },
+        }
+        topology_edges = {edge["id"]: edge for edge in self.topology["edges"]}
+        for view_id, groups in expectations.items():
+            root = ET.fromstring(
+                self.api.render_view(self.topology, view_id, self.digest)
+            )
+            rendered_by_id = {
+                item.attrib["id"]: item
+                for item in root.iter()
+                if "id" in item.attrib
+            }
+            for edge_id in groups["possible"]:
+                with self.subTest(view=view_id, edge=edge_id):
+                    self.assertEqual(topology_edges[edge_id]["modality"], "possible")
+                    self.assertTrue(
+                        rendered_by_id[edge_id].attrib.get("stroke-dasharray")
+                    )
+            for edge_id in groups["actual"]:
+                with self.subTest(view=view_id, edge=edge_id):
+                    self.assertEqual(topology_edges[edge_id]["modality"], "actual")
+                    self.assertNotIn(
+                        "stroke-dasharray", rendered_by_id[edge_id].attrib
+                    )
 
     def test_generated_files_are_current_and_repeat_generation_is_byte_stable(self):
         self.assertEqual(self.api.check_outputs(TOPOLOGY, REPO_ROOT), [])

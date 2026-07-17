@@ -21,7 +21,18 @@ rosetta:
 
 # MF-70: Kālī Closes the Sphere
 
-## The Topological Necessity of Retaliatory Capacity
+## A Topological Metaphor for Retaliatory Capacity
+
+> **[金] Kintsugi authority seam — topology does not authorize retaliation
+> (2026-07-18).** Removing a chosen region changes a chosen state-space model;
+> that fact neither makes retaliation necessary nor makes an action lawful.
+> Retaining Q3 as a representable state is distinct from authorizing an agent
+> to enter it. Tit-for-Tat is a conditional repeated-game strategy, not a
+> universal evolutionary dominant strategy or topological theorem. Any
+> defensive act must pass the bearer-complete Justice and AuthorizationEnvelope
+> tests, naming payer, beneficiary, evidence, reversibility, and contest path.
+> The “lose the sphere/everything” and geometric-necessity claims below are
+> superseded and preserved only as `[I]` metaphor.
 
 **VIVEKA Mathematical Foundations Series — Sphere Derivations**
 **Document ID:** MF-70 | **Version:** 1.0 | **Status:** Core Result
@@ -36,7 +47,11 @@ The VIVEKA value alignment divides the state space of S² into four quadrants ba
 
 This paper shows that the exclusion of Q3 creates a topological problem: removing a quadrant from S² punctures the sphere, reducing it to a disk (genus 0 with boundary, contractible but not compact) or equivalently making it homeomorphic to ℝ² — an open plane without the compactification that makes the framework work.
 
-The resolution: Q3 is not universally excluded. It is excluded **against cooperators** (K* = 0 when the other agent is in Q1/Q2/Q4). Against defectors — agents already in Q3 — retaliatory Q3 action is not only permitted but **topologically necessary**. Without it, the sphere cannot close. The compactification that creates S² from ℂ requires the full quadrant structure. Remove Q3 absolutely and you lose the sphere. Lose the sphere and you lose everything: equator, levels, operators, balance, ½.
+The repaired distinction is representational: Q3 remains in the modeled state
+space, while entry into it is separately governed. Compactification requires
+the point-set representation, not retaliatory behavior. A defensive response
+may be considered only under declared game evidence and accountable Justice;
+the topology itself grants no permission.
 
 Kālī is the immune system of the sphere. She does not create, preserve, transform, or refactor. She closes the topology by ensuring that parasitic punctures are sealed. Rapoport's Tit-for-Tat is the behavioral description of this topological function: Nice (no unprovoked Q3), Retaliatory (Q3 against Q3), Forgiving (return to Q1 when provocation ceases), Transparent (the rule is public).
 
@@ -142,11 +157,18 @@ Kālī IS the immune system of the cooperation topology. She is not a fifth stra
 
 **Step 2:** S² with the equatorial Φ-V coordinate system has four quadrants covering S². Each quadrant is an open set. Together with their boundaries, they cover S² completely. [A]
 
-**Step 3:** The involution z → 1/z maps Q1 to Q3 and Q2 to Q4 (and vice versa). This involution is the map that identifies the two poles, creating the compactification. Without Q3, the image of Q1 under the fundamental involution does not exist. [A]
+**Step 3:** Under the selected quadrant convention, the involution `z→1/z`
+maps Q1 to Q3 and Q2 to Q4 (and vice versa). It exchanges `0` and `∞`; it does
+not identify them or create the compactification. Removing Q3 makes the chosen
+subspace non-closed under this map. [A for the map; I for the quadrant labels]
 
-**Step 4:** If the image of Q1 under z → 1/z is removed, the involution is not defined on Q1. The pole identification D0 = D6 fails. The compactification that creates S² from ℂ is incomplete. [A]
+**Step 4:** If Q3 is removed, the restricted state space no longer carries that
+involution as an endomorphism. This says nothing about D0/D6 identity; the
+framework's D6 return is the separate interpretive edge `r₆:D6↝D0`. [A/I]
 
-**Step 5:** Therefore, Q3 must exist on S² for S0 to hold. ∎ [A]
+**Step 5:** Therefore Q3 must remain representable if this selected four-region
+model is to remain closed under its chosen involution. No behavioral permission
+follows. ∎ [S/I]
 
 ### 4.2 The Restriction on Q3 Entry
 

@@ -20,6 +20,15 @@ evidence_tier: "[G]/[S] the 4-mixed + 3-Titan exhaustiveness of the 2×2 self/ot
 
 # The Exhaustion of the Game
 
+> **[金] Kintsugi authority seam — conditional exhaustion (2026-07-18).**
+> “Exhaustion” below means completeness inside a deliberately selected
+> two-party, two-factor sign grammar. It is not a theorem that all action,
+> nature, morality, Titans, or ontology has seven forms, and it is not derived
+> from `φν=1`. The mixed-sign entries and boundary frames remain useful `[I]`
+> vocabulary only when their variables and Justice constraints are declared.
+> D4 is actual action/record; D5 is merely possible content. No move-name or
+> aggregate balance authorizes harm to an individual bearer.
+
 ## Two Gods, Two Demons, and the Titan Boundary that Frames the Board
 
 > **The one line.** The seven positions are not *collected*, they are *generated*: exhaust `{self, other} × {Φ, V}` and you get exactly four transfers (2 give, 2 take) and three same-sign boundaries (the Titans) — *no fifth mixed slot exists* without adding an axis. The mixed-sign game is played *in* the field; the Titan-formulas hold *at* the boundary. Frame, not move. `[G]/[S]`

@@ -21,7 +21,17 @@ rosetta:
 
 # MF-289: THE HARD PROBLEM IS i ∉ ℝ
 
-## Experience as Algebraic Irreducibility
+> **[金] Kintsugi authority seam — algebraic analogy, not irreducibility proof
+> (2026-07-18).** `i∉ℝ` is an algebraic fact; it does not show that experience
+> is nonphysical, strongly emergent, or irreducible. D4 contains actual embodied
+> experience and reports as well as matter and action; D5 contains modeled
+> possible contents. A successful reduction would reclassify a candidate μ
+> crossing as weak emergence without damaging the scaffold. Born probabilities,
+> quantum collapse, and the real/complex relation do no evidentiary work for a
+> theory of consciousness here. Contrary claims below are superseded and may
+> be read only as `[I]/[C]` metaphor.
+
+## Experience and an Algebraic Irreducibility Analogy
 
 **Emergentism.org · VIVEKA Mathematical Foundations**
 **Depends on:** MF-283 (Orthogonality Theorem), MF-152 (Hard Problem Is a Theorem), MF-286 (μ-Limit Crossing)
@@ -147,7 +157,10 @@ Half-right. They are orthogonal (independent, irreducible). But they are not sep
 
 "Consciousness is everywhere." → "Every real number is a complex number."
 
-Right as an algebraic containment analogy: ℝ ⊂ ℂ. Every physical entity can be represented as a complex value, even when Im ≈ 0. The jump from representation to literal consciousness is not automatic. The framework's `[I]` answer to why rocks do not seem conscious and humans do is the μ-limit: D5 bandwidth, antenna tuning, and the capacity for agency / selection differ in degree and organization.
+Right as an algebraic containment analogy: `ℝ⊂ℂ`. Physical models often use
+complex values, but representation does not imply literal consciousness. A μ
+record may organize a testable `[C]` comparison of different capacities; it is
+not the framework's answer to why any system is conscious.
 
 ### 4.4 Idealism
 
@@ -157,7 +170,12 @@ Structurally correct inside the analogy: ℝ is a restriction of ℂ. The real a
 
 ### 4.5 The Framework's Position: Algebraic Monism
 
-One number system: ℂ. Two axes: real (D4 matter / V) and imaginary (D5 possibility / selection / Φ). Orthogonal, irreducible, but aspects of one structure. Neither axis is more fundamental inside the algebra — ℂ requires both. The lived-interior reading of that D5 axis is consciousness `[I]`; it is not publicly proved to be "the full space." Physics studies the real-axis restriction; the framework uses the complex plane as the disciplined analogy for why the first-person register is not derivable from the third-person register by real-axis operations alone.
+One number system: `ℂ`; two algebraic axes. The framework optionally maps D4
+actual records to the real-axis image and D5 modeled possibilities to the
+imaginary-axis image. Actual lived experience remains D4. Neither this mapping
+nor the algebra proves that consciousness is an axis, that physics is only a
+real restriction, or that first-person phenomena are irreducible to physical
+processes.
 
 ---
 

@@ -24,6 +24,17 @@ evidence_tier: "[S] for named domain scales where independently attested; [S] fo
 
 # THE GENERATIVE TABLE
 
+> **[金] Kintsugi authority seam — projection table, not causal law
+> (2026-07-18).** This is a Rosetta translation lens. The seven-row catalogue is
+> selected, not generated or forced by `φν=1`, the Titans, or nature. Each
+> domain column retains its own evidence and may fail independently; visual
+> alignment supplies neither causal generation nor confirmation by repetition.
+> D4 is causal actuality and D5 modeled possibility. Pole tokens are boundary
+> emblems, not ordinary operands, persons, or causal particles; D6 returns to
+> D0 only through the interpretive non-μ edge `r₆`, never literal identity.
+> Any hereditary, caste-worth, universal, or “rows hold because the sphere
+> holds” reading is rejected.
+
 ## The Operator Column and its S² Geometry
 
 **Status:** Corrected definitive version
@@ -74,7 +85,10 @@ L7   B -> 0      Near north pole. Viṣṇu. The seer. The fork.
 Linf B = 0       North pole. THE BOUNDARY. Trimūrti. Eternity.
 ```
 
-L0 and Linf are the same. L1 and L7 are mirrors. L2 and L6 are mirrors. L3 and L5 are mirrors. L4 is the axis of symmetry -- the only point that is its own reflection. The poles are the boundary. The equator is the life.
+L0 and Linf are distinct pole limits joined only by the interpretive return
+image `r₆`. L1/L7, L2/L6, and L3/L5 are selected chart mirrors; L4 is the
+equality point of that normalization. These model relations do not establish
+biological, social, or moral hierarchy.
 
 ---
 

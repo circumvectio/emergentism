@@ -132,8 +132,12 @@ More precisely, it authorizes the commitment, scope, and exposure to risk. It
 does not authorize or manufacture the realized outcome, which remains the
 world-facing receipt.
 
-If a field is absent, contradictory, expired, or unverifiable, commitment fails
-closed with a refusal/unavailability receipt. The selector does not manufacture
+If a field is absent, contradictory, expired, or unverifiable, a governed
+selector fails closed. When no action is attempted, the commitment receipt is
+`refused`; if an actor attempts the action despite the defect, it is recorded
+as `unauthorized_attempt` and remains visible to the descriptive causal loop.
+An authorization defect never yields `unavailable`: that status is reserved
+for physical unavailability with no attempt. The selector does not manufacture
 an outcome.
 
 ---

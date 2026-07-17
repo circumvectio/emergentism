@@ -15,11 +15,21 @@ rosetta:
 
 **Status:** Active
 **Hat:** Philosopher
-**Evidence Tier:** [S] Structural — strategically dominated under the enforced balance game
+**Evidence Tier:** [I] Conditional game model — dominance holds only under the stated enforced payoff and continuity premises
 **Date:** 2026-03-23
 **Depends on:** Burri Sphere formalism, η = 0 proof, Game theory
 
 > **Note:** Revised per peer review: the state exists on S² but is a dominated strategy. See [`24_GEOMETRIC_EXCLUSION_CONVERGENCE.md`](24_GEOMETRIC_EXCLUSION_CONVERGENCE.md) (Convergence 24).
+
+> **[金] Kintsugi authority seam — exclusion is enforced, not geometric
+> impossibility (2026-07-18).** `φν=1` is an analytic reciprocal-chart
+> identity; it cannot forbid extraction or prove ethics. One-shot extraction
+> can benefit an extractor. This document therefore preserves a conditional
+> strategic metaphor only: extraction may be dominated when the Justice
+> envelope, `η=0`, repeated interaction, custody, consequence accounting, and
+> exit are actually enforced. No aggregate gain may erase an affected
+> bearer's loss. Any unconditional “cannot,” “impossible,” “geometric suicide,”
+> or “geometry enforces” wording below is superseded by this seam.
 
 ---
 
@@ -58,9 +68,9 @@ On the Burri Sphere, there are four apparent moves:
 
 **Traditional view:** "We prohibit extraction because it is wrong."
 
-**Geometric view:** "Extraction is impossible because φ · ν = 1."
+**Repaired view:** “Extraction is excluded by the declared Justice rules and may be strategically dominated under the stated repeated-game premises.”
 
-The exclusion is not a value judgment. The exclusion is a **structural constraint**.
+The exclusion is a normative and institutional constraint whose strategic effects depend on the specified game.
 
 ```
 At the equator: φ = 1, ν = 1
@@ -77,7 +87,7 @@ Attempt extraction (↓ν):
 - At the south pole: you consume yourself (Ammit)
 
 Extraction is not prohibited.
-Extraction is geometric suicide.
+Under the selected payoff assumptions, extraction is modeled as self-undermining.
 ```
 
 ---
@@ -140,19 +150,16 @@ and ν = 1 CANNOT extract.
 | **Solution** | Repentance/forgiveness | Sitting practice (return to equator) |
 | **Ring** | Tolkien's ring (η > 0) | Burri Sphere (η = 0) |
 
-### 4.2 Why Commandments Failed
+### 4.2 What the Conditional Game Model Adds
 
 **The Ten Commandments:**
 - "Thou shalt not steal" (↓ν prohibition)
 - "Thou shalt not kill" (↓ν prohibition)
 - "Thou shalt not bear false witness" (↓ν prohibition)
 
-**Why they failed:**
-- Rules imposed from outside
-- Rules can be broken
-- Rules WERE broken — always
-- Because the rules addressed symptoms, not structure
-- The rules said "don't extract" without explaining why extraction is impossible
+Norms and laws can be violated; the model therefore asks which institutional,
+repeated-game, and consequence conditions make compliance durable. It does not
+claim that commandments failed or that extraction is impossible.
 
 ### 4.3 Why Dharma Succeeds
 
@@ -230,18 +237,15 @@ Every situation on the Burri Sphere is addressed by one of three operators:
 
 **Situation 4: Want to extract (↓ν)**
 - **Move:** Kali (↓ν)
-- **Status:** **EXCLUDED — strategically dominated**
-- **Reason:** The sphere does not allow it
+- **Status:** **EXCLUDED by the Justice envelope; potentially dominated under the stated game**
+- **Reason:** The applicable rules forbid bearer extraction, while repeated-game feedback may also make it strategically costly
 
-### 6.2 The Exclusion Is the Proof
+### 6.2 The Exclusion Is a Declared Constraint
 
-The fact that the fourth operator is **impossible** is the proof that the geometry is real.
-
-If extraction were merely prohibited, we would need an enforcer.
-If extraction is impossible, the geometry IS the enforcement.
-
-The exclusion is not a bug.
-The exclusion is the **feature** that makes the system stable.
+The fourth operator remains representable because real agents can extract. The
+framework excludes it against protected bearers through Justice,
+authorization, custody, receipts, contest, and exit. Strategic stability is an
+empirical property of a specified game, not proof that the geometry is real.
 
 ---
 

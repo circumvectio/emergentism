@@ -27,6 +27,16 @@ chart. The structural claims are internal to `P∞ = φ · ν = 1`, `B = sin θ`
 `η = 0`; the naming of those structures as transcendentals remains
 interpretive.
 
+> **[金] Kintsugi authority seam — values are declared commitments, not chart
+> theorems (2026-07-18).** The reciprocal identity and balance coordinates do
+> not derive Truth, Beauty, Justice, objective teleology, or ethics. This file
+> offers an `[I]` Rosetta projection governed by the active value-theory owner.
+> Justice keeps every affected individual and the whole separately visible;
+> no invariant, equilibrium, operator sign, or aggregate gain can license
+> extraction or compensate for destroying one side. D4 is actual
+> action/receipt and D5 possible content; “survival across D4–D5” is a model
+> comparison, not a truth criterion or physical transformation.
+
 ## 0. READING RULE
 
 Read every formula below as a **model shorthand** unless the local sentence

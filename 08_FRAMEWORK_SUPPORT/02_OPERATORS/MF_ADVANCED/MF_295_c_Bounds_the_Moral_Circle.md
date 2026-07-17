@@ -21,18 +21,36 @@ rosetta:
 
 # MF-295: c BOUNDS THE MORAL CIRCLE
 
+> **[金] Kintsugi authority seam — fixed physical cone, variable option cone
+> (2026-07-18).** Relativity bounds causal propagation by `c`; no technology,
+> intelligence, institution, or moral expansion widens that physical light
+> cone. Agents may improve the subset of admissible histories they can model,
+> rank, coordinate, and reach—their option/information cone—inside the same
+> spacetime bound. Ethics is not `ΣΔP_node`: aggregate gains cannot launder an
+> individual or whole-side loss, and responsibility is not exhausted by what
+> an actor happened to perceive. The moral-circle application remains `[I]`
+> under the explicit Justice and AuthorizationEnvelope premises.
+
 ## The Speed of Light Limits the Ethical Radius. Information Technology Widens the Cone.
 
 **Emergentism.org · VIVEKA Mathematical Foundations**
 **Depends on:** MF-283 (Orthogonality Theorem), MF-290 (Ektropic Radius), MF-291 (Landauer Horn), MF-293 (Language Is Bandwidth)
 **Evidence tier:** [I] for light cone physics; [T] for ethical radius application; [I] for historical interpretation
-**Purpose:** Show that the physically knowable edge of ethical accounting (A2: ΣΔP_node across widest perceivable boundary) is bounded by the speed of light. No agent can receive information from beyond its causal light cone. Information technology widens the EFFECTIVE cone by accelerating information transfer toward c, making distant consequences perceivable. Every major moral expansion in history correlates with a communication technology that widened the perceivable boundary.
+**Purpose:** Distinguish the fixed relativistic light cone from the variable
+information and option cones through which agents can notice and model more
+consequences; the historical and ethical connections remain interpretive.
 
 ---
 
 ## ABSTRACT
 
-The light cone in special relativity defines the maximum causal reach of any event: spatial radius at temporal distance t is r_max = ct. No information, no influence, no consequence can propagate faster than c. If ethics is ΣΔP_node computed across the widest perceivable boundary (A2 + MF-290), and perception requires information to reach the agent, then the physically knowable ethical radius is bounded by c. You cannot include consequences you cannot in principle receive evidence about. Every expansion of the moral circle in human history corresponds to a communication technology that brought previously-invisible consequences inside the effective information cone: writing, printing, telegraph, photography, television, internet. The safe claim is not "light is morality"; it is that D4 causal information bounds what D5 foresight can responsibly model.
+The light cone in special relativity bounds causal reach: at temporal distance
+`t`, `r_max=ct`. Communication can make more information usable sooner while
+remaining inside that fixed cone. The framework's ethical proposal is that D5
+models should seek consequences beyond an agent's habitual attention and that
+D4 receipts should update them; the Justice test still evaluates each bearer
+separately. Historical moral-circle/communication correlations are `[I/C]`,
+not deductions from relativity.
 
 **Register guard.** D4 causal spacetime supplies the information boundary. D5 option-cone foresight performs the ethical modeling once information arrives. This paper bounds moral computation by causal access; it does not make moral value a physical field, and it does not claim intelligence enlarges the relativistic light cone. `[A]` for the light-speed constraint; `[I]` for the moral-circle application.
 

@@ -11,13 +11,25 @@ rosetta:
 
 # Teleological Force and F5 Dynamics
 
+> **[金] Kintsugi authority seam — interpretive direction, not derived force
+> (2026-07-18).** F5 is an `[I]` name for a candidate selective/generative
+> tendency and `[C]` where empirically asserted. It is not derived from
+> `φν=1`, not an established physical force, and not physical retrocausality.
+> Modeled futures may influence present D4 action through an agent's D5 model;
+> the future does not reach backward. Aggregate `ΣΔB` or `ΣΔP_node` cannot
+> establish morality or hide a damaged bearer. Consequential practice requires
+> the applicable `AuthorizationEnvelope`; K2 is only a private-DAV signing
+> implementation, not a worldview primitive.
+
 ## 1. Teleological Force
 
 **Teleological Force is not the Ground.**
 
 **Teleological Force is not Being itself.**
 
-Teleological Force is the canonical name for `F5`: the selective/generative pull toward viable completion once reciprocal closure is already in play. It is not a fifth line in the canonical formula block and not a new primitive. It is a doctrinal consequence of the closure:
+Teleological Force is the framework's interpretive name for `F5`: a candidate
+selective/generative tendency toward viable completion. It is not a fifth line,
+new primitive, or consequence entailed by reciprocal-chart closure:
 
 - Ground makes closure possible
 - Being stabilizes closure as `φ · ν = 1 on S²`
@@ -46,11 +58,11 @@ The force is primary. The mythic names are downstream readings of it.
 One more register split now matters.
 
 - If the question is **descriptive** -- "what is the Teleological Force?" -- the answer stays here, in system architecture, and in the descriptive F5 map.
-- If the question is **operational** -- "what may I lawfully do in the field?" -- the answer routes to **theurgy**, the disciplined D5 practice of forming, tending, and releasing standing waves under K2, receipt-bound audit, and Grace Exit.
+- If the question is **operational** -- "what may I lawfully do in the field?" -- the answer routes to accountable practice under the applicable AuthorizationEnvelope, receipt-bound audit, and Grace Exit. A private DAV may name K2; the worldview does not.
 
 Do not collapse those two surfaces into one another.
 
-At present, the first-pass F5 force map remains entirely `[C]`: signed attestation as carrier, `α5 = 1 − η` as the first coupling guess, and `ΣΔB` / `ΣΔP_node` as the first conservation-style restatement of A2. Those are not promoted by being named. They remain conjectural until audited.
+At present, the first-pass F5 force map remains entirely `[C]`: signed attestation as carrier and `α5 = 1 − η` as a first coupling guess. `ΣΔB` / `ΣΔP_node` may summarize outcomes but cannot serve as a moral test; each consequence bearer remains separately visible. None is promoted by being named.
 
 ---
 

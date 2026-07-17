@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg data-topology-sha256="1ddec429925a50023cf6d04f8ff80e339eca55effdbb9862040426334e3aefae" height="1000" role="img" viewBox="0 0 1600 1000" width="1600" xmlns="http://www.w3.org/2000/svg">
+<svg data-topology-sha256="68766d972aa5b4018e0ecc012019d074c48bbef49ec1cc6a9d4ddf08e369761c" height="1000" role="img" viewBox="0 0 1600 1000" width="1600" xmlns="http://www.w3.org/2000/svg">
   <title>The Burri Rules - Obsidian Emblem</title>
-  <metadata id="topology-sha256">sha256:1ddec429925a50023cf6d04f8ff80e339eca55effdbb9862040426334e3aefae;view:emblem</metadata>
+  <metadata id="topology-sha256">sha256:68766d972aa5b4018e0ecc012019d074c48bbef49ec1cc6a9d4ddf08e369761c;view:emblem</metadata>
   <defs>
     <marker id="arrow-actual" markerHeight="8" markerWidth="8" orient="auto" refX="7" refY="4"><path d="M 0 0 L 8 4 L 0 8 Z" fill="#332d29"/></marker>
     <marker id="arrow-possible" markerHeight="8" markerWidth="8" orient="auto" refX="7" refY="4"><path d="M 0 0 L 8 4 L 0 8 Z" fill="#526879"/></marker>
@@ -11,45 +11,45 @@
   <text fill="#e7dcc2" font-family="sans-serif" font-size="28" font-weight="800" letter-spacing="2.2" text-anchor="start" x="60" y="58">THE BURRI RULES</text>
   <text fill="#9fb4bf" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="start" x="60" y="84">Obsidian emblem · derived compression</text>
   <text fill="#e8c96b" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="1" text-anchor="end" x="1540" y="58">FRAME · CROSS · COMMIT · RECEIVE · RETURN · COMPOSE</text>
-  <text fill="#9fb4bf" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="end" x="1540" y="82">sha256 1ddec429925a5002…</text>
+  <text fill="#9fb4bf" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="end" x="1540" y="82">sha256 68766d972aa5b401…</text>
   <g data-primitive="mu-crossing" id="d-register-spine">
-  <line marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="112" x2="163" y1="175" y2="175"/>
-  <line marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="217" x2="268" y1="175" y2="175"/>
+  <line id="e-d0-mu0" marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="112" x2="163" y1="175" y2="175"/>
+  <line id="e-mu0-d1" marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="217" x2="268" y1="175" y2="175"/>
   <g data-register="D0" id="d0">
   <rect fill="#171d22" height="50" rx="12" stroke="#e7dcc2" stroke-width="2" width="84" x="28" y="150"/>
   <text fill="#e7dcc2" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle" x="70" y="173">D0</text>
   <text fill="#9fb4bf" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle" x="70" y="192">ground</text>
   </g>
-  <line marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="352" x2="403" y1="175" y2="175"/>
-  <line marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="457" x2="508" y1="175" y2="175"/>
+  <line id="e-d1-mu1" marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="352" x2="403" y1="175" y2="175"/>
+  <line id="e-mu1-d2" marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="457" x2="508" y1="175" y2="175"/>
   <g data-register="D1" id="d1">
   <rect fill="#171d22" height="50" rx="12" stroke="#e7dcc2" stroke-width="2" width="84" x="268" y="150"/>
   <text fill="#e7dcc2" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle" x="310" y="173">D1</text>
   <text fill="#9fb4bf" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle" x="310" y="192">distinction</text>
   </g>
-  <line marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="592" x2="643" y1="175" y2="175"/>
-  <line marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="697" x2="748" y1="175" y2="175"/>
+  <line id="e-d2-mu2" marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="592" x2="643" y1="175" y2="175"/>
+  <line id="e-mu2-d3" marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="697" x2="748" y1="175" y2="175"/>
   <g data-register="D2" id="d2">
   <rect fill="#171d22" height="50" rx="12" stroke="#e7dcc2" stroke-width="2" width="84" x="508" y="150"/>
   <text fill="#e7dcc2" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle" x="550" y="173">D2</text>
   <text fill="#9fb4bf" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle" x="550" y="192">configuration</text>
   </g>
-  <line marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="832" x2="883" y1="175" y2="175"/>
-  <line marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="937" x2="988" y1="175" y2="175"/>
+  <line id="e-d3-mu3" marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="832" x2="883" y1="175" y2="175"/>
+  <line id="e-mu3-d4" marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="937" x2="988" y1="175" y2="175"/>
   <g data-register="D3" id="d3">
   <rect fill="#171d22" height="50" rx="12" stroke="#e7dcc2" stroke-width="2" width="84" x="748" y="150"/>
   <text fill="#e7dcc2" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle" x="790" y="173">D3</text>
   <text fill="#9fb4bf" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle" x="790" y="192">change</text>
   </g>
-  <line marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="1072" x2="1123" y1="175" y2="175"/>
-  <line marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="1177" x2="1228" y1="175" y2="175"/>
+  <line id="e-d4-mu4" marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="1072" x2="1123" y1="175" y2="175"/>
+  <line id="e-mu4-d5" marker-end="url(#arrow-light)" stroke="#9fb4bf" stroke-dasharray="6 5" stroke-width="2" x1="1177" x2="1228" y1="175" y2="175"/>
   <g data-register="D4" id="d4">
   <rect fill="#171d22" height="50" rx="12" stroke="#e7dcc2" stroke-width="2" width="84" x="988" y="150"/>
   <text fill="#e7dcc2" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle" x="1030" y="173">D4</text>
   <text fill="#9fb4bf" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle" x="1030" y="192">actual</text>
   </g>
-  <line marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="1312" x2="1363" y1="175" y2="175"/>
-  <line marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="1417" x2="1468" y1="175" y2="175"/>
+  <line id="e-d5-mu5" marker-end="url(#arrow-light)" stroke="#9fb4bf" stroke-dasharray="6 5" stroke-width="2" x1="1312" x2="1363" y1="175" y2="175"/>
+  <line id="e-mu5-d6" marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-width="2" x1="1417" x2="1468" y1="175" y2="175"/>
   <g data-register="D5" id="d5">
   <rect fill="#171d22" height="50" rx="12" stroke="#e7dcc2" stroke-width="2" width="84" x="1228" y="150"/>
   <text fill="#e7dcc2" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle" x="1270" y="173">D5</text>
@@ -99,13 +99,13 @@
   <circle cx="800" cy="585" fill="none" r="274" stroke="#9fb4bf" stroke-dasharray="10 8" stroke-width="1.5"/>
   <text fill="#e7dcc2" font-family="sans-serif" font-size="11" font-weight="800" letter-spacing="1" text-anchor="middle" x="800" y="315">J+ PHYSICAL ENVELOPE · c-BOUNDED</text>
   <text fill="#9fb4bf" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="middle" x="800" y="345">Omega option field lies inside · authorization remains separately typed</text>
-  <path d="M 620 458 C 665 425, 700 414, 716 412" fill="none" marker-end="url(#arrow-possible)" stroke="#9fb4bf" stroke-dasharray="6 5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  <path d="M 805 414 C 875 415, 930 440, 960 466" fill="none" marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  <path d="M 1026 505 C 1075 540, 1095 585, 1093 614" fill="none" marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  <path d="M 1065 683 C 1010 745, 900 790, 845 801" fill="none" marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  <path d="M 747 804 C 650 785, 570 735, 538 707" fill="none" marker-end="url(#arrow-light)" stroke="#e8c96b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  <path d="M 495 645 C 475 570, 500 515, 535 493" fill="none" marker-end="url(#arrow-light)" stroke="#e8c96b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  <path d="M 800 775 C 765 690, 660 565, 590 495" fill="none" marker-end="url(#arrow-light)" stroke="#e8c96b" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 620 458 C 665 425, 700 414, 716 412" fill="none" id="e-model-option-a" marker-end="url(#arrow-possible)" stroke="#9fb4bf" stroke-dasharray="6 5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 805 414 C 875 415, 930 440, 960 466" fill="none" id="e-option-a-chi" marker-end="url(#arrow-possible)" stroke="#9fb4bf" stroke-dasharray="6 5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 1026 505 C 1075 540, 1095 585, 1093 614" fill="none" id="e-commitment-action" marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 1065 683 C 1010 745, 900 790, 845 801" fill="none" id="e-action-outcome" marker-end="url(#arrow-light)" stroke="#e7dcc2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 747 804 C 650 785, 570 735, 538 707" fill="none" id="e-outcome-trace" marker-end="url(#arrow-light)" stroke="#e8c96b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 495 645 C 475 570, 500 515, 535 493" fill="none" id="e-trace-selector" marker-end="url(#arrow-light)" stroke="#e8c96b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 800 775 C 765 690, 660 565, 590 495" fill="none" id="e-outcome-model-feedback" marker-end="url(#arrow-light)" stroke="#e8c96b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
   <g id="emblem-model">
   <rect fill="#0f1418" height="60" rx="15" stroke="#e7dcc2" stroke-width="2" width="144" x="488" y="445"/>
   <text fill="#e7dcc2" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle" x="560" y="471">

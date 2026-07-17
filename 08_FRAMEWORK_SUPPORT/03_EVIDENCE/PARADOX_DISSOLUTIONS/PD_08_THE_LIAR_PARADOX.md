@@ -27,6 +27,15 @@ rosetta:
 
 > **Evidence Tier: [I] Interpretive.** The dissolution maps self-referential semantic closure onto S² topology. This is a coherent structural reading, not an independently established logical result. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 
+> **[金] Kintsugi authority seam — analogy does not dissolve the theorem
+> (2026-07-18).** This file preserves a metaphor for separating a statement,
+> possible valuations, and an actual evaluation record. D5 names possible
+> contents/valuations; D4 names actual utterances, evaluations, and records.
+> The Liar is not made “dimensionally impossible,” and the sphere does not
+> prove, replace, or refute the formal results of Gödel, Tarski, Russell, or
+> modern semantic theories. Every contrary D4/D5 assignment or proof-strength
+> claim below is superseded and retained only as `[I]` history.
+
 ---
 
 ## 1. THE PROBLEM
@@ -45,8 +54,8 @@ This is a **dimensional confusion**. The sentence "This sentence is false" attem
 
 | Operation | Dimension | Function | Coordinates |
 |-----------|-----------|----------|-------------|
-| **Meaning** | D4 (convergence) | Witness recognizes semantic content | φ→1 (coherence), ν→0 (collapsed) |
-| **Truth-value** | D5 (present) | Agent evaluates in duration | φ=1 (held), ν=1 (active) |
+| **Possible valuation** | D5 (possibility) | Model represents candidate truth assignments | framework-level option content |
+| **Evaluation event** | D4 (actuality) | An evaluator applies a semantics and records a result | actual operation and receipt |
 
 The Liar sentence tries to be simultaneously at D4 convergence (witnessing meaning) and D5 navigation (assigning truth-value). But D4 and D5 are **dimensionally distinct** — connected through the Bang transition, not collapsible into a single point.
 
@@ -83,7 +92,8 @@ The Liar sentence oscillates between "true" and "false" because it attempts to:
 2. Evaluate itself at D5 (truth-value as navigation)
 3. Without the Bang transition between them
 
-**The Liar sentence is not paradoxical. It is dimensionally impossible.**
+**The framework offers an analogy for keeping representation and evaluation
+typed; it does not make the Liar non-paradoxical or dimensionally impossible.**
 
 It attempts to collapse D4→D5 transit into a single logical moment. The oscillation is not a feature of the sentence but a symptom of trying to force dimensional transit without the proper geometry.
 

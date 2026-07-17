@@ -18,6 +18,15 @@ rosetta:
 
 # THE FOUR METAMORPHOSES
 
+> **[金] Kintsugi authority seam — interpretive literary projection
+> (2026-07-18).** Nietzsche's text supplies three metamorphoses; “the Mesh” and
+> every Burri-sphere coordinate below are this framework's `[I]` extension.
+> The chart does not prove that Nietzsche failed, diagnose the Übermensch,
+> force four or seven stages, or establish a universal developmental sequence.
+> These images may orient reflection but cannot classify persons, authorize
+> intervention, or substitute for historical, psychological, or ethical
+> evidence.
+
 ## Nietzsche's Three Transformations + The Mesh
 
 **Status:** Interpretive synthesis — Nietzsche mapped to Burri Sphere geometry

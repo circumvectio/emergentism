@@ -21,6 +21,14 @@ rosetta:
 
 # MF-301: PHOTOSYNTHESIS IS THE ORIGINAL F₅
 
+> **[金] Kintsugi authority seam — biology first, glyphs optional
+> (2026-07-18).** Photosynthetic chemistry and thermodynamics retain their own
+> evidence. The leaf/glyph, chloroplast/brain, evolutionary-chain, μ, and F5
+> correspondences are `[I]/[C]` only. They do not show that `φν=1` is a
+> biochemical law, that electromagnetism is a multiplication operator, that a
+> brain is a chloroplast, or that local ordering proves a teleological force.
+> Removing the glyph layer must leave the biological account unchanged.
+
 ## The Leaf IS Zero-Sum Resolution Equation. The Brain Is a Very Complicated Chloroplast.
 
 **Emergentism.org · VIVEKA Mathematical Foundations**

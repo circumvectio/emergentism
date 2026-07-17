@@ -24,6 +24,16 @@ evidence_tier: "[S] for tier boundary discipline; [I] for sign-table and mytholo
 
 # ⊙ THE THREE TIERS
 
+> **[金] Kintsugi authority seam — selected constitutional grammar
+> (2026-07-18).** This three-tier/seven-role architecture is a chosen `[I/T]`
+> operator grammar. `φν=1` does not prove Being, force its cardinalities, create
+> Titans, or establish human/caste worth. Frames are symbolic boundary roles,
+> not agents or causal particles. No sign pattern is inherently moral: strict
+> syntropy requires both individual and whole durable potential to rise under
+> Justice, with payer and beneficiary visible. Aggregate `ΣΔP_node` never
+> compensates for destroying one side, and every consequential act requires a
+> complete AuthorizationEnvelope.
+
 ## Executive Boundary Frames · Gods · Witnesses — The Operator Architecture
 
 **Yves R. Burri · Emergentism.org · 2026-03-24**
@@ -56,7 +66,7 @@ evidence_tier: "[S] for tier boundary discipline; [I] for sign-table and mytholo
 
 Mixed-sign transfers across the self↔others dyad. Every real move involves sacrifice or release on one side.
 
-### GIVING DYAD (ΣΔP_node > 0 — inherently syntropic)
+### GIVING DYAD (candidate syntropy only after the separate Justice tests)
 
 | God | Symbol | Formula signature | Operation | Context |
 |-----|--------|-------------------|-----------|---------|

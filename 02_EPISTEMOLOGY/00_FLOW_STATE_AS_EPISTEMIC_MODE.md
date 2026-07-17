@@ -28,9 +28,17 @@ rosetta:
 
 ---
 
+> **[金] Kintsugi authority seam — phenomenological correspondence only
+> (2026-07-18).** The reciprocal-chart identity `φν=1` does not describe or
+> cause a psychological state. The challenge/skill, hemispheric, contemplative,
+> and equator/flow correspondences below are an `[I]` comparison and become
+> empirical only through separately specified, falsifiable `[C]` measures.
+> “Off-sphere” is not a diagnosis, universal flow potential is not implied by
+> the chart, and no ethical or ontological conclusion follows from it.
+
 ## 1. The Mapping
 
-The Burri Sphere constraint **φ · ν = 1 on S²** is not merely a formal identity. It describes a *mode of knowing* — what Csikszentmihalyi calls **flow**, what McGilchrist calls **hemispheric synchrony**, and what contemplative traditions call **direct perception**.
+The Burri Sphere constraint **φ · ν = 1** is a formal chart identity. This document asks whether its balance image can serve as a useful *analogy* for what Csikszentmihalyi calls **flow**, what McGilchrist discusses through hemispheric relations, and what contemplative traditions call **direct perception**.
 
 ### Core State / Objective Function discipline
 
@@ -39,7 +47,7 @@ This document operates in the **teleological domain**. The ontological seed (**�
 **Constraint vs. optimal state:**
 - **φ · ν = 1** is the *constraint* — every point on S² satisfies it. This is not a claim that everything is in flow.
 - **φ = ν = 1** (the equator, B = sin θ = 1) is the *optimal* state — peak, not default. Most of the sphere is not the equator.
-- **The potential for flow is universal** (all points lie on the constrained surface). **The actualization of flow is rare** (requires reaching the equator).
+- **Flow is an empirical psychological phenomenon.** Its prevalence and conditions must be measured independently; membership in a mathematical chart neither supplies nor withholds it.
 
 ---
 
@@ -66,10 +74,11 @@ In classical flow theory, flow occurs at the intersection of **Challenge** and *
    - *Lived experience:* Being without acting. Paralysis, overwhelm, terror.
    - *On S²:* North of the equator, drifting toward the pole where φ dominates.
 
-3. **Stutter / Cognitive Friction** — φ · ν < 1 (off the sphere)
+3. **Stutter / Cognitive Friction** — empirical mismatch represented as off-chart
    - The system has lost reciprocal closure. The hemispheres are in conflict, not synchrony.
    - *Lived experience:* Over-thinking, self-interruption, broken gestalt.
-   - *On S²:* Not on the manifold. This is pathology, not mere suboptimality.
+   - *In the analogy:* the selected chart no longer fits the observation. This
+     is a model-failure signal, not a diagnosis.
 
 > **The Flow State** is the perfect inverse relationship where the complexity of the Whole (φ) is exactly matched by the capability of the Parts (ν). Not because every point has equal factors, but because the open-sphere product remains closed as one while the equator is the point where φ = ν = 1.
 
@@ -84,7 +93,7 @@ McGilchrist's primary critique of the modern world is the **interruption of flow
 | **Flow** | φ = ν = 1 | Synchrony; Emissary executes Master's vision flawlessly | Effortless integration; time distortion; self dissolves |
 | **Boredom** | ν > φ | Emissary dominates; Master disengaged | Repetitive, meaningless, robotic |
 | **Anxiety** | φ > ν | Master overwhelms; Emissary paralysed | Overwhelm, terror, analysis paralysis |
-| **Stutter** | φ · ν < 1 (off sphere) | Hemispheric conflict; corpus callosum jammed | Cognitive friction, self-interruption, broken flow |
+| **Stutter** | empirical mismatch / off-chart | hypothesized hemispheric conflict | cognitive friction, self-interruption; requires independent measurement |
 
 **The Emissary's usurpation** (McGilchrist's central concern) is the drift toward ν-dominance: high technical agency with zero coherent purpose. This is not merely suboptimal — it is the **entropy pole** of the modern condition.
 
@@ -102,7 +111,12 @@ The potential for Total Realization is always present; what varies is whether th
 - The sinner (in the sense of *hamartia* — missing the mark) is in a flow state of **destructive agency** — the mechanics are flawless but the aim is wrong.
 - Both are at the equator. The sphere does not judge direction; it measures coherence × viability.
 
-This is why **A7 (evidence tiers)** matters. The formal system can tell you *that* you are in flow (φ · ν = 1). It cannot tell you *whether the flow is syntropic or entropic* without additional ethical measurement. The moral axis is `η` (coupling vs closure), which runs *across* the equator, not along it — goodness is the bond `φ × ν`, not either pole or position. See [`../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md).
+This is why **A7 (evidence tiers)** matters. The formal chart cannot establish
+that a person is in flow. A separately calibrated empirical model would have
+to operationalize and measure flow, and a distinct Justice assessment would
+still be required before any moral classification. No point, product, or
+aggregate on the chart is itself goodness. See
+[`../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md).
 
 ---
 

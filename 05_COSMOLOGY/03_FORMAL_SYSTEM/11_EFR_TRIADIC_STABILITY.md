@@ -72,6 +72,6 @@ forced, or the mathematical foundation of ethics fails this tombstone.
 - [Transcendental Trinity Canon](../01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md)
 - [Canonical Formula Block](../00_CANONICAL_FORMULA_BLOCK.md)
 - [Primitives and Type Signatures](29_PRIMITIVES_AND_TYPE_SIGNATURES.md)
-- [Settled Canon Registry](../../../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md)
 
 *Triadic Stability | superseded 2026-07-18 | Selected frame, no uniqueness theorem.*

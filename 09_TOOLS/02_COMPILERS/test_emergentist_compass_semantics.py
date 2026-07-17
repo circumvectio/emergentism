@@ -616,7 +616,62 @@ class ActionEvaluation:
     expected_individual: float
     expected_whole: float
     justice: bool
-    affected_bearer_deltas: tuple[float, ...] = ()
+    affected_bearer_deltas: tuple[tuple[str, float], ...] = ()
+    individual_id: str = "i"
+    whole_id: str = "H"
+    payer_ids: tuple[str, ...] = ()
+    beneficiary_ids: tuple[str, ...] = ()
+
+    def validated_bearer_map(self) -> Optional[dict[str, float]]:
+        return validated_bearer_map(
+            self.expected_individual,
+            self.expected_whole,
+            self.affected_bearer_deltas,
+            individual_id=self.individual_id,
+            whole_id=self.whole_id,
+            payer_ids=self.payer_ids,
+            beneficiary_ids=self.beneficiary_ids,
+        )
+
+
+def validated_bearer_map(
+    delta_individual: float,
+    delta_whole: float,
+    affected_bearer_deltas: Sequence[tuple[str, float]],
+    *,
+    individual_id: str = "i",
+    whole_id: str = "H",
+    payer_ids: Sequence[str] = (),
+    beneficiary_ids: Sequence[str] = (),
+) -> Optional[dict[str, float]]:
+    """Return a complete named bearer map, or fail closed with ``None``."""
+
+    if not affected_bearer_deltas or individual_id == whole_id:
+        return None
+    required_ids = (individual_id, whole_id, *payer_ids, *beneficiary_ids)
+    if any(not isinstance(bearer_id, str) or not bearer_id.strip() for bearer_id in required_ids):
+        return None
+
+    bearer_map: dict[str, float] = {}
+    for bearer_id, delta in affected_bearer_deltas:
+        if (
+            not isinstance(bearer_id, str)
+            or not bearer_id.strip()
+            or bearer_id in bearer_map
+            or not isinstance(delta, (int, float))
+            or not math.isfinite(delta)
+        ):
+            return None
+        bearer_map[bearer_id] = float(delta)
+
+    if not set(required_ids) <= set(bearer_map):
+        return None
+    if (
+        bearer_map[individual_id] != delta_individual
+        or bearer_map[whole_id] != delta_whole
+    ):
+        return None
+    return bearer_map
 
 
 def unconstrained_power_max(actions: Sequence[ActionEvaluation]) -> ActionEvaluation:
@@ -626,14 +681,17 @@ def unconstrained_power_max(actions: Sequence[ActionEvaluation]) -> ActionEvalua
 def justice_constrained_power_max(
     actions: Sequence[ActionEvaluation],
 ) -> Optional[ActionEvaluation]:
-    admissible = [
-        action
-        for action in actions
-        if action.justice
-        and action.expected_individual >= 0.0
-        and action.expected_whole >= 0.0
-        and all(delta >= 0.0 for delta in action.affected_bearer_deltas)
-    ]
+    admissible: list[ActionEvaluation] = []
+    for action in actions:
+        bearer_map = action.validated_bearer_map()
+        if (
+            action.justice
+            and bearer_map is not None
+            and action.expected_individual >= 0.0
+            and action.expected_whole >= 0.0
+            and all(delta >= 0.0 for delta in bearer_map.values())
+        ):
+            admissible.append(action)
     if not admissible:
         return None
     return max(admissible, key=lambda action: action.expected_individual)
@@ -655,10 +713,28 @@ def dyadic_labels(
     delta_individual: float,
     delta_whole: float,
     justice: bool,
-    affected_bearer_deltas: Sequence[float] = (),
+    affected_bearer_deltas: Sequence[tuple[str, float]] = (),
+    *,
+    individual_id: str = "i",
+    whole_id: str = "H",
+    payer_ids: Sequence[str] = (),
+    beneficiary_ids: Sequence[str] = (),
 ) -> set[str]:
     labels: set[str] = set()
-    if not justice or any(delta < 0.0 for delta in affected_bearer_deltas):
+    bearer_map = validated_bearer_map(
+        delta_individual,
+        delta_whole,
+        affected_bearer_deltas,
+        individual_id=individual_id,
+        whole_id=whole_id,
+        payer_ids=payer_ids,
+        beneficiary_ids=beneficiary_ids,
+    )
+    if (
+        not justice
+        or bearer_map is None
+        or any(delta < 0.0 for delta in bearer_map.values())
+    ):
         return labels
     if delta_whole > 0.0 and delta_individual >= 0.0:
         labels.add("moral")
@@ -737,17 +813,27 @@ class CollectivePowerAndValueTests(unittest.TestCase):
         self.assertEqual(extractor_gain(0.8, 1.0, 0.1), 0.0)
 
     def test_justice_filters_the_unconstrained_power_max_counterexample(self) -> None:
-        extraction = ActionEvaluation("extract", 10.0, -8.0, False)
-        mutual = ActionEvaluation("mutual", 4.0, 4.0, True)
-        preserve = ActionEvaluation("preserve", 1.0, 0.0, True)
+        extraction = ActionEvaluation(
+            "extract", 10.0, -8.0, False, (("i", 10.0), ("H", -8.0))
+        )
+        mutual = ActionEvaluation(
+            "mutual", 4.0, 4.0, True, (("i", 4.0), ("H", 4.0))
+        )
+        preserve = ActionEvaluation(
+            "preserve", 1.0, 0.0, True, (("i", 1.0), ("H", 0.0))
+        )
         actions = (extraction, mutual, preserve)
         self.assertEqual(unconstrained_power_max(actions).name, "extract")
         self.assertEqual(justice_constrained_power_max(actions).name, "mutual")
 
     def test_empty_justice_field_has_no_admissible_maximizer(self) -> None:
         actions = (
-            ActionEvaluation("extract", 10.0, -8.0, False),
-            ActionEvaluation("harm", 3.0, -1.0, True),
+            ActionEvaluation(
+                "extract", 10.0, -8.0, False, (("i", 10.0), ("H", -8.0))
+            ),
+            ActionEvaluation(
+                "harm", 3.0, -1.0, True, (("i", 3.0), ("H", -1.0))
+            ),
         )
         self.assertIsNone(justice_constrained_power_max(actions))
 
@@ -767,35 +853,134 @@ class CollectivePowerAndValueTests(unittest.TestCase):
         self.assertIn("a_\\varepsilon", owner)
 
     def test_moral_ethical_and_strict_syntropic_directions(self) -> None:
-        self.assertEqual(dyadic_labels(0.0, 2.0, True), {"moral"})
-        self.assertEqual(dyadic_labels(2.0, 0.0, True), {"ethical"})
         self.assertEqual(
-            dyadic_labels(2.0, 3.0, True), {"moral", "ethical", "syntropic"}
+            dyadic_labels(0.0, 2.0, True, (("i", 0.0), ("H", 2.0))),
+            {"moral"},
         )
         self.assertEqual(
-            dyadic_labels(0.0, 0.0, True), {"lawful-preservation"}
+            dyadic_labels(2.0, 0.0, True, (("i", 2.0), ("H", 0.0))),
+            {"ethical"},
+        )
+        self.assertEqual(
+            dyadic_labels(2.0, 3.0, True, (("i", 2.0), ("H", 3.0))),
+            {"moral", "ethical", "syntropic"},
+        )
+        self.assertEqual(
+            dyadic_labels(0.0, 0.0, True, (("i", 0.0), ("H", 0.0))),
+            {"lawful-preservation"},
         )
 
     def test_aggregate_gain_cannot_launder_hidden_bearer_harm(self) -> None:
         delta_individual, delta_whole = 100.0, -1.0
         self.assertGreater(delta_individual + delta_whole, 0.0)
-        self.assertEqual(dyadic_labels(delta_individual, delta_whole, True), set())
+        self.assertEqual(
+            dyadic_labels(
+                delta_individual,
+                delta_whole,
+                True,
+                (("i", delta_individual), ("H", delta_whole)),
+            ),
+            set(),
+        )
 
     def test_focal_dyad_cannot_launder_a_harmed_third_bearer(self) -> None:
         superficially_mutual = ActionEvaluation(
-            "dyad-wins-third-loses", 5.0, 4.0, True, (-3.0,)
+            "dyad-wins-third-loses",
+            5.0,
+            4.0,
+            True,
+            (("i", 5.0), ("H", 4.0), ("third", -3.0)),
         )
-        safe = ActionEvaluation("bearer-complete", 2.0, 2.0, True, (0.0,))
+        safe = ActionEvaluation(
+            "bearer-complete",
+            2.0,
+            2.0,
+            True,
+            (("i", 2.0), ("H", 2.0), ("third", 0.0)),
+        )
         self.assertEqual(
             justice_constrained_power_max((superficially_mutual, safe)).name,
             "bearer-complete",
         )
-        self.assertEqual(dyadic_labels(5.0, 4.0, True, (-3.0,)), set())
+        self.assertEqual(
+            dyadic_labels(
+                5.0,
+                4.0,
+                True,
+                (("i", 5.0), ("H", 4.0), ("third", -3.0)),
+            ),
+            set(),
+        )
+
+    def test_bearer_maps_fail_closed_when_absent_missing_duplicate_or_mismatched(self) -> None:
+        valid = ActionEvaluation(
+            "complete",
+            2.0,
+            3.0,
+            True,
+            (("i", 2.0), ("H", 3.0), ("payer", 0.0), ("beneficiary", 1.0)),
+            payer_ids=("payer",),
+            beneficiary_ids=("beneficiary",),
+        )
+        invalid = (
+            replace(valid, affected_bearer_deltas=()),
+            replace(
+                valid,
+                affected_bearer_deltas=(("i", 2.0), ("H", 3.0), ("beneficiary", 1.0)),
+            ),
+            replace(
+                valid,
+                affected_bearer_deltas=(
+                    ("i", 2.0),
+                    ("H", 3.0),
+                    ("payer", 0.0),
+                    ("payer", 0.0),
+                    ("beneficiary", 1.0),
+                ),
+            ),
+            replace(
+                valid,
+                affected_bearer_deltas=(
+                    ("i", 99.0),
+                    ("H", 3.0),
+                    ("payer", 0.0),
+                    ("beneficiary", 1.0),
+                ),
+            ),
+        )
+        self.assertEqual(justice_constrained_power_max((valid,)), valid)
+        for action in invalid:
+            with self.subTest(action=action.affected_bearer_deltas):
+                self.assertIsNone(action.validated_bearer_map())
+                self.assertIsNone(justice_constrained_power_max((action,)))
+                self.assertEqual(
+                    dyadic_labels(
+                        action.expected_individual,
+                        action.expected_whole,
+                        action.justice,
+                        action.affected_bearer_deltas,
+                        individual_id=action.individual_id,
+                        whole_id=action.whole_id,
+                        payer_ids=action.payer_ids,
+                        beneficiary_ids=action.beneficiary_ids,
+                    ),
+                    set(),
+                )
 
     def test_voluntary_sacrifice_is_costly_and_not_strict_syntropy(self) -> None:
         self.assertTrue(voluntary_sacrifice(-2.0, 5.0, True))
         self.assertFalse(voluntary_sacrifice(-2.0, 5.0, False))
-        self.assertNotIn("syntropic", dyadic_labels(-2.0, 5.0, True))
+        self.assertNotIn(
+            "syntropic",
+            dyadic_labels(
+                -2.0,
+                5.0,
+                True,
+                (("i", -2.0), ("H", 5.0)),
+                payer_ids=("i",),
+                beneficiary_ids=("H",),
+            ),
+        )
         primitives = owner_text(
             "05_COSMOLOGY/03_FORMAL_SYSTEM/29_PRIMITIVES_AND_TYPE_SIGNATURES.md"
         )
