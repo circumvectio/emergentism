@@ -7,6 +7,7 @@ import hashlib
 import io
 import json
 import os
+import re
 import sys
 import tempfile
 import unittest
@@ -27,6 +28,8 @@ SCHEMA_HASH = "f8c4205af97635f8eea9f83cbf3a1e05ff50a0f64bc6ee8dd54ff61f6df78a3f"
 SCHEMA_ID = "https://emergentism.org/schema/kintsugi/1.0.0"
 SCHEMA_PATH = ROOT / "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SCHEMA.json"
 PLAN_PATH = ROOT / "docs/superpowers/plans/2026-07-12-kintsugi-a0b-machine-kernel-implementation.md"
+COMPILER_README_PATH = ROOT / "09_TOOLS/02_COMPILERS/README.md"
+HANDOFF_PATH = ROOT / "docs/superpowers/specs/2026-07-12-kintsugi-a0b-machine-kernel-handoff.md"
 ROOT_ROLES = {"coreData", "publicQueue", "baselineAllowlist"}
 REVIEW_HISTORY = {
     "reviewAttempts",
@@ -539,6 +542,59 @@ class StablePackageSurfaceTests(SchemaAssertions):
             with self.subTest(validator_result=result):
                 self.assertIs(type(result), list)
                 self.assertEqual(result, [])
+
+
+class A0BMachineDocumentationTests(unittest.TestCase):
+    def test_handoff_is_link_closed_machine_only_and_bound_to_task_eight(self):
+        self.assertTrue(COMPILER_README_PATH.is_file())
+        self.assertTrue(HANDOFF_PATH.is_file())
+        documents = (COMPILER_README_PATH, HANDOFF_PATH)
+        combined = "\n".join(path.read_text(encoding="utf-8") for path in documents)
+        normalized = " ".join(combined.split())
+
+        required = (
+            "A0B validates grammar and transaction machinery",
+            "It does not validate Emergentism, repair canon, or create a live Kintsugi vessel",
+            "e62d9a815b4579397e4fabd1e707d65f5dcab0fd",
+            SCHEMA_HASH,
+            "KIN-OK baseline collected=19 failures=5",
+            "MAN-A-001",
+            "02_KINTSUGI_SEAMS.json",
+            "02_KINTSUGI_SEAM_LEDGER.md",
+            "REC-A-108",
+            *sorted(ROOT_ROLES),
+            "freeze-manifest",
+            "review-target",
+            "transition-core",
+            "bundle",
+            "TARGET_READY",
+            "ATTESTED",
+            "FAILED",
+            "ABANDONED",
+            "COMPLETE",
+            "VERIFIED",
+        )
+        for token in required:
+            with self.subTest(token=token):
+                self.assertIn(token, normalized)
+
+        root = ROOT.resolve()
+        for document in documents:
+            text = document.read_text(encoding="utf-8")
+            for target in re.findall(r"\[[^\]]+\]\(([^)]+)\)", text):
+                if target.startswith(("https://", "http://", "mailto:", "#")):
+                    continue
+                relative = target.split("#", 1)[0]
+                resolved = (document.parent / relative).resolve()
+                self.assertTrue(resolved.is_relative_to(root), target)
+                self.assertTrue(resolved.exists(), target)
+            shell_blocks = re.findall(
+                r"```(?:bash|sh|zsh)\s*\n(.*?)```",
+                text,
+                flags=re.DOTALL,
+            )
+            for block in shell_blocks:
+                self.assertNotIn("render_kintsugi.py", block)
 
 
 class FrozenSchemaArtifactTests(SchemaAssertions):
