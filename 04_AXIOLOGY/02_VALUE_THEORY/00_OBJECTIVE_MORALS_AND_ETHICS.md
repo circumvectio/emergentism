@@ -229,8 +229,8 @@ For prospective selection, define
 \land\forall b\in\mathcal B(a),\widehat{\Delta}_TW_b(a;M_t)\ge0\}.
 \]
 
-If `\mathcal A_J` is finite, or compact with an upper-semicontinuous objective,
-the Power-Max design objective may choose
+If `\mathcal A_J` is nonempty and finite, or nonempty and compact with an
+upper-semicontinuous objective, the Power-Max design objective may choose
 
 \[
 a^\star\in\operatorname*{arg\,max}_{a\in\mathcal A_J}

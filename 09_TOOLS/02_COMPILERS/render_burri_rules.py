@@ -212,6 +212,18 @@ def validate_topology(
         node = by_id.get(content_id, {})
         if (node.get("dRegister"), node.get("modality")) != ("D5", "possible"):
             errors.append(f"{content_id} must be merely-possible D5 content")
+    represented_content = next(
+        (edge for edge in edges if edge.get("id") == "e-d5-model-content"), {}
+    )
+    if (
+        represented_content.get("from") != "d4-model-token"
+        or represented_content.get("to") != "d5"
+        or represented_content.get("edgeType") != "represented-content"
+        or represented_content.get("modality") != "possible"
+    ):
+        errors.append(
+            "e-d5-model-content must run from the present D4 model token to D5 possible content"
+        )
 
     selector_inputs = [
         edge
@@ -559,6 +571,7 @@ def _receipt_node(
 
 def _render_spine(svg: _Svg, topology: Mapping[str, Any], dark: bool = False) -> None:
     by_id = {node["id"]: node for node in topology["nodes"]}
+    edges_by_id = {edge["id"]: edge for edge in topology["edges"]}
     ink = "#e7dcc2" if dark else "#332d29"
     muted = "#9fb4bf" if dark else "#526879"
     fill = "#171d22" if dark else "#fffdf6"
@@ -567,12 +580,45 @@ def _render_spine(svg: _Svg, topology: Mapping[str, Any], dark: bool = False) ->
     state_xs = [70 + 240 * number for number in range(7)]
     crossing_xs = [190 + 240 * number for number in range(6)]
 
+    def spine_edge(
+        edge_id: str, x1: float, y1: float, x2: float, y2: float
+    ) -> None:
+        edge = edges_by_id[edge_id]
+        is_possible = edge["modality"] == "possible"
+        _line(
+            svg,
+            x1,
+            y1,
+            x2,
+            y2,
+            color=muted if is_possible else ink,
+            dash="6 5" if is_possible else None,
+            marker=(
+                "arrow-light"
+                if dark
+                else ("arrow-possible" if is_possible else "arrow-actual")
+            ),
+            id=edge_id,
+        )
+
     svg.open("g", id="d-register-spine", **{"data-primitive": "mu-crossing"})
     for number, x in enumerate(state_xs):
         node = by_id[f"d{number}"]
         if number < 6:
-            _line(svg, x + 42, y, crossing_xs[number] - 27, y, color=ink, marker="arrow-light" if dark else "arrow-actual")
-            _line(svg, crossing_xs[number] + 27, y, state_xs[number + 1] - 42, y, color=ink, marker="arrow-light" if dark else "arrow-actual")
+            spine_edge(
+                f"e-d{number}-mu{number}",
+                x + 42,
+                y,
+                crossing_xs[number] - 27,
+                y,
+            )
+            spine_edge(
+                f"e-mu{number}-d{number + 1}",
+                crossing_xs[number] + 27,
+                y,
+                state_xs[number + 1] - 42,
+                y,
+            )
         svg.open("g", id=f"d{number}", **{"data-register": f"D{number}"})
         svg.add("rect", x=x - 42, y=y - 25, width=84, height=50, rx=12, fill=fill, stroke=ink, **{"stroke-width": 2})
         svg.text(x, y - 2, f"D{number}", size=17, fill=ink, weight=700, anchor="middle")
@@ -763,6 +809,11 @@ def _render_emblem(topology: Mapping[str, Any], digest: str) -> str:
     pale = "#9fb4bf"
     gold = "#e8c96b"
     panel = "#171d22"
+    edges_by_id = {edge["id"]: edge for edge in topology["edges"]}
+
+    def modality_dash(edge_id: str) -> str | None:
+        return "6 5" if edges_by_id[edge_id]["modality"] == "possible" else None
+
     svg.add("rect", x=0, y=0, width=view["width"], height=view["height"], fill=bg)
     svg.text(60, 58, "THE BURRI RULES", size=28, fill=ivory, weight=800, letter_spacing=2.2)
     svg.text(60, 84, "Obsidian emblem · derived compression", size=13, fill=pale, weight=600)
@@ -785,13 +836,62 @@ def _render_emblem(topology: Mapping[str, Any], digest: str) -> str:
         "receipt": (800, 805),
         "trace": (510, 680),
     }
-    _path(svg, "M 620 458 C 665 425, 700 414, 716 412", color=pale, dash="6 5", marker="arrow-possible")
-    _path(svg, "M 805 414 C 875 415, 930 440, 960 466", color=ivory, marker="arrow-light")
-    _path(svg, "M 1026 505 C 1075 540, 1095 585, 1093 614", color=ivory, marker="arrow-light")
-    _path(svg, "M 1065 683 C 1010 745, 900 790, 845 801", color=ivory, marker="arrow-light")
-    _path(svg, "M 747 804 C 650 785, 570 735, 538 707", color=gold, marker="arrow-light")
-    _path(svg, "M 495 645 C 475 570, 500 515, 535 493", color=gold, marker="arrow-light")
-    _path(svg, "M 800 775 C 765 690, 660 565, 590 495", color=gold, dash="5 5", marker="arrow-light")
+    _path(
+        svg,
+        "M 620 458 C 665 425, 700 414, 716 412",
+        color=pale,
+        dash=modality_dash("e-model-option-a"),
+        marker="arrow-possible",
+        id="e-model-option-a",
+    )
+    _path(
+        svg,
+        "M 805 414 C 875 415, 930 440, 960 466",
+        color=pale,
+        dash=modality_dash("e-option-a-chi"),
+        marker="arrow-possible",
+        id="e-option-a-chi",
+    )
+    _path(
+        svg,
+        "M 1026 505 C 1075 540, 1095 585, 1093 614",
+        color=ivory,
+        dash=modality_dash("e-commitment-action"),
+        marker="arrow-light",
+        id="e-commitment-action",
+    )
+    _path(
+        svg,
+        "M 1065 683 C 1010 745, 900 790, 845 801",
+        color=ivory,
+        dash=modality_dash("e-action-outcome"),
+        marker="arrow-light",
+        id="e-action-outcome",
+    )
+    _path(
+        svg,
+        "M 747 804 C 650 785, 570 735, 538 707",
+        color=gold,
+        dash=modality_dash("e-outcome-trace"),
+        marker="arrow-light",
+        id="e-outcome-trace",
+    )
+    _path(
+        svg,
+        "M 495 645 C 475 570, 500 515, 535 493",
+        color=gold,
+        dash=modality_dash("e-trace-selector"),
+        marker="arrow-light",
+        id="e-trace-selector",
+    )
+    _path(
+        svg,
+        "M 800 775 C 765 690, 660 565, 590 495",
+        color=gold,
+        dash=modality_dash("e-outcome-model-feedback"),
+        marker="arrow-light",
+        id="e-outcome-model-feedback",
+    )
 
     def dark_box(identifier: str, x: float, y: float, lines: Sequence[str], *, dotted: bool = False) -> None:
         svg.open("g", id=identifier)

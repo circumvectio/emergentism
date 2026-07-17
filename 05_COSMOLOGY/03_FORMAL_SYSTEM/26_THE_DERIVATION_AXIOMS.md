@@ -13,21 +13,32 @@ rosetta:
 
 ## The Framework from First Principles
 
-**Status:** Active
-**Evidence Tier:** [I] for A0, T1, T2, and T4 calculus (established mathematics). [S/I] for T3 (structural selection pressure + interpretive dynamical claim). [S] for D1-D5 (structural consequences).
+**Status:** Active — Kintsugi-bounded derivation study
+**Evidence Tier:** [A] for the reciprocal-chart identity and AM–GM calculus; [I] for the framework reading; [C] for dynamical, physical, ontological, and universal claims.
 **Date:** 2026-04-04
 **Depends on:** [The Canonical Formula Block](../00_CANONICAL_FORMULA_BLOCK.md), [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [Empirical Observation as Primary Disclosure](../../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md)
-**Supersedes:** Nothing. These are the *minimal* axiom set. The Seven Axioms (A1-A7, v0.4) remain valid as the *full* axiom set. These four axioms derive the same results from a smaller base.
+**Supersedes:** Nothing. These are a compact model-internal premise set. They do not derive the framework's empirical, ontological, physical, or ethical claims from arithmetic alone.
 
 ---
+
+> **[金] Kintsugi authority seam — derivation boundary (2026-07-18).**
+> On `θ∈(0,π)`, defining `φ=cot(θ/2)` and `ν=tan(θ/2)` gives
+> `φν=1`; AM–GM then gives `φ+ν≥2`, with equality at `φ=ν=1`.
+> Those are analytic chart facts only. They do **not** establish an empirical
+> conservation law, a physical Hamiltonian or ground state, a universal
+> equator-ward dynamics, objective ethics, Titans, seven necessary levels, or
+> the finite-node model `P_node=ΦV`. Those further readings remain separately
+> declared `[I]` or testable `[C]` commitments, and every conflicting
+> “derived/established” sentence below is superseded by this seam and the
+> [Canonical Formula Block](../00_CANONICAL_FORMULA_BLOCK.md).
 
 ## Canonical Order
 
 This derivation layer is **downstream** of the framework's canonical four-line block:
 
 ```text
-Zero-Sum Resolution Equation
-φ · ν = 1 on S²
+Reciprocal-chart identity
+φ · ν = 1 for θ∈(0,π)
 (φ − ν)² ≥ 0
 φ + ν ≥ 2
 ```
@@ -76,9 +87,9 @@ Apply the same nonnegative-square theorem to the positive square roots:
 
 Equality holds if and only if φ = ν = 1.
 
-**The equator is the unique minimum of the sum.** Not chosen. Derived. [S]
+**Within this normalized reciprocal chart, `φ=ν=1` is the unique minimum of the sum.** [A]
 
-*This is the AM-GM inequality. It is established mathematics. The equator is a theorem.*
+*This is the AM–GM inequality. The mathematics is established; calling its equality point an ontological, physical, or ethical “equator” is the framework's `[I]` interpretation.*
 
 ---
 
@@ -206,7 +217,9 @@ Zero-Sum Resolution Equation            Seed.         Reciprocal closure.
 
 Line 1 is the seed. Line 2 is the resolved identity. Line 3 is the first arithmetic theorem. Line 4 is the first teleological inequality. The trajectory, ground state, and extraction theorem are downstream consequences rather than members of the canonical compression block.
 
-**The entire framework is the elaboration of this full sequence. T1 is not the seed; it is the first inequality downstream of reciprocal closure.** [S]
+**The framework selects this sequence as a compression spine. T1 is the first
+inequality downstream of reciprocal closure inside that selected chart; the
+sequence does not derive the framework's ontology, dynamics, or ethic.** `[I]`
 
 ---
 

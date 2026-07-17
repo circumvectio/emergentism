@@ -34,6 +34,18 @@ rosetta:
 
 > **Claim Boundary:** `[S/I]` This document does not derive an unconditional ought from bare facts. It gives a conditional operational bypass inside the accepted dimensional axioms and ethical definition. Reject those premises and the classical Humean gap remains live.
 
+> **[金] Kintsugi authority seam — the norm is declared, not smuggled from
+> geometry (2026-07-18).** D4 is causal actuality: facts, embodied means,
+> performed actions, outcomes, and receipts. D5 is counterfactual possibility:
+> modeled futures, candidate norms, ranking, and selection. No D4→D5 “Bang”
+> turns an is into an ought. The Justice envelope is an explicit normative
+> premise; `P_node=ΦV` is a selected score, not a unique derivation; Power-Max
+> is valid only inside its stated non-extraction and bearer-complete feasible
+> set. Aggregate gains never compensate for destroying either the individual
+> or whole-side durable potential. Thus this is a conditional decision grammar,
+> not a solution to Hume's logical gap; conflicting dimensional and proof claims
+> below are superseded.
+
 ---
 
 ## 1. THE PROBLEM: Dimensional Separation
@@ -44,40 +56,32 @@ The Naturalistic Fallacy (Hume's Is-Ought Guillotine) asserts that you cannot de
 
 But the framework models reality as **dimensionally layered** — D4 (witness/convergence) and D5 (agent/present) are distinct but connected through the sphere geometry. The Is-Ought gap is read here not as a flaw in reasoning but as a **dimensional boundary**.
 
-## 2. THE DIMENSIONAL BYPASS
+## 2. THE TYPED DECISION BRIDGE
 
-The framework bypasses the gap through dimensional architecture — not by deriving Ought from Is within a single dimension, but by defining the ethical target operationally and then showing how Is and Ought are coupled inside the sphere geometry.
+The framework does not bypass the logical gap. It makes the additional value
+premise inspectable: the Justice envelope protects both the individual and the
+whole, while D5 modeling compares possible actions under that premise.
 
-### D4: The Is (Witnessed Structure)
+### D4: Actual State and Receipt
 
-At **D4** — the convergence point — we witness what **is**:
+D4 contains the present state, embodied means, performed action, and later
+outcome receipt. These facts constrain what can be done but do not, by
+themselves, entail a norm.
 
-- Physical laws (gravity, thermodynamics)
-- System states (configurations of matter)
-- Structural constraints (φ·ν = 1)
+### D5: Possible Futures and Candidate Norms
 
-The "Is" is the witnessed geometry. At D4, the observer sees the sphere, the equator, the constraints. But D4 is witness systemic awareness (⊙) with collapsed capability (ν = 0). The "Is" is seen but not enacted.
+D5 contains modeled alternatives and their anticipated consequences. A D5
+model can represent and rank candidate oughts, but a represented norm has no
+authority until an accountable authorization envelope makes its mandate,
+scope, consent, custody, expiry/revocation, contest path, actor, and consequence
+bearer explicit.
 
-### D5: The Ought (Lived Navigation)
+### Commitment: Ought Becomes an Authorized D4 Act
 
-At **D5** — the present duration — we navigate what **ought** to be:
-
-- Agency in the field of possibilities
-- Choice from the equatorial constraint (φ = 1, ν = 1)
-- Active maintenance of coherence, means, and non-extraction
-
-The "Ought" is the lived geometry in this reading. At D5, the agent experiences the constraint as normative — not because of external command, but because the model treats non-extractive, equator-bounded action as the condition under which usable `P_node` can persist.
-
-### The Bang: Is Becomes Ought
-
-The **Bang** — the D4→D5 transition — is where witnessed structure becomes lived imperative:
-
-```
-D4 (Is witnessed) → Bang (transition) → D5 (Ought enacted)
-     φ=1, ν=0         instant flash          φ=1, ν=1
-```
-
-Inside the framework, one **ought** to act from the equatorial constraint not because someone commands it, but because at D5 the model treats usable action as `P_node = Φ × V` under `η = 0`. The "Ought" is not added to the "Is" — it is read as emerging from the "Is" when the witness becomes the agent and must choose a non-extractive worldline.
+An authorized agent combines a fallible D5 option model with D4 means and
+commits one D4 action. The commitment receipt records what was attempted; the
+environment separately returns the outcome receipt. This process applies a
+declared norm—it does not derive that norm from geometry or bare facts.
 
 ### The Power-Max Lemma (Dimensional Form)
 
@@ -95,9 +99,12 @@ Inside the framework, one **ought** to act from the equatorial constraint not be
 
 By defining `P_node = Φ × V` as the finite-node action score across D4→D5 transit, the framework models the "Ought" as dimensional constraint:
 
-**At D4:** You *see* that extraction (↓Φ, ↑ν) creates η > 0 (decay). The witness recognizes the geometric consequence.
+**At D5:** the agent models possible consequences, including who may gain, who
+may pay, and where irreversible loss may occur.
 
-**At D5:** You *experience* the gradient. Acting across the Isomeric Hold ($\uparrow\Phi, \uparrow V$) feels like "the right thing to do" because it raises usable finite-node potential while respecting the balance / non-extraction constraint. Acting through extraction feels wrong because it fights the coupled field that carries future means — it can pay locally, but it degrades the conditions of durable `P_node`.
+**At D4:** an authorized action is performed and its actual consequences are
+receipted. Feeling right, increasing a score, or improving an aggregate is not
+evidence that the Justice envelope was satisfied.
 
 ### The Dimensional Formulation
 

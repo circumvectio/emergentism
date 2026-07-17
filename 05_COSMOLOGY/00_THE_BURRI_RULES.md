@@ -429,7 +429,8 @@ W_x(T)=\int_0^T P_x(t)dt,
 \land\forall b\in\mathcal B(a),\widehat{\Delta}_TW_b(a;M_t)\ge0\},
 \]
 
-When the field is finite, or compact with an upper-semicontinuous objective,
+When the field is nonempty and finite, or nonempty and compact with an
+upper-semicontinuous objective,
 
 \[
 a^\star\in\operatorname*{arg\,max}_{a\in\mathcal A_J}

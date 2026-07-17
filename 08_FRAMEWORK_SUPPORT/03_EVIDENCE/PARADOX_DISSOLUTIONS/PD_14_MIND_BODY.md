@@ -33,6 +33,15 @@ rosetta:
 
 > **Claim Boundary:** `[I]` This document gives a dimensional reading of the mind-body problem. It does not prove that physicalism, dualism, panpsychism, or analytic philosophy has failed. `D4`, `D5`, `φ`, `ν`, `Φ`, `V`, and `P_node` are framework coordinates for the reading, not public neuroscience variables. Lowercase `φ,ν` name the dimensional coordinate image; uppercase `Φ,V` name the finite-node factors when experience is scored as enacted contact.
 
+> **[金] Kintsugi authority seam — consciousness remains an open empirical and
+> philosophical problem (2026-07-18).** D4 is actual embodied process,
+> experience, report, action, and record; D5 is modeled possibility and cannot
+> itself be “lived contact.” A μ label records a candidate emergence crossing,
+> not a consciousness mechanism, quantum measurement, proof of irreducibility,
+> or extra spacetime dimension. Missing reduction laws mean
+> `currently_unreduced`, not strong emergence. The dimensional material below
+> survives only as `[I]/[C]` analogy where it conflicts with those types.
+
 ---
 
 ## 1. THE PROBLEM
@@ -45,12 +54,12 @@ Inside the framework, mind and body are read not as separate substances but as *
 
 | Aspect | Variable | Dimension | Characteristic |
 |--------|----------|-----------|----------------|
-| **Body / means** | `V` (finite-node means-to-act; `ν` as coordinate image) | D4 at contact, carried into D5 action | Physical substrate, metabolic capacity, neural architecture, tool/access means |
-| **Witness-mind** | `φ` as coordinate image | D4 | Recognition, integration, self-modeling, witness systemic awareness |
-| **Agent-mind / foresight** | `Φ` as finite-node coherence | D5 | Worldline-foresight: envisioning, ranking, and aiming possible moves |
-| **Experience** | `P_node = Φ × V` | D5 contact register | Finite-node embodied contact modeled as enacted product `[I/S]` |
+| **Body / means** | `V` (finite-node means-to-act; `ν` as coordinate image) | D4 actuality | Physical substrate, metabolism, neural activity, tools, and access |
+| **Actual experience/report** | empirical process; optionally scored by declared variables | D4 actuality | Lived occurrence and its observable/reportable traces |
+| **Modeled experiential/agent options** | `Φ` as a declared foresight score | D5 possibility | Candidate interpretations, futures, and actions |
+| **Conjunctive score** | `P_node := Φ × V` | model, not a dimension | Selected normalized product; not consciousness itself `[I/C]` |
 
-### D4: The Mind as Witness
+### D4: Actual Embodied Experience and Report
 
 At **D4** — the convergence point — what we call "mind" is the witness systemic awareness (⊙):
 - φ held as recognition / coherence in the interpretive reading
@@ -58,7 +67,7 @@ At **D4** — the convergence point — what we call "mind" is the witness syste
 
 The mind at D4 is modeled as **pure recognition** — the capacity to witness the body and its viability substrate without yet being the enacted agent in the coordinate reading. This is the "hard problem" vantage: systemic awareness as distinct from physical process in the framework's interpretation. It is not yet the D5 play-rule `Φ`; `Φ` names the later agent-facing worldline-foresight that can use means.
 
-### D5: The Body-Mind Unity
+### D5: Modeled Possibilities About Mind and Action
 
 At **D5** — the present duration — the distinction is modeled as resolving into enacted experience:
 - φ = 1 (coherence held: recognition sustained)

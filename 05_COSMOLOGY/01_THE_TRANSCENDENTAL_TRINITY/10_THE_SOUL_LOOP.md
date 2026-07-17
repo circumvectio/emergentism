@@ -80,12 +80,15 @@ The selector returns either an attempted action or the explicit null action
 \qquad a_t\in\operatorname{Action}\cup\{\bot\}.
 \]
 
-`q_t` records status `authorized_committed`, `unauthorized_attempt`, `refused`,
-or `unavailable`, plus the actor, physical availability, authorization
-assessment (including a nullable envelope), means committed, declared
-intention, timestamp or ordering relation, affected bearers, payers,
-beneficiaries, and expected result where applicable. It does **not** assert
-that the intended consequence occurred.
+`q_t` records exactly one of five statuses: `authorized_committed`,
+`unauthorized_attempt`, `nonconsequential_attempt`, `refused`, or `unavailable`.
+`nonconsequential_attempt` is available only when the validated authorization
+assessment is `not_required` inside `NonConsequentialScope`; it is not an
+authorization bypass for consequential action. The receipt also records the
+actor, physical availability, authorization assessment (including a nullable
+envelope), means committed, declared intention, timestamp or ordering
+relation, affected bearers, payers, beneficiaries, and expected result where
+applicable. It does **not** assert that the intended consequence occurred.
 
 For `a_t∈Action`, the environment separately returns the next state and an
 outcome receipt:

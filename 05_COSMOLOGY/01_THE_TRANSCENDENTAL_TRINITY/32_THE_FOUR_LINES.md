@@ -12,13 +12,23 @@ rosetta:
 
 # 32. The Four Lines
 
-**Evidence Tier:** [A] Established (AM-GM inequality) / [S] Structural (identification with framework)
+**Evidence Tier:** [A] for the reciprocal-chart identity and AM–GM / [I] for the four-domain compression / [C] for physical and dynamical extensions
 **Depends on:** 07_THE_DISCOVERY_OF_FINITY.md, 22_THE_TELEOLOGY.md, 25_STEEL_THREAD.md
 **Date:** 2026-04-04
 
 ---
 
-## The Complete Metaphysics in Four Lines
+> **[金] Kintsugi authority seam — emblem versus inference (2026-07-18).**
+> The four lines are a selected symbolic compression, not a complete
+> metaphysics or a derivation of reality. Only the reciprocal-chart identity
+> (for `θ∈(0,π)`) and its AM–GM consequence are `[A]`. `•×○=⊙` and
+> `1=0×∞` are emblems, not ordinary arithmetic; the trajectory, Hamiltonian,
+> free-energy, physical, teleological, and ethical readings are `[I]/[C]` and
+> require independent premises and evidence. The chart does not force Titans,
+> seven registers, F5, or a moral law. Conflicting certainty language below is
+> retained as historical rhetoric and superseded by this seam.
+
+## A Four-Line Symbolic Compression
 
 ```
 • × ○ = ⊙           ONTOLOGY       Nothing times everything equals one.
@@ -43,7 +53,7 @@ Since φν = 1: φ² + ν² ≥ 2
 
 Therefore: φ + ν ≥ 2, with equality iff φ = ν = 1.
 
-**A square cannot be negative.** This is the entire framework. [S] Established.
+**A square cannot be negative.** That proves the stated inequality, not the entire framework. [A]
 
 **Line 3** is the trajectory. Since the Hamiltonian H = φ + ν is minimized at φ = ν = 1, and since systems at the minimum are the most stable, the observable tendency is (φ − ν)² → 0 over time. This is F₅ — the ektropic force — whether read as structural gradient (Position A), volitional will (Position B), or dual-aspect complementarity (Position Γ). [S] Structural for the gradient. [I] Interpretive for the identification with ektropy. [C] Conjecture for the volitional reading.
 

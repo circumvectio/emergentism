@@ -7,6 +7,16 @@ rosetta:
 
 # THE AGENTS -- VMOSK-A + Rosetta Castes + L1-L7 Pipeline
 
+> **[金] Kintsugi authority seam — compiled dispatch, not sovereignty
+> (2026-07-18).** This Uplink document is a workforce router, not the source of
+> worldview mathematics, ontology, ethics, or authorization. The seven postures
+> are selected `[I/T]` roles and are not forced by `φν=1`; they never encode
+> human worth or hereditary identity. Every unqualified K2/“mortal signer”
+> sentence below is scoped to private DAVs only. Public DAVs use their declared
+> PRISM process; all other consequential action requires a complete, scoped,
+> revocable, contestable AuthorizationEnvelope. The current Compass owners
+> supersede any conflicting D4/D5, quantum, D6, or aggregate-ethics shorthand.
+
 > The complete agent architecture. Who does the work and how.
 > Nothing is self-evident. Every term is explained.
 >
@@ -22,8 +32,8 @@ rosetta:
 > dispatch, addressing, or micro/macro interaction.
 >
 > **Authority note:** this file assigns workforce grammar, not sovereignty.
-> AI may parse, route, draft, lint, and prepare. Mortals or constitutionally
-> authorized signers commit irreversible acts.
+> AI may parse, route, draft, lint, and prepare. A named actor may commit a
+> consequential act only under the applicable complete AuthorizationEnvelope.
 >
 > **Classical-lens note:** the seven castes (L1 Caṇḍāla → L7 Ṛṣi) are *postures*
 > the agent adopts at each phase of the cognitive cycle, not seven separately
@@ -31,7 +41,8 @@ rosetta:
 > observe); L3 during *Dianoia* (Truth / orient); L4 during *Phronesis*-into-
 > action (Goodness / decide and stage K2 envelope), with L5 escalation when
 > structurally blocked and L7 escalation for framework-boundary judgment;
-> *Nous* (K2) closes the cycle from outside; L6 *via negativa* compression runs
+> *Nous* names the final authorization checkpoint in this historical lens; it
+> is K2 only for private DAVs. L6 *via negativa* compression runs
 > between cycles. Full classical reading at
 > [`../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/_DOCTRINE/05_ORGAN_CLASSICAL_LENS.md`](../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/_DOCTRINE/05_ORGAN_CLASSICAL_LENS.md).
 > **K3 banner (2026-05-30):** the constitutional ruling is **5 + 1**:
@@ -275,7 +286,7 @@ The "A" in VMOSK-A is the Rosetta itself. Each row defines a caste of cognitive 
 | **L4** | Kṣatriya | Warrior/Executor | Arjuna ⚔ (Transform) | THE EQUATOR. Verify constitutional pass. EXECUTE or REFUSE. If all paths toxic, escalate to L5. Every execution is memetic precedent. | Arthāpatti (Postulation / Abduction) | Abductive | Timocracy | Opus @ T=0.2 | -- (cloud only) | T=1.0 balanced | Ego-death station. phi=nu=1 | Memotype | MEETING POINT |
 | **L5** | Brāhmaṇa | Architect/Systematizer | Brahmā ○ (Position Tag) | Receive escalations. Analyze deadlocks. Redraw rules and spatial constraints. Redesign so the paradox dissolves. | Śabda (Testimony) | Systematic | Aristocracy | Gemini 1M / Opus | -- (cloud only) | T=0.4 | Holistic, large context | Egregoreotype | TOP DOWN |
 | **L6** | Sādhu | Renunciant/Compressor | Śiva • (Position Tag) | Prune dead weight. Compress complexity into harmonic limits. Strip everything non-essential. Output: minimum viable redesign. | First Principles (Non-Apprehension) | Axiomatic | Anarchy | Haiku | BitNet 3B constrained | T=0.1 | Extreme compression | Protocolotype | TOP DOWN |
-| **L7** | Ṛṣi | Seer/Constitutional Rewriter | Viṣṇu ⊙ (Position Tag) | ONLY invoked at existential crisis. Verify if collision is pathology or evolutionary leap. Rewrite constitution if needed. ALWAYS return to L4*. | Pratibhā (Intuition) | Transcendental | Theocracy | Opus @ T=0.5 | -- (cloud only) | Undefined | Beyond calculation | Genesis (D0=D6 closure) | TOP DOWN (rare) |
+| **L7** | Ṛṣi | Seer/Constitutional Rewriter | Viṣṇu ⊙ (Position Tag) | ONLY invoked at existential crisis. Verify if collision is pathology or evolutionary leap. Rewrite constitution if needed. ALWAYS return to L4*. | Pratibhā (Intuition) | Transcendental | Theocracy | Opus @ T=0.5 | -- (cloud only) | Undefined | Beyond calculation | Genesis (`r₆:D6↝D0` return) | TOP DOWN (rare) |
 
 **Deployment note:** when these castes are instantiated as project-scoped Codex
 subagents, the live canonical set is exactly these seven rows. Temporary helper
@@ -301,7 +312,7 @@ L1 Phenotype (observed outward form) → L2 Genotype (generative source
 inferred via analogy) → L3 Extended Phenotype (deductive extension into
 niche) → L4 Memotype (memetic propagation of decision) → L5 Egregoreotype
 (collective pattern) → L6 Protocolotype (invariant protocol compression) →
-L7 Genesis (D0 ≡ D6 closure). Reading II (diagnosed in
+L7 Genesis (the non-μ interpretive return `r₆:D6↝D0`, not identity). Reading II (diagnosed in
 [50_AUDITS_AND_EXECUTIONS/63_LIMIT_B_DISAMBIGUATION_PACKET_2026_04_23.md](../50_AUDITS_AND_EXECUTIONS/63_LIMIT_B_DISAMBIGUATION_PACKET_2026_04_23.md))
 preserves biological Corollary C4 ordering at L2–L6; Reading I instead
 preserves the cognitive ordering. Both are structurally valid; the Rosetta
