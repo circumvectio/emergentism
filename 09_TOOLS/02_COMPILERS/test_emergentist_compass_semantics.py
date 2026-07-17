@@ -144,7 +144,14 @@ class AuthorizationEnvelope:
             self.contest_path,
             self.actor,
         )
-        return self.consent and all(textual) and bool(self.consequence_bearers)
+        bearers = self.consequence_bearers
+        return (
+            self.consent
+            and all(textual)
+            and bool(bearers)
+            and all(isinstance(item, str) and item.strip() for item in bearers)
+            and len(bearers) == len(set(bearers))
+        )
 
 
 @dataclass(frozen=True)
@@ -190,6 +197,11 @@ class CommitmentReceipt:
     actor: str
     physical_availability: str
     authorization_status: str
+    evaluation_id: str = "evaluation-1"
+    evaluation_bearer_ids: tuple[str, ...] = ("system",)
+    expected_bearer_deltas: tuple[tuple[str, float], ...] = (("system", 0.0),)
+    payer_ids: tuple[str, ...] = ()
+    beneficiary_ids: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -201,6 +213,9 @@ class OutcomeReceipt:
     observed_outcome: str
     environment_state_before: int
     environment_state_after: int
+    evaluation_ref: str = "evaluation-1"
+    consequence_bearer_ids: tuple[str, ...] = ("system",)
+    bearer_observation_ids: tuple[str, ...] = ("system",)
 
 
 def select_action(
@@ -210,8 +225,12 @@ def select_action(
     authorization: AuthorizationAssessment,
     *,
     governed: bool = False,
+    bearer_ids: tuple[str, ...] = ("system",),
+    payer_ids: tuple[str, ...] = (),
+    beneficiary_ids: tuple[str, ...] = (),
 ) -> tuple[Optional[str], CommitmentReceipt]:
     authorization_status = authorization.validated_status()
+    expected_bearer_deltas = tuple((bearer_id, 0.0) for bearer_id in bearer_ids)
     executable = sorted(
         action
         for action in admissible_actions
@@ -228,6 +247,10 @@ def select_action(
             actor,
             "unavailable",
             authorization_status,
+            evaluation_bearer_ids=bearer_ids,
+            expected_bearer_deltas=expected_bearer_deltas,
+            payer_ids=payer_ids,
+            beneficiary_ids=beneficiary_ids,
         )
     selected = max(executable, key=lambda action: action_weights[action])
     actor = authorization.envelope.actor if authorization.envelope else "unknown"
@@ -241,6 +264,10 @@ def select_action(
             actor,
             "available",
             authorization_status,
+            evaluation_bearer_ids=bearer_ids,
+            expected_bearer_deltas=expected_bearer_deltas,
+            payer_ids=payer_ids,
+            beneficiary_ids=beneficiary_ids,
         )
     expected = "advanced" if selected == "advance" else f"completed:{selected}"
     return selected, CommitmentReceipt(
@@ -257,24 +284,52 @@ def select_action(
         actor,
         "available",
         authorization_status,
+        evaluation_bearer_ids=bearer_ids,
+        expected_bearer_deltas=expected_bearer_deltas,
+        payer_ids=payer_ids,
+        beneficiary_ids=beneficiary_ids,
     )
 
 
 def environment_transition(
-    state: int, action: str, *, veto: bool = False
+    state: int,
+    action: str,
+    *,
+    veto: bool = False,
+    consequence_bearer_ids: tuple[str, ...] = ("system",),
 ) -> tuple[int, OutcomeReceipt]:
     if veto:
         return state, OutcomeReceipt(
-            "outcome", "action_attempt", action, None, "vetoed", state, state
+            "outcome",
+            "action_attempt",
+            action,
+            None,
+            "vetoed",
+            state,
+            state,
+            consequence_bearer_ids=consequence_bearer_ids,
+            bearer_observation_ids=consequence_bearer_ids,
         )
     next_state = state + 1
     observed = "advanced" if action == "advance" else f"completed:{action}"
     return next_state, OutcomeReceipt(
-        "outcome", "action_attempt", action, action, observed, state, next_state
+        "outcome",
+        "action_attempt",
+        action,
+        action,
+        observed,
+        state,
+        next_state,
+        consequence_bearer_ids=consequence_bearer_ids,
+        bearer_observation_ids=consequence_bearer_ids,
     )
 
 
-def ambient_observation(state_before: int, state_after: int) -> OutcomeReceipt:
+def ambient_observation(
+    state_before: int,
+    state_after: int,
+    consequence_bearer_ids: tuple[str, ...] = ("system",),
+) -> OutcomeReceipt:
     return OutcomeReceipt(
         "outcome",
         "ambient_observation",
@@ -283,7 +338,83 @@ def ambient_observation(state_before: int, state_after: int) -> OutcomeReceipt:
         "ambient-change",
         state_before,
         state_after,
+        consequence_bearer_ids=consequence_bearer_ids,
+        bearer_observation_ids=consequence_bearer_ids,
     )
+
+
+def receipt_bearer_coverage_valid(
+    commitment: CommitmentReceipt,
+    outcome: Optional[OutcomeReceipt],
+    authorization: AuthorizationAssessment,
+) -> bool:
+    """Fail closed if a named bearer disappears across authorization and receipts."""
+
+    def named_unique(values: Sequence[str], *, nonempty: bool) -> bool:
+        return (
+            (bool(values) or not nonempty)
+            and all(isinstance(value, str) and value.strip() for value in values)
+            and len(values) == len(set(values))
+        )
+
+    try:
+        authorization.validated_status()
+    except ValueError:
+        return False
+
+    evaluated = commitment.evaluation_bearer_ids
+    delta_ids = tuple(bearer_id for bearer_id, _ in commitment.expected_bearer_deltas)
+    if not named_unique(evaluated, nonempty=True):
+        return False
+    if not named_unique(delta_ids, nonempty=True) or set(delta_ids) != set(evaluated):
+        return False
+    if not all(
+        isinstance(delta, (int, float)) and math.isfinite(delta)
+        for _, delta in commitment.expected_bearer_deltas
+    ):
+        return False
+
+    evaluated_set = set(evaluated)
+    for named_subset in (commitment.payer_ids, commitment.beneficiary_ids):
+        if not named_unique(named_subset, nonempty=False):
+            return False
+        if not set(named_subset) <= evaluated_set:
+            return False
+    if authorization.envelope is not None:
+        authorized = authorization.envelope.consequence_bearers
+        if not named_unique(authorized, nonempty=True):
+            return False
+        if not set(authorized) <= evaluated_set:
+            return False
+
+    if commitment.status in {"refused", "unavailable"} and (
+        commitment.attempted_action_id is not None
+        or commitment.expected_outcome is not None
+    ):
+        return False
+    if outcome is None:
+        return True
+
+    consequences = outcome.consequence_bearer_ids
+    observations = outcome.bearer_observation_ids
+    if not named_unique(consequences, nonempty=True):
+        return False
+    if not named_unique(observations, nonempty=True):
+        return False
+    if set(observations) != set(consequences):
+        return False
+    if outcome.receipt_cause == "action_attempt":
+        return (
+            outcome.attempted_action_id is not None
+            and outcome.evaluation_ref == commitment.evaluation_id
+            and set(consequences) == evaluated_set
+        )
+    if outcome.receipt_cause == "ambient_observation":
+        return (
+            outcome.attempted_action_id is None
+            and outcome.performed_action_id is None
+        )
+    return False
 
 
 def loop_update(
@@ -359,6 +490,105 @@ class SoulLoopAndConeTests(unittest.TestCase):
         self.assertEqual(outcome.receipt_type, "outcome")
         self.assertEqual(outcome.performed_action_id, "advance")
         self.assertIsNot(type(commitment), type(outcome))
+
+    def test_bearer_coverage_is_end_to_end_and_fail_closed(self) -> None:
+        action, commitment = select_action(
+            {"advance": 1.0},
+            {"advance": 1.0},
+            {"advance"},
+            self.authorization,
+            bearer_ids=("system", "neighbor"),
+            payer_ids=("system",),
+            beneficiary_ids=("neighbor",),
+        )
+        _, outcome = environment_transition(
+            3,
+            action or "",
+            consequence_bearer_ids=("system", "neighbor"),
+        )
+        self.assertTrue(
+            receipt_bearer_coverage_valid(
+                commitment, outcome, self.authorization
+            )
+        )
+
+        malformed = (
+            (
+                replace(
+                    commitment,
+                    expected_bearer_deltas=(("system", 0.0),),
+                ),
+                outcome,
+                self.authorization,
+            ),
+            (
+                replace(commitment, payer_ids=("unnamed-payer",)),
+                outcome,
+                self.authorization,
+            ),
+            (
+                replace(commitment, beneficiary_ids=("unnamed-beneficiary",)),
+                outcome,
+                self.authorization,
+            ),
+            (
+                replace(
+                    commitment,
+                    evaluation_bearer_ids=("system", "system"),
+                    expected_bearer_deltas=(
+                        ("system", 0.0),
+                        ("system", 0.0),
+                    ),
+                ),
+                outcome,
+                self.authorization,
+            ),
+            (
+                commitment,
+                replace(outcome, consequence_bearer_ids=("system",)),
+                self.authorization,
+            ),
+            (
+                commitment,
+                replace(outcome, bearer_observation_ids=("system",)),
+                self.authorization,
+            ),
+            (
+                commitment,
+                replace(outcome, evaluation_ref="different-evaluation"),
+                self.authorization,
+            ),
+            (
+                replace(
+                    commitment,
+                    status="refused",
+                    attempted_action_id=None,
+                    expected_outcome="must-be-null",
+                ),
+                None,
+                self.authorization,
+            ),
+            (
+                commitment,
+                outcome,
+                AuthorizationAssessment(
+                    "valid",
+                    replace(
+                        self.envelope,
+                        consequence_bearers=("system", "authorized-but-dropped"),
+                    ),
+                ),
+            ),
+        )
+        for index, (bad_commitment, bad_outcome, authorization) in enumerate(
+            malformed
+        ):
+            with self.subTest(case=index):
+                self.assertFalse(
+                    receipt_bearer_coverage_valid(
+                        bad_commitment, bad_outcome, authorization
+                    )
+                )
 
     def test_selected_option_without_means_yields_null_action(self) -> None:
         action, receipt = select_action(

@@ -143,12 +143,22 @@ domain-specific; in many applications only a vector of errors is defensible.
 
 \[
 \varepsilon_E
-=\operatorname{distance}(\operatorname{intended}(q_t),
-                         \operatorname{performed}(q_t)).
+:=
+\left(
+d_{\mathcal A}(\operatorname{intendedAction}(q_t),
+               \operatorname{attemptedAction}(q_t)),
+d_{\mathcal A}(\operatorname{attemptedAction}(q_t),
+               \operatorname{performedAction}(r_{t+1}))
+\right).
 \]
 
-An intention is not a performed action. Authorization, means, custody, and
-execution all belong here.
+Intention and attempted action belong to the commitment receipt; performed
+action belongs to the world-facing outcome receipt. Authorization, means,
+custody, and execution all belong here. The three terms are first mapped into
+one declared action-description space `\mathcal A`; the execution gap is a
+two-component error rather than a distance between unlike tuples. If no
+action-attributed outcome exists, the second component is null/not-applicable
+rather than silently replaced by an outcome-consequence comparison.
 
 ### Outcome gap
 

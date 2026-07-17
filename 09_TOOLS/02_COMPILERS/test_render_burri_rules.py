@@ -300,6 +300,92 @@ class TopologyContractTests(unittest.TestCase):
         self.assertIn("ambient_observation", outcome_schema["invariant"])
         self.assertIn("never an action-attributed outcome", self.topology["receiptBoundary"]["nullActionCase"])
 
+    def test_bearer_coverage_is_explicit_across_authorization_and_both_receipts(self):
+        schemas = {item["id"]: item for item in self.topology["schemas"]}
+        self.assertIn(
+            "NonEmpty Unique[BearerId]",
+            schemas["AuthorizationEnvelope"]["invariant"],
+        )
+        self.assertEqual(
+            schemas["EvaluationContract"]["fields"]["bearerIds"],
+            "[BearerId]",
+        )
+        self.assertIn(
+            "NonEmpty Unique[BearerId]",
+            schemas["EvaluationContract"]["invariant"],
+        )
+
+        commitment = schemas["CommitmentReceipt"]
+        self.assertEqual(commitment["fields"]["expectedOutcome"], "String?")
+        for fragment in (
+            "keys(expectedBearerDeltas)=set(evaluation.bearerIds)",
+            "authorization.envelope.consequenceBearerIds, payerIds, and beneficiaryIds is a subset of evaluation.bearerIds",
+            "status in {refused,unavailable} requires attemptedActionId=null and expectedOutcome=null",
+        ):
+            self.assertIn(fragment, commitment["invariant"])
+
+        outcome = schemas["OutcomeReceipt"]
+        for fragment in (
+            "consequenceBearerIds is NonEmpty Unique[BearerId]",
+            "set(bearerObservations.bearerId)=set(consequenceBearerIds)",
+            "evaluationRef=q.evaluation.id and set(consequenceBearerIds)=set(q.evaluation.bearerIds)",
+        ):
+            self.assertIn(fragment, outcome["invariant"])
+
+    def test_bearer_contract_mutations_fail_validation(self):
+        mutations = (
+            (
+                "AuthorizationEnvelope",
+                "invariant",
+                "consequenceBearerIds may be empty",
+                "consequence bearers must be nonempty and unique",
+            ),
+            (
+                "EvaluationContract",
+                "invariant",
+                "bearerIds may repeat",
+                "bearerIds must be nonempty and unique",
+            ),
+            (
+                "CommitmentReceipt",
+                "invariant",
+                "status in {refused,unavailable} requires attemptedActionId=null and expectedOutcome=null",
+                "keys(expectedBearerDeltas)=set(evaluation.bearerIds)",
+            ),
+            (
+                "OutcomeReceipt",
+                "invariant",
+                "consequenceBearerIds is NonEmpty Unique[BearerId]",
+                "set(bearerObservations.bearerId)=set(consequenceBearerIds)",
+            ),
+        )
+        for schema_id, field, replacement, expected_error in mutations:
+            with self.subTest(schema=schema_id):
+                mutant = copy.deepcopy(self.topology)
+                schema = next(
+                    item for item in mutant["schemas"] if item["id"] == schema_id
+                )
+                schema[field] = replacement
+                self.assertTrue(
+                    any(
+                        expected_error in error
+                        for error in self.api.validate_topology(mutant, REPO_ROOT)
+                    )
+                )
+
+        mutant = copy.deepcopy(self.topology)
+        next(
+            item
+            for item in mutant["schemas"]
+            if item["id"] == "CommitmentReceipt"
+        )["fields"]["expectedOutcome"] = "String"
+        self.assertTrue(
+            any(
+                "expectedOutcome must be nullable" in error
+                for error in self.api.validate_topology(mutant, REPO_ROOT)
+            )
+        )
+
     def test_receipt_cause_mutations_fail_validation(self):
         mutant = copy.deepcopy(self.topology)
         next(item for item in mutant["schemas"] if item["id"] == "OutcomeReceipt")["fields"]["receiptCause"] = "action_attempt"
@@ -409,23 +495,9 @@ class RenderingContractTests(unittest.TestCase):
             ids = [item.attrib["id"] for item in root.iter() if "id" in item.attrib]
             self.assertEqual(len(ids), len(set(ids)), view_id)
 
-    def test_rendered_edges_preserve_possible_dashes_and_actual_solids(self):
-        expectations = {
-            "proof": {
-                "possible": ("e-mu4-d5", "e-d5-mu5", "e-option-a-chi"),
-                "actual": ("e-d4-mu4", "e-mu5-d6", "e-selector-chi"),
-            },
-            "emblem": {
-                "possible": ("e-model-option-a", "e-option-a-chi"),
-                "actual": (
-                    "e-commitment-action",
-                    "e-action-outcome",
-                    "e-outcome-model-feedback",
-                ),
-            },
-        }
+    def test_every_rendered_topology_edge_uses_only_its_declared_modality_dash(self):
         topology_edges = {edge["id"]: edge for edge in self.topology["edges"]}
-        for view_id, groups in expectations.items():
+        for view_id in ("proof", "emblem"):
             root = ET.fromstring(
                 self.api.render_view(self.topology, view_id, self.digest)
             )
@@ -434,18 +506,17 @@ class RenderingContractTests(unittest.TestCase):
                 for item in root.iter()
                 if "id" in item.attrib
             }
-            for edge_id in groups["possible"]:
+            rendered_edge_ids = sorted(set(rendered_by_id) & set(topology_edges))
+            self.assertTrue(rendered_edge_ids, view_id)
+            for edge_id in rendered_edge_ids:
                 with self.subTest(view=view_id, edge=edge_id):
-                    self.assertEqual(topology_edges[edge_id]["modality"], "possible")
-                    self.assertTrue(
+                    declared_possible = (
+                        topology_edges[edge_id]["modality"] == "possible"
+                    )
+                    rendered_dashed = bool(
                         rendered_by_id[edge_id].attrib.get("stroke-dasharray")
                     )
-            for edge_id in groups["actual"]:
-                with self.subTest(view=view_id, edge=edge_id):
-                    self.assertEqual(topology_edges[edge_id]["modality"], "actual")
-                    self.assertNotIn(
-                        "stroke-dasharray", rendered_by_id[edge_id].attrib
-                    )
+                    self.assertEqual(rendered_dashed, declared_possible)
 
     def test_generated_files_are_current_and_repeat_generation_is_byte_stable(self):
         self.assertEqual(self.api.check_outputs(TOPOLOGY, REPO_ROOT), [])

@@ -263,6 +263,14 @@ def validate_topology(
             or variants["not_required"].get("scope") != "NonConsequentialScope"
         ):
             errors.append("not_required authorization requires empty reasons and NonConsequentialScope")
+    envelope_schema = _schema(topology, "AuthorizationEnvelope")
+    if "NonEmpty Unique[BearerId]" not in str(envelope_schema.get("invariant", "")):
+        errors.append("AuthorizationEnvelope consequence bearers must be nonempty and unique")
+    evaluation_schema = _schema(topology, "EvaluationContract")
+    if evaluation_schema.get("fields", {}).get("bearerIds") != "[BearerId]" or "NonEmpty Unique[BearerId]" not in str(
+        evaluation_schema.get("invariant", "")
+    ):
+        errors.append("EvaluationContract bearerIds must be nonempty and unique")
     commitment_schema = _schema(topology, "CommitmentReceipt")
     commitment_fields = commitment_schema.get("fields", {})
     if "validated authorization.status" not in str(
@@ -273,6 +281,16 @@ def validate_topology(
         errors.append("CommitmentReceipt needs a closed status derivation")
     if "nonconsequential_attempt" not in str(commitment_fields.get("status", "")) or "not_required" not in str(commitment_schema.get("statusDerivation", "")):
         errors.append("not_required must derive only to nonconsequential_attempt")
+    if commitment_fields.get("expectedOutcome") != "String?":
+        errors.append("CommitmentReceipt expectedOutcome must be nullable")
+    commitment_invariant = str(commitment_schema.get("invariant", ""))
+    for fragment in (
+        "keys(expectedBearerDeltas)=set(evaluation.bearerIds)",
+        "authorization.envelope.consequenceBearerIds, payerIds, and beneficiaryIds is a subset of evaluation.bearerIds",
+        "status in {refused,unavailable} requires attemptedActionId=null and expectedOutcome=null",
+    ):
+        if fragment not in commitment_invariant:
+            errors.append(f"CommitmentReceipt bearer invariant missing: {fragment}")
     outcome_schema = _schema(topology, "OutcomeReceipt")
     outcome_fields = outcome_schema.get("fields", {})
     if outcome_fields.get("receiptCause") != "action_attempt | ambient_observation":
@@ -283,6 +301,9 @@ def validate_topology(
     for fragment in (
         "action_attempt requires attemptedActionId non-null",
         "ambient_observation requires attemptedActionId=null and performedActionId=null",
+        "consequenceBearerIds is NonEmpty Unique[BearerId]",
+        "set(bearerObservations.bearerId)=set(consequenceBearerIds)",
+        "evaluationRef=q.evaluation.id and set(consequenceBearerIds)=set(q.evaluation.bearerIds)",
     ):
         if fragment not in outcome_invariant:
             errors.append(f"OutcomeReceipt invariant missing: {fragment}")
@@ -516,6 +537,15 @@ def _path(
     )
 
 
+def _edge_dash(
+    edges_by_id: Mapping[str, Mapping[str, Any]], edge_id: str
+) -> str | None:
+    """Derive graph-edge dash solely from the topology modality."""
+
+    edge = edges_by_id[edge_id]
+    return "6 5" if edge["modality"] == "possible" else None
+
+
 def _state_node(
     svg: _Svg,
     node: Mapping[str, Any],
@@ -592,7 +622,7 @@ def _render_spine(svg: _Svg, topology: Mapping[str, Any], dark: bool = False) ->
             x2,
             y2,
             color=muted if is_possible else ink,
-            dash="6 5" if is_possible else None,
+            dash=_edge_dash(edges_by_id, edge_id),
             marker=(
                 "arrow-light"
                 if dark
@@ -639,7 +669,7 @@ def _render_spine(svg: _Svg, topology: Mapping[str, Any], dark: bool = False) ->
         f"M {state_xs[-1]} {y+27} C {state_xs[-1]} {closure_y}, {state_xs[0]} {closure_y}, {state_xs[0]} {y+27}",
         color=muted,
         width=2,
-        dash="9 6",
+        dash=_edge_dash(edges_by_id, "r6"),
         marker="arrow-light" if dark else "arrow-actual",
         id="r6",
     )
@@ -670,6 +700,7 @@ def _render_proof(topology: Mapping[str, Any], digest: str) -> str:
     _render_spine(svg, topology)
 
     by_id = {node["id"]: node for node in topology["nodes"]}
+    edges_by_id = {edge["id"]: edge for edge in topology["edges"]}
     actual = "#332d29"
     possible = "#526879"
     gold = "#7b5f18"
@@ -687,12 +718,12 @@ def _render_proof(topology: Mapping[str, Any], digest: str) -> str:
     svg.close("g")
 
     # Actual present carriers and merely-possible represented contents.
-    _line(svg, 417, 405, 458, 405, color=actual, marker="arrow-actual", id="e-model-rank")
-    _line(svg, 612, 405, 653, 405, color=actual, marker="arrow-actual", id="e-rank-selector")
-    _path(svg, "M 340 432 C 340 478, 395 490, 430 506", color=possible, dash="5 5", marker="arrow-possible", id="e-model-option-a")
-    _path(svg, "M 340 432 C 420 470, 575 485, 650 506", color=possible, dash="5 5", marker="arrow-possible", id="e-model-option-b")
-    _path(svg, "M 535 432 C 515 478, 465 490, 430 506", color=possible, dash="5 5", marker="arrow-possible", id="e-rank-option-a")
-    _path(svg, "M 535 432 C 560 475, 620 488, 650 506", color=possible, dash="5 5", marker="arrow-possible", id="e-rank-option-b")
+    _line(svg, 417, 405, 458, 405, color=actual, dash=_edge_dash(edges_by_id, "e-model-rank"), marker="arrow-actual", id="e-model-rank")
+    _line(svg, 612, 405, 653, 405, color=actual, dash=_edge_dash(edges_by_id, "e-rank-selector"), marker="arrow-actual", id="e-rank-selector")
+    _path(svg, "M 340 432 C 340 478, 395 490, 430 506", color=possible, dash=_edge_dash(edges_by_id, "e-model-option-a"), marker="arrow-possible", id="e-model-option-a")
+    _path(svg, "M 340 432 C 420 470, 575 485, 650 506", color=possible, dash=_edge_dash(edges_by_id, "e-model-option-b"), marker="arrow-possible", id="e-model-option-b")
+    _path(svg, "M 535 432 C 515 478, 465 490, 430 506", color=possible, dash=_edge_dash(edges_by_id, "e-rank-option-a"), marker="arrow-possible", id="e-rank-option-a")
+    _path(svg, "M 535 432 C 560 475, 620 488, 650 506", color=possible, dash=_edge_dash(edges_by_id, "e-rank-option-b"), marker="arrow-possible", id="e-rank-option-b")
     _state_node(svg, by_id["d4-model-token"], ["M_t actual token", "represents D5 future"])
     _state_node(svg, by_id["d4-rank-event"], ["actual rank event", "orders D5 contents"])
     _state_node(svg, by_id["d4-selector-token"], ["G_t actual selector", "next-cycle policy"])
@@ -700,19 +731,19 @@ def _render_proof(topology: Mapping[str, Any], digest: str) -> str:
     _state_node(svg, by_id["d5-option-b"], ["D5 option B", "merely possible"], possible=True)
 
     # Means and the independent physical / authorization assessments.
-    _line(svg, 507, 655, 533, 655, color=actual, marker="arrow-actual", id="e-means-availability")
-    _path(svg, "M 687 655 C 750 650, 790 624, 814 605", color=actual, marker="arrow-actual", id="e-availability-chi")
-    _path(svg, "M 687 705 C 770 705, 800 650, 830 611", color=gold, dash="3 4", marker="arrow-actual", id="e-authorization-chi")
-    _path(svg, "M 730 432 C 750 490, 810 520, 842 556", color=actual, marker="arrow-actual", id="e-selector-chi")
-    _path(svg, "M 650 562 C 715 585, 765 588, 822 586", color=possible, dash="5 5", marker="arrow-possible", id="e-option-a-chi")
+    _line(svg, 507, 655, 533, 655, color=actual, dash=_edge_dash(edges_by_id, "e-means-availability"), marker="arrow-actual", id="e-means-availability")
+    _path(svg, "M 687 655 C 750 650, 790 624, 814 605", color=actual, dash=_edge_dash(edges_by_id, "e-availability-chi"), marker="arrow-actual", id="e-availability-chi")
+    _path(svg, "M 687 705 C 770 705, 800 650, 830 611", color=gold, dash=_edge_dash(edges_by_id, "e-authorization-chi"), marker="arrow-actual", id="e-authorization-chi")
+    _path(svg, "M 730 432 C 750 490, 810 520, 842 556", color=actual, dash=_edge_dash(edges_by_id, "e-selector-chi"), marker="arrow-actual", id="e-selector-chi")
+    _path(svg, "M 650 562 C 715 585, 765 588, 822 586", color=possible, dash=_edge_dash(edges_by_id, "e-option-a-chi"), marker="arrow-possible", id="e-option-a-chi")
     _state_node(svg, by_id["d4-means"], ["V_t embodied means", "actual resources"], width=154)
     _state_node(svg, by_id["physical-availability"], ["PHYSICAL", "available / unavailable"], width=154)
     _state_node(svg, by_id["authorization"], ["AUTHORIZATION", "valid / invalid / absent"], width=154)
 
     # Commitment, two receipts, environment, and both feedback targets.
-    _line(svg, 925, 585, 980, 585, color=actual, width=2.7, marker="arrow-actual", id="e-chi-commitment")
-    _line(svg, 1120, 585, 1150, 585, color=actual, width=2.7, marker="arrow-actual", id="e-commitment-action")
-    _line(svg, 1292, 585, 1320, 585, color=actual, width=2.7, marker="arrow-actual", id="e-action-outcome")
+    _line(svg, 925, 585, 980, 585, color=actual, width=2.7, dash=_edge_dash(edges_by_id, "e-chi-commitment"), marker="arrow-actual", id="e-chi-commitment")
+    _line(svg, 1120, 585, 1150, 585, color=actual, width=2.7, dash=_edge_dash(edges_by_id, "e-commitment-action"), marker="arrow-actual", id="e-commitment-action")
+    _line(svg, 1292, 585, 1320, 585, color=actual, width=2.7, dash=_edge_dash(edges_by_id, "e-action-outcome"), marker="arrow-actual", id="e-action-outcome")
     svg.open("g", id="chi", **{"data-primitive": "commitment"})
     svg.add("polygon", points="875,540 927,585 875,630 823,585", fill="#ffe7a3", stroke=gold, **{"stroke-width": 2.5})
     svg.text(875, 580, "chi", size=19, fill=actual, weight=800, anchor="middle")
@@ -725,8 +756,8 @@ def _render_proof(topology: Mapping[str, Any], digest: str) -> str:
     svg.add("rect", x=875, y=643, width=350, height=21, rx=10, fill="#fbf7eb")
     svg.text(1050, 657, "a_t = bottom -> null or ambient OutcomeReceipt (distinct cause)", size=9, fill="#5b534c", anchor="middle")
 
-    _path(svg, "M 1390 552 C 1390 280, 395 280, 340 376", color=actual, width=2.2, marker="arrow-actual", id="e-outcome-model-feedback")
-    _path(svg, "M 1390 617 C 1350 680, 950 710, 730 434", color=gold, width=2.2, marker="arrow-actual", id="e-outcome-selector-feedback")
+    _path(svg, "M 1390 552 C 1390 280, 395 280, 340 376", color=actual, width=2.2, dash=_edge_dash(edges_by_id, "e-outcome-model-feedback"), marker="arrow-actual", id="e-outcome-model-feedback")
+    _path(svg, "M 1390 617 C 1350 680, 950 710, 730 434", color=gold, width=2.2, dash=_edge_dash(edges_by_id, "e-outcome-selector-feedback"), marker="arrow-actual", id="e-outcome-selector-feedback")
     svg.text(1045, 292, "Loop(M_t, G_t, q_t, r_t+1) revises M", size=10, fill="#5b534c", weight=600)
     svg.text(900, 690, "receipt also revises G · not optional", size=10, fill=gold, weight=700)
 
@@ -751,7 +782,7 @@ def _render_proof(topology: Mapping[str, Any], digest: str) -> str:
         svg.text(177.5, 851, "alternatives", size=11, fill=possible, anchor="middle")
         svg.text(437.5, 836, "D4 observer-relative", size=11, fill=actual, weight=700, anchor="middle")
         svg.text(437.5, 851, "factual record", size=11, fill=actual, anchor="middle")
-        _line(svg, 265, 839, 350, 839, color=possible, dash="5 5", marker="arrow-possible", id="e-quantum-correspondence")
+        _line(svg, 265, 839, 350, 839, color=possible, dash=_edge_dash(edges_by_id, "e-quantum-correspondence"), marker="arrow-possible", id="e-quantum-correspondence")
         svg.text(312, 879, "no extra dimension · no mu/chi measurement identity", size=9, fill="#5b534c", anchor="middle")
         svg.close("g")
 
@@ -783,8 +814,8 @@ def _render_proof(topology: Mapping[str, Any], digest: str) -> str:
     svg.text(1280, 831, "EGREGOREOTYPE", size=11, fill=actual, weight=800, anchor="middle")
     svg.text(1280, 849, "etaObserved = n | ?", size=9, fill=possible, weight=600, anchor="middle")
     svg.close("g")
-    _path(svg, "M 1390 617 C 1410 700, 1360 760, 1330 795", color=actual, marker="arrow-actual", id="e-outcome-trace")
-    _path(svg, "M 1215 835 C 1070 825, 890 720, 748 434", color=gold, dash="4 4", marker="arrow-actual", id="e-trace-selector")
+    _path(svg, "M 1390 617 C 1410 700, 1360 760, 1330 795", color=actual, dash=_edge_dash(edges_by_id, "e-outcome-trace"), marker="arrow-actual", id="e-outcome-trace")
+    _path(svg, "M 1215 835 C 1070 825, 890 720, 748 434", color=gold, dash=_edge_dash(edges_by_id, "e-trace-selector"), marker="arrow-actual", id="e-trace-selector")
     svg.multiline(1390, 816, ["affected bearer set", "payerIds / beneficiaryIds", "custody · consent · exit"], size=9, fill="#5b534c", anchor="middle", leading=14)
     svg.text(1280, 895, "five trace tests · no consciousness or personhood presumed", size=9, fill="#5b534c", anchor="middle")
 
@@ -810,9 +841,6 @@ def _render_emblem(topology: Mapping[str, Any], digest: str) -> str:
     gold = "#e8c96b"
     panel = "#171d22"
     edges_by_id = {edge["id"]: edge for edge in topology["edges"]}
-
-    def modality_dash(edge_id: str) -> str | None:
-        return "6 5" if edges_by_id[edge_id]["modality"] == "possible" else None
 
     svg.add("rect", x=0, y=0, width=view["width"], height=view["height"], fill=bg)
     svg.text(60, 58, "THE BURRI RULES", size=28, fill=ivory, weight=800, letter_spacing=2.2)
@@ -840,7 +868,7 @@ def _render_emblem(topology: Mapping[str, Any], digest: str) -> str:
         svg,
         "M 620 458 C 665 425, 700 414, 716 412",
         color=pale,
-        dash=modality_dash("e-model-option-a"),
+        dash=_edge_dash(edges_by_id, "e-model-option-a"),
         marker="arrow-possible",
         id="e-model-option-a",
     )
@@ -848,7 +876,7 @@ def _render_emblem(topology: Mapping[str, Any], digest: str) -> str:
         svg,
         "M 805 414 C 875 415, 930 440, 960 466",
         color=pale,
-        dash=modality_dash("e-option-a-chi"),
+        dash=_edge_dash(edges_by_id, "e-option-a-chi"),
         marker="arrow-possible",
         id="e-option-a-chi",
     )
@@ -856,7 +884,7 @@ def _render_emblem(topology: Mapping[str, Any], digest: str) -> str:
         svg,
         "M 1026 505 C 1075 540, 1095 585, 1093 614",
         color=ivory,
-        dash=modality_dash("e-commitment-action"),
+        dash=_edge_dash(edges_by_id, "e-commitment-action"),
         marker="arrow-light",
         id="e-commitment-action",
     )
@@ -864,7 +892,7 @@ def _render_emblem(topology: Mapping[str, Any], digest: str) -> str:
         svg,
         "M 1065 683 C 1010 745, 900 790, 845 801",
         color=ivory,
-        dash=modality_dash("e-action-outcome"),
+        dash=_edge_dash(edges_by_id, "e-action-outcome"),
         marker="arrow-light",
         id="e-action-outcome",
     )
@@ -872,7 +900,7 @@ def _render_emblem(topology: Mapping[str, Any], digest: str) -> str:
         svg,
         "M 747 804 C 650 785, 570 735, 538 707",
         color=gold,
-        dash=modality_dash("e-outcome-trace"),
+        dash=_edge_dash(edges_by_id, "e-outcome-trace"),
         marker="arrow-light",
         id="e-outcome-trace",
     )
@@ -880,7 +908,7 @@ def _render_emblem(topology: Mapping[str, Any], digest: str) -> str:
         svg,
         "M 495 645 C 475 570, 500 515, 535 493",
         color=gold,
-        dash=modality_dash("e-trace-selector"),
+        dash=_edge_dash(edges_by_id, "e-trace-selector"),
         marker="arrow-light",
         id="e-trace-selector",
     )
@@ -888,7 +916,7 @@ def _render_emblem(topology: Mapping[str, Any], digest: str) -> str:
         svg,
         "M 800 775 C 765 690, 660 565, 590 495",
         color=gold,
-        dash=modality_dash("e-outcome-model-feedback"),
+        dash=_edge_dash(edges_by_id, "e-outcome-model-feedback"),
         marker="arrow-light",
         id="e-outcome-model-feedback",
     )

@@ -189,9 +189,9 @@ C3 (Trophic Conditions) at the planetary scale: the circuit MUST complete. Energ
 
 ~2.4 billion years ago, cyanobacteria produced so much O₂ (the waste product of photosynthesis) that it poisoned most anaerobic life on Earth. The Great Oxidation Event — the most devastating mass extinction in Earth's history, caused by the waste product of life itself.
 
-This is Kālī at the planetary scale: the creative output (O₂ from photosynthesis) destroyed the existing order (anaerobic ecosystems). False-Φ? The anaerobic ecosystem was functioning but could not coexist with the new chemistry. The biosphere's immune response — the oxygen catastrophe — destroyed the old to make way for the new aerobic life that would eventually produce neurons, brains, and systemic awareness.
+The Kālī analogy must stop at description. The Great Oxidation Event was not an authorized immune response and did not act "to make way" for aerobic life. Cyanobacterial oxygen production changed the environment, and many anaerobic organisms and ecosystems were harmed or destroyed. [I]
 
-Was it syntropic? The old ecosystem was destroyed (ΣΔP_node negative for anaerobes). The new ecosystem was incomparably more complex (ΣΔP_node enormously positive at wider radius over geological time). Same Kālī operation. Same ambiguity: syntropic at the widest radius, catastrophic at the local radius. The ethics depends on the cone width (MF-290).
+Was it syntropic? Not under the repaired definition. The anaerobic organisms and ecosystems are named harmed bearers; their destruction cannot be offset by later aerobic complexity, a wider accounting radius, or a longer time horizon. An aggregate such as `ΣΔP_node` is descriptive only. Because this biogeochemical transition had no accountable agent or authorization envelope, moral classification may be inapplicable: it is evolutionary history, not ethical warrant. [I]
 
 ---
 
