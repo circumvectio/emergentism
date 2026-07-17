@@ -21,6 +21,15 @@ rosetta:
 
 # PD_12: THE MEASUREMENT PROBLEM
 
+> **[金] Kintsugi supersession — 2026-07-18.** This preserved reframe is not the
+> operational quantum owner. Body passages calling measurement a `μ` crossing,
+> D5→D4 handoff, Finitor mechanism, or frame-product actualization are **not live
+> authority**. KSC-05 and the quantum boundary control: Everett has no
+> fundamental collapse; Copenhagen-family actualization is
+> interpretation-specific; neither interpretation is an added dimension; and
+> neither `μ` nor `χ` is quantum measurement. Removing the analogy changes no
+> Burri rule.
+
 **Directory:** `02_PARADOX_DISSOLUTIONS/`
 **Evidence Tier:** `[I]` (Interpretive) / `[S]` only for standard Bloch-sphere and S² mathematics
 **Canonical Number:** PD_12 (see [PD_00_INDEX](PD_00_INDEX.md) for the definitive numbering table)

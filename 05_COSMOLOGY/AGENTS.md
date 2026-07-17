@@ -19,7 +19,7 @@ rosetta:
 
 ## ⚠ Settled canon — do NOT re-flag
 
-The four-move scheme (**2 Gods + 2 Demons**, not "four Gods"), Kālī's divine-operator / Asura-move status, the **5 + 1** constitution, the **five-force / F5 mapping** (five force slots D1–D5; F5 is the D5 teleological/syntropic option-cone, not a mainstream `[A]` fifth physical interaction), the bare `φ·ν = 1 on S²` shorthand, the **η** (not gender / hemisphere) moral axis, and Viṣṇu's **elliptic** operator class are **ratified canon**. Older docs may still carry legacy wording (e.g. "four Gods") — that is *reconciled, not an error*. Before opening any flag, contradiction, or "fix" in this lane, consult the registry and defer to it:
+The four-move scheme (**2 Gods + 2 Demons**, not "four Gods"), Kālī's divine-operator / Asura-move status, the private-DAV scope of **5 + 1**, the removable `[C]` D-register/force correspondence, the **η** (not gender / hemisphere) moral axis, and Viṣṇu's **elliptic** operator class are registered. The exact formula ruling is not the old shorthand: on `θ∈(0,π)`, `φ=cot(θ/2)` and `ν=tan(θ/2)` give the analytic identity `φν=1`, with excluded pole limits and no ontological, ethical, empirical, or `P_node` inference. Older docs may carry legacy wording only when visibly bounded by current owners. Before opening any flag, contradiction, or repair, consult the registry:
 
 → [`../00_META/00_SETTLED_CANON_REGISTRY.md`](../00_META/00_SETTLED_CANON_REGISTRY.md) — what is settled, the authority for each ruling, and the exact *do-not-flag vs still-flag* criterion. Operator-census owner: [`00_THE_BURRISPHERE.md`](00_THE_BURRISPHERE.md) §The Complex-Plane Game.
 
@@ -30,7 +30,7 @@ The four-move scheme (**2 Gods + 2 Demons**, not "four Gods"), Kālī's divine-o
 | L1 Caṇḍāla | Names the objective pressure or raw model claim to be structured. |
 | L2 Śūdra | Checks whether disclosed patterns are being mistaken for model authority. |
 | L3 Vaiśya | Tests formal consequences, evidence tiers, and falsifier/upgrader movement. |
-| L4 Kṣatriya | Blocks action, deployment, or K2 commitments from model language alone. |
+| L4 Kṣatriya | Blocks action, deployment, or private-DAV K2 commitments from model language alone. |
 | L5 Brāhmaṇa | Owns positive system architecture, formula block, formal system, and model coherence. |
 | L6 Sādhu | Cuts reification: the model is not the Ground. |
 | L7 Ṛṣi | Translates only tier-cleared model language into public or institutional narrative. |

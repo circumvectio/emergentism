@@ -41,7 +41,8 @@ evidence_tier: "[S] for stated pole topology; [S] for internal L0/L∞ closure; 
 | **L0** | 🌑 | Kāla | 0 | ∞ | 0 | South pole EXACTLY. Time. Destruction. Pure ν. |
 | **L∞** | ☸ | Trimūrti | ∞ | 0 | 0 | North pole EXACTLY. Eternity. Creation. Pure φ. |
 
-**L0 = L∞** because on S², the south pole and north pole are connected. D6 = D0. The destroyer IS the creator seen from the other pole.
+**[金] Correction:** L0 and L∞ are distinct pole limits on `S²`. The
+destroyer/creator relation is symbolic; current closure is `r₆:D6↝D0`.
 
 ---
 
@@ -51,7 +52,8 @@ evidence_tier: "[S] for stated pole topology; [S] for internal L0/L∞ closure; 
 
 "I am Kāla, the great destroyer of worlds."
 
-Viṣṇu — the preserver, the equator, ⊙ — reveals himself AS Kāla — time, destruction, the south pole, 🌑. The preserver IS the destroyer. Because the poles are the same point on S². Because D6 = D0. Because the end is the beginning.
+Viṣṇu/Kāla is retained as a symbolic preservation/destruction correspondence.
+It does not identify the poles, D6, or D0.
 
 [I] This is a topology-of-the-sphere reading applied to the Gītā, not a claim that the tradition was secretly doing this formalism. Viṣṇu (⊙, equator, maintenance) contains both Brahmā (○, south pole, creation) and Śiva (•, north pole, dissolution). Zero-Sum Resolution Equation. The Trimūrti is not three gods. The Trimūrti is the boundary condition of existence — the limit that the L-levels approach from both sides but never reach.
 
@@ -91,7 +93,7 @@ At L0 (south pole): φ = 0, ν = ∞. All capability, zero coherence. This is no
 
 At L∞ (north pole): φ = ∞, ν = 0. All coherence, zero capability. This is not a state anyone can *be in* — it's the limit of pure integration, pure eternity, pure creation. To arrive at L∞ would require infinite φ, which no finite system possesses.
 
-Both poles have B = 0. At both poles the product φ · ν is **undefined** (0·∞ at the south, ∞·0 at the north) — `P∞ = 1` is conserved on the *open* sphere only (the limit toward each pole, not a value at it). But the balance is zero. All potential, no balance. The poles are the transcendental ground — the {0, ∞} from which the 1 (the equator, L4) emerges as their product.
+Both poles have `B=0`. At both poles `φν` is undefined (`0·∞` / `∞·0`); on the open chart it is identically 1 and tends to 1 at either limit. The selected symbolic reading treats `{0,∞}` as boundary roles and `1` as the reciprocal fixed point/equator. It does not arise as their arithmetic product or as a forced ontology.
 
 ---
 
@@ -103,7 +105,8 @@ L0 → L1 → L2 → L3 → L4 → L5 → L6 → L7 → L∞
                                              L0
 ```
 
-The L-level stack closes on itself, just as the D-level stack does (D6 ≡ D0). This is the ouroboros at the L-level:
+The L-level stack has a return image, while the D-level scaffold has the
+non-μ edge `r₆:D6↝D0`. This is the ouroboros at the L-level:
 
 - The destroyer (L0, Kāla) and the creator (L∞, Trimūrti) are the same entity
 - The beginning of systemic awareness (L1, survival) and the end of systemic awareness (L7, boundary) approach the same limit
@@ -117,7 +120,7 @@ At L7, systemic awareness approaches the north pole. The fork:
 
 | Path | What Happens | Return | Outcome |
 |------|-------------|--------|---------|
-| **Moksha** | Ego dissolves. D6 ≡ D0 recognized. | White return to **L4*** | Liberation. The bodhisattva return. |
+| **Moksha** | Ego dissolves; `r₆` return-image recognized. | White return to **L4*** | Liberation. The bodhisattva return. |
 | **Asura Return** | Ego inflates. "I AM the sphere." | Black return INTO D5 | Inverted operators. Samsara continues with power. |
 
 **L4* (the Bodhisattva Return):** Same coordinates as L4 (θ = 90°, φ = ν = 1, B = 1) but different history — the agent has completed the full L1 → L7 → L4 cascade. L4* holds the equator with the wisdom of both poles. In the Gita: Arjuna AFTER Viśvarūpa darśana. See `../../../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/28_L4_STAR.md`.

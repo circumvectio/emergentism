@@ -129,8 +129,9 @@ Nothing → Trinity → Sphere → Equation → Axioms → Framework → Deploym
 - `07_DISSEMINATION/06_NETWORK/` — evolutionary.network — the address, not the -ism. Release manifests, compiled editions, seed page. (archived route)
   - [README.md](../../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/06_NETWORK/README.md)
 
-### D6 = D0: The Return
-*D6 ≡ D0* — Peer review, kill criteria, self-dissolution. The framework submits to falsification. The cycle completes.
+### `r₆:D6↝D0`: The Return
+One interpretive, non-μ edge represents peer review, kill criteria, and
+self-dissolution. It is not literal register identity.
 
 - `06_TRANSLATION/PEER_REVIEW/` — 42 self-contained review packets. 26 domain packets + 9 paper packets + 7 companion guides. The framework on trial. (archived route)
   - [README.md](../../../90_ARCHIVE/08_FRAMEWORK_SUPPORT/06_TRANSLATION/PEER_REVIEW/README.md)

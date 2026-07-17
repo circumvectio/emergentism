@@ -175,6 +175,12 @@ These are real parts of the repository, but they are not additional philosophica
 
 ## CORE EQUATIONS
 
+> **[金] Canon repair — 2026-07-18.** Closure is the single interpretive edge
+> `r₆:D6↝D0`, not literal equality and not a seventh μ-crossing. The adjacent
+> candidate crossings are exactly `μ₀…μ₅`; D6 opens no further positive freedom.
+> See the [closure owner](../../05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md)
+> and the [D4/D5 type owner](../../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md).
+
 ```
 P∞ = φ · ν = 1          # Invariant sphere product
 B = sin θ               # Balance on S²
@@ -182,7 +188,7 @@ P_node = Φ × V          # Node-level empirical/organizational flourishing
 Zero-Sum Resolution Equation         # Trinity identity
 H = φ + 1/φ ≥ 2   # Hamiltonian minimum
 L = 0             # Lagrangian zero-point
-D6 = D0           # Dimensional closure
+r₆ : D6 ↝ D0      # Interpretive closure edge; not equality or μ₆
 ```
 
 ---

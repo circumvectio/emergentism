@@ -21,6 +21,14 @@ rosetta:
 
 # MF-285: DREAMS ARE UNANCHORED D5
 
+> **[金] Kintsugi type/quantum seam — 2026-07-18.** The body is preserved as
+> an `[I]` altered-state analogy, but its real-axis/imaginary-axis ontology,
+> D4/D5 activation ratios, and measurement/collapse language are **not live
+> authority**. D4 is causal actuality; D5 is merely-possible counterfactual
+> content. Present dreams and neural/model states are D4 actual carriers that
+> may represent D5 contents. Neither this mapping nor quantum vocabulary is a
+> clinical mechanism or evidence for the D-ladder. See KSC-01 and KSC-05.
+
 ## Possibility-Space Without the Real Axis
 
 **Emergentism.org · VIVEKA Mathematical Foundations**

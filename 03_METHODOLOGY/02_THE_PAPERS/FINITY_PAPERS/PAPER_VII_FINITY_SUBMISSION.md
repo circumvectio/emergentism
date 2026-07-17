@@ -15,6 +15,14 @@ depends_on:
 
 **Draft v1 — 2026-06-06**
 
+> **[金] Kintsugi supersession — 2026-07-18.** This submission draft is not a
+> current proof surface. Body claims that `0×∞` becomes arithmetic `1`, that the
+> reciprocal chart generates the D-ladder, that every `μ` is strong, or that
+> geometry proves an ontology are **not live authority**. KSC-02/KSC-04 and the
+> current formula, μ, and Titan owners govern: the triad and scaffold are
+> selected, the emblem is non-arithmetic, and each crossing remains an
+> independently testable `[C]` candidate.
+
 ---
 
 ## Abstract

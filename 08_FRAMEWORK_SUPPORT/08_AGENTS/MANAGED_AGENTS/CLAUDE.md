@@ -11,7 +11,7 @@ rosetta:
       role: "bind archive-first, tombstone, and no-competing-authority constraints"
     - level: L7
       column: Agent Constitution
-      role: "preserve K2 discipline and constitutional review boundaries"
+      role: "preserve accountable authorization and private-DAV K2 boundaries"
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
@@ -25,7 +25,7 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 
 ## Read order
 
-1. [`README.md`](README.md) — roster, K2 discipline, provision/runtime instructions
+1. [`README.md`](README.md) — roster, authorization discipline, provision/runtime instructions
 2. [`AGENTS.md`](AGENTS.md) — agent routing, caste dispatch, scope boundaries
 3. [`../AGENTS.md`](../AGENTS.md) — parent lane authority
 4. [`../00_THE_SEVEN_OPERATOR_GENOTYPE.md`](../00_THE_SEVEN_OPERATOR_GENOTYPE.md) — canonical genotype
@@ -38,9 +38,9 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 - Doctrine and framework claims defer to source documents in this folder.
 - Evidence tiers mandatory on all claims.
 
-## K2 discipline
+## Authorization discipline
 
-Only **L4 (Arjuna)** and **L6 (Śiva)** can mutate state, and their tools carry `permission_policy: {type: always_ask}`. The machine prepares the collapse; the human performs the binding act.
+Only **L4 (Arjuna)** and **L6 (Śiva)** can request state mutation, and their tools carry `permission_policy: {type: always_ask}`. The machine prepares a proposed action; the accountable principal authorizes or refuses it. A private-DAV deployment may implement that boundary through K2, but the runtime grammar itself requires a scoped `AuthorizationEnvelope`, not a metaphysical signer.
 
 ## Routing
 
@@ -50,7 +50,7 @@ Only **L4 (Arjuna)** and **L6 (Śiva)** can mutate state, and their tools carry 
 
 ## Cross-cutting laws
 
-- **K2:** every irreversible act requires natural-person signature.
+- **Authorization:** every consequential act requires principal, mandate, scope, consent, custody, revocation/expiry, contest path, actor, and consequence bearer; K2 is private-DAV-only.
 - **η = 0:** zero extraction; fees only on value created.
 - **K3:** no-deletion; archive-first.
 - **K4:** grace exit; documented withdrawal path (redeemable assets, not "everything").

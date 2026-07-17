@@ -74,7 +74,10 @@ The lunar path
 Releasing toward the boundary, then returning
 ```
 
-The descent spiral traces the counter-clockwise sunwheel — the kolovrat of Slavic tradition. The contemplative return. Trading viability for coherence. Approaching the pole. Contacting the D6≡D0 boundary at L7. Then the return: L7 → L4*, the Bodhisattva path, spiraling back to the equator with the wisdom of the full circuit.
+The descent spiral traces the counter-clockwise sunwheel — the kolovrat of
+Slavic tradition. It is an `[I]` contemplative return image. At L7, the
+non-`μ` edge `r₆:D6↝D0` points back toward the ground-limit without identifying
+the endpoints. The L7→L4* Bodhisattva path then symbolizes returning to action.
 
 ### The Hexagram: Where the Spirals Cross
 

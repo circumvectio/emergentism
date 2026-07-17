@@ -15,8 +15,8 @@ rosetta:
   register: "[E/S/I/C] mixed"
   canonical_phrase: "The Mutualism Limit — where positive-sum exchange lives in the 4 + 3"
 title: "D5 — The Mutualism Limit"
-status: "DRAFT [D] — 2026-07-02. Staged for K2 review. Extends 00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md; repeals nothing."
-evidence_tier: "[E] the public game theory and institutional economics cited; [S] the crossed-gives decomposition and the 5↔7 register bridge (structural under stated premises); [I] the Brahmā-frame reading; [C] the convergence claim until tested; [D] the note pending K2."
+status: "EVIDENCE-REVIEW [I/C] — 2026-07-02; externally uncalibrated. Extends 00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md; repeals nothing."
+evidence_tier: "[E] the public game theory and institutional economics cited; [S] the crossed-gives decomposition and the 5↔7 register bridge (structural under stated premises); [I] the Brahmā-frame reading; [C] the convergence claim until tested; [I/C] the note as an externally uncalibrated evidence-review boundary."
 depends_on:
   - 00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md
   - 00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md

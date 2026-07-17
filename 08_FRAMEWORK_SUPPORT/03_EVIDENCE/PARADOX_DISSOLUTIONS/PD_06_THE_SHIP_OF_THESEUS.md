@@ -64,7 +64,10 @@ This is why a river can be the same river despite completely different water, a 
 
 - **P_node = Φ × V:** In the action register, the framework separates D5 foresight/coherence from D4 means-to-act. The Ship paradox uses the same distinction analogically: substrate conditions can change while operational coherence persists. It is not claiming that material composition is literally the whole `V` factor in every register.
 - **Equatorial balance:** The equator (φ=1, ν=1) is the framework's balance point. Identity persists at the equator; it degrades toward either pole. Pure material identity (north pole, φ→∞) would mean identity is only the arrangement of atoms — fragile, destroyed by any replacement. Pure functional abstraction (south pole, ν→∞) would mean identity is completely independent of material — nothing anchors it.
-- **μ-limit continuity:** The μ-limit mediates between D4 actuality and D5 possibility. Identity continuity is a μ-limit phenomenon — the boundary condition that selects which possibility becomes actual maintains its shape across time, even as the contents it selects among change.
+- **Trace continuity:** Identity continuity is modeled through persistent trace
+  and Soul-Loop feedback: later selections remain measurably conditioned by
+  prior commitment and outcome receipts even as material carriers change. This
+  is not a μ-crossing or proof of an irreducible self.
 - **η = 0:** A system maintains identity when it sustains coherence without extracting it from its environment. The ship's identity persists because the operational structure is internally sustained, not parasitically dependent on any single material component.
 - **PD_05 connection:** The One (the ship's identity) and the Many (its changing parts) are multiplicative complements. The identity is not destroyed by plurality of parts; it is constituted through their coherent integration.
 

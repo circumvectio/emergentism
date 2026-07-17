@@ -43,7 +43,7 @@ rosetta:
 - Use the current [A/B/S/I/D/C] evidence ladder; deployment or architecture claims need a [B] receipt or an explicit [D]/[C] label.
 - L1 surfaces the F5 gradient and ordering-force candidate.
 - L3 checks whether a cited empirical result is evidence for the source phenomenon itself or only an analogy / referent.
-- L4 routes any operational claim about staging, K2 containment, or theurgy back through `../../04_AXIOLOGY/01_THEURGY/`.
+- L4 routes any operational claim about staging, private-DAV K2 containment, or theurgy back through `../../04_AXIOLOGY/01_THEURGY/`.
 - L6 cuts literal-force or destiny language when the evidence tier does not support it.
 - L7 may translate F5 into public symbol only after L3/L6 tier checks.
 

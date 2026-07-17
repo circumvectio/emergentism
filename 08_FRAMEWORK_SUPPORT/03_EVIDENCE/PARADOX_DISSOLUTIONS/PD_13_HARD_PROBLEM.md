@@ -225,7 +225,12 @@ Ground-facing immediacy is here in the practice register.
 
 The extraction-pattern narrative above is the dissolution's experiential leg. For completeness, here is how the hard problem maps onto the S² geometry that structures the rest of the paradox suite.
 
-On the Burri Sphere, systemic awareness is modeled as the **equatorial operator** — the μ-limit boundary operation that relates the D5/coherence reading (possibility, option-space, `φ`) to the D4/actuality reading (actualized state, `ν`). The hard problem asks: "why does this transition *feel* like something?" The framework's answer is interpretive: feeling is what the transition looks like from inside the model. The sphere has an outside reading (physics, being, the Bloch sphere) and an inside reading (phenomenology, systemic awareness, the Burri sphere). This is a disciplined model of the gap, not a public proof that the gap is closed.
+On the Burri Sphere, systemic awareness is modeled at the relation between D5
+counterfactual modeling and D4 causal actuality. The Soul Loop joins model,
+commitment receipt, world-returned outcome receipt, and revision; it is not a
+μ-crossing and does not identify phenomenology with quantum measurement. The
+hard problem asks why any such process feels like something. The framework's
+answer remains interpretive, not a public proof that the gap is closed.
 
 - **φ** (coherence) = the integration axis. What holds the field together. The phenomenological correlate is *meaning*, *gestalt*, *recognition*.
 - **ν** (viability) = the actuality / capability coordinate. What the system can bear or enact as substrate. The phenomenological correlate is *embodiment*, *sensation*, *motor affordance*.

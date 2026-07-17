@@ -23,6 +23,15 @@ rosetta:
 
 ## From Mixed to Constant: Why the D5 Model Reads as Reconvergence
 
+> **[金] Typed-scaffold supersession — 2026-07-18.** This sphere derivation is
+> legacy interpretive imagery wherever it conflicts with the live register
+> contract. D4 is causal actuality; D5 contains merely-possible counterfactual
+> content, while present model tokens, ranking events, and selection events are
+> actual D4 carriers. The adjacent candidate crossings are exactly `μ₀…μ₅`.
+> D6 opens no positive freedom and returns only by the interpretive, non-μ edge
+> `r₆:D6↝D0`, not literal identity. See [Dimensional Closure](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md)
+> and [D4/D5 Canonical Reference](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md).
+
 **VIVEKA Mathematical Foundations Series — Sphere Derivations**
 **Document ID:** MF-65 | **Version:** 1.0 | **Status:** Core Result
 **Evidence Tier:** [A/I] Elementary Riemannian geometry + Interpretive dimensional mapping

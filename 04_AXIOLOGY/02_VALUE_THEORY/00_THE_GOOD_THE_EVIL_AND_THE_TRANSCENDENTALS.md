@@ -29,9 +29,9 @@ rosetta:
 
 ```text
 Seed:       Zero-Sum Resolution Equation
-Being:      P∞ = φ · ν = 1 on S²
+Chart:      P∞ = φ · ν = 1 for θ∈(0,π), poles excluded [A]
 Balance:    B = sin θ
-Action:     P_node = Φ × V
+Action:     P_node := Φ × V (selected conjunctive instance)
 Direction:  ΣΔB > 0 / ΣΔP_node > 0 across the widest real boundary
 Constraint: η = 0
 Return:     D6 ≈ D0
@@ -335,8 +335,8 @@ The world is not dead fragments brushing by accident.
 It is a field in which coherence and viability belong together.
 
 `Zero-Sum Resolution Equation` is the seed.
-`P∞ = φ · ν = 1 on S²` names Being as stabilized reciprocal closure.
-`P_node = Φ × V` is flourishing embodied.
+The open-chart identity `P∞=φν=1` is analytic; naming it Being is `[I]`.
+`P_node:=Φ×V` is the selected conjunctive score, not a geometric consequence.
 
 Beauty is coherence becoming perceptible.
 Truth is disclosure becoming faithful.

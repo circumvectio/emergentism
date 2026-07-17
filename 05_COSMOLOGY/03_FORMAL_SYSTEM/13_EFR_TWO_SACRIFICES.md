@@ -69,8 +69,10 @@ Define:
 \operatorname{AuthorizedCost}^R(q,r;p,b).
 \]
 
-`AuthorizedCost^R` implies the complete receipted Justice predicate `J^R` and
-also requires all of the following:
+`AuthorizedCost^R` is a dedicated cost-authorization predicate. It does not
+imply the ordinary nonnegative-frontier predicate `J^R`, because the payer's
+negative delta would contradict that frontier. It requires all of the
+following:
 
 1. the payer is identifiable and competent for the decision;
 2. the expected magnitude, horizon, uncertainty, and irreversibility of the
@@ -82,7 +84,9 @@ also requires all of the following:
 6. custody and revocation were preserved until the irreversible commitment;
 7. a contest and repair path exists where physically possible;
 8. commitment and outcome receipts independently record what was given and
-   what resulted.
+   what resulted;
+9. every materially affected bearer is named and no third party bears an
+   unconsented loss.
 
 The act may be loving, courageous, dutiful, tragic, or mistaken. Those are
 further interpretations. The formal classification says only that a real,
@@ -108,8 +112,8 @@ than retroactively manufacturing goodness.
 
 ## 3. Imposed sacrifice
 
-Define imposed sacrifice as a demanded or engineered loss whose Justice or
-consent conditions fail:
+Define imposed sacrifice as a demanded or engineered loss whose dedicated
+cost-authorization or consent conditions fail:
 
 \[
 \operatorname{ImposedSacrifice}(q,r;p,b)

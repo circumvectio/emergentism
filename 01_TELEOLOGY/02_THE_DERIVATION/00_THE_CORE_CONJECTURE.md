@@ -54,11 +54,14 @@ Let `ℋ_phys(X_t)` be the histories physically admissible from actual state
 \[
 \operatorname{OptionCone}_x(t)
 =\{h\in\mathcal H_{\mathrm{phys}}(X_t):
-x\text{ can model, distinguish, rank, coordinate, authorize, and reach }h\}.
+x\text{ can model, distinguish, rank, coordinate, and reach }h\}.
 \]
 
 The option cone is agent-relative and remains inside physical admissibility. It
-is not a relativistic light cone and cannot exceed `c`.
+is not a relativistic light cone and cannot exceed `c`. Authorization defines
+the separate normative subset
+`AuthorizedOptionCone_x(t)⊆OptionCone_x(t)`; it does not erase unauthorized,
+coerced, criminal, or accidental actions from causal description.
 
 ### Durable potential
 
@@ -125,7 +128,7 @@ For agents, the key mechanism is the Soul Loop:
 
 \[
 M\star A:
-\operatorname{ModelState}\times\operatorname{AdmissibleActionField}
+\operatorname{ModelState}\times\operatorname{PhysicallyFeasibleActionField}
 \to\operatorname{ActionWeights}.
 \]
 
@@ -134,6 +137,10 @@ actual means, authorization, observations, and incentives are controlled. The
 causal carrier is a present model token. This is model-mediated future
 influence, compressed publicly as `F=M×A`; it does not require physical
 retrocausality.
+
+Authorization defines a separate normative subset of physical feasibility. It
+does not make an unauthorized attempt causally impossible or exempt it from
+receipts.
 
 The decisive test intervenes on represented futures and observes present
 selection distributions.
@@ -149,17 +156,25 @@ uses modeled changes:
 \mathcal A_J=
 \{a:J(a;i,H)
 \land\widehat{\Delta}_TW_i(a;M_t)\ge0
-\land\widehat{\Delta}_TW_H(a;M_t)\ge0\}.
+\land\widehat{\Delta}_TW_H(a;M_t)\ge0
+\land\forall b\in\mathcal B(a),\widehat{\Delta}_TW_b(a;M_t)\ge0\}.
 \]
 
-Power-Max may choose:
+If the field is finite, or compact with an upper-semicontinuous objective,
+Power-Max may choose exactly:
 
 \[
 a^\star\in\operatorname*{arg\,max}_{a\in\mathcal A_J}
 \mathbb E_{M_t}[W_i(T)\mid a].
 \]
 
-This is the project's chosen compass, not a law of behavior. Justice defines
+Otherwise, for a nonempty field with finite supremum, it must declare
+`ε>0` and choose an `ε`-optimal action. A nonempty open field need not attain
+its supremum.
+
+Here `\mathcal B(a)` is the complete finite set of materially affected bearers;
+omitting or harming a third bearer makes `J` false. This is the project's
+chosen compass, not a law of behavior. Justice defines
 the action field before optimization. Aggregate gain cannot compensate for a
 negative bearer, and voluntary sacrifice stays a separate class outside the
 ordinary nonnegative frontier.

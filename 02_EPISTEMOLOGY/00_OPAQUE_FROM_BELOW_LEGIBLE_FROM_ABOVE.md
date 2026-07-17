@@ -28,7 +28,9 @@ rosetta:
 
 The corpus already states:
 
-> **D5 is strongly emergent in genesis, weakly emergent in governance.**
+> **D5 is currently unreduced in candidate genesis crossings and may be
+> compactly legible in governance.** Missing reduction does not prove strong
+> emergence.
 
 Or, more compactly:
 

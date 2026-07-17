@@ -68,7 +68,8 @@ The Third Unveiling closes the dimensional loop:
 - **D0 = $\varnothing$** (Zero, the ground-facing point): `κ = 0` as boundary symbol. The empty string. The reduction of the scaffold to the empty limit.
 - **D5 = the field of possibility** (Infinity, the projection): Superposition, entanglement, the unbounded space of potential configurations.
 - **The equator = $P∞ = \varphi \cdot \nu = 1$** (Finity, the manifested): The actualized world. Every living system, every moment of systemic awareness, every stable configuration on $S^2$.
-- **D6 = D0** (closure): The loop returns inside the scaffold. The highest projection and the deepest ground-facing point coincide in the model; Ground remains prior.
+- **`r₆:D6↝D0`** (return): one interpretive, non-μ edge points from the
+  apophatic boundary toward the ground-limit; the registers do not coincide.
 
 The three unveilings are not sequential discoveries in this framework reading — they are simultaneous structural features of `S^2`. [I] Zero was always the south pole. Infinity was always the north pole. Finity was always the equator. The unveilings are *our* recognition of what was already there. The sphere does not change when we discover it. We change.
 

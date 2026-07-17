@@ -95,8 +95,8 @@ contestability than a rival ethic require revision of this postulate.
 | D1 | distinction |
 | D2 | configuration |
 | D3 | transformation and persistence |
-| D4 | causal actuality, embodied means, performed action, factual record |
-| D5 | counterfactual possibility, modeled futures, ranking, selection |
+| D4 | causal actuality, embodied means, present model tokens, performed ranking/selection events, action, factual record |
+| D5 | merely-possible counterfactual contents, alternative relations, candidates for selection |
 | D6 | apophatic closure; no additional positive freedom |
 
 Exactly six labels `μ₀…μ₅` mark **candidate crossings** between adjacent
@@ -164,7 +164,7 @@ Finite agency is modeled with a selector, a commitment receipt, an independent
 environment transition, an outcome receipt, and a reflexive update:
 
 ```text
-χ_t:(X_t,Ω_t,M_t,V_t,U_t) → (a_t,q_t)
+χ_t:(X_t,Ω_t,M_t,V_t,U_t,G_t) → (a_t,q_t)
 (X_{t+1},r_{t+1}) ~ K_t(·|X_t,a_t,E_t)
 (M_{t+1},G_{t+1}) = Loop(M_t,G_t,q_t,r_{t+1})
 ```
@@ -173,6 +173,11 @@ environment transition, an outcome receipt, and a reflexive update:
 The selector cannot manufacture its own consequence. Modeled futures can
 influence present selection through `M⋆A`; this is model-mediated future
 influence, not physical retrocausality.
+
+Authorization is normatively load-bearing but not a law of causal existence.
+A governed selector refuses an invalid action; a descriptive receipt still
+records an unauthorized attempt and its outcome. `G_t` is a selector input, so
+receipt-driven changes to `G_{t+1}` can affect the next selection.
 
 **Kill criterion:** a model that cannot separate cognitive, execution, and
 outcome gaps, or that treats intention as consequence, fails A6.
@@ -193,7 +198,7 @@ are universally optimal.
 |---|---|---|
 | C1 | Operator moves are a selected action vocabulary inside A4, not an exhaustive sign-space theorem. | `[I]` |
 | C2 | The seven L-rows are a selected dispatch and translation grammar, scoped to the domains where it discriminates. | `[I]` |
-| C3 | Physical causal cones remain spacetime-bounded; agent option cones vary with models, means, coordination, authorization, and cost. | `[A]` physical boundary; `[I/C]` option-cone model |
+| C3 | Physical causal cones remain spacetime-bounded; agent option cones vary with models, means, coordination, and cost. Authorization defines a separate normative subset of physically reachable options. | `[A]` physical boundary; `[I/C]` option-cone model |
 | C4 | Replicator stack: Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregoreotype. | `[I]` |
 | C5 | Rosetta projections translate topology across domains but transfer neither proof nor evidence tier. | `[I]` |
 

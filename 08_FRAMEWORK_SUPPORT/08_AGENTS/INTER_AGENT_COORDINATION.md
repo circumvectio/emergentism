@@ -143,7 +143,7 @@ session_context:
 
 ### Type 3: L5-L6 Disagreement
 **Scenario:** L5 proposes redesign; L6 flags it as overgrown.
-**Resolution:** Both outputs surface to L4. L4 decides: accept redesign, accept compression, or request L5 to compress before propagation. L4's decision is binding (pending K2).
+**Resolution:** Both outputs surface to L4. L4 decides: accept redesign, accept compression, or request L5 to compress before propagation. L4's decision binds only within its scoped authorization; consequential execution requires a complete, contestable authorization assessment. K2 is private-DAV-only.
 
 ### Type 4: Cross-Caste Pathology
 **Scenario:** L1 is in Terror mode (rejecting all input); L2 is in Anxiety mode (infinite expansion).

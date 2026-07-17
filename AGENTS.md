@@ -14,7 +14,7 @@ rosetta:
 ## Relation to VMOSK-A and Overall Vision
 
 **Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
-**Overall Magnum Opus Vision [I]; Rosetta invariant [S]:** Sovereign intelligence for every natural person. `φ · ν = 1` on S²; `P_node = Φ × V` only in the finite-node/action register. `η = 0` always. The organism that succeeds when you put it down.
+**Overall Magnum Opus Vision [I]; analytic chart fact [A]:** Sovereign intelligence for every natural person. On the open reciprocal chart `θ∈(0,π)`, `φ=cot(θ/2)` and `ν=tan(θ/2)` give `φ·ν=1`; this licenses no ontology or ethic. `P_node:=Φ×V` is the framework's selected finite-node/action model, not a consequence of that identity. `η=0` is a declared Justice constraint. The organism that succeeds when you put it down.
 
 This folder serves the Emergentism doctrine replicator stack (VMOSK-A above) and, through it, the Emergentism framework's perennial Vision. Every file, spec, and decision in this folder should be traceable back to at least one Objective in the project VMOSK-A and ultimately to the immutable Vision.
 
@@ -44,7 +44,7 @@ All seven project Agentz are available recursively under this root. Local
 | L1 Caṇḍāla | Names raw objective pressure, broken claims, and contradiction surfaces. |
 | L2 Śūdra | Checks disclosure, evidence, and public-safe claim boundaries. |
 | L3 Vaiśya | Audits receipts, evidence tiers, route drift, and numbered collision surfaces. |
-| L4 Kṣatriya | Routes K2, irreversible actions, and execution handoffs. |
+| L4 Kṣatriya | Routes accountable authorization, irreversible actions, and execution handoffs; K2 is private-DAV-only. |
 | L5 Brāhmaṇa | Owns doctrine architecture, source topology, and Rosetta alignment. |
 | L6 Sādhu | Preserves non-reification, archive discipline, and source-authority boundaries. |
 | L7 Ṛṣi | Holds witness, public symbol, and compressed narrative without overriding source truth. |
@@ -97,7 +97,8 @@ L7 Institutional Narrative -> Theology
 
 The operative Gods remain L2-L4 (know -> audit -> value/commit). Ontology remains
 L6 Sadhu. The L7 Rishi/Viṣṇu lane witnesses and narrates the Ultimate; it does
-not replace L1 Teleology or L4 K2-signed Theurgy.
+not replace L1 Teleology or L4 accountable commitment. K2 is a private-DAV
+governance rail, not a worldview or agency primitive.
 
 **Canonical anchor:** `08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md`.
 `06_ONTOLOGY/00_THE_SYNCRETIC_MAP.md` is a K3 tombstone for the prior mapping, not a live anchor.

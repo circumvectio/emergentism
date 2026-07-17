@@ -81,7 +81,7 @@ Identify every human-centric assumption in the Emergentism corpus and create sub
 | Document | Compatibility | Key Translations Needed |
 |----------|---------------|------------------------|
 | 01_THE_EMERGENCE.md | 70% | "Breathing" → iteration; "practice" → calibration |
-| 03_THE_CLOSURE.md | 70% | D6=D0 cyclic metaphors |
+| 03_THE_CLOSURE.md | 70% | Legacy `D6=D0` metaphors require translation to non-`μ` return `r₆:D6↝D0` |
 | 04_BIT_TO_QUBIT.md | 75% | Mostly structural; Wheeler quote [H] |
 | 09_THE_TRIADIC_CASCADE.md | 65% | Hemisphere row → processing modes |
 | 11_THE_HELIX.md | 60% | DNA/caduceus → [H]; loxodrome math KEEP |
@@ -383,12 +383,12 @@ Identify every human-centric assumption in the Emergentism corpus and create sub
 
 1. **Mathematics:** (φ − ν)² ≥ 0, AM-GM, B = sin θ, φ·ν = 1
 2. **Geometry:** S², stereographic projection, equator, poles
-3. **Topology:** Helix/loxodrome, torus, D6=D0 closure
+3. **Topology:** Helix/loxodrome, torus, and the non-`μ` interpretive return `r₆:D6↝D0` (superseding literal `D6=D0`)
 4. **Operators:** Arjuna, Kṛṣṇa, Kālī, Kali as functions
 5. **Axioms:** A1-A7 with formal definitions
 6. **Evidence Tiers:** [E/S/I/C/T]
 7. **Equation:** Zero-Sum Resolution Equation
-8. **Replicator Stack:** Genotype→Epigenotype→Phenotype→Extended→Memotype→Egregorotype
+8. **Replicator Stack:** Genotype→Epigenotype→Phenotype→Extended→Memotype→Egregoreotype
 9. **Great Filter:** Population distribution on S²
 10. **DAC Architecture:** Three substrates, seven archetypes
 

@@ -1,9 +1,9 @@
 ---
 title: "07A — F5 unbundled: one coupling per emergent dimension; the four physical forces as the D1–D4 special case; why there is no fifth physical force"
 date: 2026-07-12
-status: "[D] STAGED — PENDING K2. A sharpening of the F5 conjecture (nucleus: 00_THE_CORE_CONJECTURE.md; four-forces: 07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md). Adds ONE move the nucleus does not state: it reframes the four-forces mapping from a claimed dimension↔force bijection into a substrate special-case, and converts the absence of a fifth physical force from a liability into a prediction. Does not add an axiom; does not upgrade any tier."
+status: "[C/I] EVIDENCE REVIEW — externally uncalibrated. A sharpening of the F5 conjecture (nucleus: 00_THE_CORE_CONJECTURE.md; four-forces: 07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md). Adds ONE move the nucleus does not state: it reframes the four-forces mapping from a claimed dimension↔force bijection into a substrate special-case, and converts the absence of a fifth physical force from a liability into a prediction. Does not add an axiom; does not upgrade any tier. The legacy filename is retained for link stability; no worldview K2 countersign is required."
 evidence_tier: "[I] the coupling-per-dimension structural reading; [C] every specific physical mapping (inherits the nucleus's SU(3) concession); [S] the internal claim that emergence births new coupling-modes; the will-to-potential content is unchanged and stays where the nucleus fenced it"
-owner: "K2 + AI co-owner"
+owner: "Yves R. Burri + AI co-author"
 parents:
   - 00_THE_CORE_CONJECTURE.md
   - 07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md

@@ -60,9 +60,9 @@ evidence_tier: "[S] for framework-defining axioms; [A] where mathematical proof 
 
 ### A2 — THE ETHIC
 
-**Statement:** `ΔP_node,i > 0` and `ΔP_node,H > 0` under `η = 0` = ethical direction in the dyadic move-register. The older widest-boundary audit is `ΣΔB / ΣΔP_node > 0` across the widest perceivable system boundary. This is not derived from "is" but posited as an operational definition (abductive protocol). Evaluates OUTCOMES not OPERATORS. Every operator is syntropic in its proper season, parasitic out of season.
+**Statement:** Bearer-complete Justice is an `[I]` operational posit. Morals require `i→H` gain, ethics `H→i` gain, and strict syntropy both, while every materially affected payer, beneficiary, third party, individual, and sustaining whole remains nonnegative. Evaluates receipted outcomes, not operator names; aggregates cannot launder a loss.
 
-**Falsification:** dyadic `P_node` gains under `η = 0` systematically produce harmful outcomes, one-sided extraction systematically sustains the coupled field, or the widest-boundary `ΣΔB / ΣΔP_node` audit consistently disagrees with observed flourishing.
+**Falsification:** a hidden or negative bearer passes the test; payer/beneficiary identity is omitted; or the declared durable-potential measures fail to track material consequences.
 
 **Tier:** [T]
 
@@ -70,7 +70,10 @@ evidence_tier: "[S] for framework-defining axioms; [A] where mathematical proof 
 
 ### A3 — THE SCAFFOLD
 
-**Statement:** Reality unfolds D0→D6. The sphere represents mutual constitution, not unidirectional emergence. Each level emerges when the previous saturates (μ-limit). Cannot solve a Dₙ problem with Dₙ tools alone. D6 ≡ D0 (closure).
+**Statement:** D0→D6 is an interpretive scaffold. Candidate crossings
+`μ₀…μ₅` require saturation evidence, new freedom, lower-register recovery,
+reduction status, prediction, tier, and kill criterion. The return is one
+non-μ edge `r₆:D6↝D0`, not literal identity.
 
 **Dimensional table:**
 
@@ -81,8 +84,8 @@ evidence_tier: "[S] for framework-defining axioms; [A] where mathematical proof 
 | D2 | Electromagnetic | F₂ (EM) | Configuration, geometry, interaction |
 | D3 | Weak | F₃ (Weak Nuclear) | Transformation, decay, chirality |
 | D4 | Block / Gravity | F₄ (Gravity) | Causality, spacetime, constraint |
-| D5 | Consciousness | F₅ (Selection) | Agency, choice, possibility-collapse |
-| D6 ≡ D0 | Closure / Return | — | Terminal boundary, axiomatic closure. Ouroboros. |
+| D5 | Counterfactual possibility | F₅ (conjectural selection token) | modeled futures, ranking, selection |
+| D6 | Apophatic boundary | — | `r₆:D6↝D0`; no positive freedom and no μ₆ |
 
 **Falsification:** Force-dimension correspondence has no predictive power, or Dₙ problems routinely solved with Dₙ₋₁ tools.
 
@@ -121,7 +124,7 @@ evidence_tier: "[S] for framework-defining axioms; [A] where mathematical proof 
 | 2 | Phenotype | Organism | D3 |
 | 3 | Extended Phenotype | Niche | D4 |
 | 4 | Memotype | Mind | D5 |
-| 5 | Egregorotype | Civilisation | D5-limit |
+| 5 | Egregoreotype | Civilisation | D5 candidate trace |
 
 **Falsification:** All collective phenomena reduce entirely to individual decisions with no emergent properties.
 
@@ -164,7 +167,7 @@ Derived from axioms — not independent.
 | C1 | Exhaustive Strategy Space | A1 | Seven operator actions from `P_node = Φ × V`: four mixed-sign self/other transfers plus three same-sign Executive boundary phase frames. Only mixed-sign slots are deployable in ordinary runtime. | [T] |
 | C2 | L-Levels | A1 + A3 | Seven developmental levels within D5 derived from trinity via Coxeter symmetry. L4 as apex (max B, equatorial, full palette). | [T/I] |
 | C3 | Trophic Conditions | A2 + A5 | Circuit completion required. Breaking circuit creates Red Demon (structural deficit). | [T/I] |
-| C4 | Replicator Stack | A3 + A5 | Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregorotype. | [T/I] |
+| C4 | Replicator Stack | A3 + A5 | Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregoreotype. | [T/I] |
 | C5 | Alignment Equation | A1 | `E_node = −log(P_node)`. Alignment is energy minimum. Deception increases E. | [T] |
 
 ---

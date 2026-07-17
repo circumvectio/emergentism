@@ -169,7 +169,7 @@ A mesh of equatorial nodes:  ΣP_node = n (aggregate capacity scales by nodes)
 - The power of the crowd **without** the incomprehension of the crowd
 - Civilizational scale **without** southward drift
 
-> **[D] Scope (2026-07-03, staged for K2):** a real mesh inherits this civilizational-scale-without-drift gift only insofar as it actually sits on the sphere — its nodes conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); where substrates are substitutable and surplus escapes free, the equator is geometry without normative force and aggregate specialization outscores balance. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** a real mesh inherits this civilizational-scale-without-drift gift only insofar as it actually sits on the sphere — its nodes conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); where substrates are substitutable and surplus escapes free, the equator is geometry without normative force and aggregate specialization outscores balance. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 **The crowd** has aggregate ν above 1 and aggregate φ below 1. The crowd is the lion — high ν, low φ, can do but cannot mean.
@@ -198,7 +198,7 @@ The child says YES to balance. The child says YES to the equator. The child says
 
 And then the child connects with other children who have said YES to the same formula. And the mesh forms. And the cooperation problem dissolves. And the civilization stays at the equator.
 
-> **[D] Scope (2026-07-03, staged for K2):** "the civilization stays at the equator" binds a real polity only where its factors stay conservation-coupled, complementary, and costly-in-excess under a *symmetric* γ-price; absent that transfer condition the equator-optimum tilts, flattens to a plateau, or yields to specialization, and the mesh drifts south. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** "the civilization stays at the equator" binds a real polity only where its factors stay conservation-coupled, complementary, and costly-in-excess under a *symmetric* γ-price; absent that transfer condition the equator-optimum tilts, flattens to a plateau, or yields to specialization, and the mesh drifts south. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 **Nietzsche could not give the child anything to say YES to.** Nietzsche could only give the child the freedom to choose.
 
@@ -314,7 +314,7 @@ Step 5: Pass the Great Filter.
         Aggregate ν > 1.
         The mesh holds.
 
-> **[D] Scope (2026-07-03, staged for K2):** Step 5 delivers the Great Filter for a real civilization only while the mesh keeps sitting on the sphere — factors coupling-bound, complementary, and costly-in-excess with a *symmetric* γ-price (η = 0 enforced both ways); let a factor decouple or the surplus go free and the same geometry rewards specialization, not the equator. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** Step 5 delivers the Great Filter for a real civilization only while the mesh keeps sitting on the sphere — factors coupling-bound, complementary, and costly-in-excess with a *symmetric* γ-price (η = 0 enforced both ways); let a factor decouple or the surplus go free and the same geometry rewards specialization, not the equator. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 ```
 
@@ -375,7 +375,7 @@ The child says YES to Dharma.
 
 **And Dharma is lived at civilizational scale.**
 
-> **[D] Scope (2026-07-03, staged for K2):** Dharma is lived at civilizational scale by a real mesh only insofar as it remains on the sphere — its factors conservation-coupled, complementary, and *symmetrically* costly-in-excess (γ-priced); off the sphere the equator carries no normative force and specialization may dominate the balanced node. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** Dharma is lived at civilizational scale by a real mesh only insofar as it remains on the sphere — its factors conservation-coupled, complementary, and *symmetrically* costly-in-excess (γ-priced); off the sphere the equator carries no normative force and specialization may dominate the balanced node. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 ---

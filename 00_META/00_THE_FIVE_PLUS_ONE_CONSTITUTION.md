@@ -117,7 +117,10 @@ The η=0 fence is now register-explicit. In the action register, `η_move = 0` s
 2. **Per-organ exit** — an organ (e.g. Agentz, Helios, Aureus) can be wound down without taking the rest of the framework with it.
 3. **Per-entity exit** — a legal entity (e.g. Menexus GmbH, the proposed SJSC SPV) can be dissolved, transferring its assets and liabilities to a designated successor.
 4. **Per-protocol exit** — a deployed protocol (e.g. a token standard, a PWA shell) can be deprecated, with user data exportable and the contract address frozen but not rug-pulled.
-5. **Framework exit** — the framework itself can be deprecated. This is the apophatic return (`D6 ≡ D0`); the Sādhu's crown.
+5. **Framework exit** — the framework itself can be deprecated. This is modeled
+   by the apophatic return edge `r₆:D6↝D0`: one interpretive closure relation,
+   not literal identity, not `μ₆`, and not a new positive freedom. See the
+   [closure owner](../05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md).
 
 **The fence.** A constituent that does not have a documented K4 envelope cannot be deployed at K2-staged scale. The K4 envelope is *pre-flight*, not post-mortem.
 

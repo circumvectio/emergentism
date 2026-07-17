@@ -282,9 +282,9 @@ L2 note: The "I read this and I got the framework" doc.
 
 ### 3.5 01_EMERGENTISM/00_SEVENFOLD_FOUNDATION_ROOT.md - doctrine-receipt - [S] - 278 lines
 
-Role: The sevenfold filing grammar (Rosetta-numbered routing). Spine: the folder number IS the L-level IS the value-gate. Seven -ology folders are the seven Rosetta rungs. L4 is the equator (L1-L4 ascends task-positive, L4-L7 descends systemic reflection, gates mirror I-VII, II-VI, III-V). L4 K2-signed act: the mortal signs value into action under uncertainty. System Architecture L5 is NOT Core State L6 (positive structure vs apophatic ground). Loop is not monotone: L1 raw pre-social + L7 transcendent whole-pattern = both poles of unmediated contact. D-Scaffold and L-Ladder are parallel structures, not one. Physical reorganization rule: do not mass-rename the repo root first; express sevenfold inside 01_EMERGENTISM/ first. Underwritten areas: L1, L4, L5, L6, L7 strong; L2/L3 comparatively underwritten.
+Role: The sevenfold filing grammar (Rosetta-numbered routing). Spine: the folder number is assigned to the L-level and value-gate inside the selected Rosetta grammar. L4 is the equator (L1-L4 ascends task-positive, L4-L7 descends systemic reflection, gates mirror I-VII, II-VI, III-V). Current authorization seam: a consequential action names principal, mandate, scope, consent, custody, contest path, actor, and consequence bearer; private DAVs may implement that envelope through K2. System Architecture L5 is NOT Core State L6 (positive structure vs apophatic ground). Loop is not monotone: L1 raw pre-social + L7 transcendent whole-pattern = both poles of unmediated contact. D-Scaffold and L-Ladder are parallel selected structures, not one. Physical reorganization rule: do not mass-rename the repo root first; express sevenfold inside 01_EMERGENTISM/ first. Underwritten areas: L1, L4, L5, L6, L7 strong; L2/L3 comparatively underwritten.
 
-L2 note: The Rosetta-locked canonical routing; if any rule contradicts this, the rule is wrong (or this doc is, in which case K2 amends).
+L2 note: The Rosetta routing is revisable under the Settled Canon Registry; when a contradiction appears, evidence and a dated accountable repair—not signer status alone—decide the seam.
 
 
 ---

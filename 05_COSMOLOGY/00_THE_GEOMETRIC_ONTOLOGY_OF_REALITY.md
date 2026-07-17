@@ -38,6 +38,15 @@ depends_on:
 **Evidence Tier:** `[A]` for all established mathematics; `[C]` for the dimensional assignment of each geometric object to a specific D-level; `[I]` for the ontological reading
 **Status:** Proposed geometric re-expression — does NOT replace the existing `[S]` scaffold in `00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md` or `03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md` until audited through the theorem-upgrade protocol.
 
+> **[金] Typed-scaffold supersession — 2026-07-18.** This proposed geometric
+> re-expression is not live authority where its body conflicts with the typed
+> scaffold. D4 is causal actuality; D5 contains merely-possible counterfactual
+> content, while actual model tokens, rankings, and selections are D4 carriers.
+> Candidate crossings are exactly `μ₀…μ₅`. D6 opens no positive freedom and
+> returns only through the interpretive, non-μ edge `r₆:D6↝D0`, not literal
+> identity. See [Dimensional Closure](03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md)
+> and [D4/D5 Canonical Reference](03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md).
+
 ---
 
 ## The Core Proposal

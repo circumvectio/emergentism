@@ -11,7 +11,7 @@ rosetta:
       role: "bound support-library authority below source-owner lanes"
     - level: L4
       column: Philosophy
-      role: "route K2, eta-zero, and irreversible-action constraints"
+      role: "route accountable authorization, eta-zero, and consequential-action constraints; K2 is private-DAV-only"
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
@@ -33,7 +33,7 @@ rosetta:
 | L1 Caṇḍāla | Names raw objective pressures entering support-library tooling. |
 | L2 Śūdra | Checks disclosure and evidence surfaces before support summaries strengthen claims. |
 | L3 Vaiśya | Audits route control, evidence tiers, drift scans, and support-library claims. |
-| L4 Kṣatriya | Routes K2, `η = 0`, and irreversible-action constraints. |
+| L4 Kṣatriya | Routes accountable authorization, `η = 0`, and consequential-action constraints; K2 is private-DAV-only. |
 | L5 Brāhmaṇa | Owns support-library topology across governance, operators, evidence, synthesis, and agents. |
 | L6 Sādhu | Bounds support authority below source-owner lanes and archive provenance. |
 | L7 Ṛṣi | Translates only source-owner-confirmed support surfaces into public symbol. |

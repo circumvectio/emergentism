@@ -33,7 +33,7 @@ rosetta:
 | L1 Caṇḍāla | Names the raw governance pressure or harm condition. |
 | L2 Śūdra | Checks evidence and disclosure before a governance rule is asserted. |
 | L3 Vaiśya | Audits naming, drift, replication, reports, and evidence-tier movement. |
-| L4 Kṣatriya | Owns active governance, K2 staging, refusals, and irreversible-action boundaries. |
+| L4 Kṣatriya | Owns active governance, private-DAV K2 staging, refusals, and irreversible-action boundaries. |
 | L5 Brāhmaṇa | Stabilizes governance topology as framework-support architecture. |
 | L6 Sādhu | Bounds active governance, reports, and archive authority classes. |
 | L7 Ṛṣi | Translates only confirmed governance into public-symbol or constitutional narrative. |

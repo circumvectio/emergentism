@@ -11,7 +11,7 @@ rosetta:
 
 # 01_THE_TRANSCENDENTAL_TRINITY — Agent Routing
 
-**Lane scope:** Canonical formal source: For the canonical derivation of Zero-Sum Resolution Equation and φ · ν = 1 on S², see [`00_CANONICAL_FORMULA_BLOCK.md`](../00_CANONICAL_FORMULA_BLOCK.md). Trinity documents present these concepts narratively; for formal notation, axioms, and evidence tiers, route through the Formula Block and [`00_THE_HONEST_POSITION.md`](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
+**Lane scope:** The canonical formula source defines `φ=cot(θ/2)` and `ν=tan(θ/2)` only for `θ∈(0,π)`, yielding analytic `φν=1` with excluded pole limits. It does not derive the Trinity, ontology, ethic, or node product. Trinity documents present a selected `[I]` narrative grammar; route exact notation and tiers through [`00_CANONICAL_FORMULA_BLOCK.md`](../00_CANONICAL_FORMULA_BLOCK.md) and [`00_THE_HONEST_POSITION.md`](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 **Primary lead:** `L5 Brāhmaṇa`
 **Support:** L1 Caṇḍāla, L2 Śūdra, L3 Vaiśya, L4 Kṣatriya, L6 Sādhu, L7 Ṛṣi
 **Evidence tier:** `[A]` for established Riemann-sphere mathematics, `[S]` for model-internal structure, `[I]` for narrative/perennial translation, `[C]` for frontier physics or Ground-exhaustion claims.
@@ -23,7 +23,7 @@ rosetta:
 | L1 Caṇḍāla | Names the raw triadic pressure and objective-function implications. |
 | L2 Śūdra | Checks that narrative disclosure is not mistaken for proof. |
 | L3 Vaiśya | Verifies mathematical and evidence-tier movement through formula and honest-position authorities. |
-| L4 Kṣatriya | Blocks action or K2 claims from narrative trinity language alone. |
+| L4 Kṣatriya | Blocks action or private-DAV K2 claims from narrative trinity language alone. |
 | L5 Brāhmaṇa | Owns positive trinity model architecture and compatibility routing. |
 | L6 Sādhu | Cuts claims that the narrative model exhausts the Ground. |
 | L7 Ṛṣi | Translates only tier-cleared trinity language into public symbol. |

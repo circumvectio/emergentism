@@ -48,6 +48,6 @@ evidence_tier: "[B] for source-file existence and fresh syntax/test receipts; [D
   requires compile/test/release receipts.
 - Prefer syntax checks that do not write bytecode caches, or remove generated
   caches before staging.
-- All irreversible actions require K2 envelope staging.
+- Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.
 
 ⊙ = • × ○

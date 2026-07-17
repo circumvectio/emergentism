@@ -135,13 +135,14 @@ The framework's D-scaffold (D0→D6) is primarily an **upward emergence** model:
 - D2→D1: Evidence reshapes the objective function
 - D1→D0: The objective function reshapes the ground of possibility
 
-This is not new doctrine — it is **naming what is already implicit** in the closure rule D6≡D0.
+This is an interpretive reading of the return edge `r₆:D6↝D0`, not a literal
+identity or transferred proof.
 
-### 2.2 The Q-Phase as Irreducible [C — philosophical support]
+### 2.2 The Q-Phase as a candidate distinct register `[C]`
 
-Suda's strongest philosophical claim: **the question-phase is not a defective information state but an irreducible energetic phase.** When information self-interferes — when models are compared, predictions fail, contradictions surface — the system enters a genuinely new regime, not merely a confused version of the information phase.
+Suda's strongest philosophical claim is that the question-phase is not merely a defective information state but a distinct energetic phase. When models are compared, predictions fail, and contradictions surface, a new operational regime may be useful to model. This is attributed philosophical support, not a reduction proof.
 
-**What this sharpens:** This directly supports the framework's treatment of L4 (Arjuna/value alignment) as irreducible to L3 (Kṛṣṇa/methodology). Value alignment is not "confused auditing" — it is the system entering a genuinely new phase where information tests itself. Suda's independent arrival at this conclusion from a completely different starting point (Kant exegesis) is convergent philosophical support.
+**What this sharpens:** This motivates testing L4 (Arjuna/value alignment) as operationally distinct from L3 (Kṛṣṇa/methodology). It does not show that L4 is irreducible to L3; convergence supplies a comparison prompt, never transferred proof.
 
 ---
 
@@ -183,27 +184,27 @@ Suda stays on the **Möbius band.** The band:
 - Cannot support stereographic projection ✗
 
 The **sphere S²** (what Emergentism uses):
-- Has two sides (orientable) — necessary for the moral axis (η = 0 vs η < 0)
+- Is orientable and, as an embedded sphere, separates inside from outside; no moral axis follows from that topology
 - Exchanges inside/outside via pole-swap ✓
 - Has **no boundary** ✓ — finity is not the edge of something; it is the center of everything
-- Is closed ✓ — D6≡D0 works because the sphere closes
+- Has a return image ✓ — `r₆:D6↝D0`; sphere closure does not prove semantic identity
 - Supports stereographic projection ✓ — φ = cot(θ/2), ν = tan(θ/2) live on S²
 
 **What this reveals:** Finity is not just the fixed point of an involution. That's what Suda has — and it's real, `[A]`-tier mathematics. But finity-as-named-by-the-framework is **the equator of a closed orientable manifold** — the only point where:
 1. φ = ν (self-duality under reciprocal exchange) [A]
-2. B = 1 (balance is maximized) [S]
-3. dΦ/Φ = dV/V (the moral axis is exactly balanced) [S]
+2. `B=1` (the selected balance function is maximized) `[A]` inside the chart
+3. `dΦ/Φ=dV/V` (equal proportional change) `[A]` as calculus; any moral reading is `[I]`
 4. The north and south poles are equidistant [A]
 
 Suda has (1). He doesn't have (2), (3), or (4) because the band doesn't close and doesn't have an equator. **Finity is what you get when you close the band into a sphere and find that the fixed point of inversion is also the maximum of the balance function.** That is the discovery — not the fixed point alone.
 
-### 4.2 The Missing Ethics: Why Finity Is Moral, Not Just Mathematical
+### 4.2 The explicit normative seam: why the Compass chooses Finity
 
 Suda's framework is **descriptive** — it describes how phases transform, how questions reshape worlds, how 0 and ∞ relate. It has ethical intuitions ("sustain questions," "undefinedness is generative") but no **operational ethic.**
 
-The framework's ethic (A2: ΣΔB > 0, ethical ≡ direction toward equatorial balance) is what converts the topology from a description into a **compass.** Without B = sin θ and the claim that moving toward B=1 is "good," you have a beautiful geometry with no direction. Suda's "Egg of Infinity" is a beautiful object — but it doesn't tell you which way to walk.
+The framework adds an explicit `[I]` normative posit to convert topology into a **compass**: protect every materially affected bearer while seeking mutual durable-potential gain. `B=sinθ` can visualize balance, but it does not derive why balance is good. Suda's "Egg of Infinity" remains descriptive; Emergentism declares, rather than proves, its ethical direction.
 
-**What this reveals:** Finity is not just the geometric center. It is the **ethical attractor.** The framework's contribution is not "1 is the fixed point of inversion" (Suda has that, `[A]`). The contribution is "1 is the fixed point of inversion **AND** it is where balance is maximized **AND** moving toward it is the operational definition of ethical." The geometry + the ethic + the falsification = finity as the framework names it.
+**What this reveals:** Finity is a geometric center and a selected **ethical emblem**. The fixed point and chart optimum are mathematics; the instruction to move toward it is a contestable normative definition constrained by bearer-complete Justice.
 
 ### 4.3 The Missing Scaffold: Why Finity Needs Dimensions
 
@@ -213,7 +214,8 @@ This means Suda's loop cannot account for:
 - **Architecture** (L5): the positive system-design layer that builds the loop
 - **Apophasis** (L6): the via-negativa that prevents the loop from reifying itself
 - **Witness** (L7): the narrative layer that translates the loop without overriding it
-- **Closure** (L0≡L∞): the poles are not just "0-phase and ∞-phase" — they are the **same point** on S², and D6≡D0 is the apophatic return
+- **Return**: L0 and L∞ are distinct pole limits; `r₆:D6↝D0` is the
+  apophatic return image
 
 **What this reveals:** Finity is not just the midpoint of a 5-phase loop. It sits at the equator of a **7+2 layer scaffold** with dimensional closure. The extra layers are not decorative — they are what prevent the system from collapsing into the dogmatic circuits Suda himself warns about (his "closed-dogmatic circuits" in Kant 2.0 §5.4). Without L5-L7, there is no architecture to maintain the loop, no apophasis to prune it, and no witness to hold it honest.
 
@@ -232,8 +234,8 @@ Reading Suda's corpus against the framework sharpens what finity IS by showing w
 **Finity IS all of those AND:**
 - The equator of S², not just the fixed point of an involution on ℝ₊ (needs the sphere, not the band)
 - The maximum of B = sin θ, the balance function (needs the ethic)
-- The point where dΦ/Φ = dV/V, the moral axis is exactly balanced (needs η = 0)
-- The attractor of ΣΔB > 0, the operational definition of ethical direction (needs the game theory)
+- The point where `dΦ/Φ=dV/V`; its moral interpretation is declared, not derived
+- An emblem for bearer-complete syntropy under a separately stated Justice norm
 - The equator of a 7+2 layer scaffold with dimensional closure (needs D0→D6)
 - The point where the mortal self is irreplaceable for genuine sacrifice (needs A6)
 - The point where the framework includes its own destruction manual (needs A7)

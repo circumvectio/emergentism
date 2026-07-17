@@ -21,6 +21,13 @@ rosetta:
 
 # MF-293: LANGUAGE IS BANDWIDTH
 
+> **[金] Kintsugi supersession — 2026-07-18.** The channel metaphor may remain
+> `[I]`; the body's real/imaginary D4/D5 axes, measurement-problem identity,
+> necessarily lossless mathematics, and literal light-cone/horn claims are **not
+> live authority**. Under KSC-01/KSC-05, D4 actual carriers can encode D5
+> possible content, the physical cone remains fixed, and quantum language is a
+> removable correspondence rather than a communication mechanism.
+
 ## Every Language Is a Channel Between Light Cones. Mathematics Is the Anti-Babel.
 
 **Emergentism.org · VIVEKA Mathematical Foundations**

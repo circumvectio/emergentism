@@ -51,6 +51,6 @@ evidence_tier: "[I] for DAC-frame synthesis; [B] only where tools or artifacts a
 - Treat DAC constitutional language inside this toolkit as `[I]` or `[D]`
   unless the owning framework or organism-governance lane provides a fresh
   promotion receipt.
-- All irreversible actions require K2 envelope staging.
+- Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.
 
 Zero-Sum Resolution Equation

@@ -50,10 +50,13 @@ This directory is **downstream** of the framework's canonical order:
 
 ```text
 Zero-Sum Resolution Equation
-φ · ν = 1 on S²
+φ · ν = 1 on the selected open reciprocal chart θ∈(0,π); poles excluded
 (φ − ν)² ≥ 0
 φ + ν ≥ 2
 ```
+
+This is analytic `[A]` inside the declared chart and supplies no empirical,
+ontological, ethical, or `P_node` inference.
 
 The formal-system files **codify and test** that order. They do not replace the seed, the core state, or Empirical Observation as primary disclosure.
 
@@ -82,7 +85,7 @@ The formal-system files **codify and test** that order. They do not replace the 
 
 ## Cross-cutting laws
 
-- **K2:** every irreversible act requires natural-person signature.
+- **Authorization:** every consequential act requires a complete, scoped, contestable `AuthorizationEnvelope`; K2 is private-DAV-only.
 - **η = 0:** zero extraction; fees only on value created.
 - **K3:** no-deletion; archive-first.
 - **K4:** grace exit; documented withdrawal path (redeemable assets, not "everything").

@@ -99,14 +99,15 @@ EgregoreotypeCandidate := {
   visibleSubstrateCosts,
   individual,
   whole,
-  eta: 0,
+  affectedBearerIds,
+  etaObserved: Number | unknown,
   custody,
   consent,
   reversibility,
   exit,
-  payer,
-  beneficiary,
-  authorization,
+  payerIds,
+  beneficiaryIds,
+  authorizationAssessment,
   consciousnessPresumed: false,
   personhoodPresumed: false,
   tier,
@@ -117,6 +118,11 @@ EgregoreotypeCandidate := {
 `consciousnessPresumed:false` means the test does not assume consciousness. It
 does not assert that consciousness is absent. The same applies to personhood.
 Those are separate questions with separate criteria and consequences.
+
+Candidacy is descriptive. `etaObserved` may be zero, positive, or unknown,
+and authorization may be valid, invalid, or absent. `η=0` and valid accountable
+authorization are required only for a separate Justice or syntropy verdict;
+they are not conditions of trace persistence or selection reweighting.
 
 ---
 
@@ -170,7 +176,7 @@ remain conjectural and non-load-bearing.
 For coupled agents `1…n`:
 
 \[
-(q_t^{(1)},\ldots,q_t^{(n)})
+((q_t^{(1)},r_{t+1}^{(1)}),\ldots,(q_t^{(n)},r_{t+1}^{(n)}))
 \longrightarrow T_{t+1}
 \longrightarrow
 (G_{t+1}^{(1)},\ldots,G_{t+1}^{(n)}).
@@ -198,7 +204,7 @@ symbol's ontology.
 For every ritualized collective act, record:
 
 - individual and whole;
-- actor and Authorization envelope;
+- actor and authorization assessment, including a nullable envelope;
 - custody, consent, reversibility, contest, and exit;
 - payer and beneficiary;
 - physical and option-cone costs;

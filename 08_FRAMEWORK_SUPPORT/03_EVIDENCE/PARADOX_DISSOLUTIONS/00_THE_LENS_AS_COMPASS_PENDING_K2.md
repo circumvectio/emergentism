@@ -1,11 +1,11 @@
 ---
-title: "The Lens as Compass — 21 paradoxes reframed at tier, the sciences stratified as recurrence-not-reduction — STAGED, pending K2"
+title: "The Lens as Compass — historical staged synthesis, superseded by the Kintsugi Compass"
 date: 2026-07-12
-status: "[I] synthesis, STAGED PENDING K2. Produced by the emergentist-lens workflow (9 agents: 5 reframe batches over the PD suite, 2 stratification views, synthesis, adversarial fence-check). The fence-check's four findings are APPLIED in this text: the section-3 force-to-line identities rewritten as [C] readings (h04), the null-result-as-confirmation softened (h05-adjacent), PD_05/PD_11 demoted [S/I] to [I], two h04/h05 label swaps corrected."
+status: "SUPERSEDED [I] synthesis — preserved as historical staged analysis; non-operative after 2026-07-17"
 evidence_tier: "[I] throughout unless a row marks otherwise; [B] borrowed results (Godel, Tarski, Bell); [A] chart identities only"
 caveats: "The life/mind-side stratification agent returned a stub; the strata table reflects the physics-side view, cross-checked at synthesis but single-sourced. The per-row 'Does NOT resolve' columns double as an audit of the PD suite itself and surfaced real source defects (e.g. PD_05 prose contradicting its own equation; PD_10 section 4.2 carrying a live h04-class line) — those belong to the PD docs, flagged here, not silently fixed."
 verdict_extends: "PD_00_INDEX (reframed-not-dissolved lexical note) · receipt 114 (three tenses) · h04/h05/h09 · the Open Canon Covenant"
-owner: "K2. Software staged; K2 signs."
+owner: "historical authors; current authority is the Emergentist Compass"
 parents:
   - PD_00_INDEX.md
   - ../../../11_UPLINK/50_AUDITS_AND_EXECUTIONS/114_REGISTER_NON_INSTANTIATION_THREE_TENSES_PENDING_K2.md
@@ -14,6 +14,15 @@ parents:
 
 # THE LENS AS COMPASS
 ### Paradoxes reframed, sciences stratified
+
+> **[金] Kintsugi supersession — 2026-07-17.** This file is preserved as a
+> dated synthesis, not active semantic authority. All literal `D6≡D0`,
+> unqualified strong-emergence, `μ = enactment`, K2-as-worldview, quantum-layer,
+> and physical-light-cone readings below are superseded. Current canon fixes D4
+> as actual, D5 as possible, uses `μ₀…μ₅` only for candidate emergence
+> crossings, `r₆:D6↝D0` for the non-μ return, accountable authorization for
+> action, and option cones for agent reach. No K2 countersign is required for
+> canon adoption under the approved plan and dated repair receipt.
 
 *The deeper payload behind /paradox/. One move, applied twenty-one times, then turned on the sciences themselves. Everything here is tier-marked, and the ceiling is stated as plainly as the reach.*
 

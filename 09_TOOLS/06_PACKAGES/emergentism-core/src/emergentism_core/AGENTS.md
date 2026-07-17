@@ -48,6 +48,6 @@ evidence_tier: "[B] for module/source existence and fresh syntax/test receipts; 
   claims into the top-level API surface.
 - Treat module presence as `[B]` existence evidence only until a test/build
   receipt names the API behavior.
-- All irreversible actions require K2 envelope staging.
+- Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.
 
 ⊙ = • × ○

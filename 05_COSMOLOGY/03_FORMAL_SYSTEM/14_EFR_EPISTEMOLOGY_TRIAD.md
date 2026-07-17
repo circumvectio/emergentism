@@ -11,6 +11,13 @@ rosetta:
 
 # EFR EPISTEMOLOGY: THE TRIAD OF KNOWING
 
+> **[金] Kintsugi supersession — 2026-07-18.** This interpretive paper predates
+> KSC-01 and KSC-05. The triad may remain a metaphor for reasoning, but body
+> language equating D5 with an uncollapsed wavefunction, D4 with collapse, or
+> deduction/abduction with quantum measurement is **not live authority**. Actual
+> reasoning events and present model tokens are D4 carriers referring to D5
+> possible contents; neither `μ` nor `χ` is quantum measurement.
+
 ## Formal Theory of Induction, Deduction, and Abduction as Geometric Operations on S²
 
 **Status:** Active Development

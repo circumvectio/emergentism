@@ -115,9 +115,10 @@ W_x(T)=\int_0^T P_x(t)\,dt.
 \]
 
 Justice defines an admissible action field in which modeled durable changes for
-both individual `i` and sustaining whole `H` are nonnegative. Power-Max may
-optimize inside that field. It cannot derive Justice, compel sacrifice, or
-launder a negative bearer through aggregate gain.
+individual `i`, sustaining whole `H`, and every materially affected bearer are
+nonnegative. Power-Max may optimize inside that field only under stated exact
+attainment conditions or a declared `ε` tolerance. It cannot derive Justice,
+compel sacrifice, or launder a negative bearer through aggregate gain.
 
 ---
 
@@ -130,8 +131,9 @@ D0 ground-limit
 D1 distinction
 D2 configuration
 D3 transformation/persistence
-D4 causal actuality: means, action, record, receipt
-D5 counterfactual possibility: alternatives, ranking, selection
+D4 causal actuality: means, present model/ranking/selection tokens,
+   action, record, receipt
+D5 merely-possible counterfactual contents and candidates for selection
 D6 apophatic closure: no additional positive freedom
 ```
 
@@ -150,7 +152,7 @@ destroying the scaffold.
 ## 6. The Soul Loop and future influence
 
 \[
-\chi_t:(X_t,\Omega_t,M_t,V_t,U_t)\to(a_t,q_t),
+\chi_t:(X_t,\Omega_t,M_t,V_t,U_t,G_t)\to(a_t,q_t),
 \qquad a_t\in Action\cup\{\bot\},
 \]
 
@@ -170,24 +172,31 @@ change present choice through a model that exists now. Formally,
 
 \[
 M\star A:
-\operatorname{ModelState}\times\operatorname{AdmissibleActionField}
+\operatorname{ModelState}\times\operatorname{PhysicallyFeasibleActionField}
 \to\operatorname{ActionWeights}.
 \]
 
 This is model-mediated future influence. It makes agents future-guided without
 requiring a realized future event to signal backward through spacetime.
+`G_t` is a selector input, so receipted changes to `G_{t+1}` can alter the next
+selection. Authorization defines a separate normative subset of physically
+feasible actions: a governed selector refuses an invalid action, but a
+descriptive receipt must still represent an unauthorized attempt that occurs.
 
 ---
 
 ## 7. The option-cone objective
 
 An option cone is the set of physically admissible histories an agent can
-model, distinguish, rank, coordinate, authorize, and reach with actual means:
+model, distinguish, rank, coordinate, and reach with actual means:
 
 \[
 \operatorname{OptionCone}_x(t)
 \subseteq\mathcal H_{\mathrm{phys}}(X_t).
 \]
+
+Authorization defines a separate normative subset of that reachable field;
+physical capacity never entails permission.
 
 Physical light cones remain governed by spacetime and `c`. Human symbolic,
 social, institutional, and intergenerational reach may widen agent option cones
@@ -227,11 +236,11 @@ Imposed sacrifice is extraction, not syntropy.
 
 ## 9. The authorization question
 
-Every consequential commitment requires:
+Every accountable governed consequential commitment requires:
 
 ```text
 principal + mandate + scope + consent + custody + expiry/revocation
-+ contest path + actor + consequence bearer
++ contest path + actor + consequence bearer set
 ```
 
 Authority is typed, scoped, expiring, and contestable. No person, office,

@@ -34,6 +34,7 @@ MuCrossing := {
   target,
   saturatedRegister,
   saturationEvidence,
+  evidenceStatus,
   newFreedomOrBoundaryResult,
   lowerRegisterRecovery,
   reductionStatus,
@@ -42,6 +43,11 @@ MuCrossing := {
   killCriterion
 }
 ```
+
+For the canonical scaffold in this externally uncalibrated Compass,
+`saturationEvidence=[]` and `evidenceStatus=not_yet_supplied` unless a cited
+`EvidenceRef` is actually present. A saturation description is a hypothesis,
+not evidence for itself.
 
 ```text
 reductionStatus ∈ {
@@ -63,14 +69,14 @@ Missing reduction never upgrades a crossing.
 
 ## 2. Canonical sequence
 
-| ID | Source → target | Saturated lower description | New freedom or boundary result | Lower-register recovery | Default status / tier | Example prediction | Kill criterion |
-|---|---|---|---|---|---|---|---|
-| `μ₀` | `D0→D1` | undifferentiated ground-limit cannot express a contrast | distinction | collapsing distinctions recovers the ground-limit description | `currently_unreduced [I/C]` | stable discriminable states appear under a specified perturbation | no reproducible distinction or lower description already supplies it without a crossing |
-| `μ₁` | `D1→D2` | isolated distinctions cannot encode simultaneous relation | configuration / adjacency | erase relations and recover independent distinctions | `currently_unreduced [I/C]` | relational constraints discriminate configurations with the same elements | configurations add no predictive or explanatory discrimination |
-| `μ₂` | `D2→D3` | static configurations cannot encode ordered change | transformation and persistence | freeze transition order and recover configuration | `currently_unreduced [I/C]` | history/order changes later state despite matching snapshots | an atemporal configuration model fully predicts the tested behavior |
-| `μ₃` | `D3→D4` | transformations alone do not type embodied means, performed acts, and factual records | causal actuality / receiptable action | remove action/receipt relations and recover transformation-only dynamics | `currently_unreduced [I/C]` | interventions with controlled means produce distinct receipts | action and receipt add no discriminating causal information |
-| `μ₄` | `D4→D5` | current actuality cannot itself represent absent alternatives | counterfactual modeling, ranking, and option-field selection | suppress counterfactual representation and recover reactive D4 behavior | `currently_unreduced [C]` | intervening on represented futures changes present action distributions | complete lower-register model predicts the same discrimination without a distinct option-field variable |
-| `μ₅` | `D5→D6` | positive models saturate their own descriptive boundary | **no positive new freedom**; explicit apophatic boundary result | restore any positive claim and return to D5 model space | `currently_unreduced [I]` | disciplined closure reduces reification without adding empirical content | D6 yields a reproducible positive capacity not already represented in D0–D5 |
+| ID | Source → target | Saturated lower description | Saturation evidence / status | New freedom or boundary result | Lower-register recovery | Default status / tier | Example prediction | Kill criterion |
+|---|---|---|---|---|---|---|---|---|
+| `μ₀` | `D0→D1` | undifferentiated ground-limit cannot express a contrast | `[] / not_yet_supplied` | distinction | collapsing distinctions recovers the ground-limit description | `currently_unreduced [I/C]` | stable discriminable states appear under a specified perturbation | no reproducible distinction or lower description already supplies it without a crossing |
+| `μ₁` | `D1→D2` | isolated distinctions cannot encode simultaneous relation | `[] / not_yet_supplied` | configuration / adjacency | erase relations and recover independent distinctions | `currently_unreduced [I/C]` | relational constraints discriminate configurations with the same elements | configurations add no predictive or explanatory discrimination |
+| `μ₂` | `D2→D3` | static configurations cannot encode ordered change | `[] / not_yet_supplied` | transformation and persistence | freeze transition order and recover configuration | `currently_unreduced [I/C]` | history/order changes later state despite matching snapshots | an atemporal configuration model fully predicts the tested behavior |
+| `μ₃` | `D3→D4` | transformations alone do not type embodied means, performed acts, and factual records | `[] / not_yet_supplied` | causal actuality / receiptable action | remove action/receipt relations and recover transformation-only dynamics | `currently_unreduced [I/C]` | interventions with controlled means produce distinct receipts | action and receipt add no discriminating causal information |
+| `μ₄` | `D4→D5` | current actuality cannot itself represent absent alternatives | `[] / not_yet_supplied` | actual representation of counterfactual contents and their comparison | suppress counterfactual representation and recover reactive D4 behavior | `currently_unreduced [C]` | intervening on represented futures changes present action distributions | complete lower-register model predicts the same discrimination without a distinct option-field variable |
+| `μ₅` | `D5→D6` | positive models saturate their own descriptive boundary | `[] / not_yet_supplied` | **no positive new freedom**; explicit apophatic boundary result | restore any positive claim and return to D5 model space | `currently_unreduced [I]` | disciplined closure reduces reification without adding empirical content | D6 yields a reproducible positive capacity not already represented in D0–D5 |
 
 The table records hypotheses to test, not six established events in nature.
 
@@ -110,13 +116,18 @@ The metric, tolerance, and failure condition must be stated for each domain.
 Commitment moves in the opposite direction:
 
 ```text
-D5 option field + D4 means + authorization → D4 attempted action
+D5 option content + D4 selection event + D4 means → D4 attempted action
 ```
+
+Authorization assesses whether the attempt is accountable; it is not a
+condition of causal representability. A governed selector may refuse an
+invalid action, while a descriptive receipt must still represent an
+unauthorized attempt that occurs.
 
 The selector is:
 
 ```text
-χ_t:(X_t,Ω_t,M_t,V_t,U_t) → (a_t,q_t)
+χ_t:(X_t,Ω_t,M_t,V_t,U_t,G_t) → (a_t,q_t)
 ```
 
 `χ` emits an action and **CommitmentReceipt** `q_t`, not an outcome. The

@@ -34,7 +34,7 @@ evidence_tier: "[B] for local routing; inherited evidence tiers for L4 agent spe
 | Agentz | Deployment in this lane |
 |---|---|
 | L3 Vaiśya | Supplies ranked decision packets. |
-| L4 Kṣatriya | Owns bounded execution, judgment, and K2 envelope staging. |
+| L4 Kṣatriya | Owns bounded execution, judgment, and accountable authorization; K2 is private-DAV-only. |
 | L5 Brāhmaṇa | Receives structural deadlocks for redesign. |
 | L6 Sādhu | Receives overgrowth or superseded traces for compression. |
 | L7 Ṛṣi | Receives only constitutional deadlocks; L4 remains the action return. |

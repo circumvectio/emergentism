@@ -75,11 +75,18 @@ whole at the declared scale. Define `J(a;i,H)` to mean that the action passes a
 named Justice envelope containing at least:
 
 - an accountable `AuthorizationEnvelope` (principal, mandate, scope, consent,
-  custody, expiry or revocation, contest path, actor, and consequence bearer);
+  custody, expiry or revocation, contest path, actor, and consequence-bearer
+  set);
 - non-extraction and no hidden transfer (`η = 0` at the declared boundary);
 - truthful accounting of payer and beneficiary;
 - due process, reversibility where possible, and Grace Exit;
 - respect for the physical and option-cone boundaries of both `i` and `H`.
+
+Let `\mathcal B(a)` be the declared nonempty finite set of **every materially
+affected bearer**, including `i`, `H`, every payer and beneficiary, and any
+exposed third party. `J` fails closed when this set is incomplete. Its
+non-extraction clause is bearer-wise: a gain assigned to `i` or `H` cannot
+compensate for a hidden loss to `b∈\mathcal B(a)`.
 
 Justice is not obtained by maximizing `W`. It determines which actions may be
 compared in the first place:
@@ -88,7 +95,9 @@ compared in the first place:
 \mathcal A_J=
 \left\{a:\ J(a;i,H)
 \land\widehat{\Delta}_TW_i(a;M_t)\ge 0
-\land\widehat{\Delta}_TW_H(a;M_t)\ge 0\right\}.
+\land\widehat{\Delta}_TW_H(a;M_t)\ge 0
+\land\forall b\in\mathcal B(a),\
+\widehat{\Delta}_TW_b(a;M_t)\ge0\right\}.
 \]
 
 If `\mathcal A_J` is empty, the calculus returns **no admissible maximizer**. It does not
@@ -98,12 +107,36 @@ launder a harmful action by choosing the least harmful member of an unjust set.
 
 ## 3. Power-Max
 
-The repaired Power-Max objective is
+Write
+
+\[
+f_t(a):=\mathbb E_{M_t}[W_i(T)\mid a].
+\]
+
+If `\mathcal A_J` is finite, or is compact and `f_t` is upper
+semicontinuous, the repaired exact Power-Max objective is
 
 \[
 a^\star\in\operatorname*{arg\,max}_{a\in\mathcal A_J}
 \mathbb E_{M_t}[W_i(T)\mid a].
 \]
+
+When the maximum is not known to be attained but `\mathcal A_J` is nonempty
+and `f_t` has a finite supremum, use the honest approximate form: for declared
+`\varepsilon>0`, choose
+
+\[
+a_\varepsilon\in\mathcal A_J
+\quad\text{such that}\quad
+f_t(a_\varepsilon)
+\ge \sup_{a\in\mathcal A_J}f_t(a)-\varepsilon.
+\]
+
+For example, `\mathcal A_J=(0,1)` with `f_t(a)=a` has no exact maximizer even
+though it is nonempty; every `a_\varepsilon>1-\varepsilon` is admissibly
+`\varepsilon`-optimal. If the field is empty, the objective is unbounded, or
+the expectations are undefined, the calculus returns no result rather than
+inventing a maximizing action.
 
 In words:
 
@@ -111,10 +144,11 @@ In words:
 > accounted, and non-degrading to both the part and the sustaining whole,
 > choose the action expected to maximize the acting part's durable potential.
 
-This is a constrained decision rule. It says neither that agents in fact obey
-it nor that unconstrained maximization becomes moral. The horizon, baseline,
-bearers, boundary of `H`, power measure, model, uncertainty, payer, and
-beneficiary must all be declared.
+This is a constrained decision rule when its existence conditions are stated.
+It says neither that agents in fact obey it nor that unconstrained maximization
+becomes moral. The horizon, baseline, affected-bearer set, boundary of `H`,
+power measure, model, uncertainty, payers, beneficiaries, and attainment or
+`\varepsilon` tolerance must all be declared.
 
 ### Syntropic Dyadism
 
@@ -123,7 +157,10 @@ Justice envelope:
 
 `J^R(q,r;i,H)` means that the recorded authorization and Justice conditions
 were actually honored according to the commitment and outcome receipts, not
-merely predicted at selection time.
+merely predicted at selection time. It also requires complete affected-bearer
+coverage and `\Delta_T^R W_b(q,r)\ge0` for every
+`b∈\mathcal B(q,r)`; an omitted or harmed third bearer makes all three positive
+classifications false.
 
 \[
 \operatorname{Moral}(q,r)
@@ -246,7 +283,8 @@ Reclassify or reject an application when any of the following holds:
 
 1. the declared `P_x` is not operationally measurable;
 2. another admissible aggregator predicts receipts materially better;
-3. payer, beneficiary, consent, custody, or consequence bearer is hidden;
+3. any affected bearer, payer, beneficiary, consent, custody, or consequence
+   bearer is hidden;
 4. the boundary of `H` is chosen after the outcome to manufacture agreement;
 5. one side's durable potential is destroyed while aggregate gain is called
    syntropy;

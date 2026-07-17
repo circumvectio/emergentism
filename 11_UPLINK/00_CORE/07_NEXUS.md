@@ -99,7 +99,7 @@ Every piece of data a natural person generates maps to exactly one layer:
 | **Phenotype** | Your body right now | Continuous | Weight, BP, VO2max, heart rate |
 | **Extended Phenotype** | Your balance sheet | Per transaction | Accounts, property, contracts, IP |
 | **Memotype** | Your communication interface | Per interaction | Languages, credentials, preferences |
-| **Egregorotype** | Your counterparty ledger | Per contract | DAV seat-positions, relationships, governance |
+| **Egregoreotype** | Your counterparty ledger | Per contract | DAV seat-positions, relationships, governance |
 
 **Nexus consolidates all six under one key.** Your Nostr private key. Sovereign by construction.
 
@@ -133,7 +133,7 @@ Continuous authorizations WITH scope, consent, and instant revocability:
 | Health Grant | Phenotype + Epigenotype | Medical provider | Zero-knowledge proof |
 | Financial Grant | Extended Phenotype | Mortgage provider | ZKP solvency proof |
 | Commerce Grant | Payment capacity | Merchant | Sigil Pass gesture |
-| Governance Grant | Egregorotype rights | DAV | Membership duration |
+| Governance Grant | Egregoreotype rights | DAV | Membership duration |
 | Insurance Grant | Health data | Insurer | Verified health pricing |
 
 ---
@@ -175,7 +175,7 @@ The membrane verifies but never overrides. The organism recommends but never dec
 
 For the Nexus layer, Grace Exit means export and revocation across the
 person-bound data, graph, and service surfaces: genome, epigenome, phenotype,
-extended phenotype, memotype, egregorotype, and agent configs.
+extended phenotype, memotype, Egregoreotype, and agent configs.
 
 The organism retains: **nothing from the Nexus-held private surface.**
 

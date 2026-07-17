@@ -8,7 +8,7 @@ rosetta:
       role: "route constitutional D-series papers as framework architecture"
     - level: L6
       column: Sādhu Boundary
-      role: "preserve invariant and K2/K3 boundary discipline"
+      role: "preserve invariant and private-DAV K2/K3 boundary discipline"
     - level: L4
       column: Kṣatriya Action
       role: "require irreversible constitutional actions to pass envelope staging"
@@ -36,7 +36,7 @@ evidence_tier: "[S] for route discipline; [I] for constitutional paper projectio
 | L3 Vaiśya | Audits generator type, firing discipline, evidence tier, and K-boundaries. |
 | L4 Kṣatriya | Requires irreversible constitutional actions to pass envelope staging. |
 | L5 Brāhmaṇa | Routes constitutional papers as framework architecture. |
-| L6 Sādhu | Preserves invariant and K2/K3 boundary discipline. |
+| L6 Sādhu | Preserves invariant and private-DAV K2/K3 boundary discipline. |
 | L7 Ṛṣi | Owns constitutional witness without becoming executable authority. |
 
 ## Read First

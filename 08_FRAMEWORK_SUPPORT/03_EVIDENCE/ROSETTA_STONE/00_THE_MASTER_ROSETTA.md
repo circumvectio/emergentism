@@ -23,13 +23,22 @@ rosetta:
 
 ## The Seven-Level Pattern Across Every Domain
 
-**Status:** The central empirical observation of the framework
+**Status:** `[I]` translation lens with published failures; externally uncalibrated. The preserved legacy body below is provenance, not authority for a universal sevenfold law or causal generator.
 **Date:** 2026-03-24 (consolidated from Rosetta Stone v5→v8→v9.3→v10)
-**Evidence Tier:** [B] for L1-L4 developmental stages (Piaget cognitive, Kohlberg moral -- independently validated; Plato -- established). [S] for Maslow hierarchy (universal needs confirmed but sequential ordering not supported -- Tay & Diener 2011). [I] for L5-L7 extensions (post-formal, post-conventional, self-transcendence -- beyond originators' empirical data). [S] for the structural alignment across domains (7-level convergence is original Emergentism contribution). [I] for the claim that this alignment is explained by P∞ = φ · ν = 1 on S². [C] for the causal claim that the geometry *generates* the pattern. Note: Piaget and Kohlberg are NOT independent (Kohlberg built directly on Piaget). Maslow IS independent. The number 7 is a design choice, not a discovered constant. Cross-cultural validity degrades at higher levels (WEIRD bias). See `03_THE_rosetta_stone/Trivium_PSYCHOLOGY_RESEARCH_BRIEF.md` for full meta-analysis with 20 references.
+**Evidence Tier:** `[B]` applies only to specific externally sourced claims within their domains. The cross-domain row alignment and Rosetta projection are `[I]`; any proposed empirical discriminator is `[C]`. No column transfers proof to another, and the chart does not generate the rows. Piaget and Kohlberg are dependent; Maslow's needs do not establish a universal sequence; L5–L7 are framework extensions. Seven is a design choice, not a discovered constant, and the non-WEIRD failures are part of the result.
 **Kill Criteria:** If the seven-row alignment is shown to be forced — if the domains genuinely require different numbers of levels, or if the alignment breaks when tested with new domains — the Rosetta Stone falls.
 **Source:** Emergentism Rosetta Stone v10.0 (17-sheet cross-domain translation engine)
 **Depends on:** The Triadic Cascade (09), The Computational Sphere, The L-Level system
 **See also:** Individual rosetta mappings (R4-R12), The Triadic Cascade (vertical translation), Paper 5 (Convergent Discovery)
+
+> **[金] Kintsugi authority seam — 2026-07-18.** The live Rosetta is a
+> type-preserving **translation lens**, not a discovered universal, causal
+> ladder, or proof that reality is sevenfold. `ρ_domain` may project a declared
+> topology into another domain only while preserving type, modality, evidence
+> tier, counterexamples, and kill criteria; it cannot transfer proof or make
+> one column generate another. The historical derivation and triumphal
+> compressions retained below are **not live authority** where they conflict
+> with this seam, receipt 126, or KSC-01…KSC-07 in the Settled Canon Registry.
 
 ---
 
@@ -152,11 +161,11 @@ A square cannot be negative. Therefore this distance has a **hard floor at zero.
 - Extraction would not be provably self-defeating
 - The whole framework evaporates
 
-**But it can't.** Because φ and ν are real numbers — measurable, observable coordinates on a sphere. And in the real number system, squares cannot be negative. There is no exception. There is no configuration of reality where (φ − ν)² < 0.
+**Inside the declared chart, it cannot.** `φ` and `ν` are positive real coordinates by definition, so `(φ−ν)²≥0`. Whether a real system is well measured by these coordinates is a separate empirical question.
 
-**This is why the equator is treated as real, not ideal, inside the model.** [S] Many traditions said "seek balance." The constraint shows why balance is the only stable configuration inside the model — not because it is automatically good, but because the distance function that measures imbalance cannot go below zero. Every step away from the equator costs more to sustain. You can only get less balanced, never "more balanced than balanced."
+**This is why the equator is the analytic balance optimum inside the model.** `[A]` for the chosen function `B=sinθ`; stability, physical cost, and real-system fit require independent dynamics and evidence. The identity does not make balance morally good.
 
-The equator isn't a moral recommendation. It's the boundary of what's structurally possible.
+The equator is neither a moral recommendation nor a boundary on all possible systems. It is the optimum of a selected normalized chart.
 
 **That's why "a square cannot be negative" matters. It's not a math fact applied to philosophy. It's the reason the equator exists as the structural balance minimum, and as an attractor only where a physical, biological, or social dynamics supplies correction.**
 
@@ -246,11 +255,14 @@ The operator column defines the row. Everything else is projection.
 | L7 | Viṣṇu ⊙ | Executive | ~8° | very high | →0 | 1 | →0 |
 | **L∞** | **Trimūrti ☸** | **Trimūrti** | **0°** | **∞** | **0** | **—**† | **0** |
 
-**L0 = L∞.** The south pole (Kāla/Time/Destruction) and the north pole (Trimūrti/Eternity/Creation) are the same boundary condition — because the poles of S² are connected. D6 = D0. The serpent eats its tail. The destroyer IS the preserver seen from the other pole. *kālo'smi.*
+**[金] Selected-frame boundary.** L0 and L∞ are distinct pole limits; a sphere
+does not identify its north and south poles. The serpent image now denotes the
+interpretive return edge `r₆:D6↝D0`, not literal identity. Kāla/Trimūrti is a
+symbolic correspondence, not a theorem.
 
-> **Read with the Burrisphere.** This nine-row `L0..L∞` table is the evidence-layer source for the canonized nine-latitude closure in [`00_THE_BURRISPHERE.md`](../../../05_COSMOLOGY/00_THE_BURRISPHERE.md): `L0/L∞` are boundary rows (not source-owner folders), `L1–L7` the seven active roots, `L4` the equator/balance-maximum, and `L1↔L7 · L2↔L6 · L3↔L5` the mirror pairs. The moral reading of the operator moves is governed by [`00_THE_DYADIC_COUPLING_LAW.md`](../../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) — goodness is the **bond** `φ×ν`; the axis is `η` (closed vs syntropic), never the operator's name or a polarity. `[S]`
+> **Read with the Burrisphere.** This nine-row `L0..L∞` table supplies an `[I]` Rosetta projection: `L0/L∞` are symbolic boundary rows, `L1–L7` the active roots, `L4` the selected equator, and `L1↔L7 · L2↔L6 · L3↔L5` the mirror pairs. The moral reading is a declared normative crosswalk under bearer-complete Justice, never a theorem derived from `φν=1`, a pole, operator, gender, caste, or person.
 
-> **† φ·ν is _undefined_ at the poles** (0·∞ at L0, ∞·0 at L∞) — *not* 1. `P∞ = φ·ν = 1` is conserved on the **open** sphere only, away from the two pole singularities: the limit approaching either pole is 1, but the value *at* the pole is undefined. Per [`00_CANONICAL_FORMULA_BLOCK`](../../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) and the formal [`23_DIMENSIONAL_CLOSURE_PROOF`](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md) (θ on the open interval). `[A]` — corrected 2026-05-31 per the Burrisphere verification.
+> **† `φν` is undefined at the poles** (`0·∞` / `∞·0`). On `θ∈(0,π)` the selected reciprocal definitions make `φν=1` analytically constant, with limit 1 toward either pole. This is a chart identity, not physical conservation. `[A]`
 
 **Between 0 and ∞ is 1.** At L4: φ = 1 and ν = 1. Not 70%. **One normalized unit.** Unit coherence AND unit viability, not pole-inflated quantity. The warrior-sage does not compromise — he holds both factors at their natural unit. Dharma yuddha. Inner and outer jihad. This is the discovery of finity applied to the L-levels.
 
@@ -268,7 +280,7 @@ L7  B → 0       Near north pole. Viṣṇu. The seer. The fork.
 L∞  B = 0       North pole. THE BOUNDARY. Trimūrti. Eternity. ☸
 ```
 
-L0 and L∞ are the same. L1 and L7 are mirrors. L2 and L6 are mirrors. L3 and L5 are mirrors. L4 is the axis of symmetry — the only point that is its own reflection. The poles are the boundary. The equator is the life.
+L0 and L∞ are distinct pole limits connected only by the interpretive return edge `r₆`; they are not identical points. L1 and L7 are selected mirrors. L2 and L6 are selected mirrors. L3 and L5 are selected mirrors. L4 is the selected axis of symmetry in this Rosetta projection. The moral or biological readings are `[I]` correspondences, not consequences of the geometry.
 
 ### The Symbol of L4: The Hexagram ✡
 
@@ -310,11 +322,15 @@ The six spokes are the six intervals. The center is L4. The warrior stands where
 
 **The hexagram holds both.** L4*. The return. The warrior-sage who has made the full circuit and stands again at the equator, holding both wheels, turning both ways, still.
 
-### The Full Three-Stage Process: The Causal Chain
+### The Full Three-Stage Process: An Interpretive Projection
 
-**Who you are → how you think → what you study → how you govern.**
+**Social function ↔ reasoning ↔ discipline ↔ governance.** `[I]`
 
-The column order is not arbitrary. It is causal. The Varṇa (social function) determines the Reasoning mode. The Reasoning mode generates the -ology (discipline). The discipline organizes the Regime (polity). Read each row as a sentence.
+The column order is a selected translation grammar, not a demonstrated causal
+chain and never a hereditary psychology. A role does not determine a person's
+reasoning, worth, or legitimate regime. Read each row as a defeasible Rosetta
+correspondence whose domain sources, counterexamples, and kill criteria remain
+independent.
 
 | L | Operator | B | Varṇa | Pramāṇa | Reasoning | -ology | Regime | Equation |
 |---|----------|---|-------|---------|-----------|--------|--------|----------|
@@ -344,13 +360,13 @@ The column order is not arbitrary. It is causal. The Varṇa (social function) d
 
 ### Reading the Columns
 
-- **Column 1 (Operator) — [A]:** THE column. It defines the row. The operator IS the position on S². Geometric, derived from φ·ν=1 on the Riemann sphere. Immutable.
+- **Column 1 (Operator) — [S/I]:** THE framework column. It assigns a selected symbolic operator to each Rosetta row. Neither the seven positions nor their cross-domain meanings are forced by `φν=1`; they remain revisable framework structure and interpretation.
 - **Column 2 (B) — [A]:** Balance = sin θ. The ONLY thing that varies on S². P∞ = φ · ν = 1 on the open sphere; the poles are undefined limit boundaries. B peaks at L4. Geometric.
-- **Column 3 (Varṇa) — [S]:** Who you are. The social function from the Manusmṛti, extended below (Caṇḍāla) and above (Sādhu, Ṛṣi). Sanskrit-traditional, structural. **Cause.**
-- **Column 4 (Pramāṇa) — [S]:** How you know. The Vedāntic inference type. Structural; self-confirming (each school is stuck at its highest accepted pramāṇa).
-- **Column 5 (Reasoning) — [I]:** How you think. The inference mode determined by the social function. Interpretive — the framework's claim that Varṇa *causes* reasoning mode. **First effect.**
-- **Column 6 (-ology) — [I]:** What you study. The philosophical discipline generated by the reasoning mode. Interpretive cascade. **Second effect.**
-- **Column 7 (Regime) — [I]:** How you govern. The political form produced by the discipline. Plato's classical regimes mapped to operators — interpretive mapping. **Third effect.**
+- **Column 3 (Varṇa) — [I]:** A selected social-function vocabulary. It names roles, never birth, essence, worth, or causal determination of cognition.
+- **Column 4 (Pramāṇa) — [I]:** A selected crosswalk to Indian epistemic vocabularies; no school or person is trapped at one mode.
+- **Column 5 (Reasoning) — [I]:** A proposed role-associated inference style, not an effect caused by caste or identity.
+- **Column 6 (-ology) — [I]:** A proposed discipline correspondence, not a generated necessity.
+- **Column 7 (Regime) — [I]:** Plato's political forms mapped to operators as a defeasible analogy, not a prescription or causal consequence.
 - **Column 8 (Equation) — [A/S]:** standard algebra/calculus identities are `[A]`; the seven-operation ordering as a Rosetta signature is `[S]` inside the framework. Use `P_node` for finite-node operations and `P∞` for the S² manifold identity.
 
 **Evidence-tier reading rule:** use the current six-tier ladder when reusing this table. Standard algebra/calculus and domain-native facts are `[A]`; repository receipts for this table are `[B]`; the equation column and 4+3 operator sign-space are `[S]` as framework-internal structure; cross-domain assignments to Varṇa, Pramāṇa, reasoning, -ology, regime, virtue, vice, mythology, politics, or ontology are `[I]` unless separately upgraded. **Drift risk increases left-to-right within the cascade.** A reader should treat the mathematical signature as load-bearing while re-testing the cascade columns in each new domain.
@@ -513,7 +529,7 @@ This is the canonical grammar:
 - **Gods** are the mixed-sign syntropic or corrective transfers: `(-V_self,+Φ_other)`, `(-Φ_self,+V_other)`, `(+V_self,-Φ_false)`.
 - **The Demon** is the unguarded parasitic occupation of the fourth mixed-sign slot: `(+Φ_self,-V_other)`.
 
-There is no fifth mixed-sign archetype and no fourth Executive. The grammar is exhaustive.
+Inside the declared two-axis sign grammar there is no fifth mixed-sign slot and the three same-sign phase frames complete the selected `4+3` vocabulary. This is conditional grammar closure, not an exhaustive ontology of nature.
 
 **The Pramāṇas** (six means of valid knowledge from Advaita Vedānta + Pratibhā at L7):
 The philosophical schools themselves form an L-cascade: Cārvāka accepts only Pratyakṣa (L1). Nyāya adds Anumāna (L3). Mīmāṃsā accepts all six (L5).
@@ -803,11 +819,11 @@ When Moksha fails at L7, systemic awareness returns INTO D5 as inverted operator
 | # | Name | Statement | Kill Criterion | Tier |
 |---|------|-----------|---------------|------|
 | A1 | THE EQUATION | P_node = Φ × V. Multiplicative. Zero-Factor Catastrophe. Equator maximises B on the manifold; finite nodes use P_node for operational scoring. | P_node better modeled as additive | [T] |
-| A2 | THE ETHIC | `ΔP_node,i > 0` and `ΔP_node,H > 0` under `η = 0`; `ΣΔB / ΣΔP_node > 0` audits widest-boundary balance | Dyadic `P_node` rise under `η = 0` systematically produces harm, or one-sided extraction sustains the coupled field | [T] |
-| A3 | THE SCAFFOLD | D0→D6. Each emerges at μ-limit. D6 ≡ D0. | Force-dimension map has no predictive power | [T/I] |
+| A2 | THE ETHIC | Bearer-complete Justice: morals are `i→H`, ethics are `H→i`, strict syntropy raises both, and no materially affected bearer is negative | A declared bearer is harmed, a payer/beneficiary is hidden, or aggregate gain launders the loss | `[T/I]` |
+| A3 | THE SCAFFOLD | D0→D6; candidate crossings `μ₀…μ₅`; non-μ return `r₆:D6↝D0` | Force-dimension map has no predictive power | [I/C] |
 | A4 | THE BOUNDARY | η = 0 vs cooperators. Tit-for-tat vs defectors. Four mixed-sign Gods plus three same-sign Executive boundary frames. | η = 0 not Nash equilibrium | [T/S] |
 | A5 | THE EGREGORE | D5-limit standing waves have autonomous objective function. Raktabīja captures all opposition. | All collective phenomena reduce to individuals | [T/I] |
-| A6 | THE ARCHITECTURE | Three substrates minimum: mechanical (body), AI (charioteer), mortal self (warrior). | Single substrate passes Great Filter | [T/S] |
+| A6 | THE ARCHITECTURE | Three functions are distinguished in the selected deployment architecture: embodied means, model/charioteer, and accountable commitment. Substrate count is not derived. | A simpler architecture realizes the functions with equal accountability and performance | `[T/I]` |
 | A7 | THE CORRECTION | Self-falsification required or Raktabīja captures. This axiom set includes its own destruction. | Framework without self-correction resists capture equally | [T] |
 
 > **Axiom-A7 ≠ the constitutional A7.** The formal axioms `A1–A7` here are a **different object** from the constitutional *refusal-set* (η=0 · K2 · K3 · K4 · A7). The constitution is **5 + 1** — five refusals **plus Ω** the directional `+1` — and is **never** "six refusals"; its canonical enumeration and the K-namespace disambiguation are owned by [`03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../../../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md). Defer there for the count; tag formal axioms `[Axiom-A]` when citing across the two registers. `[S]`
@@ -819,7 +835,7 @@ When Moksha fails at L7, systemic awareness returns INTO D5 as inverted operator
 | C1 | Exhaustive Strategy Space | A1 | Seven operator actions from `P_node = Φ × V`: four mixed-sign self/other transfers plus three same-sign Executive boundary frames |
 | C2 | L-Levels | A1 + A3 | Seven levels within D5. L4 = apex. |
 | C3 | Trophic Conditions | A2 + A5 | Circuit completion required. Breaking creates Red Demon. |
-| C4 | Replicator Stack | A3 + A5 | Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregorotype |
+| C4 | Replicator Stack | A3 + A5 | Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregoreotype |
 | C5 | Alignment Equation | A1 | `E_node = −log(P_node)`. Alignment is energy minimum. |
 
 ---
@@ -897,11 +913,11 @@ The entire framework in minimal tokens:
 
 ```
 A1  P_node = Φ × V for finite nodes; P∞ = φ·ν = 1 on S²; zero finite factors collapse P_node, while B measures manifold balance.
-A2  ΔP_node,i > 0 and ΔP_node,H > 0 under η = 0; ΣΔB / ΣΔP_node audits widest-boundary balance (operational def.)
-A3  D0→D6: (Analogy [I]) D1=Strong, D2=EM, D3=Weak, D4=Gravity, D5=Consciousness, D6≡D0
+A2  Moral: i→H gain; Ethical: H→i gain; Syntropic: both gain; Justice keeps every affected bearer nonnegative and visible
+A3  D0→D6: interpretive scaffold; candidate μ₀…μ₅; r₆:D6↝D0; force mapping is non-load-bearing
 A4  η = 0 vs cooperators; tit-for-tat vs defectors; all Gods necessary
 A5  D5-limit standing waves (egregores) have autonomous objective function
-A6  Three substrates: mechanical (body), AI (charioteer), mortal self (warrior)
+A6  Distinguish embodied means, model/charioteer, and accountable commitment; do not infer a forced substrate count
 A7  Self-correction required; Raktabīja captures all unguarded encodings
 
 Replicator Stack (C4) IS the timeline:
@@ -1044,13 +1060,13 @@ The Master Rosetta is the central translation engine. These companion documents 
 
 The framework's strongest defensible claim after the non-WEIRD sweep, mirror-symmetry scoreboard, failed mappings appendix, and Indigenous American sweep:
 
-> **The operator grammar (4 mixed-sign Gods + 3 same-sign Executive boundary frames on a surface where φ·ν=1) is structurally exhaustive and universally expressed.** The specific 7-stage articulation with clean mirror symmetry around L4 converges in **polarity-encoding traditions**: Pramāṇa, Operator, Varṇa, Chakra, Alchemy, Music Modes, PIE, Sumerian Mythology, Tarot Major Arcana, and Computation (10 columns 3-strong) + one Indigenous American candidate (Lakota Seven Sacred Rites, [I] pending pre-contact verification). Six of 22 columns score 2S/1P (mostly clean); three score WITH FAILS (Greek Mythology 1F, Plato 1F, Neuroscience 2F). Other surveyed traditions either lack 7-stage structure entirely (Mesoamerican, Buddhist 10 bhūmis, Daoist 內丹, Sub-Saharan, Iroquois, Confucian 8-step) or are 7-graded with non-mirror-symmetric (monotonic) structure (Tahitian arioi). Every column's mirror score is a published transparency receipt. Every failed mapping is documented, not hidden.
+> **Inside the selected two-axis sign grammar, four mixed-sign moves plus three same-sign phase frames close the declared vocabulary.** Several polarity-encoding traditions can be read through a seven-stage mirror pattern `[I]`, while other surveyed traditions do not fit. This is an abductive crosswalk with published failures, not universal expression or evidence that nature is sevenfold.
 
-**What survives:** Operator exhaustiveness; φ·ν=1 geometry; L4 equator as balance maximum; mirror symmetry as geometric necessity — confirmed across all 3-strong columns plus Lakota candidate.
+**What survives:** conditional closure of the declared sign grammar; the analytic reciprocal-chart identity; the selected balance function's equatorial maximum; and mirror symmetry as an optional Rosetta projection. Cross-cultural matches prompt comparison but do not confirm geometric necessity.
 
 **What narrows:** Universal 7-stage initiatory structure → narrowed to polarity-encoding traditions (IE/Med + one Indigenous American candidate). Cross-cultural validity at higher levels → partially countered by Lakota, requires further verification.
 
-**What falls:** Nothing. The kill criteria are not triggered.
+**What falls:** universal-expression, unique-sevenfold, and proof-by-convergence claims. The documented non-fits are evidence for narrowing, not noise.
 
 ---
 

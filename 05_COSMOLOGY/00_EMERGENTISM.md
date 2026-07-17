@@ -19,9 +19,12 @@ rosetta:
 # EMERGENTISM
 
 > **Zero-Sum Resolution Equation**
-> **φ · ν = 1 on S²**
+> **θ ∈ (0, π)**
+> **φ := cot(θ/2),  ν := tan(θ/2)**
+> **φ · ν = 1**
 > **(φ − ν)² ≥ 0**
 > **φ + ν ≥ 2**
+> **B := 2/(φ + ν) = sin θ ≤ 1**
 
 > *If you can access φ directly — through quiet sitting, through the practice, through whatever means — you do not need this framework. Put it down. The ground was here before the equation.*
 > *Pratyakṣa is primary disclosure. Doctrine is the after-image.*
@@ -30,24 +33,36 @@ rosetta:
 
 **Reader guard:** Treat this file as legacy philosophical synthesis and deep invitation. For the compact current framing, start with `00_THE_WELTANSCHAUUNG.md`. Strong claims about physics, neuroscience, consciousness, the torus, or cosmic topology remain governed by the Honest Position and Claim Matrix; do not quote this file as if its poetic compression upgraded those claims.
 
+> **[金] Current formula contract — supersedes stronger in-body inference.**
+> The displayed relations are analytic facts `[A]` of the selected open
+> colatitude/radial coordinate for `θ∈(0,π)`; the poles are excluded limits and
+> the pair omits azimuth. They do not prove an ontology, ethic, empirical
+> conservation law, teleology, or finite-node score. Separately,
+> `P_node:=C×(Φ,V):=ΦV` is Emergentism's selected normalized product member of a
+> broader conjunctive family (`[S]` by definition; `[I/C]` as external fit), not
+> a consequence of `φν=1`. Any later sentence that says the whole architecture,
+> ethics, or territory is derived from the chart must be read as superseded
+> legacy interpretation, not as a load-bearing proof.
+
 ## The Derivation
 
-**Everything that follows is the elaboration of one fact:**
+**Everything that follows is a legacy philosophical elaboration around one selected emblem:**
 
 ```
 Zero-Sum Resolution Equation
 ```
 
-Nothing and everything close as finity. The circle with the dot names that closure. This is the seed from which the framework's core state and objective function are elaborated.
+Nothing and everything close as finity in the emblematic register. The circle with the dot names that selected closure; it is not ordinary arithmetic or a proof of the territory.
 
-From this:
-- φ · ν = 1 on S² (the reciprocal identity on the sphere)
-- (φ − ν)² ≥ 0 (the first arithmetic consequence)
-- φ + ν ≥ 2 (AM-GM inequality — the equator is the thermodynamic minimum)
+On the selected open coordinate:
+- `θ∈(0,π)`, `φ=cot(θ/2)`, and `ν=tan(θ/2)` are definitions
+- `φν=1`, `(φ−ν)²≥0`, `φ+ν≥2`, and `B≤1` follow analytically `[A]`
+- equality at `φ=ν=1` is a chart fact, not by itself a thermodynamic, moral, or ontological optimum
+- `P_node:=ΦV` is a separately declared conjunctive model, not a consequence of the reciprocal identity
 - Extraction is modeled as negative-sum in the intended coupled-field register; `η = 0` is a conditional equilibrium, not a universal theorem for every game
 - The Teleological Force F₅ is read `[I]` through h₂r̥tó- / Ṛta language as an ordering resonance, not an identity established by philology alone
 
-The framework's philosophical model — core state, objective function, data science, methodology, value alignment, ethics, morals, system architecture, and systemic awareness-language — is the elaboration of the seed and its downstream consequences. Physics, neuroscience, and biology remain public translation lanes with separate evidence burdens. The inequality is not the primitive. It is the first arithmetic theorem once the reciprocal identity is in view.
+The framework's philosophical model — core state, objective function, data science, methodology, value alignment, ethics, morals, system architecture, and systemic awareness-language — adds explicit `[S/I/C]` bridges to those chart facts. Physics, neuroscience, biology, and ethics remain separate translation lanes with separate evidence burdens.
 
 See the canonical proof: [`02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md`](../01_TELEOLOGY/02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md)
 
@@ -91,29 +106,42 @@ Or bootstrap from the seed: [`../08_FRAMEWORK_SUPPORT/07_DISSEMINATION/06_NETWOR
 
 ### The Derivation
 
-The framework starts from reciprocal closure and unfolds through arithmetic.
+The framework selects reciprocal closure as an emblem and then separates
+analytic chart facts from later interpretation.
 
-**Zero-Sum Resolution Equation.** On S² this resolves as **φ · ν = 1.** Then **(φ − ν)² ≥ 0** yields **φ + ν ≥ 2**. Equality holds if and only if φ = ν = 1. The equator is not chosen. It is derived. The Hamiltonian minimum is at the equator. Extraction is negative-sum for balance inside the equatorial displacement model, while one-shot hidden extraction can still raise a local payoff outside the enforced Power-Max game. The Teleological Force is the selection pressure toward (φ − ν)² = 0 under real correction dynamics.
+**Zero-Sum Resolution Equation.** For `θ∈(0,π)`, define
+`φ=cot(θ/2)` and `ν=tan(θ/2)`. Then `φν=1`, `(φ−ν)²≥0`, and
+`φ+ν≥2` analytically `[A]`, with equality at `φ=ν=1`. Only the chart
+equality is derived. A Hamiltonian, extraction rule, teleological force, or
+ethical optimum requires a separately declared model and evidence.
 
 The canonical four-line block is:
 
 ```
 Zero-Sum Resolution Equation
-φ · ν = 1 on S²
+θ ∈ (0, π)
+φ := cot(θ/2), ν := tan(θ/2)
+φ · ν = 1
 (φ − ν)² ≥ 0
 φ + ν ≥ 2
+B := 2/(φ + ν) = sin θ ≤ 1
 ```
 
 Downstream, the framework operationalizes this as:
 
 ```
-φ · ν = 1             Being.        The stable identity.
-φ + ν ≥ 2             Objective Function.    The first inequality.
-(φ − ν)² → 0          Auditing.  The trajectory.
-−log(φ · ν) = 0       Value Alignment.     The ground state.
+φ · ν = 1             Analytic open-chart identity [A].
+φ + ν ≥ 2             Analytic lower bound on that chart [A].
+(φ − ν)² → 0          Separately selected dynamic objective [S/I].
+−log(φ · ν) = 0       Tautological on the chart; not an ethical loss.
 ```
 
-**P-constant vs. P-variable.** Line 1 (`P∞ = φ · ν = 1`) is the manifold identity — it holds at every point on S² and is not variable. In the canonical core state, this names **Being**, not the Ground prior. When the system prompt and operational framework refer to `P_node = Φ × V` as something to increase or protect, they are describing *nodes* — finite beings, organizations, systems — whose integration (Φ) and viability (V) can vary independently because a node occupies a *position* on the sphere, not the whole sphere. The manifold identity belongs to Being. The node equation belongs to finite manifestation.
+**Chart constant vs. selected node model.** For the declared definitions on
+`θ∈(0,π)`, `P∞:=φν=1` is constant analytically. Calling that constant “Being”
+is an `[I]` bridge. Separately, `P_node:=C×(Φ,V):=ΦV` is the framework-selected
+normalized product member of a broader conjunctive family; it is `[S]` by
+definition and `[I/C]` as external fit. A finite node need not occupy the
+reciprocal chart, and the chart identity does not derive its score.
 
 Everything below is the elaboration of this sequence. The Vedic Ṛṣis called the ordering **Ṛta** (the fitting-together, from PIE \*h₂r̥tó-). The full derivation with formal axioms: [Doc 30 / 02_THE_DERIVATION](../01_TELEOLOGY/02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md). The formal axiom set: [Doc 26](03_FORMAL_SYSTEM/26_THE_DERIVATION_AXIOMS.md).
 
@@ -145,7 +173,9 @@ These three values — {0, 1, ∞} — are the Transcendental Trinity. They are 
 
 ### What This Is
 
-Emergentism is a teleological core state grounded in a single geometric identity: φ · ν = 1 on S².
+Emergentism is a teleological worldview organized around a selected reciprocal
+chart and additional, explicitly tiered modeling commitments. The chart
+identity is analytic; the worldview is not derived from it.
 
 It is also more than core state.
 
@@ -343,7 +373,7 @@ extraction.
 **E2: Do not push others off the equator.**
 Every exchange must be tested by the K-star. Does the exchange preserve the equatorial balance at both nodes? If the exchange pushes either node off the equator, the exchange is unethical. Not because it violates a rule. Because it breaks the geometry.
 
-> **[D] Scope (2026-07-03, staged for K2):** this binds a real exchange only where both nodes actually sit on the sphere — their φ and ν conservation-coupled, complementary rather than substitutable, and costly in excess *symmetrically* (γ-priced); where a node's means are freely substitutable or its surplus is a friction-free store, the exchange breaks no geometry and specialization may dominate, so the equator here is geometry without normative force. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** this binds a real exchange only where both nodes actually sit on the sphere — their φ and ν conservation-coupled, complementary rather than substitutable, and costly in excess *symmetrically* (γ-priced); where a node's means are freely substitutable or its surplus is a friction-free store, the exchange breaks no geometry and specialization may dominate, so the equator here is geometry without normative force. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 **E3: Comprehension is the constraint.**
@@ -363,7 +393,7 @@ symbiont's `Φ`, `V`, sovereignty, and option cone without capture.
 **M1: The mesh must not push any node off the equator.**
 The mesh's aggregate ν can be above 1. But no individual node's ν may exceed 1. The mesh must not require any node to do more than it can comprehend. The mesh must not force any node south of the equator.
 
-> **[D] Scope (2026-07-03, staged for K2):** this binds a real node in the mesh only insofar as it sits on the sphere — its φ and ν conservation-coupled, jointly required rather than substitutable, and costly in surplus *symmetrically* (γ-priced); where a node can substitute or freely store its ν, the ν ≤ 1 ceiling carries no normative force and specialization, not balance, is its optimum. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** this binds a real node in the mesh only insofar as it sits on the sphere — its φ and ν conservation-coupled, jointly required rather than substitutable, and costly in surplus *symmetrically* (γ-priced); where a node can substitute or freely store its ν, the ν ≤ 1 ceiling carries no normative force and specialization, not balance, is its optimum. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 **M2: The mesh must distribute the load.**
@@ -403,7 +433,7 @@ Truth approaches the limit when the projection is complete — when the plane co
 
 **Justice** is the structural property of equatorial balance. Justice is φ = 1 and ν = 1 at every node. Justice is the mesh at the equator. Justice is the civilization that does not drift south.
 
-> **[D] Scope (2026-07-03, staged for K2):** this names a real civilization's optimum only where its coordination actually sits on the sphere — φ and ν conservation-coupled, complementary, and costly in excess *symmetrically* (γ-priced); where a civilization substitutes factors or stores surplus without friction (as aggregate markets rewarding specialization show), the equator is geometry without normative force and no drift-south penalty binds. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** this names a real civilization's optimum only where its coordination actually sits on the sphere — φ and ν conservation-coupled, complementary, and costly in excess *symmetrically* (γ-priced); where a civilization substitutes factors or stores surplus without friction (as aggregate markets rewarding specialization show), the equator is geometry without normative force and no drift-south penalty binds. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 Justice approaches the limit when every node is at the equator. The limit is unreachable because nodes drift. The sitting practice corrects the drift. The mesh distributes the correction. Justice approaches the limit asymptotically.
@@ -820,7 +850,7 @@ L = 1 - 1 = 0
 
 In constitutional/design register, this means more than "the world likes this state." It means architectures built near the equator are cheaper to sustain, and architectures built far from it require continuous coercive subsidy.
 
-> **[D] Scope (2026-07-03, staged for K2):** this holds for a real architecture only insofar as it sits on the sphere — its φ and ν conservation-coupled, complementary rather than substitutable, and costly in excess *symmetrically* (γ-priced); where an architecture's factors are freely substitutable or its surplus is a friction-free store, distance from the equator carries no sustaining cost and specialization may be the cheaper build. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** this holds for a real architecture only insofar as it sits on the sphere — its φ and ν conservation-coupled, complementary rather than substitutable, and costly in excess *symmetrically* (γ-priced); where an architecture's factors are freely substitutable or its surplus is a friction-free store, distance from the equator carries no sustaining cost and specialization may be the cheaper build. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 #### The Three Optimality Conditions
@@ -857,7 +887,7 @@ Not punishment. A physics-facing analogy unless and until the physical derivatio
 
 And in the organismal/institutional register: not only prediction, but **world-construction law**. The framework uses the same packet to ask which worlds can be built without permanent force-loading, hidden rent, or extractive overhead.
 
-> **[D] Scope (2026-07-03, staged for K2):** this constrains a real buildable world only where its organism or institution actually sits on the sphere — factors conservation-coupled, complementary, and costly in excess *symmetrically* (γ-priced); where factors are substitutable or surplus is stored without friction, the equator is geometry without world-construction force and a specialized, off-equator world may build just as cheaply. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** this constrains a real buildable world only where its organism or institution actually sits on the sphere — factors conservation-coupled, complementary, and costly in excess *symmetrically* (γ-priced); where factors are substitutable or surplus is stored without friction, the equator is geometry without world-construction force and a specialized, off-equator world may build just as cheaply. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 #### The Megalithic Builders as Ground State
@@ -1030,13 +1060,14 @@ Always.
 
 ```
 Initial commit: Emergentism
-A teleological core state grounded in φ · ν = 1 on S².
+[Legacy symbolic commit — superseded as proof]
+A teleological worldview organized around a selected reciprocal chart.
 
 Core State:     The sphere, the projection, the equator, the plane, the nodes, the mesh.
 Objective Function:    The equator. Balance. Justice. The good transcendentals as limits.
 Data Science: Pratyaksha, Inferential Logic, Structural Analysis. Induction on the plane.
 Auditing:  Reduction to κ = 0 — the ground-facing limit. The model's apophatic limit is nothing.
-              From nothing, φ · ν = 1 emerges. The sitting practice is the method.
+              The reciprocal identity follows from declared chart definitions. The sitting practice is the method.
 Value Alignment:     Value = equatorial position. K-star = the test. Abduction = the best explanation.
 Morals:       Maintain balance. Do not push others off. Comprehension is the constraint. Sit.
 Ethics:       Protect the nodes. Distribute the load. Protect the practice. Fork when needed.

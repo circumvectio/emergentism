@@ -22,7 +22,7 @@ Minoru Suda's papers (published/dated 2025–2026, recovered under [01_EMERGENTI
   - The definition of the three boundary-frames: $\{0, 1, \infty\}$.
   - The name **Finity** (denoted by the emblem $\odot$).
   - The frame-register emblem $1 = 0 \times \infty$ (representing the projection of limits rather than a scalar product).
-  - The sevenfold L1–L7 vocational ladder and the K2-signed equator.
+  - The sevenfold L1–L7 vocational ladder and accountable L4 commitment; K2 is only a private-DAV implementation.
 
 ---
 
@@ -75,7 +75,7 @@ graph TD
 - **Downward Loop ($Q \to I \to L \to M \to E$):** How question-operators project back to reorganize the world, resolving the **"200-Year Problem"** (the lack of a formal return path in post-Kantian philosophy).
 
 ### B. Mapping to the Sevenfold Foundation `[I]`
-The two loops superimpose onto the Emergentism L1–L7 vocational ladder, showing how the L4 equator acts as the K2-signed pivot:
+The two loops superimpose onto the Emergentism L1–L7 vocational ladder, showing how the L4 equator acts as an accountable commitment pivot:
 
 | Suda Phase | L-Level | Operator & Varna | Role & Function |
 |---|---|---|---|
@@ -83,11 +83,14 @@ The two loops superimpose onto the Emergentism L1–L7 vocational ladder, showin
 | **Matter ($M$)** | **L2 Epistemology** | Kālī 💀 (Śūdra) | Physical form: data gathering and comparative analysis (*Aisthesis* / Beauty). |
 | **Light ($L$)** | **L2/L3 Epistemology/Methodology** | Kālī 💀 / Kṛṣṇa ◇ | Transmission: medium of pattern disclosure and verification. |
 | **Information ($I$)** | **L3 Methodology** | Kṛṣṇa ◇ (Vaiśya) | Auditing: data structures, logic, and deductive proof (*Dianoia* / Truth). |
-| **Question ($Q$)** | **L4 Axiology** | Arjuna ⚔ (Kṣatriya) | **THE EQUATOR:** Value Alignment, Strategic Abduction, and K2-signed collapse (*Phronesis* / Goodness). |
+| **Question ($Q$)** | **L4 Axiology** | Arjuna ⚔ (Kṣatriya) | **THE EQUATOR:** Value alignment, strategic abduction, and accountable commitment (*Phronesis* / Goodness). Authorization is a separate normative predicate, not a physical-collapse mechanism. |
 
 ### C. The Resolution of the return path:
 Suda's downward loop ($Q \to I \to L \to M \to E$) corresponds to the descending L-ladder (L4 $\to$ L5 $\to$ L6 $\to$ L7 $\to$ L1):
-1. **L4 Equator:** Arjuna signs the question ($Q$) under uncertainty. This action collapses many-worlds possibility into physical reality, serving as the K2 active theurgic operator.
+1. **L4 Equator:** Arjuna models a commitment under uncertainty. D5-ranked
+   possibilities combine with D4 means and accountable authorization; the
+   world returns the outcome. This is not Many-Worlds collapse, and K2 is only
+   private-DAV governance.
 2. **L5 Cosmology (Brahmā ○):** Suda's downward mapping of ideas reorganizing representation ($Q \to I$) is represented by L5 System Architecture: Emergentism as the affirmative model of reality.
 3. **L6 Ontology (Śiva •):** The apophatic Ground prior to structure ($0^*$), where the system recognizes its boundaries.
 4. **L7 Theology (Viṣṇu ⊙):** The Institutional Narrative: mythic and symbolic return ($Q \to E$) that coordinates society and returns the cycle back to L1 Teleology.
@@ -123,7 +126,7 @@ Suda argues that Japanese order is emergent and leaderless because individuals a
 AI systems struggle with this because they define value by active output. Silence and inaction are read as "zero data" or a bug. Suda calls for AI that can read the "residual space of the question."
 
 ### C. Emergentism Alignment `[I]`
-In L4 Value Alignment/Strategic Implementation, K2-signed theurgy is not merely about active intervention; it includes the conscious decision to yield or remain silent (subtractive action) to allow emergent order to self-organize without capture. The synthesis of this genetic model provides a physical basis for how biological agents self-stabilize without a central controller, which we must emulate in decentralized authority networks (SPECTRE/DACs).
+In L4 Value Alignment/Strategic Implementation, accountable commitment is not limited to active intervention; it includes a deliberate decision to yield or remain silent. The cited gene-association proposal does not provide a physical basis for Emergentist governance. At most it motivates a `[C]` comparison with biological self-stabilization; decentralized authority must be justified and tested on its own evidence.
 
 ---
 

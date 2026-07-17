@@ -21,6 +21,14 @@ status: "ACTIVE synthesis note - 2026-06-06. Source-backed intake analysis; not 
 
 # Suda Value Extraction for the Finity Theory
 
+> **[金] Kintsugi boundary — 2026-07-18.** This intake synthesis predates
+> KSC-04. Any body wording that makes Titan status remove ordinary `0` or `1`
+> from arithmetic, calls the triad forced, or treats the emblem `1=0×∞` as an
+> operation is **not live authority**. The current owner is
+> [`00_THE_TRANSCENDENTAL_TRINITY_CANON.md`](../../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md):
+> ordinary `0` and `1` remain lawful operands, `∞` is a projective point, and
+> `{0,1,∞}` is a selected symbolic normalization `[I]`.
+
 ## Executive Read
 
 Suda is valuable because he independently circles the same hard structure from a different entrance: reciprocal symmetry, Mobius/projective geometry, the special position of `1`, the duality of `0` and `infinity`, and the "egg of infinity." He does **not** originate the Finity doctrine in this corpus. He does, however, give us a sharper way to explain why `/1` must follow `/0`: once the Titans are named, reciprocal geometry shows why the middle glyph is not arbitrary.

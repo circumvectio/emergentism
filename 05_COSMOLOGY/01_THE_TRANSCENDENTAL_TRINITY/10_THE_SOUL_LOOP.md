@@ -37,11 +37,14 @@ backward in time
 ## 1. The loop in one line
 
 ```text
-D4 actual state ──model──▶ D5 possible futures ─·─·rank─·─·▶ commitment
-      ▲                                                    │
-      │                                                    ▼
-next D4 state ◀── outcome receipt ◀── world ◀── D4 action + commitment receipt
-      └──────── revise map and mapper ────────┘
+D4 actual state ──▶ D4 actual model/rank/selection tokens
+      ▲                         │ represent/select
+      │                         ▼
+      │                  D5 possible contents
+      │                         │ referenced by commitment
+      │                         ▼
+next D4 state ◀── outcome receipt ◀── world ◀── D4 attempted action + receipt
+      └──────── revise actual map and selector ─────────┘
 ```
 
 The loop is not a ladder and not a metaphysical substance. It is the minimal
@@ -49,7 +52,8 @@ topology of fallible purposive action:
 
 1. an actual system holds a present model;
 2. the model represents alternatives that are not yet actual;
-3. an authorized agent commits actual means to one action;
+3. an agent commits actual means to one action, with authorization assessed
+   separately;
 4. the world returns an outcome;
 5. the mismatch updates both the map and the way the next map is used.
 
@@ -60,25 +64,28 @@ topology of fallible purposive action:
 At time `t`, let:
 
 - `X_t` be the receipted D4 state of the relevant world boundary;
-- `Ω_t` be the D5 option field the agent can currently represent;
-- `M_t` be the fallible model, including modeled-future content;
+- `Ω_t` be the D5 merely-possible contents the agent can currently represent;
+- `M_t` be the fallible D4-actual model, including present tokens that refer to
+  modeled-future content;
 - `V_t` be the D4 means actually available to the agent;
-- `U_t` be the authorization and value/goal specification;
-- `G_t` be the selector policy, habits, weights, or generative stance;
+- `U_t` be the authorization assessment and value/goal specification;
+- `G_t` be the D4-actual selector policy, habits, weights, or generative stance;
 - `E_t` be relevant environmental and other-agent conditions.
 
 The selector returns either an attempted action or the explicit null action
 `⊥`, together with an immediate commitment-status receipt:
 
 \[
-\chi_t:(X_t,\Omega_t,M_t,V_t,U_t)\longrightarrow(a_t,q_t),
+\chi_t:(X_t,\Omega_t,M_t,V_t,U_t,G_t)\longrightarrow(a_t,q_t),
 \qquad a_t\in\operatorname{Action}\cup\{\bot\}.
 \]
 
-`q_t` records status `committed`, `refused`, or `unavailable`, plus the actor,
-authorization envelope, means committed, declared intention, timestamp or
-ordering relation, payer, beneficiary, and expected result where applicable.
-It does **not** assert that the intended consequence occurred.
+`q_t` records status `authorized_committed`, `unauthorized_attempt`, `refused`,
+or `unavailable`, plus the actor, physical availability, authorization
+assessment (including a nullable envelope), means committed, declared
+intention, timestamp or ordering relation, affected bearers, payers,
+beneficiaries, and expected result where applicable. It does **not** assert
+that the intended consequence occurred.
 
 For `a_t∈Action`, the environment separately returns the next state and an
 outcome receipt:
@@ -95,12 +102,21 @@ The loop then updates map and mapper:
 =\operatorname{Loop}(M_t,G_t,q_t,r_{t+1}).
 \]
 
-When `a_t=⊥`, no action transition is submitted to `K_t`; `r_{t+1}` may be a
-null receipt or a separately typed ambient observation. This separation is
-mandatory. Selection can fail for lack of means,
+When `a_t=⊥`, no action transition is submitted to `K_t`; `r_{t+1}` may be null
+or an `OutcomeReceipt` with `receiptCause=ambient_observation` and both action
+identifiers null. It must not attribute an ambient change to `⊥`. `a_t=⊥`
+means no action was attempted because it was refused or physically unavailable. Invalid or
+absent authorization does not make an attempt physically impossible: if the
+act occurs, the descriptive kernel receives it and the defect remains visible
+in `q_t`. A governed selector `χ_t^J` may instead refuse the act. This
+separation is mandatory. Selection can fail for lack of means,
 performance can differ from intention, the environment can veto or transform
 an action, and the same action can have different outcomes under different
 conditions.
+
+Because `G_t` is an input to `χ_t`, a receipt-induced `G_{t+1}` change can alter
+the next action distribution. The selector update is not merely stored audit
+metadata.
 
 ---
 
@@ -166,14 +182,15 @@ For formal work, use a typed coupling rather than ordinary multiplication:
 
 \[
 \star:\operatorname{ModelState}\times
-\operatorname{AdmissibleActionField}\longrightarrow\operatorname{ActionWeights},
+\operatorname{PhysicallyFeasibleActionField}\longrightarrow\operatorname{ActionWeights},
 \qquad
 F_t:=M_t\star\mathcal A_t.
 \]
 
-Here `M_t` contains represented future content and `\mathcal A_t` is the field of
-actions permitted by the agent's means, authorization, and constraints. The
-output is a present set of action weights:
+Here `M_t` is an actual present model carrying represented-future content and
+`\mathcal A_t` is the field of actions physically feasible under the agent's
+means and constraints. Authorization defines a separate normative subset
+`\mathcal A_J⊆\mathcal A_t`. The output is a present set of action weights:
 
 \[
 \pi_t(a\mid X_t,M_t,U_t)
@@ -184,11 +201,12 @@ output is a present set of action weights:
 when a controlled intervention changes only the represented future and the
 agent is sensitive to that representation.
 
-### What is retrocausal here
+### Project-specific retrocausal shorthand
 
-At the agent level, the loop is legitimately **future-guided** or
-**model-mediated retrocausal**: content *about a possible future* changes a
-present choice. The causal token, however—a memory, forecast, promise, plan,
+At the agent level, the loop is **future-guided** or anticipatory: content
+*about a possible future* changes a present choice. Emergentism calls this
+**model-mediated retrocausality** as project-specific shorthand, not as a
+temporal causal relation. The causal token—a memory, forecast, promise, plan,
 simulation, fear, or hope—exists in the present D4 state. The represented
 future need never become actual.
 
@@ -215,19 +233,21 @@ claim fails for that scope.
 
 ## 5. D4, D5, and the option cone
 
-- `D4` is causal actuality: embodied means, performed action, and receipted
-  record.
-- `D5` is counterfactual possibility: modeled alternatives, ranking, selection,
-  and worldline foresight.
+- `D4` is causal actuality: embodied means, present model tokens, performed
+  ranking and selection events, action, and receipted record.
+- `D5` is counterfactual content: merely-possible alternatives, relations,
+  rankings-as-represented, and candidates for selection.
 
-The emergence crossing `D4 → μ₄ → D5` concerns the appearance of
-counterfactual agency. Commitment uses a selected D5 option and D4 means to
-produce an attempted D4 action. Only the environment transition and its receipt
-determine the resulting history. These relations do not invert the registers.
+The emergence crossing `D4 → μ₄ → D5` concerns the appearance of capacity to
+produce actual representations of counterfactual content. A D4 selection event
+references a D5 option and combines it with D4 means to produce an attempted
+D4 action. Only the environment transition and its receipt determine the
+resulting history. These relations do not invert the registers.
 
 The physical light cone is fixed by spacetime and `c`. An agent's **option
 cone** is the subset of physically admissible histories it can model, rank,
-coordinate, authorize, and reach. Two agents can occupy the same physical cone
+coordinate, and reach. Authorization defines a separate normative subset of
+that cone. Two agents can occupy the same physical cone
 while possessing very different option cones. Human symbolic, social,
 institutional, and intergenerational capacities can enlarge the latter without
 altering the former.
@@ -265,7 +285,7 @@ When several Soul Loops share a persistent trace, their selections can become
 coupled:
 
 \[
-q_t^{(1)},\ldots,q_t^{(n)}
+(q_t^{(1)},r_{t+1}^{(1)}),\ldots,(q_t^{(n)},r_{t+1}^{(n)})
 \longrightarrow T_{t+1}
 \longrightarrow
 G_{t+1}^{(1)},\ldots,G_{t+1}^{(n)}.
@@ -314,9 +334,11 @@ The Soul Loop fails or must be reclassified for a scope when:
 3. future representations do not measurably affect present selection;
 4. update rules protect the model from contrary receipts;
 5. the agent's claimed option cone contains physically forbidden histories;
-6. authorization, custody, payer, beneficiary, or consequence bearer is hidden;
+6. authorization, custody, any affected bearer, payer, beneficiary, or
+   consequence bearer is hidden;
 7. a collective trace does not survive turnover or reweight later choices;
 8. a Rosetta projection is presented as proof in the target domain.
+9. `G` is updated but cannot change the next selection distribution.
 
 ---
 

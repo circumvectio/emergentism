@@ -17,6 +17,15 @@ rosetta:
 **Supersedes:** The binary fork in `INSIGHT_EKTROPY_AS_WILL_OF_DYEUS.md` (Options A vs B) and the three-position proposal in `34_RESEARCH_BRIEF_THE_FORK.md` (Alpha/Beta/Gamma)
 **Depends on:** `../00_EMERGENTISM.md`, `../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`, `../../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md`, `../00_CANONICAL_FORMULA_BLOCK.md`, `../../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md`, `../03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md`, `../01_THE_TRANSCENDENTAL_TRINITY/22_THE_TELEOLOGY.md`
 
+> **[金] Typed-scaffold supersession — 2026-07-18.** The physicalist/idealist
+> stratification below is legacy interpretation, not the live D4/D5 type owner.
+> D4 is causal actuality; D5 contains merely-possible counterfactual content;
+> present model tokens, ranking events, and selection events remain actual D4
+> carriers. The candidate crossings are exactly `μ₀…μ₅`. D6 opens no positive
+> freedom and returns only through the interpretive, non-μ edge `r₆:D6↝D0`, not
+> literal identity. See [Dimensional Closure](../03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md)
+> and [D4/D5 Canonical Reference](../03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md).
+
 ---
 
 ## 1. The Fork, Stated Clearly

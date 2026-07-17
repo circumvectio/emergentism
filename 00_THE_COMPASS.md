@@ -52,8 +52,8 @@ Justice → Who authorized, acted, paid, benefited, bore, contested, and exited?
 ### 1. Frame the boundary
 
 Name the system, horizon, baseline, individual `i`, sustaining whole `H`,
-environment, payer, and beneficiary. A boundary chosen after the outcome can
-manufacture almost any verdict.
+environment, complete affected-bearer set, payers, and beneficiaries. A
+boundary chosen after the outcome can manufacture almost any verdict.
 
 Titan tokens `{0,1,∞}` may help frame absence, finite presence, and unbounded
 horizon. They are selected symbols, not causal particles or a forced ontology.
@@ -61,9 +61,13 @@ horizon. They are selected symbols, not causal particles or a forced ontology.
 ### 2. Separate actual from possible
 
 ```text
-D4 = causal actuality: means, attempted/performed action, record, receipt
-D5 = counterfactual possibility: modeled alternatives, ranking, selection
+D4 = causal actuality: means, present model/ranking/selection tokens,
+     attempted/performed action, record, receipt
+D5 = merely-possible counterfactual contents and candidates for selection
 ```
+
+A D4 actual token may represent D5 possible content. Do not type the present
+model, ranking event, or selection event as merely possible.
 
 Do not call a hope a fact, a scenario a history, or a selection a consequence.
 The candidate emergence of counterfactual agency runs `D4→μ₄→D5`; commitment
@@ -72,8 +76,8 @@ what happens next.
 
 ### 3. Type the model and means
 
-Ask what the agent can actually model, distinguish, rank, coordinate,
-authorize, and reach. Its option cone must satisfy
+Ask what the agent can actually model, distinguish, rank, coordinate, and
+reach. Its option cone must satisfy
 
 \[
 \operatorname{OptionCone}_x(t)
@@ -88,9 +92,12 @@ The public mnemonic is `F=M×A`; formally,
 
 \[
 M\star A:
-\operatorname{ModelState}\times\operatorname{AdmissibleActionField}
+\operatorname{ModelState}\times\operatorname{PhysicallyFeasibleActionField}
 \to\operatorname{ActionWeights}.
 \]
+
+Authorization defines a separate normative subset; physical capacity never
+entails permission.
 
 Future content influences the present through a model token that exists now.
 No physical backward signal is required.
@@ -106,7 +113,7 @@ Require the complete envelope:
 
 ```text
 principal + mandate + scope + consent + custody + expiry/revocation
-+ contest path + actor + consequence bearer
++ contest path + actor + consequence bearer set
 ```
 
 No founder, majority, office, algorithm, expert, tradition, or metaphysical
@@ -118,7 +125,7 @@ authorizes, predicts by decree, or manufactures the realized outcome.
 ### 5. Separate commitment from outcome
 
 \[
-\chi_t:(X_t,\Omega_t,M_t,V_t,U_t)\to(a_t,q_t),
+\chi_t:(X_t,\Omega_t,M_t,V_t,U_t,G_t)\to(a_t,q_t),
 \qquad a_t\in Action\cup\{\bot\},
 \]
 
@@ -128,9 +135,12 @@ authorizes, predicts by decree, or manufactures the realized outcome.
 \quad\text{when }a_t\in Action.
 \]
 
-`q_t` says what was authorized and attempted. `r_{t+1}` says what the world
-returned. The actor may not issue its own consequence receipt. Preserve three
-gaps:
+`q_t` says what was selected and attempted, whether it was physically
+available, and whether authorization was valid, invalid, or absent.
+`r_{t+1}` says what the world returned. A governed channel refuses invalid
+authorization; a descriptive channel still receipts an unauthorized attempt
+and submits it to the world. The actor may not issue its own consequence
+receipt. Preserve three gaps:
 
 - territory versus model;
 - intention versus performance;
@@ -166,9 +176,10 @@ syntropic: both actually rise under Justice
 ```
 
 Power-Max may choose inside the Justice-admissible field. Maximization does not
-create that field. If no action preserves both bearers prospectively, the
-result is no admissible maximizer—not permission to choose the least visible
-victim.
+create that field. Exact maximization requires a finite field or suitable
+attainment conditions; otherwise use a declared `ε`-optimal choice under a
+finite supremum. If no action preserves every affected bearer prospectively,
+the result is no selection—not permission to choose the least visible victim.
 
 Voluntary sacrifice is a separate costly class. It requires informed consent,
 visible payer and beneficiary, and a valid Authorization envelope. A collective
@@ -186,6 +197,10 @@ name. A candidate Egregoreotype requires:
 3. measurable reweighting of later selections when the trace is intervened on;
 4. recurrent objective-like bias;
 5. visible substrate costs, payers, and beneficiaries.
+
+Candidate status is descriptive: `etaObserved` may be zero, positive, or
+unknown, and authorization may be valid, invalid, or absent. Only the separate
+Justice verdict requires `η=0` and valid accountable authorization.
 
 This does not presume consciousness, personhood, supernatural agency, or a
 literal energy-feeding entity. Ritual can synchronize the trace; its symbolic

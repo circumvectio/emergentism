@@ -23,7 +23,7 @@ rosetta:
 | L1 Caṇḍāla | Provides the raw disclosed observation before evidence status is assigned. |
 | L2 Śūdra | Owns claim admission, tier naming, and disclosure-vs-proof boundaries. |
 | L3 Vaiśya | Tests upgrade and downgrade rules against method, replication, and receipts. |
-| L4 Kṣatriya | Blocks deployment, K2 action, or irreversible use when a claim is not tier-cleared. |
+| L4 Kṣatriya | Blocks deployment, private-DAV K2 action, or irreversible use when a claim is not tier-cleared. |
 | L5 Brāhmaṇa | Maintains the evidence ladder as a framework architecture constraint. |
 | L6 Sādhu | Cuts aesthetic, doctrinal, or usefulness-based tier inflation. |
 | L7 Ṛṣi | Translates tier-cleared claims into public or institutional surfaces without strengthening them. |
@@ -45,7 +45,7 @@ rosetta:
 
 - Do not upgrade runtime claims without dated proof artifacts.
 - Do not treat draft specs as public-facing claims.
-- All irreversible actions require K2 envelope staging.
+- Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.
 
 Zero-Sum Resolution Equation
 

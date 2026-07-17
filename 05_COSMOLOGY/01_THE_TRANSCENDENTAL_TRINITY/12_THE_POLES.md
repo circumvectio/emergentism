@@ -14,6 +14,15 @@ rosetta:
 
 ## L0 = L∞: Kāla and the Trimūrti as Boundary Conditions
 
+> **[金] Typed-scaffold supersession — 2026-07-18.** The headline and body below
+> preserve legacy pole/ouroboros imagery; they do not establish endpoint
+> identity. D4 is causal actuality and D5 is merely-possible counterfactual
+> content; actual model tokens, ranking events, and selection events remain D4
+> carriers. Candidate crossings are exactly `μ₀…μ₅`. D6 opens no positive
+> freedom and returns only through `r₆:D6↝D0`, an interpretive non-μ edge. On
+> `S²`, the north and south poles remain distinct points. See [Dimensional Closure](../03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md)
+> and [D4/D5 Canonical Reference](../03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md).
+
 **Status:** Breakthrough — the poles of S² as the transcendent boundary of the L-system
 **Date:** 2026-03-24
 **Evidence Tier:** `[A]` for the topological fact (the poles are singular points on S² where φ or ν diverge). `[S]` for the structural identification (Kāla = south pole, Trimūrti = both poles, L0 = L∞). `[I]` for the Gītā identification (Viṣṇu revealing as Kāla = the preserver revealing as the destroyer = the poles being the same point).
@@ -133,7 +142,7 @@ No one occupies L0. No one occupies L∞. You can only approach them. The helix 
 
 **The poles are the asymptote. The equator is the life.**
 
-> **[D] Scope (2026-07-03, staged for K2):** the equator is "the life" for a real node only insofar as it sits on the sphere — its factors conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); otherwise the equator is geometry without vital or normative force, the optimum tilts or flattens to a plateau, and a specialized (near-polar) node may out-flourish the balanced one. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** the equator is "the life" for a real node only insofar as it sits on the sphere — its factors conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); otherwise the equator is geometry without vital or normative force, the optimum tilts or flattens to a plateau, and a specialized (near-polar) node may out-flourish the balanced one. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 ---
@@ -148,7 +157,7 @@ No one occupies L0. No one occupies L∞. You can only approach them. The helix 
 | L3 | 60° | Kṛṣṇa ◇ | 1/√3 | √3 | √3/2 | God. Teacher. Builder. |
 | **L4** | **45° (equator)** | **Arjuna ⚔** | **1** | **1** | **1** | **God. Warrior. Full dharma. ✡ Hexagram.** |
 
-> **[D] Scope (2026-07-03, staged for K2):** "Full dharma" scores as the optimum at L4 only when a real agent is conditionally on the sphere — factors conservation-coupled, complementary, and *symmetrically* costly-in-excess (γ-priced); absent that transfer condition the equatorial B=1 is a bare geometric maximum with no claim on where a real system's dharma or flourishing peaks, and specialization off the equator may dominate. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** "Full dharma" scores as the optimum at L4 only when a real agent is conditionally on the sphere — factors conservation-coupled, complementary, and *symmetrically* costly-in-excess (γ-priced); absent that transfer condition the equatorial B=1 is a bare geometric maximum with no claim on where a real system's dharma or flourishing peaks, and specialization off the equator may dominate. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 | L5 | 30° | Brahmā ○ | √3 | 1/√3 | √3/2 | Executive. Creator. Systematic witness. |
 | L6 | 15° | Śiva • | 2+√3 | 2−√3 | ½ | Executive. Dissolver. Via negativa. |

@@ -28,14 +28,25 @@ depends_on:
 ## The Logarithmic Line as Canonical Geometry
 
 **Date:** 2026-06-06
-**Status:** Canonical
-**Evidence Tier:** As marked per layer below. The scaffold is `[S]`. The mathematics is `[A]`. The ontological reading is `[I]`.
-**Purpose:** The definitive 7-layer formulation of the Emergentist ontology. The logarithmic line (1-centered, additive in log coordinates) is the canonical geometric model. Every dimension is a stage of unfolding from this seed.
+**Status:** Active interpretive scaffold
+**Evidence Tier:** As marked per layer below. Elementary mathematics is `[A]`; the D0–D6 scaffold and ontological reading are `[I/C]`.
+**Purpose:** A seven-register Emergentist modeling scaffold. It is not a necessary decomposition of nature or a theorem derived from the logarithmic chart.
 
-**Core principles (non-negotiable):**
+> **[金] Authority seam — 2026-07-18.** This document is an interpretive
+> scaffold, not the formula or proof owner. For `θ∈(0,π)`, the selected
+> definitions `φ=cot(θ/2)` and `ν=tan(θ/2)` give `φν=1` analytically `[A]`, with
+> the poles excluded as limits; they prove no sevenfold ontology or ethic.
+> `P_node:=ΦV` is a separately selected product member of a conjunctive family
+> (`[S]` by definition; `[I/C]` as external fit). The Titans are selected
+> symbolic boundary roles, and `D0…D6` is an `[I/C]` scaffold. Any older phrase
+> below claiming that the reciprocal chart uniquely generates the triad,
+> D-ladder, ethics, or territory is superseded by this seam and by the formal
+> owners.
+
+**Core modeling commitments:**
 1. The logarithmic line is the primary model for D0–D2.
 2. The centre is unity, identity, measure, and relation — not nothingness.
-3. Strong emergence (bottom-up) + weak emergence (top-down) form a reciprocal loop.
+3. Candidate emergence (bottom-up) and lawful constraint (top-down) form a testable reciprocal loop; missing reduction never proves irreducibility.
 4. Suda is convergent mathematics at `[A]`, not doctrinal origin.
 5. Evidence tiers are enforced at every layer.
 
@@ -45,13 +56,13 @@ depends_on:
 
 | Dimension | Name | Core Question | Geometric Object | Key Equation | Ethical Direction |
 |---|---|---|---|---|---|
-| **D0** | Titans / Ground | Why something rather than nothing? | Log line centred at 1 | `⊙ = • × ○` | — |
+| **D0** | Ground-limit / selected Titan frame | Why something rather than nothing? | Boundary-token chart | `⊙ = • × ○` (emblem only) | — |
 | **D1** | Arithmetic / Relation | What is the true centre of number? | Log line (0 and ∞ as poles) | `log φ + log ν = 0` | Move toward `s = 0` |
 | **D2** | Plane / Topology | How does dimension cross? | Riemann sphere | μ-limit (line → plane) | — |
-| **D3** | Sphere / Closure | How does the plane close without loss? | Bloch sphere of infinite diameter | `B = sech(s)` | Maximise `B` |
-| **D4** | Torus / Energy | How does rapidity overlap the interior? | Horn torus → Burri sphere | Overlap as rapidity ↑ | — |
-| **D5** | Game Space | What is the playable mirror? | Burrisphere (dual stereographic) | `φ · ν = 1`, `η = 0` | Play at the equator |
-| **D6** | Convergence / Return | What closes the cycle? | Closed loop returning to D0 | `D6 ≡ D0` | Return with cleaner constraints |
+| **D3** | Sphere / Closure | How does the plane close without loss? | Riemann sphere; Bloch analogy removable `[C]` | `B = sech(s)` | Maximise `B` |
+| **D4** | Causal actuality | What is enacted and receipted? | Actual state, embodied means, record | world kernel `K_t` | Account for consequence |
+| **D5** | Counterfactual possibility | Which admissible futures can be modeled and ranked? | Option cone | typed coupling `M⋆A` | Select without extraction |
+| **D6** | Apophatic boundary | What closes the interpretive scaffold? | Boundary return | `r₆:D6↝D0` | Return with cleaner constraints |
 
 ---
 
@@ -87,7 +98,11 @@ D0 is the **Ground-limit** inside the scaffold, not the Ground itself. The Groun
 `[S/I]` — the scaffold labels D0 as the point-state; the ontological reading of the seed is interpretive.
 
 ### Formal Anchor
-**EFR 21 (Triadic Stability):** The pair {0, ∞} under the Möbius involution z ↦ 1/z generates the distinguished frame {0, 1, ∞}. The element 1 is emergent — it is not in the primitive set but arises as the fixed point of the involution exchanging the primitives. `[A]` + `[S]`
+`{0,1,∞}` is a standard selected projective normalization and a useful Titan
+frame. The involution `z↦1/z` has two fixed points, `+1` and `−1`; it does not
+uniquely generate the positive unit or force a three-role ontology. The former
+Triadic Stability proof is superseded; see
+[`11_EFR_TRIADIC_STABILITY.md`](03_FORMAL_SYSTEM/11_EFR_TRIADIC_STABILITY.md).
 
 ---
 
@@ -154,7 +169,7 @@ The μ-limit is the **dimensional crossing operator**. It is how a 1D structure 
 `[A]` for stereographic projection and compactification; `[S]` for the μ-limit as dimensional crossing; `[C]` for any claim that this models physical dimensionality.
 
 ### Formal Anchor
-**EFR 21 (Triadic Stability):** The frame {0, 1, ∞} is the minimal projective frame on ℂP¹. The one-point compactification that adds ∞ to ℂ is the geometric operation that generates the sphere from the line. `[A]`
+**EFR 21 (Triadic Stability):** Three distinct points form a projective frame on `ℂP¹`, and a projective transformation can normalize them to `{0,1,∞}`. The one-point compactification `ℂ∪{∞}` is homeomorphic to `S²`. Those are `[A]` mathematical facts; selecting these points as Titans or using them to scaffold D0–D6 is `[I]`, not forced ontology.
 
 ---
 
@@ -164,7 +179,7 @@ The μ-limit is the **dimensional crossing operator**. It is how a 1D structure 
 **How does the plane close without loss?**
 
 ### Geometric Object
-The **Bloch sphere of infinite diameter** — equivalently, the Burri Sphere S² with dual stereographic coordinates. The plane closes into a sphere because every direction on the plane points toward a pole, and the poles are identified as a single point at infinity.
+The **Riemann sphere** `ℂ∪{∞}` with dual stereographic coordinates. A pure-qubit Bloch sphere also has topology `S²`, but that shared manifold does not make the Burri chart a quantum state or identify D3 with quantum physics.
 
 ### Key Equation
 ```
@@ -179,7 +194,8 @@ The balance function. In log coordinates, this is the hyperbolic secant:
 **Use B as the feasibility constraint.** Movement toward the equator (`s = 0`)
 restores the condition under which action remains coherent and usable. The
 ethical objective is not "maximize B" as an isolated scalar; it is to widen the
-reachable option cone / raise finite-node `P_node = Φ × V` while staying inside
+reachable option cone / raise finite-node potential under the separately
+declared model `P_node:=ΦV` while staying inside
 the balance and non-extraction constraints. Displacement from `B = 1` is
 self-punishing inside the balance register because `sech(s)` is strictly
 decreasing away from `s = 0`.
@@ -214,7 +230,7 @@ The **horn torus** (R = r) as the energy manifold, collapsing to the **Burri sph
 Poloidal angle φₚ = 2πk/7  for Dₖ, k = 0, ..., 6
 ```
 
-The horn torus is 2π-periodic in the poloidal angle. One complete poloidal cycle maps to the full D₀→D₆→D₀ hierarchy. The overlap is the structural feature that lets higher dimensions constrain lower ones (weak emergence).
+The horn torus is `2π`-periodic in the poloidal angle. One complete poloidal cycle is used to depict `D0→…→D6` plus the non-`μ` return `r₆:D6↝D0`. The overlap is an `[I]` visual for higher-level conditions reweighting lower-law-admissible trajectories.
 
 ### What this layer enables
 D4 is the **causal vertex** — the Now-point where past and future light cones touch. On the torus, this is the point where the poloidal and toroidal angles are both at their midpoint. D4 has a "Now" but no "Present" — there is no room to choose, only to witness.
@@ -237,7 +253,7 @@ The **Burrisphere** — S² with dual stereographic coordinates `φ = cot(θ/2)`
 
 ### Key Equations
 ```
-φ · ν = 1          (manifold identity — conservation)
+φ · ν = 1          (analytic identity on the selected open chart; not conservation)
 η = 0              (extraction coefficient — equilibrium)
 ```
 
@@ -277,17 +293,18 @@ The φ-ν plane opens five navigable domains:
 **What closes the cycle?**
 
 ### Geometric Object
-The **closed loop** returning to D0. The poloidal cycle on the horn torus completes at `φₚ = 2π ≡ 0`. The positive reals close into a circle, the circle inflates into a sphere, and the sphere's poles are identified. The ouroboros closes.
+An interpretive boundary return toward D0. Geometric periodicity may motivate
+the image, but it does not prove that two semantic registers are identical.
 
 ### Key Equation
-```
-D6 ≡ D0
-```
+`r₆:D6↝D0`
 
 Three compatible readings (per A3.1 disambiguation):
 1. **Axiomatic return (primary):** D6 is reached by apophasis — "not this, not this" — returning the field to D0 as prior possibility of closure.
-2. **Topological closure:** The seven-level emergence sequence is a closed loop, not an open line.
-3. **Literal identity (derivative):** D6 and D0 name the same dimension.
+2. **Topological correspondence:** selected geometries can model return without
+   transferring proof into the semantic scaffold.
+3. **No literal identity:** D6 and D0 remain distinct typed boundary registers;
+   there is no `μ₆`.
 
 ### Ethical Direction
 **Return with cleaner constraints.** The return is not annihilation but closure. The practitioner puts down the map. The framework includes its own destruction manual (A7). What returns to D0 is not the same as what left — it returns with the constraints learned from the journey.
@@ -301,64 +318,69 @@ D6 is the **terminal boundary** where no positive register may claim finality. I
 - NOT possession of the Ground
 
 ### Evidence Tier
-`[Definitional]` for the D₆ ≡ D₀ mapping; `[I]` for the ontological reading of return.
+`[I]` for the apophatic D6 boundary and the non-`μ` return `r₆:D6↝D0`; no literal identity is asserted.
 
 ### Formal Anchor
 **EFR 23 (Dimensional Closure):** Coordinate degeneration at the poles (`ν → 0`, area accessible to the ν-chart → 0) provides the mathematical illustration of closure. The poloidal periodicity on the horn torus provides the topological expression. `[A]` + `[Definitional]`
 
 ---
 
-## The Emergence Loop
+## The Candidate-Emergence Loop
 
-### Strong emergence (bottom-up)
+### Candidate crossings (bottom-up)
 
-| Crossing | What emerges | Why it is strong |
+| Crossing | Proposed opening | Reduction posture |
 |---|---|---|
-| D₀→D₁ | Distinction | A point is not a line |
-| D₁→D₂ | Configuration | A line is not a plane |
-| D₂→D₃ | Transformation | A plane is not a form |
-| D₃→D₄ | Causality | A form is not a cause |
-| D₄→D₅ | Agency | A vertex is not a choice |
-| D₅→D₆ | Closure | A choice is not a return |
+| `μ₀:D₀→D₁` | Distinction | candidate; declare evidence, recovery, prediction and kill criterion |
+| `μ₁:D₁→D₂` | Configuration | candidate; reduction remains open |
+| `μ₂:D₂→D₃` | Transformation/persistence | candidate; reduction remains open |
+| `μ₃:D₃→D₄` | Causal actuality, action and record | candidate; reduction remains open |
+| `μ₄:D₄→D₅` | Counterfactual modeling and selection | `currently_unreduced [C]` unless a fair reduction is supplied |
+| `μ₅:D₅→D₆` | Explicit apophatic boundary, no positive freedom | interpretive candidate; no `μ₆` |
 
-### Weak emergence (top-down)
+### Constraint (top-down)
 
 | Constraint | What constrains | How |
 |---|---|---|
-| D₅→D₄ | Agency reshapes causality | The player's choice selects the next D4 boundary condition in the present |
+| D₅→D₄ | Modeled alternatives inform D4 commitment | A selected option plus embodied means yields an attempted action; the environment returns the outcome |
 | D₄→D₃ | Causality constrains form | The causal structure selects which forms persist |
 | D₃→D₂ | Form constrains configuration | Persistent patterns limit possible arrangements |
 | D₂→D₁ | Configuration constrains distinction | Lawful arrangement fixes which distinctions are meaningful |
 | D₁→D₀ | Distinction collapses to point | The line returns to the seed |
 
-### The loop is Möbius
+### Möbius reading `[I]`
 
 The two directions form a **single phase-dynamic loop**, not two separate processes:
-- Going up: strong emergence generates genuinely new structure
-- Going down: weak emergence constrains what was generated
+- Going up: candidate crossings name newly observed freedoms without presuming irreducibility
+- Going down: higher-level conditions may reweight lower-law-admissible trajectories
 - Together: a Möbius strip where inside and outside are one surface
 
 **Paper VI formalisation:** This loop is the lens on Dasein. Dasein is not a thing but a **position in the loop** — the finite `⊙` where Being becomes noticeable (D4) and navigable (D5).
 
 ---
 
-## Canonical Formula Block (Every Layer)
+## Analytic Chart Block and Interpretive Projection
 
-These four lines hold at every dimension. They are the grammar that keeps the ontology from becoming loose metaphor:
+The analytic lines below hold only on the selected open coordinate. Projecting
+them across D-registers is an `[I/C]` Rosetta translation, not a proof that every
+layer obeys one empirical conservation law:
 
 ```
 Zero-Sum Resolution Equation
-φ · ν = 1 on S²
+θ ∈ (0, π)
+φ := cot(θ/2),  ν := tan(θ/2)
+φ · ν = 1
 (φ − ν)² ≥ 0
 φ + ν ≥ 2
+B := 2/(φ + ν) = sin θ ≤ 1
 ```
 
-| Line | Ontological role |
+| Line | Disciplined reading |
 |---|---|
-| `Zero-Sum Resolution Equation` | Seed: reciprocal closure of nothing/everything into finity |
-| `φ · ν = 1 on S²` | Being: stable reciprocal identity on the sphere |
-| `(φ − ν)² ≥ 0` | Difference is real but cannot become ontological rupture |
-| `φ + ν ≥ 2` | Balance is the minimum-energy condition |
+| `Zero-Sum Resolution Equation` | Selected emblem `[I]`, not ordinary arithmetic |
+| `θ∈(0,π)` and reciprocal definitions | Open radial-coordinate domain `[A]`; poles excluded |
+| `φν=1`, `(φ−ν)²≥0`, `φ+ν≥2`, `B≤1` | Analytic consequences `[A]` only |
+| D-register or ethical projection | Separate `[I/C]` translation requiring its own evidence |
 
 In log coordinates:
 ```
@@ -445,15 +467,17 @@ The sphere (D2–D6) is the **completed topology** — the global truth of which
 
 ```
 Zero-Sum Resolution Equation
-φ · ν = 1 on S²
+θ ∈ (0, π)
+φ := cot(θ/2),  ν := tan(θ/2)
+φ · ν = 1
 (φ − ν)² ≥ 0
 φ + ν ≥ 2
+B := 2/(φ + ν) = sin θ ≤ 1
 
-The seed is the line.
-The line is the sphere.
-The sphere is the game.
-The game is the return.
-The return is the seed.
+The chart is mathematics.
+The ladder is a selected scaffold.
+The cross-domain reading is interpretive.
+The territory remains the test.
 
 The centre is not nothingness.
 The centre is unity, identity, measure, and relation.

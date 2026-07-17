@@ -35,7 +35,7 @@ The tool layer of the Emergentism organism. Scripts, compilers, simulations, pac
 | L1 Caṇḍāla | Names raw tool failures, missing files, broken paths, and contradiction surfaces. |
 | L2 Śūdra | Explores available data, commands, environments, and evidence-producing surfaces. |
 | L3 Vaiśya | Verifies outputs, dependency graphs, manifests, links, and command receipts. |
-| L4 Kṣatriya | Owns bounded execution: scripts, deploy helpers, sprint gates, and K2-reviewed writes. |
+| L4 Kṣatriya | Owns bounded execution: scripts, deploy helpers, sprint gates, and authorized writes; K2 review applies only to private-DAV actions. |
 | L5 Brāhmaṇa | Owns tooling architecture, compilers, simulations, packages, and reusable structure. |
 | L6 Sādhu | Cuts generated-output authority drift and preserves archive/provenance boundaries. |
 | L7 Ṛṣi | Translates tool evidence into constitutional or public-symbol narrative only after receipt checks. |
@@ -47,7 +47,7 @@ The tool layer of the Emergentism organism. Scripts, compilers, simulations, pac
 | `03_SIMULATIONS/` | Formal proofs: spectrum, r-star, MIDUS | L5 Brāhmaṇa with L3/L6 checks |
 | `04_DATA_PIPELINES/` | General data-pipeline intake; the former GFS lane is retired under `90_ARCHIVE/2026_07_13_gfs_retraction/` | L2 Śūdra |
 | `05_DEPLOY/` | Docker and deployment configs (docker-compose.yml, Dockerfile.heartbeat) | L4 Kṣatriya |
-| `06_PACKAGES/emergentism-core/` | **Shared primitives package** — polygenic evolution, K2 crypto, provider taxonomy | L5 Brāhmaṇa |
+| `06_PACKAGES/emergentism-core/` | **Shared primitives package** — polygenic evolution, private-DAV K2 crypto, provider taxonomy | L5 Brāhmaṇa |
 | `07_AGENT_OPS/` | Agent framework integration, Rosetta loader, syntropic router | L4 Kṣatriya |
 | `08_AUDIT_ARTIFACTS/` | Dependency graph auditing | L3 Vaiśya |
 | `09_DAC_FRAME/` | DAC Framework operational tools (scripts/, tools/) | L5 Brāhmaṇa |
@@ -75,11 +75,11 @@ The tool layer of the Emergentism organism. Scripts, compilers, simulations, pac
 - Synchronizes agent definitions / Goose agent surfaces across the tool layer
 
 
-## K2 Boundaries
+## Private-DAV K2 Boundaries
 
-- `evolve_polygenic_tree.py --all` runs mutation/selection without K2 review — constitutional constants are K2-governed but auto-applied
+- `evolve_polygenic_tree.py --all` runs mutation/selection without K2 review — private-DAV constitutional constants are K2-governed but auto-applied
 - `agent_goose_sync.py` mutates agent-definition surfaces — review its diff before applying broadly
-- Simulation scripts are read-only — safe to run without K2
+- Simulation scripts are read-only — safe to run without private-DAV K2 review
 
 ## Entry Points for Agents
 

@@ -28,7 +28,7 @@ rosetta:
 | L1 Caṇḍāla | Recovers the raw seed pressure without adding doctrine. |
 | L2 Śūdra | Checks that compressed intuition is not mistaken for proof. |
 | L3 Vaiśya | Tests formula, tier, and source-reference integrity. |
-| L4 Kṣatriya | Blocks runtime, management, or K2 claims from seed compression alone. |
+| L4 Kṣatriya | Blocks runtime, management, or private-DAV K2 claims from seed compression alone. |
 | L5 Brāhmaṇa | Re-expands the seed into source-owner architecture when needed. |
 | L6 Sādhu | Cuts reification: the seed is not the Ground. |
 | L7 Ṛṣi | Owns witness, compression, preservation, and return-to-L1 teaching. |
@@ -50,7 +50,7 @@ lane, while per-file control rows live in `00_META/`.
 
 - Do not upgrade runtime claims without dated proof artifacts.
 - Do not treat draft specs as public-facing claims.
-- All irreversible actions require K2 envelope staging.
+- Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.
 
 Zero-Sum Resolution Equation
 

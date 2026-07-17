@@ -9,6 +9,14 @@ rosetta:
 
 **Status:** Candidate note, 2026-06-10. Scopes a possible sixth peer-review shard and records what is bankable now vs. what stays internal/HOLD. Derived from the founder's "math based on dimensions" notes. **Not for external submission as written** — it mixes tiers deliberately so the load-bearing joints are visible. Citations verified 2026-06-10 ([CITATIONS_VERIFIED.md](CITATIONS_VERIFIED.md)).
 
+> **[金] Kintsugi boundary — 2026-07-18.** This candidate predates KSC-02 and
+> KSC-04. Its computational correspondences may remain `[I/C]`, but body claims
+> that Titans are never ordinary operands, that the triad is forced, or that
+> computational irreducibility proves a strong `μ` are **not live authority**.
+> Use the current Titan canon and μ owner: ordinary `0` and `1` remain lawful
+> numbers, and every crossing needs supplied evidence plus an independent
+> reduction status.
+
 ---
 
 ## 1. The one new move (bankable, partly already in R1)

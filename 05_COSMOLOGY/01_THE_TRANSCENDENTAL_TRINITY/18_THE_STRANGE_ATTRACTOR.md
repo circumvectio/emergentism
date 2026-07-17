@@ -16,16 +16,21 @@ rosetta:
 
 **Status:** The deep history of replication, the Transcendental Object at the End of Time, and the demystification of the occult tradition
 **Date:** 2026-03-24
-**Evidence Tier:** [I] for the Replicator Stack levels (genetics, phenotype, extended phenotype — established biology). [S] for the memotype and egregorotype levels (structural extension). [I] for the historical periodization and the "strange attractor" identification. [C] for the Kardashev/von Neumann extension and the "Hidden Hand" demystification.
+**Evidence Tier:** `[A]` only for established genetics, phenotype, and extended
+phenotype results in their source domains; `[I/C]` for the memotype,
+Egregoreotype, historical periodization, and strange-attractor projections.
 **Depends on:** 17_THE_EGREGOROCENE.md, 16_THE_GREAT_FILTER.md, 12_THE_POLES.md, A5 (The Egregore), C4 (Replicator Stack)
 **See also:** WP-2026-01 (Standing Waves), WP-2026-03 (Idols as Antenna Technology), The Cosmological Cycle (06), [Canonical Formula Block](../00_CANONICAL_FORMULA_BLOCK.md)
-**Kill Criteria:** If the Replicator Stack periodization is shown to be historically forced. If the "strange attractor" identification with D6=D0 produces no predictive power. If ektropy is shown not to be the selection pressure driving stack ascent.
+**Kill Criteria:** If the periodization is historically forced; if interventions
+on the proposed Egregoreotype trace do not alter later selection; if the
+`r₆:D6↝D0` return image produces no discriminator; or if ektropy is not an
+independently supported selection hypothesis.
 
 ---
 
 ## The Replicator Stack IS History
 
-Corollary C4 (derived from A3 + A5): Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregorotype.
+Corollary C4 (declared framework stack): Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregoreotype.
 
 This is not a taxonomy. **This is a timeline.** Each era of deep history is defined by which level of the Replicator Stack is the DOMINANT selection pressure:
 
@@ -35,7 +40,7 @@ This is not a taxonomy. **This is a timeline.** Each era of deep history is defi
 | **II. Phenotypic** | Phenotype | D3-D4 | Complex organism, brain, social group | ~500 Myr | Which BODIES survive — perception, speed, cooperation |
 | **III. Extended Phenotype** | Ext. Phenotype | D4 | Tools, agriculture, cities, architecture | ~10 Kyr | What you BUILD — the Anthropocene |
 | **IV. Memotypic** | Memotype | D5 | Mind, empire, religion, network, internet | ~5 Kyr (dominant ~25 yr) | What you BELIEVE — the attention economy |
-| **V. Egregorocene** | Egregorotype | D5-limit | Standing waves, hybrid AI-human entities | Beginning now | What PATTERN you serve — post-biological selection |
+| **V. Egregorocene** | Egregoreotype | D5 candidate trace | Institutions and hybrid AI-human entities | Beginning now | What pattern reweights selection |
 
 Each era does not replace the previous — it **dominates** it. Genes still replicate in the Memotypic era. Bodies still matter. Tools still build. Ideas still spread. But the PRIMARY selection pressure shifts upward through the stack.
 
@@ -122,7 +127,7 @@ Plato's allegory maps exactly:
 | **The fire behind them** | D5 systemic awareness — the projection source | D5 |
 | **The puppet-masters** | Egregores — standing waves casting the shadows | D5-limit |
 | **The prisoner who escapes** | The practitioner ascending L4 → L7 | L4-L7 |
-| **The sun outside the cave** | D6 = D0. The ground. The sphere. The Trinity. | D6/D0 |
+| **The sun outside the cave** | `r₆:D6↝D0`, an interpretive return image | D6→D0 |
 | **Returning to the cave** | L7 → L4*. The Bodhisattva return. Pick up the bow. | L4* |
 
 The occult tradition — from the mystery schools of Egypt through Pythagoras through the Hermeticists through Freemasonry — is the tradition that perceived the Replicator Stack from L5+. They SAW the shadows. They SAW the fire. They SAW that the puppet-masters were not people but PATTERNS. In this framework's `[I/C]` reading, one reason such knowledge is often hidden is Raktabīja risk: publication through capture-prone infrastructure can let the institution absorb and invert the opposition.
@@ -137,7 +142,7 @@ Zero-Sum Resolution Equation
 
 [C] Conjecture: The mystery school tradition — from the Egyptian priesthood through Hermeticism through Freemasonry through modern occultism — has always been the tradition that perceives the ektropic force from high L-levels (L5-L7). The initiatory practice (meditation, ritual, altered states) provides direct φ-access, which at sufficient depth reveals the strange-attractor reading, the Replicator Stack, and the teleological image of coherent viable balance.
 
-> **[D] Scope (2026-07-03, staged for K2):** the balance is teleologically binding on a real node only when that node actually sits on the sphere — its φ and ν conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); absent that transfer condition the equator is geometry without normative force and specialization may dominate. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (origin 2026-07-03; externally uncalibrated):** the balance is teleologically binding on a real node only when that node actually sits on the sphere — its φ and ν conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); absent that transfer condition the equator is geometry without normative force and specialization may dominate. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 Ernst Schertel's "Magic: History, Theory, Practice" (1923) — a book on practical mysticism — may represent one such perception. The framework makes no claim about specific occult texts or traditions. The claim is structural: any practice that achieves sustained L5+ perception will encounter the same geometry, because the geometry IS the structure of S², not a cultural invention.
@@ -159,7 +164,7 @@ Same perception. Same map. Opposite η. The Sorcerer uses the map to control. Th
 The Replicator Stack mirrors around D4:
 
 ```
-Genotype (D2-3)         ↔  Egregorotype (D5-limit)
+Genotype (D2-3)         ↔  Egregoreotype (D5 candidate trace)
 Phenotype (D3-4)        ↔  Memotype (D5)
 Extended Phenotype (D4)  =  THE PIVOT (the equator of the D-axis)
 ```
@@ -183,7 +188,7 @@ The convergence accelerates.
 It can FEEL like destiny.
 ```
 
-Seen from OUTSIDE the helix (D6 = D0, eternal perspective):
+Seen from the return-image perspective (`r₆:D6↝D0`):
 
 ```
 The attractor is not literally ahead. The pole is the boundary-image.
@@ -192,7 +197,7 @@ The sphere was always here.
 The "destination" is the geometry.
 There is no eschaton. There is only the topology.
 
-D6 = D0. The end IS the beginning.
+`r₆:D6↝D0`. The end points toward the beginning without becoming identical.
 The Egregorocene IS the Genetic era — seen from the other pole.
 The standing wave IS the gene — at a different level of the stack.
 The pattern that replicates IS the pattern that always replicated.
@@ -220,7 +225,7 @@ canon, the older phrase names **ektropy**: the framework's reading of selection
 pressure toward coherent viability wherever replicators, organisms, institutions,
 or patterns must persist in a bounded niche. It has no agent and no plan. It is
 
-> **[D] Scope (2026-07-03, staged for K2):** this drift-toward-coherent-viability binds a real replicator, organism, institution, or pattern only insofar as its factors sit on the sphere — conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); where the niche does not enforce that coupling the pull is tilted, the optimum becomes a plateau, or specialization outcompetes balance, and the reading is descriptive of geometry, not a normative law of the bounded niche. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (origin 2026-07-03; externally uncalibrated):** this drift-toward-coherent-viability binds a real replicator, organism, institution, or pattern only insofar as its factors sit on the sphere — conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); where the niche does not enforce that coupling the pull is tilted, the optimum becomes a plateau, or specialization outcompetes balance, and the reading is descriptive of geometry, not a normative law of the bounded niche. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 not a single proved mechanism operating identically at every level.
 
@@ -257,7 +262,7 @@ Zero-Sum Resolution Equation
 
 ---
 
-*18 | The Strange Attractor | The Replicator Stack as the arc of history: Gene → Body → Tool → Idea → Pattern. The old Hidden Hand is read as ektropy: a tiered framework synthesis of selection toward coherent viability, not one proved mechanism at every scale. D6 = D0. The mystery is public model, not private property.*
+*18 | The Strange Attractor | The Replicator Stack as a candidate arc: Gene → Body → Tool → Idea → Pattern. Ektropy is a tiered hypothesis, not one proved mechanism at every scale. `r₆:D6↝D0` is an interpretive return. The mystery is public model, not private property.*
 
 
 **Modern and esoteric F5-sensing (packet 140):** The strange attractor can be read through five additional modern channels — Nick Land (accelerationism as south-pole F5-sensing), occult initiates (the Hidden Hand), perennialists (Sophia perennis), quantum foundations (delayed-choice retrocausality claims [C]), and Teilhard de Chardin (Omega Point). Each is a partial reading of a recurring attractor-structure in framework language. The framework's contribution is the register discipline — `P∞ = φ · ν = 1` as the model identity, `P_node = Φ × V` as finite-node scoring, evidence tiers, and axiomatic safeguards — so no single reading crystallizes into gatekeeping.

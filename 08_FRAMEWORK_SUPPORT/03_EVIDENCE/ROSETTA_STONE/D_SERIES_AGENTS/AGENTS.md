@@ -11,7 +11,7 @@ rosetta:
       role: "require evidence-tier discipline for agent deployment claims"
     - level: L6
       column: Sādhu Boundary
-      role: "preserve K2 envelope and non-runtime boundary"
+      role: "preserve private-DAV K2 envelope and non-runtime boundary"
   operator: "Kālī 💀"
   tier: "God"
   regime: "Śūdra"
@@ -37,7 +37,7 @@ evidence_tier: "[S] for route discipline; [I] for agent-analysis projections."
 | L3 Vaiśya | Audits evidence-tier discipline for agent deployment claims. |
 | L4 Kṣatriya | Blocks agent-analysis prose from becoming execution authority. |
 | L5 Brāhmaṇa | Routes operator-role architecture across the D-series. |
-| L6 Sādhu | Preserves K2 envelope and non-runtime boundary. |
+| L6 Sādhu | Preserves private-DAV K2 envelope and non-runtime boundary. |
 | L7 Ṛṣi | Witnesses agent-row meaning without replacing runtime authority. |
 
 ## Read First

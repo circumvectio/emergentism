@@ -19,7 +19,7 @@ rosetta:
   canonical_phrase: "OS — Agent Routing"
 title: "OS — Agent Routing"
 status: "ROUTE CARD — constitutional OS lane"
-evidence_tier: "[I] for OS routing discipline; [B] only for dated proof artifacts, K2 envelopes, and runtime receipts."
+evidence_tier: "[I] for OS routing discipline; [B] only for dated proof artifacts, private-DAV K2 envelopes, and runtime receipts."
 ---
 
 # OS — Agent Routing
@@ -48,6 +48,6 @@ dated operating receipts.
 
 - [I] Do not upgrade runtime claims without dated proof artifacts.
 - [I] Do not treat draft specs as public-facing claims.
-- [I] All irreversible actions require K2 envelope staging.
+- Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.
 
 ⊙ = • × ○

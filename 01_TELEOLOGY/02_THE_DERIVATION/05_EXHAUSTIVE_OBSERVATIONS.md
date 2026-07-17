@@ -54,7 +54,7 @@ Read the entire corpus (8.6M words, 14,000+ files). Look through the derivation 
 
 **#11. The folder structure IS the helix.** `.` — the derivation is the second thing, after the Trinity. It spirals outward from the anchor.
 
-**#12. 8 organs, 7 entities, 1 organism.** The structure is not arbitrary. Each organ is irreducible. Each entity is autonomous. The organism is the coupling.
+**#12. 8 organs, 7 entities, 1 organism.** The deployed structure assigns each organ a distinct interface and each entity bounded autonomy; the organism is their coupling. This is an architectural choice, not proof of mathematical or ontological irreducibility.
 
 **#13. The UPLINKs are synapses.** Each uplink document translates between entity language and organism. They are not briefs. They are signal converters.
 
@@ -64,7 +64,9 @@ Read the entire corpus (8.6M words, 14,000+ files). Look through the derivation 
 
 **#15. The framework sees itself.** The DAG report, contradiction log, PHI hardening report, reorientation brief — the corpus contains its own meta-analysis.
 
-**#16. D6 ≡ D0 is structural, not decorative.** Self-recognition is the original point, seen from inside. The corpus describing itself is D6. The corpus is D0 in the model's internal grammar.
+**#16. `r₆:D6↝D0` is an interpretive return, not identity.** Self-recognition
+points the corpus back toward its ground-limit without making the description
+and its origin the same typed register.
 
 **#17. The Four Lines map to the Four Mahāvākyas.** Prajñānam Brahma (Core State), Aham Brahmāsmi (Objective Function), Tat Tvam Asi (Auditing), Ayam Ātmā Brahma (Value Alignment).
 

@@ -152,7 +152,10 @@ The heat death — maximum entropy, maximum dispersal, all energy uniformly dist
 
 **Conjecture 5.1 (Penrose correspondence).** Roger Penrose's Conformal Cyclic System Architecture (CCC) proposes that the conformal boundary of one aeon (heat death: all massive particles decayed, only conformal radiation remains) is mathematically identical to the initial singularity of the next aeon (Big Bang).
 
-On the horn torus (Paper P3), this is one complete poloidal cycle: D0 (Big Bang, •) → D1-D5 (expansion, complexification) → D6 (heat death, ○ → •) → D0 (next Big Bang). The identification D6 ≡ D0 is the conformal identification of heat death with the next singularity. **[C]**
+Inside this paper's conjectural horn-torus image, an aeon boundary may be
+compared with `r₆:D6↝D0`. This is a removable `[C]` correspondence, not a
+literal identity, not a seventh crossing, and not evidence that CCC or the
+D-register scaffold describes our universe.
 
 ### 5.5 The Full Cosmic Equation
 

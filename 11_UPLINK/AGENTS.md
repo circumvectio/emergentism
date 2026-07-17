@@ -69,6 +69,6 @@ evidence_tier: "[I] for routing/orientation; [B] only where source-owner or date
 
 - [I] Do not upgrade runtime claims without dated proof artifacts.
 - [I] Do not treat draft specs as public-facing claims.
-- [I] All irreversible actions require K2 envelope staging.
+- Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.
 
 Zero-Sum Resolution Equation

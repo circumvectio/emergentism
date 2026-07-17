@@ -50,7 +50,7 @@ Philosophy does not end — it transforms. The framework redefines it:
 
 The model's ground-facing limit has been named: κ = 0, the empty string $\varnothing$. That names a boundary coordinate, not Ground itself. This is not nihilism — it is the recognition that the model's limit cannot carry content. η = 0 means the ground-facing limit is modeled as non-extractive. From the empty limit, emergence is described inside the scaffold; this is not a proof of creation from literal nothing (see [The Computational Sphere](../../../05_COSMOLOGY/00_THE_COMPUTATIONAL_SPHERE.md)).
 
-What remains is the *practice*: how to maintain $P∞ = \varphi \cdot \nu = 1$ under perturbation. The D0–D6 scaffold does not eliminate the need for judgment, ethics, or contemplation. It provides the coordinate system within which those activities operate. The sitting practice (K=0 reduction) is not a replacement for thought — it is the method of returning to the ground-facing limit from which thought reappears.
+What remains is the *practice*: how to correct models and actions under perturbation. `φν=1` needs no maintenance—it is imposed by the selected reciprocal coordinates. The D0–D6 scaffold does not derive judgment, ethics, or contemplation; it offers an `[I]` coordinate grammar for them. Sitting is a practice correspondence, not a proof of the Ground.
 
 The Power-Max Lemma does not tell you *how* to cooperate in a specific situation. In the finite-node register it says only this: under real coupling, long horizon, multiplicative $P_{node} = \Phi \times V$, and enforced $\eta = 0$, durable action is searched on trajectories that preserve or raise $P_{node,i}$ while preserving or raising $P_{node,H}$. The extraction coefficient $\eta$ is therefore a diagnostic, not a moral oracle: $\eta = 0$ names reciprocal, non-extractive exchange; $\eta < 0$ names net giving or regenerative contribution; and $\eta > 0$ names extraction whose severity depends on boundary, consent, receipts, horizon, and downstream $P_{node}$ effects. Navigating those boundaries, in lived practice, remains philosophy's work.
 
@@ -62,8 +62,8 @@ The transformation is dimensional:
 |-------|-------------|--------------|
 | D0–D2 | Paradoxes are reframed; the geometry becomes visible | No puzzle-list exhausts the work |
 | D3 | Scaffold is constructed | Navigation among the levels |
-| D4–D5 | The $\mu$-limit mediates actuality/possibility | Practical wisdom about traversing it |
-| D6 | The loop closes (D6 = D0) | The sitting practice of return |
+| D4–D5 | D4 is actual and D5 possible; `χ` handles commitment | Practical wisdom about accountable selection |
+| D6 | Non-μ return edge `r₆:D6↝D0` | The sitting practice of return |
 
 Philosophy moves from "solving problems on a flat surface" to "navigating a sphere in balance." The framework provides the map. The philosopher reads it. These are different skills, and the second is not easier than the first. As [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) states: if you can access $\Phi$ directly through quiet sitting, you do not need the framework. The framework is a ladder, not a home.
 

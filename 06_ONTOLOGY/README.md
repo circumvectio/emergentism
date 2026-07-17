@@ -32,20 +32,22 @@ Ground has been captured. It is the framework's Dasein reconstruction:
 
 ```text
 Ground remains prior.
-Being stabilizes reciprocal closure: P∞ = φ · ν = 1 on S².
+On the selected open reciprocal chart θ∈(0,π), P∞ = φ · ν = 1 analytically; the poles are excluded limits.
 Teleological Force names viable continuation inside manifestation.
-D4 opens bounded witness and usable means-to-act.
-D5 opens enacted agency and worldline-foresight.
-D6 releases the claim to final capture and returns the loop to D0.
+D4 is causal actuality: bounded witness, embodied means, performed events, and records.
+D5 is merely possible counterfactual content: modeled alternatives, rankings, and worldline-foresight.
+Commitment enacts one attempted D4 action; the world returns a D4 outcome receipt.
+D6 releases the claim to final capture and connects interpretively to D0 through r₆.
 Dasein appears at the D4/D5 threshold as finite disclosure able to question and act.
 ```
 
 So **Dasein as reader** names the finite site where Being becomes disclosed,
-questioned, tested, and acted. In the dimensional scaffold, D4 is bounded
-witness and D5 is agency / selection. In the action register, those become the
-two factors the player must couple: `V` as D4 means-to-act and `Φ` as D5
-worldline-foresight. The reader becomes a player when disclosure becomes both
-visible and actionable.
+questioned, tested, and acted. In the dimensional scaffold, D4 carries causal
+actuality and D5 carries merely possible counterfactual contents. A D4 actual
+model token can represent D5 possible content; a D4 selection event can rank
+those contents and attempt a D4 action. In the declared node model, `V` names
+D4 means-to-act and `Φ` names D5 worldline-foresight. The reader becomes a
+player when disclosure becomes both visible and actionable.
 
 This route therefore answers only the origin half. The play half routes through
 the [Soul Loop](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md)

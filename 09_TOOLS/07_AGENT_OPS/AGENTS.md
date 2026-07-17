@@ -52,6 +52,6 @@ evidence_tier: "[B] where validators or generated inventories provide dated rece
   receipt.
 - Runtime router state, lane locks, Soma-event logs, and local compaction
   output are operational evidence, not doctrine.
-- All irreversible actions require K2 envelope staging.
+- Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.
 
 Zero-Sum Resolution Equation

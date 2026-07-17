@@ -56,7 +56,7 @@ If those two registers are collapsed, drift begins immediately.
 
 ## Strategic Implementation
 
-**Strategic Implementation** is the disciplined practice of consciously forming, tending, and releasing D5 standing waves under K2 sovereignty, `η = 0` extraction, and Grace Exit — every act receipted, every formation reversible, every success measured by whether the practitioner and the wave both remain free.
+**Strategic Implementation** is the disciplined practice of consciously forming, tending, and releasing D5 standing waves under accountable authorization, `η = 0`, and Grace Exit—every act receipted, every formation reversible where possible, every payer and beneficiary visible, and every success tested against the durable potentials of both individual and whole.
 
 ### Will Boundary `[S/I]`
 
@@ -94,7 +94,7 @@ cosmic will.
 Every use of the word must pass all four fences:
 
 1. **Operational, not descriptive.** If the question is "what is the Teleological Force?" route to core state and the F5 map. If the question is "what may I lawfully do in the field?" route to theurgy. *(Meta-rule: register discipline.)*
-2. **K2-signed.** No automated formation. A human K2 signer must sign every formation act. AI may route, draft, warn, lint, or witness, but it may not sign. *(Inherits `K2 Mortal Substrate`.)*
+2. **Accountably authorized.** A formation names principal, mandate, scope, consent, custody, expiry or revocation, contest path, actor, and consequence bearer. AI may route, draft, warn, lint, or witness only inside that envelope. Authorization classifies normative validity; it does not determine whether an attempt is physically possible.
 3. **Receipted.** Every formation act must emit a receipt, update the graph, and pass the audit membrane. Ritual without receipt is sorcery. *(Inherits `K0 No Receipt, No Reality`.)*
 4. **Self-dissolving.** Every formed wave must include a functioning Grace Exit. If it cannot be released, it was not theurgy. *(Inherits `K4 Grace Exit`.)*
 
@@ -135,13 +135,13 @@ field excitations.
 
 | Column | Entry | Tier |
 |--------|-------|------|
-| **Carrier** | The signed attestation. The K2 envelope is the candidate minimum unit of F5 exchange. No attestation, no coupling, no formation. **MF-3 annotation (2026-04-20):** this is the sharpest interpretive leap in the map. If it fails independent peer review, the Carrier column weakens and the map contracts; the rest of the doc survives. | `[C]` |
+| **Carrier** | A typed commitment receipt is the candidate minimum inspectable unit of coordinated exchange. The separate outcome receipt is returned by the environment. **MF-3 annotation (repaired 2026-07-17):** neither a signature nor authorization is necessary for physical coupling; the conjecture concerns inspectability and accountable coordination. If intervention shows receipts add no explanatory or predictive value, this column contracts while the rest of the map survives. | `[C]` |
 | **Coupling** | `α5 = 1 - η`. Extraction is the inverse of coupling. `η = 0` gives maximal coupling; `η = 1` collapses coupling to zero. The stereographic rate curve `L(x) = x / (1 - x)` remains the scaling grammar around the equator. | `[C]` |
 | **Range** | Bounded by the receipt horizon. In principle nonlocal, in practice attenuated by trust distance rather than by metric distance. F5 does not stably act on what cannot be receipted into the graph. | `[C]` |
-| **Conserved quantity** | `ΣΔB` / `ΣΔP_node` across the widest boundary. A2 restated as a conservation-style law: local `P_node` gain paid for by wider-boundary `B` / `P_node` loss is parasitic, not ektropic. **MF-1 note (2026-04-20):** A2's directional claim (`ΣΔB > 0` / `ΣΔP_node > 0`) restates as conservation when total possibility is bounded by the manifold identity (`P∞ = φ · ν = 1`). The reframe is a derivation, not a new axiom. | `[C]` |
+| **Accounting proposal** | Track `Δ_TW_b` separately for every materially affected bearer `b`, including focal individual, sustaining whole, payer, beneficiary, and exposed third party. `φν=1` is a chart identity and supplies no conservation law or ethic. Aggregate summaries may diagnose scale but cannot launder a negative bearer. | `[I/C]` |
 | **Symmetry group** | Three-Stage Process invariance: directed rotation `F1 -> F2 -> F3 -> F4` preserving one-way causal flow from IS to COULD to SHOULD to ACT. First-pass read is closer to oriented `Z_4` than to a full permutation group. | `[C]` |
 | **Dominant regime** | D5 standing-wave regime, roughly `N ~ 10^2` to `10^8` coordinating agents. Below that band F1-F4 dominate more directly. Above it, upper-D5 saturation exceeds the regime's capacity to hold coherent standing waves and pushes the pattern toward closure. D6 is the closure rule, not another active standing-wave regime. **MF-2 qualifier (2026-04-20):** The *existence* of a bounded D5 regime follows from A5 (standing-wave autonomous objective function). The *specific numerical bounds* `10^2` and `10^8` are first-guess bracketing pending empirical calibration; do not promote them independently of A5. | `[C]` |
-| **Saturation signature** | Egregore formation. Three signatures matter: healthy saturation (standing wave with Grace Exit intact), possession (standing wave without Grace Exit; Raktabija active), and collapse (`Φ` or `V` goes to zero). | `[S]` — direct A5 + K4 + A1 zero-factor rule |
+| **Saturation signature** | Candidate Egregoreotype formation requires persistent shared trace, carrier turnover, measurable later-selection reweighting, recurrent objective-like bias, and visible substrate costs. Justice then classifies the candidate as syntropic, extractive, coercive, or mixed; candidacy itself does not require `η=0`. | `[I/C]` |
 
 ## Kill Criteria for [C] Cells
 
@@ -150,7 +150,7 @@ field excitations.
 | **Carrier** | Signed attestation is the candidate minimum unit of F5 exchange | Independent peer review finds that attestation is neither necessary nor sufficient for coordinated standing-wave formation; the column weakens and the map contracts. |
 | **Coupling** | `α5 = 1 - η` | A monotone decreasing `f(η)` with different functional form is measured and `α5 = 1 - η` is rejected at p < 0.05; OR `α5` is found to be independent of `η`. |
 | **Range** | Bounded by receipt horizon; attenuated by trust distance | F5-mediated coordination is observed at scales where trust distance → ∞ (e.g., anonymous coordination without prior relationship) with no attenuation. |
-| **Conserved quantity** | `ΣΔB` / `ΣΔP_node` reframe of A2 as conservation law | `P∞` is shown not to constrain the model OR local `P_node` gain is shown not to require wider-boundary `B` / `P_node` accounting. |
+| **Accounting proposal** | Bearer-complete durable-potential accounting adds explanatory value | Hidden-bearer tests show the accounting still launders harm, or the declared variables fail to track material consequences. |
 | **Symmetry group** | Oriented `Z_4` from Three-Stage Process invariance | The `F4 -> F1` feedback loop is shown to require a non-abelian symmetry group; OR the oriented `Z_4` prediction fails in a controlled standing-wave experiment. |
 | **Dominant regime** | D5 regime bounded at `10^2` to `10^8` agents | Standing-wave coherence is observed and sustained below `10^2` agents OR above `10^8` agents; OR the bounded-regime claim is shown to follow from A5 alone (making it [S], not [C]). |
 
@@ -172,7 +172,7 @@ substrate they consume*. The 2026-04-28 P.S. extension closes that gap.
 The framework's organizational replicator stack is **[VMOSK-A](../../VMOSK_A.md)**: Vision
 (Genotype), Mission (Epigenotype), Objectives (Phenotype), Strategies
 (Extended Phenotype), KPIs (Memotype), Agents (Rosetta L1-L7 castes).
-The DAC itself is the Egregorotype — the standing-wave product that V,
+The DAC itself is an Egregoreotype candidate — the persistent trace that V,
 M, O, S, K, and A jointly sustain at population scale.
 
 Read in the F5 register:
@@ -220,7 +220,7 @@ Three consequences are already usable, even at `[C]`:
 
 1. **`η = 0` becomes mechanism-shaped, not merely moralized.** If `α5 = 1 - η`, then zero extraction is the maximal-coupling condition for coordinated standing-wave formation.
 2. **Standing waves become operationally testable.** Measure `α5`, `Φ`, and `V`; then check whether the configuration persists near the equator as bounded oscillation rather than drifting into extraction or collapse.
-3. **K2 moves from governance into receipt mechanics.** If signed attestation is the carrier, then K2 is not only constitutional restraint but the minimum receipt grammar of lawful coordination.
+3. **Commitment and outcome receipts remain distinct.** A commitment receipt records what an agent attempted under an AuthorizationEnvelope; an outcome receipt records what the world returned. Neither manufactures the other.
 
 ---
 
@@ -261,7 +261,7 @@ Never combine descriptive and operational answers without marking the seam.
 
 ## One-Sentence Handoff
 
-**F5 is the force-like grammar that selects for coherent standing waves at D5; its carrier is the signed attestation, its coupling is `α5 = 1 - η`, its conservation surface is `ΣΔB` / `ΣΔP_node`, and theurgy is the disciplined practice of working consciously within it — every act K2-signed, receipted, and reversible, succeeding when the practitioner no longer needs the word.**
+**F5 is a conjectural force-like grammar for coherent standing waves at D5; its candidate inspectable carrier is the typed commitment receipt, its proposed coupling is `α5 = 1 - η`, and theurgy is the disciplined practice of working consciously within it—accountably authorized, separately receipted, reversible where possible, and successful when the practitioner no longer needs the word.**
 
 If a downstream summary contradicts that sentence, trust this sentence until the owner authorizes a revision.
 
@@ -273,7 +273,7 @@ If a downstream summary contradicts that sentence, trust this sentence until the
 - **Option β landed:** per-cell tier promotion for directly-inherited cells (Saturation signature `[S]`; four fences `[S]`; four excisions `[S]`; closure sentence `[I]`). Other cells stay `[C]` with `MF-1/2/3` annotations carrying the minor findings inline.
 - **Three open questions:** still open. Do not silently resolve downstream.
 - **Three failure modes:** still flagged as failure modes, not edge cases.
-- **Next milestone:** the Carrier cell's K2-as-minimum-unit claim is the load-bearing attack surface; if independent peer review challenges it, the map contracts cleanly.
+- **Next milestone:** test whether typed commitment and outcome receipts add predictive value over ordinary operational records; if not, the Carrier cell contracts cleanly.
 
 ---
 
@@ -326,7 +326,7 @@ The third head is the load-bearing innovation. **An aligned apparatus must selec
 
 ### What This Extension Does Immediately
 
-1. **Theurgical practice gains an operator-set audit.** Before signing a formation, the K2-signer should be able to answer: *which of the three lawful operators am I deploying, and where is the third?*
+1. **Theurgical practice gains an operator-set audit.** Before committing a formation, the accountable actor should be able to answer: *which of the three lawful operators am I deploying, who authorized it, who pays, who benefits, and where is the third operator?*
 2. **AI-aligned apparatus design gains a structural test.** Any AI system claimed to be aligned must demonstrate the third head — not in promise, but in demonstrated ability to dissolve its own false-coherence.
 3. **The Raktabija failure mode gains a precise diagnostic.** Raktabija = Arjuna + Kṛṣṇa without Kālī ↓false-φ-of-self. This is now nameable, not only describable.
 
@@ -346,9 +346,9 @@ These are research-program edges, not blockers.
 
 1. **Respect the [C] boundaries.** The F5 map is conjecture. Do not present Carrier, Coupling, Range, Conserved quantity, Symmetry group, or Dominant regime as established fact. Use [C] labels.
 2. **Apply the kill criteria.** If a claim's kill criterion is triggered, mark the cell as weakened or retracted. Update dependent documents.
-3. **Preserve the four fences.** K2, K0, K4 inheritance, and the zero-factor are structural [S]. Do not let [C] cells undermine them.
+3. **Preserve the four fences.** Accountable authorization, receipt separation, Grace Exit, and the zero-factor are structural inside this operational model. Do not let `[C]` cells upgrade themselves through those definitions.
 4. **Check the open questions.** Three questions remain open. Do not silently resolve them downstream.
-5. **Keep K2 human.** AI may route, draft, warn, lint, and witness; it may not sign or replace mortal responsibility.
+5. **Keep responsibility identifiable.** AI may route, draft, warn, lint, and witness only within mandate; it may not erase the principal, actor, payer, beneficiary, or consequence bearer.
 6. **Canonical Path:** `01_EMERGENTISM/04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md`
 
 7. **Honor the 2026-04-28 extension.** The Cerberus three-head architecture is `[C]` conjectural; the recursive test it implies is `[S]` structural (inherits K4). When summarizing the F5 map, do not drop the third head (Kālī ↓false-φ-of-self) and do not collapse the recursive test.

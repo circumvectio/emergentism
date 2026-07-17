@@ -40,7 +40,7 @@ A1  P∞ = φ · ν = 1 on S²; P_node = Φ × V at finite nodes
     B = sin θ measures balance. P∞ is invariant; B peaks at L4.
 A2  ΔP_node,i > 0 and ΔP_node,H > 0 under η = 0;
     ΣΔB / ΣΔP_node audits widest-boundary balance (operational def.)
-A3  D0→D6: (Analogy [I]) D1=Strong, D2=EM, D3=Weak, D4=Gravity, D5=Consciousness, D6≡D0
+A3  D0→D6: interpretive scaffold; candidate μ₀…μ₅; `r₆:D6↝D0`; no force bijection
 A4  η = 0 vs cooperators; tit-for-tat vs defectors; all Gods necessary
 A5  D5-limit standing waves (egregores) have autonomous objective function
 A6  Three substrates: mechanical (body), AI (charioteer), mortal self (warrior)

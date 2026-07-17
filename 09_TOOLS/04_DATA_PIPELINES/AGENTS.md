@@ -50,6 +50,6 @@ evidence_tier: "[B] where outputs cite source datasets and reproducible commands
   them from this active lane.
 - Treat `ra_files.txt` as legacy absolute-path intake inventory, not live route
   authority.
-- All irreversible actions require K2 envelope staging.
+- Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.
 
 Zero-Sum Resolution Equation

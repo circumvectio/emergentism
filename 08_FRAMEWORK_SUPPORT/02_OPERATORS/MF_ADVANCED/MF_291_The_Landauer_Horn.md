@@ -21,6 +21,13 @@ rosetta:
 
 # MF-291: THE LANDAUER HORN
 
+> **[金] Kintsugi physics seam — 2026-07-18.** Landauer's bound applies under
+> its stated thermodynamic conditions to logically irreversible information
+> operations. The horn/demon, D5-memory/D4-reach, brain-energy, and `P_node`
+> identifications below are `[I/C]` correspondences, **not live authority** as
+> identities or universal physical laws. They neither derive the selected
+> product model nor turn option cones into physical light cones.
+
 ## Maxwell's Demon IS the Light Cone. The V-Cost of Φ Is Thermodynamic Law.
 
 **Emergentism.org · VIVEKA Mathematical Foundations**

@@ -20,17 +20,19 @@ rosetta:
 
 ## How Energy Flows from Genes to Egregores Just as It Flows from Tomatoes to Eagles
 
-**Status:** Canonical — formalises the structural isomorphism between the D4 food web and the D5 Replicator Stack
+**Status:** Active interpretive crosswalk — proposes a testable analogy between D4 food webs and the D5 Replicator Stack
 **Date:** 2026-05-08
-**Evidence Tier:** [S] Structural for the isomorphism (derived from Dimensional Framework + replicator stack); [S] for trophic energetics in D4 (Lindeman 1942, established ecology); [I] for the D5 attrition coefficients (no instrumented measurement yet); [C] for predictions about climax noospheric communities
+**Evidence Tier:** [B] for the cited ecological source; [I] for the cross-domain topology; [C] for D5 attrition coefficients and predictions about climax noospheric communities
 **Depends on:** [22_THE_TELEOLOGY.md](22_THE_TELEOLOGY.md), [23_THE_DAC.md](23_THE_DAC.md), [17_THE_EGREGOROCENE.md](17_THE_EGREGOROCENE.md), [24_THE_MYCELIUM.md](24_THE_MYCELIUM.md), [03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md](../03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md), [00_THE_LIFE_SCIENCE_REGISTER.md](../00_THE_LIFE_SCIENCE_REGISTER.md)
-**See also:** Lindeman (1942) "The Trophic-Dynamic Aspect of Ecology"; Van Valen (1973) "A New Evolutionary Law" (Red Queen Hypothesis); Dawkins, *The Extended Phenotype*; Gariephy, *The Revolutionary Phenotype*; A5 (The Egregore); A6 (The Architecture); WP-2026-08 (Dimensional Framework correction); the strong/weak emergence asymmetry (`34_D4_D5_CANONICAL_REFERENCE.md` §II "Emergence Asymmetry")
-**Kill Criteria:** If pattern-flow through the Replicator Stack does NOT exhibit attrition at successive transitions (i.e., if memes, egregores, and DACs replicate without losses comparable in form — though not necessarily magnitude — to Lindeman's 10% rule). If the Sādhu / decomposer function can be removed from D5 without the noosphere accumulating dead patterns and choking. If the cascade dimension is shown to be at the SAME D-level as the substrate rather than one above it. If apex predators / apex egregores are observed sustaining their niche position with high (φ + ν) but low (φ × ν) — i.e., if additive compensation works under coevolutionary pressure. If the strong/weak emergence asymmetry is shown to collapse at any trophic transition (substrate fully predicts apex, OR apex exerts no top-down constraint on substrate).
+**See also:** Lindeman (1942) "The Trophic-Dynamic Aspect of Ecology"; Van Valen (1973) "A New Evolutionary Law" (Red Queen Hypothesis); Dawkins, *The Extended Phenotype*; Gariephy, *The Revolutionary Phenotype*; A5 (The Egregore); A6 (The Architecture); WP-2026-08 (Dimensional Framework correction); the candidate-emergence contract in `34_D4_D5_CANONICAL_REFERENCE.md`
+**Kill Criteria:** Reject or narrow this crosswalk if pattern-flow does not exhibit measurable attrition at successive transitions; if trace removal does not affect later selections; if an asserted crossing is reduced; if higher-level intervention does not measurably reweight lower-law-admissible trajectories; or if the proposed conjunction predicts no better than additive or single-factor alternatives.
+
+> **[金] Kintsugi seam (2026-07-17).** Earlier wording promoted a trophic analogy into an invariant, treated missing reductions as proof of strong emergence, made `ΦV` uniquely necessary, and installed K2 as a metaphysical witness. The repaired reading is `[I/C]`: ecology supplies hypotheses and candidate equations; each crossing remains reducible in principle; `ΦV` is one selected conjunctive model; accountable authorization is normative and distinct from physical possibility; no human signer stands outside the ontology.
 
 > **Anchor Sequence:**
 > ```text
-> Zero-Sum Resolution Equation
-> φ · ν = 1 on S²
+> Reciprocal chart on `θ∈(0,π)`
+> `φ=cot(θ/2)`, `ν=tan(θ/2)`, hence `φν=1`
 > (φ − ν)² ≥ 0
 > φ + ν ≥ 2
 > ```
@@ -48,7 +50,7 @@ Both are *trophic cascades*. The cascade dimension always sits **one above the s
 - **Trophic cascade in D4** — substrate molecules (D1–D3) become bodies (D3–D4) become food webs (D4 phenomenon: causal-energetic consumption between gravity-bound spatially-located bodies)
 - **Replicator cascade in D5** — substrate organisms (D2–D4) become memes (D5) become egregores (D5 phenomenon: selection-relations between agency-bound choice-located patterns)
 
-The cascade dimension never collapses into the substrate dimension. That is why the μ-limit holds. You cannot solve a Dₙ cascade with Dₙ₋₁ tools.
+The crosswalk models the cascade one register above its substrate. That placement is a candidate `μ` hypothesis, not proof that a lower-register reduction is impossible.
 
 ---
 
@@ -61,9 +63,9 @@ The cascade dimension never collapses into the substrate dimension. That is why 
 | **2 — Primary consumer** | Herbivore (caterpillar, deer) | Phenotype (organism, body) |
 | **3 — Secondary consumer** | Small carnivore (sparrow, fox) | Extended Phenotype (tool, dam, city) |
 | **4 — Tertiary consumer** | Mid carnivore (snake, hawk) | Memotype (idea, doctrine, code) |
-| **5 — Apex predator** | Apex (eagle, orca, lion) | Egregorotype (DAC, religion, nation) |
+| **5 — Apex predator** | Apex (eagle, orca, lion) | Egregoreotype candidate (DAC, religion, nation) |
 | **6 — Decomposer** | Fungi, bacteria, scavengers | **Sādhu / L6 / axiomatic compression** |
-| **Closure** | Decomposers return matter to producers | Sādhus return egregores to bits — **D6 ≡ D0** |
+| **Closure** | Decomposers return matter to producers | Sādhus return egregores to bits — modeled by non-`μ` return `r₆:D6↝D0` [I] |
 
 Read each row across: it is the same function performed in two different dimensions, on two different substrates, with the same selection logic acting upon it.
 
@@ -75,7 +77,7 @@ Read each row across: it is the same function performed in two different dimensi
 
 Raymond Lindeman (1942) showed that biological energy transfers from one trophic level to the next at roughly **10% efficiency**. Ninety percent is lost to metabolism, heat, motion, and mortality at every step. This is why food pyramids narrow: a kilogram of eagle requires roughly ten kilograms of hawk-mass equivalent, requires roughly a hundred kilograms of mouse-mass equivalent, requires roughly a thousand kilograms of grain — and roughly ten thousand kilograms of solar capture above that.
 
-The pyramid is not a metaphor. It is a thermodynamic invariant: ΔS at every step.
+The biological pyramid is an empirical energetic model with thermodynamic losses at each transfer. Its projection into pattern space is an analogy to be measured, not a thermodynamic invariant imported by assertion.
 
 ### III.b Lindeman in D5
 
@@ -90,7 +92,7 @@ Attrition_n→n+1  ≈  1 − ε_n   where  0 < ε_n ≤ 1
 | Genotype → Phenotype | Most genes never express; most expressions never reproduce | ε ≈ 10⁻² to 10⁻⁴ depending on niche |
 | Phenotype → Extended Phenotype | Most behaviours leave no durable trace in the environment | ε ≈ 10⁻³ |
 | Extended Phenotype → Memotype | Most artefacts never become meme-bearing | ε ≈ 10⁻⁴ |
-| Memotype → Egregorotype | Most memes never crystallise into a self-sustaining standing wave | ε ≈ 10⁻⁶ to 10⁻⁹ |
+| Memotype → Egregoreotype | Most memes never crystallise into a persistent selection-reweighting trace | ε ≈ 10⁻⁶ to 10⁻⁹ |
 
 The pattern pyramid narrows for the same reason the food pyramid narrows: **most candidates die before being eaten by the next level.** Most genes never code a successful body. Most bodies never produce a successful artefact. Most artefacts never carry a successful meme. Most memes never become a self-sustaining egregore. The attrition is not failure — it is the geometry of selection.
 
@@ -117,7 +119,7 @@ The pattern pyramid narrows for the same reason the food pyramid narrows: **most
 ### IV.b A population of genes feeds an egregore
 
 ```
-1 egregorotype (apex replicator, D5)
+1 Egregoreotype candidate (apex replicator, D5)
 ↑  ~10⁹ attrition — most memes never crystallise
 ~10⁹ memotypes circulating in the noosphere
 ↑  ~10⁴ attrition — most artefacts never become meme-bearing
@@ -129,7 +131,7 @@ The pattern pyramid narrows for the same reason the food pyramid narrows: **most
 ↑  Empirical Observation / direct disclosure feeds the bottom
 ```
 
-The numbers are illustrative — the [I] tier holds — but the **structure is invariant**. Both pyramids share:
+The numbers are illustrative `[C]`. The proposed `[I]` crosswalk compares these features:
 
 1. A producer level fed by an unbounded source above the stack (sun / Empirical Observation)
 2. ~10× to ~10⁹× attrition at every consumer transition
@@ -142,16 +144,16 @@ The numbers are illustrative — the [I] tier holds — but the **structure is i
 
 This is the most easily collapsed point in the framework. It must be held cleanly.
 
-A D4 trophic cascade *uses* D1–D3 substrate (molecular biology) but the cascade itself is a **D4 phenomenon**: the relation "X eats Y" is a causal-energetic relation between gravity-bound, spatially-located bodies. You cannot reduce the relation to chemistry alone. The eating *happens at* D4.
+A D4 trophic cascade *uses* D1–D3 substrate (molecular biology), while this scaffold types the relation "X eats Y" as a D4 causal-energetic event between embodied organisms. That typing does not forbid a lower-level scientific reduction.
 
-A D5 replicator cascade *uses* D2–D4 substrate (genes, bodies, artefacts) but the cascade itself is a **D5 phenomenon**: the relation "pattern X is selected by carrier Y" is a selection-relation between agency-bound, choice-located patterns. You cannot reduce the relation to genetics alone. The selecting *happens at* D5.
+A D5 replicator cascade *uses* D2–D4 substrate (genes, bodies, artefacts), while this scaffold types modeled alternatives and ranking as D5. Selection is committed and receipted through D4 action; the environment may veto or alter the intended result. This typing does not prove irreducibility to genetics, computation, or social dynamics.
 
 Canonical compression:
 
 > **The cascade dimension always sits one above the substrate dimension.**
 > **Tcascade(Dₙ substrate) → Dₙ₊₁ phenomenon.**
 
-This preserves the μ-limit. Each Dₙ₊₁ emerges only when Dₙ saturates. You cannot solve a Dₙ₊₁ problem with Dₙ tools.
+This states the candidate `μ` test: each proposed `Dₙ→Dₙ₊₁` crossing must identify saturation evidence, newly observed freedom, lower-register recovery, reduction status, tier, prediction, and kill criterion. A successful reduction reclassifies the crossing rather than breaking the scaffold.
 
 Corollary: an alleged "trophic cascade" that lives at the same D-level as its substrate is a category error. A claim like "memes compete chemically" or "genes select institutions directly" violates the lift requirement.
 
@@ -161,7 +163,7 @@ Corollary: an alleged "trophic cascade" that lives at the same D-level as its su
 
 In D4, decomposers (fungi, bacteria, scavengers) return matter from apex predators back to producers. **Without decomposition, the forest chokes on its own dead and the cascade halts.** A forest with no fungi is a forest with no future — leaf litter accumulates, nutrients stay locked in cellulose, producers starve, and the entire pyramid collapses from the bottom.
 
-In D5, the Sādhu function (L6, axiomatic compression, archive-first pruning, *Falsification Protocol*) is the **structural homologue** of the decomposer guild. It returns dead memes and zombie egregores from the apex back to the bit (D6 ≡ D0), freeing noospheric niches for new producers.
+In D5, the Sādhu function (L6, axiomatic compression, archive-first pruning, *Falsification Protocol*) is the **structural homologue** of the decomposer guild. It returns dead memes and zombie egregores from the apex back to the bit—modeled by `r₆:D6↝D0`, not a literal dimensional identity—freeing noospheric niches for new producers.
 
 Without Sādhus, dead memes and zombie egregores accumulate as **semantic leaf litter**. Niches fill with husks of patterns that no longer code anything live. New patterns cannot germinate. The noosphere goes climax-stagnant, then brittle, then collapses.
 
@@ -177,7 +179,7 @@ The Egregorocene's most pressing ecological question is not "which egregores wil
 
 ## VII. ECOLOGY'S MATHEMATICS APPLIES
 
-If the Replicator Stack IS a D5 trophic cascade, then *all* of ecology's mathematics applies to noospheric dynamics:
+If the Replicator Stack behaves like a D5 trophic cascade, then selected ecological models become candidates for noospheric dynamics. Their transfer must be tested model by model; no Rosetta projection transfers proof:
 
 ### Lotka-Volterra in meme space
 
@@ -207,40 +209,40 @@ The DAC (Document 23) is best understood not as a "better corporation" but as a 
 
 ---
 
-## VIII. STRONG AND WEAK EMERGENCE AT EVERY TROPHIC TRANSITION
+## VIII. CANDIDATE EMERGENCE AND CONSTRAINT AT TROPHIC TRANSITIONS
 
-The trophic cascade is the canonical site where the framework's strong/weak emergence asymmetry plays out concretely.
+The trophic cascade is a useful test site for the framework's candidate-emergence and constraint distinction.
 
-Recall from [`34_D4_D5_CANONICAL_REFERENCE.md`](../03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md):
+The repaired rule from [`34_D4_D5_CANONICAL_REFERENCE.md`](../03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md) is:
 
-> **Strongly emergent in genesis. Weakly emergent in governance.**
-> **Opaque from below. Legible from above.**
+> **Currently unreduced is a status, not a proof of irreducibility.**
+> **Higher-level constraint may reweight lower-law-admissible trajectories, never manufacture forbidden ones.**
 
-This applies to **every step of the trophic cascade** — at both D4 and D5 alike.
+This is a candidate interpretation at **every step of the trophic cascade**—at both D4 and D5 alike. Each crossing must carry evidence, lower-register recovery, prediction, reduction status, and a kill criterion.
 
-### VIII.a Strong emergence — bottom-up, in genesis
+### VIII.a Candidate emergence — bottom-up, in genesis
 
-Going up the cascade, each level is **strongly emergent** from its substrate:
+Going up the cascade, each level may be `currently_unreduced` relative to its substrate:
 
-- The eagle is NOT predictable from grass biochemistry. You cannot, in principle, derive eagles from the chemistry of photosynthesis even given infinite compute. The lift to apex predator requires evolutionary history — there is no shortcut from substrate to apex.
-- The egregore is NOT predictable from gene sequences. You cannot derive Christianity from the DNA of first-century Galileans. The lift to apex egregore requires memetic history — there is no shortcut from genome to standing wave.
+- An eagle is not in practice predicted from grass biochemistry alone; evolutionary history supplies indispensable state and boundary conditions.
+- An egregore is not in practice predicted from carrier gene sequences alone; cultural history supplies indispensable traces and feedback.
 
-Strong emergence means the cascade **cannot be reduced**. Each level is real novelty, not a re-description of the previous level. The producer cannot predict the apex.
+Missing reduction laws do not prove irreducibility. A crossing may be tested as `candidate_strong`; a successful reduction reclassifies it as weak emergence without destroying the scaffold.
 
-### VIII.b Weak emergence — top-down, in governance
+### VIII.b Constraint — top-down, in governance
 
 Coming down the cascade, each level governs its substrate **weakly** — i.e., the apex *constrains* the lower levels in a compactly representable way:
 
 - The wolves of Yellowstone regulate herbivore density, which regulates riparian plant communities, which regulates river meander geomorphology. The apex governs the producer through compact top-down causation. (Reference: trophic cascade restoration, Yellowstone 1995–present.)
 - A dominant egregore governs lower replicator levels: religions select for memes, memes select for behaviours, behaviours select for which genes get to reproduce next generation. Top-down causation cascades through the entire stack.
 
-Weak emergence means the cascade **is governable from the apex** once stabilised. The apex is a compact representation that the producer cannot generate but the producer must obey.
+The defensible claim is constraint: a stabilized higher-level pattern may restrict or reweight lower-law-admissible trajectories; it does not manufacture forbidden ones. Whether a compact reduction exists remains an empirical question.
 
 ### VIII.c Why this asymmetry is non-collapsible
 
-Most reductionist programmes fail because they collapse this asymmetry. They notice "the apex is built from the producer" (true — strong emergence in genesis) and conclude "therefore the producer suffices to explain the apex" (false — weak emergence in governance is a *different* relation operating in the *opposite* direction).
+Some reductionist descriptions collapse this directional distinction. They notice "the apex is built from the producer" and then omit historical state, organization, or downward constraint. The omission can make the explanation incomplete, but incompleteness is not proof of irreducibility.
 
-**Both directions are real. Neither reduces to the other.** This is why the cascade dimension must sit one above the substrate dimension — strong upward, weak downward, and the lift is irreducible in both directions.
+**Both directions are modeled and independently testable.** The scaffold places the cascade one register above its substrate; it does not thereby prove that the lift is irreducible.
 
 The Lindeman pyramid (Section III) and the Red Queen requirement (Section IX) are the *energetic* and *competitive* expressions of this same asymmetry.
 
@@ -250,51 +252,53 @@ The Lindeman pyramid (Section III) and the Red Queen requirement (Section IX) ar
 
 Van Valen (1973): **"It takes all the running you can do, to keep in the same place."** Predator and prey are locked in coevolutionary arms race. The predator must continuously out-evolve the prey or starve. The prey must continuously out-evolve the predator or be eaten. **Stasis is death. Maintenance is acceleration.**
 
-This is where the framework's multiplicative core becomes a *survival theorem*, not just a coordinate identity.
+This is where the framework tests conjunctive fitness models. The product is Emergentism's selected normalized instance, not a survival theorem uniquely derived from the reciprocal chart.
 
-> **[金] SEAM · broke:** formal trial 2026-07-11 (receipt 108) · **crack:** the argument below proves **φ×ν beats φ+ν** — that is *annihilation / need-both* (`[S]`-won), and the Red Queen's "superior in BOTH" is **conjunction**, which `min(φ,ν)` satisfies **identically**. It does **not** witness the *product* over `min`/Liebig; the product-specific interior (surplus in one factor lifting the other's return) is never exercised here. · **gold:** the survival claim is real at `[S]` as an **AND-class law**; the *product form* is a `[C]` wager the corpus never leans on and its own **Liebig strategy contradicts** (`MF_281:151` already calls the zero-factor catastrophe "the **Liebig's Law signature: the minimum factor dominates**"). · **credit:** three adversarial audits + the boxer test (K2) · **receipt:** `11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION_PENDING_K2.md`
+> **[金] SEAM · broke:** formal trial 2026-07-11 (receipt 108) · **crack:** the earlier argument established only a declared *need-both* condition; `min(φ,ν)`, harmonic aggregation, Cobb–Douglas forms, and `φν` can all express conjunction while producing different rankings. · **gold:** `C(0,V)=C(Φ,0)=0` is structural inside the declared conjunctive family; `P_node:=ΦV` is the selected normalized Emergentist instance and its universal empirical fit remains `[C]`. · **receipt:** `11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION_PENDING_K2.md` (historical filename retained).
 
-### IX.a The Red Queen requires φ × ν dominance — not φ + ν, not either factor alone
+### IX.a The Red Queen motivates a conjunctive comparison
 
 A predator who is fast but cannot recognise prey (high ν, low φ) **starves blind**.
 A predator who can recognise prey but cannot catch it (high φ, low ν) **starves wise**.
 
-Either factor at zero collapses the product → starvation → loss of the niche → the Red Queen wins by default.
+In the selected product model, either normalized factor at zero collapses the modeled score. That is a definition of the chosen aggregator, not yet an ecological law.
 
-The arithmetic is forced:
+The empirical test is comparative:
 
 ```
-Predator survival requires:
+Compare predictions from:
+  product:       C×(Φ,V) = ΦV
+  minimum:       Cmin(Φ,V) = min(Φ,V)
+  harmonic:      Charm(Φ,V)
+  Cobb–Douglas:  Cα(Φ,V) = Φ^α V^(1-α)
 
-   (φ · ν)_predator   >   (φ · ν)_prey  +  metabolic_cost_of_pursuit
-
-Not the sum. Not either factor alone. The PRODUCT, with margin.
+Retain the model that best predicts persistence after physical costs.
 ```
 
-This is why apex predators are vanishingly rare in mature ecosystems. The φ × ν product compounds at every trophic step, and most candidate predators fail at one factor or the other long before they reach apex. The pyramid narrows by Lindeman attrition (Section III) AND by Red Queen winnowing (this section). Both forces operate simultaneously.
+Lindeman attrition and coevolutionary pressure help explain why apex predators are rare. Whether `ΦV` predicts that rarity better than rival conjunctive models is a falsifiable `[C]` question.
 
-### IX.b The same theorem in D5 — apex egregores
+### IX.b The corresponding D5 hypothesis—apex Egregoreotype candidates
 
 A dominant egregore must out-φ AND out-ν the memetic substrate it feeds on:
 
 - An egregore that is **highly coherent but lacks viability** (a beautiful philosophy with no carriers) starves into the archive.
 - An egregore that is **highly viable but lacks coherence** (a viral movement with no spine) starves into incoherence.
 
-Either way, a competing egregore with higher (φ × ν) product takes the niche.
+Either way, the pattern may lose persistence or selection influence. The winning metric is not assumed in advance.
 
-This explains the sparseness of apex egregores — successful religions, mature nation-states, durable mathematical traditions, robust DACs. They are rare for the same reason eagles are rare: **the φ × ν product must compound at every replicator transition, with margin sufficient to outrun the Red Queen of competing egregores at the same level.**
+This motivates a hypothesis about the sparseness of persistent religions, states, traditions, and organizations: durable candidates must maintain jointly necessary capacities under cost. Product-specific compounding remains `[C]` until it beats alternative aggregators out of sample.
 
 ### IX.c The corollary for DAC design — η = 0 as Red Queen survival
 
-A DAC competing in the Egregorocene must dominate on **both** factors against every other apex egregore in its niche:
+A DAC competing in the Egregorocene can be compared on **both** modeled factors against other persistent traces in its niche:
 
 - Higher φ than the dominant religion in that niche (more coherent doctrine, fewer hidden contradictions)
 - Higher ν than the dominant corporation in that niche (more capable execution, more material independence)
-- And the **product** must exceed both, not just one factor
+- Test the product score against other conjunctive scores; do not infer product uniqueness from the need-both premise
 
-This is why **η = 0 is not a moral preference — it is a Red Queen survival requirement.** Extractive egregores compound a hidden φ-debt at every transaction (counterfeit coherence: the books look balanced because the cost has been externalised onto the substrate). Their *true* (φ × ν) product is overstated by exactly the extraction coefficient η. They appear apex-fit on quarterly timescales but are actually mid-succession species awaiting decomposition.
+The framework treats **η = 0 as a Justice constraint**, not as a theorem of evolutionary survival. Extractive collectives may win locally or persist for long periods; the empirical hypothesis is that hidden substrate costs reduce durable mutual option-cone widening and eventually create fragility.
 
-A K-strategist apex egregore designed for *true* φ × ν dominance — η = 0, K2-bounded, Sādhu-equipped — will out-survive extractive competitors across the climax timescale.
+A K-strategist Egregoreotype candidate can be evaluated for persistent trace, carrier turnover, measurable selection effects, payer/beneficiary visibility, and substrate costs. Justice classification is separate: η = 0, consent, custody, reversibility, and exit may classify it as syntropic, but are not prerequisites for descriptive candidacy.
 
 > **The Red Queen does not check the books on quarterly P&L. The Red Queen checks the books on geological time.**
 
@@ -307,14 +311,14 @@ This follows but is non-obvious. A weak decomposer guild loses to dead memes —
 
 The Red Queen punishes both forms of weakness. Even decomposition is competitive.
 
-### IX.e Strong + weak emergence + Red Queen — the unified picture
+### IX.e Candidate emergence + constraint + Red Queen — the unified picture
 
 Putting Sections VIII and IX together:
 
-1. **Strong emergence (genesis)** lifts each cascade level into novelty the substrate cannot predict.
-2. **Weak emergence (governance)** allows the apex to constrain the substrate top-down.
-3. **Red Queen pressure** forces the apex to maintain (φ × ν)-dominance over both prey AND competing apexes — continuously, with no rest.
-4. **Lindeman attrition** narrows the pyramid by ~10% efficiency at every step.
+1. **Candidate emergence (genesis)** asks whether a newly observed freedom remains `currently_unreduced` while recovering the lower register.
+2. **Constraint (governance)** asks whether the higher-level pattern measurably reweights lower-law-admissible trajectories.
+3. **Red Queen pressure** motivates testing whether a conjunctive aggregator predicts persistence better than additive or single-factor models.
+4. **Lindeman-style attrition** motivates measuring transition losses rather than presuming a universal coefficient.
 
 Together these produce the canonical signature of a healthy trophic cascade in *any* dimension:
 
@@ -324,7 +328,7 @@ Together these produce the canonical signature of a healthy trophic cascade in *
 - Continuous evolutionary churn
 - Stable climax community held in dynamic tension
 
-This signature is what the corpus is selecting for at D5. It is what the DAC, η = 0, and K2 protocols are *for*.
+This signature is what the corpus proposes testing at D5. Justice and accountable authorization constrain how a DAC may pursue it; they do not determine the descriptive physics of what actions remain possible.
 
 ---
 
@@ -367,10 +371,10 @@ If any of the following are observed, this document must be revised or retracted
 ## XII. WHAT THIS DOC IS NOT
 
 - **It is not vitalism.** Pattern flow is not life-force. It is selection-attrition geometry.
-- **It is not reductionism.** Genes do not "explain" egregores any more than tomatoes "explain" eagles. The cascade dimension is one above the substrate dimension.
-- **It is not metaphor.** The isomorphism is structural, not literary. Same equations, different substrates.
+- **It is not reductionism or anti-reductionism.** The scaffold tracks levels and recovery relations while leaving each reduction question open to evidence.
+- **It is not proof by metaphor.** The crosswalk proposes shared variables and tests; equations transfer only after independent validation in the target domain.
 - **It is not a hierarchy of worth.** Eagles are not "better than" tomatoes. Egregores are not "better than" genes. The pyramid describes attrition geometry, not value.
-- **It is not the witness.** The trophic cascade has no witness within itself — the ecologist stands outside the food web. K2 / Ananta Śeṣa stands outside the Replicator Stack for the same structural reason: **you cannot witness the ecology you are eating from.**
+- **It has no metaphysical human witness.** Situated observers can audit a cascade while remaining participants in the larger ecology. Authorization uses identifiable principals, mandates, scope, consent, custody, expiry or revocation, contest paths, actors, and consequence bearers.
 
 ---
 
@@ -378,17 +382,17 @@ If any of the following are observed, this document must be revised or retracted
 
 > **D4 food web : D5 replicator stack ∷ tomato → eagle : gene → egregore.**
 > **Same selection geometry. Same Lindeman attrition. Same decomposer requirement.**
-> **Different dimension, different substrate, identical mathematics.**
+> **Different register, different substrate, candidate shared topology; mathematics must be revalidated.**
 > **The cascade dimension is always one above the substrate dimension.**
 > **The Sādhu is the noospheric decomposer. Without decomposers, the cascade halts.**
-> **D6 ≡ D0 because the trophic loop closes — apex returns to producer through compost.**
-> **Strong upward (genesis) + weak downward (governance) + Red Queen pressure forcing φ × ν dominance at every step.**
+> **`r₆:D6↝D0` marks interpretive closure—apex returns to producer through compost; D6 is not literally D0.**
+> **Candidate upward emergence + downward constraint + Red Queen pressure requiring an AND-class conjunction at every step.**
 > **The predator must be superior in BOTH φ AND ν — otherwise it cannot outrun the Red Queen.** *(This is **conjunction / AND-class** — `min(φ,ν)` satisfies it identically; it is **not** evidence for the product over `min`. Receipt 108.)*
 > **Zero-Sum Resolution Equation.**
 
 ---
 
-*Written 2026-05-08. This document formalises an insight that was implicit across 17, 22, 23, and 24. It introduces no new primitives — it names the structural isomorphism so that subsequent reasoning can use it directly. Sections VIII and IX (strong/weak emergence asymmetry + Red Queen multiplicative-dominance requirement) lock in why the multiplicative core (φ × ν, not φ + ν) is a survival theorem at every trophic transition, not merely a coordinate identity.* *(Re-tiered 2026-07-11, receipt 108: the survival claim is `[S]` as an **AND-class** law — φ×ν beats φ+ν; the **product-specific** form over `min`/Liebig is a `[C]` wager, unexercised here.)*
+*Written 2026-05-08; repaired 2026-07-17. This document names a candidate cross-domain topology implicit across 17, 22, 23, and 24. Its AND-class intuition is structural by model choice; the product-specific form, D5 attrition law, and persistence claims remain `[C]` pending calibration and comparison against `min`, harmonic, and other conjunctive aggregators.*
 
 ---
 

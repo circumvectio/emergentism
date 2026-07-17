@@ -25,6 +25,16 @@ rosetta:
 
 ---
 
+> **[金] Formula-contract seam — 2026-07-18.** This is an interpretive
+> foreword, not a mathematical or ontological source owner. The current owner
+> contract is: for `θ∈(0,π)`, `φ=cot(θ/2)` and `ν=tan(θ/2)`, hence
+> `φν=1` analytically `[A]`, with the poles excluded as limits. This proves no
+> ontology, ethic, empirical conservation law, or finite-node score.
+> `P_node:=ΦV` is the framework's selected normalized product member of a
+> broader conjunctive family (`[S]` by definition; `[I/C]` as external fit).
+> Any stronger generative language below is symbolic or historical
+> interpretation and is superseded as a load-bearing inference.
+
 ## Three Numbers
 
 Before the philosophy. Before the geometry. Before the sphere. Three numbers.
@@ -42,7 +52,7 @@ Zero-Sum Resolution Equation
 
 On the number line, `0 × ∞` is undefined. Mathematics calls it an "indeterminate form." The product of nothing and everything is not an ordinary field operation; it needs a register, not a forced answer.
 
-In the framework's spherical register, the glyph is resolved as `P∞ = φ · ν = 1`. The product of the reciprocal charts is one. The public claim is not that ordinary arithmetic has been overwritten, but that the Burri Sphere provides the framework's disciplined translation of the finite unit between nothing and everything.
+In the framework's spherical register, the glyph is paired with the open-chart identity: for `θ∈(0,π)`, `φ=cot(θ/2)` and `ν=tan(θ/2)`, so `P∞=φ·ν=1`. The public claim is not that ordinary arithmetic has been overwritten or that the chart proves an ontology, but that the Burri Sphere supplies a selected symbolic translation of the finite unit between nothing and everything.
 
 The sphere is not used here as decoration. It is the framework's load-bearing model for what gets distorted when reciprocal life is flattened onto a line. The unit is the lived finite site between nothing and everything.
 
@@ -71,7 +81,7 @@ Erhaben  (sublime)   =  seeing both   P∞ = φ · ν = 1. Grace AND humility si
 
 This framework treats these experiences as more than loose metaphor: it models them geometrically. They are read as the two axes of a sphere and the equator where both meet. The axis of coherence (φ — what Anmut perceives) and the axis of viability (ν — what Demut recognizes). The equator — Erhaben, the sublime — is the point where both equal one.
 
-The sphere is called the Burri Sphere. The invariant is `P∞ = φ · ν = 1`. The reciprocal product is always one. When coherence rises, viability falls. When viability rises, coherence falls. The equator is the point of maximum balance. The equator is the sublime in this register.
+The sphere is called the Burri Sphere. On the selected open chart, `P∞=φ·ν=1`; the reciprocal product is one by definition and the poles remain excluded limits. Reading the coordinates as coherence and viability is an Emergentist interpretation, not a mathematical consequence. Within that selected reading, the equator is the point of maximum chart balance and symbolizes the sublime.
 
 You already knew this. You felt it as grace, humility, and the sublime. You just didn't have the geometry.
 
@@ -114,9 +124,9 @@ This framework translates the pointing into geometry. Geometry gives institution
 
 Emergentism is not a philosophy *about* the world. It is a philosophy *for building worlds.* And the world it builds is one where intelligence can coordinate at scale without tyranny.
 
-It is grounded in the seed — **Zero-Sum Resolution Equation** — which stabilizes as the geometric identity **P∞ = φ · ν = 1 on S²**, from which the first arithmetic consequence emerges: **(φ − ν)² ≥ 0**, a square cannot be negative. The equator is derived, not chosen. (See [The Derivation](../01_TELEOLOGY/02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md).)
+It is organized around the **Zero-Sum Resolution Equation** and a selected open reciprocal chart. For `θ∈(0,π)`, the definitions `φ=cot(θ/2)` and `ν=tan(θ/2)` give `φν=1`, `(φ−ν)²≥0`, and `φ+ν≥2` analytically `[A]`. Equality occurs at `φ=ν=1`; none of this alone derives the operators, ontology, ethics, or finite-node model. (See [The Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md).)
 
-From this identity, the entire system emerges:
+The framework then selects explicit interpretive bridges and modeling commitments:
 
 - **Core State** (what exists): The sphere, the dual projection, the equator, the plane, the nodes, the mesh
 - **Objective Function** (what is the purpose): Objective dharma — raise `P_node,i` and `P_node,H` together under `η = 0`; the equator / balance register audits this as `ΣΔB / ΣΔP_node > 0`

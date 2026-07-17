@@ -5,7 +5,7 @@ status: ACTIVE v1.0 — 2026-05-23
 owner: K2 (Yves R. Burri) + L7 Ṛṣi council
 audience: All agents, scholars, practitioners, and organism operators entering the doctrine
 evidence_tier: "[S] structural doctrine; [B] foundational claims where formally grounded; [I] interpretive operational content; [C] forward scholarly targets"
-truth_boundary: "This VMOSK-A defines the replicator stack for the Emergentism doctrine root — the perennial framework built on φ·ν=1, the Sevenfold Foundation, and the Rosetta Stone. It is NOT the organism runtime root (02_SKYZAI/01_NOOSPHERE/) or the commercial factory (02_SKYZAI/04_PUBLIC_SCAFFOLD/). Doctrine changes slowly; runtime changes fast. Repair source truth before patching summaries."
+truth_boundary: "This VMOSK-A defines the replicator stack for the Emergentism doctrine root — the perennial framework organized around a selected reciprocal chart, the Sevenfold Foundation, and the Rosetta Stone. On θ∈(0,π), φ=cot(θ/2) and ν=tan(θ/2) give the analytic identity φν=1; that chart fact proves no ontology, ethic, empirical conservation law, or finite-node score. It is NOT the organism runtime root (02_SKYZAI/01_NOOSPHERE/) or the commercial factory (02_SKYZAI/04_PUBLIC_SCAFFOLD/). Doctrine changes slowly; runtime changes fast. Repair source truth before patching summaries."
 parent_doctrines:
   - 01_EMERGENTISM/00_SEVENFOLD_FOUNDATION_ROOT.md
   - 01_EMERGENTISM/11_UPLINK/00_CORE/00_INDEX.md
@@ -34,7 +34,7 @@ rosetta:
 | Scope | `01_EMERGENTISM/` doctrine root, public site, AIA-facing medium, papers, and Soul Loop practice |
 | Mandate change | **Yes — owner-declared Vision/Mission clarification.** This overlay supersedes the 2026-06-10 "no V/M expansion" line from that dated snapshot without rewriting its historical record. |
 | Headline | Emergentism is now stated explicitly as a living Weltanschauung for Dasein: a coherent, tier-honest map of origin, objective dharma, and recursive action without extraction. |
-| Evidence posture | Vision/Mission are governance commitments and interpretive framing `[I/S]`, not proofs. The operational rule remains constrained by evidence tiers, `P_node = Φ × V`, `η = 0`, and A7 correction. |
+| Evidence posture | Vision/Mission are governance commitments and interpretive framing `[I/S]`, not proofs. `P_node:=ΦV` is the framework-selected product member of a normalized conjunctive family (`[S]` by definition; `[I/C]` as external fit), not a consequence of `φν=1`. The operational rule remains constrained by evidence tiers, `η = 0`, and A7 correction. |
 
 ## V — Vision (current canonical form)
 
@@ -65,7 +65,7 @@ Know how to act   -> teleology
 **Operational mission:**
 
 > Maximize durable usable worldline potential, `W_i(T)`, through
-> `P_node = Φ × V`, only where `P_node,i` and `P_node,H` preserve or raise one
+> the declared model `P_node := Φ × V`, only where `P_node,i` and `P_node,H` preserve or raise one
 > another without extraction.
 
 **Guardrail:** the framework must not become a closed idol. D5 can imagine a
@@ -249,9 +249,9 @@ Keep Emergentism.org operable under its existing mandate, with explicit evidence
 
 ## V — VISION (Genotype | Decades | Immutable)
 
-**A complete philosophical framework built on one equation — φ · ν = 1 on S² — that succeeds when the practitioner puts it down.** [C] forward commitment — kill: if the framework is still needed after sustained practice, this promise has failed; see ../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md
+**A complete philosophical framework organized around a selected reciprocal chart — and one that succeeds when the practitioner puts it down.** `[C]` forward commitment — kill: if the framework is still needed after sustained practice, this promise has failed; see ../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md
 
-Emergentism (Syntropic Dyadism) states that coherence (φ) and viability (ν) multiply to unity on the Riemann sphere. The balance B = sin θ peaks at the equator where φ = ν = 1. The glyph Zero-Sum Resolution Equation names finity as the product of nothing and everything.
+For `θ∈(0,π)`, Emergentism selects `φ=cot(θ/2)` and `ν=tan(θ/2)`, so `φ·ν=1` and `B=sin θ≤1` follow analytically `[A]`; the excluded poles are limits. The framework interprets these chart facts through coherence and viability `[I]`, but the mathematics alone proves no ontology or ethic. The Zero-Sum Resolution Equation is a selected emblem, not ordinary arithmetic.
 
 The framework is:
 - **Axiomatic at the ground** (L6 Core State): Falsification Protocol, Decentralized Authority Model, the silence that precedes structure.

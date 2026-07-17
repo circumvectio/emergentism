@@ -207,7 +207,7 @@ The amendment protocol depends on which layer you're touching.
 ### Constitutional change (operator, transfer, tier, deployable flag)
 
 1. Edit the relevant per-agent file at `.codex/agents/rows/0X_LX_<caste>.toml`.
-   K2 review recommended for Trimūrti/equator boundary changes.
+   Evidence review is recommended for Trimūrti/equator boundary changes; consequential adoption additionally requires the appropriate scoped authorization assessment.
 2. Run `python3 .codex/agents/sync_agents.py generate` to regenerate the 7 parent
    {caste}.toml files.
 3. Run `python3 .codex/agents/children/gen_children.py` to regenerate the 29

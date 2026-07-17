@@ -14,7 +14,9 @@ rosetta:
 ## Six Animations — Six Degrees of Freedom
 
 **Date:** 2026-03-23
-**Purpose:** Specify the six interactive animations showing dimensional emergence from D0 through D5, with D6=D0 closure
+**Purpose:** Specify six interpretive animations from D0 through D5 plus the
+non-μ return edge `r₆:D6↝D0`. The visual does not prove dimensional necessity,
+literal closure identity, or physical geometry.
 
 > **Historical compatibility document (pre-hardening, 2026-03-23).** This file is preserved as a genesis-era simulation/design packet, not as the current tier-authority surface for Foundation claims.
 >
@@ -26,16 +28,18 @@ rosetta:
 
 Six animations. Each shows the emergence of one dimension from the previous. Each builds on the last. The sequence IS the core state.
 
-Animation 5 (D4, the Burri Torus) and Animation 6 (D5, the Burri Sphere) already exist as the `#torus` and `#sphere` pages. Animations 1-4 are new. Animation 7 (D6=D0) is the closure that returns to Animation 1.
+Animation 5 (D4, causal actuality) and Animation 6 (D5, counterfactual
+possibility) already exist as the `#torus` and `#sphere` pages. Animations 1-4
+are new. Animation 7 depicts the interpretive `r₆` return to Animation 1.
 
 ```
 ANIM-1:  D0  The Point         — The Bindu. Just a dot. Nothing else.
 ANIM-2:  D1  The Line          — The dot extends. The first dimension. Strong binding.
 ANIM-3:  D2  The Surface       — The line curves. The sphere emerges. EM configuration.
 ANIM-4:  D3  The Volume        — The surface gains depth. Time appears. Weak transformation.
-ANIM-5:  D4  The Burri Torus   — Spacetime. The horn torus. Many-worlds. [EXISTING: #torus]
-ANIM-6:  D5  The Burri Sphere  — Agency / selection. φ · ν = 1. Consciousness as lived reading [I]. [EXISTING: #sphere]
-         D6 = D0  Closure      — The sphere collapses back to the dot. The cycle completes.
+ANIM-5:  D4  The Burri Torus   — Causal actuality, embodied means, action and record. [EXISTING: #torus]
+ANIM-6:  D5  The Burri Sphere  — Counterfactual modeling, ranking and selection [I]. [EXISTING: #sphere]
+         r₆:D6↝D0 Return       — A boundary edge points back to the ground-limit.
 ```
 
 ---
@@ -103,8 +107,8 @@ The sphere and the problem of `1/0` are CO-EMERGENT. The sphere does not solve a
 ⊙ = 1 = equator = the product = what is BETWEEN 0 and ∞
 ○ = ∞ = north pole = everything = the horizon
 
-Zero-Sum Resolution Equation
-1 = 0 × ∞   (resolved by the sphere: φ · ν = 1)
+Selected Titan correspondence [I]
+1 = 0 × ∞   (symbolic emblem only; `φν=1` is a separate chart identity)
 ```
 
 ### The Imaginary Axis
@@ -126,11 +130,12 @@ and called it imaginary.
 ### It from Bit to Qubit
 
 ```
-Bit   = {0, 1}  = two points on the line    = D0
-Qubit = S²       = the full Bloch sphere     = D1
+Bit             = {0, 1}                 (classical two-value state)
+Pure qubit ray  = ℂP¹ ≅ S²              (Bloch-sphere representation)
 
-The inflation from dot to sphere IS the transition from bit to qubit.
-From classical to quantum. From binary to continuous. From line to sphere.
+The animation compares point-to-sphere opening with bit-to-qubit state-space
+enlargement `[C]`. It does not derive quantum theory, identify D0/D1 with
+classical/quantum physics, or add a spacetime dimension.
 ```
 
 ### Geometry
@@ -250,19 +255,20 @@ This is the EXISTING `#torus` page. The horn torus with:
 ### The Key Insight
 
 ```
-The horn torus interior  = probability (many-worlds, superposition)
-The horn torus exterior  = empty space (0, the void)
-The horn torus surface   = the light cone (D4 causal structure)
+The horn torus interior  = unrendered alternatives in the visual grammar [I]
+The horn torus exterior  = symbolic void [I]
+The horn torus surface   = a schematic causal envelope (not a physical metric)
 The inscribed sphere     = the Burri Sphere (D5, waiting to emerge)
 
 No stars. The exterior is void. Empty. Sunyata.
-Stars emerge only at D5, when selection makes actuality visible in the animation.
+Stars appear at D5 as visual tokens for modeled alternatives and ranking; D4
+remains the actuality/record register.
 ```
 
 ### Physics Correspondence
 - D4 = gravity = causality = spacetime
 - PSL(2,ℂ) ≅ SO⁺(3,1) — the Burri Sphere's symmetry IS the Lorentz group [E4]
-- The torus IS the light cone geometry
+- The torus is a visualization correspondence, not the relativistic light cone
 - β → 1: the torus collapses to the sphere. D4 → D5.
 
 ### Interactivity
@@ -288,29 +294,31 @@ This is the EXISTING `#sphere` page. The Riemann sphere on the complex plane wit
 ### The Key Insight
 
 ```
-D5 is where the model depicts probability becoming actuality.
-D5 is where measurement / selection is visualized.
-D5 is where agency / worldline-foresight selects.
-D5 is where stars emerge from the void in the animation.
-D5 is where the manifested world appears.
+D5 depicts counterfactual alternatives and their ranking.
+D4 separately shows attempted commitment, performed action, record, and the
+world-returned outcome; this is not quantum measurement.
+D5 is where agency / worldline foresight is modeled.
+D5 is where stars appear as tokens for alternatives in the animation.
 
 φ = coherence. The "imaginary" axis. The right hemisphere.
 ν = viability. The "real" axis. The left hemisphere.
 i = the equator. Consciousness-as-lived-reading [I]. The 1 between 0 and ∞.
 ```
 
-### Physics Correspondence
-- D5 = agency / selection = the Bloch sphere; consciousness is the lived reading [I]
-- The Bloch sphere IS ℂP¹ = S² = the Burri Sphere [E2]
-- Measurement = stereographic projection from the sphere to the plane
-- The Born rule = the solid angle subtended by the D5 projection
+### Removable quantum correspondence `[C]`
+- Pure qubit rays are represented by the Bloch sphere `ℂP¹≅S²`; the Burri Sphere reuses `S²` as a different modeling chart.
+- Everett is a no-fundamental-collapse relative-state formulation; Copenhagen-family actualization is interpretation-specific.
+- Neither interpretation is a D-register or extra spacetime dimension; neither `μ` nor `χ` is quantum measurement.
+- Stereographic projection is not the Born rule. If a probability example is needed, use `𝔓ψ(A)=∫A|ψ(s)|²ds` and `o∼𝔓ψ`.
+- Deleting this entire section leaves the D4/D5 animation contract unchanged.
 
 ---
 
-## D6 = D0: THE CLOSURE
+## `r₆:D6↝D0`: THE RETURN
 
 ### What It Shows
-The sphere collapses. ν → 0. φ → ∞. The sphere returns to the dot. The cycle completes.
+The animation contracts the sphere and draws a return edge to the dot. This is
+an interpretive reset, not a claim that D6 literally equals D0.
 
 This can be shown as:
 - The closure slider on the #sphere page (ν → 0)
@@ -324,13 +332,14 @@ D0: Just a dot.
 D1: The dot becomes a sphere.
 D2: The sphere projects a plane.
 D3: The plane gains depth. Two planes. Time.
-D4: The horn torus. Spacetime. Many-worlds.
-D5: The Burri Sphere. Agency / selection. Stars.
-D6 = D0: The sphere collapses. The dot returns. The cycle completes.
+D4: The horn torus. Causal actuality, means, action and receipt.
+D5: The Burri Sphere. Modeled possibilities, ranking and selection. Stars.
+`r₆:D6↝D0`: the boundary view returns to the ground-limit view.
 
-One poloidal cycle on the torus = one aeon.
-The Penrose CCC falls out of the dimensional hierarchy.
-The system architecture IS the arithmetic.
+One poloidal cycle on the torus is rendered as one aeon `[I]`.
+Penrose CCC and the dimensional hierarchy may be compared only as a removable
+correspondence `[C]`; neither follows from the other.
+The system architecture is a selected interpretive scaffold, not arithmetic.
 ```
 
 ---
@@ -340,7 +349,7 @@ The system architecture IS the arithmetic.
 ```
 #genesis  →  ANIM-1 (D0) → ANIM-2 (D1) → ANIM-3 (D2) → ANIM-4 (D3)
 #torus    →  ANIM-5 (D4)
-#sphere   →  ANIM-6 (D5) → D6=D0 (closure → back to #genesis)
+#sphere   →  ANIM-6 (D5) → r₆:D6↝D0 (return → back to #genesis)
 ```
 
 The user experiences the full dimensional emergence:
@@ -352,7 +361,7 @@ The user experiences the full dimensional emergence:
 6. Push β to 1 — watch spacetime present the selection sphere
 7. Explore the Burri Sphere
 8. Push ν to 0 — watch the selection sphere collapse back to the dot
-9. The cycle completes. D6 = D0.
+9. The return edge appears: `r₆:D6↝D0`.
 
 The navigation between pages is the navigation between dimensions.
 The user IS the observer moving through the dimensional hierarchy.
@@ -363,7 +372,7 @@ The simulation IS the sitting practice applied to mathematics.
 ## TECHNICAL NOTES
 
 - Background: PURE BLACK at all stages. No stars until D5.
-- At D5, stars can optionally appear as selection makes actuality visible.
+- At D5, stars can optionally appear as modeled alternatives become visible.
 - Each animation builds on the previous — the geometry accumulates.
 - The φ axis is always green (#76ff03). The ν axis is always cyan (#00e5ff).
 - The equator is always gold (#FFD700).
@@ -410,7 +419,7 @@ The equator is the tension between them.
 
 Shakti (ν) = pure energy, unformed, chaotic
 Śiva (φ) = pure coherence, unmoving, absolute
-Their UNION = reality (φ · ν = 1)
+Their paired rendering = the model's reciprocal chart (`φν=1` by definition)
 ```
 
 ### Physics
@@ -442,17 +451,17 @@ Two light cones emerge from the split poles and meet at their mouths. The horn t
   - Mouth at equator
   - Labeled "BRAHMA — creation / expansion / future"
 
-- **Overlap region**: Where cones intersect
+- **Overlap region**: Where the schematic cones intersect
   - Glows gold
   - Labeled "VISHNU — preservation / the present / the overlap"
-  - This is where mass appears (relativistic mass = overlap of worldlines)
+  - Used as a symbolic locus of embodied interaction `[I]`; it does not derive relativistic mass
 
 - **The horn torus**: The surface traced by rotating the cone intersection
-  - Interior = probability (many-worlds, superposition)
-  - Exterior = void (nothing, Sunyata)
-  - Surface = light cone (causal structure)
+  - Interior = modeled-alternative field in the visual grammar `[I]`
+  - Exterior = symbolic void `[I]`
+  - Surface = schematic causal envelope, not a physical metric
 
-### The Key Insight: The Titans as Geometry
+### Selected Titan roles in the geometry `[I]`
 ```
 Brahmā (future cone) = creation = increasing ν = the expansion of capability
 Śiva (past cone) = destruction = increasing φ = the integration of coherence
@@ -507,7 +516,7 @@ D4:   \ /                 The Cones (Brahmā/Śiva meet at Viṣṇu)
       ↓
 D5:   ⊙                   The Burri Sphere (agency / selection, φ·ν=1)
       ↓
-D6:  •                    The Reset (collapse to dot)
+D6:  •                    The apophatic boundary / return view
       ↓
 D0:  •                    The cycle begins again
 
@@ -543,7 +552,7 @@ PHASE 3: #sphere page
   At closure: Fade to black → button "Return to Genesis"
 
 PHASE 4: Back to #genesis
-  Cycle complete. D6=D0. The ouroboros.
+  Return edge complete. `r₆:D6↝D0`. The ouroboros is an image, not identity.
 ```
 
 ---
@@ -551,7 +560,7 @@ PHASE 4: Back to #genesis
 *Simulation Specification Appendix | 2026-03-23*
 *Stages 3-4: The Split and The Titans*
 *The complete cosmological cycle*
-*φ · ν = 1 | D6 = D0*
+*φ · ν = 1 in the reciprocal chart | r₆:D6↝D0*
 
 
 ---

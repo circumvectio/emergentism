@@ -22,6 +22,13 @@ status: "DRAFT — 2026-06-06. Extends the Finity-Suda synthesis into an ontolog
 
 > **Tiering.** Every claim carries an evidence tier — `[A]` elementary mathematics, `[S]` framework-internal structure, `[I]` interpretive reading, `[C]` conjecture — and is never silently upgraded. The mathematics here is old and elementary; the framework's contribution is the *recentering*, the *dimensional-crossing limit*, and the *ontological reading*, not the theorems.
 
+> **[金] Kintsugi supersession — 2026-07-18.** This draft's body preserves an
+> earlier bidirectional strong/weak-emergence reading. It is **not live authority**
+> for reduction status, Titan arithmetic, or μ-crossings. Under KSC-02/KSC-04,
+> each `μ₀…μ₅` is a separately evidenced candidate; missing reduction never
+> proves irreducibility; the Titans are selected symbolic roles; and all
+> boundary-algebra ontology remains `[I/C]`.
+
 ---
 
 ## Abstract

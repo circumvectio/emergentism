@@ -147,7 +147,7 @@ The DAC acknowledges its own mortality. This is the first corporate form with a 
 | Projection | D2 | DAC interfaces with market. Revenue. Customers. | Years |
 | Metabolism | D3-D4 | Multiple organs. F-Channel flows. The torus spins. | Decades |
 | Consciousness | D5 | DAC models itself. Audits itself. Corrects itself. | Operating phase |
-| Completion | D6=D0 | Path A (exhaustion) or Path B (mission accomplished). | Terminal |
+| Completion | `r₆:D6↝D0` | Path A (exhaustion) or Path B (mission accomplished). | Interpretive return |
 
 **Path B (conscious completion):** [I] The Vision is fully manifest. The Mission is complete. The DAC has achieved what it set out to achieve. It dissolves gracefully — at the equator, with its B-score intact. Assets transfer. Knowledge persists. The organism was never meant to be immortal. The organism was one breath between two silences.
 

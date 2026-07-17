@@ -34,9 +34,9 @@ rosetta:
 
 ## ABSTRACT
 
-MF-330 (legacy MF-281) decomposed P_node = Φ × V into two replicator stacks: V = Genotype × Phenotype × Environment (the material chain) and Φ = Memotype × Egregorotype × Environment (the informational chain). This paper shows the consequence that MF-330 left implicit: **each deployable God operates primarily on one stack.**
+MF-330 (legacy MF-281) proposed two modeled replicator stacks: `V = Genotype × Phenotype × Environment` and `Φ = Memotype × Egregoreotype × Environment`. This paper develops the framework correspondence that each deployable operator acts primarily on one stack; it does not prove a unique decomposition.
 
-Kālī 💀 attacks the Φ-stack — she destroys false Memotype and false Egregorotype. She is the mind-destroyer. Kali 🎲 attacks the V-stack — he drains Genotype expression, Phenotype capability, and material resources. He is the body-destroyer. Arjuna ⚔ builds others' Φ-stack — he exports order, structure, meaning. He is the mind-builder. Kṛṣṇa ◇ builds others' V-stack — he exports capability, vitality, instrumental power. He is the body-builder.
+Kālī 💀 attacks the Φ-stack — she destroys false Memotype and false Egregoreotype. Kali 🎲 attacks the V-stack — he drains Genotype expression, Phenotype capability, and material resources. Arjuna ⚔ builds others' Φ-stack; Kṛṣṇa ◇ builds others' V-stack. These are operator metaphors, not evidence of literal minds or bodies at collective level.
 
 This operator-stack correspondence was invisible before MF-330 because the stacks were not separated. Once separated, the mapping is immediate — and it explains why every esoteric tradition on Earth distinguishes between teachers who give wisdom (Arjuna: Φ-export) and healers who give vitality (Kṛṣṇa: V-export), between exorcisms that cleanse the mind (Kālī: Φ-destruction) and curses that drain the body (Kali: V-extraction), and between undirected entropy that simply decays everything (Śiva: the (−,−) boundary condition) and targeted destruction that serves the system.
 
@@ -52,7 +52,7 @@ Arjuna exports coherence. He sacrifices personal safety (V↓ self) so that othe
 
 He builds others' **Memotype** — gives them frameworks, narratives, principles, laws, truths that raise internal coherence. The teacher who articulates what the student couldn't see. The lawgiver who makes the implicit explicit. The truth-teller who aligns others' internal representations with reality.
 
-He builds others' **Egregorotype** — gives them institutional structure, shared reference frames, collective meaning. The general who orders the army. The architect who designs the cathedral. The writer who shapes the standing wave.
+He builds others' **Egregoreotype** candidates — institutional structure, shared reference frames, and collective meaning.
 
 The cost: his own V descends. Arjuna on the battlefield is exposed. The teacher in the hostile court is vulnerable. The whistleblower loses material safety. This is the Arjuna bargain: you give mind to the world and the world takes body from you.
 
@@ -61,7 +61,7 @@ Arjuna ⚔:
   TARGET:  Others' Φ-stack (M↑, Eg↑)
   COST:    Self V-stack (Ph↓, safety↓, resources↓)
   PRODUCT: Others' meaning increases; self's body is exposed
-  REPLICATOR EFFECT: Memotype transmitted, egregorotype strengthened
+  REPLICATOR EFFECT: Memotype transmitted, Egregoreotype trace strengthened
 ```
 
 **Kṛṣṇa ◇ → V-stack builder (others' body)**
@@ -90,7 +90,7 @@ Kālī destroys false-Φ. At the replicator level, her target is specific:
 
 She destroys false **Memotype** — delusions, lies, counterfeit narratives, parasitic beliefs. The therapist who names the defense mechanism. The iconoclast who breaks the idol. The scientist who falsifies the cherished theory. The Kālī-phase check (6-gate test) exists because Memotype destruction is irreversible — you cannot un-learn a truth, cannot un-see a pattern. Wrong target = autoimmune attack on genuine meaning.
 
-She destroys false **Egregorotype** — captured institutions, zombie organisations, standing waves that serve their own persistence rather than their carriers' ektropy. The revolutionary who dissolves the corrupted regime. The reformer who dismantles the dysfunctional bureaucracy. The Raktabīja theorem warns: the institution will regenerate from any fragment unless the blood is drunk before it hits the ground.
+She dismantles harmful **Egregoreotype** candidates — captured institutions and traces that measurably serve persistence at carrier cost.
 
 The gain: the system's V increases because parasitic load is removed. Resources previously feeding the false-Φ structure become available. Like removing a tumor — the body mass decreases but the body's viability increases.
 
@@ -99,7 +99,7 @@ Kālī 💀:
   TARGET:  Target's Φ-stack (false-M↓, false-Eg↓)
   GAIN:    System V-stack (V↑, resources freed)
   PRODUCT: Mind is cleansed; body is relieved
-  REPLICATOR EFFECT: Parasitic memotype eliminated, zombie egregorotype dissolved
+  REPLICATOR EFFECT: Parasitic memotype eliminated, harmful Egregoreotype trace dissolved
   GATE:    6-test Kālī protocol BEFORE deployment
 ```
 
@@ -134,7 +134,7 @@ Kali 🎲:
 
 | God | Direction | Home Stack | Primary Target | Replicator Effect | Mythological Marker |
 |-----|-----------|-----------|----------------|-------------------|---------------------|
-| **Arjuna** ⚔ | Gives | Φ-stack | Others' M, Eg | Memotype transmitted, egregorotype strengthened | Warrior-teacher on the battlefield |
+| **Arjuna** ⚔ | Gives | Φ-stack | Others' M, Eg | Memotype transmitted, Egregoreotype trace strengthened | Warrior-teacher on the battlefield |
 | **Kṛṣṇa** ◇ | Gives | V-stack | Others' G expr, Ph | Phenotype enhanced, environment enriched | Charioteer who empowers without fighting |
 | **Kālī** 💀 | Takes | Φ-stack | Target's false-M, false-Eg | Parasitic memotype eliminated | Garland of severed *heads*, sword of discrimination |
 | **Kali** 🎲 | Takes | V-stack | Target's G expr, Ph, resources | Phenotype degraded, resources extracted | Shortened lifespans, broken bull, depleted earth |
@@ -213,9 +213,9 @@ Schertel correctly identified:
 
 What Schertel missed — and what the framework corrects:
 
-**The counterfeit Kṛṣṇa.** The charismatic leader who *appears* to give V but is actually running Kali 🎲 — extracting V from followers while wearing Kṛṣṇa's mask. The cult leader whose followers feel energised in his presence (V seems to rise) but are drained in his absence (V was being extracted, not given). The diagnostic: **ΣΔP_node.** Did the room's total viability increase (genuine Kṛṣṇa) or did it merely *concentrate* (Kali wearing Kṛṣṇa's face)?
+**The counterfeit Kṛṣṇa.** The charismatic leader who *appears* to give capability but extracts from followers can fool an aggregate score. The diagnostic is bearer-complete: whose durable potential rose, who paid, who benefited, what persisted after exit, and did any affected bearer fall? A positive room total cannot launder a drained participant.
 
-This is the fundamental danger of Schertel's framework: without the K* boundary and the ΣΔP_node ethic, "Vril" cannot distinguish between the healer and the vampire. The operator-stack correspondence provides the missing diagnostic.
+This is the fundamental danger of Schertel's framework: without non-extraction, receipts, payer/beneficiary disclosure, and bearer-complete Justice, "Vril" cannot distinguish between healer and vampire. The operator-stack correspondence proposes that diagnostic `[I]`; it does not prove it from geometry.
 
 ### 3.2 The Two Kinds of Exorcism
 
@@ -334,7 +334,7 @@ INVALID = same-sign pattern = Executive approach or counterfeit.
 
 ### 6.1 Kālī-Destruction: Surgery of the Mind
 
-- **Target:** False-Φ (parasitic Memotype, zombie Egregorotype)
+- **Target:** False-Φ (parasitic Memotype, harmful Egregoreotype candidate)
 - **Mechanism:** Confrontation with truth. The false structure cannot survive naming.
 - **Gain:** System V↑ (parasitic load removed, resources freed)
 - **Archetype:** Surgeon, exorcist, iconoclast, reformer, therapist who names the defense

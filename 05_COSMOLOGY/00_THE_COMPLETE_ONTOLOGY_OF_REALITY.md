@@ -41,6 +41,20 @@ depends_on:
 **Evidence Tier:** As marked per section. The architecture is `[S]`. The ontological reading is `[I]`. The physics mappings are `[C]`.
 **Purpose:** A single document tracing the complete D0→D6 scaffold — each dimension, its μ-limit crossing, its dimensional manifestation of the trans-dimensional Titan grammar, its log-coordinate expression, its manifest content, and its Rosetta layer. The whole arc in one place.
 
+> **[金] Kintsugi supersession — 2026-07-18.** This document is preserved in
+> place for provenance. In the body below, every passage asserting a
+> forced/unique Titan triad, universal strong or irreducible `μ`, `Born rule =
+> φν`, Everett/Copenhagen as added dimensions or collapse as `μ`/`χ`, or
+> K2/founder status as metaphysical `D5→D4` agency is superseded by `KSC-02`,
+> `KSC-04`, `KSC-05`, and `KSC-06` in
+> `00_META/00_SETTLED_CANON_REGISTRY.md`. Those passages are
+> **not live authority**. Current semantic owners are
+> `05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md`,
+> `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md`,
+> `05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`,
+> `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md`, and
+> `00_THE_COMPASS.md`; they control wherever this preserved body differs.
+
 ---
 
 ## The Architecture in One Table
@@ -230,7 +244,7 @@ The fifth dimension. The φ-ν plane is open. The four operators are active. The
 
 The full sphere S² is active. `B` varies from 0 to 1 as the system navigates. The equator (`B = 1`, `φ = ν = 1`) is the point of maximum balance; it is an attractor only where agency, feedback, and correction convert imbalance into return. The poles (`B = 0`) are the extremes of pure coherence (north, φ → ∞, ν → 0) and pure viability (south, φ → 0, ν → ∞).
 
-> **[D] Scope (2026-07-03, staged for K2):** and even then it is the max-balance attractor for a real navigating system only insofar as that system sits on the sphere — factors conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); if the excess-cost is asymmetric or a factor is uncoupled the attractor shifts off the equator and specialisation can win. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** and even then it is the max-balance attractor for a real navigating system only insofar as that system sits on the sphere — factors conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); if the excess-cost is asymmetric or a factor is uncoupled the attractor shifts off the equator and specialisation can win. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 ### The Five Domains at D5
@@ -240,7 +254,7 @@ The φ-ν plane produces five navigable domains:
 2. **Governance** (ν-axis): Capability, resources, throughput
 3. **Exchange** (equator): Where φ = ν = 1, balance is maximised
 
-> **[D] Scope (2026-07-03, staged for K2):** this binds a real exchange node only insofar as it sits on the sphere — its two factors conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); off the sphere the equator is geometry without normative force, the balance-optimum tilts or flattens into a plateau, and a specialised exchange may dominate. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** this binds a real exchange node only insofar as it sits on the sphere — its two factors conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); off the sphere the equator is geometry without normative force, the balance-optimum tilts or flattens into a plateau, and a specialised exchange may dominate. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 4. **Attention** (selection): The operator that chooses which direction to move
 5. **Body** (the sphere itself): The grounded manifold on which all navigation occurs
@@ -257,7 +271,7 @@ D5 is agency / selection; consciousness is the lived-interior reading of that ag
 
 In the play rule, D5 contributes `Φ`: worldline-foresight, the capacity to hold possible futures before collapse and select among them responsibly. D4 contributes `V`: the embodied/tool/energy/access means through which the selected branch can actually be enacted. A child with a jet but no pilot-foresight has high apparent `V` but low effective `Φ`; an old pilot without bodily/tool access has high `Φ` for flight or escape but low effective `V`. Objective dharma appears when both factors can multiply without extraction.
 
-> **[D] Scope (2026-07-03, staged for K2):** this holds for a real node only where its factors sit on the sphere — conservation-coupled, complementary, and symmetrically costly-in-excess (γ-priced); where that transfer condition fails the balance-optimum is tilted rather than at Φ=V, and specialisation may be the objective good instead. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** this holds for a real node only where its factors sit on the sphere — conservation-coupled, complementary, and symmetrically costly-in-excess (γ-priced); where that transfer condition fails the balance-optimum is tilted rather than at Φ=V, and specialisation may be the objective good instead. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 ---
@@ -394,7 +408,7 @@ Zero-Sum Resolution Equation
 
 These four lines hold at every dimension. They are the manifold identity, the arithmetic consequence, the energetic floor, and the ethic — the same at D1 as at D5, the same in the log chart as on the sphere.
 
-> **[D] Scope (2026-07-03, staged for K2):** the fourth line reads as *the ethic* for a real system only where that system sits on the sphere — its factors conservation-coupled, complementary, and symmetrically costly-in-excess (γ-priced); absent that transfer condition φ+ν≥2 is a bare AM-GM floor with no normative force and the balance-optimum may tilt to a plateau where specialisation dominates. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** the fourth line reads as *the ethic* for a real system only where that system sits on the sphere — its factors conservation-coupled, complementary, and symmetrically costly-in-excess (γ-priced); absent that transfer condition φ+ν≥2 is a bare AM-GM floor with no normative force and the balance-optimum may tilt to a plateau where specialisation dominates. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 ### 2. The Titan Transformations `[I]`

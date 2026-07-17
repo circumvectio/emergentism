@@ -253,7 +253,11 @@ The DAC's K2 protocol (see [Doc 23 The DAC](23_THE_DAC.md)) is structurally a me
 
 ---
 
-*Written 2026-05-08. This document proposes a geometric reconciliation between Lamarck's directional phenomenology and Darwin's mechanism through the framework's F5 reading. Sexual selection is an empirical site where F5 may be read as visible behaviour at the D2-D4 substrate, with interpretive analogues at the D5 memetic/egregoric level. Companion to [Doc 36 The Dimensional Trophic Cascade](36_THE_DIMENSIONAL_TROPHIC_CASCADE.md): together they form an energetic + selective reading — Red Queen pressure supports continuous (φ × ν)-dominance, Lindeman attrition narrows the pyramid, sexual selection makes selection visible as choice, and decomposition closes D6 ≡ D0 inside the scaffold.*
+*Written 2026-05-08. This document proposes a conjectural geometric reading of
+sexual selection. Red Queen and Lindeman results retain their domain-native
+status; the F5, product-dominance, and D-register mappings remain `[I/C]`.
+Decomposition may illustrate the non-`μ` return image `r₆:D6↝D0`, but does not
+establish literal closure or a universal emergence law.*
 
 ---
 

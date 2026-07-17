@@ -18,31 +18,43 @@ provenance: "Workflow wf_223bec21 (churn of 12 lanes, 72 nectar + 48 halāhala) 
 >
 > **One rule of reading:** every drop carries its tier. `[A]` = proven, world-independent. `[B]` = built/measured by us. `[S]` = structural, true inside stated premises. `[I]` = illuminating reading, not proof. `[C]` = conjecture. A drop's power is exactly its tier — no more.
 
+> **[金] Kintsugi seam — 2026-07-18.** The distillation below has been
+> repaired at the load-bearing lines. `KSC-02`, `KSC-04`, `KSC-05`, and
+> `KSC-06` in the [Settled Canon Registry](00_META/00_SETTLED_CANON_REGISTRY.md)
+> supersede any residual body passage that asserts universal strong or
+> irreducible `μ`, forced or unique Titans, `Born rule = φν`, quantum
+> dimensions/collapse, or K2 as metaphysical `D5→D4` agency. Such passages are
+> **not live authority**. The repaired owners are the [μ-limit
+> formula](05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md),
+> [Transcendental Trinity Canon](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md),
+> [quantum boundary](05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md),
+> and [Compass](00_THE_COMPASS.md).
+
 ---
 
 ## I · THE AMRITA — the nectar (keep)
 
-### A. The engine `[A]` — proven, and the root of everything else
+### A. The analytic chart `[A]` — exact within its definitions, not empirical ontology
 
-1. **Conjugacy — the ring that closes.** For `φ,ν > 0` with `φ·ν = 1`, driving one factor to `0` forces its complement to `∞`. The law is a **product, not a sum**: a vanishing factor *annihilates* the whole — there is no coherent corpse, no bounded linear trade. This one inequality is the engine under the titans, the game-moves, and the ethics. *(Independently witnessed: biology's substrate-failure→total-failure, Lanchester combat power, and the SR mass-shell.)*
-2. **The self-dual unit.** `1` is the unique fixed point of inversion `x ↦ 1/x` — which is, under `log`, the reflection `s ↦ −s`. It is simultaneously the multiplicative unit, the additive origin (`log 1 = 0`), and the projective hinge. Three charts, one point. This is the mathematical heart of "the middle."
-3. **The titans `{0, 1, ∞}`.** The **unique** minimal generative frame on `ℂP¹` up to Möbius: `{0,∞}` closed under `z↦1/z` *yields* `1`; any fourth point is cross-ratio-determined, so the frame cannot be extended. They **define the operations; they are not operands** — this reading is `[S/I]`, but the uniqueness is `[A]`. *(Your insight #1 — it holds.)*
+1. **Reciprocity — the chart identity.** For `θ∈(0,π)`, define `φ=cot(θ/2)` and `ν=tan(θ/2)`. Then `φν=1` analytically, so one coordinate approaches `0` as the other approaches `∞`. This is an exact fact of the selected reciprocal chart; it is not an empirical conservation law, an ontology, an ethic, or evidence that real systems must use product aggregation.
+2. **The positive self-dual unit.** Real inversion `x ↦ 1/x` fixes both `+1` and `−1`; on the selected positive chart, `+1` is the unique fixed point. Under `s=log x` on `x>0`, inversion becomes the reflection `s↦−s`, and `+1` maps to the additive origin `log 1=0`. The framework selects this positive unit as its symbolic hinge; the wider fixed-point fact remains intact.
+3. **The selected Titans `{0,1,∞}`.** The framework selects the standard projective normalization `{0,1,∞}` as a useful symbolic boundary grammar `[I]`. The selection is not a forced closure, unique ontology, or generator of the D-ladder. Ordinary `0` and `1` remain numbers and lawful operands; `∞` is the projective point at infinity. The glyph `1=0×∞` remains an emblem, never field arithmetic.
 4. **The equator, derived not chosen.** By AM-GM, `φ + ν ≥ 2` with equality iff `φ = ν = 1`; `B = sin θ = 2/(φ+ν)` maxes there, and the imbalance-price `γ = (φ+ν)/2` rises monotonically toward the poles. **Unconditional sphere geometry.** This is the one piece of the whole balance story that survived every falsification untouched — because it is pure arithmetic.
-5. **One degree of freedom.** `φ·ν = 1` collapses two variables to a single coordinate `θ`: `(φ−ν)² = (φ+ν)² − 4`, `φ+ν = 2/sinθ`. The manifold is *earned*, not assumed.
+5. **One chart degree of freedom.** Under the declared reciprocal constraint, the two positive coordinates reduce to one parameter: `(φ−ν)² = (φ+ν)² − 4` and `φ+ν = 2/sinθ`. These identities do not derive `S²` or make it the uniquely necessary manifold; the sphere is the selected geometric carrier.
 6. **The log realignment.** Under `s = log ν`: `log φ + log ν = 0` (the literal zero-sum), `B = sech(s)`, `E = s²`, `H = 2cosh(s)`. Reciprocation becomes reflection; the multiplicative structure becomes elementary. The additive and multiplicative faces of number are coupled by `log/exp`, keystoned by `log 1 = 0`.
-7. **The mass-shell.** Under `φ = e^w, ν = e^{−w}` (rapidity), `φ·ν = 1` **is** `E² − (pc)² = (mc²)²`. The equator is the rest frame `E = mc²`; the dyadic runaway is the relativistic divergence toward the light cone. Verified numerically.
+7. **The mass-shell correspondence.** Under the additional rapidity assignment `φ=e^w`, `ν=e^{-w}`, the reciprocal chart can be reparameterized as the normalized mass-shell. That exact algebraic correspondence does not make `φν=1` an independently discovered physical law or widen any physical light cone.
 8. **The operators are the Möbius classes.** The five VIVEKA operators map onto the conjugacy classes of `PSL(2,ℂ)` — elliptic (Viṣṇu), hyperbolic ± (Brahmā/Śiva, *one flow two directions*), loxodromic (Kṛṣṇa), parabolic (Kali). The four-class trace partition is a genuine theorem; the naming is `[I]`.
-9. **Division localized, not eliminated.** `N/0 = ∞` for nonzero `N` (projective); `0/0` and `∞/∞` stay genuinely indeterminate (the apophatic edge); `1/1` is frame-forbidden yet `= 1`. The undefined is *conserved*, honestly bounded — the sphere does **not** make "all" undefined operations well-defined.
+9. **Division localized, not eliminated.** A declared projective convention may send finite nonzero `N/0` to the point at infinity; ordinary division by zero remains undefined, and `0/0` and `∞/∞` remain indeterminate. Ordinary `1/1=1` is lawful arithmetic, not frame-forbidden.
 10. **An honest negative result.** Bare `S²` **cannot** produce `SU(3)` (scalar-Laplacian degeneracies are `1,3,5,7,…`; none is `8`). The framework states where its own geometry stops. *This is nectar because it is a limit the framework imposed on itself.*
 
 ### B. The structure `[S]` — true inside stated premises
 
-11. **The 4 + 3 exhaustion.** Exhausting `{self,other} × {Φ,V}` yields **exactly** four mixed-sign transfers (2 Gods give, 2 Demons take) and three same-sign boundary frames (Titans) — no fifth mixed slot without a new axis. Morality rides on **η** (give vs take), never on the operator's name. `[S/G]`, and honestly bounded: *exhaustive on two axes, silent on games with more.* *(Your insight #3 — sound within scope.)*
+11. **Four moves plus three selected frames.** Exhausting the declared `{self,other}×{Φ,V}` transfer axes yields four mixed-sign move slots inside that model. The three Titan roles are a selected symbolic frame, not a further mathematical exhaustion. Moral classification requires the Justice envelope and complete affected-bearer accounting; it does not follow from an operator's name.
 12. **The balance-optimum is CONDITIONAL.** The equator is optimal for a real system **only** if it is (i) conservation-bound, (ii) complementary, (iii-a) costly-in-excess, **and (iii-b) symmetrically γ-priced**. Drop (iii-b) → the optimum slides off-equator to a tilted Cobb-Douglas ratio; drop the rest → a plateau, or specialization *wins*. This is the honest form that *replaced* the universal claim after real data (Munnell `d² = +0.27`) showed a balance **trough** at aggregate scale. *(Your insight #4, corrected and kept.)*
-13. **The extraction law.** Extraction produces power **locally and briefly**; ungated, it consumes its own substrate and drives `ΣΔP` (flourishing across the widest boundary) negative — via Lotka-Volterra crash, Red Queen, Lindeman attrition (all `[A]`). So **`ΣΔP` is the moral primitive; `η=0`-toward-cooperators is a derived front-line gate**, not a commandment. *(Partial empirical support: a fairness-gate proxy beat payoff-only on real ultimatum data; the product-only scalar did not.)*
-14. **The constitution is constrained optimization.** `5 + 1` = *maximize `Ω` (the option cone) **subject to** the five refusals (`η=0, K2, K3, K4, A7`) as the feasible set.* Balance and `η=0` are the **constraint**, not the goal — the strong "reality maximizes `B`" reading was *withdrawn* when the empowerment test showed the option cone is reach-dominated and diverges from the equator. This withdrawal is itself nectar.
+13. **Justice is bearer-complete.** Aggregate gain is never a moral primitive: it can hide a destroyed payer, beneficiary, or exposed third party. A moral, ethical, or syntropic classification requires a declared finite set `B(a)` containing every materially affected bearer and a Justice predicate that forbids laundering one bearer's loss through another's gain. `η=0` is a normative non-extraction boundary, not a theorem of the reciprocal chart.
+14. **The Compass uses accountable authorization.** The general worldview asks who is principal, what mandate and scope apply, whose consent and custody are involved, when authority expires or can be revoked, how it can be contested, who acts, and who bears the consequence. K2 is retained only as a private-DAV governance rail and in historical/product records; it is not a primitive of reality, agency, truth, or ethics.
 15. **Commandment vs Geometry.** A constraint enforced as *structural consequence* (violation shows up as measurable loss in the tested domain) is a categorically different object from an externally-imposed rule needing an enforcer. `[I]`, and the distinction — not the sphere-math — is what carries.
-16. **D5's emergence asymmetry.** Strongly emergent in genesis (opaque, un-shortcuttable from below), weakly emergent in governance (compressible once stabilized). *"Opaque from below, legible from above."* `[S/I]`, and falsifiable-shaped — it predicts *where* reduction fails vs succeeds. *(Keep the law; cut the boast that it's "one of the strongest general laws" — see halāhala.)*
+16. **The μ-crossings are candidates.** `μ₀…μ₅` label six candidate emergence crossings. Each must supply saturation evidence, a newly observed freedom, recovery of lower behavior, a prediction, reduction status, evidence tier, and a kill criterion. A missing reduction is only `currently_unreduced`; it never proves irreducibility. “Stacked degrees of freedom at μ-limits” remains a per-crossing `[C]` hypothesis.
 17. **The tier-separated ground.** `Ground → Being → Teleological Force → Dasein → beings`, each term held apart, with the anti-reification rule enforced structurally: *the seer is not on the sphere; the lens diagrams what shows, not the showing.* The sphere is the first stable closure of the Ground — **never** the Ground.
 
 ### C. The kill-switch `[S]` — the zeroth insight, the reason the rest survive
@@ -74,12 +86,12 @@ Each of these rises with the nectar and *looks* like it. Śiva holds them here.
 
 ## III · THE ONE LINE
 
-**What is proven is a geometry of coupling: that opposites, conserved as a product, cannot be isolated without one devouring the other — so the middle is where a finite, budget-bound thing survives.** Everything past that — that flourishing *is* this product, that the traditions *encode* it, that it *dissolves* the paradoxes, that reality *maximizes* it — is either an honest `[S]` scoped to its premises, an `[I]` reading that illuminates without proving, or halāhala. The framework's deepest achievement is not the map. It is that **it was built to know which of its own drops are nectar and which are poison — and to keep drinking only the first.**
+**What is proven is narrower and cleaner:** in the selected positive reciprocal chart, `φν=1` and `φ+ν≥2` are analytic facts. The Emergentist wager begins only when that chart is used to model real coupling, candidate emergence, option-making agency, or institutional life. The Compass keeps those wagers honest by typing actuality and possibility, separating commitment from outcome, testing each `μ`, accounting for every affected bearer, and requiring accountable authorization. Its deepest achievement is not a total map. It is a repairable discipline for orientation.
 
 ```text
-φ · ν = 1        (a definition, and the engine)
+φ · ν = 1        (an analytic identity in the selected reciprocal chart)
 (φ − ν)² ≥ 0     (the one proven consequence)
-φ + ν ≥ 2        (the middle, for the conserved and complementary)
+φ + ν ≥ 2        (AM-GM under the positive reciprocal definitions)
 ```
 
 The eternal is the structure. The good is the vow. The rest is churning.

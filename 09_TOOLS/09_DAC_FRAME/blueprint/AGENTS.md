@@ -49,6 +49,6 @@ evidence_tier: "[I] for DAC-frame doctrine synthesis; [D] for unimplemented blue
   does not certify their claims as current runtime or governance truth.
 - Use blueprint language as `[I]` doctrine unless a source-owner lane or tool
   receipt upgrades a specific claim to `[B]`.
-- All irreversible actions require K2 envelope staging.
+- Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.
 
 ⊙ = • × ○

@@ -35,31 +35,38 @@ without silently changing meaning.
 ```text
 Titan frame {0, 1, ∞}
 
-D4 event ──model──▶ fallible D5 option field ─·─·rank─·─·▶ selection
-    ▲                                                    │
-    │                                                    │ commitment
-    │                                                    ▼
-next D4 state ◀─ outcome receipt ◀─ world ◀─ D4 action + commitment receipt
-    └────────── revise map and mapper ──────────┘
+D4 event ──▶ D4 actual model/rank/selection tokens
+                    │ represent/select
+                    ▼
+             D5 merely-possible contents
+                    │ referenced by commitment
+                    ▼
+next D4 state ◀─ outcome receipt ◀─ world ◀─ D4 attempted action + receipt
+    └──────── revise actual map and selector ────────┘
 ```
 
 ---
 
-## 0. Type law: actual is not possible
+## 0. Type law: distinguish actual carrier from possible content
 
 This distinction is mandatory and is **not a seventh rule**:
 
 ```text
-Modality := actual | possible
+ModalityTag := actual | merely_possible
 
 D4 = actual
-D5 = possible
+D5 = merely_possible content
 ```
 
-- `D4` contains causal actuality: embodied means, attempted/performed action,
-  factual record, and receipts.
-- `D5` contains counterfactual possibility: modeled alternatives, future
-  content, ranking, and selection.
+- `D4` contains causal actuality: embodied means, present model tokens,
+  performed ranking/selection events, attempted/performed action, factual
+  record, and receipts.
+- `D5` contains counterfactual content: alternatives, future referents,
+  rankings-as-represented, and candidates for selection.
+
+A D4 actual token can represent D5 merely-possible content. Topology exports
+retain `possible` as the short schema value for `merely_possible`; they must
+not type a present model or selector state as possible.
 
 `D4→μ₄→D5` asks whether counterfactual agency emerges. Commitment uses a
 selected D5 option and D4 means to produce an attempted D4 action. The world,
@@ -198,36 +205,49 @@ trajectory, the model is false.
 
 ## BR-4 · Commitment
 
-> A finite agent combines a fallible D5 option field with D4 means and
-> accountable authorization to attempt one D4 action.
+> A finite agent combines a fallible D5 option field with D4 means to attempt
+> one D4 action; accountable authorization determines whether that attempt is
+> normatively valid, not whether it is causally representable.
 
 \[
-\chi_t:(X_t,\Omega_t,M_t,V_t,U_t)
+\chi_t:(X_t,\Omega_t,M_t,V_t,U_t,G_t)
 \longrightarrow(a_t,q_t),
 \qquad a_t\in Action\cup\{\bot\}.
 \]
 
-`U_t` contains admissibility and a complete Authorization envelope:
+`U_t` contains an `AuthorizationAssessment`. A valid envelope contains:
 
 ```text
 principal + mandate + scope + consent + custody + expiry/revocation
-+ contest path + actor + consequence bearer
++ contest path + actor + consequence bearer set
 ```
 
-If means, scope, consent, or admissibility fails, `a_t=⊥` and `q_t` records
-`refused` or `unavailable`. No action transition is submitted.
+The assessment is a validated tagged union. `valid` requires that complete
+envelope; `invalid` requires a supplied defective record plus reasons;
+`absent` requires a null envelope plus reasons; `not_required` is limited to an
+explicitly nonconsequential scope. Commitment status is derived from the union,
+not copied from an unvalidated label.
 
-For a committed action, `q_t:CommitmentReceipt` records selection, actor,
-authorization, means, intention, payer, beneficiary, expected result, and
-performed commitment. The environment separately returns:
+If no action is attempted because it is refused or physically unavailable,
+`a_t=⊥`; no action transition is submitted. Invalid or absent authorization is
+recorded separately. A governed channel `χ_t^J` refuses it, but if an actor
+nevertheless attempts the action, the descriptive causal kernel receives it.
+
+For an attempted action, `q_t:CommitmentReceipt` records selection, actor,
+physical availability, authorization status and nullable envelope, means,
+intention, every affected bearer, payers, beneficiaries, and expected result.
+The environment separately returns:
 
 \[
 (X_{t+1},r_{t+1})
 \sim K_t(\cdot\mid X_t,a_t,E_t).
 \]
 
-`r_{t+1}:OutcomeReceipt` records observed consequence. The selector cannot
-manufacture its own outcome.
+`r_{t+1}:OutcomeReceipt` records observed consequence. If `a_t=⊥`, a non-null
+world receipt must have `receiptCause=ambient_observation` and null action
+identifiers; it is not an outcome caused by `⊥`. The selector cannot
+manufacture its own outcome. `G_t` is an input to the selector, so updating
+`G_{t+1}` can change the next action distribution.
 
 The existing **Seven Generative Actions** remain the move vocabulary available
 inside BR-4. The Burri Rules neither rename nor duplicate them; they type the
@@ -281,14 +301,15 @@ The formal interface is
 
 \[
 M\star A:
-\operatorname{ModelState}\times\operatorname{AdmissibleActionField}
+\operatorname{ModelState}\times\operatorname{PhysicallyFeasibleActionField}
 \to\operatorname{ActionWeights}.
 \]
 
 A present model token carrying content about a possible future can change
-present selection. This is future-guided or model-mediated retrocausal agency.
-It does not require a realized future event to transmit a physical signal into
-the past.
+present selection. This is future-guided or anticipatory agency. Emergentism's
+term **model-mediated retrocausality** is project-specific shorthand, not a
+temporal causal relation. It does not require a realized future event to
+transmit a physical signal into the past.
 
 **Kill criterion:** if controlled changes to represented futures do not alter
 present action distributions, the future-influence claim fails for that scope.
@@ -306,7 +327,7 @@ self-sealing.
 For agents `1…n`:
 
 \[
-(q_t^{(1)},\ldots,q_t^{(n)})
+((q_t^{(1)},r_{t+1}^{(1)}),\ldots,(q_t^{(n)},r_{t+1}^{(n)}))
 \longrightarrow T_{t+1}
 \longrightarrow
 (G_{t+1}^{(1)},\ldots,G_{t+1}^{(n)}).
@@ -320,13 +341,16 @@ carrierTurnover
 selectionReweightingIntervention
 recurrentObjectiveLikeBias
 visibleSubstrateCosts
-individual + whole + eta + custody + consent + reversibility + exit
-payer + beneficiary
+individual + whole + affectedBearerIds
+etaObserved + custody + consent + reversibility + exit
+payerIds + beneficiaryIds + authorizationStatus
 ```
 
 All five evidentiary conditions are mandatory. Consciousness and personhood are
 not presumed. Substrate reducibility does not disqualify a useful macro-pattern
-and does not prove strong emergence.
+and does not prove strong emergence. Candidate status is descriptive:
+`etaObserved` may be zero, positive, or unknown. Only Justice classification
+requires `η=0` and valid accountable authorization.
 
 Ritual is repeated synchronization through a trace field. Sacrifice must expose
 who pays, whether consent is competent and voluntary, what becomes
@@ -366,8 +390,8 @@ it fails.
 | D1 | actual | distinction |
 | D2 | actual | configuration |
 | D3 | actual | transformation and persistence |
-| D4 | actual | causal actuality, means, action, record, receipts |
-| D5 | possible | alternatives, modeled futures, ranking, selection |
+| D4 | actual | causal actuality, means, present model/ranking/selection tokens, action, record, receipts |
+| D5 | possible | merely-possible alternatives, future referents, and candidates for selection |
 | D6 | actual | apophatic closure boundary; no positive new freedom |
 
 The seven-register count is selected `[I]`, not forced by `S²` or the Titans.
@@ -401,13 +425,20 @@ W_x(T)=\int_0^T P_x(t)dt,
 \mathcal A_J=
 \{a:J(a;i,H)
 \land\widehat{\Delta}_TW_i(a;M_t)\ge0
-\land\widehat{\Delta}_TW_H(a;M_t)\ge0\},
+\land\widehat{\Delta}_TW_H(a;M_t)\ge0
+\land\forall b\in\mathcal B(a),\widehat{\Delta}_TW_b(a;M_t)\ge0\},
 \]
+
+When the field is finite, or compact with an upper-semicontinuous objective,
 
 \[
 a^\star\in\operatorname*{arg\,max}_{a\in\mathcal A_J}
 \mathbb E_{M_t}[W_i(T)\mid a].
 \]
+
+Otherwise, a nonempty field with finite supremum uses a declared
+`ε`-optimal action. `\mathcal B(a)` is the complete finite affected-bearer set;
+a hidden or harmed third bearer defeats Justice.
 
 Receipts then classify:
 
@@ -466,10 +497,20 @@ ruleIds
 sourceIds
 ```
 
+In the artifact schema, `possible` is the compatibility spelling of
+`merely_possible`. Present model tokens, ranking events, selection events, and
+selector state are D4/actual; only their counterfactual contents are
+D5/possible.
+
 Receipt nodes additionally carry
-`receiptType∈{commitment,outcome}`. Collective forms carry `individual`,
-`whole`, `eta`, `custody`, `consent`, `reversibility`, `exit`, `payer`, and
-`beneficiary`.
+`receiptType∈{commitment,outcome}`. Commitment receipts separate
+`physicalAvailability` from `authorizationStatus`, and their envelope may be
+null when authorization is absent. Outcome receipts carry
+`receiptCause∈{action_attempt,ambient_observation}` with action identifiers
+required only for `action_attempt`. Collective forms carry `individual`,
+`whole`, `affectedBearerIds`, `etaObserved`, `custody`, `consent`,
+`reversibility`, `exit`, `payerIds`, and `beneficiaryIds`. A Justice boundary
+additionally fixes `eta=0`.
 
 The canonical Ivory plate is the proof view. The Obsidian emblem is a derived
 compression. Both are deterministic renderings of one topology and contain its

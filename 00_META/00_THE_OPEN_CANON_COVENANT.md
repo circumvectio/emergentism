@@ -19,6 +19,15 @@ parents:
 > the second's closed cousin, the CTMU. **The tautology is the frame. It is never
 > the content. Ratification records at tier; it does not make things true.**
 
+> **[金] Closure and modality supersession — 2026-07-18.** The live scaffold no
+> longer asserts `D6≡D0`. It draws one interpretive, non-μ return edge
+> `r₆:D6↝D0`; D6 opens no positive freedom. D4 is causal actuality and D5 is
+> merely-possible counterfactual content; actual model tokens, ranking events,
+> and selection events remain D4 carriers. Conflicting identity, collapse, or
+> Many-Worlds dimensional formulas below are historical record, not live
+> authority. See [Dimensional Closure](../05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md)
+> and [D4/D5 Canonical Reference](../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md).
+
 ## 1. The recognition — the frame is tautological (and this is old and deep)
 
 That reality is self-referential at its base — closed under its own consistency,
@@ -30,39 +39,33 @@ novelty:
 - **Langan (CTMU)** — reality as a self-configuring self-processing language; logic
   not imposed on reality but reality recognising its own consistency.
 - **Spinoza** (*causa sui*), **Tegmark** (reality *is* a mathematical structure),
-  and this canon's own alphabet: **D6 ≡ D0** (the loop closes on itself),
+  and this canon's own alphabet: **`r₆:D6↝D0`** (the selected return-image),
   `⊙ = • × ○`, `φ·ν = 1` (an identity, closed on itself).
 
 At the level of the **frame** — the sphere, the loop, the self-consistency
 condition for anything existing at all — reality is a tautology. `[I]`, and
 profound. Honour it fully.
 
-> **[金] SEAM** · broke: 2026-07-12 · receipt 110 (formal-logic audit) · crack:
-> §1's parenthetical listed `D6≡D0`, `⊙ = • × ○`, and `φ·ν = 1` as parallel
+> **[金] SEAM — superseded 2026-07-18** · broke: 2026-07-12 · receipt 110
+> (formal-logic audit) · crack: §1's parenthetical listed `D6≡D0`,
+> `⊙ = • × ○`, and `φ·ν = 1` as parallel
 > examples of "self-reference at the base" — but these are **epistemically
 > heterogeneous**, and lumping them risks re-laundering the very distinction this
 > covenant defends. `φ·ν = 1` is an **analytic identity** (cot·tan ≡ 1, the empty
-> kind C2 convicted). `D6≡D0` is a **reflexivity / fixed-point thesis** —
-> substantive, falsifiable content that could be wrong (the topology could be
-> acyclic, or cyclic with a different period). `⊙ = • × ○` is a **definition /
-> typing**. Calling all three "tautological" shelters D6≡D0 behind the empty
-> kind — *the CTMU move, one level down*. · gold: the frame/content line is now
-> drawn *through* the frame, not at it; D6≡D0 keeps its status as substantive
-> content that must earn its keep, and the laundering move cannot smuggle it past
-> §2's conviction · credit: formal-logic audit (this session) · receipt:
-> `11_UPLINK/50_AUDITS_AND_EXECUTIONS/110_…`
+> kind C2 convicted). The 2026-07-18 repair goes further: literal `D6≡D0` is
+> withdrawn rather than retained as a fixed-point thesis. `r₆:D6↝D0` is a
+> selected interpretive topology, while `⊙ = • × ○` is a frame-register
+> definition. · gold: identity, definition, and interpretive return are now
+> separately typed; none can borrow the analytic identity's certainty · credit:
+> formal-logic audit (receipt 110) + Kintsugi continuation.
 
-**The frame is not uniform.** The three symbols above are not all tautologies in
-the same sense. `φ·ν = 1` is an **analytic identity** — empty in the Wittgenstein
-sense §2 polices, the kind C2 convicted of laundering. `D6≡D0` is a **reflexivity
-or fixed-point thesis** — substantive, falsifiable, could be wrong (reality could
-be acyclic; the topology could have a different period). `⊙ = • × ○` is a
-**definitional typing**. The frame/content line this covenant defends runs
-*through* the frame, not at it: the reflexivity thesis is content-about-the-frame,
-and it stands or falls with whether a self-grounding reality beats a brute-fact
-one. Calling all three "the frame is tautological" would shelter D6≡D0 behind the
-empty kind — the CTMU move, one level down. The discipline of §2 applies to
-`φ·ν = 1` as an identity; the discipline of A7 applies to `D6≡D0` as a thesis.
+**The frame is not uniform.** `φ·ν = 1` is an **analytic identity** on the
+declared open chart; `⊙ = • × ○` is a **frame-register definition**; and
+`r₆:D6↝D0` is a selected **interpretive return edge**. The edge could be useless
+or misleading and therefore keeps an `[I]` tier and kill criteria. It is neither
+literal equality nor evidence that reality is cyclic. The frame/content line
+this covenant defends runs through the frame: analytic truth cannot upgrade the
+interpretive topology.
 
 ## 2. The fence — a tautology says nothing (this is where CTMU falls)
 
@@ -116,8 +119,9 @@ map.**
 3. **No closure claim.** This canon may never assert it is complete, finished, or
    *is* the tautology of reality. Receipt 107 already settled this: the loop is
    constitutively open; no description of reality closes (Gödel/Tarski, given
-   expressiveness — see the Gödel clarification doc's condition-statement), though
-   reality closes in the living (D6≡D0). A canon that claims to have closed has
+   expressiveness — see the Gödel clarification doc's condition-statement), while
+   the scaffold may depict renewed contact through `r₆:D6↝D0`. A canon that
+   claims to have closed has
    become CTMU.
 4. **The unfalsifiability-shield is forbidden.** "We are tautological, so we cannot
    be wrong" may never be used to deflect a falsification. That sentence is the
@@ -133,7 +137,8 @@ Committed **at honest tier** under §4, this session's staged corpus enters cano
   strong/weak signature (106), the open loop (107), the tier-vocabulary crosswalk.
 - **Competence-edge conjecture — ratified AS conjecture, `[C]`, tier held, owes
   external physics review**: 07A (F5 unbundled; the no-fifth-force *prediction*),
-  PD_22A (QM/GR three-level: D3 state / D4 collapse / D5 many-worlds). These are
+  PD_22A (historical quantum correspondence, now non-load-bearing and removable;
+  no D4 collapse / D5 Many-Worlds dimensional stacking). These are
   *canonically-recorded conjectures* — recorded because they are honest and
   fenced, **not** promoted to settled. A physicist may still refute them without
   touching a countersign.

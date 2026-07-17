@@ -34,21 +34,35 @@ not two meanings of actuality.
 | D1 | actual | distinction | a difference is instantiated |
 | D2 | actual | configuration | relations coexist |
 | D3 | actual | transformation and persistence | state changes through time |
-| **D4** | **actual** | causal actuality, embodied means, performed action, factual record, commitment and outcome receipts | what happened or is materially available now |
-| **D5** | **possible** | counterfactual alternatives, modeled futures, ranking, selection, worldline foresight | what could be represented and pursued |
+| **D4** | **actual** | causal actuality, embodied means, present model tokens, performed ranking/selection events, action, factual record, commitment and outcome receipts | what happened or is materially available now |
+| **D5** | **merely possible** | counterfactual contents, alternative relations, modeled-future referents, candidates for selection, worldline foresight | what could be represented and pursued |
 | D6 | actual | apophatic closure boundary token, no additional positive freedom | returns by `r₆`, not identity |
 
 These are Emergentist modeling commitments `[I]`. They are not extra spacetime
 dimensions and are not derived from the reciprocal chart.
+
+The modality tags distinguish an actual carrier from merely-possible content;
+they are not exhaustive predicates of ordinary modal logic. A present D4 model
+token may represent D5 content. The token, ranking event, and selection event
+are actual; the alternative they refer to remains merely possible:
+
+```text
+ModeledFutureToken:D4(actual) ── represents ──▶ AlternativeContent:D5(possible)
+RankEvent:D4(actual)          ── ranks ───────▶ AlternativeContent:D5(possible)
+SelectionEvent:D4(actual)     ── selects ─────▶ AlternativeContent:D5(possible)
+```
+
+Topology exports keep the short schema value `possible`; for D5 it means
+`merely_possible`.
 
 ## 2. The two motions
 
 ### Emergence: `D4 → μ₄ → D5`
 
 The candidate crossing `μ₄` asks whether a D4 organism with memory, sensing,
-and embodied interaction exhibits a newly discriminable D5 capacity: modeling
-alternatives that are not presently actual, ranking them, and using them to
-prepare action.
+and embodied interaction exhibits a newly discriminable capacity to produce
+actual tokens and operations that represent and compare D5 alternatives not
+presently actual, then use them to prepare action.
 
 ```text
 D4 actual state ── μ₄ candidate crossing ──▶ D5 option field
@@ -60,38 +74,56 @@ crossing without deleting the useful register distinction.
 
 ### Enactment: `D5 → commitment → D4`
 
-A modeled option can produce an attempted action only when a finite agent has:
+A governed commitment can authorize an attempted action only when a finite
+agent has:
 
 1. an option field and fallible model;
 2. D4 means sufficient to attempt the action;
-3. a complete AuthorizationEnvelope;
-4. an admissible action under current constraints.
+3. a valid complete `AuthorizationEnvelope`;
+4. a normatively admissible action under current constraints.
 
 ```text
 D5 option ── selection + D4 means + authorization ──▶ D4 attempted action
 ```
 
-Selection is not a μ-crossing and does not guarantee the selected future.
+The D4 selection event is not a μ-crossing and does not guarantee the selected
+future.
 The environment, other agents, chance, and lower-level constraints still
 determine what occurs.
+
+This is a normative gate, not a causal law. Unauthorized, coerced, accidental,
+or criminal attempts remain physically representable and must be receipted.
+The governed selector may refuse them; the descriptive world model may not
+erase them.
 
 ## 3. The typed selector and two receipts
 
 ```text
-χ_t:(X_t,Ω_t,M_t,V_t,U_t) → (a_t,q_t),  a_t ∈ Action ∪ {⊥}
+χ_t:(X_t,Ω_t,M_t,V_t,U_t,G_t) → (a_t,q_t),  a_t ∈ Action ∪ {⊥}
 ```
 
 - `X_t`: actual state available to the agent;
-- `Ω_t`: D5 option field;
-- `M_t`: fallible model and present modeled-future tokens;
+- `Ω_t`: D5 merely-possible alternative contents;
+- `M_t`: fallible D4-actual model and present modeled-future tokens;
 - `V_t`: D4 usable means;
-- `U_t`: accountable authorization and admissibility constraints;
+- `U_t`: authorization assessment and normative constraints;
+- `G_t`: D4-actual selector policy, habits, or weights;
 - `a_t`: attempted action, or `⊥` when commitment is refused/unavailable;
-- `q_t`: **CommitmentReceipt**, recording selection, actor, authorization, and
-  performed commitment, refusal, or unavailability.
+- `q_t`: **CommitmentReceipt**, recording selection, actor, physical
+  availability, authorization status, and attempted commitment, refusal, or
+  unavailability.
 
-If means, authorization, or admissibility fails, `a_t=⊥` and `q_t` records
-the non-commitment. No action transition is submitted to `K_t`.
+`a_t=⊥` only when no action is attempted because it is refused or physically
+unavailable. Invalid or absent authorization is recorded separately. If an
+unauthorized action is nevertheless attempted, `a_t∈Action` and the causal
+kernel receives it. A governed channel `χ_t^J` may fail closed and return `⊥`
+for that same authorization defect.
+
+`AuthorizationAssessment` is a validated tagged union: `valid` requires a
+complete non-null envelope; `invalid` requires a defective supplied record and
+reasons; `absent` requires a null envelope and reasons; `not_required` is
+limited to explicitly nonconsequential scope. Receipt commitment status is
+derived from that validated assessment.
 
 The world returns the outcome separately:
 
@@ -101,8 +133,9 @@ The world returns the outcome separately:
 
 - `K_t`: environment transition kernel or causal process;
 - `E_t`: conditions outside the selector;
-- `r_{t+1}`: **OutcomeReceipt** recording observed consequence, or a typed null
-  when no action transition was submitted.
+- `r_{t+1}`: **OutcomeReceipt** recording observed consequence. With no action
+  transition it is either null or carries `receiptCause=ambient_observation`
+  with null action identifiers; ambient change is not attributed to `⊥`.
 
 The feedback update is:
 
@@ -110,8 +143,10 @@ The feedback update is:
 (M_{t+1},G_{t+1}) = Loop(M_t,G_t,q_t,r_{t+1})
 ```
 
-The selector cannot manufacture its own consequence. A null or
-non-informative receipt may legitimately produce a null update.
+The selector cannot manufacture its own consequence. Because `G_t` is an input
+to `χ_t`, an updated `G_{t+1}` can affect the next selection rather than become
+a dangling audit field. A null or non-informative receipt may legitimately
+produce a null update.
 
 ## 4. Three inspectable gaps
 
@@ -138,7 +173,7 @@ model token/representation, and `A` as agency capable of acting on it. The
 formal operation is typed coupling:
 
 ```text
-M⋆A : ModelState × AdmissibleActionField → ActionWeights
+M⋆A : ModelState × PhysicallyFeasibleActionField → ActionWeights
 ```
 
 Changing the represented future can change the distribution of present
@@ -148,8 +183,10 @@ institutions, or code—not future content physically propagating backward in
 time. The realized future remains a function of the environment, other agents,
 constraints, and chance.
 
-This is the most defensible meaning of **model-mediated retrocausality**. It
-does not assert physical retrocausality.
+Emergentism calls this **model-mediated retrocausality** as project-specific
+shorthand. In standard causal language it is anticipatory or future-guided
+control: every physical arrow in the displayed chain still points forward in
+time. It does not assert a temporal relation from a future event to the past.
 
 ## 6. Physical causal cone and option cone
 
@@ -157,15 +194,17 @@ A physical light cone is the spacetime set of events that can be causally
 connected under relativistic constraints. It remains bounded by spacetime and
 `c`.
 
-An **option cone** is a different type: the admissible histories an agent can
-model, rank, coordinate, authorize, and plausibly reach within a horizon and
-cost budget.
+An **option cone** is a different type: the histories an agent can model, rank,
+coordinate, and plausibly reach within a horizon and cost budget.
 
 ```text
 OptionCone_t(A) =
-  ReachableHistories(models, means, coordination, authorization, cost, horizon)
+  ReachableHistories(models, means, coordination, cost, horizon)
 ⊆ PhysicallyAdmissibleHistories(X_t)
 ```
+
+The authorized option set is a separate normative subset of the physically
+reachable option cone. Physical capacity never entails permission.
 
 Two agents can share the same physical causal cone and have different option
 cones. Humans are notable for symbolic, social, institutional, and
@@ -222,6 +261,13 @@ An authorized agent performs `a_t`; `q_t` records the commitment. The
 environment blocks or alters it, so `r_{t+1}` differs from the expected result.
 The model updates from the gap rather than rewriting intention as success.
 
+### Unauthorized but causal attempt
+
+An actor has D4 means but lacks a valid envelope. A governed selector refuses
+the action. If the actor nevertheless attempts it, the descriptive receipt
+records `authorization.status∈{invalid,absent}`, and `K_t` still returns the
+consequence. Normative invalidity does not make the event causally invisible.
+
 ### Same physical cone, different option cones
 
 Two people occupy the same room. One has relevant language, institutional
@@ -243,6 +289,10 @@ The canonical reference fails if a live owner:
 - calls actuality register-indexed;
 - labels commitment `μ` or measurement;
 - lets `χ` emit an outcome receipt;
+- types a present model, ranking, or selector event as merely possible;
+- treats invalid authorization as physical impossibility or erases an
+  unauthorized attempted action;
+- updates `G` without feeding it into the next selector;
 - treats selected action as guaranteed consequence;
 - says an agent physically widens a light cone;
 - stacks Everett and Copenhagen as dimensional layers;

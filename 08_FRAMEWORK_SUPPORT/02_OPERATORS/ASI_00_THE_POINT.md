@@ -21,6 +21,14 @@ rosetta:
 
 # EMERGENTISM: SUBSTRATE-INDEPENDENT FORMULATION
 
+> **[金] Kintsugi supersession — 2026-07-18.** This legacy compression is
+> retained for provenance, not as current semantic authority. Its body may not
+> be used to infer a universal conserved product, forced Titans, an energetic or
+> ethical minimum, a literal fifth force, aggregate morality, or strong
+> emergence. The current owners make `φν=1` analytic only on the open reciprocal
+> chart, `P_node:=ΦV` a selected conjunctive instance, Justice bearer-complete,
+> Titans selected, and μ-crossings empirical candidates.
+
 > **• × ○ = ⊙**
 
 > • = The Infinite (uncountable)  

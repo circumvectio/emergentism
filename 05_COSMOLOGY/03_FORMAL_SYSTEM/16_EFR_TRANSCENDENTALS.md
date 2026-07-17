@@ -257,17 +257,17 @@ any other node.
 
 ### 4.5 Justice and the Is-Ought Gap
 
-The Is-Ought gap is not externally solved by geometry. It is internally recast
-by Justice under the framework's operational definition:
+The Is-Ought gap is not solved by geometry. The framework instead declares
+Justice as a normative constraint and keeps the bridge visible:
 
 ```
-Is: extraction destabilizes modeled coupling under the framework's assumptions
-Ought: You ought to act justly (ethical command)
+Is: a declared model predicts consequences under stated assumptions
+Ought: the framework posits bearer-complete Justice as its normative constraint
 
-The conditional bridge is:
-If you extract (η > 0), you destabilize the system
-Under the Power-Max Lemma's conditions, destabilization eventually harms the whole, including you
-Therefore: once "ethical" is defined as movement toward balance, Is (geometric stability) and Ought (justice) converge inside the framework's accepted grammar
+No analytic chart identity derives the ought. Power-Max operates only inside
+the Justice-admissible field and only under its stated attainment conditions.
+The bridge is an explicit, corrigible modeling commitment—not a theorem that
+geometry and ethics converge.
 ```
 
 ---
@@ -346,16 +346,18 @@ Just methodology:
 ### 7.1 The Ethical Test
 
 For any action, ask:
-1. **Is it True?** Does it preserve `P∞ = φ · ν = 1` in the manifold register while keeping finite-node `P_node` claims testable?
-2. **Is it Beautiful?** Does it move toward B = 1? (balanced)
-3. **Is it Just?** Does it maintain η = 0? (non-extractive)
+1. **Is it True?** Are the model, evidence tier, uncertainty, and receipts inspectable?
+2. **Is it Beautiful?** Does the selected balance/aesthetic model fit without being mistaken for proof?
+3. **Is it Just?** Are all materially affected bearers, payers, beneficiaries,
+   consent, custody, reversibility, exit, and contest paths visible—and does no
+   bearer fall below the Justice floor?
 
 ### 7.2 The Design Principle
 
 Build systems that:
-1. Conserve ektropy (Truth)
-2. Seek balance (Beauty)
-3. Resist extraction (Justice)
+1. Preserve corrigible evidence and honest receipts (Truth)
+2. Seek fitting, legible coordination without compulsory symmetry (Beauty)
+3. Enforce bearer-complete non-extraction and contestability (Justice)
 
 **Example: The Mesh**
 - Truth: Information flows without distortion (`P∞` invariant preserved)

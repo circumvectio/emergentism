@@ -49,6 +49,6 @@ evidence_tier: "[B] where package APIs are covered by tests or release receipts;
   own Rosetta row and package-boundary receipt.
 - Do not promote package APIs beyond `[B]` without a fresh test, build, or
   release receipt.
-- All irreversible actions require K2 envelope staging.
+- Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.
 
 Zero-Sum Resolution Equation

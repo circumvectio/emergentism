@@ -21,6 +21,13 @@ rosetta:
 
 # MF-287: WIGNER'S PUZZLE DISSOLVED
 
+> **[金] Kintsugi epistemic seam — 2026-07-18.** The body is retained as an
+> `[I]` metaphor. “Mathematics is D5 above D4,” imaginary/real-axis ontology,
+> and the claimed dissolution of Wigner's puzzle are **not live authority** and
+> transfer no proof. Actual mathematical inscriptions and reasoning events are
+> D4 carriers that can represent D5 possible structures; their effectiveness
+> remains a philosophy-of-mathematics question, not a dimensional theorem.
+
 ## Mathematics Is D5 Looking at D4
 
 **Emergentism.org · VIVEKA Mathematical Foundations**

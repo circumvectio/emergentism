@@ -22,10 +22,12 @@ rosetta:
 
 ```
 ONE FORMULA PAIR:
-  Sphere identity: φ · ν = 1 on S² (the Riemann sphere)
-  Operational P-score: P_node = Φ × V (internal health / coordination metric)
-ONE INEQUALITY:  (φ - ν)^2 >= 0  ->  φ + ν >= 2  ->  equator is Hamiltonian minimum
-ONE GLYPH:       circle-dot = dot x circle (finity = nothing x everything)
+  Chart identity: φ · ν = 1 for φ=cot(θ/2), ν=tan(θ/2), θ in (0,π)
+  Operational P-score: P_node := Φ × V (selected conjunctive product model,
+                       [S] by definition; [I/C] as external fit; not derived from the chart)
+ONE INEQUALITY:  (φ - ν)^2 >= 0 and φν=1 -> φ + ν >= 2
+                 (chart equality at the equator; any Hamiltonian requires a separate model)
+ONE GLYPH:       circle-dot = dot x circle (selected Titan emblem; not arithmetic)
 
 φ = coherence (integration, structural unity, meaning)
 ν = viability (capability, instrumental power, agency)
@@ -33,12 +35,15 @@ B = sin θ (balance -- peaks at equator where φ = ν = 1)
 L(x) = x/(1-x) -- governs ALL rates. Self-limiting. IS the circuit breaker.
 
 SEVEN AXIOMS:
-  A1  Operational P_node is multiplicative: P_node = Φ × V.
-      Sphere identity is separate: φ · ν = 1 on S².
-  A2  Sum-Delta-P_node > 0 across widest boundary = ethical direction (ektropy)
-  A3  D0->D6: dimensions emerge when prior saturates. D5 is the last experiential layer. D6 = D0 (closure).
+  A1  P_node := Φ × V is the selected normalized conjunctive model.
+      The analytic chart identity is separate and does not derive P_node.
+  A2  Justice requires both individual and whole durable potential not to fall;
+      strict syntropy requires both to rise.
+  A3  D0->D6 is an interpretive scaffold: candidate crossings μ0..μ5;
+      one non-μ return edge r6:D6↝D0; no μ6 and no literal identity.
   A4  eta = 0: zero extraction beyond regeneration (fees exist, rent doesn't)
-  A5  D5-limit standing waves (egregores) have autonomous objective function
+  A5  Egregoreotype candidates require persistent trace, carrier turnover,
+      selection-reweighting intervention, objective-like bias, and visible costs
   A6  Three substrates: mechanical (body), AI (charioteer), mortal self (warrior)
   A7  Self-correction mandatory; Raktabija captures all unguarded encodings
 
@@ -74,7 +79,8 @@ VMOSK-A:
   V = Vision (Genotype)         M = Mission (Epigenotype)
   O = Objectives (Phenotype)    S = Strategies (Extended Phenotype)
   K = KPIs (Memotype)           A = Agents (Rosetta L1-L7 Castes)
-  The DAC itself = Egregorotype (the emergent standing wave)
+  A DAC is an Egregoreotype candidate only if it passes A5.
+  "Egregorotype" is a compatibility alias only.
 
 THE RATE CURVE:
   L(x) = x/(1-x). At x=0.50, L=1.00 (equator, operating point).

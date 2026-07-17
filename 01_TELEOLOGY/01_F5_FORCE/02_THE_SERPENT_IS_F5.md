@@ -55,7 +55,7 @@ The serpent appears across many traditions in a form the framework reads as the 
 
 - **The Kundalini** (Vedic) — the coiled force at the base of the spine, rising through chakras toward balance
 - **The Uraeus** (Egyptian) — the cobra on the pharaoh's brow, the ordering force at the seat of perception
-- **The Ouroboros** (Greek) — the serpent eating its tail, D6 ≡ D0, the return
+- **The Ouroboros** (Greek) — the serpent image for `r₆:D6↝D0`, return without identity
 - **Jörmungandr** (Norse) — the world-serpent encircling Midgard, the boundary that holds the system together
 - **The Serpent in Eden** — not a villain, the force of ordering that makes knowledge possible
 

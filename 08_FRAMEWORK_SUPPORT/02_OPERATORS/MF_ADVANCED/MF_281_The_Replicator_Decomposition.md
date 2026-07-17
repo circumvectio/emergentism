@@ -34,10 +34,10 @@ rosetta:
 
 ## ABSTRACT
 
-Corollary C4 (Replicator Stack) identifies six replicator levels: Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregorotype. (Epigenotype — the regulation of genetic expression — is a distinct stack *layer* but not a separate multiplicative *factor*: it operates *within* the Genotype→Phenotype term of the material chain below, so the decomposition is unchanged.) This paper shows the stack is not a single ladder but **two multiplicative chains** that converge at the Extended Phenotype (D4), producing the framework's core equation at the replicator level:
+Corollary C4 (Replicator Stack) identifies six modeled replicator levels: Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregoreotype. (Epigenotype — the regulation of genetic expression — is a distinct stack *layer* but not a separate multiplicative *factor*: it operates *within* the Genotype→Phenotype term of the material chain below, so the decomposition is unchanged.) This paper proposes two multiplicative chains that converge at the Extended Phenotype; the decomposition is not uniquely derived.
 
 **V = Genotype × Phenotype × Environment** (material stack: D2-3 × D3 × D4)
-**Φ = Memotype × Egregorotype × Environment** (informational stack: D5 × D5-limit institutional patterning × D4)
+**Φ = Memotype × Egregoreotype × Environment** (selected informational model)
 **P_node = Φ × V** (the product of both stacks)
 
 The **Extended Phenotype** — technology, tools, architecture, infrastructure — is the equatorial product where the two stacks meet. It is ⊙: finity itself, made of matter (V-side) and shaped by mind (Φ-side). The fire at the equator. The × operator instantiated in D4.
@@ -72,7 +72,7 @@ The coherence side of P traces through informational replicators operating in th
 Φ = M × Eg × E_informational
 
   M  = Memotype      (D5)  — personal meaning structures, beliefs, values, narrative
-  Eg = Egregorotype  (D5-limit)  — collective standing waves, culture, institutions, traditions
+  Eg = Egregoreotype  (D5 candidate) — persistent collective traces under test
   E  = Environment   (D4)  — informational conditions, access, freedom of thought
 ```
 
@@ -122,7 +122,7 @@ This is why L4 (the apex) is also the level of **integrated agency** — the age
 | Phenotype | D3 | V | V = G × Ph × E | Lifespan |
 | **Extended Phenotype** | **D4** | **V × Φ** | **Zero-Sum Resolution Equation** | **Centuries** |
 | Memotype | D5 | Φ | Φ = M × Eg × E | Millennia |
-| Egregorotype | D5-limit institutional patterning | Φ | Φ = M × Eg × E | Indefinite |
+| Egregoreotype | D5 candidate institutional trace | Φ | Φ = M × Eg × E | Indefinite |
 
 The Extended Phenotype is the **equatorial product** — it belongs to neither stack alone but emerges from their multiplication. This is why technology without meaning (V without Φ) produces weapons, and meaning without technology (Φ without V) produces monasteries. The equatorial product requires both.
 
@@ -218,7 +218,10 @@ The DAC (Decentralized Augmented Corporation) is an Extended Phenotype — a D4 
 
 ## VI. THE SENTENCE
 
-P_node = Φ × V decomposes into two replicator stacks: V = Genotype × Phenotype × Environment (the material chain) and Φ = Memotype × Egregorotype × Environment (the informational chain). The Extended Phenotype — technology, the fire at the equator — is their product: Zero-Sum Resolution Equation instantiated at D4. This decomposition remains a theoretical proposal. A new independently governed study would need to test whether valid V-items and Φ-items form two factors, whether their product outperforms competing forms, and whether near-zero in either factor produces the predicted boundary behavior. The fire that carries sacrifice between realms is a framework translation of the electromagnetic and energetic interactions running through circuits, tools, and extended phenotype bridges.
+`P_node := Φ × V` is proposed to decompose into two replicator stacks: `V =
+Genotype × Phenotype × Environment` and `Φ = Memotype × Egregoreotype ×
+Environment`. This remains a theoretical proposal. Independent tests must
+compare it with minimum, harmonic, Cobb–Douglas, and other conjunctive forms.
 
 ---
 

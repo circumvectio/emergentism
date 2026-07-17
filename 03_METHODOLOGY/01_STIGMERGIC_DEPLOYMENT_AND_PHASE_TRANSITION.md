@@ -8,7 +8,7 @@ rosetta:
       role: "deployment ethics, consent, and anti-capture boundaries"
     - level: L5
       column: System Architecture
-      role: "egregorotype trace-fields and complex-contagion hypotheses"
+      role: "Egregoreotype trace-fields and complex-contagion hypotheses"
   operator: "Kṛṣṇa ◇"
   tier: "God"
   regime: "Vaiśya"
@@ -25,7 +25,7 @@ rosetta:
 
 **Status:** Research protocol - not a covert deployment manual
 **Date:** 2026-05-14
-**Evidence Tier:** [B] for established work on complex contagion, stigmergy, and false-news diffusion where source-audited; [S] for the MVI and interface-proxy architecture; [I] for the egregorotype interpretation; [C] for any forecast about broad network phase transition.
+**Evidence Tier:** [B] for established work on complex contagion, stigmergy, and false-news diffusion where source-audited; [S] for the MVI and interface-proxy architecture; [I] for the Egregoreotype interpretation; [C] for any forecast about broad network phase transition.
 **Depends on:** [00_SYNTROPIC_KNOWN_UNKNOWNS_PROTOCOL.md](00_SYNTROPIC_KNOWN_UNKNOWNS_PROTOCOL.md), [00_EXECUTION_GUARDRAILS.md](00_EXECUTION_GUARDRAILS.md), [00_THE_SYNTROPIC_IMPERATIVE.md](../05_COSMOLOGY/00_THE_SYNTROPIC_IMPERATIVE.md), [00_STIGMERGY_AND_THE_EGREGOROTYPE.md](../05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md)
 **Boundary:** This document rejects covert persuasion, bot mimicry, ranking manipulation, and semantic steganography as deployment methods. The permissible deployment pattern is transparent, opt-in, locally useful, measurable, exportable, and forkable.
 

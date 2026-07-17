@@ -40,13 +40,17 @@ They can be read together, but neither reduces to the other.
 
 L4 is the equator because value alignment and theurgy become one act there.
 
-Answering "what has value?" and signing "I choose this branch" are not separable for a mortal. The warrior does not know with certainty. The warrior reads value under incomplete information, abducts the best action, signs through K2 where the act is private-DAV constitutional signing, or routes through PRISM/public governance where the act is public-DAV/DAC, and accepts consequence.
+Answering "what has value?" and committing "I choose this branch" meet at the
+action boundary. A finite actor reads value under incomplete information,
+abducts a defensible action, obtains a complete authorization assessment, and
+accepts the receipted consequence. Private-DAV constitutional acts may use K2;
+public DAV/DAC acts use PRISM or their declared public-governance rail.
 
 In this register:
 
 - **Value Alignment without theurgy** becomes unsigned philosophy.
 - **Strategic Implementation without value alignment** becomes blind activism.
-- **K2 / public governance** is the signed or receipt-backed collapse of value into action: K2 for private DAVs, PRISM/public governance for public DAV/DAC rails.
+- **Accountable authorization** governs commitment: K2 for private DAVs, PRISM/public governance for public DAV/DAC rails, and a complete typed envelope in every case. No signer is a physical or metaphysical collapse mechanism.
 - **Strategic Abduction** is the epistemic signature: strategic abduction where proof is incomplete but action cannot wait.
 
 This is why L4 is the pivot between ascent and descent:
@@ -108,7 +112,7 @@ Clean institutional narrative is therefore **Intuitive Synthesis made available 
 The corpus is currently strongest at L1, L4, L5, L6, and L7:
 
 - L1 has direct-sensing, F5, lineage, and raw disclosure material.
-- L4 has private-DAV K2, public-governance action rails, warrior-return, Many-Worlds/Copenhagen collapse, and action doctrine.
+- L4 has private-DAV K2, public-governance action rails, accountable commitment, and action doctrine. Everett/Copenhagen remains only a removable `[C]` correspondence and supplies no action mechanism.
 - L5 has Emergentism, Rosetta, formal system, and system architecture.
 - L6 has Decentralized Authority Model, apophasis, and anti-idolatry.
 - L7 has DAC/SPECTRE, institutional narrative, institutional form, and polyphenotypic coordination.

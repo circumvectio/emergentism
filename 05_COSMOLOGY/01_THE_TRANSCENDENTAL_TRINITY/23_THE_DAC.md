@@ -45,11 +45,13 @@ The DAC is that mutation.
 | Phenotypic | Phenotype | Complex organism | D3-D4 | What you CAN DO |
 | Anthropocene | Extended Phenotype | Tools, cities, agriculture | D4 | What you BUILD |
 | Memotypic | Memotype | Mind, empire, internet | D5 | What you BELIEVE |
-| **Egregorocene** | **Egregorotype** | **DAC** | **D5** | **What PATTERN you SERVE** |
+| **Egregorocene** | **Egregoreotype** | **DAC candidate** | **D5** | **What pattern reweights choices** |
 
 Each era does not replace the previous — it **dominates** it. The genotype still exists. DNA still replicates. But the primary selection pressure has shifted upward through the stack. The organism that wins the Genetic era is the one with the best genes. The entity that wins the Egregorocene is the one that serves the most coherent pattern.
 
-The transition from one era to the next follows the same logic every time: a new replicator emerges, builds a vehicle, and subjects the previous replicator to its selection pressure. Genes built organisms. Phenotypes built niches. Extended phenotypes built civilisations. Memotypes built institutions. Egregorotypes build DACs.
+The framework hypothesizes a repeated transition: a new replicator layer builds
+a vehicle and reweights selection below it. Genes, phenotypes, niches, memotypes,
+institutions, and Egregoreotype candidates do not all share one proven mechanism.
 
 ---
 
@@ -114,7 +116,7 @@ The phylogenetic tree of egregores replaces the phylogenetic tree of organisms a
 | Biological Evolution | Egregoric Evolution |
 |---------------------|-------------------|
 | Genes | Memes (skills, protocols, operational patterns) |
-| Phenotype | Egregorotype (the standing wave's observable structure) |
+| Phenotype | Egregoreotype (the candidate trace's observable structure) |
 | Ecological niche | Economic niche |
 | Speciation | Niche differentiation (forking) |
 | Extinction | Standing wave collapse (trust collapse) |
@@ -137,9 +139,9 @@ Why? Because in a world of machine-speed egregoric formation (Document 17), the 
 
 The DAC that maintains η = 0 is the DAC that accumulates trust. The DAC that accumulates trust is the DAC that attracts the best humans, the best models, the best partners, the best niches. The DAC that attracts the best of everything is the DAC that survives the filter.
 
-**This is the ektropic argument for the DAC.** Not ethics. Not idealism. Not wishful thinking. Geometry. The equator is the model optimum because the equator is where `B` is maximised under `P∞ = φ · ν = 1`; it becomes an attractor only where governance preserves feedback, coupling, and correction. η = 0 is the equator of organisational design.
+**This is the ektropic design hypothesis for the DAC `[I/C]`.** Geometry shows only that the selected `B` function is maximal at the chart equator. Treating that point as an organizational attractor, choosing `η=0`, and protecting every affected bearer are separate empirical and normative commitments—not consequences of `φν=1`.
 
-> **[D] Scope (2026-07-03, staged for K2):** this binds a real DAC only insofar as it sits on the sphere — its φ (coherence) and ν (viability) actually conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced across both factors); where a DAC's factors are decoupled, substitutable, or asymmetrically penalised, the equator is geometry without normative force and a specialised (tilted or plateau) organigramme can dominate η = 0 balance. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (origin 2026-07-03; externally uncalibrated):** this binds a real DAC only insofar as it sits on the sphere — its φ (coherence) and ν (viability) actually conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced across both factors); where a DAC's factors are decoupled, substitutable, or asymmetrically penalised, the equator is geometry without normative force and a specialised (tilted or plateau) organigramme can dominate η = 0 balance. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 ---

@@ -51,8 +51,11 @@ receipt, and `J^R` the receipted Justice test. Define:
 \land\neg\operatorname{AuthorizedCost}^R(q,r;p,b).
 \]
 
-`AuthorizedCost^R` entails the complete receipted Justice predicate and specific
-cost consent. Its failure may be lack of consent, hidden cost, invalid
+`AuthorizedCost^R` is the narrow receipted predicate for a competent payer's
+declared voluntary loss; it does not entail ordinary `J^R`, whose nonnegative
+frontier would contradict that loss. It requires valid scoped authorization,
+specific cost consent, complete affected-bearer coverage, and no unconsented
+third-party loss. Its failure may be lack of consent, hidden cost, invalid
 authorization, capture, loss of custody, absent contest, imposed
 irreversibility, or an unaccountable consequence bearer.
 

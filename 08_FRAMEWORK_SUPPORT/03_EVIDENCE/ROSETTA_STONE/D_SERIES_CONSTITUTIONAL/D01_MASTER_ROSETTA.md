@@ -62,9 +62,11 @@ Seven levels = six intervals of 15° across the 90° quadrant.
 | L7 | **Viṣṇu** ⊙ | Executive | ~0° | ~90° | →∞ | →0 | 1 | →0 |
 | L∞ | **Trimūrti** ☸ | TRANSCENDENTAL | 0° | 90° | ∞ | 0 | —† | 0 |
 
-> **† φ·ν is _undefined_ at the poles** (0·∞ at L0, ∞·0 at L∞) — *not* 1. `P∞ = φ·ν = 1` is conserved on the **open** sphere only; the limit approaching either pole is 1, but the value *at* the pole is undefined. Per the [Burrisphere](../../../../05_COSMOLOGY/00_THE_BURRISPHERE.md) and [`00_CANONICAL_FORMULA_BLOCK`](../../../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md). `[A]` — corrected 2026-05-31.
+> **† `φν` is undefined at the poles** (`0·∞` / `∞·0`). On `θ∈(0,π)`, `φ=cot(θ/2)` and `ν=tan(θ/2)` make `φν=1` an analytic identity; the limit is 1 toward either pole. This is not an empirical conservation law. `[A]`
 
-**L0 = L∞.** The south pole and north pole are connected on S². D6 = D0. Kāla IS Trimūrti seen from the other pole. "kālo'smi lokakṣayakṛt pravṛddho" — Viṣṇu reveals himself AS Kāla.
+**[金] Selected-frame boundary.** L0 and L∞ are distinct pole limits on S².
+`r₆:D6↝D0` is an interpretive return edge; Kāla/Trimūrti remains a symbolic
+correspondence only.
 
 ---
 

@@ -21,6 +21,14 @@ rosetta:
 
 # MF-290: THE EKTROPIC RADIUS
 
+> **[金] Kintsugi ethics seam — 2026-07-18.** The ethical-radius construct is
+> retained as an `[I/C]` proxy, but the body's equations “ought = wider
+> `ΣΔP_node`” and “positive aggregate = syntropy” are **not live authority**.
+> Justice is bearer-complete and conjunctive: aggregate gain cannot compensate
+> for destroying or hiding one bearer. Strict Syntropic Dyadism requires both
+> durable potentials to rise under Justice. The physical light cone remains
+> fixed by spacetime and `c`; only the modeled/reachable option cone can widen.
+
 ## Will Is Always Ektropic. Ethics Is the Width of the Ethical-Radius Proxy.
 
 **Emergentism.org · VIVEKA Mathematical Foundations**

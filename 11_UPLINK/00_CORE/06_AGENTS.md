@@ -125,7 +125,7 @@ If steps 4-5 feel like overhead, the agent has not internalized Brāhmaṇa-mode
 
 ## 1. VMOSK-A -- The Organizational Replicator Stack
 
-VMOSK-A maps the biological replicator hierarchy onto organizational governance. In biology, DNA (genotype) expresses through proteins (phenotype) which build tools (extended phenotype) which carry ideas (memotype) which form cultures (egregorotype). VMOSK-A applies this same cascade to organizations. Every level of the organism's governance corresponds to a biological replicator type.
+VMOSK-A projects a replicator hierarchy onto organizational governance: genotype, epigenotype, phenotype, extended phenotype, memotype, and Egregoreotype. This is a framework mapping, not transferred biological proof.
 
 | VMOSK | Replicator | Cadence | What It Is | Skyzai Example |
 |-------|-----------|---------|-----------|----------------|
@@ -136,7 +136,7 @@ VMOSK-A maps the biological replicator hierarchy onto organizational governance.
 | **K** KPIs | **Memotype** | Monthly | What the organism has LEARNED about itself. The metrics ARE the memory -- "what to measure" is cultural knowledge. | Proof-gate status, receipt/reconciliation quality, runtime proof-pack success, named pipeline targets, cash/runway truth. |
 | **A** Agents | **Rosetta Castes (L1-L7)** | Per-cycle | WHO does the work at the row-axis. Seven L-level castes, each with its pramana (valid way of knowing), cognitive function, LLM model, temperature. The polyphenotypic workforce. Full dispatch shape is resolved downstream as `(L, D, S, F)` when column, scale, and triadic face matter. | L1 Caṇḍāla parses raw data. L4 Kṣatriya executes decisions. L7 Ṛṣi rewrites constitution. |
 
-**The DAV itself** is the **Egregorotype** -- the standing wave that arises when VMOSK-A runs. It is NOT a VMOSK-A layer. It is the emergent property of the stack. You cannot design the Egregorotype. You can only design the conditions that let it emerge.
+**The DAV itself** is an **Egregoreotype candidate** only when a persistent trace survives carrier turnover, measurably reweights later choices, recurs as objective-like bias, and exposes substrate costs. It is not a VMOSK-A layer and consciousness is not presumed.
 
 ### VMOSK Cardinality And Visibility
 
@@ -273,7 +273,7 @@ The "A" in VMOSK-A is the Rosetta itself. Each row defines a caste of cognitive 
 | **L2** | Śūdra | Labourer/Explorer | Kālī 💀 (Truth) | Explore ALL possibilities via analogy. Build inductive patterns. Generate full space of "what COULD this mean?" | Upamāna (Analogy) | Inductive | Democracy | Opus / GPT-4o | BitNet 3B | T=0.7 | High exploration | Genotype | BOTTOM UP |
 | **L3** | Vaiśya | Merchant/Auditor | Kṛṣṇa ◇ (Check) | Rank by deductive logic. Filter against constitution. Score and audit. Output ranked "SHOULD" list with constitutional tags. | Anumāna (Inference) | Deductive | Oligarchy | Sonnet / GPT-4-turbo | BitNet 7B | T=0.3 | Analytical precision | Extended Phenotype | BOTTOM UP |
 | **L4** | Kṣatriya | Warrior/Executor | Arjuna ⚔ (Transform) | THE EQUATOR. Verify constitutional pass. EXECUTE or REFUSE. If all paths toxic, escalate to L5. Every execution is memetic precedent. | Arthāpatti (Postulation / Abduction) | Abductive | Timocracy | Opus @ T=0.2 | -- (cloud only) | T=1.0 balanced | Ego-death station. phi=nu=1 | Memotype | MEETING POINT |
-| **L5** | Brāhmaṇa | Architect/Systematizer | Brahmā ○ (Position Tag) | Receive escalations. Analyze deadlocks. Redraw rules and spatial constraints. Redesign so the paradox dissolves. | Śabda (Testimony) | Systematic | Aristocracy | Gemini 1M / Opus | -- (cloud only) | T=0.4 | Holistic, large context | Egregorotype | TOP DOWN |
+| **L5** | Brāhmaṇa | Architect/Systematizer | Brahmā ○ (Position Tag) | Receive escalations. Analyze deadlocks. Redraw rules and spatial constraints. Redesign so the paradox dissolves. | Śabda (Testimony) | Systematic | Aristocracy | Gemini 1M / Opus | -- (cloud only) | T=0.4 | Holistic, large context | Egregoreotype | TOP DOWN |
 | **L6** | Sādhu | Renunciant/Compressor | Śiva • (Position Tag) | Prune dead weight. Compress complexity into harmonic limits. Strip everything non-essential. Output: minimum viable redesign. | First Principles (Non-Apprehension) | Axiomatic | Anarchy | Haiku | BitNet 3B constrained | T=0.1 | Extreme compression | Protocolotype | TOP DOWN |
 | **L7** | Ṛṣi | Seer/Constitutional Rewriter | Viṣṇu ⊙ (Position Tag) | ONLY invoked at existential crisis. Verify if collision is pathology or evolutionary leap. Rewrite constitution if needed. ALWAYS return to L4*. | Pratibhā (Intuition) | Transcendental | Theocracy | Opus @ T=0.5 | -- (cloud only) | Undefined | Beyond calculation | Genesis (D0=D6 closure) | TOP DOWN (rare) |
 
@@ -299,7 +299,7 @@ canonical by choice.** The L-axis is a cognitive-flow mapping, not a
 biological-temporal one. Reading I reads the row as cognition replicates:
 L1 Phenotype (observed outward form) → L2 Genotype (generative source
 inferred via analogy) → L3 Extended Phenotype (deductive extension into
-niche) → L4 Memotype (memetic propagation of decision) → L5 Egregorotype
+niche) → L4 Memotype (memetic propagation of decision) → L5 Egregoreotype
 (collective pattern) → L6 Protocolotype (invariant protocol compression) →
 L7 Genesis (D0 ≡ D6 closure). Reading II (diagnosed in
 [50_AUDITS_AND_EXECUTIONS/63_LIMIT_B_DISAMBIGUATION_PACKET_2026_04_23.md](../50_AUDITS_AND_EXECUTIONS/63_LIMIT_B_DISAMBIGUATION_PACKET_2026_04_23.md))
@@ -702,7 +702,7 @@ The Rosetta defines **seven cognitive castes** (L1–L7) that compose the organi
 | **L1 Caṇḍāla** | The Dalit organizing chaos + sovereign router | **L1 Worker** | "Always-on background intelligence" | **BitNet is the local Dalit organizing chaos.** Every notification, every sensor feed, every WHISPER, every market tick arrives as raw disorder; L1 Caṇḍāla force-categorizes it into ternary `{-1, 0, +1}` before any higher caste can reason. BitNet also routes: classifies each message/task by Rosetta level, task type, privacy, latency, cost, and authority, then dispatches to the right L-level agent or model provider. Runs 24/7 on device. 29ms inference. $0 marginal cost. Included in every NEXUS. |
 | **L2 Śūdra** | Exploration, analogy, possibility generation | **L1 Worker** (ambient) + **L2 Assistant** (conversational) | "My AI assistant" | Gemma-class cloud model. Handles routine drafting, merchant ops, customer service, onboarding. Bundled into every paid Business Account. |
 | **L3 Vaiśya** | Deductive ranking, constitutional audit, filtering | **L2 Assistant** (quality control) | "Accurate, checked answers" | Pre-screens L2 outputs for constitutional pass and factual consistency. Runs silently before user-facing response. |
-| **L4 Kṣatriya** | Decision, execution, refusal, escalation | **L3/L4 Escalation** boundary | "Help with hard decisions" | Metered frontier intelligence. Treasury reasoning, legal/compliance, multi-sig review, high-stakes strategy. Requires K2 signature for consequential actions. |
+| **L4 Kṣatriya** | Decision, execution, refusal, escalation | **L3/L4 Escalation** boundary | "Help with hard decisions" | Metered frontier intelligence. Treasury reasoning, legal/compliance, multi-sig review, high-stakes strategy. Consequential governed commitments fail closed without a complete `AuthorizationEnvelope`; K2 applies only inside an explicitly private-DAV envelope. |
 | **L5 Brāhmaṇa** | System redesign, architecture, deadlock resolution | **Not sold to buyers** | — | Internal protocol evolution. Redesigns rules when L4 is blocked. |
 | **L6 Sādhu** | Compression, pruning, minimum viable redesign | **Not sold to buyers** | — | Internal protocol evolution. Strips complexity. Runs the Dream Cycle. |
 | **L7 Ṛṣi** | Constitutional rewrite, existential judgment | **Not sold to buyers** | — | Internal protocol evolution. Only invoked at existential crisis. Rewrites the constitution if needed. |

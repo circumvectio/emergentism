@@ -100,8 +100,10 @@ This is the level at which the framework can be said to have **real direction wi
 
 - `Zero-Sum Resolution Equation -> φ · ν = 1 on S² -> (φ − ν)^2 ≥ 0 -> φ + ν ≥ 2`
 - `Ground -> Being -> Teleological Force -> Dasein -> beings`
-- `Many-Worlds = D5 distributed actuality`
-- `Copenhagen = D4→D5 singular selection`
+- D5 may be compared with branch alternatives only in a removable `[C]`
+  correspondence; Everett is a no-collapse relative-state formulation
+- Copenhagen-family actualization is interpretation-specific and is not a
+  `D4→D5` crossing; neither `μ` nor agent selection is quantum measurement
 
 The framework at Level 2 is not yet alive in the strong sense. But it is no longer arbitrary.
 

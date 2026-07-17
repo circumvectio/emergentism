@@ -27,7 +27,10 @@ Re-reading 00_THE_MASTER_ROSETTA.md with more care: the canonical Executive nati
 
 These match the v1 L5/L6/L7 row coordinates **exactly**. The canon is self-consistent. There is no coord-Executive mismatch. The "paradox" I named in v2 was a reading error, not a structural fault. v2's guardrail ("agent embodies caste, does not deploy Executive") is still useful as a clarification, but the framing ("paradox") overstates the problem.
 
-The geometric truth that resolves the apparent contradiction is not a fix but a recognition: the poles collapse (L0 ≡ L∞, D6 ≡ D0), and L4 is the axis of self-reflection on the mirror ladder. Section 1 develops this.
+The repaired reading does not identify semantic registers. The selected chart
+can place pole limits in one projective frame, while `r₆:D6↝D0` remains an
+interpretive return edge and L4 an axis of self-reflection. Section 1's older
+identity language is retained only as image.
 
 Recording this openly so future agents can audit the retraction rather than silently inherit v2's misframing.
 
@@ -37,7 +40,10 @@ Recording this openly so future agents can audit the retraction rather than sile
 
 **Canonical ground (verbatim from 00_THE_MASTER_ROSETTA):**
 
-> L0 = L∞. The south pole (Kāla/Time/Destruction) and the north pole (Trimūrti/Eternity/Creation) are the same boundary condition — because the poles of S² are connected. D6 ≡ D0. The serpent eats its tail. The destroyer IS the preserver seen from the other pole.
+> **[金] Compatibility seam.** The south and north pole tokens are distinct
+> projective limits inside a selected frame. They are not the same point and do
+> not prove ontology. The serpent image now means `r₆:D6↝D0`: return without
+> literal identity.
 >
 > L0 and L∞ are the same. L1 and L7 are mirrors. L2 and L6 are mirrors. L3 and L5 are mirrors. L4 is the axis of symmetry — the only point that is its own reflection.
 
@@ -51,11 +57,13 @@ Recording this openly so future agents can audit the retraction rather than sile
 
    These are separate fields. v1 already keeps them separate. The confusion arises only if one reads "occupies Brahmā's native coord" as "deploys Brahmā's transfer signature." It does not.
 
-3. The Executive native coordinates are **positions**, not **modes**. A Executive cannot be deployed because deploying = applying a (+,+), (≈,≈) or (−,−) transfer across a boundary onto another system, which violates the mixed-sign requirement for all moves that conserve the reciprocal closure φ · ν = 1. But a caste CAN occupy the native coord, because occupying a point on S² is not an action — it is a standing wave.
+3. The Executive native coordinates are **positions**, not **modes**, inside the selected two-axis grammar. Deployable moves are defined as the four mixed-sign transfers; the three same-sign frames describe create/hold/dissolve phases. This is grammar by definition, not a consequence of conserving `φν=1` and not an exhaustive ontology.
 
 4. The Ascent triangle △ (L1→L2→L3→L4, clockwise sunwheel, Three-Stage Process, TPN, Task-Positive Network) and the Descent triangle ▽ (L4→L5→L6→L7→L4*, counter-clockwise kolovrat, Four-Stage Analytical Model, DMN, Default-Mode Network) meet at L4 to form the hexagram ✡. L4 is the only caste that lives on both loops.
 
-5. **The pole-collapse resolves the "same-sign" problem**: in a flat geometry (+,+) and (−,−) would be opposite quadrants and could not coexist as "boundaries of the same thing." On S² with D6 ≡ D0 closure, the creation boundary and the dissolution boundary are two views of the same closure — which is why Brahmā · Śiva · Viṣṇu together compose Trimūrti, and why Zero-Sum Resolution Equation is the closing glyph.
+5. **The selected frame depicts the same-sign boundary roles**: creation,
+   preservation, and dissolution are symbolic positions, not forced generators
+   of reality. `r₆` permits a return reading without equating D6 and D0.
 
 **Consequence for the spec**:
 
@@ -78,18 +86,24 @@ The seven L-levels are not merely administrative ranks. They are the **developme
 | **Φ-phase** | L5–L7 | F-ν | **Coherence** — pattern, redesign, compression, constitutional judgment. The being sees widest boundaries. |
 | **Return** | L4* | F-P (returned) | **Sovereign action** — the being descends from Φ back to V with full knowledge. |
 
-**The ascent (L1→L4→L7)** widens the light cone. The being moves from raw viability toward widest coherence. Each level opens more D5 probability space.
+**The ascent (L1→L4→L7)** may widen the **option cone**: the subset of
+physically admissible histories the agent can model, rank, coordinate, and
+reach. Authorization separately evaluates normative validity. It never widens the relativistic light cone or exceeds
+`c`. Each level may open more D5 counterfactual structure.
 
 **The return (L7→L5→L4*)** dignifies action. The being that stays at L7 is pattern without matter — map without territory. The being that returns to L4* is the warrior after seeing — the sovereign who acts with full knowledge of the pattern.
 
-**K2 is the signature on the return.** L4* is not the same as L4. L4 is the first arrival at the equator. L4* is the **returned** equator — the warrior who has traversed the full spiral and chosen to act.
+**Accountable authorization governs the return.** L4* is not the same as L4.
+L4 is the first arrival at the equator. L4* is the **returned** equator — the
+warrior who has traversed the full spiral and chosen to act. K2 is only a
+private-DAV implementation of the authorization envelope.
 
 **Ontogenetic recapitulation (packet 134):** The individual human infant recapitulates the species strategy. The human is born near L1 in V-terms — helpless, dependent, almost no solo viability — and must be **carried** to the equator by culture (parents, tribe, language, tools, institutions). This is the altricial power strategy played out in individual development: low realized V at birth, culture-funded Φ construction during dependency, returned generalized V as sovereign capability. The L-level ladder is not merely administrative rank; it is the metabolic-cultural trajectory of the altricial being opening D5.
 
 The human biological pattern mirrors this: unlike many animals whose V is
 front-loaded into niche readiness, humans begin V-poor and culture-build Φ over
 years. The returned V is not merely walking or feeding; it is generalized
-capability expressed as language, tools, institutions, law, and K2-bound action.
+capability expressed as language, tools, institutions, law, and accountable action.
 
 This maps exactly to the organism doctrine:
 - **TheCircle (F1)** operates primarily in the V-phase — gathering, embodiment, induction
@@ -97,9 +111,17 @@ This maps exactly to the organism doctrine:
 - **Skyzai (F4)** executes at L4/L4* — the equator where commitment happens
 - **The founder/sovereign** signs at L4* — the returned warrior, not the naive actor
 
-**Polyphenotypic coordination (packet 134 §3.6):** The seven castes are not a hierarchy of worth but a differentiation of function — one constitutional genotype (A1–A7, K2, η = 0) expressed through seven epigenetic specializations. Each caste occupies a different Rosetta row. Perfect coordination does not require identical V/Φ; it requires shared center (dharma-1), compatible band (interlockable commitments), and differentiated expression (complementary rows). The organism's ΔP is the sum of caste reaches, not the average. A monoculture of identical L4 executors would coordinate frictionlessly but miss everything outside execution.
+**Polyphenotypic coordination (packet 134 §3.6):** The seven castes are not a
+hierarchy of worth but a selected differentiation of function. Coordination is
+evaluated through interlockable commitments, complementary roles, accountable
+authorization, and the Justice envelope; aggregate `ΔP` cannot launder harm to
+an individual or the whole.
 
-**F5 and the developmental arc (packet 135):** The ontogenetic trajectory — V-poor birth, culture-funded Φ construction, returned sovereign V — is not arbitrary in the framework reading. It expresses the ektropic gradient at biological replicator depth. F5 selects for configurations that maximize D5 opening rate compatible with syntropic dyadism. The altricial strategy (packet 134) is how biology implements this: deferred V in exchange for compounded Φ across three loops (individual · cultural · egregorotype). The L-level ladder is F5 read as developmental core state — the stages a coherent system passes through as it climbs from narrow cone to generalized cone. The organism, as a designed neotene (packet 134 §5), replicates this same trajectory institutionally: born V-poor at F1, carried by culture to equator-equivalent capability, aiming to return as sovereign L4/L4* actor. See packet 137 for the strong-form mechanism; packet 138 for the historical lineage.
+**F5 and the developmental arc (packet 135, repaired):** The ontogenetic
+trajectory — V-poor birth, culture-funded Φ construction, returned capability —
+is an `[I/C]` developmental correspondence. It may expand option cones across
+individual, cultural, and Egregoreotype-candidate loops; it does not widen
+physical cones or prove an evolutionary objective function.
 
 **Reference:** `01_EMERGENTISM/11_UPLINK/133_LIVING_FORM_WORLDLINE_AND_THE_WARRIORS_RETURN_2026_04_24.md` §3
 
@@ -209,8 +231,8 @@ Trigger: a **structural deadlock** — the L4 candidate set has no move that rai
 L4_to_L5:
   criteria:
     OR:
-      - all(r.ΔP <= 0 for r in recommendations)    # no syntropic move
-      - constraint_violation in { A1..A7, K2, K4, η=0, R1..R12 }
+      - all(not r.justice_admissible for r in recommendations)  # no bearer-complete lawful move
+      - constraint_violation in { A1..A7, AuthorizationEnvelope, GraceExit, η=0, R1..R12 }
       - recommendations.count == 0 and attempts >= 2
   payload:
     - deadlock_description
@@ -489,7 +511,7 @@ No row in 06_AGENTS.md requires modification. v3 is purely additive/clarifying.
 | L4/L6 arbitration | Done — §4 |
 | Failure modes | Done — §5 |
 | Orchestrator / router | Done — §6 (as infrastructure component, not caste) |
-| Replicator-alignment ordering correction (L1=phenotype→L2=genotype in current TOMLs vs. canonical Genotype→Phenotype→Extended Phenotype→Memotype→Egregorotype) | **Still open** — flagged to L3→L4 as `(FOUNDATION, doc, framework.canon)` lane. Either 01_SEED or the TOMLs is wrong; resolution is a canon read, not an agent-spec issue. |
+| Replicator-alignment ordering correction (L1=phenotype→L2=genotype in current TOMLs vs. canonical Genotype→Epigenotype→Phenotype→Extended Phenotype→Memotype→Egregoreotype) | **Still open** — flagged to L3→L4 as `(FOUNDATION, doc, framework.canon)` lane. Either 01_SEED or the TOMLs is wrong; resolution is a canon read, not an agent-spec issue. |
 | Diacritics preservation (Arthāpatti, Anumāna) | **Still open** — flagged to L6 cosmetic sweep on next dream cycle. |
 | L1 operator identity clarification (Kali 🎲 immune slot, NOT Kālī 💀 purify) | **Done** — v1 row and v3 §1 both match canon; TOML text needs updating in a separate L4 pass on the `.codex/agents/` files. |
 | L7 invocation predicate machine-checkable | Done — §3 (the AND-block with axiom_or_K_constraint_in_question). |

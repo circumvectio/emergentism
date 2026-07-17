@@ -21,6 +21,14 @@ rosetta:
 
 # MF-284: THE GODS ARE F₅
 
+> **[金] Kintsugi supersession — 2026-07-18.** The operator table may remain an
+> `[I]` symbolic four-move vocabulary, but the body's claims that D4/D5 are
+> real/imaginary axes, Kālī or Kṛṣṇa is quantum measurement, the Born rule
+> completes an operator, F5 is a physical force, or mythology is mathematically
+> forced are **not live authority**. KSC-01/KSC-05 and the D4/D5 and quantum
+> owners govern. D4 is actuality, D5 is possible content, and the entire quantum
+> crosswalk is removable `[C]`.
+
 ## Four Directions of the D4↔D5 Transduction
 
 **Emergentism.org · VIVEKA Mathematical Foundations**
