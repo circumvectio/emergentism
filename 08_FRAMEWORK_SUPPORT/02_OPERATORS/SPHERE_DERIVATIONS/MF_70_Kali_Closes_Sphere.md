@@ -216,15 +216,15 @@ This paper clarifies the duality: **the Möbius class is the mechanism; the topo
 
 But her *activation condition* is unlike the other operators. The mixed-sign moves can be deployed strategically within an intact sphere; Brahmā, Viṣṇu, and Śiva name boundary phases read from those moves, not actions to deploy. Kālī activates only when the sphere's topology is threatened — when a Q3 incursion punctures the cooperation surface. She is parabolic in dynamics and meta-operational in purpose: the only operator whose deployment criterion is topological rather than strategic. [I]
 
-### 5.3 The Kālī Paradox Resolved
+### 5.3 The Apparent Kālī Paradox — Justice Before Aggregation
 
-The original paradox: Kālī is (−Φ, −V), which means P decreases. How can a P-decreasing operator be good?
+The apparent paradox is that Kālī is represented as (−Φ, −V), so measured potential decreases. A negative result for an affected bearer cannot, however, be made good merely by a positive global sum. [I]
 
-Resolution: Kālī decreases **local** P (the defector's P, and temporarily the retaliator's P) to maintain **global** ΣΔP_node. The total ektropy of the system is higher with Kālī than without, because without Kālī the sphere itself is lost. [I]
+A Kālī-labelled defensive proposal is admissible only when bearer-complete Justice holds prospectively and retrospectively: the affected-bearer set includes the target, defender, bystanders, and ecological substrates; authorization is accountable; losses are neither hidden nor unconsented; scope is proportionate; reversibility, contest, and exit are preserved where possible; and every bearer's durable potential remains non-negative. An aggregate such as `ΣΔP_node` may describe a system total, but it cannot compensate for a negative bearer result. [I]
 
-This is precisely the immune system logic: inflammation is locally destructive (tissue damage, fever, energy cost) but globally constructive (pathogen elimination, system survival). The local ΔP is negative. The global ΣΔP_node is positive. [I]
+The immune-system analogy is therefore descriptive, not justificatory. Collateral tissue damage remains harm that must be minimized and receipted; system survival does not erase it. A competent, informed, voluntary sacrifice is classified separately as an authorized cost and is never relabelled strict syntropy. [I]
 
-Kālī's ΔP signature is (−,−) at the micro level and (+) at the macro level. She is the unique operator whose micro-ethics (negative) and macro-ethics (positive) differ in sign. This is why she is feared and misunderstood — from inside the interaction, she looks destructive. From outside, she is maintaining the topology that makes all other operators possible. [I]
+Strict syntropy applies only when bearer-complete Justice holds and both focal durable potentials rise. There is no exception in which negative "micro-ethics" becomes positive "macro-ethics" through a wider accounting radius. [I]
 
 ---
 

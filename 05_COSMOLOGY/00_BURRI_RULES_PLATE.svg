@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg data-topology-sha256="68766d972aa5b4018e0ecc012019d074c48bbef49ec1cc6a9d4ddf08e369761c" height="1000" role="img" viewBox="0 0 1600 1000" width="1600" xmlns="http://www.w3.org/2000/svg">
+<svg data-topology-sha256="b3f73e75becaf093428aaab850f89f541cd20c5d8041cd268cb9a7b646f43454" height="1000" role="img" viewBox="0 0 1600 1000" width="1600" xmlns="http://www.w3.org/2000/svg">
   <title>The Burri Rules - Ivory Proof Plate</title>
-  <metadata id="topology-sha256">sha256:68766d972aa5b4018e0ecc012019d074c48bbef49ec1cc6a9d4ddf08e369761c;view:proof</metadata>
+  <metadata id="topology-sha256">sha256:b3f73e75becaf093428aaab850f89f541cd20c5d8041cd268cb9a7b646f43454;view:proof</metadata>
   <defs>
     <marker id="arrow-actual" markerHeight="8" markerWidth="8" orient="auto" refX="7" refY="4"><path d="M 0 0 L 8 4 L 0 8 Z" fill="#332d29"/></marker>
     <marker id="arrow-possible" markerHeight="8" markerWidth="8" orient="auto" refX="7" refY="4"><path d="M 0 0 L 8 4 L 0 8 Z" fill="#526879"/></marker>
@@ -11,7 +11,7 @@
   <text fill="#332d29" font-family="sans-serif" font-size="28" font-weight="800" letter-spacing="2.2" text-anchor="start" x="60" y="52">THE BURRI RULES</text>
   <text fill="#5b534c" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="start" x="60" y="79">Ivory proof plate · typed emergence, commitment, receipt, and composition</text>
   <text fill="#5b534c" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="1.2" text-anchor="end" x="1540" y="52">COMPASS / NOT COMMAND</text>
-  <text fill="#5b534c" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="end" x="1540" y="76">topology sha256 68766d972aa5b401…</text>
+  <text fill="#5b534c" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="end" x="1540" y="76">topology sha256 b3f73e75becaf093…</text>
   <rect fill="#fbf7eb" height="160" rx="20" stroke="#b8a98e" stroke-width="1.5" width="1510" x="45" y="104"/>
   <text fill="#5b534c" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="1" text-anchor="start" x="65" y="128">BR-2 · SIX CANDIDATE CROSSINGS + ONE NON-mu CLOSURE</text>
   <g data-primitive="mu-crossing" id="d-register-spine">
@@ -92,7 +92,7 @@
   <text fill="#332d29" font-family="sans-serif" font-size="12" font-weight="700" text-anchor="middle" x="1390" y="175">mu5</text>
   <text fill="#526879" font-family="sans-serif" font-size="8" font-weight="600" text-anchor="middle" x="1390" y="212">evidence: empty</text>
   </g>
-  <path d="M 1510 197 C 1510 246, 70 246, 70 197" fill="none" id="r6" marker-end="url(#arrow-actual)" stroke="#526879" stroke-dasharray="9 6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 1510 197 C 1510 246, 70 246, 70 197" fill="none" id="r6" marker-end="url(#arrow-actual)" stroke="#526879" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
   <rect fill="#fbf7eb" height="18" rx="9" width="360" x="610" y="224"/>
   <text fill="#526879" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle" x="790" y="239">r6 interpretive return · not identity · not mu6</text>
   </g>
@@ -108,10 +108,10 @@
   </g>
   <line id="e-model-rank" marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2" x1="417" x2="458" y1="405" y2="405"/>
   <line id="e-rank-selector" marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2" x1="612" x2="653" y1="405" y2="405"/>
-  <path d="M 340 432 C 340 478, 395 490, 430 506" fill="none" id="e-model-option-a" marker-end="url(#arrow-possible)" stroke="#526879" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  <path d="M 340 432 C 420 470, 575 485, 650 506" fill="none" id="e-model-option-b" marker-end="url(#arrow-possible)" stroke="#526879" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  <path d="M 535 432 C 515 478, 465 490, 430 506" fill="none" id="e-rank-option-a" marker-end="url(#arrow-possible)" stroke="#526879" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  <path d="M 535 432 C 560 475, 620 488, 650 506" fill="none" id="e-rank-option-b" marker-end="url(#arrow-possible)" stroke="#526879" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 340 432 C 340 478, 395 490, 430 506" fill="none" id="e-model-option-a" marker-end="url(#arrow-possible)" stroke="#526879" stroke-dasharray="6 5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 340 432 C 420 470, 575 485, 650 506" fill="none" id="e-model-option-b" marker-end="url(#arrow-possible)" stroke="#526879" stroke-dasharray="6 5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 535 432 C 515 478, 465 490, 430 506" fill="none" id="e-rank-option-a" marker-end="url(#arrow-possible)" stroke="#526879" stroke-dasharray="6 5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 535 432 C 560 475, 620 488, 650 506" fill="none" id="e-rank-option-b" marker-end="url(#arrow-possible)" stroke="#526879" stroke-dasharray="6 5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
   <g data-kind="state" data-modality="actual" id="d4-model-token">
   <rect fill="#fffdf6" height="54" rx="13" stroke="#332d29" stroke-width="2" width="154" x="263" y="378"/>
   <text fill="#332d29" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="340" y="402">
@@ -149,9 +149,9 @@
   </g>
   <line id="e-means-availability" marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2" x1="507" x2="533" y1="655" y2="655"/>
   <path d="M 687 655 C 750 650, 790 624, 814 605" fill="none" id="e-availability-chi" marker-end="url(#arrow-actual)" stroke="#332d29" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  <path d="M 687 705 C 770 705, 800 650, 830 611" fill="none" id="e-authorization-chi" marker-end="url(#arrow-actual)" stroke="#7b5f18" stroke-dasharray="3 4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 687 705 C 770 705, 800 650, 830 611" fill="none" id="e-authorization-chi" marker-end="url(#arrow-actual)" stroke="#7b5f18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
   <path d="M 730 432 C 750 490, 810 520, 842 556" fill="none" id="e-selector-chi" marker-end="url(#arrow-actual)" stroke="#332d29" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  <path d="M 650 562 C 715 585, 765 588, 822 586" fill="none" id="e-option-a-chi" marker-end="url(#arrow-possible)" stroke="#526879" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 650 562 C 715 585, 765 588, 822 586" fill="none" id="e-option-a-chi" marker-end="url(#arrow-possible)" stroke="#526879" stroke-dasharray="6 5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
   <g data-kind="state" data-modality="actual" id="d4-means">
   <rect fill="#fffdf6" height="54" rx="13" stroke="#332d29" stroke-width="2" width="154" x="353" y="628"/>
   <text fill="#332d29" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="430" y="652">
@@ -235,7 +235,7 @@
   <text fill="#526879" font-family="sans-serif" font-size="11" font-weight="400" text-anchor="middle" x="177.5" y="851">alternatives</text>
   <text fill="#332d29" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle" x="437.5" y="836">D4 observer-relative</text>
   <text fill="#332d29" font-family="sans-serif" font-size="11" font-weight="400" text-anchor="middle" x="437.5" y="851">factual record</text>
-  <line id="e-quantum-correspondence" marker-end="url(#arrow-possible)" stroke="#526879" stroke-dasharray="5 5" stroke-width="2" x1="265" x2="350" y1="839" y2="839"/>
+  <line id="e-quantum-correspondence" marker-end="url(#arrow-possible)" stroke="#526879" stroke-dasharray="6 5" stroke-width="2" x1="265" x2="350" y1="839" y2="839"/>
   <text fill="#5b534c" font-family="sans-serif" font-size="9" font-weight="400" text-anchor="middle" x="312" y="879">no extra dimension · no mu/chi measurement identity</text>
   </g>
   <g id="reflexive-bridge">
@@ -262,7 +262,7 @@
   <text fill="#526879" font-family="sans-serif" font-size="9" font-weight="600" text-anchor="middle" x="1280" y="849">etaObserved = n | ?</text>
   </g>
   <path d="M 1390 617 C 1410 700, 1360 760, 1330 795" fill="none" id="e-outcome-trace" marker-end="url(#arrow-actual)" stroke="#332d29" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  <path d="M 1215 835 C 1070 825, 890 720, 748 434" fill="none" id="e-trace-selector" marker-end="url(#arrow-actual)" stroke="#7b5f18" stroke-dasharray="4 4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 1215 835 C 1070 825, 890 720, 748 434" fill="none" id="e-trace-selector" marker-end="url(#arrow-actual)" stroke="#7b5f18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
   <text fill="#5b534c" font-family="sans-serif" font-size="9" font-weight="400" text-anchor="middle" x="1390" y="816">
     <tspan dy="0" x="1390">affected bearer set</tspan>
     <tspan dy="14" x="1390">payerIds / beneficiaryIds</tspan>

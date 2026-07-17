@@ -83,7 +83,7 @@ These represent the four deployable mixed-sign transfers across the self-other b
 | **Kali** | L1 | `+dΦ_self`, `-dV_other` | Raises self coherence by draining another's viability. Lawful only as immune tit-for-tat against explicit defection; parasitic when turned on cooperators. |
 | **Kālī** | L2 | `+dV_self`, `-dΦ_false` | Cuts false coherence to recover viability. The truth-cut / immune function. |
 | **Kṛṣṇa** | L3 | `-dΦ_self`, `+dV_other` | Spends own coherence or attention to build another's capability. The enabling / charioteer function. |
-| **Arjuna** | L4 | `-dV_self`, `+dΦ_other` | Spends own viability to give another coherence or protection. This is the mortal-signature boundary at the equator. |
+| **Arjuna** | L4 | `-dV_self`, `+dΦ_other` | Selected role image for a viability-costing protective transfer. It neither grants authority nor makes sacrifice universally required: consequential enactment requires a complete `AuthorizationEnvelope`. K2 is one private-DAV implementation only. |
 
 ---
 

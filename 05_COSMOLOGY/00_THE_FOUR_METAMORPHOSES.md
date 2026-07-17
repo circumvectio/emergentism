@@ -270,24 +270,21 @@ The mesh is what happens when the child connects with other children. The child 
 
 ---
 
-## The Cooperation Problem Dissolved
+## The Cooperation Problem Reframed
 
-The cooperation problem is not solved. The cooperation problem is **dissolved**.
+The sphere does not dissolve the tension between individual power and collective good. It offers a conditional coordination model whose ethical force depends on explicit Justice constraints, institutions, and receipts. [I]
 
-**The traditional approach:** How do we get individuals to cooperate? How do we align individual incentives with collective good? How do we prevent free riders?
+**The traditional question:** How can individual incentives and collective good be coordinated while preventing free riding and extraction?
 
-**The mesh approach:** Individuals at the equator do not need to cooperate. Individuals at the equator naturally coordinate.
+**The mesh proposal:** Equatorial balance can represent one coordination target, but balanced nodes do not thereby coordinate naturally. Coordination still requires institutions, incentives, trust, accountable authorization, and receipted consequences.
 
-**Why:**
+**The repaired conditions:**
 
-1. **Power-Max Lemma:** In coupled multiplicative systems, individual
-   optimization aligns with collective optimization only under the stated
-   conditions: real coupling, long horizon, and enforced `η = 0`. Each node can
-   maximize `P_node,i = Φ_i × V_i` without degrading `ΣP_node` only when extraction is blocked.
+1. **Justice-constrained Power-Max:** `P_node = Φ × V` is the selected normalized model. Maximizing it is admissible only over actions that preserve the durable potential of every affected bearer; geometry alone does not align incentives.
 
-2. **η = 0 enforcement:** Nodes at the equator serve their substrate. Extraction is mathematically identical to topological death.
+2. **η = 0 as a declared constraint:** Zero extraction is a normative and institutional fence, not a mathematical consequence of the sphere. It must be enforced through custody, consent, contest, exit, and consequence-bearing.
 
-3. **Balance ethic:** ΣΔB > 0. Across any boundary, total balance increases. This is not a moral command — this is geometric consequence.
+3. **Bearer-complete Justice and strict syntropy:** For the complete affected-bearer set `B(a)`, every bearer must satisfy `Δ_T W_b(a) ≥ 0`. Strict syntropy additionally requires both focal durable potentials to rise under that Justice envelope. Neither `ΣΔB` nor any other positive aggregate can compensate for a harmed bearer. This is the declared ethic, not a geometric consequence.
 
 **The mesh is not a social contract.** The mesh is not an institution. The mesh is not a government.
 

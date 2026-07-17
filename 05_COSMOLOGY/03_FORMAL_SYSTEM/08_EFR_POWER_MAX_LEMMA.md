@@ -113,7 +113,8 @@ Write
 f_t(a):=\mathbb E_{M_t}[W_i(T)\mid a].
 \]
 
-If `\mathcal A_J` is finite, or is compact and `f_t` is upper
+If `\mathcal A_J` is nonempty and finite, or is nonempty and compact while
+`f_t` is upper
 semicontinuous, the repaired exact Power-Max objective is
 
 \[

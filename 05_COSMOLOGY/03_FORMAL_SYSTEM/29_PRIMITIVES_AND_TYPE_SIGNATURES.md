@@ -284,7 +284,7 @@ CommitmentReceipt := {
   meansUsed: [String],
   evaluation: EvaluationContract,
   expectedBearerDeltas: {BearerId:Number},
-  expectedOutcome: String,
+  expectedOutcome: String?,
   payerIds: [BearerId],
   beneficiaryIds: [BearerId],
   actor: String,
@@ -305,6 +305,44 @@ OutcomeReceipt := {
   observedAt: Time
 }
 ```
+
+Bearer coverage is a cross-record invariant, not optional metadata. Write
+`ids(xs)` for the set of nonempty, unique bearer identifiers in a list and
+`keys(m)` for the keys of a bearer map. For every commitment receipt `q`:
+
+```text
+E_q := ids(q.evaluation.bearerIds)                    # nonempty and unique
+D_q := keys(q.expectedBearerDeltas)
+P_q := ids(q.payerIds)
+B_q := ids(q.beneficiaryIds)
+A_q := ids(q.authorization.envelope.consequenceBearerIds)
+       when an envelope or partial envelope supplies that field
+
+D_q = E_q
+A_q ⊆ E_q
+P_q ⊆ E_q
+B_q ⊆ E_q
+
+q.status in {refused, unavailable}
+  -> q.attemptedActionId=null and q.expectedOutcome=null
+```
+
+No named authorized bearer, payer, beneficiary, or evaluated affected bearer
+may disappear by omission from the expected-delta map. For an action-attributed
+outcome `r` paired with `q`:
+
+```text
+r.evaluationRef = q.evaluation.id
+ids(r.consequenceBearerIds) = E_q
+set(observation.bearerId for observation in r.bearerObservations)
+  = ids(r.consequenceBearerIds)
+```
+
+Multiple measures may produce multiple observations for one bearer, but every
+named consequence bearer must have at least one observation and no observation
+may introduce an unnamed bearer. Ambient observations obey the same internal
+`consequenceBearerIds`/`bearerObservations` equality under their own evaluation
+reference; they are not linked to a null action as its consequence.
 
 Outcome invariants:
 
