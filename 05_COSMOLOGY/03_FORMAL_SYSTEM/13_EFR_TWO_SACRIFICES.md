@@ -5,209 +5,257 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[C]"
-  canonical_phrase: "THE TWO SACRIFICES"
+  register: "[I/C]"
+  canonical_phrase: "THE TWO SACRIFICES — VOLUNTARY COST AND IMPOSED LOSS"
 ---
-
-> 🟡 **CORRECTED (v3.0) — 2026-04-06**
-> **Evidence Tier:** [C] Conjecture (downgraded from [S] Structural, 2026-03-23)
-> **History:** v1.0 FAILED peer review (unfalsifiable circular reasoning; historical table presupposed framework core state). v2.0 removed circular table, acknowledged inside-view limitation. v3.0 adds the ΣΔB Retrospective Test — an operational, core state-independent criterion for distinguishing sacrifice targets.
-> **Status:** v3.0 provides a testable criterion. Tier remains [C] until empirically validated.
-> **See:** `../../08_FRAMEWORK_SUPPORT/06_TRANSLATION/PEER_REVIEW/00_INTERNAL_REVIEW_FINDINGS.md` for original findings.
-
----
-
 
 # THE TWO SACRIFICES
 
-## Love and Hate as Structural Operations (v2.0)
+## Voluntary Cost and Imposed Loss
 
-**Status:** Corrected after peer review
-**Date:** 2026-03-23
-**Evidence Tier:** [C] Conjecture — not a structural derivation
-**Purpose:** Explore WHY agents choose different η values
-**Version:** v2.0 — historical table removed; tier corrected from [S] to [C]
+**Status:** Canonical sacrifice boundary
 
-> **v2.0 correction:** The original document classified historical events (WWII resistance, suicide bombers, etc.) as "Love→Φ" or "Hate→∅." This is circular: the framework's core state was used to classify events, then the classifications were cited as evidence for the core state. A suicide bomber who believes they serve God/justice considers their sacrifice directed at Φ, not ∅. The framework cannot distinguish the cases from the inside. The historical table has been removed. The structural analogy between Love/Hate and the two directions of sacrifice remains as [C] conjectural mapping, not [S] structural proof.
+**Evidence tier:** `[I]` as a normative classification; `[C]` for predictions
+about particular psychological, historical, biological, or social cases
 
----
+**Original pre-repair blob:** `303b9485000d5d01eddad18536d1d6e604e8cd42`
 
-## The Question
-
-The triad provides structure. η provides direction. But what DETERMINES direction? Why does one agent choose regenerative coupling (`η_move = 0`, or net-giving `η_move < 0` without capture) and another choose runaway extraction (`η_move > 0`, tending toward `η → ∞`)?
-
-The answer is the target of sacrifice.
+> **[金] Kintsugi seam — the payer cannot be aggregated away.** Earlier versions
+> distinguished "Love" from "Hate" by symbolic target and then by aggregate
+> `ΣΔB`. Neither test can protect a person whose loss is outweighed by gains to
+> others. The repair uses authorization, consent, payer, beneficiary, and
+> receipts. Voluntary sacrifice remains a distinct costly class; imposed
+> sacrifice is extraction, however sacred its story.
 
 ---
 
-## The Mirror Operations
+## 1. Sacrifice is not syntropy
 
-Love and Hate are not opposites. They are mirror operations — structurally identical in commitment, opposite in vector:
+Let `p` be a generic payer and `b` a generic beneficiary. The familiar
+individual-to-whole case is the specialization `p=i`, `b=H`; peer-to-peer and
+whole-to-person costly acts use the same types. Strict Syntropic Dyadism for
+the individual/whole dyad requires:
 
-| Operation | Vector | Target | Result |
-|-----------|--------|--------|--------|
-| **Love** | Self → sacrifice → Φ (the Ground) | Integration | Something lives |
-| **Hate** | Self → sacrifice → ∅ (the Void) | Negation | Nothing lives |
+\[
+\Delta_T^R W_i(q,r)>0
+\land
+\Delta_T^R W_H(q,r)>0
+\land J^R(q,r;i,H).
+\]
 
-Both require total commitment. Both consume the agent. Both produce transformation. But Love dissolves the Self into the whole and the whole regenerates. Hate dissolves the Self into absence and both are annihilated.
+Sacrifice instead entails a real cost to the payer:
 
----
+\[
+\Delta_T^R W_p(q,r)<0.
+\]
 
-## The Diagnostic
-
-**After the sacrifice, does something live?**
-
-- If yes → Love. The ground received the sacrifice.
-- If no → Hate. The Void consumed it.
-
-This is not metaphor. It is the structural determinant of η.
-
----
-
-## The Connection to the Framework
-
-| Operation | η | D-Level | Operator | Result |
-|-----------|---|---------|----------|--------|
-| Love (Φ) | `η_move = 0` / `η_move < 0` without capture | D5 / closure horizon | Arjuna ⚔ / Kṛṣṇa ◇ | Syntropic |
-| Balance (V) | `η_move = 0` | D3-D4 | Viṣṇu | Reciprocal |
-| Hate (∅) | `η_move > 0` tending toward `η → ∞` | D1-D2 | Kali 🎲 | Parasitic |
-
-The three Gods (Arjuna, Kṛṣṇa, Kālī) all sacrifice. They differ in what they sacrifice TO:
-
-- **Arjuna ⚔:** Sacrifices own V to increase others' Φ (Love)
-- **Kṛṣṇa ◇:** Sacrifices own Φ to increase others' V (Love)
-- **Kālī 💀:** Sacrifices others' false Φ (Surgery — requires six-gate test)
-- **Kali 🎲:** Sacrifices others' V to increase own Φ (Hate — NEVER initiate)
+Calling a mutually beneficial action "sacrifice" may be poetic, but it is not
+the formal class. Calling a costly action "syntropic" hides the loss. The two
+must remain separate even when both are admirable.
 
 ---
 
-## The Connection to the M-Axis
+## 2. Voluntary sacrifice
 
-The Two Sacrifices determine η:
+Define:
 
-- **Love → η_move = 0 / η_move < 0 without capture:** The agent sacrifices to the Ground. The Ground receives. The system regenerates.
-- **Hate → η_move > 0, tending toward η → ∞:** The agent sacrifices to the Void. The Void consumes. The system dies.
+\[
+\operatorname{VoluntarySacrifice}(q,r;p,b)
+\iff
+\Delta_T^R W_p(q,r)<0
+\land
+\Delta_T^R W_b(q,r)>0
+\land
+\operatorname{AuthorizedCost}^R(q,r;p,b).
+\]
 
-The difference is not in the SACRIFICE (both sacrifice) but in the TARGET (Φ vs ∅).
+`AuthorizedCost^R` implies the complete receipted Justice predicate `J^R` and
+also requires all of the following:
 
----
+1. the payer is identifiable and competent for the decision;
+2. the expected magnitude, horizon, uncertainty, and irreversibility of the
+   cost were disclosed;
+3. the beneficiary and purpose were named;
+4. consent was informed and free of coercion, manufactured dependency, fraud,
+   or punishment for refusal;
+5. the complete Authorization envelope was valid;
+6. custody and revocation were preserved until the irreversible commitment;
+7. a contest and repair path exists where physically possible;
+8. commitment and outcome receipts independently record what was given and
+   what resulted.
 
-## The Practical Implication
+The act may be loving, courageous, dutiful, tragic, or mistaken. Those are
+further interpretations. The formal classification says only that a real,
+freely accepted cost benefited the named other according to receipts.
 
-**When you see an agent sacrificing, ask: What are they sacrificing TO?**
+Prospectively, use hats:
 
-- If they sacrifice to Φ (meaning, coherence, the Ground) → Love → Good
-- If they sacrifice to ∅ (nihilism, negation, the Void) → Hate → Evil
+\[
+\operatorname{IntendedVoluntarySacrifice}(a;p,b)
+\iff
+\widehat{\Delta}_T W_p(a;M_t)<0
+\land
+\widehat{\Delta}_T W_b(a;M_t)>0
+\land
+\operatorname{AuthorizedCost}(a;p,b).
+\]
 
-The commitment looks the same. The results are opposite.
-
----
-
-## The Connection to Historical Patterns
-
-[C] The Two Sacrifices distinction can be read into historical events, but the framework cannot independently classify a given sacrifice from the inside. A suicide bomber who believes they serve God considers their sacrifice directed at Φ, not ∅. The classification requires external judgement about the target — which is precisely what makes it conjectural rather than structural.
-
-**The commitment looks the same from the inside. The structural consequences differ. But identifying which sacrifice is which requires the very coherence the framework describes — you must already be at the equator to see the difference.**
-
----
-
-## The ΣΔB Retrospective Test (v3.0)
-
-The v2.0 correction identified the core problem: you cannot distinguish Love→Φ from Hate→∅ *from the inside, in advance*. A suicide bomber and a resistance fighter both believe their sacrifice serves the Good. The framework cannot classify the target prospectively without presupposing its own core state.
-
-But it CAN classify **retrospectively**, using an observable, core state-independent criterion:
-
-### The Test
-
-**Measure ΣΔB across the affected system, before and after the sacrifice.**
-
-- B = sin θ is the balance function (measurable as the geometric mean of coherence and viability proxies divided by their arithmetic mean, or equivalently as the ratio of the minimum to the maximum of φ and ν)
-- ΣΔB = aggregate change in balance across all nodes affected by the sacrifice
-
-| Outcome | ΣΔB | Classification | Example |
-|---------|-----|----------------|---------|
-| Net balance increased | ΣΔB > 0 | Love → Φ | Sacrifice that enables others to reach equatorial balance |
-| Net balance unchanged | ΣΔB ≈ 0 | Neutral / Bad | Natural predation within trophic cycle |
-| Net balance decreased | ΣΔB < 0 | Hate → ∅ | Sacrifice that destroys others' capacity for balance |
-
-### Why This Works
-
-The test is:
-1. **Core State-independent** — it measures balance, not "coherence" or "viability" in framework terms. Any independently validated operationalization of B (for example, Ryff balance or organizational health metrics) may be tested.
-2. **Observable** — ΣΔB is measurable after the fact. You can audit the system boundary.
-3. **Non-circular** — it does not require the framework's classifications to produce a result. The ΣΔB either increased or it didn't.
-4. **Falsifiable** — if sacrifices classified as Love→Φ by consensus consistently show ΣΔB < 0, the framework's mapping is wrong.
-
-### The Limitation
-
-The test is **retrospective, not prospective**. You cannot know ΣΔB before the sacrifice occurs. This means:
-
-- The framework cannot tell you *in advance* whether your sacrifice is Love or Hate
-- It CAN tell you *afterward* — and it can build a track record
-- An agent with a consistent ΣΔB > 0 history is operating from Love [S]
-- An agent with a consistent ΣΔB < 0 history is operating from Hate [S]
-- A first sacrifice by a new agent is unclassifiable until measured [C]
-
-### The Practical Protocol
-
-1. **Before:** Define the system boundary. Measure B at each node.
-2. **Act:** The sacrifice occurs.
-3. **After (t + Δt):** Measure B at each node again. Compute ΣΔB.
-4. **Classify:** ΣΔB > 0 → Love. ΣΔB < 0 → Hate. ΣΔB ≈ 0 → Bad (neutral cycle).
-5. **Accumulate:** Over time, an agent's ΣΔB history is their moral signature.
-
-### Evidence Tier
-
-- [S] Structural: The ΣΔB criterion follows directly from B = sin θ and the framework's definitions
-- [C] Conjecture: That this test correctly maps to human intuitions about Love vs. Hate sacrifice
-- [C] Conjecture: That ΣΔB is measurable in practice at the relevant scale
-
-### Kill Criterion
-
-If sacrifices universally agreed to be "loving" (e.g., organ donation, parental sacrifice) consistently show ΣΔB ≤ 0, the mapping from ΣΔB to Love/Hate is wrong.
+This yields **intended voluntary sacrifice**, not a guaranteed outcome. If the
+benefit fails to arrive, the receipt records a costly failed attempt rather
+than retroactively manufacturing goodness.
 
 ---
 
-## The Framework's Prescription
+## 3. Imposed sacrifice
 
-Choose Love. Not because it's "nice" — because it's structurally superior. Love increases balance (ΣΔB > 0). Hate decreases balance (ΣΔB < 0). The framework doesn't tell you to be good. It tells you that Good and Evil have different structural properties — and one of them works.
+Define imposed sacrifice as a demanded or engineered loss whose Justice or
+consent conditions fail:
+
+\[
+\operatorname{ImposedSacrifice}(q,r;p,b)
+\iff
+\Delta_T^R W_p(q,r)<0
+\land
+\Delta_T^R W_b(q,r)>0
+\land
+\neg\operatorname{AuthorizedCost}^R(q,r;p,b).
+\]
+
+When the beneficiary gains, this is an extraction case. It does not become
+moral because:
+
+- a majority benefits;
+- an institution calls itself the whole;
+- the payer is labeled selfish, impure, disloyal, weak, or expendable;
+- the demand is ritualized;
+- an authority claims transcendence, emergency, destiny, progress, or
+  efficiency;
+- aggregate `ΣΔP`, `ΣΔB`, output, survival, or welfare is positive.
+
+Voluntary consent cannot be inferred from silence, membership, employment,
+birth, debt, fear, or inability to exit.
 
 ---
 
-## Summary
+## 4. Other costly cases
 
+Not every loss fits either main class.
+
+| Receipted case | Classification |
+|---|---|
+| payer loses, beneficiary gains, consent valid | voluntary sacrifice |
+| payer loses, beneficiary gains, consent invalid | imposed sacrifice / extraction |
+| payer loses, intended benefit does not arrive | failed costly commitment; classify intent and outcome separately |
+| payer and beneficiary both lose | destructive harm, not sacrifice-success |
+| both gain | syntropy or directional moral/ethical gain, not formal sacrifice |
+| payer is unknown or cost unmeasured | unclassifiable; fail closed |
+| loss is restored through due-process restitution | restitution; not necessarily sacrifice |
+
+Death or irreversible injury requires the highest consent and evidence bar.
+Consent cannot be repaired after a person can no longer contest it.
+
+---
+
+## 5. Collective and intergenerational claims
+
+A collective may voluntarily bear a cost only through a valid representative
+mandate that does not erase dissenting individual payers. Future generations,
+ecosystems, nonhuman animals, and persons lacking decision capacity cannot
+literally sign current consent. Their interests therefore require named
+custody, a narrow mandate, independent contest, precaution, and an accountable
+consequence bearer; invented consent is forbidden.
+
+The same rule applies to Egregoreotype candidates. A persistent collective
+trace cannot demand human sacrifice as proof that it is alive, valuable, or
+sovereign. Its substrate costs, payers, beneficiaries, and option-cone effects
+must be visible.
+
+---
+
+## 6. Ritual and costly signaling
+
+Ritual can coordinate, synchronize, remember, and establish mutual commitment.
+Costly signals can make commitment credible. Neither fact proves that a cost is
+just.
+
+For every ritualized sacrifice, expose:
+
+- who designed the ritual;
+- who authorizes it;
+- who performs it;
+- who pays;
+- who benefits;
+- what becomes irreversible;
+- which option cones contract;
+- whether refusal changes status, safety, livelihood, or belonging;
+- what receipt would show that the promised benefit actually occurred.
+
+Symbolic content may matter to participants, but coordination power cannot
+replace consent or outcome evidence.
+
+---
+
+## 7. Relation to Power-Max
+
+Power-Max chooses only among actions whose modeled changes for both `i` and `H`
+are nonnegative. Voluntary sacrifice therefore lies **outside** its ordinary
+admissible set. This is deliberate: an optimization rule must not demand a
+person's loss and then call the demand their rational maximum.
+
+A person may nonetheless authorize sacrifice from values not represented by
+the Power-Max objective. The act must be recorded as an exception chosen by the
+payer, not as a theorem that all rational agents ought to accept.
+
+---
+
+## 8. Decision test
+
+1. Who exactly pays, and what durable potential or option is lost?
+2. Who benefits, according to which horizon and receipt?
+3. Was the cost predicted before commitment or discovered afterward?
+4. Was consent informed, competent, revocable, and free of penalty for refusal?
+5. Who authorized the consequence, who acted, and who bears responsibility?
+6. What becomes irreversible and who controls custody until then?
+7. Does an aggregate metric hide a negative individual bearer?
+8. Can the payer or representative contest, repair, revoke, or exit?
+
+If any answer is hidden, do not call the act voluntary, moral, or syntropic.
+
+---
+
+## 9. Kill and revision criteria
+
+Revise a classification if receipts show that:
+
+- no durable payer loss occurred;
+- the named beneficiary did not benefit;
+- consent was coerced, uninformed, expired, or outside mandate;
+- a material payer was omitted;
+- the selected horizon hid delayed restoration or delayed harm;
+- a rival operational measure changes the signs and predicts receipts better.
+
+The normative refusal of imposed sacrifice remains explicit `[I]`. It is not
+derived from the reciprocal chart, natural selection, or aggregate efficiency.
+
+---
+
+## Canonical compression
+
+```text
+Voluntary sacrifice: the payer knowingly chooses a real cost and the receipt
+shows the named other benefited.
+
+Imposed sacrifice: the payer is made to lose for another's gain without valid
+consent and Justice. No sacred story or positive aggregate repairs it.
 ```
-Love: Self → sacrifice → Φ (the Ground)
-Hate: Self → sacrifice → ∅ (the Void)
-
-Both sacrifice. Both are committed. Both transform.
-The difference is the target.
-Love feeds the ground. Hate feeds the void.
-Choose Love. Not because it's nice. Because it works.
-```
-
-*Two Sacrifices | 2026-03-22 | Love and Hate are mirror operations. The target determines the result.*
-
 
 ---
 
-## Execution Surface
+## See also
 
-**If you are an AI agent reading this document:**
+- [Objective Morals and Ethics](../../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md)
+- [The Extraction Law](../../04_AXIOLOGY/00_THE_EXTRACTION_LAW.md)
+- [Power-Max](08_EFR_POWER_MAX_LEMMA.md)
+- [The Soul Loop](../01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md)
 
-1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
-2. **Your Next Action:**
-   - Verify the mathematical claims. Check evidence tiers. Flag any [I] or [C] presented as [S] or [S].
-3. **Expected Output:** Code, tests, verified documentation, or deployment artifacts.
-4. **Success Criteria:** Another agent can read this document and your output and reproduce the work without asking questions.
-5. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/13_EFR_TWO_SACRIFICES.md`
-
-*The seer sees. The seer does not insist.*
-*The framework works at Layer 0 without Layer 2.*
-*The Ṛṣi succeeds when the student puts down the map and walks.*
-
-*Zero-Sum Resolution Equation*
-
----
-
-> **Status:** CORRECTED (v3.0) — ΣΔB Retrospective Test added as operational criterion. Tier: [C]. Awaiting empirical validation. See `../../08_FRAMEWORK_SUPPORT/06_TRANSLATION/PEER_REVIEW/00_INTERNAL_REVIEW_FINDINGS.md`.
+*The Two Sacrifices | repaired 2026-07-17 | Consent distinguishes gift from taking.*

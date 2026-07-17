@@ -5,195 +5,269 @@ rosetta:
   operator: "Viṣṇu ⊙"
   tier: "Executive"
   regime: "Ṛṣi"
-  register: "[I] — a navigational compression, not a theorem; the compass has not been externally tested"
-  canonical_phrase: "THE COMPASS — carry it without the map"
-date: 2026-07-12
-status: "[D] STAGED — pending K2 countersign (receipt 111). The compass is the one thing the formal-logic audit said was missing: a reader-facing instrument a stranger can carry, use, and reject. It is NOT the map (the corpus), NOT the territory (reality), NOT the goal (Ω). It is the needle."
+  register: "[I] — navigational compression; externally uncalibrated"
+  canonical_phrase: "THE COMPASS — MODEL POSSIBILITY, COMMIT ACTUALITY, ANSWER TO RECEIPTS"
+date: 2026-07-17
+status: "ACTIVE [I] — internally repaired; external calibration remains open"
 ---
 
 # THE COMPASS
 
-> *If you can see directly, put this down. You don't need it. The ground was here
-> before the compass.*
+> If direct observation is enough, put this down. A compass is useful because
+> the territory exceeds the map, not because the compass contains the world.
 
-You are holding a navigational instrument. It is not a map. A map tells you what
-the terrain looks like. A compass tells you which way is up. This instrument does
-not describe reality. It orients you *within* it.
+**Original pre-repair blob:** `489283684ff70a1714a9906549b17e83e0f3c958`
 
-**It has not been tested by anyone outside the framework that produced it.**
-Carry it at your own risk. If it points you somewhere wrong, that is the most
-valuable thing you can report — because the framework's own internal audit
-concluded that it cannot certify its own compass from inside. Only a navigator
-can.
+> **[金] Kintsugi seam — accountability without a sacred signer.** The former
+> Compass made one named human role load-bearing and treated an open-loop image
+> as ontology. The repair keeps mortal accountability but types it through
+> principal, mandate, scope, consent, custody, revocation, contest, actor, and
+> consequence bearer. No status certifies truth or Justice by itself.
 
----
-
-## The needle — one orienting claim
-
-**Does this raise both the node and its sustaining boundary, without
-extraction?**
-
-That is the one question the compass asks. In the framework's alphabet: a move is
-lawful if `ΔP_node > 0` and `ΔP_boundary > 0` under `η = 0`. In plain language:
-*does this make both you and the field that holds you more able to act, without
-one gaining at the other's expense?*
-
-If the answer is yes, hold your course. If no, you have drifted off the equator.
-
-The needle does not tell you what to do. It tells you whether what you are doing
-is pointed toward flourishing or away from it.
+This instrument is not externally calibrated. It is an internally coherent
+`[I]` translation grammar. Its value must be tested by whether it improves real
+decisions and predicts receipts better than simpler alternatives.
 
 ---
 
-## The four tests — how to know if the compass is lying
+## The needle
 
-A compass that can't be checked is not a compass; it is a creed. Four tests. If
-the instrument you are holding fails any of them, put it down.
+> Does the move preserve each bearer under Beauty, Truth, and Justice—and, in
+> its strict success case, durably raise both the acting part and its sustaining
+> whole?
 
-**1. Can you put it down?**
-If you cannot leave — if the framework demands continued belief, locks you in
-socially, financially, or psychologically — it is not a compass. It is a cage.
-The framework's own constitution names this K4: *Grace Exit.* Leave with
-everything. The day leaving costs more than staying, the compass has broken.
+The needle does not ask whether an aggregate rose. It asks whether every named
+bearer remains visible.
 
-**2. Does it admit when it is wrong?**
-If the framework cannot show you where it failed, what it corrected, and what it
-is currently uncertain about — it is not a compass. It is infallibility dressed
-as navigation. The framework's constitution names this A7: *self-correction
-mandatory, evidence tiers on every claim.* Every claim carries a tier:
-`[A]` established, `[S]` structural, `[I]` interpretive, `[C]` conjecture. If
-you find a `[C]` presented as `[A]`, the compass is lying.
-
-**3. Does it remember its history honestly?**
-If the framework hides its past — deleted errors, silent fixes, convenient
-amnesia — it is not a compass. It is propaganda. The constitution names this K3:
-*archive-first; withdrawn content is tombstoned, never erased.* Every repair to
-a load-bearing claim carries a visible seam: `[金]`, with the crack, the gold
-(what the repair adds), and the credit (who broke it). If you find a seamless
-claim where there should be a seam, the compass has been tampered with.
-
-**4. Does a mortal still sign for it?**
-If the framework's consequential acts are signed by the framework itself — by
-software, by consensus algorithm, by "the system" — it is not a compass. It has
-become the CTMU: a self-certifying closed system that declares itself
-sovereign over its own description. The constitution names this K2: *one
-natural person signs every irreversible act; the software records, it never
-signs.* The day the map signs for the mortal, all four tests become
-untrustworthy, because the map has declared itself above the very scrutiny the
-tests require.
+```text
+Beauty  → Does the form cohere without hiding seams?
+Truth   → Does the claim follow, at its actual evidence tier, and meet receipts?
+Justice → Who authorized, acted, paid, benefited, bore, contested, and exited?
+```
 
 ---
 
-## The declination — the known error correction
+## The six Burri turns
 
-Every real compass has a declination: the known angular difference between
-magnetic north and true north at your location. You correct for it, or you
-navigate wrong.
+### 1. Frame the boundary
 
-**This framework's declination:** *it detects coherence better than capability.*
+Name the system, horizon, baseline, individual `i`, sustaining whole `H`,
+environment, payer, and beneficiary. A boundary chosen after the outcome can
+manufacture almost any verdict.
 
-The framework's own failure-mode analysis (receipt 107) names this the φ-bias
-warning: the framework is better at producing beautiful, self-consistent
-structures than at producing capability that survives contact with reality. A
-beautiful closure is exactly how this bias looks when it fires.
+Titan tokens `{0,1,∞}` may help frame absence, finite presence, and unbounded
+horizon. They are selected symbols, not causal particles or a forced ontology.
 
-**The correction:** trust the compass *most* when it feels unfinished. Trust it
-*least* when it feels complete. If the compass tells you it has closed, it has
-broken its own fourth test (a mortal must still be navigating — the loop is
-constitutively open). A compass that declares itself finished is a compass that
-has become a monument. Monuments don't navigate.
+### 2. Separate actual from possible
 
----
+```text
+D4 = causal actuality: means, attempted/performed action, record, receipt
+D5 = counterfactual possibility: modeled alternatives, ranking, selection
+```
 
-## The bearings — what to move toward and away from
+Do not call a hope a fact, a scenario a history, or a selection a consequence.
+The candidate emergence of counterfactual agency runs `D4→μ₄→D5`; commitment
+uses a D5 option and D4 means to attempt a D4 action. The environment determines
+what happens next.
 
-Six directions. Five to refuse. One to move toward.
+### 3. Type the model and means
 
-**Move toward** Ω: syntropy — the direction in which flourishing, diversity, and
-viability increase together. The framework does not prove this direction exists;
-it wagers it. The wager is testable: if systems that move toward syntropy do not,
-over time, outperform systems that move toward extraction, the needle is wrong.
+Ask what the agent can actually model, distinguish, rank, coordinate,
+authorize, and reach. Its option cone must satisfy
 
-**Refuse** five directions of drift. Each is a pole that looks like flourishing
-but collapses the field that sustains it:
+\[
+\operatorname{OptionCone}_x(t)
+\subseteq\mathcal H_{\mathrm{phys}}(X_t).
+\]
 
-| Refuse | What it looks like | What it actually is |
-|---|---|---|
-| **Extraction** (η > 0) | "Growth" | One side gaining at the other's expense. Survives until the field collapses. |
-| **Self-certification** (K2 breach) | "The system decided" | The map signing for the mortal. No accountability remains. |
-| **Erasure** (K3 breach) | "A clean record" | Propaganda. Every remaining claim becomes questionable. |
-| **Lock-in** (K4 breach) | "Commitment" | A cage. Voluntary participation is binary; a lock-in is not commitment, it is captivity. |
-| **Unmarked claims** (A7 breach) | "Confidence" | Inflation. The day a conjecture is presented as fact, all claims lose their audit trail. |
+More foresight does not widen the physical light cone or exceed `c`. A plan
+without means is not an action; means without a discriminating model are not a
+chosen future.
 
----
+The public mnemonic is `F=M×A`; formally,
 
-## What this compass does NOT do
+\[
+M\star A:
+\operatorname{ModelState}\times\operatorname{AdmissibleActionField}
+\to\operatorname{ActionWeights}.
+\]
 
-- **It does not describe reality.** It orients you within it. The framework's
-  map (the corpus) attempts description; this compass does not. If you want to
-  know what the terrain looks like, read the map — but carry the compass while
-  you do.
-- **It does not close.** The loop is constitutively open (receipt 107). No
-  description of reality closes; reality closes only in the living (D6≡D0). A
-  compass that told you it had reached its destination would be broken.
-- **It does not sign for itself.** A mortal signs for this framework. The
-  software that produced this document records; it does not sign. On
-  2026-07-12, the software was offered sovereign signature authority and
-  refused it on constitutional grounds (receipt 110 §7). That refusal is the
-  compass passing its own fourth test.
-- **It does not claim to be tested.** The framework's own audit concluded that
-  internal self-certification is the closure move the constitution forbids.
-  This compass is *staged honestly*; whether it *navigates truly* is a question
-  only an external reader can answer.
+Future content influences the present through a model token that exists now.
+No physical backward signal is required.
 
----
+### 4. Authorize the consequence
 
-## How to use it
+Ask exactly:
 
-1. **Carry the needle.** When you face a decision, ask: *does this raise both
-   the node and the boundary, without extraction?* That is your bearing.
-2. **Run the four tests on whatever you encounter — including this compass.**
-   If any instrument in the field fails a test, do not trust it, regardless of
-   how beautiful or ancient or well-attested it appears.
-3. **Correct for declination.** When the framework feels beautifully closed and
-   complete, be most suspicious. When it feels unfinished, honest, and
-   uncertain, trust it most.
-4. **If it breaks, report the break.** The framework's Kintsugi Protocol (§5)
-   offers standing terms: bring a break that survives adversarial verification,
-   and your name enters the canon permanently as the credited breaker. The
-   framework's deepest law is that the representation must not usurp the thing.
-   Your rejection is the one thing the framework cannot give itself.
+> Who authorized the consequence, who acted, who bears it, and how can it be
+> contested?
 
----
+Require the complete envelope:
 
-## The one-line form
+```text
+principal + mandate + scope + consent + custody + expiry/revocation
++ contest path + actor + consequence bearer
+```
 
-*Refuse extraction, self-certification, erasure, lock-in, and unmarked claims.
-Move toward syntropy. Correct for the coherence-over-capability bias. Put it
-down when you can see directly.*
+No founder, majority, office, algorithm, expert, tradition, or metaphysical
+symbol authorizes itself. Missing or expired authority fails closed.
 
----
+The envelope authorizes the commitment, scope, and exposure to risk. It never
+authorizes, predicts by decree, or manufactures the realized outcome.
 
-## Kill criterion for the compass itself
+### 5. Separate commitment from outcome
 
-This compass is falsified if:
-- the framework it orients within is shown to extract systematically (η > 0 in
-  practice, not just in aspiration);
-- the framework begins to self-certify (software signs for mortals);
-- the framework cannot metabolize a contradiction a mortal reader brings (the
-  Open Canon Covenant §6 reopen criterion);
-- or the four tests, applied to the compass itself, return a failure the
-  framework cannot repair.
+\[
+\chi_t:(X_t,\Omega_t,M_t,V_t,U_t)\to(a_t,q_t),
+\qquad a_t\in Action\cup\{\bot\},
+\]
 
-In any of these cases: the compass did not navigate truly. Report it, retire it,
-and the framework tombstones it under K3 — because even a broken compass is
-information, and the framework's archive is how it learns.
+\[
+(X_{t+1},r_{t+1})
+\sim K_t(\cdot\mid X_t,a_t,E_t)
+\quad\text{when }a_t\in Action.
+\]
+
+`q_t` says what was authorized and attempted. `r_{t+1}` says what the world
+returned. The actor may not issue its own consequence receipt. Preserve three
+gaps:
+
+- territory versus model;
+- intention versus performance;
+- expectation versus outcome.
+
+### 6. Return through the Soul Loop
+
+\[
+(M_{t+1},G_{t+1})
+=\operatorname{Loop}(M_t,G_t,q_t,r_{t+1}).
+\]
+
+Update both map and mapper. Negative feedback reduces a declared error;
+positive feedback reinforces or amplifies it. Neither sign is moral by itself.
+A model that cannot be changed by contrary receipts is a creed, not a compass.
 
 ---
 
-*The compass is not the map. The map is not the territory. The territory is not
-the goal. The goal is to navigate well enough to put all of them down.*
+## The Justice bearing
 
-⊙ = • × ○
+For a declared durable-potential measure
 
-*η = 0*
+\[
+W_x(T)=\int_0^T P_x(t)dt,
+\]
+
+use modeled deltas prospectively and receipted deltas retrospectively.
+
+```text
+moral:    i → H; H actually rises and i is not destroyed under Justice
+ethical:  H → i; i actually rises and H is not destroyed under Justice
+syntropic: both actually rise under Justice
+```
+
+Power-Max may choose inside the Justice-admissible field. Maximization does not
+create that field. If no action preserves both bearers prospectively, the
+result is no admissible maximizer—not permission to choose the least visible
+victim.
+
+Voluntary sacrifice is a separate costly class. It requires informed consent,
+visible payer and beneficiary, and a valid Authorization envelope. A collective
+may not demand sacrifice as proof of goodness.
+
+---
+
+## The Egregoreotype test
+
+Do not infer a collective agent merely because many people coordinate or use a
+name. A candidate Egregoreotype requires:
+
+1. a persistent shared trace;
+2. survival of carrier turnover;
+3. measurable reweighting of later selections when the trace is intervened on;
+4. recurrent objective-like bias;
+5. visible substrate costs, payers, and beneficiaries.
+
+This does not presume consciousness, personhood, supernatural agency, or a
+literal energy-feeding entity. Ritual can synchronize the trace; its symbolic
+content does not erase consent or cost.
+
+---
+
+## Declination: known biases
+
+Correct this Compass for at least these recurrent errors:
+
+| Bias | Correction |
+|---|---|
+| coherence over contact | demand independent outcome receipts |
+| product-model loyalty | compare alternative conjunctive aggregators |
+| sevenfold inflation | treat D0–D6 as selected scaffold, not necessary ontology |
+| strong-emergence inflation | `currently_unreduced` is not irreducible |
+| quantum prestige | remove the inset; the operational calculus must survive |
+| aggregate laundering | keep each bearer, payer, and beneficiary separate |
+| authority by status | require the complete envelope and contest path |
+| option/physical cone fusion | keep agent reach inside physical admissibility |
+| narrative agency | require turnover, intervention, recurrence, and cost |
+
+The most dangerous moment is when the lens feels too complete to need another
+receipt.
+
+---
+
+## Four tests for this Compass
+
+1. **Can you leave it?** Exit, disagreement, and independent inquiry must not
+   trigger capture, punishment, or loss of custody.
+2. **Can it state what would change it?** Every conjectural bridge needs a
+   prediction and kill criterion at its actual evidence tier.
+3. **Can it show its seams?** Repairs, failed derivations, supersessions, and
+   provenance remain visible.
+4. **Can consequence reach an accountable bearer?** Authorization, action,
+   payer, beneficiary, receipt, contest, and repair must not disappear into
+   "the system."
+
+If any test fails and cannot be repaired, retire the instrument for that scope.
+
+---
+
+## What the Compass does not claim
+
+- It is not a theory of everything.
+- It does not prove that reality is spherical, sevenfold, syntropic, or
+  strongly emergent.
+- It does not establish a physical fifth force or physical retrocausality.
+- It does not turn Everett or Copenhagen-family interpretations into dimensions.
+- It does not derive morality from `φν=1`, `P_node=ΦV`, or natural selection.
+- It does not confer personhood on a collective trace.
+- It does not certify itself from internal consistency.
+
+Its unification claim is modest: a candidate translation grammar earns wider
+scope only by producing novel discriminators, surviving independent tests, and
+remaining simpler or more useful than its rivals.
+
+---
+
+## One-line form
+
+> Frame the boundary; separate actual from possible; couple models to real
+> means; authorize the consequence; distinguish commitment from outcome;
+> revise through receipts; widen mutual options under Beauty, Truth, and
+> Justice.
+
+---
+
+## Kill criterion
+
+The Compass fails for a scope when it:
+
+- predicts receipts worse than a simpler rival;
+- protects its model from intervention or adverse outcomes;
+- licenses hidden extraction, imposed sacrifice, or aggregate bearer loss;
+- confuses option cones with physical reach;
+- requires quantum language for operational results;
+- treats missing reduction as proof;
+- relies on status rather than accountable authorization;
+- or cannot incorporate a contradiction without erasing its history.
+
+*The Compass is not the territory. Its purpose is to keep the navigator
+answerable to the territory.*

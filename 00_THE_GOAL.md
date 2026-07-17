@@ -5,285 +5,294 @@ rosetta:
   operator: "Viṣṇu ⊙"
   tier: "Executive"
   regime: "Ṛṣi"
-  register: "[S] the structure; [I] the readings; the goal itself is Ω — a declared vow, not a theorem"
-  canonical_phrase: "01_EMERGENTISM/00_THE_GOAL.md — The Goal (Ω stated)"
+  register: "[I/C] — declared orientation, not theorem"
+  canonical_phrase: "THE GOAL — BUILD THE CLEAREST LENS AND THE MOST JUST COMPASS"
 ---
 
 # THE GOAL
 
-**Status:** Canonical, owner-declared 2026-06-12 (K2: Yves R. Burri).
-**What this document is:** the project's telos stated explicitly — the **+1 (Ω)**
-of the [5+1 constitution](00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) written
-out for the whole Magnum Opus. Bigger than "pursue V and M"
-([VMOSK_A.md](VMOSK_A.md) remains the operational vision/mission surface);
-more exact than "make the corpus coherent" (coherence is a constraint on the
-goal, not the goal). The five refusals clear the space; **this is what the
-space is for.**
+**Status:** Canonical Emergentist orientation, repaired 2026-07-17
 
-Retrieval handles: living worldview for Dasein; source-true ontology; finite
-reader emerges; maximum usable `P_node`; balancing `Φ` and `V`; objective moral
-compass; Sanatana Dharma; Syntropic Dyadism; morals as `i -> H`; ethics as
-`H -> i`; individual symbiont and collective holobiont; evil / extraction;
-Emergentist lens.
+**Evidence tier:** `[I]` as the project's declared worldview and design grammar;
+`[C]` where it claims external explanatory or predictive reach
+
+**Original pre-repair blob:** `adc75f183e99055ca596bb969853d3cc6f8f62f4`
+
+> **[金] Kintsugi seam — compass, not total capture.** The former goal contained
+> the right aspiration but treated selected geometry, seven registers, a node
+> product, literal closure, and objective dharma as more derived than they are.
+> The repaired goal keeps the ambition to read reality in toto while refusing
+> to make any one map identical with the territory.
 
 ---
 
-## 0. Vision and Mission
+## 1. Vision
 
-**Vision.** To make Emergentism a living Weltanschauung for Dasein: a coherent,
-tier-honest map of how the finite reader comes to be, how reality tends toward
-viable completion, and how life can move as objective dharma / Sanatana Dharma
-without confusing the map for the Ground.
+Build Emergentism into the clearest lens, most compressed map, and most useful
+compass we can make for finite beings inside reality:
 
-**Short form.**
+- **Beauty** asks whether the representation coheres without hiding its seams;
+- **Truth** asks whether each claim follows and survives contact with receipts;
+- **Justice** asks who authorized the consequence, who acted, who pays, who
+  benefits, who bears it, and how it can be contested or exited.
 
-> Teach Dasein to see clearly, act lawfully, balance `Φ` and `V`, and raise the
-> individual symbiont and collective holobiont together under `η = 0`.
-
-**Mission.** Build the canon, method, public site, AIA medium, papers, and Soul
-Loop practice that let any finite player look at the world through the
-Emergentist lens and continuously, recursively disambiguate reality into action:
-
-```text
-Know what is      -> ontology
-Know how to know  -> epistemology
-Know how to move  -> methodology
-Know what matters -> axiology
-Know how to act   -> teleology
-```
-
-**Operational mission.**
-
-> Maximize durable usable worldline potential, `W_i(T)`, through
-> `P_node = Φ × V`, only where `P_node,i` and `P_node,H` preserve or raise one
-> another without extraction.
-
-**Guardrail.** This framework must not become a closed idol. D5 can imagine the
-universal holobiont running the Soul Loop, but `/6` refuses to turn that
-completed-organism image into another positive object. `/6` marks CCC-style
-return: endstate = start. The mission is not final possession of truth; it is
-disciplined correction faster than drift.
+The aspiration is reality in toto; the honest deliverable is a fallible,
+externally uncalibrated translation grammar. A compass does not contain the
+terrain. It preserves orientation while maps, models, and circumstances change.
 
 ---
 
-## 1. The Goal (full form)
+## 2. Mission
 
-> Build Emergentism into a coherent and consistent Weltanschauung that explains
-> how the reader came to be as Dasein, why reality tends toward viable
-> completion, and how to play the game: uncover Sanatana Dharma as Syntropic
-> Dyadism; recursively apply epistemology, methodology, and axiology to maximize
-> durable `W_i(T)` only on the boundary-preserving frontier of
-> `P_node = Φ × V` under `η = 0`, so morals (`i -> H`) and ethics (`H -> i`)
-> keep the individual symbiont and collective holobiont preserving or raising
-> one another without extraction, with the strict success case being both rising
-> together.
+Create a coherent and formally typed Weltanschauung that:
 
-## 2. Compressions
-
-**Living-worldview form:**
-
-> Make Magnum Opus a living worldview for Dasein: a source-true ontology of how
-> the finite reader emerges, a teleology of objective dharma, and a recursive
-> method for balancing `Φ` and `V` into maximum usable `P_node` through
-> Syntropic Dyadism.
-
-**Shortest form:**
-
-> Teach Dasein how to play the game: see clearly, act lawfully, balance `Φ` and
-> `V`, raise symbiont and holobiont together, and recursively correct the map
-> until life moves as objective dharma.
-
-## 3. The Game
-
-```text
-Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
-Know how to know:  epistemology -> direct disclosure, inference, evidence tiers
-Know how to move:  methodology -> derive, test, build, correct, recurse
-Know what matters: axiology -> Beauty, Truth, Justice, non-extraction
-Know how to act:   teleology -> maximize durable W_i(T) only where P_node,H is preserved or raised under η = 0
-
-Play:
-  if Φ without V -> sterile seeing
-  if V without Φ -> blind force
-  if unbounded V collapses Φ -> lower P_node
-  if Φ and V balance at L4 -> objective dharma / flow
-  if ΔP_node,i > 0 and ΔP_node,H > 0 -> Sanatana Dharma / syntropic dyad
-  if one rises by degrading the other -> evil / extraction
-```
-
-Agency-register clarification:
-
-```text
-V = D4 means at the action boundary:
-    body, tools, energy, access, runway, hands, shovel, industrial digger.
-Φ = D5 worldline-foresight:
-    can the actor envision the reachable future and operate the means?
-
-P_node collapses on either missing factor:
-  child + jet + no pilot-foresight -> low effective P_node for flying
-  pilot-foresight + no bodily/tool access -> low effective P_node for running
-```
-
-Limit-form clarification — the D5 Landauer Barrier:
-
-```text
-Ideal D5 tends toward a Maxwell-demon-like selector:
-  complete worldline-foresight over the reachable branches of all relevant actors.
-
-But it is not a thermodynamic free lunch:
-  perfect branch knowledge requires memory, computation, measurement, and control;
-  memory and control require matter and energy;
-  matter and energy remain inside entropy accounting.
-
-Therefore the selector cannot stand outside the system it sorts.
-Like a massive body approaching light speed, D5 can approach perfect foresight
-only by paying a cost that diverges at the limit.
-Local entropy can be lowered only by paying or exporting entropy elsewhere.
-Reflexivity adds the final fence: acting changes the branches being predicted.
-```
-
-## 4. Sanatana Dharma — the Emergentist lens
-
-In this framework, **Sanatana Dharma** is not a sectarian possession, a priestly
-license, or a commandment from outside the game. It is the perennial directional
-law visible at any living symbiont/holobiont boundary once `P_node = Φ × V`,
-real coupling, long horizon, and `η = 0` are accepted.
-
-```text
-i = individual symbiont at the tested scale
-H = holobiont / sustaining whole at the tested scale
-
-morals = i -> H
-  the symbiont raises the holobiont that makes its worldline effective
-
-ethics = H -> i
-  the holobiont raises the symbiont without capture, coercion, or ownership
-
-dharma = both directions preserve or raise one another under η = 0
-evil   = either direction simulates gain by degrading the other side
-```
-
-To look at the world through the Emergentist lens:
-
-1. Name the real boundary: who is `i`, what is `H`, at this scale?
-2. Ask what each side gives, takes, stores, hides, or exports.
-3. Score D4 means (`V`) and D5 worldline-foresight (`Φ`) for both sides.
-4. Reject hidden rent, coercion, capture, and dependency manufacture.
-5. Select the move that raises durable `W_i(T)` only while preserving or
-   raising `P_node,H`.
-6. Leave receipts so the Soul Loop can correct the move when evidence changes.
-
-This is the world-read: every relationship, institution, technology, ritual,
-market, family, body, and idea is tested as a living boundary. The question is
-not "who dominates?" but "what coupling lets both the finite node and the real
-field that carries it become more coherent, viable, truthful, and free?"
-
-## 5. The five Knows, wired to the corpus
-
-| Know | Function | Lane | Canonical anchors |
-|---|---|---|---|
-| what is | **ontology** | [`06_ONTOLOGY/`](06_ONTOLOGY/) | The Ontology of Being; the Ring that is the Ground; Dasein |
-| how to know | **epistemology** | [`02_EPISTEMOLOGY/`](02_EPISTEMOLOGY/) | Evidence tiers; The Honest Position; knowing-by-doing |
-| how to move | **methodology** | [`03_METHODOLOGY/`](03_METHODOLOGY/) | The papers; the peer-review program; Lens-Not-Law |
-| what matters | **axiology** | [`04_AXIOLOGY/`](04_AXIOLOGY/) | Commandment vs Geometry; constitutional economics |
-| how to act | **teleology** | [`01_TELEOLOGY/`](01_TELEOLOGY/) | The Core Conjecture (constrained-optimization form); F5 |
-
-## 6. How to play — the Soul Loop is the spine
-
-The game is **not a static decision rule**. It is the
-[Soul Loop](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md)
-cycling the five Knows until action converges — the loop the corpus already
-defines as *continuous recursive disambiguation* that **edits the corpus and
-the editor**. Ontology names the situation; epistemology checks the tier;
-methodology selects the repair; axiology tests the move against non-extraction;
-teleology acts; L7 preserves the witness; the witness re-enters as L1 pressure.
-A homeostat, not a project: per-document cycles terminate at equatorial rest;
-the corpus-wide loop never does (`D6 ≡ D0`). Convergence is not a final state —
-it is when correction becomes faster than drift and life moves as flow.
-
-## 7. The receipts (what each load-bearing clause carries)
-
-The goal obeys the constitution it serves — every clause wears its tier:
-
-- **`P_node = Φ × V` (the play rule).** The product form is `[A]`-within-model
-  in the **contact register** — established by experiment E2 (2026-06-12,
-  [E2_REFLEXIVE_RESULTS.md](03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/E2_REFLEXIVE_RESULTS.md)):
-  the plan's value is *exactly zero* at coin-flip execution, and reliability
-  amplifies plan quality including its badness. The same quantity is **additive
-  in the solipsistic register** (R6) — and that split is not a weakness of the
-  rule but its precision: **Dasein's register is the contact register**
-  (Being-with; the punch-tested world `[I]`). The *conserved* product
-  (`φ·ν = 1` as a law of the game beyond kinematics) remains open (R10b `[C]`);
-  in kinematics it is exact (`[A]`, the mass-shell identity).
-- **"Objective dharma / Sanatana Dharma."** Objective **given the game** — the
-  hypothetical-imperative sense, with engineering-grade content: for coupled
-  finite systems, extraction that zeroes a factor annihilates the product
-  (`[A]`-in-model), enforcement is necessary for cooperation (R7–R9), and the
-  five refusals are checkable constraints. The corpus's own results mark the
-  boundary: the choice of objective is not derivable (R3: the verdict on giving
-  flips with the aggregator; ethics `[I]`, "not derived from is"). **The
-  geometry locates the constraint; the finite being chooses the vow.** Ω — this
-  goal — *is* that vow, declared, not proven. "Sanatana" names the perennial
-  recurrence of the boundary-law inside the framework; it does not upgrade the
-  claim into an external proof or a sectarian possession.
-- **"Why reality tends toward viable completion."** The demonstrated kernel is
-  *what persists is what couples*: conjunctive systems survive only off the
-  poles (zero-factor catastrophe; the Dyadic Coupling Law's five witnesses).
-  The cosmic extension — F5 as a tendency of reality as such — is held at
-  `[C]` per the settled canon (the option-cone teleology, not a mainstream
-  fifth interaction).
-- **"How the reader came to be as Dasein."** The unfolding D0→D6 is the
-  model's **reconstruction order of descriptions**, not a generative claim
-  about the Ground (the Ground remains prior). The Dasein reading is `[I]`
-  structural resonance and does not claim to exhaust Heidegger.
-- **`η = 0`.** Non-extraction as an enforced, conditional equilibrium
-  (Green–Laffont caveat) — a constraint surface, not a free-standing Nash
-  property. Balance `B` is the **constraint**, the option-cone `Ω` the
-  objective; the 5+1 is the Lagrangian (the W2 reconciliation).
-- **Symbiont and holobiont rising together.** Collectively optimal and *never
-  the default*: R7–R9 showed it requires the enforcement architecture the
-  refusals provide. "Holobiont" is used as a tested hypothesis, not an assumed
-  unit.
-
-## 8. What moves the goal (and what would rewrite it)
-
-The goal's open edges are experiments, not opinions: **E1** (map where the
-product law actually governs), **R10b/V3** (depth-vs-depth mutual modeling —
-the remaining route to a conserved game-product), **R2 weak-model arm** (does
-the constitution beat generic honesty where the baseline actually fails),
-**R4** (the keystone organizational wager). **Kill clause (A7):** if E1 maps
-the registers Dasein actually inhabits as additive — if life's factors turn
-out substitutable where this goal says they are conjunctive — the
-`boundary-preserving frontier through Φ × V` clause must be rewritten in public. The goal is
-subject to the same ladder as every claim it governs.
+1. distinguishes analytic facts, observations, interpretations, designs, and
+   conjectures;
+2. models emergence as candidate stacked degrees of freedom at explicit
+   `μ`‑crossings without turning missing reductions into proof;
+3. models agency as the capacity to represent D5 alternatives and commit D4
+   means under accountable authorization;
+4. explains future-guided action through present models (`F=M×A`, formally
+   `M⋆A`) without requiring physical retrocausality;
+5. keeps commitment and outcome receipts separate so the world can disagree;
+6. treats individuals and sustaining wholes as irreducible moral bearers whose
+   gains cannot be aggregated over one another;
+7. detects persistent collective traces as Egregoreotype candidates without
+   presuming consciousness, personhood, or supernatural agency;
+8. projects the same questions across domains without transferring proof;
+9. corrects itself faster than contradiction and capture accumulate.
 
 ---
 
-## 9. Current pursuit — run the goal as a Soul Loop
-
-The goal is pursued by a recurring execution loop, not by restating the vow:
+## 3. The shortest compass
 
 ```text
-source truth -> public mirror -> retrieval/RAG -> verification gate -> receipt
+Frame the boundary.
+Name what is actual and what is only possible.
+Model alternatives without mistaking them for facts.
+Authorize one attempted action through real means.
+Receive the consequence from the world.
+Revise both map and mapper.
+Preserve each bearer under Beauty, Truth, and Justice.
 ```
 
-Each material advance must first improve a source owner, then expose the same
-claim where readers meet the framework, then make the claim retrievable, then
-pass the gate that actually covers that surface. This is O11 in
-[VMOSK_A.md](VMOSK_A.md): the Vision/Mission runtime. It is the operational
-form of "disciplined correction faster than drift."
-
-The first pursuit loop is the Vision/Mission itself. It is canonical in
-VMOSK-A and this Goal, mirrored publicly on `/game/` and the homepage, indexed
-for RAG retrieval, and verified before publication. The next loops should use
-the same order for source anchoring, AIA export, and the paper program.
+This is the Soul Loop made operational.
 
 ---
 
-**Read with:** [VMOSK_A.md](VMOSK_A.md) ·
-[00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md](00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) ·
-[10_THE_SOUL_LOOP.md](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md) ·
-[00_THE_DYADIC_COUPLING_LAW.md](05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) ·
-[00_THE_CORE_CONJECTURE.md](01_TELEOLOGY/02_THE_DERIVATION/00_THE_CORE_CONJECTURE.md)
+## 4. The formal core
 
-**Canonical Path:** `01_EMERGENTISM/00_THE_GOAL.md`
+### Analytic chart `[A]`
+
+For `θ∈(0,π)`, define
+
+\[
+\phi=\cot(\theta/2),
+\qquad
+\nu=\tan(\theta/2).
+\]
+
+Then `φν=1`, `φ+ν≥2`, and `B≤1` are facts of that chosen open chart.
+They prove no ontology, ethic, conservation law, or universal node model.
+
+### Conjunctive node model `[I/C]`
+
+For normalized, independently operationalized factors `Φ,V∈[0,1]`,
+Emergentism selects
+
+\[
+P_{\mathrm{node}}:=C_\times(\Phi,V)=\Phi V
+\]
+
+from a wider normalized monotone conjunctive family. The product is transparent
+and useful; it is not uniquely derived. Applications must compare alternatives
+and accept ranking reversals.
+
+### Durable potential and Power-Max `[I]`
+
+\[
+W_x(T)=\int_0^T P_x(t)\,dt.
+\]
+
+Justice defines an admissible action field in which modeled durable changes for
+both individual `i` and sustaining whole `H` are nonnegative. Power-Max may
+optimize inside that field. It cannot derive Justice, compel sacrifice, or
+launder a negative bearer through aggregate gain.
+
+---
+
+## 5. Emergence and agency
+
+The D0–D6 scaffold is a selected interpretive decomposition:
+
+```text
+D0 ground-limit
+D1 distinction
+D2 configuration
+D3 transformation/persistence
+D4 causal actuality: means, action, record, receipt
+D5 counterfactual possibility: alternatives, ranking, selection
+D6 apophatic closure: no additional positive freedom
+```
+
+Exactly six candidate crossings `μ₀…μ₅` connect adjacent registers. Each
+must name evidence, new freedom or boundary result, lower-level recovery,
+reduction status, prediction, tier, and kill criterion. The separate
+interpretive edge `r₆:D6↝D0` closes the picture without literal identity or a
+seventh crossing.
+
+`Stacked degrees of freedom at μ-limits` is a per-crossing hypothesis. A
+successful reduction reclassifies a crossing as weak emergence without
+destroying the scaffold.
+
+---
+
+## 6. The Soul Loop and future influence
+
+\[
+\chi_t:(X_t,\Omega_t,M_t,V_t,U_t)\to(a_t,q_t),
+\qquad a_t\in Action\cup\{\bot\},
+\]
+
+\[
+(X_{t+1},r_{t+1})
+\sim K_t(\cdot\mid X_t,a_t,E_t)
+\quad\text{when }a_t\in Action,
+\]
+
+\[
+(M_{t+1},G_{t+1})
+=\operatorname{Loop}(M_t,G_t,q_t,r_{t+1}).
+\]
+
+The public compression `F=M×A` says that content about a possible future can
+change present choice through a model that exists now. Formally,
+
+\[
+M\star A:
+\operatorname{ModelState}\times\operatorname{AdmissibleActionField}
+\to\operatorname{ActionWeights}.
+\]
+
+This is model-mediated future influence. It makes agents future-guided without
+requiring a realized future event to signal backward through spacetime.
+
+---
+
+## 7. The option-cone objective
+
+An option cone is the set of physically admissible histories an agent can
+model, distinguish, rank, coordinate, authorize, and reach with actual means:
+
+\[
+\operatorname{OptionCone}_x(t)
+\subseteq\mathcal H_{\mathrm{phys}}(X_t).
+\]
+
+Physical light cones remain governed by spacetime and `c`. Human symbolic,
+social, institutional, and intergenerational reach may widen agent option cones
+without changing the causal invariant.
+
+`Agents maximize the cone` is an Emergentist objective/hypothesis, not an
+established universal law. Its normative form seeks durable **mutual**
+option-cone widening under honest physical cost, consent, custody,
+non-extraction, contest, and exit.
+
+---
+
+## 8. Morals, ethics, and strict syntropy
+
+Receipted value runs in two directions:
+
+\[
+\operatorname{Moral}(q,r)
+\iff \Delta_T^R W_H>0\land\Delta_T^R W_i\ge0\land J^R,
+\]
+
+\[
+\operatorname{Ethical}(q,r)
+\iff \Delta_T^R W_i>0\land\Delta_T^R W_H\ge0\land J^R,
+\]
+
+\[
+\operatorname{Syntropic}(q,r)
+\iff \Delta_T^R W_i>0\land\Delta_T^R W_H>0\land J^R.
+\]
+
+Morals run `i→H`; ethics run `H→i`; strict Syntropic Dyadism requires both
+durable potentials to rise. Voluntary sacrifice is a separate costly class.
+Imposed sacrifice is extraction, not syntropy.
+
+---
+
+## 9. The authorization question
+
+Every consequential commitment requires:
+
+```text
+principal + mandate + scope + consent + custody + expiry/revocation
++ contest path + actor + consequence bearer
+```
+
+Authority is typed, scoped, expiring, and contestable. No person, office,
+collective, model, tradition, or symbol is a universal authorization primitive.
+The envelope authorizes commitment, scope, and exposure to risk; it never
+manufactures the realized outcome.
+
+The Compass's fourth question is therefore:
+
+> Who authorized the consequence, who acted, who bears it, and how can it be
+> contested?
+
+---
+
+## 10. What would count as scientific progress
+
+Calling Emergentism a candidate unifying grammar is earned only to the extent
+that it:
+
+- translates real structures across domains without category errors;
+- predicts a novel discriminator unavailable from simpler rivals;
+- survives pre-registered tests and independent reproduction;
+- improves model comparison rather than merely renaming known results;
+- deletes or narrows claims when kill criteria fire.
+
+Until then, `unifies the sciences` means an aspirational translation program,
+not achieved theory unification.
+
+---
+
+## 11. Kill and revision conditions
+
+Rewrite the Compass when:
+
+1. a claimed μ-crossing lacks discriminating evidence or reduces cleanly;
+2. the selected product repeatedly predicts worse than rival aggregators;
+3. future-model interventions do not affect present action distributions;
+4. commitment and outcome receipts cannot be separated;
+5. option-cone measures reward physically forbidden or merely redescribed
+   histories;
+6. Egregoreotype traces fail turnover or intervention tests;
+7. bilateral Justice produces hidden payer destruction or aggregate laundering;
+8. Rosetta projection imports proof from one domain into another;
+9. a shorter rival grammar explains and predicts the same territory better.
+
+The goal is not to protect Emergentism from falsification. The goal is to make
+its most beautiful form maximally easy for reality to correct.
+
+---
+
+## Final compression
+
+> Build a compass that lets finite agents model possibility, commit actual
+> means, answer to consequences, and widen mutual freedom under Beauty, Truth,
+> and Justice—while never mistaking the compass for reality itself.
+
+---
+
+**Read with:** [The Compass](00_THE_COMPASS.md) ·
+[The Soul Loop](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md) ·
+[Objective Morals and Ethics](04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) ·
+[The Burri Rules](05_COSMOLOGY/00_THE_BURRI_RULES.md)
+
+**Canonical path:** `01_EMERGENTISM/00_THE_GOAL.md`

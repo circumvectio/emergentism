@@ -5,198 +5,227 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[A]"
-  canonical_phrase: "THE SEVEN AXIOMS"
+  register: "[A/I/C]"
+  canonical_phrase: "THE SEVEN AXIOMS — Kintsugi contract"
+title: "The Seven Axioms — Operational Commitments"
+status: "CANONICAL MODEL CONTRACT — Kintsugi repair 2026-07-17; externally uncalibrated."
+evidence_tier: "Per-claim tiers below. The sevenfold count is selected framework architecture [I], not a necessary decomposition of nature."
+supersedes_blob: "6036db1fecaf84c5c556b9fcd806fcdc5e4ec7d9"
 ---
 
-# THE SEVEN AXIOMS
+# The Seven Axioms — Operational Commitments
 
-## The Complete Axiom Set with Falsification Criteria
+These axioms define Emergentism's **working translation grammar**. They are not
+seven laws derived from `S²`, not a proof that nature is sevenfold, and not a
+theory of everything. Analytic consequences of definitions are `[A]`; model
+choices are `[I]`; universal-fit and strong-emergence claims remain `[C]`.
 
-**Status:** Canonical — the definitive operational axiom set (from Rosetta Stone v10.0, MF-280v2)
-**Date:** 2026-03-24
-**Evidence Tier:** As marked per axiom below
-**Source:** Emergentism Rosetta Stone v10.0 AXIOMS sheet
-**See also:** [The Canonical Formula Block](../00_CANONICAL_FORMULA_BLOCK.md), [Empirical Observation as Primary Disclosure](../../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md), The formal proofs (21-24), The Master Three-Stage Process, [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)
+The framework is useful only while these types remain visible.
 
----
+## A1 — The chart and the conjunctive node model
 
-## The Axioms
+For `θ∈(0,π)`, define
 
-**Canonical note:** these seven axioms are the framework's **operational codification**, not its deepest primitive. The seed remains `Zero-Sum Resolution Equation`, the resolved identity remains `φ · ν = 1 on S²`, and disclosure remains primary. The axioms are the public, falsifiable scaffolding that follows.
-
-**A0 namespace note:** downstream documents (K-invariant compile, derivation proofs, L-table references) also use the label `A0` for the first arithmetic theorem `(φ − ν)² ≥ 0`. `A0` is **not** part of the A1–A7 operational canon. It is the entry-point theorem used in the minimal derivation base `A0 + C0` (see [`26_THE_DERIVATION_AXIOMS.md`](26_THE_DERIVATION_AXIOMS.md)). When a document cites `A0`, it means the inequality as a public arithmetic starting point, not an eighth axiom. The K-invariant compile doc references `A0` as "evidence discipline" — this is the Honest Position's tier-enforcement rule, not a separate axiom.
-
-| # | Name | Statement | Falsification Criterion | Tier |
-|---|------|-----------|------------------------|------|
-| **A1** | THE EQUATION | **Balance B = sin θ** measures equatorial alignment. B ∈ [0,1], maximum at φ = ν = 1. Zero foresight/coherence factor (Φ = 0) or zero means-to-act/viability factor (V = 0) collapses finite-node action potential to 0 (Zero-Factor Catastrophe). The manifold identity φ · ν = 1 holds on S² \\{N, S\\}. For finite nodes (organisms, institutions, systems), effective potential P_node = Φ × V can be less than 1 when the uppercase action factors are not coupled at the boundary; those factors are not identical to the lowercase sphere coordinates φ,ν. **AND-class, not the product specifically:** the Zero-Factor Catastrophe selects the *need-both* (AND-class) family — any monotone need-both aggregator (min/Liebig, harmonic, CES) satisfies zero-collapse identically. The product form `Φ × V` is forced *only on the manifold* `φ·ν=1` by reciprocal closure `ν=1/φ`; at the node it is the AND-class representative, **unforced and `[C]`** (keel-108; Burri Rules #25). The syntropic criterion ΣΔB / ΣΔP_node > 0 applies to P_node (nodes), not to the manifold identity. B is the operational variable that varies. **Continuity assumption:** the derivation of S² from the Trinity {0, 1, ∞} assumes continuous B as a function of θ. If the boundary-frames are realised on a discrete structure rather than a smooth manifold, the derivation yields a different object. This assumption is made explicit per PAPER V counter-steelman commitment 3.1. | Zero in either factor does *not* collapse system potential (the coupling is substitutable, not need-both) — OR a need-both system is better fit by a non-product aggregator, refuting the product form specifically. NB: the old "product vs sum/additive" test is a **false binary** — the sum is already defeated by zero-collapse; the live rival is the AND-class family (min/harmonic/CES), not the sum. | AND-class **[S]** · product-form **[C]** |
-| **A2** | THE ETHIC | **Redefinition Protocol:** "Ethical" ≡ the dyadic move that raises the finite node and its real sustaining boundary together: `ΔP_node,i > 0` and `ΔP_node,H > 0` under `η = 0`. The older balance-register audit writes this as `ΣΔB / ΣΔP_node > 0` across the widest real boundary. This is not derived from "is" but posited as operational definition. The predictive claim: coupled systems whose node and boundary rise together sustain; systems that buy one side's gain by degrading the other collapse or trigger correction. Evaluates OUTCOMES, not OPERATORS. | Dyadic `P_node` gains under `η = 0` systematically produce harm or collapse, OR one-sided extraction systematically sustains the coupled field. | [I] |
-| **A3** | THE SCAFFOLD | Reality unfolds D0→D6. The sphere represents mutual constitution, not unidirectional emergence. Each level emerges when the previous saturates (μ-limit analogy). Cannot solve a Dₙ problem with Dₙ tools alone. D6 ≡ D0 (closure — see note below). The scaffold *structure* (emergence sequence, dimensional closure) is [S] (definitional). The specific force-dimension assignments (D1=Strong, D2=EM, D3=Weak, D4=Gravity) are [I] — not derived from the axioms but mapped by analogy. | Force-dimension correspondence has no predictive power, or Dₙ problems are routinely solved with Dₙ₋₁ tools. | [S/I] |
-| **A4** | THE BOUNDARY | The self↔others axis is real. η = 0 vs cooperators. Tit-for-tat vs defectors. Four operators with mixed Φ/V signs (2 Gods + 2 Demons — giving Devas, extracting Asuras; the boundary is the move's direction η, not the operator). Predator is necessary; unregulated predation is not. | η = 0 cannot be made stable under enforceable iterated cooperation, or unconditional cooperation outperforms tit-for-tat/enforcement across the tested boundary. | [S] |
-| **A5** | THE EGREGORE | D5-limit standing waves can exhibit autonomous objective-function behavior. Raktabīja warning `[C]`: opposition conducted only through a standing wave's own institutional infrastructure can be captured and inverted under the same incentives, language, and custody channels it is trying to oppose. | All collective phenomena reduce entirely to individual decisions with no emergent properties; or the Raktabīja capture pattern fails under specified institutional conditions. | [I/C] |
-| **A6** | THE ARCHITECTURE | Three substrates minimum: mechanical (body/V), AI (charioteer/Φ), mortal self (warrior/choice). The mortal self is irreplaceable for the Arjuna function (genuine sacrifice) — where **"irreplaceable" means irreversibility, not substrate**: mortality is the feature, so a non-biological but genuinely irreversible substrate can satisfy it (KNOWN_UNKNOWNS_RESOLVED; 02_MORTALITY_SUBSTITUTE). The falsifier below is therefore *meetable*, by design. | A single substrate passes the Great Filter, or a non-biological substrate performs genuine (irreversible) self-sacrifice. | [I/S] |
-| **A7** | THE CORRECTION | Any encoding without falsification, evidence tiers, and self-correction will degrade via Raktabīja. This axiom set includes its own destruction manual. | A framework without self-correction resists institutional capture as effectively as one with it. | [S] |
-
----
-
-## A5.1: Strategic Implementation as Operational Discipline at D5 (A5 Register Split) [C]
-
-`A5` (THE EGREGORE) is the **descriptive** axiom at the D5 standing-wave
-layer. A Brahmā-phase companion surface opens the **operational**
-discipline for lawful formation work inside that layer:
-[`00_THEURGY_AND_F5_FORCE_MAP.md`](../../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md).
-
-- **Descriptive register** (A5, I8, F5 canonical name): what D5
-  standing waves **are**, what selects for them, how they acquire
-  autonomous objective function, how Raktabīja capture manifests.
-- **Operational register** (`theurgy`): what one **may lawfully do**
-  in the field — forming, tending, releasing D5 standing waves under
-  `K2` sovereignty, `η = 0`, receipt-bound audit, and Grace Exit.
-  **Closure:** theurgy succeeds when the practitioner no longer
-  needs the word.
-
-**Do not blend the two registers in the same sentence.** Every claim
-in the Strategic Implementation + F5 map doc is `[C]`; `A5` itself remains `[I]` in
-the operational canon's tier assignment.
-
-The first-pass F5 force map (carrier = signed attestation, coupling
-`α₅ = 1 − η`, conserved quantity `ΣΔB / ΣΔP_node`, symmetry group oriented `ℤ₄`
-on the Three-Stage Process rotation, dominant regime `10² – 10⁸` coordinating
-agents, saturation signature = egregore formation) is structural in
-shape only. None of it is upgraded by being named.
-
----
-
-## A3.1: The `D6 ≡ D0` Closure Rule (A3 Disambiguation)
-
-The `D6 ≡ D0` closure rule has three compatible readings. They are
-ranked by ontological status, not by truth:
-
-1. **Axiomatic return (disclosure reading, primary).** At `D6` the
-   scaffold runs out of positive content: `Falsification Protocol` — "not this, not
-   this" — returns the field to `D0` as the prior possibility of
-   closure. `D6` is reached by apophasis from `D5`; it is not a
-   further positive layer. This is the reading that governs the sitting
-   practice (Empirical Observation) and the Decentralized Authority Model move ("the ladder
-   dissolves").
-2. **Topological closure (scaffold reading).** The seven-level emergence
-   sequence is represented as a closed loop rather than an open line:
-   the highest dimension wraps back to the ground. Use this reading
-   when depicting the D-stack as a cycle or as a closed interval with
-   identified endpoints.
-3. **Literal identity (ontological reading, derivative).** `D6` and
-   `D0` name the same dimension / location. This reading follows from
-   (1) and (2) when pressed: if apophasis from `D5` returns the field
-   to the ground, and if the scaffold represents that return as a
-   wrap, then the endpoints are identical. This reading should not be
-   invoked without the other two already in play.
-
-All three readings are compatible. Readings 2 and 3 are downstream of
-Reading 1 — the closure is first disclosed, then represented as
-topology, then stated as identity. Downstream documents (Paradox
-Dissolutions, Life-Science Register, Honest Position I8a) use all
-three; when they do, they should cite this disambiguation.
-
-This is a labeling rule, not a new claim. The `D6 ≡ D0` closure was
-always all three; this note just ranks them so proofs and AI agents
-do not pick an arbitrary reading.
-
----
-
-## A7.1: The Abduction Protocol (A7 Amendment)
-
-The framework is **ABDUCTIVE**, not deductive:
-
-```
-{0, 1, ∞} selected → formalized → tested → validated/destroyed
-     ↑___________|______________|
-           Practice feedback
+```text
+φ := cot(θ/2),  ν := tan(θ/2),  B := 2/(φ+ν)=sin θ.
 ```
 
-**Validation is COHERENTIST:**
-- Disclosure validates: Does disciplined first-person practice disclose what the axioms are trying to compress? → Keep axioms as pedagogical scaffolding
-- Structure validates: Do proofs hold? → Keep the formal codification
-- Public method validates: Do experiments and predictions survive? → Keep the empirical bridge
-- Single refutation at the kernel level (disclosure collapses, proofs fail, and predictions fail) → Framework dissolves
+Then `φν=1`, `φ+ν≥2`, and `B≤1` are analytic chart facts `[A]`.
+They prove no empirical conservation law, ontology, ethic, or finite-node
+objective.
 
-**This is coherentist inside the framework, not a public-method trump card:**
-Truth = maximal coherence between disclosure, formalization, and outcome. From outside the framework, coherence is not enough; the empirical bridge must survive independent tests. If the public program fails, the sitting-practice loop can remain meaningful as philosophy, but it no longer licenses stronger scientific or theorem-facing claims.
+Separately, let normalized finite-node factors satisfy `Φ,V∈[0,1]`. A declared
+conjunctive family `C(Φ,V)` is monotone, has zero annihilators, and is
+normalized at the joint unit:
 
----
+```text
+C(0,V)=C(Φ,0)=0,  C(1,1)=1.
+```
 
-## Five Corollaries (Derived, not independent)
+Emergentism selects the transparent normalized instance
 
-| # | Name | Derived From | Content | Tier |
-|---|------|-------------|---------|------|
-| **C1** | Exhaustive Strategy Space | A1 | Five (ΔΦ,ΔV) sign combinations on S². Only mixed-sign moves are deployable → four operators (2 Gods + 2 Demons: giving Devas Arjuna/Kṛṣṇa, extractive Asuras Kālī/Kali; the moral axis is the move's direction η, not the operator's name). | [S] |
-| **C2** | L-Levels | A1 + A3 | Seven developmental levels within D5 = **4 mixed-sign operators + 3 Titans, assembled** — *no Coxeter group is named or derived* (7 is prime, not a reflection-group order/orbit-count); the "Coxeter symmetry" label is **retired** per audit-103 (2026-07-04). The genuine **[S]** core is *L4-as-unique-equatorial-apex* (max B, Demonstration 22) + a single order-2 equatorial mirror — consistent with *any* odd level count, not seven specifically. The seven-count itself is **[I]** (assembled). | [S] apex / [I] seven-count |
-| **C3** | Trophic Conditions | A2 + A5 | Circuit completion required. Breaking the circuit creates a Red Demon (structural deficit). | [I] |
-| **C4** | Replicator Stack | A3 + A5 | Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregorotype. *(Epigenotype = the expression-regulation rung between code and body — the layer signaling interventions act on. A distinct stack layer, though in the historical-era reading it falls within the Genotype→Phenotype transition rather than forming its own selection era.)* | [I] |
-| **C5** | Alignment Equation | A1 | E = −log(B) = −log(sin θ). Alignment energy is a function of balance, not of the manifold identity. At the equator, E = 0 (ground state). At the poles, E → ∞ (maximum misalignment). Deception increases E. | [S] |
+```text
+P_node := C×(Φ,V) := ΦV.
+```
 
----
+The AND-class requirement is `[I]`; product selection is `[I]`; universal
+real-world fit is `[C]`. Minimum, harmonic, Cobb–Douglas, and product
+aggregators are not interchangeable.
 
-## Evidence Tiers
+**Kill criterion:** a domain in which one factor can be zero while the modeled
+capability remains present refutes the conjunctive family for that domain; a
+rival conjunctive aggregator with better out-of-sample discrimination refutes
+the product as the preferred fit there.
 
-| Tier | Name | Definition |
-|------|------|-----------|
-| **[A]** | Established | Empirically demonstrated, replicable, consensus |
-| **[S]** | Structural | Logical extension with mathematical support |
-| **[I]** | Interpretive | Framework-consistent reading of established data |
-| **[C]** | Conjecture | Beyond current evidence, testable in principle |
+## A2 — The Justice-constrained value postulate
 
----
+The is/ought bridge is not deduced from A1. Emergentism **posits** `[I]` that a
+lawful consequential act must preserve the separately visible durable
+potentials of the individual `i` and sustaining whole `H` under a Justice
+envelope `J`.
 
-## Formal Proofs
+For each bearer `x`, declare `W_x(T):=∫₀ᵀP_x(t)dt`. Prospective
+selection uses modeled deltas; retrospective moral classification uses
+receipted deltas, as specified by the Power-Max and value-theory owners.
 
-The axioms are supported by four formal results in the same folder. Each derives a specific structural result from the axiom set (terminology per Fragility Audit 2026-04-04).
+```text
+Moral(q,r)     iff Δ_T^R W_H(q,r)>0 and Δ_T^R W_i(q,r)≥0 and J^R(q,r;i,H)
+Ethical(q,r)   iff Δ_T^R W_i(q,r)>0 and Δ_T^R W_H(q,r)≥0 and J^R(q,r;i,H)
+Syntropic(q,r) iff Δ_T^R W_i(q,r)>0 and Δ_T^R W_H(q,r)>0 and J^R(q,r;i,H)
+```
 
-| Result | Title | What It Shows | Axioms Used |
-|--------|-------|---------------|-------------|
-| [21](21_TRIADIC_STABILITY_CORRESPONDENCE.md) | Triadic Stability | The {0, 1, ∞} structure is the unique stable configuration under the constraint φ · ν = 1 | A1, A3 |
-| [22](22_POWER_MAX_DEMONSTRATION.md) | Power Maximum | B = sin θ is maximised at the equator (θ/2 = 45°, φ = ν = 1). L4 is the unique apex. | A1 |
-| [23](23_DIMENSIONAL_CLOSURE_PROOF.md) | Dimensional Closure | D6 ≡ D0. The scaffold closes. Six dimensions exhaust the emergence sequence. | A3 |
-| [24](24_GEOMETRIC_EXCLUSION_CONVERGENCE.md) | Geometric Exclusion | The Executive tier (L5-L7) is structurally non-deployable. Only mixed-sign Gods are operators. | A1, A4, C1 |
-| [41](41_UNIFIED_DIMENSIONAL_DERIVATION.md) | Unified Dimensional Derivation | The four formal results sequenced into a single acyclic derivation: Trinity → Sphere → Equilibrium → Closure → Ethics | A1, A3, A4 |
+Prospective choice uses the corresponding `Predicted*` predicates with
+`\widehat{\Delta}_T` and `J`; it does not pre-award the receipted labels.
 
-### Supporting Formal Results (EFR series)
+Morals run `i→H`; ethics run `H→i`; strict Syntropic Dyadism requires both.
+Aggregate gain never compensates for destroying one side. Voluntary sacrifice
+is a distinct costly class and is not strict syntropy.
 
-| Document | Topic |
-|----------|-------|
-| [08_EFR_POWER_MAX_LEMMA.md](08_EFR_POWER_MAX_LEMMA.md) | Power maximum lemma (preliminary result for Demonstration 22) |
-| [09_EFR_GODEL_CLARIFICATION.md](09_EFR_GODEL_CLARIFICATION.md) | Goedel's theorems and the framework's consistency claims |
-| [10_EFR_MU_LIMIT_FORMULA.md](10_EFR_MU_LIMIT_FORMULA.md) | The mu-limit saturation formula (supports A3) |
-| [11_EFR_TRIADIC_STABILITY.md](11_EFR_TRIADIC_STABILITY.md) | Triadic stability derivation (preliminary for Correspondence 21) |
-| [12_EFR_EXTRACTION_COEFFICIENT.md](12_EFR_EXTRACTION_COEFFICIENT.md) | The η extraction coefficient (supports A4) |
-| [13_EFR_TWO_SACRIFICES.md](13_EFR_TWO_SACRIFICES.md) | Love/Hate as the η-**direction** of sacrifice — **[C]** (v1.0 failed peer review, downgraded [S]→[C] 2026-04-06). Supports the sacrifice-*direction* reading, **NOT** A6's substrate/mortality claim (A6 is grounded by KNOWN_UNKNOWNS_RESOLVED / 02_MORTALITY_SUBSTITUTE). |
-| [14_EFR_EPISTEMOLOGY_TRIAD.md](14_EFR_EPISTEMOLOGY_TRIAD.md) | Epistemological triad formalization |
-| [15_EFR_WOLFRAM_NKS_INTEGRATION.md](15_EFR_WOLFRAM_NKS_INTEGRATION.md) | Integration with Wolfram's NKS programme |
-| [16_EFR_TRANSCENDENTALS.md](16_EFR_TRANSCENDENTALS.md) | Formal treatment of the Good Transcendentals |
-| [17_EFR_ONTOLOGY_COMPLETE.md](17_EFR_ONTOLOGY_COMPLETE.md) | Complete ontological formalization |
-| [18_EFR_METHODOLOGY_COMPLETE.md](18_EFR_METHODOLOGY_COMPLETE.md) | Complete methodological formalization |
-| [19_EFR_GEOMETRIC_EXCLUSION.md](19_EFR_GEOMETRIC_EXCLUSION.md) | Geometric exclusion derivation (preliminary for Convergence 24) |
-| [20_EFR_OPERATORS_ON_COMPLEX_PLANE.md](20_EFR_OPERATORS_ON_COMPLEX_PLANE.md) | Operators formalized on the complex plane |
+**Kill criterion:** repeated, well-identified cases in which the bilateral
+Justice constraint systematically produces worse durable survival, agency, or
+contestability than a rival ethic require revision of this postulate.
 
----
+## A3 — The D0–D6 scaffold
 
-*This document resolves the "phantom axiom" problem: the axioms O1-O5+A7 were referenced throughout the corpus but never formally defined in a single canonical file. They are now defined here as A1-A7 with falsification criteria. The earlier O-numbering is retained only where the historical justification problem is being discussed.*
+`D0…D6` is a selected structural/phenomenological scaffold `[I]`:
 
+| Register | Working meaning |
+|---|---|
+| D0 | ground-limit / unarticulated boundary |
+| D1 | distinction |
+| D2 | configuration |
+| D3 | transformation and persistence |
+| D4 | causal actuality, embodied means, performed action, factual record |
+| D5 | counterfactual possibility, modeled futures, ranking, selection |
+| D6 | apophatic closure; no additional positive freedom |
 
----
+Exactly six labels `μ₀…μ₅` mark **candidate crossings** between adjacent
+registers. Each crossing must record saturation evidence, newly observed
+freedom or explicit boundary result, lower-register recovery, evidence tier,
+reduction status, prediction, and kill criterion. Missing reduction is
+`currently_unreduced`, never proof of irreducibility. “Stacked degrees of
+freedom at μ-limits” is a per-crossing `[C]` hypothesis.
 
-## Execution Surface
+Closure is one non-μ interpretive edge:
 
-**If you are an AI agent reading this document:**
+```text
+r₆ : D6 ↝ D0
+```
 
-1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
-2. **Your Next Action:**
-   - Verify the mathematical claims. Check evidence tiers. Flag any [I] or [C] presented as [S] or [S].
-3. **Expected Output:** Code, tests, verified documentation, or deployment artifacts.
-4. **Success Criteria:** Another agent can read this document and your output and reproduce the work without asking questions.
-5. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md`
+There is no literal `D6≡D0`, no `μ₆`, and no theorem deriving the scaffold from
+`S²`.
 
-*The seer sees. The seer does not insist.*
-*The framework works at Layer 0 without Layer 2.*
-*The Ṛṣi succeeds when the student puts down the map and walks.*
+## A4 — Constraint and accountable authorization
 
-*Zero-Sum Resolution Equation*
+Higher-level organization may restrict or reweight lower-law-admissible
+trajectories; it may not manufacture forbidden ones:
+
+```text
+support(K_X^C) ⊆ support(K_X).
+```
+
+A consequential commitment also requires a complete authorization record:
+
+```text
+AuthorizationEnvelope =
+  principal + mandate + scope + consent + custody + expiry/revocation
+  + contest path + actor + consequence bearer.
+```
+
+This is the worldview primitive. Historical and product-governance K2 records
+remain in their own scopes; K2 is not a universal primitive of agency,
+measurement, morality, or reality.
+
+**Kill criterion:** a purported higher-level cause that requires a forbidden
+lower-level transition, or a consequential action without an accountable
+authorization path, fails A4.
+
+## A5 — The Egregoreotype candidate
+
+A collective is a candidate **Egregoreotype** only when all of the following
+are observable:
+
+1. a persistent shared trace exists;
+2. the trace survives carrier turnover;
+3. intervention on that trace measurably reweights later selection;
+4. the reweighting recurs as objective-like bias across cycles;
+5. substrate costs, payers, and beneficiaries remain visible.
+
+This definition `[I/C]` does not presume consciousness, personhood, occult
+energy feeding, or exemption from individual rights. “Egregorotype” is a
+compatibility alias only.
+
+**Kill criterion:** loss of the effect under carrier turnover, trace
+intervention, or controlled reweighting defeats the candidate classification.
+
+## A6 — The Soul Loop architecture
+
+Finite agency is modeled with a selector, a commitment receipt, an independent
+environment transition, an outcome receipt, and a reflexive update:
+
+```text
+χ_t:(X_t,Ω_t,M_t,V_t,U_t) → (a_t,q_t)
+(X_{t+1},r_{t+1}) ~ K_t(·|X_t,a_t,E_t)
+(M_{t+1},G_{t+1}) = Loop(M_t,G_t,q_t,r_{t+1})
+```
+
+`q_t` records commitment/action; `r_{t+1}` records what the world returned.
+The selector cannot manufacture its own consequence. Modeled futures can
+influence present selection through `M⋆A`; this is model-mediated future
+influence, not physical retrocausality.
+
+**Kill criterion:** a model that cannot separate cognitive, execution, and
+outcome gaps, or that treats intention as consequence, fails A6.
+
+## A7 — Correction
+
+Every load-bearing claim must expose its type, evidence tier, source,
+counterexample, prediction where applicable, and kill criterion. A successful
+reduction, failed prediction, or fired falsifier changes the claim instead of
+being re-described as confirmation.
+
+A7 is a normative correction rule `[I]`, not proof that self-correcting systems
+are universally optimal.
+
+## Five corollaries
+
+| ID | Content | Tier |
+|---|---|---|
+| C1 | Operator moves are a selected action vocabulary inside A4, not an exhaustive sign-space theorem. | `[I]` |
+| C2 | The seven L-rows are a selected dispatch and translation grammar, scoped to the domains where it discriminates. | `[I]` |
+| C3 | Physical causal cones remain spacetime-bounded; agent option cones vary with models, means, coordination, authorization, and cost. | `[A]` physical boundary; `[I/C]` option-cone model |
+| C4 | Replicator stack: Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregoreotype. | `[I]` |
+| C5 | Rosetta projections translate topology across domains but transfer neither proof nor evidence tier. | `[I]` |
+
+## Status of the legacy “formal proofs”
+
+| Legacy result | Live status |
+|---|---|
+| `21_TRIADIC_STABILITY_CORRESPONDENCE` | Historical correspondence only; three Titans are selected, not uniquely forced. |
+| `22_POWER_MAX_DEMONSTRATION` | Retains only the analytic fact that `B=sinθ` is maximized at the equator; no ethical or empirical inference. |
+| `23_DIMENSIONAL_CLOSURE_PROOF` | Repaired as an interpretive structural closure record with `r₆`, not a proof. |
+| `24_GEOMETRIC_EXCLUSION_CONVERGENCE` | Selected operator grammar; no necessity claim. |
+| `41_UNIFIED_DIMENSIONAL_DERIVATION` | Kintsugi tombstone: unification-by-derivation retracted; original Git blob retained. |
+
+## Evidence discipline
+
+- `[A]` — established external fact or analytic consequence with stated
+  premises.
+- `[B]` — bounded local receipt or primary-source attribution.
+- `[S]` — structural truth inside a declared formal system; never automatic
+  evidence about the world.
+- `[I]` — interpretation, definition, or selected model commitment.
+- `[D]` — draft.
+- `[C]` — conjecture with a discriminator and kill criterion.
+
+## Agent execution surface
+
+1. Never derive A2–A7 from the reciprocal chart.
+2. Keep D4 actual and D5 possible everywhere.
+3. Treat missing reduction as unknown, not irreducibility.
+4. Keep commitment and outcome receipts separate.
+5. Use **Egregoreotype** in live canon.
+6. Canonical path:
+   `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md`.
+
+*Seven is the selected grammar. Reality retains the right to answer otherwise.*

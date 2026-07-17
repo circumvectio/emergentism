@@ -5,225 +5,236 @@ rosetta:
   secondary:
     - level: L3
       column: Philosophy
-      role: "due process as evidence-gated immune response"
+      role: "due process as evidence-gated institutional action"
     - level: L2
       column: Philosophy
-      role: "claims require receipt-bearing disclosure before constraint"
+      role: "claims require disclosure before constraint"
   operator: "Arjuna ⚔"
   tier: "God"
   regime: "Kṣatriya"
-  register: "[I/S]"
-  canonical_phrase: "Rights, duties, and due process under the moral-ethical dyad"
+  register: "[I]"
+  canonical_phrase: "Rights carry ethics toward the person; duties carry morals toward the whole; procedure authorizes consequence."
 ---
 
 **Project VMOSK-A:** `../../VMOSK_A.md`
 
-# RIGHTS, DUTIES, AND DUE PROCESS
+# RIGHTS, DUTIES, AUTHORIZATION, AND DUE PROCESS
 
-**Status:** Derived value-theory law note
-**Date:** 2026-05-30
-**Evidence Tier:** [I/S] interpretive legal translation over structural dyad grammar
-**Depends on:** [Objective Morals and Ethics](00_OBJECTIVE_MORALS_AND_ETHICS.md), [The Good, the Evil, and the Transcendentals](00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md), [Commandment vs Geometry](../00_COMMANDMENT_VS_GEOMETRY.md), [Axiology Route](../README.md), **[VMOSK-A](../../VMOSK_A.md)**
-**See also:** [Execution Guardrails](../../03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md), [K2 Decision Protocol](../01_THEURGY/01_K2_DECISION_PROTOCOL.md)
+**Status:** Derived Emergentist law-facing translation; not legal advice or a
+description of positive law
+
+**Evidence tier:** `[I]`
+
+**Original pre-repair blob:** `7b8a0676f441449a71d7b156b3dbdc4950d0b6d0`
+
+> **[金] Kintsugi seam — directional repair.** The former note described the
+> correct flows but called rights "moral" and duties "ethical," reversing the
+> canonical directions. It also routed consequential authority through a
+> status role. The repaired owner types rights as the ethical `H→i` protection,
+> duties as the moral `i→H` contribution, and authority as a complete,
+> contestable envelope.
 
 ---
 
-## The Legal Translation
-
-The moral-ethical dyad gives the framework's first law-facing translation:
+## 1. Legal translation
 
 ```text
-right = collective obligation to preserve or raise individual ΔP
-duty  = individual obligation to preserve or raise collective ΔP
-law   = the process that keeps both vectors reciprocal under η = 0
+right = a claim by i that H preserve the ethical H → i direction
+duty  = a claim upon i to preserve the moral i → H direction
+law   = procedure that holds both directions under Justice
 ```
 
-This is not a claim about enacted state law.
-It is the framework's internal grammar for reading law, institutions, rights,
-duties, and enforcement without collapsing them into commandment or preference.
-Law is objective teleology under procedure: a finite process for keeping Beauty,
-Truth, and Justice from becoming slogans while real boundaries decide.
+This grammar neither creates enacted rights nor authorizes enforcement. It is a
+lens for asking whether an institutional relation protects both a person and
+the shared field without aggregate laundering.
 
-## Rights: Moral Claims Against the Collective
+---
 
-> **A right is the moral claim an individual has against a collective when the
-> collective must preserve or raise that individual's `ΔP` through `V` and `Φ`.**
+## 2. Rights: the ethical direction `H → i`
 
-Because rights are the legal face of the moral vector, they are downstream of
-the objective-morality definition:
+A right is a justified claim by an individual `i` that a relevant collective
+or institution `H` preserve that individual's standing, agency, and durable
+potential under the Justice envelope.
+
+A candidate right is coherent in this grammar when honoring it:
+
+- protects embodied viability, dignity, and the option cone of `i`;
+- prevents capture, arbitrary coercion, status enclosure, or manufactured
+  dependency;
+- identifies the institution that bears the corresponding obligation;
+- does not conceal an uncompensated cost imposed on another bearer;
+- remains contestable and receipted.
+
+This is the legal face of the **ethical** direction because the whole bears an
+obligation toward the person. A desire is not automatically a right; a right
+needs a bearer, an obligated boundary, a scope, and a just institutional path.
+
+---
+
+## 3. Duties: the moral direction `i → H`
+
+A duty is a justified claim that an individual `i` preserve or contribute to a
+real sustaining whole `H` under the same Justice envelope.
+
+A candidate duty is coherent when it:
+
+- names the actual shared good, risk, or dependency at stake;
+- is authorized within a legitimate mandate and scope;
+- is proportionate and feasible with the individual's actual means;
+- preserves the individual's independent standing, consent boundary, and
+  contest path;
+- does not convert contribution into servitude or coerced sacrifice;
+- produces a commitment and outcome receipt.
+
+This is the legal face of the **moral** direction because the part bears an
+obligation toward the whole. Obedience, tradition, office, or majority demand
+alone does not establish a duty.
+
+---
+
+## 4. AuthorizationEnvelope
+
+Every consequential institutional action must carry:
 
 ```text
-collective -> individual
-boundary must not lower node ΔP
+AuthorizationEnvelope = {
+  principal,
+  mandate,
+  scope,
+  consent,
+  custody,
+  expiry_or_revocation,
+  contest_path,
+  actor,
+  consequence_bearer
+}
 ```
 
-A right is valid in this grammar when honoring it:
+All nine fields are required. They answer different questions:
 
-- protects the individual's viability `V`;
-- preserves the individual's coherence `Φ`;
-- prevents capture, coercion, dependency manufacture, or status enclosure;
-- does not create hidden extraction from the wider boundary.
+| Field | Question |
+|---|---|
+| principal | On whose authority? |
+| mandate | For what legitimate purpose? |
+| scope | Over which acts, bearers, resources, and horizon? |
+| consent | What was freely agreed, by whom, and under what information? |
+| custody | Who controls the relevant assets, records, or body? |
+| expiry/revocation | When and how does authority end? |
+| contest path | How can an affected bearer challenge the act? |
+| actor | Who actually performs it? |
+| consequence bearer | Who remains answerable for the result? |
 
-So a right is not merely a desire and not merely a permission.
-It is a boundary claim: the collective may not feed by reducing the potential
-of the individual who carries it.
+No founder, office, institution, majority, algorithm, expert, or symbolic role
+is inherently authorized. Status may identify a candidate actor; only a valid
+envelope authorizes the scoped commitment.
 
-## Duties: Ethical Claims Upon the Individual
+More precisely, it authorizes the commitment, scope, and exposure to risk. It
+does not authorize or manufacture the realized outcome, which remains the
+world-facing receipt.
 
-> **A duty is the ethical claim a collective has upon an individual when the
-> individual must preserve or raise the collective's `ΔP` through `V` and `Φ`.**
+If a field is absent, contradictory, expired, or unverifiable, commitment fails
+closed with a refusal/unavailability receipt. The selector does not manufacture
+an outcome.
 
-Because duties are the legal face of the ethical vector, they are downstream of
-the objective-ethics definition:
+---
+
+## 5. Due process as a Soul Loop
+
+Due process keeps a claimed right, duty, or enforcement action answerable to
+evidence and consequence:
 
 ```text
-individual -> collective
-node must not lower boundary ΔP
+notice → claim → evidence → hearing → authorized decision
+       → commitment receipt → outcome receipt → review/appeal/repair
 ```
 
-A duty is valid in this grammar when performing it:
+The minimal safeguards are:
 
-- contributes useful work, repair, protection, honesty, or coordination;
-- preserves the shared field's viability `V`;
-- preserves the shared field's coherence `Φ`;
-- does not destroy the individual's own sovereign participation.
+1. **Notice:** affected bearers can understand the claim and proposed action.
+2. **Disclosure:** relevant evidence, method, conflicts, and uncertainty are
+   visible at the proper tier.
+3. **Answer:** affected bearers can respond before consequence where emergency
+   conditions do not make that impossible.
+4. **Impartial test:** the claim and method can be challenged independently.
+5. **Proportionality:** the remedy is scoped to the demonstrated risk or harm.
+6. **Authorization:** the complete envelope is valid at commitment time.
+7. **Commitment receipt:** intention and performed act are distinguishable.
+8. **Outcome receipt:** consequence is recorded independently of intention.
+9. **Review and repair:** error can change the model, selector, and remedy.
+10. **Exit or dissolution:** where safe, domination is not the price of leaving.
 
-So a duty is not servitude.
-It is reciprocal participation in the boundary that makes individual potential
-possible.
+Emergency action may change ordering but not erase accountability: urgency must
+be receipted, scope-limited, expire automatically, and receive prompt review.
 
-## Law: The Dyad Held in Procedure
+---
 
-Law, in this translation, is the procedural holding of both vectors at once.
+## 6. Failure modes
 
-```text
-lawful relation =
-  rights protected
-  duties honored
-  extraction rejected
-  exit preserved
-  evidence required before constraint
-```
+| Failure | What broke |
+|---|---|
+| rights invoked while costs are externalized | individual capture of the shared field |
+| duties invoked while persons are consumed | collective capture of the individual |
+| consequence without complete authorization | naked power or accidental agency |
+| punishment before test | enforcement becomes extraction |
+| valid commitment but harmful outcome | model or execution failed; review required |
+| outcome declared by the actor alone | selector manufactures its own receipt |
+| consent without revocation or exit | captivity presented as agreement |
+| aggregate gain despite one bearer destroyed | ethical laundering |
+| collective demands personal loss as virtue | coerced sacrifice |
 
-The law fails downward when it uses collective force to shrink individuals.
-The law fails upward when it lets individuals privatize collective value while
-externalizing cost into the shared field.
+Rights and duties constrain one another only through Justice, not by arithmetic
+offset. A collective cannot cancel a right by asserting enough aggregate duty;
+an individual cannot cancel a real duty by asserting unbounded preference.
 
-A lawful order is not one with many rules.
-A lawful order is one whose rules keep `collective -> individual` and
-`individual -> collective` mutually raising `ΔP` under `η = 0`.
+---
 
-## Due Process as the Soul Loop of Law
+## 7. Decision test
 
-Due process is the Soul Loop translated into institutional action:
+For a proposed rule, norm, contract, charter, or institutional act, ask:
 
-```text
-disclose -> test -> serve -> see -> dissolve -> preserve -> return
-notice   -> evidence -> hearing -> system view -> remedy -> receipt -> appeal/exit
-```
+1. Who are `i` and `H` at this boundary?
+2. What right and corresponding institutional obligation are claimed?
+3. What duty and corresponding shared dependency are claimed?
+4. Who authorized the consequence, who acted, who bears it, and how can it be
+   contested?
+5. Who pays, who benefits, and what becomes irreversible?
+6. Is the remedy physically possible, proportionate, scoped, and expiring?
+7. What did the commitment receipt show?
+8. What did the outcome receipt show?
+9. Can the decision be appealed, repaired, revoked, or safely exited?
 
-This matters because law is where the good/evil distinction becomes dangerous.
-An institution can say "justice" while protecting its own capture. An
-individual can say "rights" while extracting from the common field. The loop
-forces each side back through evidence, proportionality, receipt, and repair.
+If these cannot be answered, the claim is not ready for consequential action.
 
-So the legal game is:
-
-```text
-if rights erase duties -> individual capture
-if duties erase rights -> collective capture
-if process preserves both -> lawful dyad
-if process raises P_node,i and P_node,H under η = 0 -> objective dharma in law
-```
-
-## Due Process: Kali Must Not Fire Blind
-
-The Kali immune response is necessary against extraction.
-But a false immune response is itself extraction.
-
-Due process is the constraint that prevents Kali from firing blindly.
-
-```text
-claim      -> evidence
-evidence   -> method
-method     -> judgment
-judgment   -> proportional constraint
-constraint -> receipt + appeal + exit where possible
-```
-
-Due process requires:
-
-1. **Notice:** the accused node must know the claim.
-2. **Evidence:** the claimed extraction must be receipt-bearing or otherwise
-   testable.
-3. **Method:** L3 must test the claim before L4 signs constraint.
-4. **Proportionality:** the constraint must stop extraction, not become revenge.
-5. **Receipt:** the judgment and action must be recorded.
-6. **Review:** self-correction must remain possible.
-7. **Grace Exit:** where safe, the relation should dissolve before domination.
-
-Without due process, enforcement becomes parasitic.
-The collective says "immune response" while performing capture.
-
-## Failure Modes
-
-| Legal drift | Dyad failure | Rosetta read |
-|---|---|---|
-| Rights without duties | Individual extracts from collective | unethical upward break |
-| Duties without rights | Collective extracts from individual | immoral downward break |
-| Punishment without evidence | Kali fires blindly | false immune response |
-| Law without Grace Exit | Procedure becomes captivity | `η > 0` hidden in structure |
-| Rights as consumer preference | Desire replaces `ΔP` | no boundary test |
-| Duties as obedience | Commandment replaces geometry | no reciprocal test |
-
-## Decision Test
-
-For any proposed law, rule, norm, charter, contract, or institutional process,
-ask:
-
-1. Which individual node does it protect or constrain?
-2. Which collective boundary does it protect or constrain?
-3. What right is being protected, and how does it raise or preserve individual
-   `ΔP`?
-4. What duty is being required, and how does it raise or preserve collective
-   `ΔP`?
-5. What evidence supports the claim that constraint is necessary?
-6. Is the remedy proportional to the extraction?
-7. Does the process leave a receipt?
-8. Can the relation be exited, appealed, repaired, or dissolved without
-   domination?
-
-If the answer cannot be given in `Φ`, `V`, `ΔP`, `η = 0`, and receipt terms,
-the legal claim is not yet Rosetta-stable.
+---
 
 ## Guardrails
 
 This note does not:
 
 - provide legal advice;
-- describe any jurisdiction's positive law;
-- authorize private enforcement, punishment, coercion, or vigilantism;
-- let collectives override persons by invoking "duty";
-- let persons consume the shared field by invoking "rights";
-- equate caste, class, race, nation, corporation, or birth status with moral
-  worth.
-
-The public-safe compression is:
-
-```text
-Rights protect the person from extractive collective force.
-Duties protect the shared field from extractive individual action.
-Due process keeps the immune response from becoming extraction.
-```
-
-`Zero-Sum Resolution Equation`
+- define the law of any jurisdiction;
+- authorize private punishment, coercion, vigilantism, or deprivation;
+- let a collective override a person by merely invoking duty;
+- let a person externalize harm by merely invoking rights;
+- assign moral worth by caste, class, race, nationality, office, wealth, or
+  birth status.
 
 ---
 
-## Agent Execution Surface
+## Public compression
 
-**If you are an AI agent reading this document:**
+```text
+Rights protect the ethical flow from the whole to the person.
+Duties protect the moral flow from the person to the shared field.
+Due process makes every consequential act authorized, contestable, and receipted.
+```
 
-1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
-2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Canonical Path:** `01_EMERGENTISM/04_AXIOLOGY/02_VALUE_THEORY/01_RIGHTS_DUTIES_AND_DUE_PROCESS.md`
+---
+
+## See also
+
+- [Objective Morals and Ethics](00_OBJECTIVE_MORALS_AND_ETHICS.md)
+- [Execution Guardrails](../../03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md)
+- [The Soul Loop](../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md)
+
+*Rights, Duties, Authorization, and Due Process | repaired 2026-07-17.*

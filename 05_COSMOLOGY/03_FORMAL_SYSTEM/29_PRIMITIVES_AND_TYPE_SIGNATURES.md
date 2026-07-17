@@ -5,114 +5,345 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[S]"
+  register: "[A/I/C]"
   canonical_phrase: "PRIMITIVES AND TYPE SIGNATURES"
+title: "Primitives and Type Signatures"
+status: "CANONICAL TYPE INDEX — Kintsugi repair 2026-07-17."
+evidence_tier: "[A] analytic types; [I] selected model records; [C] empirical and strong-emergence hypotheses."
+supersedes_blob: "178eac8942c2d3c6c01cada8d37b0007d43e0832"
 ---
 
-# PRIMITIVES AND TYPE SIGNATURES
+# Primitives and Type Signatures
 
-## Consolidated Index of the Formal System's Undefined Terms
+This file is the closed type index for the repaired Emergentist Compass. It
+does not turn an interpretation into a theorem. A symbol or record used with a
+different type is a defect unless this owner is deliberately revised first.
 
-**Status:** Canonical index — points at canonical definitions; does not redefine
-**Date:** 2026-04-22
-**Evidence Tier:** [S] Structural — this is an index over existing [S]/[S] primitives
-**Source:** [`00_GLOSSARY.md`](../../07_THEOLOGY/00_GLOSSARY.md), [`00_ANMUT_AND_DEMUT.md`](../../04_AXIOLOGY/00_ANMUT_AND_DEMUT.md), [`26_THE_DERIVATION_AXIOMS.md`](26_THE_DERIVATION_AXIOMS.md), [`00_THE_SEVEN_AXIOMS.md`](00_THE_SEVEN_AXIOMS.md), [`12_EFR_EXTRACTION_COEFFICIENT.md`](12_EFR_EXTRACTION_COEFFICIENT.md)
-**See also:** [`30_OPERATIONAL_DEFINITIONS.md`](30_OPERATIONAL_DEFINITIONS.md), [`31_FALSIFIERS_INDEX.md`](31_FALSIFIERS_INDEX.md), [`32_THEOREM_UPGRADE_PROTOCOL.md`](32_THEOREM_UPGRADE_PROTOCOL.md)
+## 1. Mathematical chart types
 
----
+| Primitive | Type | Meaning |
+|---|---|---|
+| `0` | number | additive identity and ordinary operand |
+| `1` | number | multiplicative identity and ordinary operand |
+| `∞` | projective point | point at infinity in `ℂP¹`; not a largest number |
+| `•,⊙,○` | symbolic tokens | selected Titan names for `0,1,∞`; `[I]`, not arithmetic |
+| `S²≅ℂP¹` | compact real 2-manifold / complex 1-manifold | selected projective chart surface |
+| `θ` | `(0,π)` in the reciprocal chart | colatitude; endpoints are excluded limits |
+| `φ` | `(0,π)→ℝ₊`, `cot(θ/2)` | reciprocal chart coordinate |
+| `ν` | `(0,π)→ℝ₊`, `tan(θ/2)` | reciprocal chart coordinate |
+| `B` | `(0,π)→(0,1]`, `sinθ` | chart balance coordinate; “balance” is `[I]` |
+| `s` | `ℝ₊→ℝ`, `log x` | additive coordinate for positive multiplication |
+| `u` | `ℝ₊→(-1,1)`, `(x-1)/(x+1)` | bounded Cayley coordinate |
+| `P∞` | `(0,π)→{1}` | analytic identity `φν=1`; not a world law |
+| `E_B` | `(0,1]→[0,∞)`, `-log B` | one declared balance-deficit transform |
+| `E_s` | `ℝ₊→[0,∞)`, `(log x)²` | inversion-symmetric log distance; not identical to `E_B` |
 
-## Purpose
+The identities below are true by construction `[A]`:
 
-A formal system is only as clear as its undefined terms. This file is a one-page index of every primitive the Emergentist formal system appeals to, its type signature, and the canonical document where it is actually defined. **This file does not define anything.** If a reader wants the *meaning* of φ, they follow the link; if they want to know what kind of object φ *is* in a proof, they look here.
-
-The purpose is discipline: when a new document speaks of "φ" or "η" or "P," a reader can verify (a) it is one of the canonical primitives, (b) it carries the canonical type, and (c) its use is consistent with the source-of-truth file. Redefinitions drift over time; indices surface drift early.
-
----
-
-## Geometric / Ontological Primitives
-
-| Primitive | Type Signature | Role | Canonical Source |
-|-----------|---------------|------|------------------|
-| `⊙` | glyph, non-numeric | The seed. Reciprocal closure `• × ○`. Prior to arithmetic. | [`00_THE_TRANSCENDENTAL_TRINITY_CANON.md`](../01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md); [`00_GLOSSARY.md`](../../07_THEOLOGY/00_GLOSSARY.md) row "Transcendental Trinity" |
-| `•` | glyph, identified with `0` in derivation register | Point. South-pole transcendental. | [`00_THE_TRANSCENDENTAL_TRINITY_CANON.md`](../01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md) |
-| `○` | glyph, identified with `∞` in derivation register | Circle. North-pole transcendental. | [`00_THE_TRANSCENDENTAL_TRINITY_CANON.md`](../01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md) |
-| `S²` | compact simply-connected complex 1-manifold (`≅ ℂP¹`) | The Riemann / Burri Sphere. State space. | [`00_GLOSSARY.md`](../../07_THEOLOGY/00_GLOSSARY.md) "Riemann Sphere", "Burri Sphere" |
-| `θ` | `S² → [0, π]` (colatitude) | Latitude coordinate. `θ = π/2` is the equator. | [`26_THE_DERIVATION_AXIOMS.md`](26_THE_DERIVATION_AXIOMS.md) T1–T2; [`00_GLOSSARY.md`](../../07_THEOLOGY/00_GLOSSARY.md) "The Equator" |
-| `λ` | `S² → [0, 2π)` (longitude / phase) | Individuation coordinate at the equator (`z = e^{iλ}`). | [`26_THE_DERIVATION_AXIOMS.md`](26_THE_DERIVATION_AXIOMS.md) Corollary 1; [`00_GLOSSARY.md`](../../07_THEOLOGY/00_GLOSSARY.md) "Phase Angle (λ)" |
-| `s` | `ℝ₊ → ℝ` via `s = log x` | Logarithmic coordinate (additive chart). `s = 0` at finity (`x=1`). Maps 0→−∞, 1→0, ∞→+∞. | [`01_THE_TRANSCENDENTAL_TRINITY_CANON.md`](../01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md) §2a; [`14_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md`](../../01_TELEOLOGY/02_THE_DERIVATION/14_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md) |
-| `u` | `ℝ₊ → (−1, 1)` via `u = (x−1)/(x+1)` | Bounded hinge coordinate (projective chart). `u = 0` at finity. Inversion becomes half-twist `u ↦ −u`. | [`01_THE_TRANSCENDENTAL_TRINITY_CANON.md`](../01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md) §2a |
-
-## Node-Level Primitives (What Systems Carry)
-
-| Primitive | Type Signature | Role | Canonical Source |
-|-----------|---------------|------|------------------|
-| `φ` (coherence) | `System → (0, ∞)` on the manifold; `ℝ₊` at a node | Structural integration, meaning, internal consistency. Geometrically `φ = cot(θ/2)`. In the action register this can buy uppercase `Φ`: D5 worldline-foresight, the ability to envision, rank, and aim reachable futures. | [`00_ANMUT_AND_DEMUT.md`](../../04_AXIOLOGY/00_ANMUT_AND_DEMUT.md); [`00_GLOSSARY.md`](../../07_THEOLOGY/00_GLOSSARY.md) "Coherence" and "The Burri Sphere" |
-| `ν` (viability) | `System → (0, ∞)` on the manifold; `ℝ₊` at a node | Material capability, resources, throughput. Geometrically `ν = tan(θ/2)`. In the action register this can supply uppercase `V`: D4 means-to-act, body, tools, energy, access, and execution capacity at the boundary. | [`00_ANMUT_AND_DEMUT.md`](../../04_AXIOLOGY/00_ANMUT_AND_DEMUT.md); [`00_GLOSSARY.md`](../../07_THEOLOGY/00_GLOSSARY.md) "Viability" |
-| `B` (balance) | `System → [0, 1]` | `B = sin θ`. Peaks at the equator. What actually varies on the sphere. | [`00_GLOSSARY.md`](../../07_THEOLOGY/00_GLOSSARY.md) "Balance"; [`26_THE_DERIVATION_AXIOMS.md`](26_THE_DERIVATION_AXIOMS.md) D1 |
-| `P∞` | `S² → 1` | Manifold identity `P∞ = φ · ν = 1`; conserved on S² except at the poles where a coordinate diverges. | [`00_CANONICAL_FORMULA_BLOCK.md`](../00_CANONICAL_FORMULA_BLOCK.md); [`00_THE_SEVEN_AXIOMS.md`](00_THE_SEVEN_AXIOMS.md) A1 |
-| `P_node` | `Node → [0, ∞)` | Effective finite-node action potential in the contact/action register: `P_node = Φ × V`, where `Φ` is the D5 foresight/coherence factor and `V` is the D4 means-to-act/viability factor. These uppercase node scores are not identical to the lowercase sphere coordinates `φ,ν`, and they need not be reciprocally calibrated. Older specs may say `P_eff`; normalize new prose to `P_node`. | [`00_THE_SEVEN_AXIOMS.md`](00_THE_SEVEN_AXIOMS.md) A1 |
-| `E` (alignment energy) | `System → [0, ∞]` | `E = −log(B) = −log(sin θ)`. `E = 0` at the equator; `E → ∞` at the poles. | [`00_THE_SEVEN_AXIOMS.md`](00_THE_SEVEN_AXIOMS.md) C5 |
-| `H` (Hamiltonian) | `(0, ∞) → ℝ₊` | `H(φ) = φ + 1/φ`. Global minimum at `φ = 1`, `H(1) = 2`. | [`26_THE_DERIVATION_AXIOMS.md`](26_THE_DERIVATION_AXIOMS.md) T2, Corollary 2 |
-
-## Relational / Institutional Primitives
-
-| Primitive | Type Signature | Role | Canonical Source |
-|-----------|---------------|------|------------------|
-| `η` (extraction) | **Disambiguated** — see [`30_OPERATIONAL_DEFINITIONS.md`](30_OPERATIONAL_DEFINITIONS.md) §4 | Several incompatible operational definitions are in the corpus (sum-form, ratio-form, per-player level). All canonical sources named; reader must select which is in use. | [`00_GLOSSARY.md`](../../07_THEOLOGY/00_GLOSSARY.md) "η"; [`12_EFR_EXTRACTION_COEFFICIENT.md`](12_EFR_EXTRACTION_COEFFICIENT.md); [`26_THE_DERIVATION_AXIOMS.md`](26_THE_DERIVATION_AXIOMS.md) D2; [`33_NASH_EQUILIBRIUM_ETA_ZERO.md`](33_NASH_EQUILIBRIUM_ETA_ZERO.md) §1.2 |
-| `F5` (Teleological Force) | selection pressure (force-of-selection; not a fifth physical force) | Pressure toward `(φ − ν)² = 0`. | [`00_GLOSSARY.md`](../../07_THEOLOGY/00_GLOSSARY.md) "Teleological Force"; [`26_THE_DERIVATION_AXIOMS.md`](26_THE_DERIVATION_AXIOMS.md) D3 |
-| `K*_sel`, `K(x)`, `K*` | distinct complexity quantities | Not merged. Selection complexity vs. Kolmogorov complexity vs. extraction. | [`00_KSTAR_DISAMBIGUATION.md`](00_KSTAR_DISAMBIGUATION.md) |
-
-## Coordinate Relations (Identities, Not Definitions)
-
-The following relations hold *by construction* on `S²` under the stereographic parametrization — they are not theorems about the world, they are the coordinate identity of the Burri Sphere:
-
-```
-φ · ν   = cot(θ/2) · tan(θ/2) = 1          (the manifold identity, C0)
-B       = sin θ                            (definition D1)
-E       = −log B                           (definition C5)
-H(φ)    = φ + 1/φ  (with ν = 1/φ)          (T2 restatement)
-s       = log ν = log tan(θ/2) = −w           (additive chart, Mercator coordinate = MINUS THE RAPIDITY w — Paper B §8, 2026-06-11: the Mercator chart of the sphere IS the rapidity chart of motion, where velocities add)
-u       = tanh(s/2) = (ν−1)/(ν+1)            (bounded chart, Cayley transform)
-B       = sech(s)                             (balance in log coordinates)
-E       = s²                                  (Suda energy in log coordinates)
-H(s)    = 2 cosh(s)                           (Hamiltonian in log coordinates)
+```text
+φν=1
+B=2/(φ+ν)=sinθ=sech(s)
+φ+ν≥2
+B≤1
 ```
 
-The three charts (multiplicative x, additive s = log x, bounded u) are equivalent under diffeomorphism. Suda (2025) independently derived the same three-chart structure; see Trinity Canon §2a for the formal bridge.
+No real system is thereby proved to instantiate the chart.
 
-These are coordinate identities; **what is *not* identical by construction is whether any real system's measured `φ̂, ν̂` obey them.** That question is empirical and belongs in [`30_OPERATIONAL_DEFINITIONS.md`](30_OPERATIONAL_DEFINITIONS.md).
+## 2. D-register and modality types
 
----
+```text
+DRegister := D0 | D1 | D2 | D3 | D4 | D5 | D6
+Modality  := actual | possible
+```
 
-## Coherence Rule
+| Register | Modality contract | Working content |
+|---|---|---|
+| `D0` | actual | ground-limit boundary token |
+| `D1` | actual | distinction |
+| `D2` | actual | configuration |
+| `D3` | actual | transformation/persistence |
+| `D4` | **actual** | causal actuality, embodied means, performed action, factual record, receipt |
+| `D5` | **possible** | counterfactual alternatives, modeled futures, ranking, selection |
+| `D6` | actual | apophatic closure boundary token; no positive new freedom |
 
-If a new document uses a symbol from this index with a different type signature, the new document is wrong and must be repaired — not this index. If a new document needs a genuinely new primitive, it must be added here first and then used.
+There are exactly six adjacent crossing identifiers `μ₀…μ₅`. There is no
+`μ₆`. The return `r₆:D6↝D0` is an interpretive, non-μ closure edge.
 
-The index is the audit surface for type discipline in the formal system.
+## 3. Finite-node model types
 
----
+```text
+Φ : Node×Time → [0,1]       # D5 option-field / foresight score
+V : Node×Time → [0,1]       # D4 usable means / viability score
+P_node : Node×Time → [0,1]
+```
 
-## See Also
+Lowercase `φ,ν` are chart coordinates. Uppercase `Φ,V` are separately
+operationalized node factors and are never inferred from the lowercase pair.
 
-- [`30_OPERATIONAL_DEFINITIONS.md`](30_OPERATIONAL_DEFINITIONS.md) — how these primitives are *measured* on real systems
-- [`31_FALSIFIERS_INDEX.md`](31_FALSIFIERS_INDEX.md) — what observations would refute each axiom and theorem that uses them
-- [`32_THEOREM_UPGRADE_PROTOCOL.md`](32_THEOREM_UPGRADE_PROTOCOL.md) — the protocol that turns primitive + operational definition + falsifier into a theorem
+### ConjunctiveAggregator
 
----
+```text
+ConjunctiveAggregator := {
+  id: String,
+  domain: "[0,1]^2",
+  codomain: "[0,1]",
+  monotone: true,
+  zeroAnnihilator: true,
+  unitNormalized: true,       # C(1,1)=1
+  formula: String,
+  selected: Boolean,
+  tier: EvidenceTier,
+  alternatives: [String],
+  killCriterion: String
+}
+```
 
-## Execution Surface
+The selected normalized instance is
+`C×(Φ,V)=ΦV`, so `P_node:=C×(Φ,V)`. Selection is `[I]`; universal fit is
+`[C]`.
 
-**If you are an AI agent reading this document:**
+## 4. Emergence record
 
-1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
-2. **Your Next Action:**
-   - When writing any formal claim using `φ`, `ν`, `B`, `P`, `E`, `η`, or `θ`, verify the symbol's type signature against this index before use. Flag documents that use a symbol with a type different from what appears here.
-3. **Expected Output:** Type-consistent formal content, or a correction note where drift is detected.
-4. **Success Criteria:** Another agent can resolve every primitive in a new document by following at most one link from this index.
-5. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/29_PRIMITIVES_AND_TYPE_SIGNATURES.md`
+```text
+ReductionStatus := reduced | currently_unreduced | candidate_strong
 
-*The seer sees. The seer does not insist.*
-*The framework works at Layer 0 without Layer 2.*
-*The Ṛṣi succeeds when the student puts down the map and walks.*
+MuCrossing := {
+  id: μ₀ | μ₁ | μ₂ | μ₃ | μ₄ | μ₅,
+  source: DRegister,
+  target: DRegister,
+  saturatedRegister: String,
+  saturationEvidence: [EvidenceRef],
+  newFreedomOrBoundaryResult: String,
+  lowerRegisterRecovery: String,
+  reductionStatus: ReductionStatus,
+  prediction: String,
+  tier: EvidenceTier,
+  killCriterion: String
+}
+```
 
-*Zero-Sum Resolution Equation*
+`μ₅` may record the explicit **no-positive-freedom boundary result** at D6.
+Absence of a reducing law maps to `currently_unreduced`, not
+`candidate_strong`, unless independent evidence licenses the stronger status.
+
+## 5. Agency, future, and receipt types
+
+```text
+ModeledFutureToken := {
+  tokenId: String,
+  modelId: String,
+  representedFutureId: String,
+  horizon: Duration,
+  assumptions: [String],
+  probabilityOrRank: Number?,
+  generatedAt: Time
+}
+```
+
+A model token is a present physical record **about** a possible future. It is
+not that future and does not travel backward in time.
+
+```text
+OptionCone := {
+  agentId: String,
+  physicalCausalBoundary: String,
+  physicallyAdmissibleHistoryIds: [String],
+  modeledHistories: [ModeledFutureToken],
+  reachableHistoryIds: [String],
+  horizon: Duration,
+  costs: [Cost],
+  coordinationDependencies: [String],
+  authorization: AuthorizationEnvelope
+}
+```
+
+An option cone is not a physical light cone. Agents with the same spacetime
+causal cone can have different option cones. Its defining inclusion is
+
+```text
+set(reachableHistoryIds) ⊆ set(physicallyAdmissibleHistoryIds).
+```
+
+```text
+AuthorizationEnvelope := {
+  principal: String,
+  mandate: String,
+  scope: String,
+  consent: ConsentRecord,
+  custody: String,
+  expiryOrRevocation: String,
+  contestPath: String,
+  actor: String,
+  consequenceBearer: String
+}
+```
+
+All nine fields are required for consequential commitment.
+
+```text
+EvaluationContract := {
+  id: String,
+  horizon: Duration,
+  baselineRef: String,
+  measureIds: [String],
+  bearerIds: [String],
+  modelId: String
+}
+
+BearerObservation := {
+  bearerId: String,
+  measureId: String,
+  baselineValue: Number,
+  observedValue: Number,
+  sourceRef: EvidenceRef,
+  observedAt: Time
+}
+
+CommitmentReceipt := {
+  receiptType: "commitment",
+  status: committed | refused | unavailable,
+  authorizedActionId: String?,
+  performedActionId: String?,
+  executionStatus: committed | partial | failed | refused | unavailable,
+  authorization: AuthorizationEnvelope,
+  selectedOptionId: String?,
+  intention: String,
+  meansUsed: [String],
+  evaluation: EvaluationContract,
+  expectedBearerDeltas: {String:Number},
+  expectedOutcome: String,
+  payer: String,
+  beneficiary: String,
+  actor: String,
+  committedAt: Time
+}
+
+OutcomeReceipt := {
+  receiptType: "outcome",
+  performedActionId: String,
+  evaluationRef: String,
+  environmentStateBefore: String,
+  environmentStateAfter: String,
+  consequenceBearer: String,
+  bearerObservations: [BearerObservation],
+  observedOutcome: String,
+  observedAt: Time
+}
+```
+
+Selector and environment are separate interfaces:
+
+```text
+χ_t:(X_t,Ω_t,M_t,V_t,U_t) → (a_t,q_t),  a_t ∈ Action ∪ {⊥}
+(X_{t+1},r_{t+1}) ~ K_t(·|X_t,a_t,E_t)  when a_t ∈ Action
+(M_{t+1},G_{t+1}) = Loop(M_t,G_t,q_t,r_{t+1})
+```
+
+`q_t:CommitmentReceipt`; `r_{t+1}:OutcomeReceipt`. The selector never emits an
+outcome receipt. If means, authorization, or admissibility fails, `a_t=⊥` and
+`q_t.status∈{refused,unavailable}`; no action transition is submitted to `K_t`,
+and `r_{t+1}∈OutcomeReceipt∪{∅}` may be null or separately ambient.
+
+### Model-mediated future influence
+
+```text
+M⋆A : ModelState × AdmissibleActionField → ActionWeights
+```
+
+The public compression `F=M×A` means that a **modeled** future can reweight
+present action through an agent. It does not mean the realized future is the
+product of model and agency, and it does not assert physical retrocausality.
+
+## 6. Justice and Power-Max types
+
+```text
+W_x(T) := ∫₀ᵀ P_x(t)dt
+
+JusticeEnvelope := {
+  individual: String,
+  whole: String,
+  eta: 0,
+  custody: String,
+  consent: ConsentRecord,
+  reversibility: String,
+  exit: String,
+  payer: String,
+  beneficiary: String,
+  authorization: AuthorizationEnvelope
+}
+```
+
+`payer` and `beneficiary` are mandatory and distinct fields even when the same
+party fills both roles.
+
+```text
+AuthorizedCost(a;p,b) :=
+  J(a;p,b)
+  and explicitCostConsent(a,p)
+  and disclosed(payer=p, beneficiary=b, magnitude, horizon, irreversibility)
+
+AuthorizedCost^R(q,r;p,b) :=
+  J^R(q,r;p,b)
+  and consentActuallyCovered(q,r,p)
+  and evaluationMatchesDisclosedCost(q,r)
+```
+
+This predicate makes voluntary sacrifice and extraction disjoint when payer
+loss and beneficiary gain have been receipted.
+
+## 7. Egregoreotype candidate
+
+```text
+EgregoreotypeCandidate := {
+  id: String,
+  persistentSharedTrace: EvidenceRef,
+  carrierTurnover: EvidenceRef,
+  selectionReweightingIntervention: EvidenceRef,
+  recurrentObjectiveLikeBias: EvidenceRef,
+  visibleSubstrateCosts: [Cost],
+  individual: String,
+  whole: String,
+  eta: 0,
+  custody: String,
+  consent: ConsentRecord,
+  reversibility: String,
+  exit: String,
+  payer: String,
+  beneficiary: String,
+  authorization: AuthorizationEnvelope,
+  consciousnessPresumed: false,
+  personhoodPresumed: false,
+  tier: EvidenceTier,
+  killCriterion: String
+}
+```
+
+Substrate reducibility does not disqualify a candidate. Failure of any of the
+five evidentiary conditions does.
+
+## 8. Evidence type
+
+```text
+EvidenceTier := A | B | S | I | D | C
+EvidenceRef  := {sourceId:String, tier:EvidenceTier, locator:String}
+```
+
+Rosetta projections preserve topology while leaving `tier` unchanged. They
+cannot transfer proof between domains.
+
+## Coherence rule
+
+New semantics enter this index before they enter generated topology or public
+compression. JSON and SVG artifacts may reference these records; they may not
+invent new doctrine.
+
+Canonical sources:
+
+- [Canonical Formula Block](../00_CANONICAL_FORMULA_BLOCK.md)
+- [Seven Axioms](00_THE_SEVEN_AXIOMS.md)
+- [D4/D5 Canonical Reference](34_D4_D5_CANONICAL_REFERENCE.md)
+- [μ-Limit Formula](10_EFR_MU_LIMIT_FORMULA.md)
+- [Objective Morals and Ethics](../../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md)
+
+*Types are the joints of the compass. If a joint is hidden, the map can move
+while pretending it stayed still.*

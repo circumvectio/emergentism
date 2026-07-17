@@ -5,393 +5,339 @@ rosetta:
   operator: "Arjuna ⚔"
   tier: "God"
   regime: "Kṣatriya"
-  register: "[I/S]"
-  canonical_phrase: "Objective morals and ethics as directional value-transfer dyad"
+  register: "[I/C]"
+  canonical_phrase: "Morals run from part to whole; ethics from whole to part; Justice keeps both visible."
 ---
 
 **Project VMOSK-A:** `../../VMOSK_A.md`
 
 # OBJECTIVE MORALS AND ETHICS
 
-**Status:** Canonical value-theory definition note
-**Date:** 2026-05-30
-**Evidence Tier:** [I/S] interpretive axiology over a structural value-transfer kernel
-**Depends on:** [The Good, the Evil, and the Transcendentals](00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md), [Commandment vs Geometry](../00_COMMANDMENT_VS_GEOMETRY.md), [Rights and Duties](01_RIGHTS_DUTIES_AND_DUE_PROCESS.md), [Power-Max Lemma](../../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md), [Axiology Route](../README.md), [Emergentism as a Lens](../../00_EMERGENTISM_AS_A_LENS.md), **[VMOSK-A](../../VMOSK_A.md)**
-**See also:** [The Dyadic Coupling Law](../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) — the moral-axis canon: good is the bond `φ × ν`, evil is its breaking (`η > 0`), sorted by *move* (coupling vs closing), never by pole, gender, caste, or person. The directional dyad below is the value-theory face of that one law.
+**Status:** Canonical Emergentist value-theory definition
 
-**Claim Boundary:** `[I/S]` "Objective" here means framework-objective: once reciprocal closure, `P_node = Φ × V`, real boundary relations, and enforced `η = 0` are accepted, better and worse are not matters of taste but directions relative to those accepted constraints. Search handles: objective morals, objective ethics, objective dharma, Sanatana Dharma, syntropic morality, syntropic ethics. Objective morals are the `i -> H` vector; objective ethics is the `H -> i` vector; objective dharma is both vectors raising `P_node,i` and `P_node,H` together. Syntropic morals and syntropic ethics mean this dyad is compounding without extraction. This note does not claim to compel agents who reject those premises, and it does not present itself as a completed external proof of moral realism.
+**Evidence tier:** `[I]` as an explicit normative construction; `[C]` as a
+universal account of moral reality or a claim that its chosen measures predict
+all real cases
+
+**Original pre-repair blob:** `77f005335d25650254d6f8d0979c741979077b37`
+
+> **[金] Kintsugi seam — the norm is declared, not smuggled.** The former owner
+> correctly protected both individual and whole, but sometimes derived the norm
+> from the reciprocal chart, aggregate node power, the equator, or a conditional
+> optimization result. It also made a particular signer role worldview-level.
+> The repair states the good as a transparent bilateral postulate, separates
+> predicted benefit from receipted consequence, and replaces status with
+> accountable authorization.
 
 ---
 
-## The Definition
-
-Within Syntropic Dyadism, morals and ethics are not defined first by custom,
-sentiment, state command, corporate rule, or inherited convention.
-
-They are defined by the directional geometry of `ΔP_node` transfer between the
-individual and the collective under `P_node = Φ × V` and `η = 0`.
-
-The telos is the same one named in the transcendental register: approach Beauty
-(coherence made perceivable), Truth (faithful disclosure), and Justice
-(non-extractive balance across the widest real boundary). Morals and ethics are
-the two value-transfer directions by which finite beings approach that triad.
-
-This makes the claim framework-objective:
-
-- [S] where it follows from the value-function grammar: raise `ΣΔP_node` /
-  `ΣΔB` across the widest real boundary without extraction.
-- [I] where the framework names that directional grammar "morals" and
-  "ethics."
-- [C] where anyone projects the grammar as a completed independent proof of
-  moral realism outside the framework.
-
-The compressed doctrine is:
-
-```text
-Morals   = individual -> collective
-Ethics   = collective -> individual
-Law      = keep ΔP_node,i and ΔP_node,H coupled under η = 0
-```
-
-In symbiotic language:
-
-```text
-i = individual symbiont
-H = holobiont / real sustaining whole
-
-Morals:   i -> H  (the symbiont raises the holobiont)
-Ethics:   H -> i  (the holobiont raises the symbiont)
-Good:     ΔP_node,i > 0 and ΔP_node,H > 0 under η = 0
-Evil:     local ΔP_node,i or ΔP_node,H is purchased by degrading the other
-```
-
-This is why the moral/ethical distinction is not a hierarchy. The individual is
-not sacrificed to the whole, and the whole is not reduced to fuel for the
-individual. The lawful object is the coupled dyad.
-
-## Notation Boundary
-
-The canonical framework notation is:
-
-```text
-P_node = Φ × V
-P_node,i = Φ_i × V_i
-P_node,H = Φ_H × V_H
-ΔP_node  = change in reachable future / effective potential at a tested node
-ΔP       = local shorthand only; directionally specify ΔP_node,i or ΔP_node,H
-Φ      = in the action register, D5 worldline-foresight:
-         truthful relation, coherence, fit, directness, integrity, and the
-         ability to envision reachable futures without capture
-V      = in the action register, D4 means-to-act:
-         viability, continuation, body, tools, energy, access, execution
-         capacity, and material boundary control
-η = 0  = no hidden rent, no extraction disguised as service
-```
-
-`ΔP` is not used here as a literal physics momentum claim unless a document
-explicitly marks the passage as analogy. In this document it is only a local
-shorthand for the node whose boundary is being tested; when morality/ethics
-direction matters, write `ΔP_node,i` and `ΔP_node,H`. `V` is not physics
-velocity. `Φ` is not a physical potential field. Lowercase `φ` and `ν` remain
-the reciprocal sphere coordinates; uppercase `Φ` and `V` are the finite-node
-action factors. Do not normalize lowercase sphere notation into uppercase
-action notation unless the passage explicitly changes register. Lowercase `Δp`
-is informal shorthand only; inside canon, write `ΔP_node` with the tested
-boundary specified.
-
-`Individual` and `collective` name relative positions in a boundary relation.
-They are not value ranks. A person, family, institution, organism, city, or DAV
-can be individual or collective depending on the scale being tested.
-
-## Etymology Boundary
-
-The Latin *mores* and Greek *ethos* are useful public handles, not proofs. They
-name living patterns of conduct and character; they do not decide the vector by
-themselves. The directional law derives from the Power-Max / Rosetta value
-grammar, not from etymology.
-
-## Objective Morals: Individual -> Collective
-
-> **Objective morals name what raises `ΔP_node,H` via `V` and `Φ` from the individual
-> symbiont to the collective holobiont.**
-
-An individual act is moral when it increases the potential of the real boundary
-it inhabits without dissolving the actor.
-
-It does this by raising:
-
-- `V`: useful work, skill, repair, protection, production, execution, and shared
-  D4 means.
-- `Φ`: truthful speech, non-deception, coherent coordination, beauty of fit,
-  trustworthiness under pressure, and shared D5 worldline-foresight.
-
-The upward vector is moral when the node feeds the boundary.
-
-```text
-individual -> collective
-node raises boundary ΔP_node,H
-```
-
-An individual becomes immoral when they preserve or inflate themselves by
-lowering the `P_node` of the collective that supports them. That includes
-predation, free-riding, fraud, false scarcity, status parasitism, and private
-gain that externalizes cost into the shared field.
-
-The public compression is:
-
-```text
-Morals are the node upgrading the system.
-```
-
-## Objective Ethics: Collective -> Individual
-
-> **Objective ethics names what raises `ΔP_node,i` via `V` and `Φ` from the collective
-> holobiont to the individual symbiont.**
-
-A collective structure is ethical when it increases the potential of its
-constituent individuals without capturing them.
-
-It does this by raising:
-
-- `V`: health, safety, access, continuity, and the D4 means needed to act.
-- `Φ`: truthful relation, dignity, coherence, belonging without erasure,
-  direct access rather than mediated dependency, and the D5 worldline-foresight
-  to use those means without capture.
-
-The downward vector is ethical when the boundary feeds the node.
-
-```text
-collective -> individual
-boundary raises node ΔP_node,i
-```
-
-A collective becomes unethical when it preserves itself by lowering the `P_node`
-of the individuals who carry it. That includes capture, dependency manufacture,
-status enclosure, debt bondage, informational fog, and "care" that removes
-agency.
-
-The public compression is:
-
-```text
-Ethics is the system building the node.
-```
-
-## Cybernetic Feedback Loop
-
-The dyad is a continuous feedback loop:
-
-1. Ethics raises the baseline usable potential of the individual by
-   transmitting the collective's accumulated structure, protection, language,
-   memory, access, and means.
-2. Morals raise the adaptive usable potential of the collective by returning
-   individual action, skill, truth, repair, invention, and foresight into the
-   boundary that made the node possible.
-
-When both directions work, the relation is not merely stable. It compounds.
-The holobiont creates stronger symbionts; stronger symbionts upgrade the
-holobiont; the upgraded holobiont creates still stronger symbionts.
-
-This is the lawful reading of "Syntropic Dyadism all of the law": the law is
-the discipline that keeps `ΔP_node,i` and `ΔP_node,H` coupled upward rather than
-simulating reciprocity while hiding extraction.
-
-## Syntropic Dyadism
-
-Morals and ethics are the two directions of one law.
-
-```text
-moral vector   = individual -> collective
-ethical vector = collective -> individual
-dyadic health  = ΔP_node,i > 0 and ΔP_node,H > 0 without extraction
-```
-
-When both vectors work, the system reaches the Kṛṣṇa/Arjuna steady-state: truth
-can be tested, value can be signed, and action can proceed without cannibalizing
-its ground.
-
-When either vector extracts without returning `P_node` to the coupled boundary, the Kali immune response is
-triggered. In value-theory terms, Kali is the rejection, quarantine, or
-destruction of a relation that feeds by breaking reciprocity.
-
-## The Constitution Is the Two Vectors' Discipline
-
-The 5+1 constitutional invariants (see
-`../../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`) are not
-axioms laid on top of the value grammar. They are the exact conditions under
-which the two vectors stay syntropic: the law is the two vectors, disciplined.
-Each invariant guards one way a vector can invert into extraction:
-
-- **η = 0**: the floor of both vectors. A transfer that lowers either side's
-  `P_node` is not
-  moral or ethical; it is parasitism, and it trips the Kali immune response.
-- **K2**: the ethical vector terminates at a mortal, sovereign person who must
-  consent to the irreversible. The holobiont may not raise the symbiont by
-  overriding them; the node signs its own branch
-  (`../01_THEURGY/01_K2_DECISION_PROTOCOL.md`).
-- **K4: Grace Exit**: the ethical vector is non-coercive. The individual may
-  withdraw with their accumulated `P_node,i` gains. The holobiont serves the person; it
-  does not own them.
-- **K3**: the moral vector may not extract from the collective's memory.
-  Contributions are tombstoned rather than silently erased. This lets the
-  symbiont raise accumulated `P_node,H` across time without capture or erasure.
-- **A7**: the claimed `ΔP_node` must be real, not counterfeit. You cannot fake
-  raising the product; the evidence ladder is honest `P_node` accounting.
-- **Ω**: both vectors widen the reachable cone of futures while staying inside
-  the equatorial constraint (`B ≈ 1`, `η = 0`). The equator is the feasibility
-  surface where neither pole extracts from the other, not the object maximized.
-
-Strip any one and a vector inverts: the collective extracting the person
-(tyranny), or the person extracting the commons (corruption). So Syntropic
-Dyadism is all of the law: the law is only ever "keep both vectors raising
-`ΔP_node,i` and `ΔP_node,H`," and the 5+1 is how.
-
-### Power Max Lemma: L4 Corollary
-
-The formal Power-Max Lemma says:
-
-```text
-argmax_{τ ∈ A_η} W_i(T, τ)
-  ⊆ { τ : ΔP_node,H(T, τ) ≥ 0 }
-```
-
-It holds under the canonical conditions: coupling exists (`λ > 0`),
-`P_node = Φ × V` is multiplicative, the time horizon is long enough for network
-effects to matter, and `η = 0` is enforced so hidden extraction cannot dominate
-the one-shot game.
-
-In L4 value-theory language, the lemma becomes the mathematical engine beneath
-the moral/ethical dyad:
-
-- **Objective ethics** establishes and maintains the coupling condition:
-  `collective -> individual` raises baseline `Φ` and `V`, giving nodes the
-  shared field in which individual optimization is network-coupled.
-- **Objective morals** are the return vector: because the nodes are coupled, an
-  individual cannot maximize effective viability over time without also raising
-  the viability of the boundary that makes the node effective.
-
-The conditional is-ought bypass is therefore:
-
-```text
-if λ > 0, P_node = Φ × V, the horizon is long, and η = 0 is enforced:
-  max durable W_i is searched on trajectories where ΔP_node,H >= 0
-  rational self-optimization selects the syntropic frontier inside the constrained game
-```
-
-The holobiont form says the same thing at the scale of a lived worldline. Let
-`W_i` name the maximum reachable worldline potential of the individual
-symbiont, and let `P_node,H` name the coherent viability of the holobiont that
-carries that individual:
-
-```text
-W_i(t) = ∫ P_node,i(t) dt
-P_node,i = Φ_i × V_i
-P_node,H = Φ_H × V_H
-
-under λ(i,H) > 0 and η = 0:
-  max W_i requires dP_node,H/dt >= 0
-  max P_node,H requires dP_node,i/dt >= 0
-```
-
-So the Power-Max Lemma is not merely "be nice because cooperation is pleasant."
-It is the mathematical spine of syntropic dyadism: in a real coupled boundary,
-the maximum worldline potential available to the symbiont is only reachable by
-raising the holobiont that makes the symbiont effective. A local gain that
-degrades `H` is counterfeit power; it borrows from the future cone it claims to
-maximize.
-
-Without `η = 0`, coupling alone does not establish cooperation. One-shot
-extraction can still raise the extractor locally. That is why the constitutional
-invariants are not decoration: K2, A7, K3, K4, and `η = 0` are the enforcement
-surface that lets the Power-Max Lemma execute socially.
-
-The biological corollary is neoteny: sacrifice short-term `V` to build
-compounding `Φ`, then return that `Φ` as generalized `V`. In social grammar,
-ethics is the external womb that builds the node; morals are the mature node
-returning generalized capacity to the field.
-
-This is `[S]` as a conditional framework theorem under the Power-Max conditions;
-`[I]` where translated into public moral language.
-
-### The Equator Is the Moral-Ethical Fixed Point
-
-L4 (`φ = ν = 1`, `B = 1`) is the point where both vectors can be jointly scored
-without either side zeroing the dyad: the holobiont ethically raises the
-symbiont, and the symbiont morally returns value into it. It is non-arbitrary
-inside the model because
-`(φ - ν)^2 >= 0` has its hard floor at the equator, so there is no "more
-balanced than balanced" within the coordinate grammar. Balance is still the
-feasibility surface, not the object maximized; the object is durable usable
-worldline potential under `η = 0`. Morals and ethics are read as one act at
-that surface. This is why Axiology sits at L4: the value layer is the equator
-made practical. `[S/I]`
-
-### The Is/Ought Dissolution
-
-Inside the framework, because "ought" is defined as "raises the relevant
-`ΔP_node` without lowering the coupled boundary," and `P_node` is in principle
-measurable at the tested scale, the is/ought gap is no longer bridged by command
-or sentiment. It is bridged by objective teleology: the good is the direction on
-`P_node = Φ × V` that raises symbiont and holobiont together while approaching
-Beauty, Truth, and Justice and remaining
-bounded by `η = 0` and resolved at the equator. `[S]` inside the framework's
-accepted conditions; `[C]` if presented as a completed external proof of moral
-realism.
-
-## Failure Modes
-
-| Broken vector | Failure | Diagnostic |
-|---|---|---|
-| Individual -> collective | immoral actor | The actor gains while the shared field decays. |
-| Collective -> individual | unethical boundary | The institution grows while its members shrink. |
-| Both vectors simulate reciprocity | false dyad | Both sides report benefit while hidden extraction accumulates. |
-| Collective demands sacrifice without return | coerced moralism | The node is renamed "selfish" for refusing capture. |
-| Individual refuses all obligation | atomized ethics | The boundary is treated as free substrate. |
-
-## Decision Test
-
-For any rule, institution, relationship, product, ritual, law, or strategy, ask:
-
-1. What is the real boundary being tested?
-2. Who is the individual node at this scale?
-3. Who or what is the collective boundary at this scale?
-4. Does the individual morally raise the collective's `ΔP_node,H` through D4
-   means and D5 worldline-foresight?
-5. Does the collective ethically raise the individual's `ΔP_node,i` through D4
-   means and D5 worldline-foresight?
-6. Is there hidden rent, capture, coercion, or dependency manufacture?
-7. Can the relation survive Grace Exit without collapsing into punishment?
-8. Who signs the branch under uncertainty?
-
-If both directions raise the relevant `P_node` under `η = 0`, the relation is syntropic.
-If one direction rises by lowering the other, the relation is extractive.
-
-## Guardrails
-
-This note does not authorize:
-
-- subordination of individuals to a collective abstraction;
-- privatization of collective value by a dominant individual;
-- caste as birth rank, race rank, class rank, or human-worth hierarchy;
-- nationalism, corporate capture, priesthood, or state command as moral proof;
-- public claims that the framework has established external moral realism for
-  agents who reject its premises.
-
-The public-safe compression is:
-
-```text
-A moral person raises the potential of the shared field.
-An ethical collective raises the potential of its people.
-Syntropic Dyadism requires both directions at once.
-```
-
-`Zero-Sum Resolution Equation`
+## 1. The normative postulate
+
+Emergentism declares Beauty, Truth, and Justice to be the good:
+
+- **Beauty:** coherent form that remains perceivable without concealing seams;
+- **Truth:** faithful relation between model, action, and receipt;
+- **Justice:** non-extractive, accountable coexistence in which neither a part
+  nor its sustaining whole is erased for the other's gain.
+
+This is a normative commitment `[I]`. It is not entailed by `φν=1`, `B≤1`, a
+Titan emblem, the D-registers, or any empirical fact. Those structures can help
+express or test the commitment only after it is declared.
+
+`Objective` therefore means **rule-governed and publicly auditable inside the
+declared Emergentist value model**. It does not mean that formal logic has
+compelled every possible agent to accept the premises or completed an external
+proof of moral realism.
 
 ---
 
-## Agent Execution Surface
+## 2. Bearers and durable potential
 
-**If you are an AI agent reading this document:**
+Let:
 
-1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
-2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Canonical Path:** `01_EMERGENTISM/04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md`
+- `i` be an individual, part, node, or symbiont at the declared scale;
+- `H` be the real sustaining whole, boundary, or holobiont at that scale;
+- `P_x(t)` be a declared and operationalized measure of bearer `x`'s durable
+  option-capacity;
+- `W_x(T)=∫₀ᵀP_x(t)dt` be durable potential over horizon `T`.
+
+The normalized product `P_x=Φ_xV_x` may be used as Emergentism's selected
+conjunctive instance, but it is not uniquely derived. Applications must justify
+their factors, boundary, horizon, baseline, uncertainty, and alternative
+aggregators.
+
+The two bearers remain separately visible. No scalar sum, average, utility, or
+institutional success metric may compensate for destroying one of them.
+
+---
+
+## 3. The Justice envelope
+
+`J(a;i,H)` holds prospectively only when action `a` satisfies all declared
+Justice conditions, including:
+
+1. a complete `AuthorizationEnvelope`:
+   `principal + mandate + scope + consent + custody + expiry/revocation +
+   contest path + actor + consequence bearer`;
+2. non-extraction and no hidden rent at the tested boundary (`η=0`);
+3. explicit payer and beneficiary;
+4. truthful accounting and evidence tier;
+5. due process, reversibility where possible, and Grace Exit;
+6. physical admissibility and honest cost;
+7. preservation of each bearer's independent standing.
+
+`J^R(q,r;i,H)` is the retrospective test that these conditions were actually
+honored according to commitment receipt `q` and outcome receipt `r`. A valid
+intention or authorization can coexist with a harmful outcome; the two statuses
+must not be collapsed.
+
+---
+
+## 4. Prospective and receipted change
+
+Prospective choice uses a fallible model:
+
+\[
+\widehat{\Delta}_TW_x(a;M_t)
+=\mathbb E_{M_t}[W_x(T)\mid a]
+-\mathbb E_{M_t}[W_x(T)\mid a_0].
+\]
+
+Retrospective classification uses receipts:
+
+\[
+\Delta_T^R W_x(q,r)
+=W_x^{\mathrm{observed}}(r)-W_x^{\mathrm{baseline}}(q,r).
+\]
+
+Before acting, define:
+
+\[
+\operatorname{PredictedMoral}(a)
+\iff \widehat{\Delta}_TW_H(a;M_t)>0
+\land\widehat{\Delta}_TW_i(a;M_t)\ge0
+\land J(a;i,H),
+\]
+
+\[
+\operatorname{PredictedEthical}(a)
+\iff \widehat{\Delta}_TW_i(a;M_t)>0
+\land\widehat{\Delta}_TW_H(a;M_t)\ge0
+\land J(a;i,H),
+\]
+
+\[
+\operatorname{PredictedSyntropic}(a)
+\iff \widehat{\Delta}_TW_i(a;M_t)>0
+\land\widehat{\Delta}_TW_H(a;M_t)>0
+\land J(a;i,H).
+\]
+
+After acting, the same proposal may receive a different receipted
+classification. A theory that protects its moral label from adverse receipts
+fails the Soul Loop.
+
+---
+
+## 5. The two directions
+
+### Morals: `i → H`
+
+Morals concern what the part returns to or builds in the sustaining whole.
+
+\[
+\operatorname{Moral}(q,r)
+\iff
+\Delta_T^R W_H(q,r)>0
+\land\Delta_T^R W_i(q,r)\ge0
+\land J^R(q,r;i,H).
+\]
+
+The strict gain is on the whole-facing direction; the individual may not be
+destroyed as the price. Examples can include truthful contribution, repair,
+care, protection, knowledge, useful work, or institution-building—but only when
+receipts show that the named whole actually benefited without hidden harm.
+
+### Ethics: `H → i`
+
+Ethics concerns what the whole provides to or protects in its constituent
+part.
+
+\[
+\operatorname{Ethical}(q,r)
+\iff
+\Delta_T^R W_i(q,r)>0
+\land\Delta_T^R W_H(q,r)\ge0
+\land J^R(q,r;i,H).
+\]
+
+The strict gain is on the individual-facing direction; the whole may not be
+secretly hollowed out as the price. Examples can include safety, rights,
+education, care, access, tools, truthful coordination, or institutional memory,
+subject to the same receipt discipline.
+
+These names are directional conventions, not etymological proofs or a rank
+between person and collective.
+
+---
+
+## 6. Strict Syntropic Dyadism
+
+The dyad is strictly syntropic only when both durable potentials rise:
+
+\[
+\operatorname{Syntropic}(q,r)
+\iff
+\Delta_T^R W_i(q,r)>0
+\land\Delta_T^R W_H(q,r)>0
+\land J^R(q,r;i,H).
+\]
+
+The compressed directional grammar is:
+
+```text
+morals:  i → H
+ethics:  H → i
+syntropy: both rise under Justice
+```
+
+Bilateral preservation (`ΔᴿW_i=0` and `ΔᴿW_H=0`) may be lawful, protective,
+or necessary, but it is not strict syntropy. A gain to one with preservation
+of the other is moral or ethical by direction, but not the strict dyad.
+
+The term **Dharma** may compress sustained alignment of both directions under
+Beauty, Truth, and Justice. It adds no new predicate and no evidence upgrade.
+
+---
+
+## 7. Power-Max is subordinate to Justice
+
+For prospective selection, define
+
+\[
+\mathcal A_J=
+\{a:J(a;i,H)
+\land\widehat{\Delta}_TW_i(a;M_t)\ge0
+\land\widehat{\Delta}_TW_H(a;M_t)\ge0\}.
+\]
+
+Then the Power-Max design objective may choose
+
+\[
+a^\star\in\operatorname*{arg\,max}_{a\in\mathcal A_J}
+\mathbb E_{M_t}[W_i(T)\mid a].
+\]
+
+Justice defines the admissible field; maximization chooses within it. If
+`\mathcal A_J` is empty, the result is no admissible maximizer. Coupling and a positive
+cross-derivative show interdependence in a stated model; they do not derive the
+Justice predicate. The known one-shot extraction counterexample proves why the
+constraint cannot be omitted.
+
+---
+
+## 8. Sacrifice is separate
+
+For generic payer `p` and beneficiary `b`, define receipted voluntary sacrifice
+through the canonical authorized-cost predicate:
+
+\[
+\operatorname{VoluntarySacrifice}(q,r;p,b)
+\iff
+\Delta_T^R W_p(q,r)<0
+\land\Delta_T^R W_b(q,r)>0
+\land\operatorname{AuthorizedCost}^R(q,r;p,b).
+\]
+
+Prospectively,
+
+\[
+\operatorname{IntendedVoluntarySacrifice}(a;p,b)
+\iff \widehat{\Delta}_TW_p(a;M_t)<0
+\land\widehat{\Delta}_TW_b(a;M_t)>0
+\land\operatorname{AuthorizedCost}(a;p,b).
+\]
+
+It is costly and can be admirable. It is not strict syntropy because both
+potentials did not rise. It requires competent informed consent, visible payer
+and beneficiary, a defined horizon, and freedom from punishment for refusal.
+A collective may never demand sacrifice as proof of morality or rename an
+imposed loss a mutual gain.
+
+---
+
+## 9. Failure classes
+
+| Receipted relation | Classification |
+|---|---|
+| `ΔᴿW_i>0`, `ΔᴿW_H>0`, Justice holds | strict syntropy |
+| `ΔᴿW_i=0`, `ΔᴿW_H>0`, Justice holds | moral, not strict syntropy |
+| `ΔᴿW_i>0`, `ΔᴿW_H=0`, Justice holds | ethical, not strict syntropy |
+| one rises by making the other negative | extraction, even if aggregate rises |
+| both rise in the metric but consent/custody/contest fails | unjust metric gain |
+| individual freely accepts loss and whole rises | voluntary sacrifice, not syntropy |
+| payer or beneficiary is hidden | unclassifiable; fail closed |
+
+An action may be lawful preservation without being generative. It may be
+generous without being mutually beneficial. Precise names prevent moral praise
+from laundering coercion.
+
+---
+
+## 10. Decision test
+
+For any rule, relationship, product, ritual, institution, or strategy, ask:
+
+1. What are `i`, `H`, the horizon, and the baseline?
+2. What is being measured, and could another conjunctive model rank it
+   differently?
+3. What does the current model predict for each bearer?
+4. Who authorized the consequence, who acted, who bears it, and how can it be
+   contested?
+5. Who pays, who benefits, what becomes irreversible, and who can exit?
+6. Did the commitment receipt match performed action?
+7. Did the outcome receipt match the prediction for both bearers?
+8. Is any aggregate gain hiding the destruction of one side?
+
+Fail closed when a bearer, cost, authority, or receipt is missing.
+
+---
+
+## 11. Kill and revision criteria
+
+Revise or reject an application when:
+
+- its value measure cannot be operationalized;
+- boundaries or baselines are changed after outcomes to manufacture goodness;
+- predicted syntropy repeatedly becomes receipted harm;
+- a rival model predicts both bearers' receipts materially better;
+- authorization is status-based rather than complete and contestable;
+- the whole is an abstraction with no identifiable carriers or consequence
+  bearers;
+- the scheme permits aggregate ethical laundering;
+- exit, consent, or custody exists only on paper.
+
+The external moral-realist claim remains open. The internal demand is stricter:
+state the norm, expose the bearers, predict both directions, receive the world,
+and revise when the receipt disagrees.
+
+---
+
+## Public compression
+
+```text
+A moral part raises its sustaining whole without erasing itself.
+An ethical whole raises its parts without consuming its ground.
+Syntropic Dyadism means both actually rise under accountable Justice.
+```
+
+---
+
+## See also
+
+- [Rights, Duties, and Due Process](01_RIGHTS_DUTIES_AND_DUE_PROCESS.md)
+- [Power-Max](../../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md)
+- [The Soul Loop](../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md)
+- [The Extraction Law](../00_THE_EXTRACTION_LAW.md)
+
+*Objective Morals and Ethics | repaired 2026-07-17 | Two bearers, two receipts, no laundering.*
