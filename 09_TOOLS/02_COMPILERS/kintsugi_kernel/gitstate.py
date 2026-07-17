@@ -1318,10 +1318,16 @@ def _reservation_records(common_dir: Path) -> tuple[dict[str, Any], ...]:
 
 
 def _used_attempt_ids(
-    root: Path, core: dict[str, object], phase: str
+    root: Path,
+    core: dict[str, object],
+    phase: str,
+    *,
+    ignore_reservation_id: str | None = None,
 ) -> tuple[str, ...]:
     if phase not in RECEIPT_IDENTITIES:
         raise KintsugiError("KIN-E-CONCURRENT", "attempt", "attempt phase is invalid")
+    if ignore_reservation_id is not None:
+        _canonical_attempt_number(ignore_reservation_id, phase)
     common_dir = resolve_git_common_dir(root)
     used: set[str] = set()
 
@@ -1366,7 +1372,10 @@ def _used_attempt_ids(
         if historical.phase == phase:
             used.add(attempt_id)
     for reservation in _reservation_records(common_dir):
-        if reservation["phase"] == phase:
+        if (
+            reservation["phase"] == phase
+            and reservation["id"] != ignore_reservation_id
+        ):
             used.add(str(reservation["id"]))
     return tuple(sorted(used, key=lambda value: _canonical_attempt_number(value, phase)))
 
@@ -1431,6 +1440,8 @@ def _plan_next_attempt(
     core: dict[str, object],
     phase: str,
     receipt_id: str,
+    *,
+    ignore_reservation_id: str | None = None,
 ) -> AttemptPlan:
     identity = RECEIPT_IDENTITIES.get(phase)
     if identity is None or receipt_id != identity[0]:
@@ -1446,7 +1457,14 @@ def _plan_next_attempt(
         raise KintsugiError(
             "KIN-E-CONCURRENT", "attempt", "successor requires a FAILED or ABANDONED predecessor"
         )
-    used = set(_used_attempt_ids(root, core, phase))
+    used = set(
+        _used_attempt_ids(
+            root,
+            core,
+            phase,
+            ignore_reservation_id=ignore_reservation_id,
+        )
+    )
     number = 1
     while f"RVA-{phase}-{number:03d}" in used:
         number += 1
@@ -2523,12 +2541,24 @@ def _validate_predecessor_fence(
         )
     receipt = receipts[0]
 
-    core_bytes = _committed_regular_bytes(root, core_relative)
+    core_bytes = _read_regular_no_symlinks(
+        root,
+        core_relative,
+        code="KIN-E-CONCURRENT",
+        require_single_link=True,
+    )
     if core_bytes != canonical_json_bytes(core):
         raise KintsugiError(
-            "KIN-E-CONCURRENT", core_relative, "terminal core bytes do not equal the predecessor records"
+            "KIN-E-CONCURRENT",
+            core_relative,
+            "working core bytes do not equal the supplied successor records",
         )
-    receipt_bytes = _committed_regular_bytes(root, str(receipt.get("path")))
+    receipt_bytes = _read_regular_no_symlinks(
+        root,
+        str(receipt.get("path")),
+        code="KIN-E-CONCURRENT",
+        require_single_link=True,
+    )
     synchronized = synchronize_receipt_markdown(
         receipt_bytes,
         receipt,

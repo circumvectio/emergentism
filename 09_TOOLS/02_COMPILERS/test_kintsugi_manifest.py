@@ -22,10 +22,13 @@ from kintsugi_kernel.records import attempt_paths
 from kintsugi_test_support import (
     ATTEMPT_ID,
     CLAIM_ID,
+    add_confirmed_seam,
     build_committed_predecessor_fixture,
     build_ledger_markdown,
     build_receipt_markdown,
     build_review_attempt,
+    build_review_attestation,
+    build_review_finding,
     build_review_finding_disposition,
     build_review_markdown,
     build_synthetic_git_repository,
@@ -38,6 +41,60 @@ def current_file_record(root: Path, relative: str) -> dict[str, str]:
     if path.is_symlink():
         return {"path": relative, "kind": "SYMLINK", "sha256": raw_hash(os.readlink(path).encode("utf-8"))}
     return {"path": relative, "kind": "FILE", "sha256": raw_hash(path.read_bytes())}
+
+
+def phase_manifest(core: dict[str, object], phase: str = "B") -> dict[str, object]:
+    matches = [
+        value for value in core["manifests"]
+        if isinstance(value, dict) and value.get("phase") == phase
+    ]
+    if len(matches) != 1:
+        raise AssertionError(f"expected one Phase-{phase} manifest")
+    return matches[0]
+
+
+def phase_receipt(core: dict[str, object], phase: str = "B") -> dict[str, object]:
+    matches = [
+        value for value in core["phaseReceipts"]
+        if isinstance(value, dict) and value.get("phase") == phase
+    ]
+    if len(matches) != 1:
+        raise AssertionError(f"expected one Phase-{phase} receipt")
+    return matches[0]
+
+
+def phase_attempt(core: dict[str, object], phase: str = "B") -> dict[str, object]:
+    matches = [
+        value for value in core["reviewAttempts"]
+        if isinstance(value, dict) and value.get("phase") == phase
+    ]
+    if len(matches) != 1:
+        raise AssertionError(f"expected one Phase-{phase} review attempt")
+    return matches[0]
+
+
+def attempt_artifact(
+    core: dict[str, object], attempt_id: str
+) -> dict[str, object]:
+    matches = [
+        value for value in core["reviewAttemptArtifacts"]
+        if isinstance(value, dict) and value.get("attemptId") == attempt_id
+    ]
+    if len(matches) != 1:
+        raise AssertionError(f"expected one artifact for {attempt_id}")
+    return matches[0]
+
+
+def record_by_id(
+    core: dict[str, object], collection: str, record_id: str
+) -> dict[str, object]:
+    matches = [
+        value for value in core[collection]
+        if isinstance(value, dict) and value.get("id") == record_id
+    ]
+    if len(matches) != 1:
+        raise AssertionError(f"expected one {record_id} in {collection}")
+    return matches[0]
 
 
 class GitManifestSurfaceTests(unittest.TestCase):
@@ -665,7 +722,7 @@ class AttemptAndConcurrencyPrimitiveTests(unittest.TestCase):
 
         predecessor = build_review_attempt("FAILED", logic_attestation_id="ATT-LOGIC-001")
         self.core["reviewAttempts"] = [predecessor]
-        self.core["phaseReceipts"][0]["reviewAttemptId"] = ATTEMPT_ID
+        phase_receipt(self.core)["reviewAttemptId"] = ATTEMPT_ID
 
         untracked = self.fixture.canonical_root / attempt_paths("RVA-B-003")[0]
         untracked.parent.mkdir(parents=True, exist_ok=True)
@@ -718,7 +775,7 @@ class AttemptAndConcurrencyPrimitiveTests(unittest.TestCase):
             "logicReviewSha256": None,
             "btjReviewSha256": None,
         }]
-        pending["phaseReceipts"][0]["reviewAttemptId"] = ATTEMPT_ID
+        phase_receipt(pending)["reviewAttemptId"] = ATTEMPT_ID
         manifest = pending["manifests"][0]
         manifest["finalFiles"] = [
             current_file_record(self.fixture.isolated_root, record["path"])
@@ -1189,11 +1246,10 @@ class PredecessorFenceTests(unittest.TestCase):
 
         self.validate_fence()
 
-    def test_uncommitted_core_receipt_target_or_review_rewrite_is_rejected(self) -> None:
+    def test_uncommitted_core_artifact_or_receipt_record_rewrite_is_rejected(self) -> None:
         attempt = self.core["reviewAttempts"][0]
         paths = (
             self.core_relative,
-            self.core["phaseReceipts"][0]["path"],
             attempt["reviewTargetPath"],
             attempt["logicReviewPath"],
         )
@@ -1206,6 +1262,17 @@ class PredecessorFenceTests(unittest.TestCase):
                     self.validate_fence()
                 self.assertEqual(caught.exception.code, "KIN-E-CONCURRENT")
                 path.write_bytes(original)
+
+        receipt_path = (
+            self.fixture.isolated_root / phase_receipt(self.core)["path"]
+        )
+        original = receipt_path.read_bytes()
+        rewritten = original.replace(b'"id":"REC-B-109"', b'"id":"REC-B-999"')
+        self.assertNotEqual(rewritten, original)
+        receipt_path.write_bytes(rewritten)
+        with self.assertRaises(KintsugiError) as caught:
+            self.validate_fence()
+        self.assertEqual(caught.exception.code, "KIN-E-CONCURRENT")
 
     def test_symlinked_intermediate_artifact_parent_is_rejected(self) -> None:
         attempt = self.core["reviewAttempts"][0]
@@ -1283,7 +1350,7 @@ class PredecessorFenceTests(unittest.TestCase):
             "logicReviewSha256": None,
             "btjReviewSha256": None,
         })
-        receipt = self.core["phaseReceipts"][0]
+        receipt = phase_receipt(self.core)
         receipt["reviewAttemptId"] = "RVA-B-002"
         receipt_path = self.fixture.isolated_root / receipt["path"]
         receipt_path.write_bytes(build_receipt_markdown(receipt))
@@ -1389,7 +1456,7 @@ class PredecessorFenceTests(unittest.TestCase):
     def test_reachable_terminal_chain_cannot_be_erased_and_restarted(self) -> None:
         former_attempt = self.core["reviewAttempts"][0]
         reset_core = build_synthetic_manifest_core(self.fixture)
-        reset_receipt = reset_core["phaseReceipts"][0]
+        reset_receipt = phase_receipt(reset_core)
         (self.fixture.isolated_root / reset_receipt["path"]).write_bytes(
             build_receipt_markdown(reset_receipt)
         )
@@ -1443,7 +1510,7 @@ class PredecessorFenceTests(unittest.TestCase):
             "logicReviewSha256": None,
             "btjReviewSha256": None,
         })
-        receipt = self.core["phaseReceipts"][0]
+        receipt = phase_receipt(self.core)
         receipt["reviewAttemptId"] = "RVA-B-002"
         (self.fixture.isolated_root / receipt["path"]).write_bytes(
             build_receipt_markdown(receipt)
@@ -1490,7 +1557,7 @@ class PredecessorFenceTests(unittest.TestCase):
             "logicReviewSha256": None,
             "btjReviewSha256": None,
         })
-        receipt = self.core["phaseReceipts"][0]
+        receipt = phase_receipt(self.core)
         receipt["reviewAttemptId"] = "RVA-B-002"
         (self.fixture.isolated_root / receipt["path"]).write_bytes(
             build_receipt_markdown(receipt)
@@ -1543,7 +1610,7 @@ class PredecessorFenceTests(unittest.TestCase):
         review_path = self.fixture.isolated_root / attempt["logicReviewPath"]
         review_path.parent.mkdir(parents=True, exist_ok=True)
         review_path.write_bytes(alternate_review)
-        receipt = alternate["phaseReceipts"][0]
+        receipt = phase_receipt(alternate)
         (self.fixture.isolated_root / receipt["path"]).write_bytes(
             build_receipt_markdown(receipt)
         )
@@ -1600,7 +1667,7 @@ class PredecessorFenceTests(unittest.TestCase):
         review_path = self.fixture.isolated_root / attempt["logicReviewPath"]
         review_path.parent.mkdir(parents=True, exist_ok=True)
         review_path.write_bytes(alternate_review)
-        receipt = alternate["phaseReceipts"][0]
+        receipt = phase_receipt(alternate)
         (self.fixture.isolated_root / receipt["path"]).write_bytes(
             build_receipt_markdown(receipt)
         )
@@ -1642,7 +1709,7 @@ class PredecessorFenceTests(unittest.TestCase):
             path = self.fixture.isolated_root / value
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_bytes(payload)
-        receipt = passed["phaseReceipts"][0]
+        receipt = phase_receipt(passed)
         (self.fixture.isolated_root / receipt["path"]).write_bytes(
             build_receipt_markdown(receipt)
         )
@@ -1712,7 +1779,7 @@ class PredecessorFenceTests(unittest.TestCase):
         self.core["reviewFindingDispositions"].append(
             build_review_finding_disposition()
         )
-        receipt = self.core["phaseReceipts"][0]
+        receipt = phase_receipt(self.core)
         receipt["reviewAttemptId"] = "RVA-B-002"
         (self.fixture.isolated_root / receipt["path"]).write_bytes(
             build_receipt_markdown(receipt)
@@ -1760,7 +1827,7 @@ class ManifestInventoryTests(unittest.TestCase):
             "logicReviewSha256": None,
             "btjReviewSha256": None,
         }]
-        core["phaseReceipts"][0]["reviewAttemptId"] = ATTEMPT_ID
+        phase_receipt(core)["reviewAttemptId"] = ATTEMPT_ID
         manifest = core["manifests"][0]
         manifest["finalFiles"] = [
             current_file_record(self.fixture.isolated_root, record["path"])
@@ -1825,7 +1892,7 @@ class ManifestInventoryTests(unittest.TestCase):
         for status in ("COMPLETE", "VERIFIED"):
             with self.subTest(status=status):
                 core = build_synthetic_manifest_core(self.fixture)
-                receipt = core["phaseReceipts"][0]
+                receipt = phase_receipt(core)
                 receipt["status"] = status
                 self.assertIsNone(receipt["reviewAttemptId"])
 
@@ -2471,7 +2538,7 @@ class ManifestInventoryTests(unittest.TestCase):
         self.assertIn("KIN-E-MANIFEST", {issue.code for issue in issues})
 
     def test_missing_reserved_control_path_is_rejected(self) -> None:
-        receipt_path = self.core["phaseReceipts"][0]["path"]
+        receipt_path = phase_receipt(self.core)["path"]
         (self.fixture.isolated_root / receipt_path).unlink()
 
         issues = validate_manifest(
@@ -2569,7 +2636,7 @@ class ManifestInventoryTests(unittest.TestCase):
             "logicReviewSha256": None,
             "btjReviewSha256": None,
         })
-        split_chain["phaseReceipts"][0]["reviewAttemptId"] = "RVA-B-002"
+        phase_receipt(split_chain)["reviewAttemptId"] = "RVA-B-002"
         manifest = split_chain["manifests"][0]
         manifest["closureOnlyPaths"] = sorted({
             *attempt_paths(ATTEMPT_ID),
@@ -2589,7 +2656,7 @@ class ManifestInventoryTests(unittest.TestCase):
         self.assertIn("KIN-E-MANIFEST", {issue.code for issue in issues})
 
         hidden_chain = self.review_ready_core()
-        hidden_chain["phaseReceipts"][0]["reviewAttemptId"] = None
+        phase_receipt(hidden_chain)["reviewAttemptId"] = None
         hidden_manifest = hidden_chain["manifests"][0]
         hidden_manifest["finalFiles"] = []
         hidden_manifest["finalFileCount"] = 0
@@ -2711,7 +2778,7 @@ class ManifestInventoryTests(unittest.TestCase):
         mutations = {
             "trial omission": lambda core: core["manifests"][0].__setitem__("trialedClaimIds", []),
             "trial count": lambda core: core["manifests"][0].__setitem__("trialedClaimCount", 0),
-            "receipt claim omission": lambda core: core["phaseReceipts"][0].__setitem__(
+            "receipt claim omission": lambda core: phase_receipt(core).__setitem__(
                 "claimIds", []
             ),
             "source raw hash": lambda core: core["sources"][0].__setitem__(
@@ -2743,9 +2810,13 @@ class FinalManifestFreezeTests(unittest.TestCase):
     def setUp(self) -> None:
         self.temporary = tempfile.TemporaryDirectory()
         self.addCleanup(self.temporary.cleanup)
-        self.fixture = build_synthetic_git_repository(Path(self.temporary.name))
-        self.core = build_synthetic_manifest_core(self.fixture)
-        receipt = self.core["phaseReceipts"][0]
+        self.fixture = build_synthetic_git_repository(
+            Path(self.temporary.name), include_phase_a_artifacts=True
+        )
+        self.core = build_synthetic_manifest_core(
+            self.fixture, include_verified_phase_a=True
+        )
+        receipt = phase_receipt(self.core)
         (self.fixture.isolated_root / receipt["path"]).write_bytes(
             build_receipt_markdown(receipt)
         )
@@ -2753,6 +2824,160 @@ class FinalManifestFreezeTests(unittest.TestCase):
             self.fixture.isolated_root
             / "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAM_LEDGER.md"
         ).write_bytes(build_ledger_markdown([]))
+
+    def git(self, *argv: str) -> bytes:
+        return subprocess.run(
+            ["git", *argv],
+            cwd=self.fixture.isolated_root,
+            check=True,
+            stdin=subprocess.DEVNULL,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        ).stdout
+
+    def write_core(self, core: dict[str, object]) -> None:
+        (
+            self.fixture.isolated_root
+            / "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json"
+        ).write_bytes(canonical_json_bytes(core))
+
+    @staticmethod
+    def disposition_input(
+        disposition: str,
+        **endpoints: list[object],
+    ) -> dict[str, object]:
+        record: dict[str, object] = {
+            "findingId": "FND-B-001",
+            "disposition": disposition,
+            "rationale": "The disposition is proven by its exact typed endpoint.",
+            "claimIds": [],
+            "seamIds": [],
+            "ledgerSectionIds": [],
+            "receiptIds": [],
+            "subjectPaths": [],
+            "discriminatorIds": [],
+            "evidenceFiles": [],
+        }
+        record.update(endpoints)
+        return record
+
+    @staticmethod
+    def add_discriminator(core: dict[str, object]) -> None:
+        discriminator = {
+            "id": "DSC-B-001",
+            "claimId": CLAIM_ID,
+            "question": "Does the counterexample defeat the bounded claim?",
+            "method": "Run the frozen counterexample against the typed claim.",
+            "cheapestTest": "Evaluate the declared fixture once.",
+            "expectedObservations": ["The typed outcome is recorded."],
+            "decisionRule": "Treat the observed typed outcome as decisive.",
+            "status": "DECISIVE",
+        }
+        core["discriminators"] = [discriminator]
+        core["trials"][0]["discriminatorIds"] = [discriminator["id"]]
+
+    def semantic_predecessor(
+        self,
+        *,
+        with_seam: bool = False,
+        with_discriminator: bool = False,
+    ) -> dict[str, object]:
+        from kintsugi_kernel.manifest import _subject_target_value
+
+        core = copy.deepcopy(self.core)
+        core["claims"][0]["proposition"] = (
+            "The state is explicitly typed in the predecessor subject."
+        )
+        if with_seam:
+            add_confirmed_seam(core, seam_id="KIN-B-001")
+        if with_discriminator:
+            self.add_discriminator(core)
+
+        receipt = phase_receipt(core)
+        receipt_path = self.fixture.isolated_root / receipt["path"]
+        receipt_path.write_bytes(build_receipt_markdown(
+            receipt,
+            prefix=b"# Synthetic receipt\n\nPredecessor subject narrative.\n",
+        ))
+        ledger_path = (
+            self.fixture.isolated_root
+            / "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAM_LEDGER.md"
+        )
+        ledger_path.write_bytes(build_ledger_markdown(core["seams"]))
+        self.write_core(core)
+
+        current_receipt = copy.deepcopy(receipt)
+        pending = freeze_manifest_value(
+            self.fixture.isolated_root,
+            self.fixture.canonical_root,
+            core,
+            "B",
+            "MANIFEST",
+            True,
+        )
+        attempt = phase_attempt(pending)
+        artifact = attempt_artifact(pending, attempt["id"])
+        state = inspect_git_state(self.fixture.isolated_root, self.fixture.base_commit)
+        target = _subject_target_value(
+            self.fixture.isolated_root,
+            pending,
+            phase_manifest(pending),
+            current_receipt,
+            "B",
+            attempt["id"],
+            state,
+        )
+        target["reviewSubjectDigest"] = attempt["reviewSubjectDigest"]
+        target_bytes = canonical_json_bytes(target)
+
+        finding = build_review_finding()
+        attestation = build_review_attestation("LOGIC", "FAIL")
+        attestation["path"] = attempt["logicReviewPath"]
+        attestation["reviewTargetDigest"] = raw_hash(target_bytes)
+        review_bytes = build_review_markdown(attestation, [finding])
+        attempt["logicAttestationId"] = attestation["id"]
+        attempt["status"] = "FAILED"
+        artifact["reviewTargetSha256"] = raw_hash(target_bytes)
+        artifact["logicReviewSha256"] = raw_hash(review_bytes)
+        pending["reviewAttestations"] = [
+            *[
+                existing
+                for existing in pending["reviewAttestations"]
+                if existing.get("attemptId") != attempt["id"]
+            ],
+            attestation,
+        ]
+        pending["reviewFindings"] = [
+            *[
+                existing
+                for existing in pending["reviewFindings"]
+                if existing.get("attemptId") != attempt["id"]
+            ],
+            finding,
+        ]
+
+        target_path = self.fixture.isolated_root / attempt["reviewTargetPath"]
+        target_path.parent.mkdir(parents=True, exist_ok=True)
+        target_path.write_bytes(target_bytes)
+        review_path = self.fixture.isolated_root / attempt["logicReviewPath"]
+        review_path.parent.mkdir(parents=True, exist_ok=True)
+        review_path.write_bytes(review_bytes)
+        receipt_path.write_bytes(build_receipt_markdown(
+            phase_receipt(pending),
+            prefix=b"# Synthetic receipt\n\nPredecessor subject narrative.\n",
+        ))
+        self.write_core(pending)
+        self.git(
+            "add",
+            "--",
+            "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json",
+            "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAM_LEDGER.md",
+            phase_receipt(pending)["path"],
+            attempt["reviewTargetPath"],
+            attempt["logicReviewPath"],
+        )
+        self.git("commit", "-m", "record semantic predecessor")
+        return pending
 
     def git_status(self) -> bytes:
         return subprocess.run(
@@ -2795,10 +3020,10 @@ class FinalManifestFreezeTests(unittest.TestCase):
             (self.fixture.common_dir / "kintsugi-attempt-reservations").exists()
         )
 
-        receipt = first["phaseReceipts"][0]
-        manifest = first["manifests"][0]
-        attempt = first["reviewAttempts"][0]
-        artifact = first["reviewAttemptArtifacts"][0]
+        receipt = phase_receipt(first)
+        manifest = phase_manifest(first)
+        attempt = phase_attempt(first)
+        artifact = attempt_artifact(first, attempt["id"])
         expected_paths = attempt_paths("RVA-B-001")
         self.assertEqual(receipt["reviewAttemptId"], "RVA-B-001")
         self.assertEqual(
@@ -2823,6 +3048,7 @@ class FinalManifestFreezeTests(unittest.TestCase):
                 "btjAttestationId": None,
             },
         )
+
         self.assertEqual(
             tuple(attempt[field] for field in (
                 "reviewTargetPath",
@@ -2848,6 +3074,177 @@ class FinalManifestFreezeTests(unittest.TestCase):
             [record["path"] for record in manifest["includedFiles"]],
         )
         self.assertEqual(manifest["finalFileCount"], len(manifest["finalFiles"]))
+
+    def test_reserved_attempt_is_frozen_with_the_exact_preplanned_identity(self) -> None:
+        from kintsugi_kernel.gitstate import (
+            _plan_next_attempt,
+            _reserve_attempt_id,
+            _transition_lock,
+        )
+        from kintsugi_kernel.manifest import _freeze_manifest_value_with_plan
+
+        expected_head = subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            cwd=self.fixture.isolated_root,
+            check=True,
+            stdin=subprocess.DEVNULL,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        ).stdout.decode("ascii").strip()
+        core_relative = (
+            "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json"
+        )
+        expected_core = raw_hash(
+            (self.fixture.isolated_root / core_relative).read_bytes()
+        )
+
+        with _transition_lock(self.fixture.common_dir):
+            plan = _plan_next_attempt(
+                self.fixture.isolated_root,
+                self.core,
+                "B",
+                "REC-B-109",
+            )
+            _reserve_attempt_id(
+                self.fixture.common_dir,
+                plan,
+                expected_head,
+                expected_core,
+            )
+            prospective = _freeze_manifest_value_with_plan(
+                self.fixture.isolated_root,
+                self.fixture.canonical_root,
+                self.core,
+                "B",
+                "MANIFEST",
+                True,
+                attempt_plan=plan,
+                expected_head=expected_head,
+                expected_core_sha256=expected_core,
+            )
+
+        self.assertEqual(plan.id, "RVA-B-001")
+        self.assertEqual(phase_attempt(prospective)["id"], plan.id)
+        self.assertEqual(
+            phase_receipt(prospective)["reviewAttemptId"],
+            plan.id,
+        )
+
+    def test_unreserved_or_nonminimal_explicit_attempt_plan_is_rejected(self) -> None:
+        from kintsugi_kernel.gitstate import (
+            AttemptPlan,
+            _reserve_attempt_id,
+            _transition_lock,
+        )
+        from kintsugi_kernel.manifest import _freeze_manifest_value_with_plan
+
+        expected_head = subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            cwd=self.fixture.isolated_root,
+            check=True,
+            stdin=subprocess.DEVNULL,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        ).stdout.decode("ascii").strip()
+        expected_core = raw_hash(
+            (
+                self.fixture.isolated_root
+                / "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json"
+            ).read_bytes()
+        )
+        forged_id = "RVA-B-999"
+        forged = AttemptPlan(
+            id=forged_id,
+            phase="B",
+            receipt_id="REC-B-109",
+            predecessor_id=None,
+            paths=attempt_paths(forged_id),
+        )
+
+        with self.assertRaises(KintsugiError) as unreserved:
+            _freeze_manifest_value_with_plan(
+                self.fixture.isolated_root,
+                self.fixture.canonical_root,
+                self.core,
+                "B",
+                "MANIFEST",
+                True,
+                attempt_plan=forged,
+                expected_head=expected_head,
+                expected_core_sha256=expected_core,
+            )
+        self.assertEqual(unreserved.exception.code, "KIN-E-CONCURRENT")
+
+        with _transition_lock(self.fixture.common_dir):
+            _reserve_attempt_id(
+                self.fixture.common_dir,
+                forged,
+                expected_head,
+                expected_core,
+            )
+            with self.assertRaises(KintsugiError) as nonminimal:
+                _freeze_manifest_value_with_plan(
+                    self.fixture.isolated_root,
+                    self.fixture.canonical_root,
+                    self.core,
+                    "B",
+                    "MANIFEST",
+                    True,
+                    attempt_plan=forged,
+                    expected_head=expected_head,
+                    expected_core_sha256=expected_core,
+                )
+        self.assertEqual(nonminimal.exception.code, "KIN-E-CONCURRENT")
+
+    def test_reserved_attempt_expectations_must_match_the_exact_cas(self) -> None:
+        from kintsugi_kernel.gitstate import (
+            _plan_next_attempt,
+            _reserve_attempt_id,
+            _transition_lock,
+        )
+        from kintsugi_kernel.manifest import _freeze_manifest_value_with_plan
+
+        expected_head = subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            cwd=self.fixture.isolated_root,
+            check=True,
+            stdin=subprocess.DEVNULL,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        ).stdout.decode("ascii").strip()
+        expected_core = raw_hash(
+            (
+                self.fixture.isolated_root
+                / "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json"
+            ).read_bytes()
+        )
+
+        with _transition_lock(self.fixture.common_dir):
+            plan = _plan_next_attempt(
+                self.fixture.isolated_root,
+                self.core,
+                "B",
+                "REC-B-109",
+            )
+            _reserve_attempt_id(
+                self.fixture.common_dir,
+                plan,
+                expected_head,
+                expected_core,
+            )
+            with self.assertRaises(KintsugiError) as mismatched:
+                _freeze_manifest_value_with_plan(
+                    self.fixture.isolated_root,
+                    self.fixture.canonical_root,
+                    self.core,
+                    "B",
+                    "MANIFEST",
+                    True,
+                    attempt_plan=plan,
+                    expected_head="f" * 40,
+                    expected_core_sha256=expected_core,
+                )
+        self.assertEqual(mismatched.exception.code, "KIN-E-CONCURRENT")
 
     def test_allowed_only_semantic_payload_cannot_escape_hash_binding(self) -> None:
         relative = "03_METHODOLOGY/arbitrary-review.md"
@@ -2889,8 +3286,8 @@ class FinalManifestFreezeTests(unittest.TestCase):
         )
 
         self.assertNotEqual(
-            baseline["reviewAttempts"][0]["reviewSubjectDigest"],
-            changed_result["reviewAttempts"][0]["reviewSubjectDigest"],
+            phase_attempt(baseline)["reviewSubjectDigest"],
+            phase_attempt(changed_result)["reviewSubjectDigest"],
         )
 
     def test_final_freeze_recomputes_subject_after_validation_and_rejects_transient_reads(self) -> None:
@@ -2926,7 +3323,7 @@ class FinalManifestFreezeTests(unittest.TestCase):
     def test_final_freeze_rejects_transient_bytes_spanning_both_subject_reads(self) -> None:
         from kintsugi_kernel.manifest import _subject_target_value as real_target
 
-        receipt = self.core["phaseReceipts"][0]
+        receipt = phase_receipt(self.core)
         receipt_path = self.fixture.isolated_root / receipt["path"]
         original = receipt_path.read_bytes()
         alternate = build_receipt_markdown(
@@ -3014,8 +3411,8 @@ class FinalManifestFreezeTests(unittest.TestCase):
             "MANIFEST",
             True,
         )
-        manifest = prospective["manifests"][0]
-        attempt_id = prospective["reviewAttempts"][0]["id"]
+        manifest = phase_manifest(prospective)
+        attempt_id = phase_attempt(prospective)["id"]
         state = inspect_git_state(self.fixture.isolated_root, self.fixture.base_commit)
         self.assertIsInstance(state, GitState)
 
@@ -3023,7 +3420,7 @@ class FinalManifestFreezeTests(unittest.TestCase):
             self.fixture.isolated_root,
             prospective,
             manifest,
-            self.core["phaseReceipts"][0],
+            phase_receipt(self.core),
             "B",
             attempt_id,
             state,
@@ -3059,7 +3456,7 @@ class FinalManifestFreezeTests(unittest.TestCase):
         }
         seam = {"id": "KIN-B-001", "claimId": CLAIM_ID, "receiptId": "REC-B-109"}
         core["seams"] = [seam]
-        core["phaseReceipts"][0]["seamIds"] = [seam["id"]]
+        phase_receipt(core)["seamIds"] = [seam["id"]]
         core["antibodies"] = [{
             "id": "ANT-B-001",
             "seamId": seam["id"],
@@ -3077,7 +3474,7 @@ class FinalManifestFreezeTests(unittest.TestCase):
         }]
         manifest = core["manifests"][0]
         manifest["harvestedClaimIds"] = [claim["id"] for claim in core["claims"]]
-        receipt = core["phaseReceipts"][0]
+        receipt = phase_receipt(core)
 
         closure = _semantic_record_closure(core, manifest, receipt)
 
@@ -3093,7 +3490,7 @@ class FinalManifestFreezeTests(unittest.TestCase):
             _semantic_record_closure(
                 cyclic,
                 cyclic["manifests"][0],
-                cyclic["phaseReceipts"][0],
+                phase_receipt(cyclic),
             )
         self.assertEqual(caught.exception.code, "KIN-E-MANIFEST")
 
@@ -3114,7 +3511,7 @@ class FinalManifestFreezeTests(unittest.TestCase):
         core["manifests"][0]["harvestedClaimIds"].append(endpoint["id"])
         seam = {"id": "KIN-B-001", "claimId": CLAIM_ID, "receiptId": "REC-B-109"}
         core["seams"] = [seam]
-        core["phaseReceipts"][0]["seamIds"] = [seam["id"]]
+        phase_receipt(core)["seamIds"] = [seam["id"]]
         core["antibodies"] = [{
             "id": "ANT-B-001",
             "seamId": seam["id"],
@@ -3132,7 +3529,7 @@ class FinalManifestFreezeTests(unittest.TestCase):
         }]
 
         closure = _semantic_record_closure(
-            core, core["manifests"][0], core["phaseReceipts"][0]
+            core, core["manifests"][0], phase_receipt(core)
         )
 
         self.assertEqual(
@@ -3169,10 +3566,10 @@ class FinalManifestFreezeTests(unittest.TestCase):
         core["seams"] = [selected_seam, rogue_seam]
         core["trials"].append(rogue_trial)
         core["propagations"] = [rogue_propagation]
-        core["phaseReceipts"][0]["seamIds"] = [selected_seam["id"]]
+        phase_receipt(core)["seamIds"] = [selected_seam["id"]]
 
         closure = _semantic_record_closure(
-            core, core["manifests"][0], core["phaseReceipts"][0]
+            core, core["manifests"][0], phase_receipt(core)
         )
 
         self.assertEqual([trial["id"] for trial in closure["trials"]], ["TRL-B-001"])
@@ -3201,10 +3598,10 @@ class FinalManifestFreezeTests(unittest.TestCase):
             "claimId": CLAIM_ID,
             "receiptId": "REC-A-108",
         }
-        current_receipt = copy.deepcopy(self.core["phaseReceipts"][0])
+        current_receipt = copy.deepcopy(phase_receipt(self.core))
         current_receipt["seamIds"] = [selected["id"]]
         prospective["seams"] = [selected, unrelated]
-        prospective["phaseReceipts"][0]["seamIds"] = [selected["id"]]
+        phase_receipt(prospective)["seamIds"] = [selected["id"]]
         (self.fixture.isolated_root / current_receipt["path"]).write_bytes(
             build_receipt_markdown(current_receipt)
         )
@@ -3223,7 +3620,7 @@ class FinalManifestFreezeTests(unittest.TestCase):
             manifest,
             current_receipt,
             "B",
-            prospective["reviewAttempts"][0]["id"],
+            phase_attempt(prospective)["id"],
             state,
         )
 
@@ -3247,12 +3644,12 @@ class FinalManifestFreezeTests(unittest.TestCase):
             self.fixture.isolated_root,
             prospective,
             manifest,
-            self.core["phaseReceipts"][0],
+            phase_receipt(self.core),
             "B",
-            prospective["reviewAttempts"][0]["id"],
+            phase_attempt(prospective)["id"],
             state,
         )
-        target["reviewSubjectDigest"] = prospective["reviewAttempts"][0][
+        target["reviewSubjectDigest"] = phase_attempt(prospective)[
             "reviewSubjectDigest"
         ]
         schema_path = (
@@ -3267,35 +3664,35 @@ class FinalManifestFreezeTests(unittest.TestCase):
         closure = _semantic_record_closure(
             prospective,
             manifest,
-            self.core["phaseReceipts"][0],
+            phase_receipt(self.core),
         )
         self.assertEqual(closure["dependencyReceipts"], [{
             "id": "REC-A-108",
-            "validationDigest": "sha256:" + "0" * 64,
+            "validationDigest": phase_receipt(self.core, "A")["validationDigest"],
         }])
 
         missing = copy.deepcopy(self.core)
-        missing["phaseReceipts"] = [missing["phaseReceipts"][0]]
+        missing["phaseReceipts"] = [phase_receipt(missing)]
         with self.assertRaises(KintsugiError):
             _semantic_record_closure(
-                missing, missing["manifests"][0], missing["phaseReceipts"][0]
+                missing, missing["manifests"][0], phase_receipt(missing)
             )
 
         cyclic = copy.deepcopy(self.core)
-        cyclic["phaseReceipts"][1]["dependsOnReceiptIds"] = ["REC-B-109"]
+        phase_receipt(cyclic, "A")["dependsOnReceiptIds"] = ["REC-B-109"]
         with self.assertRaises(KintsugiError):
             _semantic_record_closure(
-                cyclic, cyclic["manifests"][0], cyclic["phaseReceipts"][0]
+                cyclic, cyclic["manifests"][0], phase_receipt(cyclic)
             )
 
         unvalidated = copy.deepcopy(self.core)
-        unvalidated["phaseReceipts"][1]["validationDigest"] = ""
-        unvalidated["phaseReceipts"][1]["validationBundlePath"] = ""
+        phase_receipt(unvalidated, "A")["validationDigest"] = ""
+        phase_receipt(unvalidated, "A")["validationBundlePath"] = ""
         with self.assertRaises(KintsugiError):
             _semantic_record_closure(
                 unvalidated,
                 unvalidated["manifests"][0],
-                unvalidated["phaseReceipts"][0],
+                phase_receipt(unvalidated),
             )
 
     def test_review_subject_digest_ignores_attempt_number_from_a_durable_reservation(self) -> None:
@@ -3331,16 +3728,19 @@ class FinalManifestFreezeTests(unittest.TestCase):
             True,
         )
 
-        self.assertEqual(renumbered["reviewAttempts"][0]["id"], "RVA-B-002")
+        self.assertEqual(phase_attempt(renumbered)["id"], "RVA-B-002")
         self.assertEqual(
-            baseline["reviewAttempts"][0]["reviewSubjectDigest"],
-            renumbered["reviewAttempts"][0]["reviewSubjectDigest"],
+            phase_attempt(baseline)["reviewSubjectDigest"],
+            phase_attempt(renumbered)["reviewSubjectDigest"],
         )
 
     def test_successor_expands_process_invalid_disposition_atomically(self) -> None:
-        core = build_committed_predecessor_fixture(self.fixture)
-        predecessor = core["reviewAttempts"][0]
-        artifact = core["reviewAttemptArtifacts"][0]
+        core = build_committed_predecessor_fixture(
+            self.fixture,
+            include_verified_phase_a=True,
+        )
+        predecessor = phase_attempt(core)
+        artifact = attempt_artifact(core, predecessor["id"])
         disposition_input = {
             "findingId": "FND-B-001",
             "disposition": "PROCESS_INVALID",
@@ -3388,7 +3788,7 @@ class FinalManifestFreezeTests(unittest.TestCase):
             },
         )
         self.assertEqual(
-            prospective["phaseReceipts"][0]["reviewAttemptId"],
+            phase_receipt(prospective)["reviewAttemptId"],
             "RVA-B-002",
         )
         self.assertEqual(
@@ -3396,10 +3796,331 @@ class FinalManifestFreezeTests(unittest.TestCase):
             sorted(attempt_paths("RVA-B-001") + attempt_paths("RVA-B-002")),
         )
 
+    def test_addressed_claim_endpoint_requires_and_proves_exact_delta(self) -> None:
+        core = self.semantic_predecessor()
+        predecessor_digest = phase_attempt(core)["reviewSubjectDigest"]
+        core["claims"][0]["proposition"] = "The repaired claim has a changed projection."
+        self.write_core(core)
+
+        prospective = freeze_manifest_value(
+            self.fixture.isolated_root,
+            self.fixture.canonical_root,
+            core,
+            "B",
+            "MANIFEST",
+            True,
+            [self.disposition_input("ADDRESSED", claimIds=[CLAIM_ID])],
+        )
+
+        self.assertNotEqual(
+            prospective["reviewAttempts"][-1]["reviewSubjectDigest"],
+            predecessor_digest,
+        )
+        self.assertEqual(
+            prospective["reviewFindingDispositions"][-1]["claimIds"],
+            [CLAIM_ID],
+        )
+
+    def test_addressed_seam_endpoint_requires_and_proves_exact_delta(self) -> None:
+        core = self.semantic_predecessor(with_seam=True)
+        core["seams"][0]["survivingKernel"] = (
+            "The repaired seam now exposes a narrower surviving kernel."
+        )
+        ledger = (
+            self.fixture.isolated_root
+            / "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAM_LEDGER.md"
+        )
+        ledger.write_bytes(build_ledger_markdown(core["seams"]))
+        self.write_core(core)
+
+        prospective = freeze_manifest_value(
+            self.fixture.isolated_root,
+            self.fixture.canonical_root,
+            core,
+            "B",
+            "MANIFEST",
+            True,
+            [self.disposition_input("ADDRESSED", seamIds=["KIN-B-001"])],
+        )
+
+        self.assertEqual(
+            prospective["reviewFindingDispositions"][-1]["seamIds"],
+            ["KIN-B-001"],
+        )
+
+    def test_addressed_ledger_preamble_and_section_each_prove_delta(self) -> None:
+        for endpoint in ("LEDGER-PREAMBLE", "KIN-B-001"):
+            with self.subTest(endpoint=endpoint):
+                temporary = tempfile.TemporaryDirectory()
+                self.addCleanup(temporary.cleanup)
+                fixture = build_synthetic_git_repository(
+                    Path(temporary.name), include_phase_a_artifacts=True
+                )
+                prior_fixture = self.fixture
+                prior_core = self.core
+                try:
+                    self.fixture = fixture
+                    self.core = build_synthetic_manifest_core(
+                        fixture, include_verified_phase_a=True
+                    )
+                    receipt = phase_receipt(self.core)
+                    (fixture.isolated_root / receipt["path"]).write_bytes(
+                        build_receipt_markdown(receipt)
+                    )
+                    ledger_path = (
+                        fixture.isolated_root
+                        / "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAM_LEDGER.md"
+                    )
+                    ledger_path.write_bytes(build_ledger_markdown([]))
+                    core = self.semantic_predecessor(with_seam=True)
+                    if endpoint == "LEDGER-PREAMBLE":
+                        ledger_path.write_bytes(build_ledger_markdown(
+                            core["seams"],
+                            preamble=b"# Repaired Golden Seam Ledger\n\n",
+                        ))
+                    else:
+                        ledger_path.write_bytes(build_ledger_markdown(
+                            core["seams"],
+                            prefixes=[b"Repaired semantic section narrative."],
+                        ))
+
+                    prospective = freeze_manifest_value(
+                        fixture.isolated_root,
+                        fixture.canonical_root,
+                        core,
+                        "B",
+                        "MANIFEST",
+                        True,
+                        [self.disposition_input(
+                            "ADDRESSED", ledgerSectionIds=[endpoint]
+                        )],
+                    )
+                    self.assertEqual(
+                        prospective["reviewFindingDispositions"][-1][
+                            "ledgerSectionIds"
+                        ],
+                        [endpoint],
+                    )
+                finally:
+                    self.fixture = prior_fixture
+                    self.core = prior_core
+
+    def test_addressed_receipt_narrative_endpoint_proves_delta(self) -> None:
+        core = self.semantic_predecessor()
+        receipt = phase_receipt(core)
+        (self.fixture.isolated_root / receipt["path"]).write_bytes(
+            build_receipt_markdown(
+                receipt,
+                prefix=b"# Synthetic receipt\n\nRepaired receipt narrative.\n",
+            )
+        )
+
+        prospective = freeze_manifest_value(
+            self.fixture.isolated_root,
+            self.fixture.canonical_root,
+            core,
+            "B",
+            "MANIFEST",
+            True,
+            [self.disposition_input("ADDRESSED", receiptIds=["REC-B-109"])],
+        )
+
+        self.assertEqual(
+            prospective["reviewFindingDispositions"][-1]["receiptIds"],
+            ["REC-B-109"],
+        )
+
+    def test_addressed_non_control_final_source_endpoint_proves_delta(self) -> None:
+        core = self.semantic_predecessor()
+        relative = "03_METHODOLOGY/owner.md"
+        owner = self.fixture.isolated_root / relative
+        owner.write_bytes(b"# Repaired synthetic owner\n")
+        digest = raw_hash(owner.read_bytes())
+        core["sources"][0]["sha256"] = digest
+        final_record = next(
+            record for record in core["manifests"][0]["finalFiles"]
+            if record["path"] == relative
+        )
+        final_record["sha256"] = digest
+        self.write_core(core)
+
+        prospective = freeze_manifest_value(
+            self.fixture.isolated_root,
+            self.fixture.canonical_root,
+            core,
+            "B",
+            "MANIFEST",
+            True,
+            [self.disposition_input("ADDRESSED", subjectPaths=[relative])],
+        )
+
+        self.assertEqual(
+            prospective["reviewFindingDispositions"][-1]["subjectPaths"],
+            [relative],
+        )
+
+    def test_disputed_discriminator_resolves_in_changed_successor_subject(self) -> None:
+        core = self.semantic_predecessor()
+        self.add_discriminator(core)
+        self.write_core(core)
+
+        prospective = freeze_manifest_value(
+            self.fixture.isolated_root,
+            self.fixture.canonical_root,
+            core,
+            "B",
+            "MANIFEST",
+            True,
+            [self.disposition_input(
+                "DISPUTED",
+                claimIds=[CLAIM_ID],
+                discriminatorIds=["DSC-B-001"],
+            )],
+        )
+
+        self.assertEqual(
+            prospective["reviewFindingDispositions"][-1]["discriminatorIds"],
+            ["DSC-B-001"],
+        )
+
+    def test_same_subject_retry_accepts_only_process_invalid_dispositions(self) -> None:
+        core = self.semantic_predecessor(with_discriminator=True)
+        predecessor = phase_attempt(core)
+        artifact = attempt_artifact(core, predecessor["id"])
+        process = self.disposition_input(
+            "PROCESS_INVALID",
+            evidenceFiles=[{
+                "path": predecessor["logicReviewPath"],
+                "sha256": artifact["logicReviewSha256"],
+            }],
+        )
+        prospective = freeze_manifest_value(
+            self.fixture.isolated_root,
+            self.fixture.canonical_root,
+            core,
+            "B",
+            "MANIFEST",
+            True,
+            [process],
+        )
+        self.assertEqual(
+            prospective["reviewAttempts"][-1]["reviewSubjectDigest"],
+            predecessor["reviewSubjectDigest"],
+        )
+
+        disputed = self.disposition_input(
+            "DISPUTED", discriminatorIds=["DSC-B-001"]
+        )
+        with self.assertRaises(KintsugiError) as caught:
+            freeze_manifest_value(
+                self.fixture.isolated_root,
+                self.fixture.canonical_root,
+                core,
+                "B",
+                "MANIFEST",
+                True,
+                [disputed],
+            )
+        self.assertEqual(caught.exception.code, "KIN-E-MANIFEST")
+
+    def test_semantic_dispositions_fail_closed_on_unchanged_or_unresolved_endpoints(self) -> None:
+        cases = (
+            ("unchanged claim", self.disposition_input("ADDRESSED", claimIds=[CLAIM_ID])),
+            ("unknown claim", self.disposition_input("ADDRESSED", claimIds=["CLM-B-999"])),
+            ("unknown seam", self.disposition_input("ADDRESSED", seamIds=["KIN-B-999"])),
+            (
+                "unknown ledger section",
+                self.disposition_input("ADDRESSED", ledgerSectionIds=["KIN-B-999"]),
+            ),
+            (
+                "wrong receipt",
+                self.disposition_input("ADDRESSED", receiptIds=["REC-A-108"]),
+            ),
+            (
+                "reserved control path",
+                self.disposition_input(
+                    "ADDRESSED",
+                    subjectPaths=[
+                        "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json"
+                    ],
+                ),
+            ),
+        )
+        for label, disposition in cases:
+            with self.subTest(label=label):
+                temporary = tempfile.TemporaryDirectory()
+                self.addCleanup(temporary.cleanup)
+                fixture = build_synthetic_git_repository(
+                    Path(temporary.name), include_phase_a_artifacts=True
+                )
+                prior_fixture = self.fixture
+                prior_core = self.core
+                try:
+                    self.fixture = fixture
+                    self.core = build_synthetic_manifest_core(
+                        fixture, include_verified_phase_a=True
+                    )
+                    receipt = phase_receipt(self.core)
+                    (fixture.isolated_root / receipt["path"]).write_bytes(
+                        build_receipt_markdown(receipt)
+                    )
+                    (
+                        fixture.isolated_root
+                        / "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAM_LEDGER.md"
+                    ).write_bytes(build_ledger_markdown([]))
+                    core = self.semantic_predecessor()
+                    current_receipt = phase_receipt(core)
+                    (fixture.isolated_root / current_receipt["path"]).write_bytes(
+                        build_receipt_markdown(
+                            current_receipt,
+                            prefix=(
+                                b"# Synthetic receipt\n\n"
+                                b"An unrelated narrative change forces a changed subject.\n"
+                            ),
+                        )
+                    )
+                    with self.assertRaises(KintsugiError) as caught:
+                        freeze_manifest_value(
+                            fixture.isolated_root,
+                            fixture.canonical_root,
+                            core,
+                            "B",
+                            "MANIFEST",
+                            True,
+                            [disposition],
+                        )
+                    self.assertEqual(caught.exception.code, "KIN-E-MANIFEST")
+                finally:
+                    self.fixture = prior_fixture
+                    self.core = prior_core
+
+    def test_disputed_rejects_missing_or_unresolved_discriminator(self) -> None:
+        core = self.semantic_predecessor()
+        core["claims"][0]["conclusion"] = "A changed subject still needs resolution."
+        self.write_core(core)
+        for discriminator_ids in ([], ["DSC-B-999"]):
+            with self.subTest(discriminator_ids=discriminator_ids):
+                with self.assertRaises(KintsugiError) as caught:
+                    freeze_manifest_value(
+                        self.fixture.isolated_root,
+                        self.fixture.canonical_root,
+                        core,
+                        "B",
+                        "MANIFEST",
+                        True,
+                        [self.disposition_input(
+                            "DISPUTED", discriminatorIds=discriminator_ids
+                        )],
+                    )
+                self.assertEqual(caught.exception.code, "KIN-E-MANIFEST")
+
     def test_successor_dispositions_fail_closed_without_exact_bound_process_evidence(self) -> None:
-        core = build_committed_predecessor_fixture(self.fixture)
-        predecessor = core["reviewAttempts"][0]
-        artifact = core["reviewAttemptArtifacts"][0]
+        core = build_committed_predecessor_fixture(
+            self.fixture,
+            include_verified_phase_a=True,
+        )
+        predecessor = phase_attempt(core)
+        artifact = attempt_artifact(core, predecessor["id"])
         process_input = {
             "findingId": "FND-B-001",
             "disposition": "PROCESS_INVALID",
@@ -3426,7 +4147,7 @@ class FinalManifestFreezeTests(unittest.TestCase):
 
         for label, inputs in (
             ("missing exact finding coverage", []),
-            ("semantic delta not yet proven", [addressed]),
+            ("semantic delta not proven", [addressed]),
             ("unbound process evidence", [bad_hash]),
         ):
             with self.subTest(label=label), self.assertRaises(KintsugiError) as caught:
@@ -3468,14 +4189,14 @@ class PhaseABindingManifestTests(unittest.TestCase):
         self.assertTrue(core["claims"])
         self.assertEqual(len(manifest["requiredClaimBindings"]), 7)
         self.assertEqual(core["trials"], [])
-        self.assertEqual(core["phaseReceipts"][0]["trialIds"], [])
+        self.assertEqual(phase_receipt(core, "A")["trialIds"], [])
         self.assertEqual(manifest["trialedClaimIds"], [])
         self.assertEqual(manifest["finalFiles"], [])
         self.assertEqual(manifest["closureOnlyPaths"], [])
 
         phase_b = build_synthetic_manifest_core(self.fixture)
         phase_b["trials"] = []
-        phase_b["phaseReceipts"][0]["trialIds"] = []
+        phase_receipt(phase_b)["trialIds"] = []
         phase_b["manifests"][0]["trialedClaimIds"] = []
         phase_b["manifests"][0]["trialedClaimCount"] = 0
         issues = validate_manifest(
@@ -3571,7 +4292,7 @@ class PhaseABindingManifestTests(unittest.TestCase):
         duplicate = copy.deepcopy(core["trials"][0])
         duplicate["id"] = "TRL-A-008"
         core["trials"].append(duplicate)
-        core["phaseReceipts"][0]["trialIds"].append("TRL-A-008")
+        phase_receipt(core, "A")["trialIds"].append("TRL-A-008")
 
         self.assertIn(
             "KIN-E-MANIFEST",

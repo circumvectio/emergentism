@@ -4,11 +4,12 @@ import copy
 import fnmatch
 import json
 from pathlib import Path
-from typing import Any
+from typing import Any, Mapping
 
 from .codec import canonical_json_bytes, normalize_lf, raw_hash, text_hash
 from .diagnostics import Issue, KintsugiError
 from .gitstate import (
+    AttemptPlan,
     FileRecord,
     GitState,
     _base_blob_records,
@@ -21,11 +22,13 @@ from .gitstate import (
     _resolve_commit,
     _snapshot_protected_tree,
     _read_regular_no_symlinks,
+    _reservation_records,
     _validate_predecessor_fence,
     _validate_reachable_terminal_chain,
     _unique_chain_leaf,
     _worktree_attempt_paths,
     inspect_git_state,
+    resolve_git_common_dir,
 )
 from .markdown import (
     project_review_seam,
@@ -73,6 +76,7 @@ _DISPOSITION_INPUT_FIELDS = frozenset({
     "discriminatorIds",
     "evidenceFiles",
 })
+_FrozenReads = Mapping[str, tuple[str, bytes]]
 
 
 def _issue(path: str, code: str, message: str) -> Issue:
@@ -917,14 +921,50 @@ def validate_manifest(
     return []
 
 
-def _read_control_bytes(root: Path, relative: str) -> bytes:
-    try:
+def _frozen_file_record(
+    root: Path,
+    relative: str,
+    read_overrides: _FrozenReads | None,
+) -> FileRecord:
+    if read_overrides is None:
+        return _hash_regular_or_symlink(root, relative)
+    frozen = read_overrides.get(relative)
+    if frozen is None:
+        _raise(relative, "KIN-E-CONCURRENT", "frozen read set does not cover required bytes")
+    kind, payload = frozen
+    if kind not in {"FILE", "SYMLINK"} or not isinstance(payload, bytes):
+        _raise(relative, "KIN-E-CONCURRENT", "frozen read-set member is malformed")
+    return FileRecord(relative, kind, raw_hash(payload))
+
+
+def _frozen_regular_bytes(
+    root: Path,
+    relative: str,
+    read_overrides: _FrozenReads | None,
+) -> bytes:
+    if read_overrides is None:
         return _read_regular_no_symlinks(
             root,
             relative,
             code="KIN-E-MANIFEST",
             require_single_link=True,
         )
+    frozen = read_overrides.get(relative)
+    if frozen is None:
+        _raise(relative, "KIN-E-CONCURRENT", "frozen read set does not cover required bytes")
+    kind, payload = frozen
+    if kind != "FILE" or not isinstance(payload, bytes):
+        _raise(relative, "KIN-E-CONCURRENT", "required frozen input is not an ordinary file")
+    return payload
+
+
+def _read_control_bytes(
+    root: Path,
+    relative: str,
+    read_overrides: _FrozenReads | None = None,
+) -> bytes:
+    try:
+        return _frozen_regular_bytes(root, relative, read_overrides)
     except KintsugiError as exc:
         _raise(
             relative,
@@ -1508,8 +1548,13 @@ def _subject_target_value(
     phase: str,
     attempt_id: str,
     state: GitState,
+    read_overrides: _FrozenReads | None = None,
 ) -> dict[str, object]:
-    receipt_bytes = _read_control_bytes(root, _repo_path(receipt.get("path"), "receipt.path"))
+    receipt_bytes = _read_control_bytes(
+        root,
+        _repo_path(receipt.get("path"), "receipt.path"),
+        read_overrides,
+    )
     receipt_sync = synchronize_receipt_markdown(
         receipt_bytes,
         receipt,
@@ -1523,7 +1568,7 @@ def _subject_target_value(
     closure = _semantic_record_closure(core, manifest, receipt)
     seams = closure["seams"]
     assert isinstance(seams, list)
-    ledger_bytes = _read_control_bytes(root, _LEDGER_PATH)
+    ledger_bytes = _read_control_bytes(root, _LEDGER_PATH, read_overrides)
     all_seams, _ = _record_collection(core, "seams")
     ledger_sync = synchronize_ledger_markdown(
         ledger_bytes,
@@ -1534,7 +1579,9 @@ def _subject_target_value(
         issue = ledger_sync.issues[0]
         raise KintsugiError(issue.code, issue.path, issue.message)
 
-    schema_sha256 = raw_hash(_read_control_bytes(root, _SCHEMA_PATH))
+    schema_sha256 = raw_hash(
+        _read_control_bytes(root, _SCHEMA_PATH, read_overrides)
+    )
     attempts = _require_list(core.get("reviewAttempts"), "core.reviewAttempts")
     artifacts = _require_list(
         core.get("reviewAttemptArtifacts"), "core.reviewAttemptArtifacts"
@@ -1680,6 +1727,291 @@ def _validate_disposition_input_shape(value: Any, path: str) -> dict[str, Any]:
     return record
 
 
+def _decode_canonical_object(payload: bytes, path: str) -> dict[str, Any]:
+    def reject_duplicate_keys(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
+        result: dict[str, Any] = {}
+        for key, value in pairs:
+            if key in result:
+                raise ValueError("duplicate key")
+            result[key] = value
+        return result
+
+    try:
+        value = json.loads(
+            payload.decode("utf-8"),
+            object_pairs_hook=reject_duplicate_keys,
+            parse_constant=lambda constant: (_ for _ in ()).throw(
+                ValueError(f"invalid constant: {constant}")
+            ),
+        )
+        rendered = canonical_json_bytes(value)
+    except (
+        UnicodeDecodeError,
+        UnicodeError,
+        ValueError,
+        json.JSONDecodeError,
+        RecursionError,
+    ):
+        _raise(path, "KIN-E-MANIFEST", "review target is not bounded canonical JSON")
+    if payload != rendered or not isinstance(value, dict):
+        _raise(path, "KIN-E-MANIFEST", "review target is not a canonical JSON object")
+    return value
+
+
+def _id_index(target: dict[str, Any], field: str) -> dict[str, dict[str, Any]]:
+    records = _require_list(target.get(field), f"reviewTarget.{field}")
+    index: dict[str, dict[str, Any]] = {}
+    for position, value in enumerate(records):
+        record = _require_mapping(value, f"reviewTarget.{field}[{position}]")
+        record_id = record.get("id")
+        if not isinstance(record_id, str) or not record_id or record_id in index:
+            _raise(
+                f"reviewTarget.{field}[{position}].id",
+                "KIN-E-MANIFEST",
+                "review-target endpoint ID is missing or duplicated",
+            )
+        index[record_id] = record
+    return index
+
+
+def _predecessor_review_target(
+    root: Path,
+    core: dict[str, object],
+    predecessor: dict[str, Any],
+    read_overrides: _FrozenReads | None,
+) -> dict[str, Any]:
+    predecessor_id = predecessor.get("id")
+    target_path = _repo_path(
+        predecessor.get("reviewTargetPath"),
+        "predecessor.reviewTargetPath",
+    )
+    artifacts = [
+        value
+        for value in _require_list(
+            core.get("reviewAttemptArtifacts"), "core.reviewAttemptArtifacts"
+        )
+        if isinstance(value, dict) and value.get("attemptId") == predecessor_id
+    ]
+    if len(artifacts) != 1:
+        _raise(target_path, "KIN-E-MANIFEST", "predecessor target artifact is absent")
+    payload = _frozen_regular_bytes(root, target_path, read_overrides)
+    expected_raw_hash = artifacts[0].get("reviewTargetSha256")
+    if expected_raw_hash is None or raw_hash(payload) != expected_raw_hash:
+        _raise(target_path, "KIN-E-MANIFEST", "predecessor target bytes are not hash-bound")
+    target = _decode_canonical_object(payload, target_path)
+    if (
+        target.get("currentAttemptId") != predecessor_id
+        or target.get("phase") != predecessor.get("phase")
+        or target.get("receiptId") != predecessor.get("receiptId")
+    ):
+        _raise(target_path, "KIN-E-MANIFEST", "predecessor target identity is inconsistent")
+    subject_digest = raw_hash(canonical_json_bytes(_review_subject_projection(target)))
+    if subject_digest != predecessor.get("reviewSubjectDigest"):
+        _raise(target_path, "KIN-E-MANIFEST", "predecessor subject digest is inconsistent")
+    return target
+
+
+def _validate_disposition_endpoint_laws(
+    root: Path,
+    core: dict[str, object],
+    manifest: dict[str, Any],
+    receipt: dict[str, Any],
+    predecessor: dict[str, Any] | None,
+    successor: dict[str, Any],
+    dispositions: list[dict[str, object]],
+    successor_target: dict[str, object],
+    read_overrides: _FrozenReads | None,
+) -> None:
+    if predecessor is None:
+        if dispositions:
+            _raise(
+                "findingDispositions",
+                "KIN-E-MANIFEST",
+                "a first review attempt cannot carry predecessor dispositions",
+            )
+        return
+
+    semantic_dispositions = [
+        value for value in dispositions if value.get("disposition") != "PROCESS_INVALID"
+    ]
+    predecessor_digest = predecessor.get("reviewSubjectDigest")
+    successor_digest = successor.get("reviewSubjectDigest")
+    if semantic_dispositions and successor_digest == predecessor_digest:
+        _raise(
+            "findingDispositions",
+            "KIN-E-MANIFEST",
+            "ADDRESSED or DISPUTED disposition requires a changed review subject",
+        )
+    if successor_digest == predecessor_digest and any(
+        value.get("disposition") != "PROCESS_INVALID" for value in dispositions
+    ):
+        _raise(
+            "findingDispositions",
+            "KIN-E-MANIFEST",
+            "same-subject retry permits only PROCESS_INVALID dispositions",
+        )
+    if not semantic_dispositions:
+        return
+
+    successor_target_value = _require_mapping(successor_target, "successorReviewTarget")
+    claims = _id_index(successor_target_value, "claims")
+    seams = _id_index(successor_target_value, "seams")
+    ledger_sections = _id_index(successor_target_value, "ledgerSemanticSections")
+    discriminators = _id_index(successor_target_value, "discriminators")
+    target_manifest = _require_mapping(
+        successor_target_value.get("manifest"), "successorReviewTarget.manifest"
+    )
+    final_records = {
+        record.path: record
+        for record in _file_records(
+            target_manifest.get("finalFiles"),
+            "successorReviewTarget.manifest.finalFiles",
+        )
+    }
+    fixed_controls, attempt_controls = _reserved_control_paths(core, receipt, str(receipt.get("phase")))
+    reserved_controls = fixed_controls | attempt_controls | {_SCHEMA_PATH}
+    closure = set(
+        _path_list(
+            manifest.get("closureOnlyPaths"),
+            "successorReviewTarget.manifest.closureOnlyPaths",
+        )
+    )
+    receipt_id = successor_target_value.get("receiptId")
+
+    predecessor_target: dict[str, Any] | None = None
+    predecessor_claims: dict[str, dict[str, Any]] = {}
+    predecessor_seams: dict[str, dict[str, Any]] = {}
+    predecessor_ledger_sections: dict[str, dict[str, Any]] = {}
+    predecessor_final_records: dict[str, FileRecord] = {}
+
+    def load_predecessor_endpoint_indexes() -> None:
+        nonlocal predecessor_target
+        nonlocal predecessor_claims
+        nonlocal predecessor_seams
+        nonlocal predecessor_ledger_sections
+        nonlocal predecessor_final_records
+        if predecessor_target is not None:
+            return
+        predecessor_target = _predecessor_review_target(
+            root, core, predecessor, read_overrides
+        )
+        predecessor_claims = _id_index(predecessor_target, "claims")
+        predecessor_seams = _id_index(predecessor_target, "seams")
+        predecessor_ledger_sections = _id_index(
+            predecessor_target, "ledgerSemanticSections"
+        )
+        predecessor_manifest = _require_mapping(
+            predecessor_target.get("manifest"), "predecessorReviewTarget.manifest"
+        )
+        predecessor_final_records = {
+            record.path: record
+            for record in _file_records(
+                predecessor_manifest.get("finalFiles"),
+                "predecessorReviewTarget.manifest.finalFiles",
+            )
+        }
+
+    for ordinal, record in enumerate(dispositions):
+        kind = record.get("disposition")
+        if kind == "PROCESS_INVALID":
+            continue
+        base = f"findingDispositions[{ordinal}]"
+        changed_endpoint = False
+
+        for claim_id in record.get("claimIds", []):
+            if claim_id not in claims:
+                _raise(
+                    f"{base}.claimIds",
+                    "KIN-E-MANIFEST",
+                    f"claim endpoint is outside the successor subject: {claim_id}",
+                )
+            if kind == "ADDRESSED":
+                load_predecessor_endpoint_indexes()
+                changed_endpoint |= predecessor_claims.get(str(claim_id)) != claims[claim_id]
+
+        for seam_id in record.get("seamIds", []):
+            if seam_id not in seams:
+                _raise(
+                    f"{base}.seamIds",
+                    "KIN-E-MANIFEST",
+                    f"seam endpoint is outside the successor subject: {seam_id}",
+                )
+            if kind == "ADDRESSED":
+                load_predecessor_endpoint_indexes()
+                changed_endpoint |= predecessor_seams.get(str(seam_id)) != seams[seam_id]
+
+        for section_id in record.get("ledgerSectionIds", []):
+            if section_id == "LEDGER-PREAMBLE":
+                if kind == "ADDRESSED":
+                    load_predecessor_endpoint_indexes()
+                    assert predecessor_target is not None
+                    changed_endpoint |= (
+                        predecessor_target.get("ledgerPreambleRawSha256")
+                        != successor_target_value.get("ledgerPreambleRawSha256")
+                    )
+                continue
+            if section_id not in ledger_sections:
+                _raise(
+                    f"{base}.ledgerSectionIds",
+                    "KIN-E-MANIFEST",
+                    f"ledger endpoint is outside the successor subject: {section_id}",
+                )
+            if kind == "ADDRESSED":
+                load_predecessor_endpoint_indexes()
+                changed_endpoint |= (
+                    predecessor_ledger_sections.get(str(section_id))
+                    != ledger_sections[section_id]
+                )
+
+        for disposition_receipt_id in record.get("receiptIds", []):
+            if disposition_receipt_id != receipt_id:
+                _raise(
+                    f"{base}.receiptIds",
+                    "KIN-E-MANIFEST",
+                    "receipt endpoint is outside the successor chain",
+                )
+            if kind == "ADDRESSED":
+                load_predecessor_endpoint_indexes()
+                assert predecessor_target is not None
+                changed_endpoint |= (
+                    predecessor_target.get("receiptNarrativeRawSha256")
+                    != successor_target_value.get("receiptNarrativeRawSha256")
+                )
+
+        for subject_path in record.get("subjectPaths", []):
+            if (
+                subject_path in reserved_controls
+                or subject_path in closure
+                or subject_path not in final_records
+            ):
+                _raise(
+                    f"{base}.subjectPaths",
+                    "KIN-E-MANIFEST",
+                    f"subject path is not a non-control final source: {subject_path}",
+                )
+            if kind == "ADDRESSED":
+                load_predecessor_endpoint_indexes()
+                changed_endpoint |= (
+                    predecessor_final_records.get(str(subject_path))
+                    != final_records[subject_path]
+                )
+
+        if kind == "DISPUTED":
+            for discriminator_id in record.get("discriminatorIds", []):
+                if discriminator_id not in discriminators:
+                    _raise(
+                        f"{base}.discriminatorIds",
+                        "KIN-E-MANIFEST",
+                        f"discriminator is outside the successor subject: {discriminator_id}",
+                    )
+        elif kind == "ADDRESSED" and not changed_endpoint:
+            _raise(
+                base,
+                "KIN-E-MANIFEST",
+                "ADDRESSED names no endpoint whose canonical projection changed",
+            )
+
+
 def _expand_finding_dispositions(
     root: Path,
     core: dict[str, object],
@@ -1687,6 +2019,7 @@ def _expand_finding_dispositions(
     predecessor_id: str | None,
     successor_id: str,
     inputs: list[dict[str, object]] | None,
+    read_overrides: _FrozenReads | None = None,
 ) -> list[dict[str, object]]:
     raw_inputs = [] if inputs is None else inputs
     if not isinstance(raw_inputs, list):
@@ -1780,13 +2113,24 @@ def _expand_finding_dispositions(
                     or final_record.sha256 != digest
                 ):
                     _raise(relative, "KIN-E-MANIFEST", "process evidence is not hash-bound")
-                if _hash_regular_or_symlink(root, relative) != final_record:
+                if _frozen_file_record(root, relative, read_overrides) != final_record:
                     _raise(relative, "KIN-E-MANIFEST", "process evidence bytes drifted")
-        else:
+        elif disposition == "ADDRESSED":
+            if (
+                not any(semantic_lists)
+                or record["discriminatorIds"]
+                or record["evidenceFiles"]
+            ):
+                _raise(
+                    f"findingDispositions[{ordinal - 1}]",
+                    "KIN-E-MANIFEST",
+                    "ADDRESSED requires a semantic endpoint and no discriminator/process evidence",
+                )
+        elif not record["discriminatorIds"] or record["evidenceFiles"]:
             _raise(
-                f"findingDispositions[{ordinal - 1}].disposition",
+                f"findingDispositions[{ordinal - 1}]",
                 "KIN-E-MANIFEST",
-                "semantic finding dispositions require Task 7 endpoint-delta proof",
+                "DISPUTED requires a resolving discriminator and no process evidence",
             )
         expanded.append({
             "id": f"RFD-{successor_id}-{ordinal:03d}",
@@ -1813,9 +2157,7 @@ def freeze_manifest_value(
     if not final:
         return copy.deepcopy(core)
 
-    _, current_receipt = _selected_manifest_receipt(core, phase)
-    prospective = copy.deepcopy(core)
-    manifest, receipt = _selected_manifest_receipt(prospective, phase)
+    _, receipt = _selected_manifest_receipt(core, phase)
     if receipt.get("status") != "DRAFT":
         _raise("receipt.status", "KIN-E-MANIFEST", "final freeze requires a DRAFT receipt")
     prior_attempt_id = receipt.get("reviewAttemptId")
@@ -1835,10 +2177,158 @@ def freeze_manifest_value(
         phase,
         str(receipt.get("id")),
     )
+    return _construct_frozen_manifest_value_with_plan(
+        isolated_root,
+        canonical_root,
+        core,
+        phase,
+        base_ref,
+        final,
+        finding_dispositions,
+        attempt_plan=plan,
+    )
+
+
+def _freeze_manifest_value_with_plan(
+    isolated_root: Path,
+    canonical_root: Path,
+    core: dict[str, object],
+    phase: str,
+    base_ref: str,
+    final: bool,
+    finding_dispositions: list[dict[str, object]] | None = None,
+    *,
+    attempt_plan: AttemptPlan,
+    expected_head: str,
+    expected_core_sha256: str,
+    read_overrides: _FrozenReads | None = None,
+    frozen_git_state: GitState | None = None,
+) -> dict[str, object]:
+    """Freeze with the exact attempt durably reserved under the transition lock."""
+    _, receipt = _selected_manifest_receipt(core, phase)
+    common_dir = resolve_git_common_dir(isolated_root)
+    matching = [
+        record
+        for record in _reservation_records(common_dir)
+        if record.get("id") == attempt_plan.id
+    ]
+    expected_reservation = {
+        "id": attempt_plan.id,
+        "phase": attempt_plan.phase,
+        "receiptId": attempt_plan.receipt_id,
+        "expectedHead": expected_head,
+        "expectedCoreSha256": expected_core_sha256,
+    }
+    if len(matching) != 1 or matching[0] != expected_reservation:
+        _raise(
+            "reviewAttempts",
+            "KIN-E-CONCURRENT",
+            "attempt plan is not bound to the exact durable reservation",
+        )
+    expected_plan = _plan_next_attempt(
+        isolated_root,
+        core,
+        phase,
+        str(receipt.get("id")),
+        ignore_reservation_id=attempt_plan.id,
+    )
+    if expected_plan != attempt_plan:
+        _raise(
+            "reviewAttempts",
+            "KIN-E-CONCURRENT",
+            "reserved attempt is not the canonical next allocation",
+        )
+    return _construct_frozen_manifest_value_with_plan(
+        isolated_root,
+        canonical_root,
+        core,
+        phase,
+        base_ref,
+        final,
+        finding_dispositions,
+        attempt_plan=attempt_plan,
+        read_overrides=read_overrides,
+        frozen_git_state=frozen_git_state,
+    )
+
+
+def _construct_frozen_manifest_value_with_plan(
+    isolated_root: Path,
+    canonical_root: Path,
+    core: dict[str, object],
+    phase: str,
+    base_ref: str,
+    final: bool,
+    finding_dispositions: list[dict[str, object]] | None = None,
+    *,
+    attempt_plan: AttemptPlan,
+    read_overrides: _FrozenReads | None = None,
+    frozen_git_state: GitState | None = None,
+) -> dict[str, object]:
+    """Construct prospective bytes for one already-validated attempt plan.
+
+    This lower pure helper exists so the public read-only preview can preserve
+    its frozen signature.  The transactional renderer must use the
+    reservation-verifying wrapper above.
+    """
+    issues = validate_manifest(isolated_root, canonical_root, core, phase, base_ref)
+    if issues:
+        issue = issues[0]
+        raise KintsugiError(issue.code, issue.path, issue.message)
+    if not final:
+        return copy.deepcopy(core)
+
+    _, current_receipt = _selected_manifest_receipt(core, phase)
+    prospective = copy.deepcopy(core)
+    manifest, receipt = _selected_manifest_receipt(prospective, phase)
+    if receipt.get("status") != "DRAFT":
+        _raise("receipt.status", "KIN-E-MANIFEST", "final freeze requires a DRAFT receipt")
+    prior_attempt_id = receipt.get("reviewAttemptId")
+    if prior_attempt_id is not None:
+        if not isinstance(prior_attempt_id, str):
+            _raise("receipt.reviewAttemptId", "KIN-E-MANIFEST", "attempt pointer is invalid")
+        _validate_predecessor_fence(
+            isolated_root,
+            core,
+            phase,
+            str(receipt.get("id")),
+            _CORE_PATH,
+        )
+    plan = attempt_plan
+    phase_attempts = [
+        attempt
+        for attempt in _require_list(core.get("reviewAttempts"), "core.reviewAttempts")
+        if isinstance(attempt, dict)
+        and attempt.get("phase") == phase
+        and attempt.get("receiptId") == receipt.get("id")
+    ]
+    predecessor = _unique_chain_leaf(phase_attempts, context="attempt")
+    predecessor_id = str(predecessor["id"]) if predecessor is not None else None
+    if (
+        plan.phase != phase
+        or plan.receipt_id != receipt.get("id")
+        or plan.predecessor_id != predecessor_id
+        or plan.paths != attempt_paths(plan.id)
+        or any(attempt.get("id") == plan.id for attempt in phase_attempts)
+    ):
+        _raise(
+            "reviewAttempts",
+            "KIN-E-CONCURRENT",
+            "reserved attempt plan does not match the current review chain",
+        )
+    if predecessor is not None and predecessor.get("status") not in {"FAILED", "ABANDONED"}:
+        _raise(
+            "reviewAttempts",
+            "KIN-E-CONCURRENT",
+            "reserved successor requires a FAILED or ABANDONED predecessor",
+        )
 
     included = _file_records(manifest.get("includedFiles"), "manifest.includedFiles")
     final_records = tuple(sorted(
-        (_hash_regular_or_symlink(isolated_root, record.path) for record in included),
+        (
+            _frozen_file_record(isolated_root, record.path, read_overrides)
+            for record in included
+        ),
         key=lambda record: record.path,
     ))
     manifest["finalFiles"] = [
@@ -1863,6 +2353,7 @@ def freeze_manifest_value(
         plan.predecessor_id,
         plan.id,
         finding_dispositions,
+        read_overrides,
     )
     _require_list(
         prospective.get("reviewFindingDispositions"),
@@ -1895,7 +2386,9 @@ def freeze_manifest_value(
     })
     receipt["reviewAttemptId"] = plan.id
 
-    state = inspect_git_state(isolated_root, str(manifest.get("baseCommit")))
+    state = frozen_git_state or inspect_git_state(
+        isolated_root, str(manifest.get("baseCommit"))
+    )
     assert isinstance(state, GitState)
     target = _subject_target_value(
         isolated_root,
@@ -1905,9 +2398,21 @@ def freeze_manifest_value(
         phase,
         plan.id,
         state,
+        read_overrides,
     )
     attempt["reviewSubjectDigest"] = raw_hash(
         canonical_json_bytes(_review_subject_projection(target))
+    )
+    _validate_disposition_endpoint_laws(
+        isolated_root,
+        prospective,
+        manifest,
+        receipt,
+        predecessor,
+        attempt,
+        dispositions,
+        target,
+        read_overrides,
     )
 
     prospective_issues = validate_manifest(
@@ -1920,7 +2425,9 @@ def freeze_manifest_value(
     if prospective_issues:
         issue = prospective_issues[0]
         raise KintsugiError(issue.code, issue.path, issue.message)
-    final_state = inspect_git_state(isolated_root, str(manifest.get("baseCommit")))
+    final_state = frozen_git_state or inspect_git_state(
+        isolated_root, str(manifest.get("baseCommit"))
+    )
     assert isinstance(final_state, GitState)
     final_target = _subject_target_value(
         isolated_root,
@@ -1930,6 +2437,7 @@ def freeze_manifest_value(
         phase,
         plan.id,
         final_state,
+        read_overrides,
     )
     final_digest = raw_hash(
         canonical_json_bytes(_review_subject_projection(final_target))
@@ -1940,7 +2448,9 @@ def freeze_manifest_value(
             "KIN-E-CONCURRENT",
             "review subject changed during the prospective freeze",
         )
-    settled_state = inspect_git_state(isolated_root, str(manifest.get("baseCommit")))
+    settled_state = frozen_git_state or inspect_git_state(
+        isolated_root, str(manifest.get("baseCommit"))
+    )
     assert isinstance(settled_state, GitState)
     settled_target = _subject_target_value(
         isolated_root,
@@ -1950,6 +2460,7 @@ def freeze_manifest_value(
         phase,
         plan.id,
         settled_state,
+        read_overrides,
     )
     settled_digest = raw_hash(
         canonical_json_bytes(_review_subject_projection(settled_target))

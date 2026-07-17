@@ -21,6 +21,76 @@ SOURCE_ID = "SRC-B-001"
 CLAIM_ID = "CLM-B-001"
 TRIAL_ID = "TRL-B-001"
 
+_PHASE_A_ATTEMPT_ID = "RVA-A-001"
+_PHASE_A_TARGET_PATH = (
+    "09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_review_attempts/"
+    f"{_PHASE_A_ATTEMPT_ID}/review_target.json"
+)
+_PHASE_A_LOGIC_PATH = (
+    "11_UPLINK/50_AUDITS_AND_EXECUTIONS/KINTSUGI_REVIEW_ATTEMPTS/"
+    f"{_PHASE_A_ATTEMPT_ID}_LOGIC.md"
+)
+_PHASE_A_BTJ_PATH = (
+    "11_UPLINK/50_AUDITS_AND_EXECUTIONS/KINTSUGI_REVIEW_ATTEMPTS/"
+    f"{_PHASE_A_ATTEMPT_ID}_BTJ.md"
+)
+_PHASE_A_BUNDLE_PATH = (
+    "09_TOOLS/08_AUDIT_ARTIFACTS/kintsugi_review_attempts/"
+    f"{_PHASE_A_ATTEMPT_ID}/validation_bundle.json"
+)
+
+
+def _canonical_fixture_bytes(value: Any) -> bytes:
+    return json.dumps(
+        value,
+        ensure_ascii=False,
+        sort_keys=True,
+        separators=(",", ":"),
+        allow_nan=False,
+    ).encode("utf-8") + b"\n"
+
+
+def _phase_a_dependency_artifacts() -> dict[str, Any]:
+    """Return immutable, typed closure bytes for the synthetic verified dependency."""
+    target_bytes = _canonical_fixture_bytes({"fixture": "verified Phase-A target"})
+    target_hash = "sha256:" + hashlib.sha256(target_bytes).hexdigest()
+    attestations: list[dict[str, Any]] = []
+    review_bytes: dict[str, bytes] = {}
+    for kind, path, reviewer in (
+        ("LOGIC", _PHASE_A_LOGIC_PATH, "synthetic-logic-reviewer"),
+        ("BTJ", _PHASE_A_BTJ_PATH, "synthetic-btj-reviewer"),
+    ):
+        attestation = {
+            "id": f"ATT-{kind}-A-001",
+            "kind": kind,
+            "path": path,
+            "receiptId": "REC-A-108",
+            "reviewerId": reviewer,
+            "reviewerRole": f"Independent synthetic {kind} reviewer",
+            "independenceStatement": "This deterministic fixture did not author the subject.",
+            "reviewTargetDigest": target_hash,
+            "verdict": "PASS",
+            "findingIds": [],
+            "openSevereFindingIds": [],
+            "approvedUpgradeSeamIds": [],
+            "approvedGateSeamIds": [],
+            "attemptId": _PHASE_A_ATTEMPT_ID,
+        }
+        attestations.append(attestation)
+        review_bytes[kind] = build_review_markdown(attestation, [])
+    bundle_bytes = _canonical_fixture_bytes({"fixture": "verified Phase-A bundle"})
+    return {
+        "targetBytes": target_bytes,
+        "targetHash": target_hash,
+        "attestations": attestations,
+        "logicBytes": review_bytes["LOGIC"],
+        "logicHash": "sha256:" + hashlib.sha256(review_bytes["LOGIC"]).hexdigest(),
+        "btjBytes": review_bytes["BTJ"],
+        "btjHash": "sha256:" + hashlib.sha256(review_bytes["BTJ"]).hexdigest(),
+        "bundleBytes": bundle_bytes,
+        "bundleHash": "sha256:" + hashlib.sha256(bundle_bytes).hexdigest(),
+    }
+
 
 @dataclass(frozen=True)
 class SyntheticGitRepository:
@@ -48,7 +118,9 @@ def _git_fixture_run(root: Path, *argv: str) -> bytes:
     ).stdout
 
 
-def build_synthetic_git_repository(parent: Path) -> SyntheticGitRepository:
+def build_synthetic_git_repository(
+    parent: Path, *, include_phase_a_artifacts: bool = False
+) -> SyntheticGitRepository:
     canonical_root = parent / "main"
     isolated_root = parent / "isolated"
     canonical_root.mkdir(parents=True)
@@ -63,9 +135,9 @@ def build_synthetic_git_repository(parent: Path) -> SyntheticGitRepository:
         "03_METHODOLOGY/phase-b-inventory-review.md": b"# Synthetic inventory review\n",
         "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json": b"{}\n",
         "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SCHEMA.json": (
-            b'{"$id":"https://example.invalid/synthetic-kintsugi-schema",'
-            b'"$schema":"https://json-schema.org/draft/2020-12/schema"}\n'
-        ),
+            COMPILER.parents[1]
+            / "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SCHEMA.json"
+        ).read_bytes(),
         "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAM_LEDGER.md": b"# Synthetic ledger\n",
         "11_UPLINK/50_AUDITS_AND_EXECUTIONS/109_ACTIVE_CORPUS_KINTSUGI_RECEIPT_2026_07_11.md": b"# Synthetic Phase B receipt\n",
         "12_PUBLIC_SITE/index.html": b"<!doctype html><title>Synthetic</title>\n",
@@ -75,6 +147,14 @@ def build_synthetic_git_repository(parent: Path) -> SyntheticGitRepository:
         "03_METHODOLOGY/phase-a-inventory-review.md": b"# Synthetic Phase A inventory review\n",
         "11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_FORMAL_STRESS_LEDGER_2026_07_11.md": b"# Synthetic Phase A receipt\n",
     }
+    if include_phase_a_artifacts:
+        dependency_artifacts = _phase_a_dependency_artifacts()
+        tracked.update({
+            _PHASE_A_TARGET_PATH: dependency_artifacts["targetBytes"],
+            _PHASE_A_LOGIC_PATH: dependency_artifacts["logicBytes"],
+            _PHASE_A_BTJ_PATH: dependency_artifacts["btjBytes"],
+            _PHASE_A_BUNDLE_PATH: dependency_artifacts["bundleBytes"],
+        })
     bindings_by_owner: dict[str, list[tuple[str, str]]] = {}
     for requirement, owner_path, anchor, _ in PHASE_A_REQUIREMENTS:
         bindings_by_owner.setdefault(owner_path, []).append(
@@ -141,29 +221,10 @@ def _synthetic_file_record(root: Path, relative: str) -> dict[str, str]:
 
 def build_synthetic_manifest_core(
     fixture: SyntheticGitRepository,
+    *,
+    include_verified_phase_a: bool = False,
 ) -> dict[str, Any]:
     core = build_core_data()
-    # Phase B canonically depends on the verified Phase-A receipt.  Keep that
-    # dependency explicit in the synthetic core so manifest tests exercise the
-    # same transitive receipt boundary as production freezes.
-    core["phaseReceipts"].append({
-        "id": "REC-A-108",
-        "phase": "A",
-        "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_FORMAL_STRESS_LEDGER_2026_07_11.md",
-        "status": "VERIFIED",
-        "manifestId": "MAN-A-001",
-        "dependsOnReceiptIds": [],
-        "claimIds": [],
-        "trialIds": [],
-        "seamIds": [],
-        "propagationIds": [],
-        "reviewTargetDigest": RAW_HASH,
-        "validationBundlePath": "09_TOOLS/08_AUDIT_ARTIFACTS/dependencies/REC-A-108-validation.json",
-        "validationDigest": RAW_HASH,
-        "logicReviewPath": "09_TOOLS/08_AUDIT_ARTIFACTS/dependencies/REC-A-108-logic.md",
-        "btjReviewPath": "09_TOOLS/08_AUDIT_ARTIFACTS/dependencies/REC-A-108-btj.md",
-        "reviewAttemptId": "RVA-A-001",
-    })
     manifest = core["manifests"][0]
     candidates = (
         "03_METHODOLOGY/excluded.md",
@@ -181,7 +242,9 @@ def build_synthetic_manifest_core(
     preexisting = "scratch/preexisting.txt"
     core_path = "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json"
     ledger_path = "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAM_LEDGER.md"
-    receipt_path = core["phaseReceipts"][0]["path"]
+    receipt_path = next(
+        receipt["path"] for receipt in core["phaseReceipts"] if receipt["phase"] == "B"
+    )
 
     manifest.update({
         "baseCommit": fixture.base_commit,
@@ -269,6 +332,28 @@ def build_synthetic_manifest_core(
         )["sha256"],
     })
     core["sources"] = [owner, support]
+    if include_verified_phase_a:
+        _prepend_verified_phase_a_dependency(core, fixture)
+    else:
+        phase_a_receipt = _copy(build_semantic_core(bootstrap=False)["phaseReceipts"][0])
+        dependency_artifacts = _phase_a_dependency_artifacts()
+        phase_a_receipt.update({
+            "status": "VERIFIED",
+            "claimIds": [],
+            "trialIds": [],
+            "seamIds": [],
+            "propagationIds": [],
+            "reviewTargetDigest": dependency_artifacts["targetHash"],
+            "validationBundlePath": _PHASE_A_BUNDLE_PATH,
+            "validationDigest": dependency_artifacts["bundleHash"],
+            "logicReviewPath": _PHASE_A_LOGIC_PATH,
+            "btjReviewPath": _PHASE_A_BTJ_PATH,
+            "reviewAttemptId": None,
+        })
+        # Manifest-only fixtures need a valid dependency descriptor but no
+        # review artifact namespace. Full review fixtures opt into the complete
+        # Phase-A vessel above.
+        core["phaseReceipts"] = [phase_a_receipt, *core["phaseReceipts"]]
     return core
 
 
@@ -335,10 +420,14 @@ def build_committed_predecessor_fixture(
     fixture: SyntheticGitRepository,
     *,
     terminal_status: str = "FAILED",
+    include_verified_phase_a: bool = False,
 ) -> dict[str, Any]:
     if terminal_status not in {"FAILED", "ABANDONED"}:
         raise ValueError("terminal_status must be FAILED or ABANDONED")
-    core = build_synthetic_manifest_core(fixture)
+    core = build_synthetic_manifest_core(
+        fixture,
+        include_verified_phase_a=include_verified_phase_a,
+    )
     attempt = build_review_attempt(
         terminal_status,
         logic_attestation_id="ATT-LOGIC-001" if terminal_status == "FAILED" else None,
@@ -363,16 +452,44 @@ def build_committed_predecessor_fixture(
         review_bytes = None
         review_hash = None
 
-    core["reviewAttempts"] = [attempt]
+    core["reviewAttempts"] = [
+        attempt,
+        *[
+            existing
+            for existing in core["reviewAttempts"]
+            if existing.get("phase") != "B"
+        ],
+    ]
     core["reviewAttemptArtifacts"] = [{
         "attemptId": ATTEMPT_ID,
         "reviewTargetSha256": target_hash if terminal_status == "FAILED" else None,
         "logicReviewSha256": review_hash,
         "btjReviewSha256": None,
-    }]
-    core["reviewAttestations"] = [attestation] if attestation is not None else []
-    core["reviewFindings"] = [finding] if finding is not None else []
-    core["phaseReceipts"][0]["reviewAttemptId"] = ATTEMPT_ID
+    }, *[
+        existing
+        for existing in core["reviewAttemptArtifacts"]
+        if existing.get("attemptId") != ATTEMPT_ID
+    ]]
+    core["reviewAttestations"] = [
+        *([attestation] if attestation is not None else []),
+        *[
+            existing
+            for existing in core["reviewAttestations"]
+            if existing.get("attemptId") != ATTEMPT_ID
+        ],
+    ]
+    core["reviewFindings"] = [
+        *([finding] if finding is not None else []),
+        *[
+            existing
+            for existing in core["reviewFindings"]
+            if existing.get("attemptId") != ATTEMPT_ID
+        ],
+    ]
+    phase_b_receipt = next(
+        value for value in core["phaseReceipts"] if value.get("phase") == "B"
+    )
+    phase_b_receipt["reviewAttemptId"] = ATTEMPT_ID
     manifest = core["manifests"][0]
     manifest["finalFiles"] = [
         _synthetic_file_record(fixture.isolated_root, record["path"])
@@ -398,7 +515,7 @@ def build_committed_predecessor_fixture(
         if review_bytes is None:
             raise AssertionError("FAILED predecessor review bytes were not built")
         review_path.write_bytes(review_bytes)
-    receipt = core["phaseReceipts"][0]
+    receipt = phase_b_receipt
     (fixture.isolated_root / receipt["path"]).write_bytes(
         build_receipt_markdown(receipt)
     )
@@ -1268,9 +1385,131 @@ def build_semantic_core(*, bootstrap: bool = False) -> dict[str, Any]:
     return core
 
 
+def _prepend_verified_phase_a_dependency(
+    core: dict[str, Any], fixture: SyntheticGitRepository
+) -> None:
+    """Add the complete verified predecessor required by a Phase-B vessel.
+
+    The synthetic Phase-B record remains first so legacy fixture mutations keep
+    addressing the selected vessel. Production validators select records by
+    typed phase/ID, never by array position.
+    """
+    phase_a = build_semantic_core(bootstrap=False)
+    manifest = phase_a["manifests"][0]
+    receipt = phase_a["phaseReceipts"][0]
+    phase_b_manifest = next(
+        value for value in core["manifests"] if value.get("phase") == "B"
+    )
+    owner_paths = sorted(source["path"] for source in phase_a["sources"])
+    closure_paths = sorted((
+        _PHASE_A_TARGET_PATH,
+        _PHASE_A_LOGIC_PATH,
+        _PHASE_A_BTJ_PATH,
+        _PHASE_A_BUNDLE_PATH,
+    ))
+    manifest.update({
+        "baseCommit": fixture.base_commit,
+        "canonicalCommit": fixture.base_commit,
+        "discoveryRules": [{
+            "id": "DISC-A-001",
+            "includeGlobs": owner_paths,
+            "excludeGlobs": ["90_ARCHIVE/**"],
+            "parser": "MARKDOWN",
+            "rationale": "The verified synthetic predecessor freezes its exact owners.",
+        }],
+        "candidateFiles": [
+            _synthetic_file_record(fixture.canonical_root, relative)
+            for relative in owner_paths
+        ],
+        "candidateFileCount": len(owner_paths),
+        "includedFiles": [
+            _synthetic_file_record(fixture.canonical_root, relative)
+            for relative in owner_paths
+        ],
+        "finalFiles": [
+            _synthetic_file_record(fixture.canonical_root, relative)
+            for relative in owner_paths
+        ],
+        "finalFileCount": len(owner_paths),
+        "excludedPaths": [],
+        "eligibleFileCount": len(owner_paths),
+        "scannedFileCount": len(owner_paths),
+        "inventoryReviewPaths": ["03_METHODOLOGY/phase-a-inventory-review.md"],
+        "protectedProvenance": _copy(phase_b_manifest["protectedProvenance"]),
+        "protectedPaths": _copy(phase_b_manifest["protectedPaths"]),
+        "protectedTreeSnapshots": _copy(phase_b_manifest["protectedTreeSnapshots"]),
+        "allowedChangePaths": sorted({
+            "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAMS.json",
+            "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SEAM_LEDGER.md",
+            receipt["path"],
+            "03_METHODOLOGY/phase-a-inventory-review.md",
+            *owner_paths,
+            *closure_paths,
+        }),
+        "closureOnlyPaths": closure_paths,
+        "allowedPreexistingUntracked": _copy(
+            phase_b_manifest["allowedPreexistingUntracked"]
+        ),
+    })
+    for source in phase_a["sources"]:
+        source["sha256"] = _synthetic_file_record(
+            fixture.canonical_root, source["path"]
+        )["sha256"]
+
+    artifacts = _phase_a_dependency_artifacts()
+    attempt = {
+        "id": _PHASE_A_ATTEMPT_ID,
+        "phase": "A",
+        "receiptId": receipt["id"],
+        "supersedesAttemptId": None,
+        "reviewTargetPath": _PHASE_A_TARGET_PATH,
+        "logicReviewPath": _PHASE_A_LOGIC_PATH,
+        "btjReviewPath": _PHASE_A_BTJ_PATH,
+        "validationBundlePath": _PHASE_A_BUNDLE_PATH,
+        "logicAttestationId": "ATT-LOGIC-A-001",
+        "btjAttestationId": "ATT-BTJ-A-001",
+        "status": "PASSED",
+        "abandonReason": None,
+        "reviewSubjectDigest": artifacts["targetHash"],
+    }
+    artifact = {
+        "attemptId": _PHASE_A_ATTEMPT_ID,
+        "reviewTargetSha256": artifacts["targetHash"],
+        "logicReviewSha256": artifacts["logicHash"],
+        "btjReviewSha256": artifacts["btjHash"],
+    }
+    receipt.update({
+        "status": "VERIFIED",
+        "reviewTargetDigest": artifacts["targetHash"],
+        "validationBundlePath": _PHASE_A_BUNDLE_PATH,
+        "validationDigest": artifacts["bundleHash"],
+        "logicReviewPath": _PHASE_A_LOGIC_PATH,
+        "btjReviewPath": _PHASE_A_BTJ_PATH,
+        "reviewAttemptId": _PHASE_A_ATTEMPT_ID,
+    })
+
+    core["manifests"] = [*core["manifests"], manifest]
+    core["sources"] = [*core["sources"], *phase_a["sources"]]
+    core["claims"] = [*core["claims"], *phase_a["claims"]]
+    core["trials"] = [*core["trials"], *phase_a["trials"]]
+    # Receipt order is semantic and must remain A, B, C.
+    core["phaseReceipts"] = [receipt, *core["phaseReceipts"]]
+    core["reviewAttempts"] = [*core["reviewAttempts"], attempt]
+    core["reviewAttemptArtifacts"] = [*core["reviewAttemptArtifacts"], artifact]
+    core["reviewAttestations"] = [
+        *core["reviewAttestations"],
+        *_copy(artifacts["attestations"]),
+    ]
+
+
 def add_confirmed_seam(core: dict[str, Any], *, seam_id: str = "KIN-A-001") -> dict[str, Any]:
     claim = core["claims"][0]
     trial = next(trial for trial in core["trials"] if trial["claimId"] == claim["id"])
+    receipt = next(
+        value
+        for value in core["phaseReceipts"]
+        if value.get("id") == trial.get("receiptId")
+    )
     fixture_id = f"FXT-{seam_id}"
     gate = {
         "status": "PENDING",
@@ -1323,7 +1562,7 @@ def add_confirmed_seam(core: dict[str, Any], *, seam_id: str = "KIN-A-001") -> d
         "justiceGate": _copy(gate),
         "credit": {"displayName": "Synthetic reviewer", "role": "Fixture author"},
         "creditConsent": "ALIAS",
-        "receiptId": core["phaseReceipts"][0]["id"],
+        "receiptId": receipt["id"],
         "regressionFixtureIds": [fixture_id],
         "discriminatorIds": [],
         "status": "CONFIRMED",
@@ -1353,7 +1592,7 @@ def add_confirmed_seam(core: dict[str, Any], *, seam_id: str = "KIN-A-001") -> d
     }
     core["seams"].append(seam)
     core["fixtures"].append(fixture)
-    core["phaseReceipts"][0]["seamIds"].append(seam_id)
+    receipt["seamIds"].append(seam_id)
     return seam
 
 

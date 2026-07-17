@@ -1851,6 +1851,7 @@ class ReadOnlyOrchestrationTests(unittest.TestCase):
         phase="C",
         public_queue=True,
         record_issues=(),
+        review_issues=(),
         markdown_issues=(),
         manifest_issues=(),
         queue_schema_issues=(),
@@ -1881,6 +1882,10 @@ class ReadOnlyOrchestrationTests(unittest.TestCase):
             events.append(("records", value, phase, bootstrap))
             return list(record_issues)
 
+        def review_history(value):
+            events.append(("review-history", value))
+            return list(review_issues)
+
         def markdown(root, value, ledger):
             events.append(("markdown", root, value, ledger))
             return list(markdown_issues)
@@ -1897,6 +1902,7 @@ class ReadOnlyOrchestrationTests(unittest.TestCase):
              mock.patch.object(orchestration, "load_canonical_json", side_effect=load_json), \
              mock.patch.object(orchestration, "validate_schema_instance", side_effect=schema_instance), \
              mock.patch.object(orchestration, "validate_core_records", side_effect=records), \
+             mock.patch.object(orchestration, "validate_review_history", side_effect=review_history), \
              mock.patch.object(orchestration, "validate_markdown_sync", side_effect=markdown), \
              mock.patch.object(orchestration, "validate_manifest", side_effect=manifest), \
              mock.patch.object(orchestration, "validate_public_queue", side_effect=public):
@@ -1927,6 +1933,7 @@ class ReadOnlyOrchestrationTests(unittest.TestCase):
                 "load-json",
                 "schema-coreData",
                 "records",
+                "review-history",
                 "markdown",
                 "manifest",
                 "load-json",
@@ -2004,7 +2011,12 @@ class ReadOnlyOrchestrationTests(unittest.TestCase):
         high = kernel.Issue("z", "KIN-E-SEMANTIC", "later")
         low = kernel.Issue("a", "KIN-E-SEMANTIC", "earlier")
         rows = (
-            ("records", {"record_issues": (high, low, low)}, "markdown"),
+            ("records", {"record_issues": (high, low, low)}, "review-history"),
+            (
+                "review-history",
+                {"review_issues": (high, low, low)},
+                "markdown",
+            ),
             ("markdown", {"markdown_issues": (high, low, low)}, "manifest"),
             (
                 "queue-schema",
@@ -2129,8 +2141,12 @@ class ReadOnlyOrchestrationTests(unittest.TestCase):
 
         with tempfile.TemporaryDirectory() as directory:
             parent = Path(directory)
-            fixture = support.build_synthetic_git_repository(parent)
-            core = support.build_synthetic_manifest_core(fixture)
+            fixture = support.build_synthetic_git_repository(
+                parent, include_phase_a_artifacts=True
+            )
+            core = support.build_synthetic_manifest_core(
+                fixture, include_verified_phase_a=True
+            )
             data_path = parent / "phase-b-core.json"
             schema_path = parent / "schema.json"
             data_path.write_bytes(kernel.canonical_json_bytes(core))

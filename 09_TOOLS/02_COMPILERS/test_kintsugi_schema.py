@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import contextlib
 import copy
+import dataclasses
 import hashlib
 import io
 import json
@@ -444,6 +445,42 @@ class A0BFacadeTests(unittest.TestCase):
 
 
 class StablePackageSurfaceTests(SchemaAssertions):
+    def test_task_seven_review_and_renderer_surface_is_exact(self):
+        review_names = (
+            "validate_review_attestations",
+            "validate_review_history",
+            "compute_review_subject_digest",
+            "build_review_target_value",
+            "build_validation_bundle_value",
+            "transition_core_value",
+        )
+        for name in review_names:
+            with self.subTest(name=name):
+                self.assertTrue(callable(getattr(kernel, name, None)))
+
+        request_type = getattr(kernel, "RenderTransactionRequest", None)
+        self.assertTrue(dataclasses.is_dataclass(request_type))
+        self.assertEqual(
+            [field.name for field in dataclasses.fields(request_type)],
+            [
+                "operation",
+                "phase",
+                "stage",
+                "core_path",
+                "output_path",
+                "canonical_root",
+                "base_ref",
+                "expected_head",
+                "expected_core_sha256",
+                "logic_review_input",
+                "btj_review_input",
+                "finding_dispositions_input",
+                "abandon_reason",
+            ],
+        )
+        self.assertTrue(callable(getattr(kernel, "write_rendered_value", None)))
+        self.assertFalse(hasattr(kernel, "atomic_write_canonical"))
+
     def test_canonical_json_loader_is_public_and_preserves_canonical_contract(self):
         from kintsugi_kernel import codec
 

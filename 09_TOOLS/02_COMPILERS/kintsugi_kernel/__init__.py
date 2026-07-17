@@ -51,6 +51,15 @@ from .markdown import (
 from .gitstate import inspect_git_state, resolve_git_common_dir
 from .manifest import freeze_manifest_value, validate_manifest
 from .orchestration import validate_inputs
+from .rendering import RenderTransactionRequest, write_rendered_value
+from .review import (
+    build_review_target_value,
+    build_validation_bundle_value,
+    compute_review_subject_digest,
+    transition_core_value,
+    validate_review_attestations,
+    validate_review_history,
+)
 from .schema import (
     ROOT_ROLES,
     SCHEMA_ID,
@@ -91,10 +100,14 @@ __all__ = [
     "ROOT",
     "ROOT_ROLES",
     "ReceiptSynchronization",
+    "RenderTransactionRequest",
     "SCHEMA_ID",
     "SCHEMA_KEYWORDS",
     "canonical_json_bytes",
+    "build_review_target_value",
+    "build_validation_bundle_value",
     "compare_baseline",
+    "compute_review_subject_digest",
     "evaluate_antibody_fixture",
     "evaluate_semantic_fixture",
     "extract_fenced_json",
@@ -125,6 +138,7 @@ __all__ = [
     "synchronize_receipt_markdown",
     "synchronize_review_markdown",
     "text_hash",
+    "transition_core_value",
     "validate_contract",
     "validate_core_records",
     "validate_named_definition",
@@ -134,5 +148,8 @@ __all__ = [
     "validate_manifest",
     "validate_inputs",
     "validate_public_queue",
+    "validate_review_attestations",
+    "validate_review_history",
+    "write_rendered_value",
     "scan_antibodies",
 ]

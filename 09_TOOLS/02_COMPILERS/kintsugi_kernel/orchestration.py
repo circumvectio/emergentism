@@ -9,6 +9,7 @@ from .manifest import validate_manifest
 from .markdown import validate_markdown_sync
 from .schema import load_schema, validate_schema_instance
 from .semantics import validate_core_records, validate_public_queue
+from .review import validate_review_history
 
 
 def _ordered(issues: list[Issue]) -> list[Issue]:
@@ -107,6 +108,10 @@ def validate_inputs(
     core = cast(dict[str, object], core_value)
 
     issues = _ordered(validate_core_records(core, phase=phase, bootstrap=bootstrap))
+    if issues:
+        return issues
+
+    issues = _ordered(validate_review_history(core))
     if issues:
         return issues
 
