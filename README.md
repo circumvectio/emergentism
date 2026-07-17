@@ -150,7 +150,7 @@ Rules:
 | `11_UPLINK/` | numbered packet archive and compressed agent surfaces |
 | `09_TOOLS/` | scripts, compilers, annotation tools, audit utilities |
 | `10_SEED/` | seed closure material |
-| `12_PUBLIC_SITE/` | tracked public-site app source, frozen for signed AIA migration to `02_SKYZAI/03_AIA/app/` |
+| `12_PUBLIC_SITE/` | tracked public-site source; the `book-pwa/` app moved to `02_SKYZAI/03_AIA/app/` (migration executed 2026-06-12 per K2 signoff 2026-06-11; tombstone `12_PUBLIC_SITE/00_BOOK_PWA_MOVED.md`), source tree preserved frozen pending deploy-readiness |
 | `91_COMPATIBILITY/` | old stubs and moved compatibility surfaces |
 | `90_ARCHIVE/` | local doctrine-supplement archive |
 
@@ -167,7 +167,7 @@ After the sevenfold core (01–07), the support tiers are numbered by function, 
 
 `08_FRAMEWORK_SUPPORT` and `11_UPLINK` form a conceptual pair: one passive (reference), one active (uplink). Both are post-sevenfold operational apparatus. They are numbered by their folder position, not forced into a doublet.
 
-`12_PUBLIC_SITE/` is the renamed public-site surface (formerly `10_PUBLIC_SITE/`), updated to resolve the prefix namespace conflict with `10_SEED/`. It remains here only until the K2-signed AIA migration executes.
+`12_PUBLIC_SITE/` is the renamed public-site surface (formerly `10_PUBLIC_SITE/`), updated to resolve the prefix namespace conflict with `10_SEED/`. The K2-signed AIA migration executed 2026-06-12 (signoff 2026-06-11): the `book-pwa/` app now lives at `02_SKYZAI/03_AIA/app/`; the source tree here is preserved frozen per K3 pending deploy-readiness (tombstone `12_PUBLIC_SITE/00_BOOK_PWA_MOVED.md`).
 
 **Resolution:** [`REPO_REORGANIZATION_PLAN_2026_05_09.md`](../02_SKYZAI/01_NOOSPHERE/09_REFERENCE/REPO_REORGANIZATION_PLAN_2026_05_09.md) Tier 2 is **resolved as documentation-only** because the layout is doctrinal and stable. No filesystem rename.
 
@@ -192,13 +192,13 @@ The following doctrines are downstream applications of the Foundation to the Aut
 
 ## Boundary
 
-This root owns doctrine. It does not own the living runtime body. Runtime, entities, products, intake, and PWAs live under `../02_SKYZAI/01_NOOSPHERE/`. The only temporary exception is frozen source material already inside `12_PUBLIC_SITE/`, which remains source-only until the K2/AIA migration executes.
+This root owns doctrine. It does not own the living runtime body. Runtime, entities, products, intake, and PWAs live under `../02_SKYZAI/01_NOOSPHERE/`. The only exception is the preserved `12_PUBLIC_SITE/book-pwa/` source tree, kept frozen per K3 after the executed AIA migration (2026-06-12; tombstone `12_PUBLIC_SITE/00_BOOK_PWA_MOVED.md`) pending deploy-readiness verification.
 
 ## Does NOT Contain
 
 Per the [Tree Constitution](08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_TREE_CONSTITUTION.md):
 
-- **Runtime state, product code, organs, agents, intake, PWAs** → `../02_SKYZAI/01_NOOSPHERE/` except the frozen `12_PUBLIC_SITE/` source awaiting AIA migration
+- **Runtime state, product code, organs, agents, intake, PWAs** → `../02_SKYZAI/01_NOOSPHERE/` except the preserved `12_PUBLIC_SITE/book-pwa/` source tree (AIA migration executed 2026-06-12; frozen per K3 pending deploy-readiness)
 - **Public DAC factory / product scaffold** → `../02_SKYZAI/04_PUBLIC_SCAFFOLD/`
 - **Legal entities, foundation, brand membranes** → `../03_VENTURES/`
 - **Portfolio ventures (Tokencen, QNTM, etc.)** → `../03_VENTURES/OPEN_FINANCE_NETWORK/`, `../03_VENTURES/QNTM/`, etc. (per owning lane; the former `_PORTFOLIO/` namespace was retired 2026-06-15)

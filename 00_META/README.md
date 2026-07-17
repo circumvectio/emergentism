@@ -29,8 +29,8 @@ The routing and translation-control surfaces that physically live here. Read top
 |---|---|
 | [`00_CLEANUP_AUDIT_CORRECTIONS_2026_05_31.md`](00_CLEANUP_AUDIT_CORRECTIONS_2026_05_31.md) | Current L3 resync ledger for derivative front-door corrections after the latest discovery-tree audit. |
 | [`00_TIDY_CONTROL_BOARD_2026_06_04.md`](00_TIDY_CONTROL_BOARD_2026_06_04.md) | Active folder-by-folder tidy ledger: claims, statuses, blockers, and next queue. |
-| [`04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_2026_06_04.md`](04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_2026_06_04.md) | Recursive Agentz deployment receipt for git-tracked folders/files under `01_EMERGENTISM/`. |
-| [`04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_2026_06_04.csv`](04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_2026_06_04.csv) | Path-level Agentz manifest; regenerate or L3-audit before changing. |
+| [`03_AGENTZ_DEPLOYMENT_RECURSIVE_01_EMERGENTISM_2026_06_04.md`](03_AGENTZ_DEPLOYMENT_RECURSIVE_01_EMERGENTISM_2026_06_04.md) | Recursive Agentz deployment receipt for git-tracked folders/files under `01_EMERGENTISM/`. |
+| [`04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_ORG_2026_06_04.csv`](04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_ORG_2026_06_04.csv) | Path-level Agentz manifest; regenerate or L3-audit before changing. |
 | [`03_AGENTZ_DEPLOYMENT_00_META_2026_06_04.md`](03_AGENTZ_DEPLOYMENT_00_META_2026_06_04.md) | Self-covering Agentz deployment receipt for this META control lane. |
 | [`03_AGENTZ_DEPLOYMENT_00_META_2026_06_04.csv`](03_AGENTZ_DEPLOYMENT_00_META_2026_06_04.csv) | Path-level META lane deployment manifest. |
 | [`00_TRANSLATION_MACHINE_PROTOCOL.md`](00_TRANSLATION_MACHINE_PROTOCOL.md) | Corpus-repair law: move folder-by-folder without inflating claims. |
@@ -42,7 +42,7 @@ The routing and translation-control surfaces that physically live here. Read top
 | [`00_WHAT_IS_ACTUALLY_NOVEL_HERE.md`](00_WHAT_IS_ACTUALLY_NOVEL_HERE.md) | Inventory of the framework's genuinely distinct contributions. |
 | [`00_RECONCILIATION_SCOPE_BOUNDARY_NOTE.md`](00_RECONCILIATION_SCOPE_BOUNDARY_NOTE.md) | Claim-family classification: unified / translated / analogous / speculative / not claimed. |
 | [`00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md`](00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md) | O1 staging envelope: the 5+1 constitutional-invariants K2 ruling and its K3 propagation census. Canonical enumeration anchor is [`05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md); the geometric reading is [`05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md). |
-| [`00_CORPUS.md`](00_CORPUS.md) | Historical generated topology memory. Partial; prefer the current routing surfaces above. |
+| [`90_ARCHIVE/00_CORPUS.md`](90_ARCHIVE/00_CORPUS.md) | Historical generated topology memory. Partial; prefer the current routing surfaces above. |
 | [`AGENTS.md`](AGENTS.md) | Agent routing surface for this lane. |
 | [`90_ARCHIVE/`](90_ARCHIVE/) | Archived audit and verification reports. Provenance only, not current authority. |
 

@@ -112,7 +112,7 @@ THEOLOGY (L7) [S/I]
 - `sources/` — generated source index / fallback route
 - `reading-manifest.json` — generated manifest for the public reading library
 - `app.html` — Rosetta ladder front door
-- `infinite.html` — Infinite Book prototype: Workflowy-style zoom tree with stubbed AI expansion
+- `infinite.html` — Infinite Book prototype — **archived per commit `1ec8994`** → `../90_ARCHIVE/retired_public_site/infinite.html`; `app.html` is the door
 - `index.html` — landing spine
 - `lightcone.html`, `sphere.html`, `cascade.html` — visual support scenes
 - `vendor/three-0.160.0/` — self-hosted Three.js modules for public-site WebGL scenes; use `vendor/download_three.py` only to refresh the pinned local copy intentionally.
@@ -130,8 +130,10 @@ THEOLOGY (L7) [S/I]
 **Controlling spec [S/I]:**
 `../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/10_ADAPTIVE_PWA_RAG_BLUEPRINT/00_THE_INFINITE_BOOK.md`.
 
-**Tracked prototype [I]:** `infinite.html` is the public proof-of-shape: the finite canonical
-book appears as a recursive tree, and each node exposes a stubbed `∞ expand` action. The product
+**Archived prototype [I]:** `infinite.html` was the public proof-of-shape: the finite canonical
+book appears as a recursive tree, and each node exposes a stubbed `∞ expand` action. It was
+archived per commit `1ec8994` (2026-07-04) → `../90_ARCHIVE/retired_public_site/infinite.html`;
+`app.html` is the door. The product
 line is constitutional: the book is free; paid value is compute, private branches, persistence,
 exports, and grounded expansion.
 
@@ -166,12 +168,12 @@ historical signature provenance.
 
 `generate_public_library.py` currently renders the [B] audited handoff bundle into
 served static routes and writes `reading-manifest.json`, `robots.txt`, and
-`sitemap.xml`. Fresh local predeploy verification passes with `294` wired
-public corpus documents:
+`sitemap.xml`. Fresh local predeploy verification passes with `297` wired
+public corpus documents (per `reading-manifest.json`, verified 2026-07-17):
 
 | Wing | Count |
 |---|---:|
-| `papers/` | 25 |
+| `papers/` | 26 |
 | `canon/` | 8 |
 | `foundations/` | 12 |
 | `trinity/` | 42 |
@@ -184,11 +186,11 @@ public corpus documents:
 | `value/` (Axiology corpus wing) | 10 |
 | `ground/` (Ontology corpus wing) | 9 |
 | `sacred/` (Theology corpus wing) | 6 |
-| `method/` (Methodology corpus wing) | 10 |
+| `method/` (Methodology corpus wing) | 12 |
 | `meta/` (framework meta wing) | 6 |
 
-The repository site is wired locally and `sitemap.xml` currently lists `351`
-URLs.
+The repository site is wired locally and `sitemap.xml` deliberately lists `17`
+URLs — a compass, not a cathedral (verified 2026-07-17).
 
 **2026-06-12 deployment truth:** production deploy
 `dpl_ELnhnyH9EF8qRXSDV3HQWJtczXWg` refreshed the linked Vercel project

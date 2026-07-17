@@ -55,9 +55,9 @@ before descending when that file exists; this root card is the live Rosetta shim
 ## Recursive Agentz Deployment — 2026-06-04
 
 Full tracked-path coverage for this doctrine root is recorded in
-[`00_META/04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_2026_06_04.md`](00_META/04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_2026_06_04.md)
+[`00_META/03_AGENTZ_DEPLOYMENT_RECURSIVE_01_EMERGENTISM_2026_06_04.md`](00_META/03_AGENTZ_DEPLOYMENT_RECURSIVE_01_EMERGENTISM_2026_06_04.md)
 and its paired manifest
-[`00_META/04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_2026_06_04.csv`](00_META/04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_2026_06_04.csv).
+[`00_META/04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_ORG_2026_06_04.csv`](00_META/04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_ORG_2026_06_04.csv).
 
 Deployment rule:
 
@@ -65,7 +65,7 @@ Deployment rule:
 2. The recursive manifest supplies a row for every git-tracked folder and file/document under `01_EMERGENTISM/`, plus the deployment receipt/manifest.
 3. The manifest is routing/control metadata only; it does not upgrade evidence tiers, create doctrine, authorize runtime/product/entity claims, or move/delete archive material.
 4. `90_ARCHIVE/` and `91_COMPATIBILITY/` remain K3/provenance/compatibility preservation surfaces.
-5. `12_PUBLIC_SITE/` remains frozen for signed AIA migration; this deployment adds route-control coverage only, not feature work.
+5. `12_PUBLIC_SITE/book-pwa/` remains preserved-frozen post-migration (AIA migration executed 2026-06-12 per K2 signoff 2026-06-11; tombstone `12_PUBLIC_SITE/00_BOOK_PWA_MOVED.md`); this deployment adds route-control coverage only, not feature work.
 
 ## Routing Law
 

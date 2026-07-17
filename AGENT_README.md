@@ -57,7 +57,7 @@ or live organism state.
 |---|---|
 | `08_FRAMEWORK_SUPPORT/01_GOVERNANCE/` | tree constitution, canonical agent pipeline, data-room map |
 | `08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/` | Rosetta master source |
-| `08_FRAMEWORK_SUPPORT/05_SYNTHESIS/` | dissolved 2026-05-31 (K3) (✗ archived/dissolved 2026-05-31 — governance is NOT here; live governance is 08_FRAMEWORK_SUPPORT/01_GOVERNANCE/); holds only the Definitive-One-Book move tombstone — the book moved to `../03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/`; the two superseded synthesis notes are archived under `90_ARCHIVE/00_K3_SWEEP_2026_05_31/08_FRAMEWORK_SUPPORT/05_SYNTHESIS/` |
+| `08_FRAMEWORK_SUPPORT/05_SYNTHESIS/` | dissolved 2026-05-31 (K3) (✗ archived/dissolved 2026-05-31 — governance is NOT here; live governance is 08_FRAMEWORK_SUPPORT/01_GOVERNANCE/); holds only the Definitive-One-Book move tombstone — the book moved to `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/`; the two superseded synthesis notes are archived under `90_ARCHIVE/00_K3_SWEEP_2026_05_31/08_FRAMEWORK_SUPPORT/05_SYNTHESIS/` |
 | `08_FRAMEWORK_SUPPORT/08_AGENTS/` | canonical L1-L7 agent specs |
 | `11_UPLINK/00_CORE/` | first-descent AI route map |
 | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/` | structure and runtime audit receipts |
