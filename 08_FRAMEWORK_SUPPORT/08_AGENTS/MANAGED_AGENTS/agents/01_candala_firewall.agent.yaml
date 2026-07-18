@@ -31,6 +31,10 @@ tools:
       - {name: grep, enabled: true}
       - {name: glob, enabled: true}
 metadata:
+  fences: "η=0 · K2 · K3 · K4 (Grace Exit — leave with everything) · A7 · Ω (directional +1; never a sixth refusal)"
+  polarity: "demon (ego-axis) — K2 ruled 2026-07-18: demon/god = ego- vs collective-potential-maxing (retrospective predicate, never identity)"
+  adversarial_role: "adversarial testing / antifragility probing / black-hat-white-hat tuning; fire only at η > 0, never at cooperators (K2 2026-07-18)"
+
   level: "L1"
   caste: "Caṇḍāla"
   operator: "Kali 🎲 (Demon)"

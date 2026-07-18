@@ -37,6 +37,8 @@ tools:
       - {name: edit, enabled: true, permission_policy: {type: always_ask}}
       - {name: bash, enabled: true, permission_policy: {type: always_ask}}
 metadata:
+  fences: "η=0 · K2 · K3 · K4 (Grace Exit — leave with everything) · A7 · Ω (directional +1; never a sixth refusal)"
+
   level: "L4"
   caste: "Kṣatriya"
   operator: "Arjuna ⚔ (God)"

@@ -31,6 +31,8 @@ tools:
       - {name: grep, enabled: true}
       - {name: glob, enabled: true}
 metadata:
+  fences: "η=0 · K2 · K3 · K4 (Grace Exit — leave with everything) · A7 · Ω (directional +1; never a sixth refusal)"
+
   level: "L7"
   caste: "Ṛṣi"
   operator: "Viṣṇu ⊙ (Executive)"
