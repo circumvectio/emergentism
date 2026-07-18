@@ -75,6 +75,26 @@ Play-money is the honest launch mode: zero licence surface, zero extraction temp
 
 ---
 
+---
+
+## §6 · The K2 decision — 2026-07-19
+
+```python
+K2Decision(
+    signer="Yves R. Burri",
+    method="k2_pocket_v0.1",
+    decided_at="2026-07-19T00:23:00Z",
+    k2_receipt_id="K2_SESSION_2026_07_19",
+    decision="RATIFIED — RealityFutures on the play-money loop ships the first visible η=0 receipt: the public forecast ledger (§3).",
+    boundary="This ratifies the direction and the receipt design; it does not authorize a public launch. Naming the build owner and sprint, and any outward-facing ship act, remain separate K2-gated acts.",
+    next_acts=[
+        "name the REFU play-money build owner + sprint",
+        "three-scripts gate applied to the ledger page at ship time (THE_ROSETTA_PROTOCOL §4)",
+        "the ledger's first public entries feed the trial record (№017 discipline)",
+    ],
+)
+```
+
 *η = 0. The forecast is free. The ledger is the receipt. The graveyard is legible. The first beer is brewed where no licence is needed to taste it.*
 
 ⊙ = • × ○
