@@ -37,7 +37,8 @@ the value-language face of the same reciprocal grammar:
 **Notation boundary.** The older triadic shorthand sometimes used `P` for the
 Truth/product face. This note does not use bare `P` as a doctrine quantity:
 `P_node = Φ × V` is finite-node action potential, while
-`P∞ = φ · ν = 1` is the sphere/manifold identity. Truth here is the disclosure
+`P_chart:=φν=1` is an analytic identity under the selected open-chart
+definitions. Truth here is the disclosure
 function: whether the map remains accountable to what is.
 
 The telos is not possession of these limits.
@@ -51,23 +52,24 @@ Justice: arrange power without extraction
 
 ## Why This Is Objective
 
-Within the framework, better and worse are not assigned by taste, command, or
-status. They are read by direction:
+Within the framework, better and worse are evaluated against an explicitly
+declared Justice-bearing objective; the chart does not decide value:
 
 ```text
-P_node = Φ × V
-η = 0
-Ω widens / ΣΔP_node > 0 across the widest real boundary
-subject to B ≈ 1 and η = 0
+J(a;i,H,A)
+Δ_T W_i(a) ≥ 0
+Δ_T W_H(a) ≥ 0
+every other materially affected bearer b∈A has Δ_T W_b(a) ≥ 0
 ```
 
-A relation is better when it raises coherent viability without extraction.
-A relation is worse when it gains locally by lowering the field that carries it.
+A strictly syntropic relation raises both named durable potentials inside this
+bearer-complete admissible set. Voluntary sacrifice and lawful preservation are
+distinct classes; neither is relabeled strict syntropy.
 
-That makes value framework-objective: once the ontology of reciprocal closure is
-accepted, the direction of improvement is constrained by the accepted grammar:
-finite-node action is scored as `P_node = Φ × V`, the balance surface is
-tracked by `B`, and extraction is forbidden by `η = 0`.
+That makes value **framework-objective by declaration**, not externally proved
+moral realism. `P_node:=ΦV` is one selected model, `B` a diagnostic, and `η=0`
+a necessary non-extraction boundary; complete Justice supplies the normative
+premise.
 
 ## Syntropic Dyadism
 
@@ -86,27 +88,27 @@ i -> H = objective morals
 H -> i = objective ethics
 ```
 
-The maximum worldline potential of `i` cannot be reached by degrading `H`,
-because `H` is part of the boundary condition that makes `i` effective. The
-maximum viable potential of `H` cannot be reached by consuming `i`, because a
-holobiont that destroys its symbionts destroys its own future cone.
+Where `i` and `H` are durably coupled, degrading either can damage the other.
+That is a testable coupling hypothesis, not an unconditional theorem:
+short-horizon extraction may benefit an extractor, and a collective may gain
+while destroying a hidden bearer.
 
 So the objective moral compass is:
 
 ```text
-raise P_node,i and P_node,H together
-subject to η = 0
-with Φ and V balanced near L4
+raise W_i(T) and W_H(T) together
+inside complete bearer Justice J
+with every other materially affected bearer nonnegative
 ```
 
-This is the value-theory face of the Power-Max Lemma.
+This is Syntropic Dyadism's declared admissible set. Power-Max may optimize
+within it; it cannot create the Justice boundary.
 
 ## Claim Boundary
 
-- `[S]` The balance grammar is structural inside the accepted framework: `Ω`
-  names the directional widening of live futures, `B` is the equatorial
-  feasibility constraint, `P_node = Φ × V` collapses when either factor
-  collapses, and `η = 0` forbids hidden rent.
+- `[S]` The analytic chart and declared model have their stated conditional
+  consequences; the Justice and Syntropic predicates are well-typed framework
+  definitions.
 - `[I]` Naming those structural directions Beauty, Truth, and Justice is an
   interpretive transcendental reading.
 - `[C]` Any claim that this is a completed external proof of moral realism for

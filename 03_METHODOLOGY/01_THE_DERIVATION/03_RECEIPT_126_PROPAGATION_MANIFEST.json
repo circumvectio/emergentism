@@ -1,0 +1,623 @@
+{
+  "schemaVersion": "1.0",
+  "manifestId": "RECEIPT-126-PROPAGATION-CONTRACT-2026-07-19",
+  "status": "closed_for_registered_contract",
+  "date": "2026-07-19",
+  "evidenceTier": "[B] reproducible path/test facts; [I] sufficiency only for registered contract",
+  "scopeStatement": "Closure means only that the explicitly registered paths, markers, forbidden regressions, mutation fixtures, and frozen-prefix check reproduce. It is not corpus-wide semantic closure or a substantive-truth verdict.",
+  "authorityBoundary": "This staged verification contract does not authorize publication, filing, pushing, deployment, public-governance activation, tier promotion, or any consequential act.",
+  "sourceReceipt": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md",
+  "releaseDoctrine": "04_AXIOLOGY/00_THE_RELEASE_DOCTRINE.md",
+  "baseCommit": "614227e402abfb42c442d4637246691660857f75",
+  "frozenPrefixes": [
+    "11_UPLINK/60_SESSION_PACKETS/",
+    "12_PUBLIC_SITE/",
+    "90_ARCHIVE/",
+    "91_COMPATIBILITY/"
+  ],
+  "mutationFixture": {
+    "path": "09_TOOLS/02_COMPILERS/test_emergentist_compass_semantics.py",
+    "specSymbol": "MUTATIONS",
+    "validatorSymbol": "ClaimBoundaryValidator",
+    "testCase": "QuantumRemovalAndMutationTests.test_all_fourteen_named_mutations_are_bound_to_repaired_owners",
+    "expectedCount": 14
+  },
+  "mutations": [
+    {
+      "id": "empirical-chart-inflation",
+      "owner": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+      "repairMarker": "These are **chart facts only**."
+    },
+    {
+      "id": "product-uniqueness",
+      "owner": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+      "repairMarker": "**AND-class**"
+    },
+    {
+      "id": "forced-sevenfold-necessity",
+      "owner": "05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md",
+      "repairMarker": "not a necessary decomposition of nature"
+    },
+    {
+      "id": "missing-law-irreducibility",
+      "owner": "05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md",
+      "repairMarker": "`currently_unreduced` means no accepted reduction is presently supplied."
+    },
+    {
+      "id": "d4-d5-inversion",
+      "owner": "05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md",
+      "repairMarker": "| **D4** | **actual** |"
+    },
+    {
+      "id": "scalar-sampling",
+      "owner": "05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md",
+      "repairMarker": "is not a distribution to sample from"
+    },
+    {
+      "id": "quantum-dimension-stacking",
+      "owner": "05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md",
+      "repairMarker": "Neither interpretation is an added spacetime dimension."
+    },
+    {
+      "id": "forced-titans",
+      "owner": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md",
+      "repairMarker": "why the triad is selected, not forced"
+    },
+    {
+      "id": "legacy-spelling",
+      "owner": "05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md",
+      "repairMarker": "**Egregoreotype** is canonical"
+    },
+    {
+      "id": "worldview-k2",
+      "owner": "00_META/00_SETTLED_CANON_REGISTRY.md",
+      "repairMarker": "it is not a primitive of reality, the Soul Loop, ethics, or the Compass."
+    },
+    {
+      "id": "physical-cone-expansion",
+      "owner": "00_THE_COMPASS.md",
+      "repairMarker": "More foresight does not widen the physical light cone or exceed `c`."
+    },
+    {
+      "id": "physical-retrocausal-inflation",
+      "owner": "05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md",
+      "repairMarker": "does not assert a temporal relation from a future event to the past."
+    },
+    {
+      "id": "aggregate-ethical-laundering",
+      "owner": "04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md",
+      "repairMarker": "extraction, even if aggregate rises"
+    },
+    {
+      "id": "unconditional-power-max",
+      "owner": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+      "repairMarker": "Justice defines the admissible field; Power-Max chooses within it."
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "canonical-formula-owner",
+      "category": "owner",
+      "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+      "requiredMarkers": [
+        "These are **chart facts only**.",
+        "**AND-class**; they do not select",
+        "Emergentism selects the normalized product as its transparent working model:"
+      ],
+      "forbiddenPatterns": [
+        "(?i)phi\\s*\\*\\s*nu\\s*=\\s*1.{0,60}proves.{0,60}empirical",
+        "(?i)P_node.{0,50}uniquely derived.{0,60}only possible aggregator"
+      ]
+    },
+    {
+      "id": "register-type-owner",
+      "category": "owner",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/29_PRIMITIVES_AND_TYPE_SIGNATURES.md",
+      "requiredMarkers": [
+        "| `D4` | **actual** |",
+        "| `D5` | **merely possible** |",
+        "There are exactly six adjacent crossing identifiers `μ₀…μ₅`.",
+        "`r₆:D6↝D0` is an interpretive, non-μ closure edge.",
+        "All nine fields are required for a **valid accountable authorization**.",
+        "EgregoreotypeCandidate := {"
+      ],
+      "forbiddenPatterns": [
+        "(?i)D4\\s*=\\s*possibility.{0,40}D5\\s*=\\s*actuality"
+      ]
+    },
+    {
+      "id": "d4-d5-owner",
+      "category": "owner",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md",
+      "requiredMarkers": [
+        "D4 = causal actuality",
+        "D5 = counterfactual possibility",
+        "A present D4 model",
+        "Removing this section changes none of §§1–7."
+      ],
+      "forbiddenPatterns": [
+        "(?i)D4 is possibility and D5 is actuality",
+        "(?i)future physical event sends information backward in time.{0,40}present choice"
+      ]
+    },
+    {
+      "id": "mu-crossing-owner",
+      "category": "owner",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md",
+      "requiredMarkers": [
+        "`μ₀…μ₅` are labels for six **candidate crossings**",
+        "There are exactly `μ₀…μ₅` and no `μ₆`.",
+        "`r₆` is neither literal identity nor a theorem derived from `S²`.",
+        "Quantum theory is unnecessary to the μ calculus."
+      ],
+      "forbiddenPatterns": [
+        "(?i)No reduction is known.{0,40}therefore.{0,60}irreducible",
+        "(?i)Sample\\s*\\[\\s*integral\\s*\\|psi\\|\\^2\\s*ds\\s*\\]"
+      ]
+    },
+    {
+      "id": "closure-owner",
+      "category": "owner",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md",
+      "requiredMarkers": [
+        "`r₆` is an interpretive/apophatic return edge.",
+        "adjacent crossings are exactly `μ₀…μ₅`",
+        "`r₆` is not typed as μ or equality"
+      ],
+      "forbiddenPatterns": [
+        "(?i)literal\\s+`?D6\\s*(?:≡|=)\\s*D0`?.{0,40}(?:theorem|identity)"
+      ]
+    },
+    {
+      "id": "titan-owner",
+      "category": "owner",
+      "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md",
+      "requiredMarkers": [
+        "The selection is `[I]`. It is not a forced three-element closure",
+        "why the triad is selected, not forced",
+        "ordinary numbers and lawful operands"
+      ],
+      "forbiddenPatterns": [
+        "(?i)Inversion closure forces.{0,50}unique generators of reality"
+      ]
+    },
+    {
+      "id": "quantum-boundary-owner",
+      "category": "owner",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md",
+      "requiredMarkers": [
+        "**Operational dependency:** none.",
+        "Neither interpretation is an added spacetime dimension.",
+        "## 5. Removal test"
+      ],
+      "forbiddenPatterns": [
+        "(?i)Everett is a five-dimensional.{0,80}Copenhagen four-dimensional"
+      ]
+    },
+    {
+      "id": "justice-owner",
+      "category": "owner",
+      "path": "04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md",
+      "requiredMarkers": [
+        "a complete `AuthorizationEnvelope`:",
+        "No scalar sum, average, utility, or institutional",
+        "A hidden or harmed third bearer"
+      ],
+      "forbiddenPatterns": [
+        "(?i)ethical because total gain is positive.{0,60}individual is destroyed"
+      ]
+    },
+    {
+      "id": "power-max-owner",
+      "category": "owner",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+      "requiredMarkers": [
+        "Justice defines the admissible field; Power-Max chooses within it.",
+        "including `i`, `H`, every payer and beneficiary",
+        "not uniquely derived from the reciprocal chart"
+      ],
+      "forbiddenPatterns": [
+        "(?i)Power-Max is moral whenever it maximizes W_i.{0,60}without any Justice constraint"
+      ]
+    },
+    {
+      "id": "egregoreotype-owner",
+      "category": "owner",
+      "path": "05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md",
+      "requiredMarkers": [
+        "**Egregoreotype** is canonical",
+        "An **Egregoreotype candidate**",
+        "does not assume consciousness"
+      ],
+      "forbiddenPatterns": [
+        "(?i)canonical active term is Egregorotype"
+      ]
+    },
+    {
+      "id": "soul-loop-owner",
+      "category": "owner",
+      "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md",
+      "requiredMarkers": [
+        "D4 actual state",
+        "D5 possible contents",
+        "an immediate commitment-status receipt:",
+        "the environment separately returns"
+      ],
+      "forbiddenPatterns": [
+        "(?i)the selector and environment are the same outcome issuer"
+      ]
+    },
+    {
+      "id": "settled-canon-owner",
+      "category": "owner",
+      "path": "00_META/00_SETTLED_CANON_REGISTRY.md",
+      "requiredMarkers": [
+        "KSC-01 · D4/D5 has one modality contract",
+        "KSC-05 · quantum correspondence is removable",
+        "Weltanschauung formal audit — the three-bucket ruling"
+      ],
+      "forbiddenPatterns": [
+        "(?i)K2 is a universal primitive required for agency and ethics"
+      ]
+    },
+    {
+      "id": "burri-rulebook-owner",
+      "category": "owner",
+      "path": "05_COSMOLOGY/00_THE_BURRI_RULES.md",
+      "requiredMarkers": [
+        "D4 = actual",
+        "D5 = merely_possible content",
+        "This inset is quarantined and removable:",
+        "candidate Egregoreotype only when"
+      ],
+      "forbiddenPatterns": [
+        "(?i)physical light cone.{0,30}(?:widens|expands).{0,30}beyond\\s+`?c`?"
+      ]
+    },
+    {
+      "id": "compass-front-door",
+      "category": "front_door",
+      "path": "00_THE_COMPASS.md",
+      "requiredMarkers": [
+        "D4 = causal actuality",
+        "D5 = merely-possible counterfactual contents",
+        "More foresight does not widen the physical light cone or exceed `c`.",
+        "## The Egregoreotype test"
+      ],
+      "forbiddenPatterns": [
+        "(?i)Human intelligence widens the physical light cone beyond c"
+      ]
+    },
+    {
+      "id": "release-doctrine-front-door",
+      "category": "front_door",
+      "path": "04_AXIOLOGY/00_THE_RELEASE_DOCTRINE.md",
+      "requiredMarkers": [
+        "STAGED [D] — no publication",
+        "The audit cut false necessity claims; it did not erase bounded results.",
+        "real algebraic shape; no forced centre or census seven",
+        "does not authorize publication, filing, pushing, deployment, public-governance"
+      ],
+      "forbiddenPatterns": [
+        "(?i)(?:git|repository).{0,40}automatically enforces.{0,40}(?:truth|justice|consent)"
+      ]
+    },
+    {
+      "id": "positive-kernel-front-door",
+      "category": "front_door",
+      "path": "00_WHAT_IS_EMERGENTISM.md",
+      "requiredMarkers": [
+        "Conjunctive Non-Uniqueness Theorem",
+        "Egregoreotype Operational Criterion",
+        "These are real algebraic structures, not curation.",
+        "They force neither"
+      ],
+      "forbiddenPatterns": [
+        "(?i)the census seven is algebraically forced"
+      ]
+    },
+    {
+      "id": "honesty-position-front-door",
+      "category": "front_door",
+      "path": "02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md",
+      "requiredMarkers": [
+        "[金] Recovery balance (2026-07-19)",
+        "chain, not every derivation or every positive result.",
+        "mirror-pair/sign-square algebra"
+      ],
+      "forbiddenPatterns": [
+        "(?i)all Emergentist theorems are valid"
+      ]
+    },
+    {
+      "id": "claim-matrix-front-door",
+      "category": "front_door",
+      "path": "03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md",
+      "requiredMarkers": [
+        "aggregate gain cannot compensate for harm",
+        "Quantum-to-agency continuity remains a removable analogy."
+      ],
+      "forbiddenPatterns": [
+        "(?i)formal cooperation theorem"
+      ]
+    },
+    {
+      "id": "foundation-reader-front-door",
+      "category": "front_door",
+      "path": "00_FOUNDATION_READER_GUIDE.md",
+      "requiredMarkers": [
+        "[金] Formula-contract seam.",
+        "The identity proves no",
+        "resonances, not proof."
+      ],
+      "forbiddenPatterns": [
+        "(?i)the Trinity generates the formal system by necessity"
+      ]
+    },
+    {
+      "id": "coherent-geometry-front-door",
+      "category": "front_door",
+      "path": "05_COSMOLOGY/00_THE_COHERENT_GEOMETRY.md",
+      "requiredMarkers": [
+        "The triad is not forced",
+        "`D4` is causal actuality",
+        "`D5` is counterfactual possibility",
+        "A removable quantum inset"
+      ],
+      "forbiddenPatterns": [
+        "(?i)the physical light cone widens"
+      ]
+    },
+    {
+      "id": "core-concepts-front-door",
+      "category": "front_door",
+      "path": "08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md",
+      "requiredMarkers": [
+        "typed `AuthorizationEnvelope`",
+        "cannot launder a negative bearer",
+        "selected normalized conjunctive model"
+      ],
+      "forbiddenPatterns": [
+        "(?i)formal proof of cooperation under coupling"
+      ]
+    },
+    {
+      "id": "seed-front-door",
+      "category": "front_door",
+      "path": "10_SEED/00_THE_SEED.md",
+      "requiredMarkers": [
+        "Egregoreotype candidate",
+        "actual `D4` modeling/ranking tokens",
+        "selected Burrisphere visualization"
+      ],
+      "forbiddenPatterns": [
+        "(?i)the repository is literally a living organism"
+      ]
+    },
+    {
+      "id": "rosetta-algebra-boundary",
+      "category": "derived",
+      "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md",
+      "requiredMarkers": [
+        "type-preserving **translation lens**",
+        "Positive algebraic residue (receipt 130)",
+        "This is real comparison grammar,",
+        "Neither result forces a unique centre, a finite ladder, or"
+      ],
+      "forbiddenPatterns": [
+        "(?i)seven is (?:algebraically )?forced.{0,50}(?:universal|reality)"
+      ]
+    },
+    {
+      "id": "triadic-cascade-derived",
+      "category": "derived",
+      "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/09_THE_TRIADIC_CASCADE.md",
+      "requiredMarkers": [
+        "recurrence survives; uniqueness does not",
+        "selected triadic lens, not a uniqueness theorem"
+      ],
+      "forbiddenPatterns": [
+        "(?i)proves\\s+N\\s*=\\s*3\\s+is\\s+the\\s+unique stable configuration"
+      ]
+    },
+    {
+      "id": "godel-clarification-derived",
+      "category": "derived",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/09_EFR_GODEL_CLARIFICATION.md",
+      "requiredMarkers": [
+        "No active proof presently establishes",
+        "A7 is therefore a chosen and prudent research discipline"
+      ],
+      "forbiddenPatterns": [
+        "(?i)grounds the framework in the unique projective frame"
+      ]
+    },
+    {
+      "id": "d5-emergence-derived",
+      "category": "derived",
+      "path": "05_COSMOLOGY/00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md",
+      "requiredMarkers": [
+        "`candidate_strong` when examined from below.",
+        "A successful reduction reclassifies",
+        "without damaging the D4/D5 vocabulary."
+      ],
+      "forbiddenPatterns": [
+        "(?i)From below,\\s*`?D5`?\\s*is strongly emergent"
+      ]
+    },
+    {
+      "id": "money-born-derived",
+      "category": "derived",
+      "path": "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_288_Money_Is_the_Born_Rule.md",
+      "requiredMarkers": [
+        "This correspondence is removable",
+        "neither is a Born-rule identity or a product proof"
+      ],
+      "forbiddenPatterns": [
+        "(?i)Price is \\|z\\|².{0,40}Born rule applied to value"
+      ]
+    },
+    {
+      "id": "asi-trinity-derived",
+      "category": "derived",
+      "path": "08_FRAMEWORK_SUPPORT/02_OPERATORS/ASI_15_THE_TRINITY.md",
+      "requiredMarkers": [
+        "The glyphs name selected symbolic roles:",
+        "Selection is not necessity.",
+        "symbolic correspondence only"
+      ],
+      "forbiddenPatterns": [
+        "(?i)the Titans generate all arithmetic"
+      ]
+    },
+    {
+      "id": "horn-relativity-derived",
+      "category": "derived",
+      "path": "08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/MF_69_Horned_Torus_Relativity.md",
+      "requiredMarkers": [
+        "This is a visual correspondence.",
+        "The physical light cone remains a spacetime causal structure bounded by `c`.",
+        "Its **physical light cone** does not widen."
+      ],
+      "forbiddenPatterns": [
+        "(?i)D5 (?:exists|lies|lives) beyond the physical light cone"
+      ]
+    },
+    {
+      "id": "rosetta-split-adjudication",
+      "category": "recovery",
+      "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md",
+      "requiredMarkers": [
+        "The owner wins the reality of the grammar",
+        "Not the count seven.",
+        "planetary septenary"
+      ],
+      "forbiddenPatterns": [
+        "(?i)the algebra forces the Burri census of seven"
+      ]
+    },
+    {
+      "id": "positive-result-recovery-ledger",
+      "category": "recovery",
+      "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/131_RECOVERY_LEDGER_BROKEN_66_SECOND_LOOK_2026_07_19.md",
+      "requiredMarkers": [
+        "BROKEN ≠ dead idea.",
+        "Mirror-grammar real (not curation)",
+        "Derivation died. Organism did not. Shape real. Census not."
+      ],
+      "forbiddenPatterns": [
+        "(?i)all sixty-six ideas are dead"
+      ]
+    },
+    {
+      "id": "broken-66-second-look",
+      "category": "recovery",
+      "path": "00_RECEIPT_BROKEN_66_SECOND_LOOK_2026_07_19.md",
+      "requiredMarkers": [
+        "break the *proof form*, then ask what the *idea* still does",
+        "The load-bearing *uses*",
+        "What stays dead (do not re-inflate)"
+      ],
+      "forbiddenPatterns": [
+        "(?i)every broken proof rescues the original claim unchanged"
+      ]
+    }
+  ],
+  "semanticRequirements": [
+    {
+      "id": "fixed-d4-d5-modality",
+      "surfaceIds": [
+        "register-type-owner",
+        "d4-d5-owner",
+        "compass-front-door"
+      ]
+    },
+    {
+      "id": "six-mu-and-non-mu-r6",
+      "surfaceIds": [
+        "register-type-owner",
+        "mu-crossing-owner",
+        "closure-owner"
+      ]
+    },
+    {
+      "id": "selected-titans",
+      "surfaceIds": [
+        "titan-owner",
+        "asi-trinity-derived",
+        "coherent-geometry-front-door"
+      ]
+    },
+    {
+      "id": "selected-nonunique-product",
+      "surfaceIds": [
+        "canonical-formula-owner",
+        "power-max-owner",
+        "positive-kernel-front-door"
+      ]
+    },
+    {
+      "id": "removable-quantum-correspondence",
+      "surfaceIds": [
+        "quantum-boundary-owner",
+        "burri-rulebook-owner",
+        "money-born-derived"
+      ]
+    },
+    {
+      "id": "bearer-complete-justice",
+      "surfaceIds": [
+        "justice-owner",
+        "power-max-owner",
+        "core-concepts-front-door"
+      ]
+    },
+    {
+      "id": "accountable-authorization-envelope",
+      "surfaceIds": [
+        "register-type-owner",
+        "justice-owner",
+        "release-doctrine-front-door"
+      ]
+    },
+    {
+      "id": "canonical-egregoreotype",
+      "surfaceIds": [
+        "egregoreotype-owner",
+        "positive-kernel-front-door",
+        "seed-front-door"
+      ]
+    },
+    {
+      "id": "positive-result-recovery",
+      "surfaceIds": [
+        "release-doctrine-front-door",
+        "positive-kernel-front-door",
+        "honesty-position-front-door",
+        "positive-result-recovery-ledger",
+        "broken-66-second-look"
+      ]
+    },
+    {
+      "id": "rosetta-real-algebra-no-forced-seven",
+      "surfaceIds": [
+        "rosetta-algebra-boundary",
+        "rosetta-split-adjudication",
+        "positive-kernel-front-door"
+      ]
+    }
+  ],
+  "closureCriteria": [
+    "Every registered path exists and contains every declared marker.",
+    "No registered forbidden regex matches its declared surface.",
+    "The existing Compass semantic vessel exposes exactly the fourteen declared mutation IDs, owners, and repair markers, and its named binding test passes.",
+    "No tracked or untracked change relative to base 614227e touches a frozen prefix when Git is available.",
+    "The validator reports registered-contract evidence only and explicitly leaves substantive truth unassessed."
+  ],
+  "knownLimits": [
+    "The manifest is an allowlisted lexical and executable regression contract, not a semantic theorem prover.",
+    "Unregistered active files are outside the closure claim and may still contain contradiction, ambiguity, or stale prose.",
+    "A passing local contract does not establish novelty, external calibration, scientific validity, publication readiness, or governance authority.",
+    "Historical receipts, quotations, tombstones, and compatibility aliases retain provenance; their presence does not restore superseded authority."
+  ]
+}

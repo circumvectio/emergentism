@@ -35,6 +35,15 @@ actual model may represent D5 possible content. Authorization separately
 classifies normative validity; unauthorized and coercive attempts remain part
 of causal description.
 
+> **[金] Kintsugi seam (2026-07-19).** This crosswalk once let the selected
+> formula order carry ontological and ethical weight. The repair keeps the
+> scaffold while removing that entailment: `phi*nu=1`, `phi+nu>=2`, and
+> `B<=1` are analytic facts of the chosen chart only. Titans are selected
+> symbolic roles; `P_node:=Phi*V` is a selected conjunctive score; D0-D6 is an
+> interpretive decomposition; and `r6:D6↝D0` is closure, not identity. The
+> ontological sequence below is a declared `[I]` lens, not something proved by
+> the chart.
+
 ---
 
 ## Why This Document Exists
@@ -92,25 +101,26 @@ This prevents the framework from pretending that a dimension label has possessed
 
 ---
 
-## The Canonical Formula Grammar
+## The Formula Grammar and Its Perimeter
 
-Every dimensional reading must preserve the canonical order:
+For the selected chart, preserve the following typing:
 
 ```text
-Zero-Sum Resolution Equation
-φ · ν = 1 on S²
-(φ − ν)² ≥ 0
-φ + ν ≥ 2
+frame emblem:       ⊙ = • × ○          [S/I], not arithmetic
+analytic identity:  φν = 1              [A], selected chart
+analytic facts:     (φ−ν)² ≥ 0, φ+ν ≥ 2  [A]
+selected balance:   B = 2/(φ+ν) ≤ 1    [A once B is defined]
 ```
 
 | Line | Ontological role | Discipline |
 |---|---|---|
-| `Zero-Sum Resolution Equation` | Seed: reciprocal closure of nothing/everything into finity | More primitive than Being; do not replace with a derivative inequality |
-| `φ · ν = 1 on S²` | Being: stable reciprocal identity on the sphere | First stable ontological statement inside the model |
-| `(φ − ν)² ≥ 0` | Difference is real but cannot become ontological rupture | Arithmetic consequence, not primitive axiom |
-| `φ + ν ≥ 2` | Balance is the minimum-energy condition | Teleological / energetic consequence |
+| `⊙ = • × ○` | Selected relational emblem | Never field arithmetic or evidence |
+| `φν = 1` | Reciprocal chart identity | No ontology or conservation law follows |
+| `(φ−ν)² ≥ 0` | Elementary non-negativity | No claim about ontological rupture follows |
+| `φ+ν ≥ 2` | AM-GM consequence on the chart | Not physical energy or teleology without an added model |
 
-The formula block is not optional. It is the grammar that keeps the ontology from becoming a loose metaphor.
+The type fence is not optional. The ontology is a loose metaphor if it silently
+promotes any analytic line into a claim about Being, value, or physics.
 
 ---
 
@@ -143,10 +153,11 @@ appropriate topology.**
 These are the current modeling commitments:
 
 1. The logarithmic line is the primary model for D0-D2.
-2. The center is unity, identity, measure, and relation — not nothingness.
+2. The selected center is unity, identity, measure, and relation inside the
+   lens; the chart does not prove a metaphysical center.
 3. Candidate emergence (bottom-up) and lawful constraint (top-down) form a testable reciprocal loop; missing reduction is not proof of irreducibility.
 4. Suda contributes convergent reciprocal mathematics whose elementary coordinate facts are `[A]`; Suda is not doctrinal origin or proof-authority for the whole ontology.
-5. Evidence tiers are enforced at every layer.
+5. Evidence tiers are enforced at every layer; the scaffold remains removable.
 
 ### Coordinate definition
 
@@ -260,7 +271,9 @@ D6: apophatic closure — `r₆` points interpretively back to D0.
 
 ## Public-Study Apertures Across the Dimensions
 
-The dimensions are not separate worlds stacked like floors in a building. They are apertures of reality: each opens a kind of object, method, and disclosure that cannot be flattened into the previous one.
+The dimensions are not separate worlds stacked like floors in a building. They
+are selected apertures: each tracks a kind of object, method, and disclosure
+whose reduction status must be tested rather than assumed.
 
 | Dimension | Ontological opening | What becomes possible | Dominant public aperture | Primary risk if reified | Tier |
 |---|---|---|---|---|---|
@@ -363,7 +376,7 @@ Candidate emergence and constraint are two directions of explanation:
 This is clearest at D4 -> D5:
 
 ```text
-D5 crossings are `currently_unreduced`; missing reduction does not prove strong emergence.
+An individual D5 crossing may be `currently_unreduced`; missing reduction does not prove strong emergence.
 D5-modeled futures can constrain present selection only through D4 means and action; the world returns the consequence.
 ```
 
@@ -375,18 +388,23 @@ opaque from below, legible from above
 
 The same pattern generalizes carefully:
 
-- D1 cannot be obtained by pretending no distinction exists.
-- D2 cannot be collapsed into distinction alone; configurations have lawful arrangement.
-- D3 cannot be collapsed into arrangement alone; self-maintaining transformation appears.
-- D4 cannot be collapsed into life alone; bounded witness and control appear.
-- D5 cannot be collapsed into isolated cognition alone; strategic relation appears.
-- D6 cannot be collapsed into one more positive layer; closure subtracts the claim of exhaustive description.
+- D1 tracks distinction.
+- D2 tracks configurations and lawful arrangement.
+- D3 tracks transformation and persistence.
+- D4 tracks actual models, means, action, records, and receipts.
+- D5 tracks possible contents and strategic relations.
+- D6 is not one more positive layer; closure subtracts the claim of exhaustive description.
+
+These level-specific variables may improve explanation without proving
+irreducibility. A successful lower-level reduction reclassifies a crossing and
+leaves the scaffold available as a higher-level coordinate system.
 
 ---
 
 ## The Riemann Sphere and the Completed Topology
 
-The flat number line is insufficient as the final geometric image because it treats the poles as external accidents.
+The flat number line is not the framework's selected final image because it
+does not display the projective completion as compactly.
 
 The completed topology is better represented by the sphere:
 
@@ -409,13 +427,14 @@ E = s²             minimum 0 at s = 0, growing toward both poles
 φ + ν = 2 cosh(s)  minimum 2 at s = 0
 ```
 
-This does not prove the ontology in public mathematics. It gives the framework a disciplined coordinate grammar for why finity, not absence, is the center of disclosure.
+This does not prove an ontology. It gives the framework a disciplined
+coordinate grammar in which `1` is the selected reciprocal center.
 
 ---
 
 ## The Operators and the Titans
 
-The emblem:
+The selected Titan emblem:
 
 ```text
 ⊙ = • × ○
@@ -423,11 +442,11 @@ The emblem:
 ⊙ / • = ○
 ```
 
-states reciprocal recoverability:
+is read as reciprocal recoverability `[S/I]`:
 
-- the whole is the relation of the poles;
-- either pole can be recovered from the whole through the other;
-- finity is not a third substance but the relational closure that lets poles become sayable.
+- the whole is narrated through the pole relation;
+- inversion exchanges the selected pole tokens;
+- finity names the selected positive fixed center.
 
 Dimensional reading:
 
@@ -439,7 +458,9 @@ Dimensional reading:
 | D5 | `•` and `○` become distinguishable axes of navigation |
 | D6 | operator grammar is released back into closure |
 
-Again: this is an ontological emblem, not ordinary arithmetic over zero and infinity.
+Again: ordinary `0` and `1` remain numbers and operands, `∞` is the
+projective point, and this is a selected ontological emblem rather than
+arithmetic or a forced generator.
 
 ---
 

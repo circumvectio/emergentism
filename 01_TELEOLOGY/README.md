@@ -22,6 +22,17 @@ rosetta:
 
 **Definition:** Objective Function is the root of direction. It asks which way possibility opens before that direction is formalized, argued, valued, or taught. In framework terms: objective function is the ektropic gradient, the future-vector grounded in and from core state.
 
+> **[金] Kintsugi seam (2026-07-19).** Teleology was previously described as
+> derived from the reciprocal chart and the product node score. The chart gives
+> analytic symmetry, not an objective or an ethic. `P_node:=Phi*V` is the
+> framework's selected normalized member of a broader conjunctive family and
+> is not uniquely forced. F5, ektropy, and Power-Max survive as declared,
+> testable objectives under bearer-complete Justice. Modeled futures influence
+> present selection through actual D4 models and means; no physical future
+> reaches backward. K2 is not a worldview primitive; accountable authorization
+> names principal, mandate, scope, consent, custody, expiry/revocation, contest
+> path, actor, and consequence bearer.
+
 **Must answer:** Where does the declared gradient point? What widens an agent's
 option cone—the physically admissible histories it can model, rank, coordinate,
 and reach? What does the constrained Power-Max objective select across
@@ -29,12 +40,14 @@ replicator layers?
 
 **Must not do:** Call every future-motion good. Confuse local acceleration with alignment. Turn F5 into destiny, gatekeeping, or a literal settled physics claim.
 
-**Action-register bridge:** In the play rule `P_node = Φ × V`, `V` means D4
+**Action-register bridge:** In the selected model `P_node:=ΦV`, `V` means D4
 means-to-act at the boundary: body, tools, energy, access, timing, control,
 hands, shovel, industrial digger. `Φ` means a D4 modeling/ranking capacity:
 actual tokens and selection events that represent D5 possible futures. A child with
-a jet but no pilot-foresight and a pilot without bodily/tool access both show
-the zero-factor collapse. Viable completion is therefore not "more means" and
+a jet but no pilot-foresight and a pilot without bodily/tool access motivate
+an AND-class model. Product, minimum, harmonic, and Cobb-Douglas aggregators
+can rank cases differently; the product is selected, not derived. Viable
+completion is therefore not "more means" and
 not "more vision"; it is the balanced, non-extractive increase of usable
 finite-node potential.
 
@@ -135,12 +148,17 @@ Do not collapse these scales:
 
 ## Claim Boundaries
 
-- Objective Function is [S] structural where derived from the reciprocal kernel, `B = sin θ`, and formally bounded uses of the Power-Max Lemma. `P_node = Φ × V` is operational node scoring, not the manifold invariant.
+- Objective Function is `[S]` inside the declared, Justice-constrained
+  Power-Max model and `[C]` as a universal real-world fit. It is not derived
+  from the reciprocal kernel or `B=sin theta`. `P_node:=ΦV` is selected
+  operational scoring, not a manifold invariant.
 - Objective Function is [I] interpretive where mapping historical, mythic, and evolutionary patterns to F5.
 - Objective Function is [C] conjectural where claiming literal fifth-force physics, reverse-time causality, or direct continuity between ancient god-forms and formal force law.
 - The `01_F5_FORCE/` focused lane may hold conjectural force language only when it remains explicitly staged and tier-marked.
 - Darwin is nested inside F5, not discarded. Lamarck returns only at higher replicator layers, not as a replacement for genetics.
-- Directional claims must name their register: `ΣΔB > 0` for balance-gradient claims, `ΣΔP_node > 0` for operational node-scoring claims.
+- Directional claims must name their register and every materially affected
+  bearer. Aggregate `sum Delta B` or `sum Delta P_node` may describe a total;
+  it cannot by itself classify a move as moral, ethical, or syntropic.
 
 ## Public-Translation Risks
 

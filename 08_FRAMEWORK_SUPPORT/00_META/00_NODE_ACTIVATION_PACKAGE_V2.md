@@ -32,6 +32,14 @@ rosetta:
 > system prompt. It is retained as governance memory for the 2026-04-04
 > lens-era activation lane.
 >
+> **[金] Typed supersession (2026-07-19).** The body preserves historical
+> `ΣΔP_node`, “theocracy,” identity, and K2-era wording as quotation, not current
+> worldview semantics or authority. Current activation uses bearer-level Justice,
+> a complete `AuthorizationEnvelope`, D4 actuality/D5 possibility, and separate
+> commitment/outcome receipts in `00_NODE_ACTIVATION_PACKAGE.md`. Do not execute
+> any conflicting instruction below. **Kill criterion:** present-tense reuse of a
+> legacy directive outside its explicitly historical context.
+>
 > **Namespace note (2026-06-04):** The `SKYZAI_ORG/` paths appearing in the
 > traversal protocols below refer to the retired legacy namespace.
 > Live content now resides under `02_SKYZAI/01_NOOSPHERE/`.

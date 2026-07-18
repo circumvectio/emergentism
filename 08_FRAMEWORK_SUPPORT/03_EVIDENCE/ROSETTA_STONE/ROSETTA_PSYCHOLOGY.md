@@ -34,8 +34,16 @@ evidence_tier: "[S] for L1-L4 developmental anchors where stated; [S] for struct
 ## L-Levels Mapped to Developmental Psychology
 
 **Hat:** 🔬 Cross-Domain Translation (Psychology)
-**Evidence Tier:** [I] for L1-L4 developmental stages (Piaget cognitive, Kohlberg moral -- independently validated). [S] for Maslow hierarchy (universal needs confirmed but sequential ordering not supported -- Tay & Diener 2011). [I] for L5-L7 extensions (post-formal, post-conventional, self-transcendence -- beyond originators' empirical data). [S] for 7-level convergence structure (original Emergentism contribution -- alignment of independently validated scales onto geometric object). Note: Piaget and Kohlberg are NOT independent (Kohlberg built directly on Piaget). Maslow IS independent. [I] for Sanskrit virtues and Shadow mappings (framework-internal interpretation). See `ROSETTA_PSYCHOLOGY_RESEARCH_BRIEF.md` for full meta-analysis with 20 references.
-**Kill Criteria:** If the seven-level alignment is shown to be forced -- if Piaget, Kohlberg, and Maslow genuinely require different numbers of levels, or if the developmental stages cannot be meaningfully placed on the same rows -- this mapping falls.
+**Evidence Tier:** `[B]` for attributable developmental sources; `[I]` for
+placing their heterogeneous constructs on common rows and for the Sanskrit and
+Shadow translations; `[C]` for any out-of-sample invariance or predictive-gain
+claim. Piaget and Kohlberg are not independent lineages, and the L5–L7 rows are
+framework extensions. See `ROSETTA_PSYCHOLOGY_RESEARCH_BRIEF.md` for the source
+review.
+**Kill Criteria:** Preregister row assignments for unseen scales. The stronger
+mapping fails if source-faithful scales require incompatible counts, stages
+cannot be placed without post-hoc splitting/merging, a permutation/null mapping
+fits as well, or the rows add no out-of-sample explanatory or predictive value.
 **Source:** Emergentism Rosetta Stone v10.0, sheet: PSYCHOLOGY
 
 ---
@@ -44,7 +52,10 @@ evidence_tier: "[S] for L1-L4 developmental anchors where stated; [S] for struct
 
 Three Western developmental scales -- Piaget (cognitive), Kohlberg (moral), Maslow (motivational) -- each describe a progression that falls into seven rows when extended to include pre-social (L1) and post-conventional (L5-L7) territory. Note: Piaget and Kohlberg share intellectual lineage (Kohlberg built directly on Piaget's stage theory), so these represent two independent traditions (Piaget-Kohlberg and Maslow), not three. The framework adds two further columns: a Sanskrit virtue naming the positive attractor at each level, and a Shadow naming the pathological attractor when that level becomes stuck.
 
-The claim is not that these researchers intended to describe the same thing. The claim is that each discovered the same structural positions on S², projected onto cognitive, moral, and motivational substrates respectively. (Piaget and Kohlberg share lineage; Maslow is genuinely independent.)
+The claim is not that these researchers intended to describe the same thing or
+discovered positions on `S²`. The framework proposes a common translation and
+must earn it against source-faithful rivals. Piaget and Kohlberg share lineage;
+their resemblance is not independent convergence.
 
 ---
 

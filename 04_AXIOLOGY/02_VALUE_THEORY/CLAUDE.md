@@ -26,7 +26,7 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 ## Scope
 
 - 02 Value Theory lane of the Emergentism framework.
-- Value language before it becomes K2-signed action.
+- Value language before it becomes an authorized, receipted action.
 - Doctrine and framework claims defer to source documents in this folder.
 - Evidence tiers mandatory on all claims.
 
@@ -36,27 +36,31 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 - **Beauty, Truth, and Justice** as asymptotic teleological limits.
 - **Objective morals and ethics** as the directional dyad between individual and collective.
 - **Rights, duties, and due process** as the law-facing translation of that dyad.
-- **Justice** as widest-boundary positive `ΣΔB` / `ΣΔP_node` under `η = 0`.
+- **Justice** as bearer-complete admissibility: principal, mandate, scope,
+  consent, custody, contest, actor, consequence bearers, payer, beneficiary,
+  separate receipts, and no hidden bearer loss. Aggregates are diagnostics.
 
 ## What This Lane Must Not Own
 
 | Topic | Correct Route | Why |
 |---|---|---|
-| Theurgical practice and K2 participation | `../01_THEURGY/` | Value-in-action lives at the equator, not in theory |
+| Theurgical practice and authorization protocols | `../01_THEURGY/` | Value theory does not itself authorize action |
 | Operator grammar | `../../08_FRAMEWORK_SUPPORT/02_OPERATORS/` | Formal structure, not value content |
 | Public institutional narrative | `../../07_THEOLOGY/` | Translation layer, not source authority |
 
 ## Value-to-action boundary
 
-Value theory prepares the collapse; it does not perform it. The sequence:
+Value theory prepares a candidate commitment; it does not perform or authorize
+it. The sequence:
 
 ```text
 L2 Śūdra  → surfaces candidate values
 L3 Vaiśya → tests, ranks, supplies rollback
-L4 Kṣatriya → decides and commits (K2)
+L4 Kṣatriya → may attempt a D4 commitment only through a complete AuthorizationEnvelope
 ```
 
-This folder stops at the threshold. K2 signing happens in `../01_THEURGY/`.
+This folder stops at the threshold. Private-DAV K2 is one separately scoped
+implementation under `../01_THEURGY/`, not the worldview's commitment rule.
 
 ## Routing
 

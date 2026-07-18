@@ -6,7 +6,7 @@ rosetta:
   tier: "God"
   regime: "Vaiśya"
   secondary: {level: L5, column: Cosmology, role: "Finity geometry"}
-  register: "[A] the projective resolution N÷0=∞ for N≠0 on ℂP¹ (the same point ∞ for all nonzero N; topology only over ℝ,ℂ), the genuine indeterminacy of 0/0 and (analytically) ∞/∞, the wheel-theory totality-with-a-price (absorption 0·x=0 fails for some x); [S] the frames-not-operands reading and the naming of the move category-correction; [I] the reading of the undefined as localized rather than removed, the apophatic-edge identification of Titan-on-Titan with the L6 Ground, and the agreement-with-Gödel reading (no formal reduction among Gödel/Tarski/Liar/0-over-0 claimed). The emblem 1 = 0 × ∞ is frame-register only, never [A]."
+  register: "[A] projective N/0=∞ for N≠0, path-dependent 0/0 and analytic ∞/∞ limit forms, and the incompatibility of total division + absorption + unrestricted quotient recovery; [S/I] selected Titan roles and category-correction heuristic; [I] apophatic and Gödel family resemblances. Ordinary 0 and 1 remain operands. The emblem 1=0×∞ is declared symbolic notation, never [A]."
   canonical_phrase: "Division by Zero as Category-Correction"
 ---
 
@@ -20,35 +20,68 @@ rosetta:
 
 > **Tiering.** Every claim carries an evidence tier — `[A]` elementary mathematics, `[S]` framework-internal structure, `[I]` interpretive reading, `[C]` conjecture — and is never silently upgraded. The mathematics here is old and elementary (the projective line, wheel theory, the indeterminate forms, Gödel's second theorem); the framework's contribution is the *reading* — that the undefined is not eliminated but **localized** at the boundary, and that incompleteness is that same boundary in metamathematical dress.
 
+> **[金] Kintsugi seam (2026-07-19).** The earlier paper treated ordinary `0`
+> and `1` as if they ceased to be field elements whenever the Titan glyphs were
+> invoked, and it overstated the relation between a chosen value for `0/0` and
+> differentiation. The repair keeps both halves. In a field, `0` and `1` are
+> ordinary operands with special identity properties, and division by `0` is
+> undefined because `0` has no multiplicative inverse. On `P¹(K)`, `[N:0]=[1:0]`
+> for `N!=0` is a genuine projective extension `[A]`; totalizing division really
+> does require altered axioms `[A]`. Calling selected tokens `{0,1,∞}` Titan
+> frames and reading the remaining boundary apophatically is `[S/I]`, not the
+> mathematical explanation forced by the field.
+
 ---
 
 ## Abstract
 
-The schoolroom verdict that `N ÷ 0` is "undefined" is true at the level of the real field and misleading at the level of *why*. We argue that the prohibition is a **category error**: it arises only when the three boundary-frames `{0, 1, ∞}` — the additive identity, the multiplicative identity, and the projective point — are mistaken for ordinary *operands* drawn from inside the field, when in fact they are the frames that *define* the field's operations. `[I]` Read as frames, the operation re-categorises. On the projective line `ℂP¹` (the Riemann sphere) the map `N ÷ 0 = ∞` for `N ≠ 0` is well-defined and standard `[A]`; its rigorous algebraic cousin is **wheel theory** (J. Carlström, *Wheels — On Division by Zero*), which makes division *total* — but only by paying a structural price, weakening the ring axioms so that, for instance, `0 · x ≠ 0` in general `[A]`. Crucially, the correction does **not remove** the undefined; it **localizes** it. Two operations stay genuinely indeterminate *by design* — `0 / 0` and `∞ / ∞` — and we show this indeterminacy is **load-bearing**: a derivative is a *path-resolved* `0/0`, and any global assignment `0/0 = c` would destroy differentiation `[A]`. These pole-on-pole forms are **Titan-on-Titan**: the place where the lens correctly reports it does not reach — the apophatic edge, the framework's L6 Ground `[I]`. We then read **Gödel's second incompleteness theorem** as the *same* edge in metamathematical dress: a system of sufficient power cannot prove its own consistency from within — it cannot possess its own Ground — exactly as the projective chart cannot evaluate `∞ / ∞` from inside the field. **The framework agrees with Gödel; it does not escape, resolve, or complete him.** `[I]` Finally we fence the emblem `1 = 0 × ∞`: it is licensed *only* in the frame register, by the frames-not-operands move, and is never field arithmetic, where `0 · ∞` remains the indeterminate form. The undefined, in short, is not eliminated. It is *localized, scoped, and honoured.*
+In a field, `N/0` is undefined because division requires a multiplicative
+inverse and `0` has none. A different structure can extend that operation. On
+the projective line `ℂP¹`, `[N:0]=[1:0]=∞` for `N≠0` is standard `[A]`;
+wheel theory totalizes division by changing familiar algebraic laws `[A]`.
+Neither move assigns a path-independent analytic value to the limit forms
+`0/0`, `∞/∞`, or `0·∞`. The framework reads this relocation of undefinedness as
+**category-correction** `[I]` and uses the pole-on-pole forms as an apophatic
+analogy `[I]`. Gödel's second theorem is only a family resemblance, not a
+reduction. The emblem `1=0×∞` stays quarantined as `[S/I]` symbolic notation;
+it is never field arithmetic or the value of a binary product.
 
 **Keywords:** division by zero; projective line; Riemann sphere; wheel theory; indeterminate forms; Gödel incompleteness; apophatic ground; category-correction; evidence tiers.
 
 ---
 
-## 1. The "paradox" of `N ÷ 0` is a category error `[I]`
+## 1. Category-correction as an interpretive diagnosis `[I]`
 
-Division by zero is taught as a wall: *you may not.* But a wall with no reason behind it breeds paradox-mongering — the schoolboy "proof" that `1 = 2`, the cancellation that smuggles a hidden `÷0`. The framework's claim is narrower and sharper than the wall, and it is *interpretive*: **the prohibition is not a fact about a forbidden number; it is a symptom of a category mistake about what kind of object `0` is.** `[I]`
+Division by zero is not an unexplained taboo. In a field, if `x` were an
+inverse of `0`, then `0x=1`; but absorption gives `0x=0`, forcing `0=1` and a
+trivial structure. The field therefore has no such inverse. `[A]`
 
-Here is the mistake, stated precisely. The expression `N ÷ 0` reads `0` as an *operand* — a value drawn from inside the field, to be divided into. But `0` is not, in the relevant sense, an ordinary value; it is the **additive identity**, the frame *from which* every magnitude is measured. To divide by it is to ask the field to use one of its own defining frames as raw material — to ask a ruler to be one of the lengths it measures. The expression is not *false*; it is *mis-typed*. `[S]` The "paradox" is manufactured at exactly the moment a frame is fed in where an operand is expected (Trinity canon §1, §3). This is the diagnostic posture the framework takes toward every perennial paradox: the resolution of a genuine paradox is never a new value or a clever trick — it is a **re-categorisation**, the recognition that two operations of different type were forced into one slot. `[S]` (The corpus's companion dissolution, the Liar, makes the same move on the semantic side: see §6.)
+`0` remains an ordinary field element and a legitimate operand for addition and
+multiplication. Its special role as additive identity does not remove it from
+the field. The framework's narrower `[I]` diagnosis is that some apparent
+paradoxes mix **different extensions of division** or mix a symbolic Titan
+token with an arithmetic operand. That is a useful type check, not the field's
+unique explanation.
 
 The correction, then, is not to permit the forbidden division. It is to ask the prior question — *what frame are we standing in?* — and let the operation re-type accordingly. The next section names the three frames; §3 carries out the re-typing.
 
 ---
 
-## 2. The three frames define the operations — they are not operands `[S/I]`
+## 2. Selected Titan roles and ordinary operands `[S/I]`
 
-The framework's foundational move (Trinity canon §1) is to deny that `{0, 1, ∞}` are elements *drawn from* the number field. They are the three **boundary-frames** that bound it and give its operations meaning: `[S/I]`
+The framework selects `{0,1,∞}` as three **Titan roles** in a projective
+normalization. This symbolic use never changes the arithmetic types: `[S/I]`
 
-- **`0` — the additive identity, and the apophatic Ground read as a number-frame (`κ = 0`, the Bindu).** Add it and nothing changes; it is the origin, what every magnitude is measured *from*. In the framework's ontology it is also the number-shadow of the Ground that "cannot be said" — the place a positive description points to but does not capture (ontology, §1). `[S]` for the additive-identity fact; `[I]` for the Ground reading.
-- **`1` — the multiplicative identity, finity.** Multiply by it and nothing changes; it is the self-dual unit, the scale at which a thing is itself — the fixed centre of the reciprocal, treated rigorously in Paper I. It is the frame against which *finitude* is read. `[S]`
+- **`0` — an ordinary field element and the unique additive identity.** Its
+  Bindu/Ground reading is `[I]`.
+- **`1` — an ordinary field element and the unique multiplicative identity.**
+  It is also the positive fixed point of reciprocal inversion; "finity" is the
+  framework's name `[S/I]`.
 - **`∞` — the projective point at infinity.** Not the largest number (there is none), but the single point that *completes* the field into a sphere — the horizon every unbounded trajectory arrives at. `[A]` for the completion fact; `[S]` for naming it a frame.
 
-The discipline is exact and it is the whole paper in one line: **they define the operations; they are not operands within the field.** `[S]` A frame can be *approached* by operands (a sequence can tend to `0`, to `1`, to `∞`) and it can *receive* operands (every measurement is taken relative to `0`); what it cannot do is *behave* as one without changing register. The *mathematics* — identities and a point at infinity — is elementary and old `[A]`. The *reading* of the three as transcendental boundary-frames prior to the operations is the framework's structural move `[S]`, and the wager that this is *why* division by zero looks paradoxical is interpretive `[I]`. Nothing here is a new theorem; it is a new *type discipline* laid over old theorems.
+The discipline is: **do not let a symbolic role silently alter an arithmetic
+type.** The identities and the projective point are elementary `[A]`; choosing
+the three as a memorable frame is `[S]`; any apophatic ontology is `[I]`.
 
 ---
 
@@ -65,7 +98,11 @@ Two rigorous cousins corroborate that this is real mathematics and not a verbal 
 1. **The real and complex projective line.** The one-point projective completion is the standard object on which inversion is total and the point at infinity is genuine. Two cases must not be conflated: the **complex** projective line `ℂP¹ ≅ S²` is the Riemann *sphere* (real dimension 2), while the **real** projective line `ℝP¹ ≅ S¹` is a *circle*. "Sphere" language belongs to the complex case; we use it throughout for `ℂP¹`, and say "circle" for `ℝP¹`. Either way it is the same compactification that underwrites Paper I's "egg of infinity."
 2. **Wheel theory (J. Carlström, *Wheels — On Division by Zero*).** A *wheel* is an algebraic structure that makes division a **total** operation — defined for *every* pair of elements, including division by `0` — by adjoining a top element (here written `∞`) and a distinguished element `⊥ = 0/0`, and adjusting the axioms accordingly. Wheel theory is the honest, fully formal demonstration that one *can* totalise division — and, just as importantly, it shows exactly **what it costs** (§4).
 
-The framework's contribution at this section is *not* the mathematics — which is Riemann's, Ahlfors's, and Carlström's — but the **reading of the move as category-correction**: `[S]` the singularity at `0` was never a defect in arithmetic; it was the field reporting, correctly, that an operand-slot had been handed a frame, and the projective chart is the register in which the frame is read *as* a frame and the operation completes.
+The framework's contribution here is not the mathematics — which is Riemann's,
+Ahlfors's, and Carlström's — but the **category-correction heuristic** `[I]`:
+before declaring a paradox, name whether the operation lives in a field, a
+projective completion, a wheel, or a symbolic frame. The projective value does
+not retroactively make division by zero a field operation.
 
 ---
 
@@ -80,11 +117,18 @@ These are **Titan-on-Titan**: a frame divided by a frame. They remain genuinely 
 
 A register caution, since the paper's own thesis is register-discipline: `0/0` is a genuine *field-operations* limit form (a quotient of two field elements both tending to `0`), whereas `∞` is a single adjoined point, **not** a field element, so `∞/∞` is not a field-operation in the same sense. The phrase `∞/∞` does double duty, and we keep the two readings apart: (a) the **analytic** indeterminate form — a quotient of two *unbounded sequences* whose value is fixed by their competing rates (the L'Hôpital case below); and (b) the **projective** frame-on-frame symbol — the point `∞` "divided by" itself, which is not a limit of field operations at all but the Titan-on-Titan configuration §5 reads as the apophatic edge. Both are indeterminate; they are indeterminate for different reasons, and we never let the analytic statement masquerade as the projective one or vice versa. `[A]` for (a); `[S/I]` for the reading of (b).
 
-**`0/0` is load-bearing — it carries the calculus.** `[A]` This is the decisive technical reason the indeterminacy must be *kept*. A derivative is, by definition, a `0/0` form resolved *by a path*:
+**`0/0` is a recurring limit form in calculus.** `[A]` A derivative often has
+numerator and denominator tending to zero:
 
 > `f'(a) = lim_{h → 0} ( f(a + h) − f(a) ) / h`,
 
-where numerator and denominator *both* tend to `0`. The limit's value depends on *which function* `f` and *which point* `a` supply the path of approach: for `f(x) = x²` at `a = 3` it is `6`; for `f(x) = sin x` at `a = 0` it is `1`; for `f(x) = x` it is `1` everywhere. The same syntactic form `0/0` resolves to *different numbers* along different paths — that is precisely what makes differentiation possible. **If one assigned `0/0` a single global value `c`, every derivative would collapse to `c` and the differential calculus would be destroyed.** `[A]` The indeterminacy of `0/0` is therefore not an embarrassment the framework must explain away; it is the open slot that the limit fills, the reason the calculus has content. The framework *protects* it. The same holds for `∞/∞`: L'Hôpital's rule exists precisely because `∞/∞` (like `0/0`) is a form whose value is set by the competing rates, not by the symbols.
+where numerator and denominator both tend to `0`. Different functions and
+paths yield different limits. This proves that the **limit form** `0/0` has no
+path-independent value. Assigning a distinguished value to `0/0` in a wheel or
+other totalized algebra does **not** by itself destroy calculus: derivatives
+are still defined by limits in their chosen topology. What fails is the claim
+that one algebraic assignment can replace all of those limits. The same
+discipline applies to the analytic form `∞/∞`.
 
 **Totality has a price — wheel theory makes this exact.** `[A]` Carlström's wheels do achieve a structure in which division is total, but they purchase totality by **weakening the ring axioms.** In a wheel one does *not* have the familiar identities unconditionally; in particular the absorbing law holds only conditionally — it fails *for some elements*:
 
@@ -104,7 +148,11 @@ This is the framework's **apophatic edge — the L6 Ground.** `[I]` The ontology
 
 This must be held at the right tier. The mathematical fact — that `0/0` and `∞/∞` are indeterminate forms — is `[A]` and ordinary. The *identification* of that indeterminacy with the framework's apophatic Ground is `[I]`: an interpretive reading, illuminating, never a proof, and emphatically **a lens, never the Ground itself**. The point is not that mathematics *proves* an apophatic Ground; it is that the field, asked to evaluate frame-on-frame, produces precisely the structure — a boundary it can approach but not occupy — that the framework's ontology already names. The map's blank region and the territory's edge fall on the same line. The framework does not paint over the blank region; it *honours* it as the edge where saying stops.
 
-**The rule in full: no Titan is an operand — and the diagonal completes.** `[S]` The single discipline beneath §§1–7 is not about zero; it is that **a boundary-frame is never an operand.** The sharpest test is the **diagonal — a Titan divided by itself**, where there is no operand to break the symmetry, and the rule forbids all three: `0/0`, `∞/∞`, **and `1/1`**. The corpus had stated this for the two poles and left the equator tacit; finity is a Titan, so `1/1` completes it and the rule is now symmetric across all three. But the diagonal is **not uniform**, and the asymmetry is exact and load-bearing. The **poles** `0, ∞` are forbidden *twice over*: `0/0` and `∞/∞` are category-forbidden **and** genuinely **indeterminate** as analytic forms — their operand-shadow has no value (`0/0` the derivative slot of §4, `∞/∞` the L'Hôpital form, `∞ − ∞` likewise). `[A]` The **equator** `1` is forbidden *once*: `1/1` is a category error in the frame register, **but its operand-shadow is determinate** — drop to the number register and `1/1 = 1`, the identity. `[A]` It is **not** an indeterminate form, and must never be called one. So even the forbidden-ness carries the geometry: the two poles answer their own division with the apophatic open; the equator answers its own division by **returning itself** — the self-dual centre giving back the unit (Paper I: inversion fixes `1`; `1` is its own reciprocal). `[S/I]` And the **off-diagonal** Titan-on-Titan, `0 × ∞`, is exactly the configuration §7 reads in the frame register as the emblem `1 = 0 × ∞`. The three rulings of this paper — the `÷0` gain, the kept indeterminacy, the fenced emblem — are therefore **one rule wearing three coats: no Titan is an operand.** `1/1` is the coat that proves the rule is symmetric. `[S]`
+**The rule in full: symbolic role does not erase arithmetic type.** `[S]`
+Ordinary `1/1=1`; ordinary `0/0` is undefined in a field; and a projective
+symbol `∞/∞` is not a field quotient. Calling the three tokens Titans adds no
+new diagonal law. The apophatic family resemblance survives at `[I]`, while
+the exact outcomes remain those of the named mathematical structure.
 
 ---
 
@@ -124,9 +172,13 @@ So: `N ÷ 0 = ∞` is the *gain* (a frame read as a frame completes the operatio
 
 ## 7. The emblem fenced: `1 = 0 × ∞` is frame-register only `[S/I]`
 
-Paper I closed by naming the unit a third reification, *finity*, and writing the emblem `1 = 0 × ∞`. Paper II is the paper that *licenses* that emblem — and the licence is exactly the frames-not-operands move of §2, applied to multiplication. `[S/I]`
+Paper I closed by naming the unit *finity* and writing the emblem
+`1=0×∞`. Paper II does not mathematically license that equality; it states the
+quarantine under which the framework may retain it as a selected symbol.
 
-The licence, stated precisely. In the number field, `0 · ∞` is the standard **indeterminate form** — the multiplicative twin of `0/0` and `∞/∞`, and like them genuinely indeterminate (Suda himself labels it 不定形, *indeterminate*). There is no theorem `0 × ∞ = 1`, and this paper asserts none. `[A]` The identity holds **only in the frame register** — the algebra of the three boundary-frames, not of operands within the field. Read frame-on-frame: when multiplication, the unit's *own* operation, is applied across the unit's *own* two boundary-frames `0` and `∞`, it returns the unit's own identity element. This is a structural fact about the **frame's algebra** — no more subject to the field's indeterminacy than a coordinate grid is subject to the physics it charts. `[S]` It is written in glyphs as the Zero-Sum Resolution Equation,
+In asymptotic analysis `0·∞` is indeterminate. There is no theorem
+`0×∞=1`. The framework **declares** a different symbolic composition on
+selected tokens and writes it as:
 
 > `⊙ = • × ○`,   i.e.   `1 = 0 × ∞`,
 
@@ -134,9 +186,13 @@ and the fence is absolute:
 
 - **Always mark the register-change.** Write `1 = 0 × ∞` *as the ZSRE / as a geometric emblem on `S²`*, never as bare field arithmetic. `[S]`
 - **Never present it as `[A]`** or as a proven field theorem. In the field, `0 · ∞` is the indeterminate form — say so, every time. `[A]`
-- **The emblem rides on the very indeterminacy §4–§6 protect.** That `0 · ∞` is indeterminate *in the field* is precisely what frees the frame register to read it as `1` *without contradiction*: the two registers do not collide, because the frame algebra is a different object from the field arithmetic. To collapse them — to write `0 · ∞ = 1` as field arithmetic — would be the same category error as §1, and would *break* the honest scope of §4. `[S/I]`
+- **Indeterminacy is not evidence for the emblem.** The symbolic composition is
+  a modeling convention with its own type; it earns use through explanatory or
+  operational success, not because field arithmetic leaves a blank.
 
-The emblem is thus not in tension with the rest of the paper; it is its mirror image. §4 keeps the undefined honestly indeterminate in the field; §7 reads the *same* frame-on-frame configuration, in the frame register, as the unit's self-constitution. The undefined localized (the field) and the unit emblematised (the frame) are one structure seen from its two legitimate registers. `[I]`
+The emblem is compatible with the mathematics only because it is explicitly a
+different typed operation. It is not a second mathematical value for the same
+binary product and does not constitute the unit.
 
 ---
 
@@ -150,25 +206,41 @@ We can state the one *provable* core of the paper as a theorem, with a short pro
 
 (ii) **Kept edge.** The form `0/0` admits **no** value in `K` consistent with continuity of the field operations: any assignment `0/0 = c` is contradicted by the existence of two sequences `aₙ, bₙ → 0` with `aₙ/bₙ → c₁ ≠ c₂` (e.g. `aₙ = 1/n, bₙ = 2/n` gives `1/2`; `aₙ = 1/n², bₙ = 1/n` gives `0`). The companion form `∞/∞` is, in the **analytic register**, the corresponding indeterminate form (its value set by competing rates, resolved by L'Hôpital — see §4); this is distinct from the *projective* symbol `∞/∞` (frame-on-frame, §4–§5), which is not a field-operations limit at all. Either way the indeterminacy is *forced*, not chosen.
 
-(iii) **Conservation (price of totality).** Any structure `W ⊇ K` in which division is **total** (defined for all pairs, including `÷0`) cannot satisfy the field axioms unrestrictedly: in particular the absorbing law `0 · x = 0` must fail for some `x` (the wheel construction realises this with `0 · ∞ = ⊥` and a propagating `⊥ = 0/0`). Totality and the full field axioms are jointly unavailable.
+(iii) **Price of unrestricted quotient recovery.** A nontrivial structure
+`W⊇K` cannot have total division, ordinary absorption `0·x=0`, **and** the
+unrestricted law `(a/b)·b=a` for every denominator including `b=0`. Wheels and
+other totalizations avoid collapse by weakening or restricting familiar laws.
+Merely assigning a conventional value to `/0` does not by itself force
+absorption to fail; the incompatible package must be stated in full.
 
 *Proof.* (i) For `N ≠ 0`, projective equality gives `[N : 0] = [1 : 0] = ∞`, so the value is the **same** point `∞` for every nonzero `N` (the map `N ↦ N/0` is constant on `K \ {0}`); the inversion `z ↦ 1/z` is the Möbius transformation `[a : b] ↦ [b : a]`, which swaps `[1:0]` and `[0:1]`, i.e. exchanges `∞ ↔ 0`. The *algebraic* statement — a single well-defined projective value `[1:0]` — holds over any field `K`. The *topological* clause (that the inversion is a **homeomorphism of the sphere**) is asserted only for `K ∈ {ℝ, ℂ}`, where `P¹(K)` carries its standard topology (`P¹(ℂ) ≅ S²`, the 2-sphere; `P¹(ℝ) ≅ S¹`, the circle); over a general field `P¹(K)` is a projective set with no canonical sphere topology, and only the algebraic clause is claimed.
 
 (ii) Standard non-existence of the limit `0/0`: the two displayed sequences give distinct quotient-limits, so no single value `c` extends `÷` continuously over `0/0`. The reciprocal sequences `1/aₙ, 1/bₙ → ∞` give the corresponding statement for `∞/∞` *as an analytic indeterminate form* (competing rates); this is the calculus register, distinct from the projective frame-symbol `∞/∞` of §4, and is the sense in which (ii) is meant.
 
-(iii) Suppose division is **total** on a structure `W ⊇ K` and that the full field axioms — in particular the absorbing law `0 · x = 0` for *all* `x` — hold unrestrictedly on `W`. Then for any `a ∈ W`, totality supplies the element `a/0`, and absorption gives `a = (a/0) · 0 = 0`. Since `a` was arbitrary, `W = {0}` collapses to a single point (the trivial ring). Hence no nontrivial structure can have *both* total division and unrestricted absorption; any nontrivial totalisation must give up `0 · x = 0` for some `x`. This is exactly why fields forbid `÷0`, and is the structural reason wheel theory weakens absorption (realising the price concretely with `0 · ∞ = ⊥` and a propagating `⊥ = 0/0`). ∎
+(iii) Suppose all three properties hold. For any `a∈W`, totality supplies
+`a/0`; unrestricted quotient recovery gives `(a/0)·0=a`; absorption gives
+`(a/0)·0=0`; hence `a=0`. The structure is trivial. Therefore any nontrivial
+totalization must restrict at least one member of that package. ∎
 
-**The perimeter of the theorem.** The theorem is `[A]` and says exactly three things: a point is *gained*, an edge is *forced*, and totality has a *price*. It does **not** say — and the framework does not claim — that the undefined is removed (it is conserved, by (ii)–(iii)); that `0/0` or `∞/∞` has a value (it does not, by (ii)); that `0 · ∞ = 1` in any field (the emblem of §7 is frame-register, never `[A]`); or that any of this bears on Gödel's theorems as mathematics (§6 is an interpretive *reading* of an analogy, tiered `[I]`, and it *agrees with* Gödel rather than touching the theorems). The interpretive claims of §§1, 5, 6, 7 sit *outside* this perimeter and are tiered accordingly. The theorem is the small, true, killable core; the rest is the lens laid over it.
+**The perimeter of the theorem.** The theorem says: a projective point can be
+gained; analytic limit forms remain path-dependent; and the explicitly named
+three-law package collapses a nontrivial totalization. It does not prohibit all
+conventional `/0` assignments, prove an apophatic ontology, or license the
+emblem. The small mathematical core survives independently of every analogy.
 
 ---
 
 ## 9. Tiers, kill criteria, and relation to prior work
 
-**Tiers.** §3 (the projective `N÷0 = ∞`, the Möbius pole-swap, the wheel-theory cousin) and §4 (`0/0`, `∞/∞` genuinely indeterminate; the derivative as a path-resolved `0/0`; wheel totality at the cost of absorption `0·x = 0` failing for some `x`) and §8 (the theorem) are `[A]` — standard projective geometry, elementary limits, and published wheel theory. §1 (the "paradox" as category error), §2 (frames-not-operands), and the *naming* of the move *category-correction* are `[S/I]`. §5 (Titan-on-Titan = the apophatic L6 Ground), §6 (Gödel II as the same edge; the framework *agrees with* Gödel), and §7's ontological weight are `[I]`. The emblem `1 = 0 × ∞` is `[S/I]` frame-register, **never `[A]`.**
+**Tiers.** §3's projective extension, §4's path-dependent limit facts, and
+§8's explicitly conditioned theorem are `[A]`. Category-correction and the
+Titan frame are `[S/I]`; the apophatic and Gödel correspondences are `[I]`.
+The emblem `1=0×∞` is declared `[S/I]` notation, never `[A]`.
 
 **Kill criteria.**
 (a) Exhibit a value `c` such that `0/0 = c` or `∞/∞ = c` holds consistently with the continuity of the field operations — i.e. defeat Theorem (ii). This would falsify the paper's central scope claim. *(It cannot be done by §8(ii); the claim is stated so it could in principle fail.)*
-(b) Exhibit a totalisation of division that retains the *full, unrestricted* field axioms (including `0 · x = 0` for all `x`) — i.e. defeat Theorem (iii) and beat wheel theory's price. This would refute "totality has a price."
+(b) Exhibit a nontrivial totalisation retaining absorption and unrestricted
+quotient recovery for `b=0` — i.e. defeat Theorem (iii).
 (c) **The hard kill, by the framework's own rule:** any step in this paper that makes `0 · ∞` *literally equal `1` in the field*, or that claims `0/0` or `∞/∞` *resolved*, falsifies the paper's discipline outright. If the emblem ever escapes the frame register into field arithmetic, the paper is wrong by its own standard.
 (d) Show that the framework's "incompleteness reading" *requires* Gödel to be false, escaped, or completed — rather than agreed with. The paper claims agreement; if the structure secretly needs escape, §6 is dishonest and falls.
 (e) Produce a pre-2024 source that performs the *constructive* `1 = 0 × ∞` (not the orthodox indeterminate `0 · ∞`) and the frames-not-operands category-correction of `÷0` as a named move — moving the *reading* from novel to prior.
@@ -179,9 +251,17 @@ We can state the one *provable* core of the paper as a theorem, with a short pro
 
 ## 10. Conclusion
 
-Division by zero is not a wall and not a trick. It is a **type error made visible** — the field reporting, with perfect accuracy, that one of its own defining frames has been handed into an operand-slot. Read the frame *as* a frame, on the projective line, and the operation completes: `N ÷ 0 = ∞` for `N ≠ 0`, cleanly, standardly, with wheel theory as its rigorous formal cousin. But the correction does not abolish the undefined; it **conserves** it. `0/0` and `∞/∞` stay genuinely indeterminate *by design*, and that indeterminacy is load-bearing — it is the open slot the derivative fills, the reason the calculus has content; assigning it a value would destroy differentiation. The price of total division, wheel theory shows exactly, is the ordinary axioms (absorption `0 · x = 0` must fail for some `x`). The undefined is never erased; it is only ever *relocated*, and the honest move is to say where it now lives.
+In a field, division by zero is undefined because `0` has no multiplicative
+inverse. A projective completion may assign every `[N:0]`, `N≠0`, to one point
+`∞`; a wheel may totalize division with altered laws. Analytic `0/0`, `∞/∞`,
+and `0·∞` limit forms remain path-dependent. These are distinct structures, not
+competing answers to one untyped expression. The durable method is to name the
+structure before evaluating the expression.
 
-Where it lives is the **apophatic edge** — Titan-on-Titan, frame divided by frame, the place the lens correctly reports it does not reach, the L6 Ground that the framework's own ontology insists the sphere points to but never captures. And that same edge, one register up, is **Gödel's**: a system of sufficient power cannot prove its own consistency from within, cannot possess its own Ground. The framework **agrees with Gödel**. It names the edge; it does not cross it; there is no crossing it. The emblem `1 = 0 × ∞`, finally, is licensed by the very same frames-not-operands move — and fenced by it: legitimate in the frame register, where multiplication read across the unit's two boundaries returns the unit; never field arithmetic, where `0 · ∞` is and remains the indeterminate form.
+The framework may read the remaining boundary as an **apophatic edge** `[I]`
+and compare it with Gödelian limits `[I]`; neither analogy transfers proof. The
+emblem `1=0×∞` remains a selected, typed symbol and can be removed without
+changing the projective or limit results.
 
 The undefined is not eliminated. It is **localized, scoped, and honoured** — a true result that knows exactly how large it is, and exactly where it stops.
 

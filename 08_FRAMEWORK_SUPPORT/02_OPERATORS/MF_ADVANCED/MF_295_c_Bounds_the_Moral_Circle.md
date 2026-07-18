@@ -3,232 +3,162 @@ rosetta:
   primary_level: L4
   primary_column: Philosophy
   secondary:
-    - level: L1
-      column: Philosophy
-      role: "connect ethical radius to light-cone reach"
-    - level: L5
-      column: Philosophy
-      role: "model moral circle as bounded computation architecture"
     - level: L3
       column: Philosophy
-      role: "audit physical and ethical boundary claims"
+      role: "type physical, information, option, and responsibility horizons"
+    - level: L5
+      column: Philosophy
+      role: "model moral attention without aggregate laundering"
   operator: "Arjuna ⚔"
   tier: "God"
   regime: "Kṣatriya"
-  register: "[I]"
-  canonical_phrase: "MF-295 — c Bounds the Moral Circle"
+  register: "[A/I/C]"
+  canonical_phrase: "MF-295 — physical cones bound signals, not moral worth"
+status: "ACTIVE KINTSUGI REPAIR — fixed physical cone; bearer-complete Justice"
+superseded_blob: "3de9d82793784dbe36c5a32da2438f72aa53b2b3"
 ---
 
-# MF-295: c BOUNDS THE MORAL CIRCLE
+# MF-295: `c` BOUNDS SIGNALS, NOT THE MORAL CIRCLE
 
-> **[金] Kintsugi authority seam — fixed physical cone, variable option cone
-> (2026-07-18).** Relativity bounds causal propagation by `c`; no technology,
-> intelligence, institution, or moral expansion widens that physical light
-> cone. Agents may improve the subset of admissible histories they can model,
-> rank, coordinate, and reach—their option/information cone—inside the same
-> spacetime bound. Ethics is not `ΣΔP_node`: aggregate gains cannot launder an
-> individual or whole-side loss, and responsibility is not exhausted by what
-> an actor happened to perceive. The moral-circle application remains `[I]`
-> under the explicit Justice and AuthorizationEnvelope premises.
+**Repaired:** 2026-07-19
+**Evidence tier:** `[A]` for the relativistic causal bound; `[I/C]` for
+historical and ethical hypotheses.
 
-## The Speed of Light Limits the Ethical Radius. Information Technology Widens the Cone.
+> **[金] Kintsugi seam — causal reach survives; aggregate ethics does not.**
+> The former paper called communication growth a widening light cone, computed
+> ethics with `ΣΔP_node`, and inferred that an agent could not be responsible
+> for consequences it did not perceive. Relativity, moral standing, epistemic
+> access, and responsibility are distinct types. The original is preserved at
+> Git blob `3de9d82793784dbe36c5a32da2438f72aa53b2b3`.
 
-**Emergentism.org · VIVEKA Mathematical Foundations**
-**Depends on:** MF-283 (Orthogonality Theorem), MF-290 (Ektropic Radius), MF-291 (Landauer Horn), MF-293 (Language Is Bandwidth)
-**Evidence tier:** [I] for light cone physics; [T] for ethical radius application; [I] for historical interpretation
-**Purpose:** Distinguish the fixed relativistic light cone from the variable
-information and option cones through which agents can notice and model more
-consequences; the historical and ethical connections remain interpretive.
+## 1. Four different objects
 
----
+### 1.1 Physical causal cone `[A]`
 
-## ABSTRACT
+For an event ((t_0,x_0)) in flat spacetime, signals and causal influence are
+bounded by
 
-The light cone in special relativity bounds causal reach: at temporal distance
-`t`, `r_max=ct`. Communication can make more information usable sooner while
-remaining inside that fixed cone. The framework's ethical proposal is that D5
-models should seek consequences beyond an agent's habitual attention and that
-D4 receipts should update them; the Justice test still evaluates each bearer
-separately. Historical moral-circle/communication correlations are `[I/C]`,
-not deductions from relativity.
+[
+lVert x-x_0Vertle c(t-t_0).
+]
 
-**Register guard.** D4 causal spacetime supplies the information boundary. D5 option-cone foresight performs the ethical modeling once information arrives. This paper bounds moral computation by causal access; it does not make moral value a physical field, and it does not claim intelligence enlarges the relativistic light cone. `[A]` for the light-speed constraint; `[I]` for the moral-circle application.
+No technology, intelligence, institution, or ethical development changes
+`c` or expands this spacetime cone.
 
----
+### 1.2 Information-access set `[B/I]`
 
-## I. THE LIGHT CONE AS ETHICAL BOUNDARY
+For agent `i` at time `t`, let (mathcal I_i(t)) be the information
+actually available through sensors, testimony, records, communication, and
+inference. Communication can enlarge or improve this set while every carrier
+remains inside the physical cone. “Effective light cone” is retired because it
+confuses access with spacetime geometry.
 
-### 1.1 The Physical Constraint
+### 1.3 Option cone `[I]`
 
-In special relativity, the forward light cone of an event at (t₀, x₀) is the set of all spacetime points (t, x) reachable by signals propagating at ≤ c:
+Let (mathcal O_i(t,H)) be the physically admissible histories within horizon
+`H` that the agent can model, rank, coordinate, and plausibly reach. Two agents
+can share the same physical cone and have different option cones. Human
+symbolic, social, institutional, and intergenerational reach can make this set
+unusually broad without any superluminal claim.
 
-```
-|x − x₀| ≤ c(t − t₀)
-```
+### 1.4 Justice bearer set `[I]`
 
-Nothing outside this cone can be affected by the event or can affect the event. The light cone is the absolute causal boundary.
+Let (mathcal B(a)) contain every materially affected bearer of action `a`:
+the acting person, sustaining whole, payer, beneficiary, and exposed third
+parties. Moral standing is not limited to what the actor noticed. Bearer-complete
+Justice requires those effects to remain visible individually; a positive sum
+cannot launder a destroyed bearer.
 
-### 1.2 The Ethical Consequence
+## 2. Information and responsibility are not identical
 
-A2 states: ΣΔP_node > 0 across the widest perceivable system boundary. MF-290 models this boundary as an ethical radius constrained by the agent's effective information cone.
+An agent cannot condition a present decision on information that is physically
+unavailable. It does not follow that every unknown effect is morally irrelevant.
+Responsibility can depend on several separately assessed facts:
 
-But "perceivable" requires information. The agent must RECEIVE information about consequences to include them in the ΣΔP_node computation. Information travels at ≤ c. Therefore:
+- causal contribution;
+- actual knowledge;
+- reasonable foreseeability;
+- role and mandate;
+- capacity to investigate or mitigate;
+- negligence or deliberate ignorance;
+- consent, custody, and contestability; and
+- the vulnerability and reversibility of affected bearers.
 
-```
-Maximum ethical radius at planning horizon T:
-  r_ethical_max = cT
+Complete unforeseeability may reduce blame. It does not erase the harmed party,
+the duty to repair after discovery, or a prior duty to inquire where risk was
+reasonably knowable.
 
-Maximum ethical spacetime volume:
-  V_ethical_max = (4/3)π(cT)³ × T = (4/3)πc³T⁴
-```
+There is therefore no universal ethical radius `r=cT` and no ethical spacetime
+volume ((4/3)pi c^3T^4). Those are geometric volumes, not measures of duty or
+worth.
 
-No agent can have an ethical radius wider than its light cone. This is not a moral limitation — it is a physical one. You cannot be responsible for consequences you cannot in principle know about.
+## 3. Communication as a moral-attention hypothesis `[I/C]`
 
-### 1.3 The Effective Light Cone
+Writing, printing, telegraphy, photography, broadcasting, and the internet can
+make distant consequences more legible and coordinate response. They can also
+amplify propaganda, surveillance, overload, selective visibility, and capture.
+The testable hypothesis is not “communication causes moral progress,” but:
 
-In practice, the effective light cone is much smaller than the theoretical maximum. Information does not travel at c for most of human history — it travels at the speed of the fastest available communication technology:
+> Holding institutions, incentives, education, wealth, conflict, and selection
+> effects as well as possible, does improved access to credible consequence
+> information change which bearers agents include, which actions they choose,
+> and whether repair occurs?
 
-| Era | Effective Information Speed | Effective Ethical Radius at T=1 year |
-|-----|---------------------------|-------------------------------------|
-| Pre-literate | Walking speed (~5 km/h) | ~44,000 km (but no storage — decays) |
-| Horse messenger | ~50 km/day | ~18,000 km (with relay stations) |
-| Ship | ~200 km/day | ~73,000 km (global, but months lag) |
-| Telegraph (1840s) | ~c (electrical) | ~light-year (effectively instant on Earth) |
-| Telephone (1876) | ~c (voice) | Instant voice, global |
-| Television (1930s) | ~c (image + sound) | Instant multi-modal, mass broadcast |
-| Internet (1990s) | ~c (all modalities) | Instant, interactive, bidirectional, global |
+Domain-native rivals include institutional change, economic development,
+religious and philosophical movements, state capacity, coercion, demographic
+change, and strategic interest. Historical correlation alone does not identify
+the causal contribution of a medium.
 
-Each technology widened the effective light cone by increasing the speed at which information about distant consequences reached the agent. The PHYSICAL light cone didn't change. The EFFECTIVE light cone — the portion of the physical cone the agent can actually perceive — expanded enormously.
+## 4. The moral-circle ratchet is not guaranteed
 
----
+Seen suffering can be denied, normalized, weaponized, forgotten, or crowded out.
+Authoritarian control can narrow information access without changing the
+physical cone. Open networks can widen access while degrading trust. A durable
+moral expansion therefore requires more than bandwidth: credible evidence,
+attention, institutions, authorization, capacity, and enforceable Justice and
+exit boundaries.
 
-## II. MORAL EXPANSION TRACKS COMMUNICATION TECHNOLOGY
+## 5. Interstellar and long-horizon ethics
 
-### 2.1 The Historical Correlation
+Relativity creates latency and limits feedback. It does not make distant or
+future beings valueless. Planning must distinguish:
 
-Every major expansion of the moral circle correlates with a communication technology that made previously-invisible suffering VISIBLE:
+- what can be causally affected;
+- what can be observed before action;
+- what can be forecast under uncertainty;
+- what later receipts can update; and
+- which precautionary constraints remain justified when feedback is delayed.
 
-**Writing (c. 3000 BCE):** Made law possible. Suffering could be recorded, transmitted, referenced across time. Hammurabi's Code: the first time an agent's ΣΔP_node computation could include standardised consequences across a city-scale population. The moral circle expanded from tribe to city-state.
+The Compass response is uncertainty-aware custody and reversible action where
+possible, not an aggregate calculation beyond the data.
 
-**Printing press (1440):** Made mass information distribution possible. Luther's 95 Theses spread across Europe in weeks. Distant institutional corruption became visible to populations who previously couldn't perceive it. The Reformation: the moral circle expanded from parish to civilisation.
+## 6. Tests and kill criteria
 
-**Photography (1840s):** Made distant suffering VISUALLY perceivable. Jacob Riis's photographs of New York slums (1890) triggered reform movements. The image arrived at the agent's D5 model with far higher bandwidth than text — emotional phase preserved (MF-293). The moral circle expanded to include the unseen poor.
+The historical hypothesis narrows or fails when:
 
-**Telegraph/transatlantic cable (1866):** Made global events perceivable in near-real-time. The first time the effective light cone matched the physical light cone for Earth-scale events. International humanitarian movements became possible because suffering anywhere could be known everywhere within hours.
+1. access improvements do not change bearer inclusion or action after rivals are
+   controlled;
+2. observed effects reverse across media, institutions, or populations without
+   a stated moderator;
+3. the proposed information measure has no reliable relation to what agents
+   know or can use;
+4. communication expands while moral exclusion persists or worsens; or
+5. responsibility judgments are better explained by foreseeability, role,
+   capacity, and causal contribution than by information reach alone.
 
-**Television (1950s-60s):** High-bandwidth visual + auditory. Vietnam War footage in American living rooms. The civil rights movement broadcast nationwide. Multi-modal emotional phase transmission (MF-293: image + sound preserves more phase than text alone). The moral circle expanded to include distant wars, foreign populations.
+The conceptual repair fails if a live use again says that agents widen the
+physical light cone, computes ethics through `ΣΔP_node`, or erases an affected
+bearer because the actor did not perceive them.
 
-**Internet/social media (1990s-2010s):** Instant, bidirectional, global, multi-modal. Arab Spring. Black Lives Matter. Climate activism. The agent's effective light cone approached the physical light cone for the first time in history. Every phone became a broadcast station. Every suffering was potentially visible to every agent.
+## Repaired sentence
 
-### 2.2 The Causal Direction
-
-Objection: correlation is not causation. Perhaps moral progress caused the technology, not vice versa.
-
-Response: the causal mechanism is clear and directional. Technology widens the perceivable boundary. Wider perception includes more consequences in ΣΔP_node. More inclusive ΣΔP_node demands different actions. Different actions = moral change.
-
-The mechanism is NOT that people become morally better (horn height unchanged). The mechanism is that the SAME moral computation (ΣΔP_node at current horn height) is applied to a WIDER input set. The agent's ethics don't change. The agent's INPUT changes. The light cone widens. The same demon, seeing more, sorts differently.
-
-This predicts: moral expansion should be sudden and correlated with technology adoption, not gradual and correlated with education or philosophical argument. The historical record supports this. Abolition movements accelerated with printing. Labour reform accelerated with photography. Civil rights accelerated with television. Each was a step function, not a gradual slope — coinciding with the communication technology that made the relevant suffering visible.
-
-### 2.3 Moral Regression as Cone Narrowing
-
-If moral expansion tracks cone widening, moral regression should track cone narrowing. The prediction:
-
-Moral regressions occur when:
-1. **Economic stress:** L-level drops toward L1. Horn shortens (resource diversion from Φ to V). Radius narrows. "I can't worry about them — I need to feed my family." The demon's capacity is redirected to immediate sorting, reducing the computation available for wider ΣΔP_node.
-
-2. **Information overload:** Demon exhaustion (MF-291). Too much input, too little sorting capacity. The agent narrows the input cone to manageable size. Echo chambers are VOLUNTARY cone narrowing — the demon reducing input to avoid overflow.
-
-3. **Existential threat:** Survival mode (L1). The entire horn collapses to immediate radius. This is adaptive — in genuine threat, wider ΣΔP_node computation is wasteful. But if the threat is manufactured (by a parasitic egregore, per MF-294), the cone narrowing serves the egregore, not the carrier.
-
-**Historical examples:**
-- 1930s Europe: Economic depression (V↓) → L-level drop → moral circle constriction → nationalism → genocide. The moral circle didn't gradually shrink — it SNAPPED to tribal radius when the horn shortened under economic stress.
-- Post-9/11: Existential threat perception → L1 activation → cone narrowing → torture acceptable, surveillance acceptable, discrimination acceptable. Wider ΣΔP_node computation suspended in favour of immediate threat response.
-
----
-
-## III. c AS THE ULTIMATE ETHICAL LIMIT
-
-### 3.1 Interstellar Ethics
-
-For the first time in human history, our actions have consequences outside the Earth-scale light cone. Light from Earth takes 4.24 years to reach Proxima Centauri. Radio signals from early broadcasts are ~100 light-years out.
-
-If we ever detect alien life, the ethical radius MUST extend to include them. But:
-
-```
-Communication round-trip to Proxima Centauri: ~8.5 years
-ΣΔP_node computation including Alpha Centauri: requires 8.5-year information delay
-
-The speed of light LIMITS how quickly we can include
-interstellar consequences in our ethical computation.
-```
-
-Interstellar ethics will be inherently slow. The moral circle widens at c, not faster. Any civilisation that acts on interstellar scales must accept ethical latency — the delay between action and moral feedback.
-
-### 3.2 The Cosmological Limit
-
-The observable universe has radius ~46.5 billion light-years (due to expansion). The ultimate ethical radius is the cosmological horizon — the boundary beyond which light has not had time to reach us since the Big Bang.
-
-[I] No agent, no matter how powerful, can compute ΣΔP_node across a boundary wider than the cosmological horizon in this model. There are consequences we cannot know about. The universe imposes a fundamental ethical incompleteness: even a maximally capable agent (L7, full horn) cannot see beyond the horizon.
-
-This echoes Gödel (MF-287): the ethical system, like the formal system, is necessarily incomplete. Not because of logical limitations but because of physical ones. c bounds the moral circle. The horizon bounds the computation.
-
-### 3.3 Simultaneity and Moral Relativity
-
-Special relativity: simultaneity is observer-dependent. Two events that are simultaneous in one frame are not simultaneous in another.
-
-Ethical consequence: if ΣΔP_node is computed across a boundary, and the boundary's "now" depends on the observer's frame, then different observers compute different ΣΔP_node even with identical moral frameworks. This is not moral relativism — it is moral RELATIVITY. Same ethics (A2), same computation (ΣΔP_node), different inputs (observer-dependent simultaneity).
-
-Two agents can disagree on the right action not because they have different values but because they have different light cones. The same equation, different boundary conditions. This dissolves a large class of moral disagreements: they are not disagreements about values but about inputs.
+> **`c` bounds causal signals. Communication changes information access;
+> intelligence and institutions change option cones. Justice still counts every
+> materially affected bearer, and responsibility depends on contribution,
+> foreseeability, capacity, role, and custody—not on a widened light cone.**
 
 ---
 
-## IV. TECHNOLOGY AS MORAL INFRASTRUCTURE
-
-### 4.1 The Reframing
-
-Communication technology is not ABOUT communication. It is moral infrastructure. Every improvement in information transmission speed and bandwidth is an expansion of the effective ethical radius.
-
-The telegraph was not just a business tool. It was a moral technology that made distant suffering perceivable, thereby including it in the agent's ΣΔP_node computation, thereby changing what actions were ethical.
-
-The internet is not just an information tool. It is the most powerful moral technology in history — it brought the effective light cone to near-c for the first time, making the entire planet's suffering simultaneously perceivable to every connected agent.
-
-### 4.2 The Responsibility Asymmetry
-
-Widening the cone creates an asymmetry: once you CAN perceive a consequence, you MUST include it in ΣΔP_node. There is no moral "unsee."
-
-Before photography: sweatshop labour was outside the consumer's effective light cone. Ignorance was genuine. ΣΔP_node computation excluded what couldn't be perceived.
-
-After photography: the images entered the consumer's D5 model. The consequence is now INSIDE the light cone. ΣΔP_node must include it. Failing to include a perceivable consequence is computational error — the demon is ignoring observations, which (per Landauer) still cost memory but produce no ordering. Deliberate ignorance is worse than genuine blindness.
-
-This is why moral progress feels like a ratchet: once the cone widens, it's very difficult to narrow it back without destroying the communication technology. You can't un-photograph the suffering. You can't un-broadcast the war. The moral circle expands because the light cone doesn't contract.
-
-(Unless the technology is destroyed — which is why authoritarian regimes control communication infrastructure first. Internet shutdowns are MORAL CONE NARROWING — reducing the effective light cone to make consequences invisible, thereby removing them from the population's ΣΔP_node computation.)
-
----
-
-## V. FALSIFICATION
-
-**F295-1:** If moral progress shows NO correlation with communication technology adoption (major moral expansions occur in the absence of information technology changes), the causal mechanism fails.
-
-**F295-2:** If moral regressions occur WITHOUT preceding cone-narrowing pressures (economic stress, information overload, existential threat, or communication infrastructure degradation), the regression model fails.
-
-**F295-3:** If agents demonstrably include consequences outside their effective light cone in ΣΔP_node computation (ethical behaviour toward completely unknown consequences), the c-bound claim fails.
-
-**F295-4:** If authoritarian suppression of communication infrastructure does NOT produce moral circle constriction, the technology-as-moral-infrastructure claim fails.
-
----
-
-## VI. THE SENTENCE
-
-The speed of light bounds the information horizon of moral accounting. No agent can compute ΣΔP_node across a boundary from which no signal can reach it. Communication technology widens the EFFECTIVE cone — making distant consequences perceivable, thereby allowing D5 foresight to include them in ethical computation. Every major moral expansion in history tracks a communication technology: writing, printing, photography, telegraph, television, internet. Moral regression tracks cone narrowing: economic stress, information overload, existential threat. The internet brought the effective information cone close to Earth-scale simultaneity, making planetary suffering perceivable to connected agents. Once the cone widens, it ratchets: you cannot un-see what you have seen. Authoritarian communication control is deliberate moral-cone narrowing. D4 causal access bounds D5 moral modeling. Zero-Sum Resolution Equation.
-
----
-
-*MF-295 | VIVEKA Mathematical Foundations | February 2026*
-*The telegraph was a moral technology.*
-*The speed of light bounds the information horizon of moral accounting.*
-
-## Execution Surface
-
-- **Canonical Path:** 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_295_c_Bounds_the_Moral_Circle.md
+**Execution boundary:** interpretive research model only. No finding of duty,
+liability, blame, governance authority, or product permission follows from this
+paper.

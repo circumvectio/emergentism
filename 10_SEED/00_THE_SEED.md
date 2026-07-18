@@ -29,12 +29,16 @@ finite-node action, uppercase `Φ` is an actual D4 model's capacity to represent
 and rank D5 possible content, while uppercase `V`
 is D4 means-to-act at the boundary. The child beside a jet and the pilot without
 bodily/tool access are the two zero-factor failures.
-P∞ = φ · ν = 1 on the open S²; the pole values are undefined while the limiting identity remains 1. The reciprocal identity resolves on the sphere.
+For `θ∈(0,π)`, the selected definitions give `P_chart:=φν=1`; pole
+values are excluded and the one-sided product limit is one. This analytic
+identity neither resolves an empirical problem nor makes the sphere reality.
 (φ − ν)² ≥ 0. A square cannot be negative. This is the first arithmetic consequence, not the seed.
 Therefore `φ + ν ≥ 2`, with equality at `φ=ν=1`. This is an AM–GM chart
 minimum, not a Hamiltonian or physical energy minimum unless a separate
 Hamiltonian is explicitly declared.
-log P_node = log Φ + log V. Logarithmic consistency at the node level is the `[I]` additive-coherence rule.
+Given the declared product model `P_node:=ΦV`, `log P_node=logΦ+logV` for
+positive factors. This is `[A/S]` inside that selected model, not evidence that
+the product universally fits a domain.
 B = sin θ peaks at L4.
 
 ## The Seven
@@ -70,7 +74,11 @@ Namespace fence: this VMOSK `V` means **Vision**. It is not the action-register
 
 ## The Nexus
 
-The API to a natural person. Six layers: Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregoreotype. One Nostr keypair. Sovereign by construction.
+The proposed API to a natural person. Six layers: Genotype → Epigenotype →
+Phenotype → Extended Phenotype → Memotype → Egregoreotype. One Nostr keypair
+can support user-held authorization, but sovereignty requires verified custody,
+revocation, contest, portability, and observed practice; it is not guaranteed
+by construction. `[C/D]`
 Assure (IS) / Insure (COULD) / Ensure (SHOULD) — at macro AND micro scale.
 
 ## The Economics
@@ -78,11 +86,14 @@ Assure (IS) / Insure (COULD) / Ensure (SHOULD) — at macro AND micro scale.
 SoResFi: L1 Settlement (ZAI/SKY) → L2 Credit → L3 Equity (PRISM/LP-100) → L4 Application.
 PRISM: Opening Sale → Faucet (truth-gated) → Distillation (φ-split 61.8/38.2) → Order Book (FBA 60s).
 100 tokens per DAV [C/D — design spec, not a live result]. Infinitely divisible. η = 0: fees only on value created.
-Flywheel: N² × log(compute). Each connection makes every other connection more valuable.
+Candidate flywheel: `N² × log(compute)` `[C/D]`. This is a design hypothesis,
+not an observed scaling law; network congestion, topology, complementarity,
+and capture can reverse it.
 
 ## The Repository
 
-Seven folders. Seven L-levels. The repository IS the organism:
+Seven folders sample seven L-levels. The repository is an inspectable model of
+the organism, not the living territory itself:
 
 ```text
 01_TELEOLOGY    = L1 (F5 gradient, ektropy — material direction)

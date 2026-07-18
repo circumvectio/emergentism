@@ -79,6 +79,15 @@ remain live rivals. `CAL-DISPATCH-01`, `CAL-SPHERE-01`, and
 `X0` or `not_applicable` until preregistered, blinded benchmarks discriminate
 it from simpler routing schemes.
 
+### The algebraic residue is real `[A/S]`
+
+Receipt 130 corrects the opposite overstatement that the Rosetta is “only
+curation.” The involution `z↦1/z` has fixed points `±1` and reciprocal
+two-cycles; a declared pair of signed change coordinates has four sign cells.
+Those structures legitimately constrain a mirror/sign comparison grammar.
+They do **not** force one centre, a finite or seven-rung ladder, the mapping of
+any tradition, or independence among historically related witnesses.
+
 > See [00_CORPUS.md](00_CORPUS.md) for the whole corpus map seen from this folder.
 
 ## From Rosetta Table to Soul Loop
@@ -225,19 +234,22 @@ The Three-Stage Process reads the rows (same geometry across fields). The Cascad
 
 ## Individual Rosetta Mappings
 
-Each mapping was discovered independently. Each is a candidate verification that `P∞ = φ · ν = 1` appears as a recurrent structural reading across cultures and disciplines.
+Each row is a separately proposed Rosetta crosswalk. A mapping may motivate
+comparison, but it does not verify `φν=1` outside the selected chart, transfer
+proof between domains, or establish historical independence. Default tier:
+`[I]`; any predictive extension remains `[C]` until tested against fair rivals.
 
 | Mapping | Domain | One-line Description | Document |
 |---------|--------|----------------------|----------|
-| **R4** | Egyptian Ma'at | The Weighing of the Heart (3,000 BCE) encodes P∞ = φ · ν = 1: the heart must balance the feather | Rosetta_R4 |
+| **R4** | Egyptian Ma'at | The Weighing of the Heart is compared with the framework's balance image `[I]`; no equation is attributed to the ancient source | Rosetta_R4 |
 | **R5** | Nietzsche's Metamorphoses | Camel/Lion/Child are three L-levels; the missing fourth stage is the Mesh | Rosetta_R5 |
-| **R6** | The Torus | The horn torus as physical realisation of the Burri Sphere; systemic awareness at the center | Rosetta_R6 |
+| **R6** | The Torus | Removable horn-torus/Burri-Sphere visualization `[I/C]`; not a physical realization or consciousness proof | Rosetta_R6 |
 | **R7** | The Brain | Right hemisphere *tends toward* phi, left hemisphere *tends toward* nu, corpus callosum as multiplication operator **[I — see Neuroscience Caveat]** | Rosetta_R7 |
 | **R8** | AUM / Mandukya Upanishad | The four states (A-U-M-silence) map to four geometric positions; Turiya = the equator | Rosetta_R8 |
-| **R9** | German Etymology | Anmut/Demut/Mut trace the phi/nu/P structure in the German language itself | Rosetta_R9 |
-| **R10** | Greek Philology | 80+ Greek terms placed on `S²`; the language encodes the geometry | Rosetta_R10 (Philology) / R10 (Formalisation) |
-| **R11** | The Imaginary Unit | i = the equator; the complex plane IS the Burri Sphere seen from above | Rosetta_R11 |
-| **R12** | Megalithic Evidence | Gobekli Tepe and Stonehenge as archaeological receipts of η = 0 scaling | Rosetta_R12 |
+| **R9** | German Etymology | Proposed Anmut/Demut/Mut correspondence `[I]`; historical derivation requires its own sources | Rosetta_R9 |
+| **R10** | Greek Philology | Greek terms are placed on the selected sphere as a translation exercise `[I]`; language does not thereby encode the geometry | Rosetta_R10 (Philology) / R10 (Formalisation) |
+| **R11** | The Imaginary Unit | Selected equator/complex-plane correspondence `[I]`; not an identity of mathematical objects | Rosetta_R11 |
+| **R12** | Megalithic Evidence | Speculative comparison of monuments with coordination/scaling motifs `[C]`; not an archaeological receipt of `η=0` | Rosetta_R12 |
 
 ### The D-series subfolders and their per-lane numbering
 
@@ -323,11 +335,11 @@ no evidence.
 ```
 Seven rows.
 Every column.
-The same pattern.
+One selected comparison grammar.
 
-Not because we forced it.
-Because reality organized itself this way
-before anyone drew the table.
+Its value is decided by translation clarity,
+documented failures, rival models,
+and consequences—not recurrence alone.
 ```
 
 

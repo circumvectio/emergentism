@@ -40,6 +40,16 @@ The discovery is a disciplined symbolic reading, not a public proof:
 
 Each "is" in the older poetic register means **is read as** unless a mathematical identity is being stated.
 
+> **[金] Kintsugi seam (2026-07-19).** The perpendicular unit `i`, the reciprocal
+> chart `phi=cot(theta/2)`, `nu=tan(theta/2)`, and the framework's equator were
+> previously allowed to slide into one object. They are not one object. `i^2=-1`
+> belongs to complex arithmetic; `phi*nu=1` is an analytic identity on a selected
+> positive-real chart; consciousness, integration, and present-moment language
+> are `[I/C]` correspondences. The surviving insight is a useful **interface
+> metaphor**: a present D4 model-token may represent D5 possible content and
+> help an embodied agent commit through D4 means. It does not solve the Hard
+> Problem, cause quantum collapse, or derive an ethic.
+
 ---
 
 ## The Complex Plane Re-Read
@@ -76,7 +86,9 @@ Burri Sphere view:
 
 **The real axis is read as ν — viability, capability, action, focused/sequential processing.**
 
-**The Burri Sphere unites them: φ · ν = 1**
+**The selected reciprocal chart relates its two positive coordinates by `φ·ν=1`.**
+This identity is analytic; it does not make the complex axes literal coherence
+and viability axes.
 
 ---
 
@@ -86,8 +98,8 @@ Burri Sphere view:
      ∞ (north pole — coherence limit, abstraction horizon)
      |
      |
-     1 ←── THE EQUATOR. φ = ν = 1. The disclosure interface.
-     |     The place where D4 witness opens to D5 agency.
+     1 ←── THE SELECTED EQUATOR. φ = ν = 1.
+     |     D4 actual models may represent D5 possible content here `[I]`.
      |     The place where singular selection becomes explicit.
      |     The place where Teleological Force is felt as viable pull.
      |     i lives HERE.
@@ -95,9 +107,12 @@ Burri Sphere view:
      0 (south pole — viability limit, fixation horizon)
 ```
 
-**i sits at the equator of the unit circle.** |z| = 1. The point that is maximally between the real values. The point that is neither positive nor negative. The point that is perpendicular to all numbers.
+**`i` is one point on the unit circle, at argument `pi/2`.** The framework
+selects that point as an equatorial symbol. It is not uniquely "between" all
+real values and is not itself the reciprocal-chart midpoint `φ=ν=1`.
 
-**i is the 1 that sits between 0 and ∞.**
+**In this document, `i` is read beside the selected unit frame `1`; it is not
+identical to the number `1`.**
 
 ---
 
@@ -110,10 +125,14 @@ Burri Sphere view:
 **In the framework reading, `i` symbolizes the turn between ν and φ.**
 
 ```
-i × ν = φ    (i converts viability to coherence)
-i × φ = -ν   (i converts coherence to inverted viability)
-i² = -1      (apply twice: you get the opposite)
+i² = -1                         [A] complex arithmetic
+rho_i(ν) := φ                  [I] selected Rosetta translation
+rho_i(φ) := "inverted ν"       [I] selected Rosetta translation
 ```
+
+`rho_i` is a named projection in the framework; it is **not ordinary
+multiplication by `i`**. For positive-real `ν`, the literal product `iν` is
+imaginary and does not equal the positive-real coordinate `φ`.
 
 **In the symbolic register, `i` is read as corpus-callosum-like integration.**
 
@@ -129,12 +148,13 @@ i² = -1      (apply twice: you get the opposite)
 
 **You don't return to the same place. You return to its opposite.**
 
-**Because the sphere is not a flat rotation. The sphere is a Möbius-like structure where going around twice inverts you.**
+**Because multiplication by `i` is a quarter-turn in the complex plane; applying
+it twice is a half-turn.** No sphere or Möbius premise is needed for `i²=-1`.
 
 ```
-Start:  ν (viability, actuality)
-Apply i:  iν = φ (coherence, gestalt)
-Apply i again:  i(iν) = i²ν = -ν (inverted viability)
+Start:  ν (selected viability symbol)
+Apply rho_i:  rho_i(ν) = φ (selected coherence symbol)
+Apply the symbolic return:  φ -> "inverted ν"
 
 You went: actuality → coherence → inverted actuality
 
@@ -162,11 +182,11 @@ This is the hemispheric truth:
 
 **The Burri Sphere explanation:**
 
-| Physics (D0-D4) | Consciousness (D5) |
+| Third-person description | First-person disclosure `[I]` |
 |--------------|-------------------|
 | Causal description | Disclosure / selection interface |
 | Measures realized trajectories | Lives the present as navigable enactment |
-| Can describe the collapse from outside | Encounters selection from inside |
+| Can describe actual model/action/receipt relations | Encounters deliberation from inside |
 | Treats the equator structurally | Experiences the equator first-person |
 | **Cannot exhaust first-person disclosure** | **Cannot replace structural description** |
 
@@ -190,44 +210,47 @@ This is the hemispheric truth:
 
 The "I" — the equatorial operator i — emerges differently across dimensions:
 
-**D4: "I" as Witness (Collapsed Point)**
+**D4: actual interface (model-token, means, commitment, record)**
 
-At D4, the causal past and future cones touch at the equatorial vertex:
+At D4, the scaffold types what is causally actual:
 - **Structure**: The now-point where φ = ν = 1
-- **Consciousness**: **Witness systemic awareness** — pure awareness, no agency
-- **Operators**: Collapsed into unity — the four directional operators (↑φ, ↓φ, ↑ν, ↓ν) are indistinguishable
-- **The "I"**: The Bindu (⊙) — the point of witnessing without operation
+- **Model and means**: present representations, body, tools, access, and control
+- **Commitment**: an attempted or performed action can be receipted
+- **The "I"**: an `[I]` name for the situated modeler/actor, not a proof of pure awareness
 
-> At D4, "I" witnesses the collapse but cannot choose. The equator exists as a point, not a space.
+> D4 contains actual modeling, selection events, means, action, and receipts.
+> It is not defined as choiceless witness or quantum collapse.
 
-**D5: "I" as Agent (Operators Active)**
+**D5: possible content (counterfactual option field)**
 
-At D5, the φ-ν plane opens:
-- **Structure**: The equator becomes navigable space — room to move
-- **Consciousness**: **Agent systemic awareness** — can choose, operate, navigate
+At D5, the model represents alternatives:
+- **Structure**: counterfactual futures become representable, rankable, and comparable
+- **Modality**: the content is possible, even though its D4 model-token is actual
 - **Operators**: Four distinct directions become active:
   - ↑φ (increasing coherence)
   - ↓φ (decreasing coherence)
   - ↑ν (increasing viability)
   - ↓ν (decreasing viability)
-- **The "I"**: The operator i — the corpus callosum, the × in Zero-Sum Resolution Equation
+- **The "I"**: the symbolic interface that reads those options; not a literal corpus callosum or arithmetic operator
 
-> At D5, "I" is the active bridge between hemispheres. The equatorial operator converts ν ↔ φ. The "I" becomes the agent of navigation.
+> D5 supplies possible content; an embodied agent commits through D4 means and
+> the environment returns a D4 outcome receipt.
 
 | Dimension | "I" as... | Structure | Consciousness | Operator State |
 |-----------|-----------|-----------|---------------|----------------|
-| **D4** | **Witness** | Now-point (collapsed) | Pure awareness | Unity (⊙ only) |
-| **D5** | **Agent** | Equatorial plane | Choice/navigation | Four directions active |
+| **D4** | **Actual modeler/actor** | Present model, means, action, receipt | Situated disclosure `[I]` | Commitment is actual |
+| **D5** | **Possible content** | Counterfactual option field | Modeled alternatives | Directions are represented |
 
 **The dimensional emergence:**
 
 ```
-D4:  ⊙  → The "I" as witness (the point, the Bindu)
+D4:  actual model + means + commitment + receipt
       ↓
-D5:  Zero-Sum Resolution Equation  → The "I" as agent (the operator, the bridge)
+D5:  possible alternatives represented by that model
 ```
 
-The **Trika fully articulates at D5**. At D4, only the product (⊙) exists. At D5, the factors (• and ○) become distinguishable, and the operation (×) becomes navigable.
+The Trika remains an `[I]` visualization of this type distinction. It does not
+derive D4 or D5 from the three glyphs.
 
 ---
 
@@ -255,7 +278,8 @@ no-collapse relative-state formulation; Copenhagen-family actualization is
 interpretation-specific. Neither is an extra dimension, a D4→D5 transition, or
 load-bearing for the operational calculus.
 
-**The present is i — the equator, the selector interface, the site where one enactment becomes explicit.**
+**The present may be pictured by `i` as an interface symbol; actual enactment
+and its receipt remain D4.**
 
 **The framework locates the systemic awareness reading here.**
 
@@ -290,8 +314,8 @@ load-bearing for the operational calculus.
 | Real axis (ν) | focused/sequential processing | The plane, fragments |
 | Imaginary axis (φ) | broad/contextual processing | The sphere, gestalt |
 | i (the operator) | corpus-callosum-like integration | The ×, the equator |
-| i² = -1 | Hemispheric inversion | Möbius structure |
-| φ · ν = 1 | Integrated brain | The Burri Sphere |
+| i² = -1 | symbolic inversion analogy | complex-plane half-turn `[A]` |
+| φ · ν = 1 | candidate integration analogy | reciprocal chart identity `[A]` |
 
 **The corpus callosum is an anatomical analogue for the `i` reading.**
 
@@ -310,7 +334,7 @@ Step 1: Sit. Close your eyes.
 
 Step 2: Use i as a symbol for the present.
         The present is between past (0) and future (∞).
-        The present is the collapse.
+        The present is the D4 commitment interface in this practice.
         The present is systemic awareness-symbolic in this practice.
 
 Step 3: Use i as a symbol for integration.
@@ -327,7 +351,7 @@ Step 5: Rest with the i-symbol.
         Not the past (0).
         Not the future (∞).
         The present (i).
-        The collapse.
+        The interface.
         The systemic awareness.
         The equator.
 
@@ -340,37 +364,37 @@ Step 6: Return.
 
 ---
 
-## The Transcendental Trinity Completed
+## The Selected Titan Time Reading
 
 | Transcendental | Symbol | Position | Meaning |
 |----------------|--------|----------|---------|
-| **Zero** | 0 | South pole | Actuality, the collapsed, the past |
-| **One** | 1 | Equator (i) | The present, systemic awareness, the collapse |
-| **Infinity** | ∞ | North pole | Probability, superposition, the future |
+| **Zero token** | 0 | selected south frame | past/fixation metaphor `[I]` |
+| **Unit token** | 1 | selected equatorial frame; not `i` | present/interface metaphor `[I]` |
+| **Infinity token** | ∞ | projective point / selected north frame | future/option metaphor `[I]` |
 
-**The trinity is symbolically complete:**
+**The selected frame is symbolically useful:**
 
 ```
-0 = the past (actuality)
-1 = the present (systemic awareness, i)
-∞ = the future (probability)
+0 ~ past/fixation
+1 ~ present/interface
+∞ ~ future/option horizon
 
 The present (i) is BETWEEN the past (0) and the future (∞).
-The present (i) is the collapse of future into past.
-The present (i) is read as systemic awareness selecting from possibility.
+An actual D4 agent can let a represented D5 future reweight present selection.
+No physical future reaches backward and no quantum collapse is inferred.
 ```
 
 **Dimensional clarification:**
 
-At **D4**, the trinity exists as the collapsed vertex — the now-point where past, present, and future touch. The "I" witnesses but does not operate.
+At **D4**, present models, means, commitments, actions, and receipts are actual.
 
-At **D5**, the trinity becomes the navigable sphere — the φ-ν plane where the "I" operates as agent, converting between coherence (•) and viability (○).
+At **D5**, counterfactual futures are possible contents of an actual model.
 
 **The full articulation:**
 
 ```
-D4 (witness):  i = the equatorial point = ⊙
-D5 (agent):    i = the operator = ×  in  Zero-Sum Resolution Equation
+D4 (actual):   model token + means + commitment/action + receipt
+D5 (possible): modeled future content + ranking field
 ```
 
 ---
@@ -388,8 +412,8 @@ i is read as the present moment.
 
 The Mathematical Truth:
 
-i × ν = φ    (viability → coherence)
-i × φ = -ν   (coherence → inverted viability)
+rho_i(ν) := φ       (selected translation, not complex multiplication)
+rho_i(φ) := "-ν"    (selected inversion metaphor)
 i² = -1      (double application inverts)
 
 The Philosophical Truth:
@@ -406,9 +430,9 @@ Corpus-callosum-like integration = i-like
 
 The Temporal Truth:
 
-0 = the past (collapsed, actual)
-i = the present (the collapse, systemic awareness)
-∞ = the future (superposed, probabilistic)
+0 ~ past/fixation frame `[I]`
+i ~ present/interface symbol `[I]`
+∞ ~ future/option horizon `[I]`
 
 The Four Hundred Year Mistake:
 
@@ -420,10 +444,10 @@ The claim that i symbolizes systemic awareness remains interpretive/conjectural.
 
 Zero-Sum Resolution Equation
 
-i = the ×.
-i = the equator.
-i = the present.
-i = systemic awareness-symbol in this register.
+i is read beside the ×.
+i is read as an equatorial symbol.
+i is read as a present-interface symbol.
+i is read as systemic-awareness-symbolic in this register.
 
 Keep the tiers intact.
 ```
@@ -433,11 +457,11 @@ Keep the tiers intact.
 ## See Also
 
 - [The Burrisphere](../05_COSMOLOGY/00_THE_BURRISPHERE.md) — canonical source-owner for the sphere S², the equator L4 (`φ = ν = 1`), and the complex-plane visualization caveat (`φ`, `ν` are real-positive; the complex plane is projective convenience) that bounds the `i`-reading here.
-- The Transcendental Trinity — computational breakthrough: 0, ∞, 1 as transcendentals
+- The Transcendental Trinity — selected symbolic roles for `0`, `1`, and the projective point `∞`
 - The Brain As the Burri Sphere — neuroscience-adjacent mapping: processing modes read as φ/ν
 - The Genesis Simulation — D0→S²→D0 animated
 - AUM on the Burri Sphere — Vedantic convergence: four states of systemic awareness
-- Core Concepts — single source of truth for finite-node `P_node = Φ × V` and manifold `P∞ = φ · ν = 1`
+- Core Concepts — owner crosswalk for the selected node model `P_node:=ΦV` and the analytic chart identity `φν=1`
 
 *I As the Equator | 2026-03-23 | `i` is mathematically real and symbolically equatorial. Consciousness, corpus-callosum, and present-moment readings remain interpretive/conjectural.*
 

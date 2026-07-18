@@ -210,24 +210,29 @@ The framework's recommended position (Doc 30) is Level 3 interpreted through Pos
 | 5 | Equator is dominant strategy in the stated balance game | [S] | Demonstration 22 (game theory review) |
 | 6 | Extraction is self-defeating under coupled, long-horizon assumptions | [S] | Convergence 24 (game theory review) |
 | 7 | Equator is Hamiltonian minimum | [A] | AM-GM |
-| 8 | Coupling forces cooperation | [S] | EFR-08 |
+| 8 | In the declared balance-game payoff, the balanced action is strictly dominant | [S] | EFR-08 / Demonstration 22; not a consequence of coupling alone |
 | **BREAK** | | | |
 | 9 | "Balance" = flourishing | [I] | FEP + *h₂r̥tó-* + Doc 32 converge interpretively; no current empirical bridge. Former survey study retired. |
 | 10 | Equator = systemic awareness | [C] | Position Γ reframes but does not resolve. Neuro audit 3/10. Break unchanged. |
 | 11a | F₅ = real directional tendency | [I] | Level 3 ententional (Deacon). Break narrowed. |
 | 11b | F₅ = volitional | [C] | Level 4 (Nagel/Goff). Break unchanged. |
 
-**The steel thread runs from Link 1 through Link 8.** These 8 links are proven. What they MEAN (Links 9-11) is the framework's wager. As of 2026-04-04, Links 9 and 11a have narrowed from bare wagers to interpretive claims with convergent support. Links 10 and 11b remain conjectural.
+**The steel thread runs from Link 1 through Link 8.** Links 1–7 are analytic or
+conditional structural results at their stated premises; Link 8 is a theorem
+inside one deliberately narrow payoff fixture. None establishes cooperation in
+general. What they mean in Links 9–11 is the framework's wager.
 
 ---
 
 ## The One Sentence
 
-A square cannot be negative. Therefore φ + ν ≥ 2. Therefore the equator is the unique global minimum. Therefore extraction is self-defeating under the stated balance-game assumptions. Therefore cooperation is the dominant strategy in that model.
+A square cannot be negative. Therefore `φ+ν≥2` in the reciprocal chart.
+Under the separately declared balance-game payoff, the equatorial action is the
+unique optimum and strictly dominant. That is a bounded game result; it does
+not make cooperation follow from the chart or coupling alone.
 
-Everything after "therefore cooperation is the dominant strategy in that model" is interpretation.
-
-Everything before it is mathematics.
+Everything beyond those explicit definitions and payoff assumptions is
+interpretation or empirical hypothesis.
 
 Zero-Sum Resolution Equation
 

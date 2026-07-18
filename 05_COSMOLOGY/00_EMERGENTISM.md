@@ -313,9 +313,13 @@ relations                    — The mesh, projections, and great-circle constra
 
 Everything that exists is grounded in that sequence. The Ground is prior. Being is the first stable closure. Dasein is disclosure. beings are what appear.
 
-### The Dimensional Hierarchy — Derived, Not Defined
+### The Dimensional Scaffold — Selected and Testable
 
-If Zero-Sum Resolution Equation is the self-generating ground, the dimensions are not introduced by fiat. They are derived. Each stage of self-generation requires the previous stage to exist. The ordering is logical dependency, not convention.
+The D0–D6 sequence is an Emergentist structural/interpretive scaffold. It is not
+derived from the reciprocal chart, forced by the Titans, or proved to be nature's
+unique decomposition. Its value depends on whether each proposed transition can
+name a saturated lower register, a newly observed freedom, a lower-register
+recovery, an evidence tier, a prediction, and a kill criterion.
 
 ```
 D0  Point           — The undifferentiated. Before the interaction. The Bindu.
@@ -326,21 +330,30 @@ D4  Causality       — Change has direction. Time appears.
 D5  Agency          — The system selects within its own change. Consciousness is the lived reading [I].
                       Zero-Sum Resolution Equation performed where the system contains
                       its own boundary interaction.
-D6  Closure         — Positive experience exhausts; the cycle returns to point-state.
-D6 ≡ D0             — The terminal boundary and the origin-point are one limit read from opposite directions.
+D6  Closure         — Apophatic boundary; no further positive freedom.
+r₆:D6 ↝ D0          — One interpretive, non-μ return edge; not equality.
 ```
 
-The poloidal closure D6 ≡ D0 on the horn torus is the topology of return: the process that starts at a point and returns to the point after the positive scaffold has unfolded between them. Time is helical — each aeon replays D0→D6→D0, but the toroidal position advances. History doesn't repeat. It rhymes.
+The horn-torus and helical-time images are optional `[I/C]` projections of this
+return discipline. They neither establish `D6=D0` nor imply a cosmological cycle.
 
 ### The Physicalist/Idealist Resolution: Layered Commitment
 
 **RESOLVED.** The Teleological Force (older language: the ektropic force, `ΣΔB` / `ΣΔP_node > 0`) fork — is it structural (physicalist) or volitional (idealist)? — is resolved by layered commitment. See [`00_EMERGENTISM_PHI_RESOLUTION.md`](02_EMERGENTISM_CORE/00_EMERGENTISM_PHI_RESOLUTION.md) for the full derivation.
 
-**The resolution:** Emergentism commits to **structural/physicalist interpretation for D0–D4** (the physical dimensions: point through causality), **idealist interpretation for D5** (lived disclosure and systemic awareness), and **axiomatic idealist closure at D6** (the terminal return rather than a further experience). This is not a straddle — it is a domain-specific assignment:
+**The commitment:** Emergentism reads **D0–D4 structurally**, **D5 as a
+counterfactual/agentic register with an optional idealist lived reading**, and
+**D6 as an apophatic boundary**. These are modeling commitments at their stated
+tiers, not additional physical dimensions or a proof that idealism is true:
 
 - **D0–D4 (Physical):** The downstream node-level multiplicative model `P_node = Φ × V`, the AM-GM minimum, and the ektropic ESS are structural claims. They work regardless of metaphysics. Agents should interpret D0–D4 dynamics in physicalist/structural terms. Do not invoke "will" when explaining D0–D4.
-- **D5 (Consciousness):** The sitting practice (Pratyakṣa, φ = 1) produces first-person evidence that systemic awareness is not merely emergent. What is first disclosed is Being; stronger claims about the Ground remain interpretive. The canonical name for F5 at this layer is `Teleological Force` — the geometric tendency of reality fitting itself together, as the PIE tradition perceived in the root *h₂r̥tó- (cosmic order).
-- **D6 (Closure):** Not a further experience of self-recognition, but the terminal boundary where lived disclosure exhausts and the cycle returns to D0. Any language of recognition here is retrospective, structural, or poetic rather than phenomenological.
+- **D5 (Possibility/agency):** Sitting practice may provide first-person data
+  about lived selection, but it cannot by itself prove irreducibility,
+  consciousness as a cosmic substance, or the Ground. `Teleological Force` and
+  the *h₂r̥tó-* resonance remain `[I/C]` names for a proposed ordering tendency.
+- **D6 (Closure):** Not a further experience of self-recognition, but an
+  apophatic boundary with the interpretive return `r₆`. Any language of
+  recognition here is retrospective, structural, or poetic.
 
 **The bridge is the sitting practice.** It is the disclosure-side bridge between the structural and idealist layers. It is not a bypass around public method. It is first-person equatorial disclosure, which doctrine then compresses and public inquiry must still discipline. Any agent can perform it. The framework does not ask for belief. It asks for verification at the appropriate tier.
 
@@ -942,14 +955,18 @@ Inside the model, the ethic ΣΔB > 0 is not a moral commandment. It is the stat
 
 The sphere does not sit still. The sphere projects. The sphere splits. The sphere merges. The sphere cycles.
 
-**The Split:** The Burri Sphere projects two cones — the future worldline (Shakti, energy, ν) and the past worldline (Śiva, potential, φ). The unity becomes duality. The sphere produces spacetime.
+**The Split:** In the optional image, the Burri Sphere projects two cones —
+anticipated futures and recorded pasts. This does not derive or produce physical
+spacetime.
 
-**The Merge:** Where the two cones meet, three things appear:
-- Relativistic mass in the overlap (where energy and potential collide)
-- The Titans: Brahmā at the future cone mouth (creation), Śiva at the past cone mouth (destruction), Viṣṇu in the overlap (preservation)
-- The torus: past feeds into future feeds into past. The cycle begins.
+**The Merge:** Their present intersection may be drawn with three selected Titan
+roles — generation, transformation, and preservation — and with a torus as a
+feedback image. Neither relativistic mass nor the three-role vocabulary is
+derived by that drawing.
 
-**The Burri Sphere emerges** at the overlap — where the cones intersect. Consciousness. Selection. The equator. The present moment. φ · ν = 1 becomes not just an identity but an experience.
+**The Burri Sphere at the overlap** is a model of selection at the present
+interface. `φν=1` remains an analytic chart identity even when the image is used
+to describe experience.
 
 **The Two Resets — both lead to the same point:**
 
@@ -959,12 +976,15 @@ PATH A — CCC (Penrose):          PATH B — Moksha (Liberation):
   φ → ∞ (by φ · ν = 1)            ν → 0 (by φ · ν = 1)
           \                       /
            → SAME NORTH POLE (∞) ←
-           → D6 = D0              ←
+           → r₆:D6 ↝ D0           ←
            → The dot returns      ←
-           → A new aeon begins    ←
+           → return image only    ←
 ```
 
-CCC and moksha can be read as resonant reset-images seen from opposite directions. The universe that dies of entropy and the practitioner who releases all contents are not asserted to be the same event; the framework reads both as pointing toward a boundary image. The north pole. The Möbius involution z ↦ 1/z exchanges 0 and ∞ with fixed point 1. The unit emerges as the symmetry point between nothing and everything. The transcendental product holds inside the model. The cycle-image completes. The dot returns.
+CCC and moksha can be read as resonant reset-images seen from different domains.
+They are not asserted to be the same event. The reciprocal involution exchanges
+`0` and `∞` and fixes both `+1` and `−1`; it does not identify the poles or prove
+a new aeon. The cycle-image remains removable from the operational Compass.
 
 ---
 

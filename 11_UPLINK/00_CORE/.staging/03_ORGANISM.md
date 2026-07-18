@@ -107,9 +107,13 @@ VMOSK-A is not a management acronym here. It is the organism's replicator archit
 | Strategies | Extended phenotype | Monthly/continuous | L3 proposals and F4 execution. |
 | KPIs | Memotype | Daily/monthly | L1/L2 evidence and pattern learning. |
 | Agents | Rosetta castes | Continuous | Role assignment through the seven L-levels. |
-| DAV whole | Egregorotype | Daily | Standing wave from the layers running together. |
+| DAV whole | Egregoreotype | Daily | Standing wave from the layers running together. |
 
-The active sources contain one vocabulary tension: the DAV Blueprint names KPIs as memotype and the DAV whole as egregorotype; Vision compresses KPIs as learned memory and the standing wave as emergent. Preserve that distinction; do not flatten it into a single layer without a later receipt.
+The active sources contain one vocabulary tension: the DAV Blueprint names
+KPIs as memotype and the DAV whole as Egregoreotype; Vision compresses KPIs as
+learned memory and the standing wave as emergent. Preserve that distinction;
+do not flatten it into a single layer without a later receipt. “Egregorotype”
+is a compatibility alias only.
 
 ## 6. Bottom-Up and Top-Down Governance
 

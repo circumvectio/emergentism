@@ -38,7 +38,10 @@ visible seam so old links do not silently become authority.
 7. The four-force bijection fails under electroweak unification.
 8. Formal identities do not entail the Justice postulate or any ethic.
 
-Receipt 126 therefore refuted **unification by derivation**.
+Receipt 126 therefore refuted **this totalizing single-chain derivation** from
+the reciprocal chart and Titans to a necessary D-ladder, force census, and
+ethic. It did not refute derivation as a method, bounded theorems under explicit
+premises, or unification by a testable typed grammar.
 
 ## What survives
 

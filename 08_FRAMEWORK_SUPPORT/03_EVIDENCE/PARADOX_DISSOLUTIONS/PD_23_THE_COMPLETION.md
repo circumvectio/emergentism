@@ -68,23 +68,31 @@ The self-reference is honest, not circular. We do not claim: "The framework is c
 
 ---
 
-## 5. WHY TRIADS ARE UNIQUELY STABLE
+## 5. WHY THIS SUITE USES A TRIAD `[I]`
 
-**Objection:** "Why not tetrads? Five-term structures? The document asserts triadic uniqueness without proof."
+**Objection:** “Why not dyads, tetrads, continuous models, or a domain-native
+structure?”
 
-**Response:** The uniqueness claim applies to *binary* vs. *triadic* dissolution, not to all N-term structures.
+**Response:** No active uniqueness theorem exists. The suite selects a triad
+because a claim, its contrast, and an explicit frame form a useful audit
+grammar. That pragmatic choice transfers no proof of ontology or minimality.
 
-The argument for triadic uniqueness over binary (dyadic) dissolution:
+The selected reading is:
 
-1. **Dyads generate paradox:** When A and B are treated as opposites (mind/body, free/determined, one/many), the negation of either generates a third term at the boundary. A ¬A requires a frame.
+1. **Dyadic tension:** Some paradoxes are presented as `A` versus `¬A`.
 
-2. **Triads close the boundary:** With A, ¬A, and the frame (B), the system is compact and self-referential without external reference. This is what S² provides—a bounded surface where any boundary generates its complement.
+2. **Explicit frame:** Naming the background assumptions can expose projection
+   errors that a bare opposition hides.
 
-3. **Higher N breaks closure:** Adding a fourth term (C) creates a new binary between some pair (A vs. C, or B vs. D). The paradox reappears at a higher level unless the boundary is a sphere. A sphere has no distinguished boundary point—it closes on itself.
+3. **Rivals stay open:** A fourth term, a continuous parameterization, or a
+   non-spherical topology may explain a target better. Higher `N` does not
+   logically “break closure.”
 
-4. **The η = 0 condition:** A dyad requires external reference (C) to close. External reference introduces η > 0 (additional specification required). Only self-reference (a closed surface) achieves η = 0.
+4. **Justice is separate:** `η=0` is a normative non-extraction condition. It
+   does not follow from the number of descriptive terms or from self-reference.
 
-Therefore: triadic closure on a closed surface achieves the minimum structure that resolves dyadic paradoxes without external reference. This is a structural argument, not an assertion.
+Therefore the triad is a selected comparison instrument. It survives only
+where it clarifies the case better than fair rivals.
 
 ---
 
@@ -94,12 +102,14 @@ The categorical-completion claim does **not** mean every supporting bridge is al
 
 Important open debts remain elsewhere in the slice and wider corpus:
 
-1. the full Power-Max derivation
+1. independent tests of Justice-constrained Power-Max against domain-native rivals
 2. ~~the ABM appendix behind `R* ≈ 1.5`~~ **RESOLVED (2026-04-09):** ABM executed — R* ≈ 1.5 falsified; actual η_c ≈ 0.58. See `04_THE_SIMULATIONS/RESEARCH_BRIEF_R_STAR_SIMULATION.md`.
 3. a worked Three-Stage Process translation across domains
-4. stronger formal support for claims about triadic uniqueness
+4. comparative model selection for the chosen triadic lens
 
-Until those are closed, this document should be read as a strong conceptual declaration carried by an incomplete proof stack rather than by a finished total demonstration.
+Until those are closed, this document is a bounded interpretive summary, not a
+finished total demonstration or a promise that triadic uniqueness will be
+proved.
 
 
 ---

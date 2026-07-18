@@ -210,7 +210,7 @@ are universally optimal.
 | `22_POWER_MAX_DEMONSTRATION` | Retains only the analytic fact that `B=sinθ` is maximized at the equator; no ethical or empirical inference. |
 | `23_DIMENSIONAL_CLOSURE_PROOF` | Repaired as an interpretive structural closure record with `r₆`, not a proof. |
 | `24_GEOMETRIC_EXCLUSION_CONVERGENCE` | Selected operator grammar; no necessity claim. |
-| `41_UNIFIED_DIMENSIONAL_DERIVATION` | Kintsugi tombstone: unification-by-derivation retracted; original Git blob retained. |
+| `41_UNIFIED_DIMENSIONAL_DERIVATION` | Kintsugi tombstone: the totalizing chain from one chart/Titan frame to a necessary D-ladder, force census, and ethic is retracted; bounded derivation remains valid. |
 
 ## Evidence discipline
 

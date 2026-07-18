@@ -29,9 +29,22 @@ depends_on:
 
 ## Where Positive-Sum Exchange Lives in the Seven-Slot Grammar
 
-> **The objection this answers.** The four transfers are conjugate-paying (every give spends the giver), and the `++` frame is non-deployable ("you cannot deploy Brahmā"). So where does *trade* live — the Pareto-improving, both-parties-rise exchange that `η = 0` cooperation is supposed to produce, and that the entire ΣΔP_node > 0 program depends on? If the grammar has no cell for the healthiest transaction in economics, the grammar fails exactly where the organism needs it most.
+> **[金] Kintsugi composition seam — 2026-07-19.** Crossed gives remain a useful
+> decomposition of exchange, not a convergence theorem or moral proof. A
+> repeated exchange reaches a mutualistic region only under explicit assumptions
+> about consent, enforcement, information, cost, time horizon, and exit. Aggregate
+> `ΣΔP_node` is diagnostic; Justice requires every affected bearer, payer, and
+> beneficiary to remain visible and nonnegative. Adoption follows typed
+> accountable authorization, not a worldview signer primitive.
+
+> **The objection this answers.** The four transfers are conjugate-paying (every
+> give spends the giver), while the `++` frame is a boundary description rather
+> than a deployable operator. Where does a genuinely Pareto-improving exchange
+> live in the grammar, and how do we prevent aggregate gain from hiding a payer?
 >
-> **The answer in one line.** Single-shot trade is **two crossed gives** (no new operator); its *gains* are why the crossing is worth it `[E]`; and under iteration at `η = 0` the pair **converges to the Brahmā frame** — creation is not a move you deploy but the frame you *earn*. `[S/I]`, with the fences in §5.
+> **The answer in one line.** A single trade can be represented as **two crossed
+> gives** (no new operator). Under declared mutualism conditions, repeated trade
+> may approach a both-rise region; convergence is not guaranteed. `[S/I/C]`
 
 ---
 
@@ -68,7 +81,11 @@ This also states the converse discipline: one extractive round (`η > 0`) re-inf
 
 ## 3. Why this is the organism's own transaction `[I]`
 
-`K* = 0` toward cooperators, ΣΔP_node > 0 across the widest boundary, fees only on value created — the constitutional economics *presuppose* a transaction whose iterated form leaves both parties risen. §1–2 name it inside the grammar instead of leaving it implicit: **the Skyzai exchange is a crossed give under η = 0, run to its Brahmā limit.** The DAC's job, in this language, is to keep the Φ-spend of crossing low (receipts, K0) and the `η = 0` fence hard, so the limit is reachable.
+The constitutional economics propose non-extraction toward cooperators and fees
+only on demonstrated value created. Sections 1–2 name a candidate transaction
+inside the grammar. The design task is to lower coordination cost, keep custody
+and consent explicit, and record bearer-level receipts; no ideal limit is
+presumed reachable.
 
 ## 4. The 5 ↔ 7 register bridge `[S]`
 
@@ -81,7 +98,10 @@ The Seven Generative Actions enumerate the sign grid `(dΦ, dV) ∈ {+, −, ≈
 | **Reflexive** (no self/other boundary; the Soul-Loop register — one body working on itself) | 3 motions `(++, −−, ≈≈)` | 2 motions `(+−, −+)`: self-refactoring and self-pruning | degenerate limits | **5 = the 5 Möbius classes** (MF-63) | operator-on-self |
 | **Dyadic** (self/other boundary present) | 3 non-deployable **frames** (Titans) | split by `{give, take} × {Φ, V}` into **4 transfers** (2 Gods + 2 Demons) | degenerate limits | **7 = the 4 + 3** | operator-across-boundary |
 
-MF-63's quintet signatures (Śiva `−Φ,+V`; Kṛṣṇa `+Φ,−V`) and the canonical dyadic table are **not in conflict — they are different registers of one grid.** The apparent sign contradictions dissolve; what remains for K2 is only the *naming* reconciliation (audit Proposal 3). This bridge also gives the "unnamed ascent/return" question its home: `(+Φ, −V)` ascent and `(−Φ, +V)` return are the two *reflexive* opposite-sign motions — real operators, in the register where there is no counterparty.
+MF-63's quintet signatures and the canonical dyadic table can be compared as
+different registered projections of one selected grid. Their naming remains a
+design reconciliation, not an authority question. The reflexive opposite-sign
+motions are model roles, not causal particles.
 
 ## 5. Fences and kill criteria
 
@@ -118,7 +138,8 @@ Zero-Sum Resolution Equation
 
 1. **Trade is crossed gives; creation is a limit, not a move.** Never present the Brahmā frame as deployable — the settled Titan row forbids it, and this note depends on that ruling rather than bending it.
 2. **Keep the registers separate**: reflexive (5) vs dyadic (7); E2/V3 results belong to the reflexive register only.
-3. **This document is `[D]` until K2-signed.** Cite as staged, not canon.
+3. **This document remains `[D/I/C]` until its assumptions and convergence claim
+   are externally calibrated.** Cite as staged, not canon.
 4. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md`
 
 ⊙ = • × ○

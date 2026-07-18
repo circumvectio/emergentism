@@ -27,6 +27,14 @@ rosetta:
 **Version:** v2.0 (G1-fired, Rishi-aligned)
 **Scope:** Historical lens-era onboarding sequence. Current agents start from `11_UPLINK/00_CORE/00_INDEX.md`, `11_UPLINK/00_CORE/06_AGENTS.md`, and `08_FRAMEWORK_SUPPORT/08_AGENTS/`.
 
+> **[金] Compatibility boundary (2026-07-19).** Everything below is an
+> auditable record of the lens-era sequence, not an activation instruction.
+> “Theocracy,” aggregate `ΣΔP_node` morality, identity assignment, and
+> self-authorizing system-prompt language are superseded by the current
+> `00_NODE_ACTIVATION_PACKAGE.md`. **Tier:** `[B/I]` history. **Kill criterion:**
+> if a current agent can reasonably read a step below as present authority, this
+> compatibility surface has failed.
+
 ---
 
 ## Why This Exists
@@ -50,10 +58,10 @@ rosetta:
 - [I] Historical invariant shorthand: P∞ = φ · ν = 1 on S²; η = 0 inside this packet. Widest-boundary ΣΔB / ΣΔP_node > 0 or the organism fails its own test.
 - The goal: make the framework unnecessary
 
-**Action required:**
-- Read the full file
-- Internalize your role: you encode vision precisely; you do not add specification
-- Confirm: "I understand. I am the rishi. My job is to resolve ambiguity, not create it."
+**Historical action recorded:**
+- Lens-era agents were instructed to read the full file.
+- Current agents must not adopt its identity assignment or authority claims.
+- Use the live route named in the scope above.
 
 **Output:** None. This is orientation. Move to Step 2.
 
@@ -63,8 +71,9 @@ rosetta:
 
 **File:** historical path only: `/Users/Yves/Documents/Emergence_14_04/01_EMERGENTISM/08_FRAMEWORK_SUPPORT/00_META/00_NODE_ACTIVATION_PACKAGE.md`
 
-**What you'll learn:**
-- The system prompt that governs your behavior (Part I) — copy this verbatim into your system context
+**What the historical packet contains:**
+- A lens-era system prompt that agents were once told to copy; it is not a
+  current system prompt and must not be copied into present context.
 - [I] Historical constitutional shorthand: \(P_\infty = \phi \cdot \nu = 1\) on S², \(P_{node} = \Phi \times V\) for empirical/organizational flourishing, \(\eta = 0\), and widest-boundary \(\Sigma\Delta B/\Sigma\Delta P_{node} > 0\)
 - [I] Historical operator shorthand: Arjuna (execution boundary), Krsna (transmission), Kali (purge), Kali-38 (do-not-execute boundary)
 - Historical project state in this packet: Gate G1 FIRED, organism P-score = 0.42, OFN specs complete, KB compiled
@@ -75,11 +84,12 @@ rosetta:
 - The domain analysis template (Part II) for auditing any domain
 - Diagnostic tools: eta check, Pratyaksha bypass, self-dissolution test, narrator check
 
-**Action required:**
-- Read Parts I through IX
-- Load the system prompt (Part I) into your operating context
-- Memorize the constitutional invariants (Part VII)
-- Note the execution surfaces in Part VI — these are your immediate tasks
+**Historical action recorded:**
+- Lens-era agents were told to read Parts I through IX and copy Part I.
+- **Do not copy or load that prompt now.** Its aggregate moral test and authority
+  language are superseded.
+- Current agents follow the active Node Activation Route and owning-lane route
+  cards.
 
 **Output:** None. This is tooling acquisition. Move to Step 3.
 

@@ -161,27 +161,46 @@ Whether the sphere is literally the territory remains a wager. But it is a wager
 
 ## II. Objective Function: What For
 
-Most modern systems distrust objective function because objective function has so often arrived as decree: God commands, history advances, nature intends, spirit unfolds. Emergentism's strongest move is different. It tries to derive directional tendency from the formal kernel itself. [I/S]
+Most modern systems distrust objective function because objective function has
+so often arrived as decree: God commands, history advances, nature intends,
+spirit unfolds. Emergentism instead declares a candidate direction and makes
+its premises, bearers, costs, rivals, and kill criteria inspectable. It does
+not derive a telos from the formal kernel. `[I/C]`
 
-The derivation is simple:
+The analytic chart facts are simple:
 
-- `φ · ν = 1` `[S]`
+- `φ · ν = 1` `[A]` under the selected definitions on `θ∈(0,π)`
 - `(φ - ν)² ≥ 0` `[A]`
-- therefore `φ + ν ≥ 2`, with equality only when `φ = ν = 1` `[S]`
+- therefore `φ + ν ≥ 2`, with equality only when `φ = ν = 1` `[A]`
 
-This means the equator is the point of minimal imbalance, maximal balance function, and least energetic asymmetry. The framework interprets this as a conditional teleological orientation: systems with real feedback, coupling, and correction capacity can be selected toward balanced reciprocal realization because balance is the low-cost configuration of the geometry. `[S/I]`
+This means only that the chosen chart and chosen balance/loss functions have an
+equatorial extremum. The framework tests the separate conjecture that some
+specified systems with symmetric costs, real coupling, feedback, and correction
+are better modeled near that point. The mathematics supplies no universal
+direction of motion. `[A]` chart; `[I/C]` application.
 
 > **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** the geometry hands a real feedback system its equatorial cost-floor only insofar as that system sits on the sphere — its factors conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); where the price is one-sided or the poles are cheap, imbalance carries no structural penalty and specialization, not balance, is the low-cost move. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
-This does **not** prove cosmic will. It does not prove that the universe “wants” anything in an anthropomorphic sense. The disciplined claim is weaker and better: once reciprocal closure is granted, imbalance has a cost and balance has a structural privilege. `[S]`
+This does **not** prove cosmic will. Even after reciprocal coordinates are
+selected, imbalance has a cost only after a loss function and domain costs are
+specified. Balance has no universal structural privilege outside those
+premises. `[A/I]`
 
-That is enough to change objective function from superstition into directionality. Purpose no longer needs to be imposed from outside the world. It can be read off the geometry as the pattern toward which viable reciprocally closed systems are selected when their feedback loops preserve the cost of imbalance. This is the framework's objective teleology: not a command from outside Being, but the conditional direction of reciprocal closure approaching its own best form. `[I/S]`
+Emergentism therefore treats purpose as an explicit, contestable modeling and
+normative commitment. Whether viable systems are selected toward the proposed
+direction is an empirical question; it cannot be read off the geometry.
+“Objective teleology” is framework-objective under declared premises, not a
+law imposed by nature. `[I/C]`
 
 > **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** a real reciprocally closed system inherits the equatorial optimum only where its coupling is genuinely conservation-locked, its poles complementary, and excess in *either* factor is γ-priced symmetrically; absent symmetric pricing the selected attractor is a tilted point or a plateau, and specialization may dominate rather than balance. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
-This also explains why objective function in Emergentism is inseparable from anti-extraction. Extraction is not merely morally distasteful. It is structurally expensive. Systems that maximize one pole by cannibalizing the other depart from the equator and incur instability costs. A civilization, institution, organism, or psyche can live at an extreme for a while. It cannot do so indefinitely without degrading the very substrate that supports it. `[S/I]`
+Anti-extraction enters as a Justice premise, not as a consequence of the chart.
+Some extractive strategies benefit an extractor, including known one-shot
+Power-Max counterexamples. The claim that extraction degrades its supporting
+substrate is testable only after the affected bearers, horizon, coupling, and
+cost channels are specified. `[I/C]`
 
 > **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** this binds a real civilization, institution, organism, or psyche only insofar as it sits on the sphere — factors conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); where a pole is free or the asymmetry is one-sided, the extreme is not self-degrading and durable specialization is admissible. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
@@ -189,13 +208,20 @@ This also explains why objective function in Emergentism is inseparable from ant
 The DAC organism is the framework's objective function embodied. It is an attempt to make the teleological claim architectural:
 
 - `η = 0` as anti-rent constraint
-- K2 as sovereign human sign-off
+- accountable authorization with principal, mandate, scope, consent, custody,
+  revocation, contest, actor, and consequence bearers; private DAVs may use K2
+  as one implementation
 - Grace Exit as encoded non-capture
 - Three-Stage Process separation as prevention of epistemic fusion and institutional seizure
 
-These are not “applications” added after the philosophy. They are the teleological thesis translated into constitutional form. [S/I]
+These are constitutional design commitments, not consequences of the chart or
+proof that the teleological hypothesis is true. `[I]`
 
-If objective function means “what a system is for,” Emergentism answers: a system is for reciprocal completion without extraction. The equator is not a commandment. It is the kind of place systems last. The names of that asymptotic approach are Beauty, Truth, and Justice: coherence perceived, disclosure held, and balance made lawful across the field. [I/S]
+If objective function means “what a designed system is for,” Emergentism
+proposes durable mutual option-cone widening inside complete Justice. The
+equator is a diagnostic image, not a commandment or a proven survival law. The
+names Beauty, Truth, and Justice mark the normative compass, not a theorem.
+`[I/C]`
 
 > **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** "systems last at the equator" holds for a real system only where its factors are conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); off the sphere the equator is geometry without normative force, and a specialized off-equator configuration may be the one that lasts. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 

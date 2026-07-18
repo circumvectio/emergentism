@@ -38,14 +38,14 @@ Emergentism belongs here when spoken positively. It is not L6 Core State. L6 say
 | File | Current Path | Role |
 |---|---|---|
 | **The Seven-Layer Ontology of Reality** | `01_EMERGENTISM/05_COSMOLOGY/00_THE_SEVEN_LAYER_ONTOLOGY.md` | **Canonical 7-layer formulation: logarithmic line as primary geometry, each dimension with core question, geometric object, key equation, and ethical direction** |
-| **The Complete Ontology of Reality** | `01_EMERGENTISM/05_COSMOLOGY/00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md` | **Unified D0→D6 scaffold: each dimension, μ-limit crossing, dimensional manifestation of the trans-dimensional Titan grammar, log-coordinate expression, and Rosetta layer** |
+| **The Complete Ontology of Reality** | `01_EMERGENTISM/05_COSMOLOGY/00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md` | **Interpretive D0→D6 scaffold: candidate μ-crossings, selected Titan correspondence, log-coordinate expression, and Rosetta layer; not a derived physical ontology** |
 | **The Ontology Index** | `01_EMERGENTISM/05_COSMOLOGY/00_THE_ONTOLOGY_INDEX.md` | **Navigational hub: one entry point to the complete dimensional scaffold, with question-based routing** |
 | **The Geometric Ontology of Reality** | `01_EMERGENTISM/05_COSMOLOGY/00_THE_GEOMETRIC_ONTOLOGY_OF_REALITY.md` | **7-layer geometric re-expression: each dimension IS its geometric object (log line → sphere → Bloch → torus → Burrisphere → return). `[C]` proposal** |
 | The Argument: Emergence as Lens on Dasein | `01_EMERGENTISM/05_COSMOLOGY/00_THE_ARGUMENT_EMERGENCE_AS_LENS_ON_DASEIN.md` | The core argument arc — emergence, Titan transformations, logarithmic center, μ-limit, Riemann sphere |
 | Canonical formula block | `01_EMERGENTISM/05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md` | Formula compression + log-coordinate expression |
 | The Burrisphere | `01_EMERGENTISM/05_COSMOLOGY/00_THE_BURRISPHERE.md` | Source synthesis for the Burri Sphere / Burrisphere: formula, L0/L∞ boundary rows, equator, operator plane, and claim boundaries |
 | The Logarithmic Realignment | `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/40_THE_LOGARITHMIC_REALIGNMENT.md` | What changes when you center the number line at 1 — three charts, every framework equation in log coordinates |
-| **The Unified Dimensional Derivation** | `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/41_UNIFIED_DIMENSIONAL_DERIVATION.md` | **The four formal proofs (EFR 21–24) sequenced into a single acyclic derivation: Trinity → Sphere → Equilibrium → Closure → Ethics** |
+| **The Unified Dimensional Derivation** | `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/41_UNIFIED_DIMENSIONAL_DERIVATION.md` | **Kintsugi tombstone for the retracted Trinity→Sphere→closure→ethics derivation; original Git blob retained as provenance** |
 | Suda Cross-Validation Protocols | `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/39_SUDA_CROSS_VALIDATION_PROTOCOLS.md` | Three independent falsifiable tests for the manifold identity as a world-claim |
 | D5 seven generative actions | `01_EMERGENTISM/05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md` | `4 + 3` action grammar and constitutional firing discipline |
 | Emergentism phi resolution | `01_EMERGENTISM/05_COSMOLOGY/02_EMERGENTISM_CORE/00_EMERGENTISM_PHI_RESOLUTION.md` | Positive structure / D5-D6 boundary |

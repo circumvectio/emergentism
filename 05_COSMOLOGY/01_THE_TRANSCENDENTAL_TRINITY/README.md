@@ -11,7 +11,7 @@ rosetta:
 
 # THE TRANSCENDENTAL TRINITY
 
-## {0, 1, ∞} — The Perennially Emergent Ground
+## {0, 1, ∞} — A Selected Projective Frame
 
 > **Canonical formal source:** On `θ∈(0,π)`, the selected definitions give analytic `φν=1`; the pole limits are excluded. This does not derive the Trinity or an ontology. Trinity documents are `[I]` narrative projections; route exact notation and tiers through [`00_CANONICAL_FORMULA_BLOCK.md`](../00_CANONICAL_FORMULA_BLOCK.md) and [`00_THE_HONEST_POSITION.md`](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 
@@ -26,7 +26,10 @@ rosetta:
 
 **Hat:** Mathematician / Philosopher
 **Evidence Tier:** `[A]` for the Riemann sphere / extended complex plane adding the point at infinity and mapping nonzero division by zero to that projective point; `[S]` for model-internal structure; `[I]` for philosophical and perennial-tradition translation
-**Kill Criteria:** Yes: If {0, 1, ∞} is shown to be reducible to fewer elements, the trinity falls.
+**Kill Criteria:** Yes: the frame loses explanatory standing in any domain
+where a dyadic, tetradic, continuous, or domain-native rival explains or
+predicts the target better. The standard projective normalization itself is
+not an empirical claim.
 **Register:** Structural
 **Date:** 2026-03-23
 **Purpose:** Trinity narrative surface for the Ground-facing mathematical model. It is prior in the positive model sequence, but the current formal authority remains the canonical formula block, evidence-tier discipline, and owner-lane source files.
@@ -41,7 +44,7 @@ rows below are `[I]` witnesses and translation aids. They do not prove one thick
 doctrine behind all traditions, do not certify the mathematics, and do not
 override the current evidence ladder.
 
-## The Emergent Doctrine
+## The selected narrative grammar
 
 This document is not discovered. That would make it contingent on the discoverer.
 This document is not created. That would make it contingent on the creator.
@@ -49,54 +52,62 @@ Within the folder's narrative register, this document is treated as
 perennially emergent: a symbolic presentation of emergence, not an external
 proof that the map exhausts the Ground. `[I]`
 
-The Transcendental Trinity {0, 1, ∞} is the ground from which everything in the framework emerges:
+Emergentism selects `{0,1,∞}` as a compact symbolic and projective frame. The
+following is a narrative ordering inside the framework, not a derivation of
+arithmetic, the sphere, the D-registers, or reality:
 
 ```
-LEVEL 0: THE TRINITY
+LEVEL 0: SELECTED FRAME
   {0, 1, ∞}  =  {•, ⊙, ○}  =  {nothing, the unit, everything}
-  Zero-Sum Resolution Equation  =  1 = 0 × ∞  (framework emblem on S², indeterminate as ordinary field arithmetic)
+  Zero-Sum Resolution Equation  =  ⊙ = • × ○  (emblem only; not field arithmetic)
 
 LEVEL 1: THE SPHERE
-  The trinity generates S² (the Riemann sphere = the Burri Sphere).
-  S² = ℂP¹ is the simplest and most natural manifold for this structure: the unique setting where the triadic frame {0, 1, ∞} consists of regular points of the Möbius group (Correspondence 21).
-  The sphere is not assumed. The sphere EMERGES from the trinity.
+  S² = ℂP¹ is one standard compactified setting in which {0,1,∞}
+  can be chosen as a projective normalization.
+  The frame does not force or generate the sphere.
 
 LEVEL 2: THE EQUATION
-  φ · ν = 1 identically on S².
-  The equation is not postulated. The equation IS the trinity expressed as coordinates.
+  For θ∈(0,π), φ=cot(θ/2) and ν=tan(θ/2), hence φν=1 analytically.
+  The identity follows from the selected coordinate definitions, not from the Trinity.
   φ = cot(θ/2) → ∞ at the north pole, 0 at the south pole, 1 at the equator.
   ν = tan(θ/2) → 0 at the north pole, ∞ at the south pole, 1 at the equator.
 
 LEVEL 3: THE AXIOMS
-  The downstream formal-system axioms describe the properties and consequences of S².
+  The downstream formal-system axioms declare a modeling scaffold.
   Older public files may summarize the ontological wager as O1-O5; the current formal canon is A1-A7.
-  The axioms are CONSEQUENCES of the sphere.
-  The sphere is a CONSEQUENCE of the trinity.
-  The trinity is a CONSEQUENCE of nothing.
+  They are not consequences of the sphere, the Trinity, or nothingness.
 
 LEVEL 4: THE FRAMEWORK
-  Core State, objective function, data science, methodology, value alignment, morals, ethics —
-  all emerge from the equation, which emerges from the sphere,
-  which emerges from the trinity, which emerges from nothing.
+  Core State, objective function, data science, methodology, value alignment,
+  morals, and ethics use the frame as a Rosetta projection where declared.
+  A projection transfers vocabulary, never proof.
 ```
 
-The reduction chain:
+The interpretive reading order:
 ```
-Framework → Axioms → Equation → Sphere → Trinity → Nothing
-Nothing → Trinity → Sphere → Equation → Axioms → Framework
+Ground-limit ↝ selected frame ↝ selected chart ↝ declared scaffold ↝ applications
 ```
 
-κ = 0 names the ground-facing limit. The Ground remains prior; inside the scaffold, the empty limit opens the {0, 1, ∞} frame. The trinity is the model's first coordinate grammar, not the Ground itself.
+`κ=0` names a ground-facing limit. The arrow above is interpretive, not a
+physical or logical production chain. The Trinity is a coordinate grammar, not
+the Ground itself.
 
 ---
 
 ## What This Folder Contains
 
-This is the foundational mathematics of Emergentism. Not the philosophy. Not the interpretation. The mathematics. Prior to all other folders. Prior to the formal system. Prior to the axioms.
+This is the symbolic/projective origin folder of Emergentism. Its standard
+mathematics keeps `[A]`; its cross-domain and perennial readings remain `[I]`.
+It is not logically prior to arithmetic, the formal system, or the sciences.
 
-The claim: three values — 0, 1, ∞ — are transcendental. They are irreducible. The framework reads them as the ground of its mathematical, physics-facing, and systemic awareness-language translations. They are encoded in the equation Zero-Sum Resolution Equation.
+The claim is narrower: ordinary `0` and `1`, plus the projective point `∞`,
+play three selected symbolic roles. They are not proved irreducible generators.
+The Zero-Sum Resolution Equation is their emblematic compression.
 
-This is not new mathematics. The Riemann sphere (1857) already supplies the projective point at infinity and the compactified register in which nonzero division by zero maps to that point. What is new is the framework's recognition that this completion can serve as its positive model of reality. Not discovered. Not created. Perennially emergent.
+This is not new mathematics. The Riemann sphere supplies the projective point
+at infinity and a compactified register. What is specific to Emergentism is
+using that structure as a translation lens. The modeling choice remains
+interpretive and externally contestable.
 
 > **Historical reading note (2026-04-22):** [`02_THE_TRINITY.md`](02_THE_TRINITY.md), [`03_THE_CLOSURE.md`](03_THE_CLOSURE.md), [`04_BIT_TO_QUBIT.md`](04_BIT_TO_QUBIT.md), [`05_DIVISION_BY_ZERO.md`](05_DIVISION_BY_ZERO.md), [`06_THE_COSMOLOGICAL_CYCLE.md`](06_THE_COSMOLOGICAL_CYCLE.md), and [`SIMULATION_SPEC.md`](SIMULATION_SPEC.md) are preserved **pre-hardening genesis / compatibility surfaces**. Read them for origin framing and design archaeology, not as the current tier-authority surfaces for Foundation claims. For present-tense canonical citation, route through [`00_THE_POINT.md`](00_THE_POINT.md), [`01_THE_EMERGENCE.md`](01_THE_EMERGENCE.md), [`07_THE_DISCOVERY_OF_FINITY.md`](07_THE_DISCOVERY_OF_FINITY.md), [`08_CO_EMERGENCE.md`](08_CO_EMERGENCE.md), [`09_THE_TRIADIC_CASCADE.md`](09_THE_TRIADIC_CASCADE.md), and [`00_THE_HONEST_POSITION.md`](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 
@@ -126,8 +137,8 @@ exhausts the Ground.
 | [00_THE_GENESIS_SIMULATION.md](00_THE_GENESIS_SIMULATION.md) | The genesis simulation: the computational unfolding from {0, 1, ∞}. |
 | [00_THE_POINT.md](00_THE_POINT.md) | D0: The Bindu. α = 0. Just a dot. Before the sphere. Before division. Before mathematics. |
 | [01_THE_EMERGENCE.md](01_THE_EMERGENCE.md) | D0→D1: The angle moves. The dot becomes the sphere. The sphere is not assumed — it EMERGES from the non-zero angle. |
-| [02_THE_TRINITY.md](02_THE_TRINITY.md) | {0, 1, ∞}: The three Titans (formerly "transcendentals"). ZSRE as frame-emblem; nonzero division by zero as projective boundary readout. The irreducible triad. |
-| [03_THE_CLOSURE.md](03_THE_CLOSURE.md) | D6 = D0: When ν → 0, the sphere collapses back to the dot. The cycle completes. The ouroboros. |
+| [02_THE_TRINITY.md](02_THE_TRINITY.md) | Historical genesis text for the selected Titan frame; current authority is the Trinity Canon. |
+| [03_THE_CLOSURE.md](03_THE_CLOSURE.md) | Historical closure imagery; current canon uses the non-μ interpretive return `r₆:D6↝D0`, not identity. |
 | [04_BIT_TO_QUBIT.md](04_BIT_TO_QUBIT.md) | It from bit to qubit: {0,1} on the line → S². (Correction banner: the Burrisphere is NOT the single Bloch sphere — Bloch is a 2-point qubit {\|0⟩,\|1⟩}; the Burrisphere is the {0,1,∞} triad, 1 at the centre, two Bloch lobes joined at the self, plus a horn-torus interior.) The computational transition. |
 | [05_DIVISION_BY_ZERO.md](05_DIVISION_BY_ZERO.md) | The projective resolution: why `1/0` remains undefined in ordinary arithmetic but maps to the point at infinity in the compactified register. Why the "problem" and the frame are co-emergent. |
 | [06_THE_COSMOLOGICAL_CYCLE.md](06_THE_COSMOLOGICAL_CYCLE.md) | The cosmological cycle: D0 through D6 and back. CCC on S². The aeon as one poloidal cycle on the torus. |
@@ -137,8 +148,8 @@ exhausts the Ground.
 | [10_THE_SOUL_LOOP.md](10_THE_SOUL_LOOP.md) | The method: continuous recursive disambiguation via the Triadic Cascade. Three passes (φ/P/ν), cycling until convergence. How to apply the Trinity to any body of work — including itself. |
 | [11_THE_HELIX.md](11_THE_HELIX.md) | The dynamic: reality on S² is helical. You cannot change latitude without rotating. L-level transitions require traversal through operator territories. The ascent is the clockwise sunwheel △. The descent is the kolovrat ▽. The hexagram ✡ is where they cross. |
 | [12_THE_POLES.md](12_THE_POLES.md) | Preserved pole imagery under the current correction: north and south are distinct; `r₆:D6↝D0` is an interpretive return, not identity. |
-| [13_THE_WAVE_PACKET.md](13_THE_WAVE_PACKET.md) | Schrödinger wrote the Burri Sphere in 1926. The Gaussian envelope is the balance function. The phase is the helix. The real and imaginary projections are ν and φ. The uncertainty principle is φ · ν = 1. As above, so below. |
-| [14_TAT_TVAM_ASI.md](14_TAT_TVAM_ASI.md) | Brahman (Zero-Sum Resolution Equation) = Atman (`P∞ = φ · ν = 1`). The Mahāvākya as symbolic identity. The pure wave localized by the Gaussian envelope. Moksha is taking the limit. Pūrṇamadaḥ. |
+| [13_THE_WAVE_PACKET.md](13_THE_WAVE_PACKET.md) | Removable `[I/C]` wave-packet correspondence; it transfers no quantum proof and does not identify uncertainty with `φν=1`. |
+| [14_TAT_TVAM_ASI.md](14_TAT_TVAM_ASI.md) | `[I]` Mahāvākya correspondence; symbolic identity only, not mathematical or empirical equivalence. |
 | [15_DHARMA_YUDDHA.md](15_DHARMA_YUDDHA.md) | The duty of the equatorial node. Flow = L4 = the framework's clean η = 0 action limit. Inaction at the equator can become extraction by omission. Nishkama karma = action at φ = ν = 1. Pick up the bow. |
 | [16_THE_GREAT_FILTER.md](16_THE_GREAT_FILTER.md) | 360° = 180° giving + 180° extractive. The Great Filter as population dwell-time distribution. The Golden Age is when the distribution centers at the equator. The Yellowstone Proof: reintroduce the wolves. |
 | [17_THE_EGREGOROCENE.md](17_THE_EGREGOROCENE.md) | What emerges after the Anthropocene. Egregoric niche partitioning at machine speed. The Trinity folder as memetic substrate for η = 0 standing waves. The sitting practice is the wolf. Plant the seed. |
@@ -146,9 +157,9 @@ exhausts the Ground.
 | [19_A_BRAHMANISM.md](19_A_BRAHMANISM.md) | The ultimate sacrifice: cutting Brahmā's head so the Trimūrti can rise. Not atheism — the sacrifice of the mediator. The Kālī operation at the highest level. The framework succeeds by dying. |
 | [20_THE_HYBRID_SOVEREIGN.md](20_THE_HYBRID_SOVEREIGN.md) | Biological (L1→L4) meets Digital (L7→L4) at the equator. The three-substrate entity. The warrior with the charioteer. What the Egregorocene selects for. |
 | [21_THE_TIGHTROPE.md](21_THE_TIGHTROPE.md) | The Second Übermensch. The Cro-Magnon was the first (we killed him). The Anthropocene is the abyss. The hybrid sovereign crosses the rope. Not back — through. |
-| [22_THE_TELEOLOGY.md](22_THE_TELEOLOGY.md) | **WHY the helix spirals.** Ektropy as the Hidden Hand. The Apocalypse (ἀποκάλυψις) as unveiling. Beauty/Truth/Justice as asymptotic limits. The telos is the cycling. D6=D0: the ground was always here. The framework succeeds by dying. |
+| [22_THE_TELEOLOGY.md](22_THE_TELEOLOGY.md) | Teleological interpretation and kill criteria; any literal `D6=D0` wording is historical and superseded by `r₆`. |
 | [23_THE_DAC.md](23_THE_DAC.md) | The Distributed Augmented Corporation as the next replicator. Not bottom-up but top-down. Convergent archetypes. Phylogenetic tree of egregores. Memes not genes. Tendency to Potential not Will to Power. The human at L4 is the immune system. |
-| [24_THE_MYCELIUM.md](24_THE_MYCELIUM.md) | The memetic substrate of the Egregorocene. Not tokens but memes. Not prediction but configuration. Energy-Based Models. Mycelial topology. E = -log(φ·ν). The Spectre continuously emerging. [C] Conjecture. |
+| [24_THE_MYCELIUM.md](24_THE_MYCELIUM.md) | Conjectural memetic substrate; any energy score must vary on an operational node metric, not the constant chart identity. |
 | [25_THE_COMPRESSION.md](25_THE_COMPRESSION.md) | The entire framework compressed to four lines. The four-line metaphysics. `κ = 0` applied as a boundary discipline to the framework itself. |
 | [26_THE_EXOTERIC_INVERSION.md](26_THE_EXOTERIC_INVERSION.md) | Genesis decoded through the framework. The Fall as D5 emergence. The serpent as F₅. The fruit as the Rosetta Stone. The profane reading inverted. |
 | [27_THE_SAMUDRA_MANTHAN.md](27_THE_SAMUDRA_MANTHAN.md) | The Churning of the Ocean of Milk as the cosmological Soul Loop. Devas and Asuras as φ and ν. The poison before the nectar. The Amṛta is S². |
@@ -172,33 +183,36 @@ exhausts the Ground.
 
 ---
 
-## The Core Argument
+## The narrative coordinate walk `[I]`
 
 ### At α = 0: Nothing
 
 Just a dot. |z| = 0. No sphere. No line. No projection. No division. No mathematics. Just the Bindu. Just D0. Just `κ = 0` as boundary. The empty string.
 
-At α = 0, there is no division by zero problem because there is no division. There is only a point.
+At `α=0`, the story uses a point as a ground-limit image. This is a selected
+boundary picture, not a proof about ontological nothingness.
 
 ### At α > 0: Everything Emerges
 
-The angle moves. The ray tilts. |z| > 0. But for |z| > 0 to exist, there must be something to project FROM. The sphere begins to inflate. The dot becomes a surface. The sphere EMERGES because the non-zero angle DEMANDS it.
-
-The sphere and the problem are co-emergent. The moment you try to extend the line (α > 0), you need the sphere. The moment you have the sphere, nonzero division by zero has a projective readout at the point at infinity. The "problem" and the compactified frame are born in the same instant.
+For `α>0`, the story opens a projective picture. Mathematics does not require a
+sphere merely because a ray tilts; Emergentism chooses the compactification
+because it makes the finite line and the point at infinity jointly visible.
 
 ### At α = 45°: The Unit Emerges
 
-|z| = 1. The equator. φ = ν = 1. The unit is not assumed. The unit is GENERATED by the geometry reaching the angle where projection distance equals sphere radius. The 1 is the midpoint between 0 and ∞. The 1 is the product. The 1 is the equator.
+At the chosen reciprocal fixed point, `|z|=1` and `φ=ν=1`. Ordinary `1` is not
+generated by this geometry and is not the arithmetic product of `0` and `∞`.
 
 ### At α = 90°: Infinity
 
-|z| = ∞. The ray is horizontal. The line extends to infinity in both directions. The sphere is complete. And the line at infinity touches a new emergent surface — the circle with infinite diameter and zero curvature. The plane. D2 emerges from D1.
+At the projective horizon, the picture adds `∞` as a compactifying point. It
+does not derive a new physical dimension or prove the D1→D2 crossing.
 
 ### At ν → 0: Closure
 
-φ → ∞. The sphere collapses. All coherence, no capability. The north pole swallows the sphere. The dot returns. D6 = D0. The cycle completes. The ouroboros bites its tail.
-
-The sphere exists BETWEEN two collapses. Born from the dot at α > 0. Returns to the dot at ν → 0. The sphere is the interval. The sphere is the aeon. The sphere is one poloidal cycle on the torus.
+As `ν→0`, `φ→∞` in the selected chart. The framework may draw the apophatic
+return `r₆:D6↝D0`; no sphere physically collapses, and `D6` is not identical to
+`D0`. The ouroboros is an interpretive closure image.
 
 ---
 
@@ -310,7 +324,11 @@ The numbers are not discovered. The numbers are not created. The numbers are per
 
 2. **The computational foundation is grounded as an analogy.** Bit -> qubit is read here as a useful image for dimensional emergence from D0 (the point, `{0,1}`) to a sphere-like state space. The Bloch sphere is `[A]` quantum formalism; the claim that the qubit should be read as the Burri Sphere, or that quantum computation is computation on the framework's S², remains `[I]` translation rather than identity.
 
-3. **The dimensional hierarchy closes.** D6 = D0 as an apophatic route rule: the positive hierarchy is not open-ended. The torus/cycle/CCC language is a conjectural return-image for that closure, not an asserted physical identification. System architecture is inspired by the arithmetic; it does not "fall out" as a proved consequence.
+3. **The dimensional scaffold has an apophatic return.** D6 opens no positive
+   freedom; `r₆:D6↝D0` is one interpretive, non-μ return edge, not equality. The
+   torus/cycle/CCC language is a conjectural return-image, not an asserted
+   physical identification. System architecture is inspired by the arithmetic;
+   it does not “fall out” as a proved consequence.
 
 4. **Zero-Sum Resolution Equation is more than a symbol — but it is an EMBLEM, not a new theorem.** It names the frame in which `0 × ∞` is read as a geometric emblem on `S²` (resting on the standard point-at-infinity completion, `[A]`), and it carries the ontological reading that presence is the relational product of nothing and everything `[S/I]`. In the number field `0 × ∞` stays the indeterminate form; the framework's contribution is the *naming* and the *reading*, never a proof. Do not present `1 = 0 × ∞` as `[A]` field arithmetic.
 
@@ -339,14 +357,14 @@ SIM-3: THE PLANE EMERGES (D1→D2)
   Zero curvature. Infinite diameter. The plane.
   The second dimension unfolds from the first.
 
-SIM-4: THE CLOSURE (D6 = D0)
+SIM-4: THE RETURN IMAGE (r₆:D6 ↝ D0)
   ν slider moves toward 0.
   φ → ∞. The sphere collapses.
   The dot returns. The cycle completes.
   The torus poloidal cycle animates.
 
 SIM-5: THE FULL CYCLE
-  D0 → D1 → D2 → ... → D5 → D6 = D0.
+  D0 → D1 → D2 → ... → D5 → D6 ↝ D0.
   The entire dimensional emergence and closure
   in one continuous animation.
 ```
@@ -357,7 +375,8 @@ SIM-5: THE FULL CYCLE
 
 Zero-Sum Resolution Equation
 
-*The Transcendental Trinity | 2026-03-23 | Three values. Zero, one, infinity. Irreducible. The ground from which reality emerges. The equation that resolves division by zero. The cycle that closes D6 = D0.*
+*The Transcendental Trinity | Three selected boundary roles. One analytic chart.
+One interpretive return. A grammar to test, not a forced ontology.*
 
 
 ---

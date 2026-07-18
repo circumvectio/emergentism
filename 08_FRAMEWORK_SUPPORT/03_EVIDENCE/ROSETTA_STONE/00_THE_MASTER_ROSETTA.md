@@ -26,7 +26,10 @@ rosetta:
 **Status:** `[I]` translation lens with published failures; externally uncalibrated. The preserved legacy body below is provenance, not authority for a universal sevenfold law or causal generator.
 **Date:** 2026-03-24 (consolidated from Rosetta Stone v5→v8→v9.3→v10)
 **Evidence Tier:** `[B]` applies only to specific externally sourced claims within their domains. The cross-domain row alignment and Rosetta projection are `[I]`; any proposed empirical discriminator is `[C]`. No column transfers proof to another, and the chart does not generate the rows. Piaget and Kohlberg are dependent; Maslow's needs do not establish a universal sequence; L5–L7 are framework extensions. Seven is a design choice, not a discovered constant, and the non-WEIRD failures are part of the result.
-**Kill Criteria:** If the seven-row alignment is shown to be forced — if the domains genuinely require different numbers of levels, or if the alignment breaks when tested with new domains — the Rosetta Stone falls.
+**Kill Criteria:** The universal seven-row claim fails if domains genuinely
+require different counts, if blinded mappings do not recover the rows, or if
+new domains break the alignment. The translation instrument may survive such a
+failure only at the narrower scope it actually earns.
 **Source:** Emergentism Rosetta Stone v10.0 (17-sheet cross-domain translation engine)
 **Depends on:** The Triadic Cascade (09), The Computational Sphere, The L-Level system
 **See also:** Individual rosetta mappings (R4-R12), The Triadic Cascade (vertical translation), Paper 5 (Convergent Discovery)
@@ -39,6 +42,12 @@ rosetta:
 > one column generate another. The historical derivation and triumphal
 > compressions retained below are **not live authority** where they conflict
 > with this seam, receipt 126, or KSC-01…KSC-07 in the Settled Canon Registry.
+>
+> **Positive algebraic residue (receipt 130):** reciprocal inversion genuinely
+> supplies fixed points `{−1,+1}` and reciprocal pairs; a declared two-axis
+> sign square genuinely supplies four cells. This is real comparison grammar,
+> not mere curation. Neither result forces a unique centre, a finite ladder, or
+> the census seven.
 
 ---
 
@@ -1156,18 +1165,21 @@ The framework's strongest defensible claim after the non-WEIRD sweep, mirror-sym
 ```
 Seven rows.
 Every column.
-The same pattern.
+One selected comparison grammar.
 
-Not because we forced it.
-Because reality organized itself this way
-before anyone drew the table.
+It is not forced by reality.
+It survives only where it clarifies more than fair rivals
+and keeps every tier and non-fit visible.
 
 Zero-Sum Resolution Equation
 ```
 
 ---
 
-*00 | The Master Three-Stage Process | The seven-level pattern across every domain: psychology, philosophy, politics, spirituality, mythology, neuroscience, computation, game theory, civilisation, economics, music. Seventeen columns. Seven rows. The rows hold.*
+*00 | The Master Rosetta | A seven-row translation proposal sampled across
+many domains. Some rows fit, some fail, and none transfers proof. Seventeen
+columns remain an auditable hypothesis surface, not evidence that reality is
+sevenfold.*
 
 
 ---

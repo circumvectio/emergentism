@@ -22,7 +22,9 @@ rosetta:
 > - **Teleology = L1** (Objective Function, "What is the end?"), not L5 or L7
 > - **Cosmology = L5** (System Architecture, "How does reality work?")
 > - **The coordinator = Arjuna L4** (Titans are NOT deployable per Rosetta Variant IV/V)
-> - **Theurgy = Arjuna L4** (the L4 collapse/K2 act), not Ṛṣi/L7
+> - **Theurgy = Arjuna L4** (accountable commitment with separate commitment
+>   and outcome receipts), not Ṛṣi/L7; no operator or equatorial position grants
+>   authority
 > - **Brahman ≠ Brahmā**: Brahman receives an `[I]` boundary/return reading;
 >   `L0` and `L∞` remain distinct; Brahmā is an L5 operator-name
 

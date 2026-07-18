@@ -45,7 +45,8 @@ Examples:
 
 - the D5/D6 boundary
 - the register-based resolution of the remaining philosophical questions
-- D5 as strong in genesis and weak in governance
+- μ₄/D5 as a `candidate_strong` emergence crossing whose reduction status is
+  currently unresolved; governance remains an independent institutional issue
 
 ### Open
 
@@ -76,7 +77,8 @@ Questions intentionally parked until a gating condition is met.
 Examples:
 
 - expensive new-lab builds when a literature path can answer the first question more cheaply
-- large public deployment claims before `K2`, governance, and anti-capture architecture are hardened
+- large public deployment claims before accountable authorization, governance,
+  and anti-capture architecture are evidenced
 
 ---
 
@@ -139,7 +141,7 @@ These are the strongest next papers implied by the present corpus:
 4. **Paper L — The Phi-Meter Without a New Instrument**
 5. **Paper M — The Sphere as Translation Layer**
 6. **Paper N — Productive Transcendental Wagers**
-7. **Paper O — D5 as Strong Emergence in Genesis, Weak Emergence in Governance**
+7. **Paper O — Testing the μ₄/D5 Emergence Crossing and Its Reductions**
 8. **Paper P — The SU(3) Obstruction on Bare `S²`**
 9. **Paper Q — From `S²` to `3+1`: The PSL(2,C) Bridge**
 10. **Paper R — Retrospective eta-Zero**
@@ -155,7 +157,7 @@ These are the strongest next papers implied by the present corpus:
 If only a few papers are written next, write them in this order:
 
 1. **Paper I — The Known Unknowns Program**
-2. **Paper O — D5 as Strong Emergence in Genesis, Weak Emergence in Governance**
+2. **Paper O — Testing the μ₄/D5 Emergence Crossing and Its Reductions**
 3. **Paper X — Information Topology and Macro-Constraints**
 4. **Paper M — The Sphere as Translation Layer**
 5. **Paper N — Productive Transcendental Wagers**

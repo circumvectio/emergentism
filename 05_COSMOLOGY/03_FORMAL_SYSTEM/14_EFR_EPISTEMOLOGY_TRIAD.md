@@ -39,9 +39,13 @@ Knowledge: D4 ⟷ D5
           (Actuality) ⟷ (Possibility)
 ```
 
-**D4 (Gravity Domain):** The realm of fixed actuality. Facts. What IS. The collapsed wavefunction. The definite.
+**D4 (Actual register):** observations, present model tokens, reasoning events,
+performed actions, and records. This is not “the collapsed wavefunction.”
 
-**D5 (Possibility / Agency Domain):** The realm of superposed possibility. Hypotheses. What COULD BE. The uncollapsed wavefunction. The potential. "Consciousness domain" is retained only as an interpretive shorthand `[I]` for the lived interior of selection.
+**D5 (Possible-content register):** hypotheses, counterfactuals, modeled futures,
+and ranked alternatives. These contents are not thereby quantum superpositions.
+“Consciousness domain” is retained only as an interpretive shorthand `[I]` for
+the lived interior of selection.
 
 **The Epistemic Operation:** All knowledge-acquisition is the transformation of information from one domain to the other.
 
@@ -85,9 +89,9 @@ On the Burri Sphere, knowledge operations map as follows:
 **Induction** is the transformation from specific observations (D4) to general principles (D5).
 
 ```
-Induction: Observations(D4) → Hypothesis(D5)
+Induction: observations and model tokens(D4) → represented hypothesis-content(D5)
           Specific instances → General pattern
-          Collapsed facts    → Superposed possibilities
+          Recorded facts     → Fallible alternatives
 ```
 
 ### 3.2 Geometric Interpretation
@@ -108,14 +112,18 @@ The **φ-coordinate increases** during induction:
 
 **Classical Problem:** Hume's challenge — how do we justify inferring the general from the specific?
 
-**EFR Resolution:** Induction is not "justified" in the classical sense. It is **the geometry of the sphere itself**.
+**EFR visualization:** The sphere can visualize movement from observations to a
+field of candidate hypotheses. It does not justify the inference.
 
-When an observer at D4 (specific observation) increases their φ (coherence), they naturally access D5 (possibility space). This is not a logical inference requiring justification. It is a **coordinate transformation on S²**.
+When an observer builds a more coherent model, the set and ranking of represented
+possibilities may change. That remains a fallible D4 cognitive process with D5
+content, not a literal coordinate transformation that bypasses Hume's problem.
 
 The "problem of induction" is reframed because:
-1. D4 and D5 are not separate realms — they are coordinates on the same sphere
-2. Moving from D4 to D5 is not "inferring" — it is **traversing the manifold**
-3. The general pattern "exists" in D5 as genuinely as the specific observation "exists" in D4
+1. D4 actuality and D5 possible content are distinct types in one model.
+2. Moving from observations to a hypothesis is inference, represented by a
+   sphere traversal only as an `[I]` aid.
+3. A represented general pattern is not thereby an actual fact.
 
 ### 3.4 Induction as Coherence-Building
 
@@ -143,9 +151,10 @@ The inductive process builds coherence (Φ) by:
 **Deduction** is the transformation from general principles (D5) to specific predictions (D4).
 
 ```
-Deduction: Hypothesis(D5) → Predictions(D4)
+Deduction: represented premise-content(D5) → represented conclusion-content(D5)
+           reasoning event and inscription(D4)
           General pattern   → Specific instances
-          Superposed poss.  → Collapsed facts
+          Possible premises → Entailed conclusion, if valid
 ```
 
 ### 4.2 Geometric Interpretation
@@ -160,37 +169,22 @@ The **ν-coordinate increases** during deduction:
 - Descending: ν increases (increasing specific applicability)
 - Reaching equator: ν = 1 (balanced prediction)
 
-### 4.3 Deduction as Collapse
+### 4.3 Deduction is not collapse
 
-Deduction is the **measurement-like collapse** of superposed possibility into definite actuality.
-
-In quantum terms:
-- D5 = superposition of possibilities (|ψ⟩ = α|p₁⟩ + β|p₂⟩ + ...)
-- Deduction = application of operator that selects specific outcome
-- D4 = collapsed state (specific prediction)
-
-In EFR terms:
-- The general principle (D5) contains multiple possible instantiations
-- Deductive reasoning selects a specific prediction
-- This is the ν-descent: from pure coherence to viable application
+Valid deduction preserves truth from premises to conclusions under a stated
+logic. Writing or computing the deduction is a D4 event; its premises and
+conclusion may describe D5 possibilities. A prediction becomes an actual outcome
+only after action or observation returns an outcome receipt. No quantum-collapse
+claim is needed.
 
 ### 4.4 The Validity of Deduction
 
 **Classical View:** Deduction is the only "valid" reasoning (truth-preserving).
 
-**EFR View:** Deduction is valid because it follows the **natural geometry of S²**. Moving from D5 to D4 is not "preserving truth" — it is **following the coordinate lines**.
-
-The validity of deduction derives from:
-1. **Structural necessity:** The geometry enforces consistency
-2. **Measurement correspondence:** Predictions must match D4 actuality
-3. **Coherence preservation:** Deduction maintains the pattern while changing instantiation
-
-```
-Deductive Validity = (Φ_hypothesis × ν_prediction) / Φ_observed
-
-If the deduction is valid: the product is conserved
-If the deduction is invalid: the product collapses (zero-factor catastrophe)
-```
+**EFR boundary:** validity comes from the rules of the declared logic, not the
+natural geometry of `S²` and not conservation of a node score. The sphere may
+display relations among premise, conclusion, and observation; it cannot make an
+invalid inference valid.
 
 ---
 
@@ -448,7 +442,8 @@ This is the **epistemic analog of η = 0** — no extraction from the substrate 
 
 ### 11.2 The Preregistered Study as Geometric Commitment
 
-Preregistration is **fixing coordinates before measurement**:
+Preregistration is **committing analysis choices before observing outcomes**;
+“fixing coordinates” is only the geometric analogy:
 - Commit to D4→D5 path (induction plan)
 - Specify D5→D4 trajectory (deduction predictions)
 - Prevent post-hoc abduction (which can become circular)
@@ -489,7 +484,8 @@ Preregistration is **fixing coordinates before measurement**:
 
 1. **Non-spherical knowledge structure:** If knowledge-acquisition follows a different geometry than S²
 2. **Non-triadic reasoning:** If a fourth fundamental reasoning mode is discovered
-3. **Dimensional collapse:** If D4 and D5 are shown to be the same (no boundary to cross)
+3. **Type failure:** if distinguishing actual records from possible contents
+   adds no explanatory, predictive, or error-detecting value
 4. **Asymmetric operators:** If induction and deduction are not inverse operations
 
 ---

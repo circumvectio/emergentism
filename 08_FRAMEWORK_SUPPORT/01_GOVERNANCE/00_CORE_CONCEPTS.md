@@ -199,7 +199,9 @@ The framework is designed to die if wrong. Every prediction has a specific condi
   baselines match or beat multiplicative agents under the current constrained
   protocol, or if the effect disappears once coupling, long horizon, and
   enforced `η = 0` are controlled.
-- Eq. 7: Killed if the open-sphere product identity varies >1 order of magnitude
+- Applied reciprocal-chart claim: killed in a domain when operationalized
+  variables do not follow the declared reciprocal relation or a fair rival
+  predicts/intervenes better. The analytic identity itself is definitional.
 - Golden Age Hypothesis: Killed if Jaynes' bicameral mind hypothesis is disproved — if ancient humans had the same narrative systemic awareness as moderns, the neurological foundation collapses. (Note: the Raktabija dynamic survives independently of Jaynes.)
 - Golden Age Hypothesis (terminal kill): Killed if Jaynes' bicameral mind hypothesis is falsified independently of this framework, AND no alternative neurological mechanism supports the Golden Age coordination claim. (This is the strongest kill condition: even non-Jaynes evidence for ancient coordination must exist for the hypothesis to survive.)
 
@@ -213,10 +215,10 @@ The framework is designed to die if wrong. Every prediction has a specific condi
 
 ```text
 Zero-Sum Resolution Equation
-P∞ = φ · ν = 1 on S²
-P_node = Φ × V (node-level downstream relation)
-η = 0 (enforced conditional equilibrium / structural optimum; attractor claims require correction dynamics and receipts)
-Dyadic A2: ΔP_node,i > 0 and ΔP_node,H > 0 under η = 0; ΣΔB / ΣΔP_node audits balance
+P_chart := φ · ν = 1 for the selected open reciprocal chart
+P_node := Φ × V (selected normalized conjunctive instance; external fit [C])
+η = 0 (necessary non-extraction boundary, never sufficient Justice)
+Syntropic: J and Δ_TW_i > 0 and Δ_TW_H > 0 and every other bearer nonnegative
 5 independent axioms: O1, O2, O4, O5 + A7 (O3 is a corollary)
 [A] [B] [S] [I] [D] [C] (the honesty system)
 Kill conditions on every claim
@@ -232,12 +234,13 @@ Corrections are more important than claims
 - [The Core State of Being](../../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md) -- Ground, Being, Dasein, beings
 - [The Computational Sphere](../../05_COSMOLOGY/00_THE_COMPUTATIONAL_SPHERE.md) -- foundational methodology: reduction toward `κ = 0` as boundary
 - Glossary -- quick-reference terminology for all audiences
-- Formal System: Power-Max Lemma -- formal proof of cooperation under coupling
-- Formal System: Triadic Stability -- uniqueness proof for the triadic structure
+- Formal System: Power-Max Lemma -- Justice-constrained declared objective; extraction counterexample preserved
+- Formal System: Triadic Stability -- retracted uniqueness proof; selected triadic correspondence only
 - [Three Hats](00_THREE_HATS.md) -- which voice is speaking (scientist / philosopher / builder)
 - [Naming Reconciliation](00_NAMING_RECONCILIATION.md) -- canonical L-level, operator, and naming authority
 
-*Core Concepts | 2026-03-22 | Single source of truth. Other documents cite this.*
+*Core Concepts | downstream summary. The named source owners and Settled Canon
+Registry control every conflict.*
 
 
 ---

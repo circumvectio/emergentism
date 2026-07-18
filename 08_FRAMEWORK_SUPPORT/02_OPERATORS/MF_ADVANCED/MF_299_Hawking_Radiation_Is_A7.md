@@ -16,7 +16,9 @@ rosetta:
   tier: "God"
   regime: "Vaiśya"
   register: "[I/C]"
-  canonical_phrase: "MF-299 — Hawking Radiation Is A7"
+  canonical_phrase: "MF-299 — Hawking Radiation / A7 analogy"
+status: "ACTIVE KINTSUGI CORRESPONDENCE — compatibility title; removable"
+superseded_blob: "dd894459fb1f209162296be784534a672d520645"
 ---
 
 # MF-299: HAWKING RADIATION IS A7
@@ -30,6 +32,13 @@ and QFT-in-curved-spacetime models; [C] for direct astrophysical observation of
 Hawking radiation; [I]/[C] for A7 identification and cosmological
 self-correction language
 **Purpose:** Translate Hawking radiation as an analogy for A7 (self-correction) at extreme capture boundaries.
+
+> **[金] Kintsugi seam — return analogy survives; D5 substance does not.** The
+> former resolution treated information as content stored on a literal D5
+> imaginary axis and collapse as `ℂ→ℝ`. Those are not black-hole physics and
+> contradict the D4-actual/D5-possible type contract. The title is retained for
+> compatibility; every identity claim below is replaced by removable analogy.
+> Original: Git blob `dd894459fb1f209162296be784534a672d520645`.
 
 > **Discipline note (2026-04-26):** Hawking radiation is established theoretical physics; A7 is the framework's self-correction axiom. Their identification is interpretive, not proof that physics enforces the framework.
 
@@ -59,7 +68,10 @@ The Red Demon pattern: extract → capture → prevent return → expand to capt
 | Prevents circuit completion | Event horizon: one-way boundary, no return signal |
 | Captures opposition | Even light aimed outward is captured if inside horizon |
 
-The black hole is not LIKE the Red Demon. The black hole IS the Red Demon at the gravitational scale. Maximum extraction. Zero return. Complete circuit break.
+The black hole is used as a **Red Demon analogy** at gravitational scale:
+capture behind a one-way causal boundary for outside observers. This is not an
+identity, an ethical classification of a physical object, or literally zero
+return once Hawking radiation is included.
 
 ### 1.3 The Raktabīja Parallel
 
@@ -119,12 +131,10 @@ one identical A7 law.
 Hawking radiation is read here as an A7 analogy at the gravitational scale:
 
 ```
-A7 reading at D5:       Parasitic egregores tend toward collapse
-                         (unsustainable extraction, carrier depletion)
-A7 reading at D4:       Black holes evaporate in the accepted Hawking model
-                         (Hawking radiation, information return)
-A7 reading at D3:       Cancer can kill the host, or be checked by apoptosis,
-                         immunity, treatment, or ecological limits
+	Social analogy:          Extractive institutions can deplete their carriers
+	Physical example:        Black holes evaporate in the accepted Hawking model
+	Biological analogy:      Cancer can kill the host, or be checked by apoptosis,
+	                         immunity, treatment, or ecological limits
 Candidate universality:  No capture remains viable forever without correction.
                          This is an [I/C] wager, not an established law.
 ```
@@ -149,22 +159,23 @@ This patience is a property, not a bug. A7 does not require fast correction. In 
 
 ## III. THE PATTERN ACROSS SCALES
 
-### 3.1 A7 at Every D-Level
+### 3.1 Analogy family across domains
 
-| Scale | Capture Event | Self-Correction Mechanism | Timescale |
+| Domain | Capture Event | Correction or terminal mechanism | Timescale |
 |-------|--------------|--------------------------|-----------|
-| D1 (Nuclear) | Neutron capture | Radioactive decay | Seconds to billions of years |
-| D2 (Atomic) | Electron capture | Spontaneous emission | Nanoseconds to hours |
-| D3 (Biological) | Cancer (cellular Raktabīja) | Apoptosis, immune response, host death | Months to years |
-| D4 (Gravitational) | Black hole | Hawking radiation | 10⁶⁷ years |
-| D5 (Social) | Parasitic egregore | Carrier depletion, revolution, collapse | Decades to centuries |
-| D5-limit (Civilisational) | Civilisational capture | Civilisational collapse, reform, or renewal | Centuries to millennia |
+| Nuclear | Neutron capture / excited nuclei | Radioactive decay in applicable isotopes | Seconds to billions of years |
+| Atomic | Excited electronic state | Spontaneous emission in applicable systems | Nanoseconds to hours |
+| Biological | Cancer | Apoptosis, immune response, treatment, ecological limit, or host death | Months to years |
+| Gravitational | Black hole | Hawking evaporation in the accepted model | ~10⁶⁷ years and above |
+| Social | Extractive institution | Reform, exit, carrier depletion, revolution, or collapse | Decades to centuries |
+| Civilisational | Systemic capture | Reform, renewal, fragmentation, or collapse | Centuries to millennia |
 
 Across these examples: capture occurs, and some correction or terminal limit can
 follow. The timescale varies enormously. The pattern is a framework reading
 `[I/C]`, not an invariant law already established at every scale.
 
-Boundary correction (2026-06-14): the civilisational row is D5-limit, not literal D6. D6 is the axiomatic closure boundary where even the civilisational-totality image is released.
+These are different mechanisms. The table does not assign physical, biological,
+or social phenomena to D-registers and supplies no cross-domain law.
 
 ### 3.2 The Universality Wager
 
@@ -184,23 +195,24 @@ formal derivation and empirical discriminators exist.
 
 ---
 
-## IV. THE INFORMATION PARADOX DISSOLVED
+## IV. THE INFORMATION-PARADOX CORRESPONDENCE
 
-### 4.1 The Framework Resolution
+### 4.1 No independent resolution is claimed
 
 The information paradox asks: where does the information go?
 
-[I] Framework answer: the information does not "go" anywhere in the D5 sense. The imaginary axis (D5) is orthogonal to the real axis (D4). The black hole captures real-axis manifestation (matter falls through the horizon). But imaginary-axis content (information, structure, Φ) is not D4-localised — it exists on the orthogonal axis.
+The Compass supplies no answer beyond the physical theories. Information is
+encoded in physical states and correlations; it is not an actual D5 substance
+stored on an orthogonal imaginary axis. D5 types counterfactual content in the
+Emergentist scaffold, not a hidden location to which infalling information
+escapes. An event horizon is not a `ℂ→ℝ` measurement operator.
 
-The black hole captures the projection. It does not capture the source. The measurement (collapse from ℂ to ℝ at the horizon) destroys the real-axis component. The imaginary component persists — orthogonal, inaccessible from D4, but present.
-
-[I] Hawking radiation is read here as re-projecting this imaginary content onto the real axis over time. The information returns because it was not truly captured in the D5 sense — only its real-axis shadow was. The shadow dissolves (evaporation), and the information re-emerges.
-
-This is `[I/C]`. It resonates with the ER=EPR conjecture
-(Maldacena-Susskind): entanglement can relate the black hole interior to the
-radiation. In the framework analogy, that coupling is read as the imaginary-axis
-connection that the real-axis horizon cannot sever; the analogy does not settle
-the physics.
+Page-curve, island-formula, holographic, remnant, and other proposals must be
+assessed within physics. ER=EPR is likewise a conjectural physical
+correspondence, not evidence for the D-registers. The only surviving analogy is
+that apparently irreversible capture can motivate a search for a broader
+description in which accounting closes. Removing that analogy changes no
+physical calculation or operational Burri rule.
 
 ---
 
@@ -208,7 +220,8 @@ the physics.
 
 **F299-1:** If black holes are shown to NOT evaporate (Hawking radiation is experimentally or theoretically disproven), the physical A7 identification fails. Note: Hawking radiation has not been directly observed due to the extraordinarily low temperatures involved, so this remains `[A/S]` inside the accepted theoretical model and `[C]` as direct astrophysical observation.
 
-**F299-2:** If information IS permanently destroyed in black holes (unitarity is violated), the information-return claim fails and A7 at D4 is not enforced.
+**F299-2:** If information is permanently destroyed in black holes, the
+information-return analogy fails; no D-register conclusion follows either way.
 
 **F299-3:** If a physical system is demonstrated to permanently capture information without any return mechanism at any timescale, the strong universality reading of A7 fails.
 

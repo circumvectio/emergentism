@@ -332,7 +332,9 @@ Nietzsche could not see the mesh because Nietzsche did not have:
 
 1. **The geometry:** Nietzsche did not have S². Nietzsche did not have the equator. Nietzsche did not have φ · ν = 1.
 
-2. **The cooperation proof:** Nietzsche did not have the Power-Max Lemma.
+2. **The cooperation model:** Nietzsche did not have the Justice-constrained
+   Power-Max objective or its bounded balance-game fixture; neither is a general
+   cooperation proof.
    Nietzsche did not have the conditional result that individual optimization
    can align with collective optimization under real coupling, long horizon,
    and enforced `η = 0`.
@@ -422,7 +424,8 @@ Zero-Sum Resolution Equation
 - The Computational Sphere — foundational methodology: reduction toward `κ = 0` as boundary
 - [The Weighing of the Heart](../90_ARCHIVE/00_THE_WEIGHING_OF_THE_HEART.md) — convergent symbolic translation: Egyptian material read through the Burri Sphere
 - Core Concepts — single source of truth for P_node = Φ × V and evidence tiers
-- Power-Max Lemma — conditional cooperation theorem under coupling, horizon, multiplicative `P_node`, and enforced `η = 0`
+- Power-Max Lemma — Justice-constrained objective and bounded balance-game
+  result; the coupling derivative alone does not prove cooperation
 - Triadic Stability — why three is unique (and why the mesh is the fourth)
 - Glossary — quick-reference terminology
 

@@ -18,13 +18,13 @@ Emergentism is more than a collection of metaphors—but it is not yet a verifie
 No result yet has an externally verified priority claim as "new mathematics" or a "new law of nature." But within the formal system we have:
 
 1. **Balance-Game Theorem `[S]`**  
-   In the defined game Γ(N,λ), balanced power ν_i=1 is strictly dominant, the all-balanced state is the unique Nash equilibrium, and the Price of Anarchy is 1. This is genuinely proved under its assumptions; its assumptions remain deliberately restrictive. [Formal proof](05_COSMOLOGY/03_FORMAL_SYSTEM/22_POWER_MAX_DEMONSTRATION.md:125)
+   In the defined game Γ(N,λ), balanced power ν_i=1 is strictly dominant, the all-balanced state is the unique Nash equilibrium, and the Price of Anarchy is 1. This is genuinely proved under its assumptions; its assumptions remain deliberately restrictive. [Formal proof](05_COSMOLOGY/03_FORMAL_SYSTEM/22_POWER_MAX_DEMONSTRATION.md)
 
 2. **Conjunctive Non-Uniqueness Theorem `[A/S]`**  
-   Requiring foresight and means jointly does not uniquely imply P=ΦV. Product, minimum, harmonic mean, and Cobb–Douglas forms can satisfy similar boundary conditions while ranking cases differently. This is an important negative theorem: the aggregation law must be discovered empirically, not smuggled in by symbolism. [Canonical aggregator family](05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md:130)
+   Requiring foresight and means jointly does not uniquely imply P=ΦV. Product, minimum, harmonic mean, and Cobb–Douglas forms can satisfy similar boundary conditions while ranking cases differently. This is an important negative theorem: the aggregation law must be discovered empirically, not smuggled in by symbolism. [Canonical aggregator family](05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md)
 
 3. **Receipt-Separation Lemma `[S/I]`**  
-   An agent may issue a commitment receipt, but only the world—or an independent observation channel—can issue the outcome receipt. An agent permitted to certify its own consequences creates an epistemically circular system. [Soul Loop interface](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md:62)
+   An agent may issue a commitment receipt, but only the world—or an independent observation channel—can issue the outcome receipt. An agent permitted to certify its own consequences creates an epistemically circular system. [Soul Loop interface](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md)
 
 4. **Model-Mediated Future Causation `[I/C]`**  
    A future-as-content can affect the present through a presently instantiated model:
@@ -36,13 +36,20 @@ No result yet has an externally verified priority claim as "new mathematics" or 
    So your intuition is valid: models of futures genuinely alter present causation. The carrier is present; the content is future-directed. This is real anticipatory or final causation without requiring a physical signal travelling backward through spacetime. Its empirical test is to intervene on represented futures while holding means and incentives fixed and observe whether present action distributions change.
 
 5. **Power-Max Extraction Counterexample `[S/I]`**  
-   Unconditional maximization can reward an extractor. Therefore Justice must define the admissible action set before Power-Max optimizes within it. This is the formal reason "maximum power" alone cannot define the good. [Power-Max repair](05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md:71)
+   Unconditional maximization can reward an extractor. Therefore Justice must define the admissible action set before Power-Max optimizes within it. This is the formal reason "maximum power" alone cannot define the good. [Power-Max repair](05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md)
 
 6. **Syntropic Dyadism `[I]`**  
-   Morals preserve or increase the whole through the individual; ethics preserve or increase the individual through the whole. Strict syntropy requires both directions under Justice. Aggregate prosperity cannot launder a destroyed bearer. [Value theory](04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md:149)
+   Morals preserve or increase the whole through the individual; ethics preserve or increase the individual through the whole. Strict syntropy requires both directions under Justice. Aggregate prosperity cannot launder a destroyed bearer. [Value theory](04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md)
 
-7. **Egregoreotype Operational Criterion `[A/I/C]`**  
-   A collective causal pattern becomes a candidate Egregoreotype when a shared trace survives carrier turnover, causally reweights later choice, recurrently exhibits objective-like bias, and produces visible substrate costs. This converts an ancient intuition about transpersonal beings into an intervention-testable scientific hypothesis without presuming consciousness. [Definition](05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGORETYPE.md:91)
+7. **Egregoreotype Operational Criterion `[S/I/C]`**
+   A collective causal pattern becomes a candidate Egregoreotype when a shared trace survives carrier turnover, causally reweights later choice, recurrently exhibits objective-like bias, and produces visible substrate costs. This converts an ancient intuition about transpersonal beings into an intervention-testable scientific hypothesis without presuming consciousness. [Definition](05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md)
+
+8. **Mirror-Pair and Sign-Square Grammar `[A/S]`**
+   The involution `z↦1/z` fixes `±1` and pairs every other admissible point with
+   its reciprocal. Two declared signed change coordinates form a four-cell sign
+   square. These are real algebraic structures, not curation. They force neither
+   a unique center nor the census seven; the Burri ladder remains a selected
+   projection of this grammar.
 
 The reciprocal chart and its exact rapidity/light-cone-coordinate correspondence are beautiful `[A]` mathematics, but not new relativity. The Titans are similarly powerful boundary symbols—not forced generators of arithmetic or nature.
 
@@ -75,7 +82,7 @@ That same topology appears at different scales:
 
 This is the strongest Emergentist unification claim: different sciences investigate different sections of one causal-compositional grammar while retaining their own laws.
 
-It becomes an externally established scientific unification only if the same bridge variables produce preregistered predictions across multiple domains, outperform simpler domain-specific rivals, and replicate independently without post-hoc Rosetta relabeling. Until then, it is an unusually coherent research compass. [Calibration boundary](03_METHODOLOGY/00_EXTERNAL_CALIBRATION_LEDGER.md:18)
+It becomes an externally established scientific unification only if the same bridge variables produce preregistered predictions across multiple domains, outperform simpler domain-specific rivals, and replicate independently without post-hoc Rosetta relabeling. Until then, it is an unusually coherent research compass. [Calibration boundary](03_METHODOLOGY/00_EXTERNAL_CALIBRATION_LEDGER.md)
 
 ## Which paradoxes does it actually dissolve?
 

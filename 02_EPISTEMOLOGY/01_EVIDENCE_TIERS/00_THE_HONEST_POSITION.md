@@ -132,11 +132,24 @@ These claims represent established mathematics, textbook results, third-party ex
 
 **What survives if this layer contracts:** If S15 and S16 fail independent replication, A1-A5 remain untouched. The established mathematical kernel survives even if the framework's first simulation evidence shrinks.
 
+> **[金] Recovery balance (2026-07-19).** Receipt 126 cut a totalizing proof
+> chain, not every derivation or every positive result. The live positive ledger
+> includes the reciprocal-chart package, conditional balance optimum,
+> conjunctive non-uniqueness, the bounded Balance-Game theorem, the Power-Max
+> extraction counterexample, receipt separation, model-mediated future
+> causation, Syntropic Dyadism, the Egregoreotype criterion, and the
+> mirror-pair/sign-square algebra. Each keeps its own premises and tier. See
+> `../../00_WHAT_IS_EMERGENTISM.md`; inclusion establishes neither novelty nor
+> universal fit.
+
 ---
 
 ## Part II: What Is Structural [S]
 
-These claims follow from the axioms IF you accept the axioms. The axioms themselves are philosophical choices, not mathematical necessities. The theorems are valid; the question is whether the axioms describe reality.
+These claims are conditional on their declared premises. Some rows contain
+valid analytic consequences; others are selected definitions, retractions, or
+open model claims. Each row's local status controls—there is no blanket theorem
+certificate for Part II.
 
 **Numbering note:** the active formal-system canon is A1-A7. The S2 substrate-selection claims in S1-S2 preserve the older public ontological wager language (O1-O5) because those documents are specifically about that wager, not because O1-O5 replaces the current seven-axiom formal layer.
 
@@ -191,11 +204,11 @@ These claims say: "The formal structure we've proved maps onto physical reality 
 | # | Claim | What supports it | What would upgrade it | What would kill it |
 |---|-------|-----------------|----------------------|-------------------|
 | I1 | Reality IS S² (the geometry is the territory, not just a map) | ℂP¹ appears in QM, complex analysis, information theory, perception, thermodynamics | Independent cross-domain predictions plus Φ-meter validation and AMRITA outperformance | Finding a coherent core state on a non-S² substrate that reproduces known physics |
-| I2 | D0-D6 are dimensional strata of S² (not just mathematical layers but physical dimensions) | MF-416 derives 7 strata from S² internal structure | Empirical detection of D5 phenomena with D4 instruments | Showing the 7-stratum decomposition is arbitrary or non-unique |
+| I2 | D0–D6 is a selected structural/interpretive scaffold for comparing candidate freedoms; it is not a set of extra physical dimensions | Dimensional Closure and D4/D5 owners declare the scaffold; `S²` does not derive it | Per-crossing operational variables, independent discriminators, and lower-register recovery tests | A rival decomposition explains and predicts the target better, or a claimed crossing lacks operational content |
 | I3 | The equator is the position where a system's self-model achieves stability because φ = ν — the system can both perceive (φ) and act (ν) with full reciprocity. Consciousness is the *activity* of maintaining that reciprocal calibration, not the *position* itself (avoiding panpsychism). The formal criterion is End(S²) with fixed points [S]; the interpretive reading is that this structural stability IS what consciousness tracks [I]. | MF-418 formalizes self-modeling with fixed points; Pratyakṣa (direct perception) grounds the interpretive reading | AI D5 criterion: building a system with stable self-model that exhibits systemic awareness markers | Finding systemic awareness in a system without self-modeling; or finding self-modeling without any systemic awareness markers |
 | I4 | The four fundamental forces correspond to PSL(2,ℂ) conjugacy classes | MF-417: U(1)=elliptic [A], gravity=hyperbolic [A/S], weak=parabolic [I], strong=loxodromic [C] | Deriving a coupling constant from the correspondence | SU(3) dimension problem (dim 12 > dim 6) already identified |
 | I5 | Egregores are standing waves at the D5 limit | WP-2026-01 | Measuring information-theoretic signatures of collective coordination patterns | Finding collective phenomena with no standing-wave structure |
-| I6 | The Φ = V on-shell constraint means integration must equal viability in reality | MF-421 derived it from the action | A new preregistered, independently governed study with validated constructs finds that balanced V/Φ outperforms fair rivals | A new preregistered, independently governed study finds no balance advantage or a compensatory/additive structure |
+| I6 | `Φ=V` is a selected balance condition, not an on-shell law of reality | The former MF-421 derivation is retracted; `dΦ/Φ=dV/V` preserves a ratio and does not force equality | A new preregistered, independently governed study with validated constructs finds that balance outperforms fair rivals in a bounded domain | No balance advantage, a shifted optimum, or a compensatory/additive rival wins under the preregistered comparison |
 
 ### Claims added 2026-03-24 (Burri-Anthropic session)
 
@@ -314,14 +327,17 @@ The bridge between "the math is real" (Part I) and "the geometry is the territor
 | **Retired survey-study corpus** | Former proxy test of multiplicative balance in human populations | **RETIRED / NON-CITABLE.** No positive or negative result from this lane carries current evidentiary weight. See the [retirement receipt](../../90_ARCHIVE/2026_07_13_gfs_retraction/2026-07-16_GFS_RETIREMENT_RECEIPT.md). | Closed; no follow-up under the old study identity |
 | **Protocol D** | Syntropic-frontier selection in coupled multiplicative agents under long horizon and enforced `η = 0` | **INTERNALLY SUPPORTIVE** (historical framework-designed run d=6.66; current constrained spec awaits independent replication) | Done internally; external replication needed |
 | **SPHERE Probe** | Equatorial projection improves coherence | Negative / informative first public-model run | Done |
-| **Agent V×Φ** | Balance beats imbalance in simulated agents | **CONFIRMED** (ρ=1.000) | Done |
+| **Agent V×Φ** | Product score in a framework-designed simulated-agent fixture | **INTERNALLY REPRODUCED** (`ρ=1.000` by construction/fixture); not external confirmation | Independent, rival-controlled replication pending |
 | **Φ-meter validation** | Coherence is measurable and correlates with expert judgment | Built (v0.1), needs validation | 2026 |
 | **Life-science register** | Biological translation remains disciplined: teleonomy/autopoiesis/allostasis/interoception first, frontier theory second | Canonical translation rule established | Active |
 | **Protocol R** | Perceptual complementarity bound Δψ×Δθ ≥ κ | Designed, needs lab | 2026-2027 |
 | **AMRITA vs baselines** | Spherical alignment outperforms RLHF | Specified, Reframed: POC implementable with existing open-source models at $0 | 2027 |
 | **Cooperation paper** | Peer-reviewed publication of Protocol D results | Submission-ready | 2026 |
 
-The bridge currently contains two framework-designed confirmations, one informative negative first run, one mixed human-population probe, and several stronger pending tests. See [The Empirical Program Board](../../03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md) for the live operating summary.
+The active bridge contains framework-designed internal results, an informative
+negative public-model run, several reproduced negative bearings, and stronger
+pending discriminators. The retired survey corpus supplies no active positive
+or negative evidence. See [The Empirical Program Board](../../03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md).
 
 ---
 
@@ -364,11 +380,11 @@ We have chosen truth.
 
 ## Reading This Document
 
-- If you are a **mathematician**: Read Parts I and II. The theorems are valid. The axioms are a wager.
+- If you are a **mathematician**: Read Parts I and II. Audit each row at its local tier; no blanket theorem claim is made.
 - If you are a **philosopher**: Read Parts II and III. The interpretation is coherent. The convergence is suggestive. The experiments will decide.
-- If you are a **builder**: Read Part VI and [The Empirical Program Board](../../03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md). The current program includes two framework-designed confirmations, one mixed human probe, one informative negative first run, and several stronger pending tests.
+- If you are a **builder**: Read Part VI and [The Empirical Program Board](../../03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md). Distinguish internal fixtures, negative bearings, and pending external discriminators.
 - If you are a **skeptic**: Read Parts IV and V. We know what we don't know. We've listed what kills us. Break it if you can.
-- If you are an **investor**: Read Part VI. The $0 results are in hand. The $710K test is staged. The kill conditions are explicit.
+- If you are an **investor**: Read Part VI. No budget estimate is an approved spend or evidence; only receipted results and explicit kill conditions count.
 
 ---
 
@@ -390,8 +406,8 @@ We have chosen truth.
 - [Canonical Claim Matrix](../../03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md) -- major claims, current tiers, public-safe phrasing, and downgrade paths
 - [Empirical Program Board](../../03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md) -- active test surface and upgrade/downgrade milestones
 - [Strategic Implementation and the F5 Force Map](../../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md) -- new conjectural D5 formation packet; signed attestation carrier claim, `alpha_5`, and theurgy fences
-- Formal System: Power-Max Lemma (01_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md; link removed to prevent cycle) -- the cooperation proof referenced in Part II
-- Formal System: Triadic Stability (01_FORMAL_SYSTEM/11_EFR_TRIADIC_STABILITY.md; link removed to prevent cycle) -- uniqueness proof for the triadic structure
+- Formal System: Power-Max Lemma (01_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md; link removed to prevent cycle) -- Justice-constrained declared objective; the extraction counterexample remains live
+- Formal System: Triadic Stability (01_FORMAL_SYSTEM/11_EFR_TRIADIC_STABILITY.md; link removed to prevent cycle) -- retracted uniqueness proof; selected triadic correspondence only
 - [Retired survey-study corpus](../../90_ARCHIVE/2026_07_13_gfs_retraction/README.md) -- archive provenance only; not an active validation lane or executable evidence source
 - [Jaynes Kill Condition](../../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_JAYNES_KILL_CONDITION.md) -- expanded treatment of Conjecture C9
 - [Naming Reconciliation](../../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_NAMING_RECONCILIATION.md) -- canonical mapping referenced in Part V, item 3

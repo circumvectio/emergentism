@@ -197,7 +197,10 @@ After the sevenfold core (01–07), the support tiers are numbered by function, 
 
 `08_FRAMEWORK_SUPPORT` and `11_UPLINK` form a conceptual pair: one passive (reference), one active (uplink). Both are post-sevenfold operational apparatus. They are numbered by their folder position, not forced into a doublet.
 
-`12_PUBLIC_SITE/` is the renamed public-site surface (formerly `10_PUBLIC_SITE/`), updated to resolve the prefix namespace conflict with `10_SEED/`. It remains here only until the K2-signed AIA migration executes.
+`12_PUBLIC_SITE/` is the renamed public-site surface (formerly
+`10_PUBLIC_SITE/`), updated to resolve the prefix namespace conflict with
+`10_SEED/`. Any later migration requires a typed accountable authorization
+envelope and its own execution receipt; this route card grants none.
 
 **Resolution:** [`REPO_REORGANIZATION_PLAN_2026_05_09.md`](../02_SKYZAI/01_NOOSPHERE/09_REFERENCE/REPO_REORGANIZATION_PLAN_2026_05_09.md) Tier 2 is **resolved as documentation-only** because the layout is doctrinal and stable. No filesystem rename.
 
@@ -205,7 +208,14 @@ After the sevenfold core (01–07), the support tiers are numbered by function, 
 
 The following doctrines are downstream applications of the Foundation to the Autonomous Capital Stack. They are not the ontology itself and must be read through the evidence-tier and owner-lane controls above:
 
-> **`[C]` tier + relocation-staged (primetime-audit P0, 2026-06-10):** the items below — including "creatively destroys the Big Four" and "the Bulge Bracket investment banks" — are **conjectural competitive strategy `[C]`, not framework results and not market outcomes the framework asserts.** Their canonical home is the `03_VENTURES` strategy lane; they remain on this front door only until a K2-signed relocation moves them. Read them as *one venture's thesis*, not doctrine. The framework's front door claims no market conquest.
+> **`[C]` tier + relocation-staged (primetime-audit P0, 2026-06-10):** the
+> items below — including “creatively destroys the Big Four” and “the Bulge
+> Bracket investment banks” — are **conjectural competitive strategy `[C]`, not
+> framework results and not market outcomes the framework asserts.** Their
+> canonical home is the `03_VENTURES` strategy lane; they remain here only
+> until a scoped, contestable authorization and migration receipt moves them.
+> Read them as *one venture's thesis*, not doctrine. This front door claims no
+> market conquest.
 
 1. **The Visa/Chase Topology:** OFN is strictly the neutral, non-extractive standard layer (Visa). TokenCen is the localized asset originator (Chase). OFN holds NO ALGORITHMIC TRO DEPENDENCY, NO CUSTODY. Legacy locking is replaced by "Algorithmic TROs".
 2. **The Schumpeterian Pincer Movement:** We creatively destroy the legacy intermediaries. Aureus + OFN creatively destroys the Big Four audit firms (replacing the manual audit with zkML Kinetic Oracles). SkyzAI + OFN creatively destroys the Bulge Bracket investment banks (replacing structuring and syndication with AIA and AMMs).

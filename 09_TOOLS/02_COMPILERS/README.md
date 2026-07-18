@@ -97,6 +97,24 @@ python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py \
 
 `kintsugi_baseline_failures.json` records 19 baseline node IDs and five exact failure signatures at `main@26e616e651e2a87e8c85bf37db515d7fcd007b7b`. A previously failing node may turn green; a removed node, new failure, exception drift, or signature drift fails. The validator itself introduces no direct writes and disables pytest cache and Python bytecode writes; arbitrary repository test bodies are not sandboxed. The baseline gate has no K2 approval gate.
 
+> **[金] Lineage-baseline seam (2026-07-19).** The immutable A0 contract above
+> correctly refuses the later external-calibration lineage because commit
+> `bb9a4fc84854d00df5ac5a67dcfa83adca59fc78` replaced its positive vesicle
+> witness with a negative fair-micro witness and added four adversarial tests.
+> The original contract remains byte-identical. The additive
+> `kintsugi_lineage_baseline_failures.json` freezes the resulting 23 selected
+> nodes and the same five unrelated known failures at that exact commit. It
+> cannot turn the negative empirical receipt back into a positive result.
+
+Current-lineage replay:
+
+```bash
+python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py \
+  --check-baseline \
+  --contract 09_TOOLS/02_COMPILERS/kintsugi_lineage_baseline_failures.json \
+  --canonical-root /absolute/path/to/the/01_EMERGENTISM/worktree
+```
+
 ## Kintsugi A0B machine kernel
 
 > **Boundary:** A0B validates grammar and transaction machinery. It does not

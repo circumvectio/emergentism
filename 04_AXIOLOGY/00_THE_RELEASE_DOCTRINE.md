@@ -31,8 +31,8 @@ common typed vocabulary for comparing constraints, option fields, commitments,
 outcomes, learning, and persistent traces across sciences, while each science
 retains its own methods and laws.
 
-This is translation and research coordination. It is not unification by
-derivation, proof of a necessary D0–D6 ontology, an externally calibrated
+This is translation and research coordination. It is not **universal**
+unification by derivation from one chart, proof of a necessary D0–D6 ontology, an externally calibrated
 theory of everything, or evidence that every domain obeys one aggregation law.
 
 The source tree is an inspectable model of the proposed organization. It is
@@ -86,6 +86,26 @@ folders?” It is:
 > **Which constraints, option structures, aggregation laws, receipts, and
 > persistent traces are operationally useful in this bounded domain, and what
 > evidence would kill the proposed translation?**
+
+### The positive kernel that releases with the wager
+
+The audit cut false necessity claims; it did not erase bounded results. The
+release front door must carry the positive and negative ledgers together:
+
+| Result | Honest force |
+|---|---|
+| reciprocal-chart identities and inequalities | analytic `[A]` inside the declared chart |
+| Balance-Game theorem | structural `[S]` inside its restrictive payoff model |
+| conjunctive non-uniqueness | multiple AND-class aggregators satisfy similar boundaries and can reverse rankings |
+| receipt-separation lemma | commitment and world outcome require distinct issuers/channels |
+| model-mediated future causation | present models with future-directed content can reweight present action `[I]`, externally anchored at component level |
+| Power-Max extraction counterexample | unconstrained maximization can reward extraction; Justice must constrain admissibility first |
+| Syntropic Dyadism and Egregoreotype criteria | explicit normative/operational constructions, testable without pretending they are laws of nature |
+| mirror-pair and sign-square grammar | real algebraic shape; no forced centre or census seven |
+
+The complete calibrated overview is `../00_WHAT_IS_EMERGENTISM.md`. None of
+these entries establishes novelty, priority, universal empirical fit, or a
+theory of everything.
 
 ## 4. Release phases
 
@@ -209,7 +229,7 @@ The minimum adversarial fixtures reject:
 
 This doctrine does not authorize or claim:
 
-- unification by derivation or a theory of everything;
+- universal unification by derivation from the reciprocal chart, or a theory of everything;
 - a forced, exhaustive, or native sevenfold ontology of nature;
 - “first in history,” “only medium on Earth,” or “no other project” priority;
 - religion-building, believer/member optimization, or human caste ranking;

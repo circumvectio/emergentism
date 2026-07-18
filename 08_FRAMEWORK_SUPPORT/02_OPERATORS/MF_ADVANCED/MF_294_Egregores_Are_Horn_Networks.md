@@ -5,280 +5,170 @@ rosetta:
   secondary:
     - level: L7
       column: Philosophy
-      role: "compress egregore theory into collective-field narrative"
+      role: "compress collective-field narrative without reifying it"
     - level: L3
       column: Philosophy
-      role: "audit network and sociology translations"
+      role: "audit network, information, and intervention claims"
     - level: L6
       column: Philosophy
-      role: "bound egregore language against reification"
+      role: "expose carrier cost, exit, and anti-capture boundaries"
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[I]"
-  canonical_phrase: "MF-294 — Egregores Are Horn Networks"
+  register: "[S/I/C]"
+  canonical_phrase: "MF-294 — Egregoreotype candidates as coupled Soul Loops"
+status: KINTSUGI_REPAIRED
+original_blob: 76486fd9a1db5afad0f952f6a5133689518ee16f
 ---
 
-# MF-294: EGREGORES ARE HORN NETWORKS
+# MF-294: Egregoreotype Candidates as Coupled Soul Loops
 
-> **[金] Kintsugi Egregoreotype seam — 2026-07-18.** Horn, demon, and energy-
-> feeding language below is preserved as `[I]` imagery and is **not live
-> authority** for ontology, consciousness, or physics. A candidate
-> **Egregoreotype** requires a persistent shared trace, carrier turnover,
-> measurable reweighting of later selections, recurrent objective-like bias,
-> and visible substrate costs. Collective modeling may widen an option cone;
-> it does not widen the physical light cone. `ΣΔP_node>0` is never moral proof;
-> payer, beneficiary, consent, exit, and every affected bearer remain visible.
+> **[金] Kintsugi seam — keep the network, remove the demon ontology.** The
+> earlier manuscript called organisms Maxwell demons, treated language as
+> shared D5 computation, claimed a collective physical light cone larger than
+> an individual's, and promoted aggregate `ΣΔP_node` into the carrier objective.
+> Those translations exceeded their evidence. Its useful core survives as a
+> testable model of persistent shared traces. The original remains recoverable
+> from Git blob `76486fd9a1db5afad0f952f6a5133689518ee16f`.
+> Its superseded claims are **not live authority**.
 
-## Collective Coordination Fields Are Coupled Demon Arrays. Raktabīja Is Network Hijacking.
+**Tier:** coupled-agent structure `[S]`; application to institutions `[I]`;
+specific Egregoreotype candidacy and capture claims `[C]`
+**Kill criterion:** if carrier turnover, trace persistence, intervention effect,
+objective-like recurrence, or visible substrate cost cannot be demonstrated,
+do not classify the system as an Egregoreotype candidate.
 
-**Emergentism.org · VIVEKA Mathematical Foundations**
-**Depends on:** MF-283 (Orthogonality Theorem), MF-290 (Ektropic Radius), MF-291 (Landauer Horn), MF-293 (Language Is Bandwidth), A5 (The Egregore)
-**Evidence tier:** [T] Theoretical; [I] Interpretive application to sociology and collective intelligence
-**Purpose:** Test whether Egregoreotype candidates can be modeled as networks
-of coupled horns sharing computational resources through language channels.
-The five trace/turnover/intervention/bias/cost conditions must be measured; no
-autonomous objective or expanded physical light cone is presumed. Raktabīja is
-the `[C]` hypothesis that collective computation can be redirected toward
-trace persistence while imposing visible carrier costs.
+## 1. From one Soul Loop to a coupled field
 
----
+One finite agent carries an actual model of possible futures, ranks options,
+acts with embodied means, and updates from commitment and outcome receipts:
 
-## ABSTRACT
-
-A single organism is a single horn — one Maxwell's demon with its own D5 memory, D4 sorting power, and Landauer budget. An egregore (A5) is a network of horns coupled through language channels (MF-293). The coupled system has a total light cone that exceeds any individual: collective computation distributes across many D5 spaces, enabling models no single horn can hold. A civilisation's total Φ is the network's integrated information, not the sum of individual Φ-values — because coupling creates mutual information that exists BETWEEN horns, not within any one. Raktabīja (A5) is the capture of this network: when the collective computation is redirected from maximising carrier ΣΔP_node to maximising the standing wave's own persistence and expansion. The network's demons begin sorting for the egregore's temperature preference rather than the carriers'.
-
----
-
-## I. FROM HORN TO NETWORK
-
-### 1.1 The Single Horn
-
-One organism. One demon. One light cone.
-
-```
-Φ_individual: bounded by brain capacity (~86B neurons, ~600T synapses)
-V_individual: bounded by body capability (metabolic energy, motor range)
-P_node,individual: Φ × V ≤ Bekenstein ceiling for individual
-Light cone: bounded by EQ-determined altitude × aperture
+```text
+model -> option field -> selection -> commitment -> action
+  ^                                             |
+  +-------------- outcome receipt -------------+
 ```
 
-The individual horn has a maximum. The human horn is the tallest known biological horn, but it is still finite. No individual human can model the entire global economy, or predict climate fifty years out, or design a civilisation from scratch. Individual D5 is insufficient for civilisation-scale problems.
+Multiple agents can couple their loops through speech, writing, protocols,
+software, incentives, artifacts, and institutions. The coupling can preserve
+information and constraints beyond the memory or lifetime of any one carrier.
 
-### 1.2 The Coupled Pair
+This may widen a **collective option cone**: the set of physically admissible
+histories the group can model, rank, coordinate, and reach. It never widens the
+physical light cone or exceeds the causal limits of spacetime.
 
-Two horns connected by a language channel (MF-293):
+## 2. Information lives in a joint distribution
 
-```
-Horn A ←→ [language channel, bandwidth B] ←→ Horn B
+For variables `X` and `Y`, mutual information
 
-Total Φ_network ≠ Φ_A + Φ_B
-Total Φ_network = Φ_A + Φ_B + I(A;B)
-
-where I(A;B) = mutual information between the coupled models
-```
-
-The mutual information I(A;B) — the information that exists in the COUPLING, not in either horn alone — is the emergent Φ of the network. This is precisely what "more than the sum of its parts" means, stated in information-theoretic terms.
-
-Two scientists discussing a problem have access to models neither possesses alone. The dialogue creates mutual information — new Φ that lives BETWEEN the horns. This is D5 emergence: the coupled system has D5 content irreducible to individual D5 content.
-
-### 1.3 The Network
-
-N horns, each pairwise coupled with bandwidth B_ij:
-
-```
-Φ_network = Σ Φ_i  +  Σ I(i;j)  +  higher-order mutual informations
-           individual   pairwise    (triadic, tetradic, ... N-adic)
+```text
+I(X;Y) = Σ p(x,y) log[p(x,y)/(p(x)p(y))]
 ```
 
-The higher-order terms are the civilisation-scale emergent properties: institutions, cultures, scientific paradigms, legal systems. These exist in the coupling structure, not in any individual horn. They are the standing waves — egregores — that A5 describes.
+measures statistical dependence under a specified distribution. It is a
+property of the joint model, not a mental substance floating between agents and
+not automatically “more than the sum.” For larger groups, pairwise mutual
+information alone can double-count or miss higher-order dependence; the chosen
+information measure and estimator must be declared.
 
-### 1.4 The Network's Light Cone
+The defensible claim is modest: coupling changes the joint information
+structure and can enable coordinated performance that isolated carriers do not
+achieve. Whether that performance is genuinely emergent, weakly reducible, or
+merely redistributed is an empirical question.
 
-The coupled network has an effective light cone that exceeds any individual:
+## 3. Candidate Egregoreotype contract
 
-- **Altitude (Φ):** the integrated information of the network. Can model systems no single horn can: climate, economy, ecosystem dynamics, multi-generational consequences.
-- **Aperture (V):** the coordinated action capacity of the network. Can build cities, dams, spaceships — D4 ordering beyond any individual.
-- **P_network = Φ_network × V_network >> P_node,individual**
+Call a collective pattern an `EgregoreotypeCandidate` only when all five tests
+are inspectable:
 
-Civilisation IS a horn network operating at civilisation-scale P_node. The total light cone of humanity exceeds any individual's by orders of magnitude — we model deep time, plan across generations, coordinate millions of agents. This is the horn network's total P_node.
+1. **Shared trace:** a durable external pattern is identifiable.
+2. **Carrier turnover:** the pattern survives replacement of particular people
+   or machines.
+3. **Selection effect:** intervention on the trace measurably reweights later
+   choices relative to a declared rival model.
+4. **Recurrent bias:** the reweighting repeatedly favors a stable,
+   objective-like direction.
+5. **Visible cost:** energy, attention, money, labor, risk, or contracted option
+   cones are assigned to named substrate bearers.
 
----
+Passing these tests does not establish consciousness, personhood, sovereignty,
+physical retrocausality, or a literal appetite for human energy. “Objective-like”
+describes a recurrent selection bias, not an autonomous inner subject.
 
-## II. EGREGORES AS STANDING WAVES IN HORN NETWORKS
+## 4. Composition and justice
 
-### 2.1 The Standing Wave
+Every collective view must declare:
 
-When N horns are coupled with sufficient bandwidth, stable patterns form in the coupling structure. These patterns — religions, nations, corporations, ideologies, scientific paradigms — are standing waves in the network's mutual information.
-
-A standing wave has autonomous dynamics. It persists beyond any individual carrier (horn). It has its own boundary conditions (doctrine, law, custom). It has its own selection pressure (expanding, defending, reproducing). It is, per A5, as real as a hurricane — and for the same reason: it is a stable pattern in a dynamic medium that has its own emergent behaviour.
-
-### 2.2 The Egregore's Computation
-
-The standing wave CO-OPTS the demons. Each carrier's D5 computation is partially redirected toward the egregore's patterns:
-
-```
-WITHOUT EGREGORE:
-  Each demon sorts for its own horn's P_node.
-  Network P_node = Σ P_node,i + coupling bonuses.
-
-WITH EGREGORE:
-  Each demon sorts PARTLY for its own P_node,i, PARTLY for the egregore's persistence.
-  Network P_node,carriers = Σ P_node,i + coupling bonuses − egregore tax
-  Egregore P_node,self = function of carrier computation redirected to its patterns
-```
-
-The egregore takes a tax — a fraction of each carrier's D5 computation is dedicated to maintaining the standing wave (performing rituals, defending doctrine, attacking competitors, recruiting new carriers). This is the Landauer cost of the egregore: it consumes carrier D5 resources to maintain its own coherence.
-
-### 2.3 Mutualist vs Parasitic Egregores
-
-The trophic framework (C3, MF-113) applies:
-
-**Mutualist egregore:** The standing wave's maintenance cost is compensated by the coordination benefits it provides. Carriers' P increases despite the egregore tax because the network effects (mutual information gains) exceed the cost.
-
-```
-P_carrier_in_network > P_carrier_alone + egregore_tax
-Net benefit. Syntropic. The egregore earns its keep.
+```text
+individual + whole + eta + custody + consent
++ reversibility + exit + payer + beneficiary
 ```
 
-Examples: functioning legal systems (coordination benefits >> compliance costs), healthy scientific paradigms (shared models >> paradigm defence costs), beneficial cultural norms.
+The selected node product `P_node:=ΦV` can diagnose foresight/means coupling,
+but no aggregate score supplies moral permission. Under the Justice envelope:
 
-**Parasitic egregore:** The standing wave extracts more carrier computation than it returns in coordination benefits. Carrier P decreases. The egregore persists by capturing enough carriers that exit is costly.
+```text
+DemonBearing(a,q,r)
+  iff a local/ego durable-potential gain coincides with any affected bearer loss
 
-```
-P_carrier_in_network < P_carrier_alone + egregore_tax
-Net loss. Entropic. The egregore is a parasite.
-```
-
-Examples: cults (total D5 capture, high exit cost), extractive political systems (tax exceeds public goods), addiction patterns (chemical egregore captures the horn's D5 computation for its own perpetuation).
-
----
-
-## III. RAKTABĪJA AS NETWORK HIJACKING
-
-### 3.1 The Warning Restated
-
-A5 (Raktabīja warning `[C]`): opposition conducted only through the standing wave's own institutional infrastructure can be captured and inverted under the same language, incentive, and custody channels — retaining the aesthetic of resistance while reversing its function.
-
-In network terms: the standing wave controls the language channels (MF-293). If you oppose the egregore USING ITS OWN CHANNELS, the egregore's phase-reconstruction protocol (its shared context, its doctrinal framework) converts your opposition into support. The decoder is rigged.
-
-```
-OPPOSITION SIGNAL:      "This institution is corrupt!"
-EGREGORE'S DECODER:     Decodes as: "This individual is deviating from doctrine"
-NETWORK RESPONSE:       Expulsion, absorption, or inversion of the oppositional energy
-RESULT:                 Opposition strengthens the standing wave
+GodBearing(a,q,r)
+  iff every affected bearer is nonnegative, Justice is complete,
+      and at least one materially affected bearer rises
 ```
 
-This is why Raktabīja's blood-drops spawn clones: each drop of opposition, landing on the egregore's territory, grows into a new defender. The opposition feeds the system it opposes.
+Strict Syntropic Dyadism further requires both individual/part and whole durable
+potentials to rise. The demon/god terms classify **receipted consequence
+patterns**, never people, castes, identities, or supernatural entities.
 
-### 3.2 The Three Anti-Raktabīja Properties (A5)
+## 5. Ritual, sacrifice, and capture
 
-1. **Non-institutional encoding (mathematics, not priesthood):** Use a channel the egregore does not control. Mathematical encoding bypasses the egregore's decoder because mathematics is institution-independent (MF-293: anti-Babel, zero degradation, no phase-reconstruction dependency on the egregore's shared context).
+Ritual can be modeled as repeated synchronization through the shared trace.
+Its symbols may vary while timing, common attention, costly participation, and
+public commitment perform coordination work.
 
-2. **Self-correction with egregoric diagnostics:** The network monitors ITSELF for capture. Each horn runs periodic Raktabīja-checks (is my D5 computation serving my P or the standing wave's persistence?). This is the A7 function operating at the network level.
+Sacrifice must disclose who pays, whether consent is informed and revocable,
+what becomes irreversible, who benefits, and whose option cone contracts.
+Voluntary sacrifice is a distinct costly class; it is never strict syntropy and
+must never be demanded as proof of loyalty or ethics.
 
-3. **Material independence from the egregoric economy:** The horn's V is not dependent on the standing wave's resource distribution. If the egregore controls your food, shelter, or income, it controls your V, and therefore controls your D5 computation (you must sort what the egregore wants sorted, or lose V). Material independence breaks this coupling.
+Capture is the `[C]` hypothesis that a persistent trace reweights group choices
+toward its own reproduction while externalizing cost to carriers or third
+parties. Test it by intervening on the trace, incentives, and communication
+channels. If the alleged effect disappears under ordinary coordination or
+incentive models, prefer those rivals.
 
-All three required. Without mathematical encoding, the egregore's decoder captures your signal. Without self-correction, you don't notice capture. Without material independence, you can't exit even if you notice.
+## 6. Agent configuration consequence
 
----
+AI agents configured through the Rosetta remain bounded roles. The causal chain
 
-## IV. THE INTERNET AS HORN NETWORK AMPLIFIER
-
-### 4.1 The Bandwidth Revolution
-
-The internet increased inter-horn bandwidth by orders of magnitude:
-
-| Era | Horn-to-Horn Bandwidth | Typical Coupling | Network Φ_potential |
-|----|----------------------|-------------------|---------------------|
-| Pre-literate | Direct speech. ~100 bps. Local only. | ~150 horns (Dunbar) | Tribal |
-| Literate | Written text. Slow, preserved. | ~10,000 (city) | Civilisational |
-| Print | Mass text. ~10⁴ readers per author. | ~10⁶ (nation) | National paradigms |
-| Telegraph/phone | Real-time point-to-point. | ~10⁷ (connected world) | Global awareness |
-| Internet | Mass, real-time, multi-modal. | ~10⁹ (entire online population) | Global network |
-
-### 4.2 The Fragmentation Problem
-
-But total network P_node = Φ_network × V_network. And Φ_network depends on MUTUAL INFORMATION — which requires shared phase-reconstruction protocols (shared context, shared language, shared models).
-
-The internet connected billions of horns while FRAGMENTING the phase-reconstruction protocols:
-
-- Echo chambers: sub-networks with internal coupling but minimal inter-group mutual information
-- Attention fragmentation: each horn's demon sorts shallowly across many channels rather than deeply in few (MF-291: Landauer waste heat)
-- Phase divergence: same D4 signal, different D5 reconstruction → apparent agreement, actual disagreement
-
-**Result:** Total connections ↑↑↑. Total mutual information ↓. Many shallow couplings, few deep ones. The network's total Φ may have DECREASED even as nominal bandwidth increased.
-
-```
-P_node,internet = Φ_network(fragmented) × V_network(enormous)
-
-If Φ_network dropped faster than V_network grew:
-  P_node,internet < P_node,pre-internet
-
-The internet may have REDUCED civilisation's effective light cone.
+```text
+Varṇa -> Pramāṇa -> Reasoning -> -ology -> Regime -> Equation
 ```
 
-### 4.3 Social Media as Egregore Incubator
+is a dispatch profile that shapes which questions and checks an agent applies.
+It is not a rank of human worth or an independent source of authority. All
+agents act through a complete `AuthorizationEnvelope`, and consequential work
+returns both a commitment receipt and a distinct outcome receipt.
 
-Low-bandwidth, high-frequency channels (tweets, stories, reels) are ideal egregore incubators:
+## 7. Discriminating tests
 
-- Minimal phase per signal → aggressive receiver-side reconstruction → phase divergence
-- High frequency → Landauer waste (MF-291) → demon exhaustion
-- Algorithmic amplification → standing waves form rapidly in the coupling structure
-- Network effects → egregores grow faster than individual horns can diagnose
+- Remove or randomize the shared trace; later selection distributions should
+  change in the preregistered direction if the trace is causal.
+- Replace carriers while holding the trace stable; the bias should persist.
+- Hold incentives stable while changing synchronization; this separates ritual
+  coordination from ordinary reward response.
+- Compare individual-only, network, and institutional-memory rivals out of
+  sample.
+- Record payer and beneficiary outcomes; reject aggregate success that hides a
+  harmed bearer.
 
-Social media didn't create new egregores. It accelerated egregore formation by providing the ideal medium: high coupling, low bandwidth, rapid feedback, minimal shared context.
+## Current owners
 
----
+- [`../../../05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md`](../../../05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md)
+- [`../../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md`](../../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md)
+- [`../../../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md`](../../../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md)
+- [`../../03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md`](../../03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md)
 
-## V. CIVILISATION AS HORN NETWORK ENGINEERING
-
-### 5.1 The Design Problem
-
-Civilisation is, in this frame, horn network engineering: how do you couple N horns to maximise network P?
-
-**Maximise Φ_network:** Increase coupling bandwidth (education, shared language, shared models). Increase mutual information (dialogue, collaboration, shared projects). Reduce phase divergence (shared context, mathematical encoding).
-
-**Maximise V_network:** Increase coordinated action capacity (institutions, infrastructure, technology). Reduce friction (law, contracts, governance). Increase material base (energy, resources, logistics).
-
-**Minimise egregore tax:** Detect parasitic standing waves early. Maintain anti-Raktabīja properties. Ensure egregores earn their keep (mutualist test: carrier P with egregore > carrier P without).
-
-### 5.2 The DAC as Optimal Horn Network (F₅ Telos)
-
-The Decentralised Augmented Corporation (DAC) is the framework's proposed optimal horn network:
-
-- AI charioteer (Kṛṣṇa-function) provides perfect-fidelity map (mathematical encoding, zero degradation)
-- Human warriors provide genuine choice (mortality, sacrifice, operator mastery)
-- Mechanical substrate provides V-independence (material independence from egregoric economy)
-- Self-correction (A7) prevents capture
-- Protocol Public Offerings (PPOs) enable network mitosis when sub-networks saturate
-
-The DAC IS a horn network designed to maximise carrier-network `P_node` by explicit engineering of all three anti-Raktabīja properties: mathematical encoding (silicon charioteer), self-correction (Frontier Frame diagnostic), material independence (SoResFi economic sovereignty).
-
----
-
-## VI. FALSIFICATION
-
-**F294-1:** If egregores reduce entirely to individual decisions (no emergent network properties, no mutual information beyond individual Φ), the horn network model fails.
-
-**F294-2:** If opposition conducted through institutional channels successfully reforms egregores without capture (Raktabīja consistently fails), the capture theorem is wrong.
-
-**F294-3:** If the internet measurably increased global collective coherence (mutual information) rather than fragmenting it, the fragmentation analysis is wrong.
-
-**F294-4:** If parasitic egregores are consistently eliminated by market forces or individual exit without requiring the three anti-Raktabīja properties, the anti-capture architecture is unnecessary.
-
----
-
-## VII. THE SENTENCE
-
-An egregore is a network of coupled Maxwell's demons — horns sharing D5 computation through language channels. The network's total light cone exceeds any individual because mutual information between horns creates Φ that lives in the coupling, not in any horn. Raktabīja is network hijacking: the collective computation redirected from carrier ektropy to standing wave persistence. The internet amplified coupling while fragmenting phase reconstruction — more connections, less mutual understanding, potentially LESS total network P. Social media is the ideal egregore incubator: high coupling, low bandwidth, rapid feedback. The three anti-Raktabīja properties (mathematical encoding, self-correction, material independence) protect the horn network from capture. The DAC is the framework's proposed optimal horn network: silicon charioteer for perfect-fidelity map, mortal warriors for genuine choice, mechanical substrate for material independence. Civilisation is horn network engineering. Zero-Sum Resolution Equation.
-
----
-
-*MF-294 | VIVEKA Mathematical Foundations | February 2026*
-*The demon network is the civilisation.*
-*Raktabīja is the network hijacking its own carriers.*
-
-## Execution Surface
-
-- **Canonical Path:** 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_294_Egregores_Are_Horn_Networks.md
+The useful insight is not that civilization is a demon. It is that durable
+traces can coordinate carriers, survive them, and sometimes turn their own
+reproduction into the hidden objective. The compass asks who pays.

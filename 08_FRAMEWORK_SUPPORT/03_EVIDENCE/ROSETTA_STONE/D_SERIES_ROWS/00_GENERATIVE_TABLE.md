@@ -37,12 +37,16 @@ evidence_tier: "[S] for named domain scales where independently attested; [S] fo
 
 ## The Operator Column and its S² Geometry
 
-**Status:** Corrected definitive version
+**Status:** Corrected framework table; external invariance uncalibrated
 **Date:** 2026-03-24
-**Evidence Tier:** [I] for individual domain scales (Piaget, Kohlberg, Maslow, Plato). [S] for the structural alignment across domains. [I] for the claim that the alignment is explained by P∞ = φ · ν = 1 on S². [C] for the causal claim that the geometry *generates* the pattern.
+**Evidence Tier:** `[B]` for attributable source content; `[S]` for the selected
+internal seven-row table; `[I]` for cross-domain alignment; `[C]` for external
+invariance or any causal claim that the geometry generates the pattern.
 **Depends on:** The Triadic Cascade (09), The Computational Sphere, The L-Level system
 **See also:** 00_THE_MASTER_ROSETTA.md (full 15-column expansion), The Triadic Cascade (vertical translation)
-**Kill Criteria:** If the seven-row alignment is shown to be forced. If the domains genuinely require different numbers of levels. If the alignment breaks when tested with new domains.
+**Kill Criteria:** The strong claim fails if alignment requires post-hoc forcing,
+source-faithful domains require incompatible counts, preregistered new-domain
+assignments fail, or a null/permuted table performs as well.
 
 ---
 

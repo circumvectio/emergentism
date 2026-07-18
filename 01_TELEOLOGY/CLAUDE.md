@@ -35,7 +35,7 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 | L1 Caṇḍāla | Owns the raw Objective Function question: where the gradient points. |
 | L2 Śūdra | Compares disclosure, evidence presentation, and whether the claim can be read without tier confusion. |
 | L3 Vaiśya | Verifies derivations, empirical referents, and evidence-ladder movement. |
-| L4 Kṣatriya | Tests whether the telos can become a lawful commit, K2 action, or operational vow. |
+| L4 Kṣatriya | Tests whether the telos can become an operational vow or a lawful commitment under a complete AuthorizationEnvelope; K2 is private-DAV-only. |
 | L5 Brāhmaṇa | Aligns the teleology lane with Rosetta, formal-system, and doctrine architecture. |
 | L6 Sādhu | Cuts destiny, literal-force, runtime, and public-facing overclaims. |
 | L7 Ṛṣi | Translates only tier-cleared teleology into public architecture and organism narrative. |

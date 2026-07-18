@@ -182,7 +182,7 @@ loss versus bearer-complete part-and-whole potential under Justice.
 |------|---------|---------|
 | **[A]** | Established — externally verified by independent science, mathematics, or public fact | Shannon entropy formula, Boltzmann entropy, quantum mechanics |
 | **[B]** | Receipted — verified by repository, runtime, experiment, or dated artifact | passing tests, signed records, published audit receipts |
-| **[S]** | Structural — geometric consequence of the framework | Is-Ought bypass support, cooperation proof, R* = 1 |
+| **[S]** | Structural — valid inside explicitly stated framework premises | bounded balance-game result, receipt-separation contract, conditional optimum; never an Is–Ought bypass |
 | **[I]** | Interpretive — creative synthesis, not independently verified | Egregores, three substrates, L-level neural mapping |
 | **[D]** | Draft / design — proposed implementation path not yet receipted | planned protocol, unreleased spec, pending review |
 | **[C]** | Conjecture — testable but untested | Eq. 7 (Protocol R), C209 (EEG) |

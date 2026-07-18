@@ -176,7 +176,10 @@ Each L-level is a **concurrent functional role**, powered by a different cogniti
 
 ## The Kill Criterion
 
-If the seven-row alignment is shown to be *forced* — if the domains genuinely require different numbers of levels, or if the alignment breaks when tested with new domains — the Rosetta Stone falls.
+If the seven-row alignment requires post-hoc forcing — or if source-faithful
+domains require incompatible counts and the mapping breaks on preregistered new
+domains — the strong Rosetta claim falls. The bounded translation lens may still
+survive where it demonstrably clarifies without pretending universality.
 
 **The framework survives the kill criterion if:**
 - New domains can be added and the seven rows still hold

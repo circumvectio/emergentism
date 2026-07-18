@@ -35,10 +35,10 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 | L1 Caṇḍāla | Names the objective pressure or branch being considered. |
 | L2 Śūdra | Carries disclosed candidate values without upgrading them into commitments. |
 | L3 Vaiśya | Supplies decision-ready risks, receipts, rollback, and falsifier status. |
-| L4 Kṣatriya | Owns value, justice, K2, refusal, and the smallest defensible commit. |
+| L4 Kṣatriya | Owns value, bearer-complete Justice, refusal, and the smallest defensible accountable commitment; K2 is private-DAV-only. |
 | L5 Brāhmaṇa | Aligns value claims with operator grammar and constitutional architecture. |
 | L6 Sādhu | Cuts extraction, moral performance, and delegated responsibility. |
-| L7 Ṛṣi | Translates only tier-cleared value and K2 boundaries into public architecture. |
+| L7 Ṛṣi | Translates only tier-cleared value and accountable-authorization boundaries into public architecture. |
 
 ## Routing
 

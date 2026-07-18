@@ -62,29 +62,44 @@ It states that these are the strongest public methods for studying D5-like pheno
 
 **D5 is the modeled option field; selection under constraint is a D4 actual event.**
 
-At D5:
+At the D4/D5 interface:
 
-- agents do not merely process causes
-- they select among live options
-- their choices are shaped by incentives, asymmetries, beliefs, time horizons, and institutions
-- the moral geometry of extraction vs reciprocity becomes behaviorally measurable
+- D5 names represented alternatives, possible future contents, and candidate
+  rankings;
+- D4 agents carry models of those contents and actually rank, select, commit,
+  act, and receive outcomes;
+- incentives, asymmetries, beliefs, time horizons, and institutions reweight
+  the D4 selection process; and
+- extraction and reciprocity become measurable only through declared D4
+  behavior, bearer effects, and receipts.
 
-### Operator Grammar at D5
+### Selected action vocabulary
 
-The core D5 action grammar is the Rosetta `4 + 3` from `P_node = Φ × V`: four mixed-sign self/other transfers and three same-sign Executive boundary phase frames. This is the strategic closure behind the public game-theory translation: ordinary runtime deploys the four mixed-sign God actions, while the same-sign Executive boundary frames describe creation, preservation, and dissolution phases. See [`00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md`](00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md) for the structural note.
+The Rosetta `4 + 3` is a selected vocabulary for describing D4 actual moves
+that refer to D5 alternatives: four cells in a declared self/whole sign square
+plus three phase frames. It is not forced by `P_node=ΦV`, by inversion, or by
+the D4/D5 type distinction, and it is not a census of every possible action.
+See [`00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md`](00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md).
 
-Constitutional rules such as `η=0` and `K2` are therefore not extra generators. They specify when an operator may fire: `η=0` is the Kali boundary between immune response and parasitic extraction; `K2` is the Arjuna boundary that keeps mortal sacrifice from being simulated by the machine.
+`η=0` is a declared Justice constraint, not a generator. Consequential
+governed commitments require an accountable `AuthorizationEnvelope` naming
+principal, mandate, scope, consent, custody, expiry/revocation, contest path,
+actor, and consequence bearers. K2 remains only a historical/private-DAV
+implementation and is not a D-register or agency primitive.
 
-**The agency gloss (2026-06-12, `[I/S]`).** For a D5 agent the two factors name
-the two faces of acting. **`Φ` is D5 worldline-foresight**: the capacity to
-envision a reachable future, predict a move's *reflexive* effects on the option
-cone, and select the lawful use of means. **`V` is D4 means at the action
+**The agency gloss (2026-06-12, `[I/S]`).** For an actual D4 agent, the two
+declared factors name two jointly relevant faces of acting. **`Φ` is a D4
+model/foresight capacity whose content concerns D5 possibilities**: the capacity
+to envision a reachable future and predict a move's reflexive effects on the
+option cone. **`V` is D4 means at the action
 boundary**: body, tools, energy, access, execution capacity — hands, shovel,
 industrial digger, runway, machine. The option cone is the D5 potential cone,
 **never** the `c`-bounded D4 light cone. Agency requires both, so it lives only
 at the equator: the `Φ`-pole sees but cannot do; the `V`-pole can do but cannot
 rank or aim. A child beside a jet and an old pilot without the needed bodily/tool
-access are opposite zero-factor failures. The grounding is the lookahead reading
+access are opposite zero-factor failures under a conjunctive model. Product,
+minimum, harmonic, and Cobb–Douglas aggregators remain rival specifications;
+the chart does not select one. The grounding is the lookahead reading
 
 > **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** "lives only at the equator" binds a real agent only insofar as the agent sits on the sphere — Φ and V conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); absent that, the equator is geometry without normative force and a specializing agent (division of labor, a foresight-scout paired with a means-heavy executor) may strictly dominate the balanced one. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
@@ -132,7 +147,9 @@ These stronger claims remain theory:
 
 **Kill criteria:**
 - If neuroscience identifies a D5-independent substrate of systemic awareness (e.g., a biological mechanism that cannot be read as standing-wave coordination), the first claim is falsified.
-- If a durable institution is shown to persist while systematically violating `η = 0` with no wider-boundary `ΣΔB` or `ΣΔP_node` return, the third claim is falsified.
+- If a durable institution is shown to persist while violating `η=0`, the
+  universal claim that non-extraction is required for persistence is falsified;
+  aggregate return cannot erase a harmed bearer.
 - If game theory produces a strategic situation where equatorial balance (`B = sin θ`) or node flourishing (`P_node = Φ × V`) is not even conditionally favored, the second claim weakens to a special case.
 
 The framework may propose stronger unification.
@@ -144,18 +161,21 @@ It may not present that as already settled science.
 
 This register is easiest to understand through the D4 to D5 transition.
 
-- **D4** studies bounded causal systems: perception, computation, regulation, embodied cognition
-- **D5** studies interacting selectors: bargaining, commitment, cooperation, defection, capture, institution design
+- **D4** contains actual bounded systems, present model tokens, agents,
+  bargaining, commitment, action, institutions, and receipts
+- **D5** contains the merely possible alternatives and future contents those
+  D4 systems can represent
 
 So:
 
-- neuroscience is closest to D4
-- game theory and behavioral economics are closest to D5
+- neuroscience studies D4 carriers and processes
+- game theory and behavioral economics study D4 agents whose strategies and
+  beliefs may represent D5 alternatives
 
 This is why the transition matters so much for the organism and for AI alignment:
 
-- D4 explains how an agent can act
-- D5 explains how its action changes once others, incentives, and institutions enter
+- D4 records how agents actually model, select, and act
+- D5 types what could be selected without turning possibility into an actor
 
 ---
 
@@ -163,12 +183,13 @@ This is why the transition matters so much for the organism and for AI alignment
 
 `D5` should be spoken about asymmetrically.
 
-From below, `D5` is strongly emergent.
-From above, `D5` becomes weakly emergent.
+The framework proposes `[C]` that some `D4→D5` cases may remain
+`candidate_strong` when examined from below. A successful reduction reclassifies
+that bounded case as weak emergence without damaging the D4/D5 vocabulary.
 
 This means:
 
-- in **genesis**, `D5` cannot be cleanly shortcut from isolated lower-level states
+- in **genesis**, a candidate D5 pattern may resist clean shortcutting from the declared lower-level state description
 - interaction must run
 - bargaining, norm formation, institution, and capture are historical outcomes, not tidy local deductions
 
@@ -191,15 +212,13 @@ Or more tersely:
 
 ### Terminology Note
 
-This use of `strong` and `weak` emergence is framework-specific.
-
-In standard philosophy, `weak emergence` often means derivable in principle from lower rules.
-Here the intended distinction is narrower and operational:
-
-- **strong emergence** = no reliable shortcut from local substrate to the higher-order strategic pattern in formation
-- **weak emergence** = once the higher-order pattern exists, it can be treated as a compact constraint on lower-level dynamics
-
-This note should be stated explicitly whenever ambiguity matters.
+`candidate_strong` is reserved for a particular `μ₄` record whose declared
+reduction test remains open. “No reliable shortcut during formation” is called
+**formation opacity**, not strong emergence: computational irreducibility,
+hidden variables, poor coarse-graining, or an inadequate model may produce the
+same observation. Each crossing must carry its own evidence, reduction status,
+rivals, prediction, and kill criterion. A successful reduction reclassifies
+the crossing without erasing the useful macro-description.
 
 ---
 
@@ -211,21 +230,21 @@ This note should be stated explicitly whenever ambiguity matters.
 | **η** | extraction rate, rent asymmetry, parasitic transfer, exploitative spread | [I/S] framework variable translated through economics and public-goods theory |
 | **Φ** | coherence, trust, legibility, norm integrity, institutional fit | [I] translated proxy, not a standard single variable |
 | **V / ν** | D4 means at the action boundary: body, tools, energy, access, execution capacity | [I] translated proxy |
-| **P_node = Φ × V** | flourishing requires both coherence and capability at a finite node | [S/I] framework law, not established economics |
+| **P_node = Φ × V** | one selected normalized conjunctive model of foresight/coherence and means | [S] by framework definition; [C] as universal empirical fit; rival aggregators required |
 | **good** | bearer-complete Justice: every materially affected bearer remains visible and nonnegative; aggregate change is diagnostic only | normative framework definition, not a theorem of strategic science |
 | **evil** | local gain through wider degradation and dependency production | normative synthesis over strategic science |
 | **standing wave / egregore** | durable coordination pattern, institution, norm-cluster, self-stabilizing equilibrium | [I] translation, not standard term |
 | **Raktabija dynamic** | opposition strengthens the target equilibrium because resistance feeds its selection environment | [I] closest to adversarial adaptation and resonant reinforcement |
 | **Grace Exit** | exit rights, contestability, reversible participation | public institutional design term |
 | **AuthorizationEnvelope** | principal, mandate, scope, consent, custody, expiry/revocation, contest path, actor, and consequence bearers | accountable governed-commitment boundary; K2 is private-DAV-only |
-| **Φ (agency register)** | D5 worldline-foresight / lookahead — envisioning reachable futures and predicting a move's reflexive effects on the option set | [I/S] supported as *lookahead* (CEF cart-pole, R-program); refuted as consciousness-gating |
+| **Φ (agency register)** | D4 model/foresight capacity whose represented content concerns D5 futures | [I/S] supported as *lookahead* in bounded fixtures; not a consciousness gate |
 | **V (agency register)** | D4 means-to-act — available body, tools, energy, access, and execution capacity | [I/S] paired with Φ-as-foresight; agency = both, equatorial |
 
 ([I/C] evidence-review boundary — externally uncalibrated: "equatorial" is a real-agent claim only on the sphere — Φ/V complementary, conservation-coupled, and γ-priced symmetrically; off-sphere the equator is descriptive geometry, not the optimum, and specialization can win — see `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`)
 
 | **the option cone** | the set of reachable, selectable futures; expands with intelligence and institutions | [I] — the **D5 potential cone, not the D4 light cone**: nothing here touches `c` |
 | **military doctrine (added 2026-06-11)** | Lanchester regimes as *information-regime selection*: aimed fire → Square Law (`q·N²`, concentrate); sanctuary / area fire → Linear Law (`q·N`, symmetric). **4GW is mechanism design at war** — the weaker player redesigns the game's information structure to flip which law governs | [A] the public attrition-law literature; [I] the D5 reading; see the Dyadic Coupling Law §5c for the product-witness scope |
-| **the Soul Loop** | the reflexive row: the same seven-move grammar applied *by* the player *to* the player — recursive self-editing (`(C,G)_{t+1} = Loop(C,G)_t`) until equatorial convergence | [S] method; the loop-not-ladder closure in `01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md` |
+| **the Soul Loop** | commitment receipt, independently returned world outcome, then model/selector update; the seven-move vocabulary is optional | [S] typed method; convergence requires separate conditions and is not guaranteed |
 
 ([I/C] evidence-review boundary — externally uncalibrated: the loop converges to balance only when the reflexive Φ/V factors are conservation-coupled, complementary, and costly-in-excess under a *symmetric* γ-price; otherwise the fixed point is tilted or a plateau and self-editing may settle into lawful specialization — see `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`)
 

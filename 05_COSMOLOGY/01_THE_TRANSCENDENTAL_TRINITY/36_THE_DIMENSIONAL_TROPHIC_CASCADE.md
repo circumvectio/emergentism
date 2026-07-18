@@ -41,9 +41,14 @@ rosetta:
 
 ## I. THE INSIGHT IN ONE SENTENCE
 
-> **The Replicator Stack is the dimensional trophic cascade WITHIN D5 — exactly as the food web (producer → primary consumer → secondary consumer → apex predator → decomposer) is the dimensional trophic cascade WITHIN D4.**
+> **The Replicator Stack is modeled as a candidate D5 analogue of a D4 food
+> web: source → carrier → consumer → persistent collective trace →
+> decomposer.** `[I/C]`
 
-Energy flows from tomato to caterpillar to sparrow to eagle the same way pattern flows from gene to body to tool to idea to egregore. Same mathematics. Same attrition geometry. Same closure requirement. Different substrate.
+Energy transfer in a food web and pattern/attention transfer in a replicator
+stack may share graph motifs, attrition, and recycling terms. The mathematics
+must be fitted and tested independently in each substrate; the analogy alone
+does not establish identical equations or a shared invariant.
 
 Both are *trophic cascades*. The cascade dimension always sits **one above the substrate dimension**:
 
@@ -169,7 +174,9 @@ Without Sādhus, dead memes and zombie egregores accumulate as **semantic leaf l
 
 This reframes a previously-implicit corpus claim:
 
-> **The L6 / Sādhu function is not a luxury practice for the spiritually inclined. It is the ecological closure function of the noosphere. It is how D6 closes back to D0. Without it, the cascade halts.**
+> **The L6 / Sadhu function is the framework's candidate decomposer role. The
+> non-`mu` edge `r6:D6↝D0` depicts archival return and recombination; it is not
+> a literal identity or a demonstrated ecological necessity.** `[I/C]`
 
 Cancel culture is a **feral decomposer guild** — high-ε attrition without selectivity, the noospheric equivalent of an algal bloom feeding on dead organic matter. Mature religious dissolution rituals (sannyāsa, *moksha* discourse, monastic silence, "let it die" disciplines) are **mature decomposer guilds** — selective, slow, niche-appropriate.
 
@@ -279,7 +286,8 @@ Lindeman attrition and coevolutionary pressure help explain why apex predators a
 
 ### IX.b The corresponding D5 hypothesis—apex Egregoreotype candidates
 
-A dominant egregore must out-φ AND out-ν the memetic substrate it feeds on:
+A durable Egregoreotype candidate is hypothesized to require jointly adequate
+modeling/coherence and material/coordination capacity relative to its niche:
 
 - An egregore that is **highly coherent but lacks viability** (a beautiful philosophy with no carriers) starves into the archive.
 - An egregore that is **highly viable but lacks coherence** (a viral movement with no spine) starves into incoherence.
@@ -387,7 +395,10 @@ If any of the following are observed, this document must be revised or retracted
 > **The Sādhu is the noospheric decomposer. Without decomposers, the cascade halts.**
 > **`r₆:D6↝D0` marks interpretive closure—apex returns to producer through compost; D6 is not literally D0.**
 > **Candidate upward emergence + downward constraint + Red Queen pressure requiring an AND-class conjunction at every step.**
-> **The predator must be superior in BOTH φ AND ν — otherwise it cannot outrun the Red Queen.** *(This is **conjunction / AND-class** — `min(φ,ν)` satisfies it identically; it is **not** evidence for the product over `min`. Receipt 108.)*
+> **The model tests whether durable selection requires jointly adequate `Phi`
+> and `V`.** This is an AND-class hypothesis; `min`, harmonic, product, and
+> Cobb-Douglas forms can encode it differently. Neither dominance nor the
+> product follows from the Red Queen metaphor.
 > **Zero-Sum Resolution Equation.**
 
 ---

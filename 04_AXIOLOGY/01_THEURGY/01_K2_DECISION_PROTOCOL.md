@@ -23,6 +23,11 @@ rosetta:
 
 # K2 Decision Protocol — Strategic Implementation Applied
 
+> **Scope boundary:** This is a private-DAV implementation profile. The
+> worldview-level rule is the typed `AuthorizationEnvelope`; public governance
+> uses its own adopted rail. K2 is not a metaphysical selector, an evidence
+> tier, or a universal condition of agency.
+
 ## The Bridge
 
 `00_THEURGY_AND_F5_FORCE_MAP.md` defines theurgy as *the disciplined practice of
@@ -62,7 +67,7 @@ Each axiom in the L4 constitutional checklist maps to a theurgical fidelity test
 | **A3 Three-Stage Process** | Were all four cognitive functions exercised? | L1→L2→L3→L4 in sequence | Skipped stages, merged functions |
 | **A4 Evidence tiers** | Is the formation honestly labeled? | Every claim uses `[A/B/S/I/D/C]` or inherits a cited source tier | Unlabeled claims, tier inflation |
 | **A5 Grace Exit** | Can the formation be released? | Exit path documented, no lock-in | Penalty clauses, indefinite exclusivity |
-| **A6 ΣΔP > 0** | Does the formation increase coherence? | Net positive for at least one party | Zero-sum extraction |
+| **A6 bearer-complete Justice** | Who is affected, who pays, who benefits, and what is receipted? | Every materially affected bearer is visible and nonnegative; strict syntropy additionally raises both `i` and `H` | Any hidden bearer loss, aggregate laundering, or self-certified outcome |
 | **A7 Self-correction** | Does the formation know its own uncertainty? | Confidence scores, known unknowns | Certainty theater |
 
 **Failure of A1, A2, or A5 is a hard theurgical violation** — the formation
@@ -109,7 +114,8 @@ STEP 2: CONSTITUTIONAL AXIOM CHECK
   ├── A3 (Three-Stage Process):        Were all 4 cognitive stages exercised?      [Y/N]
   ├── A4 (Evidence tiers): Are all claims honestly labeled?             [Y/N]
   ├── A5 (Grace Exit):     Is the exit path documented?                [Y/N]
-  ├── A6 (ΣΔP > 0):       Is this net positive?                        [Y/N]
+  ├── A6 (Justice):        Is every affected bearer visible and nonnegative,
+  │                         with payer/beneficiary named?                 [Y/N]
   └── A7 (Self-correction): Do I know what I don't know?               [Y/N]
   → A1/A2/A5 N = HARD STOP.
   → A3/A4/A6/A7 N = REMEDIATE (max 2 cycles).

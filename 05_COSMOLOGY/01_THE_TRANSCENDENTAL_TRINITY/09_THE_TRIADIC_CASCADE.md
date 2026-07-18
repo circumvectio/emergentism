@@ -5,7 +5,7 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[S]"
+  register: "[I]"
   canonical_phrase: "THE TRIADIC CASCADE"
   vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root"
 ---
@@ -14,20 +14,31 @@ rosetta:
 
 ## The Trinity Repeating Across Every Level of Knowledge
 
-**Status:** Foundational — the {0, 1, ∞} structure operating at every scale of inquiry
+**Status:** Active interpretive correspondence — selected triadic lens, not a uniqueness theorem
 **Date:** 2026-03-24
-**Evidence Tier:** [S] Structural. The three-fold mapping is a consequence of the Transcendental Trinity applied to the classical divisions of knowledge. [I] The temporal attributions, the Varna/Polity mappings, and the cycling claim are interpretive.
+**Evidence Tier:** [I] The document projects one selected triadic lens across domains. Particular mathematical statements retain their own local tiers; the cross-domain recurrence is not derived, unique, or forced.
 **Depends on:** 02_THE_TRINITY.md, 07_THE_DISCOVERY_OF_FINITY.md, 08_CO_EMERGENCE.md
 **See also:** The Weltanschauung (00_EMERGENTISM.md Parts II, III, V), Triadic Stability (MF-511), The Rosetta Stone
 
-**Relationship to the Rosetta Stone:** The Rosetta Stone is the *horizontal* translation — it maps the Burri Sphere across domains (physics, information theory, economics, mythology, neuroscience). The Triadic Cascade is the *vertical* translation — it maps the Trinity across levels of knowledge (transcendentals, disciplines, trivium, inference, time, society, polity). Together they form a grid in which every cell is the same geometry seen from a different angle.
-**Kill Criteria:** If the three-fold mapping is shown to be forced rather than natural — if a fourth column is required at any level — the cascade breaks. If a level demonstrably maps better to a different axis assignment, the specific mapping falls.
+**Relationship to the Rosetta Stone:** The Rosetta Stone is the *horizontal* translation lens across domains. The Triadic Cascade is a *vertical* proposal across levels of knowledge. A projection may organize comparison; it does not transfer proof or establish that the domains share one mechanism.
+**Kill Criteria:** If a fourth column is required, a different partition predicts or explains the domain better, or the mapping cannot be operationalized without forcing residuals into the three labels, that local correspondence falls.
+
+> **[金] Kintsugi seam — recurrence survives; uniqueness does not.** The former
+> body treated the superseded Triadic Stability argument as proof that every
+> adequate structure must have three primitives. That proof was retracted in
+> `../03_FORMAL_SYSTEM/11_EFR_TRIADIC_STABILITY.md`. What remains here is a
+> chosen compression for comparison. “Three” is a modeling decision whose
+> adequacy must be tested at each projection, never a theorem about reality or
+> a ranking of human beings.
 
 ---
 
 ## The Cascade
 
-The Transcendental Trinity {0, 1, ∞} does not appear once. It appears at every level of knowledge — the same three-fold structure, repeating, each level a finer grain of the one above.
+This document asks what becomes visible when the selected {0, 1, ∞} frame is
+projected across several levels of knowledge. Similar three-part descriptions
+recur; whether they are explanatory, merely mnemonic, or misleading is a
+domain-local question.
 
 ```
         φ (coherence)           B (balance)              ν (viability)
@@ -158,7 +169,8 @@ Each cycle is not repetition. Each cycle is the **spiral** — the same three st
 | **Practice** | Sit (receive) | Hold (balance) | Act (express) |
 | **Symbol** | ○ | ⊙ | • |
 
-The same Trinity. Nine levels deep. The same structure. Always three. Always cycling.
+One selected triadic reading, nine projections deep. The recurrence is an
+interpretive pattern to test, not proof that every level has the same structure.
 
 ---
 
@@ -199,9 +211,14 @@ Both pathologies are the same error: **refusing to cycle.** Clinging to one phas
 
 ---
 
-## Why Three and Not More
+## Why Use Three Here?
 
-The Triadic Stability Theorem (MF-511) proves N = 3 is the unique stable configuration. Two collapses (no mediator). Four is redundant (the fourth element reduces to a combination of three). Three is the minimum structure that can cycle — that can go from φ to P to ν and return without collapsing.
+The corpus selects three roles because they provide a compact frame for the
+particular comparisons below. The former claim that `N=3` is uniquely stable
+was not proved: two-component systems need not collapse, and four-or-more
+component structures need not contain a redundant primitive. Three can be a
+useful minimum for *this declared receive/mediate/act grammar* without being a
+minimum for every cycle, algebra, society, or ontology.
 
 The Three-Stage Process knew this. The medieval educators did not have the sphere. They had the experience of teaching. And the experience of teaching revealed: you need three arts. Grammar alone produces scholars who cannot think. Logic alone produces reasoners who cannot speak. Rhetoric alone produces speakers who know nothing. You need all three. And you need them in cycle: receive, derive, express. Receive again.
 
@@ -209,7 +226,9 @@ The Varnas knew this. The ancient Indians did not have the sphere. They had the 
 
 The Greeks knew this. Plato did not have the sphere. He had the experience of politics. And the experience of politics revealed: democracy degenerates without structure, oligarchy degenerates without inclusion, timocracy degenerates without wisdom. You need all three. And you need them in cycle.
 
-The cascade is not a theory imposed on knowledge. The cascade is the structure that knowledge *has* when you look at it on a sphere instead of a line.
+The cascade is a proposed lens on knowledge. It earns use only where the
+projection clarifies a domain without hiding a better partition or importing
+the lens's conclusions as evidence.
 
 ---
 

@@ -31,13 +31,17 @@ control document is corrected with a dated note (K3 archive-first, no deletion).
 ## Operator note
 
 Control work is **L3 Kṛṣṇa ◇ auditing** (truth tests, receipts) feeding **L4
-Arjuna ⚔** signing: nothing in this folder authorizes an irreversible act by
-itself — K2 signature stays with the natural person. The Titans (L5–L7) read
-this lane as boundary evidence; they do not execute from it.
+Arjuna ⚔** accountable commitment: nothing in this folder authorizes a
+consequential act by itself. The applicable `AuthorizationEnvelope` must name
+principal, mandate, scope, consent, custody, expiry/revocation, contest path,
+actor, and consequence bearer. A private DAV may implement that envelope through
+K2; this is not a worldview rule. The Titans (L5–L7) read this lane as boundary
+evidence; they do not execute from it.
 
 ## Cross-cutting laws
 
-- **K2:** every irreversible act requires natural-person signature.
+- **Authorization:** every consequential act requires a complete, scoped,
+  contestable envelope; K2 is private-DAV product governance only.
 - **η = 0:** zero extraction; fees only on value created.
 - **K3:** no-deletion; archive-first.
 - **K4:** grace exit; documented withdrawal path.

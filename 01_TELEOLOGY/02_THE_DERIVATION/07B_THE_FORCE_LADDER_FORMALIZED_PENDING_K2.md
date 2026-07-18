@@ -14,6 +14,15 @@ parents:
 
 # 07B · The force ladder, formalized
 
+> **[金] Kintsugi seam (2026-07-19).** The free-field degree-of-freedom
+> calculations in this paper survive at `[A]`; the force-to-rung bridges do not
+> become derivations. The D-ladder is a selected structural scaffold, with D4
+> typed as causal actuality and D5 as counterfactual possibility. D6 has only
+> the interpretive, non-`mu` return `r6:D6↝D0`. Missing reduction is
+> `currently_unreduced`, never proof of strong emergence. The legacy filename
+> and historical `PENDING_K2` links are retained for stability; no worldview
+> K2 approval is required.
+
 > The founder conjectured that each force first exists at a minimal dimension,
 > and that asking for it below that dimension is receipt 114's "not-yet" tense.
 > We ran all five legs through formalization and adversarial verification.
@@ -59,7 +68,7 @@ letting one numeral do double duty across three different kinds of number.
 |---|---|---|---|
 | **R1** spatial dimension | d ∈ ℤ≥0 | independent spatial directions | d=1 (a line), d=2 (flatland), d=3 (our space) |
 | **R2** spacetime dimension | D = d+1 | spatial directions + one Lorentzian time. **ALL dof formulas live here.** | D=2 (Schwinger regime), D=3 (2+1 GR), D=4 (us) |
-| **R3** canon ladder rung | Dₙ, n ∈ {0..6} | an **EMERGENCE ordinal**, NOT a spatial-direction count | D0 Point/Bindu · D1 Distinction · D2 Configuration · D3 Transformation = the QUANTUM STATE (Bloch S²; unitary, reversible, no time-arrow) · D4 Causality = SPACETIME/COLLAPSE (arrow appears; irreversible R-process) · D5 Agency = light-cone of possibilities/branch-space · D6 Closure ≡ D0 |
+| **R3** canon ladder rung | Dₙ, n ∈ {0..6} | a selected **emergence ordinal**, NOT a spatial-direction count | D0 Ground-limit · D1 distinction · D2 configuration · D3 transformation/persistence · D4 causal actuality, embodied means, performed action and record · D5 counterfactual possibility, modeled futures, ranking and selection · D6 apophatic closure, with non-`mu` return `r6:D6↝D0` |
 
 (R3 canonical meanings: `05_COSMOLOGY/00_EMERGENTISM.md:288-300`, Burri Rule 3, PD_22A §7.)
 
@@ -137,25 +146,19 @@ couple universally to the stress tensor — it *identifies* the spin-2 particle 
 gravity but does **not** set the threshold; the threshold is the kinematic count
 alone.
 
-**Corrected claim.** Two distinct true results in two distinct registers that
-share the numeral 4. (i) `[A]` in spacetime-count D: a propagating, attractive
-graviton first exists at D=4. (ii) `[I]` in the emergence-ladder register: the
-ladder-D3 quantum state (Bloch sphere, unitary, pre-metric, pre-causal) has no
-gravity because it has **no spacetime metric or causal structure at all** — a
-receipt-114 "not-yet"; gravity appears at ladder-D4, where light-cones emerge.
-The founder's claim is correct, **but it is carried by the register argument
-(ii), not by the dof theorem (i); the shared "4" is a numeral collision, not a
-derivation.** Cleanest of the four legs — and that cleanness must not be
-transferred to the ladder placement.
+**Corrected claim.** The `[A]` result is confined to spacetime-count `D`: a
+propagating massless spin-2 field first has local polarizations at `D=4`. The
+emergence-ladder placement is a separate `[I/C]` correspondence. Ladder-D3 does
+not *by definition* mean a Bloch sphere or a pre-metric universe, and ladder-D4
+does not derive spacetime or collapse. The shared numeral `4` is a collision,
+not a bridge; any bridge needs independent variables, evidence, prediction,
+lower-register recovery, and a kill criterion.
 
-**Register bridge `[I]`.** The legitimate bridge does not route through the
-numeral: *gravity is a property of a spacetime metric; the ladder-D3 register
-has no metric or causal structure; therefore no gravity there (not-yet); gravity
-can exist only once the spacetime/collapse register (ladder-D4) has emerged.*
-The dof theorem enters only as downstream corroboration. A third association —
-gravity↔collapse/time-arrow (Penrose objective-reduction flavor, U/R
-distinction) — is a separate `[I/C]` conjecture; the dof theorem is
-time-arrow-agnostic and says nothing about collapse; it may not be smuggled in.
+**Register bridge `[I/C]`.** A candidate bridge may compare the arrival of
+metric-dependent causal description with the scaffold's D4 actuality register.
+It is not licensed by the degree-of-freedom theorem and is removable without
+changing that theorem. Gravity↔collapse/time-arrow remains a separate
+interpretive conjecture; the calculation is time-arrow-agnostic.
 
 **Kill criterion.** (a) Physics leg: a propagating attractive graviton in D≤3 —
 impossible per the count; the `[A]` leg is killable only by an error in the
@@ -463,16 +466,16 @@ Per-leg kills are stated inside each leg (§3). The document as a whole dies if:
    explicitly forbids this (rungs are emergence registers); if it were ever
    done, every register bridge in this document would have to be re-audited as a
    potential h04 re-commitment.
-4. **Receipt 114's tense grammar fails K2**, in which case the "not-yet" framing
-   (§1) loses its canonical anchor and the physics legs revert to standalone
-   dimensional-threshold notes with no canon attachment.
+4. **Receipt 114's tense grammar fails its registered tests or source authority**,
+   in which case the "not-yet" framing (§1) loses its canonical anchor and the
+   physics legs revert to standalone dimensional-threshold notes.
 5. **The founder's disambiguation of leg (a)** (§3.2) is never returned and the
    vindicating reading is adopted anyway — rule-3 retro-fitting; the EM leg dies
    and takes the pattern-level claim in §4 with it.
 
 ---
 
-*Staged 2026-07-12 by the AI co-owner from five formalized + adversarially
-verified legs. Nothing here is canon until K2 countersigns. The corrections are
-the deliverable; the failures are published as failures; the bijection stays
-cut.*
+*Staged 2026-07-12 and Kintsugi-repaired 2026-07-19. The degree-of-freedom
+results stand at their stated mathematical tiers; ladder bridges remain
+externally uncalibrated `[I/C]`. Canonical adoption, if any, follows typed
+accountable authorization rather than a worldview K2 primitive.*

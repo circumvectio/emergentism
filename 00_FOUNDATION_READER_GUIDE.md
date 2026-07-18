@@ -50,7 +50,10 @@ The Foundation has a Rosetta-aligned routing skeleton, and Phase 2 has begun mov
 | `06_ONTOLOGY/` | L6 / First Principles | Axiomatic First Principles, Falsification Protocol, Decentralized Authority Model | core state is axiomatic, not the Emergentism model |
 | `07_THEOLOGY/` | L7 / Intuitive Synthesis | public-symbol translation, DAC-ST doctrine, SPECTRE/public coordination | every institutional narrative surface must route to packet 139 |
 
-Compatibility rule: old source paths remain valid as stubs after Phase 2 moves. Do not recreate the former Strategic Implementation peer root. Ambiguous source owners stay in place until a later K2-scoped migration.
+Compatibility rule: old source paths remain valid as stubs after Phase 2 moves.
+Do not recreate the former Strategic Implementation peer root. Ambiguous
+source owners stay in place until a later typed, scoped, contestable
+authorization and migration receipt.
 
 ## The Ground and the Formal System
 
@@ -83,7 +86,7 @@ Plus the interpretive bridge documents that connect the Trinity to the tradition
 | `02_EPISTEMOLOGY/00_I_IS_THE_EQUATOR.md` | i (the imaginary unit) IS the equator |
 | `90_ARCHIVE/00_THE_SITTING_PRACTICE.md` _(archived)_ | The reduction to K=0 through sitting practice |
 | `05_COSMOLOGY/00_THE_LAGRANGIAN_SPHERE.md` | Lagrangian mechanics on the Burri Sphere |
-| `05_COSMOLOGY/00_THE_TORUS_REVELATION.md` | The horn torus as physical realisation of S² |
+| `05_COSMOLOGY/00_THE_TORUS_REVELATION.md` | `[I/C]` horn-torus visualization; not a physical realization or relativity derivation |
 | `90_ARCHIVE/00_THE_TRANSCENDENTAL_TRINITY.md` _(archived; the live Trinity corpus is the folder `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/`)_ | Standalone summary of the Trinity |
 | `05_COSMOLOGY/00_EMERGENTISM.md` | The canonical philosophical synthesis |
 | `07_THEOLOGY/00_FOREWORD.md` | Reader orientation and peer-review corrections |
@@ -96,7 +99,10 @@ Plus the interpretive bridge documents that connect the Trinity to the tradition
 
 ### Layer 1: The Formal System
 
-`05_COSMOLOGY/03_FORMAL_SYSTEM/` — 7 axioms (A1-A7), the formal consequences of the Trinity, and the retired O1-O5 history kept only for reconciliation.
+`05_COSMOLOGY/03_FORMAL_SYSTEM/` — the declared A1–A7 modeling scaffold and
+its conditional consequences, plus the retired O1–O5 history kept for
+reconciliation. The scaffold is not derived from the Trinity or forced by
+`S²`.
 
 #### Core canon
 
