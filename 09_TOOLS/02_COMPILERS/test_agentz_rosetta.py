@@ -2,8 +2,11 @@ from __future__ import annotations
 
 import copy
 import sys
+import tempfile
 import unittest
 from pathlib import Path
+
+import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import validate_agentz_rosetta as validator
@@ -70,6 +73,15 @@ class AgentzRosettaContractTests(unittest.TestCase):
         specs = copy.deepcopy(self.specs)
         specs[1]["metadata"]["d4_d5_contract"] = "D5 invokes tools"
         self.assertTrue(any("D4-carrier/D5-content" in e for e in validator.validate_specs(specs)))
+
+    def test_environment_networking_must_fail_closed(self) -> None:
+        env = validator.load_yaml(validator.ENV_PATH)
+        env["config"]["networking"]["type"] = "unrestricted"
+        with tempfile.TemporaryDirectory() as td:
+            path = Path(td) / "environment.yaml"
+            path.write_text(yaml.safe_dump(env, sort_keys=False), encoding="utf-8")
+            errors = validator.validate_paths(validator.CONFIG_DIR, path)
+        self.assertTrue(any("networking must be limited" in error for error in errors))
 
 
 if __name__ == "__main__":

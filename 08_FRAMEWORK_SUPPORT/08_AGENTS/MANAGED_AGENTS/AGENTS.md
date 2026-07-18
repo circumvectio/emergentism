@@ -26,6 +26,11 @@ rosetta:
 **Support:** L4 Kṣatriya, L6 Sādhu, L7 Ṛṣi
 **Evidence tier:** `[B]` local scaffold; `[S]` structural caste mapping; `[C]` unprovisioned deployment claims.
 
+The executable boundary is the deterministic `agentz.lock.json` plus
+`contract.py`. `provision.py --apply` and `run_session.py --execute` fail closed
+with `REMOTE_ADAPTER_UNSUPPORTED`; no hosted status may be inferred from local
+configuration parity.
+
 ## Source of Truth
 
 Definitions are selected and versioned—not discovered laws of cognition. Each

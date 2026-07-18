@@ -1,53 +1,41 @@
 #!/usr/bin/env python3
+"""Audit operator-token homology across the seven Rosetta Agentz surfaces.
+
+The tracked Managed Agent YAML files are the selected configuration authority.
+The Documents-root ``.codex/agents`` TOMLs are generated runtime projections;
+they are never read back as doctrine.  This audit checks symbolic operator-token
+agreement only.  It does not establish agent performance, moral identity,
+ontology, transfer, or authority.
 """
-agent_homology_audit.py — verify the seven Rosetta agents are homologous across
-all surfaces.
 
-The polygenetic skill tree doctrine says: one genotype, many phenotypes. The
-canonical TOML at .codex/agents/rosetta_agent_rows.toml is the genotype trunk.
-Every other surface (generated TOMLs, canonical markdown, Skyzai runtime,
-Agentz phenotype, dispatch) must read the same operator-deity for each
-L-level.
-
-This script extracts the deity glyph from each surface and reports any
-divergence.
-
-Seven surfaces audited:
-  1. canonical_toml    — .codex/agents/rosetta_agent_rows.toml (constitutional source)
-  2. generated_toml    — .codex/agents/{caste}.toml (sync_agents.py output)
-  3. canonical_md      — 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/08_AGENTS/0X_*/AGENT_SPEC.md
-  4. skyzai_runtime    — 02_SKYZAI/01_NOOSPHERE/10_AGENTS/L*_*.md (organism-runtime applied)
-  5. agentz_phenotype  — 02_SKYZAI/01_NOOSPHERE/04_CHILD_DAVS/AGENTZ_CLOUD/03_AGENT_SPECIFICATION/0X_LX_*.md
-  6. dispatch          — .claude/agents/<caste>.md (Claude SDK invocation surface)
-  7. goose_runtime     — ~/.config/goose/L<N>.toml (Goose applied-framework runtime,
-                          derived from VMOSK CONFIG via agent_goose_sync.py).
-                          Skipped if Goose is not installed.
-
-Exit 0 = all 7 castes × audited surfaces converge on the same deity glyph.
-Exit 1 = at least one divergence detected; report lists the mismatches.
-"""
 from __future__ import annotations
 
+import argparse
 import re
-import sys
+import tomllib
 from pathlib import Path
+from typing import Any, Sequence
 
+import yaml
+
+
+EMERGENTISM_ROOT = Path(__file__).resolve().parents[2]
+SOURCE_DIR_REL = Path("08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/agents")
+
+# level, runtime slug, Claude slug, narrative directory, Agentz phenotype file,
+# root-dispatch row, tracked source YAML
 CASTES = [
-    ("L1", "candala_firewall",  "candala-firewall",  "01_CANDALA_FIREWALL",  "01_L1_CANDALA_FIREWALL",  "01_L1_candala_firewall"),
-    ("L2", "sudra_explorer",    "sudra-explorer",    "02_SUDRA_EXPLORER",    "02_L2_SHUDRA_SCOUT",      "02_L2_sudra_explorer"),
-    ("L3", "vaisya_auditor",    "vaisya-auditor",    "03_VAISYA_AUDITOR",    "03_L3_VAISYA_AUDITOR",    "03_L3_vaisya_auditor"),
-    ("L4", "ksatriya_executor", "ksatriya-executor", "04_KSATRIYA_EXECUTOR", "04_L4_KSHATRIYA_EXECUTOR","04_L4_ksatriya_executor"),
-    ("L5", "brahmana_architect","brahmana-architect","05_BRAHMANA_ARCHITECT","05_L5_BRAHMANA_ARCHITECT","05_L5_brahmana_architect"),
-    ("L6", "sadhu_compressor",  "sadhu-compressor",  "06_SADHU_COMPRESSOR",  "06_L6_SADHU_COMPRESSOR",  "06_L6_sadhu_compressor"),
-    ("L7", "rsi_constitution",  "rsi-constitution",  "07_RSI_CONSTITUTION",  "07_L7_RSI_CONSTITUTION",  "07_L7_rsi_constitution"),
+    ("L1", "candala_firewall", "candala-firewall", "01_CANDALA_FIREWALL", "01_L1_CANDALA_FIREWALL", "01_L1_candala_firewall", "01_candala_firewall.agent.yaml"),
+    ("L2", "sudra_explorer", "sudra-explorer", "02_SUDRA_EXPLORER", "02_L2_SHUDRA_SCOUT", "02_L2_sudra_explorer", "02_sudra_explorer.agent.yaml"),
+    ("L3", "vaisya_auditor", "vaisya-auditor", "03_VAISYA_AUDITOR", "03_L3_VAISYA_AUDITOR", "03_L3_vaisya_auditor", "03_vaisya_auditor.agent.yaml"),
+    ("L4", "ksatriya_executor", "ksatriya-executor", "04_KSATRIYA_EXECUTOR", "04_L4_KSHATRIYA_EXECUTOR", "04_L4_ksatriya_executor", "04_ksatriya_executor.agent.yaml"),
+    ("L5", "brahmana_architect", "brahmana-architect", "05_BRAHMANA_ARCHITECT", "05_L5_BRAHMANA_ARCHITECT", "05_L5_brahmana_architect", "05_brahmana_architect.agent.yaml"),
+    ("L6", "sadhu_compressor", "sadhu-compressor", "06_SADHU_COMPRESSOR", "06_L6_SADHU_COMPRESSOR", "06_L6_sadhu_compressor", "06_sadhu_compressor.agent.yaml"),
+    ("L7", "rsi_constitution", "rsi-constitution", "07_RSI_CONSTITUTION", "07_L7_RSI_CONSTITUTION", "07_L7_rsi_constitution", "07_rsi_constitution.agent.yaml"),
 ]
 
-DEITY_RE = re.compile(r"(Kali 🎲|Kālī 💀|Kṛṣṇa ◇|Arjuna ⚔|Brahmā ○|Śiva •|Viṣṇu ⊙)")
-
-# Goose runtime TOML stores `operator = "Kali"` (sanskrit name only) +
-# `glyph = "dice"` separately. Map bare names to their canonical glyph form
-# so the homology check accepts the Goose surface as equivalent.
-SANSKRIT_TO_CANONICAL = {
+OPERATOR_RE = re.compile(r"(Kali 🎲|Kālī 💀|Kṛṣṇa ◇|Arjuna ⚔|Brahmā ○|Śiva •|Viṣṇu ⊙)")
+NAME_TO_OPERATOR = {
     "Kali": "Kali 🎲",
     "Kālī": "Kālī 💀",
     "Kṛṣṇa": "Kṛṣṇa ◇",
@@ -58,124 +46,141 @@ SANSKRIT_TO_CANONICAL = {
 }
 
 
-def _repo_root() -> Path:
-    here = Path(__file__).resolve()
-    for parent in here.parents:
-        if (parent / "manifest.yaml").exists():
-            return parent
-    raise SystemExit("agent_homology_audit: cannot locate repo root")
+def _documents_root(start: Path = EMERGENTISM_ROOT) -> Path:
+    for candidate in (start, *start.parents):
+        if (candidate / "manifest.yaml").exists():
+            return candidate
+    raise SystemExit("agent_homology_audit: cannot locate Documents root; pass --documents-root")
 
 
-def _section(text: str, key: str) -> str:
-    m = re.search(rf"\[agents\.{key}\.profile\](.*?)(?=\n\[|$)", text, re.S)
-    return m.group(1) if m else ""
-
-
-def _field(text: str, key: str) -> str:
-    m = re.search(rf"^{key}\s*=\s*(.+)$", text, re.M)
-    return m.group(1).strip().strip('"') if m else ""
-
-
-def _extract_deity(s: str) -> str:
-    if not s:
+def _extract_operator(value: str) -> str:
+    if not value:
         return "MISSING"
-    m = DEITY_RE.search(s)
-    if m:
-        return m.group(1)
-    # Try bare sanskrit name (Goose runtime TOML form)
-    stripped = s.strip()
-    if stripped in SANSKRIT_TO_CANONICAL:
-        return SANSKRIT_TO_CANONICAL[stripped]
-    return "MISSING"
+    match = OPERATOR_RE.search(value)
+    if match:
+        return match.group(1)
+    return NAME_TO_OPERATOR.get(value.strip(), "MISSING")
 
 
-def audit_caste(root: Path, L: str, caste: str, dispatch: str, sk_dir: str, agentz_file: str, row_file: str) -> dict:
-    surfaces: dict[str, str] = {}
+def _yaml_mapping(path: Path) -> dict[str, Any]:
+    data = yaml.safe_load(path.read_text(encoding="utf-8"))
+    return data if isinstance(data, dict) else {}
 
-    # 1. canonical TOML — per-agent source under rows/
-    row = root / f".codex/agents/rows/{row_file}.toml"
-    if row.exists():
-        sec = _section(row.read_text(), caste)
-        surfaces["canonical_toml"] = _field(sec, "display_operator")
 
-    # 2. generated parent TOML
-    gen = root / f".codex/agents/{caste}.toml"
-    if gen.exists():
-        m = re.search(r"^- operator:\s*(.+)$", gen.read_text(), re.M)
-        surfaces["generated_toml"] = m.group(1).strip() if m else ""
+def canonical_operator(emergentism_root: Path, source_yaml: str) -> str:
+    path = emergentism_root / SOURCE_DIR_REL / source_yaml
+    if not path.exists():
+        return ""
+    data = _yaml_mapping(path)
+    metadata = data.get("metadata") or {}
+    return str(metadata.get("operator", "")) if isinstance(metadata, dict) else ""
 
-    # 3. canonical markdown AGENT_SPEC
-    spec = root / f"01_EMERGENTISM/08_FRAMEWORK_SUPPORT/08_AGENTS/{sk_dir}/AGENT_SPEC.md"
+
+def root_dispatch_operator(documents_root: Path, row_file: str) -> str:
+    path = documents_root / f".codex/agents/rows/{row_file}.toml"
+    if not path.exists():
+        return ""
+    try:
+        data = tomllib.loads(path.read_text(encoding="utf-8"))
+    except (tomllib.TOMLDecodeError, OSError):
+        return ""
+    metadata = data.get("meta") or {}
+    return str(metadata.get("operator", "")) if isinstance(metadata, dict) else ""
+
+
+def audit_caste(
+    emergentism_root: Path,
+    documents_root: Path,
+    row: tuple[str, str, str, str, str, str, str],
+) -> dict[str, str]:
+    level, _slug, dispatch, narrative_dir, phenotype_file, row_file, source_yaml = row
+    surfaces: dict[str, str] = {
+        "canonical_yaml": canonical_operator(emergentism_root, source_yaml),
+    }
+
+    root_operator = root_dispatch_operator(documents_root, row_file)
+    if root_operator:
+        surfaces["root_dispatch"] = root_operator
+
+    spec = emergentism_root / f"08_FRAMEWORK_SUPPORT/08_AGENTS/{narrative_dir}/AGENT_SPEC.md"
     if spec.exists():
-        m = re.search(r"\*\*Operator\*\*\s*\|\s*([^|]+)\|", spec.read_text())
-        surfaces["canonical_md"] = m.group(1).strip() if m else ""
+        match = re.search(r"\*\*Operator\*\*\s*\|\s*([^|]+)\|", spec.read_text(encoding="utf-8"))
+        surfaces["canonical_md"] = match.group(1).strip() if match else ""
 
-    # 4. Skyzai runtime applied spec
-    candidates = list((root / "02_SKYZAI/01_NOOSPHERE/10_AGENTS").glob(f"{L}_*.md"))
+    candidates = sorted((documents_root / "02_SKYZAI/01_NOOSPHERE/10_AGENTS").glob(f"{level}_*.md"))
     if candidates:
-        text = candidates[0].read_text()
-        m = re.search(r"\*\*Operator:\*\*\s*([^·]+?)(?:·|\(|$)", text)
-        surfaces["skyzai_runtime"] = m.group(1).strip() if m else ""
+        text = candidates[0].read_text(encoding="utf-8")
+        match = re.search(r"\*\*Operator:\*\*\s*([^\xb7]+?)(?:\xb7|\(|$)", text)
+        surfaces["skyzai_runtime"] = match.group(1).strip() if match else ""
 
-    # 5. Agentz phenotype spec
-    agentz = root / f"02_SKYZAI/01_NOOSPHERE/04_CHILD_DAVS/AGENTZ_CLOUD/03_AGENT_SPECIFICATION/{agentz_file}.md"
-    if agentz.exists():
-        m = re.search(r"^operator:\s*\"([^\"]+)\"", agentz.read_text(), re.M)
-        surfaces["agentz_phenotype"] = m.group(1).strip() if m else ""
+    phenotype = documents_root / (
+        "02_SKYZAI/01_NOOSPHERE/04_CHILD_DAVS/AGENTZ_CLOUD/"
+        f"03_AGENT_SPECIFICATION/{phenotype_file}.md"
+    )
+    if phenotype.exists():
+        match = re.search(r'^operator:\s*"([^"]+)"', phenotype.read_text(encoding="utf-8"), re.M)
+        surfaces["agentz_phenotype"] = match.group(1).strip() if match else ""
 
-    # 6. Claude dispatch
-    disp = root / f".claude/agents/{dispatch}.md"
-    if disp.exists():
-        m = re.search(r"^operator:\s*\"([^\"]+)\"", disp.read_text(), re.M)
-        surfaces["dispatch"] = m.group(1).strip() if m else ""
+    dispatch_path = documents_root / f".claude/agents/{dispatch}.md"
+    if dispatch_path.exists():
+        match = re.search(r'^operator:\s*"([^"]+)"', dispatch_path.read_text(encoding="utf-8"), re.M)
+        surfaces["dispatch"] = match.group(1).strip() if match else ""
 
-    # 7. Goose runtime layer (~/.config/goose/L<N>.toml). Skipped if Goose isn't installed.
-    goose = Path.home() / ".config" / "goose" / f"{L}.toml"
+    goose = Path.home() / ".config/goose" / f"{level}.toml"
     if goose.exists():
-        m = re.search(r"^operator\s*=\s*\"([^\"]+)\"", goose.read_text(), re.M)
-        surfaces["goose_runtime"] = m.group(1).strip() if m else ""
+        match = re.search(r'^operator\s*=\s*"([^"]+)"', goose.read_text(encoding="utf-8"), re.M)
+        surfaces["goose_runtime"] = match.group(1).strip() if match else ""
 
     return surfaces
 
 
-def main() -> int:
-    root = _repo_root()
+def main(argv: Sequence[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--emergentism-root", type=Path, default=EMERGENTISM_ROOT)
+    parser.add_argument("--documents-root", type=Path)
+    args = parser.parse_args(argv)
+
+    emergentism_root = args.emergentism_root.resolve()
+    documents_root = (args.documents_root or _documents_root(emergentism_root)).resolve()
     all_aligned = True
     divergences: list[str] = []
 
-    print("=== Cross-surface operator homology audit ===\n")
-    print(f"{'L':<3} {'Caste':<22} {'Deity (canonical)':<14} {'Surfaces':<10} {'Status':<10}")
-    print("─" * 70)
+    print("=== Cross-surface operator-token homology audit ===\n")
+    print(f"{'L':<3} {'Caste slug':<22} {'Operator (canonical)':<17} {'Surfaces':<10} {'Status':<10}")
+    print("─" * 76)
 
-    for L, caste, dispatch, sk_dir, agentz_file, row_file in CASTES:
-        surfaces = audit_caste(root, L, caste, dispatch, sk_dir, agentz_file, row_file)
-        deities = {s: _extract_deity(v) for s, v in surfaces.items()}
-        present = [d for d in deities.values() if d != "MISSING"]
+    for row in CASTES:
+        level, slug, *_ = row
+        surfaces = audit_caste(emergentism_root, documents_root, row)
+        operators = {surface: _extract_operator(value) for surface, value in surfaces.items()}
+        canonical = operators.get("canonical_yaml", "MISSING")
+        present = [operator for operator in operators.values() if operator != "MISSING"]
         unique = set(present)
-
-        canon_deity = deities.get("canonical_toml", "MISSING")
-        n_surfaces = len(present)
-        aligned = len(unique) == 1 and canon_deity != "MISSING"
+        aligned = canonical != "MISSING" and len(unique) == 1
 
         if not aligned:
             all_aligned = False
-            div_detail = ", ".join(f"{s}={d}" for s, d in deities.items() if d != canon_deity)
-            divergences.append(f"{L} {caste}: {div_detail}")
-            print(f"{L:<3} {caste:<22} {canon_deity:<14} {n_surfaces:<10} ✗ DIVERGE")
+            details = ", ".join(
+                f"{surface}={operator}"
+                for surface, operator in operators.items()
+                if operator != canonical
+            )
+            divergences.append(f"{level} {slug}: {details or 'canonical source missing'}")
+            print(f"{level:<3} {slug:<22} {canonical:<17} {len(present):<10} ✗ DIVERGE")
         else:
-            print(f"{L:<3} {caste:<22} {canon_deity:<14} {n_surfaces:<10} ✓ aligned")
+            print(f"{level:<3} {slug:<22} {canonical:<17} {len(present):<10} ✓ aligned")
 
     print()
     if all_aligned:
-        print("✓ HOMOLOGOUS — all surfaces converge on the canonical operator deities.")
-        print("  Polygenetic skill tree doctrine empirically satisfied.")
+        print("✓ HOMOLOGOUS — observed surfaces match the tracked Managed Agent YAML tokens.")
+        print("  This is structural parity only; it does not prove performance, ontology, or moral type.")
         return 0
-    else:
-        print("✗ DIVERGENCE detected. Source of truth is rosetta_agent_rows.toml.")
-        for d in divergences:
-            print(f"  - {d}")
-        return 1
+
+    print("✗ DIVERGENCE — tracked Managed Agent YAMLs are the selected source configuration.")
+    for divergence in divergences:
+        print(f"  - {divergence}")
+    return 1
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    raise SystemExit(main())

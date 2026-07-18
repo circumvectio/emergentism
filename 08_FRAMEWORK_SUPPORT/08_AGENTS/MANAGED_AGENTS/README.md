@@ -111,70 +111,60 @@ authorized L4 route performs any mutation.
 
 ---
 
-## Provision (one-time, control plane)
+## Local control plane — executable now
 
-> Nothing is provisioned yet — this checkout has neither `ant` nor API credentials.
-> Pick one path, authenticate, then run it once.
+The earlier name-based provisioner is retired. Reusing a remote resource by
+display name cannot prove that its model, prompt, tools, permission policies,
+metadata, version, environment, or coordinator roster equals this bundle.
 
-**Path A — Python SDK (idempotent by name; recommended here):**
+The executable surface is therefore local and fail-closed:
+
 ```bash
-pip install anthropic pyyaml
-export ANTHROPIC_API_KEY=sk-ant-...        # your key
-python provision.py                        # creates env + 7 agents → agent_ids.json
+python3 contract.py                    # verify the semantic lock
+python3 provision.py --check-local     # same check through the control-plane entry
+python3 provision.py --plan            # deterministic JSON plan; zero API calls
+python3 provision.py --apply           # refuses: REMOTE_ADAPTER_UNSUPPORTED
 ```
 
-**Path B — Anthropic CLI (canonical version-controlled YAML):**
-```bash
-brew install anthropics/tap/ant            # see shared/anthropic-cli.md
-ant auth login
-./provision.sh                             # creates env + 7 agents → agent_ids.env
-```
+[`managed_agentz.schema.json`](managed_agentz.schema.json) closes the typed
+record shapes. [`agentz.lock.json`](agentz.lock.json) deterministically binds
+the schema, environment payload, seven ordered agent payloads, coordinator
+topology, and whole-bundle hash. Comments and YAML key order do not change a
+semantic hash; a model, prompt, tool, permission, metadata, environment, schema,
+or topology change does.
 
-Both create the `emergentism-seven` environment and the seven agents, and write their
-IDs. **Agents are persistent and versioned** — create once, reuse the IDs; to change a
-prompt/tool later, *update* (`ant beta:agents update --agent-id <id> --version N`), which
-bumps the version. Agents cannot be deleted, only archived — so don't re-run `provision.sh`
-blindly (use `provision.py`, which skips existing names).
+`provision.sh` is now only an offline wrapper around `provision.py`; it contains
+no provider `create`, `update`, `archive`, or `delete` command. A future adapter
+must retrieve every complete remote payload, compare semantic hashes and pinned
+versions, reject duplicate names, and write a `remote_verified` deployment
+receipt before this lane may leave `unprovisioned_x0`.
 
 ---
 
-## Runtime (per task, data plane — your application)
+## Run preflight — executable now; hosted execution still blocked
 
-Agents are the config; **sessions** are each run. The runnable entry point is
-[`run_session.py`](run_session.py) — it loads `agent_ids.json`, resolves the L4 (Arjuna)
-executor + the shared environment, opens ONE session (stream-first), streams it, and
-reports the final status. Because Arjuna is wired as the coordinator over the other six
-(below), a single L4 session delegates down the whole caste ensemble:
+[`run_session.py`](run_session.py) now accepts records, not a bare task string:
 
 ```bash
-pip install anthropic
-export ANTHROPIC_API_KEY=sk-ant-...
-python run_session.py "Audit 06_ONTOLOGY and stage the smallest-defensible diff."
+python3 run_session.py \
+  --request local_run_requests/request.json \
+  --deployment-receipt local_state/deployment.json
 ```
 
-The shape of one run (full bindings: `python/managed-agents/README.md` via the
-`claude-api` skill):
+Preflight requires the current bundle hash, exactly seven pinned remote agent
+IDs and versions, the exact L4 coordinator topology, a typed `RunRequest`, a
+positive four-dimensional budget, the blinded rival-evaluation contract, and a
+complete unexpired authorization envelope for every consequential or mutating
+request. `--execute` currently refuses with `REMOTE_ADAPTER_UNSUPPORTED` because
+calls, tokens, wall time, and delegations are not yet all provider-observable
+and enforceable through an approved adapter.
 
-```python
-import anthropic, json
-client = anthropic.Anthropic()
-ids = json.load(open("agent_ids.json"))
-env_id = ids["_environment"]["id"]
-auditor = ids["Emergentism · L3 Vaiśya (Kṛṣṇa) — Auditor"]["id"]
-
-session = client.beta.sessions.create(
-    agent=auditor,                      # ← by ID; model/system/tools live on the agent
-    environment_id=env_id,
-    title="Audit 06_ONTOLOGY",
-    resources=[{                        # mount the corpus so the agent can read it
-        "type": "github_repository",
-        "url": "https://github.com/<owner>/<magnum-opus-repo>",
-        "authorization_token": "<gh-PAT>",
-        "mount_path": "/workspace/repo",
-    }],
-)
-# stream-first, then send the kickoff; break on terminal idle / terminated
-```
+This wrapper creates no client during preflight, never auto-confirms a tool,
+and never waits indefinitely on `requires_action`. A tool proposal is not a
+commitment receipt. A session status or model sentence is not an outcome
+receipt. Commitment must come from the trusted action wrapper; outcome must
+come later from the world/tool-result issuer with bearer observations. Missing
+observations remain null or pending.
 
 **The ensemble is a selected typed pipeline:**
 `L1 firewall → L2 explore → L3 rank → L4 prospective Justice check and authorized commitment`, with the Executive boundaries
@@ -188,10 +178,9 @@ session and Arjuna delegates down to the six — each delegation surfaces on the
 `session.thread_created` event. (Background on the platform shape:
 `shared/managed-agents-multiagent.md`.)
 
-> **Note on parity.** These hosted agents mirror the seven Claude Code subagents already
-> registered in this workspace (`candala_firewall` … `rsi_constitution`). Use the local
-> subagents for work *inside this repo*; use these Managed Agents when you want Anthropic
-> to host the loop + a per-session workspace (CI triggers, long-running sessions, a UI).
+> **Parity boundary.** The YAMLs are candidate hosted counterparts to the local
+> routing rows. They are not hosted agents until a remote-verifying deployment
+> receipt exists, and prompt homology is not evidence of equal performance.
 
 ---
 
@@ -200,6 +189,9 @@ session and Arjuna delegates down to the six — each delegation surfaces on the
 ```
 MANAGED_AGENTS/
 ├── README.md                       ← this file
+├── contract.py                     ← pure validation, hashing, and preflight contracts
+├── managed_agentz.schema.json      ← closed record shapes
+├── agentz.lock.json                ← deterministic semantic bundle lock
 ├── emergentism.environment.yaml    ← shared cloud container template
 ├── agents/
 │   ├── 01_candala_firewall.agent.yaml      (L1 · Kali · read-only)
@@ -209,9 +201,9 @@ MANAGED_AGENTS/
 │   ├── 05_brahmana_architect.agent.yaml    (L5 · Brahmā · read+web)
 │   ├── 06_sadhu_compressor.agent.yaml      (L6 · Śiva · read-only proposal)
 │   └── 07_rsi_constitution.agent.yaml      (L7 · Viṣṇu · read-only)
-├── provision.py                    ← SDK provisioner (idempotent by name; wires L4 coordinator)
-├── provision.sh                    ← `ant` CLI provisioner (version-controlled YAML; wires L4 coordinator)
-└── run_session.py                  ← data-plane entry: one L4 (Arjuna) session, stream-first
+├── provision.py                    ← offline check/plan; remote apply refuses
+├── provision.sh                    ← offline wrapper; no provider mutations
+└── run_session.py                  ← typed preflight; hosted execution refuses
 ```
 
 Canon: [`../00_THE_SEVEN_OPERATOR_GENOTYPE.md`](../00_THE_SEVEN_OPERATOR_GENOTYPE.md) ·

@@ -275,6 +275,15 @@ def validate_paths(config_dir: Path = CONFIG_DIR, env_path: Path = ENV_PATH) -> 
     status = str((env.get("metadata") or {}).get("calibration_status", ""))
     if status != "unprovisioned_x0":
         errors.append("environment must disclose calibration_status=unprovisioned_x0")
+    networking = ((env.get("config") or {}).get("networking") or {})
+    if networking.get("type") != "limited":
+        errors.append("environment networking must be limited")
+    if networking.get("allowed_hosts") != []:
+        errors.append("environment allowed_hosts must be empty until separately authorized")
+    if networking.get("allow_mcp_servers") is not False:
+        errors.append("environment MCP egress must be disabled")
+    if networking.get("allow_package_managers") is not False:
+        errors.append("environment package-manager egress must be disabled")
     return errors
 
 

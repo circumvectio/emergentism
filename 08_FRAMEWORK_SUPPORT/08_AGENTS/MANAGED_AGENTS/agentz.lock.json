@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0",
+  "calibrationStatus": "unprovisioned_x0",
+  "schema": {
+    "path": "managed_agentz.schema.json",
+    "sha256": "65d20444f3112148e88045885599dc85cea3c9927db0f82f39c25d6da3ae5d9f"
+  },
+  "environment": {
+    "path": "emergentism.environment.yaml",
+    "name": "emergentism-seven",
+    "configSha256": "6266771ff6c43fa5df56aef2836a236a45ed0e0d967e162e075c2a0ccda26304"
+  },
+  "agents": [
+    {
+      "level": "L1",
+      "path": "agents/01_candala_firewall.agent.yaml",
+      "name": "Emergentism · L1 Caṇḍāla (Kali) — Firewall",
+      "configSha256": "717fe218cfb9222a477b868df0b86086a63590cc4cb5953acb3414e659c2e3d6"
+    },
+    {
+      "level": "L2",
+      "path": "agents/02_sudra_explorer.agent.yaml",
+      "name": "Emergentism · L2 Śūdra (Kālī) — Explorer",
+      "configSha256": "03eb214d0cdf2f6d2f474f274b26da112ee27c9e1464fc3db2510abc783241b0"
+    },
+    {
+      "level": "L3",
+      "path": "agents/03_vaisya_auditor.agent.yaml",
+      "name": "Emergentism · L3 Vaiśya (Kṛṣṇa) — Auditor",
+      "configSha256": "c3f0efb88d39091b54e471f1e6338243d67386d6833aee967b0ca2c41787a9b6"
+    },
+    {
+      "level": "L4",
+      "path": "agents/04_ksatriya_executor.agent.yaml",
+      "name": "Emergentism · L4 Kṣatriya (Arjuna) — Executor",
+      "configSha256": "cc36d00c5a9c2779617b89853bcce2a7821b00c53ef96493d2adcbeaf621c914"
+    },
+    {
+      "level": "L5",
+      "path": "agents/05_brahmana_architect.agent.yaml",
+      "name": "Emergentism · L5 Brāhmaṇa (Brahmā) — Architect",
+      "configSha256": "313dde72c56d607793b80fc174b80ba37f801c8d53d204b1bc497e3e72943f1d"
+    },
+    {
+      "level": "L6",
+      "path": "agents/06_sadhu_compressor.agent.yaml",
+      "name": "Emergentism · L6 Sādhu (Śiva) — Compressor",
+      "configSha256": "0662b46acf16e2c120c9595e343b034f014ff60c318e607f25b4e0075166f90b"
+    },
+    {
+      "level": "L7",
+      "path": "agents/07_rsi_constitution.agent.yaml",
+      "name": "Emergentism · L7 Ṛṣi (Viṣṇu) — Constitution",
+      "configSha256": "b38d335e949516c28302dcf4fe30db65ed73c9a216f9017d2e727697a05a38e8"
+    }
+  ],
+  "topology": {
+    "coordinator": "L4",
+    "delegates": [
+      "L1",
+      "L2",
+      "L3",
+      "L5",
+      "L6",
+      "L7"
+    ],
+    "selfDelegation": true
+  },
+  "bundleSha256": "d061c20081b689f3278a762e93ffa254aebd249e4bd4c098aa870693f0727f1d"
+}

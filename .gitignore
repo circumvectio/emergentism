@@ -42,10 +42,16 @@ npm-debug.log*
 .env
 .env.local
 
+# Managed Agentz local provider/run state (the semantic lock is tracked)
+08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/agent_ids.json
+08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/agent_ids.env
+08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/local_run_requests/
+08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/local_receipts/
+08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/local_state/
+
 # Foundry
 cache/
 out/
 
 # Local Codex Animation Shots
 .codex-animation-shots/
-

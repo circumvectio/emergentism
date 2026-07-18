@@ -7,10 +7,15 @@ description: "Shared cloud container for four deployable routing passes and thre
 config:
   type: cloud
   networking:
-    # L2/L3/L5 use web_search / web_fetch. Tighten to `limited` + allowed_hosts to lock egress.
-    type: unrestricted
+    # Built-in web_search/web_fetch remain agent tools. Container egress stays
+    # closed so L4 bash cannot turn platform confirmation into arbitrary network
+    # authority. Add hosts only in a separately reviewed environment version.
+    type: limited
+    allowed_hosts: []
+    allow_mcp_servers: false
+    allow_package_managers: false
 metadata:
   framework: "Emergentism"
   purpose: "selected seven-profile routing ensemble"
   calibration_status: "unprovisioned_x0"
-  runtime_boundary: "shared unrestricted container networking is not approved for consequential use"
+  runtime_boundary: "container egress is closed; hosted execution still requires a remote-verified deployment receipt"
