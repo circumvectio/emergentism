@@ -159,8 +159,8 @@ tr.equator td.level .lat{color:rgba(255,235,59,.5)}
     <div class="herogrid">
       <div>
         <h1 class="reveal in">Seven latitudes.<br>One <span class="heavy">mirror</span>.</h1>
-        <p class="dek reveal in">The Rosetta is the mathematical and conceptual anchor of the framework — mapping the seven latitudes around the Burri sphere S² in 15° steps. Here we align the operators, functional castes, mathematical actions, and the classical initiatory paths of ascent.</p>
-        <p class="tierline reveal in">Evidence tier: <span class="t t-s">[S]</span> structural alignment — <b style="color:var(--bone-dim);font-weight:400">the table is tiered, not flattened</b></p>
+        <p class="dek reveal in">The historical Rosetta Stone is remembered for one property: the same meaning carved in three scripts, so anyone who read <em>one</em> could enter the others. This page is that — <b>a translation instrument, not an exhibit of evidence</b>. Seven latitudes of the sphere, written in parallel across the languages people actually speak; pick the column you already read, and use it to enter the ones you don't.</p>
+        <p class="tierline reveal in">Evidence tier: <span class="t t-i">[I]</span> cross-domain lens — <b style="color:var(--bone-dim);font-weight:400">a lens that translates, not a universal that was discovered (kill-criterion fired 2026-07-13; kept visible below)</b></p>
         <div class="bridge reveal in" aria-label="Dimension spine bridge">
           <a href="../6/index.html">← from /6 convergence</a>
           <a href="../0/index.html">restart /0 dimensions</a>
@@ -249,9 +249,68 @@ tr.equator td.level .lat{color:rgba(255,235,59,.5)}
     </div>
   </section>
 
+  <!-- the translation instrument -->
+  <section id="translate">
+    <style>
+      .xbtns{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1.6rem}
+      .xbtn{font-family:var(--mono);font-size:.78rem;letter-spacing:.04em;padding:.5rem .95rem;border:1px solid var(--line);border-radius:999px;background:var(--panel);color:var(--bone-dim);cursor:pointer;transition:.16s}
+      .xbtn:hover{border-color:var(--bone-faint);color:var(--bone)}
+      .xbtn[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#1a1206;font-weight:700}
+      .xrows{border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,var(--panel),var(--void-2));overflow:hidden}
+      .xrow{display:grid;grid-template-columns:64px 1fr;gap:1rem;padding:.85rem 1.3rem;border-top:1px solid var(--line-soft);align-items:baseline}
+      .xrow:first-child{border-top:0}
+      .xl{font-family:var(--mono);font-size:.82rem;font-weight:700;color:var(--pair)}
+      .xtext{color:var(--bone-dim);font-weight:300;font-size:1.02rem}
+      .xrow.eq{background:linear-gradient(90deg,rgba(255,235,59,.06),transparent 70%)}
+      .xrow.eq .xtext{color:var(--bone)}
+      .xnote{font-family:var(--mono);font-size:.72rem;color:var(--bone-faint);margin:.9rem 0 0}
+    </style>
+    <p class="kicker reveal">The instrument, demonstrated</p>
+    <h2 class="reveal">Pick the column <b>you already read.</b></h2>
+    <p class="dek reveal" style="max-width:64ch">A translation stone works because one script is already yours. Choose your native register; the seven latitudes render in it. Then choose another — same rows, different script. That crossing <em>is</em> the Rosetta doing its actual job.</p>
+    <div class="xbtns reveal" role="group" aria-label="Choose your register">
+      <button class="xbtn" data-x="work" aria-pressed="true">Work &amp; governance</button>
+      <button class="xbtn" data-x="physics" aria-pressed="false">Physics</button>
+      <button class="xbtn" data-x="math" aria-pressed="false">Mathematics</button>
+      <button class="xbtn" data-x="psyche" aria-pressed="false">Psychology</button>
+      <button class="xbtn" data-x="ethics" aria-pressed="false">Ethics</button>
+      <button class="xbtn" data-x="practice" aria-pressed="false">Practice</button>
+    </div>
+    <div class="xrows reveal" id="xrows" aria-live="polite">
+      <div class="xrow" style="--pair:#b59ce0"><span class="xl">L1</span><span class="xtext">names the raw pressure — what hurts, what is broken, what stays unresolved</span></div>
+      <div class="xrow" style="--pair:#5aa9e6"><span class="xl">L2</span><span class="xtext">checks the evidence before any claim is allowed to get stronger</span></div>
+      <div class="xrow" style="--pair:#6fc79a"><span class="xl">L3</span><span class="xtext">audits the ledgers — verifies the claims, the receipts, the exchange</span></div>
+      <div class="xrow eq" style="--pair:#FFEB3B"><span class="xl">L4</span><span class="xtext">decides and signs — the one who routes the irreversible acts</span></div>
+      <div class="xrow" style="--pair:#6fc79a"><span class="xl">L5</span><span class="xtext">owns the architecture — designs the doctrine others execute</span></div>
+      <div class="xrow" style="--pair:#5aa9e6"><span class="xl">L6</span><span class="xtext">cuts the overclaims — keeps repair from becoming new doctrine</span></div>
+      <div class="xrow" style="--pair:#b59ce0"><span class="xl">L7</span><span class="xtext">preserves the compressed witness — translates settled truth outward</span></div>
+    </div>
+    <p class="xnote reveal">register translations are <span class="t t-i">[I]</span> — the lens working, offered as lens · mirror pairs share a colour · L4 is the equator</p>
+    <script>
+    (function(){
+      var X = {
+        work: ["names the raw pressure — what hurts, what is broken, what stays unresolved","checks the evidence before any claim is allowed to get stronger","audits the ledgers — verifies the claims, the receipts, the exchange","decides and signs — the one who routes the irreversible acts","owns the architecture — designs the doctrine others execute","cuts the overclaims — keeps repair from becoming new doctrine","preserves the compressed witness — translates settled truth outward"],
+        physics: ["near the pole — balance gone, the clock barely ticks","high latitude — motion without structure, little lived time","mid-latitude — the long approach toward balance","the equator — the rest frame: B = 1, the clock ticks fastest","mid-latitude, far side — structure beginning to outweigh motion","high latitude — nearly all form, almost no act","near the pole — the limit where seeing is all that remains"],
+        math: ["φ → 0 — coherence vanishing: the survival boundary","φ ≪ 1 — action far outrunning sight","φ < 1 — the approach to unity from below","φ = ν = 1 — the fixed point of inversion; sin θ maximal","φ > 1 — structure exceeding act","φ ≫ 1 — form nearly frozen","φ → ∞ — the seeing limit"],
+        psyche: ["survival — the boundary where fear lives","discipline — craft learned by repetition until it holds","exchange — negotiation, reciprocity, earned trust","agency at the edge — flow: the whole self present in the act","vision — seeing the design behind the acts","renunciation — discernment, and the courage to cut","witness — seeing clearly, without insisting"],
+        ethics: ["the claim of the excluded — where harm is named first","honesty in the small — evidence before assertion","fair exchange — zero extraction in trade","the dyadic act — raise yourself and what sustains you, together","lawgiving — designing rules you would live under","refusal — not-taking; cutting counterfeit good","testimony — keeping the record true"],
+        practice: ["the ground — sitting with what is unbearable","the repetition — practice until it belongs to the body","the offering — giving that does not drain the giver","the crossing — the sitting itself; both poles held at once","the design — seeing the mandala whole","the cut — neti neti: not this, not this","the putting down — the seer sees, and does not insist"]
+      };
+      var btns = [].slice.call(document.querySelectorAll('.xbtn'));
+      var texts = [].slice.call(document.querySelectorAll('#xrows .xtext'));
+      btns.forEach(function(b){ b.addEventListener('click', function(){
+        btns.forEach(function(x){ x.setAttribute('aria-pressed','false'); });
+        b.setAttribute('aria-pressed','true');
+        var d = X[b.getAttribute('data-x')] || X.work;
+        texts.forEach(function(t,i){ t.textContent = d[i]; });
+      }); });
+    })();
+    </script>
+  </section>
+
   <!-- the table -->
   <section>
-    <p class="kicker reveal">The instrument</p>
+    <p class="kicker reveal">The full stone</p>
     <h2 class="reveal">The Master Rosetta — <b>the table itself</b></h2>
     <div class="tblwrap reveal">
       <table>
