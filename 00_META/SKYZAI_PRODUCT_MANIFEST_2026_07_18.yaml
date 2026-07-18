@@ -1,0 +1,226 @@
+# SKYZAI FAMILY — PRODUCT MANIFEST (staged structural corrective)
+# ---------------------------------------------------------------------------
+# [D] staged. This is the "manifest overlay, NOT a physical refold" the org
+# panel prescribed (wf_d096d09a-36d): it fixes the organization by encoding the
+# corrected taxonomy as DATA, so no concurrently-churned product-canon file is
+# edited. The folders stay exactly where they are; this file is the source of
+# truth for register + bucket + build-tier, and is designed to be read by a
+# conformance lint and by 02_SKYZAI/00_OPERATING_MODEL.md.
+#
+# What it corrects (the org verdict's three fixes, applied here):
+#   FIX 1  PRISM is reclassified out of the organ list -> bucket: membrane-apex.
+#   FIX 2  Evolutionary.Network is given ONE canonical_home; its other filings
+#          become pointer-stubs (noted per component).
+#   FIX 3  A single build-state view (this + the Frontier Ledger).
+#
+# DO-NOT (from the keep-list — the reorg to AVOID):
+#   - do NOT sort the physical tree by build_tier (tier changes every sprint;
+#     loop position almost never does)
+#   - do NOT shatter the organism into sellable SKUs
+#   - do NOT let a membrane or a legal entity masquerade as a loop-organ
+#
+# Grading is on receipts, not doctrine. Ladder: L0 concept · L1 doctrine ·
+# L2 spec · L3 built-not-integrated · L4 integrated · L5 live.
+# Binding constraint of the whole family: L3->L4 (one live cross-organ packet).
+# The apex is a >=2-natural-person K2 signer, never any component below.
+
+version: 0.1
+dated: 2026-07-18
+status: staged            # auditor stages; signer/owner adopts into the live tree
+source: wf_d096d09a-36d   # + P-SCORES.md, per-product runtime-truth/integration docs
+
+buckets:                  # the honest top-level shape (labels, not folders)
+  loop:        "THE LOOP — cognitive organs, IS->COULD->SHOULD->ACT + SHOULD-NOT gate; each forbidden the next's job"
+  substrate:   "THE SUBSTRATE — owns nothing; base of the trophic ladder"
+  institution: "THE INSTITUTIONS — D5, independently shippable, own legal shells"
+  membrane:    "THE APEX + MEMBRANE — the >=2-person K2 signer and its signing primitive"
+  legal:       "LEGAL/ADMIN — operating & contracting shells"
+
+components:
+
+  # ---------------- THE LOOP (organs; boundaries constitutional) ----------------
+  - name: TheCircle
+    role: IS / observe
+    bucket: loop
+    register: D4-witness         # registers state; must never commit the act
+    in_loop: true
+    depends_on: [public-feeds, contributed-AI-keys]
+    feeds: [RealityFutures, Agentz]
+    build_tier: L3
+    last_green: "PWA buildable 18/18; local RSS proof 2026-04-19 (STALE 89d past 14d gate)"
+    staleness: STALE
+    next_crossing: "redeploy circle.news + emit one live F1 (Kind 31339) consumed by APU"
+    canonical_home: 02_SKYZAI/01_NOOSPHERE/02_ORGANS/TheCircle
+    open_flag: "status self-contradictory across own canon (INTEGRATION_STATUS withdraws 'Prime-time' vs AGENTS re-asserts it) — host to resolve"
+
+  - name: RealityFutures
+    role: COULD / price
+    bucket: loop
+    register: D4-witness
+    in_loop: true
+    depends_on: [TheCircle, external-timeseries]
+    feeds: [Agentz]
+    build_tier: L3            # straddles L3/L4-
+    last_green: "18/18 Forge suites pass, 115 artifacts; contracts undeployed; one synthetic localhost F2 signal"
+    staleness: fresh
+    next_crossing: "model-backed forecast consumed across F2->F3 + one market resolving on Hedera testnet"
+    canonical_home: 02_SKYZAI/01_NOOSPHERE/02_ORGANS/RealityFutures
+
+  - name: Agentz
+    aka: APU.BOT
+    role: SHOULD / choose
+    bucket: loop
+    register: D5-chooser        # the family's one true chooser; owns NO execution envelope
+    in_loop: true
+    depends_on: [TheCircle, RealityFutures]
+    feeds: [K2-signer]
+    build_tier: L3+             # deepest-built; live LLM council, real K2 burn
+    last_green: "live LLM council runs (signed K2 envelopes, ~$0.03-0.06 burn); 71 backend tests; P code 0.45 / runtime 0.30"
+    staleness: fresh
+    next_crossing: "one real organ-boundary edge (today every edge synthetic/local)"
+    canonical_home: 02_SKYZAI/01_NOOSPHERE/02_ORGANS/Agentz
+    open_flag: "CLAUDE.md still shows stale P=0.84; canonical is 0.45/0.30 (A7-corrected 2026-07-17)"
+
+  - name: Skyzai
+    role: ACT / execute (the body / effector)
+    bucket: loop
+    register: effector          # carries a signed act; originates nothing
+    in_loop: true
+    depends_on: [K2-signer, settlement-rails, Spectre]
+    build_tier: L3
+    last_green: "303/303 backbone + 221/221 Elixir + contract suites green; settlement ALL mock; G1 never fired; P runtime 0.22"
+    staleness: fresh
+    next_crossing: "fire G1 — one real on-chain settlement (F3->F4) with a real human K2 signature"
+    canonical_home: 02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai
+
+  - name: EvolutionaryNetwork
+    role: SHOULD-NOT / refuse (immune gate)
+    bucket: loop               # functions as the loop's negative gate
+    register: D4-D5-immune
+    in_loop: true
+    depends_on: [network-threat-signal]
+    build_tier: L3
+    last_green: "261 tests pass (0.55s), ~8k LOC"
+    staleness: fresh
+    next_crossing: "one real detected pathogen flowing through the due-process chain in production"
+    canonical_home: 02_SKYZAI/08_EVOLUTIONARY_NETWORK   # FIX 2: THE one home
+    pointer_stubs:                                       # collapse these to thin stubs
+      - 02_SKYZAI/01_NOOSPHERE/02_ORGANS/EvolutionaryNetwork
+      - 03_VENTURES/EVOLUTIONARY_NETWORK
+    open_flag: "filed in 3 places w/ stale tombstone + dead loop-health links — de-duplicate to canonical_home"
+
+  # ---------------- THE APEX + MEMBRANE ----------------
+  - name: PRISM
+    role: public-DAV signing membrane (S1 primitive)
+    bucket: membrane           # FIX 1: NOT a sixth organ — it is the signing membrane
+    register: apex-membrane
+    in_loop: false             # it gates the loop; it is not a cognitive stage of it
+    build_tier: L2
+    last_green: "[D] ceremony spec only; verifier cannot import (ImportError); 0 tests; no ceremony ever run"
+    staleness: fresh
+    next_crossing: "a buildable, tested councilor-verifier + one dry-run ceremony bundle"
+    canonical_home: 02_SKYZAI/01_NOOSPHERE/02_ORGANS/PRISM
+    note: "the >=2-NATURAL-PERSON gate; today collapses to >=2 keys / 1 person — the family's sharpest unbuilt hole (S1)"
+
+  # ---------------- THE SUBSTRATE (owns nothing) ----------------
+  - name: Spectre
+    role: physical mesh substrate (MESH/RELAY/AXIOM/FLOW)
+    bucket: substrate
+    register: D4-witness       # meters + remembers; never signs/prices/chooses
+    in_loop: false
+    build_tier: L3-            # code present, 0 live nodes
+    last_green: "~6,800 LOC, code-tier only; 0 live nodes"
+    staleness: fresh
+    next_crossing: "10-node testnet / first metered Proof-of-Relay receipt on real bytes"
+    canonical_home: 02_SKYZAI/06_SPECTRE
+
+  # ---------------- THE INSTITUTIONS (D5, independently shippable) ----------------
+  - name: OpenFinanceNetwork
+    aka: OFN
+    role: eta=0 standards body + certification Stamp
+    bucket: institution        # dual-tag: its receipt STANDARD is a shared substrate rail
+    also: substrate-rail
+    register: D4-witness
+    build_tier: L3-            # standard + arch; every crossing mocked
+    last_green: "RP-1..14 receipt standard + architecture; all crossings mocked"
+    staleness: fresh
+    next_crossing: "one real receipt crossing one real boundary (replace mock settlement)"
+    canonical_home: 03_VENTURES/OPEN_FINANCE_NETWORK
+
+  - name: Aureus
+    role: capital formation / reserve (AUg + XFIAT)
+    bucket: institution
+    register: D5-chooser
+    build_tier: L1+           # [C] arch; specs not yet [D]; no acceptance tests
+    last_green: "[C] architecture; no acceptance tests"
+    staleness: fresh
+    next_crossing: "ratify specs [C]->[D] with acceptance tests defined"
+    canonical_home: 03_VENTURES/AUREUS
+
+  - name: Helios
+    role: health / longevity latency instrument
+    bucket: institution
+    register: D4-witness
+    build_tier: L2            # straddles L1<->L2; one [B] wedge harness
+    last_green: "one [B] wedge-validity harness ('for a healthy person, output is silence')"
+    staleness: fresh
+    next_crossing: "running genome-prior->phenotype product code with its own passing tests"
+    canonical_home: 03_VENTURES/HELIOS
+
+  - name: NOSTR_VPN
+    role: sovereign mesh VPN + golden-split affiliate
+    bucket: institution
+    register: cross-D-witness
+    build_tier: L2            # allocation ratified [S]; no VPN product code
+    last_green: "golden-split allocation math ratified [S] (doc 14 §2a); rides rake-free MIT upstream"
+    staleness: fresh
+    next_crossing: "write destination-first VPN product code on the fork; the read-only relay crawl is the cheapest first V"
+    canonical_home: 03_VENTURES/NOSTR_VPN
+
+  - name: Yantra
+    role: DePIN infrastructure nodes
+    bucket: institution
+    also: substrate-rail
+    register: substrate
+    build_tier: L1+
+    last_green: "node concept; load model incomplete; no vendor receipts"
+    staleness: fresh
+    next_crossing: "finish spec with real receipts (load model, vendors)"
+    canonical_home: 03_VENTURES/YANTRA
+
+  - name: QNTM
+    role: flagship / pre-licence narrative
+    bucket: institution
+    register: D5-narrative
+    build_tier: L1+
+    last_green: "pre-licence narrative + one code module (IPCM)"
+    staleness: fresh
+    next_crossing: "one [B] build/test receipt on the IPCM module"
+    canonical_home: 03_VENTURES/QNTM
+
+  # ---------------- LEGAL / ADMIN ----------------
+  - name: Menexus
+    role: operating & contracting shell (Menexus GmbH + XAAS)
+    bucket: legal
+    register: legal-admin
+    in_loop: false
+    build_tier: L2+
+    last_green: "operating/contracting lane exists; first-proof wedge counsel-blocked"
+    staleness: fresh
+    next_crossing: "one executed real edge (Monthly-Managed-Residence first proof)"
+    canonical_home: 03_VENTURES/MENEXUS
+
+# ---------------------------------------------------------------------------
+# CONFORMANCE INVARIANTS (for the future lint that reads this file):
+#   INV-1  every component has a bucket, a register, and a build_tier.
+#   INV-2  no component with register in {D4-witness, effector, substrate}
+#          may be marked in_loop:true AND also authorize a settlement (witness/
+#          chooser firewall, S3).
+#   INV-3  any consequential/settlement surface must name a signer that
+#          resolves to >=2 attested NATURAL PERSONS (S1), never keys.
+#   INV-4  PRISM.bucket == membrane (never 'loop'); if any doc files it as an
+#          organ, that doc is stale — FAIL.
+#   INV-5  a component may have exactly one canonical_home; extra filings must
+#          be declared as pointer_stubs (see EvolutionaryNetwork).
+#   INV-6  build_tier is graded on receipts; a green banner is not a receipt.
+# ---------------------------------------------------------------------------
