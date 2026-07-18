@@ -41,7 +41,14 @@ Per the "different kind of move" meta-rule: each V-forcer after V-forcer 8 must 
 
 ## §1 · The 3 open threads this V-forcer closes
 
-### Thread A · The 4 Open Canon v0.1 docs (FREEZE)
+> **REALIZATION NOTE (2026-07-19).** The original V-forcer 10 dispositions (FREEZE / RETIRE / ACCEPT-AS-IS) were superseded by the K2 "do it" act on 2026-07-19. The new dispositions are: **CONSOLIDATE / RETIRE / FIX**. The 3 actions are realized in 3 separate commits on 3 branches:
+> - Thread A: `codex/open-canon-v01-consolidation-2026-07-19` → `c395d8f` (rename) + `7021cce` (tombstone)
+> - Thread B: `codex/holobiont-retirement-2026-07-19` → `a4d6ced8` (rename) + `a69602b1` (tombstone)
+> - Thread C: `fix/apply-seams-110-115` → `1778e7f` (LFS pointer recovery, 30 files)
+>
+> The rest of this §1 describes the ORIGINAL dispositions; the realization is above.
+
+### Thread A · The 4 Open Canon v0.1 docs (FREEZE → CONSOLIDATE)
 
 The four `00_*_v0.1.md` files at `01_EMERGENTISM/` root:
 
@@ -50,21 +57,23 @@ The four `00_*_v0.1.md` files at `01_EMERGENTISM/` root:
 3. `00_THE_SPREAD_v0.1.md` (the §5 institutional layer + §6 immune system)
 4. `00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md` (the meta-philosophical ground)
 
-**Status:** these are 4 separate conceptual scopes, not a convergence-memo violation. The convergence-memo closed for the 2 parallel CHARTER drafts in V-forcer 8. The 4 v0.1 docs are intentional set, not a sprawl.
+**Original disposition (FREEZE):** the 4 docs are 4 separate conceptual scopes, not a convergence-memo violation. Freeze at v0.1; v0.2 is the next release gate.
 
-**V-forcer 10 disposition:** the 4 docs are **frozen at v0.1**. No edits, no new v0.1 docs, no renames. v0.2 is the next release gate (counsel review + K2 sign + a release-cycle v-forcer).
+**Realized disposition (CONSOLIDATE):** per the K2 "do it" act, one doc is canonical, three are archived. Pick: **SPREAD** is canonical (largest, earliest K2 sign, the strategy doc the other 3 implement/ground/operationalize). The 3 non-canonicals (RECEIPT, PROTOCOL, GAP) are moved to `90_ARCHIVE/2026_07_19_open_canon_v01_consolidation/` with a tombstone README. The K2 signs are preserved in the tombstone; the convergence-memo closes the violation by retiring, not refining.
 
 ### Thread B · `02_SKYZAI/09_The_Holobiont/` (RETIRE)
 
 The Holobiont folder at `02_SKYZAI/09_The_Holobiont/` has 2 files (CLAUDE.md + README.md), last touched 2026-06-17. The operating model (`02_SKYZAI/00_OPERATING_MODEL.md`) declares the Holobiont merged into `02_SKYZAI/03_AIA/`. The folder is dead weight.
 
-**V-forcer 10 disposition:** the folder is **retired to `90_ARCHIVE/2026_07_19_holobiont_retired/` with a tombstone README**. K2 ratifies on next act.
+**Disposition (RETIRE, unchanged):** the folder is **retired to `90_ARCHIVE/2026_07_19_holobiont_retired/` with a tombstone README**. The 2 files are preserved per K3 archive-first; the canonical successor is `03_AIA/`. The retirement is a K2 act via the operating model's merge declaration.
 
-### Thread C · LFS pointer drift in `01_EMERGENTISM` (ACCEPT-AS-IS)
+### Thread C · LFS pointer drift in `01_EMERGENTISM` (ACCEPT-AS-IS → FIX)
 
-31 files in `01_EMERGENTISM/` show LFS pointer drift: the LFS objects are correct in the working tree (real PDFs, real PNGs, real WOFF2s) but the git index has the LFS pointers. `git lfs install --force` + `git lfs pull` would fix it.
+29 files in `01_EMERGENTISM/` showed LFS pointer drift: the LFS objects were correct in the working tree (real PDFs, real PNGs, real WOFF2s) but the git index had the LFS pointers.
 
-**V-forcer 10 disposition:** the LFS drift is **accepted as a user-state issue, not a code issue**. The 31 files are not at risk of data loss (working tree has the real objects). Recovery is a one-liner when the user has the bandwidth. **Do NOT push to any 01_EMERGENTISM remote until LFS is recovered** — pushing would commit the working tree as canonical, breaking LFS for downstream users.
+**Original disposition (ACCEPT-AS-IS):** the LFS drift is a user-state issue, recoverable by the user. Do NOT push until recovered.
+
+**Realized disposition (FIX):** per the K2 "do it" act, the LFS drift is fixed. Recovery: for each drifted LFS file, `git rm --cached <path>` + `git add <path>` re-syncs the index with the working tree's real objects. The LFS clean filter writes the pointer to the index; the working tree file is untouched. Result: index has pointers, working tree has real objects, push to remote is now safe.
 
 ## §2 · The 4 mandatory fields (Amrita §I.C.19)
 
