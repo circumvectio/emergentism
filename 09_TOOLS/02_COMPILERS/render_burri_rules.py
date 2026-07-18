@@ -756,9 +756,10 @@ def _render_proof(topology: Mapping[str, Any], digest: str) -> str:
     svg.add("rect", x=875, y=643, width=350, height=21, rx=10, fill="#fbf7eb")
     svg.text(1050, 657, "a_t = bottom -> null or ambient OutcomeReceipt (distinct cause)", size=9, fill="#5b534c", anchor="middle")
 
-    _path(svg, "M 1390 552 C 1390 280, 395 280, 340 376", color=actual, width=2.2, dash=_edge_dash(edges_by_id, "e-outcome-model-feedback"), marker="arrow-actual", id="e-outcome-model-feedback")
+    _path(svg, "M 1390 552 C 1390 280, 240 280, 263 405", color=actual, width=2.2, dash=_edge_dash(edges_by_id, "e-outcome-model-feedback"), marker="arrow-actual", id="e-outcome-model-feedback")
     _path(svg, "M 1390 617 C 1350 680, 950 710, 730 434", color=gold, width=2.2, dash=_edge_dash(edges_by_id, "e-outcome-selector-feedback"), marker="arrow-actual", id="e-outcome-selector-feedback")
     svg.text(1045, 292, "Loop(M_t, G_t, q_t, r_t+1) revises M", size=10, fill="#5b534c", weight=600)
+    svg.add("rect", x=887, y=676, width=230, height=21, rx=9, fill="#fbf7eb")
     svg.text(900, 690, "receipt also revises G · not optional", size=10, fill=gold, weight=700)
 
     # Titan boundary frame.
@@ -852,7 +853,9 @@ def _render_emblem(topology: Mapping[str, Any], digest: str) -> str:
     svg.open("g", id="master-emblem-geometry")
     svg.add("circle", cx=800, cy=585, r=310, fill=panel, stroke=ivory, **{"stroke-width": 2.5})
     svg.add("circle", cx=800, cy=585, r=274, fill="none", stroke=pale, **{"stroke-width": 1.5, "stroke-dasharray": "10 8"})
+    svg.add("rect", x=645, y=301, width=310, height=20, rx=9, fill=panel)
     svg.text(800, 315, "J+ PHYSICAL ENVELOPE · c-BOUNDED", size=11, fill=ivory, weight=800, anchor="middle", letter_spacing=1)
+    svg.add("rect", x=625, y=332, width=350, height=19, rx=9, fill=panel)
     svg.text(800, 345, "Omega option field lies inside · authorization remains separately typed", size=10, fill=pale, anchor="middle")
 
     # Core loop around an unforced Titan frame.

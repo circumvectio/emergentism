@@ -4,16 +4,16 @@
   "authorityBoundary": "Geometry, typed interfaces, and source references only. The Markdown rulebook is semantic authority; this file cannot introduce doctrine or upgrade evidence.",
   "fullTextEquivalent": "A finite agent models D5 possibilities, commits one D4 attempt through means and accountable authorization, receives separate commitment and world-issued outcome receipts, and revises map and selector; coupled loops qualify only through persistent trace tests.",
   "rules": [
-    {"id":"BR-1","label":"Frame","tier":"D","summary":"Selected Titan boundary tokens frame the diagram without forcing ontology or changing arithmetic.","sourceIds":["src-rulebook","src-types"]},
-    {"id":"BR-2","label":"Crossing","tier":"D","summary":"Exactly six candidate crossings carry evidence, recovery, reduction status, prediction, and a kill criterion; r6 is separate.","sourceIds":["src-rulebook","src-mu","src-closure"]},
-    {"id":"BR-3","label":"Constraint","tier":"D","summary":"Higher organization may restrict or reweight only physically admissible histories.","sourceIds":["src-rulebook","src-cone"]},
-    {"id":"BR-4","label":"Commitment","tier":"D","summary":"A present D4 model, rank event, selector state, embodied means, physical-availability assessment, and authorization assessment yield an action or refusal plus commitment receipt; unauthorized attempts remain descriptively representable.","sourceIds":["src-rulebook","src-types","src-auth"]},
-    {"id":"BR-5","label":"Reflexive Return","tier":"D","summary":"The world issues a separate outcome receipt that may revise both model and selector across three inspectable gaps.","sourceIds":["src-rulebook","src-soul","src-soros"]},
-    {"id":"BR-6","label":"Composition","tier":"D","summary":"Coupled loops become an Egregoreotype candidate only when all five trace tests and justice boundaries are visible.","sourceIds":["src-rulebook","src-egregoreotype","src-values"]}
+    {"id":"BR-1","label":"Frame","tier":"I","summary":"Selected Titan boundary tokens frame the diagram without forcing ontology or changing arithmetic.","sourceIds":["src-rulebook","src-types"]},
+    {"id":"BR-2","label":"Crossing","tier":"I","summary":"Exactly six candidate crossings carry evidence, recovery, reduction status, prediction, and a kill criterion; r6 is separate.","sourceIds":["src-rulebook","src-mu","src-closure"]},
+    {"id":"BR-3","label":"Constraint","tier":"I","summary":"Higher organization may restrict or reweight only physically admissible histories.","sourceIds":["src-rulebook","src-cone"]},
+    {"id":"BR-4","label":"Commitment","tier":"I","summary":"A present D4 model, rank event, selector state, embodied means, physical-availability assessment, and authorization assessment yield an action or refusal plus commitment receipt; unauthorized attempts remain descriptively representable.","sourceIds":["src-rulebook","src-types","src-auth"]},
+    {"id":"BR-5","label":"Reflexive Return","tier":"I","summary":"The world issues a separate outcome receipt that may revise both model and selector across three inspectable gaps.","sourceIds":["src-rulebook","src-soul","src-soros"]},
+    {"id":"BR-6","label":"Composition","tier":"I","summary":"Coupled loops become an Egregoreotype candidate only when all five trace tests and justice boundaries are visible.","sourceIds":["src-rulebook","src-egregoreotype","src-values"]}
   ],
   "sources": [
-    {"id":"src-rulebook","label":"The Burri Rules","path":"05_COSMOLOGY/00_THE_BURRI_RULES.md","tier":"D","authority":"human semantic authority"},
-    {"id":"src-ledger","label":"Burri Rules Derivation Ledger","path":"03_METHODOLOGY/01_THE_DERIVATION/01_BURRI_RULES_DERIVATION_LEDGER.md","tier":"D","authority":"proof burden and claim movement"},
+    {"id":"src-rulebook","label":"The Burri Rules","path":"05_COSMOLOGY/00_THE_BURRI_RULES.md","tier":"I","authority":"human semantic authority"},
+    {"id":"src-ledger","label":"Burri Rules Derivation Ledger","path":"03_METHODOLOGY/01_THE_DERIVATION/01_BURRI_RULES_DERIVATION_LEDGER.md","tier":"I","authority":"proof burden and claim movement"},
     {"id":"src-types","label":"Primitives and Type Signatures","path":"05_COSMOLOGY/03_FORMAL_SYSTEM/29_PRIMITIVES_AND_TYPE_SIGNATURES.md","tier":"S","authority":"machine-facing record contract"},
     {"id":"src-mu","label":"Mu-Limit Formula","path":"05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md","tier":"C","authority":"candidate crossing records"},
     {"id":"src-d45","label":"D4 D5 Canonical Reference","path":"05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md","tier":"S","authority":"actual and possible type fence"},
