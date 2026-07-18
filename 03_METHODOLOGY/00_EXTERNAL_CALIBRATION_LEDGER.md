@@ -368,13 +368,23 @@ be absent at freeze and present at analysis; the manifest must bind the exact
 dataset locator and checksum, specified candidate and complete rivals,
 operational variables/outcomes, preprocessing, exclusion rationales, stopping
 rule, folds, seeds, code/environment bytes, native-unit costs, and dated
-attestation/custody log. Every referenced file must exist at both freeze and
-analysis commits at its declared hash; protocol drift followed by restoration
-fails. Typed result verdict and the public verdict token must
+attestation/custody log. Analysis code must parse and define an executable
+entry; the environment lock must be structured JSON; custody logs and the
+independent semantic-review receipt must be nonempty. The review checklist and
+reviewer-team independence attestation are frozen, and reviewer/analysis teams
+must be disjoint. Every referenced file must exist at both freeze and analysis
+commits at its declared hash; protocol drift followed by restoration fails.
+Typed result verdict and the public verdict token must
 equal the receipt outcome exactly; suffix prose is rejected rather than trusted.
 `X3+` additionally requires the receipt to
 attest newly collected independent observations and match the named independent
 team. A protocol file cannot certify its own result.
+
+The validator can prove closed structure, parseability, hashes, Git order, and
+declared team separation. It cannot determine whether scientific prose is
+meaningful or whether a claimed human review actually occurred. The semantic
+review is therefore an accountable external attestation and audit surface, not
+machine proof. Filler, collusion, or contrary custody evidence kills X2.
 
 The broader fourteen Kintsugi fallacies remain owned by the existing Compass
 semantic/mutation suite; this calibration validator does not pretend five

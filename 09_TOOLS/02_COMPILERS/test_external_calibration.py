@@ -17,6 +17,7 @@ from typing import Callable
 from validate_external_calibration import (
     CalibrationError,
     COMPONENT_STAGE_ORDER,
+    SEMANTIC_REVIEW_CHECKS,
     build_parser,
     validate_payload,
 )
@@ -148,6 +149,9 @@ def write_analysis_manifest(
         f"03_METHODOLOGY/04_RESULTS/support/{claim['id']}-{tag}-environment.json"
     )
     access_log = f"03_METHODOLOGY/04_RESULTS/support/{claim['id']}-{tag}-access.log"
+    semantic_review = (
+        f"03_METHODOLOGY/04_RESULTS/support/{claim['id']}-{tag}-semantic-review.md"
+    )
     code_path = root / analysis_code
     code_path.parent.mkdir(parents=True, exist_ok=True)
     code_path.write_text(
@@ -159,7 +163,8 @@ def write_analysis_manifest(
         root,
         environment_lock,
         {
-            "python": "3.12.4",
+            "runtime": "CPython",
+            "runtimeVersion": "3.12.4",
             "dependencies": {"standard-library": "3.12.4"},
             "platform": "fixture-linux-x86_64",
         },
@@ -168,6 +173,19 @@ def write_analysis_manifest(
     access_path.parent.mkdir(parents=True, exist_ok=True)
     access_path.write_text(
         "2026-07-18 custody opened; no outcome artifact accessed or collected\n",
+        encoding="utf-8",
+    )
+    review_path = root / semantic_review
+    review_path.write_text(
+        f"# Independent semantic review — {claim['id']}\n\n"
+        "The external review board approved this exact frozen protocol only after "
+        "examining each registered check; this receipt is an accountable human "
+        "attestation, not machine proof of scientific adequacy.\n\n"
+        + "\n".join(
+            f"- {check}: approved against the claim card and frozen protocol."
+            for check in sorted(SEMANTIC_REVIEW_CHECKS)
+        )
+        + "\n",
         encoding="utf-8",
     )
     expected_hash = (
@@ -282,6 +300,19 @@ def write_analysis_manifest(
                 "accessLog": {
                     "path": access_log,
                     "sha256": hashlib.sha256(access_path.read_bytes()).hexdigest(),
+                },
+            },
+            "semanticReview": {
+                "status": "approved_for_frozen_run",
+                "reviewedAt": "2026-07-18",
+                "reviewerTeamIds": ["fixture-semantic-review-board"],
+                "independenceAttested": True,
+                "checklist": {
+                    check: True for check in sorted(SEMANTIC_REVIEW_CHECKS)
+                },
+                "reviewReceipt": {
+                    "path": semantic_review,
+                    "sha256": hashlib.sha256(review_path.read_bytes()).hexdigest(),
                 },
             },
         },
@@ -904,6 +935,129 @@ class ExternalCalibrationTests(unittest.TestCase):
                 root=root,
             )
 
+    def test_x2_support_files_must_be_nonempty_and_machine_valid(self) -> None:
+        cases = (
+            ("analysisCode", b"", "cannot be empty or trivial"),
+            ("analysisCode", b"def broken(:\n", "parseable Python"),
+            ("environmentLock", b"", "must be valid JSON"),
+            ("accessLog", b"", "substantive frozen custody entries"),
+            ("semanticReview", b"", "must document the claim"),
+        )
+        for field, invalid_bytes, error in cases:
+            with self.subTest(field=field, error=error), tempfile.TemporaryDirectory() as temp:
+                data = payload()
+                root = Path(temp)
+                claim = claim_by_id(data, "CAL-AGENCY-01")
+                promote_to_x2(claim)
+                sync_component_profile(data)
+                materialize_contract_files(data, root)
+                init_git(root)
+                manifest = write_analysis_manifest(
+                    root,
+                    claim,
+                    kind="x2_discriminator",
+                    expected_data=X2_ARTIFACT_BYTES,
+                )
+                manifest_record = read_json(root, manifest)
+                binding = {
+                    "analysisCode": manifest_record["analysisCode"],
+                    "environmentLock": manifest_record["environmentLock"],
+                    "accessLog": manifest_record["accessAttestation"]["accessLog"],
+                    "semanticReview": manifest_record["semanticReview"][
+                        "reviewReceipt"
+                    ],
+                }[field]
+                target = root / binding["path"]
+                target.write_bytes(invalid_bytes)
+                binding["sha256"] = hashlib.sha256(invalid_bytes).hexdigest()
+                write_json(root, manifest, manifest_record)
+                freeze = commit_all(root, f"freeze invalid {field}")
+                artifact = write_artifact(
+                    root, claim["id"], "x2", X2_ARTIFACT_BYTES
+                )
+                analysis = commit_all(root, f"analyze with invalid {field}")
+                receipt = write_result_receipt(
+                    root,
+                    claim,
+                    kind="x2_discriminator",
+                    artifact=artifact,
+                    manifest=manifest,
+                    freeze_commit=freeze,
+                    analysis_commit=analysis,
+                )
+                claim["dataset"]["resultReceipt"] = receipt
+                claim["dataset"]["resultVerdict"] = "supported"
+                claim["currentVerdict"] = "X2 outcome=supported"
+                self.assert_rejected(data, error, root=root)
+
+    def test_x2_requires_complete_independent_semantic_review_attestation(self) -> None:
+        mutations = (
+            (
+                lambda manifest: manifest["semanticReview"].update(
+                    {"independenceAttested": False}
+                ),
+                "must attest reviewer independence",
+            ),
+            (
+                lambda manifest: manifest["semanticReview"]["checklist"].update(
+                    {"datasetFitness": False}
+                ),
+                "checklist must approve every required check",
+            ),
+            (
+                lambda manifest: manifest.pop("semanticReview"),
+                "analysisManifest missing keys.*semanticReview",
+            ),
+        )
+        for mutation, error in mutations:
+            with self.subTest(error=error), tempfile.TemporaryDirectory() as temp:
+                data = payload()
+                root = Path(temp)
+                _, receipt_path, _, _ = build_x2_fixture(data, root)
+                mutate_analysis_manifest(root, receipt_path, mutation)
+                self.assert_rejected(data, error, root=root)
+
+    def test_x2_semantic_reviewer_team_must_be_distinct_from_analysis_team(self) -> None:
+        data = payload()
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            claim = claim_by_id(data, "CAL-AGENCY-01")
+            promote_to_x2(claim)
+            sync_component_profile(data)
+            materialize_contract_files(data, root)
+            init_git(root)
+            manifest = write_analysis_manifest(
+                root,
+                claim,
+                kind="x2_discriminator",
+                expected_data=X2_ARTIFACT_BYTES,
+            )
+            manifest_record = read_json(root, manifest)
+            manifest_record["semanticReview"]["reviewerTeamIds"] = [
+                "x2-analysis-team"
+            ]
+            write_json(root, manifest, manifest_record)
+            freeze = commit_all(root, "freeze self-reviewed protocol")
+            artifact = write_artifact(root, claim["id"], "x2", X2_ARTIFACT_BYTES)
+            analysis = commit_all(root, "analyze self-reviewed protocol")
+            receipt = write_result_receipt(
+                root,
+                claim,
+                kind="x2_discriminator",
+                artifact=artifact,
+                manifest=manifest,
+                freeze_commit=freeze,
+                analysis_commit=analysis,
+            )
+            claim["dataset"]["resultReceipt"] = receipt
+            claim["dataset"]["resultVerdict"] = "supported"
+            claim["currentVerdict"] = "X2 outcome=supported"
+            self.assert_rejected(
+                data,
+                "semantic-review teams must be distinct from the analysis team",
+                root=root,
+            )
+
     def test_x2_analysis_commit_must_retain_every_frozen_protocol_binding(self) -> None:
         bindings = (
             "preregistration",
@@ -911,6 +1065,7 @@ class ExternalCalibrationTests(unittest.TestCase):
             "analysisCode",
             "environmentLock",
             "accessLog",
+            "semanticReview",
         )
         for binding in bindings:
             with self.subTest(binding=binding), tempfile.TemporaryDirectory() as temp:
@@ -936,6 +1091,9 @@ class ExternalCalibrationTests(unittest.TestCase):
                     "accessLog": manifest_record["accessAttestation"]["accessLog"][
                         "path"
                     ],
+                    "semanticReview": manifest_record["semanticReview"][
+                        "reviewReceipt"
+                    ]["path"],
                 }[binding]
                 target = root / relative
                 frozen_bytes = target.read_bytes()

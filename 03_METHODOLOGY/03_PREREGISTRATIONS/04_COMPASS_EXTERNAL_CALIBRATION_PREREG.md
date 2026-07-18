@@ -80,6 +80,10 @@ structured protocol, not a prose promise. It must contain:
   no hidden scalarization; and
 - a dated access attestation naming the attester, custodian, custody protocol,
   and a separately hashed append-only access-log snapshot.
+- an independent semantic-review checklist covering dataset fitness, candidate
+  and rival specification, operationalization, decision rules, preprocessing,
+  stopping/resampling, costs, and custody, plus a separately hashed review
+  receipt. Reviewer and analysis teams must be disjoint.
 
 Both the freeze and analysis commits must contain the preregistration,
 manifest, code, environment lock, and access log at exactly the declared
@@ -87,6 +91,13 @@ hashes. The data artifact is absent at freeze and bound at analysis.
 One-character placeholders, `TBD` fields, empty protocol lists, post-hoc
 stopping rules, analysis-time protocol drift followed by restoration, and
 unbound or hash-mismatched dependencies fail closed.
+
+The machine gate checks closed fields, parseable nonempty analysis code,
+structured environment bytes, nonempty custody/review receipts, hashes, commit
+order, checklists, and declared team separation. It cannot judge whether prose
+is scientifically adequate or prove that a human reviewer is independent. The
+semantic-review record is an accountable external attestation, not machine
+proof; filler, collusion, or contrary evidence invalidates X2.
 
 No result may promote more than its registered claim and domain. “Compass
 validated,” “worldview confirmed,” and similar whole-system verdicts are outside
@@ -363,7 +374,8 @@ dataset locator and checksum, fully specified candidate and complete rival set,
 operational variables and outcomes, preprocessing, exclusion rationales,
 stopping rule, folds, seeds, analysis-code and environment-lock bytes,
 native-unit cost ceilings, and dated no-access/no-collection-before-freeze
-custody evidence. Paths and hashes of the two disclosed July 2 negative packets are
+custody evidence, plus an independent semantic-review checklist and receipt.
+Paths and hashes of the two disclosed July 2 negative packets are
 ineligible for retroactive promotion. `X2` records that an independent
 discriminator was frozen and run; it does not record that the framework won. A
 `failed`, `null`, or `mixed` receipt therefore reaches the same calibration

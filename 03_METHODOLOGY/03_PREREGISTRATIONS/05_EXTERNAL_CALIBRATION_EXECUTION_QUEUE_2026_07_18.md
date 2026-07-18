@@ -43,6 +43,11 @@ the preregistration, manifest, and every referenced file at the same declared
 hashes; a protocol altered during analysis and restored later fails. The
 selected data artifact must be absent at freeze and present only in the later
 analysis commit.
+Before freeze, a separate review team must complete the semantic checklist and
+bind its review receipt. The validator checks that attestation's structure,
+bytes, and declared team separation; it cannot prove scientific adequacy or
+human independence. External audit remains a necessary X2 condition, and
+filler or collusion kills promotion.
 Only then may the artifact be acquired and analyzed in a later commit. The
 outcome may be `supported`, `failed`, `null`, or `mixed`; all four can earn X2
 methodological status and all four must change the verdict honestly.

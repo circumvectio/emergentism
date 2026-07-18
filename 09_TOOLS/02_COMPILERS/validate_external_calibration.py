@@ -10,6 +10,7 @@ paper, run an experiment, or promote an evidence tier.
 from __future__ import annotations
 
 import argparse
+import ast
 import datetime as dt
 import hashlib
 import json
@@ -295,6 +296,7 @@ ANALYSIS_MANIFEST_KEYS = {
     "environmentLock",
     "costPlan",
     "accessAttestation",
+    "semanticReview",
 }
 DATASET_CHECKSUM_KEYS = {"mechanism", "expectedSha256"}
 MODEL_SPEC_KEYS = {"name", "specification", "fitProcedure", "complexityPenalty"}
@@ -319,6 +321,24 @@ ACCESS_ATTESTATION_KEYS = {
     "custodian",
     "custodyProtocol",
     "accessLog",
+}
+SEMANTIC_REVIEW_KEYS = {
+    "status",
+    "reviewedAt",
+    "reviewerTeamIds",
+    "independenceAttested",
+    "checklist",
+    "reviewReceipt",
+}
+SEMANTIC_REVIEW_CHECKS = {
+    "datasetFitness",
+    "candidateSpecification",
+    "rivalCompleteness",
+    "variableOperationalization",
+    "outcomeDecisionRules",
+    "preprocessingAndExclusions",
+    "stoppingAndResampling",
+    "costAndCustody",
 }
 RESULT_OUTCOMES = {"supported", "null", "failed", "mixed"}
 RESULT_RECEIPT_KINDS = {"x2_discriminator", "x3_replication"}
@@ -576,6 +596,73 @@ def _validate_file_binding(root: Path, value: Any, label: str) -> tuple[str, Pat
     return str(relative), path, declared_hash
 
 
+def _validate_analysis_code(path: Path, label: str) -> None:
+    _require(path.suffix == ".py", f"{label} must bind a Python source file")
+    try:
+        source = path.read_text(encoding="utf-8")
+        tree = ast.parse(source, filename=str(path))
+    except (OSError, UnicodeDecodeError, SyntaxError) as exc:
+        raise CalibrationError(f"{label} must be parseable Python: {exc}") from exc
+    _require(
+        len(source.encode("utf-8")) >= 32 and bool(tree.body),
+        f"{label} cannot be empty or trivial",
+    )
+    _require(
+        any(
+            isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef))
+            for node in tree.body
+        ),
+        f"{label} must define an executable analysis function or class",
+    )
+
+
+def _validate_environment_lock(path: Path, label: str) -> None:
+    _require(path.suffix == ".json", f"{label} must bind a JSON environment lock")
+    try:
+        value = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
+        raise CalibrationError(f"{label} must be valid JSON: {exc}") from exc
+    _require(
+        isinstance(value, dict)
+        and isinstance(value.get("runtime"), str)
+        and isinstance(value.get("runtimeVersion"), str)
+        and isinstance(value.get("platform"), str)
+        and isinstance(value.get("dependencies"), dict)
+        and bool(value["dependencies"]),
+        f"{label} must specify runtime, version, platform, and dependencies",
+    )
+
+
+def _validate_access_log(path: Path, label: str) -> None:
+    _require(
+        path.suffix in {".log", ".jsonl"},
+        f"{label} must bind an append-only log file",
+    )
+    try:
+        content = path.read_text(encoding="utf-8")
+    except (OSError, UnicodeDecodeError) as exc:
+        raise CalibrationError(f"{label} must be readable text: {exc}") from exc
+    entries = [line.strip() for line in content.splitlines() if line.strip()]
+    _require(
+        bool(entries) and all(len(entry) >= 24 for entry in entries),
+        f"{label} must contain substantive frozen custody entries",
+    )
+
+
+def _validate_semantic_review_receipt(path: Path, claim_id: str, label: str) -> None:
+    _require(path.suffix == ".md", f"{label} must bind a Markdown review receipt")
+    try:
+        content = path.read_text(encoding="utf-8")
+    except (OSError, UnicodeDecodeError) as exc:
+        raise CalibrationError(f"{label} must be readable text: {exc}") from exc
+    required_tokens = {claim_id, *SEMANTIC_REVIEW_CHECKS}
+    _require(
+        len(content.strip()) >= 256
+        and all(token in content for token in required_tokens),
+        f"{label} must document the claim and every semantic-review check",
+    )
+
+
 def _validate_analysis_manifest(
     root: Path,
     claim_id: str,
@@ -798,11 +885,26 @@ def _validate_analysis_manifest(
     )
 
     frozen_files: list[tuple[str, str]] = []
-    for field in ("analysisCode", "environmentLock"):
-        relative_file, _, file_hash = _validate_file_binding(
-            root, manifest.get(field), f"{claim_id}.analysisManifest.{field}"
+    analysis_code_relative, analysis_code_path, analysis_code_hash = (
+        _validate_file_binding(
+            root,
+            manifest.get("analysisCode"),
+            f"{claim_id}.analysisManifest.analysisCode",
         )
-        frozen_files.append((relative_file, file_hash))
+    )
+    _validate_analysis_code(
+        analysis_code_path, f"{claim_id}.analysisManifest.analysisCode"
+    )
+    frozen_files.append((analysis_code_relative, analysis_code_hash))
+    environment_relative, environment_path, environment_hash = _validate_file_binding(
+        root,
+        manifest.get("environmentLock"),
+        f"{claim_id}.analysisManifest.environmentLock",
+    )
+    _validate_environment_lock(
+        environment_path, f"{claim_id}.analysisManifest.environmentLock"
+    )
+    frozen_files.append((environment_relative, environment_hash))
 
     cost_plan = manifest.get("costPlan")
     _require(isinstance(cost_plan, dict), f"{claim_id} costPlan must be an object")
@@ -856,16 +958,15 @@ def _validate_analysis_manifest(
         f"{claim_id}.accessAttestation.custodyProtocol",
         minimum=12,
     )
-    access_log_relative, _, access_log_hash = _validate_file_binding(
+    access_log_relative, access_log_path, access_log_hash = _validate_file_binding(
         root,
         attestation.get("accessLog"),
         f"{claim_id}.accessAttestation.accessLog",
     )
-    frozen_files.append((access_log_relative, access_log_hash))
-    _require(
-        len({relative_file for relative_file, _ in frozen_files}) == len(frozen_files),
-        f"{claim_id} analysisCode, environmentLock, and accessLog must be distinct files",
+    _validate_access_log(
+        access_log_path, f"{claim_id}.accessAttestation.accessLog"
     )
+    frozen_files.append((access_log_relative, access_log_hash))
     date_text = str(attestation.get("attestedAt", ""))
     try:
         attested_date = dt.date.fromisoformat(date_text)
@@ -876,6 +977,73 @@ def _validate_analysis_manifest(
     _require(
         attested_date.isoformat() == date_text and attested_date <= dt.date.today(),
         f"{claim_id} accessAttestation needs a real non-future ISO date",
+    )
+
+    semantic_review = manifest.get("semanticReview")
+    _require(
+        isinstance(semantic_review, dict),
+        f"{claim_id} semanticReview must be an object",
+    )
+    _exact_keys(semantic_review, SEMANTIC_REVIEW_KEYS, f"{claim_id}.semanticReview")
+    _require(
+        semantic_review.get("status") == "approved_for_frozen_run",
+        f"{claim_id} semanticReview must approve the frozen run",
+    )
+    _require(
+        semantic_review.get("independenceAttested") is True,
+        f"{claim_id} semanticReview must attest reviewer independence",
+    )
+    reviewer_team_ids = _nonempty_list(
+        semantic_review.get("reviewerTeamIds"),
+        f"{claim_id}.semanticReview.reviewerTeamIds",
+    )
+    _require(
+        all(
+            isinstance(team_id, str)
+            and team_id.strip() == team_id
+            and len(team_id) >= 8
+            for team_id in reviewer_team_ids
+        )
+        and len(reviewer_team_ids) == len(set(reviewer_team_ids)),
+        f"{claim_id} semanticReview reviewerTeamIds must be unique substantive names",
+    )
+    _require(
+        set(reviewer_team_ids).isdisjoint(
+            {attestation["attestedBy"], attestation["custodian"]}
+        ),
+        f"{claim_id} semantic reviewer cannot be the access attester or custodian",
+    )
+    review_date_text = str(semantic_review.get("reviewedAt", ""))
+    try:
+        review_date = dt.date.fromisoformat(review_date_text)
+    except ValueError as exc:
+        raise CalibrationError(
+            f"{claim_id} semanticReview needs a real ISO date"
+        ) from exc
+    _require(
+        review_date.isoformat() == review_date_text
+        and review_date <= dt.date.today(),
+        f"{claim_id} semanticReview needs a real non-future ISO date",
+    )
+    checklist = semantic_review.get("checklist")
+    _require(isinstance(checklist, dict), f"{claim_id} semanticReview checklist must be an object")
+    _exact_keys(checklist, SEMANTIC_REVIEW_CHECKS, f"{claim_id}.semanticReview.checklist")
+    _require(
+        all(value is True for value in checklist.values()),
+        f"{claim_id} semanticReview checklist must approve every required check",
+    )
+    review_relative, review_path, review_hash = _validate_file_binding(
+        root,
+        semantic_review.get("reviewReceipt"),
+        f"{claim_id}.semanticReview.reviewReceipt",
+    )
+    _validate_semantic_review_receipt(
+        review_path, claim_id, f"{claim_id}.semanticReview.reviewReceipt"
+    )
+    frozen_files.append((review_relative, review_hash))
+    _require(
+        len({relative_file for relative_file, _ in frozen_files}) == len(frozen_files),
+        f"{claim_id} analysisCode, environmentLock, accessLog, and semanticReview receipt must be distinct files",
     )
     declared_hash = str(receipt.get("analysisManifestSha256", ""))
     _require(
@@ -1117,6 +1285,12 @@ def _validate_result_receipt(
             len(values) == len(set(values)),
             f"{claim_id} result receipt {field} must be unique",
         )
+    _require(
+        set(receipt["teamIds"]).isdisjoint(
+            analysis_manifest["semanticReview"]["reviewerTeamIds"]
+        ),
+        f"{claim_id} semantic-review teams must be distinct from the analysis team",
+    )
     _require(
         isinstance(receipt.get("newIndependentObservations"), bool),
         f"{claim_id} result receipt newIndependentObservations must be boolean",
