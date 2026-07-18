@@ -627,17 +627,17 @@ class ExternalCalibrationTests(unittest.TestCase):
             write_json(root, receipt_path, receipt)
             self.assert_rejected(data, "rivals must match the claim rivals", root=root)
 
-    def test_x2_failed_outcome_cannot_promote(self) -> None:
-        data = payload()
-        with tempfile.TemporaryDirectory() as temp:
-            root = Path(temp)
-            _, receipt_path, _, _ = build_x2_fixture(data, root)
-            receipt = read_json(root, receipt_path)
-            receipt["outcome"] = "failed"
-            write_json(root, receipt_path, receipt)
-            self.assert_rejected(
-                data, "requires a successful supported discriminator outcome", root=root
-            )
+    def test_x2_stage_records_rigor_independent_of_outcome_sign(self) -> None:
+        for outcome in ("supported", "failed", "null", "mixed"):
+            with self.subTest(outcome=outcome):
+                data = payload()
+                with tempfile.TemporaryDirectory() as temp:
+                    root = Path(temp)
+                    _, receipt_path, _, _ = build_x2_fixture(data, root)
+                    receipt = read_json(root, receipt_path)
+                    receipt["outcome"] = outcome
+                    write_json(root, receipt_path, receipt)
+                    self.assertEqual(validate_payload(data, root), (31, 12))
 
     def test_x2_receipt_kind_must_be_discriminator(self) -> None:
         data = payload()

@@ -43,8 +43,8 @@ Calibration stage is independent of the corpus evidence tier.
 |---|---|---|
 | `X0 internal_only` | internally defined; no direct external construct contact | publish only as a declared model, symbol, or conjecture |
 | `X1 construct_anchor` | primary external work operationalizes, proves, or measures a directly related or partially overlapping construct | state the source-distance honestly; no Compass tier promotion |
-| `X2 independent_data_discrimination` | a frozen Compass discriminator beats named rivals on data the framework did not generate | promote only the tested claim and domain to a dated `[B]` result |
-| `X3 independent_preregistered_replication` | an independent team preregisters the discriminator, collects new independent observations, and replicates it | consider `[A]` only for the bounded empirical result; same-data reanalysis is reproduction, not replication |
+| `X2 independent_data_discrimination` | a frozen Compass discriminator is run against named rivals on data the framework did not generate | record the tested claim and domain as a dated `[B]` result whether supported, failed, null, or mixed |
+| `X3 independent_preregistered_replication` | an independent team preregisters the discriminator, collects new independent observations, and repeats the test | consider `[A]` only for the bounded replicated result, including replicated rejection or null; same-data reanalysis is reproduction, not replication |
 | `X4 cross_domain_replication` | multiple independent teams and domains reproduce a shared discriminator without post-hoc remapping | consider a broader empirical bridge; never promote analytic, symbolic, or normative claims by association |
 | `not_applicable` | analytic, symbolic, correspondence, or normative claim is not truth-tested by empirical calibration | test coherence, consequences, or usefulness without calling it empirical confirmation |
 
@@ -134,6 +134,22 @@ penalties, folds, and missing-data rules; compare held-out log score, calibratio
 and decision regret. **Kill/rewrite:** a competitor consistently wins, the
 zero-factor boundary fails, or the product adds no decision value. Stage `X1`
 for construct contact; selected-product fit remains `[C]`.
+
+**Known pre-freeze negative checks.** Two reproducible public-data packets already
+weigh against treating the selected product as a general fit:
+
+- the [Munnell production-function packet](../11_UPLINK/25_EXPERIMENTS/2026-07-02_production_function_form/README.md)
+  found the unit product catastrophically misspecified, with additive/CES forms
+  winning and symmetric balance rejected; and
+- the [ultimatum-game packet](../11_UPLINK/25_EXPERIMENTS/2026-07-02_extraction_law_empirical_test/README.md)
+  found that a product-only fairness × payoff score was not supported while a
+  fairness-aware additive model improved held-out prediction.
+
+Those analyses are `[B]` for their bounded datasets and `[I]` as contact with
+this card. They used proxies rather than the current operational meanings of
+`Φ` and `V`, and their outcomes were known before this July 18 claim contract.
+They therefore narrow the universal reading without earning retrospective
+`X2`. A new claim-specific freeze and direct measurements remain required.
 
 ### `CAL-CONSTRAINT-01` — macro-constraint without forbidden physics
 
@@ -276,6 +292,12 @@ equally well or better, the inferred manifold is unstable across samples, or
 the proposed observables do not identify the host. This territory claim remains
 `X0 internal_only` and `[C]`.
 
+A separate recall-based, AI-coded P-EQ pilot placed every tested developmental
+integration maximum in the top rather than middle tertile and therefore fired
+that protocol's preliminary kill criterion. The result weighs against the
+developmental-ladder projection; it does not test this card's latent-geometry
+claim and cannot be transferred to it as `X2`.
+
 ### `CAL-DISPATCH-01` — Rosetta as an Agentz routing grammar
 
 The chain
@@ -366,8 +388,10 @@ substring checks exhaust conceptual review.
 Existing external datasets may be used for retrospective `X2` discrimination
 only when the analysis is frozen before access and labeled retrospective.
 `X3` requires new observations collected by the independent team after its
-preregistration; reuse of the `X2` dataset is reproduction, not replication. No
-external result has been run or claimed here.
+preregistration; reuse of the `X2` dataset is reproduction, not replication.
+No result qualifies as `X2` under this July 18 contract. The older bounded
+negative packets above are disclosed as prior evidence, not promoted after the
+fact.
 
 ## Public compression
 

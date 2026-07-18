@@ -27,6 +27,7 @@ result-shopping.
 | [`02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md`](02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md) | [S] protocol; [C] per domain | Pre-registration harness for macro-constraint causal-emergence tests. |
 | [`03_PHYSICS_TO_BIOLOGY_MACRO_CONSTRAINT_RUN_SHEET.md`](03_PHYSICS_TO_BIOLOGY_MACRO_CONSTRAINT_RUN_SHEET.md) | [C] run sheet; [S] inherited protocol | First chemistry-to-biology domain-run template for macro-constraint causation. |
 | [`04_COMPASS_EXTERNAL_CALIBRATION_PREREG.md`](04_COMPASS_EXTERNAL_CALIBRATION_PREREG.md) | [C] frozen prospective discriminators | Claim-level rivals, variables, interventions, promotion gates, and kill criteria for external calibration. |
+| [`05_EXTERNAL_CALIBRATION_EXECUTION_QUEUE_2026_07_18.md`](05_EXTERNAL_CALIBRATION_EXECUTION_QUEUE_2026_07_18.md) | [B] gate inventory; [C] unrun tests | Separates retrospective candidates, genuinely new observations, and independent-replication gates without promoting any result. |
 | [`physics_to_biology_harness/`](physics_to_biology_harness/) | [B] toy-model receipt only; [C] for biology | Executable vesicle proof-of-method for the file 03 run sheet. |
 
 ## Discipline

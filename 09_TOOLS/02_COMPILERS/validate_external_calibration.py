@@ -565,10 +565,6 @@ def _validate_result_receipt(
         receipt.get("outcome") in RESULT_OUTCOMES,
         f"{claim_id} result receipt has invalid outcome",
     )
-    _require(
-        receipt.get("outcome") == "supported",
-        f"{claim_id} promotion requires a successful supported discriminator outcome",
-    )
     rivals = _nonempty_list(receipt.get("rivals"), f"{claim_id}.resultReceipt.rivals")
     _require(
         all(isinstance(rival, str) and rival.strip() for rival in rivals),

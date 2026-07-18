@@ -8,7 +8,8 @@ rosetta:
   register: "[C] prospective discriminators"
   canonical_phrase: "Freeze the rival before looking at the answer"
 title: "Compass External Calibration Preregistration"
-status: "FROZEN ON FIRST COMMIT — no empirical result is claimed"
+status: "FROZEN v2.1 — outcome-sign repair precedes every claim-specific freeze and result"
+contract_version: "2.1"
 date: 2026-07-18
 evidence_tier: "[C] prospective claim tests; [I] calibration design; no tier promotion"
 ---
@@ -17,18 +18,28 @@ evidence_tier: "[C] prospective claim tests; [I] calibration design; no tier pro
 
 ## Registration boundary
 
+> `[金]` **v2.1 calibration seam.** The original version frozen in `bb9a4fc`
+> required a favorable `supported` outcome to earn X2. That encoded confirmation
+> bias into a stage intended to measure calibration rigor. Before any
+> claim-specific freeze, new raw-data access, or X2 receipt, v2.1 makes stage
+> assignment outcome-sign neutral: `supported`, `failed`, `null`, and `mixed`
+> discriminators face the same artifact and provenance gate. The registered
+> claims, rivals, variables, predictions, and kill criteria are unchanged. The
+> original Git blob remains the historical v1 receipt.
+
 This protocol freezes what would discriminate specific Emergentist Compass
 claims from named alternatives. It does not preregister one omnibus theory test
 and does not claim that any dataset has been analyzed.
 
-The first commit containing this file is the freeze point. Later execution must
+The first commit containing each contract version is its freeze point; v2.1 is
+the active contract. Later execution must
 create a separate dated run sheet and result receipt. This file may receive only
 an explicit tombstone or a non-semantic link to a result; predictions, outcomes,
 rivals, exclusion rules, and thresholds may not be edited after the freeze.
 
 External data created before this protocol are **retrospective independent
 data**, not prospective evidence. Access to such data must occur only after a
-claim-specific analysis manifest is frozen. A successful retrospective test can
+claim-specific analysis manifest is frozen. A properly frozen retrospective test can
 reach `X2`; it cannot be described as preregistered replication.
 
 ## Shared rules
@@ -307,14 +318,17 @@ repository-local JSON receipt; lower stages cannot carry a result receipt.
 The receipt schema is `2.0` and closed-world. An `x2_discriminator` receipt must
 bind the claim ID, an existing repository-relative `dataArtifact`, the exact
 `dataSha256`, the exact `preregSha256`, distinct full `freezeCommit` and
-`analysisCommit` IDs, the successful `supported` outcome, the claim's complete
+`analysisCommit` IDs, one declared outcome from `supported`, `failed`, `null`,
+or `mixed`, the claim's complete
 rival set, a real ISO calendar date, team IDs, domains, and the observation-mode
 boolean. The validator checks that both commits exist, that freeze is an
 ancestor of analysis, that the preregistration bytes at freeze match
 `preregSha256`, that the current active preregistration still matches that
 freeze, and that the exact data artifact/hash exists both locally and at the
-analysis commit. A `failed`, `null`, or `mixed` receipt must still be published
-but cannot promote a claim to `X2`.
+analysis commit. `X2` records that an independent discriminator was frozen and
+run; it does not record that the framework won. A `failed`, `null`, or `mixed`
+receipt therefore reaches the same calibration stage while narrowing, killing,
+or leaving the claim unresolved exactly as preregistered.
 
 The hypothesis-bearing claim fields are frozen by a canonical contract hash:
 claim identity and class, claim wording, source references and distance,
@@ -329,7 +343,7 @@ For `X2`, dataset `access` is also a closed declaration tied to generation:
 `new_independent_collection_after_preregistration`. Free prose such as an
 admission that outcomes were inspected before freezing the protocol fails the
 gate. An `X2` verdict may state that the registered discriminator was supported,
-but it may not claim proof, confirmation, universality, decisiveness,
+failed, null, or mixed, but it may not claim proof, confirmation, universality, decisiveness,
 whole-system reach, or a law of nature.
 
 `X3` cannot reuse the `X2` receipt or set
@@ -353,9 +367,8 @@ intentional fail-closed gate, not a missing success path.
 | Outcome | Maximum movement |
 |---|---|
 | primary literature only | `X1`; no evidence-tier promotion |
-| successful frozen analysis on independent pre-existing data | `X2` and `[B]` for that claim/domain only |
-| failed or null frozen analysis | retain, narrow, or kill exactly as preregistered; publish the result |
-| successful independent preregistered replication on newly collected observations | `X3`; consider `[A]` for the bounded empirical result |
+| frozen analysis on independent pre-existing data, regardless of outcome sign | `X2` and a dated `[B]` result for that claim/domain; support, narrow, retain unresolved, or kill exactly as preregistered |
+| independent preregistered replication on newly collected observations, regardless of outcome sign | `X3`; consider `[A]` for the bounded replicated result, including a replicated rejection or null |
 | independent rerun on the same observations | reproduction/reanalysis only; does not earn `X3` |
 | repeated independent cross-domain reproduction | `X4`; consider a broader bridge after audit |
 | analytic, symbolic, correspondence, or normative claim | no empirical stage; test mathematics, removability, consequences, or public usefulness separately |
