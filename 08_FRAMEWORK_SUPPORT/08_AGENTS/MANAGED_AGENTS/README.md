@@ -175,9 +175,12 @@ and enforceable through an approved adapter.
 This wrapper creates no client during preflight, never auto-confirms a tool,
 and never waits indefinitely on `requires_action`. A tool proposal is not a
 commitment receipt. A session status or model sentence is not an outcome
-receipt. Commitment must come from the trusted action wrapper; outcome must
-come later from the world/tool-result issuer with bearer observations. Missing
-observations remain null or pending.
+receipt. Commitment must come from a trusted action wrapper and validate
+against the reviewed request and deployment; outcome must come later from a
+distinct trusted world/tool-result issuer with bearer observations. Both
+receipts require fresh BIP-340 attestations under disjoint key and identity
+roles in the hash-pinned trust policy. Missing observations remain null or
+pending.
 
 **Prospective adapter topology.** The selected pipeline is
 `L1 firewall → L2 explore → L3 rank → L4 prospective Justice check and authorized
@@ -189,9 +192,11 @@ only after it can retrieve and attest the complete remote state, enforce every
 budget and path boundary, and emit separately trusted receipts.
 
 Retrospective consequence labels are likewise typed rather than inferred from
-agent prose. Pending, partial, unobservable, bearer-incomplete, null-delta, or
-assessment-incomplete outcomes remain `unclassified`. A complete observed receipt
-computes `DemonBearing` as focal-beneficiary gain plus any affected-bearer loss;
+agent prose. Pending, partial, unobservable, ambient, bearer-incomplete,
+null-delta, assessment-incomplete, unsigned, stale, untrusted, or
+commitment-unvalidated outcomes remain `unclassified`. A complete
+action-linked observed receipt computes
+`DemonBearing` as focal-beneficiary gain plus any affected-bearer loss;
 `GodBearing` requires Justice, no negative bearer, and at least one positive bearer.
 Justice-compliant all-zero stasis is preservative, while strict syntropy separately
 requires both the focal individual and declared whole to rise with every other

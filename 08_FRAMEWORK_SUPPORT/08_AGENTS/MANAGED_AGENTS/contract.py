@@ -99,12 +99,16 @@ TRUST_POLICY_KEYS = {
     "policyId",
     "authorizationSigners",
     "deploymentVerifiers",
+    "commitmentIssuers",
+    "outcomeIssuers",
     "maxAuthorizationAgeSeconds",
     "maxDeploymentAgeSeconds",
+    "maxReceiptAgeSeconds",
     "maxFutureSkewSeconds",
 }
 AUTHORIZATION_SIGNER_KEYS = {"keyId", "publicKeyHex", "principalIds"}
 DEPLOYMENT_VERIFIER_KEYS = {"keyId", "publicKeyHex", "verifierIds"}
+RECEIPT_ISSUER_KEYS = {"keyId", "publicKeyHex", "issuerIds"}
 ATTESTATION_KEYS = {"keyId", "signedAt", "signature"}
 JUSTICE_ASSESSMENT_KEYS = {
     "status",
@@ -126,6 +130,8 @@ OUTCOME_CLASSIFICATION_KEYS = {
 
 AUTHORIZATION_SIGNATURE_DOMAIN = "emergentism-managed-agentz/authorization/v1"
 DEPLOYMENT_SIGNATURE_DOMAIN = "emergentism-managed-agentz/deployment/v1"
+COMMITMENT_SIGNATURE_DOMAIN = "emergentism-managed-agentz/commitment/v1"
+OUTCOME_SIGNATURE_DOMAIN = "emergentism-managed-agentz/outcome/v1"
 
 
 class ContractError(ValueError):
@@ -228,6 +234,24 @@ def deployment_signature_digest(receipt: dict[str, Any]) -> bytes:
     return _signature_digest(DEPLOYMENT_SIGNATURE_DOMAIN, payload)
 
 
+def commitment_signature_digest(receipt: dict[str, Any]) -> bytes:
+    """Return the domain-separated digest signed by an action wrapper."""
+    payload = copy.deepcopy(receipt)
+    attestation = payload.get("attestation")
+    if isinstance(attestation, dict):
+        attestation.pop("signature", None)
+    return _signature_digest(COMMITMENT_SIGNATURE_DOMAIN, payload)
+
+
+def outcome_signature_digest(receipt: dict[str, Any]) -> bytes:
+    """Return the domain-separated digest signed by a world-outcome issuer."""
+    payload = copy.deepcopy(receipt)
+    attestation = payload.get("attestation")
+    if isinstance(attestation, dict):
+        attestation.pop("signature", None)
+    return _signature_digest(OUTCOME_SIGNATURE_DOMAIN, payload)
+
+
 def _hex_bytes(value: Any, length: int, label: str) -> bytes:
     _require(
         isinstance(value, str) and len(value) == length * 2,
@@ -287,6 +311,7 @@ def validate_trust_policy(value: Any) -> dict[str, Any]:
     for key in (
         "maxAuthorizationAgeSeconds",
         "maxDeploymentAgeSeconds",
+        "maxReceiptAgeSeconds",
         "maxFutureSkewSeconds",
     ):
         item = policy[key]
@@ -302,8 +327,28 @@ def validate_trust_policy(value: Any) -> dict[str, Any]:
         policy["maxDeploymentAgeSeconds"] > 0,
         "trustPolicy.maxDeploymentAgeSeconds must be positive",
     )
+    _require(
+        policy["maxReceiptAgeSeconds"] > 0,
+        "trustPolicy.maxReceiptAgeSeconds must be positive",
+    )
 
-    seen: set[str] = set()
+    seen_key_ids: set[str] = set()
+    seen_public_keys: set[bytes] = set()
+
+    def register_key(record: dict[str, Any], label: str) -> None:
+        key_id = _text(record["keyId"], f"{label}.keyId")
+        public_key = _hex_bytes(record["publicKeyHex"], 32, f"{label}.publicKeyHex")
+        _require(
+            key_id not in seen_key_ids,
+            f"trustPolicy duplicate keyId: {key_id}",
+        )
+        _require(
+            public_key not in seen_public_keys,
+            "trustPolicy public keys must be unique across authority roles",
+        )
+        seen_key_ids.add(key_id)
+        seen_public_keys.add(public_key)
+
     signers = policy["authorizationSigners"]
     _require(
         isinstance(signers, list) and bool(signers),
@@ -315,14 +360,7 @@ def validate_trust_policy(value: Any) -> dict[str, Any]:
             AUTHORIZATION_SIGNER_KEYS,
             f"trustPolicy.authorizationSigners[{index}]",
         )
-        key_id = _text(
-            signer["keyId"], f"trustPolicy.authorizationSigners[{index}].keyId"
-        )
-        _require(key_id not in seen, f"trustPolicy duplicate keyId: {key_id}")
-        seen.add(key_id)
-        _hex_bytes(
-            signer["publicKeyHex"], 32, f"trustPolicy.authorizationSigners[{index}]"
-        )
+        register_key(signer, f"trustPolicy.authorizationSigners[{index}]")
         _unique_text_list(
             signer["principalIds"],
             f"trustPolicy.authorizationSigners[{index}].principalIds",
@@ -337,23 +375,58 @@ def validate_trust_policy(value: Any) -> dict[str, Any]:
         verifier = _closed(
             value, DEPLOYMENT_VERIFIER_KEYS, f"trustPolicy.deploymentVerifiers[{index}]"
         )
-        key_id = _text(
-            verifier["keyId"], f"trustPolicy.deploymentVerifiers[{index}].keyId"
-        )
-        _require(key_id not in seen, f"trustPolicy duplicate keyId: {key_id}")
-        seen.add(key_id)
-        _hex_bytes(
-            verifier["publicKeyHex"], 32, f"trustPolicy.deploymentVerifiers[{index}]"
-        )
+        register_key(verifier, f"trustPolicy.deploymentVerifiers[{index}]")
         _unique_text_list(
             verifier["verifierIds"],
             f"trustPolicy.deploymentVerifiers[{index}].verifierIds",
         )
+
+    issuer_roles: dict[str, set[str]] = {}
+    for collection in ("commitmentIssuers", "outcomeIssuers"):
+        records = policy[collection]
+        _require(
+            isinstance(records, list) and bool(records),
+            f"trustPolicy.{collection} must be a nonempty list",
+        )
+        issuer_ids: set[str] = set()
+        for index, value in enumerate(records):
+            issuer = _closed(
+                value,
+                RECEIPT_ISSUER_KEYS,
+                f"trustPolicy.{collection}[{index}]",
+            )
+            register_key(issuer, f"trustPolicy.{collection}[{index}]")
+            identifiers = _unique_text_list(
+                issuer["issuerIds"],
+                f"trustPolicy.{collection}[{index}].issuerIds",
+            )
+            _require(
+                issuer_ids.isdisjoint(identifiers),
+                f"trustPolicy.{collection} issuerIds must be unique",
+            )
+            issuer_ids.update(identifiers)
+        issuer_roles[collection] = issuer_ids
+    _require(
+        issuer_roles["commitmentIssuers"].isdisjoint(issuer_roles["outcomeIssuers"]),
+        "commitment and world-outcome issuer identities must be disjoint",
+    )
     return policy
 
 
 def load_trust_policy(path: Path = TRUST_POLICY_PATH) -> dict[str, Any]:
     return validate_trust_policy(load_json(path, "trust policy"))
+
+
+def validate_pinned_trust_policy(
+    value: Any, expected_sha256: str
+) -> dict[str, Any]:
+    policy = validate_trust_policy(value)
+    _hex_bytes(expected_sha256, 32, "expected trust-policy SHA-256")
+    _require(
+        hmac.compare_digest(expected_sha256, sha256_value(policy)),
+        "trust-policy SHA-256 mismatch",
+    )
+    return policy
 
 
 def _trusted_record(
@@ -948,7 +1021,9 @@ def validate_commitment_receipt(
     *,
     request: dict[str, Any],
     deployment: dict[str, Any],
-    trusted_issuers: set[str],
+    trust_policy: dict[str, Any],
+    expected_trust_policy_sha256: str,
+    now: dt.datetime | None = None,
 ) -> dict[str, Any]:
     keys = {
         "schemaVersion",
@@ -961,6 +1036,7 @@ def validate_commitment_receipt(
         "budgetSha256",
         "deploymentSha256",
         "issuedBy",
+        "attestation",
     }
     receipt = _closed(value, keys, "commitmentReceipt")
     _require(
@@ -976,8 +1052,46 @@ def validate_commitment_receipt(
         in {"refused", "authorization_pending", "attempt_started", "attempt_failed"},
         "commitmentReceipt status is invalid",
     )
+    policy = validate_pinned_trust_policy(
+        trust_policy, expected_trust_policy_sha256
+    )
+    current = _utc_now(now)
     issuer = _text(receipt["issuedBy"], "commitmentReceipt.issuedBy")
-    _require(issuer in trusted_issuers, "commitmentReceipt issuer is not trusted")
+    attestation = _closed(
+        receipt["attestation"], ATTESTATION_KEYS, "commitmentReceipt.attestation"
+    )
+    key_id = _text(attestation["keyId"], "commitmentReceipt.attestation.keyId")
+    signer = _trusted_record(
+        policy, "commitmentIssuers", key_id, "commitment receipt issuer"
+    )
+    _require(
+        issuer in signer["issuerIds"],
+        "commitmentReceipt issuer identity is not trusted for this key",
+    )
+    signed_at = _parse_utc(
+        attestation["signedAt"], "commitmentReceipt.attestation.signedAt"
+    )
+    deployment_verified_at = _parse_utc(
+        deployment["verifiedAt"], "deploymentReceipt.verifiedAt"
+    )
+    _require(
+        deployment_verified_at
+        <= signed_at + dt.timedelta(seconds=policy["maxFutureSkewSeconds"]),
+        "commitment attestation predates the verified deployment",
+    )
+    _require_fresh(
+        signed_at,
+        now=current,
+        max_age_seconds=policy["maxReceiptAgeSeconds"],
+        max_future_skew_seconds=policy["maxFutureSkewSeconds"],
+        label="commitmentReceipt.attestation.signedAt",
+    )
+    _verify_bip340(
+        signer["publicKeyHex"],
+        commitment_signature_digest(receipt),
+        attestation["signature"],
+        "commitmentReceipt attestation",
+    )
     _require(
         receipt["actionPlanSha256"] == request["actionPlanSha256"],
         "commitmentReceipt actionPlan hash mismatch",
@@ -1034,8 +1148,11 @@ def validate_outcome_receipt(
     value: Any,
     *,
     request: dict[str, Any],
+    deployment: dict[str, Any] | None,
     commitment: dict[str, Any] | None,
-    trusted_issuers: set[str],
+    trust_policy: dict[str, Any],
+    expected_trust_policy_sha256: str,
+    now: dt.datetime | None = None,
 ) -> dict[str, Any]:
     keys = {
         "schemaVersion",
@@ -1050,6 +1167,7 @@ def validate_outcome_receipt(
         "justiceAssessment",
         "classification",
         "issuedBy",
+        "attestation",
     }
     receipt = _closed(value, keys, "outcomeReceipt")
     _require(
@@ -1071,8 +1189,81 @@ def validate_outcome_receipt(
         receipt["actionPlanSha256"] == request["actionPlanSha256"],
         "outcomeReceipt actionPlan hash mismatch",
     )
+    policy = validate_pinned_trust_policy(
+        trust_policy, expected_trust_policy_sha256
+    )
+    current = _utc_now(now)
     issuer = _text(receipt["issuedBy"], "outcomeReceipt.issuedBy")
-    _require(issuer in trusted_issuers, "outcomeReceipt issuer is not trusted")
+    attestation = _closed(
+        receipt["attestation"], ATTESTATION_KEYS, "outcomeReceipt.attestation"
+    )
+    key_id = _text(attestation["keyId"], "outcomeReceipt.attestation.keyId")
+    signer = _trusted_record(
+        policy, "outcomeIssuers", key_id, "world-outcome receipt issuer"
+    )
+    _require(
+        issuer in signer["issuerIds"],
+        "outcomeReceipt issuer identity is not trusted for this key",
+    )
+    signed_at = _parse_utc(
+        attestation["signedAt"], "outcomeReceipt.attestation.signedAt"
+    )
+    _require_fresh(
+        signed_at,
+        now=current,
+        max_age_seconds=policy["maxReceiptAgeSeconds"],
+        max_future_skew_seconds=policy["maxFutureSkewSeconds"],
+        label="outcomeReceipt.attestation.signedAt",
+    )
+    _verify_bip340(
+        signer["publicKeyHex"],
+        outcome_signature_digest(receipt),
+        attestation["signature"],
+        "outcomeReceipt attestation",
+    )
+
+    if receipt["receiptCause"] == "action_attempt":
+        _require(
+            deployment is not None,
+            "action outcome requires the validated deployment used by the commitment",
+        )
+        _require(
+            commitment is not None,
+            "action outcome requires a commitmentReceipt",
+        )
+        validated_commitment = validate_commitment_receipt(
+            commitment,
+            request=request,
+            deployment=deployment,
+            trust_policy=policy,
+            expected_trust_policy_sha256=expected_trust_policy_sha256,
+            now=current,
+        )
+        commitment_signed_at = _parse_utc(
+            validated_commitment["attestation"]["signedAt"],
+            "commitmentReceipt.attestation.signedAt",
+        )
+        _require(
+            commitment_signed_at
+            <= signed_at + dt.timedelta(seconds=policy["maxFutureSkewSeconds"]),
+            "outcome attestation predates the attempted commitment",
+        )
+        _require(
+            validated_commitment["status"] == "attempt_started",
+            "action outcome requires an attempted action",
+        )
+        _require(
+            receipt["actionId"] == validated_commitment["actionId"],
+            "outcomeReceipt action linkage mismatch",
+        )
+        _require(
+            receipt["actionPlanSha256"] == validated_commitment["actionPlanSha256"],
+            "outcomeReceipt actionPlan linkage mismatch",
+        )
+    else:
+        _require(commitment is None, "ambient outcome cannot carry a commitmentReceipt")
+        _require(deployment is None, "ambient outcome cannot claim an action deployment")
+        _require(receipt["actionId"] is None, "ambient outcome must have null actionId")
 
     bearers = _unique_text_list(
         receipt["consequenceBearerIds"],
@@ -1154,7 +1345,8 @@ def validate_outcome_receipt(
     )
     assessment_complete = assessment["status"] == "complete"
     may_classify = (
-        observation_complete
+        receipt["receiptCause"] == "action_attempt"
+        and observation_complete
         and assessment_complete
         and assessment["bearerCoverageComplete"] is True
     )
@@ -1220,7 +1412,10 @@ def validate_outcome_receipt(
                 "Justice focal beneficiaries exceed the authorized beneficiary set",
             )
         assessor = _text(assessment["assessedBy"], "justiceAssessment.assessedBy")
-        _require(assessor in trusted_issuers, "Justice assessor is not trusted")
+        _require(
+            assessor in signer["issuerIds"],
+            "Justice assessor is not a trusted world-outcome issuer",
+        )
         numeric_deltas = {bearer: float(deltas[bearer]) for bearer in bearers}
         if assessment["justiceSatisfied"]:
             _require(
@@ -1254,22 +1449,6 @@ def validate_outcome_receipt(
                 f"outcome classification {field} does not match the receipted predicate",
             )
 
-    if receipt["receiptCause"] == "action_attempt":
-        _require(commitment is not None, "action outcome requires a commitmentReceipt")
-        _require(
-            commitment["status"] == "attempt_started",
-            "action outcome requires an attempted action",
-        )
-        _require(
-            receipt["actionId"] == commitment["actionId"],
-            "outcomeReceipt action linkage mismatch",
-        )
-        _require(
-            receipt["actionPlanSha256"] == commitment["actionPlanSha256"],
-            "outcomeReceipt actionPlan linkage mismatch",
-        )
-    else:
-        _require(receipt["actionId"] is None, "ambient outcome must have null actionId")
     return receipt
 
 
@@ -1308,11 +1487,8 @@ def preflight(
         expected_trust_policy_sha256 is not None,
         "preflight requires an expected trust-policy SHA-256",
     )
-    _hex_bytes(expected_trust_policy_sha256, 32, "expected trust-policy SHA-256")
-    actual_policy_sha256 = sha256_value(trust_policy)
-    _require(
-        hmac.compare_digest(expected_trust_policy_sha256, actual_policy_sha256),
-        "trust-policy SHA-256 mismatch",
+    trust_policy = validate_pinned_trust_policy(
+        trust_policy, expected_trust_policy_sha256
     )
     request = validate_run_request(
         load_json(request_path, "run request"),

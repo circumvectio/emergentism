@@ -152,6 +152,10 @@ class RootAgentzDispatchCompilerTests(unittest.TestCase):
             analogy = row["consequence_analogy"]
             self.assertEqual("unclassified", analogy["classification_default"])
             self.assertEqual(sync.CLASSIFICATION_GATE, analogy["classification_gate"])
+            self.assertIn(
+                "distinct hash-pinned trusted world-issuer key",
+                analogy["classification_gate"],
+            )
             self.assertEqual(sync.DEMON_BEARING_PREDICATE, analogy["demon_bearing"])
             self.assertEqual(sync.GOD_BEARING_PREDICATE, analogy["god_bearing"])
             self.assertEqual(sync.STASIS_PREDICATE, analogy["stasis"])

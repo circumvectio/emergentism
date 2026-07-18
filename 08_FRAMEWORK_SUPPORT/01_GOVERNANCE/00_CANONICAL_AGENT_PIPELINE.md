@@ -149,15 +149,19 @@ manifest last. Any stale digest fails without overwriting the live kernel.
   complete principal, mandate, scope, consent, custody, expiry/revocation,
   contest path, actor, consequence bearer, payer, and beneficiary envelope.
 - A commitment receipt records the attempted action. A later environmental
-  outcome receipt records what happened. The selector cannot manufacture its
-  own consequence.
+  outcome receipt records what happened. The commitment must validate against
+  the reviewed request and deployment; both receipts require fresh BIP-340
+  attestations under disjoint keys and issuer identities in the hash-pinned
+  trust policy. The selector cannot manufacture its own consequence.
 - Private-DAV K2 and public governance are separate implementation rails, not
   worldview primitives and not substitutes for the authorization envelope.
 
 God/Demon language is forbidden as configured agent identity. The retrospective
-class remains **unclassified** until commitment and world-issued outcome
-receipts provide the complete affected-bearer set, non-null deltas for every
-bearer, and a Justice assessment. `DemonBearing` then requires a focal
+class remains **unclassified** until a fully validated, freshly signed
+attempt-started commitment and a later freshly signed outcome under a distinct
+trusted world-issuer key provide the complete affected-bearer set, non-null
+deltas for every bearer, and a Justice assessment. Ambient observations remain
+unclassified. `DemonBearing` then requires a focal
 beneficiary gain plus some bearer loss. `GodBearing` requires Justice, every
 bearer nonnegative, and at least one strict gain. All-zero stasis is
 preservative, not God-bearing. Strict syntropy is a separate stronger predicate:

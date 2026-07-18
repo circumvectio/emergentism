@@ -23,8 +23,12 @@ import contract  # noqa: E402
 AUTH_PRIVATE_KEY = PrivateKey(bytes.fromhex("11" * 32))
 DEPLOYMENT_PRIVATE_KEY = PrivateKey(bytes.fromhex("22" * 32))
 WRONG_PRIVATE_KEY = PrivateKey(bytes.fromhex("33" * 32))
+COMMITMENT_PRIVATE_KEY = PrivateKey(bytes.fromhex("44" * 32))
+OUTCOME_PRIVATE_KEY = PrivateKey(bytes.fromhex("55" * 32))
 AUTH_KEY_ID = "fixture-authorization-key"
 DEPLOYMENT_KEY_ID = "fixture-deployment-key"
+COMMITMENT_KEY_ID = "fixture-commitment-key"
+OUTCOME_KEY_ID = "fixture-outcome-key"
 
 
 def future(days: int = 30) -> str:
@@ -55,8 +59,23 @@ def trust_policy() -> dict:
                 "verifierIds": ["independent-adapter-fixture"],
             }
         ],
+        "commitmentIssuers": [
+            {
+                "keyId": COMMITMENT_KEY_ID,
+                "publicKeyHex": COMMITMENT_PRIVATE_KEY.public_key_xonly.format().hex(),
+                "issuerIds": ["trusted-action-wrapper"],
+            }
+        ],
+        "outcomeIssuers": [
+            {
+                "keyId": OUTCOME_KEY_ID,
+                "publicKeyHex": OUTCOME_PRIVATE_KEY.public_key_xonly.format().hex(),
+                "issuerIds": ["trusted-world-wrapper"],
+            }
+        ],
         "maxAuthorizationAgeSeconds": 172800,
         "maxDeploymentAgeSeconds": 172800,
+        "maxReceiptAgeSeconds": 172800,
         "maxFutureSkewSeconds": 60,
     }
 
@@ -184,7 +203,7 @@ def sign_deployment(value: dict, key: PrivateKey = DEPLOYMENT_PRIVATE_KEY) -> di
 
 
 def commitment(run_request: dict, deployed: dict) -> dict:
-    return {
+    value = {
         "schemaVersion": "1.0",
         "receiptType": "commitment",
         "requestId": run_request["requestId"],
@@ -199,11 +218,28 @@ def commitment(run_request: dict, deployed: dict) -> dict:
         "budgetSha256": contract.sha256_value(run_request["budget"]),
         "deploymentSha256": contract.sha256_value(deployed),
         "issuedBy": "trusted-action-wrapper",
+        "attestation": {
+            "keyId": COMMITMENT_KEY_ID,
+            "signedAt": past(),
+            "signature": "",
+        },
     }
+    return sign_commitment(value)
+
+
+def sign_commitment(
+    value: dict, key: PrivateKey = COMMITMENT_PRIVATE_KEY
+) -> dict:
+    value["attestation"]["signature"] = ""
+    value["attestation"]["signature"] = key.sign_schnorr(
+        contract.commitment_signature_digest(value),
+        aux_randomness=None,
+    ).hex()
+    return value
 
 
 def outcome(run_request: dict) -> dict:
-    return {
+    value = {
         "schemaVersion": "1.0",
         "receiptType": "outcome",
         "receiptCause": "action_attempt",
@@ -231,7 +267,41 @@ def outcome(run_request: dict) -> dict:
             "strictSyntropy": False,
         },
         "issuedBy": "trusted-world-wrapper",
+        "attestation": {
+            "keyId": OUTCOME_KEY_ID,
+            "signedAt": past(),
+            "signature": "",
+        },
     }
+    return sign_outcome(value)
+
+
+def sign_outcome(value: dict, key: PrivateKey = OUTCOME_PRIVATE_KEY) -> dict:
+    value["attestation"]["signature"] = ""
+    value["attestation"]["signature"] = key.sign_schnorr(
+        contract.outcome_signature_digest(value),
+        aux_randomness=None,
+    ).hex()
+    return value
+
+
+def validate_outcome(
+    value: dict,
+    run_request: dict,
+    deployed: dict | None,
+    committed: dict | None,
+    *,
+    policy: dict | None = None,
+) -> dict:
+    policy = policy or trust_policy()
+    return contract.validate_outcome_receipt(
+        value,
+        request=run_request,
+        deployment=deployed,
+        commitment=committed,
+        trust_policy=policy,
+        expected_trust_policy_sha256=contract.sha256_value(policy),
+    )
 
 
 class ManagedAgentzControlPlaneTests(unittest.TestCase):
@@ -493,33 +563,94 @@ class ManagedAgentzControlPlaneTests(unittest.TestCase):
         deployed = deployment(lock)
         committed = commitment(run_request, deployed)
         observed = outcome(run_request)
+        policy = trust_policy()
         self.assertEqual(
             committed,
             contract.validate_commitment_receipt(
                 committed,
                 request=run_request,
                 deployment=deployed,
-                trusted_issuers={"trusted-action-wrapper"},
+                trust_policy=policy,
+                expected_trust_policy_sha256=contract.sha256_value(policy),
             ),
         )
         self.assertEqual(
             observed,
+            validate_outcome(observed, run_request, deployed, committed),
+        )
+
+        forged_commitment = copy.deepcopy(committed)
+        sign_commitment(forged_commitment, WRONG_PRIVATE_KEY)
+        with self.assertRaisesRegex(contract.ContractError, "signature is invalid"):
+            validate_outcome(observed, run_request, deployed, forged_commitment)
+
+        forged_outcome = copy.deepcopy(observed)
+        sign_outcome(forged_outcome, WRONG_PRIVATE_KEY)
+        with self.assertRaisesRegex(contract.ContractError, "signature is invalid"):
+            validate_outcome(forged_outcome, run_request, deployed, committed)
+
+        stale_outcome = copy.deepcopy(observed)
+        stale_outcome["attestation"]["signedAt"] = past(days=30)
+        sign_outcome(stale_outcome)
+        with self.assertRaisesRegex(contract.ContractError, "stale"):
+            validate_outcome(stale_outcome, run_request, deployed, committed)
+
+        later_commitment = copy.deepcopy(committed)
+        later_commitment["attestation"]["signedAt"] = future(days=0)
+        sign_commitment(later_commitment)
+        with self.assertRaisesRegex(contract.ContractError, "predates the attempted"):
+            validate_outcome(observed, run_request, deployed, later_commitment)
+
+        with self.assertRaisesRegex(contract.ContractError, "trust-policy SHA-256"):
             contract.validate_outcome_receipt(
                 observed,
                 request=run_request,
+                deployment=deployed,
                 commitment=committed,
-                trusted_issuers={"trusted-world-wrapper"},
-            ),
-        )
+                trust_policy=policy,
+                expected_trust_policy_sha256="0" * 64,
+            )
         type_confusion = copy.deepcopy(observed)
         type_confusion["receiptType"] = "commitment"
         with self.assertRaisesRegex(contract.ContractError, "type confusion"):
-            contract.validate_outcome_receipt(
-                type_confusion,
-                request=run_request,
-                commitment=committed,
-                trusted_issuers={"trusted-world-wrapper"},
+            validate_outcome(type_confusion, run_request, deployed, committed)
+
+        with self.assertRaisesRegex(contract.ContractError, "requires a commitment"):
+            validate_outcome(observed, run_request, deployed, None)
+
+        shallow_fake = {
+            "status": "attempt_started",
+            "actionId": committed["actionId"],
+            "actionPlanSha256": committed["actionPlanSha256"],
+        }
+        with self.assertRaisesRegex(contract.ContractError, "commitmentReceipt missing keys"):
+            validate_outcome(observed, run_request, deployed, shallow_fake)
+
+        same_role_policy = trust_policy()
+        same_role_policy["outcomeIssuers"][0]["keyId"] = COMMITMENT_KEY_ID
+        same_role_policy["outcomeIssuers"][0]["publicKeyHex"] = (
+            COMMITMENT_PRIVATE_KEY.public_key_xonly.format().hex()
+        )
+        same_role_policy["outcomeIssuers"][0]["issuerIds"] = [
+            "trusted-action-wrapper"
+        ]
+        with self.assertRaisesRegex(
+            contract.ContractError, "duplicate keyId|public keys|identities"
+        ):
+            validate_outcome(
+                observed,
+                run_request,
+                deployed,
+                committed,
+                policy=same_role_policy,
             )
+
+        classified_ambient = copy.deepcopy(observed)
+        classified_ambient["receiptCause"] = "ambient_observation"
+        classified_ambient["actionId"] = None
+        sign_outcome(classified_ambient)
+        with self.assertRaisesRegex(contract.ContractError, "must remain unclassified"):
+            validate_outcome(classified_ambient, run_request, None, None)
 
     def test_outcome_justice_classes_are_exact_and_incomplete_receipts_stay_unclassified(
         self,
@@ -578,25 +709,17 @@ class ManagedAgentzControlPlaneTests(unittest.TestCase):
             if expected["demonBearing"]:
                 receipt["justiceAssessment"]["focalBeneficiaryIds"] = ["principal"]
             receipt["classification"].update(expected)
+            sign_outcome(receipt)
             self.assertEqual(
                 receipt,
-                contract.validate_outcome_receipt(
-                    receipt,
-                    request=run_request,
-                    commitment=committed,
-                    trusted_issuers={"trusted-world-wrapper"},
-                ),
+                validate_outcome(receipt, run_request, deployed, committed),
             )
 
         wrong = outcome(run_request)
         wrong["classification"]["strictSyntropy"] = True
+        sign_outcome(wrong)
         with self.assertRaisesRegex(contract.ContractError, "strictSyntropy"):
-            contract.validate_outcome_receipt(
-                wrong,
-                request=run_request,
-                commitment=committed,
-                trusted_issuers={"trusted-world-wrapper"},
-            )
+            validate_outcome(wrong, run_request, deployed, committed)
 
         pending = outcome(run_request)
         pending["status"] = "pending"
@@ -620,40 +743,24 @@ class ManagedAgentzControlPlaneTests(unittest.TestCase):
             "preservativeStasis": None,
             "strictSyntropy": None,
         }
-        contract.validate_outcome_receipt(
-            pending,
-            request=run_request,
-            commitment=committed,
-            trusted_issuers={"trusted-world-wrapper"},
-        )
+        sign_outcome(pending)
+        validate_outcome(pending, run_request, deployed, committed)
         inflated = copy.deepcopy(pending)
         inflated["classification"]["godBearing"] = True
+        sign_outcome(inflated)
         with self.assertRaisesRegex(contract.ContractError, "cannot assert"):
-            contract.validate_outcome_receipt(
-                inflated,
-                request=run_request,
-                commitment=committed,
-                trusted_issuers={"trusted-world-wrapper"},
-            )
+            validate_outcome(inflated, run_request, deployed, committed)
         observed = outcome(run_request)
         model_issued = copy.deepcopy(observed)
         model_issued["issuedBy"] = "model-prose"
-        with self.assertRaisesRegex(contract.ContractError, "issuer is not trusted"):
-            contract.validate_outcome_receipt(
-                model_issued,
-                request=run_request,
-                commitment=committed,
-                trusted_issuers={"trusted-world-wrapper"},
-            )
+        sign_outcome(model_issued)
+        with self.assertRaisesRegex(contract.ContractError, "issuer identity"):
+            validate_outcome(model_issued, run_request, deployed, committed)
         bad_link = copy.deepcopy(observed)
         bad_link["actionId"] = "different-action"
+        sign_outcome(bad_link)
         with self.assertRaisesRegex(contract.ContractError, "action linkage mismatch"):
-            contract.validate_outcome_receipt(
-                bad_link,
-                request=run_request,
-                commitment=committed,
-                trusted_issuers={"trusted-world-wrapper"},
-            )
+            validate_outcome(bad_link, run_request, deployed, committed)
 
     def test_ambient_outcome_requires_null_action_and_pending_cannot_invent_delta(
         self,
@@ -687,22 +794,19 @@ class ManagedAgentzControlPlaneTests(unittest.TestCase):
                 "strictSyntropy": None,
             },
             "issuedBy": "trusted-world-wrapper",
+            "attestation": {
+                "keyId": OUTCOME_KEY_ID,
+                "signedAt": past(),
+                "signature": "",
+            },
         }
-        contract.validate_outcome_receipt(
-            ambient,
-            request=run_request,
-            commitment=None,
-            trusted_issuers={"trusted-world-wrapper"},
-        )
+        sign_outcome(ambient)
+        validate_outcome(ambient, run_request, None, None)
         mutant = copy.deepcopy(ambient)
         mutant["observedBearerDeltas"]["corpus"] = 1.0
+        sign_outcome(mutant)
         with self.assertRaisesRegex(contract.ContractError, "cannot invent deltas"):
-            contract.validate_outcome_receipt(
-                mutant,
-                request=run_request,
-                commitment=None,
-                trusted_issuers={"trusted-world-wrapper"},
-            )
+            validate_outcome(mutant, run_request, None, None)
 
     def test_offline_provision_modes_make_no_sdk_or_network_call(self) -> None:
         env = dict(os.environ)

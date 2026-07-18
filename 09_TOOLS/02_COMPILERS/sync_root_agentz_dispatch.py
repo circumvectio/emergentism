@@ -51,7 +51,7 @@ SOURCE_BUNDLE_CONTROL_PATHS = (
 )
 
 CLASSIFICATION_GATE = (
-    "attempt-started commitment receipt q; observed world-issued outcome receipt r; complete materially affected "
+    "fully validated freshly signed attempt-started commitment receipt q; observed freshly signed outcome receipt r under a distinct hash-pinned trusted world-issuer key; complete materially affected "
     "bearer set A; observed non-null Δ_T^R W_b(q,r) for every b∈A; retrospective Justice "
     "assessment recorded"
 )
@@ -513,9 +513,11 @@ compiler rechecks them under lock throughout staging/replacement, atomically
 replaces each file, and writes `DEPLOYMENT_MANIFEST.md` last.
 
 God/Demon language is not an agent identity. A consequence remains unclassified
-unless `q`, a world-issued `r`, the complete affected-bearer set, non-null
-receipted deltas for every bearer, and a retrospective Justice assessment are
-observed. `DemonBearing` then means a focal beneficiary gains while any bearer
+unless a fully validated, freshly signed `q`, a later freshly signed `r` under
+a distinct hash-pinned trusted world-issuer key, the complete affected-bearer
+set, non-null receipted deltas for every bearer, and a retrospective Justice
+assessment are observed. Ambient observations
+remain unclassified. `DemonBearing` then means a focal beneficiary gains while any bearer
 loses. `GodBearing` requires Justice, all bearers nonnegative, and at least one
 strict gain. All-zero stasis is preservative, not God-bearing. Strict syntropy
 is separate and stronger: both declared part and whole rise, with every other
@@ -558,10 +560,12 @@ domains and row placement.
 
 ## Receipt-based consequence predicates
 
-The realized class defaults to unclassified. Classification requires observed
-`q`, world-issued `r`, the complete materially affected bearer set, a non-null
-receipted delta for every bearer, and a recorded retrospective Justice
-assessment. `DemonBearing` is focal gain plus any bearer loss. `GodBearing`
+The realized class defaults to unclassified. Classification requires a fully
+validated, freshly signed `q`, a later freshly signed `r` under a distinct
+hash-pinned trusted world-issuer key, the complete materially affected bearer
+set, a non-null receipted delta for every bearer, and a recorded retrospective
+Justice assessment. Ambient observations remain
+unclassified. `DemonBearing` is focal gain plus any bearer loss. `GodBearing`
 requires Justice, every bearer nonnegative, and at least one strict gain. Pure
 all-zero stasis is Justice-compliant/preservative, not God-bearing. Strict
 syntropy is a separate stronger class requiring both declared part and whole to
@@ -617,9 +621,11 @@ commitment receipt. The environment later returns a distinct outcome receipt.
 
 ## What the old analogy may still mean
 
-God/Demon is permitted only as a retrospective consequence predicate. Until
-`q`, world-issued `r`, the complete affected-bearer set, non-null deltas for all
-bearers, and a Justice assessment are observed, the result is unclassified.
+God/Demon is permitted only as a retrospective consequence predicate. Until a
+fully validated, freshly signed `q`, a later freshly signed `r` under a distinct
+hash-pinned trusted world-issuer key, the complete affected-bearer set,
+non-null deltas for all bearers, and a Justice assessment are observed, the
+result is unclassified. Ambient observations remain unclassified.
 `DemonBearing` is focal gain plus any bearer loss. `GodBearing` requires Justice,
 all bearers nonnegative, and at least one strict gain. All-zero stasis is merely
 preservative. Strict syntropy is separate and stronger: both declared part and
