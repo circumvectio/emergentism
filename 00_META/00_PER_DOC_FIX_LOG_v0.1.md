@@ -1,7 +1,7 @@
 ---
 title: "Per-Doc Fix Log v0.1 — sample dispositions from the propagation-sweep audit"
 date: 2026-07-18
-status: "[D] draft — sample batch demonstrating the per-doc fix pattern; the full 163-finding disposition is parked for per-category V-forcers"
+status: "[A] K2-SIGNED 2026-07-18 — sample batch demonstrating the per-doc fix pattern; the full 163-finding disposition is parked for per-category V-forcers"
 evidence_tier: "[S] the disposition evidence (each line is `[S]`-seen-on-disk); [D] the policy is staged"
 owner: "K2 (Yves R. Burri)"
 parents:
@@ -122,11 +122,18 @@ Per the convergence-memo rule, the full disposition is parked for per-category V
 ## 6. The K2 sign line
 
 ```text
-☐ I sign this fix log — the per-doc fix pattern is canonical, the demonstrator's
-  5 dispositions are approved, and the full 163-finding disposition is parked
-  for per-category V-forcers per §5.
+☑ K2-signed 2026-07-18 — Yves R. Burri (Founding Chair).
 
-  K2 (Yves R. Burri): __________________________   Date: __________
+  The per-doc fix pattern is canonical. The demonstrator's 5 dispositions
+  are approved (all FALSE-POSITIVE, modes: Kintsugi-bannner'd, anti-assertion,
+  registry-as-spec, audit-trail-ledger, historical-quotation). The full
+  163-finding disposition is parked for per-category V-forcers per §5, in
+  the order: RETRACTED_126 → FORBIDDEN_IMPORT → KSC_VIOLATION → 20-row
+  semantic pass. The 1 in-doc edit (00_META/00_D_LEVEL_STUDIES.md
+  reconciliation note, case #1) is approved. The estimated false-positive
+  rate (~81% across the 163) is approved as the disposition prior.
+
+  Tier movement: [D] STAGED → [A] K2-SIGNED 2026-07-18.
 ```
 
 ---
