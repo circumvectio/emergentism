@@ -119,7 +119,9 @@ Strategic Implementation must never degrade into:
 - a class of hierophants or initiates *(K6 `η = 0` violation: hierophants extract from cooperators)*
 - secret names or occulted-for-power surfaces *(K0 + K4 violation: occultation-for-power is non-receipted and non-exitable)*
 - correspondences treated as causation *(violates the Rosetta read-law: horizontal translation is not sympathetic magic)*
-- invocation of external beings as the operative mechanism *(violates A5's autonomous-objective function framing: standing waves emerge from coordinated action, not from summoning)*
+- invocation of external beings as the operative mechanism *(outside the
+  operational evidence contract; collective coordination must be explained by
+  inspectable carriers, traces, interventions, and costs)*
 
 If any of those enter the language, Kālī-phase excision is warranted before the term propagates further.
 
@@ -140,7 +142,7 @@ field excitations.
 | **Range** | Bounded by the receipt horizon. In principle nonlocal, in practice attenuated by trust distance rather than by metric distance. F5 does not stably act on what cannot be receipted into the graph. | `[C]` |
 | **Accounting proposal** | Track `Δ_TW_b` separately for every materially affected bearer `b`, including focal individual, sustaining whole, payer, beneficiary, and exposed third party. `φν=1` is a chart identity and supplies no conservation law or ethic. Aggregate summaries may diagnose scale but cannot launder a negative bearer. | `[I/C]` |
 | **Symmetry group** | Three-Stage Process invariance: directed rotation `F1 -> F2 -> F3 -> F4` preserving one-way causal flow from IS to COULD to SHOULD to ACT. First-pass read is closer to oriented `Z_4` than to a full permutation group. | `[C]` |
-| **Dominant regime** | D5 standing-wave regime, roughly `N ~ 10^2` to `10^8` coordinating agents. Below that band F1-F4 dominate more directly. Above it, upper-D5 saturation exceeds the regime's capacity to hold coherent standing waves and pushes the pattern toward closure. D6 is the closure rule, not another active standing-wave regime. **MF-2 qualifier (2026-04-20):** The *existence* of a bounded D5 regime follows from A5 (standing-wave autonomous objective function). The *specific numerical bounds* `10^2` and `10^8` are first-guess bracketing pending empirical calibration; do not promote them independently of A5. | `[C]` |
+| **Dominant regime** | A bounded D5 coordination regime is a `[C]` hypothesis, not a consequence of A5. The rough `N ~ 10^2` to `10^8` band is first-guess bracketing pending data. A qualifying Egregoreotype candidate requires the five trace/turnover/intervention/bias/cost conditions and presumes no autonomous objective. D6 is the closure rule, not another active standing-wave regime. | `[C]` |
 | **Saturation signature** | Candidate Egregoreotype formation requires persistent shared trace, carrier turnover, measurable later-selection reweighting, recurrent objective-like bias, and visible substrate costs. Justice then classifies the candidate as syntropic, extractive, coercive, or mixed; candidacy itself does not require `η=0`. | `[I/C]` |
 
 ## Kill Criteria for [C] Cells
@@ -152,11 +154,12 @@ field excitations.
 | **Range** | Bounded by receipt horizon; attenuated by trust distance | F5-mediated coordination is observed at scales where trust distance → ∞ (e.g., anonymous coordination without prior relationship) with no attenuation. |
 | **Accounting proposal** | Bearer-complete durable-potential accounting adds explanatory value | Hidden-bearer tests show the accounting still launders harm, or the declared variables fail to track material consequences. |
 | **Symmetry group** | Oriented `Z_4` from Three-Stage Process invariance | The `F4 -> F1` feedback loop is shown to require a non-abelian symmetry group; OR the oriented `Z_4` prediction fails in a controlled standing-wave experiment. |
-| **Dominant regime** | D5 regime bounded at `10^2` to `10^8` agents | Standing-wave coherence is observed and sustained below `10^2` agents OR above `10^8` agents; OR the bounded-regime claim is shown to follow from A5 alone (making it [S], not [C]). |
+| **Dominant regime** | D5 regime bounded at `10^2` to `10^8` agents | Standing-wave coherence is observed and sustained below `10^2` agents OR above `10^8` agents; the proposed band then fails or contracts. |
 
 > **Per-cell tier rationale (Option β landed 2026-04-20):** cells
-> directly inheriting from an existing K-invariant or axiom promote to
-> `[S]` (Saturation signature derives from A5 + K4 + zero-factor). Cells
+> defined by an existing framework invariant may be `[S]` only as internal
+> rules. The empirical Saturation signature remains `[I/C]` and is not derived
+> from A5, exit, or the zero-factor model. Cells
 > carrying genuine first-guess novelty or open-question-gated claims
 > stay `[C]` (Carrier, Coupling, Range, Conserved quantity reframe,
 > Symmetry group, Dominant regime bounds).
@@ -192,17 +195,17 @@ Read in the F5 register:
   encoding** of this dynamic: the gods "gathered like flies around the
   sacrificer" because they were starving in the absence of human labor
   energy. The image is `[I]` interpretive about Bronze Age system architecture
-  and `[S]` structural about standing-wave maintenance economics.
+and `[C]` as a general claim about collective-maintenance economics.
 
-This bridge is `[I]+[S]` mixed: the literary connection is interpretive;
-the underlying claim that egregores require continuous coordinated input
-under coupling `α₅ = 1 − η` and collapse without it is structural,
-inheriting directly from A5 + K6 + the Saturation Signature row's
-existing `[S]` tier.
+This bridge is `[I]+[C]`: the literary connection is interpretive; whether a
+candidate Egregoreotype requires continuous coordinated input and collapses
+without it is an empirical discriminator, not an axiom-derived result.
 
 **What this does immediately for theurgy:** it specifies what "sacrifice"
 honestly means at the operational layer. A theurgical formation that asks
-its substrate for input *under η = 0* is mutual flourishing. A formation
+its substrate for input *under η = 0* merely passes one necessary Justice
+check; mutual flourishing additionally requires every affected bearer to
+remain nonnegative, and strict syntropy requires part and whole to rise. A formation
 that asks for input *under η > 0* is Raktabīja in slow motion regardless
 of how it speaks about itself. The diagnostic is the same as the K6
 fence: measure η at the substrate face, not at the egregore's

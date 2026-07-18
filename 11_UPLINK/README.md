@@ -3,7 +3,7 @@ rosetta:
   primary_level: L4
   primary_column: "Philosophy"
   operator: "Arjuna ⚔"
-  tier: "God"
+  tier: "Routing"
   regime: "Kṣatriya"
   register: "[I]"
   canonical_phrase: "11_UPLINK — L4 Kṣatriya Compressed Routing"

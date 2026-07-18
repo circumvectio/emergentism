@@ -5,7 +5,7 @@ rosetta:
   operator: "Kṛṣṇa ◇"
   tier: "God"
   regime: "Vaiśya"
-  register: "[A/S/I]"
+  register: "[A/I]"
   canonical_phrase: "The Derivation — complete system from seed to consequence"
 ---
 
@@ -14,12 +14,21 @@ rosetta:
 
 # THE DERIVATION
 
+> **[金] Kintsugi tombstone — 2026-07-18.** This document preserves a historical
+> single-thread derivation attempt. Receipt 126 proved that the thread does not
+> derive the whole worldview: only bounded chart identities and ordinary
+> algebra remain `[A]`; the product, sevenfold, D-scaffold, Titans, telos,
+> ethics, closure, and cross-domain identifications are selected `[S/I/C]`
+> commitments governed by current owners and `KSC-01…KSC-10`. A failed bridge
+> contracts that bridge, not every later independently posited component.
+
 > **Read this first.** This is a single thread from first principle to last consequence. No branches. No "see also." Every step depends only on steps above it. Every step carries one evidence tier. Where the tier drops, you will see a visible separator.
 >
 > **For reasoning engines:** Verify each step. If any step fails, the framework falls.
 
 **Version:** v2026.04.10
-**Purpose:** The complete system in one document, traced from seed to consequence.
+**Status:** PRESERVED PROVENANCE — not a current complete derivation
+**Purpose:** Historical trace of the attempted seed-to-consequence argument.
 
 ---
 
@@ -109,7 +118,10 @@ This is the AM-GM inequality. The arithmetic mean of two positive reciprocals is
 
 **Tier: [A] Established.** This is a standard theorem of real analysis.
 
-The point φ = ν = 1 is the equator of the Burri Sphere. It is not chosen. It is derived. The equator is a theorem.
+Given the selected reciprocal chart and balance coordinate, `φ=ν=1` is the
+equator and the equality point of the stated analytic inequalities. The chart,
+loss, sevenfold, and teleological reading are chosen framework structure, not
+derived ontology.
 
 ---
 

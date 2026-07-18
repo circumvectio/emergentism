@@ -40,7 +40,11 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 
 ## Authorization discipline
 
-Only **L4 (Arjuna)** and **L6 (Śiva)** can request state mutation, and their tools carry `permission_policy: {type: always_ask}`. The machine prepares a proposed action; the accountable principal authorizes or refuses it. A private-DAV deployment may implement that boundary through K2, but the runtime grammar itself requires a scoped `AuthorizationEnvelope`, not a metaphysical signer.
+Only **L4 (Arjuna)** may request state mutation, and its mutating tools carry
+`permission_policy: {type: always_ask}`. L5–L7 remain advisory/read-only; L6
+returns an archive/compression proposal rather than mutating. Platform
+confirmation is one runtime control, not a complete authorization envelope.
+Private-DAV K2 may separately implement part of that boundary.
 
 ## Routing
 

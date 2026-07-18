@@ -24,7 +24,9 @@ evidence_tier: "[B] for local routing; [S] for canonical agent grammar; [I] for 
 
 # 08_AGENTS — Agent Routing
 
-**Lane scope:** Status: Canonical — v2.0 indexed/provisioned 2026-04-29; not evidence of live autonomous runtime Evidence tier: [S] — Structural
+**Lane scope:** Canonical local configuration v2.1. The 2026-04-29 Phase-0
+index is historical; hosted provisioning remains unexecuted (`X0`). This is not
+evidence of live autonomous runtime. Evidence tier: `[S]` structural.
 **Primary lead:** `L5 Brāhmaṇa`
 **Support:** L1 Caṇḍāla, L2 Śūdra, L3 Vaiśya, L4 Kṣatriya, L6 Sādhu, L7 Ṛṣi
 **Evidence tier:** `[S]` where describing canonical agent grammar; `[I]` for route-control synthesis; require `[B]` receipts or explicit `[D]` / `[C]` labels for deployment claims.

@@ -26,27 +26,57 @@ rosetta:
 
 <!-- VMOSK-A_REFRESH_OVERLAY_2026_06_13 -->
 
+## [金] Controlling Compass repair — 2026-07-18
+
+This seam controls the active Vision/Mission and bounds older wording below
+without deleting provenance:
+
+- Reality is **not proven** to tend toward viable completion or objective
+  dharma. Power-Max and the teleological direction are selected, testable
+  Emergentist hypotheses `[I/C]`.
+- `Φ` is actual D4 model capacity—tokens and ranking/selection events that
+  represent D5 possible content—not D5 itself. D5 does not act.
+- `φν=1`, the equator, `B`, and the `1=0×∞` emblem derive no ethic.
+  `η=0` and positive aggregates are insufficient.
+- Justice quantifies over the complete materially affected-bearer set and
+  requires a full `AuthorizationEnvelope` (principal, mandate, scope, consent,
+  custody, expiry/revocation, contest path, actor, consequence bearer, payer,
+  beneficiary) plus separate commitment and world-issued outcome receipts.
+- `DemonBearing` means local/ego gain with any affected bearer loss.
+  `GodBearing` requires Justice, every affected bearer nonnegative, and at least
+  one strict gain. All-zero stasis is preservative only. Strict syntropy
+  requires both focal part and sustaining whole to rise, with every other
+  affected bearer nonnegative.
+- K2 remains one private-DAV governance implementation, never a worldview,
+  agency, or moral primitive.
+- This worldview repair is adopted through the user-approved Kintsugi plan,
+  passing gates, and a dated repair receipt. It requires no K2 countersign.
+  Older K2 requirements below remain historical or apply only to separately
+  scoped private-DAV/venture mandate changes.
+
 ## Status Snapshot — 2026-06-13 (Vision/Mission canonization)
 
 | Field | Value |
 |---|---|
 | Refresh date | 2026-06-13 |
 | Scope | `01_EMERGENTISM/` doctrine root, public site, AIA-facing medium, papers, and Soul Loop practice |
-| Mandate change | **Yes — owner-declared Vision/Mission clarification.** This overlay supersedes the 2026-06-10 "no V/M expansion" line from that dated snapshot without rewriting its historical record. |
-| Headline | Emergentism is now stated explicitly as a living Weltanschauung for Dasein: a coherent, tier-honest map of origin, objective dharma, and recursive action without extraction. |
+| Mandate change | **Yes — user-approved Vision/Mission repair.** Adoption is the approved Kintsugi plan + passing gates + dated repair receipt; no K2 countersign. This overlay supersedes the 2026-06-10 line without rewriting its historical record. |
+| Headline | Emergentism is a living, tier-honest Compass for Dasein: a selected map of origin and recursive, Justice-bounded action whose directional hypotheses remain externally testable. |
 | Evidence posture | Vision/Mission are governance commitments and interpretive framing `[I/S]`, not proofs. `P_node:=ΦV` is the framework-selected product member of a normalized conjunctive family (`[S]` by definition; `[I/C]` as external fit), not a consequence of `φν=1`. The operational rule remains constrained by evidence tiers, `η = 0`, and A7 correction. |
 
 ## V — Vision (current canonical form)
 
 To make Emergentism a living Weltanschauung for Dasein: a coherent,
-tier-honest map of how the finite reader comes to be, how reality tends toward
-viable completion, and how life can move as objective dharma without confusing
-the map for the Ground.
+tier-honest Compass for how a finite reader models its situation, tests
+candidate directions, acts under complete Justice, and corrects from separate
+receipts without confusing the map for the Ground or claiming reality already
+endorses its telos.
 
 **Short form:**
 
-> Teach Dasein to see clearly, act lawfully, balance `Φ` and `V`, and raise the
-> individual symbiont and collective holobiont together under `η = 0`.
+> Teach Dasein to see clearly, represent possibilities honestly, act through a
+> complete authorization envelope, and seek strict syntropy—part and whole
+> rising with no hidden bearer loss—as a declared hypothesis, not a cosmic proof.
 
 ## M — Mission (current canonical form)
 
@@ -64,12 +94,14 @@ Know how to act   -> teleology
 
 **Operational mission:**
 
-> Maximize durable usable worldline potential, `W_i(T)`, through
-> the declared model `P_node := Φ × V`, only where `P_node,i` and `P_node,H` preserve or raise one
-> another without extraction.
+> Search for durable usable option-cone potential, `W_i(T)`, through the
+> declared model `P_node := Φ × V`, only inside complete Justice and the
+> separately receipted admissible set. This is a selected objective, not a law
+> that reality must maximize it.
 
-**Guardrail:** the framework must not become a closed idol. D5 can imagine a
-universal holobiont running the Soul Loop, but D6 releases even that completed
+**Guardrail:** the framework must not become a closed idol. A D4 model can
+represent a D5 possibility of a universal holobiont running the Soul Loop, but
+D6 releases even that completed
 organism image. The mission is not final possession of truth; it is disciplined
 correction faster than drift.
 
@@ -179,7 +211,10 @@ predeploy gate required before push.
 
 ## V - Vision
 
-Retain the project-specific vision stated in `01_EMERGENTISM/VMOSK_A.md` unless a K2-signed vision change supersedes it. This refresh does not broaden the venture mandate.
+Historical 2026-05-24 rule, superseded for worldview repair: retain the
+project-specific vision unless its applicable adoption process supersedes it.
+The 2026-07-18 process is user approval + gates + dated receipt, not K2;
+separate private-DAV/venture changes retain their scoped authority.
 
 ## M - Mission
 
@@ -215,7 +250,7 @@ Keep Emergentism.org operable under its existing mandate, with explicit evidence
 
 | Agent / Caste | Role | Status |
 |---|---|---|
-| K2 signatory | Signs irreversible vision/mission/entity changes where required | Required for V/M change; not exercised by this refresh |
+| Private-DAV K2 signatory | Signs irreversible changes only inside a private-DAV mandate where required | Not a worldview adoption requirement |
 | Claude L4-L7 | Canon normalization, claim-control pass, implementation notes | Active for this pass |
 | L1-L3 audit castes | Drift detection, evidence collection, KPI verification | Active / pending by project |
 | External counsel / model validator | Legal, regulatory, solvency, or model-validation review where claims require it | TBD - evidence required |
@@ -225,9 +260,9 @@ Keep Emergentism.org operable under its existing mandate, with explicit evidence
 
 | Peer / dependency | Relationship | Boundary control |
 |---|---|---|
-| Parent or catalog VMOSK-A | Provides routing and boundary context | Does not override child V/M without K2-signed change |
+| Parent or catalog VMOSK-A | Provides routing and boundary context | Does not override child V/M without the child's applicable authority |
 | Peer venture VMOSK-A files | SkyzAI organism and Foundation stewardship | Use references only; do not merge legal, operational, or regulatory roles |
-| K2 / governance receipts | Required for irreversible mandate changes | This pass is documentation hygiene, not authorization |
+| Applicable governance receipts | Required for irreversible entity/venture mandate changes | Worldview repair follows user approval + gates + dated receipt; K2 only for private DAVs |
 
 ## Changelog
 
@@ -256,7 +291,9 @@ For `θ∈(0,π)`, Emergentism selects `φ=cot(θ/2)` and `ν=tan(θ/2)`, so `φ
 The framework is:
 - **Axiomatic at the ground** (L6 Core State): Falsification Protocol, Decentralized Authority Model, the silence that precedes structure.
 - **Positive at the structure** (L5 System Architecture): the Rosetta Stone, Dimensional Framework, formal system, P-scores.
-- **Practical at the action** (L4 Value Alignment + Strategic Implementation): K2-signed participation, theurgy as signed action, the five constitutional refusals.
+- **Practical at the action** (L4 Value Alignment + Strategic Implementation):
+  typed accountable authorization and separate receipts; private DAVs may use
+  K2 as one implementation.
 - **Beautiful at the reception** (L2 Data Science): evidence tiers, disclosure, induction.
 - **True at the test** (L3 Auditing): logic, deduction, replication, falsification.
 - **Directed at the future** (L1 Objective Function): F5 / ektropy / Power Max, where possibility opens.
@@ -365,11 +402,11 @@ Sprint window: 2026-05-23 → 2026-09-30.
 | **L1 Caṇḍāla** | Firewall — detect unauthorized canon modifications, contradiction flags, source-owner drift | CANON/ contradiction registry |
 | **L2 Śūdra** | Explorer — research comparative philosophy, scientific literature, empirical datasets for flagship paper | Scholarly research |
 | **L3 Vaiśya** | Auditor — evidence-tier compliance, citation audit, Rosetta annotation quality, Uplink staleness check | Tier manifest, annotation audit |
-| **L4 Kṣatriya** | Executor — run `compile_uplink.py`, execute source-owner moves, stage K2 envelopes for doctrinal changes | Uplink compilation, file moves |
+| **L4 Kṣatriya** | Executor — run `compile_uplink.py`, execute source-owner moves, stage typed authorization; K2 only for private-DAV changes | Uplink compilation, file moves |
 | **L5 Brāhmaṇa** | Architect — Rosetta annotation strategy, canonical invariants doc, schema evolution, lane-map design | Annotation specs, invariants doc |
 | **L6 Sādhu** | Compressor — prune dead Uplink packets, tombstone superseded doctrine, archive stale summaries | K3 discipline, archive hygiene |
 | **L7 Ṛṣi** | Constitution — review every canonical change, five refusals integrity, framework-boundary judgment, flagship paper claims | Constitutional review |
-| **K2** | Sovereign — sign all constitutional changes, ratify Stiftung decision, Grace Exit oversight, book editorial sign-off | Human Principal |
+| **K2** | Private-DAV human principal only; not worldview sovereignty or a universal countersign | Private-DAV scope |
 
 ---
 

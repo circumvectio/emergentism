@@ -91,7 +91,9 @@ Six classical Pramāṇas in Advaita Vedānta = six spokes. Pratibhā (L7) = the
 
 ## WHY THIS IS R13
 
-This is convergent encoding #7 (after Egyptian, Sanskrit, Greek, Buddhist/Taoist, German, Mathematical). The hexagram is the visual demonstration that the seven-level partition is not arbitrary — it is the unique partition that generates both clean algebraic values AND the universal symbol of integrated duality.
+This is the seventh selected correspondence in this sheet. The hexagram is a
+memorable `[I]` visualization of the seven-row partition, not a demonstration
+that the partition is unique, universal, or mathematically generated.
 
 ---
 

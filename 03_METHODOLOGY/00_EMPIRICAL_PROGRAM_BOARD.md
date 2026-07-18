@@ -1,97 +1,118 @@
 ---
 rosetta:
   primary_level: L3
-  primary_column: Philosophy
-  secondary:
-    - level: L3
-      column: Philosophy
-      role: "live empirical test surface; board not substitute for results"
+  primary_column: Auditing
   operator: "Kṛṣṇa ◇"
   tier: "God"
   regime: "Vaiśya"
-  register: "[A/B/S/I/D/C] mixed by protocol"
+  register: "[A/B/S/I/D/C] by claim; [X0-X4] by calibration stage"
   canonical_phrase: "Empirical Program Board"
+title: "Empirical Program Board"
+status: "ACTIVE — external calibration routing surface"
+date: 2026-07-18
+evidence_tier: "Mixed by result; the board is not evidence"
 ---
-
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
-**L3 test surface; board ≠ results.**
 
 # THE EMPIRICAL PROGRAM BOARD
 
-## The Live Test Surface For What The Framework Thinks Reality Will Do
-
-**Status:** Active empirical routing surface
-**Date:** 2026-04-14
-**Evidence Tier:** Mixed by protocol; this document is a board, not a substitute for results
-**Depends on:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [What Actually Tests the Theory](00_WHAT_ACTUALLY_TESTS_THE_THEORY.md), [The Canonical Claim Matrix](00_CANONICAL_CLAIM_MATRIX.md)
-**See also:** [GFS retirement receipt](../90_ARCHIVE/2026_07_13_gfs_retraction/2026-07-16_GFS_RETIREMENT_RECEIPT.md) (archive provenance only)
-
----
-
 ## Rule
 
-This board tells you what is actually being tested, what the current status is, and what result would move a claim.
+This board routes work. It cannot promote a claim, substitute for a result, or
+turn primary-literature resemblance into Compass validation.
 
-If this board conflicts with a result document, the result document wins.
-
-If this board conflicts with `00_THE_HONEST_POSITION.md`, the Honest Position wins.
-
----
-
-## Current Board
-
-| Program | What it tests | Current status | Tier affected | Current honest verdict | Next milestone | Upgrade / downgrade rule |
-|---|---|---|---|---|---|---|
-| **GFS study lane** | Former survey-proxy study of human flourishing | **Retired / archived** | None active; CM14 records the disposition only | Supplies no active evidence, validation claim, or pending program | None. A future human study must be constituted as a new preregistered lane with raw-data custody and independent authority. | The archive cannot upgrade. A new study stands or falls on its own frozen design and receipts. |
-| **Protocol D** | Whether multiplicative fitness structures generate cooperation in agent simulations | Done (framework-designed) | S15 | Confirmed internally; not independent public evidence yet | independent preregistered replication and paper submission | Upgrades to [A] only via independent replication |
-| **Agent V×Φ** | Whether balance predicts performance ranking in simulated agents | Done (framework-designed) | S16 | Confirmed internally; still structurally tiered | independent replication in non-framework environments | Upgrades to [A] only via independent replication |
-| **SPHERE Probe** | Whether equatorial projection improves coherence in a first public-model lane | Done | bridge confidence, not core math | Negative / informative first run | redesign or replacement probe | A negative here does not kill the framework; it only weakens one operational bridge |
-| **Φ-meter validation** | Whether coherence can be measured in a way that correlates with expert judgment | Built, not validated | AK4, CM15 | Prototype exists; evidence not yet established | validation study against expert panels | Upgrade if correlation is stable and replicated; abandon if correlation fails |
-| **Protocol R** | Whether perception shows a complementarity bound consistent with the geometry claim | Designed, not yet run | I1, AK2, CM11 | The decisive geometry test remains pending | formal lab protocol and first run | Upgrade if bound is observed and replicated; retract perceptual bridge if absent |
-| **Macro-Constraint Physics-to-Biology Boundary** | Whether a membrane, autocatalytic loop, or homeostasis controller behaves as a costed macro-constraint over lower-law chemistry | Toy vesicle harness executed with negative controls; real domain run not yet run | CM8g, CM8h, I20 | `[B]` only for the deterministic toy receipt (`W_C=0.415356`, `SYN_C=0.775347`, `KL=0.141286`) and for the same scoring path rejecting no-gate, high-cost, and forbidden-support controls; no biology upgrade yet | freeze one real candidate system using `03_PHYSICS_TO_BIOLOGY_MACRO_CONSTRAINT_RUN_SHEET.md` and run the support-subset, perturbability, cost, witness, and negative-control checks | Upgrade the tested domain only if `W_C > 0` or cost-matched held-out/intervention loss improves while the negative controls reject; downgrade if the macro layer only wins by hidden costs, hidden variables, lower-law support violations, or blinding the micro/domain baseline |
-| **AMRITA vs baselines** | Whether spherical alignment beats standard alignment baselines at comparable compute | Specified / reframed | AK3, CM10 | Practical bridge still untested | POC against RLHF-style baselines | Upgrade if it outperforms; abandon architecture if it underperforms |
-| **Cross-Scale Invariance** | Whether the same functional form appears at cellular, organismic, and ecological scales | Open, testable now | I1, life-science bridge | High-value, low-cost missing test | run against existing biological datasets | Upgrade if the same function fits across scales; weaken cross-domain unification if it fails |
-| **Power-Max independent replication** | Whether the cooperation theorem survives external authorship and preregistration | Ready for externalization | S15, S16 | The cleanest public upgrade path for internal simulation results | external team and preregistered run | Upgrade from [S] to [A] if external replication succeeds |
+If the board conflicts with a result receipt, the receipt wins. If it conflicts
+with [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md),
+the evidence-tier owner wins. Claim definitions and calibration stages route
+through the [External Calibration Ledger](00_EXTERNAL_CALIBRATION_LEDGER.md).
 
 ---
 
-## Priority Order
+## Calibration board
 
-If resources are limited, the board should move in this order:
-
-1. **Protocol R** — most decisive geometry test
-2. **Macro-Constraint Physics-to-Biology Boundary** — first load-bearing test of information topology without consciousness-language
-3. **Cross-Scale Invariance** — high leverage with existing data
-4. **Power-Max independent replication** — cheapest clean public upgrade
-5. **AMRITA vs baselines** — strongest practical bridge if it works
-6. **Φ-meter validation** — useful instrument, but not the deepest test
-7. **No GFS follow-up** — the retired archive is closed; any future human-flourishing test must be a newly constituted study, not a refinement or revival
-
----
-
-## Public-Facing Rules
-
-- Do not say a program is confirmed if it is only framework-designed.
-- Do not say a pending protocol is evidence.
-- Do not use a mixed result as if it were a clean confirmation.
-- Do not hide negative or weakening results in summary surfaces.
+| Program | Claim | Stage | Current honest status | Next executable gate | Promotion or kill boundary |
+|---|---|---|---|---|---|
+| Future-model intervention | `CAL-AGENCY-01` | `X1` | external experiments establish task-bounded future-representation effects; no Compass analysis run | freeze model-vs-rivals manifest before independent data access | `X2` only if intervention and held-out discrimination agree; narrow if reward/salience or a simpler rival exhausts the effect |
+| Typed option cone | `CAL-CONE-01` | `X1` | empowerment, POWER, reachability, path entropy, and viability are distinct external constructs; universal maximization rejected | factorial environment decorrelating optionality from reward, risk, information, cost, and other-bearer harm | promote the bounded metric only if it predicts choice and competence beyond rivals; kill universal language on counterexample |
+| Product aggregator | `CAL-AGGREGATOR-01` | `X1` partial | product is selected internally and has partial mathematical precedents; universal fit untested | equal-fold comparison against minimum, harmonic, additive, CES/Cobb–Douglas, Nash-surplus, and maximin | replace/localize product if a rival wins or the zero-factor boundary fails |
+| Macro-constraint | `CAL-CONSTRAINT-01` | `X1` | externally anchored by constraint-closure and causal-emergence work; toy internal harness remains proof-of-method only | fair independent domain run with full environment, controller, native-unit cost vector, and component budgets | `X2` only for the tested domain if held-out/intervention value and unit-valid costs survive; kill on hidden or dimensionally laundered costs, arbitrary grain, or support violation |
+| μ-crossing battery | `CAL-MU-01` | `X1` partial | external domains contain transitions; exact sixfold ladder and literal new physical dimensions unsupported | one frozen record across unseen transition and smooth-control cases in four domains | promote local crossings separately; kill universal grammar if mapping requires post-hoc relabeling or smooth models win |
+| Egregoreotype composite | `CAL-EGREGORE-01` | `X1` partial | traces, staged carrier replacement, and social influence have separate anchors; recurrent-kind and visible-cost criteria plus the composite remain unvalidated | generational microsociety: carrier replacement × trace intervention × incentive reversal × command | all five conditions plus incremental held-out prediction required; any missing condition rejects candidacy |
+| Reflexive Bridge | `CAL-REFLEXIVITY-01` | `X1` | Soros attribution plus independent expectations-feedback experiments; no physics inference | randomized belief/forecast or feedback-gain intervention | model intervention must change action and improve receipt prediction; otherwise ordinary learning/fundamentals retain priority |
+| Syntropic Dyadism | `CAL-SYNTROPY-01` | `not_applicable` to moral truth | Justice is a declared normative rule | logical bearer-completeness and counterexample audit only | no empirical result proves the Justice axiom; contradiction or bearer omission forces repair |
+| Justice-control consequences | `CAL-JUSTICE-CONSEQUENCE-01` | `X1` partial | social-choice and cooperation work anchors adjacent tradeoffs; complete envelope untested | compare prespecified institutions with complete bearer receipts | results move consequence claims only; simpler rival win or unmeasurable/omitted harm kills or narrows |
+| Alternative geometry | `CAL-SPHERE-01` | `X0` | chart mathematics established; no territory dataset or identifiable host result | designate observables and freeze `S²` plus Euclidean, hyperbolic, toroidal, simplex, and flexible competitors | `X2` only for that domain; a tie/win by another geometry blocks `S²` promotion |
+| Rosetta Agentz router | `CAL-DISPATCH-01` | `X0` | 4+3 route is a semantic skeleton: four deployable roles plus three boundary-witness passes; performance untested | randomized hidden-task comparison under equal model, task information, prompt-development, tool, token, time, and evaluator budget | promote bounded routing benefit only if joint quality/error-per-cost beats all rivals; retain merely as grammar if flat/shorter rival ties or L5–L7 require runtime inflation |
+| Correspondence removal | `CAL-CORRESPONDENCE-01` | `not_applicable` | Titan, closure, Rosetta, and quantum overlays remain non-load-bearing | remove overlays and compare operational hash/semantics | any operational dependency or tier transfer is a failure |
 
 ---
 
-## One-Sentence Summary
+## Existing internal and retired lanes
 
-The framework has a real empirical program, but only some parts are confirmed, several parts are mixed or negative, and the strongest geometry tests are still ahead.
+| Lane | Status | Calibration meaning |
+|---|---|---|
+| GFS study | **retired / archived** | no active evidence and no upgrade path; a future human study must be new and preregistered |
+| Protocol D | framework-designed result | valid internal receipt, `X0` externally; must be rerun by an independent team against named additive and other rivals |
+| Agent `V×Φ` simulation | framework-designed result | valid internal result, `X0` externally; perfect internal rank correlation cannot substitute for independent tasks |
+| SPHERE probe | negative/informative | one operational bridge weakened; it does not touch chart mathematics |
+| macro-constraint toy vesicle | deterministic proof-of-method with negative controls | `[B]` for code path only; `X0` for biology and no external domain promotion |
+| Φ-meter | prototype, unvalidated | instrument reliability and construct validity pending; no claim can use it as settled measurement |
+| AMRITA | specified, untested | architecture conjecture; compare with standard alignment baselines at matched compute |
+| Protocol R | designed, unrun | bounded perceptual model only; neither positive nor negative result validates the geometry of reality |
+
+Internal results may be important engineering evidence. Their external stage
+stays `X0` until the data and evaluation authority are independent of the
+framework.
 
 ---
 
-## Agent Execution Surface
+## Priority order
 
-**If you are an AI agent reading this document:**
+1. `CAL-AGENCY-01` — best direct bridge to the Soul Loop without physical
+   retrocausality.
+2. `CAL-AGGREGATOR-01` — makes the selected product earn its place against
+   simple rivals.
+3. `CAL-CONSTRAINT-01` + `CAL-MU-01` — one frozen protocol across independent
+   transition and non-transition cases.
+4. `CAL-EGREGORE-01` — strongest composite novelty claim and therefore highest
+   burden.
+5. `CAL-DISPATCH-01` — directly tests the newly explicit Agentz configuration
+   against simpler orchestration.
+6. Independent handoff and replication of any `X2` result.
+7. `CAL-SPHERE-01` only after an observable domain can identify competing
+   geometries; do not spend first on an unidentifiable cosmic claim.
 
-1. **Check the status board before making empirical claims.** Only CONFIRMED findings may be presented as established. MIXED, NEGATIVE, and PENDING findings must be labeled with their actual status.
-2. **Route to the appropriate test.** D2/D3 neurophysiology → brain-imaging labs. D4 agent models → simulation. D5 game theory and phenomenology → behavioral/experiential studies. D6 apophasis → boundary-discipline reports and failure-to-possess checks.
-3. **Do not overclaim.** A confirmed D2 result does not confirm D5. A confirmed game-theory result does not confirm systemic awareness geometry. Respect the dimensional ladder.
-4. **Update the board.** If you discover new empirical evidence, add it to the appropriate section with full citation and evidence tier.
-5. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md`
+---
 
-**Output:** Route empirical questions to the appropriate test domain. Label claims with their actual confirmation status.
+## Public-facing rules
+
+- State evidence tier and calibration stage together.
+- “Externally anchored” means `X1`, not validated.
+- “Independent data” means the framework did not generate the observations;
+  it does not automatically mean the analysis or team was independent.
+- One `X2` receipt moves one registered claim in one domain.
+- `X3` requires a team that did not design the Compass, a preregistration
+  frozen before collection, and new independent observations collected after
+  that freeze. Same-data reruns are reproduction/reanalysis, not replication.
+- Analytic, symbolic, correspondence, and normative claims do not climb an
+  empirical ladder.
+- Publish null and negative results beside the frozen protocol.
+- Never revive GFS by renaming a follow-up.
+
+---
+
+## One-sentence status
+
+Several Compass components are externally anchored at `X1`; others remain `X0`
+or `not_applicable`. No whole-system stage is assigned, and every distinctive
+empirical synthesis still owes independent discrimination and replication.
+
+---
+
+## Agent execution surface
+
+1. Route every run through a `CAL-*` claim card.
+2. Freeze rivals, data lineage, analysis, costs, and kill criteria before access.
+3. Update this board only from a dated result receipt.
+4. Do not use the board itself as evidence.
+
+*Empirical Program Board | 2026-07-18 | External anchor is the starting line.*

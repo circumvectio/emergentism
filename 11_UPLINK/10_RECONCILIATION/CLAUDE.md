@@ -16,7 +16,7 @@ rosetta:
   - column: Compressed Witness
     level: L7
     role: preserve reconciliation memory without making it final authority
-  tier: God
+  tier: Routing
   canonical_phrase: "11_UPLINK/10_RECONCILIATION/CLAUDE.md — Agent First-Touch"
 ---
 

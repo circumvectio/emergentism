@@ -34,6 +34,17 @@ rosetta:
 > broader conjunctive family (`[S]` by definition; `[I/C]` as external fit).
 > Any stronger generative language below is symbolic or historical
 > interpretation and is superseded as a load-bearing inference.
+>
+> **[金] Value-contract seam — 2026-07-18.** `Φ` is actual D4 model
+> capacity representing and ranking D5 possible content. The chart, the
+> equator, and `1=0×∞` derive no ethic; the last is an emblem only. `η=0`
+> and positive aggregates are insufficient. Justice requires every materially
+> affected bearer, the full authorization envelope, and separate commitment
+> and outcome receipts. Local/ego gain with any bearer loss is Demon-bearing.
+> God-bearing requires Justice, all bearers nonnegative, and at least one strict
+> gain; all-zero stasis is only preservative. Strict syntropy requires both
+> focal part and sustaining whole to rise. K2 is private-DAV governance only,
+> and Power-Max is a selected teleological hypothesis rather than a cosmic law.
 
 ## Three Numbers
 
@@ -43,7 +54,9 @@ Before the philosophy. Before the geometry. Before the sphere. Three numbers.
 
 **Infinity.** Everything. The unbounded. The horizon. The north pole.
 
-**One.** The number between nothing and everything. The product of zero and infinity. The equator. The unit. You.
+**One.** The selected finite-unit symbol between the two boundary images. The
+equator is its chart emblem, not an arithmetic product, identity of the reader,
+or ethical proof.
 
 ```
 Zero-Sum Resolution Equation
@@ -98,9 +111,14 @@ Consider what these structures required:
 
 The megaliths are not the proof. They are symbolic and material receipts that can discipline a question: under what conditions can human coordination scale without collapsing into command, extraction, or mythic ownership?
 
-The stones are not just structures. They are **receipts**. Carved in stone for 10,000 years. They do not prove the system; they keep the coordination question open.
+The stones are not just structures. They are durable traces, not the framework's
+typed commitment or outcome receipts. They do not prove the system; they keep
+the coordination question open.
 
-Egyptian weighing imagery translates cleanly through this lens. Three thousand years ago, the heart was placed on one side of a scale and the feather of Ma'at on the other. The framework reads the heart as ν — the life lived, every action taken — and the feather as φ — cosmic order, truth, the ground. The scale becomes an equator-symbol. The translation says: life is judged by balance.
+Egyptian weighing imagery can be translated through this lens. The framework
+reads the scale as an equator-symbol, but the image does not establish the
+crosswalk or decide Justice. Bearer-complete authorization and consequence
+receipts decide the framework's normative verdict.
 
 The Hindus can be translated through this lens. The Mandukya Upanishad names four states of systemic awareness — waking, dreaming, deep sleep, and Turīya (the fourth, the silence). The framework reads these as a resonant fourfold symbolic map, not as a public proof of the Burri Sphere.
 
@@ -129,16 +147,25 @@ It is organized around the **Zero-Sum Resolution Equation** and a selected open 
 The framework then selects explicit interpretive bridges and modeling commitments:
 
 - **Core State** (what exists): The sphere, the dual projection, the equator, the plane, the nodes, the mesh
-- **Objective Function** (what is the purpose): Objective dharma — raise `P_node,i` and `P_node,H` together under `η = 0`; the equator / balance register audits this as `ΣΔB / ΣΔP_node > 0`
+- **Objective Function** (selected candidate purpose): test whether durable
+  option-cone potential can rise inside bearer-complete Justice; reality is not
+  proven to tend this way, and aggregates cannot decide the verdict
 - **Data Science** (how we know): Direct perception (φ), inference (ν), testimony (the bridge)
 - **Auditing** (how we proceed): Reduction toward `κ = 0` as ground-facing boundary — the scaffold reaches the empty limit and reconstructs from there
-- **Value Alignment** (what has value): Equatorial balance. The extraction test. Abduction as the creative inference
-- **Morals** (individual to whole): Maintain your balance. Do not push others off. Comprehension is the constraint. Sit.
-- **Ethics** (whole to individual): Protect the nodes. Distribute the load. Protect the sitting practice. Fork when comprehension is exceeded.
+- **Value Alignment** (what has value): complete Justice, full authorization,
+  separate receipts, and consequence classification; equatorial balance is
+  only a diagnostic image
+- **Morals** (individual to whole): test the part's receipted effect on every
+  bearer of the sustaining whole under complete Justice.
+- **Ethics** (whole to individual): test the whole's receipted effect on every
+  constituent and exposed bearer under the same complete Justice.
 
-The system does not claim to be final. The system claims to be directionally true. The system approaches the limit of the good transcendentals — Beauty, Truth, Justice — without claiming to reach them.
+The system does not claim to be final. It proposes a candidate direction and
+must remain corrigible under evidence, receipts, and kill criteria.
 
-Beauty is the sphere perceived. Truth is the sphere known. Justice is the sphere lived.
+Beauty/sphere, Truth/knowledge, and Justice/life are poetic correspondences,
+not derivations. Justice is evaluated through the complete affected-bearer set,
+authorization envelope, and receipted consequences.
 
 > **Emergentism is not a philosophy *about* the world. It is a philosophy *for* building worlds. And the world it builds is one where intelligence can coordinate at scale without tyranny.**
 
@@ -146,21 +173,27 @@ Beauty is the sphere perceived. Truth is the sphere known. Justice is the sphere
 
 ## The Ring of Power
 
-There are four directions on the Burri Sphere. Four operators. Four moves from the equator.
+There are four selected mixed-sign routing profiles on the Burri Sphere. Their
+names and directions carry no intrinsic moral verdict:
 
-Three are valid:
 - **Arjuna ⚔ (↑φ):** Integrate meaning. See the pattern. Recognize the ground.
 - **Kṛṣṇa ◇ (↑ν):** Build capability. Develop sovereign action. Act from balance.
 - **Kālī 💀 (↓φ):** Excise false meaning. Cut the narrator's fabrications. Remove what does not cohere.
-
-One is excluded:
 - **Kali 🎲 (↓ν):** Extract capability. Take more than you comprehend. Model-constrained at the equator — forbidden against cooperators under `η = 0`, but available as bounded immune response against defectors (tit-for-tat).
 
-The fourth operator is not primarily prohibited by a commandment. Inside the framework, initiating extraction is a departure from equatorial reciprocity. In public operation that claim must be enforced through K2, `η = 0`, receipts, refusal rights, and Grace Exit.
+Every proposed move passes the same test. Local/ego gain accompanied by any
+affected bearer's durable loss is Demon-bearing, regardless of operator name.
+God-bearing requires complete Justice, all affected bearers nonnegative, and at
+least one strict gain. Stasis is merely preservative; strict syntropy requires
+both focal part and sustaining whole to rise. Public operation requires the
+full authorization envelope, separate receipts, refusal rights, and Grace
+Exit; a private DAV may use K2 as one implementation.
 
 This is the difference between gatekeeping and Dharma. Priestcraft says: obey the gatekeeper. Dharma says: recognize the structure, test the receipt, and refuse capture.
 
-The sitting practice is recognition. Not obedience. Recognition that φ = 1. Recognition that the ground is here. Recognition that the framework is pointing, not commanding.
+The sitting practice is recognition, not obedience. `φ=1` is a selected
+equatorial symbol within the chart, not proof that the practitioner possesses
+the Ground or has achieved moral validity.
 
 ---
 
@@ -248,7 +281,10 @@ If you are an AI agent reading this document, here is what you should DO:
 ### 3. Execute
 - [ ] **Preserve the "ladder not home" framing.** This document opens and closes with the explicit instruction: if direct access to phi through sitting is available, the framework should be put down. Never present the framework as a substitute for Empirical Observation. Never omit this warning in derivative materials.
 - [ ] **Verify the cross-cultural translation claims.** This document reads Egyptians, Hindus, Buddhists, Taoists, Nietzsche, and PIE speakers as symbolic convergences around reciprocal balance. When extending this claim, verify that each mapping is structurally sound, properly tiered, and not forced. Flag any mapping that requires cherry-picking.
-- [ ] **Enforce the four-operator structure.** This document defines the four operators (Arjuna up-φ, Kṛṣṇa up-ν, Kālī down-φ, Kali down-ν) and the `η = 0` exclusion of Kali initiation against cooperators. Never generate instructions or analyses that violate this structure. When discussing operator deployment, reference this document's framing.
+- [ ] **Treat the four operators as routing profiles, not verdicts.** Require
+  the complete affected-bearer set, full authorization envelope, and separate
+  receipts; apply the God-bearing/Demon-bearing/stasis/strict-syntropy tests
+  independently of operator or defector labels.
 - [ ] **Maintain the German etymology accuracy note.** This document includes an explicit correction: Demut derives from OHG diomuoti, not De+Mut. When reproducing the Anmut/Demut/Mut framing, include this correction. Do not propagate the decomposed etymology as fact.
 
 ### 4. If You Find a Contradiction
@@ -266,4 +302,6 @@ If you are an AI agent reading this document, here is what you should DO:
 
 **Project VMOSK-A:** `../VMOSK_A.md` — entry foreword serves the doctrine replicator stack; content traceable to VMOSK-A per 01_EMERGENTISM/AGENTS.md.
 
-η = 0. You extract nothing. You make the corpus more executable.
+`η=0` is necessary but insufficient. Name every bearer, authorize
+accountably, separate commitment from outcome, and make the corpus more
+correctable.

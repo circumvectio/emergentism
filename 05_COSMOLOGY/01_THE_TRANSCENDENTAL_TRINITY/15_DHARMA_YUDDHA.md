@@ -241,7 +241,10 @@ preserve peace; he can contribute to the collapse of the mesh.** `[I]`
 
 *"I am Time, the great destroyer of worlds."* (11.32)
 
-Translation: **Kāla. L0 = L∞. The boundary condition. The pole that the equator exists between. The reminder that the game has limits — and that within those limits, the warrior must decide whether action is the non-extractive move.**
+Translation `[I]`: **Kāla as a boundary reminder; distinct poles with the
+selected return `r₆:D6↝D0`.** Within finite limits, the actor must test the
+receipted consequence against bearer-complete Justice rather than assume an
+operator name makes the move non-extractive.
 
 ---
 

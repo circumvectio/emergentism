@@ -1,4 +1,5 @@
 {
+  "bundle_kind": "post_result_reproducibility_bundle",
   "channels": {
     "constrained_membrane": [
       [
@@ -35,37 +36,53 @@
       ]
     ]
   },
-  "claim_boundary": "This is an executable proof-of-method for the macro-constraint protocol, not biological evidence and not a claim that life has been explained.",
+  "claim_boundary": "This is a post-result reproducibility run of a toy model, not a prospective preregistration, not biological evidence, and not a claim that life has been explained.",
   "closure": "support(K_X^C) subset support(K_X)",
   "config": {
     "capacity": 24,
-    "cost_control": 0.015,
-    "cost_entropy_export": 0.01,
-    "cost_erasure": 0.005,
-    "cost_labor": 0.01,
-    "cost_measure": 0.01,
-    "cost_memory": 0.01,
-    "cost_model": 0.01,
     "epsilon": 0.01,
     "gate_cross_state_weight": 0.035,
     "gate_recovery_weight": 0.35,
     "inward_rate": 0.18,
     "outward_rate": 0.18,
+    "penalty_bits_control": 0.015,
+    "penalty_bits_entropy_export": 0.01,
+    "penalty_bits_erasure": 0.005,
+    "penalty_bits_labor": 0.01,
+    "penalty_bits_measure": 0.01,
+    "penalty_bits_memory": 0.01,
+    "penalty_bits_model": 0.01,
+    "penalty_budget_bits": 0.1,
     "support_epsilon": 1e-15,
     "viable_max": 14,
     "viable_min": 10
   },
   "cost_ledger": {
-    "Cost_control": 0.015,
-    "Cost_entropy_export": 0.01,
-    "Cost_erasure": 0.005,
-    "Cost_labor": 0.01,
-    "Cost_measure": 0.01,
-    "Cost_memory": 0.01,
-    "Cost_model": 0.01
+    "budget_bits": 0.1,
+    "conversion_status": "post-result toy bit penalties declared for reproducibility; they were not preregistered conversion weights, and no inference from raw physical energy, labor, or memory units is claimed",
+    "declaration_status": "declared_post_result_toy_parameters",
+    "penalty_bits_by_component": {
+      "control": 0.015,
+      "entropy_export": 0.01,
+      "erasure": 0.005,
+      "labor": 0.01,
+      "measurement": 0.01,
+      "memory": 0.01,
+      "model": 0.01
+    },
+    "total_penalty_bits": 0.07,
+    "unit": "bit_equivalent_penalty"
   },
   "epsilon": 0.01,
   "evidence_tier": "[B] toy-model receipt only; [C] for biology",
+  "macro_constraint_gate": {
+    "delta_effective_information_positive": false,
+    "passes": false,
+    "penalty_within_budget": true,
+    "perturbation_above_epsilon": true,
+    "support_subset": true,
+    "w_c_positive": false
+  },
   "macro_states": [
     "low",
     "viable",
@@ -79,36 +96,109 @@
       "violation_detected": true
     },
     "high_cost": {
-      "description": "C changes the macro channel, but the declared cost ledger overwhelms surplus.",
-      "ei_macro_minus_baseline": "0.485356",
-      "passes_macro_constraint": false,
-      "w_c": "-0.574644"
+      "delta_ei_c": "0.190095",
+      "description": "Post-result algorithm fixture with matched dynamics and positive DeltaEI_C: low declared toy cost must pass, while changing only the model penalty to a high value must fail.",
+      "fixture_status": "post_result_algorithm_branch_test_only",
+      "high_cost": {
+        "passes_macro_constraint": false,
+        "penalty_bits_c": "0.530000",
+        "penalty_within_budget": false,
+        "w_c": "-0.339905"
+      },
+      "high_cost_config": {
+        "capacity": 8,
+        "epsilon": 0.01,
+        "gate_cross_state_weight": 0.001,
+        "gate_recovery_weight": 0.001,
+        "inward_rate": 0.5,
+        "outward_rate": 0.5,
+        "penalty_bits_control": 0.005,
+        "penalty_bits_entropy_export": 0.005,
+        "penalty_bits_erasure": 0.005,
+        "penalty_bits_labor": 0.005,
+        "penalty_bits_measure": 0.005,
+        "penalty_bits_memory": 0.005,
+        "penalty_bits_model": 0.5,
+        "penalty_budget_bits": 0.1,
+        "support_epsilon": 1e-15,
+        "viable_max": 4,
+        "viable_min": 4
+      },
+      "information_metrics_match": true,
+      "isolates_cost_gate": true,
+      "low_cost": {
+        "passes_macro_constraint": true,
+        "penalty_bits_c": "0.035000",
+        "penalty_within_budget": true,
+        "w_c": "0.155095"
+      },
+      "low_cost_config": {
+        "capacity": 8,
+        "epsilon": 0.01,
+        "gate_cross_state_weight": 0.001,
+        "gate_recovery_weight": 0.001,
+        "inward_rate": 0.5,
+        "outward_rate": 0.5,
+        "penalty_bits_control": 0.005,
+        "penalty_bits_entropy_export": 0.005,
+        "penalty_bits_erasure": 0.005,
+        "penalty_bits_labor": 0.005,
+        "penalty_bits_measure": 0.005,
+        "penalty_bits_memory": 0.005,
+        "penalty_bits_model": 0.005,
+        "penalty_budget_bits": 0.1,
+        "support_epsilon": 1e-15,
+        "viable_max": 4,
+        "viable_min": 4
+      },
+      "passes_macro_constraint": false
     },
     "no_gate": {
       "description": "C is identical to K_X; perturbability and surplus must fail.",
       "passes_macro_constraint": false,
       "perturbation_kl": "0.000000",
-      "w_c": "-0.070000"
+      "w_c": "-0.662017"
     }
   },
-  "passes_macro_constraint": true,
+  "passes_macro_constraint": false,
   "perturbation_kl": 0.14128637478789777,
-  "public_interpretation": "If this were a frozen domain run, the only safe wording would be: in this toy model and at this grain, the declared organization behaved as a costed macro-constraint.",
+  "preregistration_status": "not_prospectively_preregistered",
+  "public_interpretation": "In this post-result toy run, the membrane improves several macro-level viability diagnostics but fails the declared causal-information and syntropy witnesses against the fair micro baseline. The macro-constraint claim contracts at this grain.",
+  "result": {
+    "classification": "negative",
+    "derived_from": {
+      "macro_constraint_gate": false,
+      "syntropy_gate": false
+    },
+    "macro_claim_status": "fails_and_contracts",
+    "reason": "Macro-constraint gate failures: delta_effective_information_positive, w_c_positive. Syntropy gate failures: delta_effective_information_positive."
+  },
   "support_subset": true,
   "syntropy": {
-    "delta_effective_information": 0.4853563895127665,
+    "delta_effective_information": -0.3565539693175155,
     "delta_macro_state_preservation": 0.1411917598555742,
     "delta_viable_reachability": 0.005827410482074358,
     "delta_viable_stability": 0.2187988278972276,
-    "syn_c": 0.7753469772655683
+    "gate": {
+      "delta_effective_information_positive": false,
+      "delta_macro_state_preservation_positive": true,
+      "delta_viable_reachability_positive": true,
+      "delta_viable_stability_positive": true,
+      "passes": false,
+      "penalty_within_budget": true
+    }
   },
+  "timing_disclosure": "Generated after the toy result was inspected. This bundle binds model, configuration, report, and tests for reproduction; it is not evidence of prospective preregistration. Only an independently timestamped freeze made before result access could establish that status.",
   "witness": {
-    "cost_c": 0.07,
-    "ei_baseline": 0.7496804124115818,
+    "ei_baseline": 1.5915907712418638,
     "ei_coarse_null": 0.7496804124115818,
-    "ei_domain": 0.7496804124115818,
+    "ei_domain": 1.341697164269043,
     "ei_macro": 1.2350368019243483,
-    "ei_micro_fair": 0.7496804124115818,
-    "w_c": 0.4153563895127665
+    "ei_micro_constrained": 1.5915907712418638,
+    "ei_micro_fair": 1.5915907712418638,
+    "ei_micro_fair_basis": "uniform do(X_t) over K_X^C, matching the C-conditioned transition kernel used for EI_macro",
+    "ei_micro_lower": 1.341697164269043,
+    "penalty_bits_c": 0.07,
+    "w_c": -0.4265539693175155
   }
 }

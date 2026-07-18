@@ -19,7 +19,10 @@ rosetta:
 
 **Definition:** Institutional Narrative is the exoteric symbolic return. It translates core state, objective function, system architecture, and theurgical discipline into images, stories, rites, institutions, and categories that communities can carry.
 
-**Authority boundary:** Theology receives and translates the source folders; it does not govern source truth. Symbol teaches, but evidence tiers, ontology, methodology, and K2 boundaries still govern claims and action.
+**Authority boundary:** Theology receives and translates the source folders; it
+does not govern source truth. Symbol teaches, while evidence tiers, ontology,
+methodology, complete Justice, and accountable authorization govern claims and
+action. K2 is only a private-DAV implementation.
 
 **Must answer:** How is the mission-critical carried publicly? What symbols help polyphenotypic humans coordinate without capture? How does Intuitive Synthesis return as conditions for Empirical Observation?
 
@@ -43,10 +46,33 @@ This is the clean part of the formation insight: children and groups learn throu
 
 ## Stewardship / Coercion Boundary
 
-- **Stewardship** = holding symbols, rites, categories, and institutions so they raise the people inside them and the sustaining boundary together under `η = 0`; `ΣΔB / ΣΔP_node > 0` is the widest-boundary audit. Allowed.
+> **[金] Controlling symbol/value seam — 2026-07-18.** `Φ` is actual D4
+> model capacity representing/ranking D5 possible content, not D5 itself. The
+> chart, equator, `B`, operator names, and `1=0×∞` emblem derive no ethic.
+> `η=0` and positive aggregates are insufficient. Justice requires the
+> complete materially affected-bearer set, full authorization envelope, and
+> separate commitment/outcome receipts. Power-Max is a selected teleological
+> hypothesis; reality is not proven to tend toward objective dharma.
+
+- **Stewardship** = holding symbols, rites, categories, and institutions under
+  complete Justice so no materially affected bearer is hidden. Aggregates may
+  diagnose but cannot authorize or launder loss.
 - **Coercion** = capture, obedience, access-gating, caste-worth hierarchy, or gatekeeping. Forbidden.
-- Institutional Narrative is permitted only under K2 / `η = 0` / K4 / A7 / Decentralized Authority Model discipline.
-- Institutional Narrative uses `P∞ = φ · ν = 1` for the invariant sphere-product, `B = sin θ` for balance, and `P_node = Φ × V` for empirical/organizational flourishing. Do not use bare `P` where the regime matters.
+- Institutional Narrative requires a full `AuthorizationEnvelope` (principal,
+  mandate, scope, consent, custody, expiry/revocation, contest path, actor,
+  consequence bearer, payer, beneficiary), Grace Exit, evidence-tiered
+  correction, and separate commitment/outcome receipts. Private DAVs may use
+  K2; public or worldview semantics do not.
+- `φν=1` is only an analytic open-chart identity, `B=sin θ` a chart
+  coordinate, `1=0×∞` an emblem, and `P_node:=ΦV` a selected normalized
+  model. None supplies a moral verdict.
+
+Retrospectively, local/ego gain with any receipted bearer loss is
+`DemonBearing(q,r)`. `GodBearing(q,r)` requires retrospective Justice
+`J^R(q,r;A)`, every affected bearer nonnegative, and at least one strict gain.
+All-zero stasis is preservative only. Strict syntropy requires both focal part
+and sustaining whole to rise, with all other affected bearers nonnegative.
+Before action, only model-indexed `Predicted..._Mt(a)` classifications exist.
 
 ---
 
@@ -96,7 +122,9 @@ This is the clean part of the formation insight: children and groups learn throu
 - Institutional Narrative is [C] where projecting civilisational outcomes or noosphere-scale effects.
 - Institutional Narrative never upgrades evidence tier. Symbolic force does not turn `[I]` into `[A]` fact or `[B]` receipt.
 - Mythic, scriptural, linguistic, and ritual parallels are convergent symbolic translations unless a public receipt/testing lane is explicitly supplied.
-- AI may witness, draft, compare, and route theological material. K2 signatures, access gates, and priestly authority remain outside AI authority.
+- AI may witness, draft, compare, and route theological material. It cannot
+  self-authorize consequential change; private-DAV K2 signatures and all other
+  principal authority remain outside AI authority.
 
 ---
 

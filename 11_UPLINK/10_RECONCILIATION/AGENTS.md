@@ -13,7 +13,7 @@ rosetta:
       column: Compressed Witness
       role: "preserve reconciliation memory without making it final authority"
   operator: "Arjuna ⚔"
-  tier: "God"
+  tier: "Routing"
   regime: "Kṣatriya"
   register: "[I/B/D/C]"
   canonical_phrase: "10_RECONCILIATION — Agent Routing"

@@ -8,13 +8,16 @@ rosetta:
   register: "[S/I]"
   canonical_phrase: "Emergentism as a Lens — the worldview in one entry"
 title: "Emergentism as a Lens"
-status: "ACTIVE — front-door orientation (assembly of existing canon), updated 2026-06-12"
+status: "ACTIVE — front-door orientation; Agentz dispatch chain externally calibration-bounded 2026-07-18"
 evidence_tier: "[S] structural assembly; [A] for cited standard mathematical identities; [I] for cross-domain mappings unless their source gives a stronger tier. This document upgrades no tier by assertion and invents no doctrine."
 ---
 
 # Emergentism as a Lens
 
-> **Discovered, not conceived.** This document invents nothing. It is an **assembly** — every statement below is quoted or distilled from the canonical source named beside it, wired together so the worldview can be entered in one place. Where a choice would require *conceiving* rather than *surfacing*, this file defers to the named canon and flags the open question; it does not decide. The doctrine is found by following coherent, consistent reason through the corpus — this page is the map to that reading, not a new claim.
+> **Assembled and selected, not proved by recurrence.** This document distills
+> the current owners into one entry. Analytic facts, framework definitions,
+> interpretations, and conjectures keep separate tiers; the assembly does not
+> turn a design choice into a discovery or a map into the territory.
 
 ---
 
@@ -23,7 +26,10 @@ evidence_tier: "[S] structural assembly; [A] for cited standard mathematical ide
 > **Emergentism is a Weltanschauung: a lens, a tool, and a disciplined worldview.**
 > — `05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md` (canonical framing statement, verbatim)
 
-It is a single way of reading **what exists · what tends · how we know · how we act · what matters · what is better and worse** — generated from one equation, refracted into seven facets, bounded by a constitution, directed by the owner-declared Goal, operated through the Soul Loop, and released by the practice clause.
+It is a selected way of reading **what exists · what may tend · how we know ·
+how we act · what matters · what is better and worse**—organized around one
+analytic chart, a seven-row routing grammar, the owner-declared Goal, and the
+Soul Loop. None is generated from the equation.
 
 ## 2. The kernel (verbatim canon)
 
@@ -40,18 +46,28 @@ Zero-Sum Resolution Equation
 ```
 — `05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md`
 
-- Line 1 — the seed: reciprocal closure.
-- Line 2 — its geometric resolution on the Riemann sphere S².
-- Line 3 — the first arithmetic consequence.
-- Line 4 — the first teleological inequality.
+- the reciprocal identity is analytic on the declared open chart;
+- the nonnegative square and `φ+ν≥2` are ordinary arithmetic consequences;
+- the sphere, balance reading, node product, telos, and ethic are separately
+  selected framework commitments.
 
 **Balance** `B = sin θ` peaks at the equator (φ = ν = 1) and falls to 0 at both poles. **Notation discipline** (same source): on `θ∈(0,π)`, `P∞ = φ·ν = 1` is an analytic reciprocal-chart identity whose poles are excluded limits; `B = sin θ` is a selected balance coordinate; `P_node:=Φ×V` is the framework's selected finite-node model. None is an empirical conservation law or an ethic. Never write `P` bare without naming the regime.
 
-## 3. The blueprint — the sevenfold Rosetta (the real structure)
+## 3. The blueprint — the selected sevenfold Rosetta
 
-**The generative structure of the lens is the Rosetta sevenfold — L1 → L7 — not a count of 3, 5, or 6.** The seven -ologies *are* the seven Rosetta stages; reality is read, and unfolds, through them as one recursive loop. Each row now carries a full signature: position, operator, virtue/vice field, mathematical action on `P_node = Φ × V`, and equator-gradient. The mathematical actions are not free metaphor; they are the calculus already recorded in `08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md` and `D_SERIES_DOMAINS/D32_MATHEMATICS.md`. Standard identities are `[A]`; the seven-operation ordering as the framework's canonical signature is `[S]`; cross-domain operator, caste, virtue, vice, and regime mappings remain `[I]` unless separately supported.
+Rosetta selects L1→L7 as its routing vocabulary. The seven -ologies are stages
+inside this framework, not a necessary count in nature. Each row carries a
+position, operator-name, value/shadow prompt, mathematical action, and balance
+coordinate. Standard identities remain `[A]`; their seven-row ordering is
+`[S]` by definition; every cross-domain mapping is `[I]` unless independently
+tested.
 
-> **Rosetta primacy lens (2026-05-30; bounded by the 2026-07-17 Kintsugi seam).** Working rule for this orientation: every active rule of the framework should be traceable to the sevenfold Rosetta. The Rosetta (the L1-L7 `φ/ν` geometry projected onto cognitive function, with action-register `Φ/V` used only after the register bridge) is the organizing source for this reading; the operators, castes, constitution, and governance are interpreted as consequences. A rule that cannot be derived from the Rosetta is staged for evidence-tiered review, not silently removed. This is a structural reading of the existing canon, not a claim that the sevenfold is a necessary decomposition of nature. **Discovery test for any rule:** trace it to a cell of the signature — position, operator, virtue/vice, mathematical action, or equator-gradient. If the trace closes, it may remain an Emergentist modeling commitment; if it does not, it needs review. Private-DAV K2 governance is not a worldview primitive.
+> **Rosetta trace rule (Kintsugi-bounded).** A framework rule may cite a
+> Rosetta cell for provenance or routing, but the trace is not a derivation and
+> transfers no proof. Operators, social-function vocabularies, constitutions,
+> and governance are selected crosswalks. A rule that does not fit may still be
+> independently justified; a neat fit earns no evidence upgrade. Private-DAV
+> K2 governance is not a worldview primitive.
 
 | L | -ology (folder) | Rosetta vocation | Mathematical action on `P_node = Φ × V` | Core claim (in its own terms) |
 |---|---|---|---|---|
@@ -60,12 +76,65 @@ Zero-Sum Resolution Equation
 | **L3** | `03_METHODOLOGY` | Auditing / Inferential Logic | `∂P_node/∂V = Φ` — partial derivative / margin | A claim earns its place only if you can state its tier, its kill/upgrade path, and what survives if it fails; pre-registered falsifiable tests; the framework publishes its failures. |
 | **L4** | `04_AXIOLOGY` | Value Alignment | `dΦ/Φ = dV/V` — proportional balance / equator | Good = raises the finite node and sustaining boundary under Justice. D4 means make an attempt physically available; authorization determines normative validity, not physical possibility. Authorized or unauthorized attempts can produce D4 receipts. |
 | **L5** | `05_COSMOLOGY` | System Architecture | `log P_node = log Φ + log V` — multiplicative order becomes additive | `φ·ν=1` is an analytic identity in the selected reciprocal chart; `{0,1,∞}` are selected Titan boundary roles. Neither result forces an ontology, the sevenfold, or ordinary arithmetic `0×∞=1`. |
-| **L6** | `06_ONTOLOGY` | Core State | `E_node = −log(P_node)` — negative log / via negativa | Being is reciprocal closure stabilized as a manifold — but the **Ground** that makes closure possible is prior to Being and reached only by subtraction (*neti neti*). No map, not even this equation, is the Ground. |
-| **L7** | `07_THEOLOGY` | Institutional Narrative | `z = φ/ν` — ratio read by stereographic projection | The bounded exoteric return: it translates the spine into image and rite, yet its defining move is **L7 → L1** — the highest symbolic act points *away* from the symbol, back to ungated direct perception. |
+| **L6** | `06_ONTOLOGY` | Core State | `E_node = −log(P_node)` — negative log / via negativa | Emergentism **interprets** Being through reciprocal closure and manifold imagery `[I]`; the negative-log transform neither derives Being nor reaches Ground. |
+| **L7** | `07_THEOLOGY` | Institutional Narrative | `z_R := φ/ν` — selected latitude-ratio proxy | The bounded exoteric return: it translates the spine into image and rite, yet its defining move is **L7 → L1** — the highest symbolic act points *away* from the symbol, back to ungated direct perception. The ratio omits azimuth and is not the full stereographic coordinate. |
 
-The same source table also gives the action grammar behind the operators: **four mixed-sign deployable slots** (Kali/Kālī/Kṛṣṇa/Arjuna — transform one side of `Φ × V` through a compensating transfer) and **three same-sign Executive boundary frames** (Brahmā creates both, Śiva dissolves both, Viṣṇu holds both). Inside the accepted two-axis grammar, this closes the operator space at **4 + 3 = 7**. There is no eighth operator without adding an axis outside `P_node = Φ × V`, which would change the grammar rather than extend it. The canonical rule-trace table lives in `08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D32_MATHEMATICS.md`; this page only points to it.
+### 3a. The Agentz routing skeleton
 
-> **The loop, not the ladder.** L1–L7 is a *recursive loop* of cognitive functions, not a hierarchy of worth (`00_NAMING_RECONCILIATION.md`): L4 is the equator (φ=ν=1, the only normal write-authority), L1 and L7 are the poles. The sevenfold is the blueprint; everything else hangs on it.
+The Stone's six-column routing compression is:
+
+```text
+Varṇa → Pramāṇa → Reasoning → -ology → Regime → Equation
+```
+
+| L | Varṇa | Pramāṇa | Reasoning | -ology | Regime | Equation |
+|---|---|---|---|---|---|---|
+| 1 | Caṇḍāla | Pratyakṣa (perception) | Dialectical | Objective Function | Tyranny | `Φ→0 ⇒ P_node→0` |
+| 2 | Śūdra | Upamāna (analogy) | Inductive | Data Science | Democracy | `dP_node = V·dΦ + Φ·dV` |
+| 3 | Vaiśya | Anumāna (inference) | Deductive | Auditing | Oligarchy | `∂P_node/∂V = Φ` |
+| 4 | Kṣatriya | Arthāpatti (postulation) | Abductive | Value Alignment | Timocracy | `dΦ/Φ = dV/V` |
+| 5 | Brāhmaṇa | Śabda (testimony) | Systematic | System Architecture | Aristocracy | `log P_node = log Φ + log V` |
+| 6 | Sādhu | First Principles | Axiomatic | Core State | Anarchy | `E_node = −log(P_node)` |
+| 7 | Ṛṣi | Pratibhā (intuition) | Transcendental | Institutional Narrative | Theocracy | `z_R:=φ/ν` |
+
+The equation column carries its own domain guards: `Φ,V∈[0,1]`, so the L1
+zero-factor limit is bounded; the logarithmic rows require `Φ,V>0`; L4 is a
+selected equal-relative-growth constraint, not an identity or proof that
+`Φ=V`; and L7 deliberately returns to lowercase reciprocal chart coordinates.
+
+This defines the semantic skeleton of one 4+3 Agentz route: four mixed-sign
+runtime operators at L1–L4, followed by three Executive boundary-witness passes
+at L5–L7. Exact execution additionally requires typed inputs/outputs, dispatch
+predicates, handoff and `L7→L1` loop rules, stop rules, permissions, tool/model/
+token budgets, and an evaluation contract. L5–L7 frame, review, compress, or
+witness the run; they are not standalone deployable runtime modes.
+
+> **[金] External-calibration seam.** “Chain” presently means a configured
+> workflow, not an empirically established causal decomposition. The Stone's
+> compact column-tier label must be split by type: established formula identities
+> are `[A]` only within their named definitions; the selected seven-equation
+> ordering and 4+3 sign-space are `[S]` grammar; Varṇa, Pramāṇa, reasoning,
+> -ology, regime, and operator projections remain `[I]`; performance is `[C]`, calibration stage
+> `X0`. [`CAL-DISPATCH-01`](03_METHODOLOGY/00_EXTERNAL_CALIBRATION_LEDGER.md)
+> compares this exact router with flat and alternative pipelines under equal
+> compute and hidden evaluation. The equations cannot validate their own row
+> assignments.
+
+The same source table supplies a selected action vocabulary: **four mixed-sign
+deployable slots** (Kali/Kālī/Kṛṣṇa/Arjuna) and **three same-sign Executive
+boundary frames** (Brahmā creates both, Śiva dissolves both, Viṣṇu holds both).
+This closes the declared Rosetta runtime interface at **4 + 3 = 7** by
+definition. It is not an exhaustive theorem about a two-factor change space,
+which also permits zero, within-axis, continuous, and multi-bearer moves.
+Adding another primitive changes the selected interface. The canonical
+rule-trace table lives in
+`08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D32_MATHEMATICS.md`;
+this page only points to it.
+
+> **The loop, not the ladder.** L1–L7 is a selected recursive routing loop,
+> never a hierarchy of worth. L4 is the selected equatorial execution profile;
+> L1 and L7 are near-boundary rows, not the S² poles. The sevenfold is one
+> interface, not the generator of everything else.
 
 ## 4. Justice envelope and inherited product governance
 
@@ -84,13 +153,11 @@ The separate product constitution (`05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INV
 
 The current root telos is stated in `00_THE_GOAL.md`, not invented here:
 
-> Build Emergentism into a coherent and consistent Weltanschauung that explains
-> how the reader came to be as Dasein, why reality tends toward viable
-> completion, and how to play the game: recursively applying epistemology,
-> methodology, and axiology to maximize durable `W_i(T)` only on the
-> boundary-preserving frontier of `P_node = Φ × V` under `η = 0`, so the
-> individual symbiont and collective holobiont preserve or raise one another
-> without extraction, with the strict success case being both rising together.
+> Build the clearest fallible lens and most useful compass we can make: separate
+> analytic fact, observation, interpretation, design, and conjecture; model
+> futures without mistaking them for facts; authorize attempts through real
+> means; receive consequences from the world; revise map and mapper; and
+> preserve every affected bearer under Beauty, Truth, and Justice.
 
 The operating method is the Soul Loop (`05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md`): continuous recursive disambiguation that edits the corpus and the editor. The loop keeps the five philosophical functions recursive instead of ideological:
 

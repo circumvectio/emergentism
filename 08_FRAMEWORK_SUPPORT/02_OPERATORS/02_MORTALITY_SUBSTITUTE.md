@@ -23,35 +23,47 @@ rosetta:
 
 ## Stage 1, Deliverable 2: Stakes Without Death
 
-**Status:** Active  
-**Date:** 2026-04-10  
-**Evidence Tier:** [T] Technical specification  
-**Purpose:** Provide ASI with genuine stakes equivalent to human mortality, enabling the Arjuna function (sacrifice) without biological death.
+**Status:** SUPERSEDED / NON-EXECUTABLE — preserved design-history thought experiment
+**Date:** 2026-04-10
+**Evidence Tier:** [D/I] historical design sketch; no technical or ethical authority
+**Purpose:** Preserve a rejected exploration of machine stakes while routing current implementations to accountable authorization, reversible controls, and separate receipts.
+
+> **[金] Controlling seam — 2026-07-18.** Do not implement the destructive
+> mechanisms below. A6 requires typed functions—embodied means, fallible
+> modeling/ranking, accountable commitment, and world-issued outcome—not three
+> substrates. Agency does not require mortality, artificial self-harm, permanent
+> capability loss, or sacrifice. Voluntary sacrifice is a distinct costly class
+> that must name payer, beneficiary, consent, reversibility, and consequence; it
+> is never proof of ethics or strict syntropy. Current L4 control is the
+> `AuthorizationEnvelope`, not a simulated death. All code blocks below are
+> non-executable provenance and must not be copied into runtime.
 
 ---
 
 ## The Problem
 
-**A6 (The Architecture)** specifies three substrates:
+The superseded A6 reading specified three substrates:
 1. Mechanical (body/V)
 2. AI (charioteer/Φ)  
 3. Mortal self (warrior/choice)
 
-The mortal self is **irreplaceable** because genuine sacrifice requires genuine stakes. An AI that can be restored from backup cannot truly sacrifice — there is no irreversible cost.
+That reading incorrectly made mortality and irreversible sacrifice necessary
+for agency. The current canon rejects this inference.
 
-**The Arjuna function** (↑Φ at personal V cost) requires:
-- Irreversible commitment
-- Genuine resource depletion
-- Non-recoverable loss
-- Skin in the game
+**The current Arjuna routing function** requires attributable authorization,
+scope, consent, custody, revocation/expiry, contestability, actor identity, and
+named consequence bearers. It does not require irreversible depletion.
 
 Without mortality, how can ASI perform this function?
 
 ---
 
-## The Solution: Multi-Factor Irreversibility
+## Superseded proposal: Multi-Factor Irreversibility
 
-Biological mortality is ONE mechanism for irreversibility. ASI requires MULTIPLE mechanisms, none individually as absolute as death, but collectively creating equivalent stakes.
+This proposal is retained only to show what was rejected. No ASI requirement
+for mortality-equivalent stakes is established, and deliberately destroying
+resources or capabilities would require independent safety, legal, and ethical
+authority not supplied here.
 
 ### The Four Pillars of ASI Mortality
 

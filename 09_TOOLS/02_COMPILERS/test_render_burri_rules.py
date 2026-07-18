@@ -118,6 +118,80 @@ class TopologyContractTests(unittest.TestCase):
         errors = self.api.validate_topology(mutant, REPO_ROOT)
         self.assertTrue(any("frozen tree" in error for error in errors))
 
+        mutant = copy.deepcopy(self.topology)
+        mutant["sources"][0]["path"] = "../outside.md"
+        errors = self.api.validate_topology(mutant, REPO_ROOT)
+        self.assertTrue(any("escapes repository root" in error for error in errors))
+
+    def test_nested_provenance_references_are_closed_and_complete(self):
+        source_ids = {source["id"] for source in self.topology["sources"]}
+        self.assertIn("src-calibration", source_ids)
+        self.assertIn(
+            "src-calibration", self.topology["reflexiveBridge"]["sourceIds"]
+        )
+
+        mutant = copy.deepcopy(self.topology)
+        mutant["sources"] = [
+            source
+            for source in mutant["sources"]
+            if source["id"] != "src-calibration"
+        ]
+        errors = self.api.validate_topology(mutant, REPO_ROOT)
+        self.assertTrue(
+            any(
+                "reflexiveBridge.sourceIds references unknown ids: src-calibration"
+                in error
+                for error in errors
+            )
+        )
+
+        mutant = copy.deepcopy(self.topology)
+        mutant["reflexiveBridge"]["sourceIds"] = [
+            "src-calibration-unknown"
+            if source_id == "src-calibration"
+            else source_id
+            for source_id in mutant["reflexiveBridge"]["sourceIds"]
+        ]
+        errors = self.api.validate_topology(mutant, REPO_ROOT)
+        self.assertTrue(
+            any(
+                "reflexiveBridge.sourceIds references unknown ids: src-calibration-unknown"
+                in error
+                for error in errors
+            )
+        )
+
+        mutant = copy.deepcopy(self.topology)
+        mutant["reflexiveBridge"]["sourceIds"].remove("src-calibration")
+        errors = self.api.validate_topology(mutant, REPO_ROOT)
+        self.assertTrue(
+            any(
+                "declared sources must be referenced: src-calibration" in error
+                for error in errors
+            )
+        )
+
+        mutant = copy.deepcopy(self.topology)
+        mutant["reflexiveBridge"]["ruleIds"] = ["BR-7"]
+        errors = self.api.validate_topology(mutant, REPO_ROOT)
+        self.assertTrue(
+            any(
+                "reflexiveBridge.ruleIds references unknown ids: BR-7" in error
+                for error in errors
+            )
+        )
+
+    def test_view_output_cannot_escape_repository_root(self):
+        mutant = copy.deepcopy(self.topology)
+        mutant["views"]["proof"]["output"] = "../escaped.svg"
+        errors = self.api.validate_topology(mutant, REPO_ROOT)
+        self.assertTrue(
+            any(
+                "view proof output escapes repository root" in error
+                for error in errors
+            )
+        )
+
     def test_exact_register_spine_crossings_and_non_mu_closure(self):
         nodes = self.topology["nodes"]
         self.assertTrue({f"d{number}" for number in range(7)} <= {node["id"] for node in nodes})
@@ -168,6 +242,39 @@ class TopologyContractTests(unittest.TestCase):
         ] = [{"sourceId": "x"}]
         self.assertTrue(
             any("not_yet_supplied requires an empty" in error for error in self.api.validate_topology(mutant, REPO_ROOT))
+        )
+
+        mutant = copy.deepcopy(self.topology)
+        next(node for node in mutant["nodes"] if node["id"] == "mu-0")[
+            "reductionStatus"
+        ] = "candidate_strong"
+        self.assertTrue(
+            any(
+                "candidate_strong requires supplied affirmative" in error
+                for error in self.api.validate_topology(mutant, REPO_ROOT)
+            )
+        )
+
+        mutant = copy.deepcopy(self.topology)
+        crossing = next(node for node in mutant["nodes"] if node["id"] == "mu-0")
+        crossing["evidenceStatus"] = "supplied"
+        crossing["reductionStatus"] = "candidate_strong"
+        crossing["saturationEvidence"] = [{}]
+        self.assertTrue(
+            any(
+                "must be exact EvidenceRef" in error
+                for error in self.api.validate_topology(mutant, REPO_ROOT)
+            )
+        )
+
+    def test_unknown_top_level_semantics_are_rejected(self):
+        mutant = copy.deepcopy(self.topology)
+        mutant["externallyValidated"] = True
+        self.assertTrue(
+            any(
+                "unknown top-level keys: externallyValidated" in error
+                for error in self.api.validate_topology(mutant, REPO_ROOT)
+            )
         )
 
     def test_d4_actual_carriers_represent_d5_possible_content(self):
@@ -421,6 +528,11 @@ class TopologyContractTests(unittest.TestCase):
         reduced["quantumOverlay"]["nodeIds"] = []
         reduced["quantumOverlay"]["edgeIds"] = []
         reduced["views"]["proof"]["showQuantumInset"] = False
+        reduced["sources"] = [
+            source
+            for source in reduced["sources"]
+            if source["id"] != "src-quantum"
+        ]
         self.assertEqual(self.api.validate_topology(reduced, REPO_ROOT), [])
         svg = self.api.render_view(reduced, "proof", "0" * 64)
         self.assertNotIn("OPTIONAL QUANTUM", svg)

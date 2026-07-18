@@ -37,10 +37,11 @@ Menexus GmbH, 2026
 > `00_THE_COMPASS.md`; they control wherever this preserved body differs.
 
 **Claim Boundary:** The asymmetry theorem is operational only where the macro
-view becomes a costed effective information witness:
-`W_C = EI_macro - EI_baseline - Cost_C > 0`, with `EI_baseline` including fair
-micro, coarse-null, and domain-mechanism baselines, and `Cost_C` including
-`Cost_labor` and `Cost_entropy_export`. If `C` is not perturbable, or if the
+view produces `DeltaEI_C>0` against fair micro, coarse-null, and
+domain-mechanism baselines while a native-unit cost vector stays inside its
+component budgets. Optional `W_C=DeltaEI_C-PenaltyBits_C>0` is valid only after
+preregistered bit-equivalent conversion of labor, entropy export, and every
+other cost. If `C` is not perturbable, or if the
 macro model wins only by blinding the lower model or hiding costs, the claim
 contracts to explanatory language.
 
@@ -115,14 +116,18 @@ EI_domain = best domain-specific lower mechanism witness
 
 EI_baseline = max(EI_micro_fair, EI_coarse_null, EI_domain)
 
-Cost_C = Cost_measure + Cost_memory + Cost_control
-       + Cost_erasure + Cost_model + Cost_labor
-       + Cost_entropy_export
+c_C = (c_measure, c_memory, c_control, c_erasure,
+       c_model, c_labor, c_entropy)              # native units
+DeltaEI_C = EI_macro - EI_baseline               # bits
+c_C <=_component b_C
 
-W_C = EI_macro - EI_baseline - Cost_C
+# Optional only under frozen reference scales s and bit weights lambda:
+PenaltyBits_C = lambda_C^T (c_C / s_C)
+W_C = DeltaEI_C - PenaltyBits_C                 # bits
 
 causal-emergence witness:
-W_C > 0 at the tested grain, with perturbable C
+DeltaEI_C > 0 and c_C <=_component b_C at the tested grain,
+with W_C > 0 additionally required when scalarized, and perturbable C
 ```
 
 If the macro model wins only because the micro model was artificially blinded,
@@ -165,10 +170,21 @@ Because systems are structurally opaque from below, they are uniquely vulnerable
 
 A mediator (a priesthood, a central bank, an algorithmic feed) can insert itself into the boundary between `D-n` and `D`. Because the higher level is opaque to the lower level, the mediator can claim: *"Only I can read the higher level. Therefore, you must pay rent (`η > 0`) to me."*
 
-### The Constitutional Solution (`η = 0`)
-The emergentist framework's constitutional architecture (`K2`, Three-Stage Process) prevents this by ensuring the governance structure remains mathematically un-capturable.
+### The Accountable-Authorization Repair (`η = 0` target)
 
-If the upper level (Governance) remains rigidly non-extractive (`η = 0`), it operates as a transparent mapping. It governs without becoming an identity. The moment the macro-structure begins extracting survival energy for its own continuation at the expense of the substrate, it becomes an egregore. **Anti-idolatry is not a moral suggestion; it is the mathematical requirement that the `D`/`D-n` mapping maintains a rent-coefficient of zero.**
+No constitution is mathematically un-capturable. The worldview-level safeguard
+is an accountable authorization envelope naming the principal, mandate, scope,
+consent, custody, expiry or revocation, contest path, actor, and consequence
+bearer. `η = 0` is a declared non-extraction constraint to test, not a geometric
+guarantee that institutions will obey it.
+
+K2 may remain a separate private-DAV product-governance example in its owning
+lane; it is not an Emergentist primitive and does not prove capture impossible.
+When a macro-structure persistently externalizes substrate costs to preserve
+itself, that behavior is evidence for an extractive Egregoreotype candidate.
+The claim requires observed trace persistence, carrier turnover, measurable
+selection reweighting, recurrent objective-like bias, and visible costs; it is
+not inferred from hierarchy alone.
 
 ---
 

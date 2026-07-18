@@ -40,7 +40,10 @@ Cancer is not merely a disease of cell division, but the egregore language is a 
 
 ### 1.1 Autonomous Objective Function
 
-A5 defines egregores as D5-limit standing waves with autonomous objective function — they persist beyond individual carriers and optimise for their own persistence and expansion.
+A5 defines an Egregoreotype **candidate** through persistent trace, carrier
+turnover, intervention-sensitive selection reweighting, recurrent
+objective-like bias, and visible costs. It does not presume autonomous agency;
+the cancer comparison is an `[I/C]` crosswalk to test, not an identity.
 
 A malignant tumor:
 - **Persists beyond individual cells:** Cancer cells die and are replaced. The tumor persists as a pattern — a population with shared genetic alterations, coordinated behaviour, and emergent properties not present in any single cell.

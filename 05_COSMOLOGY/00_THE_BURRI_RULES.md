@@ -7,12 +7,13 @@ rosetta:
   register: "[I] semantic grammar; per-claim [A/B/S/I/D/C] tiers"
   canonical_phrase: "THE BURRI RULES — A GRAPHICAL GRAMMAR OF EMERGENCE, AGENCY, AND RECEIPT"
 title: "The Burri Rules"
-status: "ACTIVE [I] — internally accepted by Receipt 127; externally uncalibrated"
-evidence_tier: "[I] as an externally uncalibrated translation grammar; [C] for empirical emergence and universal-fit claims."
+status: "ACTIVE [I] — internally accepted by Receipt 127; component stages X0/X1/not-applicable; no whole calibration stage; prospective discrimination pending"
+evidence_tier: "[A] bounded external findings and formal results; [B] source-verification and renderer/validator receipts; [I] translation grammar; [C] Compass-specific empirical and universal-fit claims."
 topology: "00_BURRI_RULES_TOPOLOGY.json"
 plate: "00_BURRI_RULES_PLATE.svg"
 emblem: "00_BURRI_RULES_EMBLEM.svg"
 ledger: "../03_METHODOLOGY/01_THE_DERIVATION/01_BURRI_RULES_DERIVATION_LEDGER.md"
+calibration: "../03_METHODOLOGY/00_EXTERNAL_CALIBRATION_LEDGER.md"
 ---
 
 # THE BURRI RULES
@@ -31,6 +32,14 @@ ledger: "../03_METHODOLOGY/01_THE_DERIVATION/01_BURRI_RULES_DERIVATION_LEDGER.md
 The Burri Rules are not merely an infographic. They are a small grammar from
 which diagrams, audits, experiments, and public compressions can be generated
 without silently changing meaning.
+
+Some component mechanisms are now externally anchored at `X1`, while other
+claims remain `X0` or `not_applicable`; the
+[external calibration ledger](../03_METHODOLOGY/00_EXTERNAL_CALIBRATION_LEDGER.md)
+names the primary sources, source distance, rivals, prospective discriminators,
+and kill criteria. No whole-Compass calibration stage is assigned, and this is
+not whole-Compass validation. No Compass-specific
+claim has yet earned `X2` on independent data.
 
 ```text
 Titan frame {0, 1, ∞}

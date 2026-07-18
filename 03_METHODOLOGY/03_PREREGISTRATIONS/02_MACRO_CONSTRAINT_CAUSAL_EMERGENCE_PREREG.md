@@ -34,11 +34,13 @@ domain tests earn their own tier.
 [The Goal](../../00_THE_GOAL.md).
 
 **Claim Boundary:** This preregistration tests macro-constraint causation only
-after declaring effective information, `EI_baseline`, full `Cost_C` including
-labor and `Cost_entropy_export`, perturbability of `C`, negative controls, and
-the kill condition. `W_C > 0` is the witness; failure to beat fair baselines or
-failure to reject false-positive controls rewrites the claim instead of
-rephrasing the result as proof.
+after declaring effective information, `EI_baseline`, a native-unit cost vector
+`c_C`, its component budgets, any scalar conversion scales/weights,
+perturbability of `C`, negative controls, and the kill condition. The primary
+witness is `DeltaEI_C>0` plus `c_C<=b_C`; a scalar `W_C>0` is admissible only
+after every cost has a preregistered conversion into bit-equivalent penalty.
+Failure to beat fair baselines or reject false-positive controls rewrites the
+claim instead of rephrasing the result as proof.
 
 **Guard:** This protocol does not license strong-emergence magic. A
 macro-constraint may change which lower-law-admissible trajectories are
@@ -58,7 +60,10 @@ K_X        lower-level transition kernel
 pi: X -> Y macro map
 Y_t        pi(X_t)
 G_C        hard constraint gate or soft transition weight
-Cost_C     physical information/control cost ledger
+c_C        native-unit physical/resource cost vector
+b_C        componentwise cost budget
+s_C        optional preregistered reference scales
+lambda_C   optional bit-equivalent penalty weights
 ```
 
 a macro-constraint `C` is causally real at grain `Y` iff both closure and a
@@ -76,11 +81,15 @@ EI_domain = best domain-specific lower mechanism witness
 
 EI_baseline = max(EI_micro_fair, EI_coarse_null, EI_domain)
 
-Cost_C = Cost_measure + Cost_memory + Cost_control
-       + Cost_erasure + Cost_model + Cost_labor
-       + Cost_entropy_export
+DeltaEI_C = EI_macro - EI_baseline               # bits
+c_C = (c_measure, c_memory, c_control,            # native units retained
+       c_erasure, c_model, c_labor, c_entropy)
+c_C <=_component b_C
 
-W_C = EI_macro - EI_baseline - Cost_C
+# Optional scalar witness, only when frozen before data:
+c_tilde_j = c_j / s_j
+PenaltyBits_C = lambda_C^T c_tilde_C
+W_C = DeltaEI_C - PenaltyBits_C                  # bits
 ```
 
 Before scoring, the run must declare whether `C` is a **hard** constraint
@@ -90,14 +99,16 @@ stability while leaving support unchanged). Both forms are valid only if
 `K_X^C` remains absolutely continuous with `K_X`; no macro layer may assign
 probability where the lower law assigns none.
 
-The macro claim passes only if:
+The macro claim passes only if the vector gate holds:
 
 ```text
-W_C > 0
+DeltaEI_C > 0 and c_C <=_component b_C
 ```
 
-or if a cost-matched macro model improves held-out trajectory prediction or
-intervention selection against the best available micro baseline.
+If and only if the optional conversion contract is frozen, `W_C>0` may provide
+an additional scalar ranking. A cost-matched macro model may also pass through
+lower held-out trajectory loss or better intervention selection against the
+best available micro baseline, with costs still reported componentwise.
 
 It must also be perturbable:
 
@@ -122,10 +133,10 @@ Every domain run must freeze these objects before results are inspected:
 | Macro map | `pi: X -> Y`, macro variables, fiber `C_y = {x in X : pi(x)=y}`, and why this grain is not post-hoc. |
 | Constraint gate | `G_C(x' | x,y)`, hard-vs-soft status, and the proof or numerical check that `K_X^C << K_X` / `support(K_X^C) subset support(K_X)`. |
 | Intervention | How `C` is held, removed, perturbed, or randomized without smuggling in a forbidden transition. |
-| Cost ledger | Units for measurement, memory, control, erasure, modeling, labor, and entropy export. |
+| Cost ledger | Native units for measurement, memory, control, erasure, modeling, labor, and entropy export; component budgets `b_C`; and, only if scalarized, reference scales `s_C` plus bit-equivalent weights `lambda_C`. |
 | Baselines | Micro model, fair coarse-graining baseline, null constraint, and domain-specific mechanism baseline. |
 | Negative controls | A no-gate null, a high-cost or hidden-cost case, and a lower-law support-violation case scored by the same code path. |
-| Witness | `W_C`, held-out loss, intervention utility, or all three. |
+| Witness | `DeltaEI_C>0` plus the vector budget gate; optionally unit-valid `W_C`; held-out loss; intervention utility; or all declared measures. |
 | Kill condition | The exact observation that demotes the macro claim back to shorthand. |
 
 No result may be counted if these objects were adjusted after seeing the
@@ -199,7 +210,9 @@ Required test:
 ```text
 Remove C: lower-law chemistry continues, but viability-preserving trajectory topology degrades.
 Hold C: lower-law chemistry continues, and viable trajectories become more reachable/stable.
-Witness: W_C > 0 or lower held-out intervention loss after full costs.
+Witness: DeltaEI_C > 0 with c_C <=_component b_C, or lower held-out
+intervention loss with the same vector-cost gate. Optional W_C requires frozen
+bit-equivalent conversions.
 ```
 
 If this boundary cannot be made to work, the larger quantum-to-agency continuity
@@ -232,11 +245,11 @@ the obvious false positives:
 ```text
 no_gate:
   G_C leaves K_X unchanged
-  required result: perturbation <= epsilon or W_C <= 0
+  required result: perturbation <= epsilon or DeltaEI_C <= 0
 
 high_cost:
-  C changes the channel, but declared physical costs exceed the gain
-  required result: W_C <= 0
+  C changes the channel, but at least one declared cost exceeds its budget
+  required result: not(c_C <=_component b_C), or W_C <= 0 when validly scalarized
 
 forbidden_support:
   K_X^C assigns probability to a transition outside support(K_X)
@@ -250,29 +263,36 @@ domain-local until the frozen domain run carries equivalent controls.
 
 ---
 
-## 8. Syntropy Ledger
+## 8. Syntropy Gate
 
 For each candidate constraint:
 
 ```text
-SYN_C = DeltaOrder_C
-      + DeltaCoherence_C
-      + DeltaEffectiveInformation_C
-      - Cost_C
+SYN_C_gate :=
+  DeltaOrder_C > 0
+  and DeltaCoherence_C > 0
+  and DeltaEffectiveInformation_C > 0
+  and c_C <=_component b_C
 ```
+
+Do not add order, coherence, information bits, energy, labor, money, and entropy
+as bare scalars. A composite score is permitted only after each term receives a
+preregistered normalization and conversion; the vector gate remains visible.
 
 For agency-facing runs, the ledger must additionally report:
 
 ```text
-P_node,i = Phi_i * V_i
-P_node,H = Phi_H * V_H
+W_x(T) = integral_0^T P_x(t) dt
 
 strict syntropic dyad:
-Delta P_node,i >= 0
-Delta P_node,H >= 0
-eta = 0
-at least one inequality is strict
+Delta_T W_i > 0
+Delta_T W_H > 0
+J(a; i, H), including eta = 0 and the declared consent, custody,
+reversibility, exit, payer, beneficiary, and consequence-bearer tests
 ```
+
+`Delta_T W_i >= 0` and `Delta_T W_H >= 0` with only one strict inequality
+is Pareto non-worsening, not strict Syntropic Dyadism.
 
 If local order increases by exporting unreported disorder, extraction, memory
 cost, labor cost, control cost, or entropy elsewhere, the syntropy claim fails.
@@ -285,7 +305,8 @@ The macro-constraint claim fails or contracts if any of these occur:
 
 1. `K_X^C` is not absolutely continuous with `K_X`, or `support(K_X^C)`
    includes transitions outside `support(K_X)`.
-2. `W_C <= 0` under fair grain, fair intervention, and full cost accounting.
+2. `DeltaEI_C <= 0`, the vector cost budget fails, or a validly scalarized
+   `W_C <= 0` under fair grain and fair intervention.
 3. The macro model wins only because the micro model was blinded, starved, or
    denied the same observation budget.
 4. The macro variables duplicate lower variables under a new name.
@@ -316,10 +337,12 @@ violate lower-level laws; the specific macro-constraint witness can be rewritten
 - [ ] Hard-vs-soft constraint status and absolute-continuity/support-subset
       check specified.
 - [ ] Intervention design fixed.
-- [ ] Cost units fixed.
+- [ ] Cost-vector units and component budgets fixed; any reference scales and
+      bit-equivalent weights fixed before data.
 - [ ] Micro, coarse-grain, null, and domain-specific baselines fixed.
 - [ ] Negative controls fixed: no-gate, high-cost/hidden-cost, support violation.
-- [ ] Witness metric fixed: `W_C`, held-out loss, intervention utility, or all.
+- [ ] Witness metric fixed: vector gate, optional unit-valid `W_C`, held-out
+      loss, intervention utility, or all.
 - [ ] Kill criteria fixed.
 - [ ] Repository tag `prereg/macro-constraint-causal-emergence-v1` recorded.
 - [ ] Content hash recorded: `[TBD at freeze]`.
@@ -339,7 +362,8 @@ No domain result is canonical until this block is frozen.
 3. Never say "syntropy reverses total entropy." Say:
    "local order or effective-information gain must pay its cost ledger."
 4. Before accepting a macro-cause, require `X`, `K_X`, `pi`, `G_C`,
-   hard-vs-soft status, `Cost_C`, an intervention, and a kill condition.
+   hard-vs-soft status, native-unit `c_C`, component budgets, any conversion
+   weights, an intervention, and a kill condition.
 5. Route any physics-to-biology unification claim through this protocol first.
 6. Canonical Path:
    `01_EMERGENTISM/03_METHODOLOGY/03_PREREGISTRATIONS/02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md`

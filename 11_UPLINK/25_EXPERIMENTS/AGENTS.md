@@ -13,7 +13,7 @@ rosetta:
       column: Empirical Boundary
       role: "prevent synthesis from upgrading into evidence without dated data or analysis"
   operator: "Kṛṣṇa ◇"
-  tier: "God"
+  tier: "Routing"
   regime: "Vaiśya"
   register: "[D/B/I/C]"
   canonical_phrase: "25_EXPERIMENTS — Agent Routing"

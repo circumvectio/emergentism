@@ -8,7 +8,7 @@ rosetta:
   register: "[I]"
   canonical_phrase: "Burri Rules derivation ledger — proof burden, source distance, and claim movement"
 title: "Burri Rules Derivation Ledger"
-status: "ACTIVE [I] — internally accepted by Receipt 127; externally uncalibrated"
+status: "ACTIVE [I] — internally accepted by Receipt 127; component stages X0/X1/not-applicable; no whole calibration stage"
 evidence_tier: "[B] sources and receipts; [S] internal type discipline; [I] translations; [C] empirical conjectures."
 ---
 
@@ -66,6 +66,7 @@ Tiers do not automatically transfer through Rosetta projection.
 | `src-ax5` | [AX5 Research Program](../02_THE_PAPERS/PEER_REVIEW_PROGRAM/AXIOM_PAPERS/AX5_THE_EGREGORE.md) | rival models and experiments |
 | `src-quantum` | [Quantum Boundary](../../05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md) | removable correspondence |
 | `src-soros` | [Soros transcript](https://www.opensocietyfoundations.org/uploads/9ae17912-2262-4646-8ffc-d01afc934c36/george-soros-general-theory-of-reflexivity-transcript.pdf) | primary reflexivity source |
+| `src-calibration` | [External Calibration Ledger](../00_EXTERNAL_CALIBRATION_LEDGER.md) | claim-level external anchors, rivals, stages, and prospective discriminators |
 | `src-audit126` | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` | historical formal break receipt |
 
 ---
@@ -79,7 +80,7 @@ Tiers do not automatically transfer through Rosetta projection.
 | `BR-3 Constraint` | `support(K_X^C)⊆support(K_X)` | formal relation `[S]` once kernels are declared; applications `[C]` | macro rule requires a forbidden path or intervention has no effect | remove the macro-cause or model when inclusion/intervention fails | Wholes steer lawful possibilities; they do not suspend physical law. |
 | `BR-4 Commitment` | `χ[G_t]` yields an attempted action or `⊥` plus commitment receipt; physical availability and authorization status are distinct; environment returns outcome separately | typed interface `[S]`; agency reading `[I]` | action without means; authorization treated as physical impossibility; actor issues its own outcome | reject commitment claim if intention, physical availability, performance, authority, and outcome cannot be separated | A possible content becomes action-relevant through an actual model/selection event and means; authorization determines accountable permission, not causal existence. |
 | `BR-5 Reflexive Return` | both model and selector may update from commitment/outcome difference; `M⋆A` gives present action weights | method `[S]`; Soros `[B]`; crosswalk `[I]`; universal claim `[C]` | discrepant receipts never update or record justified null; future-model intervention has no effect | reject learning/future-influence claim for the failed scope | The map acts through a present agent; the receipt answers and can change the mapper. |
-| `BR-6 Composition` | a candidate Egregoreotype needs persistent trace, turnover, intervention effect, recurrent bias, and visible cost | definition `[I]`; candidates `[C]`; stigmergy sources `[B]` | trace vanishes with carriers or adds no predictive value beyond current incentives | reject the candidate when any mandatory test fails | Infer collective pattern from persistent causal traces, not from a dramatic name. |
+| `BR-6 Composition` | a candidate Egregoreotype needs persistent trace, turnover, intervention effect, recurrent bias, and visible cost | bounded third-party component findings `[A]`; source-verification receipt `[B]`; definition `[I]`; five-condition composite/candidates `[C]` | trace vanishes with carriers or adds no predictive value beyond current incentives | reject the candidate when any mandatory test fails | Infer collective pattern from persistent causal traces, not from a dramatic name. |
 
 ---
 
@@ -197,8 +198,11 @@ The ledger may support promotion from `[D]` when:
 9. a dated `[金]` receipt records remaining `[C]` boundaries.
 
 Promotion records internal acceptance only. The Compass remains `[I]` and
-externally uncalibrated until independent use and comparative prediction supply
-new evidence.
+does not become externally validated through internal acceptance. Primary-source
+construct anchoring is now registered at `X1` in the
+[External Calibration Ledger](../00_EXTERNAL_CALIBRATION_LEDGER.md). Promotion
+to `X2+` requires claim-specific comparative prediction on independent data;
+the whole Compass cannot inherit that promotion from one result.
 
 ---
 

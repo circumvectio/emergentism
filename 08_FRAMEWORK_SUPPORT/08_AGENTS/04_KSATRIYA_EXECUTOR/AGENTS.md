@@ -13,7 +13,7 @@ rosetta:
       column: Sādhu Boundary
       role: "escalate overgrowth or superseded traces for compression"
   operator: "Arjuna ⚔"
-  tier: "God"
+  tier: "Routing"
   regime: "Kṣatriya"
   register: "[B/S/I]"
   canonical_phrase: "04_KSATRIYA_EXECUTOR — Agent Routing"

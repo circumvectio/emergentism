@@ -1,24 +1,66 @@
 {
-  "claim_boundary": "This is an executable proof-of-method for the macro-constraint protocol, not biological evidence and not a claim that life has been explained.",
+  "bindings": {
+    "config": {
+      "sha256": "5ca6aeab629e07867e90e030ef68d8262c9869d3f562d605782f23a91a8f6a87",
+      "value": {
+        "capacity": 24,
+        "epsilon": 0.01,
+        "gate_cross_state_weight": 0.035,
+        "gate_recovery_weight": 0.35,
+        "inward_rate": 0.18,
+        "outward_rate": 0.18,
+        "penalty_bits_control": 0.015,
+        "penalty_bits_entropy_export": 0.01,
+        "penalty_bits_erasure": 0.005,
+        "penalty_bits_labor": 0.01,
+        "penalty_bits_measure": 0.01,
+        "penalty_bits_memory": 0.01,
+        "penalty_bits_model": 0.01,
+        "penalty_budget_bits": 0.1,
+        "support_epsilon": 1e-15,
+        "viable_max": 14,
+        "viable_min": 10
+      }
+    },
+    "model": {
+      "entrypoint": "macro_constraint_report",
+      "file": "vesicle_macro_constraint.py",
+      "sha256": "15f27f635dfa61e8ae60da6652d32a4c2b184a604793e3c34a95588113795909"
+    },
+    "report": {
+      "file": "vesicle_macro_constraint_report.json",
+      "sha256": "0e5950d7b60904f94b47c92ff5921cdeee7bd00e090e2fe8350a67cd6b707184"
+    }
+  },
+  "bundle_kind": "post_result_reproducibility_bundle",
+  "claim_boundary": "This is a post-result reproducibility run of a toy model, not a prospective preregistration, not biological evidence, and not a claim that life has been explained.",
   "commands": [
     "python3 -m unittest test_vesicle_macro_constraint.py",
-    "python3 vesicle_macro_constraint.py"
+    "python3 vesicle_macro_constraint.py",
+    "python3 vesicle_macro_constraint.py --check"
   ],
   "evidence_tier": "[B] toy-model receipt only; [C] for biology",
   "file_hashes": {
-    "README.md": "3444b444cecdb427c9db1ef2b31b2ceea90b32b8a64fd6ed0b5b1d5eb55a3868",
-    "test_vesicle_macro_constraint.py": "bed004620c2823e626175c5ce29941979ba84392360c9c2f9aa3f10fbc7b7188",
-    "vesicle_macro_constraint.py": "888136f2ec5a48d1182f86d679db86aecd892aa6a7f0baed64efae401b3ec551"
+    "README.md": "b546a4f5fa6d6c83bcc27c910ecd6fd0a7b5b8103e56a18e8a5e22109bb000c9",
+    "test_vesicle_macro_constraint.py": "b8ccf4176081e3f11604ccbcc93429be56010067d0c80320650de674ce9a5c1e",
+    "vesicle_macro_constraint.py": "15f27f635dfa61e8ae60da6652d32a4c2b184a604793e3c34a95588113795909"
   },
   "frozen_objects": {
-    "Cost_C": {
-      "Cost_control": 0.015,
-      "Cost_entropy_export": 0.01,
-      "Cost_erasure": 0.005,
-      "Cost_labor": 0.01,
-      "Cost_measure": 0.01,
-      "Cost_memory": 0.01,
-      "Cost_model": 0.01
+    "CostPenaltyBits_C": {
+      "budget_bits": 0.1,
+      "conversion_status": "post-result toy bit penalties declared for reproducibility; they were not preregistered conversion weights, and no inference from raw physical energy, labor, or memory units is claimed",
+      "declaration_status": "declared_post_result_toy_parameters",
+      "penalty_bits_by_component": {
+        "control": 0.015,
+        "entropy_export": 0.01,
+        "erasure": 0.005,
+        "labor": 0.01,
+        "measurement": 0.01,
+        "memory": 0.01,
+        "model": 0.01
+      },
+      "total_penalty_bits": 0.07,
+      "unit": "bit_equivalent_penalty"
     },
     "G_C": "membrane gate preserving macro concentration topology",
     "K_X": "binomial diffusion transition kernel",
@@ -31,7 +73,7 @@
     "epsilon": 0.01,
     "pi": "macro map from count to low / viable / high"
   },
-  "manifest_version": "macro-constraint-freeze-v1",
+  "manifest_version": "macro-constraint-reproducibility-v3",
   "negative_controls": {
     "all_controls_reject": true,
     "forbidden_support": {
@@ -39,24 +81,86 @@
       "violation_detected": true
     },
     "high_cost": {
-      "description": "C changes the macro channel, but the declared cost ledger overwhelms surplus.",
-      "ei_macro_minus_baseline": "0.485356",
-      "passes_macro_constraint": false,
-      "w_c": "-0.574644"
+      "delta_ei_c": "0.190095",
+      "description": "Post-result algorithm fixture with matched dynamics and positive DeltaEI_C: low declared toy cost must pass, while changing only the model penalty to a high value must fail.",
+      "fixture_status": "post_result_algorithm_branch_test_only",
+      "high_cost": {
+        "passes_macro_constraint": false,
+        "penalty_bits_c": "0.530000",
+        "penalty_within_budget": false,
+        "w_c": "-0.339905"
+      },
+      "high_cost_config": {
+        "capacity": 8,
+        "epsilon": 0.01,
+        "gate_cross_state_weight": 0.001,
+        "gate_recovery_weight": 0.001,
+        "inward_rate": 0.5,
+        "outward_rate": 0.5,
+        "penalty_bits_control": 0.005,
+        "penalty_bits_entropy_export": 0.005,
+        "penalty_bits_erasure": 0.005,
+        "penalty_bits_labor": 0.005,
+        "penalty_bits_measure": 0.005,
+        "penalty_bits_memory": 0.005,
+        "penalty_bits_model": 0.5,
+        "penalty_budget_bits": 0.1,
+        "support_epsilon": 1e-15,
+        "viable_max": 4,
+        "viable_min": 4
+      },
+      "information_metrics_match": true,
+      "isolates_cost_gate": true,
+      "low_cost": {
+        "passes_macro_constraint": true,
+        "penalty_bits_c": "0.035000",
+        "penalty_within_budget": true,
+        "w_c": "0.155095"
+      },
+      "low_cost_config": {
+        "capacity": 8,
+        "epsilon": 0.01,
+        "gate_cross_state_weight": 0.001,
+        "gate_recovery_weight": 0.001,
+        "inward_rate": 0.5,
+        "outward_rate": 0.5,
+        "penalty_bits_control": 0.005,
+        "penalty_bits_entropy_export": 0.005,
+        "penalty_bits_erasure": 0.005,
+        "penalty_bits_labor": 0.005,
+        "penalty_bits_measure": 0.005,
+        "penalty_bits_memory": 0.005,
+        "penalty_bits_model": 0.005,
+        "penalty_budget_bits": 0.1,
+        "support_epsilon": 1e-15,
+        "viable_max": 4,
+        "viable_min": 4
+      },
+      "passes_macro_constraint": false
     },
     "no_gate": {
       "description": "C is identical to K_X; perturbability and surplus must fail.",
       "passes_macro_constraint": false,
       "perturbation_kl": "0.000000",
-      "w_c": "-0.070000"
+      "w_c": "-0.662017"
     }
   },
+  "prospective_preregistration": false,
   "report_file": "vesicle_macro_constraint_report.json",
-  "report_sha256": "5e4f878e0786c1e90cf15a062846362f934cd10788bb56d877d34bf289dc9bb8",
+  "report_sha256": "0e5950d7b60904f94b47c92ff5921cdeee7bd00e090e2fe8350a67cd6b707184",
   "report_witness": {
+    "classification": "negative",
+    "delta_ei_c": "-0.356554",
+    "ei_macro": "1.235037",
+    "ei_micro_constrained": "1.591591",
+    "ei_micro_fair": "1.591591",
+    "ei_micro_lower": "1.341697",
+    "macro_claim_status": "fails_and_contracts",
+    "passes_macro_constraint": false,
     "perturbation_kl": "0.141286",
     "support_subset": true,
-    "syn_c": "0.775347",
-    "w_c": "0.415356"
-  }
+    "syntropy_gate": false,
+    "w_c": "-0.426554"
+  },
+  "timing_disclosure": "Generated after the toy result was inspected. This bundle binds model, configuration, report, and tests for reproduction; it is not evidence of prospective preregistration. Only an independently timestamped freeze made before result access could establish that status."
 }

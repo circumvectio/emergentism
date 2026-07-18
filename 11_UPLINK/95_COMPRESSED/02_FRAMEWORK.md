@@ -18,7 +18,7 @@ rosetta:
   register: "[I/S/C]"
   canonical_phrase: "Compressed Uplink Framework"
 title: "Compressed Uplink Framework"
-evidence_tier: "[I] compressed framework read; [S] structural grammar; [C] where lineage/evolutionary cells remain conjectural."
+evidence_tier: "[A] analytic facts; [B] source/receipt claims; [S] declared internal grammar; [I] crosswalk; [C] conjectures."
 type: compressed-uplink
 status: ACTIVE — 2026-04-20 snapshot
 date: 2026-04-20
@@ -32,6 +32,12 @@ sources:
 ---
 
 # The Framework
+
+> **[金] Compression seam — 2026-07-18.** This snapshot is a routing
+> compression, not source authority. Current owners bound the Foundation as a
+> selected design grammar, not a constitutional world-generator. It remains
+> externally unvalidated as a whole; every empirical claim climbs the X0–X4
+> ladder independently.
 
 **Rosetta boundary:** [I] This compressed framework read orients agents to the formal grammar. It does not [B] promote conjectural cells, design choices, or operational bridges into settled canon.
 
@@ -48,8 +54,9 @@ not as the replacement for the seven-axiom formal layer.
 
 Every meaningful claim must stay inside one tier:
 
-- `[S]` established
-- `[S]` structural
+- `[A]` analytic / standard formal fact
+- `[B]` built/verified artifact, repository survey, or dated verification receipt
+- `[S]` declared framework-internal structure
 - `[I]` interpretive
 - `[C]` conjectural
 
@@ -70,9 +77,9 @@ It is not allowed to protect itself from falsification by rhetoric.
 
 The Foundation is not only descriptive.
 
-It is now explicitly read as a **constitutional world-generator**:
+It is now explicitly read as a **selected constitutional design grammar**:
 
-- what kinds of worlds can be built
+- what modeled systems can be specified under declared constraints
 - what kinds of institutions remain breathable
 - what kinds of designs preserve reciprocity without capture
 
@@ -82,7 +89,7 @@ That is the Generative Lagrangian register.
 
 The key bridge is:
 
-`Equation -> Axioms -> Invariants -> Protocols -> Organs -> Institutions`
+`Declared model -> constraints -> protocols -> organs -> institutions`
 
 And every downward move must be classified as:
 
@@ -117,8 +124,9 @@ cell.
 
 ## One sentence to carry
 
-The Foundation is no longer mainly a worldview packet. It is a
-truth-disciplined design grammar.
+The Foundation is a worldview packet and a truth-disciplined candidate design
+grammar. Neither role makes it a theory of everything or an externally
+calibrated whole.
 
 ---
 

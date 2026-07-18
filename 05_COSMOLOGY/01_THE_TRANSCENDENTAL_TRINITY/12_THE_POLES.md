@@ -7,12 +7,12 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[A/S/I]"
   canonical_phrase: "THE POLES"
-  vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root (L0=L∞ per settled canon)"
+  vmosk_a: "01_EMERGENTISM/VMOSK_A.md — distinct poles; KSC-03 return edge"
 ---
 
 # THE POLES
 
-## L0 = L∞: Kāla and the Trimūrti as Boundary Conditions
+## Distinct Pole Limits: Kāla and Trimūrti as a Return Correspondence
 
 > **[金] Typed-scaffold supersession — 2026-07-18.** The headline and body below
 > preserve legacy pole/ouroboros imagery; they do not establish endpoint
@@ -23,12 +23,14 @@ rosetta:
 > `S²`, the north and south poles remain distinct points. See [Dimensional Closure](../03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md)
 > and [D4/D5 Canonical Reference](../03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md).
 
-**Status:** Breakthrough — the poles of S² as the transcendent boundary of the L-system
+**Status:** PRESERVED PROVENANCE — distinct-pole correction controls the body
 **Date:** 2026-03-24
-**Evidence Tier:** `[A]` for the topological fact (the poles are singular points on S² where φ or ν diverge). `[S]` for the structural identification (Kāla = south pole, Trimūrti = both poles, L0 = L∞). `[I]` for the Gītā identification (Viṣṇu revealing as Kāla = the preserver revealing as the destroyer = the poles being the same point).
+**Evidence Tier:** `[A]` for distinct S² pole limits; `[I]` for the selected
+`r₆` return and every Kāla/Trimūrti correspondence. No endpoint identity.
 **Depends on:** 02_THE_TRINITY.md, 09_THE_TRIADIC_CASCADE.md, 11_THE_HELIX.md, ../../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md
 **See also:** The Cosmological Cycle (06), The Asura Return (in Master Three-Stage Process), WP-2026-02 (Ouroboros Topology)
-**Kill Criteria:** If the L0 = L∞ identification produces contradictions within the operator system. If Kāla and the Trimūrti can be shown to occupy genuinely distinct ontological positions that cannot be mapped to antipodal points on S².
+**Kill Criteria:** any live use treats the antipodal poles as one topological
+point, or transfers mythic identity into mathematical proof.
 
 ---
 

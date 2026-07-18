@@ -1,6 +1,5 @@
 ---
 rosetta:
-  canonical_phrase: 03_VAISYA_AUDITOR — Agent Routing
   operator: Kṛṣṇa ◇
   primary_column: Agent Audit
   primary_level: L3
@@ -16,7 +15,7 @@ rosetta:
   - column: Core State
     level: L6
     role: separate audit criteria from constitutional rewrite
-  tier: God
+  tier: Routing
   canonical_phrase: "08_FRAMEWORK_SUPPORT/08_AGENTS/03_VAISYA_AUDITOR/CLAUDE.md — Agent First-Touch"
 ---
 

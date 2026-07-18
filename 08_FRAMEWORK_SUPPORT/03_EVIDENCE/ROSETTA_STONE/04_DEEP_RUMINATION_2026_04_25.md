@@ -10,8 +10,14 @@ rosetta:
 **Date:** 2026-04-25
 **Author:** Sovereign (Yves)
 **Lane:** Companion artifact to [`00_THE_MASTER_ROSETTA.md`](00_THE_MASTER_ROSETTA.md)
-**Status:** Doctrine — the framework's own self-articulation of what the Rosetta is, what it proves, what it does NOT prove, and what its kill criteria are
+**Status:** PRESERVED 2026-04-25 RUMINATION — current Master and KSC registry control
 **Complements:** [`02_ROWS_COLUMNS_DEEPENING_2026_04_25.md`](02_ROWS_COLUMNS_DEEPENING_2026_04_25.md) (charioteer audit scaffold), [`01_ALTERNATIVE_GEOMETRIES_AND_CONTRADICTING_TRADITIONS.md`](01_ALTERNATIVE_GEOMETRIES_AND_CONTRADICTING_TRADITIONS.md) (falsification companion)
+
+> **[金] Kintsugi seam — 2026-07-18.** This dated rumination preserves the
+> pre-audit argument. Rosetta is now an `X0` selected translation/routing
+> surface, not evidence that an instrument reads correctly. Seven is not
+> forced; the poles are distinct; the column arrows are not causal; and
+> retrospective cross-domain fitting is not external calibration.
 
 ---
 
@@ -68,7 +74,7 @@ L∞   B = 0       North pole. THE BOUNDARY. Trimūrti. Eternity.
 
 ---
 
-## The Causal Chain — Why Column Order Matters
+## The Former “Causal Chain” — Current Routing/Correspondence Reading
 
 The column order is **causal, not descriptive**:
 

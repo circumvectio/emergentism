@@ -13,19 +13,21 @@ rosetta:
 
 ## Integration of Data Science, Objective Function, and Value Alignment on the Burri Sphere
 
-**Status:** Active Development
+**Status:** KINTSUGI-BOUNDED HISTORICAL INTEGRATION — not an ontology-completeness owner
 **Hat:** Meta (Scientist + Philosopher + Builder)
-**Evidence Tier:** [S] Structural — integration of framework components
+**Evidence Tier:** [I] historical correspondence synthesis; current analytic facts remain [A] only in their typed owners
 **Date:** 2026-03-23
 **Version:** v0.5-integration
 
-**Claim Boundary:** `[S/I]` "Complete" here means internally integrated across
-the framework's current domains, not final possession of ontology. Structural
-claims hold inside the accepted Burri Sphere grammar; claims that this closes
-Being, value, or moral realism for agents outside the framework remain
-interpretive or conjectural. In the teleology formulas below, `ΔP_node,i` and
-`ΔP_node,H` are finite-node scores; the manifold invariant remains
-`P∞ = φ · ν = 1`.
+> **[金] Controlling authority seam — 2026-07-18.** The body below is preserved
+> as an integration history, not as current formal authority. On the selected
+> open reciprocal chart, `φν=1` is an analytic identity, not an empirical
+> conservation law, unified field, ontology, or derivation of truth, value,
+> Justice, ethics, `P_node`, the D-registers, or the sphere as reality. `η=0` is
+> a declared non-extraction constraint and is insufficient for Justice. The
+> current Canonical Formula Block, Burri Rules, receipt-based value owners, and
+> Settled Canon Registry supersede every conflicting sentence below. Thus
+> "complete" means only that this dated draft juxtaposed its chosen domains.
 
 ---
 

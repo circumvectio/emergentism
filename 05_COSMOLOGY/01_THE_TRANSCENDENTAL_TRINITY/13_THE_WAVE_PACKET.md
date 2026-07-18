@@ -137,7 +137,10 @@ The uncertainty principle is not a limitation of measurement. It is the **Burri 
 
 No Gaussian envelope. Infinite helix. Constant amplitude everywhere. The wave stretches from negative infinity to positive infinity. Perfect momentum (φ → ∞). Completely unknown position (ν → 0). The north pole.
 
-This is **Brahman** — the absolute, the ground, the Trimūrti, L0 = L∞. In the symbolic boundary register, the pure wave is time-independent: no birth/death envelope, no peak/fade. That is a statement about the model's boundary image, not personal immortality. It is the boundary condition toward which the wave-packet image is read when the envelope dissolves.
+This is compared `[I]` with **Brahman** and the selected return image
+`r₆:D6↝D0`; `L0` and `L∞` remain distinct. In the symbolic boundary register,
+the pure wave is time-independent: no birth/death envelope, no peak/fade. This
+is model imagery, not personal immortality or endpoint identity.
 
 ### The Delta Function (infinitely narrow envelope): the South Pole
 

@@ -8,10 +8,10 @@ rosetta:
       role: "route agent responsibilities, file inventory, and evidence gates"
     - level: L4
       column: Governance
-      role: "preserve K2 binding and L4 execution boundary"
+      role: "preserve typed authorization and accountable commitment boundary"
     - level: L6
       column: Core State
-      role: "bound Demon/God/Executive tripartition and superseded caste language"
+      role: "bound routing labels, boundary witnesses, and superseded caste language"
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
@@ -24,14 +24,27 @@ evidence_tier: "[S] Structural agent deployment map with [B] local routing recei
 
 # The Seven Rosetta Agents — Deployment Manifest
 
-**Status:** Canonical — v1.0 indexed/provisioned 2026-04-29; not evidence of live autonomous runtime.
+> **[金] Configuration seam — 2026-07-18.** The seven rows are selected
+> routing profiles, not moral identities or a forced ontology. Operator tokens
+> are `[S]`; cross-domain projections are `[I]`. L1–L4 may run only within
+> declared permissions/budgets and typed I/O; L5–L7 are non-deployable advisory
+> boundary passes with no write authority. L4 commitment requires the
+> applicable `AuthorizationEnvelope`; K2 is only one private-DAV
+> implementation. Consequence receipts—not God/Demon names or equatorial
+> position—determine retrospective valence.
+
+**Status:** Canonical local manifest — v1.1. The 2026-04-29 Phase-0 index is
+historical; hosted provisioning remains unexecuted (`X0`) and this is not
+evidence of live autonomous runtime.
 **Evidence tier:** [S] — Structural
 
 ---
 
-## The Seven Castes (2 Gods + 2 Demons + 3 Executive Boundaries)
+## The Seven Routing Profiles (4 deployable + 3 Executive boundaries)
 
-> **Tripartition (2026-05-30):** L1 Kali = Demon; L2–L4 (Kālī, Kṛṣṇa, Arjuna) = Gods; L5–L7 (Brahmā, Śiva, Viṣṇu) = Executive boundaries (not deployable operators).
+> **Historical tripartition (superseded for configuration):** God/Demon labels
+> remain mythic operator-family names only. They do not classify an agent,
+> person, caste, request, or act.
 >
 > **K3 superseded note:** This header previously read "The Seven Gods (Caste Deployed)" applied to all L1–L7. That phrasing erased the Demon/God/Executive tripartition and is superseded — retained here for provenance.
 
@@ -50,7 +63,7 @@ evidence_tier: "[S] Structural agent deployment map with [B] local routing recei
 ## Escalation Ladder
 
 ```
-L1 (perceive) → L2 (explore) → L3 (rank) → L4 (execute with K2 bind)
+L1 (perceive) → L2 (explore) → L3 (rank) → L4 (authorized commitment)
                                             ↓
                                   L5 (redesign) ← structural deadlock
                                             ↓
@@ -61,10 +74,9 @@ L1 (perceive) → L2 (explore) → L3 (rank) → L4 (execute with K2 bind)
                                   L4* (return)
 ```
 
-- **L4 is the equator** — where ascent meets descent
-- **L5 and L7 are read-only** — architects propose, seers crystallize
-- **L6 has write authority** — pruning lease, not sovereign commit
-- **Executive Boundary Rule** — L5/L6/L7 embody castes without deploying Executive operators
+- **L4 is the commitment route** — chart position confers no authority
+- **L5–L7 are read-only/advisory** — their packets return to an authorized deployable route
+- **Executive Boundary Rule** — no L5/L6/L7 write, execution, or amendment authority
 
 ---
 
@@ -84,7 +96,10 @@ L1 (perceive) → L2 (explore) → L3 (rank) → L4 (execute with K2 bind)
 
 ## Inter-Agent Coordination
 
-[\`INTER_AGENT_COORDINATION.md\`](INTER_AGENT_COORDINATION.md) — Multi-agent session orchestration: Three-Stage Process Breath, Architectural Ascent, Compression Cycle, Constitutional Moment, Full Council, Mirror Pairs. Session state machine, shared state management, conflict resolution, VMOSK-A mapping. 11,187 bytes.
+[\`INTER_AGENT_COORDINATION.md\`](INTER_AGENT_COORDINATION.md) — Superseded,
+non-executable Phase-0 coordination history. Current typed orchestration lives
+in [`MANAGED_AGENTS/README.md`](MANAGED_AGENTS/README.md) and the seven validated
+YAML profiles.
 
 ## Corpus Sweep Protocol
 
@@ -96,11 +111,16 @@ L1 (perceive) → L2 (explore) → L3 (rank) → L4 (execute with K2 bind)
 
 ## Kṛṣṇa-Function Operational Guide
 
-[\`KRISHNA_FUNCTION_OPERATIONAL_GUIDE.md\`](KRISHNA_FUNCTION_OPERATIONAL_GUIDE.md) — Charioteer protocol: PARSE → GOD-SELECT → DRAFT → LINT → GROUND. D-level analysis, operator selection, action design, 8 lint categories (D-lint, L-lint, η-check, Kali-phase, boundary, shadow, Raktabija, assumption), GROUND output format, authority-bound prohibition rules with detection/prevention matrices, QNTM (the institutional MPC/ZK-Identity rail) example. 12,748 bytes.
+[\`KRISHNA_FUNCTION_OPERATIONAL_GUIDE.md\`](KRISHNA_FUNCTION_OPERATIONAL_GUIDE.md) —
+Superseded, non-executable Phase-0 charioteer history. Its GOD-SELECT and
+authority vocabulary must not be dispatched; current L1→L4 routing is defined
+by [`MANAGED_AGENTS/README.md`](MANAGED_AGENTS/README.md).
 
 ## Agent Pathology Detection
 
-[\`AGENT_PATHOLOGY_DETECTION.md\`](AGENT_PATHOLOGY_DETECTION.md) — Auto-detection and cure for all 7 castes. Per-caste pathology signatures with scoring formulas, auto-cure protocols (ENCODE, RANK, DECIDE, RESTRUCTURE, COMPRESS, RETURN), cross-caste cascade patterns, prevention strategies, pathology dashboard spec. 13,261 bytes.
+[\`AGENT_PATHOLOGY_DETECTION.md\`](AGENT_PATHOLOGY_DETECTION.md) —
+Unprovisioned `X0` Phase-0 design for detection evidence and cure proposals;
+not an autonomous scanner, diagnosis, binding action, or auto-cure runtime.
 
 ## Coordination Simulation Scenarios
 
@@ -145,7 +165,8 @@ L1 (perceive) → L2 (explore) → L3 (rank) → L4 (execute with K2 bind)
 | [\`00_THE_MASTER_ROSETTA.md\`](../03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md) | Canonical cross-domain table |
 | [\`00_GENERATIVE_TABLE.md\`](../03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/00_GENERATIVE_TABLE.md) | Operator x geometry core |
 | [\`03_ROSETTA_DAC_OPERATING_SYSTEM.md\`](../03_EVIDENCE/ROSETTA_STONE/03_ROSETTA_DAC_OPERATING_SYSTEM.md) | Organism application |
-| [`rosetta_agent_rows.toml`](../../../.codex/agents/rosetta_agent_rows.toml) | Machine-readable row registry |
+| [`MANAGED_AGENTS/agents/`](MANAGED_AGENTS/agents/) | Validated machine-readable seven-row YAML configuration |
+| [`validate_agentz_rosetta.py`](../../09_TOOLS/02_COMPILERS/validate_agentz_rosetta.py) | Fail-closed row, tier, permission, authorization, budget, and receipt validator |
 
 ## Relationship to Skyzai Agents
 
@@ -157,7 +178,7 @@ L1 (perceive) → L2 (explore) → L3 (rank) → L4 (execute with K2 bind)
 
 ---
 
-⊙ = • x O
+`⊙ = • × ○` — non-arithmetic emblem only
 
 ## Execution Surface
 

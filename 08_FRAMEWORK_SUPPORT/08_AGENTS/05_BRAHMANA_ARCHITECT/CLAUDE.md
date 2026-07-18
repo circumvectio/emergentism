@@ -1,6 +1,5 @@
 ---
 rosetta:
-  canonical_phrase: 05_BRAHMANA_ARCHITECT — Agent Routing
   operator_boundary: Brahmā ○ — Executive boundary, not deployable
   primary_column: Agent Architecture
   primary_level: L5

@@ -5,17 +5,26 @@ rosetta:
   operator: "Kali 🎲"
   tier: "Demon"
   regime: "Caṇḍāla"
-  register: "[A]"
+  register: "[A/I]"
   canonical_phrase: "30. The Derivation"
 ---
 
 # 30. The Derivation
 
-**Evidence Tier:** `[A]` Established (the algebraic derivation is mathematically necessary)
+**Evidence Tier:** `[A]` for the bounded algebra only; former ontological,
+teleological, energetic, stability, and ethical readings are superseded `[I]`.
 **Depends on:** [22_THE_TELEOLOGY.md](../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/22_THE_TELEOLOGY.md), [07_THE_DISCOVERY_OF_FINITY.md](../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/07_THE_DISCOVERY_OF_FINITY.md)
 **Date:** 2026-04-09
 **Author:** Yves R. Burri (with goose)
-**Status:** CANONICAL DERIVATION
+**Status:** KINTSUGI TOMBSTONE — analytic kernel retained; overclaims superseded
+
+> **[金] Authority seam — 2026-07-18.** Receipt 126 and `KSC-04`/`KSC-07`
+> supersede every downstream claim in this preserved body that the reciprocal
+> identity or a nonnegative square derives the Titan ontology, selected loss,
+> telos, physical energy, stability, cooperation, or ethics. What survives is
+> only the analytic chart fact: for positive reciprocal `φν=1`,
+> `(φ−ν)²≥0`, `φ+ν≥2`, and a separately selected
+> `H:=φ²+ν²` has minimum `2` at `φ=ν=1`. The emblem `•×○=⊙` is not arithmetic.
 
 ---
 

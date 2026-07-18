@@ -12,10 +12,10 @@ rosetta:
   operator: "Viṣṇu ⊙"
   tier: "Executive"
   regime: "Ṛṣi"
-  register: "[B/I/C]"
+  register: "[A/B/I/C]"
   canonical_phrase: "Agents can widen option cones inside, never beyond, physical admissibility."
-status: "ACTIVE — repaired 2026-07-17"
-evidence_tier: "[B] causal-entropic-force and empowerment cognates; [I] D5 option-cone translation; [C] universal maximization or intelligence law."
+status: "ACTIVE — repaired 2026-07-17; externally anchored 2026-07-18"
+evidence_tier: "[A] bounded planning, empowerment, POWER, and causal-entropic source results; [B] source-verification receipts; [I] D5 option-cone translation and Justice crosswalk; [C] typed-vector advantage; universal maximization rejected."
 ---
 
 # Intelligence and the Option Cone
@@ -84,10 +84,10 @@ or institution can change the latter without changing `c`.
 
 ## 2. Relation to D4 and D5
 
-- `D4` is the actuality register: present state, embodied means, performed
-  action, and receipt.
-- `D5` is the possibility register: represented alternatives, ranking,
-  selection, and worldline foresight.
+- `D4` is the actuality register: present state, present model/ranking/selection
+  events, embodied means, performed action, and receipt.
+- `D5` is the possibility register: represented alternatives, future referents,
+  rankings-as-content, and candidates for selection.
 
 The option cone is not identical to all of D5. It is an agent-relative subset
 of modeled D5 histories filtered by D4 means and physical admissibility. Define
@@ -102,26 +102,39 @@ definition does not depend on it.
 
 ---
 
-## 3. Published cognates `[B]`
+## 3. Published cognates `[A/B]`
 
-- Wissner-Gross and Freer's causal-entropic-force model studies action that
-  tends to maximize accessible future paths:
-  [Physical Review Letters 110, 168702
-  (2013)](https://doi.org/10.1103/PhysRevLett.110.168702).
-- Klyubin, Polani, and Nehaniv's empowerment work measures channel capacity
-  between actions and later perceptions, providing a formal account of
-  agent-relative influence over distinguishable outcomes.
+- [Klyubin, Polani, and Nehaniv's empowerment](https://doi.org/10.1109/CEC.2005.1554676)
+  measures channel capacity between action sequences and later perceptions.
+- [Turner et al.'s POWER results](https://proceedings.neurips.cc/paper/2021/hash/c26820b8a4c1b3c2aa868d6d57e14a79-Abstract.html)
+  prove option-preserving tendencies only for specified MDP symmetries and
+  reward ensembles; their own boundary results rule out a universal theorem.
+- [Wissner-Gross and Freer's causal-entropic-force model](https://doi.org/10.1103/PhysRevLett.110.168702)
+  produces tool use and cooperation in simple simulated systems and is
+  explicitly a proposed step, not a universal law.
+- Human and animal planning studies show that present future representations
+  can affect present choice: [Peters and Büchel 2010](https://doi.org/10.1016/j.neuron.2010.03.026),
+  [Daw et al. 2011](https://doi.org/10.1016/j.neuron.2011.02.027), and
+  [Akam et al. 2021](https://doi.org/10.1016/j.neuron.2020.10.013).
 
 These are cognates, not derivations. They motivate measurable versions of
 accessible-future capacity; they do not prove that all intelligence maximizes
-one scalar cone measure or that the D-register scaffold is necessary.
+one scalar cone measure, that the D-register scaffold is necessary, or that
+`F=M×A` is already an empirical equation.
+
+Reachable volume, empowerment, POWER, path entropy, and viability can rank the
+same states differently. The external calibration program therefore treats the
+option cone as a typed vector and forces it to compete against every named
+scalar. The current status is `X1`: construct contact, not Compass-specific
+validation. See [`CAL-CONE-01`](../03_METHODOLOGY/00_EXTERNAL_CALIBRATION_LEDGER.md).
 
 ---
 
 ## 4. The option-cone objective `[I/C]`
 
-`Agents maximize the cone` is an Emergentist objective or testable hypothesis,
-not an established universal law. Its Justice-constrained form is:
+`Agents maximize the cone` is false as an unqualified universal statement. Its
+surviving Emergentist form is a conditional hypothesis and a
+Justice-constrained objective:
 
 > Prefer authorized actions that durably widen the mutually reachable option
 > cones of the acting part and sustaining whole without violating physical
@@ -131,6 +144,30 @@ not an established universal law. Its Justice-constrained form is:
 An agent who widens its apparent options by coercively collapsing another's is
 not exhibiting strict Syntropic Dyadism. Aggregate option count cannot
 compensate for destroying one bearer's durable capacity.
+
+This is the calibrated control meaning of the God/Demon analogy: a demon move
+maximizes ego/local optionality while externalizing another bearer's contraction;
+a god move seeks durable part-and-whole potential inside Justice. The words name
+objective directions, not supernatural actors or empirical kinds.
+
+To prevent a label from doing two jobs, let `God` in legacy Rosetta tables mean
+only an operator-family name. The normative predicates are instead:
+
+\[
+\operatorname{Demonic}(a)
+\iff \Delta W_{local}(a)>0\land
+\exists b\ne local:\Delta W_b(a)<0,
+\]
+
+\[
+\operatorname{JusticeBearing}(a)
+\iff J(a)\land
+\forall b\in\mathcal B(a):\Delta W_b(a)\ge0.
+\]
+
+Strict syntropy further requires both declared part and whole to rise. A
+voluntary self-cost can be an Arjuna/sacrifice-class action without becoming
+strict syntropy or licensing anyone else to demand it.
 
 Human distinctiveness, where observed, lies in symbolic, counterfactual,
 institutional, social, and intergenerational reach. It does not imply greater

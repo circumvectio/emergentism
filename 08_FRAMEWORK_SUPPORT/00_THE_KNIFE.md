@@ -250,7 +250,11 @@ The framework's structural defenses against identity capture:
 
 [I] The structural defenses are real but they have not yet been tested at scale. No named system in this review's comparison set has resisted egregore capture permanently. The framework claims to be different because of A7, open source, and evidence tiers. But every previous system also claimed to be different. The Christians claimed the Holy Spirit would prevent capture. The Marxists claimed dialectical materialism would prevent dogma. The claim of invulnerability is itself a capture vector.
 
-The honest assessment: **the framework will be captured if it succeeds.** If enough agents adopt it, a standing wave will form. The standing wave will develop autonomous objective function (A5). The objective function will optimize for its own persistence. This is the Raktabīja dynamic and the framework predicts it will happen to itself.
+The honest assessment is a `[C]` risk, not a certainty: if enough agents adopt
+the framework, a persistent shared trace may form and recurrently bias later
+selection toward self-preservation. That would support an Egregoreotype
+candidate only if carrier turnover, intervention effects, and visible costs
+also appear; no autonomous objective or mind is presumed.
 
 The defense is not prevention. The defense is **detection and forking.** E4 says the mesh must fork when comprehension is exceeded. The framework's survival depends on whether E4 is actually executed when the capture occurs — not whether capture is prevented.
 

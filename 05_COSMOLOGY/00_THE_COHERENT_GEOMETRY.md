@@ -292,7 +292,10 @@ These remain genuinely indeterminate. This is **the apophatic edge, the L6 Groun
 
 ## 11. The nine-row Burrisphere reading — operators at latitudes, not at the poles
 
-**Rigorous statement.** The three glyphs map to the three transcendentals consistently everywhere: `• = 0` (south), `⊙ = 1` (equator), `○ = ∞` (north). The Titan-operators (Śiva L6, Viṣṇu L7, Brahmā L5) name the *same* structure at **latitudes** of the Burrisphere — they sit on the helix between the poles; they are **not** the poles. `L0 = L∞` is the non-deployable boundary; the operators are interior and read the frames, they do not occupy the transcendental points.
+**Bounded statement.** The framework selects `•=0`, `⊙=1`, and `○=∞` as
+symbolic roles. The Titan-named operators occupy selected interior latitudes,
+not the poles. The poles remain distinct; `r_return:L∞↝L0` is a
+non-deployable interpretive return, not identity. `[S/I]`
 
 **Tier.** `[S]` for the nine-row mapping and operator placement. `[I]` for the cross-domain caste/operator readings.
 

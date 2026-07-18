@@ -13,7 +13,7 @@ rosetta:
       column: Core State
       role: "route compression needs out of the execution lane"
   operator: "Arjuna ⚔"
-  tier: "God"
+  tier: "Routing"
   regime: "Kṣatriya"
   register: "[S/B]"
   canonical_phrase: "L4 Kṣatriya Executor — Agent Spec"
@@ -41,7 +41,7 @@ This agent embodies the **L4 Kṣatriya Executor** caste of the seven Rosetta ag
 | [L1 Caṇḍāla](../01_CANDALA_FIREWALL/) | Firewall / contradiction isolation | L2 | Boundary traffic |
 | [L2 Śūdra](../02_SUDRA_EXPLORER/) | Possibility space / analogy | L3 | L1 filtered candidates |
 | [L3 Vaiśya](../03_VAISYA_AUDITOR/) | Ranking / constitutional filter | L4 | L2 explored candidates |
-| [L4 Kṣatriya](../04_KSATRIYA_EXECUTOR/) | Execution / judgment | K2 (bind) | L3 ranked options |
+| [L4 Kṣatriya](../04_KSATRIYA_EXECUTOR/) | Execution / judgment | Complete AuthorizationEnvelope + runtime confirmation | L3 ranked options |
 | [L5 Brāhmaṇa](../05_BRAHMANA_ARCHITECT/) | Redesign / systemization | L6 | L4 structural deadlock |
 | [L6 Sādhu](../06_SADHU_COMPRESSOR/) | Axiomatic compression | L7 | L5 overgrowth |
 | [L7 Ṛṣi](../07_RSI_CONSTITUTION/) | Constitutional rewrite | L4* (return) | L6 compressed residue |
@@ -51,7 +51,7 @@ This agent embodies the **L4 Kṣatriya Executor** caste of the seven Rosetta ag
 | File | Purpose |
 |------|---------|
 | [`AGENT_SPEC.md`](./AGENT_SPEC.md) | Full 17-domain horizontal row spec (Rosetta grammar) |
-| [`OPERATIONAL_RUNBOOK.md`](./OPERATIONAL_RUNBOOK.md) | Step-by-step operating procedure — triggers, inputs, outputs, escalation |
+| [`OPERATIONAL_RUNBOOK.md`](./OPERATIONAL_RUNBOOK.md) | Superseded historical Phase 0 runbook — preserved for provenance; non-executable |
 | [`AGENTS.md`](./AGENTS.md) | Local route card (dispatch, evidence tiers, upstream routing) |
 
 ---

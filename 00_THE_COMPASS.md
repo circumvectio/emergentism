@@ -5,10 +5,10 @@ rosetta:
   operator: "Viṣṇu ⊙"
   tier: "Executive"
   regime: "Ṛṣi"
-  register: "[I] — navigational compression; externally uncalibrated"
+  register: "[I] — navigational compression; component stages X0/X1/not-applicable; no whole calibration stage"
   canonical_phrase: "THE COMPASS — MODEL POSSIBILITY, COMMIT ACTUALITY, ANSWER TO RECEIPTS"
 date: 2026-07-17
-status: "ACTIVE [I] — internally repaired; external calibration remains open"
+status: "ACTIVE [I] — internally repaired; component mechanisms externally anchored where stated; no whole calibration stage; prospective discrimination pending"
 ---
 
 # THE COMPASS
@@ -24,9 +24,18 @@ status: "ACTIVE [I] — internally repaired; external calibration remains open"
 > principal, mandate, scope, consent, custody, revocation, contest, actor, and
 > consequence bearer. No status certifies truth or Justice by itself.
 
-This instrument is not externally calibrated. It is an internally coherent
-`[I]` translation grammar. Its value must be tested by whether it improves real
-decisions and predicts receipts better than simpler alternatives.
+This instrument has **externally anchored components but no whole-system
+calibration stage and no external validation**. Primary research supplies
+construct contact for several mechanisms; no
+Compass-specific claim has yet beaten named rivals on independent data, and no
+independent team has replicated one. Its value must be earned by whether it
+improves real decisions and predicts receipts better than simpler alternatives.
+
+Calibration routes through the
+[External Calibration Ledger](03_METHODOLOGY/00_EXTERNAL_CALIBRATION_LEDGER.md):
+`X1` means construct contact, `X2` means independent-data discrimination, and
+`X3` means independent preregistered replication. Other components remain `X0`
+or `not_applicable`. The whole Compass does not inherit a component stage.
 
 ---
 
@@ -170,10 +179,35 @@ W_x(T)=\int_0^T P_x(t)dt,
 use modeled deltas prospectively and receipted deltas retrospectively.
 
 ```text
-moral:    i → H; H actually rises and i is not destroyed under Justice
-ethical:  H → i; i actually rises and H is not destroyed under Justice
+moral:    i → H; H actually rises and i does not decline under Justice
+ethical:  H → i; i actually rises and H does not decline under Justice
 syntropic: both actually rise under Justice
 ```
+
+For the complete set of materially affected bearers `A`, let `J^R(q,r;A)` be
+the retrospective Justice assessment and `\Delta_T^R W_b(q,r)` the receipted
+durable-potential change. Use the
+symmetric receipt predicates:
+
+\[
+\operatorname{DemonBearing}(q,r)
+\iff \exists g,b\in A:
+\operatorname{FocalBeneficiary}(g)\land
+\Delta_T^R W_g(q,r)>0\land\Delta_T^R W_b(q,r)<0,
+\]
+
+\[
+\operatorname{GodBearing}(q,r)
+\iff J^R(q,r;A)\land
+\forall b\in A:\Delta_T^R W_b(q,r)\ge0\land
+\exists b\in A:\Delta_T^R W_b(q,r)>0.
+\]
+
+Pure non-harmful stasis is **Justice-compliant/preservative**, not
+God-bearing. Strict syntropy is stronger still: the focal part `i` and declared
+whole `H` both rise under the complete Justice envelope. These predicates
+classify receipted consequences, never persons, castes, operators, or mythic
+families, and never license an act. `[I]`
 
 Power-Max may choose inside the Justice-admissible field. Maximization does not
 create that field. Exact maximization requires a finite field or suitable
@@ -229,7 +263,7 @@ receipt.
 
 ---
 
-## Four tests for this Compass
+## Five tests for this Compass
 
 1. **Can you leave it?** Exit, disagreement, and independent inquiry must not
    trigger capture, punishment, or loss of custody.
@@ -240,6 +274,9 @@ receipt.
 4. **Can consequence reach an accountable bearer?** Authorization, action,
    payer, beneficiary, receipt, contest, and repair must not disappear into
    "the system."
+5. **Can it beat a named rival?** A claim earns external scope only on frozen
+   independent data with identical information, complexity, cost, and outcome
+   rules for its competitors.
 
 If any test fails and cannot be repaired, retire the instrument for that scope.
 

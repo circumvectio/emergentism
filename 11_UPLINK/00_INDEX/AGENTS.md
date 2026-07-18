@@ -13,7 +13,7 @@ rosetta:
       column: Route Execution
       role: "coordinate promotion back to the core Uplink map when settled"
   operator: "Kṛṣṇa ◇"
-  tier: "God"
+  tier: "Routing"
   regime: "Vaiśya"
   register: "[B/I/D/C]"
   canonical_phrase: "00_INDEX — Agent Routing"

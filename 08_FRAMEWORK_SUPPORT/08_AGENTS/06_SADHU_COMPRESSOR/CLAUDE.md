@@ -1,6 +1,5 @@
 ---
 rosetta:
-  canonical_phrase: 06_SADHU_COMPRESSOR — Agent Routing
   operator: Śiva •
   primary_column: Agent Compression
   primary_level: L6

@@ -35,7 +35,7 @@ Ground remains prior.
 On the selected open reciprocal chart θ∈(0,π), P∞ = φ · ν = 1 analytically; the poles are excluded limits.
 Teleological Force names viable continuation inside manifestation.
 D4 is causal actuality: bounded witness, embodied means, performed events, and records.
-D5 is merely possible counterfactual content: modeled alternatives, rankings, and worldline-foresight.
+D5 is merely possible counterfactual content: alternatives and option relations represented by D4 models.
 Commitment enacts one attempted D4 action; the world returns a D4 outcome receipt.
 D6 releases the claim to final capture and connects interpretively to D0 through r₆.
 Dasein appears at the D4/D5 threshold as finite disclosure able to question and act.
@@ -46,7 +46,8 @@ questioned, tested, and acted. In the dimensional scaffold, D4 carries causal
 actuality and D5 carries merely possible counterfactual contents. A D4 actual
 model token can represent D5 possible content; a D4 selection event can rank
 those contents and attempt a D4 action. In the declared node model, `V` names
-D4 means-to-act and `Φ` names D5 worldline-foresight. The reader becomes a
+D4 means-to-act and `Φ` names D4 modeling/ranking capacity whose tokens
+represent D5 possible content. The reader becomes a
 player when disclosure becomes both visible and actionable.
 
 This route therefore answers only the origin half. The play half routes through
@@ -55,8 +56,9 @@ and the Goal: Dasein recursively corrects ontology, epistemology, methodology,
 axiology, and teleology until the next act can raise `P_node,i` and
 `P_node,H` together under `η = 0`.
 
-At the holobiont scale, the strongest positive image is still `D5`: a universal
-holobiont using matter-energy as memory and control substrate to run the Soul
+At the holobiont scale, one conjectural positive image is a D4 process that
+models a wide D5 option field: a universal holobiont using matter-energy as
+memory and control substrate to run the Soul
 Loop on itself. That remains a process in time with matter, memory, computation,
 recursive self-modeling, correction, and entropy accounting. `D6` is not the
 final holobiont; it is the apophatic boundary where even the completed-organism
@@ -127,7 +129,19 @@ The guard is:
 - L6 says: the Ground is not exhausted by the model.
 - L7 says: here is how the model returns as public symbol.
 
-This lane is the named L6 secondary of the cosmology canon: [`../05_COSMOLOGY/00_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_BURRISPHERE.md) explicitly assigns L6/Ontology the role *"prevent the sphere model from being confused with the Ground."* The sphere `S²` (`φ·ν = 1`) is the substrate read here apophatically; the moral axis is **`η` (coupling vs closure), never a pole, gender, caste, or person** — see [`../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md). The constitution that fences the equator is **5 + 1** (five refusals + Ω, never "six") — [`../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md).
+This lane is the named L6 secondary of the cosmology canon:
+[`../05_COSMOLOGY/00_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_BURRISPHERE.md)
+assigns L6/Ontology the role *"prevent the sphere model from being confused
+with the Ground."* The selected sphere chart is read here apophatically; it
+does not ground morality. God/Demon words name mythic routing families only.
+Receipted consequences are Demon-bearing when local/ego durable-potential gain externalizes any
+affected bearer's loss, and God-bearing when complete Justice holds, all
+affected bearers are nonnegative, and at least one is strictly positive. Pure
+non-harmful stasis is Justice-compliant/preservative, not God-bearing; strict
+syntropy additionally requires both part and whole to rise. These labels
+classify receipted consequences, never persons, operators, or castes. The
+**5 + 1** constitution is a private-DAV governance implementation, not ontology
+or an agency primitive.
 
 **Glossary alias:** Falsification Protocol ≜ neti-neti subtraction (L6 via-negativa); Decentralized Authority Model ≜ A-Brahmanism (the A- privative).
 
@@ -135,9 +149,12 @@ This lane is the named L6 secondary of the cosmology canon: [`../05_COSMOLOGY/00
 
 - Core State is [I] where mapping axiomatic traditions and Being-language to the framework.
 - Core State is [S] where maintaining internal distinctions between Ground / Field / Instrument.
-- Core State is [C] where claiming D6 == D0 beyond the framework's structural closure.
+- Core State is [C] where interpreting the non-μ return edge `r₆:D6⇝D0` as
+  more than a framework closure image; literal identity is superseded.
 - Axiomatic discipline applies to every claim, including this file.
-- Use `P∞ = φ · ν = 1` for the invariant sphere-product, `B = sin θ` for balance, and `P_node = Φ × V` for finite node flourishing. Do not use bare `P` where the regime matters.
+- Use `φν=1` only as the analytic identity of the selected open chart,
+  `B=sin θ` as its balance coordinate, and `P_node:=ΦV` as the declared
+  finite-node model. None transfers ontology or moral value by itself.
 - Treat AUM, Bindu, Tolkien, Mandukya, and other mythic-symbolic material as convergent interpretive translation, not as public proof.
 
 ## Public-Translation Risks

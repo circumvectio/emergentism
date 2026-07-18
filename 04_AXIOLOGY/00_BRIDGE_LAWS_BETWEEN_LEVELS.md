@@ -28,7 +28,9 @@ rosetta:
 **Claim Boundary:** Bridge Law 2 becomes scientific only as the macro-constraint
 test: lower-law closure, fair baselines, effective information, a physical cost
 ledger including labor and `Cost_entropy_export`, perturbable `C`, negative
-controls, and `W_C = EI_macro - EI_baseline - Cost_C > 0`. Without those
+controls, and `DeltaEI_C>0` with a native-unit vector cost gate. Optional
+`W_C=DeltaEI_C-PenaltyBits_C>0` is valid only after preregistered conversion to
+bit-equivalent penalties. Without those
 handles, a higher level may remain useful translation, but it is not yet a
 public causal witness.
 
@@ -140,16 +142,25 @@ EI_domain = best domain-specific lower mechanism witness
 
 EI_baseline = max(EI_micro_fair, EI_coarse_null, EI_domain)
 
-Cost_C = Cost_measure + Cost_memory + Cost_control
-       + Cost_erasure + Cost_model + Cost_labor
-       + Cost_entropy_export
+DeltaEI_C = EI_macro - EI_baseline               # bits
+c_C = (c_measure, c_memory, c_control, c_erasure,
+       c_model, c_labor, c_entropy)              # native units
+c_C <=_component b_C
 
-W_C = EI_macro - EI_baseline - Cost_C
+# Optional scalar witness after frozen normalization/conversion:
+c_tilde_j = c_j / s_j
+PenaltyBits_C = lambda_C^T c_tilde_C
+W_C = DeltaEI_C - PenaltyBits_C                 # bits
 
-macro-real only if W_C > 0 at the tested grain,
+macro-real only if DeltaEI_C > 0 and the vector budget holds,
+with W_C > 0 additionally required when the scalar witness is declared,
 or if the macro model predicts held-out trajectories with lower loss
 after paying the same fair costs.
 ```
+
+Raw energy, labor, memory, money, and entropy quantities may not be added or
+subtracted from information bits. If no justified conversion exists, the
+componentwise vector gate is the sole cost test.
 
 This is the framework's bridge from weak emergence to operational emergence:
 the higher level is not "only shorthand" when it loses less causal information

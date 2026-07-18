@@ -65,7 +65,8 @@ F1 (IS) ──── F2 (COULD) ──── F3 (SHOULD) ──── F4 (ATTEMP
 **The seventh axiom becomes:**
 > At the bedrock and at the apex, both equal zero. No final authority because no final unit. Only provisional consent because only provisional measurement.
 
-The axiomatic ground (L0 = L∞) becomes axiomatic, not just emergent.
+The selected apophatic return `r₆:D6↝D0` becomes a framework axiom; it does not
+identify distinct endpoints or become an empirical emergence result.
 
 ```
 K* (Planck) ──────── K* (authority)

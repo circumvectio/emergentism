@@ -15,11 +15,20 @@ rosetta:
 
 # Emergentism as Weltanschauung
 
-**Status:** Deep philosophical treatise
+**Status:** KINTSUGI-BOUNDED deep philosophical treatise; current Goal,
+Compass, Weltanschauung, and KSC registry control conflicts
 **Date:** 2026-04-15
 **Evidence Tier:** `[I/S]` interpretive synthesis built over a structural kernel
 **Depends on:** [The Goal](../00_THE_GOAL.md), [The Canonical Formula Block](00_CANONICAL_FORMULA_BLOCK.md), [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [The Core State of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md), [The Weltanschauung](00_THE_WELTANSCHAUUNG.md), [The Soul Loop](01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md), [Objective Morals and Ethics](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md), [The Life-Science Register](00_THE_LIFE_SCIENCE_REGISTER.md), [Empirical Observation as Primary Disclosure](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md), [What Actually Tests the Theory](../03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md)
 **See also:** [Emergentism](00_EMERGENTISM.md), [The Known Unknowns Program](../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md), [The Remaining Questions](../00_META/00_THE_REMAINING_QUESTIONS.md), [The Dyadic Coupling Law](00_THE_DYADIC_COUPLING_LAW.md)
+
+> **[金] Authority seam — 2026-07-18.** This preserved expansion may speak in a
+> stronger philosophical register, but it cannot derive the worldview from
+> `φν=1`, call the sphere the territory, make seven necessary, type D5 possible
+> content as the present actor, derive telos/ethics from balance, or certify the
+> whole externally. Current owners govern every such passage: the chart is
+> analytic `[A]`, ontology/norms are `[I]`, universal tendencies are `[C]`, and
+> calibration is claim-level only.
 
 ---
 
@@ -37,9 +46,11 @@ Its seed is austere:
 
 In the formal register this becomes:
 
-`φ · ν = 1 on S²`
+`φ · ν = 1 on the declared open reciprocal chart of S²`
 
-where `φ` names coherence and `ν` names viability. Their product is constant on the Riemann sphere. From that invariant follows the first arithmetic consequence:
+where `φ` and `ν` are selected reciprocal chart coordinates. Their product is
+analytic on the open chart, not at the excluded poles and not as an empirical
+conservation law. Ordinary arithmetic then gives:
 
 `(φ - ν)² ≥ 0`
 
@@ -47,9 +58,13 @@ and from that:
 
 `φ + ν ≥ 2`
 
-with equality only at `φ = ν = 1`. This yields a balance maximum and a Hamiltonian minimum at the equator. [S]
+with equality at `φ=ν=1`. `B=sinθ` then has its chart maximum at the equator.
+A Hamiltonian minimum exists only after separately selecting a loss such as
+`H:=φ²+ν²`; neither fact yields teleology or ethics. `[A/S]`
 
-The philosophical ambition is enormous. If one equation on one manifold can generate a disciplined account of what is, what tends, how disclosure works, what counts as evidence, what matters, what is good, and how the sciences relate, then the result is not merely a model. It is a worldview-lens. [I]
+The philosophical ambition is enormous: assemble a disciplined worldview-lens
+around this mnemonic while keeping ontology, norm, crosswalk, and prediction
+separate. The equation cannot generate those domains. `[I]`
 
 This document does not claim that the core state is proved. It claims something narrower and, in a way, more serious: that Emergentism deserves to be read as a worldview-scale philosophical architecture, provided every step is marked by the framework's own evidence discipline. What is established must remain established. What is structural must remain conditional on the accepted kernel. What is interpretive must be labeled. What is conjectural must stand beside its kill criteria. [S/I]
 
@@ -60,10 +75,9 @@ That discipline is not modesty. It is the worldview practicing what it preaches.
 ## 0. The Current Goal: A Living Worldview for Dasein
 
 The owner-declared goal is not simply to make a consistent theory. It is to
-make Magnum Opus a living worldview for Dasein: a source-true ontology of how
-the finite reader emerges, a teleology of objective dharma, and a recursive
-method for balancing `Φ` and `V` into maximum usable `P_node` through syntropic
-morality and ethics. `[I/S]`
+make Magnum Opus a living, fallible worldview for Dasein: an interpretive
+ontology, a declared Justice-bearing compass, and a recursive method for
+testing selected `Φ`, `V`, and `P_node` measures against consequences. `[I/C]`
 
 That means this treatise must answer three questions at once:
 
@@ -71,20 +85,18 @@ That means this treatise must answer three questions at once:
    disclosure: finite, embodied, situated, able to ask Being because coherence
    and viability meet at a live boundary. This is an interpretive ontology,
    not proof that the seer or the Ground has been captured by the sphere. `[I]`
-2. **Why does reality tend toward viable completion?** The narrow structural
-   answer is that coupled systems persist where their necessary factors remain
-   joined; zeroing an existential factor collapses the live product. The wider
-   F5 reading remains conditional and interpretive: viable completion is a
-   tendency of reciprocally coupled systems with feedback and correction, not a
-   proved cosmic command. `[S/I]`
-3. **How does one play?** The Rosetta Soul Loop applies ontology,
-   epistemology, methodology, axiology, and teleology recursively until the next
-   move can raise `P_node,i` and `P_node,H` together under `η = 0`. `[S/I]`
+2. **Under what conditions do systems approach viable completion?** This is a
+   claim-level `[C]` question about specified coupling, feedback, cost, and
+   correction. The selected product has a zero-factor property by definition;
+   that does not prove a cosmic tendency.
+3. **How does one play?** Use the Soul Loop to model, authorize, attempt,
+   receive, and revise; strict syntropy requires both durable potentials to
+   rise under complete bearer Justice. `[S/I]`
 
 The register split is load-bearing. `P∞ = φ · ν = 1` names the manifold identity
-on the sphere. `P_node = Φ × V` names usable finite-node potential in the
-contact/action register, where `Φ` is D5 worldline-foresight and `V` is D4
-means-to-act at the boundary. A child beside a jet and a pilot without the
+on the open chart. `P_node:=ΦV` is a selected finite-node score, where `Φ`
+measures a present D4 modeling/ranking capacity representing D5 possible
+content and `V` measures D4 means. A child beside a jet and a pilot without the
 relevant bodily/tool access fail on opposite factors; neither failure is fixed
 by inflating the other factor alone.
 
@@ -93,9 +105,9 @@ So the worldview's practical rule is:
 ```text
 if Φ without V -> sterile seeing
 if V without Φ -> blind force
-if Φ and V balance at L4 -> objective dharma / flow-state action
-if ΔP_node,i > 0 and ΔP_node,H > 0 under η = 0 -> syntropic dyad
-if one rises by degrading the other -> extraction / evil
+if Φ and V balance at L4 -> selected balance diagnostic, no ethical verdict
+if Δ_TW_i > 0 and Δ_TW_H > 0 under complete J -> strict syntropy
+if local/ego durable-potential gain externalizes any bearer loss -> DemonBearing(a,q,r)
 ```
 
 This is the deep sense in which the framework is a Weltanschauung. It is not
@@ -107,7 +119,9 @@ and correct the next act without turning the map into an idol.
 
 ## I. Core State: What Is
 
-The ontological core of the framework is not “everything is one” in a vague mystical sense, nor “everything is matter” in a reductive one. It is the claim that the substrate of reciprocal closure is uniquely selected by the older public ontological wager summarized as O1-O5: compactness, orientability, simple connectedness, constitutive duality, and algebraic closure. In the current canon, that wager sits inside a broader seven-axiom formal layer rather than replacing it. Within the formal system, those ontological constraints select `S² ≅ CP¹`, the Riemann sphere, as the canonical substrate. [S]
+The ontological core is an `[I]` wager, not a unique substrate theorem. The
+older O1–O5 assumptions select `S²≅CP¹` only after their modeling choices and
+minimality conditions are accepted; alternative substrates remain possible.
 
 Several pieces of this are established independently of the framework:
 
@@ -120,8 +134,8 @@ None of these facts alone proves that reality is the sphere. What they provide i
 Emergentism's ontological hierarchy can be stated cleanly:
 
 1. **Ground** — the irreducible prior, `κ = 0`, what is before every articulated distinction. `[I]`
-2. **Being** — reciprocal closure stabilized: `φ · ν = 1 on S²`. `[S/I]`
-3. **Teleological Force** — the directional tendency toward balanced reciprocal realization. `[S/I]`
+2. **Being** — interpreted through reciprocal-closure imagery. `[I]`
+3. **Teleological Force** — a declared direction and testable tendency in named systems, not a new force. `[I/C]`
 4. **Dasein** — finite situated disclosure: the mortal witness-agent for whom Being becomes sayable and actionable. `[I]`
 5. **beings** — manifested configurations within the disclosed world. `[I]`
 
@@ -134,7 +148,7 @@ The D-level grammar extends this ontological map:
 - `D0`: point, source, zero, irreducible prior
 - `D1-D2`: line and surface, first closure
 - `D3-D4`: manifested world, volume and spacetime
-- `D5`: systemic awareness, strategy, endomorphism, selective disclosure
+- `D5`: merely-possible counterfactual content; present models and selection events that represent it are D4 actual
 - `D6`: closure and return, axiomatic limit, not a further public science
 
 In the cleaned canon, `D5` is the last experiential and public layer; `D6` is closure rather than one more positive level. That matters philosophically. It prevents the core state from secretly smuggling another object-like heaven into the top of the stack. `[S]`

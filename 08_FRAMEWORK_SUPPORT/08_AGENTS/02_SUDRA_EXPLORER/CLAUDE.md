@@ -1,6 +1,5 @@
 ---
 rosetta:
-  canonical_phrase: 02_SUDRA_EXPLORER — Agent Routing
   operator: Kālī 💀
   primary_column: Agent Exploration
   primary_level: L2
@@ -16,7 +15,7 @@ rosetta:
   - column: Core State
     level: L6
     role: cap analogy as non-binding candidate generation
-  tier: God
+  tier: Routing
   canonical_phrase: "08_FRAMEWORK_SUPPORT/08_AGENTS/02_SUDRA_EXPLORER/CLAUDE.md — Agent First-Touch"
 ---
 

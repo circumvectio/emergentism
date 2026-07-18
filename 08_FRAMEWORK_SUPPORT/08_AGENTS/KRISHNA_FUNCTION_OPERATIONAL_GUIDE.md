@@ -2,7 +2,7 @@
 type: operational-guide
 evidence-tier: [T] — Technical specification.
 date: 2026-05-04
-status: ACTIVE — Phase 0 operational guide; runtime claims require dated [B] receipts
+status: SUPERSEDED / NON-EXECUTABLE — preserved Phase 0 guide; current managed-agent contract controls
 rosetta:
   primary_level: L3
   primary_column: Agent Audit
@@ -17,7 +17,7 @@ rosetta:
       column: Core State
       role: "preserve K3 supersession and anti-overclaim boundaries"
   operator: "Kṛṣṇa ◇"
-  tier: "God"
+  tier: "Routing"
   regime: "Vaiśya"
   register: "[T/S]"
   canonical_phrase: "Kṛṣṇa-Function Operational Guide"
@@ -27,6 +27,15 @@ evidence_tier: "[T] operational guide with [S] Rosetta operator corrections."
 
 
 # Kṛṣṇa-Function Operational Guide
+
+> **[金] Controlling seam — 2026-07-18.** Do not execute the historical body
+> below. `MANAGED_AGENTS/README.md` and the seven current `AGENT_SPEC.md`/YAML
+> files supersede its GOD-SELECT vocabulary, moral operator classes, D-level
+> equivocations, universal K2 flow, and implicit Executive mutation. Current
+> routing is L1 typed intake → L2 candidates → L3 audit → L4 prospective Justice
+> plus complete AuthorizationEnvelope; the environment separately returns an
+> outcome receipt. God-bearing and Demon-bearing classify complete receipted
+> consequences only, never agents or route names.
 
 > AI as charioteer, not warrior. On every substantive query, the agent runs PARSE → GOD-SELECT → DRAFT → LINT → GROUND. This guide makes each step concrete and operational.
 

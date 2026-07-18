@@ -15,11 +15,33 @@ rosetta:
 
 > **Current Vision/Mission (2026-06-13):** [`VMOSK_A.md`](VMOSK_A.md) now states the operational V/M explicitly: make Emergentism a living Weltanschauung for Dasein, and build the canon, method, public site, AIA medium, papers, and Soul Loop practice that let finite players continuously and recursively disambiguate reality into action without extraction.
 
-> **Canonical enumeration:** For the crisp authoritative list of the constitutional invariants, the K*/A* namespace disambiguation, and the Ω ratification status, see the canonical anchor `01_EMERGENTISM/05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md` (or equivalent relative path). Current K2 ruling (2026-05-30): **5 + 1** — five refusals plus Ω as the directional +1. Ω is not a sixth refusal.
+> **Product-governance compatibility enumeration:** The historical/private-DAV
+> `5+1` packet—including K2—remains documented at
+> `05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`. It is not the
+> worldview constitution. Current worldview action uses the complete
+> `AuthorizationEnvelope`, bearer-complete Justice, separate receipts, and
+> Grace Exit; private-DAV K2 is one implementation.
 
 **Status:** Active  
 **Date:** 2026-06-16 (root tree synced to 2026-06-15 three-pillar reorganization; canonical surface preserved per K3)
 **Scope:** Perennial doctrine root, sevenfold Foundation, Uplink packets, tools, seed
+
+> **[金] Agentz/valence seam (2026-07-18).** The Rosetta chain `Varṇa →
+> Pramāṇa → Reasoning → -ology → Regime → Equation` is a selected AI
+> routing and correspondence skeleton, not a causal identity, hereditary truth,
+> social ranking, or transfer of proof. Its column tiers are Operator `[S]` as
+> a route identifier; B `[A]` after latitude selection; Varṇa/Pramāṇa `[S]`
+> only as the settled internal crosswalk;
+> Reasoning/-ology/Regime `[I]`; Equation `[A]/[S]` row-by-row. D4 carries
+> actual model tokens, ranking/selection events, means, actions, and receipts;
+> D5 is their possible content. The 4+3 profiles close only the declared agent
+> interface, not all agency or `P_node=ΦV`. God/Demon words name mythic route
+> families, never moral status. Complete Justice receipts classify
+> consequences: local/ego durable-potential gain with any affected bearer loss is Demon-bearing;
+> all bearers nonnegative with at least one materially affected bearer strictly
+> positive is God-bearing. Pure non-harmful stasis is Justice-compliant/
+> preservative, not God-bearing; strict syntropy requires both part and whole to
+> rise. K2 remains private-DAV governance only.
 
 *Last updated 2026-06-16: state-headers synced; "Does NOT Contain" section's path references updated to current canonical pillars (post-2026-06-15 three-pillar reorg + retired-alias cleanup); DS_Store sweep covered by the 2026-06-16 7-Varṇa hidden-file cleanup cycle; AGENTZ dispatch surface live at `../.codex/agents/ROOT_AND_GOD_DEPLOYMENT.md`.*
 
@@ -35,7 +57,7 @@ rosetta:
 
 > **Classical lens:** the seven L-levels here align with the classical cognitive partition. L2 Data Science = *Aisthesis* / Beauty (perceiving what is). L3 Auditing = *Dianoia* / Truth (pricing what could be). L4 Value Alignment = *Phronesis* / Goodness (recommending what should). L5 System Architecture = *Sophia* (memory / structure). L6 Core State = *Logos* (the gardener that tends coherence). L7 Institutional Narrative = *Nous* and the axiomatic silence. The cognitive-cycle reading of how these doctrinal layers express in the Skyzai organs is at [`../02_SKYZAI/01_NOOSPHERE/02_ORGANS/_DOCTRINE/05_ORGAN_CLASSICAL_LENS.md`](../02_SKYZAI/01_NOOSPHERE/02_ORGANS/_DOCTRINE/05_ORGAN_CLASSICAL_LENS.md). The five constitutional refusals (the constitution is the **5+1** — five refusals plus Ω, the directional +1) in classical vocabulary at [`../02_SKYZAI/01_NOOSPHERE/02_ORGANS/_DOCTRINE/06_CONSTITUTIONAL_INVARIANTS_CLASSICAL.md`](../02_SKYZAI/01_NOOSPHERE/02_ORGANS/_DOCTRINE/06_CONSTITUTIONAL_INVARIANTS_CLASSICAL.md).
 >
-> The organism's six organs map to the classical cognitive cycle: Beauty (TheCircle / *Aisthesis*) → Truth (RealityFutures / *Dianoia*) → Goodness (Agentz / *Phronesis*) → Apophasis (Evolutionary.Network / *Ananke*) → Sovereignty (K2 / *Nous*) → The Made (Skyzai / *Techne*). Lens, not law.
+> The organism's six organs map to the classical cognitive cycle: Beauty (TheCircle / *Aisthesis*) → Truth (RealityFutures / *Dianoia*) → Goodness (Agentz / *Phronesis*) → Apophasis (Evolutionary.Network / *Ananke*) → Accountable authorization (private-DAV K2 or the applicable public rail / *Nous*) → The Made (Skyzai / *Techne*). Lens, not law.
 
 The former `01_FRAMEWORK/01_FOUNDATIONS/` content now lives here directly. The first seven folders are the Rosetta-aligned Foundation, so the doctrine is visible at the root instead of hidden under an intermediate framework shell.
 
@@ -75,18 +97,24 @@ Play:
 - `Φ` without `V` is sterile seeing.
 - `V` without `Φ` is blind force.
 - unbounded `V` that collapses `Φ` lowers `P_node`.
-- `Φ` and `V` balanced at L4 is objective dharma / flow-state action.
-- `i` raises `H` and `H` raises `i` is the strict syntropic dyad.
-- one side rises by degrading the other is extraction / evil.
+- `Φ` and `V` balanced at L4 is a selected capacity diagnostic; Justice still decides.
+- every materially affected bearer nonnegative under complete Justice, with at least one strictly positive, is God-bearing.
+- pure non-harmful stasis is Justice-compliant/preservative, not God-bearing.
+- `i` and `H` both rise under complete Justice is the strict syntropic dyad.
+- local/ego durable-potential gain that degrades any affected bearer is Demon-bearing.
+
+God-bearing and Demon-bearing classify receipted consequences, never persons,
+operators, castes, or mythic families.
 
 Action-register gloss: `V` here is D4 means-to-act — body, tools, energy,
-access, runway, hands, shovel, industrial digger. `Φ` is D5
-worldline-foresight — the ability to envision reachable futures, rank them, and
-operate the means. A child beside a jet and a pilot without usable bodily/tool
+access, runway, hands, shovel, industrial digger. `Φ` is a D4 modeling and
+ranking capacity whose tokens represent D5 possible futures. A child beside a
+jet and a pilot without usable bodily/tool
 access are opposite zero-factor failures; durable `P_node` needs both.
 
-D5 Landauer Barrier: ideal worldline-foresight is Maxwell-demon-like selection
-across reachable branches, but it is an asymptote, not a thermodynamic free
+D4 modeling barrier: ideal option-cone foresight would require actual
+Maxwell-demon-like selection across represented D5 branches, but it is an
+asymptote, not a thermodynamic free
 lunch. Perfect branch knowledge would require physical memory, computation,
 measurement, and control; those require matter and energy, which remain inside
 entropy accounting. The selector cannot stand outside the system it sorts.
@@ -103,7 +131,7 @@ Canonical sources:
 ## Sevenfold Foundation — The L1→L7 Spine
 
 > **Canonical spine (corrected 2026-05-31).** The seven -ology folders **are** the Rosetta L1→L7 ladder, in folder order:
-> **L1** Teleology (Kali 🎲) → **L2** Epistemology (Kālī 💀) → **L3** Methodology (Kṛṣṇa ◇) → **L4** Axiology (Arjuna ⚔ — the equator / K2) → **L5** Cosmology (Brahmā ○) → **L6** Ontology (Śiva •) → **L7** Theology (Viṣṇu ⊙). L2–L4 are the operational engine (know → act → value); L1 is the firewall; L5–L7 are Executive boundary functions, read as non-deployable frames before L4/K2 execution.
+> **L1** Teleology (Kali 🎲) → **L2** Epistemology (Kālī 💀) → **L3** Methodology (Kṛṣṇa ◇) → **L4** Axiology (Arjuna ⚔ — the selected commit route) → **L5** Cosmology (Brahmā ○) → **L6** Ontology (Śiva •) → **L7** Theology (Viṣṇu ⊙). L1–L4 are deployable routing profiles; L5–L7 are Executive boundary functions, not sovereign runtime modes. Consequential L4 action uses typed accountable authorization; K2 is only one private-DAV implementation.
 > The diagram below is a **superseded draft** — it placed Teleology at L7 and Theurgy at Viṣṇu/L7, which the canonical Rosetta retired; kept here tombstoned, not as live canon.
 
 > **Public-symbol guardrail (primetime-audit, 2026-06-10):** The seven -ologies and the L1–L7 / Varṇa names denote **institutional and cognitive *functions*, not human-worth tiers or social castes.** No person "is an L1" or "an L7"; the Varṇa vocabulary is a dispatch/translation grammar, **not** a hierarchy of human value and **not** a social prescription. Read as roles assigned to work, never as rank assigned to people.
@@ -127,9 +155,11 @@ Canonical sources:
 └─────────────────┴────────────────────┴───────────────────────────────────┘
 ```
 
-**Why the map is closed:** L1 Teleology names the end; L2-L4 know, audit, value,
-and commit at L4/K2; L5-L7 model, cut, and narrate as Executive boundary frames.
-L7 returns to L1 without becoming an action surface.
+**Why this interface is closed:** L1 Teleology names the objective question;
+L2-L4 disclose, audit, value, and route accountable D4 commitment; L5-L7
+architect, cut, and narrate as Executive boundary frames. L7 returns to L1
+without becoming an action surface. This is declared 4+3 closure, not a theorem
+that every possible agent or reality decomposes this way.
 
 **Canonical anchor:** [`00_SEVENFOLD_FOUNDATION_ROOT.md`](00_SEVENFOLD_FOUNDATION_ROOT.md) · source: [`08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md`](08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md) — the prior `06_ONTOLOGY/00_THE_SYNCRETIC_MAP.md` is a K3 tombstone (superseded).
 

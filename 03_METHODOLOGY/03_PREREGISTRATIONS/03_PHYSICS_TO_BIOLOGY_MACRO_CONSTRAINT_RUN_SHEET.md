@@ -22,7 +22,8 @@ rosetta:
 
 ## First Domain Run For The Information-Topology Thesis
 
-**Status:** Run-sheet template. Not a result.
+**Status:** Active run-sheet template with a negative post-result toy companion
+receipt. Not a biology-facing result or a prospective preregistration.
 **Evidence tier:** `[C]` for the proposed biology-facing domain run; `[S]` for
 the inherited macro-constraint protocol; `[B]` only for the deterministic toy
 model receipt in the companion harness.
@@ -41,13 +42,28 @@ before rhetoric expands.
 **Executable harness:** The companion folder
 [`physics_to_biology_harness/`](physics_to_biology_harness/) contains a
 deterministic toy vesicle model and unit tests. Its current report is a `[B]`
-receipt only for that toy model (`W_C=0.415356`, `SYN_C=0.775347`,
-`KL=0.141286`); biological claims remain `[C]` until a frozen domain run is
-executed. The same command writes `FREEZE_MANIFEST.json`, which records the
-report hash, file hashes, commands, frozen objects, and negative controls for
-the toy run. The controls reject the no-gate null (`KL=0.000000`,
-`W_C=-0.070000`), the high-cost case (`W_C=-0.574644` despite information
-gain), and an artificial lower-law support violation.
+post-result reproducibility receipt only for that toy model. The honest fair
+micro comparison is `EI_micro_fair=1.591591` bits, above
+`EI_macro=1.235037`, so `DeltaEI_C=-0.356554`, `W_C=-0.426554`,
+`SYN_C_gate=fail`, and the macro claim **fails and contracts** despite
+`KL=0.141286`. Biological claims remain `[C]` until an independently frozen
+domain run is executed.
+
+The historical filename `FREEZE_MANIFEST.json` now identifies
+`manifest_version=macro-constraint-reproducibility-v3`: a deterministic
+post-result bundle binding the model, exact configuration, report, tests, and
+README. It does not establish that the toy design or its bit penalties were
+frozen before result access. The toy penalties are declared post-result
+bit-equivalent parameters, not preregistered conversion weights. The report's
+classification and macro-claim status are derived from its computed gates.
+
+The controls reject the no-gate null (`KL=0.000000`, `W_C=-0.662017`) and an
+artificial lower-law support violation. A separate post-result algorithm
+fixture holds positive information gain fixed (`DeltaEI_C=+0.190095`) while
+changing only the declared model penalty: low total penalty `0.035000` gives
+`W_C=+0.155095` and passes, while high total penalty `0.530000` gives
+`W_C=-0.339905` and fails. This paired fixture isolates the cost gate; it is not
+an alternative domain result.
 
 ---
 
@@ -83,8 +99,9 @@ boundary permeability.
 The current toy harness instantiates this candidate as a finite
 two-compartment diffusion model. The toy membrane gate preserves macro
 concentration topology and allows recovery toward the viable band without
-adding lower-law-forbidden transitions. That proves the method can be executed;
-it does not prove the biology.
+adding lower-law-forbidden transitions. That shows the scoring path can be
+executed. The current fair-micro witness is negative, so it proves neither the
+macro claim nor the biology.
 
 | Object | Freeze before running |
 |---|---|
@@ -95,9 +112,9 @@ it does not prove the biology.
 | Constraint gate `G_C` | Permeability gate that weights allowed crossings by membrane selectivity; declare whether the run treats it as a hard support restriction or soft reweighting. |
 | Closure check | `K_X^C << K_X` and `support(K_X^C) subset support(K_X)`; the membrane changes rates/reachability, not the lower chemistry law. |
 | Perturbation | Hold membrane, remove membrane, randomize permeability, or damage boundary while keeping lower chemistry model fixed. |
-| Cost ledger | Membrane maintenance energy, measurement cost, model cost, control cost, labor cost, erasure/logging cost, entropy export. |
+| Cost ledger | Native units and component budgets for membrane maintenance energy, measurement, modeling, control, labor, erasure/logging, and entropy export; any scalar conversion is frozen separately. |
 | Baselines | Fair micro model, coarse-null no-membrane model, domain-specific diffusion/reaction model. |
-| Witness | `W_C > 0`, lower held-out prediction loss, or better intervention selection after costs. |
+| Witness | `DeltaEI_C>0` plus componentwise cost-budget compliance; optional unit-valid `W_C>0`; lower held-out prediction loss; or better intervention selection after costs. |
 | Kill condition | Cost-matched micro/domain baseline predicts or controls as well or better; or membrane only wins by hidden variables/costs. |
 
 ---
@@ -134,11 +151,15 @@ EI_domain = best domain-specific lower mechanism witness
 
 EI_baseline = max(EI_micro_fair, EI_coarse_null, EI_domain)
 
-Cost_C = Cost_measure + Cost_memory + Cost_control
-       + Cost_erasure + Cost_model + Cost_labor
-       + Cost_entropy_export
+DeltaEI_C = EI_macro - EI_baseline
+c_C = (c_measure, c_memory, c_control, c_erasure,
+       c_model, c_labor, c_entropy)              # native units
+c_C <=_component b_C
 
-W_C = EI_macro - EI_baseline - Cost_C
+# Optional only with preregistered reference scales and conversions:
+c_tilde_j = c_j / s_j
+PenaltyBits_C = lambda_C^T c_tilde_C
+W_C = DeltaEI_C - PenaltyBits_C                 # bits
 ```
 
 And the perturbability witness:
@@ -159,13 +180,14 @@ For this run, syntropy is not mystical reversal. It is local open-system order
 after costs:
 
 ```text
-SYN_C = DeltaOrder_C
-      + DeltaCoherence_C
-      + DeltaEffectiveInformation_C
-      - Cost_C
+SYN_C_gate := DeltaOrder_C > 0
+              and DeltaCoherence_C > 0
+              and DeltaEffectiveInformation_C > 0
+              and c_C <=_component b_C
 ```
 
-Report `SYN_C` separately from `W_C`. A run can improve viability while still
+Report `SYN_C_gate` separately from `W_C`. Never add native-unit physical costs
+to information bits without frozen conversion weights. A run can improve viability while still
 failing to beat the causal-information baseline, or it can beat a prediction
 baseline while failing the broader syntropy ledger because maintenance costs or
 entropy export were hidden.
@@ -190,11 +212,28 @@ entropy export were hidden.
 
 Do not score any result until this block is complete.
 
-For the toy harness, the freeze block is represented by
-`physics_to_biology_harness/FREEZE_MANIFEST.json`. For any real biology-facing
-run, create a new companion result file and manifest rather than overwriting
-the toy receipt. A frozen run is not adequate unless its negative controls
-reject null, cost-hiding, and support-violation false positives.
+For the toy harness, `physics_to_biology_harness/FREEZE_MANIFEST.json` is a
+post-result reproducibility manifest, not evidence that this freeze block was
+completed prospectively. Only an independently timestamped bundle placed in
+custody before data or result access can establish preregistration. For any real
+biology-facing run, create a new companion result file and manifest rather than
+overwriting the toy receipt. A frozen run is not adequate unless its negative
+controls reject null, cost-hiding, and support-violation false positives.
+
+## Frozen Public Mirror Status — Stale And Outside Scope
+
+As of 2026-07-18, the following frozen `12_PUBLIC_SITE` artifacts still contain
+the superseded positive toy receipt (`W_C=0.415356`, positive `SYN_C`, or
+`macro-constraint-freeze-v1`):
+
+- `12_PUBLIC_SITE/method/03-physics-to-biology-macro-constraint-run-sheet/index.html`
+- `12_PUBLIC_SITE/method/00-what-actually-tests-the-theory/index.html`
+- `12_PUBLIC_SITE/book/rag_index.json`
+
+They are stale, outside this repair's write scope, and must not be cited as the
+current harness result. They were intentionally not modified because the public
+tree is frozen. Updating them requires a separately authorized public-site
+regeneration or hand-patch workflow.
 
 ---
 
@@ -226,7 +265,8 @@ Empirical Program Board. The framework survives by contracting quickly.
    `python3 -m unittest test_vesicle_macro_constraint.py` and
    `python3 vesicle_macro_constraint.py` from
    `physics_to_biology_harness/`. The second command regenerates both
-   `vesicle_macro_constraint_report.json` and `FREEZE_MANIFEST.json`.
+   `vesicle_macro_constraint_report.json` and `FREEZE_MANIFEST.json`; then run
+   `python3 vesicle_macro_constraint.py --check` without rewriting them.
 3. Do not modify this run sheet after real domain results are inspected. Add a
    companion result file instead.
 4. Treat a simulation as a `[B]` receipt only for the declared model. External

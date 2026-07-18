@@ -14,18 +14,22 @@ rosetta:
       column: Core State
       role: "keep scoring assumptions reproducible and revisable"
   operator: "Kṛṣṇa ◇"
-  tier: "God"
+  tier: "Routing"
   regime: "Vaiśya"
-  register: "[T/B]"
+  register: "[D/B]"
   canonical_phrase: "L3 Vaiśya Auditor — Operational Runbook"
 title: "L3: Vaiśya Auditor — Operational Runbook"
-status: "ACTIVE — Phase 0 operational runbook"
+status: "SUPERSEDED / NON-EXECUTABLE — historical Phase 0 runbook"
 date: 2026-05-04
-evidence_tier: "[T] Technical specification."
+evidence_tier: "[D] preserved design history; current AGENT_SPEC and managed YAML control."
 ---
 
 
 # L3: Vaiśya Auditor — Operational Runbook
+
+> **[金] Non-execution seam — 2026-07-18.** Do not execute the historical
+> instructions below. Current authority is `AGENT_SPEC.md` plus the managed
+> agent YAML. Mythic tier, K2, and transfer language below is provenance only.
 
 > The deductive ranker. L3 receives candidates from L2 and ranks them by constitutional fit, Mission alignment, and risk profile. Binding decisions remain downstream; L3 surfaces decision-ready lists.
 

@@ -16,7 +16,7 @@ rosetta:
   - column: Constitutional Witness
     level: L7
     role: preserve cross-caste audit context without promoting it into founder authority
-  tier: God
+  tier: Routing
   canonical_phrase: "11_UPLINK/50_AUDITS_AND_EXECUTIONS/CLAUDE.md — Agent First-Touch"
 ---
 

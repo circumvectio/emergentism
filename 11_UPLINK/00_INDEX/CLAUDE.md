@@ -16,7 +16,7 @@ rosetta:
   - column: Route Execution
     level: L4
     role: coordinate promotion back to the core Uplink map when settled
-  tier: God
+  tier: Routing
   canonical_phrase: "11_UPLINK/00_INDEX/CLAUDE.md — Agent First-Touch"
 ---
 

@@ -39,7 +39,7 @@ or live organism state.
 | `01_TELEOLOGY/` | L1 material direction, F5, ektropy |
 | `02_EPISTEMOLOGY/` | L2 knowing, evidence reception |
 | `03_METHODOLOGY/` | L3 proof, testing, claim discipline |
-| `04_AXIOLOGY/` | L4 value, K2, Strategic Implementation as signed action |
+| `04_AXIOLOGY/` | L4 value, bearer-complete Justice, typed authorization, and accountable commitment; K2 only in private-DAV governance |
 | `05_COSMOLOGY/` | L5 positive structure, formal system |
 | `06_ONTOLOGY/` | L6 axiomatic ground |
 | `07_THEOLOGY/` | L7 bounded public symbol |

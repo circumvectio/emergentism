@@ -6,7 +6,7 @@ rosetta:
   register: "[S]"
   canonical_phrase: "The map of the whole — one verified outline of 01_EMERGENTISM"
 title: "Canonical Tree Outline"
-status: "CANONICAL front-door map, refreshed 2026-06-11 — operator grammar (2 Demons + 2 Gods + 3 Titans) added to the seven-lane table; 00_CONTROL and 12_PUBLIC_SITE rows added; prior refresh 2026-06-04; original disk-verification 2026-05-30."
+status: "CANONICAL front-door filesystem map; operator semantics Kintsugi-repaired 2026-07-18."
 evidence_tier: "[S] structural map with [B] 2026-06-04 filesystem audit receipts for current archive/public-site routing. The numbering-conventions section is [A] per the repo CLAUDE.md."
 ---
 
@@ -18,8 +18,9 @@ consolidation. Read this before
 concluding that any name or number is "wrong" — most apparent irregularities are **intentional
 convention** (see the guardrails section at the end), not drift. And before opening a doctrine
 *contradiction* or flag, read [`00_META/00_SETTLED_CANON_REGISTRY.md`](00_META/00_SETTLED_CANON_REGISTRY.md) —
-the ratified rulings (2 Gods + 2 Demons, the **5 + 1** constitution, the **η** moral axis, Viṣṇu
-elliptic, the `φ·ν = 1 on S²` shorthand) with their *do-not-flag vs still-flag* criteria.
+the settled rulings (selected 4+3 routing grammar, typed authorization,
+bearer-complete Justice, and the open reciprocal chart) with their
+*do-not-flag vs still-flag* criteria.
 
 ---
 
@@ -40,27 +41,28 @@ elliptic, the `φ·ν = 1 on S²` shorthand) with their *do-not-flag vs still-fl
 
 ## The seven -ology lanes (canonical order — do not reorder)
 
-**The operator grammar completes the outline.** The seven lanes carry the seven
-operators, and the seven operators exhaust the move sign-space of a two-party
-game: **2 Demons** (takers, `+self/−other`), **2 Gods** (givers, `−self/+other`),
-**3 Titans** (same-sign Executives: `++` creation · `−−` destruction · `≈≈`
-preservation) — the Titans reading the three transcendentals **{∞, 0, 1}**
-(Brahmā ○ = ∞ · Śiva • = 0 · Viṣṇu ⊙ = 1), proto-reality, the stage the
-mixed-sign game is played on. Valence is on the **move's η, never the operator's
-name** (Kālī is divine by level, Asuric by direction — see
-[`00_META/00_SETTLED_CANON_REGISTRY.md`](00_META/00_SETTLED_CANON_REGISTRY.md)).
-L1→L4 ascend to the equator (the only place that signs); L5→L7 descend as
-boundary frames. `[S]` operator grammar · `[I]` mythic names.
+**The operator grammar completes the selected routing interface.** The seven
+lanes carry four deployable mixed-sign routing slots and three Executive
+boundary-witness slots. This `4+3` arrangement is closed by framework
+declaration `[S]`; it does not exhaust strategies, agents, morality, or nature.
+Titan tokens `{0,1,∞}` are selected symbolic roles `[I]`, not proto-reality.
+God/Demon names are historical operator-family labels. Consequences are
+classified only from complete authorization and bearer receipts:
+`DemonBearing` is local/ego gain with any materially affected bearer loss;
+`GodBearing` requires complete Justice, every bearer nonnegative, and at least
+one strict gain. L1–L4 are deployable routing profiles; L5–L7 frame architecture,
+compression, and witness. L4 commits through the applicable
+`AuthorizationEnvelope`, not by equatorial position or K2 as worldview law.
 
 | # | Lane | Operator · Tier | Level · phrase | Spine |
 |---|---|---|---|---|
-| 01 | `01_TELEOLOGY/` | Kali 🎲 · **Demon** (taker) | **L1 — "F5 tilts."** Objective-function / directionality. | AM-GM/Power-Max derivation corpus (`02_THE_DERIVATION/`), `01_F5_FORCE/` sub-lane. |
-| 02 | `02_EPISTEMOLOGY/` | Kālī 💀 · **Demon** (taker, lawful cut) | **L2 — "Beauty discloses."** Knowing / pattern. | evidence-tier authority (`01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`), `03_MEMETICS/`. |
-| 03 | `03_METHODOLOGY/` | Kṛṣṇa ◇ · **God** (giver) | **L3 — "Truth tests."** Inference / audit. | `01_THE_DERIVATION/` spine, `02_THE_PAPERS/` tiered stack (A–P, T, U). |
-| 04 | `04_AXIOLOGY/` | Arjuna ⚔ · **God** (giver — **the equator / K2**) | **L4 — "Justice signs."** Value. | `01_THEURGY/` (K2 protocol), `02_VALUE_THEORY/`. |
-| 05 | `05_COSMOLOGY/` | Brahmā ○ · **Titan** (∞ · `++` creation) | **L5 — "Emergentism models."** Brāhmaṇa / system-architecture (~113 files). | `00_WHOLE/` spine, `01_THE_TRANSCENDENTAL_TRINITY/` (38-ch narrative), `02_EMERGENTISM_CORE/`, `03_FORMAL_SYSTEM/` (seven axioms). |
-| 06 | `06_ONTOLOGY/` | Śiva • · **Titan** (0 · `−−` destruction) | **L6 — "Ground is prior."** What-is. | apophatic Ground, D5/D6 closure, the Ring. |
-| 07 | `07_THEOLOGY/` | Viṣṇu ⊙ · **Titan** (1 · `≈≈` preservation) | **L7 — "Symbol teaches."** Public symbol. | exoteric translation (bounded, non-governing). |
+| 01 | `01_TELEOLOGY/` | Kali 🎲 · mixed-sign boundary route | **L1 — "Objective pressure is named."** | AM-GM/Power-Max derivation corpus (`02_THE_DERIVATION/`), `01_F5_FORCE/` sub-lane. |
+| 02 | `02_EPISTEMOLOGY/` | Kālī 💀 · truth-cut route | **L2 — "Evidence discloses and corrects."** | evidence-tier authority (`01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`), `03_MEMETICS/`. |
+| 03 | `03_METHODOLOGY/` | Kṛṣṇa ◇ · audit/enabling route | **L3 — "Truth tests."** Inference / audit. | `01_THE_DERIVATION/` spine, `02_THE_PAPERS/` tiered stack (A–P, T, U). |
+| 04 | `04_AXIOLOGY/` | Arjuna ⚔ · accountable-commitment route | **L4 — "Justice constrains commitment."** Value. | `01_THEURGY/` (historical/private-DAV protocols), `02_VALUE_THEORY/`. |
+| 05 | `05_COSMOLOGY/` | Brahmā ○ · architecture witness | **L5 — "Emergentism models."** Brāhmaṇa / system-architecture (~113 files). | `00_WHOLE/` spine, `01_THE_TRANSCENDENTAL_TRINITY/` narrative, `02_EMERGENTISM_CORE/`, `03_FORMAL_SYSTEM/`. |
+| 06 | `06_ONTOLOGY/` | Śiva • · compression boundary | **L6 — "Ground is prior."** What-is. | apophatic Ground, D5/D6 closure, the Ring. |
+| 07 | `07_THEOLOGY/` | Viṣṇu ⊙ · witness/preservation boundary | **L7 — "Symbol teaches."** Public symbol. | exoteric translation (bounded, non-governing). |
 
 ## Support / tools / uplink / seed
 

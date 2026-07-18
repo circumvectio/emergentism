@@ -16,16 +16,20 @@ rosetta:
   operator: "Śiva •"
   tier: "Executive"
   regime: "Sādhu"
-  register: "[T/B]"
+  register: "[D/B]"
   canonical_phrase: "L6 Sādhu Compressor — Operational Runbook"
 title: "L6: Sādhu Compressor — Operational Runbook"
-status: "ACTIVE — Phase 0 operational runbook"
+status: "SUPERSEDED / NON-EXECUTABLE — historical Phase 0 runbook"
 date: 2026-05-04
-evidence_tier: "[T] Technical specification."
+evidence_tier: "[D] preserved design history; current read-only AGENT_SPEC and managed YAML control."
 ---
 
 
 # L6: Sādhu Compressor — Operational Runbook
+
+> **[金] Non-execution seam — 2026-07-18.** Do not execute the historical
+> instructions below. L6 is now read-only and proposal-only; an authorized L4
+> route performs any mutation. Current `AGENT_SPEC.md` and managed YAML control.
 
 > The renunciant who prunes overgrowth. L6 detects what is NOT there — the void, the negative space. L6 favors subtraction over addition. Archive-first; not sovereign commit.
 

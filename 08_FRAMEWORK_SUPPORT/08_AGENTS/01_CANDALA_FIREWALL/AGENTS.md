@@ -13,7 +13,7 @@ rosetta:
       column: Core State
       role: "preserve raw-signal boundary before interpretation"
   operator: "Kali 🎲"
-  tier: "Demon"
+  tier: "Routing"
   regime: "Caṇḍāla"
   register: "[B/S/I]"
   canonical_phrase: "01_CANDALA_FIREWALL — Agent Routing"

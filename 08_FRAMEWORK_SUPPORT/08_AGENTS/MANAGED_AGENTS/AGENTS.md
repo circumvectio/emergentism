@@ -21,14 +21,16 @@ rosetta:
 
 # MANAGED_AGENTS — Agent Routing
 
-**Lane scope:** Managed-agent deployment scaffold for the seven Emergentism caste-operators as Claude platform Managed Agents.
+**Lane scope:** Managed-agent deployment scaffold for seven selected Emergentism routing profiles.
 **Primary lead:** `L5 Brāhmaṇa`
 **Support:** L4 Kṣatriya, L6 Sādhu, L7 Ṛṣi
 **Evidence tier:** `[B]` local scaffold; `[S]` structural caste mapping; `[C]` unprovisioned deployment claims.
 
 ## Source of Truth
 
-Definitions are discovered, not invented — each agent's system prompt, tools, and model are derived from the canonical caste specs in `../01_CANDALA_FIREWALL/` … `../07_RSI_CONSTITUTION/` and the genotype [`../00_THE_SEVEN_OPERATOR_GENOTYPE.md`](../00_THE_SEVEN_OPERATOR_GENOTYPE.md).
+Definitions are selected and versioned—not discovered laws of cognition. Each
+agent's prompt, tools, and model must conform to the canonical routing specs and
+genotype while remaining independently testable against simpler rivals.
 
 ## Read First
 
@@ -46,6 +48,9 @@ Definitions are discovered, not invented — each agent's system prompt, tools, 
 
 - Do not upgrade runtime claims without dated proof artifacts.
 - Do not treat draft specs as public-facing claims.
-- Irreversible private-DAV actions require K2 envelope staging; public-DAV/DAC actions route through PRISM or the relevant public-governance rail.
+- Only L4 may request mutation, and only within a complete
+  `AuthorizationEnvelope`; platform confirmation is necessary but not
+  sufficient. L5–L7 are advisory/read-only. Private-DAV K2 and public rails are
+  separate implementations under their owning governance.
 
-⊙ = • × ○
+`⊙ = • × ○` — non-arithmetic emblem only

@@ -15,7 +15,7 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[B/I/C]"
+  register: "[A/B/I/C]"
   canonical_phrase: "STIGMERGY AND THE EGREGOREOTYPE"
 ---
 
@@ -23,11 +23,14 @@ rosetta:
 
 ## Persistent Traces That Reweight Collective Choice
 
-**Status:** Canonical Egregoreotype semantic owner
+**Status:** Canonical Egregoreotype semantic owner; externally anchored at the
+component level, composite validation pending
 
-**Evidence tier:** `[B]` for attributed stigmergy research; `[I]` for the typed
-Egregoreotype construction; `[C]` for any particular candidate or universal
-replicator claim
+**Evidence tier:** `[A]` for bounded third-party stigmergy, carrier-chain, and
+social-influence findings; `[B]` for source-verification receipts; `[I]` for the
+typed Egregoreotype construction; `X1` for partial component anchors; `[C]` for
+the five-condition composite, any particular candidate, visible-cost criterion,
+or universal replicator claim
 
 **Compatibility note:** The legacy filename and the spelling **Egregorotype**
 are retained only as stable-link aliases. **Egregoreotype** is canonical in
@@ -44,7 +47,7 @@ active prose, records, schemas, and indexes.
 
 ---
 
-## 1. Stigmergy `[B]`
+## 1. Stigmergy `[A/B]`
 
 Stigmergy is indirect coordination in which one agent modifies a shared
 environment and later agents respond to the trace. Classic biological examples
@@ -61,6 +64,27 @@ agent action → persistent environmental trace → later agent perception
 Direct negotiation, centralized command, markets, imitation, language, and
 legal enforcement can coexist with stigmergy. It is one coordination mechanism,
 not the only explanation for large-scale order and not proof of a superorganism.
+
+External anchors establish several component mechanisms without establishing
+the full composite or a new kind of entity:
+
+- [Theraulaz and Bonabeau 1999](https://doi.org/10.1162/106454699568700)
+  formalize the stigmergy tradition;
+- [Sasaki and Biro 2017](https://doi.org/10.1038/ncomms15049) show route
+  improvement across staged carrier replacement in pigeon chains;
+- [Muchnik, Aral, and Taylor 2013](https://doi.org/10.1126/science.1240466)
+  randomize a social trace and measure asymmetric downstream ratings;
+- [Salganik, Dodds, and Watts 2006](https://doi.org/10.1126/science.1121066)
+  show social-information paths increasing inequality and unpredictability;
+- [Centola et al. 2018](https://doi.org/10.1126/science.aas8827) show that a
+  committed minority can overturn an established convention.
+
+These results also supply boundaries: traces decay, incentives matter,
+collective biases can reverse, and local rules can generate goal-like patterns
+without a collective mind. The five-condition Egregoreotype composite has not
+yet been independently criterion-validated. Its status is `X1` convergent
+construct contact, not an established scientific taxon. See
+[`CAL-EGREGORE-01`](../03_METHODOLOGY/00_EXTERNAL_CALIBRATION_LEDGER.md).
 
 ---
 
@@ -229,6 +253,14 @@ Examples must be treated as hypotheses, not declarations.
 | ritual institution | pattern survives participants; ritual intervention shifts coordinated choices; costs and exits measurable | performance without durable trace or later effect |
 
 The same named institution may pass at one boundary and fail at another.
+
+The first discriminating experiment must cross fixed/partial/full carrier
+replacement with trace preservation/erasure/scrambling/counterfeiting, stable
+versus reversed incentives, and centralized instruction present/absent. The
+composite must add held-out prediction beyond institutional memory,
+reinforcement, conformity, command, current incentives, network structure, and
+shocks. Otherwise “Egregoreotype” is a compression of those mechanisms, not a
+separately validated construct.
 
 ---
 

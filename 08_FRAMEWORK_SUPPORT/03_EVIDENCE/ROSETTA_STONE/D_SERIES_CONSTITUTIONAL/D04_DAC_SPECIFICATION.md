@@ -178,7 +178,11 @@ The DAC requires a four-domain core state:
 | **Erregores** | 🏛️ | Legal (jurisdictional) | The DAC itself as legal entity |
 | **Extended Phenotypes** | 🛠️ | None (pure tools) | Platforms, infrastructure, APIs |
 
-The DAC itself is an Erregore — a D5-limit standing wave with autonomous objective function (A5). Its constitutional constraints prevent Raktabīja capture (A7). Its η = 0 boundary prevents extraction.
+The DAC is an **Egregoreotype candidate**, not an assumed autonomous mind. It
+earns that descriptive label only if persistent trace, carrier turnover,
+selection-reweighting intervention, recurrent bias, and visible-cost tests pass.
+Its constitutional controls are intended to detect capture and extraction;
+`η=0` is a declared fence whose runtime compliance still needs receipts.
 
 ---
 

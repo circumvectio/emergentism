@@ -48,6 +48,35 @@ source lane, repair the source and recompile.
 | Compiler | Output | Status |
 |---|---|---|
 | `build_corpus_map.py` | `00_CORPUS.md` folder-perspective maps | [B] Dormant in this checkout: requires `../_corpus_source.yaml`, which is not present. |
+| `validate_external_calibration.py` | Read-only validation of `00_EXTERNAL_CALIBRATION_CLAIMS.json` and source-negative fences | [B] Active standard-library validator; validates records, not scientific truth. |
+
+External calibration contract:
+
+```bash
+python3 -B 09_TOOLS/02_COMPILERS/validate_external_calibration.py
+python3 -B 09_TOOLS/02_COMPILERS/test_external_calibration.py
+```
+
+`CAL-OK` means the sources, types, stages, rival sets, preregistration links,
+typed `X2+` receipt gates, and negative wording fences are internally valid.
+`X2` requires a result JSON distinct from the protocol; `X3` additionally
+requires newly collected independent observations. `CAL-OK` does not mean a
+paper was correctly interpreted, a dataset was analyzed, or the Compass was
+externally validated.
+
+## Agentz Rosetta configuration validator
+
+```bash
+python3 -B 09_TOOLS/02_COMPILERS/validate_agentz_rosetta.py --check
+python3 -B -m unittest 09_TOOLS/02_COMPILERS/test_agentz_rosetta.py
+```
+
+`AGENTZ-OK` verifies the exact selected L1–L7 row metadata, mixed evidence-tier
+contract, D4-carrier/D5-content typing, four operational plus three read-only
+permissions, L4 `always_ask` controls, complete authorization prompt fields,
+budget requirements, and receipt separation. It validates local configuration
+only. The hosted platform remains `unprovisioned_x0`; the check is neither a
+deployment receipt nor evidence that the profile prompts improve performance.
 
 ## Route Upstream
 

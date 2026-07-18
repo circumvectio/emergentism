@@ -26,15 +26,47 @@ It exists so the corpus can stop mixing rational discipline, esoteric practice, 
 The root is valid only if it makes direct seeing, evidence-tier honesty, and
 accountable, contestable action easier. K2 remains private-DAV governance only.
 
+### [金] Agentz routing and consequence-valence seam — 2026-07-18
+
+The Rosetta sequence **Varṇa → Pramāṇa → Reasoning → -ology → Regime →
+Equation** is a selected AI Agentz routing/correspondence skeleton. Its arrows
+mean dispatch and handoff, not causal identity, hereditary truth, social rank,
+or proof transfer. Column tiers are: Operator `[S]` as a route identifier; B
+`[A]` after a latitude is selected; Varṇa/Pramāṇa `[S]` only as the
+settled internal crosswalk; Reasoning/-ology/Regime `[I]`; Equation
+`[A]/[S]` row-by-row. Each deployment still needs typed I/O, dispatch and stop
+predicates, permissions and budgets, accountable authorization, and blinded
+evaluation.
+
+D4 is the actual carrier: model token, ranking/selection event, embodied means,
+action, and record. D5 is possible content represented by those tokens. The
+four mixed-sign routes plus three Executive boundary profiles close only the
+declared interface; neither seven nor 4+3 is an exhaustive theorem of
+`P_node=ΦV` or reality.
+
+God/Demon are mythic route names, never moral properties of a person, Varṇa,
+operator, or sign pattern. Receipts decide objective valence: local/ego durable-potential gain
+with any materially affected bearer's loss is **Demon-bearing**; every affected
+bearer nonnegative under complete Justice **and at least one materially affected
+bearer strictly positive** is **God-bearing**; pure non-harmful stasis is
+Justice-compliant/preservative, not God-bearing. Strict syntropy additionally
+requires both individual/part and sustaining whole to rise. These labels
+classify receipted consequences, never identities.
+
 ---
 
 ## The Spine at a Glance
 
-**One rule ties the filesystem to the doctrine: the folder number *is* the L-level *is* the value-gate.** The seven `0N_-ology` folders are the seven Rosetta rungs; the book *The Infinite Play* walks them in order as its seven gates. Everything else here — the support layers (`08`–`11`) and the archives (`90`/`91`/`999`) — serves this spine; it does not extend it.
+**One selected routing rule ties the filesystem to the doctrine:** folder number
+maps to L-level and value-gate inside this corpus. This is a filing contract,
+not causal identity. The seven `0N_-ology` folders are the seven Rosetta rungs;
+the book *The Infinite Play* walks them in order as seven gates. Everything
+else here — the support layers (`08`–`11`) and archives (`90`/`91`/`999`) —
+serves this spine; it does not prove that nature is exhaustively sevenfold.
 
 | Folder | L | Operator | Caste (Varṇa) | Root function | Value · Sanskrit | Gate |
 |---|---|---|---|---|---|---|
-| `01_TELEOLOGY` | L1 | Kali 🎲 | Caṇḍāla | Objective Function — where life tends | Chaos · Kāla | I |
+| `01_TELEOLOGY` | L1 | Kali 🎲 | Caṇḍāla | Objective Function — declared directional question | Chaos · Kāla | I |
 | `02_EPISTEMOLOGY` | L2 | Kālī 💀 | Śūdra | Data Science — how we know | Beauty · Sundaram | II |
 | `03_METHODOLOGY` | L3 | Kṛṣṇa ◇ | Vaiśya | Auditing — how we test | Truth · Satyam | III |
 | `04_AXIOLOGY` | L4 | Arjuna ⚔ | Kṣatriya | Value Alignment — what matters, who signs | Justice · Dharma | **IV (equator)** |
@@ -44,7 +76,10 @@ accountable, contestable action easier. K2 remains private-DAV governance only.
 
 > **Public-symbol guardrail (primetime-audit, 2026-06-10):** The seven -ologies and the L1–L7 / Varṇa names in the table above denote **institutional and cognitive *functions*, not human-worth tiers or social castes.** No person "is an L1" or "an L7"; the Varṇa vocabulary is a dispatch/translation grammar, **not** a hierarchy of human value and **not** a social prescription. Read as roles assigned to work, never as rank assigned to people.
 
-**L4 is the equator.** The ladder ascends L1→L4 (survival → gathering → inference → signed sacrifice), then descends L4→L7 (architecture → ground → return); the gates mirror about it: I↔VII, II↔VI, III↔V. Sections 1–2 below give the full Rosetta reading.
+**L4 is the selected equatorial commit route.** The ladder ascends L1→L4
+(boundary → gathering → inference → accountable commitment), then descends
+L4→L7 (architecture → ground → return); the gates mirror about it: I↔VII,
+II↔VI, III↔V. This is a routing topology, not a moral or developmental rank.
 
 *Tier: [S] for `folder № = L-level` (this repo's filing grammar); [I] for the value-gate gloss, per the canonical Rosetta.*
 
@@ -54,7 +89,7 @@ accountable, contestable action easier. K2 remains private-DAV governance only.
 
 | # | Root | Rosetta | Question | Framework function | Primary failure mode |
 |---|---|---|---|---|---|
-| 1 | **Objective Function** | L1 / Empirical Observation | Where does life tend? | F5 / ektropy / Power Max / raw gradient | progress ideology |
+| 1 | **Objective Function** | L1 / Empirical Observation | Where does the declared objective point? | F5 / ektropy / constrained Power Max / candidate gradient | progress ideology |
 | 2 | **Data Science** | L2 / Comparative Analysis | How do we know? | Beauty / comparison / pattern disclosure | hallucinated pattern |
 | 3 | **Auditing** | L3 / Inferential Logic | How do we test and proceed? | Truth / inference / audit / deduction | sterile procedure |
 | 4 | **Value Alignment** | L4 / Strategic Abduction | What matters, who may act, and who bears the consequence? | Justice / value / accountable commitment | moral performance or blind action |
@@ -77,7 +112,7 @@ The seven roots are not only a flat list. They also have a Rosetta-depth reading
 | L3 | Vaiśya | Auditing | Inferential Logic / inference | Truth disciplines the pattern |
 | L4 | Kṣatriya | **Value Alignment = Strategic Implementation** | Strategic Abduction / strategic abduction | an accountable agent commits under uncertainty and accepts a contestable receipt |
 | L5 | Brāhmaṇa | **System Architecture / Emergentism** | systematic structural reading | the affirmative model of how reality works |
-| L6 | Sādhu | **Core State / Apophasis** | First Principles / non-apprehension | the Ground prior to structure; not-this discipline |
+| L6 | Sādhu | **Core State / Apophasis** | Anupalabdhi / non-apprehension; axiomatic first-principles reasoning | the Ground prior to structure; not-this discipline |
 | L7 | Ṛṣi | **Institutional Narrative / public-symbol return** | Intuitive Synthesis / transcendental intuition | the insight returns as symbolic form for the species |
 
 ### 2.1 The L4 Equator
@@ -127,7 +162,9 @@ Current source surfaces include packets `133`, `134`, `135`, `137`, `138`, `140`
 
 ### Data Science — Beauty / Disclosure / Induction
 
-Data Science owns the first visibility of pattern. Beauty is what lets order disclose itself before it is proven. Induction opens D5 possibility without yet claiming Truth.
+Data Science owns the first visibility of pattern. Beauty is what lets order
+disclose itself before it is proven. A D4 inductive/modeling act represents D5
+possibilities without yet claiming Truth.
 
 Current source surfaces include [`02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md`](02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md), the sitting-practice surfaces, the Rosetta Stone, and packet `129`.
 
@@ -162,8 +199,9 @@ Current source surfaces include `00_THE_ONTOLOGY_OF_BEING.md`, `00_CANONICAL_FOR
 ### Strategic Implementation — L4 How a Mortal Participates
 
 Strategic Implementation is not a peer root. It is the operative face of L4
-Value Alignment: D5 models and ranks possibilities; D4 means determine which
-attempts are physically available; authorization separately determines which
+Value Alignment: D4 model tokens and ranking events operate over D5 possible
+content; D4 means determine which attempts are physically available;
+authorization separately determines which
 attempts are normatively valid. The world returns an outcome receipt for either.
 
 Authorization is typed, scoped, revocable where possible, and contestable. A private DAV may implement that envelope through K2, but neither K2 nor any signature is a metaphysical collapse mechanism.
@@ -218,7 +256,11 @@ Objective Function / F5 direction
   -> renewed Objective Function / Beauty at higher resolution
 ```
 
-Core State sits at the origin as silent ground. System Architecture is the affirmative structural model around it. Objective Function is the future-vector grounded in and from core state. Institutional Narrative folds the esoteric back into public symbol, where Beauty becomes visible again. L7 returns to L1.
+Core State sits at the origin as silent ground. System Architecture is the
+affirmative structural model around it. Objective Function is a declared option
+direction represented by finite agents, not a future that physically reaches
+backward. Institutional Narrative folds the esoteric back into public symbol,
+where Beauty becomes visible again. L7 returns to L1.
 
 ### 6.1 Dasein Game Reading
 
@@ -243,9 +285,11 @@ This is the Rosetta Soul Loop applied to life rather than only to text:
 ```text
 if Φ without V -> sterile seeing
 if V without Φ -> blind force
-if Φ and V balance at L4 -> objective dharma / flow-state action
-if i raises H and H raises i -> syntropic dyad
-if one rises by degrading the other -> extraction / evil
+if Φ and V balance at L4 -> selected capacity-balance reference; Justice still decides
+if J is complete, every bearer delta >= 0, and some bearer delta > 0 -> GodBearing(a,q,r)
+if every bearer delta = 0 under J -> Justice-compliant/preservative, not GodBearing
+if i and H both rise under J -> strict syntropic dyad
+if local/ego durable-potential gain hides any bearer loss -> DemonBearing(a,q,r)
 ```
 
 The loop edits the map and the player. Every public symbol released at L7

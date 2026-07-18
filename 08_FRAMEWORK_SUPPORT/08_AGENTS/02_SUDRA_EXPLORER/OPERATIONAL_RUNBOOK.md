@@ -14,18 +14,22 @@ rosetta:
       column: Core State
       role: "prevent exploration from becoming binding conclusion"
   operator: "Kālī 💀"
-  tier: "God"
+  tier: "Routing"
   regime: "Śūdra"
-  register: "[T/B]"
+  register: "[D/B]"
   canonical_phrase: "L2 Śūdra Explorer — Operational Runbook"
 title: "L2: Śūdra Explorer — Operational Runbook"
-status: "ACTIVE — Phase 0 operational runbook"
+status: "SUPERSEDED / NON-EXECUTABLE — historical Phase 0 runbook"
 date: 2026-05-04
-evidence_tier: "[T] Technical specification."
+evidence_tier: "[D] preserved design history; current AGENT_SPEC and managed YAML control."
 ---
 
 
 # L2: Śūdra Explorer — Operational Runbook
+
+> **[金] Non-execution seam — 2026-07-18.** Do not execute the historical
+> instructions below. Current authority is `AGENT_SPEC.md` plus the managed
+> agent YAML. Mythic tier, K2, and transfer language below is provenance only.
 
 > The possibility-space expander. L2 receives categorised signals from L1 and generates a broad candidate set by analogy. L2 maps; later lanes test, rank, or bind.
 

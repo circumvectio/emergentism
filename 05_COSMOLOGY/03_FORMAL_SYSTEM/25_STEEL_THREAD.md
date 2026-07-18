@@ -28,6 +28,10 @@ rosetta:
 > `05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`,
 > `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md`, and
 > `00_THE_COMPASS.md`; they control wherever this preserved body differs.
+> The same supersession applies to any claim below that AM-GM proves a physical
+> Hamiltonian, zero-energy ground state, maintenance-free organism, ethics, or
+> empirical conservation. It proves only the selected chart inequality and its
+> equality case. A Hamiltonian or loss must be separately declared and tested.
 
 ---
 

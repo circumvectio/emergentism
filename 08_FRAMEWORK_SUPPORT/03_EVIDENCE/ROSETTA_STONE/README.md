@@ -5,15 +5,15 @@ rosetta:
   secondary:
     - level: L5
       column: Philosophy
-      role: "present the Rosetta Stone as cross-domain calibration table"
+      role: "present the Rosetta Stone as a cross-domain translation crosswalk"
     - level: L3
       column: Philosophy
       role: "route evidence tiers, failed mappings, and validation protocols"
     - level: L6
       column: Philosophy
-      role: "keep calibration data downstream of core-state doctrine"
+      role: "keep claim-level external tests separate from crosswalk correspondence"
   operator: "Kālī 💀"
-  tier: "God"
+  tier: "Routing"
   regime: "Śūdra"
   register: "[S/I]"
   canonical_phrase: "ROSETTA_STONE — Front Door"
@@ -21,11 +21,18 @@ rosetta:
 
 # THE rosetta stone
 
-> The calibration table for the compass and sextant.
+> The claim-trace and translation table for the compass and sextant.
 
 **Status:** Canonical
 **Date:** 2026-03-24
 **Purpose:** The cross-domain translation engine of the framework
+
+> **[金] Front-door seam — 2026-07-18.** The Rosetta is an internally
+> declared translation/routing crosswalk `[S/I]`, not a calibration table or
+> evidence for a universal sevenfold reality. Operator, Varṇa, and Pramāṇa
+> tokens/pairings are `[S]` internally; their external fits are `[I]`. Each
+> empirical claim calibrates independently through X0–X4. Geometry, `η`,
+> equatorial position, and operator name supply no moral verdict or authority.
 
 ---
 
@@ -39,33 +46,44 @@ The Rosetta is downstream of the canonical spine:
 4. [Naming Reconciliation](../../01_GOVERNANCE/00_NAMING_RECONCILIATION.md)
 5. The Master Rosetta
 
-The nine-row `L0..L∞` closure, the equator `L4`, and the moral axis read off this table are canonized in cosmology — read the Rosetta's geometry **with** them:
+The nine-row `L0..L∞` visualization and equator `L4` are selected geometry.
+No moral axis is read off the table; read it with the repaired owners:
 
 - [The Burrisphere](../../../05_COSMOLOGY/00_THE_BURRISPHERE.md) — the sphere `S²` (`φ·ν=1`), nine latitudes, the equator, and the nine-row closure this table feeds.
-- [The Dyadic Coupling Law](../../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) — goodness is the **bond** `φ×ν`; the moral axis is `η` (closed vs syntropic), **never** a gender, pole, caste, or operator name.
-- [Constitutional Invariants — Canonical Enumeration](../../../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md) — the constitution is **5 + 1** (five refusals + Ω the directional +1), never "six refusals".
+- [The Dyadic Coupling Law](../../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) — `φν=1` is chart coupling and `η=0` is a necessary non-extraction screen; neither is sufficient for goodness. Complete Justice and receipts decide.
+- [The Compass](../../../00_THE_COMPASS.md) — bearer-complete Justice and
+  accountable authorization govern consequential use; K2 is not a worldview
+  primitive.
 
-**Rule:** the Rosetta maps beings and Dasein-structures across domains. [S] It does not directly establish Ground, and it must not override the core state or archetype grammar.
+**Rule:** Rosetta proposes defeasible correspondences across domains. `[I]` It
+does not establish Ground, determine persons, transfer proof, or upgrade a
+claim's evidence tier.
 
 ---
 
 ## What the Rosetta Stone IS
 
-The Rosetta Stone is **not a map.** A map shows you where things are. The Rosetta Stone is a **calibration table** -- it shows you that the instrument reads correctly.
+The Rosetta Stone is **not a map and not yet a calibrated instrument.** It is a
+selected translation surface whose rows can generate testable routing and
+correspondence hypotheses.
 
-The compass is the Burri Sphere (S², reciprocal closure resolved as `P∞ = φ · ν = 1`). The sextant is the L-level system (seven positions on S²). The Rosetta Stone is the evidence that these instruments, when pointed at independently developed knowledge domains, return consistent readings.
+The compass uses the selected Burri Sphere chart (`S²`, with
+`P∞=φν=1` on its open reciprocal chart). The sextant uses seven selected
+positions. Recurrent-looking alignments among independently developed domains
+are prompts for discrimination, not evidence that the geometry generated them.
 
-Piaget did not read Plato. Kohlberg did not study the Gita. Maslow did not know Advaita Vedanta. The brainwave researchers did not study game theory. The alchemists did not study computational algorithms.
-
-And yet: seven rows. Every column. The same pattern.
-
-The Rosetta Stone is the observation that this happens. The framework's explanation is `P∞ = φ · ν = 1 on S²`. The Rosetta Stone is calibration data that tests that explanation.
+The table was assembled retrospectively and the row assignments were not blind.
+Selection effects, translation freedom, and alternative row counts therefore
+remain live rivals. `CAL-DISPATCH-01`, `CAL-SPHERE-01`, and
+`CAL-CORRESPONDENCE-01` in the external-calibration ledger keep this surface at
+`X0` or `not_applicable` until preregistered, blinded benchmarks discriminate
+it from simpler routing schemes.
 
 > See [00_CORPUS.md](00_CORPUS.md) for the whole corpus map seen from this folder.
 
 ## From Rosetta Table to Soul Loop
 
-The Rosetta is static only when read as a table. In use, it is the calibration
+The Rosetta is static only when read as a table. In use, it is a routing
 surface for the [Soul Loop](../../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md):
 the repeated cycle by which Dasein discloses, tests, serves, sees, dissolves,
 preserves, and returns.
@@ -75,9 +93,9 @@ Read this folder as the evidence layer behind that practice:
 ```text
 Rosetta rows      -> available operator moves
 Rosetta columns   -> domains where the move must still be audited
-S² geometry       -> balance surface for Φ and V
+S² geometry       -> selected chart analogy; no empirical or moral proof transfer
 Soul Loop         -> recursive method for correcting map and player
-L4 / equator      -> objective dharma when Φ and V balance in action
+L4 route          -> prospective Justice check plus accountable commitment
 ```
 
 The game form is therefore not "pick a row and identify with it." That freezes
@@ -87,7 +105,7 @@ raises the finite node and its sustaining whole without extraction:
 ```text
 P_node,i = Φ_i × V_i
 P_node,H = Φ_H × V_H
-η = 0
+η = 0  (necessary non-extraction screen, not sufficient Justice)
 ```
 
 `i` is the individual symbiont; `H` is the holobiont. A Rosetta reading becomes
@@ -120,18 +138,19 @@ The operator column defines the row. Everything else is projection.
 | L | Operator | Tier | theta/2 | phi = cot(theta/2) | nu = tan(theta/2) | φ · ν | B = sin theta |
 |---|----------|------|---------|---------------------|---------------------|----------|---------------|
 | **L0** | **Kala** | **Trimurti** | **90 deg** | **0** | **inf** | **—**† | **0** |
-| L1 | Kali | Demon | ~82 deg | tends to 0 | very high | 1 | tends to 0 |
-| L2 | KALI | God | 75 deg | 2-sqrt(3) approx 0.27 | 2+sqrt(3) approx 3.73 | 1 | 0.500 |
-| L3 | Kṛṣṇa | God | 60 deg | 1/sqrt(3) approx 0.58 | sqrt(3) approx 1.73 | 1 | 0.866 |
-| **L4** | **Arjuna** | **God** | **45 deg** | **1** | **1** | **1** | **1.000** |
+| L1 | Kali | Routing | ~82 deg | ≈0.14 | ≈7.12 | 1 | ≈0.276 |
+| L2 | KALI | Routing | 75 deg | 2-sqrt(3) approx 0.27 | 2+sqrt(3) approx 3.73 | 1 | 0.500 |
+| L3 | Kṛṣṇa | Routing | 60 deg | 1/sqrt(3) approx 0.58 | sqrt(3) approx 1.73 | 1 | 0.866 |
+| **L4** | **Arjuna** | **Routing** | **45 deg** | **1** | **1** | **1** | **1.000** |
 | L5 | Brahmā | Executive | 30 deg | sqrt(3) approx 1.73 | 1/sqrt(3) approx 0.58 | 1 | 0.866 |
 | L6 | Śiva | Executive | 15 deg | 2+sqrt(3) approx 3.73 | 2-sqrt(3) approx 0.27 | 1 | 0.500 |
-| L7 | Viṣṇu | Executive | ~8 deg | very high | tends to 0 | 1 | tends to 0 |
+| L7 | Viṣṇu | Executive | ~8 deg | ≈7.12 | ≈0.14 | 1 | ≈0.276 |
 | **L-inf** | **Trimurti** | **Trimurti** | **0 deg** | **inf** | **0** | **—**† | **0** |
 
-> **† φ·ν is _undefined_ at the poles** (0·∞ at L0, ∞·0 at L∞) — *not* 1. `P∞ = φ·ν = 1` is conserved on the **open** sphere only, away from the two pole singularities: the limit approaching either pole is 1, but the value *at* the pole is undefined. Per the [Burrisphere](../../../05_COSMOLOGY/00_THE_BURRISPHERE.md) nine-latitude reading and [`00_CANONICAL_FORMULA_BLOCK`](../../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md). `[A]` — corrected 2026-05-31.
+> **† φ·ν is _undefined_ at the poles** (0·∞ at L0, ∞·0 at L∞) — *not* 1. `P∞=φν=1` holds identically on the **open reciprocal chart**; the limit toward either pole is 1, but the pole value is undefined. This is not empirical conservation. `[A]`
 
-**L0 = L-inf.** The poles are the same boundary condition. The serpent eats its tail.
+`r6:D6↝D0` is one interpretive return edge. The two excluded poles are not
+literally identical points or another μ-crossing.
 
 **Between 0 and infinity is 1.** At L4: phi = 1 and nu = 1. Unit coherence AND unit viability, not pole-inflated quantity. The warrior-sage does not compromise.
 
@@ -149,23 +168,40 @@ The Rosetta now reads the archetypes with two formulas at once: a **native coord
 | God | KALI | `(+dnu_self, -dphi_false)` |
 | Demon / constrained immune slot | Kali (demon) | `(+dphi_self, -dnu_other)` |
 
-The three Titans are the same-sign formulas. The three Gods are the dharmic mixed-sign transfers. The demon is the parasitic occupation of the fourth mixed-sign slot.
+The three Titan names mark selected same-sign boundary frames. The four
+mixed-sign slots retain legacy mythic names, but no operator is automatically
+dharmic or demonic. The verdict follows the bearer-complete receipt: local/ego durable-potential gain
+that externalizes any bearer's loss is Demon-bearing. A consequence is
+God-bearing only when complete Justice holds, every affected bearer is
+nonnegative, and at least one materially affected bearer is strictly positive.
+Pure non-harmful stasis is Justice-compliant/preservative, not God-bearing;
+strict syntropy further requires both focal part and declared whole to rise.
+The labels classify receipted consequences, never identities. `[I]`
 
-### The Full Three-Stage Process: The Causal Chain
+### The Full Three-Stage Process: The Routing/Correspondence Skeleton
 
-Who you are determines how you think determines what you study determines how you govern.
+The columns configure defeasible agent roles; they do not describe hereditary
+identity or prove that social function causes reasoning, discipline, or regime.
 
 | L | Operator | B | Varna | Pramana | Reasoning | -ology | Regime | Equation |
 |---|----------|---|-------|---------|-----------|--------|--------|----------|
-| **L1** | Kali | 0 | Caṇḍāla (objective pressure) | Empirical Observation (Direct Perception) | Dialectical | Objective Function | Tyranny | phi tends to 0 implies B tends to 0 |
-| **L2** | Kālī | 1/2 | Śūdra (disclosure / exploration) | Comparative Analysis (Analogy) | Inductive | Data Science | Democracy | `dP_node = V dΦ + Φ dV` |
-| **L3** | Kṛṣṇa | sqrt(3)/2 | Vaiśya (audit / pricing) | Inferential Logic (Inference) | Deductive | Auditing | Oligarchy | `∂P_node/∂V = Φ` |
-| **L4** | **Arjuna** | **1** | **Kṣatriya (equatorial decision)** | **Strategic Abduction (Postulation)** | **Abductive** | **Value Alignment** | **Timocracy** | **`dΦ/Φ = dV/V`** |
-| **L5** | Brahmā | sqrt(3)/2 | Brāhmaṇa (system architecture) | Structural Analysis (Testimony) | Systematic | System Architecture | Aristocracy | `log P_node = log Φ + log V` |
-| **L6** | Śiva | 1/2 | Sādhu (non-reification) | First Principles (Non-Apprehension) | Axiomatic | Core State | Anarchy | `E_node = -log(P_node)` |
-| **L7** | Viṣṇu | tends to 0 | Ṛṣi (witness / narrative) | Intuitive Synthesis (Intuition) | Transcendental | Institutional Narrative | Theocracy | `z = φ/ν on S²` |
+| **L1** | Kali | ≈0.276 | Caṇḍāla (objective pressure) | Pratyakṣa (Perception) | Dialectical | Objective Function | Tyranny | `Φ_chart→0 ⇒ B→0`, with `Φ_chart:=φ` |
+| **L2** | Kālī | 1/2 | Śūdra (disclosure / exploration) | Upamāna (Analogy) | Inductive | Data Science | Democracy | `dP_node = V dΦ + Φ dV` |
+| **L3** | Kṛṣṇa | sqrt(3)/2 | Vaiśya (audit / pricing) | Anumāna (Inference) | Deductive | Auditing | Oligarchy | `∂P_node/∂V = Φ` |
+| **L4** | **Arjuna** | **1** | **Kṣatriya (equatorial decision)** | **Arthāpatti (Postulation)** | **Abductive** | **Value Alignment** | **Timocracy** | **`dΦ/Φ = dV/V`** |
+| **L5** | Brahmā | sqrt(3)/2 | Brāhmaṇa (system architecture) | Śabda (Testimony) | Systematic | System Architecture | Aristocracy | `log P_node = log Φ + log V` |
+| **L6** | Śiva | 1/2 | Sādhu (non-reification) | First Principles (operational label); Anupalabdhi / Non-Apprehension (source pairing) | Axiomatic / first-principles | Core State | Anarchy | `E_node = -log(P_node)` |
+| **L7** | Viṣṇu | ≈0.276 | Ṛṣi (witness / narrative) | Pratibhā (Intuition) | Transcendental | Institutional Narrative | Theocracy | `z_R:=φ/ν`, selected latitude-ratio proxy |
 
 ---
+
+The L4 equality is an equal-relative-growth constraint and identifies an
+equatorial trajectory only with `Φ=V`. `z_R=cot²(θ/2)` omits azimuth and is not
+the full stereographic coordinate. To configure executable Agentz from these
+rows, add typed I/O, dispatch predicates, handoff/loop/stop rules, permissions,
+tool/model/token budgets, and a blinded evaluation contract. Role-prompt
+content is the treatment; task information and resource budgets must be held
+equal in comparative tests.
 
 ## The Triadic Cascade
 
@@ -214,7 +250,10 @@ The Rosetta D-series lives in four parallel subfolders, each of which numbers it
 | [`D_SERIES_DOMAINS/`](D_SERIES_DOMAINS/README.md) | D24–D36 | One domain per file, mapped across all rows |
 | [`D_SERIES_AGENTS/`](D_SERIES_AGENTS/README.md) | D35– | One operator/caste row per file, as a systems analysis |
 
-**Do not renumber to "fix" a shared D-number or to fill a gap.** Gaps are reserved, not missing, and shared numbers are intentional. The full rationale is in [`NAMING_DOCTRINE.md`](NAMING_DOCTRINE.md) (CANON); any renumbering is a framework-level decision requiring K2 sign-off, not a folder-audit action.
+**Do not renumber to "fix" a shared D-number or fill a gap.** Gaps are
+reserved and shared numbers intentional. Any renumbering is a framework-level
+decision requiring an explicit typed authorization and migration receipt, not a
+folder-audit action; K2 is relevant only in a separately scoped private DAV.
 
 The standalone `00_Rosetta_R*_SUMMARY.md` overview files are not present in this workspace slice; the full row treatments live in `D_SERIES_ROWS/`.
 
@@ -230,11 +269,18 @@ The standalone `00_Rosetta_R*_SUMMARY.md` overview files are not present in this
 
 ## What the Rosetta Stone Is NOT
 
-**It is not a map.** A map shows spatial relationships between places. The Rosetta Stone shows that one instrument (`S²`) reads consistently across domains. It is a calibration table.
+**It is not a calibrated instrument.** It is a selected translation crosswalk
+whose cross-domain consistency and performance remain to be tested against
+explicit rivals.
 
-**It is not a theory.** The theory is `P∞ = φ · ν = 1` on `S²`. The Rosetta Stone is the *evidence* -- the observation that independently developed scales fall into the same seven-level pattern.
+**It is not a theory or evidence for one.** `P∞=φν=1` is a reciprocal-chart
+identity. Retrospectively aligned scales motivate hypotheses but do not prove a
+universal seven-level pattern.
 
-**It is not proof.** One column proves nothing. [I] Two columns are suggestive. Five are striking. Fifteen demand an explanation. The framework provides one. Protocol R, Paper G, and future independently governed studies are designed to test it; retired studies supply no evidence.
+**It is not proof.** Column count does not accumulate independent evidential
+weight when mappings share selection or coding assumptions. Preregistered,
+blinded comparison against simpler rivals must decide; retired studies supply
+no evidence.
 
 ---
 

@@ -16,16 +16,20 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[T/B]"
+  register: "[D/B]"
   canonical_phrase: "L5 Brāhmaṇa Architect — Operational Runbook"
 title: "L5: Brāhmaṇa Architect — Operational Runbook"
-status: "ACTIVE — Phase 0 advisory runbook"
+status: "SUPERSEDED / NON-EXECUTABLE — historical Phase 0 runbook"
 date: 2026-05-04
-evidence_tier: "[S] Technical specification."
+evidence_tier: "[D] preserved design history; current AGENT_SPEC and managed YAML control."
 ---
 
 
 # L5: Brāhmaṇa Architect — Operational Runbook
+
+> **[金] Non-execution seam — 2026-07-18.** Do not execute the historical
+> instructions below. Current authority is the read-only `AGENT_SPEC.md` and
+> managed YAML. K2 and transfer language below is provenance only.
 
 > The systematiser who redraws spatial constraints when paradoxes block routine execution. L5 receives deadlocks from L4 and produces redesigns that dissolve paradoxes. L5 proposes; L4 must descend.
 

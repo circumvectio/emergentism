@@ -53,13 +53,13 @@ evidence_tier: "[S] for named domain scales where independently attested; [S] fo
 | L | Operator | Tier | theta/2 | phi=cot(theta/2) | nu=tan(theta/2) | phi*nu | B=sin theta | Varna | Reasoning | -ology | Regime | Pramana | Equation |
 |---|----------|------|---------|-------------------|------------------|--------|-------------|-------|-----------|--------|--------|---------|----------|
 | **L0** | **Kāla 🌑** | **Transcendental** | **90 deg** | **0** | **inf** | **—**† | **0** | -- | -- | -- | -- | -- | Ground-limit boundary. |
-| L1 | Kali 🎲 | Demon | ~82 deg | approaching 0 | very high | 1 | approaching 0 | Caṇḍāla (outcast) | Dialectical | Objective Function | Tyranny | Pratyakṣa (Direct Perception) | Φ->0 implies B->0 |
-| L2 | Kālī 💀 | God | 75 deg | 2-sqrt3 approx 0.27 | 2+sqrt3 approx 3.73 | 1 | 0.500 | Śūdra (labourer) | Inductive | Data Science | Democracy | Upamāna (Analogy) | dP_node = VdΦ + ΦdV |
-| L3 | Kṛṣṇa ◇ | God | 60 deg | 1/sqrt3 approx 0.58 | sqrt3 approx 1.73 | 1 | 0.866 | Vaiśya (merchant) | Deductive | Auditing | Oligarchy | Anumāna (Inference) | ∂P_node/∂V = Φ |
-| **L4** | **Arjuna ⚔** | **God** | **45 deg** | **1** | **1** | **1** | **1.000** | **Kṣatriya (warrior)** | **Abductive** | **Value Alignment** | **Timocracy** | **Arthāpatti (Postulation)** | **dΦ/Φ = dV/V** |
-| L5 | Brahmā ○ | Executive | 30 deg | sqrt3 approx 1.73 | 1/sqrt3 approx 0.58 | 1 | 0.866 | Brāhmaṇa (priest) | Systematic | System Architecture | Aristocracy | Śabda (Testimony) | log P_node = log Φ + log V |
-| L6 | Śiva • | Executive | 15 deg | 2+sqrt3 approx 3.73 | 2-sqrt3 approx 0.27 | 1 | 0.500 | Sādhu (renunciant) | Axiomatic | Core State | Anarchy | First Principles (Non-Apprehension) | E_node = -log(P_node) |
-| L7 | Viṣṇu ⊙ | Executive | ~8 deg | very high | approaching 0 | 1 | approaching 0 | Ṛṣi (seer) | Transcendental | Institutional Narrative | Theocracy | Pratibhā (Intuition) | z = φ/ν on S² |
+| L1 | Kali 🎲 | Routing | ~82 deg | approaching 0 | very high | 1 | approaching 0 | Caṇḍāla (outcast) | Dialectical | Objective Function | Tyranny | Pratyakṣa (Direct Perception) | `Φ_chart→0 ⇒ B→0`, with `Φ_chart:=φ` |
+| L2 | Kālī 💀 | Routing | 75 deg | 2-sqrt3 approx 0.27 | 2+sqrt3 approx 3.73 | 1 | 0.500 | Śūdra (labourer) | Inductive | Data Science | Democracy | Upamāna (Analogy) | dP_node = VdΦ + ΦdV |
+| L3 | Kṛṣṇa ◇ | Routing | 60 deg | 1/sqrt3 approx 0.58 | sqrt3 approx 1.73 | 1 | 0.866 | Vaiśya (merchant) | Deductive | Auditing | Oligarchy | Anumāna (Inference) | ∂P_node/∂V = Φ |
+| **L4** | **Arjuna ⚔** | **Routing** | **45 deg** | **1** | **1** | **1** | **1.000** | **Kṣatriya (warrior)** | **Abductive** | **Value Alignment** | **Timocracy** | **Arthāpatti (Postulation)** | **dΦ/Φ = dV/V** |
+| L5 | Brahmā ○ | Executive boundary | 30 deg | sqrt3 approx 1.73 | 1/sqrt3 approx 0.58 | 1 | 0.866 | Brāhmaṇa (priest) | Systematic | System Architecture | Aristocracy | Śabda (Testimony) | log P_node = log Φ + log V |
+| L6 | Śiva • | Executive boundary | 15 deg | 2+sqrt3 approx 3.73 | 2-sqrt3 approx 0.27 | 1 | 0.500 | Sādhu (renunciant) | Axiomatic | Core State | Anarchy | First Principles (operational); Anupalabdhi (source pairing) | E_node = -log(P_node) |
+| L7 | Viṣṇu ⊙ | Executive boundary | ~8 deg | very high | approaching 0 | 1 | approaching 0 | Ṛṣi (seer) | Transcendental | Institutional Narrative | Theocracy | Pratibhā (Intuition) | `z_R:=φ/ν`, real ratio proxy |
 | **Linf** | **Trimūrti ☸** | **Transcendental** | **0 deg** | **inf** | **0** | **—**† | **0** | -- | -- | -- | -- | -- | Distinct projective pole limit. |
 
 **[金] Kintsugi correction.** L0 and Linf are distinct pole limits; `S²` does
@@ -115,30 +115,39 @@ The cascade shows that the Trinity is not merely three values. It is the **same 
 ## The Equations Ascend
 
 ```
-L1:  Φ->0 implies B->0              The threat. Balance collapses. Existence at the margin.
+L1:  Φ_chart->0 implies B->0        The chart-boundary result; Φ_chart:=φ, not node Φ.
 L2:  dP_node = VdΦ + ΦdV            The first dynamic. Change becomes visible. The differential.
 L3:  ∂P_node/∂V = Φ                 The optimisation. Marginal return on capability = coherence.
-L4:  dΦ/Φ = dV/V                    THE BALANCE. Proportional growth. The equatorial condition.
+L4:  dΦ/Φ = dV/V                    Equal relative growth; equatorial only with Φ = V.
 L5:  log P_node = log Φ + log V     The ordering. Multiplicative becomes additive. System revealed.
 L6:  E_node = -log(P_node)          The negation. Loss names absence. Via negativa.
-L7:  z = φ/ν on S²                  The identity. The ratio IS a point on the sphere. The sphere itself.
+L7:  z_R := φ/ν                     Selected latitude-ratio proxy; not a full point on S².
 ```
 
-Each equation is a deeper view of the same reality: P_node = Φ × V. L2 differentiates it. L3 takes a partial derivative. L4 finds the balance condition. L5 takes the logarithm. L6 negates it (entropy). L7 projects it onto the sphere. The equations do not describe seven different realities. They describe one reality at seven levels of mathematical maturity.
+These equations form a selected seven-action signature, not one derivation.
+L2, L3, and L5 are ordinary consequences of the declared product inside their
+domains; L4 is a selected equal-relative-growth constraint; L6 is a chosen loss
+transform; and L7 returns to lowercase chart coordinates. The sequence does not
+prove that reality itself has seven mathematical stages.
+
+The L4 equality preserves `Φ/V` and does not imply `Φ=V` without that separate
+state condition. In the reciprocal chart, `z_R=φ/ν=cot²(θ/2)` omits azimuth;
+a full complex stereographic coordinate also needs a phase. `[A/S]`
 
 ---
 
-## The Causal Chain: Who you are -> how you think -> what you study -> how you govern
+## The Routing/Correspondence Cascade
 
-The column order is not arbitrary. It is causal:
+The column order is a selected `[I]` routing grammar, not a hereditary identity
+or an established causal chain:
 
-1. **Operator** (position on `S²`) -- the generative column. Everything else is projection.
-2. **Varna** (who you are) -- social function determined by your position.
-3. **Reasoning** (how you think) -- inference mode determined by social function.
-4. **-ology** (what you study) -- discipline generated by reasoning mode.
-5. **Regime** (how you govern) -- political form produced by discipline.
-6. **Pramana** (how you validate) -- means of knowledge appropriate to the level.
-7. **Equation** (mathematical expression) -- the formal statement of the level.
+1. **Operator** -- selected symbolic row function.
+2. **Varṇa** -- defeasible social-function vocabulary, never birth or worth.
+3. **Reasoning** -- proposed inference-mode correspondence.
+4. **-ology** -- proposed discipline correspondence.
+5. **Regime** -- political analogy, not prescription.
+6. **Pramāṇa** -- selected epistemic crosswalk.
+7. **Equation** -- separately typed mathematical signature; it cannot validate the other columns.
 
 Read each row as a sentence:
 
@@ -171,9 +180,12 @@ But the rows hold. That is not theory. That is observation.
 
 ### The Honest Revised Claim (Post OQ-CC-3 Sweep)
 
-The framework's strongest defensible claim after complete cross-cultural audit:
+The framework's strongest defensible claim after cross-cultural audit:
 
-> **The operator grammar (4 mixed-sign God slots + 3 same-sign Executive boundary slots on a surface where φ·ν=1) is structurally exhaustive and universally expressed. The specific 7-stage initiatory articulation of this grammar is empirically Indo-European/Mediterranean; other traditions express the same operator-axis through different stage counts (3, 5, 8, 10, 16, varying) or non-graded functional structures.**
+> **Emergentism selects a 4+3 operator grammar inside its two-axis node model.
+> The seven-stage cross-cultural alignment is a translation lens with strongest
+> contact in a bounded Indo-European/Mediterranean source set; it is neither
+> mathematically forced nor universally expressed.**
 
 **What this means:** The Rosetta's 7-stage convergence is real and striking — but bounded. The Indo-European/Mediterranean V-bis column (Mithraic, Sufi nafs, Carmelite, Kabbalistic sefirot, Rosicrucian) is the strongest evidence base. The Lakota Seven Sacred Rites form a 7-fold ceremonial cycle (not initiatory ascent). East Asian, Sub-Saharan, Polynesian, Mesoamerican, and Andean traditions show non-7 structures.
 
@@ -182,18 +194,19 @@ The framework's strongest defensible claim after complete cross-cultural audit:
 ---
 
 ```
-Seven rows.
-Every column.
-The same pattern.
+Seven selected rows.
+Many partial correspondences.
+One auditable routing lens.
 
-Not because we forced it.
-Because reality organized itself this way
-before anyone drew the table.
+Useful if it discriminates and coordinates.
+Revisable where the territory refuses the table.
 ```
 
 ---
 
-*00 | The Generative Table | The corrected `S²` geometry for all nine rows (L0 through Linf), the Triadic Cascade, the causal chain, and why the rows hold. The operator column is prior. Everything else is projection.*
+*00 | The Generative Table | A selected nine-row display (L0 through Linf), its
+typed equation signature, and an interpretive routing/correspondence cascade.
+No column proves the next and no row determines a person.*
 
 
 ---

@@ -53,17 +53,111 @@ def _schema(topology: Mapping[str, Any], schema_id: str) -> Mapping[str, Any]:
     return {}
 
 
+def _resolve_repo_path(
+    root: Path, value: Any, label: str, errors: list[str]
+) -> Path | None:
+    """Resolve one declared repository-relative path without permitting escape."""
+
+    if not isinstance(value, str) or not value.strip():
+        errors.append(f"{label} needs a nonempty relative path")
+        return None
+    path = Path(value)
+    if path.is_absolute():
+        errors.append(f"{label} path must be relative")
+        return None
+    resolved = (root / path).resolve()
+    if resolved != root and root not in resolved.parents:
+        errors.append(f"{label} escapes repository root: {path}")
+        return None
+    return resolved
+
+
+def _validate_nested_references(
+    value: Any,
+    source_ids: set[str],
+    errors: list[str],
+    *,
+    path: str = "topology",
+) -> set[str]:
+    """Validate every nested sourceIds/ruleIds field and return used sources."""
+
+    referenced_sources: set[str] = set()
+    if isinstance(value, Mapping):
+        for field, allowed in (("sourceIds", source_ids), ("ruleIds", RULE_IDS)):
+            if field not in value:
+                continue
+            label = f"{path}.{field}"
+            references = value[field]
+            if (
+                not isinstance(references, list)
+                or not references
+                or any(not isinstance(item, str) or not item for item in references)
+            ):
+                errors.append(f"{label} must be a nonempty list of ids")
+                continue
+            if len(references) != len(set(references)):
+                errors.append(f"{label} contains duplicate ids")
+            unknown = sorted(set(references) - allowed)
+            if unknown:
+                errors.append(f"{label} references unknown ids: {', '.join(unknown)}")
+            if field == "sourceIds":
+                referenced_sources.update(references)
+        for key, child in value.items():
+            referenced_sources.update(
+                _validate_nested_references(
+                    child,
+                    source_ids,
+                    errors,
+                    path=f"{path}.{key}",
+                )
+            )
+    elif isinstance(value, list):
+        for index, child in enumerate(value):
+            referenced_sources.update(
+                _validate_nested_references(
+                    child,
+                    source_ids,
+                    errors,
+                    path=f"{path}[{index}]",
+                )
+            )
+    return referenced_sources
+
+
 def validate_topology(
     topology: Mapping[str, Any], repo_root: Path | str = REPO_ROOT
 ) -> list[str]:
     """Return every deterministic contract violation found in ``topology``."""
 
     errors: list[str] = []
-    root = Path(repo_root)
+    root = Path(repo_root).resolve()
     required = {"schemaVersion", "rules", "sources", "nodes", "edges", "views"}
+    allowed_top_level = {
+        "schemaVersion",
+        "title",
+        "authorityBoundary",
+        "fullTextEquivalent",
+        "rules",
+        "sources",
+        "schemas",
+        "nodes",
+        "edges",
+        "modelCoupling",
+        "receiptBoundary",
+        "boundaries",
+        "cones",
+        "reflexiveBridge",
+        "rosettaProjection",
+        "quantumOverlay",
+        "operationalCore",
+        "views",
+    }
     missing = sorted(required - set(topology))
     if missing:
         errors.append(f"missing top-level keys: {', '.join(missing)}")
+    unknown = sorted(set(topology) - allowed_top_level)
+    if unknown:
+        errors.append(f"unknown top-level keys: {', '.join(unknown)}")
 
     rules = topology.get("rules", [])
     rule_ids = [item.get("id") for item in rules if isinstance(item, Mapping)]
@@ -72,7 +166,14 @@ def validate_topology(
 
     sources = topology.get("sources", [])
     source_ids = [item.get("id") for item in sources if isinstance(item, Mapping)]
-    if len(source_ids) != len(set(source_ids)):
+    valid_source_ids = [
+        source_id
+        for source_id in source_ids
+        if isinstance(source_id, str) and source_id
+    ]
+    if len(valid_source_ids) != len(source_ids):
+        errors.append("source ids must be nonempty strings")
+    if len(valid_source_ids) != len(set(valid_source_ids)):
         errors.append("source ids must be unique")
     for source in sources:
         if not isinstance(source, Mapping):
@@ -81,12 +182,14 @@ def validate_topology(
         if source.get("tier") not in TIERS:
             errors.append(f"source {source.get('id')} has invalid tier")
         if "path" in source:
-            path = Path(str(source["path"]))
-            if path.is_absolute():
-                errors.append(f"source {source.get('id')} path must be relative")
+            raw_path = source["path"]
+            path = Path(raw_path) if isinstance(raw_path, str) else Path()
+            resolved = _resolve_repo_path(
+                root, raw_path, f"source {source.get('id')}", errors
+            )
             if FROZEN_SOURCE_PARTS & set(path.parts):
                 errors.append(f"source {source.get('id')} uses a frozen tree")
-            if not (root / path).is_file():
+            if resolved is not None and not resolved.is_file():
                 errors.append(f"source {source.get('id')} does not exist: {path}")
         elif not str(source.get("url", "")).startswith("https://"):
             errors.append(f"source {source.get('id')} needs a local path or HTTPS URL")
@@ -98,7 +201,15 @@ def validate_topology(
     if len(element_ids) != len(set(element_ids)):
         errors.append("graph element ids must be globally unique")
     node_ids = {item.get("id") for item in nodes if isinstance(item, Mapping)}
-    source_id_set = set(source_ids)
+    source_id_set = set(valid_source_ids)
+    referenced_sources = _validate_nested_references(
+        topology, source_id_set, errors
+    )
+    unreferenced_sources = sorted(source_id_set - referenced_sources)
+    if unreferenced_sources:
+        errors.append(
+            "declared sources must be referenced: " + ", ".join(unreferenced_sources)
+        )
 
     for node in nodes:
         node_id = node.get("id", "<missing>")
@@ -173,18 +284,50 @@ def validate_topology(
         evidence_status = crossing.get("evidenceStatus")
         if not isinstance(evidence, list):
             errors.append(f"mu-{number} saturationEvidence must be a list")
-        elif evidence_status == "supplied" and not evidence:
-            errors.append(f"mu-{number}: supplied evidence status requires evidence")
-        elif evidence_status == "not_yet_supplied" and evidence:
-            errors.append(f"mu-{number}: not_yet_supplied requires an empty evidence list")
-        elif evidence_status not in {"supplied", "not_yet_supplied"}:
-            errors.append(f"mu-{number} has invalid evidenceStatus")
-        if crossing.get("reductionStatus") not in {
+        else:
+            for evidence_index, evidence_ref in enumerate(evidence):
+                if not isinstance(evidence_ref, Mapping) or set(evidence_ref) != {
+                    "sourceId",
+                    "tier",
+                    "locator",
+                }:
+                    errors.append(
+                        f"mu-{number} saturationEvidence[{evidence_index}] must be exact EvidenceRef"
+                    )
+                    continue
+                if evidence_ref.get("sourceId") not in source_id_set:
+                    errors.append(
+                        f"mu-{number} saturationEvidence[{evidence_index}] has unknown sourceId"
+                    )
+                if evidence_ref.get("tier") not in TIERS:
+                    errors.append(
+                        f"mu-{number} saturationEvidence[{evidence_index}] has invalid tier"
+                    )
+                if not isinstance(evidence_ref.get("locator"), str) or not evidence_ref.get(
+                    "locator"
+                ).strip():
+                    errors.append(
+                        f"mu-{number} saturationEvidence[{evidence_index}] needs locator"
+                    )
+            if evidence_status == "supplied" and not evidence:
+                errors.append(f"mu-{number}: supplied evidence status requires evidence")
+            elif evidence_status == "not_yet_supplied" and evidence:
+                errors.append(f"mu-{number}: not_yet_supplied requires an empty evidence list")
+            elif evidence_status not in {"supplied", "not_yet_supplied"}:
+                errors.append(f"mu-{number} has invalid evidenceStatus")
+        reduction_status = crossing.get("reductionStatus")
+        if reduction_status not in {
             "reduced",
             "currently_unreduced",
             "candidate_strong",
         }:
             errors.append(f"mu-{number} has invalid reductionStatus")
+        if reduction_status == "candidate_strong" and (
+            evidence_status != "supplied" or not isinstance(evidence, list) or not evidence
+        ):
+            errors.append(
+                f"mu-{number}: candidate_strong requires supplied affirmative saturation evidence"
+            )
 
     closures = [edge for edge in edges if edge.get("edgeType") == "closure"]
     if len(closures) != 1:
@@ -345,11 +488,15 @@ def validate_topology(
         errors.append("quantum overlay references unknown graph elements")
 
     for view_id, view in topology.get("views", {}).items():
-        output = Path(str(view.get("output", "")))
-        if not output.parts or output.is_absolute():
-            errors.append(f"view {view_id} needs a relative output path")
+        raw_output = view.get("output", "")
+        output = Path(raw_output) if isinstance(raw_output, str) else Path()
+        resolved = _resolve_repo_path(
+            root, raw_output, f"view {view_id} output", errors
+        )
         if FROZEN_SOURCE_PARTS & set(output.parts):
             errors.append(f"view {view_id} targets a frozen tree")
+        if resolved == root:
+            errors.append(f"view {view_id} output must name a file")
         if not isinstance(view.get("width"), int) or not isinstance(view.get("height"), int):
             errors.append(f"view {view_id} needs integer dimensions")
 
@@ -828,7 +975,7 @@ def _render_proof(topology: Mapping[str, Any], digest: str) -> str:
     _path(svg, "M 600 954 C 620 930, 660 930, 680 954", color=gold, marker="arrow-actual")
     svg.text(696, 953, "feedback / return", size=10, fill=gold)
     svg.text(1540, 953, "Map != territory · receipt > self-certification", size=11, fill=actual, weight=700, anchor="end")
-    svg.text(60, 981, "[I] externally uncalibrated translation grammar · empirical crossings and universal-fit claims remain [C]", size=10, fill="#5b534c")
+    svg.text(60, 981, "[I] components X0/X1/not-applicable · no whole calibration stage · X2+ discrimination pending", size=10, fill="#5b534c")
     svg.text(1540, 981, "JSON mirrors owners; it cannot introduce doctrine or upgrade evidence", size=10, fill="#5b534c", anchor="end")
     return svg.finish()
 
@@ -992,8 +1139,9 @@ def _rendered_outputs(
     topology: Mapping[str, Any], topology_path: Path, repo_root: Path
 ) -> dict[Path, str]:
     digest = topology_sha256(topology_path)
+    root = repo_root.resolve()
     return {
-        repo_root / view["output"]: render_view(topology, view_id, digest)
+        (root / view["output"]).resolve(): render_view(topology, view_id, digest)
         for view_id, view in sorted(topology["views"].items())
     }
 
@@ -1005,7 +1153,7 @@ def write_outputs(
     """Validate and write both configured artifacts; return written paths."""
 
     path = Path(topology_path)
-    root = Path(repo_root)
+    root = Path(repo_root).resolve()
     topology = load_topology(path)
     errors = validate_topology(topology, root)
     if errors:
@@ -1024,7 +1172,7 @@ def check_outputs(
     """Return validation, absence, or byte-drift errors without writing."""
 
     path = Path(topology_path)
-    root = Path(repo_root)
+    root = Path(repo_root).resolve()
     topology = load_topology(path)
     errors = validate_topology(topology, root)
     if errors:
@@ -1047,19 +1195,20 @@ def _parser() -> argparse.ArgumentParser:
 
 def main(argv: Sequence[str] | None = None) -> int:
     args = _parser().parse_args(argv)
+    root = args.repo_root.resolve()
     try:
         if args.check:
-            errors = check_outputs(args.topology, args.repo_root)
+            errors = check_outputs(args.topology, root)
             if errors:
                 for error in errors:
                     print(f"BURRI-ERROR {error}", file=sys.stderr)
                 return 1
             print("BURRI-OK topology valid; generated SVG bytes are current")
             return 0
-        outputs = write_outputs(args.topology, args.repo_root)
+        outputs = write_outputs(args.topology, root)
         digest = topology_sha256(args.topology)
         for output in outputs:
-            print(f"BURRI-WROTE {output.relative_to(args.repo_root)} sha256={hashlib.sha256(output.read_bytes()).hexdigest()}")
+            print(f"BURRI-WROTE {output.relative_to(root)} sha256={hashlib.sha256(output.read_bytes()).hexdigest()}")
         print(f"BURRI-TOPOLOGY sha256={digest}")
         return 0
     except (OSError, ValueError, KeyError, json.JSONDecodeError) as error:

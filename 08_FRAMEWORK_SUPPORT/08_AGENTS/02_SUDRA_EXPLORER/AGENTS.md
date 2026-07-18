@@ -13,7 +13,7 @@ rosetta:
       column: Core State
       role: "cap analogy as non-binding candidate generation"
   operator: "Kālī 💀"
-  tier: "God"
+  tier: "Routing"
   regime: "Śūdra"
   register: "[B/S/I]"
   canonical_phrase: "02_SUDRA_EXPLORER — Agent Routing"

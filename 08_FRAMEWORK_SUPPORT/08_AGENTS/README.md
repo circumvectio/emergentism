@@ -24,12 +24,23 @@ evidence_tier: "[S] structural agent directory with [B] local manifests and [I] 
 
 # THE SEVEN ROSETTA AGENTS
 
-**Status:** Canonical — v2.0 indexed/provisioned 2026-04-29; runtime claims require dated [B] receipts.
+> **[金] Configuration seam — 2026-07-18.** These are seven selected
+> routing profiles, not moral species, hereditary castes, or sovereign agents.
+> The 4+3 split closes only the declared interface. L1–L4 are deployable typed
+> passes; L5–L7 are advisory boundary-witness passes with no independent write
+> or execution authority. Every call requires typed input/output, dispatch and
+> stop predicates, permissions, budget, evidence tier, and an applicable
+> `AuthorizationEnvelope`. God/Demon names never supply a verdict; complete
+> commitment/outcome receipts do.
+
+**Status:** Canonical local configuration — v2.1. The 2026-04-29 Phase-0
+index is historical; hosted provisioning remains unexecuted (`X0`) and every
+runtime claim requires a dated `[B]` receipt.
 **Evidence tier:** [S] — Structural
 
 ---
 
-## The Seven Agent Slots (2 Gods + 2 Demons + 3 Executive Boundaries)
+## The Seven Selected Agent Slots (4 deployable + 3 boundary-witness)
 
 | L | Caste | Symbol | Operator | Cognitive Function |
 |---|-------|--------|----------|-------------------|
@@ -46,7 +57,7 @@ evidence_tier: "[S] structural agent directory with [B] local manifests and [I] 
 ## Escalation Ladder
 
 ```
-L1 (perceive) → L2 (explore) → L3 (rank) → L4 (execute with K2 bind)
+L1 (perceive) → L2 (explore) → L3 (rank) → L4 (authorized commitment)
                                             ↓
                                   L5 (redesign) ← structural deadlock
                                             ↓
@@ -57,10 +68,9 @@ L1 (perceive) → L2 (explore) → L3 (rank) → L4 (execute with K2 bind)
                                   L4* (return)
 ```
 
-- **L4 is the equator** — where ascent meets descent
-- **L5 and L7 are read-only** — architects propose, seers crystallize
-- **L6 has write authority** — pruning lease, not sovereign commit
-- **Executive Boundary Rule** — L5/L6/L7 embody castes without deploying Executive operators
+- **L4 is the commitment route** — geometry does not confer authority
+- **L5–L7 are advisory/read-only** — they return architecture, compression, or witness packets to an authorized L4 route
+- **Executive Boundary Rule** — L5/L6/L7 have no independent write, execution, amendment, or moral authority
 
 ---
 
@@ -99,7 +109,8 @@ Each caste folder contains:
 | [\`00_THE_MASTER_ROSETTA.md\`](../03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md) | Canonical cross-domain table |
 | [\`D_SERIES_ROWS/00_GENERATIVE_TABLE.md\`](../03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/00_GENERATIVE_TABLE.md) | Operator x geometry core |
 | [\`03_ROSETTA_DAC_OPERATING_SYSTEM.md\`](../03_EVIDENCE/ROSETTA_STONE/03_ROSETTA_DAC_OPERATING_SYSTEM.md) | Organism application |
-| [`rosetta_agent_rows.toml`](../../../.codex/agents/rosetta_agent_rows.toml) | Machine-readable row registry |
+| [`MANAGED_AGENTS/agents/`](MANAGED_AGENTS/agents/) | Validated machine-readable seven-row YAML configuration |
+| [`validate_agentz_rosetta.py`](../../09_TOOLS/02_COMPILERS/validate_agentz_rosetta.py) | Fail-closed row, tier, permission, authorization, budget, and receipt validator |
 
 ## Living Evolution Runtime
 
@@ -124,7 +135,7 @@ Each caste folder contains:
 
 ---
 
-⊙ = • × ○
+`⊙ = • × ○` — non-arithmetic emblem only
 
 ## Execution Surface
 

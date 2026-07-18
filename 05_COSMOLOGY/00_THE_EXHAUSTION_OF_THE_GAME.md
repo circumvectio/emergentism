@@ -27,7 +27,11 @@ evidence_tier: "[G]/[S] the 4-mixed + 3-Titan exhaustiveness of the 2×2 self/ot
 > from `φν=1`. The mixed-sign entries and boundary frames remain useful `[I]`
 > vocabulary only when their variables and Justice constraints are declared.
 > D4 is actual action/record; D5 is merely possible content. No move-name or
-> aggregate balance authorizes harm to an individual bearer.
+> aggregate balance authorizes harm to an individual bearer. God/Demon family
+> words in the preserved body do not classify profiles: only complete
+> commitment/outcome receipts support `GodBearing` or `DemonBearing` consequence
+> predicates. Likewise `φν=1` is an analytic chart identity, never conserved
+> empirical potential.
 
 ## Two Gods, Two Demons, and the Titan Boundary that Frames the Board
 
@@ -53,11 +57,21 @@ The off-diagonal has two cells, each realised in the two ledgers — four operat
 - **`−self / +other` = GIVE — the Devas (givers):** **Kṛṣṇa (L3)** gives `Φ` (the teacher's transfer); **Arjuna (L4)** gives `V` (the agent's transfer).
 - **`+self / −other` = TAKE — the Asuras (takers):** **Kālī (L2)** takes `Φ` from the *counterfeit* (the lawful cut); **Kali (L1)** takes `V` to self (the parasitic pull).
 
-**2 give + 2 take. No remainder.** And the discipline that keeps this un-weaponizable: **valence is `η`, never the operator's name.** Kālī is an Asura *by direction* (a taker) yet divine *by level* — a **lawful taker who subtracts `Φ` only from counterfeit coherence, never evil**. Kali is the one demon *by nature*, the unguarded taker that drains true charge. The older **"3 Gods + 1 Demon" is the by-nature count**; the **2+2 is the moral / game-theoretic partition** — both exact, cross-cutting on different axes, and the moral partition leads. Kālī's taking is the surgeon's cut, not the thief's grab; the matrix knows only `+self/−other`, and the lawfulness rides on `η`.
+**Two give-named and two take-named slots in the stipulated interface.** Sign
+direction is descriptive, never a moral verdict. Any operator use is
+Demon-bearing when local/ego durable-potential gain externalizes an affected bearer's loss. It is
+God-bearing only when bearer-complete Justice holds, every affected bearer is
+nonnegative, and at least one materially affected bearer is strictly positive.
+Pure non-harmful stasis is Justice-compliant/preservative, not God-bearing;
+strict syntropy requires part and whole to rise. Neither `η` nor a mythic name
+alone licenses the act; the labels classify receipted consequences, never
+identities.
 
 ## 3. The Titans are the same-sign cells — **frame, not move** `[S/I]`
 
-The same-sign diagonal is where the dyad is treated as *one body*, not two parties exchanging. These are the boundary-frames `{0, 1, ∞}` at the poles (`L0 = L∞`, the ouroboros):
+The same-sign diagonal is where the dyad is treated as one body rather than two
+parties exchanging. Rosetta uses `{0,1,∞}` as selected frame tokens; the two
+poles remain distinct and the ouroboros is an interpretive return image.
 
 - **Brahmā `++`** — both rise: creation, the source.
 - **Śiva `−−`** — both fall: dissolution, the sink.

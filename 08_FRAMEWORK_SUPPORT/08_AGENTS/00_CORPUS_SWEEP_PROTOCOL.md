@@ -24,6 +24,14 @@ evidence_tier: "[S] where applying existing Rosetta agent grammar; [I] where def
 
 # Rosetta Corpus Sweep Protocol
 
+> **[金] Permission seam — 2026-07-18.** This sweep remains a routing checklist,
+> not an authorization grant. L1–L3 return read-only intake/candidate/audit
+> packets; L5–L7 return read-only architecture/compression/constitutional
+> proposals. Only an L4 route operating inside a complete
+> `AuthorizationEnvelope` may mutate files. God/Demon words classify complete
+> receipted effects only, never profiles. The current Managed-Agent README and
+> seven YAML/spec files control any conflicting body text below.
+
 ## Folder, Subfolder, Paper: One Pass At A Time
 
 **Purpose:** Give agents a repeatable procedure for applying the Rosetta
@@ -79,11 +87,12 @@ human-worth hierarchy.
 | L3 Vaiśya | audit | Which option follows the local authority and evidence tier? | ranked repair |
 | L4 Kṣatriya | execute | What is the smallest defensible edit? | patch / commit |
 | L5 Brāhmaṇa | stabilize | What structure, index, or route keeps the edit usable? | README / manifest / map update |
-| L6 Sādhu | destroy | What should be pruned, archived, demoted, or explicitly bounded? | deletion, archive route, or kill criterion |
+| L6 Sādhu | propose compression | What may be pruned, archived, demoted, or explicitly bounded? | read-only successor/tombstone plan, risks, or kill criterion |
 | L7 Ṛṣi | witness | What does this reveal about the whole corpus without taking over execution? | compression note |
 
-L4 is the normal write point. L5/L7 propose and frame. L6 may prune under the
-archive-first / K3 discipline, then returns a lean surface to L4.
+L4 is the only normal write route and still requires accountable authorization.
+L5/L7 propose and frame. L6 proposes archive-first compression; an authorized
+L4 route decides whether to implement it.
 
 ---
 

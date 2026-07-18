@@ -13,9 +13,18 @@ rosetta:
 
 # 04_AXIOLOGY — Justice Signs
 
-> **L4 · Arjuna ⚔ · Kṣatriya · Justice · Dharma — Gate IV (the equator)** of the [seven-fold spine](../00_SEVENFOLD_FOUNDATION_ROOT.md). *Folder № = L-level. L4 is where ascent meets descent — value and signature are one act.*
+> **L4 · Arjuna ⚔ · Kṣatriya · Justice · Dharma — Gate IV (the selected equatorial route)** of the [seven-fold spine](../00_SEVENFOLD_FOUNDATION_ROOT.md). *Folder № = L-level. L4 routes accountable commitment; its equatorial image does not prove value.*
 
 > **Heuristic-mapping note:** Rosetta images and operator/deity names are heuristic mappings [I], not claims of physical or metaphysical fact.
+
+> **[金] Controlling Justice seam — 2026-07-18.** Neither `φν=1`, the
+> `1=0×∞` emblem, `B`, nor the equator derives an ethic. `η=0` is a
+> necessary non-extraction screen, not a sufficient moral test, and aggregate
+> gain cannot compensate for one affected bearer's loss. Justice requires the
+> complete materially affected-bearer set; a full `AuthorizationEnvelope`
+> (principal, mandate, scope, consent, custody, expiry/revocation, contest path,
+> actor, consequence bearer, payer, beneficiary); and separate commitment and
+> world-issued outcome receipts. K2 is only a private-DAV implementation.
 
 **Rosetta level:** L4 · Kṣatriya · Strategic Abduction
 **Canonical phrase:** Justice signs.
@@ -58,21 +67,42 @@ P_node,i = Φ_i × V_i
 P_node,H = Φ_H × V_H
 η = 0
 
-objective morals = i -> H  (the symbiont raises the holobiont)
-objective ethics = H -> i  (the holobiont raises the symbiont)
-objective dharma   = both directions rising together at the action boundary
+morals direction = i -> H  (test the part's effect on the whole and all bearers)
+ethics direction = H -> i  (test the whole's effect on the part and all bearers)
+strict syntropy  = both focal directions rise under complete Justice
 ```
 
+For the complete bearer set `A`, let `J^R(q,r;A)` be the retrospective Justice
+assessment over the commitment receipt `q`, world-issued outcome receipt `r`,
+full envelope, and receipted durable changes `Δ^R W_b(q,r)`. The current
+consequence classes are:
+
+```text
+DemonBearing(q,r) := ∃g,b∈A: FocalBeneficiary(g)
+                       and Δ^R W_g(q,r)>0 and Δ^R W_b(q,r)<0
+GodBearing(q,r)   := J^R(q,r;A) and ∀b∈A: Δ^R W_b(q,r)≥0
+                     and ∃b∈A: Δ^R W_b(q,r)>0
+Stasis(q,r)       := J^R(q,r;A) and ∀b∈A: Δ^R W_b(q,r)=0
+Syntropic(q,r)    := J^R(q,r;A) and Δ^R W_i(q,r)>0
+                     and Δ^R W_H(q,r)>0
+                     and every other affected bearer is nonnegative
+```
+
+Stasis is preservative, not God-bearing and not strict syntropy. Before action,
+only `PredictedDemonBearing_Mt(a)`, `PredictedGodBearing_Mt(a)`, and related
+model-indexed estimates are available; they never substitute for `q,r`.
+
 In the action register, `V` means usable D4 means-to-act: body, tools, energy,
-access, execution capacity. `Φ` means D5 worldline-foresight: the ability to
-envision the reachable future and use those means coherently. A value claim is
+access, execution capacity. `Φ` means an actual D4 model capacity: tokens and
+ranking/selection events that represent D5 possible content. A value claim is
 not stable until it can state how it raises both `P_node,i` and `P_node,H`
 without hidden rent, coercion, or dependency manufacture.
 
-This is framework-objective, not an external proof of moral realism. Once
-reciprocal closure, multiplicative `P_node`, real coupling, long horizon, and
-enforced `η = 0` are accepted, the Power-Max Lemma gives the conditional
-frontier: durable individual worldline potential is searched on trajectories
+This is framework-objective, not an external proof of moral realism. The
+Power-Max Lemma is a selected, testable teleological hypothesis. Only after the
+model, long horizon, complete Justice, and non-extraction constraints are
+declared does it define a conditional
+frontier: durable individual option-cone potential is searched on trajectories
 that preserve or raise the boundary that makes the individual effective.
 
 ---
@@ -84,8 +114,8 @@ L4 is Strategic Abduction: strategic postulation under incomplete data. The warr
 This is why theurgy is not a separate L6 root in the Rosetta-aligned structure. Strategic Implementation is the operative face of L4 value alignment:
 
 - Value Alignment reads value.
-- Strategic Implementation commits one D5-ranked option through D4 means and
-  accountable authorization.
+- Strategic Implementation uses a D4 ranking event over D5 possible content,
+  then commits one attempted action through D4 means and accountable authorization.
 - The selector emits a commitment receipt; the world separately returns an
   outcome receipt. K2 is a private-DAV governance implementation only.
 
@@ -124,9 +154,11 @@ That subfolder exists to prevent a separate "theurgy root" from drifting away fr
 
 ## Claim Boundaries
 
-- `P∞ = φ · ν = 1` names the invariant sphere-product.
+- `φν=1` is an analytic identity on the selected open chart; it proves no ethic.
+- `1=0×∞` is an emblem only, never ordinary arithmetic or a moral premise.
 - `B = sin θ` names balance on the sphere.
-- `P_node = Φ × V` names empirical or organizational flourishing.
+- `P_node:=ΦV` names the framework's selected normalized conjunctive model;
+  its fit to empirical or organizational flourishing remains `[I/C]`.
 - The declared evaluation mechanics are `[S]` inside the accepted framework;
   the bearer-complete Justice envelope is the normative gate and remains an
   `[I]` commitment. Power-Max operates only inside that admissible field.

@@ -1,0 +1,504 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Emergentist Compass External Calibration Claims",
+  "asOf": "2026-07-18",
+  "authorityBoundary": "Machine-readable calibration records only. The Markdown ledger owns semantic wording. This file cannot create doctrine, validate the whole Compass, or promote evidence tiers.",
+  "wholeCompassVerdict": {
+    "calibrationStage": "not_assigned",
+    "componentStages": ["X0_internal_only", "X1_construct_anchor", "not_applicable"],
+    "evidenceTier": "I",
+    "validated": false,
+    "wording": "No whole-system calibration stage is assigned. Components range from X0 to X1 or not applicable; prospective discrimination and independent replication remain pending."
+  },
+  "calibrationStages": [
+    "X0_internal_only",
+    "X1_construct_anchor",
+    "X2_independent_data_discrimination",
+    "X3_independent_preregistered_replication",
+    "X4_cross_domain_replication",
+    "not_applicable"
+  ],
+  "claimClasses": [
+    "analytic",
+    "structural",
+    "empirical",
+    "normative",
+    "correspondence",
+    "symbolic"
+  ],
+  "sourceDistances": [
+    "direct_construct",
+    "partial_overlap",
+    "analogy",
+    "normative_precedent",
+    "not_applicable"
+  ],
+  "sources": [
+    {
+      "id": "SRC-PETERS-2010",
+      "citation": "Peters and Buechel 2010, Episodic future thinking reduces reward delay discounting",
+      "url": "https://doi.org/10.1016/j.neuron.2010.03.026",
+      "sourceType": "primary_experiment",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-DAW-2011",
+      "citation": "Daw et al. 2011, Model-based influences on humans' choices and striatal prediction errors",
+      "url": "https://doi.org/10.1016/j.neuron.2011.02.027",
+      "sourceType": "primary_experiment",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-DOLL-2015",
+      "citation": "Doll et al. 2015, Model-based choices involve prospective neural activity",
+      "url": "https://doi.org/10.1038/nn.3981",
+      "sourceType": "primary_experiment",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-AKAM-2021",
+      "citation": "Akam et al. 2021, The anterior cingulate cortex predicts future states to mediate model-based action selection",
+      "url": "https://doi.org/10.1016/j.neuron.2020.10.013",
+      "sourceType": "primary_experiment",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-KLYUBIN-2005",
+      "citation": "Klyubin, Polani, and Nehaniv 2005, Empowerment",
+      "url": "https://doi.org/10.1109/CEC.2005.1554676",
+      "sourceType": "primary_formal_model",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-TURNER-2021",
+      "citation": "Turner et al. 2021, Optimal policies tend to seek power",
+      "url": "https://proceedings.neurips.cc/paper/2021/hash/c26820b8a4c1b3c2aa868d6d57e14a79-Abstract.html",
+      "sourceType": "primary_theorem",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-WISSNERGROSS-2013",
+      "citation": "Wissner-Gross and Freer 2013, Causal entropic forces",
+      "url": "https://doi.org/10.1103/PhysRevLett.110.168702",
+      "sourceType": "primary_formal_model",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-SALGE-2014",
+      "citation": "Salge et al. 2014, Changing the environment based on empowerment as intrinsic motivation",
+      "url": "https://doi.org/10.3390/e16052789",
+      "sourceType": "primary_simulation",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-NASH-1950",
+      "citation": "Nash 1950, The bargaining problem",
+      "url": "https://doi.org/10.2307/1907266",
+      "sourceType": "primary_theorem",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-MONTEVIL-2015",
+      "citation": "Montevil and Mossio 2015, Biological organisation as closure of constraints",
+      "url": "https://doi.org/10.1016/j.jtbi.2015.02.029",
+      "sourceType": "primary_theory",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-HOEL-2013",
+      "citation": "Hoel, Albantakis, and Tononi 2013, Quantifying causal emergence",
+      "url": "https://doi.org/10.1073/pnas.1314922110",
+      "sourceType": "primary_formal_model",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-FLACK-2017",
+      "citation": "Flack 2017, Coarse-graining as a downward causation mechanism",
+      "url": "https://doi.org/10.1098/rsta.2016.0338",
+      "sourceType": "primary_theory",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-ROSAS-2020",
+      "citation": "Rosas et al. 2020, Reconciling emergences: An information-theoretic approach to identify causal emergence in multivariate data",
+      "url": "https://doi.org/10.1371/journal.pcbi.1008289",
+      "sourceType": "primary_formal_model",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-VICSEK-1995",
+      "citation": "Vicsek et al. 1995, Novel type of phase transition in a system of self-driven particles",
+      "url": "https://doi.org/10.1103/PhysRevLett.75.1226",
+      "sourceType": "primary_simulation",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-CARPENTER-2011",
+      "citation": "Carpenter et al. 2011, Early warnings of regime shifts in a whole-ecosystem experiment",
+      "url": "https://doi.org/10.1126/science.1203672",
+      "sourceType": "primary_experiment",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-RATCLIFF-2012",
+      "citation": "Ratcliff et al. 2012, Experimental evolution of multicellularity",
+      "url": "https://doi.org/10.1073/pnas.1115323109",
+      "sourceType": "primary_experiment",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-WEST-2015",
+      "citation": "West et al. 2015, Major evolutionary transitions in individuality",
+      "url": "https://doi.org/10.1073/pnas.1421402112",
+      "sourceType": "primary_synthesis",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-THERAULAZ-1999",
+      "citation": "Theraulaz and Bonabeau 1999, A brief history of stigmergy",
+      "url": "https://doi.org/10.1162/106454699568700",
+      "sourceType": "primary_synthesis",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-SASAKI-2017",
+      "citation": "Sasaki and Biro 2017, Cumulative culture can emerge from collective intelligence in animal groups",
+      "url": "https://doi.org/10.1038/ncomms15049",
+      "sourceType": "primary_experiment",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-MUCHNIK-2013",
+      "citation": "Muchnik, Aral, and Taylor 2013, Social influence bias",
+      "url": "https://doi.org/10.1126/science.1240466",
+      "sourceType": "primary_field_experiment",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-SALGANIK-2006",
+      "citation": "Salganik, Dodds, and Watts 2006, Experimental study of inequality and unpredictability in an artificial cultural market",
+      "url": "https://doi.org/10.1126/science.1121066",
+      "sourceType": "primary_experiment",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-CENTOLA-2018",
+      "citation": "Centola et al. 2018, Experimental evidence for tipping points in social convention",
+      "url": "https://doi.org/10.1126/science.aas8827",
+      "sourceType": "primary_experiment",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-SOROS-2009",
+      "citation": "Soros 2009, General Theory of Reflexivity transcript",
+      "url": "https://www.opensocietyfoundations.org/uploads/9ae17912-2262-4646-8ffc-d01afc934c36/george-soros-general-theory-of-reflexivity-transcript.pdf",
+      "sourceType": "primary_conceptual_source",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-HEEMEIJER-2009",
+      "citation": "Heemeijer et al. 2009, Price stability and volatility in markets with positive and negative expectations feedback",
+      "url": "https://doi.org/10.1016/j.jedc.2008.09.009",
+      "sourceType": "primary_experiment",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-SMITH-1988",
+      "citation": "Smith, Suchanek, and Williams 1988, Bubbles, crashes, and endogenous expectations",
+      "url": "https://doi.org/10.2307/1911361",
+      "sourceType": "primary_experiment",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-SEN-1970",
+      "citation": "Sen 1970, The impossibility of a Paretian liberal",
+      "url": "https://doi.org/10.1086/259614",
+      "sourceType": "primary_theorem",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-FEHR-2002",
+      "citation": "Fehr and Gaechter 2002, Altruistic punishment in humans",
+      "url": "https://doi.org/10.1038/415137a",
+      "sourceType": "primary_experiment",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-RAND-2009",
+      "citation": "Rand et al. 2009, Positive interactions promote public cooperation",
+      "url": "https://doi.org/10.1126/science.1177418",
+      "sourceType": "primary_experiment",
+      "independentOfCompass": true
+    },
+    {
+      "id": "SRC-LENS",
+      "citation": "Emergentism as a Lens",
+      "path": "00_EMERGENTISM_AS_A_LENS.md",
+      "sourceType": "internal_owner",
+      "independentOfCompass": false
+    },
+    {
+      "id": "SRC-COMPASS",
+      "citation": "The Compass",
+      "path": "00_THE_COMPASS.md",
+      "sourceType": "internal_owner",
+      "independentOfCompass": false
+    },
+    {
+      "id": "SRC-BURRI",
+      "citation": "The Burri Rules",
+      "path": "05_COSMOLOGY/00_THE_BURRI_RULES.md",
+      "sourceType": "internal_owner",
+      "independentOfCompass": false
+    }
+  ],
+  "claims": [
+    {
+      "id": "CAL-AGENCY-01",
+      "title": "Present representations of possible futures can reweight present action",
+      "claimClass": "empirical",
+      "compassClaim": "A present D4 model token representing D5 possible content can alter present action weights through M star A.",
+      "currentVerdict": "External task-bounded cue, association, representation, and circuit-intervention findings anchor the crosswalk; the exact Compass edge and Soul Loop advantage remain untested.",
+      "calibrationStage": "X1_construct_anchor",
+      "sourceDistance": "direct_construct",
+      "evidenceTier": "B/I/C",
+      "sourceIds": ["SRC-PETERS-2010", "SRC-DAW-2011", "SRC-DOLL-2015", "SRC-AKAM-2021", "SRC-COMPASS"],
+      "variables": ["represented future content", "transition model", "present choice distribution", "means", "prediction error"],
+      "intervention": "Randomize present future cues or perturb a preregistered prospective-planning mechanism while holding current rewards and available actions fixed as far as possible.",
+      "outcomes": ["choice probability", "delay discounting", "model-based transition sensitivity", "subsequent model update"],
+      "rivals": ["model-free reinforcement", "habit", "reward-only valuation", "active inference", "heuristic choice"],
+      "prediction": "Future-model intervention changes present choice in the preregistered direction and adds held-out prediction beyond named rivals.",
+      "killCriteria": ["matched future-cue or circuit perturbation leaves present choice unchanged", "prospective-planning perturbation does not impair model-based choice", "a simpler rival predicts as well or better"],
+      "dataset": {"status": "identified_not_run", "independence": "external_source", "dataGeneration": "published_preexisting", "access": "published studies and identified repositories; no Compass analysis claimed"},
+      "preregistration": {"status": "prospective_protocol", "path": "03_METHODOLOGY/03_PREREGISTRATIONS/04_COMPASS_EXTERNAL_CALIBRATION_PREREG.md"},
+      "scopeBoundary": "No realized future state or signal is claimed to cause the present action backward in physical time."
+    },
+    {
+      "id": "CAL-CONE-01",
+      "title": "Agent-relative optionality is measurable but not one universal scalar objective",
+      "claimClass": "empirical",
+      "compassClaim": "An option cone is a typed agent-relative subset of physically admissible histories whose metrics may predict bounded action and competence.",
+      "currentVerdict": "Empowerment, POWER, reachability, path entropy, and viability are established distinct constructs; universal option maximization is rejected.",
+      "calibrationStage": "X1_construct_anchor",
+      "sourceDistance": "direct_construct",
+      "evidenceTier": "B/I/C",
+      "sourceIds": ["SRC-KLYUBIN-2005", "SRC-TURNER-2021", "SRC-WISSNERGROSS-2013", "SRC-SALGE-2014", "SRC-COMPASS"],
+      "variables": ["horizon", "action channel", "reachable outcomes", "controllability", "viability", "cost", "other-bearer optionality"],
+      "intervention": "Decorrelate optionality metrics from reward, risk, information, and cost; vary embodiment and other-agent effects.",
+      "outcomes": ["held-out action", "task competence", "survival", "mutual option change"],
+      "rivals": ["reachable-set size", "empowerment", "POWER", "path entropy", "viability kernel", "expected utility"],
+      "prediction": "A typed option-cone vector predicts bounded competence better than any single optionality scalar in the declared task class.",
+      "killCriteria": ["no option metric adds prediction beyond reward and risk", "the typed vector performs worse than a simpler scalar", "the apparent gain is a representation or duplicate-counting artifact"],
+      "dataset": {"status": "not_selected", "independence": "external_source_required", "dataGeneration": "prospective_independent_collection_required", "access": "prospective benchmark suite"},
+      "preregistration": {"status": "prospective_protocol", "path": "03_METHODOLOGY/03_PREREGISTRATIONS/04_COMPASS_EXTERNAL_CALIBRATION_PREREG.md"},
+      "scopeBoundary": "The physical light cone and c are unchanged."
+    },
+    {
+      "id": "CAL-AGGREGATOR-01",
+      "title": "The product aggregator competes with other conjunctive forms",
+      "claimClass": "empirical",
+      "compassClaim": "In a bounded task class, the product of operationalized Phi and V predicts action success better than prespecified alternative aggregators.",
+      "currentVerdict": "The product has mathematical and bargaining precedents but no universal external fit validation.",
+      "calibrationStage": "X1_construct_anchor",
+      "sourceDistance": "partial_overlap",
+      "evidenceTier": "I/C",
+      "sourceIds": ["SRC-NASH-1950", "SRC-COMPASS"],
+      "variables": ["Phi foresight measure", "V means measure", "task outcome", "decision regret"],
+      "intervention": "Evaluate identical folds and features across product, minimum, harmonic, additive, CES, Cobb-Douglas, Nash-surplus, and maximin models.",
+      "outcomes": ["held-out log score", "calibration", "ranking accuracy", "decision regret"],
+      "rivals": ["minimum", "normalized harmonic", "additive", "CES", "Cobb-Douglas", "Nash surplus", "maximin"],
+      "prediction": "The product wins prespecified held-out metrics in the bounded task class without post-hoc rescaling.",
+      "killCriteria": ["a rival consistently wins", "the zero-factor boundary fails", "Phi or V cannot be measured with acceptable reliability"],
+      "dataset": {"status": "not_selected", "independence": "external_source_required", "dataGeneration": "prospective_independent_collection_required", "access": "prospective multi-task data"},
+      "preregistration": {"status": "prospective_protocol", "path": "03_METHODOLOGY/03_PREREGISTRATIONS/04_COMPASS_EXTERNAL_CALIBRATION_PREREG.md"},
+      "scopeBoundary": "Nash's product neither derives the Compass variables nor protects omitted third parties."
+    },
+    {
+      "id": "CAL-CONSTRAINT-01",
+      "title": "Macrovariables can constrain or reweight lower-level dynamics",
+      "claimClass": "empirical",
+      "compassClaim": "Higher-level organization may restrict or reweight lower-law-admissible trajectories without adding forbidden ones.",
+      "currentVerdict": "Externally anchored as domain-relative constraint, coarse-graining, and causal-emergence work; no universal macro superiority.",
+      "calibrationStage": "X1_construct_anchor",
+      "sourceDistance": "direct_construct",
+      "evidenceTier": "B/I/C",
+      "sourceIds": ["SRC-MONTEVIL-2015", "SRC-HOEL-2013", "SRC-FLACK-2017", "SRC-ROSAS-2020", "SRC-BURRI"],
+      "variables": ["microstate", "environment boundary", "macro-map", "timescale", "intervention", "effective information", "native-unit cost vector", "component cost budgets", "optional bit-equivalent conversion weights"],
+      "intervention": "Perturb realizations of the macrovariable under matched microstate distributions and controlled exogenous conditions; do not condition on an identical complete microstate while claiming an independent macro intervention.",
+      "outcomes": ["held-out prediction", "control loss", "conditional mutual information", "effective information", "robustness"],
+      "rivals": ["complexity-matched micro model", "alternative grain", "hidden-controller model", "summary-only macrovariable"],
+      "prediction": "The macrovariable adds prediction or intervention value robustly across reasonable grains while native-unit costs remain within preregistered component budgets; any scalar penalty is unit-valid.",
+      "killCriteria": ["gain disappears under fair micro or environment controls", "result depends on one arbitrary partition", "controller or thermodynamic costs are hidden or dimensionally laundered", "real intervention fails"],
+      "dataset": {"status": "identified_not_run", "independence": "external_source", "dataGeneration": "published_preexisting", "access": "Vicsek, ecology, and evolution exemplars identified"},
+      "preregistration": {"status": "prospective_protocol", "path": "03_METHODOLOGY/03_PREREGISTRATIONS/04_COMPASS_EXTERNAL_CALIBRATION_PREREG.md"},
+      "scopeBoundary": "Predictive and interventional emergence must be distinguished; neither implies a new force or metaphysical strong emergence."
+    },
+    {
+      "id": "CAL-MU-01",
+      "title": "Mu-crossings are candidate local regime transitions",
+      "claimClass": "empirical",
+      "compassClaim": "A mu-crossing marks saturation, a newly useful effective freedom or boundary result, lower-level recovery, prediction, and kill criterion.",
+      "currentVerdict": "Phase, ecological, and evolutionary transitions are externally real; exactly six universal crossings and literal new microscopic dimensions are unsupported.",
+      "calibrationStage": "X1_construct_anchor",
+      "sourceDistance": "partial_overlap",
+      "evidenceTier": "B/I/C",
+      "sourceIds": ["SRC-VICSEK-1995", "SRC-CARPENTER-2011", "SRC-RATCLIFF-2012", "SRC-WEST-2015", "SRC-BURRI"],
+      "variables": ["microstate X", "control lambda", "environment E", "macro-map g", "macrovariable Z", "kernel K", "interventions", "timescale"],
+      "intervention": "Apply one frozen crossing protocol to transition and smooth non-transition controls in multiple domains.",
+      "outcomes": ["change point", "order parameter", "susceptibility", "hysteresis", "effective dimension", "action repertoire", "lower recovery"],
+      "rivals": ["smooth crossover", "simpler coding schema", "coordinate change", "domain-standard transition model"],
+      "prediction": "The frozen protocol discriminates unseen transition from non-transition cases without domain-specific relabeling.",
+      "killCriteria": ["no replicated change point", "smooth crossover wins", "novelty vanishes under complexity penalty", "mapping requires post-hoc labels"],
+      "dataset": {"status": "identified_not_run", "independence": "external_source", "dataGeneration": "published_preexisting", "access": "published physics, ecology, and evolution sources; cognition remains a prospective domain"},
+      "preregistration": {"status": "prospective_protocol", "path": "03_METHODOLOGY/03_PREREGISTRATIONS/04_COMPASS_EXTERNAL_CALIBRATION_PREREG.md"},
+      "scopeBoundary": "A successful reduction reclassifies a crossing as reduced; missing reduction is never evidence of irreducibility."
+    },
+    {
+      "id": "CAL-EGREGORE-01",
+      "title": "Egregoreotype is a composite trace-and-selection candidate",
+      "claimClass": "empirical",
+      "compassClaim": "A candidate requires persistent trace, carrier turnover, causal selection reweighting, recurrent objective-like bias, and visible substrate costs.",
+      "currentVerdict": "Several components have separate external anchors; the five-condition composite, recurrent objective-like kind, and visible-cost criterion are not independently validated.",
+      "calibrationStage": "X1_construct_anchor",
+      "sourceDistance": "partial_overlap",
+      "evidenceTier": "B/I/C",
+      "sourceIds": ["SRC-THERAULAZ-1999", "SRC-SASAKI-2017", "SRC-MUCHNIK-2013", "SRC-SALGANIK-2006", "SRC-CENTOLA-2018", "SRC-BURRI"],
+      "variables": ["trace persistence", "carrier turnover", "trace intervention", "selection distribution", "target statistic", "substrate costs"],
+      "intervention": "Cross fixed versus replaced carriers with trace preservation, erasure, scrambling, and counterfeiting; reverse incentives and vary centralized instruction.",
+      "outcomes": ["trace survival", "selection effect", "recovery after perturbation", "held-out incremental prediction", "payer and beneficiary costs"],
+      "rivals": ["institutional memory", "current incentives", "copying", "authority", "network structure", "direct coordination", "exogenous shock"],
+      "prediction": "The composite variable adds held-out prediction beyond all prespecified simpler mechanisms and survives full carrier replacement.",
+      "killCriteria": ["trace intervention has no effect", "turnover destroys the pattern", "no recurrent direction survives", "costs cannot be assigned", "a simpler mechanism predicts equally well"],
+      "dataset": {"status": "not_selected", "independence": "external_source_required", "dataGeneration": "prospective_independent_collection_required", "access": "prospective generational microsociety experiment"},
+      "preregistration": {"status": "prospective_protocol", "path": "03_METHODOLOGY/03_PREREGISTRATIONS/04_COMPASS_EXTERNAL_CALIBRATION_PREREG.md"},
+      "scopeBoundary": "Candidacy does not imply consciousness, personhood, sovereignty, goodness, or literal energy feeding."
+    },
+    {
+      "id": "CAL-REFLEXIVITY-01",
+      "title": "Models, participation, and receipts form bounded reflexive feedback",
+      "claimClass": "empirical",
+      "compassClaim": "A fallible model affects action, action affects conditions, and receipts can update both model and selector.",
+      "currentVerdict": "Conceptually attributed to Soros and independently anchored by controlled expectations-feedback and asset-market experiments.",
+      "calibrationStage": "X1_construct_anchor",
+      "sourceDistance": "direct_construct",
+      "evidenceTier": "B/I/C",
+      "sourceIds": ["SRC-SOROS-2009", "SRC-HEEMEIJER-2009", "SRC-SMITH-1988", "SRC-COMPASS"],
+      "variables": ["belief or forecast", "action", "feedback gain", "outcome", "next belief", "experience"],
+      "intervention": "Randomize forecast information or feedback sign/gain and measure belief-action-outcome-update paths.",
+      "outcomes": ["convergence", "deviation", "volatility", "bubble magnitude", "belief update"],
+      "rivals": ["fixed fundamentals", "ordinary learning", "strategic response", "trend following", "exogenous shock"],
+      "prediction": "Declared feedback sign and model intervention improve held-out prediction of action and receipt dynamics.",
+      "killCriteria": ["model intervention does not change action", "feedback sign adds no prediction", "experience or fundamentals fully explain the effect"],
+      "dataset": {"status": "identified_not_run", "independence": "external_source", "dataGeneration": "published_preexisting", "access": "published laboratory market protocols"},
+      "preregistration": {"status": "prospective_protocol", "path": "03_METHODOLOGY/03_PREREGISTRATIONS/04_COMPASS_EXTERNAL_CALIBRATION_PREREG.md"},
+      "scopeBoundary": "Feedback is ordinary forward causation; its positive or negative sign is dynamical, not moral."
+    },
+    {
+      "id": "CAL-SYNTROPY-01",
+      "title": "Syntropic Dyadism is a declared Justice rule",
+      "claimClass": "normative",
+      "compassClaim": "Strict syntropy requires durable positive deltas for part and whole under a bearer-complete Justice envelope.",
+      "currentVerdict": "Normative construction, not an empirical discovery or derivation from the chart; empirical consequence claims use a separate card.",
+      "calibrationStage": "not_applicable",
+      "sourceDistance": "normative_precedent",
+      "evidenceTier": "I/C",
+      "sourceIds": ["SRC-SEN-1970", "SRC-FEHR-2002", "SRC-RAND-2009", "SRC-NASH-1950", "SRC-COMPASS"],
+      "variables": [],
+      "intervention": "Apply a bearer-completeness and logical-counterexample audit to the proposed classification; no experiment is treated as confirmation of moral truth.",
+      "outcomes": ["classification coherence", "aggregate laundering rejected", "voluntary sacrifice remains a distinct class"],
+      "rivals": ["aggregate welfare", "Pareto criterion", "maximin", "libertarian rights", "capability floor"],
+      "prediction": "Inside the accepted Justice axiom, strict syntropy rejects any classification that hides a materially harmed bearer or relabels voluntary sacrifice as mutual gain.",
+      "killCriteria": ["the predicates are internally contradictory", "a materially affected bearer can be omitted without changing the verdict", "the moral rule is claimed to follow from the reciprocal chart or natural selection"],
+      "dataset": {"status": "not_applicable", "independence": "not_applicable", "dataGeneration": "not_applicable", "access": "normative and logical audit only"},
+      "preregistration": {"status": "not_applicable", "path": "03_METHODOLOGY/03_PREREGISTRATIONS/04_COMPASS_EXTERNAL_CALIBRATION_PREREG.md"},
+      "scopeBoundary": "Empirical results cannot prove the moral truth of the Justice axiom."
+    },
+    {
+      "id": "CAL-JUSTICE-CONSEQUENCE-01",
+      "title": "Justice-envelope institutions have separately testable consequences",
+      "claimClass": "empirical",
+      "compassClaim": "In a bounded institutional setting, bearer-complete Justice controls improve prespecified harm detection, correction, durability, or exit outcomes over named governance rivals.",
+      "currentVerdict": "Social-choice and cooperation experiments anchor the relevant tradeoffs; the complete Justice envelope has not been externally tested as one intervention.",
+      "calibrationStage": "X1_construct_anchor",
+      "sourceDistance": "partial_overlap",
+      "evidenceTier": "B/I/C",
+      "sourceIds": ["SRC-SEN-1970", "SRC-FEHR-2002", "SRC-RAND-2009", "SRC-NASH-1950", "SRC-COMPASS"],
+      "variables": ["bearer deltas", "consent", "cost", "reversibility", "exit", "cooperation", "correction", "durability"],
+      "intervention": "Compare prespecified institutions with and without named Justice controls while retaining all bearer-level receipts and equalizing non-treatment resources.",
+      "outcomes": ["hidden-harm detection", "correction latency", "durability", "exit exercise", "individual delta", "whole delta", "third-party delta"],
+      "rivals": ["aggregate welfare rule", "Pareto criterion", "maximin", "rights-only rule", "capability-floor rule"],
+      "prediction": "Justice controls improve at least one preregistered institutional outcome without worsening an omitted bearer because omission is itself a failed run.",
+      "killCriteria": ["the complete envelope adds no consequence beyond a simpler rival", "bearers or costs cannot be measured", "aggregate gains erase a harmed bearer", "cooperation or punishment is relabeled as strict syntropy"],
+      "dataset": {"status": "not_selected", "independence": "external_source_required", "dataGeneration": "prospective_independent_collection_required", "access": "prospective institutional comparison"},
+      "preregistration": {"status": "consequence_protocol_only", "path": "03_METHODOLOGY/03_PREREGISTRATIONS/04_COMPASS_EXTERNAL_CALIBRATION_PREREG.md"},
+      "scopeBoundary": "A consequence result moves only this empirical card; it neither confirms Syntropic Dyadism nor proves moral realism."
+    },
+    {
+      "id": "CAL-SPHERE-01",
+      "title": "S2 is a selected host, not an externally calibrated territory",
+      "claimClass": "empirical",
+      "compassClaim": "For a prespecified observable domain, S2 is the latent geometry of the data and predicts held-out observations better than named alternative geometries.",
+      "currentVerdict": "No direct external calibration supports S2 as the geometry of reality, awareness, agency, or ethics.",
+      "calibrationStage": "X0_internal_only",
+      "sourceDistance": "analogy",
+      "evidenceTier": "I/C",
+      "sourceIds": ["SRC-COMPASS", "SRC-BURRI"],
+      "variables": ["candidate latent geometry", "observables", "sample", "complexity penalty", "held-out fit"],
+      "intervention": "Compare S2 with Euclidean, hyperbolic, toroidal, simplex, and flexible latent alternatives under identical preprocessing and penalties.",
+      "outcomes": ["held-out likelihood", "calibration", "geometry stability", "identifiability"],
+      "rivals": ["Euclidean", "hyperbolic", "toroidal", "simplex", "flexible latent manifold"],
+      "prediction": "S2 uniquely and robustly outperforms prespecified alternative geometries on an independently selected observable domain.",
+      "killCriteria": ["another geometry fits equally well or better", "the inferred geometry is unstable", "the observables do not identify the host"],
+      "dataset": {"status": "not_selected", "independence": "external_source_required", "dataGeneration": "prospective_independent_collection_required", "access": "no decisive dataset designated"},
+      "preregistration": {"status": "design_required", "path": "03_METHODOLOGY/03_PREREGISTRATIONS/04_COMPASS_EXTERNAL_CALIBRATION_PREREG.md"},
+      "scopeBoundary": "A perceptual bound could calibrate a perceptual model only; it cannot validate the geometry of reality."
+    },
+    {
+      "id": "CAL-DISPATCH-01",
+      "title": "The 4+3 Rosetta route is an Agentz dispatch grammar",
+      "claimClass": "empirical",
+      "compassClaim": "Varna to Pramana to reasoning to discipline to regime to equation defines the semantic skeleton of four deployable L1-L4 roles, three L5-L7 boundary-witness passes, and a return loop.",
+      "currentVerdict": "Structurally declared inside the framework; no external result yet shows that this exact 4+3 routing improves agent performance.",
+      "calibrationStage": "X0_internal_only",
+      "sourceDistance": "not_applicable",
+      "evidenceTier": "S/I/C",
+      "sourceIds": ["SRC-LENS", "SRC-COMPASS"],
+      "variables": ["task class", "routing policy", "role assignment", "answer quality", "contradiction rate", "correction rate", "latency", "cost"],
+      "intervention": "Randomly assign matched tasks to the 4+3 Rosetta route, a flat single-agent baseline, and prespecified alternative routing pipelines under equal budget.",
+      "outcomes": ["held-out task quality", "formal error rate", "evidence-tier accuracy", "self-correction", "latency", "compute cost"],
+      "rivals": ["flat single agent", "untyped multi-agent debate", "domain-expert router", "shorter staged pipeline"],
+      "prediction": "The frozen Rosetta routing policy improves quality and correction per unit cost on prespecified heterogeneous tasks without post-hoc role reassignment.",
+      "killCriteria": ["a flat or shorter rival performs equally well or better", "benefit disappears after equalizing compute and prompt-development budget", "row assignments require post-hoc relabeling"],
+      "dataset": {"status": "not_selected", "independence": "external_evaluator_required", "dataGeneration": "prospective_independent_collection_required", "access": "prospective agent benchmark"},
+      "preregistration": {"status": "prospective_protocol", "path": "03_METHODOLOGY/03_PREREGISTRATIONS/04_COMPASS_EXTERNAL_CALIBRATION_PREREG.md"},
+      "scopeBoundary": "The cascade is a semantic skeleton until typed interfaces, dispatch predicates, handoffs, loops, stops, permissions, budgets, and evaluation complete a workflow; intervention is required for any causal-performance claim."
+    },
+    {
+      "id": "CAL-CORRESPONDENCE-01",
+      "title": "Titan, closure, Rosetta, and quantum correspondences are non-calibrating",
+      "claimClass": "correspondence",
+      "compassClaim": "Selected symbolic and cross-domain correspondences can compress a topology while preserving types and tiers.",
+      "currentVerdict": "Interpretive correspondence only; no empirical or ontological tier transfer is licensed.",
+      "calibrationStage": "not_applicable",
+      "sourceDistance": "not_applicable",
+      "evidenceTier": "I/C",
+      "sourceIds": ["SRC-BURRI"],
+      "variables": [],
+      "intervention": "Remove every optional correspondence and verify that the operational calculus remains executable.",
+      "outcomes": ["operational hash", "type preservation", "evidence-tier preservation"],
+      "rivals": ["no correspondence", "alternative mnemonic projection"],
+      "prediction": "Removal leaves commitment, receipt, feedback, constraint, and composition rules intact.",
+      "killCriteria": ["an operational rule depends on a correspondence", "evidence is promoted through analogy", "arithmetic or physics is changed to preserve the emblem"],
+      "dataset": {"status": "not_applicable", "independence": "not_applicable", "dataGeneration": "not_applicable", "access": "internal removal test"},
+      "preregistration": {"status": "not_applicable", "path": "03_METHODOLOGY/03_PREREGISTRATIONS/04_COMPASS_EXTERNAL_CALIBRATION_PREREG.md"},
+      "scopeBoundary": "Neither Everett nor Copenhagen is an extra dimension, and neither mu nor chi is quantum measurement."
+    }
+  ],
+  "sourceNegativeChecks": [
+    {"id": "NEG-WHOLE-VALIDATION", "pattern": "whole Compass is externally validated", "paths": ["00_THE_COMPASS.md", "03_METHODOLOGY/00_EXTERNAL_CALIBRATION_LEDGER.md"]},
+    {"id": "NEG-PHYSICAL-RETRO", "pattern": "future state physically causes the present", "paths": ["00_THE_COMPASS.md", "03_METHODOLOGY/00_EXTERNAL_CALIBRATION_LEDGER.md"]},
+    {"id": "NEG-UNIVERSAL-CONE", "pattern": "all agents maximize reachable futures", "paths": ["00_THE_COMPASS.md"]},
+    {"id": "NEG-DECISIVE-R", "pattern": "THE decisive geometry test", "paths": ["03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md", "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md"]},
+    {"id": "NEG-REALITY-GEOMETRY", "pattern": "This is a claim about the geometry of reality", "paths": ["03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md"]}
+  ]
+}

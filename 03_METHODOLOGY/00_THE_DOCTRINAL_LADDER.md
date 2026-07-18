@@ -25,6 +25,12 @@ rosetta:
 **Evidence tier:** [S] for corpus routing and formula order; [I] for doctrinal interpretation
 **Depends on:** [The Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md), [The Core State of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md), [D-Scaffold / L-Ladder Bridge](../00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md), [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)
 
+> **[金] Controlling seam — 2026-07-18.** This is a reading route, not a
+> derivation of reality or Being from the formula block. Reciprocal identities
+> are analytic chart facts `[A]`; their ontological use is `[I]`. L4 commitment
+> uses a typed `AuthorizationEnvelope`. K2 is one private-DAV governance
+> implementation, not a worldview primitive or universal human-signature law.
+
 ---
 
 ## 0. A7 Self-Correction
@@ -60,12 +66,12 @@ The dual home is deliberate:
 
 | Home | Function | Boundary |
 |---|---|---|
-| **L5 System Architecture** | Names the formula block, the S² invariant, and the affirmative structure reality must satisfy inside the framework. | The model is a model. Do not make the map the Ground. |
-| **L6 Core State** | Uses the seed to speak about Being, finitude, Dasein, and beings. | Core State begins with the seed, but the Ground is not exhausted by the seed. |
+| **L5 System Architecture** | Names the formula block and selected S²/reciprocal representation. | The model is a model; reality need not satisfy the chart. |
+| **L6 Core State** | Uses the seed interpretively to speak about Being, finitude, Dasein, and beings. | No being-structure is mathematically derived from the seed; the Ground is not captured. |
 
-The formula block therefore belongs canonically to L5. The core state pages use
-that seed at L6 to derive being-structure. The website should preserve both
-classifications.
+The formula block therefore belongs canonically to L5. Core-state pages may use
+it as an explicitly tiered interpretive lens at L6; they do not derive
+being-structure from it.
 
 ---
 
@@ -94,7 +100,7 @@ The Foundation roots remain:
 | L1 | Objective Function | Direction / F5 / direct gradient-sensing |
 | L2 | Data Science | How a pattern becomes knowable |
 | L3 | Auditing | How claims are tested, downgraded, and audited |
-| L4 | Value Alignment | Value and K2-signed action |
+| L4 | Value Alignment | Justice-constrained accountable commitment |
 | L5 | System Architecture | Affirmative structure: S², formula block, Rosetta, formal system |
 | L6 | Core State | Axiomatic guard: Ground not exhausted by structure |
 | L7 | Institutional Narrative | Public-symbol return without gatekeeping |
@@ -107,18 +113,19 @@ insight to signed action.
 
 ## 4. K-System Specification
 
-The ladder is safe only when its operational claims remain bound by the K
-invariants:
+The ladder is safe only when its operational claims remain bound by typed
+evidence, authorization, correction, and exit controls:
 
 | K | Rule | Website implication |
 |---|---|---|
 | K0 | No receipt, no reality. | Claims need source paths, evidence tiers, and audit trails. |
-| K2 | The human signs. AI recommends. | No page may imply automated sovereignty, automated theurgy, or automated moral authority. |
+| AuthorizationEnvelope | Principal, mandate, scope, consent, custody, expiry/revocation, contest path, actor, consequence bearer. | No page may invent mandate or automated moral authority; applicable law/product governance decides when a natural-person signature is required. |
 | K3 | Archive first; do not erase ground truth. | Public compression may hide complexity, but source-truth remains available. |
 | K4 | Grace Exit. | The framework must remain put-down-able; `/sit` is not ornamental. |
 
-K2 is especially important: the website may orient, warn, derive, and invite
-practice. It may not claim the reader's signature.
+Private-DAV K2 may remain in product-governance documents. At worldview scope,
+the website may orient and invite practice but cannot manufacture anyone's
+authorization or consequence custody.
 
 ---
 
@@ -147,8 +154,8 @@ This ladder inherits the 2026-05-14 derivation audit:
 
 - AM-GM uses `(√φ − √ν)² ≥ 0` before concluding `φ + ν ≥ 2`.
 - `L = ν − φ = 0` is not by itself a full stationary-action proof.
-- The restoring direction is the negative Hamiltonian gradient:
-  `F_H = −∂H/∂φ = 1/φ² − 1`.
+- A restoring direction exists only inside a separately declared Hamiltonian or
+  dynamics; the chart identity alone supplies none.
 - "Consciousness = equator" is conjectural, not derived.
 - Penrose CCC is a loose analogue only, not a technical torus-to-sphere proof.
 - `P` must not be used bare where the regime matters: use `P∞`, `B`, or
@@ -170,7 +177,7 @@ Seed first.
 L5 names the formula.
 L6 uses the formula without capturing the Ground.
 L3 audits the path.
-L4 signs action.
+L4 routes accountable commitment.
 K4 keeps the whole framework put-down-able.
 ```
 

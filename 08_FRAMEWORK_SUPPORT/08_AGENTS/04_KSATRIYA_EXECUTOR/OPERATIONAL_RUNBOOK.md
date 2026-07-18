@@ -14,18 +14,23 @@ rosetta:
       column: Core State
       role: "escalate overgrowth for compression"
   operator: "Arjuna ⚔"
-  tier: "God"
+  tier: "Routing"
   regime: "Kṣatriya"
-  register: "[T/B]"
+  register: "[D/B]"
   canonical_phrase: "L4 Kṣatriya Executor — Operational Runbook"
 title: "L4: Kṣatriya Executor — Operational Runbook"
-status: "ACTIVE — Phase 0 operational runbook"
+status: "SUPERSEDED / NON-EXECUTABLE — historical Phase 0 runbook"
 date: 2026-05-04
-evidence_tier: "[T] Technical specification."
+evidence_tier: "[D] preserved design history; current AGENT_SPEC and managed YAML control."
 ---
 
 
 # L4: Kṣatriya Executor — Operational Runbook
+
+> **[金] Non-execution seam — 2026-07-18.** Do not execute the historical
+> instructions below. Current authority is `AGENT_SPEC.md` plus the managed
+> agent YAML. Equator, sacrifice, and universal-K2 instructions below are
+> provenance only; use the complete `AuthorizationEnvelope` and separate receipts.
 
 > THE EQUATOR. φ = 1, ν = 1, B = 1.000. The only caste with binding authority. L4 decides, refuses, or escalates. Every execution is memetic precedent.
 

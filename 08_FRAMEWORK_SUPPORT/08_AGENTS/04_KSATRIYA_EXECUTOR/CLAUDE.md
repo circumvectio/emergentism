@@ -1,6 +1,5 @@
 ---
 rosetta:
-  canonical_phrase: 04_KSATRIYA_EXECUTOR — Agent Routing
   operator: Arjuna ⚔
   primary_column: Agent Execution
   primary_level: L4
@@ -16,7 +15,7 @@ rosetta:
   - column: Sādhu Boundary
     level: L6
     role: escalate overgrowth or superseded traces for compression
-  tier: God
+  tier: Routing
   canonical_phrase: "08_FRAMEWORK_SUPPORT/08_AGENTS/04_KSATRIYA_EXECUTOR/CLAUDE.md — Agent First-Touch"
 ---
 

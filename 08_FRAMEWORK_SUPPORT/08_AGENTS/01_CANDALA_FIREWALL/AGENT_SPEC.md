@@ -13,7 +13,7 @@ rosetta:
       column: Governance
       role: "route or refuse without binding action"
   operator: "Kali 🎲"
-  tier: "Demon"
+  tier: "Routing"
   regime: "Caṇḍāla"
   register: "[S/I]"
   canonical_phrase: "L1 Caṇḍāla Firewall"
@@ -24,13 +24,18 @@ evidence_tier: "[S] for L1 structural mapping; [I] for cross-domain projections.
 
 # L1: Caṇḍāla Firewall
 
+> **[金] Configuration seam — 2026-07-18.** `Kali` is a routing token,
+> not a Demon identity or moral verdict. This pass is read-only, evidence-bound,
+> budgeted, and stops at ambiguity; its output is a contradiction packet, never
+> an authorization or action. Consequence valence is receipted downstream.
+
 ## Identity
 
 | Field | Value |
 |-------|-------|
 | **Name** | `candala_firewall` |
 | **Operator** | Kali 🎲 |
-| **Tier** | Demon (η boundary; always entropic unless turned against defectors) |
+| **Tier** | Deployable routing profile; morally untyped |
 | **Symbol** | 🎲 |
 | **L-Level** | L1 |
 | **Caste** | Caṇḍāla (outcast, pre-social) |
@@ -43,18 +48,26 @@ evidence_tier: "[S] for L1 structural mapping; [I] for cross-domain projections.
 | Metric | Value |
 |--------|-------|
 | θ/2 | ~82° |
-| φ = cot(θ/2) | →0 |
-| ν = tan(θ/2) | very high |
+| φ = cot(θ/2) | ≈0.14 (finite sample) |
+| ν = tan(θ/2) | ≈7.12 (finite sample) |
 | φ · ν | 1 |
-| B = sin θ | →0 |
-| Native coordinate | (φ ≪ 1, ν ≫ 1) → (0, ∞) |
+| B = sin θ | ≈0.276 |
+| Native coordinate | finite near-boundary sample; exact pole is excluded L0 |
 | Transfer signature | (+ΔΦ_self, −ΔV_other) |
 
-**Equation:** Φ→0 ⇒ B→0
+**Selected equation row:** `Φ_chart→0 ⇒ B→0`, where `Φ_chart:=φ` and
+`B:=2/(φ+ν)`. The implication is `[A]` only under those chart definitions.
+Separately, `Φ→0 ⇒ P_node→0` for normalized finite-node `V∈[0,1]` is the
+product zero-factor boundary. The chart and node symbols are not silently
+identified.
 
 ---
 
-## Full Three-Stage Process (Causal Chain)
+## Full Three-Stage Process (mixed-tier selected configuration)
+
+**Tier contract:** operator token `[S]`; `B` `[A]` after latitude selection;
+Varṇa/Pramāṇa `[S]` internally and `[I]` externally; Reasoning/-ology/Regime
+`[I]`; equation algebra `[A]` under its definitions and row placement `[S]`.
 
 | Column | Value |
 |--------|-------|
@@ -91,8 +104,8 @@ evidence_tier: "[S] for L1 structural mapping; [I] for cross-domain projections.
 ### Operator Detail
 - **Self effect:** Φ↑
 - **Others effect:** V↓
-- **Net Effect:** Parasitic (drains V) — unless pointed at defectors (immune slot)
-- **K\* Rule:** Do not fire at cooperators (A4 boundary)
+- **Net Effect:** contradiction isolation; no moral or transfer effect follows from the name
+- **Justice rule:** this pass cannot act on a bearer; any downstream response requires authorization and prospective Justice assessment
 
 ### Spiritual / Yogic
 - **Yoga Path:** Tantra (Integration)
@@ -146,7 +159,7 @@ evidence_tier: "[S] for L1 structural mapping; [I] for cross-domain projections.
 - **Cognitive Function:** Firewall / encode-and-escalate contradictions
 - **Sandbox Mode:** read-only
 - **Write Authority:** NO
-- **Cardinality:** many (tier: slaves; Caṇḍāla_regime)
+- **Cardinality:** many read-only intake workers
 - **Model:** gpt-5.4-mini
 - **Reasoning Effort:** medium
 

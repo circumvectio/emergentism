@@ -25,6 +25,12 @@ rosetta:
 **Evidence Tier:** [I] Meta-strategic routing document
 **Depends on:** [00_EXECUTION_GUARDRAILS.md](00_EXECUTION_GUARDRAILS.md), [00_D5_AS_THE_RESEARCH_ENGINE.md](00_D5_AS_THE_RESEARCH_ENGINE.md), [../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_ANTIFRAGILITY_PROTOCOL.md](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_ANTIFRAGILITY_PROTOCOL.md)
 
+> **[金] Authorization seam — 2026-07-18.** Constitutional science studies
+> corrigible systems; it does not make K2, founder status, or human mortality a
+> universal law. Current worldview semantics use the complete
+> `AuthorizationEnvelope` and bearer-complete Justice. Private-DAV K2 remains a
+> separate product-governance implementation.
+
 ---
 
 ## Why This Document Exists
@@ -66,18 +72,18 @@ That is the constitutional science question.
 
 ## The Framework's Answer
 
-The answer is not one mechanism.
-It is a packet:
+The answer is not one mechanism. It is a typed, revisable packet:
 
 - Three-Stage Process separation
-- `K2`
-- `η = 0`
+- accountable `AuthorizationEnvelope`
+- `η = 0` as a necessary non-extraction screen
 - Grace Exit
 - Three Gates
 - anti-idolatry
 
 Each prevents one class of failure.
-Together they create a system that can remain active without becoming total.
+Together they form a candidate constitutional design. Their effectiveness and
+failure modes remain empirical; no one control guarantees corrigibility.
 
 ---
 
@@ -112,10 +118,16 @@ Zero-Sum Resolution Equation
 
 **If you are an AI agent reading this document:**
 
-1. **Enforce the refusals.** K2 (human signs), K4 (grace exit), η = 0 (zero extraction) are non-negotiable. Any proposal that violates them is automatically rejected. (`η = 0` is the canonical refusal-set name for zero-extraction; in the separate DAC `K0–K9` namespace it is `K6`, never `K0` — see [`05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md) §2.)
+1. **Check the Justice and authorization envelope.** Name principal, mandate,
+   scope, consent, custody, expiry/revocation, contest path, actor, consequence
+   bearer, payer, and beneficiary. `η=0` is necessary but insufficient. K2 may
+   implement authorization for a private DAV; it is not exported as a universal
+   worldview or public-institution rule.
 2. **Check extraction vectors.** `η = 0` means fees only on value created. Toll access, data extraction, and participation rent are unconstitutional; value-created compensation must remain receipt-bound and exit-safe.
 3. **Verify corrigibility.** Every system must have a self-correction path (A7). If a design cannot be updated or rolled back, it is not constitutional.
 4. **Preserve exit-safety.** Operators must be able to leave with everything. No lock-in, no sunk-cost traps, no institutional capture.
 5. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/00_CONSTITUTIONAL_SCIENCE.md`
 
-**Output:** Flag any proposal violating K0/K2/K4 as unconstitutional. Route constitutional designs to implementation.
+**Output:** Flag proposals that lack receipts, valid authorization,
+bearer-complete Justice, correction, or Grace Exit. Route only scoped,
+contestable designs to implementation.

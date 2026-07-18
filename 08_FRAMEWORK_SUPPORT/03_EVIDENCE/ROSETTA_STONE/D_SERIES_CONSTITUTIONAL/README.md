@@ -60,16 +60,18 @@ status: ACTIVE
 
 The framework-architecture layer of the D-series. These files hold the master cross-domain table and the constitutional scaffolding (axioms, tiers, the DAC specification, the helix, the transcendental poles) that the row and domain mappings depend on.
 
-Constitutional statements separate generator type, firing discipline, evidence tier, and K2/K3 implications. Invariants are not repealed or rewritten from this lane — the owning source documents govern, and changes leave receipts.
+Constitutional statements separate selected structure, firing discipline, and
+evidence tier. Current semantic owners and the Settled Canon Registry govern;
+preserved snapshots in this lane may be superseded in place and retain receipts.
 
 ## Read Order
 
 1. [`D01_MASTER_ROSETTA.md`](D01_MASTER_ROSETTA.md) — the master Three-Stage Process: one sphere, seven rows, eight columns (local copy; source of record lives in The Lens).
-2. [`D02_SEVEN_AXIOMS.md`](D02_SEVEN_AXIOMS.md) — the seven axioms.
+2. [`D02_SEVEN_AXIOMS.md`](D02_SEVEN_AXIOMS.md) — preserved v10 axiom snapshot; `KSC-01…KSC-10` control conflicts.
 3. [`D03_THREE_TIERS.md`](D03_THREE_TIERS.md) — the three operator tiers.
 4. [`D04_DAC_SPECIFICATION.md`](D04_DAC_SPECIFICATION.md) — the DAC specification.
 5. [`D05_THE_HELIX.md`](D05_THE_HELIX.md) — the helix.
-6. [`D06_TRANSCENDENTAL_POLES.md`](D06_TRANSCENDENTAL_POLES.md) — the transcendental poles (L0 = L∞ boundary).
+6. [`D06_TRANSCENDENTAL_POLES.md`](D06_TRANSCENDENTAL_POLES.md) — distinct pole limits with a selected interpretive return edge.
 
 ## See Also
 

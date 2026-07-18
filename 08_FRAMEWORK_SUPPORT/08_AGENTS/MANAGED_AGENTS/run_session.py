@@ -18,15 +18,17 @@ Platform discipline (mirrors README §Runtime + the claude-api Managed-Agents pa
       first events arrive buffered and you lose real-time reactivity.
     * Idle-break GATE — break on session.status_terminated, OR on session.status_idle
       whose stop_reason.type != 'requires_action'. Idle with requires_action is the
-      transient K2 wait (the human owes a tool_confirmation) — do NOT break there.
+      transient authorization wait (the principal owes a tool_confirmation or
+      equivalent response) — do NOT break there.
     * Post-idle status race — the stream emits idle slightly before sessions.retrieve()
       reflects it, so poll a few times before reporting the final status.
 
-K2 note: Arjuna's write/edit/bash carry permission_policy always_ask. When the agent
+Authorization note: Arjuna's write/edit/bash carry permission_policy always_ask. When the agent
 prepares a mutation, the session goes idle with stop_reason.type == 'requires_action'
 and an agent.tool_use event with evaluated_permission == 'ask'. The machine has staged
-the collapse; the MORTAL signs it (send user.tool_confirmation). This script surfaces
-that wait but never auto-confirms — never simulate the mortal sacrifice.
+the proposed action; an authorized principal may confirm it (send
+user.tool_confirmation). This script surfaces that wait but never auto-confirms.
+Confirmation is necessary but does not itself prove a complete AuthorizationEnvelope.
 
 Managed Agents is beta; the SDK sets `managed-agents-2026-04-01` automatically on
 client.beta.{environments,agents,sessions}.* calls.
@@ -42,10 +44,10 @@ HERE = Path(__file__).resolve().parent
 IDS_FILE = HERE / "agent_ids.json"
 
 DEFAULT_TASK = (
-    "Bring a decision to the equator: firewall the inputs (L1), explore candidates "
+    "Run the typed route: firewall the inputs (L1), explore candidates "
     "(L2), rank them (L3), then as L4 prepare the SMALLEST-defensible diff. Tier every "
     "claim (A7); archive, never delete (K3); escalate structural deadlocks to L5. Do "
-    "NOT perform any irreversible mutation — stage it and wait for the human signature."
+    "NOT perform any out-of-scope mutation — stage it and wait for authorization."
 )
 
 # Substrings that identify the L4 executor key written by provision.py. The canonical
@@ -157,13 +159,13 @@ def main() -> None:
                 stop = getattr(event, "stop_reason", None)
                 stop_type = getattr(stop, "type", None)
                 if stop_type == "requires_action":
-                    # Transient: the agent is waiting on the human (K2 always_ask
-                    # tool_confirmation, or a custom_tool_result). The machine has
-                    # prepared the collapse; the MORTAL must sign it. Do NOT break —
+                    # Transient: the agent is waiting on the authorized principal
+                    # (always_ask tool_confirmation or a custom_tool_result). The
+                    # machine has prepared an action proposal. Do NOT break —
                     # surface the wait and keep the stream open for the next event.
                     print(
-                        "\n--- idle: awaiting human signature (K2) — "
-                        "stage prepared, mortal must sign; not breaking ---",
+                        "\n--- idle: awaiting scoped authorization — "
+                        "action proposal prepared; not breaking ---",
                         flush=True,
                     )
                     continue

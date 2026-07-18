@@ -33,7 +33,7 @@ This directory holds the formal mathematical core of the Emergentist Framework:
 | `22_POWER_MAX_DEMONSTRATION.md` | The Power-Max Lemma: individual and collective optimization align under real coupling, long horizon, and enforced `eta = 0`. |
 | `23_DIMENSIONAL_CLOSURE_PROOF.md` | Interpretive closure contract: one non-μ edge `r₆:D6↝D0`, not literal identity. |
 | `24_GEOMETRIC_EXCLUSION_CONVERGENCE.md` | Convergence argument for the geometric exclusion (strategic/immune-response framing). |
-| [`25_STEEL_THREAD.md`](25_STEEL_THREAD.md) | Steel-thread path through the formal system for readers checking the proof spine. |
+| [`25_STEEL_THREAD.md`](25_STEEL_THREAD.md) | Kintsugi-bounded historical proof spine; current typed owners and Settled Canon Registry control its superseded claims. |
 | `08_EFR_POWER_MAX_LEMMA.md` | EFR-specific statement of the Power-Max Lemma. |
 | `09_EFR_GODEL_CLARIFICATION.md` | Clarification of the framework's relationship to Gödelian incompleteness. |
 | `10_EFR_MU_LIMIT_FORMULA.md` | Candidate emergence crossings `μ₀…μ₅`; enactment is handled separately by `χ`. |
@@ -43,7 +43,7 @@ This directory holds the formal mathematical core of the Emergentist Framework:
 | `14_EFR_EPISTEMOLOGY_TRIAD.md` | Formalization of Empirical Observation, Inferential Logic, Structural Analysis. |
 | `15_EFR_WOLFRAM_NKS_INTEGRATION.md` | Integration with Wolfram's computational irreducibility. |
 | `16_EFR_TRANSCENDENTALS.md` | The transcendental numbers {0, 1, ∞}. |
-| `17_EFR_ONTOLOGY_COMPLETE.md` | Ontological completeness claim. |
+| `17_EFR_ONTOLOGY_COMPLETE.md` | Kintsugi-bounded historical integration/correspondence; not an ontology-completeness owner. |
 | `18_EFR_METHODOLOGY_COMPLETE.md` | Methodological completeness claim. |
 | `19_EFR_GEOMETRIC_EXCLUSION.md` | Geometric exclusion in the EFR context. |
 | `20_EFR_OPERATORS_ON_COMPLEX_PLANE.md` | Operator formalism on ℂ. |

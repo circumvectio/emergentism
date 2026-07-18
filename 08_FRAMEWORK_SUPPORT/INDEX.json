@@ -89,7 +89,7 @@
       "category": "rosetta_stone",
       "has_execution_surface": true,
       "word_count_approx": 7310,
-      "summary": "The cross-domain mapping table. 15+ domains, 7 L-levels, one geometry on S2. The calibration table for the instruments."
+      "summary": "A selected cross-domain translation crosswalk: 15+ candidate domains and 7 routing levels. Not an externally calibrated instrument; each claim keeps its own tier and test."
     },
     {
       "path": "01_FOUNDATIONS/00_EMERGENTISM.md",

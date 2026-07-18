@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg data-topology-sha256="f39561ac7037e1553335939397ca9891ea2245e653a70f2a64a8587414d0f8ce" height="1000" role="img" viewBox="0 0 1600 1000" width="1600" xmlns="http://www.w3.org/2000/svg">
+<svg data-topology-sha256="c55031c1345436422b17ecbe3de16a98809d66a5e15c649d05e001f2c689985d" height="1000" role="img" viewBox="0 0 1600 1000" width="1600" xmlns="http://www.w3.org/2000/svg">
   <title>The Burri Rules - Ivory Proof Plate</title>
-  <metadata id="topology-sha256">sha256:f39561ac7037e1553335939397ca9891ea2245e653a70f2a64a8587414d0f8ce;view:proof</metadata>
+  <metadata id="topology-sha256">sha256:c55031c1345436422b17ecbe3de16a98809d66a5e15c649d05e001f2c689985d;view:proof</metadata>
   <defs>
     <marker id="arrow-actual" markerHeight="8" markerWidth="8" orient="auto" refX="7" refY="4"><path d="M 0 0 L 8 4 L 0 8 Z" fill="#332d29"/></marker>
     <marker id="arrow-possible" markerHeight="8" markerWidth="8" orient="auto" refX="7" refY="4"><path d="M 0 0 L 8 4 L 0 8 Z" fill="#526879"/></marker>
@@ -11,7 +11,7 @@
   <text fill="#332d29" font-family="sans-serif" font-size="28" font-weight="800" letter-spacing="2.2" text-anchor="start" x="60" y="52">THE BURRI RULES</text>
   <text fill="#5b534c" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="start" x="60" y="79">Ivory proof plate · typed emergence, commitment, receipt, and composition</text>
   <text fill="#5b534c" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="1.2" text-anchor="end" x="1540" y="52">COMPASS / NOT COMMAND</text>
-  <text fill="#5b534c" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="end" x="1540" y="76">topology sha256 f39561ac7037e155…</text>
+  <text fill="#5b534c" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="end" x="1540" y="76">topology sha256 c55031c134543642…</text>
   <rect fill="#fbf7eb" height="160" rx="20" stroke="#b8a98e" stroke-width="1.5" width="1510" x="45" y="104"/>
   <text fill="#5b534c" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="1" text-anchor="start" x="65" y="128">BR-2 · SIX CANDIDATE CROSSINGS + ONE NON-mu CLOSURE</text>
   <g data-primitive="mu-crossing" id="d-register-spine">
@@ -277,6 +277,6 @@
   <path d="M 600 954 C 620 930, 660 930, 680 954" fill="none" marker-end="url(#arrow-actual)" stroke="#7b5f18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
   <text fill="#7b5f18" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="start" x="696" y="953">feedback / return</text>
   <text fill="#332d29" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="end" x="1540" y="953">Map != territory · receipt &gt; self-certification</text>
-  <text fill="#5b534c" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="start" x="60" y="981">[I] externally uncalibrated translation grammar · empirical crossings and universal-fit claims remain [C]</text>
+  <text fill="#5b534c" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="start" x="60" y="981">[I] components X0/X1/not-applicable · no whole calibration stage · X2+ discrimination pending</text>
   <text fill="#5b534c" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="end" x="1540" y="981">JSON mirrors owners; it cannot introduce doctrine or upgrade evidence</text>
 </svg>

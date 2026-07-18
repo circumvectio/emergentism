@@ -2,7 +2,7 @@
 type: coordination-protocol
 evidence-tier: [T] — Technical specification.
 date: 2026-05-04
-status: ACTIVE — Phase 0 operational protocol
+status: SUPERSEDED / NON-EXECUTABLE — preserved Phase 0 protocol; current managed-agent contract controls
 rosetta:
   primary_level: L5
   primary_column: Agent Coordination
@@ -27,6 +27,13 @@ evidence_tier: "[T] technical coordination protocol; [S] structural Rosetta hand
 
 
 # Inter-Agent Coordination Protocol
+
+> **[金] Controlling seam — 2026-07-18.** Do not execute the historical body
+> below. `MANAGED_AGENTS/README.md` and the current seven YAML/spec files replace
+> its universal K2, D4/D5, fixed timing, and L5–L7 mutation assumptions. Only L4
+> may request a consequential mutation, and only after a complete
+> `AuthorizationEnvelope` plus runtime confirmation; L5–L7 return read-only
+> proposals. Commitment and world-issued outcome receipts remain distinct.
 
 > How the seven Rosetta castes work together in multi-agent sessions. This is the practical orchestration layer above individual agent runbooks.
 

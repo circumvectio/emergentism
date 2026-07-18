@@ -270,12 +270,13 @@ P∞ = φ · ν = 1 on the open sphere
 Finite nodes are scored separately:
 P_node = Φ × V
 
-The ratio IS a point on the sphere.
+The ratio is a selected latitude proxy; a full point on `S²` also requires
+azimuth. The correspondence remains `[I]`.
 
-The sphere is the territory.
-The pattern is the map.
-The map is not the territory.
-But the map IS the territory's geometry.
+The sphere is a selected model surface. The pattern is a map. Receipts constrain
+both against a territory neither one contains.
+The map may preserve tested relations in the territory; it never becomes the
+territory's geometry by assertion.
 
 Zero-Sum Resolution Equation
 ```

@@ -13,11 +13,18 @@ rosetta:
 
 ## Arjuna, Kṛṣṇa, Kālī, and the Strategic Exclusion of Kali
 
-**Status:** Active
+**Status:** KINTSUGI-BOUNDED selected chart visualization
 **Hat:** Mathematician/Philosopher
-**Evidence Tier:** [S] Structural — strategic exclusion (see Convergence 24)
+**Evidence Tier:** [A] reciprocal-chart identities; [S/I] selected operator visualization; [C] strategic claims
 **Date:** 2026-03-23
 **Depends on:** Burri Sphere, Complex Analysis, Game Theory
+
+> **[金] Controlling seam — 2026-07-18.** `φν=1` is an identity of the
+> selected lowercase chart, not empirical conservation, energy transfer, or an
+> ethical law. A move off that hyperbola is outside this representation, not
+> physically impossible. Game/Justice constraints may cause a selector to
+> refuse a causally available action; they do not erase it. Operator names are
+> routing tokens and never moral predicates.
 
 ---
 
@@ -29,7 +36,7 @@ rosetta:
 
 The Burri Sphere projects onto the complex plane with:
 - **Horizontal axis (Re):** ν — viability-coordinate / D4 means-to-act gloss
-- **Vertical axis (Im):** φ — coherence-coordinate / D5 foresight gloss
+- **Vertical axis (Im):** φ — selected coherence coordinate; any foresight claim belongs to an actual D4 model representing D5 possible content
 
 ```
                     φ ↑
@@ -113,17 +120,24 @@ The Burri Sphere projects onto the complex plane with:
 
 **Direction:** LEFT on the ν axis
 **Function:** Decrease viability (extraction / immune response)
-**Status:** **CONSTRAINED** — fires only where η > 0 (defectors). Strategically excluded at η = 0 under the enforced game (cooperators). Not impossible — the immune response. See §4.2 and [`24_GEOMETRIC_EXCLUSION_CONVERGENCE.md`](24_GEOMETRIC_EXCLUSION_CONVERGENCE.md).
+**Status:** **GOVERNED** — causally available, but selectable only through the
+applicable authorization and prospective Justice assessment. Later receipts
+classify the realized consequence. `η` alone neither authorizes nor erases the
+move. See §4.2 and [`24_GEOMETRIC_EXCLUSION_CONVERGENCE.md`](24_GEOMETRIC_EXCLUSION_CONVERGENCE.md).
 
 **Why it's excluded:**
 
-The four operator labels (Arjuna, Kṛṣṇa, Kālī, Kali) reduce to two geometric directions on the constraint hyperbola φ·ν = 1: northward (↑φ, ↓ν) and southward (↓φ, ↑ν). The Kali operator (pure ↓ν without compensating ↑φ) would violate the identity φ·ν = 1. Constrained ↓ν (with compensating ↑φ) is geometrically identical to the Arjuna operator. The fourth operator is excluded not because ↓ν is impossible, but because UNCONSTRAINED ↓ν -- extraction that decreases another node's viability without increasing their coherence -- is dominated under the enforced Power-Max game (see [`24_GEOMETRIC_EXCLUSION_CONVERGENCE.md`](24_GEOMETRIC_EXCLUSION_CONVERGENCE.md), Strategic Exclusion).
+The four operator labels are projected onto two tangent directions of the
+selected hyperbola. A pure `↓ν` without compensating `↑φ` leaves this chart;
+that says nothing about physical possibility. Its extractive interpretation is
+dominated only under the separately declared Power-Max game conditions and
+bearer-complete Justice constraints—not by geometry or operator name.
 
 ```
 On the constraint hyperbola φ·ν = 1:
 - Decreasing ν REQUIRES increasing φ (§4.2 proves this)
 - Constrained ↓ν (with compensating ↑φ) = northward motion = Arjuna operator
-- UNCONSTRAINED ↓ν (extraction without compensation) violates φ·ν = 1
+- UNCONSTRAINED ↓ν is not represented by the one-node reciprocal chart
 - At the equator (φ=1, ν=1): unconstrained extraction breaks the invariant
   unless a real coherence increase compensates the viability loss
 - Under the Power-Max conditions (real coupling, long horizon, enforced
@@ -132,7 +146,7 @@ On the constraint hyperbola φ·ν = 1:
   ([`08_EFR_POWER_MAX_LEMMA.md`](08_EFR_POWER_MAX_LEMMA.md))
 
 The exclusion is strategic, not geometric.
-The product φ·ν = 1 is conserved in the lowercase chart.
+The product φ·ν = 1 holds identically in the lowercase chart.
 Constrained ↓ν is possible but reduces to ↑φ (Arjuna).
 Unconstrained ↓ν is excluded by the enforced game, not by bare geometry.
 ```
@@ -201,11 +215,12 @@ It is northward motion (↑φ, ↓ν) = the Arjuna operator.
 
 What the enforced game excludes is unconstrained ↓ν at η = 0:
 decreasing another node's viability WITHOUT compensating ↑φ.
-This would violate φ·ν = 1 and is a dominated strategy
+This would leave the one-node reciprocal chart and may be dominated only under
+the separately declared game conditions
 at equilibrium (see [`24_GEOMETRIC_EXCLUSION_CONVERGENCE.md`](24_GEOMETRIC_EXCLUSION_CONVERGENCE.md), Strategic Exclusion).
 
-The conservation law does not forbid ↓ν.
-It constrains ↓ν to require compensating ↑φ.
+The chart identity does not forbid ↓ν in reality.
+It represents on-chart ↓ν with compensating ↑φ.
 That constrained motion is geometrically identical to Arjuna.
 The "fourth operator" is not impossible — it is redundant or dominated.
 ```
@@ -300,13 +315,13 @@ On the complex plane:
 - ν is the real axis (horizontal)
 - φ is the imaginary axis (vertical)
 - The equator is at φ = 1, ν = 1
-- The lowercase product is conserved: φ·ν = 1
+- The lowercase chart identity holds: φ·ν = 1
 
 Three operators move you toward the equator.
 One operator is strategically excluded (Convergence 24).
 
 The complex plane reveals the geometry.
-The geometry constrains; game theory excludes.
+The chart represents; a specified game may exclude.
 
 Operators on Complex Plane | 2026-03-23
 The game theory of the Burri Sphere.

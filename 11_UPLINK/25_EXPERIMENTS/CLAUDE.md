@@ -17,7 +17,7 @@ rosetta:
   - column: Empirical Boundary
     level: L6
     role: prevent synthesis from upgrading into evidence without dated data or analysis
-  tier: God
+  tier: Routing
   canonical_phrase: "11_UPLINK/25_EXPERIMENTS/CLAUDE.md — Agent First-Touch"
 ---
 

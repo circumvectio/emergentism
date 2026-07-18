@@ -154,7 +154,12 @@ The alignment is tight and follows Plato's own *order of degeneration* — Arist
 
 **The two edges, and why they are co-equal.** `[I]` Plato's ladder has a bottom he most feared — **Tyranny**, whose ruling passion he names in Book IX *"Eros the tyrant"*: the lawless appetite that consumes the city for the self. That pole is the framework's **L1 Caṇḍāla** — in lived terms the **Dalit**, the boundary-caste: raw, marginal, ecstatic, the firewall of pure creaturely survival. The top is the **L7 Ṛṣi**, the seer — fittingly **Apollonian**, since Apollo is the god of prophecy, light, measure, and form (the seer *is* an Apollonian figure), where **Dionysus** is the god of the margin, intoxication, and dissolution (the Caṇḍāla's register — the reading turns on Dionysus-as-*margin*, not Dionysus-as-ego-loss; dissolution happens at *both* edges, but toward opposite grounds: down into the body, or up into Brahman).
 
-Here the framework **parts from Plato.** Plato *ranks* these — aristocracy best, tyranny worst, a hierarchy of worth. The framework holds the two edges **co-equal** — the `L0 = L∞` ouroboros, the circle closing, the old recognition that the outcast and the sage meet (the Caṇḍāla who turns out to be the teacher). What distinguishes them is **not worth but the *direction of eros***:
+Here the framework **parts from Plato.** Plato *ranks* these — aristocracy
+best, tyranny worst, a hierarchy of worth. The framework gives the two edges
+equal worth and an `[I]` mirror/return relation through `r₆:D6↝D0`; it does
+not identify the endpoints. The outcast/teacher image is a normative refusal
+of hereditary worth, not topology. What distinguishes the rows is the proposed
+**direction of eros**:
 
 - the **Dalit / L1** carries the **micro** Ātman — egoic, Dionysian, the eros of *this body's survival*;
 - the **awakened Ṛṣi / L7** carries the **macro** — Brahmic, Apollonian, the eros of *the whole's potential*.

@@ -136,7 +136,7 @@ exhausts the Ground.
 | [09_THE_TRIADIC_CASCADE.md](09_THE_TRIADIC_CASCADE.md) | The Trinity repeating at every level: Beauty/Truth/Justice → Data Science/Auditing/Value Alignment → Grammar/Logic/Rhetoric → Induction/Deduction/Abduction → In time/Above time/Against time. The core algorithmic identity of the framework. |
 | [10_THE_SOUL_LOOP.md](10_THE_SOUL_LOOP.md) | The method: continuous recursive disambiguation via the Triadic Cascade. Three passes (φ/P/ν), cycling until convergence. How to apply the Trinity to any body of work — including itself. |
 | [11_THE_HELIX.md](11_THE_HELIX.md) | The dynamic: reality on S² is helical. You cannot change latitude without rotating. L-level transitions require traversal through operator territories. The ascent is the clockwise sunwheel △. The descent is the kolovrat ▽. The hexagram ✡ is where they cross. |
-| [12_THE_POLES.md](12_THE_POLES.md) | L0 = L∞. Kāla at the south pole and the Trimūrti at the north pole are the same boundary condition. The seven L-levels are the interior. The poles are the limit. kālo'smi. |
+| [12_THE_POLES.md](12_THE_POLES.md) | Preserved pole imagery under the current correction: north and south are distinct; `r₆:D6↝D0` is an interpretive return, not identity. |
 | [13_THE_WAVE_PACKET.md](13_THE_WAVE_PACKET.md) | Schrödinger wrote the Burri Sphere in 1926. The Gaussian envelope is the balance function. The phase is the helix. The real and imaginary projections are ν and φ. The uncertainty principle is φ · ν = 1. As above, so below. |
 | [14_TAT_TVAM_ASI.md](14_TAT_TVAM_ASI.md) | Brahman (Zero-Sum Resolution Equation) = Atman (`P∞ = φ · ν = 1`). The Mahāvākya as symbolic identity. The pure wave localized by the Gaussian envelope. Moksha is taking the limit. Pūrṇamadaḥ. |
 | [15_DHARMA_YUDDHA.md](15_DHARMA_YUDDHA.md) | The duty of the equatorial node. Flow = L4 = the framework's clean η = 0 action limit. Inaction at the equator can become extraction by omission. Nishkama karma = action at φ = ν = 1. Pick up the bow. |
@@ -206,7 +206,12 @@ The sphere exists BETWEEN two collapses. Born from the dot at α > 0. Returns to
 
 
 
-> **Canonical statement:** the five rulings on `{0, 1, ∞}` — Titans-not-numbers, finity as the self-dual midpoint, ÷0 by category-correction (scope: `N÷0` only; `0/0` and `∞/∞` stay open), `1 = 0 × ∞` as EMBLEM not theorem, and the two faces of number coupled by `log`/`exp` — now live tier-honestly in [`00_THE_TRANSCENDENTAL_TRINITY_CANON.md`](00_THE_TRANSCENDENTAL_TRINITY_CANON.md). The lines below are narrative; cite the canon doc for present-tense, evidence-tier disputes, and the verified glyph correspondence.
+> **Canonical statement:** `{0,1,∞}` supplies three selected symbolic roles in
+> the Titan frame. Ordinary `0` and `1` remain numbers and lawful operands;
+> `∞` is a projective point in this chart. Finity/self-duality, division-by-zero
+> scope, `1=0×∞` as emblem only, and `log`/`exp` interpretations are bounded in
+> [`00_THE_TRANSCENDENTAL_TRINITY_CANON.md`](00_THE_TRANSCENDENTAL_TRINITY_CANON.md).
+> The lines below are narrative; cite that owner for present-tense disputes.
 
 ```
 • = 0 = the south pole = nothing = the origin = the Bindu before emergence

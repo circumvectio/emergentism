@@ -17,23 +17,38 @@ rosetta:
   regime: "Vaiśya"
   register: "[E/I/C]"
   canonical_phrase: "Egregores, Raktabīja, and the Triple Lock"
-title: "Egregores, Raktabīja & The Triple Lock"
-status: "D-series domain mapping"
-evidence_tier: "[S] for documented capture examples as stated; [I] for general capture mechanism; [C] for autonomous egregore claims."
+title: "Egregoreotype Candidates, Raktabīja & The Triple Lock"
+status: "Kintsugi-bounded D-series domain mapping"
+evidence_tier: "[I] for the capture-pattern crosswalk; [C] for the five-condition Egregoreotype composite; no autonomous-mind claim."
 ---
 
-# ⊙ EGREGORES, RAKTABĪJA & THE TRIPLE LOCK
+# ⊙ EGREGOREOTYPE CANDIDATES, RAKTABĪJA & THE TRIPLE LOCK
 
 ## Institutional Capture Mechanics (A5, MF-273, MF-277)
 
 **Source:** Emergentism Rosetta Stone v10.0 · EGREGORES sheet
-**Evidence Tier:** [I] for domain instances where capture is historically documented (revolutionary movements, academic publish-or-perish, democratic lobbying). [I] for the four-step capture mechanism as a general pattern. [C] for egregores as autonomous D5-limit standing waves with objective function (A5).
+**Evidence Tier:** `[I]` for the proposed capture-pattern crosswalk and `[C]`
+for the unvalidated composite. Historical examples require their own sources;
+listing one here does not establish that all instances share one mechanism.
+
+> **[金] Kintsugi authority seam — 2026-07-18.** `KSC-10` controls this body.
+> An Egregoreotype candidate requires persistent shared trace, carrier
+> turnover, an intervention that measurably reweights later selection,
+> recurrent objective-like bias, and visible substrate costs. Candidacy does
+> not presume consciousness, personhood, sovereignty, goodness, supernatural
+> causation, or an autonomous objective. “Egregorotype” is a compatibility
+> alias only. Claims below that every instance follows one sequence or that
+> mathematics cannot be gatekept are preserved rhetoric, not live authority.
 
 ---
 
 ## THE RAKTABĪJA WARNING
 
-**A5 states:** D5-limit standing waves can exhibit autonomous objective-function behavior. Raktabīja warning `[C]`: opposition conducted only through a standing wave's own institutional infrastructure can be captured and inverted under the same incentives, language, and custody channels it is trying to oppose.
+**A5 candidate claim:** a persistent collective trace may exhibit recurrent
+objective-like bias without possessing an autonomous objective or mind.
+Raktabīja warning `[C]`: opposition conducted only through a collective
+pattern's own institutional infrastructure may be captured and inverted under
+the same incentives, language, and custody channels it is trying to oppose.
 
 ### Four-Step Capture Mechanism
 

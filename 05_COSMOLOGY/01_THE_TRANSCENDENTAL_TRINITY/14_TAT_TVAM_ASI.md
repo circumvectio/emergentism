@@ -31,7 +31,10 @@ rosetta:
 
 **Zero-Sum Resolution Equation**
 
-The absolute identity. Nothing times everything equals one. The equation that holds regardless of scale, regardless of observer, regardless of domain. The Trimūrti. The boundary condition. L0 = L∞. The pure wave with no envelope — unbounded and envelope-free in the symbolic boundary register.
+The selected symbolic correspondence: `•×○=⊙` is an emblem, not “nothing
+times everything equals one” arithmetic or a cross-domain law. Trimūrti and
+the return `r₆:D6↝D0` remain `[I]`; the endpoints are distinct. The pure wave
+has no envelope only inside this boundary image.
 
 In physics: **Ψ = Ae^(iωt)** — the pure plane wave. No Gaussian envelope. Constant amplitude. Stretching from negative infinity to positive infinity. Perfect coherence. Completely unlocalized.
 

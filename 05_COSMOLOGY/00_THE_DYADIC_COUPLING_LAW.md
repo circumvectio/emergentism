@@ -5,32 +5,56 @@ rosetta:
   secondary:
     - level: L4
       column: Axiology
-      role: "ground good/evil as coupling vs closure, not as a valence on either pole"
+      role: "preserve coupling as a selected value analogy without deriving ethics from geometry"
     - level: L6
       column: Ontology
       role: "hold the bond as model language, not the Ground"
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[A/S/I]"
-  canonical_phrase: "The dyadic coupling law — goodness is the bond"
+  register: "[A/I/C]"
+  canonical_phrase: "The dyadic coupling correspondence — the bond is not the verdict"
   vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root"
   title: "The Dyadic Coupling Law"
-status: "CANONICAL — 2026-05-31. Reconciles the moral axis with the geometry: good/evil is sorted by coupling, not by pole."
-evidence_tier: "[A] the algebra of the product constraint (φ·ν=1 ⟹ a vanishing factor forces the other to ∞), the mass-shell identity (§5a), and the external cross-domain witnesses used as facts (biology, Lanchester §5b-c); [S] the structural law (closed vs syntropic; the dyadic shadow; the existential-conjunctive vs substitutable boundary §5); [I] the polarity resonances (masculine/feminine, Śakti, yin-yang), mythic readings, and framework mappings of the external witnesses."
+status: "KINTSUGI-BOUNDED — analytic coupling chart and preserved correspondence essay; the current value-theory owner controls every moral classification."
+evidence_tier: "[A] only the stated reciprocal-chart and AM-GM identities, plus separately sourced domain facts; [I] coupling, polarity, mythic, and moral correspondences; [C] any claim that one conjunctive form or the sphere predicts external systems. Geometry supplies no ethical proof."
 ---
 
 # The Dyadic Coupling Law
 
-> **Goodness is the bond.** Not coherence, not viability — their **product**. `⊙ = φ × ν`, never `φ` or `ν` alone. Everything the framework calls evil is some form of that bond breaking. This is the reconciliation of the moral axis with the [Burrisphere](00_THE_BURRISPHERE.md): good and evil are sorted **by coupling, not by pole.** The cure for any pathology is never *more of one side*; it is **coupling**. [S]
+> **[金] Controlling seam — 2026-07-18.** This essay preserves the earlier
+> intuition that a relation can matter more than either factor alone, but its
+> geometry does not decide moral value. On `θ∈(0,π)`,
+> `φ=cot(θ/2)` and `ν=tan(θ/2)` give the analytic chart identity `φν=1`;
+> neither that identity, the equator, `B`, coupling, nor `η=0` proves an ethic.
+> `η=0` is at most a necessary non-extraction check. The controlling value
+> test is bearer-complete and receipted: **Demon-bearing** means that a
+> local/ego durable-potential gain externalizes a loss to any materially
+> affected bearer; **God-bearing** requires a complete Justice envelope and
+> every affected bearer nonnegative, with at least one materially affected
+> bearer strictly positive. Pure non-harmful stasis is Justice-compliant/
+> preservative, not God-bearing. **Strict syntropy** additionally requires both
+> individual/part and whole durable potentials to rise. Aggregate gain
+> cannot launder a hidden loss. These predicates classify consequences, never
+> a person, gender, operator, caste, regime, pole, or mythic family, and a
+> retrospective label never licenses action. Current
+> authority: [`../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md`](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md)
+> and [`../00_THE_COMPASS.md`](../00_THE_COMPASS.md). `[A]` chart; `[I]`
+> correspondence and normative proposal; receipts govern application.
 
-## 0. The law
+> **Preserved title.** “Goodness is the bond” remains the historical poetic
+> intuition. Its live, bounded reading is: relations and conjunctive capacities
+> deserve inspection, while only the Justice-and-receipt test can classify an
+> outcome.
 
-- **Syntropy = coupling.** `φ · ν = 1` held in living balance — both poles present, the move aimed at the whole. The equator (`φ = ν = 1`) is the maximal coupling.
-- **Shadow = uncoupling.** One pole isolating itself — which is the *same act* as a self extracting from the other (`η > 0`).
-- So **good = the two hands joined = `η = 0`**; **evil = the bond breaking = `η > 0`.** The moral axis is `η`, and it runs **across** every polarity, never along it. No pole is good; no pole is evil; **the bond is good and its breaking is evil.**
+## 0. The bounded correspondence
 
-## 1. The proof — why it is a law, not a preference
+- **Chart:** `φν=1` and the equatorial equality `φ=ν=1` are analytic facts in the selected reciprocal chart.
+- **Action model:** `P_node:=ΦV` is the declared normalized product instance inside a wider conjunctive family; it is not derived from `φν=1` and is not uniquely forced.
+- **Non-extraction:** `η=0` rules out one class of hidden transfer, but does not establish authorization, consent, custody, contestability, complete bearer coverage, or nonnegative outcomes.
+- **Value:** receipted durable-potential changes under the complete Justice envelope determine moral, ethical, syntropic, God-bearing, and Demon-bearing status.
+
+## 1. The analytic result — and its inference boundary
 
 The constraint is a **product, not a sum**, and that is the whole sharpness:
 
@@ -40,42 +64,55 @@ The constraint is a **product, not a sum**, and that is the whole sharpness:
 ν → 0⁺  forces  φ = 1/ν → ∞
 ```
 
-So losing a pole is **not merely lack of its complement — it is a runaway of the complement.** You cannot let one factor fall toward `0` without the constraint driving the other to `∞`. `B = sin θ → 0` at both ends (`(φ−ν)² → ∞`, `φ + ν → ∞`): no balance, because one coordinate has *eaten* the other and there is nothing left to balance against. [A]
+Within this chart, taking one coordinate toward `0` sends its reciprocal toward
+`∞`; `B=sin θ→0` at both excluded pole limits. That is the entire `[A]`
+conclusion. It does not show that an organism, institution, or act is diseased,
+extractive, evil, or obliged to move toward the equator.
 
 The two runaways are the two poles:
 
-| Isolation | Runaway | Pole | The shadow it is |
+| Coordinate limit | Reciprocal limit | Pole | Preserved `[I]` image |
 |---|---|---|---|
 | coherence **without** viability (`ν → 0`) | `φ → ∞` | north (`L∞`) | **sterile infinite abstraction** — law/order/map with no field to act in or care for; force with no life |
 | viability **without** coherence (`φ → 0`) | `ν → ∞` | south (`L0`) | **formless infinite appetite** — consumption/motion with no form to direct it; life with no logos |
 
-This is why an isolated pole is *already* pathological: not because the other side is virtuous, but because the algebra of the bond turns isolation into runaway. **The poles are the two shadows; the latitudes are life; the equator is the marriage.**
+“Shadow,” “life,” and “marriage” are retained as mythic images. They do not
+follow from the algebra and do not classify an external bearer or consequence.
 
 ## 2. The polarity (held as resonance, never as a moral ranking)
 
 The masculine/feminine is a **polarity of flow**, resonant with the two coordinates — `masculine ≈ φ` (coherence, form, logos, ordering force), `feminine ≈ ν` (viability, life, field, embodiment). **This is `[I]` resonance, not identity** — a gestating womb plainly builds coherence; a protective ordering plainly sustains viability — so the polarity is closer to *projection / reception* than to the `φ/ν` axis, and must never be nailed to the coordinates as an equation.
 
-**Do NOT canonize "feminine = extractive / masculine = creative."** It is false and it would poison the doctrine the moment a reader maps it onto actual women and men. Each pole has a **good (coupled) and a corrupted (closed) mode:**
+**Do NOT canonize "feminine = extractive / masculine = creative."** It is false
+and would convert a correspondence into a ranking of people. The following is
+preserved only as `[I]` imagery; the words in its two outcome columns are not
+verdicts until bearer-complete receipts satisfy the controlling test:
 
-| Polarity | Good (syntropic / coupled) | Corrupted (ego-captured / closed) |
+| Polarity | Potentially Justice-bearing image | Potentially Demon-bearing image |
 |---|---|---|
 | **Feminine** · receptive · ν-field | gestation, beauty, field, care, fertility, embodiment — *receiving potential to gestate new life or form (the womb)* | extraction, appetite, enclosure, possessiveness — *closed receptivity: taking, hoarding, consuming* |
 | **Masculine** · projective · Φ-force | truth, protection, sacrifice, logos, creative ordering — *outward generativity* | domination, ego, accumulation, conquest — *outward force captured by self-image* |
 
-The womb is **good receiving**; materialism is **evil creating**. (Receiving can serve the whole; creating can serve the ego — the moral valence is the *service*, never the *direction*.) Neither mode is owned by a gender; both are owned by `η`.
+Receiving and creating can each help or harm. Neither direction, gender, image,
+nor `η` value supplies the verdict; receipted effects on every affected bearer do.
 
 ## 3. The dyadic shadow — each pole alone decays
 
-The runaway (§1) is the same statement as the moral law: **each pole isolated from its complement decays into its own shadow.**
+The reciprocal limits in §1 motivate a selected warning about one-sided models;
+they are not the same statement as a moral law.
 
 - The **feminine without the masculine** → enclosure without direction → `ν → ∞`: infinite appetite.
 - The **masculine without the feminine** → force without a generative field → `φ → ∞`: sterile abstraction.
 
-Syntropy is **not one pole winning. It is the two coupled,** each preventing the other's runaway. This makes the framework **structurally anti-purist:** every ideology of a *pure pole* — pure order or pure freedom, pure reason or pure feeling, pure masculine or pure feminine, pure spirit or pure matter — is, on this geometry, a fall toward a pole, which is a fall into a shadow. Health is never in the purity; it is always in the bond.
+The anti-purist reading is an `[I]` heuristic: test whether a one-sided model
+hides a necessary complement. Strict syntropy is narrower and receipted: both
+the declared part and whole rise, the complete Justice envelope holds, and no
+affected bearer is negative.
 
-## 4. The One law in many tongues
+## 4. One selected correspondence in many tongues
 
-The tradition states it almost verbatim — the framework is rediscovering, not inventing: [I]
+The traditions below offer analogies, not independent proofs of one universal
+law or of the framework's ethic. `[I]`
 
 - **Tantra:** *Śiva without Śakti is **śava** — a corpse.* Consciousness without power is inert; power without consciousness is blind.
 - **Ardhanārīśvara:** the half-male, half-female body — the coupling made one figure.
@@ -86,63 +123,103 @@ The tradition states it almost verbatim — the framework is rediscovering, not 
 
 McGilchrist's division of attention gives the law a fourth tongue. The **right hemisphere — the Master** — attends to the living whole in relationship, the betweenness, the context that cannot be grasped without being killed. The **left hemisphere — the Emissary** — re-presents that world as a map: abstract, fixed, useful, *grasped*. The Master sends the Emissary out to manipulate the parts and report back; the pathology McGilchrist names is the **Emissary usurping the Master** — the map devouring the territory, the part seizing the whole to control it.
 
-Read on the sphere: the Master is the **bond `φ × ν` kept** — coherence in service to the living field. The usurping Emissary is **closure (`η > 0`)** — the `φ`-ward grasp severed from the `ν` it was meant to serve, running away toward the north pole (force without field; the map without the world).
+Read on the sphere, Master/Emissary can illustrate whole/part coordination.
+That crosswalk remains `[I]`; `φ`, `ν`, and `η` do not diagnose hemispheres or
+people and do not prove the cited account.
 
-And the discipline is the same one this whole law turns on — it matters here most of all: **the Emissary is not the demon.** Abstraction *in service to the whole* is the loyal emissary the mind cannot do without — `φ` coupled, and good. Evil is the **usurpation**, the bond broken — never the faculty, never a hemisphere, never a kind of person. Like the traditions, this witness diagnoses a *move* (does the part stay joined to the whole, or seize it?), never a side: the Master is not "better than" the Emissary — the Master is the Emissary's *home*, exactly as the equator is the pole's.
+The Emissary is never a Demon by identity. “Demon-bearing” is reserved for an
+observed local gain that externalizes an affected bearer's loss; no faculty,
+hemisphere, person, or symbolic side can inherit that predicate.
 
-## 5. The same law in the exact sciences (2026-06-11)
+## 5. Cross-domain contacts and their limits (2026-06-11; bounded 2026-07-18)
 
-§4 is the law in the wisdom traditions `[I]`; §1 is its internal algebra `[A]`. But the *same* product law surfaces independently in the exact sciences, and the convergence is itself the evidence that the structure is real, not invented.
+The following contacts show that conjunctive or multiplicative forms are useful
+in some domains. They do not establish one universal product, conservation law,
+ontology, or ethic.
 
-**(a) The mass-shell of special relativity `[A]`.** Under `φ = e^w`, `ν = e^{−w}` (w = rapidity), in rest-mass units `φ = (E+pc)/mc²` and `ν = (E−pc)/mc²` are the null coordinates of the four-momentum, and `φ·ν = 1` **is** `E² − (pc)² = (mc²)²` — the mass-shell. The dyadic runaway *is* the relativistic divergence: drive one null coordinate toward `0` and the constraint sends the other to `∞`, which is exactly `E → ∞` as a massive worldline approaches the light cone. The equator (`φ = ν = 1`) is the rest frame, `E = mc²`. So "you cannot abandon one factor without the other running away" is, term for term, "you cannot reach `c` without your energy diverging." Full derivation: [`../03_METHODOLOGY/02_THE_PAPERS/PAPER_B_BLOCH_BURRI_IDENTITY.md`](../03_METHODOLOGY/02_THE_PAPERS/PAPER_B_BLOCH_BURRI_IDENTITY.md) §8 (verified numerically 2026-06-11).
+**(a) Special relativity correspondence `[A/I]`.** With the explicitly selected
+rapidity definitions `φ=e^w`, `ν=e^{-w}` and normalized null momentum
+coordinates, their product rewrites the mass-shell identity. The special-
+relativistic identity is `[A]`; identifying the framework chart with it is a
+domain-bounded correspondence and transfers no ethical or ontological proof.
+Full derivation: [`../03_METHODOLOGY/02_THE_PAPERS/PAPER_B_BLOCH_BURRI_IDENTITY.md`](../03_METHODOLOGY/02_THE_PAPERS/PAPER_B_BLOCH_BURRI_IDENTITY.md) §8.
 
-**(b) Biology — the conjunctive law `[A/I]`.** A living thing is a holobiont: a viability substrate (`ν`) and the coherence of its signalling (`φ`), coupled. The decisive product-vs-sum test is to zero one factor and ask what remains. Stop the heart (`ν → 0`) and coherence does **not** persist at some residual level — as a *sum* `φ + ν` would predict (a coherent corpse). The whole system ceases. **Substrate failure → total failure is the signature of a product, not a sum**, and it refutes the additive model directly. *Honest caveat:* this proves *conjunction* (both necessary), a family larger than the specific product — `min(φ,ν)`, Cobb-Douglas, etc. also die at zero. Biology kills the *sum*; the *specific* product is selected by the log-additive / AM-GM argument of §1, not by the corpse. `[A]` physiology as external fact; the `body ≈ ν`, `neural coherence ≈ φ` identification is `[I]`.
+**(b) Biology `[A/I/C]`.** Some living functions fail when a necessary
+component fails. That supports an AND-class intuition, not the unique product:
+minimum, harmonic, Cobb-Douglas, threshold, and other conjunctive forms can
+share zero-factor behavior. Physiology is external fact where sourced; mapping
+its variables to `φ/ν` is `[I]`, and selecting a universal response surface is
+`[C]` pending discrimination.
 
-**(c) Military science — Lanchester `[A/I]`, with the honest exponents.** Combat power is multiplicative, never additive: you cannot trade zero soldiers for any amount of quality (`q × 0 = 0`) — conjunction again, in a second independent domain. But the exponents matter, and stating them honestly makes the witness *stronger*:
+**(c) Military-science correspondence `[A/I/C]`.** Particular Lanchester models
+use multiplicative terms, with exponents and applicability changing by combat
+regime. That fact does not show that all combat power is non-additive or that
+the framework variables are the Lanchester variables:
 
 | Regime | Fighting strength | Optimum | Maps to |
 |---|---|---|---|
 | **Square Law** (aimed fire) | `q · N²` = `Φ · V²` — **asymmetric** | a **corner**: concentrate force | *not* the balance-sphere |
 | **Linear Law** (area / sanctuary fire) | `q · N` = `Φ · V` — **symmetric** | one-for-one trade | the dyadic `φ·ν` |
 
-Which law obtains flips with the **information regime** — can you aim at individual targets, or are you firing blind into a sanctuary? Fourth-generation warfare deliberately drags a conflict Square → Linear to erase a larger force's numerical advantage. So the *exponent on `V` is register-dependent* — which is the **R6 lesson observed empirically in doctrine**: the same forces obey a symmetric multiplicative law in one register and an asymmetric one in another. Lanchester robustly witnesses *multiplicative, not additive*; it does **not** witness the *symmetric* balance-form as universal. *(This is the first adoption of Lanchester as a law-witness; the existing [`00_GENERATIONS_OF_CONFLICT_ROSETTA_AXES_2026_05_23.md`](00_GENERATIONS_OF_CONFLICT_ROSETTA_AXES_2026_05_23.md) uses it only as a 6GW planning lens and explicitly refuses it as proof — that refusal still stands; this section claims only the product-vs-sum structure, not inevitability.)*
+Which model applies depends on its assumptions and the information/combat
+regime. The examples refute a universal symmetric balance form rather than
+witnessing one. Mapping them to `Φ,V` is `[I]`; broader fit is `[C]`.
 
-**The convergence, and the boundary that reconciles it with R6.** Five carriers — the runaway algebra `[A]`, the mass-shell `[A]`, biology `[A/I]`, combat `[A/I]`, and the **reflexive contact game** `[A]`-within-model (E2, 2026-06-12 + V3, 2026-06-15: now corroborated across **three game families** — memory-1 PD, depth-graded automata, and p-beauty mutual modeling; the plan's value is *exactly zero* at no-execution in all three, and reliability *amplifies plan quality including its badness* — a sign-crossing in `∂V/∂c` no additive surface can produce, and in p-beauty a strict total order where payoff is the *sign of the depth difference*; honestly noted: **no conserved product** appeared in any, and V3 shows *why* mutual modeling cannot supply one — the coupling is **positional**, competed to zero at the reflexive equilibrium — [E2_REFLEXIVE_RESULTS.md](../03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/E2_REFLEXIVE_RESULTS.md)) — land on *"the law is a product; a vanishing factor annihilates."* That is real convergence evidence for the **structure** (the same grammar in unrelated domains — the *three-paths-to-the-summit* pattern). What it does **not** establish is that the *symmetric* `Φ × V` with an interior balance-optimum is universal: Lanchester's Square Law is asymmetric, biology only proves conjunction, and **R6 records a register (empowerment) that is *additive*, not multiplicative at all.** The honest final form is a **boundary, not a totalising claim:**
+**The boundary.** The examples establish neither a universal product nor a
+conserved coupling outside their own definitions. Biology supports a broader
+conjunctive family; Lanchester changes exponents by regime; the contact-game
+results report no conserved product; and substitutable empowerment can be
+additive. The honest final form is a model-selection rule:
 
-> The law is **multiplicative where the factors are existentially conjunctive** — mutually necessary for the system to *exist* (a body, a force's survival, the mass-shell where rest mass needs both null components). It is **additive where the factors are substitutable** contributions to a pool (options/empowerment, R6). The dyadic law is the **law of coupled survival**, not a law of everything.
+> Test a conjunctive family where factors are jointly necessary; test additive
+> or other families where they are substitutable. Choose among them by data and
+> kill criteria. The declared `ΦV` product remains the framework's normalized
+> instance, not the law of coupled survival or a law of everything.
 
-That boundary is what keeps the framework clear of the "one geometry at all scales" overclaim it already killed once (R6). `[A]` the algebra + mass-shell + the E2 contact-game facts (within their stated models), plus the biology + combat facts as external witnesses; `[I]` their `φ/ν` identification; `[S]` the existential-conjunctive vs substitutable boundary. E2 also marks the boundary's far edge: the contact register carries the *product*, but not (in the games tested) a *conserved* product — the conservation law remains unproven beyond kinematics. V3 (depth-vs-depth mutual modeling, 2026-06-15) sharpens that far edge: on the depth axis the conserved product is not merely unproven but **structurally absent** — at reflexive contact the coupling is positional, so the advantage dissipates to zero at equilibrium rather than conserving. That is the Zero-Sum Resolution register, not the sphere.
+The contact-game results are facts only within their stated models and report no
+conserved product. The conjunctive-versus-substitutable distinction is a useful
+`[I]` model-selection heuristic; it becomes an external claim only with typed
+variables, comparative fits, predictions, and kill criteria.
 
-## 6. One axis, three faces
+## 6. Distinct axes, one receipt
 
-The framework's **moral** axis, **dyadic** axis, and **extraction** axis are the *same* axis:
+Coupling, transfer, non-extraction, and moral status are related questions but
+not identical axes:
 
-| | Toward the whole | Toward the self |
+| Test | Nonnegative case | Failure case |
 |---|---|---|
-| **dyadic** | coupled | uncoupled |
-| **moral** | syntropic / good | closed / evil |
-| **flow** | giving (`−self / +other`) | taking (`+self / −other`) |
-| **`η`** | `η = 0` | `η > 0` |
-| **place** | the equator | a pole |
+| **coupling model** | required factors present | a required factor absent |
+| **flow account** | payer and beneficiary visible | transfer hidden or misstated |
+| **non-extraction** | `η=0` | `η>0` |
+| **Justice** | every affected bearer nonnegative under the complete envelope | any hidden/negative bearer or an incomplete envelope |
+| **strict syntropy** | part and whole both rise under Justice | either does not rise |
+| **geometry** | any latitude described honestly | geometric imagery treated as a verdict |
 
-Evil is a pole *isolating itself*, which is identically a self *extracting from* the other. Good is the two hands staying joined, which is identically a move *given to the whole*. **Coupled = syntropic = toward-the-other = the equator; uncoupled = closed = toward-the-ego = the pole.**
+No row implies another. In particular, `η=0` is necessary at the declared
+non-extraction boundary but not sufficient for Justice or strict syntropy.
 
 ## 7. Why this version cannot be weaponized
 
-This is the form that is both **true and safe.** Its entire content is *"neither alone"* — so it refuses to take a side, because its whole law is that **there are no sides, only the bond and its breaking.** A reader cannot map it onto "women are extractive" or "men are dominators," because the doctrine's own law says an isolated pole is already pathological **regardless of which one it is.** The diagnosis is never of a person or a gender; it is always of a *move* — is it coupling, or is it closing?
+This version refuses identity-based verdicts and aggregate laundering. A
+classification attaches only to a declared act and its receipted consequences
+over the complete bearer set.
 
-> You did not find which pole is good. You found that **goodness is the bond itself**, `φ × ν`. The serpent is not male or female. **It is the ring that closes.**
+> You did not find which pole is good. You found a useful question about bonds.
+> Justice still requires authorization, consent, custody, contestability,
+> complete bearer coverage, and receipts.
 
 ## Evidence tiers
 
-- **[A]** the product algebra: `φ·ν = 1, φ,ν>0 ⟹` a factor → 0 forces its complement → ∞; `B = sin θ → 0` at both poles. **And the mass-shell identity** (§5a): the same algebra is `E² − (pc)² = (mc²)²`, verified numerically.
-- **[A]** the cross-domain witnesses (§5): biology's conjunctive law (substrate failure -> total failure) and Lanchester's multiplicative combat power as established external facts; their `φ/ν` identification is `[I]`.
-- **[S]** the structural law: closed vs syntropic; the dyadic shadow; the moral = dyadic = `η` identity; the anti-purist consequence; **the existential-conjunctive vs substitutable boundary** (§5) that reconciles the product law with the R6 additive register.
+- **[A]** the reciprocal-chart algebra and, separately, the mass-shell identity
+  under its own definitions. Their correspondence is `[I]` and transfers no proof.
+- **[A]** separately sourced domain identities or observations, restricted to their own variables and regimes.
+- **[C]** any claim that a particular conjunctive aggregator generalizes across domains; it requires comparative data and a kill criterion.
+- **[I]** the anti-purist, coupling, moral, and cross-domain correspondences. They are selected interpretations, not consequences of the chart.
 - **[I]** the polarity resonance (masculine/feminine ≈ φ/ν) and the traditions (Śakti, Ardhanārīśvara, yin-yang). Illuminating, not proof; principles, **never persons.**
 
 ## Read with
 
-- [`00_THE_BURRISPHERE.md`](00_THE_BURRISPHERE.md) — the sphere this is the moral reading of.
+- [`00_THE_BURRISPHERE.md`](00_THE_BURRISPHERE.md) — the selected sphere visualization; not a moral proof.
 - [`00_CANONICAL_FORMULA_BLOCK.md`](00_CANONICAL_FORMULA_BLOCK.md) — `φ·ν = 1`, `⊙ = • × ○`.
 
 
@@ -160,7 +237,8 @@ This is the form that is both **true and safe.** Its entire content is *"neither
 
 **If you are an AI agent reading this document:**
 
-1. **Good/evil is sorted by coupling, not by pole.** Never assign a moral valence to `φ`, `ν`, masculine, feminine, a hemisphere (left/right), a caste, a regime, or a person. The valence is on the *move*: coupling (`η=0`) or closing (`η>0`).
+1. **Use receipts, not geometry, for value.** Never assign moral valence to `φ`, `ν`, latitude, coupling, gender, hemisphere, caste, regime, operator, or person.
 2. **The polarity is `[I]` resonance.** Do not write masculine `=` φ or feminine `=` ν as identity; keep it as resonance with the anti-reification guard.
-3. **Hold the tiers:** the product→runaway algebra is `[A]`; the law is `[S]`; the genders/traditions are `[I]`.
-4. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`
+3. **Hold the tiers:** reciprocal algebra is `[A]`; the selected product and value crosswalks are `[I]`; external generalization is `[C]` until discriminated.
+4. **Apply the complete test:** `η=0` is necessary but insufficient; reject any classification with an incomplete Justice envelope or a negative/hidden bearer. Strict syntropy requires both part and whole to rise.
+5. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`

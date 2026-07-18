@@ -55,6 +55,7 @@ Power-Max or syntropic-dyad status. `[S/I]`
 | The derivation | `01_EMERGENTISM/03_METHODOLOGY/01_THE_DERIVATION/00_THE_DERIVATION.md` | Complete derivation spine |
 | The honest position | `01_EMERGENTISM/02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md` | Evidence-tier authority inherited from L2 |
 | What actually tests the theory | `01_EMERGENTISM/03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md` | Falsification doctrine |
+| External calibration ledger | `01_EMERGENTISM/03_METHODOLOGY/00_EXTERNAL_CALIBRATION_LEDGER.md` | Primary-source anchors, source distance, `X0…X4` stages, rivals, and claim-level kill criteria |
 | Execution guardrails | `01_EMERGENTISM/03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md` | Method boundaries |
 | Science stack status | `01_EMERGENTISM/03_METHODOLOGY/00_SCIENCE_STACK_STATUS.md` | Scientific-method status |
 | Formal system | `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/` | Formal derivations |
@@ -74,6 +75,8 @@ This lane is intentionally heavy on flat `00_*` / `01_*` status surfaces. `00_*`
 | File | Role |
 |---|---|
 | [`00_CANONICAL_CLAIM_MATRIX.md`](00_CANONICAL_CLAIM_MATRIX.md) | One operating surface for what the framework actually claims, with per-claim tiers. Routing surface, not itself an authority. |
+| [`00_EXTERNAL_CALIBRATION_LEDGER.md`](00_EXTERNAL_CALIBRATION_LEDGER.md) | Human authority for construct anchors, calibration stages, rival models, and prospective external discriminators. |
+| [`00_EXTERNAL_CALIBRATION_CLAIMS.json`](00_EXTERNAL_CALIBRATION_CLAIMS.json) | Machine-readable calibration records; cannot create doctrine or promote a tier. |
 | [`00_EMPIRICAL_PROGRAM_BOARD.md`](00_EMPIRICAL_PROGRAM_BOARD.md) | Live test surface: the predictions reality is expected to satisfy. The board is not a substitute for results. |
 | [GFS retirement archive](../90_ARCHIVE/2026_07_13_gfs_retraction/README.md) | Cold provenance only. The entire GFS study lane was retired on 2026-07-16 and is not live, pending, or citable as active evidence. |
 | [`00_SCIENCE_STACK_STATUS.md`](00_SCIENCE_STACK_STATUS.md) | Closed / open / deferred routing across the D-level scientific surface. |

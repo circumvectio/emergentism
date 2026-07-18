@@ -11,7 +11,7 @@ rosetta:
 
 # THE GOAL
 
-**Status:** Canonical Emergentist orientation, repaired 2026-07-17
+**Status:** Canonical Emergentist orientation, repaired 2026-07-17; component external bearings registered 2026-07-18
 
 **Evidence tier:** `[I]` as the project's declared worldview and design grammar;
 `[C]` where it claims external explanatory or predictive reach
@@ -36,9 +36,11 @@ compass we can make for finite beings inside reality:
 - **Justice** asks who authorized the consequence, who acted, who pays, who
   benefits, who bears it, and how it can be contested or exited.
 
-The aspiration is reality in toto; the honest deliverable is a fallible,
-externally uncalibrated translation grammar. A compass does not contain the
-terrain. It preserves orientation while maps, models, and circumstances change.
+The aspiration is reality in toto; the honest deliverable is a fallible
+translation grammar whose components are separately marked `X0`, `X1`, or
+`not_applicable`. No whole-system calibration stage is assigned. A compass does
+not contain the terrain. It preserves orientation while maps, models, and
+circumstances change.
 
 ---
 

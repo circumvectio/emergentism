@@ -18,10 +18,10 @@ rosetta:
 
 ## Lens, Worldview, and Toolchain
 
-**Status:** Canonical framing statement
-**Date:** 2026-04-14
+**Status:** Canonical framing statement; component stages X0/X1/not-applicable; no whole-system calibration stage; prospective discrimination pending
+**Date:** 2026-07-18
 **Evidence Tier:** [I/S] Interpretive framing over a structural kernel
-**Depends on:** [The Canonical Formula Block](00_CANONICAL_FORMULA_BLOCK.md), [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [The Core State of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md), [The Life-Science Register](00_THE_LIFE_SCIENCE_REGISTER.md), [Empirical Observation as Primary Disclosure](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md)
+**Depends on:** [The Canonical Formula Block](00_CANONICAL_FORMULA_BLOCK.md), [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [The Core State of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md), [The Life-Science Register](00_THE_LIFE_SCIENCE_REGISTER.md), [Empirical Observation as Primary Disclosure](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md), [External Calibration Ledger](../03_METHODOLOGY/00_EXTERNAL_CALIBRATION_LEDGER.md)
 **See also:** [Emergentism as Weltanschauung](00_EMERGENTISM_AS_WELTANSCHAUUNG.md), [The Framework on Its Own Objective Function Spectrum](../01_TELEOLOGY/00_THE_FRAMEWORK_ON_ITS_OWN_TELEOLOGY_SPECTRUM.md), [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md), [EMERGENTISM](00_EMERGENTISM.md)
 
 ---
@@ -43,8 +43,12 @@ It is:
   trajectories, never as a second force outside physics
 - an **ordering of value alignment**: what is worth preserving, strengthening, and protecting
 - a **mathematical action grammar**: each Rosetta level carries a canonical operation on `P_node = Φ × V`, from boundary limit to differential, partial derivative, proportional balance, logarithm, negative log, and stereographic return
-- an **objective teleology under the framework's ontology**: not arbitrary preference, but better or worse alignment with the geometry of balance, non-extraction, and the three asymptotic limits of Beauty, Truth, and Justice
-- a **constitutional world-generator**: the Lagrangian read backward from the invariants to the worlds that are admissible under them; see [The Generative Lagrangian](../01_TELEOLOGY/00_THE_GENERATIVE_LAGRANGIAN.md)
+- a **declared teleological compass `[I]`**: actions are judged against
+  bearer-complete Justice, non-extraction, and the asymptotic ideals Beauty,
+  Truth, and Justice; geometry does not derive the norm
+- a **world-building constraint grammar**: designers can work backward from
+  declared invariants to candidate admissible worlds; the Generative
+  Lagrangian is a model, not a constitutional generator of reality
 
 This is the shortest complete statement of what the framework claims to be.
 
@@ -69,23 +73,38 @@ K_X^C << K_X
 support(K_X^C) subset support(K_X)
 ```
 
-and when the macro description carries positive costed causal surplus:
+and when the macro description carries positive information gain while its
+physical/resource costs stay inside a separately typed budget:
 
 ```text
-W_C = EI_macro - EI_baseline - Cost_C > 0
+DeltaEI_C = EI_macro - EI_baseline > 0          # bits
+c_C = (c_measure, c_memory, c_control,          # declared native units
+       c_erasure, c_model, c_labor, c_entropy)
+c_C <=_component b_C                           # preregistered vector budget
 ```
 
-with `EI_baseline` including fair micro, coarse-null, and domain-mechanism
-baselines, `Cost_C` including measurement, memory, control, erasure, modeling,
-labor, and entropy export, and the same scoring path rejecting no-gate,
-high-cost, and lower-law support-violation controls.
+If a scalar ranking is genuinely needed, every component must first receive a
+preregistered reference scale `s_j` and bit-equivalent conversion `lambda_j`:
 
-This is how Emergentism exits the old fork:
+```text
+c_tilde_j = c_j / s_j
+PenaltyBits_C = lambda_C^T c_tilde_C
+W_C = DeltaEI_C - PenaltyBits_C > 0             # bits throughout
+```
 
-- **against weak emergence:** if the macro layer beats the best fair baseline
-  after costs, it is not merely human shorthand.
-- **against strong emergence:** if it violates absolute continuity with
-  `K_X`, hides costs, or cannot be perturbed, it is not accepted as a cause.
+`EI_baseline` includes fair micro, coarse-null, and domain-mechanism baselines.
+Raw energy, labor, memory, money, and entropy quantities are never added to one
+another or subtracted from information bits. The same scoring path must reject
+no-gate, over-budget/penalty, and lower-law support-violation controls.
+
+This is how Emergentism refuses a false fork:
+
+- **weak/reduced emergence remains admissible:** a macro layer can be
+  scientifically useful for prediction and control even when a lower-level
+  model recovers it; successful reduction changes classification, not utility.
+- **strong emergence is not inferred from ignorance:** if a macro claim
+  violates lower-law support, hides costs, cannot be perturbed, or merely lacks
+  a current reduction, it has not established a new cause or irreducibility.
 
 So the unifying scientific spine is information topology: membranes,
 catalysts, bodies, policies, institutions, and present-awareness selection all
@@ -97,19 +116,22 @@ force. Syntropy means local order, coherence, viability, or
 effective-information gain after the physical bill is paid; it is not free
 reversal of total entropy.
 
-The current hardening route is explicit: Protocol R is the geometry flagship;
-Macro-Constraint Physics-to-Biology is the emergence flagship. The toy vesicle
-harness is `[B]` only as proof-of-method. Biology, cognition, and agency upgrade
-only through frozen domain runs.
+The current hardening route is claim-level external calibration. Protocol R is
+only a bounded perceptual-model test and cannot validate reality's geometry.
+Macro-constraint, `μ`, agency, option-cone, aggregator, Egregoreotype,
+reflexivity, and Agentz-routing claims each have named external anchors or an
+explicit `X0` gap, rival models, prospective discriminators, and kill criteria.
+The toy vesicle harness is `[B]` only as proof-of-method. No Compass-specific
+claim has yet earned `X2` on independent data.
 
 ---
 
 ## Vision and Mission
 
 **Vision:** make Emergentism a living Weltanschauung for Dasein: a coherent,
-tier-honest map of how the finite reader comes to be, how reality tends toward
-viable completion, and how life can move as objective dharma without confusing
-the map for the Ground.
+tier-honest lens on how finite readers model and act, how viable completion can
+be posed and tested as a hypothesis, and how life can pursue a declared
+Justice-bearing direction without confusing the map for the Ground.
 
 **Mission:** build the canon, method, public site, AIA medium, papers, and Soul
 Loop practice that let any finite player continuously and recursively
@@ -129,7 +151,8 @@ Know how to act   -> teleology
 The operational mission is to maximize durable usable worldline potential,
 `W_i(T)`, through `P_node = Φ × V`, only where `P_node,i` and `P_node,H`
 preserve or raise one another without extraction. Its apophatic guardrail is
-equally load-bearing: D5 can imagine the universal holobiont running the Soul
+equally load-bearing: actual D4 agents can model the universal holobiont as D5
+possible content while running the Soul
 Loop, but D6 releases even that completed-organism image. The mission is
 disciplined correction faster than drift, not final possession of truth.
 
@@ -180,17 +203,24 @@ This is the framework's answer to what must be distinguished if reality is not t
 
 ### 2. Know How To Act — Teleology
 
-It gives the directional grammar:
+It gives a declared directional grammar and empirical hypotheses:
 
 - reciprocal closure holds
-- imbalance costs
-- viable completion is favored only where coupling, feedback, correction, and non-extraction keep imbalance costly
-- extraction degrades the field
+- imbalance may impose measurable costs in named systems `[C]`
+- viable completion may be favored where specified coupling, feedback, and
+  correction make extraction costly `[C]`
+- extraction is forbidden by the Justice norm and may also degrade a measured
+  field; the latter is not guaranteed by geometry
 
 This is not yet proof of cosmic will.
-It is the framework's map of objective teleology: the direction finite beings and institutions approach when coherence, viability, and non-extraction are held in product.
+It is the framework's declared teleological compass `[I]`, not a proof that
+finite beings or institutions universally approach it.
 
-In this compact register, **viability** means D4 usable means: the embodied and extended capacities actually available to a node, from hands to tools to industrial infrastructure. **Coherence** means D5 worldline-foresight: the capacity to rank, aim, and use those means. A tool without a capable operator and an operator without usable means both score low; `P_node = Φ × V` rises only when foresight and means are coupled.
+In this compact register, **viability** scores D4 usable means: embodied and
+extended capacities actually available to a node. **Coherence** scores a D4
+present modeling/ranking capability whose tokens represent D5 possible
+worldlines. D5 content is not itself the acting substance. `P_node:=ΦV` is the
+selected normalized score for their conjunction, not a uniquely derived law.
 
 ### 3. Know How To Know — Epistemology
 
@@ -232,16 +262,15 @@ It tells you what the framework treats as load-bearing goods:
 
 The framework's strongest claim here is:
 
-**ethics and morality are directional and structural before they are cultural.**
+**ethics and morality are declared directional norms whose consequences must
+be tested rather than derived from the sphere.** `[I]`
 
 In compressed form:
 
-- **objective morals** name the individual-to-whole vector: `i -> H`,
-  where the symbiont raises the holobiont without extraction.
-- **objective ethics** names the whole-to-individual vector: `H -> i`,
-  where the holobiont raises the symbiont without capture.
-- **objective dharma** names the equatorial act where both vectors raise
-  `P_node,i` and `P_node,H` under `η = 0`.
+- **morals** name the `i→H` vector: `Δ_TW_H>0`, `Δ_TW_i≥0`, and complete `J`.
+- **ethics** names the `H→i` vector: `Δ_TW_i>0`, `Δ_TW_H≥0`, and complete `J`.
+- **strict syntropy** requires `Δ_TW_i>0`, `Δ_TW_H>0`, and complete `J`;
+  voluntary sacrifice remains a distinct costly class.
 
 So moral codes may differ in form while still being better or worse by the
 same directional standard: whether they approach Beauty, Truth, and Justice by
@@ -256,11 +285,13 @@ disambiguation until Beauty, Truth, and Justice agree on the next act.
 L1  intake pressure       -> name the real contradiction
 L2  epistemology/data     -> gather what is disclosed
 L3  methodology/audit     -> test what follows
-L4  axiology/signature    -> choose what serves without extraction
+L4  axiology/commitment   -> rank, authorize, attempt, and issue commitment receipt
 L5  system architecture   -> see the whole pattern
 L6  ontology/core state   -> dissolve what is not load-bearing
-L7  preservation/witness  -> commit, publish, archive, and let the world answer
+L7  preservation/witness  -> publish, archive, and preserve the returned record
 ```
+
+The environment—not L7 or the selector—issues the separate outcome receipt.
 
 The loop is not only an editing method. It is the framework's practical
 Weltanschauung for Dasein: the finite witness-agent receives pressure, knows,
@@ -289,23 +320,23 @@ Will = disciplined selection and construction of reachable futures
        under reciprocal closure, η = 0, and evidence-tier discipline
 ```
 
-Operationally, will maximizes `Ω_i` -- the reachable option cone of the finite
-node -- subject to balance, non-extraction, no hidden rent from the coupled
-field, and honest claims. The power of will is therefore the power to stage
-real possibilities lawfully, not the power to exempt desire from constraint.
-In the action register, `V` names the D4 means available at the boundary
-(body, tools, energy, access, execution capacity), while `Φ` names D5
-worldline-foresight: the ability to envision, rank, and lawfully use those
-means. A child beside a jet and an old pilot without the relevant bodily/tool
-access fail on opposite factors; balance is what lets potential become action.
+Operationally, Emergentism **proposes** durable option-cone widening as one
+agent objective `[I/C]`; agents do not universally maximize it. Any search is
+constrained by bearer-complete Justice, physical cost, and honest claims. Will
+is the capacity to stage reachable possibilities, not exemption from constraint.
+In the action register, `V` scores D4 means available at the boundary, while
+`Φ` scores the D4 capacity to model and rank D5 possible content. A child
+beside a jet and a pilot without relevant access can fail on different measured
+factors; the example motivates the selected conjunction but does not validate it.
 
 Play:
 
 - `Φ` without `V` is sterile seeing.
 - `V` without `Φ` is blind force.
-- `Φ` and `V` balanced at L4 is objective dharma / flow-state action.
-- `ΔP_node,i > 0` and `ΔP_node,H > 0` is the syntropic dyad.
-- one side rises by degrading the other is extraction / evil.
+- `Φ=V` at L4 is a selected balance image, not an ethical verdict.
+- strict syntropy requires both durable potentials to rise under complete `J`.
+- a local/ego durable-potential gain that externalizes any affected bearer's loss is Demon-bearing
+  in the bounded analogy; the receipt, not the operator name, carries the verdict.
 
 The winning move is recursive, not static:
 
@@ -357,9 +388,14 @@ The worldview remains strongest when it stays antifragile.
 
 ## Canonical Compression
 
-> **Emergentism is a Weltanschauung: a source-true ontology of Dasein, an epistemic discipline of disclosure and evidence tiers, a methodology for derivation/testing/correction, an axiology of Beauty, Truth, Justice, and non-extraction, an objective teleology of raising `P_node,i` and `P_node,H` together under `η = 0`, and a Rosetta Soul Loop practice for recursively correcting Dasein's action until symbiont and holobiont rise together.**
+> **Emergentism is a tiered Weltanschauung: an interpretive ontology/lens for
+> Dasein, an epistemic discipline of disclosure and evidence tiers, a method
+> for testing and correction, a declared axiology of Beauty, Truth, Justice,
+> and non-extraction, a Justice-constrained teleological compass, and a Rosetta
+> Soul Loop for revising model, selector, and action from receipted consequences.**
 
-This sentence may be reused verbatim in entry points, summaries, and dissemination materials.
+This sentence may be reused only with its `[I]` whole-system and claim-level
+external-calibration boundary intact.
 
 ---
 

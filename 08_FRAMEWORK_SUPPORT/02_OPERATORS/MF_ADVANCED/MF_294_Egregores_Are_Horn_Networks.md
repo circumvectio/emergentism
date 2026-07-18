@@ -35,7 +35,12 @@ rosetta:
 **Emergentism.org · VIVEKA Mathematical Foundations**
 **Depends on:** MF-283 (Orthogonality Theorem), MF-290 (Ektropic Radius), MF-291 (Landauer Horn), MF-293 (Language Is Bandwidth), A5 (The Egregore)
 **Evidence tier:** [T] Theoretical; [I] Interpretive application to sociology and collective intelligence
-**Purpose:** Show that egregores (A5: D5-limit standing waves with autonomous objective function) are networks of coupled horns — arrays of Maxwell's demons sharing computational resources through language channels. The network's total light cone exceeds any individual horn. Raktabīja is network hijacking: the collective computation is redirected from carrier ΣΔP_node toward the standing wave's own persistence. The internet extended the horn network by orders of magnitude while potentially REDUCING its total P_node through attention fragmentation.
+**Purpose:** Test whether Egregoreotype candidates can be modeled as networks
+of coupled horns sharing computational resources through language channels.
+The five trace/turnover/intervention/bias/cost conditions must be measured; no
+autonomous objective or expanded physical light cone is presumed. Raktabīja is
+the `[C]` hypothesis that collective computation can be redirected toward
+trace persistence while imposing visible carrier costs.
 
 ---
 

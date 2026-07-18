@@ -14,18 +14,22 @@ rosetta:
       column: Core State
       role: "prevent raw-signal handling from becoming interpretation"
   operator: "Kali 🎲"
-  tier: "Demon"
+  tier: "Routing"
   regime: "Caṇḍāla"
-  register: "[T/B]"
+  register: "[D/B]"
   canonical_phrase: "L1 Caṇḍāla Firewall — Operational Runbook"
 title: "L1: Caṇḍāla Firewall — Operational Runbook"
-status: "ACTIVE — Phase 0 operational runbook"
+status: "SUPERSEDED / NON-EXECUTABLE — historical Phase 0 runbook"
 date: 2026-05-04
-evidence_tier: "[T] Technical specification."
+evidence_tier: "[D] preserved design history; current AGENT_SPEC and managed YAML control."
 ---
 
 
 # L1: Caṇḍāla Firewall — Operational Runbook
+
+> **[金] Non-execution seam — 2026-07-18.** Do not execute the historical
+> instructions below. Current authority is `AGENT_SPEC.md` plus the managed
+> agent YAML. Mythic tier, K2, and transfer language below is provenance only.
 
 > The immune slot at the boundary. Every signal meets L1 first. L1 does not think; L1 perceives, categorises, and routes or refuses.
 

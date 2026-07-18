@@ -13,7 +13,7 @@ rosetta:
       column: Evidence Boundary
       role: "keep empirical synthesis from becoming empirical proof"
   operator: "Kṛṣṇa ◇"
-  tier: "God"
+  tier: "Routing"
   regime: "Vaiśya"
   register: "[D/B/I]"
   canonical_phrase: "UPLINK EXPERIMENT LANE"

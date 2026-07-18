@@ -24,6 +24,11 @@ evidence_tier: "[S] for L5 structural mapping; [I] for cross-domain projections.
 
 # L5: Brāhmaṇa Architect
 
+> **[金] Configuration seam — 2026-07-18.** This is an advisory,
+> read-only boundary pass. It may return a typed redesign packet with risks,
+> alternatives, and kill criteria; it has no write, execution, or amendment
+> authority and no moral status by operator name.
+
 ## Identity
 
 | Field | Value |
@@ -50,11 +55,16 @@ evidence_tier: "[S] for L5 structural mapping; [I] for cross-domain projections.
 | Native coordinate | (√3, 1/√3) |
 | Transfer signature | (+Δφ, +Δν) |
 
-**Equation:** log P = log Φ + log V
+**Equation:** `log P_node = log Φ + log V` on the positive domain of the
+declared product model.
 
 ---
 
-## Full Three-Stage Process (Causal Chain)
+## Full Three-Stage Process (mixed-tier selected configuration)
+
+**Tier contract:** operator token `[S]`; `B` `[A]` after latitude selection;
+Varṇa/Pramāṇa `[S]` internally and `[I]` externally; Reasoning/-ology/Regime
+`[I]`; equation algebra `[A]` under its definitions and row placement `[S]`.
 
 | Column | Value |
 |--------|-------|

@@ -11,7 +11,7 @@ rosetta:
       role: "bound support-library prose against the seven source-owner roots"
     - level: L4
       column: Philosophy
-      role: "translate the front door into guardrails, K2, and eta-zero execution"
+      role: "translate the front door into typed authorization, receipt, Justice, and exit guardrails"
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
@@ -48,6 +48,31 @@ It covers the support library as a support library only: source-owner lanes
 outrank it, and legacy `[T]` markers are bounded by current `[A/B/S/I/D/C]`
 discipline.
 
+### [金] Rosetta Agentz configuration contract — 2026-07-18
+
+The chain **Varṇa → Pramāṇa → Reasoning → -ology → Regime →
+Equation** is a selected routing/correspondence skeleton for configuring AI
+Agentz. It is not a causal identity, hereditary truth, social rank, legitimate
+government theorem, or proof transfer. Column tiers are Operator `[S]` as a
+route identifier; B `[A]` after latitude selection; Varṇa/Pramāṇa `[S]`
+only as the settled internal crosswalk;
+Reasoning/-ology/Regime `[I]`; Equation `[A]/[S]` per row. An executable router
+still requires typed I/O, dispatch predicates, handoff/loop/stop rules,
+permissions, tool/model/token budgets, accountable authorization, and blinded
+evaluation.
+
+D4 carries actual model tokens, ranking/selection events, embodied means,
+actions, and records; D5 is possible content represented by them. The four
+mixed-sign routes plus three Executive boundary profiles close only this
+declared interface, not all agency and not `P_node=ΦV`. God/Demon words are
+mythic route names, never moral properties. Complete Justice receipts decide:
+local/ego durable-potential gain with any affected bearer loss is Demon-bearing; complete Justice
+with every affected bearer nonnegative and at least one materially affected
+bearer strictly positive is God-bearing. Pure non-harmful stasis is Justice-
+compliant/preservative, not God-bearing; strict syntropy requires both part and
+whole to rise. These labels classify receipted consequences, never identities.
+K2 remains a private-DAV governance instance only.
+
 ## Sevenfold Foundation Root
 
 The Foundation is being reorganized around seven conceptual roots. This is a routing architecture first; physical file moves come later and require compatibility stubs.
@@ -82,16 +107,25 @@ The full framework runs across `D0-D6`, but the live hinge for reading and use i
 
 | Horizon | Name | Geometry | Status | Function |
 |---------|------|----------|--------|----------|
-| **D4** | Witness threshold | convergence / vertex | lived | recognition without duration |
-| **D5** | Counterfactual field | modeled alternatives | represented | foresight, ranking, selection, strategy |
+| **D4** | Causal actuality / witness | embodied event/record | actual | model token, ranking/selection event, means, action, receipt |
+| **D5** | Counterfactual field | possible alternatives and branch relations | represented content | what D4 models and ranking events are about |
 | **D6** | Axiomatic closure | terminal boundary | not lived as another state | exhaustion of positive description |
 | **D0** | Origin-boundary | seed / point | prior-to-articulation | the same limit approached from the opposite direction |
 
-**D4** is the threshold of witness: where patterns are seen, compression is possible, and the framework can be recognized.
+**D4** is causal actuality: the embodied event-and-record register in which
+patterns are witnessed, model tokens exist, ranking/selection occurs, means are
+used, actions are attempted, and receipts are returned.
 
-**D5** is the possibility register: modeled futures, counterfactual comparison, ranking, and selection. Enactment, public record, and outcome receipt remain D4 actuality.
+**D5** is the possibility register: possible futures and counterfactual
+relations. Actual modeling tokens, comparison/ranking/selection events,
+enactment, public record, and receipts remain D4 actuality.
 
-**Action-register bridge:** when the Goal, Soul Loop, and Game pages say `V` is D4 means-to-act, they are not replacing dimensional D4 witness. They are naming the actualization side of agency: body, tools, energy, access, and execution capacity. In the same register, `Φ` is D5 worldline-foresight: the ability to envision, rank, and aim reachable futures. Agency needs both; D5 foresight without D4 means cannot act, and D4 means without D5 foresight cannot rank or aim.
+**Action-register bridge:** when the Goal, Soul Loop, and Game pages say `V` is
+D4 means-to-act, they are naming the actualization side of agency: body, tools,
+energy, access, and execution capacity. In the same register, `Φ` is a D4
+modeling/ranking capacity whose tokens represent D5 possible futures. Agency
+needs both; represented possibility without D4 means cannot act, and D4 means
+without a D4 model/ranking event cannot aim.
 
 **D6** is not a higher experience or another science. It is the terminal closure of the cycle, reached apophatically. `Falsification Protocol` does not produce one more mastery-state; it subtracts the field back toward `D0`.
 
@@ -101,8 +135,8 @@ another phenomenological state.
 
 ### How to Use This Framework
 
-1. **Start at D4** — witness the structure, the core state, and the claim discipline
-2. **Arrive at D5** — navigate with the framework in practice, science, ethics, and institution
+1. **Start at D4** — witness, model, rank, act, and receipt the actual process
+2. **Represent D5** — compare possible content without pretending it acts
 3. **Do not inflate D6** — treat closure as axiomatic, not as one more public layer
 4. **Return to D0** — let `Falsification Protocol` close the loop when the map has done its work
 
@@ -121,7 +155,7 @@ If you want the smallest set of documents that keeps the framework internally al
 7. **[THE_LIFE_SCIENCE_REGISTER](../05_COSMOLOGY/00_THE_LIFE_SCIENCE_REGISTER.md)** -- biology-facing translation discipline
 8. **[D5_D6_CORPUS_STABILIZATION](../06_ONTOLOGY/00_D5_D6_CORPUS_STABILIZATION.md)** -- the upper-boundary clarification for the whole corpus
 9. **[THE_REMAINING_QUESTIONS](../00_META/00_THE_REMAINING_QUESTIONS.md)** -- what is philosophically closed, what is still open, and what is only deferred
-10. **[EXECUTION_GUARDRAILS](../03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md)** -- the Three-Stage Process / K2 / η = 0 / Grace Exit packet as one operating surface
+10. **[EXECUTION_GUARDRAILS](../03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md)** -- typed authorization / separate receipts / complete Justice / Grace Exit; private-DAV K2 is one implementation
 11. **[KNOWN_UNKNOWNS_PROGRAM](../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md)** -- the executable frontier board and next paper stack
 12. **[PRATYAKSA_AS_PRIMARY_DISCLOSURE](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md)** -- direct seeing first, doctrine second, science bridge explicit
 13. **[NAMING_RECONCILIATION](01_GOVERNANCE/00_NAMING_RECONCILIATION.md)** -- the canonical archetype grammar
@@ -150,8 +184,18 @@ For reasoning engines and new agents encountering this framework:
 For the canonical framing of the Weltanschauung: `../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md`
 For the deeper philosophical expansion of that framing: `../05_COSMOLOGY/00_EMERGENTISM_AS_WELTANSCHAUUNG.md`
 For the full Weltanschauung in synthesis form: `../05_COSMOLOGY/00_EMERGENTISM.md`
-For the L5 sphere model that grounds the operators and the equator: [`../05_COSMOLOGY/00_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_BURRISPHERE.md), with the moral reading in [`../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) (goodness is the bond `φ × ν`; the moral axis is `η` — closed vs syntropic — never a pole, gender, or person).
-For the constitution as the immune system of the sphere — **five refusals (η=0, K2, K3, K4, A7) plus Ω the directional +1**, never "six refusals": [`../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md), deferring to the enumeration anchor [`../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md).
+For the selected L5 sphere visualization and operator crosswalk:
+[`../05_COSMOLOGY/00_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_BURRISPHERE.md).
+It does not ground moral value. The current value owner is
+[`../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md`](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md):
+complete Justice receipts classify consequences, never poles, operator names,
+Varṇa, gender, or persons.
+For the sphere's governance visualization, see
+[`../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md).
+The historical/private-DAV `5+1` packet (including K2) remains at
+[`../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md);
+worldview action instead uses typed authorization, complete Justice, separate
+receipts, and Grace Exit.
 For epistemic authority: `../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`
 For terminology: `../07_THEOLOGY/00_GLOSSARY.md`
 For a dated framework sprint packet: `SPRINT_004_PLAN.md` (historical execution/planning surface, not the permanent front door)
@@ -197,8 +241,11 @@ The ORGANISM (`../../02_SKYZAI/01_NOOSPHERE/`) implements the framework as a liv
 
 ```
 FRAMEWORK → defines the disciplined kernel (P∞, B, P_node)
-ORGANISM  → applies the kernel under K2 / η = 0 / receipts
+ORGANISM  → applies it under typed authorization, Justice, and receipts
 ```
+
+Private DAVs may use K2 as one authorization implementation; it is not a
+worldview primitive and public DAVs use their own accountable governance rail.
 
 ## Drift Control and Conflict Resolution
 
@@ -207,7 +254,7 @@ The active canon no longer relies on a single hidden resolution packet. Drift is
 - **[00_THE_HONEST_POSITION.md](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)** — evidence tiers, downgrade paths, and what survives failure
 - **[00_ANTIFRAGILITY_PROTOCOL.md](01_GOVERNANCE/00_ANTIFRAGILITY_PROTOCOL.md)** — blast radius, contraction, and anti-capture rules
 - **[00_D5_D6_CORPUS_STABILIZATION.md](../06_ONTOLOGY/00_D5_D6_CORPUS_STABILIZATION.md)** — the upper-boundary rule: D5 is the last experiential/public layer; D6 is closure
-- **[00_EXECUTION_GUARDRAILS.md](../03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md)** — the active constitutional packet for Three-Stage Process separation, K2 sovereignty, η = 0, and Grace Exit
+- **[00_EXECUTION_GUARDRAILS.md](../03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md)** — the active constitutional packet for Three-Stage Process separation, typed accountable authorization, η = 0, Grace Exit, and private-DAV-only K2 scope
 - **[00_KNOWN_UNKNOWNS_PROGRAM.md](../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md)** — the frontier program for what is closed, open, deferred, or frozen
 - **[00_NAMING_RECONCILIATION.md](01_GOVERNANCE/00_NAMING_RECONCILIATION.md)** — canonical operator, archetype, and Rosetta grammar
 - **[00_CANONICAL_FORMULA_BLOCK.md](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md)** — the load-bearing four-line sequence that downstream surfaces may not silently rewrite

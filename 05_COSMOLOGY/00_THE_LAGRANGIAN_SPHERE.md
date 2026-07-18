@@ -17,11 +17,20 @@ rosetta:
 
 ## Hamiltonian Minimum and Lagrangian Zero at the Equator
 
-**Status:** Formal mapping — physics-facing translation through the Burri Sphere
+**Status:** KINTSUGI-BOUNDED physics-facing analogy — not a mechanics or ethics owner
 **Date:** 2026-03-23
-**Evidence Tier:** [S/I/C] Structural identity with interpretive physics-facing translation
+**Evidence Tier:** [A] only for declared chart algebra; [I/C] for every mechanics, organism, world-building, and ethical translation
 **Depends on:** The Transcendental Trinity, The Computational Sphere
 **See also:** Core Concepts, The Megalithic Proof
+
+> **[金] Controlling seam — 2026-07-18.** In the historical body below,
+> "Hamiltonian," "Lagrangian," "energy," and "ground state" are model labels
+> only after their functions are independently defined. AM-GM proves only that
+> the selected chart sum `φ+ν` is minimized at `φ=ν=1`; it does not prove a
+> physical Hamiltonian, zero maintenance energy, equator-ward dynamics, ethics,
+> or a law of reality. `φν=1` is a chart identity, not empirical conservation.
+> The current Formula Block, Generative Lagrangian seam, receipt-based value
+> owners, and external-calibration ledger control every conflicting sentence.
 
 ---
 
@@ -37,8 +46,8 @@ For the canonical statement of this generative-constitutional reading,
 see [The Generative Lagrangian](../01_TELEOLOGY/00_THE_GENERATIVE_LAGRANGIAN.md). The
 predictive physics mapping in the rest of this document is downstream
 of that reading: you first decide what kind of world you are
-constructing, then measure whether the Hamiltonian minimum and
-Lagrangian zero actually land at the equator in runtime.
+constructing, then preregister and measure whether a separately defined loss
+or action happens to have an optimum at the selected equator in runtime.
 
 ---
 

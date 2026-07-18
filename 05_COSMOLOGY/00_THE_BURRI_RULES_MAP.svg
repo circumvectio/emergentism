@@ -1,132 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 1264" font-family="Helvetica, Arial, sans-serif">
-  <!-- SUPERSEDED LEGACY SNAPSHOT — NOT LIVE AUTHORITY. The canonical proof view is 00_BURRI_RULES_PLATE.svg and the derived compression is 00_BURRI_RULES_EMBLEM.svg. Conflicting body labels below are retained only as visible provenance and are superseded by KSC-01..KSC-06.
-       THE BURRI RULES — companion visual v3 (historical snapshot dated 2026-07-10). Skeleton only: frame/ladder/loops/closure; Rules 5–8 live in 00_THE_BURRI_RULES.md.
-       Line-style law (connective strokes — edges/arcs; node outlines are glyph boundaries outside the law): solid=[A] MATH (within-model) · long-dash=[S] MODEL · short-dash=[I] INTERP · dotted=[C] CONJ/proposed.
-       ⚑ = flagged contradiction (receipt 104) · ∅ = stated absence. v1+v2 BTJ defects folded (wf_d742f55d-880, wf_ce2bd165-b99). -->
-  <rect width="840" height="1264" fill="#0a0c10"/>
-
-  <!-- title -->
-  <text x="40" y="52" fill="#eef1f5" font-size="30" font-weight="bold" font-family="Georgia, serif">THE BURRI RULES</text>
-  <text x="40" y="76" fill="#e05a6d" font-size="12.5">SUPERSEDED LEGACY SNAPSHOT · NOT LIVE AUTHORITY · canonical view: 00_BURRI_RULES_PLATE.svg</text>
-
-  <!-- ===== TITAN FRAME (trans-dimensional; no per-rung assignment exists ∅) ===== -->
-  <text x="155" y="98" fill="#8a93a3" font-size="11">THE TITANS {0, 1, ∞} — boundary-frames of the whole field · define the operations, are not operands</text>
-  <rect x="150" y="118" width="540" height="844" rx="26" fill="none" stroke="#e8b34c" stroke-width="1.6" stroke-dasharray="10 6"/>
-  <!-- ∞ / ○ top -->
-  <circle cx="420" cy="118" r="15" fill="#0a0c10" stroke="#e8b34c" stroke-width="2"/>
-  <text x="420" y="123.5" fill="#e8b34c" font-size="15" text-anchor="middle">○</text>
-  <text x="443" y="110" fill="#e8b34c" font-size="12">∞ — projective completion [A math · S/I ontology]</text>
-  <!-- 0 / • bottom -->
-  <circle cx="420" cy="962" r="15" fill="#0a0c10" stroke="#e8b34c" stroke-width="2"/>
-  <text x="420" y="967" fill="#e8b34c" font-size="15" text-anchor="middle">•</text>
-  <text x="443" y="988" fill="#e8b34c" font-size="12">0 — additive identity · Bindu, κ=0 [A · S/I]</text>
-  <!-- 1 / ⊙ left mid -->
-  <circle cx="150" cy="540" r="15" fill="#0a0c10" stroke="#e8b34c" stroke-width="2"/>
-  <text x="150" y="545" fill="#e8b34c" font-size="14" text-anchor="middle">⊙</text>
-  <text x="128" y="500" fill="#e8b34c" font-size="12.5" text-anchor="end">1 — finity</text>
-  <text x="128" y="516" fill="#8a93a3" font-size="10.5" text-anchor="end">self-dual midpoint [A]</text>
-  <text x="128" y="531" fill="#8a93a3" font-size="10.5" text-anchor="end">naming [S/I]</text>
-  <text x="160" y="1002" fill="#8a93a3" font-size="10.5">∅ no per-Titan-per-dimension assignment exists in canon —</text>
-  <text x="160" y="1015" fill="#8a93a3" font-size="10.5">the frame holds the whole ladder, not the rungs</text>
-  <!-- [CONJ] generative bridge: a STUB from ⊙, deliberately touching no rung and no rail -->
-  <line x1="167" y1="540" x2="203" y2="540" stroke="#8a93a3" stroke-width="1.2" stroke-dasharray="2 5"/>
-  <text x="132" y="560" fill="#8a93a3" font-size="10" text-anchor="end">‹CONJ› Titans → μ-ladder</text>
-  <text x="132" y="573" fill="#8a93a3" font-size="10" text-anchor="end">as a whole — map's proposal,</text>
-  <text x="132" y="586" fill="#8a93a3" font-size="10" text-anchor="end">not source ∅ (touches no rung)</text>
-
-  <!-- ===== LADDER D0 (bottom) → D6 (top) — scheme: 00_EMERGENTISM:290-299 [S] ===== -->
-  <!-- μ crossings (long-dash = MODEL/analogy) · node ys: D0 880 · D1 766 · D2 652 · D3 540 · D4 426 · D5 312 · D6 198 -->
-  <g stroke="#6b7383" stroke-width="1.8" stroke-dasharray="10 6" fill="none">
-    <path d="M400 854 L400 792"/><path d="M400 740 L400 678"/><path d="M400 626 L400 566"/>
-    <path d="M400 514 L400 452"/><path d="M400 286 L400 224"/>
-  </g>
-  <path d="M400 400 L400 340" stroke="#4fd1a5" stroke-width="3" stroke-dasharray="10 6" fill="none"/>
-  <path d="M394 346 L400 334 L406 346 Z" fill="#4fd1a5"/>
-  <g fill="#6b7383" font-size="11" text-anchor="end">
-    <text x="384" y="826">μ₀ ∅ underived</text>
-    <text x="384" y="712">μ₁ [MODEL]</text>
-    <text x="384" y="599">μ₂ [MODEL]</text>
-    <text x="384" y="486">μ₃ [MODEL]</text>
-    <text x="384" y="255">μ₅ [MODEL] → closure</text>
-  </g>
-  <text x="384" y="360" fill="#4fd1a5" font-size="11.5" text-anchor="end" font-weight="bold">μ₄ — the witness limit</text>
-  <text x="384" y="375" fill="#4fd1a5" font-size="10.5" text-anchor="end">μ↑ potential→actual · χ↓ foresight→receipt (A.2 reframed·105)</text>
-  <text x="384" y="389" fill="#8a93a3" font-size="9.5" text-anchor="end">analogy — no threshold ∅</text>
-  <text x="370" y="872" fill="#5d6674" font-size="9" text-anchor="end">scheme: 00_EMERGENTISM:290-299 [S] · count [Def]</text>
-
-  <!-- nodes + rung labels (plain scheme of record; annotation budget x 436..640) -->
-  <g>
-    <circle cx="400" cy="880" r="24" fill="#12151c" stroke="#eef1f5" stroke-width="1.6"/>
-    <text x="400" y="885" fill="#eef1f5" font-size="13" text-anchor="middle" font-weight="bold">D0</text>
-    <text x="436" y="877" fill="#eef1f5" font-size="12.5">Point — the Bindu</text>
-    <text x="436" y="892" fill="#8a93a3" font-size="10.5">undifferentiated [S] · κ=0 [S/I]</text>
-
-    <circle cx="400" cy="766" r="24" fill="#12151c" stroke="#eef1f5" stroke-width="1.6"/>
-    <text x="400" y="771" fill="#eef1f5" font-size="13" text-anchor="middle" font-weight="bold">D1</text>
-    <text x="436" y="763" fill="#eef1f5" font-size="12.5">Distinction — the line appears</text>
-    <text x="436" y="778" fill="#8a93a3" font-size="10.5">glyph-shadow generator [S/C]</text>
-
-    <circle cx="400" cy="652" r="24" fill="#12151c" stroke="#eef1f5" stroke-width="1.6"/>
-    <text x="400" y="657" fill="#eef1f5" font-size="13" text-anchor="middle" font-weight="bold">D2</text>
-    <text x="436" y="649" fill="#eef1f5" font-size="12.5">Configuration — the plane</text>
-    <text x="436" y="664" fill="#e05a6d" font-size="10.5">⚑ time-entry: D2 [I] vs D4 (A.7)</text>
-
-    <circle cx="400" cy="540" r="24" fill="#12151c" stroke="#eef1f5" stroke-width="1.6"/>
-    <text x="400" y="545" fill="#eef1f5" font-size="13" text-anchor="middle" font-weight="bold">D3</text>
-    <text x="436" y="537" fill="#eef1f5" font-size="12.5">Transformation — process begins</text>
-    <text x="436" y="552" fill="#8a93a3" font-size="10.5">change, not yet directed [S]</text>
-
-    <circle cx="400" cy="426" r="24" fill="#12151c" stroke="#eef1f5" stroke-width="1.6"/>
-    <text x="400" y="431" fill="#eef1f5" font-size="13" text-anchor="middle" font-weight="bold">D4</text>
-    <text x="436" y="417" fill="#eef1f5" font-size="12.5">Causality — time appears</text>
-    <text x="436" y="432" fill="#eef1f5" font-size="10.5">POTENTIAL — pre-collapse register</text>
-    <text x="436" y="446" fill="#8a93a3" font-size="10.5">torus hole · vertex · Witness [S]</text>
-
-    <circle cx="400" cy="312" r="24" fill="#12151c" stroke="#4fd1a5" stroke-width="2"/>
-    <text x="400" y="317" fill="#eef1f5" font-size="13" text-anchor="middle" font-weight="bold">D5</text>
-    <text x="436" y="300" fill="#eef1f5" font-size="12.5">Agency — one ACTUAL enactment</text>
-    <text x="436" y="315" fill="#8a93a3" font-size="10.5">torus surface · φ-ν plane · Agent</text>
-    <text x="436" y="329" fill="#8a93a3" font-size="10.5">F5 [C/I] · Egregorotype [C #106]</text>
-
-    <circle cx="400" cy="198" r="24" fill="#12151c" stroke="#eef1f5" stroke-width="1.6"/>
-    <text x="400" y="203" fill="#eef1f5" font-size="13" text-anchor="middle" font-weight="bold">D6</text>
-    <text x="436" y="195" fill="#eef1f5" font-size="12.5">Closure — experience exhausts</text>
-    <text x="436" y="210" fill="#8a93a3" font-size="10.5">7-count [Definitional], not derived</text>
-  </g>
-
-  <!-- ===== loops (rails outboard; both long-dash = [S]; the [C] test-pending half lives in the label) ===== -->
-  <path d="M225 856 L225 222" stroke="#4fd1a5" stroke-width="2" stroke-dasharray="10 6" fill="none"/>
-  <path d="M218 232 L225 216 L232 232 Z" fill="#4fd1a5"/>
-  <text x="210" y="565" fill="#4fd1a5" font-size="11.5" transform="rotate(-90 210 565)" text-anchor="middle">bottom-up · strong emergence in genesis  [S MODEL]</text>
-
-  <path d="M655 222 L655 856" stroke="#8f7ce8" stroke-width="2" stroke-dasharray="10 6" fill="none"/>
-  <path d="M648 846 L655 862 L662 846 Z" fill="#8f7ce8"/>
-  <text x="670" y="565" fill="#8f7ce8" font-size="11.5" transform="rotate(90 670 565)" text-anchor="middle">top-down · constraint, weak in governance  [S · test #43 pending ∅]</text>
-
-  <!-- ===== closure / unbuild arc D6 → D0 (long-dash: [A] degeneration + [Definitional] mapping — NOT a theorem) ===== -->
-  <path d="M430 180 C 765 150, 765 930, 436 906" stroke="#e8b34c" stroke-width="1.4" fill="none" stroke-dasharray="10 6" opacity="0.85"/>
-  <path d="M446 900 L432 907 L444 916 Z" fill="#e8b34c"/>
-  <text x="452" y="930" fill="#e8b34c" font-size="11" font-weight="bold">unbuild → D0 · apophatic subtraction (A3.1)</text>
-  <text x="790" y="560" fill="#e8b34c" font-size="11.5" transform="rotate(90 790 560)" text-anchor="middle">D6 ≡ D0 — [A] coordinate-degeneration + [Definitional] · not a theorem</text>
-  <text x="812" y="560" fill="#8a93a3" font-size="10.5" transform="rotate(90 812 560)" text-anchor="middle">the built-in unbuild: subtraction to D0 (A3.1) — D0 is still on the map</text>
-
-  <!-- ===== legend ===== -->
-  <g transform="translate(40,1036)">
-    <text x="0" y="0" fill="#eef1f5" font-size="12.5" font-weight="bold">THE LINE-STYLE LAW (Rule 0 — the four registers)</text>
-    <line x1="0" y1="18" x2="52" y2="18" stroke="#eef1f5" stroke-width="2"/>
-    <text x="60" y="22" fill="#8a93a3" font-size="11">solid — MATH [A]: survives a mathematician, within-model (AM–GM given φ,ν&gt;0, φ·ν=1 · area law · composition law)</text>
-    <line x1="0" y1="40" x2="52" y2="40" stroke="#eef1f5" stroke-width="2" stroke-dasharray="10 6"/>
-    <text x="60" y="44" fill="#8a93a3" font-size="11">long-dash — MODEL [S]: stipulated structure doing real work (frames · scaffold · loops · closure-as-mapping)</text>
-    <line x1="0" y1="62" x2="52" y2="62" stroke="#eef1f5" stroke-width="2" stroke-dasharray="4 5"/>
-    <text x="60" y="66" fill="#8a93a3" font-size="11">short-dash — INTERP [I]: translation (Bloch↔Burrisphere · perennial witnesses) — documented law; no [I] stroke on this canvas</text>
-    <line x1="0" y1="84" x2="52" y2="84" stroke="#eef1f5" stroke-width="2" stroke-dasharray="2 5"/>
-    <text x="60" y="88" fill="#8a93a3" font-size="11">dotted — CONJ [C]: wagers (μ-formula · Born=φ·ν=1 · Egregorotype #106 · the generative-bridge stub)</text>
-    <text x="0" y="112" fill="#e05a6d" font-size="11">⚑ adjudicated contradiction (receipt 104)</text>
-    <text x="250" y="112" fill="#8a93a3" font-size="11">∅ stated absence — never filled by invention</text>
-    <text x="0" y="136" fill="#8a93a3" font-size="11">standing wagers, never laundered:  P = Φ×V  [C/I — unwon; retired survey non-citable]   ·   φ·ν = 1 on S²  [A — chart tautology, not a discovery]</text>
-    <text x="0" y="158" fill="#e8b34c" font-size="11.5">⊙ = • × ○ — emblem register only, never field arithmetic</text>
-    <text x="0" y="176" fill="#e8b34c" font-size="11.5">composition: Viṣṇu = Śiva ∘ Brahmā  iff |σκ|=1, σκ≠1  [A within-model · accepted 2026-07-10, receipt 104 · doc 40 flipped R5]</text>
-    <text x="0" y="196" fill="#8a93a3" font-size="11">the real exits — the map is corrected or RETIRED by Rule 8 (clause 6 retires) · the skeptic may take MATH+MODEL and leave the ontology</text>
-    <text x="0" y="214" fill="#5d6674" font-size="10">source: 00_THE_BURRI_RULES.md · full ledger: 00_THE_BURRI_RULES_LEDGER.md · receipt 104 · wf_0101b320-ad9 · CANONICAL — K2-countersigned 2026-07-10 (receipt 104)</text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 520" role="img" aria-labelledby="title desc">
+  <title id="title">Superseded Burri Rules map</title>
+  <desc id="desc">This legacy map is not live authority and is non-canonical. Use the Ivory Burri Rules proof plate.</desc>
+  <rect width="840" height="520" fill="#0a0c10"/>
+  <rect x="40" y="40" width="760" height="440" rx="24" fill="none" stroke="#e8b34c" stroke-width="3"/>
+  <text x="420" y="150" fill="#e8b34c" font-family="Georgia, serif" font-size="34" font-weight="bold" text-anchor="middle">SUPERSEDED / NON-CANONICAL</text>
+  <text x="420" y="205" fill="#eef1f5" font-family="Helvetica, Arial, sans-serif" font-size="22" text-anchor="middle">Legacy Burri Rules map tombstone</text>
+  <text x="420" y="235" fill="#e05a6d" font-family="Helvetica, Arial, sans-serif" font-size="16" text-anchor="middle">This legacy map is not live authority.</text>
+  <text x="420" y="270" fill="#aeb6c4" font-family="Helvetica, Arial, sans-serif" font-size="17" text-anchor="middle">Its D4/D5, emergence, closure, quantum, spelling, and authorization labels are retired.</text>
+  <text x="420" y="315" fill="#eef1f5" font-family="Helvetica, Arial, sans-serif" font-size="18" text-anchor="middle">Canonical proof view:</text>
+  <text x="420" y="352" fill="#e8b34c" font-family="Menlo, monospace" font-size="18" text-anchor="middle">00_BURRI_RULES_PLATE.svg</text>
+  <text x="420" y="392" fill="#eef1f5" font-family="Helvetica, Arial, sans-serif" font-size="18" text-anchor="middle">Derived compression:</text>
+  <text x="420" y="429" fill="#e8b34c" font-family="Menlo, monospace" font-size="18" text-anchor="middle">00_BURRI_RULES_EMBLEM.svg</text>
 </svg>

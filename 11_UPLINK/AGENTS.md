@@ -13,7 +13,7 @@ rosetta:
       column: Receipt Discipline
       role: "separate dated receipts from draft, conjectural, or compressed claims"
   operator: "Arjuna ⚔"
-  tier: "God"
+  tier: "Routing"
   regime: "Kṣatriya"
   register: "[I/B/D/C]"
   canonical_phrase: "11_UPLINK — Agent Routing"

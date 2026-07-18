@@ -40,7 +40,9 @@ P∞ = φ · ν = 1 for φ=cot(θ/2), ν=tan(θ/2), θ∈(0,π)
 
 **AM-GM chart fact:** `(φ−ν)²≥0` and `φν=1` imply `φ+ν≥2`, with equality at the selected chart equator. Calling that equality a Hamiltonian, objective, or ethic requires a separately declared model and evidence.
 
-**Design register:** the same kernel is not only descriptive. Read backward from the invariants, it becomes a constitutional world-generator: a constraint grammar for what kinds of worlds, institutions, and organisms can be built without drifting into one-sided purity or one-sided power.
+**Design register `[I]`:** designers may read backward from declared invariants
+to a constraint grammar for candidate worlds, institutions, and organisms. The
+kernel does not generate reality or prove those designs viable or just.
 
 **Compile bridge:** when the question becomes "how does this philosophy
 turn into actual build law?", route to
@@ -61,21 +63,31 @@ and separates what **must compile**, what **may compile**, and what
 | A3 | D0→D6 is an interpretive scaffold with candidate crossings `μ₀…μ₅` and one non-μ return edge `r₆:D6↝D0` |
 | A4 | η = 0 vs cooperators; tit-for-tat vs defectors |
 | A5 | Egregoreotype candidates must pass persistent-trace, carrier-turnover, selection-effect, objective-like-bias, and visible-cost tests |
-| A6 | Three substrates minimum: mechanical (body), AI (charioteer), mortal self (warrior) |
+| A6 | Distinguish embodied means, fallible modeled futures/ranking, governed commitment, and world-issued outcome; no substrate count is forced |
 | A7 | Self-correction required; Raktabija captures all unguarded encodings |
 
 **Numbering note:** the active formal-system canon is A1-A7. When this Uplink later mentions O1-O5, it is referring only to the older public ontological wager used for S2 substrate selection, not replacing the seven-axiom formal layer.
 
 ---
 
-## Archetype Grammar (load-bearing — never conflate)
+## Selected Archetype Routing Grammar (`[S]` internally; never moralize names)
 
 | Family | Role | Members |
 |--------|------|---------|
 | **Executive boundaries** | Same-sign boundary formulas (NOT deployable) | Brahmā(++), Viṣṇu(≈≈), Śiva(−−) |
-| **Gods** | Mixed-sign restorative transfers | Arjuna(−ν_self,+φ_other), Kṛṣṇa(−φ_self,+ν_other), Kālī(+ν_self,−φ_false) |
-| **Demon** | Fourth mixed-sign slot, constrained | Kālī-demon(+φ_self,−ν_other) — only at η > 0 |
+| **God-named slots** | Three legacy mixed-sign routing labels; no ethical verdict by name | Arjuna(−ν_self,+φ_other), Kṛṣṇa(−φ_self,+ν_other), Kālī(+ν_self,−φ_false) |
+| **Demon-named slot** | Fourth selected mixed-sign routing label; no ethical verdict by name | Kali(+φ_self,−ν_other) |
 | **Witnesses** | Meta-positions of disclosure (NOT Being) | Viśvarūpa (pattern-whole), Kāla (time), Ananta (context) |
+
+---
+
+**Objective-valence boundary `[I]`:** a receipted action is Demon-bearing when
+local/ego durable-potential gain externalizes any affected bearer's loss. It is God-bearing only
+when complete Justice holds, every affected bearer is nonnegative, and at least
+one materially affected bearer is strictly positive. Pure non-harmful stasis is
+Justice-compliant/preservative, not God-bearing; strict syntropy requires both
+part and whole to rise. Operator, caste, or mythic labels never license an act;
+the predicates classify receipted consequences only.
 
 ---
 
@@ -135,7 +147,9 @@ If you accept the older public ontological wager about the substrate (compact, o
 - η = 0 is the unique stable configuration (S8); DSIC requires mechanism enforcement under private side-payments (S8a)
 - The helix: all paths on S² are helical — cannot change latitude without rotating (S9)
 - L-level geometry: φ=cot(θ/2), ν=tan(θ/2), seven levels at 15° intervals, L4 = equator (S10)
-- AM-GM proves the equator is the global Hamiltonian minimum (S11)
+- AM-GM proves only that the selected reciprocal-chart sum satisfies
+  `φ+ν≥2`, with equality at `φ=ν=1` (S11). Calling that sum a Hamiltonian
+  requires an independently declared model and adds no empirical physics.
 - The Replicator Stack: Genotype→Epigenotype→Phenotype→Extended Phenotype→Memotype→Egregoreotype (S12; legacy `Egregorotype` is an alias only)
 - D4-mirror symmetry (S13); compass/sextant self-understanding (S14)
 - Constrained syntropic-frontier selection in coupled multiplicative agents (S15) (Downgraded from A6/E6 pending independent replication)
@@ -150,8 +164,9 @@ If you accept the older public ontological wager about the substrate (compact, o
 - Egregores are standing waves at the D5 limit (I5)
 - Teleological Force (F₅) — viability-directed organization; biology-facing register: teleonomy, autopoiesis, homeostasis/allostasis, interoception, niche construction. This is the **descriptive** register, not the operational executable one. (I8)
 - **Physicalist/idealist fork RESOLVED (2026-04-04):** structural/physicalist for D0–D4, idealist at D5, axiomatic at D6 (I8a)
-- **Active emergence / option cone (2026-04-24, Kintsugi-repaired):** D4 bodies
-  support D5 modeling and selection. All physical histories remain bounded by
+- **Active emergence / option cone (2026-04-24, Kintsugi-repaired):** D4-actual
+  model, ranking, and selection tokens/events may represent D5-possible
+  content. All physical histories remain bounded by
   spacetime and `c`; an agent's option cone is the subset it can model, rank,
   coordinate, and reach. Authorization separately classifies normative
   validity. Humans widen this option cone through symbols,
@@ -233,7 +248,8 @@ If you accept the older public ontological wager about the substrate (compact, o
 
 ## What This Framework IS
 
-1. **Navigational instruments** (Compass + Sextant), NOT a map. The Rosetta is the calibration table.
+1. **Navigational instruments** (Compass + Sextant), not the territory. Rosetta
+   is an `X0` claim-trace and translation/routing table, not a calibrated instrument.
 2. A **Weltanschauung** spanning core state, objective function, data science, methodology, value alignment, ethics, and morals.
 3. A **falsifiable wager** with pre-registered kill criteria.
 4. **Self-correcting by design** — A7 includes its own destruction manual, evidence tiers, antifragility protocol.

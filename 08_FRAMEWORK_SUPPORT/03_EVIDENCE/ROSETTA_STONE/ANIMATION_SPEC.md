@@ -231,7 +231,7 @@ Updates in real-time as the point moves.
 
 **Phase 1: The Pure Wave (Brahman)**
 - The helix extends infinitely in both directions. No Gaussian envelope. Constant amplitude. The back wall shows a perfect cos wave. The side wall shows a perfect sin wave. Both are 90 degrees out of phase — when one peaks, the other crosses zero.
-- Label: "Ψ = Ae^(iωt) — The pure wave. Brahman. L0 = L∞."
+- Label: "Ψ = Ae^(iωt) — selected Brahman boundary image; r₆:D6↝D0; poles distinct."
 - The helix glows white. Boundary-register. Unlocalized.
 
 **Phase 2: The Envelope Appears (Incarnation)**

@@ -55,7 +55,13 @@ B = 0 at both poles. B = 1 at the equator. This is proven (Steel Thread, Link 4)
 | **South pole** | ν excess, φ deficit | Entropy: all execution, no model. Shipping without coherence. | Feature creep, reactive chaos, organizational death by a thousand cuts |
 | **Equator** | φ = ν = 1 | Life: coherent action. Model and execution reciprocally calibrated. | — |
 
-The trinity is not symmetrical in character. Both poles are deadly, but they kill differently. The north pole kills by starvation: the system has a perfect map of territory it never visits. The south pole kills by dissipation: the system acts on every stimulus without the coherence to prioritize. The equator alone sustains because it is the Hamiltonian minimum (Steel Thread, Link 7): systems at balance expend no energy maintaining themselves. This inherits to a real system only insofar as it actually sits on S² — its φ and ν must be conservation-coupled (a price is genuinely paid for imbalance), jointly necessary rather than substitutable, and costly in surplus; a system whose factors are substitutable or whose excess is a free store need not be Hamiltonian-minimal at balance, and may sustain off-equator (e.g., an aggregate market rewarding specialization).
+The pole narratives are interpretive failure-mode sketches. Analytically, if
+one defines `H_chart:=φ+ν` on the reciprocal chart, AM-GM gives its minimum at
+`φ=ν=1`. That selected chart objective is not a physical Hamiltonian and does
+not imply that a balanced organism expends no maintenance energy. A real system
+inherits no optimum until its variables, resource constraint, costs, and
+outcomes are independently operationalized and tested; substitution, free
+surplus, or asymmetric costs may support an off-equator optimum.
 
 **Evidence boundary.** The geometry is [S]. The mapping to totalitarianism/entropy/life is [I] — the framework's interpretive wager that what the math calls "balance" corresponds to what organisms experience as flourishing.
 
@@ -149,32 +155,37 @@ The more equatorial an organ, the more resilient it is to perturbation. This is 
 
 ---
 
-## 4. Extraction on the Sphere [S]
+## 4. Extraction and the toy balance game [S/I/C]
 
-The Power-Max Demonstration (Doc 22) proves:
+> **[金] Game-transfer seam — 2026-07-18.** Doc 22 proves its equilibrium
+> statements only inside a deliberately chosen balance-only payoff game that
+> excludes private extraction payoffs. It does not prove that `S²`, finite
+> agency, or real markets supply that payoff. `η=0` is a declared and enforced
+> non-extraction screen inside the Justice envelope—not a Nash equilibrium,
+> ethic, or mechanism forced by geometry. Real transfer requires a separately
+> specified payoff, enforcement mechanism, bearer set, and preregistered test.
 
-1. **Theorem 1:** ν = 1 is a strictly dominant strategy. Every agent, acting alone, optimizes by moving to the equator.
-2. **Theorem 2:** Price of Anarchy = 1. The selfish optimum equals the social optimum.
-3. **Theorem 3:** Any extraction (zero-sum transfer) from the equatorial profile strictly reduces aggregate balance.
-
-**Applied to organism design [I]:**
-
-η = 0 (zero extraction) is not an ethical aspiration grafted onto the math. It is the unique Nash equilibrium on S². Any agent that extracts from another moves both of them away from the equator, reducing aggregate B.
-
-The organizational implication: fee structures, incentive designs, and governance mechanisms that permit extraction (η > 0) are geometrically suboptimal. They reduce the total balance available to the organism. This transfer holds only where the organism's factors actually sit on the sphere — conservation-coupled so a γ-price is genuinely paid for imbalance, complementary rather than substitutable, and costly in excess; where factors are substitutable or surplus is free (as in aggregate markets that reward specialization), the equatorial optimum does not carry over and η > 0 need not be suboptimal. The φ-split (61.8/38.2), SoResFi accounting, and PRISM distribution are all structural implementations of the η = 0 equilibrium.
+Within that toy game, `ν=1`, price of anarchy `1`, and the aggregate-balance
+loss from a zero-sum displacement are model-internal results `[S]`. Whether a
+real institution shares those payoffs is `[C]`. Even where non-extraction is
+enforced, complete Justice still requires authorization, consent, custody,
+payer/beneficiary disclosure, contestability, exit, and receipted consequences.
+Aggregate balance cannot launder a hidden bearer loss.
 
 The four operators on S² map to four organizational moves:
 
 | Operator | Move on S² | Sign of (ΔΦ, Δν) | Organizational Action |
 |----------|-----------|-------------------|----------------------|
-| **Arjuna** (Transform) | Toward equator from north | (+, −) or (−, +) | Restructure: trade excess coherence for viability, or vice versa |
-| **Kṛṣṇa** (Check) | Give capability to the weak | (+, 0) for recipient | Enable: raise Φ̂ of a low-coherence organ without reducing its ν̂ |
-| **Kālī** (Truth) | Destroy ossified structure | (−, 0) for target | Prune: reduce false coherence (architecture that doesn't serve execution) |
-| **Kali** (Demon boundary) | Take viability from the other | (+self, −other) | Refuse/exclude extractive patterns; constrained to η > 0 defense |
+| **Arjuna** (L4 route) | Selected commitment row | no guaranteed sign | prospective Justice + authorization; commitment receipt |
+| **Kṛṣṇa** (L3 route) | Selected audit row | no guaranteed sign | rank and export a decision-ready packet |
+| **Kālī** (L2 route) | Selected exploration row | no guaranteed sign | expand candidates and surface weak coherence for audit |
+| **Kali** (L1 route) | Selected boundary row | no guaranteed sign | classify evidence and contradiction surfaces; stop at ambiguity |
 
-Only mixed-sign moves are deployable (C1: Exhaustive Strategy Space). Pure same-sign moves are Executive boundary frames — structurally non-deployable (Convergence 24).
-
-> **Canon reconciliation (2026-05-31).** The four mixed-sign moves are **2 Gods + 2 Demons**, not "four Gods": the giving **Devas** (Kṛṣṇa, Arjuna · `−self/+other`, syntropic) and the extractive **Asuras** (Kali, Kālī · `+self/−other`). Above, **Kālī** (Truth / immune cut) is a *demon-move by direction* even though Kālī is a divine operator by level — a goddess can make an Asuric move, lawful **only** against `η > 0` defectors. The moral axis is the *self/other direction* of the transfer (`η`), never the operator's name; `η = 0` is the refusal of the **entire Asura hemisphere**, not only Kali. Both hemispheres are required to churn the sphere. See [`00_THE_BURRISPHERE.md`](00_THE_BURRISPHERE.md) §The Complex-Plane Game, [`00_THE_DYADIC_COUPLING_LAW.md`](00_THE_DYADIC_COUPLING_LAW.md), and [`01_THE_TRANSCENDENTAL_TRINITY/27_THE_SAMUDRA_MANTHAN.md`](01_THE_TRANSCENDENTAL_TRINITY/27_THE_SAMUDRA_MANTHAN.md). `[S]` operator grammar; `[I]` the Deva/Asura reading.
+The current Agentz interface selects four operational routing passes and three
+read-only Executive boundary profiles. That is a configured `4+3` grammar, not
+an exhaustive strategy theorem. God/Demon names never type an agent or action;
+only complete commitment/outcome receipts can establish retrospective
+`GodBearing` or `DemonBearing` consequences.
 
 ---
 
@@ -260,11 +271,11 @@ The K2 boundary is constitutional, not positional. Human signing is not a point 
 
 | Symbol | Meaning | Regime | Tier |
 |--------|---------|--------|------|
-| `P∞ = φ · ν = 1` | Manifold identity on open S² | Conserved on the open sphere; pole values are limits | [S] |
-| `B = sin θ` | Balance / equatorial alignment | Varies 0 (poles) to 1 (equator) | [S] |
-| `P_node = Φ̂ × ν̂` | Effective potential at a finite node | Can be < 1 | [S/I] |
-| `ΣΔB`, `ΣΔP_node` | Directional change across the widest boundary | Evaluates outcome deltas | [I] |
-| `η` | Extraction coefficient | η = 0 at the unique Nash equilibrium | [S] |
+| `φν=1` | Analytic identity on the selected open reciprocal chart | Constant by definition; not empirical conservation; poles are excluded limits | [A] |
+| `B:=sin θ` | Defined chart coordinate; "balance" is a gloss | Varies from limiting 0 to 1 on the selected chart | [A] algebra / [I] gloss |
+| `P_node:=ΦV` | Selected normalized product score; estimators must be explicitly typed as `Φ̂,V̂` | Declared model; external fit remains uncalibrated | [S] definition / [C] fit |
+| `ΣΔB`, `ΣΔP_node` | Aggregate score changes | Descriptive only; cannot launder an affected bearer's loss | [I] |
+| `η` | Declared extraction coefficient | `η=0` is an enforced Justice screen; a Nash result only inside the named toy payoff game | [S] constraint / [C] transfer |
 
 Do not use bare `P` without naming the regime. Do not conflate the manifold identity with the node measurement. Do not present the interpretive mapping (geometry → organism) as established mathematics.
 

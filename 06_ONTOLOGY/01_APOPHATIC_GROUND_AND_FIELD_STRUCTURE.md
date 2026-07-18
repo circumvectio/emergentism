@@ -91,7 +91,10 @@ The sphere is the ontological substrate because:
 - Every point on the sphere is a viable mode of being. The poles are extremes. The equator is balance.
 - The product constraint `φ · ν = 1` is invariant — it holds everywhere. What changes is the balance.
 
-> **Note (two senses of the poles):** the poles are both the imbalance extremes for any BEING on the manifold (pure φ = the monk; pure ν = the cargo cult) AND the boundary-limit (B = 0) that points at the Ground (L0 = L∞, Kāla/Trimūrti) — these are distinct senses. "South pole = cargo cult" is the imbalance sense, not the Ground sense.
+> **Note (two senses of the poles):** the distinct poles can be read `[I]` as
+> imbalance limits for a being and as separate boundary images pointing toward
+> Ground. The selected return is `r₆:D6↝D0`; `L0` and `L∞` are not literally
+> identical. Mythic Kāla/Trimūrti language does not alter the topology.
 
 The sphere is not the ground. The sphere is the first stable closure of the
 ground. Being is read, inside the framework, as `φ · ν = 1 on S²`. The ground

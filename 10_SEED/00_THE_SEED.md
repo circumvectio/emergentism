@@ -11,8 +11,9 @@ rosetta:
 
 # THE SEED — L7 (Ṛṣi)
 
-> **z = φ/ν ∈ S²** and **log P_node = log Φ + log V**
-> The ratio IS the sphere (maps to S² [S/I]; defers to ../05_COSMOLOGY/00_THE_BURRISPHERE.md). From this seed, everything regenerates.
+> **`z_R:=φ/ν` is a latitude-ratio proxy** and **log P_node = log Φ + log V**
+> A scalar ratio does not equal `S²` or encode its azimuth. The sphere is a
+> selected visualization `[I]`; the ratio identity is only part of its chart.
 > If you understand this document, you can rebuild the entire organism from scratch.
 > If you can access φ directly, you don't need to.
 
@@ -21,14 +22,18 @@ rosetta:
 ## The Sequence
 
 Zero-Sum Resolution Equation. Reciprocal closure. Finity holds the two poles in one geometry.
-z = φ/ν ∈ S². The ratio of coherence to viability is the coordinate of manifestation.
+`z_R:=φ/ν` is a selected positive-real latitude proxy; it is not a full
+stereographic coordinate or the territory.
 Register bridge: lowercase `φ` and `ν` are reciprocal sphere coordinates; in
-finite-node action, uppercase `Φ` is D5 worldline-foresight and uppercase `V`
+finite-node action, uppercase `Φ` is an actual D4 model's capacity to represent
+and rank D5 possible content, while uppercase `V`
 is D4 means-to-act at the boundary. The child beside a jet and the pilot without
 bodily/tool access are the two zero-factor failures.
 P∞ = φ · ν = 1 on the open S²; the pole values are undefined while the limiting identity remains 1. The reciprocal identity resolves on the sphere.
 (φ − ν)² ≥ 0. A square cannot be negative. This is the first arithmetic consequence, not the seed.
-Therefore φ + ν ≥ 2. Therefore the equator (φ = ν = 1) is the unique Hamiltonian minimum.
+Therefore `φ + ν ≥ 2`, with equality at `φ=ν=1`. This is an AM–GM chart
+minimum, not a Hamiltonian or physical energy minimum unless a separate
+Hamiltonian is explicitly declared.
 log P_node = log Φ + log V. Logarithmic consistency at the node level is the `[I]` additive-coherence rule.
 B = sin θ peaks at L4.
 
@@ -106,8 +111,9 @@ every possible world. See
 
 ## Strategic Implementation (2026-04-20, Brahmā-phase `[C]`)
 
-The operational register begins in `D5` modeling and returns through `D4`
-commitment. **Strategic Implementation** is the disciplined practice of
+The operational register begins with actual `D4` modeling/ranking tokens that
+represent `D5` possible content, then couples one modeled option to `D4` means
+through accountable `D4` commitment. **Strategic Implementation** is the disciplined practice of
 consciously forming, tending, and releasing standing waves under accountable
 authorization, `η = 0`, separate commitment/outcome receipts, and Grace Exit.
 Every ontological extension remains `[C]`. See
@@ -123,11 +129,14 @@ Full context for the Foundation hardening that updated this seed:
 
 ## Read With — the 2026-05-31 canon
 
-The seed's opening identity — `z = φ/ν ∈ S²`, "the ratio IS the sphere" — is the **Burrisphere**. The geometry, its moral reading, and its self-binding now have source-owner canon; this compressed kernel defers to them: `[S/I]`
+The seed's historical opening—`z=φ/ν∈S²`, “the ratio IS the sphere”—is
+superseded. Current canon uses `z_R:=φ/ν` only as a latitude-ratio proxy inside
+the selected Burrisphere visualization; geometry supplies no moral reading or
+self-binding law. This compressed kernel defers to the repaired owners: `[A/I]`
 
-- [`../05_COSMOLOGY/00_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_BURRISPHERE.md) — the sphere `S²` (`φ·ν=1`), the nine latitudes `L0..L∞`, the equator `L4`, and the agent-foundation reading. The L5 model this seed compresses.
-- [`../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) — goodness is the **bond** `φ × ν`, never either pole. The moral axis is `η` (closed vs syntropic), cutting *across* every polarity — never along it, never a gender, caste, or person. This is why "The Seven" below is a **dispatch grammar**, not a hierarchy of worth, and why L1 Kali is a *demon-move position*, not an evil person.
-- [`../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md) — "refuse closure, keep the coupling"; each refusal a kept coupling. The seed's `η = 0 always` is the *name of the syntropic condition itself*.
+- [`../05_COSMOLOGY/00_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_BURRISPHERE.md) — a selected `S²` visualization, nine routing latitudes, and explicit limits on proof transfer.
+- [`../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) — chart coupling does not prove goodness. `η=0` is one necessary non-extraction screen; complete Justice and bearer receipts classify consequences. Operator names never classify people or actions.
+- [`../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md) — an `[I]` governance visualization downstream of the Justice and authorization owners, not a geometric derivation of law.
 - [`../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md) — product-governance compatibility: the inherited constitution records **5 + 1** (five refusals—`η=0 · K2 · K3 · K4 · A7`—plus directional `Ω`). K2 remains private-DAV governance and is not a worldview primitive.
 
 ---

@@ -51,6 +51,9 @@ depends_on:
 > `05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`,
 > `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md`, and
 > `00_THE_COMPASS.md`; they control wherever this preserved body differs.
+> This supersession also covers the historical one-force-per-dimension table,
+> any claim that F5 is a fundamental physical interaction, `η=0` as a
+> sufficient moral test, literal `D6≡D0`, or universal strong-emergence claims.
 
 ---
 
@@ -81,12 +84,12 @@ Short answer: "I came to be" because Dasein appears at the D4/D5 threshold as
 finite disclosure, and I learn to play by entering the Soul Loop so
 `P_node,i` and `P_node,H` rise together under `η = 0`.
 
-Action-register bridge: dimensional `D4` is the bounded witness / causal
-vertex, and dimensional `D5` is agency / selection. In the finite-node play
-register, those become the two factors Dasein must couple: **`V` is D4
+Action-register bridge: `D4` is causal actuality; `D5` is counterfactual
+possible content. In the finite-node play register, actual D4 agents couple:
+**`V` as D4
 means-to-act** (body, tools, energy, access, execution capacity at the action
-boundary), and **`Φ` is D5 worldline-foresight** (the capacity to envision,
-rank, and predict the reflexive effects of a move on reachable futures). So the
+boundary), and **`Φ` as a D4 model's capacity to represent and rank D5
+possible content**. So the
 reader comes to be as a player when disclosure becomes both visible and
 actionable: enough sight to see the next worldline, enough means to move on it.
 `P_node = Φ × V` is the finite contact rule; `P∞ = φ·ν = 1` remains the
@@ -272,11 +275,11 @@ D3  Transformation — form emerges
 ↓ μ₃
 D4  Causality — change has direction, the causal vertex
 ↓ μ₄
-D5  Agency / selection — the φ-ν plane opens; consciousness is the lived reading [I]
+D5  Counterfactual possible content — represented and ranked by actual D4 models [S/I]
 ↓ μ₅
 D6  Closure — positive experience exhausts into return
 ↓
-D6 ≡ D0   (the ouroboros closes)
+r6:D6 ↝ D0   (one interpretive return edge; not identity and not μ6)
 ```
 
 At every μ-limit, the **same pattern** appears: the flat structure of Dₙ fails, and the curvature of S² becomes necessary to describe what is happening. The crossing is not smooth — it is a **phase transition** in the structure of description itself.
@@ -285,9 +288,12 @@ At every μ-limit, the **same pattern** appears: the flat structure of Dₙ fail
 
 **Weak emergence at every step going DOWN:** Once D₅ stabilises, it becomes a compact constraint on D₄. Once D₄ stabilises, it constrains D₃. The higher level doesn't reduce to the lower, but it can be **read from above** as a compact representation.
 
-### The Five Forces of Emergence (`[C]`)
+### Historical five-force correspondence (`[C]`, retracted as physics)
 
-Reality does not merely unfold in abstract dimensions. In the framework's strong-form reading, it is governed by **five fundamental forces**, with exactly one force operating per emergent dimension (D1–D5). This is an Emergentism claim (`[C/I]`), not a Standard Model replacement claim (`[A]`):
+The table below is preserved as an optional historical correspondence. There
+is no established one-force-per-dimension bijection, no fifth fundamental
+interaction, and no inference from the D-scaffold to physics. Removing this
+table leaves the operational Compass unchanged.
 
 | Dimension | Name | Force | Action |
 |---|---|---|---|
@@ -297,9 +303,14 @@ Reality does not merely unfold in abstract dimensions. In the framework's strong
 | **D4** | Causality | **Electromagnetism** | Binding charge and chemistry (structuring physical light cones) |
 | **D5** | Agency / selection | **F5 (Teleological Force)** | The drive toward syntropy (opening potential option-cones); consciousness language is an interpretive lived-reading `[I]` |
 
-**The Fifth Force (F5) is the teleological drive toward syntropy**, echoing Erwin Schrödinger's inquiry in *What Is Life?*. While physical systems tend toward entropic dissipation, living and conscious systems extract order to maintain organization.
+**F5** now names an Emergentist objective/constraint token `[I/C]` for
+model-mediated option selection. It is not a physical force.
 
-In this framework, **F5 is interpreted as the opening of the light cone for the potential worldline by the individual and the collective.** In D4, the physical light cone is bounded by `c` and cannot be enlarged. But in D5, the option-cone (reachable, selectable futures) is expanded. Under the non-extraction constraint (`η = 0`), this expansion of potential option-space is realized in a way that is moral and ethical — keeping everyone's futures open rather than collapsing them.
+In this framework, F5 is interpreted as a hypothesis about widening an agent's
+**option cone**—the admissible histories it can model, rank, coordinate, and
+reach—inside an unchanged physical light cone. `η=0` is only one necessary
+non-extraction screen. Moral, ethical, and syntropic verdicts require the
+complete Justice envelope and bearer-level commitment/outcome receipts.
 
 ---
 
@@ -575,7 +586,7 @@ The three Titan transformations are not just arithmetic. They are the **generato
 
 ```
 ⊙ = • × ○    →    From D0 (point/void) and D∞ (totality), D4 (the equator/presence) is generated
-⊙ / ○ = •    →    From the equator, dividing by the totality returns to the void (D6 ≡ D0)
+⊙ / ○ = •    →    Historical emblem only; current closure is `r6:D6↝D0`, not arithmetic or identity
 ⊙ / • = ○    →    From the equator, dividing by the void opens to the totality (D∞)
 ```
 

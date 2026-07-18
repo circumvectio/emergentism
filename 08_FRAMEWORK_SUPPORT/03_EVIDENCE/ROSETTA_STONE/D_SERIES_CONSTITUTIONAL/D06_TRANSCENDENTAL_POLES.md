@@ -18,15 +18,21 @@ rosetta:
   register: "[E/S/I]"
   canonical_phrase: "⊙ The Transcendental Poles"
 title: "The Transcendental Poles"
-status: "Constitutional D-series pole-boundary note"
-evidence_tier: "[S] for stated pole topology; [S] for internal L0/L∞ closure; [I] for the Gītā correspondence."
+status: "PRESERVED PROVENANCE — distinct-pole correction and KSC-03 control"
+evidence_tier: "[A] for distinct S² pole limits; [I] for the return edge and Gītā correspondence."
 ---
 
 # ⊙ THE TRANSCENDENTAL POLES
 
-## L0 = L∞ — The Boundary That Completes the Sphere
+## Distinct Pole Limits — The Selected Return Image
 
 **Yves R. Burri · Emergentism.org · 2026-03-24**
+
+> **[金] Kintsugi authority seam — 2026-07-18.** The north and south poles are
+> distinct points. Every literal `L0=L∞`, merged-pole, or identity statement in
+> the preserved body below is superseded. Current closure is the non-`μ`,
+> interpretive return `r₆:D6↝D0` under `KSC-03`; mythology remains `[I]` and
+> supplies no topological proof.
 
 **Zero-Sum Resolution Equation · P_node = Φ × V · B = sin θ**
 
@@ -150,10 +156,10 @@ The DAC's lifecycle is the traversal from L0-proximity (founding, survival, low 
 ```
 Zero-Sum Resolution Equation
 
-L0 = L∞.
-The destroyer is the creator.
-The beginning is the end.
-The south pole is the north pole.
+r_return: L∞ ↝ L0.
+Destruction and creation are compared symbolically.
+An ending may seed another beginning.
+The south and north poles remain distinct.
 The sphere has no edge.
 
 kālo'smi lokakṣayakṛt pravṛddho.

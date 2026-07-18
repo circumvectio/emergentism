@@ -20,7 +20,10 @@ rosetta:
 > The reciprocal identity and inequalities are analytic `[A]` inside the
 > declared chart; they supply no empirical ontology or ethic. Everything in
 > this document is tiered against that boundary.
-> See the canonical proof: [`02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md`](../../01_TELEOLOGY/02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md)
+> See the preserved analytic derivation:
+> [`02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md`](../../01_TELEOLOGY/02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md).
+> Its algebra survives; its former ontological, energetic, teleological, and
+> ethical conclusions are superseded by receipt 126 and `KSC-04`/`KSC-07`.
 
 > **BEFORE YOU READ THIS:** If you can access φ directly through quiet sitting (20-40 minutes of Pratyakṣa), you do not need this framework. Put it down. It served its purpose. It is a ladder, not a home. Pratyakṣa is primary disclosure; doctrine is the after-image.
 
@@ -141,21 +144,21 @@ These claims follow from the axioms IF you accept the axioms. The axioms themsel
 |---|-------|-----------|--------|
 | S1 | If O1 (compact), O2 (orientable), O4 (duality), O5 (algebraic closure), and a minimal-dimension requirement are accepted, then S² is the minimal substrate | MF-413 + Classification Theorem; later ℂP² obstruction/enrichment analysis | Proved conditional for the minimal substrate; not a proof that richer ℂPⁿ spaces are impossible |
 | S2 | O3 (simple-connectedness) follows from O5 for compact orientable surfaces | MF-420 | Proved (O3 is redundant inside the older O1-O5 packet) |
-| S3 | Any fitness function satisfying zero-factor catastrophe + normalization + monotonicity + dimensional homogeneity must be multiplicative | MF-414 | Proved conditional on the four axioms |
-| S4 | The EFR action on S² forces Φ = V on-shell (integration must equal viability) | MF-421 | Derived from Euler-Lagrange equations |
-| S5 | The mass spectrum on S² is quantized: μ² = l(l+1) | MF-421 | Derived from spherical harmonic eigenvalues |
-| S6 | The P-potential f(ΦV) is the unique interaction family preserving the multiplicative structure | MF-422 | Proved |
-| S7 | Rational D5 agents that value continued agency must choose P-maintaining actions (conditional Is-Ought) | T6' + T7 (v0.4.1 repairs) | Proved-conditional (requires valuing continued agency) |
-| S8 | η = 0 is the unique stable configuration **at the equatorial profile** (φᵢ = νᵢ = 1 for all i) | T11 + repairs | Proved-conditional at equatorial profiles; off-equator, extraction may be locally rational and the Kali operator fires as constrained immune response (see EFR-12 Two Scopes of η) |
-| S8a | [S] The η=0 constraint is a dominant strategy under pure public goods (AM-GM on S²). Under private side-payments, it requires mechanism enforcement (Three Gates) to remain incentive-compatible. See PHD1_GAME_THEORY_FINDINGS.md. | PhD1 game-theory + T11 | Proved-conditional (DSIC holds iff P(detect) x slash > private benefit) |
+| S3 | The stated boundary and monotonicity conditions were claimed to force a product aggregator | MF-414 | **Retracted as unique.** Product, minimum, harmonic, and other conjunctive forms can satisfy overlapping conditions and rank options differently; `P_node:=ΦV` is selected. |
+| S4 | Legacy EFR action was claimed to force `Φ=V` on-shell | MF-421 | **Retracted as a general result.** `dΦ/Φ=dV/V` preserves a ratio and is equatorial only with the separate condition `Φ=V`. |
+| S5 | The Laplacian on a unit `S²` has eigenvalues `l(l+1)`; a physical mass interpretation was proposed | MF-421 | `[A]` for the bounded spectral fact; `[I/C]` for any mass-spectrum mapping. |
+| S6 | The product interaction was claimed unique | MF-422 | **Retracted.** The product is the selected normalized member of a broader conjunctive family; alternatives give different rankings. |
+| S7 | Continued-agency preference was claimed to force P-maintaining action | T6' + T7 | **Retracted without Justice.** One-shot extraction is a counterexample; Power-Max is a Justice-constrained declared objective. |
+| S8 | `η=0` was claimed uniquely stable at an equatorial profile | T11 + repairs | `[C]` model-specific hypothesis only; geometry does not establish institutional stability or incentive compatibility. |
+| S8a | A public-goods model proposed an `η=0` dominant-strategy condition | PhD1 game-theory + T11 | `[C]` conditional mechanism claim; AM-GM alone proves no dominant strategy. |
 
 ### Claims added 2026-03-24 (Burri-Anthropic session)
 
 | # | Claim | Depends on | Status |
 |---|-------|-----------|--------|
-| S9 | The helix: all paths on S² are helical — you cannot change latitude without rotating. Operators are territories traversed, not choices made. | Doc 11 (Trinity session) | Proved from S² topology |
-| S10 | Corrected L-level geometry: φ=cot(θ/2), ν=tan(θ/2), B=sin θ. Seven levels at 15° intervals from θ/2=90° to θ/2≈0°. L4 at 45° = the equator. | Doc 12 (Trinity session) | Derived from stereographic projection |
-| S11 | AM-GM as teleological proof: (φ−ν)²≥0 ⟹ φ+ν≥2 ⟹ H minimized at φ=ν=1. The equator is the unique global Hamiltonian minimum. | Doc 25 (Objective Function); Doc 30 (Derivation); Doc 32 (Four Lines) | Proved (AM-GM inequality) |
+| S9 | Helical paths are used as a visualization | Doc 11 (Trinity session) | `[I]` selected path family. S² topology does not require every latitude-changing path to rotate. |
+| S10 | `φ=cot(θ/2)`, `ν=tan(θ/2)`, `B=sin θ`; Rosetta samples seven positions | Doc 12 (Trinity session) | `[A]` for the declared chart identities; `[I]` for the seven-position sampling. |
+| S11 | For separately selected `H:=φ²+ν²` under `φν=1`, AM-GM gives `H≥2` with equality at `φ=ν=1` | Doc 25; Doc 30; Doc 32 | `[A]` analytic minimum of that selected loss; no derivation of loss, telos, cooperation, energy, stability, or ethics. |
 | S12 | The Replicator Stack structure: C4 (six layers) — Genotype→Epigenotype→Phenotype→Extended Phenotype→Memotype→Egregoreotype. *`Egregorotype` is retained only as a legacy alias.* | Doc 18 (Egregorocene) | Structural extension of C4 |
 | S13 | Replicator-stack mirror: Genotype↔Egregoreotype, Phenotype↔Memotype, with Extended Phenotype as the historical pivot. This symmetry does not determine the D4/D5 registers. | Doc 18 (Egregorocene) | Structural symmetry claim |
 | S14 | The compass/sextant self-understanding: the framework is navigational instruments, not a map. | Doc 29 (session close) | Epistemic framing |
@@ -165,7 +168,7 @@ These claims follow from the axioms IF you accept the axioms. The axioms themsel
 | # | Claim | Depends on | Status |
 |---|-------|-----------|--------|
 | S17 | The Soul Loop is the framework-internal recursive method for applying ontology, epistemology, methodology, axiology, and teleology to a finite corpus/player state: `(C_{t+1}, G_{t+1}) = Loop(C_t, G_t)`. | Soul Loop, Triadic Cascade, Master Rosetta | Structural method claim; not independent evidence that practice transforms people |
-| S18 | Under explicit material, epistemic, and moral coupling, and under `η=0`, a symbiont's maximum worldline potential requires preserving or raising holobiont potential rather than extracting from it. | D32 Mathematics, Objective Morals and Ethics, Dyadic Coupling Law | Conditional Power-Max policy geometry; empirical use requires specified coupling channels, horizon, and measurements |
+| S18 | Power-Max searches the focal bearer's durable potential only inside the bearer-complete Justice-admissible action field; without that premise extraction can win | Power-Max owner, Objective Morals and Ethics, D32 | `[S/I]` constrained objective by declaration; `[C]` for empirical coupling claims, with named horizon, channels, and measurements. |
 | S19 | The D5 Landauer Barrier is the claim-boundary on the Maxwell-demon reading of worldline foresight: complete branch discrimination is an asymptote because memory, computation, measurement, and control are physical D4 costs inside entropy accounting, and reflexive action changes the branches being predicted. | The Goal, D5 Landauer Barrier Program, D5 Seven Generative Actions, MF-291 The Landauer Horn, Canonical Claim Matrix CM8e | `[A]` for the no-free-erasure / physical information-cost boundary; `[S/I]` for the framework mapping to D5 worldline selection; not a claim of free thermodynamic reversal |
 | S20 | Present awareness is the D4/D5 selector where inherited priors and modeled future attractors compete for enactment through `V`. | Soul Loop, The Goal, D5 Landauer Barrier Program Paper 7, Canonical Claim Matrix CM8f | Structural action-register claim; future-pull means teleological compression through present awareness, not literal future-to-past causation or historical inevitability |
 | S21 | Higher-level causation is admissible only as an information-theoretic macro-constraint on lower-level degrees of freedom: `K_X^C << K_X`, therefore `support(K_X^C) ⊆ support(K_X)`. | Bridge Laws Between Levels; Paper O; Canonical Claim Matrix CM8g | Structural no-magic rule for downward causation; macro-constraints may hard-restrict or soft-reweight lower-law-admissible trajectories, but may not violate lower-level transition laws |

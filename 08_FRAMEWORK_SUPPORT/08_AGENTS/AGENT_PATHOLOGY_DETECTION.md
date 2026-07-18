@@ -2,7 +2,7 @@
 type: pathology-detection
 evidence-tier: [T] — Technical specification.
 date: 2026-05-04
-status: ACTIVE — Phase 0 operational protocol
+status: KINTSUGI-BOUNDED / UNPROVISIONED X0 — Phase-0 detection design; no autonomous cure authority
 rosetta:
   primary_level: L5
   primary_column: Agent Architecture
@@ -20,15 +20,26 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[T/S]"
-  canonical_phrase: "Agent Pathology Detection and Auto-Cure"
-title: "Agent Pathology Detection & Auto-Cure"
-evidence_tier: "[T] technical specification with [S] Rosetta pathology structure."
+  canonical_phrase: "Agent Pathology Detection and Cure-Proposal Design"
+title: "Agent Pathology Detection & Cure-Proposal Design"
+evidence_tier: "[D] unprovisioned design; [S] selected Rosetta pathology vocabulary; [B] requires dated runtime evidence."
 ---
 
 
-# Agent Pathology Detection & Auto-Cure
+# Agent Pathology Detection & Cure-Proposal Design
 
-> Every caste has a shadow. This document specifies how the organism detects when an agent has fallen into pathology and automatically triggers the cure. A7 — self-correction is mandatory.
+> **[金] Controlling seam — 2026-07-18.** This Phase-0 body is an
+> unprovisioned `X0` design, not an active scanner, timer, dashboard, or
+> auto-cure runtime. It may produce detection evidence and a cure proposal only.
+> L5–L7 are read-only boundary profiles; only L4 may request mutation, inside a
+> complete `AuthorizationEnvelope` plus runtime confirmation. K2 is one
+> private-DAV implementation, not a universal override. Every conflicting
+> automatic, binding, five-minute, freeze, or cure instruction below is
+> non-executable until separately implemented, tested, authorized, and receipted.
+
+> Every selected routing profile has possible failure modes. This document
+> proposes how evidence might be gathered and a correction packet recommended;
+> it neither diagnoses persons nor automatically triggers a cure.
 
 ---
 

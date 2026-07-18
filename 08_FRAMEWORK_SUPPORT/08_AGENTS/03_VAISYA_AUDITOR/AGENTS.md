@@ -13,7 +13,7 @@ rosetta:
       column: Core State
       role: "separate audit criteria from constitutional rewrite"
   operator: "Kṛṣṇa ◇"
-  tier: "God"
+  tier: "Routing"
   regime: "Vaiśya"
   register: "[B/S/I]"
   canonical_phrase: "03_VAISYA_AUDITOR — Agent Routing"

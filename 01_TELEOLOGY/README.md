@@ -13,19 +13,26 @@ rosetta:
 
 > **L1 · Kali 🎲 · Caṇḍāla · Chaos · Kāla — Gate I** of the [seven-fold spine](../00_SEVENFOLD_FOUNDATION_ROOT.md). *Folder № = L-level.*
 
+> **Name boundary [金]:** the legacy `Demon` tier token in metadata names a
+> mythic routing family, not moral status. Only complete Justice receipts can
+> make a consequence Demon-bearing or God-bearing.
+
 **Rosetta level:** L1 · Caṇḍāla · Empirical Observation
 **Canonical phrase:** F5 tilts.
 
 **Definition:** Objective Function is the root of direction. It asks which way possibility opens before that direction is formalized, argued, valued, or taught. In framework terms: objective function is the ektropic gradient, the future-vector grounded in and from core state.
 
-**Must answer:** Where does the gradient point? What opens the forward light cone? What does the Power-Max Lemma select for across replicator layers?
+**Must answer:** Where does the declared gradient point? What widens an agent's
+option cone—the physically admissible histories it can model, rank, coordinate,
+and reach? What does the constrained Power-Max objective select across
+replicator layers?
 
 **Must not do:** Call every future-motion good. Confuse local acceleration with alignment. Turn F5 into destiny, gatekeeping, or a literal settled physics claim.
 
 **Action-register bridge:** In the play rule `P_node = Φ × V`, `V` means D4
 means-to-act at the boundary: body, tools, energy, access, timing, control,
-hands, shovel, industrial digger. `Φ` means D5 worldline-foresight: the capacity
-to envision, rank, and operate reachable futures with those means. A child with
+hands, shovel, industrial digger. `Φ` means a D4 modeling/ranking capacity:
+actual tokens and selection events that represent D5 possible futures. A child with
 a jet but no pilot-foresight and a pilot without bodily/tool access both show
 the zero-factor collapse. Viable completion is therefore not "more means" and
 not "more vision"; it is the balanced, non-extractive increase of usable
@@ -57,6 +64,15 @@ symbiont horizon: W_i(T) = ∫ P_node,i(t) dt
 constraint: preserve or raise P_node,H under η = 0
 strict syntropic case: ΔP_node,i > 0 and ΔP_node,H > 0
 ```
+
+The constraint quantifies over every materially affected bearer. If local/ego
+durable potential rises while any bearer loses, the receipted consequence is
+Demon-bearing. It is God-bearing only when complete Justice holds, every bearer
+is nonnegative, and at least one materially affected bearer is strictly
+positive. Pure non-harmful stasis is Justice-compliant/preservative, not
+God-bearing; strict syntropy additionally requires both part and sustaining
+whole to rise. The inherited God/Demon operator names do not decide this
+receipted-consequence verdict.
 
 This is the teleological face of the Power-Max Lemma. In a real coupled
 boundary, the individual symbiont cannot honestly maximize durable
@@ -129,7 +145,10 @@ Do not collapse these scales:
 ## Public-Translation Risks
 
 - Risk: F5 read as predestination. Correction: F5 is gradient, not guarantee.
-- Risk: "Forward light cone" read as techno-utopianism. Correction: cone-widening must preserve `η = 0` and widest-boundary `ΔB` / `ΔP_node`.
+- Risk: "Light cone" used for agency. Correction: the physical light cone does
+  not widen beyond spacetime constraints; use **option cone**, and test its
+  widening with complete Justice receipts rather than aggregate `ΔB` or
+  `ΔP_node` alone.
 - Risk: Objective Function used to justify suffering now for a promised future. Correction: receipts before rhetoric; no extraction in the name of future good.
 
 ---

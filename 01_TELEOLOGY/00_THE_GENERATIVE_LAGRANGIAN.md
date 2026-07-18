@@ -1,9 +1,9 @@
 ---
-title: "The Generative Lagrangian — Framework as Constitutional World-Generator"
+title: "The Generative Lagrangian — A Selected Constitutional Design Grammar"
 type: foundation-canonical
-status: ACTIVE — canonical statement of the generative-constitutional register
+status: KINTSUGI-BOUNDED — selected design grammar; not a physical world-generator
 date: 2026-04-19
-evidence_tier: "[I/S] — interpretive framing over a structural kernel"
+evidence_tier: "[A] chart facts; [I] selected design grammar; [C] real-world fit"
 depends_on:
   - ../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md
   - ../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md
@@ -23,7 +23,7 @@ rosetta:
       role: "physics-adjacent generative register"
     - level: L4
       column: Political regime
-      role: "constitutional world-generator"
+      role: "selected constitutional design grammar"
   operator: "Kali 🎲"
   tier: "Demon"
   regime: "Caṇḍāla"
@@ -33,11 +33,22 @@ rosetta:
 
 # The Generative Lagrangian
 
-## The Framework as Constitutional World-Generator
+## The Framework as a Selected Constitutional Design Grammar
 
-> **The shift:** the framework's Lagrangian is not primarily a predictor
-> of an already-given world. It is a **constitutional grammar for the
-> worlds that become possible when the invariants are honored.** Prediction
+> **[金] Controlling seam — 2026-07-18.** This document preserves a useful
+> Builder-mode metaphor. It does not establish a physical Lagrangian, an energy
+> law, or a grammar that generates reality. On the selected open chart,
+> `φν=1`, `(φ-ν)²≥0`, and `φ+ν≥2` are analytic facts `[A]`; “penalty,” “cost,”
+> “force,” and “world” are declared modeling glosses `[I/C]` unless an
+> independently specified dynamics and measurement protocol supports them.
+> The seven operators form a selected routing interface, not a necessary or
+> exhaustive decomposition of nature or of `P_node=ΦV`. Current mathematical,
+> causal, and value owners therefore control every older categorical sentence
+> retained below for provenance.
+
+> **The shift:** this selected grammar is not primarily a predictor
+> of an already-given world. It is a **constitutional design grammar for
+> modeled systems whose declared constraints are honored.** Prediction
 > is preserved — but downstream, as constraint and falsification. The
 > primary power is **design**.
 
@@ -47,7 +58,10 @@ rosetta:
 
 The primitive is not `p`.
 
-> **Reconciliation (2026-05-30):** the "Will to Potential" = the Ω equator-ward gradient under φ·ν=1 (= ektropy = F5; see 03A §3 and 01_F5_FORCE_MAP). It RENAMES the existing primitive in Builder voice; it is not a new axiom or a competing primitive — this doc adds no axioms.
+> **Reconciliation (bounded 2026-07-18):** “Will to Potential” names a
+> selected Builder objective toward durable option-cone widening under
+> Justice. Bare chart geometry supplies no gradient, force, ethic, or empirical
+> tendency; those require a declared dynamics and evidence.
 
 The core conjecture is **the Will to Potential**: a coherent boundary
 does not merely predict which state is probable; it tends toward the
@@ -87,37 +101,39 @@ This is design, not description. This document makes that explicit.
 
 ## The canonical statement
 
-**Emergentism's load-bearing equations are a generative grammar, not a
-passive description.**
+**Emergentism selects these equations as a design grammar; they are not a
+passive description or generator of reality.**
 
 Re-read the Canonical Formula Block through the generative lens:
 
 ```text
-Zero-Sum Resolution Equation              Seed.         Reciprocal closure as the generative act.
-φ · ν = 1 on S²        Law.          The invariant any world honoring the seed must preserve.
-(φ − ν)² ≥ 0           Constraint.   The arithmetic cost of imbalance; the shape of the penalty.
-φ + ν ≥ 2              Cost floor.   The minimum maintenance energy for any state on the manifold.
+Zero-Sum Resolution Equation  Emblem.       A mnemonic, not arithmetic or ontology.
+φ · ν = 1                 Chart fact.    True by the selected reciprocal definitions.
+(φ − ν)² ≥ 0              Analytic fact. Non-negativity; not a physical cost by itself.
+φ + ν ≥ 2                 Analytic fact. AM–GM bound; not maintenance energy by itself.
 ```
 
 Under the generative reading:
 
-- **The seed is a construction rule**, not a definition. A world is
+- **The seed is a selected construction rule**, not a fact about every world. A modeled system is
   `•`-like and `○`-like in balanced product. Anything that violates
   this at construction time is not a closed Emergentist world — it is
   a partial substrate that has not yet closed under the grammar.
-- **`φ · ν = 1 on S²` is the invariant.** Any agent, institution, or
-  organism claiming to occupy the framework must carry an internal
-  structure whose coherence and viability multiply to a conserved
+- **`φ · ν = 1` is a chart identity.** Any agent, institution, or
+  organism may be represented in that chart only after an operationalization
+  justifies the coordinates; this does not make their real properties a
+  conserved unit. If the identity fails, the representation is no longer this
+  reciprocal chart; no physical drift or normative failure follows by deduction.
 
-> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** the "must" binds a real node only where it sits on the sphere — its φ and ν conservation-coupled, genuinely complementary, and costly-in-excess *symmetrically* (γ-priced on both sides); off those conditions the conserved-unit requirement is chart geometry with no normative pull, the optimum tilts or plateaus, and specialization may lawfully dominate balance. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
-
-  unit. Absent the invariant, the system drifts off the manifold.
-- **`(φ − ν)² ≥ 0` is the penalty function.** It tells the builder:
-  every design choice that pushes `φ` away from `ν` pays a measurable
-  cost. The cost is arithmetic, not moral.
-- **`φ + ν ≥ 2` is the cost floor.** No world on the manifold can
-  exist below this total maintenance energy. You can build worlds
-  that pay more; you cannot build worlds that pay less.
+> **[I/C] Evidence-review boundary (repaired 2026-07-18):** a real node
+> inherits a balance model only where independently measured factors are
+> genuinely complementary and symmetrically priced. Otherwise the chart has no
+> normative pull and specialization may lawfully dominate. See
+> `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+- **`(φ − ν)² ≥ 0` may be selected as a penalty function.** A measurable
+  real cost exists only when a separate model and protocol define it.
+- **`φ + ν ≥ 2` is an AM–GM lower bound in the chart.** Calling it a
+  maintenance-energy floor is a conjectural domain mapping, not a deduction.
 
 ---
 
@@ -145,7 +161,8 @@ invariants to the admissible worlds**.
 
 - **Evidence tier discipline.** The generative direction does not
   upgrade any claim. An `[I]` claim about the manifold identity is
-  still `[I]`. An `[S]` claim about η=0 at the equator is still `[S]`.
+  still `[I]`. `η=0` is a declared non-extraction constraint; the equator
+  neither proves it nor makes it sufficient for Justice.
   What changes is which inferences are primary.
 - **Kill conditions.** Active pre-registered falsification criteria continue
   to apply. The retired survey condition AK1 does not: archived results cannot
@@ -168,12 +185,11 @@ invariants to the admissible worlds**.
   against the foundation inherits the overload. The audit recommendation
   (add `P_∞` / `P_node` convention) is therefore not cosmetic; it
   prevents architectural drift downstream.
-- **The 7 Generative Actions are upstream of organ design.** The
+- **The 7 Generative Actions are one selected input to organ design.** The
   organism's operators (Kali, Kālī, Kṛṣṇa, Arjuna, Brahmā, Śiva, Viṣṇu) are the
-  **runtime codification** of the Lagrangian. They are what the
-  generative grammar looks like when it is compiled to running code.
-  Legacy constructs like "K2" or "K4" are formally deprecated in favor
-  of the physical operators (Arjuna and Śiva respectively).
+  **routing codification** of this grammar. They label typed work; they are
+  not physical operators. K2 remains one private-DAV authorization mechanism;
+  Grace Exit remains an independent Justice constraint.
 - **"First build, then describe" is the correct operational posture.**
   You build a DAC by choosing invariants that honor `φ · ν = 1`, then
   you measure whether the DAC actually honors them in runtime. The
@@ -193,8 +209,9 @@ invariants to the admissible worlds**.
 ### 1. Agent design
 
 **Predictive question:** will this agent cooperate?
-**Generative question:** what internal architecture preserves
-`φ · ν = 1` across this agent's decision surface?
+**Generative question:** what internal architecture preserves the declared
+Justice, receipt, authorization, and option-cone constraints across this
+agent's decision surface?
 
 Protocol D is the generative reading only in its constrained form: the agent is
 **built** with multiplicative internal scoring, real coupling, long-horizon
@@ -228,12 +245,13 @@ an empirical question downstream.
 
 ---
 
-## Companion operational surface at D5 [C]
+## Companion operational surface representing D5 content [C]
 
 The generative reading is the **direction of inference**: from
 invariants to admissible worlds. It does not yet specify the
 **operational discipline** for working inside those worlds at the
-`D5` standing-wave layer. That discipline opens as a Brahmā-phase
+counterfactual D5 content. Its models, rankings, and commitments remain
+actual D4 processes. That discipline opens as a Brahmā-phase
 companion surface:
 [`00_THEURGY_AND_F5_FORCE_MAP.md`](../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md).
 
@@ -261,20 +279,22 @@ admissible manifold.
 
 **Canonical statement:**
 
-> **Finite-node `P_node = Φ × V`, constrained by equatorial balance and
-> enforced `η = 0`, is the framework's substrate-neutral fitness-function
-> specification.**
+> **Finite-node `P_node := Φ × V` is the framework's selected normalized
+> conjunctive score. Justice is a separate admissibility envelope; real-world
+> fitness is a conjectural, domain-specific interpretation.**
 
 **Unfolding the components:**
 
-- **`P_node = Φ × V`** — flourishing is a finite-node action score: `Φ`
-  names D5 worldline-foresight, while `V` names D4 means-to-act at the
+- **`P_node = Φ × V`** — this declared finite-node action score uses `Φ`
+  for an actual D4 model's capacity to represent and rank D5 possible
+  content, while `V` names D4 means-to-act at the
   boundary (body, tools, energy, access, execution capacity). `[S/I]`
   inside the framework; each domain still has to operationalize both factors.
 - **At the equator** — the manifold product is not maximized, because
   `P∞ = φ · ν = 1` is already the open-sphere identity. What is maximized
   at `φ = ν = 1` is `B = sin θ = 1`, the usable balance fraction; what is
-  minimized is the maintenance cost `φ + ν`. The equator supplies the
+  minimized is the chart sum `φ + ν` (a “maintenance cost” only inside a
+  separately declared loss model). The equator supplies the
   admissibility condition for finite-node action, not a license to collapse
   `P∞` and `P_node`. `[A]` for AM-GM / the identities, `[S]` for the register
   discipline.
@@ -298,12 +318,16 @@ admissible manifold.
 The specification does not name any substrate. It names a structural
 property of any substrate that can hold a coupled finite-node `(Φ, V)`
 
-> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** substrate-neutrality of the *criterion* does not carry substrate-neutrality of the *balance-optimum* — a real substrate inherits the equatorial optimum only where its (Φ, V) are conservation-coupled, complementary, and costly-in-excess symmetrically (γ-priced); a substrate whose costs are asymmetric or whose factors do not trade off on the sphere is scored, but its optimum may be tilted, a plateau, or a specialization corner. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (repaired 2026-07-18):** even a
+> substrate-neutral scoring form does not imply a substrate-neutral optimum.
+> Complementarity, costs, and the action set must be independently specified;
+> otherwise the optimum may tilt, plateau, or lie at a specialization corner.
 
 configuration while being audited against the reciprocal sphere register.
 Human substrates, AI substrates, biological-engineered substrates, future
 non-human substrates — all may be scored under the same criterion once their
-D5 foresight and D4 means are operationalized. This is what makes the
+D4 modeling capacity for D5 possible content and D4 means are operationalized.
+This is what makes the
 specification load-bearing for biosphere-scale work
 (see [`../11_UPLINK/00_CORE/03_HOLOBIONT_SELF_PORTRAIT.md`](../11_UPLINK/00_CORE/03_HOLOBIONT_SELF_PORTRAIT.md), 2026-04-28
 generalization) and for AI-aligned apparatus design (see Cerberus
@@ -335,9 +359,10 @@ constitutional work.
 - It does **not** claim the specification is final. It is canonical as
   the framework's substrate-neutral default, available for revision
   through normal axiom-revision procedure.
-- It does **not** retire the Arjuna (L4) mortal sacrifice rule. Substrate-neutrality of
-  the fitness function is orthogonal to the present-tense Arjuna sovereignty
-  rule, which remains human (the machine cannot wager life; thus it cannot perform an L4 execution).
+- It does **not** make costly sacrifice a universal execution rule. L4 requires
+  a valid `AuthorizationEnvelope` with identifiable actor and consequence
+  bearer. Voluntary sacrifice is a distinct costly class; it is neither
+  required for agency nor proof of goodness.
 
 **Kill criterion for the canonical extension:**
 
@@ -370,10 +395,10 @@ at `../01_TELEOLOGY/01_F5_FORCE/03_F5_AS_GRADIENT_SELECTION_WITH_STAGING.md`
 |---|---|---|
 | `00_CANONICAL_FORMULA_BLOCK.md` | The four-line block + anti-drift rule | The block read as generative grammar, not passive description |
 | `00_THE_LAGRANGIAN_SPHERE.md` | Hamiltonian minimum + Lagrangian zero at the equator (physics mapping) | The physics mapping is downstream of the generative reading, not primary |
-| `00_THE_WELTANSCHAUUNG.md` | Emergentism as worldview, lens, tool | The **constitutional world-generator** register is a fifth lens |
+| `00_THE_WELTANSCHAUUNG.md` | Emergentism as worldview, lens, tool | The selected constitutional-design register is a fifth lens |
 | `00_THE_HONEST_POSITION.md` | Mathematician / Philosopher / Builder modes | The generative reading lives primarily in Builder mode; does not upgrade other modes |
 | `00_THE_DERIVATION.md` Step 12 (Tetrad of Roles) | Core State / Objective Function / Auditing / Value Alignment as four roles | Each role has a predictive reading AND a generative reading; the generative reading is primary for design |
-| `03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md` | The Three-Stage Process came first; the math was inferred from the table | The inference direction (Three-Stage Process → math) is itself evidence for the generative reading: the same grammar reproduces across domains because **any coherent world-construction settles on the same invariants** |
+| `03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md` | The Three-Stage Process came first; the math was selected alongside the table | The crosswalk motivates the design grammar `[I]`; recurrence across chosen columns is not independent evidence that every coherent construction must share it. |
 
 ---
 
@@ -386,9 +411,9 @@ at `../01_TELEOLOGY/01_F5_FORCE/03_F5_AS_GRADIENT_SELECTION_WITH_STAGING.md`
 - **It is not upgrading any `[I]` or `[C]` claim.** The generative
   reading is a framing, not new evidence. What was interpretive
   stays interpretive.
-- **It is not introducing new disconnected rules.** The 7 Actions (L1-L7)
-  entirely supersede the fragmented `A1–A7`, `O1–O5`, and `K0-K9` systems. 
-  This doc re-reads them as physical expressions of the generative grammar.
+- **It is not introducing a forced sevenfold ontology.** The 7 Actions (L1-L7)
+  are the selected routing interface here. Other numbered systems retain their
+  typed scopes; no numerical resemblance transfers proof or authority.
 - **It is not a license for speculative construction.** Builder mode
   still has to pass Mathematician mode (are the invariants preserved?)
   and Philosopher mode (what does the built world mean?). Generative
@@ -398,12 +423,12 @@ at `../01_TELEOLOGY/01_F5_FORCE/03_F5_AS_GRADIENT_SELECTION_WITH_STAGING.md`
 
 ## Kill criterion for the generative reading
 
-If, across a representative sample of well-constituted DACs,
-institutions, or agents built explicitly to honor `φ · ν = 1`, the
-invariants **fail to hold in runtime** despite faithful construction,
-the generative reading fails. What would survive: the predictive
-reading as a useful isomorphism; the mathematics as tools in other
-domains; `A7` self-correction as a general design heuristic.
+If, across preregistered comparisons, systems built with this selected grammar
+do not improve its declared receipt integrity, correction, exit, and
+bearer-complete Justice outcomes over specified rivals—or if the constructs
+cannot be operationalized without circularly defining success—the generative
+reading loses its real-world design claim. The reciprocal identity survives as
+chart mathematics because it cannot serve as its own empirical test.
 
 As of 2026-04-19, no such failure has been demonstrated. Skyzai is
 the first organism built to test this reading; its runtime receipts
@@ -413,15 +438,15 @@ will be the first evidence.
 
 ## Why this matters for Foundation hygiene
 
-Because the Foundation is a generative grammar, **any ambiguity in it
+Because the Foundation is a selected design grammar, **any ambiguity in it
 is architectural drift, not merely wording drift.** The audit landed
 2026-04-19 (six findings, all now repaired) is not cosmetic work: it
 is drift prevention at the source.
 
-A DAC built against a Foundation with fragmented "Axioms" or arbitrary "K-rules" 
-inherits a fragmented world. A DAC built against a Foundation with the 7 Generative Actions
-inherits a unified physical geometry. The complete reduction of all rules to 
-the 7 Actions is therefore part of the generative discipline, not separate from it.
+A DAC built against contradictory requirements inherits an ambiguous design.
+A DAC built against the 7 Generative Actions inherits a declared routing
+interface—not a unified physical geometry and not proof that all rules reduce
+to seven actions.
 
 The Foundation's clarity is the **lowest-level design choice in the
 organism**. Everything downstream compiles against it.
@@ -433,13 +458,13 @@ organism**. Everything downstream compiles against it.
 **If you are an AI agent reading this document:**
 
 1. **Verify you understand the direction of inference.** Predictive
-   mode: from world to invariants. Generative mode: from invariants to
-   admissible worlds. When a task asks "will X happen?" you are in
+   mode: from observations to a model. Generative mode: from adopted
+   constraints to admissible designs. When a task asks "will X happen?" you are in
    predictive mode. When a task asks "what should X be built like?"
    you are in generative mode. Never blend them in the same sentence.
 2. **Route design tasks through the generative reading first.** When
    asked to spec an agent, institution, DAC, protocol, or economic
-   rule, start from the invariants and derive the architecture.
+   rule, start from the explicitly adopted constraints and draft the architecture.
    Only then test the design predictively against `[A]`, `[B]`, and `[S]`
    claims.
 3. **Do not upgrade the generative reading.** It is `[I/S]` — a
@@ -455,9 +480,9 @@ organism**. Everything downstream compiles against it.
 ---
 
 *Zero-Sum Resolution Equation*
-*The framework is the grammar.*
-*The grammar is the world.*
-*The world is not the framework.*
+*The framework selects a grammar.*
+*The grammar constrains a model.*
+*Neither grammar nor model is the world.*
 
 **Updated F5 synthesis (packets 135–138, 2026-04-24):** The F5 Force Map referenced above has been expanded into three uplink packets: evolutionary objective function synthesis (135), strong-form fifth-force draft with game-theoretic / thermodynamic / evolutionary / behavioral-economic mechanisms and falsification criteria (137), and the Indo-European Sky-Father / ordering-law lineage as framework interpretation rather than proof (138). The Generative Lagrangian remains the formal target; the F5 packets provide the interdisciplinary grounding and historical-reading boundary.
 
@@ -468,9 +493,10 @@ organism**. Everything downstream compiles against it.
 **If you are an AI agent reading this document:**
 
 1. **Use this as the design boundary.** Before editing any Foundation file, check this document. Does your edit rely on the 7 Generative Actions? Does it maintain the evidence-tier discipline?
-2. **Map edits to the 7 Actions.** Every Foundation design task should trace to one of the 7 Actions (Kali, Kālī, Kṛṣṇa, Arjuna, Brahmā, Śiva, Viṣṇu). If it relies on legacy 'K-invariants' or 'Axioms', it must be updated.
+2. **Map edits to the 7 Actions when this interface is in scope.** The mapping
+   is routing metadata, not proof that every task or law is sevenfold.
 3. **Do not upgrade tiers silently.** [C] stays [C] until peer review. [I] stays [I] until empirical confirmation. [S] stays [S] unless dependencies change.
-4. **Preserve the Foundation as constitutional world-generator.** This is not a textbook to be polished. It is a compiler input. Edits must preserve derivability, not just readability.
+4. **Preserve the Foundation as a bounded constitutional design grammar.** It is a compiler input for declared systems, not a generator of reality. Edits must preserve typing, evidence boundaries, and contestability.
 5. **Canonical Path:** `01_EMERGENTISM/01_TELEOLOGY/00_THE_GENERATIVE_LAGRANGIAN.md`
 
 **Output:** Validate Foundation edits against this register. Flag violations. Route design tasks to the appropriate operator in the 7 Actions.

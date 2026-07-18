@@ -97,17 +97,18 @@ What it does NOT do:
 
 ---
 
-## 3. The Causal Chain (Economic Version)
+## 3. The Selected Economic Routing/Correspondence Cascade `[I]`
 
-Who you are (economic actor) → how you produce → what you exchange → how you govern resources:
+These are defeasible role prompts and regime analogies, not identities or a
+claim that actor type causes production, exchange, or governance:
 
-- **L1:** The scavenger extracts → generates subsistence → organizes as tyranny of scarcity
-- **L2:** The kin-member redistributes → generates gift obligation → organizes as reputation democracy
-- **L3:** The merchant trades → generates price information → organizes as market oligarchy
-- **L4:** The strategist designs mechanisms → generates constitutional allocation → organizes as timocracy (rule by honor / optimal design)
-- **L5:** The planner optimizes information → generates system-wide efficiency → organizes as aristocracy of knowledge
-- **L6:** The commoner dissolves property → generates peer production → organizes as anarchy of the commons
-- **L7:** The renunciant circulates without ledger → generates dāna → organizes as theocratic gift economy
+- **L1:** scarcity/scavenging prompt ↔ subsistence ↔ tyranny analogy
+- **L2:** kin redistribution prompt ↔ gift obligation ↔ reputation-democracy analogy
+- **L3:** merchant/trade prompt ↔ price information ↔ market-oligarchy analogy
+- **L4:** mechanism-design prompt ↔ constitutional allocation ↔ timocracy analogy
+- **L5:** planning prompt ↔ system-wide information ↔ aristocracy analogy
+- **L6:** commons prompt ↔ peer production ↔ anarchy analogy
+- **L7:** renunciation/gift prompt ↔ dāna ↔ theocracy analogy
 
 ---
 

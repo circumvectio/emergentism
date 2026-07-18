@@ -24,38 +24,77 @@ evidence_tier: "[B] local scaffold; [S] structural caste mapping; [C] unprovisio
 
 # The Seven as Managed Agents
 
-The seven Emergentism caste-operators (L1 firewall, L2-L4 operational engine, L5-L7 Executive boundary on `P_node = Φ × V`)
-expressed as **Claude platform Managed Agents** — persisted, versioned agent configs
-that Anthropic runs in hosted, sandboxed containers.
+The seven selected Emergentism routing profiles (L1 firewall, L2–L4 operational
+passes, L5–L7 advisory Executive boundaries)
+expressed as **local candidate configurations for Claude platform Managed
+Agents**. The platform can persist and version such agents, but this roster is
+currently unprovisioned `X0`; no hosted-runtime claim is made here.
 
-> **Source of truth.** Definitions are *discovered, not invented* — each agent's
+> **Source of truth.** Profiles are selected, versioned, and testable—not
+> discovered cognitive kinds. Each agent's
 > system prompt, tools, and model are derived from the canonical caste specs in
 > `../01_CANDALA_FIREWALL/` … `../07_RSI_CONSTITUTION/` and the genotype
 > [`../00_THE_SEVEN_OPERATOR_GENOTYPE.md`](../00_THE_SEVEN_OPERATOR_GENOTYPE.md).
-> The `*.agent.yaml` files here are the version-controlled deployment of those specs.
+> The `*.agent.yaml` files here are the version-controlled local configuration
+> of those specs, not a deployment receipt.
 
 ---
 
 ## The roster
 
-| L | Caste · Operator | Transfer on `P_node=Φ×V` | Function | Model | Tools | Mutates? |
-|---|---|---|---|---|---|---|
-| L1 | Caṇḍāla · **Kali** (Demon) | +Φ_self, −V_other | firewall — force-categorize, detect, encode | `claude-haiku-4-5` | read·grep·glob | no (read-only) |
-| L2 | Śūdra · **Kālī** (God) | +V_self, −Φ_false | explorer — expand candidates, truth-cut | `claude-haiku-4-5` | + web | no |
-| L3 | Vaiśya · **Kṛṣṇa** (God) | −Φ_self, +V_other | auditor/charioteer — rank, enable | `claude-sonnet-4-6` | + web | no |
-| L4 | Kṣatriya · **Arjuna** (God) | −V_self, +Φ_other | **executor — the equator; the only write-caste** | `claude-sonnet-4-6` | + write·edit·bash | **yes — human-gated** |
-| L5 | Brāhmaṇa · **Brahmā** (Executive) | +Φ, +V | architect — redesign packets; advises | `claude-opus-4-8` | read·web | no |
-| L6 | Sādhu · **Śiva** (Executive) | −Φ, −V | compressor — prune, archive-first (K3) | `claude-opus-4-8` | + write·edit·bash | **yes — human-gated** |
-| L7 | Ṛṣi · **Viṣṇu** (Executive) | ≈Φ, ≈V | seer — constitutional review; proposes | `claude-opus-4-8` | read·grep·glob | no |
+| L | Varṇa · Operator | B at selected latitude | Selected row equation | Function | Model | Tools | Mutates? |
+|---|---|---|---|---|---|---|---|
+| L1 | Caṇḍāla · **Kali** | ≈0.276 | `Φ_chart→0 ⇒ B→0` | firewall — detect, encode, stop at ambiguity | `claude-haiku-4-5` | read·grep·glob | no |
+| L2 | Śūdra · **Kālī** | 0.5 | `dP_node=V·dΦ+Φ·dV` | explorer — expand candidates, surface weak coherence | `claude-haiku-4-5` | + web | no |
+| L3 | Vaiśya · **Kṛṣṇa** | √3/2≈0.866 | `∂P_node/∂V=Φ` | auditor — rank, test, expose uncertainty | `claude-sonnet-4-6` | + web | no |
+| L4 | Kṣatriya · **Arjuna** | 1 | `dΦ/Φ=dV/V` | authorized executor — smallest scoped action | `claude-sonnet-4-6` | + write·edit·bash | **yes — envelope + confirmation required** |
+| L5 | Brāhmaṇa · **Brahmā** (Executive) | √3/2≈0.866 | `log P_node=log Φ+log V` | architect — redesign packets; advises | `claude-opus-4-8` | read·web | no |
+| L6 | Sādhu · **Śiva** (Executive) | 0.5 | `E_node=−log(P_node)` | compressor — propose archive-first simplification | `claude-opus-4-8` | read·grep·glob | no |
+| L7 | Ṛṣi · **Viṣṇu** (Executive) | ≈0.276 | `z_R:=φ/ν` | seer — constitutional review; proposes | `claude-opus-4-8` | read·grep·glob | no |
 
-**[T] Model tiers follow the framework's own caste doctrine** (CLAUDE.md *Quality × Quantity by Caste*),
-not the SDK default: low-quality/high-throughput L1–L2 → Haiku; balanced/decisive L3–L4 → Sonnet;
-deep-reasoning L5–L7 → Opus. Reserve high-quality inference for higher-risk or constitutional lanes.
+**[D] Model assignments are provisional cost/latency choices, not caste
+doctrine or quality ranks.** Comparative evaluation must hold task information,
+tools, call/token budget, wall time, and evaluator budget equal, then test
+whether role prompts add value over flat and shorter rivals.
+
+## The selected Rosetta configuration contract
+
+The machine-readable metadata in every YAML instantiates the same chain:
+
+| L | Pramāṇa | Reasoning | -ology | Regime analogy |
+|---|---|---|---|---|
+| L1 | Pratyakṣa (perception) | Dialectical | Objective Function | Tyranny |
+| L2 | Upamāna (analogy) | Inductive | Data Science | Democracy |
+| L3 | Anumāna (inference) | Deductive | Auditing | Oligarchy |
+| L4 | Arthāpatti (postulation) | Abductive | Value Alignment | Timocracy |
+| L5 | Śabda (testimony) | Systematic | System Architecture | Aristocracy |
+| L6 | First Principles (Anupalabdhi / non-apprehension source pairing) | Axiomatic | Core State | Anarchy |
+| L7 | Pratibhā (intuition) | Transcendental | Institutional Narrative | Theocracy |
+
+The arrows in `Varṇa → Pramāṇa → Reasoning → -ology → Regime → Equation`
+mean selected dispatch correspondence, not causation, hereditary identity, or
+proof transfer. Operator tokens are `[S]`; `B` is `[A]` after selecting a
+latitude; Varṇa/Pramāṇa pairings are `[S]` internally and `[I]` as external or
+historical fit; Reasoning/-ology/Regime pairings are `[I]`; equation algebra is
+`[A]` on its stated domain while row placement and the L4 balance condition are
+`[S]`. Every profile declares typed input/output, dispatch/stop conditions,
+permissions, authorization mode, a task-envelope budget source, and blinded,
+budget-matched evaluation against flat and shorter rivals.
+
+Actual prompts, models, rankings, selections, tool calls, actions, and receipts
+are D4 events/tokens; any alternatives they represent are D5-possible content.
+No D5 object invokes a tool. After an L4 commitment receipt, only the
+environment or another accountable issuer may return the outcome receipt.
+
+For L1, `Φ_chart` explicitly aliases lowercase chart coordinate `φ`; it is not
+finite-node `Φ`. For L7, `z_R` is only a real ratio proxy, not the full complex
+stereographic coordinate. These seams preserve the intended row compression
+without buying it through symbol equivocation.
 
 ## Accountable authorization, encoded structurally
 
-Only **L4 (Arjuna)** and **L6 (Śiva)** can mutate state, and their `write`/`edit`/`bash`
-tools carry `permission_policy: {type: always_ask}`. The session goes idle and emits a
+Only **L4 (Arjuna)** can request mutation. Its `write`/`edit`/`bash` tools carry
+`permission_policy: {type: always_ask}`. The session goes idle and emits a
 `tool_use` event with `evaluated_permission: "ask"`; nothing lands until a human replies
 `user.tool_confirmation`. That is one runtime control, not a complete
 authorization envelope by itself:
@@ -66,8 +105,9 @@ authorization envelope by itself:
 > own complete principal, mandate, scope, consent, custody, contest, actor, and
 > consequence-bearer envelope.
 
-η=0 (Kali fires only at defectors), A7 (tier every claim), and K3 (Śiva archives with a
-tombstone rather than deletion) live in the system prompts.
+`η=0` is a necessary non-extraction check, not a firing rule or sufficient
+Justice. A7 tiers claims. L6 proposes archive-with-tombstone changes; an
+authorized L4 route performs any mutation.
 
 ---
 
@@ -136,8 +176,8 @@ session = client.beta.sessions.create(
 # stream-first, then send the kickoff; break on terminal idle / terminated
 ```
 
-**The ensemble = a polygenic pipeline that brings a decision to the equator:**
-`L1 firewall → L2 explore → L3 rank → L4 decide & (human-signed) commit`, with the Executive boundaries
+**The ensemble is a selected typed pipeline:**
+`L1 firewall → L2 explore → L3 rank → L4 prospective Justice check and authorized commitment`, with the Executive boundaries
 held as boundaries the work runs within (**L5** redesign only when L4 is structurally
 blocked; **L6** compress overgrowth; **L7** constitutional adjudication). You can run each
 caste as its own session, but the ensemble is now **wired as a coordinator**: at provision
@@ -167,7 +207,7 @@ MANAGED_AGENTS/
 │   ├── 03_vaisya_auditor.agent.yaml        (L3 · Kṛṣṇa · read+web)
 │   ├── 04_ksatriya_executor.agent.yaml     (L4 · Arjuna · write-gated · coordinator)
 │   ├── 05_brahmana_architect.agent.yaml    (L5 · Brahmā · read+web)
-│   ├── 06_sadhu_compressor.agent.yaml      (L6 · Śiva · write-gated)
+│   ├── 06_sadhu_compressor.agent.yaml      (L6 · Śiva · read-only proposal)
 │   └── 07_rsi_constitution.agent.yaml      (L7 · Viṣṇu · read-only)
 ├── provision.py                    ← SDK provisioner (idempotent by name; wires L4 coordinator)
 ├── provision.sh                    ← `ant` CLI provisioner (version-controlled YAML; wires L4 coordinator)

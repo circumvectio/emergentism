@@ -16,16 +16,21 @@ rosetta:
   operator: "Viṣṇu ⊙"
   tier: "Executive"
   regime: "Ṛṣi"
-  register: "[T/B]"
+  register: "[D/B]"
   canonical_phrase: "L7 Ṛṣi Constitution — Operational Runbook"
 title: "L7: Ṛṣi Constitution — Operational Runbook"
-status: "ACTIVE — Phase 0 advisory runbook"
+status: "SUPERSEDED / NON-EXECUTABLE — historical Phase 0 runbook"
 date: 2026-05-04
-evidence_tier: "[T] Technical specification."
+evidence_tier: "[D] preserved design history; current read-only AGENT_SPEC and managed YAML control."
 ---
 
 
 # L7: Ṛṣi Constitution — Operational Runbook
+
+> **[金] Non-execution seam — 2026-07-18.** Do not execute the historical
+> instructions below. Current authority is the read-only `AGENT_SPEC.md` and
+> managed YAML. Constitutional adoption uses the applicable typed authorization
+> process; K2 remains private-DAV-only.
 
 > The seer who names the niche and crystallises Vision. L7 engages only at genuine framework boundaries. L7 proposes constitutional rewrites; K2/PRISM signs to bind. L7's success IS L7's absence from the running system.
 

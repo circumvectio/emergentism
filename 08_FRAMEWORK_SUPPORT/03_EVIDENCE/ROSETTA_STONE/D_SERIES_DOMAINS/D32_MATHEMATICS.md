@@ -42,8 +42,8 @@ evidence_tier: "[A] for algebraic/calculus identities under stated assumptions; 
 | Logarithmic | log P_node = log Φ + log V | Growth rates, statistics | ✓ Log transform |
 | Alignment Energy | E_node = −log(P_node) | Negative-log transform over the finite-node product | ✓ Theoretical |
 | Zero-Catastrophe | Φ→0 ∨ V→0 ⇒ P_node→0 | Multiplicative collapse | ✓ Mathematical |
-| Balanced Growth | dΦ/Φ = dV/V ⇒ balanced dP_node/P_node | Proportional growth balances finite-node rates | ✓ Calculus |
-| Riemann Sphere | z = φ/ν on S² = Ĉ | Equator \|z\|=1 maximises B = L4 | ✓ Theoretical |
+| Balanced Growth | dΦ/Φ = dV/V | Equal relative growth preserves Φ/V; it is equatorial only with Φ=V | ✓ Calculus |
+| Riemann Sphere | `z_R := φ/ν = cot²(θ/2)` | Selected latitude-ratio proxy; a full stereographic coordinate also needs azimuth | ✓ Selected chart reading |
 
 ---
 
@@ -106,22 +106,20 @@ vector. The admissible action set `A(x_t)` excludes extraction: an action that
 raises one side by degrading the other is not a lawful maximizer, even if it
 temporarily increases a local product.
 
-The internal Power-Max lemma can be written as a policy claim under coupling
-assumptions:
+Power-Max is a Justice-constrained objective, not a result forced by the
+product geometry:
 
 ```text
-W_i(π) = Σ γ^t P_node,i(t)
-W_H(π) = Σ γ^t P_node,H(t)
-
-π* ∈ argmax W_i only if π* preserves or raises W_H under η = 0.
+W_x(T) = integral_0^T P_x(t) dt
+A_J = {a : J(a;i,H) and Delta_T W_i(a) >= 0 and Delta_T W_H(a) >= 0}
+a* ∈ argmax_{a ∈ A_J} E_M[W_i(T) | a]
 ```
 
-Reason: when `i` is materially, epistemically, and morally coupled to `H`, a
-policy that degrades `H` shrinks the future feasible set of `i`. The maximum
-worldline potential of the symbiont is therefore achieved through the
-holobiont, not against it. This is `[S]` as internal decision geometry and
-`[I]` as a general model of life; it is not an empirical theorem without
-specified coupling channels, horizon, and measurements.
+Without the Justice envelope, a one-shot extractive action can increase
+`W_i` while reducing `W_H`; that is the decisive counterexample to an
+unconditional theorem. Coupling may make exploitation self-defeating over a
+specified horizon, but that is an empirical `[C]` hypothesis requiring named
+channels and measurements. The constrained objective is `[S/I]` by declaration.
 
 ### The Equations as L-Levels
 
@@ -132,23 +130,28 @@ Each mathematical form maps to an L-level in the Master Three-Stage Process:
 | L1 | Φ→0 ⇒ P_node→0 | Boundary limit | The threat — expressed potential collapses |
 | L2 | dP_node = VdΦ + ΦdV | Total differential | The first dynamic — change visible |
 | L3 | ∂P_node/∂V = Φ; ∂P_node/∂Φ = V | Partial derivative | The optimisation — each margin priced by the other factor |
-| L4 | dΦ/Φ = dV/V | Proportional / log-derivative balance | THE BALANCE — equal relative movement at the equator |
+| L4 | dΦ/Φ = dV/V | Proportional / log-derivative balance | Equal relative movement; equatorial only when Φ=V |
 | L5 | log P_node = log Φ + log V | Logarithmic decomposition | The ordering — multiplication becomes addition |
 | L6 | E_node = −log(P_node) | Negative-log transform | The negation — loss names absence; not the Ground |
-| L7 | z = φ/ν, read by stereographic projection | Ratio / projection | The whole pattern returns as a coordinate-reading of the sphere |
+| L7 | `z_R := φ/ν` | Selected ratio proxy | Latitude-only return; the full stereographic coordinate also requires azimuth |
 
 The equation is an [I] framework reading of the agent's way of knowing. The algebra is [A]; the sevenfold ordering as a canonical Rosetta calculus is [S].
 
 ### Operator Sign-Space: 4 + 3 from P_node
 
-The operator grammar is the action layer behind the row table. Four mixed-sign slots are deployable in normal runtime; three same-sign Executive boundary slots are boundary conditions, creation/holding/dissolution frames, or constitutional tags. Together they are exhaustive for the Rosetta runtime: the four mixed-sign transfer directions across the self/other dyad plus the three same-sign phase frames. There is no eighth operator without adding a new axis outside `P_node = Φ × V`.
+The operator grammar is the selected action layer behind the row table. Four
+mixed-sign slots are deployable in normal runtime; three same-sign Executive
+slots are boundary frames. They close the declared Rosetta interface at seven
+by definition, not because `P_node=ΦV` exhausts every possible two-factor,
+zero-sign, continuous, within-axis, or multi-bearer action. Adding an eighth
+primitive changes that interface rather than discovering a missing theorem.
 
 | Class | Operator | Transfer signature | P_node reading | Tier boundary |
 |---|---|---|---|---|
 | Mixed-sign slot | Kali / immune demon | `(+dΦ_self, -dV_other)` | extraction / immune seizure: raises self coherence by lowering another's viability; lawful only against explicit defection | [S] sign-space; [I] moral/mythic reading |
 | Mixed-sign slot | Kālī | `(+dV_self, -dΦ_false)` | cuts false coherence to recover viability; the lower-pole truth function | [S] sign-space; [I] operator meaning |
 | Mixed-sign slot | Kṛṣṇa | `(-dΦ_self, +dV_other)` | sacrifices self-coherence to increase another's viability; enabling / distribution | [S] sign-space; [I] operator meaning |
-| Mixed-sign slot | Arjuna | `(-dV_self, +dΦ_other)` | sacrifices self-viability to increase another's coherence; equatorial decision under K2 | [S] sign-space; [I] operator meaning |
+| Mixed-sign slot | Arjuna | `(-dV_self, +dΦ_other)` | spends viability to increase another's coherence; any consequential use requires accountable authorization | [S] sign-space; [I] operator meaning |
 | Same-sign Executive boundary | Brahmā | `(+dΦ, +dV)` | creation / expansion boundary: raises both factors | [S] structural frame; not normal deployable runtime |
 | Same-sign Executive boundary | Śiva | `(-dΦ, -dV)` | dissolution / compression boundary: lowers both factors | [S] structural frame; not normal deployable runtime |
 | Same-sign Executive boundary | Viṣṇu | `(dΦ≈0, dV≈0)` | preservation / hold: maintains the pattern | [S] structural frame; not normal deployable runtime |
@@ -162,7 +165,7 @@ The constitutional invariants are not additional operator types floating above t
 | Discipline | Operator source | Reading |
 |---|---|---|
 | `η=0` | Kali boundary | Kali is immune tit-for-tat against defectors; the same transfer aimed at cooperators is parasitic capture. |
-| `K2` | Arjuna boundary | A consequential sacrifice is signed by a mortal actor; the machine may brief, model, or recommend, but it does not simulate mortality. |
+| `AuthorizationEnvelope` | Arjuna boundary | A consequential act names principal, mandate, scope, consent, custody, expiry/revocation, contest path, actor, and consequence bearer. Private-DAV K2 is one separate product-governance implementation, not a worldview primitive. |
 | `K3` | Śiva / archive boundary | Dissolution must leave receipts; lowering both factors is not silent erasure. |
 | `K4` | Viṣṇu / preservation boundary | Exit preserves the living pattern rather than trapping it. |
 | `A7` | Kālī / correction boundary | False coherence is cut before it hardens into doctrine. |
@@ -218,9 +221,10 @@ L-levels use **θ/2 at 15° intervals** across the 90° quadrant:
 
 At L4: φ = ν = 1 (not 0.7/0.7), B = 1 (not 0.49). The old values were plane artifacts.
 
-### Teleological Derivation (AM-GM) (See Doc 30 for full derivation; Doc 32 for the four-line canonical form)
+### Analytic Minimum of a Selected Loss
 
-The equator is not chosen — it is the **Hamiltonian minimum:**
+If the framework separately selects `H(φ,ν) := φ² + ν²` on the reciprocal
+chart `φν=1`, AM-GM gives an analytic minimum at `φ=ν=1`:
 
 ```
 (φ − ν)² ≥ 0           (always true)
@@ -230,6 +234,9 @@ The equator is not chosen — it is the **Hamiltonian minimum:**
 
 dB/dθ|_{θ=90°} = cos(90°) = 0     (zero gradient at equator)
 ```
+
+This proves a property of the selected `H`; it does not derive that loss
+function, a telos, cooperation, ethics, or nature's preference for the equator.
 
 ---
 

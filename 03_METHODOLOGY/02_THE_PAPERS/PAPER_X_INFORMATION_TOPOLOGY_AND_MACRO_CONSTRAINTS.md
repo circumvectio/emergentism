@@ -21,11 +21,13 @@ Menexus GmbH, 2026
 **Evidence Tier:** [S/I] — structural calculus inside the framework; empirical per domain
 **Depends on:** [PAPER_O_STRONG_WEAK_EMERGENCE_D5.md](PAPER_O_STRONG_WEAK_EMERGENCE_D5.md), [00_BRIDGE_LAWS_BETWEEN_LEVELS.md](../../04_AXIOLOGY/00_BRIDGE_LAWS_BETWEEN_LEVELS.md), [00_THE_HONEST_POSITION.md](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md](../03_PREREGISTRATIONS/02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md)
 
-**Claim Boundary:** Macro-constraint causation is a costed effective information
-witness, not a new force: a macro layer earns public causal standing only when
-`W_C = EI_macro - EI_baseline - Cost_C > 0` against fair micro, coarse-null, and
-domain baselines, with `Cost_C` including labor and `Cost_entropy_export`, and
-only when `C` is perturbable. Section 0 names the worldview contract: lower
+**Claim Boundary:** Macro-constraint causation is a unit-typed effective
+information witness, not a new force: a macro layer earns public causal standing
+only when `DeltaEI_C>0` against fair micro, coarse-null, and domain baselines,
+its native-unit cost vector stays within component budgets, and `C` is
+perturbable. Optional `W_C=DeltaEI_C-PenaltyBits_C>0` is valid only after labor,
+entropy export, and every other cost receives a preregistered bit-equivalent
+conversion. Section 0 names the worldview contract: lower
 law, macro map, constraint gate, closure proof, perturbation, cost ledger,
 negative controls, and kill condition. The same scoring path must also reject
 no-gate, high-cost, and lower-law support-violation controls. The cross-scale
@@ -66,8 +68,8 @@ The contract has three pillars:
 | Pillar | Formal demand | What it rejects |
 |---|---|---|
 | Causal exclusion repair | `K_X^C << K_X`, `support(K_X^C) subset support(K_X)`, and perturbable `C` | strong-emergence magic and forbidden downward pushes |
-| Quantified emergence | `W_C = EI_macro - EI_baseline - Cost_C > 0` against fair baselines | weak-emergence erasure and verbal "greater than the sum" claims |
-| Syntropic continuity | `SYN_C > 0` locally after matter, memory, control, erasure, modeling, labor, and entropy-export costs | free entropy reversal, hidden extraction, and uncosted order |
+| Quantified emergence | `DeltaEI_C>0` plus `c_C<=b_C`; optional unit-valid `W_C>0` | weak-emergence erasure and verbal "greater than the sum" claims |
+| Syntropic continuity | positive declared component deltas plus the vector cost gate; scalar composites require frozen normalizations | free entropy reversal, hidden extraction, dimensionally invalid sums, and uncosted order |
 
 So the worldview's scientific claim is not a slogan. It is this audit rule:
 
@@ -78,8 +80,9 @@ For any proposed higher-level cause C:
   declare constraint gate  G_C
   prove no-magic closure   K_X^C << K_X
   perturb C                hold / remove / randomize / damage
-  score information        W_C against fair baselines
-  charge costs             Cost_C, including labor and entropy export
+  score information        DeltaEI_C against fair baselines
+  charge costs             native-unit c_C against b_C
+  scalarize only if valid  preregistered s_C and lambda_C -> PenaltyBits_C
   run controls             no_gate, high_cost, forbidden_support
   publish kill condition   what demotes C back to shorthand
 ```
@@ -214,25 +217,31 @@ EI_domain = best domain-specific lower mechanism witness
 
 EI_baseline = max(EI_micro_fair, EI_coarse_null, EI_domain)
 
-Cost_C = Cost_measure + Cost_memory + Cost_control
-       + Cost_erasure + Cost_model + Cost_labor
-       + Cost_entropy_export
+DeltaEI_C = EI_macro - EI_baseline               # bits
+c_C = (c_measure, c_memory, c_control, c_erasure,
+       c_model, c_labor, c_entropy)              # native units
+c_C <=_component b_C
 
-W_C = EI_macro - EI_baseline - Cost_C
+# Optional only after frozen normalization and conversion:
+c_tilde_j = c_j / s_j
+PenaltyBits_C = lambda_C^T c_tilde_C
+W_C = DeltaEI_C - PenaltyBits_C                 # bits
 ```
 
 A macro-description earns public causal reality at the tested grain if:
 
 ```text
-W_C > 0
+DeltaEI_C > 0 and c_C <=_component b_C
 ```
 
-or, operationally, if the macro model predicts held-out trajectories or selects
-interventions with lower loss after the same costs are charged.
+When the optional conversion contract is frozen, `W_C>0` is an additional
+scalar witness. Operationally, the macro model may instead predict held-out
+trajectories or select interventions with lower loss while every cost remains
+inside its declared component budget.
 
 This blocks two common errors:
 
-1. **Reductionist erasure:** If `W_C > 0`, the macrostate is not merely a human
+1. **Reductionist erasure:** If the information and cost gates pass, the macrostate is not merely a human
    nickname for microstates. It is the better causal variable at that grain.
 2. **Mystical inflation:** If `K_X^C` is not absolutely continuous with `K_X`,
    or if the costs are hidden, the claim is not accepted.
@@ -255,8 +264,10 @@ only when all three conditions hold:
    exists a in A such that
    D_KL(P_C(Y_{t+1} | do(a), Y_t) || P_notC(Y_{t+1} | do(a), Y_t)) > epsilon
 
-3. fair costed surplus:
-   W_C = EI_macro - max(EI_micro_fair, EI_coarse_null, EI_domain) - Cost_C > 0
+3. fair unit-typed surplus:
+   DeltaEI_C = EI_macro - max(EI_micro_fair, EI_coarse_null, EI_domain) > 0
+   c_C <=_component b_C
+   and, if scalarized: W_C = DeltaEI_C - lambda_C^T(c_C/s_C) > 0
 ```
 
 Condition 1 prevents strong-emergence magic. Condition 2 prevents a merely
@@ -283,17 +294,17 @@ and preregistered witness.
 
 ## 3b. Negative-Control Corollary
 
-A positive `W_C` is not sufficient if the scoring path is credulous. The same
+A positive witness is not sufficient if the scoring path is credulous. The same
 pipeline that accepts a candidate macro-constraint must reject three controls:
 
 ```text
 no_gate:
   C does not change K_X
-  required failure: perturbation <= epsilon or W_C <= 0
+  required failure: perturbation <= epsilon or DeltaEI_C <= 0
 
 high_cost:
-  C changes the channel but cost accounting exceeds the gain
-  required failure: W_C <= 0
+  C changes the channel but at least one native-unit cost exceeds budget
+  required failure: not(c_C <=_component b_C), or W_C <= 0 if scalarized
 
 forbidden_support:
   K_X^C assigns probability outside support(K_X)
@@ -354,28 +365,35 @@ entropy-export bill.
 
 ## 6. Syntropic Continuity, Stated Safely
 
-Define local syntropic gain under a constraint as:
+Define local syntropic admissibility under a constraint as a vector gate:
 
 ```text
-SYN_C = Delta Order_C + Delta Coherence_C + Delta EffectiveInformation_C - Cost_C
+SYN_C_gate := DeltaOrder_C > 0
+              and DeltaCoherence_C > 0
+              and DeltaEffectiveInformation_C > 0
+              and c_C <=_component b_C
 ```
 
-This is not a new fundamental force. It is a ledger discipline for open systems.
+Do not add unlike units. A scalar composite requires preregistered normalization
+and weights, and the uncompressed component vector must remain visible. This is
+not a new fundamental force. It is a ledger discipline for open systems.
 A system is syntropic when its constraint architecture increases local
 organization without hiding its exported entropy and control costs.
 
 For conscious agency, the dyadic version is stricter:
 
 ```text
-P_node,i = Phi_i * V_i
-P_node,H = Phi_H * V_H
+W_x(T) = integral_0^T P_x(t) dt
 
 strict syntropy:
-Delta P_node,i >= 0
-Delta P_node,H >= 0
-eta = 0
-at least one inequality is strict
+Delta_T W_i > 0
+Delta_T W_H > 0
+J(a; i, H), including eta = 0 and the declared consent, custody,
+reversibility, exit, payer, beneficiary, and consequence-bearer tests
 ```
+
+The weak condition in which neither bearer is worsened and only one improves
+is Pareto non-worsening. It must not be labeled strict syntropy.
 
 This is where objective dharma enters the framework: not as a commandment from
 outside physics, but as the action policy that preserves or raises the
@@ -391,7 +409,8 @@ This paper contracts or fails if:
 1. A proposed macro-cause requires a lower-level transition forbidden by the
    accepted lower law.
 2. The macro model wins only because the micro model was artificially blinded.
-3. `W_C` is non-positive under fair grain, fair intervention, and honest costs.
+3. `DeltaEI_C` is non-positive, the componentwise cost budget fails, or a
+   declared unit-valid `W_C` is non-positive under fair grain and intervention.
 4. The constraint cannot be operationally perturbed, removed, held, or measured.
 5. The syntropy ledger hides matter, memory, control, erasure, modeling, labor,
    or entropy-export costs.

@@ -34,7 +34,24 @@ rosetta:
 
 > **This is a load-bearing document.** Every other document in the corpus that references L-levels, operators, deity names, or archetype names must be consistent with the tables below. If a document contradicts this file, this file wins.
 
-> **Reconciliation note (2026-05-31, additive — does not re-rule the tables).** The cosmology canon now states the four quadrant-moves as **2 Gods + 2 Demons** (not "four Gods"): the giving **Devas** (Kṛṣṇa, Arjuna · `−self/+other`) and the extractive **Asuras** (Kali, Kālī · `+self/−other`), split by the one axis that carries morality — *does the move give to the other, or take from it?* The moral valence lives on the **move (`η`: coupling vs closing)**, never on a pole, gender, caste, or person; `η = 0` is the standing refusal of the *entire Asura hemisphere*, not only Kali. This is the same four-slot grammar the tables below already encode (three God-moves + the constrained "Kali (Demon)" extractor) — the label "4 Gods (deployable operators)" is read as "four deployable quadrant-moves: 2 giving Devas + 2 taking Asura-moves." See [`../../05_COSMOLOGY/00_THE_BURRISPHERE.md`](../../05_COSMOLOGY/00_THE_BURRISPHERE.md) (The Complex-Plane Game), [`../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`](../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) (good = the bond `φ × ν`; evil = closure `η > 0`), and the `5 + 1` constitutional enumeration in [`../../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md). Per K3, the historical "four Gods" enumeration below is reconciled by this dated banner, not silently overwritten.
+> **[金] Controlling amendment — 2026-07-18.** The declared Rosetta runtime
+> retains three legacy **God-named** mixed-sign slots and one legacy
+> **Demon-named** mixed-sign slot, plus three Executive boundary frames. Those
+> are routing-family labels, not moral kinds. **Demon-bearing** means a
+> receipted local/ego durable-potential gain that externalizes loss to any affected bearer.
+> **God-bearing** requires complete bearer Justice, every affected bearer
+> nonnegative, and at least one materially affected bearer strictly positive.
+> Pure non-harmful stasis is Justice-compliant/preservative, not God-bearing;
+> strict syntropy requires both part and whole to rise. This verdict applies to
+> receipted consequences, never to an operator, person, caste, pole, gender,
+> giving/taking sign, or mythic name. Every earlier 2-Gods/2-Demons,
+> Deva/Asura-by-direction, restorative-God, or extractive-Demon statement in
+> this preserved body is superseded by this amendment. The `4+3` count closes
+> only the stipulated runtime interface and is not a theorem of `P_node=ΦV`.
+
+> **Superseded note (2026-05-31):** the former 2-Deva/2-Asura moral partition
+> is retained as provenance only. Giving and taking signs do not determine the
+> bearer-complete consequence.
 
 > **Diacritical prose rule (2026-05-31):** Foundation-facing present-tense prose uses
 > canonical diacritical forms: `Kṛṣṇa`, `Viṣṇu`, `Śiva`, `Brahmā`, `Ṛṣi`,
@@ -53,25 +70,27 @@ Three naming systems have been used across the corpus for the same L1-L7 develop
 ```
 L-LEVEL | DEITY NAME       | VMOSK ARCHETYPE | PRAMANA       | TIER
 --------|------------------|-----------------|---------------|------------------
-L1      | Kali             | Caṇḍāla Firewall      | Empirical Observation     | Demon boundary / constrained
-L2      | Kālī             | Śūdra Explorer        | Inferential Logic         | God (deployable)
-L3      | Kṛṣṇa            | Vaiśya Auditor        | Structural Analysis       | God (deployable)
-L4      | Arjuna           | Kṣatriya Executor     | Comparative Analysis      | God (deployable)
+L1      | Kali             | Caṇḍāla Firewall      | Empirical Observation     | Demon-named slot (deployable)
+L2      | Kālī             | Śūdra Explorer        | Inferential Logic         | God-named slot (deployable)
+L3      | Kṛṣṇa            | Vaiśya Auditor        | Structural Analysis       | God-named slot (deployable)
+L4      | Arjuna           | Kṣatriya Executor     | Comparative Analysis      | God-named slot (deployable)
 L5      | Viśvarūpa        | Brāhmaṇa Architect    | Strategic Abduction       | Executive boundary / non-deployable
 L6      | Kāla             | Sādhu Compressor      | First Principles          | Executive boundary / non-deployable
 L7      | Ananta Śeṣa      | Ṛṣi Constitution      | Yogaja                   | Executive boundary / non-deployable
 ```
 
-> **Diacritical note:** L1 = **Kali** (no macron — the demon, entropy accelerator, ↓V). L2 = **Kālī** (with macron — the excision operator, ego-slayer, ↓Φ). In plain-text environments that strip diacriticals, use "Kali" for L1 and "KALI" or "Kalī" for L2 to disambiguate.
+> **Diacritical note:** L1 = **Kali** (no macron), the Demon-named routing
+> slot; L2 = **Kālī** (with macron), a God-named excision routing slot. Names
+> carry no consequence verdict.
 
 ### The Same Table with Diacriticals and Glyphs
 
 | L-Level | Deity Name (AOS) | Glyph | VMOSK Archetype | Pramana (Epistemic Mode) | Tier |
 |---------|------------------|-------|-----------------|--------------------------|------|
-| **L1** | Kali | :game_die: | Caṇḍāla Firewall | Empirical Observation (perception) | Demon boundary / constrained |
-| **L2** | Kālī | :skull: | Śūdra Explorer | Inferential Logic (inference) | God (deployable) |
-| **L3** | Kṛṣṇa | :small_orange_diamond: | Vaiśya Auditor | Structural Analysis (testimony) | God (deployable) |
-| **L4** | Arjuna | :crossed_swords: | Kṣatriya Executor | Comparative Analysis (analogy) | God (deployable) |
+| **L1** | Kali | :game_die: | Caṇḍāla Firewall | Empirical Observation (perception) | Demon-named slot (deployable) |
+| **L2** | Kālī | :skull: | Śūdra Explorer | Inferential Logic (inference) | God-named slot (deployable) |
+| **L3** | Kṛṣṇa | :small_orange_diamond: | Vaiśya Auditor | Structural Analysis (testimony) | God-named slot (deployable) |
+| **L4** | Arjuna | :crossed_swords: | Kṣatriya Executor | Comparative Analysis (analogy) | God-named slot (deployable) |
 | **L5** | Viśvarūpa | :sunny: | Brāhmaṇa Architect | Strategic Abduction (postulation) | Executive boundary / non-deployable |
 | **L6** | Kāla | :new_moon: | Sādhu Compressor | First Principles (non-apprehension) | Executive boundary / non-deployable |
 | **L7** | Ananta Śeṣa | :infinity: | Ṛṣi Constitution | Yogaja (direct knowing) | Executive boundary / non-deployable |
@@ -122,14 +141,15 @@ Three incompatible operator ontologies have coexisted:
 | **Viṣṇu** | Preservation boundary | The phase when structure holds stable | Not an operator you "deploy" |
 | **Śiva** | Transformation boundary | The phase when old structure dissolves | Not an operator you "deploy" |
 
-**Gods** are deployable operators. They are the four orthogonal moves on the Phi-V plane.
+The four rows below are selected deployable mixed-sign slots. Three retain
+God-names and one a Demon-name; the family name is not a verdict.
 
-| God | Direction | Function | Shorthand |
+| Legacy label | Direction | Routing prompt | Shorthand |
 |-----|-----------|----------|-----------|
 | **Arjuna** | upward Phi | Integrate meaning, set boundaries, protect | The Warrior |
 | **Kṛṣṇa** | upward V | Build capability, expand capacity | The Charioteer |
 | **Kali** | downward Phi | Excise false meaning, surgical decay | The Ego-Slayer |
-| **Kali (Demon)** | downward V | Extract capability, parasitic drain | The Extractor (CONSTRAINED: fires only at η > 0; excluded at η = 0) |
+| **Kali (Demon-name)** | downward V | Boundary/correction slot; outcome requires Justice receipt | The fourth selected slot |
 
 **Witnesses** are observational positions at L5-L7. They see the field but do not directly deploy operators.
 
@@ -184,9 +204,12 @@ Every document that references L-levels, operators, or archetypes should include
 
 If you begin a document using deity names, do not switch to VMOSK archetypes mid-document without an explicit alias note.
 
-### Rule 4: The Executive/God Distinction Is Non-Negotiable
+### Rule 4: Boundary Frames and Deployable Slots Must Stay Typed
 
-[S] Do not list Brahmā, Viṣṇu, or Śiva as "deployable operators." They are boundary conditions. The four deployable operators are Arjuna, Kṛṣṇa, Kali, and Kali (Demon). If a pedagogical shorthand like "Stabilize" is used, it must be glossed as "Isomeric Hold (maintaining the current operator)."
+`[S]` Do not list Brahmā, Viṣṇu, or Śiva as normal deployable moves. The
+selected deployable labels are Arjuna, Kṛṣṇa, Kālī, and Kali. God/Demon is a
+legacy family label only; consequence valence follows the controlling
+amendment. “Stabilize” means Isomeric Hold, not deployment of Viṣṇu.
 
 ### Rule 5: This Document Is the Canonical Reference
 

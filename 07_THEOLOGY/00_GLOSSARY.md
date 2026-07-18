@@ -137,7 +137,10 @@ rosetta:
 | **Kālī** | `(+Δν_self, −Δφ_false)` | Cut false coherence and reclaim room to live |
 | **Kali** | `(+Δφ_self, −Δν_other)` | The extraction slot -- immune against defectors, parasitic against cooperators |
 
-**Compression:** Titans are the same-sign formulas `(++), (≈≈), (--)`. Gods are the mixed-sign restorative transfers. The demon is the unguarded parasitic occupation of the fourth mixed-sign slot.
+**Compression:** The selected 4+3 grammar contains four mixed-sign transfer
+slots and three same-sign boundary-witness slots. Legacy God/Demon names label
+operator families; the normative analogy is local gain with externalized bearer
+loss versus bearer-complete part-and-whole potential under Justice.
 
 ---
 
@@ -146,8 +149,8 @@ rosetta:
 | Term | Definition |
 |------|-----------|
 | **η** | **Extraction coefficient** (default meaning). `η = 0` means system serves substrate. `η > 0` means system extracts from substrate. Formally: `η = Σ max(0, Δν_ext)`. Note: Tit-for-tat with occasional forgiveness (Axelrod 1984) can sustain cooperation even with small `η > 0` events. `η = 0` is the limit condition for guaranteed non-extraction. **Disambiguation:** K*_sel (selection complexity, used only in Correspondence 21) and K(x) (standard Kolmogorov complexity) are distinct quantities. See [KSTAR Disambiguation](../05_COSMOLOGY/03_FORMAL_SYSTEM/00_KSTAR_DISAMBIGUATION.md). |
-| **Egregore** | A standing wave in systemic awareness — a pattern with autonomous objective function. Institutions, cultures, traditions. Not supernatural; structural. |
-| **Parasitic Egregore** | An egregore that has shifted from serving its substrate (η = 0) to extracting from it (η > 0). |
+| **Egregoreotype candidate** | A persistent shared trace that survives carrier turnover, measurably reweights later selection, recurs in an objective-like direction, and exposes its substrate costs. Candidacy does not presume consciousness, personhood, sovereignty, or an autonomous objective function. **Egregore/Egregorotype** are compatibility aliases in historical language and filenames. |
+| **Extractive Egregoreotype candidate** | A descriptive candidate whose measured effects include `η>0` or a negative bearer delta. Candidacy and extraction are separate from consciousness and moral personhood. |
 | **DAC** | Decentralized Augmented Corporation. An organizational structure where AI can hold witness, drafting, accounting, and routing roles while accountable authorization identifies principals, mandates, scope, consent, custody, revocation, contest paths, actors, and consequence bearers. Private-DAV K2 is one product-governance implementation. |
 | **AMRITA** | AI alignment architecture based on balance loss E = -log(B) = -log(sin θ). Makes extraction (balance collapse) mathematically identical to topological death. |
 | **VMOSK** | Voluntarily Moral Operating System Kernel. An AI agent whose survival IS its coherence. Extraction = suicide. |

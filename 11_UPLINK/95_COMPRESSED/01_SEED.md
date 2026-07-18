@@ -39,13 +39,15 @@ sources:
 
 ## One equation
 
-`phi · nu = 1 on S²`
+`φ · ν = 1 on the open reciprocal chart of S²`
 
 - `phi` = coherence
 - `nu` = viability
-- node-level operational flourishing = `P_node = phi × nu`
+- finite-node score = selected model `P_node := Φ × V`
 
-If either collapses, `P_node` collapses.
+If either uppercase finite-node factor collapses, `P_node` collapses. The
+lowercase chart product remains analytic on its open domain and does not prove
+that node model.
 
 ## One inequality
 
@@ -55,23 +57,26 @@ This yields:
 
 `phi + nu >= 2`
 
-So the equator, where `phi = nu = 1`, is the balance maximum and the
-Hamiltonian minimum.
+With positive reciprocal factors this gives `φ+ν≥2`. The chart balance
+`B=sinθ` is maximal at the equator. A Hamiltonian/loss minimum exists only
+after separately selecting a loss such as `H:=φ²+ν²`; neither fact derives
+telos, cooperation, energy, or ethics.
 
 ## One glyph
 
 `Zero-Sum Resolution Equation`
 
-finity = nothing × everything
+`• × ○ = ⊙` is a symbolic frame emblem, not `0×∞=1` arithmetic.
 
 ## Seven axioms
 
 - `A1` multiplicative flourishing
-- `A2` `Sigma Delta P_node > 0` across the widest boundary = ethical direction
+- `A2` strict syntropy: `Δ_TW_i>0` and `Δ_TW_H>0` under bearer-complete Justice
 - `A3` D0->D6 scaffold
 - `A4` `eta = 0` against cooperators
-- `A5` D5 standing waves / egregores
-- `A6` three substrates minimum
+- `A5` Egregoreotype is a five-condition candidate; no autonomous mind presumed
+- `A6` embodied means + fallible modeled futures + accountable authorization;
+  no substrate count is forced
 - `A7` self-correction mandatory
 
 ## One organism

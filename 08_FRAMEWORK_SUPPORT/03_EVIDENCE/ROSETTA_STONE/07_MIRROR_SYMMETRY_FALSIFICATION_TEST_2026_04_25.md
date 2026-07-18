@@ -17,7 +17,10 @@ rosetta:
 
 ## 0. Axiomatic guard
 
-The framework claims that mirror symmetry around L4 is **geometric necessity, not aesthetic preference**. On S² with φ = cot(θ/2) and ν = tan(θ/2), every L-level at colatitude θ has a unique partner at the complementary angle (90° − θ) where the φ/ν roles are reversed. The pole-meeting (L0=L∞) closes the topology.
+The current framework treats the L1↔L7, L2↔L6, and L3↔L5 mirror assignments
+as an `[I]` design hypothesis. Antipodal/reflection operations on `S²` are
+mathematical, but the selected seven samples and their domain meanings are not
+forced, and the two poles remain distinct. The return is `r₆:D6↝D0`.
 
 This means: **for any column claiming to be a 7-projection of S², the L1↔L7, L2↔L6, L3↔L5 pairs must show *functional inversion* — same kind, opposite direction.** If a column passes this test cleanly, it's a genuine S² projection. If it fails, it's a forced fit or a linear domain pasted onto a circular geometry.
 

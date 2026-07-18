@@ -13,7 +13,7 @@ rosetta:
       column: Constitutional Witness
       role: "preserve cross-caste audit context without promoting it into founder authority"
   operator: "Kṛṣṇa ◇"
-  tier: "God"
+  tier: "Routing"
   regime: "Vaiśya"
   register: "[B/I/D]"
   canonical_phrase: "50_AUDITS_AND_EXECUTIONS — Agent Routing"

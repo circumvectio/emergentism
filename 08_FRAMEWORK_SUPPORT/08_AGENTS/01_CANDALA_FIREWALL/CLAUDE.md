@@ -1,6 +1,5 @@
 ---
 rosetta:
-  canonical_phrase: 01_CANDALA_FIREWALL — Agent Routing
   operator: Kali 🎲
   primary_column: Agent Firewall
   primary_level: L1
@@ -16,7 +15,7 @@ rosetta:
   - column: Core State
     level: L6
     role: preserve raw-signal boundary before interpretation
-  tier: Demon
+  tier: Routing
   canonical_phrase: "08_FRAMEWORK_SUPPORT/08_AGENTS/01_CANDALA_FIREWALL/CLAUDE.md — Agent First-Touch"
 ---
 

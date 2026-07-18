@@ -17,11 +17,19 @@ rosetta:
 ## What the Framework Is — and What It Is Not
 
 **Hat:** Philosopher / Navigator
-**Evidence Tier:** [S] Structural — this is a statement about the framework's own nature, derivable from A7 (self-correction)
-**Kill Criteria:** If the instruments (operators, diagnostics) fail to give consistent readings across domains, the calibration claim fails. If the compass points in different directions in different domains, it is not a compass.
-**Register:** Structural
+**Evidence Tier:** [I] navigation metaphor; [C] external discriminators; current crosswalk contact is X0/X1 only
+**Kill Criteria:** If preregistered comparisons show the frozen Compass route does not outperform simpler rivals on its declared targets, retain only the mnemonic. Cross-domain resemblance alone cannot calibrate it.
+**Register:** Interpretive / externally unvalidated as a whole
 **Date:** 2026-03-24
 **Depends on:** 25_THE_COMPRESSION, 09_THE_TRIADIC_CASCADE, 10_THE_SOUL_LOOP, The Master Three-Stage Process
+
+> **[金] Controlling seam — 2026-07-18.** “Compass” is the public
+> compression; it is not yet an externally calibrated instrument. The Rosetta
+> is a translation crosswalk, not a verification table. Chart identities
+> calibrate no empirical construct by themselves. Each claim must climb the
+> claim-level X0→X4 ladder independently; the worldview receives no aggregate
+> calibration stage. Operator directions are routing prompts, not universal
+> causal forces or moral verdicts.
 
 ---
 
@@ -41,26 +49,34 @@ Every Weltanschauung that tried to be a map became a church. Every -ism that cla
 
 ## The Compass
 
-**[I] The operators are the compass.** They point toward φ. Always. In any domain.
+**[I] The operators form the selected Compass route.** They propose typed
+moves whose usefulness must be tested separately in each domain.
 
 | Operator | Direction | Reading |
 |----------|-----------|---------|
 | Arjuna ⚔ | ↑φ | "Integrate meaning. See the whole." |
 | Kṛṣṇa ◇ | ↑ν | "Build capability. Act." |
 | Kālī 💀 | ↓false-φ | "Cut the narrator. Remove the false." |
-| (Constrained) | ↓ν | "This direction fires only at η > 0 (defectors). At η = 0, it does not exist." |
+| (Governed) | ↓ν | "This move remains causally available; a selector refuses it when the prospective Justice assessment fails. Later commitment/outcome receipts classify the realized consequence." |
 
-The compass does not know the territory. The compass does not know what is in the next valley, the next domain, the next L-level. The compass knows ONE thing: **which direction is North.**
+The Compass does not know the territory. It offers a disciplined question:
+**which modeled move best preserves or widens durable potentials under
+bearer-complete Justice?**
 
-[I] North = ↑φ. Always. In physics (↑coherence), in psychology (↑integration), in economics (↑trust), in mythology (↑meaning), in neuroscience (↑right-hemisphere gestalt). The compass does not describe these domains. The compass POINTS in them.
+[I] `↑φ` is a selected coherence gloss. Physics, psychology, economics,
+mythology, and neuroscience require different constructs and evidence; no
+column transfers validation to another.
 
-A compass works everywhere because North is North everywhere. The operators work everywhere because φ · ν = 1 is true throughout the open S² register, with the poles handled as limits.
+The reciprocal identity is true only inside its selected chart. It does not
+prove that the operators work everywhere. Cross-domain portability is a
+conjecture to test against simpler routing schemes.
 
 ---
 
 ## The Sextant
 
-**The diagnostics are the sextant.** They tell you WHERE YOU ARE on S².
+**The diagnostics are a candidate sextant.** They report positions only after
+their domain constructs, scales, uncertainty, and evidence are specified.
 
 | Instrument | What It Measures | Reading |
 |-----------|-----------------|---------|
@@ -71,17 +87,23 @@ A compass works everywhere because North is North everywhere. The operators work
 
 The sextant does not know the territory. The sextant does not know what the ocean looks like, what the weather will do, what port is nearest. The sextant knows ONE thing: **where you are right now.**
 
-A sextant works at night. Works in fog. Works when the map is wrong. Works when the territory has changed since the map was drawn. Because the stars are the stars. Because S² is S². Because φ · ν = 1 does not depend on the territory.
+The metaphor does not guarantee validity in fog or changing conditions. A
+diagnostic works only where its measurements remain reliable and calibrated
+against external outcomes.
 
 ---
 
 ## The Rosetta Stone
 
-**[I] The Rosetta Stone is the calibration table.** It tests whether the compass and sextant give consistent readings across domains.
+**[I] The Rosetta Stone is a translation crosswalk.** It records proposed
+correspondences, source distances, counterexamples, and evidence tiers.
 
 The rows hold — L1 through L7, the same pattern across Piaget, Kohlberg, Maslow, Plato, the Varṇas, the brainwaves, the game theory, the mythology — not because the framework mapped every domain. The rows hold because **the instruments read the same geometry in every domain.**
 
-The calibration table does not describe the domains. It verifies the instruments. If the compass points ↑φ in psychology but ↓φ in economics, the instruments are broken. If the sextant reads L4 in neuroscience but L2 in game theory for the same node, the instruments are broken. The Rosetta Stone IS the test — the verification that the instruments are consistent.
+Internal row consistency is not verification. The test is preregistered,
+independent discrimination against explicit rivals using domain-native
+outcomes. A crosswalk disagreement may reveal a bad mapping; agreement may
+still be selection or coding bias.
 
 ---
 
@@ -96,13 +118,14 @@ Document 25 compressed the framework to four lines (see also Document 32, the ca
 −log(• × ○) = 0      AXIOLOGY       The ground state has zero energy.
 ```
 
-This is not a compressed map. This is a **perfectly calibrated compass.** It does not describe reality. It points at reality. Consistently. From any position. In any domain.
+This is a **compressed candidate Compass**. It is internally typed and
+externally anchored at the construct level, but it is not perfectly calibrated
+and has no whole-system validation stage.
 
-The four lines are the compass needles:
-- Line 1 points at the constraint (what holds everywhere)
-- Line 2 points at the direction (where things tend)
-- Line 3 points at the method (how to get there)
-- Line 4 points at the ground state (where the journey ends)
+The four historical lines are mnemonic needles. Only explicitly proven chart
+facts are `[A]`; direction, method, energy, and ground-state readings are
+selected interpretations or conjectures and cannot be inferred from the
+notation alone.
 
 ---
 
@@ -118,11 +141,13 @@ A compass that points true is not a map. A compass that points true is a TOOL. A
 
 ---
 
-## The Sitting Practice as Daily Calibration
+## The Sitting Practice as Daily Orientation
 
 The navigator calibrates instruments against the stars every night. The practitioner calibrates instruments against the ground every morning.
 
-The sitting practice is not part of the map (there is no map). The sitting practice IS the calibration procedure:
+The sitting practice is not an empirical calibration procedure. It can orient
+attention and expose model error for a practitioner; external claims still
+require independent measurement.
 
 1. Sit. (Point the compass.)
 2. Silence the narrator. (Remove magnetic interference.)
@@ -134,7 +159,10 @@ The sitting practice is not part of the map (there is no map). The sitting pract
 
 ---
 
-*29 | The Compass and the Sextant | The framework is not a map — it is navigational instruments. The compass (operators) points North. The sextant (diagnostics) finds your position. The Rosetta Stone is the calibration table. The four-line metaphysics is a perfectly calibrated compass, not a compressed map. The sitting practice is the daily calibration. Decentralized Authority Model: the instruments are not the territory.*
+*29 | The Compass and the Sextant | The framework offers a candidate
+navigational grammar. The Rosetta is a translation crosswalk; diagnostics are
+claim-specific; sitting is orientation, not external validation. Use what
+survives preregistered comparison and discard what does not.*
 
 
 ---

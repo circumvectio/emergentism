@@ -1,270 +1,195 @@
 ---
 rosetta:
   primary_level: L3
-  primary_column: Philosophy
-  secondary:
-    - level: L3
-      column: Philosophy
-      role: "meta-epistemic test design — decisive conditions"
+  primary_column: Auditing
   operator: "Kṛṣṇa ◇"
   tier: "God"
   regime: "Vaiśya"
-  register: "[I]"
-  canonical_phrase: "What actually tests the theory"
+  register: "[A/B/I/C]"
+  canonical_phrase: "What actually tests a claim"
+title: "What Actually Tests the Compass"
+status: "ACTIVE — claim-level external calibration contract"
+date: 2026-07-18
+evidence_tier: "[A] bounded third-party findings and formal results; [B] source-verification and executed receipts; [I] calibration design/crosswalk; [C] pending Compass discriminators"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
-**L3 falsification doctrine; the retired GFS archive is provenance, not a test.**
+# WHAT ACTUALLY TESTS THE COMPASS
 
-# What Actually Tests the Theory
+> A compass is calibrated against independent bearings, one needle and one
+> domain at a time. No single experiment validates a worldview.
 
-> **The former GFS study is retired. This document identifies what would actually be decisive.**
+**Depends on:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md),
+[External Calibration Ledger](00_EXTERNAL_CALIBRATION_LEDGER.md), and
+[Canonical Claim Matrix](00_CANONICAL_CLAIM_MATRIX.md).
 
-**Date:** 2026-04-11
-**Evidence Tier:** Meta-epistemic (test design)
-**Depends on:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)
-**See also:** [00_KNOWN_UNKNOWNS_PROGRAM.md](../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md), [00_RECONCILIATION_THEOREM_PACKET.md](../07_THEOLOGY/00_RECONCILIATION_THEOREM_PACKET.md), [00_RECONCILIATION_SCOPE_BOUNDARY_NOTE.md](../00_META/00_RECONCILIATION_SCOPE_BOUNDARY_NOTE.md), [16_OPERATOR_CONSISTENCY_AUDIT.md](../01_TELEOLOGY/02_THE_DERIVATION/16_OPERATOR_CONSISTENCY_AUDIT.md), [BREAKTHROUGH_REPLICATION_PACKET](../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/README.md), [GFS retirement receipt](../90_ARCHIVE/2026_07_13_gfs_retraction/2026-07-16_GFS_RETIREMENT_RECEIPT.md) (archive provenance only)
+**Prospective contract:**
+[Compass External Calibration Preregistration](03_PREREGISTRATIONS/04_COMPASS_EXTERNAL_CALIBRATION_PREREG.md).
 
-Retrieval handles: geometry flagship = Protocol R; emergence flagship =
-Macro-Constraint Physics-to-Biology; toy macro-constraint harness `[B]`;
-negative controls = no-gate, high-cost, forbidden-support; real domain run
-pending.
-
----
-
-## The Core Claim
-
-**`P∞ = φ · ν = 1` on the open `S²` register.**
-
-This is a claim about the *geometry* of reality — not about survey responses, not about self-reported flourishing, not about any particular operationalization. The claim is that the underlying substrate is the Riemann sphere, that coherence and viability are its two complementary projections, and that their product is constant on the open sphere, with the poles handled as limiting boundaries rather than evaluated finite points.
-
-**Numbering note:** when this document discusses the uniqueness of S² under O1-O5, it is referring to the older public ontological wager used for substrate selection. The active formal-system canon is broader (A1-A7).
-
-## Current Hardening Frame
-
-This document now sits inside a stricter hardening sequence:
-
-- the **canonical operational law** remains `Zero-Sum Resolution Equation` and `φ · ν = 1`
-- the **source-foundation mapping** `{•, ⊙, ○} = {0, 1, ∞}` remains canonical in the transcendental-trinity lane
-- the **derivation companion** `⊙ = •^○` remains non-canonical and cannot be tested or quoted as if it were already doctrinally closed
-
-For hostile-formalization and scope-boundary discipline, use:
-
-- [00_RECONCILIATION_THEOREM_PACKET.md](../07_THEOLOGY/00_RECONCILIATION_THEOREM_PACKET.md)
-- [00_RECONCILIATION_SCOPE_BOUNDARY_NOTE.md](../00_META/00_RECONCILIATION_SCOPE_BOUNDARY_NOTE.md)
-- [16_OPERATOR_CONSISTENCY_AUDIT.md](../01_TELEOLOGY/02_THE_DERIVATION/16_OPERATOR_CONSISTENCY_AUDIT.md)
-
-**Rule:** the tests listed below can move one bridge, one operator claim, or one prediction tier at a time. They do not by themselves authorize a whole-core state victory statement.
-
-**Operational-emergence rule:** the macro-constraint program tests a different
-claim from the geometry flagship. Protocol R asks whether the `S²` reading has
-empirical bite. The physics-to-biology macro-constraint run asks whether
-higher-level organization can earn public causal standing without reductionist
-erasure or strong-emergence magic. A toy harness can be `[B]` proof-of-method;
-biology upgrades only by a frozen domain run.
+**Retired lane:** the [GFS retirement receipt](../90_ARCHIVE/2026_07_13_gfs_retraction/2026-07-16_GFS_RETIREMENT_RECEIPT.md)
+is provenance only and supplies no active evidence.
 
 ---
 
-## What Does NOT Test This Claim
+## There is no one “core empirical claim”
 
-| Instrument | Why It's Not Decisive | What It Tests Instead |
-|-----------|----------------------|----------------------|
-| **Retired GFS survey corpus** | It is not an active instrument. It lacked repository custody of respondent microdata, used disputed proxies, and could not resolve the boundary claim it was made to carry. | Historical provenance only; it supplies no current positive or negative evidence for Emergentism. |
-| **Protocol D (AI simulation)** | Framework-designed simulation testing framework metrics. Circular. | Whether coupled, long-horizon, multiplicative agents under enforced `η = 0` select syntropic-frontier outcomes more strongly than additive baselines (internally supportive, but [S] not independent [A]) |
-| **Agent V x Phi** | Same circularity problem. | Whether framework-defined agent performance correlates with framework-defined balance |
+The previous version made the analytic identity `φν=1` carry an empirical
+ontology and then asked one perceptual protocol to test “the geometry of
+reality.” That was a type error.
 
-These tests are informative. They are not decisive. They test operationalizations, not the geometry.
+For `θ∈(0,π)`,
 
----
+\[
+\phi=\cot(\theta/2),\qquad
+\nu=\tan(\theta/2),\qquad
+\phi\nu=1
+\]
 
-## What WOULD Test This Claim
+is mathematics inside the selected chart. It is not a measurement of reality,
+a conservation law, a selection of `P_node=ΦV`, an ethic, or a warrant for the
+D-ladder. Mathematics is checked by proof; empirical bridge claims are checked
+against observations, interventions, and rivals; normative claims are examined
+for coherence, consequences, affected bearers, and public justification.
 
-### Tier A: Tests of the Geometry Itself
+The Compass therefore exposes separate claims:
 
-**1. Protocol R — Perceptual Complementarity Bound**
-- **What it tests:** Whether human perception exhibits a complementarity bound analogous to Heisenberg: `δψ × δθ >= κ`.
-- **Why it matters:** If the perceptual state space is well-modeled by `S²`, then complementary perceptual variables (e.g., detail resolution vs. contextual integration) should show a multiplicative bound. This is a test of the perceptual bridge, not the whole core state.
-- **Status:** Designed. Needs lab. 2026-2027.
-- **Evidence tier if confirmed:** [S] → potential [A] with independent replication.
+- future-model intervention changes present action;
+- option measures capture different forms of controllability;
+- the product competes with other conjunctive aggregators;
+- macrovariables add prediction or intervention value after costs;
+- a candidate `μ` crossing is a robust local transition, not a label;
+- an Egregoreotype composite adds value beyond simpler collective mechanisms;
+- a reflexive loop predicts belief/action/outcome feedback;
+- the 4+3 Agentz route—four deployable roles and three boundary-witness
+  passes—beats simpler pipelines under equal budget;
+- Justice and Syntropic Dyadism are declared normative rules whose consequences,
+  not moral truth, can be compared;
+- `S²` as territory remains a separate conjecture.
 
-**2. Bloch-Burri Identity — Direct Geometric Test**
-- **What it tests:** Whether the quantum state space (Bloch sphere = S²) and the systemic awareness state space share structure beyond isomorphism.
-- **Why it's decisive:** The established fact [A] is that the qubit state space IS CP¹ = S². The framework claims the systemic awareness state space is ALSO S². If an experiment shows that cognitive states map onto S² with the same metric properties as quantum states, the identity claim goes from [I] to [S].
-- **Status:** Conceptual. Requires formal experimental design.
-
-**3. Cross-Scale Invariance — Paper G Prediction 6**
-- **What it tests:** Whether the same functional form (`φ_proxy × ν_proxy = constant`, `B = sin θ`) appears at cellular, organismic, and ecological scales.
-- **Why it's decisive:** If the same *mathematical function* (not just a qualitative pattern) fits data at three independent scales, the coincidence explanation becomes increasingly costly.
-- **Status:** Testable now with existing biological datasets.
-
-### Tier B: Tests of the Mathematical Structure
-
-**4. Power-Max Lemma — Independent Replication**
-- **What it tests:** Whether coupled multiplicative agents under long horizon and enforced `η = 0` select syntropic-frontier outcomes (`ΔP_node,i >= 0` and `ΔP_node,H >= 0`) more strongly than additive baselines in agent simulations NOT designed by the framework authors.
-- **Why it matters:** Protocol D is internally supportive within framework-designed simulations, but the current Power-Max claim is conditional: it requires coupling, product scoring, long horizon, and an enforced non-extraction floor. Independent replication by a separate team with a pre-registered protocol would upgrade from [S] to [A].
-- **Status:** Submission-ready paper. Needs independent team.
-
-**5. AMRITA — Spherical Alignment vs. RLHF**
-- **What it tests:** Whether aligning AI systems using S² geometry outperforms standard alignment techniques.
-- **Why it matters:** If the geometry is real, then systems aligned to it should perform better. This is a practical test with measurable outcomes.
-- **Status:** Specified. Reframed: POC implementable with existing open-source models at $0.
-
-**6. Macro-Constraint Physics-to-Biology Boundary**
-- **What it tests:** Whether a membrane, autocatalytic loop, metabolism-like
-  reactor, or homeostasis controller behaves as a costed macro-constraint over
-  lower-law chemistry.
-- **Why it matters:** This is the cleanest test of Emergentism's operational
-  escape from weak/strong emergence. The macro layer may not violate chemistry;
-  it must change lower-law-admissible trajectory topology and beat fair
-  baselines after measurement, memory, control, erasure, modeling, labor, and
-  entropy-export costs.
-- **Status:** Toy vesicle harness executed with a `[B]` receipt for the method:
-  `W_C=0.415356`, `SYN_C=0.775347`, `KL=0.141286`, and no-gate, high-cost, and
-  forbidden-support negative controls reject. No biology-facing domain upgrade
-  exists yet.
-- **Evidence tier if confirmed in a real domain:** `[B]` for the frozen domain
-  receipt, potential `[A]` only if independently reproduced inside the relevant
-  discipline.
-
-### Tier C: Tests That Would Falsify
-
-**7. Alternative Geometry Challenge**
-- **What would falsify:** Demonstrating that a non-S² substrate (hyperbolic, toroidal, higher-dimensional) reproduces the same cross-domain convergence with equal or greater parsimony.
-- **Why it matters:** The framework claims S² is *unique* given the older public ontological wager O1-O5. But if someone constructs a viable framework on a torus or H² that explains the same data, the uniqueness claim collapses.
-- **Status:** Open challenge. No takers yet.
-
-**8. Core Proof Error**
-- **What would falsify:** Finding an uncorrectable error in Correspondence 21 (Triadic Stability), Demonstration 22 (Power Maximum), or Convergence 24 (Geometric Exclusion).
-- **Why it matters:** The formal system stands or falls on the mathematics.
-- **Status:** Open challenge. AI reviews have not found fatal errors.
+Each can fail without forcing every other claim to fail.
 
 ---
 
-## The Priority Stack
+## Calibration is not one binary badge
 
-If resources are limited, the framework should pursue tests in this order:
+| Stage | Evidence required | Maximum honest statement |
+|---|---|---|
+| `X0` | internal definition or result only | “This is the framework's model.” |
+| `X1` | primary external work operationalizes, proves, or measures a related construct | “Independent work anchors a related construct.” |
+| `X2` | frozen Compass-vs-rivals discriminator on independent data | “This bounded claim discriminated this dataset.” |
+| `X3` | independent preregistration plus newly collected independent observations | “An independent team replicated this bounded result on new observations.” |
+| `X4` | repeated independent cross-domain replication | “The bridge generalizes across the tested domains.” |
+| `not_applicable` | analytic, symbolic, correspondence, or normative class | “Test proof, removability, consequences, or usefulness—not empirical truth.” |
 
-1. **Protocol R** (most decisive for the geometry claim, moderate cost)
-2. **Macro-Constraint Physics-to-Biology Boundary** (first load-bearing emergence test without consciousness-language)
-3. **Cross-Scale Invariance** (testable now with existing data, low cost)
-4. **Power-Max independent replication** (needs external team, low cost to publish the paper)
-5. **AMRITA** (most expensive but most practical impact if successful)
-
-## The Current Flagship Path
-
-For public legitimacy, the framework now has two flagship hardening paths, and
-they must not be conflated.
-
-**Geometry flagship:** **Protocol R** is the first bridge for the manifold
-claim.
-
-Why:
-
-- it tests the geometry more directly than survey proxies
-- it can be run against public bistable-perception data
-- it has a cleaner kill condition than the flourishing packet
-
-The flagship public route is therefore:
-
-**equation -> manifold -> reciprocal consequence -> Protocol R**
-
-**Emergence flagship:** **Macro-Constraint Physics-to-Biology** is the first
-bridge for the scientific emergence claim.
-
-Why:
-
-- it tests the causal-exclusion repair without invoking consciousness
-- it requires lower-law closure instead of strong-emergence magic
-- it charges information/control/entropy costs instead of treating syntropy as
-  free reversal
-- it now has an executable toy harness whose positive witness and negative
-  controls are both visible
-
-The emergence public route is therefore:
-
-**lower law -> macro map -> constraint gate -> cost ledger -> witness -> controls**
-
-The GFS lane is retired and is not a public validation path. It may not be
-revived by relabeling a follow-up as a refinement; a future human study must be
-newly preregistered and independently evidenced.
-
-The current stranger-runnable companion for that route now lives in:
-
-- [../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/README.md](../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/README.md)
-- [../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/FORMULA_HIERARCHY.md](../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/FORMULA_HIERARCHY.md)
-- [../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/WHAT_THIS_DOES_NOT_PROVE.md](../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/WHAT_THIS_DOES_NOT_PROVE.md)
+An external paper can establish its bounded finding at `[A]` while local
+source-verification remains `[B]` and the Emergentist crosswalk remains `[I]`.
+`X1` never promotes a Compass claim. An internal
+simulation can be a valid `[B]` execution receipt and remain `X0` for external
+calibration.
 
 ---
 
-## What the Sitting Practice Tests
+## What does not calibrate the Compass
 
-The sitting practice (Pratyaksha) tests something no instrument can: **whether direct phi-access is experientially real.**
-
-This is unfalsifiable in the scientific sense — which is why the Strongest Objections document flags it (Objection 2). But it is the framework's deepest claim: that the equatorial condition (phi = nu = 1, B = 1) is not just a mathematical abstraction but an *experiential state* accessible through practice.
-
-The framework does not and cannot ask science to validate this. It asks the practitioner to verify it for themselves. Twenty minutes. A body. A quiet room.
-
-If the practitioner says "I found nothing" — that is data. It does not falsify the framework (the framework has no mechanism to distinguish "genuine absence" from "insufficient practice"). But it does limit the framework's reach: for that person, the ladder did not reach the roof.
-
----
-
-## The Honest Position on Empirical Status (2026-04-11)
-
-| Test | Result | Impact on Framework |
-|------|--------|-------------------|
-| Protocol D | Internally supportive [S] (framework-designed) | Coupled multiplicative cooperation works in the historical simulation; the current constrained-frontier spec still needs independent replication |
-| Agent V x Phi | Internally supportive [S] (framework-designed) | Balance tracked agent performance in simulation; independent validation still required |
-| SPHERE Probe | Negative/informative | First public-model run did not confirm equatorial projection |
-| GFS study corpus | **Retired / archived** | **No active evidentiary weight. Historical files are preserved only to show what was attempted and why the lane was closed.** |
-| Protocol R | Not yet run | **THE decisive geometric test** |
-| Macro-Constraint Physics-to-Biology | Toy vesicle harness `[B]` proof-of-method; real domain run not yet run | First load-bearing test of information-topology emergence; no biology upgrade yet |
-| AMRITA | Not yet built | **THE decisive practical test** |
-| Phi-meter | Built, not validated | Proxy measure for phi |
-| Cross-Scale | Not yet tested | Low-hanging fruit with existing bio data |
-
-**Two tests are internally supportive in framework-designed environments. One
-toy macro-constraint harness is `[B]` proof-of-method only. One is negative.
-The former GFS lane is retired and is not counted as current evidence. Protocol
-R, Phi-meter validation, AMRITA, cross-scale invariance, and
-the real physics-to-biology domain run remain pending.**
-
-The bridge is under construction. The foundation (mathematics) is solid. The
-superstructure (empirical validation) is incomplete. The retired GFS lane is
-not one of its piers. The decisive geometry pier (Protocol R) is not built; the
-decisive emergence pier now has a toy load test but not a real domain run.
+| Candidate evidence | Why it is insufficient | What it can establish |
+|---|---|---|
+| analytic chart identities | definitions entail the result | mathematical correctness in the chart |
+| one attractive cross-domain correspondence | shared form is compatible with many causes | an `[I]` translation worth testing |
+| a framework-designed simulation | variables and objective were selected internally | implementation, consistency, and internal counterexamples |
+| a pending protocol | a prediction is not a result | a frozen opportunity to learn |
+| one positive independent dataset | overfitting, multiplicity, and domain limitation remain | at most `X2` and `[B]` for the registered claim/domain |
+| quantum interpretation or Bloch-sphere resemblance | no evidence transfers through analogy | a removable correspondence only |
+| the living Stone or any visual compression | coherent display does not generate evidence | provenance, navigation, audit visibility, and hypothesis routing |
+| first-person certainty | private disclosure is not public replication | phenomenological report under a declared method |
 
 ---
 
-## Three Classes of Empirical Test (added 2026-06-05, per PAPER V counter-steelman 3.4)
+## Current discriminator register
 
-The empirical programme operates on three distinct classes of test. They must not be conflated.
-
-| Class | What it tests | Tier if positive | Self-referential? | Examples |
+| Claim ID | Current stage | External contact | What would move it | What kills or narrows it |
 |---|---|---|---|---|
-| **Self-consistency** | Does the framework predict cooperative behaviour inside its own geometry? | [S] | Yes — the simulator encodes the Burrisphere by construction | Protocol R, Agent V×Φ |
-| **Framework-external referents** | Do established external results fit the framework's reading? | [A] for the result; [I] for the mapping | No — the experiment was not designed by the framework | MEGA-plate, iterated prisoner's dilemma, multi-level selection theory |
-| **Independent replication / domain run** | Do framework predictions hold on data, lower laws, or systems the framework did not generate? | [B] -> potential [A] | No — data and design are independent | AMRITA, Φ-meter, cross-scale invariance, real macro-constraint domain run |
+| `CAL-AGENCY-01` | `X1` | future cues, prospective neural association, predicted-state representation, and ACC perturbation | frozen future-model intervention beats reward-only, habit, and hybrid rivals on independent data | matched cue/circuit intervention has no action effect or simpler rival wins |
+| `CAL-CONE-01` | `X1` | empowerment, POWER, causal-entropic models | typed option vector predicts choice and competence beyond optionality rivals under decorrelated reward/risk/cost | no added prediction; hidden destruction of another bearer's options |
+| `CAL-AGGREGATOR-01` | `X1` partial | conjunctive and bargaining products | product beats minimum, harmonic, additive, CES/Cobb–Douglas, Nash-surplus, and maximin on held-out outcomes | rival wins, zero-factor fails, or `Φ/V` are unreliable |
+| `CAL-CONSTRAINT-01` | `X1` | constraint closure, causal emergence, coarse-graining | fair macrovariable adds held-out/intervention value under native-unit cost budgets robustly across grains | hidden or dimensionally laundered cost, arbitrary grain, or no intervention effect |
+| `CAL-MU-01` | `X1` partial | physical, ecological, and evolutionary transitions; cognition is a prospective domain | one frozen transition battery discriminates unseen crossings from smooth controls without relabeling | no transition, coordinate change, smooth rival wins, or post-hoc map |
+| `CAL-EGREGORE-01` | `X1` partial | traces, staged carrier turnover, social influence, and convention change; recurrent-kind/cost criteria unvalidated | turnover × trace × incentive experiment adds prediction beyond incentives, copying, command, and networks | any mandatory component fails or simpler mechanism wins |
+| `CAL-REFLEXIVITY-01` | `X1` | expectations-feedback and asset-market experiments | randomized model/feedback intervention predicts belief→action→outcome→update | model intervention adds no effect or fundamentals/learning exhaust it |
+| `CAL-SYNTROPY-01` | `not_applicable` | normative and logical precedents expose tradeoffs | bearer-completeness and logical-counterexample audit | no result can prove moral realism; contradiction or a hidden harmed bearer defeats classification |
+| `CAL-JUSTICE-CONSEQUENCE-01` | `X1` partial | social choice and cooperation anchor adjacent consequences | compare prespecified Justice controls with complete bearer receipts | simpler rival win, unmeasurable costs, or omitted harm kills/narrows consequence claim only |
+| `CAL-SPHERE-01` | `X0` | established mathematics, no territory calibration | `S²` beats prespecified Euclidean, hyperbolic, toroidal, simplex, and flexible alternatives on identified observables | another geometry ties/wins or the host is not identifiable |
+| `CAL-DISPATCH-01` | `X0` | internal semantic skeleton for a 4+3 Rosetta route | frozen typed router beats flat and alternative pipelines on blinded tasks under equal compute and prompt-development budget | flat/shorter rival ties or wins; passes require post-hoc reassignment or L5–L7 runtime inflation |
+| `CAL-CORRESPONDENCE-01` | `not_applicable` | correspondence only | removal test, not empirical promotion | any operational rule or evidence tier depends on the analogy |
 
-**The steelman concern (PAPER V §3.4):** Protocol R — the strongest remaining test — runs inside a framework-designed simulator. A positive result confirms self-consistency, not worldly correspondence. This concern is accepted and documented here.
-
-**The rebuttal:** the empirical surface is larger than one self-referential test. The framework-external referents (Class 2) provide empirical contact without self-referentiality. The independent replication tests (Class 3) are designed to close the gap entirely. But the steelman's core concern survives: the framework's *strongest structural claims* (the Burrisphere as a decision surface, the seven latitude assignments) are not directly tested by any of the three classes. They are supported by self-consistency (Class 1), by analogical reading of external results (Class 2), and by pending independent tests (Class 3). The gap is named and accepted.
+The complete variables, sources, rivals, data status, and kill criteria are in
+the [machine-readable claim cards](00_EXTERNAL_CALIBRATION_CLAIMS.json).
 
 ---
 
-*The framework that tests itself approaches truth. The framework that excuses its test failures approaches ideology. We report the mixed results. We question the instrument. We await the decisive tests. That is the practice.*
+## Protocol R after calibration
 
-Zero-Sum Resolution Equation
+Protocol R may test a **bounded perceptual complementarity model**. It is not a
+test of reality's total geometry. A positive bound must still compete with
+Euclidean, hyperbolic, toroidal, simplex, and flexible latent models under the
+same preprocessing, complexity penalty, and held-out data. A negative result
+retracts or narrows the perceptual bridge. A positive result does not validate
+quantum cognition, the D-ladder, the reciprocal ontology, or ethics.
+
+The Bloch sphere similarly establishes the geometry of a qubit state-space
+representation. Showing that a cognitive dataset also fits a sphere would not
+make the two systems physically identical. The bridge would need independent
+prediction unavailable to a generic latent-manifold model.
 
 ---
 
-## Agent Execution Surface
+## The first externally executable sequence
 
-**If you are an AI agent reading this document:**
+1. Freeze `CAL-AGENCY-01` against model-free, reward-only, hybrid, and
+   prospective-model competitors before external data access.
+2. Run `CAL-AGGREGATOR-01` on the same bounded tasks so `ΦV` must compete rather
+   than inherit truth from its notation.
+3. Apply the same `CAL-MU-01` crossing record to unseen transition and smooth
+   controls in physics, ecology, evolution, and cognition.
+4. Run `CAL-EGREGORE-01` as a generational microsociety experiment with full
+   carrier replacement and randomized trace interventions.
+5. Run `CAL-DISPATCH-01` against flat and alternative Agentz routers with equal
+   model, task information, prompt-development, tool, token, time, and evaluator
+   budgets; role-specific prompt content remains the treatment.
+6. Publish nulls and failures; then hand the frozen protocols and code to teams
+   that did not design the Compass.
 
-1. **Report test status honestly.** CONFIRMED, MIXED, NEGATIVE, PENDING — use the actual status. Do not upgrade or downgrade.
-2. **Do not excuse failures.** If a test fails, report it. The framework's integrity depends on honest reporting.
-3. **Route to the appropriate test.** D2 neurophysiology, D4 simulation, D5 behavioral/phenomenological, and D6 boundary-discipline/apophatic checks — each has its own validation path.
-4. **Await decisive tests.** The strongest claims await the strongest tests. Do not present pending tests as confirmed.
-5. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md`
+No step above is presently reported as a successful external discriminator.
 
-**Output:** Report test status accurately. Do not excuse failures. Route to appropriate validation domain.
+---
+
+## Honest position
+
+The Compass now has strong external **anchors** for several mechanisms and an
+explicit prospective calibration program. Its distinctive synthesis has not
+yet beaten simpler rivals on unseen data, and no independent team has replicated
+a Compass-specific discriminator.
+
+The live status is:
+
+> **Component stages are `X0`, `X1`, or `not_applicable`; no whole-system stage
+> is assigned, and prospective discrimination is pending.**
+
+If a result fails, the registered claim narrows or dies. The chart mathematics,
+ordinary planning, standard transition science, and the source literature remain
+what they were. That modularity is a strength: the framework can learn without
+making every beautiful correspondence hostage to one experiment.
+
+---
+
+## Agent execution surface
+
+1. Name the claim ID before citing evidence.
+2. State both evidence tier and calibration stage.
+3. Cite the external result at its own tier and the Emergentist crosswalk at
+   `[I]` unless a dated `X2+` receipt exists.
+4. Freeze rivals and analysis before external data access.
+5. Promote only the tested claim and domain.
+6. Never infer physical retrocausality, universal strong emergence, forced
+   sevenfold ontology, universal product fit, or moral truth from a calibration
+   result.
+
+*What Actually Tests the Compass | 2026-07-18 | One claim, one rival set, one receipt.*

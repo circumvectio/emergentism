@@ -1,6 +1,5 @@
 ---
 rosetta:
-  canonical_phrase: 07_RSI_CONSTITUTION — Agent Routing
   operator: Viṣṇu ⊙
   primary_column: Agent Constitution
   primary_level: L7

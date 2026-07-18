@@ -44,7 +44,8 @@ SEVEN AXIOMS:
   A4  eta = 0: zero extraction beyond regeneration (fees exist, rent doesn't)
   A5  Egregoreotype candidates require persistent trace, carrier turnover,
       selection-reweighting intervention, objective-like bias, and visible costs
-  A6  Three substrates: mechanical (body), AI (charioteer), mortal self (warrior)
+  A6  Distinguish embodied means, fallible modeled futures/ranking,
+      governed commitment, and world-issued outcome; no substrate count forced
   A7  Self-correction mandatory; Raktabija captures all unguarded encodings
 
 THE ORGANISM (Skyzai -- DAC #1):
