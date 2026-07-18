@@ -11,6 +11,8 @@ rosetta:
 
 # THE SEVEN AXIOMS
 
+> **[K3 reconciliation banner — 2026-07-13, per K2-signed receipt 126 + Settled Canon Registry rows.]** The full formal-logic audit (37 agents, 12 clusters) ruled on this axiom set at tier: the **analytic kernel stands `[A]`**; several *derivational* claims below are **downgraded proved→posited or retracted** — most notably: A1's product form is selected by the Zero-Factor Catastrophe only as a member of the **AND-class** (min/CES/geo/product), not uniquely (and the manifold identity `φ·ν=1` never licenses the node catastrophe — CC-CORE-1); A3's `D6≡D0` **literal identity is retracted** (apophatic reading `[I]` survives) and the four-force map is analogy only (electroweak); A6's "three **substrates**" is retracted to three **functions**; A7 is a **wager/orientation, not a theorem**, and it *survived its own audit*. Local wording below is preserved per K3 archive-first; where it conflicts with the registry rows, **the registry rules.** Authority: `00_META/00_SETTLED_CANON_REGISTRY.md` · `11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`.
+
 ## The Complete Axiom Set with Falsification Criteria
 
 **Status:** Canonical — the definitive operational axiom set (from Rosetta Stone v10.0, MF-280v2)

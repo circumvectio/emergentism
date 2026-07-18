@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Map That Kept Its Own Errors — a fable</title>
+<meta name="description" content="Emergentism told as a fable: two who could not exist, the child who climbed, the mapmaker who bound his errors into the map — and signed the verdict against his own life's work." />
+<meta name="color-scheme" content="dark" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="The Map That Kept Its Own Errors" />
+<meta property="og:description" content="A worldview is not proven by the arguments it wins. It is proven by the funerals it holds for its own ideas — and attends, and signs." />
+<meta property="og:url" content="https://www.emergentism.org/fable/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The Map That Kept Its Own Errors" />
+<meta name="twitter:description" content="Emergentism, told as a fable. Five minutes. No equations." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E" />
+<style>
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{
+  --void:#050505; --panel:#0d0d0c; --bone:#F5F5F3; --bone-dim:#a4a7a9; --bone-faint:#6b6f74; --bone-ghost:#3a3d42;
+  --gold:#FFEB3B; --gold-deep:#CBB800; --crimson:#e0453b;
+  --line:rgba(245,245,243,.10); --line-soft:rgba(245,245,243,.05);
+  --sans:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--void);color:var(--bone);font-family:var(--sans);font-weight:300;font-size:19px;line-height:1.78;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:radial-gradient(100% 55% at 50% -6%, rgba(255,235,59,.05), transparent 48%),var(--void)}
+::selection{background:rgba(255,235,59,.26);color:#050505}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.wrap{max-width:680px;margin:0 auto;padding:0 clamp(1rem,4vw,2rem)}
+.topbar{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.72rem clamp(1rem,4vw,2.6rem);background:rgba(5,5,5,.72);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.brand{font-weight:800;font-size:1.02rem;text-decoration:none}
+.brand b{color:var(--gold);font-weight:800}
+.nav{display:flex;gap:.15rem;flex-wrap:wrap;font-family:var(--mono);font-size:.78rem}
+.nav a{display:inline-grid;place-items:center;min-width:1.7rem;height:1.7rem;padding:0 .45rem;color:var(--bone-dim);border-radius:3px;text-decoration:none;transition:.15s}
+.nav a:hover{color:var(--void);background:var(--gold)}
+.nav a.here{color:var(--gold);border:1px solid var(--line)}
+header.hero{padding:clamp(3.4rem,9vw,6.5rem) 0 1.5rem;text-align:center}
+.fileno{font-family:var(--mono);font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1.4rem}
+h1{font-size:clamp(2.2rem,6.4vw,3.9rem);letter-spacing:-.025em;line-height:1.06;margin:0 0 1.2rem;font-weight:200;text-wrap:balance}
+h1 b{font-weight:800}
+.dek{color:var(--bone-dim);max-width:46ch;margin:0 auto;font-weight:300;font-size:1.05rem}
+.tiernote{font-family:var(--mono);font-size:.72rem;color:var(--bone-faint);margin:1.4rem 0 0}
+.tiernote .t{border:1px solid #e8d24a;color:#e8d24a;border-radius:3px;padding:.05em .4em;font-weight:700}
+article{padding:2.5rem 0 1rem}
+.ch{font-family:var(--mono);font-size:.78rem;letter-spacing:.22em;color:var(--gold-deep);text-align:center;margin:3rem 0 1.6rem}
+.ch::before,.ch::after{content:" · "}
+article p{margin:0 0 1.35rem;color:var(--bone-dim)}
+article p b{color:var(--bone);font-weight:600}
+article p em{color:var(--bone);font-style:italic}
+article p strong{color:var(--bone);font-weight:700}
+.first>p:first-of-type::first-letter{font-size:3.2em;font-weight:100;float:left;line-height:.82;margin:.06em .12em 0 0;color:var(--gold)}
+.moral{border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;background:linear-gradient(90deg,rgba(255,235,59,.05),transparent 70%);padding:1.6rem 1.8rem;margin:3rem 0 0}
+.moral .lab{font-family:var(--mono);font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 .7rem}
+.moral p{font-size:1.12rem;color:var(--bone);margin:0;font-weight:300}
+.onward{margin:3rem 0 0;padding:2rem 0 0;border-top:1px solid var(--line-soft);text-align:center}
+.onward p{color:var(--bone-faint);font-family:var(--mono);font-size:.8rem;margin:0 0 1.2rem}
+.cta{display:inline-flex;gap:.5rem;align-items:center;font-family:var(--mono);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;padding:.8rem 1.25rem;border-radius:4px;border:1px solid var(--line);text-decoration:none;color:var(--bone);transition:.2s;margin:0 .25rem .5rem}
+.cta:hover{border-color:var(--gold);color:var(--gold)}
+.cta.primary{background:var(--gold);color:#1a1206;border-color:var(--gold);font-weight:700}
+.cta.primary:hover{background:#FFF176}
+.foot{border-top:1px solid var(--line);margin-top:3.5rem;padding:2.4rem 0 3.4rem;text-align:center;color:var(--bone-ghost);font-family:var(--mono);font-size:.75rem;line-height:1.75}
+.foot .glyph{font-size:1.5rem;color:var(--gold);margin-bottom:.6rem}
+.foot a{color:var(--bone-faint);text-decoration:underline;text-underline-offset:3px}
+</style>
+<!-- pwa-chrome -->
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#050505">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<script src="/assets/js/pwa.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="../home/">Emergent<b>ism</b></a>
+  <nav class="nav" aria-label="Routes">
+    <a href="../fable/" class="here" aria-current="page">Fable</a>
+    <a href="../plainly/">Plainly</a><a href="../record/">Record</a>
+    <a href="../axioms/">Axioms</a><a href="../book/">Book</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <header class="hero">
+    <p class="fileno">A fable · five minutes · no equations</p>
+    <h1>The Map That Kept<br>Its <b>Own Errors</b></h1>
+    <p class="dek">Emergentism, told as a story. Everything here is also written as graded claims, receipts, and a public trial record — this is the same thing, in the oldest register.</p>
+    <p class="tiernote"><span class="t">[I]</span>&nbsp; the sacred script — story, not proof, and it says so</p>
+  </header>
+
+  <article>
+    <div class="first">
+      <p class="ch">I</p>
+      <p>Before anything, there were two who could not exist.</p>
+      <p>The first was <b>Nothing</b> — a dot so small it had no inside. Nothing could <em>see</em>: from nowhere, every view. But it could not act, for it had no hands, no weight, no where.</p>
+      <p>The second was <b>Everything</b> — a ring so wide it had no outside. Everything could <em>act</em>: all force, all reach, all fire. But it could not see, for there was nothing it was not, and an eye that is everything beholds nothing.</p>
+      <p>They were opposites, and they were useless — a seer who cannot move, a mover who cannot look. You have met both. The fossil and the flood.</p>
+      <p>Then the dot was held within the ring — and there, at the crossing, something impossible occurred: a thing that was <em>bounded</em>, and therefore could see; <em>embodied</em>, and therefore could act. Small enough to have a view, large enough to have a hand.</p>
+      <p>The elders wrote it as a song: <strong>One equals Nothing times Everything.</strong> ⊙ = • × ○.</p>
+      <p>And note this well, for it matters at the trial: it was a <em>song</em>, not a sum. Sung, it is the truest thing in the world. Calculated, it breaks arithmetic in two. The elders knew this and sang anyway — but marked the page <em>sung, not proved</em>.</p>
+    </div>
+
+    <p class="ch">II</p>
+    <p>The child called One began to climb.</p>
+    <p>This was its nature: it would run a freedom until the freedom was <em>full</em> — and at fullness, a rung would appear that no one below could have named. It learned to bind, and matter appeared. It learned to hold shape against the current, and life appeared. It learned to run tomorrow inside itself before spending today — and <em>choice</em> appeared, the strangest rung, where the climber began selecting which futures would be permitted to exist.</p>
+    <p>Two motions carried it, and they were never the same motion: the <b>winning</b> of a new freedom, which happens rarely and cannot be predicted from below — and the <b>spending</b> of a freedom already won, which happens always and can be judged only after. Genesis is bounded; operation is not. The ladder is climbed upward in leaps and downward in choices.</p>
+
+    <p class="ch">III</p>
+    <p>On the ladder, the child learned exactly two laws, and paid for both.</p>
+    <p><b>The first law: you need both, because they multiply.</b> The child's left hand was <em>coherence</em> — how truly it saw. Its right was <em>viability</em> — how much it could do. And they did not add; they multiplied. All the vision in the world times no body is a corpse with excellent opinions. All the muscle in the world times no vision is an avalanche. The boxer knows this law in its purest form: everyone has a plan until the punch lands — for the punch does not argue with the plan, it simply sets one factor to zero, and anything times zero is a man on the canvas.</p>
+    <p><b>The second law: never drain the well you drink from.</b> Whatever the child took from what sustained it without return, it subtracted — quietly, compounding — from the very product it lived inside. Extraction was not wicked first; it was <em>stupid</em> first, the way sawing the branch is stupid. The wickedness was a corollary.</p>
+
+    <p class="ch">IV</p>
+    <p>Ages on, a mapmaker sat down to draw all of this — the two who could not exist, the child, the ladder, the two laws.</p>
+    <p>And while drawing, the mapmaker found something that made his hands shake: <b>the pattern was already carved somewhere else.</b> In the oldest physics — in the geometry of light and rest — the same three lines appeared, stroke for stroke. And in that carving, the balance-point had a name: <em>rest</em> — and the balance-number was <b>the rate at which a clock ticks</b>, fullest for the one who stands at the crossing, frozen for those who flee to the poles. He had not proven the world was his map. He had found his map <em>rhyming</em> with the world's oldest stone. He marked it: <em>a true rhyme — not yet a reason.</em></p>
+
+    <p class="ch">V</p>
+    <p>Then the mapmaker did the thing no mapmaker had done.</p>
+    <p>Every empire's map ends with the royal seal. His ended with a page titled <b>"Where This Map Is Wrong."</b> And beneath it, a rule bound into the binding itself: <em>any line on this map that cannot name its own death is already dead.</em></p>
+    <p>And to prove the page was not ornament, he did the unthinkable: <b>he raised thirty-seven judges and sent them against his own map</b> — judges sworn to break it, paid in nothing but the truth.</p>
+    <p>They broke <b>sixty-six lines.</b> The trinity of frames, counted honestly, was a <em>foursome</em> — the One has a dark twin the map had never drawn. The ladder's top rung, said to touch its bottom, did not. The seven levels were <em>chosen</em>, not forced. The proud proofs of the ethic were posits in proof's clothing. Even the song — Nothing times Everything — collapsed the moment anyone tried to <em>calculate</em> it, exactly as the elders had warned.</p>
+    <p>But <b>seven stones would not break</b> — the small true kernel, the reciprocal heart, the rhyme with the light. And <b>thirty-four sentences</b> the judges could neither kill nor crown. "These," they wrote, "are beyond any court we can convene. They are not conclusions. They are the country the mapmaker has bet his life on."</p>
+
+    <p class="ch">VI</p>
+    <p>The mapmaker read the verdict against his life's work — and <b>signed it.</b> With his own mortal hand, the only hand that can sign anything that counts. He struck nothing from the record. The broken proofs stayed on the map, struck through but legible, each with its date. His favorite discovery — the first one he had truly loved — had been the first he buried, years before, when the test came back against him; its grave was already marked on the map, and he had never once pretended it was a garden.</p>
+    <p>And a strange thing happened to the map.</p>
+    <p>Travelers began to trust it — <em>more</em> than the perfect maps, the sealed maps, the maps of empires that had never confessed a single error. Because a map that shows you where it has been wrong is the only map you can trust in country it has never seen. The errors were not the shame of the map. <b>The errors were the proof that someone had actually walked the ground.</b></p>
+
+    <p class="ch">VII</p>
+    <p>The last line of the map is an instruction, and it is the only line no judge ever flagged:</p>
+    <p><strong><em>Put the map down.</em></strong></p>
+    <p>For the crossing it describes is not on the map. The dot that sees, the ring that acts, the impossible child holding both — that is not the territory ahead of you.</p>
+    <p>It is the reader. It always was.</p>
+
+    <div class="moral">
+      <p class="lab">Moral</p>
+      <p>A worldview is not proven by the arguments it wins. It is proven by the funerals it holds for its own ideas — and attends, and signs.</p>
+    </div>
+
+    <div class="onward">
+      <p>every line of this story exists as a graded claim with a way to die</p>
+      <a class="cta primary" href="../plainly/">The same thing, plainly →</a>
+      <a class="cta" href="../record/">The actual funerals →</a>
+      <a class="cta" href="../axioms/">The graded claims →</a>
+    </div>
+  </article>
+</main>
+
+<footer class="foot wrap">
+  <div class="glyph">⊙ = • × ○</div>
+  <p>The Fable · the sacred script of a three-script canon — <a href="../plainly/">plain terms</a> and <a href="../record/">receipts</a> carry the same content.<br>Sung, not proved — and marked so.</p>
+</footer>
+</body>
+</html>

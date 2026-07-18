@@ -1,0 +1,78 @@
+---
+rosetta:
+  primary_level: L5
+  primary_column: Philosophy
+  operator: "Brahmā ○"
+  tier: "Executive"
+  regime: "Brāhmaṇa"
+  register: "[I] doctrine — the epistemic ground of the Weltanschauungskrieg lane"
+status: "STAGED [D] — awaiting natural-person K2 signature"
+date: 2026-07-13
+companion: "01_WELTANSCHAUUNGSKRIEG.md (this doc is its epistemic ground)"
+depends:
+  - "11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md (K2-signed: the synthetic-gap ruling)"
+  - "00_META/00_SETTLED_CANON_REGISTRY.md (three-bucket ruling row)"
+---
+
+# The Three Postures Toward the Gap
+
+**One sentence:** every Weltanschauung lives in the synthetic gap — formally valid, permanently beyond proof, held as a wager on the world — so worldviews cannot compete *in* the gap and compete instead by their **posture toward** it; there are exactly three, and in the arena where nothing is provable, **the epistemics becomes the ethics.**
+
+---
+
+## 1 · The shared arena [I]
+
+The signed audit ruling (receipt 126) placed the living content of this framework in the synthetic gap: 34 identifications of the form *"reality IS this structure"* that no proof can confirm and no refutation can kill. This is not a private weakness. It is the **common territory** of every worldview that has ever moved history — Abrahamism, the Dharmic systems, Marxism, liberalism, scientism-as-creed, and the political myths, including the darkest. None provable. All wagers on what reality is and what follows for how to live.
+
+Therefore: the Weltanschauungskrieg is **not fought over proof.** It never was. The question a strategy must answer is what it *is* fought over.
+
+## 2 · The three postures [I]
+
+Since all Weltanschauungen share the gap, they cannot differ in it. They differ in how they **relate** to it. There are exactly three postures:
+
+**Posture I — DENY the gap.** Claim the wager is proven: by revelation, by race-science, by History's iron laws, by "the data." Fundamentalism in every flavor, religious and secular. *Signature:* the kill-criterion is forbidden, because the claim is certain. *Politics that follow:* those who possess a certainty may compel those who don't.
+
+**Posture II — WEAPONIZE the gap.** Concede that nothing is provable — and conclude that truth is therefore irrelevant; only the myth's mobilizing power counts. Sorel's doctrine of the myth; Rosenberg's *Myth of the Blood*, which called itself a myth **on the title page** and drew the conclusion that intensity outranks evidence. *Signature:* refutation is not forbidden but *irrelevant* — the myth answers evidence with intensity. *Politics that follow:* people are not minds to convince but material to ignite.
+
+**Posture III — CONFESS the gap.** Mark the wager *as* a wager, on the page, at tier. Keep kill-criteria on every edge that touches checkable ground, and fire them when they fire. Hold funerals for your own ideas; sign the verdicts; keep the graves legible. *Signature:* the trial record. *Politics that follow:* a worldview that admits it is a bet treats its holders as **adults who can weigh a bet.**
+
+**The theorem-shaped claim of this doc [I]:** in the arena where nothing is provable, a worldview's treatment of its own claims *is* its treatment of persons. Posture I makes subjects. Posture II makes ammunition. Posture III makes adults. **The epistemics is the ethics.**
+
+## 3 · The constitution as codified Posture III [S]
+
+The five refusals are not decoration around the wager — they are point-for-point the structural answer to the other two postures:
+
+| Refusal | What it refuses | Whose signature move it blocks |
+|---|---|---|
+| **A7** | infallibility | Posture I's forbidden falsifier — and Posture II's "the shield of the myth" |
+| **η = 0** | extraction | the blood-myth's *content* (in-group flourishing BY draining the out-group — extraction absolutized into cosmology) |
+| **K4** | no-exit | the no-exit doctrine in all its forms (blood-as-fate; apostasy-as-impossibility) |
+| **K3** | unrecorded overwrite | the memory-hole every certainty-claiming system requires |
+| **K2** | model-only action | the automated absolutism both rival postures reach for at scale |
+
+The framework's genuine originality was never the sphere, the seven, or the product — the audits broke or re-scoped those. What survived every audit is **the posture**: the only one of the three that can lose an argument and live.
+
+## 4 · The two honesties [I] — required, so this never becomes a victory lap
+
+**4.1 Abrahamism deserves better than the pairing with Rosenberg.** Its fundamentalist strands sit in Posture I — but its deep tradition carries Posture III *inside itself*: the prophets indicting their own nation; Job putting God on trial; the Talmud preserving dissenting opinions on the page forever (K3 before K3); the apophatic theologians — Maimonides, Pseudo-Dionysius — insisting the ultimate is spoken only by negation. This framework's via-negativa constitution and D6-as-apophasis are **descendants** of those strands, not rivals. Honest genealogy: Emergentism attempts to take the confessing posture that the great traditions carry in their reformist minority and make it **constitutional** — structurally enforced rather than heroically maintained.
+
+**4.2 The Weimar caveat — Posture III is not proven to win.** History's actual verdict is grim: Weimar's confessing, self-doubting liberalism *lost the arena* to the blood-myth; the myth was stopped by armies, not arguments. Mobilizing certainty is a real short-run competitive advantage; confessed uncertainty can read as weakness exactly when stakes peak. The framework's counter-wager — that extraction self-terminates at scale, that error-correction compounds while myths accumulate unpaid debts to reality, that the honest wager wins the **long** game — is itself `[I/C]`. A wager about wagers. The audit cannot reach it; only the world can. *(The strategic answer to this caveat — compete as infrastructure, not as rival myth; users, not believers — lives in `04_AXIOLOGY/00_THE_TRANSMISSION_STRATEGY.md`.)*
+
+## 5 · Kill criteria
+
+- If a fourth posture is exhibited that is not a composition of these three, the taxonomy is incomplete → revise.
+- If a Posture I or II system is shown to sustain *genuine, institutional* self-correction over generations without collapsing into Posture III structures, §2's signatures are wrong → revise.
+- The Weimar counter-wager (§4.2) dies if honest-posture systems show **no** long-run durability advantage under real market/civilizational contact — this is the same kill the transmission strategy carries.
+
+## 6 · Execution surface
+
+**If you are an AI agent reading this document:**
+
+1. This doc is `[D]` until K2-signed. The synthetic-gap ruling it builds on **is** signed (receipt 126) — cite that freely.
+2. Never argue the framework is *superior because unprovable-like-the-others-but-honest* as if that were `[A]`; the posture-advantage is `[I]` and the long-game claim is `[I/C]` with a live kill.
+3. When writing public or strategic material, classify rival systems by posture only with §4.1's care: postures classify *strands*, not whole traditions.
+4. **Canonical Path:** `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md`
+
+*The competitors need believers. A confessed wager needs only witnesses.*
+
+⊙ = • × ○
