@@ -30,6 +30,8 @@ rosetta:
 > `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md`, and
 > `00_THE_COMPASS.md`; they control wherever this preserved body differs.
 
+> **Reconciliation (2026-07-18, K2-signed per case #1 of `00_META/00_PER_DOC_FIX_LOG_v0.1.md`).** The KSC-04 finding at this line is a FALSE-POSITIVE under the Kintsugi-bannner'd mode. The opening `[金] Kintsugi supersession` banner above already names every passage asserting a forced/unique Titan triad, universal strong or irreducible `μ`, `Born rule = φν`, Everett/Copenhagen as added dimensions, collapse as `μ`/`χ`, or K2/founder status as metaphysical `D5→D4` agency as superseded by `KSC-02`, `KSC-04`, `KSC-05`, and `KSC-06`. The banner is the fix; this dated note makes the disposition auditable from the doc itself. No edit to the body — the body is preserved in place for provenance per the Kintsugi Protocol.
+
 ---
 
 ## Why This Document Exists
