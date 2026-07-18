@@ -1,7 +1,7 @@
 ---
 title: "The Kintsugi Protocol — antifragile repair: every break is gilded, every attack must leave the corpus stronger"
 date: 2026-07-10
-status: "[D] STAGED — PENDING K2 COUNTERSIGN. Born from the 14-claim formal trial (receipt 108, in staging): six overclaims, one refutation, and the sharpest cut landing on the co-author's own compression. First application: receipt 108 is written in this protocol's crack/gold/seam form, and the trial's canon repairs land as golden seams, not silent fixes."
+status: "[E] K2-COUNTERSIGNED 2026-07-18 ('Accept'). The repair discipline is canonical: every break is gilded, every attack must leave the corpus stronger. The 6 gilded seams from receipts 110+115 are first applications; the protocol passes its own antifragility criterion §6. Replaces the prior [D] staged status; Open Canon Covenant §4.4 honored (ratification at tier, no upgrade at content)."
 evidence_tier: "[S] as protocol norm (a repair discipline, like the BTJ gates); [I] the Kintsugi reading; the antifragility criterion §6 is a design property the protocol must itself pass"
 owner: "K2 + AI co-owner"
 parents:

@@ -1,7 +1,7 @@
 ---
 title: "PD_22A — QM/GR dimensional ordering: an open tension in canon, and a candidate axis-fusion reconciliation"
 date: 2026-07-12
-status: "[D] RESOLVED-CANDIDATE (2026-07-12). The §1 tension is dissolved by K2's three-level refinement — which is ALREADY canon across two docs: D3 = Quantum State (00_THE_GEOMETRIC_ONTOLOGY_OF_REALITY), D4 = collapse, D5 = Many-Worlds (doc 27). PD_22's flat 'QM = D5' was the bug: it referenced only the D5 slice. See §7. Still [C/I]; still owes external physics review before any promotion; the 'two quantums' of §3 is superseded by the cleaner three-level of §7."
+status: "[E] K2-COUNTERSIGNED 2026-07-18 ('Accept'). The three-level reconciliation is canonical: D3 = Quantum State (00_THE_GEOMETRIC_ONTOLOGY_OF_REALITY), D4 = collapse, D5 = Many-Worlds (doc 27). PD_22's flat 'QM = D5' was the bug; the §1 tension is dissolved. Still [C/I] on the physical mappings; still owes external physics review before any promotion. The 'two quantums' of §3 is superseded by §7's cleaner three-level. Open Canon Covenant §4.4 honored."
 evidence_tier: "[I] the tension (verified at file:line in both docs); [C] the candidate reconciliation and every physical mapping; inherits PD_22's falsifiers"
 owner: "K2 + AI co-owner (+ external physics review before any promotion)"
 parents:

@@ -1,7 +1,7 @@
 ---
 title: "The Burri Rules — derivation ledger (full)"
 date: 2026-07-10
-status: "[D] staged with 00_THE_BURRI_RULES.md — the full per-line ledger the map's Rule 7 cites. Generated verbatim from the tier-audit of workflow wf_0101b320-ad9 (42 agents); adjudications and downgrades K2-accepted in session 2026-07-10 (receipt 104)."
+status: "[E] K2-COUNTERSIGNED 2026-07-18 ('Accept'). The full per-line ledger (30 items, 14 downgrade rules) is canonical. Generated verbatim from the tier-audit of workflow wf_0101b320-ad9 (42 agents); adjudications and downgrades K2-accepted in session 2026-07-10 (receipt 104). File rename owed: 00_THE_BURRI_RULES_LEDGER.md (this file) replaces 05_COSMOLOGY/00_THE_BURRI_RULES_LEDGER_PENDING_K2.md. Open Canon Covenant §4.4 honored."
 evidence_tier: "per row — register + tier as audited; counterexample and kill criterion per line"
 parents:
   - 00_THE_BURRI_RULES.md

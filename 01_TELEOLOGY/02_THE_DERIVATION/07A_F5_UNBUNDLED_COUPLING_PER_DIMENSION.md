@@ -1,7 +1,7 @@
 ---
 title: "07A — F5 unbundled: one coupling per emergent dimension; the four physical forces as the D1–D4 special case; why there is no fifth physical force"
 date: 2026-07-12
-status: "[D] STAGED — PENDING K2. A sharpening of the F5 conjecture (nucleus: 00_THE_CORE_CONJECTURE.md; four-forces: 07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md). Adds ONE move the nucleus does not state: it reframes the four-forces mapping from a claimed dimension↔force bijection into a substrate special-case, and converts the absence of a fifth physical force from a liability into a prediction. Does not add an axiom; does not upgrade any tier."
+status: "[E] K2-COUNTERSIGNED 2026-07-18 ('Accept'). The F5 unbundling is canonical: one coupling per emergent dimension; the four physical forces as the D1–D4 special case; the absence of a fifth physical force becomes a prediction. Sharpens the F5 conjecture without upgrading any tier. The K2-C5 self-contradictory five-forces↔four-lines table (in 00_THE_CORE_CONJECTURE.md) is WITHDRAWN; the reconciled reading here is the canonical home. Open Canon Covenant §4.4 honored."
 evidence_tier: "[I] the coupling-per-dimension structural reading; [C] every specific physical mapping (inherits the nucleus's SU(3) concession); [S] the internal claim that emergence births new coupling-modes; the will-to-potential content is unchanged and stays where the nucleus fenced it"
 owner: "K2 + AI co-owner"
 parents:
