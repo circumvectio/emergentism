@@ -1,3 +1,17 @@
+---
+rosetta:
+  primary_level: L5
+  primary_column: Meta
+  operator: "Brahmā ○"
+  tier: "Executive"
+  regime: "Brāhmaṇa"
+  register: "[D]"
+  canonical_phrase: "SKYZAI family constructive refinement — the Brahmā pass (companion to Kālī's critical pass)"
+type: skyzai-refinement-design
+title: "THE SKYZAI FAMILY, REFINED — THE CONSTRUCTIVE PASS — 2026-07-18"
+date: 2026-07-18
+---
+
 # THE SKYZAI FAMILY, REFINED — THE CONSTRUCTIVE PASS — 2026-07-18
 
 **Status:** [D] STAGED. Companion to the critical pass (`SKYZAI_FAMILY_EMERGENTIST_REFINEMENT_2026_07_18.md`, commit `be4d360`). No build, no product-canon change; auditor stages, signer applies.

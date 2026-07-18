@@ -1,3 +1,17 @@
+---
+rosetta:
+  primary_level: L2
+  primary_column: Meta
+  operator: "Kālī 💀"
+  tier: "Executive"
+  regime: "Śūdra"
+  register: "[D]"
+  canonical_phrase: "ROSETTA D5 gamespace formal-logic audit — 13 agents, 10 claims (repairs staged, not applied)"
+type: rosetta-formal-audit
+title: "ROSETTA FORMAL-LOGIC AUDIT — THE OPERATOR GAME LAYER (D5 GAMESPACE) — 2026-07-18"
+date: 2026-07-18
+---
+
 # ROSETTA FORMAL-LOGIC AUDIT — THE OPERATOR GAME LAYER ("D5 gamespace") — 2026-07-18
 
 **Status:** AUDIT RECORD. All repairs are **[D] STAGED, NOT APPLIED** — K2 disposition required. No settled canon touched; no tier upgraded.

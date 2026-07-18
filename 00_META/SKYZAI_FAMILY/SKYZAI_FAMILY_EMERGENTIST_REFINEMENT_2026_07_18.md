@@ -1,3 +1,17 @@
+---
+rosetta:
+  primary_level: L2
+  primary_column: Meta
+  operator: "Kālī 💀"
+  tier: "Executive"
+  regime: "Śūdra"
+  register: "[D]"
+  canonical_phrase: "SKYZAI family emergentist refinement — 11 products, 6 lenses each (K2 staged)"
+type: skyzai-refinement-design
+title: "THE SKYZAI FAMILY, RE-SEEN THROUGH THE EMERGENTIST LENS — 2026-07-18"
+date: 2026-07-18
+---
+
 # THE SKYZAI FAMILY, RE-SEEN THROUGH THE EMERGENTIST LENS — 2026-07-18
 
 **Status:** [D] STAGED design record. **No build, no product-canon change.** The auditor *stages*; the signer *applies* (the ledger's Audit/authority-separation rule — this doc changes nothing in any product repo, it points at them with receipts). Findings touch product docs across `02_SKYZAI/` and `03_VENTURES/` — each owner/K2 decides adoption.

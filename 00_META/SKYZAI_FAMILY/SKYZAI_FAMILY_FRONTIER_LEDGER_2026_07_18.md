@@ -1,3 +1,17 @@
+---
+rosetta:
+  primary_level: L5
+  primary_column: Meta
+  operator: "Brahmā ○"
+  tier: "Executive"
+  regime: "Brāhmaṇa"
+  register: "[D]"
+  canonical_phrase: "SKYZAI family blueprint-completion frontier ledger + org verdict (graded on receipts)"
+type: skyzai-frontier-ledger
+title: "THE SKYZAI FAMILY — BLUEPRINT-COMPLETION FRONTIER LEDGER + ORG VERDICT — 2026-07-18"
+date: 2026-07-18
+---
+
 # THE SKYZAI FAMILY — BLUEPRINT-COMPLETION FRONTIER LEDGER + ORG VERDICT — 2026-07-18
 
 **Status:** [D] staged analysis. Graded on **receipts, not doctrine** — 14 graders read the runtime-truth / integration-status / P-score docs and several *ran the test suites themselves*. A green banner counts for nothing; "spec exists" is L2, never L3. Workflow `wf_d096d09a-36d` (14 graders + 3 architects + 1 judge).

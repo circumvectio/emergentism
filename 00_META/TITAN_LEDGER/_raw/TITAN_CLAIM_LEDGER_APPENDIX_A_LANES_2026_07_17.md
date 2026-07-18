@@ -1,3 +1,17 @@
+---
+rosetta:
+  primary_level: L2
+  primary_column: Meta
+  operator: "Kālī 💀"
+  tier: "Evidence"
+  regime: "Śūdra"
+  register: "[B] raw swarm — see ../TITAN_TRANSCENDENTAL_CLAIM_LEDGER_2026_07_17.md for the live surface"
+  canonical_phrase: "TITAN claim ledger appendix A — lane extractions (11 raw swarm slices, K3 archive)"
+type: titan-raw-swarm
+title: "Appendix A — Lane extractions (11 slices, raw swarm output, 2026-07-17)"
+date: 2026-07-17
+---
+
 # Appendix A — Lane extractions (11 slices, raw swarm output, 2026-07-17)
 
 <agent_swarm_result>
