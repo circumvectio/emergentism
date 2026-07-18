@@ -25,14 +25,15 @@ rosetta:
 Emergentism's objective teleology is the finite approach toward Beauty, Truth,
 and Justice.
 
-These are not decorative ideals added to the geometry after the fact. They are
-the value-language face of the same reciprocal grammar:
+These are declared value commitments, not consequences of the geometry. The
+reciprocal chart may illustrate parts of the grammar, but it cannot supply the
+normative bridge:
 
 | Limit | Register | Value-theory reading |
 |---|---|---|
 | **Beauty** | `φ` / coherence | Coherence becoming perceivable without collapsing into inert purity. |
 | **Truth** | disclosure / accountable fit | Map and territory held in faithful, corrigible relation. |
-| **Justice** | `ν` lawfully coupled to `φ` | Capability arranged without extraction, so no node is pushed off the equator for another's gain. |
+| **Justice** | bearer-complete admissibility envelope | Authorization, consent, custody, contestability, exit, evidence discipline, explicit consequence bearers, and `η=0` as a necessary non-extraction condition. |
 
 **Notation boundary.** The older triadic shorthand sometimes used `P` for the
 Truth/product face. This note does not use bare `P` as a doctrine quantity:
@@ -130,8 +131,9 @@ within it; it cannot create the Justice boundary.
 
 1. Use this file as the compact bridge between value theory and objective teleology.
 2. Do not turn asymptotic approach into final possession.
-3. Do not treat Justice as raw capability; Justice is capability lawfully coupled
-   to coherence under `η = 0`.
+3. Do not derive Justice from `φ`, `ν`, the equator, or `η=0`; those may be
+   diagnostics or necessary constraints, while bearer-complete `J` supplies the
+   normative test.
 4. Preserve the tier split: structural grammar `[S]`, transcendental naming `[I]`,
    external proof of moral realism `[C]`.
 

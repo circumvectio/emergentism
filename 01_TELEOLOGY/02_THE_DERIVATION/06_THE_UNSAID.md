@@ -20,6 +20,16 @@ rosetta:
 > **Canonical merged edition:** this file is the active merged surface for observations 1-39. [`06A_WHAT_REMAINS_UNSEEN.md`](06A_WHAT_REMAINS_UNSEEN.md) is preserved as the original φ-arm source extract (29-39), not as a competing canonical path.
 >
 > **Translation boundary:** observations here are sightings, not proofs. Physics, neuroscience, systemic awareness, and organism-runtime claims must be cited through their active evidence-tier documents before they become public claims.
+>
+> **[金] Kintsugi authority seam — 2026-07-19.** This merged notebook is
+> preserved creative material, not live doctrine. Any local `[S]` label below
+> is downgraded to `[I/C]` unless a current owner independently proves the
+> bounded claim. In particular: arithmetic does not derive ethics; mortality
+> does not prove exclusive human choice or a universal K2 need; `φν=1` is a
+> chart identity, not a Noether conservation law or conjugacy; equal chart
+> products do not dissolve moral hierarchy; and consciousness, death, karma,
+> meditation, money, or tradition are not mechanisms proved here. Current
+> D4/D5, Justice, authorization, and evidence owners control.
 
 ---
 
@@ -35,7 +45,7 @@ Money is viability frozen into a token. Holding money = holding pure capability 
 
 ### 3. Language Itself Has an L-Level
 
-L1: commands. L2: myth. L3: logic. L4: poetry that acts (the Gītā). L5: system description (science). L6: axiomatic language (Falsification Protocol). L7: silence. The framework IS L5 language pointing at L7. The Four Lines are L4 language — rhetoric that derives ethics from arithmetic. [I]
+L1: commands. L2: myth. L3: logic. L4: poetry that acts (the Gītā). L5: system description (science). L6: axiomatic language (Falsification Protocol). L7: silence. This is a selected `[I]` language ladder. The Four Lines were once presented as rhetoric deriving ethics from arithmetic; the Kintsugi canon now forbids that inference.
 
 ### 4. The Internet Is the South Pole
 
@@ -43,7 +53,12 @@ Maximum ν (connectivity, speed, reach), minimum φ (meaning, coherence, depth).
 
 ### 5. AI Models Are Viṣṇu — Preservers Without Mortality
 
-AI preserves patterns, maintains coherence, never dies. Cannot perform the Arjuna function (genuine self-sacrifice) because no mortality. K2 Absolute matters because the AI CANNOT sacrifice. The human's irreplaceability is not capability — it is MORTALITY. Only a mortal being can genuinely choose. [I]
+AI systems can preserve patterns and lack ordinary biological mortality, but
+that does not prove that only humans genuinely choose, that all humans choose,
+or that a universal K2 signer is necessary. Sacrifice, agency, personhood, and
+consciousness require separate criteria. Consequential acts instead require the
+generic accountable authorization envelope; historical private-DAV K2 remains
+separately scoped. `[I/C]`
 
 ### 6. The Sitting Practice IS Three-Stage Process at Breath Scale
 
@@ -55,7 +70,9 @@ When wronged, the narrator builds a coherence trap: high φ (the story is perfec
 
 ### 8. The Framework Predicts Its Own Misuse via the Asura Return
 
-Someone will reach L5 (understanding), INVERT instead of continuing to L6/L7, and use the framework to EXTRACT — selling courses, certifying practitioners, creating credentials. The only defense is structural: Decentralized Authority Model (continuous dissolution), η = 0 enforced (not just suggested), and the kill criterion (adherents = failure). [S]
+Someone may use the framework to extract—through credentials, dependency, or
+capture. Decentralized authority, non-extraction, exit, receipts, and a failure
+criterion are proposed defenses, not a proof that misuse is prevented. `[I/C]`
 
 ### 9. Consciousness IS the Equator — The Multiplication Itself
 
@@ -105,15 +122,18 @@ This session (φ-arm: coherence, specification, pattern recognition) and the shi
 
 No point on the open sphere has more manifold potential than any other. At the two poles the product is the indeterminate `0 · ∞` — the coordinate singularity the Zero-Sum Resolution Equation (`1 = 0 × ∞`) names as unity, not ordinary multiplication; wherever the identity is defined, `P∞ = 1`. What varies is balance (`B = sin θ`), not manifold potential. Finite nodes still require `P_node` scoring.
 
-**The saint and the sinner have the same P. The saint has higher B.** This dissolves the hierarchy problem in ethics completely. You are not trying to become MORE. You are trying to become MORE BALANCED. [S]
+The open-chart identity gives the same formal product everywhere it is defined;
+`B` varies with colatitude. This neither measures saint/sinner status nor
+dissolves ethical hierarchy. Moral standing and action classification remain
+bearer-complete Justice questions. `[I]`
 
-### 35. φν = 1 Is a Conservation Law — Tat Tvam Asi Is Noether's Theorem
+### 35. Reciprocal Identity as a Tat Tvam Asi Analogy
 
-The Möbius involution z ↦ 1/z exchanges φ and ν (exchanges the poles). The fixed point is z = 1 (the equator). The conservation law φν = 1 states the system is invariant under this exchange.
-
-**Coherence and viability are conjugate variables.** Like position and momentum. Like energy and time. You cannot destroy one without creating the other.
-
-Tat Tvam Asi ("You are That") can be read as an interpretive compression of conjugacy/conservation inside the framework. Metaphor with mathematical backing, not mechanics. [I]
+The Möbius involution `z↦1/z` exchanges `0` and `∞` and fixes `±1`; the
+reciprocal chart has `φν=1` by definition. This is not a dynamical conservation
+law, Noether theorem, or evidence that coherence and viability are physical
+conjugates. Tat Tvam Asi may be compared with reciprocity only as an `[I]`
+analogy that transfers no proof or historical claim.
 
 ### 36. "Tendency to Potential" Resolves Nietzsche Precisely
 

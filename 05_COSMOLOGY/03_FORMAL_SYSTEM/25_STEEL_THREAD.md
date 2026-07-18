@@ -11,7 +11,8 @@ rosetta:
 
 # 25. The Steel Thread — What Is Actually Proven
 
-**Evidence Tier:** [A/S] — This document contains ONLY established mathematics and structural derivations. No interpretive or conjectural claims.
+**Evidence Tier:** `[A/S]` through the explicitly bounded internal results;
+`[I/C]` after the marked break.
 **Date:** 2026-04-04
 **Purpose:** A single chain of proven results, from the ground up, with no gaps.
 
@@ -49,13 +50,17 @@ The Riemann sphere S² ≅ ℂP¹ is a well-defined mathematical object (Riemann
 
 ---
 
-### Link 2: The Triadic Frame Is Unique [S — Correspondence 21]
+### Link 2: Inversion Facts and a Selected Frame `[A/S]`
 
-On ℂP¹, the Möbius involution z ↦ 1/z exchanges 0 ↔ ∞. The fixed points are z² = 1, giving z = 1 (on ℝ₊). The closure cl({0, ∞}) under this involution is {0, 1, ∞} — a three-element projective frame.
+On ℂP¹, the Möbius involution `z ↦ 1/z` exchanges `0 ↔ ∞` and fixes
+`z=±1`. The set `{0,∞}` is already closed under inversion. Adjoining both fixed
+points gives the useful selected invariant set `{−1,0,1,∞}`. The familiar
+projective normalization `{0,1,∞}` is a selected frame of three distinct
+points; it is not generated as the inversion closure of `{0,∞}`, and `+1` is
+not uniquely forced over `−1`.
 
-**Theorem (Correspondence 21, v3.0):** {0, 1, ∞} is the unique minimal generative system for a projective frame on ℂP¹, up to Möbius isomorphism. Selection complexity K*_sel = 0 bits.
-
-**Status:** [S] Structural. Passed 4-round peer review.
+**Status:** `[A]` for the inversion and projective facts; `[S]` for the
+framework's selected Titan roles. No unique-triad or zero-bit derivation lives.
 
 ---
 
@@ -81,7 +86,9 @@ Define the balance function B(θ) = sin θ. This measures how far a point is fro
 - B(π) = 0 (south pole — the coordinate limit φ → 0, ν → ∞, read as viability without usable coherence)
 - B(π/2) = 1 (equator — maximum balance)
 
-B is strictly concave on (0, π). The equator θ = π/2 is the **unique global maximum**.
+B is strictly concave on `(0,π)`. The colatitude `θ=π/2` is the **unique
+maximizing colatitude**. On the full sphere this is the equatorial circle, not
+one unique point.
 
 Equivalently, B(ν) = 2ν/(1 + ν²). This achieves its unique maximum at ν = 1, with B'(1) = 0 and B''(1) = −1 < 0.
 
@@ -102,48 +109,55 @@ Equivalently, B(ν) = 2ν/(1 + ν²). This achieves its unique maximum at ν = 1
 
 ---
 
-### Link 6: Extraction Is Self-Defeating [S — Convergence 24]
+### Link 6: A Declared Balance Deviation Lowers the Score `[S — Convergence 24]`
 
 **Theorem (Strategic Exclusion, v2.1):** At the equatorial profile (all νᵢ = 1), any extraction Δν ≠ 0 reduces the extractor's balance: B(1 + Δν) < B(1).
 
-**Corollaries:**
-- Extraction is universally self-defeating (no threshold below which it's beneficial)
-- Extraction is negative-sum for balance in the equatorial displacement model: ΣB decreases inside that profile; this is not an unconditional one-shot payoff theorem
-- Total balance loss is quadratic: ΔB ≈ −(Δν)²/2
+**Corollaries inside this fixture:**
+- any nonzero scalar deviation from `ν=1` lowers the declared `B` score;
+- the defined zero-sum viability transfer from the all-balanced profile lowers
+  aggregate `ΣB`; and
+- the individual score loss is quadratic near `ν=1`:
+  `ΔB≈−(Δν)²/2`.
 
-**At the equator, η = 0 is the enforced conditional equilibrium** (no extraction
-inside the coupled, long-horizon game).
+None says extraction is universally self-defeating in real games. `η=0`
+requires a separately enforced Justice boundary; the chart supplies no
+institution or automatic penalty.
 
 **Status:** [S] Structural. Passed game-theory specialist review.
 
 ---
 
-### Link 7: The AM-GM Connection [A]
+### Link 7: The AM-GM Score Minimum `[A]`
 
 From Link 3: φ + ν ≥ 2√(φν) = 2 (AM-GM inequality), with equality iff φ = ν.
 
-Since φ · ν = 1 identically:
+Since `φ·ν=1` identically:
 - The arithmetic mean φ + ν is minimized when φ = ν = 1
-- The Hamiltonian H = φ + ν has its unique minimum at the equator
+- the declared score `H:=φ+ν` has its unique scalar minimum at `φ=ν=1`
 - dH/dθ = 0 at θ = π/2; d²H/dθ² > 0 (minimum)
 
-**The equator is the Hamiltonian minimum.** Not chosen. Derived.
+The minimum of this declared scalar score is derived. Calling `H` a physical
+Hamiltonian, energy, objective, or flourishing measure would be an additional
+modeling claim, not an AM-GM consequence. On full `S²`, the maximizing/minimizing
+colatitude corresponds to the entire equatorial circle.
 
 **Status:** [A] Established. AM-GM inequality.
 
 ---
 
-### Link 8: Coupling Conditions Cooperation [S — EFR-08]
+### Link 8: Balance-Only Alignment `[S — Demonstration 22]`
 
-**Theorem (Power-Max Lemma):** In coupled networks with `P_node = Φ × V`,
-coupling `λ > 0`, a long horizon, and enforced `η = 0`, individual optimization
-aligns with total network `P`.
+**Theorem.** In the declared scalar game `Γ(N,λ)`, every player is paid only by
+its own `B(ν_i)` and the population mean of that same score. For `N≥2` and
+`λ∈[0,1]`, `ν_i=1` is strictly dominant, the all-balanced profile is the unique
+Nash equilibrium, and the Price of Anarchy is 1.
 
-Individual optimization can align with collective optimization. Cooperation is
-not mere altruism, but it still requires the mechanism boundary that blocks
-hidden extraction.
+This is alignment by payoff construction, not a theorem that coupling, a long
+horizon, `P_node=ΦV`, or `η=0` generally makes cooperation individually optimal.
+General alignment remains `[C]` and requires empirical and normative premises.
 
-**Status:** [S] Structural.
+**Status:** `[S]` inside the explicitly declared balance-only fixture.
 
 ---
 
@@ -204,12 +218,12 @@ The framework's recommended position (Doc 30) is Level 3 interpreted through Pos
 | Link | Claim | Tier | Source |
 |------|-------|------|-------|
 | 1 | S² exists | [A] | Riemann 1857 |
-| 2 | {0,1,∞} is unique | [S] | Correspondence 21 (4-round review) |
+| 2 | Inversion swaps `0↔∞`, fixes `±1`; the Titan triad is selected | `[A/S]` | elementary Möbius algebra; settled selection boundary |
 | 3 | φ·ν = 1 | [A] | Trigonometric identity |
 | 4 | B = sin θ peaks at equator | [A] | Calculus |
 | 5 | Equator is dominant strategy in the stated balance game | [S] | Demonstration 22 (game theory review) |
-| 6 | Extraction is self-defeating under coupled, long-horizon assumptions | [S] | Convergence 24 (game theory review) |
-| 7 | Equator is Hamiltonian minimum | [A] | AM-GM |
+| 6 | A defined deviation from the scalar balance optimum lowers `B` | `[S]` | Convergence 24; no general extraction theorem |
+| 7 | The declared scalar `φ+ν` is minimized at `φ=ν=1` | `[A]` | AM-GM; no physical-Hamiltonian inference |
 | 8 | In the declared balance-game payoff, the balanced action is strictly dominant | [S] | EFR-08 / Demonstration 22; not a consequence of coupling alone |
 | **BREAK** | | | |
 | 9 | "Balance" = flourishing | [I] | FEP + *h₂r̥tó-* + Doc 32 converge interpretively; no current empirical bridge. Former survey study retired. |

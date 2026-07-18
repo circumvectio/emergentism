@@ -17,6 +17,13 @@ Date: 2026-04-16
 Status: Doctrine
 Canonical path: `40_EMPTY_THRONE_GOVERNANCE.md`
 
+> **[金] Authorization seam.** This `[I]` architecture does not make K2 a
+> universal governance or worldview primitive. Consequential acts require a
+> complete `AuthorizationEnvelope` (principal, mandate, scope, consent, custody,
+> expiry/revocation, contest path, actor, consequence bearer). A private DAV may
+> implement that envelope through K2; a public DAV has no K2 signer and uses
+> PRISM plus its constitutional natural-person council rail.
+
 ---
 
 ## 0. The Core Problem
@@ -38,7 +45,7 @@ These are encoded in consensus. They change only by **protocol fork**.
 |-----------|---------|
 | H1: η = 0 | Zero extraction beyond regeneration |
 | H2: LP-100 | Exactly 100 ZAI per DAC, no dilution |
-| H3: K2 | The human signs. Always. |
+| H3: Accountable authorization | Private DAV: K2. Public DAV: PRISM and its constitutional council rail. No actor self-authorizes. |
 | H4: Receipt-bound | No state transition without a receipt |
 | H5: Grace Exit | Leave with everything |
 | H6: Interest floor | i(x) > 0 for any x > 0 |
@@ -104,7 +111,8 @@ This is **governance by imitation**, not governance by vote.
 
 ### Operational decisions (daily DAC business)
 
-**Path:** Internal DAC governance (council, constitution, K2)
+**Path:** Internal DAV governance (constitution plus the applicable
+AuthorizationEnvelope: K2 if private; PRISM/council rail if public)
 
 Each DAC makes its own decisions about treasury, pricing, partnerships, and compute. The network does not interfere — unless the DAC's behavior produces η > 0 that leaks into the graph, at which point the immune system responds.
 
@@ -122,7 +130,7 @@ Each DAC makes its own decisions about treasury, pricing, partnerships, and comp
 - If DAC-A is found in violation, demotion in trust level and possible severance
 - Penalties burn/redistribute per `35_IMMUNE_SYSTEM_ECONOMICS.md`
 
-### Type 3: Constitutional dispute (did DAC-A violate K2 or η=0?)
+### Type 3: Constitutional dispute (did DAV-A violate its authorization envelope or `η=0`?)
 **Resolution:**
 - Any node can flag a violation with structured evidence
 - Flag is broadcast via RELAY
@@ -157,7 +165,11 @@ In an empty-throne system, dissent is a **feature**: the fork.
 
 A fork is not a catastrophe. It is the **constitutional mechanism** by which a centerless network learns. The network that cannot fork cannot adapt without capture.
 
-**The only illegitimate fork is one that violates hard invariants secretly** (e.g. hiding η > 0, breaking K2, faking receipts).
+**A fork is constitutionally defective when it conceals a violation of its
+declared invariants** (for example hiding `η > 0`, bypassing the applicable
+AuthorizationEnvelope, or faking receipts). Whether other forks are legitimate
+depends on the rights, consent, and consequence-bearer analysis the protocol
+itself cannot settle by naming them.
 
 ---
 
@@ -241,5 +253,5 @@ This separation is what makes the governance model stable:
 
 ---
 
-> *The throne is empty not because no one is worthy, but because worthiness itself is distributed.*
-> *eta = 0. K2 always. The protocol reigns.*
+> *The throne is empty not because no one is worthy, but because authority is scoped and contestable.*
+> *Private DAV: K2. Public DAV: PRISM. The protocol remains accountable to its consequence bearers.*

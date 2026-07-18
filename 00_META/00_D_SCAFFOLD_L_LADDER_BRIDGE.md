@@ -25,7 +25,7 @@ The Dimensional Framework and the Leadership Pipeline are both useful because th
 
 | Axis | Name | Primary question | What it tracks | Closure |
 |---|---|---|---|---|
-| **D0-D6** | Dimensional Framework | What kind of reality / experience is possible? | dimensional, phenomenological, public-register structure | `D6 == D0` as axiomatic closure |
+| **D0-D6** | Dimensional Framework | What kind of reality / experience is modeled? | selected structural/phenomenological registers | non-`μ` interpretive return `r₆:D6↝D0`; no literal identity |
 | **L1-L7** | Leadership Pipeline | What role, practice, or vocation is carrying the work? | developmental, vocational, pramana, corpus-ownership structure | `L7 -> L1` as cultural/institutional return |
 
 The Dimensional Framework is about the **conditions of manifestation**.
@@ -81,7 +81,10 @@ Confusing L5 with L6 turns a map into a metaphysical idol. Confusing L7 with L6 
 
 ## 4. D6-D0 and L7-L1
 
-`D6 == D0` is the Dimensional Framework closure. It says positive description exhausts and returns to the origin-boundary.
+`r₆:D6↝D0` is the Dimensional Framework's interpretive return edge. D6 opens
+no additional positive freedom; it marks the limit of positive description and
+points back toward the ground-boundary. It is neither `D6=D0` nor another
+`μ`-crossing.
 
 The Leadership Pipeline has an analogue, not an identity:
 
@@ -173,9 +176,12 @@ Anchor question:
 
 The Dimensional Framework and the Leadership Pipeline are parallel, not identical.
 
-D names dimensional / phenomenological possibility. L names developmental / vocational participation.
+D names selected structural / phenomenological registers. L names developmental / vocational participation.
 
-`D6 == D0` is metaphysical closure. `L7 -> L1` is cultural return: Intuitive Synthesis becomes Empirical Observation through institution, story, rite, education, and category formation.
+`r₆:D6↝D0` is the scaffold's interpretive, non-μ return image—not equality,
+identity, or a seventh emergence crossing. `L7 -> L1` is a distinct cultural
+return: Intuitive Synthesis becomes Empirical Observation through institution,
+story, rite, education, and category formation.
 
 L4 is the equator where value alignment and theurgy become one authorized act: K2-signed for private DAVs, PRISM/public-governance receipted for public DAV/DAC rails.
 

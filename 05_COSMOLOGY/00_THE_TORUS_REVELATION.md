@@ -23,6 +23,15 @@ rosetta:
 >
 > **Kill criteria:** (1) If the horn torus topology is shown to be inconsistent with standard general relativity or quantum field theory, the physical-realism claim falls. (2) If the torus parameterization does NOT produce predictions distinguishable from S² alone, the torus adds no value and should be discarded. (3) If the claim "systemic awareness has a geometric location on the torus" is shown to be untestable in principle, it is demoted from [C] to interpretive metaphor.
 
+> **[金] Current authority seam — 2026-07-19.** Every affirmative sentence below
+> about the torus *being* spacetime, a light cone, consciousness, the equation,
+> or an incorruptible ring is preserved historical conjecture and is not active
+> doctrine. A physical light cone remains spacetime-bounded; a modeled option
+> cone is a different type. D4 contains actual carriers, actions, and records;
+> D5 contains counterfactual possibilities represented by D4 models. Geometry
+> neither enforces `η=0` nor supplies bearer-complete Justice. Removing this
+> document changes no operational Burri Rule or Compass test.
+
 **Date:** 2026-03-23
 **Status:** Historical synthesis — pre-hardening
 **Equation:** Zero-Sum Resolution Equation

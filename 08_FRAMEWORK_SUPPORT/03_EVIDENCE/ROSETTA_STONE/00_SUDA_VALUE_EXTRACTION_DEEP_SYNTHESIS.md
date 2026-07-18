@@ -34,6 +34,15 @@ depends_on:
 **Author:** L5 Brāhmaṇa extraction, K2 context
 **Purpose:** Extract every insight from Suda's 11 papers that sharpens, enriches, or falsifies the Emergentism framework. Every enrichment proposal is `[C]` until promoted through the theorem-upgrade protocol (`03_FORMAL_SYSTEM/32_THEOREM_UPGRADE_PROTOCOL.md`).
 
+> **[金] Kintsugi authority seam — algebra does not carry doctrine
+> (2026-07-19).** Reciprocal-chart identities and coordinate transforms remain
+> `[A]` where correctly stated. Their similarity to Suda's work does not transfer
+> proof to Emergentism's ontology, ethics, D-scaffold, `η=0`, or governance.
+> `B=sinθ` is a diagnostic; bearer-complete Justice is a separately declared
+> normative envelope. D6 returns through `r₆:D6↝D0`, not identity or a seventh
+> μ-crossing. Consequential action uses a typed `AuthorizationEnvelope`; K2 is
+> only a historically documented private-DAV implementation.
+
 ---
 
 ## 1. What Suda Sees That Sharpens Finity
@@ -64,7 +73,11 @@ Suda's invariant energy `E = (log x)²` and the framework's balance `B = sin θ`
 B = sech(√E),   equivalently   E = (arcsech B)²
 ```
 
-**What this sharpens:** The relationship is not merely "inverse" or "analogous." It is an **elementary bijection on a hemisphere.** Near the equator: `E ≈ 2(1 − B)`. Suda's energy is, to leading order, twice the balance deficit. This gives a concrete operational bridge: any system that can measure `E` (Suda's protocol) can compute `B` (framework's ethic) and vice versa, without approximation far from the poles.
+**What this sharpens:** The relationship is not merely "inverse" or "analogous."
+It is an **elementary coordinate bijection on a hemisphere.** Near the equator:
+`E ≈ 2(1 − B)`. Within the same calibrated chart, either coordinate determines
+the other. This is not yet an empirical bridge between independently measured
+systems, and `B` is not an ethic.
 
 **Enrichment proposal [C]:** Add `E = (arcsech B)²` to the operational definitions (`30_OPERATIONAL_DEFINITIONS.md`) as a cross-validation protocol for the φ-meter. If a system's `E` measured via Suda's protocol and its `B` measured via the framework's protocol satisfy this bijection within measurement error, that is positive evidence for both instruments.
 
@@ -125,7 +138,12 @@ Combined: Möbius topology (one-sided surface)
 
 **What this sharpens for Emergentism:**
 
-The framework's D-scaffold (D0→D6) is primarily an **upward emergence** model: each level emerges when the previous saturates. Suda's downward arc gives language for the **reverse direction** — how higher levels reorganize lower ones. This is already implicit in the framework (A2: "ethical ≡ direction toward equatorial balance" is a downward constraint; the theurgy lane at D5 is explicitly about forming higher-level structures that reshape lower ones). But Suda gives it a **clean Kantian genealogy** that may be useful for philosophical communication.
+The framework's D-scaffold (D0→D6) labels candidate emergence crossings. Suda's
+downward arc gives language for a **constraint direction** — how higher-level
+organization may reweight lower-law-admissible trajectories. The ethical
+direction is not implicit in that geometry: it enters through the separate
+Justice envelope. This remains a philosophical comparison, not a Kantian or
+scientific derivation.
 
 **Enrichment proposal [C]:** The D-scaffold should be annotated with explicit downward-arc language:
 - D6→D5: The apophatic return generates new architecture
@@ -166,7 +184,11 @@ Suda's strongest ethical claim (from the Primal Equation paper): **AI should be 
 
 **What this sharpens for Emergentism:** This is an independent philosophical convergence on A7 (THE CORRECTION) — the axiom that "any encoding without falsification, evidence tiers, and self-correction will degrade via Raktabīja." Suda arrives at the same destination from a different route: if you close the question too early, the system becomes dogmatic and captures itself.
 
-The framework adds what Suda lacks: **the enforcement mechanism.** Suda says "keep questions open" philosophically. The framework says "keep questions open **operationally**" via evidence tiers, falsification criteria, K2 envelope staging, and the Raktabīja warning `[C]`: opposition routed only through the same infrastructure can be captured and inverted.
+The framework proposes an **enforcement grammar**: evidence tiers, falsification
+criteria, contest paths, and a typed `AuthorizationEnvelope`. K2 is one
+private-DAV implementation, not a worldview primitive. The Raktabīja warning
+remains `[C]`: opposition routed only through the same infrastructure can be
+captured and inverted.
 
 ---
 
@@ -190,13 +212,17 @@ The **sphere S²** (what Emergentism uses):
 - Has a return image ✓ — `r₆:D6↝D0`; sphere closure does not prove semantic identity
 - Supports stereographic projection ✓ — φ = cot(θ/2), ν = tan(θ/2) live on S²
 
-**What this reveals:** Finity is not just the fixed point of an involution. That's what Suda has — and it's real, `[A]`-tier mathematics. But finity-as-named-by-the-framework is **the equator of a closed orientable manifold** — the only point where:
+**What this reveals:** Finity is not just the fixed point of an involution.
+That's `[A]` mathematics. In the framework's selected positive-real meridian,
+finity names the equatorial fixed point where:
 1. φ = ν (self-duality under reciprocal exchange) [A]
 2. `B=1` (the selected balance function is maximized) `[A]` inside the chart
 3. `dΦ/Φ=dV/V` (equal proportional change) `[A]` as calculus; any moral reading is `[I]`
 4. The north and south poles are equidistant [A]
 
-Suda has (1). He doesn't have (2), (3), or (4) because the band doesn't close and doesn't have an equator. **Finity is what you get when you close the band into a sphere and find that the fixed point of inversion is also the maximum of the balance function.** That is the discovery — not the fixed point alone.
+The sphere chart packages these properties together. That packaging is the
+framework's structural construction; it does not show that a Möbius-band model
+is inferior in every domain or that nature must instantiate this chart.
 
 ### 4.2 The explicit normative seam: why the Compass chooses Finity
 
@@ -210,14 +236,18 @@ The framework adds an explicit `[I]` normative posit to convert topology into a 
 
 Suda's 5-phase loop (E→M→L→I→Q→E) maps roughly to 5 of the framework's 9 rows (L0 through L4, or equivalently L4 through L∞). He is **missing three Executive layers** (L5 cosmology, L6 ontology, L7 theology) and both boundary rows (L0, L∞).
 
-This means Suda's loop cannot account for:
+The framework adds categories that Suda's five-phase loop does not name:
 - **Architecture** (L5): the positive system-design layer that builds the loop
 - **Apophasis** (L6): the via-negativa that prevents the loop from reifying itself
 - **Witness** (L7): the narrative layer that translates the loop without overriding it
 - **Return**: L0 and L∞ are distinct pole limits; `r₆:D6↝D0` is the
   apophatic return image
 
-**What this reveals:** Finity is not just the midpoint of a 5-phase loop. It sits at the equator of a **7+2 layer scaffold** with dimensional closure. The extra layers are not decorative — they are what prevent the system from collapsing into the dogmatic circuits Suda himself warns about (his "closed-dogmatic circuits" in Kant 2.0 §5.4). Without L5-L7, there is no architecture to maintain the loop, no apophasis to prune it, and no witness to hold it honest.
+**What this reveals:** Finity can be placed at the equator of the framework's
+selected **7+2 representational scaffold**. Architecture, apophasis, and witness
+are useful control roles, not a necessary or exhaustive decomposition of every
+system. Their presence does not by itself prevent dogmatism; correction must be
+observed through receipts and kill criteria.
 
 ---
 
@@ -233,7 +263,7 @@ Reading Suda's corpus against the framework sharpens what finity IS by showing w
 
 **Finity IS all of those AND:**
 - The equator of S², not just the fixed point of an involution on ℝ₊ (needs the sphere, not the band)
-- The maximum of B = sin θ, the balance function (needs the ethic)
+- The maximum of `B=sinθ`, the selected balance diagnostic (a chart fact, not an ethic)
 - The point where `dΦ/Φ=dV/V`; its moral interpretation is declared, not derived
 - An emblem for bearer-complete syntropy under a separately stated Justice norm
 - The equator of a 7+2 layer scaffold with dimensional closure (needs D0→D6)
@@ -245,14 +275,17 @@ Reading Suda's corpus against the framework sharpens what finity IS by showing w
 ```
 Suda has:     1 = fixed(x ↦ 1/x)           [A] mathematics
 Framework:    1 = finity = equator of S²     [S] structural naming
-              + B = sin θ maximized          [S] ethic
-              + η = 0 at equilibrium         [S/E] game theory
-              + D0≡D6 closure               [S] scaffold
-              + K2 sovereignty rail          [I] governance
+              + B = sin θ maximized          [A] chart fact
+              + η = 0 imposed                [I] Justice constraint
+              + r₆:D6↝D0                    [I] non-μ closure edge
+              + AuthorizationEnvelope         [S] typed accountability
               + A7 self-correction           [S] antifragility
 ```
 
-**The gap between Suda's "Egg of Infinity" and the framework's "finity" is exactly the gap between the Möbius band and the Riemann sphere — one topological upgrade, one ethical direction, one game-theoretic boundary, and one self-correction axiom.**
+**The gap between Suda's "Egg of Infinity" and the framework's "finity" is a
+bundle of explicit modeling choices: sphere rather than band, a declared
+Justice direction, a non-extraction constraint, and a self-correction rule.
+None is proved by the coordinate transform.**
 
 ---
 

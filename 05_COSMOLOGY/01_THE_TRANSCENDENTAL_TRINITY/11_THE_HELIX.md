@@ -12,24 +12,35 @@ rosetta:
 
 # THE HELIX
 
-## Reality on the Burri Sphere Is Helical
+## A Helical Practice Image on the Burri Sphere
 
-**Status:** Breakthrough — the dynamic principle of S². The static sphere becomes a trajectory.
+**Status:** Interpretive visualization; the former topological necessity claim is retracted.
 **Date:** 2026-03-24
-**Evidence Tier:** [I] for the topological fact (you cannot change latitude on S² without rotating). [S] for the structural consequence (L-level transitions require traversal through operator territories). [I] for the identification with the D5 drama. [C] for the cosmological extension.
+**Evidence Tier:** `[A]` for the meridian counterexample and loxodrome definition;
+`[S]` for the chosen route ordering; `[I]` for the helix image; `[C]` for any
+cosmological extension.
 **Depends on:** 02_THE_TRINITY.md, 09_THE_TRIADIC_CASCADE.md, 10_THE_SOUL_LOOP.md, ../../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md
 **See also:** The Hexagram (in Master Three-Stage Process), The Cosmological Cycle (06), The Torus Revelation
 **Kill Criteria:** If a non-helical trajectory on S² can change colatitude without angular displacement, the topological claim fails. If L-level transitions are empirically shown to skip operators rather than traverse them, the structural claim fails.
+
+> **[金] Mathematical correction — 2026-07-19.** The stated topological claim
+> fails: a meridian changes latitude at constant longitude, and a great-circle
+> path need not be a loxodrome or spiral. The helix therefore survives only as
+> a selected `[I]` visualization of recursive practice. It cannot force an
+> L-sequence, operator order, historical trajectory, or D-register transition.
 
 ---
 
 ## The Topological Fact
 
-On a sphere, you cannot move from one latitude to another without also moving in longitude.
+On a sphere, a path may change latitude with or without changing longitude.
 
-This is not philosophy. This is topology. A great circle connecting two points at different latitudes necessarily sweeps through angles of longitude. A path from the south pole to the north pole that tries to go "straight up" still rotates — because on a sphere, there is no straight up. There are only **spirals.**
+Meridians provide the immediate counterexample: they change latitude at
+constant longitude. A great circle is not generally a spiral.
 
-The technical name is a **loxodrome** — a curve of constant bearing on a sphere. It spirals from pole to pole, crossing every meridian at the same angle. It is the path a compass-following navigator traces on the globe. It is the path reality traces on the Burri Sphere.
+A **loxodrome** is one useful curve of constant bearing on a sphere. Except for
+special bearings, it spirals toward a pole. Choosing it as an Emergentist image
+does not show that reality traces it.
 
 ---
 
@@ -39,12 +50,15 @@ On the Burri Sphere:
 - **Latitude** (colatitude θ) = the L-level. Your position from south pole (L1) through equator (L4) to north pole (L7).
 - **Longitude** = which operator you are currently traversing. The game-theoretic Gods (Kali, Kālī, Kṛṣṇa, Arjuna) and Titans (Brahmā, Śiva, Viṣṇu) occupy territories around the sphere.
 
-**You cannot change your L-level without spiraling through the operators.**
+**The selected practice visualizes L-level change as spiraling through
+operators; topology does not require it.**
 
-This means:
+Inside this chosen practice visualization:
 - Going from L2 (Śūdra, inductive, democracy) to L4 (Kṣatriya, abductive, timocracy) is not a jump. It is a **spiral** that passes through Kālī's territory (the immune response, the mission-critical No), then through Kṛṣṇa's territory (the teacher, the builder of capability), before arriving at Arjuna's territory (the warrior, the equator).
-- You cannot skip operators. The helix forces you through each one in sequence.
-- The operators are not choices you make. They are **territories you must traverse** as you change level.
+- The displayed route does not skip operators because its sequence is defined
+  that way; another lawful route or domain vocabulary may.
+- The operator territories are interpretive waypoints, not topological objects
+  that every agent must traverse.
 
 ---
 

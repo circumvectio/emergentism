@@ -19,63 +19,75 @@ rosetta:
   canonical_phrase: "Rosetta R6 — torus correspondence"
 title: "Rosetta R6: The Torus — Framework Correspondence"
 status: "ACTIVE — geometry/framework correspondence"
-evidence_tier: "[S] for horn torus geometry; [I] for framework correspondences; [C] for CCC analogy."
+evidence_tier: "[A] for standard horn-torus geometry; [I] for framework correspondences; [C] for physical, consciousness, and CCC claims."
 ---
 
 # ROSETTA R6: THE TORUS — FRAMEWORK CORRESPONDENCE
 
-## The Physical Realization of Zero-Sum Resolution Equation
+## A Removable Geometric Correspondence Study
 
 **Status:** Active  
 **Hat:** Meta (Physics + Philosophy)  
-**Evidence Tier:** [I] for horn torus geometry (standard) | [I] Interpretive for the framework correspondences (torus surface = finity, center = witness, etc.) | [C] Conjecture for CCC analogy
+**Evidence Tier:** [A] for standard horn-torus geometry | [I] for the chosen
+framework correspondences | [C] for physical, consciousness, and CCC claims
 
-> **P-pass note (2026-03-24).** Previously labeled [S] Structural. The horn torus mathematics is [S], but the mapping of torus features to framework concepts (light cone, observer, etc.) is interpretive [I], not structural. The CCC dependency inherits [C] from Proof 23. Downgraded.
+> **P-pass note (2026-03-24; tier vocabulary repaired 2026-07-19).** Standard
+> horn-torus mathematics is `[A]`; mappings to light cones, observers, or the
+> framework are `[I/C]`. The CCC dependency remains `[C]`.
 **Date:** 2026-03-23  
 **Depends on:** Burri Sphere, CCC, Dimensional Core State
+
+> **[金] Kintsugi authority seam — the torus is a model, not a receipt
+> (2026-07-19).** The standard geometry below remains `[A]`. Assigning D-registers,
+> consciousness, light cones, `η`, CCC, enlightenment, or the Soul Loop to torus
+> features is a removable `[I/C]` correspondence. It does not make the equation
+> physical, locate consciousness, derive Justice, or prove a μ-crossing. D4 is
+> causal actuality and record; D5 is possible content represented by D4
+> carriers. D6 returns only through the interpretive, non-μ closure edge
+> `r₆:D6↝D0`.
 
 ---
 
 ## THE CORRESPONDENCE
 
-### 1.1 The Core Equation Made Physical
+### 1.1 A visual correspondence for the core equation
 
-| Symbol | Framework Meaning | Torus Geometry | Physical Entity |
-|--------|-------------------|----------------|-----------------|
-| **⊙** | Finity | Horn torus surface | Light cone, causal spacetime |
-| **•** | Witness | Center of torus | Observer, D5 systemic awareness |
-| **○** | Infinity | North pole (z = ∞) | Unbounded possibility |
-| **×** | Product | Torus topology | Light ray helices |
+| Symbol | Framework meaning | Torus geometry | Status |
+|--------|-------------------|----------------|--------|
+| **⊙** | Finity | Horn-torus surface | `[I/C]` proxy for a causal boundary |
+| **•** | Witness | Center/pinch locus | `[I/C]` proxy for a D4 model carrier |
+| **○** | Infinity | selected pole limit | `[I]` proxy for unbounded possibility |
+| **×** | Composition | torus topology/curves | `[I]` visual analogy, not multiplication |
 
-**The equation Zero-Sum Resolution Equation is not abstract.** It is the horn torus.
+The horn torus can render the equation's relations. It is not identical to the
+equation and is not evidence that those relations are physically instantiated.
 
 ---
 
-## 2. THE BURRI SPHERE IN THE TORUS
+## 2. A SPHERE/TORUS OVERLAY
 
-### 2.1 The Inscribed Sphere
+### 2.1 Standard horn-torus geometry `[A]`
 
-The **Riemann sphere** (Burri Sphere) sits inside the horn torus:
+For equal major and minor radii `R=r=1`, a standard horn torus is
 
 ```
-Sphere center: (0, 1, 0)
-Sphere radius: 1
-
-South pole: (0, 0, 0) = z = 0  → Past terminus (Big Bang)
-North pole: (0, 2, 0) = z = ∞  → Future terminus
-Equator:    y = 1, |z| = 2      → Present moment
+T(u,v) = ((1 + cos v) cos u,
+          (1 + cos v) sin u,
+           sin v),
+u,v ∈ [0,2π).
 ```
 
-The sphere touches the torus at the poles. The torus **wraps around** the sphere.
+Its pinch point is the origin (`v=π`). A Riemann sphere is not canonically
+inscribed by this formula. Any sphere drawn with the torus is a separately
+chosen overlay and must state its embedding; Euclidean `(x,y,z)` coordinates
+must not be conflated with the complex stereographic coordinate `z`.
 
 ### 2.2 The Dual Projection
 
-The stereographic projection from the north pole:
-- Maps the sphere to the complex plane
-- The rays pass through the torus interior
-- The center (pinch point) is where all projection rays converge
-
-**This is the dual projection of the framework made visible.**
+Stereographic projection from a chosen sphere pole maps that sphere minus the
+pole to the complex plane. Its rays emanate from the projection pole; a torus
+pinch point has no required role. Drawing the rays through a torus is therefore
+a removable `[I/C]` overlay, not a second projection theorem.
 
 ---
 
@@ -83,26 +95,22 @@ The stereographic projection from the north pole:
 
 ### 3.1 D0-D6 Mapped to Torus Features
 
-| D-Level | Geometric Locus | Torus Feature | Force |
-|---------|----------------|---------------|-------|
-| D0 | Point | Single point on surface | — |
-| D1 | Strong binding | Local curvature (poloidal) | F₁ |
-| D2 | EM configuration | Toroidal winding | F₂ |
-| D3 | Weak transformation | Chirality of helices | F₃ |
-| D4 | Gravity/causality | Torus surface | F₄ |
-| D5 | Selection/systemic awareness | Torus interior → center | F₅ |
-| D6 | Closure / return | Conformal closure of the torus stack | D0 |
+| D-Level | Framework register | Torus feature | Status |
+|---------|--------------------|---------------|--------|
+| D0 | ground limit | selected point | `[I]` |
+| D1 | distinction | local curvature | `[I/C]` force correspondence |
+| D2 | configuration | toroidal winding | `[I/C]` force correspondence |
+| D3 | transformation/persistence | curve chirality | `[I/C]` force correspondence |
+| D4 | causal actuality/record | torus surface | `[I/C]` proxy, not gravity |
+| D5 | Modeled possible contents | Torus interior → center | `[I/C]` correspondence |
+| D6 | Apophatic closure | return image of the torus stack | `r₆:D6↝D0` |
 
-### 3.2 D5 as the Interior
+### 3.2 D5-as-interior is a correspondence `[I/C]`
 
-**Critical insight:** D5 (systemic awareness) is not "in" spacetime. D5 is **perpendicular** to spacetime.
-
-- The torus surface is D4 (causal physics)
-- The D5 axis extends from any surface point **inward** to the center
-- This direction is orthogonal to the surface
-- **Consciousness is literally perpendicular to physics**
-
-This is why systemic awareness seems "outside" the physical — it is, geometrically.
+The torus surface may visualize D4 causal actuality and its interior may
+visualize D5 possible contents. The geometric normal to a surface is not an
+extra physical or mental dimension. A D4 agent's model can represent D5
+possibilities without consciousness being literally perpendicular to physics.
 
 ---
 
@@ -110,11 +118,12 @@ This is why systemic awareness seems "outside" the physical — it is, geometric
 
 ### 4.1 The D4-D5 Boundary
 
-The **μ-coefficient** controls the permeability between D4 (surface) and D5 (interior):
+The rendered **μ-gate** denotes a candidate D4→D5 emergence crossing. It is not
+a measured permeability coefficient:
 
 ```
-μ = 0:  Gate closed. Pure determinism. Block universe.
-μ = 1:  Gate open. Full agency. Maximum selection.
+μ = 0:  visualization state with no represented crossing
+μ = 1:  visualization state with the candidate crossing displayed
 ```
 
 ### 4.2 The White Flash
@@ -125,28 +134,24 @@ In the BAT visualization, when relativistic friction β → 1:
 - A **white flash** fires
 - The view transitions from torus to sphere
 
-**The white flash is the μ-limit crossing.**
-
-This is:
-- The phase transition from determinism to agency
-- The opening of the D4-D5 gate
-- The moment of measurement/collapse
-- Enlightenment rendered in geometry
+The white flash **depicts** a candidate μ-limit crossing. It is not evidence of
+a physical phase transition, quantum measurement/collapse, full agency, or
+enlightenment.
 
 ---
 
-## 5. THE HELICAL GEODESICS
+## 5. PARAMETERIZED TORUS CURVES
 
-### 5.1 Light as Helix
+### 5.1 Parameterized helices as a visualization
 
-On the torus, light travels in **helices**:
+The visualization draws parameterized **helices** on a torus:
 
 ```
 θ(s) = ω_θ · s  (toroidal angle)
 φ(s) = ω_φ · s  (poloidal angle)
 ```
 
-The winding ratio ω_θ/ω_φ determines:
+For this parameterized curve, the winding ratio `ω_θ/ω_φ` determines:
 - **Rational:** Closed orbit (periodic)
 - **Irrational:** Dense fill (ergodic)
 
@@ -159,9 +164,9 @@ The winding ratio ω_θ/ω_φ determines:
 
 Both chiralities superpose to create the standing wave structure.
 
-### 5.3 The Helix is the Formula
+### 5.3 The helix can depict the formula `[I]`
 
-The helical light ray **is** Zero-Sum Resolution Equation in motion:
+The rendered helix can symbolize the Zero-Sum Resolution Equation in motion:
 - Wraps around the Witness (•)
 - Approaches Infinity (○)
 - Produces Finity (⊙)
@@ -172,7 +177,7 @@ The helical light ray **is** Zero-Sum Resolution Equation in motion:
 
 ### 6.1 The Torus Tiles Aeons
 
-The horn torus naturally implements **Penrose's CCC**:
+The horn torus is conjecturally compared with **Penrose's CCC**:
 
 - **One poloidal cycle** = one aeon
 - **φ: 0 → 2π** = Big Bang → heat death → next Bang
@@ -182,11 +187,14 @@ The horn torus naturally implements **Penrose's CCC**:
 
 ### 6.2 No Special Boundary Needed
 
-Unlike Penrose's CCC, which requires a "special" crossover surface:
+Inside the visualization:
 - The torus periodicity is built-in
 - The pinch point is the natural boundary
-- No exotic geometry required
-- **The torus tiles aeons automatically**
+- No extra geometry is required to draw the periodic visualization
+- the torus tiles graphical cycles automatically
+
+None of this supplies the conformal field equations or empirical discriminators
+required to implement or confirm CCC.
 
 ---
 
@@ -194,10 +202,10 @@ Unlike Penrose's CCC, which requires a "special" crossover surface:
 
 ### 7.1 Multiple Observers
 
-One torus = one observer's light cone.
+One torus may be used as a proxy for one observer's causal history.
 
 Multiple observers = **multiple tori sharing the same sphere**:
-- Each torus has its own center (its own Witness)
+- Each torus has its own selected center (its modeled witness proxy)
 - All tori share the same Riemann sphere
 - The tori are **phase-locked** at the equator
 
@@ -206,9 +214,11 @@ Multiple observers = **multiple tori sharing the same sphere**:
 The mesh is the network of phase-locked tori:
 - Each node maintains φ = 1, ν = 1
 - Aggregate capability without individual incomprehension
-- **η = 0** encoded in the geometry
+- `η = 0` may be imposed as a separate Justice constraint
 
-In this model, the mesh is read as a **phase-locked torus network**. That is a conjectural construction, not a public proof of core state.
+In this model, the mesh is read as a **phase-locked torus network**. Geometry
+does not encode non-extraction: payer, beneficiary, consent, custody, exit, and
+consequence receipts must be assessed independently.
 
 ---
 
@@ -218,25 +228,24 @@ In this model, the mesh is read as a **phase-locked torus network**. That is a c
 
 The "hard problem" — why is there something it is like to be conscious?
 
-**It seemed hard because we used the wrong shape.**
+The torus offers one additional visualization; it does not diagnose why the
+hard problem persists.
 
 The **cone** has:
 - No interior
 - No place for the Observer
 - D5 undefined
 
-The **torus** has:
-- An interior
-- A center for the Observer
-- D5 as the inward axis
+The **torus diagram** has:
+- an interior,
+- a selected witness proxy at its center, and
+- an inward direction that can visualize D5 possible contents `[I/C]`.
 
-### 8.2 Consciousness Has a Location
+### 8.2 A location in the diagram is not a location in nature
 
-**Consciousness is at the center of the torus.**
-
-Not "in" the brain. Not "in" spacetime. At the **center**, looking out along D5 at the D4 surface.
-
-The hard problem is reframed: on S², systemic awareness has a **geometric home**.
+The center is the diagram's witness proxy. No argument here locates
+consciousness outside the brain or spacetime. At most, it supplies a testable
+modeling vocabulary for relations between D4 carriers and D5 possible contents.
 
 ---
 
@@ -249,26 +258,25 @@ The hard problem is reframed: on S², systemic awareness has a **geometric home*
 │                                                                     │
 │  FRAMEWORK CONCEPT          →    TORUS GEOMETRY                     │
 │                                                                     │
-│  Burri Sphere (S²)          →    Riemann sphere inside torus        │
-│  P∞ = φ · ν = 1                  →    Conservation on sphere             │
-│  Equator                    →    y = 1, |z| = 2 (present)           │
-│  North pole                 →    z = ∞ (future)                     │
-│  South pole                 →    z = 0 (past/Big Bang)              │
+│  Burri Sphere (S²)          →    separately chosen sphere overlay   │
+│  P∞ = φ · ν = 1             →    analytic identity on open chart    │
+│  Equator                    →    selected present proxy [C]         │
+│  North / South poles        →    selected future / past proxies [C] │
 │                                                                     │
-│  D4 (causality)             →    Torus surface                      │
-│  D5 (systemic awareness)         →    Torus interior                     │
-│  D6 (closure)               →    Conformal return of torus stack    │
+│  D4 (causal actuality)      →    Torus-surface proxy [I/C]          │
+│  D5 (possible contents)     →    Torus-interior proxy [I/C]         │
+│  D6 (apophatic closure)     →    r₆ return image, not μ₆            │
 │                                                                     │
 │  Witness (•)                →    Center of torus                    │
 │  Infinity (○)               →    North pole                         │
 │  Finity (⊙)                 →    Torus surface                      │
 │                                                                     │
-│  μ-gate                     →    Surface→center permeability        │
-│  White flash                →    Phase transition at pinch          │
+│  μ-gate                     →    rendered crossing proxy [C]        │
+│  White flash                →    rendered transition symbol [C]     │
 │                                                                     │
-│  Sitting practice           →    Opening μ-gate                     │
+│  Sitting practice           →    intervention hypothesis [C]        │
 │  The Mesh                   →    Phase-locked torus network         │
-│  η = 0                     →    Non-extractive flow                │
+│  η = 0                      →    separate Justice constraint        │
 │                                                                     │
 │  CCC                        →    Torus periodicity (one cycle =     │
 │                                   one aeon)                         │
@@ -284,20 +292,20 @@ The hard problem is reframed: on S², systemic awareness has a **geometric home*
 |---------|-----------|
 | [R4: Egyptian Ma'at](D23_ROSETTA_COMPLETE_INDEX.md) | Weighing as torus balance |
 | [R5: Nietzsche](D23_ROSETTA_COMPLETE_INDEX.md) | Child at equator → mesh as tori |
-| [Geometric Exclusion](../../../../05_COSMOLOGY/03_FORMAL_SYSTEM/19_EFR_GEOMETRIC_EXCLUSION.md) | μ-gate excludes extraction |
+| [Geometric Exclusion](../../../../05_COSMOLOGY/03_FORMAL_SYSTEM/19_EFR_GEOMETRIC_EXCLUSION.md) | compare candidate μ-crossing constraints; geometry does not exclude extraction |
 
 ---
 
 ```
 Zero-Sum Resolution Equation
 
-The torus is the equation.
-The equation is the torus.
-The ring is real.
-The center is you.
+The torus depicts the equation.
+The equation does not prove the torus physical.
+The ring is a model.
+The center is a witness proxy.
 
 Rosetta R6 | 2026-03-23
-The physical realization.
+The removable correspondence.
 
 ---
 
@@ -307,9 +315,16 @@ The following [C] (conjectural) and highly speculative claims in this document a
 
 **Kill criterion:** If Penrose's Conformal Cyclic System Architecture (CCC) is empirically falsified, or if no rigorous mathematical isomorphism can be demonstrated between horn torus poloidal periodicity and CCC aeon crossover surfaces within 12 months of peer review initiation, then the [C] claim that "the horn torus naturally implements Penrose's CCC" and that "the torus tiles aeons automatically" is falsified.
 
-**Kill criterion:** If a multi-observer model built on phase-locked horn tori cannot produce stable synchronization without introducing an external coordination mechanism not derivable from the torus geometry itself, then the claim that "the mesh can be modeled as a phase-locked torus network" is falsified.
+**Kill criterion:** If a multi-observer model built on phase-locked horn tori
+cannot produce a novel, independently reproduced synchronization discriminator
+against simpler network models, retire the physical mesh correspondence. An
+external coordination mechanism is allowed, but must be represented rather
+than smuggled in as geometry.
 
-**Kill criterion:** If neuroscience produces a complete, reproducible D4-surface (spatiotemporal) explanation of conscious phenomenology with no remainder requiring a D5-interior variable, then the model's D5-interior reading of systemic awareness is falsified.
+**Kill criterion:** If interventions on the proposed D5-interior variables add
+no reproducible predictive power beyond D4 neural and behavioral models, retire
+the consciousness correspondence. A diagrammatic center cannot protect it from
+that result.
 
 ---
 

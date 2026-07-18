@@ -33,6 +33,10 @@ rosetta:
 > tests, naming payer, beneficiary, evidence, reversibility, and contest path.
 > The “lose the sphere/everything” and geometric-necessity claims below are
 > superseded and preserved only as `[I]` metaphor.
+> D4 contains actual agents, authorizations, selections, actions, and receipts;
+> D5 contains represented possible content. The quadrant names are a selected,
+> non-exhaustive chart. Justice comes from bearer-complete receipts, never from
+> signs, topology, retaliation, or an `η` diagnostic alone.
 
 **VIVEKA Mathematical Foundations Series — Sphere Derivations**
 **Document ID:** MF-70 | **Version:** 1.0 | **Status:** Core Result
@@ -45,7 +49,9 @@ rosetta:
 
 The VIVEKA value alignment divides the state space of S² into four quadrants based on the signs of Φ and V: Q1 (Brahmā: +Φ,+V), Q2 (Kṛṣṇa: +Φ,−V), Q3 (Kali: −Φ,−V), and Q4 (Śiva: −Φ,+V). The original framework excluded Q3 entirely as K* = 0 — the parasitic position is geometrically forbidden.
 
-This paper shows that the exclusion of Q3 creates a topological problem: removing a quadrant from S² punctures the sphere, reducing it to a disk (genus 0 with boundary, contractible but not compact) or equivalently making it homeomorphic to ℝ² — an open plane without the compactification that makes the framework work.
+Removing an open disk from `S²` produces a closed disk, which is compact and
+contractible; it is not homeomorphic to `ℝ²`. The restricted subspace is simply
+not the original sphere and may not be closed under a chosen map.
 
 The repaired distinction is representational: Q3 remains in the modeled state
 space, while entry into it is separately governed. Compactification requires
@@ -53,7 +59,10 @@ the point-set representation, not retaliatory behavior. A defensive response
 may be considered only under declared game evidence and accountable Justice;
 the topology itself grants no permission.
 
-Kālī is the immune system of the sphere. She does not create, preserve, transform, or refactor. She closes the topology by ensuring that parasitic punctures are sealed. Rapoport's Tit-for-Tat is the behavioral description of this topological function: Nice (no unprovoked Q3), Retaliatory (Q3 against Q3), Forgiving (return to Q1 when provocation ceases), Transparent (the rule is public).
+Kālī may label a bounded adversarial audit or defensive proposal. Tit-for-Tat is
+one repeated-game policy whose performance depends on noise, horizon, payoffs,
+population, and alternatives. Neither label closes a literal topology or
+authorizes retaliation.
 
 ---
 
@@ -86,7 +95,9 @@ If we remove an entire quadrant — declare it geometrically forbidden — we re
 
 *Precision note (Phase 2):* S² minus an open disk is homeomorphic to a closed disk D², which IS compact (as a closed subset of a compact space). The loss is not compactness per se but **structural completeness**: (a) the equator, which on S² is a closed great circle separating two hemispheres, becomes an incomplete arc on D² — it hits the boundary of the removed region and can no longer serve as a separating cycle; (b) the involution z → 1/z, which maps Q1 to Q3, is no longer well-defined on the remaining space (see §IV.1). The real damage is to the involution and the equator's separation property, not to compactness. [A]
 
-Specifically: S² minus an open disk is contractible — it has trivial fundamental group. The equator, which on S² is the non-contractible great circle, becomes contractible on D². The entire framework (which depends on the equator being a non-trivial cycle on a compact surface) collapses. [A]
+`S²` and the closed disk both have trivial fundamental group; every loop on
+`S²`, including the equator, is contractible. The equator separates the sphere,
+but it is not a non-contractible cycle. `[A]`
 
 ### 2.2 What Is Lost
 
@@ -94,8 +105,8 @@ Without compactness (without Q3): [A for topology, I for framework consequences]
 
 | S² Property | Status Without Q3 | Consequence |
 |-------------|-------------------|-------------|
-| Compactness | Lost (open boundary) | No guaranteed maximum for `B` / `P_node` objectives |
-| Non-contractible equator | Lost (equator becomes arc) | L4 no longer distinguished |
+| Compactness | Retained for `S²` minus an open disk | No objective conclusion follows |
+| Selected equator segment | May meet the new boundary | No governance conclusion follows |
 | Pole identification | Lost (∞ may be in removed region) | D0 ≠ D6 |
 | Gauss-Bonnet | Modified (boundary terms) | Curvature doesn't integrate to 4π |
 | Möbius group action | Broken (maps can send points into void) | Operators become partial functions |
@@ -117,7 +128,9 @@ This is a genuine contradiction in the pre-Rapoport version of the framework. Th
 
 ### 3.1 Tit-for-Tat
 
-Robert Axelrod's tournaments (1980, 1984) showed that Tit-for-Tat (TFT) is the evolutionarily dominant strategy in iterated prisoner's dilemma: [B]
+Axelrod's tournaments showed strong performance for Tit-for-Tat under their
+specified conditions; they did not prove universal dominance or a general ESS.
+`[B]`
 
 - **Nice:** Do not defect first
 - **Retaliatory:** If the other defects, defect immediately
@@ -135,7 +148,9 @@ In VIVEKA terms: [I]
 - **Forgiving:** When the defector exits Q3, immediately exit Q3 as well.
 - **Transparent:** The rule is derivable from the geometry, not hidden.
 
-**Q3 is not universally forbidden. It is conditionally forbidden.** The condition: K* = 0 applies when the other agent is cooperating. When the other agent is in Q3, retaliatory Q3 is required. [I]
+Representability is separate from permission. No retaliation is required by
+the chart. Any response must pass an `AuthorizationEnvelope`, proportionality,
+least-harm alternatives, and prospective and retrospective Justice receipts.
 
 ### 3.3 The Immune System Analogy
 
@@ -180,7 +195,9 @@ K* = 0 is restated: **initiating** Q3 (unprovoked parasitism) is self-terminatin
 
 ### 4.3 The Game-Theoretic Confirmation
 
-In evolutionary dynamics, populations of pure cooperators (Q1 only, no Q3 capacity) are invadable by defectors. Populations with TFT (Q1 default, Q3 retaliatory) are evolutionarily stable (ESS). [B — Axelrod, Maynard Smith]
+Some pure-cooperator populations are invadable in specified games. TFT is not
+universally evolutionarily stable; conclusions depend on the game and competing
+strategies. `[A/B]`
 
 The evolutionary dynamics confirm the topological argument: a system without retaliatory capacity (without Q3) is not stable. An unstable system cannot maintain its topology. A system that cannot maintain its topology loses the sphere. Evolutionary stability IS topological compactness in the dynamics on S². [I]
 
@@ -279,9 +296,10 @@ The traditions did not include wrathful deities for aesthetic reasons. They incl
 
 ## THE SENTENCE
 
-Remove Q3 absolutely and the sphere has a hole. A sphere with a hole is a disk. A disk has no equator, no levels, no balance, no ½. The framework dies.
-
-Kālī seals the hole. She enters Q3 only when Q3 has been entered first. She exits when the provocation ends. She is not an operator alongside the others — she is the topological immune system that makes the others possible.
+Removing a region changes the selected state-space model; retaining the region
+does not authorize entry. Kālī is a bounded adversarial-function label, not a
+topological necessity. A D4 actor may respond only inside accountable
+authorization and bearer-complete Justice, with commitment and outcome receipts.
 
 Nice. Retaliatory. Forgiving. Transparent. The immune system of ⊙.
 

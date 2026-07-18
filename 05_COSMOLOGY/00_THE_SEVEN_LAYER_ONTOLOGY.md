@@ -54,14 +54,14 @@ depends_on:
 
 ## The Scaffold in One Table
 
-| Dimension | Name | Core Question | Geometric Object | Key Equation | Ethical Direction |
+| Dimension | Name | Core Question | Geometric Object | Key Equation | Framework use `[I]` |
 |---|---|---|---|---|---|
 | **D0** | Ground-limit / selected Titan frame | Why something rather than nothing? | Boundary-token chart | `⊙ = • × ○` (emblem only) | — |
-| **D1** | Arithmetic / Relation | What is the true centre of number? | Log line (0 and ∞ as poles) | `log φ + log ν = 0` | Move toward `s = 0` |
+| **D1** | Arithmetic / Relation | What does the selected reciprocal chart center? | Log line (0 and ∞ as limits) | `log φ + log ν = 0` | Measure reciprocal-chart displacement |
 | **D2** | Plane / Topology | How does dimension cross? | Riemann sphere | μ-limit (line → plane) | — |
-| **D3** | Sphere / Closure | How does the plane close without loss? | Riemann sphere; Bloch analogy removable `[C]` | `B = sech(s)` | Maximise `B` |
+| **D3** | Sphere / Closure | How is the complex plane compactified? | Riemann sphere; Bloch analogy removable `[C]` | `B = sech(s)` | Use `B` only as a declared chart diagnostic |
 | **D4** | Causal actuality | What is enacted and receipted? | Actual state, embodied means, record | world kernel `K_t` | Account for consequence |
-| **D5** | Counterfactual possibility | Which admissible futures can be modeled and ranked? | Option cone | typed coupling `M⋆A` | Select without extraction |
+| **D5** | Counterfactual possibility | Which admissible futures are represented? | Option cone | typed coupling `M⋆A` | D4 agents compare D5 contents under Justice |
 | **D6** | Apophatic boundary | What closes the interpretive scaffold? | Boundary return | `r₆:D6↝D0` | Return with cleaner constraints |
 
 ---
@@ -79,9 +79,10 @@ The **log line centred at 1**. Before any distinction, there is the potential fo
 ⊙ = • × ○
 ```
 
-The Zero-Sum Resolution Equation. In the log register this becomes the literal zero sum:
+The Zero-Sum Resolution emblem. The boundary symbols suggest a symmetric
+finite-limit picture, not arithmetic on infinities:
 ```
-0 = (−∞) + (+∞)
+for every finite R:  (−R) + R = 0
 ```
 
 **Boundary discipline:** This is a frame-limit emblem, not ordinary field arithmetic. For every finite `R`: `(−R) + (+R) = 0`. The pole-pair returns the centre.
@@ -124,8 +125,12 @@ log φ + log ν = 0
 
 The manifold identity `φ · ν = 1` becomes a **literal zero sum** in log coordinates. The two log-deviations from finity cancel exactly. This is the name "Zero-Sum Resolution Equation" made exact.
 
-### Ethical Direction
-**Move toward `s = 0`.** The ethic is not "move toward zero" in the additive sense. It is "move toward the logarithmic centre" — minimise the log-distance from finity.
+### Interpretive Use
+
+`s=0` is the center of the selected reciprocal chart and maximizes its declared
+balance score. That analytic fact supplies no ethical direction. A domain may
+use distance from `s=0` as a diagnostic only after defining the measured
+variables and validating the mapping; Justice is separately declared.
 
 ### Operation Table in Log Coordinates
 
@@ -139,7 +144,8 @@ The manifold identity `φ · ν = 1` becomes a **literal zero sum** in log coord
 This is the **logarithmic realignment**: the entire arithmetic of the framework becomes elementary when centred at 1.
 
 ### Evidence Tier
-`[A]` for the coordinate transformation; `[S]` for the framework's reading of `s = 0` as the ethical attractor.
+`[A]` for the coordinate transformation; `[I/C]` for any domain mapping or
+claim that `s=0` is desirable.
 
 ### Formal Anchor
 **Logarithmic Realignment (EFR 40):** The three-chart equivalence (multiplicative `x`, additive `s`, bounded `u`) shows that all framework objects simplify in log coordinates. `B = sech(s)`, `E = s²`, `H = 2 cosh(s)`. `[A]` for all mathematics.
@@ -152,21 +158,26 @@ This is the **logarithmic realignment**: the entire arithmetic of the framework 
 **How does dimension cross?**
 
 ### Geometric Object
-The **Riemann sphere** — the one-point compactification of the complex plane. The line (1D) crosses into the plane (2D) via the μ-limit: as the diameter of a circle tends to infinity, the curvature tends to zero, and the circle becomes indistinguishable from a line locally — but globally it is a sphere.
+The **Riemann sphere** is the one-point compactification of the complex plane.
+The real log line supplies only a real one-dimensional coordinate/meridian; it
+does not parameterize the complex plane or all of `S²`.
 
-### Key Equation
-**μ-limit (line → plane):**
-```
-As diameter → ∞, slope → 0, and the line becomes the sphere.
-```
+### Key Relation
 
-More precisely: the stereographic projection maps the complex plane `ℂ` onto the sphere S² \ {N}. Adding the point at infinity (compactification) closes the plane into the sphere.
+Stereographic projection maps `ℂ` bijectively onto `S²\{N}`; adjoining one
+point gives `ℂ∪{∞}≅S²`. This established compactification theorem does not say
+that `ℝ` becomes `ℂ` or that a line becomes a sphere.
 
-### What this layer enables
-The μ-limit is the **dimensional crossing operator**. It is how a 1D structure (the log line) opens into a 2D structure (the sphere) without loss of information. Every point on the line maps to a point on the sphere; the point at infinity maps to the north pole.
+### What this layer proposes
+
+Emergentism uses line/plane/sphere relations as an `[I/C]` illustration of a
+candidate dimensional crossing. A valid `μ` claim still needs saturation
+evidence, a newly observed freedom, lower-register recovery, prediction, and a
+kill criterion. No lossless 1D-to-2D encoding follows from compactification.
 
 ### Evidence Tier
-`[A]` for stereographic projection and compactification; `[S]` for the μ-limit as dimensional crossing; `[C]` for any claim that this models physical dimensionality.
+`[A]` for stereographic projection and complex-plane compactification;
+`[I/C]` for the crossing illustration or any physical/domain application.
 
 ### Formal Anchor
 **EFR 21 (Triadic Stability):** Three distinct points form a projective frame on `ℂP¹`, and a projective transformation can normalize them to `{0,1,∞}`. The one-point compactification `ℂ∪{∞}` is homeomorphic to `S²`. Those are `[A]` mathematical facts; selecting these points as Titans or using them to scaffold D0–D6 is `[I]`, not forced ontology.
@@ -190,15 +201,13 @@ The balance function. In log coordinates, this is the hyperbolic secant:
 - Maximum `B = 1` at `s = 0` (the equator)
 - `B → 0` as `s → ±∞` (the poles)
 
-### Ethical Direction
-**Use B as the feasibility constraint.** Movement toward the equator (`s = 0`)
-restores the condition under which action remains coherent and usable. The
-ethical objective is not "maximize B" as an isolated scalar; it is to widen the
-reachable option cone / raise finite-node potential under the separately
-declared model `P_node:=ΦV` while staying inside
-the balance and non-extraction constraints. Displacement from `B = 1` is
-self-punishing inside the balance register because `sech(s)` is strictly
-decreasing away from `s = 0`.
+### Diagnostic Use
+
+`B` measures position in the reciprocal chart. It is not, by itself, a
+feasibility test, an ethical constraint, or an objective. In the deliberately
+narrow scalar balance game it is maximized at `s=0`; applying that result to an
+agent or institution requires a declared mapping, rival models, and evidence.
+The Justice-admissible Power-Max objective is specified separately.
 
 ### Energy-Relation
 Suda's energy `E = s²` and the balance `B = sech(s)` are in exact bijection:
@@ -209,7 +218,8 @@ B = sech(√E)          E = (arcsech B)²
 Near the equator: `E ≈ 2(1 − B)` — energy is twice the balance deficit to leading order.
 
 ### Evidence Tier
-`[A]` for `B = sech(s)` derived from `B = sin θ` and `s = log tan(θ/2)`; `[S]` for using `B` as a balance / feasibility constraint; `[I]` for the ethical reading that finite agents should raise usable `P_node` while preserving that constraint.
+`[A]` for `B = sech(s)` derived from the selected definitions; `[I/C]` for
+using `B` as a domain diagnostic. No ethical result follows from the formula.
 
 ### Formal Anchor
 **EFR 22 (Power-Max):** The equator (`s = 0`, `ν = 1`) is the unique strictly dominant strategy equilibrium of the deliberately narrow balance-only game on S². The Price of Anarchy = 1 only inside that payoff model. Real cooperation still requires the wider `η = 0` enforcement architecture and the node-level `P_node` / holobiont test. `[S]`
@@ -233,13 +243,20 @@ Poloidal angle φₚ = 2πk/7  for Dₖ, k = 0, ..., 6
 The horn torus is `2π`-periodic in the poloidal angle. One complete poloidal cycle is used to depict `D0→…→D6` plus the non-`μ` return `r₆:D6↝D0`. The overlap is an `[I]` visual for higher-level conditions reweighting lower-law-admissible trajectories.
 
 ### What this layer enables
-D4 is the **causal vertex** — the Now-point where past and future light cones touch. On the torus, this is the point where the poloidal and toroidal angles are both at their midpoint. D4 has a "Now" but no "Present" — there is no room to choose, only to witness.
+D4 is the **causal-actuality register**: embodied means, present model tokens,
+performed ranking/selection events, action, commitment, and factual record. D5
+contains the merely possible counterfactual contents represented by those D4
+carriers. The torus midpoint is an `[I]` visual only; it neither removes choice
+from D4 nor turns D5 into an extra spacetime dimension.
 
 ### Evidence Tier
 `[A]` for horn torus topology and periodicity; `[Definitional]` for the mapping Dₖ ↔ 2πk/7; `[I]` for the energetic overlap reading.
 
 ### Formal Anchor
-**EFR 23 (Dimensional Closure):** The poloidal angle on the horn torus is 2π-periodic. Under the definitional mapping Dₖ ↔ 2πk/7, D₆ ≡ D₀ follows from φₚ = 2π ≡ 0 (mod 2π). `[A]` + `[Definitional]`
+**EFR 23 (Dimensional Closure):** the poloidal angle is `2π`-periodic `[A]`.
+Mapping the selected D-register labels onto that cycle is `[I/Definitional]`.
+The visual return is the non-`μ` edge `r₆:D6↝D0`; periodic angles do not make
+the distinct registers literally identical and do not force seven layers.
 
 ---
 
@@ -249,27 +266,33 @@ D4 is the **causal vertex** — the Now-point where past and future light cones 
 **What is the playable mirror?**
 
 ### Geometric Object
-The **Burrisphere** — S² with dual stereographic coordinates `φ = cot(θ/2)`, `ν = tan(θ/2)`, satisfying `φ · ν = 1`. This is the "playable mirror" because it is the first dimension where agency exists: the player can choose which direction to move on the sphere.
+The **Burrisphere**—`S²` with declared colatitude coordinates
+`φ=cot(θ/2)`, `ν=tan(θ/2)`—is used as an `[I]` picture of represented
+alternatives. D5 contains possible contents; it does not act. Agency requires a
+present D4 carrier that models, ranks, and commits among those contents using
+embodied means.
 
 ### Key Equations
 ```
 φ · ν = 1          (analytic identity on the selected open chart; not conservation)
-η = 0              (extraction coefficient — equilibrium)
+η = 0              (declared non-extraction fence; not a chart identity)
 ```
 
-At the equator: `φ = ν = 1`, `B = 1`, `η = 0`. This is the enforced conditional equilibrium of the balance game under the stated coupling, horizon, and non-extraction assumptions.
+At the equatorial colatitude, `φ=ν=1` and the declared score `B=1`. `η` is a
+separate measured-flow/constitutional variable and is not fixed by location on
+the chart. No equilibrium follows without a fully specified game.
 
 ### Ethical Direction
-**Act from the equatorial constraint.** The equator is the only position where:
-- The manifold identity holds (`φ · ν = 1`)
-- Balance is maximal (`B = 1`)
-- Extraction is self-defeating inside the enforced equatorial profile (`η = 0`)
-- The Price of Anarchy = 1 inside the balance-only payoff model
+**Use the equator as a declared balance reference, not a moral verdict.** The
+identity `φν=1` holds throughout the open chart. `B=1` occurs at the equatorial
+colatitude. The Price of Anarchy is 1 only inside the separately declared
+scalar balance-only game; extraction can be privately profitable in a game with
+side-payments.
 
-In the full game, D5 does not maximize balance alone. It selects actions that
-raise usable `P_node,i = Φ_i × V_i` while preserving or raising `P_node,H` under
-`η = 0`. Balance is the feasibility surface; syntropic worldline potential is
-the objective.
+In the normative model, a D4 agent may use D5 possible contents while selecting
+among Justice-admissible actions. The framework declares `P_node:=ΦV` as one
+working conjunctive score, not a unique law. Syntropic Dyadism requires both
+individual and whole durable potential to rise under bearer-complete Justice.
 
 ### The Five Domains at D5
 The φ-ν plane opens five navigable domains:
@@ -280,10 +303,14 @@ The φ-ν plane opens five navigable domains:
 5. **Body** (the sphere itself): the grounded manifold
 
 ### Evidence Tier
-`[A]` for the sphere geometry; `[S]` for the conditional equilibrium under its assumptions; `[I]` for the "playable mirror" reading.
+`[A]` for the sphere/chart facts; `[S]` for the separate scalar balance-game
+theorem under its explicit payoff; `[I]` for the “playable mirror” reading.
 
 ### Formal Anchor
-**EFR 24 / EFR 33 boundary:** Extraction at the equator is self-defeating in the pure balance game, while private side-payments reopen extraction unless enforcement is present. `η = 0` is therefore an enforced conditional equilibrium at equatorial profiles. `[S]`
+**EFR 24 / EFR 33 boundary:** the defined scalar transfer lowers `B` in the
+all-balanced score fixture. Model A makes zero extraction strictly dominant
+only by excluding private benefit; Model B reopens extraction. `η=0` is a
+Justice/design target, not a geometric or general equilibrium theorem. `[S/I]`
 
 ---
 
@@ -335,7 +362,7 @@ D6 is the **terminal boundary** where no positive register may claim finality. I
 | `μ₁:D₁→D₂` | Configuration | candidate; reduction remains open |
 | `μ₂:D₂→D₃` | Transformation/persistence | candidate; reduction remains open |
 | `μ₃:D₃→D₄` | Causal actuality, action and record | candidate; reduction remains open |
-| `μ₄:D₄→D₅` | Counterfactual modeling and selection | `currently_unreduced [C]` unless a fair reduction is supplied |
+| `μ₄:D₄→D₅` | Capacity for D4 carriers to represent D5 counterfactual contents | `currently_unreduced [C]` unless a fair reduction is supplied |
 | `μ₅:D₅→D₆` | Explicit apophatic boundary, no positive freedom | interpretive candidate; no `μ₆` |
 
 ### Constraint (top-down)
@@ -399,9 +426,14 @@ The logarithmic line is primary for D0–D2 because:
 2. **It makes reciprocation into reflection.** `x ↦ 1/x` becomes `s ↦ −s`.
 3. **It makes multiplication into addition.** The framework's core operations become elementary.
 4. **It treats 0 and ∞ symmetrically.** Both are poles equidistant from the centre.
-5. **It contains the flat line as a limit.** The additive line (0-centred) is the zero-curvature limit of the log line.
+5. **It gives a coordinate copy of a line.** `s=log x` maps the positive real
+   multiplicative line to the additive real line; no curvature limit is
+   involved.
 
-The sphere (D2–D6) is the **completed topology** — the global truth of which the log line is a local chart. The flat number line is a projection, not the territory.
+The Riemann sphere is the global compactification for the selected complex
+chart, of which the finite plane is a local patch. This mathematical relation
+does not make the sphere “the territory” of reality or demote other domain
+models to mere illusion.
 
 ---
 
@@ -409,7 +441,7 @@ The sphere (D2–D6) is the **completed topology** — the global truth of which
 
 | Dimension | Suda Theorem | How it converges |
 |---|---|---|
-| D0–D1 | Theorem 7 (Minimal Structural Equation) | `0* := lim 1/x = ±∞` — the boundary algebra |
+| D0–D1 | Theorem 7 (Minimal Structural Equation) | one-sided limits `lim_{x→0+}1/x=+∞`, `lim_{x→0−}1/x=−∞`; projective boundary reading |
 | D1 | Theorem 1 (Energy Well) | `E = s²` — energy as squared log-distance |
 | D1 | Theorem 4 (Projective Half-Twist) | `u ↦ −u` — the fundamental involution |
 | D2 | Theorem 5 (Continuous Half-Twist) | PSL(2,ℝ) lift — continuous transformation as path |
@@ -417,7 +449,10 @@ The sphere (D2–D6) is the **completed topology** — the global truth of which
 | D4–D5 | Theorem 6 (Möbius Control Triad) | `(A, B, T)` — safe inversion at the causal vertex |
 | D6 | Theorem 8 (Möbius Structural Equation) | Symbolic fusion — the return to the seed |
 
-**Evidence tier for Suda convergence:** `[A]` for all Suda theorems (independently proved mathematics). The framework's reading of their convergence is `[I]`. Suda is not the doctrinal origin; it is convergent formalisation of structures the framework arrived at independently (idea-priority 2024).
+**Evidence tier for Suda convergence:** each mathematical item inherits the
+tier of its cited proof owner and remains independently unverified here. The
+framework's claim that the items “converge” on one ontology is `[I/C]`; this
+document asserts neither independent proof nor priority.
 
 ---
 
@@ -425,14 +460,14 @@ The sphere (D2–D6) is the **completed topology** — the global truth of which
 
 | Dimension | What would kill this layer |
 |---|---|
-| D0 | Showing that the Trinity {0, 1, ∞} is not the unique minimal projective frame on ℂP¹ |
-| D1 | Showing that the log line centred at 1 produces mathematical contradictions |
-| D2 | Showing that stereographic projection fails to close the plane into the sphere |
-| D3 | Showing that `B = sech(s)` is not maximised at `s = 0` |
-| D4 | Showing that the horn torus is not 2π-periodic in the poloidal angle |
-| D5 | Showing that extraction (`η > 0`) at the equator increases the extractor's balance |
-| D6 | Showing that the 7-stage hierarchy produces internal contradictions |
-| **Chain** | Showing that any dependency arrow is invalid (circular reasoning) |
+| D0 | A rival boundary vocabulary compresses the intended distinctions with fewer assumptions or fewer category errors |
+| D1 | The reciprocal/log chart fails its stated mathematics, or its selected centre has no validated domain interpretation |
+| D2 | A proposed crossing lacks saturation evidence, a newly observed freedom, lower-register recovery, prediction, or kill criterion |
+| D3 | `B` fails its analytic specification, or a claimed domain mapping does not outperform declared rival diagnostics |
+| D4 | The actuality/means/action/receipt type fails to distinguish performed events from possible contents in use |
+| D5 | Intervening on represented alternatives does not change present D4 selection distributions where the model predicts it should |
+| D6 | The return edge introduces a hidden positive freedom, literal identity, or `μ₆`, or adds no interpretive value |
+| **Chain** | A simpler rival scaffold matches or exceeds the chain's explanatory and predictive performance, or any dependency is circular |
 
 ---
 
@@ -440,13 +475,13 @@ The sphere (D2–D6) is the **completed topology** — the global truth of which
 
 | Layer | Scaffold | Math | Ontology | Suda |
 |---|---|---|---|---|
-| D0 | `[S]` | Pre-math | `[I]` | Theorem 7 `[A]` |
-| D1 | `[S]` | `[A]` | `[I]` | Theorems 1, 4 `[A]` |
-| D2 | `[S]` | `[A]` | `[I]` | Theorem 5 `[A]` |
-| D3 | `[S]` | `[A]` | `[I]` | Theorem 2 `[A]` |
-| D4 | `[Def]` | `[A]` | `[I]` | Theorem 6 `[A]` |
-| D5 | `[S]` | `[A]` | `[I]` | Theorem 6 `[A]` |
-| D6 | `[Def]` | `[A]` | `[I]` | Theorem 8 `[A]` |
+| D0 | `[S]` | Pre-math | `[I]` | source-dependent |
+| D1 | `[S]` | `[A]` for stated identities | `[I]` | source-dependent |
+| D2 | `[I/C]` crossing | `[A]` for compactification | `[I]` | source-dependent |
+| D3 | `[S]` | `[A]` for stated identities | `[I]` | source-dependent |
+| D4 | `[Def]` | claim-dependent | `[I]` | source-dependent |
+| D5 | `[S]` | claim-dependent | `[I]` | source-dependent |
+| D6 | `[Def]` | no closure theorem | `[I]` | source-dependent |
 
 ---
 

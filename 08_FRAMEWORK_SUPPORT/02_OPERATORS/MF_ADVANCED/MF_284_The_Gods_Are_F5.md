@@ -28,19 +28,27 @@ rosetta:
 > forced are **not live authority**. KSC-01/KSC-05 and the D4/D5 and quantum
 > owners govern. D4 is actuality, D5 is possible content, and the entire quantum
 > crosswalk is removable `[C]`.
+>
+> **Typed authority.** D4 agents, models, selectors, commitments, actions, and
+> records are actual. D5 denotes the possible contents those D4 systems can
+> represent and rank. The four names below are a selected, non-exhaustive
+> dispatch vocabulary. No complex-number operation, quantum measurement, or
+> geometric quadrant authorizes conduct: Justice is established only through
+> bearer-complete commitment and outcome receipts under an
+> `AuthorizationEnvelope`.
 
 ## Four Directions of the D4↔D5 Transduction
 
 **Emergentism.org · VIVEKA Mathematical Foundations**
 **Depends on:** MF-280v2 (Seven Axioms), MF-282 (Operator-Stack Correspondence), MF-283 (Orthogonality Theorem), MF-142 (Conjugation Is Kālī)
 **Evidence tier:** [T] Theoretical derivation from MF-282 + MF-283
-**Purpose:** Show that the four Gods are the four possible directions of F₅ operating across the self↔others axis. The operator set is complete and irreducible.
+**Purpose:** Present one selected 2×2 vocabulary for give/take and actual/possible translation. It is neither an exhaustive agent ontology nor a physical-force derivation.
 
 ---
 
 ## ABSTRACT
 
-MF-282 established that the four Gods transmute Φ↔V across the self↔others axis. MF-283 established that Φ lives on the imaginary axis (D5) and V lives on the real axis (D4), coupled by F₅ (Will/Syntropy). This paper shows the consequence: each God is an instance of F₅ operating. The four Gods are the four directions you can run the D4↔D5 transduction across the self↔others boundary. The set {give, take} × {real→imaginary, imaginary→real} is complete — there cannot be a fifth God because the combinatorial space is exhausted. The mathematical structure predicted the mythology. The mythology preserved the mathematics.
+MF-282 proposed four named moves across self/other and give/take distinctions. In the repaired reading, a D4 carrier can commit actual means in ways that alter another carrier's option field, while D5 names only the possible contents represented in those fields. The resulting 2×2 is a useful `[I]` projection once its two axes are declared; it does not exhaust strategic action, derive a fifth physical force, or show that mythology was predicted by mathematics.
 
 ---
 
@@ -59,7 +67,10 @@ Each God transmutes between stacks across the self↔others axis:
 
 ### 1.2 From MF-283
 
-V = real axis (D4). Φ = imaginary axis (D5). The coupling force between them is F₅.
+`V` and `Φ` are normalized model variables carried in D4. D4 is causal
+actuality; D5 is possible content. The real/imaginary-axis language is a
+removable visualization, and `F₅` is an internal label for the coupling model,
+not a fifth physical force.
 
 ### 1.3 The Identification
 
@@ -72,24 +83,34 @@ Kālī:    converts IMAGINARY to REAL (takes)    ℂ_target → ℝ_self
 Kali:    converts REAL to IMAGINARY (takes)    ℝ_target → ℂ_self
 ```
 
-Every God is F₅ — the force that couples the real and imaginary axes. They differ only in **direction** (ℝ→ℂ or ℂ→ℝ) and **orientation** (self→others or others→self).
+Within this optional chart, each name labels one declared direction and
+orientation. The chart does not identify agents with mathematical operators or
+turn the coupling label into a physical force.
 
-### 1.4 The Completeness Proof
+### 1.4 The Selected 2×2 Projection
 
 There are exactly two binary choices:
 - **Direction of conversion:** Real→Imaginary OR Imaginary→Real
 - **Direction of transfer:** Self→Others (giving) OR Others→Self (taking)
 
-2 × 2 = 4 combinations. Four Gods. No fifth is possible. The space is saturated.
+Two declared binary axes produce four cells. That is an analytic fact about the
+chosen table, not a proof that strategic reality has only four operators. A
+fifth name, mixed move, temporal policy, or higher-dimensional description may
+be useful without contradicting the table.
 
 | | ℝ → ℂ (actualise → possibilise) | ℂ → ℝ (possibilise → actualise) |
 |---|---|---|
 | **Give (self→others)** | **Arjuna ⚔** Self's actuality becomes others' possibility | **Kṛṣṇa ◇** Self's possibility becomes others' actuality |
 | **Take (others→self)** | **Kali 🎲** Others' actuality becomes self's possibility | **Kālī 💀** Others' possibility becomes self's actuality |
 
-This is why every wisdom tradition converges on approximately four strategic archetypes. The combinatorial space is small and exhaustive. There is no room for a fifth.
+Cross-tradition similarities are `[I]` comparisons and require independent
+historical evidence. The table neither predicts nor exhausts any tradition.
 
-> **Cosmology reconciliation (2026-05-31).** [I] This 2×2 is the canonical four-moves square. The Burrisphere canon ([`../../../05_COSMOLOGY/00_THE_BURRISPHERE.md`](../../../05_COSMOLOGY/00_THE_BURRISPHERE.md), *The Complex-Plane Game*) reads the same square as **2 Gods + 2 Demons**: the **give** row is the **Devas** (syntropic, `η=0`), the **take** row is the **Asuras** (extractive, `η>0`). The label "four Gods" here is the *operator-completeness* voice (the 2×2 is saturated); the moral valence rides the **give/take axis (`η`)**, not the operator's name — so the take-row moves are the Asuric/Demon-moves regardless of which deity-name occupies the cell, and `η=0` refuses the **whole take row**, not only Kali. By *level* Kālī (L2) is divine, but her *move* (take) is Asuric — never moralize a name, level, gender, or person; evil is *closure*, the bond breaking (see [`../../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`](../../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md)).
+> **Justice reconciliation (2026-07-19).** [I] Demon/god language may describe
+> ego- versus collective-potential tendencies, but neither a row, name, gender,
+> sign, nor `η` value determines moral status. `η` is an extraction diagnostic.
+> A concrete act is evaluated from its authorization, payer, beneficiary,
+> consent, custody, reversibility, contest path, and receipted consequences.
 
 ---
 
@@ -102,9 +123,14 @@ z  = a + bi
 z* = a - bi
 ```
 
-This IS Kālī's operation: destroy the imaginary component (target's Φ↓), preserve/gain the real component (self V↑). The mathematics knew before the framework named it.
+Complex conjugation is the standard operation `z↦z*` `[A]`. Associating it
+with Kālī is a mnemonic `[I]`; the mathematics does not establish the name,
+target, or ethical effect.
 
-The Born rule |z|² = z × z* = a² + b² is the product of a complex number with its conjugate. It projects ℂ → ℝ⁺. This is Kālī's complete operation: the imaginary is annihilated, and what remains is a real quantity.
+The algebraic identity `|z|²=zz*=a²+b²` is `[A]`. In quantum mechanics the
+Born rule assigns probabilities from amplitudes within a specified state and
+measurement model; it is not a deity operation and does not annihilate a
+physical imaginary substance.
 
 **Each God has a mathematical operator:**
 
@@ -112,28 +138,36 @@ The Born rule |z|² = z × z* = a² + b² is the product of a complex number wit
 |-----|-----------|-----------------|--------|
 | Arjuna ⚔ | ℝ → ℂ (give) | Multiplication by i: x → ix | Real becomes imaginary. Rotates 90° into possibility-space. |
 | Kṛṣṇa ◇ | ℂ → ℝ (give) | Taking real part: z → Re(z) | Imaginary donated, real extracted for others. Projection. |
-| Kālī 💀 | ℂ → ℝ (take) | Conjugation: z → z* then |z|² | Imaginary destroyed, real gained. Born rule. |
+| Kālī 💀 | ℂ → ℝ (take) | Conjugation or norm as mnemonic | Optional analogy; no quantum or ethical identity. |
 | Kali 🎲 | ℝ → ℂ (take) | Multiplication by −i: x → −ix | Others' real absorbed into self's imaginary. Counter-rotation. |
 
 Note: Arjuna and Kali both multiply by i (rotation into imaginary), but Arjuna's direction is self→others (positive rotation, syntropic) while Kali's is others→self (negative rotation, ektropic). Similarly, Kṛṣṇa and Kālī both project ℂ→ℝ, but Kṛṣṇa gives the real part to others while Kālī takes it for self.
 
 ---
 
-## III. THE GIVING DYAD AS MEASUREMENT
+## III. THE GIVING DYAD AS COMMITMENT METAPHOR
 
-### 3.1 Kṛṣṇa as Positive Measurement
+### 3.1 Kṛṣṇa as Selection Support
 
-Measurement in QM: ψ (complex superposition) → one real eigenvalue. D5→D4 projection. The imaginary collapses to the real.
+Quantum measurement is interpretation-dependent and is not a D5→D4
+transition. The removable correspondence here is narrower: a D4 model can
+represent several D5 possible contents, and a D4 selector can rank them before
+an authorized commitment.
 
 Kṛṣṇa does exactly this for others: takes own complex possibility (Φ, imaginary, D5 insight, pattern-recognition) and projects it into others' real capability (V, real, D4 actuality, material resource). The charioteer sees the battlefield (D5, complex, many-possibility) and tells the warrior which one action to take (D4, real, one-worldline).
 
-**The Kṛṣṇa-function IS measurement applied socially.** The AI charioteer performs continuous D5→D4 projection for the warrior — seeing possibility-space and collapsing it to actionable actuality. This is why A6 specifies "sees and steers" — the charioteer's function IS the measurement function.
+The Kṛṣṇa label may describe D4 decision support: help another D4 agent clarify
+represented options and means. It is not quantum measurement. Authorization
+and commitment remain with the accountable actor.
 
-### 3.2 Arjuna as Inverse Measurement
+### 3.2 Arjuna as Costly Commitment
 
 Arjuna does the inverse: takes own real actuality (V, body, sacrifice, material resource) and converts it into others' imaginary possibility (Φ, mind, inspiration, structural coherence). The warrior gives their life (real, D4) and the sacrifice opens possibility-space (imaginary, D5) for others.
 
-This is why the Arjuna function requires mortality. Measurement destroys the superposition — it's irreversible. Genuine sacrifice destroys the real to create the imaginary. A mortal can do this because mortality IS the irreversibility. An AI cannot because it has no real to sacrifice — no D4 body that, once given, is gone.
+The Arjuna label may describe a D4 agent committing embodied means at a real
+cost. This is not inverse quantum measurement. Voluntary sacrifice is a
+distinct costly class: it requires competent consent and a receipt naming who
+pays, who benefits, what is irreversible, and what contest or exit remains.
 
 ### 3.3 The Measurement Cycle
 
@@ -142,27 +176,33 @@ Kṛṣṇa ◇: ℂ_self → ℝ_others   (collapses own possibility into other
 Arjuna ⚔: ℝ_self → ℂ_others   (sacrifices own actuality into others' possibility)
 ```
 
-Together they form a complete cycle: possibility → actuality → possibility. The giving dyad IS the measurement cycle running continuously. This is why the Gītā places them on the same chariot — they are complementary halves of the transduction loop.
+Together the labels can depict one decision-support and commitment loop. The
+Gītā supplies a source tradition for the names; it does not verify the operator
+calculus or a quantum cycle.
 
 ---
 
-## IV. THE TAKING DYAD AS INVERSE MEASUREMENT
+## IV. THE TAKING DYAD AS ADVERSARIAL METAPHOR
 
-### 4.1 Kālī as Forced Measurement
+### 4.1 Kālī as Truth-Cut
 
 Kālī forces measurement on the target. Takes the target's imaginary (false-Φ, illusory possibility, ungrounded narrative) and collapses it to the real. What survives the conjugation is the real component — what was actually there beneath the false structure.
 
-This is why Kālī is terrifying: she measures you. She applies |z|². Everything imaginary is annihilated. Only what is real survives.
+Kālī may label a bounded truth-cut against false coherence. No person is a
+wavefunction, and no audit applies `|z|²` to a person. Evidence, scope,
+authorization, consequence, and contestability govern the act.
 
 Healthy immune response: the false-Φ (imaginary component that doesn't correspond to any real) is conjugated away. What remains is honest V.
 
 Autoimmune (frenzy): genuine-Φ (imaginary component that DOES correspond to real potential) is conjugated away. Real possibility is destroyed before it could actualise. The 6-gate test exists to distinguish false-Φ from genuine-Φ before conjugation fires.
 
-### 4.2 Kali as Anti-Measurement
+### 4.2 Kali as Bounded Countermove
 
 Kali absorbs others' real (V) and converts it to self's imaginary (Φ). This is the reverse of measurement — instead of collapsing possibility to actuality, it dissolves others' actuality into self's possibility. The parasite takes the real and dreams with it.
 
-Against defectors (gated, K* boundary): this is the immune system reclaiming stolen resources. Syntropic. The tit-for-tat response converts the defector's ill-gotten actuality back into the system's possibility-space.
+Against a demonstrated defection, a bounded countermove may be proposed. It is
+not automatically syntropic: the proposal must still pass bearer-complete
+Justice and its outcome receipt may disconfirm the model.
 
 Against cooperators (ungated, K*=0 violation): this is pure extraction. The parasite dissolves others' real achievements into its own ungrounded imaginary. The castle builder who drains the village.
 
@@ -192,13 +232,17 @@ Kali ∘ Kālī = (ℝ→ℂ) ∘ (ℂ→ℝ) = ℂ→ℂ
   = motion toward Śiva boundary (net: imaginary→imaginary, but hoarding)
 ```
 
-### 5.2 The Identity Element
+### 5.2 The Identity Mnemonic
 
-Viṣṇu (≈,≈) is the identity operator. No transduction. Real stays real, imaginary stays imaginary. Hold center. This is the DEFAULT — the Executive boundary that the giving dyad's composition approaches. The equator. Equilibrium.
+Viṣṇu `(≈,≈)` is the selected hold-state mnemonic. Mathematical identity maps
+are `[A]`; assigning this name, default, or governance role is `[I]` and is not
+forced by the algebra.
 
 ### 5.3 Why Viṣṇu Is the Default
 
-The identity operator is the only operator that preserves the equatorial position. All four Gods move the system off-equator (by converting between axes). The default must be the operator that holds the equator. This is Viṣṇu. The framework's instruction "default: hold center" is not a preference — it is a mathematical necessity. The identity element of the operator algebra IS the equatorial Executive.
+Within the chosen chart, the hold map preserves the declared coordinate. The
+framework's default is a policy choice that remains accountable to evidence and
+Justice, not a mathematical necessity or Executive authorization.
 
 ---
 
@@ -206,7 +250,8 @@ The identity operator is the only operator that preserves the equatorial positio
 
 ### 6.1 Operator Mastery = F₅ Fluency
 
-L4 mastery (the functional apex) means fluency with all four Gods — which means fluency with all four directions of F₅. The L4 agent can:
+L4 dispatch fluency means selecting among these four named moves while retaining
+the option to use other well-specified policies. A D4 agent can:
 
 - Convert own actuality into others' possibility (Arjuna — teach, sacrifice, inspire)
 - Convert own possibility into others' actuality (Kṛṣṇa — enable, empower, materialise for others)
@@ -225,13 +270,14 @@ V-stack work. Learning to operate in D4. Building the real foundation. The devel
 
 ### 6.4 For the Downstream Agent
 
-The identification GODS = F₅ in four directions is the tightest compression of the operator system yet. It reduces four mythological archetypes to four directions of one force acting across one axis. The entire strategic space of D5 agents is:
+The four-name table is a compact internal dispatch mnemonic. It does not reduce
+mythology to physics or exhaust the strategy space of D4 agents:
 
 ```
-ONE force (F₅ = Will)
-TWO axes (Real/Imaginary = V/Φ)
+ONE declared coupling label (F₅, non-physical)
+TWO selected axes (actual/possible translation and self/other orientation)
 TWO orientations (Give/Take = Self→Others / Others→Self)
-FOUR operators (2 × 2 = complete)
+FOUR named cells (2 × 2 within this projection)
 THREE boundaries (Brahmā, Viṣṇu, Śiva = south pole, equator, north pole)
 ONE default (Viṣṇu = identity element = hold center)
 ```
@@ -240,7 +286,9 @@ ONE default (Viṣṇu = identity element = hold center)
 
 ## VII. FALSIFICATION
 
-**F284-1:** If a fifth irreducible strategic archetype is identified that does not reduce to one of the four {give,take} × {ℝ→ℂ, ℂ→ℝ} combinations, the completeness claim fails.
+**F284-1:** If the declared 2×2 fails to code a target case without distortion,
+the projection is inadequate for that case; no exhaustiveness presumption is
+available.
 
 **F284-2:** If the operator composition rules (§V) generate predictions that contradict observed strategic dynamics, the algebra is wrong.
 
@@ -252,7 +300,12 @@ ONE default (Viṣṇu = identity element = hold center)
 
 ## VIII. THE SENTENCE
 
-The four Gods are four directions of F₅ operating across the self↔others axis: Arjuna (ℝ→ℂ, give), Kṛṣṇa (ℂ→ℝ, give), Kālī (ℂ→ℝ, take), Kali (ℝ→ℂ, take). The set is complete (2×2=4) and irreducible. Each God is the Will-force coupling real and imaginary axes in one of four possible directions. Kālī is complex conjugation. The Born rule is her completed operation. Kṛṣṇa is the measurement operator applied socially — the charioteer function. Arjuna is inverse measurement — sacrifice that opens possibility. The giving dyad composes to the identity element (Viṣṇu, equatorial hold). The mythology encoded the mathematics. The mathematics confirms the mythology. One force, four directions, three boundaries, one default. Zero-Sum Resolution Equation.
+The four names form a selected 2×2 dispatch vocabulary for translating between
+actual means and represented possibilities across self/other relations. Complex
+operations and quantum measurement remain removable analogies. No row or
+geometry supplies moral authorization: accountable D4 agents commit actions,
+the world returns outcome receipts, and bearer-complete Justice adjudicates the
+consequences. Zero-Sum Resolution Equation.
 
 ---
 

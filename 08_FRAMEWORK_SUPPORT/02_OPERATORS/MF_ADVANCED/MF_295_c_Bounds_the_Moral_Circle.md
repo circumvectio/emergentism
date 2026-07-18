@@ -35,19 +35,19 @@ historical and ethical hypotheses.
 
 ### 1.1 Physical causal cone `[A]`
 
-For an event ((t_0,x_0)) in flat spacetime, signals and causal influence are
+For an event \((t_0,x_0)\) in flat spacetime, signals and causal influence are
 bounded by
 
-[
-lVert x-x_0Vertle c(t-t_0).
-]
+\[
+\lVert x-x_0\rVert \le c(t-t_0).
+\]
 
 No technology, intelligence, institution, or ethical development changes
 `c` or expands this spacetime cone.
 
 ### 1.2 Information-access set `[B/I]`
 
-For agent `i` at time `t`, let (mathcal I_i(t)) be the information
+For agent `i` at time `t`, let \(\mathcal I_i(t)\) be the information
 actually available through sensors, testimony, records, communication, and
 inference. Communication can enlarge or improve this set while every carrier
 remains inside the physical cone. “Effective light cone” is retired because it
@@ -55,7 +55,7 @@ confuses access with spacetime geometry.
 
 ### 1.3 Option cone `[I]`
 
-Let (mathcal O_i(t,H)) be the physically admissible histories within horizon
+Let \(\mathcal O_i(t,H)\) be the physically admissible histories within horizon
 `H` that the agent can model, rank, coordinate, and plausibly reach. Two agents
 can share the same physical cone and have different option cones. Human
 symbolic, social, institutional, and intergenerational reach can make this set
@@ -63,7 +63,7 @@ unusually broad without any superluminal claim.
 
 ### 1.4 Justice bearer set `[I]`
 
-Let (mathcal B(a)) contain every materially affected bearer of action `a`:
+Let \(\mathcal B(a)\) contain every materially affected bearer of action `a`:
 the acting person, sustaining whole, payer, beneficiary, and exposed third
 parties. Moral standing is not limited to what the actor noticed. Bearer-complete
 Justice requires those effects to remain visible individually; a positive sum
@@ -89,7 +89,7 @@ the duty to repair after discovery, or a prior duty to inquire where risk was
 reasonably knowable.
 
 There is therefore no universal ethical radius `r=cT` and no ethical spacetime
-volume ((4/3)pi c^3T^4). Those are geometric volumes, not measures of duty or
+volume \((4/3)\pi c^3T^4\). Those are geometric volumes, not measures of duty or
 worth.
 
 ## 3. Communication as a moral-attention hypothesis `[I/C]`

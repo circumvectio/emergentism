@@ -132,12 +132,12 @@ not yet know the exact numbered note.
 |-------|-------------------|------------|
 | D35_COGNITION_GOVERNS.md | EMERGENTISM/ | **Constitutional law:** "The cognition discriminates; the substrate trusts." No hardcoded thresholds. |
 | D36_META_COGNITIVE_WITNESS_GAP.md | ONTOLOGY/ | Witness layer observes but does not yet affect decisions. |
-| D37_K2_SOVEREIGNTY_TRUTH.md | ONTOLOGY/ | K2 is at level 1 (guarded). Mainnet frozen until K2-2. |
+| D37_K2_SOVEREIGNTY_TRUTH.md | ONTOLOGY/ | Historical/product status: private-DAV K2 is guarded; it is not the generic or public authorization primitive. Mainnet status requires current runtime receipts. |
 | D38_ZAI_DEMURRAGE_TRUTH.md | ONTOLOGY/ | Demurrage specified but not implemented. ZAIStaking.sol written. |
 | 00_D5_D6_CORPUS_STABILIZATION.md | 01_EMERGENTISM/ | **Upper-boundary rule:** D5 is the last experiential/public layer; D6 is axiomatic closure and return to D0. |
 | 00_THE_REMAINING_QUESTIONS.md | 01_EMERGENTISM/ | What is philosophically closed vs empirically/practically still open. |
 | 00_D6_AS_APOPHATIC_CLOSURE.md | 01_EMERGENTISM/ | D6 is closure, not another public science or experience. |
-| 00_EXECUTION_GUARDRAILS.md | 01_EMERGENTISM/ | **Execution packet:** Three-Stage Process separation, K2 sovereignty, eta=0 as anti-rent, Grace Exit. |
+| 00_EXECUTION_GUARDRAILS.md | 01_EMERGENTISM/ | **Execution packet:** Three-Stage Process separation, typed AuthorizationEnvelope (K2 private; PRISM public), `η=0` as declared anti-extraction constraint, Grace Exit. |
 | 00_KNOWN_UNKNOWNS_PROGRAM.md | 01_EMERGENTISM/ | **Frontier program:** closed, open, deferred, frozen, and the next paper stack. |
 | DAC_FACTORY/ (13 files) | DAC_STANDARD/DAC_FACTORY/ | Complete machinery for spawning new DACs. |
 | 00_BACKBONE/ (11 modules) | SKYZAI_ORG/00_BACKBONE/ | Constitutional packet spine: schemas, services, bridge. |
@@ -148,18 +148,30 @@ self-contained enough to stand alone, but the corpus is no longer meant to be
 read in full on every turn. The active spine exists to make orientation faster,
 source disputes clearer, and overclaim harder.
 
-**Recent doctrine packets (2026-04-24) — read when the task touches life,
-emergence, agents, Rosetta development, or organism model boundaries:**
+**Historical doctrine-development packets (2026-04-24) — compatibility and
+provenance only:**
+
+> **[金] Current-reading seam.** The packet bodies below are frozen historical
+> records, not current source authority. Where they describe a widened physical
+> light cone, consciousness as Many-Worlds navigation, `K2` as a collapse
+> signature, or literal physical retrocausality, those descriptions are
+> superseded. Current canon distinguishes the spacetime light cone from an
+> agent's **option cone**: the admissible histories a D4 carrier can model, rank,
+> coordinate, and reach. Anticipated futures can change present selections
+> through a present model (`M⋆A`), without the future physically reaching
+> backward. Quantum comparisons remain removable `[C]` correspondences, and
+> `K2` remains a private-DAV governance implementation rather than a collapse,
+> consciousness, or worldview primitive.
 
 | Packet | Role |
 |---|---|
 | [`129_RECURSIVE_TRIADIC_ENGINE_2026_04_24.md`](../60_SESSION_PACKETS/129_RECURSIVE_TRIADIC_ENGINE_2026_04_24.md) | Beauty → Truth → Justice → higher-resolution Beauty as the recursive engine. |
 | [`130_BOUNDARY_AUDIT_ORGANISM_MODEL_2026_04_24.md`](../60_SESSION_PACKETS/130_BOUNDARY_AUDIT_ORGANISM_MODEL_2026_04_24.md) | Runtime/prototype/doctrine boundary audit; prevents model roles from counterfeiting live truth. |
-| [`131_D4_BODY_OPENS_D5_ACTIVE_EMERGENCE_THESIS_2026_04_24.md`](../60_SESSION_PACKETS/131_D4_BODY_OPENS_D5_ACTIVE_EMERGENCE_THESIS_2026_04_24.md) | D4 bodies open D5 probability space through ektropic action. |
-| [`133_LIVING_FORM_WORLDLINE_AND_THE_WARRIORS_RETURN_2026_04_24.md`](../60_SESSION_PACKETS/133_LIVING_FORM_WORLDLINE_AND_THE_WARRIORS_RETURN_2026_04_24.md) | Perfect form, widened human light cone, meta-trophic role, Rosetta ascent and returned V. |
-| [`134_NEOTENOUS_STRATEGY_POWER_MAX_AT_BIRTH_2026_04_24.md`](../60_SESSION_PACKETS/134_NEOTENOUS_STRATEGY_POWER_MAX_AT_BIRTH_2026_04_24.md) | Neoteny/K-selection/trophic hierarchy as forward-cone reach; coordination across generations as the rare dense energy. |
+| [`131_D4_BODY_OPENS_D5_ACTIVE_EMERGENCE_THESIS_2026_04_24.md`](../60_SESSION_PACKETS/131_D4_BODY_OPENS_D5_ACTIVE_EMERGENCE_THESIS_2026_04_24.md) | Historical thesis. Current type rule: a D4 carrier models D5 possible contents; commitment enacts one D4 action subject to the world. |
+| [`133_LIVING_FORM_WORLDLINE_AND_THE_WARRIORS_RETURN_2026_04_24.md`](../60_SESSION_PACKETS/133_LIVING_FORM_WORLDLINE_AND_THE_WARRIORS_RETURN_2026_04_24.md) | Historical imagery. Read “widened light cone” only as a wider **option cone**, never as an expanded physical spacetime cone. |
+| [`134_NEOTENOUS_STRATEGY_POWER_MAX_AT_BIRTH_2026_04_24.md`](../60_SESSION_PACKETS/134_NEOTENOUS_STRATEGY_POWER_MAX_AT_BIRTH_2026_04_24.md) | Historical neoteny/K-selection hypothesis. “Forward-cone reach” now means modeled and reachable options under physical constraints. |
 | [`135_EKTROPIC_FORCE_EVOLUTIONARY_TELEOLOGY_2026_04_24.md`](../60_SESSION_PACKETS/135_EKTROPIC_FORCE_EVOLUTIONARY_TELEOLOGY_2026_04_24.md) | Darwin/Lamarck/Schrödinger nested under F5/Ektropy; Dyḗus Ph₂tḗr as luminous face, Ṛta as ordering law; objective ethics as syntropic dyadism. |
-| [`136_THE_DEEP_SYNTHESIS_2026_04_24.md`](../60_SESSION_PACKETS/136_THE_DEEP_SYNTHESIS_2026_04_24.md) | Consciousness as Many-Worlds navigation, K2 as collapse signature, and the organism as designed neotene. |
+| [`136_THE_DEEP_SYNTHESIS_2026_04_24.md`](../60_SESSION_PACKETS/136_THE_DEEP_SYNTHESIS_2026_04_24.md) | Historical strong-form synthesis, superseded where it treats consciousness as Many-Worlds navigation or `K2` as collapse. The operational calculus needs neither claim. |
 | [`137_F5_EKTROPY_THE_FIFTH_FORCE_STRONG_FORM_DRAFT_2026_04_24.md`](../60_SESSION_PACKETS/137_F5_EKTROPY_THE_FIFTH_FORCE_STRONG_FORM_DRAFT_2026_04_24.md) | Strong-form F5/fifth-force draft. Read through packet 135 first; literal force language remains conjectural. |
 | [`138_DYEUS_PHTER_F5_INDO_EUROPEAN_LINEAGE_2026_04_24.md`](../60_SESSION_PACKETS/138_DYEUS_PHTER_F5_INDO_EUROPEAN_LINEAGE_2026_04_24.md) | Dyḗus Ph₂tḗr as Indo-European luminous Sky-Father lineage for perceived order; `h₂r̥tó-` / Ṛta remains the ordering-law face; one-field continuity remains [I/C]. |
 | [`139_A_BRAHMANISM_AS_PRACTICE_2026_04_24.md`](../60_SESSION_PACKETS/139_A_BRAHMANISM_AS_PRACTICE_2026_04_24.md) | Axiomatic counterweight to the F5 capstone; keeps Ground / Field / Instrument distinct and requires the framework to remain put-down-able. |
@@ -473,7 +485,7 @@ founder-signature actions per K2.
 - [113_GOD_CLASS_TRIANGULATION_MONITORING_2026_04_23.md](../60_SESSION_PACKETS/113_GOD_CLASS_TRIANGULATION_MONITORING_2026_04_23.md) — Runtime monitoring playbook for live GOD-class triangulation after the K2 flag flip. Names the four watch signals already present in HEAD: provider health grades, cluster-correlated failure bursts, conflict-score distribution, and lineage-decorrelation failures. Also registers this session's `_call_seat` per-seat key resolution in `council/light_council.py` enabling polygenetic audit re-fires.
 - [114_BEAM_K1_COMPLIANCE_AUDIT_2026_04_23.md](../60_SESSION_PACKETS/114_BEAM_K1_COMPLIANCE_AUDIT_2026_04_23.md) — Code-layer K1 audit of the BEAM SPECTRE package (18 `.ex` modules). Zero mint / burn / supply operations; one SKY reference in `receipt.ex:calculate_reward/1` is a pure-calculation function (no state mutation, no mint path). Aggregate verdict: ORTHOGONAL at code layer, reinforcing packet 111's prose finding. Small hygiene recommendation on a docstring, not a K1 blocker.
 - [115_BEAM_HASHGRAPH_VS_EVM_WEDGE_2026_04_23.md](../60_SESSION_PACKETS/115_BEAM_HASHGRAPH_VS_EVM_WEDGE_2026_04_23.md) — Tier-disciplined comparative memo on the competitive wedge: BEAM-hashgraph-without-EVM is not "better Ethereum" but a specialized finality engine for a narrow high-value surface (payments + inter-DAC settlement) with off-chain brains above it. 9-op finite catalog (402) + aBFT fair ordering (14) + BEAM actor concurrency (951/952) + SPECTRE brain separation (601 §4). Named trades-off explicitly: no Solidity mindshare, no arbitrary composability, no "deploy any app" story. Five falsifiers ([C]) re-evaluate at 12 months.
-- [116_D5_FORCE_COORDINATION_BRIDGE_COMPRESSED.md](../60_SESSION_PACKETS/116_D5_FORCE_COORDINATION_BRIDGE_COMPRESSED.md) — Compressed pointer for the D5 Force coordination bridge (commit `5e48aec7b`, renumbered from 104 during merge to avoid slot collision with main's packet 104). Routes to the bridge doc (D5↔Syntropy, K2↔collapse, cascade↔architecture, η=0↔R*-Nash, AI↔non-mortal-substrate), the as-D5-selection-mesh spec (605 + Phase 1 scaffold), the operator-register reconciliation, the APU bridge application, and the investor-facing 1-page. Companion to packet 109 (SPECTRE D5 mesh) and packet 115 (BEAM vs EVM wedge).
+- [116_D5_FORCE_COORDINATION_BRIDGE_COMPRESSED.md](../60_SESSION_PACKETS/116_D5_FORCE_COORDINATION_BRIDGE_COMPRESSED.md) — Historical compressed pointer (commit `5e48aec7b`, renumbered from 104 during merge). Its `K2↔collapse`, universal `η=0↔R*-Nash`, and D5-as-acting-selector correspondences are superseded: K2 is private-DAV governance, `η=0` is a declared constraint whose incentives require separate evidence, and D4 carriers model D5 possible contents before accountable D4 commitment.
 
 **Circle product line (2026-04-23 charioteer sprint):**
 

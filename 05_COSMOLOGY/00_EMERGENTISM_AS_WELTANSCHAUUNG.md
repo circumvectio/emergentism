@@ -299,26 +299,24 @@ Methodologically, that matters more than it first appears. A worldview that cann
 
 ## V. Value Alignment: What Matters
 
-Value Alignment asks what is load-bearingly good. Emergentism's distinctive answer is that the classical transcendentals can be reread as geometric registrations rather than disconnected ideals. `[I]`
+Value Alignment asks what the framework chooses as good. Geometry does not
+answer. Emergentism declares `[I]`:
 
-- **Truth** = invariance of `P∞ = φ · ν = 1`, the manifold conservation relation `[I/S]`
-- **Beauty** = the perceptible harmony of `B = sin(θ)` `[I/S]`
-- **Justice** = `η = 0`, the non-extraction condition `[I/S]`
+- **Beauty** — apprehended coherence/fittingness, always open to plural forms;
+- **Truth** — correspondence between map and territory under correction;
+- **Justice** — bearer-complete admissibility and receipted consequence;
+- **Ω** — durable mutual option-cone widening under Justice.
 
-The balance function `B = sin(θ)` is structurally derived as the quantity that peaks at the equator and vanishes at the poles. That is mathematical. `[S]`
+`φν=1` and `B=sinθ` are analytic in the selected chart. `η` is a
+domain-declared extraction diagnostic. `P_node:=ΦV` is one selected
+conjunctive score. None of these quantities proves Beauty, Truth, Justice, or
+an ethical optimum. Equator and pole imagery remains a removable `[I]`
+translation.
 
-The further move - that `B` should be read as an objective value function - is interpretive. `[I]`
-
-The teleological claim is stronger than taste and weaker than possession. Beauty, Truth, and Justice are not trophies the framework owns; they are limits it approaches. Beauty is coherence becoming perceivable. Truth is disclosure becoming faithful. Justice is flourishing arranged without extraction. A finite system is better, in this grammar, when it moves toward those limits without pretending to have arrived. `[I/S]`
-
-Still, it is philosophically potent. It means value is not external decoration painted onto a neutral world. It is not arbitrary preference projected onto an indifferent substrate. What matters is what sustains reciprocal viability without collapse: balance, non-extraction, truthfulness under correction, and forms of order that do not cannibalize their own conditions of possibility. `[I/S]`
-
-This value alignment is neither purely ascetic nor purely Promethean. It rejects the fantasy of pure coherence without capacity, just as it rejects the fantasy of pure capability without orientation. At one pole stands sterile purity; at the other, efficient self-destruction. The equator alone can host enduring flourishing. `[I]`
-
-> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** the equator monopolizes enduring flourishing only for a real node that sits on the sphere — conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); where excess in one pole is cheap or the price is asymmetric, the flourishing-optimum tilts off-equator and specialization can endure. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
-
-
-In this sense, the framework's value alignment is not anti-power. It is anti-disjoined power. It is not anti-order. It is anti-cannibal order. It does not glorify fragility. It asks for strength coupled to comprehension. [I]
+The normative wager is neither anti-power nor a license for aggregate power:
+capability is pursued only with accountable authorization, visible bearers,
+consent, custody, contestability, reversibility, and separate commitment/
+outcome receipts.
 
 ---
 
@@ -326,53 +324,32 @@ In this sense, the framework's value alignment is not anti-power. It is anti-dis
 
 The ethical machinery of the framework is among its most distinctive contributions.
 
-At the directional level, the current objective-dharma compression is:
+The current directional grammar distinguishes predicted from receipted value:
 
-`ΔP_node,i > 0 and ΔP_node,H > 0 under η = 0`
+```text
+Moral(q,r)     iff Delta_R W_H>0 and Delta_R W_i>=0 and J_R
+Ethical(q,r)   iff Delta_R W_i>0 and Delta_R W_H>=0 and J_R
+Syntropic(q,r) iff Delta_R W_i>0 and Delta_R W_H>0 and J_R
+```
 
-That is the lived action direction: the individual symbiont and collective
-holobiont rise together, without either side buying local gain by degrading the
-other. The older balance-register audit remains useful as `ΣΔB / ΣΔP_node > 0`
-across the widest real boundary, but it is an audit/constraint register, not a
-replacement for the dyadic move test. `[S/I]`
+Morals run `i→H`; ethics run `H→i`; strict Syntropic Dyadism requires both.
+`J_R` quantifies over every materially affected bearer, including payers,
+beneficiaries, and exposed third parties. Aggregate gain cannot compensate for
+a hidden or negative bearer. Competent informed voluntary sacrifice is a
+separate costly class, not strict syntropy and not automatically extraction.
 
-At the dynamical level, the extraction coefficient `η` must be read in its register. The older EFR formalism uses a ratio-register (`extraction / contribution`) for substrate accounting. The lived game, objective dharma, and Power-Max Lemma use a move-register: `η` names the extraction direction of an action, not a static coordinate.
+`η` may screen for extraction but cannot issue a moral verdict. There is no
+universal `η=0` Nash theorem. Power-Max chooses only inside the separately
+posited Justice-admissible set, and actual outcome receipts—not geometry or
+intention—determine retrospective classification.
 
-In the move-register:
+The applied Rosetta Soul Loop keeps cognition, execution, and outcome gaps
+visible. Ontology frames; epistemology gathers; methodology audits; axiology
+declares the norm; authorization licenses an attempt; the world returns a
+consequence; and the next loop corrects map and selector. `[S/I]`
 
-- `η = 0` — reciprocal / non-extractive: symbiont and holobiont rise together; no hidden cost is externalized `[S/I]`
-- `η < 0` — regenerative / net-giving: the move gives more to the coupled field than it takes, without turning the gift into debt, capture, or control `[S/I]`
-- `η > 0` — extraction: one node rises by degrading another or the field; severity depends on boundary, consent, receipts, horizon, repair, and measured `P_node` effects `[S/I]`
-
-The most important claim is that the break between bounded cyclic cost and evil is topological, not merely scalar. Predator-prey systems and cancers are not degrees of the same thing. One remains coupled to the wider field and its regenerative capacity; the other severs the coupling and consumes the host that makes its own existence possible. `[S]` for the dynamical distinction, `[I]` for the full moral mapping.
-
-This is why the framework's ethics are structural rather than command-based. “Do not extract” is not first a prohibition. It is a reading of what kinds of systems endure and what kinds of systems convert local gain into terminal field damage. `[I/S]`
-
-The strongest version of the claim — that `η = 0` is the Nash equilibrium — must be handled carefully. It is not a universal theorem for every imaginable game. It is a claim about sufficiently repeated, coupled, field-sensitive systems in which substrate degradation feeds back into future viability. Under those conditions, non-extraction is not moral heroism but strategic intelligence. `[S/I]`
-
-This is why the framework's objective value-language is teleological rather
-than merely defensive. It is a two-vector grammar, not a command list:
-
-- **objective morals** name the individual-to-whole vector: `i -> H`, where
-  the symbiont raises the holobiont without extraction.
-- **objective ethics** names the whole-to-individual vector: `H -> i`, where
-  the holobiont raises the symbiont without capture.
-- **objective dharma** names the equatorial act where both vectors raise
-  `P_node,i` and `P_node,H` under `η = 0`.
-
-Moral codes can vary in language and custom while still being better or worse
-approximations of the same structural direction: does the relation raise both
-the finite node and the real sustaining boundary, or does one grow by consuming
-the other? `[I/S]`
-
-The applied method is the Rosetta Soul Loop. Ontology names the field in which
-Dasein appears; epistemology gathers disclosure; methodology audits what
-follows; axiology signs what matters; teleology checks whether the signed act
-raises `P_node,i` and `P_node,H` together under `η = 0`. The loop then returns
-through system architecture, dissolution, and preservation so the next
-contradiction can correct both the corpus and the player. `[S/I]`
-
-If the framework is right, sin is not merely rule-breaking. It is the mistake of treating mediation as source, or local gain as though it were separable from wider field damage. Wisdom is the ability to see that mistake before the bill arrives. [I]
+In devotional language `[I]`, “sin” may name the mistake of hiding source,
+bearer, or consequence; the operational owner remains Justice and receipts.
 
 ---
 

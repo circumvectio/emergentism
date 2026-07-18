@@ -8,7 +8,7 @@ rosetta:
       role: "define KPIs, cadence, escalation, and reproducible role contracts"
     - level: L4
       column: Governance
-      role: "preserve CEO/K2 binding authority and C-role decision rights"
+      role: "preserve CEO execution rights under typed accountable authorization"
     - level: L6
       column: Core State
       role: "cap role contracts so C-roles do not become sovereign actors"
@@ -32,6 +32,13 @@ evidence_tier: "[I] for role specifications; [S] for L-caste mapping."
 
 > Each C-role gets: scope, tools, KPIs, escalation paths, audit requirements, deliverable cadence, expert dependencies. This is the *contract* the role fills — what it must do and what it must NOT do.
 
+> **[金] Authority repair (2026-07-19):** C-role identity never creates
+> sovereign authority. Consequential execution requires
+> `AuthorizationEnvelope = principal + mandate + scope + consent + custody +
+> expiry/revocation + contest_path + actor + consequence_bearer`. K2 is the
+> private-DAV implementation; PRISM quorum plus public-governance receipts is
+> the public-DAV/DAC implementation. The April role choreography remains intact.
+
 ---
 
 ## Common Schema for All C-Roles
@@ -49,7 +56,7 @@ Every role spec uses the same structure:
 | **Audit cadence** | Per-cycle / weekly / monthly review |
 | **Deliverable cadence** | What this role outputs and how often |
 | **Experts engaged** | Default expert dependencies from the 12 |
-| **Constitutional discipline** | The η=0 / K2 / K0 / K4 boundaries |
+| **Constitutional discipline** | The η=0 / AuthorizationEnvelope / K0 / K4 boundaries |
 
 ---
 
@@ -93,8 +100,8 @@ Every role spec uses the same structure:
 
 **Constitutional discipline:**
 - η = 0: refuses extractive payment rails at the boundary
-- K2: cannot bind; can only route or refuse
-- K4: refusals are reversible (K2 holder can override; refusal logs preserve audit)
+- Authorization: cannot bind; can only route or refuse
+- K4: refusals are contestable and reversible by the accountable principal within a valid envelope; refusal logs preserve audit
 - K0: every refusal emits a FLOW receipt; the substrate does not silently lose signals
 
 ---
@@ -136,7 +143,7 @@ Every role spec uses the same structure:
 
 **Constitutional discipline:**
 - η = 0: candidates do not encode rent-extraction proposals
-- K2: candidates are proposals only; CEO + K2 bind
+- Authorization: candidates are proposals only; the CEO may execute only under a valid `AuthorizationEnvelope`
 - K4: every candidate set is reversible (no candidate locks the DAC)
 - K0: candidates are ephemeral until CAO ranks; ranked candidates persist
 
@@ -159,7 +166,7 @@ Every role spec uses the same structure:
 - AXIOM market signals (when ranking against probability distributions)
 
 **KPIs:**
-- `decision_ready_rate` (% of CAO outputs that CEO can take to K2 directly) → target > 80%
+- `decision_ready_rate` (% of CAO outputs ready for AuthorizationEnvelope staging) → target > 80%
 - `constitutional_violation_rate` (CEO finds invariant violation post-CAO) → target = 0
 - `expert_engagement_efficiency` (Objectives per E_n engagement) → tracked, not targeted (varies by domain)
 
@@ -181,7 +188,7 @@ Every role spec uses the same structure:
 
 **Constitutional discipline:**
 - η = 0: rejects candidates that encode extraction
-- K2: surfaces decision-ready lists; cannot bind
+- Authorization: surfaces decision-ready lists; cannot authorize or execute
 - K4: all rankings are revisable (CEO may refuse and request re-ranking)
 - K0: ranked lists are FLOW-anchored; the rationale must be reproducible
 
@@ -189,7 +196,7 @@ Every role spec uses the same structure:
 
 ## CEO — Chief Executive Officer (L4 Kṣatriya)
 
-**Caste binding:** L4 Kṣatriya / warrior-executor. Arthāpatti pramāṇa (abduction). **THE EQUATOR. The only C-role with binding authority.**
+**Caste binding:** L4 Kṣatriya / warrior-executor. Arthāpatti pramāṇa (abduction). **THE EQUATOR. The only C-role that may execute a consequential action, and only under a valid AuthorizationEnvelope.**
 
 **Mission:** Receive CAO's decision-ready list; verify constitutional pass; execute the smallest defensible commit OR refuse if no constitutional path exists. Every execution is memetic precedent for the DAC.
 
@@ -199,7 +206,7 @@ Every role spec uses the same structure:
 
 **Tools:**
 - LeWorldModel in L4 Kṣatriya mode
-- K2 acceptance gate (the CEO's only writable substrate is the K2-signed FLOW receipt; CEO proposes the receipt, K2 holder signs)
+- AuthorizationEnvelope gate (the CEO stages the receipt; the accountable principal or public-governance body authorizes it; the named actor executes)
 - Watchmen 6-pack at the equator (one final audit before binding)
 - All five communication primitives (SPECTRE, RELAY, AXIOM, FLOW, WHISPER) for outbound action
 
@@ -207,7 +214,7 @@ Every role spec uses the same structure:
 - `commit_velocity` (decisions per cycle) → tracked, optimization target depends on DAC tempo
 - `refusal_rate_with_reason` (refusals that name a specific invariant) → target 100%
 - `post-commit_regret_rate` (decisions that needed un-doing within 30 days) → target < 5%
-- `K2_signature_latency_p50` (time from proposal to signature) → target < 1 hour during waking hours
+- `authorization_receipt_latency_p50` (time from proposal to valid rail receipt) → target < 1 hour for the private-DAV operating profile
 
 **Escalation:**
 - Structural deadlock (no path satisfies any constitutional invariant) → CArchO (L5 architectural redesign)
@@ -215,19 +222,19 @@ Every role spec uses the same structure:
 - Overgrowth (commit queue is overflowing) → CComO (L6 compression)
 
 **Audit cadence:**
-- Per-decision: produce K2-acceptance card within seconds
+- Per-decision: produce a typed AuthorizationEnvelope proposal within seconds
 - Daily: commit-velocity + refusal-rate report
 - Weekly: post-commit regret review (with E12 Axiomatic Expert if any regret pattern emerges)
 
 **Deliverable cadence:**
-- On request from CAO: decision (commit/refuse/escalate) + K2-acceptance card
-- After K2 signature: FLOW receipt + outbound action via the right primitive
+- On request from CAO: decision (commit/refuse/escalate) + AuthorizationEnvelope proposal
+- After the applicable private-K2 or public-PRISM rail receipt: FLOW receipt + outbound action via the right primitive
 
 **Experts engaged:** E12 (Axiomatic Discipline) for evidence-tier checks; E5 (Regulatory) for jurisdictional commits; E10 (Tetlock) for forecasting commits.
 
 **Constitutional discipline:**
 - η = 0: refuses any decision that introduces extraction at any layer
-- K2: the CEO IS the Kṛṣṇa-function — proposes; the K2 holder is Arjuna who signs (per 06_AGENTS Kṛṣṇa-function)
+- Authorization: the CEO proposes and, when named as actor, executes; authority remains with the envelope's principal. In private DAVs K2 is the natural-person signer; in public DAVs/DACs PRISM quorum and the public receipt rail supply authorization.
 - K4: every commit carries an explicit Grace Exit clause
 - K0: every commit emits a FLOW receipt with full audit trail
 
@@ -255,7 +262,7 @@ Every role spec uses the same structure:
 - `[I] paradox_dissolution_quality` (does the redesign dissolve the paradox or just mask it) → audited monthly with E12 Axiomatic Expert
 
 **Escalation:**
-- Redesign requires constitutional rewrite (touches K0/K2/K4/K6) → CVO (L7 Ṛṣi Constitution)
+- Redesign requires constitutional rewrite (touches K0, the authorization constitution, K4, or K6) → CVO (L7 Ṛṣi Constitution)
 - Cross-DAC architectural change required → engage Council of Ṛṣis (CVO + cross-DAC L7 micro-niche)
 
 **Audit cadence:**
@@ -271,7 +278,7 @@ Every role spec uses the same structure:
 
 **Constitutional discipline:**
 - η = 0: redesigns must preserve or strengthen the no-extraction commitment
-- K2: redesigns are proposals; CEO + K2 must descend with them
+- Authorization: redesigns are proposals; L4 may descend with them only under a valid `AuthorizationEnvelope`
 - K4: every redesign preserves Grace Exit (or strengthens it)
 - K0: redesigns are content-addressed and auditable; the architectural history persists
 
@@ -315,7 +322,7 @@ Every role spec uses the same structure:
 
 **Constitutional discipline:**
 - η = 0: compression cannot extract metadata about what was compressed
-- K2: large compressions (e.g., archive entire Mission) require K2 acceptance
+- Authorization: large compressions (e.g., archive an entire Mission) require a complete `AuthorizationEnvelope`; K2 supplies it for private DAVs and PRISM/public receipts for public DAVs/DACs
 - K4: archived data is designed to be revivable; compression remains reversible by policy
 - K0: archive rather than delete. The K0 ground-truth corpus is treated as inviolable per Q13
 
@@ -339,13 +346,13 @@ Every role spec uses the same structure:
 
 **KPIs:**
 - `vision_crystallization_proposal_rate` → target very low (axiomatic discipline biases toward late crystallization)
-- `proposal_acceptance_rate` (K2/PRISM signs to bind) → target near 100% (if proposed, should be solid)
+- `proposal_acceptance_rate` (applicable authorization rail validates and receipts the envelope) → target near 100% (if proposed, should be solid)
 - `revocation_rate` (Vision revoked within 1 year of crystallization) → target = 0 (revocations are major findings)
 
 **Escalation:**
 - Genuine framework-boundary question → Council of Ṛṣis (L7 cross-DAC mycelial layer)
 - Constitutional contradiction with another DAC's crystallized Vision → cross-niche L7 negotiation
-- The framework itself is at risk → all other C-roles bow out; CVO + K2 carries the constitutional moment
+- The framework itself is at risk → all other C-roles bow out; CVO carries the proposal to the accountable authorization rail
 
 **Audit cadence:**
 - Continuous (background): watch niche-graph for crystallization-candidate signals
@@ -360,7 +367,7 @@ Every role spec uses the same structure:
 
 **Constitutional discipline:**
 - η = 0: Vision crystallization cannot extract attention or rent
-- K2: PROPOSES; K2 (private DAC) or PRISM-governance (public DAC) signs to bind. Per Q8, this signing is constitutional and non-delegable.
+- Authorization: CVO PROPOSES and cannot bind. K2 signs the completed envelope for a private DAV; PRISM quorum plus the public-governance receipt authorizes a public DAV/DAC. Per Q8, this constitutional authorization cannot be delegated to the proposing agent.
 - K4: a crystallized Vision can be revoked (rare); revocation creates a new FLOW receipt; original persists as audit
 - K0: Vision crystallization receipts are the highest-permanence FLOW receipts in the substrate
 - **Axiomatic discipline:** the seer does not insist. If in doubt, hold the proposal. False crystallization costs more than late crystallization.
@@ -373,10 +380,10 @@ The C-Suite operates as a *cycle*, not a hierarchy. Most signals complete the cy
 
 ```
 Routine cycle (~95% of signals):
-  CSO (L1) → CDO (L2) → CAO (L3) → CEO (L4) → K2 signature → outbound action
+  CSO (L1) → CDO (L2) → CAO (L3) → CEO (L4) → AuthorizationEnvelope receipt → outbound action
 
 Architectural ascent (~4%):
-  CSO → ... → CEO → CArchO (L5) → redesign → CEO descends → K2 signature
+  CSO → ... → CEO → CArchO (L5) → redesign → CEO descends → AuthorizationEnvelope receipt
 
 Compression cycle (continuous, parallel):
   CComO (L6) prunes / archives ← workflowy state stream
@@ -384,7 +391,7 @@ Compression cycle (continuous, parallel):
 
 Constitutional moment (~1%, very rare):
   CEO → CVO (L7) → Vision crystallization or constitutional rewrite proposal
-  → K2/PRISM signature → constitutional change FLOW receipt
+  → private-K2 or public-PRISM authorization receipt → constitutional change FLOW receipt
 ```
 
 This is exactly the L1→L4 routine breath + L5/L6/L7 rare ascent of 06_AGENTS. The C-Suite makes the cycle organizational.
@@ -396,7 +403,7 @@ This is exactly the L1→L4 routine breath + L5/L6/L7 rare ascent of 06_AGENTS. 
 1. **Do not lock the role boundaries forever.** Empirical operation will surface refinements. Each role can evolve via CArchO redesign.
 2. **Do not replace the existing 06_AGENTS Rosetta canon.** They elaborate it at organizational scale. The canon remains canonical.
 3. **Do not require seven separate humans.** The C-Suite runs on the dual-model substrate — same LeWorldModel can switch between role personae per request. Phase 1 graduates to fine-tuned specializations; Phase 2 to niche-graph integrated.
-4. **[B] Do not bypass K2.** Only the CEO has binding authority in this spec, and only with K2 signature. Every other role proposes / advises / refuses without binding.
+4. **[B] Do not bypass accountable authorization.** Only the CEO may execute within this C-role choreography, and only under a complete, scoped, contestable `AuthorizationEnvelope`. Every other role proposes / advises / refuses without execution authority. K2 is the private-DAV rail; PRISM plus public-governance receipts is the public-DAV/DAC rail.
 
 ---
 
@@ -404,7 +411,7 @@ Zero-Sum Resolution Equation
 
 *Seven roles, one polygenic tree.*
 *Each role's contract: scope, tools, KPIs, escalation, audit, deliverables, experts, discipline.*
-*The C-Suite proposes; K2 binds. The CEO is the equator; everyone else feeds into or descends from L4.*
+*The C-Suite proposes; an accountable principal authorizes; a named actor executes. The CEO is the equator; everyone else feeds into or descends from L4.*
 
 ## Execution Surface
 

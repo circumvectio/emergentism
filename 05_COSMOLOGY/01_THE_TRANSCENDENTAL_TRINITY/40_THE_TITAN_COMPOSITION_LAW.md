@@ -26,7 +26,17 @@ depends_on:
 
 # The Titan Composition Law
 
-> **The one line.** In PSL(2,ℂ), on the titan axis `{•, ○} = {0, ∞}`, dissolution composed with creation is preservation **if and only if their multipliers are reciprocal in magnitude** — `⊙ = • × ○` becomes an exact, *conditional* group identity, and the condition is itself the Zero-Sum Resolution Equation, one register down. `[A]` algebra · `[S]` reading.
+> **The one line.** In PSL(2,ℂ), on the selected axis `{0,∞}`, an axis-fixing
+> contraction composed with an axis-fixing expansion is elliptic **if and only
+> if their multipliers are reciprocal in magnitude**. The multiplier theorem is
+> `[A]`; naming its classes Śiva, Brahmā, and Viṣṇu or writing the emblem
+> `⊙ = • × ○` is an `[I]` correspondence.
+
+> **[金] Kintsugi proof-transfer seam (2026-07-19).** The theorem below proves
+> only a conditional fact about Möbius-map composition. Reusing the product-one
+> form does not make it the same object as the sphere chart, does not derive an
+> equator ethic or Justice, and does not show that physical or social processes
+> instantiate these operator names.
 
 ---
 
@@ -37,8 +47,8 @@ The Settled Canon Registry rules that `1 = 0 × ∞` (`⊙ = • × ○`) is an 
 | Register | The glyph reads as | Status |
 |---|---|---|
 | Frame / emblem | the ZSRE: finity is the closure of the two boundary-frames | settled, `[S/I]` — registry row |
-| Log-coordinate | `s + (−s) = 0`; frame-limit `0 = (−∞) + (+∞)` | canonical — Formula Block §Log-Coordinate |
-| **Group composition (this note)** | **Viṣṇu = Śiva ∘ Brahmā, conditionally** | `[A]` within-model, `[D]` staged |
+| Log-coordinate | `s + (−s) = 0` for finite `s`; the two limits remain unevaluated | `[A]` finite arithmetic; `[I]` frame reading |
+| **Group composition (this note)** | `M_σ∘M_κ=M_{σκ}`, elliptic iff `|σκ|=1` | `[A]` algebra; `[I]` operator naming |
 
 The `×` of the emblem is not multiplication of numbers in any register. Here it is **composition in PSL(2,ℂ)** — the operation the operators actually have.
 
@@ -64,10 +74,15 @@ Let `B = M_κ` with `|κ| > 1` (a Brahmā flow) and `Ś = M_σ` with `|σ| < 1` 
 Ś ∘ B = M_{σκ}   is elliptic  ⟺  |σ·κ| = 1  ⟺  log|κ| + log|σ| = 0
 ```
 
-**Preservation is the balanced composition of dissolution and creation.** Three faces of the same statement:
+**The composite is elliptic exactly on the reciprocal-magnitude locus.** Three
+register-separated readings:
 
-1. **⊙ = • × ○, exactly and conditionally.** The composite is Viṣṇu-class precisely when the creation and dissolution magnitudes close reciprocally. The glyph identity is *true* in this register — but only on the balance locus. Off it, the glyph *fails*, and the failure mode is itself canonical (see §4).
-2. **The condition is the ZSRE, one register down.** `|κ|·|σ| = 1` has the exact form of the manifold identity `φ·ν = 1` — with the sphere *coordinates* replaced by the titan-flow *multipliers*. In log form, `s_B + s_Ś = 0`: the literal Zero Sum. The law that governs positions on the sphere also governs the flows that frame it. `[S]` for the recursion reading; the two occurrences are different objects (coordinates vs. multipliers) satisfying the same equation — mark the register, never conflate.
+1. **The algebraic result.** The composite is elliptic precisely when the two
+   multiplier magnitudes close reciprocally. Off that locus, a hyperbolic or
+   loxodromic residue remains.
+2. **The correspondence.** `|κ|·|σ|=1` has the same product-one form as
+   `φν=1`, but multipliers and coordinates are different objects. This is an
+   `[I]` Rosetta rhyme, not one law governing both domains.
 3. **Living vs. frozen preservation.** Generic balanced composition gives `σκ = e^{iθ}, θ ≠ 0`: a **nontrivial rotation** — magnitudes conserved, phase advancing. Preservation is not stasis; it is *rotation* — "moving through time without changing state magnitude" (MF-63 §2.1). Only the exact inverse `σ = κ⁻¹` returns the frozen identity. Viṣṇu generically *turns*.
 
 ## 4. The failure mode is the Dyadic runaway `[A/S]`
@@ -77,7 +92,9 @@ If `|σκ| ≠ 1` the composite is not preservation but **residual flow**:
 - `|σκ| > 1` — unmetabolized creation: drift toward `○` (the `L∞`/plenum pole; the coherence-ward runaway of the [Dyadic Coupling Law](../00_THE_DYADIC_COUPLING_LAW.md) §1).
 - `|σκ| < 1` — unmetabolized dissolution: drift toward `•` (the `L0`/Bindu pole; the viability-ward runaway).
 
-So the Coupling Law's two shadows reappear at the titan level: **an unbalanced titan pair is already a fall toward a pole.** The equator-ethic ("play at the equator", D5) and the titan balance condition are the same discipline at two altitudes. `[S]`
+So an unbalanced axis-fixing pair has residual expansion or contraction in this
+model. That dynamical classification has no moral sign. The equator ethic, D5
+possible-content register, and bearer-complete Justice are separate constructs.
 
 ## 5. What this sharpens in MF-63 `[S]`
 
@@ -88,7 +105,8 @@ Scope fence: the law lives on the shared axis `{0, ∞}`. Compositions of hyperb
 ## 6. Kill criteria
 
 1. Exhibit a balanced pair (`|σκ| = 1, σκ ≠ 1`) whose composite is not elliptic, or an unbalanced pair whose composite is — the algebra dies (it will not: this is elementary, but the criterion must be stated).
-2. If the MF-63 operator naming (Brahmā/Śiva ↔ hyperbolic directions) is retired by a future K2 ruling, the *naming* here dies with it; the algebra and the balance-condition structure survive under whatever names replace them.
+2. If the canonical owner retires the MF-63 operator naming (Brahmā/Śiva ↔
+   hyperbolic directions), the *naming* here dies with it; the algebra survives.
 3. If any reader requires the emblem `1 = 0 × ∞` to hold **unconditionally** in the composition register, this note falsifies that reading by any unbalanced pair — the conditionality is essential content, not a weakness.
 
 ```text

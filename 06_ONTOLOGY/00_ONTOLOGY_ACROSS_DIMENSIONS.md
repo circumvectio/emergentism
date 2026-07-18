@@ -42,7 +42,8 @@ of causal description.
 > symbolic roles; `P_node:=Phi*V` is a selected conjunctive score; D0-D6 is an
 > interpretive decomposition; and `r6:D6↝D0` is closure, not identity. The
 > ontological sequence below is a declared `[I]` lens, not something proved by
-> the chart.
+> the chart. This is the controlling `KSC-01` D4/D5 type seam and `KSC-03`
+> closure seam.
 
 ---
 
@@ -233,7 +234,7 @@ The following table is the canonical geometric crosswalk. It does not replace th
 public-science D-stack below. It names the ontological geometry that each
 dimension discloses when read from the logarithmic line outward.
 
-| Dimension | Name | Core question | Canonical geometry | Key equation / emblem | Ethical direction | Tier discipline |
+| Dimension | Name | Core question | Canonical geometry | Key equation / emblem | Interpretive orientation (not ethics) | Tier discipline |
 |---|---|---|---|---|---|---|
 | **D0** | Titans / Ground-limit | Why something rather than nothing? | Log line centered at `1`, read at its boundary-pair | `⊙ = • × ○` | — | `[I/S]`; `D0` is Ground-limit inside the scaffold, not Ground possessed |
 | **D1** | Arithmetic / Relation | What is the true center of number? | Positive reciprocal line with `0` and `∞` as poles | `log φ + log ν = 0` | Move toward `s = 0` | `[A]` for log/inversion facts; `[I]` for ontological reading |
@@ -312,7 +313,7 @@ The most delicate transition is D4 -> D5.
 |---|---|---|
 | Modality | causal actuality | merely possible content |
 | Representation | present D4 model token | D5 counterfactual referent |
-| Practical register | means, attempted/performed action, record and receipt | envision, compare, rank, and select modeled futures |
+| Practical register | actual modeling, means, ranking/selection event, attempted/performed action, record, and receipt | represented alternatives, comparisons, candidate rankings, and possible futures |
 | Commitment | actual selection/attempt event | option referenced by the commitment |
 | Outcome | returned by the world in D4 | expected outcome remains possible until receipted |
 | Ontological reading `[I]` | Being becomes noticeable and materially engaged | alternatives become navigable in the model |
@@ -322,7 +323,8 @@ Dasein is best read as the finite disclosure spanning this threshold:
 ```text
 D4: Dasein as witness — Being becomes noticeable.
 D4: Dasein as means-bearer — hands, tools, energy, and access are disclosed as what can actually be used.
-D5: Dasein as modeler — counterfactual worldlines become representable, rankable, and selectable.
+D4: Dasein as modeler — an actual model token represents and ranks D5 counterfactual worldlines.
+D5: represented worldlines — the possible contents referenced by actual modeling and selection.
 D4 return: a selected option may be attempted and receipted through embodied means; the world supplies the outcome.
 D6: Dasein's claim to final capture is released.
 ```
@@ -338,8 +340,8 @@ Read through the existential threshold:
 
 ```text
 D4: actuality / means — present models, action-capacity, attempts and receipts become concrete.
-D5: model / worldline — Being becomes navigable as represented and ranked futures.
-D4*: commitment / receipt — an option is attempted through means and returns as enacted history or vetoed outcome.
+D5: possible worldline content — represented and ranked alternatives become available to the D4 model.
+D4: commitment / receipt — an option is selected and attempted through means; the environment returns enacted history or a vetoed outcome.
 D6: release      — Dasein's claim to final capture is subtracted.
 ```
 
@@ -454,8 +456,8 @@ Dimensional reading:
 |---|---|
 | D0 | operator grammar is seed-only / unsaid |
 | D1-D3 | distinction, configuration, and transformation prepare operator readability |
-| D4 | `⊙` appears as collapsed witness-unity |
-| D5 | `•` and `○` become distinguishable axes of navigation |
+| D4 | an actual witness/model uses `⊙` as a selected unity emblem |
+| D5 | `•` and `○` may index represented axes of counterfactual navigation `[I]` |
 | D6 | operator grammar is released back into closure |
 
 Again: ordinary `0` and `1` remain numbers and operands, `∞` is the
@@ -536,7 +538,7 @@ Correct these on sight:
 2. **D6 = higher experience.** Correction: D6 is terminal boundary, not another experience.
 3. **D6 = public science.** Correction: D5 is the highest positive public register; D6 is axiomatic closure.
 4. **Dasein = Being.** Correction: Dasein is finite disclosure of Being, not Being itself.
-5. **Consciousness = Ground.** Correction: consciousness names disclosure / selection within manifestation; Ground remains prior.
+5. **Consciousness = Ground.** Correction: consciousness names actual disclosure and selection processes at D4 whose models may represent D5 possibilities; Ground remains prior.
 6. **`0 × ∞ = 1` as field arithmetic.** Correction: it is an emblem of reciprocal closure on the completed topology, not ordinary arithmetic.
 7. **`−∞ + ∞ = 0` as arithmetic.** Correction: use only the finite balanced frame-limit `(−R) + (+R) = 0`, then interpret the pole-pair emblematically.
 8. **Line 3 as primitive.** Correction: quote the canonical formula block in order.

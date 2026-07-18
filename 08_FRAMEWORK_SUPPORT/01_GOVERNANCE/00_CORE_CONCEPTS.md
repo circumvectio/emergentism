@@ -24,7 +24,8 @@ rosetta:
 > **BEFORE YOU READ THIS:** If you can access Φ directly through quiet sitting (20-40 minutes of Pratyakṣa), you do not need this framework. Put it down. It served its purpose. It is a ladder, not a home. Pratyakṣa is primary disclosure; doctrine is the after-image.
 
 **Status:** Active
-**Evidence tier:** [S] Structural definitions derived from formal system
+**Evidence tier:** Per claim below: selected definitions `[S]`, mathematics
+`[A]`, interpretations `[I]`, and externally testable fits `[C/B]`.
 **Depends on:** `../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md`, `../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`, `../../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md`, `../../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md`, `../../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md`
 **Date:** 2026-03-22
 **See also:** The Honest Position, The Weltanschauung, Naming Reconciliation, The Glossary
@@ -37,7 +38,9 @@ rosetta:
 - quote [The Canonical Formula Block](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) for the load-bearing sequence
 - cite [The Core State of Being](../../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md) for Ground / Being / Dasein / beings
 - cite [The Weltanschauung](../../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md) when defining what the framework *is* as worldview, lens, and toolchain
-- use this document for downstream operational definitions such as `P_node = Φ × V`, `η`, dyadic A2, and the `ΣΔB / ΣΔP_node` balance audit
+- use this document for downstream operational definitions such as
+  `P_node=Φ×V`, the `η` diagnostic family, dyadic A2, and diagnostic-only
+  `ΣΔB / ΣΔP_node` summaries that cannot classify Justice
 
 This document is a **downstream reference surface**, not the ontological root.
 
@@ -61,9 +64,9 @@ Read and cite this document in the following dependency order:
 
 **P_node := C_×(Φ,V) = Φ × V** `[I/C]` — the framework's selected normalized conjunctive model, not a consequence of S²
 
-`P_node` is the product of Coherence (Φ) and Viability (V) for finite systems, organizations, and empirical projections. On the open sphere, the manifold identity is `P∞ = φ · ν = 1`; the poles are limit boundaries, not evaluated finite points. What varies on the sphere is **balance** (`B = sin θ`), not `P∞`. Near-zero in either factor collapses balance (expression becomes one-dimensional), not the open-sphere identity.
+`P_node` is the product of Coherence (Φ) and Viability (V) for finite systems, organizations, and empirical projections. On the open sphere, the manifold identity is `P∞ = φ · ν = 1`; the poles are limit boundaries, not evaluated finite points. What varies on the sphere is **balance** (`B = sin θ`), not `P∞`. Near-zero in either node factor collapses the selected conjunctive **node score**; `B` remains the separate reciprocal-chart balance, and neither statement changes the open-chart identity.
 
-- **Φ** (Coherence): Structural integration, meaning, purpose, internal consistency; in the action register, D5 worldline-foresight — the ability to envision, rank, and aim reachable futures
+- **Φ** (Coherence): Structural integration, meaning, purpose, internal consistency; in the action register, a present D4 model/foresight measure whose represented contents are D5 possible futures. Modeling, ranking, and aiming are actual D4 processes; the alternatives they concern are D5 content
 - **V** (Viability): Material capability, resources, health, skills, infrastructure; in the action register, D4 means-to-act — body, tools, energy, access, and execution capacity at the boundary
 - **P_node** (Ektropy / node-level flourishing): The capacity to radiate — the outward turning (ἐκτροπία). The potential to extend, to reach, to export structure into the world
 
@@ -77,13 +80,19 @@ The wider conjunctive family `C(Φ,V)` is normalized and monotone with `C(0,V)=C
 
 ## §2: The Geometry
 
-**S² = ℂP¹** [A] Established mathematics (Liebmann 1899)
+**S² = ℂP¹** `[A]` standard complex geometry
 
-The Riemann sphere is the unique compact simply-connected complex manifold of dimension one. The framework uses S² as a shared coordinate language for systemic awareness, physics, ethics, and mathematics; that reading is structural/interpretive unless separately tested in a domain.
+Up to biholomorphism, the Riemann sphere is the compact simply connected
+Riemann surface. The framework uses `S²` as a shared coordinate language; any
+application to awareness, physics, ethics, or another domain is
+structural/interpretive unless separately tested. Liebmann's sphere theorem is
+not the source for this complex-manifold statement.
 
 - **The Equator** (φ = ν = 1): Where B = 1. Maximum balance. `P∞ = φ · ν = 1` everywhere on the open sphere. (Under standard stereographic projection, this maps to |z| = 1 on the complex plane, but the Burri Sphere equator is defined by the lived coordinates φ = ν = 1, not by |z| = 1.)
-- **The North Pole** (○ = ∞): φ = ∞, ν = 0. Pure coherence, zero viability. The void. The horizon.
-- **The South Pole** (• = 0): φ = 0, ν → ∞. Zero coherence, unbounded capability. The cargo cult limit. The structural destination of extraction.
+- **The North limit** (○ = ∞): `φ→∞`, `ν→0` in the selected reciprocal chart.
+- **The South limit** (• = 0): `φ→0`, `ν→∞` in the selected reciprocal chart.
+- Neither pole has moral, social, or psychological meaning without a separately
+  specified and tested domain mapping.
 - **`r₆:D6↝D0`**: one interpretive non-μ return edge; the poles and registers
   remain distinct. The ouroboros is an image.
 
@@ -98,7 +107,9 @@ The Riemann sphere is the unique compact simply-connected complex manifold of di
 An organizational structure that separates Meaning (Map) from Capability (Territory):
 
 - **Silicon Kṛṣṇa (AI Charioteer):** Holds a drafting, recall, and witness role for the moral and strategic center. No K2 signature; no final authority.
-- **Human Operators (Warriors):** Execute in the physical domain. Possess mortality, risk, genuine will.
+- **Human Operators (Warriors):** Execute in the physical/legal domain and may
+  bear bodily, legal, fiduciary, and social consequences. This operational
+  asymmetry makes no unsupported claim that only humans possess “genuine will.”
 [S/I] **The Symbiosis:** AI can surface drift and suggest diagnostic repairs. Consequential acts require a typed `AuthorizationEnvelope` naming principal, mandate, scope, consent, custody, expiry/revocation, contest path, actor, and consequence bearer. A private DAV may configure K2 as that boundary; generic or public forms do not. Anti-capture depends on architecture, receipts, Grace Exit, and governance practice; it is not guaranteed by the vocabulary.
 
 **Key property:** η = 0 enforcement as an explicit design constraint. In the model, extraction collapses the stated purpose of the DAC; in the world, that claim still needs measured receipts and enforceable exit rights.
@@ -107,32 +118,26 @@ An organizational structure that separates Meaning (Map) from Capability (Territ
 
 ---
 
-## §4: η (Extraction Coefficient)
+## §4: η (Extraction-Diagnostic Family)
 
-**η** [S] Measured by Exit Costs + Structural Yield (MF-408)
+`η` names a family of domain-declared extraction diagnostics, not one universal
+formula. Every use must identify substrate, payer, beneficiary, measurement
+window, units/normalization, uncertainty, and kill criterion. Exit-cost and
+structural-yield asymmetries (MF-408) are candidate indicators, not the
+definition for all domains.
 
-η measures how much a standing wave extracts from its substrate versus serves it.
+| Diagnostic result | Bounded reading | What follows |
+|---|---|---|
+| `η≈0` | no net extraction detected by the declared instrument | continue Justice and outcome review |
+| `η>0` | net extraction detected under that specification | investigate bearers, authorization, causes, repair, and exit |
+| `η<0` | net contribution detected under that specification | still test hidden costs, custody, consent, and durability |
 
-| η | Meaning | Action |
-|----|---------|--------|
-| η = 0 | System serves substrate | Maintain |
-| η > 0 | System extracts from substrate | Correct or abandon |
-| η < 0 | System gives more than it takes | Protect |
+No sign authorizes an action or supplies a complete moral verdict. A narrow
+game can prove an incentive result only for its fully specified payoffs and
+dynamics; there is no universal `η=0` attractor theorem.
 
-**Primary measurements:**
-1. **Asymmetry of Exit Costs (C_exit):** How much does it cost to leave? High = extraction.
-2. **Asymmetry of Structural Yield (E):** How much value flows to vs. from participants? E < 1 = extraction.
-
-**Evidence tier:** [S] — structural diagnostic.
-
-> **Caveat:** The η = 0 theorem assumes a deliberately narrowed, enforced game.
-> Tit-for-tat with occasional forgiveness (Axelrod 1984) can sustain cooperation
-> even with small η > 0 events, and one-shot or hidden extraction can pay locally.
-> The theorem should be read as: η = 0 is the structural optimum / target profile
-> under coupling, horizon, measurement, and enforcement, not the only viable local
-> state. The stronger attractor claim is conditional: η = 0 functions as an attractor
-> only where feedback, correction, receipts, exit rights, and enforcement return
-> deviations toward non-extraction.
+**Evidence tier:** `[S]` as diagnostic vocabulary; `[I/C/B]` for a particular
+instrument until its validation and receipts justify more.
 
 ---
 
@@ -143,7 +148,9 @@ An organizational structure that separates Meaning (Map) from Capability (Territ
 In the move register, the declared `[I]` ethic is bearer-complete: morals require an `i→H` gain, ethics an `H→i` gain, and strict syntropy both, while every materially affected payer, beneficiary, third party, individual, and sustaining whole remains nonnegative under Justice. Aggregate balance scores are diagnostics only and cannot launder a negative bearer. `φν=1` is an analytic chart identity; `P_node:=ΦV` is a selected normalized score, not a derivation of the ethic.
 
 - **Syntropic:** Actions or relations that raise both focal durable potentials under `η=0` while every materially affected bearer remains nonnegative and visible under Justice
-- **Parasitic:** Actions that raise one side by degrading the other — extraction that pushes systems toward the poles or hides a falling boundary
+- **Parasitic:** Hidden, coerced, or unjust actions that raise one side by
+  degrading another bearer; voluntary sacrifice remains a distinct costly
+  class and no pole supplies the classification
 - **The Telos:** Durable mutual option widening under non-extraction, bearer-complete Justice, accountable authorization, separate receipts, and Grace Exit. Aggregate scores are diagnostics only.
 
 **Evidence tier:** `[I]` for the normative direction; `[C]/[B]` depends on domain-specific measurement.
@@ -158,7 +165,7 @@ In the move register, the declared `[I]` ethic is bearer-complete: morals requir
 |------|---------|
 | **[A]** | Axiomatic — mathematical/formal derivation |
 | **[B]** | Bibliographic — cited documents, records, independent findings |
-| **[S]** | Structural — geometric consequence of the framework |
+| **[S]** | Structural — adopted definition or consequence inside a declared framework/model |
 | **[I]** | Interpretive — creative synthesis, not independently verified |
 | **[C]** | Conjecture — testable but untested |
 
@@ -175,11 +182,19 @@ In the move register, the declared `[I]` ethic is bearer-complete: morals requir
 The framework has an immune system. Four corrections have been applied:
 
 1. **Correction 1:** Executive/God Conflation (category precision) -- see [00_NAMING_RECONCILIATION.md](00_NAMING_RECONCILIATION.md) for the full resolution
-2. **Correction 2:** 12 → 7 axioms (compression in v0.3); further reduced to 5 independent axioms in v0.4: O1, O2, O4, O5 + A7. O3 is a corollary (MF-420). The old A1-A6 are derived (DA1-DA6).
+2. **Correction 2:** older twelve-, seven-, and five-axiom derivations were
+   found to mix definitions, interpretations, and empirical claims. The active
+   owner now adopts seven **operational commitments** without claiming a
+   forced or independent decomposition of nature.
 3. **Correction 3:** Egregore relocation (D5-limit)
 4. **Correction 4:** Disproportionate application (symmetry restored)
 
-> **Canonical axiom count (v0.4):** 5 independent axioms total — 4 ontological axioms (O1, O2, O4, O5) + 1 agency axiom (A7). O3 (Emergence) is a corollary derivable from O5. The original v0.1 "twelve axioms" compressed to 7 in v0.3 (A1-A7), now relabeled as DA1-DA6 (derived) + A7 (independent). The current canonical set is {O1, O2, O4, O5, A7}.
+> **Active contract:** A1–A7 in
+> [`00_THE_SEVEN_AXIOMS.md`](../../05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md)
+> are selected, typed framework commitments. Their count is architectural
+> `[I]`; their analytic subclaims and conjectures keep their own tiers. No
+> active theorem derives one commitment from another or proves sevenfold
+> necessity.
 
 **Rule:** The corrections are more important than the claims. They demonstrate that the system can be wrong and can correct itself.
 
@@ -189,9 +204,13 @@ The framework has an immune system. Four corrections have been applied:
 
 ## §8: Kill Conditions
 
-**Every claim has a kill condition.** [S] Falsification commitment
+**Every load-bearing non-analytic claim has a kill or revision condition.**
+`[S]` framework commitment
 
-The framework is designed to die if wrong. Every prediction has a specific condition that, if triggered, kills the claim.
+Every empirical prediction and conjecture needs a condition that can defeat it.
+Analytic identities and definitions instead declare a proof obligation or a
+`notApplicableReason`; they are revised for inconsistency or loss of utility,
+not “falsified” by observation.
 
 **Examples:**
 - Node-level multiplicative flourishing model (`Φ × V`): killed if a new independently governed comparison shows a competing model wins under preregistered criteria; retired studies do not count
@@ -202,10 +221,14 @@ The framework is designed to die if wrong. Every prediction has a specific condi
 - Applied reciprocal-chart claim: killed in a domain when operationalized
   variables do not follow the declared reciprocal relation or a fair rival
   predicts/intervenes better. The analytic identity itself is definitional.
-- Golden Age Hypothesis: Killed if Jaynes' bicameral mind hypothesis is disproved — if ancient humans had the same narrative systemic awareness as moderns, the neurological foundation collapses. (Note: the Raktabija dynamic survives independently of Jaynes.)
-- Golden Age Hypothesis (terminal kill): Killed if Jaynes' bicameral mind hypothesis is falsified independently of this framework, AND no alternative neurological mechanism supports the Golden Age coordination claim. (This is the strongest kill condition: even non-Jaynes evidence for ancient coordination must exist for the hypothesis to survive.)
+- Golden Age hypotheses must preregister their own measurable historical or
+  archaeological predictions and rivals. Jaynes's hypothesis may be one rival
+  dependency, but an open-ended appeal to any future alternative mechanism is
+  self-sealing and is not a valid kill criterion.
 
-**Rule:** If a claim doesn't have a kill condition, it's not part of the framework's empirical program.
+**Rule:** if an empirical claim lacks a kill condition, it is not part of the
+framework's empirical program. Analytic and definitional entries must state why
+empirical falsification is not applicable.
 
 **Evidence tier:** [B] Falsification is standard scientific practice.
 
@@ -219,9 +242,9 @@ P_chart := φ · ν = 1 for the selected open reciprocal chart
 P_node := Φ × V (selected normalized conjunctive instance; external fit [C])
 η = 0 (necessary non-extraction boundary, never sufficient Justice)
 Syntropic: J and Δ_TW_i > 0 and Δ_TW_H > 0 and every other bearer nonnegative
-5 independent axioms: O1, O2, O4, O5 + A7 (O3 is a corollary)
+7 selected operational commitments A1-A7 (not forced laws of nature)
 [A] [B] [S] [I] [D] [C] (the honesty system)
-Kill conditions on every claim
+Kill/revision conditions on load-bearing claims; explicit N/A for identities/definitions
 Corrections are more important than claims
 ```
 

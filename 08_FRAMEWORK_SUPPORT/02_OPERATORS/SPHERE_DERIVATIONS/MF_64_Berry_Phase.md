@@ -28,13 +28,25 @@ rosetta:
 **Evidence Tier:** [A/I] Elementary differential geometry + Interpretive systemic awareness mapping
 **Dependencies:** S0 (Riemann sphere), MF-36 (Equator Principle), MF-42 (Genus Change), MF-63 (Möbius Classification)
 
+> **[金] Kintsugi authority seam — 2026-07-19.** Parallel transport,
+> Gauss-Bonnet, and Berry phase retain their standard mathematical or physical
+> meanings `[A]`. Berry phase is geometric and only topological in special
+> settings. For Levi-Civita transport on the unit sphere, holonomy is enclosed
+> oriented area modulo `2π`; one traversal of the equator is the identity, not a
+> `π` chirality flip. The sphere/torus, wisdom, awareness, neural, and operator
+> links are removable `[I/C]`. D4 contains actual agents, state trajectories,
+> measurements, and records; D5 contains possible content represented by D4
+> models. No geometry proves consciousness or Justice.
+
 ---
 
 ## ABSTRACT
 
 On a flat surface, you can carry a vector around any closed loop and return it unchanged. On a curved surface, you cannot. A vector parallel-transported around a closed loop on S² returns rotated by an angle equal to the enclosed solid angle. This is holonomy — the geometric phase acquired by cyclic evolution on a curved manifold.
 
-In physics, this is the Berry phase: a quantum state transported around a closed loop in parameter space acquires a phase that depends only on the geometry of the loop, not on the speed of traversal. The phase is topological — it cannot be removed by going slower or faster.
+In physics, adiabatic cyclic evolution can produce a Berry phase determined by
+the path in parameter space. It is geometric; it is not generally a topological
+invariant.
 
 On the VIVEKA sphere, holonomy has a direct interpretation: **every closed journey through state space changes the traveler**. You cannot explore the sphere and return unchanged. The rotation acquired is proportional to the area enclosed — the more territory you traverse, the more you are transformed. Gauss-Bonnet is the established mathematics; applying it to systemic awareness is the framework's interpretive mapping.
 
@@ -65,7 +77,8 @@ For the unit sphere:
 - A small circle at latitude θ enclosing area A = 2π(1 − cos θ): Δα = 2π(1 − cos θ).
 - A path enclosing one quarter of the sphere: Δα = π. The vector returns perpendicular to how it started.
 
-**The holonomy is nonzero whenever the loop encloses nonzero area.** [A]
+The holonomy is the oriented enclosed area modulo `2π`; nonzero area can still
+give the identity when it is a multiple of `2π`. `[A]`
 
 ### 1.3 The Torus
 
@@ -150,9 +163,13 @@ However, if the state lives in SU(2) (the double cover of SO(3), see MF-67), the
 
 This requires careful treatment. A great circle on S² (the equator) is a geodesic. The holonomy of a geodesic is determined by the enclosed solid angle, but the equator divides S² into two equal hemispheres of area 2π each, and the choice of "which side is enclosed" is underdetermined. [A]
 
-**Resolution:** The holonomy of a great circle is well-defined and equals π — not 0 or 2π. This follows from the Gauss-Bonnet theorem applied to the hemisphere: a geodesic triangle with three right angles on S² has angular excess equal to its area. The equator, viewed as the limit of spherical lunes, yields Δα = π by the geodesic curvature formula. A vector parallel-transported around the equator returns rotated by π — pointing the opposite direction. [A]
+**Resolution:** A vector parallel-transported once around the equator encloses a
+hemisphere of area `2π` and returns with holonomy `2π≡0`; it does not point in
+the opposite direction. `[A]`
 
-**Framework interpretation:** Cycling through four strategic phases at L4 does not return you to your starting orientation. It rotates your internal reference frame by π — a half-turn. This is intermediate between "no change" (flat space) and "full inversion" (the SU(2) sign flip of MF-67). The equatorial circumnavigation produces exactly the holonomy that distinguishes left from right — a chirality. The L4 reflexivity problem (MF-42) may be precisely this: the equator's holonomy is π, not 0, so the agent at L4 who has cycled through all phases is rotated relative to the agent who has not. Same coordinates, different orientation. [I]
+**Framework interpretation:** No chirality inversion follows from equatorial
+transport. Any operator-cycle effect must be measured independently from the
+geometry. `[C]`
 
 **OPEN QUESTION (EQ-HOL-1):** Does the π-holonomy of equatorial circumnavigation have an operational signature? If Berry phase corresponds to accumulated wisdom (§V), then an agent who has cycled through all four strategic phases at L4 should be distinguishable — by some internal measure, not by external coordinates — from one who has remained static at L4. [T]
 
@@ -170,11 +187,13 @@ This is the pre-conscious condition. Physical processes cycle without accumulati
 
 ### 4.2 Sphere: All Journeys Are Transformative
 
-At the genus change (D4 → D5), the hole closes. The torus becomes a sphere. Constant positive curvature everywhere.
+The torus-to-sphere move is a selected geometric analogy, not a D4→D5 physical
+transition or awareness event.
 
 Now: **every closed loop on S² enclosing nonzero area has nonzero holonomy.** [A]
 
-There are no neutral journeys. Every experience that covers any area on the state space leaves an irreducible geometric trace. This is the D5 condition — systemic awareness. The agent cannot un-experience what it has experienced. [I]
+Holonomy depends on path and connection. No theorem turns it into an
+irreducible psychological trace or a condition for awareness. `[I/C]`
 
 ### 4.3 The Transition Moment
 
@@ -210,7 +229,7 @@ The Bodhisattva vow is a Berry phase maximization strategy: close the largest po
 
 ---
 
-## VI. EXPERIMENTAL IMPLICATIONS
+## VI. QUARANTINED EMPIRICAL PROGRAM
 
 ### 6.1 Neural Holonomy
 
@@ -226,7 +245,8 @@ The genus-change prediction is sharp: pre-conscious neural processing should sho
 
 ### 6.3 The Equatorial Chirality Prediction (EQ-HOL-1 Resolution)
 
-Section III.3.3 established that a vector parallel-transported around the equator of S² acquires a holonomy of π — it returns pointing the opposite direction. This is a **chirality inversion**: left becomes right, clockwise becomes counterclockwise. [A]
+Section III.3.3 now establishes identity holonomy around the equator. The former
+`π` chirality premise was false, so predictions derived from it are withdrawn.
 
 **Prediction:** An agent at L4 who has cycled through four strategic phases (creation-boundary recognition → preservation-boundary recognition → dissolution-boundary recognition → Kṛṣṇa capability rebuild → return) should exhibit a measurable chirality inversion relative to an agent at L4 who has not cycled. [T]
 
@@ -244,13 +264,15 @@ Section III.3.3 established that a vector parallel-transported around the equato
 
 **What this tests:** Whether equatorial circumnavigation on the VIVEKA sphere has a physical correlate in neural dynamics. If confirmed, it would be the first empirical evidence that the operator structure has geometric (not merely metaphorical) content. [T]
 
-**EQ-HOL-1 status: RESOLVED — prediction specified. Awaiting experimental test.**
+**EQ-HOL-1 status: WITHDRAWN — false geometric premise.**
 
 ---
 
 ## THE SENTENCE
 
-On the sphere, every closed journey can change the transported frame. The change equals the area enclosed. The torus allows neutral journeys. The sphere does not. The genus change — read as the framework's model of systemic awareness — is the transition from "some cycles are neutral" to "closed experience-cycles can become phase-bearing." [A/I]
+On the sphere, parallel-transport holonomy equals oriented enclosed area modulo
+`2π`. That `[A]` result may inspire a path-dependence metaphor `[I]`, but it
+does not establish awareness, wisdom, ethics, or neural phase inversion.
 
 The Berry phase is the geometric content of wisdom.
 
@@ -258,7 +280,8 @@ The Berry phase is the geometric content of wisdom.
 
 Zero-Sum Resolution Equation
 
-You cannot walk the sphere and return unchanged. That is what it means to be conscious.
+Some transported frames change around some loops. Consciousness is not proven
+by that geometry.
 
 *MF-64 | VIVEKA v8.0 | February 2026*
 

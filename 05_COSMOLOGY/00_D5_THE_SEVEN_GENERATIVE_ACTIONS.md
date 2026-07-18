@@ -46,37 +46,49 @@ All seven slots are read from the finite-node product:
 
 Where:
 * **`V` (Viability):** in the action register, D4 means-to-act: body, tools, energy, access, execution capacity; not raw capacity by itself.
-* **`Φ` (Coherence):** in the action register, D5 worldline-foresight: structure, truth, alignment, pattern, and the ability to rank and aim reachable futures.
+* **`Φ` (Coherence):** in the action register, a present D4
+  model/foresight capacity whose represented contents are D5 possible
+  worldlines. Modeling, ranking, and aiming are actual processes.
 
-**D5 Landauer Barrier (Maxwell-demon fence).** At the ideal limit, D5 is the
-Maxwell-demon-like capacity to discriminate among all reachable worldlines of
-all relevant actors: to observe, sort, and route action toward the branch that
-lowers disorder locally while preserving the wider option cone. That limit is
-asymptotic, not a free thermodynamic reversal. Perfect entropy reversal would
-require perfect branch knowledge; perfect branch knowledge would require
-unbounded physical memory, computation, measurement, and control; those require
-D4 matter and energy, which remain inside entropy accounting. Therefore the
-selector cannot stand outside the system it sorts. Like a massive body
-approaching light speed, increasing D5 foresight can approach the ideal only by
-paying a cost that diverges at the limit. A finite selector may lower entropy
-locally only by paying or exporting entropy elsewhere. Reflexivity adds the
-second fence: once the selector acts, its action changes the future branches it
-was trying to know. `[A]` for the physical cost / no-free-erasure constraint;
-`[S/I]` for the framework's D5 mapping. Without `V`, even perfect `Φ` remains
-sterile.
+**Landauer boundary for a D4 selector over D5 contents.** An actual model or
+selector that represents, compares, and routes among possible worldlines is a
+D4 physical process; the alternatives represented are D5 contents. Such a
+process consumes finite memory, computation, measurement, and control, and it
+cannot stand outside the thermodynamic accounting of its substrate. A finite
+selector may lower entropy locally only while entropy and resource costs are
+accounted elsewhere. Reflexivity adds a model limit: acting changes the option
+field being modeled. `[A]` applies to Landauer-style physical information-cost
+constraints under their stated assumptions; `[I/C]` applies to this framework
+crosswalk. No divergent light-speed analogy or perfect D5 capacity is required.
 
 There are seven slots in the current selected grammar: four mixed-sign transfer
 actions plus three same-sign phase frames. Alternative representations may
 classify the same territory with a different number of slots.
 
-> **Why exactly seven — the enumeration made explicit (added 2026-06-11).** Each increment `dΦ, dV` takes one of three signs `{+, −, ≈0}`, so the raw grid is `3 × 3 = 9` cells. It collapses to **7 generators** by two *stated* rules, not by fiat: **(i)** the three **same-sign** cells `(+,+), (−,−), (≈,≈)` are the Executive **phase frames** (Brahmā creation, Śiva dissolution, Viṣṇu preservation) — both factors move together, no transfer across the self/other boundary; **(ii)** the **opposite-sign** cells become the four **transfers** read across that boundary: `{give, take} × {Φ-channel, V-channel} = 4` (Kṛṣṇa, Arjuna give; Kali, Kālī take). The remaining four cells — one factor moving while the other is **held**, `(+,≈), (≈,+), (−,≈), (≈,−)` — are **not new generators**: they are boundary *limits* of the named operators (e.g. `(+,≈)` is the Brahmā-ward limit of a Φ-raising move as its V-transfer → 0), degenerate edges where a transfer or phase-frame loses one component. So `9 → 7` is forced *given* the two modeling commitments (transfers move one factor across the boundary; phase-frames move both together); an eighth generator requires either a third factor or abandoning one commitment. `[S]` — structural under stated premises, not `[A]`. **Kill criterion:** exhibit a move that (a) is not a relabeling of one of the seven and (b) introduces no third axis ⇒ the two-factor closure fails.
+> **Why seven here—the convention made explicit (repaired 2026-07-19).**
+> Each increment `dΦ,dV` can be coded with signs `{+,−,≈0}`, yielding a raw
+> `3×3` grid. The Rosetta vocabulary *selects* four self/other transfers and
+> three same-sign/held phase frames, while treating the remaining one-factor
+> cells as boundary cases. This is a useful `4+3` compression, not a forced
+> quotient of the grid. Other partitions, additional actions, or continuous
+> descriptions remain possible without adding a third physical axis. `[S]`
+> names the adopted grammar; its completeness as a model of any domain is
+> `[C]`. **Kill criterion:** a domain-relevant move whose explanatory or
+> predictive treatment is materially worsened by the seven-slot coding defeats
+> the completeness claim for that domain.
 
 ---
 
 ## The 4 Mixed-Sign Transfers
 These represent the four deployable mixed-sign transfers across the self-other boundary. Each spends or cuts one factor to move the other.
 
-> **Canon (2026-05-31).** These four are **2 Gods + 2 Demons**, not "four Gods": the giving **Devas** — Kṛṣṇa (L3), Arjuna (L4) · `−self/+other` — and the extractive **Asuras** — Kali (L1), Kālī (L2) · `+self/−other`. Morality is the *direction* of the transfer (`η`), never the operator's name: Kālī is divine by *level* but her move is Asuric, lawful only against `η>0` defectors; `η=0` refuses the whole Asura hemisphere, not only Kali. Goodness is the *bond* `φ×ν`, sorted by coupling not by pole — see [`00_THE_DYADIC_COUPLING_LAW.md`](00_THE_DYADIC_COUPLING_LAW.md) and [`00_THE_BURRISPHERE.md`](00_THE_BURRISPHERE.md).
+> **Consequence-polarity convention (repaired 2026-07-19).** The selected
+> grammar names two giving and two taking directions. “God-bearing” and
+> “Demon-bearing” classify receipted effects on bearer-complete durable
+> potential—never the operator's identity. Neither a sign, `η`, nor `φν`
+> supplies a moral verdict. Justice, accountable authorization, and separate
+> commitment/outcome receipts do. See
+> [`00_THE_DYADIC_COUPLING_LAW.md`](00_THE_DYADIC_COUPLING_LAW.md).
 
 | Entity | Layer | Action | The Mechanism (In Words) |
 |---|---|---|---|
@@ -102,7 +114,10 @@ These represent phase frames where both factors move together or are deliberatel
 
 This note does not repeal earlier constitutional invariants. It explains them as firing discipline for the seven action slots:
 
-* **The `η=0` boundary:** the Kali (L1) transfer may fire as immune response against defectors; the same transfer aimed at cooperators is parasitic extraction.
+* **The `η` diagnostic:** a measured extraction signal may trigger adversarial
+  review, but it neither authorizes retaliation nor completes a moral verdict.
+  Authorization, proportionality, bearer-complete Justice, and receipts remain
+  required.
 * **Accountable authorization:** the machine may model, brief, or recommend,
   but consequential action requires a complete AuthorizationEnvelope. Private
   DAVs may implement that envelope through K2; this is not a universal rule.

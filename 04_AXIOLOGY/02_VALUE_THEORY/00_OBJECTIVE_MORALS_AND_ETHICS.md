@@ -294,9 +294,9 @@ imposed loss a mutual gain.
 | `ΔᴿW_i>0`, `ΔᴿW_H>0`, Justice holds | strict syntropy |
 | `ΔᴿW_i=0`, `ΔᴿW_H>0`, Justice holds | moral, not strict syntropy |
 | `ΔᴿW_i>0`, `ΔᴿW_H=0`, Justice holds | ethical, not strict syntropy |
-| one rises by making the other negative | extraction, even if aggregate rises |
+| one rises through hidden, coerced, unauthorized, or unjust loss that makes the other negative | extraction, even if aggregate rises |
 | both rise in the metric but consent/custody/contest fails | unjust metric gain |
-| individual freely accepts loss and whole rises | voluntary sacrifice, not syntropy |
+| competent, informed individual freely accepts visible loss and whole rises, without penalty for refusal | voluntary sacrifice, not syntropy; sacrifice predicate takes precedence over extraction shorthand |
 | payer or beneficiary is hidden | unclassifiable; fail closed |
 
 An action may be lawful preservation without being generative. It may be

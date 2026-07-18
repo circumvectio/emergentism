@@ -200,11 +200,11 @@ binary product and does not constitute the unit.
 
 We can state the one *provable* core of the paper as a theorem, with a short proof, and fence it precisely from the interpretive claims that surround it.
 
-**Theorem (localization, not elimination).** Let `K` be a field, `P¹(K)` its one-point projective completion, `∞ = [1:0]` the point at infinity, and `z ↦ 1/z` the inversion. (For the topological clause of (i), take `K ∈ {ℝ, ℂ}`, where `P¹(ℂ) ≅ S²` and `P¹(ℝ) ≅ S¹` carry their standard topologies.) Then: `[A]`
+**Theorem (localization, not elimination).** Let `K` be a field, `P¹(K)` its one-point projective completion, `∞ = [1:0]` the point at infinity, and `z ↦ 1/z` the inversion. The algebraic clause of (i) and clause (iii) hold for arbitrary `K`. For the topological clause of (i) and all of clause (ii), take `K ∈ {ℝ, ℂ}` with its standard topology, where `P¹(ℂ) ≅ S²` and `P¹(ℝ) ≅ S¹`. Then: `[A]`
 
 (i) **Gain (algebraic, any `K`; topological, `K ∈ {ℝ, ℂ}`).** For every `N ∈ K` with `N ≠ 0`, the inversion-completed division assigns `N / 0 = [1:0] = ∞` — the **same** point for all nonzero `N`, since the map `N ↦ N/0` is constant on `K \ {0}`. Algebraically this holds over any field. Topologically, for `K ∈ {ℝ, ℂ}` the Möbius map `z ↦ 1/z` exchanges `0 ↔ ∞` as a **homeomorphism of the completion** (the sphere `S²` for `ℂ`, the circle `S¹` for `ℝ`).
 
-(ii) **Kept edge.** The form `0/0` admits **no** value in `K` consistent with continuity of the field operations: any assignment `0/0 = c` is contradicted by the existence of two sequences `aₙ, bₙ → 0` with `aₙ/bₙ → c₁ ≠ c₂` (e.g. `aₙ = 1/n, bₙ = 2/n` gives `1/2`; `aₙ = 1/n², bₙ = 1/n` gives `0`). The companion form `∞/∞` is, in the **analytic register**, the corresponding indeterminate form (its value set by competing rates, resolved by L'Hôpital — see §4); this is distinct from the *projective* symbol `∞/∞` (frame-on-frame, §4–§5), which is not a field-operations limit at all. Either way the indeterminacy is *forced*, not chosen.
+(ii) **Kept edge (`K ∈ {ℝ, ℂ}`).** The form `0/0` admits **no** value consistent with a continuous extension of division at `(0,0)`: any assignment `0/0 = c` is contradicted by two sequences `aₙ, bₙ → 0` with `aₙ/bₙ → c₁ ≠ c₂` (e.g. `aₙ = 1/n, bₙ = 2/n` gives `1/2`; `aₙ = 1/n², bₙ = 1/n` gives `0`). The companion form `∞/∞` is, in the **analytic register**, the corresponding indeterminate form whose value depends on competing rates and may sometimes be evaluated under additional hypotheses by tools such as L'Hôpital's rule (see §4). This is distinct from the *projective* symbol `∞/∞` (frame-on-frame, §4–§5), which is not a field-operations limit at all. The analytic non-uniqueness is forced by the exhibited paths, not chosen.
 
 (iii) **Price of unrestricted quotient recovery.** A nontrivial structure
 `W⊇K` cannot have total division, ordinary absorption `0·x=0`, **and** the
@@ -215,7 +215,7 @@ absorption to fail; the incompatible package must be stated in full.
 
 *Proof.* (i) For `N ≠ 0`, projective equality gives `[N : 0] = [1 : 0] = ∞`, so the value is the **same** point `∞` for every nonzero `N` (the map `N ↦ N/0` is constant on `K \ {0}`); the inversion `z ↦ 1/z` is the Möbius transformation `[a : b] ↦ [b : a]`, which swaps `[1:0]` and `[0:1]`, i.e. exchanges `∞ ↔ 0`. The *algebraic* statement — a single well-defined projective value `[1:0]` — holds over any field `K`. The *topological* clause (that the inversion is a **homeomorphism of the sphere**) is asserted only for `K ∈ {ℝ, ℂ}`, where `P¹(K)` carries its standard topology (`P¹(ℂ) ≅ S²`, the 2-sphere; `P¹(ℝ) ≅ S¹`, the circle); over a general field `P¹(K)` is a projective set with no canonical sphere topology, and only the algebraic clause is claimed.
 
-(ii) Standard non-existence of the limit `0/0`: the two displayed sequences give distinct quotient-limits, so no single value `c` extends `÷` continuously over `0/0`. The reciprocal sequences `1/aₙ, 1/bₙ → ∞` give the corresponding statement for `∞/∞` *as an analytic indeterminate form* (competing rates); this is the calculus register, distinct from the projective frame-symbol `∞/∞` of §4, and is the sense in which (ii) is meant.
+(ii) Over `ℝ` or `ℂ`, the two displayed sequences give distinct quotient-limits, so no single value `c` extends `÷` continuously over `(0,0)`. The reciprocal sequences `1/aₙ, 1/bₙ → ∞` give the corresponding statement for `∞/∞` *as an analytic indeterminate form* (competing rates); this is the calculus register, distinct from the projective frame-symbol `∞/∞` of §4, and is the sense in which (ii) is meant. No limit topology is asserted here for an arbitrary field.
 
 (iii) Suppose all three properties hold. For any `a∈W`, totality supplies
 `a/0`; unrestricted quotient recovery gives `(a/0)·0=a`; absorption gives
@@ -238,7 +238,7 @@ Titan frame are `[S/I]`; the apophatic and Gödel correspondences are `[I]`.
 The emblem `1=0×∞` is declared `[S/I]` notation, never `[A]`.
 
 **Kill criteria.**
-(a) Exhibit a value `c` such that `0/0 = c` or `∞/∞ = c` holds consistently with the continuity of the field operations — i.e. defeat Theorem (ii). This would falsify the paper's central scope claim. *(It cannot be done by §8(ii); the claim is stated so it could in principle fail.)*
+(a) Over `ℝ` or `ℂ` with the standard topology, exhibit a value `c` giving a path-independent continuous extension of division at `0/0`, or a path-independent analytic value for `∞/∞` under the unrestricted competing-rate conditions of Theorem (ii). This would defeat clause (ii). No analogous topological claim is made for an arbitrary field.
 (b) Exhibit a nontrivial totalisation retaining absorption and unrestricted
 quotient recovery for `b=0` — i.e. defeat Theorem (iii).
 (c) **The hard kill, by the framework's own rule:** any step in this paper that makes `0 · ∞` *literally equal `1` in the field*, or that claims `0/0` or `∞/∞` *resolved*, falsifies the paper's discipline outright. If the emblem ever escapes the frame register into field arithmetic, the paper is wrong by its own standard.

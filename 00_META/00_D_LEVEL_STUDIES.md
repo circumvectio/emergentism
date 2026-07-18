@@ -20,8 +20,9 @@ rosetta:
 > place for provenance. In the body below, every passage asserting a
 > forced/unique Titan triad, universal strong or irreducible `μ`, `Born rule =
 > φν`, Everett/Copenhagen as added dimensions or collapse as `μ`/`χ`, or
-> K2/founder status as metaphysical `D5→D4` agency is superseded by `KSC-02`,
-> `KSC-04`, `KSC-05`, and `KSC-06` in
+> K2/founder status as metaphysical `D5→D4` agency, any inversion of D4/D5
+> modality, or literal `D6≡D0` closure is superseded by `KSC-01`, `KSC-02`,
+> `KSC-03`, `KSC-04`, `KSC-05`, and `KSC-06` in
 > `00_META/00_SETTLED_CANON_REGISTRY.md`. Those passages are
 > **not live authority**. Current semantic owners are
 > `05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md`,
@@ -80,9 +81,9 @@ The practical goal is:
 | **D1** | Distinction | separation, geometry, boundary, symmetry | geometry, topology, algebra, group theory, algebraic geometry | How is distinguishability structured? |
 | **D2** | Configuration | state-space, relation, lawful arrangement | theoretical physics, dynamical systems, statistical mechanics, field structure | How do lawful configurations behave? |
 | **D3** | Transformation / Life-form | self-maintaining form, metabolism, viable embodiment | chemistry, systems biology, physiology, ecology, morphogenesis | How does organized form persist and transform? |
-| **D4** | Causality / Bounded Mind | embodied mechanism, control, cognition as causal substrate | neuroscience, cognitive science, cybernetics, psychophysics, predictive processing | How does a finite embodied system sense, model, and act? |
-| **D5** | Selection / Strategic Relation | choice under incentives, interaction, bargaining, coordination, extraction, institution, symbolic sediment, lived present | game theory, behavioral economics, mechanism design, institutional economics, coordination science, social theory, macrohistory | How do interacting agents choose, defect, cooperate, institutionalize, and shape civilizational order? |
-| **D6** | Terminal Boundary / Axiomatic Closure | exhaustion of state, negation of exhaustive capture, `Falsification Protocol`, return to point-state, end-boundary of the aeon | no positive public science; only axiomatic practice, contemplative negation, and anti-idolatry discipline | What remains when every positive register is subtracted and the field returns to the point? |
+| **D4** | Causal Actuality / Bounded Mind | actual embodied mechanism, present model tokens, performed ranking or selection, action, record, and receipt | neuroscience, cognitive science, cybernetics, psychophysics, predictive processing | How does a finite embodied system sense, model, select, act, and record? |
+| **D5** | Counterfactual Possibility / Strategic Relation | represented alternatives, future referents, candidate rankings, possible bargains, possible institutions, and worldlines | game theory, behavioral economics, mechanism design, institutional economics, coordination science, social theory, macrohistory | Which strategic alternatives can actual agents represent, compare, coordinate around, and reach? |
+| **D6** | Terminal Boundary / Axiomatic Closure | exhaustion of positive capture and one non-`μ` interpretive return `r₆:D6↝D0` | no positive public science; only axiomatic practice, contemplative negation, and anti-idolatry discipline | What remains when every positive register is subtracted without asserting literal identity with D0? |
 
 ---
 
@@ -90,22 +91,26 @@ The practical goal is:
 
 This document does **not** change the core state.
 
-The core state remains:
+The current scaffold remains one typed interpretive decomposition:
 
-- D0-D4 structural in derivation
-- D5 idealist in lived disclosure, D6 axiomatic in closure
+- D4 contains causal actuality, including actual model and selection events
+- D5 contains the counterfactual contents those actual models may represent
+- D6 adds no positive freedom and closes only through `r₆:D6↝D0`
 
 What this document changes is the **public scientific translation**.
 
 In that public register:
 
-- D4 is where the sciences of embodied causal cognition dominate
-- D5 is where the sciences of strategic selection, institution, and civilizational sediment dominate
+- D4 is where the sciences of embodied causal cognition, performed selection,
+  action, and record dominate
+- D5 is where sciences such as game theory expose represented strategic option
+  spaces; actual institutions and their traces remain D4 carriers that may
+  preserve or reweight D5 contents
 - D6 is not a public science but the axiomatic limit of those sciences
 
 So when the framework says:
 
-> **D5 is selection**
+> **D5 is possible selection content**
 
 the nearest established sciences are not mystical.
 They are:
@@ -115,15 +120,18 @@ They are:
 - mechanism design
 - institutional economics
 
-That is the public bridge.
+Actual modeling, ranking, selection, action, and measurement remain D4 events.
+That typed D4/D5 interface is the public bridge.
 
 ---
 
 ## Why D5 Matters So Much
 
-D5 is the first level where the framework's moral language becomes formally public.
+D5 is the first level where counterfactual strategic alternatives become a
+useful public object of formal study. No moral conclusion follows from that
+modality or from the reciprocal geometry.
 
-At D5, the framework can be translated into:
+At the D4/D5 interface, the framework can be translated into:
 
 - strategic interaction
 - principal-agent problems
@@ -144,18 +152,23 @@ This is why D5 is the strongest near-term scientific unification surface for:
 
 It should also be read asymmetrically:
 
-- from below, D5 is **strongly emergent in genesis**
-- from above, D5 becomes **weakly emergent in governance**
+- from below, `μ₄:D4→D5` is a **candidate emergence crossing** whose reduction
+  status must be reported rather than assumed
+- from above, represented strategic alternatives may provide a compact
+  constraint model without proving irreducibility
 
 So:
 
-- strategic order cannot usually be shortcut from isolated lower-level states
+- strategic order may not yet be recoverable from the currently specified
+  lower-level model; that is `currently_unreduced`, not proof of strong emergence
 - but once stabilized, strategic order can often be seen and modeled compactly as a higher-order constraint
 
 In other words:
 
-- D4 tells us how a bounded agent operates
-- D5 tells us what happens when bounded agents meet, coordinate, defect, institutionalize, sediment into history, and live the present
+- D4 contains bounded agents actually modeling, meeting, coordinating,
+  defecting, acting, institutionalizing, and leaving records
+- D5 contains the possible strategies, futures, and institutional alternatives
+  represented in those D4 processes
 - D6 is not another positive or experiential layer above this; it is the terminal boundary where the claim of final description is released
 
 ---
@@ -167,9 +180,12 @@ Many sciences are inherently cross-level.
 Examples:
 
 - **physics** spans D1-D2 and partly D4 when observation enters
-- **biology** spans D3-D4 and sometimes D5 when social coordination matters
-- **neuroscience** spans D3-D4 and approaches D5 at action selection
-- **economics** spans D4-D5 depending on whether it studies incentives, institutions, or civilizational order
+- **biology** spans D3-D4 and approaches D5 when organisms' actual coordination
+  is modeled through represented alternatives
+- **neuroscience** spans D3-D4 and approaches D5 when actual models represent
+  counterfactual action alternatives; selection itself remains D4
+- **economics** spans D4-D5 when actual behavior and institutional traces are
+  studied together with represented incentives, strategies, and alternatives
 - **comparative religion** sits at the upper edge of D5 and may point apophatically beyond it without becoming a positive D6 science
 
 So the framework should never say:
@@ -193,7 +209,9 @@ When translating the framework into public science:
 For example:
 
 - do not say "D5 proves morality"
-- say "D5 is the strategic-relational level where ethical structure becomes legible through game theory, behavioral economics, and mechanism design"
+- say "D5 contains represented strategic alternatives studied through game
+  theory, behavioral economics, and mechanism design; bearer-complete Justice
+  separately evaluates actual D4 authorization, action, and outcomes"
 
 Likewise:
 
@@ -221,8 +239,9 @@ This means:
 - neuroscience is not abolished by game theory
 - game theory is not abolished by phenomenology
 
-Each level retains its own irreducible object.
-The framework supplies the bridge.
+Each level retains its own explanatory objects while its reduction status is
+tested. The framework supplies the bridge; a missing reduction law supplies no
+proof of irreducibility.
 
 ---
 
@@ -230,7 +249,9 @@ The framework supplies the bridge.
 
 The most urgent canonical surfaces after biology are:
 
-1. **D5 Register** -- game theory, behavioral economics, mechanism design, institutional economics, and the positive study of strategic sediment
+1. **D4/D5 Interface** -- actual modeling and selection events (D4) coupled to
+   represented strategic alternatives (D5) in game theory, behavioral
+   economics, mechanism design, and institutional economics
 2. **Bridge Laws** -- how one level opens into the next without contradiction
 3. **D6 Boundary Note** -- the axiomatic closure of the science stack through `Falsification Protocol`
 
@@ -242,7 +263,7 @@ This document establishes the positive stack and marks its axiomatic closure.
 
 When this idea must be stated briefly, the default sentence is:
 
-> **The sciences can be read as dominant study surfaces through D5: formal at D0-D1, physical at D2, life at D3, embodied cognition at D4, and strategic relation at D5. At that D4→D5 threshold, emergence is asymmetric: opaque from below, legible from above. D6 is not another positive science but the axiomatic closure of the stack through `Falsification Protocol`. This is a unification by translation and bridge-law, not by reduction.**
+> **The sciences can be read through dominant study surfaces: formal at D0-D1, physical at D2, life at D3, actual embodied modeling, selection, action, and record at D4, and represented strategic alternatives at D5. `μ₄:D4→D5` is a candidate crossing whose reduction status remains testable; missing reduction is not irreducibility. D6 is not another positive science but apophatic closure through one non-`μ` interpretive edge `r₆:D6↝D0`. This is a unification by typed translation and testable bridge law, not a proof of reduction or non-reduction.**
 
 This sentence may be reused verbatim.
 
@@ -255,8 +276,10 @@ This sentence may be reused verbatim.
 1. Do not collapse all sciences into one vocabulary.
 2. Assign the dominant D-level by object, method, and explanatory horizon.
 3. Use the nearest established discipline first, then introduce the framework's integrative language.
-4. Treat D5 as the public bridge for strategy, incentives, extraction, and coordination.
-5. Treat D6 not as a public register but as the axiomatic limit that prevents any register from claiming finality.
+4. Treat the D4/D5 interface as the public bridge: actual carriers and events at
+   D4 may represent possible strategies, incentives, and futures at D5.
+5. Treat D6 not as a public register but as the axiomatic limit with one
+   non-`μ` interpretive return `r₆`; never assert literal `D6≡D0`.
 
 *A true unification preserves the sciences it unifies and knows where they must stop.*
 

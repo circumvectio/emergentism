@@ -8,7 +8,7 @@ rosetta:
       role: "rank expert inputs against constitutional fit and receipts"
     - level: L4
       column: Governance
-      role: "preserve WHISPER/FLOW/K2 engagement binding path"
+      role: "preserve WHISPER/FLOW typed accountable-authorization path"
     - level: L6
       column: Core State
       role: "bound availability and expert claims to engagement-specific contracts"
@@ -32,6 +32,14 @@ evidence_tier: "[I] for engagement workflow; [S] for WHISPER + API PAY rail; [C]
 
 > **Phase 0:** experts as bibliographic packages + on-demand LLM consultation. Phase 1 (after S1): real human contracts via WHISPER. Phase 2 (after S4): niche-graph integrated. This doc specs the workflow that survives across all three phases.
 
+> **[金] Authority repair (2026-07-19):** Engagements and downstream acts
+> use `AuthorizationEnvelope = principal + mandate + scope + consent + custody
+> + expiry/revocation + contest_path + actor + consequence_bearer`. K2 is the
+> designated natural-person rail for private DAVs. PRISM quorum plus the
+> applicable public-governance receipt is the rail for public DAVs/DACs. The
+> April packet-specific K2 examples below are retained as private-DAV
+> provenance; they do not define universal authority.
+
 ---
 
 ## 1. The Six-Step Engagement Workflow
@@ -45,14 +53,14 @@ evidence_tier: "[I] for engagement workflow; [S] for WHISPER + API PAY rail; [C]
        ▼ (Five-Ws filled per packet 214 + Q11 smallest-gap)
 3. WHISPER TRANSMITS THE ENGAGEMENT
        │
-       ▼ (intent → AI drafts → K2 accepts → NIP-17 wrap → expert)
+       ▼ (intent → AI drafts → principal authorizes → NIP-17 wrap → expert)
 4. EXPERT RESPONDS
        │
        ▼ (WHISPER reply / RELAY broadcast / FLOW signed deliverable)
 5. C-SUITE INTEGRATES
        │
        ▼ (CAO ranks input against constitution; CEO decides)
-6. K2 BINDS + FLOW RECEIPT PERSISTS
+6. AUTHORIZATION COMPLETES + FLOW RECEIPT PERSISTS
 ```
 
 Every step emits a receipt; the engagement is fully auditable.
@@ -90,15 +98,15 @@ If any Five-Ws field is empty, Agentz asks the user (or the CAO) to fill before 
 
 ### Step 3: WHISPER Transmits the Engagement
 
-Per packet 215 + Q7 symmetric persistence:
+Per packet 215 + Q7 symmetric persistence, shown in its private-DAV profile:
 
 ```
 Yves's intent:    "@E2 rank these 5 yield strategies; constitutional-fit only"
 Yves's AI drafts:  structured engagement proposal with Five-Ws
-Yves K2-accepts:   single tap on the AI's translation
+Yves/K2 authorizes: single tap on the AI's translation (private-DAV rail)
 Transmit:          NIP-17 gift-wrap → E2's npub
 E2's AI receives:  decrypts, presents actionable card
-E2 K2-accepts:     single tap to accept the engagement
+E2 principal authorizes: single tap on E2's applicable authority rail
 Both workflows update: Yves's "engagement-proposed" → "confirmed";
                        E2's workflow gets a "delegated-to-me" Objective
 ```
@@ -117,25 +125,25 @@ The expert returns their deliverable through the appropriate substrate:
 
 ### Step 5: C-Suite Integrates
 
-The CAO receives the expert's deliverable, ranks it against the existing constitutional audit, and produces an updated decision-ready list. The CEO then takes the ranked list to K2.
+The CAO receives the expert's deliverable, ranks it against the existing constitutional audit, and produces an updated decision-ready list. The CEO then stages the ranked list with a complete `AuthorizationEnvelope` for the applicable authority rail.
 
 ```yaml
 csuite_integration:
   expert_input: <the deliverable>
   cao_ranking: <updated composite score with expert dimension added>
   ceo_decision: commit | refuse | further-consultation
-  k2_acceptance_card: <the single-tap proposal>
+  authorization_envelope: <typed, scoped, contestable authorization proposal>
 ```
 
-### Step 6: K2 Binds + FLOW Receipt Persists
+### Step 6: Authorization Completes + FLOW Receipt Persists
 
-K2 single-tap. FLOW receipt records:
+The applicable rail validates and receipts the `AuthorizationEnvelope`. FLOW records:
 - The original gap_finding (Step 1)
 - The engagement Objective with Five-Ws (Step 2)
 - The WHISPER engagement event (Step 3)
 - The expert's deliverable (Step 4) — content-addressed
 - The C-Suite integration + decision (Step 5)
-- The K2 signature event (Step 6)
+- The complete AuthorizationEnvelope and rail receipt (Step 6)
 
 The whole engagement is one auditable trail.
 
@@ -167,7 +175,8 @@ tier or worse, explain why."
 ACCEPTABLE OUTPUTS: Verification with citations / falsification with
 counterexample / suggested re-tiering.
 
-K2 GATE: Bind only if expert confirms [S]+[I] interpretation; downgrade
+AUTHORIZATION GATE: Enact only if expert confirms the [S]+[I]
+interpretation and the AuthorizationEnvelope validates; downgrade
 to [C] if expert flags overreach.
 
 PHASE 0 IMPLEMENTATION: Bibliographic package = QUANTUM_PHYSICS_CONFIRMATIONS.md
@@ -192,7 +201,7 @@ Rank against my universe of [N] alternatives. Specifically assess:
 inventory (η-check), (4) historical APY distribution, (5) failure
 modes observed in similar protocols.
 
-Tag with constitutional fit per packet 219: η-near-zero, K2-eligible,
+Tag with constitutional fit per packet 219: η-near-zero, authorization-envelope-eligible,
 K4-Grace-Exit-applicable."
 
 PHASE 0 IMPLEMENTATION: Bibliographic package = DeFiLlama corpus +
@@ -251,7 +260,8 @@ JEPA implementations. Phase 1: contracted ML architect.
 
 ```
 DOMAIN: Jurisdictional regulation (Switzerland, UK FCA, US SEC, EU MiCA),
-DAC legal status, K2 boundary per packet 207, securities law,
+DAC legal status, accountable-authorization boundary (including packet
+207's private-DAV K2 profile), securities law,
 tax implications
 
 INVOKE WHEN:
@@ -262,8 +272,9 @@ INVOKE WHEN:
 
 DEFAULT INTENT TEMPLATE:
 "@E5 [jurisdiction + question]: Considering [action] in [jurisdiction].
-Specifically: (1) regulatory classification of the act, (2) K2 boundary
-implications per packet 207, (3) tax / reporting implications,
+Specifically: (1) regulatory classification of the act, (2) accountable-
+authorization implications, including packet 207's private-DAV K2 profile,
+(3) tax / reporting implications,
 (4) precedent / comparable cases.
 
 Output a green/yellow/red light with required mitigations."
@@ -276,17 +287,17 @@ FINMA + tax-treaty corpus. Phase 1: contracted attorney per jurisdiction.
 
 ```
 DOMAIN: Information architecture, workflowy UX, question-queue patterns,
-mobile-first design, accessibility, K2 acceptance UX
+mobile-first design, accessibility, AuthorizationEnvelope review UX
 
 INVOKE WHEN:
   - nexus-web shell design decisions
   - Question-queue panel layout (S3)
   - WHISPER recipient card design (S2)
-  - K2 acceptance UX latency concerns
+  - authorization review and receipt UX latency concerns
 
 DEFAULT INTENT TEMPLATE:
 "@E6 [feature]: Designing [specific UI surface]. Constraints:
-(1) one-tap K2 discipline, (2) Agentz asks one question at a time,
+(1) one-action accountable-authorization discipline, (2) Agentz asks one question at a time,
 (3) ephemeral WHISPER auto-fades, (4) Five-Ws schema.
 
 Surface design proposals with tradeoff analysis."
@@ -467,10 +478,18 @@ engagement_receipt:
   csuite_integration:
     cao_ranking_delta: <how this changed the rank>
     ceo_decision: commit | refuse | further-consultation
-  k2_signature:
-    timestamp: <UTC ISO 8601>
-    signer_npub: <K2 holder>
-    signature: <cryptographic>
+  authorization_envelope:
+    principal: <accountable natural person or valid public-governance body>
+    mandate: <authority being exercised>
+    scope: <bounded action and resources>
+    consent: <affected-party consent record>
+    custody: <assets, data, and keys under control>
+    expiry_or_revocation: <UTC expiry and/or revocation rule>
+    contest_path: <where and how the act can be challenged>
+    actor: <who performs the action>
+    consequence_bearer: <who bears foreseeable cost or harm>
+    rail: private_k2 | public_prism | other_constitutional
+    rail_receipt: <FLOW reference containing signature or quorum proof>
   api_pay_settlement:
     amount: <SKY or other η=0 currency>
     settlement_hash: <FLOW reference>
@@ -480,7 +499,7 @@ engagement_receipt:
 
 ## 4. What This Engagement Protocol Does NOT Do
 
-1. **Does not bypass K2.** Every engagement that produces a binding action requires K2 signature. Experts advise; K2 binds.
+1. **Does not bypass accountable authorization.** Every engagement that produces a consequential action requires a complete, receipted `AuthorizationEnvelope`. Experts advise; the accountable principal authorizes; the named actor executes. K2 implements the private-DAV rail, while PRISM plus public-governance receipts implements the public-DAV/DAC rail.
 2. **Does not require persistent expert presence.** Engagements are per-question. An expert engaged for E2 today is not on retainer; the next E2 engagement may be a different specialist.
 3. **Does not store expert deliverables in plaintext.** Per packet 216 + Q3, content-addressing + envelope encryption preserves auditability without leaking content.
 4. **Does not commit to specific experts by name.** The 12 domains are the invariant; the specific human (or fine-tuned model) filling each domain can rotate.
@@ -490,7 +509,7 @@ engagement_receipt:
 
 Zero-Sum Resolution Equation
 
-*The C-Suite proposes; the experts advise; K2 binds.*
+*The C-Suite proposes; the experts advise; an accountable principal authorizes; a named actor executes.*
 *Six steps from gap detection to FLOW receipt. Every engagement auditable. No raw data leaks; no extractive payment.*
 *Twelve experts on call; engagement is per-question, not permanent retainer.*
 

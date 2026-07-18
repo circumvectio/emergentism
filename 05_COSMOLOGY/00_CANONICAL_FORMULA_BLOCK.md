@@ -161,7 +161,7 @@ has its own regime. When compressing, name the regime explicitly:
 |---|---|---|---|
 | `P∞ = φ · ν = 1` | Reciprocal identity in the chosen open chart | Constant by definition for `θ∈(0,π)`; one coordinate diverges at each excluded pole | `[A]` analytic |
 | `B = sin θ` | Selected balance coordinate | Varies from the limiting value 0 at the poles to 1 at the equator | `[A]` analytic; `[I]` as “balance” |
-| `P_node = C×(Φ,V) = ΦV` | Selected normalized finite-node conjunctive model | D5 option-field quality (`Φ`) and D4 usable means (`V`) are jointly necessary in the declared model; alternative AND-class aggregators remain possible | `[I]` model; `[C]` universal fit |
+| `P_node = C×(Φ,V) = ΦV` | Selected normalized finite-node conjunctive model | present D4 model/foresight quality (`Φ`), representing D5 possible content, and D4 usable means (`V`) are jointly required by the declared model; alternative AND-class aggregators remain possible | `[I]` model; `[C]` universal fit |
 | `Δ_TW_i`, `Δ_TW_H` | Individual and whole durable-potential changes | Kept separate under the Justice envelope; never laundered into one compensating aggregate | `[I]` value model |
 
 **Disambiguation convention:** do not use `P` bare in source-truth

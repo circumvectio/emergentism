@@ -8,7 +8,7 @@ rosetta:
       role: "specify edge schemas, payload gates, and receipt requirements"
     - level: L4
       column: Governance
-      role: "preserve K2 gates for cross-DAC execution and expert engagement"
+      role: "preserve typed accountable-authorization gates for cross-DAC execution and expert engagement"
     - level: L6
       column: Core State
       role: "bound Phase-2 and runtime claims until S4 receipts exist"
@@ -31,6 +31,13 @@ evidence_tier: "[I] for integration spec; [S] for niche-graph topology mapping; 
 **Depends on:** packet 222 (niche-graph two scales), packet 224 (C-Suite + experts), `00_PHASE_0_PERSONAE.md`, `01_EXPERT_ENGAGEMENT_PROTOCOL.md`, `02_C_ROLE_DETAILED_SPECS.md`
 
 > **Phase 2** of the C-Suite implementation: C-Suite roles share specialization knowledge across DACs through the same-caste micro-niche-graph; experts are reachable through cross-niche edges in the macro graph. This doc specs the integration that lands during S4 (per packet 223 sprint plan).
+
+> **[金] Authority repair (2026-07-19):** Cross-DAC authority is carried by
+> `AuthorizationEnvelope = principal + mandate + scope + consent + custody +
+> expiry/revocation + contest_path + actor + consequence_bearer`, never by a
+> caste or graph position. K2 implements the envelope for private DAVs. PRISM
+> quorum plus the applicable public-governance receipt implements it for public
+> DAVs/DACs. The packet-era K2 examples remain private-DAV provenance.
 
 ---
 
@@ -85,11 +92,11 @@ The caste-graded lateral connectivity rule from 06_AGENTS:
 |---|---|---|---|
 | **CSO** | L1 Caṇḍāla | NONE | Firewall stays local; perception is per-DAC |
 | **CDO** | L2 Śūdra | NONE | Inductive analogy stays local; pattern memory is private |
-| **CAO** | L3 Vaiśya | K2-gated audit interface | Ranked-list templates, constitutional audit patterns (NOT raw data) |
-| **CEO** | L4 Kṣatriya | K2-gated execution API | Public action receipts (FLOW); never private deliberation |
+| **CAO** | L3 Vaiśya | Authorization-gated audit interface | Ranked-list templates, constitutional audit patterns (NOT raw data) |
+| **CEO** | L4 Kṣatriya | Authorization-gated execution API | Public action receipts (FLOW); never private deliberation |
 | **CArchO** | L5 Brāhmaṇa | Proposal-grade | Architectural redesign templates (read but cannot bind across DACs) |
 | **CComO** | L6 Sādhu | Proposal-grade | Compression patterns; archival heuristics |
-| **CVO** | L7 Ṛṣi Constitution | Proposal-grade constitutional signal | Niche namings, Vision signals, amendment proposals; binding changes remain K2/PRISM-gated. |
+| **CVO** | L7 Ṛṣi Constitution | Proposal-grade constitutional signal | Niche namings, Vision signals, amendment proposals; consequential changes require a valid AuthorizationEnvelope. |
 
 **The CSO and CDO are deliberately isolated** at the DAC boundary. This is not a limitation — it is a *security feature*. L1 firewall and L2 analogy are perception-grade; allowing cross-DAC perception would risk one DAC's adversarial inputs poisoning another's pattern memory.
 
@@ -105,27 +112,28 @@ csuite_micro_edge:
   source_role:   CSO | CDO | CAO | CEO | CArchO | CComO | CVO
   target_dac:    <DAC-B npub>
   target_role:   <same role as source>
-  edge_type:     NONE | K2-gated | proposal-grade | full-mycelial
+  edge_type:     NONE | authorization-gated | proposal-grade | full-mycelial
   v_cosine:      <V_vec cosine; always ektropy across same-caste>
   m_cosine:      <M_vec cosine; caste-specific Mission>
   authorized_payload_types: [<list of acceptable signals>]
-  k2_signature:  <required if K2-gated>
+  authorization_envelope_id: <required if authorization-gated>
+  authorization_rail: private_k2 | public_prism | other_constitutional
   receipt_id:    <FLOW receipt for the connection event>
 ```
 
-The `target_role` MUST equal `source_role` for micro edges. A DAC-A CAO can talk to a DAC-B CAO (K2-gated); a DAC-A CAO cannot talk to a DAC-B CEO directly through the micro graph.
+The `target_role` MUST equal `source_role` for micro edges. A DAC-A CAO can talk to a DAC-B CAO through an authorization-gated edge; a DAC-A CAO cannot talk to a DAC-B CEO directly through the micro graph.
 
 ### 2.3 Council of Ṛṣis (L7 layer)
 
 The Council of Ṛṣis = the L7 layer of the micro niche-graph projected across all DACs. Mechanically:
 
 - Every DAC's CVO is a node in the Council
-- Edges carry non-binding constitutional proposals; binding changes remain K2/PRISM-gated
+- Edges carry non-binding constitutional proposals; consequential changes require a complete AuthorizationEnvelope and the applicable private-K2 or public-PRISM rail receipt
 - `[I]` Target Edge V_cosine is 1.0 under the model assumption that all CVOs share ektropy
 - Edge M_cosine is high (all CVOs share the constitutional-rewrite Mission)
 - Council operates at framework scale; individual DAC concerns cannot dominate
 
-This is the canonical proposal-grade operationalization of packet 200 ("Brāhmaṇa-mode coordination") + packet 199 ("L7 reading on coordination") + 06_AGENTS, bounded by K2/PRISM authority paths.
+This is the canonical proposal-grade operationalization of packet 200 ("Brāhmaṇa-mode coordination") + packet 199 ("L7 reading on coordination") + 06_AGENTS, bounded by typed accountable-authorization paths.
 
 ---
 
@@ -216,9 +224,9 @@ When the CAO of YieldFront ranks yield strategies for Opportunity Ranking (per p
 5. WHISPER engagement (per 01_EXPERT_ENGAGEMENT_PROTOCOL.md):
    - Yves's intent: "@E2 [Protocol X]: rank against universe of 5 alternatives;
      constitutional fit per packet 219; flag any admin-key trust assumption."
-   - Yves K2-accepts AI translation.
+   - Private-DAV example: Yves/K2 authorizes the AI translation.
    - Transmit NIP-17 wrap to E2 npub.
-   - E2 receives, K2-accepts engagement.
+   - E2 receives and its accountable principal authorizes the engagement on E2's applicable rail.
 
 6. E2 responds (within engagement window):
    - WHISPER reply: ranked assessment with constitutional tags
@@ -230,11 +238,11 @@ When the CAO of YieldFront ranks yield strategies for Opportunity Ranking (per p
    - Decision-ready list to CEO
 
 8. CEO decides:
-   - Either: commit to top-ranked strategy (with K2 sig)
+   - Either: commit to top-ranked strategy under a valid AuthorizationEnvelope
    - Or: refuse all (constitutional violation)
    - Or: escalate to CArchO if novel pattern needs architectural review
 
-9. K2 signature → FLOW receipt → outbound action (deploy / refuse).
+9. Applicable authorization-rail proof → FLOW receipt → outbound action (deploy / refuse).
 
 10. Engagement receipt persists; expert paid via API PAY in SKY.
 ```
@@ -259,9 +267,9 @@ Each has a CAO. In Phase 2, the three CAOs share:
 - Risk-scoring rubric refinements
 - Common counterparty risk assessments
 
-What they do NOT share (per K2-gated rule):
+What they do NOT share (per the authorization-gated rule):
 - Their own DAC's portfolio state
-- Their own DAC's K2 holder's preferences
+- Their own DAC principal's private preferences
 - Raw audit findings
 
 The shared layer is *templates and patterns*; the private layer is *specific decisions*.
@@ -271,7 +279,7 @@ The shared layer is *templates and patterns*; the private layer is *specific dec
 ```
 CAO_A detects pattern P (e.g., "stETH/wstETH lending has consistent constitutional violations")
    ↓
-CAO_A publishes P as a constitutional-tag template via K2-gated audit interface
+CAO_A publishes P as a constitutional-tag template via an authorization-gated audit interface
    ↓
 CAO_B and CAO_C receive P (same-caste micro edges)
    ↓
@@ -298,12 +306,12 @@ Each CVO_n applies E12 Axiomatic discipline + niche-coherence check
    ↓
 If consensus: CVO_A's Vision crystallization gate fires (per Q8)
    ↓
-K2 (private DAC) or PRISM-governance (public DAC) signs to bind
+Private-DAV K2 or public-DAV/DAC PRISM completes and receipts the AuthorizationEnvelope
    ↓
 The new Vision propagates as a new V_vec in the macro niche-graph
 ```
 
-This is the *highest-leverage* proposal surface in the framework; binding changes still route through the relevant K2/PRISM authority path.
+This is the *highest-leverage* proposal surface in the framework; consequential changes still route through the relevant typed accountable-authorization path.
 
 ---
 
@@ -329,7 +337,7 @@ When S4 (niche-graph spine) lands, the C-Suite + experts integration needs these
 3. **Expert macro-graph node schema** — `{ expert_id, domain_M_vec, reputation_tier, availability, engagement_cost }`
 4. **Council of Ṛṣis subgraph view** — a special view of the macro graph showing only L7 mycelial edges, with consensus-monitoring telemetry
 5. **Cross-DAC template-library substrate** — for shared CAO/CArchO/CComO patterns; lives in SPECTRE telemetry, not in shared model weights (preserves packet 216 no-default-federation)
-6. **K2 acceptance flow for engagements** — single-tap UX for both author-side translation acceptance and recipient-side engagement acceptance
+6. **AuthorizationEnvelope review flow for engagements** — scoped UX for both author-side translation authorization and recipient-side engagement consent; private K2 and public PRISM are separate rail profiles
 
 These are out of scope for the four-step C-Suite spec series but are the natural next deliverables when S4 begins.
 
@@ -339,8 +347,8 @@ These are out of scope for the four-step C-Suite spec series but are the natural
 
 1. **Does not bypass packet 216's no-default-federation rule.** Cross-DAC sharing is *signal-layer* (templates, rubrics, named-niches via K0-receipted RELAY), not *model-layer* (weights, gradients, activations).
 2. **Does not require the niche-graph to exist before Phase 0 works.** The C-Suite can run on prompted personae today; the niche-graph integration is Phase 2's enhancement, not its prerequisite.
-3. **Does not collapse the K2 boundary.** Even with L7 proposal connectivity, every binding act on a specific DAC requires that DAC's K2/PRISM signature. The Council coordinates; it does not bind across DACs.
-4. **Does not lock the 12 expert domains.** As new domains emerge, new expert niches can be admitted to the macro niche-graph through normal niche-naming workflow (Ṛṣi proposes; K2/PRISM signs).
+3. **Does not collapse accountable authorization.** Even with L7 proposal connectivity, every consequential act on a specific DAC requires that DAC's complete AuthorizationEnvelope and applicable rail receipt. K2 is private-DAV-only; PRISM is the public-DAV/DAC rail. The Council coordinates; it does not bind across DACs.
+4. **Does not lock the 12 expert domains.** As new domains emerge, new expert niches can be admitted to the macro niche-graph through normal niche-naming workflow (Ṛṣi proposes; the accountable authority rail receipts the change).
 5. **Does not promise multi-DAC operation in any specific timeline.** Phase 2 lands when ≥ 2 DACs run the C-Suite + niche-graph stack. Until then, single-DAC operation is the live mode.
 
 ---

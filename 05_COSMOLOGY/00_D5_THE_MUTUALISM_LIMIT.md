@@ -36,6 +36,13 @@ depends_on:
 > `ΣΔP_node` is diagnostic; Justice requires every affected bearer, payer, and
 > beneficiary to remain visible and nonnegative. Adoption follows typed
 > accountable authorization, not a worldview signer primitive.
+>
+> The legacy `D5` filename and title identify the option-field subject matter,
+> not the acting register. Actual traders, transfers, selections, enforcement,
+> and receipts are D4; the alternatives and anticipated exchange paths they
+> represent are D5 contents. The seven slots close only the declared projection
+> of the sign grid. They do not prove that reality, economics, or all action has
+> no eighth kind.
 
 > **The objection this answers.** The four transfers are conjugate-paying (every
 > give spends the giver), while the `++` frame is a boundary description rather
@@ -57,7 +64,12 @@ A:  −dΦ_A , +dV_B      (a Kṛṣṇa-signature give toward B)
 B:  −dΦ_B , +dV_A      (a Kṛṣṇa-signature give toward A)
 ```
 
-Per node, net single-shot signature: `(−dΦ, +dV)` — each party spends coherence (attention, negotiation, verification, contract — the *coordination spend*) and gains means. **No eighth operator is needed**: trade is a composition of two existing slots, exactly as the Exhaustion note requires ("no fifth mixed slot exists without adding an axis").
+Per node, net single-shot signature: `(−dΦ, +dV)` — each party spends coherence
+(attention, negotiation, verification, contract — the *coordination spend*) and
+gains means. **No additional slot is needed to represent this trade inside the
+declared two-axis grammar**: it is a composition of two existing transfers.
+That representational economy is not an impossibility theorem about other
+domain-native actions.
 
 Two public-register anchors `[E]`:
 - The V-gains exceed the V given up — **comparative advantage** (Ricardo): the crossing is positive-sum in means even when each transfer alone is conjugate-paying.

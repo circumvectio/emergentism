@@ -6,19 +6,19 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[S]"
-  canonical_phrase: "THE STRATEGIC EXCLUSION: FORMAL CONVERGENCE THAT EXTRACTION IS IRRATIONAL AT THE EQUATOR"
+  canonical_phrase: "BALANCE-SCORE EXCLUSION — scalar fixture only"
 ---
 
-# THE STRATEGIC EXCLUSION: FORMAL CONVERGENCE THAT EXTRACTION IS IRRATIONAL AT THE EQUATOR
+# THE BALANCE-SCORE EXCLUSION
 
-## A Rigorous Convergence Argument That η > 0 Lowers Balance at the Equator
+## A Scalar Demonstration That the Defined Transfer Lowers `B` at Its Maximum
 
-**Status:** Active (termed 'convergence' per Fragility Audit 2026-04-04)
+**Status:** Active Kintsugi repair — scalar score comparison; Nash claim retired
 **Hat:** Mathematician
 **Evidence Tier:** [S] Structural — formal convergence argument
 **Date:** 2026-03-23
 **Version:** v2.1
-**Depends on:** Burri Sphere formalism, Balance function, Game theory, Nash equilibrium
+**Depends on:** reciprocal chart and declared balance function; Demonstration 22 owns the separate scalar Nash result
 
 > **A7 boundary note — 2026-06-12.** This document proves a balance-payoff result at equatorial profiles. "Extraction is irrational" means "extraction lowers the extractor's `B` score in the stated balance game." It does **not** prove that extraction is irrational in every real game, that `η = 0` is an unconditional Nash equilibrium, or that private side-payments cannot dominate without enforcement. The wider doctrine reads this as a constitutional target: restore real coupling, monitoring, penalties, due process, and exit so the social game approximates the balance-only result.
 
@@ -236,31 +236,21 @@ For the global result: since B achieves its unique maximum at ν = 1, and both 1
 
 ---
 
-## 4. NASH EQUILIBRIUM ANALYSIS
+## 4. RETIRED NASH CLAIM — THE ACTION GAME WAS UNDER-SPECIFIED
 
-**Definition 4.1 (The balance game).** The *balance game* Γ = (N, Σ, u) consists of:
+> **[金] Kintsugi seam.** The former action list—`self-move`, `extract from j`,
+> or `do nothing`—did not define move magnitudes, simultaneous transfer
+> resolution, feasibility, or the outcome when another player extracts from the
+> focal player. “Do nothing” therefore could not guarantee that the focal state
+> remained at `B_i=1`, and the claimed unique-Nash proof did not follow.
 
-- N agents, indexed i = 1, ..., N
-- Strategy set Σᵢ = {self-move, extract from j (for each j ≠ i), or do nothing}
-- Payoff function uᵢ = Bᵢ (each agent maximizes its own balance)
-
-**Theorem 4.2 (η = 0 is the unique Nash equilibrium at the equator).** In the balance game Γ, if all agents start at the equator, the unique Nash equilibrium is the strategy profile where every agent chooses "do nothing" (η = 0).
-
-*Proof.*
-
-**Step 1.** Suppose all agents are at the equator with νᵢ = 1 for all i. Each agent has Bᵢ = 1, the maximum possible value.
-
-**Step 2.** Consider a unilateral deviation by agent i:
-
-*Case (a): Agent i extracts from agent j.* By Theorem 3.1, Bᵢ decreases. This is not a profitable deviation.
-
-*Case (b): Agent i makes a self-move (dθ ≠ 0).* Any self-move changes νᵢ away from 1. By Theorem 2.2, Bᵢ decreases. This is not a profitable deviation.
-
-*Case (c): Agent i does nothing.* Bᵢ remains at 1.
-
-**Step 3.** Since no agent can profitably deviate from "do nothing," the strategy profile (do nothing, do nothing, ..., do nothing) is a Nash equilibrium.
-
-**Step 4 (Uniqueness).** Suppose there exists another Nash equilibrium σ* in which some agent i plays "extract from j." Then Bᵢ < 1 by Theorem 3.1. Agent i could deviate to "do nothing" at the equator and achieve Bᵢ = 1 > Bᵢ(σ*). This is a profitable deviation, contradicting the assumption that σ* is a Nash equilibrium. The same argument applies to any self-move away from the equator. Therefore η = 0 is the unique Nash equilibrium. ∎
+No Nash theorem is live from that action list. The valid nearby result belongs
+to [`22_POWER_MAX_DEMONSTRATION.md`](22_POWER_MAX_DEMONSTRATION.md), whose fully
+specified scalar game `Γ(N,λ)` pays every player only through its own `B` and
+the population mean. In that deliberately balance-only fixture, `ν_i=1` is
+strictly dominant, the all-balanced scalar profile is the unique Nash
+equilibrium, and the Price of Anarchy is 1. That theorem does not establish
+`η=0` as a general equilibrium of real extraction games.
 
 ---
 
@@ -274,9 +264,15 @@ For the global result: since B achieves its unique maximum at ν = 1, and both 1
 
 **(iii) Displacements from a strict maximum are strictly suboptimal.** B(1 + Δν) < B(1) for all Δν ≠ 0.
 
-**(iv) Therefore:** Extraction at the equator is balance-defeating in this model. The state (1+Δν, 1−Δν) *exists* on S² — the geometry does not forbid it. But the stated payoff structure makes it a dominated strategy. The fourth operator (extraction) is excluded not by geometric impossibility but by the concavity of the payoff manifold at its peak.
+**(iv) Therefore:** For `0<Δν<1`, the defined scalar transfer from `(1,1)` to
+`(1+Δν,1−Δν)` lowers both declared `B` scores. The coordinates remain
+admissible; the chart does not forbid them. This is a score comparison, not a
+dominance or equilibrium result for an under-specified action game.
 
-*Proof.* This is a direct synthesis of Theorem 2.2 (maximum), Theorem 3.1 (extraction decreases balance), and Theorem 4.2 (Nash equilibrium). The concavity follows from B''(1) = −1 < 0 (Theorem 2.2, Step 3). ∎
+*Proof.* This is a direct synthesis of Theorem 2.2 (scalar maximum), Theorem
+3.1 (the extractor's score decreases), and Corollary 3.3 (the counterparty's
+score decreases). The local curvature follows from `B''(1)=−1<0`. No Nash
+claim is used. ∎
 
 **Remark 5.2 (Saddle-free maximum).** The equator is not a saddle point. In the (θ, ψ) coordinates, B = sin θ depends only on θ. In the θ-direction, B''(π/2) = −sin(π/2) = −1 < 0. In the ψ-direction, ∂B/∂ψ = 0 and ∂²B/∂ψ² = 0 (B is ψ-independent). The Hessian at the equator is:
 
@@ -288,9 +284,15 @@ This is negative semi-definite (eigenvalues −1 and 0). Along any direction wit
 
 ## 6. DOMAIN BOUNDARY: EQUATOR VS. OFF-EQUATOR
 
-**Remark 6.0 (Explicit domain of the theorem).** Theorem 3.1, Corollary 3.2, and Theorem 4.2 are proved *at equatorial profiles* — configurations where all agents satisfy νᵢ = 1 (equivalently, φᵢ = 1, θᵢ = π/2). The Strategic Exclusion does NOT claim that all redistribution is harmful in all states.
+**Remark 6.0 (Explicit domain of the theorem).** Theorem 3.1 and Corollaries
+3.2–3.4 are scalar score comparisons *at the all-balanced profile*—where every
+declared `ν_i=1`. Section 4's action-game Nash claim is retired. These results
+do not claim that all redistribution is harmful in all states.
 
-**Proposition 6.1 (Off-equator redistribution can be Pareto-improving).** Consider an asymmetric two-agent state with ν₁ = 1 + δ and ν₂ = 1 − δ for some δ > 0. A transfer of Δν from agent 1 to agent 2 (with 0 < Δν ≤ δ) moves both agents toward the equator. The aggregate balance:
+**Proposition 6.1 (Off-balance scalar correction raises both `B` scores).**
+Consider an asymmetric two-agent scalar state with `ν₁=1+δ` and `ν₂=1−δ`
+for `0<δ<1`. A declared transfer `0<Δν≤δ` from the first coordinate to the
+second moves both toward `ν=1`. The aggregate score is:
 
 $$\Sigma B = B(1 + \delta - \Delta\nu) + B(1 - \delta + \Delta\nu)$$
 
@@ -300,17 +302,25 @@ is strictly increasing in Δν for Δν ∈ (0, δ), achieving its maximum at Δ
 
 $$\frac{d\Sigma B}{d(\Delta\nu)} = -B'(1 + \delta - \Delta\nu) + B'(1 - \delta + \Delta\nu)$$
 
-Since B'(ν) = 2(1 − ν²)/(1 + ν²)² is strictly decreasing on (0, ∞) (which follows from B''(1) < 0 and the structure of B), and since 1 + δ − Δν > 1 − δ + Δν when Δν < δ, we have B'(1 + δ − Δν) < B'(1 − δ + Δν). Therefore dΣB/d(Δν) > 0 for Δν < δ. ∎
+For `0<Δν<δ`, the first argument is greater than 1, so its derivative is
+negative; the second is less than 1, so its derivative is positive. Therefore
+`dΣB/d(Δν)>0`. At `Δν=δ`, both coordinates equal 1 and both individual scores
+reach their declared maximum. No false global-concavity premise is needed. ∎
 
-**Remark 6.2 (Justification of the Kali operator).** Proposition 6.1 provides the formal basis for the framework's Kali operator (↓φ, excising false meaning / correcting imbalance). When an agent is bloated (ν >> 1, having accumulated viability beyond balance), taking from that agent and giving to a starved agent (ν << 1) *increases* aggregate balance. This is not extraction in the sense of Theorem 3.1 — it is *correction*, returning the system toward its equilibrium. The theorem's domain is explicitly: at equatorial profiles. Off-equator, redistribution toward the equator is a Pareto improvement.
+**Remark 6.2 (Operator analogy only `[I]`).** Proposition 6.1 can illustrate a
+repair move in the selected operator vocabulary: within this score, shifting
+two scalar coordinates toward 1 raises both `B` values. It does not establish
+that a real party is bloated, another is starved, a transfer is authorized, or
+redistribution is just. Those require measured constructs, consent, custody,
+and bearer-complete Justice.
 
 **Summary of domain boundaries:**
 
 | Configuration | Redistribution effect | Governing result |
 |---|---|---|
-| All νᵢ = 1 (equator) | Extraction is strictly dominated | Theorem 3.1 |
-| Asymmetric (some ν >> 1, some ν << 1) | Redistribution toward equator is Pareto-improving | Proposition 6.1 |
-| Mixed | Depends on direction: toward equator improves, away worsens | General concavity of B |
+| All `νᵢ=1` | The defined scalar displacement lowers `B` | Theorem 3.1 |
+| Pair `1+δ,1−δ` with `0<δ<1` | Moving both scalar coordinates toward 1 raises both `B` scores | Proposition 6.1 |
+| Other scalar profiles | Effect requires direct evaluation; no global concavity or moral verdict is assumed | monotonicity of `B` on either side of 1 |
 
 ---
 
@@ -342,37 +352,60 @@ $$\left.\frac{dB_i}{d(\Delta\nu)}\right|_{\Delta\nu = 0} = B'(1) = 0$$
 
 ---
 
-## 8. THE RESOURCE CURSE: CONNECTION TO MECHANISM DESIGN
+## 8. CHART-SCORE BEHAVIOR, NOT AN AUTOMATIC TAX
 
-**Remark 8.1 (The φ · ν = 1 constraint as automatic penalty).** The fundamental constraint φ · ν = 1 acts as a built-in penalty for over-accumulation. As an agent's viability ν increases past the equatorial value of 1, their meaning φ = 1/ν necessarily decreases. The payoff manifold B(ν) = 2ν/(1+ν²) curves downward past the equator: the more viability an agent hoards, the less balanced they become.
+**Remark 8.1 (What the chart actually proves).** Inside the declared reciprocal
+chart, increasing the coordinate `ν` beyond 1 forces `φ=1/ν` downward, and the
+declared score `B(ν)=2ν/(1+ν²)` also decreases. This is an analytic property of
+the coordinates and score. It does not show that a real agent accumulated a
+resource, lost meaning, paid a tax, or became less successful.
 
-This is formally equivalent to a *Pigouvian tax* on excess capability — except that it is intrinsic to the geometry of S² rather than imposed by an external regulator. In standard mechanism design, corrective taxes must be designed, calibrated, and enforced by an authority. On the Burri Sphere, the penalty is automatic: the constraint φ · ν = 1 *is* the tax. No institution is required.
+A Pigouvian tax is an institutional mechanism with measured external costs,
+an assessed base, enforcement, and distributional consequences. The chart
+provides none of those things automatically. Any real non-extraction regime
+still requires operational variables, authorization, monitoring, due process,
+enforcement, and exit.
 
-**Remark 8.2 (The Resource Curse on S²).** The economic "Resource Curse" — the empirical observation that resource-rich entities often underperform resource-moderate ones — finds a precise mathematical formalization on the Burri Sphere. An agent at ν = 2 (double the equatorial viability) has balance:
+**Remark 8.2 (Optional resource-curse analogy `[I/C]`).** The economic resource
+curse can motivate a comparison, but the chart does not formalize or explain
+that empirical phenomenon. It only yields the following values for its own
+dimensionless score. At `ν=2`:
 
 $$B(2) = \frac{4}{5} = 0.80$$
 
-while an agent at ν = 1 (equatorial) has B(1) = 1.00. The "richer" agent is 20% less balanced. At ν = 5:
+while `B(1)=1.00`. At `ν=5`:
 
 $$B(5) = \frac{10}{26} \approx 0.385$$
 
-The agent with five times the equatorial viability retains only 38.5% of maximum balance. Hoarding is self-punishing, and the punishment accelerates with accumulation.
+Thus the selected score is about 38.5% of its maximum. Interpreting `ν` as
+wealth, capability, or hoarding—and interpreting lower `B` as a real
+punishment—requires an independently tested bridge and domain-native rivals.
 
 ---
 
 ## 9. KILL CRITERIA
 
-This proof is **falsified** if any of the following is exhibited:
+The analytic score result is invalid if a stated derivation fails under its
+definitions; changing a definition creates a different model and does not
+falsify the original identity. The domain interpretation is killed if its
+operationalized score loses to a fair rival. Concretely:
 
-1. A strategy in which extraction (η > 0) at the equator (φ = ν = 1) increases the extractor's balance Bᵢ, contradicting Theorem 3.1
+1. An algebraic counterexample under the stated `B` and transfer definitions
+   exposes a proof error.
 
-2. A modification of the balance function B for which the equator is not a maximum, contradicting Theorem 2.2
+2. A modified balance function is a rival specification; if it predicts or
+   intervenes better in the target domain, the application of this `B` is
+   retired there.
 
-3. A Nash equilibrium of the balance game Γ (with agents at the equator) in which η > 0, contradicting Theorem 4.2
+3. A failure of either score comparison in the explicitly defined
+   `(1+Δν,1−Δν)` transfer for `0<Δν<1`
 
-4. A direction in T_{equator}(S²) along which B strictly increases, contradicting Remark 5.2
+4. A tangent-direction counterexample under the defined `B` exposes a proof
+   error in Remark 5.2.
 
-5. A demonstration that the strategic exclusion (Theorem 3.1) requires λ > 0 (coupling) to hold, contradicting the purely selfish proof in Section 3A
+5. Observed agents receiving unmodeled private benefits from extraction show
+   that the scalar score is not their payoff; this kills the real-game bridge,
+   not the chart identity.
 
 ---
 
@@ -394,7 +427,7 @@ This proof is **falsified** if any of the following is exhibited:
 | A3* | φ · ν = 1 on S² \ {N, S} | Follows from A2* | Def 1.2 |
 | A4* | B = sin θ is the balance function | Definition | Def 1.4 |
 | A5* | Extraction conserves total ν (zero-sum) | Definition | Def 1.9 |
-| A6* | Agents maximize individual Bᵢ | Definition | Def 4.1 |
+| A6* | `B_i` is a declared scalar diagnostic, not a complete real utility | Definition | §§2–3 |
 | A7* | All agents start at the equator | Premise of Thm 3.1 | Thm 3.1 |
 | A8* | Domain: theorem holds at equatorial profiles; off-equator analysis in §6 | Explicit | Prop 6.1 |
 
@@ -402,15 +435,21 @@ This proof is **falsified** if any of the following is exhibited:
 
 ## Reviewer Acknowledgment
 
-This proof was revised following peer review by a specialist in Non-Cooperative Game Theory and Mechanism Design. Key corrections:
+This proof was revised following an internal role-based adversarial review
+focused on non-cooperative game theory and mechanism design. No independently
+identified external peer-review report is claimed. The historical notes below are retained as
+provenance; the former dominance/Nash language and resource-curse promotion are
+superseded by the Kintsugi repairs in §§4 and 8:
 
 1. Directional definitions fixed: the extractor moves south (↑ν), the victim moves north (↓ν).
-2. Renamed from "Geometric Exclusion" to "Strategic Exclusion" — the state exists on S², but the payoff structure makes it a dominated strategy.
+2. Renamed from "Geometric Exclusion" to "Strategic Exclusion"; current repair further narrows this to a scalar score comparison, not a dominance theorem.
 3. Proof simplified: extraction lowers the extractor's `B` score even for λ=0 inside the balance-only payoff. Coupling adds secondary penalty but is not required for that internal result.
-4. Domain explicitly bounded: theorem holds at equatorial profiles. Off-equator, redistribution toward the equator is a Pareto improvement.
-5. Resource Curse connection added per reviewer commendation.
+4. Domain explicitly bounded: the all-balanced transfer theorem is local to the declared scalar fixture; Proposition 6.1 is likewise score-local.
+5. The former resource-curse connection is now a removable `[I/C]` analogy, not a formalization.
 
-Evidence tier remains [S] Structural for the stated equatorial balance game. Generalizing it beyond that model requires the wider constitutional enforcement argument.
+Evidence tier remains `[S]` for the stated scalar score comparisons. Any game,
+economic, institutional, or moral generalization needs a separately specified
+model and evidence.
 
 ---
 

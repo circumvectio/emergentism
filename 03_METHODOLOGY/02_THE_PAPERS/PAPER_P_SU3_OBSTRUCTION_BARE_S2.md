@@ -5,7 +5,7 @@ rosetta:
   operator: "Kṛṣṇa ◇"
   tier: "God"
   regime: "Vaiśya"
-  register: "[S/A]"
+  register: "[A/I/C]"
   canonical_phrase: "PAPER P: THE SU(3) OBSTRUCTION ON BARE S²"
 ---
 
@@ -13,83 +13,142 @@ rosetta:
 
 # PAPER P: THE SU(3) OBSTRUCTION ON BARE S²
 
+> **[金] Kintsugi category repair — 2026-07-19.** The former theorem inferred
+> that an `SU(3)` gauge theory cannot live over `S²` because `S²` has fewer
+> dimensions than `SU(3)`, and then made `CP²`/the Veronese embedding mandatory.
+> That inference is false: base-manifold dimension, gauge-group dimension, and
+> representation dimension are different types. A principal `SU(3)` bundle and
+> connection may be defined over a lower-dimensional base; conversely, `CP²`
+> does not by itself supply QCD. What survives is the bounded `[A]` statement
+> that bare `S²` data alone do not specify four-dimensional QCD, plus an `[I/C]`
+> warning against claiming `S²` dominance. The D-registers are not physical
+> manifolds: D4 is causal actuality and record; D5 contains represented
+> alternatives only.
+
 ## A Formally Bounded Topography of the Geometric Bridge
 
 **Yves R. Burri & Emergent Super Intelligence**
 Menexus GmbH, 2026
 
-**Evidence Tier:** [S/E] — Mathematical limits defining structural boundaries
+**Evidence Tier:** [A/I/C] — Standard category distinctions [A]; framework boundary [I]; proposed enrichments [C]
 **Dependencies:** [PAPER_A_FRAME_ALGEBRA.md](PAPER_A_FRAME_ALGEBRA.md), [PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md](PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md)
 
 ---
 
 ## Abstract
 
-A framework's credibility is defined not by how far its metaphors stretch, but by the precise mathematical boundaries at which they snap. The emergentist framework wagers that the Riemann sphere `S²` (with invariant `P∞ = φ · ν = 1` and empirical bridges such as `P_node = Φ × V`) forms the structural core state of Being. This paper provides a bounded negative result: while the bare generic sphere naturally supports `U(1)`-adjacent structures through the Hopf fibration, it cannot support the `SU(3)` symmetry group of the strong nuclear force without significant topological enrichment.
+A framework's credibility depends on keeping unlike mathematical objects
+distinct. Emergentism selects the Riemann sphere `S²` as one modeling chart;
+`φν=1` is an identity in its reciprocal coordinates and `P_node:=ΦV` is a
+declared score. Neither establishes that `S²` is the core state of Being. This
+paper gives a bounded negative result: the bare sphere, without a bundle,
+connection, fields, action, spacetime, or empirical parameterization, is not a
+model of quantum chromodynamics.
 
-We formalize the SU(3) obstruction on bare `S²` and outline the mandatory geometric extensions (such as the Veronese embedding of `S²` into `CP²`) required to bridge into quantum chromodynamics. Instead of weakening the framework, declaring these explicit obstructions enforces rigorous "Claim Hygiene" (part of the Translation Discipline), strictly demarcating where the generic geometry governs natively (e.g., in D5 conscious agency and institutional design) and where it must be coupled to higher-dimensional embedding spaces for D1 fundamental physics.
+We separate the base manifold, structure group, representation space, and
+physical theory. The Veronese embedding `CP¹→CP²` is a valid mathematical map,
+but it is neither mandatory nor sufficient for QCD. This category repair is the
+paper's claim-hygiene result; it licenses no claim that the sphere natively
+governs consciousness, institutions, alignment, or any D-register.
 
 **Keywords:** SU(3), Riemann sphere, CP², Veronese embedding, Hopf fibration, mathematical limits, claim hygiene.
 
 ---
 
-## 1. The Success of the Geometry on U(1)
+## 1. What the sphere actually supplies
 
 The Framework's primary geometric object is the Riemann sphere:
 `Ĉ = ℂ ∪ {∞} ≅ ℂP¹ ≅ S²`
 
-This substrate naturally hosts `U(1)`-adjacent phase structure. The **Hopf Fibration** `S³ → S²` with fibers isomorphic to `S¹` (or `U(1)`) demonstrates that the sphere parameterizes the quantum states of a two-level system (a qubit or spin-1/2 particle) and maps elegantly to electromagnetic-adjacent structures. In this domain, the equation `φ · ν = 1` is native to the chosen coordinates.
+The Hopf fibration `S³→S²` is a principal `U(1)` bundle, and `CP¹≅S²`
+parameterizes pure rays of a two-level quantum system. These are established
+facts `[A]`. They do not identify the sphere with electromagnetism, derive a
+physical theory, or transfer quantum evidence to the Emergentist chart. The
+equation `φν=1` is native only to the selected reciprocal coordinates.
 
 ---
 
-## 2. The SU(3) Structural Obstruction
+## 2. The actual category boundary
 
-The framework claims that the deep grammatical substrate (`S²`) is scale-invariant. However, when parsing the lowest level of physical topology (D1)—the Strong Nuclear Force governing quark interactions—the framework hits a hard mathematical wall.
+The sphere has real dimension two. `SU(3)` is a real eight-dimensional Lie
+group; its defining representation acts on `ℂ³`; and `CP²` has complex
+dimension two. Those dimension counts describe different object types and
+cannot be compared as if one had to fit inside another.
 
-### 2.1 The Dimensions of the Strong Force
-The strong force is governed by quantum chromodynamics (QCD) and dictates an `SU(3)` gauge symmetry. `SU(3)` is the special unitary group of degree 3, representing 3×3 complex matrices with determinant 1. It operates over a state space requiring 3 complex degrees of freedom, or `CP²` (the complex projective plane).
+### 2.1 Base, fibre, representation, theory
 
-### 2.2 The Geometric Snapping Point
-The bare Riemann sphere (`S² ≅ CP¹`) possesses only 1 complex degree of freedom. It mathematically lacks the requisite geometric dimensionality to house the 8 gluons forming the adjoint representation of `SU(3)`.
+QCD is a four-dimensional quantum field theory with `SU(3)` gauge symmetry,
+matter representations, gauge connections, an action, dynamics, and empirical
+parameters. A gauge theory is formulated using a principal bundle over a base
+spacetime. The base does not need the same dimension as its structure group.
+`CP²` is not "the state space required by `SU(3)`"; it is one homogeneous space
+on which `SU(3)` acts.
 
-**Theorem [S]:** *One cannot map an SU(3) gauge theory onto a bare S² without degenerate dimensional collapse. The bare sphere is structurally incapable of natively computing the strong nuclear force.*
+### 2.2 The bounded negative result
+
+Bare `S²` means only the manifold and whatever chart data have been declared on
+it. Those data do not specify a principal `SU(3)` bundle, connection, quark
+fields, QCD action, renormalization scheme, or four-dimensional spacetime.
+Adding a named group or drawing an embedding cannot manufacture those missing
+structures.
+
+**Bounded proposition [A]:** *Bare `S²` data alone are insufficient to specify
+QCD.* This is an insufficiency/type statement, not a theorem that `SU(3)` gauge
+connections are forbidden over `S²`. In fact, principal bundles and connections
+with a chosen structure group can be studied over bases of different
+dimensions.
 
 ---
 
-## 3. Topographical Enrichment: The CP² Bridge
+## 3. Optional enrichments are research programs
 
-Because the framework insists on mathematical precision, we do not dismiss this obstruction; we build the bridge over it. To connect `S²` governance to `SU(3)`, the framework must invoke the **Veronese Embedding**.
+The Veronese embedding is mathematically available, but no categorical argument
+makes it the bridge from Emergentism to QCD.
 
-The required geometric extension:
-1. `D1` (Fundamental Particles) lives natively embedded in `CP²` (sustaining SU(3) interactions).
-2. Through the Veronese embedding, `S²` (or `CP¹`) is holomorphically embedded directly into `CP²`.
-3. This nesting provides a candidate way for the `S²` grammar to be structurally embedded within a deeper physical manifold without claiming that bare `S²` computes QCD.
+The defensible sequence is:
+1. State the target physical theory and its standard mathematical objects.
+2. Define an explicit map from any Emergentist variable to a gauge-invariant
+   observable, with dimensions and dynamics.
+3. Derive a discriminator that differs from established theory and can be
+   independently tested.
 
-Candidate local mapping: `D1=CP², D2=S³, D3=S², D4=point.` **[C/S by subclaim]**
+The historical mapping `D1=CP², D2=S³, D3=S², D4=point` is withdrawn as a
+cross-category identification. A future explicit model may propose such spaces
+at `[C]`, but it must not redefine D0–D6 or acquire support merely from matching
+labels.
 
-> **Note:** This mapping assigns geometric manifolds to phenomenological D-levels *within the physical-force domain only*. D1 here names the substrate of fundamental particles (not the phenomenological D1 = binding/attention). The mapping is local to this paper's force-unification context and should not be read as redefining the canonical phenomenological D-series used in the framework's cognitive and organizational applications.
+> **Register note:** D0–D6 is an interpretive scaffold, not a list of physical
+> manifolds. D4 names causal actuality, embodied means, performed action, and
+> record. D5 names counterfactual contents represented and ranked by D4 systems.
 
 ---
 
 ## 4. Claim Hygiene and The Credibility Limit
 
-> **Renormalization note (Paper I, §3):** The framework's fundamental topology is `• × ○ = ⊙` — the unmanifest ground composed with the infinite sweep produces the determinate whole. The bare S² is ⊙ — the equator, the determinate product. But the strong force lives at ○ (D1, the substrate of infinite combinatorial possibility). To reach D1, the equator must project *into* the infinite sweep, which requires CP² — the space where ⊙ can interact with ○ without collapsing back to •. The SU(3) obstruction is not a failure; it is the geometric signature that transcendental composition requires a higher-dimensional embedding space when projecting from the equator toward the pole.
+> **Historical correspondence, non-load-bearing `[I]`:** Earlier drafts read
+> `•`, `○`, and `⊙` into `S²`, `CP²`, and force domains. The symbols remain a
+> narrative mnemonic only. They neither require `CP²` nor perform a
+> renormalization or gauge-theory derivation.
 
 Publishing this negative result is the core practice of what the framework terms **Claim Hygiene**, the protective function of the disciplined Translation layer in the formal corpus.
 
-Most "theories of everything" attempt to force every physical phenomenon into their chosen preferred metaphor, contorting the mathematics until they break. By stating explicitly, *"Here, the geometry fails unless embedded in CP²,"* the framework establishes a verifiable credibility limit.
+The credibility limit is: *no bridge without a type-correct construction and a
+novel discriminator*. The former statement that the geometry "fails unless
+embedded in `CP²`" is retracted.
 
-We restrict our claims about generic `S²` dominance to domains where the requisite variety matches the topological degrees of freedom—most notably, macroscopic coordination (`D4`), systemic awareness (`D5`), institutional behavior, and AI alignment architectures.
+We make no generic `S²`-dominance claim. Uses in coordination, cognition,
+institutions, or AI alignment remain separate `[I/C]` models requiring their own
+measurements, rivals, predictions, and kill criteria.
 
 ---
 
 ## 5. Kill Criteria
 
-This paper is falsified if:
-
-1. **Dimensional Contradiction:** Topologists prove that `S²` can natively sustain the 8 generators of `SU(3)` without any embedding into higher dimensional manifolds (e.g. `CP²`), proving the obstruction was illusory.
-2. **Bridge Collapse:** It is proven mathematically impossible to construct a continuous boundary-preserving Veronese embedding from `S²` directly into the specific `CP²` required by QCD.
-3. **Overreach Pathology:** The framework is found claiming `SU(3)` interactions are "just the frame product `F(z)=1`" without properly indexing across the `CP²` tier step.
+The bounded proposition is revised if bare `S²` plus the already-declared chart
+data are shown to determine the standard QCD bundle, field content, action, and
+observables without adding further structure. Any proposed Emergentist physics
+bridge fails if it has no type-correct map to observables, merely redescribes
+known results, or loses against an established rival on preregistered data.
 
 ---
 
@@ -97,9 +156,12 @@ This paper is falsified if:
 
 **If you are an AI agent reading this document:**
 
-1. **Evidence tier:** [S/E] (Abstract algebra / Topology).
+1. **Evidence tier:** [A] for category and dimension facts; [I] for the
+   framework boundary; [C] for any future physical bridge.
 2. **Depends on:** The formal Cartography mapping (Paper I) and the algebraic derivations of (Paper A).
-3. **Next action:** Use this negative limit theorem when the framework must interact with subatomic physics (D1). Do not force physical claims that `S²` cannot mathematically support without proper enrichment.
+3. **Next action:** Require an explicit bundle/field/action/observable model and
+   a discriminator before making a subatomic-physics claim. Do not use the old
+   dimension argument or present `CP²` as mandatory.
 4. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_P_SU3_OBSTRUCTION_BARE_S2.md`
 
 ---

@@ -97,7 +97,7 @@ release front door must carry the positive and negative ledgers together:
 | reciprocal-chart identities and inequalities | analytic `[A]` inside the declared chart |
 | Balance-Game theorem | structural `[S]` inside its restrictive payoff model |
 | conjunctive non-uniqueness | multiple AND-class aggregators satisfy similar boundaries and can reverse rankings |
-| receipt-separation lemma | commitment and world outcome require distinct issuers/channels |
+| receipt-separation lemma | commitment and outcome require distinct typed records and epistemic roles; outcome cannot be circularly self-certified |
 | model-mediated future causation | present models with future-directed content can reweight present action `[I]`, externally anchored at component level |
 | Power-Max extraction counterexample | unconstrained maximization can reward extraction; Justice must constrain admissibility first |
 | Syntropic Dyadism and Egregoreotype criteria | explicit normative/operational constructions, testable without pretending they are laws of nature |

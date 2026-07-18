@@ -47,8 +47,8 @@ domain-local question.
 
   I     Beauty                  Truth                    Justice
         the perception of       the correspondence       the structural property
-        the whole               between map and          of equatorial balance
-                                territory                at every node
+        the whole               between map and          of bearer-complete
+                                territory                admissibility and repair
 
   II    Data Science            Auditing              Value Alignment
         how we know             how we proceed           what has value
@@ -68,13 +68,19 @@ domain-local question.
 
 ## Level I: The Good Transcendentals
 
-**Beauty (φ).** The perception of the whole. The right hemisphere's gestalt recognition. Beauty is what coherence looks like from the outside. Beauty is the first-person perception of φ = 1 — the ground seen through the manifested world.
+**Beauty (φ).** The framework associates Beauty with apprehended coherence.
+This is an `[I]` Rosetta label, not a hemispheric or geometric identity.
 
-**Truth (P).** The correspondence between the map and the territory. Truth is the accuracy of the projection. Truth is the degree to which the plane preserves the sphere. Truth is the equatorial product — the balance point where coherence and viability are both honoured.
+**Truth (B).** Truth concerns correspondence between map and territory. `B`
+may visualize a declared balance, but no chart score establishes truth.
 
-**Justice (ν).** The structural property of equatorial balance at every node. Justice is not a sentiment. Justice is a geometric condition. A system is just when φ = 1 and ν = 1 at every node — when no node is pushed off the equator for the benefit of another.
+**Justice (ν).** Justice is the separately posited bearer-complete envelope:
+authorization, consent, custody, reversibility, contest, payer/beneficiary, and
+receipted consequence. Geometry neither proves nor suffices for Justice.
 
-**The connection:** Beauty sees the whole (φ). Justice structures the parts (ν). Truth is the product of both — the correspondence that holds when seeing and structuring are in balance.
+**The connection:** the framework uses Beauty, Truth, and Justice as three
+questions—does it cohere, does it correspond, and are consequences just? Their
+juxtaposition is `[I]`, not a product theorem.
 
 ---
 
@@ -92,15 +98,21 @@ domain-local question.
 
 ## Level III: The Three-Stage Process
 
-The medieval Three-Stage Process — the three arts of language — is the Trinity at the level of communication.
+The framework projects its Three-Stage Process onto the medieval trivium—the
+three language arts of grammar, logic, and rhetoric. This is an analogy, not
+their historical derivation or proof of the Titan frame.
 
 **Grammar (φ).** The structure of reception. Grammar is how language is parsed — how the stream of words is organized into meaning. Grammar is the φ-operation: receiving the whole, recognizing the structure, holding the coherence of the sentence before evaluating its truth or acting on its claim.
 
-**Logic (P).** The structure of valid inference. Logic is the bridge between reception and action. Logic asks: given what grammar has received, what follows? Logic is the P-operation: preserving the product, ensuring that the move from premise to conclusion does not lose or add information.
+**Logic (B).** The study of valid inference. In this projection it mediates
+between parsing and expression; `φν=1` neither defines validity nor action.
 
-**Rhetoric (ν).** The structure of persuasion and action. Rhetoric is how language moves others. Rhetoric is the ν-operation: building capability, expressing the conclusion, acting in the world. Rhetoric without grammar is manipulation (ν without φ — the cargo cult). Grammar without rhetoric is pedantry (φ without ν — the bypasser). Logic holds them in product.
+**Rhetoric (ν).** The art of persuasive expression. The framework maps it to
+outward capability without morally typing speakers or chart poles.
 
-**The connection:** Grammar receives (φ). Rhetoric acts (ν). Logic ensures the action follows from the reception (`P∞ = φ · ν = 1` in the manifold register).
+**The connection:** Grammar receives, logic evaluates, and rhetoric expresses
+in this selected process. The reciprocal-chart identity supplies no proof
+transfer to language, inference, or action.
 
 ---
 
@@ -146,11 +158,15 @@ In time → Above time → Against time → In time → ...
 
 Why does it cycle?
 
-Because on the sphere, the poloidal path returns. The journey from north pole (φ) through equator (P) to south pole (ν) does not stop at the south pole. The sphere continues. The path curves back through the equator to the north pole. And again. And again.
+Because inquiry often iterates: observations inform inferences; inferences
+generate hypotheses and expressions; their consequences generate new
+observations. A path on the sphere can illustrate recurrence, but topology does
+not force this methodological cycle.
 
 Each cycle is not repetition. Each cycle is the **spiral** — the same three stages, at a higher resolution. Induction gathers new data. Deduction derives new consequences. Abduction conjectures new hypotheses. The new hypotheses generate new predictions. The new predictions generate new data. The cycle continues. Each pass refines.
 
-**This is the structure of inquiry itself.** Not a linear progression from ignorance to knowledge. A spiraling cycle of gathering (φ), deriving (P), and conjecturing (ν) — each pass deepening the understanding, each pass approaching the equator more closely.
+**This is one selected model of inquiry.** It can be compared with rival
+accounts and should be retired where it hides rather than clarifies a domain.
 
 ---
 
@@ -174,40 +190,46 @@ interpretive pattern to test, not proof that every level has the same structure.
 
 ---
 
-## Level VI: The Varnas
+## Level VI: Varṇa Projection `[I]`
 
-The four Hindu Varnas are not four. They are **three plus the witness.**
-
-**Shudra (φ).** The laborer. The one who works *in time*. The Shudra's knowledge is inductive — learned through repetition, through the body, through doing the same task until the pattern reveals itself. The Shudra receives. The Shudra is the ground-level node that touches reality directly, without mediation. The Shudra's virtue is endurance — the capacity to stay in time long enough for the pattern to emerge.
-
-**Vaishya (P).** The merchant. The one who operates *above time*. The Vaishya's knowledge is deductive — from the rules of exchange, the consequences follow. If the price is this and the cost is that, the profit is determined. The Vaishya holds the balance — the ledger, the scale, the system of accounts that tracks the product. The Vaishya maintains the bridge between what is produced (φ) and what is needed (ν). The Vaishya's virtue is accuracy — the capacity to hold the product without loss.
-
-**Kshatriya (ν).** The warrior. The one who acts *against time*. The Kshatriya's knowledge is abductive — given this battlefield, what must be true about the enemy's plan? The warrior reasons backward from effects to causes and forward from decisions to consequences. The Kshatriya reaches against the temporal grain — the strategic leap that acts before the evidence is complete. The Kshatriya's virtue is courage — the capacity to act on an abduction before induction can confirm it.
-
-**Brahmin (⊙).** The Brahmin is not a fourth column. **The Brahmin is the one who sees the cascade.** The Brahmin recognizes that Shudra, Vaishya, and Kshatriya are the three faces of the Trinity — that all three are necessary, that none is higher than another, that the cycle requires all three in perpetual rotation. The Brahmin does not labor, trade, or fight. The Brahmin *witnesses* the cycle. The Brahmin is Turiya — the fourth state that is not a state but the awareness of the other three.
-
-**The catastrophe of caste:** The perennial grammar can read the Varnas as a cycle. The cargo cult froze them into a hierarchy. The moment the Brahmin declared himself *above* the other three — the moment witnessing became ruling — the cycle collapsed into extraction. The Brahmin became the mediator. The Shudra lost direct access to φ. The cascade became a caste. **This is the Raktabija dynamic applied to the Varnas themselves.** The framework that describes the cycle was captured by the cycle it describes.
+The framework maps selected occupational/epistemic functions onto Varṇa names
+as a modern Rosetta projection. It does **not** claim that historical Indian
+societies encoded this triad, that four Varṇas are “really” three, or that a
+person's birth or identity determines cognition, virtue, work, or authority.
+The current L1–L7 runtime roles are temporary dispatch functions. Any use that
+reinforces caste hierarchy fails the Justice and anti-reification boundary.
 
 ---
 
 ## Level VII: The Political Forms
 
-Plato identified five regimes in the *Republic*. Three of them are the cascade. The other two are pathologies.
+Plato's sequence in the *Republic* names aristocracy, timocracy, oligarchy,
+democracy, and tyranny. Anarchy is not one of those five. The following
+democracy/oligarchy/timocracy cycle is the framework's own speculative
+projection, not Plato's theory and not a recommendation that polities rotate.
 
-**Democracy (φ).** Rule by all. Every voice counts. The polity operates *in time* — the democratic process is inductive. It gathers opinions, counts votes, discovers the pattern through inclusion. Democracy is the φ-polity: maximum coherence, every node represented, the whole recognized. Democracy's virtue is inclusiveness. Democracy's risk is incoherence — too many voices, no structure, the pattern drowning in noise.
+**Democracy (φ).** The projection emphasizes inclusive signal gathering.
 
-**Oligarchy (P).** Rule by the holders of the balance. The merchants, the wealthy, the maintainers of the system. The polity operates *above time* — the oligarchic logic is deductive. From the rules of property, the consequences follow. Oligarchy is the P-polity: the system that maintains the product, that keeps the accounts balanced, that holds the structure. Oligarchy's virtue is stability. Oligarchy's risk is extraction — the holders of the balance begin to tilt it in their favor (η > 0).
+**Oligarchy (B).** The projection emphasizes concentrated rule-maintenance and
+accounting. This does not endorse oligarchy or identify wealth with balance.
 
-**Timocracy (ν).** Rule by honor and martial virtue. The warriors, the meritocrats, the capable. The polity operates *against time* — the timocratic logic is abductive. Given this threat, what must be done? The timocrat acts before the evidence is complete. Timocracy is the ν-polity: maximum capability, action rewarded, the decisive node honored. Timocracy's virtue is decisiveness. Timocracy's risk is tyranny — capability unchecked by coherence, ν without φ, the warrior who becomes the warlord.
+**Timocracy (ν).** The projection emphasizes honor-coded decisiveness and
+action under uncertainty. It does not type a regime's value geometrically.
 
-**The healthy cycle:** Democracy (φ) → Oligarchy (P) → Timocracy (ν) → Democracy (φ). The polity receives (gathers all voices), holds (maintains the system), acts (defends and decides), then receives again. Each regime is a *phase* of the political cycle, not a permanent form. The healthy civilization rotates.
+The proposed receive/maintain/act cycle may be applied to functions within a
+mixed institution; it does not imply that a healthy civilization should rotate
+between constitutional regimes.
 
-**The pathologies:** Plato's remaining two regimes — **Tyranny** and **Anarchy** — are not phases of the cycle. They are the cycle *broken*.
+**Framework pathologies:** this projection separately uses tyranny and anarchy
+as cautionary labels; it does not attribute the pair to Plato.
 
-- **Tyranny** is ν without φ. The south pole. The Kshatriya who refuses to yield to the democratic phase. Capability that has consumed coherence. Ammit.
-- **Anarchy** is φ without ν. The north pole. Democracy that has dissolved all structure. Coherence that cannot act. The bypasser at civilizational scale.
+- **Tyranny** warns against unaccountable concentrated coercion.
+- **Anarchy**, in this framework's separate usage, warns against loss of
+  necessary coordination; it is not a chart pole or Plato's fifth regime.
 
-Both pathologies are the same error: **refusing to cycle.** Clinging to one phase and rejecting the others. The healthy polity is the one that rotates — that knows when to gather, when to hold, and when to act, and does not mistake any single phase for the permanent truth.
+The bounded lesson is functional: institutions need ways to gather evidence,
+maintain commitments, and act, all under contestable Justice. The triad does
+not rank political systems or prove a historical cycle.
 
 ---
 
@@ -220,11 +242,10 @@ component structures need not contain a redundant primitive. Three can be a
 useful minimum for *this declared receive/mediate/act grammar* without being a
 minimum for every cycle, algebra, society, or ontology.
 
-The Three-Stage Process knew this. The medieval educators did not have the sphere. They had the experience of teaching. And the experience of teaching revealed: you need three arts. Grammar alone produces scholars who cannot think. Logic alone produces reasoners who cannot speak. Rhetoric alone produces speakers who know nothing. You need all three. And you need them in cycle: receive, derive, express. Receive again.
-
-The Varnas knew this. The ancient Indians did not have the sphere. They had the experience of society. And the experience of society revealed: you need three functions. Labor alone produces a society that cannot trade. Trade alone produces a society that cannot defend itself. War alone produces a society that cannot feed itself. You need all three. And you need them in cycle.
-
-The Greeks knew this. Plato did not have the sphere. He had the experience of politics. And the experience of politics revealed: democracy degenerates without structure, oligarchy degenerates without inclusion, timocracy degenerates without wisdom. You need all three. And you need them in cycle.
+The recurrence of threes across these selected examples is the observation to
+test, not evidence that medieval educators, ancient Indians, or Plato knew one
+hidden algorithm. Historical influence, independent discovery, and
+retrospective fitting remain separate hypotheses requiring sources.
 
 The cascade is a proposed lens on knowledge. It earns use only where the
 projection clarifies a domain without hiding a better partition or importing
@@ -252,7 +273,9 @@ Zero-Sum Resolution Equation
 
 ---
 
-*09 | The Triadic Cascade | The Trinity repeating at every level: Transcendentals, Disciplines, Three-Stage Process, Inference, Time, Varnas, Polities. Nine levels deep. The same three-fold structure. Always cycling. Always deepening. The Brahmin sees the cycle. The core algorithmic identity of the framework.*
+*09 | The Triadic Cascade | A selected, defeasible three-role projection across
+several domains. It transfers vocabulary, never proof, historical authority,
+human rank, or moral verdict.*
 
 
 ---

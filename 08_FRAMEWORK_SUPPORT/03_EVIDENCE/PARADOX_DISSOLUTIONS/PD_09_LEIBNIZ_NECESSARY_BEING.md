@@ -94,12 +94,16 @@ sphere as an established fact.
 - **η = 0:** This is Emergentism's declared non-extraction boundary. It is a
   normative premise requiring bearer-complete Justice, not a theorem about all
   stable systems or a definition of a perfect being.
-- **Commitment boundary:** D5 models possibilities and D4 records causal
-  actuality. A finite agent selects and attempts one option through `χ` and D4
-  means; authorization separately evaluates validity, and the world returns the outcome. This is
+- **Commitment boundary:** An actual D4 model represents D5 possibilities; D4
+  also contains performed ranking/selection, attempted action, record, and
+  receipt. A finite D4 agent selects and attempts one D5 option through `χ` and
+  embodied means; authorization separately evaluates validity, and the world returns the outcome. This is
   not a μ-crossing and does not answer Leibniz's cosmological question.
 - **PD_05 connection:** The One and the Many dissolution parallels this: unity is a structural property of S², not a substance. Similarly, necessity is a structural property, not a being.
-- **PD_10 connection:** The Is-Ought bypass argues that normative constraints can be operationally aligned with structural conditions inside the framework. PD_09 extends this: metaphysical necessity is also structural, not substantive.
+- **PD_10 connection:** The repaired Is-Ought entry preserves the logical gap
+  and adds explicit normative premises rather than deriving Justice from
+  geometry. PD_09 is parallel only as an `[I]` category reframe; it does not
+  prove that metaphysical necessity is structural rather than substantive.
 
 ## 5. WHAT WOULD FALSIFY THIS
 

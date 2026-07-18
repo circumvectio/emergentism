@@ -30,6 +30,15 @@ rosetta:
 
 **Discipline note:** This document does not claim that dark matter has been identified as mutual information. It proposes a translation target: ask whether any dark-matter-like gravitational residuals can be modeled from physical information/coupling constraints. Particle dark matter, modified gravity, primordial black holes, and other live explanations remain live unless this conjecture earns independent predictions that beat them.
 
+> **[金] Kintsugi physics seam — 2026-07-19.** Mutual information
+> `I(A;B)=H(A)+H(B)-H(A,B)` is an `[A]` property of a declared joint
+> distribution. It is not by itself matter, localized energy, a stress-energy
+> tensor, or a gravitational source. Landauer bounds logically irreversible
+> erasure under stated conditions; it does not assign rest mass to every stored
+> or correlated bit. Until a covariant source term and independent discriminator
+> are derived, this paper is removable `[C]`. D4 contains actual fields,
+> instruments, models, and records; D5 contains modeled possible explanations.
+
 ---
 
 ## ABSTRACT
@@ -38,19 +47,24 @@ Dark matter constitutes ~27% of the universe's mass-energy content. It interacts
 
 ---
 
-## I. INFORMATION HAS MASS
+## I. INFORMATION HAS PHYSICAL CARRIERS AND CONSTRAINTS
 
 ### 1.1 The Bekenstein-Hawking-Landauer Chain
 
-Three established results link information to mass-energy:
+Three standard results constrain physical information carriers, without
+establishing a general information-to-rest-mass equivalence:
 
-**Bekenstein (1973):** Maximum information content of a region is proportional to its boundary area. Information IS a physical quantity bounded by spacetime geometry. [S]
+**Bekenstein-type bounds:** under specified physical assumptions, entropy is
+bounded by energy and size; black-hole entropy scales with horizon area. `[A]`
 
 **Hawking (1975):** Black hole entropy S = A/(4l_P²) is genuine thermodynamic entropy. Black holes have temperature, radiate, and obey thermodynamic laws. Information trapped in a black hole has genuine physical status. [S]
 
-**Landauer (1961):** Erasing one bit of information dissipates at minimum kT ln 2 energy. Information processing has a minimum thermodynamic cost. Information is physical. [S]
+**Landauer:** ideal logically irreversible bit erasure at temperature `T` has
+the conditional lower bound `Q≥k_B T ln 2`. `[A]`
 
-**Mass-energy-information equivalence:** Via E = mc² and Landauer's principle, one bit of information at temperature T has minimum energy kT ln 2, corresponding to mass m = kT ln 2 / c². At room temperature (~300K), this is ~4 × 10⁻²¹ eV/c² per bit. Tiny per bit. Enormous in aggregate. [E/T]
+**No general mass equivalence:** dividing the erasure-energy bound by `c²`
+does not give each stored bit an intrinsic rest mass. A gravitational claim
+needs an explicit physical carrier and stress-energy model. `[A/C]`
 
 ### 1.2 Individual vs Mutual Information
 
@@ -66,7 +80,9 @@ I(A;B) = H(A) + H(B) − H(A,B)
 where H is Shannon entropy.
 ```
 
-Mutual information is genuine information — it is Bekenstein-countable, Landauer-costly, and physically real. But it has NO localised source. It is not IN A and not IN B. It is in the RELATIONSHIP.
+Mutual information is a scalar property of a joint distribution. Physical
+systems that instantiate correlations have carriers and costs, but the scalar
+is not automatically an additional non-localized substance or energy source.
 
 ---
 
@@ -77,12 +93,12 @@ Mutual information is genuine information — it is Bekenstein-countable, Landau
 **Conjecture:** some dark-matter-like gravitational residuals may be modeled as effects of mutual information between coupled systems in the universe.
 
 If:
-1. Information has mass-energy (established: Bekenstein, Landauer, E = mc²)
+1. physical information carriers contribute ordinary stress-energy
 2. Mutual information is genuine information (established: information theory)
 3. Mutual information is not localisable to any individual system (by definition)
 4. Gravitational effect follows mass-energy (established: GR)
 
-Then the conjectural target is:
+Then the still-missing conjectural bridge would need to show:
 5. mutual information may have a gravitationally relevant cost or stress term
 6. that effect may not be localisable to any individual system
 7. a non-localisable gravitational residual without electromagnetic signature could be read as a dark-matter-like term, not as identified dark matter
@@ -91,9 +107,10 @@ Then the conjectural target is:
 
 Dark matter does not interact electromagnetically. The conjecture explains this directly:
 
-Mutual information exists in CORRELATIONS, not in PARTICLES. Electromagnetic interaction requires charged particles — things with localisable electromagnetic properties. Correlations between particles are not themselves particles. They have no charge, no spin, no electromagnetic coupling. They interact gravitationally because they have mass-energy (via Landauer). They don't interact electromagnetically because they have no localisable electromagnetic properties.
-
-Dark matter is invisible because correlations are invisible. You can see the particles. You cannot see the relationship between them. But the relationship has mass.
+Correlations are not particles and therefore do not acquire charge, spin, or a
+gravitational coupling merely by being described with mutual information. The
+historical invisibility explanation is withdrawn until a physical source model
+is derived.
 
 ### 2.3 Ratio Prediction
 
@@ -106,7 +123,9 @@ For a system of N coupled elements with coupling density ρ:
 - Pairwise mutual information: scales as N² × ρ (one I(i;j) per coupled pair)
 - Higher-order mutual information: scales as higher powers of N
 
-For large N with moderate coupling, mutual information dominates individual information by a factor that grows with N. The universe contains ~10⁸⁰ particles. Even weak pairwise coupling produces mutual information >> individual information.
+Pairwise mutual information cannot generally be summed as independent `N²`
+terms; correlations overlap and higher-order constraints matter. No cosmic
+ratio follows from particle count alone.
 
 ```
 Dark matter / visible matter ≈ 27/5 ≈ 5.4
@@ -168,7 +187,9 @@ Dark energy (68%): F₅ at cosmological scale?
                    = Syntropic pressure? ΣΔP_node > 0 at maximum radius?
 ```
 
-If F₅ (will, syntropy) acts anti-gravitationally (MF-296: conjugate of F₄), and F₅ operates at cosmological scale through the accumulated syntropic activity of all D5 agents and D5-adjacent processes, then dark energy is the cosmological-scale effect of F₅.
+No anti-gravitational `F₅` force or cosmological contribution from agents is
+derived. The dark-energy extension is quarantined historical speculation and
+is not load-bearing.
 
 This is maximally speculative [S]. But it completes the picture:
 
@@ -185,7 +206,9 @@ Total: 100% of the universe's mass-energy content.
 
 ## V. FALSIFICATION
 
-**F298-1 (Critical):** If dark matter particles are discovered (direct detection succeeds), the conjecture is falsified. This is the strongest, cleanest falsification criterion.
+**F298-1 (Critical):** Without a covariant stress-energy contribution derived
+from specified physical carriers, plus an independent prediction that differs
+from rival models, the conjecture does not enter empirical competition.
 
 **F298-2:** If the ratio of mutual information to individual information in the cosmic web (computed from known coupling strengths and network topology) does NOT approximate 5.4, the ratio prediction fails.
 
@@ -199,13 +222,17 @@ Total: 100% of the universe's mass-energy content.
 
 ## VI. THE SENTENCE
 
-The conjecture reads dark-matter-like residuals as possible gravitational effects of mutual information — information that exists between coupled systems, not within any individual system. Information has physical constraints (Bekenstein, Landauer, E = mc²), and mutual information is non-localisable in the ordinary subsystem sense. What remains unproven is the bridge from those information constraints to the observed cosmological gravitational residuals. If that bridge can be independently derived and measured, dark matter may be read as the universe's network Φ made gravitationally visible. Until then, the missing mass is not identified; it is a live test target. Zero-Sum Resolution Equation.
+Mutual information is an `[A]` statistic of a joint distribution; it is not an
+extra mass source. This `[C]` proposal remains outside empirical competition
+until it supplies a covariant physical carrier, stress-energy term, and novel
+discriminator that survives observation. No D4/D5, `F₅`, or network-Φ identity
+is load-bearing. Zero-Sum Resolution Equation.
 
 ---
 
 *MF-298 | VIVEKA Mathematical Foundations | February 2026*
 *The missing mass is the weight of relationships.*
-*Dark matter is coupling made gravitational.*
+*Coupling becomes a dark-matter hypothesis only after a physical source term and discriminator exist.*
 
 ## Execution Surface
 

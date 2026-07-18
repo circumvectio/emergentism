@@ -209,7 +209,9 @@ Watch the split. Duality appears. Adulthood. Light and dark. Self and other. D3.
 
 See the cones meet. The torus spins. Midlife. Creation and destruction. The dance. D4.
 
-Find the equator. Agency. Presence. Consciousness-as-lived-reading [I]. The balance point. D5. **Here. Now.**
+Find the equator. Agency, presence, and consciousness are lived D4 actuality;
+the model can open onto D5 possible contents. Reading this as the selected
+balance image is `[I]`. **Here. Now.**
 
 Now imagine: the sphere collapses. Which way?
 

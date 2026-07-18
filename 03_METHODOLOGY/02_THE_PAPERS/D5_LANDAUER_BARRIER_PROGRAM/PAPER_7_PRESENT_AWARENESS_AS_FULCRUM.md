@@ -23,6 +23,11 @@ status: "SCAFFOLD - 2026-06-13. Adds the non-retrocausal egregore / attractor co
 
 # PAPER 7: PRESENT AWARENESS AS FULCRUM
 
+> **[金] Type repair:** present awareness/model use, comparison, ranking,
+> selection, and enactment are D4 actual processes. D5 contains the possible
+> futures represented. “Future pull” means present model-mediated causation,
+> never a future event reaching backward.
+
 ## Genes, Egregores, And The D5 Selection Of Futures
 
 **Evidence tier:** `[S]` as framework action-register structure; `[I]` for the D5 lived-selection interpretation; `[C]` for any literal retrocausal physics.
@@ -31,7 +36,10 @@ status: "SCAFFOLD - 2026-06-13. Adds the non-retrocausal egregore / attractor co
 
 ## Thesis
 
-> Conscious awareness is the D5 negotiation surface where inherited biological priors and future-modeled egregoric attractors compete for enactment. The Soul Loop is the method by which awareness refuses both blind genetic inertia and blind attractor possession, selecting only those futures that raise `P_node,i` and `P_node,H` together under non-extraction.
+> Present awareness/model use is a D4 negotiation process in which inherited
+> priors and represented D5 alternatives can affect selection. The Soul Loop
+> updates the fallible model and selector from separate commitment and outcome
+> receipts; Justice, not a score or attractor, defines admissibility.
 
 This paper sits beside the D5 Landauer paper. Paper 1 defines the physical limit of perfect foresight: branch knowledge, memory, computation, measurement, control, and erasure are all inside entropy accounting. This paper defines the lived mechanism: how a finite Dasein chooses which future to feed.
 
@@ -44,7 +52,7 @@ The future does not reach backward as an already victorious historical object. A
 ```text
 Past push     = genes, conditioning, trauma, inherited priors, stress physiology
 Future pull   = modeled attractor, egregore, ideal, institution, narrative
-Present now   = awareness as D4/D5 selector
+Present now   = awareness/model use as a D4 selector over D5 contents
 Soul Loop     = correction process deciding which pull deserves energy
 ```
 

@@ -414,7 +414,7 @@ This data science applies to the EFR framework itself:
 | "S² is the substrate" | Induction + Abduction | [S] → [I] |
 | "P∞ = φ · ν = 1" | Deduction from axioms | [S] |
 | "η = 0" | Deduction + Testing | [S] → [S] |
-| "D5 = consciousness" | Interpretive shorthand for the lived interior of selection | [I] |
+| "D4 models represent D5 possibilities" | Current carrier/content contract; no consciousness identity | [S/I] |
 | "c = 25 CFT" | Conjecture | [C] |
 
 ### 10.2 The Honest Position as Epistemic Discipline

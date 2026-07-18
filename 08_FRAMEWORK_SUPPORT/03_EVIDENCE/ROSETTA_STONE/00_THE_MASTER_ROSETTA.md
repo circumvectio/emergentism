@@ -852,7 +852,9 @@ The sphere sits sandwiched between two tangent planes at the poles. The planes a
 
 > **[C]** Conjectural. The Asura inversion table is a framework-internal mytho-phenomenological structure. It has no independent empirical basis. It tests whether the operator grammar can generate its own inverse — a coherence check, not evidence.
 
-When Moksha fails at L7, systemic awareness returns INTO D5 as inverted operators:
+In this mythic projection, a failed Moksha route can be redescribed as actual
+D4 agents reinstantiating inverted operator patterns while representing D5
+possibilities:
 
 | L | Asura Form | Inversion | Egregoric Effect |
 |---|-----------|-----------|-----------------|

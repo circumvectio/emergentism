@@ -1,203 +1,101 @@
 ---
 rosetta:
   primary_column: "Meta"
-  register: "[S/I]"
-  canonical_phrase: "What Is Actually Novel Here"
+  register: "[I/C]"
+  canonical_phrase: "What May Be Distinctive Here — no priority claim"
   vmosk_a_ref: "01_EMERGENTISM/VMOSK_A.md"
+status: "ACTIVE KINTSUGI REPAIR — novelty inventory replaced by research claims"
+date: 2026-07-19
+superseded_blob: "eba3005fd64663b900ec904af8f50a5f8cf5fb7a"
 ---
 
-# WHAT IS ACTUALLY NOVEL HERE
-
-## A Provisional Inventory of the Framework's Distinct Contributions
-
-**Status:** Meta-routing inventory; source-owner documents control doctrine and public claims
-**Date:** 2026-04-15
-**Evidence Tier:** Meta-interpretive
-**Depends on:** [00_CANONICAL_FORMULA_BLOCK.md](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md), [00_THE_WELTANSCHAUUNG.md](../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md), [00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md](../05_COSMOLOGY/00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md), [00_EXECUTION_GUARDRAILS.md](../03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md), [00_KNOWN_UNKNOWNS_PROGRAM.md](00_KNOWN_UNKNOWNS_PROGRAM.md)
-
----
-
-## Why This Document Exists
-
-The framework is now large enough that readers can mistake its scale for its novelty.
-
-Those are not the same thing.
-
-This document names the strongest claim the corpus can make about what is genuinely distinctive here.
-
----
-
-## The First Clarification
-
-The framework is not one invention.
-
-It is **three inventions coupled together**:
-
-1. a **formal kernel**
-2. a **translation discipline**
-3. a **constitutional deployment architecture**
-
-Most systems do one of these well.
-The unusual thing here is the coupling.
-
----
-
-## 1. The Formal Kernel
-
-This is the smallest load-bearing mathematical and ontological packet:
-
-- `Zero-Sum Resolution Equation`
-- `φ · ν = 1 on S²`
-- `B = sin θ` as the balance profile on the sphere
-- `P_node = Φ × V` for operational node scoring
-- `ΣΔB > 0` or `ΣΔP_node > 0` across the widest real boundary, depending on register
-
-Its novelty is not merely that it is compact.
-Its novelty is that the same grammar is asked to survive translation across:
-
-- core state
-- biology
-- ethics
-- strategy
-- institutions
-- AI alignment
-
-That is stronger than producing a local formalism.
-
----
-
-## 2. The Translation Discipline
-
-The framework does not only make claims.
-It also builds a discipline for moving those claims across registers without inflation.
-
-That discipline includes:
-
-- evidence tiers
-- Rosetta mappings
-- public-safe vs internal-safe phrasing
-- downgrade rules
-- claim matrices
-- coherence spines
-
-This matters because many large systems fail not at invention but at translation.
-They become weaker the moment they leave their native vocabulary.
-
-The framework's second novelty is therefore:
-
-> **a self-conscious discipline for carrying one grammar across many domains without pretending every domain has already proven the same thing**
-
----
-
-## 3. The Constitutional Deployment Architecture
-
-The framework does not stop at "what is."
-It specifies how a living system should be built if the core state is taken seriously.
-
-That architecture includes:
-
-- `η = 0`
-- `K2`
-- Grace Exit
-- Three-Stage Process separation
-- Three Gates
-- anti-capture design
-
-> This is an illustrative inventory of the architecture's load-bearing pieces, **not** the constitution's formal enumeration. The constitution is canonically **5 + 1** — five refusals (η=0, K2, K3, K4, A7) plus Ω the directional +1 — per [`05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md); the Three-Stage Process is a deployment *separation*, not a refusal (see [`00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md`](00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md)). `[S]`
-
-This is not merely a governance appendix.
-It is a deployment architecture for keeping recursion from turning extractive.
-
-Its novelty is:
-
-> **a constitutional packet that tries to preserve sovereignty, non-extraction, and corrigibility under scale**
-
----
-
-## The Coupling Is the Real Novelty
-
-Taken separately:
-
-- the formal kernel would be an interesting metaphysical-mathematical proposal
-- the translation discipline would be a careful philosophy-of-method
-- the constitutional packet would be a strong institutional design framework
-
-Taken together, they become something rarer:
-
-> **a metascience plus a metapolitics plus a deployment ethic**
-
-That is why the project feels larger than a theory paper and stranger than an operating manual.
-
----
-
-## The Second Clarification
-
-The framework may be strongest not where it claims the most, but where it **bridges the most**.
-
-Its deepest public strength may not be:
-
-- "reality is finally proved to be `S²`"
-
-Its deepest public strength may be:
-
-- "here is a disciplined way to relate geometry, flourishing, institutions, and sovereignty without flattening them"
-
-That is a subtler claim.
-It may also be the more durable one.
-
----
-
-## The Publicly Defensible Novel Contributions
-
-At the current state of the corpus, the most defensible novelty claims are:
-
-1. **A unified D-level translation stack**
-   Science is unified by bridge law and translation, not by reduction.
-
-2. **D5 as a public strategic-relational science**
-   Game theory, behavioral economics, mechanism design, and institutional economics are treated as one register rather than scattered neighboring fields.
-
-3. **Strong in genesis, weak in governance**
-   The emergence asymmetry is one of the sharpest genuinely new formulations in the corpus.
-
-4. **A constitutional packet for recursion**
-   `η = 0`, `K2`, Grace Exit, and Three-Stage Process separation form a single non-extractive design grammar.
-
-5. **Anti-idolatry as architecture**
-   The system attempts to encode self-limitation structurally rather than preach it rhetorically.
-
----
-
-## The More Ambitious Novel Contributions
-
-These may be real contributions too, but they still depend more heavily on the empirical and philosophical bridge work:
-
-1. `S²` as the best current ontological wager
-2. `Pratyakṣa` plus disciplined phenomenology as one two-register epistemic structure
-3. constitutional life as the practical expression of core state
-
-These are real candidates for novelty.
-They simply require more care when stated publicly.
-
----
-
-## The Shortest Summary
-
-> **What is novel here is not only the sphere, or only the ethics, or only the governance. It is the coupling of a formal kernel, a translation discipline, and a constitutional deployment architecture into one self-correcting worldview-toolchain.**
-
-That is the strongest concise statement the current corpus can make.
-
-Zero-Sum Resolution Equation
-
----
-
-## Agent Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Check novelty claims against this document.** Before asserting that something is novel in the framework, verify it is listed here. If not, it may be borrowed, standard, or incremental.
-2. **Preserve the three-pillar structure.** Novelty = formal kernel + translation discipline + constitutional architecture. Do not claim novelty for just one pillar.
-3. **Be honest about borrowing.** The framework explicitly credits Jaynes, Koenderink, Riemann, and others. Maintain this attribution discipline.
-4. **Canonical Path:** `01_EMERGENTISM/00_META/00_WHAT_IS_ACTUALLY_NOVEL_HERE.md`
-
-**Output:** Verify novelty claims. Attribute borrowed elements. Maintain the three-pillar framing.
+# What May Be Distinctive Here
+
+> **[金] Crack:** the prior inventory called a product score, universal
+> translation stack, strong-emergence asymmetry, aggregate ethic, and K2-based
+> constitutional packet publicly defensible novelties without a priority
+> review. It mixed internal distinctiveness with historical novelty.
+>
+> **Repair:** name bounded internal results and candidate couplings without
+> claiming first discovery, unique formulation, or universal fit. The previous
+> inventory remains at Git blob
+> `eba3005fd64663b900ec904af8f50a5f8cf5fb7a`.
+
+## Current verdict
+
+No Emergentist result yet has an independently verified priority claim as new
+mathematics, a new law of nature, or the first unification of its kind.
+“Distinctive in this corpus” and “novel in the literature” are different
+claims.
+
+The strongest current overview is
+[`../00_WHAT_IS_EMERGENTISM.md`](../00_WHAT_IS_EMERGENTISM.md). The staged
+release boundary is
+[`../04_AXIOLOGY/00_THE_RELEASE_DOCTRINE.md`](../04_AXIOLOGY/00_THE_RELEASE_DOCTRINE.md).
+
+## Internally real results
+
+The corpus does contain results and repairs worth testing:
+
+1. **Balance-only game theorem `[S]`:** within the explicitly scalar payoff
+   fixture, `ν_i=1` is strictly dominant, the all-balanced profile is the unique
+   Nash equilibrium, and the Price of Anarchy is 1.
+2. **Conjunctive non-uniqueness `[A/S]`:** the AND-class boundary conditions do
+   not uniquely select `ΦV`; common alternatives can rank candidates
+   differently.
+3. **Receipt separation `[S/I]`:** commitment and world outcome require
+   distinct typed records and epistemic roles. Outcome evidence must be
+   independently world-grounded rather than circularly self-certified, though
+   one implementation process may host both roles.
+4. **Power-Max extraction counterexample `[S/I]`:** a private side-payment can
+   reward extraction, so Justice must restrict admissibility before local
+   maximization.
+5. **Mirror/sign grammar `[A/S]`:** inversion supplies reciprocal pairs and
+   fixed points `±1`; a two-coordinate sign square supplies four cells. Neither
+   forces seven.
+6. **Operational constructions `[I/C]`:** Syntropic Dyadism,
+   Egregoreotype candidacy, option cones, and model-mediated future influence
+   create explicit tests rather than proofs of universal laws.
+
+## Candidate distinctiveness `[I/C]`
+
+What may prove distinctive is the coupling of:
+
+- typed emergence and cross-domain translation;
+- claim-level evidence tiers, rivals, kill criteria, and correction receipts;
+- model-mediated anticipation and the commitment/outcome Soul Loop;
+- bearer-complete Justice before Power-Max;
+- persistent collective trace tests; and
+- accountable, contestable authorization rather than a worldview-level founder
+  primitive.
+
+This is a candidate research grammar, not a universal D-stack. Domain laws and
+methods remain sovereign. `P_node:=ΦV` is selected, not uniquely derived.
+Aggregate gain cannot launder harm. D0–D6 is a selected scaffold. K2 survives
+only in its separately scoped historical/private-DAV governance records.
+
+## What would establish novelty
+
+A priority or discovery claim requires:
+
+1. a precise statement and formal dependency graph;
+2. a documented search of the relevant primary literature and neighboring
+   terminology;
+3. the closest prior formulations and a non-rhetorical difference;
+4. a result not obtainable by relabeling standard machinery;
+5. independent expert review; and, for empirical claims,
+6. preregistered discriminators that outperform simpler rivals and replicate.
+
+Until then, use: **“Emergentism proposes”**, **“the corpus proves under these
+premises”**, or **“this coupling may be distinctive.”** Do not use “first,”
+“only,” “discovered universal,” or “new law.”
+
+## Kill criterion
+
+This inventory fails if a literature review finds the same coupling without a
+material difference, an alleged theorem reduces to a chosen definition, a
+domain-native rival compresses the evidence better, or an empirical
+discriminator fails independently.
+
+**Execution boundary:** no priority, publication, patent, product, governance,
+or deployment authority follows from this meta inventory.

@@ -35,6 +35,13 @@ rosetta:
 > analytic identity on `θ∈(0,π)` under the cotangent/tangent definitions; the
 > poles are excluded and no closure theorem follows from it.
 
+> **[金] Register-and-closure seam — 2026-07-19.** D4 contains actual agents,
+> models, selections, actions, and records; D5 contains possible contents. D6
+> opens no positive freedom. Its sole return is the interpretive, non-`μ` edge
+> `r₆:D6↝D0`, not identity, a seventh crossing, or a physical cycle. Later
+> language assigning agents, institutions, or lived selection to D5 is legacy
+> shorthand and is superseded by this contract.
+
 ---
 
 ## Why This Document Exists
@@ -48,7 +55,8 @@ It is the point where the framework remembers that no named register exhausts th
 
 So this document states the canonical correction:
 
-> **D6 is not a public register above D5. D6 is the axiomatic closure of all public registers.**
+> **D6 is not a public register above D5. D6 is the selected apophatic boundary
+> of this scaffold.**
 
 ---
 
@@ -144,7 +152,8 @@ Because closure holds, that return to `D0` is structurally the same boundary as 
 The clean relation is:
 
 - `D4` studies bounded embodied agents
-- `D5` studies interacting agents, incentives, norms, institutions, symbolic orders, civilizational sediment, and lived selection
+- `D5` indexes the possible strategies, bargains, institutions, and worldlines
+  represented by actual D4 agents and records
 - `D6` is reached when all such positive descriptions are seen as true but non-exhaustive, and then subtracted
 
 So:

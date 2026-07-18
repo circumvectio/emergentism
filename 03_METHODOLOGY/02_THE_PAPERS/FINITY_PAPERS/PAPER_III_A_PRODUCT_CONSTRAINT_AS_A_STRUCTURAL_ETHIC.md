@@ -75,12 +75,14 @@ it contains no ethic.
 
 ## 2. Why product does not uniquely follow
 
-Suppose a modeler wants a normalized score `C(Phi,V)` in which foresight and
-means are jointly required. A broad conjunctive family can satisfy:
+Suppose a modeler wants a normalized score `C(Phi,V)` for
+`Phi,V in [0,1]` in which foresight and means are jointly required. A broad
+conjunctive family can satisfy:
 
 ```text
 C(0,V)=0
 C(Phi,0)=0
+C(1,1)=1
 C is monotone in each argument.
 ```
 
@@ -89,9 +91,14 @@ Examples include:
 ```text
 C_product(Phi,V)  = Phi*V
 C_min(Phi,V)      = min(Phi,V)
-C_harmonic(Phi,V) = 2*Phi*V/(Phi+V)
-C_CD(Phi,V)       = Phi^alpha * V^(1-alpha).
+C_harmonic(Phi,V) = 0                         if Phi=V=0
+                    2*Phi*V/(Phi+V)           otherwise
+C_CD(Phi,V)       = Phi^alpha * V^(1-alpha),  with 0<alpha<1.
 ```
+
+The Cobb-Douglas exponents are therefore positive, so the zero-factor
+boundaries hold. The explicit `(0,0)` branch makes the harmonic example a total
+normalized map rather than leaving `0/0` undefined.
 
 They are not interchangeable and can rank actions differently. Emergentism
 declares

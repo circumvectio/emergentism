@@ -20,11 +20,22 @@ status: "ACTIVE - 2026-06-13. Paper-program scaffold for CM8e and CM8f. Paper 1 
 
 # The D5 Landauer Barrier Program
 
+> **[金] Program-wide type repair (2026-07-19).** In every paper below,
+> “D5 selector,” “D5 agent,” “D5 foresight,” and “D5 awareness” are superseded
+> shorthand. The actual selector, model, awareness, computation, ranking,
+> selection, action, and physical cost are D4. D5 contains the merely possible
+> branch/worldline contents represented. Landauer's principle is scoped to
+> logically irreversible operations under its physical assumptions; it does
+> not prove a universal divergence law, ethics, or consciousness theory.
+
 This is not one paper. It is a seven-paper program around the same constraint:
 
 > **Perfect worldline foresight is an asymptote, not a free power.**
 
-In the framework, D5 can be read as worldline-foresight: the agent's capacity to envision reachable futures, rank them, and aim D4 means-to-act toward one branch. At its limit this resembles Maxwell's demon: a selector that can discriminate possible branches and route action toward locally lower disorder. The barrier is that the selector is never outside the system it sorts. Its measurement, memory, computation, control, error correction, and erasure are D4 physical processes that remain inside entropy accounting.
+In the framework, a D4 agent can physically model D5 possible worldlines,
+rank them, and aim D4 means toward an attempted branch. The Maxwell-demon image
+is an analogy for this actual selector, which never stands outside the system
+it models.
 
 The point is not to say that D5 literally violates thermodynamics. The point is to make that impossible to say by accident.
 
@@ -33,7 +44,8 @@ The companion point is not to say that future attractors literally act backward 
 ## Local Canon Anchors
 
 - [`CM8e`](../../00_CANONICAL_CLAIM_MATRIX.md): canonical claim boundary for the D5 Landauer Barrier.
-- [`The Goal`](../../../00_THE_GOAL.md): D4 means-to-act, D5 worldline-foresight, `P_node = Φ × V`, and the limit-form clarification.
+- [`The Goal`](../../../00_THE_GOAL.md): D4 model/foresight capacity and means,
+  D5 represented contents, and the limit-form clarification.
 - [`The Honest Position`](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md): S19 source-of-truth fence for the public claim.
 - [`D4/D5 Canonical Reference`](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md): local dimensional reference.
 - [`Objective Morals and Ethics`](../../../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md): dyadic value bridge and `η = 0` action discipline.
@@ -54,13 +66,13 @@ These sources are not ornamental. Every paper in this program must route the phy
 
 | # | Paper | Core claim | Status |
 |---|---|---|---|
-| 1 | [`The D5 Landauer Barrier`](PAPER_1_THE_D5_LANDAUER_BARRIER.md) | Perfect D5 worldline discrimination is an asymptote because information processing is physical. | Central scaffold |
+| 1 | [`The D5 Landauer Barrier`](PAPER_1_THE_D5_LANDAUER_BARRIER.md) | Physical D4 branch discrimination over D5 contents has information-processing costs; universal divergence remains unproved. | Central scaffold |
 | 2 | [`Worldline Foresight Is Physical`](PAPER_2_WORLDLINE_FORESIGHT_IS_PHYSICAL.md) | Branch discrimination requires storage, computation, measurement, and control; the light-speed analogy belongs here. | Stub |
-| 3 | [`The Reflexive Demon`](PAPER_3_THE_REFLEXIVE_DEMON.md) | A selector that observes and then acts changes the branches it is predicting. | Stub |
+| 3 | [`The Reflexive Demon`](PAPER_3_THE_REFLEXIVE_DEMON.md) | A D4 selector that models and acts changes the D5 option field it represents. | Stub |
 | 4 | [`Path Entropy Is Not Thermodynamic Entropy`](PAPER_4_PATH_ENTROPY_IS_NOT_THERMODYNAMIC_ENTROPY.md) | Reachable-future diversity must not be confused with thermodynamic entropy. | Stub |
 | 5 | [`Entropy Export and Objective Ethics`](PAPER_5_ENTROPY_EXPORT_AND_OBJECTIVE_ETHICS.md) | Extraction is local order purchased by exporting cost into the carrier field; syntropy raises node and field together under `η = 0`. | Stub |
 | 6 | [`The Omega Holobiont Cannot Close`](PAPER_6_THE_OMEGA_HOLOBIONT_CANNOT_CLOSE.md) | The universal-holobiont image is still D5 because it uses physical memory, computation, and correction; D6 releases its finality claim. | Stub |
-| 7 | [`Present Awareness As Fulcrum`](PAPER_7_PRESENT_AWARENESS_AS_FULCRUM.md) | Conscious awareness is the D5 negotiation surface where inherited priors and modeled future attractors compete for enactment through D4 means. | Stub |
+| 7 | [`Present Awareness As Fulcrum`](PAPER_7_PRESENT_AWARENESS_AS_FULCRUM.md) | Present awareness/model use is a D4 process in which inherited priors and represented D5 futures can affect selection. | Stub |
 
 ## Program Invariants
 
@@ -69,21 +81,23 @@ These sources are not ornamental. Every paper in this program must route the phy
 3. **No erasure overreach.** Landauer's principle applies cleanly to logically irreversible erasure; reversible computation must be handled honestly.
 4. **No entropy sign error.** Path entropy / reachable-future diversity is not thermodynamic entropy.
 5. **No reflexivity dodge.** Once the selector acts, the branch set changes.
-6. **No omega-holobiont inflation.** A universal holobiont running the Soul Loop on matter-energy is a D5-limit image, not D6.
+6. **No omega-holobiont inflation.** A universal-holobiont image is an
+   optional conjecture, not a D-register identity or demonstrated actor.
 7. **No literal retrocausal dogma.** Future attractors are modeled futures acting through present awareness; literal reverse-causation remains `[C]`.
 8. **No inevitability rhetoric.** Attractors are conditionally real enough to build toward only with kill criteria, exit rights, correction, and evidence-tier humility.
-9. **No moral smuggling.** The ethics bridge is conditional under coupling, horizon, multiplicative scoring, and `η = 0`; it is not an external proof that every agent must accept the framework.
+9. **No moral smuggling.** Justice is a separately declared premise; coupling,
+   horizon, multiplicative scoring, and `η` neither derive nor complete it.
 
 ## Common Formal Spine
 
 Let `B_R(T)` be the reachable branch set over horizon `T` for a finite selector. Let `π_ε(B_R)` be the partition of those branches at resolution `ε`. If a selector can reliably discriminate that partition, it must instantiate enough physical state to carry the discriminating information, plus the measurement and control channels needed to use it.
 
 ```text
-D5 foresight cost >= measurement + memory + computation + control + erasure/reset
+D4 branch-model cost >= measurement + memory + computation + control + erasure/reset
 
 M_required >= log2 |π_ε(B_R(T))| bits
 
-C_D5 >= C_meas + C_mem + C_comp + C_ctl + C_erase
+C_model >= C_meas + C_mem + C_comp + C_ctl + C_erase
 ```
 
 This is a lower-bound sketch, not yet a completed theorem. It becomes paper-grade only after Paper 2 specifies horizon, resolution, channel, noise, reversibility, and reset assumptions.

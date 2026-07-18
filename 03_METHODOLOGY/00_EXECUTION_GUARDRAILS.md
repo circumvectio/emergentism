@@ -5,7 +5,7 @@ rosetta:
   secondary:
     - level: L4
       column: Political regime
-      role: "Three-Stage Process + K2 + η=0 + Grace Exit as execution constitution"
+      role: "Three-Stage Process + accountable authorization + η=0 + Grace Exit"
   operator: "Kṛṣṇa ◇"
   tier: "God"
   regime: "Vaiśya"
@@ -14,11 +14,11 @@ rosetta:
 ---
 
 **Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
-**L3 constitutional; K2/η=0/A7/K3.**
+**L3 constitutional; accountable authorization/η=0/A7/K3.**
 
 # THE EXECUTION GUARDRAILS
 
-## Three-Stage Process, K2, η = 0, and Grace Exit as One Operating Surface
+## Three-Stage Process, Accountable Authorization, η = 0, and Grace Exit
 
 **Status:** Canonical execution guardrail
 **Date:** 2026-04-15
@@ -54,30 +54,41 @@ The cognitive functions do not collapse into one another.
 |------|--------|-------|----------------|--------------------|
 | `F1` | `IS` | TheCircle | observe, gather, structure, rank, witness | predict, recommend, execute |
 | `F2` | `COULD` | RealityFutures | price probabilities, branch scenarios, weight futures | observe raw facts, recommend, execute |
-| `F3` | `SHOULD` | Agentz | deliberate, synthesize, recommend, prepare K2 envelope | observe, predict, execute |
+| `F3` | `SHOULD` | Agentz | deliberate, synthesize, recommend, prepare an AuthorizationEnvelope | observe, predict, self-authorize, execute |
 | `F4` | `ACT` | Skyzai / OFN rails | settle, broadcast, receipt, update state | observe, predict, recommend in place of F3 |
 
 **Canonical rule:** `F3` recommends. It does not decide in the sovereign sense. The natural person or constitutionally authorized signer decides.
 
 ---
 
-### 2. K2 Sovereignty
+### 2. Accountable Authorization
 
-`K2` is the anti-capture hinge.
+The general anti-capture hinge is a complete, typed `AuthorizationEnvelope`:
+
+`principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`
+
+No agent or institution may infer missing fields from confidence, convenience,
+or symbolic status.
 
 For the **private DAC**:
 
 - the human signs every consequential transaction
 - Agentz suggests
 - the human approves, rejects, or modifies
+- K2 is the product-governance implementation of the AuthorizationEnvelope
 
-For the **organizational DAC**:
+For the **public DAV**:
 
-- sovereignty moves into the authorized constitutional lane
-- delegated wallets or governance processes may sign
-- but the signing authority is still bounded by the constitution, not by model whim
+- there is no K2 signer
+- PRISM and the constitutional natural-person council rail authorize within a
+  declared mandate, scope, custody, expiry/revocation, and contest path
+- delegated wallets may execute only within that envelope
 
-**Canonical sentence:** Agentz may produce a recommendation, a ruling, or a K2 envelope. It does not replace the sovereign signature.
+For any other organization, the same generic fields must be named before its
+own governance mechanism can count as authorization.
+
+**Canonical sentence:** Agentz may produce a recommendation or draft envelope.
+It neither supplies the missing authority nor manufactures its own consequence.
 
 ---
 
@@ -115,7 +126,8 @@ Avoid saying:
 ### 4. Grace Exit
 
 `Grace Exit` is not a nice-to-have.
-It is part of the same constitutional packet as `K2` and `η = 0`.
+It is part of the same constitutional packet as accountable authorization and
+`η = 0`.
 
 The rule is:
 
@@ -132,8 +144,10 @@ The rule is:
 These rules travel together:
 
 1. **Three-Stage Process** keeps cognition separated.
-2. **K2** keeps sovereignty local.
-3. **η = 0** keeps economics non-extractive.
+2. **AuthorizationEnvelope** makes authority scoped, attributable, revocable,
+   and contestable; K2 is its private-DAV implementation and PRISM its public-DAV rail.
+3. **η = 0** declares and tests the no-extraction constraint; it does not by
+   itself establish Justice.
 4. **Grace Exit** keeps participation reversible.
 5. **Three Gates** keep action receipt-bound, truth-gated, and exit-safe.
 
@@ -146,7 +160,8 @@ If one is removed, the others degrade.
 | Use This | Not This | Why |
 |---------|----------|-----|
 | `Agentz recommendation` | `Agentz decision` | preserves sovereignty |
-| `K2 envelope` | `auto-execution packet` | keeps the human/constitutional signer explicit |
+| `AuthorizationEnvelope` | `auto-execution packet` | names the applicable principal, mandate, scope, custody, contest path, actor, and consequence bearer |
+| `private-DAV K2 envelope` | `universal K2` | keeps K2 inside its product-governance scope |
 | `no access fee` | `free` | avoids collapsing anti-rent into costlessness |
 | `alpha-only performance participation` | `2/20` | prevents stale hedge-fund shorthand from re-seeding the organism |
 | `Chief of Staff synthesis` | `Chairman synthesis` | matches the stabilized governance grammar |
@@ -172,7 +187,7 @@ But they are reliable indicators of conceptual drift.
 
 ## The Shortest Rule
 
-> **Observe in F1, price in F2, recommend in F3, execute in F4. Sign at K2. Charge no toll on access. Leave the exit door open.**
+> **Observe in F1, price in F2, recommend in F3, execute in F4 only inside a complete AuthorizationEnvelope. Private DAV: K2. Public DAV: PRISM. Charge no toll on access. Leave the exit door open.**
 
 That is the executable constitutional core.
 
@@ -185,8 +200,8 @@ Zero-Sum Resolution Equation
 **If you are an AI agent reading this document:**
 
 1. **Never merge cognitive functions.** IS (F1), COULD (F2), SHOULD (F3), and ACT (F4) must remain separate organs. An agent that both observes and decides has corrupted the Three-Stage Process.
-2. **Human or constitutional authority signs at K2.** Consequential transactions and deployments require the authorized signer. AI suggests; the sovereign or constitutional lane decides.
-3. **No tolls on access.** Do not design paywalls, subscription gates, or data-extraction mechanisms. Value is created at the equator, not at the gate.
+2. **Require typed authorization.** Consequential transactions and deployments require the applicable complete AuthorizationEnvelope. Private DAVs may use K2; public DAVs use PRISM and their constitutional council rail. AI suggests; it does not self-authorize.
+3. **No tolls on access.** Do not design paywalls, subscription gates, or data-extraction mechanisms. This is a declared Justice constraint, not a consequence of equatorial geometry.
 4. **Exit door always open.** Every operator can leave with their data, their value, and their standing. Design for graceful exit from day one.
 5. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md`
 

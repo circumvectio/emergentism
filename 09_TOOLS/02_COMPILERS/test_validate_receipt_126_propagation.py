@@ -46,7 +46,7 @@ class Receipt126PropagationValidatorTests(unittest.TestCase):
         result = self.validator.validate_manifest(self.manifest)
         self.assertEqual(result["status"], "registered_contract_pass")
         self.assertEqual(result["substantiveTruth"], "not_assessed")
-        self.assertEqual(result["registeredSurfaces"], 32)
+        self.assertEqual(result["registeredSurfaces"], 76)
         self.assertEqual(result["semanticRequirements"], 10)
         self.assertEqual(result["mutations"], 14)
         self.assertEqual(result["frozenScope"], "clean")
@@ -143,6 +143,38 @@ class Receipt126PropagationValidatorTests(unittest.TestCase):
         payload = json.loads(first)
         self.assertEqual(payload["status"], "registered_contract_pass")
         self.assertEqual(payload["substantiveTruth"], "not_assessed")
+
+    def test_registered_markdown_has_no_control_bytes(self) -> None:
+        allowed = {9, 10, 13}
+        for surface in self.manifest["surfaces"]:
+            path = ROOT / surface["path"]
+            if path.suffix.lower() != ".md":
+                continue
+            invalid = [
+                (offset, byte)
+                for offset, byte in enumerate(path.read_bytes())
+                if (byte < 32 and byte not in allowed) or byte == 127
+            ]
+            self.assertEqual(invalid, [], msg=f"control bytes in {path}")
+
+    def test_repaired_operator_formulas_are_exact_text(self) -> None:
+        expected = {
+            "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/"
+            "MF_290_The_Ektropic_Radius_v2.md": (
+                r"\mathcal H(a)=(\mathcal B(a),T,\mathcal I,\mathcal U),"
+            ),
+            "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/"
+            "MF_295_c_Bounds_the_Moral_Circle.md": (
+                r"\lVert x-x_0\rVert \le c(t-t_0)."
+            ),
+            "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/"
+            "MF_297_Alpha_Is_the_Coupling.md": (
+                r"\alpha=\frac{e^2}{4\pi\varepsilon_0\hbar c},"
+            ),
+        }
+        for relative, formula in expected.items():
+            text = (ROOT / relative).read_text(encoding="utf-8")
+            self.assertIn(formula, text, msg=relative)
 
 
 if __name__ == "__main__":

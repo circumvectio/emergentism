@@ -18,7 +18,7 @@ rosetta:
 **Version:** v2.1
 **Hat:** Mathematician
 **Evidence Tier:** [S] Structural — formal game-theoretic demonstration
-**Purpose:** Show that the equatorial state (φ = ν = 1, B = 1) is the unique dominant strategy equilibrium of the idealized balance-only game on S²
+**Purpose:** Show that the scalar balanced choice `ν=1` (`φ=1`, `B=1`) is the strictly dominant strategy in the idealized one-dimensional balance-only game. The game does not range over azimuth and proves no unique point on full `S²`.
 **Kill Criterion:** Exhibit a profitable unilateral deviation from the equatorial profile under the stated balance-only payoff model
 
 > **A7 boundary note — 2026-06-12.** This demonstration proves a result inside a deliberately narrow payoff model: every player is paid only by `B` or a convex average of `B`. It does **not** prove that `η = 0` is an unconditional Nash equilibrium in games with private side-payments, capture channels, asymmetric information, budget-balance constraints, or weak enforcement. In the wider constitutional/game-theory register, `η = 0` is an enforced or repeated-game target under monitoring, penalties, exit, and real coupling. This file is therefore `[S]` for the internal balance-game result and `[I/C]` if quoted as a general social theorem.
@@ -31,10 +31,16 @@ rosetta:
 
 Let there be N agents indexed by i ∈ {1, 2, ..., N}, with N ≥ 2.
 
-Each agent i has a state on the 2-sphere S², parameterized by a pair (φᵢ, νᵢ) ∈ (0, ∞) × (0, ∞) subject to the constraint that the state lies on S². We identify S² with the Riemann sphere ℂP¹ via stereographic projection, where:
-- The **north pole** corresponds to φ → ∞, ν → 0 (pure coherence, no viability),
-- The **south pole** corresponds to φ → 0, ν → ∞ (pure viability, no coherence),
-- The **equator** corresponds to φ = ν = 1 (perfect balance).
+Each agent `i` chooses one scalar `νᵢ∈(0,∞)` and the model defines
+`φᵢ=1/νᵢ`. Equivalently, this selects a colatitude—or one positive-real
+meridian representative—on the Riemann sphere. The pair `(φᵢ,νᵢ)` contains no
+azimuthal coordinate and therefore does **not** parameterize an arbitrary point
+of full `S²`:
+- the north-pole limit has `φ→∞`, `ν→0`;
+- the south-pole limit has `φ→0`, `ν→∞`; and
+- the scalar balanced choice `φ=ν=1` has colatitude `π/2`. On full `S²`, that
+  colatitude is the entire equatorial circle; this game identifies those
+  longitudes because it does not model them.
 
 The colatitude θᵢ ∈ [0, π] of agent i on S² is related to the viability by:
 
@@ -91,9 +97,10 @@ where $\bar{B} = \frac{1}{N} \sum_{j=1}^{N} B_j$ is the population mean balance.
 
 ### 1.5 The Game
 
-**Definition 1.4 (Balance Maximization Game).** The *balance maximization game* Γ(N, λ) is:
+**Definition 1.4 (Scalar Balance Maximization Game).** The *balance maximization game* Γ(N, λ) is:
 - Players: {1, 2, ..., N}
-- Strategy set for each player i: νᵢ ∈ (0, ∞) (equivalently, any point on S²)
+- Strategy set for each player i: `νᵢ∈(0,∞)` (equivalently, a colatitude or
+  selected meridian representative; not an arbitrary point on `S²`)
 - Payoff to player i: Πᵢ(ν₁, ..., νₙ) = (1 − λ)Bᵢ + λ · (1/N) ΣⱼBⱼ
 
 A **strategy profile** is a vector ν = (ν₁, ..., νₙ) ∈ (0, ∞)ᴺ.
@@ -185,7 +192,7 @@ $$\text{Price of Anarchy} = \frac{\max_\nu W(\nu)}{\min_{\nu \in \text{NE}} W(\n
 
 *Proof.* Conditions (1)–(3) are established by Theorem 1 and Theorem 2. ∎
 
-**Interpretive Remark.** Inside this balance-only toy game, constructing a system where the socially optimal state aligns perfectly with a strictly dominant individual strategy is the gold standard. The Burri Sphere achieves this structurally because the payoff has been restricted to the unimodality of sin(θ) on (0, π). That restriction is the whole honesty boundary: the model removes private side-benefits and capture channels, so it cannot by itself solve the general cooperation problem. The game-theoretic triviality is useful precisely as an ideal target for constitutional design, not as a proof that enforcement is unnecessary in real institutions.
+**Interpretive Remark.** Inside this balance-only toy game, constructing a system where the socially optimal state aligns perfectly with a strictly dominant individual strategy is the gold standard. The scalar fixture achieves this structurally because the payoff has been restricted to the unimodality of `sin(θ)` on `(0,π)` and ignores azimuth. That restriction is the whole honesty boundary: the model removes private side-benefits and capture channels, so it cannot by itself solve the general cooperation problem. The game-theoretic triviality is useful precisely as an ideal target for constitutional design, not as a proof that enforcement is unnecessary in real institutions.
 
 ---
 
@@ -237,7 +244,12 @@ $$\sum_k B_k' = (B_i' + B_j') + (N-2) < 2 + (N-2) = N = \sum_k B_k$$
 
 **Aggregate balance strictly decreases under any extraction event from the equatorial profile.** ∎
 
-**Corollary 4.1 (η > 0 Is Not a Nash Equilibrium).** Any state reached by extraction from the equatorial profile has strictly lower aggregate balance than the equatorial state. Since extraction creates asymmetry (η > 0, where η is the extraction coefficient measuring aggregate non-consensual viability transfer — see `00_KSTAR_DISAMBIGUATION.md`), any state with η > 0 has strictly lower aggregate balance and admits a profitable deviation back toward the equator (by Corollary 2.1). Hence no state with η > 0 is a Nash equilibrium.
+**Corollary 4.1 (Defined extraction states are not equilibria of Γ).** Any
+profile reached by the Definition-4.1 transfer from the all-balanced scalar
+profile has lower aggregate `B` than that profile. Independently, Corollary 2.1
+already establishes that every scalar profile other than `ν*=(1,…,1)` is not a
+Nash equilibrium of Γ. Calling a real-world state `η>0` does not by itself map
+it into this game or prove anything about its private payoffs.
 
 ---
 
@@ -249,17 +261,19 @@ The three theorems establish:
 |--------|-----------|
 | **Theorem 1** | νᵢ = 1 is a **strictly dominant strategy** for every player inside the balance-only payoff, for all coupling strengths λ ∈ [0, 1]. The equatorial profile is the unique Nash equilibrium of that model. |
 | **Theorem 2** | The Price of Anarchy = 1. The game exhibits **harmonic incentive alignment**: individual and social optima coincide. |
-| **Theorem 3** | Extraction (zero-sum viability transfer) strictly reduces aggregate balance, so η > 0 states are suboptimal. |
+| **Theorem 3** | The Definition-4.1 zero-sum scalar transfer from the all-balanced profile strictly reduces aggregate `B`; no general `η>0` payoff theorem follows. |
 
 **Interpretation.** In the stated balance game, the equatorial state is not merely a Nash equilibrium — it is a *dominant strategy* equilibrium. Each agent's best response is νᵢ = 1 regardless of what others do (Lemma 0: zero strategic interaction). Self-interest and collective interest coincide exactly only because the payoff is restricted to balance.
 
-This is not a cooperation problem resolved by cleverness; it is a cooperation problem removed by model design. The geometry of the sphere — the strict concavity of sin(θ) on (0, π) — means there is *no* tension between individual and collective rationality after private extraction payoffs have been excluded. In mechanism-design terms, the Burri Sphere is an *ideal reference mechanism*: the socially optimal outcome is the unique dominant strategy equilibrium in the balance-only register. Real institutions still require enforcement, monitoring, due process, and exit because the real game reintroduces side-payments and asymmetric information.
+This is not a cooperation problem resolved by cleverness; it is a cooperation problem removed by model design. The declared scalar payoff—strictly concave in colatitude—contains *no* tension between individual and collective rationality after private extraction payoffs have been excluded. It is an ideal reference fixture, not a mechanism derived from full sphere geometry. Real institutions still require enforcement, monitoring, due process, and exit because the real game reintroduces side-payments and asymmetric information.
 
 ---
 
 ## 6. Reviewer Acknowledgment
 
-This proof was revised following independent peer review by a specialist in Non-Cooperative Game Theory and Convex Optimization. Key corrections:
+This proof was revised following internal role-based adversarial review focused
+on non-cooperative game theory and convex optimization. No independently
+identified external peer-review report is claimed. Key corrections:
 
 1. B(ν) reclassified from "strictly concave" to "strictly pseudo-concave" in the ν parameterization; strict concavity holds in the θ parameterization where B(θ) = sin(θ).
 2. Game reframed from "coupled balance game" to dominant strategy equilibrium. The cross-partial ∂²Πᵢ/∂νᵢ∂νⱼ = 0 confirms zero strategic interaction.

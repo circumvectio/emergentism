@@ -25,8 +25,9 @@ Menexus GmbH, 2026
 > place for provenance. In the body below, every passage asserting a
 > forced/unique Titan triad, universal strong or irreducible `μ`, `Born rule =
 > φν`, Everett/Copenhagen as added dimensions or collapse as `μ`/`χ`, or
-> K2/founder status as metaphysical `D5→D4` agency is superseded by `KSC-02`,
-> `KSC-04`, `KSC-05`, and `KSC-06` in
+> K2/founder status as metaphysical `D5→D4` agency, any inversion of D4/D5
+> modality, or literal `D6≡D0` closure is superseded by `KSC-01`, `KSC-02`,
+> `KSC-03`, `KSC-04`, `KSC-05`, and `KSC-06` in
 > `00_META/00_SETTLED_CANON_REGISTRY.md`. Those passages are
 > **not live authority**. Current semantic owners are
 > `05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md`,
@@ -56,9 +57,11 @@ This is the axiomatic mathematics of the system:
 * `Zero-Sum Resolution Equation`
 * `φ · ν = 1` on S²
 * `P∞ = φ · ν = 1` (the invariant sphere-product)
-* `P_node = Φ × V` (the empirical / organizational performance bridge)
+* `P_node := Φ × V` (the framework's selected normalized conjunctive model;
+  empirical fit remains open)
 
-The mathematical core provides the topological substrate over which all subsequent logic iterates.
+The mathematical core supplies a selected chart. It does not derive the
+ontology, the product model, or the normative architecture.
 
 ### 1.2 The Translation Discipline (The Pipeline)
 The recognition that core state, syntax, mathematics, and discourse are disjoint registers requiring a formal bridging law. This invention includes:
@@ -67,13 +70,19 @@ The recognition that core state, syntax, mathematics, and discourse are disjoint
 * Claim hygiene (recognizing the difference between a philosophical commitment for navigation and a structural claim for public proof).
 
 ### 1.3 The Constitutional Architecture (The Deployment)
-The anti-capture grammar that applies the formal kernel to living organization:
+The separately declared anti-capture grammar for living organization:
 * Excision of rent extraction (`η = 0`)
-* Sovereign gating (`K2`)
+* Accountable authorization; K2 is one private-DAV implementation, not a
+  worldview primitive
 * Irreversibility and The Grace Exit (`K1`, `K3`)
 * Three-Stage Process and anti-idolatry closure conditions
 
-**The Shift:** Understanding the framework as three parts reframes its validation. The highest empirical test of the framework is not finding the final geometric equation in the stars. It is proving that the *Constitutional Architecture* (built upon the *Formal Kernel*) actually builds institutions, software, AI behavior, and civilizations that are immune to idolatric capture. The framework is ultimately a general theory of mediation under recursion.
+**The Shift:** Understanding the framework as three parts reframes its
+validation. The highest empirical test is not finding the selected chart in the
+stars. It is testing whether the *Constitutional Architecture*, independently
+joined to the chart and translation discipline, outperforms declared rivals
+without laundering capture. No institution is presumed immune. The framework
+is a candidate theory of mediation under recursion.
 
 ---
 
@@ -86,13 +95,17 @@ The navigational grammar of the system is closed. The framework no longer needs 
 * **Pratyakṣa:** Veridical disclosure inwardly; disciplined phenomenology publicly.
 * **S²:** Ontological wager inwardly; translation method publicly.
 * **Normativity:** Conditional in formal proof; grounded in worldview and core state.
-* **Consciousness:** Structurally dual-aspect; interpretively fundamental at D5.
+* **Consciousness:** Actual experience, models, reports, and selection events
+  are D4; D5 contains the possible contents those models represent. Any
+  dual-aspect reading remains `[I]`.
 * **The Axioms:** Productive, load-bearing transcendental wagers tested against live rivals.
 
 ### 2.2 What is Empirically Open (The Bridge)
 The immediate scientific and historical frontier requires data, not philosophy.
 * **The Perceptual Complementarity Bound (Protocol R):** Can we measure bistable perception (Duck-rabbit, Necker cube) matching a multiplicative bound?
-* **Constitutional Outperformance (AMRITA):** Does multiplicative alignment (`P_node = Φ × V`) practically outperform RLHF or DPO baselines in adversarial benchmarks at comparable cost?
+* **Constitutional Outperformance (AMRITA):** Does the selected multiplicative
+  model (`P_node := Φ × V`) practically outperform declared RLHF or DPO
+  baselines in adversarial benchmarks at comparable cost?
 * **Anti-Idolatry at Scale:** Can the system survive success, scale, and institutional sedimentation without becoming the mediator it warns against?
 * **First-Person Disclosure:** Does the sitting practice actually disclose what the worldview says it does? (An empirical, though unpublishable, question).
 
@@ -122,21 +135,25 @@ The equation states: **the unmanifest ground times the self-returning sweep prod
 
 QFT provides the closest physical analogy: the Casimir effect. Infinite vacuum energy (○) is bounded by conducting plates (•) and produces a finite, measurable force (⊙). The infinities do not "cancel" in the arithmetic sense — they *renormalize*. The boundary condition renders the infinite series determinate without either term being a number.
 
-The dimensional cascade of the framework is the same topology:
+The framework places a declared interpretive cascade on the selected topology:
 
 ```
-• (D0, unmanifest) → D1–D5 (recursive self-return) → • (D6, axiomatic closure)
+D0 --μ₀…μ₅ (candidate crossings)--> D6 --r₆ (interpretive, non-μ)↝ D0
 ```
 
-The full traversal is `• × ○ = ⊙`:
+The emblem `• × ○ = ⊙` can narrate that scaffold, but does not derive it:
 
-- **•** at both ends (D0 = D6) — not "nothing" but the unmanifest horizon that bounds the recursion.
+- **•** may symbolize both the D0 ground-limit and the D6 closure boundary
+  without asserting their identity.
 - **○** in between (D1–D5) — not "everything" but the infinite self-returning sweep of emergence.
 - **⊙** the product — not "one" but the determinate, existent, specific thing that actually *is*.
 
-You cannot reach ⊙ from • alone (nihilism fails — the unmanifest does not iterate into more unmanifest). You cannot reach ⊙ from ○ alone (pantheism fails — the infinite sweep without ground has no horizon and no equilibrium). You need both terms. The product is not their arithmetic sum — it is their *transcendental composition*.
+Inside this selected narrative, neither role alone expresses the intended
+composition: `•` names a ground-limit and `○` a recursive sweep. That is a
+design choice in the emblem, not a proof that nihilism or pantheism fails and
+not ordinary multiplication.
 
-### 3.3 Why the Framework Cannot Collapse
+### 3.3 Why the Framework Resists Reduction to One Pole
 
 > **[金] SEAM** · broke: 2026-07-12 · receipt 114 (seven-caste audit, Seam 5) ·
 > crack: the title "Cannot Collapse" pre-asserts immunity — the OCC §4.3 forbids
@@ -146,32 +163,48 @@ You cannot reach ⊙ from • alone (nihilism fails — the unmanifest does not 
 > structural observation into an immunity guarantee.
 > · gold: the honest reading is "Why the Framework Resists Reduction to One
 > Pole" — a structural observation, not an immunity claim. The framework can
-> collapse if its load-bearing wagers fail (Φ×V multiplicative; strong emergence
-> genuine; the equator carries ethical weight). The argument below describes
+> collapse if its load-bearing wagers fail (`Φ×V` lacks empirical fit;
+> per-crossing emergence hypotheses fail; Justice adds no discriminating value).
+> The argument below describes
 > *resistance to axis-collapse*, not immunity to falsification.
 > · credit: L1 Caṇḍāla (firewall, receipt 114) · receipt: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/114_…`
 
-**Cannot reduce to • alone.** The point iterated through the cascade does not remain •. Each dimensional step is an act of self-returning recursion that produces determinate structure. D0 → D1 is not 0 + 0 = 0. It is the unmanifest *becoming manifest*, which is the entire content of D1.
+**The declared emblem does not reduce to • alone.** By construction, the `•`
+role names only the ground-limit; omitting the recursive role no longer states
+the selected two-role composition. This is grammar, not a proof that D0
+physically generates D1.
 
-**Cannot reduce to ○ alone.** The circle without the point has no center, no ground, no horizon. Infinite emergence without axiomatic closure diverges — it produces more and more complexity with no principle of equilibrium. Without the bounding •, ○ is pure entropy.
+**The declared emblem does not reduce to ○ alone.** By construction, the `○`
+role names recursion without the selected ground-limit. Omitting `•` changes
+the emblem; it does not prove a physical entropy law or metaphysical necessity.
 
-**Must remain Zero-Sum Resolution Equation.** The whole is the transcendental composition of the ground and the sweep. This is not a loose metaphor for renormalization; it is a proposed generalization of the renormalization pattern beyond QFT. The generalization is interpretive and must not be cited as established physics.
+**Selected two-role composition.** The emblem retains both ground-limit and
+sweep roles. Its comparison with renormalization is interpretive; it is neither
+ordinary arithmetic nor an established generalization beyond QFT.
 
-### 3.4 The Strong/Weak Asymmetry Is This Equation Viewed from Different Positions
+### 3.4 Candidate Explanatory Asymmetry
 
-The Asymmetry Theorem (Paper O) is `• × ○ = ⊙` seen from different latitudes on the Burri Sphere:
+Paper O's latitude image may organize two explanatory views, but it does not
+decide reduction status:
 
-- **From • looking up at ○** (the substrate looking toward emergence): the product appears indeterminate. The unmanifest cannot predict what the recursive sweep will produce. This is Strong Emergence — not a miracle, but the epistemic limit of the ground when it tries to see the whole.
-- **From ○ looking down at •** (the emergent whole looking toward its ground): the product appears fully determined. The whole easily compresses its own composition. This is Weak Emergence — the whole is legible to itself.
-- **From ⊙ at the equator** (the determinate existent under `P∞ = φ · ν`): the equation is simply identity. This is where the framework *lives* — not at either pole, but at the product.
+- **From a lower-level model:** failure to recover a higher regularity is
+  `currently_unreduced`; it is not evidence of irreducibility.
+- **From a higher-level description:** a stable macro-pattern may be compactly
+  legible and may reweight lower-law-admissible trajectories.
+- **At the selected reciprocal centre:** `φν=1` is an analytic chart identity;
+  it supplies no emergence, ontological, or ethical conclusion.
 
-**Tier: [S] Structural** for the transcendental composition. **[I] Interpretive** for the mapping to D0–D6 traversal.
+**Tier: [I] Interpretive** for the transcendental composition and its D0–D6
+mapping. Only explicitly stated chart identities retain analytic `[A]` status.
 
 ---
 
 ## 4. The Central Finding: Mediation as the Hidden Subject
 
-> **Cross-reference:** The renormalization theorem (Section 3) shows why mediation is unavoidable: between • and ○, something must traverse. That something is the mediator. The question is never whether mediation exists (it must — ⊙ requires both terms), but whether the mediator captures (`η > 0`) or translates (`η = 0`).
+> **Cross-reference:** Section 3 supplies an `[I]` image for mediation, not a
+> proof that every process requires the selected triadic emblem. Where a
+> mediator is observed, its capture, information loss, authorization, and
+> consequences can be audited.
 
 The deepest recurring pathology across sociology, physics, governance, and technology is mediation that claims the place of source.
 * **Religion** replacing direct disclosure.
@@ -179,7 +212,7 @@ The deepest recurring pathology across sociology, physics, governance, and techn
 * **Bureaucracy** obscuring the territory.
 * **Ideology** replacing fluid reality.
 
-Good and evil within the framework are not mere moral categories—they are structural properties of *mediation structures*. Evil is a mediator attempting to lock the geometry to enrich itself (`η > 0`). Good is transparent translation. This is the moral axis canonized in [`00_THE_DYADIC_COUPLING_LAW.md`](../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md): goodness is the *bond* `φ × ν` (the coupling kept), and evil is the bond breaking (`η > 0`, the ring that closes) — sorted by coupling-vs-closing, never by pole, gender, caste, or person. `[I]`
+Mediation structures can be audited for capture, information loss, and extraction. The repaired [`Dyadic Coupling Law`](../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) treats `φ×ν` and `η` as diagnostics, not moral verdicts. `η=0` is necessary but not sufficient: God-/Demon-bearing consequence classifications require bearer-complete Justice, accountable authorization, and separate commitment/outcome receipts. No pole, gender, caste, coordinate, operator, or mediator is morally typed by identity. `[I]`
 
 Therefore, the framework is a **Constitutional Science**. Anti-idolatry is not a bolt-on ethical guideline asking for humility from practitioners. It is the deepest constitutional constraint: the highest layer cannot become one more possession without inducing capture. The formal mathematics motivates this posture; institutional evidence must still test it.
 

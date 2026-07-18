@@ -521,6 +521,581 @@
       "forbiddenPatterns": [
         "(?i)every broken proof rescues the original claim unchanged"
       ]
+    },
+    {
+      "id": "five-plus-one-accountability",
+      "category": "front_door",
+      "path": "00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md",
+      "requiredMarkers": [
+        "typed `AuthorizationEnvelope`",
+        "sufficient extraction diagnostic",
+        "K2 survives only as one private-DAV implementation"
+      ],
+      "forbiddenPatterns": [
+        "(?i)K2 is (?:the )?universal (?:source|primitive|requirement) of (?:agency|ethics|action)"
+      ]
+    },
+    {
+      "id": "d-scaffold-bridge",
+      "category": "front_door",
+      "path": "00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md",
+      "requiredMarkers": [
+        "`r₆:D6↝D0` is the Dimensional Framework's interpretive return edge.",
+        "D names selected structural / phenomenological registers.",
+        "has an analogue, not an identity"
+      ],
+      "forbiddenPatterns": [
+        "(?i)D6\\s*(?:=|≡)\\s*D0.{0,50}(?:literal|theorem|identity)"
+      ]
+    },
+    {
+      "id": "novelty-boundary",
+      "category": "front_door",
+      "path": "00_META/00_WHAT_IS_ACTUALLY_NOVEL_HERE.md",
+      "requiredMarkers": [
+        "`P_node:=ΦV` is selected, not uniquely derived.",
+        "accountable, contestable authorization",
+        "This is a candidate research grammar, not a universal D-stack."
+      ],
+      "forbiddenPatterns": [
+        "(?i)Emergentism uniquely derives all sciences from the reciprocal chart"
+      ]
+    },
+    {
+      "id": "seven-axioms-repair",
+      "category": "owner",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md",
+      "requiredMarkers": [
+        "not a necessary decomposition of nature",
+        "conjunctive family `C(Φ,V)`",
+        "There is no literal `D6≡D0`, no `μ₆`"
+      ],
+      "forbiddenPatterns": [
+        "(?i)the sphere (?:forces|proves|requires) exactly seven (?:levels|dimensions|operators)"
+      ]
+    },
+    {
+      "id": "extraction-diagnostic-owner",
+      "category": "owner",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/12_EFR_EXTRACTION_COEFFICIENT.md",
+      "requiredMarkers": [
+        "η — extraction and boundedness diagnostic; Justice remains separate",
+        "for strict Justice—not a sufficient verdict",
+        "Justice is a separate type"
+      ],
+      "forbiddenPatterns": [
+        "(?i)η\\s*=\\s*0.{0,60}(?:alone|therefore).{0,40}(?:moral|ethical|good|just)"
+      ]
+    },
+    {
+      "id": "power-max-demonstration-boundary",
+      "category": "derived",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/22_POWER_MAX_DEMONSTRATION.md",
+      "requiredMarkers": [
+        "The game does not range over azimuth",
+        "does **not** prove that `η = 0` is an unconditional Nash equilibrium",
+        "an ideal reference fixture, not a mechanism derived from full sphere geometry"
+      ],
+      "forbiddenPatterns": [
+        "(?i)the balance game proves every extractor irrational in every real game"
+      ]
+    },
+    {
+      "id": "geometric-exclusion-boundary",
+      "category": "derived",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/24_GEOMETRIC_EXCLUSION_CONVERGENCE.md",
+      "requiredMarkers": [
+        "This document proves a balance-payoff result at equatorial profiles.",
+        "It does **not** prove that extraction is irrational in every real game",
+        "bearer-complete Justice"
+      ],
+      "forbiddenPatterns": [
+        "(?i)geometry (?:makes|proves) extraction impossible"
+      ]
+    },
+    {
+      "id": "steel-thread-repair",
+      "category": "derived",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/25_STEEL_THREAD.md",
+      "requiredMarkers": [
+        "It proves only the selected chart inequality",
+        "a separately enforced Justice boundary",
+        "a metaphysical commitment"
+      ],
+      "forbiddenPatterns": [
+        "(?i)AM-GM (?:proves|derives) objective ethics"
+      ]
+    },
+    {
+      "id": "falsifiers-owner-repair",
+      "category": "owner",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/31_FALSIFIERS_INDEX.md",
+      "requiredMarkers": [
+        "SUPERSEDED IN PLACE — legacy index is not live falsifier authority",
+        "Use the kill criterion attached to each current owner:",
+        "The candidate fails when the shared trace does not persist through carrier"
+      ],
+      "forbiddenPatterns": [
+        "(?i)no known reduction is itself proof of strong emergence"
+      ]
+    },
+    {
+      "id": "eta-zero-game-boundary",
+      "category": "derived",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/33_NASH_EQUILIBRIUM_ETA_ZERO.md",
+      "requiredMarkers": [
+        "not independently create an incentive or enforcement mechanism",
+        "`η=0` is a necessary non-extraction fence",
+        "not even a local best response"
+      ],
+      "forbiddenPatterns": [
+        "(?i)η\\s*=\\s*0 is an unconditional Nash equilibrium"
+      ]
+    },
+    {
+      "id": "emergentism-synthesis-boundary",
+      "category": "front_door",
+      "path": "05_COSMOLOGY/00_EMERGENTISM.md",
+      "requiredMarkers": [
+        "[金] Current formula contract",
+        "D5 does not select, act, or equal consciousness.",
+        "no chart identity proves the worldview"
+      ],
+      "forbiddenPatterns": [
+        "(?i)S² is the unique manifold.{0,50}the system falls"
+      ]
+    },
+    {
+      "id": "weltanschauung-synthesis-boundary",
+      "category": "front_door",
+      "path": "05_COSMOLOGY/00_EMERGENTISM_AS_WELTANSCHAUUNG.md",
+      "requiredMarkers": [
+        "a declared Justice-bearing compass",
+        "no ethical verdict",
+        "selected finite-node score"
+      ],
+      "forbiddenPatterns": [
+        "(?i)geometry alone (?:proves|supplies) Justice"
+      ]
+    },
+    {
+      "id": "seven-layer-scaffold",
+      "category": "derived",
+      "path": "05_COSMOLOGY/00_THE_SEVEN_LAYER_ONTOLOGY.md",
+      "requiredMarkers": [
+        "not a necessary decomposition of nature",
+        "**D5** | Counterfactual possibility",
+        "D4 agents compare D5 contents under Justice"
+      ],
+      "forbiddenPatterns": [
+        "(?i)D5\\s*\\|\\s*(?:actual|agent|selection)"
+      ]
+    },
+    {
+      "id": "triadic-cascade-boundary",
+      "category": "derived",
+      "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/09_THE_TRIADIC_CASCADE.md",
+      "requiredMarkers": [
+        "selected triadic lens, not a uniqueness theorem",
+        "Geometry neither proves nor suffices for Justice.",
+        "cross-domain recurrence is not derived, unique, or forced"
+      ],
+      "forbiddenPatterns": [
+        "(?i)the three transcendentals are mathematically forced by the Titans"
+      ]
+    },
+    {
+      "id": "glossary-current-types",
+      "category": "front_door",
+      "path": "07_THEOLOGY/00_GLOSSARY.md",
+      "requiredMarkers": [
+        "The option cone is not the physical light cone",
+        "selected normalized product member of the monotone conjunctive family",
+        "proves no ontology, ethic, empirical conservation law, or finite-node model"
+      ],
+      "forbiddenPatterns": [
+        "(?i)D5 (?:chooses|acts|executes|commits)"
+      ]
+    },
+    {
+      "id": "is-ought-repair",
+      "category": "derived",
+      "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_10_IS_OUGHT.md",
+      "requiredMarkers": [
+        "Justice is an explicit normative postulate",
+        "Justice defines the admissible field; Power-Max chooses within it.",
+        "Aggregate gain cannot launder an omitted or destroyed bearer."
+      ],
+      "forbiddenPatterns": [
+        "(?i)the reciprocal chart closes Hume's gap by proof"
+      ]
+    },
+    {
+      "id": "commandment-geometry-repair",
+      "category": "owner",
+      "path": "04_AXIOLOGY/00_COMMANDMENT_VS_GEOMETRY.md",
+      "requiredMarkers": [
+        "geometry permits extraction; Justice governs",
+        "Geometry permits the extractive state",
+        "A prohibition is not weak"
+      ],
+      "forbiddenPatterns": [
+        "(?i)geometry physically forbids all extraction"
+      ]
+    },
+    {
+      "id": "landauer-program-type-boundary",
+      "category": "derived",
+      "path": "03_METHODOLOGY/02_THE_PAPERS/D5_LANDAUER_BARRIER_PROGRAM/README.md",
+      "requiredMarkers": [
+        "[金] Program-wide type repair",
+        "selection, action, and physical cost are D4.",
+        "D5 contains the merely possible"
+      ],
+      "forbiddenPatterns": [
+        "(?i)D5 is the physical selector that performs the computation"
+      ]
+    },
+    {
+      "id": "c-suite-authorization-boundary",
+      "category": "derived",
+      "path": "08_FRAMEWORK_SUPPORT/08_AGENTS/00_C_SUITE/README.md",
+      "requiredMarkers": [
+        "a consequential act requires a valid, receipted `AuthorizationEnvelope`",
+        "K2 implements this for private DAVs",
+        "PRISM plus public-governance receipts"
+      ],
+      "forbiddenPatterns": [
+        "(?i)K2 is required for every public DAV action"
+      ]
+    },
+    {
+      "id": "ektropic-radius-boundary",
+      "category": "derived",
+      "path": "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_290_The_Ektropic_Radius_v2.md",
+      "requiredMarkers": [
+        "radius is a diagnostic, not the ethic",
+        "Its superseded claims are **not live value authority**.",
+        "The following quantities are not interchangeable:"
+      ],
+      "forbiddenPatterns": [
+        "(?i)ΣΔP_node is a sufficient ethical verdict"
+      ]
+    },
+    {
+      "id": "moral-circle-causal-boundary",
+      "category": "derived",
+      "path": "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_295_c_Bounds_the_Moral_Circle.md",
+      "requiredMarkers": [
+        "physical cones bound signals, not moral worth",
+        "Moral standing is not limited to what the actor noticed.",
+        "bearer-complete Justice"
+      ],
+      "forbiddenPatterns": [
+        "(?i)an agent's physical light cone expands beyond c"
+      ]
+    },
+    {
+      "id": "alpha-coupling-boundary",
+      "category": "derived",
+      "path": "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_297_Alpha_Is_the_Coupling.md",
+      "requiredMarkers": [
+        "removable; no D4/D5 physics claim",
+        "Grand-unification scenarios are model-dependent",
+        "D5 contains merely possible counterfactual content"
+      ],
+      "forbiddenPatterns": [
+        "(?i)α proves D5 consciousness"
+      ]
+    },
+    {
+      "id": "theseus-repair",
+      "category": "derived",
+      "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_06_THE_SHIP_OF_THESEUS.md",
+      "requiredMarkers": [
+        "operational Egregoreotype test",
+        "D5 does not carry identity or act.",
+        "does not imply consciousness, personhood, or metaphysical"
+      ],
+      "forbiddenPatterns": [
+        "(?i)identity is exactly η"
+      ]
+    },
+    {
+      "id": "hard-problem-boundary",
+      "category": "derived",
+      "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_13_HARD_PROBLEM.md",
+      "requiredMarkers": [
+        "paradox not claimed solved",
+        "open explanatory gap",
+        "present D4 state and model -> represented D5 alternatives"
+      ],
+      "forbiddenPatterns": [
+        "(?i)the hard problem is solved by D5"
+      ]
+    },
+    {
+      "id": "meaning-repair",
+      "category": "derived",
+      "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_16_MEANING_OF_LIFE.md",
+      "requiredMarkers": [
+        "purpose does not prove a cosmic telos.",
+        "Meaning is modeled as an actual, revisable orientation relation",
+        "All modeling, attention, valuation, and lived experience are D4 actual"
+      ],
+      "forbiddenPatterns": [
+        "(?i)D5 creates meaning as a substance"
+      ]
+    },
+    {
+      "id": "kstar-notation-repair",
+      "category": "owner",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/00_KSTAR_DISAMBIGUATION.md",
+      "requiredMarkers": [
+        "Bare `η` names a **family** of extraction diagnostics.",
+        "necessary but not sufficient for Justice",
+        "`η>0` does not by itself prove"
+      ],
+      "forbiddenPatterns": [
+        "(?i)η=0 alone proves morality"
+      ]
+    },
+    {
+      "id": "ring-ground-boundary",
+      "category": "derived",
+      "path": "06_ONTOLOGY/00_THE_RING_THAT_IS_THE_GROUND.md",
+      "requiredMarkers": [
+        "The ring is NOT the Ground",
+        "not exhaust every action available in nature.",
+        "classify receipted consequences"
+      ],
+      "forbiddenPatterns": [
+        "(?i)the seven exhaust every action in nature"
+      ]
+    },
+    {
+      "id": "seven-actions-boundary",
+      "category": "derived",
+      "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+      "requiredMarkers": [
+        "selected `4+3` grammar",
+        "possible actions and modeled futures; commitment and performed action are D4.",
+        "K2 below is private-DAV-only"
+      ],
+      "forbiddenPatterns": [
+        "(?i)an eighth action is impossible in reality"
+      ]
+    },
+    {
+      "id": "d-level-studies-types",
+      "category": "front_door",
+      "path": "00_META/00_D_LEVEL_STUDIES.md",
+      "requiredMarkers": [
+        "superseded by `KSC-01`",
+        "D4 contains causal actuality",
+        "D5 contains the counterfactual contents",
+        "`r₆:D6↝D0`"
+      ],
+      "forbiddenPatterns": [
+        "(?i)D5 (?:agents?|itself) (?:acts|chooses|selects|commits)"
+      ]
+    },
+    {
+      "id": "ontology-index-types",
+      "category": "front_door",
+      "path": "05_COSMOLOGY/00_THE_ONTOLOGY_INDEX.md",
+      "requiredMarkers": [
+        "selected **chart kernel**",
+        "They do not generate the",
+        "D4 is causal actuality"
+      ],
+      "forbiddenPatterns": [
+        "(?i)the five lines generate the entire ontology"
+      ]
+    },
+    {
+      "id": "ontology-across-dimensions-types",
+      "category": "derived",
+      "path": "06_ONTOLOGY/00_ONTOLOGY_ACROSS_DIMENSIONS.md",
+      "requiredMarkers": [
+        "D4 is causal actuality",
+        "D5 is merely-possible content",
+        "controlling `KSC-01` D4/D5 type seam and `KSC-03`"
+      ],
+      "forbiddenPatterns": [
+        "(?i)D5 is the actual modeler or selector"
+      ]
+    },
+    {
+      "id": "mind-body-type-repair",
+      "category": "derived",
+      "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_14_MIND_BODY.md",
+      "requiredMarkers": [
+        "consciousness remains an open empirical and",
+        "D4 is actual embodied process",
+        "D5 is modeled possibility and cannot"
+      ],
+      "forbiddenPatterns": [
+        "(?i)D5 is the enacted conscious agent"
+      ]
+    },
+    {
+      "id": "known-unknowns-authority-seam",
+      "category": "derived",
+      "path": "03_METHODOLOGY/02_THE_PAPERS/PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md",
+      "requiredMarkers": [
+        "superseded by `KSC-01`",
+        "framework's selected normalized conjunctive model",
+        "r₆ (interpretive, non-μ)"
+      ],
+      "forbiddenPatterns": [
+        "(?i)P_node.{0,40}axiomatic mathematics"
+      ]
+    },
+    {
+      "id": "theurgy-type-boundary",
+      "category": "derived",
+      "path": "04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md",
+      "requiredMarkers": [
+        "D4 Operational Discipline for D5 Possibility Contents",
+        "Every",
+        "They do not name a fifth physical force or a D5 agent."
+      ],
+      "forbiddenPatterns": [
+        "(?i)F5 is a fifth physical force that selects actions"
+      ]
+    },
+    {
+      "id": "rosetta-index-proof-boundary",
+      "category": "derived",
+      "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D23_ROSETTA_COMPLETE_INDEX.md",
+      "requiredMarkers": [
+        "comparison is not verification",
+        "cannot transfer proof",
+        "D4 is causal actuality and record; D5 is"
+      ],
+      "forbiddenPatterns": [
+        "(?i)a Rosetta mapping verifies the framework physically"
+      ]
+    },
+    {
+      "id": "rosetta-torus-proof-boundary",
+      "category": "derived",
+      "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D15_ROSETTA_R6_TORUS.md",
+      "requiredMarkers": [
+        "the torus is a model, not a receipt",
+        "standard geometry below remains `[A]`",
+        "`r₆:D6↝D0`"
+      ],
+      "forbiddenPatterns": [
+        "(?i)the torus geometry proves consciousness has a physical location"
+      ]
+    },
+    {
+      "id": "suda-proof-transfer-boundary",
+      "category": "derived",
+      "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_SUDA_VALUE_EXTRACTION_DEEP_SYNTHESIS.md",
+      "requiredMarkers": [
+        "algebra does not carry doctrine",
+        "bearer-complete Justice is a separately declared",
+        "D6 returns through `r₆:D6↝D0`"
+      ],
+      "forbiddenPatterns": [
+        "(?i)Suda's algebra proves Emergentist ethics"
+      ]
+    },
+    {
+      "id": "failed-mappings-seven-boundary",
+      "category": "recovery",
+      "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/09_FAILED_MAPPINGS_2026_04_25.md",
+      "requiredMarkers": [
+        "Seven is a selected resolution, not an exhaustive law of",
+        "three Titan frames are separately selected boundary",
+        "Universal 7-stage structure | **KILLED**"
+      ],
+      "forbiddenPatterns": [
+        "(?i)4\\+3 exhaustiveness.{0,20}HOLDS"
+      ]
+    },
+    {
+      "id": "whole-equation-boundary",
+      "category": "front_door",
+      "path": "05_COSMOLOGY/00_WHOLE/01_THE_EQUATION.md",
+      "requiredMarkers": [
+        "model, chart, and norm are distinct",
+        "framework's selected normalized product",
+        "typed `AuthorizationEnvelope`"
+      ],
+      "forbiddenPatterns": [
+        "(?i)the product equation derives Justice"
+      ]
+    },
+    {
+      "id": "whole-constitution-boundary",
+      "category": "front_door",
+      "path": "05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md",
+      "requiredMarkers": [
+        "generic constitution, scoped K2",
+        "complete `AuthorizationEnvelope`",
+        "automatically evil, and `η=0` is necessary but insufficient for Justice"
+      ],
+      "forbiddenPatterns": [
+        "(?i)K2 is the universal constitutional sovereign"
+      ]
+    },
+    {
+      "id": "transcendentals-justice-boundary",
+      "category": "owner",
+      "path": "04_AXIOLOGY/02_VALUE_THEORY/01_TRANSCENDENTALS.md",
+      "requiredMarkers": [
+        "declared value commitments, not consequences of the geometry",
+        "bearer-complete admissibility envelope",
+        "complete Justice supplies the normative"
+      ],
+      "forbiddenPatterns": [
+        "(?i)the equator mathematically derives Justice"
+      ]
+    },
+    {
+      "id": "titan-composition-boundary",
+      "category": "derived",
+      "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md",
+      "requiredMarkers": [
+        "Kintsugi proof-transfer seam",
+        "That dynamical classification has no moral sign.",
+        "bearer-complete Justice are separate constructs"
+      ],
+      "forbiddenPatterns": [
+        "(?i)PSL\\(2,.{0,20}derives the equator ethic"
+      ]
+    },
+    {
+      "id": "samudra-consequence-boundary",
+      "category": "derived",
+      "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/27_THE_SAMUDRA_MANTHAN.md",
+      "requiredMarkers": [
+        "collective-potential-maxing",
+        "ego-potential-maxing",
+        "bearer-complete",
+        "myth supplies no proof of a"
+      ],
+      "forbiddenPatterns": [
+        "(?i)the myth proves a physical force or universal history"
+      ]
+    },
+    {
+      "id": "bounded-game-enumeration",
+      "category": "derived",
+      "path": "05_COSMOLOGY/00_THE_EXHAUSTION_OF_THE_GAME.md",
+      "requiredMarkers": [
+        "conditional exhaustion",
+        "not an exhaustive ontology",
+        "four labeled transfers",
+        "three selected"
+      ],
+      "forbiddenPatterns": [
+        "(?i)no eighth operator can exist in nature"
+      ]
     }
   ],
   "semanticRequirements": [
@@ -529,7 +1104,22 @@
       "surfaceIds": [
         "register-type-owner",
         "d4-d5-owner",
-        "compass-front-door"
+        "compass-front-door",
+        "d-scaffold-bridge",
+        "seven-layer-scaffold",
+        "glossary-current-types",
+        "landauer-program-type-boundary",
+        "theseus-repair",
+        "meaning-repair",
+        "d-level-studies-types",
+        "ontology-index-types",
+        "ontology-across-dimensions-types",
+        "mind-body-type-repair",
+        "known-unknowns-authority-seam",
+        "theurgy-type-boundary",
+        "rosetta-index-proof-boundary",
+        "rosetta-torus-proof-boundary",
+        "whole-equation-boundary"
       ]
     },
     {
@@ -537,7 +1127,16 @@
       "surfaceIds": [
         "register-type-owner",
         "mu-crossing-owner",
-        "closure-owner"
+        "closure-owner",
+        "d-scaffold-bridge",
+        "seven-axioms-repair",
+        "seven-layer-scaffold",
+        "d-level-studies-types",
+        "ontology-index-types",
+        "ontology-across-dimensions-types",
+        "known-unknowns-authority-seam",
+        "rosetta-torus-proof-boundary",
+        "suda-proof-transfer-boundary"
       ]
     },
     {
@@ -545,7 +1144,15 @@
       "surfaceIds": [
         "titan-owner",
         "asi-trinity-derived",
-        "coherent-geometry-front-door"
+        "coherent-geometry-front-door",
+        "seven-axioms-repair",
+        "triadic-cascade-boundary",
+        "ring-ground-boundary",
+        "seven-actions-boundary",
+        "failed-mappings-seven-boundary",
+        "whole-constitution-boundary",
+        "titan-composition-boundary",
+        "bounded-game-enumeration"
       ]
     },
     {
@@ -553,7 +1160,15 @@
       "surfaceIds": [
         "canonical-formula-owner",
         "power-max-owner",
-        "positive-kernel-front-door"
+        "positive-kernel-front-door",
+        "novelty-boundary",
+        "seven-axioms-repair",
+        "glossary-current-types",
+        "steel-thread-repair",
+        "ontology-index-types",
+        "ontology-across-dimensions-types",
+        "known-unknowns-authority-seam",
+        "whole-equation-boundary"
       ]
     },
     {
@@ -561,7 +1176,9 @@
       "surfaceIds": [
         "quantum-boundary-owner",
         "burri-rulebook-owner",
-        "money-born-derived"
+        "money-born-derived",
+        "alpha-coupling-boundary",
+        "landauer-program-type-boundary"
       ]
     },
     {
@@ -569,7 +1186,24 @@
       "surfaceIds": [
         "justice-owner",
         "power-max-owner",
-        "core-concepts-front-door"
+        "core-concepts-front-door",
+        "five-plus-one-accountability",
+        "extraction-diagnostic-owner",
+        "power-max-demonstration-boundary",
+        "geometric-exclusion-boundary",
+        "eta-zero-game-boundary",
+        "is-ought-repair",
+        "commandment-geometry-repair",
+        "ektropic-radius-boundary",
+        "moral-circle-causal-boundary",
+        "kstar-notation-repair",
+        "rosetta-index-proof-boundary",
+        "suda-proof-transfer-boundary",
+        "whole-equation-boundary",
+        "whole-constitution-boundary",
+        "transcendentals-justice-boundary",
+        "titan-composition-boundary",
+        "samudra-consequence-boundary"
       ]
     },
     {
@@ -577,7 +1211,15 @@
       "surfaceIds": [
         "register-type-owner",
         "justice-owner",
-        "release-doctrine-front-door"
+        "release-doctrine-front-door",
+        "five-plus-one-accountability",
+        "novelty-boundary",
+        "c-suite-authorization-boundary",
+        "is-ought-repair",
+        "suda-proof-transfer-boundary",
+        "whole-equation-boundary",
+        "whole-constitution-boundary",
+        "samudra-consequence-boundary"
       ]
     },
     {
@@ -585,7 +1227,9 @@
       "surfaceIds": [
         "egregoreotype-owner",
         "positive-kernel-front-door",
-        "seed-front-door"
+        "seed-front-door",
+        "falsifiers-owner-repair",
+        "theseus-repair"
       ]
     },
     {
@@ -595,7 +1239,15 @@
         "positive-kernel-front-door",
         "honesty-position-front-door",
         "positive-result-recovery-ledger",
-        "broken-66-second-look"
+        "broken-66-second-look",
+        "novelty-boundary",
+        "emergentism-synthesis-boundary",
+        "weltanschauung-synthesis-boundary",
+        "hard-problem-boundary",
+        "meaning-repair",
+        "mind-body-type-repair",
+        "theurgy-type-boundary",
+        "failed-mappings-seven-boundary"
       ]
     },
     {
@@ -603,7 +1255,16 @@
       "surfaceIds": [
         "rosetta-algebra-boundary",
         "rosetta-split-adjudication",
-        "positive-kernel-front-door"
+        "positive-kernel-front-door",
+        "triadic-cascade-boundary",
+        "seven-actions-boundary",
+        "ring-ground-boundary",
+        "rosetta-index-proof-boundary",
+        "rosetta-torus-proof-boundary",
+        "suda-proof-transfer-boundary",
+        "failed-mappings-seven-boundary",
+        "titan-composition-boundary",
+        "bounded-game-enumeration"
       ]
     }
   ],

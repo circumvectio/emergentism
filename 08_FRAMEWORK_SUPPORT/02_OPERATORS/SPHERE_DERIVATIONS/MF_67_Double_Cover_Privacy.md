@@ -28,6 +28,16 @@ rosetta:
 **Evidence Tier:** [A] for group theory and double cover, [I] for Bloch sphere mapping, [S] for privacy/subjectivity identification
 **Dependencies:** S0, MF-35 (The Private Dimension), MF-42 (Genus Change), MF-44 (Tat Tvam Asi = Riemann = Bloch), MF-64 (Berry Phase)
 
+> **[金] Kintsugi authority seam — 2026-07-19.** `SU(2)` double-covers
+> `SO(3)`, normalized qubit vectors form `S³`, and quotienting global phase gives
+> the Bloch sphere `S²` `[A]`. These are distinct maps: the kernel `{±I}` of
+> `SU(2)→SO(3)` is not the `S¹` Hopf fiber, and global phase labels the same
+> physical ray rather than two private experiences. Interference detects
+> relative phase, not an isolated global phase. Privacy, consciousness,
+> D4/D5, replicator, and contemplative readings are removable `[C]`; no
+> geometric privacy theorem is established. D4 contains actual states,
+> models, measurements, and reports; D5 contains represented possible content.
+
 ---
 
 ## ABSTRACT
@@ -36,7 +46,9 @@ The rotation group of three-dimensional space is SO(3). The rotation group of th
 
 A 360° rotation in SO(3) returns every physical object to its original state. A 360° rotation in SU(2) produces a sign flip: |ψ⟩ → −|ψ⟩. You need 720° to return to true identity. This is not abstract mathematics — it is experimentally verified in neutron interferometry (the Rauch experiment, 1975). Fermions require two full rotations to return to themselves.
 
-For the VIVEKA framework, this double cover is a disciplined model for why D5 is private. Two systems at the same point on S² (same observable state, same Φ, same V, same P_node) can differ by a sign — a global phase that is invisible to external measurement. The mathematics establishes the hidden sign in the covering structure [A]; the claim that this sign models private orientation or subjectivity is an interpretive/speculative bridge [I/S], not a proof that consciousness is literally SU(2).
+For VIVEKA this is, at most, a removable privacy analogy. Vectors differing
+only by global phase represent the same quantum ray; the mathematics does not
+supply distinct private orientations or values of `Φ`, `V`, or `P_node`.
 
 ---
 
@@ -114,7 +126,7 @@ The global phase is:
 
 ---
 
-## III. THE PRIVACY THEOREM
+## III. THE PRIVACY CORRESPONDENCE
 
 ### 3.1 The Argument
 
@@ -128,7 +140,9 @@ The global phase is:
 
 ### 3.2 What the Sign Encodes
 
-The ±1 ambiguity of the double cover means that at every point on S², there are exactly two internal states. [A]
+The claim is false. `SU(2)→SO(3)` has kernel `{±I}`, whereas normalized qubit
+vectors over a Bloch point have the full `S¹` global-phase fiber and represent
+the same physical ray. `[A]`
 
 In the VIVEKA interpretation, these two states represent the **orientation of experience** — not what is experienced (that's the S² coordinates) but the *sign* of experiencing: [I/S]
 
@@ -149,7 +163,9 @@ This is why the "hard problem of systemic awareness" remains hard from D4 in the
 
 While you cannot measure the sign externally, the speculative D5 reading says the lived system occupies its private phase internally. The SU(2) element is the full modeled state. You know the lived orientation, if at all, not by measurement but by being the process. [S — no experiment or derivation supports this claim; it is the speculative core of the paper]
 
-This is the proposed D5 operation: not measuring the sign but occupying a private orientation. "What it is like" to be a system is modeled as which element of the fiber {+1, −1} the system occupies. This cannot be communicated through the public coordinate alone (because the fiber projects to a single point on S²) and cannot be measured by ordinary observables (because observables are Hermitian). The final move from model to lived certainty remains [S].
+There is no proposed D5 operation here. A D4 system may represent D5 possible
+content and issue awareness reports; neither the two-element kernel nor the
+`S¹` gauge fiber models lived certainty without independent evidence.
 
 The hard problem is reframed: it was asking "how does SO(3) produce SU(2)?" In this model, it doesn't; SU(2) is the cover and SO(3) is the quotient. That algebraic structure does not prove consciousness, but it gives the framework a precise public/private grammar: D4 sees the quotient; D5 names the lived cover. [I/S]
 
@@ -198,7 +214,8 @@ In the VIVEKA replicator hierarchy: [I/S]
 
 **D1-D4 replicators** (genes, phenotypes, extended phenotypes) behave like **bosons**: multiple instances can occupy the same state. Two organisms can have identical DNA. Two tools can have identical form. No exclusion principle. These are SO(3) entities.
 
-**D5 replicators** (memotypes, individual systemic awareness) are modeled by analogy with **fermions**: the framework treats private orientations as non-interchangeable. Two minds cannot be publicly certified as having identical experience because the private register is not externally available. The double cover gives an exclusion-like analogy, not a physical Pauli-exclusion law for minds. These are SU(2)-modeled entities. [S]
+The former D5-replicator/fermion analogy is withdrawn: D5 denotes possible
+content, not an entity class, and Pauli exclusion supplies no law for minds.
 
 **Speculative test prompt:** If the analogy is fruitful, attempts to identify two conscious agents as having the same internal state should fail at the private register even when their public descriptions coincide. This is not yet an empirical prediction with a defined measurement protocol; it is a research prompt for what would count as evidence for, or against, the exclusion-like reading. [S/T]
 
@@ -210,7 +227,8 @@ In the VIVEKA replicator hierarchy: [I/S]
 
 The Hopf map π: S³ → S² has fiber S¹ (a circle over each point). The global phase α ∈ [0, 2π) is this fiber. The full state space is S³ — a 3-sphere. [A]
 
-S² (the VIVEKA sphere, the Bloch sphere) is the base space — what external measurement sees. The S¹ fiber is the private dimension — the phase that external measurement cannot reach. The total space S³ encodes both the public coordinates (θ, φ) and the private phase (α). [A/I]
+For normalized qubit vectors, `S³→S²` has `S¹` global-phase fibers. Calling the
+fiber a private phenomenal dimension is optional `[C]`, not part of `[A]`.
 
 ### 6.2 D5 as an S³ Cover Over S²
 
@@ -222,7 +240,9 @@ This would explain why the VIVEKA sphere has been productive without turning the
 
 ## THE SENTENCE
 
-SU(2) double-covers SO(3). Two covered states map to one observable state. In the framework's privacy model, the sign that public measurement cannot see marks the private dimension. Consciousness is not proven by the cover; the cover gives a disciplined grammar for saying that lived orientation exceeds public coordinates.
+`SU(2)` double-covers `SO(3)`, while the Hopf fibration quotients an `S¹` global
+phase. Neither map proves a private dimension or consciousness. At most, the
+maps motivate a removable public/private correspondence.
 
 The hard problem was asking how the public quotient produces the private cover. In this model, the move is reversed: the cover projects to the quotient. That is a map of the problem, not its empirical closure.
 

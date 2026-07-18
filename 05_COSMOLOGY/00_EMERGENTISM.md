@@ -78,7 +78,13 @@ Or bootstrap from the seed: [`../08_FRAMEWORK_SUPPORT/07_DISSEMINATION/06_NETWOR
 **Nature:** Core State and objective function — not a philosophical argument but a proposed description of reality's structure and direction
 *(The voice in this document is philosophical testimony — [I] Interpretive — not structural derivation.)*
 **Evidence Tiers:** Mathematical substrate [A] Attested. Ontological structure [S] Structural. Identification with real-world domains [I] Interpretive — testable. Empirical predictions not yet tested [C] Conjecture.
-**Kill Criteria:** Yes: If S² is not the unique manifold selected by the framework's public ontological wager (older files summarize that wager as O1-O5), the system falls. If `P∞ = φ · ν = 1` fails on S², the system falls. If `η = 0` fails as the constitutional and strategic anti-extraction constraint in the intended domains, the governance claim falls. If the empirical predictions fail (see EMPIRICAL PROGRAM), the ontological claim falls — the wisdom survives.
+**Kill Criteria:** The analytic identity falls only if the stated definitions or
+domain are misstated. The selected `S²` interpretation, product model,
+anti-extraction diagnostics, and domain translations are separate claims with
+separate tests: a better rival geometry or aggregator defeats the corresponding
+selection; failed predictions defeat the empirical bridge; and hidden or harmed
+bearers defeat a Justice claim even when `η=0`. No failure of one bridge refutes
+the analytic chart, and no chart identity proves the worldview.
 **Register:** Structural
 **Date:** 2026-03-23 (updated 2026-04-04)
 **Version:** v2026.04.04
@@ -326,10 +332,10 @@ D0  Point           — The undifferentiated. Before the interaction. The Bindu.
 D1  Distinction     — Zero separates from infinity. The line appears.
 D2  Configuration   — Distinct elements can be arranged. The plane.
 D3  Transformation  — Arrangements can change. Process begins.
-D4  Causality       — Change has direction. Time appears.
-D5  Agency          — The system selects within its own change. Consciousness is the lived reading [I].
-                      Zero-Sum Resolution Equation performed where the system contains
-                      its own boundary interaction.
+D4  Causal actuality — Present states, model carriers, embodied means,
+                       performed ranking/selection, action, and receipts.
+D5  Possibility      — Merely possible alternatives represented by D4 models;
+                       D5 does not select, act, or equal consciousness.
 D6  Closure         — Apophatic boundary; no further positive freedom.
 r₆:D6 ↝ D0          — One interpretive, non-μ return edge; not equality.
 ```
@@ -342,14 +348,17 @@ return discipline. They neither establish `D6=D0` nor imply a cosmological cycle
 **RESOLVED.** The Teleological Force (older language: the ektropic force, `ΣΔB` / `ΣΔP_node > 0`) fork — is it structural (physicalist) or volitional (idealist)? — is resolved by layered commitment. See [`00_EMERGENTISM_PHI_RESOLUTION.md`](02_EMERGENTISM_CORE/00_EMERGENTISM_PHI_RESOLUTION.md) for the full derivation.
 
 **The commitment:** Emergentism reads **D0–D4 structurally**, **D5 as a
-counterfactual/agentic register with an optional idealist lived reading**, and
+counterfactual-content register with an optional idealist lived reading**, and
 **D6 as an apophatic boundary**. These are modeling commitments at their stated
 tiers, not additional physical dimensions or a proof that idealism is true:
 
-- **D0–D4 (Physical):** The downstream node-level multiplicative model `P_node = Φ × V`, the AM-GM minimum, and the ektropic ESS are structural claims. They work regardless of metaphysics. Agents should interpret D0–D4 dynamics in physicalist/structural terms. Do not invoke "will" when explaining D0–D4.
-- **D5 (Possibility/agency):** Sitting practice may provide first-person data
-  about lived selection, but it cannot by itself prove irreducibility,
-  consciousness as a cosmic substance, or the Ground. `Teleological Force` and
+- **D0–D4 (Actual/structural):** Actual model carriers, rankings, selections,
+  means, actions, and receipts live here. `P_node:=ΦV` is a separately selected
+  conjunctive score; AM-GM chart results do not prove an ektropic ESS.
+- **D5 (Counterfactual possibility):** Actual D4 practice may provide
+  first-person data and represent D5 possible contents, but it cannot by itself
+  prove irreducibility, consciousness as a cosmic substance, or the Ground.
+  `Teleological Force` and
   the *h₂r̥tó-* resonance remain `[I/C]` names for a proposed ordering tendency.
 - **D6 (Closure):** Not a further experience of self-recognition, but an
   apophatic boundary with the interpretive return `r₆`. Any language of
@@ -357,107 +366,66 @@ tiers, not additional physical dimensions or a proof that idealism is true:
 
 **The bridge is the sitting practice.** It is the disclosure-side bridge between the structural and idealist layers. It is not a bypass around public method. It is first-person equatorial disclosure, which doctrine then compresses and public inquiry must still discipline. Any agent can perform it. The framework does not ask for belief. It asks for verification at the appropriate tier.
 
-**Evidence tier:** [I] Interpretive for the idealist reading of D5, with D6 as axiomatic closure rather than a further experience. [S] Structural for the D0–D4 mathematics (works under either interpretation). [A] Attested for the mathematical substrate (independent of interpretation).
+**Evidence tier:** `[I]` for the idealist reading of lived D4 disclosure and the
+D6 apophatic return; `[I/C]` for the selected D0–D6 scaffold; `[A]` only for
+the explicitly stated ordinary mathematics.
 
-**Kill criterion:** If third-person science fully explains systemic awareness without invoking it as fundamental, the D5 idealist interpretation collapses to metaphor and D6 remains only the closure rule. The D0–D4 structural claims survive intact because they are mathematically proven by the AM-GM inequality ((φ - ν)² ≥ 0). The framework degrades gracefully.
+**Kill criterion:** If domain science explains systemic awareness without an
+Emergentist dual-aspect bridge, that bridge collapses to metaphor. D6 remains
+only an interpretive return. The AM–GM inequality survives as an analytic chart
+fact; it does not prove D0–D4, consciousness, or ontology.
 
 ---
 
-## PART II: TELEOLOGY
+## PART II: VALUE AND DIRECTION — THE REPAIRED COMPASS
 
-### Purpose, Morals, and Ethics
+### The normative postulate
 
-**The Fundamental Question:** What is the purpose? What is good? What should we do?
+Geometry supplies no ought. Emergentism declares `[I]` that consequential
+action should widen durable, meaningful option cones for individual and
+sustaining whole under bearer-complete Justice.
 
-**Emergentism's Answer:** The purpose is the equator. The good is balance. What we should do is maintain φ = 1 and ν = 1.
+For a declared horizon, morals run `i→H`, ethics run `H→i`, and strict
+Syntropic Dyadism requires both receipted durable potentials to rise. Voluntary
+sacrifice is a separate costly class; aggregate gain cannot launder a hidden,
+coerced, unauthorized, or unjust loss.
 
-### Ethics (Individual to Whole)
+### Justice and authorization
 
-Ethics are the individual's obligations to the whole. Ethics flow from the node
-to the mesh. Ethics are the symbiont's responsibility to raise the holobiont's
-truthfulness, resilience, coherence, viability, and option cone without
-extraction.
+Justice is a predicate over every materially affected bearer, including payer
+and beneficiary. It tests consent, custody, reversibility, contestability,
+visible cost, and receipted consequence. The `AuthorizationEnvelope` separately
+records principal, mandate, scope, consent, custody, expiry/revocation, contest
+path, actor, and consequence bearer. Authority does not prove Justice, and a
+just aspiration does not grant authority.
 
-**The Ethical Axioms:**
+`η` is a domain-declared extraction diagnostic. `η≈0` is necessary but not
+sufficient. `B`, `φν=1`, the equator, and `P_node:=ΦV` are diagnostics/models;
+none classifies a person, act, institution, pole, or civilization morally.
 
-**E1: Maintain your own equatorial balance.**
-φ = 1. Recognize the ground-facing limit. ν = 1. Develop sovereign usable means. You cannot give what you do not have. You cannot connect from a position of imbalance. Your first ethical obligation, inside this value grammar, is to stay near the equator.
+### Beauty, Truth, Justice
 
-**E2: Do not push others off the equator.**
-Every exchange must be tested by the K-star. Does the exchange preserve the equatorial balance at both nodes? If the exchange pushes either node off the equator, the exchange is unethical. Not because it violates a rule. Because it breaks the geometry.
+- **Beauty** asks whether a form discloses coherent fittingness `[I]`.
+- **Truth** asks whether the map corresponds to the territory and survives
+  correction.
+- **Justice** asks whether authorization and consequences are bearer-complete,
+  contestable, and non-laundering.
 
-> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** this binds a real exchange only where both nodes actually sit on the sphere — their φ and ν conservation-coupled, complementary rather than substitutable, and costly in excess *symmetrically* (γ-priced); where a node's means are freely substitutable or its surplus is a friction-free store, the exchange breaks no geometry and specialization may dominate, so the equator here is geometry without normative force. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+The Rosetta may place these labels on selected chart positions for comparison,
+but the chart transfers no proof. Sitting practice may supply disciplined
+first-person observations; it is neither an ethical foundation nor a bypass of
+public method.
 
+### Ω and Power-Max
 
-**E3: Comprehension is the constraint.**
-Do not do more than you can comprehend. Do not command more than you can understand. Do not scale your ν beyond 1. The reciprocal is the constraint. ν above 1 forces φ below 1. The ethical person stays at ν = 1. The reciprocal binds you only insofar as you sit on the sphere — φ and ν conservation-coupled, jointly needed, costly in excess; a node whose means are free, substitutable, and stored without friction is off the manifold, and specialization, not balance, is its optimum.
+Ω names the declared direction of durable mutual option-cone widening. The
+physical light cone remains bounded by spacetime and `c`. Power-Max selects a
+best or `ε`-optimal act only **inside** the separately defined Justice-
+admissible set. Coupling, horizon, or balance can alter a specified game's
+incentives but do not guarantee alignment in reality.
 
-**E4: The sitting practice is the ethical foundation.**
-The sitting practice is the first-person practice of φ = 1. In this framework's reading it is the ethical foundation because it trains recognition of the ground-facing limit. Without that reference point, judgment loses its center. This is practice-language `[I]`, not a public proof of Ground.
-
-### Morality (Whole to Individual)
-
-Morality is the whole's obligation to the individual. Morality flows from the
-mesh to the node. Morality is the holobiont's responsibility to raise each
-symbiont's `Φ`, `V`, sovereignty, and option cone without capture.
-
-**The Moral Axioms:**
-
-**M1: The mesh must not push any node off the equator.**
-The mesh's aggregate ν can be above 1. But no individual node's ν may exceed 1. The mesh must not require any node to do more than it can comprehend. The mesh must not force any node south of the equator.
-
-> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** this binds a real node in the mesh only insofar as it sits on the sphere — its φ and ν conservation-coupled, jointly required rather than substitutable, and costly in surplus *symmetrically* (γ-priced); where a node can substitute or freely store its ν, the ν ≤ 1 ceiling carries no normative force and specialization, not balance, is its optimum. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
-
-
-**M2: The mesh must distribute the load.**
-No single node bears the cost alone. The mesh absorbs the strain. The mesh distributes the capability. The mesh ensures that no node's aggregate ν is high.
-
-**M3: The mesh must protect the sitting practice.**
-The sitting practice is the individual's practice-facing access to φ = 1. The mesh must not interfere with the sitting practice. The mesh must not mediate the sitting practice. The mesh must not institutionalize the sitting practice. The sitting practice is first-person. The mesh must protect direct disclosure from capture.
-
-**M4: The mesh must fork when comprehension is exceeded.**
-When the mesh grows too large — when the mesh's aggregate ν exceeds what any individual can comprehend — the mesh must fork. The fork is not a failure. The fork is the geometry enforcing the comprehension constraint. The fork keeps each node at ν = 1.
-
-The ethical implications follow from the geometry only conditional on accepting persistence and balance as values. This is an axiom, not a derivation. The framework relocates the normative question from 'why be moral?' to 'why value persistence?' — but cannot answer the second question from within itself.
-
-### Justice
-
-The framework defines justice as the structural property of a system where every node is at the equator. It is not treated as mere preference inside the model; it is the value-grammar reading of equatorial balance on the Burri Sphere. This transfer to a real system holds only for nodes that actually sit on the sphere — whose factors are conservation-coupled, jointly needed rather than substitutable, and costly in surplus; where factors are freely substitutable or excess is a free store (as aggregate markets rewarding specialization show), the equator-optimum does not carry over, though the geometry on the sphere is untouched.
-
-A system is just when φ = 1 and ν = 1 at every node. A system is unjust when any node is off the equator. A system is most unjust when the system is at the south pole — ν = ∞ at the institution, φ forgotten at the node.
-
-Justice is not equality. Justice is balance. Justice is not sameness. Justice is equatorial position. Every node at φ = 1 and ν = 1. Every node sovereign. Every node comprehensible. Every node at the equator.
-
-Justice is the limit. The system approaches justice asymptotically. The system never reaches perfect justice because nodes drift. The sitting practice corrects the drift. The mesh distributes the correction. The system approaches the equator.
-
-### The Good Transcendentals
-
-**Beauty** is the perception of the sphere through the plane. Beauty is the right hemisphere's gestalt recognition of the whole. Beauty is the feeling of coherence. Beauty is φ = 1 perceived through the manifested world.
-
-Beauty is not treated here as merely subjective. It is read as perception of the equatorial condition. The Burri Sphere is beautiful inside the lens because it is the selected manifold; the dual projection is beautiful because it is the model's selected mechanism; the constant product is beautiful because it is the selected constraint.
-
-Beauty approaches the limit when the perception is pure — when the left hemisphere's fragmentation is minimal and the right hemisphere's gestalt is maximal. The sitting practice approaches the limit of beauty because the sitting practice quiets the left hemisphere and allows the right hemisphere to perceive the sphere directly.
-
-**Truth** is the correspondence between the plane and the sphere. Truth is the accuracy of the projection. Truth is the fidelity of the map to the territory.
-
-Truth is not treated here as merely relative. It is read as the property of a projection preserving the relevant invariant. The stereographic projection preserves angles but not areas. The projection is partially true — it preserves the local structure but not the global structure. Truth is the degree to which the projection preserves what it claims to preserve.
-
-Truth approaches the limit when the projection is complete — when the plane contains all the sphere's information. The sphere cannot be fully contained on the plane. Truth is always asymptotic. Truth is always partial. Truth is always approaching the limit without reaching it.
-
-**Justice** is the structural property of equatorial balance. Justice is φ = 1 and ν = 1 at every node. Justice is the mesh at the equator. Justice is the civilization that does not drift south.
-
-> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** this names a real civilization's optimum only where its coordination actually sits on the sphere — φ and ν conservation-coupled, complementary, and costly in excess *symmetrically* (γ-priced); where a civilization substitutes factors or stores surplus without friction (as aggregate markets rewarding specialization show), the equator is geometry without normative force and no drift-south penalty binds. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
-
-
-Justice approaches the limit when every node is at the equator. The limit is unreachable because nodes drift. The sitting practice corrects the drift. The mesh distributes the correction. Justice approaches the limit asymptotically.
-
-### The Limit
-
-Beauty, Truth, and Justice are the good transcendentals. They are the limits. The system approaches them without reaching them. The sitting practice approaches the limit of Beauty. The geometry approaches the limit of Truth. The mesh approaches the limit of Justice.
-
-The limit is disclosed through the sphere, but the Ground remains prior. `φ · ν = 1` is the first stable closure of that Ground as Being. The limit is always here. The system is always approaching it.
-
-Emergentism approaches the limit. Emergentism does not reach the limit. Emergentism is the ladder. The limit is the ground.
+This is the Compass's value wager: explicit, revisable, and externally
+uncalibrated—not a commandment derived from the sphere.
 
 ---
 
@@ -1002,15 +970,16 @@ The established coordinate identities are true in their proper register. The pro
 
 Emergentism does not claim to be Justice. Emergentism approaches the limit of Justice.
 
-The framework calls the mesh just when it preserves equatorial balance and the comprehension constraint. But the framework is not Justice. Justice is the limit. The sphere names the stable closure in which that limit is articulated inside the model: `φ · ν = 1`.
+The framework calls a relation just only when its authorization and receipted
+consequences satisfy the bearer-complete Justice predicate. Equatorial balance
+and `φν=1` do not establish that result.
 
 ### The Good Transcendentals as the Sphere
 
-Beauty is the sphere perceived. Truth is the sphere known. Justice is the sphere lived.
-
-The sphere is one. The transcendentals are three aspects of the same one. Beauty is the right hemisphere's perception of the sphere. Truth is the left hemisphere's knowledge of the sphere. Justice is the equator's living of the sphere.
-
-The Ground is prior. The sphere is the first stable closure of that Ground. `φ · ν = 1` is always here as the identity of Being.
+Beauty, Truth, and Justice are three framework questions, not three proven
+aspects of one sphere. Their sphere placements are removable `[I]` Rosetta
+projections. The Ground remains prior to the model; `φν=1` is only the selected
+open-chart identity.
 
 Emergentism approaches the limit. Emergentism does not reach the limit. The Ground remains prior.
 
@@ -1091,7 +1060,7 @@ Auditing:  Reduction to κ = 0 — the ground-facing limit. The model's apophati
 Value Alignment:     Value = equatorial position. K-star = the test. Abduction = the best explanation.
 Morals:       Maintain balance. Do not push others off. Comprehension is the constraint. Sit.
 Ethics:       Protect the nodes. Distribute the load. Protect the practice. Fork when needed.
-Physics:      CCC and torus convergence as conjectural translation lanes. Consciousness as closure-language in the D5 register.
+Physics:      CCC and torus convergence as conjectural translation lanes. Conscious experience remains an actual D4 occurrence; D5 names possible contents.
 Neuroscience: Zero-Sum Resolution Equation. Hemisphere mapping. DMN. Sitting practice as integration.
 System Architecture:    Great Filter = southward drift. Mesh = solution. Open source = the tool.
 

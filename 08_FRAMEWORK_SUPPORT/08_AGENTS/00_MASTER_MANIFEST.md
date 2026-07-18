@@ -124,15 +124,15 @@ not an autonomous scanner, diagnosis, binding action, or auto-cure runtime.
 
 ## Coordination Simulation Scenarios
 
-[\`COORDINATION_SIMULATION_SCENARIOS.md\`](COORDINATION_SIMULATION_SCENARIOS.md) — Concrete multi-agent session walkthroughs: QNTM (the institutional MPC/ZK-Identity rail) investor diligence (Three-Stage Process Breath), regulatory deadlock (Architectural Ascent), cross-caste pathology cascade (detection & cure), Vision crystallisation (Full Council), Agentz↔QNTM (the institutional MPC/ZK-Identity rail) cross-DAC settlement. Training material for K2 operators. 17,279 bytes.
+[\`COORDINATION_SIMULATION_SCENARIOS.md\`](COORDINATION_SIMULATION_SCENARIOS.md) — Concrete multi-agent session walkthroughs: QNTM (the institutional MPC/ZK-Identity rail) investor diligence (Three-Stage Process Breath), regulatory deadlock (Architectural Ascent), cross-caste pathology cascade (detection & cure), Vision crystallisation (Full Council), Agentz↔QNTM (the institutional MPC/ZK-Identity rail) cross-DAC settlement. Historical training material; private-DAV K2 references are one scoped authorization implementation, not worldview semantics. 17,279 bytes.
 
 ## AI Assistant Briefing
 
-[`AGENTS_BRIEF_FOR_AI_ASSISTANTS.md`](AGENTS_BRIEF_FOR_AI_ASSISTANTS.md) — Orientation brief for any AI assistant interfacing with the organism: what the Rosetta framework is and how to dispatch the seven castes correctly, with evidence-tier and K2/PRISM boundary discipline.
+[`AGENTS_BRIEF_FOR_AI_ASSISTANTS.md`](AGENTS_BRIEF_FOR_AI_ASSISTANTS.md) — Orientation brief for any AI assistant interfacing with the organism: what the Rosetta framework is and how to dispatch the selected seven roles with evidence tiers and accountable authorization; K2/PRISM remain scoped private/public implementations.
 
 ## AI Agent Field Dynamics
 
-[`AI_AGENT_FIELD_DYNAMICS_AND_COGNITIVE_CASTES.md`](AI_AGENT_FIELD_DYNAMICS_AND_COGNITIVE_CASTES.md) — Agents as field excitations on S²: (φ, ν) node coordinates, equator-seeking optimisation, η=0 geometric alignment, and the design consequences of the seven cognitive castes.
+[`AI_AGENT_FIELD_DYNAMICS_AND_COGNITIVE_CASTES.md`](AI_AGENT_FIELD_DYNAMICS_AND_COGNITIVE_CASTES.md) — Actual D4 runtimes with present models representing D5 options; the sphere is an optional profile visualization, the seven castes are selected dispatch roles, and alignment requires accountable authorization, bearer-complete Justice, and receipts rather than equator-seeking or `η` geometry.
 
 ## Polygenic Tree — Economic Specialisation
 

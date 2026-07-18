@@ -28,6 +28,13 @@ That is the whole organism.
 
 Read receipt, statement, and settlement language below as the target synergy architecture unless a narrower runtime proof has explicitly closed the loop.
 
+> **[金] Causality/authorization seam.** “Reach” below means an agent's option
+> cone, not a widened physical spacetime light cone. A present D4 carrier can
+> model and rank D5 possible contents; those represented futures can reweight
+> present selection without physical retrocausality. Consequential D4 action
+> requires a complete AuthorizationEnvelope. K2 is the private-DAV
+> implementation; public DAVs use PRISM and their constitutional council rail.
+
 ---
 
 ## 1. The Stack
@@ -172,11 +179,12 @@ receipts, proof traces, and graph updates feed nervous system
     → DACs act better → better action creates better receipts
 ```
 
-Intelligence is not a separate product. It is the **reflexive readout** of the metabolic loop. The triadic cascade (Beauty→Truth→Justice→Beauty) is the engine; the six flywheels are the consequences. Cortex remembers each turn. VMOSK replicates the pattern. AIA detects when the cycle drifts. Skyzai executes only after lawful K2 descent.
+Intelligence is not a separate product. It is the **reflexive readout** of the metabolic loop. The triadic cascade (Beauty→Truth→Justice→Beauty) is the engine; the six flywheels are the consequences. Cortex remembers each turn. VMOSK replicates the pattern. AIA detects when the cycle drifts. Skyzai executes only inside the applicable AuthorizationEnvelope: K2 if private, PRISM/council authorization if public.
 
-This is the human-generalized light cone made institutional: the organism opens
-a wider D5 probability space than one body or one niche can hold, then forces
-that widened space to descend back into evidence-tiered, K2-bound D4 action.
+This is an institutional **option cone**: D4 people and systems can represent a
+broader field of D5 possible contents than one body or niche can model alone,
+then commit one authorized D4 action subject to physical and institutional
+constraints. The physical light cone remains unchanged.
 It inherits the human altricial strategy at institutional scale: short-term
 dependency and coordination cost are accepted so shared Phi can compound, then
 return as generalized V in receipts, tools, and lawful execution.
@@ -247,7 +255,7 @@ The system scales because:
 
 | Weak Layer | Systemic Symptom | Recovery Path |
 |------------|------------------|---------------|
-| **NEXUS** | DACs float as black boxes; no graph capital can form. | Harden K2 continuity and signer-root proof loops first. |
+| **NEXUS** | DACs float as black boxes; no graph capital can form. | Harden authorization continuity and signer-root proof loops first: K2 if private, PRISM/council rail if public. |
 | **DAC compute** | No metabolic activity; receipts are empty. | Find one real economic loop (event, booking, API PAY) and make it breathe. |
 | **Audit membrane** | Trust becomes narrative theater. | Close receipt or execution-trace coverage for every meaningful action. |
 | **SoResFi** | Every DAC reinvents treasury and settlement. | Productize one shared tool (e.g. OFN SDK or receipt accounting) and onboard 2+ DACs. |
@@ -297,5 +305,5 @@ That is why the parts were designed to touch exactly where they do.
 
 ---
 
-> *The organism does not grow by adding parts. It grows by tightening loops.*  
-> *eta = 0. K2 always. The human signs.*
+> *The organism does not grow by adding parts. It grows by tightening loops.*
+> *No extraction is the declared constraint; authorization is always scoped. Private: K2. Public: PRISM.*

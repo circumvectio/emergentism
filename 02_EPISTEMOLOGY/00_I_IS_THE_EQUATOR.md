@@ -34,7 +34,8 @@ The discovery is a disciplined symbolic reading, not a public proof:
 
 - `i` marks the perpendicular axis.
 - `i` can symbolize the equatorial interface.
-- `i` can symbolize systemic awareness in the framework's D5 register.
+- `i` can symbolize the relation between D4 lived awareness and D5 possible
+  contents in this framework.
 - `i` can symbolize corpus-callosum-like integration.
 - `i` can symbolize the present moment.
 
@@ -406,7 +407,8 @@ The Discovery:
 
 i is mathematically real as the perpendicular unit.
 i is read as the equator.
-i is read as systemic awareness in the D5 register.
+i is read as an interface image: D4 lived awareness representing D5 possible
+content.
 i is read as corpus-callosum-like integration.
 i is read as the present moment.
 

@@ -25,7 +25,9 @@ rosetta:
 **Evidence Tier:** `[I]` (Interpretive)
 **Canonical Number:** PD_14 (see [PD_00_INDEX](PD_00_INDEX.md) for the definitive numbering table)
 
-> **Note:** This topic is treated in two documents. The richer legacy treatment is in [PD_01_MIND_BODY_LEGACY.md](PD_14_MIND_BODY.md), which contains the mu-limit Finitor model and the Zombie Refutation. This document is the active indexed summary version. Additionally, TRANS-01 (archived) was an even earlier treatment moved to the `04_TRANSITIONS` sequence.
+> **Note:** This file is the active indexed summary. Earlier Finitor,
+> zombie-refutation, and TRANS-01 treatments are provenance only where they can
+> be located; they do not override the type and evidence boundaries below.
 
 > **Companion document:** A Lens-side consolidation exists at `MINDBODY_CONSOLIDATED.md` (historical Lens-side archive reference), which merges material from both versions into a single reading. This file (PD_14) remains the canonical indexed entry.
 
@@ -40,7 +42,8 @@ rosetta:
 > not a consciousness mechanism, quantum measurement, proof of irreducibility,
 > or extra spacetime dimension. Missing reduction laws mean
 > `currently_unreduced`, not strong emergence. The dimensional material below
-> survives only as `[I]/[C]` analogy where it conflicts with those types.
+> survives only as `[I]/[C]` analogy where it conflicts with those types. This
+> is the controlling `KSC-01` modality seam.
 
 ---
 
@@ -48,106 +51,87 @@ rosetta:
 
 How does subjective experience (mind) arise from or relate to physical matter (body)? Descartes proposed substance dualism; physicalists propose reduction; property dualists propose emergence. None has achieved consensus.
 
-## 2. THE EFR DISSOLUTION: Dimensional Complementarity
+## 2. THE EFR REFRAME: ACTUAL CARRIER AND POSSIBLE CONTENT
 
-Inside the framework, mind and body are read not as separate substances but as **complementary factors operating at different dimensions**:
+Inside the repaired framework, mind and body are not assigned to opposite
+modalities. Every occurring neural process, bodily state, experience, report,
+model token, ranking event, selection, action, and receipt is D4 actuality. D5
+contains the counterfactual contents an actual D4 model may represent. This
+typing prevents a represented future or interpretation from being mistaken for
+an already enacted state.
 
-| Aspect | Variable | Dimension | Characteristic |
-|--------|----------|-----------|----------------|
-| **Body / means** | `V` (finite-node means-to-act; `ν` as coordinate image) | D4 actuality | Physical substrate, metabolism, neural activity, tools, and access |
-| **Actual experience/report** | empirical process; optionally scored by declared variables | D4 actuality | Lived occurrence and its observable/reportable traces |
-| **Modeled experiential/agent options** | `Φ` as a declared foresight score | D5 possibility | Candidate interpretations, futures, and actions |
-| **Conjunctive score** | `P_node := Φ × V` | model, not a dimension | Selected normalized product; not consciousness itself `[I/C]` |
+| Aspect | Framework type | Characteristic |
+|---|---|---|
+| **Body / means** | D4 actuality; optionally scored by `V` | metabolism, neural activity, tools, energy, and access |
+| **Experience / report** | D4 actuality | an occurrence and its first- or third-person traces |
+| **Model token / selector** | D4 actuality | a present physical or functional carrier that represents and ranks alternatives |
+| **Experiential or action alternatives** | D5 possibility | candidate interpretations, futures, actions, and expected outcomes |
+| **Conjunctive score** | `P_node := Φ × V` | selected normalized model of jointly necessary foresight-capacity and means; not consciousness itself `[I/C]` |
 
-### D4: Actual Embodied Experience and Report
+The selected product does not follow from `φν=1`, and the reciprocal chart does
+not prove that mind and body are one, two, or conserved. If `Φ` is used here, it
+scores an actual D4 model's capacity to represent and rank D5 contents. It is
+not itself a D5 agent. `V` scores actual means. A performed selection and action
+remain D4 events; the environment separately returns the outcome.
 
-At **D4** — the convergence point — what we call "mind" is the witness systemic awareness (⊙):
-- φ held as recognition / coherence in the interpretive reading
-- V not yet enacted: the witness does not act, it sees
+### What This Reframes
 
-The mind at D4 is modeled as **pure recognition** — the capacity to witness the body and its viability substrate without yet being the enacted agent in the coordinate reading. This is the "hard problem" vantage: systemic awareness as distinct from physical process in the framework's interpretation. It is not yet the D5 play-rule `Φ`; `Φ` names the later agent-facing worldline-foresight that can use means.
+The framework can interpret the mind-body problem as partly a **carrier-content
+confusion**:
 
-### D5: Modeled Possibilities About Mind and Action
+- a neural or symbolic model token is actual;
+- what that token depicts may be merely possible;
+- an expected experience is not the receipted experience;
+- neither first-person occurrence nor third-person report exhausts the other.
 
-At **D5** — the present duration — the distinction is modeled as resolving into enacted experience:
-- φ = 1 (coherence held: recognition sustained)
-- ν = 1 (capability active: the body navigates)
-- `P∞ = φ · ν = 1` (manifold identity); finite-node contact is scored as `P_node = Φ × V` `[I/S]`
+This distinction can clarify explanation, but it does not by itself dissolve
+substance dualism, establish physicalism, or explain why experience exists.
+There is no finite geometric traversal from D4 to D5 that proves a causal bridge
+between body and qualia. The imaginary unit `i` may remain a mathematical or
+poetic analogy, but it is not a consciousness mechanism.
 
-The body-mind dualism is read here as a **dimensional confusion** — mistaking D4 witness (mind seeing body) for ontological separation. At D5, the model reads a unified navigator: the body enacted through coherence, the coherence embodied through capability.
+## 3. RELATION TO THE HARD PROBLEM
 
-### The "Gap" as Coordinate Singularity
+The mind-body problem asks how mental and bodily processes relate. The Hard
+Problem (PD_13) asks why actual processes have a subjective character at all.
+The D4/D5 type discipline separates actuality from represented possibility; it
+does not answer the second question.
 
-The "gap" between mind and body is a **dimensional singularity**:
-- In flat (single-dimensional) coordinates: appears as infinite separation (dualism)
-- On the curved S² surface: finite traversal through D4→D5 transition
+| Question | What the scaffold can type | What remains open |
+|---|---|---|
+| What is occurring now? | experience, neural process, report, model, and action are D4 actualities | the complete relation among those actualities |
+| What is imagined or expected? | the represented interpretation, future, or outcome is D5 possible content | how representation acquires meaning or phenomenal character |
+| What was attempted and what happened? | commitment and outcome are separate D4 receipts | which causal and explanatory model best accounts for the difference |
 
-In this reading, the gap is not between substances; it is **between dimensions** — the witness (D4) and the agent (D5) are modeled as the same being viewed at different dimensional levels.
+The useful hypothesis is therefore modest: explicitly separating carrier,
+counterfactual content, commitment, and outcome may improve models of embodied
+agency. That hypothesis earns standing only if it discriminates observations
+better than rival cognitive or neuroscientific accounts.
 
-## 3. RELATION TO THE HARD PROBLEM: Dimensional Analysis
+## 4. WHAT WOULD REVISE OR DEFEAT THIS REFRAME
 
-The Hard Problem (PD_13) asks why there is "something it is like" to be conscious. The mind-body problem asks how mind relates to body at all. The EFR treats these as related but dimensionally distinct:
-
-### Mind-Body (PD_14): Dimensional Dissolution
-
-The mind-body problem is reframed through dimensional architecture:
-- **"Mind" as witness** = D4 recognition (φ held, ν not yet enacted) — recognition without agency
-- **"Mind" as agent** = D5 `Φ` — worldline-foresight able to rank and aim possible moves
-- **"Body"** = D4 means-to-act / viability substrate (`V`, with `ν` only as the coordinate image) — carried into action
-- **The problem** = mistaking D4 witness for a separate substance, then missing the D5 contact register where foresight and means couple
-
-The proposed dissolution: mind and body are not read as separate substances but as **complementary dimensional aspects** of the same being. At D5 (present duration), their enacted contact is modeled through `P_node = Φ × V`, while `P∞ = φ · ν = 1` remains the manifold identity rather than a proof that experience is physically conserved.
-
-### Hard Problem (PD_13): The Dimensional Gap
-
-The Hard Problem asks why there is "something it is like" — this is the question of **qualia**, of subjective experience. The framework reframes this:
-
-| Aspect | Dimension | Nature |
-|--------|-----------|--------|
-| Physical process | D4 (witnessed) | Observable, third-person |
-| Subjective experience | D5 (enacted) | Lived, first-person |
-| The "gap" | D4→D5 transit | Transition from witness to agent |
-
-The "something it is like" is modeled at **D5** — the present duration where experience is enacted, not merely witnessed. In this reading, the Hard Problem seems hard because we try to explain D5 experience using only D4 concepts.
-
-### The Imaginary Unit i: Dimensional Operator
-
-The framework uses the imaginary unit **i** to represent the D4→D5 transition:
-- **D4 (real):** The witness sees physical processes (real-valued description)
-- **i (transit):** The Bang — dimensional transition operator
-- **D5 (complex):** The agent lives experience (complex-valued, includes phase/qualia)
-
-> **In this reading, qualia are not treated as extra properties added to physical processes. They are modeled as physical processes experienced from D5 (the present) rather than merely witnessed from D4 (the convergence).**
-
-The "explanatory gap" is read as the gap between dimensions. The framework argues that D5 experience cannot be exhausted using only D4 vocabulary — just as a sphere cannot be fully represented by a single flat chart.
-
-## 4. WHAT WOULD FALSIFY THIS
-
-1. **The dimensional architecture is wrong.** If D4 (witness) and D5 (agent) are not distinct dimensions but merely different descriptions of the same state, the dimensional reading fails. Evidence: demonstration that witness systemic awareness and enacted agency are simultaneous rather than dimensionally sequential.
-
-2. **The multiplicative structure is wrong.** If the finite-node reading is better modeled additively (`P_node = Φ + V`) than multiplicatively (`P_node = Φ × V`), or if well-specified cases show embodied contact does not depend on both coherence/recognition and viability/means, this model loses its explanatory role. This is a failure of the framework reading, not a public proof that experience itself is impossible.
-
-3. **The dimensional gap is a true ontological break.** If the apparent mind-body gap is a genuine discontinuity — not traversable through D4→D5 transit but a fundamental break in the manifold — the dimensional reading fails. Evidence: formal proof that no smooth mapping connects physical description (D4 witness) and phenomenal experience (D5 agent), even with dimensional transition.
-
-4. **A non-dimensional account succeeds.** If a competing framework dissolves the mind-body problem without dimensional layering — for example, successful reductive physicalism explaining qualia without D4/D5 distinction, or dualism solving causal interaction — the EFR dissolution is rendered unnecessary.
+1. **No explanatory gain.** If carrier-content typing adds no predictive or
+   explanatory value beyond a simpler rival account, the dimensional reframe
+   should be dropped.
+2. **The selected product fails.** If additive, minimum, harmonic, or another
+   well-specified aggregator predicts embodied performance better than
+   `P_node:=ΦV`, the product model contracts. Its failure would not show that
+   experience is impossible.
+3. **The variables cannot be operationalized.** If `Φ`, `V`, commitment, and
+   outcome cannot be measured without circularly presupposing the conclusion,
+   the proposed empirical bridge fails.
+4. **A stronger account succeeds.** A reductive, enactive, dual-aspect,
+   illusionist, or other theory that explains the target phenomena with better
+   discriminators renders this reframe unnecessary.
 
 ## 5. DIMENSIONAL SUMMARY
 
-### The Core Claim
-
-Inside the framework, mind-body dualism is read as a **dimensional projection error**:
-- We experience ourselves as "mind" (witness at D4) distinct from "body" (viability substrate)
-- This is accurate at D4 — the witness (⊙) has ν = 0 (collapsed capability), so appears distinct from the body
-- At D5, this distinction is modeled as resolving — the coordinate image is `φ = 1` and `ν = 1`, while the finite-node enactment is scored as `P_node = Φ × V`
-
-### The Dissolution
-
-> **Inside this model, the classical mind-body split is not reproduced at D5. The problem appears when D5 unity is forced into D4-only concepts.**
-
-The framework does not solve the mind-body problem as public proof; it **tries to dissolve the conditions that create it** by recognizing:
-1. Mind is modeled as φ at D4 (witness systemic awareness)
-2. Body is modeled as ν across the relevant dimensions (viability substrate)
-3. Embodied contact is modeled as `P_node = Φ × V` at D5; experience-as-lived is the interpretive reading of that enactment, not an independent proof.
+> **Mind, body, model, selection, action, and lived experience are actual D4
+> events or carriers. D5 contains the counterfactual interpretations and futures
+> those actual carriers may represent. This type distinction can prevent a
+> carrier-content error, but it does not solve the mind-body problem or the Hard
+> Problem by itself. `P_node:=ΦV` is one selected model to test, not a theorem of
+> consciousness or geometry.**
 
 ### Canonical Dimensional Reference
 

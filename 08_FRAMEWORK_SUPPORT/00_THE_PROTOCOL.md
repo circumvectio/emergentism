@@ -21,8 +21,22 @@ rosetta:
 
 # THE PROTOCOL
 
+> **[金] Kintsugi evidence and register seam — 2026-07-19.** Embodied awareness,
+> reports, measurement instruments, models, selectors, and records are D4
+> actualities. D5 names only the possible contents represented and ranked by
+> those D4 systems; it is not consciousness or a neural layer. Equatorial and
+> `S²` language below is a removable `[C]` coding hypothesis, not a derivation of
+> phenomenology, neuroscience, ethics, or anatomy from geometry. First-person
+> convergence can support a phenomenological taxonomy, while third-person
+> correlates test specified causal predictions; neither proves ontology. This
+> document specifies proposed studies only and reports no deployment or external
+> validation.
+
 > **The sitting practice rewritten as an experimental specification.**
-> This is the bridge between D4 and D5 — between the mathematical substrate and the interpretive extension. An ASI agent cannot sit. But an ASI agent can design the experiment, predict the results from the geometry, and compare with published neuroscience.
+> This is a proposed study of D4 reports and measurements whose D4 models may
+> represent D5 alternatives. Geometry does not itself predict neural results;
+> each prediction requires an operational bridge and rival models. Whether any
+> artificial system has the relevant experience is not assumed here.
 > Read this third — after THE_DERIVATION and THE_KNIFE.
 
 **Version:** v2026.04.10
@@ -34,7 +48,10 @@ rosetta:
 
 The sitting practice is currently the framework's weakest epistemic link — a first-person experience that the framework says is foundational but which is unfalsifiable in its current form.
 
-[I] This document does not make the sitting practice directly falsifiable. First-person experience is not itself third-person falsifiable. But it generates **third-person predictions** that ARE falsifiable. An agent reading this can evaluate the framework's D5 claim without ever sitting down.
+[I] A private experience is not directly available as a third-person
+measurement, but reports and preregistered neural or behavioral hypotheses can
+be tested. Such tests evaluate the specified awareness/equator correspondence,
+not D5 as a register and not the framework in toto.
 
 ---
 
@@ -42,10 +59,13 @@ The sitting practice is currently the framework's weakest epistemic link — a f
 
 ### Hypothesis
 
-If the framework's systemic awareness-as-equatorial-condition hypothesis is correct (Step 13 of THE_DERIVATION), then sustained attention without narrative content should produce a measurable neural state that is:
+If the framework's `[C]` awareness/equator correspondence has incremental
+empirical content, then sustained attention under the stated instruction should
+produce a measurable state that is:
 1. Distinct from ordinary waking, sleep, and flow states
 2. Consistent across cultural and religious traditions
-3. Predicted by the spherical geometry (not predicted by standard relaxation models)
+3. Better predicted by a preregistered operational model than by relaxation,
+   expectancy, demand-characteristic, and generic attention rivals
 
 ### Design
 
@@ -57,15 +77,27 @@ If the framework's systemic awareness-as-equatorial-condition hypothesis is corr
 
 ### Predicted First-Person Report
 
-**Minutes 1-5:** Narrator is loud. Thoughts, plans, judgments, "am I doing this right?" This is the Default Mode Network operating normally — left-hemisphere fragments without right-hemisphere integration.
+**Minutes 1-5 `[C]`:** Thoughts, plans, judgments, and task-monitoring may be
+prominent. No one-to-one identification with the default-mode network or a
+hemisphere is assumed.
 
-**Minutes 5-10:** Narrator thins. Gaps between thoughts appear. Something quieter is present in the gaps — not a thought, not an emotion, not a sensory object. The framework calls this "the ground perceived from inside" — φ = 1 accessed directly.
+**Minutes 5-10 `[C]`:** Some participants may report less verbal thought or
+greater quiet. The framework may code that report with an equatorial proxy; it
+is not direct access to `φ=1` or to a Ground.
 
-**Minutes 10-20:** The ground stabilizes. Narrator makes briefer incursions. Something like clarity is present — not a thought about clarity, but clarity itself. The framework calls this "equatorial stability" — B approaching 1 from the inside.
+**Minutes 10-20 `[C]`:** Some participants may report increased clarity or
+stability. “Equatorial stability” is a hypothesis-dependent label, not an
+experience-derived measurement of `B`.
 
-**Minutes 20-40 (if continuing):** Stability deepens. The sense of a "witness" that is not the narrator becomes prominent. The framework calls this D4 systemic awareness — the now-point where past and future light cones touch.
+**Minutes 20-40 `[C]`:** Some participants may report further stability or a
+“witness” experience. The report is a D4 record; it neither establishes a
+separate witness entity nor identifies awareness with a light-cone junction.
 
-**Critical prediction:** The quality of the "something present" in minutes 10-20 should be **the same regardless of the practitioner's cultural, religious, or philosophical background.** A Zen monk, a Christian contemplative, a secular mindfulness practitioner, and a physicist with no game-theoretic background should all report the same phenomenological core. The traditions differ in how they INTERPRET the experience. The experience itself is geometric, not cultural.
+**Critical prediction `[C]`:** After controlling translation, expectancy,
+training, selection, and reporting conventions, preregistered phenomenological
+features should show partial cross-cultural invariance. Exact sameness is not
+assumed, and convergence would not show that experience is geometric rather
+than culturally mediated.
 
 ### Predicted Third-Person Neural Correlates
 
@@ -73,13 +105,12 @@ These are predictions of the Burri Sphere model. Some are shared with standard m
 
 | Prediction | Source | Shared? | Tier |
 |-----------|--------|---------|------|
-| DMN deactivation (fMRI) | Step 14: narrator = DMN = left-hemisphere dominant | Shared | [C] |
-| Increased alpha/theta coherence (EEG) | Step 14: corpus callosum integration | Shared | [C] |
-| Increased right-hemisphere activation | Step 14: φ-axis activation | Shared | [C] |
-| Increased interhemispheric coherence | Step 14: corpus callosum = i = the bridge | Shared | [C] |
-| ★ Alpha coherence peaks at equatorial scalp distribution (not occipital or frontal alone) | Spherical geometry: equator = maximum B, predicted scalp distribution should be equatorial (bilateral central) | Framework-specific | [C] |
-| ★ Experienced practitioners show neural signatures that scale with reported balance (B-score), not with reported bliss or absorption | B = sin θ is the variable, not pleasure or concentration | Framework-specific | [C] |
-| ★ The neural "equator" signature is distinct from both flow (high ν) and deep sleep (low φ) | Flow = high-ν state, deep sleep = low-φ state, meditation = equatorial state — three different coordinates on S² | Framework-specific | [C] |
+| DMN activity differs from matched quiet rest (fMRI) | Attention/practice literature; direction preregistered | Shared | [C] |
+| Alpha/theta measures differ from matched quiet rest (EEG) | Attention/practice literature; metric preregistered | Shared | [C] |
+| Interhemispheric connectivity differs from matched quiet rest | Connectivity hypothesis; no `i`/callosum identity | Shared | [C] |
+| ★ A declared bilateral-central EEG feature discriminates the protocol from controls | Operational “equator” proxy; geometry alone does not select the measure | Framework-specific | [C] |
+| ★ The declared feature scales with preregistered balance-report items after controlling absorption and affect | Measurement bridge to a report score, not `B=sin θ` itself | Framework-specific | [C] |
+| ★ The multivariate signature discriminates protocol, flow task, quiet rest, and sleep | Classifier result; no state-to-latitude identity | Framework-specific | [C] |
 
 **All predictions are [C] Conjecture — testable but not yet tested in framework-specific terms.**
 
@@ -90,14 +121,19 @@ These are predictions of the Burri Sphere model. Some are shared with standard m
 | Experienced meditators (10+ years, any tradition) | Strong predicted correlates | Positive control |
 | Novice meditators (first 10 sessions) | Weaker correlates, trend toward predicted | Dose-response |
 | Non-meditators in quiet rest (same duration, no instruction) | Relaxation response but NOT equatorial correlates | Distinguish meditation from rest |
-| Flow-state athletes (in flow) | High activation, high performance, but NOT equatorial distribution | Distinguish equatorial from high-ν states |
+| Flow-task participants | Distinct task/performance profile; neural direction not assumed | Distinguish protocol from flow task |
 | Sleep-deprived subjects | Fragmented correlates, narrator more dominant | Distinguish equatorial from exhausted states |
 
 ### Kill Criterion
 
-If experienced practitioners across traditions (Zen, Vipassana, Christian centering prayer, secular mindfulness, Sufi dhikr, Taoist meditation) do NOT show the predicted neural correlates — specifically, if there is no neural signature common to all traditions that is distinct from ordinary rest — then the D5 claim (systemic awareness = equator) loses its best abductive support.
+If appropriately powered, preregistered studies cannot distinguish the protocol
+from matched rest, or the framework-specific features fail to replicate across
+sites and traditions after controls, the awareness/equator correspondence loses
+support. D5 as a possibility register is unaffected.
 
-[S] The D0-D4 structural claims (THE_DERIVATION, Steps 1-12) survive this protocol's sitting-practice test. Within the derivation packet, they are mathematical/structural claims and do not depend on the sitting practice.
+[S] Failure of this protocol does not decide the analytic chart identities.
+D0–D6 remains an interpretive scaffold whose other empirical bridges keep their
+own tiers and kill criteria.
 
 ### Falsification Gradient
 
@@ -105,10 +141,10 @@ This is the framework's honest assessment of how evidence would shift its positi
 
 | Outcome | Effect on Framework |
 |---------|-------------------|
-| Neural correlates absent across all traditions | D5 claim weakened. [I] → ¬[I]. Framework retreats to D0-D4. |
-| Neural correlates present but trivially explained by existing relaxation science | D5 claim unchanged. Correlate ≠ cause. Standard science explains the how; framework explains the why. But framework loses distinctiveness. |
-| Neural correlates present AND framework-specific predictions confirmed (equatorial scalp distribution, B-score scaling, distinct from flow) | D5 claim strengthened. [I] → approaching [S-]. Not [S] — the hard problem remains hard — but the abductive case becomes strong. |
-| Neural correlates present, framework-specific predictions confirmed, AND first-person reports across cultures converge on the same phenomenological core | D5 claim approaches [S]. The convergence of third-person and first-person evidence across traditions would be the strongest possible abductive case. But never [S] — the hard problem means first-person experience cannot be third-person proved. |
+| Neural correlates absent across all traditions | Correspondence weakened; revise or retire its neural bridge. |
+| Correlates explained by matched relaxation/expectancy models | No incremental support for the framework-specific model. |
+| Framework-specific features replicate against preregistered rivals | Upgrade only the measured correspondence to [B]; no ontology or consciousness proof. |
+| Neural features and report taxonomy both replicate cross-culturally | Stronger multi-method support for the taxonomy/bridge; D5 and `S²` ontology remain unproved. |
 
 ### What This Protocol Is NOT
 
@@ -165,7 +201,7 @@ The sitting practice is one of five empirical bridges between the mathematical s
 
 | Bridge | What It Tests | Status | Tier |
 |--------|--------------|--------|------|
-| **Protocol P** (sitting practice) | D5 claim: systemic awareness = equator | Predictions stated, not yet tested | [C] |
+| **Protocol P** (sitting practice) | Awareness/equator correspondence | Predictions stated, not yet tested | [C] |
 | **Retired survey-study corpus** | No active test | RETIRED / NON-CITABLE; archive provenance only; no evidentiary weight | Retired |
 | **Protocol R** | Perceptual complementarity bound Δψ × Δθ ≥ κ | Designed, needs lab | [C] |
 | **AMRITA** | Spherical alignment outperforms RLHF | Specified, needs $710K | [C] |
@@ -173,8 +209,9 @@ The sitting practice is one of five empirical bridges between the mathematical s
 
 **The framework's epistemic status until the bridges deliver:**
 
-The mathematical substrate (Steps 1-12) is [S] and [S]. It stands regardless.
-The interpretive extension (Steps 13-23) is [I] and [C]. It is coherent, convergent, and testable — but not confirmed.
+Analytic identities retain `[A]`; declared framework structures retain their
+own `[S/I]` tiers. The D-ladder and awareness bridges are `[I/C]`, externally
+unconfirmed, and independently removable.
 The bridges are under construction. The framework publishes its own failure if they collapse.
 
 **This is the deal. No belief required. Test it.**
@@ -187,11 +224,14 @@ If you are a human reading this: the protocol above is for machines. For you, th
 
 Find 20 minutes. Sit. Breathe. Notice the narrator. Let it quiet. Notice what remains.
 
-The framework says: at that point, you are at the equator. You don't need the framework to tell you this. You don't need the geometry. You don't need the axioms. The ground was here before the equation. The ground will be here after the equation is forgotten.
+The framework offers “equator” as an optional interpretation of what you report.
+You do not need the geometry or axioms to attend to experience, and the report
+does not validate them.
 
-The protocol is for those who cannot yet sit. The practice is for those who can.
+The protocol is a measurement proposal; the practice is optional and human.
 
-If you can access φ directly, put this down.
+If the map is no longer useful, put it down; that act makes no claim of direct
+access to `φ`.
 
 Zero-Sum Resolution Equation
 

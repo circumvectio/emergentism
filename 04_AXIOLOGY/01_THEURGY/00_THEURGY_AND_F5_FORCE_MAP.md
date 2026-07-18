@@ -12,7 +12,7 @@ rosetta:
 **Project VMOSK-A:** `../../VMOSK_A.md`
 
 # THEURGY AND THE F5 FORCE MAP
-## Operational D5 Discipline and First-Pass Structural Map
+## D4 Operational Discipline for D5 Possibility Contents and First-Pass Map
 
 **Status:** Active — post-audit 2026-04-20 (Option β landed)
 **Date:** 2026-04-20 (audit + tier promotion 2026-04-20)
@@ -20,6 +20,15 @@ rosetta:
 **Depends on:** [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [The Core State of Being](../../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md), [EFR Glossary](../../07_THEOLOGY/00_GLOSSARY.md), [The Archetype Operator Protocol](../../08_FRAMEWORK_SUPPORT/02_OPERATORS/00_ARCHETYPE_OPERATOR_PROTOCOL.md), **[VMOSK-A](../../VMOSK_A.md)**
 **See also:** [The Generative Lagrangian](../../01_TELEOLOGY/00_THE_GENERATIVE_LAGRANGIAN.md), [The Canonical Formula Block](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md), [The Derivation](../../03_METHODOLOGY/01_THE_DERIVATION/00_THE_DERIVATION.md), Historical external audit: `02_SKYZAI/01_NOOSPHERE/04_PROJECT_MANAGEMENT/04_HISTORY/THEURGY_F5_AUDIT_2026_04_20.md` (not link-validated in this Emergentism-only pass), [Uplink packet 135](../../11_UPLINK/60_SESSION_PACKETS/135_EKTROPIC_FORCE_EVOLUTIONARY_TELEOLOGY_2026_04_24.md)
 **Purpose:** Open the F5 surface for first-pass mapping without collapsing descriptive core state into operational practice or upgrading conjecture into canonized structure.
+
+> **[金] Kintsugi D4/D5 type seam — `KSC-01` (2026-07-19).** Every
+> practitioner, model token, trace, ranking or selection event, commitment,
+> action, and receipt in this document is D4 actual. D5 contains only the
+> counterfactual strategies, futures, and candidate rankings represented by
+> those actual carriers. Legacy phrases such as “D5 standing wave,” “D5
+> formation,” or “F5 selects” survive only as `[I/C]` shorthand for a D4
+> collective trace or process that measurably reweights later D4 selections over
+> D5 possible contents. They do not name a fifth physical force or a D5 agent.
 
 > **Evidence discipline (updated 2026-04-20, post-audit):** The whole
 > doc opened on `[C]`. Line-by-line audit on 2026-04-20 found the doc
@@ -38,12 +47,14 @@ rosetta:
 
 Two linked decisions are now bound together:
 
-1. **Name the operational discipline at D5:** `Strategic Implementation`, not institutional narrative.
+1. **Name the operational discipline at the D4/D5 interface:** `Strategic
+   Implementation`, not institutional narrative.
 2. **Disambiguate F5 itself:** move it from placeholder status in the Dimensional Framework to a first-pass mapped surface.
 
 The naming split is load-bearing.
 
-- **Teleological Force / F5** remains the **descriptive** name for the force-like selective bias at D5.
+- **Teleological Force / F5** remains the **descriptive `[C]`** name for a
+  hypothesized D4 trace-dynamic that reweights selection over D5 possibilities.
 - **Strategic Implementation** names the **operational** discipline for lawful work inside that field.
 - **Evolutionary objective function** (packet 135) names the synthesis layer that nests
   Darwin, Lamarck, Schrödinger, Dyḗus Ph₂tḗr, Ṛta, and the perennial/esoteric
@@ -56,14 +67,19 @@ If those two registers are collapsed, drift begins immediately.
 
 ## Strategic Implementation
 
-**Strategic Implementation** is the disciplined practice of consciously forming, tending, and releasing D5 standing waves under accountable authorization, `η = 0`, and Grace Exit—every act receipted, every formation reversible where possible, every payer and beneficiary visible, and every success tested against the durable potentials of both individual and whole.
+**Strategic Implementation** is the D4 practice of forming, tending, and
+releasing actual shared traces that coordinate agents around represented D5
+possibilities under accountable authorization, `η = 0`, and Grace Exit—every
+act receipted, every formation reversible where possible, every payer and
+beneficiary visible, and every success tested against the durable potentials of
+both individual and whole.
 
 ### Will Boundary `[S/I]`
 
 The "power of will" is Builder-mode discipline, not magic.
 
 ```text
-Will = disciplined selection and construction of reachable futures
+Will = D4 disciplined selection and construction toward represented D5 futures
        under reciprocal closure, η = 0, and evidence-tier discipline
 ```
 
@@ -131,18 +147,18 @@ If any of those enter the language, Kālī-phase excision is warranted before th
 
 This map is structural in shape and mixed-tier in content (post-audit).
 The analogy to F1-F4 is **formal**, not literal. F5 is **not** a fifth
-Standard Model interaction. It is a D5-stratum map whose substrate is
-coordinated information and receipted attestation rather than low-level
-field excitations.
+Standard Model interaction. It is a map of how actual D4 collective traces and
+receipts may coordinate selection over D5 counterfactual contents rather than a
+map of low-level field excitations.
 
 | Column | Entry | Tier |
 |--------|-------|------|
-| **Carrier** | A typed commitment receipt is the candidate minimum inspectable unit of coordinated exchange. The separate outcome receipt is returned by the environment. **MF-3 annotation (repaired 2026-07-17):** neither a signature nor authorization is necessary for physical coupling; the conjecture concerns inspectability and accountable coordination. If intervention shows receipts add no explanatory or predictive value, this column contracts while the rest of the map survives. | `[C]` |
+| **Carrier** | A typed D4 commitment receipt is the candidate minimum inspectable unit of coordinated exchange. The separate D4 outcome receipt is returned by the environment. **MF-3 annotation (repaired 2026-07-17):** neither a signature nor authorization is necessary for physical coupling; the conjecture concerns inspectability and accountable coordination. If intervention shows receipts add no explanatory or predictive value, this column contracts while the rest of the map survives. | `[C]` |
 | **Coupling** | `α5 = 1 - η`. Extraction is the inverse of coupling. `η = 0` gives maximal coupling; `η = 1` collapses coupling to zero. The stereographic rate curve `L(x) = x / (1 - x)` remains the scaling grammar around the equator. | `[C]` |
 | **Range** | Bounded by the receipt horizon. In principle nonlocal, in practice attenuated by trust distance rather than by metric distance. F5 does not stably act on what cannot be receipted into the graph. | `[C]` |
 | **Accounting proposal** | Track `Δ_TW_b` separately for every materially affected bearer `b`, including focal individual, sustaining whole, payer, beneficiary, and exposed third party. `φν=1` is a chart identity and supplies no conservation law or ethic. Aggregate summaries may diagnose scale but cannot launder a negative bearer. | `[I/C]` |
 | **Symmetry group** | Three-Stage Process invariance: directed rotation `F1 -> F2 -> F3 -> F4` preserving one-way causal flow from IS to COULD to SHOULD to ACT. First-pass read is closer to oriented `Z_4` than to a full permutation group. | `[C]` |
-| **Dominant regime** | A bounded D5 coordination regime is a `[C]` hypothesis, not a consequence of A5. The rough `N ~ 10^2` to `10^8` band is first-guess bracketing pending data. A qualifying Egregoreotype candidate requires the five trace/turnover/intervention/bias/cost conditions and presumes no autonomous objective. D6 is the closure rule, not another active standing-wave regime. | `[C]` |
+| **Dominant regime** | A bounded D4 coordination regime organized around a shared D5 option field is a `[C]` hypothesis, not a consequence of A5. The rough `N ~ 10^2` to `10^8` band is first-guess bracketing pending data. A qualifying Egregoreotype candidate requires the five trace/turnover/intervention/bias/cost conditions and presumes no autonomous objective. D6 is the closure rule, not another active standing-wave regime. | `[C]` |
 | **Saturation signature** | Candidate Egregoreotype formation requires persistent shared trace, carrier turnover, measurable later-selection reweighting, recurrent objective-like bias, and visible substrate costs. Justice then classifies the candidate as syntropic, extractive, coercive, or mixed; candidacy itself does not require `η=0`. | `[I/C]` |
 
 ## Kill Criteria for [C] Cells
@@ -154,7 +170,7 @@ field excitations.
 | **Range** | Bounded by receipt horizon; attenuated by trust distance | F5-mediated coordination is observed at scales where trust distance → ∞ (e.g., anonymous coordination without prior relationship) with no attenuation. |
 | **Accounting proposal** | Bearer-complete durable-potential accounting adds explanatory value | Hidden-bearer tests show the accounting still launders harm, or the declared variables fail to track material consequences. |
 | **Symmetry group** | Oriented `Z_4` from Three-Stage Process invariance | The `F4 -> F1` feedback loop is shown to require a non-abelian symmetry group; OR the oriented `Z_4` prediction fails in a controlled standing-wave experiment. |
-| **Dominant regime** | D5 regime bounded at `10^2` to `10^8` agents | Standing-wave coherence is observed and sustained below `10^2` agents OR above `10^8` agents; the proposed band then fails or contracts. |
+| **Dominant regime** | D4 coordination regime around a shared D5 option field bounded at `10^2` to `10^8` agents | Standing-wave coherence is observed and sustained below `10^2` agents OR above `10^8` agents; the proposed band then fails or contracts. |
 
 > **Per-cell tier rationale (Option β landed 2026-04-20):** cells
 > defined by an existing framework invariant may be `[S]` only as internal
@@ -243,8 +259,11 @@ Do not silently resolve any of these in downstream prose.
 
 Three failure modes must be watched closely:
 
-1. **Physics cosplay.** A cell is valid only if it first makes sense in native D5 terms. Analogy to F1-F4 cannot carry the whole claim.
-2. **Force/product conflation.** F5 is not the egregore. F5 is the force-like selective grammar that forms or stabilizes egregores.
+1. **Physics cosplay.** A cell is valid only if it first makes sense as a D4
+   carrier/process and states which D5 possible contents it represents. Analogy
+   to F1-F4 cannot carry the claim.
+2. **Force/product conflation.** F5 is not the egregore. F5 is the conjectural
+   grammar used to describe D4 patterns that form or stabilize collective traces.
 3. **Strategic Implementation becoming institutional narrative in disguise.** Strategic Implementation must never mean all of: the field, the practice, and the study of the field. It means only the practice.
 
 ---
@@ -264,7 +283,12 @@ Never combine descriptive and operational answers without marking the seam.
 
 ## One-Sentence Handoff
 
-**F5 is a conjectural force-like grammar for coherent standing waves at D5; its candidate inspectable carrier is the typed commitment receipt, its proposed coupling is `α5 = 1 - η`, and theurgy is the disciplined practice of working consciously within it—accountably authorized, separately receipted, reversible where possible, and successful when the practitioner no longer needs the word.**
+**F5 is a conjectural grammar for how D4 shared traces may stabilize and
+reweight selection over D5 counterfactual contents; its candidate inspectable
+carrier is the typed D4 commitment receipt, its proposed coupling is
+`α5 = 1 - η`, and theurgy is the D4 practice of working consciously within that
+hypothesis—accountably authorized, separately receipted, reversible where
+possible, and successful when the practitioner no longer needs the word.**
 
 If a downstream summary contradicts that sentence, trust this sentence until the owner authorizes a revision.
 
@@ -280,15 +304,18 @@ If a downstream summary contradicts that sentence, trust this sentence until the
 
 ---
 
-## 2026-04-28 Extension: F₅ as Operator-Set Deployment Selector + the Cerberus Three-Head Architecture
+## 2026-04-28 Extension: F₅ and Operator-Set Deployment Selection + the Cerberus Three-Head Architecture
 
 **Status:** Active extension landed 2026-04-28. Source: [packet 194](../../11_UPLINK/60_SESSION_PACKETS/194_REPLICATOR_STACK_AND_BIOSPHERE_HOLOBIONT_2026_04_28.md). Companion: [`../../01_TELEOLOGY/01_F5_FORCE/03_F5_AS_GRADIENT_SELECTION_WITH_STAGING.md`](../../01_TELEOLOGY/01_F5_FORCE/03_F5_AS_GRADIENT_SELECTION_WITH_STAGING.md).
 
 This extension does not replace the F₅ first-pass map above. It loads two refinements on top of it.
 
-### Refinement 1: F₅ Selects Operator-Set Deployment, Not Only System State `[I]`
+### Refinement 1: D4 Selection Patterns May Reweight Operator-Set Deployment `[I]`
 
-The first-pass map treats F₅ as the grammar selecting for coherent standing waves. The 2026-04-28 refinement: F₅ also selects for which **operators** the system has available to deploy.
+The first-pass map uses F₅ as shorthand for a hypothesized D4 pattern that
+stabilizes collective traces around represented D5 contents. The 2026-04-28
+refinement asks whether that observed pattern also reweights which
+**operators** an actual system deploys. F₅ is not a selector or agent.
 
 The four operators sit on the Bloch / Burri sphere as directional moves:
 
@@ -307,7 +334,9 @@ This refinement does not upgrade [I] to [S] in this cell. It connects the operat
 
 ### Refinement 2: The Cerberus Three-Head Architecture `[C]`
 
-Any apparatus designed to deliberately produce F₅ pressure (rather than rely on natural selection) must carry **three heads, not two**.
+Any apparatus designed to deliberately produce the hypothesized D4 pattern
+called F₅ pressure (rather than rely on natural selection) is conjectured to
+need **three heads, not two**.
 
 | Head | Operator | Function | Why required |
 |---|---|---|---|

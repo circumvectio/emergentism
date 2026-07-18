@@ -28,7 +28,8 @@ rosetta:
 > fundamental collapse; Copenhagen-family actualization is
 > interpretation-specific; neither interpretation is an added dimension; and
 > neither `μ` nor `χ` is quantum measurement. Removing the analogy changes no
-> Burri rule.
+> Burri rule. D4 actual models may represent D5 possible contents; D5 is not an
+> observer, selector, awareness-substance, or quantum state space.
 
 **Directory:** `02_PARADOX_DISSOLUTIONS/`
 **Evidence Tier:** `[I]` (Interpretive) / `[S]` only for standard Bloch-sphere and S² mathematics
@@ -120,7 +121,12 @@ falsifiable conjecture, not an established result.
 
 ## 4. THE FRAMEWORK CONNECTION
 
-The D4-D5 bridge provides the structural basis, but the registers must not be collapsed. On the sphere, `φ` names the coherence coordinate and `ν` names the viability coordinate. In the action register, `Φ` is D5 worldline-foresight — the agent's ability to hold and rank reachable possibilities — while `V` is D4 means-to-act: the body, tool, energy, and access side through which one branch becomes definite. The equator (`φ = ν = 1`; action read: `Φ` and `V` both usable) is the maximum-balance region where possibility and actuality can be coupled without either pole consuming the other.
+The removable correspondence keeps the registers distinct. On the selected
+chart, `φ` and `ν` are reciprocal coordinates. In the action register, `Φ` is
+a D4 model-capacity that can represent and rank D5 possible contents, while
+`V` is D4 embodied means. A D4 commitment enacts one action; the environment
+returns a separate outcome receipt. None of this is a quantum-measurement
+mechanism, and the equator supplies no moral verdict.
 
 The μ-limit is the framework's model for D5→D4 traversal. It is not established
 as the physical mechanism of collapse. The same model can be used by analogy for

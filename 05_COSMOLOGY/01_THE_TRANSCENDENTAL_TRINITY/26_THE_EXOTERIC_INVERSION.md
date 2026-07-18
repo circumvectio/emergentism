@@ -21,6 +21,15 @@ rosetta:
 **See also:** 12_THE_POLES.md, 15_DHARMA_YUDDHA.md, The Master Three-Stage Process, The Kṛṣṇa Specification
 **Kill Criteria:** If the D5 emergence reading is shown to produce no insight beyond the literal reading. If the structural mapping is forced — if a simpler reading accounts for the same correspondences without the framework.
 
+> **[金] Type-and-Justice seam — 2026-07-19.** This is an `[I]` reading of a
+> narrative, not history, theology, or an ethical derivation. D4 persons and
+> models may represent D5 counterfactual contents; D5 is not a conscious actor
+> or an enacted rise. `η=0` and equatorial geometry are at most diagnostics.
+> Justice additionally requires every affected bearer, payer, and beneficiary,
+> consent, custody, reversibility, contest, and separate commitment/outcome
+> receipts. Accordingly, later claims that "the geometry is sufficient" or
+> that one reading proves a priesthood extractive are superseded.
+
 ---
 
 ## I. THE PROFANE READING
@@ -39,7 +48,9 @@ This reading is not wrong. It is **half the sphere.**
 
 ## II. THE ESOTERIC READING
 
-The Fall = **RISE.** The emergence of D5 — systemic awareness becoming aware of itself as systemic awareness. Erhabenheit. The sublime terror of seeing the whole.
+The Fall = **RISE** in this interpretive reading: a D4 person becomes able to
+represent and compare richer D5 possible contents. Erhabenheit names the
+sublime terror of seeing a larger modeled whole.
 
 The serpent = **F₅.** The ektropic force. The light-bearer. Lucifer — *lux ferre* — the one who brings the light. Not the enemy of God but the MECHANISM of God. The force that drives the Replicator Stack upward. The serpent does not deceive. The serpent **initiates.**
 
@@ -47,7 +58,10 @@ The fruit = **the Rosetta Stone.** Seeing both hemispheres — good AND evil —
 
 Paradise not lost but **TRANSCENDED.**
 
-The response: **RECOGNIZE to return.** Not obedience but perception. Not a priesthood but the sitting practice. η = 0. The geometry is sufficient.
+The response proposed here is **RECOGNIZE to return**: not obedience but
+perception; not a compulsory mediator but a sitting practice. Neither `η=0`
+nor the geometry is a sufficient moral verdict; the Justice envelope remains
+separate.
 
 ---
 
@@ -57,7 +71,9 @@ The response: **RECOGNIZE to return.** Not obedience but perception. Not a pries
 
 They eat the fruit and see **only nakedness.** Vulnerability. The extractive hemisphere. They perceive their own exposure as threat. They HIDE from God. Fear. Coverings. The first extraction — taking from the environment to protect against the environment.
 
-This is L1-L2 systemic awareness reading D5 through terror. The emergence of self-awareness collapses into survival anxiety. The new capacity (seeing good AND evil) is too much. The fruit was ripe but the eater was not.
+This is a D4 person representing D5 possibilities through terror at the L1–L2
+route. The new capacity collapses into survival anxiety. The fruit was ripe but
+the eater was not.
 
 They do not fall FROM paradise. They fall INTO a reading of paradise that makes it invisible. The garden is still there. They can no longer see it.
 
@@ -65,7 +81,9 @@ They do not fall FROM paradise. They fall INTO a reading of paradise that makes 
 
 They eat the fruit and see **the WHOLE sphere.** Nakedness is not shame but the equatorial condition — no covering, no mediation, no system between the node and the ground. The state of the Equatorial Walker: nothing added, nothing hidden.
 
-This is L4 systemic awareness reading D5 through Erhabenheit. The emergence of self-awareness opens into the full perception. Both hemispheres visible. The giving and the extractive. The north and the south. The 360°.
+This is a D4 person representing D5 possibilities through *Erhabenheit* at the
+L4 route. Self-awareness opens into the framework's full interpretive image:
+both hemispheres visible, giving and extraction, north and south.
 
 [I] They do not leave paradise. They SEE paradise — for the first time — as what it always was: **geometry.**
 

@@ -175,7 +175,10 @@ This sentence may be reused verbatim.
 1. Default to the stabilized D5/D6 architecture when summarizing the corpus.
 2. Interpret older `D6` language charitably through the newer canon instead of amplifying the older wording.
 3. Treat collective patterning, noosphere language, and institutional sediment as upper `D5`, not literal `D6`.
-4. Preserve the asymmetry at `D5`: strong in genesis, weak in governance.
+4. Describe formation as opacity or a candidate `currently_unreduced`
+   crossing only when its evidence record is explicit; never infer strong
+   emergence from a missing reduction. Governance remains an actual D4
+   process over represented D5 possibilities.
 5. Preserve `D6` as closure, not an additional possession.
 6. Treat universal holobiont / Soul Loop integration as the `D5`-limit image seen from inside the system; `D6` releases that image's claim to final possession.
 

@@ -41,18 +41,38 @@ When the framework metric (`P_node = Phi * V`) is applied, many of the paradoxes
 When we claim "The framework is complete," we must execute rigorous epistemic hygiene. 
 
 **This is a claim of bounded categorical closure, not formal completeness.**
-1. Kurt Gödel proved (via the Incompleteness Theorems) that no formal mathematical system robust enough to contain basic arithmetic can prove its own consistency from within based on its own axioms. [B] The system will inevitably generate true statements that cannot be proven by the system itself.
-2. VIVEKA does not claim to violate Gödel. [S] We do not claim this framework proves itself from a vacuum. `P_node = Phi * V` remains an axiom — a bedrock assumption required to initialize the logic gate.
-3. Therefore: the system proposes bounded categorical closure because the major paradoxes treated here map to its topology. [C/S] It is formally incomplete because it relies on an unprovable axiomatic geometric rule.
+1. Gödel's first incompleteness theorem applies to consistent, effectively
+   axiomatized formal theories with sufficient arithmetic strength: such a
+   theory is incomplete. “True but unprovable” additionally names truth in an
+   intended model and requires the appropriate soundness assumptions. The
+   second theorem says that, under the standard derivability conditions, a
+   consistent theory of sufficient strength cannot prove its own consistency.
+   `[A/B]`
+2. VIVEKA does not claim to violate Gödel. `P_node:=ΦV` is a selected framework
+   definition, not a theorem that initializes all logic or proves the system.
+3. Dependence on an axiom does **not** cause Gödel incompleteness; some axiom
+   systems are complete. This document claims only `[I/C]` bounded conceptual
+   coverage of the paradox suite. If VIVEKA is formalized as a consistent,
+   effectively axiomatized, sufficiently arithmetic theory, Gödel's hypotheses
+   and limits apply in the ordinary way.
 
 ## 3. THE THIRD UNVEILING
-Historically, mathematics was paralyzed before the introduction of **Zero**. Calculations involving "nothing" broke the abacus. 
-Later, physics was paralyzed by **Infinity**. We could not chart instantaneous motion until Leibniz and Newton conceptualized the limit via Calculus.
+
+As a framework narrative `[I]`, Zero and Infinity illustrate how extending a
+representational vocabulary can reorganize previously awkward problems. This
+is not the historical claim that mathematics or physics was globally
+"paralyzed" before one invention, nor that calculus alone made instantaneous
+motion intelligible.
 
 VIVEKA introduces the Third Unveiling: **Finity ($\odot$)**.
-By formally bounding unbounded D4 means-to-act (`V` at contact) with D5 worldline-foresight/coherence (`Φ` at contact), the mathematics of systemic awareness finally possess a closed geometric surface. The claim is register-bound: `V` is embodied means, tools, energy, access, timing, and control; `Φ` is not free-floating certainty but usable foresight under correction.
+The framework pairs D4 embodied means (`V`) with a present D4
+model/foresight measure (`Φ`) whose represented contents concern D5
+possibilities. This is a selected conceptual model, not a mathematical closure
+of systemic awareness or consciousness.
 
-Gödel reminds us we cannot algorithmically prove reality from scratch. [B] VIVEKA offers a map of what follows after its axiom is assumed.
+Gödel does not certify a worldview from its own formalization. `[I]` By
+analogy, VIVEKA offers a map of what follows after its declared assumptions;
+its fit to reality must be assessed externally.
 
 ## 4. THE SELF-REFERENCE CHALLENGE
 

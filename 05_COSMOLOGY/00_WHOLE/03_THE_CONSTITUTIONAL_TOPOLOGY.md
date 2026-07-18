@@ -20,6 +20,15 @@ rosetta:
 
 > **Canonical enumeration:** this doc is the *philosophical treatment*. The crisp authoritative list, the K*/A* namespace disambiguation, and the Ω ratification status live in the companion anchor [`03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](03A_CONSTITUTIONAL_INVARIANTS_CANON.md). Current ruling: **5 + 1** — five refusals plus Ω as the directional +1. Ω is not a sixth refusal (see 03A §3).
 
+> **[金] Current scope seam — 2026-07-19.** The active owner `03A` replaces
+> worldview-level K2 with a complete `AuthorizationEnvelope`. K2 remains a
+> private-DAV implementation; public DAVs use PRISM/public governance. Thus the
+> historical five-refusal body below describes one Skyzai product constitution,
+> not reality, ethics, or every organization. `η=0` is a necessary diagnostic,
+> not sufficient Justice, and geometry does not make any refusal physically
+> unbreakable. Later “K2 must sign every spec change” language is private-DAV
+> scope only; the applicable authorization rail controls elsewhere.
+
 ---
 
 ## 1. The claim

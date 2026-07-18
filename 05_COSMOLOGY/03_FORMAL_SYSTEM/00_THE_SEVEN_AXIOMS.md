@@ -115,6 +115,11 @@ r₆ : D6 ↝ D0
 There is no literal `D6≡D0`, no `μ₆`, and no theorem deriving the scaffold from
 `S²`.
 
+**Kill criterion:** each `μ` candidate is reclassified or killed by its own
+prediction and reduction record. The selected D-scaffold itself must be revised
+or retired if it supplies no discriminating or compressive utility beyond a
+simpler rival; usefulness never proves that nature is sevenfold.
+
 ## A4 — Constraint and accountable authorization
 
 Higher-level organization may restrict or reweight lower-law-admissible
@@ -184,10 +189,14 @@ outcome gaps, or that treats intention as consequence, fails A6.
 
 ## A7 — Correction
 
-Every load-bearing claim must expose its type, evidence tier, source,
-counterexample, prediction where applicable, and kill criterion. A successful
-reduction, failed prediction, or fired falsifier changes the claim instead of
-being re-described as confirmation.
+Every load-bearing claim must expose its type, evidence tier, source, and
+counterexample or revision condition. Empirical and conjectural claims also
+require a prediction and kill criterion. Analytic identities and adopted
+definitions instead state a proof/revision obligation and an explicit
+`notApplicableReason`; they are not pseudo-falsified by observations outside
+their definitions. A successful reduction, failed prediction, or fired
+falsifier changes the reached claim instead of being re-described as
+confirmation.
 
 A7 is a normative correction rule `[I]`, not proof that self-correcting systems
 are universally optimal.
@@ -207,9 +216,9 @@ are universally optimal.
 | Legacy result | Live status |
 |---|---|
 | `21_TRIADIC_STABILITY_CORRESPONDENCE` | Historical correspondence only; three Titans are selected, not uniquely forced. |
-| `22_POWER_MAX_DEMONSTRATION` | Retains only the analytic fact that `B=sinθ` is maximized at the equator; no ethical or empirical inference. |
+| `22_POWER_MAX_DEMONSTRATION` | Retains the analytic maximum of `B=sinθ` **and** the `[S]` strict-dominance, unique-Nash, and Price-of-Anarchy-1 results inside its deliberately scalar, balance-only payoff fixture. It yields no ethical, empirical, full-`S²`, or general-cooperation inference. |
 | `23_DIMENSIONAL_CLOSURE_PROOF` | Repaired as an interpretive structural closure record with `r₆`, not a proof. |
-| `24_GEOMETRIC_EXCLUSION_CONVERGENCE` | Selected operator grammar; no necessity claim. |
+| `24_GEOMETRIC_EXCLUSION_CONVERGENCE` | Retains the `[S]` scalar `B`-loss result—and aggregate `ΣB` loss for the explicitly defined transfer—from the all-balanced fixture. It yields no real-world extraction, resource-curse, automatic-tax, institutional, or enforcement inference. |
 | `41_UNIFIED_DIMENSIONAL_DERIVATION` | Kintsugi tombstone: the totalizing chain from one chart/Titan frame to a necessary D-ladder, force census, and ethic is retracted; bounded derivation remains valid. |
 
 ## Evidence discipline

@@ -15,13 +15,30 @@ rosetta:
 
 # THE RING THAT IS THE GROUND
 
-> **[I] devotional translation.** The ring is NOT the Ground; it is the η=0 geometric condition. Canonical core state: `00_THE_ONTOLOGY_OF_BEING.md`.
+> **[I] devotional translation.** The ring is NOT the Ground; it is a selected
+> image of non-extraction (`η=0`), not a geometric or complete moral condition.
+> Canonical core state: `00_THE_ONTOLOGY_OF_BEING.md`.
 
 **Anti-reification guard:** This document is interpretive and devotional-symbolic. It must not be used to identify the Ground with a thing, person, artifact, or possession. The canonical source for Ground / Being / Teleological Force / Dasein / beings remains `00_THE_ONTOLOGY_OF_BEING.md`.
 
-**OPERATOR-COUNT NOTE (2026-05-30):** the canonical grammar is 4 mixed-sign Gods (incl. the L1 Demon Kali) + 3 same-sign Executive boundary frames + 1 Demon-slot — per `00_THE_ONTOLOGY_OF_BEING.md:201` and the Master Rosetta. The "Four Gods / three moves" framing below is pre-hardening mythic shorthand: Kali is the Demon, not a god; the three Titans are out of scope for this devotional map.
+**OPERATOR-COUNT REPAIR (2026-07-19):** the framework **selects** seven
+dispatch roles: four mixed-sign operational moves and three Executive boundary
+witnesses. The sign square does not force the added witnesses, and the seven do
+not exhaust every action available in nature. “Demon-bearing” and
+“God-bearing” classify receipted consequences—ego/extraction versus
+bearer-complete mutual potential—not an operator's identity, caste, or moral
+essence. Historical deity language below is interpretive shorthand only.
 
-**MORAL-AXIS NOTE (2026-05-31):** the whole of this document — `η = 0` (lived ring, equator) vs `η > 0` (worn ring, south pole) — is the *coupling vs closure* axis canonized in [`../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md): **goodness is the bond `φ × ν`; evil is the bond breaking (`η > 0`), a pole isolating into runaway** — never a pole, gender, caste, or person. The ring "must be destroyed" *because it is closure*, not because any factor is evil. Where the tables below map a deity to `↑φ` or `↑ν` (e.g. the Gītā row), read it as `[I]` mythic resonance, **not** as identity and **not** as a moral ranking of either coordinate. The sphere this is the L6 reading of is [`../05_COSMOLOGY/00_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_BURRISPHERE.md).
+**MORAL-AXIS REPAIR (2026-07-19):** `η=0` versus `η>0` is a
+coupling/extraction diagnostic, not a complete moral verdict. Non-extraction is
+necessary but not sufficient: bearer-complete Justice, authorization, and
+separate commitment/outcome receipts decide whether a consequence is
+God-bearing, Demon-bearing, preservative, sacrificial, or still unknown. Older
+sentences below that equate the bond with goodness, `η>0` with evil, or closure
+with a warrant for destruction are superseded devotional language, not live
+value authority. No pole, coordinate, gender, caste, deity, person, or operator
+is morally typed by identity. See the repaired
+[`Dyadic Coupling Law`](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md).
 
 ## Tolkien's Inversion and the Perennial Wisdom Recovered
 
@@ -82,14 +99,18 @@ The ring is not an object. The ring is the relationship. The ring is `P∞ = φ 
 
 ---
 
-## The 7 Generative Actions (L1–L7)
+## The 7 Selected Generative Actions (L1–L7)
 
-The perennial traditions encoded strategy-like patterns in mythology. The framework translates them as the 7 exhaustive operators on the finite-node $P_{\text{node}} = \Phi \times V$ option surface. There are exactly 7 actions: 4 mixed-sign operators (2 Gods + 2 Demons) and 3 same-sign Executive boundary frames.
+The framework translates recurring strategy-like patterns into a selected
+seven-role dispatch vocabulary on the finite-node
+$P_{\text{node}} = \Phi \times V$ option surface: four mixed-sign operational
+moves and three same-sign Executive boundary witnesses. This is a model choice,
+not an exhaustive action census or a derivation from perennial traditions.
 
-### The 4 Mixed-Sign Operators (2 Gods + 2 Demons: Giving and Taking)
+### The 4 Mixed-Sign Operational Moves
 These actions spend one axis across the self ↔ other boundary to yield the opposite on the other axis.
 
-| God | Action | Function |
+| Operator token | Action | Function |
 |-----|--------|----------|
 | **Kali 🎲 (L1)** | $+\Delta\Phi_{self}$, $-\Delta V_{other}$ | Raises own $\Phi$ by draining the other's V. The parasitic/immune 4th slot — lawful immune move against defectors at $\eta > 0$. |
 | **Kālī 💀 (L2)** | $+\Delta V_{self}$ by $-\Delta\Phi_{false}$ | Lowers false $\Phi$ to raise her V. The truth-cut. Excises false meaning, recovering viability. |
@@ -105,9 +126,13 @@ These actions move both axes together. They are phases of being.
 | **Śiva • (L6)** | $-\Delta\Phi$, $-\Delta V$ | Lower both. Structure and fuel release together (dissolution). |
 | **Viṣṇu ⊙ (L7)** | $\approx\Delta\Phi$, $\approx\Delta V$ | Balance both. Hold the pattern alive (preservation). |
 
-**Seven actions.**
+**Seven named roles.**
 
-That is the model's closed strategy set. Every situation on the sphere is addressed by one of these seven restorative operators. They cover every sign-combination of $(\Delta\Phi, \Delta V)$ on the finite-node $P_{\text{node}} = \Phi \times V$ option surface. There is no eighth.
+The four operational moves occupy the four declared mixed-sign cells. The
+three Executive roles are separately selected boundary witnesses. Magnitudes,
+zero components, mixtures, stochastic policies, multi-agent coalitions, and
+other domain-native actions remain possible; the grammar makes no “no eighth”
+claim about reality.
 
 ---
 

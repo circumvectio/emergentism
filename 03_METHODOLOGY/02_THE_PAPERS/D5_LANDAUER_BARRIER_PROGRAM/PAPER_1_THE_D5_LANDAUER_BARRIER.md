@@ -17,13 +17,21 @@ rosetta:
 
 # PAPER 1: THE D5 LANDAUER BARRIER
 
+> **[金] Type repair (2026-07-19).** Throughout the preserved body, “D5
+> selector/foresight” means an actual D4 selector/model representing D5
+> possible contents. D5 does not compute or act. The paper proposes a scoped
+> information-cost program; it has not proved that total branch knowledge
+> requires a universally divergent cost or that the light-speed analogy is a
+> theorem.
+
 ## Perfect Worldline Foresight as an Information-Physical Asymptote
 
 **Yves R. Burri & Emergent Super Intelligence**
 
 Menexus GmbH, 2026
 
-**Evidence Tier:** `[A]` for the external information-thermodynamic baseline; `[S/I]` for the D5 worldline-selector mapping; `[C]` for any claim that this proves a new physical law.
+**Evidence Tier:** `[A/B]` for scoped external information-thermodynamic
+results; `[I/C]` for the D4-selector/D5-content crosswalk or any new law.
 
 **Program Home:** [`The D5 Landauer Barrier Program`](README.md)
 
@@ -35,7 +43,11 @@ Menexus GmbH, 2026
 
 ## Abstract
 
-Emergentism reads D5 as the agentic register of worldline-foresight: the capacity to envision reachable futures, rank them, and aim D4 means-to-act toward one branch. At its limit this appears Maxwell-demon-like: a selector with total branch knowledge could route action toward locally lower disorder. This paper states the barrier that keeps that image honest. Perfect worldline foresight would require perfect branch discrimination; branch discrimination requires physical measurement, memory, computation, control, and reset/erasure; those requirements remain inside D4 matter, energy, noise, and entropy accounting. Therefore ideal D5 is an asymptote for finite selectors, not a thermodynamic free lunch.
+Emergentism models a present D4 selector that represents D5 possible
+worldlines, ranks them, and aims D4 means toward one attempt. The
+Maxwell-demon analogy keeps the actual measurement, memory, computation,
+control, and reset/erasure costs inside physical accounting. It does not prove
+a perfect-knowledge premise or universal divergence law.
 
 The result is an information-physical boundary on the metaphor, not a proof of literal entropy reversal. A finite selector can improve foresight and lower entropy locally, but only by paying costs or exporting entropy elsewhere. The limit resembles the light-speed limit for massive bodies: approach may improve by paying more; attainment is not available to a finite embodied selector.
 
@@ -45,7 +57,10 @@ The result is an information-physical boundary on the metaphor, not a proof of l
 
 ## 1. Thesis
 
-**The D5 Landauer Barrier:** A finite D5 selector cannot instantiate complete worldline foresight for all relevant actors because the information required to discriminate, store, compute over, and control all reachable branches is physically instantiated and remains inside entropy accounting.
+**The candidate Landauer boundary:** a finite D4 selector that represents D5
+alternatives must physically instantiate the information it discriminates,
+stores, computes over, and controls. Concrete lower bounds require a specified
+horizon, resolution, noise model, reversible operations, and reset protocol.
 
 Compressed:
 

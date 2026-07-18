@@ -35,6 +35,13 @@ This file also obeys two stronger rules:
   incompatible meanings, the reconciliation and scope notes win over legacy
   shorthand.
 
+> **[金] Geometry/value seam.** `η = 0` is a declared diagnostic and Justice
+> constraint, not a theorem of the reciprocal chart, the sphere, an equator, or
+> `L(x)`. Geometry may visualize a policy choice; it cannot make that choice
+> ethical, incentive-compatible, or enforced. Justice is assessed separately by
+> named bearers, authorization, consent, custody, contestability, exit, payer,
+> beneficiary, and receipted consequences.
+
 ---
 
 ## 1. SoResFi -- The Four-Layer Stack
@@ -192,7 +199,10 @@ reconciliation freeze is cleared.
 | Governance tokens ARE the currency | Whales buy votes with liquidity |
 | Stablecoins pegged to fiat | Tied to legacy extraction surface (Fed policy) |
 
-SoResFi: ZAI holders govern. SKY users transact. Neither contaminates the other. The separation IS `η = 0` at the monetary layer.
+SoResFi: ZAI holders govern. SKY users transact. Keeping those functions
+separate can reduce one class of capture surface, but it does not by itself
+establish `η = 0` or Justice. Those require separately specified constraints,
+enforcement, and receipts.
 
 ---
 
@@ -300,14 +310,18 @@ Because 100 is human-scale:
 - NOT access rights (entry carries no toll on access or participation -- `η = 0` on entry)
 - Pure economic claim on the organism's trophic output
 
-### Token Distribution IS the B-Score
+### Token Distribution as a Candidate Diagnostic
 
-| Distribution | η (Extraction) | B (Balance) |
+| Illustrative distribution | Candidate extraction risk | Candidate balance reading |
 |--------------|------------------|-------------|
-| 1 person holds 99 tokens | η --> 1 | B --> 0 |
-| 10,000 people hold 0.01 each | η --> 0 | B --> 1 |
+| 1 person holds 99 tokens | high concentration risk | low distributional balance |
+| 10,000 people hold 0.01 each | lower concentration risk | higher distributional balance |
 
-Maximum balance = maximum distribution = maximum network value. Concentration of LP-100 increases `η`, which breaks the flywheel. The system's health depends on distribution.
+Distribution is one input to an extraction audit, not an identity with `η`,
+Justice, or network value. Broad distribution can coexist with coercion or hidden
+costs; concentrated custody can be temporary, consented, and contestable. The
+diagnostic must therefore name payers, beneficiaries, control rights, exit, and
+observed consequences.
 
 ---
 
@@ -339,7 +353,7 @@ The organism has three revenue streams, each mapped to a Three-Stage Process fun
 |---------|--------|
 | Revenue trigger | Portfolio performance vs benchmark |
 | Fee structure | Performance participation on alpha ONLY (0% base fee, no management fee) |
-| Principle | If the organism does not perform, it does not eat. `η = 0` is skin in the game. |
+| Principle | If the organism does not perform, it does not eat. Performance-only pricing is a proposed alignment mechanism; it does not alone prove `η = 0` or Justice. |
 
 ### Revenue Distribution (Real-Time Flow)
 
@@ -413,7 +427,10 @@ Every material action in SoResFi must pass three gates. These are not policies -
 
 ## 10. L(x) = x/(1-x) -- The Rate Curve That Governs Everything
 
-Every rate in the organism -- interest, leverage, risk multipliers, position sizing, demurrage -- follows L(x). Postulated as a self-limiting rate function; its connection to S² geometry is analogical and heuristic, not a rigorous derivation. [C]
+The design proposes `L(x)` for several rates -- interest, leverage, risk
+multipliers, position sizing, and demurrage. Its connection to S² geometry is
+analogical and heuristic, not a rigorous derivation, and each application needs
+independent calibration. [C]
 
 ```
   L(x)
@@ -445,7 +462,10 @@ Every rate in the organism -- interest, leverage, risk multipliers, position siz
 | 0.90 | 9.00 | Critical. 9x leverage. Liquidation imminent. |
 | 0.95 | 19.0 | Catastrophe. System cannot survive perturbation. |
 
-**L(x) as circuit breaker:** The curve is self-limiting. As x approaches 1, L(x) approaches infinity. The system CANNOT over-lever because the math forbids it.
+**L(x) as circuit-breaker candidate:** As `x` approaches `1`, `L(x)` diverges.
+That makes the curve a possible penalty schedule; it does not prevent
+over-leverage unless the measured variable, parameterization, and enforcement
+path are correctly bound to real transactions.
 
 **Where L(x) governs:**
 - SKY interest rate: 5% base x L(utilization)
@@ -454,17 +474,23 @@ Every rate in the organism -- interest, leverage, risk multipliers, position siz
 - Position sizing: max position = 1/L(concentration)
 - Bonding curve pricing: price = 1 + L(utilization)
 
-This is why the equator is the operating point. Why demurrage (once implemented) pushes idle ZAI away from x=0. Why low transparency halts capital (prevents x approaching 1). Why Grace Exit exists (escape before catastrophe). The curve is the organism's immune system expressed as mathematics.
+The equator is a selected design reference point. Demurrage, transparency
+halts, and Grace Exit are separately authorized mechanisms with separate
+evidence burdens; they do not follow from the curve or its geometry.
 
 ---
 
-## 11. η = 0 -- Zero Extraction as Game-Theoretic Dominance
+## 11. η = 0 -- Declared Constraint and Testable Mechanism
 
-`η = 0` is not ethics. It is architecture. It is the dominant strategy.
+`η = 0` is a declared no-extraction constraint and a diagnostic family. It is
+not derived from geometry, is not sufficient for Justice, and is not an
+unconditional dominant strategy.
 
-### Why η = 0 Wins
+### Participation hypothesis behind the constraint
 
-In exponential networks, value scales as N-squared x log(compute). Extraction (`η > 0`) reduces N. Shrinking N collapses N-squared FASTER than extraction grows revenue.
+One proposed mechanism is that extraction reduces participation and thereby
+destroys network value faster than it raises fee revenue. The table below is an
+illustrative scenario, not an empirical law or a proof of dominance.
 
 | η | N | N-squared | Fee Revenue | Net Value |
 |-----|---|-----------|-------------|-----------|
@@ -472,7 +498,10 @@ In exponential networks, value scales as N-squared x log(compute). Extraction (`
 | 2% | 500,000 | 2.5 x 10^11 | 2% of smaller base | 75% loss |
 | 10% | 100,000 | 10^10 | 10% of tiny base | 99% loss |
 
-Every subscription gate eventually dies because the gate limits N. The organism charges zero for access and fees only on value created. Maximum N = maximum network value = positive spiral.
+Some access tolls can reduce participation; others may fund a service users
+voluntarily value. The design choice here is zero access toll plus fees on
+demonstrated value creation. Whether that choice widens durable mutual option
+cones is an empirical and Justice-audited question.
 
 ### How η = 0 Is Enforced
 
@@ -484,11 +513,19 @@ Every subscription gate eventually dies because the gate limits N. The organism 
 | **Performance-only fees** | Revenue only from demonstrated value creation. |
 | **LP-100 fixed supply** | Target invariant. Do not treat as live canon until supply and mint-path reconciliation is complete. |
 | **Grace Exit (K4)** | Target safety property. Current guaranteed exit language is frozen. |
-| **K2 signing** | Target sovereignty property. Strong “human signs every action” guarantees remain frozen until enforcement is verified. |
+| **Private-DAV K2 signing** | Target private-DAV authorization property. Strong “human signs every action” guarantees remain frozen until enforcement is verified; public DAV authorization belongs to PRISM and its constitutional council rail. |
 
-The enforcement is structural, not behavioral. The geometry forbids extraction inside the model. A square cannot be negative. The equatorial condition (`η = 0`) is structurally stable. Extraction (`η > 0`) requires leaving the equator, which costs more energy than it yields.
+These mechanisms are intended to enforce the declared constraint, but none is
+self-enforcing merely because a model or diagram represents it. Extraction is
+detected from flows, rights, costs, and receipts; enforcement depends on
+authorization, observability, contest paths, and effective sanctions.
 
-**Note on mechanism enforcement:** Under pure public goods, `η = 0` dominance is proved (AM-GM on S²). Under private side-payments, it requires mechanism enforcement (Three Gates) to remain incentive-compatible. DSIC holds if and only if `Pr(detect) × slash > private benefit`.
+**Note on mechanism enforcement:** AM-GM or S² geometry proves no economic
+dominance result here. In a specified game, incentive compatibility requires an
+explicit actor model, payoff function, information structure, detection model,
+and enforcement rule. `Pr(detect) × slash > private benefit` is at most a
+simplified deterrence condition under stated assumptions, not an iff theorem of
+the whole system.
 
 ---
 
@@ -544,7 +581,7 @@ The canonical invariants that govern the financial system. No governance vote ca
 |------|-----------|-----------------|
 | **η = 0** | Zero extraction | No fee on access. Protocol layer charges exactly zero issuance, transfer, or redemption fees. Revenue only at application layer from demonstrated value. |
 | **K1** | LP-100 = 100 | Target invariant. Treat fixed-supply / no-mint language as frozen until implementation and canon fully agree. Skyzai's LP-100 tokens are called ZAI. |
-| **K2** | Sovereignty | Intended model: human-signature sovereignty for private DAVs and constitutional constraints for organizational DAVs. Strong guarantee language remains frozen until verified end-to-end. |
+| **K2** | Private-DAV sovereignty | Intended only for private DAV human-signature governance. Public DAVs have no K2 signer and use PRISM plus their constitutional natural-person council authorization. Strong guarantee language remains frozen until verified end-to-end. |
 | **K4** | Grace Exit | Frozen claim (2026-04-14): Grace Exit must NOT be described as guaranteed full-NAV redemption until reserve, payout asset, and solvency mechanics are reconciled. |
 | **K5** | Value conservation | Value conserved across every transfer. No silent destruction. |
 | **K6** | Minimum stake | Sybil attack prevention. |

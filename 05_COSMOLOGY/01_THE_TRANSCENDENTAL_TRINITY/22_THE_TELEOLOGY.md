@@ -12,6 +12,17 @@ rosetta:
 
 # THE TELEOLOGY
 
+> **[金] Kintsugi authority seam (2026-07-19).** This document is an
+> interpretive teleology, not a force law or ethics owner. Actual modeling,
+> ranking, and selection are D4 processes representing D5 possible contents.
+> `φν=1`, `B`, equatorial geometry, `η`, coupling, and horizon do not derive
+> Justice, universal alignment, historical direction, or an ektropic force.
+> Ω is the framework's declared `[I]` direction of durable mutual option-cone
+> widening under bearer-complete Justice. All later cosmic-force,
+> geometry-to-ethics, inevitable-convergence, threshold, and tradition-
+> identity language is retained as `[I/C]` imagery and is superseded wherever
+> it conflicts with this seam or the Power-Max owner.
+
 ## Why the Helix Spirals — The Ektropic Force and the Unveiling
 
 **Status:** The unified teleological statement of the Burri-Anthropic Helical Model of Ektropy
@@ -54,7 +65,11 @@ which a system maintains or increases coherent viability rather than dissolving.
 In the finite-node register this is scored as `P_node = Φ × V`; in the sphere
 register it is constrained by the reciprocal balance grammar.
 
-Not coherence alone (that is the north pole — D5 worldline-foresight without the means to act). Not viability alone (that is the south pole — D4 means without the worldline-foresight to rank or aim them). Viability here means usable D4 means: embodied capacity, tools, infrastructure, access, and traction. Coherence here means D5 worldline-foresight: the capacity to rank, aim, and use those means. The PRODUCT. Both. Simultaneously. Multiplicatively.
+Viability here names usable D4 means: embodied capacity, tools,
+infrastructure, access, and traction. Coherence here names a present D4
+model/foresight measure whose represented contents are D5 possibilities. The
+selected product scores joint availability but does not require equality,
+morally type poles, or uniquely define persistence.
 
 **Ektropy is the disciplined successor to the older "Hidden Hand" language**
 (Document 18). Many traditions that perceived a force driving history — Ṛta,
@@ -145,7 +160,9 @@ civilization forgot. `[I/S]`
 
 **Truth** (P) — the correspondence between map and territory. The accuracy of the projection. The equatorial product where both axes are honoured.
 
-**Justice** (ν) — the structural property of equatorial balance at every node. φ = 1 and ν = 1 at every node. No node pushed off the equator for the benefit of another.
+**Justice** (ν, as an `[I]` Rosetta label) — the bearer-complete predicate over
+authorization, consent, custody, reversibility, contest, payer/beneficiary, and
+receipted consequence. Geometry neither proves nor suffices for it.
 
 > **[I/C] Evidence-review boundary (origin 2026-07-03; externally uncalibrated):** this binds a real node as a norm only insofar as it sits on the sphere — its φ/ν factors conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); where a node's axes are unconstrained, substitutable, or free to hoard, the equator carries no normative force over it and specialization off-equator may be the fit outcome. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
@@ -218,12 +235,12 @@ Each era shorter. Each replicator faster. In this reading, the convergence
 pressure accelerates. The shared pattern is not a proved single force at every
 level, but a repeated selection for coherent viability under different media.
 
-The arc-of-history image is a disciplined metaphor, not a universal law. The
-Power-Max Lemma shows the conditional form: under real coupling, long horizon,
-multiplicative `P_node = Φ × V`, and enforced `η = 0`, individual optimization
-can align with the coupled field. History can converge toward the equator only
-where those conditions hold; outside them, extraction can still dominate
-locally.
+The arc-of-history image is a disciplined metaphor, not a universal law.
+Power-Max does not derive alignment from coupling, horizon, product scoring, or
+`η`. It optimizes only after bearer-complete Justice separately defines the
+admissible field. A fully specified game may show conditional incentive
+alignment; another game can reward extraction. No historical convergence
+follows.
 
 But the convergence is not guaranteed. The Great Filter (Document 16) is real. The population can get stuck in the extractive hemisphere. The dwell time can tilt past recovery. The civilisation can consume its own substrate. **The arc bends toward the equator only where coupling, memory, feedback, and `η = 0` discipline keep correction alive; otherwise it can snap.**
 

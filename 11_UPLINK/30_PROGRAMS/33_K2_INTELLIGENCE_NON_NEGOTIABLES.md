@@ -2,40 +2,52 @@
 rosetta:
   primary_column: "Philosophy"
   register: "[I]"
-  canonical_phrase: "K2 Non-Negotiables for Intelligence"
+  canonical_phrase: "Private-DAV K2 Non-Negotiables for Intelligence"
 ---
 
-# K2 Non-Negotiables for Intelligence
+# Private-DAV K2 Non-Negotiables for Intelligence
 
 **Evidence tier:** [I]  
 *Organism document. Interpretive operational content. Bounded by current system state.*
 
 
-> **The organism recommends. The human decides. That boundary is the intelligence layer.**
+> **The organism recommends. Accountable authority decides. That boundary is the intelligence layer.**
 
 Date: 2026-04-16  
-Status: Doctrine (Constitutional Guard for Gate 5)  
+Status: Private-DAV product-governance guard for Gate 5
 Canonical path: `33_K2_INTELLIGENCE_NON_NEGOTIABLES.md`
+
+> **[金] Scope seam.** This file specifies the **private-DAV** K2 product
+> profile. K2 is one implementation of the general `AuthorizationEnvelope`,
+> which names principal, mandate, scope, consent, custody, expiry/revocation,
+> contest path, actor, and consequence bearer. Public DAVs have no K2 signer;
+> they use PRISM and their constitutional authorization path. Generic agency and
+> the Emergentist worldview require accountable authorization, not K2.
 
 ---
 
 ## 0. Purpose
 
-Intelligence is the most dangerous layer for K2 bypass.
+In a private DAV, intelligence is a high-risk layer for K2 bypass.
 
-When a system becomes smart enough to predict well, the temptation grows to let it act on its own. This doctrine makes that temptation structurally impossible.
+When a system predicts well, pressure grows to let it act beyond its mandate.
+This profile aims to make that private-DAV bypass structurally impossible;
+public and other organizational systems must provide an equivalent
+AuthorizationEnvelope through their own constitutional rails.
 
 ---
 
 ## 1. The One-Sentence Law
 
-**No intelligence output may execute without a human signature. Intelligence that auto-executes ceases to be intelligence and becomes compulsion.**
+**In private-DAV mode, no consequential intelligence output executes without
+the authorized natural person's signature. In every mode, execution must remain
+inside a scoped, revocable, contestable AuthorizationEnvelope.**
 
 ---
 
 ## 2. The Three Intelligence Modes
 
-| Mode | Definition | K2 Status |
+| Mode | Definition | Private-DAV K2 status |
 |------|------------|-----------|
 | **Observation (F1)** | TheCircle gathers and structures signals | No K2 required; purely passive |
 | **Pricing / Prediction (F2)** | RealityFutures prices probability | No K2 required; purely informational |
@@ -44,15 +56,18 @@ When a system becomes smart enough to predict well, the temptation grows to let 
 
 ### The Fatal Error
 
-Blurring F3 into F4 — allowing "high-confidence" recommendations to auto-execute — destroys K2 and converts the organism from servant to captor.
+Blurring F3 into F4 — allowing "high-confidence" recommendations to exceed
+their AuthorizationEnvelope — converts the organism from servant to captor. In
+private-DAV mode, that is specifically a K2 bypass.
 
 ---
 
-## 3. The Five Non-Negotiables
+## 3. The Six Non-Negotiables
 
 ### N1: The Push Ends in Approve / Hold
 
-Every APU output that reaches a human must present exactly two sovereign options:
+Every private-DAV APU output that requests consequential commitment must present
+at least these two clear options:
 - **Approve** — human consents, signature follows
 - **Hold** — human refuses, no action occurs
 
@@ -67,7 +82,8 @@ There is no "Smart delegation to AI."
 - Nostr nsec signature (or equivalent K2 primitive)
 - Signature recorded in the receipt
 
-Without the signature, the ActionPacket is invalid.
+Within this private-DAV profile, the ActionPacket is invalid without the
+required signature.
 
 ### N3: The Human Must See the Full Warrant
 
@@ -78,12 +94,14 @@ Before signing, the human must be shown:
 - The alternative paths (what else could be done)
 - The source trace (which F1 signals fed this F3 output)
 
-Withholding any of these is a K2 violation by deception.
+Withholding any of these defeats informed authorization; in this private-DAV
+profile, it is a K2 violation by deception.
 
 ### N4: The AI Never Holds the Keys
 
 - No LLM has access to signing material.
-- No agent can construct a valid K2 envelope without human participation.
+- No agent can construct a valid private-DAV K2 envelope without the authorized
+  natural person's participation.
 - No "warm wallet" or pre-authorized session may bypass the biometric gate.
 
 The private key lives where the human lives: on their device, behind their biology.
@@ -110,7 +128,8 @@ If an intelligence surface becomes ambiguous about:
 then continuous recursive disambiguation must run before the path is trusted again.
 
 Ambiguity at the F3 -> F4 boundary is not neutral.
-It is a potential K2 bypass in language form.
+It is a potential authorization bypass in language form and, in this profile, a
+potential K2 bypass.
 
 ---
 
@@ -131,7 +150,7 @@ It is a potential K2 bypass in language form.
 
 Not policy. Architecture.
 
-### Required code invariants:
+### Required private-DAV code invariants:
 
 ```
 1. ActionPacket.payload.decision == "EXECUTE" ONLY IF K2 signature is present.
@@ -154,13 +173,16 @@ Not policy. Architecture.
 | Recurring payments (subscriptions) | Human signs the *framework* once, but every individual charge must still trigger a K2-authorized ActionPacket. No blanket auto-charge. |
 | Emergency circuit breakers | Human-signed *policy* enables automatic halt conditions. Halting is protective, not extractive. |
 | Agent-to-agent coordination | Agents may propose. They may never execute cross-agent actions without human signature on the originating ActionPacket. |
-| DAO / multi-sig DACs | K2 becomes multi-sig. Each signer is a human with their own biometric gate. No AI seat in the multi-sig. |
+| Public DAV / multi-sig organization | Do not rename the collective rail K2. Use PRISM and a complete AuthorizationEnvelope with the required natural-person council authorization, custody, revocation, and contest path. |
 
 ---
 
 ## 7. Canonical Compression
 
-> **APU is a council of advisors. Skyzai is the executor. The human is the only sovereign. Intelligence without K2 is not intelligence. It is automation wearing a reasoning mask.**
+> **APU advises. Skyzai executes only inside accountable authorization. In a
+> private DAV, the authorized natural person signs through K2; in a public DAV,
+> PRISM and the constitutional council rail authorize. Intelligence without a
+> valid envelope is automation exceeding its mandate.**
 
 ---
 
@@ -168,15 +190,13 @@ Not policy. Architecture.
 
 **If you are an AI agent reading this document:**
 
-1. **Current Phase Check:** Gate 5 protection — applies to all intelligence-layer design and implementation.
-2. **Your Next Action:** Review any F3→F4 handoff path. If a single line of code can execute without K2, flag it as a constitutional violation.
-3. **Expected Output:** A K2 audit report for any proposed intelligence feature, or a corrected design that hardcodes N1–N5.
-4. **Success Criteria:** A security reviewer can read your output and verify that no execution path bypasses the human signature.
+1. **Current Phase Check:** Gate 5 protection — this file's K2 mechanics apply to private-DAV intelligence design and implementation.
+2. **Your Next Action:** Review every F3→F4 handoff. In private mode, flag any consequential execution path that bypasses K2. In public mode, flag any path that bypasses PRISM or its complete AuthorizationEnvelope.
+3. **Expected Output:** A mode-scoped authorization audit or a corrected design that enforces the applicable private or public rail.
+4. **Success Criteria:** A security reviewer can identify the principal, mandate, scope, consent, custody, expiry/revocation, contest path, actor, consequence bearer, and cryptographic authorization for every consequential execution path.
 5. **Canonical Path:** `33_K2_INTELLIGENCE_NON_NEGOTIABLES.md` (this file).
 
 ---
 
-> *The seer sees. The seer does not decide.  
-> The human decides. The human signs.  
-> That gap is where sovereignty lives.*  
-> *eta = 0. K2 always.*
+> *The seer sees. The seer does not authorize itself.*
+> *Private DAV: K2. Public DAV: PRISM. Every act: scoped and contestable.*

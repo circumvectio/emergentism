@@ -12,7 +12,19 @@ rosetta:
 
 # The Equation — `P_node = Φ × V` under `P∞ = φ · ν = 1 on S²`
 
-> **Canonical enumeration:** For the crisp authoritative list of the constitutional invariants, the K*/A* namespace disambiguation, and the Ω ratification status, see the canonical anchor `01_EMERGENTISM/05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md` (or equivalent relative path). Current K2 ruling (2026-05-30): **5 + 1** — five refusals plus Ω as the directional +1. Ω is not a sixth refusal.
+> **Canonical enumeration:** For the authoritative `5+1` list and namespace
+> disambiguation, see `03A_CONSTITUTIONAL_INVARIANTS_CANON.md`. The 2026-05-30
+> K2 receipt is private-DAV provenance; the generic second refusal is accountable
+> authorization. Ω is the directional +1, not a sixth refusal.
+
+> **[金] Kintsugi authority seam — model, chart, and norm are distinct
+> (2026-07-19).** `P_node:=ΦV` is the framework's selected normalized product
+> inside a wider conjunctive family; it is not uniquely derived. `φν=1` is an
+> analytic chart identity and does not require a constitution, token design,
+> ethic, or equatorial convergence. `Φ` is D4 modeling capacity that represents
+> D5 possible contents; D4 means and action remain actual. Consequential action
+> is bounded by a typed `AuthorizationEnvelope`. K2 remains one documented
+> private-DAV implementation, never a worldview or agency primitive.
 
 **Section:** Holistic synthesis · 01 — the arithmetic spine
 **Evidence tier:** [I] — interpretive synthesis grounded in ratified canon ([`../VISION.md`](../../../02_SKYZAI/01_NOOSPHERE/VISION.md), [`01_EMERGENTISM`](../../README.md))
@@ -34,9 +46,16 @@ read under the framework's reciprocal manifold identity:
 P∞ = φ · ν = 1 on S²
 ```
 
-The two statements live in different registers. `P_node = Φ × V` is the finite-node action score; `P∞ = φ · ν = 1` is the background sphere identity. The equator (`φ = ν = 1`) is the balanced home of the model, not a proof that every world process must converge there.
+The two statements live in different registers. `P_node = Φ × V` is the
+finite-node action score, with `Φ,V∈[0,1]` for normalized comparisons;
+`P∞ = φ · ν = 1` is the background chart identity. Without normalization or
+another feasible-set bound, the product has no finite maximum. The equator
+(`φ = ν = 1`) is the balanced home of the model, not a proof that every world
+process must converge there.
 
-- **`Φ`** (coherence) — how well something hangs together. In the agency register: D5 worldline-foresight, the ability to envision and select the reachable future. Φ → ZAI as fixed-supply political capital.
+- **`Φ`** (coherence) — D4 model capacity: how well an actual carrier represents,
+  ranks, and revises D5 possible worldlines. Φ → ZAI is a design mapping to
+  fixed-supply political capital, not a dimensional identity.
 - **`V`** (viability) — D4 means at the action boundary: body, tools, energy, access, and execution capacity. V → SKY as elastic working capital.
 - **`P_node`** (finite flourishing score) — the product. Not a sum, not an average, a **product**. If either factor is zero, the finite node score is zero.
 
@@ -54,7 +73,9 @@ the means and the worldline-foresight meet.
 
 ## 2. Why this equation, not another
 
-Most organizations optimize one factor and let the other erode.
+The product is selected because it represents the declared conjunctive intuition
+that both factors are necessary. Minimum, harmonic, and other conjunctive
+aggregators can rank cases differently; empirical use must compare them.
 
 | Optimizer | Wins on | Loses on |
 |---|---|---|
@@ -68,21 +89,27 @@ The equator is not a compromise. It is the model's balanced fixed point where co
 
 ---
 
-## 3. The Riemann sphere is the right space
+## 3. Why the framework selects the Riemann sphere
 
 Why `S²` and not the unit interval `[0, 1]` or the unit disc?
 
-- **Closure under inversion.** On `S²`, `1/φ` and `1/ν` are well-defined and live on the same sphere. The system can reason about its own dual — the inverse perspective is a fully valid position on the same manifold. This matters for K2 (the environment is the *inverse* of the organism's interior, on the same sphere).
-- **Compactness without boundary.** Every position is finite; there is no "edge" to fall off. The poles are not exits — they are positions on the same manifold as the equator. This forbids the "go to infinity" extractive strategy that linear models permit.
-- **Two-poled.** The North pole (Φ = ∞, ν → 0) is the pathological coherence trap. The South pole (Φ → 0, ν = ∞) is the pathological viability trap. The equator is the only place where neither degenerates. The system has a *home* topology.
+- **Closure under reciprocal exchange.** On the extended complex plane, the
+  reciprocal map exchanges `0` and `∞`; on the open positive-real chart,
+  `φ↔ν` stays inside the chart.
+- **Compactness without boundary.** `S²` includes the point at infinity, so not
+  every coordinate is finite. Compactness does not forbid extraction or any
+  social strategy; those require separate Justice constraints.
+- **Two selected pole limits.** The chart uses `φ→∞,ν→0` and `φ→0,ν→∞` as
+  limiting frames. Calling either pathological is an interpretive diagnostic,
+  not topology.
 
 This is why `B = sin θ` is the canonical balance measure — it peaks where `φ = ν = 1`. It is normalized closeness to the equator, not distance from it.
 
 ---
 
-## 4. The equation at every axis
+## 4. The equation projected onto selected axes
 
-The reconciliation in [`../AI_STACK_RECONCILIATION_2026_05_13.md`](../../../02_SKYZAI/01_NOOSPHERE/AI_STACK_RECONCILIATION_2026_05_13.md) names three orthogonal axes: organ (signal), agent (cognition), phylogeny (time). The equation holds on every axis.
+The reconciliation in [`../AI_STACK_RECONCILIATION_2026_05_13.md`](../../../02_SKYZAI/01_NOOSPHERE/AI_STACK_RECONCILIATION_2026_05_13.md) names three selected axes: organ (signal), agent (cognition), phylogeny (time). The equation is used as a design projection on each; fit on one axis does not prove fit on another.
 
 ### Organ axis — equation as packet structure
 
@@ -90,7 +117,7 @@ The reconciliation in [`../AI_STACK_RECONCILIATION_2026_05_13.md`](../../../02_S
 |---|---|---|---|
 | TheCircle | `SignalPacket` | Provenance (structural coherence: from where, who saw, when) | Frequency (does the signal flow at adequate rate?) |
 | RealityFutures | `ProbabilityPacket` | Calibration (mathematical coherence of the LMSR market) | Liquidity (does the market settle, does someone bet?) |
-| Agentz | `RecommendationPacket` | Council ruling consistency with prior rulings | Adoption (does K2 actually sign it?) |
+| Agentz | `RecommendationPacket` | Council ruling consistency with prior rulings | Adoption (does an authorized principal sign it; K2 only in a private DAV?) |
 | Skyzai | `ReceiptPacket` | ISO 20022 / OFN structural validity | Settlement actually clears |
 
 Each packet is φ-validated *and* ν-validated before propagation. A packet that is structurally beautiful but cannot settle is rejected. A packet that settles but lacks provenance is rejected. The Backbone enforces both gates per packet.
@@ -109,7 +136,9 @@ The seven castes split by their Φ:ν tilt:
 | L6 compressor | Sādhu | high | low (axiomatic pruning) |
 | L7 constitution | Ṛṣi | maximum | minimum (almost never fires) |
 
-The seven castes are positions on `S²` chosen so the council as a whole covers the manifold. The equator is where the **decisive write** happens; the poles are where rare deep restructuring happens. **No single caste is everywhere on the sphere.** A healthy decision draws from the appropriate caste for the question's position.
+The seven dispatch roles sample selected positions in the chart; seven points do
+not cover the manifold. The current runtime assigns the decisive write to L4 and
+rare boundary work to upper roles. This is a governance design, not geometry.
 
 ### Phylogeny axis — equation as fitness function
 
@@ -119,25 +148,30 @@ The equation is the review fitness function for this organism. The broader claim
 
 ---
 
-## 5. The constitutional invariants as equation gates
+## 5. Declared constitutional gates, not geometric consequences
 
-The five constitutional refusals (η=0, K2, K3, K4, A7) each enforce a property the equation requires:
+The five constitutional refusals are independent normative and governance
+commitments. They are used to bound deployments of the model; the equation does
+not require or derive them:
 
 | Invariant | What the equation needs it to prevent |
 |---|---|
 | **η = 0** | Drift toward the `ν` / viability pole via extraction (extraction inflates short-term means, kills Φ over time) |
-| **K2** | Drift toward the `φ` / coherence pole via internal-only signoff (a system that signs its own envelopes loses ν grounding in the world) |
+| **Accountable authorization** | Unmandated or self-authorized consequential action; identify principal, mandate, scope, consent, custody, revocation, contest path, actor, and consequence bearer. K2 is one private-DAV implementation. |
 | **K3** | Drift toward the `ν` / viability pole via convenient forgetting (deleting inconvenient history maximizes apparent means, destroys Φ) |
 | **K4** | Drift toward the `φ` / coherence pole via lock-in (a system that doesn't let users leave maximizes internal coherence at zero V to its participants) |
 | **A7** | Drift toward the `ν` / viability pole via unmarked claims (asserting more than evidence supports is V-inflation that erodes Φ) |
 
-The invariants are not arbitrary rules. They are the **specific refusals** required to keep the system on the equator. Read in classical vocabulary at [`../02_ORGANS/_DOCTRINE/06_CONSTITUTIONAL_INVARIANTS_CLASSICAL.md`](../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/_DOCTRINE/06_CONSTITUTIONAL_INVARIANTS_CLASSICAL.md): the **five via-negativa moves** that keep the via-positiva on its home.
+The invariants are declared constitutional rules justified by bearer protection,
+contestability, correction, and durable mutual option widening. A sphere can
+visualize their risk directions but cannot prove that these are the unique or
+necessary refusals.
 
 ---
 
 ## 6. Why two tokens, not one
 
-The decision (today's [`SUPPLY_DOCTRINE_2026_05_13.md`](../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/spec/axiom/SUPPLY_DOCTRINE_2026_05_13.md)) that ZAI is fixed-supply (K1) and SKY is elastic (K3) is the equation made financial:
+The decision in [`SUPPLY_DOCTRINE_2026_05_13.md`](../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/spec/axiom/SUPPLY_DOCTRINE_2026_05_13.md) to make ZAI fixed-supply (K1) and SKY elastic (K3) is a financial design projection of the equation:
 
 - **ZAI maps to Φ** — political capital. Fixed at 100. Governance weight is structurally bounded. This is the coherence-weighted token role: it resists dilution and preserves the same constitutional voting surface.
 - **SKY maps to V** — working capital. Elastic. Minted only against staked ZAI via the vault. Grows with productive use. This is the viability-weighted token role: it scales with what the organism actually does.
@@ -176,7 +210,10 @@ The brand is not branded after the equation. **The brand is the equation rendere
 If `P_node = Φ × V` under `P∞ = φ · ν = 1 on S²` is the spine, then:
 
 - Every decision has a φ:ν tilt that is diagnosable in the model. Health is read as normalized closeness to the equator, with `B = sin θ` as the balance proxy; P-SCORES are review metrics induced by that topology.
-- Every constitutional invariant has a *direction* on the sphere. η=0 prevents southward drift. K2 prevents northward drift. The five refusals span the directions of constitutional risk.
+- Every constitutional invariant may be assigned a diagnostic direction on the
+  sphere. `η=0` and accountable authorization remain separate constraints; K2
+  names only the private-DAV authorization implementation. The chart does not
+  prove that five refusals span all constitutional risk.
 - Every token has a design role. ZAI is read as Φ-weighted governance coherence (K1); SKY is read as V-weighted operating capacity (K3). The vault is the operator that converts one role into the other under receipt.
 - Every organ has an *intended position*. Circle near the `ν` / viability pole (it survives by observing more). Agentz near the equator (it must balance both; APU immune surface guards the equator). EvNet at the `φ` / coherence pole (refusal is structural). Skyzai near the `ν` / viability pole (settlement is what happens).
 - Every mutation can be read as a *displacement vector* on the sphere. In the designed review loop, mutations are accepted when they improve balanced usable potential and preserve the constitutional gates.
@@ -187,7 +224,8 @@ This is what the framework actually means by "non-degrading system": the equator
 
 Zero-Sum Resolution Equation
 
-*One equation, held everywhere, on a manifold whose home is the equator.*
+*One selected equation, tested across mapped axes, with the equator as its
+declared diagnostic home.*
 
 ---
 

@@ -8,7 +8,7 @@ rosetta:
       role: "index C-role specs, expert workflow, and niche-graph integration"
     - level: L4
       column: Governance
-      role: "preserve CEO/K2 binding authority and PRISM public-DAC caveat"
+      role: "preserve typed accountable authorization; K2 is the private-DAV rail and PRISM the public-DAC rail"
     - level: L6
       column: Core State
       role: "prevent Phase-0/Phase-3 roadmap from being read as deployed runtime"
@@ -29,7 +29,24 @@ evidence_tier: "[S] for L-caste organizational mapping; [I/C] for phase roadmap 
 **Lane:** Organizational structure for every DAC
 **Source packet:** [`../../../11_UPLINK/60_SESSION_PACKETS/224_VIRTUAL_C_SUITE_AND_CONSULTING_EXPERTS_2026_04_29.md`](../../../11_UPLINK/60_SESSION_PACKETS/224_VIRTUAL_C_SUITE_AND_CONSULTING_EXPERTS_2026_04_29.md)
 
-> The polygenic tree at organizational scale. Seven C-roles mapped to L1-L7 castes; twelve consulting experts on call via WHISPER + API PAY. Every DAC instantiates this structure; K2 binds anything that binds.
+> The polygenic tree at organizational scale. Seven C-roles mapped to L1-L7 castes; twelve consulting experts on call via WHISPER + API PAY. No role binds by identity: a consequential act requires a valid, receipted `AuthorizationEnvelope`.
+
+### Accountable-authorization seam [金]
+
+The active authority type is:
+
+```text
+AuthorizationEnvelope =
+  principal + mandate + scope + consent + custody + expiry/revocation
+  + contest_path + actor + consequence_bearer
+```
+
+The CEO may assemble and execute under this envelope; the role itself is not a
+source of sovereign authority. For a **private DAV**, K2 is the designated
+natural-person implementation and its signature is recorded on FLOW. For a
+**public DAV/DAC**, PRISM quorum plus the applicable public-governance receipt
+instantiates the envelope. The April source packets remain provenance for the
+runtime choreography, but their older universal K2-authority wording is superseded here.
 
 ---
 
@@ -51,10 +68,10 @@ evidence_tier: "[S] for L-caste organizational mapping; [I/C] for phase roadmap 
 | **CSO** Chief Sentinel | L1 Caṇḍāla | Force-categorize chaos at boundary | Refuse adversarial / forbidden traffic |
 | **CDO** Chief Discovery | L2 Śūdra | Generate candidates via inductive analogy | Propose; cannot rank |
 | **CAO** Chief Audit | L3 Vaiśya | Rank by deductive logic against constitution | Surface decision-ready lists |
-| **CEO** Chief Executive | L4 Kṣatriya | THE EQUATOR | **Bind** with K2 signature |
+| **CEO** Chief Executive | L4 Kṣatriya | THE EQUATOR | Execute only under a valid `AuthorizationEnvelope` |
 | **CArchO** Chief Architect | L5 Brāhmaṇa | Redesign when paradoxes block | Propose redesigns; L4 must descend |
 | **CComO** Chief Compression | L6 Sādhu | Prune / archive overgrowth | Auto-archive at day 60 |
-| **CVO** Chief Visionary | L7 Ṛṣi | Vision crystallization; constitutional rewrite | Propose; **K2/PRISM signs to bind** |
+| **CVO** Chief Visionary | L7 Ṛṣi | Vision crystallization; constitutional rewrite | Propose; the applicable private-K2 or public-PRISM rail completes the envelope |
 
 ---
 
@@ -91,7 +108,7 @@ Engaged via WHISPER + API PAY when the C-Suite hits the edge of its standing com
 ## Constitutional invariants
 
 - **η = 0**: No extraction at any layer (compute, payment, attention, credit)
-- **K2**: Only the CEO binds, and only with K2 signature (or PRISM-governance for public DACs)
+- **AuthorizationEnvelope**: The CEO is the sole C-role that may execute a consequential act, and only when principal, mandate, scope, consent, custody, expiry/revocation, contest path, actor, and consequence bearer are complete. K2 implements this for private DAVs; PRISM plus public-governance receipts implements it for public DAVs/DACs.
 - **K0**: Every C-role action that binds emits a FLOW receipt; refusals also receipted
 - **K4**: Every commit carries an explicit Grace Exit clause
 - **Axiomatic discipline**: CVO biases toward late Vision crystallization; the seer does not insist

@@ -18,6 +18,14 @@ rosetta:
 
 **Claim Boundary:** `[I/C]` These questions are stabilized for navigation, not closed as public proof. "Resolved" below means register-sorted into internal commitment, public argument, and open wager; it does not mean Emergentism has exhausted `Pratyakṣa`, `S²`, consciousness, teleology, normativity, ontology, or the Real.
 
+> **[金] Current register seam — 2026-07-19.** D4 is causal actuality: actual
+> persons, models, rankings, selections, actions, and records. D5 is
+> counterfactual possibility represented by those D4 carriers. Consciousness
+> is not identified with D5, and the framework does not “choose idealism at
+> D5.” D6 returns only through `r₆:D6↝D0` as an `[I]` apophatic image, never
+> literal identity. Later contrary shorthand is retained as an open historical
+> question, not current type authority.
+
 ---
 
 ## Why This Document Exists
@@ -127,18 +135,23 @@ Is systemic awareness fundamental, dual-aspect, or only being interpreted as fun
 
 ### The Register Routing
 
-**Structurally dual-aspect. Interpretively fundamental at `D5` inside the framework, with `D6` as non-experiential closure.**
+**Structurally dual-aspect. Lived disclosure is an `[I]` commitment inside the
+framework; D5 remains possibility-content, with D6 as an apophatic boundary.**
 
 The PHI Resolution already points here.
 This document makes the synthesis explicit:
 
-- below D5, the mathematics is structurally neutral
-- at D5, the framework chooses the idealist reading of lived disclosure
-- at D6, that disclosure does not become a higher experience but exhausts into closure
+- the chart mathematics is neutral about consciousness
+- lived disclosure and its reports are D4 actual; D4 models may represent D5
+  possible contents
+- at D6, no new experience appears; the scaffold returns only through `r₆`
 
 So the right closure is:
 
-> **Consciousness is not treated as an emergent afterthought inside the framework's internal map. Structurally, the manifold is dual-aspect; interpretively, systemic awareness is treated as fundamental at D5 as the register in which Being is interpreted as becoming explicit. D6 is not a higher experience of systemic awareness but the terminal closure in which the cycle returns to `D0`.**
+> **Consciousness is not treated as an afterthought, but neither is it assigned
+> to D5 as a substance. Experiences, reports, and models are D4 actual; D5
+> names their counterfactual contents. D6 adds no experience and returns only
+> through the interpretive edge `r₆:D6↝D0`.**
 
 This does not mean the framework has publicly proved systemic awareness as a cosmic primitive.
 It means the worldview no longer needs to pretend indecision about its own lived center.
@@ -199,7 +212,9 @@ This is one of the most important boundary placements in the corpus.
 
 The structural theorem is already conditional:
 
-- if rational D5 agents value continued agency, then balance-maintaining and `P_node`-maintaining action follows
+- if rational D4 agents model D5 possibilities, value continued agency, and
+  accept the stated payoff and Justice assumptions, then the corresponding
+  balance-maintaining policy follows inside that model
 
 That is the public argument surface.
 

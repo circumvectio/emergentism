@@ -35,9 +35,9 @@ superseded_blob: "268ea128303e2c5417412b6ef391243a8722c8fd"
 
 In SI units,
 
-[
-alpha=rac{e^2}{4piarepsilon_0hbar c},
-]
+\[
+\alpha=\frac{e^2}{4\pi\varepsilon_0\hbar c},
+\]
 
 and its low-energy value is approximately `1/137.036`. It is dimensionless
 and controls perturbative electromagnetic interaction strengths. In the usual

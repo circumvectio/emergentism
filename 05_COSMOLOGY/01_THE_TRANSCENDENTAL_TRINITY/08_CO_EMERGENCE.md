@@ -21,6 +21,13 @@ rosetta:
 **See also:** All paradox dissolutions (02_PARADOX_DISSOLUTIONS/), The Honest Position, [Canonical Formula Block](../00_CANONICAL_FORMULA_BLOCK.md)
 **Kill Criteria:** If a paradox is found that cannot be dissolved by the move from flat to curved — one that persists on S² in the same form it has on the line — the method's universality claim falls. The method itself (co-emergence) survives as long as a single paradox dissolves.
 
+> **[金] Scope seam — 2026-07-19.** The universality claim has fired and is
+> retracted. Compactification resolves or reframes particular mathematical
+> singularities only under their own definitions; it does not dissolve every
+> logical, semantic, physical, or philosophical paradox. A successful Rosetta
+> projection is an `[I]` comparison, never proof transfer. The selected sphere
+> and frame-product emblem do not derive D0–D6, Justice, or the territory.
+
 ---
 
 ## The Insight
@@ -41,7 +48,7 @@ This is what 05_DIVISION_BY_ZERO.md demonstrates for one case. This document tes
 
 ## The Pattern
 
-Every paradox in the history of philosophy has the same architecture:
+The framework tests the following pattern against selected paradoxes:
 
 1. Two things that should relate **cannot** relate
 2. The failure generates a "problem"
@@ -50,9 +57,15 @@ Every paradox in the history of philosophy has the same architecture:
 
 The framework identifies why: **the problem is stated on the wrong manifold.** The two things cannot relate because the manifold is flat. On a flat manifold, opposites are infinitely far apart. They cannot meet. Their relationship is "undefined" or "indeterminate" — exactly the way `0 × ∞` remains indeterminate in ordinary field arithmetic.
 
-The dissolution is always the same move: **curve the manifold.** On a curved manifold, opposites are antipodes — 180° apart, finitely separated, connected by the curvature. Their relation can be drawn through the equator; the ZSRE frame-product is symbolic / structural, not field arithmetic.
+One possible reframe is to **change the representation**. Where a problem is
+specifically caused by affine or projective omission, compactification may make
+a formerly missing relation representable. Other paradoxes require their own
+logic, semantics, physics, or phenomenology; curvature alone does not solve
+them. The ZSRE frame-product is symbolic / structural, not field arithmetic.
 
-The move from flat to curved does not **answer** the question. It **dissolves** the question by revealing that the question's architecture was an artifact of flatness.
+Where the stated assumptions apply, the move from flat to curved may reveal
+that part of a question was an artifact of the chosen representation. That is
+a local result, not a universal dissolution method.
 
 ---
 
@@ -114,7 +127,10 @@ The move from flat to curved does not **answer** the question. It **dissolves** 
 
 **On the sphere (curved):** Determinism and freedom are dual projections. The ν-projection sees causal chains — every event has a cause. The φ-projection sees coherence — every event has a meaning. On S², both are true simultaneously. The future is causally determined (seen from ν) AND freely chosen (seen from φ). These are not contradictory. They are complementary descriptions of the same point on the manifold.
 
-**The co-emergence:** The moment you have a system complex enough to model and select among its own possible acts (D5 agency / selection; consciousness as lived reading `[I]`), you have both the causal description (looking from outside) and the freedom description (looking from inside). The "problem" of free will is the collision of these two descriptions on a plane where they cannot coexist. On the sphere, they coexist as antipodal projections. The collision and the resolution are co-emergent.
+**The proposed co-emergence:** An actual D4 system able to represent D5
+possible acts can be described causally from outside and experientially from
+inside. Reading those descriptions through the selected sphere is `[I]`; it
+neither proves libertarian freedom nor makes consciousness a D5 actor.
 
 **Evidence tier: [I].**
 

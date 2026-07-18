@@ -38,16 +38,16 @@ Actions often look beneficial inside a narrow boundary and harmful after
 distant, delayed, ecological, institutional, or third-party consequences are
 included. A **consequence horizon** is therefore a useful audit variable:
 
-[
-mathcal H(a)=(mathcal B(a),T,mathcal I,mathcal U),
-]
+\[
+\mathcal H(a)=(\mathcal B(a),T,\mathcal I,\mathcal U),
+\]
 
 where:
 
-- (mathcal B(a)) is the declared set of materially affected bearers;
+- \(\mathcal B(a)\) is the declared set of materially affected bearers;
 - `T` is the temporal horizon;
-- (mathcal I) records information and observation limits; and
-- (mathcal U) records uncertainty, missing bearers, and model error.
+- \(\mathcal I\) records information and observation limits; and
+- \(\mathcal U\) records uncertainty, missing bearers, and model error.
 
 Expanding this horizon can reveal hidden costs. It does not guarantee that one
 scalar total becomes positive, that every effect is measurable in one unit, or
@@ -75,9 +75,9 @@ and option cones can differ among agents inside it. See
 
 ## 3. Justice precedes aggregation
 
-Let (mathcal B(a)) include every materially affected person, whole, payer,
+Let \(\mathcal B(a)\) include every materially affected person, whole, payer,
 beneficiary, and exposed third party. Bearer-complete Justice is checked
-conjunctively. An aggregate such as (sum_bDelta W_b) may be reported as a
+conjunctively. An aggregate such as \(\sum_b \Delta W_b\) may be reported as a
 diagnostic only after every bearer is visible; it cannot compensate for an
 unconsented destroyed bearer or make the act moral.
 
@@ -93,12 +93,11 @@ that those bearers matter is still a declared Justice commitment. Neither
 thermodynamics nor a radius derives that commitment. The repaired relationship
 is:
 
-[
-	ext{better consequence model}
-;
-otRightarrow;
-	ext{moral theorem},
-]
+\[
+\text{better consequence model}
+\;\not\Rightarrow\;
+\text{moral theorem},
+\]
 
 but better evidence can expose when an action violates an already declared
 norm.

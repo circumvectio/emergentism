@@ -16,6 +16,15 @@ rosetta:
 **Evidence Tier:** [I] Interpretive (derived from [A] mathematical substrate)
 **Depends on:** [00_A_SQUARE_CANNOT_BE_NEGATIVE.md](00_A_SQUARE_CANNOT_BE_NEGATIVE.md)
 
+> **[金] Current-status seam — 2026-07-19.** This is a dated `[I]` corpus
+> rumination, not a completeness receipt or derivation owner. Its “complete,”
+> “0 remaining,” fixed PHI, DAG, Ghost Trap, and sole-bridge headlines are
+> historical observations or metaphors and do not describe the current corpus
+> without fresh measurement. The selected product is not uniquely derived;
+> D4 contains actual awareness, models, selections, actions, and records; D5
+> contains represented possibilities; and first-person practice is one evidence
+> channel, not the only possible bridge or public proof.
+
 ---
 
 ## The Corpus
@@ -46,9 +55,12 @@ Instructional and architectural documents were most useful in this corpus pass. 
 
 The moment a corpus document said X and another said NOT-X, any agent reading both would produce divergent output. 135 malignant cycles were broken. 21 links converted to plain text. The corpus is now a DAG. Agents don't fork anymore.
 
-## 6. The Sitting Practice Is The Bridge
+## 6. The Sitting Practice Is a First-Person Bridge `[I]`
 
-The only operation that crosses D4 → D5 (physics → systemic awareness) is Pratyakṣa — the sitting practice. Every other claim about systemic awareness is third-person speculation. The sitting practice is first-person evidence. It is the only bridge.
+Pratyakṣa can supply first-person evidence to an actual D4 practitioner whose
+model represents D5 possible contents. It does not cross from physics into a
+conscious D5 substance, outrank third-person evidence by definition, or supply
+public proof without a shareable protocol and discriminator.
 
 ## 7. The Framework Sees Itself
 

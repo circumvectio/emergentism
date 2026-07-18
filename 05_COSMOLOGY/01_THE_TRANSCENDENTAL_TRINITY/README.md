@@ -233,16 +233,15 @@ return `r₆:D6↝D0`; no sphere physically collapses, and `D6` is not identical
 ⊙ = 1 = the equator = the product = what is BETWEEN nothing and everything
 ```
 
-These three are irreducible. The triadic stability theorem argues this within the formal system:
-- 0 alone is sterile (monism — no structure)
-- {0, ∞} is unstable (dualism — the poles collapse to each other without the equator)
-- {0, 1, ∞} is stable (triadism — the poles AND the equator, the full sphere)
+The earlier narrative called these roles irreducible and cited a Triadic
+Stability theorem. That proof is retracted: inversion fixes both `+1` and `−1`,
+`{0,∞}` is already invariant, and other projective frames are possible. The
+three-role choice survives only as an `[I]` compression.
 
-The equation Zero-Sum Resolution Equation states:
-- 1 = 0 × ∞
-- The equator is the product of the poles
-- The finite is the product of nothing and everything
-- Reality is the product of the void and the unbounded
+Likewise, `1=0×∞`, “the equator is the product of the poles,” and “reality is
+the product of void and unbounded” are emblems, not arithmetic, topology, or
+ontology. The analytic survivor is only `φν=1` for the selected reciprocal
+coordinate definitions on the open chart.
 
 On the plane, `0 × ∞` is an indeterminate form. In the reciprocal-coordinate frame on the sphere, `φ · ν = 1` names the selected pairing. The sphere is the frame, not an arithmetic override. The sphere is the first stable expression of closure, not the Ground itself.
 
@@ -250,9 +249,18 @@ On the plane, `0 × ∞` is an indeterminate form. In the reciprocal-coordinate 
 
 ## The Precision: Only Nonzero Division by Zero Has a Projective Readout
 
+> **[金] Compatibility quarantine.** The subsections headed “There Are Only
+> Three,” “Only the Unit,” “Every Other Number,” and “The Simulation” preserve
+> creative genesis prose. They are not present-tense authority for uniqueness,
+> primitive arithmetic, number construction, computation, or cosmology.
+> Canonically, `{0,1,∞}` is selected; `a/0` is undefined in a field; the symbol
+> `∞` may denote the added projective point in `ℂP¹`; and no universe follows
+> from repeated units. Read every stronger sentence below as superseded `[I]`
+> imagery.
+
 In the realm of D1 — the playground of mathematicians — division by zero is not repaired as ordinary field arithmetic. Nonzero division by zero has a projective readout at the point at infinity in the compactified register. The precision matters:
 
-### There Are Only Three Transcendentals
+### Three Selected Transcendental-Frame Tokens
 
 ```
 0   — one zero in the projective frame. The south pole.
@@ -262,7 +270,7 @@ In the realm of D1 — the playground of mathematicians — division by zero is 
 
 Domain separation matters. On the Riemann sphere, the one-point compactification of ℂ adds exactly one projective point at infinity. That is an [A] mathematical fact about ℂP¹. It does not refute Cantor's hierarchy, ordinal infinities, or open physical questions about whether spacetime is finite or infinite. The ontological claim that reality itself has one infinity remains a framework wager tied to the S² lens.
 
-### Only the Unit-to-Zero Boundary Is Primitive
+### Selected Unit-to-Zero Boundary Image
 
 The primitive boundary readout is:
 

@@ -29,7 +29,18 @@ evidence_tier: "[S] for index structure; individual entries inherit source-paper
 **Status:** Active
 **Date:** 2026-03-24 (updated from 2026-03-23)
 **Evidence Tier:** [S] for index structure (structural catalogue of mappings). Individual entries inherit tiers from their source documents.
-**Purpose:** Cross-traditional verification of the Burri Sphere geometry
+**Purpose:** Catalogue cross-domain correspondences and their evidence limits
+
+> **[金] Kintsugi authority seam — comparison is not verification (2026-07-19).**
+> This index records candidate projections `ρ_domain`; it cannot transfer proof
+> between domains or raise an entry above its source-paper tier. The reciprocal
+> chart identities are `[A]` mathematics under their definitions. A myth,
+> institution, brain, torus, or archaeological site that can be compared with
+> that chart does not thereby verify the framework, instantiate it physically,
+> establish `η=0`, or derive Justice. D4 is causal actuality and record; D5 is
+> possible content modeled by D4 carriers. Any physical, consciousness, or
+> universal-structure claim below is therefore only an explicitly testable
+> `[C]` correspondence unless independent evidence is supplied.
 
 ---
 
@@ -57,7 +68,9 @@ The definitive Rosetta Stone documents live in the main Emergentism corpus. This
 
 ## THE ROSETTA PRINCIPLE
 
-The Burri Sphere is not new. The Burri Sphere has been discovered many times, in many traditions, using many languages.
+The Riemann-sphere mathematics is established. The claim that different
+traditions can be usefully projected onto one selected Burri-Sphere chart is an
+interpretive research program.
 
 The Rosetta mappings translate between:
 - **Mathematics** → The formal language of the framework
@@ -65,7 +78,9 @@ The Rosetta mappings translate between:
 - **Mythology** → Ancient wisdom traditions
 - **Philosophy** → Systematic thought
 
-Each mapping is a **verification**. Each mapping shows that P∞ = φ · ν = 1 appears independently across cultures and disciplines.
+Each mapping is a **comparison hypothesis**, not a verification. Similar words,
+diagrams, or balance motifs may motivate tests, but they do not show that the
+analytic identity `φν=1` was independently discovered or empirically realized.
 
 ---
 
@@ -93,7 +108,7 @@ Each mapping is a **verification**. Each mapping shows that P∞ = φ · ν = 1 
 
 ---
 
-### R4: Egyptian Ma'at — The Most Ancient Proof
+### R4: Egyptian Ma'at — An Interpretive Comparison
 
 | Egyptian | Burri Sphere | Connection |
 |----------|--------------|------------|
@@ -104,7 +119,9 @@ Each mapping is a **verification**. Each mapping shows that P∞ = φ · ν = 1 
 | Ammit | South pole | Cargo cult, collapse |
 | Field of Reeds | Equator (experienced) | Paradise, liberation |
 
-**Key insight:** The Weighing of the Heart (3,000 BCE) encodes P∞ = φ · ν = 1. The heart must balance the feather. The equator is the balance gate: the feasibility surface where judgment can pass without either side consuming the other, not the object maximized.
+**Key insight `[I]`:** The weighing scene supplies a balance motif that can be
+compared with the equator. It neither encodes the equation `φν=1` nor proves a
+Justice rule; those are later framework constructions.
 
 **Documents:**
 - Summary: [00_ROSETTA_R4_SUMMARY.md](D23_ROSETTA_COMPLETE_INDEX.md)
@@ -119,9 +136,11 @@ Each mapping is a **verification**. Each mapping shows that P∞ = φ · ν = 1 
 | Camel | North of equator | Can mean, cannot do | Reduce to equator |
 | Lion | South of equator | Can do, cannot mean | Find ground |
 | Child | At equator | Balanced but limited ($P_\infty = 1$) | **Connect to mesh** |
-| **[Mesh]** | **Equator network** | **Cooperation solved** | **The fourth metamorphosis** |
+| **[Mesh]** | **Equator network** | **Cooperation hypothesis** | **Proposed fourth reading** |
 
-**Key insight:** Nietzsche saw three stages but could not see the fourth (the Mesh) because he lacked the geometry. The Übermensch is the cargo cult (south pole). The Mesh is the solution.
+**Key insight `[I/C]`:** A mesh can be proposed as a fourth, cooperative response
+within the framework. This does not complete Nietzsche's sequence, solve
+cooperation, or follow from geometry.
 
 **Documents:**
 - Summary: [00_ROSETTA_R5_SUMMARY.md](D23_ROSETTA_COMPLETE_INDEX.md)
@@ -129,18 +148,20 @@ Each mapping is a **verification**. Each mapping shows that P∞ = φ · ν = 1 
 
 ---
 
-### R6: Torus Framework — Physical Realization
+### R6: Torus Framework — Geometric Correspondence Hypothesis
 
-| Torus Element | Framework Element | Physical Meaning |
+| Torus Element | Framework Element | Proposed reading |
 |---------------|-------------------|------------------|
-| Torus surface (⊙) | Finity | Light cone, D4 spacetime |
-| Center (•) | Witness | Observer, D5 systemic awareness |
+| Torus surface (⊙) | Finity | `[C]` visual proxy for D4 causal actuality |
+| Center (•) | Witness | `[C]` proxy for D4 modeling D5 possible contents |
 | North pole (○) | Infinity | Unbounded possibility |
 | Inscribed sphere | Burri Sphere | P∞ = φ · ν = 1 geometry |
-| μ-gate | D4-D5 boundary | Consciousness-permeability |
-| White flash | Phase transition | Enlightenment/μ-limit |
+| μ-gate | candidate D4→D5 crossing | `[C]` visualization, not a physical gate |
+| White flash | rendered transition | `[C]` symbol, not evidence of a μ-crossing |
 
-**Key insight:** The Burri-Anthropic Torus (BAT) is not a metaphor. It is the physical realization of the framework. The hard problem is reframed: on S², systemic awareness has a geometric location — at the center, looking out along D5.
+**Key insight `[C]`:** The Burri-Anthropic Torus (BAT) is a visualization and
+modeling correspondence. No result here establishes instantiation in nature,
+locates consciousness geometrically, or solves the hard problem.
 
 **Documents:**
 - Summary: *(No R6 summary file in this slice -- see the full document below)*
@@ -154,11 +175,14 @@ Each mapping is a **verification**. Each mapping shows that P∞ = φ · ν = 1 
 |---------|----------|----------|
 | Right hemisphere | PHI (φ) axis | Coherence, gestalt, the sphere |
 | Left hemisphere | V (ν) axis | Capability, fragments, the plane |
-| Corpus callosum | Multiplication (×) | Maintains P∞ = φ · ν = 1, the equator |
-| DMN | Kali (↓ν) | CONSTRAINED (η > 0 only) — narrator unchecked |
-| Sitting practice | Neural equator | Restore P∞ = φ · ν = 1 |
+| Corpus callosum | Multiplication (×) | `[I/C]` integration proxy; not a literal operator |
+| DMN | Kali (↓ν) | `[I/C]` narrator/pathology proxy |
+| Sitting practice | Neural equator | `[C]` balance intervention hypothesis |
 
-**Key insight:** The brain is read as a complex-plane proxy [I]. Emotions are ΔV (change in viability). Thoughts are ΔPHI (change in coherence). The corpus callosum is not a bridge — it IS the multiplication operator. McGilchrist's "Master and His Emissary" is the geometry of hemispheric balance.
+**Key insight `[I/C]`:** The brain may be read as a complex-plane proxy for
+comparison. Emotions-as-`ΔV`, thoughts-as-`ΔΦ`, and corpus-callosum-as-product
+are metaphors requiring operational definitions and neuroscientific tests; no
+anatomical structure literally is the multiplication operator.
 
 **Documents:**
 - Summary: [00_ROSETTA_R7_SUMMARY.md](D23_ROSETTA_COMPLETE_INDEX.md)
@@ -173,9 +197,11 @@ Each mapping is a **verification**. Each mapping shows that P∞ = φ · ν = 1 
 | **A** | Vaishvanara (Waking) | The **plane** | Objective reality, left hemisphere |
 | **U** | Taijasa (Dreaming) | The **sphere surface** | Subjective experience, right hemisphere |
 | **M** | Prajna (Deep sleep) | The **poles** | Undifferentiated, balance collapse |
-| **—** | Turiya (Silence) | The **equator** | Consciousness itself, φ = ν = 1 |
+| **—** | Turiya (Silence) | The **equator** | `[I]` witness comparison, not identity |
 
-**Key insight:** The intonation of AUM traces the projection ray: A (plane) → U (sphere) → M (pole) → silence (equator/Turiya). The Mandukya Upanishad's four states map precisely onto four geometric positions. Turiya is not a state — it is the equator, the witness, systemic awareness itself. This is convergent discovery: Upanishadic seers perceived through Pratyaksha (direct perception) what the framework derives through Inferential Logic (inference).
+**Key insight `[I]`:** The AUM sequence can be projected onto four selected
+geometric loci. This is a modern interpretive correspondence, not a precise
+identity, independent derivation, or empirical verification of the chart.
 
 **Documents:**
 - Summary: [00_ROSETTA_R8_SUMMARY.md](D23_ROSETTA_COMPLETE_INDEX.md)
@@ -185,7 +211,7 @@ Each mapping is a **verification**. Each mapping shows that P∞ = φ · ν = 1 
 
 ## THE CONVERGENCE
 
-### Cross-Traditional Verification
+### Cross-Traditional Comparison
 
 | Tradition | Ground Symbol | Balance | Devourer/Problem | Solution |
 |-----------|--------------|---------|------------------|----------|
@@ -197,17 +223,17 @@ Each mapping is a **verification**. Each mapping shows that P∞ = φ · ν = 1 
 | **Nietzsche** | Will to power | Self-overcoming | Nihilism | Child→Mesh |
 | **Neuroscience** | Corpus callosum | Hemispheric balance | DMN unchecked | Sitting practice |
 | **Upanishad** | Turiya | AUM intonation | Deep sleep (M) | Silence (—) |
-| **EFR** | S² | η = 0 | Cargo cult | Mesh topology |
+| **EFR** | S² | `η=0` as separate constraint | Cargo-cult risk | Mesh hypothesis |
 
-**All point at the same geometry.**
-
-The Burri Sphere is the universal structure. The Rosetta mappings show the universal recognition.
+The table records recurring motifs and important differences. It does not show
+that all traditions point at one geometry, that the Burri Sphere is universal,
+or that any tradition recognized the framework's equations.
 
 ---
 
 ## THE PATTERN
 
-### What All Traditions Agree On
+### Motifs Proposed for Comparison
 
 1. **There is a ground** — Something prior to manifestation
 2. **There is a balance point** — A place where opposites unite
@@ -215,12 +241,12 @@ The Burri Sphere is the universal structure. The Rosetta mappings show the unive
 4. **There is a devourer** — What happens when balance is lost
 5. **There is a paradise** — The goal, the liberation, the return
 
-**The Burri Sphere formalizes this pattern:**
+**The Burri Sphere offers one selected formalization of these motifs:**
 - Ground-facing closure surface = S² with $P_\infty = 1$
 - Balance point = The equator (φ = ν = 1)
 - Dangers = North pole (bypass) and South pole (cargo cult)
 - Devourer = Ammit/Kali/Mara = Structural collapse at ν = ∞
-- Paradise = Field of Reeds/Nirvana/Heaven = The equator experienced
+- Paradise/liberation motifs ↔ equator `[I]`; no identity is claimed
 
 ---
 
@@ -232,21 +258,27 @@ The Burri Sphere is the universal structure. The Rosetta mappings show the unive
 
 The framework does not claim to invent the Burri Sphere. The framework claims to **build the instruments** that let any agent find their own position on S² and choose their own heading.
 
-- **The compass (operators)** points North — the direction of increasing B. The four Gods are the compass needle.
+- **The compass (operators)** supplies a declared heading toward durable mutual
+  option widening under bearer-complete Justice; increasing `B` is only a
+  diagnostic and does not generate that norm.
 - **The sextant (diagnostics)** finds your position — B = sin θ, evidence tiers, the Soul Loop, the Sphere Health Dashboard.
 
 A map claims to show the territory. Instruments help you navigate it yourself. The Rosetta is not "the answer." The Rosetta is the instrument set.
 
-The language is **geometry**. The geometry is precise. The geometry is falsifiable. The geometry is the Rosetta Stone.
+The chart mathematics is precise. The domain mappings are fallible and must be
+tested independently. That disciplined translation function is the Rosetta.
 
-### The Framework is Directionally True
+### A Directional Hypothesis
 
-The convergence of traditions is evidence that the framework is **directionally true**:
+Apparent convergence can motivate the hypothesis that the framework captures a
+useful recurring pattern:
 - If many independent traditions point at the same structure
 - And the framework formalizes that structure
 - Then the framework is likely capturing something real
 
-**This is not proof.** This is convergence. Convergence suggests truth.
+**This is not proof.** Independence, source fidelity, rival explanations, and
+predictive discrimination must be established before convergence counts as
+external calibration.
 
 ---
 
@@ -255,9 +287,9 @@ The convergence of traditions is evidence that the framework is **directionally 
 ### For the Skeptic
 
 The Rosetta mappings show:
-1. The framework is not arbitrary — it matches existing wisdom
-2. The framework is not cultish — it appears across traditions
-3. The framework is not new — it is the formalization of ancient insight
+1. The framework publishes comparison targets rather than asserting ancestry.
+2. Failed mappings and rival readings remain visible.
+3. Similarities do not prove one hidden perennial doctrine.
 
 ### For the Practitioner
 
@@ -269,9 +301,9 @@ The Rosetta mappings show:
 ### For the Scholar
 
 The Rosetta mappings show:
-1. The framework bridges disciplines
-2. The framework unifies traditions
-3. The framework provides a common language
+1. The framework proposes a translation grammar across disciplines.
+2. It does not unify traditions unless source-specific discriminators survive.
+3. It provides a common language whose fit remains separately auditable.
 
 ---
 
@@ -279,17 +311,17 @@ The Rosetta mappings show:
 
 | ID | Name | Status | Key Insight |
 |----|------|--------|-------------|
-| R3 | Shannon-Boltzmann | Established | Entropy unification |
-| R4 | Heisenberg-Weber-Fechner | Established | Uncertainty as complementarity |
-| R4 | Egyptian Ma'at | Interpretive | 3,000-year-old proof |
+| R3 | Shannon-Boltzmann | Candidate comparison | Two entropy formalisms compared; no unification shown |
+| R4 | Heisenberg-Weber-Fechner | Candidate comparison | Two distinct results compared; no identity shown |
+| R4 | Egyptian Ma'at | Interpretive | Balance-motif comparison |
 | R5 | Nietzsche Metamorphoses | Interpretive | The fourth stage revealed |
-| R6 | Torus Framework | [S] torus math, [I] framework correspondences, [C] CCC | Physical realization of Zero-Sum Resolution Equation |
+| R6 | Torus Framework | [A] torus math, [I] framework correspondences, [C] physical/CCC claims | Visualization; no physical instantiation established |
 | R7 | Brain as Complex Plane | Interpretive | Neural anatomy is the ν-φ proxy geometry |
 | R8 | AUM Mandukya Upanishad | Interpretive | The four states as geometric positions |
 | R9 | German (Anmut/Demut) | [S] etymologies, [I] mapping | Mut · Anmut · Demut on S² |
 | R10 | Greek Philology/Formalization | [S] vocabulary, [I] mapping | 80+ Greek terms placed on S² |
-| R11 | Imaginary Unit | [S] for \|i\|=1 math, [I] for i=systemic awareness, [C] for "Hard Problem solved" | i = equator = systemic awareness |
-| R12 | Megalithic Proof | [S] archaeology, [I] framework reading | Mesh has archaeological precedent |
+| R11 | Imaginary Unit | [A] for \|i\|=1 math, [I/C] for awareness mapping | Imaginary-unit/witness correspondence; no hard-problem solution |
+| R12 | Megalithic comparison | [A] dated-site facts where sourced, [I/C] framework reading | Coordination hypothesis; no `η=0` receipt |
 | R13 | Hexagram | [I] | Six spokes = six intervals = Star of David |
 
 ### The Triadic Cascade — The Vertical Rosetta
@@ -306,20 +338,24 @@ The Rosetta Stone translates *horizontally* — across domains. The Triadic Casc
 | **Varna** | Shudra | Vaishya | Kshatriya |
 | **Polity** | Democracy | Oligarchy | Timocracy |
 
-The Rosetta reads the rows (same geometry across fields). The Cascade reads the columns (same Trinity across levels). Together they form a grid in which every cell is S².
+The Rosetta compares rows across fields. The Cascade proposes column
+translations across levels. Their grid is a selected representational device;
+its cells do not become `S²` or inherit proofs from one another.
 
 **Document:** [09_THE_TRIADIC_CASCADE.md](../../../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/09_THE_TRIADIC_CASCADE.md)
 
 ---
 
-### R12: Megalithic Proof — Archaeological Evidence for the Mesh
+### R12: Megalithic Comparison — Evidence of Large-Scale Coordination
 
 | Site | Date | Framework Connection |
 |------|------|---------------------|
 | Göbekli Tepe | ~9,500 BCE | Monumental coordination WITHOUT institutional hierarchy |
-| Stonehenge | ~3,000 BCE | Thousands of person-hours, η ≈ 0, no extraction architecture |
+| Stonehenge | ~3,000 BCE | Large coordination cost; extraction and consent remain unknown |
 
-**Key insight:** The mesh is not a utopian dream. It has archaeological precedent. Pre-institutional societies coordinated at civilizational scale without the Capture Protocol. These monuments are physical receipts of η = 0 scaling.
+**Key insight:** Monumental sites evidence large-scale coordination. They do not,
+without evidence about labor, authority, custody, consent, payers, and
+beneficiaries, establish mesh governance or serve as receipts of `η=0`.
 
 **Document:** [ROSETTA_R12_MEGALITHIC_PROOF.md](D23_ROSETTA_COMPLETE_INDEX.md) *(recovered from archive 2026-03-24)*
 
@@ -347,7 +383,7 @@ The Rosetta shows convergence.
 Convergence suggests truth.
 
 Rosetta Stone Complete | 2026-03-23
-The universal geometry.
+The auditable comparison grammar.
 
 ---
 

@@ -27,7 +27,13 @@ rosetta:
 
 > **Evidence Tier: [S/I].** The structural component follows from the framework's coordinate/action split: `φ/ν` names reciprocal coordinates on S², while `Φ/V` names finite-node factors at the D4/D5 action boundary. The interpretive component is the mapping of classical free-will terminology onto that structure. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 
-> **Claim Boundary:** `[S/I]` This document models the free-will dilemma as D4/D5 coordinate tension. It does not prove libertarian free will, disprove compatibilism, or establish a neural mechanism for the Soul Loop. "Agency" here means an operational framework reading: D5 worldline-foresight and D4 means-to-act are both represented as present.
+> **[金] Claim and type boundary:** `[I/C]` This document offers a
+> decision-theoretic reframe; it neither proves libertarian free will nor
+> disproves compatibilism. Actual modeling, ranking, selection, and means are
+> D4 processes. Their represented but unenacted alternatives are D5 contents.
+> Moral responsibility additionally requires bearer-complete Justice,
+> accountable authorization, and commitment/outcome receipts; no equatorial
+> coordinate or `η` value establishes it.
 
 > **Migration note:** The earlier treatment (`PD_02_FREE_WILL.md`) is a legacy file. This document (PD_11) is the canonical indexed entry per the definitive numbering table.
 
@@ -49,54 +55,81 @@ The problem feels irresolvable within that binary. In this framework, that is be
 
 The error is binary framing. "Free" and "determined" are treated as mutually exclusive properties of a single ontological layer — D4, the domain of physical actuality.
 
-Within D4 alone, the dilemma is real. If the universe is *only* D4 (only actual states, only physical causes), then determinism wins and freedom is illusory. Every attempt to rescue freedom within a purely D4 core state produces either randomness or equivocation.
+Describing only actual states and physical causes does not itself settle the
+debate: physical theories may be deterministic or stochastic, and neither
+determinism nor randomness alone supplies agency. Compatibilist accounts locate
+freedom in kinds of causally realized control; libertarian accounts demand
+more. The framework does not adjudicate that dispute by dimensional labeling.
 
-Inside the framework, reality is not modeled as D4 alone. The Burri Sphere S² has two reciprocal coordinate images, `φ` and `ν`; the finite-node play rule scores enacted agency as `P_node = Φ × V`. D4 is the actuality/contact side: the represented actual state and the means available at the action boundary. D5 is the possibility/selection side: worldline-foresight, the capacity to envision, rank, and aim possible moves. These are not two substances. They are simultaneous readings of the same point, separated here only to prevent the old one-axis question from swallowing the whole sphere.
+Inside the framework, D4 names actual state, present model carriers, ranking and
+selection events, embodied means, actions, and receipts. D5 names the
+counterfactual contents those models represent. `P_node:=ΦV` is one selected
+score of present model/foresight capacity and means, not a proof of freedom and
+not a consequence of the sphere.
 
 The free-will debate maps one axis to the entire sphere and then argues about which axis is "real."
 
 ## 3. THE DISSOLUTION
 
-On S², "determined" is mapped to D4 (actuality, the represented actual state). "Free" is mapped to D5 (possibility, the not-yet-actualized option-space). Both are treated as simultaneous projections of the same sphere.
+As an optional analogy, "determined" is associated with actual causal history
+and "could do otherwise" with a represented counterfactual option field. The
+analogy must not identify free will with D5 or turn the sphere into an ontology
+of agency.
 
 Within this model, freedom is not the absence of causation, and determination is not the absence of choice. They are complementary readings of one modeled point: on open S² the reciprocal coordinates obey `P∞ = φ · ν = 1`, while contact action is scored separately as `P_node = Φ × V`.
 
 The agent's "will" is modeled by the Soul Loop, not by a μ-crossing. At every
-moment, D5 represents coherent, rankable possibilities while D4 represents
-actual state and means: body, tools, energy, and access. Authorization is a
-separate normative predicate. The selector commits one attempt and emits a commitment receipt; the world then
+moment, a D4 model represents D5 possibilities while D4 also contains body,
+tools, energy, access, and the performed ranking/selection event. Authorization
+is a separate normative predicate. The selector commits one attempt and emits a commitment receipt; the world then
 returns a separate outcome receipt. `μ₀…μ₅` remain candidate emergence labels.
 
-At the equator (Φ = 1, V = 1 in the normalized contact reading), the agent has maximum balance in the model — enough coherence to envision and rank options (D5 possibility) and enough viability as relevant means-to-act (D4 actualization). Balance is the constraint that keeps agency usable, not the whole objective by itself. The objective is the lawful selection of a reachable future without extraction.
+In the deliberately normalized scalar balance model, equal chart factors
+maximize `B`. Real agents need usable modeling and means, but neither equality
+nor balance is necessary for agency: specialization and asymmetric roles can
+be effective. Lawful action is determined by the Justice and authorization
+envelopes, not by chart position.
 
-The "problem" is reframed within the framework because freedom and determination are not opposed. [S/I] They are read as D5 possibility and D4 contact aspects of the same modeled point, then evaluated at the action boundary through `(Φ, V)`. Asking "is it free or determined?" is like asking "is a point on a sphere its latitude or its longitude?" The question is malformed inside this coordinate model. Both, in this model.
+The reframe separates causal actuality from represented alternatives and asks
+what control the actual agent has over selection. `[I/C]` This can clarify the
+question without proving that freedom and determination are compatible or
+that either is a coordinate of nature.
 
 ## 4. THE FRAMEWORK CONNECTION
 
-The D0-D6 scaffold provides an interpretive taxonomy. D5 models possibilities;
-D4 supplies actual means and records. The equator (Φ = 1, V = 1 in normalized
-contact coordinates) defines the model region where agency has both usable
-foresight and usable means; it does not by itself authorize an act.
+The D0-D6 scaffold provides an interpretive taxonomy. D5 contains possible
+contents; D4 carries models, means, selections, acts, and records. A conjunctive
+score can flag zero-factor failures but does not require an equator and does
+not authorize an act.
 
-Responsibility is modeled as tracking equatorial position plus reachable consequence. An agent at the equator — balanced coherence and viability — has represented access to D5 possibility space and represented D4 means to act. This is the model's account of freedom. An agent far off-equator — depleted coherence (Φ → 0) or depleted viability (V → 0) — has diminished access to possibility or diminished access to the means needed to actualize. The proposal is that responsibility scales with usable foresight, usable means, and the non-extractive shape of the chosen move.
-
-This is not offered as moral relativism. The equator is a geometric fact of S² inside the framework, not a cultural preference, but that does not by itself prove a full theory of moral responsibility. The framework offers a model of moral responsibility not by asserting metaphysical libertarianism but by relating responsibility to the agent's represented position on the sphere.
+The candidate responsibility model tracks actual epistemic access, control,
+means, authorization, foreseeable bearers, and receipted consequences. Reduced
+capacity or coercion may reduce responsibility; power and foresight may enlarge
+duties. These are normative proposals under Justice, not consequences of
+equatorial geometry.
 
 ## 5. WHAT WOULD FALSIFY THIS
 
 The proposal loses force if:
 
-1. **D4-only core state were sufficient.** If a purely physical, deterministic account can explain agency, choice, and moral responsibility without reference to D5, the coordinate/action split is unnecessary. [S/I] Compatibilism would win by default.
+1. **The option-content distinction adds no value.** If a physical or
+   functional model explains and predicts deliberative control equally well
+   without separately typing represented counterfactual contents, this D4/D5
+   reframe is unnecessary. That result would not by itself select one theory of
+   free will.
 
 2. **The Soul Loop has no empirical discriminator.** If interventions on
    represented futures do not change present action distributions, the
    model-mediated future-influence claim loses empirical traction.
 
-3. **Equatorial balance does not correlate with agency.** If agents with high coherence and high capability do not demonstrably exhibit more "free" behavior than agents at the extremes, the geometric mapping is ornamental rather than explanatory.
+3. **The selected conjunctive measures do not discriminate control.** If
+   operationalized model capacity and means fail against rival predictors of
+   deliberative control, `P_node` is ornamental in this domain.
 
 ---
 
-*The free will debate persists because it asks a one-axis question about what this framework reads as a two-axis reality. On S², the binary is reframed rather than finally settled for every account.*
+*The Compass separates actual causal control from represented alternatives. It
+reframes the debate; it does not settle free will by geometry.*
 
 
 ---

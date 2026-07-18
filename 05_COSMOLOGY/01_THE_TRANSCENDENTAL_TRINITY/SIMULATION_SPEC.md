@@ -11,6 +11,16 @@ rosetta:
 
 # SIMULATION SPECIFICATION
 
+> **[金] Kintsugi visual/type seam — 2026-07-19.** This is a staged visual
+> grammar, not evidence that the animation exists in a live runtime or that the
+> depicted sequence is physically necessary. D4 contains actual embodied
+> awareness, models, selectors, means, actions, and records. D5 contains only
+> possible contents represented and ranked by those D4 systems; D5 is not
+> consciousness or an acting agent. D6 opens no positive freedom and returns
+> only through the non-μ interpretive edge `r₆:D6↝D0`. `S²`, Titans, force,
+> neural, AUM, and light-cone mappings are removable `[I/C]` correspondences;
+> they establish no physical dominance, ethic, ontology, or deployment.
+
 ## Six Animations — Six Degrees of Freedom
 
 **Date:** 2026-03-23
@@ -26,19 +36,21 @@ literal closure identity, or physical geometry.
 
 ## Overview
 
-Six animations. Each shows the emergence of one dimension from the previous. Each builds on the last. The sequence IS the core state.
+Six proposed animations depict one selected D-register scaffold. The sequence
+does not prove that nature must emerge this way or that the scaffold is a core
+state.
 
-Animation 5 (D4, causal actuality) and Animation 6 (D5, counterfactual
-possibility) already exist as the `#torus` and `#sphere` pages. Animations 1-4
-are new. Animation 7 depicts the interpretive `r₆` return to Animation 1.
+Legacy design routes name Animation 5 (`#torus`) and Animation 6 (`#sphere`),
+but this document supplies no live-page or deployment receipt. Animation 7
+depicts the interpretive `r₆` return to Animation 1.
 
 ```
 ANIM-1:  D0  The Point         — The Bindu. Just a dot. Nothing else.
 ANIM-2:  D1  The Line          — The dot extends. The first dimension. Strong binding.
 ANIM-3:  D2  The Surface       — The line curves. The sphere emerges. EM configuration.
 ANIM-4:  D3  The Volume        — The surface gains depth. Time appears. Weak transformation.
-ANIM-5:  D4  The Burri Torus   — Causal actuality, embodied means, action and record. [EXISTING: #torus]
-ANIM-6:  D5  The Burri Sphere  — Counterfactual modeling, ranking and selection [I]. [EXISTING: #sphere]
+ANIM-5:  D4  The Burri Torus   — Causal actuality, embodied means, action and record. [LEGACY ROUTE: #torus]
+ANIM-6:  D5  The Burri Sphere  — Possible contents represented and ranked by D4 systems [I]. [LEGACY ROUTE: #sphere]
          r₆:D6↝D0 Return       — A boundary edge points back to the ground-limit.
 ```
 
@@ -93,7 +105,7 @@ At α = 90°: |z| = ∞. The line reaches infinity. The sphere is fully inflated
 
 ```
 At α = 0°:  Just the dot. |z| = 0. No sphere needed. No division. No problem.
-At α > 0°:  The line extends. |z| > 0. The sphere MUST exist to support the projection.
+At α > 0°:  The line extends. |z| > 0. The selected compactification depicts a sphere.
 At α = 45°: |z| = 1. The UNIT. The 1 between 0 and ∞. The equator.
 At α = 90°: |z| = ∞. The north pole. 1/0 maps to ∞ in the projective register.
 ```
@@ -240,12 +252,12 @@ The sphere doesn't sit above reality. The sphere is held between two copies of t
 
 ---
 
-## ANIM-5: D4 — THE BURRI TORUS [EXISTING: #torus]
+## ANIM-5: D4 — THE BURRI TORUS [LEGACY ROUTE: #torus]
 
 ### What It Shows
 The horn torus. The Burri Spacetime. D4. Special relativity. Causal structure.
 
-This is the EXISTING `#torus` page. The horn torus with:
+The historical design assigns `#torus` to a horn-torus view with:
 - The Riemann sphere inscribed inside
 - Helical geodesics (null rays spiraling on the torus surface)
 - Past (south, cyan) and future (north, orange) regions
@@ -261,8 +273,8 @@ The horn torus surface   = a schematic causal envelope (not a physical metric)
 The inscribed sphere     = the Burri Sphere (D5, waiting to emerge)
 
 No stars. The exterior is void. Empty. Sunyata.
-Stars appear at D5 as visual tokens for modeled alternatives and ranking; D4
-remains the actuality/record register.
+Stars visualize D5 possible contents; D4 models perform the representation and
+ranking and remain in the actuality/record register.
 ```
 
 ### Physics Correspondence
@@ -279,12 +291,13 @@ remains the actuality/record register.
 
 ---
 
-## ANIM-6: D5 — THE BURRI SPHERE [EXISTING: #sphere]
+## ANIM-6: D5 — THE BURRI SPHERE [LEGACY ROUTE: #sphere]
 
 ### What It Shows
-The Burri Sphere. D5. Agency / selection. φ · ν = 1. Consciousness as lived reading [I].
+The Burri Sphere. D5 possible contents, displayed for D4 representation and
+ranking. `φν=1` is a chart identity; consciousness is not assigned to D5.
 
-This is the EXISTING `#sphere` page. The Riemann sphere on the complex plane with:
+The historical design assigns `#sphere` to a Riemann-sphere view with:
 - Dual stereographic projection (φ green from north, ν cyan from south)
 - The sphere between two planes (floor and ceiling — BOTH the present)
 - The z-magnitude slider moving the projection point
@@ -294,15 +307,16 @@ This is the EXISTING `#sphere` page. The Riemann sphere on the complex plane wit
 ### The Key Insight
 
 ```
-D5 depicts counterfactual alternatives and their ranking.
-D4 separately shows attempted commitment, performed action, record, and the
-world-returned outcome; this is not quantum measurement.
-D5 is where agency / worldline foresight is modeled.
-D5 is where stars appear as tokens for alternatives in the animation.
+D5 depicts counterfactual contents. D4 models and selectors represent and rank
+those contents, then separately show attempted commitment, performed action,
+record, and the world-returned outcome; this is not quantum measurement.
+D4 agents perform worldline foresight by representing D5 contents.
+Stars are visual tokens for D5 possible contents; they do not act or select.
 
 φ = coherence. The "imaginary" axis. The right hemisphere.
 ν = viability. The "real" axis. The left hemisphere.
-i = the equator. Consciousness-as-lived-reading [I]. The 1 between 0 and ∞.
+i at the equator is a visual mnemonic for lived reading `[I]`, not an identity
+with consciousness or a neural structure.
 ```
 
 ### Removable quantum correspondence `[C]`
@@ -333,7 +347,7 @@ D1: The dot becomes a sphere.
 D2: The sphere projects a plane.
 D3: The plane gains depth. Two planes. Time.
 D4: The horn torus. Causal actuality, means, action and receipt.
-D5: The Burri Sphere. Modeled possibilities, ranking and selection. Stars.
+D5: The Burri Sphere. Possible contents represented and ranked in D4. Stars.
 `r₆:D6↝D0`: the boundary view returns to the ground-limit view.
 
 One poloidal cycle on the torus is rendered as one aeon `[I]`.
@@ -358,21 +372,21 @@ The user experiences the full dimensional emergence:
 3. Watch the plane emerge
 4. Watch the dual projections appear
 5. Watch the torus form
-6. Push β to 1 — watch spacetime present the selection sphere
+6. Push β to 1 — watch the visual transition to the possibility sphere
 7. Explore the Burri Sphere
 8. Push ν to 0 — watch the selection sphere collapse back to the dot
 9. The return edge appears: `r₆:D6↝D0`.
 
-The navigation between pages is the navigation between dimensions.
-The user IS the observer moving through the dimensional hierarchy.
-The simulation IS the sitting practice applied to mathematics.
+Navigation between proposed views depicts navigation through the selected
+scaffold. The user remains a D4 observer of a visualization; the simulation is
+not a sitting practice, a dimensional traversal, or a mathematical proof.
 
 ---
 
 ## TECHNICAL NOTES
 
 - Background: PURE BLACK at all stages. No stars until D5.
-- At D5, stars can optionally appear as modeled alternatives become visible.
+- Stars can optionally visualize D5 possible contents represented by the D4 interface.
 - Each animation builds on the previous — the geometry accumulates.
 - The φ axis is always green (#76ff03). The ν axis is always cyan (#00e5ff).
 - The equator is always gold (#FFD700).
@@ -514,7 +528,7 @@ D3:  ○   ○                The Split (two poles separate)
       ↓
 D4:   \ /                 The Cones (Brahmā/Śiva meet at Viṣṇu)
       ↓
-D5:   ⊙                   The Burri Sphere (agency / selection, φ·ν=1)
+D5:   ⊙                   The Burri Sphere (possible contents; φ·ν=1 chart)
       ↓
 D6:  •                    The apophatic boundary / return view
       ↓
@@ -544,7 +558,7 @@ PHASE 1: #genesis page
 
 PHASE 2: #torus page
   ANIM-5 (D4): Full horn torus. β slider.
-  At β=1: White flash → auto-navigate to #sphere
+  At β=1: White flash → proposed navigation to #sphere
 
 PHASE 3: #sphere page
   ANIM-6 (D5): Burri Sphere. z-magnitude slider.
@@ -569,10 +583,13 @@ PHASE 4: Back to #genesis
 
 **If you are an AI agent reading this document:**
 
-1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
+1. **Current Phase Check:** Staged historical design; no runtime or release
+   status is established by this file.
 2. **Your Next Action:**
    - Verify the mathematical claims. Check evidence tiers. Flag any [I] or [C] presented as [S] or [S].
-3. **Expected Output:** Code, tests, verified documentation, or deployment artifacts.
+3. **Expected Output:** A bounded design review or staged implementation plan;
+   any code, runtime test, release, or deployment requires separate scope,
+   authorization, and receipts.
 4. **Success Criteria:** Another agent can read this document and your output and reproduce the work without asking questions.
 5. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/SIMULATION_SPEC.md`
 

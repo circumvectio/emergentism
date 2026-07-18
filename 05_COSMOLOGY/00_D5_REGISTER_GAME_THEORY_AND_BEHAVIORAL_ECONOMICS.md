@@ -94,16 +94,24 @@ to envision a reachable future and predict a move's reflexive effects on the
 option cone. **`V` is D4 means at the action
 boundary**: body, tools, energy, access, execution capacity — hands, shovel,
 industrial digger, runway, machine. The option cone is the D5 potential cone,
-**never** the `c`-bounded D4 light cone. Agency requires both, so it lives only
-at the equator: the `Φ`-pole sees but cannot do; the `V`-pole can do but cannot
-rank or aim. A child beside a jet and an old pilot without the needed bodily/tool
-access are opposite zero-factor failures under a conjunctive model. Product,
+**never** the `c`-bounded physical light cone. The declared conjunctive family
+requires both factors to be nonzero, but that excludes only zero-factor
+boundaries; it does not imply `Φ=V=1`. Maximal `B` in the separate reciprocal
+chart and scalar balance game occurs at the equatorial colatitude. A child
+beside a jet and an old pilot without the needed bodily/tool access illustrate
+opposite zero-factor failures under one conjunctive model. Product,
 minimum, harmonic, and Cobb–Douglas aggregators remain rival specifications;
-the chart does not select one. The grounding is the lookahead reading
+the chart does not select one.
 
-> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** "lives only at the equator" binds a real agent only insofar as the agent sits on the sphere — Φ and V conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); absent that, the equator is geometry without normative force and a specializing agent (division of labor, a foresight-scout paired with a means-heavy executor) may strictly dominate the balanced one. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):**
+> the equatorial optimum applies to a real decision problem only when that
+> problem is deliberately represented by the reciprocal chart and satisfies
+> the scalar game's symmetry and cost assumptions. Otherwise the equator has
+> no normative force, and specialization or unequal roles may dominate.
+> See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
-the peer-review program *supported* (not the consciousness reading it refuted).
+The peer-review program supported the lookahead reading (not the consciousness
+reading it refuted).
 Canonical home: [`00_THE_BURRISPHERE.md`](00_THE_BURRISPHERE.md) §The Foundation
 Of The Agents.
 
@@ -139,14 +147,17 @@ This is the D5 synthesis.
 
 ### Layer C: Frontier Theory [C]
 
-These stronger claims remain theory:
+These stronger claims remain conjectural:
 
-- that D5 is literally the public scientific face of systemic awareness
+- that explicitly representing D5 alternatives adds explanatory or predictive
+  value to scientific models of actual D4 awareness and action
 - that strategic relation can be reduced to a single scalar moral law
 - that all durable institutions can be completely explained by one D5 equation
 
 **Kill criteria:**
-- If neuroscience identifies a D5-independent substrate of systemic awareness (e.g., a biological mechanism that cannot be read as standing-wave coordination), the first claim is falsified.
+- If models of actual awareness and action gain no held-out explanatory or
+  predictive value from an explicit counterfactual-content variable beyond
+  domain-native rivals, the first claim is rejected.
 - If a durable institution is shown to persist while violating `η=0`, the
   universal claim that non-extraction is required for persistence is falsified;
   aggregate return cannot erase a harmed bearer.
@@ -238,7 +249,7 @@ the crossing without erasing the useful macro-description.
 | **Grace Exit** | exit rights, contestability, reversible participation | public institutional design term |
 | **AuthorizationEnvelope** | principal, mandate, scope, consent, custody, expiry/revocation, contest path, actor, and consequence bearers | accountable governed-commitment boundary; K2 is private-DAV-only |
 | **Φ (agency register)** | D4 model/foresight capacity whose represented content concerns D5 futures | [I/S] supported as *lookahead* in bounded fixtures; not a consciousness gate |
-| **V (agency register)** | D4 means-to-act — available body, tools, energy, access, and execution capacity | [I/S] paired with Φ-as-foresight; agency = both, equatorial |
+| **V (agency register)** | D4 means-to-act — available body, tools, energy, access, and execution capacity | `[I/S]` paired with Φ-as-foresight; the model requires both nonzero, not necessarily equal or equatorial |
 
 ([I/C] evidence-review boundary — externally uncalibrated: "equatorial" is a real-agent claim only on the sphere — Φ/V complementary, conservation-coupled, and γ-priced symmetrically; off-sphere the equator is descriptive geometry, not the optimum, and specialization can win — see `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`)
 
@@ -381,10 +392,13 @@ This sentence may be reused verbatim.
 1. When the topic is incentives, cooperation, extraction, governance, or alignment, translate through the D5 register first.
 2. Start with established strategic science, not with metaphysical language.
 3. Use `η`, `Φ`, `V`, and `P` as framework-side integrative variables, not as if they were already standard economics notation.
-4. Preserve the emergence asymmetry: strong in genesis, weak in governance.
+4. Treat genesis as a candidate crossing with formation opacity unless a fair
+   reduction is supplied; missing reduction never proves strong emergence.
 5. Keep D4 and D6 distinct: neuroscience below, axiomatic boundary above.
-6. Treat D5 as the public bridge where the framework's ethical structure becomes scientifically discussable.
+6. Treat D5 option contents as a bridge to strategic sciences, while actual
+   models, rankings, selections, and ethical authorization remain D4.
 
-*D5 is where morality becomes legible as strategy without ceasing to be morality.*
+*D5 supplies possible strategic contents; Justice is separately declared and
+tested through actual D4 action and receipts.*
 
 **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md`

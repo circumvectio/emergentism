@@ -18,6 +18,12 @@ status: "ACTIVE — 2026-06-06. Maps Suda's philosophical frameworks to Finity P
 
 *An extraction of every `[S]`/`[I]`-tier (structural, interpretive) framework from Suda's 2025–2026 corpus, mapped to the closest Finity Papers analogue. The companion `SUDA_FORMAL_STRUCTURES_COMPENDIUM.md` handles the `[A]` tier.*
 
+> **[金] Kintsugi boundary — 2026-07-19.** This is an `[I]` comparative
+> resonance map, not joint proof. Coupling and `η` are diagnostics; they do not
+> derive moral valence. The Justice owner, authorization, bearer coverage, and
+> commitment/outcome receipts control every moral classification. Suda's work
+> cannot upgrade a Finity claim, and a Finity formula cannot certify Suda's.
+
 ---
 
 ## 1. The New Ontology of Energy
@@ -122,11 +128,14 @@ The ethic is **procedural**: a system can safely invert its stance if it monitor
 
 The dyadic coupling law with:
 - Product constraint `φ · ν = 1`
-- Moral axis `η` (property of moves, not places)
-- Good = coupling (`η = 0`), evil = closure (`η > 0`)
-- No pole is good; no pole is evil; the bond is good
+- `η` as a declared extraction diagnostic (property of measured flows, not places)
+- `η=0` as necessary but not sufficient for strict Justice
+- moral verdicts supplied only by bearer-complete Justice and receipts
+- no pole, coordinate, caste, operator, or bond morally typed by identity
 
-The ethic is **structural**: a system is healthy when its complementary capacities remain coupled, and pathological when either isolates.
+The ethic is **declared and auditable**, not derived from the chart: coupling
+may be a useful condition or diagnostic, while Justice decides whether every
+affected bearer remains visible and non-extracted.
 
 ### Complementarity
 
@@ -134,12 +143,15 @@ The ethic is **structural**: a system is healthy when its complementary capaciti
 |---|---|---|
 | **Domain** | Control theory / AI | Moral philosophy / structural ethics |
 | **Operation** | Safe inversion (flip when `P < ε`) | Coupling maintenance (keep `η = 0`) |
-| **Target** | Mid-stability point | Equator (`φ = ν = 1`, `B = 1`) |
+| **Target** | Mid-stability point | Declared scalar balance optimum (`φ = ν = 1`, `B = 1`) |
 | **Prevention** | Don't flip when pure | Don't isolate a pole |
 | **Formal tool** | Diffusion + event trigger | Product constraint + AM–GM |
-| **Tier** | `[S]` (operational) | `[S]` (structural) |
+| **Tier** | source-dependent | `[I]` comparison; local chart facts retain `[A]` |
 
-**Unified reading:** Suda tells you *how* to recover from saturation (the flip protocol); the Finity Papers tell you *why* saturation is pathological (the runaway theorem). Together they form a complete ethics: the coupling law diagnoses the disease, and the Möbius control administers the cure.
+**Comparative reading `[I]`:** Suda supplies a proposed flip protocol; the
+Finity Papers supply a coupling/boundedness diagnostic. Together they suggest
+a research comparison, not a complete ethic, disease diagnosis, or authorized
+cure.
 
 ---
 
@@ -175,7 +187,11 @@ Zero and infinity are not opposites but **coexistent states folded into each oth
 - Infinity = "infinite circulation" — endless traversal of phase space
 - Together they generate each other within the fold
 
-**Resonance with Finity Papers.** This is structurally identical to the boundary algebra `⊙ = • × ○` (`1 = 0 × ∞`), but Suda's emphasis is on the *process* of fusion (how 0 and ∞ generate each other) whereas the Finity Papers emphasize the *product* of fusion (1 as the stable result). Suda's "fusion" is dynamic; the Finity Papers' "product" is static. Both are `[I]`-tier readings of the same `[A]` fact that `I(x) = 1/x` exchanges `0` and `∞` while fixing `1`.
+**Resonance with Finity Papers.** This is compared `[I]` with the selected
+boundary emblem `⊙ = • × ○` (`1 = 0 × ∞`), which is not field arithmetic.
+Suda emphasizes process; the Finity Papers emblem emphasizes a selected static
+composition. The underlying `[A]` inversion fact is only that `I(z)=1/z`
+exchanges `0` and `∞` and fixes `±1`; it does not generate the emblem.
 
 ---
 
@@ -187,10 +203,13 @@ Zero and infinity are not opposites but **coexistent states folded into each oth
 | "Infinite egg" (generative centre) | "Finity" (structural centre) | Genesis / process reading | State / balance reading |
 | Dynamic Epistemology / Kant 2.0 | Apophatic edge / Gödel reading | Formal Möbius cognitive loop | Agreement-with-Gödel discipline |
 | "Fold not failure" (0÷0) | "Category-correction" (0÷0) | AI/ethics design extension | Metamathematical / Gödel extension |
-| Möbius Control (`A,B,T`) | Dyadic Coupling Law (`φ,ν,η`) | Operational control protocol | Structural moral law |
+| Möbius Control (`A,B,T`) | Dyadic Coupling Law (`φ,ν,η`) | Proposed control protocol | Coupling/extraction diagnostic under separate Justice |
 | Structural philosophy of question | Honesty machine / tiered claims | Ontologizes question as energy phase | Epistemologizes question as discipline |
 | "Fusion of 0 and ∞" | Boundary algebra `⊙ = • × ○` | Dynamic/generative emphasis | Static/structural emphasis |
 
-**The unified thesis:** Suda and the Finity Papers are not two theories but two *registers* of one structure — the generative register (egg, fold, question) and the structural register (finity, category-correction, honesty). The unified frame must hold both without collapsing them.
+**The comparative thesis `[I]`:** Suda and the Finity Papers can be read as two
+renderings with useful contrasts—generative process versus selected structural
+notation. The resemblance neither proves one hidden structure nor transfers
+evidence between them.
 
 ⊙ = • × ○

@@ -34,6 +34,13 @@ bit-equivalent penalties. Without those
 handles, a higher level may remain useful translation, but it is not yet a
 public causal witness.
 
+> **[金] Register seam — 2026-07-19.** D4 is the register of actual systems,
+> models, comparisons, commitments, actions, and records. D5 is the
+> counterfactual content those D4 systems can represent. Therefore every later
+> shorthand saying that “D5 agents” select, coordinate, institutionalize, or
+> remember is superseded by “D4 agents act with respect to D5 possibilities.”
+> Missing reduction licenses `currently_unreduced`, never irreducibility.
+
 ---
 
 ## Why This Document Exists
@@ -360,7 +367,8 @@ The disciplines that escort the threshold are:
 
 The level shift is:
 
-- D5 asks how agents select, coordinate, institutionalize, and remember
+- D5 asks which strategic alternatives actual D4 agents can represent,
+  compare, coordinate around, institutionalize, and remember
 - D6 is reached when every such positive account is seen as real yet non-exhaustive
 
 ---

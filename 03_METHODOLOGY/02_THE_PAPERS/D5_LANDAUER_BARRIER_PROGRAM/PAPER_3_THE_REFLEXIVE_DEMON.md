@@ -11,6 +11,10 @@ rosetta:
 
 # PAPER 3: THE REFLEXIVE DEMON
 
+> **[金] Type repair:** every selector, observation, model, communication,
+> control, and action below is D4 actual; D5 names the represented possible
+> branch contents.
+
 **Status:** Stub scaffold.
 
 **Program Home:** [`The D5 Landauer Barrier Program`](README.md)
@@ -19,7 +23,9 @@ rosetta:
 
 ## Thesis
 
-A D5 selector does not observe a fixed future and then choose from it. The act of observing, modeling, communicating, or controlling changes the branch set being predicted.
+A D4 selector does not observe a fixed future and then choose from it. Its
+model represents D5 alternatives, and observing, communicating, or acting can
+change that option field.
 
 ## Role In The Program
 

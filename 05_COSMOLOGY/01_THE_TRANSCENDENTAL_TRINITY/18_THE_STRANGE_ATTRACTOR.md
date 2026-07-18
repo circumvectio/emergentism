@@ -30,9 +30,18 @@ independently supported selection hypothesis.
 
 ## The Replicator Stack IS History
 
-Corollary C4 (declared framework stack): Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregoreotype.
+> **[金] Historical-model seam — 2026-07-19.** The stack-to-era table below is a
+> candidate periodization `[I/C]`, not a derivation or settled history. Its
+> dates, dominance claims, and D-labels require domain evidence. Actual persons,
+> institutions, selections, and records are D4; the future alternatives they
+> represent are D5 contents. An Egregoreotype candidate is a persistent shared
+> trace that survives carrier turnover and measurably reweights later D4
+> selection; the label presumes neither consciousness nor personhood.
 
-This is not a taxonomy. **This is a timeline.** Each era of deep history is defined by which level of the Replicator Stack is the DOMINANT selection pressure:
+Corollary C4 declares the framework stack: Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregoreotype.
+
+The following table tests one historical timeline hypothesis: each era is read
+through the replicator layer proposed to exert the dominant selection pressure.
 
 | Era | Dominant Replicator | D-Level | Vehicle | Duration | What Gets Selected |
 |-----|-------------------|---------|---------|----------|-------------------|
@@ -124,7 +133,7 @@ Plato's allegory maps exactly:
 |-------------|---------------------|---------|
 | **The shadows on the wall** | D4 projections — the manifested world | D4 |
 | **The prisoners** | Nodes at L1-L3, watching the projections | L1-L3 |
-| **The fire behind them** | D5 systemic awareness — the projection source | D5 |
+| **The fire behind them** | D4 model/trace projecting represented alternatives | D4→D5 `[I]` |
 | **The puppet-masters** | Egregores — standing waves casting the shadows | D5-limit |
 | **The prisoner who escapes** | The practitioner ascending L4 → L7 | L4-L7 |
 | **The sun outside the cave** | `r₆:D6↝D0`, an interpretive return image | D6→D0 |

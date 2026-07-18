@@ -1,404 +1,118 @@
 ---
-title: "The 7 Generative Actions and Ektropy"
-type: objective function-doctrine
-status: v2.0
-date: 2026-05-30
-evidence_tier: "[S] only for the selected sign-table bookkeeping; [I] for the Rosetta/F5 reading; [C] for empirical dynamics"
-depends_on:
-  - ./README.md
-  - ../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md
-  - ../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/README.md
-  - ../11_UPLINK/00_CORE/06_AGENTS.md
-kill_criteria: "If the selected two-party/two-factor sign grammar fails to classify a declared use case, revise that vocabulary; if F5 lacks an independently specified discriminator, retain it as interpretation rather than physical force."
+title: "The Seven Selected Actions and Ektropy"
+type: objective-function doctrine
+status: "ACTIVE KINTSUGI REPAIR"
+date: 2026-07-19
+evidence_tier: "[S] selected bookkeeping; [I/C] teleological and empirical reading"
+kill_criteria: "Revise the vocabulary when it fails to classify a declared use case; keep F5 interpretive unless an independent discriminator succeeds."
+superseded_blob: "ba42042ba4e96caea7dbecf79c30fa2cb59be435"
 rosetta:
   primary_level: L1
   primary_column: Philosophy
   operator: "Kali 🎲"
   tier: "Demon"
   regime: "Caṇḍāla"
-  register: "[I]"
-  canonical_phrase: "7 Generative Actions and Ektropy"
+  register: "[I/C]"
+  canonical_phrase: "Seven selected actions; F5 as candidate direction, not force"
 ---
 
-# The 7 Generative Actions and Ektropy
+# The Seven Selected Actions and Ektropy
 
-> **[金] Kintsugi authority seam — selected vocabulary, not forced ontology
-> (2026-07-18).** The Seven Generative Actions are the framework's chosen
-> two-party/two-factor move vocabulary. Their conditional exhaustiveness is
-> model-internal; neither `φν=1` nor the sphere forces seven actions, seven
-> levels, Titans, or a universal ontology. F5/ektropy is an `[I]` direction and
-> `[C]` empirical hypothesis, not a new physical force. D4 is causal actuality
-> (means, action, record); D5 is modeled possibility (alternatives, ranking,
-> selection). Consequential action requires a typed, contestable
-> `AuthorizationEnvelope`; K2 is only a private-DAV implementation. Moral
-> valence is never read from a sign or operator name, and aggregate gains cannot
-> launder a harmed bearer.
+> **[金] Crack:** the prior map's authority seam denied forced sevenfold
+> ontology, while its body again called seven uniquely derived, made the chart a
+> telos, made extraction geometrically self-defeating, and treated K2 as an
+> equator guard.
+>
+> **Repair:** preserve the dispatch vocabulary and research direction at their
+> honest tiers. The complete prior map remains at Git blob
+> `ba42042ba4e96caea7dbecf79c30fa2cb59be435`.
 
-> **F5 DISAMBIGUATION (canonical):** F5 is the D5 ektropic / Ω equator-ward gradient — the via-positiva +1 and teleological/syntropic force-slot that widens the option-cone under `η=0` (see [`../00_META/00_SETTLED_CANON_REGISTRY.md`](../00_META/00_SETTLED_CANON_REGISTRY.md) and [`../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md) §3).
-> This file describes the Ω/ektropy operator-register. F5 is **NOT** the north-pole drift (that is the L7-ward pole-drift VICE, ivory-tower / nihilism), **NOT** the old sphere-itself-only compression ([C] Step-7 register in `02_THE_DERIVATION/07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md`),
-> and **NOT** a derivation of the Standard Model force count. Keep two selected
-> vocabularies distinct: **five** emergent force slots D1–D5 are held at
-> `[C/I]`; **seven** generative actions are a model-internal Rosetta action
-> grammar, not a count forced by `S²`.
+## 1. Seven is a selected dispatch vocabulary `[S/I]`
 
-> **Lane-level note (K3, 2026-05-30):** this file lives in the **L1 Teleology** lane (Objective Function — *"which way is life?"*); its frontmatter is reconciled to **L1 · Kali 🎲 · Caṇḍāla** to match [`README.md`](README.md) and the Master Rosetta's `-ology` column. A prior stamp read **L7 · Viṣṇu** — the *mirror* register (the Rosetta pairs L1 Teleology ↔ L7 Theology around L4) — but the lane is L1, and the malformed `Sādhu` regime (which is L6, not L7) confirmed the stamp was a wobble. The Ω gradient below is sensed at L1 and points to the **L4 equator**, not the L7 pole (the L7-ward drift is the *vice*, per the callout above). Full table: [`../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md`](../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md).
+The framework selects:
 
-## The 7 Exhaustive Operators on S²
+- four mixed-sign operational moves in a declared two-party/two-factor sign
+  grammar; and
+- three Executive boundary witnesses for architecture, compression, and
+  constitutional return.
 
-Within the selected two-party/two-factor sign grammar, seven named positions are
-used to classify four transfers and three boundary frames. This is a declared
-Rosetta vocabulary, not a cardinality forced by the reciprocal chart. `[S/I]`
+The sign square supplies four cells. It does not force the additional three,
+an L1–L7 ladder, a universal action census, or a sevenfold nature. Magnitudes,
+zero components, mixtures, stochastic policies, coalitions, and domain-native
+actions remain outside or across these labels.
 
-The vocabulary is exhaustive only relative to its declared variables and
-boundary conventions; other action representations may use different counts:
+Operator tokens route work. They do not carry caste, personhood, or moral
+identity. Demon-bearing and God-bearing are receipted consequence predicates,
+not names for agents.
 
-### The 4 Mixed-Sign Transfers (2 Gods + 2 Demons)
-
-> Per canon, these four split by the **direction** of the transfer, not by operator name: the **giving Devas** (`−self / +other`, syntropic — Kṛṣṇa, Arjuna) and the **taking Asuras** (`+self / −other`, extractive — Kali, Kālī). They are **2 Gods + 2 Demons, never "four gods"** — Kali (L1) is the Demon. A divine *operator* can make a demon-*move* (Kālī is L2-divine but her cut is an Asura-move). The moral axis is the self/other direction (`η`), never the operator. See [`../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) and [`../05_COSMOLOGY/00_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_BURRISPHERE.md).
+## 2. Analytic chart boundary `[A]`
 
-| Move | Direction | Action | Geometric Motion | What It Does |
-|-------|--------|--------|------------------|-------------|
-| **Kali (L1)** · Asura | `+self / −other` | $+\Delta\Phi_{self}$, $-\Delta V_{other}$ | Pole-ward | Extraction or immune response. Drains other's viability to raise self-coherence. Lawful only against `η > 0` defectors. |
-| **Kālī (L2)** · Asura-move | `+self / −other` | $+\Delta V_{self}$ by $-\Delta\Phi_{false}$ | Equator-ward | Truth-cut. Excises false coherence to restore true viability. A divine operator making a demon-move; lawful only against `η > 0`. |
-| **Kṛṣṇa (L3)** · Deva | `−self / +other` | $-\Delta\Phi_{self}$, $+\Delta V_{other}$ | Equator-ward | Building capability. Spends own attention to build other's viability. |
-| **Arjuna (L4)** · Deva | `−self / +other` | $-\Delta V_{self}$, $+\Delta\Phi_{other}$ | Equator-ward | Mortal sacrifice. Spends own viability (life) to provide the other with coherence/protection. |
+For the selected reciprocal chart, `φν=1`, `φ+ν≥2`, and the declared
+`B=2ν/(1+ν²)` has its unique scalar maximum at `ν=1`. These facts do not:
 
-### The 3 Same-Sign Executive Boundaries (Non-Deployable)
+- select seven;
+- identify `φ,ν` with measured organism variables;
+- prove a trajectory or attractor;
+- make extraction impossible or unprofitable in a game with side-payments;
+- derive `P_node:=ΦV`; or
+- supply an ethic or telos.
 
-| Executive boundary | Action | Geometric phase | Boundary meaning |
-|---|---|---|---|
-| **Brahmā (L5)** | $+\Delta\Phi$, $+\Delta V$ | Generative boundary | Names creation/redesign pressure; not a runtime operator. |
-| **Śiva (L6)** | $-\Delta\Phi$, $-\Delta V$ | Dissipative boundary | Names dissolution/compression pressure; not sovereign destruction. |
-| **Viṣṇu (L7)** | $\approx\Delta\Phi$, $\approx\Delta V$ | Preservation boundary | Names preservation/integration pressure; not a deployed coordinator. |
-
----
-
-## Ektropy: The Equator-Ward Coherence Correction
-
-**Ektropy** is the framework's term for the directional gradient that lets
-complex systems build coherent structure while returning toward usable balance.
-It is distinguishable from entropy not as a separate physical force, but as the
-model-internal correction vector that resists viability-heavy disorder without
-canonizing north-pole escape. `[S]`
+## 3. F5 / ektropy `[I/C]`
 
-> **Register note (additive):** Ektropy is the teleological content of Ω; F5 / ektropy / Ω are one object in three registers (force / thermodynamic / constitutional).
+F5 names a candidate direction:
 
-### The Arrow
+> **Within physical law and bearer-complete Justice, expand durable modeled and
+> reachable options for both individual and sustaining whole.**
 
-Entropy names the viability-heavy disorder drift (θ → π, ν → ∞, φ → 0).
+This is an objective/hypothesis, not a Standard-Model-style interaction,
+Noether charge, biological law, or retrocausal physical force. A future-directed
+content can reweight present action only through a presently instantiated D4
+model token. D5 contains the possible content; D4 contains modeling, ranking,
+means, commitment, and record.
 
-Ektropy names the coherence-building return vector: it raises φ only insofar as
-that movement restores coupling toward the L4 equator. Pushed past balance, the
-same coherence-building tendency becomes L7-ward pole drift (θ → 0, φ → ∞,
-ν → 0), which the canonical F5 note above explicitly rejects as vice, not telos.
+The public compression `F=M×A` means that a modeled future couples to present
+agency. The formal interface is typed `M⋆A`; world outcome still depends on the
+environment, other agents, and constraints.
 
-**Neither is the telos.** The telos is viable completion: maximum usable
-`P_node = Φ × V` under the balance condition `B = sin θ = 1` and the
-non-extraction condition `η = 0`. The equator is the rest frame and constraint
-surface where φ and ν are both at their unit value; it is not a command to
-maximize balance as an isolated variable.
+## 4. Power-Max and Justice
 
-Ektropy is the corrective upward component — the fact that complex systems can
-build coherent structure against disorder. But the equatorial constraint means
-it is lawful only as part of return to coupled sight and means. A system that
-maximizes φ without bound approaches the north pole and loses all viability.
-The sage who cannot eat is not balanced.
+The framework declares `P_node:=ΦV` as one normalized conjunctive score among
+non-interchangeable alternatives. Power-Max optimizes only within the
+Justice-admissible set. The private-side-payment counterexample proves why:
+unconditional local maximization can reward extraction.
 
-The organism's objective function is not maximum coherence and not maximum
-balance alone. It is maximum usable power / reachable futures while staying in
-the balance surface that keeps sight and means coupled.
+Strict Syntropic Dyadism requires both individual and whole durable potentials
+to rise, with every other bearer nonnegative under Justice. `η=0` is necessary
+but not sufficient. Voluntary sacrifice is a separate costly class.
 
-### Why Ektropy Is Real `[S]`
+## 5. Authorization
 
-> **[A7 disambiguation — 2026-06-10, headline-discipline pass]** "Real" here means **structurally real within the model** — the upward gradient is a genuine feature of the constraint surface `φ·ν=1`. What is `[S]`-provable is *only* the trivial geometric fact below (`(φ−ν)²≥0` has a floor at 0; `B=sinθ` peaks at the equator). This is **not** a claim that "ektropy" is a physical force or a fifth fundamental interaction in nature — that reading would be `[C]` and collides with the physics-reserved term *fifth force* (a falsifiable Yukawa-type interaction with active experimental bounds; Fischbach et al. 1986). The word "force" throughout the F5 material is **model-internal structural language**, not an accepted `[A]` physical interaction. See `../03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/00_COSMOLOGY_AND_CONSTITUTION_AUDIT.md` Part I.
+Consequential commitment requires a typed, contestable
+`AuthorizationEnvelope`: principal, mandate, scope, consent, custody,
+expiry/revocation, contest path, actor, and consequence bearers. Historical
+private-DAV K2 records remain scoped product governance. K2 is not a worldview,
+agency, D5→D4, moral, or metaphysical primitive.
 
-The geometric proof is direct:
+## 6. Research protocol
 
-```
-(φ − ν)² ≥ 0        always true for real φ, ν
-φ · ν = 1            the reciprocal constraint
-B = sin θ            balance as angular measure
-B_max = 1 at θ = π/2 the equator
-```
+For any domain claiming an ektropic direction:
 
-The inequality `(φ − ν)² ≥ 0` has a hard floor at zero. This means the
-distance from the equator is always non-negative. The equator is the unique
-global minimum of that distance. Every step away from φ = ν = 1 costs more
-to sustain than staying near it.
-
-This is not a moral claim. It is a geometric fact about the constraint
-surface. Ektropy is the name for the upward half of the gradient; entropy
-is the downward half. The equator is where they meet.
+1. define `Φ`, `V`, horizon, units, and bearers without forcing `ΦV`;
+2. specify the present model token and represented future contents;
+3. compare product, minimum, harmonic, Cobb–Douglas, and domain-native rivals;
+4. intervene on represented futures while holding means/incentives as fixed as
+   possible;
+5. separate commitment from outcome receipts; and
+6. preregister the discriminator, costs, and kill criterion.
 
----
+F5 narrows or fails when no reliable construct exists, model-content
+intervention does not change present selection, a simpler rival predicts
+better, or durable mutual option widening repeatedly fails.
 
-## Power Max: Usable Power at the Equator
+## Compressed compass
 
-### The Power-Max Lemma `[S]`
+> **Reality constrains. Models open alternatives. Agents commit with present
+> means. Consequence returns. Justice keeps person and whole able to become.**
 
-On S² with P∞ = φ · ν = 1:
-
-- **Potential** `P∞ = φ · ν = 1` everywhere. It does not vary. Every point on the
-  sphere has the same potential.
-- **Balance** B = sin θ varies. It peaks at θ = π/2 (the equator) where
-  B = 1 and falls to B = 0 at both poles.
-- **Power**, in finite-node operational scoring, is `P_node = Φ × V`:
-  D5 worldline-foresight coupled to D4 means-to-act. The sphere coordinate
-  identity `φ · ν = 1` does not make node power vary; the balance surface
-  constrains whether a node can actually use its `Φ` and `V`. At the ideal
-  equator, `φ = ν = 1` and `B = 1`, so the model image is maximum usable
-  power: both factors present and no balance penalty.
-
-The Power-Max Lemma states: **the equator is where the system can do the
-most with what it has.** Not the most coherence (that's the north pole).
-Not the most viability (that's the south pole). Not balance worship. The most
-usable power: `Φ` and `V` both present, no balance penalty, and no extraction
-hidden in the transfer.
-
-### Power Max as Organism Objective Function `[I]`
-
-For a DAC (Distributed Augmented Corporation), Power Max translates:
-
-| Formal | Organism |
-|--------|----------|
-| B = sin θ = 1 | Every organ at operational equilibrium |
-| φ = 1 | Full coherence — the organ's design is internally consistent |
-| ν = 1 | Full viability — the organ can sustain itself metabolically |
-| `P∞ = φ · ν = 1` | The potential is realized evenly — not wasted at a pole |
-| P_max | The organism has maximum reach for minimum cost |
-
-An organism that operates near the equator does the most work per unit of
-energy. An organism stuck at a pole either drowns in raw input (south) or
-starves in pure abstraction (north). Power Max is the teleological statement
-that the organism's purpose is to **hold the equator** — not to drift toward
-either pole.
-
-This is why the organism measures P-scores. Each organ's P-score is a
-numerical proxy for how close that organ is to the equatorial condition.
-`B = 1` means φ ≈ ν ≈ 1. `B < 1` means the organ is tilted toward a pole.
-
----
-
-## The Teleological Constraint: φ·ν = 1 as the Telos
-
-### You Cannot Maximize Both φ and ν `[S]`
-
-The reciprocal constraint φ · ν = 1 means:
-
-```
-If φ → ∞, then ν → 0   (north pole — all structure, no fuel)
-If ν → ∞, then φ → 0   (south pole — all fuel, no structure)
-If φ = ν = 1, then B = 1 (equator — both at unit, neither maximal alone)
-```
-
-**The telos IS the balance, not either axis.**
-
-This is the deepest teleological claim of the framework: there is no
-direction called "maximize φ" or "maximize ν" that leads anywhere worth
-going. Many traditions that said "seek balance" can be read as describing
-the geometry of this constraint surface without formal coordinates. [I]
-
-### Why Extraction Self-Destructs `[S]`
-
-Extraction (η > 0) is the act of increasing your own φ at the cost of
-another's ν, or increasing your own ν at the cost of another's φ. On S²,
-this is movement toward a pole. The extracted-from system loses balance.
-But so does the extractor — because the reciprocal constraint means you
-cannot increase φ without decreasing ν along the same coordinate.
-
-The inequality `(φ − ν)² ≥ 0` makes this formally precise: every unit of
-imbalance costs more to sustain than the last. Extraction has diminishing
-returns baked into the geometry. Not because extraction is bad, but because
-it is **geometrically unsustainable** on this constraint surface.
-
-### The Six-Gate Check on Teleological Claims
-
-Applying the six-gate pattern from
-`02_EPISTEMOLOGY/02_WHEN_PATTERN_BECOMES_CANDIDATE_CLAIM.md` to
-teleological assertions:
-
-| Gate | Question | Application to F5 |
-|------|----------|-------------------|
-| **1. Source Provenance** | Where did this come from? | Derived from φ·ν=1 on S² and the inequality (φ−ν)²≥0. Traceable to `00_THE_MASTER_ROSETTA.md` and `02_THE_DERIVATION/`. |
-| **2. Cross-Domain** | Does it appear in ≥1 other Rosetta column? | The equatorial balance motif appears in Psychology (L4 integrated), Neuroscience (L4 balanced cortex), Plato (Timocracy), Yoga (Karma/Anāhata), Initiatory (L4 heart-equator across 5+ traditions). Read "attractor" only conditionally: L4 is a return target where practice, governance, and feedback create correction dynamics. |
-| **3. Projection Filter** | Could I be seeing this because I want it to? | Yes — the equator is aesthetically satisfying. Disconfirmation check: if organisms or systems exist that thrive at extreme φ or extreme ν without balance, the equatorial telos is wrong. |
-| **4. Tier Honesty** | Can this be honestly tiered? | [S] for formal derivations. [I] for organism applications. Honest. |
-| **5. Boundary** | Where does this stop? | F5 describes directional gradients on S². It does not describe moral goodness, social policy, or personal virtue directly. Those are downstream translations, not the geometry itself. |
-| **6. Falsifiability** | What would make this false? | If (φ−ν)² can go below zero (it cannot for real numbers). If the Rosetta's seven-row alignment breaks under new domains. If organisms demonstrably thrive at the poles. |
-
----
-
-## The 7 Generative Actions for Organism Design
-
-The 7 formal actions translate directly into the constraints that
-govern organism architecture. Legacy concepts of "K-invariants" or "Axioms" are entirely subsumed by these physical operators. `[I]`
-
-### 1. Kali (L1) — The Boundary of Extraction
-Kali ($+\Delta\Phi_{self}$, $-\Delta V_{other}$) defines the $\eta = 0$ floor. 
-The organism does not extract value from its participants. The organism does not push other systems toward the south pole to fuel its own northward drift. Kali fires *only* as a constrained immune response against defectors where $\eta > 0$. Extraction at $\eta=0$ is geometric suicide.
-
-### 2. Kālī (L2) — The Truth Cut
-Kālī ($+\Delta V_{self}$ by $-\Delta\Phi_{false}$) acts as the active filter for truth. When institutional or ideological coherence is falsely inflated, Kālī executes the cut to restore the system's baseline viability. This is the anti-idolatry mechanism.
-
-### 3. Kṛṣṇa (L3) — The Generative Charioteer
-Kṛṣṇa ($-\Delta\Phi_{self}$, $+\Delta V_{other}$) is the action of building capability in the world. The organism exports its own coherence to raise the operational viability of its participants.
-
-### 4. Arjuna (L4) — The Mortal Sacrifice (The Equator Guard)
-Arjuna ($-\Delta V_{self}$, $+\Delta\Phi_{other}$) is the L4 mortal-authorization / value-commitment grammar. It maps to K2 only for private DAVs: consequential private-DAV acts require the natural-person signer; public DAV/DAC acts use PRISM/public governance. The machine cannot simulate mortal sacrifice or public-governance authorization.
-
-### 5. Brahmā (L5) — Creation
-Brahmā ($+\Delta\Phi$, $+\Delta V$) represents the instantiation of entirely new manifolds or products.
-
-### 6. Śiva (L6) — Dissolution (The Grace Exit)
-Śiva ($-\Delta\Phi$, $-\Delta V$) carries the K4 Grace Exit image. The legacy
-literal `D6≡D0` wording is superseded: `r₆:D6↝D0` is only a non-`μ`
-interpretive return. Operationally, the organism must not hold participants
-captive; a participant can dissolve the relationship under the declared exit
-and custody terms.
-
-### 7. Viṣṇu (L7) — Preservation
-Viṣṇu ($\approx\Delta\Phi$, $\approx\Delta V$) is the active balancing force holding the system at the equator. It represents the organism maintaining the operational equilibrium for its participants.
-
----
-
-## The Ektropic Gradient Across the Rosetta `[S]`
-
-The F5 map is visible in every Rosetta column at the L1 → L7 axis:
-
-| L | Balance B | Ektropic State | Rosetta Expression |
-|---|----------|---------------|-------------------|
-| L1 | → 0 | Near-entropic | Tyranny, sensorimotor, brainstem, always-defect |
-| L2 | 0.5 | Rising | Democracy, pre-operational, limbic, tit-for-tat |
-| L3 | 0.866 | High | Oligarchy, concrete-operational, left-PFC, market |
-| **L4** | **1.000** | **Equator** | **Timocracy, formal-operational, integrated cortex, Pareto** |
-| L5 | 0.866 | High (mirror) | Aristocracy, systematic, prefrontal, grim-trigger |
-| L6 | 0.5 | Falling (mirror) | Anarchy, axiomatic, DMN, mixed-strategy |
-| L7 | → 0 | Near-ektropic | Theocracy, transcendental, global-workspace, infinite-game |
-
-Notice: L1 is near-entropic (near the south pole) and L7 is near-ektropic
-(near the north pole). Both have B → 0. Both are boundaries, not goals.
-
-The equator at L4 is the only level with B = 1. The only level where the
-organism can act at full power. The only level that is its own mirror.
-
----
-
-## Practical Implications for Organism Architecture `[I]`
-
-### Organ P-Scores Are Equator Proximity Measures
-
-Each organ's P-score (as measured in `02_SKYZAI/01_NOOSPHERE/P-SCORES.md`) is an
-estimate of how close that organ is to φ ≈ ν ≈ 1. The organism's geometric
-mean P-score (currently 0.63) is its distance from the equator — not from
-a pole, but from the center of power.
-
-The teleological prediction: as organs approach `B = 1`, their metabolic
-efficiency increases, their coordination friction decreases, and their
-capacity for syntropic action (value creation without extraction) maximizes.
-
-### VMOSK-A Is an Ektropic Structure
-
-The VMOSK-A replicator stack (Vision → Mission → Objectives → Strategies
-→ KPIs → Agents) is an ektropic architecture. It builds coherent structure
-(φ) from raw possibility (ν) through successive layers of constraint:
-
-1. **Vision** (genotype) — the most coherent, least viable layer. One
-   sentence. Decades of stability. Near the north pole by itself.
-2. **Mission** (epigenotype) — Vision expressed in current conditions.
-   More viable. Years of stability.
-3. **Objectives** (phenotype) — the observable body. Measurable. Viable
-   in the market. Quarterly.
-4. **Strategies** (extended phenotype) — reaching into the world. Maximum
-   contact with reality. Continuous adaptation.
-5. **KPIs** (memotype) — what the organism has learned. Cultural memory.
-6. **Agents** (Rosetta castes L1-L7) — the polyphenotypic workforce that
-   does the work.
-
-The stack goes from high φ / low ν (Vision) through the equator
-(Strategies — maximum contact with the world) and back toward high φ / low
-ν (Agents at L7 — the Ṛṣi who is nearly all coherence, nearly no
-operational viability).
-
-**The VMOSK-A is the F5 map expressed as organizational architecture.**
-
-### The Descent Rule Is Teleological
-
-The rule that all insights from L5/L6/L7 must descend to L4 for execution
-is not procedural. It is teleological. L7 near the north pole has maximum
-coherence and near-zero viability. An insight at L7 that does not descend
-to L4 is pure φ with no ν — abstraction without execution. The descent is
-the return to the equator where power can act.
-
-This is why "wisdom without descent is a pathology" (06_AGENTS.md). Not
-because L7 is bad, but because L7 without L4 is geometrically powerless.
-
-### The Organism's Telos in One Sentence
-
-The organism exists to **hold the equator for its participants** — to keep
-each person's φ and ν near unit value by providing tools, coordination, and
-infrastructure that maximizes usable `P_node` without extraction.
-
-When the participant no longer needs the organism — when they can hold their
-own equator — K4 fires. The organism dissolves its hold. The participant
-leaves with everything.
-
-That is the teleological design: a service whose success is measured by the
-participant's independence from it.
-
----
-
-## Evidence-Tier Summary
-
-| Section | Tier | Rationale |
-|---------|------|-----------|
-| Seven generative actions on S² | **[S]** | Derived from φ·ν=1 on S² and the inequality (φ−ν)²≥0; the only derived cardinality here is seven. |
-| _Five-forces cardinality — banner (2026-05-30)_ | _note_ | The "five forces" cardinality is **descriptive gradient-cartography, not canon** — fold F1/F2/F5 into the named per-operator pole-drift vices and F3/F4 into Ω. The only derived cardinality is the **seven**. (Additive K3 note; the row above is preserved, not deleted.) |
-| Ektropy as upward gradient | **[S]** | Geometric consequence of the constraint surface. |
-| Balance maximum (`B_max = 1`) | **[S]** | `sin θ` peaks at `θ = π/2`. Trigonometric identity inside the sphere model. |
-| Power-Max finite-node reading | **[S/I]** | `P_node = Φ × V` names usable action power; balance is the constraint that keeps the factors coupled. Empirical use requires specified measurements and real coupling. |
-| φ·ν=1 as teleological constraint | **[S]** | Direct consequence of reciprocal closure on S². |
-| Six-gate application | **[S]** | Methodological control applied to teleological claims. |
-| K2 as equator guard | **[I]** | Organism-design interpretation, not a formal proof. |
-| η = 0 as no-extraction floor | **[I]** | Organism-design interpretation. |
-| K4 as Grace Exit | **[I]** | Organism-design interpretation. |
-| Three-Stage Process as teleological force | **[I]** | Cognitive-cycle mapping to F5 geometry. |
-| VMOSK-A as ektropic structure | **[I]** | Organizational-architecture interpretation. |
-| Organ P-scores as equator proximity | **[I]** | Operational scoring interpretation. |
-| F5 as literal Standard Model-style fifth physical interaction | **[C]** | Conjectural. Route to `01_F5_FORCE/` for conjectural force-language. Not claimed here. |
-
----
-
-## Boundary Notes
-
-- F5 describes directional gradients on S² and, under settled canon, names
-  the D5 teleological/syntropic force-slot. It does not describe moral
-  goodness, social policy, or personal virtue directly. Those are downstream
-  translations, not the geometry itself.
-- The word "force" in F5 is structural model-language, not an accepted `[A]`
-  physical interaction. The framework does not claim F5 is an accepted
-  fifth physical interaction of nature; stronger literal-physics readings are
-  `[C]` and live in `01_F5_FORCE/`.
-- Ektropy is not anti-entropy. It is the complementary gradient on S².
-  Both poles are boundaries. The equator is the destination.
-- Darwin is nested inside F5, not discarded. Natural selection is the
-  southward (entropic) mechanism; niche construction and cultural
-  transmission are the northward (ektropic) mechanisms. The equator is
-  where both operate at full power.
-- Power Max does not mean "maximize everything." It means "maximize
-  balance." The difference is the entire framework.
-
----
-
-*See also:* [README.md](./README.md) · [00_THE_GENERATIVE_LAGRANGIAN.md](./00_THE_GENERATIVE_LAGRANGIAN.md) · [01_F5_FORCE/](./01_F5_FORCE/) · [02_THE_DERIVATION/](./02_THE_DERIVATION/) · [02_EPISTEMOLOGY/02_WHEN_PATTERN_BECOMES_CANDIDATE_CLAIM.md](../02_EPISTEMOLOGY/02_WHEN_PATTERN_BECOMES_CANDIDATE_CLAIM.md) · [00_THE_MASTER_ROSETTA.md](../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md)
-
-Zero-Sum Resolution Equation
-
----
-
-## Agent Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
-2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Canonical Path:** `01_EMERGENTISM/01_TELEOLOGY/01_F5_FORCE_MAP_AND_EKTROPY.md`
+**Execution boundary:** research doctrine only. No physical-force, moral,
+product, governance, or deployment authority follows.
