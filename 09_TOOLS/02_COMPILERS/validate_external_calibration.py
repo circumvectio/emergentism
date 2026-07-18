@@ -252,6 +252,8 @@ DATASET_KEYS = {
     "access",
     "resultReceipt",
     "replicationReceipt",
+    "resultVerdict",
+    "replicationVerdict",
     "teams",
     "domains",
 }
@@ -264,6 +266,8 @@ RESULT_RECEIPT_KEYS = {
     "dataArtifact",
     "dataSha256",
     "preregSha256",
+    "analysisManifest",
+    "analysisManifestSha256",
     "analysisCommit",
     "freezeCommit",
     "outcome",
@@ -273,8 +277,34 @@ RESULT_RECEIPT_KEYS = {
     "domains",
     "newIndependentObservations",
 }
+ANALYSIS_MANIFEST_KEYS = {
+    "schemaVersion",
+    "claimId",
+    "datasetLocator",
+    "candidateModel",
+    "rivals",
+    "variables",
+    "outcomes",
+    "exclusions",
+    "analysisPlan",
+    "costPlan",
+    "accessAttestation",
+}
+ACCESS_ATTESTATION_KEYS = {"status", "attestedBy", "attestedAt"}
 RESULT_OUTCOMES = {"supported", "null", "failed", "mixed"}
 RESULT_RECEIPT_KINDS = {"x2_discriminator", "x3_replication"}
+KNOWN_PREFREEZE_PACKET_PREFIXES = (
+    "11_UPLINK/25_EXPERIMENTS/2026-07-02_production_function_form/",
+    "11_UPLINK/25_EXPERIMENTS/2026-07-02_extraction_law_empirical_test/",
+)
+KNOWN_PREFREEZE_ARTIFACT_SHA256 = {
+    "0ae6f766a76edf82d27fa31a594a3735d6370ae7807566752d5ac28ff57c4523",
+    "0e33fffd7132cc7346a7c4ed4b4ec734c7a78cdffc5d6bb40d20aa7f00a7dd69",
+    "19135f2afa0923ca98193f29b2c6e944161db964a00ca567f53af900f2a2cd95",
+    "92b0d2338ddbc122cd0b324e7955793378777791088c1159418b0f1a57a3792c",
+    "c32f302e697f36e9c2c750a6e210366396ba60f24301448d11ade569a3ec483c",
+    "ea39aec1ac05d86fb4084dda547112ae78b917aa6127547f3b94f482dd6d4aa8",
+}
 WHOLE_PROMOTION_RE = re.compile(
     r"\b(?:validat\w*|verif\w*|prov(?:e|es|ed|en|ing)|proofs?|confirm\w*|"
     r"establish\w*|demonstrat\w*|certif\w*|corroborat\w*|conclus(?:ive|ively)|"
@@ -418,6 +448,10 @@ def _require_git_path(root: Path, commit: str, relative: str, label: str) -> Non
     _require(result.returncode == 0, f"{label} is not present at commit {commit}")
 
 
+def _git_path_exists(root: Path, commit: str, relative: str) -> bool:
+    return _git(root, "cat-file", "-e", f"{commit}:{relative}").returncode == 0
+
+
 def _git_blob_sha256(root: Path, commit: str, relative: str, label: str) -> str:
     result = _git(root, "cat-file", "blob", f"{commit}:{relative}")
     _require(
@@ -463,6 +497,106 @@ def _validate_https_url(value: Any, label: str) -> None:
     _require(bool(parsed.path.strip("/")), f"{label} URL must identify a source path")
 
 
+def _validate_analysis_manifest(
+    root: Path,
+    claim_id: str,
+    receipt: dict[str, Any],
+    expected_kind: str,
+    claim_rivals: list[str],
+    claim_variables: list[str],
+    claim_outcomes: list[str],
+) -> tuple[str, Path, str]:
+    relative = receipt.get("analysisManifest")
+    path = _repository_file(root, relative, f"{claim_id} analysisManifest")
+    _require(
+        path.suffix == ".json" and path.is_file(),
+        f"{claim_id} analysisManifest must be an existing JSON file: {relative}",
+    )
+    try:
+        manifest = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise CalibrationError(f"{claim_id} invalid analysisManifest: {exc}") from exc
+    _require(isinstance(manifest, dict), f"{claim_id} analysisManifest must be an object")
+    _exact_keys(manifest, ANALYSIS_MANIFEST_KEYS, f"{claim_id}.analysisManifest")
+    _require(
+        manifest.get("schemaVersion") == "1.0",
+        f"{claim_id} analysisManifest schema must be 1.0",
+    )
+    _require(
+        manifest.get("claimId") == claim_id,
+        f"{claim_id} analysisManifest claimId mismatch",
+    )
+    for field in ("datasetLocator", "candidateModel", "analysisPlan", "costPlan"):
+        _require(
+            isinstance(manifest.get(field), str) and bool(manifest[field].strip()),
+            f"{claim_id} analysisManifest {field} must be nonempty text",
+        )
+    for field, expected in (
+        ("rivals", claim_rivals),
+        ("variables", claim_variables),
+        ("outcomes", claim_outcomes),
+    ):
+        values = _nonempty_list(
+            manifest.get(field), f"{claim_id}.analysisManifest.{field}"
+        )
+        _require(
+            all(isinstance(value, str) and value.strip() for value in values),
+            f"{claim_id} analysisManifest {field} must contain text",
+        )
+        _require(
+            len(values) == len(set(values)),
+            f"{claim_id} analysisManifest {field} must be unique",
+        )
+        _require(
+            set(values) == set(expected),
+            f"{claim_id} analysisManifest {field} must match the claim contract",
+        )
+    exclusions = manifest.get("exclusions")
+    _require(
+        isinstance(exclusions, list)
+        and all(isinstance(value, str) and value.strip() for value in exclusions),
+        f"{claim_id} analysisManifest exclusions must contain text",
+    )
+    attestation = manifest.get("accessAttestation")
+    _require(isinstance(attestation, dict), f"{claim_id} accessAttestation must be an object")
+    _exact_keys(attestation, ACCESS_ATTESTATION_KEYS, f"{claim_id}.accessAttestation")
+    expected_status = (
+        "not_accessed_before_freeze"
+        if expected_kind == "x2_discriminator"
+        else "not_collected_before_freeze"
+    )
+    _require(
+        attestation.get("status") == expected_status,
+        f"{claim_id} accessAttestation must declare {expected_status}",
+    )
+    _require(
+        isinstance(attestation.get("attestedBy"), str)
+        and bool(attestation["attestedBy"].strip()),
+        f"{claim_id} accessAttestation attestedBy must be nonempty text",
+    )
+    date_text = str(attestation.get("attestedAt", ""))
+    try:
+        attested_date = dt.date.fromisoformat(date_text)
+    except ValueError as exc:
+        raise CalibrationError(
+            f"{claim_id} accessAttestation needs a real ISO date"
+        ) from exc
+    _require(
+        attested_date.isoformat() == date_text and attested_date <= dt.date.today(),
+        f"{claim_id} accessAttestation needs a real non-future ISO date",
+    )
+    declared_hash = str(receipt.get("analysisManifestSha256", ""))
+    _require(
+        bool(re.fullmatch(r"[0-9a-f]{64}", declared_hash)),
+        f"{claim_id} result receipt needs a SHA-256 analysisManifestSha256",
+    )
+    _require(
+        _sha256_file(path, f"{claim_id} analysisManifest") == declared_hash,
+        f"{claim_id} analysisManifestSha256 does not match the local manifest",
+    )
+    return str(relative), path, declared_hash
+
+
 def _validate_result_receipt(
     root: Path,
     claim_id: str,
@@ -470,6 +604,8 @@ def _validate_result_receipt(
     prereg_path: str,
     expected_kind: str,
     claim_rivals: list[str],
+    claim_variables: list[str],
+    claim_outcomes: list[str],
     require_current_prereg: bool,
 ) -> dict[str, Any]:
     _require(
@@ -493,8 +629,8 @@ def _validate_result_receipt(
     _require(isinstance(receipt, dict), f"{claim_id} result receipt must be an object")
     _exact_keys(receipt, RESULT_RECEIPT_KEYS, f"{claim_id}.resultReceipt")
     _require(
-        receipt.get("schemaVersion") == "2.0",
-        f"{claim_id} result receipt schema must be 2.0",
+        receipt.get("schemaVersion") == "2.1",
+        f"{claim_id} result receipt schema must be 2.1",
     )
     _require(
         receipt.get("receiptKind") in RESULT_RECEIPT_KINDS,
@@ -518,6 +654,19 @@ def _validate_result_receipt(
         artifact not in {path, prereg},
         f"{claim_id} dataArtifact must be distinct from receipt and preregistration",
     )
+    manifest_relative, manifest_path, declared_manifest_hash = _validate_analysis_manifest(
+        root,
+        claim_id,
+        receipt,
+        expected_kind,
+        claim_rivals,
+        claim_variables,
+        claim_outcomes,
+    )
+    _require(
+        manifest_path not in {path, prereg, artifact},
+        f"{claim_id} analysisManifest must be distinct from receipt, preregistration, and dataArtifact",
+    )
     declared_hash = str(receipt.get("dataSha256", ""))
     _require(
         bool(re.fullmatch(r"[0-9a-f]{64}", declared_hash)),
@@ -526,6 +675,17 @@ def _validate_result_receipt(
     _require(
         _sha256_file(artifact, f"{claim_id} dataArtifact") == declared_hash,
         f"{claim_id} dataSha256 does not match the local data artifact",
+    )
+    _require(
+        not any(
+            artifact.relative_to(root.resolve()).as_posix().startswith(prefix)
+            for prefix in KNOWN_PREFREEZE_PACKET_PREFIXES
+        ),
+        f"{claim_id} cannot promote a disclosed pre-freeze packet path",
+    )
+    _require(
+        declared_hash not in KNOWN_PREFREEZE_ARTIFACT_SHA256,
+        f"{claim_id} cannot promote a disclosed pre-freeze packet hash",
     )
     declared_prereg_hash = str(receipt.get("preregSha256", ""))
     _require(
@@ -542,6 +702,20 @@ def _validate_result_receipt(
         root, freeze_commit, analysis_commit, f"{claim_id} freeze/analysis"
     )
     _require_git_path(root, freeze_commit, prereg_path, f"{claim_id} preregistration")
+    _require_git_path(
+        root, freeze_commit, manifest_relative, f"{claim_id} analysisManifest"
+    )
+    frozen_manifest_hash = _git_blob_sha256(
+        root, freeze_commit, manifest_relative, f"{claim_id} analysisManifest"
+    )
+    _require(
+        frozen_manifest_hash == declared_manifest_hash,
+        f"{claim_id} freezeCommit does not bind the declared analysisManifest hash",
+    )
+    _require(
+        not _git_path_exists(root, freeze_commit, str(artifact_relative)),
+        f"{claim_id} dataArtifact already existed at the freeze commit",
+    )
     frozen_prereg_hash = _git_blob_sha256(
         root, freeze_commit, prereg_path, f"{claim_id} preregistration"
     )
@@ -874,6 +1048,10 @@ def _validate_claims(
                 not has_result_receipt and not has_replication_receipt,
                 f"{claim_id} cannot carry a result receipt before X2",
             )
+            _require(
+                "resultVerdict" not in dataset and "replicationVerdict" not in dataset,
+                f"{claim_id} cannot carry typed result verdicts before X2",
+            )
         if stage == "X2_independent_data_discrimination":
             _require(
                 "B" in tier_tokens and "A" not in tier_tokens,
@@ -938,8 +1116,24 @@ def _validate_claims(
                 prereg_path,
                 "x2_discriminator",
                 claim_rivals,
+                variables,
+                outcomes,
                 stage == "X2_independent_data_discrimination",
             )
+            _require(
+                dataset.get("resultVerdict") == result_receipt["outcome"],
+                f"{claim_id} resultVerdict must equal the X2 receipt outcome",
+            )
+            if stage == "X2_independent_data_discrimination":
+                _require(
+                    "replicationVerdict" not in dataset,
+                    f"{claim_id} X2 cannot carry replicationVerdict",
+                )
+                expected_prefix = f"X2 outcome={result_receipt['outcome']}."
+                _require(
+                    claim["currentVerdict"].startswith(expected_prefix),
+                    f"{claim_id} currentVerdict must begin with {expected_prefix}",
+                )
         if stage in {
             "X3_independent_preregistered_replication",
             "X4_cross_domain_replication",
@@ -972,7 +1166,21 @@ def _validate_claims(
                 prereg_path,
                 "x3_replication",
                 claim_rivals,
+                variables,
+                outcomes,
                 True,
+            )
+            _require(
+                dataset.get("replicationVerdict") == replication_receipt["outcome"],
+                f"{claim_id} replicationVerdict must equal the X3 receipt outcome",
+            )
+            expected_prefix = (
+                f"X2 outcome={result_receipt['outcome']}; "
+                f"X3 outcome={replication_receipt['outcome']}."
+            )
+            _require(
+                claim["currentVerdict"].startswith(expected_prefix),
+                f"{claim_id} currentVerdict must begin with {expected_prefix}",
             )
             _require(
                 replication_receipt.get("newIndependentObservations") is True,

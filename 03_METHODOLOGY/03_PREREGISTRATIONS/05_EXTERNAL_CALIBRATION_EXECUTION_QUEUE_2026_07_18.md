@@ -31,9 +31,12 @@ claim-specific frozen analysis manifest:
 | `CAL-MU-01` | Vicsek, Carpenter, Ratcliff, West | select one crossing and freeze control parameter, partition family, recovery test, smooth-crossover rival, and reduction decision |
 | `CAL-REFLEXIVITY-01` | Heemeijer and Smith market protocols | select one exact dataset and freeze lagged cognitive/participating variables, reinforcing/corrective sign test, and non-reflexive rivals |
 
-For each card, the freeze commit must precede first raw-data access and name the
+For each card, the freeze commit must bind a separate claim-specific JSON
+analysis manifest before first raw-data access. That manifest names the
 immutable dataset locator, expected checksum mechanism, complete rival set,
-preprocessing, exclusions, outcome fields, stopping rule, and analysis code.
+variables, preprocessing, exclusions, outcome fields, stopping rule, analysis
+and cost plans, plus a dated access attestation. The selected data artifact must
+be absent at the freeze commit and present only in the later analysis commit.
 Only then may the artifact be acquired and analyzed in a later commit. The
 outcome may be `supported`, `failed`, `null`, or `mixed`; all four can earn X2
 methodological status and all four must change the verdict honestly.

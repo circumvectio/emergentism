@@ -360,9 +360,14 @@ The standard-library validator rejects:
 - five code-owned owner-phrase regressions, schema/tier drift, self-revoked
   negative checks, and missing claim/source provenance.
 
-`X2+` also requires a result JSON distinct from the preregistration, binding the
-claim ID, data source and SHA-256, freeze and analysis commits, outcome, rivals,
-date, team identities, and domains. `X3+` additionally requires the receipt to
+`X2+` also requires a result JSON distinct from both the umbrella
+preregistration and a claim-specific frozen analysis manifest. It binds the
+claim ID, data source and SHA-256, manifest and SHA-256, freeze and analysis
+commits, outcome, rivals, date, team identities, and domains. The artifact must
+be absent at freeze and present at analysis; the manifest must bind the exact
+dataset locator, variables, exclusions, rivals, analysis/cost plans, and dated
+access attestation. Typed result verdict and public verdict prefix must match
+the receipt outcome. `X3+` additionally requires the receipt to
 attest newly collected independent observations and match the named independent
 team. A protocol file cannot certify its own result.
 

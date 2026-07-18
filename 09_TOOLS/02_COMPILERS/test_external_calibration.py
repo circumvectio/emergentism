@@ -123,12 +123,52 @@ def write_json(root: Path, relative: str, value: dict) -> None:
     path.write_text(json.dumps(value, indent=2) + "\n", encoding="utf-8")
 
 
+def write_analysis_manifest(
+    root: Path,
+    claim: dict,
+    *,
+    kind: str,
+    relative: str | None = None,
+) -> str:
+    if relative is None:
+        suffix = "x2" if kind == "x2_discriminator" else "x3"
+        relative = f"03_METHODOLOGY/04_RESULTS/{claim['id']}-{suffix}-manifest.json"
+    access_status = (
+        "not_accessed_before_freeze"
+        if kind == "x2_discriminator"
+        else "not_collected_before_freeze"
+    )
+    write_json(
+        root,
+        relative,
+        {
+            "schemaVersion": "1.0",
+            "claimId": claim["id"],
+            "datasetLocator": "https://data.example.org/frozen-fixture",
+            "candidateModel": "registered Compass candidate",
+            "rivals": list(claim["rivals"]),
+            "variables": list(claim["variables"]),
+            "outcomes": list(claim["outcomes"]),
+            "exclusions": ["no post-freeze exclusions"],
+            "analysisPlan": "Run the frozen candidate and every rival under identical preprocessing.",
+            "costPlan": "Report native-unit compute and acquisition costs separately.",
+            "accessAttestation": {
+                "status": access_status,
+                "attestedBy": "fixture-analysis-team",
+                "attestedAt": "2026-07-18",
+            },
+        },
+    )
+    return relative
+
+
 def write_result_receipt(
     root: Path,
     claim: dict,
     *,
     kind: str,
     artifact: str,
+    manifest: str,
     freeze_commit: str,
     analysis_commit: str,
     outcome: str = "supported",
@@ -147,13 +187,17 @@ def write_result_receipt(
         root,
         relative,
         {
-            "schemaVersion": "2.0",
+            "schemaVersion": "2.1",
             "receiptKind": kind,
             "claimId": claim["id"],
             "dataArtifact": artifact,
             "dataSha256": artifact_hash,
             "preregSha256": hashlib.sha256(
                 (root / claim["preregistration"]["path"]).read_bytes()
+            ).hexdigest(),
+            "analysisManifest": manifest,
+            "analysisManifestSha256": hashlib.sha256(
+                (root / manifest).read_bytes()
             ).hexdigest(),
             "analysisCommit": analysis_commit,
             "freezeCommit": freeze_commit,
@@ -174,6 +218,7 @@ def build_x2_fixture(data: dict, root: Path) -> tuple[dict, str, str, str]:
     sync_component_profile(data)
     materialize_contract_files(data, root)
     init_git(root)
+    manifest = write_analysis_manifest(root, claim, kind="x2_discriminator")
     freeze_commit = commit_all(root, "freeze discriminator")
     artifact = write_artifact(
         root, claim["id"], "x2", b'{"row": 1, "source": "independent"}\n'
@@ -184,10 +229,13 @@ def build_x2_fixture(data: dict, root: Path) -> tuple[dict, str, str, str]:
         claim,
         kind="x2_discriminator",
         artifact=artifact,
+        manifest=manifest,
         freeze_commit=freeze_commit,
         analysis_commit=analysis_commit,
     )
     claim["dataset"]["resultReceipt"] = receipt
+    claim["dataset"]["resultVerdict"] = "supported"
+    claim["currentVerdict"] = "X2 outcome=supported. The bounded discriminator favored the candidate."
     return claim, receipt, freeze_commit, analysis_commit
 
 
@@ -202,6 +250,7 @@ def build_x3_fixture(
     sync_component_profile(data)
     prereg_path = root / claim["preregistration"]["path"]
     prereg_path.write_text("independent replication freeze\n", encoding="utf-8")
+    manifest = write_analysis_manifest(root, claim, kind="x3_replication")
     replication_freeze = commit_all(root, "freeze independent replication")
     artifact = write_artifact(root, claim["id"], "x3", replication_content)
     replication_analysis = commit_all(root, "bind x3 replication data artifact")
@@ -210,6 +259,7 @@ def build_x3_fixture(
         claim,
         kind="x3_replication",
         artifact=artifact,
+        manifest=manifest,
         freeze_commit=replication_freeze,
         analysis_commit=replication_analysis,
         team_ids=["replication-team"],
@@ -217,6 +267,12 @@ def build_x3_fixture(
     )
     claim["dataset"]["resultReceipt"] = x2_receipt
     claim["dataset"]["replicationReceipt"] = replication_receipt
+    claim["dataset"]["resultVerdict"] = "supported"
+    claim["dataset"]["replicationVerdict"] = "supported"
+    claim["currentVerdict"] = (
+        "X2 outcome=supported; X3 outcome=supported. "
+        "The bounded discriminator repeated on new observations."
+    )
     return claim, x2_receipt, replication_receipt
 
 
@@ -514,9 +570,64 @@ class ExternalCalibrationTests(unittest.TestCase):
             root = Path(temp)
             claim, _, _, _ = build_x2_fixture(data, root)
             claim["currentVerdict"] = (
-                "The Compass edge was supported on the frozen independent dataset."
+                "X2 outcome=supported. The Compass edge was supported on the frozen independent dataset."
             )
             self.assertEqual(validate_payload(data, root), (31, 12))
+
+    def test_x2_requires_claim_specific_manifest(self) -> None:
+        data = payload()
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            _, receipt_path, _, _ = build_x2_fixture(data, root)
+            receipt = read_json(root, receipt_path)
+            receipt.pop("analysisManifest")
+            receipt.pop("analysisManifestSha256")
+            write_json(root, receipt_path, receipt)
+            self.assert_rejected(data, "resultReceipt missing keys", root=root)
+
+    def test_x2_rejects_manifest_not_bound_at_freeze(self) -> None:
+        data = payload()
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            _, receipt_path, _, analysis_commit = build_x2_fixture(data, root)
+            receipt = read_json(root, receipt_path)
+            late = "03_METHODOLOGY/04_RESULTS/late-manifest.json"
+            write_json(root, late, read_json(root, receipt["analysisManifest"]))
+            receipt["analysisManifest"] = late
+            receipt["analysisManifestSha256"] = hashlib.sha256(
+                (root / late).read_bytes()
+            ).hexdigest()
+            receipt["analysisCommit"] = analysis_commit
+            write_json(root, receipt_path, receipt)
+            self.assert_rejected(data, "analysisManifest is not present at commit", root=root)
+
+    def test_x2_rejects_data_already_present_at_freeze(self) -> None:
+        data = payload()
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            claim = claim_by_id(data, "CAL-AGENCY-01")
+            promote_to_x2(claim)
+            sync_component_profile(data)
+            materialize_contract_files(data, root)
+            init_git(root)
+            manifest = write_analysis_manifest(root, claim, kind="x2_discriminator")
+            artifact = write_artifact(root, claim["id"], "prefreeze", b"known outcome\n")
+            freeze = commit_all(root, "invalid freeze with data")
+            (root / "analysis-marker.txt").write_text("analysis\n", encoding="utf-8")
+            analysis = commit_all(root, "later analysis marker")
+            receipt = write_result_receipt(
+                root,
+                claim,
+                kind="x2_discriminator",
+                artifact=artifact,
+                manifest=manifest,
+                freeze_commit=freeze,
+                analysis_commit=analysis,
+            )
+            claim["dataset"]["resultReceipt"] = receipt
+            claim["dataset"]["resultVerdict"] = "supported"
+            claim["currentVerdict"] = "X2 outcome=supported. Invalid fixture."
+            self.assert_rejected(data, "already existed at the freeze commit", root=root)
 
     def test_x2_cannot_carry_unused_replication_receipt(self) -> None:
         data = payload()
@@ -547,6 +658,47 @@ class ExternalCalibrationTests(unittest.TestCase):
             receipt["dataSha256"] = "f" * 64
             write_json(root, receipt_path, receipt)
             self.assert_rejected(data, "dataSha256 does not match", root=root)
+
+    def test_x2_rejects_disclosed_prefreeze_packet_path(self) -> None:
+        data = payload()
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            _, receipt_path, _, _ = build_x2_fixture(data, root)
+            receipt = read_json(root, receipt_path)
+            artifact = (
+                "11_UPLINK/25_EXPERIMENTS/2026-07-02_production_function_form/"
+                "copied-result.json"
+            )
+            path = root / artifact
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text("copied after freeze\n", encoding="utf-8")
+            analysis = commit_all(root, "attempt path laundering")
+            receipt["dataArtifact"] = artifact
+            receipt["dataSha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
+            receipt["analysisCommit"] = analysis
+            write_json(root, receipt_path, receipt)
+            self.assert_rejected(data, "cannot promote a disclosed pre-freeze packet path", root=root)
+
+    def test_x2_rejects_disclosed_prefreeze_packet_hash_after_copy(self) -> None:
+        data = payload()
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            _, receipt_path, _, _ = build_x2_fixture(data, root)
+            receipt = read_json(root, receipt_path)
+            source = ROOT / (
+                "11_UPLINK/25_EXPERIMENTS/2026-07-02_production_function_form/"
+                "data/Produc.csv"
+            )
+            artifact = "03_METHODOLOGY/04_RESULTS/data/copied-known-data.csv"
+            path = root / artifact
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(source.read_bytes())
+            analysis = commit_all(root, "attempt hash laundering")
+            receipt["dataArtifact"] = artifact
+            receipt["dataSha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
+            receipt["analysisCommit"] = analysis
+            write_json(root, receipt_path, receipt)
+            self.assert_rejected(data, "cannot promote a disclosed pre-freeze packet hash", root=root)
 
     def test_x2_rejects_fake_full_length_commit(self) -> None:
         data = payload()
@@ -637,7 +789,44 @@ class ExternalCalibrationTests(unittest.TestCase):
                     receipt = read_json(root, receipt_path)
                     receipt["outcome"] = outcome
                     write_json(root, receipt_path, receipt)
+                    claim = claim_by_id(data, "CAL-AGENCY-01")
+                    claim["dataset"]["resultVerdict"] = outcome
+                    claim["currentVerdict"] = (
+                        f"X2 outcome={outcome}. The bounded discriminator was receipted."
+                    )
                     self.assertEqual(validate_payload(data, root), (31, 12))
+
+    def test_x2_result_verdict_must_equal_receipt_for_every_outcome_sign(self) -> None:
+        outcomes = ("supported", "failed", "null", "mixed")
+        for index, outcome in enumerate(outcomes):
+            with self.subTest(outcome=outcome):
+                data = payload()
+                with tempfile.TemporaryDirectory() as temp:
+                    root = Path(temp)
+                    claim, receipt_path, _, _ = build_x2_fixture(data, root)
+                    receipt = read_json(root, receipt_path)
+                    receipt["outcome"] = outcome
+                    write_json(root, receipt_path, receipt)
+                    wrong = outcomes[(index + 1) % len(outcomes)]
+                    claim["dataset"]["resultVerdict"] = wrong
+                    claim["currentVerdict"] = f"X2 outcome={wrong}. Contradictory prose."
+                    self.assert_rejected(
+                        data, "resultVerdict must equal the X2 receipt outcome", root=root
+                    )
+
+    def test_x2_public_verdict_cannot_reverse_failed_receipt(self) -> None:
+        data = payload()
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            claim, receipt_path, _, _ = build_x2_fixture(data, root)
+            receipt = read_json(root, receipt_path)
+            receipt["outcome"] = "failed"
+            write_json(root, receipt_path, receipt)
+            claim["dataset"]["resultVerdict"] = "failed"
+            claim["currentVerdict"] = "X2 outcome=supported. The Compass edge won."
+            self.assert_rejected(
+                data, "currentVerdict must begin with X2 outcome=failed", root=root
+            )
 
     def test_x2_receipt_kind_must_be_discriminator(self) -> None:
         data = payload()
@@ -685,7 +874,7 @@ class ExternalCalibrationTests(unittest.TestCase):
                 data, "must bind newly collected independent observations", root=root
             )
 
-    def test_x3_requires_distinct_data_artifact(self) -> None:
+    def test_x3_rejects_reusing_data_present_at_replication_freeze(self) -> None:
         data = payload()
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
@@ -696,7 +885,7 @@ class ExternalCalibrationTests(unittest.TestCase):
             replication["dataSha256"] = x2_receipt["dataSha256"]
             write_json(root, replication_path, replication)
             self.assert_rejected(
-                data, r"X3\+ requires a distinct new-data artifact", root=root
+                data, "dataArtifact already existed at the freeze commit", root=root
             )
 
     def test_x3_requires_distinct_new_data_hash(self) -> None:

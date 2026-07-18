@@ -315,20 +315,38 @@ No claim reaches `X2` by changing a status string. Dataset status
 `result_receipted` is valid if and only if `resultReceipt` names a valid,
 repository-local JSON receipt; lower stages cannot carry a result receipt.
 
-The receipt schema is `2.0` and closed-world. An `x2_discriminator` receipt must
+The receipt schema is `2.1` and closed-world. An `x2_discriminator` receipt must
 bind the claim ID, an existing repository-relative `dataArtifact`, the exact
-`dataSha256`, the exact `preregSha256`, distinct full `freezeCommit` and
-`analysisCommit` IDs, one declared outcome from `supported`, `failed`, `null`,
-or `mixed`, the claim's complete
+`dataSha256`, the exact `preregSha256`, a separate claim-specific
+`analysisManifest` and `analysisManifestSha256`, distinct full `freezeCommit`
+and `analysisCommit` IDs, one declared outcome from `supported`, `failed`,
+`null`, or `mixed`, the claim's complete
 rival set, a real ISO calendar date, team IDs, domains, and the observation-mode
 boolean. The validator checks that both commits exist, that freeze is an
 ancestor of analysis, that the preregistration bytes at freeze match
-`preregSha256`, that the current active preregistration still matches that
-freeze, and that the exact data artifact/hash exists both locally and at the
-analysis commit. `X2` records that an independent discriminator was frozen and
-run; it does not record that the framework won. A `failed`, `null`, or `mixed`
-receipt therefore reaches the same calibration stage while narrowing, killing,
-or leaving the claim unresolved exactly as preregistered.
+`preregSha256`, that the manifest bytes at freeze match the declared manifest
+hash, that the current active files still match, that the data artifact did not
+exist at the freeze commit, and that the exact artifact/hash exists both locally
+and at the analysis commit. The manifest is closed and binds the dataset
+locator, candidate, complete rival set, variables, outcomes, exclusions,
+analysis plan, cost plan, and a dated no-access/no-collection-before-freeze
+attestation. Paths and hashes of the two disclosed July 2 negative packets are
+ineligible for retroactive promotion. `X2` records that an independent
+discriminator was frozen and run; it does not record that the framework won. A
+`failed`, `null`, or `mixed` receipt therefore reaches the same calibration
+stage while narrowing, killing, or leaving the claim unresolved exactly as
+preregistered.
+
+Git can prove commit order, file absence, and byte identity; it cannot observe a
+human's screen or memory. The access attestation is therefore an accountable
+claim, not physical proof of non-access. Any contrary evidence kills the X2
+provenance claim, and external audit may require stronger custody evidence.
+
+The claim dataset also carries a typed `resultVerdict` that must equal the X2
+receipt outcome exactly, while public `currentVerdict` must begin with the same
+canonical outcome token. X3 repeats this equality for `replicationVerdict`.
+Thus a failed receipt cannot be narrated as support and a supported receipt
+cannot be narrated as failure without the validator stopping the promotion.
 
 The hypothesis-bearing claim fields are frozen by a canonical contract hash:
 claim identity and class, claim wording, source references and distance,
