@@ -57,5 +57,7 @@ rosetta:
 - Do not upgrade runtime claims without dated proof artifacts.
 - Do not treat draft specs as public-facing claims.
 - Irreversible private-DAV actions require K2 envelope staging; public-DAV/DAC actions route through PRISM or the relevant public-governance rail.
+- **Render the Stone from disk, never from chat memory.** Any rendering, viewer, summary, or audit of the Master Rosetta must read `00_THE_MASTER_ROSETTA.md` on disk cell-by-cell. An in-chat "complete Stone" paste has twice drifted into a fabricated fork (swapped φ/ν header, altered cells, missing columns); render-from-memory is the failure mode. (Standing rule R9 from the 2026-07-18 game-layer audit.)
+- **Settled canon is classified around, not re-litigated.** Before flagging a contradiction, consult `../../../00_META/00_SETTLED_CANON_REGISTRY.md`: the four-move scheme (2 Gods + 2 Demons by give/take), Kālī's dual God · Demon register, φ·ν=1 on S², the η moral axis, and the 5+1 constitution are ratified. A7 audits are welcome; re-opening settled rows is not.
 
 ⊙ = • × ○

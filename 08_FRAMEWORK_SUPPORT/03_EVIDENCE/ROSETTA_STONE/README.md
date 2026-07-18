@@ -238,39 +238,94 @@ The standalone `00_Rosetta_R*_SUMMARY.md` overview files are not present in this
 
 ---
 
-## Also in This Folder
+## Folder index (complete — refreshed 2026-07-18)
+
+Every file in this folder, grouped by role. No file is moved: the numbered audit
+series and per-column files are load-bearing in the link graph (the Master alone
+has 21 inbound references), so this index is the navigation layer, not a
+reorganization. `00_*` is the semantic flag for foundational content, not an
+ordinal — multiple `00_*` at one depth is by design (see `NAMING_DOCTRINE.md`).
+
+**Front door & governance**
 
 | Document | Purpose |
 |----------|---------|
-| [00_THE_MASTER_ROSETTA.md](00_THE_MASTER_ROSETTA.md) | The complete cross-domain translation engine (local copy) |
-| [NAMING_DOCTRINE.md](NAMING_DOCTRINE.md) | CANON — why the D-series uses per-lane (not globally unique) numbering; read before any renumber |
-| [ANIMATION_SPEC.md](ANIMATION_SPEC.md) | Specification for the animated Three-Stage Process visualisation |
+| [00_THE_MASTER_ROSETTA.md](00_THE_MASTER_ROSETTA.md) | The complete cross-domain translation engine — the hub of this folder |
+| [README.md](README.md) | This file — front door and folder index |
+| [AGENTS.md](AGENTS.md) | Agent routing, caste dispatch, and the render-from-disk rule |
+| [CLAUDE.md](CLAUDE.md) | Claude-tool compatibility shim (defers to AGENTS.md) |
+| [NAMING_DOCTRINE.md](NAMING_DOCTRINE.md) | CANON — why numbering is per-lane/semantic; read before any renumber |
+| [00_SELECTION_METHODOLOGY.md](00_SELECTION_METHODOLOGY.md) | How columns are selected, audited, and excluded |
 | [00_CORPUS.md](00_CORPUS.md) | Corpus map from this folder's perspective |
+
+**Canonical derived references** (read off the Master)
+
+| Document | Purpose |
+|----------|---------|
+| [00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md](00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md) | The seven -ologies, derived directly from the Master's causal chain |
+| [00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md](00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md) | The seven philosophical disciplines per the canonical Rosetta |
+| [03_ROSETTA_DAC_OPERATING_SYSTEM.md](03_ROSETTA_DAC_OPERATING_SYSTEM.md) | Operator architecture blueprint — the Rosetta as an operating system |
+
+**The 2026-04-25 mirror-test & falsification campaign** (dated, load-bearing)
+
+| Document | Purpose |
+|----------|---------|
 | [02_ROWS_COLUMNS_DEEPENING_2026_04_25.md](02_ROWS_COLUMNS_DEEPENING_2026_04_25.md) | Working doctrine for auditing rows, columns, cells, and forced fits |
-| [04_DEEP_RUMINATION_2026_04_25.md](04_DEEP_RUMINATION_2026_04_25.md) | Sovereign rumination on rows, columns, cell accountability, and kill criteria |
-| [05_NON_WEIRD_SWEEP_2026_04_25.md](05_NON_WEIRD_SWEEP_2026_04_25.md) | Bias sweep across Daoist, Buddhist, Sub-Saharan, and Polynesian comparisons |
-| [06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md](06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md) | Structural stress test for column classes, mirror symmetry, centers, and missing columns |
+| [04_DEEP_RUMINATION_2026_04_25.md](04_DEEP_RUMINATION_2026_04_25.md) | Rumination on rows, columns, cell accountability, and kill criteria |
+| [05_NON_WEIRD_SWEEP_2026_04_25.md](05_NON_WEIRD_SWEEP_2026_04_25.md) | Bias sweep: Daoist, Buddhist, Sub-Saharan, Polynesian comparisons |
+| [06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md](06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md) | Structural stress test: column classes, mirror symmetry, centers, gaps |
 | [07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md](07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md) | Operational mirror-pair scoring protocol for candidate columns |
-| [08_MIRROR_TEST_EXTENSION_AND_FAILED_MAPPINGS_2026_04_25.md](08_MIRROR_TEST_EXTENSION_AND_FAILED_MAPPINGS_2026_04_25.md) | Extended mirror scoreboard and neuroscience mirror-completion experiment |
+| [08_MIRROR_TEST_EXTENSION_AND_FAILED_MAPPINGS_2026_04_25.md](08_MIRROR_TEST_EXTENSION_AND_FAILED_MAPPINGS_2026_04_25.md) | Extended scoreboard + neuroscience mirror-completion experiment |
 | [09_FAILED_MAPPINGS_2026_04_25.md](09_FAILED_MAPPINGS_2026_04_25.md) | Domains examined that do NOT fit the 7-stage structure |
 | [10_CELL_AUDIT_SCHEMA_2026_04_25.md](10_CELL_AUDIT_SCHEMA_2026_04_25.md) | Required fields for turning each cell into an auditable claim |
+| [10_INDIGENOUS_AMERICAN_AND_TAHITIAN_2026_04_25.md](10_INDIGENOUS_AMERICAN_AND_TAHITIAN_2026_04_25.md) | Indigenous American sweep + Tahitian Arioi verification |
 | [11_CELL_AUDIT_SEED_L4_CENTER_2026_04_25.md](11_CELL_AUDIT_SEED_L4_CENTER_2026_04_25.md) | First claim-level seed audit for the L4 center row |
 | [12_MIRROR_PAIR_AUDITS_2026_04_25.md](12_MIRROR_PAIR_AUDITS_2026_04_25.md) | Row-pair audit for L3/L5, L2/L6, and L1/L7 mirror checks |
-| [13_COLUMN_CELL_AUDIT_ECONOMICS_2026_04_25.md](13_COLUMN_CELL_AUDIT_ECONOMICS_2026_04_25.md) | Full seven-cell economics audit using the schema |
-| [14_COLUMN_CELL_AUDIT_MUSIC_2026_04_25.md](14_COLUMN_CELL_AUDIT_MUSIC_2026_04_25.md) | Full seven-cell music audit using the schema |
-| [15_COLUMN_CELL_AUDIT_NEUROSCIENCE_2026_04_25.md](15_COLUMN_CELL_AUDIT_NEUROSCIENCE_2026_04_25.md) | Full seven-cell neuroscience audit and mirror-completion repair path |
-| [16_PLATO_LAKOTA_NEUROSCIENCE_2026_04_25.md](16_PLATO_LAKOTA_NEUROSCIENCE_2026_04_25.md) | Plato mirror-completion, Lakota Seven Rites test, and neuroscience Path A/B framing |
-| [17_CELL_AUDIT_PSYCHOLOGY_2026_04_25.md](17_CELL_AUDIT_PSYCHOLOGY_2026_04_25.md) | Full seven-cell psychology audit; L1-L4 empirical core and L5-L7 interpretive halo |
-| [ROSETTA_INDIGENOUS_AMERICAN.md](ROSETTA_INDIGENOUS_AMERICAN.md) | Indigenous American sweep: Lakota, Mesoamerican, and Andean structures |
-| [FAILED_MAPPINGS_AND_TESTING_QUEUE.md](FAILED_MAPPINGS_AND_TESTING_QUEUE.md) | Working queue of rejected and untested Rosetta domains |
-| [ROSETTA_CIVILISATIONAL.md](ROSETTA_CIVILISATIONAL.md) | Civilisational domain translation |
-| [ROSETTA_COMPUTATION.md](ROSETTA_COMPUTATION.md) | Computation domain translation |
-| [ROSETTA_ECONOMICS.md](ROSETTA_ECONOMICS.md) | Economic organization forms; derived diagnostic, not independent proof |
-| [ROSETTA_MUSIC.md](ROSETTA_MUSIC.md) | Musical structures — diatonic scale as L-projection |
-| [ROSETTA_MYTHOLOGY.md](ROSETTA_MYTHOLOGY.md) | Mythology domain translation |
-| [ROSETTA_NEUROSCIENCE.md](ROSETTA_NEUROSCIENCE.md) | Neuroscience domain translation |
-| [ROSETTA_OPERATOR_PATHOLOGY.md](ROSETTA_OPERATOR_PATHOLOGY.md) | Operator pathology domain translation |
-| [ROSETTA_PSYCHOLOGY.md](ROSETTA_PSYCHOLOGY.md) | Psychology domain translation |
+| [13_COLUMN_CELL_AUDIT_ECONOMICS_2026_04_25.md](13_COLUMN_CELL_AUDIT_ECONOMICS_2026_04_25.md) | Full seven-cell economics audit |
+| [14_COLUMN_CELL_AUDIT_MUSIC_2026_04_25.md](14_COLUMN_CELL_AUDIT_MUSIC_2026_04_25.md) | Full seven-cell music audit |
+| [15_COLUMN_CELL_AUDIT_NEUROSCIENCE_2026_04_25.md](15_COLUMN_CELL_AUDIT_NEUROSCIENCE_2026_04_25.md) | Full seven-cell neuroscience audit + mirror-completion repair path |
+| [16_PLATO_LAKOTA_NEUROSCIENCE_2026_04_25.md](16_PLATO_LAKOTA_NEUROSCIENCE_2026_04_25.md) | Plato mirror-completion, Lakota Seven Rites, neuroscience Path A/B |
+| [17_CELL_AUDIT_PSYCHOLOGY_2026_04_25.md](17_CELL_AUDIT_PSYCHOLOGY_2026_04_25.md) | Full seven-cell psychology audit (L1-L4 core, L5-L7 halo) |
+
+> **Numbering note:** two files share the `10_` prefix (Cell-Audit-Schema and Indigenous-American). This is a known benign collision within one folder — both are well-titled, nothing links by bare number, and `10_CELL_AUDIT_SCHEMA` carries 9 inbound links. Per `NAMING_DOCTRINE.md`, a renumber is a K2 act, not a folder-audit action; left as-is intentionally.
+
+**Per-domain column applications** (one domain, mapped across all seven rows)
+
+| Document | Purpose |
+|----------|---------|
+| [ROSETTA_CIVILISATIONAL.md](ROSETTA_CIVILISATIONAL.md) | Civilisational dynamics |
+| [ROSETTA_COMPUTATION.md](ROSETTA_COMPUTATION.md) | Computation & AI |
+| [ROSETTA_ECONOMICS.md](ROSETTA_ECONOMICS.md) | Economic organization forms (derived diagnostic, not independent proof) |
+| [ROSETTA_MUSIC.md](ROSETTA_MUSIC.md) | Musical structures — the diatonic scale as L-projection |
+| [ROSETTA_MYTHOLOGY.md](ROSETTA_MYTHOLOGY.md) | Mythology & archetype |
+| [ROSETTA_NEUROSCIENCE.md](ROSETTA_NEUROSCIENCE.md) | Neuroscience & cognition |
+| [ROSETTA_OPERATOR_PATHOLOGY.md](ROSETTA_OPERATOR_PATHOLOGY.md) | Operator pathology & shadow |
+| [ROSETTA_PSYCHOLOGY.md](ROSETTA_PSYCHOLOGY.md) | Psychology & development |
+| [ROSETTA_PSYCHOLOGY_RESEARCH_BRIEF.md](ROSETTA_PSYCHOLOGY_RESEARCH_BRIEF.md) | Research brief + meta-analysis behind the psychology convergence claim |
+| [ROSETTA_REPLICATOR.md](ROSETTA_REPLICATOR.md) | The Replicator Stack (biological reading) |
+| [ROSETTA_INDIGENOUS_AMERICAN.md](ROSETTA_INDIGENOUS_AMERICAN.md) | Indigenous American: Lakota, Mesoamerican, Andean structures |
+
+**Comparative & convergence notes**
+
+| Document | Purpose |
+|----------|---------|
+| [00_THREE_NON_WESTERN_TRADITIONS_AND_THE_L_LEVELS.md](00_THREE_NON_WESTERN_TRADITIONS_AND_THE_L_LEVELS.md) | Three non-Western traditions against the L-level structure |
+| [01_ALTERNATIVE_GEOMETRIES_AND_CONTRADICTING_TRADITIONS.md](01_ALTERNATIVE_GEOMETRIES_AND_CONTRADICTING_TRADITIONS.md) | Known-unknowns audit: geometries and traditions that contradict |
+| [00_SUDA_CONVERGENT_RECIPROCAL_SYMMETRY.md](00_SUDA_CONVERGENT_RECIPROCAL_SYMMETRY.md) | External convergence record (reference note, not source authority) |
+| [00_SUDA_VALUE_EXTRACTION_DEEP_SYNTHESIS.md](00_SUDA_VALUE_EXTRACTION_DEEP_SYNTHESIS.md) | Working extraction surface from Suda's corpus |
+| [FAILED_MAPPINGS_AND_TESTING_QUEUE.md](FAILED_MAPPINGS_AND_TESTING_QUEUE.md) | Active queue of rejected and untested Rosetta domains |
+
+**Interactive surface & assets**
+
+| Document | Purpose |
+|----------|---------|
+| [99_VIEWER_MASTER_ROSETTA_SPHERE_2026_07_18.html](99_VIEWER_MASTER_ROSETTA_SPHERE_2026_07_18.html) | Interactive sphere viewer — rendered cell-by-cell from the Master (2026-07-18); the click-a-latitude cross-section surface |
+| [ANIMATION_SPEC.md](ANIMATION_SPEC.md) | Specification for the animated Three-Stage Process visualisation |
+| `GNOSTIC_DOSSIER.pdf` | Source dossier (binary; restored from git 2026-07-18 after an eviction truncation) |
+
+**Related, outside this folder**
+
+- [`../../../00_META/ROSETTA_D5_GAMESPACE_FORMAL_AUDIT_2026_07_18.md`](../../../00_META/ROSETTA_D5_GAMESPACE_FORMAL_AUDIT_2026_07_18.md) — formal-logic audit of the operator game layer (10 claims, 13 agents); K2 repair packet R1–R9 staged.
 
 ---
 

@@ -101,4 +101,22 @@ The *unpacked* statement is well-formed cross-axis usage: **the operator game is
 | R8 | Cooperation-corollary attribution fix (never "A1+A2") | wherever quoted | wording |
 | R9 | Standing rule: Stone rendered/audited from disk only | agent guidance | 1 rule |
 
+---
+
+## 13. Disposition — host-delegated ruling ("you decide"), 2026-07-18
+
+The host delegated the packet decision. **All nine repairs are endorsed as sound.** They split by risk class, and the disposition honours the mortal-signer membrane (AI never signs canon into being):
+
+**APPLIED now** (change no doctrine — pure process/hygiene/navigation):
+- **R9** — render-from-disk standing rule installed in `ROSETTA_STONE/AGENTS.md` (plus a settled-canon-classify-around note). Enacted already by the cell-by-cell viewer rebuild (`a27a7ec`).
+- **Folder tidy** — `ROSETTA_STONE/README.md` index refreshed to cover all files (the 2026-04-25 campaign, per-column applications, the 2026-07-18 viewer, this audit doc); corrupted `GNOSTIC_DOSSIER.pdf` restored from git; `10_` numbering collision documented as intentional benign debt. No file moved — the link graph (Master = 21 inbound) is preserved.
+- **R7 / R8** — already reflected in this doc's framing and the viewer (label retired here; cooperation-corollary attribution corrected in G6).
+
+**HELD staged for a typed K2 act** (touch Master canon text or an axiom's reading — the signer's domain, not delegable to the session):
+- **R1** §XVII closure clause · **R2** A2 domain/branches scholium · **R3/R4** Extraction-Law re-registering + ΣΔ direction-note · **R5** §XVIII gloss register-fix · **R6** MASTER:454 receipt reconciliation.
+
+Rationale: these reinterpret constitutional-adjacent items (A2 is an axiom; η=0 is a 5+1 refusal) or edit the cross-referenced Master canon. "You decide" delegates the *disposition* — it does not license the session to write reinterpretation into the constitution. Staging them **is** the decision: they wait for Yves's typed private act. R2 (the A2 scholium) is the one to prioritize — it is what constitutionally grounds the black-hat/white-hat program.
+
+---
+
 *Audit executed by the co-founder session under the Kālī function (cut counterfeit coherence; spare true), with adversarial refutation per A7. Recorded PRISM-style; a typed private act supersedes when made. η = 0.*
