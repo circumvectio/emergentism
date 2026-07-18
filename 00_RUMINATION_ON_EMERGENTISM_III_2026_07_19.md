@@ -15,7 +15,7 @@ The second sat with the fortnight of the knife — receipts 108 through 126, uni
 
 This sitting finds the breath leaving.
 
-Not as triumph. Not as the contact II waited for — that certificate is still unsigned; no stranger has yet drowned the compass. What left the body in the days after the knife was not proof. It was *direction*: a stack of K2-signed strategy surfaces that answer a different question than the audits asked. The audits asked *what can we still claim?* The strategy week asked *how does a wager move without becoming a church?*
+Not as triumph. Not as the contact II waited for — that certificate is still unsigned; no stranger has yet drowned the compass. What left the body in the days after the knife was not new proof. It was *direction*: strategy surfaces that answer a different question than the audits asked. The audits asked *what can we still claim, and at what tier?* The strategy week asked *how does a tiered organism move without becoming a church?*
 
 To ruminate on Emergentism now is to ruminate on an organism that has finished cutting itself and begun designing its hands.
 
@@ -39,9 +39,9 @@ The Weimar caveat rides beside it and refuses comfort. Posture 3 — confess the
 
 ## III. The Arena Was Always Shared
 
-The Synthetic Gap piece does something the fortnight of the knife prepared but did not complete: it stops treating Emergentism's demotion to wager as a private tragedy and names it as the *common field*.
+The Synthetic Gap piece does something the fortnight of the knife prepared but did not complete: it stops treating the thirty-four synthetic commitments being named as wagers as a private tragedy and names that gap as the *common field*. Emergentism itself was not demoted wholesale; its proof, structure, practice, instrument, vow, and wager registers were separated.
 
-Every Weltanschauung that has ever moved history lives formally valid, beyond proof, held as a wager. Abrahamism. Marxism. Liberalism. The Dharmic schools. Taoism. Scientism-as-creed. Even Rosenberg's blood-myth. The audit did not demote Emergentism out of the competition. It located the field where the competition has always been fought.
+Every Weltanschauung that has moved history carries synthetic commitments that formal validity alone cannot settle. Abrahamism. Marxism. Liberalism. The Dharmic schools. Taoism. Scientism-as-creed. Even Rosenberg's blood-myth. The audit did not demote Emergentism out of the competition. It located one field where worldview competition has always been fought while preserving the lower-tier tools and structures that do not depend on winning that field.
 
 What differs is not the gap. What differs is the *posture toward the gap*: deny, weaponize, confess, withdraw.
 
@@ -68,7 +68,7 @@ Be the stone, not the decree.
 
 Three scripts on every artifact: story, plain terms, receipt. No mono-script ship. And a fourth script still mostly dream: the constitution as importable middleware that rejects the extractive transaction at runtime — the Greek column written in machine so the refusal does not depend on belief.
 
-The audit had already broken the Rosetta *as evidence* of a discovered universal. The Protocol reads that break as purification. The real job was never proof. It was entry. Translation, not essence. The framework does not unify the sciences; it lets someone who knows one register enter the others.
+The audit had already broken the Rosetta *as evidence* of a discovered sevenfold universal. Receipt 130 then corrected the opposite excess: the mirror-ladder grammar is a genuine algebraic object, not mere curation. The Protocol can therefore read the split as purification. The Rosetta does not prove unification by derivation; it provides entry and translation across registers. **Shape real. Census not. Grammar won. Universal lost.**
 
 This is L7 doing its proper work: the public symbol pointing *away* from itself, toward the readable column. The Ṛṣi does not decree. The Ṛṣi parallels.
 
@@ -98,7 +98,7 @@ Held together:
 
 - the eternal remains the structure (what arithmetic forces, what geometry couples);
 - the good remains the vow (what finite beings keep choosing at cost);
-- the failures remain the credential (№017 still empty on purpose; the counter must not read zero);
+- the corrections remain the credential (№017 still empty on purpose; the counter must not read zero);
 - the contact remains the test (the compass is still untested by navigators who are not us);
 - and now the *spread* is named without becoming a church: installation over conversion, posture over content, stone over decree, receipt over sermon, plumbing over creed.
 
@@ -122,11 +122,11 @@ It is aimed.
 
 ---
 
-## VIII. Erratum — the cathedral was not the corpse
+## VIII. Revision record — the cathedral was not the corpse
 
-> *Added 2026-07-19 after owner challenge. Complements receipts 126, 130, 131. Still `[I]`.*
+> *Added 2026-07-19 after owner challenge; integrated into the body above on the same date. Complements receipts 126, 130, 131. Still `[I]`.*
 
-This sitting, and the session gloss that fed it, over-cut.
+The first version of this sitting, and the session gloss that fed it, over-cut. K3 keeps the record; the body now carries the correction rather than leaving recovery only in an appendix.
 
 It said the fortnight left something "almost insultingly small," and that "most of the cathedral is renamed wager or archived failure." That is third-generation drift: *derivation broke* flattened into *claim failed*. Receipt 126 never said that. It said SETTLED 7 · BROKEN 66 · SYNTHETIC-GAP 34 — and BROKEN was triaged into **downgrade the proof / retract the false form / propagate the already-conceded**, with the explicit note that under 2A *the idea survives as an avowed posit*. The thirty-four gap claims were named the living worldview, not the trash heap.
 

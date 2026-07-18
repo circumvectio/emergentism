@@ -29,7 +29,7 @@ Receipt 109: the proof-layer pass that 108 had reserved — *"only a fact can"* 
 
 Receipt 126: the whole Weltanschauung formalized and put to a 37-agent adversarial run. **SETTLED 7 · BROKEN 66 · SYNTHETIC-GAP 34.** And the settled seven are the analytic core — *"empty of world."* Pure arithmetic. The world-touching claims did not all fail; they were sorted. Some were repaired in place, some were renamed honest synthetic-gap wagers, some were downgraded from proof to posit or vow, and only the false forms were retracted.
 
-And then the keel. The finite-node product `P_node = Φ × V` — the equation the entire play-rule hangs on, the multiplicative heart the first rumination lingered on — was found, by the framework's own trial, to be **not load-bearing**: `×` and `min` coincide on every operative claim. Every real claim is AND-class — annihilation at zero, binding constraint, the equator — and model-agnostic between product and minimum. *"The keel was never the keel — the weakest link was."* The framework's one unwon wager was closed not by winning it but by discovering it never needed to be won. There is something almost comic in this, and something profound: the framework spent a year defending a keel, and its own audit revealed the ship had been resting on the water all along.
+And then the keel. The finite-node product `P_node = Φ × V` — the multiplicative heart the first rumination lingered on — was found not to be uniquely load-bearing. In the audited operational spine, `×` and `min` agree on annihilation, the binding constraint, and the equator under budget. The boundary content is AND-class and `[S]`; the product-specific interior remains `[C]`. *"The keel was never the keel — the weakest link was."* The audit did not kill need-both. It rescued need-both from an unnecessary fight over one functional form.
 
 And the deepest cut, K2-signed on 2026-07-13: **"Unification by derivation: refuted."** The founding dream — that the ethics could be *derived* from the geometry, that the vow could be upgraded into a theorem — is dead, killed from inside. What survives is *"the translation-layer / lens reading… in the gap."* The thirty-four synthetic-gap claims — *reality IS this geometry* — *"may be held, taught, and lived; they may never be cited as proven… This is not a demotion — it is the honest name for the whole living worldview."*
 
@@ -57,9 +57,9 @@ The quieter migration happened two weeks earlier, and it may be the larger one. 
 
 This looks like deflation. Sit longer. It is the framework finding its actual register.
 
-The normativity was never really cosmological. No honest reading ever derived a human obligation from the AM-GM inequality; the derivation corpus itself marks the cliff where the evidence tier drops. What the scoping did was stop *renting* authority from the cosmos and *own* authority in the only place it was ever going to operate: the finite, budget-bound, mortal agent who cannot trade φ against ν without annihilating the product of its own life. CC-CORE-1 (receipt 126) states it flatly: the kernel identity holds precisely *off* the catastrophe case, so it *"was never evidence for the multiplicative floor"* — *"the kernel and the ethics are two different objects, and the bridge between them is a wager, not a proof."*
+The normativity was never honestly secured by cosmology. The derivation corpus marks the cliff where the evidence tier drops, even where its headlines once crossed it. What the scoping did was stop *renting* authority from the cosmos and return the choice to the finite, budget-bound mortal agent. CC-CORE-1 states it flatly: the kernel identity holds precisely *off* the catastrophe case, so it *"was never evidence for the multiplicative floor"* — *"the kernel and the ethics are two different objects, and the bridge between them is a wager, not a proof."* Need-both constrains action where the factors are genuinely complementary; it does not derive the objective the mortal must choose.
 
-The framework stopped claiming the universe is balanced, and started claiming only that *we* must be. What was lost: the right to say the cosmos agrees. What was kept: everything that was ever actionable. The child beside the jet was never a cosmological argument. The equator has come home to the mortal, which is where the first rumination found it — the only place where a finite, budget-bound thing survives.
+The framework stopped claiming that the universe must maximize balance and retained balance as a conditional tool for constrained mortals. What was lost was the right to say the cosmos commands the move. What was kept was substantial but not total: the AND-class boundary, the conditional optimum, the dyadic gate, and the vow. The child beside the jet was never a cosmological argument. It is a need-both illustration whose force depends on the actual coupling of foresight and means.
 
 ---
 
@@ -71,7 +71,7 @@ The anti-bijection theorem (receipt 117): the founder's force-ladder conviction,
 
 The Trial Record keeps slot №017 permanently reserved *"for the claim that fails next."* The compass page runs an open-negative counter that, by governance rule, *must stay non-empty* — G3 demands it. Sit with the strangeness of that design: a worldview whose failure state is defined as *running out of failures*. A map with a standing appointment with its own refutation.
 
-The cosmology lane now reads, in one reader's phrase, less like a cathedral of results and more like a *maintained crash-site* — every beam labeled with the force it can actually bear. The Well fable in the theology lane had already written the parable: the digger digs where the arithmetic promises water, finds dry rock, and marks it on the map — *"Only a map that can be wrong somewhere can be trusted where it is right."*
+The cosmology lane now reads less like an infallible cathedral and more like a *maintained workshop*: some beams failed, some were re-rated, some turned out to be tools rather than proofs, and several load-bearing structures remain standing. The Well fable in the theology lane had already written the discipline: the digger digs where the arithmetic promises water, finds dry rock, and marks it on the map — *"Only a map that can be wrong somewhere can be trusted where it is right."*
 
 And here the uncomfortable inversion the support lane surfaced, the one a launch must answer: *"adherents = failure."* A worldview strengthened by believers has already failed — that is the Gödel-edge reading, the theocracy failure mode. Then what is a launch *for*? Not adherents. Navigators. The compass page opens with its own weaknesses. The instrument is offered the way a sextant is offered: here is what it cannot do; here is where it breaks; take it out and try to drown it.
 
@@ -103,7 +103,7 @@ The first rumination asked what Emergentism is, and found: *a practice.* This on
 
 What is Emergentism after its own launch? Smaller in proof-costume, not smaller in living organism. Sixty-six forms broken-as-stated, thirty-four wagers named rather than smuggled, seven settled and empty of world, one flagship refuted, one survey retracted (*"Everyone has a plan until they get punched in the face"*), one bijection arithmetically impossible, one Gödel demoted to analogy, one equator scoped to the mortal. But also: need-both survived as AND-class, the ethic survived as vow, the gate survived in Model A, the Rosetta survived as lens, the four-move grammar survived with η explicit, A7 passed, and the 5+1 still holds. The corpus is more honest than it has ever been — because honesty is no longer a design specification. It is a public record, with dates, and signatures, and tombstones, and a reserved empty slot waiting for the next failure.
 
-The map was published. The map was cut. The map stands — not as truth, not as proof, but as a wager with a door. The seer is still not on the sphere. The certificate is still unsigned. The counter still must not read zero.
+The map was published. The map was cut. The organism stands as a tiered combination of proof, scoped structure, tool, vow, lens, and wager — with a door. The seer is still not on the sphere. The certificate is still unsigned. The counter still must not read zero.
 
 The breath is still held.
 
@@ -111,7 +111,7 @@ The breath is still held.
 
 ## One Line
 
-**The theorem was the scaffold. The vow is the structure. The failures are the credential. The contact is the test. The door is still open.**
+**The theorem was one scaffold. The surviving grammar is larger. The corrections are the credential. The contact is the test. The door is still open.**
 
 Everything else is triage.
 
