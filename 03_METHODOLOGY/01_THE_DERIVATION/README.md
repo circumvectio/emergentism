@@ -32,6 +32,9 @@ This is the Auditing sublane for the complete derivation spine.
 ## Read First
 
 - `00_THE_DERIVATION.md`
+- `01_BURRI_RULES_DERIVATION_LEDGER.md` — claim/source boundaries
+- `02_KINTSUGI_SCHEMA.json` — bounded audit-vessel schema
+- `03_RECEIPT_126_PROPAGATION_MANIFEST.json` — exact owner, propagation, mutation, and frozen-scope closure record
 - Parent route: `../README.md`
 
 ## Status

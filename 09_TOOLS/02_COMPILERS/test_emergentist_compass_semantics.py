@@ -1631,7 +1631,7 @@ class ActiveCorpusPropagationTests(unittest.TestCase):
     def test_worldview_statuses_no_longer_wait_for_k2(self) -> None:
         paths = (
             "00_META/00_THE_KINTSUGI_PROTOCOL.md",
-            "01_TELEOLOGY/02_THE_DERIVATION/07A_F5_UNBUNDLED_COUPLING_PER_DIMENSION_PENDING_K2.md",
+            "01_TELEOLOGY/02_THE_DERIVATION/07A_F5_UNBUNDLED_COUPLING_PER_DIMENSION.md",
             "01_TELEOLOGY/02_THE_DERIVATION/07B_THE_FORCE_LADDER_FORMALIZED_PENDING_K2.md",
             "05_COSMOLOGY/00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md",
         )
