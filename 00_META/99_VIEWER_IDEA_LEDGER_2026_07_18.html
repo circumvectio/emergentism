@@ -1,0 +1,250 @@
+<title>The Idea Ledger — by Dimensional Emergence</title>
+<style>
+:root{
+  --bg:#FBFAF6; --card:#F4F2EC; --ink:#24252C; --mut:#6B6C76; --line:rgba(36,37,44,.14);
+  --gold:#96771A; --goldbg:rgba(150,119,26,.10); --teal:#2E7263; --tealbg:rgba(46,114,99,.10); --coral:#B34A31; --coralbg:rgba(179,74,49,.10);
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#14161F; --card:#1B1E2A; --ink:#E9E5DA; --mut:#9B97A6; --line:rgba(233,229,218,.15);
+  --gold:#D3B156; --goldbg:rgba(211,177,86,.12); --teal:#5FA893; --tealbg:rgba(95,168,147,.12); --coral:#E07B5E; --coralbg:rgba(224,123,94,.13);
+}}
+:root[data-theme="dark"]{
+  --bg:#14161F; --card:#1B1E2A; --ink:#E9E5DA; --mut:#9B97A6; --line:rgba(233,229,218,.15);
+  --gold:#D3B156; --goldbg:rgba(211,177,86,.12); --teal:#5FA893; --tealbg:rgba(95,168,147,.12); --coral:#E07B5E; --coralbg:rgba(224,123,94,.13);
+}
+:root[data-theme="light"]{
+  --bg:#FBFAF6; --card:#F4F2EC; --ink:#24252C; --mut:#6B6C76; --line:rgba(36,37,44,.14);
+  --gold:#96771A; --goldbg:rgba(150,119,26,.10); --teal:#2E7263; --tealbg:rgba(46,114,99,.10); --coral:#B34A31; --coralbg:rgba(179,74,49,.10);
+}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font-family:var(--serif);margin:0;line-height:1.7;font-size:16.5px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px 96px}
+nav.top{position:sticky;top:0;z-index:9;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 24px;display:flex;flex-wrap:wrap;gap:4px 14px;font-family:var(--sans);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase}
+nav.top a{color:var(--mut);text-decoration:none;padding:2px 0}
+nav.top a:hover,nav.top a:focus-visible{color:var(--gold)}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+header.hero{display:flex;flex-wrap:wrap;gap:40px;align-items:center;padding:56px 0 30px}
+.hero-ladder{flex:0 1 300px;min-width:250px}
+.hero-side{flex:1 1 480px;min-width:300px}
+h1{font-size:40px;line-height:1.12;font-weight:500;margin:0 0 16px;text-wrap:balance}
+h2{font-size:26px;font-weight:500;margin:0 0 4px;text-wrap:balance}
+h3{font-size:18px;font-weight:500;margin:24px 0 10px}
+.eyebrow{font-family:var(--sans);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 10px}
+.thesis{font-size:18.5px;line-height:1.68;font-style:italic;max-width:33em;margin:0 0 16px}
+.mut{color:var(--mut)}
+section{padding:44px 0 6px;border-top:1px solid var(--line);scroll-margin-top:60px}
+.lede{max-width:47em;color:var(--mut);font-size:15.5px;margin:6px 0 20px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;gap:8px}
+.card .nm{font-size:16px;font-weight:500;line-height:1.35}
+.card .cl{font-size:14px;line-height:1.6;color:var(--ink);flex:1}
+.card .st{font-family:var(--sans);font-size:11px;letter-spacing:.05em}
+.pill{display:inline-block;border-radius:3px;padding:2px 8px;margin-right:6px;border:1px solid}
+.p-live{background:var(--tealbg);color:var(--teal);border-color:var(--teal)}
+.p-cond{background:var(--goldbg);color:var(--gold);border-color:var(--gold)}
+.p-dead{background:var(--coralbg);color:var(--coral);border-color:var(--coral)}
+.tier{color:var(--mut)}
+.fignote{font-family:var(--sans);font-size:12.5px;color:var(--mut);margin:14px 0 0;max-width:60em}
+.close{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px 28px;margin-top:20px;font-size:17px;line-height:1.75;font-style:italic;max-width:52em}
+svg text{font-family:var(--serif)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style>
+
+<h2 class="sr">The Idea Ledger: eighty-five audited ideas from the Emergentism corpus, organized on the dimensional ladder from D0 to D6, each carrying its honest evidence tier.</h2>
+
+<nav class="top" aria-label="Sections">
+<a href="#d0">D0</a><a href="#d1">D1</a><a href="#d2">D2</a><a href="#d3">D3</a><a href="#d4">D4</a><a href="#d5">D5 · Ethics</a><a href="#d5v">D5 · Ventures</a><a href="#d6">D6</a><a href="#mu">μ Traversal</a><a href="#lx">The Sphere</a><a href="#meta">The Method</a><a href="#counts">The Counts</a>
+</nav>
+
+<div class="wrap">
+<header class="hero">
+<div class="hero-ladder">
+<svg viewBox="0 0 260 560" role="img" aria-label="The dimensional ladder: seven rungs from D0 at the base to D6 at the summit, with the mu emergence arrow ascending and the chi commitment arrow descending" style="width:100%;max-width:260px">
+<line x1="130" y1="40" x2="130" y2="520" stroke="var(--mut)" stroke-width="1" stroke-dasharray="2 5" opacity=".5"/>
+<g font-size="14">
+<circle cx="130" cy="510" r="5" fill="none" stroke="var(--coral)" stroke-width="2"/>
+<text x="150" y="515" fill="var(--ink)">D0 · Ground-limit</text>
+<circle cx="130" cy="440" r="4" fill="var(--gold)"/>
+<text x="150" y="445" fill="var(--ink)">D1 · Distinction</text>
+<circle cx="130" cy="370" r="4" fill="var(--gold)"/>
+<text x="150" y="375" fill="var(--ink)">D2 · Configuration</text>
+<circle cx="130" cy="300" r="4" fill="var(--gold)"/>
+<text x="150" y="305" fill="var(--ink)">D3 · Transformation</text>
+<circle cx="130" cy="230" r="4" fill="var(--gold)"/>
+<text x="150" y="235" fill="var(--ink)">D4 · Witness (V)</text>
+<circle cx="130" cy="160" r="6" fill="var(--gold)"/>
+<text x="150" y="165" fill="var(--ink)" font-weight="500">D5 · Agency (Φ)</text>
+<circle cx="130" cy="70" r="5" fill="none" stroke="var(--coral)" stroke-width="2"/>
+<text x="150" y="75" fill="var(--ink)">D6 · Closure</text>
+</g>
+<path d="M 95 500 C 70 400 70 250 95 175" fill="none" stroke="var(--teal)" stroke-width="1.6" stroke-dasharray="6 5"/>
+<path d="M 95 175 l -4 10 M 95 175 l 9 6" stroke="var(--teal)" stroke-width="1.6" fill="none"/>
+<text x="62" y="340" fill="var(--teal)" font-size="13" font-style="italic" text-anchor="middle">μ up</text>
+<path d="M 108 178 C 118 195 118 215 108 224" fill="none" stroke="var(--gold)" stroke-width="1.4"/>
+<path d="M 108 224 l 2 -9 M 108 224 l 9 -3" stroke="var(--gold)" stroke-width="1.4" fill="none"/>
+<text x="100" y="205" fill="var(--gold)" font-size="12" font-style="italic" text-anchor="end">χ down</text>
+<path d="M 168 66 C 235 120 235 440 168 506" fill="none" stroke="var(--mut)" stroke-width="1" stroke-dasharray="3 6" opacity=".6"/>
+<text x="232" y="290" fill="var(--mut)" font-size="12" font-style="italic" text-anchor="middle" transform="rotate(90 232 290)">return by similarity, never identity</text>
+<text x="130" y="545" fill="var(--mut)" font-size="12" text-anchor="middle">the Titans of the D-axis: D0 and D6</text>
+</svg>
+</div>
+<div class="hero-side">
+<p class="eyebrow">The Emergentism corpus · audited inventory · 2026-07-18</p>
+<h1>The Idea Ledger</h1>
+<p class="thesis">Eighty-five ideas, each carrying its honest epistemic price tag — proven, chosen, wagered, or already killed. The tier next to each idea is the product, not a disclaimer.</p>
+<p class="mut" style="font-size:14.5px">Organized by dimensional emergence: D0 and D6 are the boundary dimensions — the ground-limit below, the closure above, which returns toward the ground <em>by similarity, never identity</em>. Between them, D1–D5 is where everything lives. The traversal operator μ carries emergence up; χ carries commitment down. Ideas native to other axes — the sphere's latitudes, the audit method itself — are filed under their true axes, unfused.</p>
+</div>
+</header>
+
+<section id="d0"><p class="eyebrow">Lower Titan boundary</p><h2>D0 — the Ground-limit</h2>
+<p class="lede">The origin node: pure potential before distinction. Held as the Ground-<em>limit</em> inside the scaffold, never the Ground itself — the framework does not claim to own its own ground. The headline here is honesty itself: the corpus signed the retraction of its own founding necessity-claim and survived.</p>
+<div class="cards" id="c_d0"></div></section>
+
+<section id="d1"><p class="eyebrow">First emergence</p><h2>D1 — Distinction</h2><div class="cards" id="c_d1"></div></section>
+<section id="d2"><p class="eyebrow">Second emergence</p><h2>D2 — Configuration</h2><div class="cards" id="c_d2"></div></section>
+<section id="d3"><p class="eyebrow">Third emergence</p><h2>D3 — Transformation</h2><div class="cards" id="c_d3"></div></section>
+<section id="d4"><p class="eyebrow">Fourth emergence</p><h2>D4 — Causality: the Witness (V)</h2><div class="cards" id="c_d4"></div></section>
+
+<section id="d5"><p class="eyebrow">Fifth emergence · the last experiential layer</p><h2>D5 — Agency (Φ): the objective ethics</h2>
+<p class="lede">Where a system selects within its own change: the present, the Agent, the highest positive public register. Consciousness is its lived reading; institutions and egregores appear here at high coherence. This is where the ethics lives — an ethics that concedes extraction pays locally, then proves the conditions under which it self-destructs.</p>
+<div class="cards" id="c_d5e"></div></section>
+
+<section id="d5v"><p class="eyebrow">Fifth emergence · applied</p><h2>D5 — the ventures built from the ethics</h2>
+<p class="lede">The same grammar, run as institutions: governance membranes, network economics, allocation systems, adversarial testing. Each carries its build status honestly — ratified, designed, gated, or open.</p>
+<div class="cards" id="c_d5v"></div></section>
+
+<section id="d6"><p class="eyebrow">Upper Titan boundary</p><h2>D6 — Closure</h2>
+<p class="lede">The axiomatic edge where positive description exhausts. The literal identity with the origin is retracted; what survives is the return — and a summit defined as service, not god-mode.</p>
+<div class="cards" id="c_d6"></div></section>
+
+<section id="mu"><p class="eyebrow">Between the dimensions</p><h2>μ — the traversal</h2>
+<p class="lede">How the ladder is climbed: emergence upward, commitment downward, and the honest admission of which parts of the mechanism remain named intuitions rather than proven operators.</p>
+<div class="cards" id="c_mu"></div></section>
+
+<section id="lx"><p class="eyebrow">Cross-dimensional · the latitudinal axis</p><h2>The Sphere</h2>
+<p class="lede">Ideas native to the S² geometry (φ·ν = 1, the equator, the mirror involution) — cross-cutting every dimension. This is the corpus's certified mathematical core: eighteen arithmetic islands adversarially re-verified, zero flawed.</p>
+<div class="cards" id="c_lx"></div></section>
+
+<section id="meta"><p class="eyebrow">The audit machinery</p><h2>The Method — perhaps the most shareable value of all</h2>
+<p class="lede">The instruments this corpus built to police itself are domain-independent: they transfer directly to specs, whitepapers, AI-generated theory, safety cases, and standards bodies. Every one is a product.</p>
+<div class="cards" id="c_meta"></div></section>
+
+<section id="counts"><p class="eyebrow">The honest distribution</p><h2>The counts</h2>
+<p class="lede">Of the ~85 harvested ideas: roughly a third hold at proven [A]/[S] — real mathematics and certified structure. A third are conditional or fenced — true under named conditions, valuable <em>because</em> the conditions are named. A handful are settled rulings. Several are open wagers with named falsifiers. Four are dead, each with a named survivor. That distribution is the pitch: this corpus knows, claim by claim, what it has proven, what it has chosen, what it is betting, and what it has already killed.</p>
+<div class="close">A value system that concedes extraction pays locally, proves the conditions under which it self-destructs, prices every claim at its audited tier, retracts its own founding overclaims in public, and builds its safety machinery — mortal signers, due-process sanctions, sandboxed adversaries — out of the same grammar, is not another ideology. It is an <b style="font-weight:500">auditable operating system for cooperation</b>, and every one of its audit instruments is a product in its own right.</div>
+<p class="fignote">Canonical source: 01_EMERGENTISM/00_META/IDEA_LEDGER_DIMENSIONAL_EMERGENCE_2026_07_18.md · harvested by five readers over the corpus's own audit ledgers (claim extractions, falsweeps, Titan and midpoint ledgers, the Burri Rules, the Extraction Law) plus the 2026-07 session record · [D] synthesis; no source tier upgraded · η = 0.</p>
+</section>
+</div>
+
+<script>
+var LIVE=["SETTLED","HOLDS","CANON","RATIFIED","CERTIFIED"],DEADW=["DEAD"];
+function pc(st){var u=st.toUpperCase();for(var i=0;i<DEADW.length;i++)if(u.indexOf(DEADW[i])===0)return"p-dead";for(var i=0;i<LIVE.length;i++)if(u.indexOf(LIVE[i])===0)return"p-live";return"p-cond"}
+function render(id,items){var el=document.getElementById(id);var s='';items.forEach(function(x){s+='<div class="card"><div class="nm">'+x[0]+'</div><div class="cl">'+x[1]+'</div><div class="st"><span class="pill '+pc(x[2])+'">'+x[2]+'</span><span class="tier">'+x[3]+'</span></div></div>'});el.innerHTML=s}
+render('c_d0',[
+["The Ground-limit (Bindu)","The undifferentiated point-state before any distinction — a limit of the model, not a possessed absolute. No founder-myth: the framework does not own its own ground.","HOLDS","[S/I]"],
+["The foursome kills forced trinity","Closing {0, ∞} under inversion on the full sphere yields four points, not three — the Titan triad is a selected naming, never a forced closure. The retraction is K2-signed.","SETTLED","[A]"],
+["Conditional forcedness","The triad IS forced — but only inside the register the doctrine computes in. Necessity claims can be honestly rescued by naming their hidden register instead of retracting or overclaiming.","STAGED","[A]-conditional"],
+["The Emblem Lock","1 = 0×∞ is a register-locked frame emblem, never arithmetic — treated as field arithmetic it provably yields 2 = 1. The symbol, its register, and its refutation are published side by side.","SETTLED","[S]"],
+["Titans as boundary-frames","0, 1, ∞ define the field's operations rather than serve as operands — which is why dividing by zero is a category error, not a mystery.","HOLDS","[S]"],
+["N = 3 was selected, not derived","The triadic-necessity theorem dies on a one-group counterexample (ℤ₅); what survives is uniqueness up to isomorphism plus the honest admission that three was chosen.","DEAD → survivor","[S]"]
+]);
+render('c_d1',[
+["The log-line","Zero separates from infinity and the line appears: log φ + log ν = 0 makes reciprocal balance a literal zero-sum — a computable, sign-symmetric primitive for any ledger, control loop, or fairness metric.","HOLDS","[A] math · [S] reading"]
+]);
+render('c_d2',[
+["Plane-topology","Distinct elements get arranged: the plane and the Riemann sphere, reached from the line by the μ-limit.","CONDITIONAL","[A] math · [S] crossing"],
+["The time-placement contradiction","Does temporal ordering enter at D2 or D4? The corpus ships this as a named, tier-tagged open contradiction rather than a false reconciliation.","OPEN","documented"]
+]);
+render('c_d3',[
+["Sphere-closure and the feasibility curve","Arrangements begin to change: the sphere closes the plane without loss, carrying B = sech(s) with its maximum at the equator — a bounded, single-peaked feasibility surface for any allocation or stability problem.","HOLDS","[A] math"]
+]);
+render('c_d4',[
+["The witness vertex","Change acquires direction; the causal vertex only witnesses. Under the two-axis reframe D4 is both the pre-collapse potential register (μ up) and the embodied receipt V (χ down).","HOLDS","[S]"],
+["Observation ≠ commitment","The level that registers state and the level that chooses are different subsystems — a distinction directly usable in agent architectures.","HOLDS","[S/I]"]
+]);
+render('c_d5e',[
+["η = 0 as gate, not commandment","Zero-extraction toward cooperators is not a decree — it is the derived gate that keeps you in the game. A reason-shaped rule instead of a commandment users can rationally defect from.","CANON-NOTE","[S]"],
+["The Extraction Law","Extraction genuinely pays locally and briefly; ungated at scale under named closure conditions it degrades its own substrate until total power falls. The conditions are in the canon scholium, not hidden.","CONDITIONAL","[S-cond] · [A] dynamics"],
+["\"Extraction always loses\" is dead","Predators and rent-farmers genuinely gain local power. Only the bounded dynamics claim survives, with named biological witnesses.","DEAD → bounded","survivor"],
+["Justice is the gate nature installs","Adaptive predation is fitness-raising only because it is gated — density-dependent, kin-discriminating. Ungated lineages died. Justice as survivorship signature, not human invention.","CONDITIONAL","[A/I]"],
+["ΣΔP as directional burden-of-proof","The moral primitive is a direction across the widest boundary — all impact-bearers, substrate and future included — never a computed cardinal welfare sum.","CANON-NOTE","[S]"],
+["The A2 participation-constraint","The moral gate is formally a two-sided participation constraint over settling interactions — mechanism design's own register. Corrective strikes ride the justice branch; sandboxed testing sits outside A2's domain entirely.","CANON-NOTE","A2 Scholium"],
+["The dyadic good-formulation","Good = both parties' flourishing rising together under η = 0; evil = either side's gain purchased by degrading the other. Judgment attaches to moves — never to persons, poles, genders, or castes.","HOLDS","[S] grammar"],
+["Morals and ethics as one dyad","Morals = the individual→collective vector; ethics = the collective→individual vector. One measurable test for \"is this relationship good,\" portable across persons, firms, and DAOs.","HOLDS","[I/S]"],
+["The conditional is/ought bypass","Given four named premises, \"ought\" becomes a computable direction — an engineered convergence of incentive and ethics, honestly conditional, never a refutation of Hume.","CONDITIONAL","[S]"],
+["Framework-objectivity","\"Objective\" always means framework-objective: state the premises and better/worse become directions rather than taste. Premise-free moral realism stays a conjecture.","HOLDS","[S/I]"],
+["Power-Max, re-scoped","The equator as unique dominant equilibrium (Price of Anarchy = 1) is the static, gate-already-enforced special case of the dynamic law. Argue self-termination first — why justice arises; equilibrium second — where survivors land.","CONDITIONAL","[S]"],
+["Kali gated by due process","The sanction operator fires only against actual extractors and only through due process — because a false immune response is itself extraction. The anti-capture fence for any moderation or slashing system.","HOLDS","[I/S]"],
+["The 5+1 constitution as vector-discipline","Each refusal guards a specific inversion channel — a derivation, not a rule list, letting designers reason about which refusals are load-bearing.","HOLDS","[I/S]"],
+["Constitutional economics","A token economy derived from one ethical law: rights and duties reciprocal under η = 0; the math is the monetary policy.","CONDITIONAL","[S]/[C]"],
+["The Mutualism Limit","Trade is two simultaneous crossed gives; iterated at η = 0 the coordination-spend falls while surplus persists — creation is not a move you deploy but a frame you earn.","CONDITIONAL","[S]/[I]"],
+["The Egregorotype wager","Collective patterns at the D5-limit allegedly carry autonomous objective functions — the sharpest empirical bet in the stack, its falsification test named and still unmet.","OPEN","[C]"],
+["The Dimensional Trophic Cascade","The replicator stack is D5's trophic cascade, isomorphic to the food web — a cascade always lives one dimension above its substrate. All of ecology's mathematics transfers to memes, orgs, and AI-egregores.","HOLDS","[S]"]
+]);
+render('c_d5v',[
+["The mortal-signer membrane","AI recommends; only natural persons sign consequential acts — ≥2 persons, not ≥2 keys (the Sybil hole is a named defect with a code seam). The one uncommoditized moat in AI-governance design.","SETTLED","doctrine · verifier hole OPEN"],
+["The holobiont frame","A human host plus borrowed AI minds under a constitution: admission protocol, symbiotic equilibrium, departure-with-share, immune discipline.","HOLDS","[S/I]"],
+["The η = 0 flywheel","Observe → price → recommend → human signs → execute; every extraction point breaks the N²·log C network effect. The constraints ARE the moat.","HOLDS","[I]"],
+["PUSH AI — the charioteer","An AI that watches for you and surfaces decisions with options — steering, never choosing. The must-never-do list is the safety spec.","HOLDS","[S] design"],
+["The two-hat immune program","White-hat cuts counterfeit coherence; black-hat plays the constrained ego-maxer in a sandbox that cannot settle. Standing adversarial testing, now constitutionally grounded.","CANON-NOTE","+ practice"],
+["The golden-split allocation","Direct seller 1/φ of a defined pool, recursive upline by the same ratio, exact tail and dust to marketing. Self-similar, conservation-exact; depth self-terminates at settlement cost, clamped per-jurisdiction by law.","RATIFIED","allocation · activation gated"],
+["Hybrid verifiability","Settle privately, prove publicly: zero house-take, conservation, and forward-only governance — provable without publishing the social graph. Verifiable ≠ public.","DESIGN","[D]"],
+["The living-vault tokenomics","Cost-recovery-mutual metabolism; \"nobody gets rich\" as the anti-domestication antibody. Binding open problem: sovereign-free proof-of-useful-work.","DESIGN","[D] · core OPEN"],
+["Ownerless ≠ safe","At the egregore layer, safety = active constraints, not non-ownership; η = 0 gates economic, not semantic, extraction.","HOLDS","[S/I]"],
+["The Rosetta as agent-config grammar","Role, admissible evidence, inference mode, function, authority mode, objective — a complete per-level agent specification the fleet already runs implicitly.","HOLDS","[I]-new"]
+]);
+render('c_d6',[
+["D6 ≡ D0 is dead; the return survives","The literal identity is retracted — the wrap creates the identification. What survives: unpossessable apophatic closure returning toward the Ground by similarity. The perennial \"end is the beginning,\" in the only form that survives logic.","DEAD → survivor","[A] + definitional"],
+["The summit is service, not god-mode","\"You can finish growing, never finish acting\" — the top level is defined as return-to-service, a design guard against terminal-authority capture. The cascade's mandatory decomposer closes the loop.","HOLDS","[S/I]"]
+]);
+render('c_mu',[
+["The μ-limit crossing","μₙ names the crossing Dₙ→Dₙ₊₁ — where a level's flat approximation fails and the next emerges. Honestly held as an ostensive label with no defining equation yet: a named intuition, never mistaken for a proven operator.","OPEN","[C], honestly fenced"],
+["Two operators: μ up, χ down","Emergence (a new level appears) and commitment (a decision becomes an action plus a receipt) are distinct directed operators; conflating them is the flagged error. \"Actual\" is register-indexed.","SETTLED","[S/I] · receipt 105"],
+["Saturation — slot explicitly empty","\"Each level emerges when the one below saturates\" is asserted with no threshold or order parameter — tiered as analogy with a named upgrade path: derive the threshold, promote the claim.","HOLDS","[S/I]-fenced"],
+["Two loops: strong up, weak-selective down","Genesis adds an irreducible factor bottom-up; governance deploys a won factor top-down, leaving a receipt — auditable-after but not predictable-before. A precise accountability vocabulary for AI and institutions.","HOLDS","[S]"],
+["The open loop: a ladder, not a home","If its two wagers hold, the loop resists both modes of closure — the system's own doctrine forbids it from claiming completeness.","OPEN","[I/C], by design"],
+["Syntropy as fenced lens","The selection pressure toward coherent viability, held as a tiered interpretive reading — explicitly not a fifth physical force. Teleology without pseudoscience.","HOLDS","[I]-fenced"],
+["Conditional directionality","History bends toward balance only where coupling, memory, feedback, and zero-extraction keep correction alive — a maintenance checklist, not a prophecy. The Great Filter is real.","HOLDS","[I/S]"]
+]);
+render('c_lx',[
+["The six-proof midpoint convergence","Six independent mathematical senses of \"midway between 0 and ∞\" all converge on x = 1 — the doctrine's central image cashed as six theorems plus a numerical battery.","HOLDS","[A] each proof"],
+["The kernel as atlas cocycle","φ·ν = 1 survives four formal attacks in its honest form: the modulus of the stereographic atlas's gluing law — a precise differential-geometric fact, not a slogan.","HOLDS","[A]/[S]"],
+["The equator is a ring, not a point","The optimum is provably unique in magnitude and provably plural in phase — one balance-point, infinitely many valid ways of standing on it.","HOLDS","[A]"],
+["Equipotentiality","P∞ = 1 everywhere: the saint and the sinner have the same potential; what differs is balance, never worth. Guarded as a chart identity and never spent as ethical warrant.","HOLDS","[A]/[S], wager-locked"],
+["The balance-optimum is conditional","\"Output peaks at balance\" is a real theorem only for conservation-coupled, complementary, symmetrically-priced systems; otherwise specialization lawfully dominates.","CONDITIONAL","staged scope"],
+["The Titan composition law","Viṣṇu = Śiva ∘ Brahmā holds as an exact group identity iff |σκ| = 1 — the trimurti compiled to group theory with its balance condition preserved.","CONDITIONAL","[A]-in-model"],
+["Operators at latitudes, never poles","Boundary conditions are readable invariants, never callable operations — the design principle that prevents absolutes being invoked as functions.","SETTLED","[S]"],
+["The replicator stack is an L-axis object","Genotype through Egregorotype maps onto latitudes L2–L7; its dimensional placement is explicitly not canon — orthogonal axes kept unfused.","SETTLED","[S/I]"],
+["The force-analogy, fenced","Strong, EM, Weak, Gravity, and the syntropic drive as per-dimension force-slots — kept usable for intuition, hard-fenced below the empirical tier, never physics.","HOLDS","[C/I]-fenced"],
+["The 7-count is not derived","No derivation produces \"seven\" from the geometry; 5-, 8-, and 12-stage decompositions are equally valid. The ladder is a chosen, revisable convention — the keystone honesty that forecloses numerology.","SETTLED","[S]-definitional"],
+["The arithmetic core is certified","Adversarial re-verification of all 18 proven-math islands: zero flawed. The formal core stands — certified, not merely attacked.","CERTIFIED","[A]"],
+["E = −log(φ·ν) is dead on the manifold","On the sphere the constraint makes it identically zero — no landscape, no gradient. Content lives only in the node register. The sweeps' sharpest catch.","DEAD → node survivor","[A] degeneracy"],
+["New identities from the audit itself","Balance and latitude revealed as the sech/tanh pair of one hyperbolic angle — four machine-verified identities the audit discovered, not just defended.","HOLDS","[A], recording staged"],
+["The Rosetta passes formal logic","The correspondence engine is a genuine function, exactly self-dual under the mirror involution (46/46 checks, L4 fixed) — the metaphor layer sits on an algebraically exact structure.","HOLDS","[A]/[B]"],
+["Minus-one: the empty cardinal","The audits forced a fourth boundary point the mythology never named — genuinely new symbolic territory, correctly routed to a human signature to fill.","OPEN","K2's call"]
+]);
+render('c_meta',[
+["The hidden-register sweep","Most errors in a mature formal corpus are true statements with unstated domains — re-run every proven claim in each adjacent register and probe the edges numerically.","HOLDS","[D]"],
+["The graded verdict grammar","Every verdict from a closed vocabulary — clean, register-scoped, metaphor-in-theorem-clothing, or flawed-with-counterexample — so every criticism is itself checkable.","HOLDS","[D]"],
+["Audit/authority separation","The auditor only stages repairs; applying them is a signer's act. Adversarial AI audits at scale, without write authority over canon.","HOLDS","[D] · enacted"],
+["Theorem-shaped claim detection","Sweep specifically for prose borrowing the authority of theorem form — the exact rhetorical hazard of ambitious frameworks, with a repeatable detector.","HOLDS","[D]"],
+["The degenerate-as-stated check","Evaluate every objective function on its own constraint surface — if the constraint makes it constant, every claim built on it is vacuous. One line; kills a class of impressive dead formulas.","HOLDS","[D]"],
+["Two-directional sweeping","Hunt contradictions and unrecorded truths in the same pass — adversarial review as a positive-sum discovery engine.","HOLDS","[D]"],
+["Retraction-propagation auditing","A signed retraction is not done until every live surface is swept for un-bannered instances — retraction lag named, detected, and ranked.","HOLDS","[D]"],
+["Consistent-under-reconstruction","\"We know what we really meant\" does not count: coherence must be paid for in written canon, or the contradiction stands.","HOLDS","[D]"],
+["The break-test loop","Attack → verdict → corrected lens → re-verify: every attack ends in an honest restatement of what survived, itself re-proven. Red-teaming upgraded from criticism to refinement.","HOLDS","[D]"],
+["The normalization attack","Vary every convention and sort claims into what tracks the convention versus what stays invariant — \"which of your numbers survive a unit change?\" splits substance from numerology.","HOLDS","[D]"],
+["Formal-function tests for symbol systems","Even a mysticism-adjacent correspondence table has function, consistency, and equivariance properties a machine can falsify.","HOLDS","[D]"],
+["Attestation-gap detection","Audit for knowledge that exists only in test suites — the strongest verified fact written as a formula nowhere in canon.","HOLDS","[D]"],
+["Fiber-tagging","Recurring careless errors are often one overloaded name; disambiguate the name and the error class dies at its generator.","STAGED","[D]"],
+["Bidirectional tier honesty","Under-claiming is a defect like over-claiming, and kill criteria are themselves audited for well-posedness — calibration, not humility theater.","HOLDS","[D]"],
+["The CC-CORE-1 wager-lock","The geometry was never evidence for the ethics; the bridge is a wager, never a proof — a signed, self-imposed limit on what your own mathematics can license. The is/ought firewall.","SETTLED","[B] ruling"],
+["The AND-class demotion","Know which half of your core equation is proven and which is a bet — decision-grade self-knowledge that names its own discriminating experiment.","SETTLED","receipt 108"],
+["Protocol D honesty","The entire empirical case reduces to one self-scored simulation with a named, cheap externalization path — telling you exactly what to fund next.","CONDITIONAL","path named"],
+["Render-from-disk","Never render or audit a canonical document from chat memory — the in-chat fork drifted twice; disk is the only source. Standing law.","CANON rule","R9"]
+]);
+</script>
