@@ -112,10 +112,15 @@ The host delegated the packet decision. **All nine repairs are endorsed as sound
 - **Folder tidy** — `ROSETTA_STONE/README.md` index refreshed to cover all files (the 2026-04-25 campaign, per-column applications, the 2026-07-18 viewer, this audit doc); corrupted `GNOSTIC_DOSSIER.pdf` restored from git; `10_` numbering collision documented as intentional benign debt. No file moved — the link graph (Master = 21 inbound) is preserved.
 - **R7 / R8** — already reflected in this doc's framing and the viewer (label retired here; cooperation-corollary attribution corrected in G6).
 
-**HELD staged for a typed K2 act** (touch Master canon text or an axiom's reading — the signer's domain, not delegable to the session):
-- **R1** §XVII closure clause · **R2** A2 domain/branches scholium · **R3/R4** Extraction-Law re-registering + ΣΔ direction-note · **R5** §XVIII gloss register-fix · **R6** MASTER:454 receipt reconciliation.
+**APPLIED 2026-07-18 by typed K2 act.** The host's typed act (in-session, same day, quoting this packet's own R2-first recommendation back with *"you know what to do"*) authorized the held set. All six applied as **additive scholia/notes — no original canon sentence deleted or reworded except the R5 gloss, whose prior wording is preserved verbatim inside the correction note** (K3 archive-first):
+- **R2 + R4** — A2 Scholium (domain = settling interactions; branches = A4/gated-taking governs strikes; sandbox outside domain; ΣΔ = direction-only) inserted after the Axiom-A7 disambiguation note in Master §XV, anchored also to the seed's A2 line.
+- **R1** — Closure clause appended to Master §XVII (operator-move = two-term, opposite-sign, cross-axis; exhaustiveness = theorem relative to this grammar, cite [S] never bare [A]).
+- **R3** — Conditionality scholium under the Extraction Law's one-line (closure conditions named; base Lotka–Volterra = neutral center; node law alone ≠ extractor self-defeat).
+- **R4** — Register note at the Extraction Law's ΣΔP law block (direction/sign predicate only; no cardinal inter-bearer aggregate).
+- **R5** — Master §XVIII [G] gloss register-corrected (node law vs manifold closure; prior wording preserved in the note as provenance).
+- **R6** — Master §III mirror-score line gains its provenance note (0S/2P/1F predates doc 16's L3↔L5 upgrade; fresh composite pass pending).
 
-Rationale: these reinterpret constitutional-adjacent items (A2 is an axiom; η=0 is a 5+1 refusal) or edit the cross-referenced Master canon. "You decide" delegates the *disposition* — it does not license the session to write reinterpretation into the constitution. Staging them **is** the decision: they wait for Yves's typed private act. R2 (the A2 scholium) is the one to prioritize — it is what constitutionally grounds the black-hat/white-hat program.
+The black-hat/white-hat program is now **constitutionally grounded in canon text**, not merely in audit findings.
 
 ---
 

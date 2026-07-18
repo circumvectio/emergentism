@@ -29,6 +29,8 @@ depends_on:
 
 > **The one line.** Extraction is not forbidden — it is **self-terminating at scale without justice.** It buys power locally and briefly; ungated, it degrades the substrate it feeds on until total power falls. Therefore `η = 0`-toward-cooperators is not a commandment laid on top of the game — it is the **gate** that reliably keeps `ΣΔP > 0`, and the primitive that carries morality is `ΣΔP` across the widest boundary, not the local sign of `η`. `[S]`
 
+> **Conditionality scholium** *(applied 2026-07-18 by typed K2 act; game-layer audit R3, `00_META/ROSETTA_D5_GAMESPACE_FORMAL_AUDIT_2026_07_18.md` §4; K3 — the one line above is unchanged).* `[S-conditional]` Self-termination is a **dynamical-systems theorem only under closure conditions**: closed arena (no fresh hosts, no exit), extraction rate exceeding substrate regeneration, and extractor power coupled to substrate viability. Outside them, persistence is generic — base Lotka–Volterra (§2 below) yields a neutral center, endless oscillating coexistence, not a crash. The one line is the **gated** claim, not a universal; the multiplicative node law alone yields only "the victim's P falls," never the extractor's self-defeat.
+
 ---
 
 ## 0. The correction this note makes
@@ -79,6 +81,8 @@ Extraction is consumption of the substrate that produces the thing extracted. It
 > **extraction at scale without justice ⟹ `ΣΔP < 0` ⟹ falling total power.**
 
 "Without justice" is the operative clause. It names the missing gate.
+
+> **Register note** *(applied 2026-07-18 by typed K2 act; game-layer audit R4).* `[S]` `ΣΔP` is consumed by the law **only as a direction (sign) predicate** across the widest boundary — a burden-of-proof orientation over all impact-bearers, per the 2026-07-10 trial ruling. No cardinal inter-bearer aggregate is defined or licensed; "summed" is notation, not arithmetic across incommensurables.
 
 ## 3. The gate is justice — and nature installs it itself `[A/I]`
 

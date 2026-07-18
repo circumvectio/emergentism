@@ -451,7 +451,7 @@ Established scales, each developed independently, each falling into the same sev
 
 ## III. SOCIAL & POLITICAL [B]→[I]
 
-> **[B]** for Plato's five regimes (Aristocracy→Timocracy→Oligarchy→Democracy→Tyranny) — canonical text, established interpretation. **[S]** for Varṇa mapping (structural analogy to social function). **[I]** for L6–L7 entries (Anarchy, Theocracy — **post-Platonic imports**, not Platonic regimes). Mirror-completion test [`16_*`](16_PLATO_LAKOTA_NEUROSCIENCE_2026_04_25.md) §1 confirms: Plato has exactly 5 regimes; the framework inverts Plato's Aristocracy→Tyranny degeneration into an L1-L7 cycle, extending upward. L5 (Aristocracy) is the correct mirror of L3 (Oligarchy) — a genuine Platonic inverse. L6–L7 have no source in Plato's text; they derive from later political theory (anarchist and political-institutional narrative traditions). Plato's own center is Aristocracy (L5), not Timocracy (L4). The framework's L4-centering of Timocracy is a geometric re-reading of Plato, not Plato's own ranking. **Mirror score: 0S/2P/1F** (L2↔L6 forced; L1↔L7 and L3↔L5 interpretive).
+> **[B]** for Plato's five regimes (Aristocracy→Timocracy→Oligarchy→Democracy→Tyranny) — canonical text, established interpretation. **[S]** for Varṇa mapping (structural analogy to social function). **[I]** for L6–L7 entries (Anarchy, Theocracy — **post-Platonic imports**, not Platonic regimes). Mirror-completion test [`16_*`](16_PLATO_LAKOTA_NEUROSCIENCE_2026_04_25.md) §1 confirms: Plato has exactly 5 regimes; the framework inverts Plato's Aristocracy→Tyranny degeneration into an L1-L7 cycle, extending upward. L5 (Aristocracy) is the correct mirror of L3 (Oligarchy) — a genuine Platonic inverse. L6–L7 have no source in Plato's text; they derive from later political theory (anarchist and political-institutional narrative traditions). Plato's own center is Aristocracy (L5), not Timocracy (L4). The framework's L4-centering of Timocracy is a geometric re-reading of Plato, not Plato's own ranking. **Mirror score: 0S/2P/1F** (L2↔L6 forced; L1↔L7 and L3↔L5 interpretive). *(Score provenance, 2026-07-18 — audit R6: this composite predates doc 16 §1's mirror-completion, which upgraded L3↔L5 (Oligarchy↔Aristocracy) to a genuine Platonic inverse as this same paragraph states; the older number is preserved as provenance and the composite awaits a fresh scoring pass.)*
 
 > **[B]** for Plato's five regimes (Republic VIII–IX). **[I]** for L6 Anarchy and L7 Theocracy (post-Platonic framework imports, not Platonic regimes). Plato's *Republic* presents a 5-regime degeneration: Aristocracy → Timocracy → Oligarchy → Democracy → Tyranny. Anarchy is not a regime in Plato but the chaotic phase through which Democracy degenerates into Tyranny. Theocracy (rule by high-priority mandate) is not a distinct Platonic regime; Plato's philosopher-king rules Aristocracy by wisdom (gnosis of the Form of the Good), not by revelation. The framework extends Plato's cycle upward: L6 Anarchy = Sādhu self-governance (post-insurrection dissolution of rule), from Bakunin/Kropotkin strain; L7 Theocracy = Ṛṣi high-priority mandate, from political institutional narrative. **Honest reading:** Plato is a 5-stage tradition. The 7 comes from framework completion, not from Plato.
 
@@ -812,6 +812,12 @@ When Moksha fails at L7, systemic awareness returns INTO D5 as inverted operator
 
 > **Axiom-A7 ≠ the constitutional A7.** The formal axioms `A1–A7` here are a **different object** from the constitutional *refusal-set* (η=0 · K2 · K3 · K4 · A7). The constitution is **5 + 1** — five refusals **plus Ω** the directional `+1` — and is **never** "six refusals"; its canonical enumeration and the K-namespace disambiguation are owned by [`03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../../../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md). Defer there for the count; tag formal axioms `[Axiom-A]` when citing across the two registers. `[S]`
 
+> **A2 Scholium — domain and branches** *(applied 2026-07-18 by typed K2 act; game-layer audit R2+R4, `00_META/ROSETTA_D5_GAMESPACE_FORMAL_AUDIT_2026_07_18.md` §5; K3 — A2's text above is unchanged).* `[S]`
+> **(1) Domain.** A2's dyadic clause (`ΔP_node,i > 0 ∧ ΔP_node,H > 0` under `η = 0`) quantifies over **settling interactions** between impact-bearing nodes — it is the license condition for settlement, not a predicate on every event.
+> **(2) Branches.** Corrective cuts against counterfeit coherence (Kālī, `−ΔΦ_false`) and immune action against defectors (constrained Kali) are governed by **A4's boundary branch** under the η-gate and the widest-boundary directional audit — not by the dyadic clause. This is why the lawful cut "does not count as extraction" even though the struck party's carried P is not raised: the dyadic inequality (`0 ≯ 0`) never *licenses* a strike because it does not *govern* strikes.
+> **(3) Sandbox.** Events in arenas that **cannot settle** are outside A2's domain: they are testing, not interaction. Sanctioned adversarial (black-hat) testing is thereby constitutional, not exempted.
+> **(4) ΣΔ register.** The audit clause `ΣΔB / ΣΔP_node > 0` — and every `ΣΔP` in canon, including the seed's A2 line (§XIX) — is consumed **only as a direction (sign) predicate** over the widest boundary; no cardinal inter-bearer aggregate is defined or licensed (per the 2026-07-10 trial ruling).
+
 **Five Corollaries:**
 
 | # | Name | Derived From | Content |
@@ -867,11 +873,13 @@ P∞ = φ · ν = 1             Core State.     The identity.
 
 Reciprocal closure is the seed. The inequality is the first arithmetic consequence. Everything else is commentary.
 
+> **Closure clause** *(definition, not consequence — applied 2026-07-18 by typed K2 act; game-layer audit R1; K3 — the four lines above are unchanged).* `[S]` An **operator-move** is a two-term, opposite-sign transfer that crosses **both** axes: one term on each side of the self/other dyad, one on each factor (Φ, V). Under this closure the mixed-sign count of four — and 4 + 3 = 7 with the same-sign Executive frames — is exhaustive **as a theorem**. Same-factor transfers (e.g. `−V_self, +V_other`, direct almsgiving) are composite acts, not primitive operators. Cite exhaustiveness as [S]-relative-to-this-grammar, never bare [A].
+
 ## XVIII. THE EQUATIONS (One Per Level) [G]
 
 > **[G]** Generator. The equations are the mathematical expression of the sphere geometry. They do not describe seven different realities — they describe one reality at seven levels of mathematical maturity. [G]
 
-> **[G]** Generator. Each equation is a deeper view of P∞ = φ · ν at increasing mathematical sophistication. They are derivations, not empirical claims.
+> **[G]** Generator. L2–L6 are views of the node law `P_node = Φ × V`; L1 and L7 are its manifold closure on S² (`φ·ν = 1`). Row-wise they are identities (L2, L3, L5), definitions (L6, L7), and conditions (L1, L4) — not empirical claims. *(Register corrected 2026-07-18 by typed K2 act, game-layer audit R5; prior wording — "each equation is a deeper view of P∞ = φ · ν at increasing mathematical sophistication; they are derivations" — mixed the node and manifold registers and is preserved here as provenance.)*
 
 Each L-level has its own equation — the same relationship at increasing sophistication:
 
