@@ -12,6 +12,7 @@ import subprocess
 import tempfile
 import unittest
 from pathlib import Path
+from typing import Callable
 
 from validate_external_calibration import (
     CalibrationError,
@@ -23,6 +24,8 @@ from validate_external_calibration import (
 
 ROOT = Path(__file__).resolve().parents[2]
 CLAIMS_PATH = ROOT / "03_METHODOLOGY/00_EXTERNAL_CALIBRATION_CLAIMS.json"
+X2_ARTIFACT_BYTES = b'{"row": 1, "source": "independent"}\n'
+X3_ARTIFACT_BYTES = b'{"row": 2, "source": "new-independent"}\n'
 
 
 def payload() -> dict:
@@ -128,6 +131,7 @@ def write_analysis_manifest(
     claim: dict,
     *,
     kind: str,
+    expected_data: bytes | None,
     relative: str | None = None,
 ) -> str:
     if relative is None:
@@ -138,24 +142,147 @@ def write_analysis_manifest(
         if kind == "x2_discriminator"
         else "not_collected_before_freeze"
     )
+    tag = "x2" if kind == "x2_discriminator" else "x3"
+    analysis_code = f"03_METHODOLOGY/04_RESULTS/support/{claim['id']}-{tag}-analysis.py"
+    environment_lock = (
+        f"03_METHODOLOGY/04_RESULTS/support/{claim['id']}-{tag}-environment.json"
+    )
+    access_log = f"03_METHODOLOGY/04_RESULTS/support/{claim['id']}-{tag}-access.log"
+    code_path = root / analysis_code
+    code_path.parent.mkdir(parents=True, exist_ok=True)
+    code_path.write_text(
+        "def score(candidate, rivals, rows):\n"
+        "    return {'candidate': candidate, 'rivals': rivals, 'rows': len(rows)}\n",
+        encoding="utf-8",
+    )
+    write_json(
+        root,
+        environment_lock,
+        {
+            "python": "3.12.4",
+            "dependencies": {"standard-library": "3.12.4"},
+            "platform": "fixture-linux-x86_64",
+        },
+    )
+    access_path = root / access_log
+    access_path.parent.mkdir(parents=True, exist_ok=True)
+    access_path.write_text(
+        "2026-07-18 custody opened; no outcome artifact accessed or collected\n",
+        encoding="utf-8",
+    )
+    expected_hash = (
+        hashlib.sha256(expected_data).hexdigest() if expected_data is not None else None
+    )
     write_json(
         root,
         relative,
         {
-            "schemaVersion": "1.0",
+            "schemaVersion": "2.0",
             "claimId": claim["id"],
-            "datasetLocator": "https://data.example.org/frozen-fixture",
-            "candidateModel": "registered Compass candidate",
-            "rivals": list(claim["rivals"]),
-            "variables": list(claim["variables"]),
-            "outcomes": list(claim["outcomes"]),
-            "exclusions": ["no post-freeze exclusions"],
-            "analysisPlan": "Run the frozen candidate and every rival under identical preprocessing.",
-            "costPlan": "Report native-unit compute and acquisition costs separately.",
+            "datasetLocator": (
+                f"artifact:sha256:{expected_hash}"
+                if expected_hash is not None
+                else "https://zenodo.org/records/123456/files/new-observations.jsonl"
+            ),
+            "datasetChecksum": {
+                "mechanism": (
+                    "repository_sha256"
+                    if expected_hash is not None
+                    else "compute_on_first_custody"
+                ),
+                "expectedSha256": expected_hash,
+            },
+            "candidateModel": {
+                "name": f"Emergentist candidate {claim['id']}",
+                "specification": "Predict every registered outcome from the frozen claim variables.",
+                "fitProcedure": "Fit only on training folds and score held-out folds once.",
+                "complexityPenalty": "Apply the same information-criterion penalty to every model.",
+            },
+            "rivals": [
+                {
+                    "name": rival,
+                    "specification": f"Frozen operational specification for rival model {rival}.",
+                    "fitProcedure": "Fit only on training folds and score held-out folds once.",
+                    "complexityPenalty": "Apply the same information-criterion penalty to every model.",
+                }
+                for rival in claim["rivals"]
+            ],
+            "variables": [
+                {
+                    "name": variable,
+                    "operationalDefinition": f"Registered measurement protocol for {variable}.",
+                    "unit": "registered unit",
+                }
+                for variable in claim["variables"]
+            ],
+            "outcomes": [
+                {
+                    "name": outcome,
+                    "operationalDefinition": f"Held-out registered measurement for {outcome}.",
+                    "unit": "registered unit",
+                    "primary": index == 0,
+                    "decisionRule": "Compare held-out score with every rival under the frozen threshold.",
+                }
+                for index, outcome in enumerate(claim["outcomes"])
+            ],
+            "preprocessingSteps": [
+                {
+                    "id": "step-1",
+                    "operation": "Validate the frozen record schema before model fitting.",
+                    "parameters": {"on_invalid": "exclude_and_report"},
+                },
+                {
+                    "id": "step-2",
+                    "operation": "Standardize continuous predictors using training folds only.",
+                    "parameters": {"center": True, "scale": True},
+                },
+            ],
+            "exclusions": [
+                {
+                    "criterion": "Exclude records that fail the frozen input schema.",
+                    "rationale": "Malformed records cannot instantiate the registered variables.",
+                }
+            ],
+            "stoppingRule": {
+                "kind": "fixed_sample",
+                "target": 100,
+                "unit": "observations",
+                "interimLooks": 0,
+            },
+            "foldCount": 5,
+            "randomSeeds": [1729, 2718, 31415],
+            "analysisCode": {
+                "path": analysis_code,
+                "sha256": hashlib.sha256(code_path.read_bytes()).hexdigest(),
+            },
+            "environmentLock": {
+                "path": environment_lock,
+                "sha256": hashlib.sha256(
+                    (root / environment_lock).read_bytes()
+                ).hexdigest(),
+            },
+            "costPlan": {
+                "budgets": [
+                    {"category": "compute", "unit": "cpu hours", "maximum": 10},
+                    {
+                        "category": "data_acquisition",
+                        "unit": "US dollars",
+                        "maximum": 100,
+                    },
+                    {"category": "labor", "unit": "person hours", "maximum": 40},
+                ],
+                "scalarization": "none",
+            },
             "accessAttestation": {
                 "status": access_status,
                 "attestedBy": "fixture-analysis-team",
                 "attestedAt": "2026-07-18",
+                "custodian": "fixture-data-custodian",
+                "custodyProtocol": "Append-only access log controlled by the named custodian.",
+                "accessLog": {
+                    "path": access_log,
+                    "sha256": hashlib.sha256(access_path.read_bytes()).hexdigest(),
+                },
             },
         },
     )
@@ -212,17 +339,31 @@ def write_result_receipt(
     return relative
 
 
+def mutate_analysis_manifest(
+    root: Path, receipt_relative: str, mutation: Callable[[dict], None]
+) -> dict:
+    receipt = read_json(root, receipt_relative)
+    manifest = read_json(root, receipt["analysisManifest"])
+    mutation(manifest)
+    write_json(root, receipt["analysisManifest"], manifest)
+    receipt["analysisManifestSha256"] = hashlib.sha256(
+        (root / receipt["analysisManifest"]).read_bytes()
+    ).hexdigest()
+    write_json(root, receipt_relative, receipt)
+    return manifest
+
+
 def build_x2_fixture(data: dict, root: Path) -> tuple[dict, str, str, str]:
     claim = claim_by_id(data, "CAL-AGENCY-01")
     promote_to_x2(claim)
     sync_component_profile(data)
     materialize_contract_files(data, root)
     init_git(root)
-    manifest = write_analysis_manifest(root, claim, kind="x2_discriminator")
-    freeze_commit = commit_all(root, "freeze discriminator")
-    artifact = write_artifact(
-        root, claim["id"], "x2", b'{"row": 1, "source": "independent"}\n'
+    manifest = write_analysis_manifest(
+        root, claim, kind="x2_discriminator", expected_data=X2_ARTIFACT_BYTES
     )
+    freeze_commit = commit_all(root, "freeze discriminator")
+    artifact = write_artifact(root, claim["id"], "x2", X2_ARTIFACT_BYTES)
     analysis_commit = commit_all(root, "bind x2 data artifact")
     receipt = write_result_receipt(
         root,
@@ -235,7 +376,7 @@ def build_x2_fixture(data: dict, root: Path) -> tuple[dict, str, str, str]:
     )
     claim["dataset"]["resultReceipt"] = receipt
     claim["dataset"]["resultVerdict"] = "supported"
-    claim["currentVerdict"] = "X2 outcome=supported. The bounded discriminator favored the candidate."
+    claim["currentVerdict"] = "X2 outcome=supported"
     return claim, receipt, freeze_commit, analysis_commit
 
 
@@ -243,14 +384,16 @@ def build_x3_fixture(
     data: dict,
     root: Path,
     *,
-    replication_content: bytes = b'{"row": 2, "source": "new-independent"}\n',
+    replication_content: bytes = X3_ARTIFACT_BYTES,
 ) -> tuple[dict, str, str]:
     claim, x2_receipt, _, _ = build_x2_fixture(data, root)
     promote_to_x3(claim)
     sync_component_profile(data)
     prereg_path = root / claim["preregistration"]["path"]
     prereg_path.write_text("independent replication freeze\n", encoding="utf-8")
-    manifest = write_analysis_manifest(root, claim, kind="x3_replication")
+    manifest = write_analysis_manifest(
+        root, claim, kind="x3_replication", expected_data=None
+    )
     replication_freeze = commit_all(root, "freeze independent replication")
     artifact = write_artifact(root, claim["id"], "x3", replication_content)
     replication_analysis = commit_all(root, "bind x3 replication data artifact")
@@ -269,10 +412,7 @@ def build_x3_fixture(
     claim["dataset"]["replicationReceipt"] = replication_receipt
     claim["dataset"]["resultVerdict"] = "supported"
     claim["dataset"]["replicationVerdict"] = "supported"
-    claim["currentVerdict"] = (
-        "X2 outcome=supported; X3 outcome=supported. "
-        "The bounded discriminator repeated on new observations."
-    )
+    claim["currentVerdict"] = "X2 outcome=supported; X3 outcome=supported"
     return claim, x2_receipt, replication_receipt
 
 
@@ -534,7 +674,7 @@ class ExternalCalibrationTests(unittest.TestCase):
                 "Confirmed universal law and decisively proves nature."
             )
             self.assert_rejected(
-                data, "X2 verdict cannot claim proof, confirmation", root=root
+                data, "currentVerdict must equal X2 outcome=supported", root=root
             )
 
     def test_x2_rejects_post_access_protocol_declaration(self) -> None:
@@ -564,7 +704,7 @@ class ExternalCalibrationTests(unittest.TestCase):
             build_x2_fixture(data, root)
             self.assertEqual(validate_payload(data, root), (31, 12))
 
-    def test_x2_can_report_bounded_component_support(self) -> None:
+    def test_x2_rejects_suffix_prose_after_canonical_outcome_token(self) -> None:
         data = payload()
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
@@ -572,7 +712,11 @@ class ExternalCalibrationTests(unittest.TestCase):
             claim["currentVerdict"] = (
                 "X2 outcome=supported. The Compass edge was supported on the frozen independent dataset."
             )
-            self.assertEqual(validate_payload(data, root), (31, 12))
+            self.assert_rejected(
+                data,
+                "currentVerdict must equal X2 outcome=supported",
+                root=root,
+            )
 
     def test_x2_requires_claim_specific_manifest(self) -> None:
         data = payload()
@@ -584,6 +728,217 @@ class ExternalCalibrationTests(unittest.TestCase):
             receipt.pop("analysisManifestSha256")
             write_json(root, receipt_path, receipt)
             self.assert_rejected(data, "resultReceipt missing keys", root=root)
+
+    def test_x2_manifest_rejects_one_character_and_vacuous_prose(self) -> None:
+        attacks = (
+            (
+                "one-character",
+                lambda manifest: manifest["candidateModel"].update(
+                    {"specification": "x"}
+                ),
+            ),
+            (
+                "placeholder",
+                lambda manifest: manifest["preprocessingSteps"][0].update(
+                    {"operation": "TBD"}
+                ),
+            ),
+        )
+        for label, mutation in attacks:
+            with self.subTest(label=label), tempfile.TemporaryDirectory() as temp:
+                data = payload()
+                root = Path(temp)
+                _, receipt_path, _, _ = build_x2_fixture(data, root)
+                mutate_analysis_manifest(root, receipt_path, mutation)
+                self.assert_rejected(data, "must be substantive", root=root)
+
+    def test_x2_manifest_rejects_empty_required_protocol_lists(self) -> None:
+        attacks = (
+            (
+                "preprocessingSteps",
+                lambda manifest: manifest.update({"preprocessingSteps": []}),
+            ),
+            ("exclusions", lambda manifest: manifest.update({"exclusions": []})),
+            ("randomSeeds", lambda manifest: manifest.update({"randomSeeds": []})),
+        )
+        for field, mutation in attacks:
+            with self.subTest(field=field), tempfile.TemporaryDirectory() as temp:
+                data = payload()
+                root = Path(temp)
+                _, receipt_path, _, _ = build_x2_fixture(data, root)
+                mutate_analysis_manifest(root, receipt_path, mutation)
+                self.assert_rejected(data, "must be a nonempty list", root=root)
+
+    def test_x2_manifest_requires_immutable_locator_and_expected_checksum(self) -> None:
+        attacks = (
+            (
+                "mutable-locator",
+                lambda manifest: manifest.update(
+                    {"datasetLocator": "local-folder/latest-data.csv"}
+                ),
+                "must be HTTPS or an immutable",
+            ),
+            (
+                "missing-expected-hash",
+                lambda manifest: manifest["datasetChecksum"].update(
+                    {"expectedSha256": None}
+                ),
+                "needs an expected SHA-256",
+            ),
+        )
+        for label, mutation, error in attacks:
+            with self.subTest(label=label), tempfile.TemporaryDirectory() as temp:
+                data = payload()
+                root = Path(temp)
+                _, receipt_path, _, _ = build_x2_fixture(data, root)
+                mutate_analysis_manifest(root, receipt_path, mutation)
+                self.assert_rejected(data, error, root=root)
+
+    def test_x2_manifest_rejects_nonexistent_code_and_environment_files(self) -> None:
+        attacks = (
+            ("analysisCode", "missing-analysis.py"),
+            ("environmentLock", "missing-environment.json"),
+        )
+        for field, name in attacks:
+            with self.subTest(field=field), tempfile.TemporaryDirectory() as temp:
+                data = payload()
+                root = Path(temp)
+                _, receipt_path, _, _ = build_x2_fixture(data, root)
+
+                def mutation(manifest: dict) -> None:
+                    manifest[field]["path"] = (
+                        f"03_METHODOLOGY/04_RESULTS/support/{name}"
+                    )
+
+                mutate_analysis_manifest(root, receipt_path, mutation)
+                self.assert_rejected(data, "path must be an existing file", root=root)
+
+    def test_x2_manifest_rejects_code_and_environment_hash_mismatch(self) -> None:
+        for field in ("analysisCode", "environmentLock"):
+            with self.subTest(field=field), tempfile.TemporaryDirectory() as temp:
+                data = payload()
+                root = Path(temp)
+                _, receipt_path, _, _ = build_x2_fixture(data, root)
+                mutate_analysis_manifest(
+                    root,
+                    receipt_path,
+                    lambda manifest, field=field: manifest[field].update(
+                        {"sha256": "f" * 64}
+                    ),
+                )
+                self.assert_rejected(
+                    data, "sha256 does not match the local file", root=root
+                )
+
+    def test_x2_manifest_rejects_wrong_folds_and_stopping_rules(self) -> None:
+        attacks = (
+            (
+                "fold-low",
+                lambda manifest: manifest.update({"foldCount": 1}),
+                "foldCount",
+            ),
+            (
+                "fold-high",
+                lambda manifest: manifest.update({"foldCount": 21}),
+                "foldCount",
+            ),
+            (
+                "post-hoc-stop",
+                lambda manifest: manifest["stoppingRule"].update(
+                    {"kind": "stop_when_supported"}
+                ),
+                "stoppingRule kind",
+            ),
+            (
+                "zero-target",
+                lambda manifest: manifest["stoppingRule"].update({"target": 0}),
+                "stoppingRule target",
+            ),
+        )
+        for label, mutation, error in attacks:
+            with self.subTest(label=label), tempfile.TemporaryDirectory() as temp:
+                data = payload()
+                root = Path(temp)
+                _, receipt_path, _, _ = build_x2_fixture(data, root)
+                mutate_analysis_manifest(root, receipt_path, mutation)
+                self.assert_rejected(data, error, root=root)
+
+    def test_x2_manifest_dependencies_must_exist_at_freeze(self) -> None:
+        data = payload()
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            claim = claim_by_id(data, "CAL-AGENCY-01")
+            promote_to_x2(claim)
+            sync_component_profile(data)
+            materialize_contract_files(data, root)
+            init_git(root)
+            manifest = write_analysis_manifest(
+                root,
+                claim,
+                kind="x2_discriminator",
+                expected_data=X2_ARTIFACT_BYTES,
+            )
+            manifest_record = read_json(root, manifest)
+            code_path = root / manifest_record["analysisCode"]["path"]
+            code_bytes = code_path.read_bytes()
+            code_path.unlink()
+            freeze = commit_all(root, "invalid freeze without analysis code")
+            code_path.write_bytes(code_bytes)
+            artifact = write_artifact(root, claim["id"], "x2", X2_ARTIFACT_BYTES)
+            analysis = commit_all(root, "bind late analysis code and data")
+            receipt = write_result_receipt(
+                root,
+                claim,
+                kind="x2_discriminator",
+                artifact=artifact,
+                manifest=manifest,
+                freeze_commit=freeze,
+                analysis_commit=analysis,
+            )
+            claim["dataset"]["resultReceipt"] = receipt
+            claim["dataset"]["resultVerdict"] = "supported"
+            claim["currentVerdict"] = "X2 outcome=supported"
+            self.assert_rejected(
+                data,
+                "frozen manifest dependency.*is not present",
+                root=root,
+            )
+
+    def test_x2_frozen_expected_dataset_hash_must_match_acquired_bytes(self) -> None:
+        data = payload()
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            claim = claim_by_id(data, "CAL-AGENCY-01")
+            promote_to_x2(claim)
+            sync_component_profile(data)
+            materialize_contract_files(data, root)
+            init_git(root)
+            manifest = write_analysis_manifest(
+                root,
+                claim,
+                kind="x2_discriminator",
+                expected_data=b"publisher-declared-but-wrong-bytes\n",
+            )
+            freeze = commit_all(root, "freeze incorrect publisher checksum")
+            artifact = write_artifact(root, claim["id"], "x2", X2_ARTIFACT_BYTES)
+            analysis = commit_all(root, "bind differently hashed data")
+            receipt = write_result_receipt(
+                root,
+                claim,
+                kind="x2_discriminator",
+                artifact=artifact,
+                manifest=manifest,
+                freeze_commit=freeze,
+                analysis_commit=analysis,
+            )
+            claim["dataset"]["resultReceipt"] = receipt
+            claim["dataset"]["resultVerdict"] = "supported"
+            claim["currentVerdict"] = "X2 outcome=supported"
+            self.assert_rejected(
+                data,
+                "dataSha256 does not match the frozen expected dataset hash",
+                root=root,
+            )
 
     def test_x2_rejects_manifest_not_bound_at_freeze(self) -> None:
         data = payload()
@@ -599,7 +954,9 @@ class ExternalCalibrationTests(unittest.TestCase):
             ).hexdigest()
             receipt["analysisCommit"] = analysis_commit
             write_json(root, receipt_path, receipt)
-            self.assert_rejected(data, "analysisManifest is not present at commit", root=root)
+            self.assert_rejected(
+                data, "analysisManifest is not present at commit", root=root
+            )
 
     def test_x2_rejects_data_already_present_at_freeze(self) -> None:
         data = payload()
@@ -610,8 +967,14 @@ class ExternalCalibrationTests(unittest.TestCase):
             sync_component_profile(data)
             materialize_contract_files(data, root)
             init_git(root)
-            manifest = write_analysis_manifest(root, claim, kind="x2_discriminator")
-            artifact = write_artifact(root, claim["id"], "prefreeze", b"known outcome\n")
+            known_data = b"known outcome\n"
+            manifest = write_analysis_manifest(
+                root,
+                claim,
+                kind="x2_discriminator",
+                expected_data=known_data,
+            )
+            artifact = write_artifact(root, claim["id"], "prefreeze", known_data)
             freeze = commit_all(root, "invalid freeze with data")
             (root / "analysis-marker.txt").write_text("analysis\n", encoding="utf-8")
             analysis = commit_all(root, "later analysis marker")
@@ -626,8 +989,10 @@ class ExternalCalibrationTests(unittest.TestCase):
             )
             claim["dataset"]["resultReceipt"] = receipt
             claim["dataset"]["resultVerdict"] = "supported"
-            claim["currentVerdict"] = "X2 outcome=supported. Invalid fixture."
-            self.assert_rejected(data, "already existed at the freeze commit", root=root)
+            claim["currentVerdict"] = "X2 outcome=supported"
+            self.assert_rejected(
+                data, "already existed at the freeze commit", root=root
+            )
 
     def test_x2_cannot_carry_unused_replication_receipt(self) -> None:
         data = payload()
@@ -677,7 +1042,9 @@ class ExternalCalibrationTests(unittest.TestCase):
             receipt["dataSha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
             receipt["analysisCommit"] = analysis
             write_json(root, receipt_path, receipt)
-            self.assert_rejected(data, "cannot promote a disclosed pre-freeze packet path", root=root)
+            self.assert_rejected(
+                data, "cannot promote a disclosed pre-freeze packet path", root=root
+            )
 
     def test_x2_rejects_disclosed_prefreeze_packet_hash_after_copy(self) -> None:
         data = payload()
@@ -698,7 +1065,9 @@ class ExternalCalibrationTests(unittest.TestCase):
             receipt["dataSha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
             receipt["analysisCommit"] = analysis
             write_json(root, receipt_path, receipt)
-            self.assert_rejected(data, "cannot promote a disclosed pre-freeze packet hash", root=root)
+            self.assert_rejected(
+                data, "cannot promote a disclosed pre-freeze packet hash", root=root
+            )
 
     def test_x2_rejects_fake_full_length_commit(self) -> None:
         data = payload()
@@ -791,9 +1160,7 @@ class ExternalCalibrationTests(unittest.TestCase):
                     write_json(root, receipt_path, receipt)
                     claim = claim_by_id(data, "CAL-AGENCY-01")
                     claim["dataset"]["resultVerdict"] = outcome
-                    claim["currentVerdict"] = (
-                        f"X2 outcome={outcome}. The bounded discriminator was receipted."
-                    )
+                    claim["currentVerdict"] = f"X2 outcome={outcome}"
                     self.assertEqual(validate_payload(data, root), (31, 12))
 
     def test_x2_result_verdict_must_equal_receipt_for_every_outcome_sign(self) -> None:
@@ -809,9 +1176,11 @@ class ExternalCalibrationTests(unittest.TestCase):
                     write_json(root, receipt_path, receipt)
                     wrong = outcomes[(index + 1) % len(outcomes)]
                     claim["dataset"]["resultVerdict"] = wrong
-                    claim["currentVerdict"] = f"X2 outcome={wrong}. Contradictory prose."
+                    claim["currentVerdict"] = f"X2 outcome={wrong}"
                     self.assert_rejected(
-                        data, "resultVerdict must equal the X2 receipt outcome", root=root
+                        data,
+                        "resultVerdict must equal the X2 receipt outcome",
+                        root=root,
                     )
 
     def test_x2_public_verdict_cannot_reverse_failed_receipt(self) -> None:
@@ -823,9 +1192,25 @@ class ExternalCalibrationTests(unittest.TestCase):
             receipt["outcome"] = "failed"
             write_json(root, receipt_path, receipt)
             claim["dataset"]["resultVerdict"] = "failed"
-            claim["currentVerdict"] = "X2 outcome=supported. The Compass edge won."
+            claim["currentVerdict"] = "X2 outcome=supported"
             self.assert_rejected(
-                data, "currentVerdict must begin with X2 outcome=failed", root=root
+                data, "currentVerdict must equal X2 outcome=failed", root=root
+            )
+
+    def test_x2_rejects_exact_contradictory_prefix_mutant(self) -> None:
+        data = payload()
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            claim, receipt_path, _, _ = build_x2_fixture(data, root)
+            receipt = read_json(root, receipt_path)
+            receipt["outcome"] = "failed"
+            write_json(root, receipt_path, receipt)
+            claim["dataset"]["resultVerdict"] = "failed"
+            claim["currentVerdict"] = (
+                "X2 outcome=failed. X2 outcome=supported; the candidate won."
+            )
+            self.assert_rejected(
+                data, "currentVerdict must equal X2 outcome=failed", root=root
             )
 
     def test_x2_receipt_kind_must_be_discriminator(self) -> None:
@@ -935,6 +1320,20 @@ class ExternalCalibrationTests(unittest.TestCase):
             write_json(root, replication_path, replication)
             self.assert_rejected(
                 data, "replication team must be distinct from the X2 team", root=root
+            )
+
+    def test_x3_rejects_suffix_prose_after_canonical_outcome_token(self) -> None:
+        data = payload()
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            claim, _, _ = build_x3_fixture(data, root)
+            claim["currentVerdict"] = (
+                "X2 outcome=supported; X3 outcome=supported. Replication won."
+            )
+            self.assert_rejected(
+                data,
+                "currentVerdict must equal X2 outcome=supported; X3 outcome=supported",
+                root=root,
             )
 
     def test_complete_x3_still_requires_external_independence_gate(self) -> None:

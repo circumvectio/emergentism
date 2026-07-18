@@ -281,16 +281,45 @@ ANALYSIS_MANIFEST_KEYS = {
     "schemaVersion",
     "claimId",
     "datasetLocator",
+    "datasetChecksum",
     "candidateModel",
     "rivals",
     "variables",
     "outcomes",
+    "preprocessingSteps",
     "exclusions",
-    "analysisPlan",
+    "stoppingRule",
+    "foldCount",
+    "randomSeeds",
+    "analysisCode",
+    "environmentLock",
     "costPlan",
     "accessAttestation",
 }
-ACCESS_ATTESTATION_KEYS = {"status", "attestedBy", "attestedAt"}
+DATASET_CHECKSUM_KEYS = {"mechanism", "expectedSha256"}
+MODEL_SPEC_KEYS = {"name", "specification", "fitProcedure", "complexityPenalty"}
+VARIABLE_SPEC_KEYS = {"name", "operationalDefinition", "unit"}
+OUTCOME_SPEC_KEYS = {
+    "name",
+    "operationalDefinition",
+    "unit",
+    "primary",
+    "decisionRule",
+}
+PREPROCESSING_STEP_KEYS = {"id", "operation", "parameters"}
+EXCLUSION_KEYS = {"criterion", "rationale"}
+STOPPING_RULE_KEYS = {"kind", "target", "unit", "interimLooks"}
+FILE_BINDING_KEYS = {"path", "sha256"}
+COST_PLAN_KEYS = {"budgets", "scalarization"}
+COST_BUDGET_KEYS = {"category", "unit", "maximum"}
+ACCESS_ATTESTATION_KEYS = {
+    "status",
+    "attestedBy",
+    "attestedAt",
+    "custodian",
+    "custodyProtocol",
+    "accessLog",
+}
 RESULT_OUTCOMES = {"supported", "null", "failed", "mixed"}
 RESULT_RECEIPT_KINDS = {"x2_discriminator", "x3_replication"}
 KNOWN_PREFREEZE_PACKET_PREFIXES = (
@@ -319,6 +348,11 @@ WHOLE_SUBJECT_RE = re.compile(
     re.IGNORECASE,
 )
 RESERVED_HOST_SUFFIXES = (".example", ".invalid", ".localhost", ".test")
+VACUOUS_TEXT_RE = re.compile(
+    r"^(?:tbd|todo|n/?a|none|unknown|placeholder|later|x+|test|fill\s+me)$",
+    re.IGNORECASE,
+)
+IMMUTABLE_DATASET_ID_RE = re.compile(r"(?:artifact|repository):sha256:[0-9a-f]{64}")
 X2_INFLATION_RE = re.compile(
     r"\b(?:validat\w*|verif\w*|prov(?:e|es|ed|en|ing)|proofs?|confirm\w*|"
     r"establish\w*|demonstrat\w*|certif\w*|universal|decisive(?:ly)?|"
@@ -357,6 +391,18 @@ def _tier_tokens(value: str) -> set[str]:
 def _nonempty_list(value: Any, label: str) -> list[Any]:
     _require(
         isinstance(value, list) and bool(value), f"{label} must be a nonempty list"
+    )
+    return value
+
+
+def _substantive_text(value: Any, label: str, *, minimum: int = 8) -> str:
+    _require(
+        isinstance(value, str) and value.strip() == value,
+        f"{label} must be trimmed text",
+    )
+    _require(
+        len(value) >= minimum and VACUOUS_TEXT_RE.fullmatch(value) is None,
+        f"{label} must be substantive, not a placeholder",
     )
     return value
 
@@ -497,6 +543,39 @@ def _validate_https_url(value: Any, label: str) -> None:
     _require(bool(parsed.path.strip("/")), f"{label} URL must identify a source path")
 
 
+def _validate_dataset_locator(value: Any, label: str) -> str:
+    _require(
+        isinstance(value, str) and value.strip() == value,
+        f"{label} must be trimmed text",
+    )
+    if value.startswith("https://"):
+        _validate_https_url(value, label)
+    else:
+        _require(
+            IMMUTABLE_DATASET_ID_RE.fullmatch(value) is not None,
+            f"{label} must be HTTPS or an immutable artifact/repository identifier",
+        )
+    return value
+
+
+def _validate_file_binding(root: Path, value: Any, label: str) -> tuple[str, Path, str]:
+    _require(isinstance(value, dict), f"{label} must be an object")
+    _exact_keys(value, FILE_BINDING_KEYS, label)
+    relative = value.get("path")
+    path = _repository_file(root, relative, f"{label}.path")
+    _require(path.is_file(), f"{label}.path must be an existing file: {relative}")
+    declared_hash = str(value.get("sha256", ""))
+    _require(
+        re.fullmatch(r"[0-9a-f]{64}", declared_hash) is not None,
+        f"{label}.sha256 must be a SHA-256 digest",
+    )
+    _require(
+        _sha256_file(path, label) == declared_hash,
+        f"{label}.sha256 does not match the local file",
+    )
+    return str(relative), path, declared_hash
+
+
 def _validate_analysis_manifest(
     root: Path,
     claim_id: str,
@@ -505,7 +584,7 @@ def _validate_analysis_manifest(
     claim_rivals: list[str],
     claim_variables: list[str],
     claim_outcomes: list[str],
-) -> tuple[str, Path, str]:
+) -> tuple[str, Path, str, dict[str, Any], list[tuple[str, str]]]:
     relative = receipt.get("analysisManifest")
     path = _repository_file(root, relative, f"{claim_id} analysisManifest")
     _require(
@@ -516,49 +595,246 @@ def _validate_analysis_manifest(
         manifest = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         raise CalibrationError(f"{claim_id} invalid analysisManifest: {exc}") from exc
-    _require(isinstance(manifest, dict), f"{claim_id} analysisManifest must be an object")
+    _require(
+        isinstance(manifest, dict), f"{claim_id} analysisManifest must be an object"
+    )
     _exact_keys(manifest, ANALYSIS_MANIFEST_KEYS, f"{claim_id}.analysisManifest")
     _require(
-        manifest.get("schemaVersion") == "1.0",
-        f"{claim_id} analysisManifest schema must be 1.0",
+        manifest.get("schemaVersion") == "2.0",
+        f"{claim_id} analysisManifest schema must be 2.0",
     )
     _require(
         manifest.get("claimId") == claim_id,
         f"{claim_id} analysisManifest claimId mismatch",
     )
-    for field in ("datasetLocator", "candidateModel", "analysisPlan", "costPlan"):
-        _require(
-            isinstance(manifest.get(field), str) and bool(manifest[field].strip()),
-            f"{claim_id} analysisManifest {field} must be nonempty text",
-        )
-    for field, expected in (
-        ("rivals", claim_rivals),
-        ("variables", claim_variables),
-        ("outcomes", claim_outcomes),
-    ):
-        values = _nonempty_list(
-            manifest.get(field), f"{claim_id}.analysisManifest.{field}"
-        )
-        _require(
-            all(isinstance(value, str) and value.strip() for value in values),
-            f"{claim_id} analysisManifest {field} must contain text",
-        )
-        _require(
-            len(values) == len(set(values)),
-            f"{claim_id} analysisManifest {field} must be unique",
-        )
-        _require(
-            set(values) == set(expected),
-            f"{claim_id} analysisManifest {field} must match the claim contract",
-        )
-    exclusions = manifest.get("exclusions")
-    _require(
-        isinstance(exclusions, list)
-        and all(isinstance(value, str) and value.strip() for value in exclusions),
-        f"{claim_id} analysisManifest exclusions must contain text",
+    _validate_dataset_locator(
+        manifest.get("datasetLocator"), f"{claim_id}.analysisManifest.datasetLocator"
     )
+
+    checksum = manifest.get("datasetChecksum")
+    _require(
+        isinstance(checksum, dict), f"{claim_id} datasetChecksum must be an object"
+    )
+    _exact_keys(checksum, DATASET_CHECKSUM_KEYS, f"{claim_id}.datasetChecksum")
+    expected_data_hash = checksum.get("expectedSha256")
+    if expected_kind == "x2_discriminator":
+        _require(
+            checksum.get("mechanism") in {"publisher_sha256", "repository_sha256"},
+            f"{claim_id} X2 datasetChecksum needs a frozen publisher/repository mechanism",
+        )
+        _require(
+            isinstance(expected_data_hash, str)
+            and re.fullmatch(r"[0-9a-f]{64}", expected_data_hash) is not None,
+            f"{claim_id} X2 datasetChecksum needs an expected SHA-256",
+        )
+    else:
+        _require(
+            checksum.get("mechanism") == "compute_on_first_custody"
+            and expected_data_hash is None,
+            f"{claim_id} X3 datasetChecksum must defer the unknown hash to first custody",
+        )
+
+    candidate = manifest.get("candidateModel")
+    _require(
+        isinstance(candidate, dict), f"{claim_id} candidateModel must be an object"
+    )
+    _exact_keys(candidate, MODEL_SPEC_KEYS, f"{claim_id}.candidateModel")
+    for field in MODEL_SPEC_KEYS:
+        _substantive_text(
+            candidate.get(field), f"{claim_id}.candidateModel.{field}", minimum=8
+        )
+
+    rivals = _nonempty_list(
+        manifest.get("rivals"), f"{claim_id}.analysisManifest.rivals"
+    )
+    rival_names: list[str] = []
+    for index, rival in enumerate(rivals):
+        label = f"{claim_id}.analysisManifest.rivals[{index}]"
+        _require(isinstance(rival, dict), f"{label} must be an object")
+        _exact_keys(rival, MODEL_SPEC_KEYS, label)
+        rival_names.append(str(rival.get("name", "")))
+        for field in ("specification", "fitProcedure", "complexityPenalty"):
+            _substantive_text(rival.get(field), f"{label}.{field}", minimum=8)
+    _require(
+        len(rival_names) == len(set(rival_names)),
+        f"{claim_id} analysisManifest rivals must be unique",
+    )
+    _require(
+        set(rival_names) == set(claim_rivals),
+        f"{claim_id} analysisManifest rivals must match the claim contract",
+    )
+
+    variables = _nonempty_list(
+        manifest.get("variables"), f"{claim_id}.analysisManifest.variables"
+    )
+    variable_names: list[str] = []
+    for index, variable in enumerate(variables):
+        label = f"{claim_id}.analysisManifest.variables[{index}]"
+        _require(isinstance(variable, dict), f"{label} must be an object")
+        _exact_keys(variable, VARIABLE_SPEC_KEYS, label)
+        variable_names.append(str(variable.get("name", "")))
+        _substantive_text(
+            variable.get("operationalDefinition"),
+            f"{label}.operationalDefinition",
+            minimum=12,
+        )
+        _substantive_text(variable.get("unit"), f"{label}.unit", minimum=2)
+    _require(
+        len(variable_names) == len(set(variable_names))
+        and set(variable_names) == set(claim_variables),
+        f"{claim_id} analysisManifest variables must match the claim contract",
+    )
+
+    outcomes = _nonempty_list(
+        manifest.get("outcomes"), f"{claim_id}.analysisManifest.outcomes"
+    )
+    outcome_names: list[str] = []
+    for index, outcome in enumerate(outcomes):
+        label = f"{claim_id}.analysisManifest.outcomes[{index}]"
+        _require(isinstance(outcome, dict), f"{label} must be an object")
+        _exact_keys(outcome, OUTCOME_SPEC_KEYS, label)
+        outcome_names.append(str(outcome.get("name", "")))
+        _substantive_text(
+            outcome.get("operationalDefinition"),
+            f"{label}.operationalDefinition",
+            minimum=12,
+        )
+        _substantive_text(outcome.get("unit"), f"{label}.unit", minimum=2)
+        _require(
+            isinstance(outcome.get("primary"), bool), f"{label}.primary must be boolean"
+        )
+        _substantive_text(
+            outcome.get("decisionRule"), f"{label}.decisionRule", minimum=12
+        )
+    _require(
+        len(outcome_names) == len(set(outcome_names))
+        and set(outcome_names) == set(claim_outcomes),
+        f"{claim_id} analysisManifest outcomes must match the claim contract",
+    )
+    _require(
+        any(outcome["primary"] for outcome in outcomes),
+        f"{claim_id} analysisManifest needs at least one primary outcome",
+    )
+
+    preprocessing = _nonempty_list(
+        manifest.get("preprocessingSteps"),
+        f"{claim_id}.analysisManifest.preprocessingSteps",
+    )
+    preprocessing_ids: list[str] = []
+    for index, step in enumerate(preprocessing):
+        label = f"{claim_id}.analysisManifest.preprocessingSteps[{index}]"
+        _require(isinstance(step, dict), f"{label} must be an object")
+        _exact_keys(step, PREPROCESSING_STEP_KEYS, label)
+        step_id = str(step.get("id", ""))
+        _require(
+            re.fullmatch(r"step-[1-9][0-9]*", step_id) is not None,
+            f"{label}.id must use step-N",
+        )
+        preprocessing_ids.append(step_id)
+        _substantive_text(step.get("operation"), f"{label}.operation", minimum=12)
+        _require(
+            isinstance(step.get("parameters"), dict) and bool(step["parameters"]),
+            f"{label}.parameters must be a nonempty object",
+        )
+    _require(
+        len(preprocessing_ids) == len(set(preprocessing_ids)),
+        f"{claim_id} preprocessing step ids must be unique",
+    )
+
+    exclusions = _nonempty_list(
+        manifest.get("exclusions"), f"{claim_id}.analysisManifest.exclusions"
+    )
+    for index, exclusion in enumerate(exclusions):
+        label = f"{claim_id}.analysisManifest.exclusions[{index}]"
+        _require(isinstance(exclusion, dict), f"{label} must be an object")
+        _exact_keys(exclusion, EXCLUSION_KEYS, label)
+        _substantive_text(exclusion.get("criterion"), f"{label}.criterion", minimum=12)
+        _substantive_text(exclusion.get("rationale"), f"{label}.rationale", minimum=12)
+
+    stopping = manifest.get("stoppingRule")
+    _require(isinstance(stopping, dict), f"{claim_id} stoppingRule must be an object")
+    _exact_keys(stopping, STOPPING_RULE_KEYS, f"{claim_id}.stoppingRule")
+    _require(
+        stopping.get("kind")
+        in {"fixed_sample", "fixed_duration", "exhaustive_artifact"},
+        f"{claim_id} stoppingRule kind is invalid",
+    )
+    _require(
+        isinstance(stopping.get("target"), int)
+        and not isinstance(stopping["target"], bool)
+        and stopping["target"] > 0,
+        f"{claim_id} stoppingRule target must be a positive integer",
+    )
+    _require(
+        stopping.get("unit") in {"observations", "sessions", "days", "artifacts"},
+        f"{claim_id} stoppingRule unit is invalid",
+    )
+    _require(
+        isinstance(stopping.get("interimLooks"), int)
+        and not isinstance(stopping["interimLooks"], bool)
+        and stopping["interimLooks"] >= 0,
+        f"{claim_id} stoppingRule interimLooks must be a nonnegative integer",
+    )
+
+    fold_count = manifest.get("foldCount")
+    _require(
+        isinstance(fold_count, int)
+        and not isinstance(fold_count, bool)
+        and 2 <= fold_count <= 20,
+        f"{claim_id} foldCount must be an integer from 2 through 20",
+    )
+    seeds = _nonempty_list(
+        manifest.get("randomSeeds"), f"{claim_id}.analysisManifest.randomSeeds"
+    )
+    _require(
+        all(
+            isinstance(seed, int)
+            and not isinstance(seed, bool)
+            and 0 <= seed <= 2**32 - 1
+            for seed in seeds
+        )
+        and len(seeds) == len(set(seeds)),
+        f"{claim_id} randomSeeds must be unique unsigned 32-bit integers",
+    )
+
+    frozen_files: list[tuple[str, str]] = []
+    for field in ("analysisCode", "environmentLock"):
+        relative_file, _, file_hash = _validate_file_binding(
+            root, manifest.get(field), f"{claim_id}.analysisManifest.{field}"
+        )
+        frozen_files.append((relative_file, file_hash))
+
+    cost_plan = manifest.get("costPlan")
+    _require(isinstance(cost_plan, dict), f"{claim_id} costPlan must be an object")
+    _exact_keys(cost_plan, COST_PLAN_KEYS, f"{claim_id}.costPlan")
+    _require(
+        cost_plan.get("scalarization") == "none",
+        f"{claim_id} costPlan scalarization must remain none",
+    )
+    budgets = _nonempty_list(cost_plan.get("budgets"), f"{claim_id}.costPlan.budgets")
+    budget_categories: list[str] = []
+    for index, budget in enumerate(budgets):
+        label = f"{claim_id}.costPlan.budgets[{index}]"
+        _require(isinstance(budget, dict), f"{label} must be an object")
+        _exact_keys(budget, COST_BUDGET_KEYS, label)
+        budget_categories.append(str(budget.get("category", "")))
+        _substantive_text(budget.get("unit"), f"{label}.unit", minimum=2)
+        _require(
+            isinstance(budget.get("maximum"), (int, float))
+            and not isinstance(budget["maximum"], bool)
+            and budget["maximum"] >= 0,
+            f"{label}.maximum must be a nonnegative number",
+        )
+    _require(
+        set(budget_categories) == {"compute", "data_acquisition", "labor"}
+        and len(budget_categories) == 3,
+        f"{claim_id} costPlan must separately budget compute, data acquisition, and labor",
+    )
+
     attestation = manifest.get("accessAttestation")
-    _require(isinstance(attestation, dict), f"{claim_id} accessAttestation must be an object")
+    _require(
+        isinstance(attestation, dict), f"{claim_id} accessAttestation must be an object"
+    )
     _exact_keys(attestation, ACCESS_ATTESTATION_KEYS, f"{claim_id}.accessAttestation")
     expected_status = (
         "not_accessed_before_freeze"
@@ -569,10 +845,26 @@ def _validate_analysis_manifest(
         attestation.get("status") == expected_status,
         f"{claim_id} accessAttestation must declare {expected_status}",
     )
+    _substantive_text(
+        attestation.get("attestedBy"), f"{claim_id}.accessAttestation.attestedBy"
+    )
+    _substantive_text(
+        attestation.get("custodian"), f"{claim_id}.accessAttestation.custodian"
+    )
+    _substantive_text(
+        attestation.get("custodyProtocol"),
+        f"{claim_id}.accessAttestation.custodyProtocol",
+        minimum=12,
+    )
+    access_log_relative, _, access_log_hash = _validate_file_binding(
+        root,
+        attestation.get("accessLog"),
+        f"{claim_id}.accessAttestation.accessLog",
+    )
+    frozen_files.append((access_log_relative, access_log_hash))
     _require(
-        isinstance(attestation.get("attestedBy"), str)
-        and bool(attestation["attestedBy"].strip()),
-        f"{claim_id} accessAttestation attestedBy must be nonempty text",
+        len({relative_file for relative_file, _ in frozen_files}) == len(frozen_files),
+        f"{claim_id} analysisCode, environmentLock, and accessLog must be distinct files",
     )
     date_text = str(attestation.get("attestedAt", ""))
     try:
@@ -594,7 +886,7 @@ def _validate_analysis_manifest(
         _sha256_file(path, f"{claim_id} analysisManifest") == declared_hash,
         f"{claim_id} analysisManifestSha256 does not match the local manifest",
     )
-    return str(relative), path, declared_hash
+    return str(relative), path, declared_hash, manifest, frozen_files
 
 
 def _validate_result_receipt(
@@ -654,7 +946,13 @@ def _validate_result_receipt(
         artifact not in {path, prereg},
         f"{claim_id} dataArtifact must be distinct from receipt and preregistration",
     )
-    manifest_relative, manifest_path, declared_manifest_hash = _validate_analysis_manifest(
+    (
+        manifest_relative,
+        manifest_path,
+        declared_manifest_hash,
+        analysis_manifest,
+        frozen_manifest_files,
+    ) = _validate_analysis_manifest(
         root,
         claim_id,
         receipt,
@@ -712,6 +1010,17 @@ def _validate_result_receipt(
         frozen_manifest_hash == declared_manifest_hash,
         f"{claim_id} freezeCommit does not bind the declared analysisManifest hash",
     )
+    for frozen_relative, frozen_hash in frozen_manifest_files:
+        bound_hash = _git_blob_sha256(
+            root,
+            freeze_commit,
+            frozen_relative,
+            f"{claim_id} frozen manifest dependency {frozen_relative}",
+        )
+        _require(
+            bound_hash == frozen_hash,
+            f"{claim_id} freezeCommit does not bind {frozen_relative} at its declared hash",
+        )
     _require(
         not _git_path_exists(root, freeze_commit, str(artifact_relative)),
         f"{claim_id} dataArtifact already existed at the freeze commit",
@@ -735,6 +1044,18 @@ def _validate_result_receipt(
         committed_hash == declared_hash,
         f"{claim_id} analysisCommit does not bind the declared data artifact/hash",
     )
+    expected_data_hash = analysis_manifest["datasetChecksum"]["expectedSha256"]
+    if expected_data_hash is not None:
+        _require(
+            declared_hash == expected_data_hash,
+            f"{claim_id} dataSha256 does not match the frozen expected dataset hash",
+        )
+    locator = analysis_manifest["datasetLocator"]
+    if locator.startswith(("artifact:sha256:", "repository:sha256:")):
+        _require(
+            locator.rsplit(":", 1)[-1] == declared_hash,
+            f"{claim_id} immutable dataset identifier does not match dataSha256",
+        )
     _require(
         receipt.get("outcome") in RESULT_OUTCOMES,
         f"{claim_id} result receipt has invalid outcome",
@@ -1078,7 +1399,7 @@ def _validate_claims(
             )
         if stage == "X2_independent_data_discrimination":
             _require(
-                X2_INFLATION_RE.search(verdict_text) is None,
+                X2_INFLATION_RE.search(str(claim.get("scopeBoundary", ""))) is None,
                 f"{claim_id} X2 verdict cannot claim proof, confirmation, universality, or whole-system reach",
             )
 
@@ -1129,10 +1450,10 @@ def _validate_claims(
                     "replicationVerdict" not in dataset,
                     f"{claim_id} X2 cannot carry replicationVerdict",
                 )
-                expected_prefix = f"X2 outcome={result_receipt['outcome']}."
+                expected_token = f"X2 outcome={result_receipt['outcome']}"
                 _require(
-                    claim["currentVerdict"].startswith(expected_prefix),
-                    f"{claim_id} currentVerdict must begin with {expected_prefix}",
+                    claim["currentVerdict"] == expected_token,
+                    f"{claim_id} currentVerdict must equal {expected_token}",
                 )
         if stage in {
             "X3_independent_preregistered_replication",
@@ -1174,13 +1495,13 @@ def _validate_claims(
                 dataset.get("replicationVerdict") == replication_receipt["outcome"],
                 f"{claim_id} replicationVerdict must equal the X3 receipt outcome",
             )
-            expected_prefix = (
+            expected_token = (
                 f"X2 outcome={result_receipt['outcome']}; "
-                f"X3 outcome={replication_receipt['outcome']}."
+                f"X3 outcome={replication_receipt['outcome']}"
             )
             _require(
-                claim["currentVerdict"].startswith(expected_prefix),
-                f"{claim_id} currentVerdict must begin with {expected_prefix}",
+                claim["currentVerdict"] == expected_token,
+                f"{claim_id} currentVerdict must equal {expected_token}",
             )
             _require(
                 replication_receipt.get("newIndependentObservations") is True,

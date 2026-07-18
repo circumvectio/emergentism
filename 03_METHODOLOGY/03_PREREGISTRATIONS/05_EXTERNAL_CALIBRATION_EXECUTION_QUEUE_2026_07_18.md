@@ -33,13 +33,20 @@ claim-specific frozen analysis manifest:
 
 For each card, the freeze commit must bind a separate claim-specific JSON
 analysis manifest before first raw-data access. That manifest names the
-immutable dataset locator, expected checksum mechanism, complete rival set,
-variables, preprocessing, exclusions, outcome fields, stopping rule, analysis
-and cost plans, plus a dated access attestation. The selected data artifact must
-be absent at the freeze commit and present only in the later analysis commit.
+HTTPS or content-addressed immutable dataset locator, checksum mechanism and
+expected hash, fully specified candidate and complete rival set, operational
+variables and outcomes, nonempty preprocessing and exclusion rationales,
+stopping rule, fold count, random seeds, code and environment-lock paths plus
+hashes, separate compute/data/labor ceilings, and dated attestation/custody
+records with a hashed access log. The freeze commit must bind every one of those
+records and referenced files. The selected data artifact must be absent at the
+freeze commit and present only in the later analysis commit.
 Only then may the artifact be acquired and analyzed in a later commit. The
 outcome may be `supported`, `failed`, `null`, or `mixed`; all four can earn X2
 methodological status and all four must change the verdict honestly.
+The public verdict is machine-sized, not narrative:
+`X2 outcome=<supported|failed|null|mixed>` exactly. Explanatory prose belongs in
+the dated receipt or ledger, where it cannot reverse the token.
 
 ## Lane B — genuinely new observations required
 

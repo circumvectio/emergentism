@@ -365,9 +365,13 @@ preregistration and a claim-specific frozen analysis manifest. It binds the
 claim ID, data source and SHA-256, manifest and SHA-256, freeze and analysis
 commits, outcome, rivals, date, team identities, and domains. The artifact must
 be absent at freeze and present at analysis; the manifest must bind the exact
-dataset locator, variables, exclusions, rivals, analysis/cost plans, and dated
-access attestation. Typed result verdict and public verdict prefix must match
-the receipt outcome. `X3+` additionally requires the receipt to
+dataset locator and checksum, specified candidate and complete rivals,
+operational variables/outcomes, preprocessing, exclusion rationales, stopping
+rule, folds, seeds, code/environment bytes, native-unit costs, and dated
+attestation/custody log. Every referenced file must exist at the freeze commit
+at its declared hash. Typed result verdict and the public verdict token must
+equal the receipt outcome exactly; suffix prose is rejected rather than trusted.
+`X3+` additionally requires the receipt to
 attest newly collected independent observations and match the named independent
 team. A protocol file cannot certify its own result.
 

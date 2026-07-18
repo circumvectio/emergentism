@@ -59,6 +59,33 @@ Every run must freeze:
 - promotion, null, narrowing, and kill outcomes before data access;
 - code hash, environment, data hash or immutable source locator, and custody.
 
+The claim-specific `AnalysisManifest` is schema `2.0` and closed-world. It is a
+structured protocol, not a prose promise. It must contain:
+
+- an HTTPS source locator or content-addressed
+  `artifact:sha256:<digest>` / `repository:sha256:<digest>` identifier;
+- a checksum record. Retrospective X2 requires a publisher/repository SHA-256
+  known at freeze; prospective X3 declares
+  `compute_on_first_custody` with an explicitly null pre-collection expected
+  hash because future observations do not yet have bytes;
+- a fully specified candidate model and one fully specified entry for every
+  rival named on the immutable claim card, each with fit and complexity rules;
+- structured records for every registered variable and outcome, including
+  operational definitions, units, primary-outcome flags, and decision rules;
+- nonempty ordered preprocessing steps, nonempty exclusions with rationales, a
+  positive fixed stopping rule, `2…20` folds, and nonempty unique random seeds;
+- existing repository-relative analysis-code and environment-lock paths with
+  exact SHA-256 hashes;
+- separate native-unit ceilings for compute, data acquisition, and labor, with
+  no hidden scalarization; and
+- a dated access attestation naming the attester, custodian, custody protocol,
+  and a separately hashed append-only access-log snapshot.
+
+The freeze commit must contain the manifest, code, environment lock, and access
+log at exactly the declared hashes. One-character placeholders, `TBD` fields,
+empty protocol lists, post-hoc stopping rules, and unbound or hash-mismatched
+dependencies fail closed.
+
 No result may promote more than its registered claim and domain. “Compass
 validated,” “worldview confirmed,” and similar whole-system verdicts are outside
 the protocol.
@@ -327,10 +354,12 @@ ancestor of analysis, that the preregistration bytes at freeze match
 `preregSha256`, that the manifest bytes at freeze match the declared manifest
 hash, that the current active files still match, that the data artifact did not
 exist at the freeze commit, and that the exact artifact/hash exists both locally
-and at the analysis commit. The manifest is closed and binds the dataset
-locator, candidate, complete rival set, variables, outcomes, exclusions,
-analysis plan, cost plan, and a dated no-access/no-collection-before-freeze
-attestation. Paths and hashes of the two disclosed July 2 negative packets are
+and at the analysis commit. The schema-`2.0` manifest is closed and binds the
+dataset locator and checksum, fully specified candidate and complete rival set,
+operational variables and outcomes, preprocessing, exclusion rationales,
+stopping rule, folds, seeds, analysis-code and environment-lock bytes,
+native-unit cost ceilings, and dated no-access/no-collection-before-freeze
+custody evidence. Paths and hashes of the two disclosed July 2 negative packets are
 ineligible for retroactive promotion. `X2` records that an independent
 discriminator was frozen and run; it does not record that the framework won. A
 `failed`, `null`, or `mixed` receipt therefore reaches the same calibration
@@ -343,10 +372,11 @@ claim, not physical proof of non-access. Any contrary evidence kills the X2
 provenance claim, and external audit may require stronger custody evidence.
 
 The claim dataset also carries a typed `resultVerdict` that must equal the X2
-receipt outcome exactly, while public `currentVerdict` must begin with the same
-canonical outcome token. X3 repeats this equality for `replicationVerdict`.
-Thus a failed receipt cannot be narrated as support and a supported receipt
-cannot be narrated as failure without the validator stopping the promotion.
+receipt outcome exactly. Public `currentVerdict` must be only the exact token
+`X2 outcome=<outcome>`—no suffix prose. X3 repeats the typed equality for
+`replicationVerdict` and requires exactly
+`X2 outcome=<outcome>; X3 outcome=<outcome>`. Thus a correct prefix cannot hide
+contradictory narration, and a failed receipt cannot be narrated as support.
 
 The hypothesis-bearing claim fields are frozen by a canonical contract hash:
 claim identity and class, claim wording, source references and distance,
