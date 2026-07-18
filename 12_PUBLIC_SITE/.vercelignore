@@ -47,3 +47,17 @@ build/
 
 # Archive directories — old versions preserved per K3, not deployed
 _archive/
+
+# 2026-07-14 compass restructure: D0–D6 mathematical register is preserved
+# under 90_ARCHIVE/tool_noise/2026_07_14_compass_restructure/preserved_mathematical_register/
+# (per the README there). The live compass is the narrative register at
+# /trinity/. Do not redeploy the 0/..6/ pages; the math register is a
+# non-public comparison surface.
+90_ARCHIVE/tool_noise/2026_07_14_compass_restructure/preserved_mathematical_register/
+0/
+1/
+2/
+3/
+4/
+5/
+6/
