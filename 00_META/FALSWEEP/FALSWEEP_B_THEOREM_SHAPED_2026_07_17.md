@@ -130,7 +130,7 @@ i.e. φ, ν > 0 — which holds on the open-sphere chart θ ∈ (0,π) where
 φ = cot(θ/2), ν = tan(θ/2) > 0. Counterexample outside the register:
 φ = ν = −1 satisfies φν = 1 but φ+ν = −2 < 2 (already flagged in receipt
 101, item 10). The header's "[I] for AM-GM" is a *downward* mislabel —
-recorded in TITAN_CLAIM_LEDGER_2026_07_17.md:377 and SYNTROPY FLAG-5;
+recorded in TITAN_LEDGER/TITAN_TRANSCENDENTAL_CLAIM_LEDGER_2026_07_17.md:377 and SYNTROPY FLAG-5;
 repair optional, not an inflation. The kill criterion "AM-GM shown not to
 apply on S² in the relevant coordinate system" is ill-posed (AM-GM is
 chart-independent given positivity); the honest kill routes are positivity
