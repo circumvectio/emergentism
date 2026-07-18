@@ -4,6 +4,7 @@ import copy
 import hashlib
 import importlib.util
 import re
+import shutil
 import sys
 import tempfile
 import tomllib
@@ -22,13 +23,35 @@ class RootAgentzDispatchCompilerTests(unittest.TestCase):
         cls.specs = sync.load_validated_specs()
         cls.by_level = {spec["metadata"]["level"]: spec for spec in cls.specs}
         cls.outputs = sync.render_kernel()
+        cls.source_bundle_sha256 = sync.source_bundle_digest()
+        cls.output_sha256 = sync.output_digest(cls.outputs)
 
     def make_target(self, root: Path) -> Path:
         return root / ".codex/agents"
 
-    def write_fresh(self, target: Path) -> str:
+    def write_fresh(
+        self,
+        target: Path,
+        outputs: dict[Path, bytes] | None = None,
+        source_root: Path = sync.SOURCE_ROOT,
+    ) -> str:
+        rendered = outputs or sync.render_kernel(source_root)
         before = sync.preimage_digest(target)
-        return sync.write_kernel(target, self.outputs, before)
+        return sync.write_kernel(
+            target,
+            rendered,
+            before,
+            sync.source_bundle_digest(source_root),
+            sync.output_digest(rendered),
+            source_root,
+        )
+
+    def copy_source_bundle(self, destination: Path) -> None:
+        for relative_path in sync.SOURCE_BUNDLE_PATHS:
+            source = sync.SOURCE_ROOT / relative_path
+            target = destination / relative_path
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(source, target)
 
     def test_exact_thirteen_file_kernel_and_cx_exclusion(self) -> None:
         self.assertEqual(13, len(self.outputs))
@@ -42,8 +65,27 @@ class RootAgentzDispatchCompilerTests(unittest.TestCase):
         for path in sync.KERNEL_PATHS:
             self.assertEqual(hashlib.sha256(first[path]).digest(), hashlib.sha256(second[path]).digest())
 
+    def test_complete_source_bundle_is_bound_and_each_member_moves_digest(self) -> None:
+        self.assertEqual(13, len(sync.SOURCE_BUNDLE_PATHS))
+        with tempfile.TemporaryDirectory() as temporary:
+            source_root = Path(temporary)
+            self.copy_source_bundle(source_root)
+            baseline = sync.source_bundle_digest(source_root)
+            for relative_path in sync.SOURCE_BUNDLE_PATHS:
+                path = source_root / relative_path
+                original = path.read_bytes()
+                path.write_bytes(original + b"\nsource-drift-fixture\n")
+                self.assertNotEqual(baseline, sync.source_bundle_digest(source_root))
+                path.write_bytes(original)
+
+    def test_every_output_file_moves_output_digest(self) -> None:
+        for path in sync.KERNEL_PATHS:
+            changed = copy.deepcopy(self.outputs)
+            changed[path] += b"\noutput-drift-fixture\n"
+            self.assertNotEqual(self.output_sha256, sync.output_digest(changed))
+
     def test_source_snapshot_change_fails_closed(self) -> None:
-        real_snapshot = sync._source_snapshot
+        real_snapshot = sync._source_bundle_snapshot
         calls = 0
 
         def drifting_snapshot(source_root: Path) -> tuple[str, dict[str, str]]:
@@ -54,8 +96,8 @@ class RootAgentzDispatchCompilerTests(unittest.TestCase):
                 digest = "0" * 64
             return digest, hashes
 
-        with mock.patch.object(sync, "_source_snapshot", side_effect=drifting_snapshot):
-            with self.assertRaisesRegex(sync.SyncError, "source inputs changed"):
+        with mock.patch.object(sync, "_source_bundle_snapshot", side_effect=drifting_snapshot):
+            with self.assertRaisesRegex(sync.SyncError, "source/control bundle changed"):
                 sync.render_kernel()
 
     def test_schema_uses_route_select_and_typed_four_plus_three(self) -> None:
@@ -108,14 +150,26 @@ class RootAgentzDispatchCompilerTests(unittest.TestCase):
             self.assertNotIn("god", identity)
             self.assertNotIn("demon", identity)
             analogy = row["consequence_analogy"]
-            self.assertIn("retrospective receipt class", analogy["demon_analogy"])
-            self.assertIn("retrospective receipt class", analogy["god_analogy"])
+            self.assertEqual("unclassified", analogy["classification_default"])
+            self.assertEqual(sync.CLASSIFICATION_GATE, analogy["classification_gate"])
+            self.assertEqual(sync.DEMON_BEARING_PREDICATE, analogy["demon_bearing"])
+            self.assertEqual(sync.GOD_BEARING_PREDICATE, analogy["god_bearing"])
+            self.assertEqual(sync.STASIS_PREDICATE, analogy["stasis"])
+            self.assertEqual(sync.STRICT_SYNTROPY_PREDICATE, analogy["strict_syntropy"])
+            self.assertIn("stronger subset", analogy["strict_syntropy_relation"])
             self.assertEqual("none", analogy["identity_effect"])
             self.assertEqual("none", analogy["authorization_effect"])
-            self.assertEqual(
-                ["commitment_receipt", "outcome_receipt", "payer", "beneficiary", "option_cone_effects"],
-                analogy["required_inputs"],
-            )
+
+        schema = tomllib.loads(
+            self.outputs[Path("rosetta_dispatch_schema.toml")].decode("utf-8")
+        )["consequence_analogy"]
+        self.assertEqual("unclassified", schema["classification_default"])
+        self.assertEqual(sync.CLASSIFICATION_GATE, schema["classification_gate"])
+        self.assertEqual(sync.DEMON_BEARING_PREDICATE, schema["demon_bearing"])
+        self.assertEqual(sync.GOD_BEARING_PREDICATE, schema["god_bearing"])
+        self.assertEqual(sync.STASIS_PREDICATE, schema["stasis"])
+        self.assertEqual(sync.STRICT_SYNTROPY_PREDICATE, schema["strict_syntropy"])
+        self.assertFalse(schema["identity_or_authority_transfer"])
 
     def test_manifest_hashes_every_non_manifest_output(self) -> None:
         manifest = self.outputs[sync.MANIFEST_PATH].decode("utf-8")
@@ -132,7 +186,14 @@ class RootAgentzDispatchCompilerTests(unittest.TestCase):
             cx_file.parent.mkdir(parents=True)
             cx_file.write_text('status = "separate"\n', encoding="utf-8")
             before = sync.preimage_digest(target)
-            after = sync.write_kernel(target, self.outputs, before)
+            after = sync.write_kernel(
+                target,
+                self.outputs,
+                before,
+                self.source_bundle_sha256,
+                self.output_sha256,
+                sync.SOURCE_ROOT,
+            )
             self.assertEqual([], sync.kernel_drift(target, self.outputs))
             self.assertEqual(after, sync.preimage_digest(target))
             self.assertEqual('status = "separate"\n', cx_file.read_text(encoding="utf-8"))
@@ -145,8 +206,116 @@ class RootAgentzDispatchCompilerTests(unittest.TestCase):
             readme = target / "README.md"
             readme.write_text("concurrent edit\n", encoding="utf-8")
             with self.assertRaises(sync.PreimageMismatch):
-                sync.write_kernel(target, self.outputs, stale)
+                sync.write_kernel(
+                    target,
+                    self.outputs,
+                    stale,
+                    self.source_bundle_sha256,
+                    self.output_sha256,
+                    sync.SOURCE_ROOT,
+                )
             self.assertEqual("concurrent edit\n", readme.read_text(encoding="utf-8"))
+
+    def test_source_drift_before_write_refuses_without_overwrite(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            source_root = root / "source"
+            self.copy_source_bundle(source_root)
+            outputs = sync.render_kernel(source_root)
+            source_digest = sync.source_bundle_digest(source_root)
+            output_digest = sync.output_digest(outputs)
+            target = self.make_target(root / "documents")
+            before = sync.preimage_digest(target)
+            source_file = source_root / sync.CONTROL_DIR_REL / "contract.py"
+            source_file.write_bytes(source_file.read_bytes() + b"\nsource-drift-fixture\n")
+
+            with self.assertRaisesRegex(sync.SourceBundleMismatch, "under lock"):
+                sync.write_kernel(
+                    target,
+                    outputs,
+                    before,
+                    source_digest,
+                    output_digest,
+                    source_root,
+                )
+            self.assertTrue(all(value is None for value in sync.snapshot_kernel(target).values()))
+
+    def test_source_drift_during_staging_refuses_without_overwrite(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            source_root = root / "source"
+            self.copy_source_bundle(source_root)
+            outputs = sync.render_kernel(source_root)
+            source_digest = sync.source_bundle_digest(source_root)
+            output_digest = sync.output_digest(outputs)
+            target = self.make_target(root / "documents")
+            before = sync.preimage_digest(target)
+            source_file = source_root / sync.CONTROL_DIR_REL / "contract.py"
+            real_stage = sync._stage_file
+            calls = 0
+
+            def drift_after_first_stage(destination: Path, data: bytes) -> Path:
+                nonlocal calls
+                staged = real_stage(destination, data)
+                calls += 1
+                if calls == 1:
+                    source_file.write_bytes(
+                        source_file.read_bytes() + b"\nsource-drift-fixture\n"
+                    )
+                return staged
+
+            with mock.patch.object(sync, "_stage_file", side_effect=drift_after_first_stage):
+                with self.assertRaisesRegex(sync.SourceBundleMismatch, "while staging"):
+                    sync.write_kernel(
+                        target,
+                        outputs,
+                        before,
+                        source_digest,
+                        output_digest,
+                        source_root,
+                    )
+            self.assertTrue(all(value is None for value in sync.snapshot_kernel(target).values()))
+
+    def test_output_drift_before_write_refuses_without_overwrite(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            target = self.make_target(Path(temporary))
+            changed = copy.deepcopy(self.outputs)
+            changed[Path("README.md")] += b"\noutput-drift-fixture\n"
+            with self.assertRaisesRegex(sync.OutputDigestMismatch, "before lock"):
+                sync.write_kernel(
+                    target,
+                    changed,
+                    sync.preimage_digest(target),
+                    self.source_bundle_sha256,
+                    self.output_sha256,
+                    sync.SOURCE_ROOT,
+                )
+            self.assertTrue(all(value is None for value in sync.snapshot_kernel(target).values()))
+
+    def test_output_drift_during_staging_refuses_without_overwrite(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            target = self.make_target(Path(temporary))
+            before = sync.preimage_digest(target)
+            real_output_digest = sync.output_digest
+            calls = 0
+
+            def drifting_output_digest(outputs: dict[Path, bytes]) -> str:
+                nonlocal calls
+                calls += 1
+                digest = real_output_digest(outputs)
+                return "0" * 64 if calls == 4 else digest
+
+            with mock.patch.object(sync, "output_digest", side_effect=drifting_output_digest):
+                with self.assertRaisesRegex(sync.OutputDigestMismatch, "while staging"):
+                    sync.write_kernel(
+                        target,
+                        self.outputs,
+                        before,
+                        self.source_bundle_sha256,
+                        self.output_sha256,
+                        sync.SOURCE_ROOT,
+                    )
+            self.assertTrue(all(value is None for value in sync.snapshot_kernel(target).values()))
 
     def test_caught_replace_failure_rolls_back(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
@@ -154,8 +323,6 @@ class RootAgentzDispatchCompilerTests(unittest.TestCase):
             self.write_fresh(target)
             before_snapshot = sync.snapshot_kernel(target)
             before_digest = sync.snapshot_digest(before_snapshot)
-            changed = copy.deepcopy(self.outputs)
-            changed[Path("README.md")] += b"\nmutation fixture\n"
             calls = 0
             real_replace = sync.os.replace
 
@@ -168,7 +335,14 @@ class RootAgentzDispatchCompilerTests(unittest.TestCase):
 
             with mock.patch.object(sync, "_replace", side_effect=fail_second):
                 with self.assertRaises(OSError):
-                    sync.write_kernel(target, changed, before_digest)
+                    sync.write_kernel(
+                        target,
+                        self.outputs,
+                        before_digest,
+                        self.source_bundle_sha256,
+                        self.output_sha256,
+                        sync.SOURCE_ROOT,
+                    )
             self.assertEqual(before_snapshot, sync.snapshot_kernel(target))
 
     def test_mid_write_external_edit_is_preserved_and_prior_replace_rolls_back(self) -> None:
@@ -177,8 +351,6 @@ class RootAgentzDispatchCompilerTests(unittest.TestCase):
             self.write_fresh(target)
             before_snapshot = sync.snapshot_kernel(target)
             before_digest = sync.snapshot_digest(before_snapshot)
-            changed = copy.deepcopy(self.outputs)
-            changed[Path("README.md")] += b"\nmutation fixture\n"
             real_replace = sync.os.replace
             calls = 0
 
@@ -191,7 +363,14 @@ class RootAgentzDispatchCompilerTests(unittest.TestCase):
 
             with mock.patch.object(sync, "_replace", side_effect=inject_external_edit):
                 with self.assertRaises(sync.PreimageMismatch):
-                    sync.write_kernel(target, changed, before_digest)
+                    sync.write_kernel(
+                        target,
+                        self.outputs,
+                        before_digest,
+                        self.source_bundle_sha256,
+                        self.output_sha256,
+                        sync.SOURCE_ROOT,
+                    )
             self.assertEqual(before_snapshot[Path("README.md")], (target / "README.md").read_bytes())
             self.assertEqual("external concurrent edit\n", (target / "DISPATCH.md").read_text(encoding="utf-8"))
 

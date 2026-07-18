@@ -3,7 +3,7 @@
   "calibrationStatus": "unprovisioned_x0",
   "schema": {
     "path": "managed_agentz.schema.json",
-    "sha256": "65d20444f3112148e88045885599dc85cea3c9927db0f82f39c25d6da3ae5d9f"
+    "sha256": "a63c05a8f698878c739fb80a3158da17392b16e61f3a2517d657399e00239dbb"
   },
   "environment": {
     "path": "emergentism.environment.yaml",
@@ -66,5 +66,5 @@
     ],
     "selfDelegation": true
   },
-  "bundleSha256": "d061c20081b689f3278a762e93ffa254aebd249e4bd4c098aa870693f0727f1d"
+  "bundleSha256": "069abe45b6e9c5cbeff29cea62a4cc413db9e39f6ee23c59e4cd35c0ddc1afb9"
 }

@@ -104,9 +104,9 @@ tracked Managed Agent YAMLs × 7
               ▼
 sync_root_agentz_dispatch.py ── deterministic render
               │
-              ├── --check: compare bytes and print aggregate preimage SHA-256
+              ├── --check: compare bytes and print target/source/output SHA-256
               │
-              └── --write --expect-preimage <SHA-256>
+              └── --write --expect-{preimage,source-bundle,output} <SHA-256>
                          │
                          ▼
              ignored 13-file root runtime kernel
@@ -118,19 +118,24 @@ Read-only comparison:
 python3 09_TOOLS/02_COMPILERS/sync_root_agentz_dispatch.py --check
 ```
 
-A write is deliberately two-step. Copy the exact aggregate digest printed by
-`--check`, inspect the reported drift, and then pass it explicitly:
+A write is deliberately two-step. Copy all three exact digests printed by the
+same immediate `--check`, inspect the reported drift, and then pass them
+explicitly:
 
 ```bash
 python3 09_TOOLS/02_COMPILERS/sync_root_agentz_dispatch.py \
   --write \
-  --expect-preimage <SHA-256-from-check>
+  --expect-preimage <target-SHA-256-from-check> \
+  --expect-source-bundle <source-SHA-256-from-check> \
+  --expect-output <output-SHA-256-from-check>
 ```
 
-The writer holds an exclusive compiler lock, snapshots all managed bytes,
-stages every output, rechecks the preimage, atomically replaces individual
-files, and writes the deployment manifest last. A stale digest fails without
-overwriting the live kernel.
+The complete source digest binds the seven YAMLs, environment, Managed schema,
+lock, local contract, validator, and generator bytes. The output digest binds
+all 13 rendered files. The writer holds an exclusive compiler lock, re-renders
+from the bound source, snapshots all managed target bytes, stages every output,
+rechecks all three digests throughout replacement, and writes the deployment
+manifest last. Any stale digest fails without overwriting the live kernel.
 
 ## Typed semantics preserved by the projection
 
@@ -149,11 +154,15 @@ overwriting the live kernel.
 - Private-DAV K2 and public governance are separate implementation rails, not
   worldview primitives and not substitutes for the authorization envelope.
 
-God/Demon language is forbidden as configured agent identity. It may appear
-only as an `[I]`, retrospective analogy over independently validated and tiered
-receipts: ego-only or cost-externalizing consequences versus durable mutual
-individual-and-collective potential increases under Justice. It transfers no
-authority or moral essence.
+God/Demon language is forbidden as configured agent identity. The retrospective
+class remains **unclassified** until commitment and world-issued outcome
+receipts provide the complete affected-bearer set, non-null deltas for every
+bearer, and a Justice assessment. `DemonBearing` then requires a focal
+beneficiary gain plus some bearer loss. `GodBearing` requires Justice, every
+bearer nonnegative, and at least one strict gain. All-zero stasis is
+preservative, not God-bearing. Strict syntropy is a separate stronger predicate:
+declared part and whole both rise while every other bearer remains nonnegative.
+These `[I]` predicates transfer no authority or moral essence.
 
 ## Cross-surface audit
 
@@ -175,8 +184,8 @@ rival configurations.
 1. Amend one tracked Managed Agent YAML.
 2. Run `validate_agentz_rosetta.py --check` and its unit tests.
 3. Run the root compiler with `--check`; inspect every proposed drift.
-4. Synchronize only with the exact preimage digest and appropriate workspace
-   authority.
+4. Synchronize only with the exact target, source-bundle, and output digests
+   from the same immediate check and appropriate workspace authority.
 5. Run the homology audit and focused compiler tests.
 6. Treat Skyzai product-role and C-suite profiles as a separate owner-lane
    reconciliation; never fold them into the seven-row kernel by recursive glob.

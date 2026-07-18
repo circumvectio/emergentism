@@ -14,6 +14,90 @@
       "items": {"$ref": "#/$defs/StringId"},
       "uniqueItems": true
     },
+    "Sha256Hex": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "SchnorrSignatureHex": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{128}$"
+    },
+    "RepositoryPathArray": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/StringId"},
+      "uniqueItems": true
+    },
+    "ActionPlan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion", "planId", "summary", "repository", "repositoryRef",
+        "operations", "requestedPaths"
+      ],
+      "properties": {
+        "schemaVersion": {"const": "1.0"},
+        "planId": {"$ref": "#/$defs/StringId"},
+        "summary": {"$ref": "#/$defs/StringId"},
+        "repository": {"$ref": "#/$defs/StringId"},
+        "repositoryRef": {"$ref": "#/$defs/StringId"},
+        "operations": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": ["read", "grep", "glob", "web_search", "web_fetch", "write", "edit", "bash"]
+          }
+        },
+        "requestedPaths": {"$ref": "#/$defs/RepositoryPathArray"}
+      }
+    },
+    "TrustPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion", "policyId", "authorizationSigners", "deploymentVerifiers",
+        "maxAuthorizationAgeSeconds", "maxDeploymentAgeSeconds", "maxFutureSkewSeconds"
+      ],
+      "properties": {
+        "schemaVersion": {"const": "1.0"},
+        "policyId": {"$ref": "#/$defs/StringId"},
+        "authorizationSigners": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["keyId", "publicKeyHex", "principalIds"],
+            "properties": {
+              "keyId": {"$ref": "#/$defs/StringId"},
+              "publicKeyHex": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+              "principalIds": {
+                "allOf": [{"$ref": "#/$defs/StringIdArray"}, {"minItems": 1}]
+              }
+            }
+          }
+        },
+        "deploymentVerifiers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["keyId", "publicKeyHex", "verifierIds"],
+            "properties": {
+              "keyId": {"$ref": "#/$defs/StringId"},
+              "publicKeyHex": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+              "verifierIds": {
+                "allOf": [{"$ref": "#/$defs/StringIdArray"}, {"minItems": 1}]
+              }
+            }
+          }
+        },
+        "maxAuthorizationAgeSeconds": {"type": "integer", "minimum": 1},
+        "maxDeploymentAgeSeconds": {"type": "integer", "minimum": 1},
+        "maxFutureSkewSeconds": {"type": "integer", "minimum": 0}
+      }
+    },
     "BudgetEnvelope": {
       "type": "object",
       "additionalProperties": false,
@@ -44,13 +128,15 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "schemaVersion", "envelopeId", "principal", "mandate", "scope",
-        "consent", "custody", "expiresAt", "revoked", "contestPath", "actor",
-        "consequenceBearerIds", "payerIds", "beneficiaryIds", "expectedBearerDeltas"
+        "schemaVersion", "envelopeId", "actionPlanSha256", "principal", "mandate", "scope",
+        "consent", "custody", "issuedAt", "expiresAt", "revoked", "contestPath", "actor",
+        "consequenceBearerIds", "payerIds", "beneficiaryIds", "expectedBearerDeltas",
+        "signerKeyId", "signature"
       ],
       "properties": {
         "schemaVersion": {"const": "1.0"},
         "envelopeId": {"$ref": "#/$defs/StringId"},
+        "actionPlanSha256": {"$ref": "#/$defs/Sha256Hex"},
         "principal": {"$ref": "#/$defs/StringId"},
         "mandate": {"$ref": "#/$defs/StringId"},
         "scope": {
@@ -87,6 +173,7 @@
           }
         },
         "custody": {"$ref": "#/$defs/StringId"},
+        "issuedAt": {"type": "string", "format": "date-time"},
         "expiresAt": {"type": "string", "format": "date-time"},
         "revoked": {"const": false},
         "contestPath": {"$ref": "#/$defs/StringId"},
@@ -100,7 +187,9 @@
           "type": "object",
           "minProperties": 1,
           "additionalProperties": {"type": "number"}
-        }
+        },
+        "signerKeyId": {"$ref": "#/$defs/StringId"},
+        "signature": {"$ref": "#/$defs/SchnorrSignatureHex"}
       }
     },
     "AuthorizationAssessment": {
@@ -118,7 +207,8 @@
       "additionalProperties": false,
       "required": [
         "schemaVersion", "requestId", "task", "consequential", "operations",
-        "repository", "repositoryRef", "budget", "evaluation", "authorization"
+        "repository", "repositoryRef", "actionPlan", "actionPlanSha256",
+        "budget", "evaluation", "authorization"
       ],
       "properties": {
         "schemaVersion": {"const": "1.0"},
@@ -135,6 +225,8 @@
         },
         "repository": {"$ref": "#/$defs/StringId"},
         "repositoryRef": {"$ref": "#/$defs/StringId"},
+        "actionPlan": {"$ref": "#/$defs/ActionPlan"},
+        "actionPlanSha256": {"$ref": "#/$defs/Sha256Hex"},
         "budget": {"$ref": "#/$defs/BudgetEnvelope"},
         "evaluation": {"$ref": "#/$defs/EvaluationContract"},
         "authorization": {
@@ -147,7 +239,8 @@
       "additionalProperties": false,
       "required": [
         "schemaVersion", "receiptType", "requestId", "actionId", "status",
-        "authorizationAssessment", "budgetSha256", "deploymentSha256", "issuedBy"
+        "authorizationAssessment", "actionPlanSha256", "budgetSha256",
+        "deploymentSha256", "issuedBy"
       ],
       "properties": {
         "schemaVersion": {"const": "1.0"},
@@ -156,9 +249,42 @@
         "actionId": {"type": ["string", "null"]},
         "status": {"enum": ["refused", "authorization_pending", "attempt_started", "attempt_failed"]},
         "authorizationAssessment": {"$ref": "#/$defs/AuthorizationAssessment"},
-        "budgetSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
-        "deploymentSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "actionPlanSha256": {"$ref": "#/$defs/Sha256Hex"},
+        "budgetSha256": {"$ref": "#/$defs/Sha256Hex"},
+        "deploymentSha256": {"$ref": "#/$defs/Sha256Hex"},
         "issuedBy": {"$ref": "#/$defs/StringId"}
+      }
+    },
+    "JusticeAssessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status", "justiceSatisfied", "bearerCoverageComplete", "focalIndividualId",
+        "declaredWholeId", "focalBeneficiaryIds", "assessedBy", "reasons"
+      ],
+      "properties": {
+        "status": {"enum": ["complete", "incomplete"]},
+        "justiceSatisfied": {"type": ["boolean", "null"]},
+        "bearerCoverageComplete": {"type": "boolean"},
+        "focalIndividualId": {"type": ["string", "null"]},
+        "declaredWholeId": {"type": ["string", "null"]},
+        "focalBeneficiaryIds": {"$ref": "#/$defs/StringIdArray"},
+        "assessedBy": {"type": ["string", "null"]},
+        "reasons": {"$ref": "#/$defs/StringIdArray"}
+      }
+    },
+    "OutcomeClassification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status", "demonBearing", "godBearing", "preservativeStasis", "strictSyntropy"
+      ],
+      "properties": {
+        "status": {"enum": ["classified", "unclassified"]},
+        "demonBearing": {"type": ["boolean", "null"]},
+        "godBearing": {"type": ["boolean", "null"]},
+        "preservativeStasis": {"type": ["boolean", "null"]},
+        "strictSyntropy": {"type": ["boolean", "null"]}
       }
     },
     "OutcomeReceipt": {
@@ -166,7 +292,8 @@
       "additionalProperties": false,
       "required": [
         "schemaVersion", "receiptType", "receiptCause", "requestId", "actionId",
-        "status", "consequenceBearerIds", "observedBearerDeltas", "issuedBy"
+        "actionPlanSha256", "status", "consequenceBearerIds", "observedBearerDeltas",
+        "justiceAssessment", "classification", "issuedBy"
       ],
       "properties": {
         "schemaVersion": {"const": "1.0"},
@@ -174,12 +301,15 @@
         "receiptCause": {"enum": ["action_attempt", "ambient_observation"]},
         "requestId": {"$ref": "#/$defs/StringId"},
         "actionId": {"type": ["string", "null"]},
+        "actionPlanSha256": {"$ref": "#/$defs/Sha256Hex"},
         "status": {"enum": ["observed", "partial", "unobservable", "pending"]},
         "consequenceBearerIds": {"$ref": "#/$defs/StringIdArray"},
         "observedBearerDeltas": {
           "type": "object",
           "additionalProperties": {"type": ["number", "null"]}
         },
+        "justiceAssessment": {"$ref": "#/$defs/JusticeAssessment"},
+        "classification": {"$ref": "#/$defs/OutcomeClassification"},
         "issuedBy": {"$ref": "#/$defs/StringId"}
       }
     },
@@ -188,7 +318,7 @@
       "additionalProperties": false,
       "required": [
         "schemaVersion", "status", "bundleSha256", "environment", "agents",
-        "topology", "verifiedAt", "verifier"
+        "topology", "verifiedAt", "verifier", "attestation"
       ],
       "properties": {
         "schemaVersion": {"const": "1.0"},
@@ -232,24 +362,35 @@
           }
         },
         "verifiedAt": {"type": "string", "format": "date-time"},
-        "verifier": {"$ref": "#/$defs/StringId"}
+        "verifier": {"$ref": "#/$defs/StringId"},
+        "attestation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["keyId", "signedAt", "signature"],
+          "properties": {
+            "keyId": {"$ref": "#/$defs/StringId"},
+            "signedAt": {"type": "string", "format": "date-time"},
+            "signature": {"$ref": "#/$defs/SchnorrSignatureHex"}
+          }
+        }
       }
     },
     "RunRecord": {
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "schemaVersion", "requestSha256", "bundleSha256", "deploymentSha256",
+        "schemaVersion", "requestSha256", "actionPlanSha256", "bundleSha256", "deploymentSha256",
         "commitmentReceiptSha256", "outcomeReceiptSha256", "budgetSha256"
       ],
       "properties": {
         "schemaVersion": {"const": "1.0"},
-        "requestSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
-        "bundleSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
-        "deploymentSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "requestSha256": {"$ref": "#/$defs/Sha256Hex"},
+        "actionPlanSha256": {"$ref": "#/$defs/Sha256Hex"},
+        "bundleSha256": {"$ref": "#/$defs/Sha256Hex"},
+        "deploymentSha256": {"$ref": "#/$defs/Sha256Hex"},
         "commitmentReceiptSha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
         "outcomeReceiptSha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
-        "budgetSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        "budgetSha256": {"$ref": "#/$defs/Sha256Hex"}
       }
     }
   }

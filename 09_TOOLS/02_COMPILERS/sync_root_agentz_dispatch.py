@@ -6,11 +6,11 @@ Documents-root ``.codex/agents`` directory is a derived, ignored runtime shim.
 This compiler manages exactly thirteen kernel files and deliberately ignores
 ``rows/cx_suite``.
 
-``--check`` is read-only and prints the aggregate preimage SHA-256 required by
-``--write``.  ``--write`` refuses unless that exact digest is supplied, stages
-every output first, verifies the preimage again under an exclusive compiler
-lock, and atomically replaces each managed file.  The deployment manifest is
-written last.
+``--check`` is read-only and prints the target preimage, complete source-bundle,
+and deterministic output SHA-256 values required by ``--write``. ``--write``
+refuses unless all three exact digests are supplied, rechecks them under an
+exclusive compiler lock throughout staging/replacement, and atomically replaces
+each managed file. The deployment manifest is written last.
 """
 
 from __future__ import annotations
@@ -38,7 +38,39 @@ ENV_REL = Path("08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/emergentism.enviro
 GENERATOR_REL = Path("09_TOOLS/02_COMPILERS/sync_root_agentz_dispatch.py")
 SOURCE_AUTHORITY_REL = Path("01_EMERGENTISM") / SOURCE_DIR_REL
 GENERATOR_AUTHORITY_REL = Path("01_EMERGENTISM") / GENERATOR_REL
-SCHEMA_VERSION = "root-agentz-dispatch-v1"
+SCHEMA_VERSION = "root-agentz-dispatch-v2"
+
+CONTROL_DIR_REL = Path("08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS")
+SOURCE_BUNDLE_CONTROL_PATHS = (
+    ENV_REL,
+    CONTROL_DIR_REL / "managed_agentz.schema.json",
+    CONTROL_DIR_REL / "agentz.lock.json",
+    CONTROL_DIR_REL / "contract.py",
+    Path("09_TOOLS/02_COMPILERS/validate_agentz_rosetta.py"),
+    GENERATOR_REL,
+)
+
+CLASSIFICATION_GATE = (
+    "attempt-started commitment receipt q; observed world-issued outcome receipt r; complete materially affected "
+    "bearer set A; observed non-null Δ_T^R W_b(q,r) for every b∈A; retrospective Justice "
+    "assessment recorded"
+)
+DEMON_BEARING_PREDICATE = (
+    "DemonBearing(q,r) iff gate ∧ ∃g,b∈A: FocalBeneficiary(g) ∧ "
+    "Δ_T^R W_g(q,r)>0 ∧ Δ_T^R W_b(q,r)<0"
+)
+GOD_BEARING_PREDICATE = (
+    "GodBearing(q,r) iff gate ∧ J^R(q,r;A) ∧ ∀b∈A:Δ_T^R W_b(q,r)≥0 ∧ "
+    "∃b∈A:Δ_T^R W_b(q,r)>0"
+)
+STASIS_PREDICATE = (
+    "Stasis(q,r) iff gate ∧ J^R(q,r;A) ∧ ∀b∈A:Δ_T^R W_b(q,r)=0; "
+    "Justice-compliant/preservative, not GodBearing"
+)
+STRICT_SYNTROPY_PREDICATE = (
+    "Syntropic(q,r) iff gate ∧ J^R(q,r;A) ∧ Δ_T^R W_i(q,r)>0 ∧ "
+    "Δ_T^R W_H(q,r)>0 ∧ every other affected bearer is nonnegative"
+)
 
 ROW_PATHS: dict[str, Path] = {
     "L1": Path("rows/01_L1_candala_firewall.toml"),
@@ -58,6 +90,9 @@ SOURCE_FILENAMES: dict[str, str] = {
     "L6": "06_sadhu_compressor.agent.yaml",
     "L7": "07_rsi_constitution.agent.yaml",
 }
+SOURCE_BUNDLE_PATHS = tuple(
+    SOURCE_DIR_REL / SOURCE_FILENAMES[level] for level in ROW_PATHS
+) + SOURCE_BUNDLE_CONTROL_PATHS
 ROUTE_STAGES: dict[str, str] = {
     "L1": "PARSE",
     "L2": "ROUTE_SELECT",
@@ -141,6 +176,14 @@ class PreimageMismatch(SyncError):
     """Raised when live bytes differ from the explicitly authorized preimage."""
 
 
+class SourceBundleMismatch(SyncError):
+    """Raised when tracked source/control bytes differ from the checked bundle."""
+
+
+class OutputDigestMismatch(SyncError):
+    """Raised when rendered kernel bytes differ from the checked output bundle."""
+
+
 def _sha256(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
@@ -188,6 +231,25 @@ def _toml_section(name: str, values: Iterable[tuple[str, Any]]) -> str:
     return "\n".join(lines) + "\n"
 
 
+def _consequence_predicate_values() -> list[tuple[str, Any]]:
+    return [
+        ("tier", "[I] normative predicates; receipt facts retain independently validated tiers"),
+        ("classification_default", "unclassified"),
+        ("classification_gate", CLASSIFICATION_GATE),
+        ("demon_bearing", DEMON_BEARING_PREDICATE),
+        ("god_bearing", GOD_BEARING_PREDICATE),
+        ("stasis", STASIS_PREDICATE),
+        ("strict_syntropy", STRICT_SYNTROPY_PREDICATE),
+        (
+            "strict_syntropy_relation",
+            "separately named, stronger subset of GodBearing: both declared part i and whole H must rise",
+        ),
+        ("before_gate", "model-indexed predictions only; never realized classification"),
+        ("identity_effect", "none"),
+        ("authorization_effect", "none"),
+    ]
+
+
 def _enabled_tool_configs(spec: Mapping[str, Any]) -> list[dict[str, Any]]:
     enabled: list[dict[str, Any]] = []
     for toolset in spec.get("tools", []):
@@ -197,21 +259,27 @@ def _enabled_tool_configs(spec: Mapping[str, Any]) -> list[dict[str, Any]]:
     return enabled
 
 
-def _source_snapshot(source_root: Path) -> tuple[str, dict[str, str]]:
+def _source_bundle_snapshot(source_root: Path) -> tuple[str, dict[str, str]]:
     source_hashes: dict[str, str] = {}
     digest = hashlib.sha256()
-    for level in ROW_PATHS:
-        path = _source_path(source_root, level)
-        rel = path.relative_to(source_root).as_posix()
+    digest.update(SCHEMA_VERSION.encode("ascii") + b"\nSOURCE-BUNDLE\n")
+    for relative_path in SOURCE_BUNDLE_PATHS:
+        path = source_root / relative_path
+        try:
+            info = path.lstat()
+        except FileNotFoundError as exc:
+            raise SyncError(f"source-bundle path is missing: {relative_path.as_posix()}") from exc
+        if not stat.S_ISREG(info.st_mode):
+            raise SyncError(f"source-bundle path must be a regular file: {relative_path.as_posix()}")
+        rel = relative_path.as_posix()
         file_hash = _sha256(path.read_bytes())
         source_hashes[rel] = file_hash
         digest.update(rel.encode("utf-8") + b"\0" + file_hash.encode("ascii") + b"\n")
-    env_path = source_root / ENV_REL
-    env_rel = ENV_REL.as_posix()
-    env_hash = _sha256(env_path.read_bytes())
-    source_hashes[env_rel] = env_hash
-    digest.update(env_rel.encode("utf-8") + b"\0" + env_hash.encode("ascii") + b"\n")
     return digest.hexdigest(), source_hashes
+
+
+def source_bundle_digest(source_root: Path = SOURCE_ROOT) -> str:
+    return _source_bundle_snapshot(source_root.resolve())[0]
 
 
 def _render_row(
@@ -238,7 +306,7 @@ def _render_row(
         "# GENERATED FILE. DO NOT EDIT DIRECTLY.\n",
         f"# Source: {source_authority}\n",
         f"# Generator: {GENERATOR_AUTHORITY_REL.as_posix()}\n",
-        "# Static God/Demon identity is forbidden; analogy is receipt-based only.\n\n",
+        "# God/Demon terms are retrospective Compass predicates, never identity.\n\n",
     ]
     meta_values: list[tuple[str, Any]] = [
         ("schema_version", SCHEMA_VERSION),
@@ -321,23 +389,7 @@ def _render_row(
     parts.append(
         _toml_section(
             "consequence_analogy",
-            [
-                ("tier", "[I] analogy; receipts retain independently validated tiers"),
-                (
-                    "demon_analogy",
-                    "retrospective receipt class: ego-only potential maximization, coercion, or externalized cost",
-                ),
-                (
-                    "god_analogy",
-                    "retrospective receipt class: durable mutual individual-and-collective potential increase under Justice",
-                ),
-                (
-                    "required_inputs",
-                    ["commitment_receipt", "outcome_receipt", "payer", "beneficiary", "option_cone_effects"],
-                ),
-                ("identity_effect", "none"),
-                ("authorization_effect", "none"),
-            ],
+            _consequence_predicate_values(),
         )
     )
     return "".join(parts).encode("utf-8")
@@ -354,7 +406,7 @@ def _render_schema(specs: Sequence[dict[str, Any]], source_digest: str) -> bytes
             [
                 ("schema_version", SCHEMA_VERSION),
                 ("source_authority", SOURCE_AUTHORITY_REL.as_posix()),
-                ("source_snapshot_sha256", source_digest),
+                ("source_bundle_sha256", source_digest),
                 ("status", "derived_local_runtime_shim"),
                 ("cx_suite_loaded", False),
             ],
@@ -392,13 +444,8 @@ def _render_schema(specs: Sequence[dict[str, Any]], source_digest: str) -> bytes
         "\n",
         _toml_section(
             "consequence_analogy",
-            [
-                ("classification", "retrospective_from_commitment_and_outcome_receipts"),
-                ("demon", "ego-only potential maximization, coercion, or externalized cost"),
-                ("god", "durable mutual individual-and-collective potential increase under Justice"),
-                ("identity_or_authority_transfer", False),
-                ("tier", "[I] analogy; receipt facts retain independently validated tiers"),
-            ],
+            _consequence_predicate_values()
+            + [("identity_or_authority_transfer", False)],
         ),
     ]
     for level in ROW_PATHS:
@@ -449,7 +496,7 @@ source authority and must not be edited by hand.
 
 - Source: `{SOURCE_AUTHORITY_REL.as_posix()}/*.agent.yaml`
 - Compiler: `{GENERATOR_AUTHORITY_REL.as_posix()}`
-- Source snapshot: `{source_digest}`
+- Complete source-bundle SHA-256: `{source_digest}`
 - Schema: `{SCHEMA_VERSION}`
 - Loaded kernel: exactly seven direct `rows/0X_LX_*.toml` files.
 - Excluded: `rows/cx_suite/` is not loaded, hashed, or modified by this kernel.
@@ -459,16 +506,20 @@ L1–L4 are operational moves; only L4 may request mutation, and every mutating
 tool remains `always_ask` plus complete-AuthorizationEnvelope gated. L5–L7 are
 read-only Executive boundaries.
 
-Run the compiler with `--check` to obtain the aggregate preimage digest. A
-write requires that exact digest through `--expect-preimage`; the compiler
-stages every file, verifies the preimage twice, atomically replaces each file,
-and writes `DEPLOYMENT_MANIFEST.md` last.
+Run the compiler with `--check` to obtain the target preimage, complete
+source-bundle, and exact output digests. A write requires all three through
+`--expect-preimage`, `--expect-source-bundle`, and `--expect-output`; the
+compiler rechecks them under lock throughout staging/replacement, atomically
+replaces each file, and writes `DEPLOYMENT_MANIFEST.md` last.
 
-God/Demon language is not an agent identity. It survives only as an `[I]`
-retrospective analogy applied to independently tiered commitment and outcome
-receipts: ego-only or cost-externalizing consequences versus durable mutual
-individual-and-collective potential increases under the Justice envelope. It
-grants no authority.
+God/Demon language is not an agent identity. A consequence remains unclassified
+unless `q`, a world-issued `r`, the complete affected-bearer set, non-null
+receipted deltas for every bearer, and a retrospective Justice assessment are
+observed. `DemonBearing` then means a focal beneficiary gains while any bearer
+loses. `GodBearing` requires Justice, all bearers nonnegative, and at least one
+strict gain. All-zero stasis is preservative, not God-bearing. Strict syntropy
+is separate and stronger: both declared part and whole rise, with every other
+bearer nonnegative. These `[I]` predicates grant no authority.
 """
     return text.encode("utf-8")
 
@@ -505,13 +556,17 @@ domains and row placement.
   its own consequence.
 - L5–L7 advise, compress, and witness; they cannot mutate.
 
-## Receipt-based consequence analogy
+## Receipt-based consequence predicates
 
-Only after both receipts exist may the framework analogize a consequence as
-ego-polar (ego-only potential maximization, coercion, or externalized cost) or
-collective-polar (durable mutual individual-and-collective potential increase
-under Justice). This is `[I]` interpretation over independently validated and
-tiered receipt facts, never an agent identity or authorization.
+The realized class defaults to unclassified. Classification requires observed
+`q`, world-issued `r`, the complete materially affected bearer set, a non-null
+receipted delta for every bearer, and a recorded retrospective Justice
+assessment. `DemonBearing` is focal gain plus any bearer loss. `GodBearing`
+requires Justice, every bearer nonnegative, and at least one strict gain. Pure
+all-zero stasis is Justice-compliant/preservative, not God-bearing. Strict
+syntropy is a separate stronger class requiring both declared part and whole to
+rise while every other bearer remains nonnegative. These are `[I]` predicates
+over independently tiered receipt facts, never identity or authorization.
 """
     return text.encode("utf-8")
 
@@ -562,12 +617,14 @@ commitment receipt. The environment later returns a distinct outcome receipt.
 
 ## What the old analogy may still mean
 
-God/Demon is permitted only as a retrospective consequence analogy. With both
-receipts and visible payer, beneficiary, and option-cone effects, “demon-polar”
-may name ego-only maximization, coercion, or externalized cost; “god-polar” may
-name durable mutual individual-and-collective potential increase under Justice.
-The analogy is `[I]`, morally fallible, contestable, and never transfers identity,
-authority, competence, or permission to an agent.
+God/Demon is permitted only as a retrospective consequence predicate. Until
+`q`, world-issued `r`, the complete affected-bearer set, non-null deltas for all
+bearers, and a Justice assessment are observed, the result is unclassified.
+`DemonBearing` is focal gain plus any bearer loss. `GodBearing` requires Justice,
+all bearers nonnegative, and at least one strict gain. All-zero stasis is merely
+preservative. Strict syntropy is separate and stronger: both declared part and
+whole rise and every other bearer is nonnegative. These `[I]` predicates are
+contestable and never transfer identity, authority, competence, or permission.
 
 ## Source and scope
 
@@ -585,7 +642,7 @@ def _render_manifest(outputs: Mapping[Path, bytes], source_digest: str) -> bytes
         "",
         f"- Schema: `{SCHEMA_VERSION}`",
         f"- Source authority: `{SOURCE_AUTHORITY_REL.as_posix()}/*.agent.yaml`",
-        f"- Source snapshot SHA-256: `{source_digest}`",
+        f"- Complete source-bundle SHA-256: `{source_digest}`",
         f"- Generator: `{GENERATOR_AUTHORITY_REL.as_posix()}`",
         "- Scope: exactly 13 managed kernel files; this manifest excludes itself from its hash table.",
         "- Exclusion: `rows/cx_suite/` is neither loaded nor modified.",
@@ -600,8 +657,9 @@ def _render_manifest(outputs: Mapping[Path, bytes], source_digest: str) -> bytes
     lines.extend(
         [
             "",
-            "The God/Demon analogy, where retained for link compatibility, is a",
-            "receipt-based retrospective interpretation only. It is not configured identity,",
+            "God/Demon terms, where retained for link compatibility, are exact retrospective",
+            "Compass predicates over complete non-null bearer receipts and a recorded Justice",
+            "assessment. Otherwise the consequence is unclassified. They are not identity,",
             "authorization, ontology, or evidence that an agent is morally typed.",
             "",
         ]
@@ -613,11 +671,11 @@ def render_kernel(source_root: Path = SOURCE_ROOT) -> dict[Path, bytes]:
     """Return the complete deterministic thirteen-file kernel."""
 
     source_root = source_root.resolve()
-    source_digest_before, _ = _source_snapshot(source_root)
+    source_digest_before, _ = _source_bundle_snapshot(source_root)
     specs = load_validated_specs(source_root)
-    source_digest, source_hashes = _source_snapshot(source_root)
+    source_digest, source_hashes = _source_bundle_snapshot(source_root)
     if source_digest != source_digest_before:
-        raise SyncError("tracked source inputs changed while the kernel was rendering")
+        raise SyncError("tracked source/control bundle changed while the kernel was rendering")
     outputs: dict[Path, bytes] = {
         Path("README.md"): _render_readme(source_digest),
         Path("DISPATCH.md"): _render_dispatch(specs),
@@ -631,10 +689,32 @@ def render_kernel(source_root: Path = SOURCE_ROOT) -> dict[Path, bytes]:
     outputs[MANIFEST_PATH] = _render_manifest(outputs, source_digest)
     if set(outputs) != set(KERNEL_PATHS):
         raise AssertionError("renderer did not produce the exact thirteen-file kernel")
-    source_digest_after, _ = _source_snapshot(source_root)
+    source_digest_after, _ = _source_bundle_snapshot(source_root)
     if source_digest_after != source_digest:
-        raise SyncError("tracked source inputs changed while the kernel was rendering")
+        raise SyncError("tracked source/control bundle changed while the kernel was rendering")
     return {path: outputs[path] for path in WRITE_ORDER}
+
+
+def output_digest(outputs: Mapping[Path, bytes]) -> str:
+    """Digest the exact ordered thirteen-file deterministic output bundle."""
+
+    if set(outputs) != set(KERNEL_PATHS):
+        raise OutputDigestMismatch("output bundle must contain exactly thirteen managed paths")
+    digest = hashlib.sha256()
+    digest.update(SCHEMA_VERSION.encode("ascii") + b"\nOUTPUT-BUNDLE\n")
+    for relative_path in WRITE_ORDER:
+        data = outputs[relative_path]
+        if not isinstance(data, bytes):
+            raise OutputDigestMismatch(
+                f"output bundle value must be bytes: {relative_path.as_posix()}"
+            )
+        digest.update(
+            relative_path.as_posix().encode("utf-8")
+            + b"\0"
+            + _sha256(data).encode("ascii")
+            + b"\n"
+        )
+    return digest.hexdigest()
 
 
 def _assert_target_shape(target: Path) -> None:
@@ -735,15 +815,31 @@ def write_kernel(
     target: Path,
     outputs: Mapping[Path, bytes],
     expected_preimage: str,
+    expected_source_bundle: str,
+    expected_output: str,
+    source_root: Path = SOURCE_ROOT,
 ) -> str:
-    """Write a guarded kernel and return its resulting aggregate digest."""
+    """Write a three-digest-guarded kernel and return its postimage digest."""
 
     target = target.resolve(strict=False)
+    source_root = source_root.resolve()
     _assert_target_shape(target)
     if set(outputs) != set(KERNEL_PATHS):
         raise SyncError("write input must contain exactly the thirteen managed kernel paths")
     if not re.fullmatch(r"[0-9a-f]{64}", expected_preimage):
         raise PreimageMismatch("--expect-preimage must be one lowercase SHA-256 digest")
+    if not re.fullmatch(r"[0-9a-f]{64}", expected_source_bundle):
+        raise SourceBundleMismatch(
+            "--expect-source-bundle must be one lowercase SHA-256 digest"
+        )
+    if not re.fullmatch(r"[0-9a-f]{64}", expected_output):
+        raise OutputDigestMismatch("--expect-output must be one lowercase SHA-256 digest")
+    provided_output_digest = output_digest(outputs)
+    if not hmac.compare_digest(provided_output_digest, expected_output):
+        raise OutputDigestMismatch(
+            f"output mismatch before lock: expected {expected_output}, "
+            f"found {provided_output_digest}"
+        )
 
     target.parent.mkdir(parents=True, exist_ok=True)
     lock_path = target.parent / f".{target.name}.sync-root-agentz.lock"
@@ -757,6 +853,44 @@ def write_kernel(
     try:
         os.write(lock_fd, f"pid={os.getpid()}\n".encode("ascii"))
         os.fsync(lock_fd)
+
+        actual_source_bundle = source_bundle_digest(source_root)
+        if not hmac.compare_digest(actual_source_bundle, expected_source_bundle):
+            raise SourceBundleMismatch(
+                f"source bundle mismatch under lock: expected {expected_source_bundle}, "
+                f"found {actual_source_bundle}"
+            )
+
+        # Re-render from the locked source/control bundle. This prevents a caller
+        # from pairing an authorized source hash with unrelated output bytes.
+        locked_outputs = render_kernel(source_root)
+        locked_output_digest = output_digest(locked_outputs)
+        if not hmac.compare_digest(locked_output_digest, expected_output):
+            raise OutputDigestMismatch(
+                f"rendered output mismatch under lock: expected {expected_output}, "
+                f"found {locked_output_digest}"
+            )
+        if dict(outputs) != locked_outputs:
+            raise OutputDigestMismatch(
+                "provided output bytes differ from the locked deterministic render"
+            )
+        bound_outputs = dict(locked_outputs)
+
+        def assert_bound_digests(stage: str) -> None:
+            source_now = source_bundle_digest(source_root)
+            if not hmac.compare_digest(source_now, expected_source_bundle):
+                raise SourceBundleMismatch(
+                    f"source bundle changed {stage}: expected {expected_source_bundle}, "
+                    f"found {source_now}"
+                )
+            output_now = output_digest(bound_outputs)
+            if not hmac.compare_digest(output_now, expected_output):
+                raise OutputDigestMismatch(
+                    f"output bundle changed {stage}: expected {expected_output}, "
+                    f"found {output_now}"
+                )
+
+        assert_bound_digests("before target snapshot")
         before = snapshot_kernel(target)
         actual_preimage = snapshot_digest(before)
         if not hmac.compare_digest(actual_preimage, expected_preimage):
@@ -765,25 +899,29 @@ def write_kernel(
             )
 
         for rel in WRITE_ORDER:
-            staged[rel] = _stage_file(target / rel, outputs[rel])
+            staged[rel] = _stage_file(target / rel, bound_outputs[rel])
+            assert_bound_digests(f"while staging {rel.as_posix()}")
 
-        # Detect edits that occurred while output bytes were being staged.
+        # Detect target, source, or output edits that occurred while bytes staged.
         restaged_preimage = preimage_digest(target)
         if not hmac.compare_digest(restaged_preimage, expected_preimage):
             raise PreimageMismatch(
                 "preimage changed during staging: "
                 f"expected {expected_preimage}, found {restaged_preimage}"
             )
+        assert_bound_digests("after staging")
 
         try:
             for rel in WRITE_ORDER:
+                assert_bound_digests(f"before replacing {rel.as_posix()}")
                 if _read_managed_file(target / rel) != before[rel]:
                     raise PreimageMismatch(
                         f"managed preimage changed before replacement: {rel.as_posix()}"
                     )
                 _replace(staged[rel], target / rel)
                 replaced.append(rel)
-            post_write_drift = kernel_drift(target, outputs)
+            assert_bound_digests("after replacement")
+            post_write_drift = kernel_drift(target, bound_outputs)
             if post_write_drift:
                 raise SyncError("post-write verification failed: " + ", ".join(post_write_drift))
             for directory in {target, target / "rows"}:
@@ -795,7 +933,7 @@ def write_kernel(
             # bytes and report the manual-recovery boundary instead of erasing it.
             rollback_conflicts: list[str] = []
             for rel in reversed(replaced):
-                if _read_managed_file(target / rel) != outputs[rel]:
+                if _read_managed_file(target / rel) != bound_outputs[rel]:
                     rollback_conflicts.append(rel.as_posix())
                     continue
                 _restore_file(target / rel, before[rel])
@@ -830,7 +968,15 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser.add_argument("--target", type=Path)
     parser.add_argument(
         "--expect-preimage",
-        help="aggregate digest printed by a prior --check; mandatory with --write",
+        help="target digest printed by an immediate prior --check; mandatory with --write",
+    )
+    parser.add_argument(
+        "--expect-source-bundle",
+        help="complete source/control digest printed by the same --check; mandatory with --write",
+    )
+    parser.add_argument(
+        "--expect-output",
+        help="deterministic 13-file output digest printed by the same --check; mandatory with --write",
     )
     args = parser.parse_args(argv)
 
@@ -838,8 +984,12 @@ def main(argv: Sequence[str] | None = None) -> int:
         source_root = args.source_root.resolve()
         target = (args.target or _default_target(source_root)).expanduser().resolve(strict=False)
         outputs = render_kernel(source_root)
+        current_source_bundle = source_bundle_digest(source_root)
+        current_output = output_digest(outputs)
         current_preimage = preimage_digest(target)
         print(f"ROOT-AGENTZ-PREIMAGE-SHA256: {current_preimage}")
+        print(f"ROOT-AGENTZ-SOURCE-BUNDLE-SHA256: {current_source_bundle}")
+        print(f"ROOT-AGENTZ-OUTPUT-SHA256: {current_output}")
 
         if args.check:
             drift = kernel_drift(target, outputs)
@@ -850,9 +1000,28 @@ def main(argv: Sequence[str] | None = None) -> int:
             print("ROOT-AGENTZ-OK: deterministic 13-file kernel matches; cx_suite excluded")
             return 0
 
-        if not args.expect_preimage:
-            parser.error("--write requires --expect-preimage from a prior --check")
-        result = write_kernel(target, outputs, args.expect_preimage)
+        missing_expectations = [
+            option
+            for option, value in (
+                ("--expect-preimage", args.expect_preimage),
+                ("--expect-source-bundle", args.expect_source_bundle),
+                ("--expect-output", args.expect_output),
+            )
+            if not value
+        ]
+        if missing_expectations:
+            parser.error(
+                "--write requires all three values from one immediate --check: "
+                + ", ".join(missing_expectations)
+            )
+        result = write_kernel(
+            target,
+            outputs,
+            args.expect_preimage,
+            args.expect_source_bundle,
+            args.expect_output,
+            source_root,
+        )
         print(f"ROOT-AGENTZ-WRITTEN: 13 files; postimage {result}; cx_suite untouched")
         return 0
     except SyncError as exc:

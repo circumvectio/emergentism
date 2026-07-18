@@ -94,10 +94,9 @@ without buying it through symbol equivocation.
 ## Accountable authorization, encoded structurally
 
 Only **L4 (Arjuna)** can request mutation. Its `write`/`edit`/`bash` tools carry
-`permission_policy: {type: always_ask}`. The session goes idle and emits a
-`tool_use` event with `evaluated_permission: "ask"`; nothing lands until a human replies
-`user.tool_confirmation`. That is one runtime control, not a complete
-authorization envelope by itself:
+`permission_policy: {type: always_ask}`. A future hosted adapter must preserve
+the platform confirmation boundary, but confirmation is only one runtime control,
+not a complete authorization envelope by itself:
 
 > **[S]** The machine prepares a proposed action (drafts and stages the
 > smallest-defensible diff); the accountable principal authorizes or refuses the
@@ -133,6 +132,14 @@ topology, and whole-bundle hash. Comments and YAML key order do not change a
 semantic hash; a model, prompt, tool, permission, metadata, environment, schema,
 or topology change does.
 
+Consequential preflight also requires a local, ignored
+`local_state/trust_policy.json`. That policy contains only approved BIP-340
+x-only public keys and freshness limits—never private keys—and is not semantic
+canon. The operator must pass its reviewed semantic hash through
+`--expect-trust-policy-sha256`; replacing the ignored file therefore does not
+silently change who is trusted. If the policy, expected hash, trusted key,
+signature, freshness window, or `coincurve` verifier is absent, preflight refuses.
+
 `provision.sh` is now only an offline wrapper around `provision.py`; it contains
 no provider `create`, `update`, `archive`, or `delete` command. A future adapter
 must retrieve every complete remote payload, compare semantic hashes and pinned
@@ -148,14 +155,20 @@ receipt before this lane may leave `unprovisioned_x0`.
 ```bash
 python3 run_session.py \
   --request local_run_requests/request.json \
-  --deployment-receipt local_state/deployment.json
+  --deployment-receipt local_state/deployment.json \
+  --trust-policy local_state/trust_policy.json \
+  --expect-trust-policy-sha256 <reviewed-policy-sha256>
 ```
 
 Preflight requires the current bundle hash, exactly seven pinned remote agent
 IDs and versions, the exact L4 coordinator topology, a typed `RunRequest`, a
 positive four-dimensional budget, the blinded rival-evaluation contract, and a
 complete unexpired authorization envelope for every consequential or mutating
-request. `--execute` currently refuses with `REMOTE_ADAPTER_UNSUPPORTED` because
+request. The signed envelope binds one structured action plan; every canonical
+mutating `requestedPath` must be an exact member of the signed scope, and the
+same action-plan hash must survive into commitment and outcome receipts. The
+deployment receipt must carry a fresh BIP-340 attestation from the local trust
+policy. `--execute` currently refuses with `REMOTE_ADAPTER_UNSUPPORTED` because
 calls, tokens, wall time, and delegations are not yet all provider-observable
 and enforceable through an approved adapter.
 
@@ -166,17 +179,23 @@ receipt. Commitment must come from the trusted action wrapper; outcome must
 come later from the world/tool-result issuer with bearer observations. Missing
 observations remain null or pending.
 
-**The ensemble is a selected typed pipeline:**
-`L1 firewall → L2 explore → L3 rank → L4 prospective Justice check and authorized commitment`, with the Executive boundaries
-held as boundaries the work runs within (**L5** redesign only when L4 is structurally
-blocked; **L6** compress overgrowth; **L7** constitutional adjudication). You can run each
-caste as its own session, but the ensemble is now **wired as a coordinator**: at provision
-time both `provision.py` and `provision.sh` create the six non-L4 castes first, capture
-their ids, then create the L4 (Arjuna) executor with `multiagent: {type: "coordinator",
-agents: [<the six ids>, {type: "self"}]}` injected. So `run_session.py` opens a single L4
-session and Arjuna delegates down to the six — each delegation surfaces on the stream as a
-`session.thread_created` event. (Background on the platform shape:
-`shared/managed-agents-multiagent.md`.)
+**Prospective adapter topology.** The selected pipeline is
+`L1 firewall → L2 explore → L3 rank → L4 prospective Justice check and authorized
+commitment`, bounded by L5 architecture, L6 compression, and L7 constitutional
+witness. The semantic lock declares L4 as coordinator with the other six rows as
+delegates. No current script creates those hosted agents, opens an L4 session, or
+observes delegation events. A future pinned adapter may implement that topology
+only after it can retrieve and attest the complete remote state, enforce every
+budget and path boundary, and emit separately trusted receipts.
+
+Retrospective consequence labels are likewise typed rather than inferred from
+agent prose. Pending, partial, unobservable, bearer-incomplete, null-delta, or
+assessment-incomplete outcomes remain `unclassified`. A complete observed receipt
+computes `DemonBearing` as focal-beneficiary gain plus any affected-bearer loss;
+`GodBearing` requires Justice, no negative bearer, and at least one positive bearer.
+Justice-compliant all-zero stasis is preservative, while strict syntropy separately
+requires both the focal individual and declared whole to rise with every other
+bearer nonnegative.
 
 > **Parity boundary.** The YAMLs are candidate hosted counterparts to the local
 > routing rows. They are not hosted agents until a remote-verifying deployment
