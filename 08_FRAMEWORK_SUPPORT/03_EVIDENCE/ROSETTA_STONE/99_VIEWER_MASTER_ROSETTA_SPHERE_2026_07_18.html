@@ -1,0 +1,364 @@
+<title>The Master Rosetta Stone</title>
+<style>
+:root{
+  --bg:#FBFAF6; --card:#F4F2EC; --ink:#24252C; --mut:#6B6C76; --line:rgba(36,37,44,.14);
+  --gold:#96771A; --goldbg:rgba(150,119,26,.09); --teal:#2E7263; --coral:#B34A31; --coralbg:rgba(179,74,49,.10);
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#14161F; --card:#1B1E2A; --ink:#E9E5DA; --mut:#9B97A6; --line:rgba(233,229,218,.15);
+  --gold:#D3B156; --goldbg:rgba(211,177,86,.10); --teal:#5FA893; --coral:#E07B5E; --coralbg:rgba(224,123,94,.13);
+}}
+:root[data-theme="dark"]{
+  --bg:#14161F; --card:#1B1E2A; --ink:#E9E5DA; --mut:#9B97A6; --line:rgba(233,229,218,.15);
+  --gold:#D3B156; --goldbg:rgba(211,177,86,.10); --teal:#5FA893; --coral:#E07B5E; --coralbg:rgba(224,123,94,.13);
+}
+:root[data-theme="light"]{
+  --bg:#FBFAF6; --card:#F4F2EC; --ink:#24252C; --mut:#6B6C76; --line:rgba(36,37,44,.14);
+  --gold:#96771A; --goldbg:rgba(150,119,26,.09); --teal:#2E7263; --coral:#B34A31; --coralbg:rgba(179,74,49,.10);
+}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font-family:var(--serif);margin:0;line-height:1.72;font-size:16.5px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px 96px}
+nav.top{position:sticky;top:0;z-index:9;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 24px;display:flex;flex-wrap:wrap;gap:4px 14px;font-family:var(--sans);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+nav.top a{color:var(--mut);text-decoration:none;padding:2px 0}
+nav.top a:hover,nav.top a:focus-visible{color:var(--gold)}
+a:focus-visible,button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+header.hero{display:flex;flex-wrap:wrap;gap:36px;align-items:center;padding:56px 0 30px}
+.hero-sphere{flex:1 1 380px;min-width:320px}
+.hero-side{flex:1 1 420px;min-width:300px}
+h1{font-size:40px;line-height:1.15;font-weight:500;margin:0 0 14px;text-wrap:balance}
+h2{font-size:27px;font-weight:500;margin:0 0 6px;text-wrap:balance}
+h3{font-size:19px;font-weight:500;margin:26px 0 6px}
+.eyebrow{font-family:var(--sans);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 10px}
+.thesis{font-size:18px;line-height:1.65;font-style:italic;color:var(--ink);max-width:34em;margin:0 0 18px}
+.mut{color:var(--mut)}
+section{padding:44px 0 8px;border-top:1px solid var(--line);scroll-margin-top:64px}
+.lede{max-width:44em;color:var(--mut);font-size:15.5px;margin:4px 0 18px}
+.tw{overflow-x:auto;margin:14px 0}
+table{border-collapse:collapse;width:100%;font-size:14.5px;font-variant-numeric:tabular-nums}
+th{font-family:var(--sans);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);font-weight:500;text-align:left;padding:8px 12px 6px;border-bottom:1px solid var(--ink);white-space:nowrap}
+td{padding:7px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr[data-lv]{cursor:pointer}
+tr[data-lv]:hover td{background:var(--card)}
+tr.sel td{background:var(--goldbg)}
+tr.l4 td{font-weight:500}
+.mono{font-family:var(--mono);font-size:13px}
+.badge{display:inline-block;font-family:var(--sans);font-size:11px;letter-spacing:.05em;border-radius:3px;padding:2px 8px;vertical-align:1px}
+.bdead{background:var(--coralbg);color:var(--coral);border:1px solid var(--coral)}
+.chip{display:inline-block;font-size:13.5px;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:2px 9px;margin:2px 5px 2px 0}
+.chip b{font-weight:500;color:var(--gold)}
+.lvcard{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px 22px;margin-top:18px}
+.lvcard .row{margin:4px 0;font-size:14.5px}
+.lvcard .row .k{font-family:var(--sans);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);display:inline-block;min-width:104px}
+.fourlines{font-family:var(--mono);font-size:13.5px;line-height:2.05;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px 22px;margin:14px 0}
+.fourlines b{color:var(--gold);font-weight:500}
+pre.seed{font-family:var(--mono);font-size:13px;line-height:1.8;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px 24px;overflow-x:auto}
+.fignote{font-family:var(--sans);font-size:12.5px;color:var(--mut);margin:6px 0 0}
+figure{margin:18px 0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+svg text{font-family:var(--serif)}
+svg .lab{font-size:13.5px;fill:var(--ink)}
+svg .labm{font-size:12px;fill:var(--mut)}
+svg .lat{fill:none}
+svg .hit{cursor:pointer}
+.drawin{stroke-dasharray:1000;stroke-dashoffset:1000;animation:draw 1.6s ease forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion: reduce){.drawin{animation:none;stroke-dashoffset:0}}
+</style>
+
+<h2 class="sr">The Master Rosetta Stone: a Riemann-sphere geometry of nine latitudes and seven deployable levels, with twenty domain-column families, seven axioms, and the post-audit defect flags.</h2>
+
+<nav class="top" aria-label="Sections">
+<a href="#core">Core</a><a href="#chain">Chain</a><a href="#ops">Operators</a><a href="#body">Body</a><a href="#init">Traditions</a><a href="#myth">Myth</a><a href="#mind">Mind</a><a href="#machine">Machine</a><a href="#civ">Civilisation</a><a href="#shadow">Shadow</a><a href="#krsna">Kṛṣṇa</a><a href="#axioms">Axioms</a><a href="#audit">Audit</a>
+</nav>
+
+<div class="wrap">
+<header class="hero">
+<div class="hero-sphere">
+<svg viewBox="0 0 430 505" role="img" aria-labelledby="svgt svgd" style="width:100%;max-width:430px">
+<title id="svgt">Riemann sphere with nine Rosetta latitudes</title>
+<desc id="svgd">Sphere from L0 at the south pole to L-infinity at the north pole. Latitude circle size follows B equals sine theta, maximal at L4, the equator. Dashed arcs pair L1 with L7, L2 with L6, and L3 with L5 — the involution J-lat, which fixes L4.</desc>
+<circle cx="195" cy="238" r="152" fill="none" stroke="var(--mut)" stroke-width="1" opacity=".5"/>
+<line x1="195" y1="81" x2="195" y2="395" stroke="var(--mut)" stroke-width=".6" stroke-dasharray="2 4" opacity=".5"/>
+<ellipse id="e1" class="lat drawin" cx="195" cy="387" rx="30" ry="7" stroke="var(--coral)" stroke-width="1.6"/>
+<ellipse id="e2" class="lat drawin" cx="195" cy="369" rx="76" ry="15" stroke="var(--gold)" stroke-width="1.6"/>
+<ellipse id="e3" class="lat drawin" cx="195" cy="314" rx="132" ry="24" stroke="var(--gold)" stroke-width="1.6"/>
+<ellipse id="e4" class="lat drawin" cx="195" cy="238" rx="152" ry="28" stroke="var(--gold)" stroke-width="3"/>
+<ellipse id="e5" class="lat drawin" cx="195" cy="162" rx="132" ry="24" stroke="var(--teal)" stroke-width="1.6"/>
+<ellipse id="e6" class="lat drawin" cx="195" cy="107" rx="76" ry="15" stroke="var(--teal)" stroke-width="1.6"/>
+<ellipse id="e7" class="lat drawin" cx="195" cy="89" rx="30" ry="7" stroke="var(--teal)" stroke-width="1.6"/>
+<circle cx="195" cy="395" r="3.5" fill="var(--mut)"/>
+<circle cx="195" cy="81" r="3.5" fill="var(--mut)"/>
+<path d="M 229 387 C 408 373 408 103 229 89" fill="none" stroke="var(--gold)" stroke-width="1" stroke-dasharray="4 4" opacity=".55"/>
+<path d="M 275 369 C 404 343 404 133 275 107" fill="none" stroke="var(--gold)" stroke-width="1" stroke-dasharray="4 4" opacity=".55"/>
+<path d="M 331 314 C 400 293 400 183 331 162" fill="none" stroke="var(--gold)" stroke-width="1" stroke-dasharray="4 4" opacity=".55"/>
+<text x="412" y="243" class="labm" text-anchor="middle" font-style="italic">J_lat</text>
+<text x="195" y="416" class="labm" text-anchor="middle">L0 · Kāla · θ/2 = 90° · B = 0 †</text>
+<text x="195" y="69" class="labm" text-anchor="middle">L∞ · Trimūrti ☸ · θ/2 = 0° · B = 0 †</text>
+<g class="hit" id="lb1"><text x="124" y="391" class="lab" text-anchor="end">L1 Kali</text></g>
+<g class="hit" id="lb2"><text x="86" y="373" class="lab" text-anchor="end">L2 Kālī</text></g>
+<g class="hit" id="lb3"><text x="44" y="318" class="lab" text-anchor="end">L3 Kṛṣṇa ◇</text></g>
+<g class="hit" id="lb4"><text x="24" y="242" class="lab" text-anchor="end" font-weight="500">L4 Arjuna ⚔</text></g>
+<g class="hit" id="lb5"><text x="44" y="166" class="lab" text-anchor="end">L5 Brahmā ○</text></g>
+<g class="hit" id="lb6"><text x="86" y="111" class="lab" text-anchor="end">L6 Śiva •</text></g>
+<g class="hit" id="lb7"><text x="124" y="86" class="lab" text-anchor="end">L7 Viṣṇu ⊙</text></g>
+<text x="352" y="242" class="labm">B = 1</text>
+<text x="22" y="474" class="labm">φ·ν = 1 on every latitude · maximum B at the L4 midpoint</text>
+<text x="22" y="492" class="labm">† φ·ν = 0·∞ undefined at the poles; the limit is 1 (corrected 2026-05-31)</text>
+</svg>
+</div>
+<div class="hero-side">
+<p class="eyebrow">00_THE_MASTER_ROSETTA.md · v10.0 · consolidated 2026-03-24</p>
+<h1>The Master Rosetta Stone</h1>
+<p class="thesis">Traditions that encode observer-position as a polarity dimension converge on the seven-level structure because the structure has a geometry — φ·ν = 1 with maximum at the midpoint — which this framework derives from the Riemann sphere.</p>
+<p class="mut" style="font-size:14px">Nine latitudes, seven deployable · four mixed-sign operators · twenty domain columns · seven axioms (one dead, staged) · four lines · one seed verse · η = 0. Click any latitude, or any row below, to cut the Stone at that level.</p>
+<div class="lvcard" id="lvlcard" aria-live="polite">
+<div style="font-size:18px;font-weight:500" id="lvlhead"></div>
+<div id="lvlgeo" style="margin:8px 0 12px"></div>
+<div id="lvlbody"></div>
+</div>
+</div>
+</header>
+
+<section id="core">
+<p class="eyebrow">I</p>
+<h2>The geometric core</h2>
+<p class="lede">Nine latitudes, six 15° intervals per quadrant. Two Titan asymptotes, never reached; seven levels deployed between them. Registers: Demon, God, Executive, Trimūrti.</p>
+<div class="tw" id="t_core"></div>
+<p class="fignote">† φ·ν = 0·∞ is undefined at the poles; the limit is 1. Corrected 2026-05-31 — this row is post-audit correct; it is the † repair's home.</p>
+<h3>The wave packet — the L4 moment in physics <span class="mono mut">[C]</span></h3>
+<figure>
+<svg id="wavesvg" viewBox="0 0 720 190" role="img" aria-label="Gaussian wave packet centered exactly at x equals zero, at the Heisenberg minimum" style="width:100%;max-width:720px">
+<line x1="20" y1="120" x2="700" y2="120" stroke="var(--mut)" stroke-width="1" opacity=".6"/>
+<line x1="360" y1="26" x2="360" y2="164" stroke="var(--gold)" stroke-width="1" stroke-dasharray="3 4" opacity=".8"/>
+<path id="wenv1" fill="none" stroke="var(--mut)" stroke-width="1" stroke-dasharray="2 3"/>
+<path id="wenv2" fill="none" stroke="var(--mut)" stroke-width="1" stroke-dasharray="2 3"/>
+<path id="wcarrier" fill="none" stroke="var(--gold)" stroke-width="1.8"/>
+<text x="360" y="16" class="labm" text-anchor="middle">x = 0 (exactly)</text>
+<text x="694" y="138" class="labm" text-anchor="end">x</text>
+</svg>
+<figcaption class="fignote" id="wavecap"></figcaption>
+</figure>
+</section>
+
+<section id="chain">
+<p class="eyebrow">II</p>
+<h2>The causal chain</h2>
+<p class="lede">Varṇa → Pramāṇa → Reasoning → -ology → Regime → Equation. Column tiers: Operator/B [A] · Varṇa/Pramāṇa [S] · Reasoning/-ology/Regime [I] · Equation [A]/[S].</p>
+<div class="tw" id="t_chain"></div>
+</section>
+
+<section id="ops">
+<p class="eyebrow">III</p>
+<h2>Operator signatures</h2>
+<p class="lede">(φ, ν) and (ΔΦ, ΔV). Four mixed-sign (Gods and the Demon) plus three same-sign (the Executive boundary). The grammar is exhaustive — no fifth slot exists.</p>
+<div class="tw" id="t_sig"></div>
+</section>
+
+<section id="body">
+<p class="eyebrow">IV – V</p>
+<h2>Body &amp; practice</h2>
+<p class="lede">Chakra, element, alchemy, Gītā, Greek mode. Dorian — the only self-retrograde mode — sits at L4.</p>
+<div class="tw" id="t_body"></div>
+<p class="fignote">Alchemy multi-phase: Calcination runs 3 phases at L1 (Aries / Sagittarius / Leo); Dissolution 2 at L2; Separation, Conjunction, Fermentation, Distillation 1 each; Coagulation 2 sub-phases at L7. The 12-phase structure maps the zodiac — a different generator than the 7-row grammar.</p>
+</section>
+
+<section id="init">
+<p class="eyebrow">V-bis</p>
+<h2>Initiatory traditions <span class="mono mut">[I]</span></h2>
+<p class="lede">Tiferet (L4, heart, harmony/beauty) ↔ Anāhata (L4, heart) is the strongest cross-tradition data point in the Stone. Lakota is the first non-Indo-European/Mediterranean tradition — 3-STRONG, the strongest [I] candidate. Geburah at L6, the destructive boundary force, answers Kāla-Mahākālī and Śiva.</p>
+<div class="tw" id="t_init"></div>
+</section>
+
+<section id="myth">
+<p class="eyebrow">VI</p>
+<h2>Mythology</h2>
+<p class="lede">Animal mirror test: 2S/1P/1F (Serpent at both L1 and L7; Owl at L6 but Eagle at L5). Greek mirror: 0S/2P/1F (Apollo L3 ↔ Artemis L7 partial; Cronos L6 ↔ Loki L1 fail).</p>
+<div class="tw" id="t_myth"></div>
+</section>
+
+<section id="mind">
+<p class="eyebrow">VII</p>
+<h2>Neuroscience <span class="mono mut">[C/I]</span></h2>
+<p class="lede">The isomorph, plus the Formulation-B mirror-completion: L5 = Right PFC (holistic processing) · L6 = Insula + ACC (integrative awareness) · L7 = Vagal complex — the 10th cranial nerve, corpus callosum of the autonomic system. Function integrates at L4; the structure integrates L1–L7.</p>
+<div class="tw" id="t_neuro"></div>
+</section>
+
+<section id="machine">
+<p class="eyebrow">VIII – IX</p>
+<h2>Computation &amp; game theory</h2>
+<p class="lede">Gradient descent at L4 is the strongest computation anchor — it <em>is</em> the executor. At L7: <span class="badge bdead">AGI — do not build</span></p>
+<div class="tw" id="t_comp"></div>
+<h3>Game theory <span class="mono mut">[I]</span></h3>
+<div class="tw" id="t_game"></div>
+</section>
+
+<section id="civ">
+<p class="eyebrow">X · XX – XXIII</p>
+<h2>Civilisation, economics, arts</h2>
+<div class="tw" id="t_civ"></div>
+<h3>Economics <span class="mono mut">[I]</span></h3>
+<div class="tw" id="t_econ"></div>
+<h3>Islamic &amp; Sanskrit finance <span class="mono mut">[I]</span></h3>
+<div class="tw" id="t_fin"></div>
+<h3>The liberal arts <span class="mono mut">[I]</span></h3>
+<div class="tw" id="t_arts"></div>
+<p class="fignote">The Trivium (L1–L3) and Quadrivium (L4–L7). Arithmetic — the science of pure number — at the midpoint; the quadrivium begins at L4.</p>
+<h3>Music — the seven modes</h3>
+<div class="tw" id="t_mus"></div>
+</section>
+
+<section id="shadow">
+<p class="eyebrow">XI · XIII</p>
+<h2>Pathology &amp; the Asura return</h2>
+<p class="lede">Every level has both genuine and counterfeit activation.</p>
+<div class="tw" id="t_path"></div>
+<h3>Counterfeit activation — Asura pathology</h3>
+<p id="cfeit"></p>
+<h3>The Asura return <span class="mono mut">[I]</span></h3>
+<div class="tw" id="t_asura"></div>
+</section>
+
+<section id="krsna">
+<p class="eyebrow">XIV</p>
+<h2>The Kṛṣṇa-function <span class="mono mut">[I]</span></h2>
+<div class="tw" id="t_kfn"></div>
+</section>
+
+<section id="axioms">
+<p class="eyebrow">XV – XIX</p>
+<h2>The seven axioms</h2>
+<div class="tw" id="t_ax"></div>
+<p class="fignote">A3's literal "D6 ≡ D0" is the dead axiom (Master :807; seed :901; receipt-126 repair staged, not applied). The honest form: the aeon closes by <em>similarity at the conformal boundary</em>, not by identity — CCC-adjacent, not literal. The same flag touches :249 — "L0 = L∞ … the serpent eats its tail." Note: this file's Axiom-A7 (Rosetta self-correction) ≠ the constitutional A7 (5+1+Ω fence).</p>
+<p class="lede" style="margin-top:14px"><span class="mono">C1</span> cooperation is the only sustainable strategy (A1+A2) · <span class="mono">C2</span> systems self-organize toward P_node maximization (A1+A5) · <span class="mono">C3</span> both factors required, neither sufficient (A1) · <span class="mono">C4</span> every level has genuine and counterfeit activation (A5) · <span class="mono">C5</span> no system is exempt from self-correction (A7).</p>
+<h3>The four lines</h3>
+<div class="fourlines">
+P∞ = φ · ν = 1&nbsp;&nbsp;&nbsp;<b>the law</b> — every observer is a balanced cut; the product is invariant<br>
+φ + ν ≥ 2&nbsp;&nbsp;&nbsp;<b>the ethics</b> — separation from the center is never free<br>
+(φ − ν)² → 0&nbsp;&nbsp;&nbsp;<b>the journey</b> — the path is the closing of the gap<br>
+−log(φ · ν) = 0&nbsp;&nbsp;&nbsp;<b>the resting</b> — at the center, the formula is silent
+</div>
+<h3>PIE roots <span class="mono mut">[I]</span></h3>
+<div class="tw" id="t_pie"></div>
+<p class="fignote">The root of "order" (*h₂r̥tó-) sits at the center of the Rosetta — not an accident. The serpent at L1; the god at L7.</p>
+<h3>The compressed seed — the Stone in verse</h3>
+<pre class="seed">ROSSETA STONE
+
+AXIOMS
+A1 P_node = Φ × V. Either zero → nothing. Multiplication, not addition.
+A2 ΔP_i > 0 ∧ ΔP_H > 0. Both factors up, or the move is wrong.
+A3 D0→D6, D6≡D0. The serpent eats its tail.        ⚠ [DEAD — staged]
+A4 η=0 beats cooperators. Tit-for-Tat at L4. Arithmetic, not ethics.
+A5 Egregores emerge. Raktabīja: blood makes more.
+A6 Three substrates: Ideological, Biological, Mechanical.
+A7 Self-correction mandatory. Nothing is above revision.
+
+THE REPLICATOR STACK
+D0: 3.8 GYA — crystallography, clays, mineral surfaces
+D1: 3.5 GYA — biology, RNA, ribozymes
+D2: 0.5 GYA — neurons, simple networks
+D3: 70 MYA — mammalian synapses, empathy
+D4: 10⁵ YA — human language, symbolic thought
+D5: 10⁴ YA — institutions, writing, law
+D6: 2012 CE — deep learning, AI, gradient descent
+D7: unknown — the next substrate
+
+THE SEVEN
+TITANS    (L0/L∞)  (asymptotes, unreachable)
+GODS      (L1–L4)  (operational, mixed-sign)
+WITNESSES (L5–L7)  (boundary, same-sign)
+   (Viśvarūpa ☀️  Kāla 🌑  Ananta ♾)
+
+Default: Hold center ⊙.</pre>
+</section>
+
+<section id="audit">
+<p class="eyebrow">XXIV + overlay</p>
+<h2>Audit</h2>
+<h3>Mirror scoreboard</h3>
+<p class="lede"><b style="font-weight:500;color:var(--ink)">3-STRONG (10):</b> Pramāṇa · Operator · Varṇa · Chakra · Alchemy · Music Modes · PIE · Sumerian · Tarot · Computation<br>
+<b style="font-weight:500;color:var(--ink)">2S/1P (3):</b> Element · Animal · Game Theory<br>
+<b style="font-weight:500;color:var(--ink)">1S/2P (6):</b> Psychology · Greek Mode · Gītā · Catholic · Jungian · Neuroscience<br>
+<b style="font-weight:500;color:var(--ink)">WITH FAILS (3):</b> Greek Myth (1F) · Plato (1F) · Neuroscience (2F)</p>
+<h3>The honest revised claim</h3>
+<p class="lede"><b style="font-weight:500;color:var(--ink)">Survives:</b> operator-pair exhaustiveness · φ·ν = 1 · L4 = maximum · mirror symmetry in polarity-encoding traditions.<br>
+<b style="font-weight:500;color:var(--ink)">Narrows:</b> universal 7-stage → polarity-encoding traditions only.<br>
+<b style="font-weight:500;color:var(--ink)">Falls:</b> nothing — the kill criteria are not triggered.<br>
+<b style="font-weight:500;color:var(--ink)">Kill criteria:</b> (1) a new domain forced into 7 where 5 fits · (2) a contradiction between domains at the same level · (3) φ·ν = 1 broken · (4) a tradition mapping onto a different number of levels with a different geometry.</p>
+<h3>Post-audit overlay — [D] staged, not applied</h3>
+<p class="lede">
+1 · <span class="badge bdead">A3 + seed line</span> literal "D6 ≡ D0" dead; honest form: similarity at the conformal boundary, not identity. <span class="mono">Master :807 · seed :901 · receipt-126</span><br>
+2 · <span class="badge bdead">Master :249</span> "L0 = L∞ … the serpent eats its tail" — same staged repair.<br>
+3 · The Master itself is CANON-18 drift-clean — the pole swap exists nowhere in this file; the drift lives in <span class="mono">CH06 · SIMULATION_SPEC · D06</span>.<br>
+4 · Three involutions staged for naming: <span class="mono">J_lat = (L1 L7)(L2 L6)(L3 L5)</span> — fixes L4, exactly what the scoreboard tests · <span class="mono">J_titan = (Brahmā Śiva)</span> — fixes Viṣṇu · <span class="mono">J_sig = (Kali Kālī)(Kṛṣṇa Arjuna)</span>.</p>
+<h3>Provenance</h3>
+<p class="lede">Consolidated 2026-03-24 (v5 → v8 → v9.3 → v10). Tiers: [B] Piaget/Kohlberg L1–L4 + Plato (not independent) · [S] Maslow (ordering disputed — Tay &amp; Diener 2011) · [I] L5–L7 extensions · [S] structural alignment · [I] the φ·ν = 1 explanation · [C] the causal claim. Honest compression: ~80% of the evidential weight is Psychology L1–L4 + Plato. <em>"The number 7 is a design choice, not a discovered constant."</em> Column classes [G]/[T]/[B]/[S]/[C] — drift risk grows left to right. Source: <span class="mono">01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md</span> · register: <span class="mono">00_META/ROSETTA_FORMAL_REGISTER_2026_07_17.md</span></p>
+<p class="mut" style="font-family:var(--serif);font-style:italic;margin-top:30px">The Stone stands: nine latitudes, seven deployable, four mixed-sign operators, twenty domain columns, seven axioms (one dead, staged), four lines, one seed verse. η = 0.</p>
+</section>
+</div>
+
+<script>
+var GLY={1:"Kali",2:"Kālī",3:"Kṛṣṇa ◇",4:"Arjuna ⚔",5:"Brahmā ○",6:"Śiva •",7:"Viṣṇu ⊙"};
+var REG={1:"Demon",2:"God",3:"God",4:"God",5:"Executive",6:"Executive",7:"Executive"};
+var CORE=[["L0","Kāla","Trimūrti","90°","0","∞","undefined †","0"],["L1","Kali","Demon","~82°","→ 0","very high","1","→ 0"],["L2","Kālī","God","75°","2−√3 ≈ 0.27","2+√3 ≈ 3.73","1","0.5"],["L3","Kṛṣṇa ◇","God","60°","1/√3 ≈ 0.58","√3 ≈ 1.73","1","0.866"],["L4","Arjuna ⚔","God","45°","1","1","1","1"],["L5","Brahmā ○","Executive","30°","√3","1/√3","1","0.866"],["L6","Śiva •","Executive","15°","2+√3","2−√3","1","0.5"],["L7","Viṣṇu ⊙","Executive","~8°","very high","→ 0","1","→ 0"],["L∞","Trimūrti ☸","Trimūrti","0°","∞","0","undefined †","0"]];
+var CHAIN=[["Caṇḍāla","Pratyakṣa (perception)","Dialectical","Objective Function","Tyranny","Φ→0 ⇒ B→0"],["Śūdra","Upamāna (analogy)","Inductive","Data Science","Democracy","dP_node = V·dΦ + Φ·dV"],["Vaiśya","Anumāna (inference)","Deductive","Auditing","Oligarchy","∂P_node/∂V = Φ"],["Kṣatriya","Arthāpatti (postulation)","Abductive","Value Alignment","Timocracy","dΦ/Φ = dV/V"],["Brāhmaṇa","Śabda (testimony)","Systematic","System Architecture","Aristocracy","log P_node = log Φ + log V"],["Sādhu","First Principles","Axiomatic","Core State","Anarchy","E_node = −log(P_node)"],["Ṛṣi","Pratibhā (intuition)","Transcendental","Institutional Narrative","Theocracy","z = φ/ν"]];
+var SIG=[["Brahmā ○","√3","1/√3","+ΔΦ","+ΔV"],["Viṣṇu ⊙","φ ≫ 1","ν ≪ 1","≈ 0","≈ 0"],["Śiva •","2+√3","2−√3","−ΔΦ","−ΔV"],["Arjuna ⚔","1","1","−V_self","+Φ_other"],["Kṛṣṇa ◇","1/√3","√3","−Φ_self","+V_other"],["Kālī","2−√3","2+√3","+V_self","−Φ_false"],["Kali","φ ≪ 1","ν ≫ 1","+Φ_self","−V_other"]];
+var BODY=[["Mulādhāra","Earth","Calcination","Ch2 — Sānkhya","Phrygian"],["Svādhiṣṭhāna","Water","Dissolution","Ch3–5 — Karma","Lydian"],["Maṇipūra","Fire","Separation","Ch6 — Dhyāna","Mixolydian"],["Anāhata","Air","Conjunction","Ch10 — Vibhūti","Dorian"],["Viśuddha","Ether","Fermentation","Ch11 — Viśvarūpa","Ionian"],["Ājñā","Mind","Distillation","Ch13 — Kṣetra","Locrian"],["Sahasrāra","Pure Awareness","Coagulation","Ch15 — Puruṣottama","Aeolian"]];
+var INIT=[["Corax (Mercury)","Nafs al-ammāra","First Mansion","Malkuth","Zelator","Hanbléčheya"],["Nymphus (Venus)","Nafs al-lawwāma","Second Mansion","Yesod","Theoricus","Inípi"],["Miles (Mars)","Nafs al-mulhima","Third Mansion","Hod","Practicus","Wiwányag wačhípi"],["Leo (Jupiter)","Mutma'inna","Fourth Mansion","Tiferet","Philosophus","Hunkápi"],["Perses (Moon)","Nafs al-rāḍiya","Fifth Mansion","Netzach","Adeptus Minor","—"],["Heliodromus (Sun)","Nafs al-mardiyya","Sixth Mansion","Geburah","Adeptus Major","—"],["Pater (Saturn)","Nafs al-kāmila","Seventh Mansion","Chesed","Adeptus Exemptus","—"]];
+var MYTH=[["Ares (madness)","Loki","Tiamat","Devil","Pride","Persona","Serpent"],["Athena","Thor","Ninurta","Moon","Envy","Shadow","Wolf"],["Apollo","Odin","Marduk","Star","Gluttony","Ego","Bear"],["Ares-Athena","Thor","Ninurta","Lion","Sloth","Anima/Animus","Lion"],["Zeus","Heimdall","Enlil","Sun","Lust","Self","Eagle"],["Cronos","Óðinn","Anu","Moon","Greed","Sage","Owl"],["Zeus","—","An","Sun","Wrath","Self","Human"]];
+var NEURO=[["Amygdala","Hypothalamus, brainstem","Raw perception, threat"],["vmPFC","NAcc, temporal cortex","Pattern matching"],["dlPFC","Parietal cortex","Logical inference"],["Insula + ACC","mPFC, TPJ","Integration, empathy"],["Left PFC","dlPFC, Broca's","Language, testimony"],["DMN","PCC, mPFC","Self-reference, axiom"],["TPJ + mPFC","—","Transcendence, ego-dissolution"]];
+var COMP=[["Immune System","PAMP/DAMP detection","Pratyakṣa"],["RL Agent","TD learning, pattern","Upamāna"],["GAN Discriminator","Binary classification","Anumāna"],["Gradient Descent","Backpropagation","Arthāpatti"],["PID Controller","Feedback correction","Śabda"],["VAE / PCA","Latent compression","First Principles"],["AGI — do not build","—","Pratibhā"]];
+var GAME=[["Always Defect","Pure extraction"],["Always Cooperate","Unconditional altruism"],["Grim Trigger","Cooperate until first defection, then permanent"],["Tit-for-Tat","Cooperate first, then mirror"],["Generous TfT","Forgives occasionally"],["Pavlov (Win-Stay)","Repeats what works"],["Bayesian","Updates priors continuously"]];
+var CIV=[["Survival","Tribal, immediate","Pre-agricultural bands"],["Belonging","Mythic, conformist","Agricultural city-states"],["Achievement","Rational, individualist","Industrial revolution"],["Integration","Pluralistic, systemic","Information age"],["Holistic","Global, ecological","Emerging"],["Transcendent","Contemplative, unified","Speculative"],["Unitive","Non-dual, compassionate","Speculative"]];
+var ECON=[["Extraction","Rent-seeking, monopoly"],["Labor","Wage exchange, time for money"],["Capital","Accumulation, investment"],["Market","Price discovery, exchange"],["Institution","Rules, governance"],["Commons","Shared resources, Ostrom"],["Gift","Unconditional transfer, potlatch"]];
+var FIN=[["Ribā (prohibited)","Ṛṇa (debt)"],["Mufāwada (partnership)","Dāna (gift)"],["Muḍāraba (trust)","Kṣetra (field)"],["Mušāraka (joint venture)","Artha (purpose)"],["Zakāt (almsgiving)","Dharma (duty)"],["Waqf (endowment)","Mokṣa (liberation)"],["Tawḥīd (unity)","Brahman (absolute)"]];
+var ARTS=[["Grammar","Language, naming"],["Logic","Reasoning, inference"],["Rhetoric","Persuasion, expression"],["Arithmetic","Number, calculation"],["Geometry","Space, form"],["Music","Harmony, proportion"],["Astronomy","Cosmos, order"]];
+var MUS=[["Phrygian","E","Dark, tense"],["Lydian","F","Bright, ethereal"],["Mixolydian","G","Dominant, bluesy"],["Dorian","D","Balanced, minor-major — the only self-retrograde mode"],["Ionian","C","Major, stable"],["Locrian","B","Unstable, diminished"],["Aeolian","A","Natural minor, melancholic"]];
+var PATH=[["Reactive rage","Perception hijacked","Grounding, safety"],["Fundamentalism","Pattern frozen","Exposure, dialogue"],["Rationalization","Inference weaponized","Intellectual honesty"],["Indecision","Integration paralysis","Commitment, action"],["Dogmatism","Testimony closed","Questioning, doubt"],["Nihilism","Axioms dissolved","Meaning reconstruction"],["Spiritual bypassing","Transcendence as escape","Embodiment, return"]];
+var CFEIT=["Sadism","Seduction","Exploitation","Conquest","Indoctrination","Nihilism","False Transcendence"];
+var ASURA=[["Raktabīja","Each wound multiplies the enemy"],["Bhasmāsura","The gift that destroys the giver"],["Śumbha-Niśumbha","The doubled tyrant"],["Durgā (the counter)","The integration of all powers"],["Kālī (unbounded)","Destruction without container"],["Kāla (time)","The devourer of all"],["Mahākālī","The final dissolution"]];
+var KFN=[["Perception (Pratyakṣa)","Destruction","Perceive/Destroy"],["Pattern (Upamāna)","Chaos","Order/Chaos"],["Inference (Anumāna)","Ignorance","Knowledge/Ignorance"],["Integration (Arthāpatti)","Fragmentation","Unity/Division"],["Testimony (Śabda)","Silence","Speech/Silence"],["Axiom (First Principles)","Doubt","Certainty/Uncertainty"],["Intuition (Pratibhā)","Delusion","Truth/Illusion"]];
+var AX=[["A1","P_node = Φ × V","Either factor zero ⇒ no node — the zero-factor catastrophe","[A]",0],["A2","ΔP_node,i > 0 ∧ ΔP_node,H > 0","Every interaction increases both under η = 0","[I]",0],["A3","D0 → D1 → … → D6; \"D6 ≡ D0\"","Six-stage cycles with return","DEAD — staged for repair",1],["A4","η = 0 vs cooperators; TfT at L4","Extraction-free > extraction","[A/S]",0],["A5","Egregores emerge; Raktabīja","Systems replicate independently","[I]",0],["A6","Three substrates: Ideological / Biological / Mechanical","Any P_node on any substrate","[S]",0],["A7","Self-correction mandatory","Nothing above revision","[A]",0]];
+var PIE=[["*h₂r̥tó-","Fitted, ordered","L4","Ṛta, Artā, Aša, Ratio, Rite, Arithmetic"],["*dyeu-","Sky, shine","L7","Deus, Zeus, Div, Dyaus"],["*serp-","Crawl","L1","Serpent, Herpes, Sarpa"],["*bher-","Carry, bear","L3","Bear, Ferro, Bhara"],["*wel-","Turn, revolve","L6","Volute, Revolve, Wheel"]];
+var WAVE=[["Position","x = 0 (exactly)"],["Superposition width","Δx = σ√2 (0.45% of domain)"],["Interference","Maximum — cos(kx) = 1 at x = 0"],["Wave number","k = π/2 (quarter-phase)"],["Envelope velocity","v = ω/k (dispersionless)"],["Uncertainty product","σ_x · σ_k = 0.5 — at the Heisenberg minimum"]];
+function esc(s){return String(s)}
+function tbl(id,heads,rows,opts){opts=opts||{};var s='<table><thead><tr>';heads.forEach(function(h){s+='<th>'+h+'</th>'});s+='</tr></thead><tbody>';rows.forEach(function(r,i){var lv=opts.lv? i+1 : (r[0]==='L4'?4:0);var cls=(lv===4||r[0]==='L4')?' class="l4"':'';var dl=opts.lv?' data-lv="'+(i+1)+'"':(r[0]&&String(r[0]).match(/^L[1-7]$/)?' data-lv="'+String(r[0]).slice(1)+'"':'');s+='<tr'+dl+cls+'>';if(opts.lv)s+='<td class="mono mut">'+(i+1)+'</td>';r.forEach(function(c,j){s+='<td'+(opts.mono&&opts.mono.indexOf(j)>-1?' class="mono"':'')+'>'+esc(c)+'</td>'});s+='</tr>'});document.getElementById(id).innerHTML=s+'</tbody></table>'}
+tbl('t_core',["Level","Operator","Register","θ/2","φ = tan(θ/2)","ν = cot(θ/2)","φ·ν","B = sin θ"],CORE,{mono:[3,4,5,6,7]});
+tbl('t_chain',["L","Varṇa","Pramāṇa","Reasoning","-ology","Regime","Equation"],CHAIN,{lv:1,mono:[5]});
+tbl('t_sig',["Operator","φ","ν","ΔΦ","ΔV"],SIG,{mono:[1,2,3,4]});
+tbl('t_body',["L","Chakra","Element","Alchemy","Gītā","Greek mode"],BODY,{lv:1});
+tbl('t_init',["L","Mithraic","Sufi","Carmelite","Kabbalah","Golden Dawn","Lakota"],INIT,{lv:1});
+tbl('t_myth',["L","Greek","Norse","Sumerian","Tarot","Catholic","Jungian","Animal"],MYTH,{lv:1});
+tbl('t_neuro',["L","Primary","Supporting","Function"],NEURO,{lv:1});
+tbl('t_comp',["L","System","Function","Pramāṇa"],COMP,{lv:1});
+tbl('t_game',["L","Strategy","Character"],GAME,{lv:1});
+tbl('t_civ',["L","Stage","Character","Historical parallel"],CIV,{lv:1});
+tbl('t_econ',["L","Concept","Mechanism"],ECON,{lv:1});
+tbl('t_fin',["L","Islamic","Sanskrit"],FIN,{lv:1});
+tbl('t_arts',["L","Art","Domain"],ARTS,{lv:1});
+tbl('t_mus',["L","Mode","Final","Character"],MUS,{lv:1});
+tbl('t_path',["L","Pathology","Mechanism","Healing"],PATH,{lv:1});
+tbl('t_asura',["L","Asura","Mechanism"],ASURA,{lv:1});
+tbl('t_kfn',["L","Kṛṣṇa-function","Opposite","Polarity"],KFN,{lv:1});
+tbl('t_pie',["Root","Meaning","Level","Descendants"],PIE,{mono:[0]});
+(function(){var s='<table><thead><tr><th>#</th><th>Axiom</th><th>Claim</th><th>Tier</th></tr></thead><tbody>';AX.forEach(function(a){s+='<tr><td class="mono">'+a[0]+'</td><td class="mono">'+a[1]+'</td><td>'+a[2]+'</td><td>'+(a[4]?'<span class="badge bdead">'+a[3]+'</span>':'<span class="mono mut">'+a[3]+'</span>')+'</td></tr>'});document.getElementById('t_ax').innerHTML=s+'</tbody></table>'})();
+document.getElementById('cfeit').innerHTML=CFEIT.map(function(c,i){return '<span class="chip"><b>L'+(i+1)+'</b> '+c+'</span>'}).join('');
+document.getElementById('wavecap').innerHTML=WAVE.map(function(w){return '<span class="chip"><b>'+w[0]+'</b> <span class="mono">'+w[1]+'</span></span>'}).join('');
+(function(){var W=720,cx=360,y0=120,A=86,sig=95,k=0.16;function pts(f){var d='';for(var x=20;x<=700;x+=2){var e=Math.exp(-((x-cx)*(x-cx))/(2*sig*sig));d+=(x===20?'M':'L')+x+' '+(y0-f(x,e)).toFixed(1)+' '}return d}
+document.getElementById('wcarrier').setAttribute('d',pts(function(x,e){return A*e*Math.cos(k*(x-cx))}));
+document.getElementById('wenv1').setAttribute('d',pts(function(x,e){return A*e}));
+document.getElementById('wenv2').setAttribute('d',pts(function(x,e){return -A*e}));})();
+function LV(n){var i=n-1;return [["Chain",CHAIN[i][0]+" · "+CHAIN[i][1]+" · "+CHAIN[i][2]+" · "+CHAIN[i][3]+" · "+CHAIN[i][4]+" · <span class='mono'>"+CHAIN[i][5]+"</span>"],["Body",BODY[i][0]+" · "+BODY[i][1]+" · "+BODY[i][2]+" · "+BODY[i][3]+" · "+BODY[i][4]],["Traditions",INIT[i].join(" · ")],["Myth",MYTH[i].join(" · ")],["Mind",NEURO[i][0]+" — "+NEURO[i][2]],["Machine",COMP[i][0]+" · "+GAME[i][0]],["Civilisation",CIV[i][0]+" · "+ECON[i][0]+" · "+FIN[i][0]+" / "+FIN[i][1]+" · "+ARTS[i][0]+" · "+MUS[i][0]],["Shadow",PATH[i][0]+" · counterfeit: "+CFEIT[i]+" · Asura: "+ASURA[i][0]],["Kṛṣṇa",KFN[i][0]+" — "+KFN[i][2]]];}
+function selectLevel(n){var c=CORE[n];document.getElementById("lvlhead").textContent="L"+n+" · "+GLY[n]+" · "+REG[n];
+document.getElementById("lvlgeo").innerHTML='<span class="chip"><b>θ/2</b> <span class="mono">'+c[3]+'</span></span><span class="chip"><b>φ</b> <span class="mono">'+c[4]+'</span></span><span class="chip"><b>ν</b> <span class="mono">'+c[5]+'</span></span><span class="chip"><b>φ·ν</b> <span class="mono">'+c[6]+'</span></span><span class="chip"><b>B</b> <span class="mono">'+c[7]+'</span></span>'+(n===4?'<span class="chip"><b>wave packet</b> <span class="mono">x = 0 · σ_x·σ_k = 0.5</span></span>':'');
+var b="";LV(n).forEach(function(f){b+='<div class="row"><span class="k">'+f[0]+'</span> '+f[1]+'</div>'});document.getElementById("lvlbody").innerHTML=b;
+for(var k2=1;k2<=7;k2++){var e=document.getElementById("e"+k2);if(e)e.setAttribute("stroke-width",k2===n?(k2===4?4.2:3):(k2===4?3:1.6));}
+document.querySelectorAll("tr[data-lv]").forEach(function(tr){tr.classList.toggle("sel",tr.getAttribute("data-lv")==String(n))});}
+for(var k3=1;k3<=7;k3++){(function(n){["e"+n,"lb"+n].forEach(function(id){var el=document.getElementById(id);if(el){el.classList.add("hit");el.addEventListener("click",function(){selectLevel(n)});el.setAttribute("tabindex","0");el.addEventListener("keydown",function(ev){if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();selectLevel(n)}});}});})(k3);}
+document.addEventListener("click",function(ev){var tr=ev.target.closest&&ev.target.closest("tr[data-lv]");if(tr){var n=parseInt(tr.getAttribute("data-lv"));if(n>=1&&n<=7)selectLevel(n);}});
+selectLevel(4);
+</script>
