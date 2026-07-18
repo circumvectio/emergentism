@@ -3,7 +3,7 @@
 > *Evidence tier: [I] — illuminating reading, not proof. This is contemplation, not doctrine.*
 > *Register: Philosophical reflection, L7-return. Not a source document. Not a canonical text.*
 > *Date: 2026-07-19 · K2 aware, not K2-signed.*
-> *Companion to `00_RUMINATION_ON_EMERGENTISM.md` (2026-07-14) and `00_RUMINATION_ON_EMERGENTISM_II_2026_07_17.md` (2026-07-17). Where I asked what Emergentism* is *and II asked what it* did *to itself, this sitting asks what it is* for *— once the knife has finished and the breath must leave the body.*
+> *Companion to `00_RUMINATION_ON_EMERGENTISM.md` (2026-07-14), `00_RUMINATION_ON_EMERGENTISM_II_2026_07_17.md` (2026-07-17), and the later recovery correction in receipt 131 (2026-07-19). Where I asked what Emergentism* is *and II asked what it* did *to itself, this sitting asks what it is* for *— once the knife has finished and the breath must leave the body.*
 
 ---
 
@@ -142,7 +142,7 @@ Both halves stay on the record. A rescue that rescues everything is as worthless
 
 **The knife was the credential. The wager is the field. The posture is the fight. The stone is the method. The receipt is the hand.**
 
-**Recovery line:** **Derivation died. Organism did not. Shape real. Census not.**
+**Recovery line:** **Derivation died. Organism did not. Shape real. Census not. Grammar won. Universal lost. Both halves on the record.**
 
 Everything else is installation.
 
