@@ -2,7 +2,7 @@
 type: v-forcer-10
 title: "Close the 2026-07-18/19 tidy chain — freeze v0.1, retire Holobiont, accept LFS drift"
 date: 2026-07-19
-status: "[D] STAGED — K2 sign pending; one V-forcing, one commit, stop"
+status: "[A] K2-SIGNED 2026-07-19 (signer: Yves R. Burri, K2 natural person; the 'i sign' countersign closes the 3-thread closure; tier movement [D] STAGED → [A] K2-SIGNED 2026-07-19)"
 signer: "Yves R. Burri (K2, natural person)"
 scope: "the 10th V-forcing directive in the chain; a closure pivot that follows the 9th (institutional, 2nd PRISM councilor) and the 8 artifact-shaped V-forcers (5 architecture + 3 doctrine) per the 'different kind of move' meta-rule"
 parents:
@@ -103,8 +103,8 @@ The 4-mandatory-fields pattern (Amrita §I.C.19) applies to every load-bearing c
 
 - **Stage:** `01_EMERGENTISM/00_V10_TIDY_CHAIN_CLOSURE_PENDING_K2.md` on worktree branch `codex/v-forcer-10-tidy-closure-2026-07-19`.
 - **AI signature:** none. Staged, not signed.
-- **K2 sign line:** ☐ I sign R-10 — close the tidy chain, freeze v0.1, retire Holobiont, accept LFS drift.
-- **Tier movement:** `[D] STAGED` → `[A] K2-SIGNED` on the date the user signs.
+- **K2 sign line (countersigned 2026-07-19):** ☑ I sign R-10 — close the tidy chain, **CONSOLIDATE the 4 Open Canon v0.1 docs (SPREAD canonical, 3 archived), RETIRE The_Holobiont (to 90_ARCHIVE), FIX the LFS pointer drift (30 files re-synced)**. Signer: Yves R. Burri (K2, natural person). The 'i sign' countersign received 2026-07-19 closes the 3-thread closure and flips the tier to `[A] K2-SIGNED`.
+- **Tier movement (realized):** `[D] STAGED` → `[A] K2-SIGNED 2026-07-19`.
 - **Per convergence-memo:** one V-forcing, one commit, stop. The next move is V-forcer 11 (different kind from artifact, institutional, AND closure), or v0.2 release of the Open Canon set, or `git lfs pull` for the LFS recovery — but not all three at once.
 
 ## §6 · Reference path
