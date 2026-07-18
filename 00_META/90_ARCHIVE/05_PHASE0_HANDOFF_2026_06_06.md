@@ -9,7 +9,7 @@
 
 | File | Purpose | Rows / Lines |
 |---|---|---|
-| `00_META/05_PUBLIC_FILE_INVENTORY_2026_06_06.csv` | Every public-reachable file under `12_PUBLIC_SITE/` (excluding book-pwa/, node_modules/, vendor/, .git/, partials/, .DS_Store) | 44 rows |
+| `00_META/90_ARCHIVE/PUBLIC_CLAIMS_2026_06_06/05_PUBLIC_FILE_INVENTORY_2026_06_06.csv` (archived 2026-07-18) | Every public-reachable file under `12_PUBLIC_SITE/` (excluding book-pwa/, node_modules/, vendor/, .git/, partials/, .DS_Store) | 44 rows |
 | `00_META/05_PHASE0_HANDOFF_2026_06_06.md` | This file | n/a |
 
 ## Subagent results (all four failed to land output)
@@ -112,4 +112,4 @@ All six are non-destructive. They remain valid for any future session.
 
 **Resumption line for the next session:**
 
-> Phase 0.1 of the public-surface audit is done; the file inventory is at `00_META/05_PUBLIC_FILE_INVENTORY_2026_06_06.csv`. Phase 0.2 (claim extraction across 32 pages) was attempted via four async subagents; all four returned truncated or empty payloads and no CSVs landed. A handoff with the full 32-page list and three recommended approaches (A: one-page-at-a-time tight script; B: incremental-write subagents; C: regex heuristic) is at `00_META/05_PHASE0_HANDOFF_2026_06_06.md`. Pick an approach, then continue.
+> Phase 0.1 of the public-surface audit is done; the file inventory is at `00_META/90_ARCHIVE/PUBLIC_CLAIMS_2026_06_06/05_PUBLIC_FILE_INVENTORY_2026_06_06.csv` (archived 2026-07-18). Phase 0.2 (claim extraction across 32 pages) was attempted via four async subagents; all four returned truncated or empty payloads and no CSVs landed. A handoff with the full 32-page list and three recommended approaches (A: one-page-at-a-time tight script; B: incremental-write subagents; C: regex heuristic) is at `00_META/05_PHASE0_HANDOFF_2026_06_06.md`. Pick an approach, then continue.

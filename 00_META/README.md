@@ -65,13 +65,13 @@ All ~100 files, grouped by role. `00_*` is a semantic flag for foundational cont
 
 **5 · CORPUS-AUDIT PIPELINE — 2026-06-04** *(one generated run; raw manifests are archive candidates — see below)*
 
-- Readable records (keep): `01_CORPUS_AUDIT_SUMMARY`, `02_FULL_READ_SOUL_LOOP_{FRONT_DOOR_SUMMARY,FINAL_CLOSE,SUMMARY}` (all `_2026_06_04.md`).
-- Raw generated manifests (archive candidates): `01_CORPUS_AUDIT_MANIFEST_2026_06_04.{csv 1.2MB, jsonl}`, `02_FULL_READ_SOUL_LOOP_LEDGER_2026_06_04.csv` (738KB).
+- Readable records (keep, at top level): `01_CORPUS_AUDIT_SUMMARY`, `02_FULL_READ_SOUL_LOOP_{FRONT_DOOR_SUMMARY,FINAL_CLOSE,SUMMARY}` (all `_2026_06_04.md`).
+- Raw generated manifests — **archived 2026-07-18** to [`90_ARCHIVE/CORPUS_AUDIT_2026_06_04/`](90_ARCHIVE/CORPUS_AUDIT_2026_06_04/) (the 1.2MB manifest CSV + jsonl twin + 738KB soul-loop ledger; see its `TOMBSTONE.md`).
 - **Live-routed deployment receipts (KEEP in place — AGENTS.md coverage authority):** the 15 `03_AGENTZ_DEPLOYMENT_<lane>_2026_06_04.{md,csv}` pairs (`00_META`, `01_TELEOLOGY`…`12_PUBLIC_SITE`, `90_ARCHIVE`, `91_COMPATIBILITY`), `03_AGENTZ_DEPLOYMENT_RECURSIVE_01_EMERGENTISM_2026_06_04.md`, and the whole-org `04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_ORG_2026_06_04.csv` (688KB, regenerate/L3-audit before trusting counts).
 
-**6 · PUBLIC-CLAIMS AUDIT — 2026-06-06** *(completed, since-frozen public site; archive candidates)*
+**6 · PUBLIC-CLAIMS AUDIT — 2026-06-06** *(completed audit of the since-frozen public site)*
 
-- `05_PHASE0_3_TIER_MISMATCH_AUDIT`, `05_PHASE0_4_7_COMBINED_REPORT` (`.md`); `05_PUBLIC_{CLAIMS_ALL,COVERAGE_MATRIX,FILE_INVENTORY}_2026_06_06.csv`.
+- **Archived 2026-07-18** to [`90_ARCHIVE/PUBLIC_CLAIMS_2026_06_06/`](90_ARCHIVE/PUBLIC_CLAIMS_2026_06_06/): the 2 phase-0 reports (`.md`) + `05_PUBLIC_{CLAIMS_ALL,COVERAGE_MATRIX,FILE_INVENTORY}_2026_06_06.csv` (see its `TOMBSTONE.md`).
 
 **7 · AUDIT CORPUS — 2026-07-17** *(concurrent session's work — classify only, do NOT reorganize)*
 
@@ -96,14 +96,14 @@ All ~100 files, grouped by role. `00_*` is a semantic flag for foundational cont
 
 ---
 
-## Staged archive plan (K3 — owner sign-off required; NOT executed)
+## Archive — EXECUTED 2026-07-18 (host-authorized, K3 archive-first)
 
-The tidy pass identified regenerable/frozen artifacts safe to archive once the owner approves. **No file has been moved.** Proposed, each with a tombstone:
+Regenerable/frozen artifacts moved with `git mv` (history preserved, nothing deleted), each subfolder carrying a `TOMBSTONE.md`:
 
-| Move (staged) | Target | Why |
+| Moved | To | Why |
 |---|---|---|
-| `01_CORPUS_AUDIT_MANIFEST_2026_06_04.{csv,jsonl}` (1.2MB) + `02_FULL_READ_SOUL_LOOP_LEDGER_2026_06_04.csv` (738KB) | `90_ARCHIVE/CORPUS_AUDIT_2026_06_04/` | Raw generated manifests; the readable `.md` summaries stay in place. |
-| PUBLIC-CLAIMS-2026-06-06 set (2 reports + 3 CSVs) | `90_ARCHIVE/PUBLIC_CLAIMS_2026_06_06/` | Completed point-in-time audit of a since-frozen public site. |
+| `01_CORPUS_AUDIT_MANIFEST_2026_06_04.{csv,jsonl}` (1.2MB) + `02_FULL_READ_SOUL_LOOP_LEDGER_2026_06_04.csv` (738KB) | [`90_ARCHIVE/CORPUS_AUDIT_2026_06_04/`](90_ARCHIVE/CORPUS_AUDIT_2026_06_04/) | Raw generated manifests; the readable `.md` summaries stay at top level. |
+| PUBLIC-CLAIMS-2026-06-06 set (2 reports + 3 CSVs) | [`90_ARCHIVE/PUBLIC_CLAIMS_2026_06_06/`](90_ARCHIVE/PUBLIC_CLAIMS_2026_06_06/) | Completed audit of a since-frozen public site. |
 
 **Deliberately NOT archived:** the 15 `03_AGENTZ_DEPLOYMENT_*` receipt pairs and the recursive manifest (live coverage authority per AGENTS.md); all ratified canon; the entire 2026-07-17 concurrent corpus; this session's 07-18 work-products.
 
