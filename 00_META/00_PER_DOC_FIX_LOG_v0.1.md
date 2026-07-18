@@ -138,4 +138,68 @@ Per the convergence-memo rule, the full disposition is parked for per-category V
 
 ---
 
+## 7. Per-finding execution (RETRACTED_126 batch 1 of 31 candidates)
+
+Per the RETRACTED_126 disposition v0.1 (K2 sign pending), the 31 candidates in formal-system / root-canon / papers are disposed per-finding. This section logs the per-finding execution. **Each entry is one V-forcer's per-finding review.**
+
+### Batch 1 — `05_COSMOLOGY/00_THE_GEOMETRIC_ONTOLOGY_OF_REALITY.md` (7 findings, all FALSE-POSITIVE)
+
+- [2026-07-18] `05_COSMOLOGY/00_THE_GEOMETRIC_ONTOLOGY_OF_REALITY.md:82`
+  — RETRACTED_126 (D6≡D0) — **FALSE-POSITIVE**
+  mode: Kintsugi-bannner'd
+  evidence: Line 82 is in the summary table mapping each D-level to a geometric
+            object. The "D6 | Convergence / Return" row has "Closed loop
+            returning to D0" with `D6 ≡ D0` as the "Limit" column. The doc
+            opens with a `[金] Typed-scaffold supersession — 2026-07-18`
+            banner stating the proposed re-expression is "not live authority
+            where its body conflicts with the typed scaffold," and that
+            "D6 opens no positive freedom and returns only through the
+            interpretive, non-μ edge `r₆:D6↝D0`, not literal identity."
+            The doc's own §Assessment also recommends treating the doc as
+            `[C]`-tier proposal pending theorem-upgrade audit.
+  registry-cited: KSC-03
+  action: No in-doc edit. The Kintsugi banner is the fix; the doc's own
+          §Assessment is the explicit self-supersession. Log entry
+          documents the disposition.
+
+- [2026-07-18] `05_COSMOLOGY/00_THE_GEOMETRIC_ONTOLOGY_OF_REALITY.md:297,303`
+  — RETRACTED_126 (D6≡D0) — **FALSE-POSITIVE**
+  mode: Kintsugi-bannner'd
+  evidence: Lines 297-298: "The cycle closes. The horn torus converges: the hole
+            closes, the sphere re-emerges, the bang repeats. D6 ≡ D0." This
+            is the pre-banner body of the "D6 — Convergence / Return" section.
+            Same banner supersession applies.
+  registry-cited: KSC-03
+  action: No in-doc edit. Banner is the fix.
+
+- [2026-07-18] `05_COSMOLOGY/00_THE_GEOMETRIC_ONTOLOGY_OF_REALITY.md:319,331,347,349`
+  — RETRACTED_126 (D6≡D0) — **FALSE-POSITIVE**
+  mode: Kintsugi-bannner'd
+  evidence: Lines 319-349 are in the §Comparison-with-existing-scaffold and
+            §Assessment sections. The §Assessment explicitly states:
+            "**Recommendation:** This document should be treated as a `[C]`
+            -tier proposal for a geometric re-expression of the existing `[S]`
+            scaffold. It should not replace the existing scaffold until
+            audited through `03_FORMAL_SYSTEM/32_THEOREM_UPGRADE_PROTOCOL.md`."
+            The D6≡D0 closure language is acknowledged as superseded by the
+            typed scaffold.
+  registry-cited: KSC-03
+  action: No in-doc edit. Doc's own §Assessment is the explicit self-supersession.
+
+**Outcome:** 7/7 FALSE-POSITIVE under Kintsugi-bannner'd mode. 0 in-doc edits. 1 log entry per finding. The Kintsugi banner at line ~30 of the doc is the fix; the doc's own §Assessment at line ~347 is the durable self-supersession.
+
+**Remaining candidates (RETRACTED_126 batch 1 of 31):** 30 docs, 30 - 7 = 23 candidates after this batch. See `00_META/00_RETRACTED_126_DISPOSITION_v0.1.md` §3 for the full list.
+
+### Per-finding execution pattern
+
+Each batch is a single V-forcer:
+1. Read the doc; check for Kintsugi banner.
+2. If banner exists: the banner is the fix; all findings in the doc are FALSE-POSITIVE under Kintsugi-bannner'd mode.
+3. If no banner: spot-check each finding; LIVE → in-doc edit; FALSE-POSITIVE → log entry; DEFER → park.
+4. Single commit per batch: log entry + (optionally) in-doc edits.
+
+The K2 sign on §6 approves the discipline; per-finding execution is downstream and does not require a new K2 sign per finding (the chain is approved).
+
+---
+
 *This log is the audit trail of the audit. Per-disposition tracking continues in this file; per-category V-forcers land new log rows as the full audit is retired.*
