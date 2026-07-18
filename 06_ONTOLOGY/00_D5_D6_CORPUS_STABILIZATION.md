@@ -57,8 +57,8 @@ This note gives the stable interpretation rule for the entire corpus.
 
 The current canon is:
 
-- `D5` is the highest positive public register
-- `D5` is the last experiential layer
+- `D4` contains actual experience, models, selection, action, and records
+- `D5` is the highest positive register of represented possibilities
 - D5 candidate crossings are `currently_unreduced`; successful reduction
   reclassifies a crossing as weak emergence without destroying the scaffold
 - `D6` is not a further science
@@ -71,7 +71,7 @@ This is now the default reading unless a document explicitly and carefully overr
 
 ---
 
-## D5-Limit Holobiont / Soul Loop Reading
+## D5 Counterfactual Holobiont / D4 Soul Loop Reading
 
 If the question is:
 
@@ -79,27 +79,27 @@ If the question is:
 
 the tier-honest answer is:
 
-- **That is not `D6`.** It is the `D5`-limit image seen from inside the
-  system. It still has matter, memory, computation, recursive self-modeling,
-  correction, an organism/field distinction, and a process running in time.
-- **The positive image is upper `D5`.** A universal holobiont may be imagined as
-  organizing D4 matter-energy into memory and control substrate to run the Soul
-  Loop on itself.
-- **The D5 Landauer Barrier still binds the image.** Because memory and control
-  are physical, the loop cannot totalize itself into cost-free complete
-  self-knowledge. Recursion, error correction, reset, and entropy export remain
-  inside the accounting.
+- **That is not `D6`.** A universal holobiont is a conjectural `D5`
+  counterfactual represented by actual `D4` models and records.
+- **Any implementation remains `D4`.** Matter, memory, computation, recursive
+  self-modeling, correction, organism/field distinctions, and every process
+  running in time are actual carriers and events. The Soul Loop runs at D4; D5
+  supplies possible contents that its D4 selector may rank.
+- **Landauer's bound applies to the D4 implementation.** Physical memory and
+  control cannot totalize into cost-free complete self-knowledge. Recursion,
+  error correction, reset, and entropy export remain inside the accounting.
 - **`D6` releases the image.** `D6` is not the completed organism; it is the
   boundary where even the completed-organism image is subtracted as final
-  possession and returned to `D0`.
+  possession. The non-`μ` edge `r₆:D6↝D0` represents an interpretive return,
+  not identity or a physical cycle.
 
 So the lawful compression is:
 
 ```text
-D4: matter / body / tools / energy / means-to-act
-D5-limit: universal holobiont attempting complete recursive self-correction
-D5 Landauer Barrier: the attempt cannot become cost-free total knowledge
-D6: apophatic boundary where the attempt releases final possession
+D4: actual matter / body / model / selector / action / receipt / Soul Loop
+D5: represented universal-holobiont possibility and alternative worldlines
+D4 physical bound: no implementation obtains cost-free total self-knowledge
+D6: apophatic boundary where the represented image is released as finality
 ```
 
 This prevents both errors: naive material omega ("the universe literally

@@ -134,7 +134,7 @@ not yet know the exact numbered note.
 | D36_META_COGNITIVE_WITNESS_GAP.md | ONTOLOGY/ | Witness layer observes but does not yet affect decisions. |
 | D37_K2_SOVEREIGNTY_TRUTH.md | ONTOLOGY/ | Historical/product status: private-DAV K2 is guarded; it is not the generic or public authorization primitive. Mainnet status requires current runtime receipts. |
 | D38_ZAI_DEMURRAGE_TRUTH.md | ONTOLOGY/ | Demurrage specified but not implemented. ZAIStaking.sol written. |
-| 00_D5_D6_CORPUS_STABILIZATION.md | 01_EMERGENTISM/ | **Upper-boundary rule:** D5 is the last experiential/public layer; D6 is axiomatic closure and return to D0. |
+| 00_D5_D6_CORPUS_STABILIZATION.md | 01_EMERGENTISM/ | **Upper-boundary rule:** actual experience and Soul Loop execution remain D4; D5 contains represented possible strategies and worldlines; D6 has one non-`μ` interpretive return `r₆:D6↝D0`, not identity or a further state. |
 | 00_THE_REMAINING_QUESTIONS.md | 01_EMERGENTISM/ | What is philosophically closed vs empirically/practically still open. |
 | 00_D6_AS_APOPHATIC_CLOSURE.md | 01_EMERGENTISM/ | D6 is closure, not another public science or experience. |
 | 00_EXECUTION_GUARDRAILS.md | 01_EMERGENTISM/ | **Execution packet:** Three-Stage Process separation, typed AuthorizationEnvelope (K2 private; PRISM public), `η=0` as declared anti-extraction constraint, Grace Exit. |

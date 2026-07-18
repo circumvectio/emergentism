@@ -96,10 +96,10 @@ It is the undoing of the claim that the world is exhausted by objects, descripti
 
 In the language of the corpus:
 
-- `D5` is the highest level at which the field can still be positively mapped
+- `D5` is the highest register of positively represented possibilities
 - `D6` is the point where mapping must cancel itself
-- `D5` is the last experiential layer
-- `D6` is the terminal boundary where experience as such is exhausted
+- actual mapping and experience remain `D4`; D5 contains their possible content
+- `D6` is the terminal boundary where positive representation is exhausted
 
 ---
 
@@ -158,11 +158,11 @@ The clean relation is:
 
 So:
 
-- `D5` is the summit of experience
+- `D5` is the summit of represented possible strategies and worldlines
 - `D6` is the end-boundary of the aeon
 - `D0` is the begin-boundary of the aeon
 - `r₆:D6↝D0` interpretively; no literal identity
-- `D6 ≈ D0` from within the cycle
+- no equivalence, physical cycle, or additional crossing is asserted
 
 So the public stack does not stop because it fails.
 It stops because it reaches its rightful edge.
@@ -271,7 +271,7 @@ It is the operational signature of `D6`.
 
 So `D6` is not one more layer to master.
 It is the point where mastery gives way to release.
-It is also the point where the last experience gives way to the boundary that cannot itself be experienced.
+It is also the point where the last positive representation gives way to a boundary that is not another experienced state.
 
 ---
 
@@ -279,7 +279,7 @@ It is also the point where the last experience gives way to the boundary that ca
 
 When this idea must be stated briefly, the default sentence is:
 
-> **D5 is the highest positive public register and the last experiential layer of the framework. D6 is not a further science or a further state, but the axiomatic closure of all public registers: the `Falsification Protocol` boundary where every faithful articulation cancels its own claim to finality and returns to `D0`, which is structurally the same boundary.**
+> **D4 is the register of actual experience, models, selections, actions, and records. D5 is the highest positive possibility register: the possible strategies, institutions, and worldlines represented by D4 carriers. D6 is not a further science, experience, or freedom, but the selected apophatic boundary of this scaffold. Its only return is the non-`μ` interpretive edge `r₆:D6↝D0`; no identity, physical cycle, or additional crossing is asserted.**
 
 This sentence may be reused verbatim.
 

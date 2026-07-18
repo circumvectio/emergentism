@@ -1480,6 +1480,21 @@ class QuantumRemovalAndMutationTests(unittest.TestCase):
         self.assertIn("There is no\n`μ₆`.", source)
         self.assertIn("`r₆:D6↝D0` is an interpretive, non-μ closure edge.", source)
 
+    def test_settled_finity_and_upper_boundary_mirrors_remain_type_safe(self) -> None:
+        registry = owner_text("00_META/00_SETTLED_CANON_REGISTRY.md")
+        self.assertIn("`1` is its unique positive-real fixed point", registry)
+        self.assertIn("There is no geometric mean or log-midpoint of `0` and `∞`", registry)
+        self.assertNotIn("the geometric/log-midpoint of `0` and `∞`", registry)
+
+        stabilization = owner_text("06_ONTOLOGY/00_D5_D6_CORPUS_STABILIZATION.md")
+        closure = owner_text("06_ONTOLOGY/00_D6_AS_APOPHATIC_CLOSURE.md")
+        uplink = owner_text("11_UPLINK/00_CORE/00_INDEX.md")
+        for text in (stabilization, closure, uplink):
+            self.assertNotRegex(text, r"D5[^\n]{0,80}(?:last experiential|summit of experience)")
+        self.assertIn("The Soul Loop runs at D4", stabilization)
+        self.assertIn("actual mapping and experience remain `D4`", closure)
+        self.assertIn("actual experience and Soul Loop execution remain D4", uplink)
+
 
 class RosettaAndReflexivityTests(unittest.TestCase):
     def test_rosetta_round_trip_preserves_type_modality_and_tier(self) -> None:
