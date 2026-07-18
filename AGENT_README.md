@@ -20,16 +20,33 @@ current folder tree. Source truth remains in those files and in Uplink.
 material. It does not own runtime, legal entities, portfolio ventures, products,
 or live organism state.
 
+## Current State — 2026-07-19
+
+K2-signed wave (receipt K2_SESSION_2026_07_19) added six root-level canon docs
+— Read Order items 4–9 below. Strategy (`00_THE_SPREAD`, `00_THE_SYNTHETIC_GAP`)
+frames the arena and the funnel; `00_THE_ROSETTA_PROTOCOL` sets the
+three-scripts public rule (fourth script is machine);
+`00_THE_FIRST_RECEIPT_RECOMMENDATION` names the REFU play-money forecast ledger
+the first visible η = 0 receipt; the Open Canon Foundation charter pair is
+staged and counsel-gated. Site: `/fable/` and `/practice/` funnel stages now
+live under `12_PUBLIC_SITE/`.
+
 ## Read Order
 
 1. `README.md`
 2. `AGENTS.md`
 3. `00_FOUNDATION_READER_GUIDE.md`
-4. `05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md`
-5. `06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md`
-6. `02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`
-7. `03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md`
-8. `11_UPLINK/00_CORE/00_INDEX.md`
+4. `00_THE_SPREAD_v0.1.md` — K2-signed strategy: users, not believers; the funnel
+5. `00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md` — K2-signed arena: worldviews as wagers; posture as axis
+6. `00_THE_ROSETTA_PROTOCOL_v0.1.md` — K2-signed 2026-07-19: three-scripts rule; fourth script is machine
+7. `00_THE_FIRST_RECEIPT_RECOMMENDATION_v0.1.md` — K2-ratified first visible η = 0 receipt (REFU ledger)
+8. `00_OPEN_CANON_FOUNDATION_CHARTER_DRAFT_v0.1.md` — staged charter; counsel-gated
+9. `00_OPEN_CANON_FOUNDATION_COUNSEL_QUESTIONS_v0.1.md` — counsel-question companion
+10. `05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md`
+11. `06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md`
+12. `02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`
+13. `03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md`
+14. `11_UPLINK/00_CORE/00_INDEX.md`
 
 ## Depth-1 Routing
 
@@ -47,7 +64,7 @@ or live organism state.
 | `11_UPLINK/` | compressed AI routing and packet archive |
 | `09_TOOLS/` | scripts, compilers, simulations, audit utilities, DAC frame |
 | `10_SEED/` | seed closure |
-| `12_PUBLIC_SITE/` | tracked public-site app source, frozen pending signed AIA migration to `02_SKYZAI/03_AIA/app/` |
+| `12_PUBLIC_SITE/` | tracked public-site app source, frozen pending signed AIA migration to `02_SKYZAI/03_AIA/app/`; 2026-07-19: `/fable/` and `/practice/` funnel stages live |
 | `90_ARCHIVE/` | local doctrine archive |
 | `91_COMPATIBILITY/` | compatibility stubs only |
 

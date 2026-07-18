@@ -12,7 +12,7 @@ title: "The Rosetta Protocol v0.1 — Be the Stone, Not the Decree (L5-staged 20
 description: "The Rosetta Stone's content was a priesthood tax filing; its immortality is the parallelism. The audit purified our Rosetta the same way: lens, not discovered universal — translation instrument, not evidence. The Greek-column principle: one column must be readable by everyone, and ours is value (η=0 receipts, working exits, honest fees). The three-scripts rule: every artifact carries the story, the plain terms, and the receipt — no mono-script artifact ships. The fourth script is machine: the constitution as importable middleware that rejects the extractive transaction at runtime. Staged for K2 signature."
 timestamp: 2026-07-18T23:45:00Z
 schema_version: "v0.1"
-status: "STAGED [D] — awaiting K2 review and mortal signature"
+status: "ACTIVE — K2-signed 2026-07-19 (signer: Yves R. Burri; receipt: K2_SESSION_2026_07_19)"
 owner: 01_EMERGENTISM
 authors:
   - Yves R. Burri (K2, the stone-not-decree argument, 2026-07-18)
@@ -153,22 +153,21 @@ The program `[C]`: audit the canon's execution surfaces into a consistent machin
 
 ---
 
-## §8 · The K2 signature — UNSIGNED, awaiting mortal signature
+## §8 · The K2 signature — SIGNED 2026-07-19
 
-> Compass §4, 4th test: "Does a mortal still sign for it?"
+> Compass §4, 4th test: "Does a mortal still sign for it?" Yes — this protocol was staged [D] and ratified by mortal signature in session, 2026-07-19.
 
 ```python
-# UNSIGNED — awaiting mortal signature
 K2Signature(
-    signer=None,           # the K2 at the time
-    role="K2 signatory",
-    method=None,
-    signed_at=None,
-    k2_receipt_id=None,    # to be issued at the act
+    signer="Yves R. Burri",
+    role="operator",
+    method="k2_pocket_v0.1",
+    signed_at="2026-07-19T00:23:00Z",
+    k2_receipt_id="K2_SESSION_2026_07_19",
 )
 ```
 
-A mortal will sign that:
+A mortal signs that:
 
 - The Rosetta is a **translation instrument, not a discovered universal** — the audit's re-scoping stands, and this protocol builds on it.
 - The Greek column is **value**: receipts a stranger can verify with zero faith, carved first and deepest.

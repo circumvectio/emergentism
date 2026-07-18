@@ -12,7 +12,7 @@ title: "The First Receipt Recommendation v0.1 — which organ ships the first vi
 description: "Scores the candidate organs (RealityFutures, TheCircle, APU.BOT/Agentz, Aureus, Skyzai) against four axes — proximity to real users, cost-to-ship, refusal-visibility, trust-premium evidence value — and recommends RealityFutures on the play-money loop as the first visible η=0 receipt, with the public forecast ledger as the receipt users can literally see. Runner-up: APU.BOT. Includes the minimal receipt design and the falsifiers."
 timestamp: 2026-07-18T23:50:00Z
 schema_version: "v0.1"
-status: "STAGED [D] — recommendation for K2 decision; no ship act is authorized by this memo"
+status: "RATIFIED — K2 decision 2026-07-19 (receipt: K2_SESSION_2026_07_19): REFU play-money ledger is the first receipt; build execution and any public ship act remain separately K2-gated"
 owner: 01_EMERGENTISM
 authors:
   - Kimi (L3 Vaiśya, scoring and recommendation in the Magnum Opus tree)

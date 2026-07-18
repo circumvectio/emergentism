@@ -12,7 +12,7 @@ title: "Open Canon Foundation — Charter Draft v0.1 (L4-staged 2026-07-18, [D] 
 description: "Charter draft for the Open Canon Foundation, the public-benefit institutional layer of Emergentism per THE_SPREAD §5–§6. Swiss Verein or Stiftung on the Gemeinnützigkeit (public-benefit) track; the religion track is explicitly refused. Holds the canon and trademark, publishes the trial record, funds the adversarial audits, teaches the practice. Non-inurement mapped to η=0; membrane to the commercial organs constitutional, not contractual; immune-system clauses (K4 forkability, locked red-team budget funded before marketing, №017 rule, no charismatic center via the 5+1); governance with enumerated K2-signature acts; dissolution to a public-benefit successor with the canon remaining forkable. 4 mandatory fields on the charter's own load-bearing claims per Amrita §I.C.19. UNSIGNED — awaiting mortal signature."
 timestamp: 2026-07-18T16:18:14Z
 schema_version: "v0.1"
-status: "DRAFT for K2 review — NOT for filing; real-counsel review mandatory before any act"
+status: "K2-signed as staged canon 2026-07-19 (receipt: K2_SESSION_2026_07_19) — DRAFT; NOT for filing; real-counsel review mandatory before any act"
 owner: 01_EMERGENTISM
 evidence_tier: "[D] staged throughout; [S] structural for the 5+1 → legal-clause mapping; [C] conjecture for all legal-form specifics pending Swiss counsel review"
 parents:
@@ -193,22 +193,21 @@ All other acts are ordinary board business. Software does not sign; a natural pe
 
 ---
 
-## §9 · The K2 signature — UNSIGNED, awaiting mortal signature
+## §9 · The K2 signature — SIGNED as staged canon 2026-07-19
 
-> **This block is deliberately unsigned.** Per THE_SPREAD §5: this is an irreversible, outward-facing legal act — nothing gets filed without real counsel and the K2's wet signature. Per §5.4 above, the signer is "the K2 at the time," not a named person embedded in the charter.
+> **Boundary of this signature:** the mortal signature below ratifies this charter draft **as staged canon** — the purposes, the refusals, the immune system, and the membrane are affirmed as the doctrine of the institution-to-be. It does **not** execute any legal act. Per THE_SPREAD §5 and §6.2 item 8 of this charter, the filing itself is an irreversible, outward-facing act that remains gated on real-counsel review and its own wet signature. Per §5.4, the signer is "the K2 at the time," not a named person embedded in the charter.
 
 ```python
-# UNSIGNED — awaiting mortal signature
 K2Signature(
-    signer=None,           # the K2 at the time — a natural person, named at the act
-    role="K2 signatory",
-    method=None,           # wet signature per counsel's filing mechanics
-    signed_at=None,        # awaiting mortal signature
-    k2_receipt_id=None,    # to be issued at the act
+    signer="Yves R. Burri",
+    role="operator",
+    method="k2_pocket_v0.1",
+    signed_at="2026-07-19T00:23:00Z",
+    k2_receipt_id="K2_SESSION_2026_07_19",
 )
 ```
 
-A mortal will sign, after counsel review, that:
+A mortal signs — ratifying the draft as canon, with the filing act explicitly reserved — that:
 
 - The public-benefit track is chosen; the religion track is refused (THE_SPREAD §5).
 - Non-inurement is η=0; the ethic and the legal requirement are the same sentence.
