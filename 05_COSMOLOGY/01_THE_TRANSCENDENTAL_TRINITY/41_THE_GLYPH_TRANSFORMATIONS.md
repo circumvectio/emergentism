@@ -11,7 +11,7 @@ rosetta:
 
 # The Glyph Transformations
 
-**Status:** Canonical companion to the emblem ruling (Trinity Canon §4) and the Titan-on-Titan scope (§3).
+**Status:** Canonical companion to the emblem ruling (Trinity Canon §4) and the Titan-on-Titan scope (§3). **K2-ratified 2026-07-13 (receipt 127)** — restates signed rulings; adds none.
 **Date:** 2026-07-13
 **Evidence Tier:** per line, marked throughout.
 **Authority context:** the emblem row + Titan-on-Titan row (`00_META/00_SETTLED_CANON_REGISTRY.md`), receipt 126 (`11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`, K2-signed), Paper B §8 (mass-shell).

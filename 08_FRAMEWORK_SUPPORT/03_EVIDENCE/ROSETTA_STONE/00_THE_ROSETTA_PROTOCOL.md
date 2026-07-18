@@ -7,7 +7,7 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[D] staged doctrine awaiting K2 · cites only signed rulings"
   canonical_phrase: "The Rosetta Protocol — Be the Stone, Not the Decree"
-status: "STAGED [D] — awaiting natural-person K2 signature"
+status: "SIGNED [E] — K2 countersigned by Yves R. Burri (natural person), 2026-07-13, in-session authorization; recorded in receipt 127. The three-scripts rule is now shipping doctrine."
 date: 2026-07-13
 depends:
   - "00_THE_MASTER_ROSETTA.md (the table this doc re-purposes)"

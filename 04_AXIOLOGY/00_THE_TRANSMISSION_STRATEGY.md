@@ -6,7 +6,7 @@ rosetta:
   tier: "God"
   regime: "Kṣatriya"
   register: "[D] staged strategy awaiting K2 · builds on signed rulings + [I/C] wagers, marked"
-status: "STAGED [D] — awaiting natural-person K2 signature; §6 additionally gated on external counsel"
+status: "SIGNED [E] — K2 countersigned by Yves R. Burri (natural person), 2026-07-13, in-session authorization; recorded in receipt 127. §6 REMAINS counsel-gated: the signature adopts the doctrine incl. the religion-rejection ruling; it does NOT authorize any filing act."
 date: 2026-07-13
 companions:
   - "08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md (epistemic ground)"
