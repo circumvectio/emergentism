@@ -32,7 +32,7 @@ supersedes:
 
 > **STATUS: `[D]` STAGED — DRAFT for K2 review. NOT for filing. Real-counsel review is mandatory before any act.** This document is preparation for Swiss counsel and for the K2's review. It is not legal advice, not a filing, and not an executed instrument. Every legal-form statement below is `[C]` conjecture until counsel rules on it. Nothing is filed without real counsel and the K2's wet signature.
 >
-> **Sibling staging note (`[S]`):** a parallel L5 draft exists at `00_OPEN_CANON_FOUNDATION_CHARTER_v0.1.md` (Mavis, 2026-07-18). Per K3, both remain on disk; reconciliation into a single counsel-ready text is a K2 act. This L4 draft adds: the dissolution clause, the enumerated K2-signature acts, the funded-before-marketing lock, and the Swiss-focused legal-form comparison.
+> **Superseded-by note (`[S]`):** the older L5-staged draft `00_OPEN_CANON_FOUNDATION_CHARTER_v0.1.md` (Mavis, 2026-07-18) was retired to `90_ARCHIVE/2026_07_18_charter_tidy/` on 2026-07-19 per the convergence-memo rule ("ship Y's directive, don't refine X" — two parallel drafts is the sprawl the rule warns against). This DRAFT is the canonical. The K2 act on 2026-07-19 (receipt: K2_SESSION_2026_07_19) chose the DRAFT's leaner structure; the archive keeps the verbose L5 staging for inspection per K3 archive-first.
 
 ---
 
