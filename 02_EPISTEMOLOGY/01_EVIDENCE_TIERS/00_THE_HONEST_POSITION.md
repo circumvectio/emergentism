@@ -8,6 +8,8 @@ rosetta:
 
 # The Honest Position
 
+> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Ruling 1 (product form) applies to **S3** below: the Zero-Factor Catastrophe selects the **AND-class** (min / CES / geometric / product), it does **not** force the product uniquely — so "must be multiplicative … Proved" is downgraded to *AND-class-selected*; the product is one member and, as a proved *product*, a `[C]` posit, not `[S]`. Elsewhere the manifold identity `φ·ν = 1 on S²` stays `[A]` and its ethics-bridge remains a wager; `P_node = Φ × V` is read as plain node shorthand. Where local wording conflicts, the Settled Canon Registry rules. Authority: `00_META/00_SETTLED_CANON_REGISTRY.md`.
+
 > **The Anchor Sequence:** See [The Canonical Formula Block](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md).
 >
 > ```text
@@ -139,7 +141,7 @@ These claims follow from the axioms IF you accept the axioms. The axioms themsel
 |---|-------|-----------|--------|
 | S1 | If O1 (compact), O2 (orientable), O4 (duality), O5 (algebraic closure), and a minimal-dimension requirement are accepted, then S² is the minimal substrate | MF-413 + Classification Theorem; later ℂP² obstruction/enrichment analysis | Proved conditional for the minimal substrate; not a proof that richer ℂPⁿ spaces are impossible |
 | S2 | O3 (simple-connectedness) follows from O5 for compact orientable surfaces | MF-420 | Proved (O3 is redundant inside the older O1-O5 packet) |
-| S3 | Any fitness function satisfying zero-factor catastrophe + normalization + monotonicity + dimensional homogeneity must be multiplicative | MF-414 | Proved conditional on the four axioms |
+| S3 | Any fitness function satisfying zero-factor catastrophe + normalization + monotonicity + dimensional homogeneity must be multiplicative | MF-414 | Proved conditional on the four axioms *(K3 2026-07-13, receipt 126: the four axioms select the **AND-class** — min/CES/geo/product — not the product uniquely; "must be multiplicative" is AND-class-selected `[S]`, the product-as-forced reading is a `[C]` posit)* |
 | S4 | The EFR action on S² forces Φ = V on-shell (integration must equal viability) | MF-421 | Derived from Euler-Lagrange equations |
 | S5 | The mass spectrum on S² is quantized: μ² = l(l+1) | MF-421 | Derived from spherical harmonic eigenvalues |
 | S6 | The P-potential f(ΦV) is the unique interaction family preserving the multiplicative structure | MF-422 | Proved |

@@ -11,6 +11,8 @@ rosetta:
 
 # THE TRIADIC STABILITY THEOREM (Revised)
 
+> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** This is the source doc for the N=3 uniqueness claim; both of its load-bearing moves are downgraded, not deleted. **(1) "N=3 is the unique stable configuration"** is **selected, not uniquely forced** — the discharge of N≥5 rests on a false group lemma ("every group with N≥4 has a proper non-trivial subgroup"; **Z₅ is a counterexample** — any prime-order group has none). Read N=3 as a chosen/posited `[C/S/I]` configuration, not a proved theorem. **(2) The emergence of `{0,1,∞}` from `{0,∞}`** is a **naming choice `[S/I]`, not a forced closure**: the closure of `{0,∞}` under the generating involution `z↦1/z` is the *foursome* `{−1,0,1,∞}` (both `±1` are fixed); the framework elects the positive fixed point `+1` and leaves `−1` undrawn. Where local wording conflicts, the Settled Canon Registry rules. Authority: [`../../00_META/00_SETTLED_CANON_REGISTRY.md`](../../00_META/00_SETTLED_CANON_REGISTRY.md) · receipt 126.
+
 ## The Emergence of {0, 1, ∞} from {0, ∞} on ℂP¹
 
 **Version:** 3.0

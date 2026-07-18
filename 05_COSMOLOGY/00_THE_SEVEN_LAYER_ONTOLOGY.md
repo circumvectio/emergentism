@@ -25,6 +25,8 @@ depends_on:
 
 # The Seven-Layer Ontology of Reality
 
+> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Ruling 7 (Titan Trinity) applies to the D0 layer: the closure of {0, ∞} under the involution `z ↦ 1/z` is the *foursome* {−1, 0, 1, ∞} — the involution has two fixed points (±1), not one — so the three-element frame {0, 1, ∞} is a **naming choice `[S/I]`, not a forced/derived three-element closure**. Downgrade the D0 Formal-Anchor claim that the involution "generates the distinguished frame {0, 1, ∞}" (and the kill-criterion "unique minimal projective frame") from derived/`[A]` to posited: the trinity is selected, not uniquely forced. Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
+
 ## The Logarithmic Line as Canonical Geometry
 
 **Date:** 2026-06-06

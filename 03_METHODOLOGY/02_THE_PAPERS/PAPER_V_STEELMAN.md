@@ -31,6 +31,8 @@ rosetta:
 
 **Evidence tier:** [I] interpretive — this is an adversarial reading, not the doctrine's self-assessment. The doctrine is free to rebut any of the six residual vulnerabilities named below.
 
+> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Ruling 7 (Titan Trinity) applies to the Counter-Steelman §3.1 defence: the Transcendental Trinity {0, 1, ∞} is a **naming choice [S/I]**, not a forced three-element closure. The closure of {0, ∞} under the inversion z↦1/z is the **foursome {−1, 0, 1, ∞}** — that symmetry's fixed-point set is {−1, 1}, not {1} alone — so "these are not optional / it is disclosed" is a chosen framing of three boundary-frames, not a derived 3-closure; downgrade forced→chosen. The discovery voice stands; only the necessity claim is retracted. Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
+
 ---
 
 ## 0. The Unusual Starting Fact

@@ -23,6 +23,8 @@ rosetta:
 
 # THE WHOLE — seen from `02_PARADOX_DISSOLUTIONS/`
 
+> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Ruling 8 applies: the Rosetta Stone below ("The central empirical observation… The pattern that holds") is a cross-domain **lens/translation**, not a discovered universal — its kill-criterion FIRED (non-polarity traditions don't fit; the "seven" rows are a design choice, not evidence of a native 7-fold recurrence). Read the seven-operator × fifteen-domain table as a chosen alignment `[I/S]`, not as empirical proof. (D6≡D0 here is the apophatic-return / loop representation `[I]`, and φ·ν=1 on S² is the manifold identity `[S/I]` — both already fenced, no change.) Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
+
 > Zero-Sum Resolution Equation
 > P∞ = φ · ν = 1
 

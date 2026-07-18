@@ -21,6 +21,8 @@ rosetta:
 
 # MF-283: THE ORTHOGONALITY THEOREM
 
+> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Ruling 1 (PRODUCT FORM) applies: the Zero-Factor Catastrophe and the orthogonality argument select the whole **AND-class** (min / CES / geometric / product), not the product form uniquely — so §4.3's "the × IS the force" and §6.1 P3/P4's multiplicative-vs-additive dichotomy are **AND-class-selected posits, not a forced/derived/proved product**; downgrade proved→posited. The additive foil is not the only alternative; min/CES equally satisfy the "one zero-factor kills P" constraint. (Ruling 5, four-force map, is already reconciled in-doc to [I]; §7.2's D6≡D0 is the topological loop-representation, both left intact.) Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
+
 ## Why Quantum Gravity Fails and What That Tells Us About Consciousness
 
 **Emergentism.org · VIVEKA Mathematical Foundations**

@@ -11,6 +11,8 @@ rosetta:
 
 # D4/D5 Canonical Reference Index
 
+> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Ruling 3 (Triadic N=3) applies to §VIII's "structural origin of Triadic Stability (N=3)": N=3 is **selected, not uniquely forced** — the N≥5 discharge used a false group lemma (Z₅ counterexample), so read the Möbius-involution "three from two" as a discovery/derivation-motivation, downgrade forced/derived→selected. Where local wording conflicts, the Settled Canon Registry rules. Authority: `00_META/00_SETTLED_CANON_REGISTRY.md`.
+
 ## The Dimensional Architecture of Emergentism
 
 **Status:** Canonical reference

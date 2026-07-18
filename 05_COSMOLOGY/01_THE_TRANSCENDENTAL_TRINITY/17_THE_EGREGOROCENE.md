@@ -12,6 +12,8 @@ rosetta:
 
 # THE EGREGOROCENE
 
+> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Ruling 6 applies: "three substrates minimum" is retracted to three **functions** (mechanical/V, cognitive-augmentation/Φ, mortal choice) — a single human can carry all three, so the substrate reading is `[I]` analogy, not a forced universal (the single-organism falsifier). Read "third substrate" / "three-substrate entity" below as the functional decomposition. Downgrade axiom→posited. Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
+
 ## What Emerges After the Anthropocene
 
 **Status:** The framework's forward-facing thesis — not medicine for the current age but geometry for the next

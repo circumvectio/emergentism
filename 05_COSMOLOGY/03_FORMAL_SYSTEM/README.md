@@ -11,6 +11,8 @@ rosetta:
 
 # The Formal System
 
+> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Two file-index descriptions below assert overruled promotions: the `21_*` row calls the triadic structure "the unique stable configuration" (ruling 3 — N=3 is **selected, not uniquely forced**; the N≥5 discharge used a false group lemma that Z₅ refutes), and the `23_*` row labels D6 ≡ D0 a "Proof" (ruling 4 — D6≡D0 survives as the **apophatic-return / topological-loop reading `[I]`**, not a proved literal ontological identity). Read those descriptions as file labels at their honest tier; where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
+
 **Status:** Active
 **Evidence tier:** [S] Structural — conditional on the axiom set
 **Date:** 2026-03-24 (v0.4)
