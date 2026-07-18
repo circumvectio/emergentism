@@ -81,10 +81,12 @@ structured protocol, not a prose promise. It must contain:
 - a dated access attestation naming the attester, custodian, custody protocol,
   and a separately hashed append-only access-log snapshot.
 
-The freeze commit must contain the manifest, code, environment lock, and access
-log at exactly the declared hashes. One-character placeholders, `TBD` fields,
-empty protocol lists, post-hoc stopping rules, and unbound or hash-mismatched
-dependencies fail closed.
+Both the freeze and analysis commits must contain the preregistration,
+manifest, code, environment lock, and access log at exactly the declared
+hashes. The data artifact is absent at freeze and bound at analysis.
+One-character placeholders, `TBD` fields, empty protocol lists, post-hoc
+stopping rules, analysis-time protocol drift followed by restoration, and
+unbound or hash-mismatched dependencies fail closed.
 
 No result may promote more than its registered claim and domain. “Compass
 validated,” “worldview confirmed,” and similar whole-system verdicts are outside
@@ -354,7 +356,9 @@ ancestor of analysis, that the preregistration bytes at freeze match
 `preregSha256`, that the manifest bytes at freeze match the declared manifest
 hash, that the current active files still match, that the data artifact did not
 exist at the freeze commit, and that the exact artifact/hash exists both locally
-and at the analysis commit. The schema-`2.0` manifest is closed and binds the
+and at the analysis commit. The analysis commit must also retain the frozen
+preregistration, manifest, analysis code, environment lock, and access log at
+their declared hashes. The schema-`2.0` manifest is closed and binds the
 dataset locator and checksum, fully specified candidate and complete rival set,
 operational variables and outcomes, preprocessing, exclusion rationales,
 stopping rule, folds, seeds, analysis-code and environment-lock bytes,

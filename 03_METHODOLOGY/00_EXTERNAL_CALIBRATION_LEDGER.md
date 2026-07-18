@@ -368,8 +368,9 @@ be absent at freeze and present at analysis; the manifest must bind the exact
 dataset locator and checksum, specified candidate and complete rivals,
 operational variables/outcomes, preprocessing, exclusion rationales, stopping
 rule, folds, seeds, code/environment bytes, native-unit costs, and dated
-attestation/custody log. Every referenced file must exist at the freeze commit
-at its declared hash. Typed result verdict and the public verdict token must
+attestation/custody log. Every referenced file must exist at both freeze and
+analysis commits at its declared hash; protocol drift followed by restoration
+fails. Typed result verdict and the public verdict token must
 equal the receipt outcome exactly; suffix prose is rejected rather than trusted.
 `X3+` additionally requires the receipt to
 attest newly collected independent observations and match the named independent

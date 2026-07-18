@@ -1037,6 +1037,25 @@ def _validate_result_receipt(
             _sha256_file(prereg, f"{claim_id} preregistration") == declared_prereg_hash,
             f"{claim_id} current preregistration differs from the frozen preregistration",
         )
+    analysis_bindings = [
+        (prereg_path, declared_prereg_hash, "preregistration"),
+        (manifest_relative, declared_manifest_hash, "analysisManifest"),
+        *(
+            (relative, expected_hash, f"manifest dependency {relative}")
+            for relative, expected_hash in frozen_manifest_files
+        ),
+    ]
+    for relative, expected_hash, label in analysis_bindings:
+        analysis_hash = _git_blob_sha256(
+            root,
+            analysis_commit,
+            relative,
+            f"{claim_id} analysis-time {label}",
+        )
+        _require(
+            analysis_hash == expected_hash,
+            f"{claim_id} analysisCommit does not retain {relative} at its frozen hash",
+        )
     committed_hash = _git_blob_sha256(
         root, analysis_commit, artifact_relative, f"{claim_id} dataArtifact"
     )

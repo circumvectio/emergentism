@@ -904,6 +904,66 @@ class ExternalCalibrationTests(unittest.TestCase):
                 root=root,
             )
 
+    def test_x2_analysis_commit_must_retain_every_frozen_protocol_binding(self) -> None:
+        bindings = (
+            "preregistration",
+            "analysisManifest",
+            "analysisCode",
+            "environmentLock",
+            "accessLog",
+        )
+        for binding in bindings:
+            with self.subTest(binding=binding), tempfile.TemporaryDirectory() as temp:
+                data = payload()
+                root = Path(temp)
+                claim = claim_by_id(data, "CAL-AGENCY-01")
+                promote_to_x2(claim)
+                sync_component_profile(data)
+                materialize_contract_files(data, root)
+                init_git(root)
+                manifest = write_analysis_manifest(
+                    root,
+                    claim,
+                    kind="x2_discriminator",
+                    expected_data=X2_ARTIFACT_BYTES,
+                )
+                manifest_record = read_json(root, manifest)
+                relative = {
+                    "preregistration": claim["preregistration"]["path"],
+                    "analysisManifest": manifest,
+                    "analysisCode": manifest_record["analysisCode"]["path"],
+                    "environmentLock": manifest_record["environmentLock"]["path"],
+                    "accessLog": manifest_record["accessAttestation"]["accessLog"][
+                        "path"
+                    ],
+                }[binding]
+                target = root / relative
+                frozen_bytes = target.read_bytes()
+                freeze = commit_all(root, f"freeze protocol before {binding} drift")
+                target.write_bytes(frozen_bytes + b"\n")
+                artifact = write_artifact(
+                    root, claim["id"], "x2", X2_ARTIFACT_BYTES
+                )
+                analysis = commit_all(root, f"analysis with altered {binding}")
+                target.write_bytes(frozen_bytes)
+                receipt = write_result_receipt(
+                    root,
+                    claim,
+                    kind="x2_discriminator",
+                    artifact=artifact,
+                    manifest=manifest,
+                    freeze_commit=freeze,
+                    analysis_commit=analysis,
+                )
+                claim["dataset"]["resultReceipt"] = receipt
+                claim["dataset"]["resultVerdict"] = "supported"
+                claim["currentVerdict"] = "X2 outcome=supported"
+                self.assert_rejected(
+                    data,
+                    "analysisCommit does not retain.*at its frozen hash",
+                    root=root,
+                )
+
     def test_x2_frozen_expected_dataset_hash_must_match_acquired_bytes(self) -> None:
         data = payload()
         with tempfile.TemporaryDirectory() as temp:
@@ -1293,7 +1353,9 @@ class ExternalCalibrationTests(unittest.TestCase):
             x2_receipt["analysisCommit"] = replication["freezeCommit"]
             write_json(root, x2_path, x2_receipt)
             self.assert_rejected(
-                data, r"X3\+ freeze/analysis commits must all be distinct", root=root
+                data,
+                r"analysisCommit does not retain|X3\+ freeze/analysis commits must all be distinct",
+                root=root,
             )
 
     def test_x3_freeze_must_already_bind_prior_x2_receipt(self) -> None:

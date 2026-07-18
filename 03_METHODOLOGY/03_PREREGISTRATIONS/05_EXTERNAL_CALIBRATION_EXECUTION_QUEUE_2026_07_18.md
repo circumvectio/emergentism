@@ -38,9 +38,11 @@ expected hash, fully specified candidate and complete rival set, operational
 variables and outcomes, nonempty preprocessing and exclusion rationales,
 stopping rule, fold count, random seeds, code and environment-lock paths plus
 hashes, separate compute/data/labor ceilings, and dated attestation/custody
-records with a hashed access log. The freeze commit must bind every one of those
-records and referenced files. The selected data artifact must be absent at the
-freeze commit and present only in the later analysis commit.
+records with a hashed access log. Both the freeze and analysis commits must bind
+the preregistration, manifest, and every referenced file at the same declared
+hashes; a protocol altered during analysis and restored later fails. The
+selected data artifact must be absent at freeze and present only in the later
+analysis commit.
 Only then may the artifact be acquired and analyzed in a later commit. The
 outcome may be `supported`, `failed`, `null`, or `mixed`; all four can earn X2
 methodological status and all four must change the verdict honestly.
