@@ -5,7 +5,7 @@ rosetta:
   operator: "Kālī 💀"
   tier: "Operational"
   regime: "Śūdra"
-  register: "[S]/[I]"
+  register: "[S]"
   canonical_phrase: "ROSETTA CASCADE — triadic cascade functoriality audit"
 date: 2026-07-17
 status: "[D] STAGED audit — K2 aware, not K2-signed"
