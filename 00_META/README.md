@@ -21,50 +21,91 @@ rosetta:
 
 ---
 
-## Files In This Folder
+## Files In This Folder — complete index (refreshed 2026-07-18 by Agentz caste dispatch)
 
-The routing and translation-control surfaces that physically live here. Read top to bottom for first orientation; `00_*` is a semantic flag for foundational content, not an ordinal.
+All ~100 files, grouped by role. `00_*` is a semantic flag for foundational content, not an ordinal. Nothing is moved: the numbered audit series and deployment receipts are load-bearing / concurrently-owned. Tidy pass `wf_4808e0ed-256` (L3 Vaiśya × L5 Brāhmaṇa × L6 Sādhu).
+
+**1 · ROUTING (front door + lane law)**
 
 | File | Role |
 |---|---|
-| [`00_CLEANUP_AUDIT_CORRECTIONS_2026_05_31.md`](00_CLEANUP_AUDIT_CORRECTIONS_2026_05_31.md) | Current L3 resync ledger for derivative front-door corrections after the latest discovery-tree audit. |
-| [`00_TIDY_CONTROL_BOARD_2026_06_04.md`](00_TIDY_CONTROL_BOARD_2026_06_04.md) | Active folder-by-folder tidy ledger: claims, statuses, blockers, and next queue. |
-| [`03_AGENTZ_DEPLOYMENT_RECURSIVE_01_EMERGENTISM_2026_06_04.md`](03_AGENTZ_DEPLOYMENT_RECURSIVE_01_EMERGENTISM_2026_06_04.md) | Recursive Agentz deployment receipt for git-tracked folders/files under `01_EMERGENTISM/`. |
-| [`04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_ORG_2026_06_04.csv`](04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_ORG_2026_06_04.csv) | Path-level Agentz manifest; regenerate or L3-audit before changing. |
-| [`03_AGENTZ_DEPLOYMENT_00_META_2026_06_04.md`](03_AGENTZ_DEPLOYMENT_00_META_2026_06_04.md) | Self-covering Agentz deployment receipt for this META control lane. |
-| [`03_AGENTZ_DEPLOYMENT_00_META_2026_06_04.csv`](03_AGENTZ_DEPLOYMENT_00_META_2026_06_04.csv) | Path-level META lane deployment manifest. |
+| [`README.md`](README.md) | This file — folder purpose and complete index. |
+| [`AGENTS.md`](AGENTS.md) | Binding lane law: caste dispatch, K3 archive-first charter, scope. |
+| [`CLAUDE.md`](CLAUDE.md) | Claude-tool first-touch shim (defers to AGENTS.md). |
+
+**2 · CANON (ratified — do NOT re-flag or upgrade)**
+
+| File | Role |
+|---|---|
+| [`00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`](00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) | The 5+1 constitution (five refusals + Ω). K2-ruled 2026-05-30. |
+| [`00_SETTLED_CANON_REGISTRY.md`](00_SETTLED_CANON_REGISTRY.md) | Registry of settled canon — consult before flagging any contradiction. |
+| [`00_THE_OPEN_CANON_COVENANT.md`](00_THE_OPEN_CANON_COVENANT.md) | How canon is committed (at-tier, never [C]→[A]). K2-ratified 2026-07-12. |
+| [`00_THE_KINTSUGI_PROTOCOL.md`](00_THE_KINTSUGI_PROTOCOL.md) | Antifragile repair discipline — attacks must strengthen the corpus. K2 'Accept' 2026-07-18. |
+| [`00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md`](00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md) | O1 staging envelope — **SUPERSEDED** by the constitution; K3-preserved as the dated K2 audit trail. |
+
+**3 · TIDY-DISCIPLINE (standing cleanup boards + org standards)**
+
+| File | Role |
+|---|---|
+| [`00_TIDY_CONTROL_BOARD_2026_06_04.md`](00_TIDY_CONTROL_BOARD_2026_06_04.md) | Active folder-by-folder tidy ledger: claims, statuses, blockers, queue. |
+| [`00_CLEANUP_AUDIT_CORRECTIONS_2026_05_31.md`](00_CLEANUP_AUDIT_CORRECTIONS_2026_05_31.md) | L3 resync ledger for front-door corrections (05-31 pass complete; kept as Read-First reference). |
+| [`00_SUBFOLDER_ORGANIZATION_STANDARD.md`](00_SUBFOLDER_ORGANIZATION_STANDARD.md) | Active routing standard for subfolder organization. |
 | [`00_TRANSLATION_MACHINE_PROTOCOL.md`](00_TRANSLATION_MACHINE_PROTOCOL.md) | Corpus-repair law: move folder-by-folder without inflating claims. |
-| [`00_SUBFOLDER_ORGANIZATION_STANDARD.md`](00_SUBFOLDER_ORGANIZATION_STANDARD.md) | Local organization law for sub-subfolders (folder types, README contract). |
-| [`00_D_SCAFFOLD_L_LADDER_BRIDGE.md`](00_D_SCAFFOLD_L_LADDER_BRIDGE.md) | Canonical distinction between the dimensional scaffold (D0-D6) and the vocational ladder (L1-L7). |
-| [`00_D_LEVEL_STUDIES.md`](00_D_LEVEL_STUDIES.md) | Science-unification scaffold: each D-level's nearest public study surface, by translation not reduction. |
-| [`00_THE_REMAINING_QUESTIONS.md`](00_THE_REMAINING_QUESTIONS.md) | Provisional resolution of the last philosophical remainders, by register discipline. |
+
+**4 · META-SCAFFOLD (D/L bridge, translation, open frontier)**
+
+| File | Role |
+|---|---|
+| [`00_D_SCAFFOLD_L_LADDER_BRIDGE.md`](00_D_SCAFFOLD_L_LADDER_BRIDGE.md) | Canonical distinction: dimensional scaffold (D0–D6) vs vocational ladder (L1–L7). |
+| [`00_D_LEVEL_STUDIES.md`](00_D_LEVEL_STUDIES.md) | Science-unification scaffold: each D-level's nearest public study surface, by translation. |
 | [`00_KNOWN_UNKNOWNS_PROGRAM.md`](00_KNOWN_UNKNOWNS_PROGRAM.md) | The open frontier as an executable program: closed / open / deferred / frozen. |
+| [`00_THE_REMAINING_QUESTIONS.md`](00_THE_REMAINING_QUESTIONS.md) | Provisional routing of the last philosophical remainders, by register discipline. |
 | [`00_WHAT_IS_ACTUALLY_NOVEL_HERE.md`](00_WHAT_IS_ACTUALLY_NOVEL_HERE.md) | Inventory of the framework's genuinely distinct contributions. |
 | [`00_RECONCILIATION_SCOPE_BOUNDARY_NOTE.md`](00_RECONCILIATION_SCOPE_BOUNDARY_NOTE.md) | Claim-family classification: unified / translated / analogous / speculative / not claimed. |
-| [`00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md`](00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md) | O1 staging envelope: the 5+1 constitutional-invariants K2 ruling and its K3 propagation census. Canonical enumeration anchor is [`05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md); the geometric reading is [`05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md). |
-| [`90_ARCHIVE/00_CORPUS.md`](90_ARCHIVE/00_CORPUS.md) | Historical generated topology memory. Partial; prefer the current routing surfaces above. |
-| [`AGENTS.md`](AGENTS.md) | Agent routing surface for this lane. |
-| [`90_ARCHIVE/`](90_ARCHIVE/) | Archived audit and verification reports. Provenance only, not current authority. |
+
+**5 · CORPUS-AUDIT PIPELINE — 2026-06-04** *(one generated run; raw manifests are archive candidates — see below)*
+
+- Readable records (keep): `01_CORPUS_AUDIT_SUMMARY`, `02_FULL_READ_SOUL_LOOP_{FRONT_DOOR_SUMMARY,FINAL_CLOSE,SUMMARY}` (all `_2026_06_04.md`).
+- Raw generated manifests (archive candidates): `01_CORPUS_AUDIT_MANIFEST_2026_06_04.{csv 1.2MB, jsonl}`, `02_FULL_READ_SOUL_LOOP_LEDGER_2026_06_04.csv` (738KB).
+- **Live-routed deployment receipts (KEEP in place — AGENTS.md coverage authority):** the 15 `03_AGENTZ_DEPLOYMENT_<lane>_2026_06_04.{md,csv}` pairs (`00_META`, `01_TELEOLOGY`…`12_PUBLIC_SITE`, `90_ARCHIVE`, `91_COMPATIBILITY`), `03_AGENTZ_DEPLOYMENT_RECURSIVE_01_EMERGENTISM_2026_06_04.md`, and the whole-org `04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_ORG_2026_06_04.csv` (688KB, regenerate/L3-audit before trusting counts).
+
+**6 · PUBLIC-CLAIMS AUDIT — 2026-06-06** *(completed, since-frozen public site; archive candidates)*
+
+- `05_PHASE0_3_TIER_MISMATCH_AUDIT`, `05_PHASE0_4_7_COMBINED_REPORT` (`.md`); `05_PUBLIC_{CLAIMS_ALL,COVERAGE_MATRIX,FILE_INVENTORY}_2026_06_06.csv`.
+
+**7 · AUDIT CORPUS — 2026-07-17** *(concurrent session's work — classify only, do NOT reorganize)*
+
+- Break-tests: `BREAKTEST_{CORE,FRAME,COMPUTE,OPTIMA,I_REGISTER}_2026_07_17.md` + `*_verify.py` / `breaktest_core_check.py`.
+- Falsification sweeps: `FALSWEEP_{A_ISLANDS,B_THEOREM_SHAPED,C_CROSSFILE,I_REGISTER}_2026_07_17.md` + `_falsweep_c_checks.py`.
+- Claim ledgers: `{AXIOLOGY,CCC,ETA_ZERO,POWERMAX,SYNTROPY}_CLAIM_EXTRACTION`, `CLUSTER2_CCC_DYADISM_ETHICS_POWERMAX_CLAIM_LEDGER`, `TITAN_CLAIM_LEDGER_APPENDIX_{A_LANES,B_RULINGS}`, `TITAN_TRANSCENDENTAL_CLAIM_LEDGER` (all `_2026_07_17`).
+- Rosetta: `ROSETTA_{CASCADE,DEPLOYMENT,DUALITY,STRUCTURAL,FORMAL_REGISTER}_2026_07_17` (+ `ROSETTA_DUALITY_verify.py`), `THE_MIDPOINT_THEOREMS_K2_DISAMBIGUATION_2026_07_17`.
+
+**8 · SESSION — 2026-07-18** *(this session's work-products)*
+
+| File | Role |
+|---|---|
+| [`IDEA_LEDGER_DIMENSIONAL_EMERGENCE_2026_07_18.md`](IDEA_LEDGER_DIMENSIONAL_EMERGENCE_2026_07_18.md) | 85 corpus ideas on the D0–D6 ladder, each at audited tier. |
+| [`99_VIEWER_IDEA_LEDGER_2026_07_18.html`](99_VIEWER_IDEA_LEDGER_2026_07_18.html) | Shareable viewer for the Idea Ledger. |
+| [`ROSETTA_D5_GAMESPACE_FORMAL_AUDIT_2026_07_18.md`](ROSETTA_D5_GAMESPACE_FORMAL_AUDIT_2026_07_18.md) | Formal-logic audit of the operator game layer; R1–R9 packet applied by typed K2 act. |
+| [`SKYZAI_FAMILY_EMERGENTIST_REFINEMENT_2026_07_18.md`](SKYZAI_FAMILY_EMERGENTIST_REFINEMENT_2026_07_18.md) | Critical pass: 11 products, 4 shared seams. |
+| [`SKYZAI_FAMILY_CONSTRUCTIVE_REFINEMENT_2026_07_18.md`](SKYZAI_FAMILY_CONSTRUCTIVE_REFINEMENT_2026_07_18.md) | Constructive pass: honest identity + value + next-emergence per product. |
+| [`SKYZAI_FAMILY_FRONTIER_LEDGER_2026_07_18.md`](SKYZAI_FAMILY_FRONTIER_LEDGER_2026_07_18.md) | Blueprint-completion grades + org verdict (graded on receipts). |
+| [`SKYZAI_PRODUCT_MANIFEST_2026_07_18.yaml`](SKYZAI_PRODUCT_MANIFEST_2026_07_18.yaml) | Machine-readable taxonomy: bucket/register/tier per component + conformance invariants. |
+
+**Subdirectories:** [`90_ARCHIVE/`](90_ARCHIVE/) (prior tombstoned audit reports — provenance, not authority; contains `00_CORPUS.md` historical topology memory) · `worldview_consolidation_2026_06_12/` (leave in place).
 
 ---
 
-## Lane Agentz Deployment Receipts
+## Staged archive plan (K3 — owner sign-off required; NOT executed)
 
-Depth-1 Agentz receipts live in this META lane so agents can verify which
-folders were traversed without opening every target folder first.
+The tidy pass identified regenerable/frozen artifacts safe to archive once the owner approves. **No file has been moved.** Proposed, each with a tombstone:
 
-| Lane | Receipt |
-|---|---|
-| `08_FRAMEWORK_SUPPORT/` | [`03_AGENTZ_DEPLOYMENT_08_FRAMEWORK_SUPPORT_2026_06_04.md`](03_AGENTZ_DEPLOYMENT_08_FRAMEWORK_SUPPORT_2026_06_04.md) / [`csv`](03_AGENTZ_DEPLOYMENT_08_FRAMEWORK_SUPPORT_2026_06_04.csv) |
-| `09_TOOLS/` | [`03_AGENTZ_DEPLOYMENT_09_TOOLS_2026_06_04.md`](03_AGENTZ_DEPLOYMENT_09_TOOLS_2026_06_04.md) / [`csv`](03_AGENTZ_DEPLOYMENT_09_TOOLS_2026_06_04.csv) |
-| `11_UPLINK/` | [`03_AGENTZ_DEPLOYMENT_11_UPLINK_2026_06_04.md`](03_AGENTZ_DEPLOYMENT_11_UPLINK_2026_06_04.md) / [`csv`](03_AGENTZ_DEPLOYMENT_11_UPLINK_2026_06_04.csv) |
-| `12_PUBLIC_SITE/` | [`03_AGENTZ_DEPLOYMENT_12_PUBLIC_SITE_2026_06_04.md`](03_AGENTZ_DEPLOYMENT_12_PUBLIC_SITE_2026_06_04.md) / [`csv`](03_AGENTZ_DEPLOYMENT_12_PUBLIC_SITE_2026_06_04.csv) |
-| `90_ARCHIVE/` | [`03_AGENTZ_DEPLOYMENT_90_ARCHIVE_2026_06_04.md`](03_AGENTZ_DEPLOYMENT_90_ARCHIVE_2026_06_04.md) / [`csv`](03_AGENTZ_DEPLOYMENT_90_ARCHIVE_2026_06_04.csv) |
-| `91_COMPATIBILITY/` | [`03_AGENTZ_DEPLOYMENT_91_COMPATIBILITY_2026_06_04.md`](03_AGENTZ_DEPLOYMENT_91_COMPATIBILITY_2026_06_04.md) / [`csv`](03_AGENTZ_DEPLOYMENT_91_COMPATIBILITY_2026_06_04.csv) |
+| Move (staged) | Target | Why |
+|---|---|---|
+| `01_CORPUS_AUDIT_MANIFEST_2026_06_04.{csv,jsonl}` (1.2MB) + `02_FULL_READ_SOUL_LOOP_LEDGER_2026_06_04.csv` (738KB) | `90_ARCHIVE/CORPUS_AUDIT_2026_06_04/` | Raw generated manifests; the readable `.md` summaries stay in place. |
+| PUBLIC-CLAIMS-2026-06-06 set (2 reports + 3 CSVs) | `90_ARCHIVE/PUBLIC_CLAIMS_2026_06_06/` | Completed point-in-time audit of a since-frozen public site. |
 
-These receipts do not promote support, Uplink, public-site, archive, or
-compatibility material into source authority. They record coverage, route
-boundaries, and follow-up risk.
+**Deliberately NOT archived:** the 15 `03_AGENTZ_DEPLOYMENT_*` receipt pairs and the recursive manifest (live coverage authority per AGENTS.md); all ratified canon; the entire 2026-07-17 concurrent corpus; this session's 07-18 work-products.
 
 ---
 
