@@ -32,7 +32,7 @@ The staged editorial architecture distills the corpus into **exactly seven kerne
 | K-4 | **The Wagers** | W0 (das All, the crown) + W1–W12, each with its kill; the graves fenced | `06_ONTOLOGY/04_THE_CONJECTURES.md` |
 | K-5 | **The Refusals** | The constitution as via negativa — no extraction (η=0, over all bearers), no unsigned irreversibility, no erasure, no trapped exit, no infallibility — plus Ω the direction. *Refusals bind the holder, never the world.* | successor of the 5+1 surface, venture-vocabulary purged |
 | K-6 | **The Revelations** | What the work disclosed, earned and receipted (§2 below — this doc carries the draft) | → `06_ONTOLOGY/05_THE_REVELATIONS.md` at promotion |
-| K-7 | **The Record** | The trial ledger: every kill fired, every grave dated, №-next always open; the postures; the retelling rule | `12_PUBLIC_SITE/record/` + `11_UPLINK/50_AUDITS_AND_EXECUTIONS/` + `08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md` |
+| K-7 | **The Record** | The trial ledger: every kill fired, every grave dated, №-next always open; the postures; the retelling rule | `12_PUBLIC_SITE/record/` + `11_UPLINK/50_AUDITS_AND_EXECUTIONS/` + `08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md` (FOUR postures — deny/weaponize/confess/withdraw per r129; filename kept per K3) |
 
 The proposed **front door** is the capstone (`00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md`). After adoption and receipted distillation, every other corpus surface must route as evidence, archive, or tombstone beneath K-1…K-7. Until adoption, existing signed sources remain controlling; no file changes authority merely because this `[D]` index assigns it a future role.
 
