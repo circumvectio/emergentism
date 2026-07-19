@@ -34,8 +34,8 @@ rosetta:
 - `README.md`
 - `00_CLEANUP_AUDIT_CORRECTIONS_2026_05_31.md`
 - `00_TIDY_CONTROL_BOARD_2026_06_04.md`
-- `04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_2026_06_04.md`
-- `04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_2026_06_04.csv`
+- `03_AGENTZ_DEPLOYMENT_RECURSIVE_01_EMERGENTISM_2026_06_04.md`
+- `04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_ORG_2026_06_04.csv`
 - `03_AGENTZ_DEPLOYMENT_00_META_2026_06_04.md`
 - `03_AGENTZ_DEPLOYMENT_00_META_2026_06_04.csv`
 - `00_TRANSLATION_MACHINE_PROTOCOL.md`
@@ -55,7 +55,10 @@ rosetta:
   `06_ONTOLOGY/`, `07_THEOLOGY/`, `08_FRAMEWORK_SUPPORT/`, `09_TOOLS/`,
   `10_SEED/`, `11_UPLINK/`, `12_PUBLIC_SITE/`, `90_ARCHIVE/`, and
   `91_COMPATIBILITY/`.
-- The `04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_2026_06_04.*` pair is a `[B/I]` routing receipt for git-tracked folders and files/documents under `01_EMERGENTISM/`.
+- The `03_AGENTZ_DEPLOYMENT_RECURSIVE_01_EMERGENTISM_2026_06_04.md`
+  receipt and `04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_ORG_2026_06_04.csv`
+  manifest form the `[B/I]` recursive routing record for the then-named organism
+  root. The `_ORG_` spelling is historical provenance, not a separate owner.
 - It is control metadata, not source doctrine: repair owner-lane source truth before patching summaries or Uplink.
 - Do not absorb concurrent untracked artifacts into this receipt unless their owner explicitly stages/claims them.
 

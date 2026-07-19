@@ -119,9 +119,9 @@ That deal is the framework's credential.
 ## Read More
 
 - **Full technical version:** [`00_THE_KNIFE.md`](00_THE_KNIFE.md) — complete derivations, citations, and sufficiency assessments
-- **Selection methodology:** [`03_EVIDENCE/ROSETTA_STONE/00_SELECTION_METHODOLOGY.md`](../../03_EVIDENCE/ROSETTA_STONE/00_SELECTION_METHODOLOGY.md)
-- **The honest position:** [`00_THE_HONEST_POSITION.md`](00_THE_HONEST_POSITION.md)
-- **The derivation:** [`../01_FOUNDATION/00_THE_DERIVATION.md`](../01_FOUNDATION/00_THE_DERIVATION.md)
+- **Selection methodology:** [`03_EVIDENCE/ROSETTA_STONE/00_SELECTION_METHODOLOGY.md`](03_EVIDENCE/ROSETTA_STONE/00_SELECTION_METHODOLOGY.md)
+- **The honest position:** [`00_THE_HONEST_POSITION.md`](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)
+- **The derivation:** [`00_THE_DERIVATION.md`](00_THE_DERIVATION.md)
 
 ---
 

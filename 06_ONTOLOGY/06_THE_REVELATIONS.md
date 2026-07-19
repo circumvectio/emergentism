@@ -40,13 +40,19 @@ The GFS retraction showed a survey of standing respondents cannot test a zero-fa
 Felt coherence fires identically for a lens and for a law; coherence-detection cannot answer contact-questions. The cure is not cynicism — it is the tier ledger, written in advance. **Receipt:** 126 (synthetic-gap ruling). **Dies if:** a tier-disciplined claim is shown to be settled by felt fit alone. *"Fires identically" is phenomenological compression, not a measured identity.*
 
 ## 5 · Worldviews with synthetic cores compete by posture `[I/C]`
-All movement-worldviews share the synthetic gap; they cannot differ *in* it, so they differ by their stance *toward* it: deny / weaponize / confess / withdraw. And the revelation inside: **the epistemics is the ethics** — deny makes subjects, weaponize makes ammunition, confess makes adults, withdraw makes them free. **Receipt:** 127, 129 (four postures adopted). **Dies if:** a fourth posture is exhibited that is not one of these, or a Posture I/II system sustains institutional self-correction across generations. *The ethical reading's completeness is open; the Weimar caveat is live.*
+All movement-worldviews share the synthetic gap; they cannot differ *in* it, so they differ by their stance *toward* it: deny / weaponize / confess / withdraw. And the revelation inside: **the epistemics is the ethics** — deny makes subjects, weaponize makes ammunition, confess makes adults, withdraw makes them free. **Receipt:** 127, 129 (four postures adopted). **Dies if:** a fifth posture—or any posture outside the selected four—is exhibited without collapsing into one of them, or a Posture I/II system sustains institutional self-correction across generations. *The ethical reading's completeness is open; the Weimar caveat is live.*
 
 ## 6 · The ladder is not merely a ladder `[B/I]`
 Fold the seven rungs onto the sphere and the apex lands in the *middle* while the summit mirrors the base — sage and outcast are reflections, the crown is the return. And its shadow: the "universal" seven was one family's inherited grammar, its cleanest witness carrying the seven visible planets. **Receipt:** 130. **Dies if:** the centre+mirror grammar fails in a polarity-encoding system within the lineage. *Shape real; census selected; universal lost.*
 
 ## 7 · The trinity has a dark twin `[A/C]`
-The inversion that generates the structure fixes *two* points, not one: the honest closure is `{−1, 0, 1, ∞}`. The framework chose the light-side unit and long left `−1` undrawn; every symmetric system harbors a shadow selected away at founding. **Receipt:** algebra (`[A]` fixed-point fact) + W11 (`[C]` functional-work wager). **Dies if:** `−1` names no real phenomenon, grounds no operator, predicts nothing — then it is a footnote.
+The inversion used by the structure fixes *two* points, `±1`, and swaps the
+orbit `{0,∞}`. Their union `{−1,0,1,∞}` is a selected invariant four-point
+frame, not ordinary orbit closure. Whether a world system carries a
+corresponding “shadow” is W11 `[C]`, not a consequence of symmetry. **Receipt:**
+algebra (`[A]` fixed-point/orbit facts) + W11 (`[C]` functional-work wager).
+**Dies if:** `−1` names no real phenomenon, grounds no operator, predicts
+nothing — then it is a footnote.
 
 ## 8 · Plato was partly right, and the repair has debts `[I/C]`
 Not Forms — *constraint-structured degrees of freedom*; not perfection selecting existence — *emergence filtering typed plenitude*. Stable forms are invariants and attractors *across* constrained DoF, not the DoF themselves. The dividend: if "reachable" means buildable from a compressed seed, the excluded orphans are the incompressible structures — which would explain why the world is simple. **Receipt:** 133. **Dies if:** `REACHABLE` cannot be defined non-circularly (E4's named debt). *Still W1, not an earned theorem — never above `[C]`.*

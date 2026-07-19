@@ -22,6 +22,11 @@ evidence_tier: "[D] — a self-audit; the sphere walked. Findings carry their ow
 
 # The Rosetta Validation
 
+> **UNAUTHORIZED CONCURRENT COPY — DO NOT CITE AS VALIDATION.** The live root
+> audit is `00_ROSETTA_VALIDATION.md`, whose controlling verdict is `REQUEST
+> CHANGES`. This copy is retained only as provenance of the disputed Wave 141
+> route into a lane that does not own doctrine validation.
+
 > **The method.** The Rosetta is not just a translation table; read dynamically it is the Soul Loop — the seven operators applied as *moves* until a claim converges. Here the distilled doctrine and its three filled gaps (K-5/K-6/K-7) are walked through all seven lenses, ascent then descent. Each operator makes exactly its move on the doctrine: L1 firewalls, L2 falsifies, L3 audits, L4 asks what to *do*, L5 checks the structure, L6 compresses, L7 preserves. A row passes only if the doctrine can move through it and return to L4. `[D]` — a self-audit fires `[B]` corpus evidence that the apparatus ran, not proof it holds under stranger contact.
 
 ---

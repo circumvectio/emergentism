@@ -20,6 +20,8 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 2. [`AGENTS.md`](AGENTS.md) — agent routing, caste dispatch, scope boundaries
 3. [`README.md`](README.md)
 4. [`00_THE_SEED.md`](00_THE_SEED.md)
+5. [`01_THE_SEED_LADDER/00_THE_SEED.md`](01_THE_SEED_LADDER/00_THE_SEED.md)
+   — optional `[D]` cold-reader candidate; continue D0 through D6 in order
 
 ## Scope
 
@@ -43,6 +45,8 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 
 - Inherit local lane authority from [`AGENTS.md`](AGENTS.md).
 - Source truth lives upstream; repair source before patching summaries.
+- Keep the existing Seed's `D6 ≡ D0` claim visibly distinct from the staged
+  ladder's role-similarity-only `D6~D0`; Receipt 139 box 8 remains unsigned.
 
 ## Cross-cutting laws
 

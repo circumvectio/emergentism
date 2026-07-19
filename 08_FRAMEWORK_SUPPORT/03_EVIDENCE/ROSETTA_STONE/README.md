@@ -325,7 +325,7 @@ ordinal — multiple `00_*` at one depth is by design (see `NAMING_DOCTRINE.md`)
 
 **Related, outside this folder**
 
-- [`../../../00_META/ROSETTA_D5_GAMESPACE_FORMAL_AUDIT_2026_07_18.md`](../../../00_META/ROSETTA_D5_GAMESPACE_FORMAL_AUDIT_2026_07_18.md) — formal-logic audit of the operator game layer (10 claims, 13 agents); K2 repair packet R1–R9 staged.
+- [`../../../00_META/ROSETTA_FORMAL/ROSETTA_D5_GAMESPACE_FORMAL_AUDIT_2026_07_18.md`](../../../00_META/ROSETTA_FORMAL/ROSETTA_D5_GAMESPACE_FORMAL_AUDIT_2026_07_18.md) — formal-logic audit of the operator game layer (10 claims, 13 agents); K2 repair packet R1–R9 staged.
 
 ---
 

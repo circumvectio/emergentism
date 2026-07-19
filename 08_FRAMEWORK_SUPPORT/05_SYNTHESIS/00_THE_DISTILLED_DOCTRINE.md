@@ -26,6 +26,11 @@ tier_legend: "[A] proven-in-model · [B] built/measured · [S] structural (true 
 
 # The Distilled Doctrine
 
+> **UNAUTHORIZED CONCURRENT COPY — DO NOT CITE AS CANON.** This lane is
+> near-hollow/dissolved and owns no live source canon. The corrected root draft
+> remains a derivative compression pending owner disposition; this copy is kept
+> only as provenance of the disputed Wave 141 move.
+
 > **What this is.** The maximally compressed form of Emergentism — the shortest document that still carries the whole. It is organized by *degrees of freedom*: everything below is a value on one of four axes, plus the pre-mathematical conditions that let the axes exist and the compression law that ranks them. Read it as a chart, not a heaven. Every load-bearing line carries its tier; a line's power is exactly its tier, no more. Two fences bind this page: **never upgrade the strong plenitude wager above `[C]`**, and **A1–A7 still controls** until the founder's promotion sitting adopts E1–E10.
 
 ---

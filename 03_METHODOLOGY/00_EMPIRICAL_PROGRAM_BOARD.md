@@ -23,7 +23,7 @@ rosetta:
 **Status:** Active empirical routing surface
 **Date:** 2026-04-14
 **Evidence Tier:** Mixed by protocol; this document is a board, not a substitute for results
-**Depends on:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [What Actually Tests the Theory](00_WHAT_ACTUALLY_TESTS_THE_THEORY.md), [GFS Wave 1 Results](00_GFS_WAVE1_RESULTS.md), [The Canonical Claim Matrix](00_CANONICAL_CLAIM_MATRIX.md)
+**Depends on:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [What Actually Tests the Theory](00_WHAT_ACTUALLY_TESTS_THE_THEORY.md), [GFS Wave 1 result and retraction](../90_ARCHIVE/2026_07_13_gfs_retraction/canonical/00_GFS_WAVE1_RESULTS.md), [The Canonical Claim Matrix](00_CANONICAL_CLAIM_MATRIX.md)
 **See also:** [GFS Human Validation Lane](../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/spec/empirical/03_GFS_STUDY/GFS_README.md), [GFS Multiplicative Test Pipeline](../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/spec/empirical/01_GFS_TEST/README.md)
 
 ---

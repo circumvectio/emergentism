@@ -23,7 +23,7 @@ rosetta:
 **Status:** Active operating summary
 **Date:** 2026-04-14
 **Evidence Tier:** Mixed by claim under the current `[A/B/S/I/D/C]` ladder; this document is a routing surface, not an independent source of authority
-**Depends on:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [The Core State of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md), [The Life-Science Register](../05_COSMOLOGY/00_THE_LIFE_SCIENCE_REGISTER.md), [What Actually Tests the Theory](00_WHAT_ACTUALLY_TESTS_THE_THEORY.md), [GFS Wave 1 Results](00_GFS_WAVE1_RESULTS.md)
+**Depends on:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [The Core State of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md), [The Life-Science Register](../05_COSMOLOGY/00_THE_LIFE_SCIENCE_REGISTER.md), [What Actually Tests the Theory](00_WHAT_ACTUALLY_TESTS_THE_THEORY.md), [GFS Wave 1 result and retraction](../90_ARCHIVE/2026_07_13_gfs_retraction/canonical/00_GFS_WAVE1_RESULTS.md)
 **See also:** [The Goal](../00_THE_GOAL.md), [The Weltanschauung](../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md), [The Soul Loop](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md), [Mathematical Transformations](../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D32_MATHEMATICS.md), [Objective Morals and Ethics](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md), [The Power-Max Lemma](../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md), [The Empirical Program Board](00_EMPIRICAL_PROGRAM_BOARD.md)
 
 ---

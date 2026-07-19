@@ -31,7 +31,7 @@ rosetta:
 | Other/classify-before-edit files | 17 | Classify before edit |
 | **Total manifest rows** | **2191** | Path-level Agentz coverage |
 
-Manifest: [`04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_2026_06_04.csv`](04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_2026_06_04.csv)
+Manifest: [`04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_ORG_2026_06_04.csv`](04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_ORG_2026_06_04.csv)
 Manifest SHA-256 prefix: `39a39256596bf4b2`
 
 ---
@@ -122,17 +122,17 @@ The bounded `02_FULL_READ_SOUL_LOOP_FINAL_CLOSE_2026_06_04.md` receipt was impor
 ## Verification Commands
 
 ```bash
-git diff --check -- 01_EMERGENTISM/AGENTS.md 01_EMERGENTISM/00_META/AGENTS.md 01_EMERGENTISM/00_META/README.md 01_EMERGENTISM/00_META/04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_2026_06_04.csv 01_EMERGENTISM/00_META/04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_2026_06_04.md
+git diff --check -- 01_EMERGENTISM/AGENTS.md 01_EMERGENTISM/00_META/AGENTS.md 01_EMERGENTISM/00_META/README.md 01_EMERGENTISM/00_META/04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_ORG_2026_06_04.csv 01_EMERGENTISM/00_META/04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_2026_06_04.md
 python3 - <<'PY'
 from pathlib import Path
 import csv, subprocess
 root = Path('01_EMERGENTISM')
-manifest = root/'00_META/04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_2026_06_04.csv'
+manifest = root/'00_META/04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_ORG_2026_06_04.csv'
 rows = list(csv.DictReader(manifest.open()))
 paths = {r['path'] for r in rows}
 tracked = subprocess.check_output(['git','ls-files','-z','--',str(root)]).split(b'\0')
 files = {Path(p.decode()) for p in tracked if p}
-files |= {manifest, root/'00_META/04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_2026_06_04.md'}
+files |= {manifest, root/'00_META/03_AGENTZ_DEPLOYMENT_RECURSIVE_01_EMERGENTISM_2026_06_04.md'}
 folders = {root}
 for f in files:
     parent = f.parent

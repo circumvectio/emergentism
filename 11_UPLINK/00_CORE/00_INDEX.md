@@ -419,7 +419,7 @@ closure-shipped at the warrior lane (packets 94 + 96 verdict; tasks
 items: K2 strict-flag flip and L4 triangulation-flag flip — both
 founder-signature actions per K2.
 
-- [70_EXTRACT_NOW_PACKETS_2026_04_23/R-4_K2_SIGNED_AUTH.md](../70_EXTRACT_NOW_PACKETS/R-4_K2_SIGNED_AUTH.md) — R-4 K2-native signed auth extraction packet. Status: ✅ SHIPPED (verifier + queue landed 2026-04-23 under founder D2 on packet 74). Reconciliation via packet 75.
+- [70_EXTRACT_NOW_PACKETS_2026_04_23/R-4_K2_SIGNED_AUTH.md](../90_ARCHIVE/70_EXTRACT_NOW_PACKETS_2026_04_23/R-4_K2_SIGNED_AUTH.md) — archived R-4 K2-native signed-auth extraction packet. Status: ✅ SHIPPED (verifier + queue landed 2026-04-23 under founder D2 on packet 74). Reconciliation via packet 75.
 - [71_ASYNC_APPROVAL_QUEUE_SPEC_2026_04_23.md](../50_AUDITS_AND_EXECUTIONS/71_ASYNC_APPROVAL_QUEUE_SPEC_2026_04_23.md) — Async approval queue spec. Status: ✅ SHIPPED (`core/membrane/approval_queue.py`, wired into Council Stage 9). Spec-drift note: live predicate `decision == "PROCEED"` vs. spec `needs_founder_signoff`; flagged for founder decision before strict flip.
 - [72_AUDIT_EVIDENCE_DOSSIER_2026_04_23.md](../50_AUDITS_AND_EXECUTIONS/72_AUDIT_EVIDENCE_DOSSIER_2026_04_23.md) — Sprint-A audit dossier (SHA-256 chain of custody, founder D1-D4 surface).
 - [73_SWOT_UPDATE_2026_04_23.md](../50_AUDITS_AND_EXECUTIONS/73_SWOT_UPDATE_2026_04_23.md) — Post-Sprint-A SWOT update. W-new (single-signer availability risk) first named here.

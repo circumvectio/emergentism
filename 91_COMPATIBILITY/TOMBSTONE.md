@@ -31,8 +31,13 @@ status: ACTIVE — documented compatibility boundary
 
 ## Why This Exists
 
-This folder holds 182 stub files mirroring the pre-reorganization
-Foundation layout (e.g. `01_FOUNDATIONS/02_THE_DERIVATION/14_OPERATOR_CONSISTENCY_AUDIT.md`).
+The original tombstone recorded 182 files. A reproducible census on 2026-07-19
+finds **192 files total**: 191 Markdown files plus one CSV. Of the Markdown
+files, **160 explicitly declare `type: compatibility-stub`**; the remaining 31
+are route cards, READMEs, `_MOVED` markers, or preserved archive/provenance
+documents. The old 182 figure is retained here as historical provenance, not a
+current count. These files mirror the pre-reorganization Foundation layout
+(e.g. `01_FOUNDATIONS/02_THE_DERIVATION/14_OPERATOR_CONSISTENCY_AUDIT.md`).
 External and internal references to those paths continue to resolve here
 even after the canonical content moved into the seven `01_TELEOLOGY/` …
 `07_THEOLOGY/` doctrine folders.

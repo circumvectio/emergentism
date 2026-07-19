@@ -1,12 +1,14 @@
 ---
 receipt: 139
 title: "The Signing Sitting — corrected founder-decision surface"
-status: "STAGED [D] — UNSIGNED. Awaiting explicit natural-person choices against the frozen signing manifest. A bare yes, default, commit, agent-written signature block, or unnamed box does not sign."
+status: "PARTIALLY SIGNED [S/D] — natural-person signature recorded 2026-07-19 23:58:15 +07 against the frozen manifest. Boxes 1, 2, 4, 5, 7, 8, and 9 adopted; Box 3(b) chosen; Boxes 6 and 10–15 deferred. No physical execution authorized."
 parents:
   - 137_FINAL_STRUCTURE_AND_PAPERS_LENS_PROPOSAL_2026_07_19.md
   - 140_SEED_LADDER_TRUTH_CUT_AND_STABILIZATION_2026_07_19.md
 signing_manifest: "../../00_META/07_RECEIPT_139_SIGNING_MANIFEST_PENDING_SIGNATURE_2026_07_19.csv"
-signing_manifest_sha256: "fe4e8ad58ddc49685a7d84a64cc13968eb6cc48c0a937494a3c674c39bcdc088"
+signing_manifest_sha256: "15499d813eea11025f8ba0347eedc2c01f212778bf52103af8efb249d71d3f94"
+signature_time: "2026-07-19 23:58:15 +07"
+signer: "Yves R. Burri — natural-person founder / K2"
 ---
 
 # Receipt 139 — The Signing Sitting
@@ -23,38 +25,40 @@ adopt exact content bytes, but it cannot silently authorize physical migration.*
 
 ## Adoption boxes
 
-- [ ] **1 · The Door.** Adopt the exact manifest-bound bytes of
+- [x] **1 · The Door.** Adopt the exact manifest-bound bytes of
   `00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md` as the subordinate reader Door at
   its inline tiers. If adopted, its suffix may drop in a separately verified
   content-only action.
-- [ ] **2 · The Index.** Adopt the exact manifest-bound bytes of
+- [x] **2 · The Index.** Adopt the exact manifest-bound bytes of
   `00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md` as router/index, never source
   authority where an owner surface or receipt conflicts.
-- [ ] **3 · The Succession.** Choose exactly one:
+- [x] **3 · The Succession — choice (b).** Choose exactly one:
   **(a)** E1–E10 succeeds A1–A7, with A1–A7 preserved genealogically under K3;
   **(b)** decline succession, so A1–A7 remains operational and E1–E10 remains
-  staged. No choice is the default.
-- [ ] **4 · The Wagers.** Adopt manifest-bound W0 and W1–W12 as wagers only,
+  staged. **Founder decision: (b); A1–A7 remains operational and E1–E10 remains
+  staged.**
+- [x] **4 · The Wagers.** Adopt manifest-bound W0 and W1–W12 as wagers only,
   never disclosures, proofs, or empirical findings; all graves and kills remain.
-- [ ] **5 · The Ontology.** Adopt the two manifest-bound K-2 components—the DoF
+- [x] **5 · The Ontology.** Adopt the two manifest-bound K-2 components—the DoF
   ontology and kernel v0.2—at inline tiers, with the composite-owner relation and
   operational `μ` debt explicit.
-- [ ] **6 · The Charter.** Choose exactly one hash-bound candidate:
+- [ ] **6 · The Charter — DEFERRED.** Choose exactly one hash-bound candidate:
   **(a)** `CHARTER_DRAFT_v0.1`; **(b)** `CHARTER_v0.1`. Counsel, filing, public-DAV
   consequences, and the losing file's stone remain separately gated. No default
   may be applied from a general assent.
-- [ ] **7 · Registry base.** Adopt the current registry bytes only as the base for
+- [x] **7 · Registry base.** Adopt the current registry bytes only as the base for
   a later amendment annex. This box does **not** authorize edits by line number.
   Every amendment must state registry key/row identity, old value, new value,
   reason, and pre/post hash—including AMRITA and first-receipt dependencies.
-- [ ] **8 · The Seed Ladder.** Adopt all eight manifest-bound files solely as a
+- [x] **8 · The Seed Ladder.** Adopt all eight manifest-bound files solely as a
   candidate minimum-sufficient **reader projection** subordinate to K-1…K-7.
   This adopts no Kolmogorov minimum and no eighth authority. `D_n`, spatial
   dimension, spacetime dimension, world-aperture labels, Rosetta rows, and
   K-surfaces remain separate axes joined only by declared `[I/D]` crosswalks.
   The D4 line must be named explicitly: “spacetime” is the selected chart lens;
   “mind” is the selected world-aperture label; neither is algebraically forced.
-- [ ] **9 · The Blueprint.** Adopt the manifest-bound Blueprint plus companion
+  **Founder repeats this D4 crosswalk verbatim in the signature below.**
+- [x] **9 · The Blueprint.** Adopt the manifest-bound Blueprint plus companion
   file/folder rosters as a staged architecture and audit baseline only. This box
   does **not** authorize any move, rename, suffix drop, archive, tombstone,
   registry mutation, public synchronization, deletion, or publication.
@@ -80,15 +84,23 @@ These may not be smuggled through Box 2, 8, or 9:
   results, rollback, public/destructive separation, and explicit founder
   authorization. Until this box has an exact annex hash, **nothing moves**.
 
-## Signature grammar
+## Natural-person signature — recorded 2026-07-19 23:58:15 +07
 
-A valid signature names exact boxes and every exclusive choice, for example:
+> **“I, Yves R. Burri, sign corrected Receipt 139 against manifest SHA-256
+> `15499d813eea11025f8ba0347eedc2c01f212778bf52103af8efb249d71d3f94`.
+> I adopt Boxes 1, 2, 4, 5, 7, 8, and 9. Box 3 = (b): decline E1–E10
+> succession for now; A1–A7 remains operational and E1–E10 remains staged.
+> Box 6 is deferred pending counsel/charter reconciliation. For Box 8:
+> ‘spacetime’ is the selected chart lens; ‘mind’ is the selected world-aperture
+> label; neither is algebraically forced. Boxes 10–15 are deferred until their
+> exact bytes or execution annexes are hash-bound. Box 9 adopts architecture/
+> audit baseline only and authorizes no move, rename, suffix drop, archive,
+> tombstone, registry mutation, public sync, deletion, or publication.”**
 
-> “I sign Receipt 139 against manifest
-> `fe4e8ad5…c088`: boxes 1, 2, 4, 5, and 8; Box 3 = decline; Box 6 = candidate A;
-> Boxes 7, 9–15 remain staged.”
-
-That sentence is only an example. It signs nothing. The founder may adopt,
-decline, or defer every box.
+**Immediate effect:** the exact manifest-bound content named by adopted Boxes
+1, 2, 4, 5, 7, 8, and 9 is adopted at its stated scope; Box 3(b) preserves
+A1–A7 as operational. Pending filenames stay in place. Registry amendments,
+successor promotions, archive/root waves, public synchronization, and every
+physical or destructive action remain gated by deferred Boxes 6 and 10–15.
 
 *The gate holds because it does not always open.*

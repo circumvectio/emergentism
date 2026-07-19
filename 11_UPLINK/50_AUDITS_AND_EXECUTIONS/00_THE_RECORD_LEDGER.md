@@ -45,7 +45,7 @@ Full registry with per-row provenance: `00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.m
 | 6 | The symmetric balance *hump* as empirical law | Broken on real data (Munnell trough; GFS retracted). |
 | 7 | The squid as `η=0` witness | False-to-fact (*D. gigas* panmictic, semelparous, weak-targeting) — a counterexample, not a witness. |
 | 8 | Literal `D6 ≡ D0` | Loop-as-equation fails; apophatic return (`∼`) survives. |
-| 9 | Forced Titan-3 | Inversion fixes `±1`; honest closure is `{−1,0,1,∞}`. |
+| 9 | Forced Titan-3 | Inversion fixes `±1` and swaps `{0,∞}`; their union is a selected invariant frame, not ordinary closure. |
 | 10 | Force bijection (forces ↔ lines) | Electroweak unification collapses D2/D3 above ~246 GeV. |
 | 11 | N=3-forced | ℤ₅ counterexample; the group lemma fails; N=3 selected, not derived. |
 | 12 | Gödel universal lift | Tarski counterexamples (Presburger, real-closed fields complete/decidable). |

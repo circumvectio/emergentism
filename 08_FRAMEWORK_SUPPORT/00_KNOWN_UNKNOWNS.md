@@ -25,7 +25,7 @@ rosetta:
 
 **Date:** 2026-04-11 (Rosetta pass applied)
 **Evidence Tier:** Meta-epistemic
-**Depends on:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [GFS Wave 1 Results](../03_METHODOLOGY/00_GFS_WAVE1_RESULTS.md), [Rosetta Reasoning Pass](00_KNOWN_UNKNOWNS_RESOLVED.md)
+**Depends on:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [GFS Wave 1 result and retraction](../90_ARCHIVE/2026_07_13_gfs_retraction/canonical/00_GFS_WAVE1_RESULTS.md), [Rosetta Reasoning Pass](00_KNOWN_UNKNOWNS_RESOLVED.md)
 **See also:** [The Known Unknowns Program](../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md)
 
 ---

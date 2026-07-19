@@ -20,6 +20,8 @@ rosetta:
 
 - `README.md`
 - `00_THE_SEED.md`
+- `01_THE_SEED_LADDER/00_THE_SEED.md` — optional `[D]` cold-reader candidate;
+  then D0 through D6 in order
 
 ## Agentz Cloud / Rosetta Dispatch
 
@@ -43,6 +45,9 @@ lane, while per-file control rows live in `00_META/`.
 ## Routing Law
 
 - This lane is L7 seed compression: minimal identity, not a replacement for the source folders.
+- The existing Seed and staged Seed Ladder are distinct surfaces. The former's
+  `D6 ≡ D0` and the latter's role-similarity-only `D6~D0` are an unresolved
+  contradiction pending Receipt 139 box 8; agents must not merge or promote them.
 - Route law inherits from root and owner-lane AGENTS; use [`00_INDEX.md`](../11_UPLINK/00_CORE/00_INDEX.md) for compressed orientation, not upstream authority.
 - Use the current `[A/B/S/I/D/C]` evidence ladder. Deployment or architectural claims require a `[B]` receipt or an explicit `[D]` / `[C]` label; never present compressed seed doctrine as live runtime truth by default.
 

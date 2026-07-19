@@ -308,7 +308,7 @@ The bridge between "the math is real" (Part I) and "the geometry is the territor
 
 | Experiment | Tests | Status | Timeline |
 |-----------|-------|--------|----------|
-| **GFS Wave 1** | Multiplicative balance (B = sin θ) in human populations (n=207,920, 23 countries) | **MIXED RESULTS** (2026-04-09). Interaction significant in 8/23 countries (35%), H1 supported in 7/23 (30%), H2 in 5/23 (22%). Signal present but not dominant. Neither clean confirmation nor clean falsification. See [00_GFS_WAVE1_RESULTS.md](../../03_METHODOLOGY/00_GFS_WAVE1_RESULTS.md). | Done |
+| **GFS Wave 1** | Multiplicative balance (B = sin θ) in human populations (n=207,920, 23 countries) | **RETRACTED as framework evidence** (2026-07-13). Preserve the historical result and retraction at [00_GFS_WAVE1_RESULTS.md](../../90_ARCHIVE/2026_07_13_gfs_retraction/canonical/00_GFS_WAVE1_RESULTS.md). | Retracted / provenance retained |
 | **Protocol D** | Syntropic-frontier selection in coupled multiplicative agents under long horizon and enforced `η = 0` | **INTERNALLY SUPPORTIVE** (historical framework-designed run d=6.66; current constrained spec awaits independent replication) | Done internally; external replication needed |
 | **SPHERE Probe** | Equatorial projection improves coherence | Negative / informative first public-model run | Done |
 | **Agent V×Φ** | Balance beats imbalance in simulated agents | **CONFIRMED** (ρ=1.000) | Done |
@@ -330,7 +330,7 @@ These can be tested with current technology, data, and resources. If triggered, 
 
 | # | Kill Condition | What Dies | What Survives | Status |
 |---|---------------|-----------|---------------|--------|
-| **AK1** | GFS shows additive model explains equal or more variance than multiplicative (B = sin θ) | Ontological claim (I1) downgrades to "useful analogy" | E1-E5, Parts I-II, and any application that still works as a local heuristic without ontological commitment | **MIXED** (2026-04-09). Additive does not dominate, but multiplicative does not dominate either. Signal in 30% of countries. See [GFS Wave 1 Results](../../03_METHODOLOGY/00_GFS_WAVE1_RESULTS.md). |
+| **AK1** | GFS shows additive model explains equal or more variance than multiplicative (B = sin θ) | Ontological claim (I1) downgrades to "useful analogy" | E1-E5, Parts I-II, and any application that still works as a local heuristic without ontological commitment | **RETRACTED as framework evidence** (2026-07-13); see the preserved [GFS Wave 1 result and retraction](../../90_ARCHIVE/2026_07_13_gfs_retraction/canonical/00_GFS_WAVE1_RESULTS.md). |
 | **AK2** | Protocol R shows no perceptual complementarity bound (Δψ×Δθ ≥ κ) | MF-412 retracted, Weber-Fechner prediction removed | The rest of the empirical program, the formal kernel, and non-perceptual applications | Designed, needs lab (2026-2027) |
 | **AK3** | AMRITA underperforms RLHF at comparable compute | Spherical alignment architecture abandoned | The core state, the ethics, and any diagnostics not dependent on that alignment architecture | Specified, Reframed: POC implementable with existing open-source models at $0 (2027) |
 | **AK4** | Φ-meter shows no correlation with expert coherence judgments | Coherence proxy abandoned | The theoretical construct of coherence, pending better instruments; other empirical tests continue | Built (v0.1), needs validation (2026) |

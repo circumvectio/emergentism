@@ -35,7 +35,14 @@ evidence_tier: "[S] for the framework-internal structure of the 5+1; [A] for the
 | 5 | **A7** | infallibility | *via negativa* | `[S]` mechanism |
 | +1 | **Ω** | — (the directional telos) | *via positiva* | `[S]` orientation |
 
-The **+1 is not a sixth refusal.** It is the positive direction the five clear space for. The formal name of the whole: **maximize Ω subject to the five refusals as the feasible set** — the constitution is a Lagrangian, not a list of prohibitions. A perimeter with no interior is "constraints with no objective"; Ω is the objective the constraints were always *for*. The strong "reality maximizes balance" reading is **withdrawn** — the option cone is reach-dominated and diverges from the equator; the live reading is this constrained one. `[S]` the structure; `[I]` that reality in general obeys it.
+The **+1 is not a sixth refusal.** It is the positive direction the five clear
+space for. The selected constitutional program is: **seek to maximize Ω subject
+to the five refusals as feasibility constraints**. This is constrained-
+optimization language `[I/S]`, not a defined Lagrangian: no objective function,
+multipliers, differentiability assumptions, or solution theorem is supplied
+here. A perimeter with no interior is “constraints with no objective”; Ω names
+the direction the constraints are *for*. The strong “reality maximizes balance”
+reading is withdrawn.
 
 ---
 
