@@ -8,13 +8,28 @@ Compression is the measure of reality. The more compressed anything is, the more
 
 The foundational algebra — the ontological function P = Phi x V — is maximally compressed and therefore maximally real. Everything that unfolds from it gains complexity but loses reality-density. Reality decompresses from maximally real (maximally compressed) to maximally complex (minimally compressed).
 
+## The Pre-Mathematical Foundation
+
+Before Level 0 (the ontological function P = Φ × V), there is Level −1: the Three Titans.
+
+**The Three Titans (Level −1, pre-mathematical):**
+
+- **Zero (Brahmā ○, +,+)** — the generative void, the potential from which creation emerges. Not the number zero — the CONDITION of nothingness that makes somethingness possible.
+- **Infinity (Śiva •, −,−)** — the unbounded, the dissolution, everything-at-once. Not the mathematical infinity — the CONDITION of unboundedness that makes limits meaningful.
+- **Finity (Viṣṇu ⊙, ≈,≈)** — the boundary, the preserver, what makes distinction possible. Not a finite number — the CONDITION of boundedness that makes counting possible.
+
+These are NOT numbers. They are NOT mathematical objects. They are the preconditions for mathematics itself. They are more compressed than the ontological function (P = Φ × V) because P = Φ × V already presupposes them — it requires values that exist between zero and infinity, bounded by finity.
+
+They are also NOT deployable (matching the SD framework). They are BOUNDARIES that define the space within which everything else operates. The four deployable Gods operate WITHIN the space the Titans define. The Titans are the most compressed entities of all — they are the conditions *for* mathematics rather than mathematical objects themselves, and because each is irreducible, none can be decomposed further.
+
 ## The Hierarchy of Reality-by-Compression
 
 Each level is a decompression of the level below it:
 
 | Level | Domain | Compression | Reality-Density |
 |-------|--------|-------------|-----------------|
-| 0 | The Ontological Function (P = Phi x V) | Maximum | Maximum |
+| -1 | The Three Titans (Zero ○, Infinity •, Finity ⊙) | Pre-mathematical maximum | Pre-mathematical maximum |
+| 0 | The Ontological Function (P = Φ × V) | Maximum (mathematical) | Maximum (mathematical) |
 | 1 | Pure Mathematics (1D: numbers, algebra) | Very high | Very high |
 | 2 | Geometry (2D: spatial relationships) | High | High |
 | 3 | Physical Forms (3D: shapes, matter) | Moderate | Moderate |
@@ -48,6 +63,7 @@ The D-level hierarchy maps directly to the compression hierarchy. D0 (Bit) is ma
 
 ## Formal Statement
 
+Axiom C0: The Three Titans (Zero, Infinity, Finity) are pre-mathematical conditions that define the space within which all mathematical and physical reality decompresses. They are maximally compressed because they cannot be decomposed further — each is irreducible.
 Axiom C1: For any R1, R2 of a phenomenon, if K(R1) < K(R2), then R1 is ontologically prior to R2.
 Axiom C2: P = Phi x V has minimum Kolmogorov complexity of any representation generating the full D-level hierarchy.
 Axiom C3: D6 = D0 follows from C1 — maximal decompression converges on maximal compression.
