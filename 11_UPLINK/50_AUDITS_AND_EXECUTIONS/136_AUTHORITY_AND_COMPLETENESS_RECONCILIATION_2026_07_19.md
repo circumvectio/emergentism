@@ -7,7 +7,7 @@ owner: 01_EMERGENTISM
 evidence_tier: "[B] for observed repository paths/statuses and quoted receipt text; [S] for authority-rule application; [D] for the final successor stack"
 parents:
   - 135_K2_PROMOTION_EMERGENT_AXIOMS_2026_07_19.md
-  - ../../00_THE_WELTANSCHAUUNG.md
+  - ../../00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md
   - ../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md
   - ../../06_ONTOLOGY/04_THE_CONJECTURES.md
   - ../../00_META/00_SETTLED_CANON_REGISTRY.md
@@ -25,7 +25,7 @@ This receipt reconciles authority without deleting receipt 135 or pretending the
 
 At reconciliation time:
 
-- `00_THE_WELTANSCHAUUNG.md` says `[D]` and no **completed** founder-promotion receipt exists;
+- `00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md` says `[D]` and no **completed** founder-promotion receipt exists;
 - `00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md` says `[D]` successor candidate;
 - `06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` says `[D]` pending explicit founder signature;
 - `06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md` says `[D]`, with A1–A7 controlling until explicit promotion;
@@ -69,7 +69,7 @@ These are load-bearing incompletenesses. They are not rhetorical defects to be e
 
 ## 6 · Founder surface left open
 
-This receipt records no signature. The exact adoption checklist remains in `00_THE_WELTANSCHAUUNG.md` and must be read before any deliberate founder act.
+This receipt records no signature. The exact adoption checklist remains in `00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md` and must be read before any deliberate founder act.
 
 ## 7 · Verification receipt `[B]`
 
@@ -91,11 +91,11 @@ Focused verification after the cleanup pass:
 SHA-256 anchors after verification:
 
 ```text
-a3df11c98f14f3c35f7fcfc89b79dbf1e213dadfc11b5f72aa72dab7a6563967  00_THE_WELTANSCHAUUNG.md
-da94b989d01f90cffe2e90f68028eaa7a6fe510b24411ae475626c5e641e057f  00_THE_KERNEL_INDEX.md
+a3df11c98f14f3c35f7fcfc89b79dbf1e213dadfc11b5f72aa72dab7a6563967  00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md
+da94b989d01f90cffe2e90f68028eaa7a6fe510b24411ae475626c5e641e057f  00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md
 a6d7370ba8c6763e06cd3d16987e49c9bb7f9ce3b2c0f4ea53223b0588a5836c  06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md
 7ba3895ab587f71fdd4ba3d68b3fa6aba9eaec45027015a52fc7c5ab6c51a192  06_ONTOLOGY/04_THE_CONJECTURES.md
-b2f50bdd3f3cc38c94bec9668c72938e6ba7d52264bb72d4f915a4278297db8e  06_ONTOLOGY/05_THE_CREED_AND_SPIRAL.md
+b2f50bdd3f3cc38c94bec9668c72938e6ba7d52264bb72d4f915a4278297db8e  06_ONTOLOGY/05_THE_CREED_AND_SPIRAL_PENDING_SIGNATURE.md
 ```
 
 ⊙ = • × ○

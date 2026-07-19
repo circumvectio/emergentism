@@ -9,7 +9,7 @@ rosetta:
 title: "D6 — The Return (the recognition, not a rung)"
 status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
 parents:
-  - ../../00_THE_WELTANSCHAUUNG.md
+  - ../../00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md
   - ../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md
   - ../../00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md
 ---
@@ -49,7 +49,8 @@ parents:
   likewise inherited: a tautology is the *frame* and says nothing about *content*.
 - **Ours:** the refusal to close. The kernel commits no completeness claim; "we are
   tautological so we cannot be wrong" is a forbidden shield — it would kill the correction
-  axiom that everything else stands on. Reality closes in the living; no description closes.
+  axiom that everything else stands on. No description closes or certifies itself;
+  contact with living readers remains external evidence, not metaphysical closure.
 
 ## §2 · THE DISSOLUTIONS
 
@@ -63,8 +64,9 @@ parents:
   governance and pedagogy, not a solution to the Liar.
 - **The completeness temptation.** The pull, at the top of any ladder, to declare the
   system total — CTMU-style closure, "the framework explains the framework." **Cure: the
-  tautology is the frame, not the content** (settled ruling, K2 2026-07-12). Whatever in
-  the system is necessarily true is thereby empty; whatever is contentful can still lose.
+  tautology is the frame, not the content** (settled ruling, K2 2026-07-12). A
+  tautological chart identity carries no contingent world-content; this does not
+  imply that every necessary truth is empty. Contentful world-claims can still lose.
   Named open debts stay open: consciousness, Born weights, why this world, μ-saturation.
 - **The ladder-worship failure.** Mistaking the exit marker for a sixth prize; climbing D6
   as attainment. **Cure: the grave.** `D6≡D0` died in audit and stays dead; "~" is fenced

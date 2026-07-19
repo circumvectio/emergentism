@@ -9,8 +9,8 @@ rosetta:
 title: "D4 — Causality and bounded mind through a spacetime lens"
 status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
 parents:
-  - ../../00_THE_KERNEL_INDEX.md
-  - ../../00_THE_WELTANSCHAUUNG.md
+  - ../../00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md
+  - ../../00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md
   - ../../07_THEOLOGY/00_THE_AMRITA.md (§I.A.7 mass-shell)
   - ../../00_META/00_SETTLED_CANON_REGISTRY.md (D4/D5 two-registers row)
 ---
@@ -37,7 +37,7 @@ spacetime dimension.
 Inside the declared one-dimensional inertial setup,
 `B=sinθ=sech(w)=1/γ=dτ/dt`. Extending that reading beyond the setup requires a
 new model; it is not a universal identity between balance and time.
-4. **The iron separation holds here as everywhere.** The **seam** (`P∞ = φν ≡ 1`, chart identity — the shell itself, never zero, never a score) is not the **score** (`B ≤ 1`, maximal at the equator) is not the **node** (`P_node = Φ×V`, a declared finite model: AND-class at its zero boundary `[S]`, product interior `[C]`). Physics licenses the seam and the score readings above; it licenses nothing about nodes, flourishing, or ethics (CC-CORE-1). No `[C]→[A]`.
+4. **The iron separation holds here as everywhere.** The **seam** (`P∞ = φν ≡ 1`, the normalized mass-shell identity in this declared parameterization, never a score) is not the **score** (`B ≤ 1`, maximal at the equator) is not the **node** (`P_node = Φ×V`, a declared finite model: AND-class at its zero boundary `[S]`, product interior `[C]`). Physics licenses the seam and the score readings above; it licenses nothing about nodes, flourishing, or ethics (CC-CORE-1). No `[C]→[A]`.
 5. **Three registers, never fused.** Spatial dimension `d`, spacetime dimension
 `D=d+1`, and ladder ordinal `D_n` are different variables. Observational support
 for a `3+1` spacetime model is `[B]`; its mathematical consequences are `[A]`
@@ -78,5 +78,3 @@ and distinguish the inherited physics from the selected crosswalk.
 ---
 
 *Seam ≠ score ≠ node. The shell is Einstein's; the reading is ours; the reading is priced.* ⊙ = • × ○
-
-> **Founder addendum (receipt 139, 2026-07-19).** The double naming is blessed as one selected scaffold `[I]`: **"spacetime"** names this rung by its *chart freedoms* (place/order), while the world-ladder's fourth aperture is **"mind"**. Neither is forced; both are honest views of the same crossing. A stranger meeting "mind" as an already-won freedom at D5 should read it here.

@@ -82,12 +82,12 @@ This is where packet 139 belongs. Decentralized Authority Model is not anti-stru
 
 | File | Current Path | Role |
 |---|---|---|
-| Final Weltanschauung capstone `[D]` | `01_EMERGENTISM/00_THE_WELTANSCHAUUNG.md` | Staged front door: priced creed, scoped G7 language, P-register split, five-crossing/μ/D6 fences, accounting-not-completion rule, founder checklist |
+| Final Weltanschauung capstone `[D]` | `01_EMERGENTISM/00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md` | Staged front door: priced creed, scoped G7 language, P-register split, five-crossing/μ/D6 fences, accounting-not-completion rule, founder checklist |
 | Bounded Generative Emergentism `[D]` | `01_EMERGENTISM/06_ONTOLOGY/00_BOUNDED_GENERATIVE_EMERGENTISM_2026_07_19.md` | Staged Emergentism-only DoF/form ontology; operational reachability; quantum measurement reframe with outcome-selection fence |
 | Degrees-of-Freedom Ontology `[D]` | `01_EMERGENTISM/06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` | Staged Plato repair and plenitude wager, corrected to forms-across-DoF, operational reachability, and interpretation-neutral quantum record emergence |
 | Emergent Axioms E1–E10 `[D]` | `01_EMERGENTISM/06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md` | Staged pure-Weltanschauung successor set; A1–A7 remains controlling pending deliberate founder signature |
 | Conjectures W0–W12 `[D]` | `01_EMERGENTISM/06_ONTOLOGY/04_THE_CONJECTURES.md` | Staged wager ledger, including the Crown Wager beneath Map ≠ Ground, with corrected reachability and measurement boundaries |
-| Creed and spiral expansion `[D]` | `01_EMERGENTISM/06_ONTOLOGY/05_THE_CREED_AND_SPIRAL.md` | Staged expansion inheriting the capstone's G7, μ, and `D6~D0` prices |
+| Creed and spiral expansion `[D]` | `01_EMERGENTISM/06_ONTOLOGY/05_THE_CREED_AND_SPIRAL_PENDING_SIGNATURE.md` | Staged expansion inheriting the capstone's G7, μ, and `D6~D0` prices |
 | The core state of being | `01_EMERGENTISM/06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md` | Seed / Being / Dasein / beings |
 | Ontology across dimensions | `01_EMERGENTISM/06_ONTOLOGY/00_ONTOLOGY_ACROSS_DIMENSIONS.md` | L6 crosswalk for D0-D6, Ground / Being / Dasein / beings, logarithmic center, and anti-reification guardrails |
 | Finity as ontological boundary | `01_EMERGENTISM/06_ONTOLOGY/00_FINITY_AS_ONTOLOGICAL_BOUNDARY.md` | L6 reading of finity as finite disclosure, not mathematical overclaim or Ground possession |

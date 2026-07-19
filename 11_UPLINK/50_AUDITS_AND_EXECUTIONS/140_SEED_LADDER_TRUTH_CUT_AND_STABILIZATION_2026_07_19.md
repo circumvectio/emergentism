@@ -1,11 +1,11 @@
 ---
 receipt: 140
 title: "Seed Ladder truth-cut and staged stabilization — 2026-07-19"
-status: "EXECUTED [B/D] — additive correction after fd89949; no promotion, signature, archive move, or deletion"
+status: "EXECUTED [B/D] WITH POST-AUDIT CORRECTIONS — initial additive pass after fd89949; no promotion, signature, archive move, or deletion"
 date: 2026-07-19
 evidence_tier: "[B] repository and source audit; [A]/[S]/[I]/[C] per cited claim; corrected ladder remains [D]"
 parents:
-  - 139_THE_SIGNING_SITTING_SIGNED_2026_07_19.md
+  - 139_THE_SIGNING_SITTING_PENDING_SIGNATURE.md
   - ../../10_SEED/01_THE_SEED_LADDER/00_THE_SEED.md
   - 126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md
   - 132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md
@@ -56,6 +56,26 @@ The corrective pass:
 7. changed every Seed path label from "canonical" to "proposed" where present;
 8. rewrote receipt-139 box 8 so a later signature would adopt a reader
    projection, not an eighth authority surface or K-minimality claim.
+
+### 3A · Independent L6/L7 correction after this receipt was drafted
+
+The first pass did not justify the word “stabilization” by itself. Independent
+L6/L7 review subsequently found and corrected five residual defects in the
+staged Seed:
+
+1. removed the undefined `0·∞` pseudo-associativity counterexample in D0/D1;
+2. replaced the untyped “geometric midpoint of `0` and `∞`” with the positive
+   inversion fixed point / declared log-chart origin;
+3. narrowed D4's “shell itself” phrase to the normalized mass-shell identity in
+   the declared parameterization;
+4. separated transfer direction from extraction valence and carried every
+   Power-Max premise into the short D5 statement;
+5. removed D6's metaphysical “reality closes in the living” and the claim that
+   every necessary truth is empty.
+
+These are corrections to the staged reader projection, not promotion. The
+Receipt-139 gate remains closed until the founder deliberately names exact
+boxes against a corrected, frozen manifest.
 
 ## 4 · What this receipt does not do
 

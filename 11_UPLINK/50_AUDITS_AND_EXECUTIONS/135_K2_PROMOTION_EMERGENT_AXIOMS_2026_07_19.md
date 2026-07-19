@@ -18,7 +18,7 @@ parents:
   - 06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md
   - 06_ONTOLOGY/04_THE_CONJECTURES.md
   - 00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md
-  - 00_THE_WELTANSCHAUUNG.md
+  - 00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md
 ---
 
 # Receipt 135 — K2 Promotion of the Emergent Axioms stack
@@ -50,7 +50,7 @@ K2Signature(
 
 ## 2 · The Rule-zero reconciliation (honest, load-bearing)
 
-Later the same day the capstone (`00_THE_WELTANSCHAUUNG.md` §4, work order) established **Rule zero: ONE deliberate signing sitting — reading before signing, batched, no in-stream "yes" as canon signature.**
+Later the same day the capstone (`00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md` §4, work order) established **Rule zero: ONE deliberate signing sitting — reading before signing, batched, no in-stream "yes" as canon signature.**
 
 The 12:06 promotion was executed on an in-stream "yes" — but not a casual one: the full stack was read aloud in the verification report, the five-act docket was presented in writing, and the "yes" ratified that written docket. **Ruling requested of the owner:** treat the 12:06 acts as *provisionally executed* and bring them to the deliberate promotion sitting (work-order item 1) for batched ratification or amendment. Until that sitting, the promoted status stands on this receipt and is marked here as subject to sitting review — per Rule zero, no future canon signature will be taken in-stream.
 
@@ -58,8 +58,8 @@ The 12:06 promotion was executed on an in-stream "yes" — but not a casual one:
 
 - [ ] Batched ratification (or amendment) of the 12:06 acts — one sitting, reading first
 - [ ] **W0 crowned** atop the W-ledger (04): *the necessary algebra conjures das All* — wager grammar, never disclosure
-- [ ] The capstone's own signature (`00_THE_WELTANSCHAUUNG.md` → promotion)
-- [ ] The creed-and-spiral doc (now `06_ONTOLOGY/05_THE_CREED_AND_SPIRAL.md`) reviewed for promotion
+- [ ] The capstone's own signature (`00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md` → promotion)
+- [ ] The creed-and-spiral doc (now `06_ONTOLOGY/05_THE_CREED_AND_SPIRAL_PENDING_SIGNATURE.md`) reviewed for promotion
 - [ ] Work-order items 2–6, executed one per pass, on explicit instruction, receipts per act
 
 *The repository mutations occurred; the authority claim did not complete. Receipt 136 keeps both facts visible.*

@@ -7,9 +7,9 @@ rosetta:
   regime: "Ṛṣi"
   register: "[D] staged — the map from thousands of documents to the seven kernel surfaces"
 title: "The Kernel Index — axioms and revelations, the opposite of commandments"
-status: "SIGNED — founder ratified 2026-07-19 (receipt 139, 'yes to all'); per-clause [A/S/I/C] tiers as marked now canonical."
+status: "STAGED [D] 2026-07-19 — awaiting the founder's natural-person signature. Defines the kernel set and the distillation work order; adds no new doctrine."
 parents:
-  - 00_THE_WELTANSCHAUUNG.md
+  - 00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md
   - 00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md
   - 06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md
   - 06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md
@@ -31,10 +31,10 @@ The staged editorial architecture distills the corpus into **exactly seven kerne
 | K-3 | **The Axioms** | E1–E10, three layers (Being / Becoming / Conduct), each with tier, kill, survivors | `06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md` |
 | K-4 | **The Wagers** | W0 (das All, the crown) + W1–W12, each with its kill; the graves fenced | `06_ONTOLOGY/04_THE_CONJECTURES.md` |
 | K-5 | **The Refusals** | The constitution as via negativa — no extraction (η=0, over all bearers), no unsigned irreversibility, no erasure, no trapped exit, no infallibility — plus Ω the direction. *Refusals bind the holder, never the world.* | successor of the 5+1 surface, venture-vocabulary purged |
-| K-6 | **The Revelations** | What the work disclosed, earned and receipted (§2 below — this doc carries the draft) | → `06_ONTOLOGY/06_THE_REVELATIONS.md` at promotion |
+| K-6 | **The Revelations** | What the work disclosed, earned and receipted (§2 below — this doc carries the draft) | → `06_ONTOLOGY/05_THE_REVELATIONS.md` at promotion |
 | K-7 | **The Record** | The trial ledger: every kill fired, every grave dated, №-next always open; the postures; the retelling rule | `12_PUBLIC_SITE/record/` + `11_UPLINK/50_AUDITS_AND_EXECUTIONS/` + `08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md` (FOUR postures — deny/weaponize/confess/withdraw per r129; filename kept per K3) |
 
-The proposed **front door** is the capstone (`00_THE_WELTANSCHAUUNG.md`). After adoption and receipted distillation, every other corpus surface must route as evidence, archive, or tombstone beneath K-1…K-7. Until adoption, existing signed sources remain controlling; no file changes authority merely because this `[D]` index assigns it a future role.
+The proposed **front door** is the capstone (`00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md`). After adoption and receipted distillation, every other corpus surface must route as evidence, archive, or tombstone beneath K-1…K-7. Until adoption, existing signed sources remain controlling; no file changes authority merely because this `[D]` index assigns it a future role.
 
 ## 2 · The Revelations (draft kernel content — earned, receipted)
 
@@ -67,6 +67,6 @@ The proposed **front door** is the capstone (`00_THE_WELTANSCHAUUNG.md`). After 
 
 ## Execution surface
 
-`[D]` until signed. Agents: distill into these seven destinations only; do not archive, tombstone, or demote an existing owner source merely because this index assigns a future destination. Never create an eighth without the founder's deliberate act; a coverage failure returns to the founder rather than becoming agent doctrine. Revelations require receipts and prices. Refusals bind the holder, never the reader. **Canonical path:** `01_EMERGENTISM/00_THE_KERNEL_INDEX.md`
+`[D]` until signed. Agents: distill into these seven destinations only; do not archive, tombstone, or demote an existing owner source merely because this index assigns a future destination. Never create an eighth without the founder's deliberate act; a coverage failure returns to the founder rather than becoming agent doctrine. Revelations require receipts and prices. Refusals bind the holder, never the reader. **Canonical path:** `01_EMERGENTISM/00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md`
 
 ⊙ = • × ○ — *seven surfaces, one door, no commandments: check everything, obey nothing, and leave through the door we built you.*

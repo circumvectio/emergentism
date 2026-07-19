@@ -9,7 +9,7 @@ rosetta:
 title: "D5 — The Game: strategic relation, the dyadic grid, and the vow"
 status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
 parents:
-  - ../../00_THE_WELTANSCHAUUNG.md (§4 G7, §5 registers)
+  - ../../00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md (§4 G7, §5 registers)
   - ../../00_THE_AMRITA.md (§I.B.11–14, §II P2/P6)
   - ../../04_AXIOLOGY/00_THE_EXTRACTION_LAW.md (η-gate)
   - ../../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md
@@ -49,18 +49,20 @@ counterfeit-classification, boundary, horizon, and enforcement remain explicit
 inputs; `η` alone does not name the whole moral/ethical grid.
 
 **The canonical directional grid** `[I/S]` (with its 2026-07-19 completion still
-`[D]` pending K2) crosses direction with valence:
+`[D]` pending K2) crosses direction with valence. The surface verbs *give* and
+*take* do not determine valence: warranted receipt or a lawful cut may be
+non-extractive, while dependency-producing generosity may still extract.
 
-| | **gives / `η=0`** | **takes / `η>0`** |
+| | **non-extractive / `η=0`** | **extractive / `η>0`** |
 |---|---|---|
-| **Individual → Whole** | **moral** — the individual raises the sustaining whole | **immoral** — ego gain is purchased by degrading the whole |
-| **Whole → Individual** | **ethical** — the whole raises each bearer | **unethical** — the whole extracts from or sacrifices a bearer |
+| **Individual → Whole** | **moral** — the individual raises the sustaining whole without extracting from a bearer | **immoral** — ego gain is purchased by degrading the whole or another bearer |
+| **Whole → Individual** | **ethical** — the whole raises a bearer without externalizing extraction | **unethical** — the whole extracts from or sacrifices a bearer |
 
 Strict syntropy requires both bearer and sustaining whole to rise under the
 declared boundary. The gate is dyadic on purpose: **no aggregate laundering** —
 a positive group sum never licenses extraction from one member.
 
-**Power-Max, scoped.** "Extraction is irrational" is *not* a general Nash result (Model-B side-payments kill it — that grave stays shut, inherited game theory *used, not discovered*). What survives [S/I]: in substrate-dependent, long-horizon, whole-boundary games, sustained extraction self-terminates. Three named holes keep it scoped: **impatience** (short horizons make extraction pay), **maximand** (an extractor optimizing something other than long-run potential is not refuted, only diagnosed), **enforcement** (nothing in the arithmetic punishes the defector; only structure or vow does).
+**Power-Max, scoped.** "Extraction is irrational" is *not* a general Nash result (Model-B side-payments kill it — that grave stays shut, inherited game theory *used, not discovered*). What survives `[S/I]` is only the conditional lemma stated below: in a declared whole-boundary, long-horizon, closed arena with no fresh hosts or exit, extraction above regeneration self-terminates when extractors remain dependent on host viability and the relevant adoption/enforcement conditions hold. Outside those premises, the result does not follow. Short horizons may make extraction pay; an extractor optimizing another maximand is diagnosed rather than refuted; and arithmetic alone does not punish a defector.
 
 ---
 

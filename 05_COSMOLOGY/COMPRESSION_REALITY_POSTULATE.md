@@ -1,6 +1,15 @@
 # The Compression-Reality Postulate
 
-**Status:** [D] — Draft, pending K2 ratification
+**Status:** `[D/C]` — retained source draft under objection; **not in the Receipt
+139 signing set and not eligible for promotion in this form**.
+
+> **Adversarial ruling — 2026-07-19.** This document records a conjectural
+> session-generated proposal, not established doctrine. Description length does
+> not establish ontological priority; no representation-independent minimum has
+> been proved; Kolmogorov complexity is uncomputable in general and depends on a
+> declared description language up to an additive constant; and `D6 = D0` does
+> not follow. C1–C3 below are therefore rejected as axioms in their present form.
+> The source is preserved for provenance and possible reconstruction at `[C]`.
 
 ## The Postulate
 
@@ -61,13 +70,13 @@ The D-level hierarchy maps directly to the compression hierarchy. D0 (Bit) is ma
 4. The universe is a decompression algorithm — cosmology is the study of progressive decompression.
 5. eta=0 is a compression principle — extraction adds unnecessary complexity; zero extraction is maximally compressed exchange.
 
-## Formal Statement
+## Formal Statement — historical proposal, not valid axioms
 
 Axiom C0: The Three Titans (Zero, Infinity, Finity) are pre-mathematical conditions that define the space within which all mathematical and physical reality decompresses. They are maximally compressed because they cannot be decomposed further — each is irreducible.
-Axiom C1: For any R1, R2 of a phenomenon, if K(R1) < K(R2), then R1 is ontologically prior to R2.
-Axiom C2: P = Phi x V has minimum Kolmogorov complexity of any representation generating the full D-level hierarchy.
-Axiom C3: D6 = D0 follows from C1 — maximal decompression converges on maximal compression.
+Rejected C1: For any R1, R2 of a phenomenon, if K(R1) < K(R2), then R1 is ontologically prior to R2. **No such implication follows from description length.**
+Rejected C2: P = Phi x V has minimum Kolmogorov complexity of any representation generating the full D-level hierarchy. **No description language, generator class, or minimum proof is supplied.**
+Rejected C3: D6 = D0 follows from C1 — maximal decompression converges on maximal compression. **The inference is invalid; the only surviving ladder statement is the selected role analogy `D6≈roleD0` `[I]`.**
 
 ---
-Status: [D] — Draft. Pending K2 sitting and ratification.
+Status: `[D/C]` — provenance-preserved proposal under objection; not pending implicit ratification through Receipt 139.
 Lineage: Emerged from session with K2 (2026-07-19).

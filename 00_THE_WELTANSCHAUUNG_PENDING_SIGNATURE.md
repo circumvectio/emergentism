@@ -8,7 +8,7 @@ rosetta:
   register: "[D] STAGED — PENDING FOUNDER SIGNATURE. Per Rule zero, no in-stream 'yes', commit, or agent-written signature block is canon adoption."
   canonical_phrase: "The Emergentist Weltanschauung — the shrine before the signing"
 title: "The Emergentist Weltanschauung (PENDING SIGNATURE)"
-status: "SIGNED — founder ratified 2026-07-19 (receipt 139, 'yes to all'); per-clause [A/S/I/C] tiers as marked now canonical."
+status: "[D] STAGED — receipt 135 is provisional; no completed founder-promotion receipt exists (receipt 136)"
 date: 2026-07-19
 evidence_tier: "[B] catalog — the W0–W12 wagers and E1–E10 axioms carry their own tiers; the architecture is placement, not new doctrine"
 provenance: "Composed from the post-recovery arc: receipts 108 (keel), 109 (four false lemmas), 126 (Weltanschauung formal audit, K2-signed), 130 (algebra objection, split verdict), 131 (recovery ledger), 132 (tombstones-halāhala reaudit), 133 (full Rosetta council), 134 (purification audit, 7 caste verdicts); the Emergent Axioms E1–E10, the DoF ontology, the four-clause creed, the W0–W12 wagers, the μ aperture hypothesis, the D6 boundary-role relation, the −1 dark twin, and the three publication gates."
@@ -153,7 +153,7 @@ Every box remains open until the founder signs these exact consequences in one d
 
 ## 9 · The execution surface
 
-`[D]` until the founder-signature sitting. **Agents: execute the cleanup items only on explicit owner instruction, one scoped pass at a time, with receipts.** Receipt 135 exists as a provisional execution record; receipt 136 rules that it is not completed promotion authority. Canonical path: `01_EMERGENTISM/00_THE_WELTANSCHAUUNG.md` (this file).
+`[D]` until the founder-signature sitting. **Agents: execute the cleanup items only on explicit owner instruction, one scoped pass at a time, with receipts.** Receipt 135 exists as a provisional execution record; receipt 136 rules that it is not completed promotion authority. Canonical path: `01_EMERGENTISM/00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md` (this file).
 
 ---
 

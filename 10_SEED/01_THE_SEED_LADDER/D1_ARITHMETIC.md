@@ -10,7 +10,7 @@ rosetta:
 title: "D1 · Arithmetic — distinction through a reciprocal chart"
 status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
 parents:
-  - ../../00_THE_KERNEL_INDEX.md
+  - ../../00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md
   - ../../07_THEOLOGY/00_THE_AMRITA.md §I.A
   - ../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md
   - ../../00_META/00_SETTLED_CANON_REGISTRY.md
@@ -47,8 +47,9 @@ framework *selects* `+1` as its positive centre; the
 
 **Identity.** `1` is the multiplicative identity and a perfectly ordinary operand
 (`1/1 = 1` by the identity law of the field). Its distinguished status here is
-*relational*: unique positive fixed point of inversion, geometric midpoint of
-`0` and `∞`.
+*relational*: it is the unique positive fixed point of inversion and the origin
+of the declared logarithmic chart. Calling it a geometric midpoint of `0` and
+`∞` would require an additional metric and is not asserted here.
 
 **The log realignment.** Under `s = log ν`: the seam becomes the literal zero-sum
 `log φ + log ν = 0`; inversion becomes reflection `s ↦ −s`; the fixed point
@@ -81,8 +82,9 @@ toward one. The cure is a **frame repair, scoped honestly**:
   `0+5` is an operand; `0` as the additive frame-point is a boundary role. Reading
   one register through the other is the error; banning either is a second error.
 - Consequently `1 = 0 × ∞` (`⊙ = • × ○`) is an **emblem** of the frame register,
-  never field arithmetic `[A]`-forbidden as a theorem (associativity kills it:
-  `(2·0)·∞ ≠ 2·(0·∞)`).
+  never field arithmetic. In ordinary field arithmetic `∞` is not an operand and
+  both parenthesizations involving `0·∞` are undefined, so no associativity
+  counterexample is claimed.
 
 **What this rung refuses to claim.** No conserved discovery hides in `φ·ν = 1`
 (it is `ν := 1/φ` restated — grave 5); no trinity is forced (`{0,1,∞}` is a
