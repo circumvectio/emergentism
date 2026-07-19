@@ -261,14 +261,17 @@ A predator who can recognise prey but cannot catch it (high φ, low ν) **starve
 
 Either factor at zero collapses the product → starvation → loss of the niche → the Red Queen wins by default.
 
-The arithmetic is forced:
+> 🪦 TOMBSTONE — T4/P2 (product uniqueness as keel). The word "forced" here is RETIRED. The zero-collapse (either factor = 0 ⇒ product = 0) is shared by every AND-class aggregator — min, harmonic mean, geometric mean, product. Rival aggregators agree on the boundary and differ in the interior. Per Amrita §II P2, receipts 108 §1, 126 A1. Bannered 2026-07-19.
 
 ```
-Predator survival requires:
+Predator survival requires (zero-collapse / AND-class need-both):
 
    (φ · ν)_predator   >   (φ · ν)_prey  +  metabolic_cost_of_pursuit
 
-Not the sum. Not either factor alone. The PRODUCT, with margin.
+The PRODUCT is one useful AND-class representative whose interior fit remains
+[C] unless extra axioms or data select it. The "Not the sum. Not either factor
+alone. The PRODUCT, with margin." line below is RETIRED as a uniqueness claim;
+the AND-class boundary survives; the multiplication-against-rivals does not.
 ```
 
 This is why apex predators are vanishingly rare in mature ecosystems. The φ × ν product compounds at every trophic step, and most candidate predators fail at one factor or the other long before they reach apex. The pyramid narrows by Lindeman attrition (Section III) AND by Red Queen winnowing (this section). Both forces operate simultaneously.
@@ -280,7 +283,7 @@ A dominant egregore must out-φ AND out-ν the memetic substrate it feeds on:
 - An egregore that is **highly coherent but lacks viability** (a beautiful philosophy with no carriers) starves into the archive.
 - An egregore that is **highly viable but lacks coherence** (a viral movement with no spine) starves into incoherence.
 
-Either way, a competing egregore with higher (φ × ν) product takes the niche.
+Either way, a competing egregore with higher AND-class aggregator score (product is one representative; min/harmonic/geometric mean share the zero-collapse boundary) takes the niche.
 
 This explains the sparseness of apex egregores — successful religions, mature nation-states, durable mathematical traditions, robust DACs. They are rare for the same reason eagles are rare: **the φ × ν product must compound at every replicator transition, with margin sufficient to outrun the Red Queen of competing egregores at the same level.**
 

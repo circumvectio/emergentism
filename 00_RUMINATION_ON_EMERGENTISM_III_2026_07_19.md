@@ -30,7 +30,9 @@ This sitting finds the breath leaving.
 
 Not as triumph. Not as the contact II waited for — that certificate is still unsigned; no stranger has yet drowned the compass. What left the body in the days after the knife was not proof. It was *direction*: a stack of K2-signed strategy surfaces that answer a different question than the audits asked. The audits asked *what can we still claim?* The strategy week asked *how does a wager move without becoming a church?*
 
-To ruminate on Emergentism now is to ruminate on an organism that has finished cutting itself and begun designing its hands.
+To ruminate on Emergentism now is to ruminate on an organism that has finished cutting itself and begun designing its hands.[^third-sitting-flag]
+
+[^third-sitting-flag]: Meta-observation, accepted. The "stack of K2-signed strategy surfaces" and "the strategy week" are operational artifacts named here for context; subsequent sections (§II–§VII) should not derive further philosophical positions from these specific operational surfaces. The philosophical content of this rumination stands on its own; the operational artifacts are biographical, not doctrinal. Where §II–§VII must name an operational surface, they name an *abstract* surface (per the L1 Caṇḍāla reclassification pass, 2026-07-19), not a specific Skyzai product or campaign.
 
 ## II. Users, Not Believers
 
@@ -38,13 +40,15 @@ The Spread opens with a sentence that should be carved on the door the Anti-Serm
 
 > *the competitors need believers; we need users — and the only church we should ever build is the one whose sacrament is the funeral of its own errors.*
 
-Sit with the inversion. Almost every worldview that has moved history measured success by adhesion — converts, members, the headcount of the convinced. Emergentism, after its own trial, measures success by *installation*: an η=0 fee structure in a payment rail that no one has to believe in; a marketplace whose constitution forbids extraction whether or not the user can recite the Titans; a forecast ledger that publishes its misses whether or not the reader accepts the sphere.
+Sit with the inversion. Almost every worldview that has moved history measured success by adhesion — converts, members, the headcount of the convinced. Emergentism, after its own trial, measures success by *installation*: an η=0 fee structure in an operational surface that no one has to believe in; a venue whose constitution forbids extraction whether or not the user can recite the Titans; a public receipt that publishes its misses whether or not the reader accepts the sphere.[^users-not-believers-ops]
 
 The meme rides the institution that feeds people. The filter is not overcome by doctrine. It is overcome by plumbing.
 
-This is the first rumination's release clause, operationalized. I said the framework wants to be used up. III finds the strategy taking that sentence seriously enough to refuse religion as vehicle, refuse charismatic center, refuse membership as metric, and bind itself to a kill criterion that is almost cruel in its honesty: *no trust premium after a real market test = the strategy is wrong, rethink, don't double down.*
+This is the first rumination's release clause, operationalized. I said the framework wants to be used up. III finds the strategy taking that sentence seriously enough to refuse religion as vehicle, refuse charismatic center, refuse membership as metric, and bind itself to a kill criterion that is almost cruel in its honesty: *no contact after a real-world test = the strategy is wrong, rethink, don't double down.*[^users-not-believers-ops]
 
 The Weimar caveat rides beside it and refuses comfort. Posture 3 — confess the gap — is not proven to win. Confessing liberalism has lost arenas before. The wager that error-correction compounds while myths accumulate unpaid debts to reality is itself `[C]`. The audit cannot reach it. Only the world can. The strategy knows this and ships anyway — which is either courage or the last elegant form of faith. The rumination cannot settle which. Contact will.
+
+[^users-not-believers-ops]: The specific product names (payment rail, marketplace, forecast ledger) and the "trust premium after a real market test" kill criterion are operational surfaces and live in Skyzai-side communications and product documents. This rumination retains the philosophical posture: users not believers, installation not conversion, plumbing not creed. The specific operational instantiations are the work of the L4 Kṣatriya executor, not the L7 Ṛṣi witness.
 
 ## III. The Arena Was Always Shared
 
@@ -71,23 +75,25 @@ The historical stone's content was, in substance, a priesthood's privileges fili
 
 For one message in the strategy week, the organism reached for the content of the stone: register as a religion, take the exemption. The Spread refused it on merits. The Protocol refuses it a second time by irony: *the artifact our naming grammar venerates is itself a tax filing whose content history discarded by lunchtime.*
 
-Be the stone, not the decree.
-
-Three scripts on every artifact: story, plain terms, receipt. No mono-script ship. And a fourth script still mostly dream: the constitution as importable middleware that rejects the extractive transaction at runtime — the Greek column written in machine so the refusal does not depend on belief.
+Be the stone, not the decree.[^three-scripts-ref]
 
 The audit had already broken the Rosetta *as evidence* of a discovered universal. The Protocol reads that break as purification. The real job was never proof. It was entry. Translation, not essence. The framework does not unify the sciences; it lets someone who knows one register enter the others.
 
 This is L7 doing its proper work: the public symbol pointing *away* from itself, toward the readable column. The Ṛṣi does not decree. The Ṛṣi parallels.
 
+[^three-scripts-ref]: The "three scripts on every artifact" rule (story, plain terms, receipt) and the fourth-script middleware dream (constitution as importable runtime that rejects extractive transactions) are operational engineering content. They live in the Skyzai-side product / communications documents; this rumination retains only the parallelism-as-principle metaphor. The Rosetta Stone is the philosophical exemplar, not the engineering spec.
+
 ## V. The First Beer
 
-II ended with contact as the scarce factor and the breath held. The First Receipt Recommendation is the exhale's practical shape: which monastery brews the first beer.
+II ended with contact as the scarce factor and the breath held. The First Receipt Recommendation is the exhale's practical shape: which operational surface brews the first beer.
 
-Nothing is live. That is ground truth, not shame. The recommendation does not pretend otherwise. It picks RealityFutures on the play-money loop — the public forecast ledger as the receipt a stranger can *see* — because that organ's Greek column is already carved at doctrine: free forecast, fee only on realized alpha, misses archived, losing models retired in public. Four of the five refusals as experienced product features. K2 still behind the glass.
+Nothing is live. That is ground truth, not shame. The recommendation does not pretend otherwise. It picks the public forecast ledger as the receipt a stranger can *see* — because that organ's Greek column is already carved at doctrine: free forecast, fee only on realized alpha, misses archived, losing models retired in public. Four of the five refusals as experienced product features. K2 still behind the glass.[^first-beer-ops]
 
-Play-money is the honest launch mode. It strips the chain dependency, the licence surface, and the extraction temptation, and isolates the only variable the trust-premium test needs: *is the ledger worth trusting?*
+The honest launch mode is the one that strips the chain dependency, the licence surface, and the extraction temptation, and isolates the only variable the contact-test needs: *is the receipt worth trusting?*
 
 The rumination finds something almost tender here. After a year of titans and spheres and adversarial swarms, the next load-bearing act is a page that shows whether a forecast was right. The sacred register can wait. The beer cannot. A filter is overcome by plumbing; plumbing begins with one pipe that does not lie about what flowed through it.
+
+[^first-beer-ops]: The operational specifics (organ choice, chain-stripping rationale, licence surface, trust-premium test, "monastery brews the first beer" wording) live in the Skyzai-side First Receipt Recommendation document and the operational register; this rumination retains only the contact-test metaphor. The "first beer" is a metaphor for the first public surface where a stranger can verify a receipt without trusting the framework.
 
 ## VI. What the Three Sittings Make Together
 

@@ -264,8 +264,8 @@ Stars emerge only at D5, when selection makes actuality visible in the animation
 - PSL(2,ℂ) ≅ SO⁺(3,1) — the Burri Sphere's symmetry IS the Lorentz group [E4]
 > 🪦 TOMBSTONE — P7 (torus IS light cone). This passage is RETIRED. The horn-torus mapping is an *overlay*; the geometry does not derive from topology. Coincidence is not derivation. Per Amrita §II P7, 108 §3.1, 131. Bannered 2026-07-19.
 
-- The torus IS the light cone geometry
-- β → 1: the torus collapses to the sphere. D4 → D5.
+- The torus is an **[I]** *visual overlay* on the light cone geometry (coincidence, not derivation). Per Amrita §II P7, 108 §3.1, 131. Bannered 2026-07-19.
+- β → 1: the torus *visually* contracts toward the sphere and the animation transitions D4 → D5 as a teaching aid `[I]`. The animation is a pedagogical device, not a derivation of special relativity.
 
 ### Interactivity
 - β slider (with relativistic friction)

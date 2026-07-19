@@ -261,9 +261,9 @@ The photon is a horn-point entity. It lives on the genus transition surface. It 
 
 > 🪦 TOMBSTONE — P7 (torus IS light cone). This passage is RETIRED. The horn-torus mapping is an *overlay*; the geometry does not derive from topology. Coincidence is not derivation. Per Amrita §II P7, 108 §3.1, 131. Bannered 2026-07-19.
 
-The horn torus is the light cone. Tube contraction is length contraction. Hole closure is time dilation. The horn point is the speed of light. The energy curve is the relativistic divergence. None of this was designed. It fell out of the topology.
+The horn torus is **[I/S]** a *visual overlay* on relativistic geometry (coincidence, not derivation). Tube contraction, hole closure, the horn point, and the energy curve *correspond* to length contraction, time dilation, the speed-of-light limit, and the relativistic energy divergence respectively — but the correspondence is a `[I]` mapping, not a derivation. The topology does not *generate* the kinematics. Per Amrita §II P7, 108 §3.1, 131. Bannered 2026-07-19.
 
-Special relativity is what the genus transition looks like from inside D4.
+Special relativity is *not* what the genus transition "looks like from inside D4"; the genus transition is a `[I]` visual aid for the D4 dimension, not a derivation of relativity. The mapping is useful as a teaching image; it is not a theorem.
 
 ---
 

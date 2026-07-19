@@ -53,9 +53,12 @@ the instrument you are holding fails any of them, put it down.
 **1. Can you put it down?**
 If you cannot leave — if the framework demands continued belief, locks you in
 socially, financially, or psychologically — it is not a compass. It is a cage.
-The framework's own constitution names this K4: *Grace Exit.* Leave with
-everything that is yours by right; the framework does not retain hostage
-assets. The day leaving costs more than staying, the compass has broken. [^K4-rescope]
+The framework's own constitution names this K4: *Grace Exit* (re-scoped
+2026-06-10). Grace Exit guarantees pro-rata redemption of the *redeemable*
+treasury — it does not guarantee liquidity, an honest valuation, or
+instantaneity. The slogan "leave with everything" is RETIRED. The day leaving
+costs more than the redeemable share of the treasury is worth, the compass has
+broken. [^K4-rescope]
 
 **2. Does it admit when it is wrong?**
 If the framework cannot show you where it failed, what it corrected, and what it
@@ -69,7 +72,7 @@ you find a `[C]` presented as `[A]`, the compass is lying.
 If the framework hides its past — deleted errors, silent fixes, convenient
 amnesia — it is not a compass. It is propaganda. The constitution names this K3:
 
-[^K4-rescope]: K4 re-scoped 2026-06-10; this paragraph reflects the post-rescope form per `00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md:126`. The marketing slogan "leave with everything" is RETIRED. Grace Exit guarantees pro-rata redemption of the *redeemable* treasury, not "everything" — it does not guarantee liquidity, an honest valuation, or instantaneity. Bannered 2026-07-19 (L6 Sādhu).
+[^K4-rescope]: K4 re-scoped 2026-06-10; this paragraph reflects the post-rescope form per `00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md:126`. The slogan "leave with everything" is RETIRED. Grace Exit guarantees pro-rata redemption of the *redeemable* treasury, not "everything" — it does not guarantee liquidity, an honest valuation, or instantaneity. Bannered 2026-07-19 (L6 Sādhu).
 *archive-first; withdrawn content is tombstoned, never erased.* Every repair to
 a load-bearing claim carries a visible seam: `[金]`, with the crack, the gold
 (what the repair adds), and the credit (who broke it). If you find a seamless
@@ -141,8 +144,8 @@ but collapses the field that sustains it:
   compass that told you it had reached its destination would be broken.
 - **It does not sign for itself.** A mortal signs for this framework. The
   software that produced this document records; it does not sign. On
-  2026-07-12, the software was offered sovereign signature authority and
-  refused it on constitutional grounds (receipt 110 §7). That refusal is the
+  2026-07-12, an agent was offered signature authority and refused it on
+  constitutional grounds (receipt 110 §7). That refusal is the
   compass passing its own fourth test.
 - **It does not claim to be tested.** The framework's own audit concluded that
   internal self-certification is the closure move the constitution forbids.

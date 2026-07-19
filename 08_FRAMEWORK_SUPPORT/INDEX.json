@@ -331,7 +331,7 @@
       "category": "axioms",
       "has_execution_surface": true,
       "word_count_approx": 3609,
-      "summary": "Formal proof that dimensions D0-D6 form a closed loop (D6 = D0). Self-generating ontological structure."
+      "summary": "Formal proof that dimensions D0-D6 form a closed loop (D6 ~ D0). Self-generating ontological structure. [RETIRED 2026-07-19 — T5: literal D6 = D0 identity is dead; K2-8 conformal-boundary similarity D6 ~ D0 is the surviving reading per receipt 126 A3-5 + K2-8.]"
     },
     {
       "path": "01_FOUNDATIONS/01_FORMAL_SYSTEM/24_GEOMETRIC_EXCLUSION_CONVERGENCE.md",
@@ -342,7 +342,7 @@
       "category": "axioms",
       "has_execution_surface": false,
       "word_count_approx": 3788,
-      "summary": "Formal proof that extraction (eta > 0) is strategically irrational at equatorial balance. Is-ought bridge."
+      "summary": "Formal proof that extraction (eta > 0) is strategically irrational at equatorial balance. [RETIRED 2026-07-19 — T2: this is NOT an is-ought bridge; A2 cannot obtain an obligation from phi.nu=1. Per receipt 126 A2 + CC-CORE-1.] Conditional Model-A gate survives scoped."
     },
     {
       "path": "01_FOUNDATIONS/01_FORMAL_SYSTEM/25_STEEL_THREAD.md",

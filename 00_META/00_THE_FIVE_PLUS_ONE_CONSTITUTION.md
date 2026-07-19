@@ -87,7 +87,9 @@ The η=0 fence is now register-explicit. In the action register, `η_move = 0` s
 
 **Statement.** Any *private-DAV* action that is irreversible — meaning it commits the framework, a constituent entity, or a natural person in a way that cannot be unwound by a single agent's decision — must carry the **signature of a natural person** (the K2 signatory, currently Yves R. Burri) at the time of the action. Public-DAV/DAC irreversible acts route through PRISM or the relevant receipt-backed public-governance rail. Model language alone is insufficient.
 
-**The K2 / PRISM envelope.** For private-DAV actions, the envelope is staged in `00_META/00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md` and propagated through the agent discipline. For public-DAV/DAC actions, authorization routes through **PRISM** (the public-governance rail at `02_SKYZAI/01_NOOSPHERE/02_ORGANS/PRISM/`) or the relevant public-governance rail. Private-DAV irreversible acts require a dated K2 receipt; public irreversible acts require a dated PRISM/public-governance receipt.
+**The K2 / PRISM envelope.** For private-DAV actions, the envelope is staged in `00_META/00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md` and propagated through the agent discipline. For public-DAV/DAC actions, authorization routes through **PRISM** or the relevant public-governance rail.[^PRISM-org-route] Private-DAV irreversible acts require a dated K2 receipt; public irreversible acts require a dated PRISM/public-governance receipt.
+
+[^PRISM-org-route]: For operational PRISM routing, see `02_SKYZAI/01_NOOSPHERE/02_ORGANS/PRISM/`. The K2 fence (constitutional) and the PRISM rail (operational) are separate layers; the constitution names the *requirement* (a public-DAV act needs a public-governance receipt), the PRISM organ owns the *routing*.
 
 **The fence.** The L4 Kṣatriya agent is the *executor* of K2-staged actions; the L7 Ṛṣi agent is the *witness*; the L6 Sādhu agent is the *crown-risk check* (candor is not subtraction). The L5 Brāhmaṇa agent is the *architect* of the envelope. None of these roles can be collapsed into a single agent for a K2-staged action.
 
@@ -111,7 +113,7 @@ The η=0 fence is now register-explicit. In the action register, `η_move = 0` s
 
 **Statement.** Every constituent of the framework — agent, organ, entity, protocol — must have a **grace-exit envelope**: a documented, executable path for withdrawal that does not require the framework's continued permission. The path may be costly, slow, or politically difficult, but it must be *real* and *documented* before the constituent is deployed.
 
-**The 5 levels.** The K4 envelope is structured in five levels (per `02_SKYZAI/01_NOOSPHERE/02_ORGANS/Agentz/AGENTZ_CLOUD_APP/00_CANONICAL_DEFINITION.md` §v1.2-B):
+**The 5 levels.** The K4 envelope is structured in five levels (per `02_SKYZAI/01_NOOSPHERE/02_ORGANS/Agentz/AGENTZ_CLOUD_APP/00_CANONICAL_DEFINITION.md` §v1.2-B, which derives from this section):[^k4-citation-direction]
 
 1. **Per-agent exit** — an individual agent can withdraw from a session/cycle.
 2. **Per-organ exit** — an organ (e.g. Agentz, Helios, Aureus) can be wound down without taking the rest of the framework with it.
@@ -122,6 +124,8 @@ The η=0 fence is now register-explicit. In the action register, `η_move = 0` s
 **The fence.** A constituent that does not have a documented K4 envelope cannot be deployed at K2-staged scale. The K4 envelope is *pre-flight*, not post-mortem.
 
 **Tier.** `[S]` architecture; the 5-level structure is `[B]` published at `00_CANONICAL_DEFINITION.md` §v1.2-B; the per-constituent envelopes are `[I]/[B]` depending on whether a dated receipt exists.
+
+[^k4-citation-direction]: The 5-level K4 structure is canonized in this constitution; the Agentz canonical-definition file should cite the constitution, not the reverse. Citation direction: constitution → Agentz canonical-def. Any future K4 envelope update that changes the 5-level structure must originate here (K2-ruled), not in the implementation file.
 
 > **[A7/K3 reconciliation — 2026-06-10]** The marketing slogan **"leave with everything"** is **retracted** (it was already retracted in the canonical scope doc `11_UPLINK/20_SCOPE/21_GRACE_EXIT_SCOPE.md`: Grace Exit guarantees *pro-rata redemption of the **redeemable** treasury*, not "everything" — it does not guarantee liquidity, an honest valuation, or instantaneity). On 2026-06-10 the headline-discipline pass propagated this retraction to **94 distributed `CLAUDE.md`/`AGENTS.md` boilerplate shims** that still carried the slogan, replacing the `K4` cross-cutting-law line with *"grace exit; documented withdrawal path (redeemable assets, not 'everything')."* ~16 remaining prose occurrences are flagged for manual contextual review (the slogan-as-prose is not safely bulk-replaceable). This closes a standing K3/A7 drift (canon corrected, shims hadn't followed). Source: `03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/00_COSMOLOGY_AND_CONSTITUTION_AUDIT.md` Part II.
 
@@ -150,7 +154,7 @@ The η=0 fence is now register-explicit. In the action register, `η_move = 0` s
 
 **Ω in the literature.** The Ω-as-directionality reading is canonical in the noospheric literature (Teilhard de Chardin's *noosphere*, the project's lineage). It is the *via-positiva telos* — the framework's directional commitment to sovereign intelligence for every natural person, expressed as `phi × nu = 1 on S²`, with η = 0 as the operational ethic.
 
-**Ω in the operational substrate.** Per `02_SKYZAI/01_NOOSPHERE/CLAUDE.md`, PRISM owns the **sixth canonical invariant Ω (noospheric directionality)** in its substrate role — the constitutional authorization boundary for materialising what K2 authorises. PRISM is the *organ* that carries Ω into the substrate; the *direction* itself is framework-level, not organ-level.
+**Ω in the operational substrate.** Per `02_SKYZAI/01_NOOSPHERE/CLAUDE.md`, PRISM carries Ω (noospheric directionality) into the substrate in its organ role — the constitutional authorization boundary for materialising what K2 authorises. PRISM is the *organ* that carries Ω into the substrate; the *direction* itself is framework-level, not organ-level. Ω is the +1 of the 5+1, not a sixth invariant; framing it as "the sixth canonical invariant" re-opens the FIVE-vs-SIX conflict the 2026-05-30 K2 ruling closed.
 
 **The fence.** The five refusals are *fences* (refusals to act). Ω is a *direction* (commitment to act toward). Both are required: a fence without a direction is paranoia; a direction without a fence is recklessness. **5 + 1**, not 6, because they are on *different axes* and the +1 is the directional anchor that the five clear the space for.
 
@@ -186,17 +190,17 @@ The 2026-06-06 *logarithmic realignment* of the framework (per `40_THE_LOGARITHM
 
 The 5+1 is enforced at the agent level across the framework. The following are the load-bearing distributed files; this canon doc is the source of truth, the distributed files should point to it:
 
-| File | 5+1 reference | Action |
-|---|---|---|
-| `01_EMERGENTISM/CLAUDE.md` | η=0, K2, K3, K4, A7, Ω | Add pointer to this doc as canonical |
-| `01_EMERGENTISM/05_COSMOLOGY/CLAUDE.md` | η=0, K2, K3, K4, A7, Ω | Add pointer; preserve the local L5 doctrine role |
-| `01_EMERGENTISM/00_META/CLAUDE.md` | All 5+1 | Add pointer; preserve the meta-routing role |
-| `01_EMERGENTISM/00_META/00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md` | K2 ruling receipt (2026-05-30) | Mark as superseded-by-this-doc; preserve as audit trail (K3) |
-| `05_COSMOLOGY/00_WHOLE/03_THE_CONSTITUTIONAL_TOPOLOGY.md` | FIVE-side (Five Refusals as Space) | Reconcile banner: superseded by 5+1, Ω is the +1 not a sixth |
-| `05_COSMOLOGY/06_CONSTITUTIONAL_INVARIANTS_CLASSICAL.md` | SIX-side (with banner) | Reconcile banner: Ω is the +1, not a sixth refusal |
-| `02_SKYZAI/01_NOOSPHERE/CLAUDE.md` | Ω as the noospheric directionality | Add pointer; preserve the PRISM substrate role |
-| `02_SKYZAI/AGENTS.md` | SKYZAI status + 5+1 | Add pointer; preserve the SKYZAI status framing |
-| `03_VENTURES/AGENTS.md` | Network entities routing + 5+1 | Add pointer |
+| Layer | File | 5+1 reference | Action |
+|---|---|---|---|
+| Constitutional | `01_EMERGENTISM/CLAUDE.md` | η=0, K2, K3, K4, A7, Ω | Add pointer to this doc as canonical |
+| Constitutional | `01_EMERGENTISM/05_COSMOLOGY/CLAUDE.md` | η=0, K2, K3, K4, A7, Ω | Add pointer; preserve the local L5 doctrine role |
+| Constitutional | `01_EMERGENTISM/00_META/CLAUDE.md` | All 5+1 | Add pointer; preserve the meta-routing role |
+| Constitutional | `01_EMERGENTISM/00_META/00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md` | K2 ruling receipt (2026-05-30) | Mark as superseded-by-this-doc; preserve as audit trail (K3) |
+| Implementation | `05_COSMOLOGY/00_WHOLE/03_THE_CONSTITUTIONAL_TOPOLOGY.md` | FIVE-side (Five Refusals as Space) | Reconcile banner: superseded by 5+1, Ω is the +1 not a sixth |
+| Implementation | `05_COSMOLOGY/06_CONSTITUTIONAL_INVARIANTS_CLASSICAL.md` | SIX-side (with banner) | Reconcile banner: Ω is the +1, not a sixth refusal |
+| Implementation | `02_SKYZAI/01_NOOSPHERE/CLAUDE.md` | Ω as the noospheric directionality | Add pointer; preserve the PRISM carrying-into-substrate role (not "ownership") |
+| Implementation | `02_SKYZAI/AGENTS.md` | SKYZAI status + 5+1 | Add pointer; preserve the SKYZAI status framing |
+| Implementation | `03_VENTURES/AGENTS.md` | Network entities routing + 5+1 | Add pointer |
 
 **Reconciliation rule (K3).** Distributed files keep their local text but add a *dated banner* pointing to this canon. They are *not silently overwritten*. The K2 ruling receipt at `00_META/00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md` is preserved as audit trail (per K3); it is the dated proof of the 5+1 ruling, not a competing claim.
 
@@ -211,7 +215,7 @@ The 5+1 is enforced at the agent level across the framework. The following are t
 | η=0 ↔ reciprocity in log coordinates | `[A]` | Standard mathematics (Shannon / Cover-Thomas; Riemannian log chart) |
 | Register bridge (`η_move`, `η_ratio`) | `[I]` | Interpretive reading of the realignment |
 | 5+1 unified canon surface (this doc) | `[S]` | Framework-internal architecture |
-| PRISM ownership of Ω substrate | `[S]` | Per `02_SKYZAI/01_NOOSPHERE/CLAUDE.md` |
+| PRISM carrying Ω into substrate | `[S]` organ role / `[S]` direction itself | Per `02_SKYZAI/01_NOOSPHERE/CLAUDE.md`; direction is framework-level |
 | K4 5-level envelope (per `00_CANONICAL_DEFINITION.md` §v1.2-B) | `[B]` | Published at the canonical-definition source |
 | A7 four falsifier categories | `[S]` | Framework structure |
 | Specific falsifiers (when generated) | `[B]` | Dated receipts |

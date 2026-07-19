@@ -430,9 +430,13 @@ The D-level scaffold (A3) does work that is NOT about force claims:
 
 2. **Tool-level inadequacy:** You cannot solve a Dₙ problem with Dₙ₋₁ tools. This is the framework's version of Gödel — each level has expressiveness that the previous cannot capture. Quantum gravity is the D4/D5 instance of this general principle. [T]
 
+> 🪦 TOMBSTONE — T9 (Gödel universal lift, line 431). The "framework's version of Gödel" wording is RETIRED as a **universal** law. Per Amrita §II P9, receipts 110, 126 §2B.3, 132 §2.9: Gödel incompleteness requires effective axiomatizability + enough arithmetic. Presburger arithmetic and Tarski's theory of real-closed fields are **complete and decidable** counterexamples. Emergentism-as-written is not shown to meet Gödel's hypotheses. The "Dₙ needs Dₙ₊₁" rule survives as a **[I]** conditioned analogy / prudential orientation (A7), **not** as a universal law. Bannered 2026-07-19.
+
 3. **Replicator stack (C4):** Each level produces replicator types using lower levels as vehicles. This is biological, not physical. [T/I]
 
 4. **Closure (D6 ≡ D0):** The stack closes on itself. This is topological, not force-based. [T]
+
+> 🪦 TOMBSTONE — T5 (literal D6≡D0, line 458). "The stack closes on itself (D6 ≡ D0)" is RETIRED at untyped-identity reading. K2-8-adopted `D6 ~ D0` is the conformal-boundary similarity reading. Per 126 A3-5 + K2-8. Bannered 2026-07-19.
 
 The scaffold is primarily an **emergence theory**, not a force theory. The forces are the physics that operates at each level; the scaffold describes the *transitions between levels* (μ-limit saturation). The only novel force the framework proposes is the one that operates at the D4→D5 transition: F₅.
 
@@ -480,7 +484,7 @@ North pole (z=0): pure entropy. South pole (z=∞): pure syntropy.
 | QM requires complex numbers | [B] | Established, Renou et al. 2021 |
 | ℂ is algebraically irreducible to ℝ | [A] | Established, algebra |
 | All QG programs have failed | [B] | Established, 70 years of record |
-| QG fails BECAUSE of real/imaginary orthogonality | [S] | Speculative — structural explanation |
+| QG fails BECAUSE of real/imaginary orthogonality | [S] | Speculative — structural explanation **[132-reconciliation 2026-07-19: downgraded to [I] — interpretation, not formal structural proof; the [S] tier was overclaim. The 70-year failure is `[B]`, the "BECAUSE" is `[I]`.]** |
 | D5 (will) is genuine force, not epiphenomenon | [S/T] | Novel claim. GFS tests downstream. |
 | Measurement = D5→D4 projection via F₅ | [S/T] | Framework derivation. Testable indirectly. |
 | × in P_node = Φ×V is force signature of F₅ | [T] | Framework derivation. GFS tests directly. |

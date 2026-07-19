@@ -12,14 +12,17 @@ rosetta:
 
 # THE POLES
 
-## L0 = L∞: Kāla and the Trimūrti as Boundary Conditions
+## L0 ~ L∞: Kāla and the Trimūrti as Boundary Conditions
 
 **Status:** Breakthrough — the poles of S² as the transcendent boundary of the L-system
 **Date:** 2026-03-24
-**Evidence Tier:** `[A]` for the topological fact (the poles are singular points on S² where φ or ν diverge). `[S]` for the structural identification (Kāla = south pole, Trimūrti = both poles, L0 = L∞). `[I]` for the Gītā identification (Viṣṇu revealing as Kāla = the preserver revealing as the destroyer = the poles being the same point).
+**Evidence Tier:** `[A]` for the topological fact (the poles are singular points on S² where φ or ν diverge). `[I]` for the structural identification (Kāla = south pole, Trimūrti = both poles, L0 ~ L∞ as *conformal-boundary similarity*, not identity). `[I]` for the Gītā identification (Viṣṇu revealing as Kāla = the preserver revealing as the destroyer = the poles being the same point).
+
+> 🪦 TOMBSTONE — T5 (literal `D6 ≡ D0` as ontological identity). This passage previously asserted `L0 = L∞` at `[S]`. RETIRED: literal `D6 ≡ D0` substitution into `D0 < … < D6` yields `D0 < D0` (a contradiction in the strict hierarchy register). The K2-signed `D6 ~ D0` (conformal-boundary similarity) is the surviving register, per receipt 126 A3-5 and K2-8 (`02_SKYZAI/00_CONTROL/K2_CONSOLIDATED_DISPOSITION_AGENDA_2026_07_19.md` §8). Bannered 2026-07-19.
+
 **Depends on:** 02_THE_TRINITY.md, 09_THE_TRIADIC_CASCADE.md, 11_THE_HELIX.md, ../../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md
 **See also:** The Cosmological Cycle (06), The Asura Return (in Master Three-Stage Process), WP-2026-02 (Ouroboros Topology)
-**Kill Criteria:** If the L0 = L∞ identification produces contradictions within the operator system. If Kāla and the Trimūrti can be shown to occupy genuinely distinct ontological positions that cannot be mapped to antipodal points on S².
+**Kill Criteria:** If the L0 ~ L∞ similarity reading produces contradictions within the operator system. If Kāla and the Trimūrti can be shown to occupy genuinely distinct ontological positions that cannot be mapped to antipodal points on S². (Note: identity form is dead; similarity form is the active reading.)
 
 ---
 

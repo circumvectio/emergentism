@@ -52,7 +52,7 @@ Know what matters -> axiology
 Know how to act   -> teleology
 ```
 
-**Operational mission.**
+**Mission in operational form.**
 
 > Maximize durable usable worldline potential, `W_i(T)`, through
 > `P_node = Φ × V`, only where `P_node,i` and `P_node,H` preserve or raise one
@@ -261,22 +261,19 @@ subject to the same ladder as every claim it governs.
 
 ## 9. Current pursuit — run the goal as a Soul Loop
 
-The goal is pursued by a recurring execution loop, not by restating the vow:
+The goal is pursued by a recurring execution loop, not by restating the vow.
+The operational form — source-anchoring, public-mirroring, retrieval,
+verification, receipting — is the **O11 Vision/Mission runtime** defined in
+[VMOSK_A.md](VMOSK_A.md); this document does not re-derive it.[^goal-op-loop-ref]
 
-```text
-source truth -> public mirror -> retrieval/RAG -> verification gate -> receipt
-```
+The philosophical commitment is the same as §0 and §6: **disciplined correction
+faster than drift.** The goal names the commitment; VMOSK-A names the runtime
+that executes it. The five-Knows Soul Loop (§6) is the *form* of the commitment;
+the O11 loop is its *operational surface*; the two are not the same loop and
+should not be conflated. The pursuit of any advance must move through both
+loops in their proper order.
 
-Each material advance must first improve a source owner, then expose the same
-claim where readers meet the framework, then make the claim retrievable, then
-pass the gate that actually covers that surface. This is O11 in
-[VMOSK_A.md](VMOSK_A.md): the Vision/Mission runtime. It is the operational
-form of "disciplined correction faster than drift."
-
-The first pursuit loop is the Vision/Mission itself. It is canonical in
-VMOSK-A and this Goal, mirrored publicly on `/game/` and the homepage, indexed
-for RAG retrieval, and verified before publication. The next loops should use
-the same order for source anchoring, AIA export, and the paper program.
+[^goal-op-loop-ref]: The 5-step operational loop (source truth → public mirror → retrieval/RAG → verification gate → receipt) lives in [VMOSK_A.md](VMOSK_A.md) as the O11 Vision/Mission runtime. Repeating it here would re-derive the operational surface in the philosophical document; the L1 Caṇḍāla reclassification pass (2026-07-19) flags this as a layer-conflation (philosophical commitment vs operational runtime) and removes the inline restatement.
 
 ---
 

@@ -88,16 +88,16 @@ Extraction is consumption of the substrate that produces the thing extracted. It
 
 Here the biology witness (yours) is decisive, and it cuts **for** the framework once stated precisely.
 
-**Humboldt / red-devil squid (*Dosidicus gigas*) cannibalism is real and adaptive — because it is gated.** The honest evolutionary picture, not the loose one:
+**Humboldt / red-devil squid (*Dosidicus gigas*) cannibalism is real and adaptive — but the framework's earlier framing of it as "kin-discriminating" and as the `η=0` *witness* is RETIRED (see banner below).** The honest evolutionary picture, not the loose one:
 
 - Cannibalism is **density-dependent** (it rises under crowding / food scarcity) — it is a **population-regulation** mechanism, not a free lunch. It *is* the crash-avoidance of §2 operating from the inside.
-- It is **kin-discriminating** wherever kin-recognition exists. **Indiscriminate cannibalism that eats kin is selected *against*** (inclusive-fitness cost, Hamilton). A lineage that ate its own offspring at scale would lower its own gene frequency — extraction without justice, punished by the algebra of selection itself.
+- *Dosidicus gigas* is in fact **panmictic, semelparous, and weak-targeting** (per Amrita §II P3, receipt 101 #38, 108 §3.1). It does **not** kin-discriminate; it targets the weak, injured, or defector class, and it dies after a single reproductive episode. The earlier claim of "kin-discriminating" is **false-to-fact**; the squid is the extraction law's *counterexample*, not its witness. Any inclusive-fitness / Hamilton argument that depends on the squid being kin-discriminating is unsupported by the biology.
 
 > 🪦 TOMBSTONE — P3 (squid as η=0 witness). This passage is RETIRED. The squid (*D. gigas*) is the extraction law's *counterexample*, not its witness, per Amrita §II P3, receipt 101 #38, and 108 §3.1. The animal is panmictic, semelparous, weak-targeting. Live use as a witness is poison. Bannered 2026-07-19.
 
 So the squid does **not** show "extraction strengthens genes." It shows **gated extraction strengthens genes; ungated extraction lowers fitness.** The gate — *target non-kin, target the weak/injured/defecting, regulate by density* — is the exact structure the framework calls **justice**, and calls `η = 0` toward cooperators / tit-for-tat toward defectors. **Nature does not run η = 0 by decree; it runs it because the ungated lineages died.** That is the whole thesis in one animal: the gate is not morality imposed on biology — it is what survives.
 
-This is also why canon was already right to say Kālī *"takes, but it does not count as extraction,"* and to fire Kali only against `η > 0` defectors: **gated taking is the immune function that keeps `ΣΔP > 0`; ungated taking is the parasite that drives it negative.** The squid is the immune system, not the counterexample.
+This is also why canon was already right to say Kālī *"takes, but it does not count as extraction,"* and to fire Kali only against `η > 0` defectors: **gated taking is the immune function that keeps `ΣΔP > 0`; ungated taking is the parasite that drives it negative.** (The "squid is the immune system" line is RETIRED per the P3 banner above — the squid is the *counterexample*, not the immune system. The immune-function metaphor survives at `[I]` and is grounded in the gate structure, not in any animal witness.)
 
 ## 4. Re-scoping the Power-Max Lemma `[S]`
 
