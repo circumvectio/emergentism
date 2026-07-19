@@ -23,4 +23,12 @@ parents:
 
 *The gate holds because it does not always open. Sign it awake.*
 
-- [ ] **8 · The Seed Ladder** (added post-staging, wf_c72b7dd3): adopt `10_SEED/01_THE_SEED_LADDER/` (00_THE_SEED + D0–D6) as the Dasein-minimal compression spine. ⚠ Viṣṇu's dissent to rule: the D4 slot carries "Spacetime" (chart-freedom naming) while the world-ladder's fourth aperture is "mind" — the double-naming needs your one-line blessing on D4, or the stranger stumbles there every read.
+- [ ] **8 · The Seed Ladder** (added post-staging, corrected after the
+  `fd89949` truth-cut): adopt `10_SEED/01_THE_SEED_LADDER/` (`00_THE_SEED` +
+  D0–D6) as a **candidate minimum-sufficient reader projection**, subordinate
+  to K-1…K-7 and their receipts. This box does not assert a Kolmogorov minimum.
+  It adopts the explicit non-identity law: `D_n` is a ladder ordinal; spatial
+  dimension, spacetime dimension, world-aperture labels, Rosetta L-rows, and
+  K-surfaces are separate axes joined only by declared `[I/D]` crosswalks.
+
+- [ ] **9 · The Magnum Opus Blueprint** (wf_2b58ec8a): adopt `00_META/00_THE_MAGNUM_OPUS_BLUEPRINT_PENDING_SIGNATURE.md` — the final tree, full document roster, Kālī-lawful archive ledger, 5 execution waves. Carries 7 sub-decisions it refuses to pre-decide (charter row-62, registry rows, seed adoption, Sophia-Perennis fork grave, book-pwa node_modules, Q-1, Q-4).
