@@ -22,3 +22,5 @@ parents:
 **On signature, agents may then execute:** suffix drops · K-6 promotion to `06_ONTOLOGY/05_THE_REVELATIONS.md` (renumbered per the 05-slot ruling) · front-door read-order re-points (README/CLAUDE/AGENT_README) · the absorb/tombstone distillation waves, one receipted pass at a time · public-surface sync · then the external red team reads only the kernel.
 
 *The gate holds because it does not always open. Sign it awake.*
+
+- [ ] **8 · The Seed Ladder** (added post-staging, wf_c72b7dd3): adopt `10_SEED/01_THE_SEED_LADDER/` (00_THE_SEED + D0–D6) as the Dasein-minimal compression spine. ⚠ Viṣṇu's dissent to rule: the D4 slot carries "Spacetime" (chart-freedom naming) while the world-ladder's fourth aperture is "mind" — the double-naming needs your one-line blessing on D4, or the stranger stumbles there every read.
