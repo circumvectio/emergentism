@@ -1492,6 +1492,14 @@ class QuantumRemovalAndMutationTests(unittest.TestCase):
         for text in (stabilization, closure, uplink):
             self.assertNotRegex(text, r"D5[^\n]{0,80}(?:last experiential|summit of experience)")
         self.assertIn("The Soul Loop runs at D4", stabilization)
+        self.assertNotIn("physical `D5` process", stabilization)
+        self.assertNotIn("positive `D5` sediment", stabilization)
+        self.assertNotIn("as upper `D5`", stabilization)
+        self.assertNotIn("Soul Loop integration as the `D5`", stabilization)
+        self.assertIn("Any physical realization", stabilization)
+        self.assertIn("remain an actual `D4` process", stabilization)
+        self.assertIn("institutional\n   sediment as `D4` traces", stabilization)
+        self.assertIn("any Soul\n   Loop integration as an actual `D4` process", stabilization)
         self.assertIn("actual mapping and experience remain `D4`", closure)
         self.assertIn("actual experience and Soul Loop execution remain D4", uplink)
 

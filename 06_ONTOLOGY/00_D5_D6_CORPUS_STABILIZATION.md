@@ -104,9 +104,10 @@ D6: apophatic boundary where the represented image is released as finality
 
 This prevents both errors: naive material omega ("the universe literally
 becomes one final machine") and vague mysticism ("D6 is magic beyond matter").
-The harder claim is that the strongest positive completion image remains a
-physical `D5` process, while `D6` is the release of that image's finality claim.
-`[S/I]`
+The strongest positive completion image remains a conjectural `D5` possibility.
+Any physical realization, recursive correction, or Soul Loop execution would
+remain an actual `D4` process, while `D6` releases the represented image's
+finality claim. `[S/I]`
 
 ---
 
@@ -127,7 +128,9 @@ When older corpus documents say:
 
 read it as:
 
-- the upper horizon of positive `D5` sediment: institutions, symbolic orders, civilizational memory, and collective patterning
+- actual `D4` institutions, symbolic records, civilizational memory, and
+  collective traces representing and reweighting `D5` alternative collective
+  configurations
 
 When older corpus documents say:
 
@@ -136,7 +139,7 @@ When older corpus documents say:
 read it as:
 
 - poetic return shorthand for `r₆:D6↝D0`, not literal identity or a further
-  experience above `D5`
+  experience or positive state
 
 ---
 
@@ -174,13 +177,17 @@ This sentence may be reused verbatim.
 
 1. Default to the stabilized D5/D6 architecture when summarizing the corpus.
 2. Interpret older `D6` language charitably through the newer canon instead of amplifying the older wording.
-3. Treat collective patterning, noosphere language, and institutional sediment as upper `D5`, not literal `D6`.
+3. Treat actual collective patterning, noosphere discourse, and institutional
+   sediment as `D4` traces; type only their represented alternative collective
+   configurations as `D5` possibilities. Neither is literal `D6`.
 4. Describe formation as opacity or a candidate `currently_unreduced`
    crossing only when its evidence record is explicit; never infer strong
    emergence from a missing reduction. Governance remains an actual D4
    process over represented D5 possibilities.
 5. Preserve `D6` as closure, not an additional possession.
-6. Treat universal holobiont / Soul Loop integration as the `D5`-limit image seen from inside the system; `D6` releases that image's claim to final possession.
+6. Treat a universal holobiont as a represented `D5` possibility and any Soul
+   Loop integration as an actual `D4` process; `D6` releases the image's claim
+   to final possession.
 
 *Stabilization is not censorship. It is the corpus learning how to read itself more precisely.*
 
