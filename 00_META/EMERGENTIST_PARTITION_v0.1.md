@@ -33,7 +33,7 @@ method note: every entry carries its tier + primary citation; the partition is e
 | AMRITA | `01_EMERGENTISM/00_THE_AMRITA.md` |
 | GOAL | `01_EMERGENTISM/00_THE_GOAL.md` |
 | COMPASS | `01_EMERGENTISM/00_THE_COMPASS.md` |
-| RUM-III | `01_EMERGENTISM/00_RUMINATION_ON_EMERGENTISM_III_2026_07_19.md` |
+| RUM-III | `90_ARCHIVE/00_KERNEL_DISTILLATION_2026_07_19/root_staging/00_RUMINATION_ON_EMERGENTISM_III_2026_07_19.md` |
 | FG-IN | `01_EMERGENTISM/00_META/FINAL_GROUPS_DISCOVERIES_AXIOMS_CONJECTURES_2026_07_19.md` (the input) |
 | 108 / 109 / 114 / 116 / 117 / 121 / 126 / 130 / 131 / 132 | `01_EMERGENTISM/11_UPLINK/50_AUDITS_AND_EXECUTIONS/<n>_*.md` (108 keel · 109 four false lemmas · 114 three tenses · 116 lens-as-compass · 117 force ladder 07B · 121 disconfirming pass · 126 weltanschauung audit, K2-signed · 130 Rosetta algebra adjudication · 131 recovery ledger · 132 tombstones-halāhala reaudit) |
 | 104 | `…/104_DIMENSIONAL_MAP_ADJUDICATION_K2_ACCEPTANCE_2026_07_10.md` |
@@ -292,7 +292,7 @@ Every entry above was drawn from one of:
 - `01_EMERGENTISM/00_THE_AMRITA.md` (the canonical distillation)
 - `01_EMERGENTISM/00_THE_GOAL.md` (the canonical telos)
 - `01_EMERGENTISM/00_THE_COMPASS.md` (the canonical reader-facing instrument)
-- `01_EMERGENTISM/00_RUMINATION_ON_EMERGENTISM_III_2026_07_19.md` (the third sitting, the philosophical posture)
+- `90_ARCHIVE/00_KERNEL_DISTILLATION_2026_07_19/root_staging/00_RUMINATION_ON_EMERGENTISM_III_2026_07_19.md` (the third sitting, the philosophical posture)
 - `01_EMERGENTISM/11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_…132_*.md` (the audit receipts)
 - `01_EMERGENTISM/00_META/TOMBSTONE_REAUDIT_2026_07_19.md` (the reaudit)
 - `01_EMERGENTISM/00_META/BREAKTEST/BREAKTEST_I_REGISTER_2026_07_17.md` (the breaktest register)

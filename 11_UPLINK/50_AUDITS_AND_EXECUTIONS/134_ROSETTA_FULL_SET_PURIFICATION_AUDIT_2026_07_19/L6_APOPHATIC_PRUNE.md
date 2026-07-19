@@ -95,7 +95,7 @@ K3 discipline: **tombstone = move to `90_ARCHIVE/` with a dated marker; nothing 
 | `00_OPEN_CANON_FOUNDATION_*` (4 docs) | **TOMBSTONE / re-home** | Legal-institutional vehicle — counsel-stage admixture, not worldview. |
 | `00_THE_FIRST_RECEIPT_RECOMMENDATION_v0.1.md` | **TOMBSTONE / re-home** | Execution memo: which organ ships first — pure product lane. |
 | `00_THE_ROSETTA_PROTOCOL_v0.1.md` | **TOMBSTONE §4th-script / KEEP re-scope** | The lens-not-universal correction (W8) is doctrine; the three/four-scripts shipping program is transmission ops — split before archiving. |
-| `00_RUMINATION_ON_EMERGENTISM` I–III | **TOMBSTONE** | Process thought; their surviving content is already distilled into Amrita + kernel. |
+| `90_ARCHIVE/00_KERNEL_DISTILLATION_2026_07_19/root_staging/00_RUMINATION_ON_EMERGENTISM` I–III | **TOMBSTONE — EXECUTED 2026-07-19** (Wave 2; K3 stone at `90_ARCHIVE/00_KERNEL_DISTILLATION_2026_07_19/TOMBSTONE.md`) | Process thought; their surviving content is already distilled into Amrita + kernel. |
 | `00_SEVENFOLD_FOUNDATION_ROOT.md` | **KEEP as scaffold, not canon** | Filing grammar [S] — the shelf, not the book; excluded from the axiom set by its own §0 axiomatic guard. |
 | Navigation surfaces (`00_EMERGENTISM_AS_A_LENS`, `00_FOLDER_LAYOUT`, `00_FOUNDATION_READER_GUIDE`, `00_INSIGHTS_INDEX`, `00_CANONICAL_TREE_OUTLINE`) | **KEEP, minimal** | Maps of the map; necessary wayfinding, zero doctrinal weight. |
 | The seven `-ology/` folders, `00_META/`, `00_CONTROL/` | **KEEP as corpus** | The full cathedral behind the kernel — the spine cites them; they are the deep stack, not the door. |

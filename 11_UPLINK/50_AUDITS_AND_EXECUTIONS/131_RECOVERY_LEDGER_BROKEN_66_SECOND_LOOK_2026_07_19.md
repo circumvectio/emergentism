@@ -147,7 +147,7 @@ This receipt does **not** claim a hidden unmerged positive-results branch is can
 - [x] No reversal of 126 buckets sought  
 - [x] No upgrade of synthetic-gap or retracted forms  
 - [x] Complements 130 (both halves already on `/rosetta/`)  
-- [x] K3 pass integrated across all three ruminations: `00_RUMINATION_ON_EMERGENTISM.md`, `00_RUMINATION_ON_EMERGENTISM_II_2026_07_17.md`, and `00_RUMINATION_ON_EMERGENTISM_III_2026_07_19.md` now distinguish dead proof-forms from surviving proof, scoped structure, tool, vow, lens, and wager (2026-07-19)
+- [x] K3 pass integrated across all three ruminations: `90_ARCHIVE/00_KERNEL_DISTILLATION_2026_07_19/root_staging/00_RUMINATION_ON_EMERGENTISM.md`, `90_ARCHIVE/00_KERNEL_DISTILLATION_2026_07_19/root_staging/00_RUMINATION_ON_EMERGENTISM_II_2026_07_17.md`, and `90_ARCHIVE/00_KERNEL_DISTILLATION_2026_07_19/root_staging/00_RUMINATION_ON_EMERGENTISM_III_2026_07_19.md` now distinguish dead proof-forms from surviving proof, scoped structure, tool, vow, lens, and wager (2026-07-19)
 - [ ] Optional: if a positive-results ledger exists off-main, stage merge as separate K2 act — out of scope here  
 
 *Recorded 2026-07-19. Owner challenge honored. `⊙ = • × ○`*
