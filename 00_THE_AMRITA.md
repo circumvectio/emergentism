@@ -10,13 +10,24 @@ rosetta:
 title: "The Amrita"
 status: "DISTILLATION — 2026-07-03; recovery-integrated 2026-07-19. The load-bearing essence of the corpus, separated into nectar and halāhala without flattening dead proof-forms into dead ideas. Tier-honest; nothing here is new doctrine."
 provenance: "Workflow wf_223bec21 (churn of 12 lanes, 72 nectar + 48 halāhala) + the 2026-07-02/03 empirical program + receipts 108, 126, 130, and 131. The 2026-07-19 recovery revision integrates AND-class, Rosetta split-verdict, planetary-confound, and anti-reinflation corrections."
+authority_boundary: "Evidence distillation only. Active philosophical authority is 00_THE_EMERGENTIST_WELTANSCHAUUNG.md and its Kernel Index owners."
 ---
 
 # The Amrita
 
+> **[金] Distillation membrane — 2026-07-19.** This document preserves nectar,
+> poison, and the recovery record; it does not create doctrine. Where its older
+> compressions differ from [The Emergentist Weltanschauung](00_THE_EMERGENTIST_WELTANSCHAUUNG.md),
+> [Kernel Index](00_THE_KERNEL_INDEX.md), [Five Refusals](00_META/00_THE_FIVE_REFUSALS_AND_DIRECTION.md),
+> [Justice owner](04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md),
+> [D4/D5 reference](05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md),
+> or [Soul Loop](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md),
+> those active owners control. In particular: no aggregate morality, no
+> `η`-only sufficiency, no literal D6 identity, and no signer-as-collapse.
+
 > **The churning.** Turn the ocean of the corpus and two things rise: the **amrita** (the nectar — what is genuinely load-bearing and survives an adversary) and the **halāhala** (the poison — overclaim, tautology-laundering, convergence-as-proof, and the claims that broke on real data). The old error was to drink both as nectar. Here they are separated. Śiva holds the poison in his throat so the framework does not swallow it.
 >
-> **One rule of reading:** every drop carries its tier. `[A]` = proven, world-independent. `[B]` = built/measured by us. `[S]` = structural, true inside stated premises. `[I]` = illuminating reading, not proof. `[C]` = conjecture. `[D]` = staged / draft (pending K2 sign or peer review; not yet canonical). A drop's power is exactly its tier — no more.
+> **One rule of reading:** every drop carries its tier. `[A]` = proven, world-independent. `[B]` = built/measured by us. `[S]` = structural, true inside stated premises. `[I]` = illuminating reading, not proof. `[C]` = conjecture. `[D]` = staged / draft, pending its declared review or adoption gate; not yet canonical. A drop's power is exactly its tier — no more.
 
 ---
 
@@ -26,23 +37,30 @@ provenance: "Workflow wf_223bec21 (churn of 12 lanes, 72 nectar + 48 halāhala) 
 
 1. **Reciprocal conjugacy — the ring that closes.** For `φ,ν > 0` with `φ·ν = 1`, driving one coordinate toward `0` forces its reciprocal toward `∞`. This is `[A]` inside the defined reciprocal chart. It does **not** by itself prove a finite-node zero-factor catastrophe, uniquely select `P_node = Φ×V`, or derive ethics. Receipt 108 recovers the operational boundary as **AND-class**: product, minimum, and related need-both forms can share annihilation and a binding constraint; the product-specific interior remains `[C]`.
 2. **The positive self-dual unit.** On the positive-real chart, `1` is the unique fixed point of inversion `x ↦ 1/x`, which becomes reflection `s ↦ −s` under `log`. On `ℂP¹`, inversion has both fixed points `±1`; the framework selects `+1` as the positive centre. It is the multiplicative unit and maps to the additive origin (`log 1 = 0`).
-3. **The projective frame and the honest foursome.** Three distinct points such as `{0,1,∞}` fix a projective coordinate frame on `ℂP¹` up to Möbius transformation `[A]`; the choice of `+1` over `−1` is not forced. Under inversion, `0↔∞` and both `±1` are fixed, so the honest closure witness is `{−1,0,1,∞}`. The Titans `{0,1,∞}` remain a meaningful `[S/I]` naming choice, not a uniquely derived trinity. Receipt 130 recovers the real algebraic content: fixed centre plus mirror pairs.
+3. **The projective frame and the honest foursome.** Three distinct points such as `{0,1,∞}` fix a projective coordinate frame on `ℂP¹` up to Möbius transformation `[A]`; the choice of `+1` over `−1` is not forced. Under inversion, `0↔∞` and both `±1` are fixed, so `{−1,0,1,∞}` is a chosen inversion-invariant union—not the orbit or topological closure of `{0,∞}`. The Titans `{0,1,∞}` remain a meaningful `[S/I]` naming choice, not a uniquely derived trinity. The surviving algebraic content is a fixed set plus a mirror pair.
 4. **The equator, derived not chosen.** By AM-GM, `φ + ν ≥ 2` with equality iff `φ = ν = 1`; `B = sin θ = 2/(φ+ν)` maxes there, and the imbalance-price `γ = (φ+ν)/2` rises monotonically toward the poles. **Unconditional sphere geometry.** This is the one piece of the whole balance story that survived every falsification untouched — because it is pure arithmetic.
 5. **One degree of freedom in the reciprocal chart.** Once `φ·ν = 1` is stipulated, two positive coordinates reduce to one: `(φ−ν)² = (φ+ν)² − 4`, `φ+ν = 2/sinθ` under the chosen parameterization. This earns the one-dimensional reciprocal curve inside the lens; it does not independently derive `S²` as the territory.
 6. **The log realignment.** Under `s = log ν`: `log φ + log ν = 0` (the literal zero-sum), `B = sech(s)`, `E = s²`, `H = 2cosh(s)`. Reciprocation becomes reflection; the multiplicative structure becomes elementary. The additive and multiplicative faces of number are coupled by `log/exp`, keystoned by `log 1 = 0`.
-7. **The mass-shell.** Under `φ = e^w, ν = e^{−w}` (rapidity), `φ·ν = 1` **is** `E² − (pc)² = (mc²)²`. The equator is the rest frame `E = mc²`; the dyadic runaway is the relativistic divergence toward the light cone. Verified numerically.
-8. **The operators are the Möbius classes.** The five VIVEKA operators map onto the conjugacy classes of `PSL(2,ℂ)` — elliptic (Viṣṇu), hyperbolic ± (Brahmā/Śiva, *one flow two directions*), loxodromic (Kṛṣṇa), parabolic (Kali). The four-class trace partition is a genuine theorem; the naming is `[I]`.
+7. **The mass-shell correspondence.** Under the selected rapidity definitions,
+   normalized light-cone coordinates can satisfy both a reciprocal identity and
+   the mass-shell relation. The algebra after those definitions is `[A]`; the
+   identification with the Emergentist chart is `[I]`. The chart does not derive
+   special relativity, a new force, or an enlarged physical light cone.
+8. **The operator/Möbius correspondence.** Möbius transformations have standard
+   conjugacy classifications `[A]`. Mapping named VIVEKA operators onto selected
+   classes is `[I]`, is neither exhaustive nor unique, and transfers no proof
+   from the mathematics to the operator mythology.
 9. **Division localized, not eliminated.** In the projective chart, nonzero `N/0` is represented by `∞`; `0/0` and `∞/∞` remain indeterminate. Ordinary identities may still appear as operands — `1/1 = 1` is not frame-forbidden. The sphere does **not** make every undefined operation well-defined; local dissolutions must be justified case by case.
 10. **An honest negative result.** Bare `S²` **cannot** produce `SU(3)` (scalar-Laplacian degeneracies are `1,3,5,7,…`; none is `8`). The framework states where its own geometry stops. *This is nectar because it is a limit the framework imposed on itself.*
 
 ### B. The structure `[S]` — true inside stated premises
 
-11. **The four-move exhaustion plus the selected frames.** Exhausting `{self,other} × {Φ,V}` with the η/give–take axis explicit yields **exactly four** transfer cells (2 Gods give, 2 Demons take) within that two-axis game. The three Titans are read-only boundary frames selected by the framework; adding them gives the useful sevenfold deployment grammar, but **seven is not forced by the algebra**. Morality rides on η, never on the operator's name. `[S]` for the scoped four-cell exhaustion; `[I/S]` for the selected sevenfold stitch.
+11. **The four-move exhaustion plus the selected frames.** Exhausting `{self,other} × {Φ,V}` with the declared cross-factor give/take grammar yields **exactly four** transfer cells (2 Gods give, 2 Demons take) inside that scoped game. The three Titans are read-only boundary frames selected by the framework; adding them gives a useful sevenfold deployment vocabulary, but **seven is not forced by the algebra**. `η` records direction and hidden extraction; Justice additionally requires bearers, consent, custody, contest, payer, beneficiary, reversibility, horizon, consequence, and exit. `[S]` for the scoped four-cell partition; `[I/S]` for the selected sevenfold stitch.
 12. **The balance-optimum is CONDITIONAL.** The equator is optimal for a real system **only** if it is (i) conservation-bound, (ii) complementary, (iii-a) costly-in-excess, **and (iii-b) symmetrically γ-priced**. Drop (iii-b) → the optimum slides off-equator to a tilted Cobb-Douglas ratio; drop the rest → a plateau, or specialization *wins*. This is the honest form that *replaced* the universal claim after real data (Munnell `d² = +0.27`) showed a balance **trough** at aggregate scale. *(Your insight #4, corrected and kept.)*
 13. **The extraction refusal and its scoped supports.** `η_move = 0` is the constitutional vow: refuse sustained extraction and preserve reciprocal relation. It has structural support in genuinely substrate-dependent systems and a settled game result in **Model A only**; it is not a universal Nash theorem or an ought derived from geometry. The earlier `ΣΔP` aggregate can license sacrifice outside the dyad and is therefore dropped as the moral primitive. Specific biological, market, and civilizational extensions keep their own evidence burdens.
-14. **The constitution is constrained optimization.** `5 + 1` = *maximize `Ω` (the option cone) **subject to** the five refusals (`η=0, K2, K3, K4, A7`) as the feasible set.* Balance and `η=0` are the **constraint**, not the goal — the strong "reality maximizes `B`" reading was *withdrawn* when the empowerment test showed the option cone is reach-dominated and diverges from the equator. This withdrawal is itself nectar.
+14. **The holder-binding constitution is a constrained direction.** The active five refusals prohibit extraction, unaccountable consequence, erasure, captivity, and immunity from correction; `Ω` orients the holder toward durable mutual option-cone widening under Justice. This is an `[I/vow]` objective inside a declared feasible set, not a law that reality or every agent already maximizes. The strong “reality maximizes `B`” reading remains withdrawn.
 15. **Commandment vs Geometry.** A constraint enforced as *structural consequence* (violation shows up as measurable loss in the tested domain) is a categorically different object from an externally-imposed rule needing an enforcer. `[I]`, and the distinction — not the sphere-math — is what carries.
-16. **D5's emergence asymmetry.** Strongly emergent in genesis (opaque, un-shortcuttable from below), weakly emergent in governance (compressible once stabilized). *"Opaque from below, legible from above."* `[S/I]`, and falsifiable-shaped — it predicts *where* reduction fails vs succeeds. *(Keep the law; cut the boast that it's "one of the strongest general laws" — see halāhala.)*
+16. **Candidate emergence asymmetry.** “Opaque from below, legible from above” remains a testable `[C]` pattern for a declared μ-crossing, not a law or proof of strong emergence. Each case must name a saturation variable and threshold, recovered lower dynamics, reduction status, rival, prediction, and kill. A successful reduction reclassifies the case as weak emergence without destroying the scaffold.
 17. **The tier-separated ground.** `Ground → Being → Teleological Force → Dasein → beings`, each term held apart, with the anti-reification rule enforced structurally: *the seer is not on the sphere; the lens diagrams what shows, not the showing.* The sphere is the first stable closure of the Ground — **never** the Ground.
 
 ### C. The kill-switch `[S]` — the zeroth insight, the reason the rest survive

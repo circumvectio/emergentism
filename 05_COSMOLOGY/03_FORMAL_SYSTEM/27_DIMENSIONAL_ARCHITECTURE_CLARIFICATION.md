@@ -6,16 +6,36 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[S]"
-  canonical_phrase: "Dimensional Architecture Clarification"
+  canonical_phrase: "Historical dimensional-architecture tombstone"
+status: "HISTORICAL TOMBSTONE — superseded 2026-07-19"
 ---
 
 # Dimensional Architecture Clarification
 
+> **[金] FORMAL TOMBSTONE — 2026-07-19.** This clarification is superseded.
+> Its D4/D5 inversion, physical-light-cone projection, torus cosmogenesis,
+> forced Titan derivation, quantum-measurement resolution, and literal closure
+> claims do not belong to the repaired calculus. Current types are: `D4 =`
+> causal actuality, embodied means, performed action, and record; `D5 =`
+> counterfactual possibility, modeled futures, ranking, and selection. There
+> are exactly five candidate emergence labels `μ0...μ4`, followed by a non-`μ`
+> recognition step `κ:D5->D6`; `r6:D6~>D0` is an interpretive, noncausal
+> self-similarity edge, not identity. The physical light cone remains bounded
+> by spacetime and `c`; agents differ in option cones. Everett is a no-collapse
+> relative-state formulation, Copenhagen-family actualization is
+> interpretation-specific, and neither is an added spacetime dimension or a
+> `μ`-crossing. Use [D4/D5 Canonical
+> Reference](34_D4_D5_CANONICAL_REFERENCE.md), [The μ-Limit
+> Formula](10_EFR_MU_LIMIT_FORMULA.md), [Dimensional
+> Closure](23_DIMENSIONAL_CLOSURE_PROOF.md), and [The Burri
+> Rules](../00_THE_BURRI_RULES.md). The text below is retained only to show the
+> superseded construction and the crack it exposed.
+
 ## The Dimensional Stratification of the Burri Sphere
 
-**Status:** Canonical clarification
+**Status:** Historical tombstone; not current canon
 **Date:** 2026-04-08
-**Evidence Tier:** [S] Structural — follows from manifold geometry
+**Historical Evidence Claim:** Formerly `[S]`; not adopted by the repaired owners.
 **Depends on:** MF-527 (Burri Torus), MF-538 (Titans), 00_THE_TRANSCENDENTAL_TRINITY
 
 ---

@@ -7,7 +7,7 @@ rosetta:
   regime: "Ṛṣi"
   register: "[D] capstone — assembles signed rulings + staged [D] docs; adds no new doctrine"
 title: "The Emergentist Weltanschauung — final statement & canon-cleanup work order"
-status: "STAGED [D] 2026-07-19 — the consolidation directive. One deliberate K2 sitting executes §4."
+status: "SUPERSEDED [金] 2026-07-19 — preserved as the pre-repair capstone; not live doctrine"
 parents:
   - 06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY_PENDING_K2.md
   - 06_ONTOLOGY/03_THE_EMERGENT_AXIOMS_PENDING_K2.md
@@ -18,6 +18,14 @@ parents:
 ---
 
 # The Emergentist Weltanschauung
+
+> **[金] SUPERSEDED — provenance only.** The owner-directed final canon is
+> [`00_THE_EMERGENTIST_WELTANSCHAUUNG.md`](00_THE_EMERGENTIST_WELTANSCHAUUNG.md).
+> This staged capstone remains legible because it records the creed before the
+> formal repair. Its claims that the chart forces the node product, seven
+> exhausts all play, η alone carries morality, μ necessarily fires at
+> saturation, and D6 similarity entails a spiral are not load-bearing. Its K2
+> promotion sitting is cancelled; no signer supplies philosophical warrant.
 
 ## 1 · The Creed, priced
 

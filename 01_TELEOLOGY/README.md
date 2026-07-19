@@ -11,6 +11,15 @@ rosetta:
 
 # 01_TELEOLOGY — F5 Tilts
 
+> **[金] Research-and-translation membrane — 2026-07-19.** Teleology is not the
+> root of the worldview and F5 is not an established physical force. This lane
+> explores direction, modeled futures, and option-cone hypotheses downstream of
+> the [Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md),
+> [Kernel Index](../00_THE_KERNEL_INDEX.md), [Soul Loop](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md),
+> and [Power-Max owner](../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md).
+> Skyzai/product language, aggregate morality, forced F5, and signer-governance
+> language below is application history, not philosophical warrant.
+
 > **L1 · Kali 🎲 · Caṇḍāla · Chaos · Kāla — Gate I** of the [seven-fold spine](../00_SEVENFOLD_FOUNDATION_ROOT.md). *Folder № = L-level.*
 
 **Rosetta level:** L1 · Caṇḍāla · Empirical Observation

@@ -7,11 +7,36 @@ rosetta:
   regime: "Vaiśya"
   register: "[A]/[I]"
   canonical_phrase: "Wave-Particle Duality"
+status: "DERIVED/HISTORICAL — removable quantum translation; not a physics or doctrine owner"
+superseded_by:
+  - "../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md"
+  - "../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md"
+  - "../../05_COSMOLOGY/00_THE_BURRI_RULES.md"
+  - "../../05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md"
 ---
 
 **Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
 
 # WAVE-PARTICLE DUALITY AS Zero-Sum Resolution Equation
+
+> **[金] DERIVED/HISTORICAL MEMBRANE — 2026-07-19.** This paper preserves a
+> quantum-interpretive translation, not an explanation or derivation of quantum
+> mechanics. Current authority is the
+> [Emergentist Weltanschauung](../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md),
+> [Canonical Formula Block](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md),
+> [Burri Rules](../../05_COSMOLOGY/00_THE_BURRI_RULES.md), and
+> [Quantum Foundations boundary](../../05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md).
+> Wave-like propagation and localized detection are not literally the Titan
+> frames or factors of a new product; detector interaction is not a proof of the
+> emblem `⊙=•×○`; and `φν=1` neither derives complementarity nor replaces
+> `ΔxΔp≥ℏ/2`. Everett has no fundamental collapse, Copenhagen-family
+> actualization is interpretation-specific, and neither `μ` nor `χ` is quantum
+> measurement. Bell, delayed-choice, or double-slit results may constrain
+> physical theories, but they do not select this reading, add a dimension,
+> establish retrocausality, or solve the measurement problem. Remove this entire
+> comparison and the operational Emergentist calculus remains unchanged. Any
+> stronger physical or ontological claim below is superseded; the body remains
+> as provenance.
 
 ## The Dissolution of Complementarity
 

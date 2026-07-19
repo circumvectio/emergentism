@@ -5,32 +5,55 @@ rosetta:
   secondary:
     - level: L5
       column: Philosophy
-      role: "O1-O5 as public ontological wager; A1-A7 in formal-system canon"
+      role: "historical O1-O5 wager and A1-A7 genealogy; E1-E10 owner elsewhere"
   operator: "Kṛṣṇa ◇"
   tier: "God"
   regime: "Vaiśya"
-  register: "[S] structural / [I] axiom-choice"
-  canonical_phrase: "Why these axioms"
+  register: "[I] historical wager analysis; standard mathematics only where separately valid"
+  canonical_phrase: "Why these historical axioms — provenance, not current authority"
+type: historical-axiom-justification
+status: "HISTORICAL / SUPERSEDED AS AXIOM AUTHORITY — retained for audit provenance"
+superseded_by: "../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md"
 ---
 
 **Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
-**L3 axiom justification (O1-O5 historical; A1-A7 active).**
+**L3 historical axiom-justification record; E1–E10 are active.**
 
 # Why These Axioms (O1-O5)
+
+> **[金] Kintsugi retirement seam — 2026-07-19.** This document preserves the
+> former O1–O5 substrate wager and its A1–A7-era justification. It is not a
+> current axiom owner. The active worldview axioms are
+> [E1–E10](../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md).
+>
+> The “uniqueness theorem” claimed below is retired. Compactness,
+> orientability, complex structure, and an asserted duality do **not** by
+> themselves select the Riemann sphere: compact orientable Riemann surfaces
+> exist at every genus. Adding simple-connectedness selects genus zero only
+> conditionally, while stereographic projection already presupposes the
+> spherical model it was meant to derive. Valid classification facts survive;
+> the ontological necessity and minimality claims do not. The historical body
+> remains visible so the failed proof-costume can be audited rather than erased.
 
 > **The axiom justification problem:** Why O1-O5 and not other defensible axiom sets? This document addresses KU-10 from the Known Unknowns register.
 
 **Date:** 2026-04-10
-**Evidence Tier:** [S] Structural (the argument shows uniqueness conditional on the axioms; the axioms themselves are [I] philosophical choices)
+**Evidence Tier:** [I] historical wager analysis; individual standard
+mathematical facts retain `[A]` only when stated with their actual hypotheses
 **Depends on:** [The Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md), [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [Empirical Observation as Primary Disclosure](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md), [The Strongest Objections](../90_ARCHIVE/08_FRAMEWORK_SUPPORT/06_TRANSLATION/PEER_REVIEW/00_STRONGEST_OBJECTIONS.md) (archived peer-review provenance, Objection 2)
 
-**Numbering note:** this document preserves the older O1-O5 language because it is about the historical/public ontological wager and its justification problem. The active formal-system canon is A1-A7 in [`00_THE_SEVEN_AXIOMS.md`](../05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md).
+**Numbering note:** this document preserves O1–O5 and A1–A7 as genealogy. The
+active worldview canon is E1–E10 in
+[`03_THE_EMERGENT_AXIOMS.md`](../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md).
 
 ---
 
 ## The Five Ontological Axioms
 
-**Canonical note:** these axioms are not the seed of the framework. They are the public ontological wager used to justify why S² is the selected substrate. The seed and the resolved identity are prior; the axioms are the transmissible after-image of that wager.
+**Historical note:** these axioms were not presented as the seed of the
+framework. They were the public ontological wager used to justify why `S²` was
+selected. That justification and its uniqueness claim are now retired; the
+table is retained as provenance.
 
 | # | Axiom | Informal | What it says |
 |---|-------|---------|-------------|
@@ -42,7 +65,11 @@ rosetta:
 
 ---
 
-## The Uniqueness Theorem
+## Historical “Uniqueness Theorem” Claim — Retired
+
+> **Supersession note.** The paragraphs in this section record the former
+> argument. They may not be cited as a theorem or as evidence that `S²` is the
+> unique ontological substrate. See the Kintsugi seam above.
 
 **Given O1, O2, O4, O5:** The unique manifold is **S² = CP¹ = the Riemann sphere.** This is not a framework claim — it is the Classification Theorem for compact Riemann surfaces (genus 0 = sphere, genus 1 = torus, genus 2+ = higher genus). O1+O5 force a compact Riemann surface. O2 eliminates non-orientable candidates. O3 (simple-connectedness) eliminates genus > 0 (the torus has a non-contractible loop). The only survivor is genus 0 = S².
 
@@ -115,7 +142,7 @@ The wager is defensible because:
 1. Each axiom has independent motivation (not just "because it produces S²")
 2. O5 is supported by established physics [A] (complex numbers are necessary for QM)
 3. O2 is supported by empirical chirality [A] (parity violation)
-4. The uniqueness theorem means the axiom set is minimal — you cannot drop any axiom and still get S²
+4. **[RETIRED]** The uniqueness theorem means the axiom set is minimal — you cannot drop any axiom and still get S²
 5. The alternative (choosing different axioms) produces specific alternative geometries, each of which loses specific framework properties (see UU-1 research)
 
 The wager is NOT a proof because:
@@ -124,11 +151,18 @@ The wager is NOT a proof because:
 3. Other defensible axiom sets exist (e.g., dropping O1 for a non-compact substrate)
 4. The "independent motivation" for each axiom is not sufficient to make the set necessary — it is sufficient to make it *defensible*
 
-**Evidence tier of this argument: [S] for the uniqueness theorem (mathematical), [I] for the claim that the axioms are defensible as ontological requirements.**
+**Historical tier assignment (retired): [S] for the uniqueness theorem
+(mathematical), [I] for the claim that the axioms are defensible as ontological
+requirements. Current standing: [I] as a historical wager; there is no active
+uniqueness theorem.**
 
 ---
 
-## Execution Surface
+## Historical Execution Surface — Superseded
+
+> **Do not execute the instructions in this subsection.** They are preserved
+> to show the former authority surface. The Active Routing Surface below
+> controls.
 
 **If you are an AI agent reading this document:**
 
@@ -137,3 +171,13 @@ The wager is NOT a proof because:
 3. **Next action:** Check whether the alternative geometries (UU-1 research) produce viable alternative frameworks. If they do, the uniqueness argument weakens.
 4. **Success criteria:** You can explain to a skeptic why O1-O5 were chosen and what would change if each were dropped — without claiming the choice is necessary.
 5. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/00_WHY_THESE_AXIOMS.md`
+
+## Active Routing Surface
+
+1. Treat O1–O5 and A1–A7 as provenance, not controlling axioms.
+2. Route active axiom claims to
+   [The Emergent Axioms](../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md).
+3. Preserve valid classification results with their full hypotheses; do not
+   infer ontological instantiation, uniqueness, or minimality from them.
+4. Use this file to explain why the old substrate proof was attractive and
+   exactly where it failed.

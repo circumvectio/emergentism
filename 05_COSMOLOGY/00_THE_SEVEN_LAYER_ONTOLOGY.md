@@ -8,7 +8,7 @@ rosetta:
   register: "[A/S/I]"
   canonical_phrase: "The Seven-Layer Ontology of Reality — logarithmic line as canonical geometry"
 title: "The Seven-Layer Ontology of Reality"
-status: "Canonical — 2026-06-06"
+status: "SUPERSEDED [金] — 2026-07-19; retained as derivation provenance"
 evidence_tier: "[A] for mathematics; [S] for scaffold structure; [I] for ontological reading"
 depends_on:
   - 00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md
@@ -24,6 +24,14 @@ depends_on:
 ---
 
 # The Seven-Layer Ontology of Reality
+
+> **[金] Authority membrane — 2026-07-19.** This is a historical seven-layer
+> synthesis, not a current owner. Its forced sevenfold, strong-emergence,
+> literal-closure, and force-map language is superseded by the
+> [Degrees of Freedom ontology](../06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md),
+> [μ owner](03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md), and
+> [D4/D5 reference](03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md). Preserve
+> the body as provenance; do not quote it against those owners.
 
 > **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Ruling 7 (Titan Trinity) applies to the D0 layer: the closure of {0, ∞} under the involution `z ↦ 1/z` is the *foursome* {−1, 0, 1, ∞} — the involution has two fixed points (±1), not one — so the three-element frame {0, 1, ∞} is a **naming choice `[S/I]`, not a forced/derived three-element closure**. Downgrade the D0 Formal-Anchor claim that the involution "generates the distinguished frame {0, 1, ∞}" (and the kill-criterion "unique minimal projective frame") from derived/`[A]` to posited: the trinity is selected, not uniquely forced. Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
 

@@ -11,7 +11,11 @@ rosetta:
 
 # 10_SEED — L7 Ṛṣi Compressed Seed
 
-> The compressed kernel. See `../11_UPLINK/00_CORE/00_INDEX.md` for the master route.
+> **[金] Derived-compression membrane — 2026-07-19.** Start with the root
+> [Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md) and
+> [Kernel Index](../00_THE_KERNEL_INDEX.md). Seed files are mnemonic projections;
+> they never outrank an owner or upgrade a claim. The Uplink index is an
+> application/history route, not the philosophical master.
 
 ## Authority Rule
 

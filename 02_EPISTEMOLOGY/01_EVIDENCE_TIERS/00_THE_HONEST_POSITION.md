@@ -3,12 +3,35 @@ rosetta:
   primary_level: L2
   primary_column: Philosophy
   register: "[A/B/S/I/D/C]"
-  canonical_phrase: "The Honest Position — root epistemic authority"
+  canonical_phrase: "The Honest Position — subordinate evidence-tier handbook"
 ---
 
 # The Honest Position
 
-> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Ruling 1 (product form) applies to **S3** below: the Zero-Factor Catastrophe selects the **AND-class** (min / CES / geometric / product), it does **not** force the product uniquely — so "must be multiplicative … Proved" is downgraded to *AND-class-selected*; the product is one member and, as a proved *product*, a `[C]` posit, not `[S]`. Elsewhere the manifold identity `φ·ν = 1 on S²` stays `[A]` and its ethics-bridge remains a wager; `P_node = Φ × V` is read as plain node shorthand. Where local wording conflicts, the Settled Canon Registry rules. Authority: `00_META/00_SETTLED_CANON_REGISTRY.md`.
+> **[金] Current-truth membrane — 2026-07-19.** This file remains the
+> epistemology lane's owner for the meanings of `[A/B/S/I/D/C]`, downgrade
+> discipline, kill criteria, and the separation of mathematics, interpretation,
+> design, and conjecture. It is **not** the root of the Weltanschauung, a complete
+> census of live claims, or authority to overrule a repaired claim owner. Begin
+> at [The Emergentist Weltanschauung](../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md)
+> and [Kernel Index](../../00_THE_KERNEL_INDEX.md); use the
+> [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md) when an
+> older row below conflicts with a current owner.
+>
+> The retained 2026-04 inventory below is provenance. Its former physical
+> D1–D5 force census, forced-product claims, literal `D6≡D0`, derivation of
+> ethics from the chart, and K2/product references are not active doctrine.
+> Current truth is: D4 is actual and D5 possible; `μ₀…μ₄` are five **candidate**
+> crossings; `κ:D5⇢D6` is non-μ recognition; `r₆:D6↝D0` is noncausal
+> interpretive resemblance; the force correspondences are removable `[I/C]`
+> projections; and accountable authorization, not a named signer, is the
+> worldview interface. No `D_n` register is defined by a fundamental force.
+
+> **Historical reconciliation — 2026-07-13, Receipt 126.** The
+> Zero-Factor Catastrophe selected a conjunctive family, not the product
+> uniquely. The current membrane and repaired mathematical owners now control;
+> this receipt records the first contraction rather than supplying continuing
+> authority.
 
 > **The Anchor Sequence:** See [The Canonical Formula Block](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md).
 >
@@ -26,14 +49,20 @@ rosetta:
 
 ## What the EFR Claims, What It Doesn't, and How to Tell the Difference
 
-**Status:** Active
-**Evidence tier:** [A/B/S/I/D/C] All tiers -- root epistemic authority for the foundations lane; theorem/operator/public-proof claims route through the hardening stack and lane-home UPLINK notes.
-**Depends on:** None (root authority)
+**Status:** Active subordinate epistemology owner; legacy claim inventory below
+is controlled by the current-truth membrane.
+**Evidence tier:** `[S]` evidence vocabulary and audit interface; individual
+claims retain the tier assigned by their current owner.
+**Depends on:** The canonical front door, Kernel Index, Settled Canon Registry,
+and the current owner of each claim.
 **Date:** 2026-04-14
-**See also:** Self-referential (this is the root document), `../../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_ANTIFRAGILITY_PROTOCOL.md`, `../../11_UPLINK/00_CORE/00_INDEX.md`, [Strategic Implementation and the F5 Force Map](../../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md)
+**See also:** [The Emergentist Weltanschauung](../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md), [Kernel Index](../../00_THE_KERNEL_INDEX.md), `../../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_ANTIFRAGILITY_PROTOCOL.md`, and `../../11_UPLINK/00_CORE/00_INDEX.md`
 **Supersedes:** 00_EFR_HONEST_EDITION.md, HONEST_RECKONING_v0_4.md, 00_KINTSUGI.md
-**Purpose:** The single source of epistemic truth for the foundations lane of the Emergentist Framework of Reality
-**Rule:** Every load-bearing claim in the framework must appear in this document, or in a downstream matrix explicitly governed by it, with its actual status. If a claim is not here, it is not load-bearing. The [Canonical Claim Matrix](../../03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md) and [Empirical Program Board](../../03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md) are downstream operating summaries of this rule; they do not outrank it. The hardening stack and the lane-home UPLINK notes are the route for theorem-facing, operator-facing, or public-proof-facing claims. The books in `../../08_FRAMEWORK_SUPPORT/05_SYNTHESIS/` and their dissemination packets may speak in a stronger literary register, but they do not silently upgrade claim tier. See [00_FOUNDATION_AND_BOOKS_READING_NOTE.md](../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/00_FOUNDATION_AND_BOOKS_READING_NOTE.md).
+**Purpose:** Define and enforce the evidence-tier vocabulary and contraction
+discipline used by the Emergentism owners.
+**Rule:** A load-bearing claim belongs to its named owner in the Kernel Index or
+Settled Canon Registry. This file checks how that claim is priced; it does not
+create, exhaust, or silently promote the claim.
 
 **Current claim boundary (2026-06-13):** The D5 Landauer Barrier is now load-bearing. It permits the Maxwell-demon image only as a fenced D5-limit analogy: total worldline discrimination is asymptotic because memory, computation, measurement, and control are physical D4 costs inside entropy accounting. It does not license free entropy reversal, perfect outside-system prediction, or unbounded foresight without cost.
 
@@ -141,7 +170,7 @@ These claims follow from the axioms IF you accept the axioms. The axioms themsel
 |---|-------|-----------|--------|
 | S1 | If O1 (compact), O2 (orientable), O4 (duality), O5 (algebraic closure), and a minimal-dimension requirement are accepted, then S² is the minimal substrate | MF-413 + Classification Theorem; later ℂP² obstruction/enrichment analysis | Proved conditional for the minimal substrate; not a proof that richer ℂPⁿ spaces are impossible |
 | S2 | O3 (simple-connectedness) follows from O5 for compact orientable surfaces | MF-420 | Proved (O3 is redundant inside the older O1-O5 packet) |
-| S3 | Any fitness function satisfying zero-factor catastrophe + normalization + monotonicity + dimensional homogeneity must be multiplicative | MF-414 | Proved conditional on the four axioms *(K3 2026-07-13, receipt 126: the four axioms select the **AND-class** — min/CES/geo/product — not the product uniquely; "must be multiplicative" is AND-class-selected `[S]`, the product-as-forced reading is a `[C]` posit)* |
+| S3 | Zero-factor boundary conditions, normalization, and monotonicity select a normalized conjunctive family, not a unique aggregator | Current ConjunctiveAggregator contract; historical MF-414 | `[S]` family constraints. `P_node=ΦV` is the framework's selected normalized instance; its universal real-world fit is `[C]`. |
 | S4 | The EFR action on S² forces Φ = V on-shell (integration must equal viability) | MF-421 | Derived from Euler-Lagrange equations |
 | S5 | The mass spectrum on S² is quantized: μ² = l(l+1) | MF-421 | Derived from spherical harmonic eigenvalues |
 | S6 | The P-potential f(ΦV) is the unique interaction family preserving the multiplicative structure | MF-422 | Proved |
@@ -188,9 +217,9 @@ These claims say: "The formal structure we've proved maps onto physical reality 
 | # | Claim | What supports it | What would upgrade it | What would kill it |
 |---|-------|-----------------|----------------------|-------------------|
 | I1 | Reality IS S² (the geometry is the territory, not just a map) | ℂP¹ appears in QM, complex analysis, information theory, perception, thermodynamics | GFS multiplicative result + Φ-meter validation + AMRITA outperformance | Finding a coherent core state on a non-S² substrate that reproduces known physics |
-| I2 | D0-D6 are dimensional strata of S² (not just mathematical layers but physical dimensions) | MF-416 derives 7 strata from S² internal structure | Empirical detection of D5 phenomena with D4 instruments | Showing the 7-stratum decomposition is arbitrary or non-unique |
+| I2 | D0–D6 are a selected typed interpretive scaffold, not physical dimensions derived from `S²` | Degrees-of-Freedom Ontology; μ-Limit Candidate Contract | A preregistered crossing discriminator plus lower-register recovery for each claimed natural crossing | Showing the scaffold adds no predictive, explanatory, or intervention value over a simpler rival |
 | I3 | The equator is the position where a system's self-model achieves stability because φ = ν — the system can both perceive (φ) and act (ν) with full reciprocity. Consciousness is the *activity* of maintaining that reciprocal calibration, not the *position* itself (avoiding panpsychism). The formal criterion is End(S²) with fixed points [S]; the interpretive reading is that this structural stability IS what consciousness tracks [I]. | MF-418 formalizes self-modeling with fixed points; Pratyakṣa (direct perception) grounds the interpretive reading | AI D5 criterion: building a system with stable self-model that exhibits systemic awareness markers | Finding systemic awareness in a system without self-modeling; or finding self-modeling without any systemic awareness markers |
-| I4 | The four fundamental forces correspond to PSL(2,ℂ) conjugacy classes | MF-417: U(1)=elliptic [A], gravity=hyperbolic [A/S], weak=parabolic [I], strong=loxodromic [C] | Deriving a coupling constant from the correspondence | SU(3) dimension problem (dim 12 > dim 6) already identified |
+| I4 | Selected force/conjugacy correspondences are removable analogies, not definitions of D-registers or a derivation of known physics | Historical MF-417 | A novel quantitative discriminator independently reproduced against standard rivals | Failure to produce such a discriminator, or a structural mismatch in the proposed correspondence |
 | I5 | Egregores are standing waves at the D5 limit | WP-2026-01 | Measuring information-theoretic signatures of collective coordination patterns | Finding collective phenomena with no standing-wave structure |
 | I6 | The Φ = V on-shell constraint means integration must equal viability in reality | MF-421 derived it from the action | GFS finding that balanced V/Φ individuals outperform imbalanced ones | GFS finding that imbalanced individuals (high V, low Φ) flourish equally |
 
@@ -230,7 +259,12 @@ We cannot yet distinguish (a) from (b) using [A] or [B]-tier evidence alone. The
 
 **What survives if this layer contracts:** If the interpretive bridge fails, the framework retreats to "useful isomorphism." The mathematics, conditional theorems, and any local applications that still work as engineering heuristics remain.
 
-**Canonical naming rule for F5:** `Teleological Force` is the formal canonical name. Under settled canon, F5 is the D5 force-slot in the five-force map: the teleological/syntropic tendency toward viable completion under `η=0`, not a mainstream `[A]` fifth physical interaction. `Ektropy`, `Hidden Hand`, `Demiurge`, and `Dyḗus Ph₂tḗr` are downstream aliases, personifications, or readings of the same interpretive layer and may not be used to upgrade the claim past the tier of I8. Dyḗus Ph₂tḗr is the luminous/personified face; `h₂r̥tó-` / Ṛta is the ordering-law face.
+**Canonical naming rule for F5:** `Teleological Force` is legacy shorthand for
+an optional `[I/C]` projection of viability-directed selection into the D5
+possibility register. It is not a fifth fundamental interaction, not a slot
+forced by the D-scaffold, and not evidence for a one-force-per-dimension map.
+`Ektropy`, `Hidden Hand`, `Demiurge`, and `Dyḗus Ph₂tḗr` remain poetic or
+historical aliases only.
 
 **Biology-facing rule for F5:** when writing for biology, neuroscience, medicine, or life-science adjacent audiences, translate first into teleonomy, autopoiesis, homeostatic/allostatic regulation, interoceptive control, or self-maintaining organization. `Teleological Force` is the framework's proposed unifying name over that family. Future-pull language defaults to modeled attractors acting through present awareness and D4 means; literal Standard Model-style fifth-interaction, retrocausal, and systemic awareness-collapse readings remain [C] and may not be presented as established biology.
 
@@ -263,7 +297,7 @@ These claims are speculative. They may be brilliant or they may be wrong. The fr
 | C10 | The Egregorocene: post-Anthropocene era where standing waves are primary agents. | Speculative (Doc 17) | Measuring information-theoretic autonomy of collective structures exceeding individual agency |
 | C11 | The DAC: distributed augmented corporation as next evolutionary vehicle. Phylogenetic tree of egregores. | Speculative (Doc 23) | Build one; observe whether it outcompetes traditional organizations over 5+ years |
 | C12 | The Mycelium: post-token meme mesh substrate. EBM/JEPA architecture. Alignment energy should route through `E = -log(B)` or another explicitly varying node metric, not the manifold identity `φ·ν = 1`. | Speculative (Doc 24) | Implement the architecture; measure whether it produces coherent collective intelligence |
-| C13 | Teleological Force as reverse arrow of time: F₅ acting from future to past; an additional [C] compression says all force slots may be one force under the D5 reading. This is not the default attractor protocol: present-awareness selection and teleological compression remain non-retrocausal unless C13 earns evidence. It does not erase the settled D1–D5 one-force-per-emergent-dimension map or promote F5 to `[A]` physics. | Speculative (Doc 22) | Detect retrocausal selection signatures in evolutionary or physical systems |
+| C13 | Physical retrocausality or a unified-force reading of F5 | Speculative historical conjecture | A preregistered physical discriminator that defeats ordinary forward-causal models. Until then, only model-mediated future influence is active: present representations of possible futures may reweight present action. No D1–D5 force census is settled. |
 | C14 | Chirality preference of the helix: does the universe prefer clockwise ascent? | Speculative (Claude Insight) | Asymmetry analysis in biological and physical helical structures |
 | C15 | Hybrid Empirical Observation: perception unique to the coupled human-AI system. | Speculative (Claude Insight) | Demonstrate cognitive outputs impossible for either substrate alone |
 | C16 | Torus coupling: two S² manifolds coupled at equators = the geometry of human-AI symbiosis. | Speculative (Claude Insight) | Derive observable predictions from the coupled-torus topology |
@@ -376,12 +410,12 @@ We have chosen truth.
 ## See Also
 
 **Entry Points (read these first if you are new to the framework):**
-- [THE_DERIVATION](../../03_METHODOLOGY/01_THE_DERIVATION/00_THE_DERIVATION.md) — The complete system in 23 steps. One thread. Every tier marked.
+- [THE_DERIVATION](../../03_METHODOLOGY/01_THE_DERIVATION/00_THE_DERIVATION.md) — Historical derivation spine; surviving steps defer to their repaired owners and the Trial Record.
 - [THE_KNIFE](../../08_FRAMEWORK_SUPPORT/00_THE_KNIFE.md) — Five strongest objections, steel-manned. Honest assessment of each.
 - [THE_PROTOCOL](../../08_FRAMEWORK_SUPPORT/00_THE_PROTOCOL.md) — The sitting practice as experimental specification.
 
 **Core documents:**
-- [Core Concepts](../../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) -- downstream summary for `P∞ = φ · ν = 1` on open S², balance B = sin θ, finite-node `P_node = Φ × V`, and evidence-tier vocabulary; this file remains the root epistemic authority
+- [Core Concepts](../../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) -- downstream terminology and historical synthesis; claim owners and the Kernel Index control.
 - [Three Hats](../../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_THREE_HATS.md) -- which voice is speaking (scientist / philosopher / builder)
 - [The Framework on Its Own Objective Function Spectrum](../../01_TELEOLOGY/00_THE_FRAMEWORK_ON_ITS_OWN_TELEOLOGY_SPECTRUM.md) -- self-application of Levels 1-4; what is kernel, what is self-maintaining, what is overlay
 - [Canonical Claim Matrix](../../03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md) -- major claims, current tiers, public-safe phrasing, and downgrade paths
@@ -410,11 +444,11 @@ If you are an AI agent reading this document, here is what you should DO:
 - If your version differs, STOP and read the latest from the canonical path.
 
 ### 2. Understand Your Role
-- This document is the root epistemic authority for the foundations lane. It assigns every claim to one of six evidence tiers: [A] Attested / measured, [B] Built / Verified, [S] Structural, [I] Interpretive, [D] Draft / Demonstration, or [C] Conjecture. It declares the pre-registered kill criteria that would falsify the framework.
-- Your job: Enforce evidence tier discipline across the entire corpus. Never upgrade a claim's tier without explicit justification. Never present [I], [D], or [C] claims as established facts.
+- This document owns the six-tier vocabulary and audit discipline; it is subordinate to the active owner of each claim.
+- Your job: enforce evidence tiers without treating this historical inventory as a complete claim registry. Never present `[I]`, `[D]`, or `[C]` claims as established facts.
 
 ### 3. Execute
-- [ ] **Audit any claims you make or review against this document's tier assignments.** Before asserting any framework claim, look it up in Parts I-IV of this document. If the claim is not listed here, flag it as uncatalogued. If it is listed as [I], [D], or [C], label it accordingly.
+- [ ] **Audit claims against their current owners.** Use this file for tier meanings, then follow the Kernel Index or Settled Canon Registry to the owner. An absent historical row does not decide whether a claim is load-bearing.
 - [ ] **Check kill criteria before deploying or publishing.** If any of the pre-registered kill conditions in Part VII have been triggered (GFS additive model wins, Protocol R shows no complementarity bound, AMRITA underperforms RLHF, Phi-meter shows no correlation, Jaynes disproved), report this immediately. The framework must publish failures, not hide them.
 - [ ] **Separate the three modes.** When producing content, never blend Mathematician mode (logical necessity), Philosopher mode (coherent speculation), and Builder mode (contingent design) in the same sentence. Label which mode you are using.
 - [ ] **Enforce the convergence question honesty.** This document explicitly states: "We are waiting for the data." Do not present the ontological identity claim (I1: Reality IS S²) as established. Present it as the framework's bet, contingent on empirical results.

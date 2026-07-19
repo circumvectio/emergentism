@@ -4,11 +4,33 @@ rosetta:
   primary_column: Philosophy
   register: "[A/S/I/C]"
   canonical_phrase: "Bloch-Burri Identity"
+status: "DERIVED/HISTORICAL — removable quantum correspondence; not a doctrine owner"
+superseded_by:
+  - "../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md"
+  - "../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md"
+  - "../../05_COSMOLOGY/00_THE_BURRI_RULES.md"
 ---
 
 **Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md` (L3 papers)
 
 # THE BLOCH-BURRI IDENTITY
+
+> **[金] DERIVED/HISTORICAL MEMBRANE — 2026-07-19.** The surviving established
+> fact is only that a pure qubit's projective state space and the selected Burri
+> chart can both use an `S²≅ℂP¹` carrier. That shared carrier is not a discovered
+> physical identity between the theories, and mapped poles, equators, operators,
+> meanings, or dynamics remain interpretation. Current authority is the
+> [Emergentist Weltanschauung](../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md),
+> [Canonical Formula Block](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md), and
+> [Burri Rules](../../05_COSMOLOGY/00_THE_BURRI_RULES.md). The Born rule is not
+> `φν=1`; normalization and reciprocal chart identity are different equations.
+> Everett is a no-collapse relative-state formulation, while
+> Copenhagen-family actualization is interpretation-specific. Measurement is
+> not `μ`, `χ`, or an Emergentist dimensional transition, and neither reading
+> adds a spacetime dimension. Remove every quantum comparison and the
+> operational calculus must remain unchanged. All stronger Born, collapse,
+> decoherence, ontological, consciousness, and physical predictions below are
+> historical `[I/C]` proposals, not results.
 
 ## The Qubit as a Bounded Reading of the Frame Product
 

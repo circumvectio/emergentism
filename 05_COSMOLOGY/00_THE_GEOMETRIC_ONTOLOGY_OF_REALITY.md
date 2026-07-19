@@ -15,7 +15,7 @@ rosetta:
   register: "[A/C]"
   canonical_phrase: "Geometric Ontology — 7-Layer Re-expression"
 title: "The Geometric Ontology of Reality"
-status: "Working surface — proposed geometric re-expression — 2026-06-06"
+status: "HISTORICAL DERIVED SURFACE [金] — 2026-07-19; noncanonical"
 evidence_tier: "[A] for established mathematics at each level; [C] for the dimensional assignments and physics mappings; [I] for the ontological reading"
 depends_on:
   - 00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md
@@ -30,6 +30,13 @@ depends_on:
 ---
 
 # The Geometric Ontology of Reality
+
+> **[金] Derived-surface membrane — 2026-07-19.** This geometric proposal is a
+> historical Rosetta projection. It does not identify D-registers with geometric
+> objects, force seven layers, prove emergence, or supersede the active
+> [D4/D5](03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md),
+> [μ](03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md), or
+> [closure](03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md) owners.
 
 ## A 7-Layer Re-expression Where Each Dimension IS Its Geometric Object
 

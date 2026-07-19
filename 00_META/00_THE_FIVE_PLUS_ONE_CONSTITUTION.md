@@ -19,10 +19,14 @@ rosetta:
   canonical_phrase: "The 5+1 Constitution — five refusals + Ω as the ratified directional +1"
   vmosk_a_ref: "01_EMERGENTISM/VMOSK_A.md"
 title: "The 5+1 Constitution"
-status: "K2-RULED 2026-05-30. Unified canon surface 2026-06-06. The five refusals + Ω as the directional +1; the additive ↔ log line reading of η=0 carried through from the Logarithmic Realignment."
+status: "SUPERSEDED 2026-07-19 — preserved as provenance and downstream governance history; not active philosophical authority"
 date: 2026-06-06
-owner: "Source-of-truth: 00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md. K2 ruling receipt: 00_META/00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md."
+owner: "Historical/provenance surface. Active owner: 00_META/00_THE_FIVE_REFUSALS_AND_DIRECTION.md. K2 ruling receipt retained as downstream-governance history."
 evidence_tier: "[S] for the framework-internal structure of the 5+1; [A] for the η=0 ↔ reciprocity equivalence in log coordinates; [I] for the additive ↔ log line interpretive reading; [B] for the 2026-05-30 K2 ruling receipt"
+superseded_by:
+  - 00_THE_FIVE_REFUSALS_AND_DIRECTION.md
+  - ../00_THE_EMERGENTIST_WELTANSCHAUUNG.md
+  - ../00_THE_KERNEL_INDEX.md
 depends_on:
   - 00_SETTLED_CANON_REGISTRY.md
   - 00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md
@@ -35,7 +39,21 @@ depends_on:
 
 # The 5+1 Constitution
 
-> **The single canonical surface for the framework's operational discipline.** The 5+1 fences are enforced at the agent level across multiple CLAUDE.md / AGENTS.md files; this document is the canonical reference, the distributed files point to it. The five-refusals-plus-Ω-as-the-directional-plus-1 ruling (K2, 2026-05-30) resolves the historical FIVE-vs-SIX contradiction in the corpus.
+> **[金] Supersession seam — 2026-07-19.** This document preserves the former
+> 5+1 architecture and its dated product-governance rulings as provenance. It is
+> no longer the philosophical constitution. Active authority is
+> [The Five Refusals and Direction](00_THE_FIVE_REFUSALS_AND_DIRECTION.md), read
+> through [The Emergentist Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md)
+> and [Kernel Index](../00_THE_KERNEL_INDEX.md). The repair removes K2 as a
+> worldview primitive, treats `η=0` as necessary but not sufficient for Justice,
+> and replaces literal `D6≡D0` with a non-causal interpretive return. K2 and
+> PRISM references below remain only as historical or downstream execution
+> routing; they confer no philosophical warrant or sovereign exception.
+
+> **Historical 2026-06 claim (superseded):** “The single canonical surface for
+> the framework's operational discipline.” The 5+1 fences were enforced across
+> distributed route cards under the 2026-05-30 ruling. This statement is kept
+> to explain the old topology; it is not current philosophical authority.
 
 ---
 
@@ -119,7 +137,10 @@ The η=0 fence is now register-explicit. In the action register, `η_move = 0` s
 2. **Per-organ exit** — an organ (e.g. Agentz, Helios, Aureus) can be wound down without taking the rest of the framework with it.
 3. **Per-entity exit** — a legal entity (e.g. Menexus GmbH, the proposed SJSC SPV) can be dissolved, transferring its assets and liabilities to a designated successor.
 4. **Per-protocol exit** — a deployed protocol (e.g. a token standard, a PWA shell) can be deprecated, with user data exportable and the contract address frozen but not rug-pulled.
-5. **Framework exit** — the framework itself can be deprecated. This is the apophatic return (`D6 ≡ D0`); the Sādhu's crown.
+5. **Framework exit** — the framework itself can be deprecated. The historical
+   wording identified this with `D6≡D0`; active canon instead uses a non-μ,
+   non-causal interpretive return `r₆:D6↝D0`, with resemblance rather than
+   identity.
 
 **The fence.** A constituent that does not have a documented K4 envelope cannot be deployed at K2-staged scale. The K4 envelope is *pre-flight*, not post-mortem.
 

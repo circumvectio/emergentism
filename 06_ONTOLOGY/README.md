@@ -5,158 +5,152 @@ rosetta:
   operator: "Śiva •"
   tier: "Executive"
   regime: "Sādhu"
-  register: "[I]"
+  register: "[S/I] ontology route and anti-reification boundary"
   canonical_phrase: "06_ONTOLOGY — Ground Is Prior"
+status: "ACTIVE — ontology front door"
+date: 2026-07-19
 ---
 
 # 06_ONTOLOGY — Ground Is Prior
 
-> **L6 · Śiva • · Sādhu · Freedom · Mokṣa — Gate VI** of the [seven-fold spine](../00_SEVENFOLD_FOUNDATION_ROOT.md). *Folder № = L-level. The Ground is prior to structure — including Emergentism itself.*
+> **L6 · Śiva • · Sādhu · Freedom · Mokṣa.** Ontology asks what kinds of
+> structure, possibility, actuality, and persistence the framework proposes.
+> Its first discipline is apophatic: no model—including Emergentism—exhausts the
+> Ground.
 
-**Rosetta level:** L6 · Sādhu · First Principles
-**Canonical phrase:** Ground is prior.
+## Canonical ontology spine
 
-> **Operator note:** `Śiva •` marks L6 via-negativa: dissolution, subtraction, and anti-reification. This lane is not the L7 institutional-narrative voice.
+Read these in order:
 
-**Definition:** Core State is the axiomatic root of Being. It asks what is prior to every model, method, symbol, and future-vector. It answers through non-apprehension: Falsification Protocol, not this, not that, not the framework either.
+| File | Standing | Role |
+|---|---|---|
+| [`02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md`](02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md) | **ACTIVE** `[S/I/C]` | Forms-across-freedoms ontology; typed possibility; reachability; μ and quantum fences; Egregoreotype criterion |
+| [`03_THE_EMERGENT_AXIOMS.md`](03_THE_EMERGENT_AXIOMS.md) | **ACTIVE** per-claim tiers | E1–E10: the compact Emergentism-only axiom owner |
+| [`04_THE_CONJECTURES.md`](04_THE_CONJECTURES.md) | **ACTIVE WAGER LEDGER** `[I/C]` | `CW-0` plus W1–W12, each with a kill or demotion rule |
+| [`05_THE_REVELATIONS.md`](05_THE_REVELATIONS.md) | **ACTIVE K-6** mixed tiers | Twelve audit-born disclosures, each sourced, bounded, and non-commanding |
+| [`05_THE_CREED_AND_SPIRAL_PENDING_K2.md`](05_THE_CREED_AND_SPIRAL_PENDING_K2.md) | **SUPERSEDED PROVENANCE** | Former staging creed retained in place; no active signature requirement |
 
-**Must answer:** What is before structure? What is the relation between Ground, field, model, and beings? What must be subtracted when the map becomes too mission-critical?
+The corpus-level owner is
+[`../00_THE_EMERGENTIST_WELTANSCHAUUNG.md`](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md).
+Where a legacy ontology document conflicts with this spine, the spine controls
+for the final Weltanschauung and the older text remains provenance.
 
-**Must not do:** Claim possession of the Ground. Idolize S2, F5, Rosetta, institutional narrative, or Emergentism. Turn apophasis into nihilism.
+## The ontology in seven statements
 
-## Dasein Origin Reading
+1. **Ground is not model.** `[S/I]` A model can disclose constraints without
+   possessing the condition of disclosure.
+2. **Degrees of freedom are typed.** `[S]` They specify how a declared system
+   may vary after constraints and redundancies are named.
+3. **Forms arise across freedoms.** `[I/C]` Stable forms are invariants,
+   attractors, order parameters, or robust organizations—not the freedoms
+   themselves.
+4. **Possibility is not actuality.** `[S]` Logical coherence, model admission,
+   nomological possibility, reachability, actuality, stability, and emergence
+   are different predicates.
+5. **Emergence is audited crossing by crossing.** `[I/C]` A missing reduction
+   is not proof of strong emergence. A successful reduction reclassifies rather
+   than erases a useful effective level.
+6. **Agency couples possibility to actuality.** `[S/I]` D5 supplies modeled
+   alternatives and ranking; commitment with D4 means produces a D4 action and
+   receipt. The world separately returns consequences.
+7. **The map remains put-downable.** `[I/S]` Correction, contest, and exit are
+   part of the worldview rather than exceptions to it.
 
-Ontology owns the first half of the game question: **how did the reader come
-to be?** The answer is not a biological derivation and not a claim that the
-Ground has been captured. It is the framework's Dasein reconstruction:
+## D0–D6 without equivocation
 
 ```text
-Ground remains prior.
-Being stabilizes reciprocal closure: P∞ = φ · ν = 1 on S².
-Teleological Force names viable continuation inside manifestation.
-D4 opens bounded witness and usable means-to-act.
-D5 opens enacted agency and worldline-foresight.
-D6 releases the claim to final capture and returns the loop to D0.
-Dasein appears at the D4/D5 threshold as finite disclosure able to question and act.
+D0 --μ0--> D1 --μ1--> D2 --μ2--> D3 --μ3--> D4 --μ4--> D5
+D5 --κ--> D6 --r6~~> D0
 ```
 
-So **Dasein as reader** names the finite site where Being becomes disclosed,
-questioned, tested, and acted. In the dimensional scaffold, D4 is bounded
-witness and D5 is agency / selection. In the action register, those become the
-two factors the player must couple: `V` as D4 means-to-act and `Φ` as D5
-worldline-foresight. The reader becomes a player when disclosure becomes both
-visible and actionable.
-
-This route therefore answers only the origin half. The play half routes through
-the [Soul Loop](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md)
-and the Goal: Dasein recursively corrects ontology, epistemology, methodology,
-axiology, and teleology until the next act can raise `P_node,i` and
-`P_node,H` together under `η = 0`.
-
-At the holobiont scale, the strongest positive image is still `D5`: a universal
-holobiont using matter-energy as memory and control substrate to run the Soul
-Loop on itself. That remains a process in time with matter, memory, computation,
-recursive self-modeling, correction, and entropy accounting. `D6` is not the
-final holobiont; it is the apophatic boundary where even the completed-organism
-image is released as final possession and returned to `D0`. Matter becomes
-means; the holobiont becomes Soul-Loop-capable; the Ground remains prior.
-
-**Tier fence:** `[S]` for the internal ordering and register distinctions;
-`[I]` for the Dasein reading; `[C]` if this is presented as a completed
-external proof that the seer, Ground, or consciousness has been captured by the
-model.
-
----
-
-## Rosetta Position
-
-L6 is First Principles: knowing by non-apprehension. The Sādhu / anti-reification function prunes, compresses, and refuses false fullness.
-
-This is where packet 139 belongs. Decentralized Authority Model is not anti-structure; it is the discipline that lets structure be useful without becoming a cage.
-
----
-
-## Current Source Files / Owner Routes
-
-### Live core (front door)
-
-| File | Current Path | Role |
+| Register | Canonical role | Modality |
 |---|---|---|
-| The core state of being | `01_EMERGENTISM/06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md` | Seed / Being / Dasein / beings |
-| Ontology across dimensions | `01_EMERGENTISM/06_ONTOLOGY/00_ONTOLOGY_ACROSS_DIMENSIONS.md` | L6 crosswalk for D0-D6, Ground / Being / Dasein / beings, logarithmic center, and anti-reification guardrails |
-| Finity as ontological boundary | `01_EMERGENTISM/06_ONTOLOGY/00_FINITY_AS_ONTOLOGICAL_BOUNDARY.md` | L6 reading of finity as finite disclosure, not mathematical overclaim or Ground possession |
-| The ring that is the ground | `01_EMERGENTISM/06_ONTOLOGY/00_THE_RING_THAT_IS_THE_GROUND.md` | Interpretive mythic translation; read through the anti-reification guard in `00_THE_ONTOLOGY_OF_BEING.md` |
-| D6 as axiomatic closure | `01_EMERGENTISM/06_ONTOLOGY/00_D6_AS_APOPHATIC_CLOSURE.md` | Closure |
-| D5-D6 corpus stabilization | `01_EMERGENTISM/06_ONTOLOGY/00_D5_D6_CORPUS_STABILIZATION.md` | Upper-boundary discipline |
-| Transcendental Trinity | `01_EMERGENTISM/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/` | Ground-symbol structure |
-| Packet 139 | `01_EMERGENTISM/11_UPLINK/60_SESSION_PACKETS/139_A_BRAHMANISM_AS_PRACTICE_2026_04_24.md` | Axiomatic practice |
-| Axiomatic ground and field structure | `01_EMERGENTISM/06_ONTOLOGY/01_APOPHATIC_GROUND_AND_FIELD_STRUCTURE.md` | L6 core state: axiomatic ground, S² as substrate, anti-reification, practice as direct access, agent-as-field-excitation |
+| D0 | ground-limit before positive articulation | boundary |
+| D1 | distinction | actual structure |
+| D2 | relation and configuration | actual structure |
+| D3 | transformation and persistence | actual structure |
+| D4 | causal actuality: embodied means, performed action, record, receipt | actual |
+| D5 | counterfactual possibility: modeled futures, ranking, selection | possible |
+| D6 | reflexive/apophatic closure witness; no new positive freedom | boundary |
 
-### Archived (provenance only)
+`μ₀…μ₄` are five candidate positive crossings. `κ` and `r₆` are not μ-crossings.
+The five-count, saturation trigger, domain projection, D6 resemblance, and spiral
+image remain conjectures. `D6≡D0` is a dead form.
 
-These rows are preserved under K3 for provenance; they are no longer live 06_ONTOLOGY sources. Read the live core above as the front door.
+## Dasein and the Soul Loop `[I/S]`
 
-| File | Current Path | Role |
-|---|---|---|
-| The Bindu was always here (archived) | `01_EMERGENTISM/90_ARCHIVE/00_THE_BINDU_WAS_ALWAYS_HERE.md` | Origin — archived 2026; no longer a live 06_ONTOLOGY source |
-| AUM on the Burri Sphere (archived) | `01_EMERGENTISM/90_ARCHIVE/00_AUM_ON_THE_BURRI_SPHERE.md` | Mandukya convergence — archived 2026; no longer a live 06_ONTOLOGY source |
-| The sitting practice (archived) | `01_EMERGENTISM/90_ARCHIVE/00_THE_SITTING_PRACTICE.md` | Primary practice — archived 2026; no longer a live 06_ONTOLOGY source |
+Dasein names a finite site at which actuality can be disclosed, possibilities
+modeled, actions committed, and consequences learned from. It is not evidence
+that consciousness or the Ground has been captured by the scaffold.
 
-### In-folder K3 tombstones (superseded; provenance only)
+```text
+D4 event --cognition--> fallible D5 option field
+                              |
+                 commitment with D4 means
+                              v
+                         D4 action
+                              |
+                    commitment receipt
+                              v
+                 world-mediated consequence
+                              |
+                       outcome receipt
+                              v
+                    next model + selector
+```
 
-These files remain in this folder as K3 tombstones — superseded content kept for audit trail, not live source. Both point to the canonical [`../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md`](../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md) for the corrected -ology ↔ L-level mapping.
+Anticipated futures can influence present action through presently instantiated
+models. This is model-mediated present causation, not a claim that a future
+event physically propagates backward in time. See the
+[`Soul Loop`](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md).
 
-| File | Role |
+## Mathematical anti-reification guard
+
+For the stipulated reciprocal chart,
+
+```text
+φ=cot(θ/2),  ν=tan(θ/2)  =>  φν=1.
+```
+
+That is an analytic chart identity `[A]`, not a conservation law or ontology.
+For `J_inv(z)=1/z`, `Fix(J_inv)={−1,1}` and `J_inv` swaps `0` with `∞`.
+`{−1,0,1,∞}` is a selected `J_inv`-invariant union, not the closure of `{0,∞}`.
+Titan symbols and the paired glyphs `⊙ = • × ○` and `• = ⊙ / ○` remain
+selected frames and emblematic grammar, never field arithmetic.
+
+## Collective form
+
+Canonical spelling is **Egregoreotype**. A candidate requires a shared trace
+that survives carrier turnover, measurably reweights later selection, produces
+a recurrent objective-like bias, and exposes substrate costs and their bearers.
+This does not presume consciousness, personhood, or moral authority.
+
+## Supporting ontology routes
+
+| File | Role and boundary |
 |---|---|
-| [`00_THE_SYNCRETIC_MAP.md`](00_THE_SYNCRETIC_MAP.md) | Superseded syncretic map (placed Teleology at L7); corrected to Teleology = L1 |
-| [`00_SYNCRETIC_MAP_AUDIT.md`](00_SYNCRETIC_MAP_AUDIT.md) | Superseded audit of the above; preserved for audit trail only |
+| [`00_THE_ONTOLOGY_OF_BEING.md`](00_THE_ONTOLOGY_OF_BEING.md) | Historical interpretive essay; read through the active spine |
+| [`00_ONTOLOGY_ACROSS_DIMENSIONS.md`](00_ONTOLOGY_ACROSS_DIMENSIONS.md) | Legacy D0–D6 crosswalk; fixed D4/D5 typing above controls |
+| [`00_FINITY_AS_ONTOLOGICAL_BOUNDARY.md`](00_FINITY_AS_ONTOLOGICAL_BOUNDARY.md) | Interpretive finity reading; arithmetic and interpretation remain distinct |
+| [`00_D6_AS_APOPHATIC_CLOSURE.md`](00_D6_AS_APOPHATIC_CLOSURE.md) | Apophatic witness; literal identity is superseded |
+| [`01_APOPHATIC_GROUND_AND_FIELD_STRUCTURE.md`](01_APOPHATIC_GROUND_AND_FIELD_STRUCTURE.md) | Ground/model distinction; no geometry possesses the Ground |
+| [`../05_COSMOLOGY/`](../05_COSMOLOGY/) | Positive structural models; ontology supplies the anti-reification boundary |
+| [`../07_THEOLOGY/`](../07_THEOLOGY/) | Symbolic and public translation; never source authority over this lane |
 
-A legacy `AUDIT_REPORT.md` (a superseded 2026-05-23 pre-repair snapshot) was previously in this folder; it is **no longer present here** and was never live state — do not cite it. *(State note 2026-05-31: the file is absent from this folder; if its provenance copy needs a tombstone home, that is a K3/archival reconciliation for central, not an in-folder fix.)*
+The in-folder syncretic-map files are superseded provenance; they do not control
+the current `-ology` mapping.
 
----
+## Agent execution surface
 
-## L6 Clarification
+1. Cite the active spine before legacy crosswalks.
+2. Preserve claim-level tiers, rivals, predictions, and kills.
+3. Do not turn chart identities, symbolic correspondences, or absence of a
+   reduction into empirical discoveries.
+4. Keep the quantum inset removable and the worldview independent of any one
+   interpretation.
+5. Keep product, venture, social-caste, and governance machinery outside the
+   ontology's warrant.
 
-Emergentism as a positive structural system belongs primarily at [05_COSMOLOGY](../05_COSMOLOGY/). Core State proper is L6 apophasis: the refusal to identify the Ground with any model.
+**Canonical path:** `01_EMERGENTISM/06_ONTOLOGY/README.md`
 
-The guard is:
-
-- L5 says: here is the best structural model.
-- L6 says: the Ground is not exhausted by the model.
-- L7 says: here is how the model returns as public symbol.
-
-This lane is the named L6 secondary of the cosmology canon: [`../05_COSMOLOGY/00_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_BURRISPHERE.md) explicitly assigns L6/Ontology the role *"prevent the sphere model from being confused with the Ground."* The sphere `S²` (`φ·ν = 1`) is the substrate read here apophatically; the moral axis is **`η` (coupling vs closure), never a pole, gender, caste, or person** — see [`../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md). The constitution that fences the equator is **5 + 1** (five refusals + Ω, never "six") — [`../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md).
-
-**Glossary alias:** Falsification Protocol ≜ neti-neti subtraction (L6 via-negativa); Decentralized Authority Model ≜ A-Brahmanism (the A- privative).
-
-## Claim Boundaries
-
-- Core State is [I] where mapping axiomatic traditions and Being-language to the framework.
-- Core State is [S] where maintaining internal distinctions between Ground / Field / Instrument.
-- Core State is [C] where claiming D6 == D0 beyond the framework's structural closure.
-- Axiomatic discipline applies to every claim, including this file.
-- Use `P∞ = φ · ν = 1` for the invariant sphere-product, `B = sin θ` for balance, and `P_node = Φ × V` for finite node flourishing. Do not use bare `P` where the regime matters.
-- Treat AUM, Bindu, Tolkien, Mandukya, and other mythic-symbolic material as convergent interpretive translation, not as public proof.
-
-## Public-Translation Risks
-
-- Risk: core state presented as highest command. Correction: core state is silent origin, not authority voice.
-- Risk: apophasis used to dismiss structure. Correction: scaffolding is useful and disposable.
-- Risk: Being reified as a thing. Correction: Being is not a thing; it is the condition under which things appear.
-- Risk: first-person, neuroscience, or symbolic language presented as settled evidence. Correction: keep direct disclosure, analogy, and public proof in their proper lanes.
-
----
-
-*See also:* [05_COSMOLOGY](../05_COSMOLOGY/) (Emergentism models) · [07_THEOLOGY](../07_THEOLOGY/) (Symbol teaches) · [139_A_BRAHMANISM_AS_PRACTICE](../11_UPLINK/60_SESSION_PACKETS/139_A_BRAHMANISM_AS_PRACTICE_2026_04_24.md)
-
-`Zero-Sum Resolution Equation`
-
----
-
-## Agent Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
-2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Canonical Path:** `01_EMERGENTISM/06_ONTOLOGY/README.md`
+`Ground ≠ model. Form ≠ freedom. Possibility ≠ actuality.`

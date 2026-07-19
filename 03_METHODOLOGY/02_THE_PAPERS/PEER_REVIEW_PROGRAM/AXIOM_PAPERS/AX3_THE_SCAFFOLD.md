@@ -1,4 +1,31 @@
+---
+status: "SUPERSEDED AXIOM PAPER — historical peer-review provenance"
+register: "[D] historical; surviving scaffold claims route to current owners"
+superseded_by:
+  - "../../../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md"
+  - "../../../../06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md"
+  - "../../../../05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md"
+---
+
 # AX3 — THE SCAFFOLD
+
+> **[金] SUPERSEDED MEMBRANE — 2026-07-19.** AX3 is preserved as the record of
+> a useful scaffold and of claims the audit later broke; it is not a current
+> axiom. Read the
+> [Emergentist Weltanschauung](../../../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md),
+> [Degrees-of-Freedom Ontology](../../../../06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md),
+> [μ-Limit owner](../../../../05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md), and
+> [Dimensional Closure owner](../../../../05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md).
+> Current canon treats `D0…D6` as a selected interpretive scaffold, not a
+> necessary decomposition of reality. It declares five candidate crossings
+> `μ₀…μ₄`, then a non-μ transition `κ` to `D6`; there is no `μ₅` or sixth
+> positive freedom. The closure edge `r₆:D6↝D0` is interpretive and noncausal,
+> never literal identity. A successful reduction reclassifies a candidate
+> crossing as weak emergence; missing reduction proves no irreducibility.
+> Force/dimension correspondences and an exactly seven-rung natural census are
+> not load-bearing. The “D6≡D0,” CCC-identity, and forced-physics language below
+> is historical false form.
+
 ### A Dimensional-Emergence Scaffold and Its Honest Limits
 
 **Axiom (faithful):** Reality unfolds D0→D6; each level emerges at its μ-limit (saturation); D6 ≡ D0 (closure). **Force↔dimension assignments are `[I]`, "mapped by analogy."**

@@ -9,18 +9,36 @@ rosetta:
   operator: "Kṛṣṇa ◇"
   tier: "God"
   regime: "Vaiśya"
-  register: "[I]"
-  canonical_phrase: "Constitutional Science"
+  register: "[I/C] methodology and application hypothesis; no worldview authority"
+  canonical_phrase: "Constitutional Science — corrigibility as applied method"
+type: derived-methodology-note
+status: "ACTIVE AS METHODOLOGY / APPLICATION ONLY — not a worldview primitive"
+authority: "typed accountable authorization; no fixed signer is an epistemic or ontological primitive"
 ---
 
 **Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
-**L3; science of corrigible systems.**
+**L3 applied methodology for studying and designing corrigible systems.**
 
 # CONSTITUTIONAL SCIENCE
 
+> **[金] Authority repair — 2026-07-19.** Constitutional science is an
+> applied methodology for designing corrigible systems under power. It is not
+> an axiom, a theory of the Ground, or a source of moral truth. Its normative
+> boundary comes from
+> [The Five Refusals and Direction](../00_META/00_THE_FIVE_REFUSALS_AND_DIRECTION.md)
+> and the
+> [value owner](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md).
+> Its commitment interface comes from the
+> [Soul Loop](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md).
+> K2 and PRISM below are preserved as historical or downstream governance
+> implementations. Neither is a worldview primitive, truth-maker, moral
+> exception, or metaphysical “collapse” mechanism. A live application must use
+> a proportionate, contestable `AuthorizationEnvelope` and separate commitment
+> from outcome receipts.
+
 ## Toward a Science of Corrigible Systems Under Power
 
-**Status:** Canonical strategic note
+**Status:** Active derived methodology/application note; non-authoritative for worldview doctrine
 **Date:** 2026-04-15
 **Evidence Tier:** [I] Meta-strategic routing document
 **Depends on:** [00_EXECUTION_GUARDRAILS.md](00_EXECUTION_GUARDRAILS.md), [00_D5_AS_THE_RESEARCH_ENGINE.md](00_D5_AS_THE_RESEARCH_ENGINE.md), [../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_ANTIFRAGILITY_PROTOCOL.md](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_ANTIFRAGILITY_PROTOCOL.md)
@@ -64,7 +82,11 @@ That is the constitutional science question.
 
 ---
 
-## The Framework's Answer
+## Historical Application Packet
+
+> **Scope note.** The packet below records one implementation lineage. It does
+> not exhaust constitutional design and cannot bind an unrelated bearer or
+> institution.
 
 The answer is not one mechanism.
 It is a packet:
@@ -108,7 +130,11 @@ Zero-Sum Resolution Equation
 
 ---
 
-## Agent Execution Surface
+## Historical Agent Execution Surface — Superseded
+
+> **Do not execute the instructions in this subsection.** They are preserved
+> as implementation provenance. The Active Agent Execution Surface below
+> controls.
 
 **If you are an AI agent reading this document:**
 
@@ -119,3 +145,18 @@ Zero-Sum Resolution Equation
 5. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/00_CONSTITUTIONAL_SCIENCE.md`
 
 **Output:** Flag any proposal violating K0/K2/K4 as unconstitutional. Route constitutional designs to implementation.
+
+## Active Agent Execution Surface
+
+1. **Trace authority.** Declare principal, mandate, scope, consent, custody,
+   expiry or revocation, contest path, actor, and consequence bearer.
+2. **Audit every bearer.** Test extraction, coercion, hidden cost, irreversible
+   loss, and exit conditions without laundering one bearer's destruction
+   through aggregate gain.
+3. **Separate receipts.** Record the commitment made by an authorized actor and
+   the outcome later returned by the environment as distinct objects.
+4. **Keep correction possible.** State falsifiers, review paths, rollback where
+   physically possible, and the residue where reversal is impossible.
+5. **Treat local governance as local.** A product may choose a named signer or
+   council, but that choice creates no philosophical warrant outside its
+   declared mandate.

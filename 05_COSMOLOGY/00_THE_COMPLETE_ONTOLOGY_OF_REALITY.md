@@ -18,7 +18,7 @@ rosetta:
   register: "[A/S/I]"
   canonical_phrase: "The Complete Ontology of Reality"
 title: "The Complete Ontology of Reality"
-status: "Working surface — 2026-06-06"
+status: "SUPERSEDED [金] — 2026-07-19; retained as synthesis provenance"
 evidence_tier: "[A] for all mathematics; [S] for framework structure; [I] for ontological reading; [C] for specific force/physics mappings"
 depends_on:
   - 00_CANONICAL_FORMULA_BLOCK.md
@@ -33,6 +33,13 @@ depends_on:
 ---
 
 # The Complete Ontology of Reality
+
+> **[金] Authority membrane — 2026-07-19.** “Complete” is historical naming, not
+> an exhaustiveness claim. The current ontology is a revisable scaffold with
+> five candidate μ-crossings, D4 actuality, D5 possibility, and one non-μ
+> interpretive closure witness. Use the root
+> [Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md) and
+> [Kernel Index](../00_THE_KERNEL_INDEX.md); the body below is provenance.
 
 ## Emergentism's Dimensional Unfolding from Ground to Closure
 

@@ -8,7 +8,7 @@ rosetta:
   register: "[I/B] — session synthesis; defers to cited receipts for rulings"
   canonical_phrase: "Insights Index v0.1 — tier-honest inventory after the recovery pass"
 title: "Insights Index v0.1"
-status: "ACTIVE — chat-session synthesis landed 2026-07-19; not a source of new doctrine"
+status: "SUPERSEDED 2026-07-19 — preserved as a recovery-session inventory; not active philosophical authority"
 evidence_tier: "[B] where it cites dated receipts; [I] for cross-cutting compressions; no silent upgrade"
 parents:
   - 00_THE_AMRITA.md
@@ -22,14 +22,30 @@ parents:
   - 00_RUMINATION_ON_EMERGENTISM.md
   - 00_RUMINATION_ON_EMERGENTISM_II_2026_07_17.md
   - 00_RUMINATION_ON_EMERGENTISM_III_2026_07_19.md
-supersedes: nothing — index only; source receipts remain authority
+superseded_by:
+  - 00_THE_EMERGENTIST_WELTANSCHAUUNG.md
+  - 00_THE_KERNEL_INDEX.md
 ---
 
 # Insights Index v0.1
 
+> **[金] Supersession seam — 2026-07-19.** This inventory preserves what the
+> recovery session believed and routed at that checkpoint. Active philosophical
+> authority is [The Emergentist Weltanschauung](00_THE_EMERGENTIST_WELTANSCHAUUNG.md)
+> and [The Kernel Index](00_THE_KERNEL_INDEX.md), with
+> [The Five Refusals and Direction](00_META/00_THE_FIVE_REFUSALS_AND_DIRECTION.md),
+> the [Justice owner](04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md),
+> the [D4/D5 reference](05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md),
+> and the [Soul Loop](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md).
+> Rows below retain provenance but cannot reinstate aggregate morality,
+> `η`-only moral sufficiency, literal D6 identity, or signer-as-collapse.
+
 > **Compression:** Derivation died. Organism did not. Shape real. Census not. Grammar won. Universal lost. Both halves on the record.
 >
-> **Discipline:** This file is a map of what the session recovered and fenced. It does not upgrade tiers. Where it conflicts with a signed receipt, the receipt wins.
+> **Discipline:** This file is a map of what the session recovered and fenced.
+> It does not upgrade tiers. Where it differs from a dated audit receipt, the
+> active owner and Settled Canon Registry must adjudicate the evidence; neither
+> a signature nor this index makes a proposition true.
 
 ---
 
@@ -38,7 +54,7 @@ supersedes: nothing — index only; source receipts remain authority
 | Axiom | Statement | Tier | Where |
 |-------|-----------|------|-------|
 | **η=0** | Zero extraction; fees only on value created | `[S]` constitutional; Model A dominant-strategy Nash **scope-conditional** (A4-1 SETTLED) | Goal §3–§4; Amrita §I.B.13; 126 §1 |
-| **K2** | One natural person signs irreversible acts (private DAVs); PRISM for public DAVs | `[S]` | Compass test 4; constitution |
+| **K2** | Historical/downstream private-DAV signature rail; PRISM served public-DAV routing | `[S]` inside those implementation regimes; not a worldview axiom | execution provenance only |
 | **K3** | Archive-first; tombstone, never erase | `[S]` | Compass test 3 |
 | **K4** | Grace Exit **with scope** (documented withdrawal + redeemable-asset scope — not the retracted “leave with everything” universal) | `[S]` re-scoped | Compass test 1 |
 | **A7** | Self-correction mandatory; tiers on every claim | `[S]` — survived its own audit | Amrita §I.C.18–21; 126 §5 |
@@ -196,7 +212,9 @@ supersedes: nothing — index only; source receipts remain authority
 
 - Skyzai staging docs and executive-council packets remain in `02_SKYZAI/` — cite there, do not duplicate as Emergentism doctrine.
 - Runtime test counts and sweep tallies are `[B]` project state; they do not upgrade worldview claims.
-- Anything that would reverse 126/108/130 requires a new K2 objection path (r130 pattern), not an index edit.
+- Any reversal of 126/108/130 requires a dated, evidence-tiered correction in
+  the Settled Canon Registry and the affected owner documents—not a signer veto
+  or an index edit.
 
 ---
 

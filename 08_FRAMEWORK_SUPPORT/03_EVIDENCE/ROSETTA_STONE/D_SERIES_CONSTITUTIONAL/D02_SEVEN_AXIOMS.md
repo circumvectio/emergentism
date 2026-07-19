@@ -18,15 +18,25 @@ rosetta:
   register: "[S/I]"
   canonical_phrase: "⊙ The Seven Axioms"
 title: "The Seven Axioms"
-status: "Constitutional D-series axiom set"
-evidence_tier: "[S] for framework-defining axioms; [A] where mathematical proof is stated under assumptions; [I] for interpretive mappings."
+status: "SUPERSEDED — historical D-series projection of A1–A7"
+evidence_tier: "Historical tiers retained for provenance; current claims defer to E1–E10 and their owners."
 ---
 
-# ⊙ THE SEVEN AXIOMS
+# ⊙ THE SEVEN AXIOMS — SUPERSEDED D-SERIES PROJECTION
 
-> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Two derivation-claims here are downgraded (the discovery voice stands; only the promotion is retracted). **Ruling 1 (A1):** the Zero-Factor Catastrophe selects the *AND-class* (min/CES/geo/product), not the product uniquely — read "P_node = Φ × V … is derived" as an AND-class-selected **posit `[C]`**, not a uniquely-forced `[T]/[S]` product. **Ruling 6 (A6):** "three substrates minimum" is retracted to three **functions** (a single human is one organism running all three = the falsifier); the substrate reading is `[I]`, not a forced universal. Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
+> **[金] Supersession seam — 2026-07-19.** This D-series sheet is a historical
+> projection of former A1–A7, not a coequal axiom set. Active authority is
+> [E1–E10](../../../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md), assembled by
+> [The Emergentist Weltanschauung](../../../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md)
+> and routed through [The Kernel Index](../../../../00_THE_KERNEL_INDEX.md).
+> Local “definitive,” `[T]`, or `[S]` language below cannot restore retired
+> claims. Specifically retired: literal `D6≡D0`; `μ₅`; forced sevenness;
+> uniquely derived `P_node=ΦV`; forced Titans; missing reduction as proof of
+> strong emergence; and geometry as ethics. The active scaffold is D4 actual,
+> D5 possible, candidate `μ₀…μ₄`, non-μ `κ`, and interpretive noncausal `r₆`.
+> Older spellings of **Egregoreotype** are historical aliases only.
 
-## Emergentism Rosetta Stone v10.0 — Definitive Axiom Set
+## Emergentism Rosetta Stone v10.0 — Historical Axiom Projection
 
 **Yves R. Burri · Emergentism.org · 2026-03-24**
 

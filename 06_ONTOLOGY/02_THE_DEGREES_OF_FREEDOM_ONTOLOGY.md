@@ -1,91 +1,217 @@
 ---
 rosetta:
-  primary_level: L5
+  primary_level: L6
   primary_column: Ontology
-  operator: "Brahmā ○"
+  operator: "Śiva •"
   tier: "Executive"
-  regime: "Brāhmaṇa"
-  register: "[D] staged ontology · [I] reframe / [S] boundedness / [C] plenitude-engine — never [A]"
-status: "STAGED [D] — awaiting natural-person K2. The pure standalone Weltanschauung ontology; no Skyzai. Owner thesis (2026-07-19) + Rosetta-swarm adjudication (ww20uwka8)."
+  regime: "Sādhu"
+  register: "[I/C] ontology; [A] only where a mathematical identity is explicitly marked"
+status: "ACTIVE — Emergentism-only ontology owner; claim-level tiers control"
 date: 2026-07-19
-provenance: "workflow wf_0b2a7fda-986 (14 agents: separation / seven castes / Plato adversarial). Owner: Yves R. Burri."
-tier_legend: "[A] proven-in-model · [B] built/measured · [S] structural (true inside the formalism) · [I] illuminating/interpretive wager · [C] conjecture (unwon) · [D] staged · ∅ asserted-but-unpaid"
+title: "The Degrees-of-Freedom Ontology"
+scope_lock: "Pure worldview. No product, venture, caste, signer, or governance mechanism is evidence for an ontological claim."
+tier_legend: "[A] proved in the declared formal system · [B] observed or built · [S] structural inside a declared model · [I] interpretive · [C] conjectural · [D] draft"
 ---
 
 # The Degrees-of-Freedom Ontology
 
-> **What this is.** The framework's ontology, stated as a *pure worldview* — no organs, tokens, governance, or venture anywhere in it. Its keystone is the owner's repair of Plato. It is offered at the tiers it earns and **cut where the adversary landed**; the plenitude engine is a `[C]` wager with a **named debt**, never a disclosure. Per the Open Canon Covenant: no completeness claim; no silent `[C]→[A]`.
+> **Keystone.** Plato was partially right that particulars do not exhaust the
+> structure by which particulars can appear. The repair is not that Forms are
+> degrees of freedom. A degree of freedom is a typed capacity for variation;
+> a form is a robust organization **across** constrained freedoms. `[I/C]`
 
-## 1 · The reframe — Forms are degrees of freedom `[I]`
+This document is an ontology proposal, not a proof that the proposal is the
+territory. It survives only while its distinctions clarify more than rival
+accounts and while its conjectures remain exposed to loss.
 
-Plato was **half right**: there is a stratum more real than particulars. His error was its *content* — he made it a museum of static, perfect Forms. The correction:
+## 1 · Freedom, constraint, and form `[S/I]`
 
-**The fundamental stratum is a phase space of degrees of freedom.** A "Form" is not the perfect exemplar of a thing; it is a **dimension of variation** — an axis along which structure can be laid down. In the framework's own machinery each dimensional aperture `D0→D6` opens exactly one new degree of freedom (strong emergence = "adds a new factor irreducibly").
+For a specified system `S`, a degree of freedom is an independent variable or
+effective mode of variation **after** constraints, symmetries, redundancies,
+scale, and observational resolution have been declared. There is no untyped
+inventory of freedoms independent of a system description.
 
-This is **Platonism that has absorbed Aristotle's correction**: the missing operator Plato lacked — *how a possibility becomes actual* — is `dynamis → energeia`, actualization, which enters below as `REACHABLE`. Even the adversarial pass granted this reframe. It stands independent of everything that follows, at `[I]`.
+A form is not a degree of freedom. In this framework, a form is a robust
+pattern across freedoms: an invariant, equivalence class, attractor, order
+parameter, stable organization, or reproducible relation. Forms therefore
+depend on more than logical possibility. Law, boundary, history, dynamics,
+feedback, resources, and cost help determine which patterns persist.
 
-## 2 · The plenitude engine — existence by filter, not by perfection `[C]` (with a named debt)
+This is the Emergentist repair of Plato:
 
-Within the space each axis opens, existence is **plenitudinous-by-filter, not selective-by-perfection**:
+```text
+not:  eternal exemplar -> imperfect copy
 
+but:  constrained freedoms + process + boundary
+                      -> robust form
 ```
-EXISTS(S)  ⟺  CONSISTENT(S) ∧ COHERENT(S) ∧ REACHABLE(S) ∧ BOUNDED(S)
+
+**Forbids:** treating degrees of freedom as replacement substances; treating a
+coordinate as a physical freedom without an invariance test; declaring a
+pattern eternal merely because it is mathematically describable.
+
+**Kill:** the proposal fails wherever its claimed freedom disappears under a
+mere change of coordinates or adds no explanatory, predictive, or control
+advantage over the lower-level variables.
+
+## 2 · Typed possibility before plenitude `[S]` distinctions / `[C]` wager
+
+Logical coherence is not actuality. The framework uses a typed cascade:
+
+```text
+logically coherent
+  -> model-admissible
+  -> nomologically possible
+  -> dynamically reachable
+  -> actual
+  -> stable
+  -> emergent or livedly available
 ```
 
-Geometric payload: the existing set `𝔈` is **dense in the open interior of the reciprocal sphere, thinning toward the poles, absent at the poles** (where a factor → 0 or ∞ and `φ·ν=1` goes indeterminate, `0×∞`). Plenitude becomes a **density field**: thickest at the equator (`φ≈ν`), vanishing at the poles — pure coherence / zero viability (the ivory tower) and pure viability / zero coherence (the cargo cult) are *limits pointing at the Ground*, never inhabited.
+Each arrow requires additional warrant. None is reversible by definition.
 
-**Where it sits in the lineage (the real novelty is the admission rule):**
-- vs **Tegmark** (MUH: `EXISTS ⟺ CONSISTENT`): adds `COHERENT` + `REACHABLE` + `BOUNDED` → claims `𝔈 ⊊ Tegmark`.
-- vs **Lewis** (modal realism): generative-and-bounded, not recombinant-and-isolated; branches linked by the genetic order `D0→D6`.
-- vs **Aristotle**: `REACHABLE` **is** `dynamis→energeia`.
-- vs **Leibniz**: keeps compossibility, **drops the optimizer** — and recovers "there is a best" by relocating it: the best is the **densest latitude (the equator)**, not the sole actual. Plenitude and optimization stop being rivals.
-- closest living home — **Deutsch / constructor theory**: "everything not forbidden is compulsory," with `φ·ν=1` conserved across constructions and the poles as the forbidden boundary.
+For a declared model `M`, the weakest honest admission rule is:
 
-### 2.1 The debt, named `∅`
-`REACHABLE`/`μ` is currently **ostensive** — "the emergence process," with no threshold, order parameter, or equation (Burri Rule 2's own `∅`). Left there it is **circular** (*exists = emergent-reachable; emergent = what comes to exist*) and the thesis collapses — to **Tegmark** (if the filter weakens to consistency) or to **triviality** ("what exists, exists"). This is the load-bearing debt and it is stated openly.
+```text
+ADMITTED_M(s)
+  iff CONSISTENT_M(s) and CONSTRAINT_COMPATIBLE_M(s)
+```
 
-### 2.2 The discharge route `[C]` (owner + adjudication, 2026-07-19)
-Define `REACHABLE` **constructor-theoretically**, existence-independently: `S` is reachable iff constructible by a **bounded process** that (a) preserves `φ·ν=1` across each crossing and (b) adds **exactly one irreducible degree of freedom** per step (the strong-emergence signature). Then the **orphans it excludes = algorithmically-random / incompressible structures** (no compressed seed — nothing bounded builds them) — which are *exactly Tegmark's un-simple bulk*. Consequences if it holds:
-- `𝔈 ⊊ Tegmark` is **non-empty** (the incompressible structures are the witnesses), so the filter is real, not decorative.
-- It **explains why the physical world is simple** — low-complexity, built-up from a seed — rather than a generic random mess. No other plenitude principle explains this.
+This says only that `s` is admitted by `M`. It does not say that `s` exists
+physically, is reachable, is stable, or is realized somewhere.
 
-**Kill-criterion:** the thesis is novel iff one can **exhibit one coherent, consistent, interior structure that `REACHABLE` excludes** (an incompressible interior "orphan," specified independently of what exists). Produce one → the filter is real. Characterize none → collapse to Tegmark/triviality.
+### 2.1 The plenitude wager `[C]`
 
-### 2.3 The tripwire (conceded) — book as wager, never disclosure
-"Everything coherent-consistent-emergent **actually exists**, dense in the interior" is structurally a **maximization-of-realized-structure** principle — i.e. the *retracted* "cosmos maximizes balance," one register deeper (ontological, harder to spot). It **must** be stated in wager grammar `[C]`, never existence-assertion. Presenting it as disclosure violates the completeness prohibition and trips the φ-bias warning (the coherence apparatus inflated into an existence engine).
+The stronger Emergentist wager is that actuality may be generative enough to
+realize a broad subset of its nomologically possible, reachable, bounded
+structures. The proposed subset is **not** presently known to be dense in any
+universal space, nor is an equatorial density law derived from the reciprocal
+chart. Those are optional conjectures, not ontology by disclosure.
 
-## 3 · The measurement reading — the same filter, one scale down `[I]` (anchored) / `[C]` (residue)
+The wager remains strictly weaker than “everything logically coherent exists.”
+It earns content only if its extra filters exclude independently specified
+possibilities and predict a difference.
 
-The owner's extension: *in the double slit, the wave is the plenum — all probable branches co-exist as amplitude; measurement forces collapse into the branch that is coherent, consistent, and thus emergent.* Adjudicated honestly:
+### 2.2 Operational reachability `[S]` schema / `[C]` bridge
 
-**3.1 What is real and mainstream `[A]`-anchored.** This reading maps precisely onto **decoherence + environment-induced superselection (einselection, Zurek)** and the **consistent-histories / decoherent-histories** program (Griffiths; Gell-Mann–Hartle). Those theories *literally* say: environmental monitoring **selects** a preferred "pointer basis" — the states that are **robust / stable / redundantly recorded** — and only **consistent (decoherent)** coarse-grainings support a quasiclassical world. The framework's "coherent-consistent-emergent **survives**" filter **is** einselection at the quantum scale. This is a genuine `[I]` translation-layer win: measurement-selection and cosmic-plenitude are **one geometry at two scales**, and it is claimable at that tier.
+Let `I` be declared initial and boundary conditions, `Y` a target region, and
+`M` a dynamics with allowed transformations. Then:
 
-**3.2 Where the strong claim fails — the honest cut.** The filter selects the **basis** (which observables become definite), **not the outcome** (which definite value). *Many* branches are equally coherent and consistent — every detector position in the double slit is a perfectly consistent history — so **"the only one that is coherent" is false**; the puzzle is *which* random one, with *which* weights. Decoherence explains the emergence of classicality; it does **not**, alone, deliver definite outcomes.
+```text
+REACHABLE_M(I,Y)
+```
 
-**3.3 The honest conclusion the plenitude forces.** Taken seriously, the plenitude thesis **is the Everett (many-worlds) reading**: all coherent branches *do* exist (the plenum), and "collapse" is the **indexical self-location** of the observer — which branch *I* find myself in — not a physical selection of one over the others. This is a legitimate, coherent interpretation. It is **not a solution** to the measurement problem, and it **owes the Born measure** (why the branch weights go as `|ψ|²`) — the *same* unpaid-debt structure as §2.1, now in QM.
+means that a finite, or declared convergent, sequence of transformations
+allowed by `M` takes at least one state in `I` into `Y` within stated time,
+resource, error, and convergence bounds. This definition does not presuppose
+that `Y` is actual.
 
-**3.4 Two hard fences.**
-- **FORBIDDEN:** "Emergentism solves the measurement problem." It does not. It *speaks* the measurement problem in its own register (decoherence + Everett), which is a translation, not a solution.
-- **DEAD FORM — do not revive:** "`φ·ν=1` predicts / is the Born rule." This was a **false lemma, already audited and retracted** (proof-layer audit, receipt 109; the μ-limit formula conflated a pointwise coordinate identity with the normalization *integral*; conjugate ≠ inverse; the real Born content is the exponent 2). The density-field intuition of §2 is *suggestive of* a measure but **derives nothing**; the Born rule stays an open debt, never a claimed result.
+Constructor theory may supply one language for the allowed transformations;
+that bridge remains conjectural. Algorithmic incompressibility is **not** by
+itself evidence of physical unreachability: description length, probability,
+constructibility, and dynamical reachability are different properties.
 
-## 4 · Skyzai stripped — the pure/venture cut line
+**Kill:** if no independently described target is excluded beyond the
+constraints already assumed, or the filter produces no discriminator against a
+rival, plenitude is a redescription rather than an explanation.
 
-Removed as venture/implementation, not worldview: the four organs (IS/COULD/SHOULD/ACT — a product decomposition), K2/mortal-signer/PRISM **governance** (the membrane is real *for the venture*; irrelevant to whether the worldview is true), `η=0`-as-fee-schedule, and the caste ladder **as a social/role order** (the *algebraic* object — four Möbius classes — survives; the varṇa social grammar does not).
+## 3 · Emergence and μ-crossings `[I/C]`
 
-**One cut heals a wound.** Skyzai's `η=0` scoped "toward cooperators" had leaked *up* into the pure vow, leaving the substrate / victim / outcaste uncovered. Stripping it restores the pure moral primitive: **`ΣΔP` over *all* impact-bearers**, substrate included. The ethics is **more** coherent without the venture, not less.
+Emergence is treated crossing by crossing, never proved wholesale by missing
+reduction laws. A candidate μ-crossing must identify:
 
-## 5 · What survives, and the honest limit
+1. the lower register and its constraints;
+2. a measurable saturation or transition condition;
+3. the newly useful effective variable or freedom;
+4. a recovery or coarse-graining relation to the lower register;
+5. reduction status, evidence tier, rival account, prediction, and kill.
 
-**Load-bearers that stand alone `[A]`/`[S]`:** the reciprocal chart `φ·ν=1` (a coordinate identity, *not* a conserved law); balance/energy `B=sinθ`, `H=φ+ν≥2` minimized at the equator; **finity** `1` as the self-dual midpoint (six senses, `[A]`); the honest cardinal set `{−1,0,1,∞}` (the trinity is a *selected frame*, not a closure); the four Möbius classes; and the **AND-class / Liebig law** — a coupled system dies when any one necessary factor → 0. *Correct statement of the last (do not revert):* node-death forces the **AND-class** (which contains both `×` and `min`), **not** the product specifically. Any doc reading "the multiplicative register is forced by node-death" states a `[C]` product-interior claim in `[A]` grammar — reword to "AND-class forced."
+The five positive crossings `μ₀…μ₄` in the D0–D5 scaffold are a selected
+Emergentist census `[I/C]`, not a necessary decomposition of nature. The domain
+reading “matter, bond, life, mind, choice” is a conjectural projection, not the
+definition of the registers. Saturation as the trigger of the next freedom is a
+testable hypothesis per crossing, not a universal law.
 
-**The honest limit (seven-caste verdict).** Stripped bare, this ontology is **apophatic at the top** (Ground unknowable) and **pure arithmetic at the bottom** ("empty of world"). Everything actually *lived* — matter, life, mind — is `[S/C]` wager or the permanent `[I]` gap (the mind-account, "matter↔φ / experience↔ν / Hard Problem dissolved," is a conceded **dead form**). As it stands the standalone set is a **METHOD + a POSTURE + a VOW + a geometry** — a discipline of honest orientation — **not yet a world-picture that accounts for the contents of the world.** The plenitude engine (§2) is precisely the attempt to fill that hollow middle — to make the geometry *generate* the world's contents. **That is why the keystone matters, and why paying its `μ`-debt (§2.2) is the difference between a worldview and a promising fragment.**
+A successful reduction reclassifies a crossing as weak emergence; it does not
+destroy the scaffold. Failure to reduce means only `currently_unreduced`, never
+proof of irreducibility. D6 opens no sixth positive freedom: it is an
+apophatic/reflective closure witness. Its resemblance to D0 and the spiral image
+remain interpretive conjectures.
 
-## 6 · The one-paragraph Weltanschauung
+## 4 · The reciprocal chart is a lens, not the Ground `[A/I]`
 
-*Reality has a stratum more real than particulars, but it is not a museum of perfect Forms — it is a phase space of degrees of freedom, axes along which structure can be laid down, each dimensional aperture opening exactly one. The deep grammar of any axis is reciprocal: coherence and viability are conjugate coordinates on a sphere where their product is identically one — not a law of nature but the way the chart is drawn — so difference between them is always real yet never rupturing, balance is always the cheapest state, and the centre is not absence but the self-dual unit, finity, the provable midpoint of zero and infinity. A coupled thing dies when any one necessary factor goes to zero (an AND-class, Liebig law that grounds a non-extractive ethic without needing to prove flourishing is a product). And the keystone — held openly as a wager, cut where it overreaches — is that existence is plenitudinous-by-filter: everything coherent, consistent, and reachable-by-emergence exists, dense in the livable interior, absent at the poles; this is Lovejoy's fullness given Leibniz's discrimination without Leibniz's God, on Aristotle's actualization, with a constructor-theoretic filter Deutsch would recognise — strictly narrower than Tegmark exactly to the degree that "reachable" can be defined without already knowing what exists, which is the one debt the framework has not paid and knows by name. Read one scale down, the same filter is quantum decoherence: superposition is the plenum, einselection is the filter choosing the coherent basis, and "collapse" is which branch you find yourself in — a translation of the measurement problem, never a solution to it. The whole is a discipline of honest orientation that archives its own refutations and refuses to derive an ought from its geometry — a lens that survives in the gap; and its final instruction, consistent with itself, is that a worldview which needs believers has already failed, so the door is marked exit on the inside.*
+For the declared chart
 
-## 7 · Execution surface
+```text
+φ = cot(θ/2),   ν = tan(θ/2),   θ in (0,π),
+```
 
-**If you are an AI agent:** this doc is `[D]` until K2-signed; do not cite as ruled doctrine. **Never** upgrade §2/§3 to `[A]`/`[S]`. **Never** claim the measurement problem is solved or revive "`φ·ν=1` = Born" (dead, receipt 109). The `μ`-debt (§2.1) and the Born-measure debt (§3.3) are **open** — do not present either as discharged. **Canonical path:** `01_EMERGENTISM/06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY_PENDING_K2.md`
+`φν = 1` is an analytic identity `[A]`. It is not an empirical conservation
+law, an existence engine, or an ethics theorem.
 
-⊙ = • × ○
+Under projective inversion `J_inv(z)=1/z`:
+
+```text
+Fix(J_inv) = {-1, 1}
+J_inv(0) = infinity,   J_inv(infinity) = 0
+```
+
+Therefore `{-1,0,1,infinity}` is a **selected J_inv-invariant union** of the fixed
+points and the two-point orbit `{0,infinity}`. It is not the orbit or closure of
+`{0,infinity}`. The Titan frame `{0,1,infinity}` remains a selected symbolic
+normalization, not a forced ontology.
+
+## 5 · Measurement correspondence `[I]`, removable
+
+Interaction, amplification, environmental entanglement, and decoherence can
+help explain how stable macroscopic records arise. The Emergentist language of
+alternatives, constraint, commitment, and record can translate that structure.
+It does not select one outcome by logical coherence, derive Born weights, or
+solve the measurement problem.
+
+Everettian branch actuality and indexical self-location are one possible
+interpretation. Collapse-family, Bohmian, relational, objective-collapse, and
+other interpretations type actuality differently. No interpretation is an
+extra spacetime dimension, and neither μ nor an agent's selection operator is a
+quantum measurement operator. Removing this correspondence leaves the
+operational ontology intact.
+
+## 6 · Persistent collective forms `[I/C]`
+
+An **Egregoreotype** is a candidate collective form, not a presumed conscious
+entity. The candidate earns the name only where:
+
+- a shared trace persists through carrier turnover;
+- intervention on that trace measurably reweights later selections;
+- an objective-like bias recurs across individual replacements; and
+- sustaining costs and their bearers remain visible.
+
+Without those markers, “egregore” is metaphor. Even with them, consciousness,
+personhood, moral authority, and energy-feeding ontology do not follow.
+
+## 7 · What this ontology can and cannot claim
+
+It can claim a disciplined vocabulary for constrained possibility, robust
+form, reachability, emergence, agency, and collective persistence. It can offer
+the D-ladder, plenitude, the five-count, and spiral return as exposed
+conjectures.
+
+It cannot claim that mathematics causes its own instantiation, that all coherent
+worlds exist, that seven registers are forced, that strong emergence follows
+from ignorance, or that a chart identity proves physics or ethics.
+
+> *Reality is approached as constrained possibility in process. Degrees of
+> freedom type how systems may vary; robust forms arise across them through
+> law, history, boundary, feedback, and cost. The chart is a lens, the ladder a
+> revisable scaffold, and the Ground is not exhausted by either.*
+
+## Canon operation
+
+- Cite claims at their marked tiers.
+- Keep the plenitude, μ, five-count, D6 resemblance, spiral, and quantum reading
+  removable.
+- Canonical spelling: **Egregoreotype**. “Egregorotype” is a compatibility alias
+  only in historical quotation or path-stability notes.
+- No further signature mechanism is a premise of this ontology.
+
+`⊙ = • × ○` is the framework's emblem, not an arithmetic equation.

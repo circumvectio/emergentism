@@ -1,15 +1,21 @@
 ---
-title: "The Kintsugi Protocol — antifragile repair: every break is gilded, every attack must leave the corpus stronger"
+title: "The Kintsugi Protocol — visible, evidence-typed repair"
 date: 2026-07-10
-status: "[E] K2-COUNTERSIGNED 2026-07-18 ('Accept'). The repair discipline is canonical: every break is gilded, every attack must leave the corpus stronger. The 6 gilded seams from receipts 110+115 are first applications; the protocol passes its own antifragility criterion §6. Replaces the prior [D] staged status; Open Canon Covenant §4.4 honored (ratification at tier, no upgrade at content)."
+status: "ACTIVE [S/I] repair and provenance protocol — subordinate to E9, RF-3, and claim-level evidence tiers; repaired 2026-07-19"
 evidence_tier: "[S] as protocol norm (a repair discipline, like the BTJ gates); [I] the Kintsugi reading; the antifragility criterion §6 is a design property the protocol must itself pass"
-owner: "K2 + AI co-owner"
+owner: "01_EMERGENTISM maintainers; no signer or model supplies epistemic authority"
 parents:
   - ./00_SETTLED_CANON_REGISTRY.md
   - ../11_UPLINK/50_AUDITS_AND_EXECUTIONS/107_THE_OPEN_LOOP_D6_D0_CLOSURE_PENDING_K2.md
 ---
 
 # The Kintsugi Protocol
+
+> **[金] Authority and comparison seam — 2026-07-19.** Kintsugi governs how a
+> repair stays visible; it does not rank claims above their evidence, require a
+> trial to manufacture novelty, or make any signer sovereign over truth. A seam
+> gives more inspectable provenance **at the same claim tier**. E9, RF-3, the
+> named source owner, and the Trial Record control when this document conflicts.
 
 > 金継ぎ — "golden joinery." The broken vessel, repaired with gold, is worth more
 > than before it broke — because the repair is visible, the history is honest,
@@ -36,11 +42,12 @@ Two lessons, both structural:
 The corpus already refuses to hide its history (K3 archive-first, banners,
 receipts). Kintsugi completes the refusal by **inverting the shame polarity**:
 
-**A repaired claim outranks an untested one.** A seam is not an apology — it is
-a *verification mark*: this line was attacked by a named adversary, broke in a
-specific way, and the repair survived re-trial. Pristine surfaces carry no such
-evidence. Therefore: **seams are prestige, erasure is the only disgrace.**
-Corollary for readers: trust the seamed passage *more*.
+**A repaired claim carries more inspectable provenance than its own unrepaired
+form.** A seam is not an apology: it records how a line was tested, where it
+broke, and what later check the repair survived. It does not outrank an
+analytic theorem, independent observation, or even an untested claim at a
+different tier. Therefore seams are evidence about the repair history, not a
+command to trust the proposition more than its warrant allows.
 
 ## 3. The Golden Seam standard (the visible repair)
 
@@ -70,7 +77,7 @@ load-bearing text are a protocol violation: repair without a seam = erasure.
    a decisive one settles canon. The queue is the corpus's option book on truth.
 3. **The hormesis cycle (scheduled stressors).** Trials are not emergencies —
    they are metabolism. A standing cadence: (a) any NEW load-bearing claim faces
-   the vegetable method *before* its K2 countersign (trial-before-sign);
+   the declared stress method before promotion (trial-before-promotion);
    (b) the full claims-trial re-runs on a fixed rhythm or after any major canon
    event; (c) a compression-audit (below) runs with it. A corpus that is never
    stressed is not robust — it is untested.
@@ -93,26 +100,26 @@ property we are building.
 
 ## 6. The antifragility criterion (the protocol's own kill-test)
 
-After every trial or confirmed break, the following must **strictly increase**:
+For a **confirmed break**, a responsible repair should improve at least one
+relevant dimension without worsening the others without disclosure:
 
     verified-tier mass  (claims re-tiered on evidence, either direction)
   + antibody count      (new registry flags)
   + queued discriminators (new cheapest-tests filed)
 
-If a stressor leaves all three unchanged, **the protocol has failed for that
-stressor** — either the trial did not bite, or the repair was cosmetic. A break
-that produces only a patch (no gold) is robust-not-antifragile and must be
-re-opened. This criterion applies to the protocol itself: if Kintsugi ever
-becomes ceremony — seams without gold — retire it by its own test.
+The list is diagnostic, not an arithmetic score, and decreases may be the
+honest result when a claim is killed. A well-scoped trial that finds no break is
+a valid null result: it records scope, method, and limits without inventing an
+antibody or discriminator. A confirmed break that produces only cosmetic prose
+must be re-opened. If Kintsugi becomes ceremony—seams without inspectable
+repairs—retire it by its own test.
 
 ## 7. Fences (what this is NOT)
 
-- **Not an operator.** The registry's seven-operator scheme is closed (no fifth
-  mixed-sign slot). Kintsugi is a *repair discipline* — protocol layer, like the
+- **Not an operator.** Kintsugi is a *repair discipline*—a protocol layer, like the
   BTJ gates — not an eighth operator. The `[I]` resonance is lawful and only
-  that: Kālī cuts counterfeit coherence; Kintsugi gilds the truth-scar the cut
-  leaves. The pair reads as one metabolic cycle — cut, then gild — but only the
-  cut is an operator.
+  that. The Rosetta vocabulary remains bounded by its declared game; Kintsugi
+  neither closes it universally nor adds a move to it.
 - **Not a license to break things carelessly.** The bounty pays for *confirmed*
   breaks (adversarially verified); noise is not a crack.
 - **Not retroactive erasure.** Pre-protocol banners and errata stand as they

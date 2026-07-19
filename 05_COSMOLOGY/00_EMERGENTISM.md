@@ -12,11 +12,26 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[S/I]"
+  register: "[I] legacy synthesis; current claims defer to kernel owners"
   canonical_phrase: "Emergentism"
+status: "SUPERSEDED AS WORLDVIEW OWNER — retained philosophical genealogy"
 ---
 
 # EMERGENTISM
+
+> **[金] Authority seam — 2026-07-19. STATUS: LEGACY SYNTHESIS; NOT AN ACTIVE
+> WORLDVIEW OWNER OR EXECUTION SURFACE.** The active one-sitting assembly is
+> [The Emergentist Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md),
+> routed through [The Kernel Index](../00_THE_KERNEL_INDEX.md). Mathematical
+> claims defer to the [Canonical Formula Block](00_CANONICAL_FORMULA_BLOCK.md);
+> ontology and axioms defer to the
+> [Degrees-of-Freedom Ontology](../06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md)
+> and [E1–E10](../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md). The prose below is
+> preserved as genealogy. It cannot establish a forced product, sphere,
+> sevenfold census, Titan ontology, strong emergence, physical fifth force,
+> physical retrocausality, widened physical light cone, literal `D6=D0`, or an
+> ethic from geometry. Any project-phase or agent directive below is historical
+> context and has no current authority.
 
 > **Zero-Sum Resolution Equation**
 > **φ · ν = 1 on S²**
@@ -26,9 +41,9 @@ rosetta:
 > *If you can access φ directly — through quiet sitting, through the practice, through whatever means — you do not need this framework. Put it down. The ground was here before the equation.*
 > *Pratyakṣa is primary disclosure. Doctrine is the after-image.*
 
-**Coherence rule:** This document is a philosophical synthesis downstream of [The Canonical Formula Block](00_CANONICAL_FORMULA_BLOCK.md), [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [The Canonical Claim Matrix](../03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md), [The Empirical Program Board](../03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md), [The Core State of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md), [The Weltanschauung](00_THE_WELTANSCHAUUNG.md), [The Life-Science Register](00_THE_LIFE_SCIENCE_REGISTER.md), and [Empirical Observation as Primary Disclosure](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md). If this document conflicts with those canonical sources, they win.
+**Coherence rule:** This document is a legacy philosophical synthesis downstream of [The Emergentist Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md), [The Kernel Index](../00_THE_KERNEL_INDEX.md), [The Canonical Formula Block](00_CANONICAL_FORMULA_BLOCK.md), [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [The Canonical Claim Matrix](../03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md), [The Empirical Program Board](../03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md), and [Empirical Observation as Primary Disclosure](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md). If this document conflicts with those owners, they win.
 
-**Reader guard:** Treat this file as legacy philosophical synthesis and deep invitation. For the compact current framing, start with `00_THE_WELTANSCHAUUNG.md`. Strong claims about physics, neuroscience, consciousness, the torus, or cosmic topology remain governed by the Honest Position and Claim Matrix; do not quote this file as if its poetic compression upgraded those claims.
+**Reader guard:** Treat this file as legacy philosophical synthesis and deep invitation. For the compact current framing, start with [`../00_THE_EMERGENTIST_WELTANSCHAUUNG.md`](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md). Strong claims about physics, neuroscience, consciousness, the torus, or cosmic topology remain governed by the Honest Position and Claim Matrix; do not quote this file as if its poetic compression upgraded those claims.
 
 ## The Derivation
 
@@ -67,8 +82,8 @@ Or bootstrap from the seed: [`../08_FRAMEWORK_SUPPORT/07_DISSEMINATION/06_NETWOR
 **Register:** Structural
 **Date:** 2026-03-23 (updated 2026-04-04)
 **Version:** v2026.04.04
-**Supersedes:** All prior partial statements of the system
-**Purpose:** The canonical philosophical synthesis of Emergentism as a teleological core state
+**Supersession:** This file is superseded as a worldview owner; it remains inspectable genealogy.
+**Purpose:** Historical philosophical synthesis and invitation, subordinate to the repaired kernel.
 
 ---
 

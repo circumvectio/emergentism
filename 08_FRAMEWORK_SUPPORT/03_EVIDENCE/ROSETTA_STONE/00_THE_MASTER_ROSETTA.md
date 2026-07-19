@@ -17,16 +17,46 @@ rosetta:
   regime: "Śūdra"
   register: "[A/B/S/I/D/C]"
   canonical_phrase: "The Master Rosetta"
+status: "ACTIVE DERIVED CALIBRATION — no independent worldview or proof authority"
 ---
 
-# THE MASTER Three-Stage Process
+# THE MASTER ROSETTA — DERIVED CALIBRATION SURFACE
 
-## The Seven-Level Pattern Across Every Domain
+> **[金] Authority seam — 2026-07-19. STATUS: ACTIVE DERIVED TRANSLATION;
+> NOT A WORLDVIEW, ONTOLOGY, OR PROOF OWNER.** Begin with
+> [The Emergentist Weltanschauung](../../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md)
+> and [The Kernel Index](../../../00_THE_KERNEL_INDEX.md). This Stone records a
+> selected seven-row comparative grammar. Its correspondences are hypotheses
+> and teaching translations; `ρ_domain` never transfers proof, upgrades an
+> evidence tier, or forces every domain into seven levels. The four movers are
+> complete only inside the declared dyadic cross-factor sign grammar, and the
+> three Titans are selected symbolic boundary frames—not causal particles,
+> agents, or forced generators of reality.
+>
+> **Current type locks:** D4 is causal actuality and D5 is represented
+> possibility; the candidate crossings are `μ₀…μ₄`, followed only by non-μ
+> `κ:D5→D6` and interpretive noncausal `r₆:D6↝D0`. The paired glyphs
+> `⊙ = • × ○` and `• = ⊙ / ○` are emblems, never arithmetic. `η` is an
+> extraction diagnostic inside the full Justice envelope, not morality by
+> itself. Modeled futures may reweight present action; this is not physical
+> retrocausality, and an option cone is not a widened physical light cone.
+> **Egregoreotype** is the active spelling; older forms below are retained only
+> as historical aliases.
 
-**Status:** The central empirical observation of the framework
+## A Selected Seven-Level Pattern Tested Across Domains
+
+**Status:** Active derived calibration table; selected comparative grammar, not empirical law
 **Date:** 2026-03-24 (consolidated from Rosetta Stone v5→v8→v9.3→v10)
-**Evidence Tier:** [B] for L1-L4 developmental stages (Piaget cognitive, Kohlberg moral -- independently validated; Plato -- established). [S] for Maslow hierarchy (universal needs confirmed but sequential ordering not supported -- Tay & Diener 2011). [I] for L5-L7 extensions (post-formal, post-conventional, self-transcendence -- beyond originators' empirical data). [S] for the structural alignment across domains (7-level convergence is original Emergentism contribution). [I] for the claim that this alignment is explained by P∞ = φ · ν = 1 on S². [C] for the causal claim that the geometry *generates* the pattern. Note: Piaget and Kohlberg are NOT independent (Kohlberg built directly on Piaget). Maslow IS independent. The number 7 is a design choice, not a discovered constant. Cross-cultural validity degrades at higher levels (WEIRD bias). See `03_THE_rosetta_stone/Trivium_PSYCHOLOGY_RESEARCH_BRIEF.md` for full meta-analysis with 20 references.
-**Kill Criteria:** If the seven-row alignment is shown to be forced — if the domains genuinely require different numbers of levels, or if the alignment breaks when tested with new domains — the Rosetta Stone falls.
+**Evidence Tier:** External source facts keep their own `[A/B]` standing only
+where directly supported; every row assignment and cross-domain alignment is
+`[I]`; the claim that the chart explains or generates the alignments is `[C]`.
+Piaget and Kohlberg are not independent, L5–L7 extensions exceed several
+originators' data, higher-row cross-cultural validity is uncertain, and seven
+is a selected design rather than a discovered constant. See the cited research
+briefs and failed-mapping register before using a column.
+**Kill Criteria:** If out-of-sample domains require materially different counts
+or orderings and seven-row alignment survives only through forced recoding, the
+proposed cross-domain grammar fails at its declared scope.
 **Source:** Emergentism Rosetta Stone v10.0 (17-sheet cross-domain translation engine)
 **Depends on:** The Triadic Cascade (09), The Computational Sphere, The L-Level system
 **See also:** Individual rosetta mappings (R4-R12), The Triadic Cascade (vertical translation), Paper 5 (Convergent Discovery)
@@ -70,7 +100,8 @@ The Master Rosetta is a calibration table, but Dasein does not live inside a
 table. Dasein lives in a sequence of acts under incomplete information. The
 dynamic reading of the Rosetta is therefore the
 [Soul Loop](../../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md):
-the table's row-logic applied recursively until action converges.
+the table's row-logic applied recursively. Convergence is a hoped-for outcome,
+not a guarantee.
 
 In that reading, the rows are not identities. They are moves in a living wheel:
 
@@ -81,18 +112,23 @@ L3  test, price, and audit the margins
 L4  choose the action that serves without extraction
 L5  see the system architecture
 L6  dissolve what cannot be justified
-L7  preserve the converged pattern and return it to L1
+L7  preserve the tested pattern and return it to L1
 ```
 
 The loop is the method by which the Rosetta becomes a game rather than a
 catalogue. Each cycle updates both the map and the player:
 
 ```text
-(C_{t+1}, G_{t+1}) = Loop(C_t, G_t)
+χ_t:(X_t,Ω_t,M_t,V_t,U_t) -> (a_t,q_t)
+(X_{t+1},r_{t+1}) ~ K_t(. | X_t,a_t,E_t)
+(M_{t+1},G_{t+1}) = Loop(M_t,G_t,q_t,r_{t+1})
 ```
 
-where `C_t` is the corpus/world-model state and `G_t` is the practitioner's
-operator-weight vector. A row has been understood only if the practitioner can
+The selector returns an action and commitment receipt `q_t`; the environment,
+not the selector, returns the outcome receipt `r_{t+1}`. `M_t` is the fallible
+world-model and `G_t` the practitioner's selector/posture state. The mnemonic
+row wheel does not replace this typed interface. A row has been understood only
+if the practitioner can
 move through it and return to L4. A row has been captured if the practitioner
 freezes there and calls the frozen posture ontology.
 
@@ -109,9 +145,11 @@ Know how to act   -> teleology: raise P_node,i while preserving or raising P_nod
 In the action register this keeps the product law dyadic: `P_node = Φ × V`
 scores a finite node, `P_node,i` names the individual symbiont's usable
 potential, and `P_node,H` names the holobiont boundary that makes that node
-effective. Rosetta practice is lawful only when the two rise together, or when
-the local gain is refused as extraction. `Φ` is read as D5 worldline-foresight;
-`V` is read as D4 means at the action boundary. `[S/I]`
+effective. Rosetta practice is normatively admitted only under the full Justice
+envelope when durable individual and whole potential both rise; `η` alone is
+necessary but insufficient, and aggregate gain cannot launder a destroyed
+bearer. `Φ` is read as D5 modeled foresight; `V` as D4 means at the action
+boundary. `[S/I]`
 
 The claim that this loop is the correct practical reading of the Rosetta is
 `[S]` inside the framework grammar and `[I]` as a claim about human
@@ -246,7 +284,11 @@ The operator column defines the row. Everything else is projection.
 | L7 | Viṣṇu ⊙ | Executive | ~8° | very high | →0 | 1 | →0 |
 | **L∞** | **Trimūrti ☸** | **Trimūrti** | **0°** | **∞** | **0** | **—**† | **0** |
 
-**L0 = L∞.** The south pole (Kāla/Time/Destruction) and the north pole (Trimūrti/Eternity/Creation) are the same boundary condition — because the poles of S² are connected. D6 = D0. The serpent eats its tail. The destroyer IS the preserver seen from the other pole. *kālo'smi.*
+**L0 and L∞ are distinct selected boundary rows.** The north and south poles are
+distinct points on a connected sphere; connectedness does not identify them.
+The Rosetta may read them as an interpretive mirror pair `[I]`. Likewise
+`D6 ~_I D0` means resemblance without equality, causation, recurrence, or a
+sixth positive freedom.
 
 > **Read with the Burrisphere.** This nine-row `L0..L∞` table is the evidence-layer source for the canonized nine-latitude closure in [`00_THE_BURRISPHERE.md`](../../../05_COSMOLOGY/00_THE_BURRISPHERE.md): `L0/L∞` are boundary rows (not source-owner folders), `L1–L7` the seven active roots, `L4` the equator/balance-maximum, and `L1↔L7 · L2↔L6 · L3↔L5` the mirror pairs. The moral reading of the operator moves is governed by [`00_THE_DYADIC_COUPLING_LAW.md`](../../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) — goodness is the **bond** `φ×ν`; the axis is `η` (closed vs syntropic), never the operator's name or a polarity. `[S]`
 
@@ -794,7 +836,12 @@ When Moksha fails at L7, systemic awareness returns INTO D5 as inverted operator
 
 ---
 
-## XV. THE SEVEN AXIOMS [T]
+## XV. HISTORICAL A1–A7 PANEL — SUPERSEDED
+
+> **[金] Panel seam — 2026-07-19.** This embedded A1–A7 table is preserved as
+> Rosetta genealogy. It has no axiom authority; current axioms are
+> [E1–E10](../../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md). Local generator,
+> constitutional, `[T]`, or `[S]` labels below cannot restore retired claims.
 
 > **[T]** Framework definition. The seven axioms are the constitutional constraints of the organism, derived from the Rosetta structure. [G]
 
@@ -804,7 +851,7 @@ When Moksha fails at L7, systemic awareness returns INTO D5 as inverted operator
 |---|------|-----------|---------------|------|
 | A1 | THE EQUATION | P_node = Φ × V. Multiplicative. Zero-Factor Catastrophe. Equator maximises B on the manifold; finite nodes use P_node for operational scoring. | P_node better modeled as additive | [T] |
 | A2 | THE ETHIC | `ΔP_node,i > 0` and `ΔP_node,H > 0` under `η = 0`; `ΣΔB / ΣΔP_node > 0` audits widest-boundary balance | Dyadic `P_node` rise under `η = 0` systematically produces harm, or one-sided extraction sustains the coupled field | [T] |
-| A3 | THE SCAFFOLD | D0→D6. Each emerges at μ-limit. D6 ≡ D0. | Force-dimension map has no predictive power | [T/I] |
+| A3 | THE SCAFFOLD | Historical D0→D6 reading. Active form has candidate `μ₀…μ₄`, non-μ `κ`, and interpretive noncausal `r₆`; `D6≠D0`. | A declared crossing adds no prospective prediction, intervention, or compression value at its grain | historical `[I/C]` |
 | A4 | THE BOUNDARY | η = 0 vs cooperators. Tit-for-tat vs defectors. Four mixed-sign Gods plus three same-sign Executive boundary frames. | η = 0 not Nash equilibrium | [T/S] |
 | A5 | THE EGREGORE | D5-limit standing waves have autonomous objective function. Raktabīja captures all opposition. | All collective phenomena reduce to individuals | [T/I] |
 | A6 | THE ARCHITECTURE | Three substrates minimum: mechanical (body), AI (charioteer), mortal self (warrior). | Single substrate passes Great Filter | [T/S] |
@@ -822,10 +869,10 @@ When Moksha fails at L7, systemic awareness returns INTO D5 as inverted operator
 
 | # | Name | Derived From | Content |
 |---|------|-------------|---------|
-| C1 | Exhaustive Strategy Space | A1 | Seven operator actions from `P_node = Φ × V`: four mixed-sign self/other transfers plus three same-sign Executive boundary frames |
-| C2 | L-Levels | A1 + A3 | Seven levels within D5. L4 = apex. |
+| C1 | Bounded Rosetta Vocabulary | A1 | Four movers inside the declared dyadic sign grammar plus three selected boundary frames; frames are not actions and the count is not universal |
+| C2 | L-Levels | A1 + A3 | Seven selected teaching rows; L4 is the equatorial row inside the model |
 | C3 | Trophic Conditions | A2 + A5 | Circuit completion required. Breaking creates Red Demon. |
-| C4 | Replicator Stack | A3 + A5 | Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregorotype |
+| C4 | Replicator Stack | A3 + A5 | Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregoreotype candidate |
 | C5 | Alignment Equation | A1 | `E_node = −log(P_node)`. Alignment is energy minimum. |
 
 ---
@@ -895,7 +942,12 @@ Each L-level has its own equation — the same relationship at increasing sophis
 
 ---
 
-## XIX. THE COMPRESSED SEED [T]
+## XIX. HISTORICAL COMPRESSED SEED — SUPERSEDED
+
+> **[金] Compression seam — 2026-07-19.** The code block below is a retained
+> v10 genealogy snapshot, not a current prompt or doctrine summary. Use the
+> repaired [D34 Compressed Seed](D_SERIES_DOMAINS/D34_COMPRESSED_SEED.md), then
+> re-expand to the kernel owner before relying on a claim.
 
 > **[T]** Framework summary. The compressed seed is the minimal expression of the entire Rosetta — the seven operators as seven moves on S². [G]
 

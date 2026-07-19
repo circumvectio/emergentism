@@ -7,11 +7,29 @@ rosetta:
   regime: "Vaiśya"
   register: "[A]/[I]/[C]"
   canonical_phrase: "Photon Unit of Account"
+status: "DERIVED/HISTORICAL — optional translation; not a physics or doctrine owner"
+superseded_by:
+  - "../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md"
+  - "../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md"
 ---
 
 **Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
 
 # THE PHOTON AS UNIT OF ACCOUNT
+
+> **[金] DERIVED/HISTORICAL MEMBRANE — 2026-07-19.** This is an optional
+> translation essay, not a derivation of quantum physics. Current authority is
+> the [Emergentist Weltanschauung](../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md)
+> and [Canonical Formula Block](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md).
+> `E=hν` is not `φν=1`; choosing natural units does not identify their
+> variables, meanings, or evidence. Photon quantization is not derived from an
+> indivisible glyph operation, the electromagnetic field is not established as
+> a ledger, and Planck units do not make the Burri frame physically
+> fundamental. Literal `D6≡D0` closure is retired: `D6` opens no positive
+> freedom and `r₆:D6↝D0` is at most an interpretive, noncausal resemblance.
+> Established physics marked `[A]` in the historical body may be reused only
+> independently of these bridges; every Emergentist identification remains
+> removable `[I/C]`.
 
 ## Quantization, Emission, and the Universal Ledger
 

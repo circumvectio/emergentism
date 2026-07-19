@@ -7,11 +7,35 @@ rosetta:
   regime: "Vaiśya"
   register: "[A]/[I]/[C]"
   canonical_phrase: "Uncertainty Principle"
+status: "DERIVED/HISTORICAL — removable quantum translation; not a physics or doctrine owner"
+superseded_by:
+  - "../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md"
+  - "../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md"
+  - "../../05_COSMOLOGY/00_THE_BURRI_RULES.md"
+  - "../../05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md"
 ---
 
 **Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
 
 # THE UNCERTAINTY PRINCIPLE AS φ·ν = 1
+
+> **[金] DERIVED/HISTORICAL MEMBRANE — 2026-07-19.** This is a removable
+> comparison between reciprocal coordinates and selected minimum-uncertainty
+> cases, not a derivation of quantum uncertainty. Read the
+> [Emergentist Weltanschauung](../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md),
+> [Canonical Formula Block](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md),
+> [Burri Rules](../../05_COSMOLOGY/00_THE_BURRI_RULES.md), and
+> [Quantum Foundations boundary](../../05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md).
+> The chart identity `φν=1` is equality by definition; quantum uncertainty is a
+> state- and observable-dependent inequality, with equality only in qualified
+> minimum-uncertainty cases. A chosen normalization can display reciprocal
+> coordinates without proving a unique `S²`, an equator, a frame operation, a
+> Planck-scale ontology, or a universal conjugacy law. The energy-time and
+> phase-number cases also require their own technical qualifications; the
+> simplified table below has no independent authority. No arithmetic identity,
+> quantum rule, dimension, emergence crossing, ethic, or physical ontology may
+> be inferred from this analogy. All such stronger language below is
+> superseded; the body remains as provenance.
 
 ## Conjugate Variables as Complementary Coordinates on S²
 

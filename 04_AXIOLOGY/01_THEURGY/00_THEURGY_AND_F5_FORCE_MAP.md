@@ -14,7 +14,15 @@ rosetta:
 # THEURGY AND THE F5 FORCE MAP
 ## Operational D5 Discipline and First-Pass Structural Map
 
-**Status:** Active — post-audit 2026-04-20 (Option β landed)
+> **[金] Application membrane — 2026-07-19.** This first-pass force map is a
+> historical/derived theurgy application, not an active fifth-force ontology,
+> D4/D5 owner, or worldview authority. F5 remains an `[I/C]` direction/selection
+> reading, never a recognized physical interaction. Consequential action uses
+> accountable authorization and the typed Soul Loop; Egregoreotype candidates
+> use the turnover/trace/intervention/cost test. See the
+> [final Weltanschauung](../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md).
+
+**Status:** DERIVED/HISTORICAL `[I/C]` application — not active philosophical canon
 **Date:** 2026-04-20 (audit + tier promotion 2026-04-20)
 **Evidence Tier:** [S/I/C] per cell (was uniformly `[C]`; per-cell promotion landed after first-draft audit per Option β; see Kill Criteria and table)
 **Depends on:** [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [The Core State of Being](../../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md), [EFR Glossary](../../07_THEOLOGY/00_GLOSSARY.md), [The Archetype Operator Protocol](../../08_FRAMEWORK_SUPPORT/02_OPERATORS/00_ARCHETYPE_OPERATOR_PROTOCOL.md), **[VMOSK-A](../../VMOSK_A.md)**
@@ -174,7 +182,7 @@ substrate they consume*. The 2026-04-28 P.S. extension closes that gap.
 The framework's organizational replicator stack is **[VMOSK-A](../../VMOSK_A.md)**: Vision
 (Genotype), Mission (Epigenotype), Objectives (Phenotype), Strategies
 (Extended Phenotype), KPIs (Memotype), Agents (Rosetta L1-L7 castes).
-The DAC itself is the Egregorotype — the standing-wave product that V,
+The DAC may qualify as an Egregoreotype candidate only if the standing trace,
 M, O, S, K, and A jointly sustain at population scale.
 
 Read in the F5 register:

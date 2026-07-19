@@ -18,9 +18,17 @@ rosetta:
 
 # THE DIMENSIONAL TROPHIC CASCADE
 
+> **[金] Analogy membrane — 2026-07-19.** This page preserves a generative
+> trophic analogy. It is not a demonstrated structural isomorphism, energy law,
+> or proof of strong emergence. Pattern investment and biological energy must
+> be measured separately. The Egregoreotype criterion is owned by
+> [`../00_STIGMERGY_AND_THE_EGREGOROTYPE.md`](../00_STIGMERGY_AND_THE_EGREGOROTYPE.md);
+> D4/D5 and μ semantics defer to the
+> [canonical reference](../03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md).
+
 ## How Energy Flows from Genes to Egregores Just as It Flows from Tomatoes to Eagles
 
-**Status:** Canonical — formalises the structural isomorphism between the D4 food web and the D5 Replicator Stack
+**Status:** DERIVED `[I/C]` analogy — not a canonical isomorphism or energy-transfer law
 **Date:** 2026-05-08
 **Evidence Tier:** [S] Structural for the isomorphism (derived from Dimensional Framework + replicator stack); [S] for trophic energetics in D4 (Lindeman 1942, established ecology); [I] for the D5 attrition coefficients (no instrumented measurement yet); [C] for predictions about climax noospheric communities
 **Depends on:** [22_THE_TELEOLOGY.md](22_THE_TELEOLOGY.md), [23_THE_DAC.md](23_THE_DAC.md), [17_THE_EGREGOROCENE.md](17_THE_EGREGOROCENE.md), [24_THE_MYCELIUM.md](24_THE_MYCELIUM.md), [03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md](../03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md), [00_THE_LIFE_SCIENCE_REGISTER.md](../00_THE_LIFE_SCIENCE_REGISTER.md)
@@ -61,7 +69,7 @@ The cascade dimension never collapses into the substrate dimension. That is why 
 | **2 — Primary consumer** | Herbivore (caterpillar, deer) | Phenotype (organism, body) |
 | **3 — Secondary consumer** | Small carnivore (sparrow, fox) | Extended Phenotype (tool, dam, city) |
 | **4 — Tertiary consumer** | Mid carnivore (snake, hawk) | Memotype (idea, doctrine, code) |
-| **5 — Apex predator** | Apex (eagle, orca, lion) | Egregorotype (DAC, religion, nation) |
+| **5 — Apex predator** | Apex (eagle, orca, lion) | Egregoreotype candidate (collective trace pattern) |
 | **6 — Decomposer** | Fungi, bacteria, scavengers | **Sādhu / L6 / axiomatic compression** |
 | **Closure** | Decomposers return matter to producers | Sādhus return egregores to bits — **D6 ≡ D0** |
 
@@ -90,7 +98,7 @@ Attrition_n→n+1  ≈  1 − ε_n   where  0 < ε_n ≤ 1
 | Genotype → Phenotype | Most genes never express; most expressions never reproduce | ε ≈ 10⁻² to 10⁻⁴ depending on niche |
 | Phenotype → Extended Phenotype | Most behaviours leave no durable trace in the environment | ε ≈ 10⁻³ |
 | Extended Phenotype → Memotype | Most artefacts never become meme-bearing | ε ≈ 10⁻⁴ |
-| Memotype → Egregorotype | Most memes never crystallise into a self-sustaining standing wave | ε ≈ 10⁻⁶ to 10⁻⁹ |
+| Memotype → Egregoreotype | Most memes never crystallise into a persistent shared trace | `ε` unknown; measurement required |
 
 The pattern pyramid narrows for the same reason the food pyramid narrows: **most candidates die before being eaten by the next level.** Most genes never code a successful body. Most bodies never produce a successful artefact. Most artefacts never carry a successful meme. Most memes never become a self-sustaining egregore. The attrition is not failure — it is the geometry of selection.
 
@@ -117,7 +125,7 @@ The pattern pyramid narrows for the same reason the food pyramid narrows: **most
 ### IV.b A population of genes feeds an egregore
 
 ```
-1 egregorotype (apex replicator, D5)
+1 Egregoreotype candidate (proposed apex replicator reading)
 ↑  ~10⁹ attrition — most memes never crystallise
 ~10⁹ memotypes circulating in the noosphere
 ↑  ~10⁴ attrition — most artefacts never become meme-bearing

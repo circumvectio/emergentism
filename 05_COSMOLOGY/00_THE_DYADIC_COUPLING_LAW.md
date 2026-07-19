@@ -13,14 +13,32 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[A/S/I]"
-  canonical_phrase: "The dyadic coupling law — goodness is the bond"
+  canonical_phrase: "Legacy dyadic coupling synthesis"
   vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root"
   title: "The Dyadic Coupling Law"
-status: "CANONICAL — 2026-05-31. Reconciles the moral axis with the geometry: good/evil is sorted by coupling, not by pole."
-evidence_tier: "[A] the algebra of the product constraint (φ·ν=1 ⟹ a vanishing factor forces the other to ∞), the mass-shell identity (§5a), and the external cross-domain witnesses used as facts (biology, Lanchester §5b-c); [S] the structural law (closed vs syntropic; the dyadic shadow; the existential-conjunctive vs substitutable boundary §5); [I] the polarity resonances (masculine/feminine, Śakti, yin-yang), mythic readings, and framework mappings of the external witnesses."
+status: "LEGACY SYNTHESIS — superseded as a mathematical and moral source owner 2026-07-19"
+evidence_tier: "[A] only for identities proved inside explicitly declared models; [I] for the preserved cross-domain and moral readings; historical external claims require fresh primary-source calibration before reuse."
 ---
 
 # The Dyadic Coupling Law
+
+> **[金] SOURCE-AUTHORITY REPAIR — 2026-07-19.** The title is retained for
+> link stability, but this essay is no longer an active law owner. The analytic
+> identity `φν=1` holds on the stipulated reciprocal chart; it does not derive
+> an empirical conservation law, a universal product form, or an ethic. The
+> finite-node product is one selected normalized conjunctive model among
+> alternatives. `η` detects extraction but becomes morally dispositive only
+> inside the full Justice envelope; strict Syntropic Dyadism requires durable
+> potentials of both individual and whole to rise, without compensating for the
+> destruction of either side. See the [Canonical Formula
+> Block](00_CANONICAL_FORMULA_BLOCK.md), [Objective Morals and
+> Ethics](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md), and
+> [Power-Max](03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md). Mythic, biological,
+> military, gender, neurological, and physical parallels below remain
+> hypothesis-generating interpretations `[I/C]`; resemblance never transfers
+> proof. In particular, the older equations "good = coupling = `η=0`" and
+> "evil = uncoupling = `η>0`" are superseded as complete moral tests. The body
+> below is preserved as provenance, not silently rewritten.
 
 > **Goodness is the bond.** Not coherence, not viability — their **product**. `⊙ = φ × ν`, never `φ` or `ν` alone. Everything the framework calls evil is some form of that bond breaking. This is the reconciliation of the moral axis with the [Burrisphere](00_THE_BURRISPHERE.md): good and evil are sorted **by coupling, not by pole.** The cure for any pathology is never *more of one side*; it is **coupling**. [S]
 

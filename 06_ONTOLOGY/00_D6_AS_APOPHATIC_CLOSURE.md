@@ -11,9 +11,30 @@ rosetta:
   regime: "Sādhu"
   register: "[I/S]"
   canonical_phrase: "D6 as axiomatic closure"
+status: "SUPERSEDED — historical closure note; no active doctrinal authority"
+superseded_by:
+  - "../00_THE_EMERGENTIST_WELTANSCHAUUNG.md"
+  - "02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md"
+  - "../05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md"
 ---
 
 # D6 AS APOPHATIC CLOSURE
+
+> **[金] SUPERSEDED MEMBRANE — 2026-07-19.** This note is preserved as
+> provenance for the apophatic insight, but it is not an active owner and must
+> not be read as establishing a literal, causal, or mathematical return to
+> `D0`. Current authority is the
+> [Emergentist Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md), the
+> [Degrees-of-Freedom Ontology](02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md), the
+> [Emergent Axioms](03_THE_EMERGENT_AXIOMS.md), and the
+> [Dimensional Closure owner](../05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md).
+> In that canon, `D6` is reached by the non-μ closure transition `κ`, opens no
+> additional positive freedom, and has at most one interpretive, noncausal edge
+> `r₆:D6↝D0`. Resemblance or self-similarity to `D0` remains `[I/C]`; identity
+> `D6≡D0`, a sixth μ-crossing, and an actual return of the field are retired.
+> The historical body below remains legible; its former words “canonical,”
+> “axiomatic return,” “structurally required,” and “returns” do not override
+> this membrane.
 
 ## Why D6 Is Not a Public Register
 

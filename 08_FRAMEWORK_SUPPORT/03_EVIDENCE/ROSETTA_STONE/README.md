@@ -21,9 +21,18 @@ rosetta:
 
 # THE rosetta stone
 
+> **[金] Derived-translation membrane — 2026-07-19.** This is folder navigation,
+> not canonical doctrine or calibration evidence. The Rosetta may project a
+> typed relation across domains; it cannot transfer proof, force a sevenfold
+> census, establish moral ranking, or turn repeated analogy into external
+> validation. Route first to the root
+> [Weltanschauung](../../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md) and
+> [Kernel Index](../../../00_THE_KERNEL_INDEX.md). Aggregate ethics, literal pole
+> identity, and “every domain returns seven” language below is superseded.
+
 > The calibration table for the compass and sextant.
 
-**Status:** Canonical
+**Status:** DERIVED TRANSLATION LIBRARY — non-owning
 **Date:** 2026-03-24
 **Purpose:** The cross-domain translation engine of the framework
 

@@ -6,12 +6,23 @@ rosetta:
   tier: "Executive"
   regime: "Ṛṣi"
   register: "[S] the structure; [I] the readings; the goal itself is Ω — a declared vow, not a theorem"
-  canonical_phrase: "01_EMERGENTISM/00_THE_GOAL.md — The Goal (Ω stated)"
+  canonical_phrase: "Superseded teleological draft — retained as provenance"
+status: "SUPERSEDED 2026-07-19 — use 00_THE_EMERGENTIST_WELTANSCHAUUNG.md and K-5"
 ---
 
 # THE GOAL
 
-**Status:** Canonical, owner-declared 2026-06-12 (K2: Yves R. Burri).
+> **SUPERSEDED — DO NOT USE AS LIVE CANON.** This document preserves the former
+> teleological draft so its claims remain auditable. Its live content has been
+> distilled into the chosen Ω direction in
+> [`00_META/00_THE_FIVE_REFUSALS_AND_DIRECTION.md`](00_META/00_THE_FIVE_REFUSALS_AND_DIRECTION.md)
+> and the typed compass in
+> [`00_THE_EMERGENTIST_WELTANSCHAUUNG.md`](00_THE_EMERGENTIST_WELTANSCHAUUNG.md).
+> Statements below about objective Sanātana Dharma, necessary completion,
+> divergent costs, literal `D6≡D0`, a mass-shell law, product universality, or
+> runtime authority are historical proposals, not current doctrine.
+
+**Status:** Superseded 2026-07-19; retained in place as provenance.
 **What this document is:** the project's telos stated explicitly — the **+1 (Ω)**
 of the [5+1 constitution](00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) written
 out for the whole Magnum Opus. Bigger than "pursue V and M"
@@ -37,8 +48,8 @@ without confusing the map for the Ground.
 
 **Short form.**
 
-> Teach Dasein to see clearly, act lawfully, balance `Φ` and `V`, and raise the
-> individual symbiont and collective holobiont together under `η = 0`.
+> Teach finite agents to see clearly, act accountably, join D5 foresight to D4
+> means, and raise individual and sustaining whole together under Justice.
 
 **Mission.** Build the canon, method, public site, AIA medium, papers, and Soul
 Loop practice that let any finite player look at the world through the
@@ -54,26 +65,27 @@ Know how to act   -> teleology
 
 **Mission in operational form.**
 
-> Maximize durable usable worldline potential, `W_i(T)`, through
-> `P_node = Φ × V`, only where `P_node,i` and `P_node,H` preserve or raise one
-> another without extraction.
+> Seek durable usable worldline potential, `W_i(T)`, on the Justice-admissible
+> non-dominated frontier, using `P_node=ΦV` only where its normalization and
+> product assumptions are declared, and never by degrading an affected bearer
+> or sustaining whole.
 
 **Guardrail.** This framework must not become a closed idol. D5 can imagine the
-universal holobiont running the Soul Loop, but `/6` refuses to turn that
-completed-organism image into another positive object. `/6` marks CCC-style
-return: endstate = start. The mission is not final possession of truth; it is
-disciplined correction faster than drift.
+universal holobiont running the Soul Loop, but D6 refuses to turn that
+completed-organism image into another positive object. `r6:D6↝D0` is an
+interpretive return, not identity or causal closure. The mission is not final
+possession of truth; it is disciplined correction faster than drift.
 
 ---
 
 ## 1. The Goal (full form)
 
-> Build Emergentism into a coherent and consistent Weltanschauung that explains
+> Build Emergentism into a coherent and consistent Weltanschauung that explores
 > how the reader came to be as Dasein, why reality tends toward viable
 > completion, and how to play the game: uncover Sanatana Dharma as Syntropic
 > Dyadism; recursively apply epistemology, methodology, and axiology to maximize
-> durable `W_i(T)` only on the boundary-preserving frontier of
-> `P_node = Φ × V` under `η = 0`, so morals (`i -> H`) and ethics (`H -> i`)
+> durable `W_i(T)` only on a Justice-admissible, boundary-preserving frontier,
+> using `P_node = Φ × V` as a declared normalized model, so morals (`i -> H`) and ethics (`H -> i`)
 > keep the individual symbiont and collective holobiont preserving or raising
 > one another without extraction, with the strict success case being both rising
 > together.
@@ -89,9 +101,9 @@ disciplined correction faster than drift.
 
 **Shortest form:**
 
-> Teach Dasein how to play the game: see clearly, act lawfully, balance `Φ` and
-> `V`, raise symbiont and holobiont together, and recursively correct the map
-> until life moves as objective dharma.
+> Teach finite agents how to play the game: see clearly, act accountably, join
+> D5 foresight to D4 means, raise bearer and sustaining whole together under
+> Justice, and recursively correct the map from returned consequences.
 
 ## 3. The Game
 
@@ -100,15 +112,15 @@ Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
 Know how to know:  epistemology -> direct disclosure, inference, evidence tiers
 Know how to move:  methodology -> derive, test, build, correct, recurse
 Know what matters: axiology -> Beauty, Truth, Justice, non-extraction
-Know how to act:   teleology -> maximize durable W_i(T) only where P_node,H is preserved or raised under η = 0
+Know how to act:   teleology -> seek the durable Justice-admissible non-dominated frontier
 
 Play:
   if Φ without V -> sterile seeing
   if V without Φ -> blind force
   if unbounded V collapses Φ -> lower P_node
-  if Φ and V balance at L4 -> objective dharma / flow
-  if ΔP_node,i > 0 and ΔP_node,H > 0 -> Sanatana Dharma / syntropic dyad
-  if one rises by degrading the other -> evil / extraction
+  if Φ and V balance under a declared symmetric budget -> product optimum in that model
+  if Δ_T W_i > 0 and Δ_T W_H > 0 under Justice -> strict syntropic dyad
+  if one rises by degrading or hiding the other -> extraction; audit the full Justice envelope
 ```
 
 Agency-register clarification:
@@ -145,9 +157,11 @@ Reflexivity adds the final fence: acting changes the branches being predicted.
 ## 4. Sanatana Dharma — the Emergentist lens
 
 In this framework, **Sanatana Dharma** is not a sectarian possession, a priestly
-license, or a commandment from outside the game. It is the perennial directional
-law visible at any living symbiont/holobiont boundary once `P_node = Φ × V`,
-real coupling, long horizon, and `η = 0` are accepted.
+license, or a commandment from outside the game. It is the interpretive name
+for a thin perennial orientation: durable reciprocal flourishing across a real
+bearer/sustaining-whole boundary. The repeated-game Power-Max result explains
+why cooperation can become self-interested under sufficient coupling, patience,
+reciprocity, and returned consequence; it does not prove the frame universally.
 
 ```text
 i = individual symbiont at the tested scale
@@ -159,8 +173,8 @@ morals = i -> H
 ethics = H -> i
   the holobiont raises the symbiont without capture, coercion, or ownership
 
-dharma = both directions preserve or raise one another under η = 0
-evil   = either direction simulates gain by degrading the other side
+dharma = both directions preserve or raise one another under Justice
+extraction = either direction simulates gain by degrading or hiding a bearer
 ```
 
 To look at the world through the Emergentist lens:
@@ -197,24 +211,21 @@ defines as *continuous recursive disambiguation* that **edits the corpus and
 the editor**. Ontology names the situation; epistemology checks the tier;
 methodology selects the repair; axiology tests the move against non-extraction;
 teleology acts; L7 preserves the witness; the witness re-enters as L1 pressure.
-A homeostat, not a project: per-document cycles terminate at equatorial rest;
-the corpus-wide loop never does (`D6 ≡ D0`). Convergence is not a final state —
+A homeostat, not a project: local cycles may reach a declared stopping rule;
+the corpus-wide loop remains open. `r6:D6↝D0` is an interpretive return, never
+literal identity or causal closure. Convergence is not a final state —
 it is when correction becomes faster than drift and life moves as flow.
 
 ## 7. The receipts (what each load-bearing clause carries)
 
 The goal obeys the constitution it serves — every clause wears its tier:
 
-- **`P_node = Φ × V` (the play rule).** The product form is `[A]`-within-model
-  in the **contact register** — established by experiment E2 (2026-06-12,
-  [E2_REFLEXIVE_RESULTS.md](03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/E2_REFLEXIVE_RESULTS.md)):
-  the plan's value is *exactly zero* at coin-flip execution, and reliability
-  amplifies plan quality including its badness. The same quantity is **additive
-  in the solipsistic register** (R6) — and that split is not a weakness of the
-  rule but its precision: **Dasein's register is the contact register**
-  (Being-with; the punch-tested world `[I]`). The *conserved* product
-  (`φ·ν = 1` as a law of the game beyond kinematics) remains open (R10b `[C]`);
-  in kinematics it is exact (`[A]`, the mass-shell identity).
+- **`P_node = Φ × V` (the selected play model).** With normalized factors, the
+  formula is analytic inside the declared model. Its adequacy for a real domain
+  remains `[C]` and must beat minimum, harmonic, CES, and one-factor rivals.
+  Contact experiments can support an AND-class or reliability interaction
+  without uniquely proving the product interior. Lowercase chart identity
+  `φν=1` supplies no conservation law for the node.
 - **"Objective dharma / Sanatana Dharma."** Objective **given the game** — the
   hypothetical-imperative sense, with engineering-grade content: for coupled
   finite systems, extraction that zeroes a factor annihilates the product
@@ -236,10 +247,11 @@ The goal obeys the constitution it serves — every clause wears its tier:
   model's **reconstruction order of descriptions**, not a generative claim
   about the Ground (the Ground remains prior). The Dasein reading is `[I]`
   structural resonance and does not claim to exhaust Heidegger.
-- **`η = 0`.** Non-extraction as an enforced, conditional equilibrium
-  (Green–Laffont caveat) — a constraint surface, not a free-standing Nash
-  property. Balance `B` is the **constraint**, the option-cone `Ω` the
-  objective; the 5+1 is the Lagrangian (the W2 reconciliation).
+- **`η = 0`.** Non-extraction has dual standing: it can be strategically optimal
+  inside sufficiently coupled, patient, reciprocal games, and remains a chosen
+  Justice fence where those conditions fail. It is not a complete moral
+  predicate. Balance `B` is a chart score; `Ω` is a corrigible orientation
+  toward durable mutual option-cone widening, not a physical law.
 - **Symbiont and holobiont rising together.** Collectively optimal and *never
   the default*: R7–R9 showed it requires the enforcement architecture the
   refusals provide. "Holobiont" is used as a tested hypothesis, not an assumed

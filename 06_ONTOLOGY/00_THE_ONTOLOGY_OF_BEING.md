@@ -14,9 +14,31 @@ rosetta:
   regime: "Sādhu"
   register: "[S/I]"
   canonical_phrase: "Core State of Being"
+status: "DERIVED/HISTORICAL — interpretive essay; not a mathematical or ontological owner"
+superseded_by:
+  - "../00_THE_EMERGENTIST_WELTANSCHAUUNG.md"
+  - "02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md"
+  - "../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md"
 ---
 
 # THE ONTOLOGY OF BEING
+
+> **[金] DERIVED/HISTORICAL MEMBRANE — 2026-07-19.** This essay preserves an
+> interpretive reading; it cannot establish the Ground or Being from an
+> analytic chart. Current authority is the
+> [Emergentist Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md),
+> [Degrees-of-Freedom Ontology](02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md),
+> [Emergent Axioms](03_THE_EMERGENT_AXIOMS.md), and
+> [Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md).
+> There, `φ=cot(θ/2)`, `ν=tan(θ/2)`, `φν=1`, `φ+ν≥2`, and `B≤1` are analytic
+> chart facts only. They prove no empirical conservation law, energetic
+> consequence, ethics, ontology, or identity between map and Ground. The Titan
+> roles of `{0,1,∞}` are selected symbolic frames; ordinary `0` and `1` remain
+> numbers, and `∞` is a projective point. `⊙=•×○` and “`0×∞=1`” are emblems,
+> never field arithmetic. `D6` is not identical to `D0`. Accordingly, the
+> historical body's claims that reciprocal closure *is* Being, balance is an
+> energetic necessity, the world exists because the poles close, or the
+> algebra forces ontology remain `[I/C]` readings and never load-bearing canon.
 
 ## Reciprocal Closure, Teleological Force, Finitude, and Dasein
 

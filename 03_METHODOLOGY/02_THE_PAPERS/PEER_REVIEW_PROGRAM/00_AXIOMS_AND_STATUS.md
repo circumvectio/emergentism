@@ -3,9 +3,32 @@ rosetta:
   primary_column: "Methodology"
   register: "[S] capstone; each axiom carries its own tier + the corpus's own + this session's result"
   canonical_phrase: "Where We Are, and the Axioms — Honestly Tiered"
+status: "SUPERSEDED CAPSTONE — peer-review provenance; A1-A7 are not current axiom authority"
+superseded_by:
+  - "../../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md"
+  - "../../../00_THE_KERNEL_INDEX.md"
+  - "../../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md"
 ---
 
 # Emergentism — Where We Are, and the Axioms
+
+> **[金] SUPERSEDED-CAPSTONE MEMBRANE — 2026-07-19.** The peer-review results
+> below remain evidence and trial provenance; this page no longer defines the
+> worldview or its axioms. Current authority is the
+> [Emergentist Weltanschauung](../../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md),
+> [Kernel Index](../../../00_THE_KERNEL_INDEX.md),
+> [Emergent Axioms E1–E10](../../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md),
+> [Crown Wager and Conjectures](../../../06_ONTOLOGY/04_THE_CONJECTURES.md), and
+> [Canonical Formula Block](../../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md).
+> The historical A1–A7 assembly is neither current ground axiom set nor a route
+> around those owners. In particular: the chart does not force the product
+> model or ethics; `η=0` is necessary but not sufficient Justice; the D-ladder
+> is an interpretive scaffold; there are candidate crossings `μ₀…μ₄`, no `μ₅`;
+> `D6` is not identical to `D0`; missing reduction does not prove strong
+> emergence; Titans and sevenness are selected grammar; Egregoreotype does not
+> presume consciousness; and no K2, signature, runtime, or peer-review act
+> determines philosophical truth. Historical tiers and verdicts below must be
+> rechecked claim by claim before reuse.
 
 **Capstone, 2026-06-10.** The clean statement after the peer-review program, the ten experiments, the literature grounding, the cosmology/constitution audit, and the headline-discipline pass. Faithful to the corpus's own canon (`05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md`, `00_CANONICAL_FORMULA_BLOCK.md`), annotated with where this session's evidence now stands.
 

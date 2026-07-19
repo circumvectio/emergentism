@@ -18,7 +18,7 @@ rosetta:
   register: "[A/S/I]"
   canonical_phrase: "The Argument — Emergence as Lens on Dasein"
 title: "The Argument: Emergence as Lens on Dasein"
-status: "Canonical — 2026-06-06. Promoted as the source surface for the D0–D2 doctrine arc."
+status: "SUPERSEDED [金] — 2026-07-19; retained as argument provenance"
 evidence_tier: "[A] for established mathematics; [S] for framework-internal structure; [I] for ontological reading; [C] for conjectural claims at dimensional transitions"
 depends_on:
   - 00_CANONICAL_FORMULA_BLOCK.md
@@ -31,6 +31,13 @@ depends_on:
 ---
 
 # The Argument: Emergence as Lens on Dasein
+
+> **[金] Authority membrane — 2026-07-19.** This argument is retained as a
+> historical synthesis, not the source of the living worldview. The root
+> [Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md),
+> [Kernel Index](../00_THE_KERNEL_INDEX.md), and their typed owners control.
+> “Complete,” forced-dimensional, literal-closure, or physics-from-chart claims
+> below are superseded; their presence records the crack rather than doctrine.
 
 **Date:** 2026-06-06
 **Author:** K2 (Yves R. Burri) + L5 Brāhmaṇa formulation

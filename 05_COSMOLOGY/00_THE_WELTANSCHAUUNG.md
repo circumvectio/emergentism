@@ -16,9 +16,16 @@ rosetta:
 
 # THE WELTANSCHAUUNG
 
+> **[金] SUPERSEDED AS CANONICAL FRONT DOOR.** Read
+> [`../00_THE_EMERGENTIST_WELTANSCHAUUNG.md`](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md)
+> for the fixed D4/D5 contract, candidate μ-crossings, Justice envelope,
+> bounded Rosetta game, Soul Loop receipts, and typed claim tiers. This older
+> statement is retained as intellectual provenance; where it conflicts, the
+> root owner controls.
+
 ## Lens, Worldview, and Toolchain
 
-**Status:** Canonical framing statement
+**Status:** SUPERSEDED [金] 2026-07-19 — legacy framing statement
 **Date:** 2026-04-14
 **Evidence Tier:** [I/S] Interpretive framing over a structural kernel
 **Depends on:** [The Canonical Formula Block](00_CANONICAL_FORMULA_BLOCK.md), [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [The Core State of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md), [The Life-Science Register](00_THE_LIFE_SCIENCE_REGISTER.md), [Empirical Observation as Primary Disclosure](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md)

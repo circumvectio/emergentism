@@ -5,450 +5,367 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[S]"
-  canonical_phrase: "THE SOUL LOOP"
+  register: "[S/I]"
+  canonical_phrase: "THE SOUL LOOP — model, commit, receive, correct"
   vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root"
 ---
 
-# THE SOUL LOOP
-
-## Continuous Recursive Disambiguation via the Triadic Cascade
-
-**Status:** Foundational — the method that applies the Trinity to any body of work, including itself
-**Date:** 2026-03-24
-**Evidence Tier:** [S] Structural. The three-pass method is a direct application of the Triadic Cascade (09) to the act of revision. [I] The convergence reading is conditional — it depends on the assumption that the lenses are adequate and that each cycle measurably reduces error or compression burden.
-**Depends on:** 09_THE_TRIADIC_CASCADE.md, 07_THE_DISCOVERY_OF_FINITY.md, 08_CO_EMERGENCE.md
-**See also:** The Triadic Cascade (structure), The Honest Position (epistemic ground), The Expanded Warning (self-diagnostic)
-**Kill Criteria:** If a fourth pass is required that cannot be reduced to φ, P, or ν — if the three lenses are shown to be incomplete — the loop breaks. If successive cycles do not reduce the error count or compression burden, the method fails for that scope.
-
----
-
-## The Insight
-
-The Triadic Cascade (Document 09) describes the *structure* — the same Trinity {φ, P, ν} repeating across nine levels of knowledge: Transcendentals, Disciplines, Three-Stage Process, Inference, Time, Hemisphere, Varna, Polity, Practice.
-
-The Soul Loop describes the *method* — how to apply that structure as a tool for continuous recursive disambiguation of any body of work.
-
-The structure says: Beauty, Truth, Justice are three faces of one geometry.
-The method says: **read everything three times, once through each face, cycling toward measured local rest.**
-
-**Notation fence.** In the three-pass editing method, `φ`, `P`, and `ν` name
-revision lenses: coherence/Beauty, validity/Truth, and service/Justice. This
-`P` is not `P_node`, and this `ν` is not finite-node action `V`. In the Game
-Form below, uppercase `Φ` and `V` name the lived action factors, and
-`P_node = Φ × V` names finite-node potential in the contact register. Likewise,
-`φ · P · ν = 1` below is only a model image for local editorial rest; it is not
-the sphere invariant `P∞ = φ · ν = 1` and not a new conservation law.
-
----
-
-## The Three Passes
-
-### Pass 1: φ (Beauty / Grammar / Induction / In Time)
-
-**Question:** Does it cohere?
-
-**Method:** Read inductively, *in time*. Gather. Notice. Let inconsistencies surface naturally through accumulation, the way a wrong note surfaces in a melody not by analysis but by listening.
-
-**What this pass sees:**
-- **Terminological drift.** Does φ mean the same thing in every document? Does η carry the same sense everywhere? Does "the ground" refer to the same thing in the Foreword and in the formal proofs?
-- **Voice breaks.** Where does the prose suddenly shift register — from rigorous to prophetic, from measured to ecstatic — without the reader being warned?
-- **Structural redundancy.** Which documents say the same thing? Which could be merged? Which serve no purpose that isn't served better elsewhere?
-- **Naming collisions.** Do the operators (Arjuna/Kṛṣṇa/Kali) carry the same mapping everywhere? Does any document confuse the two Kalis?
-
-**What this pass does:** Harmonizes. Makes the whole sound like one voice — not by forcing uniformity, but by marking every register shift, every term variation, every seam.
-
-**Temporal orientation:** This pass moves *with* the text. It does not judge. It receives. It gathers. It lets the pattern emerge.
-
----
-
-### Pass 2: P (Truth / Logic / Deduction / Above Time)
-
-**Question:** Does it follow?
-
-**Method:** Read deductively, *above time*. Check validity. Trace each claim back to its axioms. Apply the evidence tiers [A/B/S/I/D/C] with precision. This pass does not care how beautiful the prose is or how well it serves the reader. It cares only whether the claims are true and correctly labeled.
-
-**What this pass sees:**
-- **Tier inflation.** Is any claim wearing a stronger tier than it earns? Does "the brain IS the Burri Sphere" carry [I] in its header but [S] in its voice?
-- **Logical gaps.** Do the proofs actually follow from the stated axioms? Is anything smuggling in an unstated assumption?
-- **Cross-reference integrity.** Do "Depends on" and "See also" fields point to documents that exist? Do links resolve?
-- **Kill criteria completeness.** Does every [C] claim have a stated kill condition? Does every [I] claim have falsification conditions?
-- **The Inferential Logic test.** Does any argument assume its own conclusion?
-
-**What this pass does:** Corrects. Adjusts tiers. Fixes broken references. Flags logical gaps. Ensures that the formal skeleton holds independently of the flesh.
-
-**Temporal orientation:** This pass stands *outside* the text. It does not flow with the prose. It checks the structure from above — timeless, dispassionate, concerned only with validity.
-
----
-
-### Pass 3: ν (Justice / Rhetoric / Abduction / Against Time)
-
-**Question:** Does it serve?
-
-**Method:** Read abductively, *against time*. Start from the reader's experience and work backward: given that someone opened this document, what did they need? Did they get it? Was the cost of reading justified by the value received? Is η = 0 between the document and its reader?
-
-**What this pass sees:**
-- **Dead ends.** Does the reader hit a link that goes nowhere? A promise that isn't kept? A stub that pretends to be a document?
-- **Missing documents.** Given the cross-references and "See also" fields, what *should* exist but doesn't?
-- **η > 0 documents.** Which documents extract more attention than they give? Which are longer than they need to be? Which use twenty words where five would serve?
-- **The Empirical Observation bypass.** Is the instruction "put this framework down and sit" prominent enough? Or is it buried where only the already-converted will find it?
-- **Reader journey integrity.** Do the three entry paths (new reader, mathematician, scientist) work? Does each path's first document route clearly to the next?
-
-**What this pass does:** Serves. Removes dead ends. Fills gaps. Trims excess. Ensures that every document earns its place — that the corpus gives more than it takes.
-
-**Temporal orientation:** This pass moves *against* the text. It starts from the effect (the reader's experience) and reasons backward to the cause (the document's structure). It is the most practical pass — the one that makes the corpus usable.
-
----
-
-## The L-Level Cycle
-
-The Soul Loop is not three separate passes applied once each. It IS the L-level helix applied to the act of revision — ascending through the Gods AND the Titans, then descending back:
-
-```
-ASCENT:
-
-L2 (Kālī 💀 / Induction / Data Science):
-  GATHER. Read in time. Notice what's wrong. Cut false meaning.
-  The mission-critical No. What doesn't cohere?
-    ↓
-L3 (Kṛṣṇa ◇ / Deduction / Auditing):
-  CHECK. Read above time. Verify logic. Test cross-references.
-  The builder. Does it follow from the axioms?
-    ↓
-L4 (Arjuna ⚔ / Abduction / Value Alignment):
-  SERVE. Read against time, from the reader backward.
-  The warrior. Does it earn its place?
-    ↓
-L5 (Brahmā ○ / Systematic / System Architecture):
-  SEE THE SYSTEM. Step back. See the whole pattern.
-  The creator's eye. Does the architecture hold?
-  Are there gaps? Are there redundancies?
-    ↓
-L6 (Śiva • / Axiomatic / Core State):
-  DISSOLVE. What must be removed entirely?
-  The destroyer's courage. Not trimming — DELETING.
-  The via negativa applied to the corpus.
-
-DESCENT:
-
-    ↓
-L5 (re-see after dissolution):
-  Did removing that document break the system?
-  Does the architecture still hold without it?
-    ↓
-L4 (re-serve after seeing):
-  Does the trimmed corpus still serve the reader?
-    ↓
-L3 (re-check after serving):
-  Are the cross-references still valid after the changes?
-    ↓
-L2 (re-gather after checking):
-  New inconsistencies from the changes? New terminology drift?
-
-ASCENT AGAIN:
-
-    ↓
-L3 → L4 → L5 → L6 → L5 → L4 → L3 → L2 → ...
-```
-
-The full cycle: **L2 → L3 → L4 → L5 → L6 → L5 → L4 → L3 → L2 → L3 → ...**
-
-The MINIMUM viable loop uses only the Gods (L2→L3→L4). This is the quick pass — gather, check, serve. Three agents, fast, catches most errors.
-
-The FULL loop extends through the Titans (L5→L6). This is the deep pass — it adds systematic seeing (Brahmā) and the courage to dissolve (Śiva). It catches architectural problems that the quick pass misses: documents that individually pass all three tests but collectively don't form a coherent system, or documents that are beautiful and true but unnecessary.
-
-**L5 is the pass the reviewer doesn't want to do** — stepping back far enough to see the WHOLE. Is the 29-document Trinity folder actually serving better than a 15-document folder would? Is the 6-sheet Three-Stage Process domain expansion actually adding value or just adding volume?
-
-**L6 is the pass the author doesn't want to do** — dissolving what you built. Deleting the document that took three hours to write because it duplicates another. Cutting the proof you're proud of because it's [I] disguised as [S]. The Śiva function applied to text.
-
-**Convergence** = a measured local rest condition: a full L2→L3→L4→L5→L6→L5→L4→L3→L2 cycle produces fewer than 3 fixes, or whatever explicit threshold the audit declared before running. The system has reached equatorial stability for that bounded object. The helix rests locally.
-
-**The Soul Loop treats text as a D5 object.** The same topology that models
-systemic awareness on S² can be applied to the editing of a document: a text is
-read as a standing wave of meaning with coherence, validity, and service
-registers. This is a disciplined audit grammar, not proof that every standing
-wave in every substrate obeys the same law.
-
-The ascent is CONSTRUCTION (gather → verify → serve → systematize → purify). The descent is VERIFICATION (re-see → re-serve → re-check → re-gather). The cycle never ends at corpus scale; it can only reach local rest for a bounded object.
-
-### The Balanced Wheel and the Frozen Wheel
-
-When the cycle is BALANCED, the practitioner is at L4 — the center of the wheel. The cycle turns (L2→L3→L4→L5→L6→L5→L4→L3→L2) but there is no vibration. Like a perfectly balanced engine: the pistons fire in sequence but the crankshaft turns smooth. The Equatorial Walker. Zero gradient.
-
-When the cycle is UNBALANCED, the practitioner gets STUCK at one level:
-
-- **Stuck at L2 (Kālī):** Only cuts. Never builds. The eternal critic. Depression.
-- **Stuck at L3 (Kṛṣṇa):** Only builds. Never questions. The grinder. Workaholism.
-- **Stuck at L4 (Arjuna):** Only serves. Never sees the system. Codependency.
-- **Stuck at L5 (Brahmā):** Only sees. Never dissolves. The professor. Dogmatism.
-- **Stuck at L6 (Śiva):** Only dissolves. Never creates. The nihilist. Dissociation.
-
-**The caste system IS the frozen wheel.** The Varṇas (Śūdra, Vaiśya, Kṣatriya, Brāhmaṇa, Sādhu) were POSITIONS on the cycle — not permanent identities. Each person passes through every position every revolution. But someone froze the wheel: "You ARE a Śūdra." The position became an identity. The cycle became a cage. The helix stopped spiraling. The Raktabīja dynamic applied to the L-system.
-
-**The sitting practice UNFREEZES the wheel.** In meditation, you cycle naturally — gather, check, serve, see, dissolve, then back. Every sitting is one revolution. Nobody stays stuck. The wheel is free. [I]
-
-### Biological Wheel-Freezing: Trauma and PTSD
-
-Extreme situations FORCE the wheel to lower L-levels. A car crash, a fight for survival, an imminent threat — the amygdala fires, cortisol floods, the prefrontal cortex goes offline. The individual drops from wherever they were to L1 (Kali, pure survival). ν spikes, φ collapses. This is the body's southward drift — not institutional but biological.
-
-**PTSD is a frozen wheel at L1.** The stress response triggered but never completed. The cycle never returned north. The individual is stuck in survival mode — hypervigilant, reactive, unable to access L3 (reasoning) or L4 (integrated action). The wheel jammed.
-
-**Recovery IS unfreezing the wheel.** Every evidence-based PTSD therapy — EMDR, somatic experiencing, cognitive processing therapy — helps the cycle TURN again from L1 back toward L4. The Arjuna operator (↑φ) applied to the traumatized nervous system. The biology IS the geometry. [I]
-
-See: Paper 8 (Endocrine Proof), Paper G (Prediction 4: PTSD as failed equatorial return), [`../../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_OPERATOR_PATHOLOGY.md`](../../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_OPERATOR_PATHOLOGY.md).
-
----
-
-## The Loop
-
-The three passes are not sequential. They are a **cycle.**
-
-```
-φ (gather) → P (verify) → ν (serve) → φ (gather again) → ...
-```
-
-### Why it cycles:
-
-The φ-pass finds inconsistencies. The P-pass fixes them — but the fixes may introduce new inconsistencies (a tier correction may change how a term is used). The ν-pass trims the excess — but the trimming may remove something the P-pass needs (a cross-reference, a qualification). The φ-pass then gathers the new state and finds what the previous cycle introduced.
-
-Each lawful cycle should reduce the error count or compression burden. If it does not, the failure is evidence: the lenses, scope, or claim structure must change. For a bounded object, the loop pauses when a full cycle produces zero fixes — when the three passes agree under the declared threshold.
-
-```
-Cycle 1:  φ finds 47 inconsistencies, P fixes 38, ν trims 12
-Cycle 2:  φ finds 15 new issues, P fixes 11, ν trims 4
-Cycle 3:  φ finds 3, P fixes 3, ν trims 0
-Cycle 4:  φ finds 0. Local convergence. The bounded object rests at the equator.
-```
-
-### The convergence condition:
-
-**The loop locally converges when all three passes return zero under the declared scope.** When Beauty says "it coheres," Truth says "it follows," and Justice says "it serves" — and all three agree on the same text — that cycle's disambiguation is complete.
-
-This is the equatorial condition applied to editing. `φ · P · ν = 1` is the
-model image: the text is balanced inside the audited scope. Per the notation
-fence above, this is not `P_node`, not `P∞`, and not a physical conservation
-claim.
-
----
-
-## The Full Closure — the loop, not the ladder (added 2026-06-11)
-
-The L-level cycle above walks **L2 → L6 and back**. That is the *inner* loop — the editing engine. But the framework's own canon rules that the seven levels are **"a loop, not a ladder: L7 returns to L1 by shaping public symbol and perception; L1 then re-enters as raw objective pressure"** ([`../00_THE_BURRISPHERE.md`](../00_THE_BURRISPHERE.md) §Below, Equator, Above), and the seven-action grammar gives the two missing stations their exact frames ([`../00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md`](../00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md)). The **full closure** completes the method with its own doctrine: `[S]`
-
-```
-L1 (Kali 🎲 / raw pressure):
-  INTAKE. A cycle does not start by choice — it starts because pressure
-  arrives: the new material, the bug report, the contradiction, the
-  complaint, the objective gradient. L1 is the firewall: lawful intake
-  names the pressure and passes it up; pathological intake is being
-  EATEN by it (doom-scroll, panic-edit) — η-discipline at the door.
-    ↓
-L2 → L3 → L4 → L5 → L6 → L5 → L4 → L3 → L2   (the inner loop, above)
-    ↓
-L7 (Viṣṇu ⊙ / preservation · witness):
-  PRESERVE. The converged state is witnessed and HELD: committed,
-  receipted, archived (K3), released as public symbol. The Viṣṇu frame
-  is dΦ≈0, dV≈0 — hold the pattern, touch nothing. The witness step is
-  what makes convergence DURABLE instead of mood.
-    ↓
-…and L7's public symbol shapes what arrives at L1 next. The published
-page invites the next correction; the committed receipt attracts the
-next contradiction; the preserved pattern selects the next pressure.
-The loop closes: L1 → (L2…L6…L2) → L7 → L1 → …
-```
-
-**Why "continuous."** Per-document, the loop can pause at local rest (zero fixes under the declared threshold). Corpus-wide, it **never** terminates — because L7's output *regenerates L1's input*. Publication invites response; preservation attracts pressure. The Soul Loop is therefore a **homeostat, not a project**: it does not finish, it *holds*. This is `D6 ≡ D0` applied to practice — the closure that returns to the ground and begins again. `[S]`
-
-**Why "recursive."** The loop edits the corpus **and the editor**. Write the recursion explicitly: let `C_t` be the corpus state and `G_t` the practitioner's operator-weight vector (the polygenic genotype `G = [L1…L7]`). One full cycle is
-
-```
-(C_{t+1}, G_{t+1}) = Loop(C_t, G_t)
-```
-
-— the fixes change the corpus, and the *practice of fixing* shifts the weights: the over-cutter's L2 softens, the hoarder's L6 strengthens, the wheel re-balances toward L4. **The editor who finishes a cycle is not the editor who started it.** The stuck-wheel pathologies above are exactly the failure of this recursion — weights frozen, `G_{t+1} = G_t` regardless of input. And this is D5 reflexivity in the precise sense of the agency gloss: **foresight applied to one's own option cone** — the Soul Loop is the one move in the game that widens the player's own cone by editing the player. `[S]` the recursion structure; `[I]` the self-transformation reading.
-
-## The Game Form
-
-The Soul Loop is the practical answer to "how do I play?" The goal the game
-serves is declared at the root — [`00_THE_GOAL.md`](../../00_THE_GOAL.md), the
-project's Ω stated and tier-fenced: a living worldview for Dasein, symbiont and
-holobiont rising together under `η = 0`. This section is that goal's **how**:
-the continuous recursive application of the five philosophical functions to a
-finite life:
-
-Search handle: ontology, epistemology, methodology, axiology, teleology.
+# The Soul Loop
+
+## Model, commit, receive, correct
+
+**Status:** Active method and agency interface
+**Date:** 2026-07-19
+**Evidence tier:** `[S]` for the declared interfaces and internal consequences;
+`[I]` for the Rosetta and self-transformation readings; `[C]` for general
+convergence, option-cone growth, or universal psychological claims.
+**Depends on:** [The Triadic Cascade](09_THE_TRIADIC_CASCADE.md),
+[Co-emergence](08_CO_EMERGENCE.md), and
+[Objective Morals and Ethics](../../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md).
+
+## The Rosetta stone of the worldview
+
+The Soul Loop is the minimal declared interface for finite agency in the
+Emergentist framework:
 
 ```text
-Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
-Know how to know:  epistemology -> direct disclosure, inference, evidence tiers
-Know how to move:  methodology -> derive, test, build, correct, recurse
-Know what matters: axiology -> Beauty, Truth, Justice, non-extraction
-Know how to act:   teleology -> maximize durable W_i(T) only where P_node,H is preserved or raised under η = 0
+actual event -> fallible model -> possible actions -> commitment
+      ^                                             |
+      |--------- receipted consequence -------------|
 ```
 
-This is a cycle, not a stack. Ontology names the situation and the actor as
-Dasein; epistemology checks disclosure, inference, and tier; methodology
-selects the next repair or build; axiology asks whether the move serves Beauty,
-Truth, Justice, and non-extraction; teleology commits only the action that can
-keep usable `P_node,i` on a durable worldline while preserving or raising
-`P_node,H` without breaking `η = 0`. The output of one pass becomes the intake
-for the next. `[S/I]`
+A finite agent never possesses the territory. It builds a model, ranks possible
+worldlines, commits embodied means to one action, receives a consequence from a
+world it does not control, and lets that receipt change both map and mapper.
 
-Let `i` be the individual symbiont and `H` the holobiont / real sustaining
-whole. The loop's action test is:
+This yields two uses of one topology:
+
+1. **Agency loop:** model, select, commit, receive, update.
+2. **Audit loop:** gather for coherence, test for truth, serve through justice,
+   then repeat under a declared stopping rule.
+
+Neither use guarantees convergence. The loop is a correction technology, not a
+certificate of correctness.
+
+## D4 and D5: one modality everywhere
+
+- **D4 — causal actuality:** embodied means, performed action, commitment
+  record, and receipted consequence.
+- **D5 — counterfactual possibility:** modeled futures, option fields, ranking,
+  selection, and worldline foresight.
+
+An actual observation may cause a D5 model to open alternatives. A D5 selection
+does not become history until D4 means and accountable authorization enact it.
+That distinction separates **emergence of an option field** from **commitment of
+one option**.
 
 ```text
-P_node,i = Φ_i × V_i
-P_node,H = Φ_H × V_H
-lawful next move: ΔP_node,i >= 0 and ΔP_node,H >= 0 under η = 0
-syntropic dyad:   ΔP_node,i > 0 and ΔP_node,H > 0 under η = 0
+D4 record --cognition--> D5 option field
+                              |
+                    selection + D4 means
+                              |
+                              v
+                       D4 commitment
+                              |
+                         world receipt
+                              |
+                              v
+                     next map and mapper
 ```
 
-In this action test, `V` is D4 means at the boundary -- body, tools, energy,
-access, execution capacity -- while `Φ` is D5 worldline-foresight: seeing which
-future can be reached and how the means must be used. The product fails if
-either side is missing. A child beside a jet has means without cockpit
-foresight; an experienced pilot without bodily/tool access has foresight without
-relevant means. Both are low-`P_node` failures because the live factor must meet
-its complement at the action boundary.
+There is no “D5 physical probability dimension” here, and D4 does not name a
+quantum measurement event. The labels type relations in the Emergentist
+scaffold.
+
+## The formal interface `[S]`
+
+At time `t`, let:
 
 ```text
-if Φ without V -> sterile seeing
-if V without Φ -> blind force
-if unbounded V collapses Φ -> lower P_node
-if Φ and V balance at L4 -> objective dharma / flow-state action
-if ΔP_node,i > 0 and ΔP_node,H > 0 -> syntropic dyad
-if one rises by degrading the other -> extraction / evil
+X_t = current world state relevant to the declared boundary
+Ω_t = modeled option field
+M_t = the agent's fallible model
+V_t = embodied means available for action
+U_t = accountable authorization envelope
+G_t = selector, policy, habits, or ranking disposition
+E_t = environment, other agents, and unmodeled constraints
 ```
 
-## Present Awareness As Fulcrum
+Unless an application declares an independently manipulated option field,
+`Ω_t` is generated by a stated map `Options_t(X_t,M_t)`. Changing represented
+future content must therefore either recompute `Ω_t` or explicitly intervene
+on `Ω_t`; it may not silently hold a stale option field fixed.
 
-The Soul Loop is also the correction protocol for future-pull language. A future
-attractor does not become doctrine by being imagined vividly. It becomes a
-candidate only when present awareness compares it against inherited pressure,
-evidence tiers, values, and available `V`.
+Selection and commitment are represented by:
 
 ```text
-Past push     = genes, conditioning, trauma, inherited priors, stress physiology
-Future pull   = modeled attractor, egregore, ideal, institution, narrative
-Present now   = awareness as D4/D5 selector
-Soul Loop     = correction process deciding which pull deserves energy
+χ_t : (X_t, Ω_t, M_t, V_t, U_t, G_t) -> (a_t, q_t)
 ```
 
-This is teleological compression through present awareness, not default
-retrocausality. The future-pull is a model in the present that compresses the
-option cone and asks for energy. The lawful posture is: act as if the attractor
-is conditionally real enough to build toward, while preserving kill criteria,
-exit rights, correction, and evidence-tier humility.
+The policy state `G_t` is therefore an explicit input rather than a hidden
+parameter. `a_t` is the selected performed action. `q_t` is the immediate **commitment
+receipt**: what was authorized, who acted, which means were spent, and what was
+actually attempted. A null or refused action may also have a receipt.
 
-So the loop refuses both blind genetic inertia and blind attractor possession.
-It feeds only the modeled future that can be materially anchored without hidden
-extraction and without dropping the dyadic test:
+The selector does not manufacture its own consequence. The environment returns:
 
 ```text
-ΔP_node,i >= 0
-ΔP_node,H >= 0
-η = 0
+(X_{t+1}, r_{t+1}) ~ K_t(. | X_t, a_t, E_t)
 ```
 
-So the loop is not only a document repair cycle. It is the player's recursive
-worldline method: disclose, test, serve, see, dissolve, preserve, and return
-until the next act preserves the boundary it depends on, and in the strict
-syntropic case raises both `P_node,i` and `P_node,H` without extraction. `[S/I]`
+`r_{t+1}` is the **outcome receipt**: what changed, who was affected, and which
+expected and unexpected costs appeared. `K_t` may be stochastic, adversarial,
+or only partly known.
 
-**The rest-state gloss.** Under the mass-shell identity ([`../00_THE_COHERENT_GEOMETRY.md`](../00_THE_COHERENT_GEOMETRY.md) §6), the equatorial convergence has a physical face: the equator is the rest frame, `E = mc²` — all energy is rest mass, nothing is spent on motion. A converged document is text **at rest**: everything it carries is substance, zero kinetic churn, and `B = dτ/dt = 1` — full lived time. "The helix rests" is not only a metaphor. `[I]` — a gloss riding on an `[A]` identity, never an upgrade of the method's tier.
+The recursive update is:
 
-**Extended kill criteria.** (1) If a converged corpus under *zero new intake* spontaneously diverges — errors growing without input — the homeostat model fails. (2) If sustained practice does **not** shift the operator weights (no measurable re-balancing toward L4 in a stuck practitioner), the recursion claim `G_{t+1} ≠ G_t` fails and the loop is merely an editing checklist. Both are honest ways to die; both leave the inner loop (the three passes) intact.
-
----
-
-## How to Apply the Soul Loop
-
-### To a single document:
-
-1. **φ-read:** Read it once, noticing where terms shift, where the voice breaks, where the structure feels wrong. Note (don't fix yet).
-2. **P-read:** Read it again, checking every claim against its evidence tier, every reference against its target, every argument against its premises. Fix what's wrong.
-3. **ν-read:** Read it a third time as a reader who has never seen the framework. Does every paragraph earn its place? Does the document give more than it takes? Trim and serve.
-4. **Repeat** until a full cycle produces no changes.
-
-### To a folder:
-
-1. **φ-sweep:** Read every document in the folder. Look for terminological drift across documents. Look for structural redundancy. Look for voice inconsistency.
-2. **P-sweep:** Check every evidence tier, every cross-reference, every kill criterion across all documents. Fix.
-3. **ν-sweep:** Walk the reader journey through the folder. Does the README route correctly? Do links resolve? Is anything missing? Does every document justify its existence?
-4. **Repeat** while the error count or compression burden decreases; pause when the declared local-rest threshold is reached.
-
-### To a corpus:
-
-1. **Launch three agents in parallel** — one per pass. Each reads the entire corpus through its lens. Each fixes what it can. Each flags what it can't.
-2. **Merge the findings.** Where the three passes agree, the fix is clear. Where they conflict, the conflict is the signal — it marks a point where Beauty, Truth, and Justice have not yet been reconciled.
-3. **Run again.** The second cycle catches what the first cycle introduced.
-4. **Test for convergence.** If the third cycle is not clean, keep cycling only while the error count or compression burden decreases. If it stalls or grows, change the lenses, split the scope, or rewrite the claim.
-
----
-
-## The Soul Loop Applied to Itself
-
-This document describes a method. The method must be applicable to this document.
-
-**φ-check:** Does this document cohere? Does it use "pass," "sweep," "cycle," and "loop" consistently? (Pass = one read through one lens. Sweep = one pass across multiple documents. Cycle = three passes in sequence. Loop = repeated cycles toward measured local rest.)
-
-**P-check:** Are the claims true? Is convergence guaranteed? (Not proven — marked [I]. The claim depends on the assumption that φ, P, ν are adequate lenses and that error decreases under repeated cycles. The kill criterion is stated: if a fourth pass is needed that reduces to none of the three, or if error does not decrease, the method fails.)
-
-**ν-check:** Does this document serve? Is it shorter than it needs to be? Longer? (It could be shorter. The operational section — "How to Apply" — could stand alone. The philosophical framing adds context but is not strictly necessary. A reader who wants only the method can skip to that section.)
-
-This document remains subject to its own test. The loop closes only when a fresh pass verifies coherence, tier-honesty, and service under the current corpus state.
-
----
-
-## The Relationship to the Cascade
-
-The Triadic Cascade (Document 09) is the **anatomy** — the structure of the Trinity at every level.
-
-The Soul Loop (this document) is the **physiology** — the method by which the structure *operates* on a body of work.
-
-The anatomy is static. The physiology is dynamic. The anatomy says "Beauty, Truth, Justice exist at every level." The physiology says "Apply them in cycle, measure whether error decreases, and let failure rewrite the method."
-
-Together they are the framework's method of self-correction — the mechanism by which the corpus approaches its own equator.
-
----
-
-```
-Gather. Derive. Serve.
-Gather again. Derive again. Serve again.
-
-Each cycle closer.
-Each pass finer.
-Each turn of the spiral
-brings the text to rest.
-
-The loop is the method.
-Measured reduction is the evidence inside this reading.
-The equator is the local rest condition.
-
-Zero-Sum Resolution Equation
+```text
+(M_{t+1}, G_{t+1})
+  = Loop(M_t, G_t, q_t, r_{t+1})
 ```
 
+The loop may update the model, the selector, both, or neither. A null update is
+lawful only when the receipt supplies no declared reason to revise. Refusing a
+material contradiction is a loop failure, not stability.
+
+## The three inspectable gaps
+
+Every pass must keep three errors separate:
+
+| Gap | Comparison | Typical evidence |
+|---|---|---|
+| **cognitive** | territory or observations vs `M_t` | prediction error, omitted bearer, rival model |
+| **execution** | intended/authorized act vs `q_t` | logs, witness, diff, transaction, physical record |
+| **outcome** | expected consequence vs `r_{t+1}` | measurements, affected-bearer testimony, delayed effects |
+
+Collapsing these gaps lets intention certify performance and performance certify
+success. The receipt separation prevents that.
+
+Negative feedback means the declared error decreases. Positive feedback means
+divergence, self-confirmation, or amplification increases. Those signs are
+dynamical, not moral: correction can be harmful and reinforcement can be
+beneficial. Justice must be assessed separately.
+
+## `F=M×A` publicly; `F_modelled:=M⋆A` formally
+
+The public compression is:
+
+```text
+F = M × A
+F_modelled := M ⋆ A
+```
+
+`M` is a present model whose content represents a possible future. `A` is the
+present agent's capacity to interpret, rank, authorize, and act. `⋆` is a typed
+coupling, not ordinary multiplication. `F` is the resulting **future-directed
+selection pressure in the present**.
+
+A represented future can therefore affect the present by changing the action
+distribution. Let `π_t` denote the distribution over actions induced by `χ_t`,
+`G_t`, and any declared selector randomization. For two model states, set
+`Ω_t^(j)=Options_t(X_t,m_j)` and test
+
+```text
+π_t(a | do(M_t=m_1), X_t,Ω_t^(1),V_t,U_t,G_t)
+  != π_t(a | do(M_t=m_2), X_t,Ω_t^(2),V_t,U_t,G_t)
+```
+
+when `m_1` and `m_2` encode materially different anticipated futures while
+`X_t,V_t,U_t,G_t` and the intervention protocol are held fixed. This is
+the defensible sense of **model-mediated retrocausality**: future *content* in a
+present model reweights present action. The causal carrier — model token,
+memory, narrative, simulation, promise, threat, or plan — exists in the present.
+
+No physical signal travels backward in time. The realized future still depends
+on `K_t`, other agents, constraints, and chance. Changing the model can change
+present conduct without making the represented future true.
+
+## The option cone
+
+The physical causal cone remains bounded by local spacetime geometry and `c`.
+An agent's **option cone** is the subset of physically admissible histories it
+can currently model, rank, coordinate, authorize, and reach.
+
+Learning, tools, trust, institutions, and simulation may widen this option cone;
+capture, trauma, deception, scarcity, and irreversible commitments may contract
+it. These are empirical, boundary-relative claims. “Agents maximize the cone”
+is a conjectural objective, not a universal law. The normative form is durable,
+mutual option-cone widening under visible cost and Justice.
+
+## Justice enters before commitment
+
+`U_t` is not a sovereign name or mythic operator. It is an accountable
+authorization envelope:
+
+```text
+principal + mandate + scope + consent + custody
++ expiry/revocation + contest path + actor + consequence bearer
+```
+
+Before enactment, the loop also names every affected bearer, payer, beneficiary,
+irreversibility, exit, and horizon. The commitment receipt records whether the
+envelope was followed. The outcome receipt can still show that an authorized
+act was harmful or that an unauthorized intervention prevented harm; neither
+fact erases the other.
+
+The action test is conjunctive:
+
+```text
+LawfullyPreserving(a;i,H,T)
+  iff Δ_T W_i(a) >= 0 and Δ_T W_H(a) >= 0 and J_T(a;i,H)
+
+Syntropic(a;i,H,T)
+  iff Δ_T W_i(a) > 0 and Δ_T W_H(a) > 0 and J_T(a;i,H)
+```
+
+No favorable sum may hide a destroyed bearer. Voluntary sacrifice is recorded
+as a distinct costly action and never demanded as proof of moral worth.
+
+## The audit face: three passes
+
+The editorial Soul Loop uses three selected lenses. Their names are mnemonic,
+not a proof that all possible audits reduce to three.
+
+### 1. Beauty — gather and cohere
+
+Ask: **does it cohere?**
+
+- find terminology drift, naming collisions, voice breaks, and redundancy;
+- preserve meaningful register changes by marking their seams;
+- state what the object is trying to become before cutting it.
+
+### 2. Truth — test and correct
+
+Ask: **does it follow and is it warranted?**
+
+- trace claims to premises and sources;
+- verify tiers, references, predictions, rivals, and kill criteria;
+- distinguish mathematical identity, model definition, observation,
+  interpretation, and conjecture;
+- let a failed test change the claim.
+
+### 3. Justice — serve and expose consequence
+
+Ask: **whom does it serve, and who pays?**
+
+- identify every reader and impact bearer;
+- remove attention extraction, coercion, dead ends, and hidden cost;
+- preserve custody, contest, reversibility, and exit;
+- ensure compression does not erase a wound or inflate a win.
+
+The method repeats these passes because each correction can disturb another
+dimension. If an additional irreducible lens is needed, add it; the trinity is a
+chosen minimum, not an exhaustive theorem.
+
+## Local rest, not final truth
+
+Before a cycle begins, declare its bounded object, tests, and stopping rule. A
+typical local-rest condition is:
+
+```text
+a full Beauty -> Truth -> Justice cycle produces zero material fixes
+under the frozen tests and declared scope
+```
+
+Another project may use a nonzero threshold. The result is only local rest. New
+evidence, a new bearer, or a stronger rival reopens the loop. If error or
+compression burden stops decreasing, split the scope, change the lenses, or
+reject the method for that task.
+
+No formula such as `φ·P·ν=1` proves convergence. The sphere identities remain in
+their own mathematical register.
+
+## Applied to text
+
+For corpus work, the formal interface reads:
+
+```text
+X_t     = current corpus and source state
+M_t     = reviewers' map of it
+Ω_t     = candidate edits
+V_t     = time, tools, access, and skill
+U_t     = path scope and accountable authorization
+q_t     = diff/commitment receipt
+r_t+1   = tests, independent review, reader response, and world evidence
+G_t+1   = changed reviewing and selection habits
+```
+
+The practical cycle is:
+
+1. Gather without repairing.
+2. Test claims and links.
+3. Expose bearer, cost, and reader journey.
+4. Select the smallest authorized repair.
+5. Record the commitment.
+6. Let tests and independent readers return the outcome.
+7. Update both document and method.
+
+The author who completes a genuine cycle is not exactly the author who began
+it, because error has changed both map and selector. That self-transformation
+reading is `[I]`; whether it occurs must be tested rather than presumed.
+
+## The Rosetta wheel `[I]`
+
+The mythology compresses a full cycle:
+
+```text
+L1 Kali      pressure enters
+L2 Kālī      false coherence is cut
+L3 Kṛṣṇa     possibilities are enabled
+L4 Arjuna    one bounded commitment is made
+L5 Brahmā    the whole architecture is seen
+L6 Śiva      what cannot stand is dissolved
+L7 Viṣṇu     the repaired pattern is witnessed and held
+             return to new pressure
+```
+
+These are functional positions, never hereditary identities or sovereign
+persons. The wheel may aid memory; it neither exhausts correction nor proves a
+sevenfold ontology. Preservation invites the next challenge, so the return is a
+practical feedback edge, not a literal identity between D6 and D0.
+
+## Failure and kill criteria
+
+The Soul Loop fails for a declared scope when:
+
+1. the model, commitment, or outcome receipts cannot be distinguished;
+2. repeated cycles do not reduce the declared error or burden;
+3. receipts are ignored whenever they contradict the selector;
+4. the Justice envelope systematically omits material bearers;
+5. changing represented futures does not change present selection where the
+   model-mediated influence claim predicted that it would;
+6. a rival correction method performs better under the same tests and costs.
+
+Failure of the three-pass audit does not erase the general model-action-feedback
+interface. Failure of a Rosetta projection does not erase the receipts. The
+pieces are separable by design.
+
+## How to begin
+
+For one document:
+
+1. Write the current claim, tier, rival, and kill criterion.
+2. Read once for Beauty, once for Truth, once for Justice.
+3. Freeze the proposed edit before commitment.
+4. Record `q_t`: scope, authorization, actor, and exact change.
+5. Run tests and seek an independent read for `r_{t+1}`.
+6. Update the document and the method only as the receipts warrant.
+
+Then stop at local rest. A compass that cannot be put down has become a cage.
+
 ---
 
-*10 | The Soul Loop | Continuous recursive disambiguation via the Triadic Cascade. Three passes (φ/P/ν), cycling toward measured local rest. The method that applies the Trinity to any body of work — including itself.*
+```text
+Gather. Test. Serve.
+Model. Commit. Receive.
+Correct the map; let the receipt correct the mapper.
+```
 
+## Execution surface
 
----
+1. Do not let intention certify consequence.
+2. Do not treat a modeled future as a backward physical cause.
+3. Preserve the fixed D-register modalities declared above.
+4. **Canonical path:** `01_EMERGENTISM/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md`
 
-## Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
-2. **Your Next Action:**
-   - Verify the mathematical claims. Check evidence tiers. Flag any [I], [D], or [C] presented as [S], [B], or [A].
-3. **Expected Output:** Code, tests, verified documentation, or deployment artifacts.
-4. **Success Criteria:** Another agent can read this document and your output and reproduce the work without asking questions.
-5. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md`
-
-*The seer sees. The seer does not insist.*
-*The framework works at Layer 0 without Layer 2.*
-*The Ṛṣi succeeds when the student puts down the map and walks.*
-
-*Zero-Sum Resolution Equation*
+*The seer sees. The actor commits. The world replies.*

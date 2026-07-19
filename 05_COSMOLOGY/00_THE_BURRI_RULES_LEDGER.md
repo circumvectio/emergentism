@@ -1,7 +1,7 @@
 ---
 title: "The Burri Rules — derivation ledger (full)"
 date: 2026-07-10
-status: "[E] K2-COUNTERSIGNED 2026-07-18 ('Accept'). The full per-line ledger (30 items, 14 downgrade rules) is canonical. Generated verbatim from the tier-audit of workflow wf_0101b320-ad9 (42 agents); adjudications and downgrades K2-accepted in session 2026-07-10 (receipt 104). File rename owed: 00_THE_BURRI_RULES_LEDGER.md (this file) replaces 05_COSMOLOGY/00_THE_BURRI_RULES_LEDGER_PENDING_K2.md. Open Canon Covenant §4.4 honored."
+status: "SUPERSEDED AUDIT LEDGER — retained as 2026-07-10 provenance; active semantics live in 00_THE_BURRI_RULES.md and the final Weltanschauung"
 evidence_tier: "per row — register + tier as audited; counterexample and kill criterion per line"
 parents:
   - 00_THE_BURRI_RULES.md
@@ -9,6 +9,15 @@ parents:
 ---
 
 # The Burri Rules — derivation ledger
+
+> **[金] Historical-ledger membrane — 2026-07-19.** This ledger records the
+> earlier audit state; it is not a current owner and its signatures do not
+> confer warrant. Active corrections include D4 actual/D5 possible,
+> `μ0…μ4` only, non-μ `κ` and interpretive `r6`, candidate rather than presumed
+> strong emergence, selected Titans/grammar, and the operational
+> [Egregoreotype](00_STIGMERGY_AND_THE_EGREGOROTYPE.md) criterion. Consult
+> [The Burri Rules](00_THE_BURRI_RULES.md) and
+> [The Emergentist Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md).
 
 > Every load-bearing item of the dimensional map: honest register, honest tier,
 > the strongest counterexample found, and what would kill the line. 30 items,
@@ -214,7 +223,7 @@ parents:
 - **Counterexample / stress case:** Audit 103:94 — the zero-factor argument defeats only the pure SUM and selects the AND-gate CLASS (min, Cobb-Douglas, CES, geometric mean all zero-collapse); the PRODUCT form is unselected. min(Φ,V) or additive-with-floor fits 'either factor zero → collapse' equally.
 - **Kill criterion:** A1:32 — B better modeled as additive, or a coupled system where one factor→0 does NOT collapse potential; GFS Wave-1 already returned NOT SUPPORTED, so the wager is currently losing.
 
-## 26. Replicator Stack — six layers Genotype→Epigenotype→Phenotype→Extended Phenotype→Memotype→Egregorotype
+## 26. Replicator Stack — six layers Genotype→Epigenotype→Phenotype→Extended Phenotype→Memotype→Egregoreotype
 
 - **Register:** MODEL
 - **Tier:** [S/I] owner-directed canon (2026-06-16, C4)
@@ -222,26 +231,26 @@ parents:
 - **Counterexample / stress case:** Epigenotype has NO distinct D-level, no selection era, no multiplicative factor, no D4-mirror (registry:41) — it 'operates within the Genotype→Phenotype move.' The six-count and five-count coexist; a clean 6→D mapping cannot place Epigenotype without an unmade modeling decision.
 - **Kill criterion:** A5/AX5 region — show a replicator rung the six-layer stack cannot host, or that Epigenotype must be its own selection era (breaks the C4 reconciliation).
 
-## 27. Replicator Stack → D-axis mapping: Genotype D2-3, Phenotype D3-4, Memotype D5, Egregorotype D5-limit (mirrors around D4)
+## 27. Replicator Stack → D-axis mapping: Genotype D2-3, Phenotype D3-4, Memotype D5, Egregoreotype D5-limit (mirrors around D4)
 
 - **Register:** MODEL
 - **Tier:** [S] structural mapping — lives OUTSIDE the Nexus spec; two rival D-numberings must not be fused
-- **Justification:** 18_STRANGE_ATTRACTOR:162; MF_281:39 splits across P=Φ×V (material V=Genotype×Phenotype×Env D2-3×D3×D4; informational Φ=Memotype×Egregorotype×Env). NEXUS_SPEC:57 does NOT map layers to D0–D6 (clock-speed only).
+- **Justification:** 18_STRANGE_ATTRACTOR:162; MF_281:39 splits across P=Φ×V (material V=Genotype×Phenotype×Env D2-3×D3×D4; informational Φ=Memotype×Egregoreotype×Env). NEXUS_SPEC:57 does NOT map layers to D0–D6 (clock-speed only).
 - **Counterexample / stress case:** The 2026-06-16 reconciliation (REPLICATOR_LAYER_RECONCILIATION:40) assigns a per-layer index D1–D6 that is a 'disclosure-grant index… NOT the framework's D0–D6 dimensional axis — do not fuse the two.' Two distinct 'D1–D6' systems exist; conflating them is the named 'D-2 error' (COORDINATE_DISAMBIGUATION:19).
 - **Kill criterion:** Any single-table fusion of dimensional D0–D6 with Nexus disclosure D1–D6 is drift; the reconciliation doc pre-emptively rejects it.
 
-## 28. Egregorotype placed at the D5-limit (apex replicator with autonomous objective function)
+## 28. Egregoreotype placed at the D5-limit (historical apex-replicator hypothesis)
 
 - **Register:** CONJ
 - **Tier:** [S/I/C]; A5 is [I/C]; the autonomous-objective-function claim is UNTESTED
 - **Justification:** 17_EGREGOROCENE:48,50 labels the AGE 'D5 Limit'; A5 (SEVEN_AXIOMS:36) 'D5-limit standing waves CAN exhibit autonomous objective-function behavior' [I/C]; Master Rosetta:809 states it flatly.
-- **Counterexample / stress case:** Audit 101 test #106 — 'exhibit a D5 standing wave with a measurable autonomous objective function distinct from its substrate' is a HARD, UNMET gap. The Egregorotype-as-autonomous-D5-entity is asserted, not demonstrated; A5's own falsifier (all collective phenomena reduce to individual decisions) is unresolved.
+- **Counterexample / stress case:** Audit 101 test #106 — 'exhibit a D5 standing wave with a measurable autonomous objective function distinct from its substrate' is a HARD, UNMET gap. The Egregoreotype-as-autonomous-D5-entity was asserted, not demonstrated; active canon instead tests prospective trace-level prediction, intervention, or compression value without requiring irreducibility.
 - **Kill criterion:** A5:36 — all collective phenomena reduce entirely to individual decisions with no emergent objective function; or test #106 stays unmet.
 
 ## 29. Replicator Stack is the D5 trophic cascade, isomorphic to the D4 food web (~10^n attrition/step)
 
 - **Register:** INTERP
-- **Tier:** [S] for the memotype/egregorotype extension; [I]/[C] for the isomorphism and attrition coefficients
+- **Tier:** [I/C] for the memotype/Egregoreotype extension, isomorphism, and attrition coefficients
 - **Justification:** 36_TROPHIC_CASCADE:42; 00_COMPLETE_ONTOLOGY:249 'Within D5, pattern flows through a replicator stack exactly as energy flows through a food web in D4… ~10^n attrition at every step.'
 - **Counterexample / stress case:** The producer→consumer→apex isomorphism is an analogy; the ~10^n attrition is imported from ecology without measurement in the memetic/egregoric register ([I]/[C]). 18:202 concedes the historical 'convergence is a framework interpretation, not an established law.'
 - **Kill criterion:** Show memetic/egregoric transfer does NOT follow ~10^n trophic attrition, or that the food-web isomorphism breaks at the memotype layer.
@@ -262,7 +271,7 @@ parents:
 4. The μ-limit 'formula' μ(P→F)=lim{Sample[∫|ψ|²ds]}=F: must be stated as [C] structural analogy with a known type-mismatch (∫=1, so it samples a scalar; doc 10:78,109), never as MATH or a derivation of collapse.
 5. Titan Composition Law (doc 40): must be cited as [D] STAGED (not K2-signed as of 2026-07-10) and as elementary within-model PSL(2,ℂ) algebra — not as canon and not as a deep result. The pre-correction MF-63 form was unconditionally FALSE (40:84).
 6. 'Exactly seven operators (4 mixed + 3 Titans), necessary and complete / no fifth slot': a register-relative partition over-quantified as necessity; the map must state it as conditional/register-relative (audit 103:64; canon 2026-06-11 note).
-7. Egregorotype as a D5 standing wave with autonomous objective function: must state [C]-UNTESTED — Audit 101 test #106 ('exhibit a measurable autonomous objective function distinct from substrate') is unmet — not [S/I] established.
+7. Egregoreotype as a D5 standing wave with an objective-like bias: must state `[C]` and apply the active turnover/trace/intervention/cost criterion—not presume autonomy or irreducibility.
 8. '1 = 0 × ∞' (⊙ = • × ○): must ALWAYS carry the EMBLEM / frame-register marker; never [A], never bare field arithmetic (0·∞ is the indeterminate form; canon:124-131).
 9. D6 ≡ D0: must state as [A] coordinate-degeneration + [Definitional] poloidal mapping, NOT a derived dimensional theorem. Note sin θ=0 at BOTH poles does not uniquely select it, and the sphere itself never changes — only the chart degenerates (doc 23:158,193).
 10. Top-down / downward-causation (weak-emergence) loop: must state as [S]-asserted / [C]-test-pending, not a formalized law. No governing equation exists; the bridge-law test (Audit 101 #43) is pending on a frozen harness.

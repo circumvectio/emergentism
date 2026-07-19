@@ -11,6 +11,14 @@ rosetta:
 
 # THE TRANSCENDENTAL TRINITY
 
+> **[金] Folder membrane — 2026-07-19.** This folder is a legacy symbolic and
+> derived library, not a canonical ontology owner. `{0,1,∞}` is a selected
+> projective frame; it is not a forced generator of reality. Literal D6 identity,
+> forced trinity, and proof-by-perennial-correspondence language below is
+> superseded by the root Weltanschauung and the current formula, μ, D4/D5, and
+> closure owners. Individually marked analytic results retain only their stated
+> mathematical scope.
+
 ## {0, 1, ∞} — The Perennially Emergent Ground
 
 > **Canonical formal source:** For the canonical derivation of Zero-Sum Resolution Equation and φ · ν = 1 on S², see [`00_CANONICAL_FORMULA_BLOCK.md`](../00_CANONICAL_FORMULA_BLOCK.md). Trinity documents present these concepts narratively; for formal notation, axioms, and evidence tiers, route through the Formula Block and [`00_THE_HONEST_POSITION.md`](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).

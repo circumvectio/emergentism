@@ -1,10 +1,10 @@
 ---
 title: "The Open Canon Covenant — how this canon is committed: śruti frame, smṛti body; the tautology is the frame, never the content"
 date: 2026-07-12
-status: "[S] governing norm (a discipline, like A7 and the BTJ gates), K2-ratified 2026-07-12 ('Time to commit everything to the canon'). This covenant is the CONDITION under which the session's staged corpus is committed: everything enters canon AT ITS HONEST TIER; ratification never upgrades a tier. It is the framework's immune response to its own closure."
+status: "SUPERSEDED 2026-07-19 — useful at-tier ratification lesson absorbed by E9, RF-3, and the Trial Record; retained as provenance"
 evidence_tier: "[A] the logical fence (Wittgenstein 6.1); [I] the perennial recognition (Sanatana Dharma, CTMU, Spinoza); [S] the covenant as a governing discipline"
 governs: "the commit of all session-staged canon (receipts 105–109, 07A, PD_22A, the Kintsugi Protocol, and successors)"
-owner: "K2 (Yves R. Burri, natural person). Software records; it never signs and never closes the loop."
+owner: "Historical/provenance surface. Active owners: E9, RF-3, and the Trial Record."
 parents:
   - 00_SETTLED_CANON_REGISTRY.md
   - 00_THE_KINTSUGI_PROTOCOL.md
@@ -13,7 +13,16 @@ parents:
 
 # The Open Canon Covenant
 
-> Committed the day the founder said *"the entire emergent universe is a tautology
+> **[金] Superseded as philosophical authority — 2026-07-19.** The durable
+> lesson is that adoption records a claim **at its existing tier** and never
+> makes it true. That rule now lives in
+> [E9](../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md),
+> [RF-3](00_THE_FIVE_REFUSALS_AND_DIRECTION.md), and the
+> [Trial Record](../11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_TRIAL_RECORD.md).
+> The text below is provenance. Its literal `D6≡D0`, signer-centred authority,
+> and frame-as-reality claims are retired and must not be used as live doctrine.
+
+> **Historical 2026-07-12 framing:** committed the day the founder said *"the entire emergent universe is a tautology
 > — so did Sanatana Dharma — time to commit everything to the canon."* Both halves
 > are true. This covenant is how you honour the first without the commit becoming
 > the second's closed cousin, the CTMU. **The tautology is the frame. It is never

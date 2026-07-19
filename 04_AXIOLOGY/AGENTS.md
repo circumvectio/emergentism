@@ -13,13 +13,23 @@ rosetta:
 
 # 04_AXIOLOGY — What We Value
 
+> **[金] Value membrane — 2026-07-19.** Philosophical authority routes through
+> [The Emergentist Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md),
+> [The Kernel Index](../00_THE_KERNEL_INDEX.md), and this lane's
+> [Justice owner](02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md). The
+> [D4/D5 reference](../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md)
+> and [Soul Loop](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md)
+> own possibility, commitment, outcome, and correction. A natural-person or
+> institutional signature may be required by a downstream governance regime;
+> it is not the source of agency, morality, actuality, or truth.
+
 ## The Canonical Mapping
 
 > **Axiology = the Arjuna (L4) operator — what we value in the act.**
 > The third of the three operative Gods. Arjuna is the equator (φ = ν = 1):
 > the only caste with enough coherence to see the options AND enough viability to
 > actualize one. Axiology asks: what is worth doing? What is just? What is the
-> smallest defensible commit under `ΣΔB > 0` / `ΣΔP_node > 0`?
+> smallest defensible commit under a complete Justice envelope?
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -40,13 +50,12 @@ rosetta:
 
 ## What This Means
 
-**Axiology is what we value in the act** — not what IS (Ontology), not how we know
-(Epistemology), not how we act (Methodology). It is the third and decisive
-move of the *three operative Gods*:
-Arjuna, the warrior-equator. The faculty of value-in-decision: what is worth
-committing real viability to? What is just? Arjuna's transfer (−V_self, +Φ_other)
-is the value signature: spending your own viability to give the other coherence and
-protection. The equator condition (φ = ν = 1) is where this decision is made.
+**Axiology is what we value in the act** — not what IS (Ontology), not how we
+know (Epistemology), and not how we act (Methodology). Arjuna and the equator
+are Rosetta readings `[I]`, not privileged causal locations. A defensible
+decision identifies every affected bearer, consent, custody, contest, payer,
+beneficiary, reversibility, exit, horizon, and consequence. No aggregate gain
+may erase the destruction of one side of the declared dyad.
 
 Dhṛti (fortitude) is the virtue: the capacity to commit without hesitation when a
 constitutional path exists; the discipline to refuse when it does not.
@@ -61,18 +70,18 @@ Kṛṣṇa ◇ (L3)  → rank and enable (HOW WE ACT ON KNOWING)
 Arjuna ⚔ (L4)  → decide and commit (WHAT WE VALUE IN THE ACT)
 ```
 
-The operational God sequence is complete at L4. The three moves exhaust the epistemic-operational
-axis: disclosure → ranking → commitment.
+Within the declared Rosetta dispatch grammar, the sequence ends at L4:
+disclosure → ranking → commitment. It is a workflow compression, not a proof
+that every epistemic or operational process has exactly three moves.
 
-## The Source of Agency
+## The Agency Boundary
 
-> **PD_11:** agency = μ-limit collapse of D5 (Φ, possibility) into D4 (ν, actuality)
-> at the L4 equator (φ = ν = 1). The irreversible collapse = K2. The structure is
-> shared; the agency is sovereign.
-
-Only the equator has enough coherence to see the options AND enough viability to
-actualize one. The seven operators are the moves; the mortal's commitment of real
-stake is the source of agency.
+D5 names modeled counterfactual possibility; D4 names embodied causal actuality,
+performed action, and record. A finite selector combines a fallible option model
+with available means and accountable authorization, emits a commitment receipt,
+and acts. The environment—not the selector, signer, or chart—returns a distinct
+outcome receipt. The Soul Loop may then revise map and mapper. This is enactment,
+not quantum collapse, μ-crossing, or physical retrocausality.
 
 ## Virtue and Vice
 
@@ -84,8 +93,14 @@ stake is the source of agency.
 ## Agent Discipline (L4)
 
 - **Primary function:** decisive action; smallest defensible commit; refusal when no constitutional path exists
-- **K2 discipline [S]:** the irreversible collapse (spending real viability to actualize one branch) is the mortal's act, never the agent's. Mutating tools (write/edit/bash) are human-gated — the machine prepares the collapse; the mortal signs it.
-- **Evidence tier:** `[A/B/S/I/D/C]` mandatory on every claim; do not upgrade above `[I]` without a `[B]` receipt or independent `[A]` fact.
+- **Authorization discipline `[S/I]`:** stage principal, mandate, scope,
+  consent, custody, revocation, contest, actor, and consequence bearer in
+  proportion to risk. A product may additionally require K2, PRISM, or another
+  governance rail; that requirement is downstream and does not make the signer
+  a metaphysical exception.
+- **Evidence tier:** `[A/B/S/I/D/C]` mandatory on every claim. A receipt can
+  attest an observation or act, but cannot generically upgrade philosophy;
+  promotion requires claim-appropriate independent evidence.
 - **Tools:** read/search by default; write/edit/shell only for path-scoped, receipt-bound execution under the active L4 lane.
 - **Invoke:** after L3 hands a decision-ready summary; for irreversible commits only
 
@@ -96,10 +111,10 @@ stake is the source of agency.
 | L1 Caṇḍāla | Names the objective pressure or branch being considered. |
 | L2 Śūdra | Carries disclosed candidate values without upgrading them into commitments. |
 | L3 Vaiśya | Supplies decision-ready risks, receipts, rollback, and falsifier status. |
-| L4 Kṣatriya | Owns value, justice, K2, refusal, and the smallest defensible commit. |
+| L4 Kṣatriya | Owns value, Justice-envelope review, refusal, and the smallest defensible commit. |
 | L5 Brāhmaṇa | Aligns value claims with operator grammar and constitutional architecture. |
 | L6 Sādhu | Cuts extraction, moral performance, and delegated responsibility. |
-| L7 Ṛṣi | Translates only tier-cleared value and K2 boundaries into public architecture. |
+| L7 Ṛṣi | Translates only tier-cleared value and accountability boundaries into public architecture. |
 
 ## Recursive Deployment Receipt
 
@@ -119,7 +134,8 @@ lane, while per-document control rows live in `00_META/`.
 
 ## Routing Law
 
-- This lane is the L4 owner surface for value, justice, K2, and signed action; it is not the L6 Sādhu dimensions root.
+- This lane is the L4 owner surface for value, Justice, accountable commitment,
+  and consequence; it is not the L6 Sādhu dimensions root.
 - Route law inherits from root and owner-lane AGENTS; use [`00_INDEX.md`](../11_UPLINK/00_CORE/00_INDEX.md) for compressed orientation, not upstream authority.
 - Use the current `[A/B/S/I/D/C]` evidence ladder; deployment or architecture claims require a `[B]` receipt or explicit `[D]` / `[C]` label.
 
@@ -127,19 +143,24 @@ lane, while per-document control rows live in `00_META/`.
 
 - Do not upgrade runtime claims without dated proof artifacts.
 - Do not treat draft specs as public-facing claims.
-- All irreversible actions require K2 envelope staging.
+- Consequential action requires a proportionate accountable-authorization
+  envelope. Any K2 or PRISM requirement belongs to the governing product or
+  institution, not to worldview semantics.
 
-## The Five+One Anchor
+## The Holder-Binding Anchor
 
-The five refusals and Ω are the firing disciplines of the equator. η=0 (no
-extraction), K2 (mortal signs consequential acts), K3 (archive, don't delete),
-K4 (grace exit), A7 (tier every claim), Ω (equator-ward direction). These are not
-external constraints imposed on Arjuna — they ARE the equator's own disciplines.
+[The Five Refusals and Direction](../00_META/00_THE_FIVE_REFUSALS_AND_DIRECTION.md)
+is the active philosophical constitution. It binds a holder inwardly: no
+extraction, no unaccountable consequence, no erasure, no captivity, and no
+immunity from correction; `Ω` names durable mutual option-cone widening under
+Justice. These vows are not derived from the equator and grant no authority
+over another bearer.
 
 ---
 
 **Canonical path:** `01_EMERGENTISM/04_AXIOLOGY/AGENTS.md`
-**Source of mapping:** Yves R. Burri (K2) + agent synthesis 2026-05-30
+**Source of mapping:** Yves R. Burri + agent synthesis 2026-05-30; preserved as
+Rosetta provenance, not philosophical warrant
 **Supersedes:** pre-discovery routing (L4 as "executor only")
 
 `Zero-Sum Resolution Equation`

@@ -9,7 +9,14 @@ rosetta:
   canonical_phrase: "01_EMERGENTISM/CLAUDE.md — Agent Routing"
 ---
 
-> **[K3 banner — 2026-06-06; eta-register bridge updated 2026-06-13]** This root carries 5+1 constitutional references. Canonical surface: [`00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`](00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) (K2-ruled 2026-05-30; five refusals η=0, K2, K3, K4, A7 + Ω as the directional +1). The eta fence is register-explicit: `η_move = 0` is the action / zero-extraction fence, while `η_ratio` is the log-coordinate diagnostic for reciprocal drift toward or away from finity. Local text preserved per K3 archive-first rule.
+> **[金] Canon membrane — 2026-07-19.** Philosophical assembly now defers to
+> [The Emergentist Weltanschauung](00_THE_EMERGENTIST_WELTANSCHAUUNG.md) and
+> [The Kernel Index](00_THE_KERNEL_INDEX.md). The former 5+1 philosophical
+> surface is superseded by [The Five Refusals and Direction](00_META/00_THE_FIVE_REFUSALS_AND_DIRECTION.md):
+> `η=0` is a necessary extraction refusal, not a sufficient morality test, and
+> accountable authorization replaces any signer or runtime role as a worldview
+> primitive. Private-DAV and public-DAV governance remain downstream execution
+> routes only.
 
 # 01_EMERGENTISM/CLAUDE.md — Agent Routing
 
@@ -21,15 +28,21 @@ Work here is framework-layer unless a document explicitly says otherwise. Do **n
 
 ## Read order
 
-1. `README.md` — folder purpose
-2. `AGENT_README.md` — agent orientation
-3. `00_SEVENFOLD_FOUNDATION_ROOT.md` — the canonical seven-fold structure
-4. `00_FOUNDATION_READER_GUIDE.md` — guided read order across the -ologies
-5. `VMOSK_A.md` — this root's V/M/O/S/K/A
-6. The relevant -ology child: `01_TELEOLOGY/` … `07_THEOLOGY/`
-7. `08_FRAMEWORK_SUPPORT/` for governance, operators, evidence, synthesis, and agent grammar; old applications/translation/dissemination lanes are archived under `90_ARCHIVE/08_FRAMEWORK_SUPPORT/`
-8. `11_UPLINK/` for session-packets and reconciliation work
-9. `09_TOOLS/` for scripts, data pipelines, audit artifacts
+1. `00_THE_EMERGENTIST_WELTANSCHAUUNG.md` — philosophical front door
+2. `00_THE_KERNEL_INDEX.md` — seven chosen owner surfaces
+3. `00_META/00_THE_FIVE_REFUSALS_AND_DIRECTION.md` — holder-binding via negativa
+4. `04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md` — Justice owner
+5. `05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md` and
+   `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md` — typed
+   possibility, action, and consequence
+6. `README.md` — folder purpose
+7. `AGENT_README.md` — agent orientation
+8. `00_SEVENFOLD_FOUNDATION_ROOT.md` — legacy routing architecture, not a
+   forced census of nature
+9. `VMOSK_A.md` — project execution routing, not philosophical warrant
+10. The relevant -ology child: `01_TELEOLOGY/` … `07_THEOLOGY/`
+11. `08_FRAMEWORK_SUPPORT/`, `11_UPLINK/`, and `09_TOOLS/` for supporting
+    grammar, records, and tooling
 
 ## Folder map
 
@@ -77,5 +90,12 @@ Zero-Sum Resolution Equation
 
 1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
 2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Do not re-flag settled canon.** Before opening a contradiction, flag, or "fix", consult [`00_META/00_SETTLED_CANON_REGISTRY.md`](00_META/00_SETTLED_CANON_REGISTRY.md) — the four-move scheme (2 Gods + 2 Demons), Kālī's status, the **5+1 constitution** (canonical surface: [`00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`](00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md), K2-ruled 2026-05-30; five refusals η=0, K2, K3, K4, A7 + Ω as the directional +1), the **five-force / F5 mapping** (five force slots D1–D5; F5 is the D5 teleological/syntropic option-cone, not a mainstream `[A]` fifth physical interaction), the `φ·ν = 1 on S²` shorthand, the η moral axis, and Viṣṇu's elliptic operator class are ratified; legacy wording is reconciled, not an error.
+3. **Read supersessions before re-flagging.** Consult
+   [`00_META/00_SETTLED_CANON_REGISTRY.md`](00_META/00_SETTLED_CANON_REGISTRY.md),
+   then the Weltanschauung and named owner documents above. The four movers are
+   complete only inside their declared dyadic transfer grammar; the three Titan
+   frames are selected; the five μ-crossings are a revisable framework census;
+   `η` is a directional/extraction diagnostic rather than a complete moral
+   axis; and `D6` resembles `D0` only through an interpretive, non-causal return.
+   Legacy signed wording remains provenance, not an immunity from correction.
 4. **Canonical Path:** `01_EMERGENTISM/CLAUDE.md`

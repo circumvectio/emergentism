@@ -16,19 +16,59 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[S/I] mixed"
-  canonical_phrase: "Stigmergy and the Egregorotype"
+  canonical_phrase: "Stigmergy and the Egregoreotype"
+status: "COMPATIBILITY PATH — active spelling and test repaired 2026-07-19; legacy essay preserved below"
 ---
 
-# STIGMERGY AND THE EGREGOROTYPE
+# Stigmergy and the Egregoreotype
+
+> **[金] NAME, TYPE, AND AUTHORITY REPAIR — 2026-07-19.**
+> **Egregoreotype** is the canonical spelling. *Egregorotype* is a deprecated
+> compatibility alias retained in this filename and in the historical essay
+> below so existing links and quotations do not break. The active owner is
+> [W9 in The Crown Wager and
+> Conjectures](../06_ONTOLOGY/04_THE_CONJECTURES.md), summarized by the
+> [Emergentist
+> Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md). Stigmergy is one
+> candidate mechanism for a collective trace, not the identity or proof of an
+> Egregoreotype. No consciousness, personhood, supernatural agency, universal
+> energy extraction, or necessary O(N) scaling follows from the name.
+
+## Current operational criterion
+
+A system is a **candidate Egregoreotype** only when all of these are declared
+at a specified grain and time horizon:
+
+1. a shared trace persists beyond a transient interaction;
+2. the trace survives meaningful carrier turnover;
+3. intervention on the trace measurably reweights later selections;
+4. the reweighting shows recurrent objective-like bias; and
+5. substrate costs, including who pays and who benefits, remain visible.
+
+Failure of turnover, trace persistence, prospective intervention value, or
+visible cost accounting defeats the candidate at the declared grain. If
+individual-level variables predict and intervene equally well without the
+collective trace, the Egregoreotype claim adds no warranted explanatory level.
+These criteria support a bounded `[I/C]` collective model, not a claim that the
+collective is conscious. Consequential coordination is governed by the same
+typed authorization, consent, custody, contest, reversibility, exit, payer, and
+beneficiary fields used for any other collective act; no named founder,
+council, product, or governance rail is part of the worldview definition.
+
+## Preserved historical essay
+
+The remaining text is kept as provenance. Every occurrence of the old spelling
+below is historical compatibility usage, and every stronger equation of
+stigmergy with the collective type is superseded by the criterion above.
 
 ## The Biological Mechanism of Symbolic Coordination
 
-**Status:** Active synthesis — bridges established biology to the framework's organisational replicator stack
+**Status:** Historical synthesis; not an active source owner
 **Date:** 2026-05-14
-**Evidence Tier:** [A] for stigmergy as an established coordination mechanism in biological and robotic swarm systems; [S] for bounded-cognition / Dunbar-scale constraints as a structural coordination problem; [I] for the mapping from stigmergic trace-fields to Egregorotypes and the corrupted-trace diagnosis of algorithmic extraction.
+**Historical Tiering:** The essay assigned `[A]` to stigmergy in biological and robotic swarm systems, `[S]` to bounded-cognition coordination constraints, and `[I]` to its Egregorotype mapping. Those assignments require fresh source calibration before reuse; the current candidate type remains `[I/C]`.
 **Depends on:** [17_THE_EGREGOROCENE.md](01_THE_TRANSCENDENTAL_TRINITY/17_THE_EGREGOROCENE.md), [18_THE_STRANGE_ATTRACTOR.md](01_THE_TRANSCENDENTAL_TRINITY/18_THE_STRANGE_ATTRACTOR.md), [36_THE_DIMENSIONAL_TROPHIC_CASCADE.md](01_THE_TRANSCENDENTAL_TRINITY/36_THE_DIMENSIONAL_TROPHIC_CASCADE.md), [00_THE_SYNTROPIC_IMPERATIVE.md](00_THE_SYNTROPIC_IMPERATIVE.md)
 **See also:** The Syntropic Imperative, the Egregorocene, K2 boundary doctrine, A7 evidence-tier discipline.
-**Kill Criteria:** If stigmergic coordination in human institutions follows a fundamentally different mechanism than in biological or robotic swarms; if explicit negotiation, not environmental trace-response, is shown to drive all large-scale coordination; or if Egregorotypes cannot be shown to function as persistent environmental fields rather than direct agent-to-agent control structures.
+**Historical Kill Criteria:** If stigmergic coordination in human institutions follows a fundamentally different mechanism than in biological or robotic swarms; if explicit negotiation, not environmental trace-response, is shown to drive all large-scale coordination; or if Egregorotypes cannot be shown to function as persistent environmental fields rather than direct agent-to-agent control structures. The current operational defeat conditions are stated above.
 
 ---
 

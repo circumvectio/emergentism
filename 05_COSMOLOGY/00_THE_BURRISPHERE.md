@@ -8,7 +8,7 @@ rosetta:
       role: "verify formulas, evidence tiers, and operator/game-theory claims"
     - level: L4
       column: Axiology
-      role: "hold the equator, K2, and non-extraction boundary"
+      role: "hold the Justice and non-extraction boundary"
     - level: L6
       column: Ontology
       role: "prevent the sphere model from being confused with the Ground"
@@ -19,15 +19,37 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[A/S/I/C]"
-  canonical_phrase: "The Burrisphere"
+  canonical_phrase: "Legacy Burrisphere synthesis"
   vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root"
+status: "LEGACY DERIVED SYNTHESIS — superseded as a source owner 2026-07-19"
 ---
 
 # The Burrisphere
 
-**Status:** Active synthesis surface for the Burri Sphere / Burrisphere.
-**Evidence tier:** `[A]` for standard sphere / CP1 mathematics; `[S]` for framework-internal formula, L-row, balance, and operator structure; `[I]` for cross-domain regime, mythic, political, and theological readings; `[C]` for any claim that the geometry causes external history, physics, or civilisational outcomes.
-**Purpose:** Put the sphere itself in one source-owner place without forking the canonical formula block, the formal system, the Rosetta tables, or the evidence ladder.
+> **[金] SOURCE-AUTHORITY REPAIR — 2026-07-19.** This document is a
+> preserved derived synthesis, not an active source owner. It mixed analytic
+> chart facts, a selected Rosetta seating, product-model interpretations,
+> worldview ethics, and downstream governance as though one layer licensed the
+> next. Use the repaired owners instead: the [Canonical Formula
+> Block](00_CANONICAL_FORMULA_BLOCK.md) for the chart, chord, and finite-node
+> model; [The Burri Rules](00_THE_BURRI_RULES.md) for the typed grammar;
+> [D4/D5 Canonical Reference](03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md)
+> for actuality and possibility; [Objective Morals and
+> Ethics](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) for
+> Justice; and the [Emergentist
+> Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md) for the current
+> compression. The Rosetta latitudes and Titan names remain selected symbolic
+> readings `[I]`, not forced ontology. `P_node=Phi V` remains a selected
+> normalized conjunctive model, not a consequence of `phi nu=1`. `eta` is an
+> extraction diagnostic inside the Justice envelope, not a complete moral
+> test. Accountable action uses a typed authorization envelope; no named person,
+> council, product, or governance rail is a worldview primitive. The historical
+> text below remains legible as provenance and must not be quoted as current
+> canon without this seam.
+
+**Status:** Superseded derived synthesis; compatibility and provenance only.
+**Historical tiering:** `[A]` for standard sphere / CP1 mathematics; `[S]` for then-framework-internal formula, L-row, balance, and operator structure; `[I]` for cross-domain regime, mythic, political, and theological readings; `[C]` for any claim that the geometry causes external history, physics, or civilisational outcomes. Current owners may further demote these claims.
+**Historical purpose:** This formerly attempted to place the sphere synthesis in one source-owner document. The `[金]` seam above now controls.
 
 ---
 

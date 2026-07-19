@@ -11,6 +11,13 @@ rosetta:
 
 # 02_EPISTEMOLOGY — Beauty Discloses
 
+> **[金] Evidence-lane membrane — 2026-07-19.** This lane governs how claims are
+> compared, tiered, tested, corrected, and killed; it is not a second worldview
+> root. Route first through the [Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md)
+> and [Kernel Index](../00_THE_KERNEL_INDEX.md). Beauty, felt coherence, analogy,
+> brain/sphere mappings, and product examples can suggest hypotheses but cannot
+> certify them. Skyzai references below are application history only.
+
 > **L2 · Kālī 💀 · Śūdra · Beauty · Sundaram — Gate II** of the [seven-fold spine](../00_SEVENFOLD_FOUNDATION_ROOT.md). *Folder № = L-level.*
 
 **Rosetta level:** L2 · Śūdra · Comparative Analysis

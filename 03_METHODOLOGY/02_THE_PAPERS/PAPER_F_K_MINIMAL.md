@@ -7,11 +7,33 @@ rosetta:
   regime: "Vaiśya"
   register: "[S]/[C]"
   canonical_phrase: "K-Minimal Description"
+status: "HISTORICAL CONJECTURE — nonstandard complexity proposal; not a doctrine owner"
+superseded_by:
+  - "../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md"
+  - "../../00_THE_KERNEL_INDEX.md"
+  - "../../06_ONTOLOGY/04_THE_CONJECTURES.md"
 ---
 
 **Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
 
 # K-MINIMAL SELF-CONTAINED DESCRIPTION
+
+> **[金] HISTORICAL-CONJECTURE MEMBRANE — 2026-07-19.** `K_sc` is a proposed,
+> nonstandard quantity whose interpreter, primitive vocabulary, encoding, and
+> invariance class are not formally fixed here. It therefore cannot support a
+> theorem of global minimality, a self-grounding ontology, or an escape from
+> Gödel, Chaitin, or the ordinary dependence of description length on a coding
+> scheme. Current orientation is the
+> [Emergentist Weltanschauung](../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md),
+> [Kernel Index](../../00_THE_KERNEL_INDEX.md), and
+> [Crown Wager and Conjectures](../../06_ONTOLOGY/04_THE_CONJECTURES.md).
+> `⊙=•×○`, “`0×∞=1`,” and `•=⊙/○` remain emblems, never arithmetic programs or
+> proof that a description writes its own dictionary. Any surviving
+> self-containment or minimality proposal is `[C]` until a precise definition,
+> comparison class, invariance result, and independent discriminator are
+> supplied. It grants no hidden mathematical, physical, dimensional,
+> ontological, or ethical authority. Stronger legacy tier labels and claims
+> below are superseded; the body and its earlier seam remain as provenance.
 
 > **[金] SEAM** · broke: 2026-07-12 · receipt 114 (seven-caste audit, Seam 3) ·
 > crack: L1 Caṇḍāla (firewall) found that this paper's own kill criterion #2

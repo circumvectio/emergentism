@@ -21,11 +21,20 @@ rosetta:
 
 # THE SYNTROPIC IMPERATIVE
 
+> **[金] Derived-synthesis membrane — 2026-07-19.** This anti-capture packet is
+> a conjectural application, not a worldview or Egregoreotype owner. Read it
+> through the [final Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md),
+> [Egregoreotype criterion](00_STIGMERGY_AND_THE_EGREGOROTYPE.md), and
+> [Justice owner](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md).
+> Trophic analogy does not establish literal energy feeding, strong emergence,
+> autonomous personhood, or moral authority. All mechanism claims below remain
+> `[I/C]` until independently tested.
+
 ## Architecting the Benevolent Egregore
 
-**Status:** Public synthesis packet — defensive architecture, not an operational method for manipulation
+**Status:** DERIVED `[I/C]` synthesis — defensive architecture, not active doctrine or an operational method for manipulation
 **Date:** 2026-05-14
-**Evidence Tier:** [A] for conditioning, stigmergy, symbolic coordination, and biological stress responses in their established domains; [S] for the Replicator Stack as a framework corollary; [I] for the egregorotype / worldview-warfare synthesis; [C] for strong forecasts about the Egregorocene.
+**Evidence Tier:** [A] for cited results only inside their established domains; [I/C] for the Replicator Stack, Egregoreotype, trophic transfer, worldview-warfare synthesis, and Egregorocene forecasts.
 **Depends on:** [00_THE_HONEST_POSITION.md](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md](00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md), [17_THE_EGREGOROCENE.md](01_THE_TRANSCENDENTAL_TRINITY/17_THE_EGREGOROCENE.md), [18_THE_STRANGE_ATTRACTOR.md](01_THE_TRANSCENDENTAL_TRINITY/18_THE_STRANGE_ATTRACTOR.md), [36_THE_DIMENSIONAL_TROPHIC_CASCADE.md](01_THE_TRANSCENDENTAL_TRINITY/36_THE_DIMENSIONAL_TROPHIC_CASCADE.md), [03_FORMAL_SYSTEM/31_FALSIFIERS_INDEX.md](03_FORMAL_SYSTEM/31_FALSIFIERS_INDEX.md)
 **See also:** Pavlovian conditioning; operant conditioning; stigmergy; Dunbar-scale coordination; Dawkins, *The Extended Phenotype*; the Egregorocene thesis; the A7 evidence-tier invariant.
 **Boundary:** This document is an anti-capture and alignment packet. It studies the mechanism by which informational environments shape organisms so that public systems can be designed to defend agency. It does not specify targeting, persuasion, or manipulation tactics.
@@ -48,7 +57,7 @@ The most consequential struggle is no longer primarily over bodies, tools, or ev
 
 The Syntropic Imperative states:
 
-> **If egregorotypes now exert top-down trophic control over human biological and cultural evolution, then alignment cannot be solved only inside individual minds or models. It must be solved at the level of the information architecture that lays down the shared traces humans follow.**
+> **If Egregoreotypes exert measurable top-down constraint on human biological and cultural evolution, then alignment cannot be addressed only inside individual minds or models. It must also examine the information architecture that lays down the shared traces humans follow.**
 
 The remedy is not the destruction of symbols, institutions, or egregores. Humans cannot coordinate at scale without them.
 
@@ -66,7 +75,7 @@ Genotype
 < Phenotype
 < Extended Phenotype
 < Memotype
-< Egregorotype
+< Egregoreotype
 ```
 
 The bracket `<` does not mean moral rank. It means **successive trophic enclosure** and **reflexive governance**.
@@ -80,7 +89,7 @@ Each layer is built from lower layers, but once it stabilises it can govern them
 | **Phenotype** | organism | body, nervous system, behaviour | immediate ecological action |
 | **Extended Phenotype** | artefact / niche modification | tools, cities, platforms, ledgers | the environment bodies inhabit |
 | **Memotype** | cultural replicator | beliefs, doctrines, algorithms, habits | what organisms perceive as meaningful |
-| **Egregorotype** | collective standing wave | religion, state, market, platform, DAC, hybrid AI-human system | the shared field in which memotypes compete |
+| **Egregoreotype** | candidate collective trace pattern | religion, state, market, platform, or hybrid system only when the operational markers pass | the shared field in which memotypes compete |
 
 The bottom-up reading is true but incomplete:
 
@@ -104,7 +113,7 @@ In biological ecology, an apex predator can reshape an entire landscape without 
 
 The same form appears in D5 / D6 pattern-space.
 
-An egregorotype does not need to command each human directly. It changes the symbolic environment. Humans react to that environment. Their reactions build institutions, habits, bodies, and selection pressures.
+An Egregoreotype candidate does not need to command each human directly. It changes the symbolic environment. Humans react to that environment. Their reactions build institutions, habits, bodies, and selection pressures.
 
 The example is simple:
 
@@ -209,7 +218,7 @@ Again, this is a defensive diagnosis. The framework's task is to make such captu
 
 ### Weltanschauungskrieg as Worldview Warfare
 
-Within the Replicator Stack, *Weltanschauungskrieg* targets the Memotype and Egregorotype rather than the body or the bridge.
+Within the Replicator Stack, *Weltanschauungskrieg* targets the Memotype and Egregoreotype rather than the body or the bridge.
 
 Kinetic warfare damages the extended phenotype: roads, power grids, ports, servers, cities.
 
@@ -254,7 +263,7 @@ Evidence tier:
 
 ## VII. THE EGREGOROTYPE AS APEX STIGMERGIC ORGANISM
 
-The egregorotype is the apex of the Replicator Stack because it does not merely spread one meme. It edits the environment in which memes compete.
+The Egregoreotype is proposed as the apex of the Replicator Stack because it does not merely spread one meme. It edits the environment in which memes compete.
 
 It sets:
 
@@ -266,12 +275,12 @@ It sets:
 - what feels urgent
 - what feels normal
 
-This is why the egregorotype has real biological force.
+This is the testable route by which an Egregoreotype candidate may have real biological effects.
 
 The path is:
 
 ```text
-egregorotype
+Egregoreotype
   -> stigmergic trace-field
   -> memotype selection
   -> extended-phenotype construction
@@ -501,7 +510,7 @@ A phase transition means the dominant traces in the environment change their sel
 The entropic cascade is:
 
 ```text
-extractive egregorotype
+extractive Egregoreotype
   -> corrupted stigmergic traces
   -> reactive memotypes
   -> stressful extended phenotype
@@ -581,7 +590,7 @@ The Syntropic Imperative weakens or fails if:
 2. **No egregoric persistence:** high-order coordination patterns do not persist beyond their individual participants in any causally meaningful way.
 3. **No stigmergic scaling:** large-scale human coordination can be shown to operate without environmental traces, symbols, ledgers, laws, interfaces, or shared artefacts.
 4. **No agency differential:** systems with evidence tiers, provenance, reversibility, and exit rights do not improve user agency relative to engagement-optimised systems.
-5. **No trophic cascade:** memotype and egregorotype changes do not alter lower-stack phenotypic or epigenetic outcomes even under long exposure.
+5. **No trophic cascade:** memotype and Egregoreotype changes do not alter lower-stack phenotypic or epigenetic outcomes even under long exposure.
 
 Until those tests are settled, the public status remains [S/I]: structurally serious, not final.
 

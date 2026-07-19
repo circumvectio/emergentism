@@ -9,8 +9,11 @@ rosetta:
   operator: "Kṛṣṇa ◇"
   tier: "God"
   regime: "Vaiśya"
-  register: "[A/B/S/I/D/C] mixed by claim"
-  canonical_phrase: "Canonical Claim Matrix"
+  register: "[A/B/S/I/D/C] mixed by claim; derived routing only"
+  canonical_phrase: "Claim audit routing matrix — never source authority"
+type: derived-claim-routing-index
+status: "ACTIVE AS AUDIT ROUTING ONLY — source owners control every claim"
+authority: "none; this matrix cannot create, promote, or settle doctrine"
 ---
 
 **Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
@@ -18,19 +21,38 @@ rosetta:
 
 # THE CANONICAL CLAIM MATRIX
 
+> **[金] Authority membrane — 2026-07-19.** This matrix is an audit index, not
+> a parallel canon. The active worldview axiom namespace is **E1–E10**, owned by
+> [The Emergent Axioms](../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md). **A1–A7** and
+> **O1–O5** survive only as genealogy or explicitly historical wagers. A row
+> below is current only to the extent that its cited source owner still affirms
+> it at the stated tier. Where this matrix conflicts with the
+> [Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md),
+> [Kernel Index](../00_THE_KERNEL_INDEX.md),
+> [Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md),
+> [D4/D5 reference](../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md),
+> [mu-limit contract](../05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md),
+> [closure reference](../05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md),
+> [Soul Loop](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md),
+> or [value owner](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md),
+> that owner wins. Unrevalidated legacy rows remain useful as a contradiction
+> register; they are not publication authority.
+
 ## One Operating Surface For What The Framework Is Actually Claiming
 
-**Status:** Active operating summary
+**Status:** Active audit-routing summary; non-authoritative
 **Date:** 2026-04-14
 **Evidence Tier:** Mixed by claim under the current `[A/B/S/I/D/C]` ladder; this document is a routing surface, not an independent source of authority
-**Depends on:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [The Core State of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md), [The Life-Science Register](../05_COSMOLOGY/00_THE_LIFE_SCIENCE_REGISTER.md), [What Actually Tests the Theory](00_WHAT_ACTUALLY_TESTS_THE_THEORY.md), [GFS Wave 1 Results](00_GFS_WAVE1_RESULTS.md)
-**See also:** [The Goal](../00_THE_GOAL.md), [The Weltanschauung](../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md), [The Soul Loop](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md), [Mathematical Transformations](../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D32_MATHEMATICS.md), [Objective Morals and Ethics](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md), [The Power-Max Lemma](../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md), [The Empirical Program Board](00_EMPIRICAL_PROGRAM_BOARD.md)
+**Depends on:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [The Emergent Axioms](../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md), [What Actually Tests the Theory](00_WHAT_ACTUALLY_TESTS_THE_THEORY.md)
+**See also:** [The Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md), [The Kernel Index](../00_THE_KERNEL_INDEX.md), [The Soul Loop](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md), [Objective Morals and Ethics](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md), [The Power-Max Lemma](../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md), [The Empirical Program Board](00_EMPIRICAL_PROGRAM_BOARD.md)
 
 ---
 
 ## Rule
 
-If this matrix conflicts with `00_THE_HONEST_POSITION.md`, the Honest Position wins.
+If this matrix conflicts with any current source owner named in the authority
+membrane, that owner wins. The Honest Position controls evidence-tier
+discipline; it does not make this matrix a doctrine owner.
 
 This document exists to make the framework harder to misstate in public and easier to audit at the claim level.
 
@@ -45,7 +67,9 @@ Older rows that still use `[S]` inherit the split defined in the Honest Position
 3. Use the public-safe phrasing, not the stronger private compression.
 4. Check the upgrade and downgrade rule before publishing.
 
-**Numbering note:** where this matrix mentions O1-O5, it is referring to the older public ontological wager about S2 substrate selection. The active formal-system canon is A1-A7, and the matrix should not be read as collapsing the whole formal layer back to the older numbering.
+**Numbering note:** where this matrix mentions O1–O5 or A1–A7, it is
+preserving historical claim identifiers. The active worldview axioms are
+E1–E10. The legacy identifiers do not create a second active axiom set.
 
 ---
 

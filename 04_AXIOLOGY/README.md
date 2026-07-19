@@ -13,60 +13,76 @@ rosetta:
 
 # 04_AXIOLOGY — Justice Signs
 
-> **L4 · Arjuna ⚔ · Kṣatriya · Justice · Dharma — Gate IV (the equator)** of the [seven-fold spine](../00_SEVENFOLD_FOUNDATION_ROOT.md). *Folder № = L-level. L4 is where ascent meets descent — value and signature are one act.*
+> **[金] Active value boundary — 2026-07-19.** This lane translates the
+> [Emergentist Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md). Its
+> philosophical owner is [Objective Morals and Ethics](02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md),
+> read with the [D4/D5 reference](../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md)
+> and [Soul Loop](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md).
+> Aggregate `ΣΔP` is not a moral test, `η=0` is not morally sufficient, and no
+> mortal, model, caste, or signature is a sovereign exception to consequence.
+
+> **L4 · Arjuna ⚔ · Kṣatriya · Justice · Dharma — Gate IV (the equator)** of the [seven-fold spine](../00_SEVENFOLD_FOUNDATION_ROOT.md). *Folder № = L-level. L4 is the chosen Rosetta station where value is tested at commitment.* `[I]`
 
 > **Heuristic-mapping note:** Rosetta images and operator/deity names are heuristic mappings [I], not claims of physical or metaphysical fact.
 
 **Rosetta level:** L4 · Kṣatriya · Strategic Abduction
 **Canonical phrase:** Justice signs.
 
-**Definition:** Value Alignment is the root of value and the equator of action. It asks what matters and becomes real only when the mortal signs a branch under uncertainty. In this framework, Value Alignment and Strategic Implementation meet at L4.
+**Definition:** Value Alignment asks what matters at the boundary of action. It
+becomes inspectable when a finite actor commits embodied means under accountable
+authorization, the world returns a consequence, and the receipt can correct
+both model and selector. Equator and warrior language are interpretive Rosetta
+aids `[I]`, not sources of actuality or justice.
 
-**Must answer:** What is worth serving? What is worth refusing? What action raises widest-boundary `ΣΔB` / `ΣΔP_node` without extraction? Who signs?
+**Must answer:** What is worth serving or refusing? Who and what are affected?
+Who authorizes, acts, pays, benefits, holds custody, may contest, and bears the
+result? What becomes irreversible, and what exit remains?
 
 **Must not do:** Moralize extraction. Perform virtue without structural change. Delegate mortal responsibility to AI, doctrine, procedure, or priesthood.
 
 ## Game-Spine Function
 
-In the Soul Loop's game form, axiology owns **Know what matters**. It is the L4
-signature gate: Beauty, Truth, Justice, and non-extraction are not ornaments
-but the values the player must preserve before a possible move becomes a lawful
-act.
+In the Soul Loop's game form, axiology owns **Know what matters**. Truth,
+beauty, Justice, and non-extraction are declared values `[I/vow]`, not outputs
+of a chart identity. They must be made inspectable before a possible move
+becomes a defensible act.
 
 Axiology receives L3's tested move and asks who or what would be raised, who or
-what would pay, whether the relation survives K2 consent, K4 exit, A7
-correction, and whether the move can raise `P_node,i` and `P_node,H` together
-under `η = 0`. It does not replace teleology; it signs the value boundary
-teleology must obey. `[S/I]`
+what would pay, whether consent is meaningful, whether custody and contest are
+defined, what is reversible, whether exit survives, and whether both individual
+and sustaining whole retain durable potential under `η=0`. It does not replace
+teleology; it makes teleology answerable to affected bearers. `[S/I]`
 
 ## Dasein Game Reading
 
 Axiology is where the Soul Loop becomes a moral compass for a finite player.
 The question is not "what does the collective demand?" or "what does the
-individual want?" in isolation. The question is which signed move raises the
+individual want?" in isolation. The question is which accountable move raises the
 individual symbiont and the sustaining holobiont together:
 
 ```text
 P_node,i = Φ_i × V_i
 P_node,H = Φ_H × V_H
-η = 0
+J_T(a;i,H) = true
 
 objective morals = i -> H  (the symbiont raises the holobiont)
 objective ethics = H -> i  (the holobiont raises the symbiont)
-objective dharma   = both directions rising together at the action boundary
+strict syntropy   = both durable potentials rise under Justice
 ```
 
 In the action register, `V` means usable D4 means-to-act: body, tools, energy,
 access, execution capacity. `Φ` means D5 worldline-foresight: the ability to
 envision the reachable future and use those means coherently. A value claim is
-not stable until it can state how it raises both `P_node,i` and `P_node,H`
-without hidden rent, coercion, or dependency manufacture.
+not stable until it identifies the bearer set, horizon, payer, beneficiary,
+consent, custody, contest, reversibility, exit, expected outcome, and receipted
+consequence. No summed gain may compensate for destroying one side of the
+declared dyad.
 
-This is framework-objective, not an external proof of moral realism. Once
-reciprocal closure, multiplicative `P_node`, real coupling, long horizon, and
-enforced `η = 0` are accepted, the Power-Max Lemma gives the conditional
-frontier: durable individual worldline potential is searched on trajectories
-that preserve or raise the boundary that makes the individual effective.
+This is framework-objective, not an external proof of moral realism. With a
+declared potential model, horizon, bearer boundary, and Justice envelope, the
+Power-Max principle is a constrained search over actions that do not reduce
+either side's durable potential. The product is one selected AND-class model;
+neither it nor the chart uniquely derives the ethic.
 
 ---
 
@@ -78,9 +94,12 @@ This is why theurgy is not a separate L6 root in the Rosetta-aligned structure. 
 
 - Value Alignment reads value.
 - Strategic Implementation signs the branch.
-- K2 records the mortal collapse from D5 possibility into D4 action.
+- A typed authorization envelope and commitment receipt record the chosen D5
+  option's enactment as D4 action; a separate outcome receipt comes from the
+  environment. This is commitment, not quantum collapse.
 
-Value Alignment without theurgy is unsigned philosophy. Strategic Implementation without value alignment is blind activism.
+Value Alignment without consequence-aware implementation is inert philosophy.
+Strategic Implementation without value alignment is blind activism.
 
 ---
 
@@ -109,34 +128,48 @@ The operational practice material now routes through:
 
 [`01_THEURGY/`](01_THEURGY/)
 
-That subfolder exists to prevent a separate "theurgy root" from drifting away from value, K2, and mortal responsibility.
+That subfolder exists to keep strategic implementation answerable to value,
+authorization, consequence, and correction. Product-specific signature rules
+remain downstream there; they do not define the worldview.
 
 ---
 
 ## Claim Boundaries
 
-- `P∞ = φ · ν = 1` names the invariant sphere-product.
+- `φ·ν=1` is an analytic identity on the stipulated reciprocal chart; it does
+  not name an empirical conservation law or moral invariant.
 - `B = sin θ` names balance on the sphere.
-- `P_node = Φ × V` names empirical or organizational flourishing.
+- `P_node=ΦV` is the framework's selected normalized conjunctive model; its
+  universal empirical fit remains `[C]`.
 - Value Alignment is `[S]` structural inside the accepted framework where it
-  applies the Power-Max frontier, `ΣΔB > 0` / `ΣΔP_node > 0`, `η = 0`, and the
-  `P∞` invariant to real coupled boundaries.
+  applies a declared potential model and Justice envelope to a named individual,
+  sustaining whole, horizon, payer, beneficiary, and consequence boundary.
 - Value Alignment is `[I]` interpretive where it names those structural
   directions morals, ethics, dharma, justice, or specific institutional
   applications.
 - Value Alignment is `[C]` where it projects civilisational outcomes or claims
   strong moral realism beyond the framework's accepted premises.
-- K2 is non-negotiable: no automation of mortal responsibility.
+- Accountable responsibility is non-negotiable inside this value contract. A
+  particular K2, council, or institutional procedure may implement it, but
+  cannot supply philosophical warrant or erase a consequence bearer.
 
 ## Public-Translation Risks
 
-- Risk: "Justice" read as partisan ideology. Correction: Justice = widest-boundary `ΣΔB` / `ΣΔP_node` under `η = 0`.
-- Risk: future-good language used to justify present extraction. Correction: receipts-first; K2; Grace Exit.
+- Risk: "Justice" reduced to an aggregate score. Correction: use the conjunctive
+  Justice envelope; keep every affected bearer visible and forbid compensation
+  of one side's destruction by the other's gain.
+- Risk: future-good language used to justify present extraction. Correction:
+  model-mediated futures do not authorize consequences; require consent,
+  custody, contest, outcome receipts, and exit.
 - Risk: Strategic Implementation presented as magic. Correction: theurgy is signed action discipline, not supernatural control.
 
 ---
 
-*See also:* [03_METHODOLOGY](../03_METHODOLOGY/) (Truth tests) · [04_AXIOLOGY/01_THEURGY](01_THEURGY/) (K2 participates) · [05_COSMOLOGY](../05_COSMOLOGY/) (Emergentism models) · [The Dyadic Coupling Law](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) (the moral axis this lane owns: good = the bond `φ × ν`, evil = closure `η > 0`, sorted by *move* — never by pole, gender, caste, or person)
+*See also:* [03_METHODOLOGY](../03_METHODOLOGY/) (truth tests) ·
+[The Five Refusals and Direction](../00_META/00_THE_FIVE_REFUSALS_AND_DIRECTION.md)
+(holder-binding limits) · [04_AXIOLOGY/01_THEURGY](01_THEURGY/)
+(downstream strategic implementation) · [05_COSMOLOGY](../05_COSMOLOGY/)
+(Emergentism models)
 
 `Zero-Sum Resolution Equation`
 

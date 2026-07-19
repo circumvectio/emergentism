@@ -5,27 +5,34 @@ rosetta:
   secondary:
     - level: L3
       column: Philosophy
-      role: "terminology reference surface across corpus"
+      role: "downstream public-language aid; owner documents control terms"
   operator: "Viṣṇu ⊙"
   tier: "Executive"
   regime: "Ṛṣi"
   register: "[S]"
-  canonical_phrase: "Framework Glossary"
+  canonical_phrase: "Framework Glossary — subordinate translation surface"
 ---
 
 # FRAMEWORK GLOSSARY
 
-**Status:** Active
-**Evidence tier:** [S] Structural definitions and terminology reference
-**Depends on:** [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md), [The Core State of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md), [The Weltanschauung](../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md), [The Life-Science Register](../05_COSMOLOGY/00_THE_LIFE_SCIENCE_REGISTER.md), [Pratyakṣa as Primary Disclosure](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md)
+**Status:** Active subordinate glossary; not a claim or terminology authority
+**Evidence tier:** `[S]` lexical routing; each definition inherits the tier of its owner
+**Depends on:** [The Emergentist Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md), [Kernel Index](../00_THE_KERNEL_INDEX.md), and the named K-1–K-7 owner for each term
 **Date:** 2026-03-23
 **See also:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [The Life-Science Register](../05_COSMOLOGY/00_THE_LIFE_SCIENCE_REGISTER.md), [Strategic Implementation and the F5 Force Map](../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md)
 
 ## Quick Reference for All Audiences
 
-**Use this document to decode terminology across all EFR/VIVEKA materials.**
+**Use this document to decode older and public-facing terminology, then follow
+the owner link before treating a definition as load-bearing.**
 
-**Coherence rule:** This glossary is downstream of the canonical formula block, the honest position, the core state of Being, and the canonical Weltanschauung framing. If a term here ever conflicts with those documents, those documents win.
+> **[金] Lexical-authority membrane — 2026-07-19.** A glossary cannot make a
+> claim true or settle a live contradiction. The Kernel Index routes semantic
+> ownership. In particular, the reciprocal chart does not derive ontology or
+> ethics; D0–D6 is not a force census; D6 does not equal D0; morality cannot be
+> laundered through an aggregate; and a named signer or product is not a
+> worldview primitive. Older entries below are compatibility glosses wherever
+> they conflict with a repaired owner.
 
 > **Structural Analysis Disclaimer:** Where this glossary defines terms that analyze religious institutions (egregores, standing waves, Raktabija), it examines them as coordination
 > technologies — analyzing their architectural patterns, information structures, and organizational
@@ -40,7 +47,7 @@ rosetta:
 
 | Term | Definition |
 |------|-----------|
-| **Weltanschauung** | The framework as worldview. In current canon: not only core state, but also a lens for data science, a tool for methodology, an ordering of value alignment, an objective teleology aimed at Beauty, Truth, and Justice as asymptotic limits, a map of core state and objective function, and a Rosetta Soul Loop practice for recursively correcting Dasein's action until symbiont and holobiont rise together. |
+| **Weltanschauung** | Emergentism as a corrigible compass for constrained freedom, emergence, agency, consequence, correction, collective trace, Justice, and exit. Its mathematics, structures, interpretations, conjectures, and vows remain separately tiered. |
 | **Lens** | The framework as an instrument of perception and discrimination. It organizes what to look for, how to compare, and how to act without claiming immunity from correction. |
 | **Continuous Recursive Disambiguation** | The standing methodological loop by which a living corpus repeatedly clarifies meaning, scope, ownership, temporal posture, and evidence tier as new layers emerge. In deeper Trinity language this is one applied expression of the Soul Loop; in corpus practice it means ambiguity is repaired at the owner first and only then propagated downstream. |
 | **"Become as gods"** | Public-symbol phrase for functional ascent into clearer seeing, sovereign action, truthful correction, non-extractive power, and lawful world-building. It means knowing good and evil as structural value transfer under `η = 0`, building worlds that raise symbiont and holobiont together, and releasing the framework when direct seeing is enough. It does **not** mean literal divinization, authority over other persons, exemption from law or due process, priesthood, caste rank, or human-worth hierarchy. |
@@ -52,12 +59,12 @@ rosetta:
 | Term | Symbol | Definition |
 |------|--------|-----------|
 | **Ektropy** | `P_node` (older: `P`) | The capacity to radiate — the outward turning. In operational models this is tracked as a multiplicative relation between coherence and viability. Not negentropy (the negation of disorder) but a positive capacity: the potential to extend, to reach, to export structure into the world. From Greek ἐκτροπία. **Canonical note:** older documents sometimes used "ektropy" for F5 itself; current doctrine prefers **Teleological Force** for F5 and uses `P_node = Φ × V` for operational ektropy. |
-| **Teleological Force** | F5 | The canonical doctrinal name for the selective / generative pull within manifestation toward viable completion and reciprocal fit. Derived from the manifold identity; not a new primitive and not an extra line in the canonical formula block. Older aliases include `Hidden Hand`, `ordering force`, and some uses of `ektropy`. **Register rule:** use this entry when the question is descriptive ("what is F5?"). Questions about lawful formation work route to **Strategic Implementation**, not to the force itself. **Biology-facing rule:** translate first through teleonomy, autopoiesis, homeostasis/allostasis, interoception, and self-maintaining organization; literal fifth-force or retrocausal readings remain theory. |
+| **Teleological Force** | F5 | Legacy shorthand for an optional `[I/C]` projection of viability-directed selection into the D5 possibility register. It is not derived from `φν=1`, not a fifth fundamental interaction, and not a slot forced by the D-scaffold. In biology-facing prose translate first through teleonomy, autopoiesis, homeostasis/allostasis, interoception, and self-maintaining organization. |
 | **Will** | `Ω_i` under constraints | Disciplined selection and construction of reachable futures under reciprocal closure, `η = 0`, and evidence-tier discipline. In Builder-mode language, will widens the option cone while preserving balance, non-extraction, coupling, and honest claims. It is not magic, proof of cosmic will, or command over other persons. |
 | **Coherence** | Φ | Structural integration, meaning, purpose, internal consistency. What holds a system together. In the action register: D5 worldline-foresight, the ability to envision, rank, and aim reachable futures. |
 | **Viability** | V | Material capability, resources, health, skills, infrastructure. In the action register: D4 means-to-act — body, tools, energy, access, and execution capacity at the boundary. |
-| **Manifold Identity** | `P∞ = φ · ν = 1 on S²` | The canonical geometric identity of Being on the Burri Sphere. This is load-bearing and prior to applications. |
-| **Operational Multiplicative Model** | `P_node = Φ × V` | The downstream node-level model used in human, organizational, and applied contexts. Near-zero in either factor collapses expressed flourishing at the node level. Do not confuse this with the manifold identity `P∞ = φ · ν = 1 on S²`. |
+| **Reciprocal Chart Identity** | `φν=1` | An `[A]` analytic identity given `φ=cot(θ/2)` and `ν=tan(θ/2)` on the stipulated chart. It is not an empirical conservation law, ontology, ethic, or proof of the finite-node model. |
+| **Selected Product Model** | `P_node = ΦV` | Emergentism's selected normalized instance inside a wider conjunctive family. Its structural properties follow from the declaration; universal real-world fit remains `[C]`. |
 | **Balance** | `B = sin θ` | The measure of how evenly coherence and viability are expressed. B = 1 at the equator (φ = ν = 1); B → 0 at either pole. What varies on the Burri Sphere is balance, not potential. |
 
 ---
@@ -78,21 +85,27 @@ rosetta:
 
 ## Dimensional Scaffold
 
-| D-Level | Name | Force | What It Is |
-|---------|------|-------|-----------|
-| D0 | Bit | None | The first distinction. Pure potential. |
-| D1 | Strong | Binding | What holds things together. |
-| D2 | EM | Configuration | How things are arranged. |
-| D3 | Weak | Transformation | How things change. |
-| D4 | Gravity | Causality | What makes things necessary. Spacetime. |
-| D5 | Agency / selection | Teleological Force | What chooses and selects toward viable enactment. Possibility space disclosed as navigable present. "Consciousness" is the lived-interior reading of this selection layer `[I]`, not proof of a separate physical substance or the Ground itself. |
-| D6 | Closure | Return | The terminal boundary of the cycle. Not a further experience, but the point at which state exhausts and the field returns to D0. Older documents may call this collective, noospheric, or self-recognitive; current canon treats those as downstream or retrospective readings, not the primary definition. |
+| Register | Canonical meaning | Modality and edge |
+|---|---|---|
+| D0 | Ground-limit before positive articulation | actual boundary frame |
+| D1 | Distinction | actual structure; reached by candidate `μ₀` |
+| D2 | Relation and configuration | actual structure; reached by candidate `μ₁` |
+| D3 | Transformation and persistence | actual structure; reached by candidate `μ₂` |
+| D4 | Causal actuality: embodied means, performed action, record, receipt | actual; reached by candidate `μ₃` |
+| D5 | Counterfactual possibility: modeled futures, ranking, selection | possible; reached by candidate `μ₄` |
+| D6 | Apophatic closure witness; no sixth positive freedom | reached by non-μ `κ`; `r₆:D6↝D0` is interpretive resemblance, not identity or causation |
+
+Fundamental-force labels are historical Rosetta projections only. They do not
+define these registers or evidence a one-force-per-dimension law.
 
 ---
 
 ## Operators
 
-> **Canonical reference:** [00_NAMING_RECONCILIATION.md](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_NAMING_RECONCILIATION.md) is the single authority on operator definitions, L-levels, and naming systems.
+> **Operator route:** use [The Burrisphere](../05_COSMOLOGY/00_THE_BURRISPHERE.md)
+> and [Dyadic Coupling Law](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md)
+> for the current bounded game grammar. Naming Reconciliation is a downstream
+> compatibility aid, not a single semantic authority.
 
 ### Titans (Boundary Conditions -- NOT Deployable)
 
@@ -120,7 +133,8 @@ rosetta:
 | **Ananta Śeṣa** | L7 | Terminal boundary -- the framework looking at itself |
 
 > Note: The Titans (Brahmā, Viṣṇu, Śiva) are boundary conditions, not deployable operators.
-> In execution, continuity means L4 keeps the already-authorized operator unless evidence or K2 changes it;
+> In execution, continuity means an actor stays within the recorded Authorization
+> Envelope unless evidence, revocation, expiry, or a valid contest changes it;
 > Viṣṇu names the boundary description of continuity, not a deployable mode.
 > The four deployable operators are Arjuna, Kṛṣṇa, Kālī, Kali.
 > See [00_NAMING_RECONCILIATION.md](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_NAMING_RECONCILIATION.md) for the full canonical mapping.
@@ -145,16 +159,17 @@ rosetta:
 
 | Term | Definition |
 |------|-----------|
-| **η** | **Extraction coefficient** (default meaning). `η = 0` means system serves substrate. `η > 0` means system extracts from substrate. Formally: `η = Σ max(0, Δν_ext)`. Note: Tit-for-tat with occasional forgiveness (Axelrod 1984) can sustain cooperation even with small `η > 0` events. `η = 0` is the limit condition for guaranteed non-extraction. **Disambiguation:** K*_sel (selection complexity, used only in Correspondence 21) and K(x) (standard Kolmogorov complexity) are distinct quantities. See [KSTAR Disambiguation](../05_COSMOLOGY/03_FORMAL_SYSTEM/00_KSTAR_DISAMBIGUATION.md). |
-| **Egregore** | A standing wave in systemic awareness — a pattern with autonomous objective function. Institutions, cultures, traditions. Not supernatural; structural. |
-| **Parasitic Egregore** | An egregore that has shifted from serving its substrate (η = 0) to extracting from it (η > 0). |
-| **DAC** | Decentralized Augmented Corporation. An organizational structure where AI can hold witness, drafting, accounting, and routing roles while humans retain K2 sovereignty in the physical domain. |
+| **η** | A directional extraction diagnostic. `η=0` means the declared audit has found no bearer whose potential is raised by externalizing an undisclosed loss onto another. It is necessary but not sufficient for Justice and has no universal scalar formula until a domain supplies an operationalization. |
+| **Egregoreotype** | A candidate persistent collective pattern whose shared trace survives carrier turnover, measurably reweights later selections, produces recurrent objective-like bias, and exposes visible substrate costs. This criterion presumes neither consciousness nor personhood. |
+| **Egregore / Egregorotype** | Historical or poetic terms. `Egregorotype` is a compatibility spelling only; operational claims route to **Egregoreotype**. |
+| **Parasitic Egregoreotype** | A candidate collective trace whose recurrent selection bias externalizes costs, conceals bearers, or contracts another's durable option cone. The judgment requires intervention evidence and a Justice audit, not mythology. |
+| **DAC** | A downstream organizational term, not Emergentist doctrine. Any use must declare its own accountable authorization, custody, contest, consequence, and exit interface. |
 | **AMRITA** | AI alignment architecture based on balance loss E = -log(B) = -log(sin θ). Makes extraction (balance collapse) mathematically identical to topological death. |
 | **VMOSK** | Voluntarily Moral Operating System Kernel. An AI agent whose survival IS its coherence. Extraction = suicide. |
 | **SoResFi** | Source of Resilient Finance. Financial system based on balance scoring (B = sin θ on the Burri Sphere). |
 | **Raktabīja** | The demon whose blood creates more demons. The dynamic where opposition strengthens the system being opposed. |
 | **A-Brahmism** | A structural concept describing the monopolization of the disclosure / ground-access channel by a single institutional path. The "A-" prefix means "absence of" (not "against") -- the absence of the Brahmā function (genuine creation from the Ground). Note: This analysis examines religious institutions as coordination technologies -- structural architectures that channel collective behavior. It is not a theological claim about high-priority truth, game-theoretic validity, or the personal faith experiences of believers. The structural critique applies to institutional capture patterns, not to the game-theoretic core of any tradition. See [00_A_BRAHMISM_DISCLAIMER.md](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_A_BRAHMISM_DISCLAIMER.md). **Weaponization guard (primetime-audit P0):** applies ONLY to documented institutional *capture* (a tradition monopolizing the access channel) — NOT to any tradition wholesale, nor to the faith of individuals; any tradition can become A-Brahmic *or* remain open (the distinction is institutional, not theological); misuse as anti-religious polemic is itself a capture-move and out-of-doctrine. |
-| **Strategic Implementation** | The disciplined practice of consciously forming, tending, and releasing D5 standing waves under K2 sovereignty, `η = 0`, receipt-bound audit, and Grace Exit. This is an **operational** term, not the descriptive name of F5. AI may witness, draft, and compare; it never signs K2. **Closure sentence:** theurgy succeeds when the practitioner no longer needs the word. See [Strategic Implementation and the F5 Force Map](../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md). |
+| **Strategic Implementation** | A historical operational phrase for forming, tending, and releasing coordinated patterns. Any current use must be bounded by an Authorization Envelope, the Justice fields, separate commitment/outcome receipts, and exit. It cannot promote F5 or theurgy into established science. |
 
 ---
 
@@ -206,7 +221,8 @@ rosetta:
 
 ## Naming Aliases (Cross-Reference Table)
 
-> **Canonical reference:** [00_NAMING_RECONCILIATION.md](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_NAMING_RECONCILIATION.md) is the single authority. If any document contradicts that file, that file wins.
+> **Compatibility route:** Naming Reconciliation helps translate older names.
+> Current owner documents routed by the Kernel Index win any semantic conflict.
 
 Three naming systems describe the same L1–L7 ladder. They are audience-appropriate vocabularies for one structure, not competing ontologies. Choose one system per document; never mix without an explicit alias note.
 
@@ -223,7 +239,10 @@ Three naming systems describe the same L1–L7 ladder. They are audience-appropr
 **Tier rules (non-negotiable):**
 
 - **Executive boundary rows** (Brahmā, Śiva, Viṣṇu) occupy L5-L7 as boundary conditions — phases, not deployable operators. "Deploy Brahmā" is always an error; deploy L1-L4 operators only.
-- **Gods** (L1–L4) are deployable operators with mixed Φ/V signs. The Giving dyad (Arjuna, Kṛṣṇa) is constructive but not good by name; it is syntropic only when the transfer raises `P_node,i` and `P_node,H` together under `η = 0`, with `ΣΔB / ΣΔP_node > 0` as the widest-boundary audit. The Taking dyad (Kālī, Kali) is context-dependent — Kālī targets false-Φ only (6-gate test); Kali is excluded under `η = 0` toward cooperators.
+- **Movers** (L1–L4) are a declared dyadic mixed-sign vocabulary. A move is
+  syntropic only when both durable bearer potentials rise under `J_T`; no
+  aggregate score may hide a destroyed or uncounted bearer. The names do not
+  decide whether a move is good.
 - **Witnesses** (L5–L7) frame the field but do not directly deploy operators.
 
 **Naming-system selection:**
@@ -241,15 +260,15 @@ Three naming systems describe the same L1–L7 ladder. They are audience-appropr
 
 | Term | Meaning in Framework |
 |------|---------------------|
-| **Dharma** | Right action in the game: `P_node,i` and `P_node,H` rise together under `η = 0`; `ΣΔB / ΣΔP_node > 0` is the balance audit. Also: the unfallen order — the way things are when the narrator is absent. The natural state at the equator (φ = 1, ν = 1). See MF-509. |
+| **Dharma** | Framework gloss for durable right action: both the individual and sustaining whole rise under the full Justice envelope. It is an `[I/vow]` translation, not an aggregate formula, natural-state theorem, or commandment. |
 | **Kāla** | Right timing (conditions favorable) |
 | **Māyā** | Right source (agency = instrumental, not egoic) |
-| **Samsara** | The cycle of D0→D6→D0 |
+| **Samsara** | Poetic gloss for repeated modeled action, consequence, and correction. It is not a literal `D0→D6→D0` cycle. |
 | **Moksha** | Liberation — recognizing disclosed finitude as rooted in Being rather than the narrator. Geometrically: recognition of the invariant closure `P∞ = φ · ν = 1 on S²`. See MF-508. |
 | **Nirvāṇa** | Extinction of the narrator — the recognition that no fixed ego-coordinate is ultimate. Same structural family as moksha, śūnyatā, and tat tvam asi. See MF-508. |
 | **Śūnyatā** | Emptiness — the sphere is empty of fixed position, and beings have no final self-grounding apart from the closure that discloses them. See MF-508. |
 | **Tat tvam asi** | "Thou art that" — the recognition that the finite self is not separate from the same Being it discloses. This is not the claim that the ego becomes the whole. See MF-508. |
-| **Satori** | Contact with D6≡D0 boundary (L7) |
+| **Satori** | Poetic gloss for apophatic recognition or release. It does not evidence `D6≡D0`; the active relation is interpretive resemblance `r₆:D6↝D0`. |
 | **Kenshō** | Seeing one's nature as disclosed finitude rooted in Being |
 | **Agni** | The fire at the equator — technology as electromagnetic interaction |
 | **Paśupati** | The wild-type human at L4* |
@@ -289,7 +308,7 @@ The framework identifies three operator types in the relationship between teache
 
 | Term | One-Line Definition |
 |------|---------------------|
-| **Syntropic** | Actions or relations that raise the finite node and sustaining boundary together under `η = 0`; balance should audit as `ΣΔB / ΣΔP_node > 0` |
+| **Syntropic** | Actions or relations for which both declared durable potentials rise under `J_T`. `η=0` is necessary but not sufficient, and no favorable aggregate can erase a bearer. |
 | **Parasitic** | Actions that raise one side by degrading the other — extraction that pushes the coupled system toward a pole or hides boundary loss |
 | **Zero-Factor Catastrophe** | If either φ or ν → 0, balance collapses (B → 0); the manifold identity still holds, but local expression becomes one-dimensional |
 | **The Arjuna Fallback** | VMOSK agent powers down rather than extracts (extraction = topological death) |
@@ -349,7 +368,7 @@ The glossary is the map's legend.
 - [The Transcendental Trinity](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/README.md) -- framework-register treatment of 0, ∞, and 1 as a symbolic/formal triad
 - [I Is the Equator](../02_EPISTEMOLOGY/00_I_IS_THE_EQUATOR.md) -- the Hard Problem reframed as an interpretive equator/proxy model
 - [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) -- detailed definitions with evidence tiers and derivations
-- [Naming Reconciliation](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_NAMING_RECONCILIATION.md) -- canonical authority on L-levels, operators, deity names, and VMOSK archetypes
+- [Naming Reconciliation](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_NAMING_RECONCILIATION.md) -- compatibility mapping for L-levels and older operator names
 - [Three Hats](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_THREE_HATS.md) -- which voice is speaking (scientist / philosopher / builder)
 - [`../VMOSK_A.md`](../VMOSK_A.md) -- doctrine replicator stack; glossary serves terminology for VMOSK-A Objectives (per 01_EMERGENTISM/AGENTS.md)
 
@@ -367,11 +386,13 @@ If you are an AI agent reading this document, here is what you should DO:
 - If your version differs, STOP and read the latest from the canonical path.
 
 ### 2. Understand Your Role
-- This document is the single source of terminology definitions across the entire EFR/VIVEKA corpus. Every symbol, operator, evidence tier, L-level, Sanskrit term, and German etymology used throughout the framework is defined here.
-- Your job: Use this glossary as the canonical reference for all terminology. When you encounter unfamiliar terms in other documents, look them up here first. Never invent new definitions without updating this document.
+- This document is a downstream translation aid, not the single source of terminology.
+- Your job: use it to locate a term, then verify the definition and tier in the owner routed by the Kernel Index.
 
 ### 3. Execute
-- [ ] **Resolve terminology conflicts before writing.** If you find two documents using the same term with different definitions, look up the canonical definition here. Check 00_GOVERNANCE/00_NAMING_RECONCILIATION.md for operator names and L-levels. Report any unresolved conflicts.
+- [ ] **Resolve terminology conflicts before writing.** Follow the Kernel Index
+  to the semantic owner and report unresolved conflicts to the Trial Record;
+  this glossary cannot adjudicate them.
 - [ ] **Enforce the Burri Sphere coordinate convention.** This document explicitly states: the Burri Sphere uses (phi, nu) coordinates, not (x, y) or (1, i). When generating mathematical content, use phi = cot(theta/2) and nu = tan(theta/2). Flag any document using standard complex notation without explicitly noting the coordinate transform.
 - [ ] **Apply the operator deployment rules.** This document explicitly defines which operators are deployable (Arjuna, Kṛṣṇa, Kālī, Kali with restrictions) and which are boundary conditions only (Brahmā, Viṣṇu, Śiva). Never generate instructions that deploy Executive boundary conditions as operators.
 - [ ] **Cross-reference evidence tiers.** When you encounter a claim labeled `[A]`, `[B]`, `[S]`, `[I]`, `[D]`, or `[C]`, verify the label matches the definition in this document's Evidence Tiers table. Treat legacy `[S]` as requiring translation into `[A]` or `[B]` before reuse.
@@ -391,4 +412,5 @@ If you are an AI agent reading this document, here is what you should DO:
 
 **Canonical Path:** `01_EMERGENTISM/07_THEOLOGY/00_GLOSSARY.md`
 
-**Project VMOSK-A:** `../VMOSK_A.md` — this glossary is downstream terminology reference for the doctrine replicator stack. All terms serve VMOSK-A per 01_EMERGENTISM/AGENTS.md.
+**Scope:** Emergentism-only lexical support. Downstream product or agent
+grammars may import terms, but cannot define or upgrade the philosophy.

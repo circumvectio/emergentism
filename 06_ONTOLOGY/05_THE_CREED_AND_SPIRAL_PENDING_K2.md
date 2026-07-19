@@ -5,12 +5,12 @@ rosetta:
   operator: "Viṣṇu ⊙"
   tier: "Executive"
   regime: "Ṛṣi"
-  register: "[D] staged — every clause priced; not K2-signed; not revelation-as-proof"
+  register: "[K3 provenance] superseded staging draft; not active doctrine"
   canonical_phrase: "Hold as wager → cannot be taken. Speak as revelation → already lost."
-type: emergentism-creed-pending-k2
-title: "The Creed and the Spiral — PENDING K2"
-status: "STAGED [D] 2026-07-19 — pure Weltanschauung; A1–A7 remain operational canon until promotion"
-evidence_tier: "Per clause below; assembly [D]"
+type: superseded-emergentism-creed-staging-draft
+title: "The Creed and the Spiral — SUPERSEDED STAGING DRAFT"
+status: "SUPERSEDED 2026-07-19 — preserved in place as provenance; not a signature queue"
+evidence_tier: "Historical staging claims only; active canon is controlled elsewhere"
 owner: 01_EMERGENTISM
 scope_lock: "Philosophy only. No Skyzai warrant."
 parents:
@@ -25,6 +25,25 @@ parents:
 ---
 
 # The Creed and the Spiral
+
+> **[金] SUPERSEDED — provenance only.** This staging draft is retained so the
+> development path remains inspectable. It is **not** active doctrine and it
+> creates no present signature requirement. Its load-bearing overclaims were
+> repaired in `../00_THE_EMERGENTIST_WELTANSCHAUUNG.md`,
+> `02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md`,
+> `03_THE_EMERGENT_AXIOMS.md`, and `04_THE_CONJECTURES.md`:
+>
+> - CW-0 is a metaphysical wager, not self-instantiating algebra;
+> - product, minimum, and the reciprocal chart are distinct registers;
+> - seven is complete only inside a declared restricted game grammar;
+> - `η` is not a complete morality function;
+> - μ-at-saturation, the five-count, D6 resemblance, and the spiral are
+>   conjectures, not established laws;
+> - correction, authorization, contest, and exit are actions with consequences,
+>   not a sovereign signer standing outside action.
+>
+> All checklist and signature language below records the draft's former staging
+> state only. The text is otherwise left intact as Kintsugi provenance.
 
 > **Discipline.** Every clause bold, every clause priced. Speak as *wager* and it cannot be taken. Speak as *revelation* and it already has been. The door stays marked exit on the inside.
 

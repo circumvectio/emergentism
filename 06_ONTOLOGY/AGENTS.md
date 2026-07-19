@@ -11,6 +11,21 @@ rosetta:
 
 # 06_ONTOLOGY — The Dimensions
 
+> **[金] Ontology membrane — 2026-07-19.** Philosophical authority begins at
+> [The Emergentist Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md) and
+> [The Kernel Index](../00_THE_KERNEL_INDEX.md). This lane's active owners are
+> [Degrees-of-Freedom Ontology](02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md),
+> [Emergent Axioms](03_THE_EMERGENT_AXIOMS.md), and
+> [Crown Wager and Conjectures](04_THE_CONJECTURES.md). D6 is a non-μ
+> apophatic closure witness; its resemblance to D0 is interpretive, never
+> literal identity, causal return, or proof of a spiral. Product governance is
+> downstream execution routing and supplies no ontological warrant.
+> Holder-binding, moral, and action questions route respectively to
+> [The Five Refusals and Direction](../00_META/00_THE_FIVE_REFUSALS_AND_DIRECTION.md),
+> the [Justice owner](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md),
+> the [D4/D5 reference](../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md),
+> and the [Soul Loop](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md).
+
 ## The Canonical Mapping
 
 > **Ontology = the Śiva/Sādhu (L6) operator — the dimensions of existence.**
@@ -44,8 +59,8 @@ knowing, acting, or valuing of it?
 The Sadhu (Śiva, L6) is the dimensional observer — the localized agent whose
 being-experience is the substrate on which all knowing, doing, and valuing occur.
 The D6/apophatic closure is not nihilism: it is the discipline of not adding
-structure where structure has not been shown to exist. The dimensions are the
-floor, not the ceiling.
+positive freedom where none has been shown. It is not another μ-crossing and
+does not establish that nature has exactly six or seven ontological dimensions.
 
 ## The Rosetta Position
 
@@ -56,8 +71,10 @@ to abide in the dimensions as they are. The key apophatic move:
 - Ground ≠ model
 - Field ≠ instrument
 - Being ≠ beings
-- S² (the sphere) = the substrate geometry; `P_node = Φ × V` = the finite-node function
-- D6 (the dimensions) = what is subtracted when the map becomes mission-critical
+- S² (the sphere) = a selected model chart, never substrate or Ground;
+  `P_node=ΦV` = a selected normalized finite-node model
+- D6 = the closure witness reached after positive articulation is exhausted in
+  the scaffold; it opens no further positive freedom
 
 ## Virtue and Vice
 
@@ -98,6 +115,11 @@ lane, while per-file control rows live in `00_META/`.
 ## Read First
 
 - `README.md`
+- `../00_THE_EMERGENTIST_WELTANSCHAUUNG.md`
+- `../00_THE_KERNEL_INDEX.md`
+- `02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md`
+- `03_THE_EMERGENT_AXIOMS.md`
+- `04_THE_CONJECTURES.md`
 - `00_THE_ONTOLOGY_OF_BEING.md`
 - `00_ONTOLOGY_ACROSS_DIMENSIONS.md`
 - `00_FINITY_AS_ONTOLOGICAL_BOUNDARY.md`
@@ -115,19 +137,18 @@ lane, while per-file control rows live in `00_META/`.
 
 - Do not upgrade runtime claims without dated proof artifacts.
 - Do not treat draft specs as public-facing claims.
-- Irreversible private-DAV actions require K2 envelope staging; public-DAV/DAC actions route through PRISM or the relevant public-governance rail.
+- Consequential action requires accountable authorization. Private-DAV K2 and
+  public-DAV/DAC PRISM remain downstream execution rails; neither is a
+  worldview primitive, truth-maker, or sovereign exception.
 
-## The Five+One Constitutional Anchor
+## The Holder-Binding Constitutional Anchor
 
-The five refusals (η=0, K2, K3, K4, A7) and Ω (equator-ward direction) are
-*firing disciplines of the seven* — they apply here as the dimensions of the
-constitution itself. The dimensional observer (L6) abides within them.
-
-The constitution is **5 + 1** — five refusals **plus** Ω the directional `+1`,
-**never "six refusals"** (Ω points, it does not fence). Enumeration authority:
-[`../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md);
-geometric reading (each refusal a kept coupling):
-[`../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md).
+[The Five Refusals and Direction](../00_META/00_THE_FIVE_REFUSALS_AND_DIRECTION.md)
+is the active philosophical constitution. Its five refusals constrain the
+holder: no extraction, unaccountable consequence, erasure, captivity, or
+immunity from correction. `Ω` names durable mutual option-cone widening under
+Justice. The count is an adopted interface, not an ontological dimension or a
+consequence of sphere geometry.
 
 ---
 

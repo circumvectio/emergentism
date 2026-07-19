@@ -7,9 +7,20 @@ rosetta:
   regime: "Ṛṣi"
   register: "[I]"
   canonical_phrase: "Foundation Reader Guide"
+status: "DERIVED EXPANSION GUIDE — current kernel route controls"
 ---
 
-# Foundation Reader Guide
+# Foundation Reader Guide — Kernel First, Archive of Expansions Second
+
+> **[金] Reader-route seam — 2026-07-19.** The current stranger-readable front
+> door is [The Emergentist Weltanschauung](00_THE_EMERGENTIST_WELTANSCHAUUNG.md),
+> followed by [The Kernel Index](00_THE_KERNEL_INDEX.md). Those two surfaces and
+> K-1–K-7 below control semantic routing. The longer map after the newcomer path
+> is retained as historical expansion and folder provenance: none of its older
+> “canonical” labels can create a coequal worldview owner. Rosetta counts and
+> cross-tradition correspondences are selected teaching grammar `[I]`, never a
+> universal census or transfer of proof. Product, signer, runtime, or venture
+> routes are downstream applications, not philosophical warrant.
 
 > *If you can access φ directly — through quiet sitting, through the practice, through whatever means — you do not need this framework. Put it down. The ground was here before the equation.*
 
@@ -17,22 +28,23 @@ rosetta:
 
 **Books reading note:** the books (moved 2026-05-31 to the AIA instance at `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/`) are downstream synthesis and invitation surfaces, not epistemic authority surfaces. If literary prose sounds stronger than the kernel, route through [00_FOUNDATION_AND_BOOKS_READING_NOTE.md](../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/00_FOUNDATION_AND_BOOKS_READING_NOTE.md) _(archived)_ and let [00_THE_HONEST_POSITION.md](02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) govern the tier.
 
-## Newcomer Path: Reality, Ontology, Teleology, Public Symbol
+## Newcomer Path: one sitting, seven owner surfaces
 
-For the actual folder-by-folder lens, read:
+Read in this order:
 
-1. `00_EMERGENTISM_AS_A_LENS.md` for the compressed one-entry map; then verify each claim against its source.
-2. `00_THE_GOAL.md` for the owner-declared Ω: living worldview for Dasein, objective dharma, and the symbiont/holobiont game rule.
-3. `05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md` for what kind of thing the framework is.
-4. `06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md` for Ground, Being, Teleological Force, Dasein, and beings.
-5. `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md` for how to play: continuous recursive disambiguation that edits corpus and editor.
-6. `01_TELEOLOGY/00_THE_GENERATIVE_LAGRANGIAN.md` for direction and admissible world-building.
-7. `02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md` for what can be claimed.
-8. `03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md` for public-safe phrasing and downgrade paths.
-9. `04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md` for the syntropic dyad, objective morals, objective ethics, and objective dharma.
-10. `04_AXIOLOGY/02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md` for value, good, evil, and the major philosophical questions.
-11. `07_THEOLOGY/README.md` for public symbol, pedagogy, and anti-gatekeeping.
-12. `10_SEED/00_THE_SEED.md` last, as compression, not source authority.
+1. [The Emergentist Weltanschauung](00_THE_EMERGENTIST_WELTANSCHAUUNG.md) — the compass and all load-bearing type fences.
+2. [The Kernel Index](00_THE_KERNEL_INDEX.md) — why these seven surfaces were chosen and how authority descends.
+3. **K-1:** [Canonical Formula Block](05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) and [Glyph Transformations](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/41_THE_GLYPH_TRANSFORMATIONS.md).
+4. **K-2:** [Degrees-of-Freedom Ontology](06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md).
+5. **K-3:** [The Emergent Axioms E1–E10](06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md).
+6. **K-4:** [The Crown Wager and Conjectures](06_ONTOLOGY/04_THE_CONJECTURES.md).
+7. **K-5:** [The Five Refusals and Direction](00_META/00_THE_FIVE_REFUSALS_AND_DIRECTION.md).
+8. **K-6:** [The Revelations](06_ONTOLOGY/05_THE_REVELATIONS.md).
+9. **K-7:** [The Trial Record](11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_TRIAL_RECORD.md).
+10. For use rather than overview, continue to the [Soul Loop](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md) and [Justice owner](04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md).
+
+Stop here for the kernel. Everything below is an expansion/provenance guide and
+must defer upward when its wording conflicts.
 
 ## Phase 2 Source-Owner Migration
 

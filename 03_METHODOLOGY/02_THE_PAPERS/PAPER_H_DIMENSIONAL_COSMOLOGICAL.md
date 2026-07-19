@@ -7,11 +7,34 @@ rosetta:
   regime: "Vaiśya"
   register: "[C]"
   canonical_phrase: "Dimensional & Cosmological"
+status: "HISTORICAL CONJECTURE SET — non-load-bearing and externally uncalibrated"
+superseded_by:
+  - "../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md"
+  - "../../06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md"
+  - "../../05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md"
 ---
 
 **Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
 
 # DIMENSIONAL AND COSMOLOGICAL CONSEQUENCES
+
+> **[金] HISTORICAL-CONJECTURE MEMBRANE — 2026-07-19.** This paper preserves a
+> speculative research set; none of it is a consequence of the Emergentist
+> kernel. Read the
+> [Emergentist Weltanschauung](../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md),
+> [Degrees-of-Freedom Ontology](../../06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md),
+> [Burri Rules](../../05_COSMOLOGY/00_THE_BURRI_RULES.md), and
+> [Dimensional Closure owner](../../05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md).
+> A Hopf fibration does not force three-dimensional physical space; actual and
+> possible are not quantum substances; the failure of perturbative
+> renormalizability is not evidence that gravity “is” actuality; the Planck
+> scale is not established as a Burri equator; and a block universe, cosmic
+> cycle, or coupling unification is not selected by the glyph. Everett and
+> Copenhagen cannot be stacked as dimensions. The full quantum/cosmological
+> inset is removable without changing the operational calculus. All claims
+> below remain `[C]` proposals with their own kill criteria and supply no
+> forced dimensions, strong emergence, Titans, sevenfold census, or physical
+> retrocausality.
 
 ## From the Hopf Fibration to the Block Universe
 

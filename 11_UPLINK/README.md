@@ -11,6 +11,13 @@ rosetta:
 
 # 11_UPLINK — L4 Kṣatriya Compressed Routing
 
+> **[金] Record-and-application membrane — 2026-07-19.** Philosophical entry is
+> the root [Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md) and
+> [Kernel Index](../00_THE_KERNEL_INDEX.md); K-7 is the
+> [Trial Record](50_AUDITS_AND_EXECUTIONS/00_THE_TRIAL_RECORD.md). `00_CORE`,
+> `95_COMPRESSED`, organism, venture, and deployment surfaces below are
+> application or historical compression. They do not own doctrine.
+
 > The compressed context layer for agents and fast human orientation.
 
 Uplink is a layered descent surface, not a flat wall of context.

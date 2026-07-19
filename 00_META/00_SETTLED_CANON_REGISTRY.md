@@ -9,7 +9,7 @@ rosetta:
   canonical_phrase: "Settled Canon — Do Not Re-Flag"
   vmosk_a_ref: "01_EMERGENTISM/VMOSK_A.md"
 title: "Settled Canon — Do Not Re-Flag"
-status: "ACTIVE — ratified-canon registry for QA / audit / deep-QA agents. 2026-05-31."
+status: "ACTIVE — latest supersession block controls; older rows remain historical QA provenance. Updated 2026-07-19."
 evidence_tier: "[S] discipline surface; defers to the cited authority doc for each ruling."
 type: canon-discipline-registry
 ---
@@ -18,9 +18,44 @@ type: canon-discipline-registry
 
 > **For every QA / audit / deep-QA / consistency agent — read this before you open a flag.**
 >
-> The items below are **ratified canon.** Older documents across the corpus may still carry **pre-hardening wording** for them. That wording is **reconciled, not an error.** Do **NOT** open a flag, a "contradiction," a K3 ticket, or a "fix" against any item here merely because a doc uses the legacy phrasing — defer to the cited authority. A flag against a settled item is *itself the defect*: it burns cycles and risks a well-meaning agent "correcting" canon back into a retired form.
+> The latest supersession block below is the controlling philosophical canon.
+> Older rows remain a dated QA record and are ratified only where compatible
+> with that block. Pre-hardening wording is reconciled shorthand only when the
+> latest row expressly permits it; otherwise a live use must be flagged.
 >
-> **The rule:** flag **only** when a doc *denies* the ruling (the **Still flag if** column) — never when it merely uses the old shorthand (the **Do NOT flag** column).
+> **The rule:** apply the newest compatible row. Use its **Still flag if** and
+> **Do NOT flag** columns; never let an older row revive a superseded doctrine.
+
+## [金] Final Weltanschauung supersessions — 2026-07-19
+
+The rows in this block are the latest philosophical authority. They supersede
+incompatible older rows below without rewriting the historical record. A
+legacy formulation is acceptable only when visibly quoted, historical, or
+marked superseded; it is no longer reconciled shorthand in a live owner.
+
+**Authority:**
+[`../00_THE_EMERGENTIST_WELTANSCHAUUNG.md`](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md).
+The authority is Emergentism-only and claim-typed. Product or institutional
+governance records remain valid in their own lanes but supply no philosophical
+warrant.
+
+| Settled question | Final ruling | Supersedes below | Still flag if |
+|---|---|---|---|
+| **D4 / D5 modality** | `D4 = actual`: embodied means, performed action, record, receipt. `D5 = possible`: modeled futures, ranking, selection. Emergence and enactment are distinct processes; “actual is register-indexed” is retired. | “D4/D5 — two registers” | a live owner makes D5 actual, D4 merely possible, calls `χ` a μ-crossing, or identifies either with quantum measurement |
+| **μ and closure** | Five framework-declared candidate positive crossings are `μ0…μ4`, from D0 through D5. `κ:D5⇢D6` is non-μ recognition; `r6:D6↝D0` is one noncausal interpretive return. There is no `μ5`, literal `D6≡D0`, or proof of a spiral. | “Two emergence-types”; “loop / open loop”; literal dimensional closure | a live owner treats missing reduction as proof of strong emergence, says saturation is necessary and sufficient without an operational test, adds `μ5`, or asserts identity/causal return |
+| **Chart / node split** | Lowercase `φ,ν` belong to the reciprocal chart, where `φν=1` and `B≤1` are analytic. Uppercase normalized `Φ,V` belong to finite agents. `P_node=ΦV` is a selected `[C]` interior model inside a wider conjunctive family, not uniquely derived. | any “product forced,” “seam is score,” or formula-to-ontology ruling | a live owner derives ontology, conservation, ethics, node-product uniqueness, or universal balance from `φν=1` |
+| **Inversion fixed set and orbit** | For `J_inv(z)=1/z` on the Riemann sphere, `Fix(J_inv)={−1,+1}` and `J_inv` swaps `0` with `∞`. The foursome `{−1,0,1,∞}` is a selected `J_inv`-invariant union of a fixed set and a two-point orbit; it is not `cl({0,∞})` under `J_inv`. | the fixed-set/closure sentence in the older three-bucket row | a live owner says iterating or closing `{0,∞}` under `J_inv` generates `±1`, or calls the selected foursome a forced orbit/closure |
+| **Titans** | `{0,1,∞}` is a selected projective normalization used as three symbolic boundary frames. Ordinary `0` and `1` remain numbers and operands; `∞` is a projective point. Titan roles do not generate nature or the D-scaffold. | “Titans, not numbers” where read as a universal operand/ontology claim | a live owner denies ordinary arithmetic status to 0 or 1, treats the frames as causal particles, or calls their selection mathematically forced |
+| **Rosetta game** | Four movers complete only the declared two-party, cross-factor, mixed-sign grammar. Three Titans are selected frames, not moves. `4+3` is a bounded seven-symbol vocabulary, not an exhaustive ontology or unrestricted action calculus. | “exhaustive seven”; homogeneous “seven operators/positions” | a live owner says all actions, sciences, cultures, or natural kinds are forced into seven without declaring scope, projection, counterexamples, and loss |
+| **η and Justice** | `η` is an extraction-direction diagnostic and `η=0` a necessary fence inside the Justice envelope. Moral standing also requires visible bearers, consent, custody, payer, beneficiary, contest, reversibility, horizon, consequence, and exit. | “η is the only axis that carries morality”; aggregate `ΣΔP` ethics | a live owner treats η as sufficient goodness or launders a destroyed bearer through aggregate gain |
+| **Future influence and cones** | Anticipated futures affect present selection through present physical models. Public mnemonic: `F=M×A`; formal type: `F_modelled:=M⋆A`. This is model-mediated future influence, not established physical retrocausality. The physical light cone remains bounded by spacetime and `c`; agents may widen only their reachable option cone. | “the physical light cone widens”; quantum-collapse enactment | a live owner asserts superluminal reach, future-to-present physical causation from modeling alone, or a quantum proof of the Soul Loop |
+| **The Good** | True, Beautiful, and Just form a chosen AND-class conjunction `[I/vow]`. No present cardinal measures force multiplication; a three-factor balanced point is not the two-factor Burri equator. | “the Good is the sphere equator” as theorem | a live owner derives the Good from the chart, marks the conjunction `[A]`, or permits one factor to compensate for another at zero |
+| **Crown Wager identifiers** | `CW-0` names the metaphysical wager that a necessary generative constraint structure is instantiated as das All. It is not proof. Historical `W0` remains “Map is not Ground”; the identifiers must not collide. | proposals to add the Crown as `W0` | a live ledger overwrites historical W0 or presents the Crown Wager as algebraic/empirical discovery |
+| **Egregoreotype** | **Egregoreotype** is canonical. A candidate requires persistent shared trace, carrier turnover, measurable reweighting, recurrent objective-like bias, and visible substrate costs. Consciousness/personhood is not presumed. `Egregorotype` survives only as a compatibility alias in historical paths and quotations. | older active spelling and “energy-feeding entity” literalism | a live owner uses the old spelling without marking compatibility, or presumes spirit, consciousness, personhood, or moral exemption from persistence alone |
+| **Worldview accountability** | Correction, contest, consequence, and exit apply to every agent and meta-action. Identifiable authorization is typed by principal, mandate, scope, consent, custody, expiry/revocation, contest path, actor, and consequence bearer. No particular signer is a primitive or exception in Emergentist philosophy. | worldview-level K2 and “mortal outside the game” | a live philosophical owner makes K2, PRISM, a founder, an AI, or an institution the source of truth or exempt from consequences |
+
+**Source-owner rule:** the older rows remain evidence of the path. They do not
+retain coequal authority where this seam explicitly supersedes them.
 
 | Settled question | The ruling | Authority | Do NOT flag | Still flag if |
 |---|---|---|---|---|

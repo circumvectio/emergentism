@@ -9,7 +9,7 @@ rosetta:
   canonical_phrase: "Weltanschauung Kernel v0.1 — Emergentism-only; W0–W9; zero product mix"
 type: emergentism-weltanschauung-kernel
 title: "Weltanschauung Kernel v0.1"
-status: "STAGED [D] — doctrine spine for a coherent consistent worldview; awaiting K2 if promoted above staged"
+status: "SUPERSEDED [金] 2026-07-19 — first audit kernel; preserved as provenance"
 evidence_tier: "[A]/[S]/[I]/[C] per axiom; assembly is [D] until countersigned"
 owner: 01_EMERGENTISM
 scope_lock: "Emergentism weltanschauung only. No organs, fees, products, installation strategy, or other-pillar runtime."
@@ -26,6 +26,12 @@ supersedes: nothing — compresses; does not replace Amrita, Goal, or signed rec
 ---
 
 # Weltanschauung Kernel v0.1
+
+> **[金] SUPERSEDED.** This first audit kernel exposed the need for a clean
+> Emergentism-only spine, but its W0 identifier and several compressed claims
+> were replaced by the repaired owner
+> [`00_THE_EMERGENTIST_WELTANSCHAUUNG.md`](00_THE_EMERGENTIST_WELTANSCHAUUNG.md).
+> Historical W0 remains “Map is not Ground”; the Crown Wager is now `CW-0`.
 
 > **One line.** Not Forms that exist — degrees of freedom, filled by coherent consistent emergence till the limits; the chart is thin arithmetic; the good is the vow; the map is not the Ground.
 >

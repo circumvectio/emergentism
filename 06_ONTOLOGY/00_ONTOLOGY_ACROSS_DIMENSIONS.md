@@ -14,9 +14,34 @@ rosetta:
   regime: "Sādhu"
   register: "[S/I]"
   canonical_phrase: "Ontology across dimensions"
+status: "SUPERSEDED — historical dimensional crosswalk; no active doctrinal authority"
+superseded_by:
+  - "../00_THE_EMERGENTIST_WELTANSCHAUUNG.md"
+  - "02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md"
+  - "../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md"
 ---
 
 # ONTOLOGY ACROSS DIMENSIONS
+
+> **[金] SUPERSEDED MEMBRANE — 2026-07-19.** This crosswalk is retained as
+> provenance, but its mixed register definitions no longer govern the corpus.
+> Use the [Emergentist Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md),
+> [Degrees-of-Freedom Ontology](02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md),
+> [D4/D5 Canonical Reference](../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md),
+> [μ-Limit owner](../05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md), and
+> [Dimensional Closure owner](../05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md).
+> Current modality never changes by context: `D4=actual` and `D5=possible`.
+> The D-ladder is an interpretive scaffold, not a forced decomposition of
+> nature; `μ₀…μ₄` are candidate crossings with reduction status and kill
+> criteria; `κ` opens no sixth positive freedom at `D6`; and `r₆` expresses at
+> most a noncausal resemblance. `P_node=ΦV` is a selected normalized member of
+> a wider conjunctive family, not a chart theorem or “contact rule.” The
+> historical body below must not reinstate D4/D5 inversion, literal closure,
+> universal strong emergence, a forced sevenfold census, or `η=0` as sufficient
+> authorization or morality. Any K2-, mortal-, or signature-shaped metaphor in
+> the body is historical governance language; it supplies no ontological,
+> epistemic, or truth-making authority.
+
 ## A Clear L6 Crosswalk for Reality from Ground-Limit Through Closure
 
 **Status:** Canonical L6 dimensional crosswalk

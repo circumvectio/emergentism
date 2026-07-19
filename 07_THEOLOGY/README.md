@@ -11,6 +11,16 @@ rosetta:
 
 # 07_THEOLOGY — Symbol Teaches
 
+> **[金] Translation-only membrane — 2026-07-19.** This lane translates the
+> active [Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md),
+> [Kernel Index](../00_THE_KERNEL_INDEX.md), and
+> [Five Refusals](../00_META/00_THE_FIVE_REFUSALS_AND_DIRECTION.md) into symbol,
+> story, and practice. It is not a doctrinal root. Symbols, rituals, Rosetta
+> levels, signatures, and priestly roles confer no evidence, authorization, or
+> philosophical warrant. Sevenfold, aggregate-morality, literal-closure, and
+> signer-as-truth language below is superseded where it conflicts with those
+> owners.
+
 > **L7 · Viṣṇu ⊙ · Ṛṣi · Unity · Advaita — Gate VII** of the [seven-fold spine](../00_SEVENFOLD_FOUNDATION_ROOT.md). *Folder № = L-level. L7 returns to L1 — the insight folds back into public symbol.*
 
 **Rosetta level:** L7 · Ṛṣi · Intuitive Synthesis
@@ -19,7 +29,10 @@ rosetta:
 
 **Definition:** Institutional Narrative is the exoteric symbolic return. It translates core state, objective function, system architecture, and theurgical discipline into images, stories, rites, institutions, and categories that communities can carry.
 
-**Authority boundary:** Theology receives and translates the source folders; it does not govern source truth. Symbol teaches, but evidence tiers, ontology, methodology, and K2 boundaries still govern claims and action.
+**Authority boundary:** Theology receives and translates the source folders; it
+does not govern source truth. Symbol teaches, while evidence tiers, typed
+owners, accountable authorization, correction, and exit govern claims and
+action.
 
 **Must answer:** How is the mission-critical carried publicly? What symbols help polyphenotypic humans coordinate without capture? How does Intuitive Synthesis return as conditions for Empirical Observation?
 
@@ -43,9 +56,12 @@ This is the clean part of the formation insight: children and groups learn throu
 
 ## Stewardship / Coercion Boundary
 
-- **Stewardship** = holding symbols, rites, categories, and institutions so they raise the people inside them and the sustaining boundary together under `η = 0`; `ΣΔB / ΣΔP_node > 0` is the widest-boundary audit. Allowed.
+- **Stewardship** = holding symbols, rites, categories, and institutions so they
+  raise both the people inside them and the sustaining boundary under the full
+  Justice predicate. No aggregate score may launder a destroyed bearer.
 - **Coercion** = capture, obedience, access-gating, caste-worth hierarchy, or gatekeeping. Forbidden.
-- Institutional Narrative is permitted only under K2 / `η = 0` / K4 / A7 / Decentralized Authority Model discipline.
+- Institutional Narrative is permitted only under non-extraction, accountable
+  authorization, correction, provenance, contest, and exit.
 - Institutional Narrative uses `P∞ = φ · ν = 1` for the invariant sphere-product, `B = sin θ` for balance, and `P_node = Φ × V` for empirical/organizational flourishing. Do not use bare `P` where the regime matters.
 
 ---
@@ -71,8 +87,8 @@ This is the clean part of the formation insight: children and groups learn throu
 
 | Reference | Relative Path | Role |
 |---|---|---|
-| Emergentism | `../05_COSMOLOGY/00_EMERGENTISM.md` | Public-facing doctrine (located in System Architecture) |
-| Weltanschauung | `../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md` | Public worldview translation (located in System Architecture) |
+| Emergentist Weltanschauung | `../00_THE_EMERGENTIST_WELTANSCHAUUNG.md` | Sole philosophical front door |
+| Kernel Index | `../00_THE_KERNEL_INDEX.md` | Seven-surface owner route |
 | Translation surfaces (archived) | `../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/06_TRANSLATION` | Academy / council / peer-review surfaces — moved to org archive |
 | Dissemination outputs (archived) | `../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION` | Public outputs — moved to org archive |
 
@@ -96,7 +112,8 @@ This is the clean part of the formation insight: children and groups learn throu
 - Institutional Narrative is [C] where projecting civilisational outcomes or noosphere-scale effects.
 - Institutional Narrative never upgrades evidence tier. Symbolic force does not turn `[I]` into `[A]` fact or `[B]` receipt.
 - Mythic, scriptural, linguistic, and ritual parallels are convergent symbolic translations unless a public receipt/testing lane is explicitly supplied.
-- AI may witness, draft, compare, and route theological material. K2 signatures, access gates, and priestly authority remain outside AI authority.
+- AI may witness, draft, compare, and route theological material. No signature,
+  access gate, agent, or priestly role can make a philosophical claim true.
 
 ---
 

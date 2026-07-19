@@ -33,14 +33,22 @@ All ~100 files, grouped by role. `00_*` is a semantic flag for foundational cont
 | [`AGENTS.md`](AGENTS.md) | Binding lane law: caste dispatch, K3 archive-first charter, scope. |
 | [`CLAUDE.md`](CLAUDE.md) | Claude-tool first-touch shim (defers to AGENTS.md). |
 
-**2 · CANON (ratified — do NOT re-flag or upgrade)**
+**2 · ACTIVE CANON + CONTROLLED PROVENANCE**
+
+Active owners control their claims. Superseded rows below remain only to keep
+their historical routes legible; they are not coequal doctrine.
 
 | File | Role |
 |---|---|
-| [`00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`](00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) | The 5+1 constitution (five refusals + Ω). K2-ruled 2026-05-30. |
-| [`00_SETTLED_CANON_REGISTRY.md`](00_SETTLED_CANON_REGISTRY.md) | Registry of settled canon — consult before flagging any contradiction. |
-| [`00_THE_OPEN_CANON_COVENANT.md`](00_THE_OPEN_CANON_COVENANT.md) | How canon is committed (at-tier, never [C]→[A]). K2-ratified 2026-07-12. |
-| [`00_THE_KINTSUGI_PROTOCOL.md`](00_THE_KINTSUGI_PROTOCOL.md) | Antifragile repair discipline — attacks must strengthen the corpus. K2 'Accept' 2026-07-18. |
+| [`../00_THE_EMERGENTIST_WELTANSCHAUUNG.md`](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md) | Final philosophical owner: typed creed, emergence contract, Soul Loop, Justice, compass, live wagers, and dead forms. |
+| [`../00_THE_KERNEL_INDEX.md`](../00_THE_KERNEL_INDEX.md) | Seven chosen owner surfaces; editorial compression, never a forced natural census. |
+| [`00_THE_FIVE_REFUSALS_AND_DIRECTION.md`](00_THE_FIVE_REFUSALS_AND_DIRECTION.md) | Active Emergentism-only via negativa: five holder-binding refusals plus Ω under Justice. |
+| [`00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`](00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) | Superseded operational/historical 5+1 surface; retained as provenance, not worldview warrant. |
+| [`00_SETTLED_CANON_REGISTRY.md`](00_SETTLED_CANON_REGISTRY.md) | Registry of settled canon; its 2026-07-19 `[金]` block supersedes incompatible historical rows without erasing them. |
+| [`../06_ONTOLOGY/05_THE_REVELATIONS.md`](../06_ONTOLOGY/05_THE_REVELATIONS.md) | K-6 audit-born disclosures: earned upward from trials, never authority handed down. |
+| [`../11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_TRIAL_RECORD.md`](../11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_TRIAL_RECORD.md) | K-7 route through wins, wounds, retellings, and the open next receipt. |
+| [`00_THE_OPEN_CANON_COVENANT.md`](00_THE_OPEN_CANON_COVENANT.md) | Superseded provenance: its at-tier lesson survives in E9/RF-3; literal closure and signer authority do not. |
+| [`00_THE_KINTSUGI_PROTOCOL.md`](00_THE_KINTSUGI_PROTOCOL.md) | Subordinate visible-repair protocol: seams improve provenance, never the claim's evidence tier by themselves. |
 | [`00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md`](00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md) | O1 staging envelope — **SUPERSEDED** by the constitution; K3-preserved as the dated K2 audit trail. |
 
 **3 · TIDY-DISCIPLINE (standing cleanup boards + org standards)**
@@ -86,11 +94,11 @@ All ~100 files, grouped by role. `00_*` is a semantic flag for foundational cont
 |---|---|
 | [`IDEA_LEDGER_DIMENSIONAL_EMERGENCE_2026_07_18.md`](IDEA_LEDGER_DIMENSIONAL_EMERGENCE_2026_07_18.md) | 85 corpus ideas on the D0–D6 ladder, each at audited tier. |
 | [`99_VIEWER_IDEA_LEDGER_2026_07_18.html`](99_VIEWER_IDEA_LEDGER_2026_07_18.html) | Shareable viewer for the Idea Ledger. |
-| [`ROSETTA_D5_GAMESPACE_FORMAL_AUDIT_2026_07_18.md`](ROSETTA_D5_GAMESPACE_FORMAL_AUDIT_2026_07_18.md) | Formal-logic audit of the operator game layer; R1–R9 packet applied by typed K2 act. |
-| [`SKYZAI_FAMILY_EMERGENTIST_REFINEMENT_2026_07_18.md`](SKYZAI_FAMILY_EMERGENTIST_REFINEMENT_2026_07_18.md) | Critical pass: 11 products, 4 shared seams. |
-| [`SKYZAI_FAMILY_CONSTRUCTIVE_REFINEMENT_2026_07_18.md`](SKYZAI_FAMILY_CONSTRUCTIVE_REFINEMENT_2026_07_18.md) | Constructive pass: honest identity + value + next-emergence per product. |
-| [`SKYZAI_FAMILY_FRONTIER_LEDGER_2026_07_18.md`](SKYZAI_FAMILY_FRONTIER_LEDGER_2026_07_18.md) | Blueprint-completion grades + org verdict (graded on receipts). |
-| [`SKYZAI_PRODUCT_MANIFEST_2026_07_18.yaml`](SKYZAI_PRODUCT_MANIFEST_2026_07_18.yaml) | Machine-readable taxonomy: bucket/register/tier per component + conformance invariants. |
+| [`ROSETTA_D5_GAMESPACE_FORMAL_AUDIT_2026_07_18.md`](ROSETTA_FORMAL/ROSETTA_D5_GAMESPACE_FORMAL_AUDIT_2026_07_18.md) | Formal-logic audit of the operator game layer; R1–R9 packet applied by typed K2 act. |
+| [`SKYZAI_FAMILY_EMERGENTIST_REFINEMENT_2026_07_18.md`](SKYZAI_FAMILY/SKYZAI_FAMILY_EMERGENTIST_REFINEMENT_2026_07_18.md) | Critical pass: 11 products, 4 shared seams. |
+| [`SKYZAI_FAMILY_CONSTRUCTIVE_REFINEMENT_2026_07_18.md`](SKYZAI_FAMILY/SKYZAI_FAMILY_CONSTRUCTIVE_REFINEMENT_2026_07_18.md) | Constructive pass: honest identity + value + next-emergence per product. |
+| [`SKYZAI_FAMILY_FRONTIER_LEDGER_2026_07_18.md`](SKYZAI_FAMILY/SKYZAI_FAMILY_FRONTIER_LEDGER_2026_07_18.md) | Blueprint-completion grades + org verdict (graded on receipts). |
+| [`SKYZAI_PRODUCT_MANIFEST_2026_07_18.yaml`](SKYZAI_FAMILY/SKYZAI_PRODUCT_MANIFEST_2026_07_18.yaml) | Machine-readable taxonomy: bucket/register/tier per component + conformance invariants. |
 
 **9 · SESSION — 2026-07-19** *(audit-campaign close-out registers and K2-staged envelopes)*
 
@@ -117,21 +125,26 @@ Regenerable/frozen artifacts moved with `git mv` (history preserved, nothing del
 
 ---
 
-## Current Source Files
+## Active owners and supporting controls
 
 | File | Current Path | Role |
 |---|---|---|
-| Foundation README | `01_EMERGENTISM/README.md` | Top-level navigation |
-| Sevenfold root doctrine | `01_EMERGENTISM/00_SEVENFOLD_FOUNDATION_ROOT.md` | Canonical source of this reorganization |
+| Weltanschauung | `01_EMERGENTISM/00_THE_EMERGENTIST_WELTANSCHAUUNG.md` | Sole philosophical front door |
+| Kernel Index | `01_EMERGENTISM/00_THE_KERNEL_INDEX.md` | Canonical assembly route |
+| Emergent Axioms | `01_EMERGENTISM/06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md` | Active E1–E10 owner |
+| Wagers and graves | `01_EMERGENTISM/06_ONTOLOGY/04_THE_CONJECTURES.md` | Active conjecture and kill ledger |
+| Five Refusals | `01_EMERGENTISM/00_META/00_THE_FIVE_REFUSALS_AND_DIRECTION.md` | Active holder-binding boundary |
+| Trial Record | `01_EMERGENTISM/11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_TRIAL_RECORD.md` | Active correction and receipt route |
+| Historical sevenfold root | `01_EMERGENTISM/00_SEVENFOLD_FOUNDATION_ROOT.md` | Superseded organization map retained as provenance |
 | Cleanup audit corrections | `01_EMERGENTISM/00_META/00_CLEANUP_AUDIT_CORRECTIONS_2026_05_31.md` | Current derivative-resync ledger; use it to prioritize front-door corrections without treating it as new doctrine |
 | Translation-machine protocol | `01_EMERGENTISM/00_META/00_TRANSLATION_MACHINE_PROTOCOL.md` | Repair law for moving folder-by-folder without inflating claims |
 | D/L bridge | `01_EMERGENTISM/00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md` | Canonical distinction between dimensional scaffold and vocational ladder |
 | Subfolder standard | `01_EMERGENTISM/00_META/00_SUBFOLDER_ORGANIZATION_STANDARD.md` | Local organization law for sub-subfolders |
-| Claim matrix | `01_EMERGENTISM/03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md` | Evidence-tier mapping |
+| Historical claim matrix | `01_EMERGENTISM/03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md` | Supporting evidence map; not an owner over the kernel |
 | Formula block | `01_EMERGENTISM/05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md` | Core equations |
-| Constitutional science | `01_EMERGENTISM/03_METHODOLOGY/00_CONSTITUTIONAL_SCIENCE.md` | A1-A7 architecture |
+| Historical constitutional science | `01_EMERGENTISM/03_METHODOLOGY/00_CONSTITUTIONAL_SCIENCE.md` | A1–A7 genealogy; superseded for worldview assembly |
 | Empirical program | `01_EMERGENTISM/03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md` | Research agenda |
-| Axioms justification | `01_EMERGENTISM/03_METHODOLOGY/00_WHY_THESE_AXIOMS.md` | Why A1-A7 |
+| Historical axioms justification | `01_EMERGENTISM/03_METHODOLOGY/00_WHY_THESE_AXIOMS.md` | A1–A7 rationale retained as provenance |
 
 ---
 
@@ -139,7 +152,8 @@ Regenerable/frozen artifacts moved with `git mv` (history preserved, nothing del
 
 - META does not create doctrine. It routes doctrine.
 - META files are [S] structural unless explicitly marked otherwise.
-- The root table in `00_SEVENFOLD_FOUNDATION_ROOT.md` is the canonical routing reference.
+- The sole corpus assembly route is the root Weltanschauung front door plus the
+  Kernel Index. `00_SEVENFOLD_FOUNDATION_ROOT.md` is historical provenance.
 - `00_CLEANUP_AUDIT_CORRECTIONS_2026_05_31.md` is an audit ledger for derivative resync, not a license to restructure source-owner folders without fresh evidence.
 - Current clickable paths should prefer the physical root `01_EMERGENTISM/` or correct relative links.
 - Older aliases such as `EMERGENTISM_ORG/`, `01_FOUNDATIONS/`, `03_EVIDENCE/`, `06_TRANSLATION/`, and `07_DISSEMINATION/` are historical unless a current front door explicitly preserves them as compatibility paths.
@@ -151,7 +165,10 @@ Regenerable/frozen artifacts moved with `git mv` (history preserved, nothing del
 - Risk: Root architecture presented as hierarchy of worth. Correction: roots are filing grammar, not dharma rank.
 - Risk: META documentation used to gatekeep access. Correction: direct seeing requires no filing system.
 - Risk: Translation becomes proof by accumulation. Correction: every cross-domain move must name whether it is unified, translated, analogous, conjectural, or not claimed.
-- Risk: Anti-idolatry becomes a slogan. Correction: every high-level surface must preserve source ownership, evidence tiers, K2, Grace Exit, and the practice clause.
+- Risk: Anti-idolatry becomes a slogan. Correction: every high-level surface
+  must preserve source ownership, evidence tiers, accountable authorization,
+  correction, exit, and the practice clause. Product-specific governance rails
+  remain downstream implementation constraints, not philosophical warrant.
 
 ---
 

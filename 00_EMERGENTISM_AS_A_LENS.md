@@ -8,11 +8,17 @@ rosetta:
   register: "[S/I]"
   canonical_phrase: "Emergentism as a Lens — the worldview in one entry"
 title: "Emergentism as a Lens"
-status: "ACTIVE — front-door orientation (assembly of existing canon), updated 2026-06-12"
+status: "SUPERSEDED [金] 2026-07-19 — legacy orientation preserved for provenance"
 evidence_tier: "[S] structural assembly; [A] for cited standard mathematical identities; [I] for cross-domain mappings unless their source gives a stronger tier. This document upgrades no tier by assertion and invents no doctrine."
 ---
 
 # Emergentism as a Lens
+
+> **[金] SUPERSEDED AS FRONT DOOR.** The living, repaired orientation is
+> [`00_THE_EMERGENTIST_WELTANSCHAUUNG.md`](00_THE_EMERGENTIST_WELTANSCHAUUNG.md).
+> This prior assembly is retained to show what the final audit corrected,
+> including forced sevenfold closure, geometric ethics, worldview-level K2,
+> and formula-to-ontology inflation. It must not override the new owner.
 
 > **Discovered, not conceived.** This document invents nothing. It is an **assembly** — every statement below is quoted or distilled from the canonical source named beside it, wired together so the worldview can be entered in one place. Where a choice would require *conceiving* rather than *surfacing*, this file defers to the named canon and flags the open question; it does not decide. The doctrine is found by following coherent, consistent reason through the corpus — this page is the map to that reading, not a new claim.
 

@@ -10,11 +10,11 @@ rosetta:
 type: emergentism-weltanschauung-kernel
 version: "v0.2"
 date: 2026-07-19
-status: "[D] STAGED — critical successor-candidate to v0.1; signed receipts remain controlling"
+status: "SUPERSEDED [金] 2026-07-19 — constructive audit kernel absorbed into the final Weltanschauung"
 evidence_tier: "Each statement is typed below; this assembly remains [D]"
 owner: 01_EMERGENTISM
 scope_lock: "Emergentism-only philosophy. Skyzai runtime, products, entities, commerce, DAV/PRISM/K2 execution machinery, and cross-root propagation are excluded as warrant."
-supersedes_candidate: "00_WELTANSCHAUUNG_KERNEL_v0.1.md only if adopted; until then this is a parallel correction-candidate"
+superseded_by: "00_THE_EMERGENTIST_WELTANSCHAUUNG.md + 00_THE_KERNEL_INDEX.md"
 parents:
   - 00_THE_AMRITA.md
   - 02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md
@@ -27,6 +27,12 @@ parents:
 ---
 
 # Weltanschauung Kernel v0.2 — Emergentism only
+
+> **[金] SUPERSEDED AS FRONT DOOR; retained as derivation provenance.** Its
+> constructive repairs are incorporated into
+> [`00_THE_EMERGENTIST_WELTANSCHAUUNG.md`](00_THE_EMERGENTIST_WELTANSCHAUUNG.md),
+> which now owns the living worldview. This file remains the audit-era kernel
+> that made the clean synthesis possible.
 
 > **Plato was partially right:** particulars are intelligible through structures that exceed any one instance. But those structures need not be separately existing Forms. The stronger Emergentist candidate is a world of **constraint-structured freedoms**: systems, relations, symmetries, invariants, laws, histories, resources, and boundaries that delimit how reality may vary. Stable “forms” are not the degrees of freedom themselves; they are invariants, equivalence classes, order parameters, attractors, or robust patterns formed **across constrained degrees of freedom**.
 >

@@ -5,17 +5,30 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[A]"
+  register: "[HISTORICAL] former mixed tiers; active claims defer to E1–E10"
   canonical_phrase: "THE SEVEN AXIOMS"
+status: "SUPERSEDED — historical A1–A7 genealogy"
 ---
 
-# THE SEVEN AXIOMS
+# THE SEVEN AXIOMS — SUPERSEDED WORLDVIEW SET
 
-> **[K3 reconciliation banner — 2026-07-13, per K2-signed receipt 126 + Settled Canon Registry rows.]** The full formal-logic audit (37 agents, 12 clusters) ruled on this axiom set at tier: the **analytic kernel stands `[A]`**; several *derivational* claims below are **downgraded proved→posited or retracted** — most notably: A1's product form is selected by the Zero-Factor Catastrophe only as a member of the **AND-class** (min/CES/geo/product), not uniquely (and the manifold identity `φ·ν=1` never licenses the node catastrophe — CC-CORE-1); A3's `D6≡D0` **literal identity is retracted** (apophatic reading `[I]` survives) and the four-force map is analogy only (electroweak); A6's "three **substrates**" is retracted to three **functions**; A7 is a **wager/orientation, not a theorem**, and it *survived its own audit*. Local wording below is preserved per K3 archive-first; where it conflicts with the registry rows, **the registry rules.** Authority: `00_META/00_SETTLED_CANON_REGISTRY.md` · `11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`.
+> **[金] Supersession seam — 2026-07-19. STATUS: HISTORICAL A1–A7
+> GENEALOGY; NOT ACTIVE WORLDVIEW AXIOMS.** The active owner is
+> [The Emergent Axioms E1–E10](../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md),
+> assembled by [The Emergentist Weltanschauung](../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md)
+> and routed through [The Kernel Index](../../00_THE_KERNEL_INDEX.md). The body
+> below is preserved so the audit trail remains inspectable; no local
+> “canonical,” “definitive,” `[T]`, or `[S]` label can restore its former
+> authority. The following forms are expressly retired: literal `D6≡D0`;
+> `μ₅` or any sixth positive emergence crossing; a forced sevenfold natural
+> census; a uniquely derived product model; Titans as forced generators or
+> causal agents; missing reductions as proof of strong emergence; and geometry
+> as proof of ethics. Active typing is D4 actual / D5 possible, with candidate
+> `μ₀…μ₄`, non-μ `κ:D5→D6`, and interpretive noncausal `r₆:D6↝D0`.
 
 ## The Complete Axiom Set with Falsification Criteria
 
-**Status:** Canonical — the definitive operational axiom set (from Rosetta Stone v10.0, MF-280v2)
+**Status:** SUPERSEDED — historical A1–A7 operational genealogy
 **Date:** 2026-03-24
 **Evidence Tier:** As marked per axiom below
 **Source:** Emergentism Rosetta Stone v10.0 AXIOMS sheet
@@ -25,7 +38,9 @@ rosetta:
 
 ## The Axioms
 
-**Canonical note:** these seven axioms are the framework's **operational codification**, not its deepest primitive. The seed remains `Zero-Sum Resolution Equation`, the resolved identity remains `φ · ν = 1 on S²`, and disclosure remains primary. The axioms are the public, falsifiable scaffolding that follows.
+**Historical note:** these seven axioms record a former operational codification.
+E1–E10 now own the worldview axiom layer; claims below survive only where a
+current owner independently restates them at a current tier.
 
 **A0 namespace note:** downstream documents (K-invariant compile, derivation proofs, L-table references) also use the label `A0` for the first arithmetic theorem `(φ − ν)² ≥ 0`. `A0` is **not** part of the A1–A7 operational canon. It is the entry-point theorem used in the minimal derivation base `A0 + C0` (see [`26_THE_DERIVATION_AXIOMS.md`](26_THE_DERIVATION_AXIOMS.md)). When a document cites `A0`, it means the inequality as a public arithmetic starting point, not an eighth axiom. The K-invariant compile doc references `A0` as "evidence discipline" — this is the Honest Position's tier-enforcement rule, not a separate axiom.
 

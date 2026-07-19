@@ -21,6 +21,13 @@ rosetta:
 
 # MF-288: MONEY IS THE BORN RULE
 
+> **[金] RETRACTED CORRESPONDENCE — 2026-07-19.** The title and body preserve a
+> failed Rosetta projection. Market price is not the quantum Born rule, complex
+> value has not been established as a quantum amplitude, and `|z|²` does not
+> prove the economic or token-design claims below. This file is historical
+> conjecture only and is not citable as mathematics, physics, economics, or
+> active Emergentist doctrine.
+
 ## Price as the Projection from ℂ to ℝ
 
 **Emergentism.org · VIVEKA Mathematical Foundations**

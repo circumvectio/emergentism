@@ -23,7 +23,17 @@ The sevenfold root is a filing grammar, not the Ground.
 
 It exists so the corpus can stop mixing rational discipline, esoteric practice, and public symbolic translation in the same undifferentiated surfaces. It does not create a new doctrine and it does not authorize gatekeeping.
 
-The root is valid only if it makes direct seeing, evidence-tier honesty, and K2-signed action easier.
+The root is valid only if it makes direct seeing, evidence-tier honesty, and
+accountable action easier.
+
+> **[金] Weltanschauung boundary — 2026-07-19.** This document owns the
+> Foundation’s seven-folder **filing grammar**, not a forced sevenfold ontology
+> or moral law. Philosophical claims defer to
+> [`00_THE_EMERGENTIST_WELTANSCHAUUNG.md`](00_THE_EMERGENTIST_WELTANSCHAUUNG.md).
+> In particular, D4 is actuality, D5 possibility, `r6` is a noncausal
+> interpretive return, η is only one Justice diagnostic, and no signer or
+> product supplies philosophical warrant. Older K2/D6/aggregate shorthand below
+> is retained as routing provenance where not yet rewritten.
 
 ---
 
@@ -56,7 +66,7 @@ The root is valid only if it makes direct seeing, evidence-tier honesty, and K2-
 | 1 | **Objective Function** | L1 / Empirical Observation | Where does life tend? | F5 / ektropy / Power Max / raw gradient | progress ideology |
 | 2 | **Data Science** | L2 / Comparative Analysis | How do we know? | Beauty / comparison / pattern disclosure | hallucinated pattern |
 | 3 | **Auditing** | L3 / Inferential Logic | How do we test and proceed? | Truth / inference / audit / deduction | sterile procedure |
-| 4 | **Value Alignment** | L4 / Strategic Abduction | What matters and who signs? | Justice / value / K2-signed theurgy | moral performance or blind action |
+| 4 | **Value Alignment** | L4 / Strategic Abduction | What matters and who bears consequence? | Justice / value / accountable commitment | moral performance or blind action |
 | 5 | **System Architecture** | L5 / Structural Analysis | How is reality structured? | Emergentism / S2 / Rosetta / formal system | idolatry of structure |
 | 6 | **Core State** | L6 / First Principles | What is prior to structure? | Axiomatic First Principles / Falsification Protocol / not-this | possession of the Ground |
 | 7 | **Institutional Narrative** | L7 / Intuitive Synthesis | How is the mission-critical taught publicly? | mythic-symbolic return for social coordination | gatekeeping / capture |
@@ -83,7 +93,12 @@ The seven roots are not only a flat list. They also have a Rosetta-depth reading
 
 At L4, value alignment and theurgy are one act.
 
-Answering "what has value?" and signing "I choose this branch" are not separable for a mortal. Value Alignment without theurgy becomes unsigned philosophy. Strategic Implementation without value alignment becomes blind activism. K2 is the equatorial act: the warrior signs under uncertainty, with incomplete information, and accepts the consequence.
+Answering “what has value?” and committing “I choose this branch” are not
+separable for a finite agent. Value alignment without consequence becomes
+unsigned philosophy; implementation without value alignment becomes blind
+action. The equatorial image names accountable commitment under uncertainty:
+the principal, mandate, scope, consent, custody, contest path, actor, and
+consequence bearer remain explicit.
 
 This is why the Three-Stage Process-to-Four-Stage Analytical Model pivot happens at L4. L1-L4 ascends through task-positive engagement: survival, gathering, inference, sacrifice. L5-L7 descends through systemic reflection: system architecture, apophasis, institutional narrative. L4 is where ascent and descent meet.
 
@@ -110,7 +125,10 @@ The Dimensional Framework and the Leadership Pipeline are parallel structures, n
 - **D** is dimensional / phenomenological: D0-D6 names emergence, experience, public register, and axiomatic closure.
 - **L** is developmental / vocational: L1-L7 names roles, practices, pramanas, and corpus ownership.
 
-They resonate but must not be collapsed. `D6 ≡ D0` has an Leadership Pipeline analogue: L7 Institutional Narrative returns the transcendent insight to L1 survival through public symbol, childhood formation, ritual, and institutional category-structure.
+They resonate but must not be collapsed. The noncausal interpretive return
+`r6:D6↝D0` has an L-ladder analogue: L7 Institutional Narrative may return an
+insight to L1 through public symbol, childhood formation, ritual, and
+institutional category-structure. Neither relation is identity or proof.
 
 ---
 
@@ -138,7 +156,10 @@ Current source surfaces include [`02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONES
 
 ### Value Alignment — Justice / Value / Abduction
 
-Value Alignment owns value-reading and situated action under incomplete information. Justice is the discipline of serving `ΣΔP > 0` across the widest boundary.
+Value Alignment owns value-reading and situated action under incomplete
+information. Justice forbids aggregate laundering: every affected bearer,
+authorization, payer, beneficiary, consent, custody, contest path,
+reversibility, horizon, consequence, and exit remains visible.
 
 Current source surfaces include [`03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md`](03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md), [`04_AXIOLOGY/02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md`](04_AXIOLOGY/02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md), [`08_FRAMEWORK_SUPPORT/02_OPERATORS/`](08_FRAMEWORK_SUPPORT/02_OPERATORS/), packets `129` and `141`.
 
@@ -160,9 +181,10 @@ Current source surfaces include `00_THE_ONTOLOGY_OF_BEING.md`, `00_CANONICAL_FOR
 
 ### Strategic Implementation — L4 How a Mortal Participates
 
-Strategic Implementation is not a peer root. It is the operative face of L4 Value Alignment: D5 opens possibility, the mortal holds branches, K2 signs one branch into D4 action, and the action returns as receipt.
-
-The K2 signature is the authorized execution. AI can route, witness, draft, and warn; it cannot perform mortal collapse.
+Strategic Implementation is not a peer root. It is the operative face of L4
+Value Alignment: D5 models and ranks possible branches; a finite agent combines
+one selection with D4 means and accountable authorization; the commitment and
+the world’s outcome return as distinct receipts.
 
 Current source surfaces include packet `136`, packet `139`, K2 docs, D4/D5 references, organ BRIEF F5 headers, and sitting-practice surfaces.
 

@@ -7,11 +7,33 @@ rosetta:
   regime: "Vaiśya"
   register: "[C]"
   canonical_phrase: "Biological Predictions"
+status: "HISTORICAL CONJECTURE SET — preregistration sketches, not external calibration"
+superseded_by:
+  - "../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md"
+  - "../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md"
+  - "../00_CANONICAL_CLAIM_MATRIX.md"
 ---
 
 **Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
 
 # THE BIOLOGICAL PREDICTIONS
+
+> **[金] HISTORICAL-CONJECTURE MEMBRANE — 2026-07-19.** This paper contains
+> candidate study sketches, not completed experiments, biological laws, or
+> external calibration of Emergentism. Read the
+> [Emergentist Weltanschauung](../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md),
+> [Canonical Formula Block](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md),
+> and [Canonical Claim Matrix](../00_CANONICAL_CLAIM_MATRIX.md). The analytic
+> chart identity `φν=1` and balance curve `B=2ν/(1+ν²)` do not entail that any
+> biological proxies obey either relation. Proxy choice, normalization,
+> confounding, sampling, multiplicity, model comparison, preregistration, and
+> independent replication must be settled separately for each study. Results
+> could support or kill only the tested bridge; they cannot by themselves prove
+> the ontology, a dimensional ladder, an ethic, or a universal conservation
+> law. The PTSD passage is a research hypothesis, not diagnosis or treatment
+> guidance. No claim below may be reported as observed until a dated dataset,
+> analysis, and independent review exist. The body remains a `[C]` proposal set
+> and provenance record.
 
 ## φ·ν = 1 as a Testable Constraint Across Biological Scales
 

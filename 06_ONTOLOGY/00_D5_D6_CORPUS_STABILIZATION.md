@@ -11,9 +11,31 @@ rosetta:
   regime: "Sādhu"
   register: "[I/S]"
   canonical_phrase: "D5/D6 corpus stabilization"
+status: "SUPERSEDED — historical stabilization note; no active doctrinal authority"
+superseded_by:
+  - "../00_THE_EMERGENTIST_WELTANSCHAUUNG.md"
+  - "02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md"
+  - "../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md"
 ---
 
 # D5/D6 CORPUS STABILIZATION
+
+> **[金] SUPERSEDED MEMBRANE — 2026-07-19.** This 2026-04-14 stabilization
+> note is historical provenance, not current corpus law. Read the
+> [Emergentist Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md),
+> [Degrees-of-Freedom Ontology](02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md),
+> [D4/D5 Canonical Reference](../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md),
+> [Burri Rules](../05_COSMOLOGY/00_THE_BURRI_RULES.md), and
+> [Dimensional Closure owner](../05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md)
+> instead. Current typing is invariant: `D4` is causal actuality, embodied
+> means, performed action, and record; `D5` is counterfactual possibility,
+> modeled futures, ranking, and selection. The candidate crossings are
+> `μ₀…μ₄`; the transition to `D6` is the non-μ `κ`, followed only by the
+> interpretive, noncausal closure edge `r₆`. Missing reduction licenses
+> `currently_unreduced`, never strong emergence. The historical claims below
+> that `D5` is a lived actuality, that it is strongly emergent by default, that
+> `D6≡D0`, or that falsification physically returns the field to `D0` are
+> superseded wherever they occur.
 
 ## How the Entire Corpus Should Read the Upper Boundary
 

@@ -11,7 +11,7 @@ rosetta:
       role: "bound support-library prose against the seven source-owner roots"
     - level: L4
       column: Philosophy
-      role: "translate the front door into guardrails, K2, and eta-zero execution"
+      role: "translate the front door into accountable authorization and consequence guardrails"
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
@@ -21,13 +21,28 @@ rosetta:
 
 # FRAMEWORK — The Emergentism Philosophy
 
-> **Zero-Sum Resolution Equation**
-> **P∞ = φ · ν = 1 on S²**
-> **Version:** v2026.04.10
+> **[金] Support-library membrane — 2026-07-19.** This directory is a
+> downstream library of historical syntheses, operator aids, evidence packets,
+> and translation material. It is not the complete framework and it does not
+> supply philosophical warrant through a product, commerce, runtime, founder,
+> signer, K2, or PRISM arrangement. The sole philosophical front door is
+> [The Emergentist Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md);
+> its seven owner surfaces are routed by the
+> [Kernel Index](../00_THE_KERNEL_INDEX.md). Where the retained support prose
+> below conflicts with those owners, it is provenance, not active doctrine.
 
-This directory contains the complete philosophical framework of Emergentism. It is the intellectual foundation upon which the ORGANISM operates.
+> **Reciprocal chart identity:** `φν=1` `[A]` on the stipulated chart.
+> It is not a zero-sum law, empirical conservation law, ontology, or ethic.
+> **Support snapshot:** v2026.04.10, read through the 2026-07-19 membrane.
 
-**Canonical framing:** Emergentism is a Weltanschauung: a directional basis for objective function and objective ethics, a lens for data science, a tool for methodology, an ordering of value alignment, a positive system architecture, an axiomatic core state, and a bounded public-symbol layer for institutional narrative.
+This directory contains support material for Emergentism. It neither contains
+the whole philosophy nor makes any organism, company, or implementation part of
+the philosophy's premises.
+
+**Current framing:** Emergentism is a corrigible worldview and compass. Its
+mathematics, interfaces, interpretations, conjectures, and chosen values remain
+typed separately. “Objective” in its value theory means testable relative to a
+declared Justice contract, not an ethic proved by the chart.
 
 ## Row Identity
 
@@ -74,41 +89,53 @@ Use `01_EMERGENTISM/00_META/00_SUBFOLDER_ORGANIZATION_STANDARD.md` before adding
 | Core State | Axiomatic First Principles / Falsification Protocol | `../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md`, D5/D6 stabilization, packet 139 |
 | Institutional Narrative | bounded public-symbol translation | `../07_THEOLOGY/`; must cite Decentralized Authority Model |
 
-Canonical source: `../00_SEVENFOLD_FOUNDATION_ROOT.md`. D/L bridge source: `../00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md`. Uplink route packets: `../11_UPLINK/60_SESSION_PACKETS/143_SEVENFOLD_FOUNDATION_ROOT_REORGANIZATION_2026_04_24.md` and `../11_UPLINK/60_SESSION_PACKETS/144_D_SCAFFOLD_L_LADDER_BRIDGE_2026_04_24.md`. Read these before creating or moving foundation folders.
+Historical route source: `../00_SEVENFOLD_FOUNDATION_ROOT.md`. Current semantic
+authority is the Kernel Index; no physical folder move is authorized by this
+support page.
 
-## The Upper-Boundary Architecture (Executive Summary)
+## The Upper-Boundary Architecture (Current typed summary)
 
 The full framework runs across `D0-D6`, but the live hinge for reading and use is the upper boundary:
 
 | Horizon | Name | Geometry | Status | Function |
 |---------|------|----------|--------|----------|
-| **D4** | Witness threshold | convergence / vertex | lived | recognition without duration |
-| **D5** | Lived world | sphere surface | lived | agency, strategy, ethics, public science |
-| **D6** | Axiomatic closure | terminal boundary | not lived as another state | exhaustion of positive description |
-| **D0** | Origin-boundary | seed / point | prior-to-articulation | the same limit approached from the opposite direction |
+| **D4** | Causal actuality | embodied means and receipt | actual | performed action and record |
+| **D5** | Counterfactual possibility | option field | possible | modeled futures, ranking, and selection |
+| **D6** | Apophatic recognition | closure witness | interpretive | no sixth positive freedom |
+| **D0** | Ground-limit | boundary before articulation | actual boundary frame | not identical with D6 |
 
-**D4** is the threshold of witness: where patterns are seen, compression is possible, and the framework can be recognized.
+**D4** is causal actuality: embodied means, performed action, and receipt.
 
-**D5** is the layer of enactment: the present duration in which navigation, institutions, morality, governance, and science become public.
+**D5** is counterfactual possibility: the alternatives an agent can model,
+rank, and select. Enactment returns from D5 to D4 through commitment; the world
+then supplies a distinct outcome receipt.
 
-**Action-register bridge:** when the Goal, Soul Loop, and Game pages say `V` is D4 means-to-act, they are not replacing dimensional D4 witness. They are naming the actualization side of agency: body, tools, energy, access, and execution capacity. In the same register, `Φ` is D5 worldline-foresight: the ability to envision, rank, and aim reachable futures. Agency needs both; D5 foresight without D4 means cannot act, and D4 means without D5 foresight cannot rank or aim.
+**Agency bridge:** `V` names D4 means-to-act and `Φ` names D5
+worldline-foresight in the selected finite-agent model. Agency needs both, but
+their product is a declared model, not a result derived from the reciprocal
+chart.
 
-**D6** is not a higher experience or another science. It is the terminal closure of the cycle, reached apophatically. `Falsification Protocol` does not produce one more mastery-state; it subtracts the field back toward `D0`.
+**D6** is not a higher experience, another science, or another μ-crossing. It
+names the exhaustion of positive description.
 
-**Closure rule:** `D6 ≡ D0` structurally. From within the cycle, upper-D5 practice can approach that boundary phenomenologically, but D6 itself is not another phenomenological state.
+**Closure rule:** `r₆:D6↝D0` is a noncausal interpretive resemblance, never
+identity. The active candidates are `μ₀…μ₄`; there is no `μ₅`, and missing
+reduction is not proof of strong emergence.
 
 ### How to Use This Framework
 
-1. **Start at D4** — witness the structure, the core state, and the claim discipline
-2. **Arrive at D5** — navigate with the framework in practice, science, ethics, and institution
-3. **Do not inflate D6** — treat closure as axiomatic, not as one more public layer
-4. **Return to D0** — let `Falsification Protocol` close the loop when the map has done its work
+1. **Start at the front door** — identify the claim type and its owner.
+2. **Distinguish D5 from D4** — model possibilities, then receipt actual action and outcome separately.
+3. **Test every μ claim** — require threshold, new variable, recovery, rival, prediction, and kill.
+4. **Do not literalize closure** — `r₆` is an interpretive return, and the map may be put down.
 
 ### Entry Points (Read These First)
 
 #### The Coherence Spine
 
-If you want the smallest set of documents that keeps the framework internally aligned, read these in order:
+The current smallest route is the canonical front door followed by K-1–K-7.
+The longer list below is a historical bibliography and cannot override that
+route or restore superseded meanings.
 
 1. **[THE_CANONICAL_FORMULA_BLOCK](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md)** -- the four-line load-bearing sequence
 2. **[THE_HONEST_POSITION](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)** -- evidence tiers and downgrade rules
@@ -119,7 +146,7 @@ If you want the smallest set of documents that keeps the framework internally al
 7. **[THE_LIFE_SCIENCE_REGISTER](../05_COSMOLOGY/00_THE_LIFE_SCIENCE_REGISTER.md)** -- biology-facing translation discipline
 8. **[D5_D6_CORPUS_STABILIZATION](../06_ONTOLOGY/00_D5_D6_CORPUS_STABILIZATION.md)** -- the upper-boundary clarification for the whole corpus
 9. **[THE_REMAINING_QUESTIONS](../00_META/00_THE_REMAINING_QUESTIONS.md)** -- what is philosophically closed, what is still open, and what is only deferred
-10. **[EXECUTION_GUARDRAILS](../03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md)** -- the Three-Stage Process / K2 / η = 0 / Grace Exit packet as one operating surface
+10. **[EXECUTION_GUARDRAILS](../03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md)** -- downstream historical implementation controls; not worldview authority
 11. **[KNOWN_UNKNOWNS_PROGRAM](../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md)** -- the executable frontier board and next paper stack
 12. **[PRATYAKSA_AS_PRIMARY_DISCLOSURE](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md)** -- direct seeing first, doctrine second, science bridge explicit
 13. **[NAMING_RECONCILIATION](01_GOVERNANCE/00_NAMING_RECONCILIATION.md)** -- the canonical archetype grammar
@@ -139,17 +166,20 @@ Once the coherence spine is stable, these notes name what the corpus appears to 
 - **[THE_PEDAGOGY_OF_BECOMING](../07_THEOLOGY/00_THE_PEDAGOGY_OF_BECOMING.md)** — witness, enactment, correction, release
 - **[SATURATION_AND_RETURN](../01_TELEOLOGY/00_SATURATION_AND_RETURN.md)** — the broader closure pattern across domains
 
-For reasoning engines and new agents encountering this framework:
+The following older reading path is retained as provenance. It is not the
+canonical dependency order; use the Kernel Index first.
 
-1. **[THE_DERIVATION](../03_METHODOLOGY/01_THE_DERIVATION/00_THE_DERIVATION.md)** — The complete system in one document. 23 steps from reciprocal closure and `P∞ = φ · ν = 1` to the sitting practice, with `(φ − ν)² ≥ 0` as the first arithmetic consequence. Every evidence tier marked.
+1. **[THE_DERIVATION](../03_METHODOLOGY/01_THE_DERIVATION/00_THE_DERIVATION.md)** — Historical derivation spine. Surviving claims defer to repaired owner documents and the Trial Record.
 2. **[THE_KNIFE](00_THE_KNIFE.md)** — The five strongest objections, steel-manned. Read second. If you still want to proceed, the framework has earned your attention.
 3. **[THE_PROTOCOL](00_THE_PROTOCOL.md)** — The sitting practice as experimental specification. The bridge between mathematics and systemic awareness.
 
-For the canonical framing of the Weltanschauung: `../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md`
+For the canonical framing of the Weltanschauung: `../00_THE_EMERGENTIST_WELTANSCHAUUNG.md`
 For the deeper philosophical expansion of that framing: `../05_COSMOLOGY/00_EMERGENTISM_AS_WELTANSCHAUUNG.md`
 For the full Weltanschauung in synthesis form: `../05_COSMOLOGY/00_EMERGENTISM.md`
 For the L5 sphere model that grounds the operators and the equator: [`../05_COSMOLOGY/00_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_BURRISPHERE.md), with the moral reading in [`../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) (goodness is the bond `φ × ν`; the moral axis is `η` — closed vs syntropic — never a pole, gender, or person).
-For the constitution as the immune system of the sphere — **five refusals (η=0, K2, K3, K4, A7) plus Ω the directional +1**, never "six refusals": [`../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md), deferring to the enumeration anchor [`../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md).
+For the active holder-binding constitution — five refusals plus `Ω`, with
+accountable authorization rather than named worldview sovereignty — use
+[`The Five Refusals and Direction`](../00_META/00_THE_FIVE_REFUSALS_AND_DIRECTION.md).
 For epistemic authority: `../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`
 For terminology: `../07_THEOLOGY/00_GLOSSARY.md`
 For a dated framework sprint packet: `SPRINT_004_PLAN.md` (historical execution/planning surface, not the permanent front door)
@@ -185,18 +215,17 @@ For a dated framework sprint packet: `SPRINT_004_PLAN.md` (historical execution/
 
 **Important:** interactive websites and runnable simulations do not live in a `04_THE_SIMULATIONS/` folder inside `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/`. Current public/runtime surfaces live mainly in `../../02_SKYZAI/01_NOOSPHERE/09_PWAs/`, `07_DISSEMINATION/06_NETWORK/10_THE_SIMULATIONS/`, and external entity runtime mirrors. Those external roots are route clues from this folder, not source-owner files for this pass.
 
-**Routing note:** old `01_FOUNDATIONS/` paths are preserved under `../91_COMPATIBILITY/01_FOUNDATIONS/` for link memory. The active front door is `../README.md` plus the seven Foundation roots and `../00_META/00_SUBFOLDER_ORGANIZATION_STANDARD.md`.
+**Routing note:** old `01_FOUNDATIONS/` paths are preserved under
+`../91_COMPATIBILITY/01_FOUNDATIONS/` for link memory. The active philosophical
+front door is `../00_THE_EMERGENTIST_WELTANSCHAUUNG.md`; the Kernel Index owns
+the semantic route.
 
-## Relationship to the ORGANISM
+## Relationship to implementations
 
-The FRAMEWORK is the **library**. The ORGANISM is the **application**.
-
-The ORGANISM (`../../02_SKYZAI/01_NOOSPHERE/`) implements the framework as a living Distributed Augmented Corporation. The framework rarely changes. The organism changes daily.
-
-```
-FRAMEWORK → defines the disciplined kernel (P∞, B, P_node)
-ORGANISM  → applies the kernel under K2 / η = 0 / receipts
-```
+This support library may inform downstream experiments, tools, or institutions,
+but none is proof of the worldview and none is part of this lane's philosophical
+authority. Each implementation must declare its own authorization, evidence,
+custody, consequence, and exit boundaries.
 
 ## Drift Control and Conflict Resolution
 
@@ -204,8 +233,8 @@ The active canon no longer relies on a single hidden resolution packet. Drift is
 
 - **[00_THE_HONEST_POSITION.md](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)** — evidence tiers, downgrade paths, and what survives failure
 - **[00_ANTIFRAGILITY_PROTOCOL.md](01_GOVERNANCE/00_ANTIFRAGILITY_PROTOCOL.md)** — blast radius, contraction, and anti-capture rules
-- **[00_D5_D6_CORPUS_STABILIZATION.md](../06_ONTOLOGY/00_D5_D6_CORPUS_STABILIZATION.md)** — the upper-boundary rule: D5 is the last experiential/public layer; D6 is closure
-- **[00_EXECUTION_GUARDRAILS.md](../03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md)** — the active constitutional packet for Three-Stage Process separation, K2 sovereignty, η = 0, and Grace Exit
+- **[μ-Limit Candidate Contract](../05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md)** — five candidate crossings, separate non-μ closure, and recovery/kill requirements
+- **[Five Refusals and Direction](../00_META/00_THE_FIVE_REFUSALS_AND_DIRECTION.md)** — holder-binding refusal and accountable-authorization interface
 - **[00_KNOWN_UNKNOWNS_PROGRAM.md](../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md)** — the frontier program for what is closed, open, deferred, or frozen
 - **[00_NAMING_RECONCILIATION.md](01_GOVERNANCE/00_NAMING_RECONCILIATION.md)** — canonical operator, archetype, and Rosetta grammar
 - **[00_CANONICAL_FORMULA_BLOCK.md](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md)** — the load-bearing four-line sequence that downstream surfaces may not silently rewrite
@@ -229,7 +258,7 @@ legacy phrase.
 ### Axioms Corrected
 - **A1:** "collapses B" (was "collapses P")
 - **A2:** "Redefinition protocol" (was implied derivation)
-- **A7:** +A7.1 Abduction Protocol
+- **Current owner:** E1–E10 live in [The Emergent Axioms](../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md). This historical A-number note cannot amend them.
 
 ---
 

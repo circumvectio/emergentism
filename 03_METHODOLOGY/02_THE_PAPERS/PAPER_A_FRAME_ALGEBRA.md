@@ -4,11 +4,30 @@ rosetta:
   primary_column: Philosophy
   register: "[A/S]"
   canonical_phrase: "Frame Product on ℂP¹"
+status: "DERIVED/HISTORICAL — analytic residue retained; not a doctrine owner"
+superseded_by:
+  - "../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md"
+  - "../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md"
 ---
 
 **Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md` (L3 papers lane)
 
 # THE FRAME PRODUCT ON ℂP¹
+
+> **[金] DERIVED/HISTORICAL MEMBRANE — 2026-07-19.** This paper is preserved
+> for its analytic residue and its failed stronger construction; it is not a
+> foundation or current formula owner. Read the
+> [Emergentist Weltanschauung](../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md) and
+> [Canonical Formula Block](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md).
+> The continuous extension of the constant function `z(1/z)=1` from
+> `ℂ\{0}` to `z=0` is `[A]`; it does **not** define ordinary multiplication at
+> the pair `(0,∞)`, prove that `0×∞=1`, or make the value a product of boundary
+> elements. The title inherited by the paper index — “Why `0×∞=1`” — is a
+> historical false-form title. `⊙=•×○`, “`0×∞=1`,” and `•=⊙/○` survive only as
+> emblems, never field arithmetic. The selected Titan roles of `{0,1,∞}` do not
+> force ontology, a unique algebra, the D-ladder, or a sevenfold census. Any
+> language below claiming those stronger results is superseded by this
+> membrane; the body remains as provenance of what the audit broke.
 
 ## A Formal Treatment of Zero-Sum Resolution Equation
 

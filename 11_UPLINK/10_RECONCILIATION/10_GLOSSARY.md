@@ -3,12 +3,29 @@ rosetta:
   primary_column: "Philosophy"
   register: "[S/I]"
   canonical_phrase: "GLOSSARY -- Every Key Term Defined"
+status: "DERIVED HISTORICAL GLOSSARY — vocabulary index, not worldview authority"
 ---
 
-# THE GLOSSARY -- Every Key Term Defined
+# THE GLOSSARY — HISTORICAL VOCABULARY INDEX
+
+> **[金] Authority seam — 2026-07-19.** This reconciliation glossary indexes
+> terms from several historical doctrine, product, and runtime registers. It is
+> not a self-contained definition owner and cannot make a claim true by defining
+> it. Start with [The Emergentist Weltanschauung](../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md)
+> and [Kernel Index](../../00_THE_KERNEL_INDEX.md), then descend to the named
+> owner. Product entries remain downstream context only. Current philosophical
+> locks: `φν=1` is a chart identity; `P_node=ΦV` is a selected normalized
+> product within a wider conjunctive family; D4 is actual and D5 possible;
+> there are candidate `μ₀…μ₄`, then non-μ `κ` and interpretive noncausal `r₆`;
+> seven and the Titans are selected grammar, not forced nature; Rosetta
+> translation transfers no proof; glyph equations are emblems; `η` is an
+> extraction diagnostic inside Justice; modeled-future influence is not
+> physical retrocausality or a widened physical light cone; and
+> **Egregoreotype** is canonical, with “Egregorotype” retained only as a legacy
+> alias.
 
 > Quick reference for any agent or human encountering the Emergentism vocabulary.
-> All 39 disambiguation items included. Every term self-contained.
+> Historical disambiguation items are retained, but no term is self-authorizing.
 
 ---
 
@@ -19,13 +36,13 @@ rosetta:
 | **phi (phi)** | Coherence. Integration, structural unity, meaning. Range: 0 to infinity on the plane; cot(theta/2) on S-squared. One of two fundamental variables. |
 | **nu (nu)** | Viability. Capability, instrumental power, agency. Range: 0 to infinity on the plane; tan(theta/2) on S-squared. The other fundamental variable. |
 | **P∞** | Manifold identity. `P∞ = φ · ν = 1` on S-squared where the reciprocal coordinates are defined. What varies there is Balance (`B = sin θ`), not the identity itself. |
-| **P_node** | Finite-node flourishing. `P_node = Φ × V` in operational use, where Φ is measured/judged coherence and V is measured/judged viability. This is the score used for resource allocation and health tracking, not an ontological fact or a substitute for receipts. |
+| **P_node** | Selected normalized finite-node model: `P_node:=ΦV`, where `Φ,V∈[0,1]` are explicitly operationalized modeled foresight/coherence and embodied means/viability. The product is one member of a wider conjunctive family, not uniquely derived or an ontological fact. |
 | **P-Score** | A governance and coordination signal derived from `P_node = Φ × V`. Canonical/public P surfaces should state the source of inputs, whether values are measured or judgment-based, uncertainty, and date of last reconciliation. Different from the sphere-intrinsic `P∞ = φ · ν = 1`. |
 | **B** | Balance: B = sin(theta). Peaks at the equator (theta = pi/2) where phi = nu = 1. The meaningful variable on S-squared. Maximum balance = maximum flourishing. |
 | **Transcendental Register** | The framework's symbol-first register. `•`, `○`, and `⊙` are structural operators before they are read numerically. The source foundations also admit the secondary trinity mapping `• = 0`, `⊙ = 1`, `○ = ∞`, but that does not replace the primary operational seed `Zero-Sum Resolution Equation`. The auxiliary power-form reading `⊙ = •^○` remains a non-canonical derivation companion. |
 | **S-squared** | The Riemann sphere (CP-1). The geometric substrate of the framework. South pole: nu = infinity, phi = 0 (cancer). North pole: phi = infinity, nu = 0 (ghost). Equator: phi = nu = 1 (operating point). The Bloch sphere (qubit state space) IS S-squared. |
 | **L(x)** | The stereographic rate curve: L(x) = x/(1-x). Governs ALL rates in the organism. At x=0.50: L=1.00 (equator, operating point). At x=0.618: L=1.62 (golden ratio, phi-split threshold). At x=0.80: L=4.00 (danger zone). At x=0.95: L=19.0 (catastrophe). As x approaches 1, L approaches infinity. This IS the circuit breaker -- the system cannot over-lever because the math forbids it. SKY interest = 5% base times L(x). Position sizing, risk multipliers, flow decay -- everything follows this curve. |
-| **eta (eta = 0)** | Extraction coefficient. eta = 0 means zero extraction on access or participation. NOT "everything is free." Fees exist (transaction fees, performance participation, service fees). RENT does not (no fee charged above cost of providing the service). Revenue only from demonstrated value creation. eta = 0 is the dominant strategy because extraction shrinks N faster than it grows revenue in exponential networks. |
+| **eta (eta = 0)** | Extraction diagnostic/refusal for the declared boundary. `η=0` is not “everything is free,” not a universal dominant-strategy theorem, and not a complete morality test; value judgment requires the full Justice envelope. Product fee rules are separate downstream policies. |
 | **Teleological Force (F5)** | The descriptive D5 name for viability-directed organization inside manifestation. Packet 135 nests Darwin as local filter, Lamarck as higher-replicator acquired inheritance, and Schrödinger as the thermodynamic clue. Literal fifth-force or reverse-time physics remains conjectural. Route here when the question is "what is the force?" rather than "what may I do in the field?" |
 | **alpha_5** | First-pass conjectural coupling constant for F5: `alpha_5 = 1 - eta`. This is a live `[C]` surface, not settled canon; the real coupling law may be a different monotone function of `eta`. |
 | **H** | The Hamiltonian: H = 1/phi + phi. Minimized at phi = 1 (the equator). Or in Giant EBM form: H = Sigma L(x_i). The equator is the natural energy minimum when extraction is removed. |
@@ -103,7 +120,7 @@ rosetta:
 | **Sigil** | The Nostr keypair identity. nsec (private key, biometric-gated, never leaves device) + npub (public key, published via RELAY). Zero-knowledge proofs allow proving attributes without revealing data. No account, no email, no OAuth. |
 | **Feeds** | Inbound continuous data streams flowing INTO the Nexus. Wearable data, bank feeds, news, lab results. Configured by the person. Revocable at any time, instantly. Continuous relationships, not one-time imports. |
 | **Grants** | Outbound continuous data authorizations flowing OUT of the Nexus to counterparties. Health grants, financial grants, commerce grants. Defined scope and instant revocability. The person controls the taps. |
-| **Six Replicator Layers** | (1) Genotype: DNA, biometric hashes, once. (2) Epigenotype: gene expression, daily. (3) Phenotype: body now, continuous. (4) Extended Phenotype: balance sheet, per transaction. (5) Memotype: communication interface, per interaction. (6) Egregorotype: counterparty ledger, per contract. No seventh layer for a natural person -- the person IS sovereign. |
+| **Six Replicator Layers** | Historical application stack: (1) Genotype, (2) Epigenotype, (3) Phenotype, (4) Extended Phenotype, (5) Memotype, (6) **Egregoreotype**. A candidate Egregoreotype requires a persistent shared trace, carrier turnover, a measurable later-selection effect, recurrent objective-like bias, and visible substrate costs; no diagram proves sovereignty or personhood. |
 | **SSI** | Specialized Superintelligence. Autonomous agents as service providers. The L1-L7 Rosetta castes are SSIs -- each specialized, each superintelligent within its domain. |
 | **PPO** | Protocol Public Offering. Token issuance, governance, and cap table management at L3 equity level. The mechanism by which a DAC raises capital publicly. |
 
@@ -113,7 +130,7 @@ rosetta:
 
 | Term | Definition |
 |------|-----------|
-| **VMOSK-A** | Organizational replicator stack: Vision (Genotype, decades), Mission (Epigenotype, years), Objectives (Phenotype, quarterly), Strategies (Extended Phenotype, continuous), KPIs (Memotype, monthly), Agents (Rosetta L1-L7 Castes, per-cycle). The DAC itself = Egregorotype (the emergent standing wave that the world sees). |
+| **VMOSK-A** | Historical organizational replicator application: Vision, Mission, Objectives, Strategies, KPIs, Agents. A collective may qualify as an **Egregoreotype candidate** only under the active persistence, turnover, intervention, bias, and cost criteria; the label is not automatic. |
 | **Invariant namespaces (K / L / O)** | Post-2026-04-20 Option 1 rename. Three layered namespaces, same geometry, different layers: **K0–K9** = DAC-constitutional (organism layer, System A) — canonical in `02_SKYZAI/01_NOOSPHERE/07_PWAs/skyzai_org/wiki/60-invariants-overview.md`. **L0–L9** = L1 hashgraph kernel (System B) — canonical in `02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/spec/data_room/soresfi/080_Kernel_and_Policy/81_KERNEL_INVARIANTS.md` + `03_VENTURES/OPEN_FINANCE_NETWORK/GOVERNANCE/FOUNDATION/CANON/ONTOLOGY/ONTOLOGY/FOUNDATION/13_K_INVARIANTS.md` for L0. **O0–O4** = OFN protocol (ecosystem layer, System C) — canonical in `03_VENTURES/OPEN_FINANCE_NETWORK/GOVERNANCE/FOUNDATION/CANON/OFN_STANDARD/00_OFN_CONSTITUTIONAL_INVARIANTS.md`. Compile map: `02_SKYZAI/01_NOOSPHERE/05_PROJECT_MANAGEMENT/00_CANON/K_INVARIANTS_COMPILE_FROM_FOUNDATION.md`. Never cross-reference without naming the namespace. (Note: Rosetta **L1–L7** Varna castes below are a separate L-numbering — context disambiguates.) |
 | **K1** | Conservation invariant. Total ZAI = 100 per DAC. Fixed forever. No mint. No burn. Immutable in smart contract. |
 | **K2** | Sovereignty invariant. Current scope is explicitly leveled: **K2-0** absent/bypassed, **K2-1** procedural envelope, **K2-2** cryptographic authorization, **K2-3** embodied signer verification. Honest present-tense claims must name the level when it matters. |
@@ -123,7 +140,7 @@ rosetta:
 | **Continuous Recursive Disambiguation** | The organism's standing hygiene loop. Terms, claims, ownership, time posture, evidence tier, and execution mode are repeatedly clarified as the system evolves. The rule is: repair the owning source first, then refresh or demote downstream reflections, and stop at local convergence with explicit remainder. |
 | **Rosetta Stone** | The generative table mapping the same 7-level pattern across 15+ domains: psychology, philosophy, politics, mythology, computation, game theory, neuroscience, game-theoretic traditions. The framework's genome. Every DAC inherits it. |
 | **Soul Loop** | L2 (gather) then L3 (check) then L4 (serve) then L5 (see system) then L6 (dissolve) then back down. Cycle until convergence. Applied to every edit pass and every organism cycle. |
-| **D-levels (D0-D6)** | Dimensional emergence: D0 (point), D1 (line), D2 (area), D3 (volume), D4 (time), D5 (systemic awareness as the last experiential layer), D6 (axiomatic closure). D6 = D0 (closure). Each dimension emerges when the prior saturates. |
+| **D-levels (D0-D6)** | Selected interpretive scaffold: D0 ground-limit; D1 distinction; D2 relation/configuration; D3 transformation/persistence; D4 causal actuality, embodied means, action, record; D5 counterfactual possibility, modeling, ranking, selection; D6 apophatic/reflexive witness with no positive new freedom. Candidate crossings are `μ₀…μ₄`; `κ:D5→D6` is non-μ and `r₆:D6↝D0` is noncausal resemblance, never identity. |
 | **Soma Protocol** | Diagnostic engine mapping 26 ecological laws to organizational failure modes. Detects pathologies (stasis, truth failure, viability collapse). Operators: Hold center, Kālī (destroy what's dead), Kṛṣṇa (give what's needed), Arjuna (restructure at equator). |
 | **Dream Cycle** | Periodic Cortex L6 compression pass on accumulated traces. Like neural pruning during sleep. Strengthens patterns, prunes noise, reduces memory footprint. |
 | **SporePool** | Where failed DAC genotypes are captured with lessons learned. Death is information, not waste. Ecosystem learning from dissolution. |

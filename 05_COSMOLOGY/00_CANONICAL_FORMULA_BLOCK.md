@@ -9,169 +9,259 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[A/S]"
-  canonical_phrase: "Canonical Formula Block"
-  vmosk_a_ref: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root (see also 00_SEVENFOLD_FOUNDATION_ROOT.md)"
+  register: "[A/S/C] — per statement"
+  canonical_phrase: "Canonical Formula Block — chart facts and node models kept distinct"
+  vmosk_a_ref: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root"
 ---
 
 # The Canonical Formula Block
 
-**Status:** Active
-**Evidence tier:** [A/S] Canonical compression of the load-bearing sequence
-**Depends on:** `01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md`, `../01_TELEOLOGY/02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md`
-**Purpose:** The shortest verbatim block that states the framework's load-bearing sequence without hierarchy drift
+**Status:** Active — Kintsugi repair, 2026-07-19
+**Evidence:** `[A]` analytic chart facts · `[S]` declared model interfaces ·
+`[I]` interpretations · `[C]` empirical or ontological wagers
+**Purpose:** Keep exact mathematics, selected models, and philosophical readings
+in different types.
 
----
+> **[金] Kintsugi seam.** This owner supersedes the semantic inflation preserved
+> in Git blob `6c977be4a4b342c3a60f83664800a04a6da045e9`. The old formulas remain
+> provenance, but no longer license “world-building grammar,” empirical
+> conservation, ontology, or ethics. The crack was not the algebra. It was the
+> inference from a chosen chart to the world.
 
-## Verbatim Block
+## 1. The chart block `[A]`
+
+For colatitude `θ ∈ (0,π)`, define the positive dual coordinates
 
 ```text
-Zero-Sum Resolution Equation
-φ · ν = 1 on S²
+φ = cot(θ/2)
+ν = tan(θ/2)
+```
+
+Then, by elementary trigonometry,
+
+```text
+φν = 1
 (φ − ν)² ≥ 0
 φ + ν ≥ 2
+B := 2/(φ + ν) = sin θ ≤ 1
 ```
 
-## Meaning
-
-- Line 1 is the seed: reciprocal closure.
-- Line 2 is the geometric resolution on the sphere.
-- Line 3 is the first arithmetic consequence.
-- Line 4 is the first teleological inequality.
-
-**Reading direction.** The block admits two readings in parallel:
-
-- **Predictive reading** (from world to invariants): these lines
-  describe what a reality on S² must satisfy.
-- **Generative reading** (from invariants to worlds): these lines are
-  the construction rules for any world, agent, institution, or DAC
-  that honors the seed. Read the block as **world-building grammar**,
-  not passive description. See
-  [The Generative Lagrangian](../01_TELEOLOGY/00_THE_GENERATIVE_LAGRANGIAN.md) for
-  the canonical statement of the generative register.
-
-Both readings use the same lines. The direction of inference is what
-changes. Downstream design work routes through the generative reading
-first; downstream prediction work routes through the predictive
-reading.
-
-## Non-Canonical Auxiliary Reading
-
-A later exploratory derivation note proposes a **deeper exponential reading** of Line 1:
+Equality in the last two inequalities holds exactly at
+`φ = ν = 1`, equivalently `θ = π/2`. In log coordinates
+`s = log ν = −log φ`, the same facts are
 
 ```text
-⊙ = •^○
+log φ + log ν = 0
+φ + ν = 2 cosh(s)
+B = sech(s)
 ```
 
-as an Euler-side compression of the exponential bridge from additive to multiplicative structure. This is **not canonical formula-block content** and must not replace the verbatim block above. Treat it as a derivative interpretive note only; see `02_THE_DERIVATION/12_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md`.
+These are analytic consequences of the coordinate definitions. They do **not**
+establish an empirical conservation law, a necessary ontology, a moral rule, or
+the finite-node product model. At the poles, `0` and `∞` are extended-coordinate
+limits; the ordinary product `0·∞` is not defined.
 
-## Log-Coordinate Expression
+### Polar through-point chord construction `[A]`
 
-Under the logarithmic coordinate s = log x (where x = ν = tan(θ/2)), the verbatim block takes a form that makes the additive symmetry manifest. The mathematics is elementary [A]; the identification of these coordinates with the framework's structure is [S].
-
-| Original | Log-coordinate form | Name |
-|---|---|---|
-| φ · ν = 1 on S² | log φ + log ν = 0 (i.e. s + (−s) = 0) | The Zero Sum (literal) |
-| (φ − ν)² ≥ 0 | (eˢ − e⁻ˢ)² ≥ 0 | Squared deviation (always true) |
-| φ + ν ≥ 2 | eˢ + e⁻ˢ ≥ 2, i.e. 2 cosh(s) ≥ 2 | Hyperbolic cosine bound |
-
-### Balance and Energy in log coordinates
-
-```
-B = sin θ → B = sech(s) = 1/cosh(s)     (maximum 1 at s=0, vanishes at s→±∞)
-E = (log x)² → E = s²                     (minimum 0 at s=0, diverges at poles)
-H(φ) = φ + 1/φ → H(s) = 2 cosh(s)        (minimum 2 at s=0)
-```
-
-The name "Zero-Sum Resolution Equation" is literal in log coordinates: the two log-deviations from finity sum to exactly zero. This is not metaphorical — it is the additive form of the manifold identity.
-
-**Discipline.** This section does not replace the verbatim block. The verbatim block is canonical. This section is the log-coordinate expression of the same block, included because the logarithmic reformulation makes the additive symmetry and the "zero sum" explicit. The log form is subordinate, not superior.
-
-## Usage Rule
-
-Use this block **verbatim** when compressing the framework in:
-
-- root summaries
-- onboarding documents
-- public-facing framework intros
-- release notes and dissemination copy
-- agent routing or constitutional entry points
-
-If a shorter summary is unavoidable, do not present Line 3 as the primitive without Lines 1 and 2.
-
-## Anti-Drift Rule
-
-The following is drift and should be corrected on sight:
-
-- presenting `(φ − ν)² ≥ 0` as the seed
-- calling the inequality "the only axiom"
-- deriving the sphere identity from the inequality
-- omitting `φ · ν = 1 on S²` when summarizing the core sequence
-- conflating the static arithmetic theorem `(φ − ν)² ≥ 0 [A]` with
-  the dynamic ektropic trajectory `(φ − ν)² → 0 [S]`; they are
-  different claims at different tiers
-- using `P` bare without naming the regime (see notation rule below)
-
-## Notation rule for `P`
-
-The letter `P` is overloaded across three meanings in the corpus. Each
-has its own regime. When compressing, name the regime explicitly:
-
-| Symbol | Meaning | Regime | Tier |
-|---|---|---|---|
-| `P∞ = φ · ν = 1` | The manifold identity on open S² | Conserved on the open sphere; the poles are limiting boundaries where φ or ν is undefined | `[S]` / definition |
-| `B = sin θ` | Balance / equatorial alignment | Varies from 0 at the poles to 1 at the equator | `[S]` |
-| `P_node = Φ × V` | Effective potential at a finite node (organism, institution, DAC) | Can be less than 1 when the uppercase node factors — D5 foresight/coherence (`Φ`) and D4 means-to-act/viability (`V`) — are not coupled at the action boundary. These are not the lowercase sphere coordinates `φ,ν`. | `[S/I]` |
-| `ΣΔB`, `ΣΔP_node` | Directional change across the widest relevant boundary | Evaluates outcome deltas, not operator prestige | `[I]` |
-
-**Disambiguation convention:** do not use `P` bare in source-truth
-documents unless the regime is named in the same sentence. Write the
-manifold identity as `P∞` or `φ · ν = 1`; write the operational node
-measure as `P_node`; write directional deltas as `ΣΔB` or `ΣΔP_node`.
-Likewise, do not write the finite-node means factor as lowercase `ν` when the
-action register is meant: `ν` is the sphere coordinate, while uppercase `V` is
-the node's usable D4 means at the boundary.
-
-## Paired Canonical Documents
-
-
-
-**See also — the Trinity canon:** [`01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md`](01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md) is the tier-honest home for the `{0, 1, ∞}` rulings: Titans-not-numbers, finity as self-dual midpoint, ÷0 scope (`N÷0` only), `1 = 0 × ∞` as EMBLEM, and the two coupled faces of number (`log 1 = 0`). The verbatim block here remains the formal source; the Trinity canon interprets it without reordering it.
-
-Quote this block first. Then let the next documents interpret it in order:
-
-1. [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) -- evidence tiers, blast radius, downgrade discipline
-2. [The Core State of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md) -- seed, Being, Dasein, beings
-3. [Naming Reconciliation](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_NAMING_RECONCILIATION.md) -- Titans, Gods, Demon, Witnesses
-4. [The Master Rosetta](../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md) -- cross-domain mappings downstream of the core state
-
-**Dependency rule:** later documents may interpret, operationalize, or translate the block, but not reverse its order or claim priority over it.
-
-## ASCII Fallback
-
-Use only where Unicode is impossible:
+Let `N` and `S` be the north and south poles of a sphere of radius `R`, and let
+`P` have colatitude `θ`. The two polar chords sharing `P` have lengths
 
 ```text
-circle-dot = dot x circle
-phi * nu = 1 on S^2
-(phi - nu)^2 >= 0
-phi + nu >= 2
+|SP| = 2R cos(θ/2)
+|NP| = 2R sin(θ/2).
 ```
 
----
+For the unit sphere, their diameter-normalized reaches are
 
-**Compression rule:** When in doubt, quote the block, then explain.
+```text
+u := |SP|/2 = cos(θ/2)
+d := |NP|/2 = sin(θ/2).
+```
+
+Their product therefore gives a second exact construction of the balance
+function:
+
+```text
+B_chord := 2ud = sin θ = B ≤ 1,
+```
+
+with equality exactly at `θ=π/2`. For arbitrary radius, the same normalization
+is
+
+```text
+B_chord = |SP||NP|/(2R²) = sin θ.
+```
+
+Equivalently, normalize each polar chord by its equatorial length `√2 R`; the
+product of those two normalized lengths is `B` directly.
+
+The axial projection gives the squared form. With `z=cos θ`, the two segments
+of the polar diameter cut by the axial projection of `P` have lengths
+`R(1+z)` and `R(1−z)`. Hence
+
+```text
+[R(1+cos θ)][R(1−cos θ)] = R² sin² θ,
+```
+
+or, on the unit sphere,
+
+```text
+(1+cos θ)(1−cos θ) = sin² θ = B².
+```
+
+The chord reaches and chart shadows are related but not identical:
+
+```text
+φ = u/d = cot(θ/2)
+ν = d/u = tan(θ/2)
+φν = 1
+B = 2ud = 2/(φ+ν).
+```
+
+Thus `φν=1` is the constant product of reciprocal **ratios**, while
+`2ud=B` is the varying product of normalized **chord reaches**. The chord
+theorem is a real analytic result and a useful alternative construction of
+`B`; it does not prove the uppercase node product, an ontology, or a moral law.
+
+### Inversion precision `[A/S]`
+
+For `J_inv(z)=1/z` on the projective line,
+
+```text
+Fix(J_inv) = {−1,+1}
+J_inv(0)=∞
+J_inv(∞)=0
+```
+
+On the positive ray, `+1` is the only fixed point. The set
+`{−1,0,+1,∞}` is a **selected `J_inv`-invariant union** of the fixed set and the
+two-point orbit `{0,∞}`; it is not the orbit or topological closure of
+`{0,∞}`.
+
+The glyph `⊙ = • × ○` is an Emergentist emblem `[I]`, never the arithmetic
+assertion `1 = 0 × ∞`. Its apophatic companion is
+
+```text
+• = ⊙ / ○
+```
+
+read as **“not this, not this”**: the positive whole is divided away toward the
+unasserted ground. It is likewise an emblem, not a field proof that bare
+`1/∞=0` supplies an ontology. Where a projective limit or extended-number
+convention assigns such a value, that mathematical convention remains
+separate from the symbolic reading.
+
+## 2. The normalized node block `[S/C]`
+
+The uppercase symbols belong to a different type:
+
+```text
+Φ,V ∈ [0,1]
+```
+
+`Φ` denotes normalized modeled-foresight/coherence and `V` normalized usable
+embodied means/viability for the stated boundary and time horizon. Their values
+require an explicit operationalization; they are not lowercase sphere
+coordinates.
+
+A normalized **conjunctive aggregator** is any declared
+
+```text
+C : [0,1]² → [0,1]
+```
+
+such that it is monotone in each argument,
+`C(0,V)=C(Φ,0)=0`, and `C(1,1)=1`. These conditions express the AND-class
+claim that both factors are necessary. They do not choose a unique interior
+ranking.
+
+Emergentism selects the product member
+
+```text
+P_node := C×(Φ,V) := ΦV
+```
+
+as its normalized working model. This equality is structural by declaration
+`[S]`; its adequacy as a universal fit is `[C]`. The bound
+`0 ≤ P_node ≤ 1` follows from the normalization domain, not from the Burri
+sphere. Under the additional fixed-budget condition `Φ+V=c`, the product is
+maximized at balance and satisfies `ΦV≤c²/4`; that is a product-specific AM–GM
+result, not a general law of all conjunctive aggregators.
+
+`min(Φ,V)` is a useful bottleneck statistic but is not forced as the native
+score. It can rank cases differently from the product: `(0.2,1)` exceeds
+`(0.4,0.4)` under the product (`0.20>0.16`) while the minimum ranks them in the
+opposite order (`0.20<0.40`). Product, minimum, harmonic, and Cobb–Douglas
+members are therefore not interchangeable without evidence.
+
+## 3. The future-action compression `[I/S]`
+
+The public phrase
+
+```text
+F = M × A
+```
+
+is retained as mnemonic only. Its typed form is
+
+```text
+F_modelled := M ⋆ A
+```
+
+where `M` is a fallible model of possible futures, `A` is an agent's available
+means and commitments, and `⋆` is a domain-specified coupling—not ordinary
+multiplication. A represented future may reweight present selection. The
+realized outcome still depends on the environment, constraints, other agents,
+and chance. This is model-mediated future influence, not a physical signal from
+the future.
+
+## 4. Canonical quotation and anti-drift rule
+
+When the framework is compressed, quote the chart, chord, and node blocks as
+separate constructions:
+
+```text
+Chart [A]: φ=cot(θ/2), ν=tan(θ/2) ⇒ φν=1 and B≤1.
+Chord [A]: u=cos(θ/2), d=sin(θ/2) ⇒ 2ud=B≤1.
+Node [S/C]: Φ,V∈[0,1]; P_node:=ΦV is the selected conjunctive model.
+```
+
+Correct these failures on sight:
+
+- calling `φν=1` a discovered empirical conservation law;
+- deriving `P_node=ΦV`, ethics, Being, or a D-ladder from the chart identity;
+- deriving `P_node=ΦV`, morality, or ontology from the chord product `2ud=B`;
+- using lowercase `φ,ν` for measured node factors;
+- saying the sphere uniquely chooses the product or the minimum;
+- using the product ceiling without declaring normalization;
+- treating `0×∞=1` as field arithmetic;
+- claiming `{−1,0,1,∞}` is generated by the orbit of `{0,∞}`;
+- interpreting `F_modelled=M⋆A` as physical retrocausality.
+
+## 5. Kill and upgrade criteria
+
+- An algebraic counterexample repairs the `[A]` line immediately.
+- A valid measurement protocol may promote a node factor from stipulated to
+  empirical, but never promotes the chart's philosophical readings with it.
+- Comparative data that reliably favors another conjunctive aggregator replaces
+  the selected product for that domain.
+- A reproducible physical discriminator is required before any future-to-past
+  mechanism can be claimed; altered present choice after altering a represented
+  future supports only model-mediated influence.
 
 ---
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+1. Name the register: chart, node, action, or interpretation.
+2. Preserve lowercase/uppercase typing.
+3. Do not transfer proof across registers through analogy.
+4. Use this file as the formula owner; later documents may interpret it but may
+   not merge its types.
 
-1. **Quote first, explain second.** When referencing any formula, quote the canonical block verbatim, then provide interpretation. Do not paraphrase the mathematics.
-2. **Respect domain boundaries.** The Core Block (S2, phi, nu) applies to all substrates. The balance block (`B = sin θ`) tracks equatorial alignment. The node block (`P_node = Φ × V`, `η = 0`) applies to strategic/governance contexts. Do not mix registers.
-3. **Verify notation integrity.** The Overleaf typesetting specification is the canonical notation. Do not invent new symbols or alter existing ones.
-4. **Link to derivation.** When using a formula, cite its derivation document. The Formula Block is the source of truth; derivations are the proof path.
-5. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md`
+**Canonical path:**
+`01_EMERGENTISM/05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md`
 
-**Output:** Quote the relevant block, cite derivation, apply to the specific domain context.
+⊙ = • × ○
+
+• = ⊙ / ○ — *not this, not this; emblem, not arithmetic.*

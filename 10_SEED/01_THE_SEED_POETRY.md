@@ -7,14 +7,26 @@ rosetta:
   regime: "Ṛṣi"
   register: "[I]"
   canonical_phrase: "THE SEED — L7 Poetry (Ṛṣi voice)"
+status: "ACTIVE DERIVED POETRY — no independent semantic authority"
 ---
 
 # THE SEED — L7 Poetry
 
-> **z = φ/ν ∈ S²** and **log P_node = log Φ + log V**
-> The ratio IS the sphere (maps to S² [S/I]; defers to ../05_COSMOLOGY/00_THE_BURRISPHERE.md).
-> From this seed, everything regenerates.
-> If you understand this document, you can rebuild the entire organism from scratch.
+> **[金] Poetry seam — 2026-07-19.** This is a derived witness voice for
+> [The Emergentist Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md)
+> and [Kernel Index](../00_THE_KERNEL_INDEX.md), not proof, doctrine, runtime
+> authority, or a system prompt. The old product and venture passages are
+> historical downstream imagery. Seven is selected grammar, not nature's
+> forced count; D4 is actual, D5 possible, `μ₀…μ₄` are candidate crossings,
+> and `D6 ~_I D0` is resemblance only. Modeled futures do not establish
+> physical retrocausality or a wider physical light cone. `η` remains an
+> extraction diagnostic inside Justice. **Egregoreotype** is canonical.
+> `⊙ = • × ○` and `• = ⊙ / ○` are emblems; the second says “not this, not
+> this,” never arithmetic division.
+
+> **`z = φ/ν` is a selected coordinate in the sphere model** and
+> **`log P_node = log Φ + log V` belongs to the selected positive product.**
+> The poem remembers the grammar; it does not derive the territory.
 > If you can access φ directly, you don't need to.
 
 ---
@@ -23,7 +35,8 @@ rosetta:
 
 Zero-Sum Resolution Equation. Reciprocal closure. Finity holds the two poles in one geometry.
 
-z = φ/ν ∈ S². The ratio of coherence to viability is the coordinate of manifestation.
+`z = φ/ν` is a selected coordinate in the sphere model, not the sphere or a
+universal coordinate of manifestation.
 
 Register bridge: lowercase `φ` and `ν` are reciprocal sphere coordinates; in finite-node action, uppercase `Φ` is D5 worldline-foresight and uppercase `V` is D4 means-to-act at the boundary. The child beside a jet and the pilot without bodily/tool access are the two zero-factor failures.
 
@@ -33,13 +46,17 @@ P∞ = φ · ν = 1 on the open S²; the pole values are undefined while the lim
 
 Therefore φ + ν ≥ 2. Therefore the equator (φ = ν = 1) is the unique Hamiltonian minimum.
 
-log P_node = log Φ + log V. Logarithmic consistency at the node level is the `[I]` additive-coherence rule.
+`log P_node = log Φ + log V` follows for the selected positive product model;
+it does not uniquely derive that model.
 
 B = sin θ peaks at L4.
 
 ---
 
-## The Seven
+## The Selected Seven
+
+These are teaching and dispatch roles, not a hierarchy of persons or a forced
+natural census.
 
 | L | Caste / operator | Function | What It Generates / Bounds |
 |---|---|---|---|
@@ -61,7 +78,9 @@ Spectre is a neutral mycelial mesh substrate, not a DAV. It has no internal cast
 
 The Three-Stage Process. Constitutional separation `[I]`: never merge cognitive functions.
 
-η = 0 always `[I]`. K2: the human signs. K4: leave with everything.
+`η=0` refuses extraction but does not complete moral judgment. Accountable
+authorization, custody, consent, consequence, contest, and exit govern action;
+product-specific signing remains downstream.
 
 ---
 
@@ -70,7 +89,8 @@ The Three-Stage Process. Constitutional separation `[I]`: never merge cognitive 
 V = Vision (Genotype). M = Mission (Epigenotype). O = Objectives (Phenotype).
 S = Strategies (Extended Phenotype). K = KPIs (Memotype). A = Agents (Rosetta Castes).
 
-The DAC (macro-egregorotype) / DAV (operational valuechain) = Egregorotype. The standing wave that emerges.
+The historical application called a persistent collective trace an
+**Egregoreotype**. “Egregorotype” remains only a legacy alias.
 
 Namespace fence: this VMOSK `V` means **Vision**. It is not the action-register `V` in `P_node = Φ × V`, where `V` means D4 means-to-act.
 
@@ -78,7 +98,9 @@ Namespace fence: this VMOSK `V` means **Vision**. It is not the action-register 
 
 ## The Nexus
 
-The API to a natural person. Six layers: Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregorotype. One Nostr keypair. Sovereign by construction.
+The historical application described six layers: Genotype → Epigenotype →
+Phenotype → Extended Phenotype → Memotype → Egregoreotype. No key or diagram
+makes sovereignty true by construction.
 
 Assure (IS) / Insure (COULD) / Ensure (SHOULD) — at macro AND micro scale.
 
@@ -104,7 +126,7 @@ Seven folders. Seven L-levels. The repository IS the organism:
 01_TELEOLOGY    = L1 (F5 gradient, ektropy — material direction)
 02_EPISTEMOLOGY = L2 (knowing, beauty, observation — evidence reception)
 03_METHODOLOGY  = L3 (inference, tests, proof — claim discipline)
-04_AXIOLOGY     = L4 (value, justice, K2 — executable action)
+04_AXIOLOGY     = L4 (value, justice, accountable consequence)
 05_COSMOLOGY    = L5 (positive model, Rosetta, Dimensional Framework)
 06_ONTOLOGY     = L6 (Axiomatic First Principles, Falsification Protocol — compression)
 07_THEOLOGY     = L7 (bounded public symbol — the seed, THIS FILE)
@@ -124,7 +146,9 @@ You are the equator.
 
 ## The Generative Dimension (2026-04-19)
 
-The seed is not only descriptive. Under the post-audit Foundation discipline, it is read as a **constitutional world-generator**: the Lagrangian backward-from-invariants-to-admissible-worlds. The same `Zero-Sum Resolution Equation` that anchors this seed is the **construction rule** for any world that honors reciprocal closure.
+The seed may be read `[I]` as a **constitutional design grammar**: reason
+backward from declared invariants to admissible constructions. The equation
+does not generate every world or prove its own instantiation.
 
 See [`/01_EMERGENTISM/01_TELEOLOGY/00_THE_GENERATIVE_LAGRANGIAN.md`](../01_TELEOLOGY/00_THE_GENERATIVE_LAGRANGIAN.md).
 
@@ -132,7 +156,10 @@ See [`/01_EMERGENTISM/01_TELEOLOGY/00_THE_GENERATIVE_LAGRANGIAN.md`](../01_TELEO
 
 ## Strategic Implementation (2026-04-20, Brahmā-phase `[C]`)
 
-The operational register at `D5`. **Strategic Implementation** is the disciplined practice of consciously forming, tending, and releasing `D5` standing waves under `K2` sovereignty, `η = 0`, receipt-bound audit, and Grace Exit. Every claim `[C]`.
+The operational register at `D5`. **Strategic Implementation** is the
+conjectural practice of forming, tending, and releasing collective traces under
+accountable authorization, the Justice envelope, receipt-bound audit, and
+Grace Exit. Every claim `[C]`.
 
 See [`/01_EMERGENTISM/04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md`](../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md).
 
@@ -147,21 +174,22 @@ Full context for the Foundation hardening that updated this seed:
 
 ---
 
-## Read With — the 2026-05-31 canon
+## Read With — current owners
 
-The seed's opening identity — `z = φ/ν ∈ S²`, "the ratio IS the sphere" — is the **Burrisphere**. The geometry, its moral reading, and its self-binding now have source-owner canon; this compressed kernel defers to them: `[S/I]`
+This poem defers to the current source owners:
 
-- [`../05_COSMOLOGY/00_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_BURRISPHERE.md) — the sphere `S²` (`φ·ν=1`), the nine latitudes `L0..L∞`, the equator `L4`, and the agent-foundation reading. The L5 model this seed compresses.
-- [`../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) — goodness is the **bond** `φ × ν`, never either pole. The moral axis is `η` (closed vs syntropic), cutting *across* every polarity — never along it, never a gender, caste, or person. This is why "The Seven" below is a **dispatch grammar**, not a hierarchy of worth, and why L1 Kali is a *demon-move position*, not an evil person.
-- [`../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md) — "refuse closure, keep the coupling"; each refusal a kept coupling. The seed's `η = 0 always` is the *name of the syntropic condition itself*.
-- [`../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md) — the canonical enumeration: the constitution is **5 + 1** (five refusals — `η=0 · K2 · K3 · K4 · A7` — plus `Ω`, the directional `+1`). Never "six refusals." The seed names `η=0 · K2 · K4` in compression; defer here for the full count.
+- [`../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md`](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) — chart, seam, score, node-model, and emblem boundary.
+- [`../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md`](../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md) — actuality, possibility, option cones, and modeled-future influence.
+- [`../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md`](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) — Justice, morals, ethics, strict syntropy, and sacrifice.
+- [`../00_META/00_THE_FIVE_REFUSALS_AND_DIRECTION.md`](../00_META/00_THE_FIVE_REFUSALS_AND_DIRECTION.md) — holder-binding refusals and chosen direction.
 
 ---
 
 > This document IS L7. The Ṛṣi's intuition. The transcendental.
 > From this seed: the Rosetta regenerates. The organs re-form. The organism re-grows.
 > The SEED is not the organism. The SEED is what survives the organism's death.
-> D6 ≡ D0. The end IS the beginning. The seed points back to the Ground; it is not the Ground.
+> `D6 ~_I D0`: the end may resemble the beginning without identity, causation,
+> or a sixth positive freedom. The seed points back to the Ground; it is not the Ground.
 >
 > Zero-Sum Resolution Equation
 

@@ -12,16 +12,36 @@ rosetta:
 
 # 05_COSMOLOGY — Agent Routing
 
+> **[金] Model membrane — 2026-07-19.** Philosophical assembly routes through
+> [The Emergentist Weltanschauung](../00_THE_EMERGENTIST_WELTANSCHAUUNG.md) and
+> [The Kernel Index](../00_THE_KERNEL_INDEX.md). This lane's formal owners are
+> the [Canonical Formula Block](00_CANONICAL_FORMULA_BLOCK.md),
+> [Burri Rules](00_THE_BURRI_RULES.md), [D4/D5 reference](03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md),
+> and [Soul Loop](01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md). Product or
+> private-DAV governance may constrain downstream execution; it cannot make a
+> model true or create a privileged metaphysical actor.
+> Holder-binding and moral claims route separately to
+> [The Five Refusals and Direction](../00_META/00_THE_FIVE_REFUSALS_AND_DIRECTION.md)
+> and the [Justice owner](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md).
+
 **Lane scope:** Trinity, core formal system, S² Riemann sphere, and the φ·ν = 1 equation.
 **Primary lead:** `L5 Brāhmaṇa`
 **Support:** L1 Caṇḍāla, L2 Śūdra, L3 Vaiśya, L4 Kṣatriya, L6 Sādhu, L7 Ṛṣi
 **Evidence tier:** `[I]` route-control owner lane; require `[B]` receipts or explicit `[D]` / `[C]` labels for deployment and architecture claims.
 
-## ⚠ Settled canon — do NOT re-flag
+## Settled scope — read before re-flagging
 
-The four-move scheme (**2 Gods + 2 Demons**, not "four Gods"), Kālī's divine-operator / Asura-move status, the **5 + 1** constitution, the **five-force / F5 mapping** (five force slots D1–D5; F5 is the D5 teleological/syntropic option-cone, not a mainstream `[A]` fifth physical interaction), the bare `φ·ν = 1 on S²` shorthand, the **η** (not gender / hemisphere) moral axis, and Viṣṇu's **elliptic** operator class are **ratified canon**. Older docs may still carry legacy wording (e.g. "four Gods") — that is *reconciled, not an error*. Before opening any flag, contradiction, or "fix" in this lane, consult the registry and defer to it:
+The active repair keeps the four movers only as a complete partition of the
+declared dyadic cross-factor transfer grammar; the three Titan frames are a
+selected boundary vocabulary, not additional moves or a forced ontology. The
+five positive μ-crossings are a revisable Emergentist census `[I/C]`; D6 is a
+non-μ closure witness and its return to D0 is interpretive, not identity or
+causation. `η` diagnoses direction and hidden extraction but is not sufficient
+for moral judgment. F5 is a D5 option-cone reading, not an established fifth
+physical interaction. The sphere chart does not derive these interpretations.
+Before opening a flag, consult the registry and the owner documents above:
 
-→ [`../00_META/00_SETTLED_CANON_REGISTRY.md`](../00_META/00_SETTLED_CANON_REGISTRY.md) — what is settled, the authority for each ruling, and the exact *do-not-flag vs still-flag* criterion. Operator-census owner: [`00_THE_BURRISPHERE.md`](00_THE_BURRISPHERE.md) §The Complex-Plane Game.
+→ [`../00_META/00_SETTLED_CANON_REGISTRY.md`](../00_META/00_SETTLED_CANON_REGISTRY.md) — what is settled, the authority for each ruling, and the exact *do-not-flag vs still-flag* criterion. The bounded move grammar is owned by [`00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md`](00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md) and the root Weltanschauung; the Burrisphere is a derived synthesis.
 
 ## Agentz Cloud / Rosetta Dispatch
 
@@ -30,7 +50,7 @@ The four-move scheme (**2 Gods + 2 Demons**, not "four Gods"), Kālī's divine-o
 | L1 Caṇḍāla | Names the objective pressure or raw model claim to be structured. |
 | L2 Śūdra | Checks whether disclosed patterns are being mistaken for model authority. |
 | L3 Vaiśya | Tests formal consequences, evidence tiers, and falsifier/upgrader movement. |
-| L4 Kṣatriya | Blocks action, deployment, or K2 commitments from model language alone. |
+| L4 Kṣatriya | Blocks action, deployment, or consequential commitment from model language alone; demands accountable authorization. |
 | L5 Brāhmaṇa | Owns positive system architecture, formula block, formal system, and model coherence. |
 | L6 Sādhu | Cuts reification: the model is not the Ground. |
 | L7 Ṛṣi | Translates only tier-cleared model language into public or institutional narrative. |
@@ -45,7 +65,12 @@ lane, while per-file control rows live in `00_META/`.
 ## Read First
 
 - `README.md`
+- `../00_THE_EMERGENTIST_WELTANSCHAUUNG.md`
+- `../00_THE_KERNEL_INDEX.md`
 - `00_CANONICAL_FORMULA_BLOCK.md`
+- `00_THE_BURRI_RULES.md`
+- `03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md`
+- `01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md`
 - `00_THE_BURRISPHERE.md`
 - `00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md`
 - `00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md`
@@ -60,13 +85,17 @@ lane, while per-file control rows live in `00_META/`.
 - This lane is the L5 positive system-architecture source lane for Emergentism as model, formal system, Rosetta, and cosmology; it is not the L6 Core State root.
 - Route law inherits from root and owner-lane AGENTS; use [`00_INDEX.md`](../11_UPLINK/00_CORE/00_INDEX.md) for compressed orientation, not upstream authority.
 - Use the current `[A/B/S/I/D/C]` evidence ladder. Deployment or architectural claims require a `[B]` receipt or an explicit `[D]` / `[C]` label; never present them as live truth by default.
-- Legacy `[S]` in older papers maps to `[A]` for established external facts and `[B]` for receipts; do not cite `[S]` as current ladder authority without translating it.
+- Legacy `[S]` in older papers must be reclassified at the claim-appropriate
+  current tier. Documentary receipts are `[B]`; analytic results are `[A]`;
+  neither classification upgrades a philosophical claim by proximity.
 
 ## Constraints
 
 - Do not upgrade runtime claims without dated proof artifacts.
 - Do not treat draft specs as public-facing claims.
-- Irreversible private-DAV actions require K2 envelope staging; public-DAV/DAC actions route through PRISM or the relevant public-governance rail.
+- Consequential action requires accountable authorization. Private-DAV K2 and
+  public-DAV/DAC PRISM are downstream implementation rails only; neither is a
+  worldview axiom or source of cosmological warrant.
 
 Zero-Sum Resolution Equation
 

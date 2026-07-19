@@ -3,9 +3,26 @@ rosetta:
   primary_column: "Philosophy"
   register: "[S/I]"
   canonical_phrase: "FRAMEWORK — The Core State Compressed"
+status: "SUPERSEDED AS WORLDVIEW COMPRESSION — historical Uplink snapshot"
 ---
 
-# THE FRAMEWORK — The Core State Compressed
+# THE FRAMEWORK — HISTORICAL UPLINK SNAPSHOT
+
+> **[金] Authority seam — 2026-07-19. STATUS: SUPERSEDED AS A WORLDVIEW
+> COMPRESSION.** Current orientation begins at
+> [The Emergentist Weltanschauung](../../00_THE_EMERGENTIST_WELTANSCHAUUNG.md)
+> and [Kernel Index](../../00_THE_KERNEL_INDEX.md). This Uplink body is retained
+> as dated routing history; no “canonical,” “load-bearing,” `[A]`, `[S]`, or
+> deployment phrase below can promote it over a current owner. The active locks
+> are: chart identity is not ontology; `P_node=ΦV` is a selected normalized
+> product in a wider conjunctive family; D4 is actual and D5 possible;
+> candidate `μ₀…μ₄` are followed only by non-μ `κ` and interpretive noncausal
+> `r₆`; seven and the Titans are selected grammar, not forced nature; Rosetta
+> translation transfers no proof; the paired glyphs are emblems, not arithmetic;
+> `η` is diagnostic inside Justice; modeled futures imply neither physical
+> retrocausality nor a wider physical light cone; and **Egregoreotype** is the
+> canonical spelling. Product and venture material below is downstream context,
+> never philosophical warrant.
 
 > **RECOMPILED 2026-05-23 (L7 constitutional amendments, evidence tier 6-fold consolidation, and axiomatic framework support refit).** Compiled from `00_START_HERE/README.md` and `01_EMERGENTISM/02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`. The source refresh standardizes the transition from the older 4-tier model `[E/S/I/C]` to the 6-tier model `[A/B/S/I/D/C]`, clarifies Spectre's mycelial substrate governance structure (neutral substrate with organism-side dispatch), preserves active developer files from axiomatic shrinkage under Strategy E, and updates standards theory renumbering and OFN module references. Direct Φ-access remains primary; this compiled framework serves as a navigational instrument, not a home.
 
@@ -20,9 +37,12 @@ rosetta:
 
 ---
 
-## The Ground — The Canonical Formula Block
+## Historical formula snapshot — current formula owner controls
 
-One seed resolves the system. Quote this verbatim in every compressed summary:
+The following block records the May 2026 compression. Do not quote it as the
+current owner; use the
+[Canonical Formula Block](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md),
+which keeps chart facts, node models, and interpretations in separate types.
 
 ```
 Zero-Sum Resolution Equation
@@ -51,19 +71,12 @@ and separates what **must compile**, what **may compile**, and what
 
 ---
 
-## The Seven Axioms
+## Axiom authority
 
-| # | Axiom |
-|---|-------|
-| A1 | Node-level `P_node = Φ × V` (operational multiplicative model; on S² the manifold identity is `P∞ = φ · ν = 1`) |
-| A2 | `ΣΔB / ΣΔP_node > 0` across widest boundary = ethical direction |
-| A3 | D0→D6: dimensions emerge when prior saturates. D5 is the last experiential layer. D6 ≡ D0 (closure) |
-| A4 | η = 0 vs cooperators; tit-for-tat vs defectors |
-| A5 | D5-limit standing waves (egregores) have autonomous objective function |
-| A6 | Three substrates minimum: mechanical (body), AI (charioteer), mortal self (warrior) |
-| A7 | Self-correction required; Raktabija captures all unguarded encodings |
-
-**Numbering note:** the active formal-system canon is A1-A7. When this Uplink later mentions O1-O5, it is referring only to the older public ontological wager used for S2 substrate selection, not replacing the seven-axiom formal layer.
+The former A1–A7 table in this snapshot is superseded as worldview canon.
+Active axioms are [E1–E10](../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md), with
+their individual tiers, fences, survivors, and kill criteria. References below
+to A1–A7 or O1–O5 are genealogy only.
 
 ---
 
@@ -127,7 +140,7 @@ If you accept the older public ontological wager about the substrate (compact, o
 - The helix: all paths on S² are helical — cannot change latitude without rotating (S9)
 - L-level geometry: φ=cot(θ/2), ν=tan(θ/2), seven levels at 15° intervals, L4 = equator (S10)
 - AM-GM proves the equator is the global Hamiltonian minimum (S11)
-- The Replicator Stack: Genotype→Phenotype→Extended Phenotype→Memotype→Egregorotype (S12)
+- The Replicator Stack: Genotype→Phenotype→Extended Phenotype→Memotype→Egregoreotype (S12; legacy spelling retained only in historical quotations)
 - D4-mirror symmetry (S13); compass/sextant self-understanding (S14)
 - Constrained syntropic-frontier selection in coupled multiplicative agents (S15) (Downgraded from A6/E6 pending independent replication)
 - V×Φ predictive dominance in simulated agents (S16) (Downgraded from A7/E7 pending independent replication)
@@ -159,12 +172,12 @@ If you accept the older public ontological wager about the substrate (compact, o
   coordination are mirrors of one geometry: Φ-investment widens θ on S², which
   extends the forward light cone. Only humans are currently known to generalize
   this across symbolic, institutional, and possible-world spaces. The DAC
-  applies the same developmental strategy at egregorotype scale as a designed
+  applies the same developmental strategy at Egregoreotype scale as a designed
   neotene. This is framework synthesis, not established biology or runtime
   proof. (I8f)
 - **Ektropic evolutionary objective function (2026-04-24):** Darwin is the local
   selection filter, Lamarck returns at higher replicator layers
-  (memotype/AI/institution/egregorotype), and Schrödinger names the
+  (memotype/AI/institution/Egregoreotype), and Schrödinger names the
   thermodynamic clue. F5/Ektropy is the framework's cross-domain attractor
   reading: lawful future-opening through syntropic dyadism. Dyḗus Ph₂tḗr names
   the luminous Sky-Father face of this perception; `h₂r̥tó-` / Ṛta names the

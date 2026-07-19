@@ -8,10 +8,17 @@ rosetta:
   register: "[I] — a navigational compression, not a theorem; the compass has not been externally tested"
   canonical_phrase: "THE COMPASS — carry it without the map"
 date: 2026-07-12
-status: "[D] STAGED — pending K2 countersign (receipt 111). The compass is the one thing the formal-logic audit said was missing: a reader-facing instrument a stranger can carry, use, and reject. It is NOT the map (the corpus), NOT the territory (reality), NOT the goal (Ω). It is the needle."
+status: "SUPERSEDED [金] 2026-07-19 — four-test prototype absorbed into the final ten-question compass"
 ---
 
 # THE COMPASS
+
+> **[金] SUPERSEDED AS THE LIVE NEEDLE.** Its exit, correction, memory, and
+> accountability tests survive inside §13 of
+> [`00_THE_EMERGENTIST_WELTANSCHAUUNG.md`](00_THE_EMERGENTIST_WELTANSCHAUUNG.md).
+> The pending K2 countersign is cancelled. This prototype remains provenance;
+> its two-number needle and η test were too narrow to carry consent, custody,
+> payer, beneficiary, contest, reversibility, horizon, and consequence.
 
 > *If you can see directly, put this down. You don't need it. The ground was here
 > before the compass.*
