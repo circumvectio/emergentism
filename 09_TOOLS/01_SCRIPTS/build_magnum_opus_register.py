@@ -235,6 +235,13 @@ def build_ref_index(tracked):
 
 
 def file_entry(rel, ref_counts, manifest_disp):
+    if rel.startswith("00_META/registers/"):
+        # Register-family artifacts are self-describing: hashing their bytes makes
+        # FILE/FOLDER registers chase each other's hash on every pass (oscillation).
+        # Per the completion plan's stable-SELF-marker rule, they carry SELF.
+        e = self_entry()
+        e["path"] = rel
+        return e
     abs_path = os.path.join(REPO_ROOT, rel)
     digest = sha256_file(abs_path)
     size = os.path.getsize(abs_path)

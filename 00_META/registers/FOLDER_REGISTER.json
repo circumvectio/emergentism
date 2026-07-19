@@ -12,7 +12,7 @@
       "owns": "> **The Goal (Ω stated):** [`00_THE_GOAL.md`](00_THE_GOAL.md) — the project's telos, owner-declared 2026-06-12 and tier-fenced: a living wor",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 2935,
+      "tracked_file_count": 2938,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1546,7 +1546,7 @@
       "owns": "> The compressed context layer for agents and fast human orientation.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 465,
+      "tracked_file_count": 466,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1754,7 +1754,7 @@
       "owns": "UPLINK AUDITS AND EXECUTIONS LANE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 135,
+      "tracked_file_count": 136,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1884,7 +1884,7 @@
       "owns": "Emergentism Public Site — Landing Spine",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 570,
+      "tracked_file_count": 572,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -2027,7 +2027,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 5,
+      "tracked_file_count": 6,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -2261,7 +2261,7 @@
       "owns": "Infinite Book PWA Source Scaffold",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 93,
+      "tracked_file_count": 94,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"

@@ -9,7 +9,7 @@ rosetta:
   canonical_phrase: "E1–E10 The Emergent Axioms — freedoms not Forms; vow not theorem; exit on the inside"
 type: emergentism-axiom-set-pending-founder-signature
 title: "The Emergent Axioms (E1–E10)"
-status: "STAGED [D] — pending explicit founder signature. A1–A7 remains signed operational canon until a promotion receipt says otherwise."
+status: "ACTIVE — K2-signed 2026-07-20 (the 00:01 line, box 3 adopted; authority receipt 145). E1–E10 is the successor axiom set; A1–A7 superseded in place per K3."
 evidence_tier: "Per-axiom below; assembly is [D]; no silent upgrade"
 owner: 01_EMERGENTISM
 scope_lock: "Emergentism-only philosophy. No organs, fees, products, Skyzai, DAV/PRISM execution machinery as warrant."

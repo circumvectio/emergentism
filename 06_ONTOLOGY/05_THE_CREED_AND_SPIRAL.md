@@ -9,7 +9,7 @@ rosetta:
   canonical_phrase: "Hold as wager → cannot be taken. Speak as revelation → already lost."
 type: emergentism-creed-pending-founder-signature
 title: "The Creed and the Spiral — PENDING FOUNDER SIGNATURE"
-status: "STAGED [D] 2026-07-19 — pure Weltanschauung expansion; A1–A7 remains operational canon until explicit promotion"
+status: "ACTIVE — K2-signed 2026-07-20 (the 00:01 line; authority receipt 145). Pure Weltanschauung expansion; companion to the signed E1–E10 successor set."
 evidence_tier: "Per clause below; assembly [D]"
 owner: 01_EMERGENTISM
 scope_lock: "Philosophy only. No Skyzai warrant."

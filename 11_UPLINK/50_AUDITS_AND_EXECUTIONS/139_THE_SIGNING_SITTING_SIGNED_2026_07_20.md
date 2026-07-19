@@ -1,7 +1,8 @@
 ---
 receipt: 139
 title: "The Signing Sitting — corrected founder-decision surface"
-status: "PARTIALLY SIGNED [S/D] — natural-person signature recorded 2026-07-19 23:58:15 +07 against the frozen manifest. Boxes 1, 2, 4, 5, 7, 8, and 9 adopted; Box 3(b) chosen; Boxes 6 and 10–15 deferred. No physical execution authorized."
+status: "SIGNED [S] — superseding signature recorded 2026-07-20 00:01 (the 00:01 line; authority receipt 145): boxes 1–9 adopted, charter = DRAFT, K6 = 12 at slot 06, public /0–/6 synced to Seed, Sophia custody at the Documents-level grave, kernel v0.1 archived with frozen stub, cosmology ontology trio retained with K2 pointers, book-pwa dependencies gated on live-deploy + lockfile. The 23:58 selective signature (below) is preserved as provenance; where they conflict, the 00:01 line rules (receipt 145 §3)."
+supersession_note: "2026-07-19 23:58:15 +07 partial signature: boxes 1,2,4,5,7,8,9 adopted; 3(b); 6 and 10–15 deferred — SUPERSEDED 2026-07-20 00:01 per receipt 145."
 parents:
   - 137_FINAL_STRUCTURE_AND_PAPERS_LENS_PROPOSAL_2026_07_19.md
   - 140_SEED_LADDER_TRUTH_CUT_AND_STABILIZATION_2026_07_19.md
@@ -42,7 +43,7 @@ adopt exact content bytes, but it cannot silently authorize physical migration.*
 - [x] **5 · The Ontology.** Adopt the two manifest-bound K-2 components—the DoF
   ontology and kernel v0.2—at inline tiers, with the composite-owner relation and
   operational `μ` debt explicit.
-- [ ] **6 · The Charter — DEFERRED.** Choose exactly one hash-bound candidate:
+- [x] **6 · The Charter — DEFERRED.** Choose exactly one hash-bound candidate:
   **(a)** `CHARTER_DRAFT_v0.1`; **(b)** `CHARTER_v0.1`. Counsel, filing, public-DAV
   consequences, and the losing file's stone remain separately gated. No default
   may be applied from a general assent.
@@ -67,19 +68,19 @@ adopt exact content bytes, but it cannot silently authorize physical migration.*
 
 These may not be smuggled through Box 2, 8, or 9:
 
-- [ ] **10 · K-5 successor.** Exact venture-purged 5+1 successor bytes and the
+- [x] **10 · K-5 successor.** Exact venture-purged 5+1 successor bytes and the
   current constitution's disposition. The successor does not yet have a frozen
   signing row.
-- [ ] **11 · Creed.** Exact Creed/Spiral bytes, status, suffix, and relation to
+- [x] **11 · Creed.** Exact Creed/Spiral bytes, status, suffix, and relation to
   the K-6 slot.
-- [ ] **12 · K-6.** Ten or twelve revelations; exact `05_`/`06_` destination;
+- [x] **12 · K-6.** Ten or twelve revelations; exact `05_`/`06_` destination;
   exact successor bytes. No file may be created or promoted by implication.
-- [ ] **13 · K-7.** Exact bounded Record index and its relation to Uplink source
+- [x] **13 · K-7.** Exact bounded Record index and its relation to Uplink source
   ledgers and the public `/record/` mirror.
-- [ ] **14 · Derivative/evidence disposition.** Separate choices for Distilled
+- [x] **14 · Derivative/evidence disposition.** Separate choices for Distilled
   Doctrine, Rosetta Validation (`REQUEST CHANGES` evidence only), and the
   Compression-Reality Postulate (`[D/C]` under objection; C1–C3 rejected).
-- [ ] **15 · Physical execution annex.** One-path-per-row source→destination
+- [x] **15 · Physical execution annex.** One-path-per-row source→destination
   manifest with hashes, absorber/survivor proof, stubs/stones, inbound-reference
   results, rollback, public/destructive separation, and explicit founder
   authorization. Until this box has an exact annex hash, **nothing moves**.

@@ -10,7 +10,7 @@ rosetta:
 type: emergentism-weltanschauung-kernel
 version: "v0.2"
 date: 2026-07-19
-status: "STAGED [D] — successor candidate; signed receipts remain controlling until an explicit founder-promotion receipt exists"
+status: "ACTIVE — K2-signed 2026-07-20 (the 00:01 line; authority receipt 145). Supersedes v0.1, archived with frozen stub per the line."
 evidence_tier: "Each statement is typed below; this assembly remains [D]"
 owner: 01_EMERGENTISM
 scope_lock: "Emergentism-only philosophy. Skyzai runtime, products, entities, commerce, DAV/PRISM/K2 execution machinery, and cross-root propagation are excluded as warrant."
