@@ -5,6 +5,7 @@ retirement_receipt: 2026-07-16
 status: "K3 ARCHIVE — RETIRED — NON-AUTHORITATIVE — NOT CITABLE AS ACTIVE EVIDENCE"
 evidence_tier: "[D] archive disposition; preserved [B]/[I] historical claims retain only their historical meaning"
 source_base: 9c1fb7ae232de6e2fa1f1cbac36391c00a1994df
+replay_base: f24e4005e85895f34a48432e8c4ec3f8693e3c6b
 dangling_source: 8cffc1a224ac7b7d21bfea3c66d31d0ceb11c41a
 ---
 
@@ -23,24 +24,29 @@ it may not revive this archive by reference.
 
 ## Topology
 
-- `active_corpus/` preserves, byte-for-byte, the 11 direct GFS artifacts that
+- `active_corpus/` is the canonical citation custody for the 11 direct GFS artifacts that
   were active at source base `9c1fb7a`: the Wave-1 owner receipt, six pipeline
   files, and the four-file 2026-07-02 pooled experiment.
 - `dangling_8cffc1a/` preserves, byte-for-byte, only the five GFS blobs added by
   detached commit `8cffc1a`: the AND-class receipt, discriminator, and three
   result tables. The commit was not cherry-picked; unrelated path renames in
   that commit were not imported.
-- `SHA256_MANIFEST.tsv` binds every preserved payload to its original path,
-  source revision, byte count, run identity, and archive path.
+- `SHA256_MANIFEST.tsv` binds the 16 payloads admitted by this retirement replay
+  to their original paths, source revisions, byte counts, run identities, and
+  canonical archive paths. It is not a complete inventory of every older file
+  already present in this archive directory.
+- `DUPLICATE_CUSTODY.tsv` records same-hash aliases already present on the
+  replay base. They remain under K3 but are non-citable aliases; the
+  `active_corpus/` path is canonical.
 - `2026-07-16_GFS_RETIREMENT_RECEIPT.md` records the disposition, study limits,
   duplicate facts, missing evidence, and owner-reference repairs.
 
-An untracked live-root directory named
-`2026-07-02_gfs_pooled_multiplicative_vs_additive 2/` was inspected separately
-on 2026-07-16. Its four files are byte-identical to the corresponding
-`active_corpus/` payloads, so it is not a distinct study or payload and is
-already content-addressed by `SHA256_MANIFEST.tsv`. The live-root duplicate was
-not touched by this archive branch.
+On replay base `f24e400`, the former live-root directory named
+`2026-07-02_gfs_pooled_multiplicative_vs_additive 2/` was already tracked under
+`90_ARCHIVE/tool_noise/2026_07_17_executor_moves/`. Its four files are
+byte-identical to both the canonical `active_corpus/` payloads and the older
+`experiment_dir_2026-07-02_pooled/` copies. These are three custody locations
+for one four-file run, not three studies.
 
 ## Non-authority boundary
 
@@ -56,6 +62,18 @@ files refer variously to `gfs_all_countries_wave2.csv` and
 `gfs_all_countries_wave2.dta`, but neither file is present here. Consequently,
 the April fit, July re-pooling, and July AND-class extension cannot be rerun
 from raw observations from this repository alone.
+
+## Current-lineage custody already present
+
+The replay base already contained 16 files inside this retirement directory:
+
+- one non-identical historical owner under `canonical/`;
+- four pooled-run copies under `experiment_dir_2026-07-02_pooled/`;
+- three top-level country-analysis script copies; and
+- eight pre-modification owner backups under `k3_pre_modification_backups/`.
+
+Seven of those files are same-hash aliases of canonical `active_corpus/`
+payloads. They are retained, not deduplicated. See `DUPLICATE_CUSTODY.tsv`.
 
 ## Earlier cold material left in place
 

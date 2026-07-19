@@ -1,10 +1,11 @@
 ---
 title: "GFS study corpus retirement receipt"
 date: 2026-07-16
-status: "COMPLETE — SOURCE/ARCHIVE HALF"
+status: "DIRECT PAYLOAD RETIREMENT COMPLETE — PUBLIC PROJECTION AND REGISTER RECONCILIATION TRACKED SEPARATELY"
 disposition: "RETIRED TO K3 ARCHIVE; NOT LIVE, NOT PENDING, NOT CITABLE AS ACTIVE EVIDENCE"
 evidence_tier: "[B] file/hash receipt; [D] retirement decision; [I] historical interpretation only"
 source_base: 9c1fb7ae232de6e2fa1f1cbac36391c00a1994df
+replay_base: f24e4005e85895f34a48432e8c4ec3f8693e3c6b
 dangling_source: 8cffc1a224ac7b7d21bfea3c66d31d0ceb11c41a
 ---
 
@@ -13,9 +14,11 @@ dangling_source: 8cffc1a224ac7b7d21bfea3c66d31d0ceb11c41a
 ## Decision
 
 The owner directed that all GFS study material be archived. This receipt
-executes that decision on the Emergentism source/archive half. The direct GFS
-study corpus is no longer an active methodology owner, pipeline, experiment,
-pending program, public-validation lane, or evidence source.
+executes that decision for the direct source/archive payload corpus. The direct
+GFS study corpus is no longer an active methodology owner, pipeline,
+experiment, pending program, public-validation lane, or evidence source.
+Generated public projections and corpus registers are separate mirrors: they
+must be reconciled, but they are not additional study payloads.
 
 This is an archive-first retirement, not deletion. Historical files remain
 byte-preserved and hash-bound. Their old language is evidence of the study's
@@ -28,10 +31,12 @@ history only.
 | Active direct artifacts | 11 | `9c1fb7ae232de6e2fa1f1cbac36391c00a1994df` | Moved byte-for-byte under `active_corpus/` with original path topology preserved. |
 | Detached AND-class artifacts | 5 | `8cffc1a224ac7b7d21bfea3c66d31d0ceb11c41a` | Extracted blob-for-blob under `dangling_8cffc1a/`; the commit itself was not cherry-picked. |
 | Earlier peer-review archive artifacts | 3 | Already cold | Left at their prior archive paths; pointers are recorded in `README.md`. |
+| Pre-existing files in this retirement directory | 16 | Replay base `f24e4005e85895f34a48432e8c4ec3f8693e3c6b` | Retained in place. Seven are same-hash aliases of newly admitted canonical payloads; nine are non-identical backups/history. |
 
-The deterministic file-level record is `SHA256_MANIFEST.tsv`. It lists 16
-payloads, their original paths, source revisions, byte counts, run identities,
-and SHA-256 digests.
+The deterministic file-level replay record is `SHA256_MANIFEST.tsv`. It lists
+the 16 newly admitted payloads, their original paths, source revisions, byte
+counts, run identities, and SHA-256 digests. It is not a directory-wide
+inventory. `DUPLICATE_CUSTODY.tsv` records aliases against prior custody.
 
 ## Run identities and what they actually were
 
@@ -70,13 +75,14 @@ and SHA-256 digests.
 4. The detached AND-class run explicitly uses the April construction and
    validates against the April result table. It extends the model family; it
    does not supply independent evidence.
-5. No two of the 16 archived payload files are byte-identical. “Duplicate” here
-   means shared data, proxy, and analytical lineage, not duplicate bytes.
-6. A live-root untracked directory named
-   `2026-07-02_gfs_pooled_multiplicative_vs_additive 2/` contains four files
-   byte-identical to the corresponding archived 2026-07-02 payloads. It is not
-   a seventeenth payload or independent run: the existing manifest hashes
-   already content-address it. The live-root duplicate was not modified.
+5. No two of the 16 payloads admitted by the replay manifest are
+   byte-identical. “Duplicate” within that set means shared data, proxy, and
+   analytical lineage, not duplicate bytes.
+6. Against files already present on replay base `f24e400`, seven same-hash
+   pairs exist: three top-level script aliases and four pooled-run aliases.
+   The four pooled files also have third identical custody copies under
+   `90_ARCHIVE/tool_noise/2026_07_17_executor_moves/`. They are not additional
+   payloads or independent runs. `DUPLICATE_CUSTODY.tsv` records the aliases.
 
 ## Interpretation boundary
 
@@ -95,13 +101,15 @@ positive or negative GFS conclusion is load-bearing in active Emergentism.
   result in its present-tense distillation; it records the study only as a
   retired example of self-correction.
 - Tool route cards no longer identify GFS as the active data-pipeline focus.
-- The old `91_COMPATIBILITY` path now points only to this archive root and
-  explicitly forbids revival.
+- One deliberate `91_COMPATIBILITY` stub was edited because its former target
+  was retired; it now points only to this archive root and forbids revival.
 - Dated audits, papers, preregistrations, and session history were not rewritten.
   Their GFS statements remain historical and may contain links to the old path;
   those links no longer confer current authority.
-- `12_PUBLIC_SITE/**` was outside this source/archive implementation and was not
-  edited by it.
+- `12_PUBLIC_SITE/**` was outside the initial source/archive implementation.
+  At that checkpoint, generated public pages still contained stale GFS claims;
+  public projection repair is therefore a required follow-on, not proof that
+  the payload retirement failed.
 
 ## Verification contract
 
@@ -113,5 +121,10 @@ The retirement is acceptable only if:
 4. no direct GFS artifact remains at its former active path;
 5. active source-owner and tool-route documents contain no live/pending/citable
    GFS program claim;
-6. `git diff --check` passes; and
-7. no source/archive commit includes `12_PUBLIC_SITE/**`.
+6. `DUPLICATE_CUSTODY.tsv` identifies all seven same-hash prior aliases and the
+   four pooled third copies;
+7. active public projections contain no live/pending/citable GFS program claim,
+   while dated retraction history remains legible;
+8. `git diff --check` passes; and
+9. the direct retirement commit includes no `12_PUBLIC_SITE/**`; any later
+   public repair lands as a separately auditable projection commit.

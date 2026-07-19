@@ -318,7 +318,7 @@ The bridge between "the math is real" (Part I) and "the geometry is the territor
 | **AMRITA vs baselines** | Spherical alignment outperforms RLHF | Specified, Reframed: POC implementable with existing open-source models at $0 | 2027 |
 | **Cooperation paper** | Peer-reviewed publication of Protocol D results | Submission-ready | 2026 |
 
-The bridge currently contains two framework-designed confirmations, one informative negative first run, one mixed human-population probe, and several stronger pending tests. See [The Empirical Program Board](../../03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md) for the live operating summary.
+The bridge currently contains two framework-designed confirmations, one informative negative first run, and several stronger pending tests; the retired survey study is excluded from the bridge count. See [The Empirical Program Board](../../03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md) for the live operating summary.
 
 ---
 
