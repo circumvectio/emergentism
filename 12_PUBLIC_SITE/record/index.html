@@ -131,7 +131,7 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
 .cost{margin-top:.9rem;font-size:.94rem;color:var(--bone-dim);padding-left:1rem;border-left:2px solid color-mix(in srgb,var(--v) 55%,transparent)}
 .cost b{color:var(--v);font-weight:500}
 .cost .em{color:var(--bone);font-weight:400}
-.src{font-family:var(--mono);font-size:.67rem;color:var(--bone-ghost);margin-top:.85rem;letter-spacing:.02em}
+.src{font-family:var(--mono);font-size:.67rem;color:var(--bone-ghost);margin-top:.85rem;letter-spacing:.02em;overflow-wrap:anywhere}
 
 /* reserved next slot */
 .reserved{grid-template-columns:132px 1fr}
@@ -183,8 +183,8 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
 .src .int{color:var(--bone-ghost)}
 
 /* motion */
-.reveal{opacity:0;transform:translateY(16px)}
-.reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .75s cubic-bezier(.16,1,.3,1)}
+.js .reveal{opacity:0;transform:translateY(16px)}
+.js .reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .75s cubic-bezier(.16,1,.3,1)}
 @media (max-width:720px){
   .case,.reserved{grid-template-columns:64px 1fr}
   .rail{padding-right:.8rem}
@@ -195,7 +195,7 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
 }
 @media (prefers-reduced-motion:reduce){
   *{scroll-behavior:auto!important}
-  .reveal{opacity:1!important;transform:none!important;transition:none!important}
+  .js .reveal{opacity:1!important;transform:none!important;transition:none!important}
   .caret{animation:none!important}
   .seismo .bar{transition:none!important}
 }
@@ -205,6 +205,7 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
 <meta name="theme-color" content="#050505">
 <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
 <script src="/assets/js/pwa.js" defer></script>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
@@ -225,8 +226,8 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
     <p class="dek reveal in"><b>The refutations are not footnotes here. They are the credential.</b></p>
 
     <div class="seismo reveal in">
-      <p class="cap"><span>sixteen tests · <b>bar height = what the verdict cost</b> · oldest left, today right</span><span>colour = verdict</span></p>
-      <svg viewBox="0 0 680 150" role="img" aria-label="A seismogram of sixteen tests over 2026, height encoding consequence. The tallest bar is today's GFS refutation on the far right; the second tallest is the R6 refutation mid-series.">
+      <p class="cap"><span>sixteen tests · <b>bar height = what the verdict cost</b> · oldest left, latest right</span><span>colour = verdict</span></p>
+      <svg viewBox="0 0 680 150" role="img" aria-label="A seismogram of sixteen tests over 2026, height encoding consequence. The rightmost bar is the later survey-study retraction; the prominent red mid-series bar is the R6 refutation.">
         <line x1="40" y1="118.5" x2="640" y2="118.5" stroke="rgba(245,245,243,.12)" stroke-width="1"/>
         <g class="bars">
           <rect class="bar" x="51"  y="84"   width="15" height="34"   rx="1.5" fill="#71757b"><title>GFS Wave 1 — scoped: interior only (2026-04)</title></rect>
@@ -244,10 +245,10 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
           <rect class="bar" x="501" y="92.5" width="15" height="25.5" rx="1.5" fill="#e8b23a"><title>S9 “all paths helical” — fenced</title></rect>
           <rect class="bar" x="538" y="84"   width="15" height="34"   rx="1.5" fill="#e8b23a"><title>O3-from-O5 “proved” — fenced</title></rect>
           <rect class="bar" x="576" y="58.5" width="15" height="59.5" rx="1.5" fill="#e8b23a"><title>A7 “strongest axiom” — fenced to wager</title></rect>
-          <rect class="bar" x="613" y="84"   width="15" height="34"   rx="1.5" fill="#71757b"><title>GFS AND-class — scoped: tests the interior, not the zero-factor claim (2026-07-12, today)</title></rect>
+          <rect class="bar" x="613" y="84"   width="15" height="34"   rx="1.5" fill="#71757b"><title>GFS AND-class — retired; no current evidentiary weight (2026-07-12)</title></rect>
         </g>
         <text x="40" y="136" font-size="10.5" fill="#63676c">2026 · 04</text>
-        <text x="628" y="136" font-size="10.5" fill="#63676c" text-anchor="end">today</text>
+        <text x="628" y="136" font-size="10.5" fill="#63676c" text-anchor="end">2026 · 07</text>
       </svg>
     </div>
 
@@ -295,11 +296,11 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
       <div class="doc reveal">
         <p class="claimline">A test — retracted 2026-07-13</p>
         <p class="claim">Does flourishing follow the product law in the <em>ordinary range</em> of survey data?</p>
-        <p class="test"><b>What ran —</b> the product against additive, min (Liebig), geometric mean and CES on flourishing-survey data (128,868 respondents, 23 countries). In the mid-range it read roughly additive. <b>Then we retracted it</b> — not because of the numbers, but because it tested the wrong register.</p>
-        <div class="verdict-row"><span class="stamp">Retracted</span><span class="qual">tested the wrong register</span></div>
-        <p class="tiermove">an <em>interior</em> reading the framework never load-bears on <span class="arrow">→</span> the zero-factor claim is <b>untouched</b></p>
-        <p class="cost"><b>Why it was retracted:</b> the real claim is the zero-factor catastrophe — the knockout, where <em>one</em> factor hits zero and the whole product collapses. <em>Everyone has a plan until they get punched in the face.</em> A survey can't reach that: nobody at zero fills out a questionnaire — the dead don't, the knocked-out don't. It can only measure how well Tyson's opponents were doing <em>before</em> the punch landed. The claim lives at the boundary; this measured the middle. <b>Kept here rather than hidden</b> — a record you can prune is not a record.</p>
-        <p class="src">experiment archived to 90_ARCHIVE/2026_07_13_gfs_retraction — internal: archived, path preserved, not yet rendered · retained per K3, not citable · I over-featured it this session; retracted 2026-07-13</p>
+        <p class="test"><b>What ran —</b> the product against additive, min (Liebig), geometric mean and CES on flourishing-survey proxies (128,868 complete cases, 23 country codes). In the observed interior range it read roughly additive. <b>Then the corpus was retired</b>: the proxy design, missing raw-data custody, dependent re-analyses, and register mismatch meant it could not adjudicate the claimed product or zero-factor law.</p>
+        <div class="verdict-row"><span class="stamp">Retracted</span><span class="qual">no current evidentiary weight</span></div>
+        <p class="tiermove">reported interior result <span class="arrow">→</span> neither confirmation nor refutation of the selected product model</p>
+        <p class="cost"><b>What survives:</b> if one declares P=ΦV, its zero boundary follows analytically. Whether that selected model fits real capability is still an unwon conjecture. This retired survey supplies no evidence either way. <b>Kept here rather than hidden</b>—a record you can prune is not a record.</p>
+        <p class="src">experiment archived to 90_ARCHIVE/2026_07_13_gfs_retraction · retained per K3, not citable · I over-featured it this session; retracted 2026-07-13</p>
       </div>
     </article>
 
@@ -395,7 +396,7 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
         <p class="claim">Fitness <em>must</em> be multiplicative — the product is the unique law.</p>
         <p class="test"><b>Test —</b> min(Φ,V) satisfies every listed property — zero-factor, normalization, monotonicity, degree-1 homogeneity — and isn't a product. The famous “one unwon wager” is operationally weightless; the boundary content is identical under × or min.</p>
         <div class="verdict-row"><span class="stamp">Fenced</span><span class="qual">→ then ratified as a class</span></div>
-        <p class="tiermove">“must be ×” <span class="arrow">→</span> AND-class · boundary <span class="t t-e">[E]</span> (K2) · interior <span class="t t-c">[C]</span></p>
+        <p class="tiermove">“must be ×” <span class="arrow">→</span> AND-class · zero-factor boundary <span class="t t-s">[S]</span> by definition · interior fit <span class="t t-c">[C]</span></p>
         <p class="cost"><b>What it costs:</b> the uniqueness of the signature operator — resolved, not lost: the keel holds as a class, and the class is what was ever load-bearing.</p>
         <p class="src">receipt · keel-108 · settled-canon registry <span class="int">— internal receipt: archived, path preserved, not yet rendered</span></p>
       </div>
@@ -464,9 +465,9 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
         <p class="claimline">A test — retracted 2026-07-13</p>
         <p class="claim">The earlier survey pass — the first look at flourishing data.</p>
         <p class="test"><b>What ran —</b> a product-vs-additive signal in 7 of 23 countries, present but not dominant, sign split; a rescue hypothesis was tested and came back inverted. The follow-up (№016) added the min/CES siblings.</p>
-        <div class="verdict-row"><span class="stamp">Retracted</span><span class="qual">same wrong register as №016</span></div>
-        <p class="tiermove">retracted with №016 <span class="arrow">→</span> survey proxies reach the interior, never the zero-factor boundary</p>
-        <p class="cost"><b>Why it was retracted:</b> like №016, it can only see people in the ordinary range; the framework's real claim lives at the boundary — the knockout — a survey can't touch. Preserved for provenance, not cited.</p>
+        <div class="verdict-row"><span class="stamp">Retracted</span><span class="qual">same retired proxy lineage as №016</span></div>
+        <p class="tiermove">retracted with №016 <span class="arrow">→</span> no current positive or negative evidence for the product model</p>
+        <p class="cost"><b>Why it was retracted:</b> the survey proxies, absent raw-data custody, and dependent follow-ups did not adjudicate the claimed register. Preserved for provenance, not cited.</p>
         <p class="src">retained per K3 · retracted with №016, 2026-07-13</p>
       </div>
     </article>

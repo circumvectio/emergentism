@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mass-Shell — Our central equation is Einstein&rsquo;s. We checked. — Emergentism</title>
-<meta name="description" content="Our seam — φ·ν = 1 — is Einstein's mass-shell relation in different clothes. The equation is inherited and credited; the rhyme is the discovery, not the theft." />
+<title>Mass-Shell — Our seam has a relativistic cousin — Emergentism</title>
+<meta name="description" content="On a 1+1-dimensional or collinear fixed-mass slice, normalized light-cone coordinates give uv = 1. Our seam has the same algebraic form; the human interpretation remains a wager." />
 <meta name="color-scheme" content="dark" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Our central equation is Einstein&rsquo;s. We checked." />
-<meta property="og:description" content="Our central identity is the relativistic mass-shell relation after a change of variables. Credited to physics. The mapping from particles to persons is our wager, held openly at its tier." />
+<meta property="og:title" content="Our seam has a relativistic cousin." />
+<meta property="og:description" content="The normalized fixed-mass shell and our seam share a reciprocal hyperbola. That algebraic correspondence is exact; the mapping from physics to persons is not." />
 <meta property="og:url" content="https://emergentism.org/discoveries/mass-shell/" />
 <meta property="og:image" content="https://emergentism.org/assets/og/og-card.png" />
 <meta name="twitter:card" content="summary_large_image" />
@@ -89,8 +89,10 @@ p{margin:0 0 1.25rem}
 @media(max-width:560px){.dict{grid-template-columns:1fr}.dict .mid{display:none}.dict .h.h2x{display:none}}
 /* figure */
 .figrow{display:grid;grid-template-columns:1fr 340px;gap:2.5rem;align-items:center;margin:1rem 0 0}
+.figrow>*{min-width:0}
 @media(max-width:820px){.figrow{grid-template-columns:1fr}.fig{max-width:320px;margin:1rem auto 0}}
-.fig svg{width:100%;height:auto;display:block;overflow:visible}
+.fig{width:100%;min-width:0}
+.fig svg{width:100%;height:auto;display:block;overflow:hidden}
 .fig figcaption{font-family:var(--mono);font-size:.74rem;color:var(--bone-faint);text-align:center;margin-top:.8rem}
 /* strength line + tier chip */
 .verdict{border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,rgba(255,235,59,.04),transparent 72%);padding:clamp(1.6rem,4vw,2.4rem);margin-top:.5rem}
@@ -108,15 +110,16 @@ p{margin:0 0 1.25rem}
 .foot{border-top:1px solid var(--line);margin-top:3rem;padding:2.6rem 0 3.6rem;text-align:center;color:var(--bone-ghost);font-family:var(--mono);font-size:.75rem;line-height:1.75}
 .foot .glyph{font-size:1.5rem;color:var(--gold);margin-bottom:.7rem}
 .foot a{color:var(--bone-faint);text-decoration:underline;text-underline-offset:3px}
-.reveal{opacity:0;transform:translateY(16px)}
-.reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1)}
-@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important;transition:none!important}}
+.js .reveal{opacity:0;transform:translateY(16px)}
+.js .reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.js .reveal{opacity:1!important;transform:none!important;transition:none!important}}
 </style>
 <!-- pwa-chrome -->
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#050505">
 <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
 <script src="/assets/js/pwa.js" defer></script>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
@@ -132,43 +135,43 @@ p{margin:0 0 1.25rem}
 <main class="wrap">
   <header class="hero">
     <p class="fileno reveal in">Discovery · <a href="../">back to all discoveries</a></p>
-    <h1 class="reveal in">Physics already <span class="gold">wears the equation.</span></h1>
-    <p class="dek reveal in"><b>We did not invent our central identity. Physics has been wearing it for a century.</b> The equation is Einstein's, credited in full. The rhyme is the discovery — not the theft.</p>
+    <h1 class="reveal in">Our seam has a <span class="gold">relativistic cousin.</span></h1>
+    <p class="dek reveal in"><b>A familiar constraint in special relativity reduces to the same reciprocal hyperbola.</b> The shared algebra is exact. The meanings assigned to its variables remain different.</p>
 
     <div class="pitch reveal in">
       <p class="lab">The claim, exactly</p>
-      <p>The seam of our chart — <b>φ·ν = 1</b>, seeing times doing identically one — is, after a change of variables, the relativistic <b>mass-shell relation</b>: the equation every particle in the universe obeys.</p>
+      <p>In a 1+1-dimensional or collinear fixed-mass slice, let <b>p</b> be the signed momentum component along the chosen axis and define <b>u = (E + pc)/(mc²)</b>, <b>v = (E − pc)/(mc²)</b>. Then <b>uv = 1</b>, the same algebraic form as our chart seam <b>φν = 1</b>.</p>
     </div>
   </header>
 
   <!-- THE EQUATION -->
   <section class="body">
     <p class="kicker reveal">The seam, undressed</p>
-    <h2 class="reveal read">Same constraint, <b>two wardrobes.</b></h2>
-    <p class="reveal read">The seam of our chart — φ·ν = 1, seeing times doing identically one — is, after a change of variables, the relativistic mass-shell relation:</p>
+    <h2 class="reveal read">Same normalized form, <b>different meanings.</b></h2>
+    <p class="reveal read">Factor the fixed-mass relation, then divide by its mass scale:</p>
     <div class="eq reveal">
-      E² − (pc)² = (mc²)² <span class="g">⇌</span> φ · ν = 1
-      <small>left: every particle in the universe · right: our chart's seam · one hyperbolic constraint, two changes of clothes</small>
+      E² − (pc)² = (mc²)² <span class="g">⇒</span> u · v = 1 <span class="g">↔</span> φ · ν = 1
+      <small>left: a 1+1-dimensional or collinear fixed-mass slice, with signed p · middle and right: reciprocal coordinates · shared form does not transfer physical meaning</small>
     </div>
-    <p class="reveal read">The one that says energy, momentum, and rest mass are three faces of one constraint. Say that plainly and give credit where it is due: <b>the equation is Einstein's.</b> We derived nothing about physics, and physics derives nothing about ethics from us. What we found is a rhyme — and the rhyme is exact, not decorative.</p>
+    <p class="reveal read">Special relativity supplies the left-hand constraint; Emergentism did not discover it. The exact result here is narrower: after the stated normalization, both descriptions occupy the hyperbola <b>xy = 1</b>. Physics derives no psychology or ethics from that coincidence, and our chart derives no physics.</p>
   </section>
 
   <!-- THE DICTIONARY -->
   <section class="body">
     <p class="kicker reveal">The dictionary</p>
-    <h2 class="reveal read">Word for word, <b>the mapping.</b></h2>
+    <h2 class="reveal read">A chosen <b>correspondence.</b></h2>
     <div class="figrow">
       <div>
         <div class="dict reveal" role="table" aria-label="Dictionary between the sphere and special relativity">
           <div class="h">Our sphere</div><div class="h mid h2x">⇌</div><div class="h">Special relativity</div>
-          <div class="a">On the equator — balance</div><div class="mid">⇌</div><div>A particle <b>at rest</b>: all rest mass, no momentum</div>
-          <div class="a">Near a pole — one shadow only</div><div class="mid">⇌</div><div>Near light-speed: all momentum, internal clock <b>nearly frozen</b></div>
-          <div class="a">B = sin θ, the balance number</div><div class="mid">⇌</div><div><b>The rate a clock ticks</b> — the time-dilation factor, one of the most tested quantities in all of science</div>
-          <div class="a">Equator = maximum B</div><div class="mid">⇌</div><div>Maximum at rest. <b>The equator is the rest frame.</b></div>
+          <div class="a">On the equator — balance</div><div class="mid">⇌</div><div>In the particle's rest frame: <b>p = 0</b> and u = v = 1</div>
+          <div class="a">Near a pole — one coordinate dominates</div><div class="mid">⇌</div><div>Relative to the chosen frame, <b>|pc|/E → 1</b> and u/v becomes extreme</div>
+          <div class="a">B = 2/(u+v) = sin θ</div><div class="mid">⇌</div><div>For inertial motion relative to that frame, <b>dτ/dt = 1/γ = mc²/E</b></div>
+          <div class="a">Equator = maximum B</div><div class="mid">⇌</div><div>At rest relative to the frame, <b>dτ/dt = 1</b></div>
         </div>
       </div>
       <figure class="fig reveal">
-        <svg viewBox="0 0 320 320" role="img" aria-label="A globe with a gold equator labelled rest frame, clock fastest; the poles labelled near light-speed, clock frozen. The balance number B equals sine theta is the rate a clock ticks.">
+        <svg viewBox="0 0 320 320" role="img" aria-label="A globe with a gold equator labelled particle rest frame, d tau over d t equals one; the poles are labelled absolute beta approaches one, d tau over d t approaches zero relative to the chosen frame.">
           <circle cx="160" cy="160" r="112" fill="none" stroke="rgba(245,245,243,.16)" stroke-width="1"/>
           <ellipse cx="160" cy="160" rx="112" ry="26" fill="none" stroke="rgba(245,245,243,.07)" stroke-width="1"/>
           <line x1="48" y1="160" x2="272" y2="160" stroke="#FFEB3B" stroke-width="2.4"/>
@@ -176,33 +179,33 @@ p{margin:0 0 1.25rem}
           <circle cx="160" cy="272" r="4.5" fill="none" stroke="#b59ce0" stroke-width="1.6"/>
           <circle cx="160" cy="160" r="4" fill="#FFEB3B"/>
           <g font-family="Roboto Mono,monospace" font-size="10.5">
-            <text x="160" y="20" text-anchor="middle" fill="#b59ce0">near light-speed</text>
-            <text x="160" y="33" text-anchor="middle" fill="#6b6f74">clock ≈ frozen</text>
-            <text x="160" y="294" text-anchor="middle" fill="#b59ce0">near light-speed</text>
-            <text x="160" y="307" text-anchor="middle" fill="#6b6f74">clock ≈ frozen</text>
-            <text x="280" y="151" fill="#FFEB3B">rest frame</text>
-            <text x="280" y="166" fill="#CBB800">B = sin θ = 1</text>
-            <text x="280" y="181" fill="#6b6f74">clock fastest</text>
+            <text x="160" y="20" text-anchor="middle" fill="#b59ce0">|β| → 1</text>
+            <text x="160" y="33" text-anchor="middle" fill="#6b6f74">dτ/dt → 0 (frame)</text>
+            <text x="160" y="294" text-anchor="middle" fill="#b59ce0">|β| → 1</text>
+            <text x="160" y="307" text-anchor="middle" fill="#6b6f74">dτ/dt → 0 (frame)</text>
+            <text x="310" y="151" text-anchor="end" fill="#FFEB3B">particle rest frame</text>
+            <text x="310" y="166" text-anchor="end" fill="#CBB800">B = sin θ = 1</text>
+            <text x="310" y="181" text-anchor="end" fill="#6b6f74">dτ/dt = 1</text>
           </g>
         </svg>
-        <figcaption>the balance number is the rate a clock ticks</figcaption>
+        <figcaption>on this selected slice, B matches the frame-relative proper-time rate dτ/dt</figcaption>
       </figure>
     </div>
   </section>
 
   <!-- WHY THE SAME ALGEBRA -->
   <section class="body">
-    <p class="kicker reveal">Why the rhyme is exact</p>
-    <h2 class="reveal read">One shape, wherever a whole is <b>split.</b></h2>
-    <p class="reveal read">Why does the same hyperbolic bookkeeping appear in both places? Because both problems have the same shape: <b>a fixed whole split between a "being" part and a "moving" part, with a conserved constraint across the split.</b> Whenever reality divides a whole that way, this algebra shows up. Physics found it in spacetime. We found it drawing two chords through a point — and then recognized whose equation we were holding.</p>
-    <p class="pull reveal">The mathematics is <span class="gold">inherited and credited.</span> The mapping from particles to persons is <b>our wager.</b></p>
+    <p class="kicker reveal">Why the algebraic correspondence is exact</p>
+    <h2 class="reveal read">One hyperbola, more than <b>one interpretation.</b></h2>
+    <p class="reveal read">Reciprocal coordinates naturally produce <b>xy = 1</b>. Relativity gives one physically tested use of that form; the Burrisphere gives one analytic chart. Their formal resemblance licenses comparison and questions—not transferred evidence, conserved human power, or a physical law of ethics.</p>
+    <p class="pull reveal">The algebraic correspondence is <span class="gold">exact and credited.</span> The mapping from particles to persons is <b>our wager.</b></p>
   </section>
 
   <!-- WHY IT MATTERS -->
   <section class="body">
     <p class="kicker reveal">Why this matters to you</p>
     <h2 class="reveal read">A calibration, <b>not a proof.</b></h2>
-    <p class="reveal read">When a homemade framework's core identity turns out to be structurally identical to the most confirmed equation in physics, that does not make the framework true. It makes it <em>non-arbitrary</em> — the pattern is real somewhere, beyond dispute, and the open question is only how far it travels. That question is exactly what our trial record exists to test.</p>
+    <p class="reveal read">Finding the same normalized form in a tested physical theory does not calibrate the Emergentist interpretation. It shows that the reciprocal hyperbola is mathematically familiar and gives us a precise analogy to test. Whether the analogy travels beyond the algebra remains open.</p>
     <p class="reveal read">One more discipline, printed wherever it appears: the seam (φ·ν = 1, true by construction in the chart) is never the score (B = sin θ ≤ 1, the measurement) and never the node law. The seam is the frame; the score is the picture.</p>
   </section>
 
@@ -210,7 +213,7 @@ p{margin:0 0 1.25rem}
   <section>
     <div class="verdict reveal">
       <p class="strength">Held against adversarial audit — <a href="../../record/">see the trial record</a>.</p>
-      <p class="chip"><span class="t t-e">[E]</span> equation inherited from physics, credited · <span class="t t-c">[C]</span> the mapping — wagered</p>
+      <p class="chip"><span class="t t-a">[A]</span> normalized algebraic correspondence · <span class="t t-b">[B]</span> special relativity attributed · <span class="t t-c">[C]</span> the human mapping — wagered</p>
       <div class="cta-row">
         <a class="cta primary" href="../../practice/">Try the practice in an afternoon →</a>
         <a class="cta" href="../../build/">Build with it →</a>
@@ -222,7 +225,7 @@ p{margin:0 0 1.25rem}
 
 <footer class="foot wrap">
   <div class="glyph">⊙ = • × ○</div>
-  <p>Mass-shell · the equation is Einstein's, the rhyme is ours — every claim graded on <a href="../../axioms/">the axioms page</a>, every failure dated on <a href="../../record/">the trial record</a>.<br>If you can see directly, <a href="../../exit/">put this down</a>.</p>
+  <p>Mass-shell · exact algebraic cousin, distinct interpretation — every claim graded on <a href="../../axioms/">the axioms page</a>, every failure dated on <a href="../../record/">the trial record</a>.<br>If you can see directly, <a href="../../exit/">put this down</a>.</p>
 </footer>
 
 <script>

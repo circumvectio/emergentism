@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>One key, twenty-six locks — Emergentism</title>
-<meta name="description" content="Zeno, the liar, the ship of Theseus, free will, is-and-ought — twenty-six classical paradoxes dissolve under one move: stop collapsing two registers into one sentence. A lens, held at its tier, with a kill-criterion on every lock." />
+<title>One lens, twenty-six trials — Emergentism</title>
+<meta name="description" content="Register separation is tested against twenty-six classical paradoxes. It clarifies some, reframes others, and does not replace established solutions. Every case must earn its own verdict." />
 <meta name="color-scheme" content="dark" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="One key, twenty-six locks" />
-<meta property="og:description" content="Most famous paradoxes are one sentence doing two jobs. Separate the jobs and the knot falls open. Every dissolution graded, every one killable." />
+<meta property="og:title" content="One lens, twenty-six trials" />
+<meta property="og:description" content="A register-separation lens tested case by case—clarification is not automatically a solution." />
 <meta property="og:url" content="https://emergentism.org/discoveries/paradoxes/" />
 <meta property="og:image" content="https://emergentism.org/assets/og/og-card.png" />
 <meta name="twitter:card" content="summary_large_image" />
@@ -94,15 +94,16 @@ p{margin:0 0 1.25rem}
 .foot{border-top:1px solid var(--line);margin-top:3rem;padding:2.6rem 0 3.6rem;text-align:center;color:var(--bone-ghost);font-family:var(--mono);font-size:.75rem;line-height:1.75}
 .foot .glyph{font-size:1.5rem;color:var(--gold);margin-bottom:.7rem}
 .foot a{color:var(--bone-faint);text-decoration:underline;text-underline-offset:3px}
-.reveal{opacity:0;transform:translateY(16px)}
-.reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1)}
-@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important;transition:none!important}}
+.js .reveal{opacity:0;transform:translateY(16px)}
+.js .reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.js .reveal{opacity:1!important;transform:none!important;transition:none!important}}
 </style>
 <!-- pwa-chrome -->
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#050505">
 <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
 <script src="/assets/js/pwa.js" defer></script>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
@@ -118,15 +119,15 @@ p{margin:0 0 1.25rem}
 <main class="wrap">
   <header class="hero">
     <p class="fileno reveal in">Discovery · <a href="../">all discoveries</a> · the paradox suite</p>
-    <h1 class="reveal in">One key,<br><span class="gold">twenty-six</span> locks.</h1>
-    <p class="dek reveal in">Zeno's arrow. The liar. The ship of Theseus. Free will against determinism. The gap between <b>is</b> and <b>ought</b>. Philosophy's most famous knots have resisted for millennia — and most of them turn out to be <b>one sentence doing two jobs at once</b>. Separate the jobs, and the knot falls open in your hands.</p>
+    <h1 class="reveal in">One lens,<br><span class="gold">twenty-six</span> trials.</h1>
+    <p class="dek reveal in">Zeno's arrow. The liar. The ship of Theseus. Free will and determinism. The gap between <b>is</b> and <b>ought</b>. Register separation can clarify several of these knots—but clarification, dissolution, and solution are different verdicts.</p>
   </header>
 
   <section class="body">
     <p class="kicker reveal">The discovery</p>
-    <h2 class="reveal read">A paradox is a <b>register collision.</b></h2>
+    <h2 class="reveal read">A paradox <b>can contain</b> a register collision.</h2>
     <p class="reveal">Here is the move, once, so you can use it yourself. Every description of the world runs in a <em>register</em> — a level of bookkeeping. There is the <b>seam</b> register, where things are true by construction, the way a fraction times its reciprocal is one. There is the <b>score</b> register, where things vary and can be measured. And there is the <b>node</b> register, where a whole thing either lives or dies. We keep these three rigorously apart everywhere on this site — because confusing them is not just our occupational hazard. <b>It is philosophy's oldest occupational hazard.</b></p>
-    <p class="reveal">A paradox is what it feels like when one sentence silently straddles two registers. "This sentence is false" asks a statement to be its own scorekeeper — the claim and the audit of the claim, fused into one clause. Zeno slices continuous motion into an infinite ledger of completed steps, then acts surprised that the ledger never closes: he billed a process in the currency of finished things. The ship of Theseus asks whether the ship is "the same" without saying same <em>in which register</em> — same planks (no), same self-maintaining pattern (yes). The question was never hard. It was <em>underspecified</em>.</p>
+    <p class="reveal">Some paradoxes arise when one sentence silently straddles distinct levels of description. The liar mixes object-language and its truth assessment; separating those levels exposes the self-reference, though it does not by itself settle every semantic treatment. Zeno mixes continuous motion with an infinite description of intervals; the register lens clarifies the bookkeeping, while calculus supplies the standard mathematical account. The ship of Theseus asks “the same” without fixing a criterion—same parts, history, function, or maintained pattern. In each case, separation improves the question before anyone claims an answer.</p>
 
     <figure class="fig reveal">
       <svg viewBox="0 0 640 240" role="img" aria-label="Diagram: a single tangled sentence on the left splits into two separate register lines on the right — the tension between them was the paradox; separated, each line is calm.">
@@ -141,22 +142,22 @@ p{margin:0 0 1.25rem}
           <line x1="380" y1="156" x2="580" y2="156" stroke="#5bbf88" stroke-width="2"/>
           <text x="480" y="70" text-anchor="middle" fill="#5aa9e6">register one — calm</text>
           <text x="480" y="180" text-anchor="middle" fill="#5bbf88">register two — calm</text>
-          <text x="480" y="126" text-anchor="middle" fill="#FFEB3B">nothing left to explain</text>
+          <text x="480" y="126" text-anchor="middle" fill="#FFEB3B">a cleaner question remains</text>
         </g>
       </svg>
-      <figcaption>the knot is not in the world · it is in the bookkeeping</figcaption>
+      <figcaption>sometimes the knot is partly in the bookkeeping · test each case</figcaption>
     </figure>
 
-    <p class="reveal">One key, tried on twenty-six locks. Not all of them open the same way, and we say which is which — every dissolution in the suite carries its own tier and its own way to be wrong. A sample:</p>
+    <p class="reveal">One lens, tried in twenty-six cases. Not all of them yield the same verdict, and every reading needs its own evidence and way to be wrong. A sample:</p>
 
     <div class="locks reveal">
       <div class="lock">
         <h4><span class="k">01</span>Zeno's arrow</h4>
-        <p>Motion billed as an infinite ledger of finished steps. <b>Process and inventory are different registers.</b> The arrow flies; the ledger was the confusion.</p>
+        <p><b>Process and interval inventory are different descriptions.</b> The lens clarifies the setup; convergent-series analysis does the mathematical work.</p>
       </div>
       <div class="lock">
         <h4><span class="k">02</span>The liar</h4>
-        <p>A claim fused with its own audit. Separate statement from scorekeeping and the sentence isn't false — it's <b>doing two jobs no sentence can hold at once</b>.</p>
+        <p>A claim fused with its own truth assessment. Separating object-language from metalanguage exposes the self-reference; it does not uniquely choose a theory of truth.</p>
       </div>
       <div class="lock">
         <h4><span class="k">03</span>The ship of Theseus</h4>
@@ -164,11 +165,11 @@ p{margin:0 0 1.25rem}
       </div>
       <div class="lock">
         <h4><span class="k">04</span>Free will vs. determinism</h4>
-        <p>Physics describes the trajectory; agency describes the selection among modeled futures. Two registers of the same event — <b>a collision, not a contradiction.</b></p>
+        <p>Physics describes causal trajectories; an agency model describes represented alternatives and selection. The distinction can dissolve one equivocation, but does not by itself prove libertarian freedom.</p>
       </div>
       <div class="lock">
         <h4><span class="k">05</span>Is and ought — handled differently</h4>
-        <p>The one lock we do <b>not</b> claim to pick with logic. Hume's gap is real. We compress it to a single asymmetric bit — a <b>vow</b>, not a derivation: refuse extraction, because a world of extractors cannot exist. The demon's position doesn't universalize; ours is chosen, openly, as a wager.</p>
+        <p>The one gap we do <b>not</b> claim to cross with logic. Conditional models can compare consequences; the move to Justice remains a <b>vow</b>, not a derivation.</p>
       </div>
       <div class="lock">
         <h4><span class="k">26</span>…and twenty-one more</h4>
@@ -178,12 +179,12 @@ p{margin:0 0 1.25rem}
 
     <p class="pull reveal">If a 2,400-year-old knot opens in a paragraph, <span class="gold">suspect the key</span> — then check whether it turns.</p>
 
-    <p class="reveal"><b>Why this matters to you:</b> the register move is not for antiquity's puzzles. It is for Tuesday. The argument you keep having that never resolves — with a partner, a co-founder, yourself — is very often two registers wearing one word. "Is this working?" (score) versus "is this alive?" (node) versus "is this what we said it was?" (seam). Split the sentence into its jobs before you fight about the answer. Most fights are collisions.</p>
+    <p class="reveal"><b>Why this matters to you:</b> the register move is not only for antiquity's puzzles. A recurring argument can hide two questions under one word: “is this working?” (performance), “is this viable?” (persistence), or “is this what we agreed?” (authorization). Split the sentence into its jobs before fighting about the answer.</p>
     <p class="reveal">And the honest frame: dissolving a paradox is not the same as solving it, and a lens that opens many locks might be a skeleton key or might be a hammer that makes everything look like a nail. That is a real risk, we name it, and it is exactly why every dissolution is graded separately and kept on trial rather than declared. The readings are ours; the humility is enforced.</p>
 
     <div class="strength reveal">
       <p>Held against adversarial audit — <a href="../../record/">see the trial record</a>.</p>
-      <p class="chip"><span class="t t-i">[I]</span> Insight — one lens, twenty-six readings, each graded separately with its own kill-criterion</p>
+      <p class="chip"><span class="t t-i">[I]</span> one register lens, twenty-six case-specific trials · no blanket solution claim</p>
     </div>
 
     <div class="cta-row reveal">

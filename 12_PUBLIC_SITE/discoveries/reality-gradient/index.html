@@ -95,15 +95,16 @@ figure.fig figcaption{font-family:var(--mono);font-size:.74rem;color:var(--bone-
 .foot{border-top:1px solid var(--line);margin-top:3rem;padding:2.6rem 0 3.6rem;text-align:center;color:var(--bone-ghost);font-family:var(--mono);font-size:.75rem;line-height:1.75}
 .foot .glyph{font-size:1.5rem;color:var(--gold);margin-bottom:.7rem}
 .foot a{color:var(--bone-faint);text-decoration:underline;text-underline-offset:3px}
-.reveal{opacity:0;transform:translateY(16px)}
-.reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1)}
-@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important;transition:none!important}}
+.js .reveal{opacity:0;transform:translateY(16px)}
+.js .reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.js .reveal{opacity:1!important;transform:none!important;transition:none!important}}
 </style>
 <!-- pwa-chrome -->
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#050505">
 <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
 <script src="/assets/js/pwa.js" defer></script>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
@@ -132,8 +133,8 @@ figure.fig figcaption{font-family:var(--mono);font-size:.74rem;color:var(--bone-
     <p class="kicker reveal">The observation</p>
     <h2 class="reveal read">The axis <b>outlives</b> everything placed on it.</h2>
     <div class="body reveal">
-      <p>Play a note. It exists — nobody doubts it. Now let it fade. The note is gone; but <em>pitch</em>, the axis along which that note was high rather than low, is exactly where it was. It was there before the note, it is there after, and it will host every note anyone ever plays. The same holds for the chair and the axis of chairs, the storm and the axis of pressure, you and the axis of persons.</p>
-      <p>Now ask the childish question adults have agreed to skip: <b>which of the two exists more?</b> The note that lasted two seconds, or the axis that hosts all notes forever? If your ontology can only answer "both exist, equally, yes/no," it is throwing away the most obvious datum in the comparison: one of them <em>keeps being there</em>.</p>
+      <p>Play a note, then let it fade. The event ends; the pitch coordinate remains available for describing later notes. That contrast is real in our models. Whether the coordinate is discovered, constructed, or exists independently of every model is the ontological question—not something the example settles.</p>
+      <p>Now ask: <b>which is more foundational for the explanation?</b> The two-second note, or the space of possible pitches in which it can be located? Emergentism chooses an ordering in which the possibility structure is more foundational. That is a declared lens, not an observed substance that “outlives” the note.</p>
       <p>So we adopt the ordering openly: <b>what is more foundational is more real.</b> Not "the note is an illusion" — the note is perfectly real. It simply sits lower on the gradient than the axis it borrowed its existence from. Reality is a slope, not a checkbox, and the slope rises toward the degrees of freedom themselves.</p>
     </div>
     <figure class="fig reveal">
@@ -171,7 +172,7 @@ figure.fig figcaption{font-family:var(--mono);font-size:.74rem;color:var(--bone-
         <!-- side arrow -->
         <line x1="80" y1="270" x2="80" y2="60" stroke="#CBB800" stroke-width="1.6"/>
         <path d="M80 50l-5 12h10z" fill="#CBB800"/>
-        <text x="66" y="170" text-anchor="middle" font-family="Roboto Mono,monospace" font-size="10.5" fill="#CBB800" transform="rotate(-90 66 170)">more foundational → more real</text>
+        <text x="100" y="54" text-anchor="start" font-family="Roboto Mono,monospace" font-size="10.5" fill="#CBB800">more foundational ↑ more real</text>
       </svg>
       <figcaption>the gradient of reality · instances die, axes remain</figcaption>
     </figure>

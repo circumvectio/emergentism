@@ -3,7 +3,7 @@
  "short_name": "Emergentism",
  "description": "A navigational instrument assembled from constraints. Tier-honest claims, published poisons, visible exit.",
  "id": "/compass/",
- "start_url": "/compass/",
+ "start_url": "/",
  "scope": "/",
  "display": "standalone",
  "background_color": "#050505",

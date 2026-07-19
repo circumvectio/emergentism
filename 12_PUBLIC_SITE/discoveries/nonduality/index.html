@@ -83,7 +83,7 @@ p{margin:0 0 1.25rem}
 .reg p{color:var(--bone-dim);font-size:.9rem;font-weight:300;margin:0}
 .reg p b{color:var(--bone);font-weight:500}
 .t{font-family:var(--mono);font-size:.78rem;font-weight:700;padding:.06em .42em;border-radius:3px;border:1px solid currentColor;line-height:1.5;white-space:nowrap}
-.t-i{color:var(--t-i)}.t-c{color:var(--t-c)}
+.t-a{color:var(--t-a)}.t-b{color:var(--t-b)}.t-i{color:var(--t-i)}.t-c{color:var(--t-c)}
 .strength{border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:0 14px 14px 0;background:linear-gradient(90deg,rgba(255,235,59,.05),transparent 70%);padding:1.5rem 1.8rem;margin:2.4rem 0 0;max-width:74ch}
 .strength p{margin:0 0 .8rem;color:var(--bone);font-weight:300}
 .strength p a{color:var(--gold-deep);text-decoration:underline;text-underline-offset:3px}
@@ -97,15 +97,16 @@ p{margin:0 0 1.25rem}
 .foot{border-top:1px solid var(--line);margin-top:3rem;padding:2.6rem 0 3.6rem;text-align:center;color:var(--bone-ghost);font-family:var(--mono);font-size:.75rem;line-height:1.75}
 .foot .glyph{font-size:1.5rem;color:var(--gold);margin-bottom:.7rem}
 .foot a{color:var(--bone-faint);text-decoration:underline;text-underline-offset:3px}
-.reveal{opacity:0;transform:translateY(16px)}
-.reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1)}
-@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important;transition:none!important}}
+.js .reveal{opacity:0;transform:translateY(16px)}
+.js .reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.js .reveal{opacity:1!important;transform:none!important;transition:none!important}}
 </style>
 <!-- pwa-chrome -->
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#050505">
 <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
 <script src="/assets/js/pwa.js" defer></script>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
@@ -122,27 +123,27 @@ p{margin:0 0 1.25rem}
   <header class="hero">
     <p class="fileno reveal in">Discovery · <a href="../">all discoveries</a> · nonduality, without the fog</p>
     <h1 class="reveal in">The top <span class="gold">rhymes</span><br>with the ground.</h1>
-    <p class="dek reveal in">For three thousand years, contemplatives have reported the same two things: <b>all is one</b>, and yet <b>the many are not erased</b>. Usually that gets sold as a mystery you must feel or a slogan you must repeat. We found something more useful: a place in the chart where <b>both statements are exactly true — in different registers</b>.</p>
+    <p class="dek reveal in">Contemplative traditions have long held two ideas together: <b>unity</b>, and a plurality that is not erased. Our chart offers a precise way to keep those readings from contradicting one another—by assigning them to different registers.</p>
   </header>
 
   <section class="body">
     <p class="kicker reveal">The discovery</p>
     <h2 class="reveal read">The unity is a <b>register</b>. The plurality is <b>real</b>.</h2>
     <p class="reveal">Our chart carries an identity at its seam: seeing times doing, φ·ν, is <em>identically one</em>. Read that carefully — it is true <b>by construction</b>, the way a fraction times its reciprocal is one. It certifies the coordinates. It measures nothing, ranks no one, proves nothing about your life. And that is precisely its power: it is the one statement in the whole framework that <em>cannot</em> vary, the floor under every measurement.</p>
-    <p class="reveal">Now hear the mystics' report again. "All is one" — not as a claim about your score, not as a claim about whether you or your neighbor flourish or fail, but as a statement in the seam register: <b>beneath every varying thing, an identity that holds no matter what</b>. That is not fog. That is the cleanest kind of statement there is. The confusion — theirs sometimes, ours nearly, everyone's usually — comes from letting the seam leak into the registers where things actually differ:</p>
+    <p class="reveal">Now treat “all is one” as an <b>interpretive projection</b> onto the seam, not as a theorem derived from φν ≡ 1. The identity holds inside the selected coordinates; the nondual reading is ours. The confusion begins when that reading leaks into registers where conditions actually differ:</p>
 
     <div class="three reveal">
       <div class="reg seam">
         <h4>The seam <span class="f">φ · ν ≡ 1</span></h4>
-        <p><b>True by construction.</b> The frame's own bookkeeping — the "all is one" register. It never varies, and it never grades you.</p>
+        <p><b>True by construction.</b> The frame's bookkeeping. Reading it as “all is one” is interpretive; the identity itself never varies and never grades you.</p>
       </div>
       <div class="reg score">
         <h4>The score <span class="f">B = sin θ ≤ 1</span></h4>
-        <p><b>Varies. Is measured.</b> Balance, peaking at the equator. Persons differ here, days differ here. The many are real here.</p>
+        <p><b>Varies inside the chart.</b> Balance peaks at the equator. Applying the score to persons or days requires an empirical mapping.</p>
       </div>
       <div class="reg node">
         <h4>The node <span class="f">P = Φ × V</span></h4>
-        <p><b>Lives or dies.</b> A whole thing's coherence and viability, where either factor at zero kills it. Nothing mystical softens this.</p>
+        <p><b>Conjunctive by definition.</b> In the selected product model, either factor at zero forces the node score to zero. Real-world fit remains open.</p>
       </div>
     </div>
 
@@ -177,11 +178,11 @@ p{margin:0 0 1.25rem}
 
     <p class="pull reveal">Unity that erases the many is a slogan. Unity that <span class="gold">locates</span> the many is a map.</p>
 
-    <p class="reveal"><b>Why this matters to you:</b> you do not have to choose between the mystic and the engineer. The felt sense that everything is somehow already whole can be exactly right <em>at the seam</em> while your project still fails <em>at the node</em> — and neither fact cancels the other. Rest in the first. Work on the second. Anyone selling you oneness as a substitute for viability is collapsing registers, and now you can name the move as they make it.</p>
+    <p class="reveal"><b>Why this matters to you:</b> you do not have to choose between the mystic and the engineer. A felt sense of wholeness can be represented <em>at the seam</em> while a project still fails <em>at the node</em>—and neither register cancels the other. Anyone selling oneness as a substitute for viability is collapsing registers.</p>
 
     <div class="strength reveal">
       <p>Held against adversarial audit — <a href="../../record/">see the trial record</a>.</p>
-      <p class="chip"><span class="t t-i">[I]</span> the register reading — a lens, held while it earns its keep <span class="t t-c">[C]</span> summit ∼ ground — a similarity exhibited, wagered, never claimed as identity</p>
+      <p class="chip"><span class="t t-a">[A]</span> seam identity in the selected chart · <span class="t t-b">[B]</span> traditions attributed · <span class="t t-i">[I]</span> nondual projection · <span class="t t-c">[C]</span> summit ∼ ground</p>
     </div>
 
     <div class="cta-row reveal">

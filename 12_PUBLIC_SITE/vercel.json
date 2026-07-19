@@ -6,10 +6,16 @@
   "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": true,
-  "redirects": [
-    { "source": "/", "destination": "/compass/", "permanent": false }
-  ],
   "headers": [
+    {
+      "source": "/index_legacy_2026_07_19(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive"
+        }
+      ]
+    },
     {
       "source": "/(.*)",
       "headers": [

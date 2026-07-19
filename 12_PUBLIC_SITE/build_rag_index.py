@@ -33,10 +33,12 @@ OVERVIEW_PAGES = ["about", "synthesis", "axioms", "0", "1", "2", "3", "4",
 MAX_PASSAGE = 700          # chars of text per passage
 HEAD_RE = re.compile(r'<h([12]) id="([^"]+)"[^>]*>(.*?)</h\1>', re.S)
 TAG_RE = re.compile(r"<[^>]+>")
+INERT_RE = re.compile(r"<(?:template|script)\b[^>]*>.*?</(?:template|script)>", re.S | re.I)
 WS_RE = re.compile(r"\s+")
 
 
 def clean(html_fragment: str) -> str:
+    html_fragment = INERT_RE.sub(" ", html_fragment)
     text = TAG_RE.sub(" ", html_fragment)
     text = (text.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
                 .replace("&quot;", '"').replace("&#39;", "'").replace("&nbsp;", " "))

@@ -156,15 +156,16 @@ p{margin:0 0 1.25rem}
 .foot .glyph{font-size:1.5rem;color:var(--gold);margin-bottom:.7rem}
 .foot a{color:var(--bone-faint);text-decoration:underline;text-underline-offset:3px}
 
-.reveal{opacity:0;transform:translateY(16px)}
-.reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1)}
-@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important;transition:none!important}}
+.js .reveal{opacity:0;transform:translateY(16px)}
+.js .reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.js .reveal{opacity:1!important;transform:none!important;transition:none!important}}
 </style>
 <!-- pwa-chrome -->
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#050505">
 <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
 <script src="/assets/js/pwa.js" defer></script>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
@@ -185,7 +186,7 @@ p{margin:0 0 1.25rem}
 
     <div class="pitch reveal in">
       <p class="lab">If you remember one thing</p>
-      <p>Emergentism takes the simplest fact in arithmetic — a number times its opposite is one — and turns it into a way of seeing how anything, a cell or a company or a country, stays alive: by holding <b>coherence</b> and <b>capability</b> in balance. The maths is old and certain. The reading laid over it is new. And unusually, the whole thing is built to be <b>proven wrong</b> — and this year, in one place, it was, and we published it.</p>
+      <p>Emergentism begins with a selected reciprocal chart—<b>φ=cot(θ/2)</b> and <b>ν=tan(θ/2)</b>, so φν=1 by definition—and tries it as a lens for paired necessities such as foresight and means. The chart mathematics is old and certain. The reading laid over it is new, optional, and built to be <b>proven wrong</b>.</p>
     </div>
   </header>
 
@@ -198,17 +199,17 @@ p{margin:0 0 1.25rem}
       <div class="n">1</div>
       <div>
         <h3>Two things, and you need <b>both</b>.</h3>
-        <p>Think of anything that has to survive — a body, a business, an idea. It always has two sides. One is <b>coherence</b>: how well it hangs together, how clearly it sees, how much sense it makes. The other is <b>capability</b>: how much it can actually <em>do</em> in the world — its reach, its resources, its power to act.</p>
-        <p>A brilliant plan nobody can execute is a corpse. Raw power with no coherence is a cancer. You have met both. Neither survives. You need the two <em>together</em>.</p>
+        <p>For an action, ask two separate questions. First: can the agent model and rank reachable futures? Call that <b>foresight</b>. Second: does the agent have the embodied means, tools, access, and authority to act? Call that <b>means</b>.</p>
+        <p>A plan without means cannot be enacted; means without a usable model cannot select a destination. This makes the pair conjunctive for the action register we are modeling. It does not prove that every living or social system has only two factors.</p>
       </div>
     </div>
 
     <div class="step reveal">
       <div class="n">2</div>
       <div>
-        <h3>They <b>multiply</b> — they don't add.</h3>
-        <p>Here is the part that isn't obvious until you see it. These two don't <em>add</em> up, where being great at one covers for being terrible at the other. They <em>multiply</em>. And anything times zero is zero.</p>
-        <p>All the coherence in the world times no capability is nothing — a beautiful fossil. All the capability times no coherence is nothing — formless appetite. <b>Kill either factor and the whole thing goes to zero.</b> That's why you can't paper over a missing half. The multiplication won't let you.</p>
+        <h3>We choose a <b>conjunctive product</b>—and keep it on trial.</h3>
+        <p>Emergentism declares the normalized action score <b>P<sub>node</sub>=ΦV</b>. In that selected model, either factor at zero makes the score zero. Product, minimum, harmonic, and Cobb–Douglas aggregators can all express “both are needed,” but they rank interior cases differently.</p>
+        <p>So the zero boundary is exact <em>inside the declared product</em>; the claim that multiplication best fits real action is conjectural. Addition is one rival, not the only rival. <b>The product is our wager, not arithmetic's command.</b></p>
       </div>
     </div>
 
@@ -222,7 +223,7 @@ p{margin:0 0 1.25rem}
             <p>The <b>equator</b> is the one place where the two are equal, both exactly 1, in perfect balance. That's the sweet spot. Not the top. The <em>middle</em>.</p>
           </div>
           <figure class="globe">
-            <svg viewBox="0 0 300 320" role="img" aria-label="A globe. The north pole is labelled all coherence, no power — a fossil. The south pole is all power, no coherence — a cancer. The gold equator across the middle is labelled balance, both equal to one.">
+            <svg viewBox="0 0 300 320" role="img" aria-label="A selected balance chart. The north pole is high foresight and low means; the south pole is high means and low foresight. The gold equator is the chart's balanced point.">
               <circle cx="150" cy="160" r="112" fill="none" stroke="rgba(245,245,243,.16)" stroke-width="1"/>
               <ellipse cx="150" cy="160" rx="112" ry="26" fill="none" stroke="rgba(245,245,243,.07)" stroke-width="1"/>
               <line x1="38" y1="160" x2="262" y2="160" stroke="#FFEB3B" stroke-width="2.4"/>
@@ -230,13 +231,13 @@ p{margin:0 0 1.25rem}
               <circle cx="150" cy="272" r="4.5" fill="#e0453b"/>
               <circle cx="150" cy="160" r="4" fill="#FFEB3B"/>
               <g font-family="Roboto Mono,monospace" font-size="10.5">
-                <text x="150" y="30" text-anchor="middle" fill="#b59ce0">all coherence</text>
-                <text x="150" y="300" text-anchor="middle" fill="#e0453b">all power</text>
-                <text x="270" y="156" fill="#FFEB3B">balance</text>
-                <text x="270" y="171" fill="#CBB800">both = 1</text>
+                <text x="150" y="30" text-anchor="middle" fill="#b59ce0">high Φ · low V</text>
+                <text x="150" y="300" text-anchor="middle" fill="#e0453b">high V · low Φ</text>
+                <text x="292" y="156" text-anchor="end" fill="#FFEB3B">chart balance</text>
+                <text x="292" y="171" text-anchor="end" fill="#CBB800">φ = ν = 1</text>
               </g>
             </svg>
-            <figcaption>the poles are traps · the equator is the point</figcaption>
+            <figcaption>in the selected chart, the balance score peaks at the equator</figcaption>
           </figure>
         </div>
       </div>
@@ -246,17 +247,17 @@ p{margin:0 0 1.25rem}
       <div class="n">4</div>
       <div>
         <h3>Now the <b>surprise</b> — and be careful with it.</h3>
-        <p>That exact globe, with that exact reciprocal balance, turns out to be the same shape Einstein's relativity is written on. Line the pieces up and they match, term for term: the balance point is the state of rest, and the balance number is — this is real — <b>the rate at which your clock ticks</b>. Near the poles, where balance breaks, the clock stops. Same statement as "the poles cannot act."</p>
-        <p>Here's the discipline. This does <em>not</em> mean we've explained relativity, or that anything "travels at light speed." It means two very different things — a theory of motion, and a picture of balance — happen to be drawn on the same simple shape, so they share it. <b>A genuine coincidence of mathematics, and we label it exactly that.</b> It's the strongest single thing on offer <em>because</em> it's checkable, not because it's grand.</p>
+        <p>In a 1+1-dimensional or collinear fixed-mass slice, special relativity can be written in reciprocal light-cone coordinates whose product is one. Equality is the particle's rest frame, and the chart score B matches the frame-relative rate <b>dτ/dt=1/γ</b>. As |β| approaches one relative to that frame, dτ/dt approaches zero. A particle's own proper time is not “frozen,” and none of this says a human pole cannot act.</p>
+        <p>Here's the discipline. This does <em>not</em> mean we've explained relativity, or that anything "travels at light speed." A tested physical model and an Emergentist balance chart share one normalized hyperbola under stated restrictions. <b>The algebraic correspondence is exact; the interpretation is a wager.</b></p>
       </div>
     </div>
 
     <div class="step reveal">
       <div class="n">5</div>
       <div>
-        <h3>An <b>ethic</b> falls out — as arithmetic, not preaching.</h3>
-        <p>Because the two sides multiply, watch what happens when you steal. Say you pump up your own capability by draining a partner's — taking without giving back. You went up a little; they went down. But the thing that actually matters is the <em>product</em> across the whole system, and you just lowered it. Do it at scale and the system you live in shrinks under you.</p>
-        <p>So "don't extract" isn't a commandment handed down from anywhere. It's what the multiplication says: <b>extraction is a losing move.</b> (Honestly: this holds under real conditions — repeated dealings, genuine coupling, some way to catch cheats. One-shot smash-and-grab can still pay. The framework's whole politics is about making the honest game the real one.)</p>
+        <h3>A chosen <b>ethic</b> meets a conditional dynamic.</h3>
+        <p>Arithmetic alone cannot tell us whose good counts. The framework first takes a refusable Justice vow toward every impact-bearer. It then asks what follows under explicit conditions: repeated dealings, genuine coupling, finite substrates, visible costs, and institutions that can detect or contest extraction.</p>
+        <p>Under those conditions, growing by destroying another bearer's durable potential can also erode the trust, ecology, or counterparty that later gains require. One-shot extraction can still reward the extractor, and different aggregation rules rank interior trade-offs differently. So non-extraction is <b>a chosen floor informed by conditional consequences</b>, not an ethic proved by multiplication.</p>
       </div>
     </div>
 
@@ -292,9 +293,9 @@ p{margin:0 0 1.25rem}
       <div>
         <p class="colhead know"><span class="d"></span>What we know</p>
         <div class="item">
-          <h4>The balance shape <b>is</b> relativity's shape.</h4>
-          <p>The reciprocal-balance globe, written out, is special relativity term for term — the balance number is literally the rate of lived time. Verified by calculation, to a trillionth.</p>
-          <span class="gloss"><span class="t t-a">[A]</span> proven maths — check it yourself</span>
+          <h4>The balance chart has a <b>relativistic cousin.</b></h4>
+          <p>In a 1+1-dimensional or collinear fixed-mass slice, normalized light-cone coordinates satisfy the same reciprocal hyperbola as the selected chart. On that slice, the balance coordinate matches the frame-relative proper-time rate dτ/dt. This exact algebra does not prove the globe's human interpretation.</p>
+          <span class="gloss"><span class="t t-a">[A]</span> algebraic correspondence · <span class="t t-b">[B]</span> special relativity credited</span>
         </div>
         <div class="item">
           <h4>The honesty machine <b>works.</b></h4>
@@ -304,12 +305,12 @@ p{margin:0 0 1.25rem}
         <div class="item">
           <h4>We know exactly what we <b>haven't</b> earned.</h4>
           <p>The famous "it must multiply" claim turned out unproven: the same evidence fits several balance-laws equally well. Rather than bluff, we downgraded it and said so. Knowing the edge of your knowledge is itself a result.</p>
-          <span class="gloss"><span class="t t-e">[E]</span> settled, and signed off</span>
+          <span class="gloss"><span class="t t-b">[B]</span> recorded audit result</span>
         </div>
         <div class="item">
-          <h4>The knockout is <b>where the law actually bites.</b></h4>
-          <p>Your plan can be flawless — that's all coherence. But the instant you can't act on it, your capability drops to zero, and the whole thing collapses to <em>zero</em> — not "a little worse," zero, because the two multiply. <em>Everyone has a plan until they get punched in the face.</em> That's the real claim: not gradual differences in the middle of the pack, but total collapse the moment either factor hits nothing. You don't need a survey to see it. You need one punch.</p>
-          <span class="gloss"><span class="t t-b">[B]</span> the zero-factor catastrophe — exact, at the boundary</span>
+          <h4>The selected product has a <b>zero-factor boundary.</b></h4>
+          <p>If capability is defined by the declared model P=ΦV, then P=0 whenever either modeled factor is zero. That is an exact consequence of the selected formula, not evidence that the formula uniquely or universally fits real capability. Other conjunctive models share the zero boundary but rank interior cases differently; the empirical fit remains open.</p>
+          <span class="gloss"><span class="t t-a">[A]</span> consequence of the declared model · <span class="t t-c">[C]</span> universal real-world fit</span>
         </div>
       </div>
     </div>
@@ -331,16 +332,16 @@ p{margin:0 0 1.25rem}
           <span class="gloss"><span class="t t-i">[I]</span> an interpretation, with real history under it</span>
         </div>
         <div class="item">
-          <h4>Good organisations really do <b>multiply</b> their two sides.</h4>
-          <p>The balance law may genuinely predict which teams and systems thrive — the "weakest link matters most" pattern. This is the version most likely to earn its keep in the real world.</p>
-          <p class="howlose"><b>How it loses:</b> if plain addition predicts outcomes just as well on real data.</p>
-          <span class="gloss"><span class="t t-i">[I]</span> a bet, and a testable one</span>
+          <h4>The product may model some organisations better than its rivals.</h4>
+          <p>The selected law may predict which teams and systems thrive when foresight and means are genuinely non-substitutable. This is an empirical wager, not a consequence of the chart identity.</p>
+          <p class="howlose"><b>How it loses:</b> if addition, minimum, harmonic, Cobb–Douglas, or a domain-specific model predicts outcomes as well or better under fair comparison.</p>
+          <span class="gloss"><span class="t t-c">[C]</span> a testable product-specific wager</span>
         </div>
         <div class="item">
-          <h4>"Don't extract" is a <b>stable equilibrium</b>, not just a nice idea.</h4>
-          <p>Under repeated, coupled, enforceable play, zero-extraction is the strategy that holds. The ethical floor — and it never depended on the shakier claims around it.</p>
-          <p class="howlose"><b>How it loses:</b> if honest cooperation can't be made stable even with enforcement.</p>
-          <span class="gloss"><span class="t t-s">[S]</span> structural — the most consequential if true</span>
+          <h4>Specified institutions can <b>stabilize non-extraction.</b></h4>
+          <p>Some repeated games can sustain cooperation when discount rates, payoffs, monitoring, sanctions, and exit are specified. That conditional result can inform institutional design; it does not make zero-extraction the unique equilibrium of every repeated game or derive the Justice vow.</p>
+          <p class="howlose"><b>How it loses:</b> name the game and thresholds first; if exploitation remains the stable response under those declared conditions, or enforcement merely hides the extraction, the design claim fails.</p>
+          <span class="gloss"><span class="t t-i">[I]</span> chosen floor · <span class="t t-c">[C]</span> general institutional reach</span>
         </div>
         <div class="item">
           <h4>There's a <b>direction</b> built into how things come together.</h4>
@@ -380,7 +381,7 @@ p{margin:0 0 1.25rem}
   <!-- CLOSE -->
   <section>
     <div class="close reveal">
-      <p>So here's the whole thing, once more, plainly: <b>hold coherence and capability in balance, because they multiply; refuse to grow by draining what sustains you; and never let how good a story sounds outrun how much of it you've actually earned.</b> The maths is real and old. The reading is new and honest about being a reading. And the proof that the honesty is real is that we've already lost rounds — and kept the losses on the wall.</p>
+      <p>So here's the whole thing, once more, plainly: <b>for action, model foresight and means as jointly necessary; test the selected product against real rivals; refuse to enlarge yourself by destroying another impact-bearer's durable potential; and never let how good a story sounds outrun how much of it you've earned.</b> The chart mathematics is real and old. The reading is new, optional, and honest about being a reading. The trial record keeps the losses on the wall.</p>
       <div class="cta-row">
         <a class="cta primary" href="../practice/">Try the practice in an afternoon →</a>
         <a class="cta" href="../axioms/">See every claim, graded →</a>
