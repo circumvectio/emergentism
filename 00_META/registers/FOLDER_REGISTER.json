@@ -2,7 +2,7 @@
   "schema": "magnum-opus/folder-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files directory closure (deterministic; no timestamps)",
-  "entry_count": 670,
+  "entry_count": 671,
   "entries": [
     {
       "path": ".",
@@ -12,7 +12,7 @@
       "owns": "> **The Goal (Ω stated):** [`00_THE_GOAL.md`](01_TELEOLOGY/00_THE_GOAL.md) — the project's telos, owner-declared 2026-06-12 and tier-fenced:",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 2950,
+      "tracked_file_count": 2955,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -64,7 +64,7 @@
       "owns": "**Canonical phrase:** The map helps the practitioner walk, then gets out of the way.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 145,
+      "tracked_file_count": 146,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1546,7 +1546,7 @@
       "owns": "> The compressed context layer for agents and fast human orientation.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 471,
+      "tracked_file_count": 472,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1754,7 +1754,7 @@
       "owns": "UPLINK AUDITS AND EXECUTIONS LANE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 141,
+      "tracked_file_count": 142,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7721,7 +7721,7 @@
       "owns": "01_EMERGENTISM / 90_ARCHIVE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 324,
+      "tracked_file_count": 327,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -8554,6 +8554,19 @@
       "must_not_own": null,
       "status": "unrated",
       "tracked_file_count": 1,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "90_ARCHIVE/staging_drafts_2026_07_20",
+      "type": "archive",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 3,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
