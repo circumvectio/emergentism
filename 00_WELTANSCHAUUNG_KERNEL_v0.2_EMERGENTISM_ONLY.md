@@ -5,16 +5,16 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[D] staged synthesis — no K2 promotion; no Skyzai warrant"
+  register: "[D] staged synthesis — no founder promotion receipt; no Skyzai warrant"
   canonical_phrase: "Constrained freedoms, typed existence, costed emergence, correction, vow, exit"
 type: emergentism-weltanschauung-kernel
 version: "v0.2"
 date: 2026-07-19
-status: "[D] STAGED — critical successor-candidate to v0.1; signed receipts remain controlling"
+status: "STAGED [D] — successor candidate; signed receipts remain controlling until an explicit founder-promotion receipt exists"
 evidence_tier: "Each statement is typed below; this assembly remains [D]"
 owner: 01_EMERGENTISM
 scope_lock: "Emergentism-only philosophy. Skyzai runtime, products, entities, commerce, DAV/PRISM/K2 execution machinery, and cross-root propagation are excluded as warrant."
-supersedes_candidate: "00_WELTANSCHAUUNG_KERNEL_v0.1.md only if adopted; until then this is a parallel correction-candidate"
+supersedes_candidate: "00_WELTANSCHAUUNG_KERNEL_v0.1.md only if explicitly promoted; v0.1 remains the reconciled predecessor"
 parents:
   - 00_THE_AMRITA.md
   - 02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md

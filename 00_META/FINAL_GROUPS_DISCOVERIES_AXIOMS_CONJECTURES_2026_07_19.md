@@ -19,6 +19,8 @@ evidence_tier: "[B] for every citation (each file:line re-verified this session)
 
 status: **[D] STAGED — K2 aware, not signed**
 
+> **Reconciliation banner (2026-07-19, post-Receipt-133, K3 annotation — content preserved):** This register is the campaign's **operational full map** (Emergentism + Skyzai lanes). Two successor artifacts now stand beside it: `00_META/EMERGENTIST_PARTITION_v0.1.md` (Emergentism-only filter of this file) and `01_EMERGENTISM/00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md` (the council-endorsed doctrine-kernel candidate), adjudicated in receipt `133_FULL_ROSETTA_COUNCIL_…2026_07_19.md`. Two of the council's v0.1 criticisms trace to this file's own structure and are answered here, not by rewrite: **(a)** the "18 axioms" row-count is a *row count, not a protected census* — no count in this register is load-bearing (this file's §7 already says so; the council's no-census rule is the same law); **(b)** K2-8's `D6 ~ D0` is doctrine-content with **Skyzai-lane decision provenance** — under the v0.2 provenance firewall it is *not* Emergentism-native warrant, and its §1 listing here reads as *decision record*, not as philosophical evidence. For doctrine, cite the v0.2 kernel; for operations, this map stands.
+
 method note: every entry carries its tier + primary citation; the partition is exhaustive by construction (every claim in the corpus lands in exactly one group; group boundaries are the audit's own rulings, not this file's inventions)
 
 ## Source key (short name → file)

@@ -82,6 +82,10 @@ This is where packet 139 belongs. Decentralized Authority Model is not anti-stru
 
 | File | Current Path | Role |
 |---|---|---|
+| Bounded Generative Emergentism `[D]` | `01_EMERGENTISM/06_ONTOLOGY/00_BOUNDED_GENERATIVE_EMERGENTISM_2026_07_19.md` | Staged Emergentism-only DoF/form ontology; operational reachability; quantum measurement reframe with outcome-selection fence |
+| Degrees-of-Freedom Ontology `[D]` | `01_EMERGENTISM/06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY_PENDING_K2.md` | Staged Plato repair and plenitude wager, corrected to forms-across-DoF, operational reachability, and interpretation-neutral quantum record emergence |
+| Emergent Axioms E1–E10 `[D]` | `01_EMERGENTISM/06_ONTOLOGY/03_THE_EMERGENT_AXIOMS_PENDING_K2.md` | Staged pure-Weltanschauung successor set; existing signed canon remains controlling |
+| Conjectures W1–W12 `[D]` | `01_EMERGENTISM/06_ONTOLOGY/04_THE_CONJECTURES_PENDING_K2.md` | Staged wager ledger with corrected reachability/incompressibility and measurement boundaries |
 | The core state of being | `01_EMERGENTISM/06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md` | Seed / Being / Dasein / beings |
 | Ontology across dimensions | `01_EMERGENTISM/06_ONTOLOGY/00_ONTOLOGY_ACROSS_DIMENSIONS.md` | L6 crosswalk for D0-D6, Ground / Being / Dasein / beings, logarithmic center, and anti-reification guardrails |
 | Finity as ontological boundary | `01_EMERGENTISM/06_ONTOLOGY/00_FINITY_AS_ONTOLOGICAL_BOUNDARY.md` | L6 reading of finity as finite disclosure, not mathematical overclaim or Ground possession |

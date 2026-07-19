@@ -22,6 +22,8 @@ filter_discipline: "Skyzai = EXCLUDED (02_SKYZAI/* operational sweep, products, 
 
 status: **[D] STAGED — K2 aware, not K2 signed**
 
+> **Council banner (2026-07-19, post-Receipt-133, K3 annotation — content preserved):** the Full Rosetta Council adjudicated this file in `11_UPLINK/50_AUDITS_AND_EXECUTIONS/133_FULL_ROSETTA_COUNCIL_…2026_07_19.md` and found four substantive defects, verified present: (1) "`forms are degrees of freedom`" (:50, :268) — corrected by the council: forms are *stable invariants/equivalence classes/order parameters/attractors formed across constrained DoF*, not the DoF themselves; (2) `[E]` tier usage (:101, :106) — outside the active `[A/B/S/I/D/C]` ladder; (3) "18 axioms" (:58) reads as a protected census and collects definitions/standard theorems/model results — see the v0.2 kernel's §4 established-resources firewall; (4) K2-8 listed as Emergentism-native discovery (:106) — Skyzai-lane decision provenance, not philosophical warrant. **Successor-candidate:** `01_EMERGENTISM/00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md` (staged [D], not a silent replacement). This v0.1 remains on the record per K3; read it through the council's corrections.
+
 method note: every entry carries its tier + primary citation; the partition is exhaustive by construction (every Emergentist claim lands in exactly one group; the boundary is *this is doctrine, not operation*); group boundaries follow the audit's own rulings (126/130/131) plus their survivors; **no silent upgrade of any synthetic-gap or retracted form**; **the Skyzai side of the audit's output is the orchestrator's surface, not this one**.
 
 ## 0 · Source key (short name → file)

@@ -96,6 +96,9 @@ All ~100 files, grouped by role. `00_*` is a semantic flag for foundational cont
 
 | File | Role |
 |---|---|
+| [`FINAL_EMERGENTISM_TAXONOMY_v0.2_2026_07_19.md`](FINAL_EMERGENTISM_TAXONOMY_v0.2_2026_07_19.md) | Emergentism-only final candidate: separates foundational commitments, definitions, external resources, native discoveries, structures, vows, conjectures, open debts, and dead forms; includes the DoF/form and quantum-measurement corrections. `[D]`, not K2-adopted. |
+| [`EMERGENTIST_PARTITION_v0.1.md`](EMERGENTIST_PARTITION_v0.1.md) | Emergentism-only filter of FINAL_GROUPS (operational sweep removed). Council-criticized in Receipt 133 (four defects: forms-as-DoF, `[E]` tiers, census reading, K2-8 provenance) — bannered in place; read through the corrections. `[D]`. |
+| `../00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md` + `../11_UPLINK/50_AUDITS_AND_EXECUTIONS/133_FULL_ROSETTA_COUNCIL_…2026_07_19.md` | The council-endorsed doctrine kernel (provenance firewall, typed-existence cascade, six commitments C0–C6) + its adjudication receipt; raw L1–L7 reports in `133_ROSETTA_COUNCIL_RAW/` (SHA256 verified). `[D]` staged candidates. |
 | [`FINAL_GROUPS_DISCOVERIES_AXIOMS_CONJECTURES_2026_07_19.md`](FINAL_GROUPS_DISCOVERIES_AXIOMS_CONJECTURES_2026_07_19.md) | Capstone partition map: the complete grouping of what Emergentism is after the full audit campaign (Discoveries · Axioms · Structures · Conjectures · Dead · Open). [D] STAGED — K2 aware, not signed. |
 | [`TOMBSTONE_REAUDIT_2026_07_19.md`](TOMBSTONE_REAUDIT_2026_07_19.md) | Tombstone reaudit: the twelve dead forms, second verification (12/12 tombstones closed; 11/12 DEAD-BUT-LEAKING with resurrection sweep). [D] STAGED. |
 | [`THEOLOGY_ENVELOPE_TN2_TRANSFER_TEST_2026_07_19.md`](THEOLOGY_ENVELOPE_TN2_TRANSFER_TEST_2026_07_19.md) | T-N2 transfer-test signature envelope (conditional balance-optimum): [D] PENDING-K2, staged for ratify-conditional / hold / reject. |

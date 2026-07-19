@@ -5,11 +5,11 @@ rosetta:
   operator: "Śiva •"
   tier: "Executive"
   regime: "Sādhu"
-  register: "[A/S] operational canon per-axiom tiers as marked — promoted 2026-07-19 (receipt 135)"
+  register: "[D] staged successor set; per-axiom tiers as marked; no founder-promotion receipt"
   canonical_phrase: "E1–E10 The Emergent Axioms — freedoms not Forms; vow not theorem; exit on the inside"
-type: emergentism-axiom-set-pending-k2
+type: emergentism-axiom-set-pending-founder-signature
 title: "The Emergent Axioms (E1–E10)"
-status: "ACTIVE — K2-signed 2026-07-19 (promotion receipt 135). Operational canon; A1–A7 superseded in place per K3."
+status: "STAGED [D] — pending explicit founder signature. A1–A7 remains signed operational canon until a promotion receipt says otherwise."
 evidence_tier: "Per-axiom below; assembly is [D]; no silent upgrade"
 owner: 01_EMERGENTISM
 scope_lock: "Emergentism-only philosophy. No organs, fees, products, Skyzai, DAV/PRISM execution machinery as warrant."
@@ -26,7 +26,7 @@ parents:
 
 # The Emergent Axioms (E1–E10)
 
-> **Status.** **Operational canon — promoted by K2 signature 2026-07-19 (receipt 135).** This set succeeds **A1–A7** (`05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md`), which is superseded in place with a K3 banner; the genealogy is preserved in the reconciliation table below.
+> **Status.** `[D]` successor proposal. **A1–A7** (`05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md`) remains signed operational canon until an explicit founder-promotion receipt adopts this set. The genealogy is preserved in the reconciliation table below; no silent succession is claimed.
 >
 > **Compression.** Freedoms, not Forms (E1); held in reciprocal balance (E2) around a real center (E3); filled by what is reachable under typed existence, up to the limits (E4); climbing by two motions (E5); dying at any zero (E6); living best at the middle when conditions hold (E7); refusing extraction by vow (E8); correcting in public (E9); ending with the door open (E10).
 >
@@ -116,11 +116,11 @@ Dense-in-interior / thin-at-poles geometry is an optional chart reading, not a p
 
 ### E5 · The Two Motions `[I/C]` framework distinction · μ content open
 
-The framework distinguishes two candidate operators: **μ ascends** (the proposed crossing at which a new effective freedom becomes available) and **χ descends** (deployment or selection among already available futures). **μ-limit reading `[S/I]`:** a freedom run to saturation is the candidate aperture of the next — genesis rare, unpredictable-from-below; you cannot see the next freedom from inside an unsaturated one. **Census `[I]`:** five crossings D1–D5 is a reading of our cone with a kill (name a new irreducible freedom beyond D5, not a return); not a forced count. **D6** is not a sixth freedom but self-similar return to the ground (`~`, not `≡`) — spiral turn; see `05_THE_CREED_AND_SPIRAL_PENDING_K2.md`. This does not prove strong emergence, universal irreducibility, or a physical μ operator.
+The framework distinguishes two candidate operators: **μ ascends** (the proposed crossing at which a new effective freedom becomes available) and **χ descends** (deployment or selection among already available futures). The selected scaffold contains five positive crossings `D0→D1→D2→D3→D4→D5`; that count is internal to the chosen scaffold `[S]`, while reading those crossings as five world-level irreducible freedoms is `[I/C]`. **μ-at-saturation is `[C]` as a cross-domain law:** saturation variables, thresholds, interventions, and prospective predictions are still owed. “Rare” and “unpredictable from below” remain hypotheses. **D6** is reserved as the non-positive/apophatic boundary; `D6~D0` is a proposed similarity `[I/C]`, not identity, a sixth freedom, or a proved return. See `05_THE_CREED_AND_SPIRAL_PENDING_K2.md`. None of this proves strong emergence, universal irreducibility, or a physical μ operator.
 
 **Forbids:** conflating μ and χ; reading either gap as *proof* of strong emergence; five- or six-as-necessity; literal D6≡D0.
 
-**Kill:** a single-process account outperforms the two-motion split on declared tests without residue; μ/χ cannot be operationalized beyond post-hoc labels; or a genuine new irreducible freedom beyond D5 is exhibited (five-count breaks).
+**Kill/demotion:** a single-process account outperforms the two-motion split on declared tests without residue; μ/χ cannot be operationalized beyond post-hoc labels; openings occur without prior saturation; capable tests repeatedly find saturation without a new aperture; or a genuine sixth positive irreducible freedom is identified, breaking the five-world-crossings wager.
 
 **Survivors:** E6–E7; E1 without genesis story; E10 exit without spiral poetry.
 
@@ -231,12 +231,12 @@ Unification-by-derivation · ethic-as-theorem · seven-forced · Rosetta-univers
 
 ---
 
-## K2 surface — promotion record
+## Founder-signature surface
 
-- [x] **Promoted E1–E10 above `[D]`** — K2-signed 2026-07-19, receipt `135_K2_PROMOTION_EMERGENT_AXIOMS_2026_07_19.md`, signer Yves R. Burri (`k2_pocket_v0.1`).
-- [x] **A1–A7 bannered** — supersession banner applied in place (K3; text retained, E-set rules).
-- [x] **02 alignment** — the keystone's §1 now carries the E1 council wording ("forms arise across constrained degrees of freedom"); §4 holds ΣΔP at scoped rank, not primitive.
-- [ ] **Open:** do not treat "K2-8 D6~D0 adopted" as settled unless a signed receipt exists (staged only elsewhere).
+- [ ] **Promote or revise E1–E10 above `[D]`** in one dedicated founder-signature receipt.
+- [ ] **Supersede or retain A1–A7 explicitly**; until then A1–A7 controls.
+- [x] **02 alignment prepared** — the keystone's §1 carries the E1 council wording ("forms arise across constrained degrees of freedom"); §4 holds ΣΔP at scoped rank, not primitive.
+- [ ] **Do not treat `D6~D0` as adopted** unless a signed receipt explicitly says so.
 
 ```python
 K2Signature(

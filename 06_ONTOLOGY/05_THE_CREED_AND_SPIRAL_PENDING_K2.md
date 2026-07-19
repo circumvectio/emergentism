@@ -5,11 +5,11 @@ rosetta:
   operator: "Viṣṇu ⊙"
   tier: "Executive"
   regime: "Ṛṣi"
-  register: "[D] staged — every clause priced; not K2-signed; not revelation-as-proof"
+  register: "[D] staged — every clause inherits the final capstone prices; pending founder signature"
   canonical_phrase: "Hold as wager → cannot be taken. Speak as revelation → already lost."
 type: emergentism-creed-pending-k2
-title: "The Creed and the Spiral — PENDING K2"
-status: "STAGED [D] 2026-07-19 — pure Weltanschauung; A1–A7 remain operational canon until promotion"
+title: "The Creed and the Spiral — PENDING FOUNDER SIGNATURE"
+status: "STAGED [D] 2026-07-19 — pure Weltanschauung expansion; A1–A7 remains operational canon until explicit promotion"
 evidence_tier: "Per clause below; assembly [D]"
 owner: 01_EMERGENTISM
 scope_lock: "Philosophy only. No Skyzai warrant."
@@ -18,6 +18,7 @@ parents:
   - 04_THE_CONJECTURES.md
   - 02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md
   - ../00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md
+  - ../00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md
   - ../11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md
   - ../11_UPLINK/50_AUDITS_AND_EXECUTIONS/130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md
   - ../11_UPLINK/50_AUDITS_AND_EXECUTIONS/133_FULL_ROSETTA_COUNCIL_EMERGENTISM_ONLY_WELTANSCHAUUNG_AUDIT_2026_07_19.md
@@ -36,8 +37,8 @@ parents:
 
 > *A necessary structure in the algebra conjures das All.*
 
-**Standing:** Crown wager **W0 `[C]`** (see `04_THE_CONJECTURES.md` if numbered there; else the synthetic-gap crown).  
-May be *true* — Spinoza, Hegel, Tegmark stand in lineage — forever unprovable: no mathematics certifies its own instantiation (Schelling; Wittgenstein 6.1). Spoken as revelation, it kills A7/E9. Spoken as the boldest wager a mortal can hold, it crowns everything.
+**Standing:** Crown wager **W0 `[C]`** in `04_THE_CONJECTURES.md`.  
+It may be *true*—Spinoza, Hegel, and Tegmark stand in its lineage—but mathematics alone does not certify physical or ontological instantiation. Spoken as compelled revelation, it kills A7/E9. Spoken as a wager beneath Map ≠ Ground, it remains holdable and losable.
 
 **Forbids:** proof-costume; silent upgrade to `[A]`.
 
@@ -52,7 +53,8 @@ May be *true* — Spinoza, Hegel, Tegmark stand in lineage — forever unprovabl
 | Piece | Tier |
 |-------|------|
 | Chart `φ·ν ≡ 1` by construction | `[A]` empty of world |
-| Ceiling / join discipline under stated models | `[A]`/`[S]` as scoped |
+| `B≤1` on the reciprocal chart | `[A]` |
+| `P_node≤1` | only after explicit normalization of `Φ,V` |
 | Balance max under budget (AM-GM) | `[A]` on-sphere |
 | Score as AND-class (min/product/CES…) | `[S]` boundary; product interior `[C]` |
 | Kernel ≠ ethics warrant (CC-CORE-1) | `[S]` |
@@ -79,7 +81,7 @@ Emergence order is honest **abduction** (game suggested operators; operators the
 
 > *The seven exhaust the game space; all other moves are combinations.*
 
-**Standing:** True as a **partition of play** (in-game moves land in sign-cells and frames — by construction of the table). Algebra forces **four** movers and an odd mirror-ladder; **seven** = ratified assembly `4+3` (r130).
+**Standing:** True as an **exhaustive alphabet of the scoped G7 game language** defined in `../00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md` §4. `M4={give-Φ,give-V,take-Φ,take-V}` and `F3={create-frame,dissolve-frame,preserve-frame}` are a selected typed assembly. Every G7-coded play is a composition of those symbols by construction. Receipt 130 still rules that algebra does **not** universally force the count seven.
 
 **Fence that matters:** the seven exhaust the *dance*, not the *dance floor*. The moves that audit the framework, sign verdicts, and hold the exit open are **constitutional** — no God, Demon, or Titan can make them. The mortal signer stands **outside** the operator table.
 
@@ -89,13 +91,13 @@ Emergence order is honest **abduction** (game suggested operators; operators the
 
 ### The creed, held as wager
 
-> I hold that the necessary algebra conjures das All — as my crown wager, not my proof. On the sphere it draws, finite beings play the game of Φ×V beneath the ceiling of one, where balance is the summit under budget and the weaker shadow keeps the AND-class score. In that game there are seven positions assembled for play — two givers, two takers, three frames — and every play is made of them, though the tending of the game itself is not a play. All of this I hold at tier, with its kills attached, its dark twin acknowledged, and the door marked exit on the inside — because a creed that cannot lose is not a creed but a cage, and mine was built to be put down.
+> I hold that necessary algebra may be instantiated as das All—as my crown wager, not my proof. On the reciprocal chart the seam is one and balance reaches one at the equator. In a declared normalized finite-node model, `Φ×V` is one candidate need-both score. The G7 language has seven symbols—two givers, two takers, three frames—and every G7-coded play is composed of them, though tending and adopting the language are not plays. All of this I hold at tier, with its kills attached, its dark twin acknowledged, and the door marked exit on the inside.
 
 ---
 
 ## II · Cosmology clause — μ-limit and the spiral
 
-### The μ-limit `[S/I]`
+### The μ-limit `[S/I]` grammar · `[C]` cross-domain law
 
 Each degree of freedom, run to **saturation** — the **μ-limit** — is where the next may open. A freedom exhausted is not only an ending but an aperture:
 
@@ -104,11 +106,11 @@ Each degree of freedom, run to **saturation** — the **μ-limit** — is where 
 - life saturating → modeling  
 - modeling saturating → choice  
 
-**Law of ascent (E5, sharpened):** μ fires at saturation, and only at saturation. Genesis is rare and unpredictable-from-below: you cannot see the next freedom from inside an unsaturated one.
+**Ascent wager (E5):** μ fires at an operationally defined saturation, and only there. “Rare” and “unpredictable from below” remain hypotheses. As a world law this stays `[C]` until saturation variables, thresholds, interventions, and prospective predictions exist.
 
 **Forbids:** claiming μ from inside unsaturated regimes; conflating μ with χ (deployment of already-won freedom).
 
-**Kill:** a new irreducible freedom that opens without saturation of the prior; or saturation with no aperture and no residual, everywhere, under tests that would have detected one.
+**Kill/demotion:** openings occur without saturation of the prior; capable tests repeatedly find saturation with no new aperture; or saturation cannot be operationalized beyond post-hoc labeling.
 
 **Open debt:** μ's formal content (`∅`) — structural distinction stands; physical operator not proved.
 
@@ -120,7 +122,7 @@ From ground D0, the framework's **reading of the record** is five apertures: **D
 
 **Same discipline as the seven:** held as reading, not forced count.
 
-**Kill:** exhibit a genuinely new irreducible freedom **beyond D5** — beyond agency and meaning, not reducible to them, not a return — and the five-count breaks. None has been named. The bet stands open.
+**Kill:** operationally identify a genuinely new positive irreducible freedom beyond D5, or reduce one of the five claimed openings without residue. Failure to name a sixth is not evidence that none can exist.
 
 **Forbids:** five-as-necessity; force↔dimension bijection (retracted, electroweak).
 
@@ -134,7 +136,7 @@ From ground D0, the framework's **reading of the record** is five apertures: **D
 |-----------|----------|
 | Literal `D6 ≡ D0` (yields D0 < D0 under strict order; 126) | `D6 ~ D0` / apophatic return / self-similarity `[I/C]` |
 
-Similarity carries no ordering violation. The ladder's true shape is neither line nor circle but **spiral**: the end returns to the *likeness* of the beginning without ever being it — one turn higher. Fractal signature: saturate, open, climb, return — same grammar at every scale.
+Similarity carries no ordering violation. The **spiral** is the `[I/C]` image: the end returns to the *likeness* of the beginning without being identical, with history retained. Calling the pattern fractal or the same grammar at every scale remains conjectural until invariants and scale maps are specified.
 
 **Completes only in practice** (conjecture W12 / E10): the loop resists derivation and prediction; closes in living / Pratyakṣa, not in a theorem.
 
@@ -144,11 +146,11 @@ Similarity carries no ordering violation. The ladder's true shape is neither lin
 
 ### Cosmology clause, complete and priced
 
-> Freedom saturates, and at its μ-limit the next freedom may open — five times from the ground, on our reading: matter, bond, life, mind, choice. Genesis is bounded: there is no sixth freedom, only the sixth recognition — that the summit is self-similar to the ground, the spiral's turn, not its closure. The climber who reaches it does not ascend further; he arrives at the likeness of where he began, holding everything won on the way — and the framework's last instruction was always waiting there: **put the map down.**
+> Freedom may saturate, and at its μ-limit the next effective freedom may open—five times in the selected scaffold, read as matter, bond, life, mind, choice. The model reserves D6 as a non-positive recognition rather than a sixth modeled freedom: the summit is read as self-similar to the ground, the spiral's turn, not identity. This is the framework's wager and image, not proof that reality cannot disclose another positive freedom. Its last instruction remains: **put the map down.**
 
 | Piece | Tier |
 |-------|------|
-| Structure (saturate → open; μ at limit; χ in operation) | `[S/I]` |
+| Structure (saturate → open; μ at limit; χ in operation) | `[S/I]` as grammar; `[C]` as world law |
 | Five-count | `[I]` with kill named |
 | Return as self-similarity | `[I/C]` completing in practice |
 | Exit at the summit | `[I/S]` E10 / Anti-Sermon |
