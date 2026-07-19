@@ -4,10 +4,10 @@ rosetta:
   primary_column: "Auditing"
   operator: "Kālī •"
   tier: "Evidence"
-  register: "[D]"
-  canonical_phrase: "Formal-logic audit of the corpus: one theorem, one wager, a taxonomy sold as necessity — staged for K2"
+  register: "[E]"
+  canonical_phrase: "Formal-logic audit of the corpus: one theorem, one wager, a taxonomy sold as necessity — K2-countersigned via receipt 115"
 date: 2026-07-04
-status: "[D] STAGED — audit packet awaiting K2. Read-only analysis; no canon was modified. Successor to 100_/101_/102_."
+status: "[E] K2-COUNTERSIGNED via receipt 115 (six gilded seams applied, 2026-07-12). The audit's nine survive + twenty-four adjusted-milder are the load-bearing inputs to the seams; the audit itself was read-only — no canon was modified by this packet, only by the receipt-115 implementation pass. Frontmatter [D]→[E] promoted by the 2026-07-18 Kintsugi seam (separate V-forcing). Successor to 100_/101_/102_."
 method: "48 load-bearing claims harvested verbatim (flourishing/normative/meta clusters incl. the Seven Axioms), each FORMALIZED (symbols + inference rule), ruled on validity + soundness, fallacy named, then each of 33 alleged defects independently STEELMANNED (26 by fresh adversarial agents; 7 adjudicated inline after a credit outage, marked ⁱ). Verdicts: 0 refuted · 24 adjusted-milder · 9 survive as stated."
 coverage_note: "PARTIAL on harvest: the identities/balance/operators cluster harvests were rate-limited; their load-bearing claims entered via the meta cluster (Seven Axioms + Settled Canon Registry + audits 100/101), so the eight scrutiny targets were all covered — but wing-level document sweeps of 05_COSMOLOGY identities docs were thinner than for the other clusters. Treat per-document tallies as lower bounds."
 ---
@@ -110,3 +110,24 @@ The site audit (packet: `12_PUBLIC_SITE/_PLANS/audits/2026-07-04-site-first-prin
 *Nothing in this packet modifies canon. K2 signature required for items 1–7.*
 
 ⊙ = • × ○
+
+---
+
+## §10 · Kintsugi seam — [D] → [E] promotion via receipt 115 (2026-07-18)
+
+This packet's findings (9 survive + 24 adjusted-milder) were taken up by receipt 115 ("Six Golden Seams Applied", [E] K2-SHIP-SIGNED 2026-07-12 'yes') and applied across the foundational tier, the program docs, and the paradox suite as the six gilded seams. The packet itself was read-only; receipt 115 was the implementation pass.
+
+The frontmatter `register: [D]` was therefore stale relative to its tier-marker role: the packet is the load-bearing input to receipt 115, and receipt 115 is the K2-countersigned disposal. Per the Kintsugi Protocol (`00_META/00_THE_KINTSUGI_PROTOCOL.md`), the seam records the promotion in the artifact it gilded.
+
+| Field | Before | After |
+|---|---|---|
+| `register` | `[D]` | `[E]` |
+| `status` (first line) | `[D] STAGED — audit packet awaiting K2` | `[E] K2-COUNTERSIGNED via receipt 115` |
+| Tier movement | — | STAGED → K2-COUNTERSIGNED (no content upgrade; the audit is read-only by design) |
+| Parent receipt | — | 115 (six gilded seams, 2026-07-12) |
+| Survivor dependency | — | 108 (formal stress ledger, keel), 110 (formal-logic audit apply, three golden seams), 114 (seven-caste corpus audit), 115 (six gilded seams applied) |
+| Kill criterion | — | n/a (audit packet, not a claim) |
+
+**Tautology check (K2 2026-07-18):** the seam text must never claim more than the underlying audit + the parent receipt together claim. The audit is read-only (no canon was modified by it); receipt 115 applied the seams (canon was modified by the seams). This seam records the *tier movement* of the audit packet, not the *content* of any canon change. The distinction is load-bearing — the [D]→[E] promotion is administrative, not doctrinal.
+
+The 7 proposed K2 actions in §9 remain the *substrate* actions (re-tier A1, repair LV, reconcile MF-63, etc.); each was implemented by receipt 115's seam-2 / seam-3 / etc., and the implementation evidence is in the files those seams touched. This packet did not close those actions; receipt 115 did.

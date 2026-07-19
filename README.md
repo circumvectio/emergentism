@@ -17,17 +17,32 @@ rosetta:
 
 > **Canonical enumeration:** For the crisp authoritative list of the constitutional invariants, the K*/A* namespace disambiguation, and the Ω ratification status, see the canonical anchor `01_EMERGENTISM/05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md` (or equivalent relative path). Current K2 ruling (2026-05-30): **5 + 1** — five refusals plus Ω as the directional +1. Ω is not a sixth refusal.
 
+> **Current state — 2026-07-19 (K2-signed wave, receipt K2_SESSION_2026_07_19):** new root-level strategy canon now sits beside the Foundation readers —
+> - [`00_THE_SPREAD_v0.1.md`](00_THE_SPREAD_v0.1.md) — K2-signed spread strategy: users, not believers; the funnel fable → /plainly/ → /record/ → /axioms/ → book → /practice/ → /build/; Open Canon Foundation, not a religion; immune system (№017 rule, red-team budget, forkable canon).
+> - [`00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md`](00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md) — K2-signed arena map: all worldviews are wagers; posture is the competitive axis.
+> - [`00_THE_ROSETTA_PROTOCOL_v0.1.md`](00_THE_ROSETTA_PROTOCOL_v0.1.md) — K2-signed 2026-07-19: be the stone, not the decree; the three-scripts rule (story / plain terms / receipt); the fourth script is machine.
+> - [`00_THE_FIRST_RECEIPT_RECOMMENDATION_v0.1.md`](00_THE_FIRST_RECEIPT_RECOMMENDATION_v0.1.md) — K2-ratified: the REFU play-money public forecast ledger is the first visible η = 0 receipt.
+> - [`00_OPEN_CANON_FOUNDATION_CHARTER_DRAFT_v0.1.md`](00_OPEN_CANON_FOUNDATION_CHARTER_DRAFT_v0.1.md) — staged charter canon; filing remains counsel-gated.
+> - [`00_OPEN_CANON_FOUNDATION_COUNSEL_QUESTIONS_v0.1.md`](00_OPEN_CANON_FOUNDATION_COUNSEL_QUESTIONS_v0.1.md) — the counsel-question companion to the charter draft.
+> - Site: the `/fable/` and `/practice/` funnel stages now live under [`12_PUBLIC_SITE/`](12_PUBLIC_SITE/).
+
 **Status:** Active  
 **Date:** 2026-06-16 (root tree synced to 2026-06-15 three-pillar reorganization; canonical surface preserved per K3)
 **Scope:** Perennial doctrine root, sevenfold Foundation, Uplink packets, tools, seed
 
-*Last updated 2026-06-16: state-headers synced; "Does NOT Contain" section's path references updated to current canonical pillars (post-2026-06-15 three-pillar reorg + retired-alias cleanup); DS_Store sweep covered by the 2026-06-16 7-Varṇa hidden-file cleanup cycle; AGENTZ dispatch surface live at `../.codex/agents/ROOT_AND_GOD_DEPLOYMENT.md`.*
+*Last updated 2026-06-16: state-headers synced; "Does NOT Contain" section's path references updated to current canonical pillars (post-2026-06-15 three-pillar reorg + retired-alias cleanup); DS_Store sweep covered by the 2026-06-16 7-Varṇa hidden-file cleanup cycle; AGENTZ dispatch surface live at `../.codex/agents/ROOT_AND_GOD_DEPLOYMENT.md`. 2026-07-19: current-state note and Quick Links extended for the 2026-07-18/19 K2-signed strategy canon (Spread, Synthetic Gap, Rosetta Protocol, First Receipt, OCF charter pair) and the `/fable/` + `/practice/` site stages.*
 
 ## Quick Links
 - [`00_CANONICAL_TREE_OUTLINE.md`](00_CANONICAL_TREE_OUTLINE.md) — the disk-verified whole-tree map; read it before concluding any name or number is "wrong"
 - [`AGENT_README.md`](AGENT_README.md) — agent route card for this org
 - [`00_EMERGENTISM_AS_A_LENS.md`](00_EMERGENTISM_AS_A_LENS.md) — compressed worldview/lens entry assembled from current source canon
 - [`00_FOUNDATION_READER_GUIDE.md`](00_FOUNDATION_READER_GUIDE.md) — long-form source reading spine for reality, ontology, teleology, and public symbol
+- [`00_THE_SPREAD_v0.1.md`](00_THE_SPREAD_v0.1.md) — K2-signed spread strategy: users, not believers; the public funnel (2026-07-19)
+- [`00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md`](00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md) — K2-signed arena: all worldviews are wagers; posture is the axis (2026-07-19)
+- [`00_THE_ROSETTA_PROTOCOL_v0.1.md`](00_THE_ROSETTA_PROTOCOL_v0.1.md) — three-scripts rule (story / plain terms / receipt); fourth script is machine (K2-signed 2026-07-19)
+- [`00_THE_FIRST_RECEIPT_RECOMMENDATION_v0.1.md`](00_THE_FIRST_RECEIPT_RECOMMENDATION_v0.1.md) — first visible η = 0 receipt: REFU play-money forecast ledger (K2-ratified)
+- [`00_OPEN_CANON_FOUNDATION_CHARTER_DRAFT_v0.1.md`](00_OPEN_CANON_FOUNDATION_CHARTER_DRAFT_v0.1.md) — staged Open Canon Foundation charter; counsel-gated
+- [`00_OPEN_CANON_FOUNDATION_COUNSEL_QUESTIONS_v0.1.md`](00_OPEN_CANON_FOUNDATION_COUNSEL_QUESTIONS_v0.1.md) — counsel questions for the charter draft
 - [`11_UPLINK/00_CORE/00_INDEX.md`](11_UPLINK/00_CORE/00_INDEX.md) — uplink route map
 - [`08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/README.md`](08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/README.md) — Rosetta Stone horizontal translations
 

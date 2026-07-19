@@ -87,6 +87,56 @@ The name "Zero-Sum Resolution Equation" is literal in log coordinates: the two l
 
 **Discipline.** This section does not replace the verbatim block. The verbatim block is canonical. This section is the log-coordinate expression of the same block, included because the logarithmic reformulation makes the additive symmetry and the "zero sum" explicit. The log form is subordinate, not superior.
 
+## Through-the-point chord derivation of balance
+
+Let `S` and `N` be the south and north poles of a sphere of radius `R`, and let
+`P` have colatitude `θ`. The two Euclidean chords through that same surface
+point have lengths
+
+```text
+|SP| = 2R cos(θ/2)
+|NP| = 2R sin(θ/2).
+```
+
+Their dimensionless normalized product is
+
+```text
+B_chord := |SP| |NP| / (2R²)
+         = 2 sin(θ/2) cos(θ/2)
+         = sin θ
+         = B ≤ 1.
+```
+
+Equality holds exactly at the equator, `θ=π/2`; the product approaches zero
+toward either pole. On the unit sphere this is the numerical operation of
+dividing the raw chord product by `2`, the diameter's numerical value. The
+radius-general formula above supplies the dimensionless normalization. `[A]`
+
+The polar-axis pieces cut by the altitude of `P` give the squared companion:
+
+```text
+R(1+cos θ) · R(1−cos θ) / R² = sin² θ = B².        [A]
+```
+
+The chart-shadow construction remains distinct:
+
+```text
+φ = cot(θ/2),   ν = tan(θ/2),   φν = P∞ = 1,
+B = 2/(φ+ν) = |SP||NP|/(2R²) = sin θ.
+```
+
+Thus one point has two exact measures: the reciprocal chart-shadow product is
+the constant seam; the normalized through-point chord product is the varying
+balance score. Calling the chords “bottom-up” and “top-down” reaches is an
+interpretive reading `[I]`; the identities themselves are elementary geometry
+`[A]`.
+
+**Register fence.** The chord factors are not the lowercase chart coordinates
+`φ,ν`, and neither pair is automatically the uppercase finite-node pair `Φ,V`.
+This derivation establishes `B≤1` on the sphere. It does not by itself derive a
+normalization, conservation law, moral verdict, or empirical adequacy claim for
+`P_node=Φ×V`.
+
 ## Usage Rule
 
 Use this block **verbatim** when compressing the framework in:

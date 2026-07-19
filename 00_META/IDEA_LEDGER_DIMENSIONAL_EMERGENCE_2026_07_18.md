@@ -1,3 +1,17 @@
+---
+rosetta:
+  primary_level: L5
+  primary_column: Meta
+  operator: "Brahmā ○"
+  tier: "Executive"
+  regime: "Brāhmaṇa"
+  register: "[D]"
+  canonical_phrase: "The Idea Ledger by Dimensional Emergence — 85 harvested ideas, every one at audited tier"
+type: idea-ledger-synthesis
+title: "THE IDEA LEDGER — BY DIMENSIONAL EMERGENCE — 2026-07-18"
+date: 2026-07-18
+---
+
 # THE IDEA LEDGER — BY DIMENSIONAL EMERGENCE — 2026-07-18
 
 **Status:** [D] curated synthesis. Every idea is listed **at its audited tier — nothing upgraded.** The tier next to each idea is the product, not a disclaimer: this corpus's differentiating asset is that every claim has been adversarially audited and carries its honest epistemic price tag.

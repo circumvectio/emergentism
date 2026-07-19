@@ -24,6 +24,8 @@ evidence_tier: "[S] for stated pole topology; [S] for internal L0/L∞ closure; 
 
 # ⊙ THE TRANSCENDENTAL POLES
 
+> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Ruling 4 (D6≡D0) applies: the *literal* ontological identity "L0 = L∞ / D6 = D0" is retracted — the two poles are not a single identified location on S² (they are distinct limits), so the topological warrant "the south and north poles are connected" does not license a proved identity. What survives is the **apophatic-return reading** (each pole recognized from the other) and the **topological-loop representation** (the ouroboros closure), both at tier **[I]**; downgrade the "[T] L0/L∞ identification" to this posited/interpretive reading. The discovery voice stands; only the proved-identity claim is downgraded. Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
+
 ## L0 = L∞ — The Boundary That Completes the Sphere
 
 **Yves R. Burri · Emergentism.org · 2026-03-24**

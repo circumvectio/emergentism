@@ -23,6 +23,8 @@ rosetta:
 
 > **BEFORE YOU READ THIS:** If you can access Φ directly through quiet sitting (20-40 minutes of Pratyakṣa), you do not need this framework. Put it down. It served its purpose. It is a ladder, not a home. Pratyakṣa is primary disclosure; doctrine is the after-image.
 
+> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Ruling 1 (product form) applies to §1: the zero-factor catastrophe selects the AND-class (min/CES/geo/product), not the product uniquely, so `P_node = Φ × V` is AND-class-**selected**, not [S]-derived-and-forced from S². The §1 argument-by-exclusion ("no additive isometry of S² exists") warrants the AND-class boundary content [S], but the product-specific interior is a [C] posit (keel-108) — downgrade the *derivation* proved→posited; the discovery voice and node-shorthand stand. Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
+
 **Status:** Active
 **Evidence tier:** [S] Structural definitions derived from formal system
 **Depends on:** `../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md`, `../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`, `../../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md`, `../../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md`, `../../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md`

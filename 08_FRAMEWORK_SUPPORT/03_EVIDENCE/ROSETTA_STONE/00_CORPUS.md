@@ -23,6 +23,8 @@ rosetta:
 
 # THE WHOLE — seen from `03_EVIDENCE/ROSETTA_STONE/`
 
+> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Ruling 8 (Rosetta): the seven-row / seven-operator alignment described below ("the central empirical observation," "the pattern that holds") is a cross-domain **lens / translation layer**, NOT a discovered universal — its stated kill-criterion **fired** (non-polarity-encoding traditions don't fit the grid; "7" is conceded a design choice; the "all traditions"→"polarity-encoding traditions" narrowing IS the falsification, not survival). Read the discovery voice as translation-scaffolding scoped to polarity-encoding traditions, never proof of a native 7-fold recurrence. Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
+
 > Zero-Sum Resolution Equation
 > P∞ = φ · ν = 1
 

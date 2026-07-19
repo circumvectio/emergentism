@@ -1,0 +1,84 @@
+---
+rosetta:
+  primary_level: L5
+  primary_column: Meta
+  operator: "Brahmā ○"
+  tier: "Executive"
+  regime: "Brāhmaṇa"
+  register: "[D]"
+  canonical_phrase: "SKYZAI family constructive refinement — the Brahmā pass (companion to Kālī's critical pass)"
+type: skyzai-refinement-design
+title: "THE SKYZAI FAMILY, REFINED — THE CONSTRUCTIVE PASS — 2026-07-18"
+date: 2026-07-18
+---
+
+# THE SKYZAI FAMILY, REFINED — THE CONSTRUCTIVE PASS — 2026-07-18
+
+**Status:** [D] STAGED. Companion to the critical pass (`SKYZAI_FAMILY_EMERGENTIST_REFINEMENT_2026_07_18.md`, commit `be4d360`). No build, no product-canon change; auditor stages, signer applies.
+**What this is:** the first pass was **Kālī** — it cut the counterfeit (the overclaims, the Sybil holes, the η-banners over rent points). This is the **Brahmā** pass — it builds: for each product, what it *honestly is* once the crown comes off, the value it genuinely creates, and the single smallest move that raises its real V. **Thesis, confirmed:** every product is *stronger* described at its earned tier than at its inflated one — being the honest witness, the honest effector, or the thin neutral certifier is the moat, not the planet-scale apex.
+**Method:** 12-agent generative workflow (`wf_6bbcb437-701`), each refiner building forward from the committed diagnosis, grounded in the Idea Ledger. Every claim at earned tier; the ratified golden-split untouched; geometry never spent as proof; **the only apex is the mortal signer, never an organ.**
+
+---
+
+## 1. The family, re-seen as one body
+
+> Skyzai is one organism that **observes what is** (Circle), **prices what could be** (ReFu), **recommends what should be done** (Agentz), and **settles only what a named human has already signed** (Skyzai) — riding on a substrate that owns nothing (Spectre), guarded by an immune organ that can only refuse under due process (Evolutionary.Network), forming capital, certification, and health on the same grammar (Aureus, OFN, Helios), fed by a keypair-native on-ramp (NOSTR_VPN), and held honest by a map that never lets a diagram outrank a receipt (the Operating Model) — a **witness → price → choice → signature → act → outcome loop whose only apex is a mortal signer, whose every organ is forbidden the next organ's job, and whose refusal to fuse or to extract at any seam is precisely the moat.**
+
+The build — not the critique — is this: **every organ is constructed to be forbidden the next organ's job.** The witness constitutionally *cannot decide* (Circle, ReFu); the chooser by architecture *cannot act* (Agentz returns only staged effects, owns no execution envelope); the effector *cannot originate* an act (Skyzai carries only a signed one); the substrate *owns nothing to capture* (Spectre holds no authority); the immune organ *can only separate under due process* (Evolutionary.Network has no research authority of its own). That mutual severance is not overhead — **it is the moat, because each organ earns trust exactly by lacking the one power that would corrupt it.** The organism is not a claim of scale; it is a claim of *shape*.
+
+## 2. The pitch — the family, one honest line each
+
+The eleven shareable lines, ordered by the flywheel. This is the payload that goes to the world; every one survives a skeptic because every one is modest and falsifiable.
+
+1. **TheCircle** *(observe / IS)* — When the news is most chaotic, Circle gets *stronger*: it turns the crowd's attention into verification capacity and hands you a case file where every claim carries its evidence, its preserved dissent, and a human who signed for it.
+2. **RealityFutures** *(price / COULD)* — The forecast is free, its track record is public, and the only fee is a cut of the value that actually arrives — the prediction market with no reason to tilt the odds.
+3. **Agentz / APU** *(choose / SHOULD)* — The family's only chooser and its only organ that can never act: it fuses Circle's what-is and ReFu's what-could into a what-should that *you alone can sign* — and by construction it never holds your keys.
+4. **Skyzai** *(act / EXECUTE)* — The chariot, not the charioteer: it settles only what a mortal already signed and hands back a receipt — and the day its gate demands two real people instead of one key, its *refusal to choose* becomes the only settlement guarantee that can't be captured.
+5. **Spectre** *(the substrate)* — The mycelium that meters every gram of work and owns none of it: route your whole business through it and walk away with your keys and your receipts, because the mesh only ever remembers — it never decides.
+6. **Evolutionary.Network** *(refuse / SHOULD-NOT)* — An immune system's whole art is refusing to attack its own body: the due-process kernel that makes a network's power to punish structurally unable to turn autoimmune — no slash without a cited evidence chain, no bounty on a head, no strike without an appeal.
+7. **Aureus** *(form capital)* — Turns a verified real-world asset into financeable capital without asking you to trust that the people minting against your gold are also the only ones who checked it was there.
+8. **Open Finance Network** *(certify)* — The certifier with no stake in the deal: it stamps that a tokenized asset's books are real, on an open standard nobody owns — and because its only product is neutrality, it publishes its own extraction ledger so you can audit the auditor.
+9. **Helios** *(witness the body)* — Sells *latency*: the compressed gap between your body drifting and a human noticing — from an engine built so it can never profit from your sickness, never underwrite you on your genes, and never call you sick without a named person signing.
+10. **NOSTR_VPN** *(the on-ramp)* — Tell it where you want to go, not which server to rent: a keypair-native VPN on a rake-free open mesh that earns only by measuring which exits actually work and operating a few it can stand behind — never by taxing the traffic it carries.
+11. **The Operating Model** *(the map)* — Open the repo and in one page you know the only two things Skyzai sells, the single seam where they meet, and — for every component — whether it's *built* or merely *drawn*; the map's whole value is that it never lets a diagram outrank a receipt.
+
+## 3. Per-product refined form
+
+Each product's honest identity, its load-bearing fence (the one seam that *unlocks* it), and the smallest V-raising move.
+
+| Product | Honest identity (lens-corrected) | The fence that unlocks it | Next emergence (smallest V-move) |
+|---|---|---|---|
+| **TheCircle** | A permissionless investigation room that turns contributed AI capacity into an adversarially-tested, dissent-preserving **Case File of what has been observed** — never a forecast, decision, or "million eyes." | **S3 witness/chooser firewall** — "the only intelligence surface that constitutionally *cannot* decide" is the moat; fencing publish/redact dissolves the 72h rent-spread into an honest latency receipt. | One live, mortal-signed Case File that crosses into ReFu: reconcile the 4 F1 shapes, repair the dead IS-guard regex, flip publish for one real event. |
+| **RealityFutures** | An on-chain layer that turns a *bounded* question into a staked, tier-tagged probability logged against the realized outcome — its **Brier-scored track record** is the product, not any single forecast. | **S2 per-surface η-ledger** — "the price *is* the probability" holds only if the house genuinely takes nothing; kill the η≤2%/veZAI rake, keep pay-on-realized-alpha. | Deploy one binary market to Hedera testnet, resolve against a real oracle, write the first ForecastReceipt with its four ClaimMeta fields. |
+| **Agentz / APU** | The family's one true **D5 chooser**: a PUSH pipeline that fuses F1+F2 into a proposal-bounded PROCEED/HOLD/REJECT, staged in a K2 envelope — inspectable, principal-bound, non-custodial. | **S1 personhood-binding** — "AI recommends, only a natural person signs" is the whole pitch; today it passes on one enum + one non-null string. | Ship `should_allocation_emit.py` so a running chain *produces* the ratified keystone artifact end-to-end, not just defines it. |
+| **Skyzai** | The organism's **settlement effector** — the faithful chariot that carries out an already-chosen, already-signed act, binds it to a receipt, and returns it. Witnesses nothing, chooses nothing, signs for no one. | **S1 personhood-binding** — non-discretionary execution is only a guarantee if the gate above it is ≥2 real persons, not one key stamped "PRISM." | In `prism_gateway.py`, replace single-key `sign_action` with a real `verify_council` requiring ≥2 distinct attested persons before any receipt emits. |
+| **Spectre** | The **dumb, self-healing physical-work substrate** — a mesh that meters and remembers who did what but never signs, mints, prices, or chooses. Owns nothing; authority stays local. | **S3 witness/chooser firewall** — "receipts cross, authority doesn't" *is* the identity; the mesh that can't decide is the mesh you can route your whole business through and still walk away. | Stand up Node 0 + one relay, route real traffic for a bounded window, produce one metered Proof-of-Relay receipt, independently verified. |
+| **Evolutionary.Network** | A **due-process kernel for network self-defense** — the audited chain (evidence → proportionality → burn-not-bounty → grace-exit → appeal, behind a natural-person signature) that keeps a network's power to punish from turning autoimmune. | **S4 A4-routed coercion** — for every other organ coercion is a side-channel; here coercion *is* the product, so the justice branch is the whole thing. | Promote one `dry_run_slash` scenario from synthetic to a real closed case — and make it the *refusal* case (a strike that due process correctly stops). |
+| **Aureus** | A [C] entity that structures independently-verified real-world assets into **mortal-signed financeable claims** — an honest D5 chooser on a D4 reserve-attestation substrate *it does not itself attest*. | **S3 witness/chooser firewall** — a reserve is worth exactly the wall between who mints and who verified; separate the attestation register from the minting register. | One end-to-end pilot: a single parcel attested by a party that is *not* Aureus, producing a `[B]` net-value receipt at the base rung. |
+| **Open Finance Network** | A Swiss standards body [in formation] that owns an **open receipts standard** and issues a neutral conformance **Stamp** — attests, never issues; one rung above the local Tokencen chapters. | **S2 per-surface η-ledger** — neutrality is the only asset; publish the extraction ledger and resolve the Doctrine-61 royalty contradiction to Path B (flat fees, no per-event rake). | Publish one live machine-readable Extraction Ledger of all five fee categories and land the K2 signature open since 2026-05-24. |
+| **Helios** | A **genome-directed latency instrument** — it shortens the interval between a biological deviation and a human noticing, architecturally barred from bearing the insurance balance sheet. | **S1 personhood-binding** — already nails the firewall; needs ≥2 persons (not one clinician) on the two highest-harm seats (actionable clinical returns, actuarial handoff). | A retrospective time-to-detection measurement on a public longitudinal biobank — the effectiveness analog of its Stage-0 honesty proof. |
+| **NOSTR_VPN** | A **keypair-native downstream distribution** of a rake-free open mesh whose only earned value is honest work on top: measuring which exits actually deliver, and operating a few anchor exits it can stand behind. | **S2 per-surface η-ledger** — earns by measurement and operation, never by taxing traffic; the marketing-pool "not owner profit" fence becomes a hard public attestation. | The read-only kind-37196 relay crawl — measure real paid-exit supply/price. No build, no spend, no gate; pure V. |
+| **Operating Model** | Not a product but the family's **read-first navigation map** — sorts every component into one of three honest buckets and points to where its truth lives, at what tier. | **S1 personhood-binding (representational)** — the map must *draw the mortal membrane honestly*; retire "collective signing = the membrane" and the "Board = AI models" default. | A machine-readable `PRODUCT_MANIFEST.yaml` + a conformance lint that FAILS on any un-bucketed, un-tiered, or un-fenced consequential surface. |
+
+## 4. The critical path — light the flywheel one live edge at a time
+
+The family is **Φ-rich and V-starved**: dense audited doctrine, but almost nothing crosses an organ boundary in production. The whole constructive program is two intertwined threads — *light the flywheel one live edge at a time*, and *land the personhood-binding fence once at the settlement surface, then propagate the verifier upward*. Governed by one discipline: the **φ-bias trophic build-gate** — no apex is capitalized until the base rung beneath it carries a `[B]` receipt on real traffic.
+
+1. **Circle emits the first live, mortal-signed Case File across F1→ReFu.** The base sensor; the atlas's own weakest rung. The first packet that crosses an organ boundary in production — the flywheel's first genuine turn. *(Pure V, not more Φ.)*
+2. **ReFu writes its first ForecastReceipt.** One binary market on testnet, resolved against a real oracle, one complete forecast→resolve→delta→Brier cycle. Converts pay-on-realized-alpha from `[C]` conjecture to a live loop with a track record of one.
+3. **Wire the dark F2→F3 edge** — one live ProbabilityPacket consumed by a real APU council session. The docs read "F2 NOT connected to APU"; this lights the COULD→SHOULD edge that is currently unlit.
+4. **Agentz emits its keystone** — land `should_allocation_emit.py` in the *shipping* tree (closing the canon-vs-shipping split) and produce one real ShouldAllocation from a live F1+F2 pair. The substrate MurMur needs before it can begin to exist.
+5. **Land the load-bearing fence once, at the settlement surface** — in `prism_gateway.py`, a real `verify_council` requiring ≥2 distinct attested persons; make `m9_first_trade.py` FAIL when only one attestation is present. Ship S1 where all org-scale money settles, then propagate the same fail-closed verifier upward. **Must precede any real (non-testnet) settlement.**
+6. **Spectre earns one verified Proof-of-Relay receipt** *(parallel from day one)* — Node 0 + one relay, real bytes, one metered receipt independently verified. Also NOSTR_VPN's first real supply datum; its read-only relay crawl can start immediately alongside Step 1.
+7. **Close the loop** — wire Skyzai's settled outcome receipt back to Circle's F1 as an observation, feeding the live EigenTrust engine. **Hard fence:** reputation rewards *survival-in-adversarial-review and evidence-independence only* — never trading P&L or "being on the winning side." Coupling reputation to payoff is the exact Extraction-Law corruption that captures the witness. This is the real N²·log C flywheel.
+8. **Make the family self-policing** — ship the Operating Model's `PRODUCT_MANIFEST.yaml` + a conformance lint that FAILS on any un-bucketed/un-tiered row or any consequential surface whose signer does not resolve to ≥2 attested persons. Render the front door from live receipts so no stale banner and no un-fenced surface survives.
+
+*Downstream, on the now-lit loop, ride the vertical institutions: Aureus's one externally-attested dual-signed AUg mint with a public proof-of-reserve; OFN's live η-ledger + first externally-verified Stamp; Helios's retrospective biobank measurement; Evolutionary.Network's one real signed `commit_refused` + one appeal-and-restore.*
+
+## 5. The close
+
+The critical pass found a family wearing eleven apex crowns it hadn't earned. This pass takes the crowns off and finds something better underneath: **eleven organs each made trustworthy by the one power it lacks.** The witness that can't decide is the only witness a chooser can trust. The effector that can't choose is the only settlement that can't be captured. The mesh that owns nothing is the only substrate you can route everything through and still walk away. The certifier with no stake is the only stamp worth having. The immune organ that can only refuse under due process is the only power that can't turn autoimmune.
+
+Sold honestly, the refusals *are* the product. And the build is not a rewrite — it is **one live edge at a time up a loop that is already the right shape**, with a single fence landed once and propagated, held to the rule that no crown goes back on until a real receipt earns it.
+
+*[D] staged; auditor stages, signer applies. Companion to `be4d360`. No product tier upgraded; the ratified golden-split untouched; the apex is the mortal signer. Receipts: workflow `wf_6bbcb437-701`, the Idea Ledger, the critical-pass diagnostic. η = 0.*

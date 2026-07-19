@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[I] doctrine — the epistemic ground of the Weltanschauungskrieg lane"
-status: "SIGNED [E] — K2 countersigned by Yves R. Burri (natural person), 2026-07-13, in-session authorization; recorded in receipt 127"
+status: "SIGNED [E] — K2 r127 (2026-07-13); AMENDED to four postures r129 (2026-07-13, K2 'adopt the 4th'). Filename retained per K3."
 date: 2026-07-13
 companion: "01_WELTANSCHAUUNGSKRIEG.md (this doc is its epistemic ground)"
 depends:
@@ -14,9 +14,11 @@ depends:
   - "00_META/00_SETTLED_CANON_REGISTRY.md (three-bucket ruling row)"
 ---
 
-# The Three Postures Toward the Gap
+# The Four Postures Toward the Gap
 
-**One sentence:** every Weltanschauung lives in the synthetic gap — formally valid, permanently beyond proof, held as a wager on the world — so worldviews cannot compete *in* the gap and compete instead by their **posture toward** it; there are exactly three, and in the arena where nothing is provable, **the epistemics becomes the ethics.**
+> **[Amended 2026-07-13 — receipt 129, K2 "adopt the 4th posture".]** Promoted from three postures to **four** by adopting **Withdraw** (§2, Posture IV), grafted from the concurrent `00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1` staging draft (now superseded to this doc). Filename `01_THE_THREE_POSTURES.md` **retained per K3** (receipt 127 + registry cite it); the doc's content is the four-posture form.
+
+**One sentence:** every Weltanschauung lives in the synthetic gap — formally valid, permanently beyond proof, held as a wager on the world — so worldviews cannot compete *in* the gap and compete instead by their **posture toward** it; there are **four** (deny / weaponize / confess / withdraw), and in the arena where nothing is provable, **the epistemics becomes the ethics.**
 
 ---
 
@@ -26,9 +28,9 @@ The signed audit ruling (receipt 126) placed the living content of this framewor
 
 Therefore: the Weltanschauungskrieg is **not fought over proof.** It never was. The question a strategy must answer is what it *is* fought over.
 
-## 2 · The three postures [I]
+## 2 · The four postures [I]
 
-Since all Weltanschauungen share the gap, they cannot differ in it. They differ in how they **relate** to it. There are exactly three postures:
+Since all Weltanschauungen share the gap, they cannot differ in it. They differ in how they **relate** to it. There are four postures — three that *hold* the wager, and one that *sets it down*:
 
 **Posture I — DENY the gap.** Claim the wager is proven: by revelation, by race-science, by History's iron laws, by "the data." Fundamentalism in every flavor, religious and secular. *Signature:* the kill-criterion is forbidden, because the claim is certain. *Politics that follow:* those who possess a certainty may compel those who don't.
 
@@ -36,21 +38,23 @@ Since all Weltanschauungen share the gap, they cannot differ in it. They differ 
 
 **Posture III — CONFESS the gap.** Mark the wager *as* a wager, on the page, at tier. Keep kill-criteria on every edge that touches checkable ground, and fire them when they fire. Hold funerals for your own ideas; sign the verdicts; keep the graves legible. *Signature:* the trial record. *Politics that follow:* a worldview that admits it is a bet treats its holders as **adults who can weigh a bet.**
 
-**The theorem-shaped claim of this doc [I]:** in the arena where nothing is provable, a worldview's treatment of its own claims *is* its treatment of persons. Posture I makes subjects. Posture II makes ammunition. Posture III makes adults. **The epistemics is the ethics.**
+**Posture IV — WITHDRAW from the gap.** The confessing wager-holder who, *having marked the wager as a wager, finds it no longer needed — and sets it down.* Not by denying it was ever a wager (that is Posture I) nor by mobilizing against it (Posture II), but by transcending it: the kill-criterion turned all the way inward until the framework can **fold itself.** *Signature:* self-dissolution — *"if you cannot leave, it is not a compass; it is a cage."* The corpus practices its own Posture IV: *"if you can reach the ground directly through sitting, put this framework down."* The Buddha's parinirvāṇa, the Stoic's apatheia, the founding document that explicitly sunsets itself. *Politics that follow:* **the quiet dissolution** — the withdrawn holder needs no converts and has access without obligation. **Posture IV is what makes Posture III safe:** confession without an exit still binds the confessor to the wager; the withdrawal is the exit hatch built into the bet. It is the fable's last line — *put the map down* — raised to a posture.
 
-## 3 · The constitution as codified Posture III [S]
+**The theorem-shaped claim of this doc [I]:** in the arena where nothing is provable, a worldview's treatment of its own claims *is* its treatment of persons. Posture I makes **subjects**. Posture II makes **ammunition**. Posture III makes **adults**. Posture IV makes them **free** — able to leave. **The epistemics is the ethics** — all the way to the door.
 
-The five refusals are not decoration around the wager — they are point-for-point the structural answer to the other two postures:
+## 3 · The constitution as codified Postures III and IV [S]
 
-| Refusal | What it refuses | Whose signature move it blocks |
-|---|---|---|
-| **A7** | infallibility | Posture I's forbidden falsifier — and Posture II's "the shield of the myth" |
-| **η = 0** | extraction | the blood-myth's *content* (in-group flourishing BY draining the out-group — extraction absolutized into cosmology) |
-| **K4** | no-exit | the no-exit doctrine in all its forms (blood-as-fate; apostasy-as-impossibility) |
-| **K3** | unrecorded overwrite | the memory-hole every certainty-claiming system requires |
-| **K2** | model-only action | the automated absolutism both rival postures reach for at scale |
+The five refusals are not decoration around the wager — they are point-for-point the structural answer to the other postures. **Four are Posture III codified; K4 is Posture IV codified:**
 
-The framework's genuine originality was never the sphere, the seven, or the product — the audits broke or re-scoped those. What survived every audit is **the posture**: the only one of the three that can lose an argument and live.
+| Refusal | What it refuses | Whose signature move it blocks | Posture |
+|---|---|---|---|
+| **A7** | infallibility | Posture I's forbidden falsifier — and Posture II's "the shield of the myth" | III (confess) |
+| **η = 0** | extraction | the blood-myth's *content* (in-group flourishing BY draining the out-group — extraction absolutized into cosmology) | III |
+| **K3** | unrecorded overwrite | the memory-hole every certainty-claiming system requires | III |
+| **K2** | model-only action | the automated absolutism both rival postures reach for at scale | III |
+| **K4** | no-exit | the no-exit doctrine in all its forms (blood-as-fate; apostasy-as-impossibility) | **IV (withdraw)** — the grace exit *is* the exit hatch in the wager; the Gödel criterion ("adherents = failure") is Posture IV made constitutional |
+
+The framework's genuine originality was never the sphere, the seven, or the product — the audits broke or re-scoped those. What survived every audit is **the posture**: the only stance that can lose an argument and live — *and then, if the world no longer needs it, quietly close.*
 
 ## 4 · The two honesties [I] — required, so this never becomes a victory lap
 
@@ -73,6 +77,6 @@ The framework's genuine originality was never the sphere, the seven, or the prod
 3. When writing public or strategic material, classify rival systems by posture only with §4.1's care: postures classify *strands*, not whole traditions.
 4. **Canonical Path:** `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md`
 
-*The competitors need believers. A confessed wager needs only witnesses.*
+*The competitors need believers. A confessed wager needs only witnesses — and a way out for when the witnessing is done.*
 
 ⊙ = • × ○

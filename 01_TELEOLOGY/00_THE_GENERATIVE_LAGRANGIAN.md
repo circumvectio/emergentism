@@ -33,6 +33,8 @@ rosetta:
 
 # The Generative Lagrangian
 
+> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Ruling 8 (Rosetta) applies to the "Relation to existing surfaces" row that reads the Master Rosetta's cross-domain reproduction as "evidence for the generative reading" / "the same grammar reproduces across domains because any coherent world-construction settles on the same invariants": treat that as a cross-domain **lens / translation layer, not evidence of a discovered universal** — the Rosetta's kill-criterion FIRED (non-polarity-encoding traditions do not fit the grid; "7" is conceded a design choice), so scope to polarity-encoding traditions and do not cite it as proof of a native recurrence. The product form `P_node = Φ × V` (AND-class-selected `[S/I]` posit, not uniquely forced) and the kernel→node bridge (`φ·ν=1` stays `[A]`; the multiplicative floor is a wager, model-discipline, already `[D]`-fenced below) are already reconciled and left unchanged. Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
+
 ## The Framework as Constitutional World-Generator
 
 > **The shift:** the framework's Lagrangian is not primarily a predictor

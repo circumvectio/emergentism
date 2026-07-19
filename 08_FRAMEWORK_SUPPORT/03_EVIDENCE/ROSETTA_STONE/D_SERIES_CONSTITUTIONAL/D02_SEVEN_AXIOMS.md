@@ -24,6 +24,8 @@ evidence_tier: "[S] for framework-defining axioms; [A] where mathematical proof 
 
 # ⊙ THE SEVEN AXIOMS
 
+> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Two derivation-claims here are downgraded (the discovery voice stands; only the promotion is retracted). **Ruling 1 (A1):** the Zero-Factor Catastrophe selects the *AND-class* (min/CES/geo/product), not the product uniquely — read "P_node = Φ × V … is derived" as an AND-class-selected **posit `[C]`**, not a uniquely-forced `[T]/[S]` product. **Ruling 6 (A6):** "three substrates minimum" is retracted to three **functions** (a single human is one organism running all three = the falsifier); the substrate reading is `[I]`, not a forced universal. Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
+
 ## Emergentism Rosetta Stone v10.0 — Definitive Axiom Set
 
 **Yves R. Burri · Emergentism.org · 2026-03-24**

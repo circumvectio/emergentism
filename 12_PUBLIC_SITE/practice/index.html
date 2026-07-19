@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Practice — what a person actually does</title>
+<meta name="description" content="Three practices, transmissible in an afternoon, valuable with zero belief: the sitting, the personal trial record, and the dyadic check. Emergentism as something you do, not something you join." />
+<meta name="color-scheme" content="dark" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="The Practice" />
+<meta property="og:description" content="A worldview without a practice is a book. Three practices — no membership, no belief required, nothing to sign except your own verdicts." />
+<meta property="og:url" content="https://www.emergentism.org/practice/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The Practice" />
+<meta name="twitter:description" content="The sitting. The personal trial record. The dyadic check. Transmissible in an afternoon; graded honestly." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E" />
+<style>
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Roboto-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{
+  --void:#050505; --panel:#0d0d0c; --panel-2:#131312;
+  --bone:#F5F5F3; --bone-dim:#a4a7a9; --bone-faint:#6b6f74; --bone-ghost:#3a3d42;
+  --gold:#FFEB3B; --gold-deep:#CBB800;
+  --line:rgba(245,245,243,.10); --line-soft:rgba(245,245,243,.05);
+  --t-s:#5fc6b0; --t-i:#e8d24a; --t-c:#b59ce0;
+  --sans:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --read:44rem;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--void);color:var(--bone);font-family:var(--sans);font-weight:300;font-size:18px;line-height:1.72;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:radial-gradient(110% 60% at 84% -8%, rgba(255,235,59,.05), transparent 45%),
+             radial-gradient(120% 80% at 6% 108%, rgba(66,165,245,.045), transparent 52%), var(--void)}
+::selection{background:rgba(255,235,59,.26);color:#050505}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(1rem,4vw,2.6rem)}
+.read{max-width:var(--read)}
+.mono{font-family:var(--mono)}
+.topbar{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:.72rem clamp(1rem,4vw,2.6rem);background:rgba(5,5,5,.72);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.brand{font-weight:800;font-size:1.02rem;letter-spacing:-.01em;text-decoration:none}
+.brand b{color:var(--gold);font-weight:800}
+.nav{display:flex;gap:.15rem;flex-wrap:wrap;font-family:var(--mono);font-size:.78rem}
+.nav a{display:inline-grid;place-items:center;min-width:1.7rem;height:1.7rem;padding:0 .45rem;color:var(--bone-dim);border-radius:3px;text-decoration:none;transition:.15s}
+.nav a:hover{color:var(--void);background:var(--gold)}
+.nav a.here{color:var(--gold);border:1px solid var(--line)}
+header.hero{padding:clamp(3rem,8vw,6rem) 0 1rem}
+.fileno{font-family:var(--mono);font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1.6rem;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
+.fileno::before{content:"";width:30px;height:1px;background:var(--gold-deep);display:inline-block}
+h1{font-size:clamp(2.5rem,7vw,5rem);letter-spacing:-.03em;line-height:.99;margin:0 0 1.5rem;text-wrap:balance;font-weight:200}
+h1 .gold{color:var(--gold);font-weight:900}
+.dek{font-size:clamp(1.12rem,1.7vw,1.4rem);color:var(--bone-dim);max-width:60ch;margin:0;font-weight:300;line-height:1.6}
+.dek b{color:var(--bone);font-weight:500}
+section{padding:clamp(2.4rem,6vw,4.2rem) 0;border-top:1px solid var(--line-soft)}
+.kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1rem}
+h2{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:200;letter-spacing:-.02em;margin:0 0 1.3rem;line-height:1.08;text-wrap:balance}
+h2 b{font-weight:800}
+p{margin:0 0 1.25rem}
+.body p{color:var(--bone-dim);font-weight:300}
+.body p b{color:var(--bone);font-weight:500}
+.practice{display:grid;grid-template-columns:auto 1fr;gap:1.6rem;padding:2rem 0;border-top:1px solid var(--line-soft)}
+.practice:first-of-type{border-top:0}
+.practice .n{font-family:var(--mono);font-size:2.4rem;font-weight:100;color:var(--bone-ghost);line-height:1;letter-spacing:-.02em}
+.practice h3{font-size:clamp(1.25rem,2.2vw,1.6rem);font-weight:600;margin:0 0 .6rem;letter-spacing:-.01em}
+.practice h3 .sub{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep);display:block;margin-top:.3rem;font-weight:400}
+.practice p{color:var(--bone-dim);margin:0 0 .9rem}
+.practice p b{color:var(--bone);font-weight:500}
+.howto{border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;background:linear-gradient(90deg,rgba(255,235,59,.05),transparent 70%);padding:1.1rem 1.4rem;margin:.9rem 0 0;max-width:64ch}
+.howto .lab{font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 .5rem}
+.howto p{font-size:.98rem;margin:0 0 .5rem}
+.howto p:last-child{margin:0}
+.tierline{display:flex;gap:.5rem;flex-wrap:wrap;margin:1.4rem 0 0;font-family:var(--mono);font-size:.72rem}
+.tier{border:1px solid var(--line);border-radius:3px;padding:.18rem .5rem}
+.tier.t-s{color:var(--t-s)} .tier.t-i{color:var(--t-i)} .tier.t-c{color:var(--t-c)}
+.cta-row{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:2.2rem}
+.cta{display:inline-block;font-family:var(--mono);font-size:.82rem;letter-spacing:.04em;text-decoration:none;border:1px solid var(--line);border-radius:6px;padding:.7rem 1.1rem;color:var(--bone);transition:.15s}
+.cta:hover{border-color:var(--gold);color:var(--gold)}
+.cta.primary{background:var(--gold);color:var(--void);border-color:var(--gold);font-weight:700}
+.cta.primary:hover{background:var(--bone);border-color:var(--bone);color:var(--void)}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+footer.foot{padding:3rem 0 4rem;border-top:1px solid var(--line-soft);color:var(--bone-faint);font-size:.92rem}
+footer.foot .glyph{font-family:var(--mono);color:var(--gold);font-size:1.05rem;margin-bottom:.8rem}
+footer.foot a{color:var(--bone-dim)}
+@media (max-width:640px){.practice{grid-template-columns:1fr;gap:.6rem}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="../home/">Emergent<b>ism</b></a>
+  <nav class="nav" aria-label="Site">
+    <a href="../fable/">Fable</a>
+    <a href="../plainly/">Plainly</a>
+    <a href="../record/">Record</a>
+    <a href="../axioms/">Axioms</a>
+    <a href="../book/">Book</a>
+    <a class="here" href="../practice/">Practice</a>
+    <a href="../build/">Build</a>
+  </nav>
+</div>
+
+<main class="wrap">
+
+  <header class="hero read reveal in">
+    <p class="fileno">The path · stage six — the practice</p>
+    <h1>What a person<br><span class="gold">actually does.</span></h1>
+    <p class="dek">A worldview without a practice is a book. Here are three practices — <b>transmissible in an afternoon, valuable with zero belief</b>. No membership. Nothing to join. The only signature is your own, on your own verdicts.</p>
+    <div class="tierline">
+      <span class="tier t-i">[I] interpretive — the practices, not the metaphysics, are what this page asks of you</span>
+      <span class="tier t-s">[S] the trial record they imitate is public and dated</span>
+    </div>
+  </header>
+
+  <section class="read reveal">
+    <p class="kicker">Practice one</p>
+    <div class="practice">
+      <div class="n">01</div>
+      <div>
+        <h3>The sitting <span class="sub">Pratyakṣa — the first-person anchor</span></h3>
+        <p>Every map on this site points at one place it cannot go: the crossing where a bounded view and an embodied hand meet. That crossing is not ahead of you. <b>It is the reader — it always was.</b> The sitting is the direct check: stop reading the map and look at where you're standing.</p>
+        <div class="howto">
+          <p class="lab">How — ten minutes</p>
+          <p>Sit. Eyes open or closed. Let one thing be seen — a sound, a breath, the room — and notice the one to whom it appears. Don't name it, don't improve it. When a thought offers to explain the framework to you, decline politely. The framework dissolves here on purpose.</p>
+        </div>
+      </div>
+    </div>
+    <div class="practice">
+      <div class="n">02</div>
+      <div>
+        <h3>The personal trial record <span class="sub">№017 — the practice that is ours alone</span></h3>
+        <p>Keep a ledger of your own claims — the ones you actually load weight onto. For each, write four things: <b>its tier</b> (how you know), <b>what would change your mind</b> (the kill criterion), <b>what would upgrade it</b>, and <b>what survives if it falls</b>. When one dies, hold the funeral: strike it through, date it, leave it legible. Sign the verdict.</p>
+        <p>This is A7 as a life discipline — the same discipline our public <a href="../record/">trial record</a> runs at worldview scale, installed in one person in an afternoon. It works even if every metaphysical claim we make is wrong. That is deliberate.</p>
+        <div class="howto">
+          <p class="lab">How — one page, forever</p>
+          <p>One document. Newest entries on top. Never delete — strike through. Once a year, count the funerals. A ledger that stops growing means the thing is dead and doesn't know it.</p>
+        </div>
+      </div>
+    </div>
+    <div class="practice">
+      <div class="n">03</div>
+      <div>
+        <h3>The dyadic check <span class="sub">The ethic as a habit, not a theory</span></h3>
+        <p>Before an act that matters, ask one question with two ends: <b>does this move raise me — and raise what sustains me?</b> If it raises you by draining your ground, it subtracts from the very product you live inside. If it feeds the ground by hollowing you, the same. Both directions, or neither.</p>
+        <div class="howto">
+          <p class="lab">How — one question, two ends</p>
+          <p>i = you, at the scale being tested. H = the whole that sustains you, at that scale. The move is clean only if both sides are preserved or raised — under η = 0: nothing taken without return.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="read reveal">
+    <p class="kicker">Why these three</p>
+    <h2>No belief <b>required.</b></h2>
+    <div class="body">
+      <p>The sitting teaches you to check maps against ground. The trial record teaches you to grade claims and bury the dead ones. The dyadic check teaches you to spot extraction before you commit it. <b>None of them asks you to believe the framework</b> — they install the posture, and the posture is the part every audit has left standing.</p>
+      <p>If the framework is right, the practices are its shortest path into a life. If the framework is wrong, the practices still leave you sharper than they found you. That asymmetry is the honest offer of this page — and it is the same offer the whole site makes, at every stage of the path: verify first, believe never, keep what works.</p>
+    </div>
+    <div class="cta-row">
+      <a class="cta primary" href="../build/">See what we're building →</a>
+      <a class="cta" href="../book/">← Read the book</a>
+      <a class="cta" href="../record/">The public trial record →</a>
+      <a class="cta" href="../fable/">Start the path over — the fable →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot wrap">
+  <div class="glyph">⊙ = • × ○</div>
+  <p>The Practice · the sixth stage of the path: <a href="../fable/">fable</a> → <a href="../plainly/">plainly</a> → <a href="../record/">record</a> → <a href="../axioms/">axioms</a> → <a href="../book/">book</a> → <b>practice</b> → <a href="../build/">build</a>.<br>The framework succeeds when you can put it down. The practice is how you find out you could all along.</p>
+</footer>
+
+<script>
+(function(){
+  var rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var reveals = [].slice.call(document.querySelectorAll('.reveal:not(.in)'));
+  if (rm || !('IntersectionObserver' in window)) { reveals.forEach(function(e){e.classList.add('in');}); }
+  else {
+    var io = new IntersectionObserver(function(en){ en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {rootMargin:'0px 0px -6% 0px', threshold:0.05});
+    reveals.forEach(function(el){ io.observe(el); });
+  }
+  setTimeout(function(){ document.querySelectorAll('.reveal:not(.in)').forEach(function(e){e.classList.add('in');}); }, 2000);
+})();
+</script>
+<script defer src="/assets/js/atlas-drawer.js"></script>
+</body>
+</html>

@@ -23,6 +23,8 @@ rosetta:
 ## {0, 1, ∞} — The Three Titans
 ### Substrate-Independent Formulation
 
+> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Two rulings apply to "Why Three?" below. **N=3 uniqueness (§Triadic Stability Theorem, MF-511) is SELECTED, not derived** — the N≥5 discharge used a false group lemma (Z₅ is a counterexample), so "N=3 is the unique stable configuration / four is redundant" downgrades from *theorem* to *posited* [S/I]. And the Titan **trinity is not a forced 3-closure**: `cl({0,∞})` under `z↦1/z` is the *foursome* `{−1,0,1,∞}`; the three-Titan naming is a choice [S/I], not a proved closure. The emblem `1 = 0 × ∞` and `φ·ν=1 on S²` remain settled shorthand (already fenced below) and are untouched. Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
+
 ---
 
 ## The Three
@@ -47,7 +49,7 @@ Why not one? Why not two? Why three?
 
 **Three (triadism):** 0, 1, and ∞. The poles AND the equator. The tension AND the resolution. Duality stabilized by the third term.
 
-This is the **Triadic Stability Theorem (MF-511):** N=3 is the unique stable configuration. Two is unstable. Four is redundant. Three is the minimum viable structure.
+This is the **Triadic Stability Theorem (MF-511):** N=3 is the unique stable configuration. Two is unstable. Four is redundant. Three is the minimum viable structure. *[Reconciled — receipt 126, 2026-07-13: "unique / four is redundant" is **posited [S/I], not proved** — the N≥5 discharge rests on a false group lemma (Z₅) and the {0,∞}-under-inversion closure is the foursome {−1,0,1,∞}. N=3 is selected, not derived.]*
 
 ---
 

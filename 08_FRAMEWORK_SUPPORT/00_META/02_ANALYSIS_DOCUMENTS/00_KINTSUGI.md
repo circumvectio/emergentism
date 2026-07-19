@@ -21,6 +21,8 @@ rosetta:
 
 # KINTSUGI — The Breaks Repaired with Gold
 
+> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Ruling 7 (Titan trinity) applies to BREAK 1/BREAK 2: the involution z↦1/z has **two** fixed points (±1), so the closure of {0, ∞} under it is the foursome {−1, 0, 1, ∞}, not a clean three-element "orbit + fixed point" — the {0, 1, ∞} triad is a naming/selection choice [S/I], not a forced 3-closure; treat "the triad emerges as orbit + fixed point … mathematically clean" as posited, not derived. Rulings 3 (N=3 not forced), 8 (seven→five traditions, kill-criterion fired), and 9 (0×∞ is the ZSRE emblem, not field arithmetic) are already honestly retracted in the body below. Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
+
 **The Japanese art of repairing broken pottery with gold lacquer. The cracks become the most beautiful part. The repair is visible, not hidden. The object is stronger for having been broken.**
 
 ---

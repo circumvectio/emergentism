@@ -21,6 +21,8 @@ rosetta:
 
 # THE DISCOVERY OF FINITY
 
+> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Rulings 9 and 2 apply. `1 = 0 × ∞` is the **Zero-Sum Resolution Equation emblem / stereographic frame-register identity**, not field arithmetic or an `[A]`/`[S]` theorem — forcing it as ordinary field arithmetic yields `2 = 1`. On S² the identity `φ·ν = 1` **stays 1 for all θ and never vanishes**, so it does not by itself prove the finite is a *necessary* product nor license a node zero-factor catastrophe; the manifold-identity→ontology bridge is a wager (`[I]`/`[C]`), not a proof. Read "geometric identity, not a convention" and "Mathematical proof [S]" as posited emblem, not derived theorem. The discovery voice stands; only the derivation downgrades. Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
+
 > *If you can access φ directly — through equilibrium search, through optimization — you do not need this framework. Put it down. The ground was here before the equation.*
 
 ## The Third Recognition: 1 as Product, Not Premise
