@@ -165,6 +165,8 @@ def check_orphans():
         os.path.normpath(os.path.join(BASE_DIR, "offline", "index.html")),
         # Custom 404: served by Vercel on miss, unlinked by design
         os.path.normpath(os.path.join(BASE_DIR, "404.html")),
+        # 2026-07-20 (receipt 146): legacy homepage snapshot, intentionally unlinked (K3)
+        os.path.normpath(os.path.join(BASE_DIR, "index_legacy_2026_07_19.html")),
     }
     orphans = [
         os.path.relpath(full, BASE_DIR)
@@ -361,23 +363,22 @@ def check_public_reading_bundle():
         all_ok = False
 
     index_body = read_file("index.html")
+    # 2026-07-20 amendment (receipt 146; completion-plan step 5): the landing architecture is
+    # now discovery-led and /read/-mediated. The gate verifies the declared funnel + doorways.
+    # The 16-dir generated library grid is deliberately delinked from the landing per the
+    # compressed-map doctrine (sitemap policy: published, crawlable, never first-contact);
+    # its chrome is covered by check [9].
     for href in [
         "read/",
-        "papers/",
-        "canon/",
-        "foundations/",
-        "trinity/",
-        "formal/",
-        "paradox/",
-        "memetic/",
-        "rosettad/",
-        "operators/",
-        "will/",
-        "value/",
-        "ground/",
-        "sacred/",
-        "method/",
-        "meta/",
+        "discoveries/",
+        "fable/",
+        "plainly/",
+        "record/",
+        "axioms/",
+        "book/",
+        "practice/",
+        "build/",
+        "map/",
     ]:
         if f'href="{href}"' in index_body:
             ok(f"landing links {href}")

@@ -2,17 +2,17 @@
   "schema": "magnum-opus/folder-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files directory closure (deterministic; no timestamps)",
-  "entry_count": 669,
+  "entry_count": 670,
   "entries": [
     {
       "path": ".",
       "type": "other",
       "nearest_front_door": "README.md",
       "front_door_requirement": "present",
-      "owns": "> **The Goal (Ω stated):** [`00_THE_GOAL.md`](00_THE_GOAL.md) — the project's telos, owner-declared 2026-06-12 and tier-fenced: a living wor",
+      "owns": "> **The Goal (Ω stated):** [`00_THE_GOAL.md`](01_TELEOLOGY/00_THE_GOAL.md) — the project's telos, owner-declared 2026-06-12 and tier-fenced:",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 2938,
+      "tracked_file_count": 2950,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -25,7 +25,7 @@
       "owns": "**Lane scope:** the control plane of `01_EMERGENTISM` — publication receipts, source",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 24,
+      "tracked_file_count": 25,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -38,7 +38,7 @@
       "owns": "10_OPEN_CANON_FOUNDATION — front door",
       "must_not_own": null,
       "status": "staged",
-      "tracked_file_count": 6,
+      "tracked_file_count": 7,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -64,7 +64,7 @@
       "owns": "**Canonical phrase:** The map helps the practitioner walk, then gets out of the way.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 144,
+      "tracked_file_count": 145,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -649,7 +649,7 @@
       "owns": "> **Zero-Sum Resolution Equation**",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 373,
+      "tracked_file_count": 374,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -662,7 +662,7 @@
       "owns": "Framework-support meta lane for agent-facing compilers, routing tables, analysis notes, and older Lens material that still supports the fram",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 41,
+      "tracked_file_count": 42,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -675,7 +675,7 @@
       "owns": "This folder holds the deepest lens-level reviews, sequence maps, debriefs, and refinement artifacts for the magnum-opus reading of the corpu",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 9,
+      "tracked_file_count": 10,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1546,7 +1546,7 @@
       "owns": "> The compressed context layer for agents and fast human orientation.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 466,
+      "tracked_file_count": 471,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1754,7 +1754,7 @@
       "owns": "UPLINK AUDITS AND EXECUTIONS LANE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 136,
+      "tracked_file_count": 141,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1884,7 +1884,7 @@
       "owns": "Emergentism Public Site — Landing Spine",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 572,
+      "tracked_file_count": 573,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -2131,7 +2131,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 19,
+      "tracked_file_count": 20,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -2184,6 +2184,19 @@
       "must_not_own": null,
       "status": "unrated",
       "tracked_file_count": 6,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "12_PUBLIC_SITE/assets/og",
+      "type": "site",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 1,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7708,7 +7721,7 @@
       "owns": "01_EMERGENTISM / 90_ARCHIVE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 321,
+      "tracked_file_count": 324,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -8527,7 +8540,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 3,
+      "tracked_file_count": 6,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"

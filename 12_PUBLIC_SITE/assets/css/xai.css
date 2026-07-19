@@ -1876,6 +1876,7 @@ body.webgl-failed .fallback {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 600;
   margin: 0 0 16px;
+  scroll-margin-top: 112px;
 }
 
 .axiom-ledger-header p,
