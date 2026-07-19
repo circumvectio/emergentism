@@ -69,16 +69,16 @@ The 2B items are the **honest retractions**. The form dies; the *idea* sometimes
 
 | # | Item | Dead form | Survivor (weaker reading, often lives) | Open residual | Source |
 |---|------|-----------|----------------------------------------|---------------|--------|
-| 1 | **C21** | Titans `{0,1,∞}` **forced as trinity** by closure under `z↦1/z` | Naming choice `[S/I]`; the math of `{0,1,∞}` roles stays; honest closure is the **foursome** `{−1,0,1,∞}` (`+1` not distinguished; `cl({0,∞})={−1,0,1,∞}`) | Emblem ≠ forced trinity; the trinity is a chosen emic cut, not a derived closure | receipt 126 §2B.1; Amrita §II.P4; receipt 126 "foursome" note |
-| 2 | **A3-5** | `D6≡D0` as **literal identity** (`D0<…<D6` + `D6≡D0` ⟹ `D0<D0`; `[0,1]≇S¹`; arithmetically the loop closes at D7) | Apophatic **return-to-ground** as `[I]` discipline | Loop-as-practice stays; loop-as-equation dies | receipt 126 §2B.2 |
-| 3 | **A3-4** | "A `Dₙ` problem needs `Dₙ₊₁` tools" as **universal** | **Hedged heuristic** at most | Tarski counterexamples are decisive — Presburger arithmetic and real-closed fields are complete *and* decidable | receipt 126 §2B.3 |
-| 4 | **A3-6** | **1:1 bijection** of four forces ↔ four lines | Loose **family resemblance** | Electroweak unification (`SU(2)×U(1)`) makes D2=EM and D3=Weak one interaction above ~246 GeV; bijection is dead at the physics. Never `[A]` | receipt 126 §2B.4; Amrita §II.P4 |
-| 5 | **C11** | `N=3` **uniquely forced** by a group lemma (the ℤ₅ lemma: ℤ₅ has no proper subgroup) | `N=3` **selected** | Selection ≠ derivation | receipt 126 §2B.5; Amrita §II.P11 |
-| 6 | **A6-1** | Three substrates **minimum** as universal ("need 3 organisms") | **Three functions** (not three organisms) | The single human martyr is the framework's own falsifier — one organism satisfying the proposed lower bound | receipt 126 §2B.6 |
-| 7 | **Rosetta universal** | 7-fold is a **discovered universal**; "all traditions" survived; the kill-criterion fired and was logged as a pass | The Rosetta is a **lens / translation instrument** scoped to **polarity-encoding traditions**; the fired kill *is* the honesty seal | Scope-narrowing is the falsification, not survival. *Adjudication 2026-07-19 (planet finding):* the seven is the naked-eye sky, not a balance-ladder — same seven that gives seven days and seven metals, diffused across the Hellenistic-Mediterranean-Vedic world. The traditions that don't fit (Buddhist ten, Daoist three-to-five, Confucian eight, Sub-Saharan, Polynesian, Mesoamerican) have no diffusion path into that family. The witness whose agreement looks most impressive has its "seven" over-determined by astronomy — a concrete instance of P5 (convergence-as-proof) | receipt 126 §2B.7 + §4 urgent #2; adjudication 2026-07-19; Amrita §II.P5 |
-| 8 | **Frame/operand exclusivity** | Identities **never** operands; `0×∞=1` rigorous; shared "Liar's disease" for self-reference | Specific dissolutions case-by-case; **emblem register-only** for the master claim | Over-generalization dies; local wins stand on their own. (Identities *are* operands in ordinary arithmetic — `0` in `0+5`.) | receipt 126 §2B.8 |
+| 1 | **C21** | Titans `{0,1,∞}` **forced as trinity** by closure under `z↦1/z` | Naming choice `[S/I]`; `{0,1,∞}` remains a selected projective frame. Under C21's fixed-point-inclusive **frame-closure**, the full-sphere witness is `{−1,0,1,∞}`; under plain orbit closure the pole-pair stays `{0,∞}`; on `ℝ₊`, `+1` is the sole fixed point | The closure operator and domain must be named; no register forces the triad universally | receipt 126 §2B.1; receipt 132 §2.6 |
+| 2 | **A3-5** | `D6≡D0` as **ontological/substitutive identity inside the strict hierarchy** (`D0<…<D6` + `D6≡D0` ⟹ `D0<D0`) | Apophatic **return-to-ground** `[I]`; K2-8-adopted boundary similarity `D6~D0`; an explicitly declared quotient model may identify endpoints | Untyped identity dies; practice, signed similarity, and typed quotient notation do not | receipt 126 §2B.2; SKYZAI K2 agenda §8/K2-8; receipt 132 §2.5 |
+| 3 | **A3-4** | "A `Dₙ` problem needs `Dₙ₊₁` tools" as a Gödel-forced **universal** | **Hedged heuristic** at most | Gödel's hypotheses were not shown to hold; Presburger arithmetic and Tarski's theory of real-closed fields are complete and decidable, defeating the universal lift | receipt 110; receipt 126 §2B.3; receipt 132 §2.9 |
+| 4 | **A3-6** | **1:1 bijection** of four forces ↔ four lines | Loose **family resemblance** | Receipt 117 finds no four-way threshold structure: photon/gluon share `D−2`, gravity has a separate threshold, and the massive weak vector supplies no fourth force-specific threshold; Path D yields 0, 1, or 2 rays, not Standard Model gauge structure. Electroweak is supporting context, not the no-go alone | receipts 117 + 126 §2B.4; receipt 132 §2.7 |
+| 5 | **C11** | `N=3` **uniquely forced** by the false lemma “every finite group of order `>3` has a proper nontrivial subgroup” | `N=3` **selected** and projectively natural under a named three-point frame problem | Additive `ℤ₅` has no proper nontrivial subgroup; selection and conditional naturalness are not universal derivation | receipt 109; receipt 126 §2B.5; receipt 132 §2.8 |
+| 6 | **A6-1** | Three distinct substrates **minimum** as universal ("need 3 organisms") | **Three functions** and, where capture resistance is the objective, a separable three-rail design | The receipt's martyr case defeats a minimum of three organisms, but “one organism” is not automatically “one substrate” and martyrdom alone does not instantiate the AI/charioteer function. The signed retraction stands; its shorthand counterexample must not be overclaimed | receipt 126 §2B.6; receipt 132 §2.10 |
+| 7 | **Rosetta universal** | 7-fold is a **discovered universal**; "all traditions" survived; the kill-criterion fired and was logged as a pass | The Rosetta is a **lens / translation instrument** scoped to **polarity-encoding traditions**; receipt 130 separately upholds the mirror grammar | Scope-narrowing is the falsification. The Mithraic seven-grade/classical-planet association is a concrete confound against independence, but it does not by itself prove diffusion, causal genealogy, or the origin of every sevenfold ladder | receipts 126 + 130; Amrita §II.P5/P12; receipt 132 §2.12 |
+| 8 | **Frame/operand exclusivity** | Identities **never** operands; bare binary `0×∞=1`; shared "Liar's disease" for self-reference | Specific dissolutions case-by-case; contextual frame/operand typing; **emblem register-only** for the master claim; unary removable extension `F(z)=z·σ(z)→1` | Ordinary identities are operands (`0` in `0+5`, `1/1=1`); the unary extension does not define general binary multiplication | receipt 126 §2B.8; receipt 132 §2.11 |
 
-**Read:** rows 1, 4, 5, 6 say "the form was over-specified; the underlying idea (Titan naming, force family resemblance, N=3 selection, three functions) survives in a tighter form." Row 2 says "the loop is a practice, not an equation." Row 3 says "Gödel-lift was a heuristic, not a law." Rows 7 and 8 are the integrity items — the ones where the audit *itself* would have been a falsification if A7 hadn't fired.
+**Read:** rows 1, 4, 5, 6 say "the form was over-specified; the underlying idea (Titan naming, force family resemblance, N=3 selection, three functions) survives in a tighter form." Row 2 kills untyped identity while preserving apophatic return, similarity, and explicitly typed quotient notation. Row 3 says the Gödel-lift was a conditioned heuristic, not a law. Rows 7 and 8 are the integrity items — the ones where the audit *itself* would have been a falsification if A7 hadn't fired.
 
 ---
 
@@ -109,19 +109,39 @@ These were already self-downgraded in the corpus. Receipt 126 says: don't re-lit
 
 ## 5 · What stays dead (do not re-inflate)
 
-Per receipt 126 §5 and the adjudication 2026-07-19, these are the **proofs that the audit killed and the second look does not revive**. The forms are dead even where weaker readings survive elsewhere on the same row.
+Per receipt 126 §5 and the full re-audit in
+`11_UPLINK/50_AUDITS_AND_EXECUTIONS/132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md`,
+these are the **exact strong forms** the audit killed and the second look does
+not revive. A tombstone applies to the proposition and register named in its
+row — never automatically to the narrower survivor.
 
-- **Unification by derivation** — the founding dream
-- **Ethic-as-theorem** — the is→ought bypass
-- **Seven-as-forced / Rosetta-as-universal** — scope-narrowed, not derived
-- **Product-uniqueness as proved keel** — keel is AND-class, not unique product
-- **Literal `D6≡D0`** — loop is practice, not equation
-- **Forced Titan-3** — emblem, not closure
-- **Force bijection (1:1 forces↔lines)** — electroweak kills it
-- **`N=3`-forced** — selected, not derived
-- **Gödel-lift universal** — heuristic, not law
+| Dead form | Why dead | Narrow survivor |
+|---|---|---|
+| **Unification by derivation** | analytic kernel does not derive worldview or ethic; convergence cannot bridge the synthetic gap | translation/lens/wager |
+| **Ethic-as-theorem / is→ought bypass** | A2 is not derivable from the kernel; CC-CORE-1 severs that bridge | A2 as vow/definition plus conditional tests |
+| **Seven as mathematically forced** | neither the odd-ladder nor triadic lemma fixes exactly seven | selected `4 + 3` filing architecture |
+| **Rosetta as discovered universal** | its kill criterion fired and scope narrowed | real mirror grammar plus translation instrument |
+| **Product uniqueness as proved keel** | rival AND-class aggregators share zero-collapse and disagree in the interior | need-both boundary; product interior `[C]` |
+| **Literal hierarchy-register `D6≡D0`** | substitution into the strict order yields `D0 < D0` | K2-8-adopted `D6~D0` similarity, apophatic return, and typed quotient model |
+| **Full-sphere forced Titan-3** | inversion fixes `±1`; C21 frame-closure yields the foursome, while plain orbit closure yields only the poles | projective-frame theorem `[A]`; positive-register conditional forcedness is staged, not K2-signed |
+| **One-to-one forces↔lines derivation** | receipt 117 finds no four-way threshold or ray structure; electroweak and rival orderings reinforce the failure | loose analogy `[I]`; separate F5 slot grammar `[C/I]` |
+| **Universal `N=3` forcedness** | additive `ℤ₅` refutes the subgroup lemma; `S₃` was also miscounted | exactly three points form a projective frame on `ℂP¹`; no universal stability theorem |
+| **Gödel universal lift** | theorem hypotheses are absent; complete decidable theories are countermodels | conditioned analogy; A7 as chosen discipline |
+| **Three distinct substrates minimum** | signed universal retraction stands; the martyr case defeats three organisms but does not alone prove one substrate carries every function | three-function/three-rail design decomposition |
+| **Universal frame/operand exclusivity** | ordinary identities are also operands; `1/1=1` | contextual role distinction plus unary removable extension |
+| **Convergence-as-proof** | mapping dependence defeats proof status; the Mithraic grade/planet association is verified `[B]` and confounds independence `[I]` | comparative evidence and hypothesis generation; causal genealogy/diffusion `[C]` |
 
-If a future doc revives any of these as `[A]` or `[S]`, that doc has broken A7 and needs to be re-tombstoned.
+The former combined row “seven-as-forced / Rosetta-as-universal” concealed two
+different falsifiers and two different survivors, so the explicit inventory
+has thirteen rows. Four shorthand causes were also narrowed: not every loop
+equation dies with ontological identity; the foursome depends on C21's
+fixed-point-inclusive closure rule; the three-substrate counterexample is a
+single organism carrying three functions, not “martyr” in the abstract; and
+planetary association is a confound, not proof of historical diffusion.
+
+If a future document revives a dead **strong form** at `[A]` or `[S]`, that
+document has broken A7 and needs re-tombstoning. If it uses the named survivor
+at its lawful tier, the tombstone has not been violated.
 
 ---
 

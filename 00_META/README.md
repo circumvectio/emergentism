@@ -92,6 +92,14 @@ All ~100 files, grouped by role. `00_*` is a semantic flag for foundational cont
 | [`SKYZAI_FAMILY_FRONTIER_LEDGER_2026_07_18.md`](SKYZAI_FAMILY_FRONTIER_LEDGER_2026_07_18.md) | Blueprint-completion grades + org verdict (graded on receipts). |
 | [`SKYZAI_PRODUCT_MANIFEST_2026_07_18.yaml`](SKYZAI_PRODUCT_MANIFEST_2026_07_18.yaml) | Machine-readable taxonomy: bucket/register/tier per component + conformance invariants. |
 
+**9 · SESSION — 2026-07-19** *(audit-campaign close-out registers and K2-staged envelopes)*
+
+| File | Role |
+|---|---|
+| [`FINAL_GROUPS_DISCOVERIES_AXIOMS_CONJECTURES_2026_07_19.md`](FINAL_GROUPS_DISCOVERIES_AXIOMS_CONJECTURES_2026_07_19.md) | Capstone partition map: the complete grouping of what Emergentism is after the full audit campaign (Discoveries · Axioms · Structures · Conjectures · Dead · Open). [D] STAGED — K2 aware, not signed. |
+| [`TOMBSTONE_REAUDIT_2026_07_19.md`](TOMBSTONE_REAUDIT_2026_07_19.md) | Tombstone reaudit: the twelve dead forms, second verification (12/12 tombstones closed; 11/12 DEAD-BUT-LEAKING with resurrection sweep). [D] STAGED. |
+| [`THEOLOGY_ENVELOPE_TN2_TRANSFER_TEST_2026_07_19.md`](THEOLOGY_ENVELOPE_TN2_TRANSFER_TEST_2026_07_19.md) | T-N2 transfer-test signature envelope (conditional balance-optimum): [D] PENDING-K2, staged for ratify-conditional / hold / reject. |
+
 **Subdirectories:** [`90_ARCHIVE/`](90_ARCHIVE/) (prior tombstoned audit reports — provenance, not authority; contains `00_CORPUS.md` historical topology memory) · `worldview_consolidation_2026_06_12/` (leave in place).
 
 ---
